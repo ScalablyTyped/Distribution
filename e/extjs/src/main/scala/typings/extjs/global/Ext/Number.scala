@@ -20,7 +20,11 @@ object Number extends js.Object {
     * @returns Number The constrained value if outside the range, otherwise the current value
     */
   def constrain(): Double = js.native
+  def constrain(number: js.UndefOr[scala.Nothing], min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
+  def constrain(number: js.UndefOr[scala.Nothing], min: Double): Double = js.native
+  def constrain(number: js.UndefOr[scala.Nothing], min: Double, max: Double): Double = js.native
   def constrain(number: Double): Double = js.native
+  def constrain(number: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def constrain(number: Double, min: Double): Double = js.native
   def constrain(number: Double, min: Double, max: Double): Double = js.native
   /** [Method] Corrects floating point numbers that overflow to a non precise value because of their floating nature for example 0
@@ -35,6 +39,7 @@ object Number extends js.Object {
     * @returns Number value, if numeric, defaultValue otherwise
     */
   def from(): Double = js.native
+  def from(value: js.UndefOr[scala.Nothing], defaultValue: Double): Double = js.native
   def from(value: js.Any): Double = js.native
   def from(value: js.Any, defaultValue: Double): Double = js.native
   /** [Method] Returns a random integer between the specified range inclusive
@@ -43,6 +48,7 @@ object Number extends js.Object {
     * @returns Number A random integer within the specified range.
     */
   def randomInt(): Double = js.native
+  def randomInt(from: js.UndefOr[scala.Nothing], to: Double): Double = js.native
   def randomInt(from: Double): Double = js.native
   def randomInt(from: Double, to: Double): Double = js.native
   /** [Method] Snaps the passed number between stopping points based upon a passed increment value
@@ -53,8 +59,39 @@ object Number extends js.Object {
     * @returns Number The value of the nearest snap target.
     */
   def snap(): Double = js.native
+  def snap(
+    value: js.UndefOr[scala.Nothing],
+    increment: js.UndefOr[scala.Nothing],
+    minValue: js.UndefOr[scala.Nothing],
+    maxValue: Double
+  ): Double = js.native
+  def snap(value: js.UndefOr[scala.Nothing], increment: js.UndefOr[scala.Nothing], minValue: Double): Double = js.native
+  def snap(
+    value: js.UndefOr[scala.Nothing],
+    increment: js.UndefOr[scala.Nothing],
+    minValue: Double,
+    maxValue: Double
+  ): Double = js.native
+  def snap(value: js.UndefOr[scala.Nothing], increment: Double): Double = js.native
+  def snap(
+    value: js.UndefOr[scala.Nothing],
+    increment: Double,
+    minValue: js.UndefOr[scala.Nothing],
+    maxValue: Double
+  ): Double = js.native
+  def snap(value: js.UndefOr[scala.Nothing], increment: Double, minValue: Double): Double = js.native
+  def snap(value: js.UndefOr[scala.Nothing], increment: Double, minValue: Double, maxValue: Double): Double = js.native
   def snap(value: Double): Double = js.native
+  def snap(
+    value: Double,
+    increment: js.UndefOr[scala.Nothing],
+    minValue: js.UndefOr[scala.Nothing],
+    maxValue: Double
+  ): Double = js.native
+  def snap(value: Double, increment: js.UndefOr[scala.Nothing], minValue: Double): Double = js.native
+  def snap(value: Double, increment: js.UndefOr[scala.Nothing], minValue: Double, maxValue: Double): Double = js.native
   def snap(value: Double, increment: Double): Double = js.native
+  def snap(value: Double, increment: Double, minValue: js.UndefOr[scala.Nothing], maxValue: Double): Double = js.native
   def snap(value: Double, increment: Double, minValue: Double): Double = js.native
   def snap(value: Double, increment: Double, minValue: Double, maxValue: Double): Double = js.native
   /** [Method] Snaps the passed number between stopping points based upon a passed increment value
@@ -65,8 +102,39 @@ object Number extends js.Object {
     * @returns Number The value of the nearest snap target.
     */
   def snapInRange(): Double = js.native
+  def snapInRange(
+    value: js.UndefOr[scala.Nothing],
+    increment: js.UndefOr[scala.Nothing],
+    minValue: js.UndefOr[scala.Nothing],
+    maxValue: Double
+  ): Double = js.native
+  def snapInRange(value: js.UndefOr[scala.Nothing], increment: js.UndefOr[scala.Nothing], minValue: Double): Double = js.native
+  def snapInRange(
+    value: js.UndefOr[scala.Nothing],
+    increment: js.UndefOr[scala.Nothing],
+    minValue: Double,
+    maxValue: Double
+  ): Double = js.native
+  def snapInRange(value: js.UndefOr[scala.Nothing], increment: Double): Double = js.native
+  def snapInRange(
+    value: js.UndefOr[scala.Nothing],
+    increment: Double,
+    minValue: js.UndefOr[scala.Nothing],
+    maxValue: Double
+  ): Double = js.native
+  def snapInRange(value: js.UndefOr[scala.Nothing], increment: Double, minValue: Double): Double = js.native
+  def snapInRange(value: js.UndefOr[scala.Nothing], increment: Double, minValue: Double, maxValue: Double): Double = js.native
   def snapInRange(value: Double): Double = js.native
+  def snapInRange(
+    value: Double,
+    increment: js.UndefOr[scala.Nothing],
+    minValue: js.UndefOr[scala.Nothing],
+    maxValue: Double
+  ): Double = js.native
+  def snapInRange(value: Double, increment: js.UndefOr[scala.Nothing], minValue: Double): Double = js.native
+  def snapInRange(value: Double, increment: js.UndefOr[scala.Nothing], minValue: Double, maxValue: Double): Double = js.native
   def snapInRange(value: Double, increment: Double): Double = js.native
+  def snapInRange(value: Double, increment: Double, minValue: js.UndefOr[scala.Nothing], maxValue: Double): Double = js.native
   def snapInRange(value: Double, increment: Double, minValue: Double): Double = js.native
   def snapInRange(value: Double, increment: Double, minValue: Double, maxValue: Double): Double = js.native
   /** [Method] Formats a number using fixed point notation
@@ -74,6 +142,7 @@ object Number extends js.Object {
     * @param precision Number The number of digits to show after the decimal point
     */
   def toFixed(): Unit = js.native
+  def toFixed(value: js.UndefOr[scala.Nothing], precision: Double): Unit = js.native
   def toFixed(value: Double): Unit = js.native
   def toFixed(value: Double, precision: Double): Unit = js.native
 }

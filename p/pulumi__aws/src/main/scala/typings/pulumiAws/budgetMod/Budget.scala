@@ -35,7 +35,7 @@ class Budget protected () extends CustomResource {
   /**
     * Map of CostFilters key/value pairs to apply to the budget.
     */
-  val costFilters: Output_[StringDictionary[_]] = js.native
+  val costFilters: Output_[StringDictionary[String]] = js.native
   /**
     * Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
     */
@@ -85,8 +85,10 @@ object Budget extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Budget = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Budget = js.native
   def get(name: String, id: Input[ID], state: BudgetState): Budget = js.native
   def get(name: String, id: Input[ID], state: BudgetState, opts: CustomResourceOptions): Budget = js.native
   /**

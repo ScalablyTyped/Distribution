@@ -8,133 +8,154 @@ import scala.scalajs.js.annotation._
   * A slot of time on a schedule that may be available for booking appointments
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Slot extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Slot extends DomainResource {
   /**
     * Contains extended information for property 'comment'.
     */
-  var _comment: js.UndefOr[Element] = js.undefined
+  var _comment: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'end'.
     */
-  var _end: js.UndefOr[Element] = js.undefined
+  var _end: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'overbooked'.
     */
-  var _overbooked: js.UndefOr[Element] = js.undefined
+  var _overbooked: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'start'.
     */
-  var _start: js.UndefOr[Element] = js.undefined
+  var _start: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * The style of appointment or patient that may be booked in the slot (not service type)
     */
-  var appointmentType: js.UndefOr[CodeableConcept] = js.undefined
+  var appointmentType: js.UndefOr[CodeableConcept] = js.native
   /**
     * Comments on the slot to describe any extended information. Such as custom constraints on the slot
     */
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[String] = js.native
   /**
     * Date/Time that the slot is to conclude
     */
-  var end: instant
+  var end: instant = js.native
   /**
     * External Ids for this item
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * This slot has already been overbooked, appointments are unlikely to be accepted for this time
     */
-  var overbooked: js.UndefOr[Boolean] = js.undefined
+  var overbooked: js.UndefOr[Boolean] = js.native
   /**
     * The schedule resource that this slot defines an interval of status information
     */
-  var schedule: Reference
+  var schedule: Reference = js.native
   /**
     * A broad categorisation of the service that is to be performed during this appointment
     */
-  var serviceCategory: js.UndefOr[CodeableConcept] = js.undefined
+  var serviceCategory: js.UndefOr[CodeableConcept] = js.native
   /**
     * The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the availability resource
     */
-  var serviceType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var serviceType: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * The specialty of a practitioner that would be required to perform the service requested in this appointment
     */
-  var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Date/Time that the slot is to begin
     */
-  var start: instant
+  var start: instant = js.native
   /**
     * busy | free | busy-unavailable | busy-tentative | entered-in-error
     */
-  var status: code
+  var status: code = js.native
 }
 
 object Slot {
   @scala.inline
-  def apply(
-    end: instant,
-    schedule: Reference,
-    start: instant,
-    status: code,
-    _comment: Element = null,
-    _end: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _overbooked: Element = null,
-    _resourceType: Element = null,
-    _start: Element = null,
-    _status: Element = null,
-    appointmentType: CodeableConcept = null,
-    comment: String = null,
-    contained: js.Array[Resource] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    overbooked: js.UndefOr[Boolean] = js.undefined,
-    resourceType: code = null,
-    serviceCategory: CodeableConcept = null,
-    serviceType: js.Array[CodeableConcept] = null,
-    specialty: js.Array[CodeableConcept] = null,
-    text: Narrative = null
-  ): Slot = {
+  def apply(end: instant, schedule: Reference, start: instant, status: code): Slot = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (_comment != null) __obj.updateDynamic("_comment")(_comment.asInstanceOf[js.Any])
-    if (_end != null) __obj.updateDynamic("_end")(_end.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_overbooked != null) __obj.updateDynamic("_overbooked")(_overbooked.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_start != null) __obj.updateDynamic("_start")(_start.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (appointmentType != null) __obj.updateDynamic("appointmentType")(appointmentType.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(overbooked)) __obj.updateDynamic("overbooked")(overbooked.get.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (serviceCategory != null) __obj.updateDynamic("serviceCategory")(serviceCategory.asInstanceOf[js.Any])
-    if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])
-    if (specialty != null) __obj.updateDynamic("specialty")(specialty.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Slot]
   }
+  @scala.inline
+  implicit class SlotOps[Self <: Slot] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnd(value: instant): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchedule(value: Reference): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStart(value: instant): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_comment(value: Element): Self = this.set("_comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_comment: Self = this.set("_comment", js.undefined)
+    @scala.inline
+    def set_end(value: Element): Self = this.set("_end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_end: Self = this.set("_end", js.undefined)
+    @scala.inline
+    def set_overbooked(value: Element): Self = this.set("_overbooked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_overbooked: Self = this.set("_overbooked", js.undefined)
+    @scala.inline
+    def set_start(value: Element): Self = this.set("_start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_start: Self = this.set("_start", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setAppointmentType(value: CodeableConcept): Self = this.set("appointmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppointmentType: Self = this.set("appointmentType", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setOverbooked(value: Boolean): Self = this.set("overbooked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverbooked: Self = this.set("overbooked", js.undefined)
+    @scala.inline
+    def setServiceCategory(value: CodeableConcept): Self = this.set("serviceCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCategory: Self = this.set("serviceCategory", js.undefined)
+    @scala.inline
+    def setServiceTypeVarargs(value: CodeableConcept*): Self = this.set("serviceType", js.Array(value :_*))
+    @scala.inline
+    def setServiceType(value: js.Array[CodeableConcept]): Self = this.set("serviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceType: Self = this.set("serviceType", js.undefined)
+    @scala.inline
+    def setSpecialtyVarargs(value: CodeableConcept*): Self = this.set("specialty", js.Array(value :_*))
+    @scala.inline
+    def setSpecialty(value: js.Array[CodeableConcept]): Self = this.set("specialty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecialty: Self = this.set("specialty", js.undefined)
+  }
+  
 }
 

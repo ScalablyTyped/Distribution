@@ -1,48 +1,36 @@
 package typings.chartJs.mod
 
-import typings.chartJs.chartJsStrings.bevel
-import typings.chartJs.chartJsStrings.butt
-import typings.chartJs.chartJsStrings.miter
-import typings.chartJs.chartJsStrings.round
-import typings.chartJs.chartJsStrings.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartLegendLabelItem extends ChartLegendItem {
-  var datasetIndex: js.UndefOr[Double] = js.undefined
+  var datasetIndex: js.UndefOr[Double] = js.native
 }
 
 object ChartLegendLabelItem {
   @scala.inline
-  def apply(
-    datasetIndex: js.UndefOr[Double] = js.undefined,
-    fillStyle: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    index: js.UndefOr[Double] = js.undefined,
-    lineCap: butt | round | square = null,
-    lineDash: js.Array[Double] = null,
-    lineDashOffset: js.UndefOr[Double] = js.undefined,
-    lineJoin: bevel | round | miter = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    pointStyle: PointStyle = null,
-    strokeStyle: String = null,
-    text: String = null
-  ): ChartLegendLabelItem = {
+  def apply(): ChartLegendLabelItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(datasetIndex)) __obj.updateDynamic("datasetIndex")(datasetIndex.get.asInstanceOf[js.Any])
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineDash != null) __obj.updateDynamic("lineDash")(lineDash.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineDashOffset)) __obj.updateDynamic("lineDashOffset")(lineDashOffset.get.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (pointStyle != null) __obj.updateDynamic("pointStyle")(pointStyle.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendLabelItem]
   }
+  @scala.inline
+  implicit class ChartLegendLabelItemOps[Self <: ChartLegendLabelItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatasetIndex(value: Double): Self = this.set("datasetIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetIndex: Self = this.set("datasetIndex", js.undefined)
+  }
+  
 }
 

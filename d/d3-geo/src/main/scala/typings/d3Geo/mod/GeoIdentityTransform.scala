@@ -8,14 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GeoIdentityTransform extends GeoStreamWrapper {
   /**
-    * Sets the clip extent to null and returns the projection.
-    * With a clip extent of null, no viewport clipping is performed.
-    *
-    * Viewport clipping is independent of small-circle clipping via projection.clipAngle.
-    *
-    * @param extent Set to null to disable viewport clipping.
+    * Returns the current viewport clip extent which defaults to null.
     */
-  def clipExtent(): this.type = js.native
+  def clipExtent(): (js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]) | Null = js.native
   /**
     * Sets the projection’s viewport clip extent to the specified bounds in pixels and returns the projection.
     * The extent bounds are specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left-side of the viewport, y₀ is the top, x₁ is the right and y₁ is the bottom.
@@ -26,10 +21,14 @@ trait GeoIdentityTransform extends GeoStreamWrapper {
     */
   def clipExtent(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
   /**
-    * Returns the current viewport clip extent which defaults to null.
+    * Sets the clip extent to null and returns the projection.
+    * With a clip extent of null, no viewport clipping is performed.
+    *
+    * Viewport clipping is independent of small-circle clipping via projection.clipAngle.
+    *
+    * @param extent Set to null to disable viewport clipping.
     */
-  @JSName("clipExtent")
-  def clipExtent_Union(): (js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]) | Null = js.native
+  def clipExtent(extent: Null): this.type = js.native
   /**
     * Sets the projection’s scale and translate to fit the specified geographic feature in the center of the given extent.
     * Returns the projection.

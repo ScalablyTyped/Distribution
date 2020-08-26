@@ -356,10 +356,18 @@ trait Paragraph extends ClientObject {
     * @param breakType Required. The break type to add to the document.
     * @param insertLocation Required. The value can be 'Before' or 'After'.
     */
-  def insertBreak(
-    breakType: Page | Next | SectionNext | SectionContinuous | SectionEven | SectionOdd | Line,
-    insertLocation: Before | After | Start | End | Replace
-  ): Unit = js.native
+  def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: After): Unit = js.native
   /**
     * Inserts a break at the specified location in the main document.
     *
@@ -368,7 +376,30 @@ trait Paragraph extends ClientObject {
     * @param breakType Required. The break type to add to the document.
     * @param insertLocation Required. The value can be 'Before' or 'After'.
     */
-  def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: Start): Unit = js.native
   /**
     * Wraps the paragraph object with a rich text content control.
     *
@@ -645,6 +676,7 @@ trait Paragraph extends ClientObject {
     * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
     */
   def split(delimiters: js.Array[String]): RangeCollection = js.native
+  def split(delimiters: js.Array[String], trimDelimiters: js.UndefOr[scala.Nothing], trimSpacing: Boolean): RangeCollection = js.native
   def split(delimiters: js.Array[String], trimDelimiters: Boolean): RangeCollection = js.native
   def split(delimiters: js.Array[String], trimDelimiters: Boolean, trimSpacing: Boolean): RangeCollection = js.native
   /**

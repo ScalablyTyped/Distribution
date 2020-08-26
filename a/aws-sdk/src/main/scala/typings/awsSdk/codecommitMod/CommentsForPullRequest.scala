@@ -42,26 +42,56 @@ trait CommentsForPullRequest extends js.Object {
 
 object CommentsForPullRequest {
   @scala.inline
-  def apply(
-    afterBlobId: ObjectId = null,
-    afterCommitId: CommitId = null,
-    beforeBlobId: ObjectId = null,
-    beforeCommitId: CommitId = null,
-    comments: Comments = null,
-    location: Location = null,
-    pullRequestId: PullRequestId = null,
-    repositoryName: RepositoryName = null
-  ): CommentsForPullRequest = {
+  def apply(): CommentsForPullRequest = {
     val __obj = js.Dynamic.literal()
-    if (afterBlobId != null) __obj.updateDynamic("afterBlobId")(afterBlobId.asInstanceOf[js.Any])
-    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId.asInstanceOf[js.Any])
-    if (beforeBlobId != null) __obj.updateDynamic("beforeBlobId")(beforeBlobId.asInstanceOf[js.Any])
-    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (pullRequestId != null) __obj.updateDynamic("pullRequestId")(pullRequestId.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentsForPullRequest]
   }
+  @scala.inline
+  implicit class CommentsForPullRequestOps[Self <: CommentsForPullRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterBlobId(value: ObjectId): Self = this.set("afterBlobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterBlobId: Self = this.set("afterBlobId", js.undefined)
+    @scala.inline
+    def setAfterCommitId(value: CommitId): Self = this.set("afterCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterCommitId: Self = this.set("afterCommitId", js.undefined)
+    @scala.inline
+    def setBeforeBlobId(value: ObjectId): Self = this.set("beforeBlobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeBlobId: Self = this.set("beforeBlobId", js.undefined)
+    @scala.inline
+    def setBeforeCommitId(value: CommitId): Self = this.set("beforeCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeCommitId: Self = this.set("beforeCommitId", js.undefined)
+    @scala.inline
+    def setCommentsVarargs(value: Comment*): Self = this.set("comments", js.Array(value :_*))
+    @scala.inline
+    def setComments(value: Comments): Self = this.set("comments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComments: Self = this.set("comments", js.undefined)
+    @scala.inline
+    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setPullRequestId(value: PullRequestId): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestId: Self = this.set("pullRequestId", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

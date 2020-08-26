@@ -1,18 +1,8 @@
 package typings.winrtUwp.global.Windows.Media
 
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
-import typings.winrtUwp.Windows.Foundation.Rect
-import typings.winrtUwp.Windows.Foundation.Size
-import typings.winrtUwp.Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface
 import typings.winrtUwp.Windows.Media.Capture.MediaCategory
-import typings.winrtUwp.Windows.Media.Editing.MediaOverlay
-import typings.winrtUwp.Windows.Media.Effects.AudioEffectType
-import typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions
-import typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation
 import typings.winrtUwp.Windows.Media.Render.AudioRenderCategory
-import typings.winrtUwp.Windows.Media.Transcoding.MediaVideoProcessingAlgorithm
-import typings.winrtUwp.Windows.UI.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,11 +19,7 @@ object Effects extends js.Object {
   /** Represents an audio effect. */
   @js.native
   abstract class AudioEffect ()
-    extends typings.winrtUwp.Windows.Media.Effects.AudioEffect {
-    /** Gets the type of the audio effect. */
-    /* CompleteClass */
-    override var audioEffectType: AudioEffectType = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Effects.AudioEffect
   
   /** Represents an audio effect definition. */
   @js.native
@@ -50,12 +36,6 @@ object Effects extends js.Object {
       * @param props Configuration properties for the specified audio effect definition.
       */
     def this(activatableClassId: String, props: IPropertySet) = this()
-    /** The activatable class ID of the audio effect definition. */
-    /* CompleteClass */
-    override var activatableClassId: String = js.native
-    /** The set of properties for configuring an AudioEffectDefinition object. */
-    /* CompleteClass */
-    override var properties: IPropertySet = js.native
   }
   
   /** Provides functionality for creating audio capture and render effects manager objects. */
@@ -71,48 +51,17 @@ object Effects extends js.Object {
   /** Provides context for performing a custom overlay operation within the CompositeFrame method. */
   @js.native
   abstract class CompositeVideoFrameContext ()
-    extends typings.winrtUwp.Windows.Media.Effects.CompositeVideoFrameContext {
-    /** Gets the background frame for an overlay operation. */
-    /* CompleteClass */
-    override var backgroundFrame: typings.winrtUwp.Windows.Media.VideoFrame = js.native
-    /** Gets the output frame for an overlay operation. */
-    /* CompleteClass */
-    override var outputFrame: typings.winrtUwp.Windows.Media.VideoFrame = js.native
-    /** Gets the list of Direct3D surfaces to be used in an overlay operation. */
-    /* CompleteClass */
-    override var surfacesToOverlay: IVectorView[IDirect3DSurface] = js.native
-    /**
-      * Gets a MediaOverlay object for the provided Direct3D surface.
-      * @param surfaceToOverlay The Direct3D surface.
-      * @return The created MediaOverlay object.
-      */
-    /* CompleteClass */
-    override def getOverlayForSurface(surfaceToOverlay: IDirect3DSurface): MediaOverlay = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Effects.CompositeVideoFrameContext
   
   /** Provides context for performing a custom audio effect operation within the ProcessFrame method. */
   @js.native
   abstract class ProcessAudioFrameContext ()
-    extends typings.winrtUwp.Windows.Media.Effects.ProcessAudioFrameContext {
-    /** Gets the input frame for an audio effect operation. */
-    /* CompleteClass */
-    override var inputFrame: typings.winrtUwp.Windows.Media.AudioFrame = js.native
-    /** Gets the output frame for an audio effect operation. */
-    /* CompleteClass */
-    override var outputFrame: typings.winrtUwp.Windows.Media.AudioFrame = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Effects.ProcessAudioFrameContext
   
   /** Provides context for performing a custom video effect operation within the ProcessFrame method. */
   @js.native
   abstract class ProcessVideoFrameContext ()
-    extends typings.winrtUwp.Windows.Media.Effects.ProcessVideoFrameContext {
-    /** Gets the input frame for a video effect operation. */
-    /* CompleteClass */
-    override var inputFrame: typings.winrtUwp.Windows.Media.VideoFrame = js.native
-    /** Gets the output frame for a video effect operation. */
-    /* CompleteClass */
-    override var outputFrame: typings.winrtUwp.Windows.Media.VideoFrame = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Effects.ProcessVideoFrameContext
   
   /** Represents the definition of a custom video compositor. */
   @js.native
@@ -129,12 +78,6 @@ object Effects extends js.Object {
       * @param props The set of properties for configuring the video compositor object.
       */
     def this(activatableClassId: String, props: IPropertySet) = this()
-    /** Gets the activatable class ID of the video compositor. */
-    /* CompleteClass */
-    override var activatableClassId: String = js.native
-    /** Gets the set of properties for configuring the video compositor object. */
-    /* CompleteClass */
-    override var properties: IPropertySet = js.native
   }
   
   /** Represents a video effect definition. */
@@ -152,44 +95,13 @@ object Effects extends js.Object {
       * @param props Configuration properties for the specified video effect definition.
       */
     def this(activatableClassId: String, props: IPropertySet) = this()
-    /** Gets the activatable class ID of the video effect definition. */
-    /* CompleteClass */
-    override var activatableClassId: String = js.native
-    /** Gets the set of properties for configuring the VideoEffectDefinition object. */
-    /* CompleteClass */
-    override var properties: IPropertySet = js.native
   }
   
   /** Represents the definition of a video transform effect. */
   @js.native
   /** Initializes a new instance of the VideoTransformEffectDefinition class. */
   class VideoTransformEffectDefinition ()
-    extends typings.winrtUwp.Windows.Media.Effects.VideoTransformEffectDefinition {
-    /** Gets the activatable class ID of the video transform effect definition. */
-    /* CompleteClass */
-    override var activatableClassId: String = js.native
-    /** Gets or sets the rectangle within which the video will be cropped, specified in pixels. */
-    /* CompleteClass */
-    override var cropRectangle: Rect = js.native
-    /** Gets or sets the direction in which the video will be mirrored. */
-    /* CompleteClass */
-    override var mirror: MediaMirroringOptions = js.native
-    /** Gets or sets the output size of the video, in pixels. */
-    /* CompleteClass */
-    override var outputSize: Size = js.native
-    /** Gets or sets the color that will be used to fill pixels in the frame that are not filled with video, such as when video is letterboxed. */
-    /* CompleteClass */
-    override var paddingColor: Color = js.native
-    /** Gets or sets the media processing algorithm that is used for the video transform. */
-    /* CompleteClass */
-    override var processingAlgorithm: MediaVideoProcessingAlgorithm = js.native
-    /** Gets the set of properties for configuring the VideoTransformEffectDefinition object. */
-    /* CompleteClass */
-    override var properties: IPropertySet = js.native
-    /** Gets or sets the angle and direction in which the video will be rotated. */
-    /* CompleteClass */
-    override var rotation: MediaRotation = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Effects.VideoTransformEffectDefinition
   
   /** Defines values for audio effect types. */
   @js.native

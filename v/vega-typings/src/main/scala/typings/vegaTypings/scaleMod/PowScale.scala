@@ -6,52 +6,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PowScale
   extends NumericScale
      with Scale {
-  var exponent: Double | SignalRef
+  var exponent: Double | SignalRef = js.native
   @JSName("type")
-  var type_PowScale: pow
+  var type_PowScale: pow = js.native
 }
 
 object PowScale {
   @scala.inline
-  def apply(
-    exponent: Double | SignalRef,
-    name: String,
-    `type`: pow,
-    bins: ScaleBins = null,
-    clamp: Boolean | SignalRef = null,
-    domain: (js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef = null,
-    domainMax: Double | SignalRef = null,
-    domainMid: Double | SignalRef = null,
-    domainMin: Double | SignalRef = null,
-    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
-    interpolate: ScaleInterpolate = null,
-    nice: Boolean | Double | SignalRef = null,
-    padding: Double | SignalRef = null,
-    range: RangeScheme = null,
-    reverse: Boolean | SignalRef = null,
-    round: Boolean | SignalRef = null,
-    zero: Boolean | SignalRef = null
-  ): PowScale = {
+  def apply(exponent: Double | SignalRef, name: String, `type`: pow): PowScale = {
     val __obj = js.Dynamic.literal(exponent = exponent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
-    if (clamp != null) __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
-    if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
-    if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
-    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
-    if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (zero != null) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
     __obj.asInstanceOf[PowScale]
   }
+  @scala.inline
+  implicit class PowScaleOps[Self <: PowScale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExponent(value: Double | SignalRef): Self = this.set("exponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: pow): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

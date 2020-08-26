@@ -30,18 +30,38 @@ trait LogMetricFilterState extends js.Object {
 
 object LogMetricFilterState {
   @scala.inline
-  def apply(
-    logGroupName: Input[String] = null,
-    metricTransformation: Input[LogMetricFilterMetricTransformation] = null,
-    name: Input[String] = null,
-    pattern: Input[String] = null
-  ): LogMetricFilterState = {
+  def apply(): LogMetricFilterState = {
     val __obj = js.Dynamic.literal()
-    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
-    if (metricTransformation != null) __obj.updateDynamic("metricTransformation")(metricTransformation.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogMetricFilterState]
   }
+  @scala.inline
+  implicit class LogMetricFilterStateOps[Self <: LogMetricFilterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogGroupName(value: Input[String]): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("logGroupName", js.undefined)
+    @scala.inline
+    def setMetricTransformation(value: Input[LogMetricFilterMetricTransformation]): Self = this.set("metricTransformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricTransformation: Self = this.set("metricTransformation", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPattern(value: Input[String]): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+  }
+  
 }
 

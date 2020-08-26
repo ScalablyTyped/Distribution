@@ -11,14 +11,7 @@ object Collation extends js.Object {
   /** A container for character group information. Characters are grouped in an index that enables an application to determine where the grouping boundaries are. */
   @js.native
   abstract class CharacterGrouping ()
-    extends typings.winrtUwp.Windows.Globalization.Collation.CharacterGrouping {
-    /** Gets the first item that appears in the grouping under this index. */
-    /* CompleteClass */
-    override var first: String = js.native
-    /** Gets the label that is associated with this index. */
-    /* CompleteClass */
-    override var label: String = js.native
-  }
+    extends typings.winrtUwp.Windows.Globalization.Collation.CharacterGrouping
   
   /** Contains the set of character groups and the functionality to get the label for any given string. */
   @js.native

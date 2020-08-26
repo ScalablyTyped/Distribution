@@ -25,14 +25,30 @@ trait SchemaAttestation extends js.Object {
 
 object SchemaAttestation {
   @scala.inline
-  def apply(
-    genericSignedAttestation: SchemaGenericSignedAttestation = null,
-    pgpSignedAttestation: SchemaPgpSignedAttestation = null
-  ): SchemaAttestation = {
+  def apply(): SchemaAttestation = {
     val __obj = js.Dynamic.literal()
-    if (genericSignedAttestation != null) __obj.updateDynamic("genericSignedAttestation")(genericSignedAttestation.asInstanceOf[js.Any])
-    if (pgpSignedAttestation != null) __obj.updateDynamic("pgpSignedAttestation")(pgpSignedAttestation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttestation]
   }
+  @scala.inline
+  implicit class SchemaAttestationOps[Self <: SchemaAttestation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGenericSignedAttestation(value: SchemaGenericSignedAttestation): Self = this.set("genericSignedAttestation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenericSignedAttestation: Self = this.set("genericSignedAttestation", js.undefined)
+    @scala.inline
+    def setPgpSignedAttestation(value: SchemaPgpSignedAttestation): Self = this.set("pgpSignedAttestation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePgpSignedAttestation: Self = this.set("pgpSignedAttestation", js.undefined)
+  }
+  
 }
 

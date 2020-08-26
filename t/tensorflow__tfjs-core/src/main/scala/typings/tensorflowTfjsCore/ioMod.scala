@@ -83,7 +83,26 @@ object ioMod extends js.Object {
   def encodeWeights(tensors: NamedTensorMap): js.Promise[Data] = js.native
   def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = js.native
   def fromMemory(modelArtifacts: js.Object): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: js.Object,
+    weightSpecs: js.UndefOr[scala.Nothing],
+    weightData: js.UndefOr[scala.Nothing],
+    trainingConfig: TrainingConfig
+  ): IOHandler = js.native
+  def fromMemory(modelArtifacts: js.Object, weightSpecs: js.UndefOr[scala.Nothing], weightData: ArrayBuffer): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: js.Object,
+    weightSpecs: js.UndefOr[scala.Nothing],
+    weightData: ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandler = js.native
   def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: js.Object,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: js.UndefOr[scala.Nothing],
+    trainingConfig: TrainingConfig
+  ): IOHandler = js.native
   def fromMemory(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
   def fromMemory(
     modelArtifacts: js.Object,
@@ -92,7 +111,26 @@ object ioMod extends js.Object {
     trainingConfig: TrainingConfig
   ): IOHandler = js.native
   def fromMemory(modelArtifacts: ModelArtifacts): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.UndefOr[scala.Nothing],
+    weightData: js.UndefOr[scala.Nothing],
+    trainingConfig: TrainingConfig
+  ): IOHandler = js.native
+  def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: js.UndefOr[scala.Nothing], weightData: ArrayBuffer): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.UndefOr[scala.Nothing],
+    weightData: ArrayBuffer,
+    trainingConfig: TrainingConfig
+  ): IOHandler = js.native
   def fromMemory(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
+  def fromMemory(
+    modelArtifacts: ModelArtifacts,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: js.UndefOr[scala.Nothing],
+    trainingConfig: TrainingConfig
+  ): IOHandler = js.native
   def fromMemory(
     modelArtifacts: ModelArtifacts,
     weightSpecs: js.Array[WeightsManifestEntry],
@@ -105,9 +143,9 @@ object ioMod extends js.Object {
     trainingConfig: TrainingConfig
   ): IOHandler = js.native
   def getLoadHandlers(url: String): js.Array[IOHandler] = js.native
-  def getLoadHandlers(url: String, onProgress: js.Function): js.Array[IOHandler] = js.native
+  def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = js.native
   def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
-  def getLoadHandlers(url: js.Array[String], onProgress: js.Function): js.Array[IOHandler] = js.native
+  def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = js.native
   def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = js.native
   def getSaveHandlers(url: String): js.Array[IOHandler] = js.native
   def getSaveHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
@@ -152,7 +190,30 @@ object ioMod extends js.Object {
     */
   def listModels(): js.Promise[StringDictionary[ModelArtifactsInfo]] = js.native
   def loadWeights(manifest: WeightsManifestConfig): js.Promise[NamedTensorMap] = js.native
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: js.UndefOr[scala.Nothing],
+    weightNames: js.UndefOr[scala.Nothing],
+    requestInit: RequestInit
+  ): js.Promise[NamedTensorMap] = js.native
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: js.UndefOr[scala.Nothing],
+    weightNames: js.Array[String]
+  ): js.Promise[NamedTensorMap] = js.native
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: js.UndefOr[scala.Nothing],
+    weightNames: js.Array[String],
+    requestInit: RequestInit
+  ): js.Promise[NamedTensorMap] = js.native
   def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: String): js.Promise[NamedTensorMap] = js.native
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: String,
+    weightNames: js.UndefOr[scala.Nothing],
+    requestInit: RequestInit
+  ): js.Promise[NamedTensorMap] = js.native
   def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: String, weightNames: js.Array[String]): js.Promise[NamedTensorMap] = js.native
   def loadWeights(
     manifest: WeightsManifestConfig,

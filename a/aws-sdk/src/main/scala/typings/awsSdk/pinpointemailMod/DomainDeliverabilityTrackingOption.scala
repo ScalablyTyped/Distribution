@@ -22,16 +22,34 @@ trait DomainDeliverabilityTrackingOption extends js.Object {
 
 object DomainDeliverabilityTrackingOption {
   @scala.inline
-  def apply(
-    Domain: Domain = null,
-    InboxPlacementTrackingOption: InboxPlacementTrackingOption = null,
-    SubscriptionStartDate: Timestamp = null
-  ): DomainDeliverabilityTrackingOption = {
+  def apply(): DomainDeliverabilityTrackingOption = {
     val __obj = js.Dynamic.literal()
-    if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
-    if (InboxPlacementTrackingOption != null) __obj.updateDynamic("InboxPlacementTrackingOption")(InboxPlacementTrackingOption.asInstanceOf[js.Any])
-    if (SubscriptionStartDate != null) __obj.updateDynamic("SubscriptionStartDate")(SubscriptionStartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDeliverabilityTrackingOption]
   }
+  @scala.inline
+  implicit class DomainDeliverabilityTrackingOptionOps[Self <: DomainDeliverabilityTrackingOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomain(value: Domain): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("Domain", js.undefined)
+    @scala.inline
+    def setInboxPlacementTrackingOption(value: InboxPlacementTrackingOption): Self = this.set("InboxPlacementTrackingOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInboxPlacementTrackingOption: Self = this.set("InboxPlacementTrackingOption", js.undefined)
+    @scala.inline
+    def setSubscriptionStartDate(value: Timestamp): Self = this.set("SubscriptionStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptionStartDate: Self = this.set("SubscriptionStartDate", js.undefined)
+  }
+  
 }
 

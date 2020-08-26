@@ -12,7 +12,7 @@ Open files in your editor at a specific line and column
 | Keywords           | open, editor, launch, files, file, line, column, position, path, filepath, editors, start, app, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij, emacs, nano |
 | # releases         | 3 |
 | # dependents       | 17 |
-| # downloads        | 767238 |
+| # downloads        | 789662 |
 | # stars            | 2 |
 
 ## Links

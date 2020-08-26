@@ -37,18 +37,40 @@ trait SchemaCheckResponse extends js.Object {
 
 object SchemaCheckResponse {
   @scala.inline
-  def apply(
-    debugString: String = null,
-    errorCode: js.Array[String] = null,
-    linked: js.UndefOr[Boolean] = js.undefined,
-    maxAge: String = null
-  ): SchemaCheckResponse = {
+  def apply(): SchemaCheckResponse = {
     val __obj = js.Dynamic.literal()
-    if (debugString != null) __obj.updateDynamic("debugString")(debugString.asInstanceOf[js.Any])
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(linked)) __obj.updateDynamic("linked")(linked.get.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCheckResponse]
   }
+  @scala.inline
+  implicit class SchemaCheckResponseOps[Self <: SchemaCheckResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebugString(value: String): Self = this.set("debugString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugString: Self = this.set("debugString", js.undefined)
+    @scala.inline
+    def setErrorCodeVarargs(value: String*): Self = this.set("errorCode", js.Array(value :_*))
+    @scala.inline
+    def setErrorCode(value: js.Array[String]): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setLinked(value: Boolean): Self = this.set("linked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinked: Self = this.set("linked", js.undefined)
+    @scala.inline
+    def setMaxAge(value: String): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+  }
+  
 }
 

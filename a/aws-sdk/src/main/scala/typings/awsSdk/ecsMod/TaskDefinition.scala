@@ -86,48 +86,112 @@ trait TaskDefinition extends js.Object {
 
 object TaskDefinition {
   @scala.inline
-  def apply(
-    compatibilities: CompatibilityList = null,
-    containerDefinitions: ContainerDefinitions = null,
-    cpu: String = null,
-    executionRoleArn: String = null,
-    family: String = null,
-    inferenceAccelerators: InferenceAccelerators = null,
-    ipcMode: IpcMode = null,
-    memory: String = null,
-    networkMode: NetworkMode = null,
-    pidMode: PidMode = null,
-    placementConstraints: TaskDefinitionPlacementConstraints = null,
-    proxyConfiguration: ProxyConfiguration = null,
-    requiresAttributes: RequiresAttributes = null,
-    requiresCompatibilities: CompatibilityList = null,
-    revision: js.UndefOr[Integer] = js.undefined,
-    status: TaskDefinitionStatus = null,
-    taskDefinitionArn: String = null,
-    taskRoleArn: String = null,
-    volumes: VolumeList = null
-  ): TaskDefinition = {
+  def apply(): TaskDefinition = {
     val __obj = js.Dynamic.literal()
-    if (compatibilities != null) __obj.updateDynamic("compatibilities")(compatibilities.asInstanceOf[js.Any])
-    if (containerDefinitions != null) __obj.updateDynamic("containerDefinitions")(containerDefinitions.asInstanceOf[js.Any])
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (executionRoleArn != null) __obj.updateDynamic("executionRoleArn")(executionRoleArn.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (inferenceAccelerators != null) __obj.updateDynamic("inferenceAccelerators")(inferenceAccelerators.asInstanceOf[js.Any])
-    if (ipcMode != null) __obj.updateDynamic("ipcMode")(ipcMode.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
-    if (networkMode != null) __obj.updateDynamic("networkMode")(networkMode.asInstanceOf[js.Any])
-    if (pidMode != null) __obj.updateDynamic("pidMode")(pidMode.asInstanceOf[js.Any])
-    if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
-    if (proxyConfiguration != null) __obj.updateDynamic("proxyConfiguration")(proxyConfiguration.asInstanceOf[js.Any])
-    if (requiresAttributes != null) __obj.updateDynamic("requiresAttributes")(requiresAttributes.asInstanceOf[js.Any])
-    if (requiresCompatibilities != null) __obj.updateDynamic("requiresCompatibilities")(requiresCompatibilities.asInstanceOf[js.Any])
-    if (!js.isUndefined(revision)) __obj.updateDynamic("revision")(revision.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (taskDefinitionArn != null) __obj.updateDynamic("taskDefinitionArn")(taskDefinitionArn.asInstanceOf[js.Any])
-    if (taskRoleArn != null) __obj.updateDynamic("taskRoleArn")(taskRoleArn.asInstanceOf[js.Any])
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinition]
   }
+  @scala.inline
+  implicit class TaskDefinitionOps[Self <: TaskDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompatibilitiesVarargs(value: Compatibility*): Self = this.set("compatibilities", js.Array(value :_*))
+    @scala.inline
+    def setCompatibilities(value: CompatibilityList): Self = this.set("compatibilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibilities: Self = this.set("compatibilities", js.undefined)
+    @scala.inline
+    def setContainerDefinitionsVarargs(value: ContainerDefinition*): Self = this.set("containerDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setContainerDefinitions(value: ContainerDefinitions): Self = this.set("containerDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerDefinitions: Self = this.set("containerDefinitions", js.undefined)
+    @scala.inline
+    def setCpu(value: String): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setExecutionRoleArn(value: String): Self = this.set("executionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRoleArn: Self = this.set("executionRoleArn", js.undefined)
+    @scala.inline
+    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily: Self = this.set("family", js.undefined)
+    @scala.inline
+    def setInferenceAcceleratorsVarargs(value: InferenceAccelerator*): Self = this.set("inferenceAccelerators", js.Array(value :_*))
+    @scala.inline
+    def setInferenceAccelerators(value: InferenceAccelerators): Self = this.set("inferenceAccelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInferenceAccelerators: Self = this.set("inferenceAccelerators", js.undefined)
+    @scala.inline
+    def setIpcMode(value: IpcMode): Self = this.set("ipcMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpcMode: Self = this.set("ipcMode", js.undefined)
+    @scala.inline
+    def setMemory(value: String): Self = this.set("memory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemory: Self = this.set("memory", js.undefined)
+    @scala.inline
+    def setNetworkMode(value: NetworkMode): Self = this.set("networkMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkMode: Self = this.set("networkMode", js.undefined)
+    @scala.inline
+    def setPidMode(value: PidMode): Self = this.set("pidMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePidMode: Self = this.set("pidMode", js.undefined)
+    @scala.inline
+    def setPlacementConstraintsVarargs(value: TaskDefinitionPlacementConstraint*): Self = this.set("placementConstraints", js.Array(value :_*))
+    @scala.inline
+    def setPlacementConstraints(value: TaskDefinitionPlacementConstraints): Self = this.set("placementConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementConstraints: Self = this.set("placementConstraints", js.undefined)
+    @scala.inline
+    def setProxyConfiguration(value: ProxyConfiguration): Self = this.set("proxyConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyConfiguration: Self = this.set("proxyConfiguration", js.undefined)
+    @scala.inline
+    def setRequiresAttributesVarargs(value: Attribute*): Self = this.set("requiresAttributes", js.Array(value :_*))
+    @scala.inline
+    def setRequiresAttributes(value: RequiresAttributes): Self = this.set("requiresAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiresAttributes: Self = this.set("requiresAttributes", js.undefined)
+    @scala.inline
+    def setRequiresCompatibilitiesVarargs(value: Compatibility*): Self = this.set("requiresCompatibilities", js.Array(value :_*))
+    @scala.inline
+    def setRequiresCompatibilities(value: CompatibilityList): Self = this.set("requiresCompatibilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiresCompatibilities: Self = this.set("requiresCompatibilities", js.undefined)
+    @scala.inline
+    def setRevision(value: Integer): Self = this.set("revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("revision", js.undefined)
+    @scala.inline
+    def setStatus(value: TaskDefinitionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTaskDefinitionArn(value: String): Self = this.set("taskDefinitionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskDefinitionArn: Self = this.set("taskDefinitionArn", js.undefined)
+    @scala.inline
+    def setTaskRoleArn(value: String): Self = this.set("taskRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskRoleArn: Self = this.set("taskRoleArn", js.undefined)
+    @scala.inline
+    def setVolumesVarargs(value: Volume*): Self = this.set("volumes", js.Array(value :_*))
+    @scala.inline
+    def setVolumes(value: VolumeList): Self = this.set("volumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumes: Self = this.set("volumes", js.undefined)
+  }
+  
 }
 

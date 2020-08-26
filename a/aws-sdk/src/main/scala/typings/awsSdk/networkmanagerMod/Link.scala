@@ -54,32 +54,68 @@ trait Link extends js.Object {
 
 object Link {
   @scala.inline
-  def apply(
-    Bandwidth: Bandwidth = null,
-    CreatedAt: DateTime = null,
-    Description: String = null,
-    GlobalNetworkId: String = null,
-    LinkArn: String = null,
-    LinkId: String = null,
-    Provider: String = null,
-    SiteId: String = null,
-    State: LinkState = null,
-    Tags: TagList = null,
-    Type: String = null
-  ): Link = {
+  def apply(): Link = {
     val __obj = js.Dynamic.literal()
-    if (Bandwidth != null) __obj.updateDynamic("Bandwidth")(Bandwidth.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (GlobalNetworkId != null) __obj.updateDynamic("GlobalNetworkId")(GlobalNetworkId.asInstanceOf[js.Any])
-    if (LinkArn != null) __obj.updateDynamic("LinkArn")(LinkArn.asInstanceOf[js.Any])
-    if (LinkId != null) __obj.updateDynamic("LinkId")(LinkId.asInstanceOf[js.Any])
-    if (Provider != null) __obj.updateDynamic("Provider")(Provider.asInstanceOf[js.Any])
-    if (SiteId != null) __obj.updateDynamic("SiteId")(SiteId.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Link]
   }
+  @scala.inline
+  implicit class LinkOps[Self <: Link] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBandwidth(value: Bandwidth): Self = this.set("Bandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBandwidth: Self = this.set("Bandwidth", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: DateTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setGlobalNetworkId(value: String): Self = this.set("GlobalNetworkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalNetworkId: Self = this.set("GlobalNetworkId", js.undefined)
+    @scala.inline
+    def setLinkArn(value: String): Self = this.set("LinkArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkArn: Self = this.set("LinkArn", js.undefined)
+    @scala.inline
+    def setLinkId(value: String): Self = this.set("LinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkId: Self = this.set("LinkId", js.undefined)
+    @scala.inline
+    def setProvider(value: String): Self = this.set("Provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("Provider", js.undefined)
+    @scala.inline
+    def setSiteId(value: String): Self = this.set("SiteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteId: Self = this.set("SiteId", js.undefined)
+    @scala.inline
+    def setState(value: LinkState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

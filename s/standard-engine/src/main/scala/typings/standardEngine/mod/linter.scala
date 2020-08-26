@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
 @JSImport("standard-engine", "linter")
 @js.native
 object linter
-  extends TopLevel[Instantiable1[js.UndefOr[/* opts */ LinterOptions], Linter]]
+  extends TopLevel[Instantiable1[/* opts */ js.UndefOr[LinterOptions], Linter]]
 

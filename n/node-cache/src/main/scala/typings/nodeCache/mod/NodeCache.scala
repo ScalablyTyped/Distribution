@@ -37,8 +37,8 @@ trait NodeCache extends EventEmitter {
   /**
   	 * get a cached key and change the stats
   	 *
-  	 * @param key cache key or an array of keys
-  	 * @param cb Callback function
+  	 * @param key cache key
+  	 * @returns The value stored in the key
   	 */
   def get[T](key: Key): js.UndefOr[T] = js.native
   /**
@@ -65,13 +65,13 @@ trait NodeCache extends EventEmitter {
   	 * get multiple cached keys at once and change the stats
   	 *
   	 * @param keys an array of keys
-  	 * @param cb Callback function
+  	 * @returns an object containing the values stored in the matching keys
   	 */
   def mget[T](keys: js.Array[Key]): StringDictionary[T] = js.native
   /**
   	 * set multiple cached keys at once and change the stats
   	 *
-  	 * @param keyValueSet  an array of object which includes key,value and ttl
+  	 * @param keyValueSet an array of object which includes key,value and ttl
   	 */
   def mset[T](keyValueSet: js.Array[ValueSetItem[T]]): Boolean = js.native
   def set[T](key: Key, value: T): Boolean = js.native
@@ -83,9 +83,17 @@ trait NodeCache extends EventEmitter {
   	 * @param value A element to cache. If the option `option.forceString` is `true` the module trys to translate
   	 * it to a serialized JSON
   	 * @param ttl The time to live in seconds.
-  	 * @param cb Callback function
   	 */
   def set[T](key: Key, value: T, ttl: Double): Boolean = js.native
+  /**
+  	 * get a cached key and remove it from the cache.
+  	 * Equivalent to calling `get(key)` + `del(key)`.
+  	 * Useful for implementing `single use` mechanism such as OTP, where once a value is read it will become obsolete.
+  	 *
+  	 * @param key cache key
+  	 * @returns The value stored in the key
+  	 */
+  def take[T](key: Key): js.UndefOr[T] = js.native
   def ttl(key: Key): Boolean = js.native
   /**
   	 * reset or redefine the ttl of a key. If `ttl` is not passed or set to 0 it's similar to `.del()`

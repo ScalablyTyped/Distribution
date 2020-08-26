@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KEY_STRINGS extends js.Object {
-  var ArrowDown: typings.baseui.baseuiStrings.ArrowDown
-  var ArrowLeft: typings.baseui.baseuiStrings.ArrowLeft
-  var ArrowRight: typings.baseui.baseuiStrings.ArrowRight
-  var ArrowUp: typings.baseui.baseuiStrings.ArrowUp
-  var Backspace: typings.baseui.baseuiStrings.Backspace
-  var Enter: typings.baseui.baseuiStrings.Enter
-  var Escape: typings.baseui.baseuiStrings.Escape
-  var Space: typings.baseui.baseuiStrings.Space
+  var ArrowDown: typings.baseui.baseuiStrings.ArrowDown = js.native
+  var ArrowLeft: typings.baseui.baseuiStrings.ArrowLeft = js.native
+  var ArrowRight: typings.baseui.baseuiStrings.ArrowRight = js.native
+  var ArrowUp: typings.baseui.baseuiStrings.ArrowUp = js.native
+  var Backspace: typings.baseui.baseuiStrings.Backspace = js.native
+  var Enter: typings.baseui.baseuiStrings.Enter = js.native
+  var Escape: typings.baseui.baseuiStrings.Escape = js.native
+  var Space: typings.baseui.baseuiStrings.Space = js.native
 }
 
 @JSImport("baseui/menu", "KEY_STRINGS")

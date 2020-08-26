@@ -26,16 +26,34 @@ trait CopyClusterSnapshotMessage extends js.Object {
 
 object CopyClusterSnapshotMessage {
   @scala.inline
-  def apply(
-    SourceSnapshotIdentifier: String,
-    TargetSnapshotIdentifier: String,
-    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    SourceSnapshotClusterIdentifier: String = null
-  ): CopyClusterSnapshotMessage = {
+  def apply(SourceSnapshotIdentifier: String, TargetSnapshotIdentifier: String): CopyClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(SourceSnapshotIdentifier = SourceSnapshotIdentifier.asInstanceOf[js.Any], TargetSnapshotIdentifier = TargetSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
-    if (SourceSnapshotClusterIdentifier != null) __obj.updateDynamic("SourceSnapshotClusterIdentifier")(SourceSnapshotClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyClusterSnapshotMessage]
   }
+  @scala.inline
+  implicit class CopyClusterSnapshotMessageOps[Self <: CopyClusterSnapshotMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceSnapshotIdentifier(value: String): Self = this.set("SourceSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetSnapshotIdentifier(value: String): Self = this.set("TargetSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = this.set("ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualSnapshotRetentionPeriod: Self = this.set("ManualSnapshotRetentionPeriod", js.undefined)
+    @scala.inline
+    def setSourceSnapshotClusterIdentifier(value: String): Self = this.set("SourceSnapshotClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSnapshotClusterIdentifier: Self = this.set("SourceSnapshotClusterIdentifier", js.undefined)
+  }
+  
 }
 

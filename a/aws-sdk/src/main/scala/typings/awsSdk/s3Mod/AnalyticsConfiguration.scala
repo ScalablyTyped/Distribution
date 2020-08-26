@@ -22,10 +22,30 @@ trait AnalyticsConfiguration extends js.Object {
 
 object AnalyticsConfiguration {
   @scala.inline
-  def apply(Id: AnalyticsId, StorageClassAnalysis: StorageClassAnalysis, Filter: AnalyticsFilter = null): AnalyticsConfiguration = {
+  def apply(Id: AnalyticsId, StorageClassAnalysis: StorageClassAnalysis): AnalyticsConfiguration = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], StorageClassAnalysis = StorageClassAnalysis.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsConfiguration]
   }
+  @scala.inline
+  implicit class AnalyticsConfigurationOps[Self <: AnalyticsConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: AnalyticsId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStorageClassAnalysis(value: StorageClassAnalysis): Self = this.set("StorageClassAnalysis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: AnalyticsFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/exclusive-split relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/decisions relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "microflows.ExclusiveSplit")
 @js.native

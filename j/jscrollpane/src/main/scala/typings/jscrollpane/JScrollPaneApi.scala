@@ -133,6 +133,7 @@ trait JScrollPaneApi extends js.Object {
     value from the settings object is used instead.
     */
   def scrollToElement(ele: String): Unit = js.native
+  def scrollToElement(ele: String, stickToTop: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def scrollToElement(ele: String, stickToTop: Boolean): Unit = js.native
   def scrollToElement(ele: String, stickToTop: Boolean, animate: Boolean): Unit = js.native
   /**
@@ -144,6 +145,7 @@ trait JScrollPaneApi extends js.Object {
     value from the settings object is used instead.
     */
   def scrollToElement(ele: JQuery): Unit = js.native
+  def scrollToElement(ele: JQuery, stickToTop: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def scrollToElement(ele: JQuery, stickToTop: Boolean): Unit = js.native
   def scrollToElement(ele: JQuery, stickToTop: Boolean, animate: Boolean): Unit = js.native
   /**
@@ -155,6 +157,7 @@ trait JScrollPaneApi extends js.Object {
     value from the settings object is used instead.
     */
   def scrollToElement(ele: HTMLElement): Unit = js.native
+  def scrollToElement(ele: HTMLElement, stickToTop: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def scrollToElement(ele: HTMLElement, stickToTop: Boolean): Unit = js.native
   def scrollToElement(ele: HTMLElement, stickToTop: Boolean, animate: Boolean): Unit = js.native
   /**

@@ -11,8 +11,8 @@ The lodash method `_.groupBy` exported as a module.
 | Full name          | lodash.groupby |
 | Keywords           | lodash-modularized, groupby |
 | # releases         | 1 |
-| # dependents       | 207 |
-| # downloads        | 6020089 |
+| # dependents       | 213 |
+| # downloads        | 6191331 |
 | # stars            | 2 |
 
 ## Links

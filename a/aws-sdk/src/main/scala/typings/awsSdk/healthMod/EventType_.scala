@@ -22,12 +22,34 @@ trait EventType_ extends js.Object {
 
 object EventType_ {
   @scala.inline
-  def apply(category: eventTypeCategory = null, code: eventTypeCode = null, service: service = null): EventType_ = {
+  def apply(): EventType_ = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventType_]
   }
+  @scala.inline
+  implicit class EventType_Ops[Self <: EventType_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: eventTypeCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setCode(value: eventTypeCode): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setService(value: service): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+  }
+  
 }
 

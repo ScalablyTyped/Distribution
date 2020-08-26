@@ -17,15 +17,10 @@ import scala.scalajs.js.annotation._
 @JSImport("node-jose", "JWK.asKey")
 @js.native
 object asKey extends js.Object {
-  def apply(key: String | Buffer | js.Object | RawKey): js.Promise[Key] = js.native
   def apply(
     key: String | Buffer | js.Object | RawKey,
-    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem
-  ): js.Promise[Key] = js.native
-  def apply(
-    key: String | Buffer | js.Object | RawKey,
-    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
-    extras: Record[String, _]
+    form: js.UndefOr[json | `private` | pkcs8 | public | spki | pkix | x509 | pem],
+    extras: js.UndefOr[Record[String, _]]
   ): js.Promise[Key] = js.native
 }
 

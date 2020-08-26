@@ -55,18 +55,42 @@ trait SchemaGoogleIamV1Policy extends js.Object {
 
 object SchemaGoogleIamV1Policy {
   @scala.inline
-  def apply(
-    auditConfigs: js.Array[SchemaGoogleIamV1AuditConfig] = null,
-    bindings: js.Array[SchemaGoogleIamV1Binding] = null,
-    etag: String = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): SchemaGoogleIamV1Policy = {
+  def apply(): SchemaGoogleIamV1Policy = {
     val __obj = js.Dynamic.literal()
-    if (auditConfigs != null) __obj.updateDynamic("auditConfigs")(auditConfigs.asInstanceOf[js.Any])
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleIamV1Policy]
   }
+  @scala.inline
+  implicit class SchemaGoogleIamV1PolicyOps[Self <: SchemaGoogleIamV1Policy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditConfigsVarargs(value: SchemaGoogleIamV1AuditConfig*): Self = this.set("auditConfigs", js.Array(value :_*))
+    @scala.inline
+    def setAuditConfigs(value: js.Array[SchemaGoogleIamV1AuditConfig]): Self = this.set("auditConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditConfigs: Self = this.set("auditConfigs", js.undefined)
+    @scala.inline
+    def setBindingsVarargs(value: SchemaGoogleIamV1Binding*): Self = this.set("bindings", js.Array(value :_*))
+    @scala.inline
+    def setBindings(value: js.Array[SchemaGoogleIamV1Binding]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindings: Self = this.set("bindings", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -129,6 +129,12 @@ trait Mailbox extends js.Object {
     handler: js.Function1[/* type */ EventType, Unit],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def addHandlerAsync(
+    eventType: String,
+    handler: js.Function1[/* type */ EventType, Unit],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addHandlerAsync(eventType: String, handler: js.Function1[/* type */ EventType, Unit], options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: String,
@@ -160,6 +166,12 @@ trait Mailbox extends js.Object {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* type */ EventType, Unit],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Function1[/* type */ EventType, Unit],
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(
@@ -593,6 +605,11 @@ trait Mailbox extends js.Object {
   ): Unit = js.native
   def removeHandlerAsync(eventType: String): Unit = js.native
   def removeHandlerAsync(eventType: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeHandlerAsync(
+    eventType: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeHandlerAsync(eventType: String, options: AsyncContextOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
@@ -619,6 +636,11 @@ trait Mailbox extends js.Object {
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,

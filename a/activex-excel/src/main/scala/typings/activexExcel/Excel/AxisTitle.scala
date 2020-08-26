@@ -36,6 +36,7 @@ trait AxisTitle extends js.Object {
   var VerticalAlignment: VerticalAlignments = js.native
   val Width: Double = js.native
   def Characters(): typings.activexExcel.Excel.Characters = js.native
+  def Characters(Start: js.UndefOr[scala.Nothing], Length: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double, Length: Double): typings.activexExcel.Excel.Characters = js.native
   def Delete(): js.Any = js.native

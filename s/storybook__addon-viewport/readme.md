@@ -10,9 +10,9 @@ Storybook addon to change the viewport size to mobile
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-viewport |
 | Keywords           | addon, storybook |
-| # releases         | 414 |
-| # dependents       | 50 |
-| # downloads        | 11797151 |
+| # releases         | 415 |
+| # dependents       | 53 |
+| # downloads        | 12286199 |
 | # stars            | 0 |
 
 ## Links

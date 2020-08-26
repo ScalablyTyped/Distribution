@@ -15,9 +15,10 @@ import scala.scalajs.js.annotation._
   * @see XRepository
   * @since OOo 3.0
   */
+@js.native
 trait XURI extends XNode {
-  var LocalName: String
-  var Namespace: String
+  var LocalName: String = js.native
+  var Namespace: String = js.native
 }
 
 object XURI {
@@ -26,5 +27,22 @@ object XURI {
     val __obj = js.Dynamic.literal(LocalName = LocalName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], StringValue = StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[XURI]
   }
+  @scala.inline
+  implicit class XURIOps[Self <: XURI] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocalName(value: String): Self = this.set("LocalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamespace(value: String): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+  }
+  
 }
 

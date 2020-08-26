@@ -22,11 +22,32 @@ trait SchemaNamedRanges extends js.Object {
 
 object SchemaNamedRanges {
   @scala.inline
-  def apply(name: String = null, namedRanges: js.Array[SchemaNamedRange] = null): SchemaNamedRanges = {
+  def apply(): SchemaNamedRanges = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namedRanges != null) __obj.updateDynamic("namedRanges")(namedRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNamedRanges]
   }
+  @scala.inline
+  implicit class SchemaNamedRangesOps[Self <: SchemaNamedRanges] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamedRangesVarargs(value: SchemaNamedRange*): Self = this.set("namedRanges", js.Array(value :_*))
+    @scala.inline
+    def setNamedRanges(value: js.Array[SchemaNamedRange]): Self = this.set("namedRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedRanges: Self = this.set("namedRanges", js.undefined)
+  }
+  
 }
 

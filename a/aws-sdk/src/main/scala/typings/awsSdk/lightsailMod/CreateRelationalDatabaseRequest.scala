@@ -47,7 +47,7 @@ trait CreateRelationalDatabaseRequest extends js.Object {
     */
   var relationalDatabaseName: ResourceName = js.native
   /**
-    * The tag keys and optional values to add to the resource during create. To tag a resource after it has been created, see the tag resource operation.
+    * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
   var tags: js.UndefOr[TagList] = js.native
 }
@@ -59,22 +59,59 @@ object CreateRelationalDatabaseRequest {
     masterUsername: String,
     relationalDatabaseBlueprintId: String,
     relationalDatabaseBundleId: String,
-    relationalDatabaseName: ResourceName,
-    availabilityZone: String = null,
-    masterUserPassword: SensitiveString = null,
-    preferredBackupWindow: String = null,
-    preferredMaintenanceWindow: String = null,
-    publiclyAccessible: js.UndefOr[Boolean] = js.undefined,
-    tags: TagList = null
+    relationalDatabaseName: ResourceName
   ): CreateRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(masterDatabaseName = masterDatabaseName.asInstanceOf[js.Any], masterUsername = masterUsername.asInstanceOf[js.Any], relationalDatabaseBlueprintId = relationalDatabaseBlueprintId.asInstanceOf[js.Any], relationalDatabaseBundleId = relationalDatabaseBundleId.asInstanceOf[js.Any], relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (masterUserPassword != null) __obj.updateDynamic("masterUserPassword")(masterUserPassword.asInstanceOf[js.Any])
-    if (preferredBackupWindow != null) __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow.asInstanceOf[js.Any])
-    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(publiclyAccessible)) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.get.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRelationalDatabaseRequest]
   }
+  @scala.inline
+  implicit class CreateRelationalDatabaseRequestOps[Self <: CreateRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMasterDatabaseName(value: String): Self = this.set("masterDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMasterUsername(value: String): Self = this.set("masterUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelationalDatabaseBlueprintId(value: String): Self = this.set("relationalDatabaseBlueprintId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelationalDatabaseBundleId(value: String): Self = this.set("relationalDatabaseBundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setMasterUserPassword(value: SensitiveString): Self = this.set("masterUserPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUserPassword: Self = this.set("masterUserPassword", js.undefined)
+    @scala.inline
+    def setPreferredBackupWindow(value: String): Self = this.set("preferredBackupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredBackupWindow: Self = this.set("preferredBackupWindow", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("preferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: Boolean): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

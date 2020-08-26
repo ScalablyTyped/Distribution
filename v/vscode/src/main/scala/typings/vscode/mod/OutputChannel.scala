@@ -41,6 +41,7 @@ trait OutputChannel extends js.Object {
     * @param preserveFocus When `true` the channel will not take focus.
     */
   def show(): Unit = js.native
+  def show(column: js.UndefOr[scala.Nothing], preserveFocus: Boolean): Unit = js.native
   def show(column: ViewColumn): Unit = js.native
   def show(column: ViewColumn, preserveFocus: Boolean): Unit = js.native
   def show(preserveFocus: Boolean): Unit = js.native

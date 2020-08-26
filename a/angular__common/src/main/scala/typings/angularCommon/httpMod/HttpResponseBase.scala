@@ -17,6 +17,7 @@ abstract class HttpResponseBase protected ()
     */
   def this(init: Headers) = this()
   def this(init: Headers, defaultStatus: Double) = this()
+  def this(init: Headers, defaultStatus: js.UndefOr[scala.Nothing], defaultStatusText: String) = this()
   def this(init: Headers, defaultStatus: Double, defaultStatusText: String) = this()
 }
 

@@ -45,18 +45,40 @@ trait SchemaWriteRequest extends js.Object {
 
 object SchemaWriteRequest {
   @scala.inline
-  def apply(
-    labels: StringDictionary[String] = null,
-    streamId: String = null,
-    streamToken: String = null,
-    writes: js.Array[SchemaWrite] = null
-  ): SchemaWriteRequest = {
+  def apply(): SchemaWriteRequest = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (streamId != null) __obj.updateDynamic("streamId")(streamId.asInstanceOf[js.Any])
-    if (streamToken != null) __obj.updateDynamic("streamToken")(streamToken.asInstanceOf[js.Any])
-    if (writes != null) __obj.updateDynamic("writes")(writes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWriteRequest]
   }
+  @scala.inline
+  implicit class SchemaWriteRequestOps[Self <: SchemaWriteRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setStreamId(value: String): Self = this.set("streamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamId: Self = this.set("streamId", js.undefined)
+    @scala.inline
+    def setStreamToken(value: String): Self = this.set("streamToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamToken: Self = this.set("streamToken", js.undefined)
+    @scala.inline
+    def setWritesVarargs(value: SchemaWrite*): Self = this.set("writes", js.Array(value :_*))
+    @scala.inline
+    def setWrites(value: js.Array[SchemaWrite]): Self = this.set("writes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrites: Self = this.set("writes", js.undefined)
+  }
+  
 }
 

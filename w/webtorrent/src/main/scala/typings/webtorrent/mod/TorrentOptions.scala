@@ -5,33 +5,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TorrentOptions extends js.Object {
-  var announce: js.UndefOr[js.Array[_]] = js.undefined
-  var getAnnounceOpts: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var maxWebConns: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var store: js.UndefOr[js.Function2[/* chunkLength */ Double, /* storeOpts */ Files, _]] = js.undefined
+  var announce: js.UndefOr[js.Array[_]] = js.native
+  var getAnnounceOpts: js.UndefOr[js.Function0[Unit]] = js.native
+  var maxWebConns: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.native
+  var store: js.UndefOr[js.Function2[/* chunkLength */ Double, /* storeOpts */ Files, _]] = js.native
 }
 
 object TorrentOptions {
   @scala.inline
-  def apply(
-    announce: js.Array[_] = null,
-    getAnnounceOpts: () => Unit = null,
-    maxWebConns: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    path: String = null,
-    store: (/* chunkLength */ Double, /* storeOpts */ Files) => _ = null
-  ): TorrentOptions = {
+  def apply(): TorrentOptions = {
     val __obj = js.Dynamic.literal()
-    if (announce != null) __obj.updateDynamic("announce")(announce.asInstanceOf[js.Any])
-    if (getAnnounceOpts != null) __obj.updateDynamic("getAnnounceOpts")(js.Any.fromFunction0(getAnnounceOpts))
-    if (!js.isUndefined(maxWebConns)) __obj.updateDynamic("maxWebConns")(maxWebConns.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(js.Any.fromFunction2(store))
     __obj.asInstanceOf[TorrentOptions]
   }
+  @scala.inline
+  implicit class TorrentOptionsOps[Self <: TorrentOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnounceVarargs(value: js.Any*): Self = this.set("announce", js.Array(value :_*))
+    @scala.inline
+    def setAnnounce(value: js.Array[_]): Self = this.set("announce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnounce: Self = this.set("announce", js.undefined)
+    @scala.inline
+    def setGetAnnounceOpts(value: () => Unit): Self = this.set("getAnnounceOpts", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAnnounceOpts: Self = this.set("getAnnounceOpts", js.undefined)
+    @scala.inline
+    def setMaxWebConns(value: Double): Self = this.set("maxWebConns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWebConns: Self = this.set("maxWebConns", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setStore(value: (/* chunkLength */ Double, /* storeOpts */ Files) => _): Self = this.set("store", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+  }
+  
 }
 

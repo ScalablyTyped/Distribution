@@ -18,11 +18,30 @@ trait RemediationParameterValue extends js.Object {
 
 object RemediationParameterValue {
   @scala.inline
-  def apply(ResourceValue: ResourceValue = null, StaticValue: StaticValue = null): RemediationParameterValue = {
+  def apply(): RemediationParameterValue = {
     val __obj = js.Dynamic.literal()
-    if (ResourceValue != null) __obj.updateDynamic("ResourceValue")(ResourceValue.asInstanceOf[js.Any])
-    if (StaticValue != null) __obj.updateDynamic("StaticValue")(StaticValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemediationParameterValue]
   }
+  @scala.inline
+  implicit class RemediationParameterValueOps[Self <: RemediationParameterValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceValue(value: ResourceValue): Self = this.set("ResourceValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceValue: Self = this.set("ResourceValue", js.undefined)
+    @scala.inline
+    def setStaticValue(value: StaticValue): Self = this.set("StaticValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticValue: Self = this.set("StaticValue", js.undefined)
+  }
+  
 }
 

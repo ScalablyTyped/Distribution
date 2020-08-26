@@ -124,10 +124,17 @@ object utilMod extends js.Object {
   def getLateBoundPropertyNamesOfPropertyName(node: PropertyName, checker: TypeChecker): LateBoundPropertyNames = js.native
   def getLineBreakStyle(sourceFile: SourceFile): Linefeed | CarriagereturnLinefeed = js.native
   def getLineRanges(sourceFile: SourceFile): js.Array[LineRange] = js.native
-  def getModifier(
-    node: Node,
-    kind: AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword
-  ): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: AbstractKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: AsyncKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: ConstKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: DeclareKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: DefaultKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: ExportKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: PrivateKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: ProtectedKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: PublicKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: ReadonlyKeyword): js.UndefOr[Modifier] = js.native
+  def getModifier(node: Node, kind: StaticKeyword): js.UndefOr[Modifier] = js.native
   def getNextStatement(statement: Statement): js.UndefOr[Statement] = js.native
   def getNextToken(node: Node): js.UndefOr[Node] = js.native
   def getNextToken(node: Node, sourceFile: SourceFile): js.UndefOr[Node] = js.native
@@ -140,6 +147,7 @@ object utilMod extends js.Object {
   def getPropertyOfType(`type`: Type, name: typings.typescript.mod.String): js.UndefOr[Symbol] = js.native
   def getSingleLateBoundPropertyNameOfPropertyName(node: PropertyName, checker: TypeChecker): js.UndefOr[typings.tsutils.utilUtilMod.PropertyName] = js.native
   def getTokenAtPosition(parent: Node, pos: Double): js.UndefOr[Node] = js.native
+  def getTokenAtPosition(parent: Node, pos: Double, sourceFile: js.UndefOr[scala.Nothing], allowJsDoc: Boolean): js.UndefOr[Node] = js.native
   def getTokenAtPosition(parent: Node, pos: Double, sourceFile: SourceFile): js.UndefOr[Node] = js.native
   def getTokenAtPosition(parent: Node, pos: Double, sourceFile: SourceFile, allowJsDoc: Boolean): js.UndefOr[Node] = js.native
   def getUsageDomain(node: Identifier): js.UndefOr[UsageDomain] = js.native
@@ -147,7 +155,10 @@ object utilMod extends js.Object {
   def getWrappedNodeAtPosition(wrap: NodeWrap, pos: Double): js.UndefOr[NodeWrap] = js.native
   def hasAccessModifier(node: ClassElement): Boolean = js.native
   def hasAccessModifier(node: ParameterDeclaration): Boolean = js.native
-  def hasModifier(): Boolean = js.native
+  def hasModifier(
+    modifiers: js.UndefOr[scala.Nothing],
+    kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword)*
+  ): Boolean = js.native
   def hasModifier(
     modifiers: ModifiersArray,
     kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword)*
@@ -217,6 +228,7 @@ object utilMod extends js.Object {
   def isValidPropertyName(text: String, languageVersion: ScriptTarget): Boolean = js.native
   def isWellKnownSymbolLiterally(node: Expression): /* is tsutils.tsutils/util/util.WellKnownSymbolLiteral */ Boolean = js.native
   def parseJsDocOfNode(node: Node): js.Array[JSDoc] = js.native
+  def parseJsDocOfNode(node: Node, considerTrailingComments: js.UndefOr[scala.Nothing], sourceFile: SourceFile): js.Array[JSDoc] = js.native
   def parseJsDocOfNode(node: Node, considerTrailingComments: Boolean): js.Array[JSDoc] = js.native
   def parseJsDocOfNode(node: Node, considerTrailingComments: Boolean, sourceFile: SourceFile): js.Array[JSDoc] = js.native
   def removeOptionalityFromType(checker: TypeChecker, `type`: Type): Type = js.native

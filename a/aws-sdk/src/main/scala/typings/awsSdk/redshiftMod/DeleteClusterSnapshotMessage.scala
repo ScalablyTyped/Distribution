@@ -18,10 +18,28 @@ trait DeleteClusterSnapshotMessage extends js.Object {
 
 object DeleteClusterSnapshotMessage {
   @scala.inline
-  def apply(SnapshotIdentifier: String, SnapshotClusterIdentifier: String = null): DeleteClusterSnapshotMessage = {
+  def apply(SnapshotIdentifier: String): DeleteClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(SnapshotIdentifier = SnapshotIdentifier.asInstanceOf[js.Any])
-    if (SnapshotClusterIdentifier != null) __obj.updateDynamic("SnapshotClusterIdentifier")(SnapshotClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClusterSnapshotMessage]
   }
+  @scala.inline
+  implicit class DeleteClusterSnapshotMessageOps[Self <: DeleteClusterSnapshotMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshotIdentifier(value: String): Self = this.set("SnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotClusterIdentifier(value: String): Self = this.set("SnapshotClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotClusterIdentifier: Self = this.set("SnapshotClusterIdentifier", js.undefined)
+  }
+  
 }
 

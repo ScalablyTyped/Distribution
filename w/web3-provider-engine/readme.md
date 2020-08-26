@@ -10,9 +10,9 @@ Web3 ProviderEngine is a tool for composing your own [web3 providers](https://gi
 | ------------------ | :-------------: |
 | Full name          | web3-provider-engine |
 | Keywords           | - |
-| # releases         | 33 |
-| # dependents       | 184 |
-| # downloads        | 1978416 |
+| # releases         | 32 |
+| # dependents       | 189 |
+| # downloads        | 1980397 |
 | # stars            | 1 |
 
 ## Links

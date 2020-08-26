@@ -12,6 +12,7 @@ trait PointArray extends Array {
   @JSName("parse")
   def parse_Array(points: PointArrayAlias): js.Array[ArrayPoint] = js.native
   def size(): this.type = js.native
+  def size(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def size(width: Double): this.type = js.native
   def size(width: Double, height: Double): this.type = js.native
   def toLine(): X1 = js.native

@@ -29,6 +29,7 @@ class Circle protected () extends SimpleGeometry {
     */
   def this(center: Coordinate_) = this()
   def this(center: Coordinate_, opt_radius: Double) = this()
+  def this(center: Coordinate_, opt_radius: js.UndefOr[scala.Nothing], opt_layout: GeometryLayout) = this()
   def this(center: Coordinate_, opt_radius: Double, opt_layout: GeometryLayout) = this()
   /**
     * Return the center of the circle as {@link ol.Coordinate coordinate}.

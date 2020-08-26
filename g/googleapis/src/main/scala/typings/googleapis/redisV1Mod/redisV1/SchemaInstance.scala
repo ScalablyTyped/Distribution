@@ -112,44 +112,90 @@ trait SchemaInstance extends js.Object {
 
 object SchemaInstance {
   @scala.inline
-  def apply(
-    alternativeLocationId: String = null,
-    authorizedNetwork: String = null,
-    createTime: String = null,
-    currentLocationId: String = null,
-    displayName: String = null,
-    host: String = null,
-    labels: StringDictionary[String] = null,
-    locationId: String = null,
-    memorySizeGb: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    redisConfigs: StringDictionary[String] = null,
-    redisVersion: String = null,
-    reservedIpRange: String = null,
-    state: String = null,
-    statusMessage: String = null,
-    tier: String = null
-  ): SchemaInstance = {
+  def apply(): SchemaInstance = {
     val __obj = js.Dynamic.literal()
-    if (alternativeLocationId != null) __obj.updateDynamic("alternativeLocationId")(alternativeLocationId.asInstanceOf[js.Any])
-    if (authorizedNetwork != null) __obj.updateDynamic("authorizedNetwork")(authorizedNetwork.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (currentLocationId != null) __obj.updateDynamic("currentLocationId")(currentLocationId.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(memorySizeGb)) __obj.updateDynamic("memorySizeGb")(memorySizeGb.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (redisConfigs != null) __obj.updateDynamic("redisConfigs")(redisConfigs.asInstanceOf[js.Any])
-    if (redisVersion != null) __obj.updateDynamic("redisVersion")(redisVersion.asInstanceOf[js.Any])
-    if (reservedIpRange != null) __obj.updateDynamic("reservedIpRange")(reservedIpRange.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstance]
   }
+  @scala.inline
+  implicit class SchemaInstanceOps[Self <: SchemaInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlternativeLocationId(value: String): Self = this.set("alternativeLocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternativeLocationId: Self = this.set("alternativeLocationId", js.undefined)
+    @scala.inline
+    def setAuthorizedNetwork(value: String): Self = this.set("authorizedNetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizedNetwork: Self = this.set("authorizedNetwork", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setCurrentLocationId(value: String): Self = this.set("currentLocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentLocationId: Self = this.set("currentLocationId", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    @scala.inline
+    def setMemorySizeGb(value: Double): Self = this.set("memorySizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemorySizeGb: Self = this.set("memorySizeGb", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setRedisConfigs(value: StringDictionary[String]): Self = this.set("redisConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedisConfigs: Self = this.set("redisConfigs", js.undefined)
+    @scala.inline
+    def setRedisVersion(value: String): Self = this.set("redisVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedisVersion: Self = this.set("redisVersion", js.undefined)
+    @scala.inline
+    def setReservedIpRange(value: String): Self = this.set("reservedIpRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedIpRange: Self = this.set("reservedIpRange", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setTier(value: String): Self = this.set("tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("tier", js.undefined)
+  }
+  
 }
 

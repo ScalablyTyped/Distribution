@@ -5,22 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModelSelectedItem[T] extends js.Object {
-  var component: js.UndefOr[T] = js.undefined
-  var element: js.UndefOr[dxElement] = js.undefined
-  var model: js.UndefOr[js.Any] = js.undefined
-  var selectedItem: js.UndefOr[js.Any] = js.undefined
+  var component: js.UndefOr[T] = js.native
+  var element: js.UndefOr[dxElement] = js.native
+  var model: js.UndefOr[js.Any] = js.native
+  var selectedItem: js.UndefOr[js.Any] = js.native
 }
 
 object ModelSelectedItem {
   @scala.inline
-  def apply[T](component: T = null, element: dxElement = null, model: js.Any = null, selectedItem: js.Any = null): ModelSelectedItem[T] = {
+  def apply[T](): ModelSelectedItem[T] = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelSelectedItem[T]]
   }
+  @scala.inline
+  implicit class ModelSelectedItemOps[Self <: ModelSelectedItem[_], T] (val x: Self with ModelSelectedItem[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponent(value: T): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setSelectedItem(value: js.Any): Self = this.set("selectedItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItem: Self = this.set("selectedItem", js.undefined)
+  }
+  
 }
 

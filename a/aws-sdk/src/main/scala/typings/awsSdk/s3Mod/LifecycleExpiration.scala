@@ -22,16 +22,34 @@ trait LifecycleExpiration extends js.Object {
 
 object LifecycleExpiration {
   @scala.inline
-  def apply(
-    Date: Date = null,
-    Days: js.UndefOr[Days] = js.undefined,
-    ExpiredObjectDeleteMarker: js.UndefOr[ExpiredObjectDeleteMarker] = js.undefined
-  ): LifecycleExpiration = {
+  def apply(): LifecycleExpiration = {
     val __obj = js.Dynamic.literal()
-    if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
-    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExpiredObjectDeleteMarker)) __obj.updateDynamic("ExpiredObjectDeleteMarker")(ExpiredObjectDeleteMarker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleExpiration]
   }
+  @scala.inline
+  implicit class LifecycleExpirationOps[Self <: LifecycleExpiration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: Date): Self = this.set("Date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("Date", js.undefined)
+    @scala.inline
+    def setDays(value: Days): Self = this.set("Days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("Days", js.undefined)
+    @scala.inline
+    def setExpiredObjectDeleteMarker(value: ExpiredObjectDeleteMarker): Self = this.set("ExpiredObjectDeleteMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiredObjectDeleteMarker: Self = this.set("ExpiredObjectDeleteMarker", js.undefined)
+  }
+  
 }
 

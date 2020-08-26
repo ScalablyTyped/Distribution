@@ -24,6 +24,8 @@ trait OnDeactivate extends js.Object {
   @JSName("$routerOnDeactivate")
   def $routerOnDeactivate(): js.Any = js.native
   @JSName("$routerOnDeactivate")
+  def $routerOnDeactivate(next: js.UndefOr[scala.Nothing], prev: ComponentInstruction): js.Any = js.native
+  @JSName("$routerOnDeactivate")
   def $routerOnDeactivate(next: ComponentInstruction): js.Any = js.native
   @JSName("$routerOnDeactivate")
   def $routerOnDeactivate(next: ComponentInstruction, prev: ComponentInstruction): js.Any = js.native

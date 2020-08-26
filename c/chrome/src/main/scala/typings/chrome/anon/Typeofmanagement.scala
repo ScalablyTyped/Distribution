@@ -38,10 +38,12 @@ trait Typeofmanagement extends js.Object {
   def setLaunchType(id: String, launchType: String, callback: js.Function0[Unit]): Unit = js.native
   def uninstall(id: String): Unit = js.native
   def uninstall(id: String, callback: js.Function0[Unit]): Unit = js.native
+  def uninstall(id: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def uninstall(id: String, options: UninstallOptions): Unit = js.native
   def uninstall(id: String, options: UninstallOptions, callback: js.Function0[Unit]): Unit = js.native
   def uninstallSelf(): Unit = js.native
   def uninstallSelf(callback: js.Function0[Unit]): Unit = js.native
+  def uninstallSelf(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def uninstallSelf(options: UninstallOptions): Unit = js.native
   def uninstallSelf(options: UninstallOptions, callback: js.Function0[Unit]): Unit = js.native
 }

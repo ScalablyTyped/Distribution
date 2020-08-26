@@ -1,5 +1,7 @@
 package typings.reactNativeElements.anon
 
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
@@ -21,90 +23,137 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.OverlayProps> */
+@js.native
 trait PartialOverlayProps extends js.Object {
-  var animated: js.UndefOr[Boolean] = js.undefined
-  var animationType: js.UndefOr[none | slide | fade] = js.undefined
-  var borderRadius: js.UndefOr[Double] = js.undefined
-  var children: js.UndefOr[ReactElement] = js.undefined
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var fullScreen: js.UndefOr[Boolean] = js.undefined
-  var hardwareAccelerated: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var isVisible: js.UndefOr[Boolean] = js.undefined
-  var onBackdropPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onOrientationChange: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]] = js.undefined
-  var onRequestClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]] = js.undefined
-  var overlayBackgroundColor: js.UndefOr[String] = js.undefined
-  var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var presentationStyle: js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen] = js.undefined
-  var statusBarTranslucent: js.UndefOr[Boolean] = js.undefined
+  var ModalComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var animated: js.UndefOr[Boolean] = js.native
+  var animationType: js.UndefOr[none | slide | fade] = js.native
+  var backdropStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var children: js.UndefOr[ReactElement] = js.native
+  var fullScreen: js.UndefOr[Boolean] = js.native
+  var hardwareAccelerated: js.UndefOr[Boolean] = js.native
+  var isVisible: js.UndefOr[Boolean] = js.native
+  var onBackdropPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOrientationChange: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]] = js.native
+  var onRequestClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]] = js.native
+  var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var presentationStyle: js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen] = js.native
+  var statusBarTranslucent: js.UndefOr[Boolean] = js.native
   var supportedOrientations: js.UndefOr[
     js.Array[
       portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
     ]
-  ] = js.undefined
-  var transparent: js.UndefOr[Boolean] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
-  var windowBackgroundColor: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var transparent: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object PartialOverlayProps {
   @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    animationType: none | slide | fade = null,
-    borderRadius: js.UndefOr[Double] = js.undefined,
-    children: ReactElement = null,
-    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    fullScreen: js.UndefOr[Boolean] = js.undefined,
-    hardwareAccelerated: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    isVisible: js.UndefOr[Boolean] = js.undefined,
-    onBackdropPress: () => Unit = null,
-    onDismiss: () => Unit = null,
-    onOrientationChange: /* event */ NativeSyntheticEvent[_] => Unit = null,
-    onRequestClose: () => Unit = null,
-    onShow: /* event */ NativeSyntheticEvent[_] => Unit = null,
-    overlayBackgroundColor: String = null,
-    overlayStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    presentationStyle: fullScreen | pageSheet | formSheet | overFullScreen = null,
-    statusBarTranslucent: js.UndefOr[Boolean] = js.undefined,
-    supportedOrientations: js.Array[
-      portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
-    ] = null,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String = null,
-    windowBackgroundColor: String = null
-  ): PartialOverlayProps = {
+  def apply(): PartialOverlayProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible.get.asInstanceOf[js.Any])
-    if (onBackdropPress != null) __obj.updateDynamic("onBackdropPress")(js.Any.fromFunction0(onBackdropPress))
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
-    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(js.Any.fromFunction1(onOrientationChange))
-    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(js.Any.fromFunction0(onRequestClose))
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
-    if (overlayBackgroundColor != null) __obj.updateDynamic("overlayBackgroundColor")(overlayBackgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlayStyle)) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusBarTranslucent)) __obj.updateDynamic("statusBarTranslucent")(statusBarTranslucent.get.asInstanceOf[js.Any])
-    if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (windowBackgroundColor != null) __obj.updateDynamic("windowBackgroundColor")(windowBackgroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialOverlayProps]
   }
+  @scala.inline
+  implicit class PartialOverlayPropsOps[Self <: PartialOverlayProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModalComponent(value: ComponentClass[js.Object, ComponentState]): Self = this.set("ModalComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModalComponent: Self = this.set("ModalComponent", js.undefined)
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setAnimationType(value: none | slide | fade): Self = this.set("animationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationType: Self = this.set("animationType", js.undefined)
+    @scala.inline
+    def setBackdropStyle(value: StyleProp[ViewStyle]): Self = this.set("backdropStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdropStyle: Self = this.set("backdropStyle", js.undefined)
+    @scala.inline
+    def setBackdropStyleNull: Self = this.set("backdropStyle", null)
+    @scala.inline
+    def setChildren(value: ReactElement): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setFullScreen(value: Boolean): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullScreen: Self = this.set("fullScreen", js.undefined)
+    @scala.inline
+    def setHardwareAccelerated(value: Boolean): Self = this.set("hardwareAccelerated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHardwareAccelerated: Self = this.set("hardwareAccelerated", js.undefined)
+    @scala.inline
+    def setIsVisible(value: Boolean): Self = this.set("isVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsVisible: Self = this.set("isVisible", js.undefined)
+    @scala.inline
+    def setOnBackdropPress(value: () => Unit): Self = this.set("onBackdropPress", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnBackdropPress: Self = this.set("onBackdropPress", js.undefined)
+    @scala.inline
+    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    @scala.inline
+    def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[_] => Unit): Self = this.set("onOrientationChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOrientationChange: Self = this.set("onOrientationChange", js.undefined)
+    @scala.inline
+    def setOnRequestClose(value: () => Unit): Self = this.set("onRequestClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnRequestClose: Self = this.set("onRequestClose", js.undefined)
+    @scala.inline
+    def setOnShow(value: /* event */ NativeSyntheticEvent[_] => Unit): Self = this.set("onShow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    @scala.inline
+    def setOverlayStyle(value: StyleProp[ViewStyle]): Self = this.set("overlayStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayStyle: Self = this.set("overlayStyle", js.undefined)
+    @scala.inline
+    def setOverlayStyleNull: Self = this.set("overlayStyle", null)
+    @scala.inline
+    def setPresentationStyle(value: fullScreen | pageSheet | formSheet | overFullScreen): Self = this.set("presentationStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresentationStyle: Self = this.set("presentationStyle", js.undefined)
+    @scala.inline
+    def setStatusBarTranslucent(value: Boolean): Self = this.set("statusBarTranslucent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusBarTranslucent: Self = this.set("statusBarTranslucent", js.undefined)
+    @scala.inline
+    def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = this.set("supportedOrientations", js.Array(value :_*))
+    @scala.inline
+    def setSupportedOrientations(
+      value: js.Array[
+          portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
+        ]
+    ): Self = this.set("supportedOrientations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedOrientations: Self = this.set("supportedOrientations", js.undefined)
+    @scala.inline
+    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

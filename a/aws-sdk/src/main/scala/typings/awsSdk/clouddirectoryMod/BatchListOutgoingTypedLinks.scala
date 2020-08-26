@@ -30,19 +30,42 @@ trait BatchListOutgoingTypedLinks extends js.Object {
 
 object BatchListOutgoingTypedLinks {
   @scala.inline
-  def apply(
-    ObjectReference: ObjectReference,
-    FilterAttributeRanges: TypedLinkAttributeRangeList = null,
-    FilterTypedLink: TypedLinkSchemaAndFacetName = null,
-    MaxResults: js.UndefOr[NumberResults] = js.undefined,
-    NextToken: NextToken = null
-  ): BatchListOutgoingTypedLinks = {
+  def apply(ObjectReference: ObjectReference): BatchListOutgoingTypedLinks = {
     val __obj = js.Dynamic.literal(ObjectReference = ObjectReference.asInstanceOf[js.Any])
-    if (FilterAttributeRanges != null) __obj.updateDynamic("FilterAttributeRanges")(FilterAttributeRanges.asInstanceOf[js.Any])
-    if (FilterTypedLink != null) __obj.updateDynamic("FilterTypedLink")(FilterTypedLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchListOutgoingTypedLinks]
   }
+  @scala.inline
+  implicit class BatchListOutgoingTypedLinksOps[Self <: BatchListOutgoingTypedLinks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setObjectReference(value: ObjectReference): Self = this.set("ObjectReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilterAttributeRangesVarargs(value: TypedLinkAttributeRange*): Self = this.set("FilterAttributeRanges", js.Array(value :_*))
+    @scala.inline
+    def setFilterAttributeRanges(value: TypedLinkAttributeRangeList): Self = this.set("FilterAttributeRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterAttributeRanges: Self = this.set("FilterAttributeRanges", js.undefined)
+    @scala.inline
+    def setFilterTypedLink(value: TypedLinkSchemaAndFacetName): Self = this.set("FilterTypedLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterTypedLink: Self = this.set("FilterTypedLink", js.undefined)
+    @scala.inline
+    def setMaxResults(value: NumberResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

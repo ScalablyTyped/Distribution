@@ -29,6 +29,7 @@ class ResourceLicensecodes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLicenseCode] = js.native
   def get(callback: BodyResponseCallback[SchemaLicenseCode]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseCode] = js.native
   def get(params: ParamsResourceLicensecodesGet): GaxiosPromise[SchemaLicenseCode] = js.native
   def get(params: ParamsResourceLicensecodesGet, callback: BodyResponseCallback[SchemaLicenseCode]): Unit = js.native
   def get(

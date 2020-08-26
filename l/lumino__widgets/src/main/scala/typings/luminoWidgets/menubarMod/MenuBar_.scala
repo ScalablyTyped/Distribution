@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/menubar", "MenuBar")
+@JSImport("@lumino/widgets/types/menubar", "MenuBar")
 @js.native
 /**
   * Construct a new menu bar.

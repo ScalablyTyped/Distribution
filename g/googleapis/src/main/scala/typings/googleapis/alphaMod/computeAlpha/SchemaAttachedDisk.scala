@@ -124,42 +124,90 @@ trait SchemaAttachedDisk extends js.Object {
 
 object SchemaAttachedDisk {
   @scala.inline
-  def apply(
-    autoDelete: js.UndefOr[Boolean] = js.undefined,
-    boot: js.UndefOr[Boolean] = js.undefined,
-    deviceName: String = null,
-    diskEncryptionKey: SchemaCustomerEncryptionKey = null,
-    diskSizeGb: String = null,
-    guestOsFeatures: js.Array[SchemaGuestOsFeature] = null,
-    index: js.UndefOr[Double] = js.undefined,
-    initializeParams: SchemaAttachedDiskInitializeParams = null,
-    interface: String = null,
-    kind: String = null,
-    licenses: js.Array[String] = null,
-    mode: String = null,
-    savedState: String = null,
-    shieldedInstanceInitialState: SchemaInitialStateConfig = null,
-    source: String = null,
-    `type`: String = null
-  ): SchemaAttachedDisk = {
+  def apply(): SchemaAttachedDisk = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(boot)) __obj.updateDynamic("boot")(boot.get.asInstanceOf[js.Any])
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
-    if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey.asInstanceOf[js.Any])
-    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
-    if (guestOsFeatures != null) __obj.updateDynamic("guestOsFeatures")(guestOsFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (initializeParams != null) __obj.updateDynamic("initializeParams")(initializeParams.asInstanceOf[js.Any])
-    if (interface != null) __obj.updateDynamic("interface")(interface.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (licenses != null) __obj.updateDynamic("licenses")(licenses.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (savedState != null) __obj.updateDynamic("savedState")(savedState.asInstanceOf[js.Any])
-    if (shieldedInstanceInitialState != null) __obj.updateDynamic("shieldedInstanceInitialState")(shieldedInstanceInitialState.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttachedDisk]
   }
+  @scala.inline
+  implicit class SchemaAttachedDiskOps[Self <: SchemaAttachedDisk] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoDelete(value: Boolean): Self = this.set("autoDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDelete: Self = this.set("autoDelete", js.undefined)
+    @scala.inline
+    def setBoot(value: Boolean): Self = this.set("boot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoot: Self = this.set("boot", js.undefined)
+    @scala.inline
+    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    @scala.inline
+    def setDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("diskEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskEncryptionKey: Self = this.set("diskEncryptionKey", js.undefined)
+    @scala.inline
+    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    @scala.inline
+    def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = this.set("guestOsFeatures", js.Array(value :_*))
+    @scala.inline
+    def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = this.set("guestOsFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuestOsFeatures: Self = this.set("guestOsFeatures", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setInitializeParams(value: SchemaAttachedDiskInitializeParams): Self = this.set("initializeParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitializeParams: Self = this.set("initializeParams", js.undefined)
+    @scala.inline
+    def setInterface(value: String): Self = this.set("interface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterface: Self = this.set("interface", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLicensesVarargs(value: String*): Self = this.set("licenses", js.Array(value :_*))
+    @scala.inline
+    def setLicenses(value: js.Array[String]): Self = this.set("licenses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenses: Self = this.set("licenses", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setSavedState(value: String): Self = this.set("savedState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavedState: Self = this.set("savedState", js.undefined)
+    @scala.inline
+    def setShieldedInstanceInitialState(value: SchemaInitialStateConfig): Self = this.set("shieldedInstanceInitialState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShieldedInstanceInitialState: Self = this.set("shieldedInstanceInitialState", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

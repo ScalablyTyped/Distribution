@@ -65,26 +65,56 @@ trait SchemaDataPoint extends js.Object {
 
 object SchemaDataPoint {
   @scala.inline
-  def apply(
-    computationTimeMillis: String = null,
-    dataTypeName: String = null,
-    endTimeNanos: String = null,
-    modifiedTimeMillis: String = null,
-    originDataSourceId: String = null,
-    rawTimestampNanos: String = null,
-    startTimeNanos: String = null,
-    value: js.Array[SchemaValue] = null
-  ): SchemaDataPoint = {
+  def apply(): SchemaDataPoint = {
     val __obj = js.Dynamic.literal()
-    if (computationTimeMillis != null) __obj.updateDynamic("computationTimeMillis")(computationTimeMillis.asInstanceOf[js.Any])
-    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName.asInstanceOf[js.Any])
-    if (endTimeNanos != null) __obj.updateDynamic("endTimeNanos")(endTimeNanos.asInstanceOf[js.Any])
-    if (modifiedTimeMillis != null) __obj.updateDynamic("modifiedTimeMillis")(modifiedTimeMillis.asInstanceOf[js.Any])
-    if (originDataSourceId != null) __obj.updateDynamic("originDataSourceId")(originDataSourceId.asInstanceOf[js.Any])
-    if (rawTimestampNanos != null) __obj.updateDynamic("rawTimestampNanos")(rawTimestampNanos.asInstanceOf[js.Any])
-    if (startTimeNanos != null) __obj.updateDynamic("startTimeNanos")(startTimeNanos.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataPoint]
   }
+  @scala.inline
+  implicit class SchemaDataPointOps[Self <: SchemaDataPoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputationTimeMillis(value: String): Self = this.set("computationTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputationTimeMillis: Self = this.set("computationTimeMillis", js.undefined)
+    @scala.inline
+    def setDataTypeName(value: String): Self = this.set("dataTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTypeName: Self = this.set("dataTypeName", js.undefined)
+    @scala.inline
+    def setEndTimeNanos(value: String): Self = this.set("endTimeNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimeNanos: Self = this.set("endTimeNanos", js.undefined)
+    @scala.inline
+    def setModifiedTimeMillis(value: String): Self = this.set("modifiedTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedTimeMillis: Self = this.set("modifiedTimeMillis", js.undefined)
+    @scala.inline
+    def setOriginDataSourceId(value: String): Self = this.set("originDataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginDataSourceId: Self = this.set("originDataSourceId", js.undefined)
+    @scala.inline
+    def setRawTimestampNanos(value: String): Self = this.set("rawTimestampNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawTimestampNanos: Self = this.set("rawTimestampNanos", js.undefined)
+    @scala.inline
+    def setStartTimeNanos(value: String): Self = this.set("startTimeNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimeNanos: Self = this.set("startTimeNanos", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: SchemaValue*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: js.Array[SchemaValue]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

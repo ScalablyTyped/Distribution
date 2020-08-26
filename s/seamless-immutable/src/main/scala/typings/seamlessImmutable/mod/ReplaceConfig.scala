@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReplaceConfig extends js.Object {
-  var deep: Boolean
+  var deep: Boolean = js.native
 }
 
 object ReplaceConfig {
@@ -14,5 +15,20 @@ object ReplaceConfig {
     val __obj = js.Dynamic.literal(deep = deep.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceConfig]
   }
+  @scala.inline
+  implicit class ReplaceConfigOps[Self <: ReplaceConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeep(value: Boolean): Self = this.set("deep", value.asInstanceOf[js.Any])
+  }
+  
 }
 

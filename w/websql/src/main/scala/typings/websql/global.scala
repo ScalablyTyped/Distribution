@@ -11,24 +11,12 @@ object global extends js.Object {
     */
   @js.native
   class SQLError ()
-    extends typings.websql.SQLError {
-     // = 7;
-    /* CompleteClass */
-    override var code: Double = js.native
-    /* CompleteClass */
-    override var message: DOMString = js.native
-  }
+    extends typings.websql.SQLError
   
   // synchronous database API error
   @js.native
   class SQLException ()
-    extends typings.websql.SQLException {
-     // = 7;
-    /* CompleteClass */
-    override var code: Double = js.native
-    /* CompleteClass */
-    override var message: DOMString = js.native
-  }
+    extends typings.websql.SQLException
   
   /* static members */
   @js.native

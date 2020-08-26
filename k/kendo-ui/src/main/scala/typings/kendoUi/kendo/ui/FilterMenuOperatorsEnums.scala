@@ -4,23 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FilterMenuOperatorsEnums extends js.Object {
   @JSName("eq")
-  var eq_FFilterMenuOperatorsEnums: js.UndefOr[String] = js.undefined
-  var isnotnull: js.UndefOr[String] = js.undefined
-  var isnull: js.UndefOr[String] = js.undefined
-  var neq: js.UndefOr[String] = js.undefined
+  var eq_FFilterMenuOperatorsEnums: js.UndefOr[String] = js.native
+  var isnotnull: js.UndefOr[String] = js.native
+  var isnull: js.UndefOr[String] = js.native
+  var neq: js.UndefOr[String] = js.native
 }
 
 object FilterMenuOperatorsEnums {
   @scala.inline
-  def apply(eq: String = null, isnotnull: String = null, isnull: String = null, neq: String = null): FilterMenuOperatorsEnums = {
+  def apply(): FilterMenuOperatorsEnums = {
     val __obj = js.Dynamic.literal()
-    if (eq != null) __obj.updateDynamic("eq")(eq.asInstanceOf[js.Any])
-    if (isnotnull != null) __obj.updateDynamic("isnotnull")(isnotnull.asInstanceOf[js.Any])
-    if (isnull != null) __obj.updateDynamic("isnull")(isnull.asInstanceOf[js.Any])
-    if (neq != null) __obj.updateDynamic("neq")(neq.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterMenuOperatorsEnums]
   }
+  @scala.inline
+  implicit class FilterMenuOperatorsEnumsOps[Self <: FilterMenuOperatorsEnums] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEq(value: String): Self = this.set("eq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEq: Self = this.set("eq", js.undefined)
+    @scala.inline
+    def setIsnotnull(value: String): Self = this.set("isnotnull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsnotnull: Self = this.set("isnotnull", js.undefined)
+    @scala.inline
+    def setIsnull(value: String): Self = this.set("isnull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsnull: Self = this.set("isnull", js.undefined)
+    @scala.inline
+    def setNeq(value: String): Self = this.set("neq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeq: Self = this.set("neq", js.undefined)
+  }
+  
 }
 

@@ -38,23 +38,48 @@ trait PublishInput extends js.Object {
 
 object PublishInput {
   @scala.inline
-  def apply(
-    Message: message,
-    MessageAttributes: MessageAttributeMap = null,
-    MessageStructure: messageStructure = null,
-    PhoneNumber: String = null,
-    Subject: subject = null,
-    TargetArn: String = null,
-    TopicArn: topicARN = null
-  ): PublishInput = {
+  def apply(Message: message): PublishInput = {
     val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any])
-    if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes.asInstanceOf[js.Any])
-    if (MessageStructure != null) __obj.updateDynamic("MessageStructure")(MessageStructure.asInstanceOf[js.Any])
-    if (PhoneNumber != null) __obj.updateDynamic("PhoneNumber")(PhoneNumber.asInstanceOf[js.Any])
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
-    if (TargetArn != null) __obj.updateDynamic("TargetArn")(TargetArn.asInstanceOf[js.Any])
-    if (TopicArn != null) __obj.updateDynamic("TopicArn")(TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishInput]
   }
+  @scala.inline
+  implicit class PublishInputOps[Self <: PublishInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessage(value: message): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageAttributes(value: MessageAttributeMap): Self = this.set("MessageAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageAttributes: Self = this.set("MessageAttributes", js.undefined)
+    @scala.inline
+    def setMessageStructure(value: messageStructure): Self = this.set("MessageStructure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageStructure: Self = this.set("MessageStructure", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: String): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
+    @scala.inline
+    def setSubject(value: subject): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("Subject", js.undefined)
+    @scala.inline
+    def setTargetArn(value: String): Self = this.set("TargetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetArn: Self = this.set("TargetArn", js.undefined)
+    @scala.inline
+    def setTopicArn(value: topicARN): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+  }
+  
 }
 

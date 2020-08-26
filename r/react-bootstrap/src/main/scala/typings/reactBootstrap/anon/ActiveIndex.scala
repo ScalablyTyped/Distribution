@@ -7,61 +7,106 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActiveIndex extends js.Object {
-  var activeIndex: js.UndefOr[Double] = js.undefined
-  var bsSize: js.UndefOr[Sizes] = js.undefined
-  var bsStyle: js.UndefOr[String] = js.undefined
-  var controls: js.UndefOr[Boolean] = js.undefined
-  var defaultActiveIndex: js.UndefOr[Double] = js.undefined
-  var direction: js.UndefOr[String] = js.undefined
-  var indicators: js.UndefOr[Boolean] = js.undefined
-  var interval: js.UndefOr[Double | Null] = js.undefined
-  var nextIcon: js.UndefOr[ReactNode] = js.undefined
-  var onSelect: js.UndefOr[SelectCallback] = js.undefined
+  var activeIndex: js.UndefOr[Double] = js.native
+  var bsSize: js.UndefOr[Sizes] = js.native
+  var bsStyle: js.UndefOr[String] = js.native
+  var controls: js.UndefOr[Boolean] = js.native
+  var defaultActiveIndex: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[String] = js.native
+  var indicators: js.UndefOr[Boolean] = js.native
+  var interval: js.UndefOr[Double | Null] = js.native
+  var nextIcon: js.UndefOr[ReactNode] = js.native
+  var onSelect: js.UndefOr[SelectCallback] = js.native
   // TODO: Add more specific type
-  var onSlideEnd: js.UndefOr[js.Function] = js.undefined
-  var pauseOnHover: js.UndefOr[Boolean] = js.undefined
-  var prevIcon: js.UndefOr[ReactNode] = js.undefined
-  var slide: js.UndefOr[Boolean] = js.undefined
-  var wrap: js.UndefOr[Boolean] = js.undefined
+  var onSlideEnd: js.UndefOr[js.Function] = js.native
+  var pauseOnHover: js.UndefOr[Boolean] = js.native
+  var prevIcon: js.UndefOr[ReactNode] = js.native
+  var slide: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.native
 }
 
 object ActiveIndex {
   @scala.inline
-  def apply(
-    activeIndex: js.UndefOr[Double] = js.undefined,
-    bsSize: Sizes = null,
-    bsStyle: String = null,
-    controls: js.UndefOr[Boolean] = js.undefined,
-    defaultActiveIndex: js.UndefOr[Double] = js.undefined,
-    direction: String = null,
-    indicators: js.UndefOr[Boolean] = js.undefined,
-    interval: js.UndefOr[Null | Double] = js.undefined,
-    nextIcon: ReactNode = null,
-    onSelect: SelectCallback = null,
-    onSlideEnd: js.Function = null,
-    pauseOnHover: js.UndefOr[Boolean] = js.undefined,
-    prevIcon: ReactNode = null,
-    slide: js.UndefOr[Boolean] = js.undefined,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): ActiveIndex = {
+  def apply(): ActiveIndex = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultActiveIndex)) __obj.updateDynamic("defaultActiveIndex")(defaultActiveIndex.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(indicators)) __obj.updateDynamic("indicators")(indicators.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (nextIcon != null) __obj.updateDynamic("nextIcon")(nextIcon.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (onSlideEnd != null) __obj.updateDynamic("onSlideEnd")(onSlideEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.get.asInstanceOf[js.Any])
-    if (prevIcon != null) __obj.updateDynamic("prevIcon")(prevIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(slide)) __obj.updateDynamic("slide")(slide.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveIndex]
   }
+  @scala.inline
+  implicit class ActiveIndexOps[Self <: ActiveIndex] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveIndex: Self = this.set("activeIndex", js.undefined)
+    @scala.inline
+    def setBsSize(value: Sizes): Self = this.set("bsSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsSize: Self = this.set("bsSize", js.undefined)
+    @scala.inline
+    def setBsStyle(value: String): Self = this.set("bsStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsStyle: Self = this.set("bsStyle", js.undefined)
+    @scala.inline
+    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setDefaultActiveIndex(value: Double): Self = this.set("defaultActiveIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultActiveIndex: Self = this.set("defaultActiveIndex", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setIndicators(value: Boolean): Self = this.set("indicators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndicators: Self = this.set("indicators", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setIntervalNull: Self = this.set("interval", null)
+    @scala.inline
+    def setNextIcon(value: ReactNode): Self = this.set("nextIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextIcon: Self = this.set("nextIcon", js.undefined)
+    @scala.inline
+    def setOnSelect(value: SelectCallback): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnSlideEnd(value: js.Function): Self = this.set("onSlideEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSlideEnd: Self = this.set("onSlideEnd", js.undefined)
+    @scala.inline
+    def setPauseOnHover(value: Boolean): Self = this.set("pauseOnHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePauseOnHover: Self = this.set("pauseOnHover", js.undefined)
+    @scala.inline
+    def setPrevIcon(value: ReactNode): Self = this.set("prevIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevIcon: Self = this.set("prevIcon", js.undefined)
+    @scala.inline
+    def setSlide(value: Boolean): Self = this.set("slide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlide: Self = this.set("slide", js.undefined)
+    @scala.inline
+    def setWrap(value: Boolean): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+  }
+  
 }
 

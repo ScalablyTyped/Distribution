@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "d3-timer"
-version := "1.0-dt-20200515Z-e0fb9b"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-c44d09"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

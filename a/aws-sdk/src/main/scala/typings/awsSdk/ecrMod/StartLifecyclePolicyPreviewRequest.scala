@@ -22,15 +22,32 @@ trait StartLifecyclePolicyPreviewRequest extends js.Object {
 
 object StartLifecyclePolicyPreviewRequest {
   @scala.inline
-  def apply(
-    repositoryName: RepositoryName,
-    lifecyclePolicyText: LifecyclePolicyText = null,
-    registryId: RegistryId = null
-  ): StartLifecyclePolicyPreviewRequest = {
+  def apply(repositoryName: RepositoryName): StartLifecyclePolicyPreviewRequest = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (lifecyclePolicyText != null) __obj.updateDynamic("lifecyclePolicyText")(lifecyclePolicyText.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartLifecyclePolicyPreviewRequest]
   }
+  @scala.inline
+  implicit class StartLifecyclePolicyPreviewRequestOps[Self <: StartLifecyclePolicyPreviewRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLifecyclePolicyText(value: LifecyclePolicyText): Self = this.set("lifecyclePolicyText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecyclePolicyText: Self = this.set("lifecyclePolicyText", js.undefined)
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+  }
+  
 }
 

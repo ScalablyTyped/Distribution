@@ -23,11 +23,9 @@ class MenuDocumentSource protected () extends MenuSource {
   ) = this()
   @JSName("model")
   var model_FMenuDocumentSource: IModel = js.native
-  def menu(): js.Any = js.native
-  def menu(newValue: IMenuDocument): js.Any = js.native
+  def menu: IMenuDocument | Null = js.native
   def menuQualifiedName: String | Null = js.native
-  @JSName("menu")
-  def menu_Union: IMenuDocument | Null = js.native
+  def menu_=(newValue: IMenuDocument | Null): Unit = js.native
 }
 
 /* static members */

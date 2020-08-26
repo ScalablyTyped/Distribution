@@ -61,46 +61,66 @@ trait ParamsResourceLayersAnnotationdataGet extends StandardParameters {
 
 object ParamsResourceLayersAnnotationdataGet {
   @scala.inline
-  def apply(
-    allowWebDefinitions: js.UndefOr[Boolean] = js.undefined,
-    alt: String = null,
-    annotationDataId: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    contentVersion: String = null,
-    fields: String = null,
-    h: js.UndefOr[Double] = js.undefined,
-    key: String = null,
-    layerId: String = null,
-    locale: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    scale: js.UndefOr[Double] = js.undefined,
-    source: String = null,
-    userIp: String = null,
-    volumeId: String = null,
-    w: js.UndefOr[Double] = js.undefined
-  ): ParamsResourceLayersAnnotationdataGet = {
+  def apply(): ParamsResourceLayersAnnotationdataGet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowWebDefinitions)) __obj.updateDynamic("allowWebDefinitions")(allowWebDefinitions.get.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (annotationDataId != null) __obj.updateDynamic("annotationDataId")(annotationDataId.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(h)) __obj.updateDynamic("h")(h.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(w)) __obj.updateDynamic("w")(w.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceLayersAnnotationdataGet]
   }
+  @scala.inline
+  implicit class ParamsResourceLayersAnnotationdataGetOps[Self <: ParamsResourceLayersAnnotationdataGet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowWebDefinitions(value: Boolean): Self = this.set("allowWebDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowWebDefinitions: Self = this.set("allowWebDefinitions", js.undefined)
+    @scala.inline
+    def setAnnotationDataId(value: String): Self = this.set("annotationDataId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotationDataId: Self = this.set("annotationDataId", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setContentVersion(value: String): Self = this.set("contentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentVersion: Self = this.set("contentVersion", js.undefined)
+    @scala.inline
+    def setH(value: Double): Self = this.set("h", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH: Self = this.set("h", js.undefined)
+    @scala.inline
+    def setLayerId(value: String): Self = this.set("layerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerId: Self = this.set("layerId", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+    @scala.inline
+    def setW(value: Double): Self = this.set("w", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteW: Self = this.set("w", js.undefined)
+  }
+  
 }
 

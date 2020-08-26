@@ -11,8 +11,8 @@ Check if a path is a file, directory, or symlink
 | Full name          | path-type |
 | Keywords           | path, fs, type, is, check, directory, dir, file, filepath, symlink, symbolic, link, stat, stats, filesystem |
 | # releases         | 2 |
-| # dependents       | 85 |
-| # downloads        | 873005001 |
+| # dependents       | 86 |
+| # downloads        | 899242984 |
 | # stars            | 2 |
 
 ## Links

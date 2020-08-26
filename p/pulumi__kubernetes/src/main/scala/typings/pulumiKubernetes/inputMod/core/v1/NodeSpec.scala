@@ -8,63 +8,88 @@ import scala.scalajs.js.annotation._
 /**
   * NodeSpec describes the attributes that a node is created with.
   */
+@js.native
 trait NodeSpec extends js.Object {
   /**
-    * If specified, the source to get node configuration from The DynamicKubeletConfig feature
-    * gate must be enabled for the Kubelet to use this field
+    * If specified, the source to get node configuration from The DynamicKubeletConfig feature gate must be enabled for the Kubelet to use this field
     */
-  var configSource: js.UndefOr[Input[NodeConfigSource]] = js.undefined
+  var configSource: js.UndefOr[Input[NodeConfigSource]] = js.native
   /**
-    * Deprecated. Not all kubelets will set this field. Remove field after 1.13. see:
-    * https://issues.k8s.io/61966
+    * Deprecated. Not all kubelets will set this field. Remove field after 1.13. see: https://issues.k8s.io/61966
     */
-  var externalID: js.UndefOr[Input[String]] = js.undefined
+  var externalID: js.UndefOr[Input[String]] = js.native
   /**
     * PodCIDR represents the pod IP range assigned to the node.
     */
-  var podCIDR: js.UndefOr[Input[String]] = js.undefined
+  var podCIDR: js.UndefOr[Input[String]] = js.native
   /**
-    * podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If
-    * this field is specified, the 0th entry must match the podCIDR field. It may contain at most
-    * 1 value for each of IPv4 and IPv6.
+    * podCIDRs represents the IP ranges assigned to the node for usage by Pods on that node. If this field is specified, the 0th entry must match the podCIDR field. It may contain at most 1 value for each of IPv4 and IPv6.
     */
-  var podCIDRs: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var podCIDRs: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * ID of the node assigned by the cloud provider in the format:
-    * <ProviderName>://<ProviderSpecificNodeID>
+    * ID of the node assigned by the cloud provider in the format: <ProviderName>://<ProviderSpecificNodeID>
     */
-  var providerID: js.UndefOr[Input[String]] = js.undefined
+  var providerID: js.UndefOr[Input[String]] = js.native
   /**
     * If specified, the node's taints.
     */
-  var taints: js.UndefOr[Input[js.Array[Input[Taint]]]] = js.undefined
+  var taints: js.UndefOr[Input[js.Array[Input[Taint]]]] = js.native
   /**
-    * Unschedulable controls node schedulability of new pods. By default, node is schedulable.
-    * More info: https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration
+    * Unschedulable controls node schedulability of new pods. By default, node is schedulable. More info: https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration
     */
-  var unschedulable: js.UndefOr[Input[Boolean]] = js.undefined
+  var unschedulable: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object NodeSpec {
   @scala.inline
-  def apply(
-    configSource: Input[NodeConfigSource] = null,
-    externalID: Input[String] = null,
-    podCIDR: Input[String] = null,
-    podCIDRs: Input[js.Array[Input[String]]] = null,
-    providerID: Input[String] = null,
-    taints: Input[js.Array[Input[Taint]]] = null,
-    unschedulable: Input[Boolean] = null
-  ): NodeSpec = {
+  def apply(): NodeSpec = {
     val __obj = js.Dynamic.literal()
-    if (configSource != null) __obj.updateDynamic("configSource")(configSource.asInstanceOf[js.Any])
-    if (externalID != null) __obj.updateDynamic("externalID")(externalID.asInstanceOf[js.Any])
-    if (podCIDR != null) __obj.updateDynamic("podCIDR")(podCIDR.asInstanceOf[js.Any])
-    if (podCIDRs != null) __obj.updateDynamic("podCIDRs")(podCIDRs.asInstanceOf[js.Any])
-    if (providerID != null) __obj.updateDynamic("providerID")(providerID.asInstanceOf[js.Any])
-    if (taints != null) __obj.updateDynamic("taints")(taints.asInstanceOf[js.Any])
-    if (unschedulable != null) __obj.updateDynamic("unschedulable")(unschedulable.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeSpec]
   }
+  @scala.inline
+  implicit class NodeSpecOps[Self <: NodeSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigSource(value: Input[NodeConfigSource]): Self = this.set("configSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigSource: Self = this.set("configSource", js.undefined)
+    @scala.inline
+    def setExternalID(value: Input[String]): Self = this.set("externalID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalID: Self = this.set("externalID", js.undefined)
+    @scala.inline
+    def setPodCIDR(value: Input[String]): Self = this.set("podCIDR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePodCIDR: Self = this.set("podCIDR", js.undefined)
+    @scala.inline
+    def setPodCIDRsVarargs(value: Input[String]*): Self = this.set("podCIDRs", js.Array(value :_*))
+    @scala.inline
+    def setPodCIDRs(value: Input[js.Array[Input[String]]]): Self = this.set("podCIDRs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePodCIDRs: Self = this.set("podCIDRs", js.undefined)
+    @scala.inline
+    def setProviderID(value: Input[String]): Self = this.set("providerID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderID: Self = this.set("providerID", js.undefined)
+    @scala.inline
+    def setTaintsVarargs(value: Input[Taint]*): Self = this.set("taints", js.Array(value :_*))
+    @scala.inline
+    def setTaints(value: Input[js.Array[Input[Taint]]]): Self = this.set("taints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaints: Self = this.set("taints", js.undefined)
+    @scala.inline
+    def setUnschedulable(value: Input[Boolean]): Self = this.set("unschedulable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnschedulable: Self = this.set("unschedulable", js.undefined)
+  }
+  
 }
 

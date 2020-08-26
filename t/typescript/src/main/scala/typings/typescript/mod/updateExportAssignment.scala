@@ -9,8 +9,26 @@ import scala.scalajs.js.annotation._
 object updateExportAssignment extends js.Object {
   def apply(
     node: ExportAssignment,
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    expression: Expression
+  ): ExportAssignment = js.native
+  def apply(
+    node: ExportAssignment,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    expression: Expression
+  ): ExportAssignment = js.native
+  def apply(
+    node: ExportAssignment,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    expression: Expression
+  ): ExportAssignment = js.native
+  def apply(
+    node: ExportAssignment,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     expression: Expression
   ): ExportAssignment = js.native
 }

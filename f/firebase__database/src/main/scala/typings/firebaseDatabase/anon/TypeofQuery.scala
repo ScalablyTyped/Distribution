@@ -40,6 +40,6 @@ trait TypeofQuery
     */
   var validateQueryEndpoints_ : js.Any = js.native
   def __referenceConstructor: Instantiable2[/* repo */ Repo, /* path */ typings.firebaseDatabase.pathMod.Path, Query] = js.native
-  def __referenceConstructor(`val`: Instantiable2[/* repo */ Repo, /* path */ typings.firebaseDatabase.pathMod.Path, Query]): js.Any = js.native
+  def __referenceConstructor_=(`val`: Instantiable2[/* repo */ Repo, /* path */ typings.firebaseDatabase.pathMod.Path, Query]): Unit = js.native
 }
 

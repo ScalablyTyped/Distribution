@@ -1,12 +1,8 @@
 package typings.firebaseMessaging
 
-import typings.std.ArrayBuffer
 import typings.std.EventInit
-import typings.std.PushEncryptionKeyName
 import typings.std.PushManager
 import typings.std.PushSubscription
-import typings.std.PushSubscriptionJSON
-import typings.std.PushSubscriptionOptions
 import typings.std.ServiceWorkerRegistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,21 +33,9 @@ object serviceWorkerMod extends js.Object {
   @js.native
   class FakePushSubscription () extends PushSubscription {
     var auth: String = js.native
-    /* CompleteClass */
-    override val endpoint: String = js.native
-    /* CompleteClass */
-    override val expirationTime: Double | Null = js.native
     @JSName("expirationTime")
     var expirationTime_FakePushSubscription: Double = js.native
-    /* CompleteClass */
-    override val options: PushSubscriptionOptions = js.native
     var p256: String = js.native
-    /* CompleteClass */
-    override def getKey(name: PushEncryptionKeyName): ArrayBuffer | Null = js.native
-    /* CompleteClass */
-    override def toJSON(): PushSubscriptionJSON = js.native
-    /* CompleteClass */
-    override def unsubscribe(): js.Promise[Boolean] = js.native
   }
   
   @js.native

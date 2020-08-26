@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 class WritableStream[W] ()
   extends typings.std.WritableStream[W] {
   def this(underlyingSink: UnderlyingSink[W]) = this()
+  def this(underlyingSink: js.UndefOr[scala.Nothing], strategy: QueuingStrategy[W]) = this()
   def this(underlyingSink: UnderlyingSink[W], strategy: QueuingStrategy[W]) = this()
 }
 
@@ -26,7 +27,7 @@ object WritableStream
       typings.std.WritableStream[js.Object]
     ]
      with Instantiable2[
-      /* underlyingSink */ UnderlyingSink[js.Object], 
+      js.UndefOr[/* underlyingSink */ UnderlyingSink[js.Object]], 
       /* strategy */ QueuingStrategy[js.Object], 
       typings.std.WritableStream[js.Object]
     ]

@@ -4,57 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Cancel extends js.Object {
-  var cancel: js.UndefOr[String] = js.undefined
-  var currentText: js.UndefOr[String] = js.undefined
-  var dateRestriction: js.UndefOr[Hint] = js.undefined
-  var dateTimeRange: js.UndefOr[MessageDetail] = js.undefined
-  var done: js.UndefOr[String] = js.undefined
-  var nextText: js.UndefOr[String] = js.undefined
-  var prevText: js.UndefOr[String] = js.undefined
-  var regexp: js.UndefOr[MessageSummary] = js.undefined
-  var required: js.UndefOr[Hint] = js.undefined
-  var tooltipCalendar: js.UndefOr[String] = js.undefined
-  var tooltipCalendarDisabled: js.UndefOr[String] = js.undefined
-  var tooltipCalendarTime: js.UndefOr[String] = js.undefined
-  var tooltipCalendarTimeDisabled: js.UndefOr[String] = js.undefined
-  var weekHeader: js.UndefOr[String] = js.undefined
+  var cancel: js.UndefOr[String] = js.native
+  var currentText: js.UndefOr[String] = js.native
+  var dateRestriction: js.UndefOr[Hint] = js.native
+  var dateTimeRange: js.UndefOr[MessageDetail] = js.native
+  var done: js.UndefOr[String] = js.native
+  var nextText: js.UndefOr[String] = js.native
+  var prevText: js.UndefOr[String] = js.native
+  var regexp: js.UndefOr[MessageSummary] = js.native
+  var required: js.UndefOr[Hint] = js.native
+  var tooltipCalendar: js.UndefOr[String] = js.native
+  var tooltipCalendarDisabled: js.UndefOr[String] = js.native
+  var tooltipCalendarTime: js.UndefOr[String] = js.native
+  var tooltipCalendarTimeDisabled: js.UndefOr[String] = js.native
+  var weekHeader: js.UndefOr[String] = js.native
 }
 
 object Cancel {
   @scala.inline
-  def apply(
-    cancel: String = null,
-    currentText: String = null,
-    dateRestriction: Hint = null,
-    dateTimeRange: MessageDetail = null,
-    done: String = null,
-    nextText: String = null,
-    prevText: String = null,
-    regexp: MessageSummary = null,
-    required: Hint = null,
-    tooltipCalendar: String = null,
-    tooltipCalendarDisabled: String = null,
-    tooltipCalendarTime: String = null,
-    tooltipCalendarTimeDisabled: String = null,
-    weekHeader: String = null
-  ): Cancel = {
+  def apply(): Cancel = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (currentText != null) __obj.updateDynamic("currentText")(currentText.asInstanceOf[js.Any])
-    if (dateRestriction != null) __obj.updateDynamic("dateRestriction")(dateRestriction.asInstanceOf[js.Any])
-    if (dateTimeRange != null) __obj.updateDynamic("dateTimeRange")(dateTimeRange.asInstanceOf[js.Any])
-    if (done != null) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
-    if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
-    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (tooltipCalendar != null) __obj.updateDynamic("tooltipCalendar")(tooltipCalendar.asInstanceOf[js.Any])
-    if (tooltipCalendarDisabled != null) __obj.updateDynamic("tooltipCalendarDisabled")(tooltipCalendarDisabled.asInstanceOf[js.Any])
-    if (tooltipCalendarTime != null) __obj.updateDynamic("tooltipCalendarTime")(tooltipCalendarTime.asInstanceOf[js.Any])
-    if (tooltipCalendarTimeDisabled != null) __obj.updateDynamic("tooltipCalendarTimeDisabled")(tooltipCalendarTimeDisabled.asInstanceOf[js.Any])
-    if (weekHeader != null) __obj.updateDynamic("weekHeader")(weekHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cancel]
   }
+  @scala.inline
+  implicit class CancelOps[Self <: Cancel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setCurrentText(value: String): Self = this.set("currentText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentText: Self = this.set("currentText", js.undefined)
+    @scala.inline
+    def setDateRestriction(value: Hint): Self = this.set("dateRestriction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateRestriction: Self = this.set("dateRestriction", js.undefined)
+    @scala.inline
+    def setDateTimeRange(value: MessageDetail): Self = this.set("dateTimeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTimeRange: Self = this.set("dateTimeRange", js.undefined)
+    @scala.inline
+    def setDone(value: String): Self = this.set("done", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDone: Self = this.set("done", js.undefined)
+    @scala.inline
+    def setNextText(value: String): Self = this.set("nextText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextText: Self = this.set("nextText", js.undefined)
+    @scala.inline
+    def setPrevText(value: String): Self = this.set("prevText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevText: Self = this.set("prevText", js.undefined)
+    @scala.inline
+    def setRegexp(value: MessageSummary): Self = this.set("regexp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexp: Self = this.set("regexp", js.undefined)
+    @scala.inline
+    def setRequired(value: Hint): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setTooltipCalendar(value: String): Self = this.set("tooltipCalendar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipCalendar: Self = this.set("tooltipCalendar", js.undefined)
+    @scala.inline
+    def setTooltipCalendarDisabled(value: String): Self = this.set("tooltipCalendarDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipCalendarDisabled: Self = this.set("tooltipCalendarDisabled", js.undefined)
+    @scala.inline
+    def setTooltipCalendarTime(value: String): Self = this.set("tooltipCalendarTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipCalendarTime: Self = this.set("tooltipCalendarTime", js.undefined)
+    @scala.inline
+    def setTooltipCalendarTimeDisabled(value: String): Self = this.set("tooltipCalendarTimeDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipCalendarTimeDisabled: Self = this.set("tooltipCalendarTimeDisabled", js.undefined)
+    @scala.inline
+    def setWeekHeader(value: String): Self = this.set("weekHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekHeader: Self = this.set("weekHeader", js.undefined)
+  }
+  
 }
 

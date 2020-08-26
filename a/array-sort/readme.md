@@ -12,7 +12,7 @@ Fast and powerful array sorting. Sort an array of objects by one or more propert
 | Keywords           | arr, array, asc, ascend, ascending, desc, descend, descending, dot, element, elements, get, multiple, nested, obj, object, order, ordered, path, prop, properties, property, sort, sorted, sorting |
 | # releases         | 0 |
 | # dependents       | 41 |
-| # downloads        | 34302130 |
+| # downloads        | 35243611 |
 | # stars            | 0 |
 
 ## Links

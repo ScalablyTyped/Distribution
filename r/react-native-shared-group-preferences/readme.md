@@ -12,7 +12,7 @@ Typings are for version 1.1
 | Keywords           | react-native |
 | # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 6311 |
+| # downloads        | 6670 |
 | # stars            | 0 |
 
 ## Links

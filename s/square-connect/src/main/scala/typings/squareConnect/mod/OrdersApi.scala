@@ -57,6 +57,6 @@ class OrdersApi () extends js.Object {
     * To pay for an order, please refer to the [Pay for Orders](/orders-api/pay-for-orders) guide.
     * To learn more about the Orders API, see the [Orders API Overview](/orders-api/what-it-does).
     */
-  def updateOrder(body: UpdateOrderRequest): js.Promise[UpdateOrderResponse] = js.native
+  def updateOrder(locationId: String, orderId: String, body: UpdateOrderRequest): js.Promise[UpdateOrderResponse] = js.native
 }
 

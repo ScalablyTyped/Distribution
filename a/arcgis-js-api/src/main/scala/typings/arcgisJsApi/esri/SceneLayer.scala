@@ -124,12 +124,10 @@ trait SceneLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#createPopupTemplate)
     *
     * @param options Options for creating the popup template.
-    * @param options.maximumFields The maximum number of fields to include in the popup template.
-    * @param options.ignoreFieldTypes Field types to ignore when creating the popup. By default the `geometry`, `blob`, `raster`, `guid` and `xml` field types are ignored.
     *
     */
   def createPopupTemplate(): PopupTemplate = js.native
-  def createPopupTemplate(options: SceneLayerCreatePopupTemplateOptions): PopupTemplate = js.native
+  def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
   /**
     * Creates a query object that can be used to fetch features that satisfy the layer's current definition expression. The query should only be used on the layer and not on the layer view.
     *
@@ -196,6 +194,7 @@ trait SceneLayer
     *
     */
   def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: js.UndefOr[scala.Nothing], options: SceneLayerQueryExtentOptions): js.Promise[_] = js.native
   def queryExtent(query: Query): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties, options: SceneLayerQueryExtentOptions): js.Promise[_] = js.native
@@ -211,6 +210,7 @@ trait SceneLayer
     *
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: SceneLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: SceneLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -226,6 +226,7 @@ trait SceneLayer
     *
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: js.UndefOr[scala.Nothing], options: SceneLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: SceneLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -241,6 +242,7 @@ trait SceneLayer
     *
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: SceneLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: SceneLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native

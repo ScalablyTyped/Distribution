@@ -1,11 +1,15 @@
 package typings.three
 
+import typings.three.cameraMod.Camera
 import typings.three.colorMod.Color
 import typings.three.fogMod.IFog
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
+import typings.three.webGLCubeRenderTargetMod.WebGLCubeRenderTarget
+import typings.three.webGLRenderTargetMod.WebGLRenderTarget
+import typings.three.webGLRendererMod.WebGLRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +20,7 @@ object sceneMod extends js.Object {
   @js.native
   class Scene () extends Object3D {
     var autoUpdate: Boolean = js.native
-    var background: Null | Color | Texture = js.native
+    var background: Null | Color | Texture | WebGLCubeRenderTarget = js.native
     var environment: Null | Texture = js.native
     /**
     	 * A fog instance defining the type of fog that affects everything rendered in the scene. Default is null.
@@ -30,6 +34,15 @@ object sceneMod extends js.Object {
     @JSName("type")
     var type_Scene: typings.three.threeStrings.Scene = js.native
     def dispose(): Unit = js.native
+    /**
+    	 * Calls after rendering scene
+    	 */
+    def onAfterRender(renderer: WebGLRenderer, scene: Scene, camera: Camera): Unit = js.native
+    def onBeforeRender(renderer: WebGLRenderer, scene: Scene, camera: Camera, renderTarget: js.Any): Unit = js.native
+    /**
+    	 * Calls before rendering scene
+    	 */
+    def onBeforeRender(renderer: WebGLRenderer, scene: Scene, camera: Camera, renderTarget: WebGLRenderTarget): Unit = js.native
     def toJSON(meta: js.Any): js.Any = js.native
   }
   

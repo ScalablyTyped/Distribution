@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class SAMLAuthProvider protected () extends AuthProvider {
   def this(providerId: String) = this()
-  /* CompleteClass */
-  override var providerId: String = js.native
 }
 

@@ -22,11 +22,32 @@ trait SchemaListQueriesResponse extends js.Object {
 
 object SchemaListQueriesResponse {
   @scala.inline
-  def apply(kind: String = null, queries: js.Array[SchemaQuery] = null): SchemaListQueriesResponse = {
+  def apply(): SchemaListQueriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListQueriesResponse]
   }
+  @scala.inline
+  implicit class SchemaListQueriesResponseOps[Self <: SchemaListQueriesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setQueriesVarargs(value: SchemaQuery*): Self = this.set("queries", js.Array(value :_*))
+    @scala.inline
+    def setQueries(value: js.Array[SchemaQuery]): Self = this.set("queries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueries: Self = this.set("queries", js.undefined)
+  }
+  
 }
 

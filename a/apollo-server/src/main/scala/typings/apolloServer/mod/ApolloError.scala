@@ -11,6 +11,7 @@ class ApolloError protected ()
   extends typings.apolloServer.exportsMod.ApolloError {
   def this(message: String) = this()
   def this(message: String, code: String) = this()
+  def this(message: String, code: js.UndefOr[scala.Nothing], extensions: Record[String, _]) = this()
   def this(message: String, code: String, extensions: Record[String, _]) = this()
 }
 

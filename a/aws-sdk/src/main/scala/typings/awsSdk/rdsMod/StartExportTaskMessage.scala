@@ -43,14 +43,43 @@ object StartExportTaskMessage {
     IamRoleArn: String,
     KmsKeyId: String,
     S3BucketName: String,
-    SourceArn: String,
-    ExportOnly: StringList = null,
-    S3Prefix: String = null
+    SourceArn: String
   ): StartExportTaskMessage = {
     val __obj = js.Dynamic.literal(ExportTaskIdentifier = ExportTaskIdentifier.asInstanceOf[js.Any], IamRoleArn = IamRoleArn.asInstanceOf[js.Any], KmsKeyId = KmsKeyId.asInstanceOf[js.Any], S3BucketName = S3BucketName.asInstanceOf[js.Any], SourceArn = SourceArn.asInstanceOf[js.Any])
-    if (ExportOnly != null) __obj.updateDynamic("ExportOnly")(ExportOnly.asInstanceOf[js.Any])
-    if (S3Prefix != null) __obj.updateDynamic("S3Prefix")(S3Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartExportTaskMessage]
   }
+  @scala.inline
+  implicit class StartExportTaskMessageOps[Self <: StartExportTaskMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportTaskIdentifier(value: String): Self = this.set("ExportTaskIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIamRoleArn(value: String): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3BucketName(value: String): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceArn(value: String): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExportOnlyVarargs(value: String*): Self = this.set("ExportOnly", js.Array(value :_*))
+    @scala.inline
+    def setExportOnly(value: StringList): Self = this.set("ExportOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportOnly: Self = this.set("ExportOnly", js.undefined)
+    @scala.inline
+    def setS3Prefix(value: String): Self = this.set("S3Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Prefix: Self = this.set("S3Prefix", js.undefined)
+  }
+  
 }
 

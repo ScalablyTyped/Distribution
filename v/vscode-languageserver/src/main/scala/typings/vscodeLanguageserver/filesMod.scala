@@ -9,8 +9,26 @@ import scala.scalajs.js.annotation._
 object filesMod extends js.Object {
   def resolve(
     moduleName: String,
-    nodePath: js.UndefOr[String],
-    cwd: js.UndefOr[String],
+    nodePath: js.UndefOr[scala.Nothing],
+    cwd: js.UndefOr[scala.Nothing],
+    tracer: js.Function2[/* message */ String, /* verbose */ js.UndefOr[String], Unit]
+  ): js.Promise[String] = js.native
+  def resolve(
+    moduleName: String,
+    nodePath: js.UndefOr[scala.Nothing],
+    cwd: String,
+    tracer: js.Function2[/* message */ String, /* verbose */ js.UndefOr[String], Unit]
+  ): js.Promise[String] = js.native
+  def resolve(
+    moduleName: String,
+    nodePath: String,
+    cwd: js.UndefOr[scala.Nothing],
+    tracer: js.Function2[/* message */ String, /* verbose */ js.UndefOr[String], Unit]
+  ): js.Promise[String] = js.native
+  def resolve(
+    moduleName: String,
+    nodePath: String,
+    cwd: String,
     tracer: js.Function2[/* message */ String, /* verbose */ js.UndefOr[String], Unit]
   ): js.Promise[String] = js.native
   def resolveGlobalNodePath(): js.UndefOr[String] = js.native

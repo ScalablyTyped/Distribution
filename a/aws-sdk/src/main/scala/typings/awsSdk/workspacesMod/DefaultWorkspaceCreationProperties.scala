@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DefaultWorkspaceCreationProperties extends js.Object {
   /**
-    * The identifier of any security groups to apply to WorkSpaces when they are created.
+    * The identifier of the default security group to apply to WorkSpaces when they are created. For more information, see  Security Groups for Your WorkSpaces.
     */
   var CustomSecurityGroupId: js.UndefOr[SecurityGroupId] = js.native
   /**
@@ -34,22 +34,46 @@ trait DefaultWorkspaceCreationProperties extends js.Object {
 
 object DefaultWorkspaceCreationProperties {
   @scala.inline
-  def apply(
-    CustomSecurityGroupId: SecurityGroupId = null,
-    DefaultOu: DefaultOu = null,
-    EnableInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
-    EnableMaintenanceMode: js.UndefOr[BooleanObject] = js.undefined,
-    EnableWorkDocs: js.UndefOr[BooleanObject] = js.undefined,
-    UserEnabledAsLocalAdministrator: js.UndefOr[BooleanObject] = js.undefined
-  ): DefaultWorkspaceCreationProperties = {
+  def apply(): DefaultWorkspaceCreationProperties = {
     val __obj = js.Dynamic.literal()
-    if (CustomSecurityGroupId != null) __obj.updateDynamic("CustomSecurityGroupId")(CustomSecurityGroupId.asInstanceOf[js.Any])
-    if (DefaultOu != null) __obj.updateDynamic("DefaultOu")(DefaultOu.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableInternetAccess)) __obj.updateDynamic("EnableInternetAccess")(EnableInternetAccess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableMaintenanceMode)) __obj.updateDynamic("EnableMaintenanceMode")(EnableMaintenanceMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableWorkDocs)) __obj.updateDynamic("EnableWorkDocs")(EnableWorkDocs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserEnabledAsLocalAdministrator)) __obj.updateDynamic("UserEnabledAsLocalAdministrator")(UserEnabledAsLocalAdministrator.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultWorkspaceCreationProperties]
   }
+  @scala.inline
+  implicit class DefaultWorkspaceCreationPropertiesOps[Self <: DefaultWorkspaceCreationProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomSecurityGroupId(value: SecurityGroupId): Self = this.set("CustomSecurityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSecurityGroupId: Self = this.set("CustomSecurityGroupId", js.undefined)
+    @scala.inline
+    def setDefaultOu(value: DefaultOu): Self = this.set("DefaultOu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOu: Self = this.set("DefaultOu", js.undefined)
+    @scala.inline
+    def setEnableInternetAccess(value: BooleanObject): Self = this.set("EnableInternetAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableInternetAccess: Self = this.set("EnableInternetAccess", js.undefined)
+    @scala.inline
+    def setEnableMaintenanceMode(value: BooleanObject): Self = this.set("EnableMaintenanceMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableMaintenanceMode: Self = this.set("EnableMaintenanceMode", js.undefined)
+    @scala.inline
+    def setEnableWorkDocs(value: BooleanObject): Self = this.set("EnableWorkDocs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableWorkDocs: Self = this.set("EnableWorkDocs", js.undefined)
+    @scala.inline
+    def setUserEnabledAsLocalAdministrator(value: BooleanObject): Self = this.set("UserEnabledAsLocalAdministrator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserEnabledAsLocalAdministrator: Self = this.set("UserEnabledAsLocalAdministrator", js.undefined)
+  }
+  
 }
 

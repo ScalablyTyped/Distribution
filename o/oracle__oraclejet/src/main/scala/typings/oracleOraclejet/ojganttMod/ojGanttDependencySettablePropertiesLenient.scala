@@ -10,36 +10,61 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependencySettableProperties> */
+@js.native
 trait ojGanttDependencySettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var predecessorTaskId: js.UndefOr[js.Any] = js.undefined
-  var shortDesc: js.UndefOr[String] = js.undefined
-  var successorTaskId: js.UndefOr[js.Any] = js.undefined
-  var svgClassName: js.UndefOr[String] = js.undefined
-  var svgStyle: js.UndefOr[js.Object] = js.undefined
-  var `type`: js.UndefOr[finishStart | finishFinish | startStart | startFinish] = js.undefined
+  var predecessorTaskId: js.UndefOr[js.Any] = js.native
+  var shortDesc: js.UndefOr[String | Null] = js.native
+  var successorTaskId: js.UndefOr[js.Any] = js.native
+  var svgClassName: js.UndefOr[String] = js.native
+  var svgStyle: js.UndefOr[js.Object] = js.native
+  var `type`: js.UndefOr[finishStart | finishFinish | startStart | startFinish] = js.native
 }
 
 object ojGanttDependencySettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    predecessorTaskId: js.Any = null,
-    shortDesc: String = null,
-    successorTaskId: js.Any = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null,
-    `type`: finishStart | finishFinish | startStart | startFinish = null
-  ): ojGanttDependencySettablePropertiesLenient = {
+  def apply(): ojGanttDependencySettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (predecessorTaskId != null) __obj.updateDynamic("predecessorTaskId")(predecessorTaskId.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
-    if (successorTaskId != null) __obj.updateDynamic("successorTaskId")(successorTaskId.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojGanttDependencySettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojGanttDependencySettablePropertiesLenientOps[Self <: ojGanttDependencySettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPredecessorTaskId(value: js.Any): Self = this.set("predecessorTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredecessorTaskId: Self = this.set("predecessorTaskId", js.undefined)
+    @scala.inline
+    def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortDesc: Self = this.set("shortDesc", js.undefined)
+    @scala.inline
+    def setShortDescNull: Self = this.set("shortDesc", null)
+    @scala.inline
+    def setSuccessorTaskId(value: js.Any): Self = this.set("successorTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessorTaskId: Self = this.set("successorTaskId", js.undefined)
+    @scala.inline
+    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
+    @scala.inline
+    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
+    @scala.inline
+    def setType(value: finishStart | finishFinish | startStart | startFinish): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

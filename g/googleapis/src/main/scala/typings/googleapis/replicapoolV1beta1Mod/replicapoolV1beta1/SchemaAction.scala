@@ -31,16 +31,38 @@ trait SchemaAction extends js.Object {
 
 object SchemaAction {
   @scala.inline
-  def apply(
-    commands: js.Array[String] = null,
-    envVariables: js.Array[SchemaEnvVariable] = null,
-    timeoutMilliSeconds: js.UndefOr[Double] = js.undefined
-  ): SchemaAction = {
+  def apply(): SchemaAction = {
     val __obj = js.Dynamic.literal()
-    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
-    if (envVariables != null) __obj.updateDynamic("envVariables")(envVariables.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutMilliSeconds)) __obj.updateDynamic("timeoutMilliSeconds")(timeoutMilliSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAction]
   }
+  @scala.inline
+  implicit class SchemaActionOps[Self <: SchemaAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommandsVarargs(value: String*): Self = this.set("commands", js.Array(value :_*))
+    @scala.inline
+    def setCommands(value: js.Array[String]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommands: Self = this.set("commands", js.undefined)
+    @scala.inline
+    def setEnvVariablesVarargs(value: SchemaEnvVariable*): Self = this.set("envVariables", js.Array(value :_*))
+    @scala.inline
+    def setEnvVariables(value: js.Array[SchemaEnvVariable]): Self = this.set("envVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvVariables: Self = this.set("envVariables", js.undefined)
+    @scala.inline
+    def setTimeoutMilliSeconds(value: Double): Self = this.set("timeoutMilliSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutMilliSeconds: Self = this.set("timeoutMilliSeconds", js.undefined)
+  }
+  
 }
 

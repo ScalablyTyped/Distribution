@@ -21,14 +21,30 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton extends js.
 
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton {
   @scala.inline
-  def apply(
-    openUriAction: SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction = null,
-    title: String = null
-  ): SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton = {
     val __obj = js.Dynamic.literal()
-    if (openUriAction != null) __obj.updateDynamic("openUriAction")(openUriAction.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOps[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOpenUriAction(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction): Self = this.set("openUriAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenUriAction: Self = this.set("openUriAction", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

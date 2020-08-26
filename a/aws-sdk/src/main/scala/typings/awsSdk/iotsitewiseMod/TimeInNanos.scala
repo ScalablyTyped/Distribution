@@ -18,10 +18,28 @@ trait TimeInNanos extends js.Object {
 
 object TimeInNanos {
   @scala.inline
-  def apply(timeInSeconds: TimeInSeconds, offsetInNanos: js.UndefOr[OffsetInNanos] = js.undefined): TimeInNanos = {
+  def apply(timeInSeconds: TimeInSeconds): TimeInNanos = {
     val __obj = js.Dynamic.literal(timeInSeconds = timeInSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetInNanos)) __obj.updateDynamic("offsetInNanos")(offsetInNanos.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeInNanos]
   }
+  @scala.inline
+  implicit class TimeInNanosOps[Self <: TimeInNanos] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimeInSeconds(value: TimeInSeconds): Self = this.set("timeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOffsetInNanos(value: OffsetInNanos): Self = this.set("offsetInNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetInNanos: Self = this.set("offsetInNanos", js.undefined)
+  }
+  
 }
 

@@ -30,20 +30,42 @@ trait HlsMediaStoreSettings extends js.Object {
 
 object HlsMediaStoreSettings {
   @scala.inline
-  def apply(
-    ConnectionRetryInterval: js.UndefOr[integerMin0] = js.undefined,
-    FilecacheDuration: js.UndefOr[integerMin0Max600] = js.undefined,
-    MediaStoreStorageClass: HlsMediaStoreStorageClass = null,
-    NumRetries: js.UndefOr[integerMin0] = js.undefined,
-    RestartDelay: js.UndefOr[integerMin0Max15] = js.undefined
-  ): HlsMediaStoreSettings = {
+  def apply(): HlsMediaStoreSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConnectionRetryInterval)) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FilecacheDuration)) __obj.updateDynamic("FilecacheDuration")(FilecacheDuration.get.asInstanceOf[js.Any])
-    if (MediaStoreStorageClass != null) __obj.updateDynamic("MediaStoreStorageClass")(MediaStoreStorageClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumRetries)) __obj.updateDynamic("NumRetries")(NumRetries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RestartDelay)) __obj.updateDynamic("RestartDelay")(RestartDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsMediaStoreSettings]
   }
+  @scala.inline
+  implicit class HlsMediaStoreSettingsOps[Self <: HlsMediaStoreSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionRetryInterval(value: integerMin0): Self = this.set("ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionRetryInterval: Self = this.set("ConnectionRetryInterval", js.undefined)
+    @scala.inline
+    def setFilecacheDuration(value: integerMin0Max600): Self = this.set("FilecacheDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilecacheDuration: Self = this.set("FilecacheDuration", js.undefined)
+    @scala.inline
+    def setMediaStoreStorageClass(value: HlsMediaStoreStorageClass): Self = this.set("MediaStoreStorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaStoreStorageClass: Self = this.set("MediaStoreStorageClass", js.undefined)
+    @scala.inline
+    def setNumRetries(value: integerMin0): Self = this.set("NumRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumRetries: Self = this.set("NumRetries", js.undefined)
+    @scala.inline
+    def setRestartDelay(value: integerMin0Max15): Self = this.set("RestartDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestartDelay: Self = this.set("RestartDelay", js.undefined)
+  }
+  
 }
 

@@ -22,14 +22,30 @@ trait TeamMember extends js.Object {
 
 object TeamMember {
   @scala.inline
-  def apply(
-    projectRole: Role,
-    userArn: UserArn,
-    remoteAccessAllowed: js.UndefOr[RemoteAccessAllowed] = js.undefined
-  ): TeamMember = {
+  def apply(projectRole: Role, userArn: UserArn): TeamMember = {
     val __obj = js.Dynamic.literal(projectRole = projectRole.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteAccessAllowed)) __obj.updateDynamic("remoteAccessAllowed")(remoteAccessAllowed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamMember]
   }
+  @scala.inline
+  implicit class TeamMemberOps[Self <: TeamMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProjectRole(value: Role): Self = this.set("projectRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserArn(value: UserArn): Self = this.set("userArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRemoteAccessAllowed(value: RemoteAccessAllowed): Self = this.set("remoteAccessAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteAccessAllowed: Self = this.set("remoteAccessAllowed", js.undefined)
+  }
+  
 }
 

@@ -257,92 +257,194 @@ trait SchemaCluster extends js.Object {
 
 object SchemaCluster {
   @scala.inline
-  def apply(
-    addonsConfig: SchemaAddonsConfig = null,
-    clusterIpv4Cidr: String = null,
-    conditions: js.Array[SchemaStatusCondition] = null,
-    createTime: String = null,
-    currentMasterVersion: String = null,
-    currentNodeCount: js.UndefOr[Double] = js.undefined,
-    currentNodeVersion: String = null,
-    description: String = null,
-    enableKubernetesAlpha: js.UndefOr[Boolean] = js.undefined,
-    enableTpu: js.UndefOr[Boolean] = js.undefined,
-    endpoint: String = null,
-    expireTime: String = null,
-    initialClusterVersion: String = null,
-    initialNodeCount: js.UndefOr[Double] = js.undefined,
-    instanceGroupUrls: js.Array[String] = null,
-    ipAllocationPolicy: SchemaIPAllocationPolicy = null,
-    labelFingerprint: String = null,
-    legacyAbac: SchemaLegacyAbac = null,
-    location: String = null,
-    locations: js.Array[String] = null,
-    loggingService: String = null,
-    maintenancePolicy: SchemaMaintenancePolicy = null,
-    masterAuth: SchemaMasterAuth = null,
-    masterAuthorizedNetworksConfig: SchemaMasterAuthorizedNetworksConfig = null,
-    monitoringService: String = null,
-    name: String = null,
-    network: String = null,
-    networkConfig: SchemaNetworkConfig = null,
-    networkPolicy: SchemaNetworkPolicy = null,
-    nodeConfig: SchemaNodeConfig = null,
-    nodeIpv4CidrSize: js.UndefOr[Double] = js.undefined,
-    nodePools: js.Array[SchemaNodePool] = null,
-    privateClusterConfig: SchemaPrivateClusterConfig = null,
-    resourceLabels: StringDictionary[String] = null,
-    selfLink: String = null,
-    servicesIpv4Cidr: String = null,
-    status: String = null,
-    statusMessage: String = null,
-    subnetwork: String = null,
-    tpuIpv4CidrBlock: String = null,
-    zone: String = null
-  ): SchemaCluster = {
+  def apply(): SchemaCluster = {
     val __obj = js.Dynamic.literal()
-    if (addonsConfig != null) __obj.updateDynamic("addonsConfig")(addonsConfig.asInstanceOf[js.Any])
-    if (clusterIpv4Cidr != null) __obj.updateDynamic("clusterIpv4Cidr")(clusterIpv4Cidr.asInstanceOf[js.Any])
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (currentMasterVersion != null) __obj.updateDynamic("currentMasterVersion")(currentMasterVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(currentNodeCount)) __obj.updateDynamic("currentNodeCount")(currentNodeCount.get.asInstanceOf[js.Any])
-    if (currentNodeVersion != null) __obj.updateDynamic("currentNodeVersion")(currentNodeVersion.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableKubernetesAlpha)) __obj.updateDynamic("enableKubernetesAlpha")(enableKubernetesAlpha.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTpu)) __obj.updateDynamic("enableTpu")(enableTpu.get.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
-    if (initialClusterVersion != null) __obj.updateDynamic("initialClusterVersion")(initialClusterVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialNodeCount)) __obj.updateDynamic("initialNodeCount")(initialNodeCount.get.asInstanceOf[js.Any])
-    if (instanceGroupUrls != null) __obj.updateDynamic("instanceGroupUrls")(instanceGroupUrls.asInstanceOf[js.Any])
-    if (ipAllocationPolicy != null) __obj.updateDynamic("ipAllocationPolicy")(ipAllocationPolicy.asInstanceOf[js.Any])
-    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
-    if (legacyAbac != null) __obj.updateDynamic("legacyAbac")(legacyAbac.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
-    if (loggingService != null) __obj.updateDynamic("loggingService")(loggingService.asInstanceOf[js.Any])
-    if (maintenancePolicy != null) __obj.updateDynamic("maintenancePolicy")(maintenancePolicy.asInstanceOf[js.Any])
-    if (masterAuth != null) __obj.updateDynamic("masterAuth")(masterAuth.asInstanceOf[js.Any])
-    if (masterAuthorizedNetworksConfig != null) __obj.updateDynamic("masterAuthorizedNetworksConfig")(masterAuthorizedNetworksConfig.asInstanceOf[js.Any])
-    if (monitoringService != null) __obj.updateDynamic("monitoringService")(monitoringService.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (networkConfig != null) __obj.updateDynamic("networkConfig")(networkConfig.asInstanceOf[js.Any])
-    if (networkPolicy != null) __obj.updateDynamic("networkPolicy")(networkPolicy.asInstanceOf[js.Any])
-    if (nodeConfig != null) __obj.updateDynamic("nodeConfig")(nodeConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeIpv4CidrSize)) __obj.updateDynamic("nodeIpv4CidrSize")(nodeIpv4CidrSize.get.asInstanceOf[js.Any])
-    if (nodePools != null) __obj.updateDynamic("nodePools")(nodePools.asInstanceOf[js.Any])
-    if (privateClusterConfig != null) __obj.updateDynamic("privateClusterConfig")(privateClusterConfig.asInstanceOf[js.Any])
-    if (resourceLabels != null) __obj.updateDynamic("resourceLabels")(resourceLabels.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (servicesIpv4Cidr != null) __obj.updateDynamic("servicesIpv4Cidr")(servicesIpv4Cidr.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
-    if (tpuIpv4CidrBlock != null) __obj.updateDynamic("tpuIpv4CidrBlock")(tpuIpv4CidrBlock.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCluster]
   }
+  @scala.inline
+  implicit class SchemaClusterOps[Self <: SchemaCluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddonsConfig(value: SchemaAddonsConfig): Self = this.set("addonsConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddonsConfig: Self = this.set("addonsConfig", js.undefined)
+    @scala.inline
+    def setClusterIpv4Cidr(value: String): Self = this.set("clusterIpv4Cidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterIpv4Cidr: Self = this.set("clusterIpv4Cidr", js.undefined)
+    @scala.inline
+    def setConditionsVarargs(value: SchemaStatusCondition*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[SchemaStatusCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setCurrentMasterVersion(value: String): Self = this.set("currentMasterVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentMasterVersion: Self = this.set("currentMasterVersion", js.undefined)
+    @scala.inline
+    def setCurrentNodeCount(value: Double): Self = this.set("currentNodeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentNodeCount: Self = this.set("currentNodeCount", js.undefined)
+    @scala.inline
+    def setCurrentNodeVersion(value: String): Self = this.set("currentNodeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentNodeVersion: Self = this.set("currentNodeVersion", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnableKubernetesAlpha(value: Boolean): Self = this.set("enableKubernetesAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableKubernetesAlpha: Self = this.set("enableKubernetesAlpha", js.undefined)
+    @scala.inline
+    def setEnableTpu(value: Boolean): Self = this.set("enableTpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableTpu: Self = this.set("enableTpu", js.undefined)
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
+    @scala.inline
+    def setInitialClusterVersion(value: String): Self = this.set("initialClusterVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialClusterVersion: Self = this.set("initialClusterVersion", js.undefined)
+    @scala.inline
+    def setInitialNodeCount(value: Double): Self = this.set("initialNodeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialNodeCount: Self = this.set("initialNodeCount", js.undefined)
+    @scala.inline
+    def setInstanceGroupUrlsVarargs(value: String*): Self = this.set("instanceGroupUrls", js.Array(value :_*))
+    @scala.inline
+    def setInstanceGroupUrls(value: js.Array[String]): Self = this.set("instanceGroupUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroupUrls: Self = this.set("instanceGroupUrls", js.undefined)
+    @scala.inline
+    def setIpAllocationPolicy(value: SchemaIPAllocationPolicy): Self = this.set("ipAllocationPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAllocationPolicy: Self = this.set("ipAllocationPolicy", js.undefined)
+    @scala.inline
+    def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    @scala.inline
+    def setLegacyAbac(value: SchemaLegacyAbac): Self = this.set("legacyAbac", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegacyAbac: Self = this.set("legacyAbac", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setLocationsVarargs(value: String*): Self = this.set("locations", js.Array(value :_*))
+    @scala.inline
+    def setLocations(value: js.Array[String]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocations: Self = this.set("locations", js.undefined)
+    @scala.inline
+    def setLoggingService(value: String): Self = this.set("loggingService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingService: Self = this.set("loggingService", js.undefined)
+    @scala.inline
+    def setMaintenancePolicy(value: SchemaMaintenancePolicy): Self = this.set("maintenancePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenancePolicy: Self = this.set("maintenancePolicy", js.undefined)
+    @scala.inline
+    def setMasterAuth(value: SchemaMasterAuth): Self = this.set("masterAuth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterAuth: Self = this.set("masterAuth", js.undefined)
+    @scala.inline
+    def setMasterAuthorizedNetworksConfig(value: SchemaMasterAuthorizedNetworksConfig): Self = this.set("masterAuthorizedNetworksConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterAuthorizedNetworksConfig: Self = this.set("masterAuthorizedNetworksConfig", js.undefined)
+    @scala.inline
+    def setMonitoringService(value: String): Self = this.set("monitoringService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoringService: Self = this.set("monitoringService", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setNetworkConfig(value: SchemaNetworkConfig): Self = this.set("networkConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkConfig: Self = this.set("networkConfig", js.undefined)
+    @scala.inline
+    def setNetworkPolicy(value: SchemaNetworkPolicy): Self = this.set("networkPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkPolicy: Self = this.set("networkPolicy", js.undefined)
+    @scala.inline
+    def setNodeConfig(value: SchemaNodeConfig): Self = this.set("nodeConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeConfig: Self = this.set("nodeConfig", js.undefined)
+    @scala.inline
+    def setNodeIpv4CidrSize(value: Double): Self = this.set("nodeIpv4CidrSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeIpv4CidrSize: Self = this.set("nodeIpv4CidrSize", js.undefined)
+    @scala.inline
+    def setNodePoolsVarargs(value: SchemaNodePool*): Self = this.set("nodePools", js.Array(value :_*))
+    @scala.inline
+    def setNodePools(value: js.Array[SchemaNodePool]): Self = this.set("nodePools", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodePools: Self = this.set("nodePools", js.undefined)
+    @scala.inline
+    def setPrivateClusterConfig(value: SchemaPrivateClusterConfig): Self = this.set("privateClusterConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateClusterConfig: Self = this.set("privateClusterConfig", js.undefined)
+    @scala.inline
+    def setResourceLabels(value: StringDictionary[String]): Self = this.set("resourceLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceLabels: Self = this.set("resourceLabels", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setServicesIpv4Cidr(value: String): Self = this.set("servicesIpv4Cidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServicesIpv4Cidr: Self = this.set("servicesIpv4Cidr", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    @scala.inline
+    def setTpuIpv4CidrBlock(value: String): Self = this.set("tpuIpv4CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTpuIpv4CidrBlock: Self = this.set("tpuIpv4CidrBlock", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

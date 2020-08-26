@@ -67,7 +67,6 @@ trait Browser extends js.Object {
     */
   def noticeError(error: Error): Unit = js.native
   def noticeError(error: Error, customAttributes: StringDictionary[String | Double]): Unit = js.native
-  def setCurrentRouteName(): Unit = js.native
   /**
     * Gives SPA routes more accurate names than default names. Monitors specific routes rather than by default
     * grouping.
@@ -78,6 +77,7 @@ trait Browser extends js.Object {
     *   the default naming strategy.
     * @see https://docs.newrelic.com/docs/browser/new-relic-browser/browser-agent-spa-api/spa-set-current-route-name
     */
+  def setCurrentRouteName(): Unit = js.native
   def setCurrentRouteName(name: String): Unit = js.native
   /**
     * Adds a user-defined attribute name and value to subsequent events on the page.

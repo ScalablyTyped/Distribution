@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class QExponential ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.QExponential] {
   def this(q: Double) = this()
+  def this(q: js.UndefOr[scala.Nothing], lambda: Double) = this()
   def this(q: Double, lambda: Double) = this()
 }
 

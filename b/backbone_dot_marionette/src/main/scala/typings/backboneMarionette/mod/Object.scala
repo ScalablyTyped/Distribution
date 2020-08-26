@@ -13,8 +13,6 @@ class Object ()
   extends EventsMixin
      with CommonMixin {
   def this(options: ObjectOptions) = this()
-  /* CompleteClass */
-  override var bindEvents: js.Any = js.native
   var bindRequests: js.Any = js.native
   /**
     * Defines the Radio channel that will be used for the requests and/or events
@@ -22,12 +20,6 @@ class Object ()
   var channelName: String = js.native
   @JSName("getChannel")
   var getChannel_FObject: js.Any = js.native
-  /* CompleteClass */
-  override var getOption: js.Any = js.native
-  /* CompleteClass */
-  override var mergeOptions: js.Any = js.native
-  /* CompleteClass */
-  override var normalizeMethods: js.Any = js.native
   /**
     * Defines an events hash with the events to be listened and its respective handlers
     */
@@ -36,8 +28,6 @@ class Object ()
     * Defines an events hash with the requests to be replied and its respective handlers
     */
   var radioRequests: js.Any = js.native
-  /* CompleteClass */
-  override var unbindEvents: js.Any = js.native
   var unbindRequests: js.Any = js.native
   /**
     * This method is used to bind a backbone "entity" (collection/model) to
@@ -98,6 +88,7 @@ class Object ()
     * reasons.
     */
   def on(eventName: js.Any): js.Any = js.native
+  def on(eventName: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
   def on(eventName: js.Any, callback: js.Any): js.Any = js.native
   def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native
   /**

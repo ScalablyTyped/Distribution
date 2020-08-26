@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Stack")
+@JSImport("grommet/es6", "Stack")
 @js.native
 object Stack extends TopLevel[
       FC[

@@ -12,7 +12,7 @@ highcharts-ng
 | Keywords           | angular |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 619194 |
+| # downloads        | 632324 |
 | # stars            | 3 |
 
 ## Links

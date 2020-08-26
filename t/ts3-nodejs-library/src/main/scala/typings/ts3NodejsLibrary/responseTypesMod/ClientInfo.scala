@@ -1,142 +1,284 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
+import typings.ts3NodejsLibrary.enumMod.ClientType
+import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClientInfo extends js.Object {
-  var cid: Double
-  var client_away: Double
-  var client_away_message: String
-  var client_badges: String
-  var client_base64HashClientUID: String
-  var client_channel_group_id: Double
-  var client_channel_group_inherited_channel_id: Double
-  var client_country: String
-  var client_created: Double
-  var client_database_id: Double
-  var client_default_channel: Double
-  var client_default_token: String
-  var client_description: String
-  var client_flag_avatar: String
-  var client_icon_id: Double
-  var client_idle_time: Double
-  var client_input_hardware: Double
-  var client_input_muted: Double
-  var client_integrations: String
-  var client_is_channel_commander: Double
-  var client_is_priority_speaker: Double
-  var client_is_recording: Double
-  var client_is_talker: Double
-  var client_lastconnected: Double
-  var client_login_name: String
-  var client_meta_data: String
-  var client_month_bytes_downloaded: Double
-  var client_month_bytes_uploaded: Double
-  var client_myteamspeak_avatar: String
-  var client_myteamspeak_id: String
-  var client_needed_serverquery_view_power: Double
-  var client_nickname: String
-  var client_nickname_phonetic: String
-  var client_output_hardware: Double
-  var client_output_muted: Double
-  var client_outputonly_muted: Double
-  var client_platform: String
-  var client_security_hash: String
-  var client_servergroups: js.Array[Double]
-  var client_signed_badges: String
-  var client_talk_power: Double
-  var client_talk_request: Double
-  var client_talk_request_msg: String
-  var client_total_bytes_downloaded: Double
-  var client_total_bytes_uploaded: Double
-  var client_totalconnections: Double
-  var client_type: Double
-  var client_unique_identifier: String
-  var client_version: String
-  var client_version_sign: String
-  var connection_bandwidth_received_last_minute_total: Double
-  var connection_bandwidth_received_last_second_total: Double
-  var connection_bandwidth_sent_last_minute_total: Double
-  var connection_bandwidth_sent_last_second_total: Double
-  var connection_bytes_received_total: Double
-  var connection_bytes_sent_total: Double
-  var connection_client_ip: String
-  var connection_connected_time: Double
-  var connection_filetransfer_bandwidth_received: Double
-  var connection_filetransfer_bandwidth_sent: Double
-  var connection_packets_received_total: Double
-  var connection_packets_sent_total: Double
+@js.native
+trait ClientInfo extends ResponseEntry {
+  var cid: String = js.native
+  var clientAway: Boolean = js.native
+  var clientAwayMessage: String = js.native
+  var clientBadges: String = js.native
+  var clientBase64HashClientUID: String = js.native
+  var clientChannelGroupId: String = js.native
+  var clientChannelGroupInheritedChannelId: String = js.native
+  var clientCountry: String = js.native
+  var clientCreated: Double = js.native
+  var clientDatabaseId: Double = js.native
+  var clientDefaultChannel: String = js.native
+  var clientDefaultToken: String = js.native
+  var clientDescription: String = js.native
+  var clientFlagAvatar: String = js.native
+  var clientIconId: String = js.native
+  var clientIdleTime: Double = js.native
+  var clientInputHardware: Double = js.native
+  var clientInputMuted: Double = js.native
+  var clientIntegrations: String = js.native
+  var clientIsChannelCommander: Boolean = js.native
+  var clientIsPrioritySpeaker: Boolean = js.native
+  var clientIsRecording: Boolean = js.native
+  var clientIsTalker: Boolean = js.native
+  var clientLastconnected: Double = js.native
+  var clientLoginName: String = js.native
+  var clientMetaData: String = js.native
+  var clientMonthBytesDownloaded: Double = js.native
+  var clientMonthBytesUploaded: Double = js.native
+  var clientMyteamspeakAvatar: String = js.native
+  var clientMyteamspeakId: String = js.native
+  var clientNeededServerqueryViewPower: Double = js.native
+  var clientNickname: String = js.native
+  var clientNicknamePhonetic: String = js.native
+  var clientOutputHardware: Double = js.native
+  var clientOutputMuted: Double = js.native
+  var clientOutputonlyMuted: Double = js.native
+  var clientPlatform: String = js.native
+  var clientSecurityHash: String = js.native
+  var clientServergroups: js.Array[String] = js.native
+  var clientSignedBadges: String = js.native
+  var clientTalkPower: Double = js.native
+  var clientTalkRequest: Boolean = js.native
+  var clientTalkRequestMsg: String = js.native
+  var clientTotalBytesDownloaded: Double = js.native
+  var clientTotalBytesUploaded: Double = js.native
+  var clientTotalconnections: Double = js.native
+  var clientType: ClientType = js.native
+  var clientUniqueIdentifier: String = js.native
+  var clientVersion: String = js.native
+  var clientVersionSign: String = js.native
+  var connectionBandwidthReceivedLastMinuteTotal: Double = js.native
+  var connectionBandwidthReceivedLastSecondTotal: Double = js.native
+  var connectionBandwidthSentLastMinuteTotal: Double = js.native
+  var connectionBandwidthSentLastSecondTotal: Double = js.native
+  var connectionBytesReceivedTotal: Double = js.native
+  var connectionBytesSentTotal: Double = js.native
+  var connectionClientIp: String = js.native
+  var connectionConnectedTime: Double = js.native
+  var connectionFiletransferBandwidthReceived: Double = js.native
+  var connectionFiletransferBandwidthSent: Double = js.native
+  var connectionPacketsReceivedTotal: Double = js.native
+  var connectionPacketsSentTotal: Double = js.native
 }
 
 object ClientInfo {
   @scala.inline
   def apply(
-    cid: Double,
-    client_away: Double,
-    client_away_message: String,
-    client_badges: String,
-    client_base64HashClientUID: String,
-    client_channel_group_id: Double,
-    client_channel_group_inherited_channel_id: Double,
-    client_country: String,
-    client_created: Double,
-    client_database_id: Double,
-    client_default_channel: Double,
-    client_default_token: String,
-    client_description: String,
-    client_flag_avatar: String,
-    client_icon_id: Double,
-    client_idle_time: Double,
-    client_input_hardware: Double,
-    client_input_muted: Double,
-    client_integrations: String,
-    client_is_channel_commander: Double,
-    client_is_priority_speaker: Double,
-    client_is_recording: Double,
-    client_is_talker: Double,
-    client_lastconnected: Double,
-    client_login_name: String,
-    client_meta_data: String,
-    client_month_bytes_downloaded: Double,
-    client_month_bytes_uploaded: Double,
-    client_myteamspeak_avatar: String,
-    client_myteamspeak_id: String,
-    client_needed_serverquery_view_power: Double,
-    client_nickname: String,
-    client_nickname_phonetic: String,
-    client_output_hardware: Double,
-    client_output_muted: Double,
-    client_outputonly_muted: Double,
-    client_platform: String,
-    client_security_hash: String,
-    client_servergroups: js.Array[Double],
-    client_signed_badges: String,
-    client_talk_power: Double,
-    client_talk_request: Double,
-    client_talk_request_msg: String,
-    client_total_bytes_downloaded: Double,
-    client_total_bytes_uploaded: Double,
-    client_totalconnections: Double,
-    client_type: Double,
-    client_unique_identifier: String,
-    client_version: String,
-    client_version_sign: String,
-    connection_bandwidth_received_last_minute_total: Double,
-    connection_bandwidth_received_last_second_total: Double,
-    connection_bandwidth_sent_last_minute_total: Double,
-    connection_bandwidth_sent_last_second_total: Double,
-    connection_bytes_received_total: Double,
-    connection_bytes_sent_total: Double,
-    connection_client_ip: String,
-    connection_connected_time: Double,
-    connection_filetransfer_bandwidth_received: Double,
-    connection_filetransfer_bandwidth_sent: Double,
-    connection_packets_received_total: Double,
-    connection_packets_sent_total: Double
+    cid: String,
+    clientAway: Boolean,
+    clientAwayMessage: String,
+    clientBadges: String,
+    clientBase64HashClientUID: String,
+    clientChannelGroupId: String,
+    clientChannelGroupInheritedChannelId: String,
+    clientCountry: String,
+    clientCreated: Double,
+    clientDatabaseId: Double,
+    clientDefaultChannel: String,
+    clientDefaultToken: String,
+    clientDescription: String,
+    clientFlagAvatar: String,
+    clientIconId: String,
+    clientIdleTime: Double,
+    clientInputHardware: Double,
+    clientInputMuted: Double,
+    clientIntegrations: String,
+    clientIsChannelCommander: Boolean,
+    clientIsPrioritySpeaker: Boolean,
+    clientIsRecording: Boolean,
+    clientIsTalker: Boolean,
+    clientLastconnected: Double,
+    clientLoginName: String,
+    clientMetaData: String,
+    clientMonthBytesDownloaded: Double,
+    clientMonthBytesUploaded: Double,
+    clientMyteamspeakAvatar: String,
+    clientMyteamspeakId: String,
+    clientNeededServerqueryViewPower: Double,
+    clientNickname: String,
+    clientNicknamePhonetic: String,
+    clientOutputHardware: Double,
+    clientOutputMuted: Double,
+    clientOutputonlyMuted: Double,
+    clientPlatform: String,
+    clientSecurityHash: String,
+    clientServergroups: js.Array[String],
+    clientSignedBadges: String,
+    clientTalkPower: Double,
+    clientTalkRequest: Boolean,
+    clientTalkRequestMsg: String,
+    clientTotalBytesDownloaded: Double,
+    clientTotalBytesUploaded: Double,
+    clientTotalconnections: Double,
+    clientType: ClientType,
+    clientUniqueIdentifier: String,
+    clientVersion: String,
+    clientVersionSign: String,
+    connectionBandwidthReceivedLastMinuteTotal: Double,
+    connectionBandwidthReceivedLastSecondTotal: Double,
+    connectionBandwidthSentLastMinuteTotal: Double,
+    connectionBandwidthSentLastSecondTotal: Double,
+    connectionBytesReceivedTotal: Double,
+    connectionBytesSentTotal: Double,
+    connectionClientIp: String,
+    connectionConnectedTime: Double,
+    connectionFiletransferBandwidthReceived: Double,
+    connectionFiletransferBandwidthSent: Double,
+    connectionPacketsReceivedTotal: Double,
+    connectionPacketsSentTotal: Double
   ): ClientInfo = {
-    val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], client_away = client_away.asInstanceOf[js.Any], client_away_message = client_away_message.asInstanceOf[js.Any], client_badges = client_badges.asInstanceOf[js.Any], client_base64HashClientUID = client_base64HashClientUID.asInstanceOf[js.Any], client_channel_group_id = client_channel_group_id.asInstanceOf[js.Any], client_channel_group_inherited_channel_id = client_channel_group_inherited_channel_id.asInstanceOf[js.Any], client_country = client_country.asInstanceOf[js.Any], client_created = client_created.asInstanceOf[js.Any], client_database_id = client_database_id.asInstanceOf[js.Any], client_default_channel = client_default_channel.asInstanceOf[js.Any], client_default_token = client_default_token.asInstanceOf[js.Any], client_description = client_description.asInstanceOf[js.Any], client_flag_avatar = client_flag_avatar.asInstanceOf[js.Any], client_icon_id = client_icon_id.asInstanceOf[js.Any], client_idle_time = client_idle_time.asInstanceOf[js.Any], client_input_hardware = client_input_hardware.asInstanceOf[js.Any], client_input_muted = client_input_muted.asInstanceOf[js.Any], client_integrations = client_integrations.asInstanceOf[js.Any], client_is_channel_commander = client_is_channel_commander.asInstanceOf[js.Any], client_is_priority_speaker = client_is_priority_speaker.asInstanceOf[js.Any], client_is_recording = client_is_recording.asInstanceOf[js.Any], client_is_talker = client_is_talker.asInstanceOf[js.Any], client_lastconnected = client_lastconnected.asInstanceOf[js.Any], client_login_name = client_login_name.asInstanceOf[js.Any], client_meta_data = client_meta_data.asInstanceOf[js.Any], client_month_bytes_downloaded = client_month_bytes_downloaded.asInstanceOf[js.Any], client_month_bytes_uploaded = client_month_bytes_uploaded.asInstanceOf[js.Any], client_myteamspeak_avatar = client_myteamspeak_avatar.asInstanceOf[js.Any], client_myteamspeak_id = client_myteamspeak_id.asInstanceOf[js.Any], client_needed_serverquery_view_power = client_needed_serverquery_view_power.asInstanceOf[js.Any], client_nickname = client_nickname.asInstanceOf[js.Any], client_nickname_phonetic = client_nickname_phonetic.asInstanceOf[js.Any], client_output_hardware = client_output_hardware.asInstanceOf[js.Any], client_output_muted = client_output_muted.asInstanceOf[js.Any], client_outputonly_muted = client_outputonly_muted.asInstanceOf[js.Any], client_platform = client_platform.asInstanceOf[js.Any], client_security_hash = client_security_hash.asInstanceOf[js.Any], client_servergroups = client_servergroups.asInstanceOf[js.Any], client_signed_badges = client_signed_badges.asInstanceOf[js.Any], client_talk_power = client_talk_power.asInstanceOf[js.Any], client_talk_request = client_talk_request.asInstanceOf[js.Any], client_talk_request_msg = client_talk_request_msg.asInstanceOf[js.Any], client_total_bytes_downloaded = client_total_bytes_downloaded.asInstanceOf[js.Any], client_total_bytes_uploaded = client_total_bytes_uploaded.asInstanceOf[js.Any], client_totalconnections = client_totalconnections.asInstanceOf[js.Any], client_type = client_type.asInstanceOf[js.Any], client_unique_identifier = client_unique_identifier.asInstanceOf[js.Any], client_version = client_version.asInstanceOf[js.Any], client_version_sign = client_version_sign.asInstanceOf[js.Any], connection_bandwidth_received_last_minute_total = connection_bandwidth_received_last_minute_total.asInstanceOf[js.Any], connection_bandwidth_received_last_second_total = connection_bandwidth_received_last_second_total.asInstanceOf[js.Any], connection_bandwidth_sent_last_minute_total = connection_bandwidth_sent_last_minute_total.asInstanceOf[js.Any], connection_bandwidth_sent_last_second_total = connection_bandwidth_sent_last_second_total.asInstanceOf[js.Any], connection_bytes_received_total = connection_bytes_received_total.asInstanceOf[js.Any], connection_bytes_sent_total = connection_bytes_sent_total.asInstanceOf[js.Any], connection_client_ip = connection_client_ip.asInstanceOf[js.Any], connection_connected_time = connection_connected_time.asInstanceOf[js.Any], connection_filetransfer_bandwidth_received = connection_filetransfer_bandwidth_received.asInstanceOf[js.Any], connection_filetransfer_bandwidth_sent = connection_filetransfer_bandwidth_sent.asInstanceOf[js.Any], connection_packets_received_total = connection_packets_received_total.asInstanceOf[js.Any], connection_packets_sent_total = connection_packets_sent_total.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], clientAway = clientAway.asInstanceOf[js.Any], clientAwayMessage = clientAwayMessage.asInstanceOf[js.Any], clientBadges = clientBadges.asInstanceOf[js.Any], clientBase64HashClientUID = clientBase64HashClientUID.asInstanceOf[js.Any], clientChannelGroupId = clientChannelGroupId.asInstanceOf[js.Any], clientChannelGroupInheritedChannelId = clientChannelGroupInheritedChannelId.asInstanceOf[js.Any], clientCountry = clientCountry.asInstanceOf[js.Any], clientCreated = clientCreated.asInstanceOf[js.Any], clientDatabaseId = clientDatabaseId.asInstanceOf[js.Any], clientDefaultChannel = clientDefaultChannel.asInstanceOf[js.Any], clientDefaultToken = clientDefaultToken.asInstanceOf[js.Any], clientDescription = clientDescription.asInstanceOf[js.Any], clientFlagAvatar = clientFlagAvatar.asInstanceOf[js.Any], clientIconId = clientIconId.asInstanceOf[js.Any], clientIdleTime = clientIdleTime.asInstanceOf[js.Any], clientInputHardware = clientInputHardware.asInstanceOf[js.Any], clientInputMuted = clientInputMuted.asInstanceOf[js.Any], clientIntegrations = clientIntegrations.asInstanceOf[js.Any], clientIsChannelCommander = clientIsChannelCommander.asInstanceOf[js.Any], clientIsPrioritySpeaker = clientIsPrioritySpeaker.asInstanceOf[js.Any], clientIsRecording = clientIsRecording.asInstanceOf[js.Any], clientIsTalker = clientIsTalker.asInstanceOf[js.Any], clientLastconnected = clientLastconnected.asInstanceOf[js.Any], clientLoginName = clientLoginName.asInstanceOf[js.Any], clientMetaData = clientMetaData.asInstanceOf[js.Any], clientMonthBytesDownloaded = clientMonthBytesDownloaded.asInstanceOf[js.Any], clientMonthBytesUploaded = clientMonthBytesUploaded.asInstanceOf[js.Any], clientMyteamspeakAvatar = clientMyteamspeakAvatar.asInstanceOf[js.Any], clientMyteamspeakId = clientMyteamspeakId.asInstanceOf[js.Any], clientNeededServerqueryViewPower = clientNeededServerqueryViewPower.asInstanceOf[js.Any], clientNickname = clientNickname.asInstanceOf[js.Any], clientNicknamePhonetic = clientNicknamePhonetic.asInstanceOf[js.Any], clientOutputHardware = clientOutputHardware.asInstanceOf[js.Any], clientOutputMuted = clientOutputMuted.asInstanceOf[js.Any], clientOutputonlyMuted = clientOutputonlyMuted.asInstanceOf[js.Any], clientPlatform = clientPlatform.asInstanceOf[js.Any], clientSecurityHash = clientSecurityHash.asInstanceOf[js.Any], clientServergroups = clientServergroups.asInstanceOf[js.Any], clientSignedBadges = clientSignedBadges.asInstanceOf[js.Any], clientTalkPower = clientTalkPower.asInstanceOf[js.Any], clientTalkRequest = clientTalkRequest.asInstanceOf[js.Any], clientTalkRequestMsg = clientTalkRequestMsg.asInstanceOf[js.Any], clientTotalBytesDownloaded = clientTotalBytesDownloaded.asInstanceOf[js.Any], clientTotalBytesUploaded = clientTotalBytesUploaded.asInstanceOf[js.Any], clientTotalconnections = clientTotalconnections.asInstanceOf[js.Any], clientType = clientType.asInstanceOf[js.Any], clientUniqueIdentifier = clientUniqueIdentifier.asInstanceOf[js.Any], clientVersion = clientVersion.asInstanceOf[js.Any], clientVersionSign = clientVersionSign.asInstanceOf[js.Any], connectionBandwidthReceivedLastMinuteTotal = connectionBandwidthReceivedLastMinuteTotal.asInstanceOf[js.Any], connectionBandwidthReceivedLastSecondTotal = connectionBandwidthReceivedLastSecondTotal.asInstanceOf[js.Any], connectionBandwidthSentLastMinuteTotal = connectionBandwidthSentLastMinuteTotal.asInstanceOf[js.Any], connectionBandwidthSentLastSecondTotal = connectionBandwidthSentLastSecondTotal.asInstanceOf[js.Any], connectionBytesReceivedTotal = connectionBytesReceivedTotal.asInstanceOf[js.Any], connectionBytesSentTotal = connectionBytesSentTotal.asInstanceOf[js.Any], connectionClientIp = connectionClientIp.asInstanceOf[js.Any], connectionConnectedTime = connectionConnectedTime.asInstanceOf[js.Any], connectionFiletransferBandwidthReceived = connectionFiletransferBandwidthReceived.asInstanceOf[js.Any], connectionFiletransferBandwidthSent = connectionFiletransferBandwidthSent.asInstanceOf[js.Any], connectionPacketsReceivedTotal = connectionPacketsReceivedTotal.asInstanceOf[js.Any], connectionPacketsSentTotal = connectionPacketsSentTotal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientInfo]
   }
+  @scala.inline
+  implicit class ClientInfoOps[Self <: ClientInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCid(value: String): Self = this.set("cid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientAway(value: Boolean): Self = this.set("clientAway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientAwayMessage(value: String): Self = this.set("clientAwayMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientBadges(value: String): Self = this.set("clientBadges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientBase64HashClientUID(value: String): Self = this.set("clientBase64HashClientUID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientChannelGroupId(value: String): Self = this.set("clientChannelGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientChannelGroupInheritedChannelId(value: String): Self = this.set("clientChannelGroupInheritedChannelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientCountry(value: String): Self = this.set("clientCountry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientCreated(value: Double): Self = this.set("clientCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientDatabaseId(value: Double): Self = this.set("clientDatabaseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientDefaultChannel(value: String): Self = this.set("clientDefaultChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientDefaultToken(value: String): Self = this.set("clientDefaultToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientDescription(value: String): Self = this.set("clientDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientFlagAvatar(value: String): Self = this.set("clientFlagAvatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientIconId(value: String): Self = this.set("clientIconId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientIdleTime(value: Double): Self = this.set("clientIdleTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientInputHardware(value: Double): Self = this.set("clientInputHardware", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientInputMuted(value: Double): Self = this.set("clientInputMuted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientIntegrations(value: String): Self = this.set("clientIntegrations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientIsChannelCommander(value: Boolean): Self = this.set("clientIsChannelCommander", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientIsPrioritySpeaker(value: Boolean): Self = this.set("clientIsPrioritySpeaker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientIsRecording(value: Boolean): Self = this.set("clientIsRecording", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientIsTalker(value: Boolean): Self = this.set("clientIsTalker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientLastconnected(value: Double): Self = this.set("clientLastconnected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientLoginName(value: String): Self = this.set("clientLoginName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientMetaData(value: String): Self = this.set("clientMetaData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientMonthBytesDownloaded(value: Double): Self = this.set("clientMonthBytesDownloaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientMonthBytesUploaded(value: Double): Self = this.set("clientMonthBytesUploaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientMyteamspeakAvatar(value: String): Self = this.set("clientMyteamspeakAvatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientMyteamspeakId(value: String): Self = this.set("clientMyteamspeakId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientNeededServerqueryViewPower(value: Double): Self = this.set("clientNeededServerqueryViewPower", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientNickname(value: String): Self = this.set("clientNickname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientNicknamePhonetic(value: String): Self = this.set("clientNicknamePhonetic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientOutputHardware(value: Double): Self = this.set("clientOutputHardware", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientOutputMuted(value: Double): Self = this.set("clientOutputMuted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientOutputonlyMuted(value: Double): Self = this.set("clientOutputonlyMuted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientPlatform(value: String): Self = this.set("clientPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientSecurityHash(value: String): Self = this.set("clientSecurityHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientServergroupsVarargs(value: String*): Self = this.set("clientServergroups", js.Array(value :_*))
+    @scala.inline
+    def setClientServergroups(value: js.Array[String]): Self = this.set("clientServergroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientSignedBadges(value: String): Self = this.set("clientSignedBadges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientTalkPower(value: Double): Self = this.set("clientTalkPower", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientTalkRequest(value: Boolean): Self = this.set("clientTalkRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientTalkRequestMsg(value: String): Self = this.set("clientTalkRequestMsg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientTotalBytesDownloaded(value: Double): Self = this.set("clientTotalBytesDownloaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientTotalBytesUploaded(value: Double): Self = this.set("clientTotalBytesUploaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientTotalconnections(value: Double): Self = this.set("clientTotalconnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientType(value: ClientType): Self = this.set("clientType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientUniqueIdentifier(value: String): Self = this.set("clientUniqueIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientVersion(value: String): Self = this.set("clientVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientVersionSign(value: String): Self = this.set("clientVersionSign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBandwidthReceivedLastMinuteTotal(value: Double): Self = this.set("connectionBandwidthReceivedLastMinuteTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBandwidthReceivedLastSecondTotal(value: Double): Self = this.set("connectionBandwidthReceivedLastSecondTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBandwidthSentLastMinuteTotal(value: Double): Self = this.set("connectionBandwidthSentLastMinuteTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBandwidthSentLastSecondTotal(value: Double): Self = this.set("connectionBandwidthSentLastSecondTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesReceivedTotal(value: Double): Self = this.set("connectionBytesReceivedTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesSentTotal(value: Double): Self = this.set("connectionBytesSentTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionClientIp(value: String): Self = this.set("connectionClientIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionConnectedTime(value: Double): Self = this.set("connectionConnectedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionFiletransferBandwidthReceived(value: Double): Self = this.set("connectionFiletransferBandwidthReceived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionFiletransferBandwidthSent(value: Double): Self = this.set("connectionFiletransferBandwidthSent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsReceivedTotal(value: Double): Self = this.set("connectionPacketsReceivedTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsSentTotal(value: Double): Self = this.set("connectionPacketsSentTotal", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -1,6 +1,7 @@
 package typings.typedoc
 
 import typings.handlebars.Handlebars.TemplateDelegate
+import typings.typedoc.legendPluginMod.LegendItem
 import typings.typedoc.navigationItemMod.NavigationItem
 import typings.typedoc.projectMod.ProjectReflection
 import typings.typedoc.urlMappingMod.UrlMapping
@@ -23,6 +24,7 @@ object eventsMod extends js.Object {
   class PageEvent () extends Event {
     var contents: js.UndefOr[String] = js.native
     var filename: String = js.native
+    var legend: js.UndefOr[js.Array[js.Array[LegendItem]]] = js.native
     var model: js.Any = js.native
     var navigation: js.UndefOr[NavigationItem] = js.native
     var project: ProjectReflection = js.native

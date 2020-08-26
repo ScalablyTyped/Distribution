@@ -11,8 +11,8 @@ Fossil SCM delta compression
 | Full name          | fossil-delta |
 | Keywords           | delta, compression, encoding |
 | # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 26174 |
+| # dependents       | 10 |
+| # downloads        | 27147 |
 | # stars            | 0 |
 
 ## Links

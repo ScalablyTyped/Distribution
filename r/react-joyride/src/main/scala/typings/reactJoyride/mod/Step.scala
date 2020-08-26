@@ -1,83 +1,86 @@
 package typings.reactJoyride.mod
 
-import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Step extends CommonProps {
-  var content: ReactNode
-  var disableBeacon: js.UndefOr[Boolean] = js.undefined
-  var event: js.UndefOr[String] = js.undefined
-  var hideCloseButton: js.UndefOr[Boolean] = js.undefined
-  var hideFooter: js.UndefOr[Boolean] = js.undefined
-  var isFixed: js.UndefOr[Boolean] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var placement: js.UndefOr[Placement] = js.undefined
-  var placementBeacon: js.UndefOr[PlacementBeacon] = js.undefined
-  var target: String | HTMLElement
-  var title: js.UndefOr[ReactNode] = js.undefined
+  var content: ReactNode = js.native
+  var disableBeacon: js.UndefOr[Boolean] = js.native
+  var event: js.UndefOr[String] = js.native
+  var hideCloseButton: js.UndefOr[Boolean] = js.native
+  var hideFooter: js.UndefOr[Boolean] = js.native
+  var isFixed: js.UndefOr[Boolean] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var placement: js.UndefOr[Placement] = js.native
+  var placementBeacon: js.UndefOr[PlacementBeacon] = js.native
+  var target: String | HTMLElement = js.native
+  var title: js.UndefOr[ReactNode] = js.native
 }
 
 object Step {
   @scala.inline
-  def apply(
-    target: String | HTMLElement,
-    beaconComponent: ElementType[BeaconRenderProps] = null,
-    content: ReactNode = null,
-    disableBeacon: js.UndefOr[Boolean] = js.undefined,
-    disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
-    disableOverlay: js.UndefOr[Boolean] = js.undefined,
-    disableOverlayClose: js.UndefOr[Boolean] = js.undefined,
-    disableScrollParentFix: js.UndefOr[Boolean] = js.undefined,
-    disableScrolling: js.UndefOr[Boolean] = js.undefined,
-    event: String = null,
-    floaterProps: FloaterProps = null,
-    hideBackButton: js.UndefOr[Boolean] = js.undefined,
-    hideCloseButton: js.UndefOr[Boolean] = js.undefined,
-    hideFooter: js.UndefOr[Boolean] = js.undefined,
-    isFixed: js.UndefOr[Boolean] = js.undefined,
-    locale: Locale = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    placement: Placement = null,
-    placementBeacon: PlacementBeacon = null,
-    showProgress: js.UndefOr[Boolean] = js.undefined,
-    showSkipButton: js.UndefOr[Boolean] = js.undefined,
-    spotlightClicks: js.UndefOr[Boolean] = js.undefined,
-    spotlightPadding: js.UndefOr[Double] = js.undefined,
-    styles: Styles = null,
-    title: ReactNode = null,
-    tooltipComponent: ElementType[TooltipRenderProps] = null
-  ): Step = {
+  def apply(target: String | HTMLElement): Step = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-    if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableBeacon)) __obj.updateDynamic("disableBeacon")(disableBeacon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOverlay)) __obj.updateDynamic("disableOverlay")(disableOverlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOverlayClose)) __obj.updateDynamic("disableOverlayClose")(disableOverlayClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrollParentFix)) __obj.updateDynamic("disableScrollParentFix")(disableScrollParentFix.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrolling)) __obj.updateDynamic("disableScrolling")(disableScrolling.get.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (floaterProps != null) __obj.updateDynamic("floaterProps")(floaterProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideCloseButton)) __obj.updateDynamic("hideCloseButton")(hideCloseButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFooter)) __obj.updateDynamic("hideFooter")(hideFooter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (placementBeacon != null) __obj.updateDynamic("placementBeacon")(placementBeacon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showProgress)) __obj.updateDynamic("showProgress")(showProgress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSkipButton)) __obj.updateDynamic("showSkipButton")(showSkipButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spotlightClicks)) __obj.updateDynamic("spotlightClicks")(spotlightClicks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spotlightPadding)) __obj.updateDynamic("spotlightPadding")(spotlightPadding.get.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tooltipComponent != null) __obj.updateDynamic("tooltipComponent")(tooltipComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
+  @scala.inline
+  implicit class StepOps[Self <: Step] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTarget(value: String | HTMLElement): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContent(value: ReactNode): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDisableBeacon(value: Boolean): Self = this.set("disableBeacon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableBeacon: Self = this.set("disableBeacon", js.undefined)
+    @scala.inline
+    def setEvent(value: String): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+    @scala.inline
+    def setHideCloseButton(value: Boolean): Self = this.set("hideCloseButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideCloseButton: Self = this.set("hideCloseButton", js.undefined)
+    @scala.inline
+    def setHideFooter(value: Boolean): Self = this.set("hideFooter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideFooter: Self = this.set("hideFooter", js.undefined)
+    @scala.inline
+    def setIsFixed(value: Boolean): Self = this.set("isFixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFixed: Self = this.set("isFixed", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPlacement(value: Placement): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setPlacementBeacon(value: PlacementBeacon): Self = this.set("placementBeacon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementBeacon: Self = this.set("placementBeacon", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

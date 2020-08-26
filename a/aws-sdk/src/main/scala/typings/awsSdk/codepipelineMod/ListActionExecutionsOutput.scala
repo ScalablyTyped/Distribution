@@ -18,11 +18,32 @@ trait ListActionExecutionsOutput extends js.Object {
 
 object ListActionExecutionsOutput {
   @scala.inline
-  def apply(actionExecutionDetails: ActionExecutionDetailList = null, nextToken: NextToken = null): ListActionExecutionsOutput = {
+  def apply(): ListActionExecutionsOutput = {
     val __obj = js.Dynamic.literal()
-    if (actionExecutionDetails != null) __obj.updateDynamic("actionExecutionDetails")(actionExecutionDetails.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListActionExecutionsOutput]
   }
+  @scala.inline
+  implicit class ListActionExecutionsOutputOps[Self <: ListActionExecutionsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionExecutionDetailsVarargs(value: ActionExecutionDetail*): Self = this.set("actionExecutionDetails", js.Array(value :_*))
+    @scala.inline
+    def setActionExecutionDetails(value: ActionExecutionDetailList): Self = this.set("actionExecutionDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionExecutionDetails: Self = this.set("actionExecutionDetails", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

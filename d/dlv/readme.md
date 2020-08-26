@@ -11,8 +11,8 @@ Safely get a dot-notated property within an object.
 | Full name          | dlv |
 | Keywords           | delve, dot notation, dot |
 | # releases         | 4 |
-| # dependents       | 60 |
-| # downloads        | 11503129 |
+| # dependents       | 65 |
+| # downloads        | 11845589 |
 | # stars            | 3 |
 
 ## Links

@@ -10,9 +10,9 @@ Lazy evaluated property injection decorators for InversifyJS
 | ------------------ | :-------------: |
 | Full name          | inversify-inject-decorators |
 | Keywords           | inject, lazy, property, decorator, inversify, dependency, injection |
-| # releases         | 2 |
-| # dependents       | 39 |
-| # downloads        | 349488 |
+| # releases         | 0 |
+| # dependents       | 37 |
+| # downloads        | 356950 |
 | # stars            | 0 |
 
 ## Links

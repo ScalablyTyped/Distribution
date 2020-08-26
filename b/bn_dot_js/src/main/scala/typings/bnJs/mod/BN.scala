@@ -294,21 +294,25 @@ trait BN extends js.Object {
     * @description  convert to byte Array, and optionally zero pad to length, throwing if already exceeding
     */
   def toArray(): js.Array[Double] = js.native
+  def toArray(endian: js.UndefOr[scala.Nothing], length: Double): js.Array[Double] = js.native
   def toArray(endian: Endianness): js.Array[Double] = js.native
   def toArray(endian: Endianness, length: Double): js.Array[Double] = js.native
   def toArrayLike(ArrayType: js.Array[_]): js.Array[_] = js.native
+  def toArrayLike(ArrayType: js.Array[_], endian: js.UndefOr[scala.Nothing], length: Double): js.Array[_] = js.native
   def toArrayLike(ArrayType: js.Array[_], endian: Endianness): js.Array[_] = js.native
   def toArrayLike(ArrayType: js.Array[_], endian: Endianness, length: Double): js.Array[_] = js.native
   /**
     * @description convert to an instance of `type`, which must behave like an Array
     */
   def toArrayLike(ArrayType: TypeofBuffer): Buffer = js.native
+  def toArrayLike(ArrayType: TypeofBuffer, endian: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
   def toArrayLike(ArrayType: TypeofBuffer, endian: Endianness): Buffer = js.native
   def toArrayLike(ArrayType: TypeofBuffer, endian: Endianness, length: Double): Buffer = js.native
   /**
     * @description  convert to Node.js Buffer (if available). For compatibility with browserify and similar tools, use this instead: a.toArrayLike(Buffer, endian, length)
     */
   def toBuffer(): Buffer = js.native
+  def toBuffer(endian: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
   def toBuffer(endian: Endianness): Buffer = js.native
   def toBuffer(endian: Endianness, length: Double): Buffer = js.native
   /**
@@ -323,6 +327,7 @@ trait BN extends js.Object {
     * @description Convert number to red
     */
   def toRed(reductionContext: ReductionContext): RedBN = js.native
+  def toString(base: js.UndefOr[scala.Nothing], length: Double): String = js.native
   def toString(base: Double): String = js.native
   def toString(base: Double, length: Double): String = js.native
   @JSName("toString")

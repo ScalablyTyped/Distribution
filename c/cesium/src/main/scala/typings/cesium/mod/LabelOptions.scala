@@ -4,75 +4,128 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LabelOptions extends js.Object {
-  var backgroundColor: js.UndefOr[Color] = js.undefined
-  var backgroundPadding: js.UndefOr[Cartesian2] = js.undefined
-  var distanceDisplayCondition: js.UndefOr[DistanceDisplayCondition] = js.undefined
-  var eyeOffset: js.UndefOr[Cartesian3] = js.undefined
-  var fillColor: js.UndefOr[Color] = js.undefined
-  var font: js.UndefOr[String] = js.undefined
-  var heightReference: js.UndefOr[HeightReference] = js.undefined
-  var horizontalOrigin: js.UndefOr[HorizontalOrigin] = js.undefined
-  var outlineColor: js.UndefOr[Color] = js.undefined
-  var outlineWidth: js.UndefOr[Double] = js.undefined
-  var pixelOffset: js.UndefOr[Cartesian2] = js.undefined
-  var pixelOffsetScaleByDistance: js.UndefOr[NearFarScalar] = js.undefined
-  var position: js.UndefOr[Cartesian3] = js.undefined
-  var scale: js.UndefOr[Double] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
-  var showBackground: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[LabelStyle] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var translucencyByDistance: js.UndefOr[NearFarScalar] = js.undefined
-  var verticalOrigin: js.UndefOr[VerticalOrigin] = js.undefined
+  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundPadding: js.UndefOr[Cartesian2] = js.native
+  var distanceDisplayCondition: js.UndefOr[DistanceDisplayCondition] = js.native
+  var eyeOffset: js.UndefOr[Cartesian3] = js.native
+  var fillColor: js.UndefOr[Color] = js.native
+  var font: js.UndefOr[String] = js.native
+  var heightReference: js.UndefOr[HeightReference] = js.native
+  var horizontalOrigin: js.UndefOr[HorizontalOrigin] = js.native
+  var outlineColor: js.UndefOr[Color] = js.native
+  var outlineWidth: js.UndefOr[Double] = js.native
+  var pixelOffset: js.UndefOr[Cartesian2] = js.native
+  var pixelOffsetScaleByDistance: js.UndefOr[NearFarScalar] = js.native
+  var position: js.UndefOr[Cartesian3] = js.native
+  var scale: js.UndefOr[Double] = js.native
+  var show: js.UndefOr[Boolean] = js.native
+  var showBackground: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[LabelStyle] = js.native
+  var text: js.UndefOr[String] = js.native
+  var translucencyByDistance: js.UndefOr[NearFarScalar] = js.native
+  var verticalOrigin: js.UndefOr[VerticalOrigin] = js.native
 }
 
 object LabelOptions {
   @scala.inline
-  def apply(
-    backgroundColor: Color = null,
-    backgroundPadding: Cartesian2 = null,
-    distanceDisplayCondition: DistanceDisplayCondition = null,
-    eyeOffset: Cartesian3 = null,
-    fillColor: Color = null,
-    font: String = null,
-    heightReference: HeightReference = null,
-    horizontalOrigin: HorizontalOrigin = null,
-    outlineColor: Color = null,
-    outlineWidth: js.UndefOr[Double] = js.undefined,
-    pixelOffset: Cartesian2 = null,
-    pixelOffsetScaleByDistance: NearFarScalar = null,
-    position: Cartesian3 = null,
-    scale: js.UndefOr[Double] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    showBackground: js.UndefOr[Boolean] = js.undefined,
-    style: LabelStyle = null,
-    text: String = null,
-    translucencyByDistance: NearFarScalar = null,
-    verticalOrigin: VerticalOrigin = null
-  ): LabelOptions = {
+  def apply(): LabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundPadding != null) __obj.updateDynamic("backgroundPadding")(backgroundPadding.asInstanceOf[js.Any])
-    if (distanceDisplayCondition != null) __obj.updateDynamic("distanceDisplayCondition")(distanceDisplayCondition.asInstanceOf[js.Any])
-    if (eyeOffset != null) __obj.updateDynamic("eyeOffset")(eyeOffset.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (heightReference != null) __obj.updateDynamic("heightReference")(heightReference.asInstanceOf[js.Any])
-    if (horizontalOrigin != null) __obj.updateDynamic("horizontalOrigin")(horizontalOrigin.asInstanceOf[js.Any])
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(outlineWidth)) __obj.updateDynamic("outlineWidth")(outlineWidth.get.asInstanceOf[js.Any])
-    if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset.asInstanceOf[js.Any])
-    if (pixelOffsetScaleByDistance != null) __obj.updateDynamic("pixelOffsetScaleByDistance")(pixelOffsetScaleByDistance.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBackground)) __obj.updateDynamic("showBackground")(showBackground.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (translucencyByDistance != null) __obj.updateDynamic("translucencyByDistance")(translucencyByDistance.asInstanceOf[js.Any])
-    if (verticalOrigin != null) __obj.updateDynamic("verticalOrigin")(verticalOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOptions]
   }
+  @scala.inline
+  implicit class LabelOptionsOps[Self <: LabelOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBackgroundPadding(value: Cartesian2): Self = this.set("backgroundPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundPadding: Self = this.set("backgroundPadding", js.undefined)
+    @scala.inline
+    def setDistanceDisplayCondition(value: DistanceDisplayCondition): Self = this.set("distanceDisplayCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistanceDisplayCondition: Self = this.set("distanceDisplayCondition", js.undefined)
+    @scala.inline
+    def setEyeOffset(value: Cartesian3): Self = this.set("eyeOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEyeOffset: Self = this.set("eyeOffset", js.undefined)
+    @scala.inline
+    def setFillColor(value: Color): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setHeightReference(value: HeightReference): Self = this.set("heightReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightReference: Self = this.set("heightReference", js.undefined)
+    @scala.inline
+    def setHorizontalOrigin(value: HorizontalOrigin): Self = this.set("horizontalOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalOrigin: Self = this.set("horizontalOrigin", js.undefined)
+    @scala.inline
+    def setOutlineColor(value: Color): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    @scala.inline
+    def setOutlineWidth(value: Double): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    @scala.inline
+    def setPixelOffset(value: Cartesian2): Self = this.set("pixelOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelOffset: Self = this.set("pixelOffset", js.undefined)
+    @scala.inline
+    def setPixelOffsetScaleByDistance(value: NearFarScalar): Self = this.set("pixelOffsetScaleByDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelOffsetScaleByDistance: Self = this.set("pixelOffsetScaleByDistance", js.undefined)
+    @scala.inline
+    def setPosition(value: Cartesian3): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setShowBackground(value: Boolean): Self = this.set("showBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowBackground: Self = this.set("showBackground", js.undefined)
+    @scala.inline
+    def setStyle(value: LabelStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTranslucencyByDistance(value: NearFarScalar): Self = this.set("translucencyByDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslucencyByDistance: Self = this.set("translucencyByDistance", js.undefined)
+    @scala.inline
+    def setVerticalOrigin(value: VerticalOrigin): Self = this.set("verticalOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalOrigin: Self = this.set("verticalOrigin", js.undefined)
+  }
+  
 }
 

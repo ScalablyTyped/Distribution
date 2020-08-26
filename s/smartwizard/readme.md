@@ -12,7 +12,7 @@ The awesome jQuery step wizard plugin with Bootstrap support
 | Keywords           | bootstrap, wizard, step, ui, jquery-plugin, tabs, jquery |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 55035 |
+| # downloads        | 58778 |
 | # stars            | 2 |
 
 ## Links

@@ -29,12 +29,33 @@ object UpdateProvisionedProductPropertiesInput {
   def apply(
     IdempotencyToken: IdempotencyToken,
     ProvisionedProductId: Id,
-    ProvisionedProductProperties: ProvisionedProductProperties,
-    AcceptLanguage: AcceptLanguage = null
+    ProvisionedProductProperties: ProvisionedProductProperties
   ): UpdateProvisionedProductPropertiesInput = {
     val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken.asInstanceOf[js.Any], ProvisionedProductId = ProvisionedProductId.asInstanceOf[js.Any], ProvisionedProductProperties = ProvisionedProductProperties.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProvisionedProductPropertiesInput]
   }
+  @scala.inline
+  implicit class UpdateProvisionedProductPropertiesInputOps[Self <: UpdateProvisionedProductPropertiesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvisionedProductId(value: Id): Self = this.set("ProvisionedProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvisionedProductProperties(value: ProvisionedProductProperties): Self = this.set("ProvisionedProductProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+  }
+  
 }
 

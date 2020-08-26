@@ -66,38 +66,80 @@ trait FlowLog extends js.Object {
 
 object FlowLog {
   @scala.inline
-  def apply(
-    CreationTime: MillisecondDateTime = null,
-    DeliverLogsErrorMessage: String = null,
-    DeliverLogsPermissionArn: String = null,
-    DeliverLogsStatus: String = null,
-    FlowLogId: String = null,
-    FlowLogStatus: String = null,
-    LogDestination: String = null,
-    LogDestinationType: LogDestinationType = null,
-    LogFormat: String = null,
-    LogGroupName: String = null,
-    MaxAggregationInterval: js.UndefOr[Integer] = js.undefined,
-    ResourceId: String = null,
-    Tags: TagList = null,
-    TrafficType: TrafficType = null
-  ): FlowLog = {
+  def apply(): FlowLog = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DeliverLogsErrorMessage != null) __obj.updateDynamic("DeliverLogsErrorMessage")(DeliverLogsErrorMessage.asInstanceOf[js.Any])
-    if (DeliverLogsPermissionArn != null) __obj.updateDynamic("DeliverLogsPermissionArn")(DeliverLogsPermissionArn.asInstanceOf[js.Any])
-    if (DeliverLogsStatus != null) __obj.updateDynamic("DeliverLogsStatus")(DeliverLogsStatus.asInstanceOf[js.Any])
-    if (FlowLogId != null) __obj.updateDynamic("FlowLogId")(FlowLogId.asInstanceOf[js.Any])
-    if (FlowLogStatus != null) __obj.updateDynamic("FlowLogStatus")(FlowLogStatus.asInstanceOf[js.Any])
-    if (LogDestination != null) __obj.updateDynamic("LogDestination")(LogDestination.asInstanceOf[js.Any])
-    if (LogDestinationType != null) __obj.updateDynamic("LogDestinationType")(LogDestinationType.asInstanceOf[js.Any])
-    if (LogFormat != null) __obj.updateDynamic("LogFormat")(LogFormat.asInstanceOf[js.Any])
-    if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxAggregationInterval)) __obj.updateDynamic("MaxAggregationInterval")(MaxAggregationInterval.get.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TrafficType != null) __obj.updateDynamic("TrafficType")(TrafficType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowLog]
   }
+  @scala.inline
+  implicit class FlowLogOps[Self <: FlowLog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: MillisecondDateTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDeliverLogsErrorMessage(value: String): Self = this.set("DeliverLogsErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliverLogsErrorMessage: Self = this.set("DeliverLogsErrorMessage", js.undefined)
+    @scala.inline
+    def setDeliverLogsPermissionArn(value: String): Self = this.set("DeliverLogsPermissionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliverLogsPermissionArn: Self = this.set("DeliverLogsPermissionArn", js.undefined)
+    @scala.inline
+    def setDeliverLogsStatus(value: String): Self = this.set("DeliverLogsStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliverLogsStatus: Self = this.set("DeliverLogsStatus", js.undefined)
+    @scala.inline
+    def setFlowLogId(value: String): Self = this.set("FlowLogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowLogId: Self = this.set("FlowLogId", js.undefined)
+    @scala.inline
+    def setFlowLogStatus(value: String): Self = this.set("FlowLogStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowLogStatus: Self = this.set("FlowLogStatus", js.undefined)
+    @scala.inline
+    def setLogDestination(value: String): Self = this.set("LogDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogDestination: Self = this.set("LogDestination", js.undefined)
+    @scala.inline
+    def setLogDestinationType(value: LogDestinationType): Self = this.set("LogDestinationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogDestinationType: Self = this.set("LogDestinationType", js.undefined)
+    @scala.inline
+    def setLogFormat(value: String): Self = this.set("LogFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogFormat: Self = this.set("LogFormat", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: String): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
+    @scala.inline
+    def setMaxAggregationInterval(value: Integer): Self = this.set("MaxAggregationInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAggregationInterval: Self = this.set("MaxAggregationInterval", js.undefined)
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTrafficType(value: TrafficType): Self = this.set("TrafficType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficType: Self = this.set("TrafficType", js.undefined)
+  }
+  
 }
 

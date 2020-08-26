@@ -18,11 +18,32 @@ trait ListUserPoolsResponse extends js.Object {
 
 object ListUserPoolsResponse {
   @scala.inline
-  def apply(NextToken: PaginationKeyType = null, UserPools: UserPoolListType = null): ListUserPoolsResponse = {
+  def apply(): ListUserPoolsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (UserPools != null) __obj.updateDynamic("UserPools")(UserPools.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserPoolsResponse]
   }
+  @scala.inline
+  implicit class ListUserPoolsResponseOps[Self <: ListUserPoolsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: PaginationKeyType): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setUserPoolsVarargs(value: UserPoolDescriptionType*): Self = this.set("UserPools", js.Array(value :_*))
+    @scala.inline
+    def setUserPools(value: UserPoolListType): Self = this.set("UserPools", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPools: Self = this.set("UserPools", js.undefined)
+  }
+  
 }
 

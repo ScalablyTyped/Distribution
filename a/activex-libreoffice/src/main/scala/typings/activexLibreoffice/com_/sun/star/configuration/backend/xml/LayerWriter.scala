@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.configuration.backend.xml.LayerParser Service that parses configuration layer XML.
   * @since OOo 1.1.2
   */
+@js.native
 trait LayerWriter
   extends XLayerHandler
      with XActiveDataSource

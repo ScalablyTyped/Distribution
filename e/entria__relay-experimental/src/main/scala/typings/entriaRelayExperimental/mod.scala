@@ -60,6 +60,7 @@ object mod extends js.Object {
     typings.entriaRelayExperimental.useLegacyPaginationFragmentMod.NonNullableFragmentReturn[TKey] with typings.entriaRelayExperimental.useLegacyPaginationFragmentMod.NullableFragmentReturn[TKey]
   ] = js.native
   def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: js.UndefOr[scala.Nothing], options: FetchKey): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: Null, options: FetchKey): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   @JSName("useQuery")
   def useQuery_variables[TQuery /* <: OperationType */](

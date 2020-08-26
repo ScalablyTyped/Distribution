@@ -1,7 +1,7 @@
 
 # Scala.js typings for throat
 
-Typings are for version 4.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Throttle the parallelism of an asynchronous (promise returning) function / functions
@@ -11,8 +11,8 @@ Throttle the parallelism of an asynchronous (promise returning) function / funct
 | Full name          | throat |
 | Keywords           | promise, aplus, then, throttle, concurrency, parallelism, limit |
 | # releases         | 2 |
-| # dependents       | 168 |
-| # downloads        | 209968245 |
+| # dependents       | 173 |
+| # downloads        | 216223294 |
 | # stars            | 10 |
 
 ## Links

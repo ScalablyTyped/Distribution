@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * implementation that must specify these parameters.
   * @since OOo 1.1.2
   */
+@js.native
 trait XStringSubstitution extends XInterface {
   /**
     * Returns the current value of a variable.
@@ -22,7 +23,7 @@ trait XStringSubstitution extends XInterface {
     * @param variable The name of a variable.
     * @returns Returns a string that represents the variable. If the variable is unknown a {@link com.sun.star.container.NoSuchElementException} is thrown.
     */
-  def getSubstituteVariableValue(variable: String): String
+  def getSubstituteVariableValue(variable: String): String = js.native
   /**
     * Tries to replace parts of aText with variables that represents these sub strings.
     *
@@ -31,7 +32,7 @@ trait XStringSubstitution extends XInterface {
     * @param aText A string where known substrings should be replaced by variables.
     * @returns Returns the resubstituted string with variables for all parts that could be replaced. The unchanged argument will be returned if nothing can be r
     */
-  def reSubstituteVariables(aText: String): String
+  def reSubstituteVariables(aText: String): String = js.native
   /**
     * Exchanges variables inside a given text with a substitution text defined for the variables.
     *
@@ -42,7 +43,7 @@ trait XStringSubstitution extends XInterface {
     * @param bSubstRequired Specifies if a successful substitution is required. The function throws a {@link com.sun.star.container.NoSuchElementException} if
     * @returns Returns a string based on **aText** where all variables were exchanged with their value defined at calling time.
     */
-  def substituteVariables(aText: String, bSubstRequired: Boolean): String
+  def substituteVariables(aText: String, bSubstRequired: Boolean): String = js.native
 }
 
 object XStringSubstitution {
@@ -58,5 +59,24 @@ object XStringSubstitution {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getSubstituteVariableValue = js.Any.fromFunction1(getSubstituteVariableValue), queryInterface = js.Any.fromFunction1(queryInterface), reSubstituteVariables = js.Any.fromFunction1(reSubstituteVariables), release = js.Any.fromFunction0(release), substituteVariables = js.Any.fromFunction2(substituteVariables))
     __obj.asInstanceOf[XStringSubstitution]
   }
+  @scala.inline
+  implicit class XStringSubstitutionOps[Self <: XStringSubstitution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetSubstituteVariableValue(value: String => String): Self = this.set("getSubstituteVariableValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def setReSubstituteVariables(value: String => String): Self = this.set("reSubstituteVariables", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSubstituteVariables(value: (String, Boolean) => String): Self = this.set("substituteVariables", js.Any.fromFunction2(value))
+  }
+  
 }
 

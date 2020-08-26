@@ -67,7 +67,15 @@ class request protected () extends EventEmitter {
     * @param [acceptedProtocol] case-insensitive value that was requested by the client
     */
   def accept(): connection = js.native
+  def accept(
+    acceptedProtocol: js.UndefOr[scala.Nothing],
+    allowedOrigin: js.UndefOr[scala.Nothing],
+    cookies: js.Array[ICookie]
+  ): connection = js.native
+  def accept(acceptedProtocol: js.UndefOr[scala.Nothing], allowedOrigin: String): connection = js.native
+  def accept(acceptedProtocol: js.UndefOr[scala.Nothing], allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
   def accept(acceptedProtocol: String): connection = js.native
+  def accept(acceptedProtocol: String, allowedOrigin: js.UndefOr[scala.Nothing], cookies: js.Array[ICookie]): connection = js.native
   def accept(acceptedProtocol: String, allowedOrigin: String): connection = js.native
   def accept(acceptedProtocol: String, allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
   @JSName("addListener")
@@ -94,7 +102,11 @@ class request protected () extends EventEmitter {
     * Optional extra http headers can be added via Object key/values on extraHeaders.
     */
   def reject(): Unit = js.native
+  def reject(httpStatus: js.UndefOr[scala.Nothing], reason: js.UndefOr[scala.Nothing], extraHeaders: js.Object): Unit = js.native
+  def reject(httpStatus: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
+  def reject(httpStatus: js.UndefOr[scala.Nothing], reason: String, extraHeaders: js.Object): Unit = js.native
   def reject(httpStatus: Double): Unit = js.native
+  def reject(httpStatus: Double, reason: js.UndefOr[scala.Nothing], extraHeaders: js.Object): Unit = js.native
   def reject(httpStatus: Double, reason: String): Unit = js.native
   def reject(httpStatus: Double, reason: String, extraHeaders: js.Object): Unit = js.native
 }

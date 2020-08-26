@@ -42,16 +42,36 @@ trait SchemaUserOwnedDrydockNote extends js.Object {
 
 object SchemaUserOwnedDrydockNote {
   @scala.inline
-  def apply(
-    delegationServiceAccountEmail: String = null,
-    noteReference: String = null,
-    publicKeys: js.Array[SchemaAttestorPublicKey] = null
-  ): SchemaUserOwnedDrydockNote = {
+  def apply(): SchemaUserOwnedDrydockNote = {
     val __obj = js.Dynamic.literal()
-    if (delegationServiceAccountEmail != null) __obj.updateDynamic("delegationServiceAccountEmail")(delegationServiceAccountEmail.asInstanceOf[js.Any])
-    if (noteReference != null) __obj.updateDynamic("noteReference")(noteReference.asInstanceOf[js.Any])
-    if (publicKeys != null) __obj.updateDynamic("publicKeys")(publicKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserOwnedDrydockNote]
   }
+  @scala.inline
+  implicit class SchemaUserOwnedDrydockNoteOps[Self <: SchemaUserOwnedDrydockNote] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelegationServiceAccountEmail(value: String): Self = this.set("delegationServiceAccountEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegationServiceAccountEmail: Self = this.set("delegationServiceAccountEmail", js.undefined)
+    @scala.inline
+    def setNoteReference(value: String): Self = this.set("noteReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteReference: Self = this.set("noteReference", js.undefined)
+    @scala.inline
+    def setPublicKeysVarargs(value: SchemaAttestorPublicKey*): Self = this.set("publicKeys", js.Array(value :_*))
+    @scala.inline
+    def setPublicKeys(value: js.Array[SchemaAttestorPublicKey]): Self = this.set("publicKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKeys: Self = this.set("publicKeys", js.undefined)
+  }
+  
 }
 

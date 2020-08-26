@@ -11,15 +11,13 @@ trait XmlProcInst[Parent] extends js.Object {
   var _target: js.Any = js.native
   val _validation: js.Any = js.native
   /**
-    * Sets the content of this processing instruction.
-    */
-  def content(): js.Any = js.native
-  def content(content: String): js.Any = js.native
-  /**
     * Gets the content of this processing instruction.
     */
-  @JSName("content")
-  def content_Union: js.UndefOr[String] = js.native
+  def content: js.UndefOr[String] = js.native
+  /**
+    * Sets the content of this processing instruction.
+    */
+  def content_=(content: js.UndefOr[String]): Unit = js.native
   /**
     * Gets the target of this processing instruction.
     */
@@ -27,7 +25,7 @@ trait XmlProcInst[Parent] extends js.Object {
   /**
     * Sets the content of this processing instruction.
     */
-  def target(target: String): js.Any = js.native
+  def target_=(target: String): Unit = js.native
   /**
     * Returns the parent of this processing instruction.
     */

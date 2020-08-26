@@ -24,13 +24,14 @@ trait AsyncRedisConstructor
     ]
      with Instantiable3[
       /* port */ Double, 
-      /* host */ String, 
+      js.UndefOr[/* host */ String], 
       /* options */ ClientOpts, 
       Promisified[RedisClient]
     ] {
   def createClient(): Promisified[RedisClient] = js.native
   def createClient(options: ClientOpts): Promisified[RedisClient] = js.native
   def createClient(port: Double): Promisified[RedisClient] = js.native
+  def createClient(port: Double, host: js.UndefOr[scala.Nothing], options: ClientOpts): Promisified[RedisClient] = js.native
   def createClient(port: Double, host: String): Promisified[RedisClient] = js.native
   def createClient(port: Double, host: String, options: ClientOpts): Promisified[RedisClient] = js.native
   def createClient(unix_socket: String): Promisified[RedisClient] = js.native

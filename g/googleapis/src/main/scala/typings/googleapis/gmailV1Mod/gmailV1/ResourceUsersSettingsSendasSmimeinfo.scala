@@ -30,6 +30,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsSendasSmimeinfoDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsSendasSmimeinfoDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -59,6 +60,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSmimeInfo] = js.native
   def get(callback: BodyResponseCallback[SchemaSmimeInfo]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSmimeInfo] = js.native
   def get(params: ParamsResourceUsersSettingsSendasSmimeinfoGet): GaxiosPromise[SchemaSmimeInfo] = js.native
   def get(
     params: ParamsResourceUsersSettingsSendasSmimeinfoGet,
@@ -92,6 +94,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaSmimeInfo] = js.native
   def insert(callback: BodyResponseCallback[SchemaSmimeInfo]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSmimeInfo] = js.native
   def insert(params: ParamsResourceUsersSettingsSendasSmimeinfoInsert): GaxiosPromise[SchemaSmimeInfo] = js.native
   def insert(
     params: ParamsResourceUsersSettingsSendasSmimeinfoInsert,
@@ -123,6 +126,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListSmimeInfoResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSmimeInfoResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSmimeInfoResponse] = js.native
   def list(params: ParamsResourceUsersSettingsSendasSmimeinfoList): GaxiosPromise[SchemaListSmimeInfoResponse] = js.native
   def list(
     params: ParamsResourceUsersSettingsSendasSmimeinfoList,
@@ -155,6 +159,7 @@ class ResourceUsersSettingsSendasSmimeinfo protected () extends js.Object {
     */
   def setDefault(): GaxiosPromise[Unit] = js.native
   def setDefault(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def setDefault(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def setDefault(params: ParamsResourceUsersSettingsSendasSmimeinfoSetdefault): GaxiosPromise[Unit] = js.native
   def setDefault(params: ParamsResourceUsersSettingsSendasSmimeinfoSetdefault, callback: BodyResponseCallback[Unit]): Unit = js.native
   def setDefault(

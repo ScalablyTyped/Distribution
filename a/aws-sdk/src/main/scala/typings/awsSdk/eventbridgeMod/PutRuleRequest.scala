@@ -42,25 +42,54 @@ trait PutRuleRequest extends js.Object {
 
 object PutRuleRequest {
   @scala.inline
-  def apply(
-    Name: RuleName,
-    Description: RuleDescription = null,
-    EventBusName: EventBusName = null,
-    EventPattern: EventPattern = null,
-    RoleArn: RoleArn = null,
-    ScheduleExpression: ScheduleExpression = null,
-    State: RuleState = null,
-    Tags: TagList = null
-  ): PutRuleRequest = {
+  def apply(Name: RuleName): PutRuleRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName.asInstanceOf[js.Any])
-    if (EventPattern != null) __obj.updateDynamic("EventPattern")(EventPattern.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRuleRequest]
   }
+  @scala.inline
+  implicit class PutRuleRequestOps[Self <: PutRuleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: RuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: RuleDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEventBusName(value: EventBusName): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
+    @scala.inline
+    def setEventPattern(value: EventPattern): Self = this.set("EventPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventPattern: Self = this.set("EventPattern", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setScheduleExpression(value: ScheduleExpression): Self = this.set("ScheduleExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleExpression: Self = this.set("ScheduleExpression", js.undefined)
+    @scala.inline
+    def setState(value: RuleState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

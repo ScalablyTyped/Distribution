@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NavigatorYAxisPlotLinesLabelOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Gantt) Horizontal alignment of the label. Can be
     * one of "left", "center" or "right".
     */
-  var align: js.UndefOr[AlignValue] = js.undefined
+  var align: js.UndefOr[AlignValue] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Callback JavaScript function to format the
     * label. Useful properties like the value of plot line or the range of plot
     * band (`from` & `to` properties) can be found in `this.options` object.
     */
-  var formatter: js.UndefOr[FormatterCallbackFunction[PlotLineOrBand]] = js.undefined
+  var formatter: js.UndefOr[FormatterCallbackFunction[PlotLineOrBand]] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Rotation of the text label in degrees.
     * Defaults to 0 for horizontal plot lines and 90 for vertical lines.
     */
-  var rotation: js.UndefOr[Double] = js.undefined
+  var rotation: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) CSS styles for the text label.
     *
     * In styled mode, the labels are styled by the
     * `.highcharts-plot-line-label` class.
     */
-  var style: js.UndefOr[CSSObject] = js.undefined
+  var style: js.UndefOr[CSSObject] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The text itself. A subset of HTML is
     * supported.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The text alignment for the label. While
     * `align` determines where the texts anchor point is placed within the plot
@@ -40,54 +41,86 @@ trait NavigatorYAxisPlotLinesLabelOptions extends js.Object {
     * point. Possible values are "left", "center" and "right". Defaults to the
     * same as the `align` option.
     */
-  var textAlign: js.UndefOr[AlignValue] = js.undefined
+  var textAlign: js.UndefOr[AlignValue] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Whether to use HTML to render the labels.
     */
-  var useHTML: js.UndefOr[Boolean] = js.undefined
+  var useHTML: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Vertical alignment of the label relative
     * to the plot line. Can be one of "top", "middle" or "bottom".
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Horizontal position relative the
     * alignment. Default varies by orientation.
     */
-  var x: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Vertical position of the text baseline
     * relative to the alignment. Default varies by orientation.
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.native
 }
 
 object NavigatorYAxisPlotLinesLabelOptions {
   @scala.inline
-  def apply(
-    align: AlignValue = null,
-    formatter: FormatterCallbackFunction[PlotLineOrBand] = null,
-    rotation: js.UndefOr[Double] = js.undefined,
-    style: CSSObject = null,
-    text: String = null,
-    textAlign: AlignValue = null,
-    useHTML: js.UndefOr[Boolean] = js.undefined,
-    verticalAlign: VerticalAlignValue = null,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): NavigatorYAxisPlotLinesLabelOptions = {
+  def apply(): NavigatorYAxisPlotLinesLabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.get.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorYAxisPlotLinesLabelOptions]
   }
+  @scala.inline
+  implicit class NavigatorYAxisPlotLinesLabelOptionsOps[Self <: NavigatorYAxisPlotLinesLabelOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: AlignValue): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setFormatter(value: FormatterCallbackFunction[PlotLineOrBand]): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextAlign(value: AlignValue): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    @scala.inline
+    def setUseHTML(value: Boolean): Self = this.set("useHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHTML: Self = this.set("useHTML", js.undefined)
+    @scala.inline
+    def setVerticalAlign(value: VerticalAlignValue): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

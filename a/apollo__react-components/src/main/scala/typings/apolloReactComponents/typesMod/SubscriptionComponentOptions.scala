@@ -1,9 +1,6 @@
 package typings.apolloReactComponents.typesMod
 
-import typings.apolloClient.mod.default
-import typings.apolloClient.watchQueryOptionsMod.FetchPolicy
 import typings.apolloReactCommon.typesMod.BaseSubscriptionOptions
-import typings.apolloReactCommon.typesMod.OnSubscriptionDataOptions
 import typings.apolloReactCommon.typesMod.SubscriptionResult
 import typings.graphql.astMod.DocumentNode
 import typings.react.mod.global.JSX.Element
@@ -11,34 +8,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubscriptionComponentOptions[TData, TVariables] extends BaseSubscriptionOptions[TData, TVariables] {
-  var children: js.UndefOr[Null | (js.Function1[/* result */ SubscriptionResult[TData], Element | Null])] = js.undefined
-  var subscription: DocumentNode
+  var children: js.UndefOr[Null | (js.Function1[/* result */ SubscriptionResult[TData], Element | Null])] = js.native
+  var subscription: DocumentNode = js.native
 }
 
 object SubscriptionComponentOptions {
   @scala.inline
-  def apply[TData, TVariables](
-    subscription: DocumentNode,
-    children: js.UndefOr[Null | (/* result */ SubscriptionResult[TData] => Element | Null)] = js.undefined,
-    client: default[js.Object] = null,
-    fetchPolicy: FetchPolicy = null,
-    onSubscriptionComplete: () => Unit = null,
-    onSubscriptionData: /* options */ OnSubscriptionDataOptions[TData] => _ = null,
-    shouldResubscribe: Boolean | (js.Function1[/* options */ BaseSubscriptionOptions[TData, TVariables], Boolean]) = null,
-    skip: js.UndefOr[Boolean] = js.undefined,
-    variables: TVariables = null
-  ): SubscriptionComponentOptions[TData, TVariables] = {
+  def apply[TData, TVariables](subscription: DocumentNode): SubscriptionComponentOptions[TData, TVariables] = {
     val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(children)) __obj.updateDynamic("children")(if (children != null) js.Any.fromFunction1(children.asInstanceOf[/* result */ SubscriptionResult[TData] => Element | Null]) else null)
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
-    if (onSubscriptionComplete != null) __obj.updateDynamic("onSubscriptionComplete")(js.Any.fromFunction0(onSubscriptionComplete))
-    if (onSubscriptionData != null) __obj.updateDynamic("onSubscriptionData")(js.Any.fromFunction1(onSubscriptionData))
-    if (shouldResubscribe != null) __obj.updateDynamic("shouldResubscribe")(shouldResubscribe.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionComponentOptions[TData, TVariables]]
   }
+  @scala.inline
+  implicit class SubscriptionComponentOptionsOps[Self <: SubscriptionComponentOptions[_, _], TData, TVariables] (val x: Self with (SubscriptionComponentOptions[TData, TVariables])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubscription(value: DocumentNode): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChildren(value: /* result */ SubscriptionResult[TData] => Element | Null): Self = this.set("children", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setChildrenNull: Self = this.set("children", null)
+  }
+  
 }
 

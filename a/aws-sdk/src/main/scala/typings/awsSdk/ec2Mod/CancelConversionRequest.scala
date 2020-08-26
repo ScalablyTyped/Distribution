@@ -22,15 +22,32 @@ trait CancelConversionRequest extends js.Object {
 
 object CancelConversionRequest {
   @scala.inline
-  def apply(
-    ConversionTaskId: ConversionTaskId,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    ReasonMessage: String = null
-  ): CancelConversionRequest = {
+  def apply(ConversionTaskId: ConversionTaskId): CancelConversionRequest = {
     val __obj = js.Dynamic.literal(ConversionTaskId = ConversionTaskId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (ReasonMessage != null) __obj.updateDynamic("ReasonMessage")(ReasonMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelConversionRequest]
   }
+  @scala.inline
+  implicit class CancelConversionRequestOps[Self <: CancelConversionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConversionTaskId(value: ConversionTaskId): Self = this.set("ConversionTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setReasonMessage(value: String): Self = this.set("ReasonMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonMessage: Self = this.set("ReasonMessage", js.undefined)
+  }
+  
 }
 

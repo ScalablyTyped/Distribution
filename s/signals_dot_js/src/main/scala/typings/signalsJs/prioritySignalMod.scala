@@ -56,6 +56,7 @@ object prioritySignalMod extends js.Object {
       */
     def addWithPriority(listener: js.Function, priority: Double): ISlot = js.native
     /* protected */ def registerListenerWithPriority(listener: js.Function): ISlot = js.native
+    /* protected */ def registerListenerWithPriority(listener: js.Function, once: js.UndefOr[scala.Nothing], priority: Double): ISlot = js.native
     /* protected */ def registerListenerWithPriority(listener: js.Function, once: Boolean): ISlot = js.native
     /* protected */ def registerListenerWithPriority(listener: js.Function, once: Boolean, priority: Double): ISlot = js.native
   }

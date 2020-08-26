@@ -22,5 +22,22 @@ object UpdateServiceSettingRequest {
     val __obj = js.Dynamic.literal(SettingId = SettingId.asInstanceOf[js.Any], SettingValue = SettingValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServiceSettingRequest]
   }
+  @scala.inline
+  implicit class UpdateServiceSettingRequestOps[Self <: UpdateServiceSettingRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSettingId(value: ServiceSettingId): Self = this.set("SettingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSettingValue(value: ServiceSettingValue): Self = this.set("SettingValue", value.asInstanceOf[js.Any])
+  }
+  
 }
 

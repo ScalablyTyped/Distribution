@@ -14,10 +14,26 @@ trait Snapshot extends js.Object {
 
 object Snapshot {
   @scala.inline
-  def apply(SnapshotTime: Timestamp = null): Snapshot = {
+  def apply(): Snapshot = {
     val __obj = js.Dynamic.literal()
-    if (SnapshotTime != null) __obj.updateDynamic("SnapshotTime")(SnapshotTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }
+  @scala.inline
+  implicit class SnapshotOps[Self <: Snapshot] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshotTime(value: Timestamp): Self = this.set("SnapshotTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotTime: Self = this.set("SnapshotTime", js.undefined)
+  }
+  
 }
 

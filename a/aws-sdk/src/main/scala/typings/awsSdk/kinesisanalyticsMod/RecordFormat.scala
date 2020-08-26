@@ -18,10 +18,28 @@ trait RecordFormat extends js.Object {
 
 object RecordFormat {
   @scala.inline
-  def apply(RecordFormatType: RecordFormatType, MappingParameters: MappingParameters = null): RecordFormat = {
+  def apply(RecordFormatType: RecordFormatType): RecordFormat = {
     val __obj = js.Dynamic.literal(RecordFormatType = RecordFormatType.asInstanceOf[js.Any])
-    if (MappingParameters != null) __obj.updateDynamic("MappingParameters")(MappingParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordFormat]
   }
+  @scala.inline
+  implicit class RecordFormatOps[Self <: RecordFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecordFormatType(value: RecordFormatType): Self = this.set("RecordFormatType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMappingParameters(value: MappingParameters): Self = this.set("MappingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMappingParameters: Self = this.set("MappingParameters", js.undefined)
+  }
+  
 }
 

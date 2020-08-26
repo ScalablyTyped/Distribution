@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ILockConstraintOptions extends js.Object {
-  var maxForce: js.UndefOr[Double] = js.undefined
+  var maxForce: js.UndefOr[Double] = js.native
 }
 
 object ILockConstraintOptions {
   @scala.inline
-  def apply(maxForce: js.UndefOr[Double] = js.undefined): ILockConstraintOptions = {
+  def apply(): ILockConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxForce)) __obj.updateDynamic("maxForce")(maxForce.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILockConstraintOptions]
   }
+  @scala.inline
+  implicit class ILockConstraintOptionsOps[Self <: ILockConstraintOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxForce(value: Double): Self = this.set("maxForce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxForce: Self = this.set("maxForce", js.undefined)
+  }
+  
 }
 

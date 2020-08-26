@@ -5,33 +5,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Mode extends js.Object {
-  var charmap: js.UndefOr[CharMap_ | Null] = js.undefined
-  var lower: js.UndefOr[Boolean | Null] = js.undefined
-  var multicharmap: js.UndefOr[CharMap_ | Null] = js.undefined
-  var remove: js.UndefOr[RegExp | Null] = js.undefined
-  var replacement: js.UndefOr[String | Null] = js.undefined
-  var symbols: js.UndefOr[Boolean | Null] = js.undefined
+  var charmap: js.UndefOr[CharMap_ | Null] = js.native
+  var lower: js.UndefOr[Boolean | Null] = js.native
+  var multicharmap: js.UndefOr[CharMap_ | Null] = js.native
+  var remove: js.UndefOr[RegExp | Null] = js.native
+  var replacement: js.UndefOr[String | Null] = js.native
+  var symbols: js.UndefOr[Boolean | Null] = js.native
 }
 
 object Mode {
   @scala.inline
-  def apply(
-    charmap: js.UndefOr[Null | CharMap_] = js.undefined,
-    lower: js.UndefOr[Null | Boolean] = js.undefined,
-    multicharmap: js.UndefOr[Null | CharMap_] = js.undefined,
-    remove: js.UndefOr[Null | RegExp] = js.undefined,
-    replacement: js.UndefOr[Null | String] = js.undefined,
-    symbols: js.UndefOr[Null | Boolean] = js.undefined
-  ): Mode = {
+  def apply(): Mode = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(charmap)) __obj.updateDynamic("charmap")(charmap.asInstanceOf[js.Any])
-    if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower.asInstanceOf[js.Any])
-    if (!js.isUndefined(multicharmap)) __obj.updateDynamic("multicharmap")(multicharmap.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (!js.isUndefined(replacement)) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mode]
   }
+  @scala.inline
+  implicit class ModeOps[Self <: Mode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCharmap(value: CharMap_): Self = this.set("charmap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharmap: Self = this.set("charmap", js.undefined)
+    @scala.inline
+    def setCharmapNull: Self = this.set("charmap", null)
+    @scala.inline
+    def setLower(value: Boolean): Self = this.set("lower", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLower: Self = this.set("lower", js.undefined)
+    @scala.inline
+    def setLowerNull: Self = this.set("lower", null)
+    @scala.inline
+    def setMulticharmap(value: CharMap_): Self = this.set("multicharmap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMulticharmap: Self = this.set("multicharmap", js.undefined)
+    @scala.inline
+    def setMulticharmapNull: Self = this.set("multicharmap", null)
+    @scala.inline
+    def setRemove(value: RegExp): Self = this.set("remove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setRemoveNull: Self = this.set("remove", null)
+    @scala.inline
+    def setReplacement(value: String): Self = this.set("replacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplacement: Self = this.set("replacement", js.undefined)
+    @scala.inline
+    def setReplacementNull: Self = this.set("replacement", null)
+    @scala.inline
+    def setSymbols(value: Boolean): Self = this.set("symbols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbols: Self = this.set("symbols", js.undefined)
+    @scala.inline
+    def setSymbolsNull: Self = this.set("symbols", null)
+  }
+  
 }
 

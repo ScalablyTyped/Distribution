@@ -17,7 +17,7 @@ class ^[Q /* <: BaseQuad */] ()
   extends Transform
      with Stream[Q] {
   def this(graph: QuadGraph) = this()
-  def this(graph: QuadGraph, options: TripleToQuadTransformOptions) = this()
+  def this(graph: js.UndefOr[QuadGraph], options: TripleToQuadTransformOptions) = this()
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */

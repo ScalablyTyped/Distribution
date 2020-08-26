@@ -9,6 +9,9 @@ object ddTraceStrings {
   sealed trait _dd1DotsrDoteausr extends js.Object
   
   @js.native
+  sealed trait _ddDotmeasured extends js.Object
+  
+  @js.native
   sealed trait agent extends js.Object
   
   @js.native
@@ -19,6 +22,12 @@ object ddTraceStrings {
   
   @js.native
   sealed trait async_hooks extends js.Object
+  
+  @js.native
+  sealed trait async_local_storage extends js.Object
+  
+  @js.native
+  sealed trait `aws-sdk` extends js.Object
   
   @js.native
   sealed trait bluebird extends js.Object
@@ -129,6 +138,9 @@ object ddTraceStrings {
   sealed trait memcached extends js.Object
   
   @js.native
+  sealed trait `microgateway-core` extends js.Object
+  
+  @js.native
   sealed trait `mongodb-core` extends js.Object
   
   @js.native
@@ -209,6 +221,8 @@ object ddTraceStrings {
   @scala.inline
   def _dd1DotsrDoteausr: _dd1DotsrDoteausr = "_dd1.sr.eausr".asInstanceOf[_dd1DotsrDoteausr]
   @scala.inline
+  def _ddDotmeasured: _ddDotmeasured = "_dd.measured".asInstanceOf[_ddDotmeasured]
+  @scala.inline
   def agent: agent = "agent".asInstanceOf[agent]
   @scala.inline
   def amqp10: amqp10 = "amqp10".asInstanceOf[amqp10]
@@ -216,6 +230,10 @@ object ddTraceStrings {
   def amqplib: amqplib = "amqplib".asInstanceOf[amqplib]
   @scala.inline
   def async_hooks: async_hooks = "async_hooks".asInstanceOf[async_hooks]
+  @scala.inline
+  def async_local_storage: async_local_storage = "async_local_storage".asInstanceOf[async_local_storage]
+  @scala.inline
+  def `aws-sdk`: `aws-sdk` = "aws-sdk".asInstanceOf[`aws-sdk`]
   @scala.inline
   def bluebird: bluebird = "bluebird".asInstanceOf[bluebird]
   @scala.inline
@@ -288,6 +306,8 @@ object ddTraceStrings {
   def manualDotkeep: manualDotkeep = "manual.keep".asInstanceOf[manualDotkeep]
   @scala.inline
   def memcached: memcached = "memcached".asInstanceOf[memcached]
+  @scala.inline
+  def `microgateway-core`: `microgateway-core` = "microgateway-core".asInstanceOf[`microgateway-core`]
   @scala.inline
   def `mongodb-core`: `mongodb-core` = "mongodb-core".asInstanceOf[`mongodb-core`]
   @scala.inline

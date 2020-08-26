@@ -31,16 +31,36 @@ trait SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse extends js.Obje
 
 object SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse {
   @scala.inline
-  def apply(
-    bindings: js.Array[SchemaGoogleCloudServicebrokerV1alpha1Binding] = null,
-    description: String = null,
-    nextPageToken: String = null
-  ): SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse = {
+  def apply(): SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponseOps[Self <: SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBindingsVarargs(value: SchemaGoogleCloudServicebrokerV1alpha1Binding*): Self = this.set("bindings", js.Array(value :_*))
+    @scala.inline
+    def setBindings(value: js.Array[SchemaGoogleCloudServicebrokerV1alpha1Binding]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindings: Self = this.set("bindings", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

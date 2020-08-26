@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("class-validator/metadata/MetadataStorage", JSImport.Namespace)
+@JSImport("class-validator/types/metadata/MetadataStorage", JSImport.Namespace)
 @js.native
 object metadataStorageMod extends js.Object {
   @js.native
@@ -43,5 +43,6 @@ object metadataStorageMod extends js.Object {
     def groupByPropertyName(metadata: js.Array[ValidationMetadata]): StringDictionary[js.Array[ValidationMetadata]] = js.native
   }
   
+  def getMetadataStorage(): MetadataStorage = js.native
 }
 

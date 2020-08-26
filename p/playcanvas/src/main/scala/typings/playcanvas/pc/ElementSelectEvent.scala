@@ -12,11 +12,12 @@ import scala.scalajs.js.annotation._
   * @param camera - The CameraComponent that this event was originally raised via.
   * @param inputSource - The XR input source that this event was originally raised from.
   */
+@js.native
 trait ElementSelectEvent extends ElementInputEvent {
   /**
     * The XR input source that this event was originally raised from.
     */
-  var inputSource: XrInputSource
+  var inputSource: XrInputSource = js.native
 }
 
 object ElementSelectEvent {
@@ -31,5 +32,20 @@ object ElementSelectEvent {
     val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], inputSource = inputSource.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation))
     __obj.asInstanceOf[ElementSelectEvent]
   }
+  @scala.inline
+  implicit class ElementSelectEventOps[Self <: ElementSelectEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputSource(value: XrInputSource): Self = this.set("inputSource", value.asInstanceOf[js.Any])
+  }
+  
 }
 

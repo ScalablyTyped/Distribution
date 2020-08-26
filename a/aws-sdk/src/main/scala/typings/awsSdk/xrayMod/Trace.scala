@@ -22,16 +22,36 @@ trait Trace extends js.Object {
 
 object Trace {
   @scala.inline
-  def apply(
-    Duration: js.UndefOr[NullableDouble] = js.undefined,
-    Id: TraceId = null,
-    Segments: SegmentList = null
-  ): Trace = {
+  def apply(): Trace = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Segments != null) __obj.updateDynamic("Segments")(Segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trace]
   }
+  @scala.inline
+  implicit class TraceOps[Self <: Trace] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: NullableDouble): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setId(value: TraceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setSegmentsVarargs(value: Segment*): Self = this.set("Segments", js.Array(value :_*))
+    @scala.inline
+    def setSegments(value: SegmentList): Self = this.set("Segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegments: Self = this.set("Segments", js.undefined)
+  }
+  
 }
 

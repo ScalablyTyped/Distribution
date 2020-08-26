@@ -7,39 +7,46 @@ import scala.scalajs.js.annotation._
 /**
   * Stage/grade, usually assessed formally
   */
+@js.native
 trait ConditionStage extends BackboneElement {
   /**
     * Formal record of assessment
     */
-  var assessment: js.UndefOr[js.Array[Reference]] = js.undefined
+  var assessment: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Simple summary (disease specific)
     */
-  var summary: js.UndefOr[CodeableConcept] = js.undefined
+  var summary: js.UndefOr[CodeableConcept] = js.native
 }
 
 object ConditionStage {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    assessment: js.Array[Reference] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    summary: CodeableConcept = null
-  ): ConditionStage = {
+  def apply(): ConditionStage = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (assessment != null) __obj.updateDynamic("assessment")(assessment.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionStage]
   }
+  @scala.inline
+  implicit class ConditionStageOps[Self <: ConditionStage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssessmentVarargs(value: Reference*): Self = this.set("assessment", js.Array(value :_*))
+    @scala.inline
+    def setAssessment(value: js.Array[Reference]): Self = this.set("assessment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssessment: Self = this.set("assessment", js.undefined)
+    @scala.inline
+    def setSummary(value: CodeableConcept): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+  }
+  
 }
 

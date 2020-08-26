@@ -26,15 +26,32 @@ trait AttachNetworkInterfaceRequest extends js.Object {
 
 object AttachNetworkInterfaceRequest {
   @scala.inline
-  def apply(
-    DeviceIndex: Integer,
-    InstanceId: InstanceId,
-    NetworkInterfaceId: NetworkInterfaceId,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): AttachNetworkInterfaceRequest = {
+  def apply(DeviceIndex: Integer, InstanceId: InstanceId, NetworkInterfaceId: NetworkInterfaceId): AttachNetworkInterfaceRequest = {
     val __obj = js.Dynamic.literal(DeviceIndex = DeviceIndex.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachNetworkInterfaceRequest]
   }
+  @scala.inline
+  implicit class AttachNetworkInterfaceRequestOps[Self <: AttachNetworkInterfaceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceIndex(value: Integer): Self = this.set("DeviceIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

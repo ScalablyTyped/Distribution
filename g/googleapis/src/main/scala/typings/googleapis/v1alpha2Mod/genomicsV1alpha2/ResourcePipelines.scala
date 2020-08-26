@@ -84,6 +84,7 @@ class ResourcePipelines protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaPipeline] = js.native
   def create(callback: BodyResponseCallback[SchemaPipeline]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPipeline] = js.native
   def create(params: ParamsResourcePipelinesCreate): GaxiosPromise[SchemaPipeline] = js.native
   def create(params: ParamsResourcePipelinesCreate, callback: BodyResponseCallback[SchemaPipeline]): Unit = js.native
   def create(
@@ -164,6 +165,7 @@ class ResourcePipelines protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourcePipelinesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourcePipelinesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -246,6 +248,7 @@ class ResourcePipelines protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPipeline] = js.native
   def get(callback: BodyResponseCallback[SchemaPipeline]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPipeline] = js.native
   def get(params: ParamsResourcePipelinesGet): GaxiosPromise[SchemaPipeline] = js.native
   def get(params: ParamsResourcePipelinesGet, callback: BodyResponseCallback[SchemaPipeline]): Unit = js.native
   def get(
@@ -323,6 +326,7 @@ class ResourcePipelines protected () extends js.Object {
     */
   def getControllerConfig(): GaxiosPromise[SchemaControllerConfig] = js.native
   def getControllerConfig(callback: BodyResponseCallback[SchemaControllerConfig]): Unit = js.native
+  def getControllerConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaControllerConfig] = js.native
   def getControllerConfig(params: ParamsResourcePipelinesGetcontrollerconfig): GaxiosPromise[SchemaControllerConfig] = js.native
   def getControllerConfig(
     params: ParamsResourcePipelinesGetcontrollerconfig,
@@ -419,6 +423,7 @@ class ResourcePipelines protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListPipelinesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListPipelinesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListPipelinesResponse] = js.native
   def list(params: ParamsResourcePipelinesList): GaxiosPromise[SchemaListPipelinesResponse] = js.native
   def list(params: ParamsResourcePipelinesList, callback: BodyResponseCallback[SchemaListPipelinesResponse]): Unit = js.native
   def list(
@@ -506,6 +511,7 @@ class ResourcePipelines protected () extends js.Object {
     */
   def run(): GaxiosPromise[SchemaOperation] = js.native
   def run(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourcePipelinesRun): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourcePipelinesRun, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def run(
@@ -588,6 +594,7 @@ class ResourcePipelines protected () extends js.Object {
     */
   def setOperationStatus(): GaxiosPromise[SchemaEmpty] = js.native
   def setOperationStatus(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def setOperationStatus(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def setOperationStatus(params: ParamsResourcePipelinesSetoperationstatus): GaxiosPromise[SchemaEmpty] = js.native
   def setOperationStatus(params: ParamsResourcePipelinesSetoperationstatus, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def setOperationStatus(

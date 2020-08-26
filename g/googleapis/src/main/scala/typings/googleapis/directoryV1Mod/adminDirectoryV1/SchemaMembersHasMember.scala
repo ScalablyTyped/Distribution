@@ -18,10 +18,26 @@ trait SchemaMembersHasMember extends js.Object {
 
 object SchemaMembersHasMember {
   @scala.inline
-  def apply(isMember: js.UndefOr[Boolean] = js.undefined): SchemaMembersHasMember = {
+  def apply(): SchemaMembersHasMember = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isMember)) __obj.updateDynamic("isMember")(isMember.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMembersHasMember]
   }
+  @scala.inline
+  implicit class SchemaMembersHasMemberOps[Self <: SchemaMembersHasMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsMember(value: Boolean): Self = this.set("isMember", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMember: Self = this.set("isMember", js.undefined)
+  }
+  
 }
 

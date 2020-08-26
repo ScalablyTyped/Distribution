@@ -13,6 +13,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait InAppBrowser extends Window {
+  /**
+    * Adds a listener for an event from the InAppBrowser.
+    * @param type      any custom event that might occur.
+    * @param callback  the function that executes when the event fires. The function is
+    *                  passed an InAppBrowserEvent object as a parameter.
+    */
+  def addEventListener(`type`: String, callback: InAppBrowserEventListenerOrEventListenerObject): Unit = js.native
   // addEventListener overloads
   /**
     * Adds a listener for an event from the InAppBrowser.

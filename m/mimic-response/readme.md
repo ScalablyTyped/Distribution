@@ -1,7 +1,7 @@
 
 # Scala.js typings for mimic-response
 
-Typings are for version 2.1.0
+Typings are for version 3.1.0
 
 ## Library description:
 Mimic a Node.js HTTP response stream
@@ -10,9 +10,9 @@ Mimic a Node.js HTTP response stream
 | ------------------ | :-------------: |
 | Full name          | mimic-response |
 | Keywords           | mimic, response, stream, http, https, request, get, core |
-| # releases         | 2 |
-| # dependents       | 18 |
-| # downloads        | 139664809 |
+| # releases         | 6 |
+| # dependents       | 21 |
+| # downloads        | 210142607 |
 | # stars            | 0 |
 
 ## Links

@@ -22,10 +22,8 @@ abstract class ConditionallyVisibleWidget protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FConditionallyVisibleWidget: IModel = js.native
-  def conditionalVisibilitySettings(): js.Any = js.native
-  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
-  @JSName("conditionalVisibilitySettings")
-  def conditionalVisibilitySettings_Union: ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings_=(newValue: ConditionalVisibilitySettings | Null): Unit = js.native
 }
 
 /* static members */

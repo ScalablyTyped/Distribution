@@ -30,6 +30,7 @@ class ResourceUrlnotifications protected () extends js.Object {
     */
   def getMetadata(): GaxiosPromise[SchemaUrlNotificationMetadata] = js.native
   def getMetadata(callback: BodyResponseCallback[SchemaUrlNotificationMetadata]): Unit = js.native
+  def getMetadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlNotificationMetadata] = js.native
   def getMetadata(params: ParamsResourceUrlnotificationsGetmetadata): GaxiosPromise[SchemaUrlNotificationMetadata] = js.native
   def getMetadata(
     params: ParamsResourceUrlnotificationsGetmetadata,
@@ -60,6 +61,7 @@ class ResourceUrlnotifications protected () extends js.Object {
     */
   def publish(): GaxiosPromise[SchemaPublishUrlNotificationResponse] = js.native
   def publish(callback: BodyResponseCallback[SchemaPublishUrlNotificationResponse]): Unit = js.native
+  def publish(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPublishUrlNotificationResponse] = js.native
   def publish(params: ParamsResourceUrlnotificationsPublish): GaxiosPromise[SchemaPublishUrlNotificationResponse] = js.native
   def publish(
     params: ParamsResourceUrlnotificationsPublish,

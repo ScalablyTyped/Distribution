@@ -12,7 +12,7 @@ Single component release of modal
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 5 |
-| # downloads        | 44517 |
+| # downloads        | 46003 |
 | # stars            | 0 |
 
 ## Links

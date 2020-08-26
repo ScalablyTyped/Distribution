@@ -22,16 +22,34 @@ trait DeleteDirectConnectGatewayAssociationRequest extends js.Object {
 
 object DeleteDirectConnectGatewayAssociationRequest {
   @scala.inline
-  def apply(
-    associationId: DirectConnectGatewayAssociationId = null,
-    directConnectGatewayId: DirectConnectGatewayId = null,
-    virtualGatewayId: VirtualGatewayId = null
-  ): DeleteDirectConnectGatewayAssociationRequest = {
+  def apply(): DeleteDirectConnectGatewayAssociationRequest = {
     val __obj = js.Dynamic.literal()
-    if (associationId != null) __obj.updateDynamic("associationId")(associationId.asInstanceOf[js.Any])
-    if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (virtualGatewayId != null) __obj.updateDynamic("virtualGatewayId")(virtualGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDirectConnectGatewayAssociationRequest]
   }
+  @scala.inline
+  implicit class DeleteDirectConnectGatewayAssociationRequestOps[Self <: DeleteDirectConnectGatewayAssociationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationId(value: DirectConnectGatewayAssociationId): Self = this.set("associationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("associationId", js.undefined)
+    @scala.inline
+    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = this.set("directConnectGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectConnectGatewayId: Self = this.set("directConnectGatewayId", js.undefined)
+    @scala.inline
+    def setVirtualGatewayId(value: VirtualGatewayId): Self = this.set("virtualGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualGatewayId: Self = this.set("virtualGatewayId", js.undefined)
+  }
+  
 }
 

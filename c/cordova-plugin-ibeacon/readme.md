@@ -10,9 +10,9 @@ Proximity Beacon Monitoring and Transmission Plugin (supporting iBeacons)
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-ibeacon |
 | Keywords           | cordova, ibeacon, beacon, bluetooth, le, ecosystem:cordova, cordova-ios, cordova-android |
-| # releases         | 10 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 13916 |
+| # downloads        | 14366 |
 | # stars            | 1 |
 
 ## Links

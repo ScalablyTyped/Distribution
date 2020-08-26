@@ -25,12 +25,34 @@ trait SchemaErrorHandler extends js.Object {
 
 object SchemaErrorHandler {
   @scala.inline
-  def apply(errorCode: String = null, mimeType: String = null, staticFile: String = null): SchemaErrorHandler = {
+  def apply(): SchemaErrorHandler = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (staticFile != null) __obj.updateDynamic("staticFile")(staticFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaErrorHandler]
   }
+  @scala.inline
+  implicit class SchemaErrorHandlerOps[Self <: SchemaErrorHandler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: String): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    @scala.inline
+    def setStaticFile(value: String): Self = this.set("staticFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticFile: Self = this.set("staticFile", js.undefined)
+  }
+  
 }
 

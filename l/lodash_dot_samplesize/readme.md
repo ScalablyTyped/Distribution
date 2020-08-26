@@ -12,7 +12,7 @@ The lodash method `_.sampleSize` exported as a module.
 | Keywords           | lodash-modularized, samplesize |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 313714 |
+| # downloads        | 333247 |
 | # stars            | 1 |
 
 ## Links

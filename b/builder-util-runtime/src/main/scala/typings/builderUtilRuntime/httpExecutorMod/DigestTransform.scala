@@ -14,6 +14,9 @@ import scala.scalajs.js.annotation._
 class DigestTransform protected () extends Transform {
   def this(expected: String) = this()
   def this(expected: String, algorithm: String) = this()
+  def this(expected: String, algorithm: js.UndefOr[scala.Nothing], encoding: base64) = this()
+  def this(expected: String, algorithm: js.UndefOr[scala.Nothing], encoding: hex) = this()
+  def this(expected: String, algorithm: js.UndefOr[scala.Nothing], encoding: latin1) = this()
   def this(expected: String, algorithm: String, encoding: base64) = this()
   def this(expected: String, algorithm: String, encoding: hex) = this()
   def this(expected: String, algorithm: String, encoding: latin1) = this()

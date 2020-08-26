@@ -67,6 +67,11 @@ trait Categories extends js.Object {
     *                 type `Office.AsyncResult`. If adding categories fails, the `asyncResult.error` property will contain an error code.
     */
   def addAsync(categories: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def addAsync(
+    categories: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addAsync(categories: js.Array[String], options: AsyncContextOptions): Unit = js.native
   def addAsync(
     categories: js.Array[String],
@@ -142,6 +147,11 @@ trait Categories extends js.Object {
     *                 type `Office.AsyncResult`. If removing categories fails, the `asyncResult.error` property will contain an error code.
     */
   def removeAsync(categories: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeAsync(
+    categories: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeAsync(categories: js.Array[String], options: AsyncContextOptions): Unit = js.native
   def removeAsync(
     categories: js.Array[String],

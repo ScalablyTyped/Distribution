@@ -31,22 +31,46 @@ trait RDSMetadata extends js.Object {
 
 object RDSMetadata {
   @scala.inline
-  def apply(
-    DataPipelineId: EDPPipelineId = null,
-    Database: RDSDatabase = null,
-    DatabaseUserName: RDSDatabaseUsername = null,
-    ResourceRole: EDPResourceRole = null,
-    SelectSqlQuery: RDSSelectSqlQuery = null,
-    ServiceRole: EDPServiceRole = null
-  ): RDSMetadata = {
+  def apply(): RDSMetadata = {
     val __obj = js.Dynamic.literal()
-    if (DataPipelineId != null) __obj.updateDynamic("DataPipelineId")(DataPipelineId.asInstanceOf[js.Any])
-    if (Database != null) __obj.updateDynamic("Database")(Database.asInstanceOf[js.Any])
-    if (DatabaseUserName != null) __obj.updateDynamic("DatabaseUserName")(DatabaseUserName.asInstanceOf[js.Any])
-    if (ResourceRole != null) __obj.updateDynamic("ResourceRole")(ResourceRole.asInstanceOf[js.Any])
-    if (SelectSqlQuery != null) __obj.updateDynamic("SelectSqlQuery")(SelectSqlQuery.asInstanceOf[js.Any])
-    if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[RDSMetadata]
   }
+  @scala.inline
+  implicit class RDSMetadataOps[Self <: RDSMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataPipelineId(value: EDPPipelineId): Self = this.set("DataPipelineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataPipelineId: Self = this.set("DataPipelineId", js.undefined)
+    @scala.inline
+    def setDatabase(value: RDSDatabase): Self = this.set("Database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabase: Self = this.set("Database", js.undefined)
+    @scala.inline
+    def setDatabaseUserName(value: RDSDatabaseUsername): Self = this.set("DatabaseUserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseUserName: Self = this.set("DatabaseUserName", js.undefined)
+    @scala.inline
+    def setResourceRole(value: EDPResourceRole): Self = this.set("ResourceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRole: Self = this.set("ResourceRole", js.undefined)
+    @scala.inline
+    def setSelectSqlQuery(value: RDSSelectSqlQuery): Self = this.set("SelectSqlQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectSqlQuery: Self = this.set("SelectSqlQuery", js.undefined)
+    @scala.inline
+    def setServiceRole(value: EDPServiceRole): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
+  }
+  
 }
 

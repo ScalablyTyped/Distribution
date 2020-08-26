@@ -25,30 +25,59 @@ trait CreateAgentRequest extends js.Object {
   /**
     * The key-value pair that represents the tag that you want to associate with the agent. The value can be an empty string. This value helps you manage, filter, and search for your agents.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @.  
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[InputTagList] = js.native
   /**
-    * The ID of the VPC (Virtual Private Cloud) endpoint that the agent has access to. This is the client-side VPC endpoint, also called a PrivateLink. If you don't have a PrivateLink VPC endpoint, see Creating a VPC Endpoint Service Configuration in the AWS VPC User Guide. VPC endpoint ID looks like this: vpce-01234d5aff67890e1.
+    * The ID of the VPC (virtual private cloud) endpoint that the agent has access to. This is the client-side VPC endpoint, also called a PrivateLink. If you don't have a PrivateLink VPC endpoint, see Creating a VPC Endpoint Service Configuration in the Amazon VPC User Guide. VPC endpoint ID looks like this: vpce-01234d5aff67890e1.
     */
   var VpcEndpointId: js.UndefOr[typings.awsSdk.datasyncMod.VpcEndpointId] = js.native
 }
 
 object CreateAgentRequest {
   @scala.inline
-  def apply(
-    ActivationKey: ActivationKey,
-    AgentName: TagValue = null,
-    SecurityGroupArns: PLSecurityGroupArnList = null,
-    SubnetArns: PLSubnetArnList = null,
-    Tags: TagList = null,
-    VpcEndpointId: VpcEndpointId = null
-  ): CreateAgentRequest = {
+  def apply(ActivationKey: ActivationKey): CreateAgentRequest = {
     val __obj = js.Dynamic.literal(ActivationKey = ActivationKey.asInstanceOf[js.Any])
-    if (AgentName != null) __obj.updateDynamic("AgentName")(AgentName.asInstanceOf[js.Any])
-    if (SecurityGroupArns != null) __obj.updateDynamic("SecurityGroupArns")(SecurityGroupArns.asInstanceOf[js.Any])
-    if (SubnetArns != null) __obj.updateDynamic("SubnetArns")(SubnetArns.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcEndpointId != null) __obj.updateDynamic("VpcEndpointId")(VpcEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAgentRequest]
   }
+  @scala.inline
+  implicit class CreateAgentRequestOps[Self <: CreateAgentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivationKey(value: ActivationKey): Self = this.set("ActivationKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAgentName(value: TagValue): Self = this.set("AgentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentName: Self = this.set("AgentName", js.undefined)
+    @scala.inline
+    def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = this.set("SecurityGroupArns", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupArns(value: PLSecurityGroupArnList): Self = this.set("SecurityGroupArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupArns: Self = this.set("SecurityGroupArns", js.undefined)
+    @scala.inline
+    def setSubnetArnsVarargs(value: Ec2SubnetArn*): Self = this.set("SubnetArns", js.Array(value :_*))
+    @scala.inline
+    def setSubnetArns(value: PLSubnetArnList): Self = this.set("SubnetArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetArns: Self = this.set("SubnetArns", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: TagListEntry*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: InputTagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcEndpointId(value: VpcEndpointId): Self = this.set("VpcEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcEndpointId: Self = this.set("VpcEndpointId", js.undefined)
+  }
+  
 }
 

@@ -27,6 +27,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceSettingsSearchapplicationsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(
     params: ParamsResourceSettingsSearchapplicationsCreate,
@@ -58,6 +59,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceSettingsSearchapplicationsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceSettingsSearchapplicationsDelete,
@@ -89,6 +91,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSearchApplication] = js.native
   def get(callback: BodyResponseCallback[SchemaSearchApplication]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchApplication] = js.native
   def get(params: ParamsResourceSettingsSearchapplicationsGet): GaxiosPromise[SchemaSearchApplication] = js.native
   def get(
     params: ParamsResourceSettingsSearchapplicationsGet,
@@ -121,6 +124,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListSearchApplicationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSearchApplicationsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSearchApplicationsResponse] = js.native
   def list(params: ParamsResourceSettingsSearchapplicationsList): GaxiosPromise[SchemaListSearchApplicationsResponse] = js.native
   def list(
     params: ParamsResourceSettingsSearchapplicationsList,
@@ -153,6 +157,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     */
   def reset(): GaxiosPromise[SchemaOperation] = js.native
   def reset(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def reset(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def reset(params: ParamsResourceSettingsSearchapplicationsReset): GaxiosPromise[SchemaOperation] = js.native
   def reset(
     params: ParamsResourceSettingsSearchapplicationsReset,
@@ -184,6 +189,7 @@ class ResourceSettingsSearchapplications protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceSettingsSearchapplicationsUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(
     params: ParamsResourceSettingsSearchapplicationsUpdate,

@@ -24,14 +24,34 @@ trait SchemaBatchEnableServicesResponse extends js.Object {
 
 object SchemaBatchEnableServicesResponse {
   @scala.inline
-  def apply(
-    failures: js.Array[SchemaEnableFailure] = null,
-    services: js.Array[SchemaGoogleApiServiceusageV1Service] = null
-  ): SchemaBatchEnableServicesResponse = {
+  def apply(): SchemaBatchEnableServicesResponse = {
     val __obj = js.Dynamic.literal()
-    if (failures != null) __obj.updateDynamic("failures")(failures.asInstanceOf[js.Any])
-    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchEnableServicesResponse]
   }
+  @scala.inline
+  implicit class SchemaBatchEnableServicesResponseOps[Self <: SchemaBatchEnableServicesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailuresVarargs(value: SchemaEnableFailure*): Self = this.set("failures", js.Array(value :_*))
+    @scala.inline
+    def setFailures(value: js.Array[SchemaEnableFailure]): Self = this.set("failures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailures: Self = this.set("failures", js.undefined)
+    @scala.inline
+    def setServicesVarargs(value: SchemaGoogleApiServiceusageV1Service*): Self = this.set("services", js.Array(value :_*))
+    @scala.inline
+    def setServices(value: js.Array[SchemaGoogleApiServiceusageV1Service]): Self = this.set("services", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServices: Self = this.set("services", js.undefined)
+  }
+  
 }
 

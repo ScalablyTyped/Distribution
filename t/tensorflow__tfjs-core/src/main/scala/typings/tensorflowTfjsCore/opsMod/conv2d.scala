@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsCore.opsMod
 
+import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.tensorMod.Tensor3D
 import typings.tensorflowTfjsCore.tensorMod.Tensor4D
@@ -18,31 +19,12 @@ object conv2d extends js.Object {
     x: T | TensorLike,
     filter: Tensor4D | TensorLike,
     strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    filter: Tensor4D | TensorLike,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double,
-    dataFormat: NHWC | NCHW
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    filter: Tensor4D | TensorLike,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double,
-    dataFormat: NHWC | NCHW,
-    dilations: (js.Tuple2[Double, Double]) | Double
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    filter: Tensor4D | TensorLike,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double,
-    dataFormat: NHWC | NCHW,
-    dilations: (js.Tuple2[Double, Double]) | Double,
-    dimRoundingMode: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor | typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round | typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ceil
+    pad: valid_ | same_ | Double | ExplicitPadding,
+    dataFormat: js.UndefOr[NHWC | NCHW],
+    dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+    dimRoundingMode: js.UndefOr[
+      typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor | typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round | typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ceil
+    ]
   ): T = js.native
 }
 

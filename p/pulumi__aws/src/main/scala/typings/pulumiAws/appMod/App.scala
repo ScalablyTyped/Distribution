@@ -25,6 +25,7 @@ class App protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: AppArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AppArgs, opts: CustomResourceOptions) = this()
   /**
     * The Application ID of the Pinpoint App.
@@ -55,9 +56,9 @@ class App protected () extends CustomResource {
     */
   val quietTime: Output_[js.UndefOr[AppQuietTime]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -71,8 +72,10 @@ object App extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): App = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): App = js.native
   def get(name: String, id: Input[ID], state: AppState): App = js.native
   def get(name: String, id: Input[ID], state: AppState, opts: CustomResourceOptions): App = js.native
   /**

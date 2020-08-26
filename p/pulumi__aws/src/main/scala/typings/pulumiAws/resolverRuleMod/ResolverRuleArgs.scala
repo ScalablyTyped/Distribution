@@ -27,9 +27,9 @@ trait ResolverRuleArgs extends js.Object {
     */
   val ruleType: Input[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
     * This argument should only be specified for `FORWARD` type rules.
@@ -39,20 +39,44 @@ trait ResolverRuleArgs extends js.Object {
 
 object ResolverRuleArgs {
   @scala.inline
-  def apply(
-    domainName: Input[String],
-    ruleType: Input[String],
-    name: Input[String] = null,
-    resolverEndpointId: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    targetIps: Input[js.Array[Input[ResolverRuleTargetIp]]] = null
-  ): ResolverRuleArgs = {
+  def apply(domainName: Input[String], ruleType: Input[String]): ResolverRuleArgs = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], ruleType = ruleType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resolverEndpointId != null) __obj.updateDynamic("resolverEndpointId")(resolverEndpointId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (targetIps != null) __obj.updateDynamic("targetIps")(targetIps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverRuleArgs]
   }
+  @scala.inline
+  implicit class ResolverRuleArgsOps[Self <: ResolverRuleArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: Input[String]): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleType(value: Input[String]): Self = this.set("ruleType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResolverEndpointId(value: Input[String]): Self = this.set("resolverEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolverEndpointId: Self = this.set("resolverEndpointId", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTargetIpsVarargs(value: Input[ResolverRuleTargetIp]*): Self = this.set("targetIps", js.Array(value :_*))
+    @scala.inline
+    def setTargetIps(value: Input[js.Array[Input[ResolverRuleTargetIp]]]): Self = this.set("targetIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetIps: Self = this.set("targetIps", js.undefined)
+  }
+  
 }
 

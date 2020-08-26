@@ -18,10 +18,28 @@ trait SchemaTableBorderRow extends js.Object {
 
 object SchemaTableBorderRow {
   @scala.inline
-  def apply(tableBorderCells: js.Array[SchemaTableBorderCell] = null): SchemaTableBorderRow = {
+  def apply(): SchemaTableBorderRow = {
     val __obj = js.Dynamic.literal()
-    if (tableBorderCells != null) __obj.updateDynamic("tableBorderCells")(tableBorderCells.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTableBorderRow]
   }
+  @scala.inline
+  implicit class SchemaTableBorderRowOps[Self <: SchemaTableBorderRow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTableBorderCellsVarargs(value: SchemaTableBorderCell*): Self = this.set("tableBorderCells", js.Array(value :_*))
+    @scala.inline
+    def setTableBorderCells(value: js.Array[SchemaTableBorderCell]): Self = this.set("tableBorderCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableBorderCells: Self = this.set("tableBorderCells", js.undefined)
+  }
+  
 }
 

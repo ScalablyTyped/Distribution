@@ -74,6 +74,7 @@ trait PlusMapsMarker extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def setBubble(): Unit = js.native
+  def setBubble(buuble: js.UndefOr[scala.Nothing], pop: Boolean): Unit = js.native
   def setBubble(buuble: PlusMapsBubble): Unit = js.native
   def setBubble(buuble: PlusMapsBubble, pop: Boolean): Unit = js.native
   /**

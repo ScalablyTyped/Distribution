@@ -22,11 +22,32 @@ trait InvokeDeviceMethodRequest extends js.Object {
 
 object InvokeDeviceMethodRequest {
   @scala.inline
-  def apply(DeviceId: string, DeviceMethod: DeviceMethod = null, DeviceMethodParameters: string = null): InvokeDeviceMethodRequest = {
+  def apply(DeviceId: string): InvokeDeviceMethodRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any])
-    if (DeviceMethod != null) __obj.updateDynamic("DeviceMethod")(DeviceMethod.asInstanceOf[js.Any])
-    if (DeviceMethodParameters != null) __obj.updateDynamic("DeviceMethodParameters")(DeviceMethodParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeDeviceMethodRequest]
   }
+  @scala.inline
+  implicit class InvokeDeviceMethodRequestOps[Self <: InvokeDeviceMethodRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceId(value: string): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeviceMethod(value: DeviceMethod): Self = this.set("DeviceMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceMethod: Self = this.set("DeviceMethod", js.undefined)
+    @scala.inline
+    def setDeviceMethodParameters(value: string): Self = this.set("DeviceMethodParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceMethodParameters: Self = this.set("DeviceMethodParameters", js.undefined)
+  }
+  
 }
 

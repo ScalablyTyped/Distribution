@@ -10,9 +10,9 @@ The official MongoDB driver for Node.js
 | ------------------ | :-------------: |
 | Full name          | mongodb |
 | Keywords           | mongodb, driver, official |
-| # releases         | 53 |
-| # dependents       | 4971 |
-| # downloads        | 60848634 |
+| # releases         | 51 |
+| # dependents       | 5013 |
+| # downloads        | 61746515 |
 | # stars            | 424 |
 
 ## Links

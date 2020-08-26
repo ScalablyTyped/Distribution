@@ -45,20 +45,42 @@ trait SchemaBasicChartSeries extends js.Object {
 
 object SchemaBasicChartSeries {
   @scala.inline
-  def apply(
-    color: SchemaColor = null,
-    lineStyle: SchemaLineStyle = null,
-    series: SchemaChartData = null,
-    targetAxis: String = null,
-    `type`: String = null
-  ): SchemaBasicChartSeries = {
+  def apply(): SchemaBasicChartSeries = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (targetAxis != null) __obj.updateDynamic("targetAxis")(targetAxis.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBasicChartSeries]
   }
+  @scala.inline
+  implicit class SchemaBasicChartSeriesOps[Self <: SchemaBasicChartSeries] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: SchemaColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setLineStyle(value: SchemaLineStyle): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setSeries(value: SchemaChartData): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setTargetAxis(value: String): Self = this.set("targetAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetAxis: Self = this.set("targetAxis", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

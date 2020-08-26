@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Create a new RigidBodyComponentSystem.
   * @property gravity - The world space vector representing global gravity in the physics simulation.
-  Defaults to [0, -9.81, 0] which is an approximation of the gravitational force on Earth.
+  * Defaults to [0, -9.81, 0] which is an approximation of the gravitational force on Earth.
   * @param app - The Application.
   */
 @JSGlobal("pc.RigidBodyComponentSystem")

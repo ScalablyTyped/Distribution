@@ -32,12 +32,34 @@ trait SchemaBigQueryDestination extends js.Object {
 
 object SchemaBigQueryDestination {
   @scala.inline
-  def apply(dataset: String = null, overwriteTable: js.UndefOr[Boolean] = js.undefined, table: String = null): SchemaBigQueryDestination = {
+  def apply(): SchemaBigQueryDestination = {
     val __obj = js.Dynamic.literal()
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteTable)) __obj.updateDynamic("overwriteTable")(overwriteTable.get.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBigQueryDestination]
   }
+  @scala.inline
+  implicit class SchemaBigQueryDestinationOps[Self <: SchemaBigQueryDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataset(value: String): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataset: Self = this.set("dataset", js.undefined)
+    @scala.inline
+    def setOverwriteTable(value: Boolean): Self = this.set("overwriteTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverwriteTable: Self = this.set("overwriteTable", js.undefined)
+    @scala.inline
+    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+  }
+  
 }
 

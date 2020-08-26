@@ -26,16 +26,9 @@ object putKeyPolicyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: PutKeyPolicyInput) = this()
-    /* CompleteClass */
-    override val input: PutKeyPolicyInput = js.native
     val middlewareStack: MiddlewareStack[PutKeyPolicyInput, PutKeyPolicyOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[PutKeyPolicyInput, PutKeyPolicyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[PutKeyPolicyInput, PutKeyPolicyOutput] = js.native
   }

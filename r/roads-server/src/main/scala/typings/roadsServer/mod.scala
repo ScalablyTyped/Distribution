@@ -33,6 +33,7 @@ object mod extends js.Object {
       */
     def this(road: Road) = this()
     def this(road: Road, error_handler: js.Function) = this()
+    def this(road: Road, error_handler: js.UndefOr[scala.Nothing], httpsOptions: ServerOptions) = this()
     def this(road: Road, error_handler: js.Function, httpsOptions: ServerOptions) = this()
   }
   

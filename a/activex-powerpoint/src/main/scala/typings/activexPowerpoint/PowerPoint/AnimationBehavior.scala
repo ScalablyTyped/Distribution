@@ -4,24 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnimationBehavior extends js.Object {
-  var Accumulate: MsoAnimAccumulate
-  var Additive: MsoAnimAdditive
-  val Application: typings.activexPowerpoint.PowerPoint.Application
-  val ColorEffect: typings.activexPowerpoint.PowerPoint.ColorEffect
-  val CommandEffect: typings.activexPowerpoint.PowerPoint.CommandEffect
-  val FilterEffect: typings.activexPowerpoint.PowerPoint.FilterEffect
-  val MotionEffect: typings.activexPowerpoint.PowerPoint.MotionEffect
-  val Parent: js.Any
+  var Accumulate: MsoAnimAccumulate = js.native
+  var Additive: MsoAnimAdditive = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val ColorEffect: typings.activexPowerpoint.PowerPoint.ColorEffect = js.native
+  val CommandEffect: typings.activexPowerpoint.PowerPoint.CommandEffect = js.native
+  val FilterEffect: typings.activexPowerpoint.PowerPoint.FilterEffect = js.native
+  val MotionEffect: typings.activexPowerpoint.PowerPoint.MotionEffect = js.native
+  val Parent: js.Any = js.native
   @JSName("PowerPoint.AnimationBehavior_typekey")
-  var PowerPointDotAnimationBehavior_typekey: AnimationBehavior
-  val PropertyEffect: typings.activexPowerpoint.PowerPoint.PropertyEffect
-  val RotationEffect: typings.activexPowerpoint.PowerPoint.RotationEffect
-  val ScaleEffect: typings.activexPowerpoint.PowerPoint.ScaleEffect
-  val SetEffect: typings.activexPowerpoint.PowerPoint.SetEffect
-  val Timing: typings.activexPowerpoint.PowerPoint.Timing
-  var Type: MsoAnimType
-  def Delete(): Unit
+  var PowerPointDotAnimationBehavior_typekey: AnimationBehavior = js.native
+  val PropertyEffect: typings.activexPowerpoint.PowerPoint.PropertyEffect = js.native
+  val RotationEffect: typings.activexPowerpoint.PowerPoint.RotationEffect = js.native
+  val ScaleEffect: typings.activexPowerpoint.PowerPoint.ScaleEffect = js.native
+  val SetEffect: typings.activexPowerpoint.PowerPoint.SetEffect = js.native
+  val Timing: typings.activexPowerpoint.PowerPoint.Timing = js.native
+  var Type: MsoAnimType = js.native
+  def Delete(): Unit = js.native
 }
 
 object AnimationBehavior {
@@ -48,5 +49,50 @@ object AnimationBehavior {
     __obj.updateDynamic("PowerPoint.AnimationBehavior_typekey")(PowerPointDotAnimationBehavior_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationBehavior]
   }
+  @scala.inline
+  implicit class AnimationBehaviorOps[Self <: AnimationBehavior] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccumulate(value: MsoAnimAccumulate): Self = this.set("Accumulate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditive(value: MsoAnimAdditive): Self = this.set("Additive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColorEffect(value: ColorEffect): Self = this.set("ColorEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommandEffect(value: CommandEffect): Self = this.set("CommandEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFilterEffect(value: FilterEffect): Self = this.set("FilterEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMotionEffect(value: MotionEffect): Self = this.set("MotionEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPowerPointDotAnimationBehavior_typekey(value: AnimationBehavior): Self = this.set("PowerPoint.AnimationBehavior_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPropertyEffect(value: PropertyEffect): Self = this.set("PropertyEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRotationEffect(value: RotationEffect): Self = this.set("RotationEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScaleEffect(value: ScaleEffect): Self = this.set("ScaleEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSetEffect(value: SetEffect): Self = this.set("SetEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTiming(value: Timing): Self = this.set("Timing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: MsoAnimType): Self = this.set("Type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

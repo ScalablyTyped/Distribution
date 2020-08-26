@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SiblingOptions[T /* <: js.Object */] extends js.Object {
   /**
     * Used to constrain the operation to a subtree.
@@ -12,22 +13,43 @@ trait SiblingOptions[T /* <: js.Object */] extends js.Object {
     *
     * @default null
     */
-  var root: js.UndefOr[T | Null] = js.undefined
+  var root: js.UndefOr[T | Null] = js.native
   /**
     * If set, ignore the children of `object`
     *
     * @default false
     */
-  var skipChildren: js.UndefOr[Boolean] = js.undefined
+  var skipChildren: js.UndefOr[Boolean] = js.native
 }
 
 object SiblingOptions {
   @scala.inline
-  def apply[/* <: js.Object */ T](root: js.UndefOr[Null | T] = js.undefined, skipChildren: js.UndefOr[Boolean] = js.undefined): SiblingOptions[T] = {
+  def apply[/* <: js.Object */ T](): SiblingOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipChildren)) __obj.updateDynamic("skipChildren")(skipChildren.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiblingOptions[T]]
   }
+  @scala.inline
+  implicit class SiblingOptionsOps[Self <: SiblingOptions[_], /* <: js.Object */ T] (val x: Self with SiblingOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoot(value: T): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setRootNull: Self = this.set("root", null)
+    @scala.inline
+    def setSkipChildren(value: Boolean): Self = this.set("skipChildren", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipChildren: Self = this.set("skipChildren", js.undefined)
+  }
+  
 }
 

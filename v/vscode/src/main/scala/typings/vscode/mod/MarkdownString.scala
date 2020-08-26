@@ -14,12 +14,17 @@ import scala.scalajs.js.annotation._
   */
 class MarkdownString () extends _MarkedString {
   def this(value: String) = this()
+  def this(value: js.UndefOr[scala.Nothing], supportThemeIcons: Boolean) = this()
   def this(value: String, supportThemeIcons: Boolean) = this()
   /**
     * Indicates that this markdown string is from a trusted source. Only *trusted*
     * markdown supports links that execute commands, e.g. `[Run it](command:myCommandId)`.
     */
   var isTrusted: js.UndefOr[Boolean] = js.native
+  /**
+    * Indicates that this markdown string can contain [ThemeIcons](#ThemeIcon), e.g. `$(zap)`.
+    */
+  val supportThemeIcons: js.UndefOr[Boolean] = js.native
   /**
     * The markdown string.
     */

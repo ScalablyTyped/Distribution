@@ -9,53 +9,72 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IndicesClearCache extends Generic {
-  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
-  var fielddata: js.UndefOr[Boolean] = js.undefined
-  var fields: js.UndefOr[String | js.Array[String]] = js.undefined
-  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
-  var index: js.UndefOr[String | js.Array[String]] = js.undefined
-  var query: js.UndefOr[Boolean] = js.undefined
-  var request: js.UndefOr[Boolean] = js.undefined
+  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var fielddata: js.UndefOr[Boolean] = js.native
+  var fields: js.UndefOr[String | js.Array[String]] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var query: js.UndefOr[Boolean] = js.native
+  var request: js.UndefOr[Boolean] = js.native
 }
 
 object IndicesClearCache {
   @scala.inline
-  def apply(
-    allow_no_indices: js.UndefOr[Boolean] = js.undefined,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    expand_wildcards: open | closed | hidden | none | all = null,
-    fielddata: js.UndefOr[Boolean] = js.undefined,
-    fields: String | js.Array[String] = null,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    ignore_unavailable: js.UndefOr[Boolean] = js.undefined,
-    index: String | js.Array[String] = null,
-    method: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    query: js.UndefOr[Boolean] = js.undefined,
-    request: js.UndefOr[Boolean] = js.undefined,
-    source: String = null
-  ): IndicesClearCache = {
+  def apply(): IndicesClearCache = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_no_indices)) __obj.updateDynamic("allow_no_indices")(allow_no_indices.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (expand_wildcards != null) __obj.updateDynamic("expand_wildcards")(expand_wildcards.asInstanceOf[js.Any])
-    if (!js.isUndefined(fielddata)) __obj.updateDynamic("fielddata")(fielddata.get.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore_unavailable)) __obj.updateDynamic("ignore_unavailable")(ignore_unavailable.get.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(query)) __obj.updateDynamic("query")(query.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(request)) __obj.updateDynamic("request")(request.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesClearCache]
   }
+  @scala.inline
+  implicit class IndicesClearCacheOps[Self <: IndicesClearCache] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllow_no_indices(value: Boolean): Self = this.set("allow_no_indices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllow_no_indices: Self = this.set("allow_no_indices", js.undefined)
+    @scala.inline
+    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = this.set("expand_wildcards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpand_wildcards: Self = this.set("expand_wildcards", js.undefined)
+    @scala.inline
+    def setFielddata(value: Boolean): Self = this.set("fielddata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFielddata: Self = this.set("fielddata", js.undefined)
+    @scala.inline
+    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: String | js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setIgnore_unavailable(value: Boolean): Self = this.set("ignore_unavailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore_unavailable: Self = this.set("ignore_unavailable", js.undefined)
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: String | js.Array[String]): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setQuery(value: Boolean): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setRequest(value: Boolean): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+  }
+  
 }
 

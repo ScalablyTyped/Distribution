@@ -1,6 +1,5 @@
 package typings.std
 
-import typings.std.stdBooleans.`false`
 import typings.std.stdBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,9 +13,8 @@ trait IteratorResult[T, TReturn] extends js.Object
 
 object IteratorResult {
   @scala.inline
-  def IteratorYieldResult[T, TReturn](value: T, done: `false` = null): IteratorResult[T, TReturn] = {
+  def IteratorYieldResult[T, TReturn](value: T): IteratorResult[T, TReturn] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (done != null) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
     __obj.asInstanceOf[IteratorResult[T, TReturn]]
   }
   @scala.inline

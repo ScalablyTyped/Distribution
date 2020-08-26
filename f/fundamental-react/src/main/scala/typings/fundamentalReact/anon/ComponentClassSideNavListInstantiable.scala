@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/SideNavigation/SideNav.SideNavListItemProps, react.react.ComponentState> & {  displayName  :'SideNav.ListItem'} */
+/* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/SideNavigation/SideNav.SideNavListItemProps, react.react.ComponentState> & {  displayName :'SideNav.ListItem'} */
 @js.native
 trait ComponentClassSideNavListInstantiable
   extends Instantiable1[
@@ -30,7 +30,7 @@ trait ComponentClassSideNavListInstantiable
   var contextType: js.UndefOr[Context[_]] = js.native
   var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
   var defaultProps: js.UndefOr[PartialSideNavListItemPro] = js.native
-  var displayName: js.UndefOr[String with SideNavDotListItem] = js.native
+  var displayName: js.UndefOr[String] with SideNavDotListItem = js.native
   var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[SideNavListItemProps, ComponentState]] = js.native
   var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[SideNavListItemProps, ComponentState]] = js.native
   var propTypes: js.UndefOr[WeakValidationMapSideNavLAbout] = js.native

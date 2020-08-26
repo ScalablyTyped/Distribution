@@ -1,7 +1,7 @@
 
 # Scala.js typings for slugify
 
-Typings are for version 1.4.0
+Typings are for version 1.4.5
 
 ## Library description:
 Slugifies a String

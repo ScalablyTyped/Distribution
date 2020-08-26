@@ -354,6 +354,8 @@ trait ojLegend_[K, D] extends dvtBaseComponent[ojLegendSettableProperties[K, D]]
   @JSName("setProperty")
   def setProperty_symbolWidth(property: symbolWidth, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_textStyle(property: textStyle): Unit = js.native
+  @JSName("setProperty")
   def setProperty_textStyle(property: textStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native

@@ -5,32 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Mode extends /* customConfigName */ StringDictionary[ModeConfig | Boolean] {
-  var css: js.UndefOr[CssAndViewSpecificModeConfig | Boolean] = js.undefined
-  var defs: js.UndefOr[DefsAndSymbolSpecificModeConfig | Boolean] = js.undefined
-  var stack: js.UndefOr[ModeConfig | Boolean] = js.undefined
-  var symbol: js.UndefOr[DefsAndSymbolSpecificModeConfig | Boolean] = js.undefined
-  var view: js.UndefOr[CssAndViewSpecificModeConfig | Boolean] = js.undefined
+  var css: js.UndefOr[CssAndViewSpecificModeConfig | Boolean] = js.native
+  var defs: js.UndefOr[DefsAndSymbolSpecificModeConfig | Boolean] = js.native
+  var stack: js.UndefOr[ModeConfig | Boolean] = js.native
+  var symbol: js.UndefOr[DefsAndSymbolSpecificModeConfig | Boolean] = js.native
+  var view: js.UndefOr[CssAndViewSpecificModeConfig | Boolean] = js.native
 }
 
 object Mode {
   @scala.inline
-  def apply(
-    StringDictionary: /* customConfigName */ StringDictionary[ModeConfig | Boolean] = null,
-    css: CssAndViewSpecificModeConfig | Boolean = null,
-    defs: DefsAndSymbolSpecificModeConfig | Boolean = null,
-    stack: ModeConfig | Boolean = null,
-    symbol: DefsAndSymbolSpecificModeConfig | Boolean = null,
-    view: CssAndViewSpecificModeConfig | Boolean = null
-  ): Mode = {
+  def apply(): Mode = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mode]
   }
+  @scala.inline
+  implicit class ModeOps[Self <: Mode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCss(value: CssAndViewSpecificModeConfig | Boolean): Self = this.set("css", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCss: Self = this.set("css", js.undefined)
+    @scala.inline
+    def setDefs(value: DefsAndSymbolSpecificModeConfig | Boolean): Self = this.set("defs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefs: Self = this.set("defs", js.undefined)
+    @scala.inline
+    def setStack(value: ModeConfig | Boolean): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+    @scala.inline
+    def setSymbol(value: DefsAndSymbolSpecificModeConfig | Boolean): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setView(value: CssAndViewSpecificModeConfig | Boolean): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

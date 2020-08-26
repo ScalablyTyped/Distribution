@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@formatjs/intl-utils/dist/polyfill-utils", "objectIs")
+@JSImport("@formatjs/intl-utils/lib/src/polyfill-utils", "objectIs")
 @js.native
 object objectIs extends js.Object {
   def apply(x: js.Any, y: js.Any): Boolean = js.native

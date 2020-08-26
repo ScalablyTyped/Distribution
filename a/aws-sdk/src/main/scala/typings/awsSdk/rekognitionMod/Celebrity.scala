@@ -30,20 +30,44 @@ trait Celebrity extends js.Object {
 
 object Celebrity {
   @scala.inline
-  def apply(
-    Face: ComparedFace = null,
-    Id: RekognitionUniqueId = null,
-    MatchConfidence: js.UndefOr[Percent] = js.undefined,
-    Name: String = null,
-    Urls: Urls = null
-  ): Celebrity = {
+  def apply(): Celebrity = {
     val __obj = js.Dynamic.literal()
-    if (Face != null) __obj.updateDynamic("Face")(Face.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(MatchConfidence)) __obj.updateDynamic("MatchConfidence")(MatchConfidence.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Urls != null) __obj.updateDynamic("Urls")(Urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Celebrity]
   }
+  @scala.inline
+  implicit class CelebrityOps[Self <: Celebrity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFace(value: ComparedFace): Self = this.set("Face", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFace: Self = this.set("Face", js.undefined)
+    @scala.inline
+    def setId(value: RekognitionUniqueId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setMatchConfidence(value: Percent): Self = this.set("MatchConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchConfidence: Self = this.set("MatchConfidence", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setUrlsVarargs(value: Url*): Self = this.set("Urls", js.Array(value :_*))
+    @scala.inline
+    def setUrls(value: Urls): Self = this.set("Urls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrls: Self = this.set("Urls", js.undefined)
+  }
+  
 }
 

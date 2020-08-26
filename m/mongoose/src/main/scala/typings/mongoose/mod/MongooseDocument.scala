@@ -61,6 +61,7 @@ trait MongooseDocument extends MongooseDocumentOptionals {
     * @param options.getters if false, skip applying getters and just get the raw value
     */
   def get(path: String): js.Any = js.native
+  def get(path: String, `type`: js.UndefOr[scala.Nothing], options: Getters): js.Any = js.native
   def get(path: String, `type`: js.Any): js.Any = js.native
   def get(path: String, `type`: js.Any, options: Getters): js.Any = js.native
   /**
@@ -85,9 +86,11 @@ trait MongooseDocument extends MongooseDocumentOptionals {
     * @returns the current ValidationError, with all currently invalidated paths
     */
   def invalidate(path: String, errorMsg: String): ValidationError | Boolean = js.native
+  def invalidate(path: String, errorMsg: String, value: js.UndefOr[scala.Nothing], kind: String): ValidationError | Boolean = js.native
   def invalidate(path: String, errorMsg: String, value: js.Any): ValidationError | Boolean = js.native
   def invalidate(path: String, errorMsg: String, value: js.Any, kind: String): ValidationError | Boolean = js.native
   def invalidate(path: String, errorMsg: NativeError): ValidationError | Boolean = js.native
+  def invalidate(path: String, errorMsg: NativeError, value: js.UndefOr[scala.Nothing], kind: String): ValidationError | Boolean = js.native
   def invalidate(path: String, errorMsg: NativeError, value: js.Any): ValidationError | Boolean = js.native
   def invalidate(path: String, errorMsg: NativeError, value: js.Any, kind: String): ValidationError | Boolean = js.native
   /** Returns true if path was directly set and modified, else false. */

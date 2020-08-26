@@ -1,6 +1,6 @@
 package typings.webpackDevServer.mod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.Server
 import typings.std.Error
 import scala.scalajs.js

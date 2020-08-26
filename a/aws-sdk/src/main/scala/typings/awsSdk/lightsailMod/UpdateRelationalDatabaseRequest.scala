@@ -50,29 +50,60 @@ trait UpdateRelationalDatabaseRequest extends js.Object {
 
 object UpdateRelationalDatabaseRequest {
   @scala.inline
-  def apply(
-    relationalDatabaseName: ResourceName,
-    applyImmediately: js.UndefOr[Boolean] = js.undefined,
-    caCertificateIdentifier: String = null,
-    disableBackupRetention: js.UndefOr[Boolean] = js.undefined,
-    enableBackupRetention: js.UndefOr[Boolean] = js.undefined,
-    masterUserPassword: SensitiveString = null,
-    preferredBackupWindow: String = null,
-    preferredMaintenanceWindow: String = null,
-    publiclyAccessible: js.UndefOr[Boolean] = js.undefined,
-    rotateMasterUserPassword: js.UndefOr[Boolean] = js.undefined
-  ): UpdateRelationalDatabaseRequest = {
+  def apply(relationalDatabaseName: ResourceName): UpdateRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyImmediately)) __obj.updateDynamic("applyImmediately")(applyImmediately.get.asInstanceOf[js.Any])
-    if (caCertificateIdentifier != null) __obj.updateDynamic("caCertificateIdentifier")(caCertificateIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableBackupRetention)) __obj.updateDynamic("disableBackupRetention")(disableBackupRetention.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBackupRetention)) __obj.updateDynamic("enableBackupRetention")(enableBackupRetention.get.asInstanceOf[js.Any])
-    if (masterUserPassword != null) __obj.updateDynamic("masterUserPassword")(masterUserPassword.asInstanceOf[js.Any])
-    if (preferredBackupWindow != null) __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow.asInstanceOf[js.Any])
-    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(publiclyAccessible)) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateMasterUserPassword)) __obj.updateDynamic("rotateMasterUserPassword")(rotateMasterUserPassword.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRelationalDatabaseRequest]
   }
+  @scala.inline
+  implicit class UpdateRelationalDatabaseRequestOps[Self <: UpdateRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplyImmediately(value: Boolean): Self = this.set("applyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("applyImmediately", js.undefined)
+    @scala.inline
+    def setCaCertificateIdentifier(value: String): Self = this.set("caCertificateIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaCertificateIdentifier: Self = this.set("caCertificateIdentifier", js.undefined)
+    @scala.inline
+    def setDisableBackupRetention(value: Boolean): Self = this.set("disableBackupRetention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableBackupRetention: Self = this.set("disableBackupRetention", js.undefined)
+    @scala.inline
+    def setEnableBackupRetention(value: Boolean): Self = this.set("enableBackupRetention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableBackupRetention: Self = this.set("enableBackupRetention", js.undefined)
+    @scala.inline
+    def setMasterUserPassword(value: SensitiveString): Self = this.set("masterUserPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUserPassword: Self = this.set("masterUserPassword", js.undefined)
+    @scala.inline
+    def setPreferredBackupWindow(value: String): Self = this.set("preferredBackupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredBackupWindow: Self = this.set("preferredBackupWindow", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("preferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: Boolean): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
+    @scala.inline
+    def setRotateMasterUserPassword(value: Boolean): Self = this.set("rotateMasterUserPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotateMasterUserPassword: Self = this.set("rotateMasterUserPassword", js.undefined)
+  }
+  
 }
 

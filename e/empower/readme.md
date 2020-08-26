@@ -12,7 +12,7 @@ Power Assert feature enhancer for assert function/object
 | Keywords           | power-assert, assert, assertion, test, testing |
 | # releases         | 3 |
 | # dependents       | 6 |
-| # downloads        | 9603813 |
+| # downloads        | 9208701 |
 | # stars            | 0 |
 
 ## Links

@@ -63,38 +63,80 @@ trait ListPartsOutput extends js.Object {
 
 object ListPartsOutput {
   @scala.inline
-  def apply(
-    AbortDate: AbortDate = null,
-    AbortRuleId: AbortRuleId = null,
-    Bucket: BucketName = null,
-    Initiator: Initiator = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
-    Key: ObjectKey = null,
-    MaxParts: js.UndefOr[MaxParts] = js.undefined,
-    NextPartNumberMarker: js.UndefOr[NextPartNumberMarker] = js.undefined,
-    Owner: Owner = null,
-    PartNumberMarker: js.UndefOr[PartNumberMarker] = js.undefined,
-    Parts: Parts = null,
-    RequestCharged: RequestCharged = null,
-    StorageClass: StorageClass = null,
-    UploadId: MultipartUploadId = null
-  ): ListPartsOutput = {
+  def apply(): ListPartsOutput = {
     val __obj = js.Dynamic.literal()
-    if (AbortDate != null) __obj.updateDynamic("AbortDate")(AbortDate.asInstanceOf[js.Any])
-    if (AbortRuleId != null) __obj.updateDynamic("AbortRuleId")(AbortRuleId.asInstanceOf[js.Any])
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
-    if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxParts)) __obj.updateDynamic("MaxParts")(MaxParts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NextPartNumberMarker)) __obj.updateDynamic("NextPartNumberMarker")(NextPartNumberMarker.get.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(PartNumberMarker)) __obj.updateDynamic("PartNumberMarker")(PartNumberMarker.get.asInstanceOf[js.Any])
-    if (Parts != null) __obj.updateDynamic("Parts")(Parts.asInstanceOf[js.Any])
-    if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (UploadId != null) __obj.updateDynamic("UploadId")(UploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPartsOutput]
   }
+  @scala.inline
+  implicit class ListPartsOutputOps[Self <: ListPartsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbortDate(value: AbortDate): Self = this.set("AbortDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortDate: Self = this.set("AbortDate", js.undefined)
+    @scala.inline
+    def setAbortRuleId(value: AbortRuleId): Self = this.set("AbortRuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortRuleId: Self = this.set("AbortRuleId", js.undefined)
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    @scala.inline
+    def setInitiator(value: Initiator): Self = this.set("Initiator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitiator: Self = this.set("Initiator", js.undefined)
+    @scala.inline
+    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setMaxParts(value: MaxParts): Self = this.set("MaxParts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxParts: Self = this.set("MaxParts", js.undefined)
+    @scala.inline
+    def setNextPartNumberMarker(value: NextPartNumberMarker): Self = this.set("NextPartNumberMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPartNumberMarker: Self = this.set("NextPartNumberMarker", js.undefined)
+    @scala.inline
+    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setPartNumberMarker(value: PartNumberMarker): Self = this.set("PartNumberMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartNumberMarker: Self = this.set("PartNumberMarker", js.undefined)
+    @scala.inline
+    def setPartsVarargs(value: Part*): Self = this.set("Parts", js.Array(value :_*))
+    @scala.inline
+    def setParts(value: Parts): Self = this.set("Parts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParts: Self = this.set("Parts", js.undefined)
+    @scala.inline
+    def setRequestCharged(value: RequestCharged): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+    @scala.inline
+    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    @scala.inline
+    def setUploadId(value: MultipartUploadId): Self = this.set("UploadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadId: Self = this.set("UploadId", js.undefined)
+  }
+  
 }
 

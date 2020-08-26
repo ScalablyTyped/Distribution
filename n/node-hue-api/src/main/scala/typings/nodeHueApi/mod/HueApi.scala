@@ -21,6 +21,7 @@ class HueApi () extends js.Object {
     */
   def this(host: String, username: String) = this()
   def this(host: String, username: String, timeout: Double) = this()
+  def this(host: String, username: String, timeout: js.UndefOr[scala.Nothing], port: Double) = this()
   def this(host: String, username: String, timeout: Double, port: Double) = this()
   //modifySceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**

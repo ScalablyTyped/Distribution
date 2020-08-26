@@ -61,18 +61,15 @@ class RouterLink protected () extends js.Object {
   /**
     * @deprecated As of Angular v4.0 use `queryParamsHandling` instead.
     */
-  def preserveQueryParams(value: Boolean): js.Any = js.native
+  def preserveQueryParams_=(value: Boolean): Unit = js.native
   /**
-    * @param commands An array of commands to pass to {@link Router#createUrlTree
-    *     Router#createUrlTree}.
+    * Commands to pass to {@link Router#createUrlTree Router#createUrlTree}.
     *   - **array**: commands to pass to {@link Router#createUrlTree Router#createUrlTree}.
     *   - **string**: shorthand for array of commands with just the string, i.e. `['/route']`
     *   - **null|undefined**: shorthand for an empty array of commands, i.e. `[]`
     * @see {@link Router#createUrlTree Router#createUrlTree}
     */
-  def routerLink(): js.Any = js.native
-  def routerLink(commands: String): js.Any = js.native
-  def routerLink(commands: js.Array[_]): js.Any = js.native
+  def routerLink_=(commands: js.UndefOr[js.Array[_] | String | Null]): Unit = js.native
   def urlTree: UrlTree = js.native
 }
 

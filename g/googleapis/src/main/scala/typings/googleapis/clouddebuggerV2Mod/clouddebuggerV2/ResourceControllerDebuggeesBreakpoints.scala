@@ -89,6 +89,7 @@ class ResourceControllerDebuggeesBreakpoints protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListActiveBreakpointsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListActiveBreakpointsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListActiveBreakpointsResponse] = js.native
   def list(params: ParamsResourceControllerDebuggeesBreakpointsList): GaxiosPromise[SchemaListActiveBreakpointsResponse] = js.native
   def list(
     params: ParamsResourceControllerDebuggeesBreakpointsList,
@@ -187,6 +188,7 @@ class ResourceControllerDebuggeesBreakpoints protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaUpdateActiveBreakpointResponse] = js.native
   def update(callback: BodyResponseCallback[SchemaUpdateActiveBreakpointResponse]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUpdateActiveBreakpointResponse] = js.native
   def update(params: ParamsResourceControllerDebuggeesBreakpointsUpdate): GaxiosPromise[SchemaUpdateActiveBreakpointResponse] = js.native
   def update(
     params: ParamsResourceControllerDebuggeesBreakpointsUpdate,

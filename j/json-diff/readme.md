@@ -11,8 +11,8 @@ JSON diff
 | Full name          | json-diff |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 79 |
-| # downloads        | 4528002 |
+| # dependents       | 83 |
+| # downloads        | 5330870 |
 | # stars            | 11 |
 
 ## Links

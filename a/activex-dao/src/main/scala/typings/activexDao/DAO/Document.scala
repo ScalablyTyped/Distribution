@@ -20,8 +20,29 @@ trait Document extends js.Object {
   val Properties_Original: Properties = js.native
   var UserName: String = js.native
   def CreateProperty(): Property = js.native
+  def CreateProperty(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Value: js.UndefOr[scala.Nothing],
+    DDL: Boolean
+  ): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum): Property = js.native
+  def CreateProperty(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Value: js.UndefOr[scala.Nothing],
+    DDL: Boolean
+  ): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def Properties(Item: String): Property = js.native

@@ -32,6 +32,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaTargetHttpProxyAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaTargetHttpProxyAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetHttpProxyAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceTargethttpproxiesAggregatedlist): GaxiosPromise[SchemaTargetHttpProxyAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceTargethttpproxiesAggregatedlist,
@@ -64,6 +65,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargethttpproxiesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargethttpproxiesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -93,6 +95,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTargetHttpProxy] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetHttpProxy]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetHttpProxy] = js.native
   def get(params: ParamsResourceTargethttpproxiesGet): GaxiosPromise[SchemaTargetHttpProxy] = js.native
   def get(params: ParamsResourceTargethttpproxiesGet, callback: BodyResponseCallback[SchemaTargetHttpProxy]): Unit = js.native
   def get(
@@ -123,6 +126,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargethttpproxiesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargethttpproxiesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -155,6 +159,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTargetHttpProxyList] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetHttpProxyList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetHttpProxyList] = js.native
   def list(params: ParamsResourceTargethttpproxiesList): GaxiosPromise[SchemaTargetHttpProxyList] = js.native
   def list(
     params: ParamsResourceTargethttpproxiesList,
@@ -188,6 +193,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     */
   def setUrlMap(): GaxiosPromise[SchemaOperation] = js.native
   def setUrlMap(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setUrlMap(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setUrlMap(params: ParamsResourceTargethttpproxiesSeturlmap): GaxiosPromise[SchemaOperation] = js.native
   def setUrlMap(params: ParamsResourceTargethttpproxiesSeturlmap, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setUrlMap(
@@ -217,6 +223,7 @@ class ResourceTargethttpproxies protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceTargethttpproxiesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceTargethttpproxiesTestiampermissions,

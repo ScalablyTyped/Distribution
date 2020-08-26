@@ -12,7 +12,7 @@ A javascript message parser for the slack.com api
 | Keywords           | slack.com |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3342 |
+| # downloads        | 3280 |
 | # stars            | 0 |
 
 ## Links

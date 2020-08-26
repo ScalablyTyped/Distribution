@@ -21,14 +21,30 @@ trait SchemaTableBorderCell extends js.Object {
 
 object SchemaTableBorderCell {
   @scala.inline
-  def apply(
-    location: SchemaTableCellLocation = null,
-    tableBorderProperties: SchemaTableBorderProperties = null
-  ): SchemaTableBorderCell = {
+  def apply(): SchemaTableBorderCell = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (tableBorderProperties != null) __obj.updateDynamic("tableBorderProperties")(tableBorderProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTableBorderCell]
   }
+  @scala.inline
+  implicit class SchemaTableBorderCellOps[Self <: SchemaTableBorderCell] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: SchemaTableCellLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setTableBorderProperties(value: SchemaTableBorderProperties): Self = this.set("tableBorderProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableBorderProperties: Self = this.set("tableBorderProperties", js.undefined)
+  }
+  
 }
 

@@ -70,8 +70,10 @@ trait Server extends js.Object {
     * @param opts An optional parameters object
     * @return This Server
     */
-  def attach(srv: js.Any): Server = js.native
-  def attach(srv: js.Any, opts: ServerOptions): Server = js.native
+  def attach(srv: typings.node.httpMod.Server): Server = js.native
+  def attach(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
+  def attach(srv: typings.node.httpsMod.Server): Server = js.native
+  def attach(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
   /**
     * Binds socket.io to an engine.io instance
     * @param src The Engine.io (or compatible) server to bind to
@@ -137,8 +139,10 @@ trait Server extends js.Object {
   /**
     * @see attach( srv, opts )
     */
-  def listen(srv: js.Any): Server = js.native
-  def listen(srv: js.Any, opts: ServerOptions): Server = js.native
+  def listen(srv: typings.node.httpMod.Server): Server = js.native
+  def listen(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
+  def listen(srv: typings.node.httpsMod.Server): Server = js.native
+  def listen(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
   /**
     * Gets the number of listeners listening to the event.
     * @param event The event to retrieve the total listener count for

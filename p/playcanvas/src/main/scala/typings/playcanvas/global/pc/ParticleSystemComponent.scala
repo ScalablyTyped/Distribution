@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * @property depthWrite - If enabled, the particles will write to the depth buffer. If disabled, the depth buffer is left unchanged and particles will be guaranteed to overwrite one another in the order in which they are rendered.
   * @property noFog - Disable fogging.
   * @property localSpace - Binds particles to emitter transformation rather then world space.
+  * @property screenSpace - Renders particles in 2D screen space. This needs to be set when particle system is part of hierarchy with {@link pc.ScreenComponent} as its ancestor, and allows particle system to integrate with the rendering of {@link pc.ElementComponent}s. Note that an entity with ParticleSystem component cannot be parented directly to {@link pc.ScreenComponent}, but has to be a child of a {@link pc.ElementComponent}, for example {@link pc.LayoutGroupComponent}.
   * @property numParticles - Maximum number of simulated particles.
   * @property rate - Minimal interval in seconds between particle births.
   * @property rate2 - Maximal interval in seconds between particle births.
@@ -45,31 +46,31 @@ import scala.scalajs.js.annotation._
   * @property colorMap - The color map texture to apply to all particles in the system. If no texture is assigned, a default spot texture is used.
   * @property normalMap - The normal map texture to apply to all particles in the system. If no texture is assigned, an approximate spherical normal is calculated for each vertex.
   * @property emitterShape - Shape of the emitter. Defines the bounds inside which particles are spawned. Also affects the direction of initial velocity.
-  
-  * {@link pc.EMITTERSHAPE_BOX}: Box shape parameterized by emitterExtents. Initial velocity is directed towards local Z axis.
-  * {@link pc.EMITTERSHAPE_SPHERE}: Sphere shape parameterized by emitterRadius. Initial velocity is directed outwards from the center.
+  *
+  * * {@link pc.EMITTERSHAPE_BOX}: Box shape parameterized by emitterExtents. Initial velocity is directed towards local Z axis.
+  * * {@link pc.EMITTERSHAPE_SPHERE}: Sphere shape parameterized by emitterRadius. Initial velocity is directed outwards from the center.
   * @property sort - Sorting mode. Forces CPU simulation, so be careful.
-  
-  * {@link pc.PARTICLESORT_NONE}: No sorting, particles are drawn in arbitary order. Can be simulated on GPU.
-  * {@link pc.PARTICLESORT_DISTANCE}: Sorting based on distance to the camera. CPU only.
-  * {@link pc.PARTICLESORT_NEWER_FIRST}: Newer particles are drawn first. CPU only.
-  * {@link pc.PARTICLESORT_OLDER_FIRST}: Older particles are drawn first. CPU only.
+  *
+  * * {@link pc.PARTICLESORT_NONE}: No sorting, particles are drawn in arbitary order. Can be simulated on GPU.
+  * * {@link pc.PARTICLESORT_DISTANCE}: Sorting based on distance to the camera. CPU only.
+  * * {@link pc.PARTICLESORT_NEWER_FIRST}: Newer particles are drawn first. CPU only.
+  * * {@link pc.PARTICLESORT_OLDER_FIRST}: Older particles are drawn first. CPU only.
   * @property mesh - Triangular mesh to be used as a particle. Only first vertex/index buffer is used. Vertex buffer must contain local position at first 3 floats of each vertex.
   * @property blend - Controls how particles are blended when being written to the currently active render target.
-  Can be:
-  
-  * {@link pc.BLEND_SUBTRACTIVE}: Subtract the color of the source fragment from the destination fragment and write the result to the frame buffer.
-  * {@link pc.BLEND_ADDITIVE}: Add the color of the source fragment to the destination fragment and write the result to the frame buffer.
-  * {@link pc.BLEND_NORMAL}: Enable simple translucency for materials such as glass. This is equivalent to enabling a source blend mode of pc.BLENDMODE_SRC_ALPHA and a destination blend mode of pc.BLENDMODE_ONE_MINUS_SRC_ALPHA.
-  * {@link pc.BLEND_NONE}: Disable blending.
-  * {@link pc.BLEND_PREMULTIPLIED}: Similar to pc.BLEND_NORMAL expect the source fragment is assumed to have already been multiplied by the source alpha value.
-  * {@link pc.BLEND_MULTIPLICATIVE}: Multiply the color of the source fragment by the color of the destination fragment and write the result to the frame buffer.
-  * {@link pc.BLEND_ADDITIVEALPHA}: Same as pc.BLEND_ADDITIVE except the source RGB is multiplied by the source alpha.
+  * Can be:
+  *
+  * * {@link pc.BLEND_SUBTRACTIVE}: Subtract the color of the source fragment from the destination fragment and write the result to the frame buffer.
+  * * {@link pc.BLEND_ADDITIVE}: Add the color of the source fragment to the destination fragment and write the result to the frame buffer.
+  * * {@link pc.BLEND_NORMAL}: Enable simple translucency for materials such as glass. This is equivalent to enabling a source blend mode of pc.BLENDMODE_SRC_ALPHA and a destination blend mode of pc.BLENDMODE_ONE_MINUS_SRC_ALPHA.
+  * * {@link pc.BLEND_NONE}: Disable blending.
+  * * {@link pc.BLEND_PREMULTIPLIED}: Similar to pc.BLEND_NORMAL expect the source fragment is assumed to have already been multiplied by the source alpha value.
+  * * {@link pc.BLEND_MULTIPLICATIVE}: Multiply the color of the source fragment by the color of the destination fragment and write the result to the frame buffer.
+  * * {@link pc.BLEND_ADDITIVEALPHA}: Same as pc.BLEND_ADDITIVE except the source RGB is multiplied by the source alpha.
   * @property orientation - Sorting mode. Forces CPU simulation, so be careful.
-  
-  * {@link pc.PARTICLEORIENTATION_SCREEN}: Particles are facing camera.
-  * {@link pc.PARTICLEORIENTATION_WORLD}: User defines world space normal (particleNormal) to set planes orientation.
-  * {@link pc.PARTICLEORIENTATION_EMITTER}: Similar to previous, but the normal is affected by emitter(entity) transformation.
+  *
+  * * {@link pc.PARTICLEORIENTATION_SCREEN}: Particles are facing camera.
+  * * {@link pc.PARTICLEORIENTATION_WORLD}: User defines world space normal (particleNormal) to set planes orientation.
+  * * {@link pc.PARTICLEORIENTATION_EMITTER}: Similar to previous, but the normal is affected by emitter(entity) transformation.
   * @property particleNormal - (Only for PARTICLEORIENTATION_WORLD and PARTICLEORIENTATION_EMITTER) The exception of extents of a local space bounding box within which particles are not spawned. Aligned to the center of EmitterExtents.
   * @property localVelocityGraph - Velocity relative to emitter over lifetime.
   * @property localVelocityGraph2 - If not null, particles pick random values between localVelocityGraph and localVelocityGraph2.
@@ -85,7 +86,7 @@ import scala.scalajs.js.annotation._
   * @property alphaGraph - Alpha over lifetime.
   * @property alphaGraph2 - If not null, particles pick random values between alphaGraph and alphaGraph2.
   * @property layers - An array of layer IDs ({@link pc.Layer#id}) to which this particle system should belong.
-  Don't push/pop/splice or modify this array, if you want to change it - set a new one instead.
+  * Don't push/pop/splice or modify this array, if you want to change it - set a new one instead.
   * @param system - The ComponentSystem that created this Component.
   * @param entity - The Entity this Component is attached to.
   */

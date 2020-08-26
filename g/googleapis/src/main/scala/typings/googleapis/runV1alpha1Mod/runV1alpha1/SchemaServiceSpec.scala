@@ -43,20 +43,42 @@ trait SchemaServiceSpec extends js.Object {
 
 object SchemaServiceSpec {
   @scala.inline
-  def apply(
-    generation: js.UndefOr[Double] = js.undefined,
-    manual: SchemaServiceSpecManualType = null,
-    pinned: SchemaServiceSpecPinnedType = null,
-    release: SchemaServiceSpecReleaseType = null,
-    runLatest: SchemaServiceSpecRunLatest = null
-  ): SchemaServiceSpec = {
+  def apply(): SchemaServiceSpec = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
-    if (manual != null) __obj.updateDynamic("manual")(manual.asInstanceOf[js.Any])
-    if (pinned != null) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
-    if (release != null) __obj.updateDynamic("release")(release.asInstanceOf[js.Any])
-    if (runLatest != null) __obj.updateDynamic("runLatest")(runLatest.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServiceSpec]
   }
+  @scala.inline
+  implicit class SchemaServiceSpecOps[Self <: SchemaServiceSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGeneration(value: Double): Self = this.set("generation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeneration: Self = this.set("generation", js.undefined)
+    @scala.inline
+    def setManual(value: SchemaServiceSpecManualType): Self = this.set("manual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManual: Self = this.set("manual", js.undefined)
+    @scala.inline
+    def setPinned(value: SchemaServiceSpecPinnedType): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinned: Self = this.set("pinned", js.undefined)
+    @scala.inline
+    def setRelease(value: SchemaServiceSpecReleaseType): Self = this.set("release", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelease: Self = this.set("release", js.undefined)
+    @scala.inline
+    def setRunLatest(value: SchemaServiceSpecRunLatest): Self = this.set("runLatest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunLatest: Self = this.set("runLatest", js.undefined)
+  }
+  
 }
 

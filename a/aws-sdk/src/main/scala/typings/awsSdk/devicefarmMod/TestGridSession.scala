@@ -34,22 +34,46 @@ trait TestGridSession extends js.Object {
 
 object TestGridSession {
   @scala.inline
-  def apply(
-    arn: DeviceFarmArn = null,
-    billingMinutes: js.UndefOr[Double] = js.undefined,
-    created: DateTime = null,
-    ended: DateTime = null,
-    seleniumProperties: String = null,
-    status: TestGridSessionStatus = null
-  ): TestGridSession = {
+  def apply(): TestGridSession = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(billingMinutes)) __obj.updateDynamic("billingMinutes")(billingMinutes.get.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (ended != null) __obj.updateDynamic("ended")(ended.asInstanceOf[js.Any])
-    if (seleniumProperties != null) __obj.updateDynamic("seleniumProperties")(seleniumProperties.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestGridSession]
   }
+  @scala.inline
+  implicit class TestGridSessionOps[Self <: TestGridSession] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: DeviceFarmArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setBillingMinutes(value: Double): Self = this.set("billingMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingMinutes: Self = this.set("billingMinutes", js.undefined)
+    @scala.inline
+    def setCreated(value: DateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setEnded(value: DateTime): Self = this.set("ended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnded: Self = this.set("ended", js.undefined)
+    @scala.inline
+    def setSeleniumProperties(value: String): Self = this.set("seleniumProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeleniumProperties: Self = this.set("seleniumProperties", js.undefined)
+    @scala.inline
+    def setStatus(value: TestGridSessionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

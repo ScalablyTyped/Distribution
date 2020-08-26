@@ -31,6 +31,7 @@ class ResourceV1 protected () extends js.Object {
     */
   def getLinkStats(): GaxiosPromise[SchemaDynamicLinkStats] = js.native
   def getLinkStats(callback: BodyResponseCallback[SchemaDynamicLinkStats]): Unit = js.native
+  def getLinkStats(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDynamicLinkStats] = js.native
   def getLinkStats(params: ParamsResourceV1Getlinkstats): GaxiosPromise[SchemaDynamicLinkStats] = js.native
   def getLinkStats(params: ParamsResourceV1Getlinkstats, callback: BodyResponseCallback[SchemaDynamicLinkStats]): Unit = js.native
   def getLinkStats(
@@ -58,6 +59,7 @@ class ResourceV1 protected () extends js.Object {
     */
   def installAttribution(): GaxiosPromise[SchemaGetIosPostInstallAttributionResponse] = js.native
   def installAttribution(callback: BodyResponseCallback[SchemaGetIosPostInstallAttributionResponse]): Unit = js.native
+  def installAttribution(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetIosPostInstallAttributionResponse] = js.native
   def installAttribution(params: ParamsResourceV1Installattribution): GaxiosPromise[SchemaGetIosPostInstallAttributionResponse] = js.native
   def installAttribution(
     params: ParamsResourceV1Installattribution,
@@ -88,6 +90,7 @@ class ResourceV1 protected () extends js.Object {
     */
   def reopenAttribution(): GaxiosPromise[SchemaGetIosReopenAttributionResponse] = js.native
   def reopenAttribution(callback: BodyResponseCallback[SchemaGetIosReopenAttributionResponse]): Unit = js.native
+  def reopenAttribution(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetIosReopenAttributionResponse] = js.native
   def reopenAttribution(params: ParamsResourceV1Reopenattribution): GaxiosPromise[SchemaGetIosReopenAttributionResponse] = js.native
   def reopenAttribution(
     params: ParamsResourceV1Reopenattribution,

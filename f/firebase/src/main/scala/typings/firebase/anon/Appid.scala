@@ -5,32 +5,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Appid
   extends /* key */ StringDictionary[js.Any] {
-  var app_id: js.UndefOr[String] = js.undefined
-  var app_installer_id: js.UndefOr[String] = js.undefined
-  var app_name: String
-  var app_version: js.UndefOr[String] = js.undefined
-  var screen_name: js.UndefOr[String] = js.undefined
+  var app_id: js.UndefOr[String] = js.native
+  var app_installer_id: js.UndefOr[String] = js.native
+  var app_name: String = js.native
+  var app_version: js.UndefOr[String] = js.native
+  var screen_name: js.UndefOr[String] = js.native
 }
 
 object Appid {
   @scala.inline
-  def apply(
-    app_name: String,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    app_id: String = null,
-    app_installer_id: String = null,
-    app_version: String = null,
-    screen_name: String = null
-  ): Appid = {
+  def apply(app_name: String): Appid = {
     val __obj = js.Dynamic.literal(app_name = app_name.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (app_installer_id != null) __obj.updateDynamic("app_installer_id")(app_installer_id.asInstanceOf[js.Any])
-    if (app_version != null) __obj.updateDynamic("app_version")(app_version.asInstanceOf[js.Any])
-    if (screen_name != null) __obj.updateDynamic("screen_name")(screen_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Appid]
   }
+  @scala.inline
+  implicit class AppidOps[Self <: Appid] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApp_name(value: String): Self = this.set("app_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApp_id(value: String): Self = this.set("app_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApp_id: Self = this.set("app_id", js.undefined)
+    @scala.inline
+    def setApp_installer_id(value: String): Self = this.set("app_installer_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApp_installer_id: Self = this.set("app_installer_id", js.undefined)
+    @scala.inline
+    def setApp_version(value: String): Self = this.set("app_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApp_version: Self = this.set("app_version", js.undefined)
+    @scala.inline
+    def setScreen_name(value: String): Self = this.set("screen_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreen_name: Self = this.set("screen_name", js.undefined)
+  }
+  
 }
 

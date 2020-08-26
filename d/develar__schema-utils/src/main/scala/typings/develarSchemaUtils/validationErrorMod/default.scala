@@ -32,9 +32,5 @@ class default protected () extends ValidationError {
     schema: typings.jsonSchema.mod.JSONSchema7,
     configuration: typings.develarSchemaUtils.validateMod.ValidationErrorConfiguration
   ) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

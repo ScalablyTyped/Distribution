@@ -12,10 +12,28 @@ trait DocsPageProps extends js.Object {
 
 object DocsPageProps {
   @scala.inline
-  def apply(title: String, subtitle: String = null): DocsPageProps = {
+  def apply(title: String): DocsPageProps = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocsPageProps]
   }
+  @scala.inline
+  implicit class DocsPagePropsOps[Self <: DocsPageProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+  }
+  
 }
 

@@ -31,12 +31,34 @@ trait SchemaAttachTenantProjectRequest extends js.Object {
 
 object SchemaAttachTenantProjectRequest {
   @scala.inline
-  def apply(externalResource: String = null, reservedResource: String = null, tag: String = null): SchemaAttachTenantProjectRequest = {
+  def apply(): SchemaAttachTenantProjectRequest = {
     val __obj = js.Dynamic.literal()
-    if (externalResource != null) __obj.updateDynamic("externalResource")(externalResource.asInstanceOf[js.Any])
-    if (reservedResource != null) __obj.updateDynamic("reservedResource")(reservedResource.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttachTenantProjectRequest]
   }
+  @scala.inline
+  implicit class SchemaAttachTenantProjectRequestOps[Self <: SchemaAttachTenantProjectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalResource(value: String): Self = this.set("externalResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalResource: Self = this.set("externalResource", js.undefined)
+    @scala.inline
+    def setReservedResource(value: String): Self = this.set("reservedResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedResource: Self = this.set("reservedResource", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

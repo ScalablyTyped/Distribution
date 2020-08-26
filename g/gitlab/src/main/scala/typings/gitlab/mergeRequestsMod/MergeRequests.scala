@@ -2,8 +2,8 @@ package typings.gitlab.mergeRequestsMod
 
 import typings.gitlab.anon.`0`
 import typings.gitlab.anon.`1`
-import typings.gitlab.anon.mergerequestIIdnumberBase
-import typings.gitlab.anon.shastringBaseRequestOptio
+import typings.gitlab.anon.mergerequestIIdnumberunde
+import typings.gitlab.anon.shastringundefinedBaseReq
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
@@ -38,30 +38,30 @@ class MergeRequests () extends BaseService {
   def addTimeEstimate(projectId: Double, mergerequestIId: Double, duration: String, options: Sudo): js.Promise[js.Object] = js.native
   def all(hasProjectIdGroupIdOptions: (`0` | `1` | js.Object) with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
   def approvalState(projectId: String, mergerequestIId: Double): js.Promise[GetResponse] = js.native
-  def approvalState(projectId: String, mergerequestIId: Double, options: shastringBaseRequestOptio): js.Promise[GetResponse] = js.native
+  def approvalState(projectId: String, mergerequestIId: Double, options: shastringundefinedBaseReq): js.Promise[GetResponse] = js.native
   def approvalState(projectId: Double, mergerequestIId: Double): js.Promise[GetResponse] = js.native
-  def approvalState(projectId: Double, mergerequestIId: Double, options: shastringBaseRequestOptio): js.Promise[GetResponse] = js.native
+  def approvalState(projectId: Double, mergerequestIId: Double, options: shastringundefinedBaseReq): js.Promise[GetResponse] = js.native
   def approvals(projectId: String): js.Promise[GetResponse] = js.native
-  def approvals(projectId: String, hasMergerequestIIdOptions: mergerequestIIdnumberBase): js.Promise[GetResponse] = js.native
+  def approvals(projectId: String, hasMergerequestIIdOptions: mergerequestIIdnumberunde): js.Promise[GetResponse] = js.native
   def approvals(projectId: Double): js.Promise[GetResponse] = js.native
-  def approvals(projectId: Double, hasMergerequestIIdOptions: mergerequestIIdnumberBase): js.Promise[GetResponse] = js.native
+  def approvals(projectId: Double, hasMergerequestIIdOptions: mergerequestIIdnumberunde): js.Promise[GetResponse] = js.native
   def approve(projectId: String, mergerequestIId: Double): js.Promise[js.Object] = js.native
-  def approve(projectId: String, mergerequestIId: Double, options: shastringBaseRequestOptio): js.Promise[js.Object] = js.native
+  def approve(projectId: String, mergerequestIId: Double, options: shastringundefinedBaseReq): js.Promise[js.Object] = js.native
   def approve(projectId: Double, mergerequestIId: Double): js.Promise[js.Object] = js.native
-  def approve(projectId: Double, mergerequestIId: Double, options: shastringBaseRequestOptio): js.Promise[js.Object] = js.native
+  def approve(projectId: Double, mergerequestIId: Double, options: shastringundefinedBaseReq): js.Promise[js.Object] = js.native
   def approvers(projectId: String, approverIds: js.Array[Double], approverGroupIds: js.Array[String | Double]): js.Promise[js.Object] = js.native
   def approvers(
     projectId: String,
     approverIds: js.Array[Double],
     approverGroupIds: js.Array[String | Double],
-    hasMergerequestIIdOptions: mergerequestIIdnumberBase
+    hasMergerequestIIdOptions: mergerequestIIdnumberunde
   ): js.Promise[js.Object] = js.native
   def approvers(projectId: Double, approverIds: js.Array[Double], approverGroupIds: js.Array[String | Double]): js.Promise[js.Object] = js.native
   def approvers(
     projectId: Double,
     approverIds: js.Array[Double],
     approverGroupIds: js.Array[String | Double],
-    hasMergerequestIIdOptions: mergerequestIIdnumberBase
+    hasMergerequestIIdOptions: mergerequestIIdnumberunde
   ): js.Promise[js.Object] = js.native
   def cancelOnPipelineSucess(projectId: String, mergerequestIId: Double): js.Promise[js.Object] = js.native
   def cancelOnPipelineSucess(projectId: String, mergerequestIId: Double, options: Sudo): js.Promise[js.Object] = js.native
@@ -108,9 +108,9 @@ class MergeRequests () extends BaseService {
     options: UpdateMergeRequestOptions with BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def editApprovals(projectId: String): js.Promise[js.Object] = js.native
-  def editApprovals(projectId: String, hasMergerequestIIdOptions: mergerequestIIdnumberBase): js.Promise[js.Object] = js.native
+  def editApprovals(projectId: String, hasMergerequestIIdOptions: mergerequestIIdnumberunde): js.Promise[js.Object] = js.native
   def editApprovals(projectId: Double): js.Promise[js.Object] = js.native
-  def editApprovals(projectId: Double, hasMergerequestIIdOptions: mergerequestIIdnumberBase): js.Promise[js.Object] = js.native
+  def editApprovals(projectId: Double, hasMergerequestIIdOptions: mergerequestIIdnumberunde): js.Promise[js.Object] = js.native
   def participants(projectId: String, mergerequestIId: Double): js.Promise[GetResponse] = js.native
   def participants(projectId: String, mergerequestIId: Double, options: Sudo): js.Promise[GetResponse] = js.native
   def participants(projectId: Double, mergerequestIId: Double): js.Promise[GetResponse] = js.native

@@ -6,6 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object typesMod {
   type ContainerOrT[T] = typings.tensorflowTfjsData.typesMod.Container[T] | T
-  type DataElement = typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
   type FileElement = typings.std.File | typings.std.Blob | typings.std.Uint8Array
 }

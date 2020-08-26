@@ -34,22 +34,46 @@ trait OnDemandOptions extends js.Object {
 
 object OnDemandOptions {
   @scala.inline
-  def apply(
-    AllocationStrategy: FleetOnDemandAllocationStrategy = null,
-    CapacityReservationOptions: CapacityReservationOptions = null,
-    MaxTotalPrice: String = null,
-    MinTargetCapacity: js.UndefOr[Integer] = js.undefined,
-    SingleAvailabilityZone: js.UndefOr[Boolean] = js.undefined,
-    SingleInstanceType: js.UndefOr[Boolean] = js.undefined
-  ): OnDemandOptions = {
+  def apply(): OnDemandOptions = {
     val __obj = js.Dynamic.literal()
-    if (AllocationStrategy != null) __obj.updateDynamic("AllocationStrategy")(AllocationStrategy.asInstanceOf[js.Any])
-    if (CapacityReservationOptions != null) __obj.updateDynamic("CapacityReservationOptions")(CapacityReservationOptions.asInstanceOf[js.Any])
-    if (MaxTotalPrice != null) __obj.updateDynamic("MaxTotalPrice")(MaxTotalPrice.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinTargetCapacity)) __obj.updateDynamic("MinTargetCapacity")(MinTargetCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SingleAvailabilityZone)) __obj.updateDynamic("SingleAvailabilityZone")(SingleAvailabilityZone.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SingleInstanceType)) __obj.updateDynamic("SingleInstanceType")(SingleInstanceType.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDemandOptions]
   }
+  @scala.inline
+  implicit class OnDemandOptionsOps[Self <: OnDemandOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationStrategy(value: FleetOnDemandAllocationStrategy): Self = this.set("AllocationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationStrategy: Self = this.set("AllocationStrategy", js.undefined)
+    @scala.inline
+    def setCapacityReservationOptions(value: CapacityReservationOptions): Self = this.set("CapacityReservationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityReservationOptions: Self = this.set("CapacityReservationOptions", js.undefined)
+    @scala.inline
+    def setMaxTotalPrice(value: String): Self = this.set("MaxTotalPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTotalPrice: Self = this.set("MaxTotalPrice", js.undefined)
+    @scala.inline
+    def setMinTargetCapacity(value: Integer): Self = this.set("MinTargetCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinTargetCapacity: Self = this.set("MinTargetCapacity", js.undefined)
+    @scala.inline
+    def setSingleAvailabilityZone(value: Boolean): Self = this.set("SingleAvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleAvailabilityZone: Self = this.set("SingleAvailabilityZone", js.undefined)
+    @scala.inline
+    def setSingleInstanceType(value: Boolean): Self = this.set("SingleInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleInstanceType: Self = this.set("SingleInstanceType", js.undefined)
+  }
+  
 }
 

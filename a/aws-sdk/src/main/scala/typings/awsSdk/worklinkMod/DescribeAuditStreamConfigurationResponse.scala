@@ -14,10 +14,26 @@ trait DescribeAuditStreamConfigurationResponse extends js.Object {
 
 object DescribeAuditStreamConfigurationResponse {
   @scala.inline
-  def apply(AuditStreamArn: AuditStreamArn = null): DescribeAuditStreamConfigurationResponse = {
+  def apply(): DescribeAuditStreamConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (AuditStreamArn != null) __obj.updateDynamic("AuditStreamArn")(AuditStreamArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAuditStreamConfigurationResponse]
   }
+  @scala.inline
+  implicit class DescribeAuditStreamConfigurationResponseOps[Self <: DescribeAuditStreamConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditStreamArn(value: AuditStreamArn): Self = this.set("AuditStreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditStreamArn: Self = this.set("AuditStreamArn", js.undefined)
+  }
+  
 }
 

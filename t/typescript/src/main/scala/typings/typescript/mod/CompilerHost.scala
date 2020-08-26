@@ -64,6 +64,12 @@ trait CompilerHost extends ModuleResolutionHost {
   def getSourceFile(
     fileName: java.lang.String,
     languageVersion: ScriptTarget,
+    onError: js.UndefOr[scala.Nothing],
+    shouldCreateNewSourceFile: Boolean
+  ): js.UndefOr[SourceFile] = js.native
+  def getSourceFile(
+    fileName: java.lang.String,
+    languageVersion: ScriptTarget,
     onError: js.Function1[/* message */ java.lang.String, Unit]
   ): js.UndefOr[SourceFile] = js.native
   def getSourceFile(
@@ -74,6 +80,13 @@ trait CompilerHost extends ModuleResolutionHost {
   ): js.UndefOr[SourceFile] = js.native
   def useCaseSensitiveFileNames(): Boolean = js.native
   def writeFile(fileName: java.lang.String, data: java.lang.String, writeByteOrderMark: Boolean): Unit = js.native
+  def writeFile(
+    fileName: java.lang.String,
+    data: java.lang.String,
+    writeByteOrderMark: Boolean,
+    onError: js.UndefOr[scala.Nothing],
+    sourceFiles: js.Array[SourceFile]
+  ): Unit = js.native
   def writeFile(
     fileName: java.lang.String,
     data: java.lang.String,

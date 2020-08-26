@@ -20,14 +20,30 @@ trait GrantConstraint extends js.Object {
 
 object GrantConstraint {
   @scala.inline
-  def apply(
-    encryptionContextEquals: Input[StringDictionary[Input[String]]] = null,
-    encryptionContextSubset: Input[StringDictionary[Input[String]]] = null
-  ): GrantConstraint = {
+  def apply(): GrantConstraint = {
     val __obj = js.Dynamic.literal()
-    if (encryptionContextEquals != null) __obj.updateDynamic("encryptionContextEquals")(encryptionContextEquals.asInstanceOf[js.Any])
-    if (encryptionContextSubset != null) __obj.updateDynamic("encryptionContextSubset")(encryptionContextSubset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantConstraint]
   }
+  @scala.inline
+  implicit class GrantConstraintOps[Self <: GrantConstraint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionContextEquals(value: Input[StringDictionary[Input[String]]]): Self = this.set("encryptionContextEquals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionContextEquals: Self = this.set("encryptionContextEquals", js.undefined)
+    @scala.inline
+    def setEncryptionContextSubset(value: Input[StringDictionary[Input[String]]]): Self = this.set("encryptionContextSubset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionContextSubset: Self = this.set("encryptionContextSubset", js.undefined)
+  }
+  
 }
 

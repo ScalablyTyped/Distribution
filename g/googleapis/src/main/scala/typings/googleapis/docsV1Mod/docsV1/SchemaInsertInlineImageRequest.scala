@@ -46,18 +46,38 @@ trait SchemaInsertInlineImageRequest extends js.Object {
 
 object SchemaInsertInlineImageRequest {
   @scala.inline
-  def apply(
-    endOfSegmentLocation: SchemaEndOfSegmentLocation = null,
-    location: SchemaLocation = null,
-    objectSize: SchemaSize = null,
-    uri: String = null
-  ): SchemaInsertInlineImageRequest = {
+  def apply(): SchemaInsertInlineImageRequest = {
     val __obj = js.Dynamic.literal()
-    if (endOfSegmentLocation != null) __obj.updateDynamic("endOfSegmentLocation")(endOfSegmentLocation.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (objectSize != null) __obj.updateDynamic("objectSize")(objectSize.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInsertInlineImageRequest]
   }
+  @scala.inline
+  implicit class SchemaInsertInlineImageRequestOps[Self <: SchemaInsertInlineImageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndOfSegmentLocation(value: SchemaEndOfSegmentLocation): Self = this.set("endOfSegmentLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOfSegmentLocation: Self = this.set("endOfSegmentLocation", js.undefined)
+    @scala.inline
+    def setLocation(value: SchemaLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setObjectSize(value: SchemaSize): Self = this.set("objectSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectSize: Self = this.set("objectSize", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

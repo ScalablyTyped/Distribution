@@ -18,14 +18,30 @@ trait ObjectAttributeAction extends js.Object {
 
 object ObjectAttributeAction {
   @scala.inline
-  def apply(
-    ObjectAttributeActionType: UpdateActionType = null,
-    ObjectAttributeUpdateValue: TypedAttributeValue = null
-  ): ObjectAttributeAction = {
+  def apply(): ObjectAttributeAction = {
     val __obj = js.Dynamic.literal()
-    if (ObjectAttributeActionType != null) __obj.updateDynamic("ObjectAttributeActionType")(ObjectAttributeActionType.asInstanceOf[js.Any])
-    if (ObjectAttributeUpdateValue != null) __obj.updateDynamic("ObjectAttributeUpdateValue")(ObjectAttributeUpdateValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectAttributeAction]
   }
+  @scala.inline
+  implicit class ObjectAttributeActionOps[Self <: ObjectAttributeAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setObjectAttributeActionType(value: UpdateActionType): Self = this.set("ObjectAttributeActionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectAttributeActionType: Self = this.set("ObjectAttributeActionType", js.undefined)
+    @scala.inline
+    def setObjectAttributeUpdateValue(value: TypedAttributeValue): Self = this.set("ObjectAttributeUpdateValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectAttributeUpdateValue: Self = this.set("ObjectAttributeUpdateValue", js.undefined)
+  }
+  
 }
 

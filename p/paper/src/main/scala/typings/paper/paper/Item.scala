@@ -973,6 +973,7 @@ trait Item extends js.Object {
     * @return the newly created raster item
     */
   def rasterize(): Raster = js.native
+  def rasterize(resolution: js.UndefOr[scala.Nothing], insert: Boolean): Raster = js.native
   def rasterize(resolution: Double): Raster = js.native
   def rasterize(resolution: Double, insert: Boolean): Raster = js.native
   /** 

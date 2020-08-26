@@ -17,22 +17,46 @@ trait SpotFleetRequestLaunchSpecificationRootBlockDevice extends js.Object {
 
 object SpotFleetRequestLaunchSpecificationRootBlockDevice {
   @scala.inline
-  def apply(
-    deleteOnTermination: Input[Boolean] = null,
-    encrypted: Input[Boolean] = null,
-    iops: Input[Double] = null,
-    kmsKeyId: Input[String] = null,
-    volumeSize: Input[Double] = null,
-    volumeType: Input[String] = null
-  ): SpotFleetRequestLaunchSpecificationRootBlockDevice = {
+  def apply(): SpotFleetRequestLaunchSpecificationRootBlockDevice = {
     val __obj = js.Dynamic.literal()
-    if (deleteOnTermination != null) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
-    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
-    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (volumeSize != null) __obj.updateDynamic("volumeSize")(volumeSize.asInstanceOf[js.Any])
-    if (volumeType != null) __obj.updateDynamic("volumeType")(volumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotFleetRequestLaunchSpecificationRootBlockDevice]
   }
+  @scala.inline
+  implicit class SpotFleetRequestLaunchSpecificationRootBlockDeviceOps[Self <: SpotFleetRequestLaunchSpecificationRootBlockDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteOnTermination(value: Input[Boolean]): Self = this.set("deleteOnTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteOnTermination: Self = this.set("deleteOnTermination", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Input[Boolean]): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    @scala.inline
+    def setIops(value: Input[Double]): Self = this.set("iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("iops", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setVolumeSize(value: Input[Double]): Self = this.set("volumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSize: Self = this.set("volumeSize", js.undefined)
+    @scala.inline
+    def setVolumeType(value: Input[String]): Self = this.set("volumeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeType: Self = this.set("volumeType", js.undefined)
+  }
+  
 }
 

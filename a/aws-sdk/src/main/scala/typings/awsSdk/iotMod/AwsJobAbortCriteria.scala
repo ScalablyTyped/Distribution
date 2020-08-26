@@ -35,5 +35,26 @@ object AwsJobAbortCriteria {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], failureType = failureType.asInstanceOf[js.Any], minNumberOfExecutedThings = minNumberOfExecutedThings.asInstanceOf[js.Any], thresholdPercentage = thresholdPercentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsJobAbortCriteria]
   }
+  @scala.inline
+  implicit class AwsJobAbortCriteriaOps[Self <: AwsJobAbortCriteria] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: AwsJobAbortCriteriaAbortAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFailureType(value: AwsJobAbortCriteriaFailureType): Self = this.set("failureType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinNumberOfExecutedThings(value: AwsJobAbortCriteriaMinimumNumberOfExecutedThings): Self = this.set("minNumberOfExecutedThings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThresholdPercentage(value: AwsJobAbortCriteriaAbortThresholdPercentage): Self = this.set("thresholdPercentage", value.asInstanceOf[js.Any])
+  }
+  
 }
 

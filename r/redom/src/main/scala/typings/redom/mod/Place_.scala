@@ -11,8 +11,6 @@ import scala.scalajs.js.annotation._
 class Place_ protected () extends RedomComponent {
   def this(View: RedomComponentConstructor) = this()
   def this(View: RedomComponentConstructor, initData: js.Any) = this()
-  /* CompleteClass */
-  override var el: HTMLElement | SVGElement | RedomComponent = js.native
   @JSName("el")
   var el_Place_ : HTMLElement | SVGElement = js.native
   @JSName("update")

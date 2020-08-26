@@ -131,6 +131,7 @@ trait Reference extends js.Object {
     *     doesn't conform to the specified format.
     */
   def putString(data: String): UploadTask = js.native
+  def putString(data: String, format: js.UndefOr[scala.Nothing], metadata: UploadMetadata): UploadTask = js.native
   def putString(data: String, format: StringFormat): UploadTask = js.native
   def putString(data: String, format: StringFormat, metadata: UploadMetadata): UploadTask = js.native
   /**

@@ -1,5 +1,6 @@
 package typings.firebase.mod.firestore
 
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,11 +30,20 @@ class WriteBatch protected () extends js.Object {
     *
     * @param documentRef A reference to the document to be set.
     * @param data An object of the fields and values for the document.
-    * @param options An object to configure the set behavior.
     * @return This `WriteBatch` instance. Used for chaining method calls.
     */
   def set[T](documentRef: DocumentReference[T], data: T): WriteBatch = js.native
-  def set[T](documentRef: DocumentReference[T], data: T, options: SetOptions): WriteBatch = js.native
+  /**
+    * Writes to the document referred to by the provided `DocumentReference`.
+    * If the document does not exist yet, it will be created. If you pass
+    * `SetOptions`, the provided data can be merged into the existing document.
+    *
+    * @param documentRef A reference to the document to be set.
+    * @param data An object of the fields and values for the document.
+    * @param options An object to configure the set behavior.
+    * @return This `WriteBatch` instance. Used for chaining method calls.
+    */
+  def set[T](documentRef: DocumentReference[T], data: Partial[T], options: SetOptions): WriteBatch = js.native
   /**
     * Updates fields in the document referred to by the provided
     * `DocumentReference`. The update will fail if applied to a document that

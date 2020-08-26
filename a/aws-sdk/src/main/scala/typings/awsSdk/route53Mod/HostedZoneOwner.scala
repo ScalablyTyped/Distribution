@@ -18,11 +18,30 @@ trait HostedZoneOwner extends js.Object {
 
 object HostedZoneOwner {
   @scala.inline
-  def apply(OwningAccount: AWSAccountID = null, OwningService: HostedZoneOwningService = null): HostedZoneOwner = {
+  def apply(): HostedZoneOwner = {
     val __obj = js.Dynamic.literal()
-    if (OwningAccount != null) __obj.updateDynamic("OwningAccount")(OwningAccount.asInstanceOf[js.Any])
-    if (OwningService != null) __obj.updateDynamic("OwningService")(OwningService.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedZoneOwner]
   }
+  @scala.inline
+  implicit class HostedZoneOwnerOps[Self <: HostedZoneOwner] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOwningAccount(value: AWSAccountID): Self = this.set("OwningAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwningAccount: Self = this.set("OwningAccount", js.undefined)
+    @scala.inline
+    def setOwningService(value: HostedZoneOwningService): Self = this.set("OwningService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwningService: Self = this.set("OwningService", js.undefined)
+  }
+  
 }
 

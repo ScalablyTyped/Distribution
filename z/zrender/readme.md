@@ -10,9 +10,9 @@ A lightweight canvas library.
 | ------------------ | :-------------: |
 | Full name          | zrender |
 | Keywords           | canvas, 2d |
-| # releases         | 11 |
-| # dependents       | 85 |
-| # downloads        | 5249718 |
+| # releases         | 13 |
+| # dependents       | 89 |
+| # downloads        | 5539342 |
 | # stars            | 2 |
 
 ## Links

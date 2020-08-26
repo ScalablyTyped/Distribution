@@ -12,7 +12,7 @@ Flexible drawer menu using jQuery, iScroll and CSS.
 | Keywords           | jQuery, CSS, drawer, iScroll, navigation, responsive |
 | # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 29765 |
+| # downloads        | 31528 |
 | # stars            | 2 |
 
 ## Links

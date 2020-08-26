@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeepZoomOptions extends js.Object {
-  var height: js.UndefOr[Double] = js.undefined
-  var imageFormat: js.UndefOr[String] = js.undefined
-  var maxZoom: js.UndefOr[Double] = js.undefined
-  var tileSize: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
+  var imageFormat: js.UndefOr[String] = js.native
+  var maxZoom: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object DeepZoomOptions {
   @scala.inline
-  def apply(
-    height: js.UndefOr[Double] = js.undefined,
-    imageFormat: String = null,
-    maxZoom: js.UndefOr[Double] = js.undefined,
-    tileSize: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): DeepZoomOptions = {
+  def apply(): DeepZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (imageFormat != null) __obj.updateDynamic("imageFormat")(imageFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeepZoomOptions]
   }
+  @scala.inline
+  implicit class DeepZoomOptionsOps[Self <: DeepZoomOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setImageFormat(value: String): Self = this.set("imageFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageFormat: Self = this.set("imageFormat", js.undefined)
+    @scala.inline
+    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    @scala.inline
+    def setTileSize(value: Double): Self = this.set("tileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileSize: Self = this.set("tileSize", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

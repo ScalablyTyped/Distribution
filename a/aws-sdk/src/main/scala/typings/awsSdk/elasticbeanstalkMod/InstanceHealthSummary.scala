@@ -42,26 +42,54 @@ trait InstanceHealthSummary extends js.Object {
 
 object InstanceHealthSummary {
   @scala.inline
-  def apply(
-    Degraded: js.UndefOr[NullableInteger] = js.undefined,
-    Info: js.UndefOr[NullableInteger] = js.undefined,
-    NoData: js.UndefOr[NullableInteger] = js.undefined,
-    Ok: js.UndefOr[NullableInteger] = js.undefined,
-    Pending: js.UndefOr[NullableInteger] = js.undefined,
-    Severe: js.UndefOr[NullableInteger] = js.undefined,
-    Unknown: js.UndefOr[NullableInteger] = js.undefined,
-    Warning: js.UndefOr[NullableInteger] = js.undefined
-  ): InstanceHealthSummary = {
+  def apply(): InstanceHealthSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Degraded)) __obj.updateDynamic("Degraded")(Degraded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Info)) __obj.updateDynamic("Info")(Info.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NoData)) __obj.updateDynamic("NoData")(NoData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Ok)) __obj.updateDynamic("Ok")(Ok.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Pending)) __obj.updateDynamic("Pending")(Pending.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Severe)) __obj.updateDynamic("Severe")(Severe.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Unknown)) __obj.updateDynamic("Unknown")(Unknown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Warning)) __obj.updateDynamic("Warning")(Warning.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceHealthSummary]
   }
+  @scala.inline
+  implicit class InstanceHealthSummaryOps[Self <: InstanceHealthSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDegraded(value: NullableInteger): Self = this.set("Degraded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDegraded: Self = this.set("Degraded", js.undefined)
+    @scala.inline
+    def setInfo(value: NullableInteger): Self = this.set("Info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfo: Self = this.set("Info", js.undefined)
+    @scala.inline
+    def setNoData(value: NullableInteger): Self = this.set("NoData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoData: Self = this.set("NoData", js.undefined)
+    @scala.inline
+    def setOk(value: NullableInteger): Self = this.set("Ok", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOk: Self = this.set("Ok", js.undefined)
+    @scala.inline
+    def setPending(value: NullableInteger): Self = this.set("Pending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePending: Self = this.set("Pending", js.undefined)
+    @scala.inline
+    def setSevere(value: NullableInteger): Self = this.set("Severe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSevere: Self = this.set("Severe", js.undefined)
+    @scala.inline
+    def setUnknown(value: NullableInteger): Self = this.set("Unknown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnknown: Self = this.set("Unknown", js.undefined)
+    @scala.inline
+    def setWarning(value: NullableInteger): Self = this.set("Warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("Warning", js.undefined)
+  }
+  
 }
 

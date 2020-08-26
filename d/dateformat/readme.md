@@ -11,8 +11,8 @@ A node.js package for Steven Levithan's excellent dateFormat() function.
 | Full name          | dateformat |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 1430 |
-| # downloads        | 193194388 |
+| # dependents       | 1445 |
+| # downloads        | 194762648 |
 | # stars            | 97 |
 
 ## Links

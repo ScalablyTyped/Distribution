@@ -16,10 +16,5 @@ class ASPxClientUploadControlDropZoneLeaveEventArgs protected ()
     * @param dropZone An object that is a drop zone related to the processed event.
     */
   def this(dropZone: js.Any) = this()
-  /**
-    * Gets a <strong>drop zone</strong> object related to the processed event.
-    */
-  /* CompleteClass */
-  override var dropZone: js.Any = js.native
 }
 

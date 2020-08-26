@@ -19,13 +19,6 @@ class Compute () extends OAuth2Client {
   var scopes: js.Array[String] = js.native
   var serviceAccountEmail: js.Any = js.native
   /**
-    * Indicates whether the credential requires scopes to be created by calling
-    * createdScoped before use.
-    * @deprecated
-    * @return Boolean indicating if scope is required.
-    */
-  def createScopedRequired(): Boolean = js.native
-  /**
     * Fetches an ID token.
     * @param targetAudience the audience for the fetched ID token.
     */

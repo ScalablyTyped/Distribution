@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait D extends js.Object {
   /**
     * Alias of
@@ -13,14 +14,14 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.d
     */
-  var d: js.UndefOr[String] = js.undefined
+  var d: js.UndefOr[String] = js.native
   /**
     * The height of the shape of the element.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.height
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * If
     * [width](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.width)
@@ -49,7 +50,7 @@ trait D extends js.Object {
     * "center"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.layout
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[String] = js.native
   /**
     * [SVG PathData](http://www.w3.org/TR/SVG/paths.html#PathData)
     * .
@@ -75,14 +76,14 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.pathData
     */
-  var pathData: js.UndefOr[String] = js.undefined
+  var pathData: js.UndefOr[String] = js.native
   /**
     * The width of the shape of the element.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.width
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
   /**
     * The x value of the left-top corner of the element
     * in the coordinate system of its parent.
@@ -90,7 +91,7 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.x
     */
-  var x: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double] = js.native
   /**
     * The y value of the left-top corner of the element
     * in the coordinate system of its parent.
@@ -98,29 +99,55 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.y
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.native
 }
 
 object D {
   @scala.inline
-  def apply(
-    d: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    layout: String = null,
-    pathData: String = null,
-    width: js.UndefOr[Double] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): D = {
+  def apply(): D = {
     val __obj = js.Dynamic.literal()
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (pathData != null) __obj.updateDynamic("pathData")(pathData.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[D]
   }
+  @scala.inline
+  implicit class DOps[Self <: D] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteD: Self = this.set("d", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setPathData(value: String): Self = this.set("pathData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathData: Self = this.set("pathData", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

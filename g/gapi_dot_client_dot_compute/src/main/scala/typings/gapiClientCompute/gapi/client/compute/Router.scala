@@ -4,69 +4,108 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Router extends js.Object {
   /** BGP information specific to this router. */
-  var bgp: js.UndefOr[RouterBgp] = js.undefined
+  var bgp: js.UndefOr[RouterBgp] = js.native
   /**
     * BGP information that needs to be configured into the routing stack to establish the BGP peering. It must specify peer ASN and either interface name,
     * IP, or peer IP. Please refer to RFC4273.
     */
-  var bgpPeers: js.UndefOr[js.Array[RouterBgpPeer]] = js.undefined
+  var bgpPeers: js.UndefOr[js.Array[RouterBgpPeer]] = js.native
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.undefined
+  var creationTimestamp: js.UndefOr[String] = js.native
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Router interfaces. Each interface requires either one linked resource (e.g. linkedVpnTunnel), or IP address and IP address range (e.g. ipRange), or
     * both.
     */
-  var interfaces: js.UndefOr[js.Array[RouterInterface]] = js.undefined
+  var interfaces: js.UndefOr[js.Array[RouterInterface]] = js.native
   /** [Output Only] Type of resource. Always compute#router for routers. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /**
     * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035.
     * Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]&#42;[a-z0-9])? which means the first character must be
     * a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** URI of the network to which this router belongs. */
-  var network: js.UndefOr[String] = js.undefined
+  var network: js.UndefOr[String] = js.native
   /** [Output Only] URI of the region where the router resides. */
-  var region: js.UndefOr[String] = js.undefined
+  var region: js.UndefOr[String] = js.native
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.undefined
+  var selfLink: js.UndefOr[String] = js.native
 }
 
 object Router {
   @scala.inline
-  def apply(
-    bgp: RouterBgp = null,
-    bgpPeers: js.Array[RouterBgpPeer] = null,
-    creationTimestamp: String = null,
-    description: String = null,
-    id: String = null,
-    interfaces: js.Array[RouterInterface] = null,
-    kind: String = null,
-    name: String = null,
-    network: String = null,
-    region: String = null,
-    selfLink: String = null
-  ): Router = {
+  def apply(): Router = {
     val __obj = js.Dynamic.literal()
-    if (bgp != null) __obj.updateDynamic("bgp")(bgp.asInstanceOf[js.Any])
-    if (bgpPeers != null) __obj.updateDynamic("bgpPeers")(bgpPeers.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Router]
   }
+  @scala.inline
+  implicit class RouterOps[Self <: Router] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBgp(value: RouterBgp): Self = this.set("bgp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgp: Self = this.set("bgp", js.undefined)
+    @scala.inline
+    def setBgpPeersVarargs(value: RouterBgpPeer*): Self = this.set("bgpPeers", js.Array(value :_*))
+    @scala.inline
+    def setBgpPeers(value: js.Array[RouterBgpPeer]): Self = this.set("bgpPeers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgpPeers: Self = this.set("bgpPeers", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInterfacesVarargs(value: RouterInterface*): Self = this.set("interfaces", js.Array(value :_*))
+    @scala.inline
+    def setInterfaces(value: js.Array[RouterInterface]): Self = this.set("interfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterfaces: Self = this.set("interfaces", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+  }
+  
 }
 

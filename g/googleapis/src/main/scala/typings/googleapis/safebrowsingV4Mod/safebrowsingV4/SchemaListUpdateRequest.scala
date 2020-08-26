@@ -34,20 +34,42 @@ trait SchemaListUpdateRequest extends js.Object {
 
 object SchemaListUpdateRequest {
   @scala.inline
-  def apply(
-    constraints: SchemaConstraints = null,
-    platformType: String = null,
-    state: String = null,
-    threatEntryType: String = null,
-    threatType: String = null
-  ): SchemaListUpdateRequest = {
+  def apply(): SchemaListUpdateRequest = {
     val __obj = js.Dynamic.literal()
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
-    if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType.asInstanceOf[js.Any])
-    if (threatType != null) __obj.updateDynamic("threatType")(threatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListUpdateRequest]
   }
+  @scala.inline
+  implicit class SchemaListUpdateRequestOps[Self <: SchemaListUpdateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstraints(value: SchemaConstraints): Self = this.set("constraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraints: Self = this.set("constraints", js.undefined)
+    @scala.inline
+    def setPlatformType(value: String): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setThreatEntryType(value: String): Self = this.set("threatEntryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatEntryType: Self = this.set("threatEntryType", js.undefined)
+    @scala.inline
+    def setThreatType(value: String): Self = this.set("threatType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatType: Self = this.set("threatType", js.undefined)
+  }
+  
 }
 

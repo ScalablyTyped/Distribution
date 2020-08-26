@@ -11,8 +11,8 @@ Beautiful, functional dialogs in vanilla JavaScript
 | Full name          | vex-js |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 163588 |
+| # dependents       | 15 |
+| # downloads        | 142879 |
 | # stars            | 4 |
 
 ## Links

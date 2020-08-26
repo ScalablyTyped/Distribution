@@ -18,14 +18,32 @@ trait ListResourceComplianceSummariesResult extends js.Object {
 
 object ListResourceComplianceSummariesResult {
   @scala.inline
-  def apply(
-    NextToken: NextToken = null,
-    ResourceComplianceSummaryItems: ResourceComplianceSummaryItemList = null
-  ): ListResourceComplianceSummariesResult = {
+  def apply(): ListResourceComplianceSummariesResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ResourceComplianceSummaryItems != null) __obj.updateDynamic("ResourceComplianceSummaryItems")(ResourceComplianceSummaryItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceComplianceSummariesResult]
   }
+  @scala.inline
+  implicit class ListResourceComplianceSummariesResultOps[Self <: ListResourceComplianceSummariesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setResourceComplianceSummaryItemsVarargs(value: ResourceComplianceSummaryItem*): Self = this.set("ResourceComplianceSummaryItems", js.Array(value :_*))
+    @scala.inline
+    def setResourceComplianceSummaryItems(value: ResourceComplianceSummaryItemList): Self = this.set("ResourceComplianceSummaryItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceComplianceSummaryItems: Self = this.set("ResourceComplianceSummaryItems", js.undefined)
+  }
+  
 }
 

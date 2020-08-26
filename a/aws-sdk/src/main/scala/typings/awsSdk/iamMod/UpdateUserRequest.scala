@@ -22,11 +22,32 @@ trait UpdateUserRequest extends js.Object {
 
 object UpdateUserRequest {
   @scala.inline
-  def apply(UserName: existingUserNameType, NewPath: pathType = null, NewUserName: userNameType = null): UpdateUserRequest = {
+  def apply(UserName: existingUserNameType): UpdateUserRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
-    if (NewPath != null) __obj.updateDynamic("NewPath")(NewPath.asInstanceOf[js.Any])
-    if (NewUserName != null) __obj.updateDynamic("NewUserName")(NewUserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserRequest]
   }
+  @scala.inline
+  implicit class UpdateUserRequestOps[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserName(value: existingUserNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewPath(value: pathType): Self = this.set("NewPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewPath: Self = this.set("NewPath", js.undefined)
+    @scala.inline
+    def setNewUserName(value: userNameType): Self = this.set("NewUserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewUserName: Self = this.set("NewUserName", js.undefined)
+  }
+  
 }
 

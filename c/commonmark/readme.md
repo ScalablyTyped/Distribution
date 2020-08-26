@@ -10,13 +10,13 @@ a strongly specified, highly compatible variant of Markdown
 | ------------------ | :-------------: |
 | Full name          | commonmark |
 | Keywords           | markdown, commonmark, md, stmd |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 133 |
-| # downloads        | 4883077 |
+| # downloads        | 4944179 |
 | # stars            | 10 |
 
 ## Links
-- [Homepage](http://commonmark.org)
+- [Homepage](https://commonmark.org)
 - [Bugs](https://github.com/jgm/commonmark.js/issues)
 - [Repository](https://github.com/jgm/commonmark.js)
 - [Npm](https://www.npmjs.com/package/commonmark)

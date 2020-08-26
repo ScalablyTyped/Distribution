@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ParsedEvent")
 @js.native
 class ParsedEvent protected ()
-  extends typings.angularCompiler.publicApiMod.ParsedEvent {
+  extends typings.angularCompiler.compilerMod.ParsedEvent {
   def this(
     name: String,
     targetOrPhase: String,

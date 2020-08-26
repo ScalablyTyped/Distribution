@@ -10,6 +10,12 @@ object mod extends js.Object {
   val DBL_EPSILON: Double = js.native
   val FLT_EPSILON: Double = js.native
   def apply(value: Double, other: Double): Boolean = js.native
+  def apply(
+    value: Double,
+    other: Double,
+    absoluteTolerance: js.UndefOr[scala.Nothing],
+    relativeTolerance: Double
+  ): Boolean = js.native
   def apply(value: Double, other: Double, absoluteTolerance: Double): Boolean = js.native
   def apply(value: Double, other: Double, absoluteTolerance: Double, relativeTolerance: Double): Boolean = js.native
 }

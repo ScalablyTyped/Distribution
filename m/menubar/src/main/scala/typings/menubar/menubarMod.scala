@@ -50,12 +50,12 @@ object menubarMod extends js.Object {
     def this(app: App, options: PartialOptions) = this()
     var _app: js.Any = js.native
     var _blurTimeout: js.Any = js.native
-    var _browserWindow: js.UndefOr[js.Any] = js.native
-    var _cachedBounds: js.UndefOr[js.Any] = js.native
+    var _browserWindow: js.Any = js.native
+    var _cachedBounds: js.Any = js.native
     var _isVisible: js.Any = js.native
     var _options: js.Any = js.native
     var _positioner: js.Any = js.native
-    var _tray: js.UndefOr[js.Any] = js.native
+    var _tray: js.Any = js.native
     var appReady: js.Any = js.native
     /**
       * Callback on tray icon click or double-click.
@@ -81,25 +81,27 @@ object menubarMod extends js.Object {
     @JSName("getOption")
     def getOption_dir(key: dir): String = js.native
     @JSName("getOption")
-    def getOption_icon(key: icon): String | NativeImage_ = js.native
+    def getOption_icon(key: icon): js.UndefOr[String | NativeImage_] = js.native
     @JSName("getOption")
     def getOption_index(key: index): String | `false` = js.native
     @JSName("getOption")
-    def getOption_loadUrlOptions(key: loadUrlOptions): LoadURLOptions = js.native
+    def getOption_loadUrlOptions(key: loadUrlOptions): js.UndefOr[LoadURLOptions] = js.native
     @JSName("getOption")
-    def getOption_preloadWindow(key: preloadWindow): Boolean = js.native
+    def getOption_preloadWindow(key: preloadWindow): js.UndefOr[Boolean] = js.native
     @JSName("getOption")
-    def getOption_showDockIcon(key: showDockIcon): Boolean = js.native
+    def getOption_showDockIcon(key: showDockIcon): js.UndefOr[Boolean] = js.native
     @JSName("getOption")
-    def getOption_showOnAllWorkspaces(key: showOnAllWorkspaces): Boolean = js.native
+    def getOption_showOnAllWorkspaces(key: showOnAllWorkspaces): js.UndefOr[Boolean] = js.native
     @JSName("getOption")
-    def getOption_showOnRightClick(key: showOnRightClick): Boolean = js.native
+    def getOption_showOnRightClick(key: showOnRightClick): js.UndefOr[Boolean] = js.native
     @JSName("getOption")
     def getOption_tooltip(key: tooltip): String = js.native
     @JSName("getOption")
-    def getOption_tray(key: tray): Tray = js.native
+    def getOption_tray(key: tray): js.UndefOr[Tray] = js.native
     @JSName("getOption")
-    def getOption_windowPosition(key: windowPosition): trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center = js.native
+    def getOption_windowPosition(key: windowPosition): js.UndefOr[
+        trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center
+      ] = js.native
     /**
       * Hide the menubar window.
       */
@@ -110,10 +112,21 @@ object menubarMod extends js.Object {
       */
     def positioner: js.Any = js.native
     def setOption(key: index, value: `false`): Unit = js.native
-    def setOption(
-      key: windowPosition,
-      value: trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center
-    ): Unit = js.native
+    def setOption(key: windowPosition, value: bottomCenter): Unit = js.native
+    def setOption(key: windowPosition, value: bottomLeft): Unit = js.native
+    def setOption(key: windowPosition, value: bottomRight): Unit = js.native
+    def setOption(key: windowPosition, value: center): Unit = js.native
+    def setOption(key: windowPosition, value: leftCenter): Unit = js.native
+    def setOption(key: windowPosition, value: rightCenter): Unit = js.native
+    def setOption(key: windowPosition, value: topCenter): Unit = js.native
+    def setOption(key: windowPosition, value: topLeft): Unit = js.native
+    def setOption(key: windowPosition, value: topRight): Unit = js.native
+    def setOption(key: windowPosition, value: trayBottomCenter): Unit = js.native
+    def setOption(key: windowPosition, value: trayBottomLeft): Unit = js.native
+    def setOption(key: windowPosition, value: trayBottomRight): Unit = js.native
+    def setOption(key: windowPosition, value: trayCenter): Unit = js.native
+    def setOption(key: windowPosition, value: trayLeft): Unit = js.native
+    def setOption(key: windowPosition, value: trayRight): Unit = js.native
     /**
       * Change an option after menubar is created.
       *
@@ -125,25 +138,41 @@ object menubarMod extends js.Object {
     @JSName("setOption")
     def setOption_dir(key: dir, value: String): Unit = js.native
     @JSName("setOption")
+    def setOption_icon(key: icon): Unit = js.native
+    @JSName("setOption")
     def setOption_icon(key: icon, value: String): Unit = js.native
     @JSName("setOption")
     def setOption_icon(key: icon, value: NativeImage_): Unit = js.native
     @JSName("setOption")
     def setOption_index(key: index, value: String): Unit = js.native
     @JSName("setOption")
+    def setOption_loadUrlOptions(key: loadUrlOptions): Unit = js.native
+    @JSName("setOption")
     def setOption_loadUrlOptions(key: loadUrlOptions, value: LoadURLOptions): Unit = js.native
+    @JSName("setOption")
+    def setOption_preloadWindow(key: preloadWindow): Unit = js.native
     @JSName("setOption")
     def setOption_preloadWindow(key: preloadWindow, value: Boolean): Unit = js.native
     @JSName("setOption")
+    def setOption_showDockIcon(key: showDockIcon): Unit = js.native
+    @JSName("setOption")
     def setOption_showDockIcon(key: showDockIcon, value: Boolean): Unit = js.native
     @JSName("setOption")
+    def setOption_showOnAllWorkspaces(key: showOnAllWorkspaces): Unit = js.native
+    @JSName("setOption")
     def setOption_showOnAllWorkspaces(key: showOnAllWorkspaces, value: Boolean): Unit = js.native
+    @JSName("setOption")
+    def setOption_showOnRightClick(key: showOnRightClick): Unit = js.native
     @JSName("setOption")
     def setOption_showOnRightClick(key: showOnRightClick, value: Boolean): Unit = js.native
     @JSName("setOption")
     def setOption_tooltip(key: tooltip, value: String): Unit = js.native
     @JSName("setOption")
+    def setOption_tray(key: tray): Unit = js.native
+    @JSName("setOption")
     def setOption_tray(key: tray, value: Tray): Unit = js.native
+    @JSName("setOption")
+    def setOption_windowPosition(key: windowPosition): Unit = js.native
     /**
       * Show the menubar window.
       *

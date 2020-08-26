@@ -28,6 +28,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePretargetingconfigDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePretargetingconfigDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def get(callback: BodyResponseCallback[SchemaPretargetingConfig]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def get(params: ParamsResourcePretargetingconfigGet): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def get(
     params: ParamsResourcePretargetingconfigGet,
@@ -87,6 +89,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def insert(callback: BodyResponseCallback[SchemaPretargetingConfig]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def insert(params: ParamsResourcePretargetingconfigInsert): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def insert(
     params: ParamsResourcePretargetingconfigInsert,
@@ -118,6 +121,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPretargetingConfigList] = js.native
   def list(callback: BodyResponseCallback[SchemaPretargetingConfigList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPretargetingConfigList] = js.native
   def list(params: ParamsResourcePretargetingconfigList): GaxiosPromise[SchemaPretargetingConfigList] = js.native
   def list(
     params: ParamsResourcePretargetingconfigList,
@@ -151,6 +155,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def patch(callback: BodyResponseCallback[SchemaPretargetingConfig]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def patch(params: ParamsResourcePretargetingconfigPatch): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def patch(
     params: ParamsResourcePretargetingconfigPatch,
@@ -183,6 +188,7 @@ class ResourcePretargetingconfig protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def update(callback: BodyResponseCallback[SchemaPretargetingConfig]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def update(params: ParamsResourcePretargetingconfigUpdate): GaxiosPromise[SchemaPretargetingConfig] = js.native
   def update(
     params: ParamsResourcePretargetingconfigUpdate,

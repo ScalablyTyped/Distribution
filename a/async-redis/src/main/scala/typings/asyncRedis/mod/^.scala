@@ -15,6 +15,7 @@ class ^ () extends Promisified[RedisClient] {
   def this(unix_socket: String) = this()
   def this(port: Double, host: String) = this()
   def this(unix_socket: String, options: ClientOpts) = this()
+  def this(port: Double, host: js.UndefOr[scala.Nothing], options: ClientOpts) = this()
   def this(port: Double, host: String, options: ClientOpts) = this()
 }
 

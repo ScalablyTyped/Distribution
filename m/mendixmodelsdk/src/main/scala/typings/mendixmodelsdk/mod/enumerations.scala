@@ -43,7 +43,7 @@ object enumerations extends js.Object {
   }
   
   /**
-    * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
+    * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
     */
   @js.native
   class EnumerationValue protected ()

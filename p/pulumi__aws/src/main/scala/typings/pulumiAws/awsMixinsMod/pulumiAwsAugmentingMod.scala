@@ -116,6 +116,7 @@ import typings.pulumiAws.anon.TypeofGuardDuty
 import typings.pulumiAws.anon.TypeofHealth
 import typings.pulumiAws.anon.TypeofHoneycode
 import typings.pulumiAws.anon.TypeofIAM
+import typings.pulumiAws.anon.TypeofIVS
 import typings.pulumiAws.anon.TypeofImagebuilder
 import typings.pulumiAws.anon.TypeofImportExport
 import typings.pulumiAws.anon.TypeofInspector
@@ -391,6 +392,7 @@ object pulumiAwsAugmentingMod extends js.Object {
     var HttpRequest: Instantiable2[/* endpoint */ Endpoint, /* region */ String, typings.awsSdk.mod.HttpRequest] = js.native
     var HttpResponse: Instantiable0[typings.awsSdk.mod.HttpResponse] = js.native
     var IAM: Instantiable0[typings.awsSdk.mod.IAM] | TypeofIAM = js.native
+    var IVS: Instantiable0[typings.awsSdk.mod.IVS] | TypeofIVS = js.native
     var Imagebuilder: Instantiable0[typings.awsSdk.mod.Imagebuilder] | TypeofImagebuilder = js.native
     var ImportExport: Instantiable0[typings.awsSdk.mod.ImportExport] | TypeofImportExport = js.native
     var IniLoader: Instantiable0[typings.awsSdk.mod.IniLoader] = js.native
@@ -518,6 +520,7 @@ object pulumiAwsAugmentingMod extends js.Object {
     // Needed to expose interfaces on the class
     val TemporaryCredentials: js.Any | (Instantiable1[/* options */ TemporaryCredentialsOptions, typings.awsSdk.mod.TemporaryCredentials]) = js.native
     var Textract: Instantiable0[typings.awsSdk.mod.Textract] | TypeofTextract = js.native
+    var TokenFileWebIdentityCredentials: Instantiable0[typings.awsSdk.mod.TokenFileWebIdentityCredentials] = js.native
     var TranscribeService: Instantiable0[typings.awsSdk.mod.TranscribeService] | TypeofTranscribeService = js.native
     var Transfer: Instantiable0[typings.awsSdk.mod.Transfer] | TypeofTransfer = js.native
     var Translate: Instantiable0[typings.awsSdk.mod.Translate] | TypeofTranslate = js.native

@@ -14,10 +14,26 @@ trait CreateWebhookOutput extends js.Object {
 
 object CreateWebhookOutput {
   @scala.inline
-  def apply(webhook: Webhook = null): CreateWebhookOutput = {
+  def apply(): CreateWebhookOutput = {
     val __obj = js.Dynamic.literal()
-    if (webhook != null) __obj.updateDynamic("webhook")(webhook.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWebhookOutput]
   }
+  @scala.inline
+  implicit class CreateWebhookOutputOps[Self <: CreateWebhookOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWebhook(value: Webhook): Self = this.set("webhook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebhook: Self = this.set("webhook", js.undefined)
+  }
+  
 }
 

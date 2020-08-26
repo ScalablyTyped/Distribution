@@ -14,6 +14,12 @@ object timing extends js.Object {
     fn: js.Function1[/* done */ js.Function0[Unit], Unit],
     cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
   ): Unit = js.native
+  def apply(
+    name: String,
+    fn: js.Function1[/* done */ js.Function0[Unit], Unit],
+    opts: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+  ): Unit = js.native
   def apply(name: String, fn: js.Function1[/* done */ js.Function0[Unit], Unit], opts: CustomSource): Unit = js.native
   def apply(
     name: String,

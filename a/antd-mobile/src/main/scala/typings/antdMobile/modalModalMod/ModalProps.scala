@@ -1,75 +1,79 @@
 package typings.antdMobile.modalModalMod
 
 import typings.antdMobile.anon.PartialHTMLPropsHTMLDivEl
-import typings.antdMobile.modalPropsTypeMod.Action
 import typings.antdMobile.modalPropsTypeMod.ModalPropsType
 import typings.react.mod.CSSProperties
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModalProps extends ModalPropsType[CSSProperties] {
-  var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var maskTransitionName: js.UndefOr[String] = js.undefined
-  var platform: js.UndefOr[String] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var transitionName: js.UndefOr[String] = js.undefined
-  var wrapClassName: js.UndefOr[String] = js.undefined
-  var wrapProps: js.UndefOr[PartialHTMLPropsHTMLDivEl] = js.undefined
+  var bodyStyle: js.UndefOr[CSSProperties] = js.native
+  var className: js.UndefOr[String] = js.native
+  var maskTransitionName: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var transitionName: js.UndefOr[String] = js.native
+  var wrapClassName: js.UndefOr[String] = js.native
+  var wrapProps: js.UndefOr[PartialHTMLPropsHTMLDivEl] = js.native
 }
 
 object ModalProps {
   @scala.inline
-  def apply(
-    visible: Boolean,
-    animateAppear: js.UndefOr[Boolean] = js.undefined,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    animationType: js.Any = null,
-    bodyStyle: CSSProperties = null,
-    className: String = null,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    footer: js.Array[Action[CSSProperties]] = null,
-    maskClosable: js.UndefOr[Boolean] = js.undefined,
-    maskTransitionName: String = null,
-    onAnimationEnd: /* visible */ Boolean => Unit = null,
-    onClose: () => Unit = null,
-    operation: js.UndefOr[Boolean] = js.undefined,
-    platform: String = null,
-    popup: js.UndefOr[Boolean] = js.undefined,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    title: ReactNode = null,
-    transitionName: String = null,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    wrapClassName: String = null,
-    wrapProps: PartialHTMLPropsHTMLDivEl = null
-  ): ModalProps = {
+  def apply(visible: Boolean): ModalProps = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.get.asInstanceOf[js.Any])
-    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (!js.isUndefined(operation)) __obj.updateDynamic("operation")(operation.get.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.get.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
-    if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName.asInstanceOf[js.Any])
-    if (wrapProps != null) __obj.updateDynamic("wrapProps")(wrapProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalProps]
   }
+  @scala.inline
+  implicit class ModalPropsOps[Self <: ModalProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBodyStyle(value: CSSProperties): Self = this.set("bodyStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyStyle: Self = this.set("bodyStyle", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setMaskTransitionName(value: String): Self = this.set("maskTransitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskTransitionName: Self = this.set("maskTransitionName", js.undefined)
+    @scala.inline
+    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTransitionName(value: String): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    @scala.inline
+    def setWrapClassName(value: String): Self = this.set("wrapClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapClassName: Self = this.set("wrapClassName", js.undefined)
+    @scala.inline
+    def setWrapProps(value: PartialHTMLPropsHTMLDivEl): Self = this.set("wrapProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapProps: Self = this.set("wrapProps", js.undefined)
+  }
+  
 }
 

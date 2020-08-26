@@ -18,7 +18,7 @@ trait ListStreamConstructor
       ListStream
     ]
      with Instantiable2[
-      /* options */ DuplexOptions, 
+      js.UndefOr[/* options */ DuplexOptions], 
       /* callback */ js.Function2[/* err */ Error, /* data */ js.Array[js.Any], Unit], 
       ListStream
     ] {
@@ -26,6 +26,10 @@ trait ListStreamConstructor
   var obj_Original: ListStreamMethod = js.native
   def obj(): ListStream = js.native
   def obj(callback: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]): ListStream = js.native
+  def obj(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]
+  ): ListStream = js.native
   def obj(options: DuplexOptions): ListStream = js.native
   def obj(options: DuplexOptions, callback: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]): ListStream = js.native
 }

@@ -22,15 +22,34 @@ trait GetRecordsOutput extends js.Object {
 
 object GetRecordsOutput {
   @scala.inline
-  def apply(
-    Records: RecordList,
-    MillisBehindLatest: js.UndefOr[MillisBehindLatest] = js.undefined,
-    NextShardIterator: ShardIterator = null
-  ): GetRecordsOutput = {
+  def apply(Records: RecordList): GetRecordsOutput = {
     val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
-    if (!js.isUndefined(MillisBehindLatest)) __obj.updateDynamic("MillisBehindLatest")(MillisBehindLatest.get.asInstanceOf[js.Any])
-    if (NextShardIterator != null) __obj.updateDynamic("NextShardIterator")(NextShardIterator.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecordsOutput]
   }
+  @scala.inline
+  implicit class GetRecordsOutputOps[Self <: GetRecordsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecordsVarargs(value: Record*): Self = this.set("Records", js.Array(value :_*))
+    @scala.inline
+    def setRecords(value: RecordList): Self = this.set("Records", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMillisBehindLatest(value: MillisBehindLatest): Self = this.set("MillisBehindLatest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMillisBehindLatest: Self = this.set("MillisBehindLatest", js.undefined)
+    @scala.inline
+    def setNextShardIterator(value: ShardIterator): Self = this.set("NextShardIterator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextShardIterator: Self = this.set("NextShardIterator", js.undefined)
+  }
+  
 }
 

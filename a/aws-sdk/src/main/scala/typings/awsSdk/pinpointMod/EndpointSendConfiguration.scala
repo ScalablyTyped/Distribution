@@ -30,20 +30,42 @@ trait EndpointSendConfiguration extends js.Object {
 
 object EndpointSendConfiguration {
   @scala.inline
-  def apply(
-    BodyOverride: string = null,
-    Context: MapOfString = null,
-    RawContent: string = null,
-    Substitutions: MapOfListOfString = null,
-    TitleOverride: string = null
-  ): EndpointSendConfiguration = {
+  def apply(): EndpointSendConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (BodyOverride != null) __obj.updateDynamic("BodyOverride")(BodyOverride.asInstanceOf[js.Any])
-    if (Context != null) __obj.updateDynamic("Context")(Context.asInstanceOf[js.Any])
-    if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent.asInstanceOf[js.Any])
-    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
-    if (TitleOverride != null) __obj.updateDynamic("TitleOverride")(TitleOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointSendConfiguration]
   }
+  @scala.inline
+  implicit class EndpointSendConfigurationOps[Self <: EndpointSendConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBodyOverride(value: string): Self = this.set("BodyOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyOverride: Self = this.set("BodyOverride", js.undefined)
+    @scala.inline
+    def setContext(value: MapOfString): Self = this.set("Context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("Context", js.undefined)
+    @scala.inline
+    def setRawContent(value: string): Self = this.set("RawContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawContent: Self = this.set("RawContent", js.undefined)
+    @scala.inline
+    def setSubstitutions(value: MapOfListOfString): Self = this.set("Substitutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubstitutions: Self = this.set("Substitutions", js.undefined)
+    @scala.inline
+    def setTitleOverride(value: string): Self = this.set("TitleOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleOverride: Self = this.set("TitleOverride", js.undefined)
+  }
+  
 }
 

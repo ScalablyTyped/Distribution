@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class DsePlainTextAuthProvider protected () extends AuthProvider {
   def this(username: String, password: String) = this()
   def this(username: String, password: String, authorizationId: String) = this()
-  /* CompleteClass */
-  override def newAuthenticator(endpoint: String, name: String): Authenticator = js.native
 }
 

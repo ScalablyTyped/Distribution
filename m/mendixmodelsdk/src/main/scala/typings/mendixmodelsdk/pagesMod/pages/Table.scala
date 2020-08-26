@@ -34,7 +34,7 @@ class Table protected () extends ConditionallyVisibleWidget {
   def columns: IList[TableColumn] = js.native
   def rows: IList[TableRow] = js.native
   def widthUnit: UnitEnum = js.native
-  def widthUnit(newValue: UnitEnum): js.Any = js.native
+  def widthUnit_=(newValue: UnitEnum): Unit = js.native
 }
 
 /* static members */

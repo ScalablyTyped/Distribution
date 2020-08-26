@@ -24,30 +24,26 @@ class DataAssociation protected () extends DataEntityBase {
   ) = this()
   @JSName("model")
   var model_FDataAssociation: IModel = js.native
-  def association(): js.Any = js.native
-  def association(newValue: IAssociationBase): js.Any = js.native
-  def associationByContract(): js.Any = js.native
-  def associationByContract(newValue: MsdAssociation): js.Any = js.native
-  @JSName("associationByContract")
-  def associationByContract_Union: MsdAssociation | Null = js.native
+  def association: IAssociationBase | Null = js.native
+  def associationByContract: MsdAssociation | Null = js.native
+  def associationByContract_=(newValue: MsdAssociation | Null): Unit = js.native
   def associationQualifiedName: String | Null = js.native
-  @JSName("association")
-  def association_Union: IAssociationBase | Null = js.native
+  def association_=(newValue: IAssociationBase | Null): Unit = js.native
   /**
     * In version 8.5.0: introduced
     */
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   /**
     * In version 8.0.0: introduced
     */
   def exposedAssociationName: String = js.native
-  def exposedAssociationName(newValue: String): js.Any = js.native
+  def exposedAssociationName_=(newValue: String): Unit = js.native
   /**
     * In version 8.5.0: introduced
     */
   def summary: String = js.native
-  def summary(newValue: String): js.Any = js.native
+  def summary_=(newValue: String): Unit = js.native
 }
 
 /* static members */

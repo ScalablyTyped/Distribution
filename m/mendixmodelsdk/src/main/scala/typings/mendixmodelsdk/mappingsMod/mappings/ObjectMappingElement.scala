@@ -25,35 +25,29 @@ abstract class ObjectMappingElement protected () extends MappingElement {
   ) = this()
   @JSName("model")
   var model_FObjectMappingElement: IModel = js.native
-  def association(): js.Any = js.native
-  def association(newValue: IAssociationBase): js.Any = js.native
+  def association: IAssociationBase | Null = js.native
   def associationQualifiedName: String | Null = js.native
-  @JSName("association")
-  def association_Union: IAssociationBase | Null = js.native
+  def association_=(newValue: IAssociationBase | Null): Unit = js.native
   def children: IList[MappingElement] = js.native
-  def entity(): js.Any = js.native
-  def entity(newValue: IEntity): js.Any = js.native
+  def entity: IEntity | Null = js.native
   def entityQualifiedName: String | Null = js.native
-  @JSName("entity")
-  def entity_Union: IEntity | Null = js.native
+  def entity_=(newValue: IEntity | Null): Unit = js.native
   /**
     * In version 6.4.0: introduced
     */
   def isDefaultType: Boolean = js.native
-  def isDefaultType(newValue: Boolean): js.Any = js.native
-  def mappingMicroflowCall(): js.Any = js.native
-  def mappingMicroflowCall(newValue: MappingMicroflowCall): js.Any = js.native
-  @JSName("mappingMicroflowCall")
-  def mappingMicroflowCall_Union: MappingMicroflowCall | Null = js.native
+  def isDefaultType_=(newValue: Boolean): Unit = js.native
+  def mappingMicroflowCall: MappingMicroflowCall | Null = js.native
+  def mappingMicroflowCall_=(newValue: MappingMicroflowCall | Null): Unit = js.native
   def objectHandling: ObjectHandlingEnum = js.native
-  def objectHandling(newValue: ObjectHandlingEnum): js.Any = js.native
   def objectHandlingBackup: ObjectHandlingBackupEnum = js.native
-  def objectHandlingBackup(newValue: ObjectHandlingBackupEnum): js.Any = js.native
   /**
     * In version 7.17.0: introduced
     */
   def objectHandlingBackupAllowOverride: Boolean = js.native
-  def objectHandlingBackupAllowOverride(newValue: Boolean): js.Any = js.native
+  def objectHandlingBackupAllowOverride_=(newValue: Boolean): Unit = js.native
+  def objectHandlingBackup_=(newValue: ObjectHandlingBackupEnum): Unit = js.native
+  def objectHandling_=(newValue: ObjectHandlingEnum): Unit = js.native
 }
 
 /* static members */

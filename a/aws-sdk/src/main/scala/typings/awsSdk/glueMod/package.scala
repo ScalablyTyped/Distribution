@@ -95,6 +95,9 @@ package object glueMod {
     - typings.awsSdk.awsSdkStrings.CUSTOM_JDBC_CERT_STRING
     - typings.awsSdk.awsSdkStrings.CONNECTION_URL
     - typings.awsSdk.awsSdkStrings.KAFKA_BOOTSTRAP_SERVERS
+    - typings.awsSdk.awsSdkStrings.KAFKA_SSL_ENABLED
+    - typings.awsSdk.awsSdkStrings.KAFKA_CUSTOM_CERT
+    - typings.awsSdk.awsSdkStrings.KAFKA_SKIP_CUSTOM_CERT_VALIDATION
     - java.lang.String
   */
   type ConnectionPropertyKey = typings.awsSdk.glueMod._ConnectionPropertyKey | java.lang.String
@@ -161,6 +164,12 @@ package object glueMod {
   type Double = scala.Double
   type DynamoDBTargetList = js.Array[typings.awsSdk.glueMod.DynamoDBTarget]
   type EdgeList = js.Array[typings.awsSdk.glueMod.Edge]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.TRUE
+    - typings.awsSdk.awsSdkStrings.FALSE
+    - java.lang.String
+  */
+  type EnableHybridValues = typings.awsSdk.glueMod._EnableHybridValues | java.lang.String
   type ErrorByName = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.glueMod.ErrorDetail]
   type ErrorString = java.lang.String
   type ExecutionTime = scala.Double
@@ -178,6 +187,7 @@ package object glueMod {
   type GenericMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.glueMod.GenericString]
   type GenericString = java.lang.String
   type GetColumnNamesList = js.Array[typings.awsSdk.glueMod.NameString]
+  type GetResourcePoliciesResponseList = js.Array[typings.awsSdk.glueMod.GluePolicy]
   type GetTableVersionsList = js.Array[typings.awsSdk.glueMod.TableVersion]
   type GlueResourceArn = java.lang.String
   type GlueTables = js.Array[typings.awsSdk.glueMod.GlueTable]
@@ -249,6 +259,7 @@ package object glueMod {
   type MillisecondsCount = scala.Double
   type NameString = java.lang.String
   type NameStringList = js.Array[typings.awsSdk.glueMod.NameString]
+  type NodeIdList = js.Array[typings.awsSdk.glueMod.NameString]
   type NodeList = js.Array[typings.awsSdk.glueMod.Node]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CRAWLER
@@ -305,6 +316,12 @@ package object glueMod {
   type PythonVersionString = java.lang.String
   type RecordsCount = scala.Double
   type ReplaceBoolean = scala.Boolean
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.FOREIGN
+    - typings.awsSdk.awsSdkStrings.ALL
+    - java.lang.String
+  */
+  type ResourceShareType = typings.awsSdk.glueMod._ResourceShareType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.JAR
     - typings.awsSdk.awsSdkStrings.FILE

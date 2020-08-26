@@ -73,6 +73,7 @@ import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
 import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
+import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.DataDetectorTypes
 import typings.reactNative.mod.DocumentSelectionState
 import typings.reactNative.mod.GestureResponderEvent
@@ -89,346 +90,593 @@ import typings.reactNative.mod.TextInputKeyPressEventData
 import typings.reactNative.mod.TextInputScrollEventData
 import typings.reactNative.mod.TextInputSelectionChangeEventData
 import typings.reactNative.mod.TextInputSubmitEditingEventData
+import typings.reactNative.mod.TextInputTextInputEventData
 import typings.reactNative.mod.TextStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined utility-types.utility-types.Omit<react-native.react-native.TextInputProperties, 'onChange' | 'onFocus' | 'onBlur'> */
+@js.native
 trait TextInputProps extends js.Object {
-  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
-  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
-  var accessibilityHint: js.UndefOr[String] = js.undefined
-  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
-  var accessibilityLabel: js.UndefOr[String] = js.undefined
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
-  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
-  var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
-  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
-  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
-  var accessible: js.UndefOr[Boolean] = js.undefined
-  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
-  var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.undefined
+  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  var accessibilityHint: js.UndefOr[String] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+  var accessible: js.UndefOr[Boolean] = js.native
+  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.native
   var autoCompleteType: js.UndefOr[
     `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
-  ] = js.undefined
-  var autoCorrect: js.UndefOr[Boolean] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var blurOnSubmit: js.UndefOr[Boolean] = js.undefined
-  var caretHidden: js.UndefOr[Boolean] = js.undefined
-  var clearButtonMode: js.UndefOr[never | `while-editing` | `unless-editing` | always] = js.undefined
-  var clearTextOnFocus: js.UndefOr[Boolean] = js.undefined
-  var collapsable: js.UndefOr[Boolean] = js.undefined
-  var contextMenuHidden: js.UndefOr[Boolean] = js.undefined
-  var dataDetectorTypes: js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]] = js.undefined
-  var defaultValue: js.UndefOr[String] = js.undefined
-  var disableFullscreenUI: js.UndefOr[Boolean] = js.undefined
-  var editable: js.UndefOr[Boolean] = js.undefined
-  var enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined
-  var focusable: js.UndefOr[Boolean] = js.undefined
-  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
-  var hitSlop: js.UndefOr[Insets] = js.undefined
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
-  var importantForAutofill: js.UndefOr[auto | no | noExcludeDescendants | yes | yesExcludeDescendants] = js.undefined
-  var inlineImageLeft: js.UndefOr[String] = js.undefined
-  var inlineImagePadding: js.UndefOr[Double] = js.undefined
-  var inputAccessoryViewID: js.UndefOr[String] = js.undefined
-  var isTVSelectable: js.UndefOr[Boolean] = js.undefined
-  var keyboardAppearance: js.UndefOr[typings.antdMobileRn.antdMobileRnStrings.default | light | dark] = js.undefined
-  var keyboardType: js.UndefOr[KeyboardTypeOptions] = js.undefined
-  var maxFontSizeMultiplier: js.UndefOr[Double] = js.undefined
-  var maxLength: js.UndefOr[Double] = js.undefined
-  var multiline: js.UndefOr[Boolean] = js.undefined
-  var nativeID: js.UndefOr[String] = js.undefined
-  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
-  var numberOfLines: js.UndefOr[Double] = js.undefined
-  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
-  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
+  ] = js.native
+  var autoCorrect: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var blurOnSubmit: js.UndefOr[Boolean] = js.native
+  var caretHidden: js.UndefOr[Boolean] = js.native
+  var clearButtonMode: js.UndefOr[never | `while-editing` | `unless-editing` | always] = js.native
+  var clearTextOnFocus: js.UndefOr[Boolean] = js.native
+  var collapsable: js.UndefOr[Boolean] = js.native
+  var contextMenuHidden: js.UndefOr[Boolean] = js.native
+  var dataDetectorTypes: js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]] = js.native
+  var defaultValue: js.UndefOr[String] = js.native
+  var disableFullscreenUI: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.native
+  var enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.native
+  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+  var hitSlop: js.UndefOr[Insets] = js.native
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var importantForAutofill: js.UndefOr[auto | no | noExcludeDescendants | yes | yesExcludeDescendants] = js.native
+  var inlineImageLeft: js.UndefOr[String] = js.native
+  var inlineImagePadding: js.UndefOr[Double] = js.native
+  var inputAccessoryViewID: js.UndefOr[String] = js.native
+  var isTVSelectable: js.UndefOr[Boolean] = js.native
+  var keyboardAppearance: js.UndefOr[typings.antdMobileRn.antdMobileRnStrings.default | light | dark] = js.native
+  var keyboardType: js.UndefOr[KeyboardTypeOptions] = js.native
+  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.native
+  var maxLength: js.UndefOr[Double] = js.native
+  var multiline: js.UndefOr[Boolean] = js.native
+  var nativeID: js.UndefOr[String] = js.native
+  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+  var numberOfLines: js.UndefOr[Double] = js.native
+  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
   var onContentSizeChange: js.UndefOr[
     js.Function1[/* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData], Unit]
-  ] = js.undefined
-  var onEndEditing: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputEndEditingEventData], Unit]] = js.undefined
-  var onKeyPress: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputKeyPressEventData], Unit]] = js.undefined
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
-  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  var onScroll: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputScrollEventData], Unit]] = js.undefined
+  ] = js.native
+  var onEndEditing: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputEndEditingEventData], Unit]] = js.native
+  var onKeyPress: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputKeyPressEventData], Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onScroll: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputScrollEventData], Unit]] = js.native
   var onSelectionChange: js.UndefOr[
     js.Function1[/* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData], Unit]
-  ] = js.undefined
-  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
+  ] = js.native
+  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
   var onSubmitEditing: js.UndefOr[
     js.Function1[/* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData], Unit]
-  ] = js.undefined
-  var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var passwordRules: js.UndefOr[String] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var placeholderTextColor: js.UndefOr[String] = js.undefined
-  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
-  var rejectResponderTermination: js.UndefOr[Boolean] = js.undefined
-  var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
-  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
-  var returnKeyLabel: js.UndefOr[String] = js.undefined
-  var returnKeyType: js.UndefOr[ReturnKeyTypeOptions] = js.undefined
-  var scrollEnabled: js.UndefOr[Boolean] = js.undefined
-  var secureTextEntry: js.UndefOr[Boolean] = js.undefined
-  var selectTextOnFocus: js.UndefOr[Boolean] = js.undefined
-  var selection: js.UndefOr[Start] = js.undefined
-  var selectionColor: js.UndefOr[String] = js.undefined
-  var selectionState: js.UndefOr[DocumentSelectionState] = js.undefined
-  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
-  var showSoftInputOnFocus: js.UndefOr[Boolean] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
-  var testID: js.UndefOr[String] = js.undefined
-  var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.undefined
-  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+  ] = js.native
+  var onTextInput: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputTextInputEventData], Unit]] = js.native
+  var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var passwordRules: js.UndefOr[String | Null] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var placeholderTextColor: js.UndefOr[ColorValue] = js.native
+  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+  var rejectResponderTermination: js.UndefOr[Boolean | Null] = js.native
+  var removeClippedSubviews: js.UndefOr[Boolean] = js.native
+  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
+  var returnKeyLabel: js.UndefOr[String] = js.native
+  var returnKeyType: js.UndefOr[ReturnKeyTypeOptions] = js.native
+  var scrollEnabled: js.UndefOr[Boolean] = js.native
+  var secureTextEntry: js.UndefOr[Boolean] = js.native
+  var selectTextOnFocus: js.UndefOr[Boolean] = js.native
+  var selection: js.UndefOr[Start] = js.native
+  var selectionColor: js.UndefOr[ColorValue] = js.native
+  var selectionState: js.UndefOr[DocumentSelectionState] = js.native
+  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
+  var showSoftInputOnFocus: js.UndefOr[Boolean] = js.native
+  var spellCheck: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var testID: js.UndefOr[String] = js.native
+  var textAlignVertical: js.UndefOr[auto | top | bottom | center] = js.native
+  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.native
   var textContentType: js.UndefOr[
     none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
-  ] = js.undefined
-  var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
-  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
-  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
-  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
-  var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
-  var underlineColorAndroid: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var tvParallaxMagnification: js.UndefOr[Double] = js.native
+  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.native
+  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.native
+  var tvParallaxTiltAngle: js.UndefOr[Double] = js.native
+  var underlineColorAndroid: js.UndefOr[ColorValue] = js.native
+  var value: js.UndefOr[String] = js.native
 }
 
 object TextInputProps {
   @scala.inline
-  def apply(
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityValue: AccessibilityValue = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    allowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    autoCapitalize: none | sentences | words | characters = null,
-    autoCompleteType: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off = null,
-    autoCorrect: js.UndefOr[Boolean] = js.undefined,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    blurOnSubmit: js.UndefOr[Boolean] = js.undefined,
-    caretHidden: js.UndefOr[Boolean] = js.undefined,
-    clearButtonMode: never | `while-editing` | `unless-editing` | always = null,
-    clearTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    collapsable: js.UndefOr[Boolean] = js.undefined,
-    contextMenuHidden: js.UndefOr[Boolean] = js.undefined,
-    dataDetectorTypes: DataDetectorTypes | js.Array[DataDetectorTypes] = null,
-    defaultValue: String = null,
-    disableFullscreenUI: js.UndefOr[Boolean] = js.undefined,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined,
-    focusable: js.UndefOr[Boolean] = js.undefined,
-    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Insets = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    importantForAutofill: auto | no | noExcludeDescendants | yes | yesExcludeDescendants = null,
-    inlineImageLeft: String = null,
-    inlineImagePadding: js.UndefOr[Double] = js.undefined,
-    inputAccessoryViewID: String = null,
-    isTVSelectable: js.UndefOr[Boolean] = js.undefined,
-    keyboardAppearance: typings.antdMobileRn.antdMobileRnStrings.default | light | dark = null,
-    keyboardType: KeyboardTypeOptions = null,
-    maxFontSizeMultiplier: js.UndefOr[Double] = js.undefined,
-    maxLength: js.UndefOr[Double] = js.undefined,
-    multiline: js.UndefOr[Boolean] = js.undefined,
-    nativeID: String = null,
-    needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    numberOfLines: js.UndefOr[Double] = js.undefined,
-    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
-    onAccessibilityEscape: () => Unit = null,
-    onAccessibilityTap: () => Unit = null,
-    onChangeText: /* text */ String => Unit = null,
-    onContentSizeChange: /* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData] => Unit = null,
-    onEndEditing: /* e */ NativeSyntheticEvent[TextInputEndEditingEventData] => Unit = null,
-    onKeyPress: /* e */ NativeSyntheticEvent[TextInputKeyPressEventData] => Unit = null,
-    onLayout: /* event */ LayoutChangeEvent => Unit = null,
-    onMagicTap: () => Unit = null,
-    onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
-    onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onResponderEnd: /* event */ GestureResponderEvent => Unit = null,
-    onResponderGrant: /* event */ GestureResponderEvent => Unit = null,
-    onResponderMove: /* event */ GestureResponderEvent => Unit = null,
-    onResponderReject: /* event */ GestureResponderEvent => Unit = null,
-    onResponderRelease: /* event */ GestureResponderEvent => Unit = null,
-    onResponderStart: /* event */ GestureResponderEvent => Unit = null,
-    onResponderTerminate: /* event */ GestureResponderEvent => Unit = null,
-    onResponderTerminationRequest: /* event */ GestureResponderEvent => Boolean = null,
-    onScroll: /* e */ NativeSyntheticEvent[TextInputScrollEventData] => Unit = null,
-    onSelectionChange: /* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData] => Unit = null,
-    onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
-    onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onSubmitEditing: /* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData] => Unit = null,
-    onTouchCancel: /* event */ GestureResponderEvent => Unit = null,
-    onTouchEnd: /* event */ GestureResponderEvent => Unit = null,
-    onTouchEndCapture: /* event */ GestureResponderEvent => Unit = null,
-    onTouchMove: /* event */ GestureResponderEvent => Unit = null,
-    onTouchStart: /* event */ GestureResponderEvent => Unit = null,
-    passwordRules: String = null,
-    placeholder: String = null,
-    placeholderTextColor: String = null,
-    pointerEvents: `box-none` | none | `box-only` | auto = null,
-    rejectResponderTermination: js.UndefOr[Boolean] = js.undefined,
-    removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
-    returnKeyLabel: String = null,
-    returnKeyType: ReturnKeyTypeOptions = null,
-    scrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    secureTextEntry: js.UndefOr[Boolean] = js.undefined,
-    selectTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    selection: Start = null,
-    selectionColor: String = null,
-    selectionState: DocumentSelectionState = null,
-    shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    showSoftInputOnFocus: js.UndefOr[Boolean] = js.undefined,
-    spellCheck: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    testID: String = null,
-    textAlignVertical: auto | top | bottom | center = null,
-    textBreakStrategy: simple | highQuality | balanced = null,
-    textContentType: none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode = null,
-    tvParallaxMagnification: js.UndefOr[Double] = js.undefined,
-    tvParallaxProperties: TVParallaxProperties = null,
-    tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined,
-    tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined,
-    tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined,
-    underlineColorAndroid: String = null,
-    value: String = null
-  ): TextInputProps = {
+  def apply(): TextInputProps = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.get.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.get.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.get.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoCompleteType != null) __obj.updateDynamic("autoCompleteType")(autoCompleteType.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blurOnSubmit)) __obj.updateDynamic("blurOnSubmit")(blurOnSubmit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(caretHidden)) __obj.updateDynamic("caretHidden")(caretHidden.get.asInstanceOf[js.Any])
-    if (clearButtonMode != null) __obj.updateDynamic("clearButtonMode")(clearButtonMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearTextOnFocus)) __obj.updateDynamic("clearTextOnFocus")(clearTextOnFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(contextMenuHidden)) __obj.updateDynamic("contextMenuHidden")(contextMenuHidden.get.asInstanceOf[js.Any])
-    if (dataDetectorTypes != null) __obj.updateDynamic("dataDetectorTypes")(dataDetectorTypes.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFullscreenUI)) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablesReturnKeyAutomatically)) __obj.updateDynamic("enablesReturnKeyAutomatically")(enablesReturnKeyAutomatically.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (importantForAutofill != null) __obj.updateDynamic("importantForAutofill")(importantForAutofill.asInstanceOf[js.Any])
-    if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineImagePadding)) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.get.asInstanceOf[js.Any])
-    if (inputAccessoryViewID != null) __obj.updateDynamic("inputAccessoryViewID")(inputAccessoryViewID.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.get.asInstanceOf[js.Any])
-    if (keyboardAppearance != null) __obj.updateDynamic("keyboardAppearance")(keyboardAppearance.asInstanceOf[js.Any])
-    if (keyboardType != null) __obj.updateDynamic("keyboardType")(keyboardType.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFontSizeMultiplier)) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.get.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfLines)) __obj.updateDynamic("numberOfLines")(numberOfLines.get.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
-    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
-    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction1(onContentSizeChange))
-    if (onEndEditing != null) __obj.updateDynamic("onEndEditing")(js.Any.fromFunction1(onEndEditing))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
-    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction1(onSubmitEditing))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (passwordRules != null) __obj.updateDynamic("passwordRules")(passwordRules.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (placeholderTextColor != null) __obj.updateDynamic("placeholderTextColor")(placeholderTextColor.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectResponderTermination)) __obj.updateDynamic("rejectResponderTermination")(rejectResponderTermination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.get.asInstanceOf[js.Any])
-    if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel.asInstanceOf[js.Any])
-    if (returnKeyType != null) __obj.updateDynamic("returnKeyType")(returnKeyType.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureTextEntry)) __obj.updateDynamic("secureTextEntry")(secureTextEntry.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectTextOnFocus)) __obj.updateDynamic("selectTextOnFocus")(selectTextOnFocus.get.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
-    if (selectionState != null) __obj.updateDynamic("selectionState")(selectionState.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSoftInputOnFocus)) __obj.updateDynamic("showSoftInputOnFocus")(showSoftInputOnFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (textAlignVertical != null) __obj.updateDynamic("textAlignVertical")(textAlignVertical.asInstanceOf[js.Any])
-    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
-    if (textContentType != null) __obj.updateDynamic("textContentType")(textContentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxMagnification)) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.get.asInstanceOf[js.Any])
-    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxShiftDistanceX)) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxShiftDistanceY)) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxTiltAngle)) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.get.asInstanceOf[js.Any])
-    if (underlineColorAndroid != null) __obj.updateDynamic("underlineColorAndroid")(underlineColorAndroid.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputProps]
   }
+  @scala.inline
+  implicit class TextInputPropsOps[Self <: TextInputProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = this.set("accessibilityActions", js.Array(value :_*))
+    @scala.inline
+    def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = this.set("accessibilityActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityActions: Self = this.set("accessibilityActions", js.undefined)
+    @scala.inline
+    def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = this.set("accessibilityComponentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityComponentType: Self = this.set("accessibilityComponentType", js.undefined)
+    @scala.inline
+    def setAccessibilityElementsHidden(value: Boolean): Self = this.set("accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityElementsHidden: Self = this.set("accessibilityElementsHidden", js.undefined)
+    @scala.inline
+    def setAccessibilityHint(value: String): Self = this.set("accessibilityHint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityHint: Self = this.set("accessibilityHint", js.undefined)
+    @scala.inline
+    def setAccessibilityIgnoresInvertColors(value: Boolean): Self = this.set("accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityIgnoresInvertColors: Self = this.set("accessibilityIgnoresInvertColors", js.undefined)
+    @scala.inline
+    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    @scala.inline
+    def setAccessibilityLiveRegion(value: none | polite | assertive): Self = this.set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityLiveRegion: Self = this.set("accessibilityLiveRegion", js.undefined)
+    @scala.inline
+    def setAccessibilityRole(value: AccessibilityRole): Self = this.set("accessibilityRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityRole: Self = this.set("accessibilityRole", js.undefined)
+    @scala.inline
+    def setAccessibilityState(value: AccessibilityState): Self = this.set("accessibilityState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityState: Self = this.set("accessibilityState", js.undefined)
+    @scala.inline
+    def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = this.set("accessibilityTraits", js.Array(value :_*))
+    @scala.inline
+    def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = this.set("accessibilityTraits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityTraits: Self = this.set("accessibilityTraits", js.undefined)
+    @scala.inline
+    def setAccessibilityValue(value: AccessibilityValue): Self = this.set("accessibilityValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityValue: Self = this.set("accessibilityValue", js.undefined)
+    @scala.inline
+    def setAccessibilityViewIsModal(value: Boolean): Self = this.set("accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityViewIsModal: Self = this.set("accessibilityViewIsModal", js.undefined)
+    @scala.inline
+    def setAccessible(value: Boolean): Self = this.set("accessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessible: Self = this.set("accessible", js.undefined)
+    @scala.inline
+    def setAllowFontScaling(value: Boolean): Self = this.set("allowFontScaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFontScaling: Self = this.set("allowFontScaling", js.undefined)
+    @scala.inline
+    def setAutoCapitalize(value: none | sentences | words | characters): Self = this.set("autoCapitalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCapitalize: Self = this.set("autoCapitalize", js.undefined)
+    @scala.inline
+    def setAutoCompleteType(
+      value: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
+    ): Self = this.set("autoCompleteType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCompleteType: Self = this.set("autoCompleteType", js.undefined)
+    @scala.inline
+    def setAutoCorrect(value: Boolean): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setBlurOnSubmit(value: Boolean): Self = this.set("blurOnSubmit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlurOnSubmit: Self = this.set("blurOnSubmit", js.undefined)
+    @scala.inline
+    def setCaretHidden(value: Boolean): Self = this.set("caretHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaretHidden: Self = this.set("caretHidden", js.undefined)
+    @scala.inline
+    def setClearButtonMode(value: never | `while-editing` | `unless-editing` | always): Self = this.set("clearButtonMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearButtonMode: Self = this.set("clearButtonMode", js.undefined)
+    @scala.inline
+    def setClearTextOnFocus(value: Boolean): Self = this.set("clearTextOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearTextOnFocus: Self = this.set("clearTextOnFocus", js.undefined)
+    @scala.inline
+    def setCollapsable(value: Boolean): Self = this.set("collapsable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsable: Self = this.set("collapsable", js.undefined)
+    @scala.inline
+    def setContextMenuHidden(value: Boolean): Self = this.set("contextMenuHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextMenuHidden: Self = this.set("contextMenuHidden", js.undefined)
+    @scala.inline
+    def setDataDetectorTypesVarargs(value: DataDetectorTypes*): Self = this.set("dataDetectorTypes", js.Array(value :_*))
+    @scala.inline
+    def setDataDetectorTypes(value: DataDetectorTypes | js.Array[DataDetectorTypes]): Self = this.set("dataDetectorTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataDetectorTypes: Self = this.set("dataDetectorTypes", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisableFullscreenUI(value: Boolean): Self = this.set("disableFullscreenUI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableFullscreenUI: Self = this.set("disableFullscreenUI", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setEnablesReturnKeyAutomatically(value: Boolean): Self = this.set("enablesReturnKeyAutomatically", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablesReturnKeyAutomatically: Self = this.set("enablesReturnKeyAutomatically", js.undefined)
+    @scala.inline
+    def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusable: Self = this.set("focusable", js.undefined)
+    @scala.inline
+    def setHasTVPreferredFocus(value: Boolean): Self = this.set("hasTVPreferredFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasTVPreferredFocus: Self = this.set("hasTVPreferredFocus", js.undefined)
+    @scala.inline
+    def setHitSlop(value: Insets): Self = this.set("hitSlop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHitSlop: Self = this.set("hitSlop", js.undefined)
+    @scala.inline
+    def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = this.set("importantForAccessibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportantForAccessibility: Self = this.set("importantForAccessibility", js.undefined)
+    @scala.inline
+    def setImportantForAutofill(value: auto | no | noExcludeDescendants | yes | yesExcludeDescendants): Self = this.set("importantForAutofill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportantForAutofill: Self = this.set("importantForAutofill", js.undefined)
+    @scala.inline
+    def setInlineImageLeft(value: String): Self = this.set("inlineImageLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineImageLeft: Self = this.set("inlineImageLeft", js.undefined)
+    @scala.inline
+    def setInlineImagePadding(value: Double): Self = this.set("inlineImagePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineImagePadding: Self = this.set("inlineImagePadding", js.undefined)
+    @scala.inline
+    def setInputAccessoryViewID(value: String): Self = this.set("inputAccessoryViewID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAccessoryViewID: Self = this.set("inputAccessoryViewID", js.undefined)
+    @scala.inline
+    def setIsTVSelectable(value: Boolean): Self = this.set("isTVSelectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTVSelectable: Self = this.set("isTVSelectable", js.undefined)
+    @scala.inline
+    def setKeyboardAppearance(value: typings.antdMobileRn.antdMobileRnStrings.default | light | dark): Self = this.set("keyboardAppearance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardAppearance: Self = this.set("keyboardAppearance", js.undefined)
+    @scala.inline
+    def setKeyboardType(value: KeyboardTypeOptions): Self = this.set("keyboardType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardType: Self = this.set("keyboardType", js.undefined)
+    @scala.inline
+    def setMaxFontSizeMultiplier(value: Double): Self = this.set("maxFontSizeMultiplier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFontSizeMultiplier: Self = this.set("maxFontSizeMultiplier", js.undefined)
+    @scala.inline
+    def setMaxFontSizeMultiplierNull: Self = this.set("maxFontSizeMultiplier", null)
+    @scala.inline
+    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    @scala.inline
+    def setMultiline(value: Boolean): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    @scala.inline
+    def setNativeID(value: String): Self = this.set("nativeID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNativeID: Self = this.set("nativeID", js.undefined)
+    @scala.inline
+    def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = this.set("needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeedsOffscreenAlphaCompositing: Self = this.set("needsOffscreenAlphaCompositing", js.undefined)
+    @scala.inline
+    def setNumberOfLines(value: Double): Self = this.set("numberOfLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfLines: Self = this.set("numberOfLines", js.undefined)
+    @scala.inline
+    def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = this.set("onAccessibilityAction", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAccessibilityAction: Self = this.set("onAccessibilityAction", js.undefined)
+    @scala.inline
+    def setOnAccessibilityEscape(value: () => Unit): Self = this.set("onAccessibilityEscape", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnAccessibilityEscape: Self = this.set("onAccessibilityEscape", js.undefined)
+    @scala.inline
+    def setOnAccessibilityTap(value: () => Unit): Self = this.set("onAccessibilityTap", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnAccessibilityTap: Self = this.set("onAccessibilityTap", js.undefined)
+    @scala.inline
+    def setOnChangeText(value: /* text */ String => Unit): Self = this.set("onChangeText", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChangeText: Self = this.set("onChangeText", js.undefined)
+    @scala.inline
+    def setOnContentSizeChange(value: /* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData] => Unit): Self = this.set("onContentSizeChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContentSizeChange: Self = this.set("onContentSizeChange", js.undefined)
+    @scala.inline
+    def setOnEndEditing(value: /* e */ NativeSyntheticEvent[TextInputEndEditingEventData] => Unit): Self = this.set("onEndEditing", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEndEditing: Self = this.set("onEndEditing", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: /* e */ NativeSyntheticEvent[TextInputKeyPressEventData] => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = this.set("onLayout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLayout: Self = this.set("onLayout", js.undefined)
+    @scala.inline
+    def setOnMagicTap(value: () => Unit): Self = this.set("onMagicTap", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnMagicTap: Self = this.set("onMagicTap", js.undefined)
+    @scala.inline
+    def setOnMoveShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onMoveShouldSetResponder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMoveShouldSetResponder: Self = this.set("onMoveShouldSetResponder", js.undefined)
+    @scala.inline
+    def setOnMoveShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMoveShouldSetResponderCapture: Self = this.set("onMoveShouldSetResponderCapture", js.undefined)
+    @scala.inline
+    def setOnResponderEnd(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResponderEnd: Self = this.set("onResponderEnd", js.undefined)
+    @scala.inline
+    def setOnResponderGrant(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderGrant", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResponderGrant: Self = this.set("onResponderGrant", js.undefined)
+    @scala.inline
+    def setOnResponderMove(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResponderMove: Self = this.set("onResponderMove", js.undefined)
+    @scala.inline
+    def setOnResponderReject(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderReject", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResponderReject: Self = this.set("onResponderReject", js.undefined)
+    @scala.inline
+    def setOnResponderRelease(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderRelease", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResponderRelease: Self = this.set("onResponderRelease", js.undefined)
+    @scala.inline
+    def setOnResponderStart(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResponderStart: Self = this.set("onResponderStart", js.undefined)
+    @scala.inline
+    def setOnResponderTerminate(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onResponderTerminate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResponderTerminate: Self = this.set("onResponderTerminate", js.undefined)
+    @scala.inline
+    def setOnResponderTerminationRequest(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onResponderTerminationRequest", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResponderTerminationRequest: Self = this.set("onResponderTerminationRequest", js.undefined)
+    @scala.inline
+    def setOnScroll(value: /* e */ NativeSyntheticEvent[TextInputScrollEventData] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnSelectionChange(value: /* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData] => Unit): Self = this.set("onSelectionChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelectionChange: Self = this.set("onSelectionChange", js.undefined)
+    @scala.inline
+    def setOnStartShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onStartShouldSetResponder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStartShouldSetResponder: Self = this.set("onStartShouldSetResponder", js.undefined)
+    @scala.inline
+    def setOnStartShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = this.set("onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStartShouldSetResponderCapture: Self = this.set("onStartShouldSetResponderCapture", js.undefined)
+    @scala.inline
+    def setOnSubmitEditing(value: /* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData] => Unit): Self = this.set("onSubmitEditing", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubmitEditing: Self = this.set("onSubmitEditing", js.undefined)
+    @scala.inline
+    def setOnTextInput(value: /* e */ NativeSyntheticEvent[TextInputTextInputEventData] => Unit): Self = this.set("onTextInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTextInput: Self = this.set("onTextInput", js.undefined)
+    @scala.inline
+    def setOnTouchCancel(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchEndCapture(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchEndCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEndCapture: Self = this.set("onTouchEndCapture", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setPasswordRules(value: String): Self = this.set("passwordRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordRules: Self = this.set("passwordRules", js.undefined)
+    @scala.inline
+    def setPasswordRulesNull: Self = this.set("passwordRules", null)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPlaceholderTextColor(value: ColorValue): Self = this.set("placeholderTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholderTextColor: Self = this.set("placeholderTextColor", js.undefined)
+    @scala.inline
+    def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = this.set("pointerEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerEvents: Self = this.set("pointerEvents", js.undefined)
+    @scala.inline
+    def setRejectResponderTermination(value: Boolean): Self = this.set("rejectResponderTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectResponderTermination: Self = this.set("rejectResponderTermination", js.undefined)
+    @scala.inline
+    def setRejectResponderTerminationNull: Self = this.set("rejectResponderTermination", null)
+    @scala.inline
+    def setRemoveClippedSubviews(value: Boolean): Self = this.set("removeClippedSubviews", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveClippedSubviews: Self = this.set("removeClippedSubviews", js.undefined)
+    @scala.inline
+    def setRenderToHardwareTextureAndroid(value: Boolean): Self = this.set("renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderToHardwareTextureAndroid: Self = this.set("renderToHardwareTextureAndroid", js.undefined)
+    @scala.inline
+    def setReturnKeyLabel(value: String): Self = this.set("returnKeyLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnKeyLabel: Self = this.set("returnKeyLabel", js.undefined)
+    @scala.inline
+    def setReturnKeyType(value: ReturnKeyTypeOptions): Self = this.set("returnKeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnKeyType: Self = this.set("returnKeyType", js.undefined)
+    @scala.inline
+    def setScrollEnabled(value: Boolean): Self = this.set("scrollEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollEnabled: Self = this.set("scrollEnabled", js.undefined)
+    @scala.inline
+    def setSecureTextEntry(value: Boolean): Self = this.set("secureTextEntry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecureTextEntry: Self = this.set("secureTextEntry", js.undefined)
+    @scala.inline
+    def setSelectTextOnFocus(value: Boolean): Self = this.set("selectTextOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectTextOnFocus: Self = this.set("selectTextOnFocus", js.undefined)
+    @scala.inline
+    def setSelection(value: Start): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setSelectionColor(value: ColorValue): Self = this.set("selectionColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionColor: Self = this.set("selectionColor", js.undefined)
+    @scala.inline
+    def setSelectionState(value: DocumentSelectionState): Self = this.set("selectionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionState: Self = this.set("selectionState", js.undefined)
+    @scala.inline
+    def setShouldRasterizeIOS(value: Boolean): Self = this.set("shouldRasterizeIOS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShouldRasterizeIOS: Self = this.set("shouldRasterizeIOS", js.undefined)
+    @scala.inline
+    def setShowSoftInputOnFocus(value: Boolean): Self = this.set("showSoftInputOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSoftInputOnFocus: Self = this.set("showSoftInputOnFocus", js.undefined)
+    @scala.inline
+    def setSpellCheck(value: Boolean): Self = this.set("spellCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellCheck: Self = this.set("spellCheck", js.undefined)
+    @scala.inline
+    def setStyle(value: StyleProp[TextStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+    @scala.inline
+    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestID: Self = this.set("testID", js.undefined)
+    @scala.inline
+    def setTextAlignVertical(value: auto | top | bottom | center): Self = this.set("textAlignVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlignVertical: Self = this.set("textAlignVertical", js.undefined)
+    @scala.inline
+    def setTextBreakStrategy(value: simple | highQuality | balanced): Self = this.set("textBreakStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextBreakStrategy: Self = this.set("textBreakStrategy", js.undefined)
+    @scala.inline
+    def setTextContentType(
+      value: none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode
+    ): Self = this.set("textContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextContentType: Self = this.set("textContentType", js.undefined)
+    @scala.inline
+    def setTvParallaxMagnification(value: Double): Self = this.set("tvParallaxMagnification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTvParallaxMagnification: Self = this.set("tvParallaxMagnification", js.undefined)
+    @scala.inline
+    def setTvParallaxProperties(value: TVParallaxProperties): Self = this.set("tvParallaxProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTvParallaxProperties: Self = this.set("tvParallaxProperties", js.undefined)
+    @scala.inline
+    def setTvParallaxShiftDistanceX(value: Double): Self = this.set("tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTvParallaxShiftDistanceX: Self = this.set("tvParallaxShiftDistanceX", js.undefined)
+    @scala.inline
+    def setTvParallaxShiftDistanceY(value: Double): Self = this.set("tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTvParallaxShiftDistanceY: Self = this.set("tvParallaxShiftDistanceY", js.undefined)
+    @scala.inline
+    def setTvParallaxTiltAngle(value: Double): Self = this.set("tvParallaxTiltAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTvParallaxTiltAngle: Self = this.set("tvParallaxTiltAngle", js.undefined)
+    @scala.inline
+    def setUnderlineColorAndroid(value: ColorValue): Self = this.set("underlineColorAndroid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnderlineColorAndroid: Self = this.set("underlineColorAndroid", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

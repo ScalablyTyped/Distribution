@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jsdevtools/readdir-enhanced" : "6.0.3"
+      "@jsdevtools/readdir-enhanced" : "6.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@jsdevtools/readdir-enhanced" : "6.0.3"
+      "@jsdevtools/readdir-enhanced" : "6.0.4"
     }
   ],
   "compile-devDependencies" : [

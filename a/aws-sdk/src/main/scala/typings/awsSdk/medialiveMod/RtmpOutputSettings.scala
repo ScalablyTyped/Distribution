@@ -26,17 +26,36 @@ trait RtmpOutputSettings extends js.Object {
 
 object RtmpOutputSettings {
   @scala.inline
-  def apply(
-    Destination: OutputLocationRef,
-    CertificateMode: RtmpOutputCertificateMode = null,
-    ConnectionRetryInterval: js.UndefOr[integerMin1] = js.undefined,
-    NumRetries: js.UndefOr[integerMin0] = js.undefined
-  ): RtmpOutputSettings = {
+  def apply(Destination: OutputLocationRef): RtmpOutputSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
-    if (CertificateMode != null) __obj.updateDynamic("CertificateMode")(CertificateMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectionRetryInterval)) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumRetries)) __obj.updateDynamic("NumRetries")(NumRetries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RtmpOutputSettings]
   }
+  @scala.inline
+  implicit class RtmpOutputSettingsOps[Self <: RtmpOutputSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: OutputLocationRef): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateMode(value: RtmpOutputCertificateMode): Self = this.set("CertificateMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateMode: Self = this.set("CertificateMode", js.undefined)
+    @scala.inline
+    def setConnectionRetryInterval(value: integerMin1): Self = this.set("ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionRetryInterval: Self = this.set("ConnectionRetryInterval", js.undefined)
+    @scala.inline
+    def setNumRetries(value: integerMin0): Self = this.set("NumRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumRetries: Self = this.set("NumRetries", js.undefined)
+  }
+  
 }
 

@@ -33,6 +33,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     */
   def create(): GaxiosPromise[SchemaMessage] = js.native
   def create(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def create(params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesCreate): GaxiosPromise[SchemaMessage] = js.native
   def create(
     params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesCreate,
@@ -63,6 +64,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesDelete,
@@ -94,6 +96,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     */
   def get(): GaxiosPromise[SchemaMessage] = js.native
   def get(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def get(params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesGet): GaxiosPromise[SchemaMessage] = js.native
   def get(
     params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesGet,
@@ -129,6 +132,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     */
   def ingest(): GaxiosPromise[SchemaIngestMessageResponse] = js.native
   def ingest(callback: BodyResponseCallback[SchemaIngestMessageResponse]): Unit = js.native
+  def ingest(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIngestMessageResponse] = js.native
   def ingest(params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesIngest): GaxiosPromise[SchemaIngestMessageResponse] = js.native
   def ingest(
     params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesIngest,
@@ -164,6 +168,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     */
   def list(): GaxiosPromise[SchemaListMessagesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMessagesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListMessagesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesList): GaxiosPromise[SchemaListMessagesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesList,
@@ -196,6 +201,7 @@ class ResourceProjectsLocationsDatasetsHl7v2storesMessages protected () extends 
     */
   def patch(): GaxiosPromise[SchemaMessage] = js.native
   def patch(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def patch(params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesPatch): GaxiosPromise[SchemaMessage] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesPatch,

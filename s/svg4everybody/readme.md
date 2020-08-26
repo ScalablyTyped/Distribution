@@ -12,7 +12,7 @@ Use external SVG spritemaps in any browser
 | Keywords           | contents, defs, externals, fallbacks, icons, ie8s, ie9s, oldies, safaris, sprites, spritemaps, svgs, symbols, uses |
 | # releases         | 1 |
 | # dependents       | 44 |
-| # downloads        | 3247525 |
+| # downloads        | 3336083 |
 | # stars            | 5 |
 
 ## Links

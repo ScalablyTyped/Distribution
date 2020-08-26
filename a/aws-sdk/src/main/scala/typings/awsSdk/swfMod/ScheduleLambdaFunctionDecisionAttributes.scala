@@ -30,18 +30,38 @@ trait ScheduleLambdaFunctionDecisionAttributes extends js.Object {
 
 object ScheduleLambdaFunctionDecisionAttributes {
   @scala.inline
-  def apply(
-    id: FunctionId,
-    name: FunctionName,
-    control: Data = null,
-    input: FunctionInput = null,
-    startToCloseTimeout: DurationInSecondsOptional = null
-  ): ScheduleLambdaFunctionDecisionAttributes = {
+  def apply(id: FunctionId, name: FunctionName): ScheduleLambdaFunctionDecisionAttributes = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (startToCloseTimeout != null) __obj.updateDynamic("startToCloseTimeout")(startToCloseTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleLambdaFunctionDecisionAttributes]
   }
+  @scala.inline
+  implicit class ScheduleLambdaFunctionDecisionAttributesOps[Self <: ScheduleLambdaFunctionDecisionAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: FunctionId): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: FunctionName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setControl(value: Data): Self = this.set("control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControl: Self = this.set("control", js.undefined)
+    @scala.inline
+    def setInput(value: FunctionInput): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("startToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartToCloseTimeout: Self = this.set("startToCloseTimeout", js.undefined)
+  }
+  
 }
 

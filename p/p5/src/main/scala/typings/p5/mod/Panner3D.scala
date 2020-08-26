@@ -80,6 +80,7 @@ trait Panner3D extends js.Object {
     *   Set the rolloff factor and max distance
     */
   def setFalloff(): Unit = js.native
+  def setFalloff(maxDistance: js.UndefOr[scala.Nothing], rolloffFactor: Double): Unit = js.native
   def setFalloff(maxDistance: Double): Unit = js.native
   def setFalloff(maxDistance: Double, rolloffFactor: Double): Unit = js.native
 }

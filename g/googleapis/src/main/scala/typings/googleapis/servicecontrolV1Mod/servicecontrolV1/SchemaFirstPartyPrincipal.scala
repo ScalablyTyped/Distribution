@@ -22,11 +22,30 @@ trait SchemaFirstPartyPrincipal extends js.Object {
 
 object SchemaFirstPartyPrincipal {
   @scala.inline
-  def apply(principalEmail: String = null, serviceMetadata: StringDictionary[js.Any] = null): SchemaFirstPartyPrincipal = {
+  def apply(): SchemaFirstPartyPrincipal = {
     val __obj = js.Dynamic.literal()
-    if (principalEmail != null) __obj.updateDynamic("principalEmail")(principalEmail.asInstanceOf[js.Any])
-    if (serviceMetadata != null) __obj.updateDynamic("serviceMetadata")(serviceMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFirstPartyPrincipal]
   }
+  @scala.inline
+  implicit class SchemaFirstPartyPrincipalOps[Self <: SchemaFirstPartyPrincipal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrincipalEmail(value: String): Self = this.set("principalEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalEmail: Self = this.set("principalEmail", js.undefined)
+    @scala.inline
+    def setServiceMetadata(value: StringDictionary[js.Any]): Self = this.set("serviceMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceMetadata: Self = this.set("serviceMetadata", js.undefined)
+  }
+  
 }
 

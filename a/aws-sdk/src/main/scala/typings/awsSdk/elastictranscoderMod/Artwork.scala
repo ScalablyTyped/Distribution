@@ -38,24 +38,50 @@ trait Artwork extends js.Object {
 
 object Artwork {
   @scala.inline
-  def apply(
-    AlbumArtFormat: JpgOrPng = null,
-    Encryption: Encryption = null,
-    InputKey: WatermarkKey = null,
-    MaxHeight: DigitsOrAuto = null,
-    MaxWidth: DigitsOrAuto = null,
-    PaddingPolicy: PaddingPolicy = null,
-    SizingPolicy: SizingPolicy = null
-  ): Artwork = {
+  def apply(): Artwork = {
     val __obj = js.Dynamic.literal()
-    if (AlbumArtFormat != null) __obj.updateDynamic("AlbumArtFormat")(AlbumArtFormat.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (InputKey != null) __obj.updateDynamic("InputKey")(InputKey.asInstanceOf[js.Any])
-    if (MaxHeight != null) __obj.updateDynamic("MaxHeight")(MaxHeight.asInstanceOf[js.Any])
-    if (MaxWidth != null) __obj.updateDynamic("MaxWidth")(MaxWidth.asInstanceOf[js.Any])
-    if (PaddingPolicy != null) __obj.updateDynamic("PaddingPolicy")(PaddingPolicy.asInstanceOf[js.Any])
-    if (SizingPolicy != null) __obj.updateDynamic("SizingPolicy")(SizingPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Artwork]
   }
+  @scala.inline
+  implicit class ArtworkOps[Self <: Artwork] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlbumArtFormat(value: JpgOrPng): Self = this.set("AlbumArtFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbumArtFormat: Self = this.set("AlbumArtFormat", js.undefined)
+    @scala.inline
+    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setInputKey(value: WatermarkKey): Self = this.set("InputKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputKey: Self = this.set("InputKey", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: DigitsOrAuto): Self = this.set("MaxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("MaxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: DigitsOrAuto): Self = this.set("MaxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("MaxWidth", js.undefined)
+    @scala.inline
+    def setPaddingPolicy(value: PaddingPolicy): Self = this.set("PaddingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingPolicy: Self = this.set("PaddingPolicy", js.undefined)
+    @scala.inline
+    def setSizingPolicy(value: SizingPolicy): Self = this.set("SizingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizingPolicy: Self = this.set("SizingPolicy", js.undefined)
+  }
+  
 }
 

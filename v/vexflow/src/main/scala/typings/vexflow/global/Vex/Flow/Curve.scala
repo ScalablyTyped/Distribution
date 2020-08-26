@@ -1,8 +1,6 @@
 package typings.vexflow.global.Vex.Flow
 
-import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Cps
-import typings.vexflow.anon.Direction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,16 +11,6 @@ class Curve protected ()
   extends typings.vexflow.Vex.Flow.Curve {
   def this(from: typings.vexflow.Vex.Flow.Note, to: typings.vexflow.Vex.Flow.Note) = this()
   def this(from: typings.vexflow.Vex.Flow.Note, to: typings.vexflow.Vex.Flow.Note, options: Cps) = this()
-  /* CompleteClass */
-  override def draw(): Boolean = js.native
-  /* CompleteClass */
-  override def isPartial(): Boolean = js.native
-  /* CompleteClass */
-  override def renderCurve(params: Direction): Unit = js.native
-  /* CompleteClass */
-  override def setContext(context: IRenderContext): typings.vexflow.Vex.Flow.Curve = js.native
-  /* CompleteClass */
-  override def setNotes(from: typings.vexflow.Vex.Flow.Note, to: typings.vexflow.Vex.Flow.Note): typings.vexflow.Vex.Flow.Curve = js.native
 }
 
 /* static members */

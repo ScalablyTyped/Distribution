@@ -25,16 +25,34 @@ trait SchemaPowerManagementEvent extends js.Object {
 
 object SchemaPowerManagementEvent {
   @scala.inline
-  def apply(
-    batteryLevel: js.UndefOr[Double] = js.undefined,
-    createTime: String = null,
-    eventType: String = null
-  ): SchemaPowerManagementEvent = {
+  def apply(): SchemaPowerManagementEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batteryLevel)) __obj.updateDynamic("batteryLevel")(batteryLevel.get.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPowerManagementEvent]
   }
+  @scala.inline
+  implicit class SchemaPowerManagementEventOps[Self <: SchemaPowerManagementEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatteryLevel(value: Double): Self = this.set("batteryLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatteryLevel: Self = this.set("batteryLevel", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("eventType", js.undefined)
+  }
+  
 }
 

@@ -22,10 +22,30 @@ trait UpdatePublishingDestinationRequest extends js.Object {
 
 object UpdatePublishingDestinationRequest {
   @scala.inline
-  def apply(DestinationId: String, DetectorId: DetectorId, DestinationProperties: DestinationProperties = null): UpdatePublishingDestinationRequest = {
+  def apply(DestinationId: String, DetectorId: DetectorId): UpdatePublishingDestinationRequest = {
     val __obj = js.Dynamic.literal(DestinationId = DestinationId.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
-    if (DestinationProperties != null) __obj.updateDynamic("DestinationProperties")(DestinationProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePublishingDestinationRequest]
   }
+  @scala.inline
+  implicit class UpdatePublishingDestinationRequestOps[Self <: UpdatePublishingDestinationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationId(value: String): Self = this.set("DestinationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationProperties(value: DestinationProperties): Self = this.set("DestinationProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationProperties: Self = this.set("DestinationProperties", js.undefined)
+  }
+  
 }
 

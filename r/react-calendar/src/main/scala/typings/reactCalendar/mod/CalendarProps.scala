@@ -9,195 +9,338 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalendarProps extends js.Object {
-  var activeStartDate: js.UndefOr[Date] = js.undefined
-  var calendarType: js.UndefOr[CalendarType] = js.undefined
-  var className: js.UndefOr[String | js.Array[String]] = js.undefined
-  var defaultActiveStartDate: js.UndefOr[Date] = js.undefined
-  var defaultValue: js.UndefOr[Date | js.Array[Date]] = js.undefined
-  var defaultView: js.UndefOr[Detail] = js.undefined
-  var formatLongDate: js.UndefOr[FormatterCallback] = js.undefined
-  var formatMonth: js.UndefOr[FormatterCallback] = js.undefined
-  var formatMonthYear: js.UndefOr[FormatterCallback] = js.undefined
-  var formatShortWeekday: js.UndefOr[FormatterCallback] = js.undefined
-  var formatYear: js.UndefOr[FormatterCallback] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var maxDate: js.UndefOr[Date] = js.undefined
-  var maxDetail: js.UndefOr[Detail] = js.undefined
-  var minDate: js.UndefOr[Date] = js.undefined
-  var minDetail: js.UndefOr[Detail] = js.undefined
-  var navigationAriaLabel: js.UndefOr[String] = js.undefined
+  var activeStartDate: js.UndefOr[Date] = js.native
+  var calendarType: js.UndefOr[CalendarType] = js.native
+  var className: js.UndefOr[String | js.Array[String]] = js.native
+  var defaultActiveStartDate: js.UndefOr[Date] = js.native
+  var defaultValue: js.UndefOr[Date | js.Array[Date]] = js.native
+  var defaultView: js.UndefOr[Detail] = js.native
+  var formatLongDate: js.UndefOr[FormatterCallback] = js.native
+  var formatMonth: js.UndefOr[FormatterCallback] = js.native
+  var formatMonthYear: js.UndefOr[FormatterCallback] = js.native
+  var formatShortWeekday: js.UndefOr[FormatterCallback] = js.native
+  var formatYear: js.UndefOr[FormatterCallback] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var maxDate: js.UndefOr[Date] = js.native
+  var maxDetail: js.UndefOr[Detail] = js.native
+  var minDate: js.UndefOr[Date] = js.native
+  var minDetail: js.UndefOr[Detail] = js.native
+  var navigationAriaLabel: js.UndefOr[String] = js.native
   var navigationLabel: js.UndefOr[
     js.Function1[
       /* props */ typings.reactCalendar.anon.Date, 
       String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
     ]
-  ] = js.undefined
-  var next2AriaLabel: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var next2AriaLabel: js.UndefOr[String] = js.native
   var next2Label: js.UndefOr[
     String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-  ] = js.undefined
-  var nextAriaLabel: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var nextAriaLabel: js.UndefOr[String] = js.native
   var nextLabel: js.UndefOr[
     String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-  ] = js.undefined
-  var onActiveStartDateChange: js.UndefOr[ViewCallback] = js.undefined
-  var onChange: js.UndefOr[OnChangeDateCallback] = js.undefined
-  var onClickDay: js.UndefOr[DateCallback] = js.undefined
-  var onClickDecade: js.UndefOr[DateCallback] = js.undefined
-  var onClickMonth: js.UndefOr[DateCallback] = js.undefined
-  var onClickWeekNumber: js.UndefOr[ClickWeekNumberCallback] = js.undefined
-  var onClickYear: js.UndefOr[DateCallback] = js.undefined
-  var onDrillDown: js.UndefOr[ViewCallback] = js.undefined
-  var onDrillUp: js.UndefOr[ViewCallback] = js.undefined
-  var onViewChange: js.UndefOr[ViewCallback] = js.undefined
-  var prev2AriaLabel: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var onActiveStartDateChange: js.UndefOr[ViewCallback] = js.native
+  var onChange: js.UndefOr[OnChangeDateCallback] = js.native
+  var onClickDay: js.UndefOr[DateCallback] = js.native
+  var onClickDecade: js.UndefOr[DateCallback] = js.native
+  var onClickMonth: js.UndefOr[DateCallback] = js.native
+  var onClickWeekNumber: js.UndefOr[ClickWeekNumberCallback] = js.native
+  var onClickYear: js.UndefOr[DateCallback] = js.native
+  var onDrillDown: js.UndefOr[ViewCallback] = js.native
+  var onDrillUp: js.UndefOr[ViewCallback] = js.native
+  var onViewChange: js.UndefOr[ViewCallback] = js.native
+  var prev2AriaLabel: js.UndefOr[String] = js.native
   var prev2Label: js.UndefOr[
     String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-  ] = js.undefined
-  var prevAriaLabel: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var prevAriaLabel: js.UndefOr[String] = js.native
   var prevLabel: js.UndefOr[
     String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-  ] = js.undefined
+  ] = js.native
   var renderChildren: js.UndefOr[
     js.Function1[
       /* props */ CalendarTileProperties, 
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
     ]
-  ] = js.undefined
+  ] = js.native
    // For backwards compatibility
-  var returnValue: js.UndefOr[start | end | range] = js.undefined
-  var selectRange: js.UndefOr[Boolean] = js.undefined
-  var showDoubleView: js.UndefOr[Boolean] = js.undefined
-  var showFixedNumberOfWeeks: js.UndefOr[Boolean] = js.undefined
-  var showNavigation: js.UndefOr[Boolean] = js.undefined
-  var showNeighboringMonth: js.UndefOr[Boolean] = js.undefined
-  var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
+  var returnValue: js.UndefOr[start | end | range] = js.native
+  var selectRange: js.UndefOr[Boolean] = js.native
+  var showDoubleView: js.UndefOr[Boolean] = js.native
+  var showFixedNumberOfWeeks: js.UndefOr[Boolean] = js.native
+  var showNavigation: js.UndefOr[Boolean] = js.native
+  var showNeighboringMonth: js.UndefOr[Boolean] = js.native
+  var showWeekNumbers: js.UndefOr[Boolean] = js.native
   var tileClassName: js.UndefOr[
     String | js.Array[String] | (js.Function1[/* props */ CalendarTileProperties, String | js.Array[String] | Null])
-  ] = js.undefined
+  ] = js.native
   var tileContent: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | (js.Function1[
       /* props */ CalendarTileProperties, 
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
     ])
-  ] = js.undefined
-  var tileDisabled: js.UndefOr[js.Function1[/* props */ CalendarTilePropertiesact, Boolean]] = js.undefined
-  var value: js.UndefOr[Date | js.Array[Date] | Null] = js.undefined
-  var view: js.UndefOr[Detail] = js.undefined
+  ] = js.native
+  var tileDisabled: js.UndefOr[js.Function1[/* props */ CalendarTilePropertiesact, Boolean]] = js.native
+  var value: js.UndefOr[Date | js.Array[Date] | Null] = js.native
+  var view: js.UndefOr[Detail] = js.native
 }
 
 object CalendarProps {
   @scala.inline
-  def apply(
-    activeStartDate: Date = null,
-    calendarType: CalendarType = null,
-    className: String | js.Array[String] = null,
-    defaultActiveStartDate: Date = null,
-    defaultValue: Date | js.Array[Date] = null,
-    defaultView: Detail = null,
-    formatLongDate: (/* locale */ String, /* date */ Date) => String = null,
-    formatMonth: (/* locale */ String, /* date */ Date) => String = null,
-    formatMonthYear: (/* locale */ String, /* date */ Date) => String = null,
-    formatShortWeekday: (/* locale */ String, /* date */ Date) => String = null,
-    formatYear: (/* locale */ String, /* date */ Date) => String = null,
-    locale: String = null,
-    maxDate: Date = null,
-    maxDetail: Detail = null,
-    minDate: Date = null,
-    minDetail: Detail = null,
-    navigationAriaLabel: String = null,
-    navigationLabel: /* props */ typings.reactCalendar.anon.Date => String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null = null,
-    next2AriaLabel: String = null,
-    next2Label: js.UndefOr[
-      Null | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-    ] = js.undefined,
-    nextAriaLabel: String = null,
-    nextLabel: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) = null,
-    onActiveStartDateChange: /* props */ ViewCallbackProperties => Unit = null,
-    onChange: /* date */ Date | js.Array[Date] => Unit = null,
-    onClickDay: /* date */ Date => Unit = null,
-    onClickDecade: /* date */ Date => Unit = null,
-    onClickMonth: /* date */ Date => Unit = null,
-    onClickWeekNumber: (/* weekNumber */ Double, /* date */ Date) => Unit = null,
-    onClickYear: /* date */ Date => Unit = null,
-    onDrillDown: /* props */ ViewCallbackProperties => Unit = null,
-    onDrillUp: /* props */ ViewCallbackProperties => Unit = null,
-    onViewChange: /* props */ ViewCallbackProperties => Unit = null,
-    prev2AriaLabel: String = null,
-    prev2Label: js.UndefOr[
-      Null | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-    ] = js.undefined,
-    prevAriaLabel: String = null,
-    prevLabel: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) = null,
-    renderChildren: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null = null,
-    returnValue: start | end | range = null,
-    selectRange: js.UndefOr[Boolean] = js.undefined,
-    showDoubleView: js.UndefOr[Boolean] = js.undefined,
-    showFixedNumberOfWeeks: js.UndefOr[Boolean] = js.undefined,
-    showNavigation: js.UndefOr[Boolean] = js.undefined,
-    showNeighboringMonth: js.UndefOr[Boolean] = js.undefined,
-    showWeekNumbers: js.UndefOr[Boolean] = js.undefined,
-    tileClassName: String | js.Array[String] | (js.Function1[/* props */ CalendarTileProperties, String | js.Array[String] | Null]) = null,
-    tileContent: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | (js.Function1[
-      /* props */ CalendarTileProperties, 
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
-    ]) = null,
-    tileDisabled: /* props */ CalendarTilePropertiesact => Boolean = null,
-    value: js.UndefOr[Null | Date | js.Array[Date]] = js.undefined,
-    view: Detail = null
-  ): CalendarProps = {
+  def apply(): CalendarProps = {
     val __obj = js.Dynamic.literal()
-    if (activeStartDate != null) __obj.updateDynamic("activeStartDate")(activeStartDate.asInstanceOf[js.Any])
-    if (calendarType != null) __obj.updateDynamic("calendarType")(calendarType.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultActiveStartDate != null) __obj.updateDynamic("defaultActiveStartDate")(defaultActiveStartDate.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView.asInstanceOf[js.Any])
-    if (formatLongDate != null) __obj.updateDynamic("formatLongDate")(js.Any.fromFunction2(formatLongDate))
-    if (formatMonth != null) __obj.updateDynamic("formatMonth")(js.Any.fromFunction2(formatMonth))
-    if (formatMonthYear != null) __obj.updateDynamic("formatMonthYear")(js.Any.fromFunction2(formatMonthYear))
-    if (formatShortWeekday != null) __obj.updateDynamic("formatShortWeekday")(js.Any.fromFunction2(formatShortWeekday))
-    if (formatYear != null) __obj.updateDynamic("formatYear")(js.Any.fromFunction2(formatYear))
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (maxDetail != null) __obj.updateDynamic("maxDetail")(maxDetail.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minDetail != null) __obj.updateDynamic("minDetail")(minDetail.asInstanceOf[js.Any])
-    if (navigationAriaLabel != null) __obj.updateDynamic("navigationAriaLabel")(navigationAriaLabel.asInstanceOf[js.Any])
-    if (navigationLabel != null) __obj.updateDynamic("navigationLabel")(js.Any.fromFunction1(navigationLabel))
-    if (next2AriaLabel != null) __obj.updateDynamic("next2AriaLabel")(next2AriaLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(next2Label)) __obj.updateDynamic("next2Label")(next2Label.asInstanceOf[js.Any])
-    if (nextAriaLabel != null) __obj.updateDynamic("nextAriaLabel")(nextAriaLabel.asInstanceOf[js.Any])
-    if (nextLabel != null) __obj.updateDynamic("nextLabel")(nextLabel.asInstanceOf[js.Any])
-    if (onActiveStartDateChange != null) __obj.updateDynamic("onActiveStartDateChange")(js.Any.fromFunction1(onActiveStartDateChange))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClickDay != null) __obj.updateDynamic("onClickDay")(js.Any.fromFunction1(onClickDay))
-    if (onClickDecade != null) __obj.updateDynamic("onClickDecade")(js.Any.fromFunction1(onClickDecade))
-    if (onClickMonth != null) __obj.updateDynamic("onClickMonth")(js.Any.fromFunction1(onClickMonth))
-    if (onClickWeekNumber != null) __obj.updateDynamic("onClickWeekNumber")(js.Any.fromFunction2(onClickWeekNumber))
-    if (onClickYear != null) __obj.updateDynamic("onClickYear")(js.Any.fromFunction1(onClickYear))
-    if (onDrillDown != null) __obj.updateDynamic("onDrillDown")(js.Any.fromFunction1(onDrillDown))
-    if (onDrillUp != null) __obj.updateDynamic("onDrillUp")(js.Any.fromFunction1(onDrillUp))
-    if (onViewChange != null) __obj.updateDynamic("onViewChange")(js.Any.fromFunction1(onViewChange))
-    if (prev2AriaLabel != null) __obj.updateDynamic("prev2AriaLabel")(prev2AriaLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(prev2Label)) __obj.updateDynamic("prev2Label")(prev2Label.asInstanceOf[js.Any])
-    if (prevAriaLabel != null) __obj.updateDynamic("prevAriaLabel")(prevAriaLabel.asInstanceOf[js.Any])
-    if (prevLabel != null) __obj.updateDynamic("prevLabel")(prevLabel.asInstanceOf[js.Any])
-    if (renderChildren != null) __obj.updateDynamic("renderChildren")(js.Any.fromFunction1(renderChildren))
-    if (returnValue != null) __obj.updateDynamic("returnValue")(returnValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectRange)) __obj.updateDynamic("selectRange")(selectRange.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDoubleView)) __obj.updateDynamic("showDoubleView")(showDoubleView.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFixedNumberOfWeeks)) __obj.updateDynamic("showFixedNumberOfWeeks")(showFixedNumberOfWeeks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNavigation)) __obj.updateDynamic("showNavigation")(showNavigation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNeighboringMonth)) __obj.updateDynamic("showNeighboringMonth")(showNeighboringMonth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.get.asInstanceOf[js.Any])
-    if (tileClassName != null) __obj.updateDynamic("tileClassName")(tileClassName.asInstanceOf[js.Any])
-    if (tileContent != null) __obj.updateDynamic("tileContent")(tileContent.asInstanceOf[js.Any])
-    if (tileDisabled != null) __obj.updateDynamic("tileDisabled")(js.Any.fromFunction1(tileDisabled))
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarProps]
   }
+  @scala.inline
+  implicit class CalendarPropsOps[Self <: CalendarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveStartDate(value: Date): Self = this.set("activeStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveStartDate: Self = this.set("activeStartDate", js.undefined)
+    @scala.inline
+    def setCalendarType(value: CalendarType): Self = this.set("calendarType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarType: Self = this.set("calendarType", js.undefined)
+    @scala.inline
+    def setClassNameVarargs(value: String*): Self = this.set("className", js.Array(value :_*))
+    @scala.inline
+    def setClassName(value: String | js.Array[String]): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDefaultActiveStartDate(value: Date): Self = this.set("defaultActiveStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultActiveStartDate: Self = this.set("defaultActiveStartDate", js.undefined)
+    @scala.inline
+    def setDefaultValueVarargs(value: Date*): Self = this.set("defaultValue", js.Array(value :_*))
+    @scala.inline
+    def setDefaultValue(value: Date | js.Array[Date]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDefaultView(value: Detail): Self = this.set("defaultView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultView: Self = this.set("defaultView", js.undefined)
+    @scala.inline
+    def setFormatLongDate(value: (/* locale */ String, /* date */ Date) => String): Self = this.set("formatLongDate", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFormatLongDate: Self = this.set("formatLongDate", js.undefined)
+    @scala.inline
+    def setFormatMonth(value: (/* locale */ String, /* date */ Date) => String): Self = this.set("formatMonth", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFormatMonth: Self = this.set("formatMonth", js.undefined)
+    @scala.inline
+    def setFormatMonthYear(value: (/* locale */ String, /* date */ Date) => String): Self = this.set("formatMonthYear", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFormatMonthYear: Self = this.set("formatMonthYear", js.undefined)
+    @scala.inline
+    def setFormatShortWeekday(value: (/* locale */ String, /* date */ Date) => String): Self = this.set("formatShortWeekday", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFormatShortWeekday: Self = this.set("formatShortWeekday", js.undefined)
+    @scala.inline
+    def setFormatYear(value: (/* locale */ String, /* date */ Date) => String): Self = this.set("formatYear", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFormatYear: Self = this.set("formatYear", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMaxDate(value: Date): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    @scala.inline
+    def setMaxDetail(value: Detail): Self = this.set("maxDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDetail: Self = this.set("maxDetail", js.undefined)
+    @scala.inline
+    def setMinDate(value: Date): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    @scala.inline
+    def setMinDetail(value: Detail): Self = this.set("minDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDetail: Self = this.set("minDetail", js.undefined)
+    @scala.inline
+    def setNavigationAriaLabel(value: String): Self = this.set("navigationAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigationAriaLabel: Self = this.set("navigationAriaLabel", js.undefined)
+    @scala.inline
+    def setNavigationLabel(
+      value: /* props */ typings.reactCalendar.anon.Date => String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+    ): Self = this.set("navigationLabel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNavigationLabel: Self = this.set("navigationLabel", js.undefined)
+    @scala.inline
+    def setNext2AriaLabel(value: String): Self = this.set("next2AriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNext2AriaLabel: Self = this.set("next2AriaLabel", js.undefined)
+    @scala.inline
+    def setNext2Label(
+      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+    ): Self = this.set("next2Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNext2Label: Self = this.set("next2Label", js.undefined)
+    @scala.inline
+    def setNext2LabelNull: Self = this.set("next2Label", null)
+    @scala.inline
+    def setNextAriaLabel(value: String): Self = this.set("nextAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextAriaLabel: Self = this.set("nextAriaLabel", js.undefined)
+    @scala.inline
+    def setNextLabel(
+      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+    ): Self = this.set("nextLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextLabel: Self = this.set("nextLabel", js.undefined)
+    @scala.inline
+    def setOnActiveStartDateChange(value: /* props */ ViewCallbackProperties => Unit): Self = this.set("onActiveStartDateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnActiveStartDateChange: Self = this.set("onActiveStartDateChange", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* date */ Date | js.Array[Date] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClickDay(value: /* date */ Date => Unit): Self = this.set("onClickDay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClickDay: Self = this.set("onClickDay", js.undefined)
+    @scala.inline
+    def setOnClickDecade(value: /* date */ Date => Unit): Self = this.set("onClickDecade", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClickDecade: Self = this.set("onClickDecade", js.undefined)
+    @scala.inline
+    def setOnClickMonth(value: /* date */ Date => Unit): Self = this.set("onClickMonth", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClickMonth: Self = this.set("onClickMonth", js.undefined)
+    @scala.inline
+    def setOnClickWeekNumber(value: (/* weekNumber */ Double, /* date */ Date) => Unit): Self = this.set("onClickWeekNumber", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClickWeekNumber: Self = this.set("onClickWeekNumber", js.undefined)
+    @scala.inline
+    def setOnClickYear(value: /* date */ Date => Unit): Self = this.set("onClickYear", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClickYear: Self = this.set("onClickYear", js.undefined)
+    @scala.inline
+    def setOnDrillDown(value: /* props */ ViewCallbackProperties => Unit): Self = this.set("onDrillDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrillDown: Self = this.set("onDrillDown", js.undefined)
+    @scala.inline
+    def setOnDrillUp(value: /* props */ ViewCallbackProperties => Unit): Self = this.set("onDrillUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrillUp: Self = this.set("onDrillUp", js.undefined)
+    @scala.inline
+    def setOnViewChange(value: /* props */ ViewCallbackProperties => Unit): Self = this.set("onViewChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnViewChange: Self = this.set("onViewChange", js.undefined)
+    @scala.inline
+    def setPrev2AriaLabel(value: String): Self = this.set("prev2AriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrev2AriaLabel: Self = this.set("prev2AriaLabel", js.undefined)
+    @scala.inline
+    def setPrev2Label(
+      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+    ): Self = this.set("prev2Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrev2Label: Self = this.set("prev2Label", js.undefined)
+    @scala.inline
+    def setPrev2LabelNull: Self = this.set("prev2Label", null)
+    @scala.inline
+    def setPrevAriaLabel(value: String): Self = this.set("prevAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevAriaLabel: Self = this.set("prevAriaLabel", js.undefined)
+    @scala.inline
+    def setPrevLabel(
+      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
+    ): Self = this.set("prevLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevLabel: Self = this.set("prevLabel", js.undefined)
+    @scala.inline
+    def setRenderChildren(
+      value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+    ): Self = this.set("renderChildren", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderChildren: Self = this.set("renderChildren", js.undefined)
+    @scala.inline
+    def setReturnValue(value: start | end | range): Self = this.set("returnValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnValue: Self = this.set("returnValue", js.undefined)
+    @scala.inline
+    def setSelectRange(value: Boolean): Self = this.set("selectRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectRange: Self = this.set("selectRange", js.undefined)
+    @scala.inline
+    def setShowDoubleView(value: Boolean): Self = this.set("showDoubleView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDoubleView: Self = this.set("showDoubleView", js.undefined)
+    @scala.inline
+    def setShowFixedNumberOfWeeks(value: Boolean): Self = this.set("showFixedNumberOfWeeks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFixedNumberOfWeeks: Self = this.set("showFixedNumberOfWeeks", js.undefined)
+    @scala.inline
+    def setShowNavigation(value: Boolean): Self = this.set("showNavigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNavigation: Self = this.set("showNavigation", js.undefined)
+    @scala.inline
+    def setShowNeighboringMonth(value: Boolean): Self = this.set("showNeighboringMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNeighboringMonth: Self = this.set("showNeighboringMonth", js.undefined)
+    @scala.inline
+    def setShowWeekNumbers(value: Boolean): Self = this.set("showWeekNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowWeekNumbers: Self = this.set("showWeekNumbers", js.undefined)
+    @scala.inline
+    def setTileClassNameVarargs(value: String*): Self = this.set("tileClassName", js.Array(value :_*))
+    @scala.inline
+    def setTileClassNameFunction1(value: /* props */ CalendarTileProperties => String | js.Array[String] | Null): Self = this.set("tileClassName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTileClassName(
+      value: String | js.Array[String] | (js.Function1[/* props */ CalendarTileProperties, String | js.Array[String] | Null])
+    ): Self = this.set("tileClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileClassName: Self = this.set("tileClassName", js.undefined)
+    @scala.inline
+    def setTileContentFunction1(
+      value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+    ): Self = this.set("tileContent", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTileContent(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | (js.Function1[
+          /* props */ CalendarTileProperties, 
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ _) | Null
+        ])
+    ): Self = this.set("tileContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileContent: Self = this.set("tileContent", js.undefined)
+    @scala.inline
+    def setTileDisabled(value: /* props */ CalendarTilePropertiesact => Boolean): Self = this.set("tileDisabled", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTileDisabled: Self = this.set("tileDisabled", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: Date*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: Date | js.Array[Date]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueNull: Self = this.set("value", null)
+    @scala.inline
+    def setView(value: Detail): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

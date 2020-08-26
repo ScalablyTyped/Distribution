@@ -33,11 +33,30 @@ trait SchemaSourceRepository extends js.Object {
 
 object SchemaSourceRepository {
   @scala.inline
-  def apply(deployedUrl: String = null, url: String = null): SchemaSourceRepository = {
+  def apply(): SchemaSourceRepository = {
     val __obj = js.Dynamic.literal()
-    if (deployedUrl != null) __obj.updateDynamic("deployedUrl")(deployedUrl.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceRepository]
   }
+  @scala.inline
+  implicit class SchemaSourceRepositoryOps[Self <: SchemaSourceRepository] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeployedUrl(value: String): Self = this.set("deployedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployedUrl: Self = this.set("deployedUrl", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

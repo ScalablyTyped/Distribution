@@ -65,7 +65,7 @@ object pagespeedonlineMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Pagespeedonline
               ]
             ]
@@ -75,7 +75,7 @@ object pagespeedonlineMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline
               ]
             ]
@@ -85,7 +85,7 @@ object pagespeedonlineMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline
               ]
             ]
@@ -95,7 +95,7 @@ object pagespeedonlineMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline
               ]
             ]

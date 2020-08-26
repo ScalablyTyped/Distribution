@@ -7,80 +7,98 @@ import scala.scalajs.js.annotation._
 /**
   * Transaction Related Information
   */
+@js.native
 trait BundleEntryResponse extends BackboneElement {
   /**
     * Contains extended information for property 'etag'.
     */
-  var _etag: js.UndefOr[Element] = js.undefined
+  var _etag: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'lastModified'.
     */
-  var _lastModified: js.UndefOr[Element] = js.undefined
+  var _lastModified: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'location'.
     */
-  var _location: js.UndefOr[Element] = js.undefined
+  var _location: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * The etag for the resource (if relevant)
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String] = js.native
   /**
     * Server's date time modified
     */
-  var lastModified: js.UndefOr[instant] = js.undefined
+  var lastModified: js.UndefOr[instant] = js.native
   /**
     * The location, if the operation returns a location
     */
-  var location: js.UndefOr[uri] = js.undefined
+  var location: js.UndefOr[uri] = js.native
   /**
     * OperationOutcome with hints and warnings (for batch/transaction)
     */
-  var outcome: js.UndefOr[Resource] = js.undefined
+  var outcome: js.UndefOr[Resource] = js.native
   /**
     * Status response code (text optional)
     */
-  var status: String
+  var status: String = js.native
 }
 
 object BundleEntryResponse {
   @scala.inline
-  def apply(
-    status: String,
-    _etag: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _lastModified: Element = null,
-    _location: Element = null,
-    _status: Element = null,
-    etag: String = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    lastModified: instant = null,
-    location: uri = null,
-    modifierExtension: js.Array[Extension] = null,
-    outcome: Resource = null
-  ): BundleEntryResponse = {
+  def apply(status: String): BundleEntryResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (_etag != null) __obj.updateDynamic("_etag")(_etag.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_lastModified != null) __obj.updateDynamic("_lastModified")(_lastModified.asInstanceOf[js.Any])
-    if (_location != null) __obj.updateDynamic("_location")(_location.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleEntryResponse]
   }
+  @scala.inline
+  implicit class BundleEntryResponseOps[Self <: BundleEntryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_etag(value: Element): Self = this.set("_etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_etag: Self = this.set("_etag", js.undefined)
+    @scala.inline
+    def set_lastModified(value: Element): Self = this.set("_lastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_lastModified: Self = this.set("_lastModified", js.undefined)
+    @scala.inline
+    def set_location(value: Element): Self = this.set("_location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_location: Self = this.set("_location", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setLastModified(value: instant): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    @scala.inline
+    def setLocation(value: uri): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setOutcome(value: Resource): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutcome: Self = this.set("outcome", js.undefined)
+  }
+  
 }
 

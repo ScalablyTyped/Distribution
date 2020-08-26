@@ -7,83 +7,97 @@ import scala.scalajs.js.annotation._
 /**
   * Contains a collection of resources
   */
+@js.native
 trait Bundle
   extends ResourceBase
      with Resource {
   /**
     * Contains extended information for property 'total'.
     */
-  var _total: js.UndefOr[Element] = js.undefined
+  var _total: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.undefined
+  var _type: js.UndefOr[Element] = js.native
   /**
     * Entry in the bundle - will have a resource, or information
     */
-  var entry: js.UndefOr[js.Array[BundleEntry]] = js.undefined
+  var entry: js.UndefOr[js.Array[BundleEntry]] = js.native
   /**
     * Persistent identifier for the bundle
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Links related to this Bundle
     */
-  var link: js.UndefOr[js.Array[BundleLink]] = js.undefined
+  var link: js.UndefOr[js.Array[BundleLink]] = js.native
   /**
     * Digital Signature
     */
-  var signature: js.UndefOr[Signature] = js.undefined
+  var signature: js.UndefOr[Signature] = js.native
   /**
     * If search, the total number of matches
     */
-  var total: js.UndefOr[unsignedInt] = js.undefined
+  var total: js.UndefOr[unsignedInt] = js.native
   /**
     * document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection
     */
-  var `type`: code
+  var `type`: code = js.native
 }
 
 object Bundle {
   @scala.inline
-  def apply(
-    `type`: code,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _total: Element = null,
-    _type: Element = null,
-    entry: js.Array[BundleEntry] = null,
-    id: id = null,
-    identifier: Identifier = null,
-    implicitRules: uri = null,
-    language: code = null,
-    link: js.Array[BundleLink] = null,
-    meta: Meta = null,
-    resourceType: code = null,
-    signature: Signature = null,
-    total: js.UndefOr[unsignedInt] = js.undefined
-  ): Bundle = {
+  def apply(`type`: code): Bundle = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_total != null) __obj.updateDynamic("_total")(_total.asInstanceOf[js.Any])
-    if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundle]
   }
+  @scala.inline
+  implicit class BundleOps[Self <: Bundle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_total(value: Element): Self = this.set("_total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_total: Self = this.set("_total", js.undefined)
+    @scala.inline
+    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_type: Self = this.set("_type", js.undefined)
+    @scala.inline
+    def setEntryVarargs(value: BundleEntry*): Self = this.set("entry", js.Array(value :_*))
+    @scala.inline
+    def setEntry(value: js.Array[BundleEntry]): Self = this.set("entry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntry: Self = this.set("entry", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setLinkVarargs(value: BundleLink*): Self = this.set("link", js.Array(value :_*))
+    @scala.inline
+    def setLink(value: js.Array[BundleLink]): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setSignature(value: Signature): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+    @scala.inline
+    def setTotal(value: unsignedInt): Self = this.set("total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("total", js.undefined)
+  }
+  
 }
 

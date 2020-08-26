@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core/lib/common", "mergeR")
 @js.native
 object mergeR extends js.Object {
-  def apply(memo: Obj, item: Obj): Obj = js.native
+  def apply(memo: Obj, item: Obj): js.Any = js.native
 }
 

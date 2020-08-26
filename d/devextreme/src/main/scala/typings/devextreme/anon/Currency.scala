@@ -33,32 +33,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Currency extends _format {
-  var currency: js.UndefOr[String] = js.undefined
-  var formatter: js.UndefOr[js.Function1[/* value */ Double | typings.std.Date, String]] = js.undefined
-  var parser: js.UndefOr[js.Function1[/* value */ String, Double | typings.std.Date]] = js.undefined
-  var precision: js.UndefOr[Double] = js.undefined
+  var currency: js.UndefOr[String] = js.native
+  var formatter: js.UndefOr[js.Function1[/* value */ Double | typings.std.Date, String]] = js.native
+  var parser: js.UndefOr[js.Function1[/* value */ String, Double | typings.std.Date]] = js.native
+  var precision: js.UndefOr[Double] = js.native
   var `type`: js.UndefOr[
     billions | currency | day | decimal_ | exponential | fixedPoint | largeNumber | longDate | longTime | millions | millisecond | month | monthAndDay | monthAndYear | percent | quarter | quarterAndYear | shortDate | shortTime | thousands | trillions | year | dayOfWeek | hour | longDateLongTime | minute | second | shortDateShortTime
-  ] = js.undefined
+  ] = js.native
 }
 
 object Currency {
   @scala.inline
-  def apply(
-    currency: String = null,
-    formatter: /* value */ Double | typings.std.Date => String = null,
-    parser: /* value */ String => Double | typings.std.Date = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    `type`: billions | currency | day | decimal_ | exponential | fixedPoint | largeNumber | longDate | longTime | millions | millisecond | month | monthAndDay | monthAndYear | percent | quarter | quarterAndYear | shortDate | shortTime | thousands | trillions | year | dayOfWeek | hour | longDateLongTime | minute | second | shortDateShortTime = null
-  ): Currency = {
+  def apply(): Currency = {
     val __obj = js.Dynamic.literal()
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (parser != null) __obj.updateDynamic("parser")(js.Any.fromFunction1(parser))
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Currency]
   }
+  @scala.inline
+  implicit class CurrencyOps[Self <: Currency] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setFormatter(value: /* value */ Double | typings.std.Date => String): Self = this.set("formatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setParser(value: /* value */ String => Double | typings.std.Date): Self = this.set("parser", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteParser: Self = this.set("parser", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setType(
+      value: billions | currency | day | decimal_ | exponential | fixedPoint | largeNumber | longDate | longTime | millions | millisecond | month | monthAndDay | monthAndYear | percent | quarter | quarterAndYear | shortDate | shortTime | thousands | trillions | year | dayOfWeek | hour | longDateLongTime | minute | second | shortDateShortTime
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

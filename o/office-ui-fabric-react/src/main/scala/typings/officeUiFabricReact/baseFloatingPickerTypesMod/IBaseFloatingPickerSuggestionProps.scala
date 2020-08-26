@@ -6,27 +6,52 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/Suggestions.types.ISuggestionsControlProps<any>, 'shouldSelectFirstItem' | 'headerItemsProps' | 'footerItemsProps' | 'showRemoveButtons'> */
+@js.native
 trait IBaseFloatingPickerSuggestionProps extends js.Object {
-  var footerItemsProps: js.UndefOr[js.Array[ISuggestionsHeaderFooterProps]] = js.undefined
-  var headerItemsProps: js.UndefOr[js.Array[ISuggestionsHeaderFooterProps]] = js.undefined
-  var shouldSelectFirstItem: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var showRemoveButtons: js.UndefOr[Boolean] = js.undefined
+  var footerItemsProps: js.UndefOr[js.Array[ISuggestionsHeaderFooterProps]] = js.native
+  var headerItemsProps: js.UndefOr[js.Array[ISuggestionsHeaderFooterProps]] = js.native
+  var shouldSelectFirstItem: js.UndefOr[js.Function0[Boolean]] = js.native
+  var showRemoveButtons: js.UndefOr[Boolean] = js.native
 }
 
 object IBaseFloatingPickerSuggestionProps {
   @scala.inline
-  def apply(
-    footerItemsProps: js.Array[ISuggestionsHeaderFooterProps] = null,
-    headerItemsProps: js.Array[ISuggestionsHeaderFooterProps] = null,
-    shouldSelectFirstItem: () => Boolean = null,
-    showRemoveButtons: js.UndefOr[Boolean] = js.undefined
-  ): IBaseFloatingPickerSuggestionProps = {
+  def apply(): IBaseFloatingPickerSuggestionProps = {
     val __obj = js.Dynamic.literal()
-    if (footerItemsProps != null) __obj.updateDynamic("footerItemsProps")(footerItemsProps.asInstanceOf[js.Any])
-    if (headerItemsProps != null) __obj.updateDynamic("headerItemsProps")(headerItemsProps.asInstanceOf[js.Any])
-    if (shouldSelectFirstItem != null) __obj.updateDynamic("shouldSelectFirstItem")(js.Any.fromFunction0(shouldSelectFirstItem))
-    if (!js.isUndefined(showRemoveButtons)) __obj.updateDynamic("showRemoveButtons")(showRemoveButtons.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseFloatingPickerSuggestionProps]
   }
+  @scala.inline
+  implicit class IBaseFloatingPickerSuggestionPropsOps[Self <: IBaseFloatingPickerSuggestionProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFooterItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = this.set("footerItemsProps", js.Array(value :_*))
+    @scala.inline
+    def setFooterItemsProps(value: js.Array[ISuggestionsHeaderFooterProps]): Self = this.set("footerItemsProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterItemsProps: Self = this.set("footerItemsProps", js.undefined)
+    @scala.inline
+    def setHeaderItemsPropsVarargs(value: ISuggestionsHeaderFooterProps*): Self = this.set("headerItemsProps", js.Array(value :_*))
+    @scala.inline
+    def setHeaderItemsProps(value: js.Array[ISuggestionsHeaderFooterProps]): Self = this.set("headerItemsProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderItemsProps: Self = this.set("headerItemsProps", js.undefined)
+    @scala.inline
+    def setShouldSelectFirstItem(value: () => Boolean): Self = this.set("shouldSelectFirstItem", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteShouldSelectFirstItem: Self = this.set("shouldSelectFirstItem", js.undefined)
+    @scala.inline
+    def setShowRemoveButtons(value: Boolean): Self = this.set("showRemoveButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowRemoveButtons: Self = this.set("showRemoveButtons", js.undefined)
+  }
+  
 }
 

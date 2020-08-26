@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides container windows implementing the {@link com.sun.star.awt.XWindow} interface. */
+@js.native
 trait XContainerWindowProvider extends XInterface {
   /**
     * creates a window for the given URL
@@ -18,7 +19,7 @@ trait XContainerWindowProvider extends XInterface {
     * @see com.sun.star.awt.XContainerWindowEventHandler
     * @throws com::sun::star::lang::IllegalArgumentException if no window for the given URL is found or if the URL is invalid or xParent is null.
     */
-  def createContainerWindow(URL: String, WindowType: String, xParent: XWindowPeer, xHandler: XInterface): XWindow
+  def createContainerWindow(URL: String, WindowType: String, xParent: XWindowPeer, xHandler: XInterface): XWindow = js.native
 }
 
 object XContainerWindowProvider {
@@ -32,5 +33,20 @@ object XContainerWindowProvider {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createContainerWindow = js.Any.fromFunction4(createContainerWindow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XContainerWindowProvider]
   }
+  @scala.inline
+  implicit class XContainerWindowProviderOps[Self <: XContainerWindowProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateContainerWindow(value: (String, String, XWindowPeer, XInterface) => XWindow): Self = this.set("createContainerWindow", js.Any.fromFunction4(value))
+  }
+  
 }
 

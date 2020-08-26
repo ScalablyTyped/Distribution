@@ -11,7 +11,34 @@ object FoldingRange extends js.Object {
     * Creates a new FoldingRange literal.
     */
   def create(startLine: Double, endLine: Double): typings.vscodeLanguageserverTypes.mod.FoldingRange = js.native
+  def create(
+    startLine: Double,
+    endLine: Double,
+    startCharacter: js.UndefOr[scala.Nothing],
+    endCharacter: js.UndefOr[scala.Nothing],
+    kind: String
+  ): typings.vscodeLanguageserverTypes.mod.FoldingRange = js.native
+  def create(
+    startLine: Double,
+    endLine: Double,
+    startCharacter: js.UndefOr[scala.Nothing],
+    endCharacter: Double
+  ): typings.vscodeLanguageserverTypes.mod.FoldingRange = js.native
+  def create(
+    startLine: Double,
+    endLine: Double,
+    startCharacter: js.UndefOr[scala.Nothing],
+    endCharacter: Double,
+    kind: String
+  ): typings.vscodeLanguageserverTypes.mod.FoldingRange = js.native
   def create(startLine: Double, endLine: Double, startCharacter: Double): typings.vscodeLanguageserverTypes.mod.FoldingRange = js.native
+  def create(
+    startLine: Double,
+    endLine: Double,
+    startCharacter: Double,
+    endCharacter: js.UndefOr[scala.Nothing],
+    kind: String
+  ): typings.vscodeLanguageserverTypes.mod.FoldingRange = js.native
   def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double): typings.vscodeLanguageserverTypes.mod.FoldingRange = js.native
   def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double, kind: String): typings.vscodeLanguageserverTypes.mod.FoldingRange = js.native
   /**

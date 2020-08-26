@@ -52,42 +52,58 @@ trait ParamsResourceConversionPatch extends StandardParameters {
 
 object ParamsResourceConversionPatch {
   @scala.inline
-  def apply(
-    advertiserId: String = null,
-    agencyId: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    endDate: js.UndefOr[Double] = js.undefined,
-    engineAccountId: String = null,
-    fields: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    requestBody: SchemaConversionList = null,
-    rowCount: js.UndefOr[Double] = js.undefined,
-    startDate: js.UndefOr[Double] = js.undefined,
-    startRow: js.UndefOr[Double] = js.undefined,
-    userIp: String = null
-  ): ParamsResourceConversionPatch = {
+  def apply(): ParamsResourceConversionPatch = {
     val __obj = js.Dynamic.literal()
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(endDate)) __obj.updateDynamic("endDate")(endDate.get.asInstanceOf[js.Any])
-    if (engineAccountId != null) __obj.updateDynamic("engineAccountId")(engineAccountId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startDate)) __obj.updateDynamic("startDate")(startDate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceConversionPatch]
   }
+  @scala.inline
+  implicit class ParamsResourceConversionPatchOps[Self <: ParamsResourceConversionPatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAgencyId(value: String): Self = this.set("agencyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgencyId: Self = this.set("agencyId", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setEndDate(value: Double): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setEngineAccountId(value: String): Self = this.set("engineAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineAccountId: Self = this.set("engineAccountId", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaConversionList): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    @scala.inline
+    def setStartDate(value: Double): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    @scala.inline
+    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartRow: Self = this.set("startRow", js.undefined)
+  }
+  
 }
 

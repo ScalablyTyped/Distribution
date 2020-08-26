@@ -22,10 +22,32 @@ trait OperationFilter extends js.Object {
 
 object OperationFilter {
   @scala.inline
-  def apply(Name: OperationFilterName, Values: FilterValues, Condition: FilterCondition = null): OperationFilter = {
+  def apply(Name: OperationFilterName, Values: FilterValues): OperationFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
-    if (Condition != null) __obj.updateDynamic("Condition")(Condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationFilter]
   }
+  @scala.inline
+  implicit class OperationFilterOps[Self <: OperationFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: OperationFilterName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValuesVarargs(value: FilterValue*): Self = this.set("Values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: FilterValues): Self = this.set("Values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCondition(value: FilterCondition): Self = this.set("Condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("Condition", js.undefined)
+  }
+  
 }
 

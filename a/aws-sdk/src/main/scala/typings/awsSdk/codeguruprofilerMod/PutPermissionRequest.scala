@@ -26,15 +26,34 @@ trait PutPermissionRequest extends js.Object {
 
 object PutPermissionRequest {
   @scala.inline
-  def apply(
-    actionGroup: ActionGroup,
-    principals: Principals,
-    profilingGroupName: ProfilingGroupName,
-    revisionId: RevisionId = null
-  ): PutPermissionRequest = {
+  def apply(actionGroup: ActionGroup, principals: Principals, profilingGroupName: ProfilingGroupName): PutPermissionRequest = {
     val __obj = js.Dynamic.literal(actionGroup = actionGroup.asInstanceOf[js.Any], principals = principals.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutPermissionRequest]
   }
+  @scala.inline
+  implicit class PutPermissionRequestOps[Self <: PutPermissionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionGroup(value: ActionGroup): Self = this.set("actionGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrincipalsVarargs(value: Principal*): Self = this.set("principals", js.Array(value :_*))
+    @scala.inline
+    def setPrincipals(value: Principals): Self = this.set("principals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevisionId(value: RevisionId): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+  }
+  
 }
 

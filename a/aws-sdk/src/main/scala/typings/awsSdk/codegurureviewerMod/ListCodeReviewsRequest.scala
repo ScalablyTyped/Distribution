@@ -34,21 +34,50 @@ trait ListCodeReviewsRequest extends js.Object {
 
 object ListCodeReviewsRequest {
   @scala.inline
-  def apply(
-    Type: Type,
-    MaxResults: js.UndefOr[ListCodeReviewsMaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    ProviderTypes: ProviderTypes = null,
-    RepositoryNames: RepositoryNames = null,
-    States: JobStates = null
-  ): ListCodeReviewsRequest = {
+  def apply(Type: Type): ListCodeReviewsRequest = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ProviderTypes != null) __obj.updateDynamic("ProviderTypes")(ProviderTypes.asInstanceOf[js.Any])
-    if (RepositoryNames != null) __obj.updateDynamic("RepositoryNames")(RepositoryNames.asInstanceOf[js.Any])
-    if (States != null) __obj.updateDynamic("States")(States.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCodeReviewsRequest]
   }
+  @scala.inline
+  implicit class ListCodeReviewsRequestOps[Self <: ListCodeReviewsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: ListCodeReviewsMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setProviderTypesVarargs(value: ProviderType*): Self = this.set("ProviderTypes", js.Array(value :_*))
+    @scala.inline
+    def setProviderTypes(value: ProviderTypes): Self = this.set("ProviderTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderTypes: Self = this.set("ProviderTypes", js.undefined)
+    @scala.inline
+    def setRepositoryNamesVarargs(value: Name*): Self = this.set("RepositoryNames", js.Array(value :_*))
+    @scala.inline
+    def setRepositoryNames(value: RepositoryNames): Self = this.set("RepositoryNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryNames: Self = this.set("RepositoryNames", js.undefined)
+    @scala.inline
+    def setStatesVarargs(value: JobState*): Self = this.set("States", js.Array(value :_*))
+    @scala.inline
+    def setStates(value: JobStates): Self = this.set("States", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStates: Self = this.set("States", js.undefined)
+  }
+  
 }
 

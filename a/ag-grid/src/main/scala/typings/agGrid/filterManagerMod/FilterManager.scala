@@ -42,7 +42,6 @@ class FilterManager () extends js.Object {
   def destroyFilter(column: Column): Unit = js.native
   def destroyFilter(column: Column, source: ColumnEventType): Unit = js.native
   /* private */ def disposeFilterWrapper(filterWrapper: js.Any, source: js.Any): js.Any = js.native
-  /* private */ def doesFilterPass(node: js.Any): js.Any = js.native
   /* private */ def doesFilterPass(node: js.Any, filterToSkip: js.Any): js.Any = js.native
   def doesRowPassFilter(node: js.Any): Boolean = js.native
   def doesRowPassFilter(node: js.Any, filterToSkip: js.Any): Boolean = js.native

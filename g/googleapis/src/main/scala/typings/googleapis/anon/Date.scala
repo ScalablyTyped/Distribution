@@ -12,11 +12,32 @@ trait Date extends js.Object {
 
 object Date {
   @scala.inline
-  def apply(date: String = null, reasons: js.Array[FilteringCount] = null): Date = {
+  def apply(): Date = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (reasons != null) __obj.updateDynamic("reasons")(reasons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Date]
   }
+  @scala.inline
+  implicit class DateOps[Self <: Date] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setReasonsVarargs(value: FilteringCount*): Self = this.set("reasons", js.Array(value :_*))
+    @scala.inline
+    def setReasons(value: js.Array[FilteringCount]): Self = this.set("reasons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasons: Self = this.set("reasons", js.undefined)
+  }
+  
 }
 

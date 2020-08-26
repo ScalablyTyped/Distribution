@@ -33,6 +33,9 @@ object sparqljsStrings {
   sealed trait Verticalline extends js.Object
   
   @js.native
+  sealed trait Wildcard extends js.Object
+  
+  @js.native
   sealed trait ^ extends js.Object
   
   @js.native
@@ -134,6 +137,8 @@ object sparqljsStrings {
   def Slash: Slash = "/".asInstanceOf[Slash]
   @scala.inline
   def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  @scala.inline
+  def Wildcard: Wildcard = "Wildcard".asInstanceOf[Wildcard]
   @scala.inline
   def ^ : ^ = "^".asInstanceOf[^]
   @scala.inline

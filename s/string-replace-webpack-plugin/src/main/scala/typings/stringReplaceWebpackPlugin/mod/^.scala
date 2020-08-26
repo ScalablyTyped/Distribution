@@ -1,7 +1,6 @@
 package typings.stringReplaceWebpackPlugin.mod
 
-import typings.webpack.mod.Plugin
-import typings.webpack.mod.RuleSetUse
+import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,15 +12,15 @@ class ^ () extends Plugin
 @JSImport("string-replace-webpack-plugin", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def replace(options: Options): RuleSetUse = js.native
+  def replace(options: Options): js.Any = js.native
   def replace(options: Options, /**
     * loaders to follow the replacement
     */
-  nextLoaders: String): RuleSetUse = js.native
+  nextLoaders: String): js.Any = js.native
   def replace(/**
     * loaders to apply prior to the replacement
     */
-  prevLoaders: String, options: Options): RuleSetUse = js.native
+  prevLoaders: String, options: Options): js.Any = js.native
   def replace(
     /**
     * loaders to apply prior to the replacement
@@ -32,6 +31,6 @@ object ^ extends js.Object {
     * loaders to follow the replacement
     */
   nextLoaders: String
-  ): RuleSetUse = js.native
+  ): js.Any = js.native
 }
 

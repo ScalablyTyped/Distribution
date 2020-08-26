@@ -56,24 +56,50 @@ trait SchemaAccessConfig extends js.Object {
 
 object SchemaAccessConfig {
   @scala.inline
-  def apply(
-    kind: String = null,
-    name: String = null,
-    natIP: String = null,
-    networkTier: String = null,
-    publicPtrDomainName: String = null,
-    setPublicPtr: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null
-  ): SchemaAccessConfig = {
+  def apply(): SchemaAccessConfig = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (natIP != null) __obj.updateDynamic("natIP")(natIP.asInstanceOf[js.Any])
-    if (networkTier != null) __obj.updateDynamic("networkTier")(networkTier.asInstanceOf[js.Any])
-    if (publicPtrDomainName != null) __obj.updateDynamic("publicPtrDomainName")(publicPtrDomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(setPublicPtr)) __obj.updateDynamic("setPublicPtr")(setPublicPtr.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccessConfig]
   }
+  @scala.inline
+  implicit class SchemaAccessConfigOps[Self <: SchemaAccessConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNatIP(value: String): Self = this.set("natIP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNatIP: Self = this.set("natIP", js.undefined)
+    @scala.inline
+    def setNetworkTier(value: String): Self = this.set("networkTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkTier: Self = this.set("networkTier", js.undefined)
+    @scala.inline
+    def setPublicPtrDomainName(value: String): Self = this.set("publicPtrDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicPtrDomainName: Self = this.set("publicPtrDomainName", js.undefined)
+    @scala.inline
+    def setSetPublicPtr(value: Boolean): Self = this.set("setPublicPtr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetPublicPtr: Self = this.set("setPublicPtr", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

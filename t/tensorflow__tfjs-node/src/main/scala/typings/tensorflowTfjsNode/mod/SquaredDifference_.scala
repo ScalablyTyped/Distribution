@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-node", "SquaredDifference")
 @js.native
-object SquaredDifference_ extends TopLevel[/* "Identity" */ String]
+object SquaredDifference_ extends TopLevel[/* "Conv2D" */ String]
 

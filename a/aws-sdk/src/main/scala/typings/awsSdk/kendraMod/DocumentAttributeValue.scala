@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DocumentAttributeValue extends js.Object {
   /**
-    * A date value expressed as seconds from the Unix epoch.
+    * A date expressed as an ISO 8601 string.
     */
   var DateValue: js.UndefOr[Timestamp] = js.native
   /**
@@ -26,18 +26,40 @@ trait DocumentAttributeValue extends js.Object {
 
 object DocumentAttributeValue {
   @scala.inline
-  def apply(
-    DateValue: Timestamp = null,
-    LongValue: js.UndefOr[Long] = js.undefined,
-    StringListValue: DocumentAttributeStringListValue = null,
-    StringValue: DocumentAttributeStringValue = null
-  ): DocumentAttributeValue = {
+  def apply(): DocumentAttributeValue = {
     val __obj = js.Dynamic.literal()
-    if (DateValue != null) __obj.updateDynamic("DateValue")(DateValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(LongValue)) __obj.updateDynamic("LongValue")(LongValue.get.asInstanceOf[js.Any])
-    if (StringListValue != null) __obj.updateDynamic("StringListValue")(StringListValue.asInstanceOf[js.Any])
-    if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentAttributeValue]
   }
+  @scala.inline
+  implicit class DocumentAttributeValueOps[Self <: DocumentAttributeValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDateValue(value: Timestamp): Self = this.set("DateValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateValue: Self = this.set("DateValue", js.undefined)
+    @scala.inline
+    def setLongValue(value: Long): Self = this.set("LongValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongValue: Self = this.set("LongValue", js.undefined)
+    @scala.inline
+    def setStringListValueVarargs(value: String*): Self = this.set("StringListValue", js.Array(value :_*))
+    @scala.inline
+    def setStringListValue(value: DocumentAttributeStringListValue): Self = this.set("StringListValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringListValue: Self = this.set("StringListValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: DocumentAttributeStringValue): Self = this.set("StringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("StringValue", js.undefined)
+  }
+  
 }
 

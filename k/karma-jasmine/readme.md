@@ -10,9 +10,9 @@ A Karma plugin - adapter for Jasmine testing framework.
 | ------------------ | :-------------: |
 | Full name          | karma-jasmine |
 | Keywords           | karma-plugin, karma-adapter, jasmine |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 359 |
-| # downloads        | 55692987 |
+| # downloads        | 55981595 |
 | # stars            | 44 |
 
 ## Links

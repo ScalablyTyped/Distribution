@@ -27,17 +27,10 @@ object getObjectCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetObjectInput) = this()
-    /* CompleteClass */
-    override val input: GetObjectInput = js.native
     val middlewareStack: MiddlewareStack[GetObjectInput, GetObjectOutput[Blob], Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[GetObjectInput, GetObjectOutput[Blob]] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[GetObjectInput, GetObjectOutput[Blob]] = js.native
   }

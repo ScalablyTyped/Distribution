@@ -22,16 +22,34 @@ trait GetPatchBaselineForPatchGroupResult extends js.Object {
 
 object GetPatchBaselineForPatchGroupResult {
   @scala.inline
-  def apply(
-    BaselineId: BaselineId = null,
-    OperatingSystem: OperatingSystem = null,
-    PatchGroup: PatchGroup = null
-  ): GetPatchBaselineForPatchGroupResult = {
+  def apply(): GetPatchBaselineForPatchGroupResult = {
     val __obj = js.Dynamic.literal()
-    if (BaselineId != null) __obj.updateDynamic("BaselineId")(BaselineId.asInstanceOf[js.Any])
-    if (OperatingSystem != null) __obj.updateDynamic("OperatingSystem")(OperatingSystem.asInstanceOf[js.Any])
-    if (PatchGroup != null) __obj.updateDynamic("PatchGroup")(PatchGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPatchBaselineForPatchGroupResult]
   }
+  @scala.inline
+  implicit class GetPatchBaselineForPatchGroupResultOps[Self <: GetPatchBaselineForPatchGroupResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaselineId(value: BaselineId): Self = this.set("BaselineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineId: Self = this.set("BaselineId", js.undefined)
+    @scala.inline
+    def setOperatingSystem(value: OperatingSystem): Self = this.set("OperatingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystem: Self = this.set("OperatingSystem", js.undefined)
+    @scala.inline
+    def setPatchGroup(value: PatchGroup): Self = this.set("PatchGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatchGroup: Self = this.set("PatchGroup", js.undefined)
+  }
+  
 }
 

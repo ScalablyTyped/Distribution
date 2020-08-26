@@ -19,11 +19,30 @@ trait AvailabilityZoneGroupState extends js.Object {
 
 object AvailabilityZoneGroupState {
   @scala.inline
-  def apply(groupName: Input[String] = null, optInStatus: Input[String] = null): AvailabilityZoneGroupState = {
+  def apply(): AvailabilityZoneGroupState = {
     val __obj = js.Dynamic.literal()
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
-    if (optInStatus != null) __obj.updateDynamic("optInStatus")(optInStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailabilityZoneGroupState]
   }
+  @scala.inline
+  implicit class AvailabilityZoneGroupStateOps[Self <: AvailabilityZoneGroupState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupName(value: Input[String]): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    @scala.inline
+    def setOptInStatus(value: Input[String]): Self = this.set("optInStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptInStatus: Self = this.set("optInStatus", js.undefined)
+  }
+  
 }
 

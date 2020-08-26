@@ -26,18 +26,38 @@ trait FindMatchesParameters extends js.Object {
 
 object FindMatchesParameters {
   @scala.inline
-  def apply(
-    AccuracyCostTradeoff: js.UndefOr[GenericBoundedDouble] = js.undefined,
-    EnforceProvidedLabels: js.UndefOr[NullableBoolean] = js.undefined,
-    PrecisionRecallTradeoff: js.UndefOr[GenericBoundedDouble] = js.undefined,
-    PrimaryKeyColumnName: ColumnNameString = null
-  ): FindMatchesParameters = {
+  def apply(): FindMatchesParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AccuracyCostTradeoff)) __obj.updateDynamic("AccuracyCostTradeoff")(AccuracyCostTradeoff.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnforceProvidedLabels)) __obj.updateDynamic("EnforceProvidedLabels")(EnforceProvidedLabels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrecisionRecallTradeoff)) __obj.updateDynamic("PrecisionRecallTradeoff")(PrecisionRecallTradeoff.get.asInstanceOf[js.Any])
-    if (PrimaryKeyColumnName != null) __obj.updateDynamic("PrimaryKeyColumnName")(PrimaryKeyColumnName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindMatchesParameters]
   }
+  @scala.inline
+  implicit class FindMatchesParametersOps[Self <: FindMatchesParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccuracyCostTradeoff(value: GenericBoundedDouble): Self = this.set("AccuracyCostTradeoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccuracyCostTradeoff: Self = this.set("AccuracyCostTradeoff", js.undefined)
+    @scala.inline
+    def setEnforceProvidedLabels(value: NullableBoolean): Self = this.set("EnforceProvidedLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceProvidedLabels: Self = this.set("EnforceProvidedLabels", js.undefined)
+    @scala.inline
+    def setPrecisionRecallTradeoff(value: GenericBoundedDouble): Self = this.set("PrecisionRecallTradeoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecisionRecallTradeoff: Self = this.set("PrecisionRecallTradeoff", js.undefined)
+    @scala.inline
+    def setPrimaryKeyColumnName(value: ColumnNameString): Self = this.set("PrimaryKeyColumnName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryKeyColumnName: Self = this.set("PrimaryKeyColumnName", js.undefined)
+  }
+  
 }
 

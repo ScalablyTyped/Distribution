@@ -15,118 +15,201 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<std.Record<vega-typings.vega-typings/types/spec/config.MarkConfigKeys, vega-typings.vega-typings/types/spec/config.MarkConfig>> */
 /* Inlined parent std.Partial<std.Record<vega-typings.vega-typings/types/spec/config.AxisConfigKeys, vega-typings.vega-typings/types/spec/config.AxisConfig>> */
+@js.native
 trait Config extends js.Object {
-  var arc: js.UndefOr[MarkConfig] = js.undefined
-  var area: js.UndefOr[MarkConfig] = js.undefined
-  var autosize: js.UndefOr[AutoSize | SignalRef] = js.undefined
-  var axis: js.UndefOr[AxisConfig] = js.undefined
-  var axisBand: js.UndefOr[AxisConfig] = js.undefined
-  var axisBottom: js.UndefOr[AxisConfig] = js.undefined
-  var axisLeft: js.UndefOr[AxisConfig] = js.undefined
-  var axisRight: js.UndefOr[AxisConfig] = js.undefined
-  var axisTop: js.UndefOr[AxisConfig] = js.undefined
-  var axisX: js.UndefOr[AxisConfig] = js.undefined
-  var axisY: js.UndefOr[AxisConfig] = js.undefined
-  var background: js.UndefOr[Null | Color | SignalRef] = js.undefined
+  var arc: js.UndefOr[MarkConfig] = js.native
+  var area: js.UndefOr[MarkConfig] = js.native
+  var autosize: js.UndefOr[AutoSize | SignalRef] = js.native
+  var axis: js.UndefOr[AxisConfig] = js.native
+  var axisBand: js.UndefOr[AxisConfig] = js.native
+  var axisBottom: js.UndefOr[AxisConfig] = js.native
+  var axisLeft: js.UndefOr[AxisConfig] = js.native
+  var axisRight: js.UndefOr[AxisConfig] = js.native
+  var axisTop: js.UndefOr[AxisConfig] = js.native
+  var axisX: js.UndefOr[AxisConfig] = js.native
+  var axisY: js.UndefOr[AxisConfig] = js.native
+  var background: js.UndefOr[Null | Color | SignalRef] = js.native
    // TODO
-  var events: js.UndefOr[Bind] = js.undefined
-  var group: js.UndefOr[js.Any] = js.undefined
-  var image: js.UndefOr[MarkConfig] = js.undefined
-  var legend: js.UndefOr[LegendConfig] = js.undefined
-  var line: js.UndefOr[MarkConfig] = js.undefined
+  var events: js.UndefOr[Bind] = js.native
+  var group: js.UndefOr[js.Any] = js.native
+  var image: js.UndefOr[MarkConfig] = js.native
+  var legend: js.UndefOr[LegendConfig] = js.native
+  var line: js.UndefOr[MarkConfig] = js.native
   /**
     * A delimiter, such as a newline character, upon which to break text strings into multiple lines. This property provides a global default for text marks, which is overridden by mark or style config settings, and by the "lineBreak" mark encoding channel. If signal-valued, either string or regular expression (regexp) values are valid.
     */
-  var lineBreak: js.UndefOr[String | SignalRef] = js.undefined
-  var locale: js.UndefOr[Locale] = js.undefined
-  var mark: js.UndefOr[MarkConfig] = js.undefined
-  var padding: js.UndefOr[Padding | SignalRef] = js.undefined
-  var path: js.UndefOr[MarkConfig] = js.undefined
-  var projection: js.UndefOr[ProjectionConfig] = js.undefined
-  var range: js.UndefOr[RangeConfig] = js.undefined
-  var rect: js.UndefOr[MarkConfig] = js.undefined
-  var rule: js.UndefOr[MarkConfig] = js.undefined
-  var shape: js.UndefOr[MarkConfig] = js.undefined
-  var signals: js.UndefOr[js.Array[InitSignal | NewSignal]] = js.undefined
-  var style: js.UndefOr[StringDictionary[MarkConfig]] = js.undefined
-  var symbol: js.UndefOr[MarkConfig] = js.undefined
-  var text: js.UndefOr[MarkConfig] = js.undefined
-  var title: js.UndefOr[TitleConfig] = js.undefined
-  var trail: js.UndefOr[MarkConfig] = js.undefined
+  var lineBreak: js.UndefOr[String | SignalRef] = js.native
+  var locale: js.UndefOr[Locale] = js.native
+  var mark: js.UndefOr[MarkConfig] = js.native
+  var padding: js.UndefOr[Padding | SignalRef] = js.native
+  var path: js.UndefOr[MarkConfig] = js.native
+  var projection: js.UndefOr[ProjectionConfig] = js.native
+  var range: js.UndefOr[RangeConfig] = js.native
+  var rect: js.UndefOr[MarkConfig] = js.native
+  var rule: js.UndefOr[MarkConfig] = js.native
+  var shape: js.UndefOr[MarkConfig] = js.native
+  var signals: js.UndefOr[js.Array[InitSignal | NewSignal]] = js.native
+  var style: js.UndefOr[StringDictionary[MarkConfig]] = js.native
+  var symbol: js.UndefOr[MarkConfig] = js.native
+  var text: js.UndefOr[MarkConfig] = js.native
+  var title: js.UndefOr[TitleConfig] = js.native
+  var trail: js.UndefOr[MarkConfig] = js.native
 }
 
 object Config {
   @scala.inline
-  def apply(
-    arc: MarkConfig = null,
-    area: MarkConfig = null,
-    autosize: AutoSize | SignalRef = null,
-    axis: AxisConfig = null,
-    axisBand: AxisConfig = null,
-    axisBottom: AxisConfig = null,
-    axisLeft: AxisConfig = null,
-    axisRight: AxisConfig = null,
-    axisTop: AxisConfig = null,
-    axisX: AxisConfig = null,
-    axisY: AxisConfig = null,
-    background: js.UndefOr[Null | Color | SignalRef] = js.undefined,
-    events: Bind = null,
-    group: js.Any = null,
-    image: MarkConfig = null,
-    legend: LegendConfig = null,
-    line: MarkConfig = null,
-    lineBreak: String | SignalRef = null,
-    locale: Locale = null,
-    mark: MarkConfig = null,
-    padding: Padding | SignalRef = null,
-    path: MarkConfig = null,
-    projection: ProjectionConfig = null,
-    range: RangeConfig = null,
-    rect: MarkConfig = null,
-    rule: MarkConfig = null,
-    shape: MarkConfig = null,
-    signals: js.Array[InitSignal | NewSignal] = null,
-    style: StringDictionary[MarkConfig] = null,
-    symbol: MarkConfig = null,
-    text: MarkConfig = null,
-    title: TitleConfig = null,
-    trail: MarkConfig = null
-  ): Config = {
+  def apply(): Config = {
     val __obj = js.Dynamic.literal()
-    if (arc != null) __obj.updateDynamic("arc")(arc.asInstanceOf[js.Any])
-    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (autosize != null) __obj.updateDynamic("autosize")(autosize.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (axisBand != null) __obj.updateDynamic("axisBand")(axisBand.asInstanceOf[js.Any])
-    if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
-    if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft.asInstanceOf[js.Any])
-    if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
-    if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
-    if (axisX != null) __obj.updateDynamic("axisX")(axisX.asInstanceOf[js.Any])
-    if (axisY != null) __obj.updateDynamic("axisY")(axisY.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (mark != null) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (rect != null) __obj.updateDynamic("rect")(rect.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (signals != null) __obj.updateDynamic("signals")(signals.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (trail != null) __obj.updateDynamic("trail")(trail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
+  @scala.inline
+  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArc(value: MarkConfig): Self = this.set("arc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArc: Self = this.set("arc", js.undefined)
+    @scala.inline
+    def setArea(value: MarkConfig): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArea: Self = this.set("area", js.undefined)
+    @scala.inline
+    def setAutosize(value: AutoSize | SignalRef): Self = this.set("autosize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutosize: Self = this.set("autosize", js.undefined)
+    @scala.inline
+    def setAxis(value: AxisConfig): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setAxisBand(value: AxisConfig): Self = this.set("axisBand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisBand: Self = this.set("axisBand", js.undefined)
+    @scala.inline
+    def setAxisBottom(value: AxisConfig): Self = this.set("axisBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisBottom: Self = this.set("axisBottom", js.undefined)
+    @scala.inline
+    def setAxisLeft(value: AxisConfig): Self = this.set("axisLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisLeft: Self = this.set("axisLeft", js.undefined)
+    @scala.inline
+    def setAxisRight(value: AxisConfig): Self = this.set("axisRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisRight: Self = this.set("axisRight", js.undefined)
+    @scala.inline
+    def setAxisTop(value: AxisConfig): Self = this.set("axisTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisTop: Self = this.set("axisTop", js.undefined)
+    @scala.inline
+    def setAxisX(value: AxisConfig): Self = this.set("axisX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisX: Self = this.set("axisX", js.undefined)
+    @scala.inline
+    def setAxisY(value: AxisConfig): Self = this.set("axisY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisY: Self = this.set("axisY", js.undefined)
+    @scala.inline
+    def setBackground(value: Color | SignalRef): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBackgroundNull: Self = this.set("background", null)
+    @scala.inline
+    def setEvents(value: Bind): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setGroup(value: js.Any): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setImage(value: MarkConfig): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setLegend(value: LegendConfig): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setLine(value: MarkConfig): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setLineBreak(value: String | SignalRef): Self = this.set("lineBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineBreak: Self = this.set("lineBreak", js.undefined)
+    @scala.inline
+    def setLocale(value: Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMark(value: MarkConfig): Self = this.set("mark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMark: Self = this.set("mark", js.undefined)
+    @scala.inline
+    def setPadding(value: Padding | SignalRef): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPath(value: MarkConfig): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setProjection(value: ProjectionConfig): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setRange(value: RangeConfig): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setRect(value: MarkConfig): Self = this.set("rect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRect: Self = this.set("rect", js.undefined)
+    @scala.inline
+    def setRule(value: MarkConfig): Self = this.set("rule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRule: Self = this.set("rule", js.undefined)
+    @scala.inline
+    def setShape(value: MarkConfig): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setSignalsVarargs(value: (InitSignal | NewSignal)*): Self = this.set("signals", js.Array(value :_*))
+    @scala.inline
+    def setSignals(value: js.Array[InitSignal | NewSignal]): Self = this.set("signals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignals: Self = this.set("signals", js.undefined)
+    @scala.inline
+    def setStyle(value: StringDictionary[MarkConfig]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSymbol(value: MarkConfig): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setText(value: MarkConfig): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTitle(value: TitleConfig): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTrail(value: MarkConfig): Self = this.set("trail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrail: Self = this.set("trail", js.undefined)
+  }
+  
 }
 

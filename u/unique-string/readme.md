@@ -11,8 +11,8 @@ Generate a unique random string
 | Full name          | unique-string |
 | Keywords           | unique, string, random, text, id, identifier, slug, hex |
 | # releases         | 2 |
-| # dependents       | 37 |
-| # downloads        | 209285781 |
+| # dependents       | 39 |
+| # downloads        | 217054431 |
 | # stars            | 3 |
 
 ## Links

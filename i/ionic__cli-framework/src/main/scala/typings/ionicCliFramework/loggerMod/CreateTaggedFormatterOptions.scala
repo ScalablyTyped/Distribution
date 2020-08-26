@@ -6,27 +6,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateTaggedFormatterOptions extends js.Object {
-  var colors: js.UndefOr[Colors] = js.undefined
-  var prefix: js.UndefOr[String | js.Function0[String]] = js.undefined
-  var titleize: js.UndefOr[Boolean] = js.undefined
-  var wrap: js.UndefOr[Boolean | WordWrapOptions] = js.undefined
+  var colors: js.UndefOr[Colors] = js.native
+  var prefix: js.UndefOr[String | js.Function0[String]] = js.native
+  var titleize: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean | WordWrapOptions] = js.native
 }
 
 object CreateTaggedFormatterOptions {
   @scala.inline
-  def apply(
-    colors: Colors = null,
-    prefix: String | js.Function0[String] = null,
-    titleize: js.UndefOr[Boolean] = js.undefined,
-    wrap: Boolean | WordWrapOptions = null
-  ): CreateTaggedFormatterOptions = {
+  def apply(): CreateTaggedFormatterOptions = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleize)) __obj.updateDynamic("titleize")(titleize.get.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTaggedFormatterOptions]
   }
+  @scala.inline
+  implicit class CreateTaggedFormatterOptionsOps[Self <: CreateTaggedFormatterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColors(value: Colors): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setPrefixFunction0(value: () => String): Self = this.set("prefix", js.Any.fromFunction0(value))
+    @scala.inline
+    def setPrefix(value: String | js.Function0[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setTitleize(value: Boolean): Self = this.set("titleize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleize: Self = this.set("titleize", js.undefined)
+    @scala.inline
+    def setWrap(value: Boolean | WordWrapOptions): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+  }
+  
 }
 

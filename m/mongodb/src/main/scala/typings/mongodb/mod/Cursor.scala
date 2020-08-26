@@ -28,6 +28,7 @@ class Cursor[T] () extends Readable {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#comment */
   def comment(value: String): Cursor[T] = js.native
   def count(): js.Promise[scala.Double] = js.native
+  def count(applySkipLimit: js.UndefOr[scala.Nothing], options: CursorCommentOptions): js.Promise[scala.Double] = js.native
   def count(applySkipLimit: Boolean): js.Promise[scala.Double] = js.native
   def count(applySkipLimit: Boolean, callback: MongoCallback[scala.Double]): Unit = js.native
   def count(applySkipLimit: Boolean, options: CursorCommentOptions): js.Promise[scala.Double] = js.native

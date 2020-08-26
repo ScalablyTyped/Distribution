@@ -11,8 +11,8 @@ Check if an URL is relative
 | Full name          | is-relative-url |
 | Keywords           | url, relative, absolute, uri, is, check |
 | # releases         | 2 |
-| # dependents       | 67 |
-| # downloads        | 11198878 |
+| # dependents       | 70 |
+| # downloads        | 11605085 |
 | # stars            | 2 |
 
 ## Links

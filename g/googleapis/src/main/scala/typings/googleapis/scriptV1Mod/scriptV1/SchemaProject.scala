@@ -43,24 +43,50 @@ trait SchemaProject extends js.Object {
 
 object SchemaProject {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    creator: SchemaGoogleAppsScriptTypeUser = null,
-    lastModifyUser: SchemaGoogleAppsScriptTypeUser = null,
-    parentId: String = null,
-    scriptId: String = null,
-    title: String = null,
-    updateTime: String = null
-  ): SchemaProject = {
+  def apply(): SchemaProject = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
-    if (lastModifyUser != null) __obj.updateDynamic("lastModifyUser")(lastModifyUser.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProject]
   }
+  @scala.inline
+  implicit class SchemaProjectOps[Self <: SchemaProject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setCreator(value: SchemaGoogleAppsScriptTypeUser): Self = this.set("creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreator: Self = this.set("creator", js.undefined)
+    @scala.inline
+    def setLastModifyUser(value: SchemaGoogleAppsScriptTypeUser): Self = this.set("lastModifyUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifyUser: Self = this.set("lastModifyUser", js.undefined)
+    @scala.inline
+    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setScriptId(value: String): Self = this.set("scriptId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptId: Self = this.set("scriptId", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

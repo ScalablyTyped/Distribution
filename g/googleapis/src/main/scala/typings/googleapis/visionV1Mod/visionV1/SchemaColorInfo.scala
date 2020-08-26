@@ -27,16 +27,34 @@ trait SchemaColorInfo extends js.Object {
 
 object SchemaColorInfo {
   @scala.inline
-  def apply(
-    color: SchemaColor = null,
-    pixelFraction: js.UndefOr[Double] = js.undefined,
-    score: js.UndefOr[Double] = js.undefined
-  ): SchemaColorInfo = {
+  def apply(): SchemaColorInfo = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelFraction)) __obj.updateDynamic("pixelFraction")(pixelFraction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaColorInfo]
   }
+  @scala.inline
+  implicit class SchemaColorInfoOps[Self <: SchemaColorInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: SchemaColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setPixelFraction(value: Double): Self = this.set("pixelFraction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelFraction: Self = this.set("pixelFraction", js.undefined)
+    @scala.inline
+    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+  }
+  
 }
 

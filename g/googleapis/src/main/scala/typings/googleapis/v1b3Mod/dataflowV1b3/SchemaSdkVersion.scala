@@ -25,12 +25,34 @@ trait SchemaSdkVersion extends js.Object {
 
 object SchemaSdkVersion {
   @scala.inline
-  def apply(sdkSupportStatus: String = null, version: String = null, versionDisplayName: String = null): SchemaSdkVersion = {
+  def apply(): SchemaSdkVersion = {
     val __obj = js.Dynamic.literal()
-    if (sdkSupportStatus != null) __obj.updateDynamic("sdkSupportStatus")(sdkSupportStatus.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (versionDisplayName != null) __obj.updateDynamic("versionDisplayName")(versionDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSdkVersion]
   }
+  @scala.inline
+  implicit class SchemaSdkVersionOps[Self <: SchemaSdkVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSdkSupportStatus(value: String): Self = this.set("sdkSupportStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSdkSupportStatus: Self = this.set("sdkSupportStatus", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVersionDisplayName(value: String): Self = this.set("versionDisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionDisplayName: Self = this.set("versionDisplayName", js.undefined)
+  }
+  
 }
 

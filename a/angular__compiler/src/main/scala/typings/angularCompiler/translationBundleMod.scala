@@ -42,7 +42,21 @@ object translationBundleMod extends js.Object {
       _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
       locale: String,
       digest: js.Function1[/* m */ Message, String],
+      mapperFactory: js.UndefOr[scala.Nothing],
+      missingTranslationStrategy: MissingTranslationStrategy
+    ) = this()
+    def this(
+      _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
+      locale: String,
+      digest: js.Function1[/* m */ Message, String],
       mapperFactory: js.Function1[/* m */ Message, PlaceholderMapper],
+      missingTranslationStrategy: MissingTranslationStrategy
+    ) = this()
+    def this(
+      _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
+      locale: Null,
+      digest: js.Function1[/* m */ Message, String],
+      mapperFactory: js.UndefOr[scala.Nothing],
       missingTranslationStrategy: MissingTranslationStrategy
     ) = this()
     def this(
@@ -56,8 +70,56 @@ object translationBundleMod extends js.Object {
       _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
       locale: String,
       digest: js.Function1[/* m */ Message, String],
+      mapperFactory: js.UndefOr[scala.Nothing],
+      missingTranslationStrategy: js.UndefOr[scala.Nothing],
+      console: Console
+    ) = this()
+    def this(
+      _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
+      locale: String,
+      digest: js.Function1[/* m */ Message, String],
+      mapperFactory: js.UndefOr[scala.Nothing],
+      missingTranslationStrategy: MissingTranslationStrategy,
+      console: Console
+    ) = this()
+    def this(
+      _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
+      locale: String,
+      digest: js.Function1[/* m */ Message, String],
+      mapperFactory: js.Function1[/* m */ Message, PlaceholderMapper],
+      missingTranslationStrategy: js.UndefOr[scala.Nothing],
+      console: Console
+    ) = this()
+    def this(
+      _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
+      locale: String,
+      digest: js.Function1[/* m */ Message, String],
       mapperFactory: js.Function1[/* m */ Message, PlaceholderMapper],
       missingTranslationStrategy: MissingTranslationStrategy,
+      console: Console
+    ) = this()
+    def this(
+      _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
+      locale: Null,
+      digest: js.Function1[/* m */ Message, String],
+      mapperFactory: js.UndefOr[scala.Nothing],
+      missingTranslationStrategy: js.UndefOr[scala.Nothing],
+      console: Console
+    ) = this()
+    def this(
+      _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
+      locale: Null,
+      digest: js.Function1[/* m */ Message, String],
+      mapperFactory: js.UndefOr[scala.Nothing],
+      missingTranslationStrategy: MissingTranslationStrategy,
+      console: Console
+    ) = this()
+    def this(
+      _i18nNodesByMsgId: StringDictionary[js.Array[Node]],
+      locale: Null,
+      digest: js.Function1[/* m */ Message, String],
+      mapperFactory: js.Function1[/* m */ Message, PlaceholderMapper],
+      missingTranslationStrategy: js.UndefOr[scala.Nothing],
       console: Console
     ) = this()
     def this(

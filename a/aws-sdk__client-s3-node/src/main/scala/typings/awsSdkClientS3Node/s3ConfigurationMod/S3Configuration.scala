@@ -25,185 +25,260 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3Configuration extends js.Object {
   /**
     * The function that will be used to convert a base64-encoded string to a byte array
     */
-  var base64Decoder: js.UndefOr[Decoder] = js.undefined
+  var base64Decoder: js.UndefOr[Decoder] = js.native
   /**
     * The function that will be used to convert binary data to a base64-encoded string
     */
-  var base64Encoder: js.UndefOr[Encoder] = js.undefined
+  var base64Encoder: js.UndefOr[Encoder] = js.native
   /**
     * Whether the provided endpoint addresses an individual bucket.
     */
-  var bucketEndpoint: js.UndefOr[Boolean] = js.undefined
+  var bucketEndpoint: js.UndefOr[Boolean] = js.native
   /**
     * The credentials used to sign requests.
     *
     * If no static credentials are supplied, the SDK will attempt to credentials from known environment variables, from shared configuration and credentials files, and from the EC2 Instance Metadata Service, in that order.
     */
-  var credentials: js.UndefOr[Credentials | Provider[Credentials]] = js.undefined
+  var credentials: js.UndefOr[Credentials | Provider[Credentials]] = js.native
   /**
     * A function that determines how long (in milliseconds) the SDK should wait before retrying a request
     */
-  var delayDecider: js.UndefOr[DelayDecider] = js.undefined
+  var delayDecider: js.UndefOr[DelayDecider] = js.native
   /**
     * Whether body signing should be disabled. Body signing can only be disabled when using HTTPS
     */
-  var disableBodySigning: js.UndefOr[Boolean] = js.undefined
+  var disableBodySigning: js.UndefOr[Boolean] = js.native
   /**
     * The fully qualified endpoint of the webservice. This is only required when using a custom endpoint (for example, when using a local version of S3).
     */
-  var endpoint: js.UndefOr[String | HttpEndpoint | Provider[HttpEndpoint]] = js.undefined
+  var endpoint: js.UndefOr[String | HttpEndpoint | Provider[HttpEndpoint]] = js.native
   /**
     * The endpoint provider to call if no endpoint is provided
     */
-  var endpointProvider: js.UndefOr[js.Any] = js.undefined
+  var endpointProvider: js.UndefOr[js.Any] = js.native
   /**
     * Whether to force path style URLs for S3 objects (e.g., https://s3.amazonaws.com/<bucketName>/<key> instead of https://<bucketName>.s3.amazonaws.com/<key>
     */
-  var forcePathStyle: js.UndefOr[Boolean] = js.undefined
+  var forcePathStyle: js.UndefOr[Boolean] = js.native
   /**
     * The handler to use as the core of the client's middleware stack
     */
-  var handler: js.UndefOr[Terminalware[_, Readable]] = js.undefined
+  var handler: js.UndefOr[Terminalware[_, Readable]] = js.native
   /**
     * The HTTP handler to use
     */
-  var httpHandler: js.UndefOr[HttpHandler[Readable, HttpOptions]] = js.undefined
+  var httpHandler: js.UndefOr[HttpHandler[Readable, HttpOptions]] = js.native
   /**
     * The maximum number of redirects to follow for a service request. Set to `0` to disable retries.
     */
-  var maxRedirects: js.UndefOr[Double] = js.undefined
+  var maxRedirects: js.UndefOr[Double] = js.native
   /**
     * The maximum number of times requests that encounter potentially transient failures should be retried
     */
-  var maxRetries: js.UndefOr[Double] = js.undefined
+  var maxRetries: js.UndefOr[Double] = js.native
   /**
     * A constructor for a class implementing the @aws-sdk/types.Hash interface that computes the MD5 checksum of a string or binary buffer
     */
-  var md5: js.UndefOr[Instantiable] = js.undefined
+  var md5: js.UndefOr[Instantiable] = js.native
   /**
     * The configuration profile to use.
     */
-  var profile: js.UndefOr[String] = js.undefined
+  var profile: js.UndefOr[String] = js.native
   /**
     * The AWS region to which this client will send requests
     */
-  var region: js.UndefOr[String | Provider[String]] = js.undefined
+  var region: js.UndefOr[String | Provider[String]] = js.native
   /**
     * A function that determines whether an error is retryable
     */
-  var retryDecider: js.UndefOr[RetryDecider] = js.undefined
+  var retryDecider: js.UndefOr[RetryDecider] = js.native
   /**
     * A constructor for a class implementing the @aws-sdk/types.Hash interface that computes the SHA-256 HMAC or checksum of a string or binary buffer
     */
-  var sha256: js.UndefOr[HashConstructor] = js.undefined
+  var sha256: js.UndefOr[HashConstructor] = js.native
   /**
     * The signer to use when signing requests.
     */
-  var signer: js.UndefOr[RequestSigner] = js.undefined
+  var signer: js.UndefOr[RequestSigner] = js.native
   /**
     * The service name with which to sign requests.
     */
-  var signingName: js.UndefOr[String] = js.undefined
+  var signingName: js.UndefOr[String] = js.native
   /**
     * Whether SSL is enabled for requests.
     */
-  var sslEnabled: js.UndefOr[Boolean] = js.undefined
+  var sslEnabled: js.UndefOr[Boolean] = js.native
   /**
     * A function that converts a stream into an array of bytes.
     */
-  var streamCollector: js.UndefOr[StreamCollector[Readable]] = js.undefined
+  var streamCollector: js.UndefOr[StreamCollector[Readable]] = js.native
   /**
     * A function that, given a hash constructor and a stream, calculates the hash of the streamed value
     */
-  var streamHasher: js.UndefOr[StreamHasher[Readable]] = js.undefined
+  var streamHasher: js.UndefOr[StreamHasher[Readable]] = js.native
   /**
     * The function that will be used to convert strings into HTTP endpoints
     */
-  var urlParser: js.UndefOr[UrlParser] = js.undefined
+  var urlParser: js.UndefOr[UrlParser] = js.native
   /**
     * Whether to use the S3 Transfer Acceleration endpoint by default
     */
-  var useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined
+  var useAccelerateEndpoint: js.UndefOr[Boolean] = js.native
   /**
     * Enables IPv6/IPv4 dualstack endpoint. When a DNS lookup is performed on an endpoint of this type, it returns an “A” record with an IPv4 address and an “AAAA” record with an IPv6 address. In most cases the network stack in the client environment will automatically prefer the AAAA record and make a connection using the IPv6 address. Note, however, that currently on Windows, the IPv4 address will be preferred.
     */
-  var useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined
+  var useDualstackEndpoint: js.UndefOr[Boolean] = js.native
   /**
     * The function that will be used to convert a UTF8-encoded string to a byte array
     */
-  var utf8Decoder: js.UndefOr[Decoder] = js.undefined
+  var utf8Decoder: js.UndefOr[Decoder] = js.native
   /**
     * The function that will be used to convert binary data to a UTF-8 encoded string
     */
-  var utf8Encoder: js.UndefOr[Encoder] = js.undefined
+  var utf8Encoder: js.UndefOr[Encoder] = js.native
 }
 
 object S3Configuration {
   @scala.inline
-  def apply(
-    base64Decoder: /* input */ String => Uint8Array = null,
-    base64Encoder: /* input */ Uint8Array => String = null,
-    bucketEndpoint: js.UndefOr[Boolean] = js.undefined,
-    credentials: Credentials | Provider[Credentials] = null,
-    delayDecider: (/* delayBase */ Double, /* attempts */ Double) => Double = null,
-    disableBodySigning: js.UndefOr[Boolean] = js.undefined,
-    endpoint: String | HttpEndpoint | Provider[HttpEndpoint] = null,
-    endpointProvider: js.Any = null,
-    forcePathStyle: js.UndefOr[Boolean] = js.undefined,
-    handler: /* context */ HandlerExecutionContext => FinalizeHandler[js.Object, _, Readable] = null,
-    httpHandler: HttpHandler[Readable, HttpOptions] = null,
-    maxRedirects: js.UndefOr[Double] = js.undefined,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    md5: Instantiable = null,
-    profile: String = null,
-    region: String | Provider[String] = null,
-    retryDecider: /* error */ SdkError => Boolean = null,
-    sha256: HashConstructor = null,
-    signer: RequestSigner = null,
-    signingName: String = null,
-    sslEnabled: js.UndefOr[Boolean] = js.undefined,
-    streamCollector: Readable => js.Promise[Uint8Array] = null,
-    streamHasher: (/* hashCtor */ typings.awsSdkTypes.anon.Instantiable, Readable) => js.Promise[Uint8Array] = null,
-    urlParser: /* url */ String => HttpEndpoint = null,
-    useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined,
-    useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined,
-    utf8Decoder: /* input */ String => Uint8Array = null,
-    utf8Encoder: /* input */ Uint8Array => String = null
-  ): S3Configuration = {
+  def apply(): S3Configuration = {
     val __obj = js.Dynamic.literal()
-    if (base64Decoder != null) __obj.updateDynamic("base64Decoder")(js.Any.fromFunction1(base64Decoder))
-    if (base64Encoder != null) __obj.updateDynamic("base64Encoder")(js.Any.fromFunction1(base64Encoder))
-    if (!js.isUndefined(bucketEndpoint)) __obj.updateDynamic("bucketEndpoint")(bucketEndpoint.get.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (delayDecider != null) __obj.updateDynamic("delayDecider")(js.Any.fromFunction2(delayDecider))
-    if (!js.isUndefined(disableBodySigning)) __obj.updateDynamic("disableBodySigning")(disableBodySigning.get.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (endpointProvider != null) __obj.updateDynamic("endpointProvider")(endpointProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(forcePathStyle)) __obj.updateDynamic("forcePathStyle")(forcePathStyle.get.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
-    if (httpHandler != null) __obj.updateDynamic("httpHandler")(httpHandler.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRedirects)) __obj.updateDynamic("maxRedirects")(maxRedirects.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (md5 != null) __obj.updateDynamic("md5")(md5.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (retryDecider != null) __obj.updateDynamic("retryDecider")(js.Any.fromFunction1(retryDecider))
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
-    if (signer != null) __obj.updateDynamic("signer")(signer.asInstanceOf[js.Any])
-    if (signingName != null) __obj.updateDynamic("signingName")(signingName.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslEnabled)) __obj.updateDynamic("sslEnabled")(sslEnabled.get.asInstanceOf[js.Any])
-    if (streamCollector != null) __obj.updateDynamic("streamCollector")(js.Any.fromFunction1(streamCollector))
-    if (streamHasher != null) __obj.updateDynamic("streamHasher")(js.Any.fromFunction2(streamHasher))
-    if (urlParser != null) __obj.updateDynamic("urlParser")(js.Any.fromFunction1(urlParser))
-    if (!js.isUndefined(useAccelerateEndpoint)) __obj.updateDynamic("useAccelerateEndpoint")(useAccelerateEndpoint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDualstackEndpoint)) __obj.updateDynamic("useDualstackEndpoint")(useDualstackEndpoint.get.asInstanceOf[js.Any])
-    if (utf8Decoder != null) __obj.updateDynamic("utf8Decoder")(js.Any.fromFunction1(utf8Decoder))
-    if (utf8Encoder != null) __obj.updateDynamic("utf8Encoder")(js.Any.fromFunction1(utf8Encoder))
     __obj.asInstanceOf[S3Configuration]
   }
+  @scala.inline
+  implicit class S3ConfigurationOps[Self <: S3Configuration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBase64Decoder(value: /* input */ String => Uint8Array): Self = this.set("base64Decoder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBase64Decoder: Self = this.set("base64Decoder", js.undefined)
+    @scala.inline
+    def setBase64Encoder(value: /* input */ Uint8Array => String): Self = this.set("base64Encoder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBase64Encoder: Self = this.set("base64Encoder", js.undefined)
+    @scala.inline
+    def setBucketEndpoint(value: Boolean): Self = this.set("bucketEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketEndpoint: Self = this.set("bucketEndpoint", js.undefined)
+    @scala.inline
+    def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = this.set("credentials", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCredentials(value: Credentials | Provider[Credentials]): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    @scala.inline
+    def setDelayDecider(value: (/* delayBase */ Double, /* attempts */ Double) => Double): Self = this.set("delayDecider", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDelayDecider: Self = this.set("delayDecider", js.undefined)
+    @scala.inline
+    def setDisableBodySigning(value: Boolean): Self = this.set("disableBodySigning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableBodySigning: Self = this.set("disableBodySigning", js.undefined)
+    @scala.inline
+    def setEndpointFunction0(value: () => js.Promise[HttpEndpoint]): Self = this.set("endpoint", js.Any.fromFunction0(value))
+    @scala.inline
+    def setEndpoint(value: String | HttpEndpoint | Provider[HttpEndpoint]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setEndpointProvider(value: js.Any): Self = this.set("endpointProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointProvider: Self = this.set("endpointProvider", js.undefined)
+    @scala.inline
+    def setForcePathStyle(value: Boolean): Self = this.set("forcePathStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForcePathStyle: Self = this.set("forcePathStyle", js.undefined)
+    @scala.inline
+    def setHandler(value: /* context */ HandlerExecutionContext => FinalizeHandler[js.Object, _, Readable]): Self = this.set("handler", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHandler: Self = this.set("handler", js.undefined)
+    @scala.inline
+    def setHttpHandler(value: HttpHandler[Readable, HttpOptions]): Self = this.set("httpHandler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpHandler: Self = this.set("httpHandler", js.undefined)
+    @scala.inline
+    def setMaxRedirects(value: Double): Self = this.set("maxRedirects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRedirects: Self = this.set("maxRedirects", js.undefined)
+    @scala.inline
+    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    @scala.inline
+    def setMd5(value: Instantiable): Self = this.set("md5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd5: Self = this.set("md5", js.undefined)
+    @scala.inline
+    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setRegionFunction0(value: () => js.Promise[String]): Self = this.set("region", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRegion(value: String | Provider[String]): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setRetryDecider(value: /* error */ SdkError => Boolean): Self = this.set("retryDecider", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRetryDecider: Self = this.set("retryDecider", js.undefined)
+    @scala.inline
+    def setSha256(value: HashConstructor): Self = this.set("sha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha256: Self = this.set("sha256", js.undefined)
+    @scala.inline
+    def setSigner(value: RequestSigner): Self = this.set("signer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigner: Self = this.set("signer", js.undefined)
+    @scala.inline
+    def setSigningName(value: String): Self = this.set("signingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningName: Self = this.set("signingName", js.undefined)
+    @scala.inline
+    def setSslEnabled(value: Boolean): Self = this.set("sslEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslEnabled: Self = this.set("sslEnabled", js.undefined)
+    @scala.inline
+    def setStreamCollector(value: Readable => js.Promise[Uint8Array]): Self = this.set("streamCollector", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStreamCollector: Self = this.set("streamCollector", js.undefined)
+    @scala.inline
+    def setStreamHasher(value: (/* hashCtor */ typings.awsSdkTypes.anon.Instantiable, Readable) => js.Promise[Uint8Array]): Self = this.set("streamHasher", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStreamHasher: Self = this.set("streamHasher", js.undefined)
+    @scala.inline
+    def setUrlParser(value: /* url */ String => HttpEndpoint): Self = this.set("urlParser", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUrlParser: Self = this.set("urlParser", js.undefined)
+    @scala.inline
+    def setUseAccelerateEndpoint(value: Boolean): Self = this.set("useAccelerateEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseAccelerateEndpoint: Self = this.set("useAccelerateEndpoint", js.undefined)
+    @scala.inline
+    def setUseDualstackEndpoint(value: Boolean): Self = this.set("useDualstackEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseDualstackEndpoint: Self = this.set("useDualstackEndpoint", js.undefined)
+    @scala.inline
+    def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = this.set("utf8Decoder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUtf8Decoder: Self = this.set("utf8Decoder", js.undefined)
+    @scala.inline
+    def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = this.set("utf8Encoder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUtf8Encoder: Self = this.set("utf8Encoder", js.undefined)
+  }
+  
 }
 

@@ -4,29 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScalesCustomLabelsFont extends js.Object {
   /** Specify font fontFamily for custom labels.
     * @Default {Arial}
     */
-  var fontFamily: js.UndefOr[String] = js.undefined
+  var fontFamily: js.UndefOr[String] = js.native
   /** Specify font Style for custom labels.
     * @Default {Bold}
     */
-  var fontStyle: js.UndefOr[String] = js.undefined
+  var fontStyle: js.UndefOr[String] = js.native
   /** Specify font size for custom labels.
     * @Default {12px}
     */
-  var size: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[String] = js.native
 }
 
 object ScalesCustomLabelsFont {
   @scala.inline
-  def apply(fontFamily: String = null, fontStyle: String = null, size: String = null): ScalesCustomLabelsFont = {
+  def apply(): ScalesCustomLabelsFont = {
     val __obj = js.Dynamic.literal()
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesCustomLabelsFont]
   }
+  @scala.inline
+  implicit class ScalesCustomLabelsFontOps[Self <: ScalesCustomLabelsFont] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

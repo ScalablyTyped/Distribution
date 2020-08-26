@@ -28,10 +28,32 @@ trait VersionSummary extends js.Object {
 
 object VersionSummary {
   @scala.inline
-  def apply(ApplicationId: string, CreationTime: string, SemanticVersion: string, SourceCodeUrl: string = null): VersionSummary = {
+  def apply(ApplicationId: string, CreationTime: string, SemanticVersion: string): VersionSummary = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], SemanticVersion = SemanticVersion.asInstanceOf[js.Any])
-    if (SourceCodeUrl != null) __obj.updateDynamic("SourceCodeUrl")(SourceCodeUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionSummary]
   }
+  @scala.inline
+  implicit class VersionSummaryOps[Self <: VersionSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationTime(value: string): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSemanticVersion(value: string): Self = this.set("SemanticVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceCodeUrl(value: string): Self = this.set("SourceCodeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCodeUrl: Self = this.set("SourceCodeUrl", js.undefined)
+  }
+  
 }
 

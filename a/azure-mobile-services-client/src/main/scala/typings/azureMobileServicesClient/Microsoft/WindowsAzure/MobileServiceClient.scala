@@ -28,6 +28,11 @@ trait MobileServiceClient
     * @param callback Optional callback accepting (error, results) parameters.
     */
   def invokeApi(apiName: String): asyncPromise = js.native
+  def invokeApi(
+    apiName: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
+  ): asyncPromise = js.native
   def invokeApi(apiName: String, options: InvokeApiOptions): asyncPromise = js.native
   def invokeApi(
     apiName: String,

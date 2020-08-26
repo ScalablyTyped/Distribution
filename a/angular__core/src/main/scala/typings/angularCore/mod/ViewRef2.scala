@@ -15,7 +15,7 @@ trait ViewRef2[T]
     *
     * This may be different from `_lView` if the `_cdRefInjectingView` is an embedded view.
     */
-  var _cdRefInjectingView: js.UndefOr[js.Any] = js.native
+  var _cdRefInjectingView: js.Any = js.native
   var _viewContainerRef: js.Any = js.native
   def attachToViewContainerRef(vcRef: ViewContainerRef): Unit = js.native
 }

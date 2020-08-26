@@ -12,7 +12,7 @@ Make CSS easier and more maintainable by using JavaScript
 | Keywords           | inline, css, style, js, hash, server |
 | # releases         | 7 |
 | # dependents       | 15 |
-| # downloads        | 1295747 |
+| # downloads        | 1475146 |
 | # stars            | 0 |
 
 ## Links

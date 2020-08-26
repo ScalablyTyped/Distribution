@@ -45,22 +45,48 @@ trait SchemaGooglePrivacyDlpV2CloudStorageOptions extends js.Object {
 
 object SchemaGooglePrivacyDlpV2CloudStorageOptions {
   @scala.inline
-  def apply(
-    bytesLimitPerFile: String = null,
-    bytesLimitPerFilePercent: js.UndefOr[Double] = js.undefined,
-    fileSet: SchemaGooglePrivacyDlpV2FileSet = null,
-    fileTypes: js.Array[String] = null,
-    filesLimitPercent: js.UndefOr[Double] = js.undefined,
-    sampleMethod: String = null
-  ): SchemaGooglePrivacyDlpV2CloudStorageOptions = {
+  def apply(): SchemaGooglePrivacyDlpV2CloudStorageOptions = {
     val __obj = js.Dynamic.literal()
-    if (bytesLimitPerFile != null) __obj.updateDynamic("bytesLimitPerFile")(bytesLimitPerFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(bytesLimitPerFilePercent)) __obj.updateDynamic("bytesLimitPerFilePercent")(bytesLimitPerFilePercent.get.asInstanceOf[js.Any])
-    if (fileSet != null) __obj.updateDynamic("fileSet")(fileSet.asInstanceOf[js.Any])
-    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(filesLimitPercent)) __obj.updateDynamic("filesLimitPercent")(filesLimitPercent.get.asInstanceOf[js.Any])
-    if (sampleMethod != null) __obj.updateDynamic("sampleMethod")(sampleMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CloudStorageOptions]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2CloudStorageOptionsOps[Self <: SchemaGooglePrivacyDlpV2CloudStorageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytesLimitPerFile(value: String): Self = this.set("bytesLimitPerFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesLimitPerFile: Self = this.set("bytesLimitPerFile", js.undefined)
+    @scala.inline
+    def setBytesLimitPerFilePercent(value: Double): Self = this.set("bytesLimitPerFilePercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesLimitPerFilePercent: Self = this.set("bytesLimitPerFilePercent", js.undefined)
+    @scala.inline
+    def setFileSet(value: SchemaGooglePrivacyDlpV2FileSet): Self = this.set("fileSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSet: Self = this.set("fileSet", js.undefined)
+    @scala.inline
+    def setFileTypesVarargs(value: String*): Self = this.set("fileTypes", js.Array(value :_*))
+    @scala.inline
+    def setFileTypes(value: js.Array[String]): Self = this.set("fileTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileTypes: Self = this.set("fileTypes", js.undefined)
+    @scala.inline
+    def setFilesLimitPercent(value: Double): Self = this.set("filesLimitPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilesLimitPercent: Self = this.set("filesLimitPercent", js.undefined)
+    @scala.inline
+    def setSampleMethod(value: String): Self = this.set("sampleMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleMethod: Self = this.set("sampleMethod", js.undefined)
+  }
+  
 }
 

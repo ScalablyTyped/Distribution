@@ -22,16 +22,36 @@ trait RecommendationSummary extends js.Object {
 
 object RecommendationSummary {
   @scala.inline
-  def apply(
-    accountId: AccountId = null,
-    recommendationResourceType: RecommendationSourceType = null,
-    summaries: Summaries = null
-  ): RecommendationSummary = {
+  def apply(): RecommendationSummary = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (recommendationResourceType != null) __obj.updateDynamic("recommendationResourceType")(recommendationResourceType.asInstanceOf[js.Any])
-    if (summaries != null) __obj.updateDynamic("summaries")(summaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendationSummary]
   }
+  @scala.inline
+  implicit class RecommendationSummaryOps[Self <: RecommendationSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setRecommendationResourceType(value: RecommendationSourceType): Self = this.set("recommendationResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationResourceType: Self = this.set("recommendationResourceType", js.undefined)
+    @scala.inline
+    def setSummariesVarargs(value: Summary*): Self = this.set("summaries", js.Array(value :_*))
+    @scala.inline
+    def setSummaries(value: Summaries): Self = this.set("summaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaries: Self = this.set("summaries", js.undefined)
+  }
+  
 }
 

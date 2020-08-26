@@ -80,18 +80,38 @@ trait SchemaPipelineParameter extends js.Object {
 
 object SchemaPipelineParameter {
   @scala.inline
-  def apply(
-    defaultValue: String = null,
-    description: String = null,
-    localCopy: SchemaLocalCopy = null,
-    name: String = null
-  ): SchemaPipelineParameter = {
+  def apply(): SchemaPipelineParameter = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (localCopy != null) __obj.updateDynamic("localCopy")(localCopy.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPipelineParameter]
   }
+  @scala.inline
+  implicit class SchemaPipelineParameterOps[Self <: SchemaPipelineParameter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLocalCopy(value: SchemaLocalCopy): Self = this.set("localCopy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalCopy: Self = this.set("localCopy", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

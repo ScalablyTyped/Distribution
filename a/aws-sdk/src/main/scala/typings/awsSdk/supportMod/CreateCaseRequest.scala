@@ -46,26 +46,56 @@ trait CreateCaseRequest extends js.Object {
 
 object CreateCaseRequest {
   @scala.inline
-  def apply(
-    communicationBody: CommunicationBody,
-    subject: Subject,
-    attachmentSetId: AttachmentSetId = null,
-    categoryCode: CategoryCode = null,
-    ccEmailAddresses: CcEmailAddressList = null,
-    issueType: IssueType = null,
-    language: Language = null,
-    serviceCode: ServiceCode = null,
-    severityCode: SeverityCode = null
-  ): CreateCaseRequest = {
+  def apply(communicationBody: CommunicationBody, subject: Subject): CreateCaseRequest = {
     val __obj = js.Dynamic.literal(communicationBody = communicationBody.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-    if (attachmentSetId != null) __obj.updateDynamic("attachmentSetId")(attachmentSetId.asInstanceOf[js.Any])
-    if (categoryCode != null) __obj.updateDynamic("categoryCode")(categoryCode.asInstanceOf[js.Any])
-    if (ccEmailAddresses != null) __obj.updateDynamic("ccEmailAddresses")(ccEmailAddresses.asInstanceOf[js.Any])
-    if (issueType != null) __obj.updateDynamic("issueType")(issueType.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (serviceCode != null) __obj.updateDynamic("serviceCode")(serviceCode.asInstanceOf[js.Any])
-    if (severityCode != null) __obj.updateDynamic("severityCode")(severityCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCaseRequest]
   }
+  @scala.inline
+  implicit class CreateCaseRequestOps[Self <: CreateCaseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommunicationBody(value: CommunicationBody): Self = this.set("communicationBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubject(value: Subject): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttachmentSetId(value: AttachmentSetId): Self = this.set("attachmentSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentSetId: Self = this.set("attachmentSetId", js.undefined)
+    @scala.inline
+    def setCategoryCode(value: CategoryCode): Self = this.set("categoryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryCode: Self = this.set("categoryCode", js.undefined)
+    @scala.inline
+    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = this.set("ccEmailAddresses", js.Array(value :_*))
+    @scala.inline
+    def setCcEmailAddresses(value: CcEmailAddressList): Self = this.set("ccEmailAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCcEmailAddresses: Self = this.set("ccEmailAddresses", js.undefined)
+    @scala.inline
+    def setIssueType(value: IssueType): Self = this.set("issueType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssueType: Self = this.set("issueType", js.undefined)
+    @scala.inline
+    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setServiceCode(value: ServiceCode): Self = this.set("serviceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCode: Self = this.set("serviceCode", js.undefined)
+    @scala.inline
+    def setSeverityCode(value: SeverityCode): Self = this.set("severityCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverityCode: Self = this.set("severityCode", js.undefined)
+  }
+  
 }
 

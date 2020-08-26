@@ -17,6 +17,12 @@ trait InsertRtfCommand extends CommandWithSimpleStateBase {
     * @param callback A callback function that passes the inserted content's Interval object and the bool parameter that displays whether the RTF formatted string is valid.
     */
   def execute(rtfText: String, position: Double): Boolean = js.native
+  def execute(
+    rtfText: String,
+    position: Double,
+    subDocumentId: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* interval */ Interval, /* isRtfValid */ Boolean, Unit]
+  ): Boolean = js.native
   def execute(rtfText: String, position: Double, subDocumentId: Double): Boolean = js.native
   def execute(
     rtfText: String,

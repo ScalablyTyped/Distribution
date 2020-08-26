@@ -4,93 +4,164 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimelineItem extends js.Object {
-  var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
-  var bundleId: js.UndefOr[String] = js.undefined
-  var canonicalUrl: js.UndefOr[String] = js.undefined
-  var created: js.UndefOr[String] = js.undefined
-  var creator: js.UndefOr[Contact] = js.undefined
-  var displayTime: js.UndefOr[String] = js.undefined
-  var etag: js.UndefOr[String] = js.undefined
-  var html: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var inReplyTo: js.UndefOr[String] = js.undefined
-  var isBundleCover: js.UndefOr[Boolean] = js.undefined
-  var isDeleted: js.UndefOr[Boolean] = js.undefined
-  var isPinned: js.UndefOr[Boolean] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var location: js.UndefOr[Location] = js.undefined
-  var menuItems: js.UndefOr[js.Array[MenuItem]] = js.undefined
-  var notification: js.UndefOr[NotificationConfig] = js.undefined
-  var pinScore: js.UndefOr[Double] = js.undefined
-  var recipients: js.UndefOr[js.Array[Contact]] = js.undefined
-  var selfLink: js.UndefOr[String] = js.undefined
-  var sourceItemId: js.UndefOr[String] = js.undefined
-  var speakableText: js.UndefOr[String] = js.undefined
-  var speakableType: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var updated: js.UndefOr[String] = js.undefined
+  var attachments: js.UndefOr[js.Array[Attachment]] = js.native
+  var bundleId: js.UndefOr[String] = js.native
+  var canonicalUrl: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.native
+  var creator: js.UndefOr[Contact] = js.native
+  var displayTime: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var inReplyTo: js.UndefOr[String] = js.native
+  var isBundleCover: js.UndefOr[Boolean] = js.native
+  var isDeleted: js.UndefOr[Boolean] = js.native
+  var isPinned: js.UndefOr[Boolean] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var location: js.UndefOr[Location] = js.native
+  var menuItems: js.UndefOr[js.Array[MenuItem]] = js.native
+  var notification: js.UndefOr[NotificationConfig] = js.native
+  var pinScore: js.UndefOr[Double] = js.native
+  var recipients: js.UndefOr[js.Array[Contact]] = js.native
+  var selfLink: js.UndefOr[String] = js.native
+  var sourceItemId: js.UndefOr[String] = js.native
+  var speakableText: js.UndefOr[String] = js.native
+  var speakableType: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.native
 }
 
 object TimelineItem {
   @scala.inline
-  def apply(
-    attachments: js.Array[Attachment] = null,
-    bundleId: String = null,
-    canonicalUrl: String = null,
-    created: String = null,
-    creator: Contact = null,
-    displayTime: String = null,
-    etag: String = null,
-    html: String = null,
-    id: String = null,
-    inReplyTo: String = null,
-    isBundleCover: js.UndefOr[Boolean] = js.undefined,
-    isDeleted: js.UndefOr[Boolean] = js.undefined,
-    isPinned: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    location: Location = null,
-    menuItems: js.Array[MenuItem] = null,
-    notification: NotificationConfig = null,
-    pinScore: js.UndefOr[Double] = js.undefined,
-    recipients: js.Array[Contact] = null,
-    selfLink: String = null,
-    sourceItemId: String = null,
-    speakableText: String = null,
-    speakableType: String = null,
-    text: String = null,
-    title: String = null,
-    updated: String = null
-  ): TimelineItem = {
+  def apply(): TimelineItem = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (canonicalUrl != null) __obj.updateDynamic("canonicalUrl")(canonicalUrl.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
-    if (displayTime != null) __obj.updateDynamic("displayTime")(displayTime.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBundleCover)) __obj.updateDynamic("isBundleCover")(isBundleCover.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDeleted)) __obj.updateDynamic("isDeleted")(isDeleted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPinned)) __obj.updateDynamic("isPinned")(isPinned.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems.asInstanceOf[js.Any])
-    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinScore)) __obj.updateDynamic("pinScore")(pinScore.get.asInstanceOf[js.Any])
-    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (sourceItemId != null) __obj.updateDynamic("sourceItemId")(sourceItemId.asInstanceOf[js.Any])
-    if (speakableText != null) __obj.updateDynamic("speakableText")(speakableText.asInstanceOf[js.Any])
-    if (speakableType != null) __obj.updateDynamic("speakableType")(speakableType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineItem]
   }
+  @scala.inline
+  implicit class TimelineItemOps[Self <: TimelineItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentsVarargs(value: Attachment*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: js.Array[Attachment]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    @scala.inline
+    def setBundleId(value: String): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    @scala.inline
+    def setCanonicalUrl(value: String): Self = this.set("canonicalUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanonicalUrl: Self = this.set("canonicalUrl", js.undefined)
+    @scala.inline
+    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setCreator(value: Contact): Self = this.set("creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreator: Self = this.set("creator", js.undefined)
+    @scala.inline
+    def setDisplayTime(value: String): Self = this.set("displayTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayTime: Self = this.set("displayTime", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInReplyTo(value: String): Self = this.set("inReplyTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInReplyTo: Self = this.set("inReplyTo", js.undefined)
+    @scala.inline
+    def setIsBundleCover(value: Boolean): Self = this.set("isBundleCover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsBundleCover: Self = this.set("isBundleCover", js.undefined)
+    @scala.inline
+    def setIsDeleted(value: Boolean): Self = this.set("isDeleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDeleted: Self = this.set("isDeleted", js.undefined)
+    @scala.inline
+    def setIsPinned(value: Boolean): Self = this.set("isPinned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPinned: Self = this.set("isPinned", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMenuItemsVarargs(value: MenuItem*): Self = this.set("menuItems", js.Array(value :_*))
+    @scala.inline
+    def setMenuItems(value: js.Array[MenuItem]): Self = this.set("menuItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuItems: Self = this.set("menuItems", js.undefined)
+    @scala.inline
+    def setNotification(value: NotificationConfig): Self = this.set("notification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotification: Self = this.set("notification", js.undefined)
+    @scala.inline
+    def setPinScore(value: Double): Self = this.set("pinScore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinScore: Self = this.set("pinScore", js.undefined)
+    @scala.inline
+    def setRecipientsVarargs(value: Contact*): Self = this.set("recipients", js.Array(value :_*))
+    @scala.inline
+    def setRecipients(value: js.Array[Contact]): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSourceItemId(value: String): Self = this.set("sourceItemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceItemId: Self = this.set("sourceItemId", js.undefined)
+    @scala.inline
+    def setSpeakableText(value: String): Self = this.set("speakableText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeakableText: Self = this.set("speakableText", js.undefined)
+    @scala.inline
+    def setSpeakableType(value: String): Self = this.set("speakableType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeakableType: Self = this.set("speakableType", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+  }
+  
 }
 

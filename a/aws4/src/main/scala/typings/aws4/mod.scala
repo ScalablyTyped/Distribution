@@ -10,6 +10,7 @@ object mod extends js.Object {
   @js.native
   class RequestSigner () extends js.Object {
     def this(request: js.Any) = this()
+    def this(request: js.UndefOr[scala.Nothing], credentials: js.Any) = this()
     def this(request: js.Any, credentials: js.Any) = this()
     var credentials: js.Any = js.native
     var isCodeCommitGit: js.Any = js.native
@@ -37,6 +38,7 @@ object mod extends js.Object {
   }
   
   def sign(): js.Any = js.native
+  def sign(options: js.UndefOr[scala.Nothing], credentials: js.Any): js.Any = js.native
   def sign(options: js.Any): js.Any = js.native
   def sign(options: js.Any, credentials: js.Any): js.Any = js.native
 }

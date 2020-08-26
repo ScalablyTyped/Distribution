@@ -36,20 +36,46 @@ trait SchemaAccountStatus extends js.Object {
 
 object SchemaAccountStatus {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    accountLevelIssues: js.Array[SchemaAccountStatusAccountLevelIssue] = null,
-    kind: String = null,
-    products: js.Array[SchemaAccountStatusProducts] = null,
-    websiteClaimed: js.UndefOr[Boolean] = js.undefined
-  ): SchemaAccountStatus = {
+  def apply(): SchemaAccountStatus = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (accountLevelIssues != null) __obj.updateDynamic("accountLevelIssues")(accountLevelIssues.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (products != null) __obj.updateDynamic("products")(products.asInstanceOf[js.Any])
-    if (!js.isUndefined(websiteClaimed)) __obj.updateDynamic("websiteClaimed")(websiteClaimed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountStatus]
   }
+  @scala.inline
+  implicit class SchemaAccountStatusOps[Self <: SchemaAccountStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAccountLevelIssuesVarargs(value: SchemaAccountStatusAccountLevelIssue*): Self = this.set("accountLevelIssues", js.Array(value :_*))
+    @scala.inline
+    def setAccountLevelIssues(value: js.Array[SchemaAccountStatusAccountLevelIssue]): Self = this.set("accountLevelIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountLevelIssues: Self = this.set("accountLevelIssues", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setProductsVarargs(value: SchemaAccountStatusProducts*): Self = this.set("products", js.Array(value :_*))
+    @scala.inline
+    def setProducts(value: js.Array[SchemaAccountStatusProducts]): Self = this.set("products", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducts: Self = this.set("products", js.undefined)
+    @scala.inline
+    def setWebsiteClaimed(value: Boolean): Self = this.set("websiteClaimed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteClaimed: Self = this.set("websiteClaimed", js.undefined)
+  }
+  
 }
 

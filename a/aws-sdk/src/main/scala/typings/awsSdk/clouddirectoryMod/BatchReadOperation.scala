@@ -63,38 +63,78 @@ trait BatchReadOperation extends js.Object {
 
 object BatchReadOperation {
   @scala.inline
-  def apply(
-    GetLinkAttributes: BatchGetLinkAttributes = null,
-    GetObjectAttributes: BatchGetObjectAttributes = null,
-    GetObjectInformation: BatchGetObjectInformation = null,
-    ListAttachedIndices: BatchListAttachedIndices = null,
-    ListIncomingTypedLinks: BatchListIncomingTypedLinks = null,
-    ListIndex: BatchListIndex = null,
-    ListObjectAttributes: BatchListObjectAttributes = null,
-    ListObjectChildren: BatchListObjectChildren = null,
-    ListObjectParentPaths: BatchListObjectParentPaths = null,
-    ListObjectParents: BatchListObjectParents = null,
-    ListObjectPolicies: BatchListObjectPolicies = null,
-    ListOutgoingTypedLinks: BatchListOutgoingTypedLinks = null,
-    ListPolicyAttachments: BatchListPolicyAttachments = null,
-    LookupPolicy: BatchLookupPolicy = null
-  ): BatchReadOperation = {
+  def apply(): BatchReadOperation = {
     val __obj = js.Dynamic.literal()
-    if (GetLinkAttributes != null) __obj.updateDynamic("GetLinkAttributes")(GetLinkAttributes.asInstanceOf[js.Any])
-    if (GetObjectAttributes != null) __obj.updateDynamic("GetObjectAttributes")(GetObjectAttributes.asInstanceOf[js.Any])
-    if (GetObjectInformation != null) __obj.updateDynamic("GetObjectInformation")(GetObjectInformation.asInstanceOf[js.Any])
-    if (ListAttachedIndices != null) __obj.updateDynamic("ListAttachedIndices")(ListAttachedIndices.asInstanceOf[js.Any])
-    if (ListIncomingTypedLinks != null) __obj.updateDynamic("ListIncomingTypedLinks")(ListIncomingTypedLinks.asInstanceOf[js.Any])
-    if (ListIndex != null) __obj.updateDynamic("ListIndex")(ListIndex.asInstanceOf[js.Any])
-    if (ListObjectAttributes != null) __obj.updateDynamic("ListObjectAttributes")(ListObjectAttributes.asInstanceOf[js.Any])
-    if (ListObjectChildren != null) __obj.updateDynamic("ListObjectChildren")(ListObjectChildren.asInstanceOf[js.Any])
-    if (ListObjectParentPaths != null) __obj.updateDynamic("ListObjectParentPaths")(ListObjectParentPaths.asInstanceOf[js.Any])
-    if (ListObjectParents != null) __obj.updateDynamic("ListObjectParents")(ListObjectParents.asInstanceOf[js.Any])
-    if (ListObjectPolicies != null) __obj.updateDynamic("ListObjectPolicies")(ListObjectPolicies.asInstanceOf[js.Any])
-    if (ListOutgoingTypedLinks != null) __obj.updateDynamic("ListOutgoingTypedLinks")(ListOutgoingTypedLinks.asInstanceOf[js.Any])
-    if (ListPolicyAttachments != null) __obj.updateDynamic("ListPolicyAttachments")(ListPolicyAttachments.asInstanceOf[js.Any])
-    if (LookupPolicy != null) __obj.updateDynamic("LookupPolicy")(LookupPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchReadOperation]
   }
+  @scala.inline
+  implicit class BatchReadOperationOps[Self <: BatchReadOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetLinkAttributes(value: BatchGetLinkAttributes): Self = this.set("GetLinkAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetLinkAttributes: Self = this.set("GetLinkAttributes", js.undefined)
+    @scala.inline
+    def setGetObjectAttributes(value: BatchGetObjectAttributes): Self = this.set("GetObjectAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetObjectAttributes: Self = this.set("GetObjectAttributes", js.undefined)
+    @scala.inline
+    def setGetObjectInformation(value: BatchGetObjectInformation): Self = this.set("GetObjectInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetObjectInformation: Self = this.set("GetObjectInformation", js.undefined)
+    @scala.inline
+    def setListAttachedIndices(value: BatchListAttachedIndices): Self = this.set("ListAttachedIndices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListAttachedIndices: Self = this.set("ListAttachedIndices", js.undefined)
+    @scala.inline
+    def setListIncomingTypedLinks(value: BatchListIncomingTypedLinks): Self = this.set("ListIncomingTypedLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListIncomingTypedLinks: Self = this.set("ListIncomingTypedLinks", js.undefined)
+    @scala.inline
+    def setListIndex(value: BatchListIndex): Self = this.set("ListIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListIndex: Self = this.set("ListIndex", js.undefined)
+    @scala.inline
+    def setListObjectAttributes(value: BatchListObjectAttributes): Self = this.set("ListObjectAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListObjectAttributes: Self = this.set("ListObjectAttributes", js.undefined)
+    @scala.inline
+    def setListObjectChildren(value: BatchListObjectChildren): Self = this.set("ListObjectChildren", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListObjectChildren: Self = this.set("ListObjectChildren", js.undefined)
+    @scala.inline
+    def setListObjectParentPaths(value: BatchListObjectParentPaths): Self = this.set("ListObjectParentPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListObjectParentPaths: Self = this.set("ListObjectParentPaths", js.undefined)
+    @scala.inline
+    def setListObjectParents(value: BatchListObjectParents): Self = this.set("ListObjectParents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListObjectParents: Self = this.set("ListObjectParents", js.undefined)
+    @scala.inline
+    def setListObjectPolicies(value: BatchListObjectPolicies): Self = this.set("ListObjectPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListObjectPolicies: Self = this.set("ListObjectPolicies", js.undefined)
+    @scala.inline
+    def setListOutgoingTypedLinks(value: BatchListOutgoingTypedLinks): Self = this.set("ListOutgoingTypedLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListOutgoingTypedLinks: Self = this.set("ListOutgoingTypedLinks", js.undefined)
+    @scala.inline
+    def setListPolicyAttachments(value: BatchListPolicyAttachments): Self = this.set("ListPolicyAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListPolicyAttachments: Self = this.set("ListPolicyAttachments", js.undefined)
+    @scala.inline
+    def setLookupPolicy(value: BatchLookupPolicy): Self = this.set("LookupPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupPolicy: Self = this.set("LookupPolicy", js.undefined)
+  }
+  
 }
 

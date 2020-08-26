@@ -5,47 +5,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Disabled extends js.Object {
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   var onRippleAnimation: js.UndefOr[
     js.Function2[/* animation */ CompositeAnimation, /* callback */ js.Function0[Unit], Unit]
-  ] = js.undefined
-  var rippleCentered: js.UndefOr[Boolean] = js.undefined
-  var rippleColor: js.UndefOr[String] = js.undefined
-  var rippleContainerBorderRadius: js.UndefOr[Double] = js.undefined
-  var rippleDuration: js.UndefOr[Double] = js.undefined
-  var rippleFades: js.UndefOr[Boolean] = js.undefined
-  var rippleOpacity: js.UndefOr[Double] = js.undefined
-  var rippleSequential: js.UndefOr[Boolean] = js.undefined
-  var rippleSize: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var rippleCentered: js.UndefOr[Boolean] = js.native
+  var rippleColor: js.UndefOr[String] = js.native
+  var rippleContainerBorderRadius: js.UndefOr[Double] = js.native
+  var rippleDuration: js.UndefOr[Double] = js.native
+  var rippleFades: js.UndefOr[Boolean] = js.native
+  var rippleOpacity: js.UndefOr[Double] = js.native
+  var rippleSequential: js.UndefOr[Boolean] = js.native
+  var rippleSize: js.UndefOr[Double] = js.native
 }
 
 object Disabled {
   @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onRippleAnimation: (/* animation */ CompositeAnimation, /* callback */ js.Function0[Unit]) => Unit = null,
-    rippleCentered: js.UndefOr[Boolean] = js.undefined,
-    rippleColor: String = null,
-    rippleContainerBorderRadius: js.UndefOr[Double] = js.undefined,
-    rippleDuration: js.UndefOr[Double] = js.undefined,
-    rippleFades: js.UndefOr[Boolean] = js.undefined,
-    rippleOpacity: js.UndefOr[Double] = js.undefined,
-    rippleSequential: js.UndefOr[Boolean] = js.undefined,
-    rippleSize: js.UndefOr[Double] = js.undefined
-  ): Disabled = {
+  def apply(): Disabled = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (onRippleAnimation != null) __obj.updateDynamic("onRippleAnimation")(js.Any.fromFunction2(onRippleAnimation))
-    if (!js.isUndefined(rippleCentered)) __obj.updateDynamic("rippleCentered")(rippleCentered.get.asInstanceOf[js.Any])
-    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(rippleContainerBorderRadius)) __obj.updateDynamic("rippleContainerBorderRadius")(rippleContainerBorderRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rippleDuration)) __obj.updateDynamic("rippleDuration")(rippleDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rippleFades)) __obj.updateDynamic("rippleFades")(rippleFades.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rippleOpacity)) __obj.updateDynamic("rippleOpacity")(rippleOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rippleSequential)) __obj.updateDynamic("rippleSequential")(rippleSequential.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rippleSize)) __obj.updateDynamic("rippleSize")(rippleSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Disabled]
   }
+  @scala.inline
+  implicit class DisabledOps[Self <: Disabled] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setOnRippleAnimation(value: (/* animation */ CompositeAnimation, /* callback */ js.Function0[Unit]) => Unit): Self = this.set("onRippleAnimation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRippleAnimation: Self = this.set("onRippleAnimation", js.undefined)
+    @scala.inline
+    def setRippleCentered(value: Boolean): Self = this.set("rippleCentered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleCentered: Self = this.set("rippleCentered", js.undefined)
+    @scala.inline
+    def setRippleColor(value: String): Self = this.set("rippleColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleColor: Self = this.set("rippleColor", js.undefined)
+    @scala.inline
+    def setRippleContainerBorderRadius(value: Double): Self = this.set("rippleContainerBorderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleContainerBorderRadius: Self = this.set("rippleContainerBorderRadius", js.undefined)
+    @scala.inline
+    def setRippleDuration(value: Double): Self = this.set("rippleDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleDuration: Self = this.set("rippleDuration", js.undefined)
+    @scala.inline
+    def setRippleFades(value: Boolean): Self = this.set("rippleFades", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleFades: Self = this.set("rippleFades", js.undefined)
+    @scala.inline
+    def setRippleOpacity(value: Double): Self = this.set("rippleOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleOpacity: Self = this.set("rippleOpacity", js.undefined)
+    @scala.inline
+    def setRippleSequential(value: Boolean): Self = this.set("rippleSequential", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleSequential: Self = this.set("rippleSequential", js.undefined)
+    @scala.inline
+    def setRippleSize(value: Double): Self = this.set("rippleSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleSize: Self = this.set("rippleSize", js.undefined)
+  }
+  
 }
 

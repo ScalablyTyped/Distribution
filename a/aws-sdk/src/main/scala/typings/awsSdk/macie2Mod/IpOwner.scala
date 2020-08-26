@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IpOwner extends js.Object {
   /**
-    * Reserved for future use.
+    * The autonomous system number (ASN) for the autonomous system that included the IP address.
     */
   var asn: js.UndefOr[string] = js.native
   /**
-    * Reserved for future use.
+    * The organization identifier that's associated with the autonomous system number (ASN) for the autonomous system that included the IP address.
     */
   var asnOrg: js.UndefOr[string] = js.native
   /**
-    * Reserved for future use.
+    * The name of the internet service provider (ISP) that owned the IP address.
     */
   var isp: js.UndefOr[string] = js.native
   /**
-    * Reserved for future use.
+    * The name of the organization that owned the IP address.
     */
   @JSName("org")
   var org_ : js.UndefOr[string] = js.native
@@ -27,13 +27,38 @@ trait IpOwner extends js.Object {
 
 object IpOwner {
   @scala.inline
-  def apply(asn: string = null, asnOrg: string = null, isp: string = null, org_ : string = null): IpOwner = {
+  def apply(): IpOwner = {
     val __obj = js.Dynamic.literal()
-    if (asn != null) __obj.updateDynamic("asn")(asn.asInstanceOf[js.Any])
-    if (asnOrg != null) __obj.updateDynamic("asnOrg")(asnOrg.asInstanceOf[js.Any])
-    if (isp != null) __obj.updateDynamic("isp")(isp.asInstanceOf[js.Any])
-    if (org_ != null) __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpOwner]
   }
+  @scala.inline
+  implicit class IpOwnerOps[Self <: IpOwner] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsn(value: string): Self = this.set("asn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsn: Self = this.set("asn", js.undefined)
+    @scala.inline
+    def setAsnOrg(value: string): Self = this.set("asnOrg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsnOrg: Self = this.set("asnOrg", js.undefined)
+    @scala.inline
+    def setIsp(value: string): Self = this.set("isp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsp: Self = this.set("isp", js.undefined)
+    @scala.inline
+    def setOrg_(value: string): Self = this.set("org", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrg_ : Self = this.set("org", js.undefined)
+  }
+  
 }
 

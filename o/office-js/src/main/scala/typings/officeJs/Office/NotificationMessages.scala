@@ -45,6 +45,12 @@ trait NotificationMessages extends js.Object {
     JSONmessage: NotificationMessageDetails,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def addAsync(
+    key: String,
+    JSONmessage: NotificationMessageDetails,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addAsync(key: String, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): Unit = js.native
   def addAsync(
     key: String,
@@ -70,6 +76,10 @@ trait NotificationMessages extends js.Object {
     */
   def getAllAsync(): Unit = js.native
   def getAllAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[NotificationMessageDetails]], Unit]): Unit = js.native
+  def getAllAsync(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[NotificationMessageDetails]], Unit]
+  ): Unit = js.native
   def getAllAsync(options: AsyncContextOptions): Unit = js.native
   def getAllAsync(
     options: AsyncContextOptions,
@@ -94,6 +104,11 @@ trait NotificationMessages extends js.Object {
     */
   def removeAsync(key: String): Unit = js.native
   def removeAsync(key: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeAsync(
+    key: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeAsync(key: String, options: AsyncContextOptions): Unit = js.native
   def removeAsync(
     key: String,
@@ -125,6 +140,12 @@ trait NotificationMessages extends js.Object {
   def replaceAsync(
     key: String,
     JSONmessage: NotificationMessageDetails,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def replaceAsync(
+    key: String,
+    JSONmessage: NotificationMessageDetails,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def replaceAsync(key: String, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): Unit = js.native

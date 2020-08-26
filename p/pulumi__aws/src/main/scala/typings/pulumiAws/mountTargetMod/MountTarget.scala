@@ -22,7 +22,15 @@ class MountTarget protected () extends CustomResource {
   def this(name: String, args: MountTargetArgs) = this()
   def this(name: String, args: MountTargetArgs, opts: CustomResourceOptions) = this()
   /**
-    * The DNS name for the given subnet/AZ per [documented convention](http://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-name.html).
+    * The unique and consistent identifier of the Availability Zone (AZ) that the mount target resides in.
+    */
+  val availabilityZoneId: Output_[String] = js.native
+  /**
+    * The name of the Availability Zone (AZ) that the mount target resides in.
+    */
+  val availabilityZoneName: Output_[String] = js.native
+  /**
+    * The DNS name for the EFS file system.
     */
   val dnsName: Output_[String] = js.native
   /**
@@ -39,9 +47,17 @@ class MountTarget protected () extends CustomResource {
     */
   val ipAddress: Output_[String] = js.native
   /**
+    * The DNS name for the given subnet/AZ per [documented convention](http://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-name.html).
+    */
+  val mountTargetDnsName: Output_[String] = js.native
+  /**
     * The ID of the network interface that Amazon EFS created when it created the mount target.
     */
   val networkInterfaceId: Output_[String] = js.native
+  /**
+    * AWS account ID that owns the resource.
+    */
+  val ownerId: Output_[String] = js.native
   /**
     * A list of up to 5 VPC security group IDs (that must
     * be for the same VPC as subnet specified) in effect for the mount target.
@@ -64,8 +80,10 @@ object MountTarget extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): MountTarget = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MountTarget = js.native
   def get(name: String, id: Input[ID], state: MountTargetState): MountTarget = js.native
   def get(name: String, id: Input[ID], state: MountTargetState, opts: CustomResourceOptions): MountTarget = js.native
   /**

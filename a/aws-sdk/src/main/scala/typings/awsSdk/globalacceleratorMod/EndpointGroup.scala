@@ -46,28 +46,60 @@ trait EndpointGroup extends js.Object {
 
 object EndpointGroup {
   @scala.inline
-  def apply(
-    EndpointDescriptions: EndpointDescriptions = null,
-    EndpointGroupArn: GenericString = null,
-    EndpointGroupRegion: GenericString = null,
-    HealthCheckIntervalSeconds: js.UndefOr[HealthCheckIntervalSeconds] = js.undefined,
-    HealthCheckPath: GenericString = null,
-    HealthCheckPort: js.UndefOr[HealthCheckPort] = js.undefined,
-    HealthCheckProtocol: HealthCheckProtocol = null,
-    ThresholdCount: js.UndefOr[ThresholdCount] = js.undefined,
-    TrafficDialPercentage: js.UndefOr[TrafficDialPercentage] = js.undefined
-  ): EndpointGroup = {
+  def apply(): EndpointGroup = {
     val __obj = js.Dynamic.literal()
-    if (EndpointDescriptions != null) __obj.updateDynamic("EndpointDescriptions")(EndpointDescriptions.asInstanceOf[js.Any])
-    if (EndpointGroupArn != null) __obj.updateDynamic("EndpointGroupArn")(EndpointGroupArn.asInstanceOf[js.Any])
-    if (EndpointGroupRegion != null) __obj.updateDynamic("EndpointGroupRegion")(EndpointGroupRegion.asInstanceOf[js.Any])
-    if (!js.isUndefined(HealthCheckIntervalSeconds)) __obj.updateDynamic("HealthCheckIntervalSeconds")(HealthCheckIntervalSeconds.get.asInstanceOf[js.Any])
-    if (HealthCheckPath != null) __obj.updateDynamic("HealthCheckPath")(HealthCheckPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(HealthCheckPort)) __obj.updateDynamic("HealthCheckPort")(HealthCheckPort.get.asInstanceOf[js.Any])
-    if (HealthCheckProtocol != null) __obj.updateDynamic("HealthCheckProtocol")(HealthCheckProtocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(ThresholdCount)) __obj.updateDynamic("ThresholdCount")(ThresholdCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TrafficDialPercentage)) __obj.updateDynamic("TrafficDialPercentage")(TrafficDialPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointGroup]
   }
+  @scala.inline
+  implicit class EndpointGroupOps[Self <: EndpointGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointDescriptionsVarargs(value: EndpointDescription*): Self = this.set("EndpointDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setEndpointDescriptions(value: EndpointDescriptions): Self = this.set("EndpointDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointDescriptions: Self = this.set("EndpointDescriptions", js.undefined)
+    @scala.inline
+    def setEndpointGroupArn(value: GenericString): Self = this.set("EndpointGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointGroupArn: Self = this.set("EndpointGroupArn", js.undefined)
+    @scala.inline
+    def setEndpointGroupRegion(value: GenericString): Self = this.set("EndpointGroupRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointGroupRegion: Self = this.set("EndpointGroupRegion", js.undefined)
+    @scala.inline
+    def setHealthCheckIntervalSeconds(value: HealthCheckIntervalSeconds): Self = this.set("HealthCheckIntervalSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckIntervalSeconds: Self = this.set("HealthCheckIntervalSeconds", js.undefined)
+    @scala.inline
+    def setHealthCheckPath(value: GenericString): Self = this.set("HealthCheckPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckPath: Self = this.set("HealthCheckPath", js.undefined)
+    @scala.inline
+    def setHealthCheckPort(value: HealthCheckPort): Self = this.set("HealthCheckPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckPort: Self = this.set("HealthCheckPort", js.undefined)
+    @scala.inline
+    def setHealthCheckProtocol(value: HealthCheckProtocol): Self = this.set("HealthCheckProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckProtocol: Self = this.set("HealthCheckProtocol", js.undefined)
+    @scala.inline
+    def setThresholdCount(value: ThresholdCount): Self = this.set("ThresholdCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThresholdCount: Self = this.set("ThresholdCount", js.undefined)
+    @scala.inline
+    def setTrafficDialPercentage(value: TrafficDialPercentage): Self = this.set("TrafficDialPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficDialPercentage: Self = this.set("TrafficDialPercentage", js.undefined)
+  }
+  
 }
 

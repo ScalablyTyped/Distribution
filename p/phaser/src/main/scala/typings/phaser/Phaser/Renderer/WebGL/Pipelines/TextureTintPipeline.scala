@@ -154,6 +154,27 @@ trait TextureTintPipeline extends WebGLPipeline {
     tintBL: Double,
     tintBR: Double,
     tintEffect: Boolean,
+    texture: js.UndefOr[scala.Nothing],
+    unit: integer
+  ): Boolean = js.native
+  def batchQuad(
+    x0: Double,
+    y0: Double,
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    u0: Double,
+    v0: Double,
+    u1: Double,
+    v1: Double,
+    tintTL: Double,
+    tintTR: Double,
+    tintBL: Double,
+    tintBR: Double,
+    tintEffect: Boolean,
     texture: WebGLTexture
   ): Boolean = js.native
   def batchQuad(
@@ -231,6 +252,27 @@ trait TextureTintPipeline extends WebGLPipeline {
     tintBL: Double,
     tintBR: Double,
     tintEffect: Double
+  ): Boolean = js.native
+  def batchQuad(
+    x0: Double,
+    y0: Double,
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    u0: Double,
+    v0: Double,
+    u1: Double,
+    v1: Double,
+    tintTL: Double,
+    tintTR: Double,
+    tintBL: Double,
+    tintBR: Double,
+    tintEffect: Double,
+    texture: js.UndefOr[scala.Nothing],
+    unit: integer
   ): Boolean = js.native
   def batchQuad(
     x0: Double,
@@ -392,40 +434,8 @@ trait TextureTintPipeline extends WebGLPipeline {
     uOffset: Double,
     vOffset: Double,
     camera: Camera,
-    parentTransformMatrix: TransformMatrix
-  ): Unit = js.native
-  def batchTexture(
-    gameObject: GameObject,
-    texture: WebGLTexture,
-    textureWidth: integer,
-    textureHeight: integer,
-    srcX: Double,
-    srcY: Double,
-    srcWidth: Double,
-    srcHeight: Double,
-    scaleX: Double,
-    scaleY: Double,
-    rotation: Double,
-    flipX: Boolean,
-    flipY: Boolean,
-    scrollFactorX: Double,
-    scrollFactorY: Double,
-    displayOriginX: Double,
-    displayOriginY: Double,
-    frameX: Double,
-    frameY: Double,
-    frameWidth: Double,
-    frameHeight: Double,
-    tintTL: integer,
-    tintTR: integer,
-    tintBL: integer,
-    tintBR: integer,
-    tintEffect: Double,
-    uOffset: Double,
-    vOffset: Double,
-    camera: Camera,
     parentTransformMatrix: TransformMatrix,
-    skipFlip: Boolean
+    skipFlip: js.UndefOr[Boolean]
   ): Unit = js.native
   /**
     * Adds a Texture Frame into the batch for rendering.
@@ -462,6 +472,24 @@ trait TextureTintPipeline extends WebGLPipeline {
     tintTR: Double,
     tintBL: Double,
     tintEffect: Boolean
+  ): Boolean = js.native
+  def batchTri(
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    u0: Double,
+    v0: Double,
+    u1: Double,
+    v1: Double,
+    tintTL: Double,
+    tintTR: Double,
+    tintBL: Double,
+    tintEffect: Boolean,
+    texture: js.UndefOr[scala.Nothing],
+    unit: integer
   ): Boolean = js.native
   def batchTri(
     x1: Double,
@@ -560,6 +588,24 @@ trait TextureTintPipeline extends WebGLPipeline {
     tintTR: Double,
     tintBL: Double,
     tintEffect: Double,
+    texture: js.UndefOr[scala.Nothing],
+    unit: integer
+  ): Boolean = js.native
+  def batchTri(
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    u0: Double,
+    v0: Double,
+    u1: Double,
+    v1: Double,
+    tintTL: Double,
+    tintTR: Double,
+    tintBL: Double,
+    tintEffect: Double,
     texture: WebGLTexture
   ): Boolean = js.native
   def batchTri(
@@ -613,6 +659,7 @@ trait TextureTintPipeline extends WebGLPipeline {
     * @param unit Texture unit to which the texture needs to be bound. Default 0.
     */
   def setTexture2D(): TextureTintPipeline = js.native
+  def setTexture2D(texture: js.UndefOr[scala.Nothing], unit: integer): TextureTintPipeline = js.native
   def setTexture2D(texture: WebGLTexture): TextureTintPipeline = js.native
   def setTexture2D(texture: WebGLTexture, unit: integer): TextureTintPipeline = js.native
 }

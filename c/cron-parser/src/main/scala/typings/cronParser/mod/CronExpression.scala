@@ -18,6 +18,7 @@ trait CronExpression extends js.Object {
   def next(): CronDate = js.native
   /** Parse input expression (async) */
   def parse(expression: String): CronExpression = js.native
+  def parse(expression: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[_]): CronExpression = js.native
   def parse(expression: String, options: ParserOptions): CronExpression = js.native
   def parse(expression: String, options: ParserOptions, callback: js.Function0[_]): CronExpression = js.native
   /** Find previous suitable date */

@@ -19,14 +19,32 @@ trait Logger extends js.Object {
 
 object Logger {
   @scala.inline
-  def apply(
-    log: /* repeated */ js.Any => Unit = null,
-    write: (/* chunk */ js.Any, /* encoding */ js.UndefOr[String], /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit = null
-  ): Logger = {
+  def apply(): Logger = {
     val __obj = js.Dynamic.literal()
-    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
-    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction3(write))
     __obj.asInstanceOf[Logger]
   }
+  @scala.inline
+  implicit class LoggerOps[Self <: Logger] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLog(value: /* repeated */ js.Any => Unit): Self = this.set("log", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLog: Self = this.set("log", js.undefined)
+    @scala.inline
+    def setWrite(
+      value: (/* chunk */ js.Any, /* encoding */ js.UndefOr[String], /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit
+    ): Self = this.set("write", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteWrite: Self = this.set("write", js.undefined)
+  }
+  
 }
 

@@ -27,8 +27,6 @@ object getBucketNotificationConfigurationCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetBucketNotificationConfigurationInput) = this()
-    /* CompleteClass */
-    override val input: GetBucketNotificationConfigurationInput = js.native
     val middlewareStack: MiddlewareStack[
         GetBucketNotificationConfigurationInput, 
         GetBucketNotificationConfigurationOutput, 
@@ -37,11 +35,6 @@ object getBucketNotificationConfigurationCommandMod extends js.Object {
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[GetBucketNotificationConfigurationInput, GetBucketNotificationConfigurationOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[GetBucketNotificationConfigurationInput, GetBucketNotificationConfigurationOutput] = js.native
   }

@@ -35,24 +35,52 @@ trait ActionExecutionInput extends js.Object {
 
 object ActionExecutionInput {
   @scala.inline
-  def apply(
-    actionTypeId: ActionTypeId = null,
-    configuration: ActionConfigurationMap = null,
-    inputArtifacts: ArtifactDetailList = null,
-    namespace: ActionNamespace = null,
-    region: AWSRegionName = null,
-    resolvedConfiguration: ResolvedActionConfigurationMap = null,
-    roleArn: RoleArn = null
-  ): ActionExecutionInput = {
+  def apply(): ActionExecutionInput = {
     val __obj = js.Dynamic.literal()
-    if (actionTypeId != null) __obj.updateDynamic("actionTypeId")(actionTypeId.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (inputArtifacts != null) __obj.updateDynamic("inputArtifacts")(inputArtifacts.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (resolvedConfiguration != null) __obj.updateDynamic("resolvedConfiguration")(resolvedConfiguration.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionExecutionInput]
   }
+  @scala.inline
+  implicit class ActionExecutionInputOps[Self <: ActionExecutionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionTypeId(value: ActionTypeId): Self = this.set("actionTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionTypeId: Self = this.set("actionTypeId", js.undefined)
+    @scala.inline
+    def setConfiguration(value: ActionConfigurationMap): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setInputArtifactsVarargs(value: ArtifactDetail*): Self = this.set("inputArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setInputArtifacts(value: ArtifactDetailList): Self = this.set("inputArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputArtifacts: Self = this.set("inputArtifacts", js.undefined)
+    @scala.inline
+    def setNamespace(value: ActionNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setRegion(value: AWSRegionName): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setResolvedConfiguration(value: ResolvedActionConfigurationMap): Self = this.set("resolvedConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolvedConfiguration: Self = this.set("resolvedConfiguration", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

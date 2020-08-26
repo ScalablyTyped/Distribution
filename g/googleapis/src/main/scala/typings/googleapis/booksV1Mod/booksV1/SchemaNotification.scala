@@ -32,42 +32,88 @@ trait SchemaNotification extends js.Object {
 
 object SchemaNotification {
   @scala.inline
-  def apply(
-    body: String = null,
-    crmExperimentIds: js.Array[String] = null,
-    doc_id: String = null,
-    doc_type: String = null,
-    dont_show_notification: js.UndefOr[Boolean] = js.undefined,
-    iconUrl: String = null,
-    is_document_mature: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    notificationGroup: String = null,
-    notification_type: String = null,
-    pcampaign_id: String = null,
-    reason: String = null,
-    show_notification_settings_action: js.UndefOr[Boolean] = js.undefined,
-    targetUrl: String = null,
-    timeToExpireMs: String = null,
-    title: String = null
-  ): SchemaNotification = {
+  def apply(): SchemaNotification = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (crmExperimentIds != null) __obj.updateDynamic("crmExperimentIds")(crmExperimentIds.asInstanceOf[js.Any])
-    if (doc_id != null) __obj.updateDynamic("doc_id")(doc_id.asInstanceOf[js.Any])
-    if (doc_type != null) __obj.updateDynamic("doc_type")(doc_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(dont_show_notification)) __obj.updateDynamic("dont_show_notification")(dont_show_notification.get.asInstanceOf[js.Any])
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_document_mature)) __obj.updateDynamic("is_document_mature")(is_document_mature.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (notificationGroup != null) __obj.updateDynamic("notificationGroup")(notificationGroup.asInstanceOf[js.Any])
-    if (notification_type != null) __obj.updateDynamic("notification_type")(notification_type.asInstanceOf[js.Any])
-    if (pcampaign_id != null) __obj.updateDynamic("pcampaign_id")(pcampaign_id.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_notification_settings_action)) __obj.updateDynamic("show_notification_settings_action")(show_notification_settings_action.get.asInstanceOf[js.Any])
-    if (targetUrl != null) __obj.updateDynamic("targetUrl")(targetUrl.asInstanceOf[js.Any])
-    if (timeToExpireMs != null) __obj.updateDynamic("timeToExpireMs")(timeToExpireMs.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNotification]
   }
+  @scala.inline
+  implicit class SchemaNotificationOps[Self <: SchemaNotification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setCrmExperimentIdsVarargs(value: String*): Self = this.set("crmExperimentIds", js.Array(value :_*))
+    @scala.inline
+    def setCrmExperimentIds(value: js.Array[String]): Self = this.set("crmExperimentIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrmExperimentIds: Self = this.set("crmExperimentIds", js.undefined)
+    @scala.inline
+    def setDoc_id(value: String): Self = this.set("doc_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoc_id: Self = this.set("doc_id", js.undefined)
+    @scala.inline
+    def setDoc_type(value: String): Self = this.set("doc_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoc_type: Self = this.set("doc_type", js.undefined)
+    @scala.inline
+    def setDont_show_notification(value: Boolean): Self = this.set("dont_show_notification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDont_show_notification: Self = this.set("dont_show_notification", js.undefined)
+    @scala.inline
+    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    @scala.inline
+    def setIs_document_mature(value: Boolean): Self = this.set("is_document_mature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_document_mature: Self = this.set("is_document_mature", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNotificationGroup(value: String): Self = this.set("notificationGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationGroup: Self = this.set("notificationGroup", js.undefined)
+    @scala.inline
+    def setNotification_type(value: String): Self = this.set("notification_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotification_type: Self = this.set("notification_type", js.undefined)
+    @scala.inline
+    def setPcampaign_id(value: String): Self = this.set("pcampaign_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePcampaign_id: Self = this.set("pcampaign_id", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    @scala.inline
+    def setShow_notification_settings_action(value: Boolean): Self = this.set("show_notification_settings_action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow_notification_settings_action: Self = this.set("show_notification_settings_action", js.undefined)
+    @scala.inline
+    def setTargetUrl(value: String): Self = this.set("targetUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetUrl: Self = this.set("targetUrl", js.undefined)
+    @scala.inline
+    def setTimeToExpireMs(value: String): Self = this.set("timeToExpireMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeToExpireMs: Self = this.set("timeToExpireMs", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

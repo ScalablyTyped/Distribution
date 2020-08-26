@@ -12,7 +12,7 @@ Regular expression for matching semver versions
 | Keywords           | semver, version, versions, regex, regexp, match, matching, semantic |
 | # releases         | 4 |
 | # dependents       | 86 |
-| # downloads        | 53600865 |
+| # downloads        | 54742332 |
 | # stars            | 2 |
 
 ## Links

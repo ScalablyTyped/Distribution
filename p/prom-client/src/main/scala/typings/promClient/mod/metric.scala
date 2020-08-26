@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait metric extends js.Object {
-  var aggregator: Aggregator
-  var help: String
-  var name: String
-  var `type`: MetricType
+  var aggregator: Aggregator = js.native
+  var help: String = js.native
+  var name: String = js.native
+  var `type`: MetricType = js.native
 }
 
 object metric {
@@ -18,5 +19,26 @@ object metric {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[metric]
   }
+  @scala.inline
+  implicit class metricOps[Self <: metric] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregator(value: Aggregator): Self = this.set("aggregator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHelp(value: String): Self = this.set("help", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: MetricType): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

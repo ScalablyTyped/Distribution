@@ -18,10 +18,28 @@ trait StopRelationalDatabaseRequest extends js.Object {
 
 object StopRelationalDatabaseRequest {
   @scala.inline
-  def apply(relationalDatabaseName: ResourceName, relationalDatabaseSnapshotName: ResourceName = null): StopRelationalDatabaseRequest = {
+  def apply(relationalDatabaseName: ResourceName): StopRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-    if (relationalDatabaseSnapshotName != null) __obj.updateDynamic("relationalDatabaseSnapshotName")(relationalDatabaseSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopRelationalDatabaseRequest]
   }
+  @scala.inline
+  implicit class StopRelationalDatabaseRequestOps[Self <: StopRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = this.set("relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationalDatabaseSnapshotName: Self = this.set("relationalDatabaseSnapshotName", js.undefined)
+  }
+  
 }
 

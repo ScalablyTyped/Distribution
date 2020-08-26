@@ -22,16 +22,38 @@ trait DescribeSnapshotAttributeResult extends js.Object {
 
 object DescribeSnapshotAttributeResult {
   @scala.inline
-  def apply(
-    CreateVolumePermissions: CreateVolumePermissionList = null,
-    ProductCodes: ProductCodeList = null,
-    SnapshotId: String = null
-  ): DescribeSnapshotAttributeResult = {
+  def apply(): DescribeSnapshotAttributeResult = {
     val __obj = js.Dynamic.literal()
-    if (CreateVolumePermissions != null) __obj.updateDynamic("CreateVolumePermissions")(CreateVolumePermissions.asInstanceOf[js.Any])
-    if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])
-    if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSnapshotAttributeResult]
   }
+  @scala.inline
+  implicit class DescribeSnapshotAttributeResultOps[Self <: DescribeSnapshotAttributeResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateVolumePermissionsVarargs(value: CreateVolumePermission*): Self = this.set("CreateVolumePermissions", js.Array(value :_*))
+    @scala.inline
+    def setCreateVolumePermissions(value: CreateVolumePermissionList): Self = this.set("CreateVolumePermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateVolumePermissions: Self = this.set("CreateVolumePermissions", js.undefined)
+    @scala.inline
+    def setProductCodesVarargs(value: ProductCode*): Self = this.set("ProductCodes", js.Array(value :_*))
+    @scala.inline
+    def setProductCodes(value: ProductCodeList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
+    @scala.inline
+    def setSnapshotId(value: String): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+  }
+  
 }
 

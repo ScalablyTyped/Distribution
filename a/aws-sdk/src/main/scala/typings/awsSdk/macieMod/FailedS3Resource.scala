@@ -22,12 +22,34 @@ trait FailedS3Resource extends js.Object {
 
 object FailedS3Resource {
   @scala.inline
-  def apply(errorCode: ErrorCode = null, errorMessage: ExceptionMessage = null, failedItem: S3Resource = null): FailedS3Resource = {
+  def apply(): FailedS3Resource = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (failedItem != null) __obj.updateDynamic("failedItem")(failedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedS3Resource]
   }
+  @scala.inline
+  implicit class FailedS3ResourceOps[Self <: FailedS3Resource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: ErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: ExceptionMessage): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setFailedItem(value: S3Resource): Self = this.set("failedItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedItem: Self = this.set("failedItem", js.undefined)
+  }
+  
 }
 

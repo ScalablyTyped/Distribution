@@ -30,17 +30,36 @@ trait AttachVolumeInput extends js.Object {
 
 object AttachVolumeInput {
   @scala.inline
-  def apply(
-    GatewayARN: GatewayARN,
-    NetworkInterfaceId: NetworkInterfaceId,
-    VolumeARN: VolumeARN,
-    DiskId: DiskId = null,
-    TargetName: TargetName = null
-  ): AttachVolumeInput = {
+  def apply(GatewayARN: GatewayARN, NetworkInterfaceId: NetworkInterfaceId, VolumeARN: VolumeARN): AttachVolumeInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any], VolumeARN = VolumeARN.asInstanceOf[js.Any])
-    if (DiskId != null) __obj.updateDynamic("DiskId")(DiskId.asInstanceOf[js.Any])
-    if (TargetName != null) __obj.updateDynamic("TargetName")(TargetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachVolumeInput]
   }
+  @scala.inline
+  implicit class AttachVolumeInputOps[Self <: AttachVolumeInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumeARN(value: VolumeARN): Self = this.set("VolumeARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiskId(value: DiskId): Self = this.set("DiskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskId: Self = this.set("DiskId", js.undefined)
+    @scala.inline
+    def setTargetName(value: TargetName): Self = this.set("TargetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetName: Self = this.set("TargetName", js.undefined)
+  }
+  
 }
 

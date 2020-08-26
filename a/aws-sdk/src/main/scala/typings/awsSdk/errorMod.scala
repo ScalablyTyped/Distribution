@@ -27,10 +27,6 @@ object errorMod extends js.Object {
       * Set when a networking error occurs to easily identify the endpoint of the request.
       */
     var hostname: String = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     /**
       * Set when a networking error occurs to easily identify the region of the request.
       */

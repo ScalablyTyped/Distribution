@@ -30,20 +30,42 @@ trait DescribeThingTypeResponse extends js.Object {
 
 object DescribeThingTypeResponse {
   @scala.inline
-  def apply(
-    thingTypeArn: ThingTypeArn = null,
-    thingTypeId: ThingTypeId = null,
-    thingTypeMetadata: ThingTypeMetadata = null,
-    thingTypeName: ThingTypeName = null,
-    thingTypeProperties: ThingTypeProperties = null
-  ): DescribeThingTypeResponse = {
+  def apply(): DescribeThingTypeResponse = {
     val __obj = js.Dynamic.literal()
-    if (thingTypeArn != null) __obj.updateDynamic("thingTypeArn")(thingTypeArn.asInstanceOf[js.Any])
-    if (thingTypeId != null) __obj.updateDynamic("thingTypeId")(thingTypeId.asInstanceOf[js.Any])
-    if (thingTypeMetadata != null) __obj.updateDynamic("thingTypeMetadata")(thingTypeMetadata.asInstanceOf[js.Any])
-    if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
-    if (thingTypeProperties != null) __obj.updateDynamic("thingTypeProperties")(thingTypeProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThingTypeResponse]
   }
+  @scala.inline
+  implicit class DescribeThingTypeResponseOps[Self <: DescribeThingTypeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingTypeArn(value: ThingTypeArn): Self = this.set("thingTypeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeArn: Self = this.set("thingTypeArn", js.undefined)
+    @scala.inline
+    def setThingTypeId(value: ThingTypeId): Self = this.set("thingTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeId: Self = this.set("thingTypeId", js.undefined)
+    @scala.inline
+    def setThingTypeMetadata(value: ThingTypeMetadata): Self = this.set("thingTypeMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeMetadata: Self = this.set("thingTypeMetadata", js.undefined)
+    @scala.inline
+    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
+    @scala.inline
+    def setThingTypeProperties(value: ThingTypeProperties): Self = this.set("thingTypeProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeProperties: Self = this.set("thingTypeProperties", js.undefined)
+  }
+  
 }
 

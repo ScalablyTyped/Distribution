@@ -10,9 +10,9 @@ a function to filter props that are not valid dom props when spreading props in 
 | ------------------ | :-------------: |
 | Full name          | filter-invalid-dom-props |
 | Keywords           | react, props, dom, filter-props, dom-props |
-| # releases         | 1 |
-| # dependents       | 11 |
-| # downloads        | 445147 |
+| # releases         | 0 |
+| # dependents       | 12 |
+| # downloads        | 545152 |
 | # stars            | 1 |
 
 ## Links

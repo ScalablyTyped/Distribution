@@ -30,20 +30,44 @@ trait DescribeSpotFleetRequestHistoryResponse extends js.Object {
 
 object DescribeSpotFleetRequestHistoryResponse {
   @scala.inline
-  def apply(
-    HistoryRecords: HistoryRecords = null,
-    LastEvaluatedTime: DateTime = null,
-    NextToken: String = null,
-    SpotFleetRequestId: String = null,
-    StartTime: DateTime = null
-  ): DescribeSpotFleetRequestHistoryResponse = {
+  def apply(): DescribeSpotFleetRequestHistoryResponse = {
     val __obj = js.Dynamic.literal()
-    if (HistoryRecords != null) __obj.updateDynamic("HistoryRecords")(HistoryRecords.asInstanceOf[js.Any])
-    if (LastEvaluatedTime != null) __obj.updateDynamic("LastEvaluatedTime")(LastEvaluatedTime.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SpotFleetRequestId != null) __obj.updateDynamic("SpotFleetRequestId")(SpotFleetRequestId.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSpotFleetRequestHistoryResponse]
   }
+  @scala.inline
+  implicit class DescribeSpotFleetRequestHistoryResponseOps[Self <: DescribeSpotFleetRequestHistoryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHistoryRecordsVarargs(value: HistoryRecord*): Self = this.set("HistoryRecords", js.Array(value :_*))
+    @scala.inline
+    def setHistoryRecords(value: HistoryRecords): Self = this.set("HistoryRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistoryRecords: Self = this.set("HistoryRecords", js.undefined)
+    @scala.inline
+    def setLastEvaluatedTime(value: DateTime): Self = this.set("LastEvaluatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEvaluatedTime: Self = this.set("LastEvaluatedTime", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSpotFleetRequestId(value: String): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotFleetRequestId: Self = this.set("SpotFleetRequestId", js.undefined)
+    @scala.inline
+    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+  }
+  
 }
 

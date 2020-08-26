@@ -12,7 +12,7 @@ Concat buffer correctly.
 | Keywords           | Buffer |
 | # releases         | 0 |
 | # dependents       | 100 |
-| # downloads        | 308580 |
+| # downloads        | 317407 |
 | # stars            | 4 |
 
 ## Links

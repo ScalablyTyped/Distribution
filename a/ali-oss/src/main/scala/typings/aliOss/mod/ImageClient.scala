@@ -22,6 +22,7 @@ class ImageClient protected () extends js.Object {
     * Get an image from the image channel.
     */
   def get(name: String): js.Promise[Content] = js.native
+  def get(name: String, file: js.UndefOr[scala.Nothing], options: ImageGetOptions): js.Promise[Content] = js.native
   def get(name: String, file: js.Any): js.Promise[Content] = js.native
   def get(name: String, file: js.Any, options: ImageGetOptions): js.Promise[Content] = js.native
   /**

@@ -14,10 +14,26 @@ trait DescribeDocumentClassifierResponse extends js.Object {
 
 object DescribeDocumentClassifierResponse {
   @scala.inline
-  def apply(DocumentClassifierProperties: DocumentClassifierProperties = null): DescribeDocumentClassifierResponse = {
+  def apply(): DescribeDocumentClassifierResponse = {
     val __obj = js.Dynamic.literal()
-    if (DocumentClassifierProperties != null) __obj.updateDynamic("DocumentClassifierProperties")(DocumentClassifierProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDocumentClassifierResponse]
   }
+  @scala.inline
+  implicit class DescribeDocumentClassifierResponseOps[Self <: DescribeDocumentClassifierResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentClassifierProperties(value: DocumentClassifierProperties): Self = this.set("DocumentClassifierProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentClassifierProperties: Self = this.set("DocumentClassifierProperties", js.undefined)
+  }
+  
 }
 

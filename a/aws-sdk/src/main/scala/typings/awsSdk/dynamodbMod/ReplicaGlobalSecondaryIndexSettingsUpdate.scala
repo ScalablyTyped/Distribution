@@ -22,15 +22,32 @@ trait ReplicaGlobalSecondaryIndexSettingsUpdate extends js.Object {
 
 object ReplicaGlobalSecondaryIndexSettingsUpdate {
   @scala.inline
-  def apply(
-    IndexName: IndexName,
-    ProvisionedReadCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
-    ProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
-  ): ReplicaGlobalSecondaryIndexSettingsUpdate = {
+  def apply(IndexName: IndexName): ReplicaGlobalSecondaryIndexSettingsUpdate = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
-    if (ProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingSettingsUpdate")(ProvisionedReadCapacityAutoScalingSettingsUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProvisionedReadCapacityUnits)) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsUpdate]
   }
+  @scala.inline
+  implicit class ReplicaGlobalSecondaryIndexSettingsUpdateOps[Self <: ReplicaGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = this.set("ProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedReadCapacityAutoScalingSettingsUpdate: Self = this.set("ProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
+    @scala.inline
+    def setProvisionedReadCapacityUnits(value: PositiveLongObject): Self = this.set("ProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedReadCapacityUnits: Self = this.set("ProvisionedReadCapacityUnits", js.undefined)
+  }
+  
 }
 

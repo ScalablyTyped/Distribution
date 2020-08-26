@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class AuthenticationMD5Password protected () extends BackendMessage {
   def this(length: Double, salt: Buffer) = this()
-  /* CompleteClass */
-  override var length: Double = js.native
-  /* CompleteClass */
-  override var name: MessageName = js.native
   val salt: Buffer = js.native
 }
 

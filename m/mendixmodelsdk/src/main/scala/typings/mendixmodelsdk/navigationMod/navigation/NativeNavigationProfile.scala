@@ -43,11 +43,9 @@ class NativeNavigationProfile protected () extends NavigationProfileBase {
   def bottomBarItems: IList[BottomBarItem] = js.native
   @JSName("containerAsNavigationDocument")
   def containerAsNavigationDocument_MNativeNavigationProfile: NavigationDocument = js.native
-  def homePage(): js.Any = js.native
-  def homePage(newValue: IPage): js.Any = js.native
+  def homePage: IPage | Null = js.native
   def homePageQualifiedName: String | Null = js.native
-  @JSName("homePage")
-  def homePage_Union: IPage | Null = js.native
+  def homePage_=(newValue: IPage | Null): Unit = js.native
   /**
     * In version 8.0.0: introduced
     */

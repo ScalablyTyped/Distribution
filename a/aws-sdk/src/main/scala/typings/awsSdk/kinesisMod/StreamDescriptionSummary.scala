@@ -57,16 +57,51 @@ object StreamDescriptionSummary {
     StreamARN: StreamARN,
     StreamCreationTimestamp: Timestamp,
     StreamName: StreamName,
-    StreamStatus: StreamStatus,
-    ConsumerCount: js.UndefOr[ConsumerCountObject] = js.undefined,
-    EncryptionType: EncryptionType = null,
-    KeyId: KeyId = null
+    StreamStatus: StreamStatus
   ): StreamDescriptionSummary = {
     val __obj = js.Dynamic.literal(EnhancedMonitoring = EnhancedMonitoring.asInstanceOf[js.Any], OpenShardCount = OpenShardCount.asInstanceOf[js.Any], RetentionPeriodHours = RetentionPeriodHours.asInstanceOf[js.Any], StreamARN = StreamARN.asInstanceOf[js.Any], StreamCreationTimestamp = StreamCreationTimestamp.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any], StreamStatus = StreamStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsumerCount)) __obj.updateDynamic("ConsumerCount")(ConsumerCount.get.asInstanceOf[js.Any])
-    if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamDescriptionSummary]
   }
+  @scala.inline
+  implicit class StreamDescriptionSummaryOps[Self <: StreamDescriptionSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = this.set("EnhancedMonitoring", js.Array(value :_*))
+    @scala.inline
+    def setEnhancedMonitoring(value: EnhancedMonitoringList): Self = this.set("EnhancedMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOpenShardCount(value: ShardCountObject): Self = this.set("OpenShardCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRetentionPeriodHours(value: PositiveIntegerObject): Self = this.set("RetentionPeriodHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamARN(value: StreamARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamCreationTimestamp(value: Timestamp): Self = this.set("StreamCreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamStatus(value: StreamStatus): Self = this.set("StreamStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConsumerCount(value: ConsumerCountObject): Self = this.set("ConsumerCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumerCount: Self = this.set("ConsumerCount", js.undefined)
+    @scala.inline
+    def setEncryptionType(value: EncryptionType): Self = this.set("EncryptionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionType: Self = this.set("EncryptionType", js.undefined)
+    @scala.inline
+    def setKeyId(value: KeyId): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+  }
+  
 }
 

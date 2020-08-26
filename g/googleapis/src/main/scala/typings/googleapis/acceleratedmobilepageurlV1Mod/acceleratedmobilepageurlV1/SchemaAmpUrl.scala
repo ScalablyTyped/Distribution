@@ -26,12 +26,34 @@ trait SchemaAmpUrl extends js.Object {
 
 object SchemaAmpUrl {
   @scala.inline
-  def apply(ampUrl: String = null, cdnAmpUrl: String = null, originalUrl: String = null): SchemaAmpUrl = {
+  def apply(): SchemaAmpUrl = {
     val __obj = js.Dynamic.literal()
-    if (ampUrl != null) __obj.updateDynamic("ampUrl")(ampUrl.asInstanceOf[js.Any])
-    if (cdnAmpUrl != null) __obj.updateDynamic("cdnAmpUrl")(cdnAmpUrl.asInstanceOf[js.Any])
-    if (originalUrl != null) __obj.updateDynamic("originalUrl")(originalUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAmpUrl]
   }
+  @scala.inline
+  implicit class SchemaAmpUrlOps[Self <: SchemaAmpUrl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmpUrl(value: String): Self = this.set("ampUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmpUrl: Self = this.set("ampUrl", js.undefined)
+    @scala.inline
+    def setCdnAmpUrl(value: String): Self = this.set("cdnAmpUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdnAmpUrl: Self = this.set("cdnAmpUrl", js.undefined)
+    @scala.inline
+    def setOriginalUrl(value: String): Self = this.set("originalUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalUrl: Self = this.set("originalUrl", js.undefined)
+  }
+  
 }
 

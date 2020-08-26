@@ -23,16 +23,49 @@ trait ModuleMap extends js.Object {
   var json: js.Any = js.native
   def getMockModule(name: String): js.UndefOr[Path] = js.native
   def getModule(name: String): Path | Null = js.native
+  def getModule(
+    name: String,
+    platform: js.UndefOr[scala.Nothing],
+    supportsNativePlatform: js.UndefOr[scala.Nothing],
+    `type`: HTypeValue
+  ): Path | Null = js.native
+  def getModule(name: String, platform: js.UndefOr[scala.Nothing], supportsNativePlatform: Boolean): Path | Null = js.native
+  def getModule(
+    name: String,
+    platform: js.UndefOr[scala.Nothing],
+    supportsNativePlatform: Boolean,
+    `type`: HTypeValue
+  ): Path | Null = js.native
+  def getModule(
+    name: String,
+    platform: js.UndefOr[scala.Nothing],
+    supportsNativePlatform: Null,
+    `type`: HTypeValue
+  ): Path | Null = js.native
   def getModule(name: String, platform: String): Path | Null = js.native
+  def getModule(
+    name: String,
+    platform: String,
+    supportsNativePlatform: js.UndefOr[scala.Nothing],
+    `type`: HTypeValue
+  ): Path | Null = js.native
   def getModule(name: String, platform: String, supportsNativePlatform: Boolean): Path | Null = js.native
   def getModule(name: String, platform: String, supportsNativePlatform: Boolean, `type`: HTypeValue): Path | Null = js.native
   def getModule(name: String, platform: String, supportsNativePlatform: Null, `type`: HTypeValue): Path | Null = js.native
+  def getModule(
+    name: String,
+    platform: Null,
+    supportsNativePlatform: js.UndefOr[scala.Nothing],
+    `type`: HTypeValue
+  ): Path | Null = js.native
   def getModule(name: String, platform: Null, supportsNativePlatform: Boolean): Path | Null = js.native
   def getModule(name: String, platform: Null, supportsNativePlatform: Boolean, `type`: HTypeValue): Path | Null = js.native
   def getModule(name: String, platform: Null, supportsNativePlatform: Null, `type`: HTypeValue): Path | Null = js.native
   def getPackage(name: String): Path | Null = js.native
-  def getPackage(name: String, platform: js.UndefOr[String]): Path | Null = js.native
-  def getPackage(name: String, platform: js.UndefOr[Null | String], _supportsNativePlatform: Boolean): Path | Null = js.native
+  def getPackage(name: String, platform: js.UndefOr[scala.Nothing], _supportsNativePlatform: Boolean): Path | Null = js.native
+  def getPackage(name: String, platform: String): Path | Null = js.native
+  def getPackage(name: String, platform: String, _supportsNativePlatform: Boolean): Path | Null = js.native
+  def getPackage(name: String, platform: Null, _supportsNativePlatform: Boolean): Path | Null = js.native
   def getRawModuleMap(): RawModuleMap = js.native
   def toJSON(): SerializableModuleMap = js.native
 }

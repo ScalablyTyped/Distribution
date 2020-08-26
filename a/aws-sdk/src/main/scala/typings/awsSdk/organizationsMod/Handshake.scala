@@ -42,26 +42,58 @@ trait Handshake extends js.Object {
 
 object Handshake {
   @scala.inline
-  def apply(
-    Action: ActionType = null,
-    Arn: HandshakeArn = null,
-    ExpirationTimestamp: Timestamp = null,
-    Id: HandshakeId = null,
-    Parties: HandshakeParties = null,
-    RequestedTimestamp: Timestamp = null,
-    Resources: HandshakeResources = null,
-    State: HandshakeState = null
-  ): Handshake = {
+  def apply(): Handshake = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (ExpirationTimestamp != null) __obj.updateDynamic("ExpirationTimestamp")(ExpirationTimestamp.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Parties != null) __obj.updateDynamic("Parties")(Parties.asInstanceOf[js.Any])
-    if (RequestedTimestamp != null) __obj.updateDynamic("RequestedTimestamp")(RequestedTimestamp.asInstanceOf[js.Any])
-    if (Resources != null) __obj.updateDynamic("Resources")(Resources.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handshake]
   }
+  @scala.inline
+  implicit class HandshakeOps[Self <: Handshake] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: ActionType): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setArn(value: HandshakeArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setExpirationTimestamp(value: Timestamp): Self = this.set("ExpirationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTimestamp: Self = this.set("ExpirationTimestamp", js.undefined)
+    @scala.inline
+    def setId(value: HandshakeId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setPartiesVarargs(value: HandshakeParty*): Self = this.set("Parties", js.Array(value :_*))
+    @scala.inline
+    def setParties(value: HandshakeParties): Self = this.set("Parties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParties: Self = this.set("Parties", js.undefined)
+    @scala.inline
+    def setRequestedTimestamp(value: Timestamp): Self = this.set("RequestedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedTimestamp: Self = this.set("RequestedTimestamp", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: HandshakeResource*): Self = this.set("Resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: HandshakeResources): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("Resources", js.undefined)
+    @scala.inline
+    def setState(value: HandshakeState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

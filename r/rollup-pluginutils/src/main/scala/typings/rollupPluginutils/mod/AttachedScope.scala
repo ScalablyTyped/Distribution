@@ -6,12 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AttachedScope extends js.Object {
-  var declarations: StringDictionary[Boolean]
-  var isBlockScope: Boolean
-  var parent: js.UndefOr[AttachedScope] = js.undefined
-  def addDeclaration(node: Node, isBlockDeclaration: Boolean, isVar: Boolean): Unit
-  def contains(name: String): Boolean
+  var declarations: StringDictionary[Boolean] = js.native
+  var isBlockScope: Boolean = js.native
+  var parent: js.UndefOr[AttachedScope] = js.native
+  def addDeclaration(node: Node, isBlockDeclaration: Boolean, isVar: Boolean): Unit = js.native
+  def contains(name: String): Boolean = js.native
 }
 
 object AttachedScope {
@@ -20,12 +21,35 @@ object AttachedScope {
     addDeclaration: (Node, Boolean, Boolean) => Unit,
     contains: String => Boolean,
     declarations: StringDictionary[Boolean],
-    isBlockScope: Boolean,
-    parent: AttachedScope = null
+    isBlockScope: Boolean
   ): AttachedScope = {
     val __obj = js.Dynamic.literal(addDeclaration = js.Any.fromFunction3(addDeclaration), contains = js.Any.fromFunction1(contains), declarations = declarations.asInstanceOf[js.Any], isBlockScope = isBlockScope.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachedScope]
   }
+  @scala.inline
+  implicit class AttachedScopeOps[Self <: AttachedScope] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddDeclaration(value: (Node, Boolean, Boolean) => Unit): Self = this.set("addDeclaration", js.Any.fromFunction3(value))
+    @scala.inline
+    def setContains(value: String => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDeclarations(value: StringDictionary[Boolean]): Self = this.set("declarations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsBlockScope(value: Boolean): Self = this.set("isBlockScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: AttachedScope): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+  }
+  
 }
 

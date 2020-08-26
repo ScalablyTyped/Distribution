@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpsMod.AgentOptions
-import typings.node.streamMod.Stream
+import typings.node.streamMod.Readable
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,29 +39,40 @@ class Client protected () extends js.Object {
   def getBucketNotification(bucketName: String, callback: ResultCallback[NotificationConfig]): Unit = js.native
   def getBucketPolicy(bucketName: String): js.Promise[String] = js.native
   def getBucketPolicy(bucketName: String, callback: ResultCallback[String]): Unit = js.native
-  def getObject(bucketName: String, objectName: String): js.Promise[Stream] = js.native
+  def getObject(bucketName: String, objectName: String): js.Promise[Readable] = js.native
   // Object operations
-  def getObject(bucketName: String, objectName: String, callback: ResultCallback[Stream]): Unit = js.native
-  def getPartialObject(bucketName: String, objectName: String, offset: Double): js.Promise[Stream] = js.native
-  def getPartialObject(bucketName: String, objectName: String, offset: Double, callback: ResultCallback[Stream]): Unit = js.native
-  def getPartialObject(bucketName: String, objectName: String, offset: Double, length: Double): js.Promise[Stream] = js.native
+  def getObject(bucketName: String, objectName: String, callback: ResultCallback[Readable]): Unit = js.native
+  def getPartialObject(bucketName: String, objectName: String, offset: Double): js.Promise[Readable] = js.native
+  def getPartialObject(bucketName: String, objectName: String, offset: Double, callback: ResultCallback[Readable]): Unit = js.native
+  def getPartialObject(bucketName: String, objectName: String, offset: Double, length: Double): js.Promise[Readable] = js.native
   def getPartialObject(
     bucketName: String,
     objectName: String,
     offset: Double,
     length: Double,
-    callback: ResultCallback[Stream]
+    callback: ResultCallback[Readable]
   ): Unit = js.native
   def listBuckets(): js.Promise[js.Array[BucketItemFromList]] = js.native
   def listBuckets(callback: ResultCallback[js.Array[BucketItemFromList]]): Unit = js.native
   def listIncompleteUploads(bucketName: String): BucketStream[IncompleteUploadedBucketItem] = js.native
+  def listIncompleteUploads(bucketName: String, prefix: js.UndefOr[scala.Nothing], recursive: Boolean): BucketStream[IncompleteUploadedBucketItem] = js.native
   def listIncompleteUploads(bucketName: String, prefix: String): BucketStream[IncompleteUploadedBucketItem] = js.native
   def listIncompleteUploads(bucketName: String, prefix: String, recursive: Boolean): BucketStream[IncompleteUploadedBucketItem] = js.native
   def listObjects(bucketName: String): BucketStream[BucketItem] = js.native
+  def listObjects(bucketName: String, prefix: js.UndefOr[scala.Nothing], recursive: Boolean): BucketStream[BucketItem] = js.native
   def listObjects(bucketName: String, prefix: String): BucketStream[BucketItem] = js.native
   def listObjects(bucketName: String, prefix: String, recursive: Boolean): BucketStream[BucketItem] = js.native
   def listObjectsV2(bucketName: String): BucketStream[BucketItem] = js.native
+  def listObjectsV2(
+    bucketName: String,
+    prefix: js.UndefOr[scala.Nothing],
+    recursive: js.UndefOr[scala.Nothing],
+    startAfter: String
+  ): BucketStream[BucketItem] = js.native
+  def listObjectsV2(bucketName: String, prefix: js.UndefOr[scala.Nothing], recursive: Boolean): BucketStream[BucketItem] = js.native
+  def listObjectsV2(bucketName: String, prefix: js.UndefOr[scala.Nothing], recursive: Boolean, startAfter: String): BucketStream[BucketItem] = js.native
   def listObjectsV2(bucketName: String, prefix: String): BucketStream[BucketItem] = js.native
+  def listObjectsV2(bucketName: String, prefix: String, recursive: js.UndefOr[scala.Nothing], startAfter: String): BucketStream[BucketItem] = js.native
   def listObjectsV2(bucketName: String, prefix: String, recursive: Boolean): BucketStream[BucketItem] = js.native
   def listObjectsV2(bucketName: String, prefix: String, recursive: Boolean, startAfter: String): BucketStream[BucketItem] = js.native
   // todo #low Specify events
@@ -73,8 +84,35 @@ class Client protected () extends js.Object {
   def newPostPolicy(): PostPolicy = js.native
   def presignedGetObject(bucketName: String, objectName: String): js.Promise[String] = js.native
   def presignedGetObject(bucketName: String, objectName: String, callback: ResultCallback[String]): Unit = js.native
+  def presignedGetObject(
+    bucketName: String,
+    objectName: String,
+    expiry: js.UndefOr[scala.Nothing],
+    respHeaders: js.UndefOr[scala.Nothing],
+    requestDate: Date
+  ): js.Promise[String] = js.native
+  def presignedGetObject(
+    bucketName: String,
+    objectName: String,
+    expiry: js.UndefOr[scala.Nothing],
+    respHeaders: StringDictionary[js.Any]
+  ): js.Promise[String] = js.native
+  def presignedGetObject(
+    bucketName: String,
+    objectName: String,
+    expiry: js.UndefOr[scala.Nothing],
+    respHeaders: StringDictionary[js.Any],
+    requestDate: Date
+  ): js.Promise[String] = js.native
   def presignedGetObject(bucketName: String, objectName: String, expiry: Double): js.Promise[String] = js.native
   def presignedGetObject(bucketName: String, objectName: String, expiry: Double, callback: ResultCallback[String]): Unit = js.native
+  def presignedGetObject(
+    bucketName: String,
+    objectName: String,
+    expiry: Double,
+    respHeaders: js.UndefOr[scala.Nothing],
+    requestDate: Date
+  ): js.Promise[String] = js.native
   def presignedGetObject(bucketName: String, objectName: String, expiry: Double, respHeaders: StringDictionary[js.Any]): js.Promise[String] = js.native
   def presignedGetObject(
     bucketName: String,
@@ -107,6 +145,29 @@ class Client protected () extends js.Object {
   def presignedUrl(httpMethod: String, bucketName: String, objectName: String): js.Promise[String] = js.native
   // Presigned operations
   def presignedUrl(httpMethod: String, bucketName: String, objectName: String, callback: ResultCallback[String]): Unit = js.native
+  def presignedUrl(
+    httpMethod: String,
+    bucketName: String,
+    objectName: String,
+    expiry: js.UndefOr[scala.Nothing],
+    reqParams: js.UndefOr[scala.Nothing],
+    requestDate: Date
+  ): js.Promise[String] = js.native
+  def presignedUrl(
+    httpMethod: String,
+    bucketName: String,
+    objectName: String,
+    expiry: js.UndefOr[scala.Nothing],
+    reqParams: StringDictionary[js.Any]
+  ): js.Promise[String] = js.native
+  def presignedUrl(
+    httpMethod: String,
+    bucketName: String,
+    objectName: String,
+    expiry: js.UndefOr[scala.Nothing],
+    reqParams: StringDictionary[js.Any],
+    requestDate: Date
+  ): js.Promise[String] = js.native
   def presignedUrl(httpMethod: String, bucketName: String, objectName: String, expiry: Double): js.Promise[String] = js.native
   def presignedUrl(
     httpMethod: String,
@@ -115,6 +176,14 @@ class Client protected () extends js.Object {
     expiry: Double,
     callback: ResultCallback[String]
   ): Unit = js.native
+  def presignedUrl(
+    httpMethod: String,
+    bucketName: String,
+    objectName: String,
+    expiry: Double,
+    reqParams: js.UndefOr[scala.Nothing],
+    requestDate: Date
+  ): js.Promise[String] = js.native
   def presignedUrl(
     httpMethod: String,
     bucketName: String,
@@ -150,6 +219,13 @@ class Client protected () extends js.Object {
   def putObject(bucketName: String, objectName: String, stream: String): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: String, callback: ResultCallback[String]): Unit = js.native
   def putObject(bucketName: String, objectName: String, stream: String, metaData: ItemBucketMetadata): js.Promise[String] = js.native
+  def putObject(
+    bucketName: String,
+    objectName: String,
+    stream: String,
+    size: js.UndefOr[scala.Nothing],
+    metaData: ItemBucketMetadata
+  ): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: String, size: Double): js.Promise[String] = js.native
   def putObject(
     bucketName: String,
@@ -170,6 +246,13 @@ class Client protected () extends js.Object {
   def putObject(bucketName: String, objectName: String, stream: Buffer): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: Buffer, callback: ResultCallback[String]): Unit = js.native
   def putObject(bucketName: String, objectName: String, stream: Buffer, metaData: ItemBucketMetadata): js.Promise[String] = js.native
+  def putObject(
+    bucketName: String,
+    objectName: String,
+    stream: Buffer,
+    size: js.UndefOr[scala.Nothing],
+    metaData: ItemBucketMetadata
+  ): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: Buffer, size: Double): js.Promise[String] = js.native
   def putObject(
     bucketName: String,
@@ -187,22 +270,35 @@ class Client protected () extends js.Object {
     metaData: ItemBucketMetadata,
     callback: ResultCallback[String]
   ): Unit = js.native
-  def putObject(bucketName: String, objectName: String, stream: Stream): js.Promise[String] = js.native
-  def putObject(bucketName: String, objectName: String, stream: Stream, callback: ResultCallback[String]): Unit = js.native
-  def putObject(bucketName: String, objectName: String, stream: Stream, metaData: ItemBucketMetadata): js.Promise[String] = js.native
-  def putObject(bucketName: String, objectName: String, stream: Stream, size: Double): js.Promise[String] = js.native
+  def putObject(bucketName: String, objectName: String, stream: Readable): js.Promise[String] = js.native
+  def putObject(bucketName: String, objectName: String, stream: Readable, callback: ResultCallback[String]): Unit = js.native
+  def putObject(bucketName: String, objectName: String, stream: Readable, metaData: ItemBucketMetadata): js.Promise[String] = js.native
   def putObject(
     bucketName: String,
     objectName: String,
-    stream: Stream,
+    stream: Readable,
+    size: js.UndefOr[scala.Nothing],
+    metaData: ItemBucketMetadata
+  ): js.Promise[String] = js.native
+  def putObject(bucketName: String, objectName: String, stream: Readable, size: Double): js.Promise[String] = js.native
+  def putObject(
+    bucketName: String,
+    objectName: String,
+    stream: Readable,
     size: Double,
     callback: ResultCallback[String]
   ): Unit = js.native
-  def putObject(bucketName: String, objectName: String, stream: Stream, size: Double, metaData: ItemBucketMetadata): js.Promise[String] = js.native
   def putObject(
     bucketName: String,
     objectName: String,
-    stream: Stream,
+    stream: Readable,
+    size: Double,
+    metaData: ItemBucketMetadata
+  ): js.Promise[String] = js.native
+  def putObject(
+    bucketName: String,
+    objectName: String,
+    stream: Readable,
     size: Double,
     metaData: ItemBucketMetadata,
     callback: ResultCallback[String]

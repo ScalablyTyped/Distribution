@@ -26,15 +26,34 @@ trait ExportAssetsToS3ResponseDetails extends js.Object {
 
 object ExportAssetsToS3ResponseDetails {
   @scala.inline
-  def apply(
-    AssetDestinations: ListOfAssetDestinationEntry,
-    DataSetId: Id,
-    RevisionId: Id,
-    Encryption: ExportServerSideEncryption = null
-  ): ExportAssetsToS3ResponseDetails = {
+  def apply(AssetDestinations: ListOfAssetDestinationEntry, DataSetId: Id, RevisionId: Id): ExportAssetsToS3ResponseDetails = {
     val __obj = js.Dynamic.literal(AssetDestinations = AssetDestinations.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportAssetsToS3ResponseDetails]
   }
+  @scala.inline
+  implicit class ExportAssetsToS3ResponseDetailsOps[Self <: ExportAssetsToS3ResponseDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetDestinationsVarargs(value: AssetDestinationEntry*): Self = this.set("AssetDestinations", js.Array(value :_*))
+    @scala.inline
+    def setAssetDestinations(value: ListOfAssetDestinationEntry): Self = this.set("AssetDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataSetId(value: Id): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevisionId(value: Id): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncryption(value: ExportServerSideEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Minimal module to check if a file is executable.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 81 |
-| # downloads        | 457221232 |
+| # downloads        | 467356268 |
 | # stars            | 0 |
 
 ## Links

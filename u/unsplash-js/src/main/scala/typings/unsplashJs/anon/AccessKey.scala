@@ -5,38 +5,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccessKey extends js.Object {
-  var accessKey: String
-  var apiUrl: js.UndefOr[String] = js.undefined
-  var apiVersion: js.UndefOr[String] = js.undefined
-  var bearerToken: js.UndefOr[String] = js.undefined
-  var callbackUrl: js.UndefOr[String] = js.undefined
-  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
-  var secret: js.UndefOr[String] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var accessKey: String = js.native
+  var apiUrl: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.native
+  var bearerToken: js.UndefOr[String] = js.native
+  var callbackUrl: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var secret: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object AccessKey {
   @scala.inline
-  def apply(
-    accessKey: String,
-    apiUrl: String = null,
-    apiVersion: String = null,
-    bearerToken: String = null,
-    callbackUrl: String = null,
-    headers: StringDictionary[String] = null,
-    secret: String = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): AccessKey = {
+  def apply(accessKey: String): AccessKey = {
     val __obj = js.Dynamic.literal(accessKey = accessKey.asInstanceOf[js.Any])
-    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl.asInstanceOf[js.Any])
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (bearerToken != null) __obj.updateDynamic("bearerToken")(bearerToken.asInstanceOf[js.Any])
-    if (callbackUrl != null) __obj.updateDynamic("callbackUrl")(callbackUrl.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessKey]
   }
+  @scala.inline
+  implicit class AccessKeyOps[Self <: AccessKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKey(value: String): Self = this.set("accessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiUrl(value: String): Self = this.set("apiUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiUrl: Self = this.set("apiUrl", js.undefined)
+    @scala.inline
+    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    @scala.inline
+    def setBearerToken(value: String): Self = this.set("bearerToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBearerToken: Self = this.set("bearerToken", js.undefined)
+    @scala.inline
+    def setCallbackUrl(value: String): Self = this.set("callbackUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbackUrl: Self = this.set("callbackUrl", js.undefined)
+    @scala.inline
+    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setSecret(value: String): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecret: Self = this.set("secret", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

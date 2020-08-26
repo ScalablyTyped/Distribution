@@ -141,6 +141,11 @@ trait Auth
     * authentication purposes.
     */
   def verifyPhoneNumber(phoneNumber: String): PhoneAuthListener = js.native
+  def verifyPhoneNumber(
+    phoneNumber: String,
+    autoVerifyTimeoutOrForceResend: js.UndefOr[scala.Nothing],
+    forceResend: Boolean
+  ): PhoneAuthListener = js.native
   def verifyPhoneNumber(phoneNumber: String, autoVerifyTimeoutOrForceResend: Boolean): PhoneAuthListener = js.native
   def verifyPhoneNumber(phoneNumber: String, autoVerifyTimeoutOrForceResend: Boolean, forceResend: Boolean): PhoneAuthListener = js.native
   def verifyPhoneNumber(phoneNumber: String, autoVerifyTimeoutOrForceResend: Double): PhoneAuthListener = js.native

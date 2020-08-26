@@ -61,7 +61,7 @@ object escposStrings {
   sealed trait Backspace extends js.Object
   
   @js.native
-  sealed trait Bell extends js.Object
+  sealed trait Bel extends js.Object
   
   @js.native
   sealed trait CENTER extends js.Object
@@ -543,7 +543,7 @@ object escposStrings {
   @scala.inline
   def Backspace: Backspace = "\b".asInstanceOf[Backspace]
   @scala.inline
-  def Bell: Bell = "\u0007".asInstanceOf[Bell]
+  def Bel: Bel = "\u0007".asInstanceOf[Bel]
   @scala.inline
   def CENTER: CENTER = "CENTER".asInstanceOf[CENTER]
   @scala.inline

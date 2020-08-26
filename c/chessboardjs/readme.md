@@ -12,7 +12,7 @@ JavaScript Chess Board http://chessboardjs.com
 | Keywords           | chess, chessboard |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1895 |
+| # downloads        | 1929 |
 | # stars            | 1 |
 
 ## Links

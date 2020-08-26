@@ -200,12 +200,12 @@ trait FileSystem extends js.Object {
     */
   def stat(p: String, isLstat: Boolean, cb: BFSCallback[default]): Unit = js.native
   def stat(p: String, isLstat: Null, cb: BFSCallback[default]): Unit = js.native
-  def statSync(p: String): default = js.native
   /**
     * **Core**: Synchronous `stat` or `lstat`.
     * @param isLstat True if this is `lstat`, false if this is regular
     *   `stat`.
     */
+  def statSync(p: String): default = js.native
   def statSync(p: String, isLstat: Boolean): default = js.native
   /**
     * **Core**: Does the filesystem support optional symlink/hardlink-related

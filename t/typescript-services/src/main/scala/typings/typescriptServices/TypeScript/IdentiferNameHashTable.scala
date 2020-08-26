@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdentiferNameHashTable[T] extends StringHashTable[T]
 
 object IdentiferNameHashTable {

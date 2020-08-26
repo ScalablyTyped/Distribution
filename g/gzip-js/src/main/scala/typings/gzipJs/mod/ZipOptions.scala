@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZipOptions extends js.Object {
-  var level: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var timestamp: js.UndefOr[Double] = js.undefined
+  var level: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[Double] = js.native
 }
 
 object ZipOptions {
   @scala.inline
-  def apply(
-    level: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    timestamp: js.UndefOr[Double] = js.undefined
-  ): ZipOptions = {
+  def apply(): ZipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipOptions]
   }
+  @scala.inline
+  implicit class ZipOptionsOps[Self <: ZipOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

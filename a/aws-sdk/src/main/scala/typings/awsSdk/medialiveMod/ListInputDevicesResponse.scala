@@ -18,11 +18,32 @@ trait ListInputDevicesResponse extends js.Object {
 
 object ListInputDevicesResponse {
   @scala.inline
-  def apply(InputDevices: listOfInputDeviceSummary = null, NextToken: string = null): ListInputDevicesResponse = {
+  def apply(): ListInputDevicesResponse = {
     val __obj = js.Dynamic.literal()
-    if (InputDevices != null) __obj.updateDynamic("InputDevices")(InputDevices.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInputDevicesResponse]
   }
+  @scala.inline
+  implicit class ListInputDevicesResponseOps[Self <: ListInputDevicesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputDevicesVarargs(value: InputDeviceSummary*): Self = this.set("InputDevices", js.Array(value :_*))
+    @scala.inline
+    def setInputDevices(value: listOfInputDeviceSummary): Self = this.set("InputDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDevices: Self = this.set("InputDevices", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

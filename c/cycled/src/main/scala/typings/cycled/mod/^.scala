@@ -15,7 +15,7 @@ class ^[T] protected () extends Cycled[T] {
   	@example
   	```
   	import Cycled = require('cycled');
-  	const numberCycle = new Cycled([1,2,3,4,5]);
+  	const numberCycle = new Cycled([1, 2, 3, 4, 5]);
   	console.log(...numberCycle);
   	//=> 1 2 3 4 5
   	class TabComponent {
@@ -46,6 +46,6 @@ class ^[T] protected () extends Cycled[T] {
   	});
   	```
   	*/
-  def this(array: js.Array[T]) = this()
+  def this(elements: js.Array[T]) = this()
 }
 

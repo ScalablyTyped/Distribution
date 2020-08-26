@@ -12,7 +12,7 @@ Flash Messages for your Express Application
 | Keywords           | express, flash, messages |
 | # releases         | 1 |
 | # dependents       | 88 |
-| # downloads        | 943481 |
+| # downloads        | 941089 |
 | # stars            | 17 |
 
 ## Links

@@ -16,8 +16,5 @@ class ContourLayer protected ()
     */
   def this(contourLines: js.Array[typings.bingmaps.Microsoft.Maps.ContourLine]) = this()
   def this(contourLines: js.Array[typings.bingmaps.Microsoft.Maps.ContourLine], options: IContourLayerOptions) = this()
-  /** Clears all data in the layer. */
-  /* CompleteClass */
-  override def clear(): Unit = js.native
 }
 

@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
 class Path () extends Object {
   def this(path: String) = this()
   def this(path: js.Array[Point]) = this()
+  def this(path: js.UndefOr[scala.Nothing], options: IPathOptions) = this()
   def this(path: String, options: IPathOptions) = this()
   def this(path: js.Array[Point], options: IPathOptions) = this()
   /**

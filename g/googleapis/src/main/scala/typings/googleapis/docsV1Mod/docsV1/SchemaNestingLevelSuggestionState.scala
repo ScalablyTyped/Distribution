@@ -48,26 +48,54 @@ trait SchemaNestingLevelSuggestionState extends js.Object {
 
 object SchemaNestingLevelSuggestionState {
   @scala.inline
-  def apply(
-    bulletAlignmentSuggested: js.UndefOr[Boolean] = js.undefined,
-    glyphFormatSuggested: js.UndefOr[Boolean] = js.undefined,
-    glyphSymbolSuggested: js.UndefOr[Boolean] = js.undefined,
-    glyphTypeSuggested: js.UndefOr[Boolean] = js.undefined,
-    indentFirstLineSuggested: js.UndefOr[Boolean] = js.undefined,
-    indentStartSuggested: js.UndefOr[Boolean] = js.undefined,
-    startNumberSuggested: js.UndefOr[Boolean] = js.undefined,
-    textStyleSuggestionState: SchemaTextStyleSuggestionState = null
-  ): SchemaNestingLevelSuggestionState = {
+  def apply(): SchemaNestingLevelSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bulletAlignmentSuggested)) __obj.updateDynamic("bulletAlignmentSuggested")(bulletAlignmentSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(glyphFormatSuggested)) __obj.updateDynamic("glyphFormatSuggested")(glyphFormatSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(glyphSymbolSuggested)) __obj.updateDynamic("glyphSymbolSuggested")(glyphSymbolSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(glyphTypeSuggested)) __obj.updateDynamic("glyphTypeSuggested")(glyphTypeSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentFirstLineSuggested)) __obj.updateDynamic("indentFirstLineSuggested")(indentFirstLineSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentStartSuggested)) __obj.updateDynamic("indentStartSuggested")(indentStartSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startNumberSuggested)) __obj.updateDynamic("startNumberSuggested")(startNumberSuggested.get.asInstanceOf[js.Any])
-    if (textStyleSuggestionState != null) __obj.updateDynamic("textStyleSuggestionState")(textStyleSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNestingLevelSuggestionState]
   }
+  @scala.inline
+  implicit class SchemaNestingLevelSuggestionStateOps[Self <: SchemaNestingLevelSuggestionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBulletAlignmentSuggested(value: Boolean): Self = this.set("bulletAlignmentSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBulletAlignmentSuggested: Self = this.set("bulletAlignmentSuggested", js.undefined)
+    @scala.inline
+    def setGlyphFormatSuggested(value: Boolean): Self = this.set("glyphFormatSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphFormatSuggested: Self = this.set("glyphFormatSuggested", js.undefined)
+    @scala.inline
+    def setGlyphSymbolSuggested(value: Boolean): Self = this.set("glyphSymbolSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphSymbolSuggested: Self = this.set("glyphSymbolSuggested", js.undefined)
+    @scala.inline
+    def setGlyphTypeSuggested(value: Boolean): Self = this.set("glyphTypeSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphTypeSuggested: Self = this.set("glyphTypeSuggested", js.undefined)
+    @scala.inline
+    def setIndentFirstLineSuggested(value: Boolean): Self = this.set("indentFirstLineSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentFirstLineSuggested: Self = this.set("indentFirstLineSuggested", js.undefined)
+    @scala.inline
+    def setIndentStartSuggested(value: Boolean): Self = this.set("indentStartSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentStartSuggested: Self = this.set("indentStartSuggested", js.undefined)
+    @scala.inline
+    def setStartNumberSuggested(value: Boolean): Self = this.set("startNumberSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartNumberSuggested: Self = this.set("startNumberSuggested", js.undefined)
+    @scala.inline
+    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = this.set("textStyleSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyleSuggestionState: Self = this.set("textStyleSuggestionState", js.undefined)
+  }
+  
 }
 

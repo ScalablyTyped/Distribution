@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "detect-node-es" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "detect-node-es" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

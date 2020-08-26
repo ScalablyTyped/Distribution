@@ -14,10 +14,26 @@ trait StatisticalThreshold extends js.Object {
 
 object StatisticalThreshold {
   @scala.inline
-  def apply(statistic: EvaluationStatistic = null): StatisticalThreshold = {
+  def apply(): StatisticalThreshold = {
     val __obj = js.Dynamic.literal()
-    if (statistic != null) __obj.updateDynamic("statistic")(statistic.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatisticalThreshold]
   }
+  @scala.inline
+  implicit class StatisticalThresholdOps[Self <: StatisticalThreshold] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatistic(value: EvaluationStatistic): Self = this.set("statistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistic: Self = this.set("statistic", js.undefined)
+  }
+  
 }
 

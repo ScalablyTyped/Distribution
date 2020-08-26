@@ -14,8 +14,5 @@ class AllJoynSessionLostEventArgs protected ()
     * @param reason The reason the session was lost.
     */
   def this(reason: typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason) = this()
-  /** Retrieves a value that indicates the reason for a lost session. */
-  /* CompleteClass */
-  override var reason: typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason = js.native
 }
 

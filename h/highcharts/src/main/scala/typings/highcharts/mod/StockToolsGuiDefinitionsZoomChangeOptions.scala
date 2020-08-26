@@ -4,31 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StockToolsGuiDefinitionsZoomChangeOptions extends js.Object {
   /**
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[_]] = js.undefined
-  var zoomX: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomXOptions] = js.undefined
-  var zoomXY: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomXYOptions] = js.undefined
-  var zoomY: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomYOptions] = js.undefined
+  var items: js.UndefOr[js.Array[_]] = js.native
+  var zoomX: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomXOptions] = js.native
+  var zoomXY: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomXYOptions] = js.native
+  var zoomY: js.UndefOr[StockToolsGuiDefinitionsZoomChangeZoomYOptions] = js.native
 }
 
 object StockToolsGuiDefinitionsZoomChangeOptions {
   @scala.inline
-  def apply(
-    items: js.Array[_] = null,
-    zoomX: StockToolsGuiDefinitionsZoomChangeZoomXOptions = null,
-    zoomXY: StockToolsGuiDefinitionsZoomChangeZoomXYOptions = null,
-    zoomY: StockToolsGuiDefinitionsZoomChangeZoomYOptions = null
-  ): StockToolsGuiDefinitionsZoomChangeOptions = {
+  def apply(): StockToolsGuiDefinitionsZoomChangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (zoomX != null) __obj.updateDynamic("zoomX")(zoomX.asInstanceOf[js.Any])
-    if (zoomXY != null) __obj.updateDynamic("zoomXY")(zoomXY.asInstanceOf[js.Any])
-    if (zoomY != null) __obj.updateDynamic("zoomY")(zoomY.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsZoomChangeOptions]
   }
+  @scala.inline
+  implicit class StockToolsGuiDefinitionsZoomChangeOptionsOps[Self <: StockToolsGuiDefinitionsZoomChangeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setZoomX(value: StockToolsGuiDefinitionsZoomChangeZoomXOptions): Self = this.set("zoomX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomX: Self = this.set("zoomX", js.undefined)
+    @scala.inline
+    def setZoomXY(value: StockToolsGuiDefinitionsZoomChangeZoomXYOptions): Self = this.set("zoomXY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomXY: Self = this.set("zoomXY", js.undefined)
+    @scala.inline
+    def setZoomY(value: StockToolsGuiDefinitionsZoomChangeZoomYOptions): Self = this.set("zoomY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomY: Self = this.set("zoomY", js.undefined)
+  }
+  
 }
 

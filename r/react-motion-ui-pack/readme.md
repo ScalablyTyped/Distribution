@@ -12,7 +12,7 @@ Addon component wrappers for common UI transitions.
 | Keywords           | react, component, react-component, ui, motion, transition, animation |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 173782 |
+| # downloads        | 164220 |
 | # stars            | 4 |
 
 ## Links

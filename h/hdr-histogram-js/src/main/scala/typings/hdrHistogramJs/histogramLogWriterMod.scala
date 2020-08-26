@@ -36,7 +36,30 @@ object histogramLogWriterMod extends js.Object {
       * @param maxValueUnitRatio The ratio by which to divide the histogram's max value when reporting on it.
       */
     def outputIntervalHistogram(histogram: AbstractHistogram): Unit = js.native
+    def outputIntervalHistogram(
+      histogram: AbstractHistogram,
+      startTimeStampSec: js.UndefOr[scala.Nothing],
+      endTimeStampSec: js.UndefOr[scala.Nothing],
+      maxValueUnitRatio: Double
+    ): Unit = js.native
+    def outputIntervalHistogram(
+      histogram: AbstractHistogram,
+      startTimeStampSec: js.UndefOr[scala.Nothing],
+      endTimeStampSec: Double
+    ): Unit = js.native
+    def outputIntervalHistogram(
+      histogram: AbstractHistogram,
+      startTimeStampSec: js.UndefOr[scala.Nothing],
+      endTimeStampSec: Double,
+      maxValueUnitRatio: Double
+    ): Unit = js.native
     def outputIntervalHistogram(histogram: AbstractHistogram, startTimeStampSec: Double): Unit = js.native
+    def outputIntervalHistogram(
+      histogram: AbstractHistogram,
+      startTimeStampSec: Double,
+      endTimeStampSec: js.UndefOr[scala.Nothing],
+      maxValueUnitRatio: Double
+    ): Unit = js.native
     def outputIntervalHistogram(histogram: AbstractHistogram, startTimeStampSec: Double, endTimeStampSec: Double): Unit = js.native
     def outputIntervalHistogram(
       histogram: AbstractHistogram,

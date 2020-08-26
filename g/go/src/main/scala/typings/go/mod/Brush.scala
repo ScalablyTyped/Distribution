@@ -76,6 +76,7 @@ object Brush extends js.Object {
     * @param {number=} max a number between zero and 255, defaults to 255.
     */
   def randomColor(): String = js.native
+  def randomColor(min: js.UndefOr[scala.Nothing], max: Double): String = js.native
   def randomColor(min: Double): String = js.native
   def randomColor(min: Double, max: Double): String = js.native
 }

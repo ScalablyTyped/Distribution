@@ -61,7 +61,6 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/append/#append-function}
     */
   def append(func: js.Function2[/* index */ Double, /* html */ String, String | Element | this.type]): this.type = js.native
-  def attr(attributeName: String): this.type = js.native
   /**
     * Set one or more attributes for the set of matched elements.
     *
@@ -69,6 +68,7 @@ trait JQuery extends js.Object {
     * @param value A value to set for the attribute. If this is `null`, the attribute will be deleted.
     * @see {@link https://api.jquery.com/attr/#attr-attributeName-value}
     */
+  def attr(attributeName: String): this.type = js.native
   def attr(attributeName: String, value: String): this.type = js.native
   def attr(attributeName: String, value: Double): this.type = js.native
   /**
@@ -115,6 +115,7 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/children/}
     */
   def children(): this.type = js.native
+  def clone(withDataAndEvents: js.UndefOr[scala.Nothing], deepWithDataAndEvents: Boolean): this.type = js.native
   def clone(withDataAndEvents: Boolean): this.type = js.native
   def clone(withDataAndEvents: Boolean, deepWithDataAndEvents: Boolean): this.type = js.native
   /**
@@ -299,6 +300,11 @@ trait JQuery extends js.Object {
     events: String,
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
   ): this.type = js.native
+  def off(
+    events: String,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): this.type = js.native
   def off(events: String, selector: String): this.type = js.native
   def off(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): this.type = js.native
   /**
@@ -379,6 +385,11 @@ trait JQuery extends js.Object {
   ): this.type = js.native
   def on(
     events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]],
+    selector: js.UndefOr[scala.Nothing],
+    data: js.Any
+  ): this.type = js.native
+  def on(
+    events: StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]],
     selector: String
   ): this.type = js.native
   def on(
@@ -437,6 +448,7 @@ trait JQuery extends js.Object {
     */
   def one(events: StringDictionary[js.Any]): this.type = js.native
   def one(events: StringDictionary[js.Any], data: js.Any): this.type = js.native
+  def one(events: StringDictionary[js.Any], selector: js.UndefOr[scala.Nothing], data: js.Any): this.type = js.native
   def one(events: StringDictionary[js.Any], selector: String): this.type = js.native
   def one(events: StringDictionary[js.Any], selector: String, data: js.Any): this.type = js.native
   /**
@@ -634,6 +646,10 @@ trait JQuery extends js.Object {
     * @see {@link https://api.jquery.com/unbind/#unbind-eventType-handler}
     */
   def unbind(): this.type = js.native
+  def unbind(
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): this.type = js.native
   def unbind(eventType: String): this.type = js.native
   /**
     * Remove a previously-attached event handler from the elements.

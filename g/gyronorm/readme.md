@@ -12,7 +12,7 @@ Accesses the gyroscope and accelerometer data from the web browser and combines 
 | Keywords           | devicemotion, deviceorientation |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 9427 |
+| # downloads        | 9355 |
 | # stars            | 1 |
 
 ## Links

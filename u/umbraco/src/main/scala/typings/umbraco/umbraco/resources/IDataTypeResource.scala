@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * @name umbraco.resources.dataTypeResource
   * @description Loads in data for data types
   **/
+@js.native
 trait IDataTypeResource extends js.Object {
   /**
     * @ngdoc method
@@ -31,8 +32,8 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def deleteById(id: Double): IPromise[IResourcePromise]
-  def getAll(): js.Any
+  def deleteById(id: Double): IPromise[IResourcePromise] = js.native
+  def getAll(): js.Any = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.dataTypeResource#getById
@@ -53,7 +54,7 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getById(id: Double): IPromise[IResourcePromise]
+  def getById(id: Double): IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.dataTypeResource#getPreValues
@@ -75,7 +76,7 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getPreValues(editorAlias: String, dataTypeId: Double): IPromise[IResourcePromise]
+  def getPreValues(editorAlias: String, dataTypeId: Double): IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getScaffold
@@ -103,7 +104,7 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the data type scaffold.
     *
     */
-  def getScaffold(): IPromise[IResourcePromise]
+  def getScaffold(): IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.dataTypeResource#save
@@ -118,7 +119,7 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def save(dataType: js.Object, preValues: js.Array[_], isNew: Boolean): IPromise[IResourcePromise]
+  def save(dataType: js.Object, preValues: js.Array[_], isNew: Boolean): IPromise[IResourcePromise] = js.native
 }
 
 object IDataTypeResource {
@@ -134,5 +135,30 @@ object IDataTypeResource {
     val __obj = js.Dynamic.literal(deleteById = js.Any.fromFunction1(deleteById), getAll = js.Any.fromFunction0(getAll), getById = js.Any.fromFunction1(getById), getPreValues = js.Any.fromFunction2(getPreValues), getScaffold = js.Any.fromFunction0(getScaffold), save = js.Any.fromFunction3(save))
     __obj.asInstanceOf[IDataTypeResource]
   }
+  @scala.inline
+  implicit class IDataTypeResourceOps[Self <: IDataTypeResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteById(value: Double => IPromise[IResourcePromise]): Self = this.set("deleteById", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetAll(value: () => js.Any): Self = this.set("getAll", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetById(value: Double => IPromise[IResourcePromise]): Self = this.set("getById", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetPreValues(value: (String, Double) => IPromise[IResourcePromise]): Self = this.set("getPreValues", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetScaffold(value: () => IPromise[IResourcePromise]): Self = this.set("getScaffold", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSave(value: (js.Object, js.Array[_], Boolean) => IPromise[IResourcePromise]): Self = this.set("save", js.Any.fromFunction3(value))
+  }
+  
 }
 

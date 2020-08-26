@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/graphql" : "4.5.1"
+      "@octokit/graphql" : "4.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/graphql" : "4.5.1"
+      "@octokit/graphql" : "4.5.3"
     }
   ],
   "compile-devDependencies" : [

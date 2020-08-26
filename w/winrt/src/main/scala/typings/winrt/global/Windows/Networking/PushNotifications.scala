@@ -1,11 +1,6 @@
 package typings.winrt.global.Windows.Networking
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.IAsyncOperation
-import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType
-import typings.winrt.Windows.UI.Notifications.BadgeNotification
-import typings.winrt.Windows.UI.Notifications.TileNotification
-import typings.winrt.Windows.UI.Notifications.ToastNotification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,16 +10,7 @@ import scala.scalajs.js.annotation._
 object PushNotifications extends js.Object {
   @js.native
   class PushNotificationChannel ()
-    extends typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel {
-    /* CompleteClass */
-    override var expirationTime: Date = js.native
-    /* CompleteClass */
-    override var onpushnotificationreceived: js.Any = js.native
-    /* CompleteClass */
-    override var uri: String = js.native
-    /* CompleteClass */
-    override def close(): Unit = js.native
-  }
+    extends typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel
   
   @js.native
   class PushNotificationChannelManager ()
@@ -32,27 +18,11 @@ object PushNotifications extends js.Object {
   
   @js.native
   class PushNotificationReceivedEventArgs ()
-    extends typings.winrt.Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs {
-    /* CompleteClass */
-    override var badgeNotification: BadgeNotification = js.native
-    /* CompleteClass */
-    override var cancel: Boolean = js.native
-    /* CompleteClass */
-    override var notificationType: PushNotificationType = js.native
-    /* CompleteClass */
-    override var rawNotification: typings.winrt.Windows.Networking.PushNotifications.RawNotification = js.native
-    /* CompleteClass */
-    override var tileNotification: TileNotification = js.native
-    /* CompleteClass */
-    override var toastNotification: ToastNotification = js.native
-  }
+    extends typings.winrt.Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs
   
   @js.native
   class RawNotification ()
-    extends typings.winrt.Windows.Networking.PushNotifications.RawNotification {
-    /* CompleteClass */
-    override var content: String = js.native
-  }
+    extends typings.winrt.Windows.Networking.PushNotifications.RawNotification
   
   /* static members */
   @js.native

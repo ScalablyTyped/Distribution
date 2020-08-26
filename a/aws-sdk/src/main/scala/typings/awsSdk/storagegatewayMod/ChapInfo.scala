@@ -26,18 +26,38 @@ trait ChapInfo extends js.Object {
 
 object ChapInfo {
   @scala.inline
-  def apply(
-    InitiatorName: IqnName = null,
-    SecretToAuthenticateInitiator: ChapSecret = null,
-    SecretToAuthenticateTarget: ChapSecret = null,
-    TargetARN: TargetARN = null
-  ): ChapInfo = {
+  def apply(): ChapInfo = {
     val __obj = js.Dynamic.literal()
-    if (InitiatorName != null) __obj.updateDynamic("InitiatorName")(InitiatorName.asInstanceOf[js.Any])
-    if (SecretToAuthenticateInitiator != null) __obj.updateDynamic("SecretToAuthenticateInitiator")(SecretToAuthenticateInitiator.asInstanceOf[js.Any])
-    if (SecretToAuthenticateTarget != null) __obj.updateDynamic("SecretToAuthenticateTarget")(SecretToAuthenticateTarget.asInstanceOf[js.Any])
-    if (TargetARN != null) __obj.updateDynamic("TargetARN")(TargetARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChapInfo]
   }
+  @scala.inline
+  implicit class ChapInfoOps[Self <: ChapInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitiatorName(value: IqnName): Self = this.set("InitiatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitiatorName: Self = this.set("InitiatorName", js.undefined)
+    @scala.inline
+    def setSecretToAuthenticateInitiator(value: ChapSecret): Self = this.set("SecretToAuthenticateInitiator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretToAuthenticateInitiator: Self = this.set("SecretToAuthenticateInitiator", js.undefined)
+    @scala.inline
+    def setSecretToAuthenticateTarget(value: ChapSecret): Self = this.set("SecretToAuthenticateTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretToAuthenticateTarget: Self = this.set("SecretToAuthenticateTarget", js.undefined)
+    @scala.inline
+    def setTargetARN(value: TargetARN): Self = this.set("TargetARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetARN: Self = this.set("TargetARN", js.undefined)
+  }
+  
 }
 

@@ -16,6 +16,11 @@ object anon extends js.Object {
     def onError(error: Error): js.Any = js.native
     def onStart(notifier: Notifier[Variables, js.Object]): js.Any = js.native
     def unsubscribe(absintheSocket: AbsintheSocket[js.Object]): Unit = js.native
+    def unsubscribe(
+      absintheSocket: AbsintheSocket[js.Object],
+      notifier: js.UndefOr[scala.Nothing],
+      observer: Observer[Variables, js.Object]
+    ): Unit = js.native
     def unsubscribe(absintheSocket: AbsintheSocket[js.Object], notifier: Notifier[Variables, js.Object]): Unit = js.native
     def unsubscribe(
       absintheSocket: AbsintheSocket[js.Object],

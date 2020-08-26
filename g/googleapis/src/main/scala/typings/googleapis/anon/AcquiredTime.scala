@@ -31,48 +31,98 @@ trait AcquiredTime extends js.Object {
 
 object AcquiredTime {
   @scala.inline
-  def apply(
-    acquiredTime: String = null,
-    acquisitionType: js.UndefOr[Double] = js.undefined,
-    copy: LimitType = null,
-    entitlementType: js.UndefOr[Double] = js.undefined,
-    familySharing: FamilyRole = null,
-    isFamilySharedFromUser: js.UndefOr[Boolean] = js.undefined,
-    isFamilySharedToUser: js.UndefOr[Boolean] = js.undefined,
-    isFamilySharingAllowed: js.UndefOr[Boolean] = js.undefined,
-    isFamilySharingDisabledByFop: js.UndefOr[Boolean] = js.undefined,
-    isInMyBooks: js.UndefOr[Boolean] = js.undefined,
-    isPreordered: js.UndefOr[Boolean] = js.undefined,
-    isPurchased: js.UndefOr[Boolean] = js.undefined,
-    isUploaded: js.UndefOr[Boolean] = js.undefined,
-    readingPosition: SchemaReadingPosition = null,
-    rentalPeriod: EndUtcSec = null,
-    rentalState: String = null,
-    review: SchemaReview = null,
-    updated: String = null,
-    userUploadedVolumeInfo: ProcessingState = null
-  ): AcquiredTime = {
+  def apply(): AcquiredTime = {
     val __obj = js.Dynamic.literal()
-    if (acquiredTime != null) __obj.updateDynamic("acquiredTime")(acquiredTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(acquisitionType)) __obj.updateDynamic("acquisitionType")(acquisitionType.get.asInstanceOf[js.Any])
-    if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
-    if (!js.isUndefined(entitlementType)) __obj.updateDynamic("entitlementType")(entitlementType.get.asInstanceOf[js.Any])
-    if (familySharing != null) __obj.updateDynamic("familySharing")(familySharing.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFamilySharedFromUser)) __obj.updateDynamic("isFamilySharedFromUser")(isFamilySharedFromUser.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFamilySharedToUser)) __obj.updateDynamic("isFamilySharedToUser")(isFamilySharedToUser.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFamilySharingAllowed)) __obj.updateDynamic("isFamilySharingAllowed")(isFamilySharingAllowed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFamilySharingDisabledByFop)) __obj.updateDynamic("isFamilySharingDisabledByFop")(isFamilySharingDisabledByFop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInMyBooks)) __obj.updateDynamic("isInMyBooks")(isInMyBooks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPreordered)) __obj.updateDynamic("isPreordered")(isPreordered.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPurchased)) __obj.updateDynamic("isPurchased")(isPurchased.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUploaded)) __obj.updateDynamic("isUploaded")(isUploaded.get.asInstanceOf[js.Any])
-    if (readingPosition != null) __obj.updateDynamic("readingPosition")(readingPosition.asInstanceOf[js.Any])
-    if (rentalPeriod != null) __obj.updateDynamic("rentalPeriod")(rentalPeriod.asInstanceOf[js.Any])
-    if (rentalState != null) __obj.updateDynamic("rentalState")(rentalState.asInstanceOf[js.Any])
-    if (review != null) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (userUploadedVolumeInfo != null) __obj.updateDynamic("userUploadedVolumeInfo")(userUploadedVolumeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcquiredTime]
   }
+  @scala.inline
+  implicit class AcquiredTimeOps[Self <: AcquiredTime] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcquiredTime(value: String): Self = this.set("acquiredTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcquiredTime: Self = this.set("acquiredTime", js.undefined)
+    @scala.inline
+    def setAcquisitionType(value: Double): Self = this.set("acquisitionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcquisitionType: Self = this.set("acquisitionType", js.undefined)
+    @scala.inline
+    def setCopy(value: LimitType): Self = this.set("copy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopy: Self = this.set("copy", js.undefined)
+    @scala.inline
+    def setEntitlementType(value: Double): Self = this.set("entitlementType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntitlementType: Self = this.set("entitlementType", js.undefined)
+    @scala.inline
+    def setFamilySharing(value: FamilyRole): Self = this.set("familySharing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamilySharing: Self = this.set("familySharing", js.undefined)
+    @scala.inline
+    def setIsFamilySharedFromUser(value: Boolean): Self = this.set("isFamilySharedFromUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFamilySharedFromUser: Self = this.set("isFamilySharedFromUser", js.undefined)
+    @scala.inline
+    def setIsFamilySharedToUser(value: Boolean): Self = this.set("isFamilySharedToUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFamilySharedToUser: Self = this.set("isFamilySharedToUser", js.undefined)
+    @scala.inline
+    def setIsFamilySharingAllowed(value: Boolean): Self = this.set("isFamilySharingAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFamilySharingAllowed: Self = this.set("isFamilySharingAllowed", js.undefined)
+    @scala.inline
+    def setIsFamilySharingDisabledByFop(value: Boolean): Self = this.set("isFamilySharingDisabledByFop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFamilySharingDisabledByFop: Self = this.set("isFamilySharingDisabledByFop", js.undefined)
+    @scala.inline
+    def setIsInMyBooks(value: Boolean): Self = this.set("isInMyBooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsInMyBooks: Self = this.set("isInMyBooks", js.undefined)
+    @scala.inline
+    def setIsPreordered(value: Boolean): Self = this.set("isPreordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPreordered: Self = this.set("isPreordered", js.undefined)
+    @scala.inline
+    def setIsPurchased(value: Boolean): Self = this.set("isPurchased", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPurchased: Self = this.set("isPurchased", js.undefined)
+    @scala.inline
+    def setIsUploaded(value: Boolean): Self = this.set("isUploaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsUploaded: Self = this.set("isUploaded", js.undefined)
+    @scala.inline
+    def setReadingPosition(value: SchemaReadingPosition): Self = this.set("readingPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadingPosition: Self = this.set("readingPosition", js.undefined)
+    @scala.inline
+    def setRentalPeriod(value: EndUtcSec): Self = this.set("rentalPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRentalPeriod: Self = this.set("rentalPeriod", js.undefined)
+    @scala.inline
+    def setRentalState(value: String): Self = this.set("rentalState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRentalState: Self = this.set("rentalState", js.undefined)
+    @scala.inline
+    def setReview(value: SchemaReview): Self = this.set("review", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReview: Self = this.set("review", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setUserUploadedVolumeInfo(value: ProcessingState): Self = this.set("userUploadedVolumeInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserUploadedVolumeInfo: Self = this.set("userUploadedVolumeInfo", js.undefined)
+  }
+  
 }
 

@@ -8,5 +8,5 @@ package object inlineChunkHtmlPluginMod {
   /**
     * This Webpack plugin inlines script chunks into `index.html`.
     */
-  type InlineChunkHtmlPlugin = typings.webpack.mod.Plugin
+  type InlineChunkHtmlPlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
 }

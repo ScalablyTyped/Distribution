@@ -10,9 +10,9 @@ Write notes for your Storybook stories.
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-notes |
 | Keywords           | addon, notes, storybook |
-| # releases         | 415 |
-| # dependents       | 39 |
-| # downloads        | 6437235 |
+| # releases         | 416 |
+| # dependents       | 42 |
+| # downloads        | 6693425 |
 | # stars            | 1 |
 
 ## Links

@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
 @js.native
 class KeyDerivationParameters ()
-  extends typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters {
-  /* CompleteClass */
-  override var iterationCount: Double = js.native
-  /* CompleteClass */
-  override var kdfGenericBinary: IBuffer = js.native
-}
+  extends typings.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters
 
 /* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SyncHost () extends HostBase {
   def this(hasReadFileSyncWriteFileSyncBaseOptions: SyncHostOptions) = this()
-  var readFileSyncCallback: js.UndefOr[js.Any] = js.native
-  var writeFileSyncCallback: js.UndefOr[js.Any] = js.native
+  var readFileSyncCallback: js.Any = js.native
+  var writeFileSyncCallback: js.Any = js.native
   def getSourceFileSync(file: String): js.UndefOr[SourceFile] = js.native
   def getSourceFileSync(file: String, cancelable: Cancelable): js.UndefOr[SourceFile] = js.native
   def getSourceFileSync(file: String, cancelable: CancellationToken): js.UndefOr[SourceFile] = js.native
@@ -29,6 +29,7 @@ class SyncHost () extends HostBase {
 @js.native
 object SyncHost extends js.Object {
   def forFile(content: String): SyncSingleFileHost = js.native
+  def forFile(content: String, file: js.UndefOr[scala.Nothing], hostFallback: SyncHost): SyncSingleFileHost = js.native
   def forFile(content: String, file: String): SyncSingleFileHost = js.native
   def forFile(content: String, file: String, hostFallback: SyncHost): SyncSingleFileHost = js.native
 }

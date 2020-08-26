@@ -221,19 +221,10 @@ class Terminal () extends IDisposable {
     * @param matcherId The link matcher's ID (returned after register)
     */
   def deregisterLinkMatcher(matcherId: Double): Unit = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Focus the terminal.
     */
   def focus(): Unit = js.native
-  /**
-    * Retrieves an option's value from the terminal.
-    * @param key The option key.
-    */
-  def getOption(
-    key: bellSound | bellStyle | cursorStyle | fontFamily | fontWeight | fontWeightBold | logLevel | rendererType | termName | wordSeparator
-  ): String = js.native
   /**
     * Retrieves an option's value from the terminal.
     * @param key The option key.
@@ -244,9 +235,17 @@ class Terminal () extends IDisposable {
     * @param key The option key.
     */
   @JSName("getOption")
-  def getOption_Boolean(
-    key: allowTransparency | cancelEvents | convertEol | cursorBlink | disableStdin | macOptionIsMeta | rightClickSelectsWord | popOnBell | visualBell | windowsMode
-  ): Boolean = js.native
+  def getOption_allowTransparency(key: allowTransparency): Boolean = js.native
+  /**
+    * Retrieves an option's value from the terminal.
+    * @param key The option key.
+    */
+  @JSName("getOption")
+  def getOption_bellSound(key: bellSound): String = js.native
+  @JSName("getOption")
+  def getOption_bellStyle(key: bellStyle): String = js.native
+  @JSName("getOption")
+  def getOption_cancelEvents(key: cancelEvents): Boolean = js.native
   /**
     * Retrieves an option's value from the terminal.
     * @param key The option key.
@@ -254,17 +253,49 @@ class Terminal () extends IDisposable {
   @JSName("getOption")
   def getOption_cols(key: typings.xterm.xtermStrings.cols): Double = js.native
   @JSName("getOption")
+  def getOption_convertEol(key: convertEol): Boolean = js.native
+  @JSName("getOption")
+  def getOption_cursorBlink(key: cursorBlink): Boolean = js.native
+  @JSName("getOption")
+  def getOption_cursorStyle(key: cursorStyle): String = js.native
+  @JSName("getOption")
+  def getOption_disableStdin(key: disableStdin): Boolean = js.native
+  @JSName("getOption")
+  def getOption_fontFamily(key: fontFamily): String = js.native
+  @JSName("getOption")
   def getOption_fontSize(key: fontSize): Double = js.native
+  @JSName("getOption")
+  def getOption_fontWeight(key: fontWeight): String = js.native
+  @JSName("getOption")
+  def getOption_fontWeightBold(key: fontWeightBold): String = js.native
   @JSName("getOption")
   def getOption_letterSpacing(key: letterSpacing): Double = js.native
   @JSName("getOption")
   def getOption_lineHeight(key: lineHeight): Double = js.native
+  @JSName("getOption")
+  def getOption_logLevel(key: logLevel): String = js.native
+  @JSName("getOption")
+  def getOption_macOptionIsMeta(key: macOptionIsMeta): Boolean = js.native
+  @JSName("getOption")
+  def getOption_popOnBell(key: popOnBell): Boolean = js.native
+  @JSName("getOption")
+  def getOption_rendererType(key: rendererType): String = js.native
+  @JSName("getOption")
+  def getOption_rightClickSelectsWord(key: rightClickSelectsWord): Boolean = js.native
   @JSName("getOption")
   def getOption_rows(key: typings.xterm.xtermStrings.rows): Double = js.native
   @JSName("getOption")
   def getOption_scrollback(key: scrollback): Double = js.native
   @JSName("getOption")
   def getOption_tabStopWidth(key: tabStopWidth): Double = js.native
+  @JSName("getOption")
+  def getOption_termName(key: termName): String = js.native
+  @JSName("getOption")
+  def getOption_visualBell(key: visualBell): Boolean = js.native
+  @JSName("getOption")
+  def getOption_windowsMode(key: windowsMode): Boolean = js.native
+  @JSName("getOption")
+  def getOption_wordSeparator(key: wordSeparator): String = js.native
   /**
     * Gets the terminal's current selection, this is useful for implementing
     * copy behavior outside of xterm.js.
@@ -486,15 +517,6 @@ class Terminal () extends IDisposable {
     * @param key The option key.
     * @param value The option value.
     */
-  def setOption(
-    key: allowTransparency | cancelEvents | convertEol | cursorBlink | disableStdin | macOptionIsMeta | popOnBell | rightClickSelectsWord | visualBell | windowsMode,
-    value: Boolean
-  ): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
   def setOption(key: String, value: js.Any): Unit = js.native
   def setOption(key: bellStyle, value: both): Unit = js.native
   def setOption(key: bellStyle, value: none): Unit = js.native
@@ -503,14 +525,35 @@ class Terminal () extends IDisposable {
   def setOption(key: cursorStyle, value: bar): Unit = js.native
   def setOption(key: cursorStyle, value: block): Unit = js.native
   def setOption(key: cursorStyle, value: underline): Unit = js.native
-  def setOption(
-    key: fontWeightBold,
-    value: normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
-  ): Unit = js.native
-  def setOption(
-    key: fontWeight,
-    value: normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
-  ): Unit = js.native
+  def setOption(key: fontWeightBold, value: `100`): Unit = js.native
+  def setOption(key: fontWeightBold, value: `200`): Unit = js.native
+  def setOption(key: fontWeightBold, value: `300`): Unit = js.native
+  def setOption(key: fontWeightBold, value: `400`): Unit = js.native
+  def setOption(key: fontWeightBold, value: `500`): Unit = js.native
+  def setOption(key: fontWeightBold, value: `600`): Unit = js.native
+  def setOption(key: fontWeightBold, value: `700`): Unit = js.native
+  def setOption(key: fontWeightBold, value: `800`): Unit = js.native
+  def setOption(key: fontWeightBold, value: `900`): Unit = js.native
+  def setOption(key: fontWeightBold, value: bold): Unit = js.native
+  def setOption(key: fontWeightBold, value: normal): Unit = js.native
+  def setOption(key: fontWeight, value: `100`): Unit = js.native
+  def setOption(key: fontWeight, value: `200`): Unit = js.native
+  def setOption(key: fontWeight, value: `300`): Unit = js.native
+  def setOption(key: fontWeight, value: `400`): Unit = js.native
+  def setOption(key: fontWeight, value: `500`): Unit = js.native
+  def setOption(key: fontWeight, value: `600`): Unit = js.native
+  def setOption(key: fontWeight, value: `700`): Unit = js.native
+  def setOption(key: fontWeight, value: `800`): Unit = js.native
+  def setOption(key: fontWeight, value: `900`): Unit = js.native
+  def setOption(key: fontWeight, value: bold): Unit = js.native
+  def setOption(key: fontWeight, value: normal): Unit = js.native
+  /**
+    * Sets an option on the terminal.
+    * @param key The option key.
+    * @param value The option value.
+    */
+  @JSName("setOption")
+  def setOption_allowTransparency(key: allowTransparency, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_bellSound(key: bellSound, value: String): Unit = js.native
   /**
@@ -520,6 +563,8 @@ class Terminal () extends IDisposable {
     */
   @JSName("setOption")
   def setOption_bellStyle(key: bellStyle): Unit = js.native
+  @JSName("setOption")
+  def setOption_cancelEvents(key: cancelEvents, value: Boolean): Unit = js.native
   /**
     * Sets an option on the terminal.
     * @param key The option key.
@@ -527,6 +572,10 @@ class Terminal () extends IDisposable {
     */
   @JSName("setOption")
   def setOption_cols(key: typings.xterm.xtermStrings.cols, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_convertEol(key: convertEol, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_cursorBlink(key: cursorBlink, value: Boolean): Unit = js.native
   /**
     * Sets an option on the terminal.
     * @param key The option key.
@@ -534,6 +583,8 @@ class Terminal () extends IDisposable {
     */
   @JSName("setOption")
   def setOption_cursorStyle(key: cursorStyle): Unit = js.native
+  @JSName("setOption")
+  def setOption_disableStdin(key: disableStdin, value: Boolean): Unit = js.native
   /**
     * Sets an option on the terminal.
     * @param key The option key.
@@ -569,6 +620,12 @@ class Terminal () extends IDisposable {
   @JSName("setOption")
   def setOption_logLevel(key: logLevel, value: LogLevel): Unit = js.native
   @JSName("setOption")
+  def setOption_macOptionIsMeta(key: macOptionIsMeta, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_popOnBell(key: popOnBell, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_rightClickSelectsWord(key: rightClickSelectsWord, value: Boolean): Unit = js.native
+  @JSName("setOption")
   def setOption_rows(key: typings.xterm.xtermStrings.rows, value: Double): Unit = js.native
   @JSName("setOption")
   def setOption_scrollback(key: scrollback, value: Double): Unit = js.native
@@ -583,6 +640,10 @@ class Terminal () extends IDisposable {
     */
   @JSName("setOption")
   def setOption_theme(key: theme, value: ITheme): Unit = js.native
+  @JSName("setOption")
+  def setOption_visualBell(key: visualBell, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_windowsMode(key: windowsMode, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_wordSeparator(key: wordSeparator, value: String): Unit = js.native
   /**

@@ -14,10 +14,26 @@ trait GetFolderPathResponse extends js.Object {
 
 object GetFolderPathResponse {
   @scala.inline
-  def apply(Path: ResourcePath = null): GetFolderPathResponse = {
+  def apply(): GetFolderPathResponse = {
     val __obj = js.Dynamic.literal()
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFolderPathResponse]
   }
+  @scala.inline
+  implicit class GetFolderPathResponseOps[Self <: GetFolderPathResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: ResourcePath): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+  }
+  
 }
 

@@ -3,9 +3,6 @@ package typings.ionicCore
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.ionicCoreStrings.bounded
-import typings.ionicCore.ionicCoreStrings.button
-import typings.ionicCore.ionicCoreStrings.reset
-import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.ionicCoreStrings.unbounded
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
@@ -31,8 +28,6 @@ object backButtonMod extends js.Object {
       * The url to navigate back to by default when there is no history.
       */
     var defaultHref: js.UndefOr[String] = js.native
-    /* CompleteClass */
-    override var disabled: Boolean = js.native
     var el: HTMLElement = js.native
     /**
       * The icon name to use for the back button.
@@ -48,8 +43,6 @@ object backButtonMod extends js.Object {
       * The text to display in the back button.
       */
     var text: js.UndefOr[String | Null] = js.native
-    /* CompleteClass */
-    override var `type`: submit | reset | button = js.native
     def backButtonIcon: js.Any = js.native
     def backButtonText: js.Any = js.native
     @JSName("componentWillLoad")

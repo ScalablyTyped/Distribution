@@ -25,14 +25,30 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testLogFile extends js.Object {
 
 object SchemaGoogleDevtoolsRemoteexecutionV1testLogFile {
   @scala.inline
-  def apply(
-    digest: SchemaGoogleDevtoolsRemoteexecutionV1testDigest = null,
-    humanReadable: js.UndefOr[Boolean] = js.undefined
-  ): SchemaGoogleDevtoolsRemoteexecutionV1testLogFile = {
+  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testLogFile = {
     val __obj = js.Dynamic.literal()
-    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (!js.isUndefined(humanReadable)) __obj.updateDynamic("humanReadable")(humanReadable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testLogFile]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testLogFileOps[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testLogFile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = this.set("digest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigest: Self = this.set("digest", js.undefined)
+    @scala.inline
+    def setHumanReadable(value: Boolean): Self = this.set("humanReadable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHumanReadable: Self = this.set("humanReadable", js.undefined)
+  }
+  
 }
 

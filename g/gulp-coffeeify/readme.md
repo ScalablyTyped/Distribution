@@ -11,7 +11,7 @@ Browserify plugin with coffee-script for Gulp.
 | Keywords           | coffee-script, browserify, gulp, gulpplugin |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3926 |
+| # downloads        | 3797 |
 | # stars            | 1 |
 
 ## Links

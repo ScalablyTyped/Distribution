@@ -24,6 +24,9 @@ object dateIoCoreStrings {
   sealed trait fullDateTime24h extends js.Object
   
   @js.native
+  sealed trait fullDateWithWeekday extends js.Object
+  
+  @js.native
   sealed trait fullTime extends js.Object
   
   @js.native
@@ -81,6 +84,12 @@ object dateIoCoreStrings {
   sealed trait shortDate extends js.Object
   
   @js.native
+  sealed trait weekday extends js.Object
+  
+  @js.native
+  sealed trait weekdayShort extends js.Object
+  
+  @js.native
   sealed trait year extends js.Object
   
   @scala.inline
@@ -95,6 +104,8 @@ object dateIoCoreStrings {
   def fullDateTime12h: fullDateTime12h = "fullDateTime12h".asInstanceOf[fullDateTime12h]
   @scala.inline
   def fullDateTime24h: fullDateTime24h = "fullDateTime24h".asInstanceOf[fullDateTime24h]
+  @scala.inline
+  def fullDateWithWeekday: fullDateWithWeekday = "fullDateWithWeekday".asInstanceOf[fullDateWithWeekday]
   @scala.inline
   def fullTime: fullTime = "fullTime".asInstanceOf[fullTime]
   @scala.inline
@@ -133,6 +144,10 @@ object dateIoCoreStrings {
   def seconds: seconds = "seconds".asInstanceOf[seconds]
   @scala.inline
   def shortDate: shortDate = "shortDate".asInstanceOf[shortDate]
+  @scala.inline
+  def weekday: weekday = "weekday".asInstanceOf[weekday]
+  @scala.inline
+  def weekdayShort: weekdayShort = "weekdayShort".asInstanceOf[weekdayShort]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
 }

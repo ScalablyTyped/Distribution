@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangedEventArgs")
 @js.native
 abstract class ChatMessageChangedEventArgs ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChangedEventArgs {
-  /**
-    * The message changed event handler that an application registers with the message store receives a deferral object in the event parameters. The GetDeferral method registers a change deferral and allows an application to take action related to the change before the message store completes the change.
-    * @return Gets a deferral for the MessageChanged event.
-    */
-  /* CompleteClass */
-  override def getDeferral(): typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChangedDeferral = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChangedEventArgs
 

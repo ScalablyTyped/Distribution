@@ -2,7 +2,7 @@ package typings.walkdir.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.fsMod.Stats
-import typings.walkdir.anon.syncfalseWalkOptions
+import typings.walkdir.anon.syncfalseundefinedWalkOpt
 import typings.walkdir.anon.synctruereturnobjectfalse
 import typings.walkdir.anon.synctruereturnobjecttrueW
 import scala.scalajs.js
@@ -13,8 +13,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(path: String): WalkEmitter = js.native
-  def apply(path: String, options: syncfalseWalkOptions): WalkEmitter = js.native
-  def apply(path: String, options: syncfalseWalkOptions, eventListener: WalkEventListener): WalkEmitter = js.native
+  def apply(path: String, options: js.UndefOr[scala.Nothing], eventListener: WalkEventListener): WalkEmitter = js.native
+  def apply(path: String, options: syncfalseundefinedWalkOpt): WalkEmitter = js.native
+  def apply(path: String, options: syncfalseundefinedWalkOpt, eventListener: WalkEventListener): WalkEmitter = js.native
   def apply(path: String, options: synctruereturnobjectfalse): js.Array[String] = js.native
   def apply(path: String, options: synctruereturnobjectfalse, eventListener: WalkEventListener): js.Array[String] = js.native
   def apply(path: String, options: synctruereturnobjecttrueW): StringDictionary[Stats] = js.native

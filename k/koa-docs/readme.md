@@ -12,7 +12,7 @@ An automatic documentation generator for koa.js APIs
 | Keywords           | koa, koajs, api, documentation, generator, joi, docs |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 5596 |
+| # downloads        | 5748 |
 | # stars            | 1 |
 
 ## Links

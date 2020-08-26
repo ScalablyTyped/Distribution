@@ -54,6 +54,7 @@ object CrossroadsJs extends js.Object {
       * @param priority Route execution priority.
       */
     def addRoute(pattern: js.Any): Route = js.native
+    def addRoute(pattern: js.Any, handler: js.UndefOr[scala.Nothing], priority: Double): Route = js.native
     def addRoute(pattern: js.Any, handler: js.Function): Route = js.native
     def addRoute(pattern: js.Any, handler: js.Function, priority: Double): Route = js.native
     /**
@@ -118,6 +119,7 @@ object CrossroadsJs extends js.Object {
       * @param priority The priority level of the event listener. Listeners with higher priority will be executed before listeners with lower priority. Listeners with same priority level will be executed at the same order as they were added. (default = 0)
       */
     def add(listener: js.Function): SignalBinding[_] = js.native
+    def add(listener: js.Function, listenerContext: js.UndefOr[scala.Nothing], priority: Number): SignalBinding[_] = js.native
     def add(listener: js.Function, listenerContext: js.Any): SignalBinding[_] = js.native
     def add(listener: js.Function, listenerContext: js.Any, priority: Number): SignalBinding[_] = js.native
     /**

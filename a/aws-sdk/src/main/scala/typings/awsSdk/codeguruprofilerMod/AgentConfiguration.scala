@@ -22,10 +22,30 @@ trait AgentConfiguration extends js.Object {
 
 object AgentConfiguration {
   @scala.inline
-  def apply(periodInSeconds: Integer, shouldProfile: Boolean, agentParameters: AgentParameters = null): AgentConfiguration = {
+  def apply(periodInSeconds: Integer, shouldProfile: Boolean): AgentConfiguration = {
     val __obj = js.Dynamic.literal(periodInSeconds = periodInSeconds.asInstanceOf[js.Any], shouldProfile = shouldProfile.asInstanceOf[js.Any])
-    if (agentParameters != null) __obj.updateDynamic("agentParameters")(agentParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentConfiguration]
   }
+  @scala.inline
+  implicit class AgentConfigurationOps[Self <: AgentConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPeriodInSeconds(value: Integer): Self = this.set("periodInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShouldProfile(value: Boolean): Self = this.set("shouldProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAgentParameters(value: AgentParameters): Self = this.set("agentParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentParameters: Self = this.set("agentParameters", js.undefined)
+  }
+  
 }
 

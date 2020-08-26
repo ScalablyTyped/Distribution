@@ -77,18 +77,24 @@ trait TSCommon extends js.Object {
   var transpileModule_Original: js.Function2[/* input */ String, /* transpileOptions */ TranspileOptions, TranspileOutput] = js.native
   var version: String = js.native
   def createLanguageService(host: LanguageServiceHost): LanguageService = js.native
+  def createLanguageService(host: LanguageServiceHost, documentRegistry: js.UndefOr[scala.Nothing], syntaxOnly: Boolean): LanguageService = js.native
   def createLanguageService(host: LanguageServiceHost, documentRegistry: DocumentRegistry): LanguageService = js.native
   def createLanguageService(host: LanguageServiceHost, documentRegistry: DocumentRegistry, syntaxOnly: Boolean): LanguageService = js.native
   def displayPartsToString(): String = js.native
   def displayPartsToString(displayParts: js.Array[SymbolDisplayPart]): String = js.native
   def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean]): js.UndefOr[String] = js.native
   def findConfigFile(searchPath: String, fileExists: js.Function1[/* fileName */ String, Boolean], configName: String): js.UndefOr[String] = js.native
-  def flattenDiagnosticMessageText(diag: js.UndefOr[DiagnosticMessageChain | String], newLine: String): String = js.native
-  def flattenDiagnosticMessageText(diag: js.UndefOr[DiagnosticMessageChain | String], newLine: String, indent: Double): String = js.native
+  def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: js.UndefOr[scala.Nothing], newLine: String, indent: Double): String = js.native
+  def flattenDiagnosticMessageText(diag: String, newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: String, newLine: String, indent: Double): String = js.native
+  def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String): String = js.native
+  def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String, indent: Double): String = js.native
   def formatDiagnostics(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String = js.native
   def formatDiagnosticsWithColorAndContext(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): String = js.native
   def getDefaultLibFilePath(options: CompilerOptions): String = js.native
   def getPreEmitDiagnostics(program: Program): js.Array[Diagnostic] = js.native
+  def getPreEmitDiagnostics(program: Program, sourceFile: js.UndefOr[scala.Nothing], cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
   def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile): js.Array[Diagnostic] = js.native
   def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
   def parseJsonConfigFileContent(

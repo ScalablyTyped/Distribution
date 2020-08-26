@@ -253,7 +253,212 @@ trait World extends EventEmitter {
     * @param fillOpacity The fill opacity, between 0 and 1.
     */
   def renderBody(body: BodyType, graphics: Graphics, showInternalEdges: Boolean): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: Double,
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: Double,
+    fillColor: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: Double,
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
   def renderBody(body: BodyType, graphics: Graphics, showInternalEdges: Boolean, lineColor: Double): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
   def renderBody(
     body: BodyType,
     graphics: Graphics,
@@ -267,7 +472,46 @@ trait World extends EventEmitter {
     showInternalEdges: Boolean,
     lineColor: Double,
     lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: Double,
     lineThickness: Double
+  ): this.type = js.native
+  def renderBody(
+    body: BodyType,
+    graphics: Graphics,
+    showInternalEdges: Boolean,
+    lineColor: Double,
+    lineOpacity: Double,
+    lineThickness: Double,
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
   ): this.type = js.native
   def renderBody(
     body: BodyType,
@@ -441,9 +685,187 @@ trait World extends EventEmitter {
     * @param fillOpacity The fill opacity, between 0 and 1. If `null` it will use the World Debug Config value.
     */
   def setBodyRenderStyle(body: BodyType): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(body: BodyType, lineColor: js.UndefOr[scala.Nothing], lineOpacity: Double): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(body: BodyType, lineColor: js.UndefOr[scala.Nothing], lineOpacity: Double, lineThickness: Double): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: Double,
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: Double,
+    fillColor: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: js.UndefOr[scala.Nothing],
+    lineOpacity: Double,
+    lineThickness: Double,
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
   def setBodyRenderStyle(body: BodyType, lineColor: Double): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(body: BodyType, lineColor: Double, lineOpacity: js.UndefOr[scala.Nothing], lineThickness: Double): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: js.UndefOr[scala.Nothing],
+    lineThickness: Double,
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
   def setBodyRenderStyle(body: BodyType, lineColor: Double, lineOpacity: Double): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double
+  ): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: Double,
+    lineThickness: js.UndefOr[scala.Nothing],
+    fillColor: Double,
+    fillOpacity: Double
+  ): this.type = js.native
   def setBodyRenderStyle(body: BodyType, lineColor: Double, lineOpacity: Double, lineThickness: Double): this.type = js.native
+  def setBodyRenderStyle(
+    body: BodyType,
+    lineColor: Double,
+    lineOpacity: Double,
+    lineThickness: Double,
+    fillColor: js.UndefOr[scala.Nothing],
+    fillOpacity: Double
+  ): this.type = js.native
   def setBodyRenderStyle(body: BodyType, lineColor: Double, lineOpacity: Double, lineThickness: Double, fillColor: Double): this.type = js.native
   def setBodyRenderStyle(
     body: BodyType,
@@ -531,7 +953,11 @@ trait World extends EventEmitter {
     * @param scale The gravity scale factor. Default 0.001.
     */
   def setGravity(): this.type = js.native
+  def setGravity(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], scale: Double): this.type = js.native
+  def setGravity(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+  def setGravity(x: js.UndefOr[scala.Nothing], y: Double, scale: Double): this.type = js.native
   def setGravity(x: Double): this.type = js.native
+  def setGravity(x: Double, y: js.UndefOr[scala.Nothing], scale: Double): this.type = js.native
   def setGravity(x: Double, y: Double): this.type = js.native
   def setGravity(x: Double, y: Double, scale: Double): this.type = js.native
   /**
@@ -558,6 +984,7 @@ trait World extends EventEmitter {
     * @param correction Optional delta correction value. Default 1.
     */
   def step(): Unit = js.native
+  def step(delta: js.UndefOr[scala.Nothing], correction: Double): Unit = js.native
   def step(delta: Double): Unit = js.native
   def step(delta: Double, correction: Double): Unit = js.native
   /**
@@ -596,9 +1023,164 @@ trait World extends EventEmitter {
     * @param height The height of the walls, in pixels. Only optional if `add` is `false`.
     */
   def updateWall(add: Boolean): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: Double
+  ): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: Double,
+    height: Double
+  ): Unit = js.native
+  def updateWall(add: Boolean, position: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    width: Double
+  ): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    width: Double,
+    height: Double
+  ): Unit = js.native
+  def updateWall(add: Boolean, position: js.UndefOr[scala.Nothing], x: Double): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    width: Double
+  ): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    width: Double,
+    height: Double
+  ): Unit = js.native
+  def updateWall(add: Boolean, position: js.UndefOr[scala.Nothing], x: Double, y: Double): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: Double,
+    y: Double,
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): Unit = js.native
+  def updateWall(add: Boolean, position: js.UndefOr[scala.Nothing], x: Double, y: Double, width: Double): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: js.UndefOr[scala.Nothing],
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double
+  ): Unit = js.native
   def updateWall(add: Boolean, position: String): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: Double
+  ): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: Double,
+    height: Double
+  ): Unit = js.native
+  def updateWall(add: Boolean, position: String, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): Unit = js.native
+  def updateWall(add: Boolean, position: String, x: js.UndefOr[scala.Nothing], y: Double, width: Double): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    width: Double,
+    height: Double
+  ): Unit = js.native
   def updateWall(add: Boolean, position: String, x: Double): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): Unit = js.native
+  def updateWall(add: Boolean, position: String, x: Double, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    width: Double,
+    height: Double
+  ): Unit = js.native
   def updateWall(add: Boolean, position: String, x: Double, y: Double): Unit = js.native
+  def updateWall(
+    add: Boolean,
+    position: String,
+    x: Double,
+    y: Double,
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): Unit = js.native
   def updateWall(add: Boolean, position: String, x: Double, y: Double, width: Double): Unit = js.native
   def updateWall(add: Boolean, position: String, x: Double, y: Double, width: Double, height: Double): Unit = js.native
 }

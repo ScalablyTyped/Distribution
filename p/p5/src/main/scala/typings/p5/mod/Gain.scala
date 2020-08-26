@@ -15,6 +15,7 @@ trait Gain extends js.Object {
     *   seconds from now
     */
   def amp(volume: Double): Unit = js.native
+  def amp(volume: Double, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
   def amp(volume: Double, rampTime: Double): Unit = js.native
   def amp(volume: Double, rampTime: Double, timeFromNow: Double): Unit = js.native
   /**

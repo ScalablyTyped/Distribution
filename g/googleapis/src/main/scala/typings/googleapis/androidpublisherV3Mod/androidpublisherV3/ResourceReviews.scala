@@ -29,6 +29,7 @@ class ResourceReviews protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaReview] = js.native
   def get(callback: BodyResponseCallback[SchemaReview]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReview] = js.native
   def get(params: ParamsResourceReviewsGet): GaxiosPromise[SchemaReview] = js.native
   def get(params: ParamsResourceReviewsGet, callback: BodyResponseCallback[SchemaReview]): Unit = js.native
   def get(
@@ -61,6 +62,7 @@ class ResourceReviews protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaReviewsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaReviewsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReviewsListResponse] = js.native
   def list(params: ParamsResourceReviewsList): GaxiosPromise[SchemaReviewsListResponse] = js.native
   def list(params: ParamsResourceReviewsList, callback: BodyResponseCallback[SchemaReviewsListResponse]): Unit = js.native
   def list(
@@ -90,6 +92,7 @@ class ResourceReviews protected () extends js.Object {
     */
   def reply(): GaxiosPromise[SchemaReviewsReplyResponse] = js.native
   def reply(callback: BodyResponseCallback[SchemaReviewsReplyResponse]): Unit = js.native
+  def reply(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReviewsReplyResponse] = js.native
   def reply(params: ParamsResourceReviewsReply): GaxiosPromise[SchemaReviewsReplyResponse] = js.native
   def reply(params: ParamsResourceReviewsReply, callback: BodyResponseCallback[SchemaReviewsReplyResponse]): Unit = js.native
   def reply(

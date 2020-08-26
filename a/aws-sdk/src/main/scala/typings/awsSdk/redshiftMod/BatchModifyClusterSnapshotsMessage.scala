@@ -22,15 +22,34 @@ trait BatchModifyClusterSnapshotsMessage extends js.Object {
 
 object BatchModifyClusterSnapshotsMessage {
   @scala.inline
-  def apply(
-    SnapshotIdentifierList: SnapshotIdentifierList,
-    Force: js.UndefOr[Boolean] = js.undefined,
-    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
-  ): BatchModifyClusterSnapshotsMessage = {
+  def apply(SnapshotIdentifierList: SnapshotIdentifierList): BatchModifyClusterSnapshotsMessage = {
     val __obj = js.Dynamic.literal(SnapshotIdentifierList = SnapshotIdentifierList.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchModifyClusterSnapshotsMessage]
   }
+  @scala.inline
+  implicit class BatchModifyClusterSnapshotsMessageOps[Self <: BatchModifyClusterSnapshotsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshotIdentifierListVarargs(value: String*): Self = this.set("SnapshotIdentifierList", js.Array(value :_*))
+    @scala.inline
+    def setSnapshotIdentifierList(value: SnapshotIdentifierList): Self = this.set("SnapshotIdentifierList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("Force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("Force", js.undefined)
+    @scala.inline
+    def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = this.set("ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualSnapshotRetentionPeriod: Self = this.set("ManualSnapshotRetentionPeriod", js.undefined)
+  }
+  
 }
 

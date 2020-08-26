@@ -54,29 +54,60 @@ trait CreateStageRequest extends js.Object {
 
 object CreateStageRequest {
   @scala.inline
-  def apply(
-    deploymentId: String,
-    restApiId: String,
-    stageName: String,
-    cacheClusterEnabled: js.UndefOr[Boolean] = js.undefined,
-    cacheClusterSize: CacheClusterSize = null,
-    canarySettings: CanarySettings = null,
-    description: String = null,
-    documentationVersion: String = null,
-    tags: MapOfStringToString = null,
-    tracingEnabled: js.UndefOr[Boolean] = js.undefined,
-    variables: MapOfStringToString = null
-  ): CreateStageRequest = {
+  def apply(deploymentId: String, restApiId: String, stageName: String): CreateStageRequest = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheClusterEnabled)) __obj.updateDynamic("cacheClusterEnabled")(cacheClusterEnabled.get.asInstanceOf[js.Any])
-    if (cacheClusterSize != null) __obj.updateDynamic("cacheClusterSize")(cacheClusterSize.asInstanceOf[js.Any])
-    if (canarySettings != null) __obj.updateDynamic("canarySettings")(canarySettings.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (documentationVersion != null) __obj.updateDynamic("documentationVersion")(documentationVersion.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracingEnabled)) __obj.updateDynamic("tracingEnabled")(tracingEnabled.get.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStageRequest]
   }
+  @scala.inline
+  implicit class CreateStageRequestOps[Self <: CreateStageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentId(value: String): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCacheClusterEnabled(value: Boolean): Self = this.set("cacheClusterEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterEnabled: Self = this.set("cacheClusterEnabled", js.undefined)
+    @scala.inline
+    def setCacheClusterSize(value: CacheClusterSize): Self = this.set("cacheClusterSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterSize: Self = this.set("cacheClusterSize", js.undefined)
+    @scala.inline
+    def setCanarySettings(value: CanarySettings): Self = this.set("canarySettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanarySettings: Self = this.set("canarySettings", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDocumentationVersion(value: String): Self = this.set("documentationVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentationVersion: Self = this.set("documentationVersion", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTracingEnabled(value: Boolean): Self = this.set("tracingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracingEnabled: Self = this.set("tracingEnabled", js.undefined)
+    @scala.inline
+    def setVariables(value: MapOfStringToString): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("variables", js.undefined)
+  }
+  
 }
 

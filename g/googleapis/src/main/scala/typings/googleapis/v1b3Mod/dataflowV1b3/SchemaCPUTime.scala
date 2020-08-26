@@ -27,12 +27,34 @@ trait SchemaCPUTime extends js.Object {
 
 object SchemaCPUTime {
   @scala.inline
-  def apply(rate: js.UndefOr[Double] = js.undefined, timestamp: String = null, totalMs: String = null): SchemaCPUTime = {
+  def apply(): SchemaCPUTime = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (totalMs != null) __obj.updateDynamic("totalMs")(totalMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCPUTime]
   }
+  @scala.inline
+  implicit class SchemaCPUTimeOps[Self <: SchemaCPUTime] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRate: Self = this.set("rate", js.undefined)
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    @scala.inline
+    def setTotalMs(value: String): Self = this.set("totalMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalMs: Self = this.set("totalMs", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,23 @@ trait ReduxFormContext extends js.Object {
   var prefixName: js.UndefOr[String] = js.native
   var sectionPrefix: js.UndefOr[String] = js.native
   def asyncValidate(): js.Promise[_] = js.native
+  def asyncValidate(name: js.UndefOr[scala.Nothing], value: js.Any): js.Promise[_] = js.native
   def asyncValidate(name: String): js.Promise[_] = js.native
   def asyncValidate(name: String, value: js.Any): js.Promise[_] = js.native
   @JSName("asyncValidate")
+  def asyncValidate_blur(name: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], trigger: blur): js.Promise[_] = js.native
+  @JSName("asyncValidate")
+  def asyncValidate_blur(name: js.UndefOr[scala.Nothing], value: js.Any, trigger: blur): js.Promise[_] = js.native
+  @JSName("asyncValidate")
+  def asyncValidate_blur(name: String, value: js.UndefOr[scala.Nothing], trigger: blur): js.Promise[_] = js.native
+  @JSName("asyncValidate")
   def asyncValidate_blur(name: String, value: js.Any, trigger: blur): js.Promise[_] = js.native
+  @JSName("asyncValidate")
+  def asyncValidate_change(name: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], trigger: change): js.Promise[_] = js.native
+  @JSName("asyncValidate")
+  def asyncValidate_change(name: js.UndefOr[scala.Nothing], value: js.Any, trigger: change): js.Promise[_] = js.native
+  @JSName("asyncValidate")
+  def asyncValidate_change(name: String, value: js.UndefOr[scala.Nothing], trigger: change): js.Promise[_] = js.native
   @JSName("asyncValidate")
   def asyncValidate_change(name: String, value: js.Any, trigger: change): js.Promise[_] = js.native
   def blur(name: String, value: js.Any): Unit = js.native
@@ -25,6 +38,12 @@ trait ReduxFormContext extends js.Object {
   def focus(name: String): Unit = js.native
   def getValues(): js.Any = js.native
   def register(name: String, `type`: String): Unit = js.native
+  def register(
+    name: String,
+    `type`: String,
+    getValidator: js.UndefOr[scala.Nothing],
+    getWarner: js.Function0[Validator | js.Array[Validator]]
+  ): Unit = js.native
   def register(name: String, `type`: String, getValidator: js.Function0[Validator | js.Array[Validator]]): Unit = js.native
   def register(
     name: String,

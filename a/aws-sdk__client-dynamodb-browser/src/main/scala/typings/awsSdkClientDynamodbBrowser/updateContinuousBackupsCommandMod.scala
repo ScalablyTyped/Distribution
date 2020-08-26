@@ -26,16 +26,9 @@ object updateContinuousBackupsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: UpdateContinuousBackupsInput) = this()
-    /* CompleteClass */
-    override val input: UpdateContinuousBackupsInput = js.native
     val middlewareStack: MiddlewareStack[UpdateContinuousBackupsInput, UpdateContinuousBackupsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[UpdateContinuousBackupsInput, UpdateContinuousBackupsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[UpdateContinuousBackupsInput, UpdateContinuousBackupsOutput] = js.native
   }

@@ -47,7 +47,6 @@ object clientSideNodeManagerMod extends js.Object {
     var selectionController: js.Any = js.native
     var suppressParentsInRowNodes: js.Any = js.native
     def addItems(items: js.Any): js.Array[RowNode] = js.native
-    /* private */ def addRowNode(data: js.Any): js.Any = js.native
     /* private */ def addRowNode(data: js.Any, index: js.Any): js.Any = js.native
     /* private */ def createNode(dataItem: js.Any, parent: js.Any, level: js.Any): js.Any = js.native
     def getCopyOfNodesMap(): StringDictionary[RowNode] = js.native

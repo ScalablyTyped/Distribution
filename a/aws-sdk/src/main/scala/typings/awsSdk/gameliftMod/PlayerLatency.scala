@@ -22,16 +22,34 @@ trait PlayerLatency extends js.Object {
 
 object PlayerLatency {
   @scala.inline
-  def apply(
-    LatencyInMilliseconds: js.UndefOr[Float] = js.undefined,
-    PlayerId: NonZeroAndMaxString = null,
-    RegionIdentifier: NonZeroAndMaxString = null
-  ): PlayerLatency = {
+  def apply(): PlayerLatency = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(LatencyInMilliseconds)) __obj.updateDynamic("LatencyInMilliseconds")(LatencyInMilliseconds.get.asInstanceOf[js.Any])
-    if (PlayerId != null) __obj.updateDynamic("PlayerId")(PlayerId.asInstanceOf[js.Any])
-    if (RegionIdentifier != null) __obj.updateDynamic("RegionIdentifier")(RegionIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerLatency]
   }
+  @scala.inline
+  implicit class PlayerLatencyOps[Self <: PlayerLatency] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLatencyInMilliseconds(value: Float): Self = this.set("LatencyInMilliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatencyInMilliseconds: Self = this.set("LatencyInMilliseconds", js.undefined)
+    @scala.inline
+    def setPlayerId(value: NonZeroAndMaxString): Self = this.set("PlayerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayerId: Self = this.set("PlayerId", js.undefined)
+    @scala.inline
+    def setRegionIdentifier(value: NonZeroAndMaxString): Self = this.set("RegionIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionIdentifier: Self = this.set("RegionIdentifier", js.undefined)
+  }
+  
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "TryCatchStmt")
 @js.native
 class TryCatchStmt protected ()
-  extends typings.angularCompiler.publicApiMod.TryCatchStmt {
+  extends typings.angularCompiler.compilerMod.TryCatchStmt {
   def this(
     bodyStmts: js.Array[typings.angularCompiler.outputAstMod.Statement],
     catchStmts: js.Array[typings.angularCompiler.outputAstMod.Statement]

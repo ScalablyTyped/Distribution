@@ -6,41 +6,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputLayerArgs extends js.Object {
   /** Batch input shape, including the batch axis. */
-  var batchInputShape: js.UndefOr[Shape] = js.undefined
+  var batchInputShape: js.UndefOr[Shape] = js.native
   /** Optional input batch size (integer or null). */
-  var batchSize: js.UndefOr[Double] = js.undefined
+  var batchSize: js.UndefOr[Double] = js.native
   /** Datatype of the input.  */
-  var dtype: js.UndefOr[DataType] = js.undefined
+  var dtype: js.UndefOr[DataType] = js.native
   /** Input shape, not including the batch axis. */
-  var inputShape: js.UndefOr[Shape] = js.undefined
+  var inputShape: js.UndefOr[Shape] = js.native
   /** Name of the layer. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Whether the placeholder created is meant to be sparse.
     */
-  var sparse: js.UndefOr[Boolean] = js.undefined
+  var sparse: js.UndefOr[Boolean] = js.native
 }
 
 object InputLayerArgs {
   @scala.inline
-  def apply(
-    batchInputShape: Shape = null,
-    batchSize: js.UndefOr[Double] = js.undefined,
-    dtype: DataType = null,
-    inputShape: Shape = null,
-    name: String = null,
-    sparse: js.UndefOr[Boolean] = js.undefined
-  ): InputLayerArgs = {
+  def apply(): InputLayerArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputLayerArgs]
   }
+  @scala.inline
+  implicit class InputLayerArgsOps[Self <: InputLayerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchInputShapeVarargs(value: (Null | Double)*): Self = this.set("batchInputShape", js.Array(value :_*))
+    @scala.inline
+    def setBatchInputShape(value: Shape): Self = this.set("batchInputShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchInputShape: Self = this.set("batchInputShape", js.undefined)
+    @scala.inline
+    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    @scala.inline
+    def setDtype(value: DataType): Self = this.set("dtype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDtype: Self = this.set("dtype", js.undefined)
+    @scala.inline
+    def setInputShapeVarargs(value: (Null | Double)*): Self = this.set("inputShape", js.Array(value :_*))
+    @scala.inline
+    def setInputShape(value: Shape): Self = this.set("inputShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputShape: Self = this.set("inputShape", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSparse(value: Boolean): Self = this.set("sparse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparse: Self = this.set("sparse", js.undefined)
+  }
+  
 }
 

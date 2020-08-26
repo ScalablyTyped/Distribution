@@ -28,6 +28,7 @@ class ResourcePostalcodes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPostalCode] = js.native
   def get(callback: BodyResponseCallback[SchemaPostalCode]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPostalCode] = js.native
   def get(params: ParamsResourcePostalcodesGet): GaxiosPromise[SchemaPostalCode] = js.native
   def get(params: ParamsResourcePostalcodesGet, callback: BodyResponseCallback[SchemaPostalCode]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourcePostalcodes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPostalCodesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPostalCodesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPostalCodesListResponse] = js.native
   def list(params: ParamsResourcePostalcodesList): GaxiosPromise[SchemaPostalCodesListResponse] = js.native
   def list(
     params: ParamsResourcePostalcodesList,

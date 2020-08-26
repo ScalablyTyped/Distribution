@@ -5,16 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IScrollablePaneContext extends js.Object {
-  var scrollablePane: js.UndefOr[AddSticky] = js.undefined
+  var scrollablePane: js.UndefOr[AddSticky] = js.native
 }
 
 object IScrollablePaneContext {
   @scala.inline
-  def apply(scrollablePane: AddSticky = null): IScrollablePaneContext = {
+  def apply(): IScrollablePaneContext = {
     val __obj = js.Dynamic.literal()
-    if (scrollablePane != null) __obj.updateDynamic("scrollablePane")(scrollablePane.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScrollablePaneContext]
   }
+  @scala.inline
+  implicit class IScrollablePaneContextOps[Self <: IScrollablePaneContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScrollablePane(value: AddSticky): Self = this.set("scrollablePane", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollablePane: Self = this.set("scrollablePane", js.undefined)
+  }
+  
 }
 

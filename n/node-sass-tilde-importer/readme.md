@@ -12,7 +12,7 @@ A node-sass custom importer which turns ~ into absolute paths to the nearest par
 | Keywords           | node-sass, scss, sass, tilde, webpack, sass-loader, node_modules |
 | # releases         | 2 |
 | # dependents       | 52 |
-| # downloads        | 10785848 |
+| # downloads        | 12718496 |
 | # stars            | 1 |
 
 ## Links

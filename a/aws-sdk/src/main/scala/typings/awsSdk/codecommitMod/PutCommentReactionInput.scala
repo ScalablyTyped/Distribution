@@ -22,5 +22,22 @@ object PutCommentReactionInput {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any], reactionValue = reactionValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutCommentReactionInput]
   }
+  @scala.inline
+  implicit class PutCommentReactionInputOps[Self <: PutCommentReactionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommentId(value: CommentId): Self = this.set("commentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReactionValue(value: ReactionValue): Self = this.set("reactionValue", value.asInstanceOf[js.Any])
+  }
+  
 }
 

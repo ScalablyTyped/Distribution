@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__line
 
-Typings are for version 0.61.1
+Typings are for version 0.62.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/line.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/line)
@@ -10,9 +10,9 @@ Typings are for version 0.61.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/line |
 | Keywords           | nivo, dataviz, react, d3, charts, line-chart |
-| # releases         | 35 |
+| # releases         | 37 |
 | # dependents       | 14 |
-| # downloads        | 663701 |
+| # downloads        | 713633 |
 | # stars            | 0 |
 
 ## Links

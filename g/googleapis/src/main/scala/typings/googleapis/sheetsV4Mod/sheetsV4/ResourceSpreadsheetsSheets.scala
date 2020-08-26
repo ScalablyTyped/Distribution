@@ -90,6 +90,7 @@ class ResourceSpreadsheetsSheets protected () extends js.Object {
     */
   def copyTo(): GaxiosPromise[SchemaSheetProperties] = js.native
   def copyTo(callback: BodyResponseCallback[SchemaSheetProperties]): Unit = js.native
+  def copyTo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSheetProperties] = js.native
   def copyTo(params: ParamsResourceSpreadsheetsSheetsCopyto): GaxiosPromise[SchemaSheetProperties] = js.native
   def copyTo(
     params: ParamsResourceSpreadsheetsSheetsCopyto,

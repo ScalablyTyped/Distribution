@@ -61,6 +61,12 @@ trait Document extends js.Object {
     handler: js.Any,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
@@ -85,6 +91,10 @@ trait Document extends js.Object {
     */
   def getActiveViewAsync(): Unit = js.native
   def getActiveViewAsync(callback: js.Function1[/* result */ AsyncResult[edit | read], Unit]): Unit = js.native
+  def getActiveViewAsync(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[edit | read], Unit]
+  ): Unit = js.native
   def getActiveViewAsync(options: AsyncContextOptions): Unit = js.native
   def getActiveViewAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[edit | read], Unit]): Unit = js.native
   /**
@@ -123,6 +133,11 @@ trait Document extends js.Object {
     */
   def getFileAsync(fileType: FileType): Unit = js.native
   def getFileAsync(fileType: FileType, callback: js.Function1[/* result */ AsyncResult[File], Unit]): Unit = js.native
+  def getFileAsync(
+    fileType: FileType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[File], Unit]
+  ): Unit = js.native
   def getFileAsync(fileType: FileType, options: GetFileOptions): Unit = js.native
   def getFileAsync(
     fileType: FileType,
@@ -144,6 +159,10 @@ trait Document extends js.Object {
     */
   def getFilePropertiesAsync(): Unit = js.native
   def getFilePropertiesAsync(callback: js.Function1[/* result */ AsyncResult[FileProperties], Unit]): Unit = js.native
+  def getFilePropertiesAsync(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[FileProperties], Unit]
+  ): Unit = js.native
   def getFilePropertiesAsync(options: AsyncContextOptions): Unit = js.native
   def getFilePropertiesAsync(
     options: AsyncContextOptions,
@@ -161,6 +180,7 @@ trait Document extends js.Object {
     */
   def getMaxResourceIndexAsync(): Unit = js.native
   def getMaxResourceIndexAsync(callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
+  def getMaxResourceIndexAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
   def getMaxResourceIndexAsync(options: AsyncContextOptions): Unit = js.native
   def getMaxResourceIndexAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
   /**
@@ -175,6 +195,7 @@ trait Document extends js.Object {
     */
   def getMaxTaskIndexAsync(): Unit = js.native
   def getMaxTaskIndexAsync(callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
+  def getMaxTaskIndexAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
   def getMaxTaskIndexAsync(options: AsyncContextOptions): Unit = js.native
   def getMaxTaskIndexAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
   /**
@@ -186,6 +207,11 @@ trait Document extends js.Object {
     */
   def getProjectFieldAsync(fieldId: Double): Unit = js.native
   def getProjectFieldAsync(fieldId: Double, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
+  def getProjectFieldAsync(
+    fieldId: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[_], Unit]
+  ): Unit = js.native
   def getProjectFieldAsync(fieldId: Double, options: AsyncContextOptions): Unit = js.native
   def getProjectFieldAsync(
     fieldId: Double,
@@ -205,6 +231,11 @@ trait Document extends js.Object {
     */
   def getResourceByIndexAsync(resourceIndex: Double): Unit = js.native
   def getResourceByIndexAsync(resourceIndex: Double, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getResourceByIndexAsync(
+    resourceIndex: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[String], Unit]
+  ): Unit = js.native
   def getResourceByIndexAsync(resourceIndex: Double, options: AsyncContextOptions): Unit = js.native
   def getResourceByIndexAsync(
     resourceIndex: Double,
@@ -224,6 +255,12 @@ trait Document extends js.Object {
   def getResourceFieldAsync(
     resourceId: String,
     fieldId: Double,
+    callback: js.Function1[/* result */ AsyncResult[String], Unit]
+  ): Unit = js.native
+  def getResourceFieldAsync(
+    resourceId: String,
+    fieldId: Double,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* result */ AsyncResult[String], Unit]
   ): Unit = js.native
   def getResourceFieldAsync(resourceId: String, fieldId: Double, options: AsyncContextOptions): Unit = js.native
@@ -326,6 +363,11 @@ trait Document extends js.Object {
     */
   def getSelectedDataAsync[T](coercionType: CoercionType): Unit = js.native
   def getSelectedDataAsync[T](coercionType: CoercionType, callback: js.Function1[/* result */ AsyncResult[T], Unit]): Unit = js.native
+  def getSelectedDataAsync[T](
+    coercionType: CoercionType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[T], Unit]
+  ): Unit = js.native
   def getSelectedDataAsync[T](coercionType: CoercionType, options: GetSelectedDataOptions): Unit = js.native
   def getSelectedDataAsync[T](
     coercionType: CoercionType,
@@ -341,6 +383,7 @@ trait Document extends js.Object {
     */
   def getSelectedResourceAsync(): Unit = js.native
   def getSelectedResourceAsync(callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getSelectedResourceAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getSelectedResourceAsync(options: AsyncContextOptions): Unit = js.native
   def getSelectedResourceAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   /**
@@ -352,6 +395,7 @@ trait Document extends js.Object {
     */
   def getSelectedTaskAsync(): Unit = js.native
   def getSelectedTaskAsync(callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getSelectedTaskAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getSelectedTaskAsync(options: AsyncContextOptions): Unit = js.native
   def getSelectedTaskAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   /**
@@ -365,6 +409,7 @@ trait Document extends js.Object {
     */
   def getSelectedViewAsync(): Unit = js.native
   def getSelectedViewAsync(callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
+  def getSelectedViewAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
   def getSelectedViewAsync(options: AsyncContextOptions): Unit = js.native
   def getSelectedViewAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
   /**
@@ -380,6 +425,11 @@ trait Document extends js.Object {
     */
   def getTaskAsync(taskId: String): Unit = js.native
   def getTaskAsync(taskId: String, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
+  def getTaskAsync(
+    taskId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[_], Unit]
+  ): Unit = js.native
   def getTaskAsync(taskId: String, options: AsyncContextOptions): Unit = js.native
   def getTaskAsync(
     taskId: String,
@@ -399,6 +449,11 @@ trait Document extends js.Object {
     */
   def getTaskByIndexAsync(taskIndex: Double): Unit = js.native
   def getTaskByIndexAsync(taskIndex: Double, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getTaskByIndexAsync(
+    taskIndex: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[String], Unit]
+  ): Unit = js.native
   def getTaskByIndexAsync(taskIndex: Double, options: AsyncContextOptions): Unit = js.native
   def getTaskByIndexAsync(
     taskIndex: Double,
@@ -416,6 +471,12 @@ trait Document extends js.Object {
     */
   def getTaskFieldAsync(taskId: String, fieldId: Double): Unit = js.native
   def getTaskFieldAsync(taskId: String, fieldId: Double, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
+  def getTaskFieldAsync(
+    taskId: String,
+    fieldId: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[_], Unit]
+  ): Unit = js.native
   def getTaskFieldAsync(taskId: String, fieldId: Double, options: AsyncContextOptions): Unit = js.native
   def getTaskFieldAsync(
     taskId: String,
@@ -434,6 +495,7 @@ trait Document extends js.Object {
     */
   def getWSSUrlAsync(): Unit = js.native
   def getWSSUrlAsync(callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
+  def getWSSUrlAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
   def getWSSUrlAsync(options: AsyncContextOptions): Unit = js.native
   def getWSSUrlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
   /**
@@ -464,6 +526,12 @@ trait Document extends js.Object {
     */
   def goToByIdAsync(id: String, goToType: GoToType): Unit = js.native
   def goToByIdAsync(id: String, goToType: GoToType, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
+  def goToByIdAsync(
+    id: String,
+    goToType: GoToType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[_], Unit]
+  ): Unit = js.native
   def goToByIdAsync(id: String, goToType: GoToType, options: GoToByIdOptions): Unit = js.native
   def goToByIdAsync(
     id: String,
@@ -473,6 +541,12 @@ trait Document extends js.Object {
   ): Unit = js.native
   def goToByIdAsync(id: Double, goToType: GoToType): Unit = js.native
   def goToByIdAsync(id: Double, goToType: GoToType, callback: js.Function1[/* result */ AsyncResult[_], Unit]): Unit = js.native
+  def goToByIdAsync(
+    id: Double,
+    goToType: GoToType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[_], Unit]
+  ): Unit = js.native
   def goToByIdAsync(id: Double, goToType: GoToType, options: GoToByIdOptions): Unit = js.native
   def goToByIdAsync(
     id: Double,
@@ -493,6 +567,11 @@ trait Document extends js.Object {
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: RemoveHandlerOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
@@ -518,6 +597,13 @@ trait Document extends js.Object {
     fieldValue: String,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def setResourceFieldAsync(
+    resourceId: String,
+    fieldId: Double,
+    fieldValue: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setResourceFieldAsync(resourceId: String, fieldId: Double, fieldValue: String, options: AsyncContextOptions): Unit = js.native
   def setResourceFieldAsync(
     resourceId: String,
@@ -531,6 +617,13 @@ trait Document extends js.Object {
     resourceId: String,
     fieldId: Double,
     fieldValue: js.Object,
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def setResourceFieldAsync(
+    resourceId: String,
+    fieldId: Double,
+    fieldValue: js.Object,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setResourceFieldAsync(resourceId: String, fieldId: Double, fieldValue: js.Object, options: AsyncContextOptions): Unit = js.native
@@ -548,6 +641,13 @@ trait Document extends js.Object {
     fieldValue: Boolean,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def setResourceFieldAsync(
+    resourceId: String,
+    fieldId: Double,
+    fieldValue: Boolean,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setResourceFieldAsync(resourceId: String, fieldId: Double, fieldValue: Boolean, options: AsyncContextOptions): Unit = js.native
   def setResourceFieldAsync(
     resourceId: String,
@@ -561,6 +661,13 @@ trait Document extends js.Object {
     resourceId: String,
     fieldId: Double,
     fieldValue: Double,
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def setResourceFieldAsync(
+    resourceId: String,
+    fieldId: Double,
+    fieldValue: Double,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setResourceFieldAsync(resourceId: String, fieldId: Double, fieldValue: Double, options: AsyncContextOptions): Unit = js.native
@@ -771,6 +878,11 @@ trait Document extends js.Object {
     */
   def setSelectedDataAsync(data: String): Unit = js.native
   def setSelectedDataAsync(data: String, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setSelectedDataAsync(
+    data: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setSelectedDataAsync(data: String, options: SetSelectedDataOptions): Unit = js.native
   def setSelectedDataAsync(
     data: String,
@@ -779,6 +891,11 @@ trait Document extends js.Object {
   ): Unit = js.native
   def setSelectedDataAsync(data: js.Array[js.Array[_]]): Unit = js.native
   def setSelectedDataAsync(data: js.Array[js.Array[_]], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setSelectedDataAsync(
+    data: js.Array[js.Array[_]],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setSelectedDataAsync(data: js.Array[js.Array[_]], options: SetSelectedDataOptions): Unit = js.native
   def setSelectedDataAsync(
     data: js.Array[js.Array[_]],
@@ -787,6 +904,11 @@ trait Document extends js.Object {
   ): Unit = js.native
   def setSelectedDataAsync(data: TableData): Unit = js.native
   def setSelectedDataAsync(data: TableData, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setSelectedDataAsync(
+    data: TableData,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setSelectedDataAsync(data: TableData, options: SetSelectedDataOptions): Unit = js.native
   def setSelectedDataAsync(
     data: TableData,
@@ -812,6 +934,13 @@ trait Document extends js.Object {
     fieldValue: String,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def setTaskFieldAsync(
+    taskId: String,
+    fieldId: Double,
+    fieldValue: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setTaskFieldAsync(taskId: String, fieldId: Double, fieldValue: String, options: AsyncContextOptions): Unit = js.native
   def setTaskFieldAsync(
     taskId: String,
@@ -825,6 +954,13 @@ trait Document extends js.Object {
     taskId: String,
     fieldId: Double,
     fieldValue: js.Object,
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def setTaskFieldAsync(
+    taskId: String,
+    fieldId: Double,
+    fieldValue: js.Object,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setTaskFieldAsync(taskId: String, fieldId: Double, fieldValue: js.Object, options: AsyncContextOptions): Unit = js.native
@@ -842,6 +978,13 @@ trait Document extends js.Object {
     fieldValue: Boolean,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def setTaskFieldAsync(
+    taskId: String,
+    fieldId: Double,
+    fieldValue: Boolean,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setTaskFieldAsync(taskId: String, fieldId: Double, fieldValue: Boolean, options: AsyncContextOptions): Unit = js.native
   def setTaskFieldAsync(
     taskId: String,
@@ -855,6 +998,13 @@ trait Document extends js.Object {
     taskId: String,
     fieldId: Double,
     fieldValue: Double,
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def setTaskFieldAsync(
+    taskId: String,
+    fieldId: Double,
+    fieldValue: Double,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setTaskFieldAsync(taskId: String, fieldId: Double, fieldValue: Double, options: AsyncContextOptions): Unit = js.native

@@ -118,7 +118,7 @@ trait JQuery extends js.Object {
   def sidenav(options: PartialSidenavOptionsDraggable): JQuery = js.native
   def slider(): JQuery = js.native
   def slider(
-    method: /* keyof materialize-css.anon.PickSliderpausestartnextp */ start | next | prev | destroy | pause
+    method: /* keyof materialize-css.anon.PickSliderpausestartnextp */ next | pause | start | destroy | prev
   ): JQuery = js.native
   def slider(options: PartialSliderOptions): JQuery = js.native
   def tabs(): JQuery = js.native

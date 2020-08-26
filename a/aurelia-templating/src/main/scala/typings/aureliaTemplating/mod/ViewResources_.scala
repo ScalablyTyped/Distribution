@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 class ViewResources_ () extends js.Object {
   def this(parent: ViewResources_) = this()
+  def this(parent: js.UndefOr[scala.Nothing], viewUrl: String) = this()
   def this(parent: ViewResources_, viewUrl: String) = this()
   /**
     * A custom binding language used in the view.
@@ -31,6 +32,7 @@ class ViewResources_ () extends js.Object {
     * @returns {HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource}
     */
   def autoRegister(): js.Any = js.native
+  def autoRegister(container: js.UndefOr[scala.Nothing], impl: js.Any): js.Any = js.native
   def autoRegister(container: js.Any): js.Any = js.native
   def autoRegister(container: js.Any, impl: js.Any): js.Any = js.native
   /**

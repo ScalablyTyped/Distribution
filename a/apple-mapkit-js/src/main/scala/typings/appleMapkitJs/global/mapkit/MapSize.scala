@@ -21,27 +21,5 @@ class MapSize protected ()
     * north-south axis of the map projection.
     */
   def this(width: Double, height: Double) = this()
-  /**
-    * The height value, in map point units.
-    */
-  /* CompleteClass */
-  override var height: Double = js.native
-  /**
-    * The width value, in map point units.
-    */
-  /* CompleteClass */
-  override var width: Double = js.native
-  /**
-    * Returns a copy of a map size.
-    */
-  /* CompleteClass */
-  override def copy(): typings.appleMapkitJs.mapkit.MapSize = js.native
-  /**
-    * Indicates whether two map sizes are equal.
-    *
-    * @param anotherSize The map size to equate to.
-    */
-  /* CompleteClass */
-  override def equals(anotherSize: typings.appleMapkitJs.mapkit.MapSize): Boolean = js.native
 }
 

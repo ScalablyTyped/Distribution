@@ -2,7 +2,6 @@ package typings.firebaseDatabase.eventMod
 
 import typings.firebaseDatabase.dataSnapshotMod.DataSnapshot
 import typings.firebaseDatabase.eventRegistrationMod.EventRegistration
-import typings.firebaseDatabase.pathMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,20 +26,5 @@ class DataEvent protected () extends Event {
   var eventType: EventType = js.native
   var prevName: js.UndefOr[String | Null] = js.native
   var snapshot: DataSnapshot = js.native
-  /**
-    * @return {!function()}
-    */
-  /* CompleteClass */
-  override def getEventRunner(): js.Function0[Unit] = js.native
-  /**
-    * @return {!string}
-    */
-  /* CompleteClass */
-  override def getEventType(): String = js.native
-  /**
-    * @return {!Path}
-    */
-  /* CompleteClass */
-  override def getPath(): Path = js.native
 }
 

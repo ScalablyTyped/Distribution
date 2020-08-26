@@ -45,6 +45,7 @@ class FeatureLayer_ protected () extends Layer {
     */
   // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
   def addFeature(feature: js.Any): this.type = js.native
+  def addFeature(feature: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def addFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
   def addFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
   /**
@@ -62,9 +63,11 @@ class FeatureLayer_ protected () extends Layer {
     * checking the metadata of your service under capabilities.
     */
   def deleteFeature(id: String): this.type = js.native
+  def deleteFeature(id: String, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def deleteFeature(id: String, callback: ResponseCallbackHandler): this.type = js.native
   def deleteFeature(id: String, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
   def deleteFeature(id: Double): this.type = js.native
+  def deleteFeature(id: Double, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def deleteFeature(id: Double, callback: ResponseCallbackHandler): this.type = js.native
   def deleteFeature(id: Double, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
   /**
@@ -78,6 +81,7 @@ class FeatureLayer_ protected () extends Layer {
     * checking the metadata of your service under capabilities.
     */
   def deleteFeatures(ids: js.Array[Double | String]): this.type = js.native
+  def deleteFeatures(ids: js.Array[Double | String], callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler): this.type = js.native
   def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
   /**
@@ -160,6 +164,7 @@ class FeatureLayer_ protected () extends Layer {
     * timeFilterMode is set to 'server'. Also accepts function context as the last argument.
     */
   def setTimeRange(from: Date, to: Date): this.type = js.native
+  def setTimeRange(from: Date, to: Date, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def setTimeRange(from: Date, to: Date, callback: FeatureCallbackHandler): this.type = js.native
   def setTimeRange(from: Date, to: Date, callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
   /**
@@ -167,6 +172,7 @@ class FeatureLayer_ protected () extends Layer {
     * callback and function context.
     */
   def setWhere(where: String): this.type = js.native
+  def setWhere(where: String, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def setWhere(where: String, callback: FeatureCallbackHandler): this.type = js.native
   def setWhere(where: String, callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
   /**
@@ -180,6 +186,7 @@ class FeatureLayer_ protected () extends Layer {
     */
   // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
   def updateFeature(feature: js.Any): this.type = js.native
+  def updateFeature(feature: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def updateFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
   def updateFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
 }

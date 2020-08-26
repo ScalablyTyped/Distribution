@@ -25,9 +25,19 @@ trait Workspace extends js.Object {
   def openFile(uri: String): js.Promise[TextEditor | Null] = js.native
   def relativizePath(path: String): String = js.native
   def showActionPanel(message: String): Unit = js.native
+  def showActionPanel(
+    message: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* buttonIndex */ Double | Null, Unit]
+  ): Unit = js.native
   def showActionPanel(message: String, options: Buttons): Unit = js.native
   def showActionPanel(message: String, options: Buttons, callback: js.Function1[/* buttonIndex */ Double | Null, Unit]): Unit = js.native
   def showChoicePalette(choices: js.Array[String]): Unit = js.native
+  def showChoicePalette(
+    choices: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* choice */ String | Null, /* choiceIndex */ Double | Null, Unit]
+  ): Unit = js.native
   def showChoicePalette(choices: js.Array[String], options: Placeholder): Unit = js.native
   def showChoicePalette(
     choices: js.Array[String],
@@ -36,6 +46,11 @@ trait Workspace extends js.Object {
   ): Unit = js.native
   def showErrorMessage(message: String): Unit = js.native
   def showFileChooser(message: String): Unit = js.native
+  def showFileChooser(
+    message: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* paths */ js.Array[String] | Null, Unit]
+  ): Unit = js.native
   def showFileChooser(message: String, options: AllowDirectories): Unit = js.native
   def showFileChooser(
     message: String,
@@ -44,9 +59,19 @@ trait Workspace extends js.Object {
   ): Unit = js.native
   def showInformativeMessage(message: String): Unit = js.native
   def showInputPalette(message: String): Unit = js.native
+  def showInputPalette(
+    message: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* value */ String | Null, Unit]
+  ): Unit = js.native
   def showInputPalette(message: String, options: Placeholder): Unit = js.native
   def showInputPalette(message: String, options: Placeholder, callback: js.Function1[/* value */ String | Null, Unit]): Unit = js.native
   def showInputPanel(message: String): Unit = js.native
+  def showInputPanel(
+    message: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* value */ String | Null, Unit]
+  ): Unit = js.native
   def showInputPanel(message: String, options: Label): Unit = js.native
   def showInputPanel(message: String, options: Label, callback: js.Function1[/* value */ String | Null, Unit]): Unit = js.native
   def showWarningMessage(message: String): Unit = js.native

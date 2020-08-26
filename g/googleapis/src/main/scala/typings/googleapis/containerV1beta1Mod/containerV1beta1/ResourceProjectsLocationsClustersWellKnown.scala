@@ -31,6 +31,7 @@ class ResourceProjectsLocationsClustersWellKnown protected () extends js.Object 
     */
   def getOpenidConfiguration(): GaxiosPromise[SchemaGetOpenIDConfigResponse] = js.native
   def getOpenidConfiguration(callback: BodyResponseCallback[SchemaGetOpenIDConfigResponse]): Unit = js.native
+  def getOpenidConfiguration(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOpenIDConfigResponse] = js.native
   def getOpenidConfiguration(params: ParamsResourceProjectsLocationsClustersWellKnownGetopenidconfiguration): GaxiosPromise[SchemaGetOpenIDConfigResponse] = js.native
   def getOpenidConfiguration(
     params: ParamsResourceProjectsLocationsClustersWellKnownGetopenidconfiguration,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pbkdf2
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 This library provides the functionality of PBKDF2 with the ability to use any supported hashing algorithm returned from crypto.getHashes()

@@ -28,6 +28,7 @@ object Actions extends js.Object {
     * @param offsetY Optional vertical offset from the position. Default 0.
     */
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer): G = js.native
+  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double): G = js.native
   def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double, offsetY: Double): G = js.native
   /**
@@ -44,7 +45,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def Angle[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def Angle[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -99,7 +110,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def IncAlpha[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def IncAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -116,7 +137,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def IncX[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def IncX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -135,9 +166,183 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double, index: integer): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double, index: integer): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = js.native
+  def IncXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = js.native
   def IncXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = js.native
   /**
@@ -154,7 +359,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def IncY[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def IncY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -167,6 +382,7 @@ object Actions extends js.Object {
     * @param endAngle Optional angle to stop position at, in radians. Default 6.28.
     */
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle): G = js.native
+  def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: js.UndefOr[scala.Nothing], endAngle: Double): G = js.native
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double): G = js.native
   def PlaceOnCircle[G /* <: js.Array[GameObject] */](items: G, circle: Circle, startAngle: Double, endAngle: Double): G = js.native
   /**
@@ -179,6 +395,7 @@ object Actions extends js.Object {
     * @param endAngle Optional angle to stop position at, in radians. Default 6.28.
     */
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse): G = js.native
+  def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: js.UndefOr[scala.Nothing], endAngle: Double): G = js.native
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double): G = js.native
   def PlaceOnEllipse[G /* <: js.Array[GameObject] */](items: G, ellipse: Ellipse, startAngle: Double, endAngle: Double): G = js.native
   /**
@@ -232,7 +449,32 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = js.native
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](
+    items: G,
+    key: String,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](
+    items: G,
+    key: String,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = js.native
+  def PropertyValueInc[G /* <: js.Array[GameObject] */](
+    items: G,
+    key: String,
+    value: Double,
+    step: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = js.native
   def PropertyValueInc[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -250,7 +492,32 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double): G = js.native
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](
+    items: G,
+    key: String,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](
+    items: G,
+    key: String,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double): G = js.native
+  def PropertyValueSet[G /* <: js.Array[GameObject] */](
+    items: G,
+    key: String,
+    value: Double,
+    step: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer): G = js.native
   def PropertyValueSet[G /* <: js.Array[GameObject] */](items: G, key: String, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -305,7 +572,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def Rotate[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def Rotate[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -337,7 +614,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def ScaleX[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def ScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -356,9 +643,210 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = js.native
+  def ScaleXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = js.native
   def ScaleXY[G /* <: js.Array[GameObject] */](
     items: G,
@@ -383,7 +871,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def ScaleY[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def ScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -400,7 +898,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetAlpha[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetAlpha[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -416,6 +924,7 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer): G = js.native
   def SetBlendMode[G /* <: js.Array[GameObject] */](items: G, value: Double, index: integer, direction: integer): G = js.native
   /**
@@ -432,7 +941,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetDepth[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetDepth[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -458,9 +977,210 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double): G = js.native
+  def SetOrigin[G /* <: js.Array[GameObject] */](
+    items: G,
+    originX: Double,
+    originY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](items: G, originX: Double, originY: Double, stepX: Double, stepY: Double, index: integer): G = js.native
   def SetOrigin[G /* <: js.Array[GameObject] */](
     items: G,
@@ -485,7 +1205,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetRotation[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetRotation[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -504,9 +1234,210 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): G = js.native
+  def SetScale[G /* <: js.Array[GameObject] */](
+    items: G,
+    scaleX: Double,
+    scaleY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
   def SetScale[G /* <: js.Array[GameObject] */](items: G, scaleX: Double, scaleY: Double, stepX: Double, stepY: Double, index: integer): G = js.native
   def SetScale[G /* <: js.Array[GameObject] */](
     items: G,
@@ -531,7 +1462,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetScaleX[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetScaleX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -548,7 +1489,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetScaleY[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -567,9 +1518,222 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double, stepY: Double): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
   def SetScrollFactor[G /* <: js.Array[GameObject] */](
     items: G,
     scrollFactorX: Double,
@@ -601,7 +1765,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -618,7 +1792,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -630,7 +1814,29 @@ object Actions extends js.Object {
     * @param bottomRight The tint to be applied to the bottom-right corner of item.
     */
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double): G = js.native
+  def SetTint[G /* <: js.Array[GameObject] */](
+    items: G,
+    topLeft: Double,
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: Double
+  ): G = js.native
+  def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: js.UndefOr[scala.Nothing], bottomLeft: Double): G = js.native
+  def SetTint[G /* <: js.Array[GameObject] */](
+    items: G,
+    topLeft: Double,
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: Double,
+    bottomRight: Double
+  ): G = js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double): G = js.native
+  def SetTint[G /* <: js.Array[GameObject] */](
+    items: G,
+    topLeft: Double,
+    topRight: Double,
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: Double
+  ): G = js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double): G = js.native
   def SetTint[G /* <: js.Array[GameObject] */](items: G, topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): G = js.native
   /**
@@ -644,6 +1850,7 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean): G = js.native
+  def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer): G = js.native
   def SetVisible[G /* <: js.Array[GameObject] */](items: G, value: Boolean, index: integer, direction: integer): G = js.native
   /**
@@ -660,7 +1867,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetX[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -679,9 +1896,183 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double, index: integer): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double, index: integer): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: Double,
+    stepY: js.UndefOr[scala.Nothing],
+    index: integer,
+    direction: integer
+  ): G = js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double): G = js.native
+  def SetXY[G /* <: js.Array[GameObject] */](
+    items: G,
+    x: Double,
+    y: Double,
+    stepX: Double,
+    stepY: Double,
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer): G = js.native
   def SetXY[G /* <: js.Array[GameObject] */](items: G, x: Double, y: Double, stepX: Double, stepY: Double, index: integer, direction: integer): G = js.native
   /**
@@ -698,7 +2089,17 @@ object Actions extends js.Object {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetY[G /* <: js.Array[GameObject] */](
+    items: G,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): G = js.native
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer): G = js.native
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): G = js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): G = js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
@@ -715,6 +2116,7 @@ object Actions extends js.Object {
     * @param output An optional objec to store the final objects position in.
     */
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double): O = js.native
+  def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: js.UndefOr[scala.Nothing], output: O): O = js.native
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer): O = js.native
   def ShiftPosition[G /* <: js.Array[GameObject] */, O /* <: Vector2 */](items: G, x: Double, y: Double, direction: integer, output: O): O = js.native
   /**

@@ -3,7 +3,7 @@ package typings.sipJs
 import org.scalablytyped.runtime.StringDictionary
 import typings.sipJs.anon.Host
 import typings.sipJs.anon.Parsed
-import typings.sipJs.nameAddrHeaderMod.NameAddrHeader
+import typings.sipJs.grammarMod.NameAddrHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

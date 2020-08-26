@@ -17,10 +17,26 @@ trait SchemaGooglePrivacyDlpV2DatastoreKey extends js.Object {
 
 object SchemaGooglePrivacyDlpV2DatastoreKey {
   @scala.inline
-  def apply(entityKey: SchemaGooglePrivacyDlpV2Key = null): SchemaGooglePrivacyDlpV2DatastoreKey = {
+  def apply(): SchemaGooglePrivacyDlpV2DatastoreKey = {
     val __obj = js.Dynamic.literal()
-    if (entityKey != null) __obj.updateDynamic("entityKey")(entityKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DatastoreKey]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2DatastoreKeyOps[Self <: SchemaGooglePrivacyDlpV2DatastoreKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityKey(value: SchemaGooglePrivacyDlpV2Key): Self = this.set("entityKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityKey: Self = this.set("entityKey", js.undefined)
+  }
+  
 }
 

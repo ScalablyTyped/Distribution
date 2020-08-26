@@ -39,15 +39,15 @@ object onDisconnectMod extends js.Object {
       */
     def set(value: js.Any): js.Promise[Unit] = js.native
     def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[Unit] = js.native
-    def setWithPriority(value: js.Any): js.Promise[Unit] = js.native
-    def setWithPriority(value: js.Any, priority: String): js.Promise[Unit] = js.native
-    def setWithPriority(value: js.Any, priority: String, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[Unit] = js.native
     /**
       * @param {*} value
       * @param {number|string|null} priority
       * @param {function(?Error)=} onComplete
       * @return {!firebase.Promise}
       */
+    def setWithPriority(value: js.Any): js.Promise[Unit] = js.native
+    def setWithPriority(value: js.Any, priority: String): js.Promise[Unit] = js.native
+    def setWithPriority(value: js.Any, priority: String, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[Unit] = js.native
     def setWithPriority(value: js.Any, priority: Double): js.Promise[Unit] = js.native
     def setWithPriority(value: js.Any, priority: Double, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[Unit] = js.native
     def setWithPriority(value: js.Any, priority: Null, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[Unit] = js.native

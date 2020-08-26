@@ -25,6 +25,10 @@ class NetworkAcl protected () extends CustomResource {
   def this(name: String, args: NetworkAclArgs) = this()
   def this(name: String, args: NetworkAclArgs, opts: CustomResourceOptions) = this()
   /**
+    * The ARN of the network ACL
+    */
+  val arn: Output_[String] = js.native
+  /**
     * Specifies an egress rule. Parameters defined below.
     */
   val egress: Output_[js.Array[NetworkAclEgress]] = js.native
@@ -43,7 +47,7 @@ class NetworkAcl protected () extends CustomResource {
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The ID of the associated VPC.
     */
@@ -61,8 +65,10 @@ object NetworkAcl extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): NetworkAcl = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NetworkAcl = js.native
   def get(name: String, id: Input[ID], state: NetworkAclState): NetworkAcl = js.native
   def get(name: String, id: Input[ID], state: NetworkAclState, opts: CustomResourceOptions): NetworkAcl = js.native
   /**

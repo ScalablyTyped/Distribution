@@ -15,10 +15,26 @@ trait SchemaChannelContentDetails extends js.Object {
 
 object SchemaChannelContentDetails {
   @scala.inline
-  def apply(relatedPlaylists: Favorites = null): SchemaChannelContentDetails = {
+  def apply(): SchemaChannelContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (relatedPlaylists != null) __obj.updateDynamic("relatedPlaylists")(relatedPlaylists.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChannelContentDetails]
   }
+  @scala.inline
+  implicit class SchemaChannelContentDetailsOps[Self <: SchemaChannelContentDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelatedPlaylists(value: Favorites): Self = this.set("relatedPlaylists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedPlaylists: Self = this.set("relatedPlaylists", js.undefined)
+  }
+  
 }
 

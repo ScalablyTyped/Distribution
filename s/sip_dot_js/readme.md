@@ -1,7 +1,7 @@
 
 # Scala.js typings for sip_dot_js
 
-Typings are for version 0.15.11
+Typings are for version 0.17.1
 
 ## Library description:
 A simple, intuitive, and powerful JavaScript signaling library
@@ -10,9 +10,9 @@ A simple, intuitive, and powerful JavaScript signaling library
 | ------------------ | :-------------: |
 | Full name          | sip.js |
 | Keywords           | sip, webrtc, library, websocket, javascript, typescript |
-| # releases         | 35 |
+| # releases         | 37 |
 | # dependents       | 24 |
-| # downloads        | 202836 |
+| # downloads        | 208044 |
 | # stars            | 1 |
 
 ## Links

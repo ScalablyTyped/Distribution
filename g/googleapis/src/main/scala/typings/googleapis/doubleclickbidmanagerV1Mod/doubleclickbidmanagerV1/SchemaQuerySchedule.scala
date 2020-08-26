@@ -32,18 +32,38 @@ trait SchemaQuerySchedule extends js.Object {
 
 object SchemaQuerySchedule {
   @scala.inline
-  def apply(
-    endTimeMs: String = null,
-    frequency: String = null,
-    nextRunMinuteOfDay: js.UndefOr[Double] = js.undefined,
-    nextRunTimezoneCode: String = null
-  ): SchemaQuerySchedule = {
+  def apply(): SchemaQuerySchedule = {
     val __obj = js.Dynamic.literal()
-    if (endTimeMs != null) __obj.updateDynamic("endTimeMs")(endTimeMs.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (!js.isUndefined(nextRunMinuteOfDay)) __obj.updateDynamic("nextRunMinuteOfDay")(nextRunMinuteOfDay.get.asInstanceOf[js.Any])
-    if (nextRunTimezoneCode != null) __obj.updateDynamic("nextRunTimezoneCode")(nextRunTimezoneCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuerySchedule]
   }
+  @scala.inline
+  implicit class SchemaQueryScheduleOps[Self <: SchemaQuerySchedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTimeMs(value: String): Self = this.set("endTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimeMs: Self = this.set("endTimeMs", js.undefined)
+    @scala.inline
+    def setFrequency(value: String): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    @scala.inline
+    def setNextRunMinuteOfDay(value: Double): Self = this.set("nextRunMinuteOfDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextRunMinuteOfDay: Self = this.set("nextRunMinuteOfDay", js.undefined)
+    @scala.inline
+    def setNextRunTimezoneCode(value: String): Self = this.set("nextRunTimezoneCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextRunTimezoneCode: Self = this.set("nextRunTimezoneCode", js.undefined)
+  }
+  
 }
 

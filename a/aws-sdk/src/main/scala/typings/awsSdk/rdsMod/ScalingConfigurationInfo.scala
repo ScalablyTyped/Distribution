@@ -30,20 +30,42 @@ trait ScalingConfigurationInfo extends js.Object {
 
 object ScalingConfigurationInfo {
   @scala.inline
-  def apply(
-    AutoPause: js.UndefOr[BooleanOptional] = js.undefined,
-    MaxCapacity: js.UndefOr[IntegerOptional] = js.undefined,
-    MinCapacity: js.UndefOr[IntegerOptional] = js.undefined,
-    SecondsUntilAutoPause: js.UndefOr[IntegerOptional] = js.undefined,
-    TimeoutAction: String = null
-  ): ScalingConfigurationInfo = {
+  def apply(): ScalingConfigurationInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoPause)) __obj.updateDynamic("AutoPause")(AutoPause.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinCapacity)) __obj.updateDynamic("MinCapacity")(MinCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SecondsUntilAutoPause)) __obj.updateDynamic("SecondsUntilAutoPause")(SecondsUntilAutoPause.get.asInstanceOf[js.Any])
-    if (TimeoutAction != null) __obj.updateDynamic("TimeoutAction")(TimeoutAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingConfigurationInfo]
   }
+  @scala.inline
+  implicit class ScalingConfigurationInfoOps[Self <: ScalingConfigurationInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoPause(value: BooleanOptional): Self = this.set("AutoPause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPause: Self = this.set("AutoPause", js.undefined)
+    @scala.inline
+    def setMaxCapacity(value: IntegerOptional): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    @scala.inline
+    def setMinCapacity(value: IntegerOptional): Self = this.set("MinCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCapacity: Self = this.set("MinCapacity", js.undefined)
+    @scala.inline
+    def setSecondsUntilAutoPause(value: IntegerOptional): Self = this.set("SecondsUntilAutoPause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondsUntilAutoPause: Self = this.set("SecondsUntilAutoPause", js.undefined)
+    @scala.inline
+    def setTimeoutAction(value: String): Self = this.set("TimeoutAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutAction: Self = this.set("TimeoutAction", js.undefined)
+  }
+  
 }
 

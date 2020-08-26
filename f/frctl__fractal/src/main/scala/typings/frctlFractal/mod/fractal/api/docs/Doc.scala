@@ -24,6 +24,7 @@ class Doc protected () extends Entity {
   def getContent(): js.Promise[String] = js.native
   def getContentSync(): String = js.native
   def render(context: js.Any): js.Promise[String] = js.native
+  def render(context: js.Any, env: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[String] = js.native
   def render(context: js.Any, env: js.Any): js.Promise[String] = js.native
   def render(context: js.Any, env: js.Any, opts: js.Any): js.Promise[String] = js.native
   def toc(): js.Promise[String] = js.native

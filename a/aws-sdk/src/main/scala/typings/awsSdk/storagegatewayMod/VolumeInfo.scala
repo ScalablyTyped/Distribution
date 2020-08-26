@@ -35,24 +35,50 @@ trait VolumeInfo extends js.Object {
 
 object VolumeInfo {
   @scala.inline
-  def apply(
-    GatewayARN: GatewayARN = null,
-    GatewayId: GatewayId = null,
-    VolumeARN: VolumeARN = null,
-    VolumeAttachmentStatus: VolumeAttachmentStatus = null,
-    VolumeId: VolumeId = null,
-    VolumeSizeInBytes: js.UndefOr[long] = js.undefined,
-    VolumeType: VolumeType = null
-  ): VolumeInfo = {
+  def apply(): VolumeInfo = {
     val __obj = js.Dynamic.literal()
-    if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (GatewayId != null) __obj.updateDynamic("GatewayId")(GatewayId.asInstanceOf[js.Any])
-    if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN.asInstanceOf[js.Any])
-    if (VolumeAttachmentStatus != null) __obj.updateDynamic("VolumeAttachmentStatus")(VolumeAttachmentStatus.asInstanceOf[js.Any])
-    if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeSizeInBytes)) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.get.asInstanceOf[js.Any])
-    if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeInfo]
   }
+  @scala.inline
+  implicit class VolumeInfoOps[Self <: VolumeInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    @scala.inline
+    def setGatewayId(value: GatewayId): Self = this.set("GatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayId: Self = this.set("GatewayId", js.undefined)
+    @scala.inline
+    def setVolumeARN(value: VolumeARN): Self = this.set("VolumeARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeARN: Self = this.set("VolumeARN", js.undefined)
+    @scala.inline
+    def setVolumeAttachmentStatus(value: VolumeAttachmentStatus): Self = this.set("VolumeAttachmentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeAttachmentStatus: Self = this.set("VolumeAttachmentStatus", js.undefined)
+    @scala.inline
+    def setVolumeId(value: VolumeId): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
+    @scala.inline
+    def setVolumeSizeInBytes(value: long): Self = this.set("VolumeSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSizeInBytes: Self = this.set("VolumeSizeInBytes", js.undefined)
+    @scala.inline
+    def setVolumeType(value: VolumeType): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+  }
+  
 }
 

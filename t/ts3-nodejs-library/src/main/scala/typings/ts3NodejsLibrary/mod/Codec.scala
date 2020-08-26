@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object Codec extends js.Object {
   /* 3 */ val CELT_MONO: typings.ts3NodejsLibrary.enumMod.Codec.CELT_MONO with Double = js.native
+  /* 5 */ val OPUS_MUSIC: typings.ts3NodejsLibrary.enumMod.Codec.OPUS_MUSIC with Double = js.native
+  /* 4 */ val OPUS_VOICE: typings.ts3NodejsLibrary.enumMod.Codec.OPUS_VOICE with Double = js.native
   /* 0 */ val SPEEX_NARROWBAND: typings.ts3NodejsLibrary.enumMod.Codec.SPEEX_NARROWBAND with Double = js.native
   /* 2 */ val SPEEX_ULTRAWIDEBAND: typings.ts3NodejsLibrary.enumMod.Codec.SPEEX_ULTRAWIDEBAND with Double = js.native
   /* 1 */ val SPEEX_WIDEBAND: typings.ts3NodejsLibrary.enumMod.Codec.SPEEX_WIDEBAND with Double = js.native

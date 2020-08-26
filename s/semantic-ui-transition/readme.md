@@ -12,7 +12,7 @@ Single component release of transition
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 8 |
-| # downloads        | 100655 |
+| # downloads        | 100132 |
 | # stars            | 0 |
 
 ## Links

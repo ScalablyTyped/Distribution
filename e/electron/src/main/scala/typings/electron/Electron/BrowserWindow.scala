@@ -63,7 +63,7 @@ import typings.electron.electronStrings.unmaximize
 import typings.electron.electronStrings.unresponsive
 import typings.electron.electronStrings.window
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,13 +73,22 @@ trait BrowserWindow extends EventEmitter {
   var accessibleTitle: String = js.native
   var autoHideMenuBar: Boolean = js.native
   var closable: Boolean = js.native
+  var documentEdited: Boolean = js.native
   var excludedFromShownWindowsMenu: Boolean = js.native
+  var fullScreen: Boolean = js.native
   var fullScreenable: Boolean = js.native
   val id: Double = js.native
+  var kiosk: Boolean = js.native
   var maximizable: Boolean = js.native
+  var menuBarVisible: Boolean = js.native
   var minimizable: Boolean = js.native
   var movable: Boolean = js.native
+  var representedFilename: String = js.native
   var resizable: Boolean = js.native
+  var shadow: Boolean = js.native
+  var simpleFullScreen: Boolean = js.native
+  var title: String = js.native
+  var visibleOnAllWorkspaces: Boolean = js.native
   val webContents: WebContents_ = js.native
   /**
     * Replacement API for setBrowserView supporting work with multi browser views.
@@ -211,6 +220,10 @@ trait BrowserWindow extends EventEmitter {
     */
   def focus(): Unit = js.native
   def focusOnWebView(): Unit = js.native
+  /**
+    * Gets the background color of the window. See Setting `backgroundColor`.
+    */
+  def getBackgroundColor(): String = js.native
   /**
     * The `bounds` of the window as `Object`.
     */
@@ -353,9 +366,9 @@ trait BrowserWindow extends EventEmitter {
     */
   def isDocumentEdited(): Boolean = js.native
   /**
-    * Returns Boolean - whether the window is enabled.
+    * whether the window is enabled.
     */
-  def isEnabled(): Unit = js.native
+  def isEnabled(): Boolean = js.native
   /**
     * Whether the window is focused.
     */
@@ -956,6 +969,7 @@ trait BrowserWindow extends EventEmitter {
     * can not be focused on.
     */
   def setAlwaysOnTop(flag: Boolean): Unit = js.native
+  def setAlwaysOnTop(flag: Boolean, level: js.UndefOr[scala.Nothing], relativeLevel: Double): Unit = js.native
   @JSName("setAlwaysOnTop")
   def setAlwaysOnTop_floating(flag: Boolean, level: floating): Unit = js.native
   @JSName("setAlwaysOnTop")
@@ -1007,15 +1021,12 @@ trait BrowserWindow extends EventEmitter {
     * Perhaps there are 15 pixels of controls on the left edge, 25 pixels of controls
     * on the right edge and 50 pixels of controls below the player. In order to
     * maintain a 16:9 aspect ratio (standard aspect ratio for HD @1920x1080) within
-    * the player itself we would call this function with arguments of 16/9 and [ 40,
-    * 50 ]. The second argument doesn't care where the extra width and height are
-    * within the content view--only that they exist. Sum any extra width and height
-    * areas you have within the overall content view.
+    * the player itself we would call this function with arguments of 16/9 and {
+    * width: 40, height: 50 }. The second argument doesn't care where the extra width
+    * and height are within the content view--only that they exist. Sum any extra
+    * width and height areas you have within the overall content view.
     *
-    * Calling this function with a value of `0` will remove any previously set aspect
-    * ratios.
-    *
-    * @platform darwin
+    * @platform darwin,linux
     */
   def setAspectRatio(aspectRatio: Double): Unit = js.native
   def setAspectRatio(aspectRatio: Double, extraSize: Size): Unit = js.native
@@ -1119,7 +1130,7 @@ trait BrowserWindow extends EventEmitter {
   def setIgnoreMouseEvents(ignore: Boolean): Unit = js.native
   def setIgnoreMouseEvents(ignore: Boolean, options: IgnoreMouseEventsOptions): Unit = js.native
   /**
-    * Enters or leaves the kiosk mode.
+    * Enters or leaves kiosk mode.
     */
   def setKiosk(flag: Boolean): Unit = js.native
   /**
@@ -1133,12 +1144,12 @@ trait BrowserWindow extends EventEmitter {
     * Sets the maximum size of window to `width` and `height`.
     */
   def setMaximumSize(width: Double, height: Double): Unit = js.native
-  def setMenu(): Unit = js.native
   /**
     * Sets the `menu` as the window's menu bar.
     *
     * @platform linux,win32
     */
+  def setMenu(): Unit = js.native
   def setMenu(menu: Menu): Unit = js.native
   /**
     * Sets whether the menu bar should be visible. If the menu bar is auto-hide, users
@@ -1179,11 +1190,11 @@ trait BrowserWindow extends EventEmitter {
     * @platform win32
     */
   def setOverlayIcon(overlay: NativeImage_, description: String): Unit = js.native
-  def setParentWindow(): Unit = js.native
   /**
     * Sets `parent` as current window's parent window, passing `null` will turn
     * current window into a top-level window.
     */
+  def setParentWindow(): Unit = js.native
   def setParentWindow(parent: BrowserWindow): Unit = js.native
   /**
     * Moves window to `x` and `y`.
@@ -1241,7 +1252,7 @@ trait BrowserWindow extends EventEmitter {
     * Enters or leaves simple fullscreen mode.
     *
     * Simple fullscreen mode emulates the native fullscreen behavior found in versions
-    * of Mac OS X prior to Lion (10.7).
+    * of macOS prior to Lion (10.7).
     *
     * @platform darwin
     */
@@ -1313,7 +1324,6 @@ trait BrowserWindow extends EventEmitter {
     * Changes the title of native window to `title`.
     */
   def setTitle(title: String): Unit = js.native
-  def setTouchBar(): Unit = js.native
   /**
     * Sets the touchBar layout for the current window. Specifying `null` or
     * `undefined` clears the touch bar. This method only has an effect if the machine
@@ -1325,6 +1335,7 @@ trait BrowserWindow extends EventEmitter {
     * @experimental
     * @platform darwin
     */
+  def setTouchBar(): Unit = js.native
   def setTouchBar(touchBar: TouchBar): Unit = js.native
   /**
     * Set a custom position for the traffic light buttons. Can only be used with
@@ -1343,16 +1354,50 @@ trait BrowserWindow extends EventEmitter {
     * @platform darwin
     */
   def setVibrancy(): Unit = js.native
-  def setVibrancy(
-    `type`: `appearance-based` | light | dark | titlebar | selection | menu | popover | sidebar | `medium-light` | `ultra-dark` | header | sheet | window | hud | `fullscreen-ui` | tooltip | content | `under-window` | `under-page`
-  ): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_appearancebased(`type`: `appearance-based`): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_content(`type`: content): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_dark(`type`: dark): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_fullscreenui(`type`: `fullscreen-ui`): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_header(`type`: header): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_hud(`type`: hud): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_light(`type`: light): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_mediumlight(`type`: `medium-light`): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_menu(`type`: menu): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_popover(`type`: popover): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_selection(`type`: selection): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_sheet(`type`: sheet): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_sidebar(`type`: sidebar): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_titlebar(`type`: titlebar): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_tooltip(`type`: tooltip): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_ultradark(`type`: `ultra-dark`): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_underpage(`type`: `under-page`): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_underwindow(`type`: `under-window`): Unit = js.native
+  @JSName("setVibrancy")
+  def setVibrancy_window(`type`: window): Unit = js.native
   /**
     * Sets whether the window should be visible on all workspaces.
     * 
   **Note:** This API does nothing on Windows.
     */
   def setVisibleOnAllWorkspaces(visible: Boolean): Unit = js.native
-  def setVisibleOnAllWorkspaces(visible: Boolean, options: VisibleOnAllWorkspacesOptions): Unit = js.native
   /**
     * Sets whether the window traffic light buttons should be visible.
     * 

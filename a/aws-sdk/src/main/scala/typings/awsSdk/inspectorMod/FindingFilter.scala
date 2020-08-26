@@ -42,26 +42,68 @@ trait FindingFilter extends js.Object {
 
 object FindingFilter {
   @scala.inline
-  def apply(
-    agentIds: AgentIdList = null,
-    attributes: AttributeList = null,
-    autoScalingGroups: AutoScalingGroupList = null,
-    creationTimeRange: TimestampRange = null,
-    ruleNames: RuleNameList = null,
-    rulesPackageArns: FilterRulesPackageArnList = null,
-    severities: SeverityList = null,
-    userAttributes: AttributeList = null
-  ): FindingFilter = {
+  def apply(): FindingFilter = {
     val __obj = js.Dynamic.literal()
-    if (agentIds != null) __obj.updateDynamic("agentIds")(agentIds.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (autoScalingGroups != null) __obj.updateDynamic("autoScalingGroups")(autoScalingGroups.asInstanceOf[js.Any])
-    if (creationTimeRange != null) __obj.updateDynamic("creationTimeRange")(creationTimeRange.asInstanceOf[js.Any])
-    if (ruleNames != null) __obj.updateDynamic("ruleNames")(ruleNames.asInstanceOf[js.Any])
-    if (rulesPackageArns != null) __obj.updateDynamic("rulesPackageArns")(rulesPackageArns.asInstanceOf[js.Any])
-    if (severities != null) __obj.updateDynamic("severities")(severities.asInstanceOf[js.Any])
-    if (userAttributes != null) __obj.updateDynamic("userAttributes")(userAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindingFilter]
   }
+  @scala.inline
+  implicit class FindingFilterOps[Self <: FindingFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentIdsVarargs(value: AgentId*): Self = this.set("agentIds", js.Array(value :_*))
+    @scala.inline
+    def setAgentIds(value: AgentIdList): Self = this.set("agentIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentIds: Self = this.set("agentIds", js.undefined)
+    @scala.inline
+    def setAttributesVarargs(value: Attribute*): Self = this.set("attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: AttributeList): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = this.set("autoScalingGroups", js.Array(value :_*))
+    @scala.inline
+    def setAutoScalingGroups(value: AutoScalingGroupList): Self = this.set("autoScalingGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroups: Self = this.set("autoScalingGroups", js.undefined)
+    @scala.inline
+    def setCreationTimeRange(value: TimestampRange): Self = this.set("creationTimeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimeRange: Self = this.set("creationTimeRange", js.undefined)
+    @scala.inline
+    def setRuleNamesVarargs(value: RuleName*): Self = this.set("ruleNames", js.Array(value :_*))
+    @scala.inline
+    def setRuleNames(value: RuleNameList): Self = this.set("ruleNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleNames: Self = this.set("ruleNames", js.undefined)
+    @scala.inline
+    def setRulesPackageArnsVarargs(value: Arn*): Self = this.set("rulesPackageArns", js.Array(value :_*))
+    @scala.inline
+    def setRulesPackageArns(value: FilterRulesPackageArnList): Self = this.set("rulesPackageArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRulesPackageArns: Self = this.set("rulesPackageArns", js.undefined)
+    @scala.inline
+    def setSeveritiesVarargs(value: Severity*): Self = this.set("severities", js.Array(value :_*))
+    @scala.inline
+    def setSeverities(value: SeverityList): Self = this.set("severities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverities: Self = this.set("severities", js.undefined)
+    @scala.inline
+    def setUserAttributesVarargs(value: Attribute*): Self = this.set("userAttributes", js.Array(value :_*))
+    @scala.inline
+    def setUserAttributes(value: AttributeList): Self = this.set("userAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAttributes: Self = this.set("userAttributes", js.undefined)
+  }
+  
 }
 

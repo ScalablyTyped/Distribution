@@ -25,38 +25,78 @@ trait AccessViewStatus extends js.Object {
 
 object AccessViewStatus {
   @scala.inline
-  def apply(
-    accessViewStatus: String = null,
-    country: String = null,
-    downloadAccess: SchemaDownloadAccessRestriction = null,
-    driveImportedContentLink: String = null,
-    embeddable: js.UndefOr[Boolean] = js.undefined,
-    epub: AcsTokenLink = null,
-    explicitOfflineLicenseManagement: js.UndefOr[Boolean] = js.undefined,
-    pdf: AcsTokenLink = null,
-    publicDomain: js.UndefOr[Boolean] = js.undefined,
-    quoteSharingAllowed: js.UndefOr[Boolean] = js.undefined,
-    textToSpeechPermission: String = null,
-    viewOrderUrl: String = null,
-    viewability: String = null,
-    webReaderLink: String = null
-  ): AccessViewStatus = {
+  def apply(): AccessViewStatus = {
     val __obj = js.Dynamic.literal()
-    if (accessViewStatus != null) __obj.updateDynamic("accessViewStatus")(accessViewStatus.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (downloadAccess != null) __obj.updateDynamic("downloadAccess")(downloadAccess.asInstanceOf[js.Any])
-    if (driveImportedContentLink != null) __obj.updateDynamic("driveImportedContentLink")(driveImportedContentLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(embeddable)) __obj.updateDynamic("embeddable")(embeddable.get.asInstanceOf[js.Any])
-    if (epub != null) __obj.updateDynamic("epub")(epub.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitOfflineLicenseManagement)) __obj.updateDynamic("explicitOfflineLicenseManagement")(explicitOfflineLicenseManagement.get.asInstanceOf[js.Any])
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (!js.isUndefined(publicDomain)) __obj.updateDynamic("publicDomain")(publicDomain.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quoteSharingAllowed)) __obj.updateDynamic("quoteSharingAllowed")(quoteSharingAllowed.get.asInstanceOf[js.Any])
-    if (textToSpeechPermission != null) __obj.updateDynamic("textToSpeechPermission")(textToSpeechPermission.asInstanceOf[js.Any])
-    if (viewOrderUrl != null) __obj.updateDynamic("viewOrderUrl")(viewOrderUrl.asInstanceOf[js.Any])
-    if (viewability != null) __obj.updateDynamic("viewability")(viewability.asInstanceOf[js.Any])
-    if (webReaderLink != null) __obj.updateDynamic("webReaderLink")(webReaderLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessViewStatus]
   }
+  @scala.inline
+  implicit class AccessViewStatusOps[Self <: AccessViewStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessViewStatus(value: String): Self = this.set("accessViewStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessViewStatus: Self = this.set("accessViewStatus", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setDownloadAccess(value: SchemaDownloadAccessRestriction): Self = this.set("downloadAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadAccess: Self = this.set("downloadAccess", js.undefined)
+    @scala.inline
+    def setDriveImportedContentLink(value: String): Self = this.set("driveImportedContentLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriveImportedContentLink: Self = this.set("driveImportedContentLink", js.undefined)
+    @scala.inline
+    def setEmbeddable(value: Boolean): Self = this.set("embeddable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbeddable: Self = this.set("embeddable", js.undefined)
+    @scala.inline
+    def setEpub(value: AcsTokenLink): Self = this.set("epub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEpub: Self = this.set("epub", js.undefined)
+    @scala.inline
+    def setExplicitOfflineLicenseManagement(value: Boolean): Self = this.set("explicitOfflineLicenseManagement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplicitOfflineLicenseManagement: Self = this.set("explicitOfflineLicenseManagement", js.undefined)
+    @scala.inline
+    def setPdf(value: AcsTokenLink): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePdf: Self = this.set("pdf", js.undefined)
+    @scala.inline
+    def setPublicDomain(value: Boolean): Self = this.set("publicDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicDomain: Self = this.set("publicDomain", js.undefined)
+    @scala.inline
+    def setQuoteSharingAllowed(value: Boolean): Self = this.set("quoteSharingAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuoteSharingAllowed: Self = this.set("quoteSharingAllowed", js.undefined)
+    @scala.inline
+    def setTextToSpeechPermission(value: String): Self = this.set("textToSpeechPermission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextToSpeechPermission: Self = this.set("textToSpeechPermission", js.undefined)
+    @scala.inline
+    def setViewOrderUrl(value: String): Self = this.set("viewOrderUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewOrderUrl: Self = this.set("viewOrderUrl", js.undefined)
+    @scala.inline
+    def setViewability(value: String): Self = this.set("viewability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewability: Self = this.set("viewability", js.undefined)
+    @scala.inline
+    def setWebReaderLink(value: String): Self = this.set("webReaderLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebReaderLink: Self = this.set("webReaderLink", js.undefined)
+  }
+  
 }
 

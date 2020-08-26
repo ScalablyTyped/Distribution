@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs")
 @js.native
 abstract class TracingStatusChangedEventArgs ()
-  extends typings.winrtUwp.Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs {
-  /** Gets a value that indicates whether tracing is active. */
-  /* CompleteClass */
-  override var enabled: Boolean = js.native
-  /** Gets the trace level for the current tracing session. */
-  /* CompleteClass */
-  override var traceLevel: typings.winrtUwp.Windows.Foundation.Diagnostics.CausalityTraceLevel = js.native
-}
+  extends typings.winrtUwp.Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs
 

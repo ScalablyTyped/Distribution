@@ -5,26 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Sns extends js.Object {
-  var displayName: js.UndefOr[String] = js.undefined
-  var filterPolicy: js.UndefOr[js.Array[String] | StringDictionary[String]] = js.undefined
-  var redrivePolicy: js.UndefOr[RedrivePolicy] = js.undefined
-  var topicName: String
+  var displayName: js.UndefOr[String] = js.native
+  var filterPolicy: js.UndefOr[js.Array[String] | StringDictionary[String]] = js.native
+  var redrivePolicy: js.UndefOr[RedrivePolicy] = js.native
+  var topicName: String = js.native
 }
 
 object Sns {
   @scala.inline
-  def apply(
-    topicName: String,
-    displayName: String = null,
-    filterPolicy: js.Array[String] | StringDictionary[String] = null,
-    redrivePolicy: RedrivePolicy = null
-  ): Sns = {
+  def apply(topicName: String): Sns = {
     val __obj = js.Dynamic.literal(topicName = topicName.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (filterPolicy != null) __obj.updateDynamic("filterPolicy")(filterPolicy.asInstanceOf[js.Any])
-    if (redrivePolicy != null) __obj.updateDynamic("redrivePolicy")(redrivePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sns]
   }
+  @scala.inline
+  implicit class SnsOps[Self <: Sns] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTopicName(value: String): Self = this.set("topicName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setFilterPolicyVarargs(value: String*): Self = this.set("filterPolicy", js.Array(value :_*))
+    @scala.inline
+    def setFilterPolicy(value: js.Array[String] | StringDictionary[String]): Self = this.set("filterPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterPolicy: Self = this.set("filterPolicy", js.undefined)
+    @scala.inline
+    def setRedrivePolicy(value: RedrivePolicy): Self = this.set("redrivePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedrivePolicy: Self = this.set("redrivePolicy", js.undefined)
+  }
+  
 }
 

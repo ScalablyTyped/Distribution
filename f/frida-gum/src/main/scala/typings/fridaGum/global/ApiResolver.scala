@@ -1,6 +1,5 @@
 package typings.fridaGum.global
 
-import typings.fridaGum.ApiResolverMatch
 import typings.fridaGum.ApiResolverType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,13 +27,5 @@ class ApiResolver protected ()
     * @param type The type of resolver to create.
     */
   def this(`type`: ApiResolverType) = this()
-  /**
-    * Performs the resolver-specific query.
-    *
-    * @param query Resolver-specific query, optionally suffixed with `/i` to
-    *              perform case-insensitive matching.
-    */
-  /* CompleteClass */
-  override def enumerateMatches(query: String): js.Array[ApiResolverMatch] = js.native
 }
 

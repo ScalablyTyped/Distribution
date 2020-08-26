@@ -29,6 +29,7 @@ class ResourceManagedconfigurationssettings protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaManagedConfigurationsSettingsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaManagedConfigurationsSettingsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaManagedConfigurationsSettingsListResponse] = js.native
   def list(params: ParamsResourceManagedconfigurationssettingsList): GaxiosPromise[SchemaManagedConfigurationsSettingsListResponse] = js.native
   def list(
     params: ParamsResourceManagedconfigurationssettingsList,

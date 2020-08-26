@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * represents a number formatter which can preview number formats without inserting them.
   * @see NumberFormatter
   */
+@js.native
 trait XNumberFormatPreviewer extends XInterface {
   /**
     * formats a value using a format string, without inserting a number format into the list.
@@ -21,7 +22,7 @@ trait XNumberFormatPreviewer extends XInterface {
     * @returns the formatted string.
     * @throws com::sun::star::util::MalformedNumberFormatException if the format string is invalid.
     */
-  def convertNumberToPreviewString(aFormat: String, fValue: Double, nLocale: Locale, bAllowEnglish: Boolean): String
+  def convertNumberToPreviewString(aFormat: String, fValue: Double, nLocale: Locale, bAllowEnglish: Boolean): String = js.native
   /**
     * returns the color which is to be used for a number.
     * @param aFormat is the format string that is used for formatting.
@@ -32,7 +33,7 @@ trait XNumberFormatPreviewer extends XInterface {
     * @returns the color that should used to output the formatted string.
     * @throws com::sun::star::util::MalformedNumberFormatException if the format string is invalid.
     */
-  def queryPreviewColorForNumber(aFormat: String, fValue: Double, nLocale: Locale, bAllowEnglish: Boolean, aDefaultColor: Color): Color
+  def queryPreviewColorForNumber(aFormat: String, fValue: Double, nLocale: Locale, bAllowEnglish: Boolean, aDefaultColor: Color): Color = js.native
 }
 
 object XNumberFormatPreviewer {
@@ -47,5 +48,22 @@ object XNumberFormatPreviewer {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertNumberToPreviewString = js.Any.fromFunction4(convertNumberToPreviewString), queryInterface = js.Any.fromFunction1(queryInterface), queryPreviewColorForNumber = js.Any.fromFunction5(queryPreviewColorForNumber), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XNumberFormatPreviewer]
   }
+  @scala.inline
+  implicit class XNumberFormatPreviewerOps[Self <: XNumberFormatPreviewer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConvertNumberToPreviewString(value: (String, Double, Locale, Boolean) => String): Self = this.set("convertNumberToPreviewString", js.Any.fromFunction4(value))
+    @scala.inline
+    def setQueryPreviewColorForNumber(value: (String, Double, Locale, Boolean, Color) => Color): Self = this.set("queryPreviewColorForNumber", js.Any.fromFunction5(value))
+  }
+  
 }
 

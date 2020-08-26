@@ -19,17 +19,18 @@ import scala.scalajs.js.annotation._
   * @author Kai Sommerfeld
   * @version 1.0
   */
+@js.native
 trait NameClashResolveRequest extends ClassifiedInteractionRequest {
   /** contains the clashing name. */
-  var ClashingName: String
+  var ClashingName: String = js.native
   /**
     * contains a proposal for a new new, non-clashing name.
     *
     * This field may be left empty if the implementation is not able to suggest a new name.
     */
-  var ProposedNewName: String
+  var ProposedNewName: String = js.native
   /** contains the URL of the folder that contains the clashing resource. */
-  var TargetFolderURL: String
+  var TargetFolderURL: String = js.native
 }
 
 object NameClashResolveRequest {
@@ -45,5 +46,24 @@ object NameClashResolveRequest {
     val __obj = js.Dynamic.literal(ClashingName = ClashingName.asInstanceOf[js.Any], Classification = Classification.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], ProposedNewName = ProposedNewName.asInstanceOf[js.Any], TargetFolderURL = TargetFolderURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameClashResolveRequest]
   }
+  @scala.inline
+  implicit class NameClashResolveRequestOps[Self <: NameClashResolveRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClashingName(value: String): Self = this.set("ClashingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProposedNewName(value: String): Self = this.set("ProposedNewName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetFolderURL(value: String): Self = this.set("TargetFolderURL", value.asInstanceOf[js.Any])
+  }
+  
 }
 

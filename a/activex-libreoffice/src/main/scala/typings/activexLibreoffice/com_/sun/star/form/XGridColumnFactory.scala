@@ -15,24 +15,25 @@ import scala.scalajs.js.annotation._
   * global service factory, instead, you need to create them on the grid, where you want to insert them later on.
   * @see com.sun.star.form.component.GridControl
   */
+@js.native
 trait XGridColumnFactory extends XInterface {
   /**
     * returns a list of available column types.
     * @returns a list of column types.
     */
-  val ColumnTypes: SafeArray[String]
+  val ColumnTypes: SafeArray[String] = js.native
   /**
     * creates a new column object
     * @param aColumnType the type of column to be created
     * @returns the new column object
     * @throws com::sun::star::lang::IllegalArgumentException if aColumnType is not available.
     */
-  def createColumn(aColumnType: String): XPropertySet
+  def createColumn(aColumnType: String): XPropertySet = js.native
   /**
     * returns a list of available column types.
     * @returns a list of column types.
     */
-  def getColumnTypes(): SafeArray[String]
+  def getColumnTypes(): SafeArray[String] = js.native
 }
 
 object XGridColumnFactory {
@@ -48,5 +49,24 @@ object XGridColumnFactory {
     val __obj = js.Dynamic.literal(ColumnTypes = ColumnTypes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createColumn = js.Any.fromFunction1(createColumn), getColumnTypes = js.Any.fromFunction0(getColumnTypes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XGridColumnFactory]
   }
+  @scala.inline
+  implicit class XGridColumnFactoryOps[Self <: XGridColumnFactory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnTypes(value: SafeArray[String]): Self = this.set("ColumnTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreateColumn(value: String => XPropertySet): Self = this.set("createColumn", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetColumnTypes(value: () => SafeArray[String]): Self = this.set("getColumnTypes", js.Any.fromFunction0(value))
+  }
+  
 }
 

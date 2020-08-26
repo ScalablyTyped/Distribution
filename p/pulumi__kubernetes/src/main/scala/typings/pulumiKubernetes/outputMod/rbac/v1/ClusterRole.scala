@@ -7,38 +7,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a
-  * unit by a RoleBinding or ClusterRoleBinding.
+  * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.
   */
+@js.native
 trait ClusterRole extends js.Object {
   /**
-    * AggregationRule is an optional field that describes how to build the Rules for this
-    * ClusterRole. If AggregationRule is set, then the Rules are controller managed and direct
-    * changes to Rules will be stomped by the controller.
+    * AggregationRule is an optional field that describes how to build the Rules for this ClusterRole. If AggregationRule is set, then the Rules are controller managed and direct changes to Rules will be stomped by the controller.
     */
-  val aggregationRule: AggregationRule
+  var aggregationRule: AggregationRule = js.native
   /**
-    * APIVersion defines the versioned schema of this representation of an object. Servers should
-    * convert recognized schemas to the latest internal value, and may reject unrecognized
-    * values. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+    * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: rbacDotauthorizationDotk8sDotioSlashv1
+  var apiVersion: rbacDotauthorizationDotk8sDotioSlashv1 = js.native
   /**
-    * Kind is a string value representing the REST resource this object represents. Servers may
-    * infer this from the endpoint the client submits requests to. Cannot be updated. In
-    * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+    * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  val kind: typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRole
+  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRole = js.native
   /**
     * Standard object's metadata.
     */
-  val metadata: ObjectMeta
+  var metadata: ObjectMeta = js.native
   /**
     * Rules holds all the PolicyRules for this ClusterRole
     */
-  val rules: js.Array[PolicyRule]
+  var rules: js.Array[PolicyRule] = js.native
 }
 
 object ClusterRole {
@@ -53,5 +45,30 @@ object ClusterRole {
     val __obj = js.Dynamic.literal(aggregationRule = aggregationRule.asInstanceOf[js.Any], apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterRole]
   }
+  @scala.inline
+  implicit class ClusterRoleOps[Self <: ClusterRole] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregationRule(value: AggregationRule): Self = this.set("aggregationRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiVersion(value: rbacDotauthorizationDotk8sDotioSlashv1): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRole): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetadata(value: ObjectMeta): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRulesVarargs(value: PolicyRule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: js.Array[PolicyRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -1,17 +1,17 @@
 package typings.three.mod
 
-import typings.three.webGLRenderTargetMod.WebGLRenderTargetOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("three", "CubeCamera")
 @js.native
-class CubeCamera ()
+class CubeCamera protected ()
   extends typings.three.cubeCameraMod.CubeCamera {
-  def this(near: Double) = this()
-  def this(near: Double, far: Double) = this()
-  def this(near: Double, far: Double, cubeResolution: Double) = this()
-  def this(near: Double, far: Double, cubeResolution: Double, options: WebGLRenderTargetOptions) = this()
+  def this(
+    near: Double,
+    far: Double,
+    renderTarget: typings.three.webGLCubeRenderTargetMod.WebGLCubeRenderTarget
+  ) = this()
 }
 

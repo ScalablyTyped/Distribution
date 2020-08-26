@@ -14,10 +14,6 @@ object errorMod extends js.Object {
   class CombinedError protected () extends Error {
     def this(hasNetworkErrorGraphQLErrorsResponse: NetworkError) = this()
     var graphQLErrors: js.Array[GraphQLError] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var networkError: js.UndefOr[Error] = js.native
     var response: js.UndefOr[js.Any] = js.native
   }

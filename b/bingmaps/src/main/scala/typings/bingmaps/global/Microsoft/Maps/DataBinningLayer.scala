@@ -15,9 +15,7 @@ import scala.scalajs.js.annotation._
 class DataBinningLayer ()
   extends typings.bingmaps.Microsoft.Maps.DataBinningLayer {
   def this(pushpins: js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]) = this()
+  def this(pushpins: js.UndefOr[scala.Nothing], options: IDataBinningOptions) = this()
   def this(pushpins: js.Array[typings.bingmaps.Microsoft.Maps.Pushpin], options: IDataBinningOptions) = this()
-  /** Clears all data in the layer. */
-  /* CompleteClass */
-  override def clear(): Unit = js.native
 }
 

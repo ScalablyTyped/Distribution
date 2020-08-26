@@ -7,69 +7,84 @@ import scala.scalajs.js.annotation._
 /**
   * Payment (if paid)
   */
+@js.native
 trait ExplanationOfBenefitPayment extends BackboneElement {
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.undefined
+  var _date: js.UndefOr[Element] = js.native
   /**
     * Payment adjustment for non-Claim issues
     */
-  var adjustment: js.UndefOr[Money] = js.undefined
+  var adjustment: js.UndefOr[Money] = js.native
   /**
     * Explanation for the non-claim adjustment
     */
-  var adjustmentReason: js.UndefOr[CodeableConcept] = js.undefined
+  var adjustmentReason: js.UndefOr[CodeableConcept] = js.native
   /**
     * Payable amount after adjustment
     */
-  var amount: js.UndefOr[Money] = js.undefined
+  var amount: js.UndefOr[Money] = js.native
   /**
     * Expected date of Payment
     */
-  var date: js.UndefOr[typings.fhir.fhir.date] = js.undefined
+  var date: js.UndefOr[typings.fhir.fhir.date] = js.native
   /**
     * Identifier of the payment instrument
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Partial or Complete
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.undefined
+  var `type`: js.UndefOr[CodeableConcept] = js.native
 }
 
 object ExplanationOfBenefitPayment {
   @scala.inline
-  def apply(
-    _date: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    adjustment: Money = null,
-    adjustmentReason: CodeableConcept = null,
-    amount: Money = null,
-    date: date = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    identifier: Identifier = null,
-    modifierExtension: js.Array[Extension] = null,
-    `type`: CodeableConcept = null
-  ): ExplanationOfBenefitPayment = {
+  def apply(): ExplanationOfBenefitPayment = {
     val __obj = js.Dynamic.literal()
-    if (_date != null) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (adjustment != null) __obj.updateDynamic("adjustment")(adjustment.asInstanceOf[js.Any])
-    if (adjustmentReason != null) __obj.updateDynamic("adjustmentReason")(adjustmentReason.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplanationOfBenefitPayment]
   }
+  @scala.inline
+  implicit class ExplanationOfBenefitPaymentOps[Self <: ExplanationOfBenefitPayment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_date: Self = this.set("_date", js.undefined)
+    @scala.inline
+    def setAdjustment(value: Money): Self = this.set("adjustment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustment: Self = this.set("adjustment", js.undefined)
+    @scala.inline
+    def setAdjustmentReason(value: CodeableConcept): Self = this.set("adjustmentReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustmentReason: Self = this.set("adjustmentReason", js.undefined)
+    @scala.inline
+    def setAmount(value: Money): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setDate(value: date): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -77,30 +77,62 @@ trait SchemaFinding extends js.Object {
 
 object SchemaFinding {
   @scala.inline
-  def apply(
-    category: String = null,
-    createTime: String = null,
-    eventTime: String = null,
-    externalUri: String = null,
-    name: String = null,
-    parent: String = null,
-    resourceName: String = null,
-    securityMarks: SchemaSecurityMarks = null,
-    sourceProperties: StringDictionary[js.Any] = null,
-    state: String = null
-  ): SchemaFinding = {
+  def apply(): SchemaFinding = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime.asInstanceOf[js.Any])
-    if (externalUri != null) __obj.updateDynamic("externalUri")(externalUri.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (securityMarks != null) __obj.updateDynamic("securityMarks")(securityMarks.asInstanceOf[js.Any])
-    if (sourceProperties != null) __obj.updateDynamic("sourceProperties")(sourceProperties.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFinding]
   }
+  @scala.inline
+  implicit class SchemaFindingOps[Self <: SchemaFinding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setEventTime(value: String): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTime: Self = this.set("eventTime", js.undefined)
+    @scala.inline
+    def setExternalUri(value: String): Self = this.set("externalUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalUri: Self = this.set("externalUri", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    @scala.inline
+    def setSecurityMarks(value: SchemaSecurityMarks): Self = this.set("securityMarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityMarks: Self = this.set("securityMarks", js.undefined)
+    @scala.inline
+    def setSourceProperties(value: StringDictionary[js.Any]): Self = this.set("sourceProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceProperties: Self = this.set("sourceProperties", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

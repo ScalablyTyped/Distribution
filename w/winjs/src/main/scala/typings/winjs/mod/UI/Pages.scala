@@ -51,7 +51,16 @@ object Pages extends js.Object {
     * @returns A promise that is fulfilled when rendering is complete, if asynchronous processing is necessary. If not, returns nothing.
     **/
   def render(uri: String): Promise[_] = js.native
+  def render(
+    uri: String,
+    element: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    parentedPromise: Promise[_]
+  ): Promise[_] = js.native
+  def render(uri: String, element: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
+  def render(uri: String, element: js.UndefOr[scala.Nothing], options: js.Any, parentedPromise: Promise[_]): Promise[_] = js.native
   def render(uri: String, element: HTMLElement): Promise[_] = js.native
+  def render(uri: String, element: HTMLElement, options: js.UndefOr[scala.Nothing], parentedPromise: Promise[_]): Promise[_] = js.native
   def render(uri: String, element: HTMLElement, options: js.Any): Promise[_] = js.native
   def render(uri: String, element: HTMLElement, options: js.Any, parentedPromise: Promise[_]): Promise[_] = js.native
 }

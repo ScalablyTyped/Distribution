@@ -24,11 +24,30 @@ trait SchemaDeleteTableColumnRequest extends js.Object {
 
 object SchemaDeleteTableColumnRequest {
   @scala.inline
-  def apply(cellLocation: SchemaTableCellLocation = null, tableObjectId: String = null): SchemaDeleteTableColumnRequest = {
+  def apply(): SchemaDeleteTableColumnRequest = {
     val __obj = js.Dynamic.literal()
-    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
-    if (tableObjectId != null) __obj.updateDynamic("tableObjectId")(tableObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteTableColumnRequest]
   }
+  @scala.inline
+  implicit class SchemaDeleteTableColumnRequestOps[Self <: SchemaDeleteTableColumnRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellLocation(value: SchemaTableCellLocation): Self = this.set("cellLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellLocation: Self = this.set("cellLocation", js.undefined)
+    @scala.inline
+    def setTableObjectId(value: String): Self = this.set("tableObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableObjectId: Self = this.set("tableObjectId", js.undefined)
+  }
+  
 }
 

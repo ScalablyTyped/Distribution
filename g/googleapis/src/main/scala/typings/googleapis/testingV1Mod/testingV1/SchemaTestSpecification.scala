@@ -51,28 +51,58 @@ trait SchemaTestSpecification extends js.Object {
 
 object SchemaTestSpecification {
   @scala.inline
-  def apply(
-    androidInstrumentationTest: SchemaAndroidInstrumentationTest = null,
-    androidRoboTest: SchemaAndroidRoboTest = null,
-    androidTestLoop: SchemaAndroidTestLoop = null,
-    disablePerformanceMetrics: js.UndefOr[Boolean] = js.undefined,
-    disableVideoRecording: js.UndefOr[Boolean] = js.undefined,
-    iosTestSetup: SchemaIosTestSetup = null,
-    iosXcTest: SchemaIosXcTest = null,
-    testSetup: SchemaTestSetup = null,
-    testTimeout: String = null
-  ): SchemaTestSpecification = {
+  def apply(): SchemaTestSpecification = {
     val __obj = js.Dynamic.literal()
-    if (androidInstrumentationTest != null) __obj.updateDynamic("androidInstrumentationTest")(androidInstrumentationTest.asInstanceOf[js.Any])
-    if (androidRoboTest != null) __obj.updateDynamic("androidRoboTest")(androidRoboTest.asInstanceOf[js.Any])
-    if (androidTestLoop != null) __obj.updateDynamic("androidTestLoop")(androidTestLoop.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePerformanceMetrics)) __obj.updateDynamic("disablePerformanceMetrics")(disablePerformanceMetrics.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableVideoRecording)) __obj.updateDynamic("disableVideoRecording")(disableVideoRecording.get.asInstanceOf[js.Any])
-    if (iosTestSetup != null) __obj.updateDynamic("iosTestSetup")(iosTestSetup.asInstanceOf[js.Any])
-    if (iosXcTest != null) __obj.updateDynamic("iosXcTest")(iosXcTest.asInstanceOf[js.Any])
-    if (testSetup != null) __obj.updateDynamic("testSetup")(testSetup.asInstanceOf[js.Any])
-    if (testTimeout != null) __obj.updateDynamic("testTimeout")(testTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestSpecification]
   }
+  @scala.inline
+  implicit class SchemaTestSpecificationOps[Self <: SchemaTestSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidInstrumentationTest(value: SchemaAndroidInstrumentationTest): Self = this.set("androidInstrumentationTest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidInstrumentationTest: Self = this.set("androidInstrumentationTest", js.undefined)
+    @scala.inline
+    def setAndroidRoboTest(value: SchemaAndroidRoboTest): Self = this.set("androidRoboTest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidRoboTest: Self = this.set("androidRoboTest", js.undefined)
+    @scala.inline
+    def setAndroidTestLoop(value: SchemaAndroidTestLoop): Self = this.set("androidTestLoop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidTestLoop: Self = this.set("androidTestLoop", js.undefined)
+    @scala.inline
+    def setDisablePerformanceMetrics(value: Boolean): Self = this.set("disablePerformanceMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisablePerformanceMetrics: Self = this.set("disablePerformanceMetrics", js.undefined)
+    @scala.inline
+    def setDisableVideoRecording(value: Boolean): Self = this.set("disableVideoRecording", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableVideoRecording: Self = this.set("disableVideoRecording", js.undefined)
+    @scala.inline
+    def setIosTestSetup(value: SchemaIosTestSetup): Self = this.set("iosTestSetup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosTestSetup: Self = this.set("iosTestSetup", js.undefined)
+    @scala.inline
+    def setIosXcTest(value: SchemaIosXcTest): Self = this.set("iosXcTest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosXcTest: Self = this.set("iosXcTest", js.undefined)
+    @scala.inline
+    def setTestSetup(value: SchemaTestSetup): Self = this.set("testSetup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestSetup: Self = this.set("testSetup", js.undefined)
+    @scala.inline
+    def setTestTimeout(value: String): Self = this.set("testTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestTimeout: Self = this.set("testTimeout", js.undefined)
+  }
+  
 }
 

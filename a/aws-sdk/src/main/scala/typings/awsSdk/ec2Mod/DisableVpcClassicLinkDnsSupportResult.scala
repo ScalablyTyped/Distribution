@@ -14,10 +14,26 @@ trait DisableVpcClassicLinkDnsSupportResult extends js.Object {
 
 object DisableVpcClassicLinkDnsSupportResult {
   @scala.inline
-  def apply(Return: js.UndefOr[Boolean] = js.undefined): DisableVpcClassicLinkDnsSupportResult = {
+  def apply(): DisableVpcClassicLinkDnsSupportResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Return)) __obj.updateDynamic("Return")(Return.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableVpcClassicLinkDnsSupportResult]
   }
+  @scala.inline
+  implicit class DisableVpcClassicLinkDnsSupportResultOps[Self <: DisableVpcClassicLinkDnsSupportResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReturn(value: Boolean): Self = this.set("Return", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturn: Self = this.set("Return", js.undefined)
+  }
+  
 }
 

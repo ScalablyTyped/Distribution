@@ -45,24 +45,50 @@ trait SchemaGetIosReopenAttributionResponse extends js.Object {
 
 object SchemaGetIosReopenAttributionResponse {
   @scala.inline
-  def apply(
-    deepLink: String = null,
-    invitationId: String = null,
-    iosMinAppVersion: String = null,
-    resolvedLink: String = null,
-    utmCampaign: String = null,
-    utmMedium: String = null,
-    utmSource: String = null
-  ): SchemaGetIosReopenAttributionResponse = {
+  def apply(): SchemaGetIosReopenAttributionResponse = {
     val __obj = js.Dynamic.literal()
-    if (deepLink != null) __obj.updateDynamic("deepLink")(deepLink.asInstanceOf[js.Any])
-    if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId.asInstanceOf[js.Any])
-    if (iosMinAppVersion != null) __obj.updateDynamic("iosMinAppVersion")(iosMinAppVersion.asInstanceOf[js.Any])
-    if (resolvedLink != null) __obj.updateDynamic("resolvedLink")(resolvedLink.asInstanceOf[js.Any])
-    if (utmCampaign != null) __obj.updateDynamic("utmCampaign")(utmCampaign.asInstanceOf[js.Any])
-    if (utmMedium != null) __obj.updateDynamic("utmMedium")(utmMedium.asInstanceOf[js.Any])
-    if (utmSource != null) __obj.updateDynamic("utmSource")(utmSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetIosReopenAttributionResponse]
   }
+  @scala.inline
+  implicit class SchemaGetIosReopenAttributionResponseOps[Self <: SchemaGetIosReopenAttributionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeepLink(value: String): Self = this.set("deepLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeepLink: Self = this.set("deepLink", js.undefined)
+    @scala.inline
+    def setInvitationId(value: String): Self = this.set("invitationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitationId: Self = this.set("invitationId", js.undefined)
+    @scala.inline
+    def setIosMinAppVersion(value: String): Self = this.set("iosMinAppVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosMinAppVersion: Self = this.set("iosMinAppVersion", js.undefined)
+    @scala.inline
+    def setResolvedLink(value: String): Self = this.set("resolvedLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolvedLink: Self = this.set("resolvedLink", js.undefined)
+    @scala.inline
+    def setUtmCampaign(value: String): Self = this.set("utmCampaign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtmCampaign: Self = this.set("utmCampaign", js.undefined)
+    @scala.inline
+    def setUtmMedium(value: String): Self = this.set("utmMedium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtmMedium: Self = this.set("utmMedium", js.undefined)
+    @scala.inline
+    def setUtmSource(value: String): Self = this.set("utmSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtmSource: Self = this.set("utmSource", js.undefined)
+  }
+  
 }
 

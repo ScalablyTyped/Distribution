@@ -26,6 +26,7 @@ object rngMod extends js.Object {
       * @returns A normally distributed pseudorandom value
       */
     def getNormal(): Double = js.native
+    def getNormal(mean: js.UndefOr[scala.Nothing], stddev: Double): Double = js.native
     def getNormal(mean: Double): Double = js.native
     def getNormal(mean: Double, stddev: Double): Double = js.native
     /**

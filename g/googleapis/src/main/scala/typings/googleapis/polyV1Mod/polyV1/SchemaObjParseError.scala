@@ -39,22 +39,46 @@ trait SchemaObjParseError extends js.Object {
 
 object SchemaObjParseError {
   @scala.inline
-  def apply(
-    code: String = null,
-    endIndex: js.UndefOr[Double] = js.undefined,
-    filePath: String = null,
-    line: String = null,
-    lineNumber: js.UndefOr[Double] = js.undefined,
-    startIndex: js.UndefOr[Double] = js.undefined
-  ): SchemaObjParseError = {
+  def apply(): SchemaObjParseError = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObjParseError]
   }
+  @scala.inline
+  implicit class SchemaObjParseErrorOps[Self <: SchemaObjParseError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    @scala.inline
+    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    @scala.inline
+    def setLine(value: String): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+  }
+  
 }
 

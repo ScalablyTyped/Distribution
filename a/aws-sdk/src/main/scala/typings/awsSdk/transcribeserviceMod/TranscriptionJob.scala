@@ -66,38 +66,78 @@ trait TranscriptionJob extends js.Object {
 
 object TranscriptionJob {
   @scala.inline
-  def apply(
-    CompletionTime: DateTime = null,
-    ContentRedaction: ContentRedaction = null,
-    CreationTime: DateTime = null,
-    FailureReason: FailureReason = null,
-    JobExecutionSettings: JobExecutionSettings = null,
-    LanguageCode: LanguageCode = null,
-    Media: Media = null,
-    MediaFormat: MediaFormat = null,
-    MediaSampleRateHertz: js.UndefOr[MediaSampleRateHertz] = js.undefined,
-    Settings: Settings = null,
-    StartTime: DateTime = null,
-    Transcript: Transcript = null,
-    TranscriptionJobName: TranscriptionJobName = null,
-    TranscriptionJobStatus: TranscriptionJobStatus = null
-  ): TranscriptionJob = {
+  def apply(): TranscriptionJob = {
     val __obj = js.Dynamic.literal()
-    if (CompletionTime != null) __obj.updateDynamic("CompletionTime")(CompletionTime.asInstanceOf[js.Any])
-    if (ContentRedaction != null) __obj.updateDynamic("ContentRedaction")(ContentRedaction.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (JobExecutionSettings != null) __obj.updateDynamic("JobExecutionSettings")(JobExecutionSettings.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (Media != null) __obj.updateDynamic("Media")(Media.asInstanceOf[js.Any])
-    if (MediaFormat != null) __obj.updateDynamic("MediaFormat")(MediaFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(MediaSampleRateHertz)) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.get.asInstanceOf[js.Any])
-    if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Transcript != null) __obj.updateDynamic("Transcript")(Transcript.asInstanceOf[js.Any])
-    if (TranscriptionJobName != null) __obj.updateDynamic("TranscriptionJobName")(TranscriptionJobName.asInstanceOf[js.Any])
-    if (TranscriptionJobStatus != null) __obj.updateDynamic("TranscriptionJobStatus")(TranscriptionJobStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranscriptionJob]
   }
+  @scala.inline
+  implicit class TranscriptionJobOps[Self <: TranscriptionJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionTime(value: DateTime): Self = this.set("CompletionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionTime: Self = this.set("CompletionTime", js.undefined)
+    @scala.inline
+    def setContentRedaction(value: ContentRedaction): Self = this.set("ContentRedaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentRedaction: Self = this.set("ContentRedaction", js.undefined)
+    @scala.inline
+    def setCreationTime(value: DateTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setJobExecutionSettings(value: JobExecutionSettings): Self = this.set("JobExecutionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobExecutionSettings: Self = this.set("JobExecutionSettings", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setMedia(value: Media): Self = this.set("Media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedia: Self = this.set("Media", js.undefined)
+    @scala.inline
+    def setMediaFormat(value: MediaFormat): Self = this.set("MediaFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaFormat: Self = this.set("MediaFormat", js.undefined)
+    @scala.inline
+    def setMediaSampleRateHertz(value: MediaSampleRateHertz): Self = this.set("MediaSampleRateHertz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaSampleRateHertz: Self = this.set("MediaSampleRateHertz", js.undefined)
+    @scala.inline
+    def setSettings(value: Settings): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("Settings", js.undefined)
+    @scala.inline
+    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setTranscript(value: Transcript): Self = this.set("Transcript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscript: Self = this.set("Transcript", js.undefined)
+    @scala.inline
+    def setTranscriptionJobName(value: TranscriptionJobName): Self = this.set("TranscriptionJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscriptionJobName: Self = this.set("TranscriptionJobName", js.undefined)
+    @scala.inline
+    def setTranscriptionJobStatus(value: TranscriptionJobStatus): Self = this.set("TranscriptionJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscriptionJobStatus: Self = this.set("TranscriptionJobStatus", js.undefined)
+  }
+  
 }
 

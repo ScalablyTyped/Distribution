@@ -27,5 +27,6 @@ import scala.scalajs.js.annotation._
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer, Appointment Attendee, Message Compose, Message Read
   */
+@js.native
 trait Item extends js.Object
 

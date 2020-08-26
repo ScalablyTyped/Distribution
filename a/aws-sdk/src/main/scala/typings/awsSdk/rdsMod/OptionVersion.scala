@@ -18,11 +18,30 @@ trait OptionVersion extends js.Object {
 
 object OptionVersion {
   @scala.inline
-  def apply(IsDefault: js.UndefOr[Boolean] = js.undefined, Version: String = null): OptionVersion = {
+  def apply(): OptionVersion = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionVersion]
   }
+  @scala.inline
+  implicit class OptionVersionOps[Self <: OptionVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsDefault(value: Boolean): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

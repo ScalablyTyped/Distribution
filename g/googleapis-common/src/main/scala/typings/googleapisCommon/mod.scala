@@ -51,7 +51,11 @@ object mod extends js.Object {
     extends typings.googleAuthLibrary.mod.OAuth2Client {
     def this(clientId: String) = this()
     def this(options: OAuth2ClientOptions) = this()
+    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
     def this(clientId: String, clientSecret: String) = this()
+    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
+    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, redirectUri: String) = this()
+    def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
     def this(clientId: String, clientSecret: String, redirectUri: String) = this()
   }
   

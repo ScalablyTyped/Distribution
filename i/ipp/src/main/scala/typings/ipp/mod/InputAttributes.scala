@@ -4,69 +4,120 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputAttributes extends js.Object {
-  var `input-auto-scaling`: js.UndefOr[Boolean] = js.undefined
-  var `input-auto-skew-correction`: js.UndefOr[Boolean] = js.undefined
-  var `input-brightness`: js.UndefOr[Double] = js.undefined
-  var `input-color-mode`: js.UndefOr[InputColorMode] = js.undefined
-  var `input-content-type`: js.UndefOr[InputContentType] = js.undefined
-  var `input-contrast`: js.UndefOr[Double] = js.undefined
-  var `input-film-scan-mode`: js.UndefOr[InputFilmScanMode] = js.undefined
-  var `input-images-to-transfer`: js.UndefOr[Double] = js.undefined
-  var `input-media`: js.UndefOr[MediaName | MediaSizeName] = js.undefined
-  var `input-orientation-requested`: js.UndefOr[OrientationRequested] = js.undefined
-  var `input-quality`: js.UndefOr[PrintQuality] = js.undefined
-  var `input-resolution`: js.UndefOr[Resolution] = js.undefined
-  var `input-scaling-height`: js.UndefOr[Double] = js.undefined
-  var `input-scaling-width`: js.UndefOr[Double] = js.undefined
-  var `input-scan-regions`: js.UndefOr[js.Array[PPScanRegions]] = js.undefined
-  var `input-sharpness`: js.UndefOr[Double] = js.undefined
-  var `input-sides`: js.UndefOr[Sides] = js.undefined
-  var `input-source`: js.UndefOr[InputSource] = js.undefined
+  var `input-auto-scaling`: js.UndefOr[Boolean] = js.native
+  var `input-auto-skew-correction`: js.UndefOr[Boolean] = js.native
+  var `input-brightness`: js.UndefOr[Double] = js.native
+  var `input-color-mode`: js.UndefOr[InputColorMode] = js.native
+  var `input-content-type`: js.UndefOr[InputContentType] = js.native
+  var `input-contrast`: js.UndefOr[Double] = js.native
+  var `input-film-scan-mode`: js.UndefOr[InputFilmScanMode] = js.native
+  var `input-images-to-transfer`: js.UndefOr[Double] = js.native
+  var `input-media`: js.UndefOr[MediaName | MediaSizeName] = js.native
+  var `input-orientation-requested`: js.UndefOr[OrientationRequested] = js.native
+  var `input-quality`: js.UndefOr[PrintQuality] = js.native
+  var `input-resolution`: js.UndefOr[Resolution] = js.native
+  var `input-scaling-height`: js.UndefOr[Double] = js.native
+  var `input-scaling-width`: js.UndefOr[Double] = js.native
+  var `input-scan-regions`: js.UndefOr[js.Array[PPScanRegions]] = js.native
+  var `input-sharpness`: js.UndefOr[Double] = js.native
+  var `input-sides`: js.UndefOr[Sides] = js.native
+  var `input-source`: js.UndefOr[InputSource] = js.native
 }
 
 object InputAttributes {
   @scala.inline
-  def apply(
-    `input-auto-scaling`: js.UndefOr[Boolean] = js.undefined,
-    `input-auto-skew-correction`: js.UndefOr[Boolean] = js.undefined,
-    `input-brightness`: js.UndefOr[Double] = js.undefined,
-    `input-color-mode`: InputColorMode = null,
-    `input-content-type`: InputContentType = null,
-    `input-contrast`: js.UndefOr[Double] = js.undefined,
-    `input-film-scan-mode`: InputFilmScanMode = null,
-    `input-images-to-transfer`: js.UndefOr[Double] = js.undefined,
-    `input-media`: MediaName | MediaSizeName = null,
-    `input-orientation-requested`: OrientationRequested = null,
-    `input-quality`: PrintQuality = null,
-    `input-resolution`: Resolution = null,
-    `input-scaling-height`: js.UndefOr[Double] = js.undefined,
-    `input-scaling-width`: js.UndefOr[Double] = js.undefined,
-    `input-scan-regions`: js.Array[PPScanRegions] = null,
-    `input-sharpness`: js.UndefOr[Double] = js.undefined,
-    `input-sides`: Sides = null,
-    `input-source`: InputSource = null
-  ): InputAttributes = {
+  def apply(): InputAttributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`input-auto-scaling`)) __obj.updateDynamic("input-auto-scaling")(`input-auto-scaling`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`input-auto-skew-correction`)) __obj.updateDynamic("input-auto-skew-correction")(`input-auto-skew-correction`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`input-brightness`)) __obj.updateDynamic("input-brightness")(`input-brightness`.get.asInstanceOf[js.Any])
-    if (`input-color-mode` != null) __obj.updateDynamic("input-color-mode")(`input-color-mode`.asInstanceOf[js.Any])
-    if (`input-content-type` != null) __obj.updateDynamic("input-content-type")(`input-content-type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`input-contrast`)) __obj.updateDynamic("input-contrast")(`input-contrast`.get.asInstanceOf[js.Any])
-    if (`input-film-scan-mode` != null) __obj.updateDynamic("input-film-scan-mode")(`input-film-scan-mode`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`input-images-to-transfer`)) __obj.updateDynamic("input-images-to-transfer")(`input-images-to-transfer`.get.asInstanceOf[js.Any])
-    if (`input-media` != null) __obj.updateDynamic("input-media")(`input-media`.asInstanceOf[js.Any])
-    if (`input-orientation-requested` != null) __obj.updateDynamic("input-orientation-requested")(`input-orientation-requested`.asInstanceOf[js.Any])
-    if (`input-quality` != null) __obj.updateDynamic("input-quality")(`input-quality`.asInstanceOf[js.Any])
-    if (`input-resolution` != null) __obj.updateDynamic("input-resolution")(`input-resolution`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`input-scaling-height`)) __obj.updateDynamic("input-scaling-height")(`input-scaling-height`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`input-scaling-width`)) __obj.updateDynamic("input-scaling-width")(`input-scaling-width`.get.asInstanceOf[js.Any])
-    if (`input-scan-regions` != null) __obj.updateDynamic("input-scan-regions")(`input-scan-regions`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`input-sharpness`)) __obj.updateDynamic("input-sharpness")(`input-sharpness`.get.asInstanceOf[js.Any])
-    if (`input-sides` != null) __obj.updateDynamic("input-sides")(`input-sides`.asInstanceOf[js.Any])
-    if (`input-source` != null) __obj.updateDynamic("input-source")(`input-source`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputAttributes]
   }
+  @scala.inline
+  implicit class InputAttributesOps[Self <: InputAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setInput-auto-scaling`(value: Boolean): Self = this.set("input-auto-scaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-auto-scaling`: Self = this.set("input-auto-scaling", js.undefined)
+    @scala.inline
+    def `setInput-auto-skew-correction`(value: Boolean): Self = this.set("input-auto-skew-correction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-auto-skew-correction`: Self = this.set("input-auto-skew-correction", js.undefined)
+    @scala.inline
+    def `setInput-brightness`(value: Double): Self = this.set("input-brightness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-brightness`: Self = this.set("input-brightness", js.undefined)
+    @scala.inline
+    def `setInput-color-mode`(value: InputColorMode): Self = this.set("input-color-mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-color-mode`: Self = this.set("input-color-mode", js.undefined)
+    @scala.inline
+    def `setInput-content-type`(value: InputContentType): Self = this.set("input-content-type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-content-type`: Self = this.set("input-content-type", js.undefined)
+    @scala.inline
+    def `setInput-contrast`(value: Double): Self = this.set("input-contrast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-contrast`: Self = this.set("input-contrast", js.undefined)
+    @scala.inline
+    def `setInput-film-scan-mode`(value: InputFilmScanMode): Self = this.set("input-film-scan-mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-film-scan-mode`: Self = this.set("input-film-scan-mode", js.undefined)
+    @scala.inline
+    def `setInput-images-to-transfer`(value: Double): Self = this.set("input-images-to-transfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-images-to-transfer`: Self = this.set("input-images-to-transfer", js.undefined)
+    @scala.inline
+    def `setInput-media`(value: MediaName | MediaSizeName): Self = this.set("input-media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-media`: Self = this.set("input-media", js.undefined)
+    @scala.inline
+    def `setInput-orientation-requested`(value: OrientationRequested): Self = this.set("input-orientation-requested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-orientation-requested`: Self = this.set("input-orientation-requested", js.undefined)
+    @scala.inline
+    def `setInput-quality`(value: PrintQuality): Self = this.set("input-quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-quality`: Self = this.set("input-quality", js.undefined)
+    @scala.inline
+    def `setInput-resolution`(value: Resolution): Self = this.set("input-resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-resolution`: Self = this.set("input-resolution", js.undefined)
+    @scala.inline
+    def `setInput-scaling-height`(value: Double): Self = this.set("input-scaling-height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-scaling-height`: Self = this.set("input-scaling-height", js.undefined)
+    @scala.inline
+    def `setInput-scaling-width`(value: Double): Self = this.set("input-scaling-width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-scaling-width`: Self = this.set("input-scaling-width", js.undefined)
+    @scala.inline
+    def `setInput-scan-regionsVarargs`(value: PPScanRegions*): Self = this.set("input-scan-regions", js.Array(value :_*))
+    @scala.inline
+    def `setInput-scan-regions`(value: js.Array[PPScanRegions]): Self = this.set("input-scan-regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-scan-regions`: Self = this.set("input-scan-regions", js.undefined)
+    @scala.inline
+    def `setInput-sharpness`(value: Double): Self = this.set("input-sharpness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-sharpness`: Self = this.set("input-sharpness", js.undefined)
+    @scala.inline
+    def `setInput-sides`(value: Sides): Self = this.set("input-sides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-sides`: Self = this.set("input-sides", js.undefined)
+    @scala.inline
+    def `setInput-source`(value: InputSource): Self = this.set("input-source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteInput-source`: Self = this.set("input-source", js.undefined)
+  }
+  
 }
 

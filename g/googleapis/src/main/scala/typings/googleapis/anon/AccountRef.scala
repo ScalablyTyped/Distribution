@@ -16,16 +16,34 @@ trait AccountRef extends js.Object {
 
 object AccountRef {
   @scala.inline
-  def apply(
-    accountRef: SchemaAccountRef = null,
-    profileRef: SchemaProfileRef = null,
-    webPropertyRef: SchemaWebPropertyRef = null
-  ): AccountRef = {
+  def apply(): AccountRef = {
     val __obj = js.Dynamic.literal()
-    if (accountRef != null) __obj.updateDynamic("accountRef")(accountRef.asInstanceOf[js.Any])
-    if (profileRef != null) __obj.updateDynamic("profileRef")(profileRef.asInstanceOf[js.Any])
-    if (webPropertyRef != null) __obj.updateDynamic("webPropertyRef")(webPropertyRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountRef]
   }
+  @scala.inline
+  implicit class AccountRefOps[Self <: AccountRef] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountRef(value: SchemaAccountRef): Self = this.set("accountRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountRef: Self = this.set("accountRef", js.undefined)
+    @scala.inline
+    def setProfileRef(value: SchemaProfileRef): Self = this.set("profileRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileRef: Self = this.set("profileRef", js.undefined)
+    @scala.inline
+    def setWebPropertyRef(value: SchemaWebPropertyRef): Self = this.set("webPropertyRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebPropertyRef: Self = this.set("webPropertyRef", js.undefined)
+  }
+  
 }
 

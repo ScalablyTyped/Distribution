@@ -74,7 +74,7 @@ trait MosaicRule
     */
   var objectIds: js.Array[Double] = js.native
   /**
-    * Defines the mosaic operation used to resolve overlapping pixels.  **Possible Values:**
+    * Defines the mosaic operation used to resolve overlapping pixels.  **Possible Values**
     *
     * Value | Description |
     * ----- | ----------- |

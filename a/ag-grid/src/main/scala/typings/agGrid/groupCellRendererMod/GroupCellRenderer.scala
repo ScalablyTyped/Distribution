@@ -50,10 +50,6 @@ class GroupCellRenderer ()
   def onExpandOrContract(): Unit = js.native
   /* private */ def onKeyDown(event: js.Any): js.Any = js.native
   def refresh(): Boolean = js.native
-  /** Get the cell to refresh. Return true if successful. Return false if not (or you don't have refresh logic),
-    * then the grid will refresh the cell for you. */
-  /* CompleteClass */
-  override def refresh(params: js.Any): Boolean = js.native
   /* private */ def setIndent(): js.Any = js.native
   /* private */ def setPaddingDeprecatedWay(paddingCount: js.Any, padding: js.Any): js.Any = js.native
   /* private */ def setupDragOpenParents(): js.Any = js.native

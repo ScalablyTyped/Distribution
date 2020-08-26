@@ -76,92 +76,100 @@ trait JQuery extends js.Object {
   @JSName("search")
   var search_Original: Search = js.native
   def search(): JQuery = js.native
-  def search(behavior: setting, name: `type`): String = js.native
+  def search(behavior: setting, name: `type`, value: js.UndefOr[scala.Nothing]): String = js.native
   def search(behavior: setting, name: `type`, value: String): JQuery = js.native
-  def search(behavior: setting, name: apiSettings): ApiSettings = js.native
   def search(behavior: setting, name: apiSettings, value: ApiSettings): JQuery = js.native
-  def search(behavior: setting, name: cache): Boolean = js.native
+  def search(behavior: setting, name: cache, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def search(behavior: setting, name: cache, value: Boolean): JQuery = js.native
-  def search(behavior: setting, name: className): ClassNameSettings = js.native
   def search(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def search(behavior: setting, name: debug): Boolean = js.native
+  def search(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def search(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def search(behavior: setting, name: duration): Double = js.native
+  def search(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def search(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def search(behavior: setting, name: easing): String = js.native
+  def search(behavior: setting, name: easing, value: js.UndefOr[scala.Nothing]): String = js.native
   def search(behavior: setting, name: easing, value: String): JQuery = js.native
-  def search(behavior: setting, name: error): ErrorSettings = js.native
   def search(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def search(behavior: setting, name: fields): FieldsSettings = js.native
-  def search(behavior: setting, name: fields, value: FieldsSettings): JQuery = js.native
-  def search(behavior: setting, name: hideDelay): Double = js.native
+  def search(behavior: setting, name: fields, value: js.UndefOr[scala.Nothing]): FieldsSettings = js.native
+  def search(behavior: setting, name: hideDelay, value: js.UndefOr[scala.Nothing]): Double = js.native
   def search(behavior: setting, name: hideDelay, value: Double): JQuery = js.native
-  def search(behavior: setting, name: maxResults): Double = js.native
+  def search(behavior: setting, name: maxResults, value: js.UndefOr[scala.Nothing]): Double = js.native
   def search(behavior: setting, name: maxResults, value: Double): JQuery = js.native
-  def search(behavior: setting, name: metadata): MetadataSettings = js.native
   def search(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  def search(behavior: setting, name: minCharacters): Double = js.native
+  def search(behavior: setting, name: minCharacters, value: js.UndefOr[scala.Nothing]): Double = js.native
   def search(behavior: setting, name: minCharacters, value: Double): JQuery = js.native
-  def search(behavior: setting, name: name): String = js.native
-  def search(behavior: setting, name: namespace): String = js.native
+  def search(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def search(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def search(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def search(behavior: setting, name: name, value: String): JQuery = js.native
-  def search(behavior: setting, name: onResults): js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit] = js.native
-  def search(behavior: setting, name: onResultsAdd): js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit] = js.native
+  def search(behavior: setting, name: onResultsAdd, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit] = js.native
   def search(
     behavior: setting,
     name: onResultsAdd,
     value: js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]
   ): JQuery = js.native
-  def search(behavior: setting, name: onResultsClose): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def search(behavior: setting, name: onResultsClose, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def search(behavior: setting, name: onResultsClose, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def search(behavior: setting, name: onResultsOpen): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def search(behavior: setting, name: onResultsOpen, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def search(behavior: setting, name: onResultsOpen, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def search(behavior: setting, name: onResults, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit] = js.native
   def search(
     behavior: setting,
     name: onResults,
     value: js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit]
   ): JQuery = js.native
-  def search(behavior: setting, name: onSearchQuery): js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit] = js.native
+  def search(behavior: setting, name: onSearchQuery, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit] = js.native
   def search(
     behavior: setting,
     name: onSearchQuery,
     value: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]
   ): JQuery = js.native
-  def search(behavior: setting, name: onSelect): js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit] = js.native
+  def search(behavior: setting, name: onSelect, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit] = js.native
   def search(
     behavior: setting,
     name: onSelect,
     value: js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit]
   ): JQuery = js.native
-  def search(behavior: setting, name: performance): Boolean = js.native
+  def search(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def search(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def search(behavior: setting, name: regExp): RegExpSettings = js.native
-  def search(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-  def search(behavior: setting, name: searchDelay): Double = js.native
+  def search(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
+  def search(behavior: setting, name: searchDelay, value: js.UndefOr[scala.Nothing]): Double = js.native
   def search(behavior: setting, name: searchDelay, value: Double): JQuery = js.native
-  def search(behavior: setting, name: searchFields): js.Array[String] = js.native
+  def search(behavior: setting, name: searchFields, value: js.UndefOr[scala.Nothing]): js.Array[String] = js.native
   def search(behavior: setting, name: searchFields, value: js.Array[String]): JQuery = js.native
-  def search(behavior: setting, name: searchFullText): Boolean = js.native
+  def search(behavior: setting, name: searchFullText, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def search(behavior: setting, name: searchFullText, value: Boolean): JQuery = js.native
-  def search(behavior: setting, name: selectFirstResult): Boolean = js.native
+  def search(behavior: setting, name: selectFirstResult, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def search(behavior: setting, name: selectFirstResult, value: Boolean): JQuery = js.native
-  def search(behavior: setting, name: selector): SelectorSettings = js.native
-  def search(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def search(behavior: setting, name: showNoResults): Boolean = js.native
+  def search(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+  def search(behavior: setting, name: showNoResults, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def search(behavior: setting, name: showNoResults, value: Boolean): JQuery = js.native
-  def search(behavior: setting, name: silent): Boolean = js.native
+  def search(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def search(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def search(behavior: setting, name: source): `false` | js.Any = js.native
+  def search(behavior: setting, name: source, value: js.UndefOr[scala.Nothing]): `false` | js.Any = js.native
   def search(behavior: setting, name: source, value: js.Any): JQuery = js.native
   def search(behavior: setting, name: source, value: `false`): JQuery = js.native
-  def search(behavior: setting, name: templates): TemplatesSettings = js.native
-  def search(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
-  def search(behavior: setting, name: transition): String = js.native
+  def search(behavior: setting, name: templates, value: js.UndefOr[scala.Nothing]): TemplatesSettings = js.native
+  def search(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
   def search(behavior: setting, name: transition, value: String): JQuery = js.native
-  def search(behavior: setting, name: verbose): Boolean = js.native
+  def search(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def search(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def search(settings: SearchSettings): JQuery = js.native
+  @JSName("search")
+  def search_ApiSettings(behavior: setting, name: apiSettings, value: js.UndefOr[scala.Nothing]): ApiSettings = js.native
+  @JSName("search")
+  def search_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  @JSName("search")
+  def search_ErrorSettings(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+  @JSName("search")
+  def search_JQuery(behavior: setting, name: fields, value: FieldsSettings): JQuery = js.native
+  @JSName("search")
+  def search_JQuery(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
+  @JSName("search")
+  def search_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  @JSName("search")
+  def search_JQuery(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
+  @JSName("search")
+  def search_MetadataSettings(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
   /**
     * Adds HTML to results and displays
     */

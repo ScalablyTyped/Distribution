@@ -85,40 +85,82 @@ trait SchemaDirectDeal extends js.Object {
 
 object SchemaDirectDeal {
   @scala.inline
-  def apply(
-    accountId: js.UndefOr[Double] = js.undefined,
-    advertiser: String = null,
-    allowsAlcohol: js.UndefOr[Boolean] = js.undefined,
-    buyerAccountId: String = null,
-    currencyCode: String = null,
-    dealTier: String = null,
-    endTime: String = null,
-    fixedCpm: String = null,
-    id: String = null,
-    kind: String = null,
-    name: String = null,
-    privateExchangeMinCpm: String = null,
-    publisherBlocksOverriden: js.UndefOr[Boolean] = js.undefined,
-    sellerNetwork: String = null,
-    startTime: String = null
-  ): SchemaDirectDeal = {
+  def apply(): SchemaDirectDeal = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accountId)) __obj.updateDynamic("accountId")(accountId.get.asInstanceOf[js.Any])
-    if (advertiser != null) __obj.updateDynamic("advertiser")(advertiser.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowsAlcohol)) __obj.updateDynamic("allowsAlcohol")(allowsAlcohol.get.asInstanceOf[js.Any])
-    if (buyerAccountId != null) __obj.updateDynamic("buyerAccountId")(buyerAccountId.asInstanceOf[js.Any])
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (dealTier != null) __obj.updateDynamic("dealTier")(dealTier.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (fixedCpm != null) __obj.updateDynamic("fixedCpm")(fixedCpm.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (privateExchangeMinCpm != null) __obj.updateDynamic("privateExchangeMinCpm")(privateExchangeMinCpm.asInstanceOf[js.Any])
-    if (!js.isUndefined(publisherBlocksOverriden)) __obj.updateDynamic("publisherBlocksOverriden")(publisherBlocksOverriden.get.asInstanceOf[js.Any])
-    if (sellerNetwork != null) __obj.updateDynamic("sellerNetwork")(sellerNetwork.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDirectDeal]
   }
+  @scala.inline
+  implicit class SchemaDirectDealOps[Self <: SchemaDirectDeal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: Double): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdvertiser(value: String): Self = this.set("advertiser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiser: Self = this.set("advertiser", js.undefined)
+    @scala.inline
+    def setAllowsAlcohol(value: Boolean): Self = this.set("allowsAlcohol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowsAlcohol: Self = this.set("allowsAlcohol", js.undefined)
+    @scala.inline
+    def setBuyerAccountId(value: String): Self = this.set("buyerAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuyerAccountId: Self = this.set("buyerAccountId", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    @scala.inline
+    def setDealTier(value: String): Self = this.set("dealTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDealTier: Self = this.set("dealTier", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setFixedCpm(value: String): Self = this.set("fixedCpm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedCpm: Self = this.set("fixedCpm", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPrivateExchangeMinCpm(value: String): Self = this.set("privateExchangeMinCpm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateExchangeMinCpm: Self = this.set("privateExchangeMinCpm", js.undefined)
+    @scala.inline
+    def setPublisherBlocksOverriden(value: Boolean): Self = this.set("publisherBlocksOverriden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisherBlocksOverriden: Self = this.set("publisherBlocksOverriden", js.undefined)
+    @scala.inline
+    def setSellerNetwork(value: String): Self = this.set("sellerNetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSellerNetwork: Self = this.set("sellerNetwork", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

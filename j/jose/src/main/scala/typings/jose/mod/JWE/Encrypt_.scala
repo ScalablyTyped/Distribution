@@ -16,9 +16,27 @@ class Encrypt_ protected () extends js.Object {
   def this(cleartext: Buffer) = this()
   def this(cleartext: String, `protected`: js.Object) = this()
   def this(cleartext: Buffer, `protected`: js.Object) = this()
+  def this(cleartext: String, `protected`: js.UndefOr[scala.Nothing], unprotected: js.Object) = this()
   def this(cleartext: String, `protected`: js.Object, unprotected: js.Object) = this()
+  def this(cleartext: Buffer, `protected`: js.UndefOr[scala.Nothing], unprotected: js.Object) = this()
   def this(cleartext: Buffer, `protected`: js.Object, unprotected: js.Object) = this()
+  def this(
+    cleartext: String,
+    `protected`: js.UndefOr[scala.Nothing],
+    unprotected: js.UndefOr[scala.Nothing],
+    aad: String
+  ) = this()
+  def this(cleartext: String, `protected`: js.UndefOr[scala.Nothing], unprotected: js.Object, aad: String) = this()
+  def this(cleartext: String, `protected`: js.Object, unprotected: js.UndefOr[scala.Nothing], aad: String) = this()
   def this(cleartext: String, `protected`: js.Object, unprotected: js.Object, aad: String) = this()
+  def this(
+    cleartext: Buffer,
+    `protected`: js.UndefOr[scala.Nothing],
+    unprotected: js.UndefOr[scala.Nothing],
+    aad: String
+  ) = this()
+  def this(cleartext: Buffer, `protected`: js.UndefOr[scala.Nothing], unprotected: js.Object, aad: String) = this()
+  def this(cleartext: Buffer, `protected`: js.Object, unprotected: js.UndefOr[scala.Nothing], aad: String) = this()
   def this(cleartext: Buffer, `protected`: js.Object, unprotected: js.Object, aad: String) = this()
   @JSName("encrypt")
   def encrypt_compact(serialization: compact): String = js.native

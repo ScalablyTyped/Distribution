@@ -11,8 +11,8 @@ Simple fuzzy search
 | Full name          | fuzzy-search |
 | Keywords           | fuzzy, search, javascript |
 | # releases         | 8 |
-| # dependents       | 15 |
-| # downloads        | 6719459 |
+| # dependents       | 17 |
+| # downloads        | 7200430 |
 | # stars            | 3 |
 
 ## Links

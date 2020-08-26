@@ -4,47 +4,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Location extends js.Object {
   /** The accuracy of the location fix in meters. */
-  var accuracy: js.UndefOr[Double] = js.undefined
+  var accuracy: js.UndefOr[Double] = js.native
   /** The full address of the location. */
-  var address: js.UndefOr[String] = js.undefined
+  var address: js.UndefOr[String] = js.native
   /** The name to be displayed. This may be a business name or a user-defined place, such as "Home". */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String] = js.native
   /** The ID of the location. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** The type of resource. This is always mirror#location. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** The latitude, in degrees. */
-  var latitude: js.UndefOr[Double] = js.undefined
+  var latitude: js.UndefOr[Double] = js.native
   /** The longitude, in degrees. */
-  var longitude: js.UndefOr[Double] = js.undefined
+  var longitude: js.UndefOr[Double] = js.native
   /** The time at which this location was captured, formatted according to RFC 3339. */
-  var timestamp: js.UndefOr[String] = js.undefined
+  var timestamp: js.UndefOr[String] = js.native
 }
 
 object Location {
   @scala.inline
-  def apply(
-    accuracy: js.UndefOr[Double] = js.undefined,
-    address: String = null,
-    displayName: String = null,
-    id: String = null,
-    kind: String = null,
-    latitude: js.UndefOr[Double] = js.undefined,
-    longitude: js.UndefOr[Double] = js.undefined,
-    timestamp: String = null
-  ): Location = {
+  def apply(): Location = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
+  @scala.inline
+  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    @scala.inline
+    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

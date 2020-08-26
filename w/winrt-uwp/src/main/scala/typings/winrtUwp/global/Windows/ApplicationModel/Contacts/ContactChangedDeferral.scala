@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactChangedDeferral")
 @js.native
 abstract class ContactChangedDeferral ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangedDeferral {
-  /** Call this method in order to release the deferral object when all asynchronous processing has finished. */
-  /* CompleteClass */
-  override def complete(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangedDeferral
 

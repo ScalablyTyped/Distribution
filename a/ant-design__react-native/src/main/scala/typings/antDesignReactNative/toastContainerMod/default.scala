@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.toastContainerMod
 
-import typings.antDesignReactNative.anon.Duration
+import typings.antDesignReactNative.anon.Mask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ class default protected () extends ToastContainer {
 @JSImport("@ant-design/react-native/lib/toast/ToastContainer", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: Duration = js.native
+  var defaultProps: Mask = js.native
 }
 

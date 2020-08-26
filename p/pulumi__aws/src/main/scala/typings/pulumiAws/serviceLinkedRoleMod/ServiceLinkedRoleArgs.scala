@@ -23,15 +23,32 @@ trait ServiceLinkedRoleArgs extends js.Object {
 
 object ServiceLinkedRoleArgs {
   @scala.inline
-  def apply(
-    awsServiceName: Input[String],
-    customSuffix: Input[String] = null,
-    description: Input[String] = null
-  ): ServiceLinkedRoleArgs = {
+  def apply(awsServiceName: Input[String]): ServiceLinkedRoleArgs = {
     val __obj = js.Dynamic.literal(awsServiceName = awsServiceName.asInstanceOf[js.Any])
-    if (customSuffix != null) __obj.updateDynamic("customSuffix")(customSuffix.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceLinkedRoleArgs]
   }
+  @scala.inline
+  implicit class ServiceLinkedRoleArgsOps[Self <: ServiceLinkedRoleArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsServiceName(value: Input[String]): Self = this.set("awsServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomSuffix(value: Input[String]): Self = this.set("customSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSuffix: Self = this.set("customSuffix", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+  }
+  
 }
 

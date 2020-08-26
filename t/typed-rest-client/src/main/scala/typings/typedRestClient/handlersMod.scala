@@ -24,6 +24,7 @@ object handlersMod extends js.Object {
     extends typings.typedRestClient.ntlmMod.NtlmCredentialHandler {
     def this(username: String, password: String) = this()
     def this(username: String, password: String, workstation: String) = this()
+    def this(username: String, password: String, workstation: js.UndefOr[scala.Nothing], domain: String) = this()
     def this(username: String, password: String, workstation: String, domain: String) = this()
   }
   

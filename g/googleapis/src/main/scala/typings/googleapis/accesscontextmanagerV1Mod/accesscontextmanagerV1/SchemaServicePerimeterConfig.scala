@@ -37,16 +37,40 @@ trait SchemaServicePerimeterConfig extends js.Object {
 
 object SchemaServicePerimeterConfig {
   @scala.inline
-  def apply(
-    accessLevels: js.Array[String] = null,
-    resources: js.Array[String] = null,
-    restrictedServices: js.Array[String] = null
-  ): SchemaServicePerimeterConfig = {
+  def apply(): SchemaServicePerimeterConfig = {
     val __obj = js.Dynamic.literal()
-    if (accessLevels != null) __obj.updateDynamic("accessLevels")(accessLevels.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (restrictedServices != null) __obj.updateDynamic("restrictedServices")(restrictedServices.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServicePerimeterConfig]
   }
+  @scala.inline
+  implicit class SchemaServicePerimeterConfigOps[Self <: SchemaServicePerimeterConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessLevelsVarargs(value: String*): Self = this.set("accessLevels", js.Array(value :_*))
+    @scala.inline
+    def setAccessLevels(value: js.Array[String]): Self = this.set("accessLevels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessLevels: Self = this.set("accessLevels", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: String*): Self = this.set("resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: js.Array[String]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setRestrictedServicesVarargs(value: String*): Self = this.set("restrictedServices", js.Array(value :_*))
+    @scala.inline
+    def setRestrictedServices(value: js.Array[String]): Self = this.set("restrictedServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictedServices: Self = this.set("restrictedServices", js.undefined)
+  }
+  
 }
 

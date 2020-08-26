@@ -16,11 +16,7 @@ object Provider extends js.Object {
   /** Contains info about a removed contact. Returned when a ContactRemoved event occurs. */
   @js.native
   abstract class ContactRemovedEventArgs ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs {
-    /** Contains a unique identifier for the contact. */
-    /* CompleteClass */
-    override var id: String = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs
   
   /** Indicates whether a contact was added successfully. */
   @js.native

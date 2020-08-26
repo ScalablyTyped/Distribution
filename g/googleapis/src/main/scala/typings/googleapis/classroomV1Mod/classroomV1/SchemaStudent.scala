@@ -33,18 +33,38 @@ trait SchemaStudent extends js.Object {
 
 object SchemaStudent {
   @scala.inline
-  def apply(
-    courseId: String = null,
-    profile: SchemaUserProfile = null,
-    studentWorkFolder: SchemaDriveFolder = null,
-    userId: String = null
-  ): SchemaStudent = {
+  def apply(): SchemaStudent = {
     val __obj = js.Dynamic.literal()
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (studentWorkFolder != null) __obj.updateDynamic("studentWorkFolder")(studentWorkFolder.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStudent]
   }
+  @scala.inline
+  implicit class SchemaStudentOps[Self <: SchemaStudent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCourseId(value: String): Self = this.set("courseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCourseId: Self = this.set("courseId", js.undefined)
+    @scala.inline
+    def setProfile(value: SchemaUserProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setStudentWorkFolder(value: SchemaDriveFolder): Self = this.set("studentWorkFolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStudentWorkFolder: Self = this.set("studentWorkFolder", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

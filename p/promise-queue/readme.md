@@ -12,7 +12,7 @@ Promise-based queue
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 135 |
-| # downloads        | 11242579 |
+| # downloads        | 11658471 |
 | # stars            | 9 |
 
 ## Links

@@ -317,7 +317,7 @@ object TzDatabase extends js.Object {
   /**
     * Single instance member
     */
-  var _instance: js.UndefOr[js.Any] = js.native
+  var _instance: js.Any = js.native
   /**
     * (re-) initialize timezonecomplete with time zone data
     *

@@ -12,7 +12,7 @@ Simple isomorphic router
 | Keywords           | riot, router |
 | # releases         | 3 |
 | # dependents       | 9 |
-| # downloads        | 125868 |
+| # downloads        | 125541 |
 | # stars            | 2 |
 
 ## Links

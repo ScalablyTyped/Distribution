@@ -64,6 +64,7 @@ object ssm extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: AssociationArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: AssociationArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -149,6 +150,7 @@ object ssm extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: PatchBaselineArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: PatchBaselineArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -183,12 +185,12 @@ object ssm extends js.Object {
   var SecureStringParameter: ParameterType = js.native
   var StringListParameter: ParameterType = js.native
   var StringParameter: ParameterType = js.native
-  def getDocument(args: GetDocumentArgs): js.Promise[GetDocumentResult] with GetDocumentResult = js.native
-  def getDocument(args: GetDocumentArgs, opts: InvokeOptions): js.Promise[GetDocumentResult] with GetDocumentResult = js.native
-  def getParameter(args: GetParameterArgs): js.Promise[GetParameterResult] with GetParameterResult = js.native
-  def getParameter(args: GetParameterArgs, opts: InvokeOptions): js.Promise[GetParameterResult] with GetParameterResult = js.native
-  def getPatchBaseline(args: GetPatchBaselineArgs): js.Promise[GetPatchBaselineResult] with GetPatchBaselineResult = js.native
-  def getPatchBaseline(args: GetPatchBaselineArgs, opts: InvokeOptions): js.Promise[GetPatchBaselineResult] with GetPatchBaselineResult = js.native
+  def getDocument(args: GetDocumentArgs): js.Promise[GetDocumentResult] = js.native
+  def getDocument(args: GetDocumentArgs, opts: InvokeOptions): js.Promise[GetDocumentResult] = js.native
+  def getParameter(args: GetParameterArgs): js.Promise[GetParameterResult] = js.native
+  def getParameter(args: GetParameterArgs, opts: InvokeOptions): js.Promise[GetParameterResult] = js.native
+  def getPatchBaseline(args: GetPatchBaselineArgs): js.Promise[GetPatchBaselineResult] = js.native
+  def getPatchBaseline(args: GetPatchBaselineArgs, opts: InvokeOptions): js.Promise[GetPatchBaselineResult] = js.native
   /* static members */
   @js.native
   object Activation extends js.Object {
@@ -199,8 +201,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.activationMod.Activation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.activationMod.Activation = js.native
     def get(name: String, id: Input[ID], state: ActivationState): typings.pulumiAws.activationMod.Activation = js.native
     def get(name: String, id: Input[ID], state: ActivationState, opts: CustomResourceOptions): typings.pulumiAws.activationMod.Activation = js.native
     /**
@@ -220,8 +224,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.ssmAssociationMod.Association = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ssmAssociationMod.Association = js.native
     def get(name: String, id: Input[ID], state: AssociationState): typings.pulumiAws.ssmAssociationMod.Association = js.native
     def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): typings.pulumiAws.ssmAssociationMod.Association = js.native
     /**
@@ -241,8 +247,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.documentMod.Document = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.documentMod.Document = js.native
     def get(name: String, id: Input[ID], state: DocumentState): typings.pulumiAws.documentMod.Document = js.native
     def get(name: String, id: Input[ID], state: DocumentState, opts: CustomResourceOptions): typings.pulumiAws.documentMod.Document = js.native
     /**
@@ -262,8 +270,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.maintenanceWindowMod.MaintenanceWindow = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.maintenanceWindowMod.MaintenanceWindow = js.native
     def get(name: String, id: Input[ID], state: MaintenanceWindowState): typings.pulumiAws.maintenanceWindowMod.MaintenanceWindow = js.native
     def get(name: String, id: Input[ID], state: MaintenanceWindowState, opts: CustomResourceOptions): typings.pulumiAws.maintenanceWindowMod.MaintenanceWindow = js.native
     /**
@@ -283,8 +293,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.maintenanceWindowTargetMod.MaintenanceWindowTarget = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.maintenanceWindowTargetMod.MaintenanceWindowTarget = js.native
     def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState): typings.pulumiAws.maintenanceWindowTargetMod.MaintenanceWindowTarget = js.native
     def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState, opts: CustomResourceOptions): typings.pulumiAws.maintenanceWindowTargetMod.MaintenanceWindowTarget = js.native
     /**
@@ -304,8 +316,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.maintenanceWindowTaskMod.MaintenanceWindowTask = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.maintenanceWindowTaskMod.MaintenanceWindowTask = js.native
     def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState): typings.pulumiAws.maintenanceWindowTaskMod.MaintenanceWindowTask = js.native
     def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState, opts: CustomResourceOptions): typings.pulumiAws.maintenanceWindowTaskMod.MaintenanceWindowTask = js.native
     /**
@@ -325,8 +339,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.parameterMod.Parameter = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.parameterMod.Parameter = js.native
     def get(name: String, id: Input[ID], state: ParameterState): typings.pulumiAws.parameterMod.Parameter = js.native
     def get(name: String, id: Input[ID], state: ParameterState, opts: CustomResourceOptions): typings.pulumiAws.parameterMod.Parameter = js.native
     /**
@@ -346,8 +362,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.patchBaselineMod.PatchBaseline = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.patchBaselineMod.PatchBaseline = js.native
     def get(name: String, id: Input[ID], state: PatchBaselineState): typings.pulumiAws.patchBaselineMod.PatchBaseline = js.native
     def get(name: String, id: Input[ID], state: PatchBaselineState, opts: CustomResourceOptions): typings.pulumiAws.patchBaselineMod.PatchBaseline = js.native
     /**
@@ -367,8 +385,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.patchGroupMod.PatchGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.patchGroupMod.PatchGroup = js.native
     def get(name: String, id: Input[ID], state: PatchGroupState): typings.pulumiAws.patchGroupMod.PatchGroup = js.native
     def get(name: String, id: Input[ID], state: PatchGroupState, opts: CustomResourceOptions): typings.pulumiAws.patchGroupMod.PatchGroup = js.native
     /**
@@ -388,8 +408,10 @@ object ssm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.resourceDataSyncMod.ResourceDataSync = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceDataSyncMod.ResourceDataSync = js.native
     def get(name: String, id: Input[ID], state: ResourceDataSyncState): typings.pulumiAws.resourceDataSyncMod.ResourceDataSync = js.native
     def get(name: String, id: Input[ID], state: ResourceDataSyncState, opts: CustomResourceOptions): typings.pulumiAws.resourceDataSyncMod.ResourceDataSync = js.native
     /**

@@ -34,20 +34,42 @@ trait CreatePresetRequest extends js.Object {
 
 object CreatePresetRequest {
   @scala.inline
-  def apply(
-    Container: PresetContainer,
-    Name: Name,
-    Audio: AudioParameters = null,
-    Description: Description = null,
-    Thumbnails: Thumbnails = null,
-    Video: VideoParameters = null
-  ): CreatePresetRequest = {
+  def apply(Container: PresetContainer, Name: Name): CreatePresetRequest = {
     val __obj = js.Dynamic.literal(Container = Container.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (Audio != null) __obj.updateDynamic("Audio")(Audio.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Thumbnails != null) __obj.updateDynamic("Thumbnails")(Thumbnails.asInstanceOf[js.Any])
-    if (Video != null) __obj.updateDynamic("Video")(Video.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePresetRequest]
   }
+  @scala.inline
+  implicit class CreatePresetRequestOps[Self <: CreatePresetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: PresetContainer): Self = this.set("Container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAudio(value: AudioParameters): Self = this.set("Audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudio: Self = this.set("Audio", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setThumbnails(value: Thumbnails): Self = this.set("Thumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnails: Self = this.set("Thumbnails", js.undefined)
+    @scala.inline
+    def setVideo(value: VideoParameters): Self = this.set("Video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("Video", js.undefined)
+  }
+  
 }
 

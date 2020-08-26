@@ -1,29 +1,38 @@
 package typings.postcssSelectorParser.mod
 
-import typings.postcssSelectorParser.anon.PartialSpaces
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContainerOptions extends NodeOptions[String] {
-  var nodes: js.UndefOr[js.Array[Node]] = js.undefined
+  var nodes: js.UndefOr[js.Array[Node]] = js.native
 }
 
 object ContainerOptions {
   @scala.inline
-  def apply(
-    value: String,
-    nodes: js.Array[Node] = null,
-    source: NodeSource = null,
-    sourceIndex: js.UndefOr[Double] = js.undefined,
-    spaces: PartialSpaces = null
-  ): ContainerOptions = {
+  def apply(value: String): ContainerOptions = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceIndex)) __obj.updateDynamic("sourceIndex")(sourceIndex.get.asInstanceOf[js.Any])
-    if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerOptions]
   }
+  @scala.inline
+  implicit class ContainerOptionsOps[Self <: ContainerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNodesVarargs(value: Node*): Self = this.set("nodes", js.Array(value :_*))
+    @scala.inline
+    def setNodes(value: js.Array[Node]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodes: Self = this.set("nodes", js.undefined)
+  }
+  
 }
 

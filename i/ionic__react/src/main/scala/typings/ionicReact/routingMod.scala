@@ -1,0 +1,38 @@
+package typings.ionicReact
+
+import typings.ionicReact.navManagerMod.NavManagerProps
+import typings.ionicReact.routeManagerContextMod.RouteManagerContextState
+import typings.ionicReact.stackContextMod.StackContextState
+import typings.ionicReact.viewLifeCycleManagerMod.ViewTransitionManagerProps
+import typings.react.mod.Context
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@ionic/react/dist/types/routing", JSImport.Namespace)
+@js.native
+object routingMod extends js.Object {
+  @js.native
+  class LocationHistory ()
+    extends typings.ionicReact.locationHistoryMod.LocationHistory
+  
+  @js.native
+  class NavManager protected ()
+    extends typings.ionicReact.navManagerMod.NavManager {
+    def this(props: NavManagerProps) = this()
+  }
+  
+  @js.native
+  class ViewLifeCycleManager protected ()
+    extends typings.ionicReact.viewLifeCycleManagerMod.ViewLifeCycleManager {
+    def this(props: ViewTransitionManagerProps) = this()
+  }
+  
+  @js.native
+  abstract class ViewStacks ()
+    extends typings.ionicReact.viewStacksMod.ViewStacks
+  
+  val RouteManagerContext: Context[RouteManagerContextState] = js.native
+  val StackContext: Context[StackContextState] = js.native
+}
+

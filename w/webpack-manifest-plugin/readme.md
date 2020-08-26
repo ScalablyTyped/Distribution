@@ -11,8 +11,8 @@ webpack plugin for generating asset manifests
 | Full name          | webpack-manifest-plugin |
 | Keywords           | - |
 | # releases         | 12 |
-| # dependents       | 3115 |
-| # downloads        | 95197172 |
+| # dependents       | 3161 |
+| # downloads        | 97181786 |
 | # stars            | 23 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for detect-browser
 
-Typings are for version 4.8.0
+Typings are for version 5.1.1
 
 ## Library description:
 Unpack a browser type and version from the useragent string
@@ -11,8 +11,8 @@ Unpack a browser type and version from the useragent string
 | Full name          | detect-browser |
 | Keywords           | browser, detect, useragent |
 | # releases         | 24 |
-| # dependents       | 123 |
-| # downloads        | 4780377 |
+| # dependents       | 129 |
+| # downloads        | 4954501 |
 | # stars            | 9 |
 
 ## Links

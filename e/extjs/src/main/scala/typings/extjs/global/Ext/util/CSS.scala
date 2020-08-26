@@ -44,7 +44,11 @@ object CSS extends js.Object {
     * @returns CSSStyleRule The created rule
     */
   def createRule(): CSSStyleRule = js.native
+  def createRule(styleSheet: js.UndefOr[scala.Nothing], selector: js.UndefOr[scala.Nothing], property: String): CSSStyleRule = js.native
+  def createRule(styleSheet: js.UndefOr[scala.Nothing], selector: String): CSSStyleRule = js.native
+  def createRule(styleSheet: js.UndefOr[scala.Nothing], selector: String, property: String): CSSStyleRule = js.native
   def createRule(styleSheet: CSSStyleSheet): CSSStyleRule = js.native
+  def createRule(styleSheet: CSSStyleSheet, selector: js.UndefOr[scala.Nothing], property: String): CSSStyleRule = js.native
   def createRule(styleSheet: CSSStyleSheet, selector: String): CSSStyleRule = js.native
   def createRule(styleSheet: CSSStyleSheet, selector: String, property: String): CSSStyleRule = js.native
   /** [Method] Creates a stylesheet from a text blob of rules
@@ -53,6 +57,7 @@ object CSS extends js.Object {
     * @returns CSSStyleSheet
     */
   def createStyleSheet(): CSSStyleSheet = js.native
+  def createStyleSheet(cssText: js.UndefOr[scala.Nothing], id: String): CSSStyleSheet = js.native
   def createStyleSheet(cssText: String): CSSStyleSheet = js.native
   def createStyleSheet(cssText: String, id: String): CSSStyleSheet = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
@@ -67,6 +72,7 @@ object CSS extends js.Object {
     * @returns CSSStyleRule The CSS rule or null if one is not found
     */
   def getRule(): CSSStyleRule = js.native
+  def getRule(selector: js.UndefOr[scala.Nothing], refreshCache: Boolean): CSSStyleRule = js.native
   def getRule(selector: js.Any): CSSStyleRule = js.native
   def getRule(selector: js.Any, refreshCache: Boolean): CSSStyleRule = js.native
   /** [Method] Gets all css rules for the document
@@ -99,6 +105,7 @@ object CSS extends js.Object {
     * @param url String The href of the new stylesheet to include
     */
   def swapStyleSheet(): Unit = js.native
+  def swapStyleSheet(id: js.UndefOr[scala.Nothing], url: String): Unit = js.native
   def swapStyleSheet(id: String): Unit = js.native
   def swapStyleSheet(id: String, url: String): Unit = js.native
   /** [Method] Updates a rule property
@@ -108,7 +115,11 @@ object CSS extends js.Object {
     * @returns Boolean true If a rule was found and updated
     */
   def updateRule(): Boolean = js.native
+  def updateRule(selector: js.UndefOr[scala.Nothing], property: js.UndefOr[scala.Nothing], value: String): Boolean = js.native
+  def updateRule(selector: js.UndefOr[scala.Nothing], property: String): Boolean = js.native
+  def updateRule(selector: js.UndefOr[scala.Nothing], property: String, value: String): Boolean = js.native
   def updateRule(selector: js.Any): Boolean = js.native
+  def updateRule(selector: js.Any, property: js.UndefOr[scala.Nothing], value: String): Boolean = js.native
   def updateRule(selector: js.Any, property: String): Boolean = js.native
   def updateRule(selector: js.Any, property: String, value: String): Boolean = js.native
 }

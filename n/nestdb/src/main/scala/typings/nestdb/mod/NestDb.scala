@@ -148,12 +148,30 @@ trait NestDb[G] extends EventEmitter {
     * @api private Use Datastore.update which has the same signature
     */
   def update(query: js.Any, updateQuery: js.Any): Unit = js.native
+  def update(
+    query: js.Any,
+    updateQuery: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    cb: js.Function3[/* err */ Error, /* numberOfUpdated */ Double, /* upsert */ Boolean, Unit]
+  ): Unit = js.native
   def update(query: js.Any, updateQuery: js.Any, options: UpdateOptions): Unit = js.native
   def update(
     query: js.Any,
     updateQuery: js.Any,
     options: UpdateOptions,
     cb: js.Function3[/* err */ Error, /* numberOfUpdated */ Double, /* upsert */ Boolean, Unit]
+  ): Unit = js.native
+  def update[T /* <: G */](
+    query: js.Any,
+    updateQuery: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    cb: js.Function4[
+      /* err */ Error, 
+      /* numberOfUpdated */ Double, 
+      /* affectedDocuments */ js.Any, 
+      /* upsert */ Boolean, 
+      Unit
+    ]
   ): Unit = js.native
   def update[T /* <: G */](
     query: js.Any,

@@ -22,12 +22,36 @@ trait PipelineOutputConfig extends js.Object {
 
 object PipelineOutputConfig {
   @scala.inline
-  def apply(Bucket: BucketName = null, Permissions: Permissions = null, StorageClass: StorageClass = null): PipelineOutputConfig = {
+  def apply(): PipelineOutputConfig = {
     val __obj = js.Dynamic.literal()
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
-    if (Permissions != null) __obj.updateDynamic("Permissions")(Permissions.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineOutputConfig]
   }
+  @scala.inline
+  implicit class PipelineOutputConfigOps[Self <: PipelineOutputConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: Permission*): Self = this.set("Permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: Permissions): Self = this.set("Permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("Permissions", js.undefined)
+    @scala.inline
+    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+  }
+  
 }
 

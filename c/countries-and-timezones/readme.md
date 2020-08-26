@@ -12,7 +12,7 @@ Minimalistic library to work with countries and timezones data.
 | Keywords           | Countries, Timezones, Country, Timezone, Time, Date, DST |
 | # releases         | 9 |
 | # dependents       | 12 |
-| # downloads        | 343453 |
+| # downloads        | 378249 |
 | # stars            | 1 |
 
 ## Links

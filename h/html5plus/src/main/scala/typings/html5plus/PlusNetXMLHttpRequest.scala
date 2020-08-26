@@ -195,8 +195,39 @@ trait PlusNetXMLHttpRequest extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
   def open(): Unit = js.native
+  def open(
+    method: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    username: js.UndefOr[scala.Nothing],
+    password: String
+  ): Unit = js.native
+  def open(method: js.UndefOr[scala.Nothing], url: js.UndefOr[scala.Nothing], username: String): Unit = js.native
+  def open(
+    method: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    username: String,
+    password: String
+  ): Unit = js.native
+  def open(method: js.UndefOr[scala.Nothing], url: String): Unit = js.native
+  def open(
+    method: js.UndefOr[scala.Nothing],
+    url: String,
+    username: js.UndefOr[scala.Nothing],
+    password: String
+  ): Unit = js.native
+  def open(method: js.UndefOr[scala.Nothing], url: String, username: String): Unit = js.native
+  def open(method: js.UndefOr[scala.Nothing], url: String, username: String, password: String): Unit = js.native
   def open(method: String): Unit = js.native
+  def open(
+    method: String,
+    url: js.UndefOr[scala.Nothing],
+    username: js.UndefOr[scala.Nothing],
+    password: String
+  ): Unit = js.native
+  def open(method: String, url: js.UndefOr[scala.Nothing], username: String): Unit = js.native
+  def open(method: String, url: js.UndefOr[scala.Nothing], username: String, password: String): Unit = js.native
   def open(method: String, url: String): Unit = js.native
+  def open(method: String, url: String, username: js.UndefOr[scala.Nothing], password: String): Unit = js.native
   def open(method: String, url: String, username: String): Unit = js.native
   def open(method: String, url: String, username: String, password: String): Unit = js.native
   /**
@@ -235,6 +266,7 @@ trait PlusNetXMLHttpRequest extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
   def setRequestHeader(): Unit = js.native
+  def setRequestHeader(headerName: js.UndefOr[scala.Nothing], headerValue: String): Unit = js.native
   def setRequestHeader(headerName: String): Unit = js.native
   def setRequestHeader(headerName: String, headerValue: String): Unit = js.native
 }

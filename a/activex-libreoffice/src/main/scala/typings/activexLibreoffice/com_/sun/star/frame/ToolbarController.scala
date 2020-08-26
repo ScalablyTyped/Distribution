@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.frame.XDispatchProvider
   * @since OOo 2.0
   */
+@js.native
 trait ToolbarController
   extends XStatusListener
      with XInitialization

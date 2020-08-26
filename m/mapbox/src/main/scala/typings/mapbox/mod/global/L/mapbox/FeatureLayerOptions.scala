@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FeatureLayerOptions extends js.Object {
-  var filter: js.UndefOr[FilterFunction] = js.undefined
-  var sanitizer: js.UndefOr[js.Function1[/* template */ String, String]] = js.undefined
+  var filter: js.UndefOr[FilterFunction] = js.native
+  var sanitizer: js.UndefOr[js.Function1[/* template */ String, String]] = js.native
 }
 
 object FeatureLayerOptions {
   @scala.inline
-  def apply(filter: /* feature */ js.Any => Boolean = null, sanitizer: /* template */ String => String = null): FeatureLayerOptions = {
+  def apply(): FeatureLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (sanitizer != null) __obj.updateDynamic("sanitizer")(js.Any.fromFunction1(sanitizer))
     __obj.asInstanceOf[FeatureLayerOptions]
   }
+  @scala.inline
+  implicit class FeatureLayerOptionsOps[Self <: FeatureLayerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(value: /* feature */ js.Any => Boolean): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setSanitizer(value: /* template */ String => String): Self = this.set("sanitizer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSanitizer: Self = this.set("sanitizer", js.undefined)
+  }
+  
 }
 

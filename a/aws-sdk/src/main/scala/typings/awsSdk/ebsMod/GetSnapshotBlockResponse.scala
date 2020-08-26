@@ -26,18 +26,38 @@ trait GetSnapshotBlockResponse extends js.Object {
 
 object GetSnapshotBlockResponse {
   @scala.inline
-  def apply(
-    BlockData: BlockData = null,
-    Checksum: Checksum = null,
-    ChecksumAlgorithm: ChecksumAlgorithm = null,
-    DataLength: js.UndefOr[DataLength] = js.undefined
-  ): GetSnapshotBlockResponse = {
+  def apply(): GetSnapshotBlockResponse = {
     val __obj = js.Dynamic.literal()
-    if (BlockData != null) __obj.updateDynamic("BlockData")(BlockData.asInstanceOf[js.Any])
-    if (Checksum != null) __obj.updateDynamic("Checksum")(Checksum.asInstanceOf[js.Any])
-    if (ChecksumAlgorithm != null) __obj.updateDynamic("ChecksumAlgorithm")(ChecksumAlgorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataLength)) __obj.updateDynamic("DataLength")(DataLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSnapshotBlockResponse]
   }
+  @scala.inline
+  implicit class GetSnapshotBlockResponseOps[Self <: GetSnapshotBlockResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockData(value: BlockData): Self = this.set("BlockData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockData: Self = this.set("BlockData", js.undefined)
+    @scala.inline
+    def setChecksum(value: Checksum): Self = this.set("Checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("Checksum", js.undefined)
+    @scala.inline
+    def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = this.set("ChecksumAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksumAlgorithm: Self = this.set("ChecksumAlgorithm", js.undefined)
+    @scala.inline
+    def setDataLength(value: DataLength): Self = this.set("DataLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataLength: Self = this.set("DataLength", js.undefined)
+  }
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.pulumiAws.threatIntelSetMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -26,6 +27,10 @@ class ThreatIntelSet protected () extends CustomResource {
     */
   val activate: Output_[Boolean] = js.native
   /**
+    * Amazon Resource Name (ARN) of the GuardDuty ThreatIntelSet.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The detector ID of the GuardDuty.
     */
   val detectorId: Output_[String] = js.native
@@ -41,6 +46,10 @@ class ThreatIntelSet protected () extends CustomResource {
     * The friendly name to identify the ThreatIntelSet.
     */
   val name: Output_[String] = js.native
+  /**
+    * Key-value map of resource tags.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -54,8 +63,10 @@ object ThreatIntelSet extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ThreatIntelSet = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ThreatIntelSet = js.native
   def get(name: String, id: Input[ID], state: ThreatIntelSetState): ThreatIntelSet = js.native
   def get(name: String, id: Input[ID], state: ThreatIntelSetState, opts: CustomResourceOptions): ThreatIntelSet = js.native
   /**

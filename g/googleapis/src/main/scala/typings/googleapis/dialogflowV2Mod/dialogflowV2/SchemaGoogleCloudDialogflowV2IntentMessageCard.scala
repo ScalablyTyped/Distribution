@@ -29,18 +29,40 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageCard extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2IntentMessageCard {
   @scala.inline
-  def apply(
-    buttons: js.Array[SchemaGoogleCloudDialogflowV2IntentMessageCardButton] = null,
-    imageUri: String = null,
-    subtitle: String = null,
-    title: String = null
-  ): SchemaGoogleCloudDialogflowV2IntentMessageCard = {
+  def apply(): SchemaGoogleCloudDialogflowV2IntentMessageCard = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentMessageCard]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2IntentMessageCardOps[Self <: SchemaGoogleCloudDialogflowV2IntentMessageCard] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButtonsVarargs(value: SchemaGoogleCloudDialogflowV2IntentMessageCardButton*): Self = this.set("buttons", js.Array(value :_*))
+    @scala.inline
+    def setButtons(value: js.Array[SchemaGoogleCloudDialogflowV2IntentMessageCardButton]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+    @scala.inline
+    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

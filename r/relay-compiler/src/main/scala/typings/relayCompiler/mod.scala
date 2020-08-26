@@ -14,7 +14,6 @@ import typings.relayCompiler.irvisitorMod.VisitNode
 import typings.relayCompiler.relayCompilerErrorMod.UserError
 import typings.relayCompiler.relayCompilerMainMod.Config
 import typings.relayCompiler.schemaMod.Schema
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,28 +29,15 @@ object mod extends js.Object {
   
   @js.native
   class ConsoleReporter ()
-    extends typings.relayCompiler.consoleReporterMod.ConsoleReporter {
-    /* CompleteClass */
-    override def reportError(caughtLocation: String, error: Error): Unit = js.native
-    /* CompleteClass */
-    override def reportMessage(message: String): Unit = js.native
-    /* CompleteClass */
-    override def reportTime(name: String, ms: Double): Unit = js.native
-  }
+    extends typings.relayCompiler.consoleReporterMod.ConsoleReporter
   
   @js.native
   class MultiReporter ()
-    extends typings.relayCompiler.multiReporterMod.MultiReporter {
-    /* CompleteClass */
-    override def reportError(caughtLocation: String, error: Error): Unit = js.native
-    /* CompleteClass */
-    override def reportMessage(message: String): Unit = js.native
-    /* CompleteClass */
-    override def reportTime(name: String, ms: Double): Unit = js.native
-  }
+    extends typings.relayCompiler.multiReporterMod.MultiReporter
   
   var transformASTSchema: js.Function2[/* schema */ GraphQLSchema, /* schemaExtensions */ js.Array[String], GraphQLSchema] = js.native
   def createUserError(message: String): UserError = js.native
+  def createUserError(message: String, locations: js.UndefOr[scala.Nothing], nodes: js.Array[ASTNode]): UserError = js.native
   def createUserError(message: String, locations: js.Array[Location]): UserError = js.native
   def createUserError(message: String, locations: js.Array[Location], nodes: js.Array[ASTNode]): UserError = js.native
   def relayCompiler(config: Config): js.Promise[Unit] = js.native

@@ -19,7 +19,7 @@ trait RouteTableState extends js.Object {
   /**
     * Key-value tags for the EC2 Transit Gateway Route Table.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Identifier of EC2 Transit Gateway.
     */
@@ -28,18 +28,38 @@ trait RouteTableState extends js.Object {
 
 object RouteTableState {
   @scala.inline
-  def apply(
-    defaultAssociationRouteTable: Input[Boolean] = null,
-    defaultPropagationRouteTable: Input[Boolean] = null,
-    tags: Input[StringDictionary[_]] = null,
-    transitGatewayId: Input[String] = null
-  ): RouteTableState = {
+  def apply(): RouteTableState = {
     val __obj = js.Dynamic.literal()
-    if (defaultAssociationRouteTable != null) __obj.updateDynamic("defaultAssociationRouteTable")(defaultAssociationRouteTable.asInstanceOf[js.Any])
-    if (defaultPropagationRouteTable != null) __obj.updateDynamic("defaultPropagationRouteTable")(defaultPropagationRouteTable.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteTableState]
   }
+  @scala.inline
+  implicit class RouteTableStateOps[Self <: RouteTableState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultAssociationRouteTable(value: Input[Boolean]): Self = this.set("defaultAssociationRouteTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAssociationRouteTable: Self = this.set("defaultAssociationRouteTable", js.undefined)
+    @scala.inline
+    def setDefaultPropagationRouteTable(value: Input[Boolean]): Self = this.set("defaultPropagationRouteTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPropagationRouteTable: Self = this.set("defaultPropagationRouteTable", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: Input[String]): Self = this.set("transitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("transitGatewayId", js.undefined)
+  }
+  
 }
 

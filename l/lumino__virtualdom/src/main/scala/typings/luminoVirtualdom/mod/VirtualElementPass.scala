@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@lumino/virtualdom", "VirtualElementPass")
 @js.native
 class VirtualElementPass protected () extends VirtualElement {
-  def this(tag: String, attrs: ElementAttrs) = this()
   /**
     * DEPRECATED - use VirtualElement with a defined renderer param instead
     *
@@ -26,6 +25,7 @@ class VirtualElementPass protected () extends VirtualElement {
     * HTMLElement and return nothing. If null, the parent element
     * will be rendered barren without any children.
     */
+  def this(tag: String, attrs: ElementAttrs) = this()
   def this(tag: String, attrs: ElementAttrs, renderer: IRenderer) = this()
 }
 

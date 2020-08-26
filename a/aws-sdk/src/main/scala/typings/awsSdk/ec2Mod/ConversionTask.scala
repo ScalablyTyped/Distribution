@@ -38,24 +38,52 @@ trait ConversionTask extends js.Object {
 
 object ConversionTask {
   @scala.inline
-  def apply(
-    ConversionTaskId: String = null,
-    ExpirationTime: String = null,
-    ImportInstance: ImportInstanceTaskDetails = null,
-    ImportVolume: ImportVolumeTaskDetails = null,
-    State: ConversionTaskState = null,
-    StatusMessage: String = null,
-    Tags: TagList = null
-  ): ConversionTask = {
+  def apply(): ConversionTask = {
     val __obj = js.Dynamic.literal()
-    if (ConversionTaskId != null) __obj.updateDynamic("ConversionTaskId")(ConversionTaskId.asInstanceOf[js.Any])
-    if (ExpirationTime != null) __obj.updateDynamic("ExpirationTime")(ExpirationTime.asInstanceOf[js.Any])
-    if (ImportInstance != null) __obj.updateDynamic("ImportInstance")(ImportInstance.asInstanceOf[js.Any])
-    if (ImportVolume != null) __obj.updateDynamic("ImportVolume")(ImportVolume.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversionTask]
   }
+  @scala.inline
+  implicit class ConversionTaskOps[Self <: ConversionTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConversionTaskId(value: String): Self = this.set("ConversionTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionTaskId: Self = this.set("ConversionTaskId", js.undefined)
+    @scala.inline
+    def setExpirationTime(value: String): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTime: Self = this.set("ExpirationTime", js.undefined)
+    @scala.inline
+    def setImportInstance(value: ImportInstanceTaskDetails): Self = this.set("ImportInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportInstance: Self = this.set("ImportInstance", js.undefined)
+    @scala.inline
+    def setImportVolume(value: ImportVolumeTaskDetails): Self = this.set("ImportVolume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportVolume: Self = this.set("ImportVolume", js.undefined)
+    @scala.inline
+    def setState(value: ConversionTaskState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

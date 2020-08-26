@@ -44,6 +44,16 @@ class NavigationStart protected () extends RouterEvent {
     /** @docsNotRequired */
   url: String,
     /** @docsNotRequired */
+  navigationTrigger: js.UndefOr[scala.Nothing],
+    /** @docsNotRequired */
+  restoredState: Dictk
+  ) = this()
+  def this(
+    /** @docsNotRequired */
+  id: Double,
+    /** @docsNotRequired */
+  url: String,
+    /** @docsNotRequired */
   navigationTrigger: hashchange,
     /** @docsNotRequired */
   restoredState: Dictk
@@ -72,6 +82,9 @@ class NavigationStart protected () extends RouterEvent {
     * Identifies the call or event that triggered the navigation.
     * An `imperative` trigger is a call to `router.navigateByUrl()` or `router.navigate()`.
     *
+    * @see `NavigationEnd`
+    * @see `NavigationCancel`
+    * @see `NavigationError`
     */
   var navigationTrigger: js.UndefOr[imperative | popstate | hashchange] = js.native
   /**

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@material/notched-outline" : "7.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@material/notched-outline" : "7.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

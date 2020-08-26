@@ -26,17 +26,36 @@ trait ListAnalyzedResourcesRequest extends js.Object {
 
 object ListAnalyzedResourcesRequest {
   @scala.inline
-  def apply(
-    analyzerArn: AnalyzerArn,
-    maxResults: js.UndefOr[Integer] = js.undefined,
-    nextToken: Token = null,
-    resourceType: ResourceType = null
-  ): ListAnalyzedResourcesRequest = {
+  def apply(analyzerArn: AnalyzerArn): ListAnalyzedResourcesRequest = {
     val __obj = js.Dynamic.literal(analyzerArn = analyzerArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAnalyzedResourcesRequest]
   }
+  @scala.inline
+  implicit class ListAnalyzedResourcesRequestOps[Self <: ListAnalyzedResourcesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnalyzerArn(value: AnalyzerArn): Self = this.set("analyzerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: Integer): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+  }
+  
 }
 

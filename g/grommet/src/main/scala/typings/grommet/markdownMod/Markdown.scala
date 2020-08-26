@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Markdown", "Markdown")
+@JSImport("grommet/es6/components/Markdown", "Markdown")
 @js.native
 class Markdown protected ()
   extends Component[
@@ -26,7 +26,7 @@ class Markdown protected ()
   ) = this()
 }
 
-@JSImport("grommet/components/Markdown", "Markdown")
+@JSImport("grommet/es6/components/Markdown", "Markdown")
 @js.native
 object Markdown extends TopLevel[
       ComponentClass[

@@ -15,10 +15,26 @@ trait InputDestinationRequest extends js.Object {
 
 object InputDestinationRequest {
   @scala.inline
-  def apply(StreamName: string = null): InputDestinationRequest = {
+  def apply(): InputDestinationRequest = {
     val __obj = js.Dynamic.literal()
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDestinationRequest]
   }
+  @scala.inline
+  implicit class InputDestinationRequestOps[Self <: InputDestinationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStreamName(value: string): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+  }
+  
 }
 

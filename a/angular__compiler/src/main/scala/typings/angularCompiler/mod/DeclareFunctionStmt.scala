@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "DeclareFunctionStmt")
 @js.native
 class DeclareFunctionStmt protected ()
-  extends typings.angularCompiler.publicApiMod.DeclareFunctionStmt {
+  extends typings.angularCompiler.compilerMod.DeclareFunctionStmt {
   def this(
     name: String,
     params: js.Array[FnParam],
@@ -19,6 +19,13 @@ class DeclareFunctionStmt protected ()
     params: js.Array[FnParam],
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
     `type`: typings.angularCompiler.outputAstMod.Type
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier]
   ) = this()
   def this(
     name: String,
@@ -38,6 +45,38 @@ class DeclareFunctionStmt protected ()
     name: String,
     params: js.Array[FnParam],
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: Null,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: Null,
+    modifiers: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
     `type`: Null,
     modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier],
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
@@ -48,6 +87,14 @@ class DeclareFunctionStmt protected ()
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
     `type`: Null,
     modifiers: Null,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: typings.angularCompiler.outputAstMod.Type,
+    modifiers: js.UndefOr[scala.Nothing],
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(

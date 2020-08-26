@@ -78,39 +78,84 @@ trait CreateFunctionRequest extends js.Object {
 
 object CreateFunctionRequest {
   @scala.inline
-  def apply(
-    Code: FunctionCode,
-    FunctionName: FunctionName,
-    Handler: Handler,
-    Role: RoleArn,
-    Runtime: Runtime,
-    DeadLetterConfig: DeadLetterConfig = null,
-    Description: Description = null,
-    Environment: Environment = null,
-    FileSystemConfigs: FileSystemConfigList = null,
-    KMSKeyArn: KMSKeyArn = null,
-    Layers: LayerList = null,
-    MemorySize: js.UndefOr[MemorySize] = js.undefined,
-    Publish: js.UndefOr[Boolean] = js.undefined,
-    Tags: Tags = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
-    TracingConfig: TracingConfig = null,
-    VpcConfig: VpcConfig = null
-  ): CreateFunctionRequest = {
+  def apply(Code: FunctionCode, FunctionName: FunctionName, Handler: Handler, Role: RoleArn, Runtime: Runtime): CreateFunctionRequest = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any], Handler = Handler.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any], Runtime = Runtime.asInstanceOf[js.Any])
-    if (DeadLetterConfig != null) __obj.updateDynamic("DeadLetterConfig")(DeadLetterConfig.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
-    if (FileSystemConfigs != null) __obj.updateDynamic("FileSystemConfigs")(FileSystemConfigs.asInstanceOf[js.Any])
-    if (KMSKeyArn != null) __obj.updateDynamic("KMSKeyArn")(KMSKeyArn.asInstanceOf[js.Any])
-    if (Layers != null) __obj.updateDynamic("Layers")(Layers.asInstanceOf[js.Any])
-    if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Publish)) __obj.updateDynamic("Publish")(Publish.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
-    if (TracingConfig != null) __obj.updateDynamic("TracingConfig")(TracingConfig.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFunctionRequest]
   }
+  @scala.inline
+  implicit class CreateFunctionRequestOps[Self <: CreateFunctionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: FunctionCode): Self = this.set("Code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFunctionName(value: FunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHandler(value: Handler): Self = this.set("Handler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRole(value: RoleArn): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuntime(value: Runtime): Self = this.set("Runtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeadLetterConfig(value: DeadLetterConfig): Self = this.set("DeadLetterConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeadLetterConfig: Self = this.set("DeadLetterConfig", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEnvironment(value: Environment): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    @scala.inline
+    def setFileSystemConfigsVarargs(value: FileSystemConfig*): Self = this.set("FileSystemConfigs", js.Array(value :_*))
+    @scala.inline
+    def setFileSystemConfigs(value: FileSystemConfigList): Self = this.set("FileSystemConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemConfigs: Self = this.set("FileSystemConfigs", js.undefined)
+    @scala.inline
+    def setKMSKeyArn(value: KMSKeyArn): Self = this.set("KMSKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSKeyArn: Self = this.set("KMSKeyArn", js.undefined)
+    @scala.inline
+    def setLayersVarargs(value: LayerVersionArn*): Self = this.set("Layers", js.Array(value :_*))
+    @scala.inline
+    def setLayers(value: LayerList): Self = this.set("Layers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayers: Self = this.set("Layers", js.undefined)
+    @scala.inline
+    def setMemorySize(value: MemorySize): Self = this.set("MemorySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemorySize: Self = this.set("MemorySize", js.undefined)
+    @scala.inline
+    def setPublish(value: Boolean): Self = this.set("Publish", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublish: Self = this.set("Publish", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    @scala.inline
+    def setTracingConfig(value: TracingConfig): Self = this.set("TracingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracingConfig: Self = this.set("TracingConfig", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

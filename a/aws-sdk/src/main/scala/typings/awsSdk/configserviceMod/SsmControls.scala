@@ -18,14 +18,30 @@ trait SsmControls extends js.Object {
 
 object SsmControls {
   @scala.inline
-  def apply(
-    ConcurrentExecutionRatePercentage: js.UndefOr[Percentage] = js.undefined,
-    ErrorPercentage: js.UndefOr[Percentage] = js.undefined
-  ): SsmControls = {
+  def apply(): SsmControls = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConcurrentExecutionRatePercentage)) __obj.updateDynamic("ConcurrentExecutionRatePercentage")(ConcurrentExecutionRatePercentage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ErrorPercentage)) __obj.updateDynamic("ErrorPercentage")(ErrorPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SsmControls]
   }
+  @scala.inline
+  implicit class SsmControlsOps[Self <: SsmControls] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConcurrentExecutionRatePercentage(value: Percentage): Self = this.set("ConcurrentExecutionRatePercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConcurrentExecutionRatePercentage: Self = this.set("ConcurrentExecutionRatePercentage", js.undefined)
+    @scala.inline
+    def setErrorPercentage(value: Percentage): Self = this.set("ErrorPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorPercentage: Self = this.set("ErrorPercentage", js.undefined)
+  }
+  
 }
 

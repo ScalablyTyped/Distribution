@@ -50,30 +50,62 @@ trait DescribeStreamProcessorResponse extends js.Object {
 
 object DescribeStreamProcessorResponse {
   @scala.inline
-  def apply(
-    CreationTimestamp: DateTime = null,
-    Input: StreamProcessorInput = null,
-    LastUpdateTimestamp: DateTime = null,
-    Name: StreamProcessorName = null,
-    Output: StreamProcessorOutput = null,
-    RoleArn: RoleArn = null,
-    Settings: StreamProcessorSettings = null,
-    Status: StreamProcessorStatus = null,
-    StatusMessage: String = null,
-    StreamProcessorArn: StreamProcessorArn = null
-  ): DescribeStreamProcessorResponse = {
+  def apply(): DescribeStreamProcessorResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
-    if (Input != null) __obj.updateDynamic("Input")(Input.asInstanceOf[js.Any])
-    if (LastUpdateTimestamp != null) __obj.updateDynamic("LastUpdateTimestamp")(LastUpdateTimestamp.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Output != null) __obj.updateDynamic("Output")(Output.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (StreamProcessorArn != null) __obj.updateDynamic("StreamProcessorArn")(StreamProcessorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStreamProcessorResponse]
   }
+  @scala.inline
+  implicit class DescribeStreamProcessorResponseOps[Self <: DescribeStreamProcessorResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTimestamp(value: DateTime): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    @scala.inline
+    def setInput(value: StreamProcessorInput): Self = this.set("Input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("Input", js.undefined)
+    @scala.inline
+    def setLastUpdateTimestamp(value: DateTime): Self = this.set("LastUpdateTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTimestamp: Self = this.set("LastUpdateTimestamp", js.undefined)
+    @scala.inline
+    def setName(value: StreamProcessorName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOutput(value: StreamProcessorOutput): Self = this.set("Output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("Output", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setSettings(value: StreamProcessorSettings): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("Settings", js.undefined)
+    @scala.inline
+    def setStatus(value: StreamProcessorStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setStreamProcessorArn(value: StreamProcessorArn): Self = this.set("StreamProcessorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamProcessorArn: Self = this.set("StreamProcessorArn", js.undefined)
+  }
+  
 }
 

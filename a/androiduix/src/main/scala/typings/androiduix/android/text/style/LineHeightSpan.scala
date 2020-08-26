@@ -6,8 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LineHeightSpan extends ParagraphStyle {
-  def chooseHeight(text: String, start: Double, end: Double, spanstartv: Double, v: Double, fm: FontMetricsInt): Unit
+  def chooseHeight(text: String, start: Double, end: Double, spanstartv: Double, v: Double, fm: FontMetricsInt): Unit = js.native
 }
 
 @JSGlobal("android.text.style.LineHeightSpan")
@@ -26,6 +27,5 @@ object LineHeightSpan extends js.Object {
     ): Unit = js.native
   }
   
-  var `type`: js.Symbol = js.native
 }
 

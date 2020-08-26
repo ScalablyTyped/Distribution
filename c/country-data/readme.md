@@ -11,8 +11,8 @@ Data about countries - like their ISO codes and currencies
 | Full name          | country-data |
 | Keywords           | data, country |
 | # releases         | 1 |
-| # dependents       | 63 |
-| # downloads        | 1568765 |
+| # dependents       | 64 |
+| # downloads        | 1602079 |
 | # stars            | 21 |
 
 ## Links

@@ -18,11 +18,30 @@ trait GroupCount extends js.Object {
 
 object GroupCount {
   @scala.inline
-  def apply(count: js.UndefOr[long] = js.undefined, groupKey: string = null): GroupCount = {
+  def apply(): GroupCount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (groupKey != null) __obj.updateDynamic("groupKey")(groupKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupCount]
   }
+  @scala.inline
+  implicit class GroupCountOps[Self <: GroupCount] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: long): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setGroupKey(value: string): Self = this.set("groupKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupKey: Self = this.set("groupKey", js.undefined)
+  }
+  
 }
 

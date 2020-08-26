@@ -28,6 +28,7 @@ class ResourceComments protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCommentsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCommentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -53,6 +54,7 @@ class ResourceComments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaComment] = js.native
   def get(callback: BodyResponseCallback[SchemaComment]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
   def get(params: ParamsResourceCommentsGet): GaxiosPromise[SchemaComment] = js.native
   def get(params: ParamsResourceCommentsGet, callback: BodyResponseCallback[SchemaComment]): Unit = js.native
   def get(
@@ -81,6 +83,7 @@ class ResourceComments protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaComment] = js.native
   def insert(callback: BodyResponseCallback[SchemaComment]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
   def insert(params: ParamsResourceCommentsInsert): GaxiosPromise[SchemaComment] = js.native
   def insert(params: ParamsResourceCommentsInsert, callback: BodyResponseCallback[SchemaComment]): Unit = js.native
   def insert(
@@ -112,6 +115,7 @@ class ResourceComments protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCommentList] = js.native
   def list(callback: BodyResponseCallback[SchemaCommentList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentList] = js.native
   def list(params: ParamsResourceCommentsList): GaxiosPromise[SchemaCommentList] = js.native
   def list(params: ParamsResourceCommentsList, callback: BodyResponseCallback[SchemaCommentList]): Unit = js.native
   def list(
@@ -141,6 +145,7 @@ class ResourceComments protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaComment] = js.native
   def patch(callback: BodyResponseCallback[SchemaComment]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
   def patch(params: ParamsResourceCommentsPatch): GaxiosPromise[SchemaComment] = js.native
   def patch(params: ParamsResourceCommentsPatch, callback: BodyResponseCallback[SchemaComment]): Unit = js.native
   def patch(
@@ -170,6 +175,7 @@ class ResourceComments protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaComment] = js.native
   def update(callback: BodyResponseCallback[SchemaComment]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
   def update(params: ParamsResourceCommentsUpdate): GaxiosPromise[SchemaComment] = js.native
   def update(params: ParamsResourceCommentsUpdate, callback: BodyResponseCallback[SchemaComment]): Unit = js.native
   def update(

@@ -2,7 +2,6 @@ package typings.node.NodeJS
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.node.Console
 import typings.node.anon.FnCallSRadix
 import typings.node.anon.FnCallUriComponent
 import typings.node.anon.TypeofBuffer
@@ -124,7 +123,6 @@ trait Global extends js.Object {
   var Uint8ClampedArray: Uint8ClampedArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Uint8ClampedArray]) = js.native
   var WeakMap: WeakMapConstructor = js.native
   var WeakSet: WeakSetConstructor = js.native
-  var console: Console = js.native
   @JSName("decodeURIComponent")
   var decodeURIComponent_Original: js.Function1[/* encodedURIComponent */ String, String] = js.native
   @JSName("decodeURI")
@@ -144,7 +142,6 @@ trait Global extends js.Object {
   var parseFloat_Original: js.Function1[/* string */ String, Double] = js.native
   @JSName("parseInt")
   var parseInt_Original: FnCallSRadix = js.native
-  var process: Process = js.native
   @JSName("queueMicrotask")
   var queueMicrotask_Original: js.Function1[/* callback */ js.Function0[Unit], Unit] = js.native
   var undefined: js.UndefOr[scala.Nothing] = js.native

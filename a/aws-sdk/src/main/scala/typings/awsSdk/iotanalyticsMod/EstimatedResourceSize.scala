@@ -18,11 +18,30 @@ trait EstimatedResourceSize extends js.Object {
 
 object EstimatedResourceSize {
   @scala.inline
-  def apply(estimatedOn: Timestamp = null, estimatedSizeInBytes: js.UndefOr[SizeInBytes] = js.undefined): EstimatedResourceSize = {
+  def apply(): EstimatedResourceSize = {
     val __obj = js.Dynamic.literal()
-    if (estimatedOn != null) __obj.updateDynamic("estimatedOn")(estimatedOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(estimatedSizeInBytes)) __obj.updateDynamic("estimatedSizeInBytes")(estimatedSizeInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EstimatedResourceSize]
   }
+  @scala.inline
+  implicit class EstimatedResourceSizeOps[Self <: EstimatedResourceSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEstimatedOn(value: Timestamp): Self = this.set("estimatedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedOn: Self = this.set("estimatedOn", js.undefined)
+    @scala.inline
+    def setEstimatedSizeInBytes(value: SizeInBytes): Self = this.set("estimatedSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedSizeInBytes: Self = this.set("estimatedSizeInBytes", js.undefined)
+  }
+  
 }
 

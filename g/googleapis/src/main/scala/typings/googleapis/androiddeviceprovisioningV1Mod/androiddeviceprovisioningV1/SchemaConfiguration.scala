@@ -78,30 +78,62 @@ trait SchemaConfiguration extends js.Object {
 
 object SchemaConfiguration {
   @scala.inline
-  def apply(
-    companyName: String = null,
-    configurationId: String = null,
-    configurationName: String = null,
-    contactEmail: String = null,
-    contactPhone: String = null,
-    customMessage: String = null,
-    dpcExtras: String = null,
-    dpcResourcePath: String = null,
-    isDefault: js.UndefOr[Boolean] = js.undefined,
-    name: String = null
-  ): SchemaConfiguration = {
+  def apply(): SchemaConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (companyName != null) __obj.updateDynamic("companyName")(companyName.asInstanceOf[js.Any])
-    if (configurationId != null) __obj.updateDynamic("configurationId")(configurationId.asInstanceOf[js.Any])
-    if (configurationName != null) __obj.updateDynamic("configurationName")(configurationName.asInstanceOf[js.Any])
-    if (contactEmail != null) __obj.updateDynamic("contactEmail")(contactEmail.asInstanceOf[js.Any])
-    if (contactPhone != null) __obj.updateDynamic("contactPhone")(contactPhone.asInstanceOf[js.Any])
-    if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage.asInstanceOf[js.Any])
-    if (dpcExtras != null) __obj.updateDynamic("dpcExtras")(dpcExtras.asInstanceOf[js.Any])
-    if (dpcResourcePath != null) __obj.updateDynamic("dpcResourcePath")(dpcResourcePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConfiguration]
   }
+  @scala.inline
+  implicit class SchemaConfigurationOps[Self <: SchemaConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    @scala.inline
+    def setConfigurationId(value: String): Self = this.set("configurationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationId: Self = this.set("configurationId", js.undefined)
+    @scala.inline
+    def setConfigurationName(value: String): Self = this.set("configurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationName: Self = this.set("configurationName", js.undefined)
+    @scala.inline
+    def setContactEmail(value: String): Self = this.set("contactEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactEmail: Self = this.set("contactEmail", js.undefined)
+    @scala.inline
+    def setContactPhone(value: String): Self = this.set("contactPhone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactPhone: Self = this.set("contactPhone", js.undefined)
+    @scala.inline
+    def setCustomMessage(value: String): Self = this.set("customMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMessage: Self = this.set("customMessage", js.undefined)
+    @scala.inline
+    def setDpcExtras(value: String): Self = this.set("dpcExtras", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDpcExtras: Self = this.set("dpcExtras", js.undefined)
+    @scala.inline
+    def setDpcResourcePath(value: String): Self = this.set("dpcResourcePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDpcResourcePath: Self = this.set("dpcResourcePath", js.undefined)
+    @scala.inline
+    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

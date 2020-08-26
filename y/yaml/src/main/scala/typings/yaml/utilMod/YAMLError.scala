@@ -12,10 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class YAMLError () extends Error {
   var linePos: js.UndefOr[End] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   @JSName("name")
   var name_YAMLError: typings.yaml.yamlStrings.YAMLReferenceError | typings.yaml.yamlStrings.YAMLSemanticError | typings.yaml.yamlStrings.YAMLSyntaxError | typings.yaml.yamlStrings.YAMLWarning = js.native
   var nodeType: js.UndefOr[Type] = js.native

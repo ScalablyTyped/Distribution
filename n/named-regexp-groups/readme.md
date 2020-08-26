@@ -12,7 +12,7 @@ Regular expressions with named capture groups and named back-references
 | Keywords           | backreference, capture, expression, group, named, regex, regexp, regular |
 | # releases         | 6 |
 | # dependents       | 11 |
-| # downloads        | 43452 |
+| # downloads        | 42215 |
 | # stars            | 0 |
 
 ## Links

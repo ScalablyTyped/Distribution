@@ -21,7 +21,7 @@ object useReducer extends js.Object {
   // which would prevent autocompletion from ever working.
   // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
   // in older versions, or a regression in newer versions of the typescript completion service.
-  def apply[R /* <: Reducer[_, _] */](reducer: R, initialState: ReducerState[R]): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
+  def apply[R /* <: Reducer[_, _] */](reducer: R, initialState: ReducerState[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
   /**
     * An alternative to `useState`.
     *

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons/dist/components/twoTonePrimaryColor", JSImport.Namespace)
+@JSImport("@ant-design/icons/es/components/twoTonePrimaryColor", JSImport.Namespace)
 @js.native
 object twoTonePrimaryColorMod extends js.Object {
   def getTwoToneColor(): TwoToneColor = js.native

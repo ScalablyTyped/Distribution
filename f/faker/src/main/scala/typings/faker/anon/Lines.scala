@@ -11,9 +11,11 @@ trait Lines extends js.Object {
   def paragraph(): String = js.native
   def paragraph(sentenceCount: Double): String = js.native
   def paragraphs(): String = js.native
+  def paragraphs(paragraphCount: js.UndefOr[scala.Nothing], separator: String): String = js.native
   def paragraphs(paragraphCount: Double): String = js.native
   def paragraphs(paragraphCount: Double, separator: String): String = js.native
   def sentence(): String = js.native
+  def sentence(wordCount: js.UndefOr[scala.Nothing], range: Double): String = js.native
   def sentence(wordCount: Double): String = js.native
   def sentence(wordCount: Double, range: Double): String = js.native
   def sentences(): String = js.native

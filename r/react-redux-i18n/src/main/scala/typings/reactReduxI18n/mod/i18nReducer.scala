@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object i18nReducer extends js.Object {
   def apply(): Reducer[I18nState, AnyAction] = js.native
+  def apply(state: js.UndefOr[scala.Nothing], options: js.Any): Reducer[I18nState, AnyAction] = js.native
   def apply(state: js.Any): Reducer[I18nState, AnyAction] = js.native
   def apply(state: js.Any, options: js.Any): Reducer[I18nState, AnyAction] = js.native
 }

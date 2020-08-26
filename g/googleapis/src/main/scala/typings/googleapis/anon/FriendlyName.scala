@@ -16,20 +16,42 @@ trait FriendlyName extends js.Object {
 
 object FriendlyName {
   @scala.inline
-  def apply(
-    friendlyName: String = null,
-    id: String = null,
-    kind: String = null,
-    numericId: String = null,
-    projectReference: SchemaProjectReference = null
-  ): FriendlyName = {
+  def apply(): FriendlyName = {
     val __obj = js.Dynamic.literal()
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (numericId != null) __obj.updateDynamic("numericId")(numericId.asInstanceOf[js.Any])
-    if (projectReference != null) __obj.updateDynamic("projectReference")(projectReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[FriendlyName]
   }
+  @scala.inline
+  implicit class FriendlyNameOps[Self <: FriendlyName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNumericId(value: String): Self = this.set("numericId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumericId: Self = this.set("numericId", js.undefined)
+    @scala.inline
+    def setProjectReference(value: SchemaProjectReference): Self = this.set("projectReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectReference: Self = this.set("projectReference", js.undefined)
+  }
+  
 }
 

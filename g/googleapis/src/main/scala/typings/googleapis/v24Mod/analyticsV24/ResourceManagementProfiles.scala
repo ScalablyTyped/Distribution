@@ -30,6 +30,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     */
   def list(): GaxiosPromise[Unit] = js.native
   def list(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def list(params: ParamsResourceManagementProfilesList): GaxiosPromise[Unit] = js.native
   def list(params: ParamsResourceManagementProfilesList, callback: BodyResponseCallback[Unit]): Unit = js.native
   def list(

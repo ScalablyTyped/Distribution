@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
   * specifies accessibility support for a check box.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleCheckBox
   extends XAccessibleExtendedComponent
      with XAccessibleContext

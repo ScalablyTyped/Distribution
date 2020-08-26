@@ -10,9 +10,9 @@ Simple environment-based application settings
 | ------------------ | :-------------: |
 | Full name          | settings |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 519111 |
+| # downloads        | 494799 |
 | # stars            | 1 |
 
 ## Links

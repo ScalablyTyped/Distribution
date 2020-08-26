@@ -10,66 +10,117 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IconOptions extends js.Object {
-  var anchor: js.UndefOr[js.Array[Double]] = js.undefined
-  var anchorOrigin: js.UndefOr[IconOrigin] = js.undefined
-  var anchorXUnits: js.UndefOr[IconAnchorUnits] = js.undefined
-  var anchorYUnits: js.UndefOr[IconAnchorUnits] = js.undefined
-  var color: js.UndefOr[Color_ | String] = js.undefined
-  var crossOrigin: js.UndefOr[String] = js.undefined
-  var img: js.UndefOr[HTMLImageElement | HTMLCanvasElement] = js.undefined
-  var imgSize: js.UndefOr[Size] = js.undefined
-  var offset: js.UndefOr[js.Array[Double]] = js.undefined
-  var offsetOrigin: js.UndefOr[IconOrigin] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var rotateWithView: js.UndefOr[Boolean] = js.undefined
-  var rotation: js.UndefOr[Double] = js.undefined
-  var scale: js.UndefOr[Double] = js.undefined
-  var size: js.UndefOr[Size] = js.undefined
-  var snapToPixel: js.UndefOr[Boolean] = js.undefined
-  var src: js.UndefOr[String] = js.undefined
+  var anchor: js.UndefOr[js.Array[Double]] = js.native
+  var anchorOrigin: js.UndefOr[IconOrigin] = js.native
+  var anchorXUnits: js.UndefOr[IconAnchorUnits] = js.native
+  var anchorYUnits: js.UndefOr[IconAnchorUnits] = js.native
+  var color: js.UndefOr[Color_ | String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.native
+  var img: js.UndefOr[HTMLImageElement | HTMLCanvasElement] = js.native
+  var imgSize: js.UndefOr[Size] = js.native
+  var offset: js.UndefOr[js.Array[Double]] = js.native
+  var offsetOrigin: js.UndefOr[IconOrigin] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var rotateWithView: js.UndefOr[Boolean] = js.native
+  var rotation: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Size] = js.native
+  var snapToPixel: js.UndefOr[Boolean] = js.native
+  var src: js.UndefOr[String] = js.native
 }
 
 object IconOptions {
   @scala.inline
-  def apply(
-    anchor: js.Array[Double] = null,
-    anchorOrigin: IconOrigin = null,
-    anchorXUnits: IconAnchorUnits = null,
-    anchorYUnits: IconAnchorUnits = null,
-    color: Color_ | String = null,
-    crossOrigin: String = null,
-    img: HTMLImageElement | HTMLCanvasElement = null,
-    imgSize: Size = null,
-    offset: js.Array[Double] = null,
-    offsetOrigin: IconOrigin = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    rotateWithView: js.UndefOr[Boolean] = js.undefined,
-    rotation: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Double] = js.undefined,
-    size: Size = null,
-    snapToPixel: js.UndefOr[Boolean] = js.undefined,
-    src: String = null
-  ): IconOptions = {
+  def apply(): IconOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin.asInstanceOf[js.Any])
-    if (anchorXUnits != null) __obj.updateDynamic("anchorXUnits")(anchorXUnits.asInstanceOf[js.Any])
-    if (anchorYUnits != null) __obj.updateDynamic("anchorYUnits")(anchorYUnits.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
-    if (imgSize != null) __obj.updateDynamic("imgSize")(imgSize.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (offsetOrigin != null) __obj.updateDynamic("offsetOrigin")(offsetOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateWithView)) __obj.updateDynamic("rotateWithView")(rotateWithView.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapToPixel)) __obj.updateDynamic("snapToPixel")(snapToPixel.get.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconOptions]
   }
+  @scala.inline
+  implicit class IconOptionsOps[Self <: IconOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnchorVarargs(value: Double*): Self = this.set("anchor", js.Array(value :_*))
+    @scala.inline
+    def setAnchor(value: js.Array[Double]): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    @scala.inline
+    def setAnchorOrigin(value: IconOrigin): Self = this.set("anchorOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOrigin: Self = this.set("anchorOrigin", js.undefined)
+    @scala.inline
+    def setAnchorXUnits(value: IconAnchorUnits): Self = this.set("anchorXUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorXUnits: Self = this.set("anchorXUnits", js.undefined)
+    @scala.inline
+    def setAnchorYUnits(value: IconAnchorUnits): Self = this.set("anchorYUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorYUnits: Self = this.set("anchorYUnits", js.undefined)
+    @scala.inline
+    def setColor(value: Color_ | String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    @scala.inline
+    def setImg(value: HTMLImageElement | HTMLCanvasElement): Self = this.set("img", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImg: Self = this.set("img", js.undefined)
+    @scala.inline
+    def setImgSize(value: Size): Self = this.set("imgSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImgSize: Self = this.set("imgSize", js.undefined)
+    @scala.inline
+    def setOffsetVarargs(value: Double*): Self = this.set("offset", js.Array(value :_*))
+    @scala.inline
+    def setOffset(value: js.Array[Double]): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOffsetOrigin(value: IconOrigin): Self = this.set("offsetOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetOrigin: Self = this.set("offsetOrigin", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setRotateWithView(value: Boolean): Self = this.set("rotateWithView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotateWithView: Self = this.set("rotateWithView", js.undefined)
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSnapToPixel(value: Boolean): Self = this.set("snapToPixel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapToPixel: Self = this.set("snapToPixel", js.undefined)
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+  }
+  
 }
 

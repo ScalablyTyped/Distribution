@@ -18,6 +18,11 @@ object fromEventPatternObservableMod extends js.Object {
     def create[T](addHandler: js.Function1[/* handler */ js.Function, _]): js.Any = js.native
     def create[T](
       addHandler: js.Function1[/* handler */ js.Function, _],
+      removeHandler: js.UndefOr[scala.Nothing],
+      selector: js.Function1[/* repeated */ js.Any, T]
+    ): js.Any = js.native
+    def create[T](
+      addHandler: js.Function1[/* handler */ js.Function, _],
       removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[js.Any], Unit]
     ): js.Any = js.native
     def create[T](

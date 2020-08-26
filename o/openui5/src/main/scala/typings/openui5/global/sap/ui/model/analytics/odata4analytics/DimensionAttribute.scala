@@ -18,36 +18,5 @@ class DimensionAttribute protected ()
     oQueryResult: typings.openui5.sap.ui.model.analytics.odata4analytics.QueryResult,
     oProperty: js.Any
   ) = this()
-  /**
-    * Get dimension
-    * @returns The dimension object         containing this attribute
-    */
-  /* CompleteClass */
-  override def getDimension(): typings.openui5.sap.ui.model.analytics.odata4analytics.Dimension = js.native
-  /**
-    * Get the key property
-    * @returns The DataJS object representing the property for the key         of this dimension attribute
-    */
-  /* CompleteClass */
-  override def getKeyProperty(): js.Any = js.native
-  /**
-    * Get label
-    * @returns The (possibly language-dependent) label text for this         dimension attribute
-    */
-  /* CompleteClass */
-  override def getLabelText(): String = js.native
-  /**
-    * Get the name of the dimension attribute
-    * @returns The name of the dimension attribute, which is identical         to the name of the property
-    * in the entity type holding the         attribute value
-    */
-  /* CompleteClass */
-  override def getName(): String = js.native
-  /**
-    * Get text property related to this dimension attribute
-    * @returns The DataJS object representing the text property or         null if it does not exist
-    */
-  /* CompleteClass */
-  override def getTextProperty(): js.Any = js.native
 }
 

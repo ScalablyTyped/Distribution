@@ -26,18 +26,38 @@ trait ClassificationDetails extends js.Object {
 
 object ClassificationDetails {
   @scala.inline
-  def apply(
-    detailedResultsLocation: string = null,
-    jobArn: string = null,
-    jobId: string = null,
-    result: ClassificationResult = null
-  ): ClassificationDetails = {
+  def apply(): ClassificationDetails = {
     val __obj = js.Dynamic.literal()
-    if (detailedResultsLocation != null) __obj.updateDynamic("detailedResultsLocation")(detailedResultsLocation.asInstanceOf[js.Any])
-    if (jobArn != null) __obj.updateDynamic("jobArn")(jobArn.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassificationDetails]
   }
+  @scala.inline
+  implicit class ClassificationDetailsOps[Self <: ClassificationDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetailedResultsLocation(value: string): Self = this.set("detailedResultsLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailedResultsLocation: Self = this.set("detailedResultsLocation", js.undefined)
+    @scala.inline
+    def setJobArn(value: string): Self = this.set("jobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobArn: Self = this.set("jobArn", js.undefined)
+    @scala.inline
+    def setJobId(value: string): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setResult(value: ClassificationResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("result", js.undefined)
+  }
+  
 }
 

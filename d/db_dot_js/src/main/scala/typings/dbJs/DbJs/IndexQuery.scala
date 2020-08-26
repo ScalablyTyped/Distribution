@@ -1,13 +1,12 @@
 package typings.dbJs.DbJs
 
-import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait IndexQuery[T]
-  extends Promise[T]
+  extends js.Promise[T]
      with KeyableQuery[T]
      with ExecutableQuery[T]
      with FilterableQuery[T]

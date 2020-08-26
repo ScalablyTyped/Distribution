@@ -21,8 +21,58 @@ trait Rule extends js.Object {
   val RuleType: OlRuleType = js.native
   val Session: NameSpace = js.native
   def Execute(): Unit = js.native
+  def Execute(
+    ShowProgress: js.UndefOr[scala.Nothing],
+    Folder: js.UndefOr[scala.Nothing],
+    IncludeSubfolders: js.UndefOr[scala.Nothing],
+    RuleExecuteOption: js.Any
+  ): Unit = js.native
+  def Execute(
+    ShowProgress: js.UndefOr[scala.Nothing],
+    Folder: js.UndefOr[scala.Nothing],
+    IncludeSubfolders: js.Any
+  ): Unit = js.native
+  def Execute(
+    ShowProgress: js.UndefOr[scala.Nothing],
+    Folder: js.UndefOr[scala.Nothing],
+    IncludeSubfolders: js.Any,
+    RuleExecuteOption: js.Any
+  ): Unit = js.native
+  def Execute(ShowProgress: js.UndefOr[scala.Nothing], Folder: js.Any): Unit = js.native
+  def Execute(
+    ShowProgress: js.UndefOr[scala.Nothing],
+    Folder: js.Any,
+    IncludeSubfolders: js.UndefOr[scala.Nothing],
+    RuleExecuteOption: js.Any
+  ): Unit = js.native
+  def Execute(ShowProgress: js.UndefOr[scala.Nothing], Folder: js.Any, IncludeSubfolders: js.Any): Unit = js.native
+  def Execute(
+    ShowProgress: js.UndefOr[scala.Nothing],
+    Folder: js.Any,
+    IncludeSubfolders: js.Any,
+    RuleExecuteOption: js.Any
+  ): Unit = js.native
   def Execute(ShowProgress: js.Any): Unit = js.native
+  def Execute(
+    ShowProgress: js.Any,
+    Folder: js.UndefOr[scala.Nothing],
+    IncludeSubfolders: js.UndefOr[scala.Nothing],
+    RuleExecuteOption: js.Any
+  ): Unit = js.native
+  def Execute(ShowProgress: js.Any, Folder: js.UndefOr[scala.Nothing], IncludeSubfolders: js.Any): Unit = js.native
+  def Execute(
+    ShowProgress: js.Any,
+    Folder: js.UndefOr[scala.Nothing],
+    IncludeSubfolders: js.Any,
+    RuleExecuteOption: js.Any
+  ): Unit = js.native
   def Execute(ShowProgress: js.Any, Folder: js.Any): Unit = js.native
+  def Execute(
+    ShowProgress: js.Any,
+    Folder: js.Any,
+    IncludeSubfolders: js.UndefOr[scala.Nothing],
+    RuleExecuteOption: js.Any
+  ): Unit = js.native
   def Execute(ShowProgress: js.Any, Folder: js.Any, IncludeSubfolders: js.Any): Unit = js.native
   def Execute(ShowProgress: js.Any, Folder: js.Any, IncludeSubfolders: js.Any, RuleExecuteOption: js.Any): Unit = js.native
 }

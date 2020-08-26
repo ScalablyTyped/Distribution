@@ -12,7 +12,7 @@ A standalone validator for inbound SNS HTTP messages. No dependency on the AWS S
 | Keywords           | AWS, SNS |
 | # releases         | 4 |
 | # dependents       | 8 |
-| # downloads        | 305358 |
+| # downloads        | 328588 |
 | # stars            | 2 |
 
 ## Links

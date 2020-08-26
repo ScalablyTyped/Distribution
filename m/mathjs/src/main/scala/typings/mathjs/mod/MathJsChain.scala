@@ -326,6 +326,7 @@ trait MathJsChain extends js.Object {
     * 0.
     */
   def createUnit(): MathJsChain = js.native
+  def createUnit(definition: js.UndefOr[scala.Nothing], options: CreateUnitOptions): MathJsChain = js.native
   def createUnit(definition: String): MathJsChain = js.native
   def createUnit(definition: String, options: CreateUnitOptions): MathJsChain = js.native
   def createUnit(definition: UnitDefinition): MathJsChain = js.native
@@ -550,6 +551,11 @@ trait MathJsChain extends js.Object {
     * @see http://mathjs.org/docs/reference/functions/format.html
     */
   def format(value: js.Any): MathJsChain = js.native
+  def format(
+    value: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* value */ js.Any, String]
+  ): MathJsChain = js.native
   def format(value: js.Any, options: js.Function1[/* item */ js.Any, String]): MathJsChain = js.native
   def format(
     value: js.Any,
@@ -777,6 +783,7 @@ trait MathJsChain extends js.Object {
     */
   def lup(): MathJsChain = js.native
   def lusolve(b: MathArray): MathJsChain = js.native
+  def lusolve(b: MathArray, order: js.UndefOr[scala.Nothing], threshold: Double): MathJsChain = js.native
   def lusolve(b: MathArray, order: Double): MathJsChain = js.native
   def lusolve(b: MathArray, order: Double, threshold: Double): MathJsChain = js.native
   /**
@@ -789,6 +796,7 @@ trait MathJsChain extends js.Object {
     * see slu for details. Matrix must be a SparseMatrix.
     */
   def lusolve(b: Matrix): MathJsChain = js.native
+  def lusolve(b: Matrix, order: js.UndefOr[scala.Nothing], threshold: Double): MathJsChain = js.native
   def lusolve(b: Matrix, order: Double): MathJsChain = js.native
   def lusolve(b: Matrix, order: Double, threshold: Double): MathJsChain = js.native
   /*************************************************************************
@@ -822,6 +830,7 @@ trait MathJsChain extends js.Object {
     * the matrix. Supported storage formats are 'dense' and 'sparse'.
     */
   def matrix(): MathJsChain = js.native
+  def matrix(format: js.UndefOr[scala.Nothing], dataType: String): MathJsChain = js.native
   @JSName("matrix")
   def matrix_dense(format: dense): MathJsChain = js.native
   @JSName("matrix")
@@ -997,6 +1006,7 @@ trait MathJsChain extends js.Object {
     * @param weights An array of ints or floats
     */
   def pickRandom(): MathJsChain = js.native
+  def pickRandom(number: js.UndefOr[scala.Nothing], weights: js.Array[Double]): MathJsChain = js.native
   def pickRandom(number: Double): MathJsChain = js.native
   def pickRandom(number: Double, weights: js.Array[Double]): MathJsChain = js.native
   /**
@@ -1015,6 +1025,8 @@ trait MathJsChain extends js.Object {
     * numbers. See function math.format for a description of all options.
     */
   def print(values: js.Any): MathJsChain = js.native
+  def print(values: js.Any, precision: js.UndefOr[scala.Nothing], options: js.Object): MathJsChain = js.native
+  def print(values: js.Any, precision: js.UndefOr[scala.Nothing], options: Double): MathJsChain = js.native
   def print(values: js.Any, precision: Double): MathJsChain = js.native
   def print(values: js.Any, precision: Double, options: js.Object): MathJsChain = js.native
   def print(values: js.Any, precision: Double, options: Double): MathJsChain = js.native
@@ -1104,6 +1116,7 @@ trait MathJsChain extends js.Object {
     * expression node (default)
     */
   def rationalize(): MathJsChain = js.native
+  def rationalize(optional: js.UndefOr[scala.Nothing], detailed: Boolean): MathJsChain = js.native
   def rationalize(optional: js.Object): MathJsChain = js.native
   def rationalize(optional: js.Object, detailed: Boolean): MathJsChain = js.native
   def rationalize(optional: Boolean): MathJsChain = js.native
@@ -1257,6 +1270,7 @@ trait MathJsChain extends js.Object {
     * @param scope Scope to variables
     */
   def simplify(): MathJsChain = js.native
+  def simplify(rules: js.UndefOr[scala.Nothing], scope: js.Object): MathJsChain = js.native
   def simplify(rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])]): MathJsChain = js.native
   def simplify(rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])], scope: js.Object): MathJsChain = js.native
   /**
@@ -1407,6 +1421,7 @@ trait MathJsChain extends js.Object {
     * undefined. Default value: undefined.
     */
   def subset(index: Index): MathJsChain = js.native
+  def subset(index: Index, replacement: js.UndefOr[scala.Nothing], defaultValue: js.Any): MathJsChain = js.native
   def subset(index: Index, replacement: js.Any): MathJsChain = js.native
   def subset(index: Index, replacement: js.Any, defaultValue: js.Any): MathJsChain = js.native
   /**

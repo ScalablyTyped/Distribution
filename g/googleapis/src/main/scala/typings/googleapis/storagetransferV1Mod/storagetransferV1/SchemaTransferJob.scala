@@ -59,28 +59,58 @@ trait SchemaTransferJob extends js.Object {
 
 object SchemaTransferJob {
   @scala.inline
-  def apply(
-    creationTime: String = null,
-    deletionTime: String = null,
-    description: String = null,
-    lastModificationTime: String = null,
-    name: String = null,
-    projectId: String = null,
-    schedule: SchemaSchedule = null,
-    status: String = null,
-    transferSpec: SchemaTransferSpec = null
-  ): SchemaTransferJob = {
+  def apply(): SchemaTransferJob = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (deletionTime != null) __obj.updateDynamic("deletionTime")(deletionTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (lastModificationTime != null) __obj.updateDynamic("lastModificationTime")(lastModificationTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (transferSpec != null) __obj.updateDynamic("transferSpec")(transferSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransferJob]
   }
+  @scala.inline
+  implicit class SchemaTransferJobOps[Self <: SchemaTransferJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDeletionTime(value: String): Self = this.set("deletionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionTime: Self = this.set("deletionTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLastModificationTime(value: String): Self = this.set("lastModificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModificationTime: Self = this.set("lastModificationTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setSchedule(value: SchemaSchedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTransferSpec(value: SchemaTransferSpec): Self = this.set("transferSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferSpec: Self = this.set("transferSpec", js.undefined)
+  }
+  
 }
 

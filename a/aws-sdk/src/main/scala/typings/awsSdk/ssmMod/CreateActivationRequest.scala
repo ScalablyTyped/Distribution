@@ -34,21 +34,46 @@ trait CreateActivationRequest extends js.Object {
 
 object CreateActivationRequest {
   @scala.inline
-  def apply(
-    IamRole: IamRole,
-    DefaultInstanceName: DefaultInstanceName = null,
-    Description: ActivationDescription = null,
-    ExpirationDate: ExpirationDate = null,
-    RegistrationLimit: js.UndefOr[RegistrationLimit] = js.undefined,
-    Tags: TagList = null
-  ): CreateActivationRequest = {
+  def apply(IamRole: IamRole): CreateActivationRequest = {
     val __obj = js.Dynamic.literal(IamRole = IamRole.asInstanceOf[js.Any])
-    if (DefaultInstanceName != null) __obj.updateDynamic("DefaultInstanceName")(DefaultInstanceName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(RegistrationLimit)) __obj.updateDynamic("RegistrationLimit")(RegistrationLimit.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateActivationRequest]
   }
+  @scala.inline
+  implicit class CreateActivationRequestOps[Self <: CreateActivationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIamRole(value: IamRole): Self = this.set("IamRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultInstanceName(value: DefaultInstanceName): Self = this.set("DefaultInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultInstanceName: Self = this.set("DefaultInstanceName", js.undefined)
+    @scala.inline
+    def setDescription(value: ActivationDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: ExpirationDate): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    @scala.inline
+    def setRegistrationLimit(value: RegistrationLimit): Self = this.set("RegistrationLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationLimit: Self = this.set("RegistrationLimit", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

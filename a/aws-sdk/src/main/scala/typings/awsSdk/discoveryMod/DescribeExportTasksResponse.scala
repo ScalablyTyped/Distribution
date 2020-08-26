@@ -18,11 +18,32 @@ trait DescribeExportTasksResponse extends js.Object {
 
 object DescribeExportTasksResponse {
   @scala.inline
-  def apply(exportsInfo: ExportsInfo = null, nextToken: NextToken = null): DescribeExportTasksResponse = {
+  def apply(): DescribeExportTasksResponse = {
     val __obj = js.Dynamic.literal()
-    if (exportsInfo != null) __obj.updateDynamic("exportsInfo")(exportsInfo.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeExportTasksResponse]
   }
+  @scala.inline
+  implicit class DescribeExportTasksResponseOps[Self <: DescribeExportTasksResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportsInfoVarargs(value: ExportInfo*): Self = this.set("exportsInfo", js.Array(value :_*))
+    @scala.inline
+    def setExportsInfo(value: ExportsInfo): Self = this.set("exportsInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportsInfo: Self = this.set("exportsInfo", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

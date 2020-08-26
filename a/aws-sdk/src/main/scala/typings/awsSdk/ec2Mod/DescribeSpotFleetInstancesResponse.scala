@@ -22,16 +22,36 @@ trait DescribeSpotFleetInstancesResponse extends js.Object {
 
 object DescribeSpotFleetInstancesResponse {
   @scala.inline
-  def apply(
-    ActiveInstances: ActiveInstanceSet = null,
-    NextToken: String = null,
-    SpotFleetRequestId: String = null
-  ): DescribeSpotFleetInstancesResponse = {
+  def apply(): DescribeSpotFleetInstancesResponse = {
     val __obj = js.Dynamic.literal()
-    if (ActiveInstances != null) __obj.updateDynamic("ActiveInstances")(ActiveInstances.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SpotFleetRequestId != null) __obj.updateDynamic("SpotFleetRequestId")(SpotFleetRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSpotFleetInstancesResponse]
   }
+  @scala.inline
+  implicit class DescribeSpotFleetInstancesResponseOps[Self <: DescribeSpotFleetInstancesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveInstancesVarargs(value: ActiveInstance*): Self = this.set("ActiveInstances", js.Array(value :_*))
+    @scala.inline
+    def setActiveInstances(value: ActiveInstanceSet): Self = this.set("ActiveInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveInstances: Self = this.set("ActiveInstances", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSpotFleetRequestId(value: String): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotFleetRequestId: Self = this.set("SpotFleetRequestId", js.undefined)
+  }
+  
 }
 

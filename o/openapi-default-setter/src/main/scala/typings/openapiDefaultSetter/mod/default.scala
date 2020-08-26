@@ -1,6 +1,5 @@
 package typings.openapiDefaultSetter.mod
 
-import typings.openapiTypes.mod.OpenAPI.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends OpenAPIDefaultSetter {
   def this(args: OpenAPIDefaultSetterArgs) = this()
-  /* CompleteClass */
-  override var headersDefaults: js.Any = js.native
-  /* CompleteClass */
-  override var queryDefaults: js.Any = js.native
-  /* CompleteClass */
-  override def handle(request: Request): Unit = js.native
 }
 

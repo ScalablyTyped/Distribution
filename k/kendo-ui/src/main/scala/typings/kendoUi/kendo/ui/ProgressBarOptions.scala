@@ -4,54 +4,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProgressBarOptions extends js.Object {
-  var animation: js.UndefOr[Boolean | ProgressBarAnimation] = js.undefined
-  var change: js.UndefOr[js.Function1[/* e */ ProgressBarChangeEvent, Unit]] = js.undefined
-  var chunkCount: js.UndefOr[Double] = js.undefined
-  var complete: js.UndefOr[js.Function1[/* e */ ProgressBarCompleteEvent, Unit]] = js.undefined
-  var enable: js.UndefOr[Boolean] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
-  var reverse: js.UndefOr[Boolean] = js.undefined
-  var showStatus: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var animation: js.UndefOr[Boolean | ProgressBarAnimation] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ ProgressBarChangeEvent, Unit]] = js.native
+  var chunkCount: js.UndefOr[Double] = js.native
+  var complete: js.UndefOr[js.Function1[/* e */ ProgressBarCompleteEvent, Unit]] = js.native
+  var enable: js.UndefOr[Boolean] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.native
+  var reverse: js.UndefOr[Boolean] = js.native
+  var showStatus: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object ProgressBarOptions {
   @scala.inline
-  def apply(
-    animation: Boolean | ProgressBarAnimation = null,
-    change: /* e */ ProgressBarChangeEvent => Unit = null,
-    chunkCount: js.UndefOr[Double] = js.undefined,
-    complete: /* e */ ProgressBarCompleteEvent => Unit = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    orientation: String = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    showStatus: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): ProgressBarOptions = {
+  def apply(): ProgressBarOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (!js.isUndefined(chunkCount)) __obj.updateDynamic("chunkCount")(chunkCount.get.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showStatus)) __obj.updateDynamic("showStatus")(showStatus.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarOptions]
   }
+  @scala.inline
+  implicit class ProgressBarOptionsOps[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean | ProgressBarAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ ProgressBarChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setChunkCount(value: Double): Self = this.set("chunkCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChunkCount: Self = this.set("chunkCount", js.undefined)
+    @scala.inline
+    def setComplete(value: /* e */ ProgressBarCompleteEvent => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteComplete: Self = this.set("complete", js.undefined)
+    @scala.inline
+    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverse: Self = this.set("reverse", js.undefined)
+    @scala.inline
+    def setShowStatus(value: Boolean): Self = this.set("showStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowStatus: Self = this.set("showStatus", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

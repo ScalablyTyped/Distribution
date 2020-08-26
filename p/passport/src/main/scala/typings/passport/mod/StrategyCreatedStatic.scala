@@ -21,6 +21,7 @@ trait StrategyCreatedStatic extends js.Object {
     * Strategies should call this function to fail an authentication attempt.
     */
   def fail(): Unit = js.native
+  def fail(challenge: js.UndefOr[scala.Nothing], status: Double): Unit = js.native
   def fail(challenge: String): Unit = js.native
   def fail(challenge: String, status: Double): Unit = js.native
   def fail(challenge: Double): Unit = js.native

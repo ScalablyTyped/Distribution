@@ -32,12 +32,14 @@ object bufferMod extends js.Object {
   }
   
   def buffer[V](src: EventStream[V]): EventStream[js.Array[V]] = js.native
+  def buffer[V](src: EventStream[V], onInput: js.UndefOr[scala.Nothing], onFlush: BufferHandler[V]): EventStream[js.Array[V]] = js.native
   def buffer[V](src: EventStream[V], onInput: BufferHandler[V]): EventStream[js.Array[V]] = js.native
   def buffer[V](src: EventStream[V], onInput: BufferHandler[V], onFlush: BufferHandler[V]): EventStream[js.Array[V]] = js.native
   def bufferWithCount[V](src: EventStream[V], count: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTime[V](src: EventStream[V], delay: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTime[V](src: EventStream[V], delay: DelayFunction): EventStream[js.Array[V]] = js.native
   def bufferWithTimeOrCount[V](src: EventStream[V]): EventStream[js.Array[V]] = js.native
+  def bufferWithTimeOrCount[V](src: EventStream[V], delay: js.UndefOr[scala.Nothing], count: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTimeOrCount[V](src: EventStream[V], delay: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTimeOrCount[V](src: EventStream[V], delay: Double, count: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTimeOrCount[V](src: EventStream[V], delay: DelayFunction): EventStream[js.Array[V]] = js.native

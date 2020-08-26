@@ -9,34 +9,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RefetchState extends js.Object {
-  var fetchPolicy: js.UndefOr[FetchPolicy] = js.undefined
-  var mirroredEnvironment: Environment
-  var mirroredFragmentIdentifier: String
-  var onComplete: js.UndefOr[js.Function1[/* arg */ Error | Null, Unit]] = js.undefined
-  var refetchEnvironment: js.UndefOr[Environment | Null] = js.undefined
-  var refetchVariables: js.UndefOr[Variables | Null] = js.undefined
-  var renderPolicy: js.UndefOr[RenderPolicy] = js.undefined
+  var fetchPolicy: js.UndefOr[FetchPolicy] = js.native
+  var mirroredEnvironment: Environment = js.native
+  var mirroredFragmentIdentifier: String = js.native
+  var onComplete: js.UndefOr[js.Function1[/* arg */ Error | Null, Unit]] = js.native
+  var refetchEnvironment: js.UndefOr[Environment | Null] = js.native
+  var refetchVariables: js.UndefOr[Variables | Null] = js.native
+  var renderPolicy: js.UndefOr[RenderPolicy] = js.native
 }
 
 object RefetchState {
   @scala.inline
-  def apply(
-    mirroredEnvironment: Environment,
-    mirroredFragmentIdentifier: String,
-    fetchPolicy: FetchPolicy = null,
-    onComplete: /* arg */ Error | Null => Unit = null,
-    refetchEnvironment: js.UndefOr[Null | Environment] = js.undefined,
-    refetchVariables: js.UndefOr[Null | Variables] = js.undefined,
-    renderPolicy: RenderPolicy = null
-  ): RefetchState = {
+  def apply(mirroredEnvironment: Environment, mirroredFragmentIdentifier: String): RefetchState = {
     val __obj = js.Dynamic.literal(mirroredEnvironment = mirroredEnvironment.asInstanceOf[js.Any], mirroredFragmentIdentifier = mirroredFragmentIdentifier.asInstanceOf[js.Any])
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (!js.isUndefined(refetchEnvironment)) __obj.updateDynamic("refetchEnvironment")(refetchEnvironment.asInstanceOf[js.Any])
-    if (!js.isUndefined(refetchVariables)) __obj.updateDynamic("refetchVariables")(refetchVariables.asInstanceOf[js.Any])
-    if (renderPolicy != null) __obj.updateDynamic("renderPolicy")(renderPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefetchState]
   }
+  @scala.inline
+  implicit class RefetchStateOps[Self <: RefetchState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMirroredEnvironment(value: Environment): Self = this.set("mirroredEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMirroredFragmentIdentifier(value: String): Self = this.set("mirroredFragmentIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFetchPolicy(value: FetchPolicy): Self = this.set("fetchPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchPolicy: Self = this.set("fetchPolicy", js.undefined)
+    @scala.inline
+    def setOnComplete(value: /* arg */ Error | Null => Unit): Self = this.set("onComplete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    @scala.inline
+    def setRefetchEnvironment(value: Environment): Self = this.set("refetchEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefetchEnvironment: Self = this.set("refetchEnvironment", js.undefined)
+    @scala.inline
+    def setRefetchEnvironmentNull: Self = this.set("refetchEnvironment", null)
+    @scala.inline
+    def setRefetchVariables(value: Variables): Self = this.set("refetchVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefetchVariables: Self = this.set("refetchVariables", js.undefined)
+    @scala.inline
+    def setRefetchVariablesNull: Self = this.set("refetchVariables", null)
+    @scala.inline
+    def setRenderPolicy(value: RenderPolicy): Self = this.set("renderPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderPolicy: Self = this.set("renderPolicy", js.undefined)
+  }
+  
 }
 

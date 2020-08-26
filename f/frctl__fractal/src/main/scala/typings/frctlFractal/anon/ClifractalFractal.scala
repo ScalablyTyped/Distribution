@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @frctl/fractal.@frctl/fractal.fractal.cli.Cli & {  fractal  :@frctl/fractal.@frctl/fractal.Fractal} */
+/* Inlined @frctl/fractal.@frctl/fractal.fractal.cli.Cli & {  fractal :@frctl/fractal.@frctl/fractal.Fractal} */
 @js.native
 trait ClifractalFractal extends js.Object {
   var console: Console = js.native

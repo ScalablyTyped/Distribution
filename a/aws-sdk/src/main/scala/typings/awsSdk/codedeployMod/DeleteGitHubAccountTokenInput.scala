@@ -14,10 +14,26 @@ trait DeleteGitHubAccountTokenInput extends js.Object {
 
 object DeleteGitHubAccountTokenInput {
   @scala.inline
-  def apply(tokenName: GitHubAccountTokenName = null): DeleteGitHubAccountTokenInput = {
+  def apply(): DeleteGitHubAccountTokenInput = {
     val __obj = js.Dynamic.literal()
-    if (tokenName != null) __obj.updateDynamic("tokenName")(tokenName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGitHubAccountTokenInput]
   }
+  @scala.inline
+  implicit class DeleteGitHubAccountTokenInputOps[Self <: DeleteGitHubAccountTokenInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTokenName(value: GitHubAccountTokenName): Self = this.set("tokenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenName: Self = this.set("tokenName", js.undefined)
+  }
+  
 }
 

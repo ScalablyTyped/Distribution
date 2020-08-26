@@ -1,7 +1,7 @@
 
 # Scala.js typings for onetime
 
-Typings are for version 5.1.0
+Typings are for version 5.1.1
 
 ## Library description:
 Ensure a function is only called once

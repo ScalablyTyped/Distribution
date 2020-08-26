@@ -87,26 +87,58 @@ trait SchemaGceClusterConfig extends js.Object {
 
 object SchemaGceClusterConfig {
   @scala.inline
-  def apply(
-    internalIpOnly: js.UndefOr[Boolean] = js.undefined,
-    metadata: StringDictionary[String] = null,
-    networkUri: String = null,
-    serviceAccount: String = null,
-    serviceAccountScopes: js.Array[String] = null,
-    subnetworkUri: String = null,
-    tags: js.Array[String] = null,
-    zoneUri: String = null
-  ): SchemaGceClusterConfig = {
+  def apply(): SchemaGceClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(internalIpOnly)) __obj.updateDynamic("internalIpOnly")(internalIpOnly.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (networkUri != null) __obj.updateDynamic("networkUri")(networkUri.asInstanceOf[js.Any])
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
-    if (serviceAccountScopes != null) __obj.updateDynamic("serviceAccountScopes")(serviceAccountScopes.asInstanceOf[js.Any])
-    if (subnetworkUri != null) __obj.updateDynamic("subnetworkUri")(subnetworkUri.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (zoneUri != null) __obj.updateDynamic("zoneUri")(zoneUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGceClusterConfig]
   }
+  @scala.inline
+  implicit class SchemaGceClusterConfigOps[Self <: SchemaGceClusterConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInternalIpOnly(value: Boolean): Self = this.set("internalIpOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalIpOnly: Self = this.set("internalIpOnly", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[String]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setNetworkUri(value: String): Self = this.set("networkUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkUri: Self = this.set("networkUri", js.undefined)
+    @scala.inline
+    def setServiceAccount(value: String): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    @scala.inline
+    def setServiceAccountScopesVarargs(value: String*): Self = this.set("serviceAccountScopes", js.Array(value :_*))
+    @scala.inline
+    def setServiceAccountScopes(value: js.Array[String]): Self = this.set("serviceAccountScopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccountScopes: Self = this.set("serviceAccountScopes", js.undefined)
+    @scala.inline
+    def setSubnetworkUri(value: String): Self = this.set("subnetworkUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetworkUri: Self = this.set("subnetworkUri", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setZoneUri(value: String): Self = this.set("zoneUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneUri: Self = this.set("zoneUri", js.undefined)
+  }
+  
 }
 

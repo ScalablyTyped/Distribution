@@ -22,5 +22,22 @@ object IPSetDescriptor {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPSetDescriptor]
   }
+  @scala.inline
+  implicit class IPSetDescriptorOps[Self <: IPSetDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: IPSetDescriptorType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValue(value: IPSetDescriptorValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -48,28 +48,58 @@ trait ScheduledActionState extends js.Object {
 
 object ScheduledActionState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    endTime: Input[String] = null,
-    name: Input[String] = null,
-    resourceId: Input[String] = null,
-    scalableDimension: Input[String] = null,
-    scalableTargetAction: Input[ScheduledActionScalableTargetAction] = null,
-    schedule: Input[String] = null,
-    serviceNamespace: Input[String] = null,
-    startTime: Input[String] = null
-  ): ScheduledActionState = {
+  def apply(): ScheduledActionState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (scalableDimension != null) __obj.updateDynamic("scalableDimension")(scalableDimension.asInstanceOf[js.Any])
-    if (scalableTargetAction != null) __obj.updateDynamic("scalableTargetAction")(scalableTargetAction.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (serviceNamespace != null) __obj.updateDynamic("serviceNamespace")(serviceNamespace.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledActionState]
   }
+  @scala.inline
+  implicit class ScheduledActionStateOps[Self <: ScheduledActionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setEndTime(value: Input[String]): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceId(value: Input[String]): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setScalableDimension(value: Input[String]): Self = this.set("scalableDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalableDimension: Self = this.set("scalableDimension", js.undefined)
+    @scala.inline
+    def setScalableTargetAction(value: Input[ScheduledActionScalableTargetAction]): Self = this.set("scalableTargetAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalableTargetAction: Self = this.set("scalableTargetAction", js.undefined)
+    @scala.inline
+    def setSchedule(value: Input[String]): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setServiceNamespace(value: Input[String]): Self = this.set("serviceNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceNamespace: Self = this.set("serviceNamespace", js.undefined)
+    @scala.inline
+    def setStartTime(value: Input[String]): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

@@ -78,44 +78,90 @@ trait DescribeRecoveryPointOutput extends js.Object {
 
 object DescribeRecoveryPointOutput {
   @scala.inline
-  def apply(
-    BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
-    BackupVaultArn: ARN = null,
-    BackupVaultName: BackupVaultName = null,
-    CalculatedLifecycle: CalculatedLifecycle = null,
-    CompletionDate: timestamp = null,
-    CreatedBy: RecoveryPointCreator = null,
-    CreationDate: timestamp = null,
-    EncryptionKeyArn: ARN = null,
-    IamRoleArn: IAMRoleArn = null,
-    IsEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
-    LastRestoreTime: timestamp = null,
-    Lifecycle: Lifecycle = null,
-    RecoveryPointArn: ARN = null,
-    ResourceArn: ARN = null,
-    ResourceType: ResourceType = null,
-    Status: RecoveryPointStatus = null,
-    StorageClass: StorageClass = null
-  ): DescribeRecoveryPointOutput = {
+  def apply(): DescribeRecoveryPointOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
-    if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn.asInstanceOf[js.Any])
-    if (BackupVaultName != null) __obj.updateDynamic("BackupVaultName")(BackupVaultName.asInstanceOf[js.Any])
-    if (CalculatedLifecycle != null) __obj.updateDynamic("CalculatedLifecycle")(CalculatedLifecycle.asInstanceOf[js.Any])
-    if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
-    if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (EncryptionKeyArn != null) __obj.updateDynamic("EncryptionKeyArn")(EncryptionKeyArn.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsEncrypted)) __obj.updateDynamic("IsEncrypted")(IsEncrypted.get.asInstanceOf[js.Any])
-    if (LastRestoreTime != null) __obj.updateDynamic("LastRestoreTime")(LastRestoreTime.asInstanceOf[js.Any])
-    if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
-    if (RecoveryPointArn != null) __obj.updateDynamic("RecoveryPointArn")(RecoveryPointArn.asInstanceOf[js.Any])
-    if (ResourceArn != null) __obj.updateDynamic("ResourceArn")(ResourceArn.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRecoveryPointOutput]
   }
+  @scala.inline
+  implicit class DescribeRecoveryPointOutputOps[Self <: DescribeRecoveryPointOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupSizeInBytes(value: Long_): Self = this.set("BackupSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupSizeInBytes: Self = this.set("BackupSizeInBytes", js.undefined)
+    @scala.inline
+    def setBackupVaultArn(value: ARN): Self = this.set("BackupVaultArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultArn: Self = this.set("BackupVaultArn", js.undefined)
+    @scala.inline
+    def setBackupVaultName(value: BackupVaultName): Self = this.set("BackupVaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultName: Self = this.set("BackupVaultName", js.undefined)
+    @scala.inline
+    def setCalculatedLifecycle(value: CalculatedLifecycle): Self = this.set("CalculatedLifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalculatedLifecycle: Self = this.set("CalculatedLifecycle", js.undefined)
+    @scala.inline
+    def setCompletionDate(value: timestamp): Self = this.set("CompletionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionDate: Self = this.set("CompletionDate", js.undefined)
+    @scala.inline
+    def setCreatedBy(value: RecoveryPointCreator): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    @scala.inline
+    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setEncryptionKeyArn(value: ARN): Self = this.set("EncryptionKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKeyArn: Self = this.set("EncryptionKeyArn", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: IAMRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    @scala.inline
+    def setIsEncrypted(value: scala.Boolean): Self = this.set("IsEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsEncrypted: Self = this.set("IsEncrypted", js.undefined)
+    @scala.inline
+    def setLastRestoreTime(value: timestamp): Self = this.set("LastRestoreTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRestoreTime: Self = this.set("LastRestoreTime", js.undefined)
+    @scala.inline
+    def setLifecycle(value: Lifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+    @scala.inline
+    def setRecoveryPointArn(value: ARN): Self = this.set("RecoveryPointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecoveryPointArn: Self = this.set("RecoveryPointArn", js.undefined)
+    @scala.inline
+    def setResourceArn(value: ARN): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setStatus(value: RecoveryPointStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+  }
+  
 }
 

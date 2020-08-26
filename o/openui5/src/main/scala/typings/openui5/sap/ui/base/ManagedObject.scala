@@ -220,6 +220,7 @@ trait ManagedObject extends EventProvider {
     * @returns reference to the newly created clone
     */
   def clone(sIdSuffix: String): ManagedObject = js.native
+  def clone(sIdSuffix: String, aLocalIds: js.UndefOr[scala.Nothing], oOptions: js.Any): ManagedObject = js.native
   def clone(sIdSuffix: String, aLocalIds: js.Array[String]): ManagedObject = js.native
   def clone(sIdSuffix: String, aLocalIds: js.Array[String], oOptions: js.Any): ManagedObject = js.native
   def create(vData: js.Any, oKeyInfo: js.Any): Unit = js.native

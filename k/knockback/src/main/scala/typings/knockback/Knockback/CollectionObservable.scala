@@ -3,14 +3,13 @@ package typings.knockback.Knockback
 import typings.backbone.mod.Collection
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
-import typings.knockout.KnockoutObservableArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait CollectionObservable
-  extends KnockoutObservableArray[js.Any] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> * / any */ @js.native
+trait CollectionObservable extends js.Object {
   def collection(): Collection[Model[_, ModelSetOptions]] = js.native
   def collection(colleciton: Collection[Model[_, ModelSetOptions]]): js.Any = js.native
   def comparator(comparatorFunction: js.Any): js.Any = js.native

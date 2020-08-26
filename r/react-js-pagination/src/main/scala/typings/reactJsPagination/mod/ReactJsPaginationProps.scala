@@ -5,93 +5,157 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactJsPaginationProps extends js.Object {
-  var activeClass: js.UndefOr[String] = js.undefined
-  var activeLinkClass: js.UndefOr[String] = js.undefined
-  var activePage: Double
-  var disabledClass: js.UndefOr[String] = js.undefined
-  var firstPageText: js.UndefOr[String | ReactElement] = js.undefined
-  var getPageUrl: js.UndefOr[js.Function1[/* pageNumber */ Double, String]] = js.undefined
-  var hideDisabled: js.UndefOr[Boolean] = js.undefined
-  var hideFirstLastPages: js.UndefOr[Boolean] = js.undefined
-  var hideNavigation: js.UndefOr[Boolean] = js.undefined
-  var innerClass: js.UndefOr[String] = js.undefined
-  var itemClass: js.UndefOr[String] = js.undefined
-  var itemClassFirst: js.UndefOr[String] = js.undefined
-  var itemClassLast: js.UndefOr[String] = js.undefined
-  var itemClassNext: js.UndefOr[String] = js.undefined
-  var itemClassPrev: js.UndefOr[String] = js.undefined
-  var itemsCountPerPage: js.UndefOr[Double] = js.undefined
-  var lastPageText: js.UndefOr[String | ReactElement] = js.undefined
-  var linkClass: js.UndefOr[String] = js.undefined
-  var linkClassFirst: js.UndefOr[String] = js.undefined
-  var linkClassLast: js.UndefOr[String] = js.undefined
-  var linkClassNext: js.UndefOr[String] = js.undefined
-  var linkClassPrev: js.UndefOr[String] = js.undefined
-  var nextPageText: js.UndefOr[String | ReactElement] = js.undefined
-  var pageRangeDisplayed: js.UndefOr[Double] = js.undefined
-  var prevPageText: js.UndefOr[String | ReactElement] = js.undefined
-  var totalItemsCount: Double
-  def onChange(pageNumber: Double): Unit
+  var activeClass: js.UndefOr[String] = js.native
+  var activeLinkClass: js.UndefOr[String] = js.native
+  var activePage: Double = js.native
+  var disabledClass: js.UndefOr[String] = js.native
+  var firstPageText: js.UndefOr[String | ReactElement] = js.native
+  var getPageUrl: js.UndefOr[js.Function1[/* pageNumber */ Double, String]] = js.native
+  var hideDisabled: js.UndefOr[Boolean] = js.native
+  var hideFirstLastPages: js.UndefOr[Boolean] = js.native
+  var hideNavigation: js.UndefOr[Boolean] = js.native
+  var innerClass: js.UndefOr[String] = js.native
+  var itemClass: js.UndefOr[String] = js.native
+  var itemClassFirst: js.UndefOr[String] = js.native
+  var itemClassLast: js.UndefOr[String] = js.native
+  var itemClassNext: js.UndefOr[String] = js.native
+  var itemClassPrev: js.UndefOr[String] = js.native
+  var itemsCountPerPage: js.UndefOr[Double] = js.native
+  var lastPageText: js.UndefOr[String | ReactElement] = js.native
+  var linkClass: js.UndefOr[String] = js.native
+  var linkClassFirst: js.UndefOr[String] = js.native
+  var linkClassLast: js.UndefOr[String] = js.native
+  var linkClassNext: js.UndefOr[String] = js.native
+  var linkClassPrev: js.UndefOr[String] = js.native
+  var nextPageText: js.UndefOr[String | ReactElement] = js.native
+  var pageRangeDisplayed: js.UndefOr[Double] = js.native
+  var prevPageText: js.UndefOr[String | ReactElement] = js.native
+  var totalItemsCount: Double = js.native
+  def onChange(pageNumber: Double): Unit = js.native
 }
 
 object ReactJsPaginationProps {
   @scala.inline
-  def apply(
-    activePage: Double,
-    onChange: Double => Unit,
-    totalItemsCount: Double,
-    activeClass: String = null,
-    activeLinkClass: String = null,
-    disabledClass: String = null,
-    firstPageText: String | ReactElement = null,
-    getPageUrl: /* pageNumber */ Double => String = null,
-    hideDisabled: js.UndefOr[Boolean] = js.undefined,
-    hideFirstLastPages: js.UndefOr[Boolean] = js.undefined,
-    hideNavigation: js.UndefOr[Boolean] = js.undefined,
-    innerClass: String = null,
-    itemClass: String = null,
-    itemClassFirst: String = null,
-    itemClassLast: String = null,
-    itemClassNext: String = null,
-    itemClassPrev: String = null,
-    itemsCountPerPage: js.UndefOr[Double] = js.undefined,
-    lastPageText: String | ReactElement = null,
-    linkClass: String = null,
-    linkClassFirst: String = null,
-    linkClassLast: String = null,
-    linkClassNext: String = null,
-    linkClassPrev: String = null,
-    nextPageText: String | ReactElement = null,
-    pageRangeDisplayed: js.UndefOr[Double] = js.undefined,
-    prevPageText: String | ReactElement = null
-  ): ReactJsPaginationProps = {
+  def apply(activePage: Double, onChange: Double => Unit, totalItemsCount: Double): ReactJsPaginationProps = {
     val __obj = js.Dynamic.literal(activePage = activePage.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), totalItemsCount = totalItemsCount.asInstanceOf[js.Any])
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
-    if (activeLinkClass != null) __obj.updateDynamic("activeLinkClass")(activeLinkClass.asInstanceOf[js.Any])
-    if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass.asInstanceOf[js.Any])
-    if (firstPageText != null) __obj.updateDynamic("firstPageText")(firstPageText.asInstanceOf[js.Any])
-    if (getPageUrl != null) __obj.updateDynamic("getPageUrl")(js.Any.fromFunction1(getPageUrl))
-    if (!js.isUndefined(hideDisabled)) __obj.updateDynamic("hideDisabled")(hideDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFirstLastPages)) __obj.updateDynamic("hideFirstLastPages")(hideFirstLastPages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNavigation)) __obj.updateDynamic("hideNavigation")(hideNavigation.get.asInstanceOf[js.Any])
-    if (innerClass != null) __obj.updateDynamic("innerClass")(innerClass.asInstanceOf[js.Any])
-    if (itemClass != null) __obj.updateDynamic("itemClass")(itemClass.asInstanceOf[js.Any])
-    if (itemClassFirst != null) __obj.updateDynamic("itemClassFirst")(itemClassFirst.asInstanceOf[js.Any])
-    if (itemClassLast != null) __obj.updateDynamic("itemClassLast")(itemClassLast.asInstanceOf[js.Any])
-    if (itemClassNext != null) __obj.updateDynamic("itemClassNext")(itemClassNext.asInstanceOf[js.Any])
-    if (itemClassPrev != null) __obj.updateDynamic("itemClassPrev")(itemClassPrev.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemsCountPerPage)) __obj.updateDynamic("itemsCountPerPage")(itemsCountPerPage.get.asInstanceOf[js.Any])
-    if (lastPageText != null) __obj.updateDynamic("lastPageText")(lastPageText.asInstanceOf[js.Any])
-    if (linkClass != null) __obj.updateDynamic("linkClass")(linkClass.asInstanceOf[js.Any])
-    if (linkClassFirst != null) __obj.updateDynamic("linkClassFirst")(linkClassFirst.asInstanceOf[js.Any])
-    if (linkClassLast != null) __obj.updateDynamic("linkClassLast")(linkClassLast.asInstanceOf[js.Any])
-    if (linkClassNext != null) __obj.updateDynamic("linkClassNext")(linkClassNext.asInstanceOf[js.Any])
-    if (linkClassPrev != null) __obj.updateDynamic("linkClassPrev")(linkClassPrev.asInstanceOf[js.Any])
-    if (nextPageText != null) __obj.updateDynamic("nextPageText")(nextPageText.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageRangeDisplayed)) __obj.updateDynamic("pageRangeDisplayed")(pageRangeDisplayed.get.asInstanceOf[js.Any])
-    if (prevPageText != null) __obj.updateDynamic("prevPageText")(prevPageText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactJsPaginationProps]
   }
+  @scala.inline
+  implicit class ReactJsPaginationPropsOps[Self <: ReactJsPaginationProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivePage(value: Double): Self = this.set("activePage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnChange(value: Double => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTotalItemsCount(value: Double): Self = this.set("totalItemsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveClass: Self = this.set("activeClass", js.undefined)
+    @scala.inline
+    def setActiveLinkClass(value: String): Self = this.set("activeLinkClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveLinkClass: Self = this.set("activeLinkClass", js.undefined)
+    @scala.inline
+    def setDisabledClass(value: String): Self = this.set("disabledClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledClass: Self = this.set("disabledClass", js.undefined)
+    @scala.inline
+    def setFirstPageText(value: String | ReactElement): Self = this.set("firstPageText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstPageText: Self = this.set("firstPageText", js.undefined)
+    @scala.inline
+    def setGetPageUrl(value: /* pageNumber */ Double => String): Self = this.set("getPageUrl", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetPageUrl: Self = this.set("getPageUrl", js.undefined)
+    @scala.inline
+    def setHideDisabled(value: Boolean): Self = this.set("hideDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideDisabled: Self = this.set("hideDisabled", js.undefined)
+    @scala.inline
+    def setHideFirstLastPages(value: Boolean): Self = this.set("hideFirstLastPages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideFirstLastPages: Self = this.set("hideFirstLastPages", js.undefined)
+    @scala.inline
+    def setHideNavigation(value: Boolean): Self = this.set("hideNavigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideNavigation: Self = this.set("hideNavigation", js.undefined)
+    @scala.inline
+    def setInnerClass(value: String): Self = this.set("innerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerClass: Self = this.set("innerClass", js.undefined)
+    @scala.inline
+    def setItemClass(value: String): Self = this.set("itemClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemClass: Self = this.set("itemClass", js.undefined)
+    @scala.inline
+    def setItemClassFirst(value: String): Self = this.set("itemClassFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemClassFirst: Self = this.set("itemClassFirst", js.undefined)
+    @scala.inline
+    def setItemClassLast(value: String): Self = this.set("itemClassLast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemClassLast: Self = this.set("itemClassLast", js.undefined)
+    @scala.inline
+    def setItemClassNext(value: String): Self = this.set("itemClassNext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemClassNext: Self = this.set("itemClassNext", js.undefined)
+    @scala.inline
+    def setItemClassPrev(value: String): Self = this.set("itemClassPrev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemClassPrev: Self = this.set("itemClassPrev", js.undefined)
+    @scala.inline
+    def setItemsCountPerPage(value: Double): Self = this.set("itemsCountPerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsCountPerPage: Self = this.set("itemsCountPerPage", js.undefined)
+    @scala.inline
+    def setLastPageText(value: String | ReactElement): Self = this.set("lastPageText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPageText: Self = this.set("lastPageText", js.undefined)
+    @scala.inline
+    def setLinkClass(value: String): Self = this.set("linkClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkClass: Self = this.set("linkClass", js.undefined)
+    @scala.inline
+    def setLinkClassFirst(value: String): Self = this.set("linkClassFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkClassFirst: Self = this.set("linkClassFirst", js.undefined)
+    @scala.inline
+    def setLinkClassLast(value: String): Self = this.set("linkClassLast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkClassLast: Self = this.set("linkClassLast", js.undefined)
+    @scala.inline
+    def setLinkClassNext(value: String): Self = this.set("linkClassNext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkClassNext: Self = this.set("linkClassNext", js.undefined)
+    @scala.inline
+    def setLinkClassPrev(value: String): Self = this.set("linkClassPrev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkClassPrev: Self = this.set("linkClassPrev", js.undefined)
+    @scala.inline
+    def setNextPageText(value: String | ReactElement): Self = this.set("nextPageText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageText: Self = this.set("nextPageText", js.undefined)
+    @scala.inline
+    def setPageRangeDisplayed(value: Double): Self = this.set("pageRangeDisplayed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageRangeDisplayed: Self = this.set("pageRangeDisplayed", js.undefined)
+    @scala.inline
+    def setPrevPageText(value: String | ReactElement): Self = this.set("prevPageText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevPageText: Self = this.set("prevPageText", js.undefined)
+  }
+  
 }
 

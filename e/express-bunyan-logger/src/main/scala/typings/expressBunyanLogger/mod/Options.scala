@@ -14,63 +14,118 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<bunyan.bunyan.LoggerOptions> */
+@js.native
 trait Options extends js.Object {
-  var excludes: js.UndefOr[js.Array[String]] = js.undefined
-  var format: js.UndefOr[String | FormatFunction] = js.undefined
-  var genReqId: js.UndefOr[RequestIdGenFunction] = js.undefined
-  var immediate: js.UndefOr[Boolean] = js.undefined
-  var includesFn: js.UndefOr[IncludesFunction] = js.undefined
-  var level: js.UndefOr[LogLevel] = js.undefined
-  var levelFn: js.UndefOr[LevelFunction] = js.undefined
-  var logger: js.UndefOr[typings.bunyan.mod.^] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var obfuscate: js.UndefOr[js.Array[String]] = js.undefined
-  var obfuscatePlaceholder: js.UndefOr[String] = js.undefined
-  var parseUA: js.UndefOr[Boolean] = js.undefined
-  var serializers: js.UndefOr[Serializers] = js.undefined
-  var src: js.UndefOr[Boolean] = js.undefined
-  var stream: js.UndefOr[WritableStream] = js.undefined
-  var streams: js.UndefOr[js.Array[Stream]] = js.undefined
+  var excludes: js.UndefOr[js.Array[String]] = js.native
+  var format: js.UndefOr[String | FormatFunction] = js.native
+  var genReqId: js.UndefOr[RequestIdGenFunction] = js.native
+  var immediate: js.UndefOr[Boolean] = js.native
+  var includesFn: js.UndefOr[IncludesFunction] = js.native
+  var level: js.UndefOr[LogLevel] = js.native
+  var levelFn: js.UndefOr[LevelFunction] = js.native
+  var logger: js.UndefOr[typings.bunyan.mod.^] = js.native
+  var name: js.UndefOr[String] = js.native
+  var obfuscate: js.UndefOr[js.Array[String]] = js.native
+  var obfuscatePlaceholder: js.UndefOr[String] = js.native
+  var parseUA: js.UndefOr[Boolean] = js.native
+  var serializers: js.UndefOr[Serializers] = js.native
+  var src: js.UndefOr[Boolean] = js.native
+  var stream: js.UndefOr[WritableStream] = js.native
+  var streams: js.UndefOr[js.Array[Stream]] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    excludes: js.Array[String] = null,
-    format: String | FormatFunction = null,
-    genReqId: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String = null,
-    immediate: js.UndefOr[Boolean] = js.undefined,
-    includesFn: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => js.Any = null,
-    level: LogLevel = null,
-    levelFn: (/* status */ Double, /* err */ Error | Null, /* meta */ js.Any) => String = null,
-    logger: typings.bunyan.mod.^ = null,
-    name: String = null,
-    obfuscate: js.Array[String] = null,
-    obfuscatePlaceholder: String = null,
-    parseUA: js.UndefOr[Boolean] = js.undefined,
-    serializers: Serializers = null,
-    src: js.UndefOr[Boolean] = js.undefined,
-    stream: WritableStream = null,
-    streams: js.Array[Stream] = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (excludes != null) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (genReqId != null) __obj.updateDynamic("genReqId")(js.Any.fromFunction1(genReqId))
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
-    if (includesFn != null) __obj.updateDynamic("includesFn")(js.Any.fromFunction2(includesFn))
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (levelFn != null) __obj.updateDynamic("levelFn")(js.Any.fromFunction3(levelFn))
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (obfuscate != null) __obj.updateDynamic("obfuscate")(obfuscate.asInstanceOf[js.Any])
-    if (obfuscatePlaceholder != null) __obj.updateDynamic("obfuscatePlaceholder")(obfuscatePlaceholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseUA)) __obj.updateDynamic("parseUA")(parseUA.get.asInstanceOf[js.Any])
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
-    if (!js.isUndefined(src)) __obj.updateDynamic("src")(src.get.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
-    if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludesVarargs(value: String*): Self = this.set("excludes", js.Array(value :_*))
+    @scala.inline
+    def setExcludes(value: js.Array[String]): Self = this.set("excludes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludes: Self = this.set("excludes", js.undefined)
+    @scala.inline
+    def setFormatFunction1(value: /* meta */ js.Any => String): Self = this.set("format", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFormat(value: String | FormatFunction): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGenReqId(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = this.set("genReqId", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGenReqId: Self = this.set("genReqId", js.undefined)
+    @scala.inline
+    def setImmediate(value: Boolean): Self = this.set("immediate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImmediate: Self = this.set("immediate", js.undefined)
+    @scala.inline
+    def setIncludesFn(
+      value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => js.Any
+    ): Self = this.set("includesFn", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIncludesFn: Self = this.set("includesFn", js.undefined)
+    @scala.inline
+    def setLevel(value: LogLevel): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setLevelFn(value: (/* status */ Double, /* err */ Error | Null, /* meta */ js.Any) => String): Self = this.set("levelFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteLevelFn: Self = this.set("levelFn", js.undefined)
+    @scala.inline
+    def setLogger(value: typings.bunyan.mod.^): Self = this.set("logger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogger: Self = this.set("logger", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setObfuscateVarargs(value: String*): Self = this.set("obfuscate", js.Array(value :_*))
+    @scala.inline
+    def setObfuscate(value: js.Array[String]): Self = this.set("obfuscate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObfuscate: Self = this.set("obfuscate", js.undefined)
+    @scala.inline
+    def setObfuscatePlaceholder(value: String): Self = this.set("obfuscatePlaceholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObfuscatePlaceholder: Self = this.set("obfuscatePlaceholder", js.undefined)
+    @scala.inline
+    def setParseUA(value: Boolean): Self = this.set("parseUA", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParseUA: Self = this.set("parseUA", js.undefined)
+    @scala.inline
+    def setSerializers(value: Serializers): Self = this.set("serializers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerializers: Self = this.set("serializers", js.undefined)
+    @scala.inline
+    def setSrc(value: Boolean): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+    @scala.inline
+    def setStream(value: WritableStream): Self = this.set("stream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStream: Self = this.set("stream", js.undefined)
+    @scala.inline
+    def setStreamsVarargs(value: Stream*): Self = this.set("streams", js.Array(value :_*))
+    @scala.inline
+    def setStreams(value: js.Array[Stream]): Self = this.set("streams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreams: Self = this.set("streams", js.undefined)
+  }
+  
 }
 

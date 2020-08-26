@@ -29,6 +29,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaSource] = js.native
   def create(callback: BodyResponseCallback[SchemaSource]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSource] = js.native
   def create(params: ParamsResourceOrganizationsSourcesCreate): GaxiosPromise[SchemaSource] = js.native
   def create(params: ParamsResourceOrganizationsSourcesCreate, callback: BodyResponseCallback[SchemaSource]): Unit = js.native
   def create(
@@ -56,6 +57,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSource] = js.native
   def get(callback: BodyResponseCallback[SchemaSource]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSource] = js.native
   def get(params: ParamsResourceOrganizationsSourcesGet): GaxiosPromise[SchemaSource] = js.native
   def get(params: ParamsResourceOrganizationsSourcesGet, callback: BodyResponseCallback[SchemaSource]): Unit = js.native
   def get(
@@ -84,6 +86,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceOrganizationsSourcesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceOrganizationsSourcesGetiampolicy,
@@ -116,6 +119,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListSourcesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSourcesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSourcesResponse] = js.native
   def list(params: ParamsResourceOrganizationsSourcesList): GaxiosPromise[SchemaListSourcesResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsSourcesList,
@@ -148,6 +152,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaSource] = js.native
   def patch(callback: BodyResponseCallback[SchemaSource]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSource] = js.native
   def patch(params: ParamsResourceOrganizationsSourcesPatch): GaxiosPromise[SchemaSource] = js.native
   def patch(params: ParamsResourceOrganizationsSourcesPatch, callback: BodyResponseCallback[SchemaSource]): Unit = js.native
   def patch(
@@ -176,6 +181,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceOrganizationsSourcesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceOrganizationsSourcesSetiampolicy,
@@ -207,6 +213,7 @@ class ResourceOrganizationsSources protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceOrganizationsSourcesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceOrganizationsSourcesTestiampermissions,

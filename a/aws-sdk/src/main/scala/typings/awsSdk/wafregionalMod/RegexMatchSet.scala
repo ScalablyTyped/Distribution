@@ -22,16 +22,36 @@ trait RegexMatchSet extends js.Object {
 
 object RegexMatchSet {
   @scala.inline
-  def apply(
-    Name: ResourceName = null,
-    RegexMatchSetId: ResourceId = null,
-    RegexMatchTuples: RegexMatchTuples = null
-  ): RegexMatchSet = {
+  def apply(): RegexMatchSet = {
     val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RegexMatchSetId != null) __obj.updateDynamic("RegexMatchSetId")(RegexMatchSetId.asInstanceOf[js.Any])
-    if (RegexMatchTuples != null) __obj.updateDynamic("RegexMatchTuples")(RegexMatchTuples.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexMatchSet]
   }
+  @scala.inline
+  implicit class RegexMatchSetOps[Self <: RegexMatchSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRegexMatchSetId(value: ResourceId): Self = this.set("RegexMatchSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexMatchSetId: Self = this.set("RegexMatchSetId", js.undefined)
+    @scala.inline
+    def setRegexMatchTuplesVarargs(value: RegexMatchTuple*): Self = this.set("RegexMatchTuples", js.Array(value :_*))
+    @scala.inline
+    def setRegexMatchTuples(value: RegexMatchTuples): Self = this.set("RegexMatchTuples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexMatchTuples: Self = this.set("RegexMatchTuples", js.undefined)
+  }
+  
 }
 

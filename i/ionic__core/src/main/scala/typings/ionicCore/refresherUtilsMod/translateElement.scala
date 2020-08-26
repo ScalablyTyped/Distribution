@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object translateElement extends js.Object {
   def apply(): js.Promise[_] = js.native
+  def apply(el: js.UndefOr[scala.Nothing], value: String): js.Promise[_] = js.native
   def apply(el: HTMLElement): js.Promise[_] = js.native
   def apply(el: HTMLElement, value: String): js.Promise[_] = js.native
 }

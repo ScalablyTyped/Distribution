@@ -1,0 +1,17 @@
+package typings.graphql.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("graphql", "Location")
+@js.native
+class Location protected ()
+  extends typings.graphql.languageMod.Location {
+  def this(
+    startToken: typings.graphql.astMod.Token,
+    endToken: typings.graphql.astMod.Token,
+    source: typings.graphql.sourceMod.Source
+  ) = this()
+}
+

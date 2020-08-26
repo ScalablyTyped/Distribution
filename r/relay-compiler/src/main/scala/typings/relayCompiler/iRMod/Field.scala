@@ -23,14 +23,10 @@ object Field {
     loc: Location,
     name: String,
     selections: js.Array[Selection],
-    `type`: LinkedFieldTypeID,
-    handles: js.Array[Handle] = null,
-    metadata: Metadata = null
+    `type`: LinkedFieldTypeID
   ): Field = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
   @scala.inline
@@ -41,14 +37,10 @@ object Field {
     kind: typings.relayCompiler.relayCompilerStrings.ScalarField,
     loc: Location,
     name: String,
-    `type`: ScalarFieldTypeID,
-    handles: js.Array[Handle] = null,
-    metadata: Metadata = null
+    `type`: ScalarFieldTypeID
   ): Field = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
 }

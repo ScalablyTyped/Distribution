@@ -5,57 +5,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueryFindOptions extends QueryFindBaseOptions {
-  var batchSize: js.UndefOr[Double] = js.undefined
-  var comment: js.UndefOr[js.Any] = js.undefined
-  var hint: js.UndefOr[js.Any] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var maxscan: js.UndefOr[Double] = js.undefined
-  var readPreference: js.UndefOr[ReadPreferenceMode] = js.undefined
-  var skip: js.UndefOr[Double] = js.undefined
-  var snapshot: js.UndefOr[js.Any] = js.undefined
-  var sort: js.UndefOr[js.Any] = js.undefined
-  var tailable: js.UndefOr[js.Any] = js.undefined
+  var batchSize: js.UndefOr[Double] = js.native
+  var comment: js.UndefOr[js.Any] = js.native
+  var hint: js.UndefOr[js.Any] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var maxscan: js.UndefOr[Double] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceMode] = js.native
+  var skip: js.UndefOr[Double] = js.native
+  var snapshot: js.UndefOr[js.Any] = js.native
+  var sort: js.UndefOr[js.Any] = js.native
+  var tailable: js.UndefOr[js.Any] = js.native
 }
 
 object QueryFindOptions {
   @scala.inline
-  def apply(
-    batchSize: js.UndefOr[Double] = js.undefined,
-    collation: CollationOptions = null,
-    comment: js.Any = null,
-    explain: js.Any = null,
-    hint: js.Any = null,
-    lean: js.UndefOr[Boolean] = js.undefined,
-    limit: js.UndefOr[Double] = js.undefined,
-    maxscan: js.UndefOr[Double] = js.undefined,
-    populate: String | ModelPopulateOptions = null,
-    projection: js.Any = null,
-    readPreference: ReadPreferenceMode = null,
-    session: ClientSession = null,
-    skip: js.UndefOr[Double] = js.undefined,
-    snapshot: js.Any = null,
-    sort: js.Any = null,
-    tailable: js.Any = null
-  ): QueryFindOptions = {
+  def apply(): QueryFindOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
-    if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (explain != null) __obj.updateDynamic("explain")(explain.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(lean)) __obj.updateDynamic("lean")(lean.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxscan)) __obj.updateDynamic("maxscan")(maxscan.get.asInstanceOf[js.Any])
-    if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (tailable != null) __obj.updateDynamic("tailable")(tailable.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryFindOptions]
   }
+  @scala.inline
+  implicit class QueryFindOptionsOps[Self <: QueryFindOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    @scala.inline
+    def setComment(value: js.Any): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setHint(value: js.Any): Self = this.set("hint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHint: Self = this.set("hint", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMaxscan(value: Double): Self = this.set("maxscan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxscan: Self = this.set("maxscan", js.undefined)
+    @scala.inline
+    def setReadPreference(value: ReadPreferenceMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    @scala.inline
+    def setSkip(value: Double): Self = this.set("skip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkip: Self = this.set("skip", js.undefined)
+    @scala.inline
+    def setSnapshot(value: js.Any): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshot: Self = this.set("snapshot", js.undefined)
+    @scala.inline
+    def setSort(value: js.Any): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setTailable(value: js.Any): Self = this.set("tailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTailable: Self = this.set("tailable", js.undefined)
+  }
+  
 }
 

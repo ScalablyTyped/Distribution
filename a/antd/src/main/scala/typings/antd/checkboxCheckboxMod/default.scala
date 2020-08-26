@@ -2,7 +2,7 @@ package typings.antd.checkboxCheckboxMod
 
 import typings.antd.anon.Indeterminate
 import typings.antd.anon.TypeofCheckboxGroup
-import typings.antd.groupMod.CheckboxGroupContext
+import typings.antd.checkboxGroupMod.CheckboxGroupContext
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`

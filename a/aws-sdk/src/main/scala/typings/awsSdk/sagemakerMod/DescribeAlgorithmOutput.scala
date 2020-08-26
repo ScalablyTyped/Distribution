@@ -60,20 +60,55 @@ object DescribeAlgorithmOutput {
     AlgorithmStatus: AlgorithmStatus,
     AlgorithmStatusDetails: AlgorithmStatusDetails,
     CreationTime: CreationTime,
-    TrainingSpecification: TrainingSpecification,
-    AlgorithmDescription: EntityDescription = null,
-    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
-    InferenceSpecification: InferenceSpecification = null,
-    ProductId: ProductId = null,
-    ValidationSpecification: AlgorithmValidationSpecification = null
+    TrainingSpecification: TrainingSpecification
   ): DescribeAlgorithmOutput = {
     val __obj = js.Dynamic.literal(AlgorithmArn = AlgorithmArn.asInstanceOf[js.Any], AlgorithmName = AlgorithmName.asInstanceOf[js.Any], AlgorithmStatus = AlgorithmStatus.asInstanceOf[js.Any], AlgorithmStatusDetails = AlgorithmStatusDetails.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], TrainingSpecification = TrainingSpecification.asInstanceOf[js.Any])
-    if (AlgorithmDescription != null) __obj.updateDynamic("AlgorithmDescription")(AlgorithmDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.get.asInstanceOf[js.Any])
-    if (InferenceSpecification != null) __obj.updateDynamic("InferenceSpecification")(InferenceSpecification.asInstanceOf[js.Any])
-    if (ProductId != null) __obj.updateDynamic("ProductId")(ProductId.asInstanceOf[js.Any])
-    if (ValidationSpecification != null) __obj.updateDynamic("ValidationSpecification")(ValidationSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAlgorithmOutput]
   }
+  @scala.inline
+  implicit class DescribeAlgorithmOutputOps[Self <: DescribeAlgorithmOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithmArn(value: AlgorithmArn): Self = this.set("AlgorithmArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithmName(value: EntityName): Self = this.set("AlgorithmName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithmStatus(value: AlgorithmStatus): Self = this.set("AlgorithmStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithmStatusDetails(value: AlgorithmStatusDetails): Self = this.set("AlgorithmStatusDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingSpecification(value: TrainingSpecification): Self = this.set("TrainingSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithmDescription(value: EntityDescription): Self = this.set("AlgorithmDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithmDescription: Self = this.set("AlgorithmDescription", js.undefined)
+    @scala.inline
+    def setCertifyForMarketplace(value: CertifyForMarketplace): Self = this.set("CertifyForMarketplace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertifyForMarketplace: Self = this.set("CertifyForMarketplace", js.undefined)
+    @scala.inline
+    def setInferenceSpecification(value: InferenceSpecification): Self = this.set("InferenceSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInferenceSpecification: Self = this.set("InferenceSpecification", js.undefined)
+    @scala.inline
+    def setProductId(value: ProductId): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("ProductId", js.undefined)
+    @scala.inline
+    def setValidationSpecification(value: AlgorithmValidationSpecification): Self = this.set("ValidationSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationSpecification: Self = this.set("ValidationSpecification", js.undefined)
+  }
+  
 }
 

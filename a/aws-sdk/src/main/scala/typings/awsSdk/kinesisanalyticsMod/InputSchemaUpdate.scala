@@ -22,16 +22,36 @@ trait InputSchemaUpdate extends js.Object {
 
 object InputSchemaUpdate {
   @scala.inline
-  def apply(
-    RecordColumnUpdates: RecordColumns = null,
-    RecordEncodingUpdate: RecordEncoding = null,
-    RecordFormatUpdate: RecordFormat = null
-  ): InputSchemaUpdate = {
+  def apply(): InputSchemaUpdate = {
     val __obj = js.Dynamic.literal()
-    if (RecordColumnUpdates != null) __obj.updateDynamic("RecordColumnUpdates")(RecordColumnUpdates.asInstanceOf[js.Any])
-    if (RecordEncodingUpdate != null) __obj.updateDynamic("RecordEncodingUpdate")(RecordEncodingUpdate.asInstanceOf[js.Any])
-    if (RecordFormatUpdate != null) __obj.updateDynamic("RecordFormatUpdate")(RecordFormatUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSchemaUpdate]
   }
+  @scala.inline
+  implicit class InputSchemaUpdateOps[Self <: InputSchemaUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecordColumnUpdatesVarargs(value: RecordColumn*): Self = this.set("RecordColumnUpdates", js.Array(value :_*))
+    @scala.inline
+    def setRecordColumnUpdates(value: RecordColumns): Self = this.set("RecordColumnUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordColumnUpdates: Self = this.set("RecordColumnUpdates", js.undefined)
+    @scala.inline
+    def setRecordEncodingUpdate(value: RecordEncoding): Self = this.set("RecordEncodingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordEncodingUpdate: Self = this.set("RecordEncodingUpdate", js.undefined)
+    @scala.inline
+    def setRecordFormatUpdate(value: RecordFormat): Self = this.set("RecordFormatUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordFormatUpdate: Self = this.set("RecordFormatUpdate", js.undefined)
+  }
+  
 }
 

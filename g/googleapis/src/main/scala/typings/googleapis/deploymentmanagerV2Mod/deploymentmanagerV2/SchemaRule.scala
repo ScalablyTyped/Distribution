@@ -48,24 +48,60 @@ trait SchemaRule extends js.Object {
 
 object SchemaRule {
   @scala.inline
-  def apply(
-    action: String = null,
-    conditions: js.Array[SchemaCondition] = null,
-    description: String = null,
-    ins: js.Array[String] = null,
-    logConfigs: js.Array[SchemaLogConfig] = null,
-    notIns: js.Array[String] = null,
-    permissions: js.Array[String] = null
-  ): SchemaRule = {
+  def apply(): SchemaRule = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (ins != null) __obj.updateDynamic("ins")(ins.asInstanceOf[js.Any])
-    if (logConfigs != null) __obj.updateDynamic("logConfigs")(logConfigs.asInstanceOf[js.Any])
-    if (notIns != null) __obj.updateDynamic("notIns")(notIns.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRule]
   }
+  @scala.inline
+  implicit class SchemaRuleOps[Self <: SchemaRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setConditionsVarargs(value: SchemaCondition*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[SchemaCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setInsVarargs(value: String*): Self = this.set("ins", js.Array(value :_*))
+    @scala.inline
+    def setIns(value: js.Array[String]): Self = this.set("ins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIns: Self = this.set("ins", js.undefined)
+    @scala.inline
+    def setLogConfigsVarargs(value: SchemaLogConfig*): Self = this.set("logConfigs", js.Array(value :_*))
+    @scala.inline
+    def setLogConfigs(value: js.Array[SchemaLogConfig]): Self = this.set("logConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogConfigs: Self = this.set("logConfigs", js.undefined)
+    @scala.inline
+    def setNotInsVarargs(value: String*): Self = this.set("notIns", js.Array(value :_*))
+    @scala.inline
+    def setNotIns(value: js.Array[String]): Self = this.set("notIns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotIns: Self = this.set("notIns", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: String*): Self = this.set("permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: js.Array[String]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+  }
+  
 }
 

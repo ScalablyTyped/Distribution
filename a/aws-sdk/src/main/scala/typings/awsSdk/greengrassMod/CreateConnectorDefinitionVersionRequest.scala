@@ -22,11 +22,34 @@ trait CreateConnectorDefinitionVersionRequest extends js.Object {
 
 object CreateConnectorDefinitionVersionRequest {
   @scala.inline
-  def apply(ConnectorDefinitionId: string, AmznClientToken: string = null, Connectors: listOfConnector = null): CreateConnectorDefinitionVersionRequest = {
+  def apply(ConnectorDefinitionId: string): CreateConnectorDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(ConnectorDefinitionId = ConnectorDefinitionId.asInstanceOf[js.Any])
-    if (AmznClientToken != null) __obj.updateDynamic("AmznClientToken")(AmznClientToken.asInstanceOf[js.Any])
-    if (Connectors != null) __obj.updateDynamic("Connectors")(Connectors.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnectorDefinitionVersionRequest]
   }
+  @scala.inline
+  implicit class CreateConnectorDefinitionVersionRequestOps[Self <: CreateConnectorDefinitionVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectorDefinitionId(value: string): Self = this.set("ConnectorDefinitionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmznClientToken(value: string): Self = this.set("AmznClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmznClientToken: Self = this.set("AmznClientToken", js.undefined)
+    @scala.inline
+    def setConnectorsVarargs(value: Connector*): Self = this.set("Connectors", js.Array(value :_*))
+    @scala.inline
+    def setConnectors(value: listOfConnector): Self = this.set("Connectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectors: Self = this.set("Connectors", js.undefined)
+  }
+  
 }
 

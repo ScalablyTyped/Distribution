@@ -46,18 +46,47 @@ object ConfirmForgotPasswordRequest {
     ClientId: ClientIdType,
     ConfirmationCode: ConfirmationCodeType,
     Password: PasswordType,
-    Username: UsernameType,
-    AnalyticsMetadata: AnalyticsMetadataType = null,
-    ClientMetadata: ClientMetadataType = null,
-    SecretHash: SecretHashType = null,
-    UserContextData: UserContextDataType = null
+    Username: UsernameType
   ): ConfirmForgotPasswordRequest = {
     val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], ConfirmationCode = ConfirmationCode.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (AnalyticsMetadata != null) __obj.updateDynamic("AnalyticsMetadata")(AnalyticsMetadata.asInstanceOf[js.Any])
-    if (ClientMetadata != null) __obj.updateDynamic("ClientMetadata")(ClientMetadata.asInstanceOf[js.Any])
-    if (SecretHash != null) __obj.updateDynamic("SecretHash")(SecretHash.asInstanceOf[js.Any])
-    if (UserContextData != null) __obj.updateDynamic("UserContextData")(UserContextData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmForgotPasswordRequest]
   }
+  @scala.inline
+  implicit class ConfirmForgotPasswordRequestOps[Self <: ConfirmForgotPasswordRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfirmationCode(value: ConfirmationCodeType): Self = this.set("ConfirmationCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPassword(value: PasswordType): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = this.set("AnalyticsMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalyticsMetadata: Self = this.set("AnalyticsMetadata", js.undefined)
+    @scala.inline
+    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
+    @scala.inline
+    def setSecretHash(value: SecretHashType): Self = this.set("SecretHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretHash: Self = this.set("SecretHash", js.undefined)
+    @scala.inline
+    def setUserContextData(value: UserContextDataType): Self = this.set("UserContextData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserContextData: Self = this.set("UserContextData", js.undefined)
+  }
+  
 }
 

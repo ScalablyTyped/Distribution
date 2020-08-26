@@ -28,11 +28,30 @@ trait SchemaUserFacingMessage extends js.Object {
 
 object SchemaUserFacingMessage {
   @scala.inline
-  def apply(defaultMessage: String = null, localizedMessages: StringDictionary[String] = null): SchemaUserFacingMessage = {
+  def apply(): SchemaUserFacingMessage = {
     val __obj = js.Dynamic.literal()
-    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage.asInstanceOf[js.Any])
-    if (localizedMessages != null) __obj.updateDynamic("localizedMessages")(localizedMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserFacingMessage]
   }
+  @scala.inline
+  implicit class SchemaUserFacingMessageOps[Self <: SchemaUserFacingMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultMessage(value: String): Self = this.set("defaultMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultMessage: Self = this.set("defaultMessage", js.undefined)
+    @scala.inline
+    def setLocalizedMessages(value: StringDictionary[String]): Self = this.set("localizedMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalizedMessages: Self = this.set("localizedMessages", js.undefined)
+  }
+  
 }
 

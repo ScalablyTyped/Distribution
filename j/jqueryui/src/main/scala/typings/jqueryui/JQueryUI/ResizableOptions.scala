@@ -1,90 +1,132 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Resizable //////////////////////////////////////////////////
+@js.native
 trait ResizableOptions extends ResizableEvents {
-  var alsoResize: js.UndefOr[js.Any] = js.undefined
+  var alsoResize: js.UndefOr[js.Any] = js.native
    // Selector, JQuery or Element
-  var animate: js.UndefOr[Boolean] = js.undefined
-  var animateDuration: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Boolean] = js.native
+  var animateDuration: js.UndefOr[js.Any] = js.native
    // number or string
-  var animateEasing: js.UndefOr[String] = js.undefined
-  var aspectRatio: js.UndefOr[js.Any] = js.undefined
+  var animateEasing: js.UndefOr[String] = js.native
+  var aspectRatio: js.UndefOr[js.Any] = js.native
    // boolean or number
-  var autoHide: js.UndefOr[Boolean] = js.undefined
-  var cancel: js.UndefOr[String] = js.undefined
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var autoHide: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[String] = js.native
+  var containment: js.UndefOr[js.Any] = js.native
    // Selector, Element or string
-  var delay: js.UndefOr[Double] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var distance: js.UndefOr[Double] = js.undefined
-  var ghost: js.UndefOr[Boolean] = js.undefined
-  var grid: js.UndefOr[js.Any] = js.undefined
-  var handles: js.UndefOr[js.Any] = js.undefined
+  var delay: js.UndefOr[Double] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var distance: js.UndefOr[Double] = js.native
+  var ghost: js.UndefOr[Boolean] = js.native
+  var grid: js.UndefOr[js.Any] = js.native
+  var handles: js.UndefOr[js.Any] = js.native
    // string or object
-  var helper: js.UndefOr[String] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maxWidth: js.UndefOr[Double] = js.undefined
-  var minHeight: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
+  var helper: js.UndefOr[String] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
 }
 
 object ResizableOptions {
   @scala.inline
-  def apply(
-    alsoResize: js.Any = null,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animateDuration: js.Any = null,
-    animateEasing: String = null,
-    aspectRatio: js.Any = null,
-    autoHide: js.UndefOr[Boolean] = js.undefined,
-    cancel: String = null,
-    containment: js.Any = null,
-    create: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    distance: js.UndefOr[Double] = js.undefined,
-    ghost: js.UndefOr[Boolean] = js.undefined,
-    grid: js.Any = null,
-    handles: js.Any = null,
-    helper: String = null,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    resize: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
-    start: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null
-  ): ResizableOptions = {
+  def apply(): ResizableOptions = {
     val __obj = js.Dynamic.literal()
-    if (alsoResize != null) __obj.updateDynamic("alsoResize")(alsoResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (animateDuration != null) __obj.updateDynamic("animateDuration")(animateDuration.asInstanceOf[js.Any])
-    if (animateEasing != null) __obj.updateDynamic("animateEasing")(animateEasing.asInstanceOf[js.Any])
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ghost)) __obj.updateDynamic("ghost")(ghost.get.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
-    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction2(resize))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     __obj.asInstanceOf[ResizableOptions]
   }
+  @scala.inline
+  implicit class ResizableOptionsOps[Self <: ResizableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlsoResize(value: js.Any): Self = this.set("alsoResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlsoResize: Self = this.set("alsoResize", js.undefined)
+    @scala.inline
+    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setAnimateDuration(value: js.Any): Self = this.set("animateDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateDuration: Self = this.set("animateDuration", js.undefined)
+    @scala.inline
+    def setAnimateEasing(value: String): Self = this.set("animateEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateEasing: Self = this.set("animateEasing", js.undefined)
+    @scala.inline
+    def setAspectRatio(value: js.Any): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    @scala.inline
+    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    @scala.inline
+    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setContainment(value: js.Any): Self = this.set("containment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainment: Self = this.set("containment", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistance: Self = this.set("distance", js.undefined)
+    @scala.inline
+    def setGhost(value: Boolean): Self = this.set("ghost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGhost: Self = this.set("ghost", js.undefined)
+    @scala.inline
+    def setGrid(value: js.Any): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setHandles(value: js.Any): Self = this.set("handles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandles: Self = this.set("handles", js.undefined)
+    @scala.inline
+    def setHelper(value: String): Self = this.set("helper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelper: Self = this.set("helper", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+  }
+  
 }
 

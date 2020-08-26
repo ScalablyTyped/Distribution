@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Body ()
   extends typings.nodeFetch.mod.Body {
   def this(body: js.Any) = this()
+  def this(body: js.UndefOr[scala.Nothing], opts: Size) = this()
   def this(body: js.Any, opts: Size) = this()
 }
 

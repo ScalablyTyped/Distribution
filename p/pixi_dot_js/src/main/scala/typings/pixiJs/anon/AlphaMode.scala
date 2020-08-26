@@ -11,51 +11,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AlphaMode extends js.Object {
-  var alphaMode: js.UndefOr[ALPHA_MODES] = js.undefined
-  var anisotropicLevel: js.UndefOr[Double] = js.undefined
-  var format: js.UndefOr[FORMATS] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var mipmap: js.UndefOr[MIPMAP_MODES] = js.undefined
-  var resolution: js.UndefOr[Double] = js.undefined
-  var resourceOptions: js.UndefOr[js.Any] = js.undefined
-  var scaleMode: js.UndefOr[SCALE_MODES] = js.undefined
-  var target: js.UndefOr[TARGETS] = js.undefined
-  var `type`: js.UndefOr[TYPES] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var wrapMode: js.UndefOr[WRAP_MODES] = js.undefined
+  var alphaMode: js.UndefOr[ALPHA_MODES] = js.native
+  var anisotropicLevel: js.UndefOr[Double] = js.native
+  var format: js.UndefOr[FORMATS] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var mipmap: js.UndefOr[MIPMAP_MODES] = js.native
+  var resolution: js.UndefOr[Double] = js.native
+  var resourceOptions: js.UndefOr[js.Any] = js.native
+  var scaleMode: js.UndefOr[SCALE_MODES] = js.native
+  var target: js.UndefOr[TARGETS] = js.native
+  var `type`: js.UndefOr[TYPES] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var wrapMode: js.UndefOr[WRAP_MODES] = js.native
 }
 
 object AlphaMode {
   @scala.inline
-  def apply(
-    alphaMode: ALPHA_MODES = null,
-    anisotropicLevel: js.UndefOr[Double] = js.undefined,
-    format: FORMATS = null,
-    height: js.UndefOr[Double] = js.undefined,
-    mipmap: MIPMAP_MODES = null,
-    resolution: js.UndefOr[Double] = js.undefined,
-    resourceOptions: js.Any = null,
-    scaleMode: SCALE_MODES = null,
-    target: TARGETS = null,
-    `type`: TYPES = null,
-    width: js.UndefOr[Double] = js.undefined,
-    wrapMode: WRAP_MODES = null
-  ): AlphaMode = {
+  def apply(): AlphaMode = {
     val __obj = js.Dynamic.literal()
-    if (alphaMode != null) __obj.updateDynamic("alphaMode")(alphaMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(anisotropicLevel)) __obj.updateDynamic("anisotropicLevel")(anisotropicLevel.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (mipmap != null) __obj.updateDynamic("mipmap")(mipmap.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
-    if (resourceOptions != null) __obj.updateDynamic("resourceOptions")(resourceOptions.asInstanceOf[js.Any])
-    if (scaleMode != null) __obj.updateDynamic("scaleMode")(scaleMode.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (wrapMode != null) __obj.updateDynamic("wrapMode")(wrapMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlphaMode]
   }
+  @scala.inline
+  implicit class AlphaModeOps[Self <: AlphaMode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlphaMode(value: ALPHA_MODES): Self = this.set("alphaMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlphaMode: Self = this.set("alphaMode", js.undefined)
+    @scala.inline
+    def setAnisotropicLevel(value: Double): Self = this.set("anisotropicLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnisotropicLevel: Self = this.set("anisotropicLevel", js.undefined)
+    @scala.inline
+    def setFormat(value: FORMATS): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMipmap(value: MIPMAP_MODES): Self = this.set("mipmap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMipmap: Self = this.set("mipmap", js.undefined)
+    @scala.inline
+    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setResourceOptions(value: js.Any): Self = this.set("resourceOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceOptions: Self = this.set("resourceOptions", js.undefined)
+    @scala.inline
+    def setScaleMode(value: SCALE_MODES): Self = this.set("scaleMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleMode: Self = this.set("scaleMode", js.undefined)
+    @scala.inline
+    def setTarget(value: TARGETS): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setType(value: TYPES): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWrapMode(value: WRAP_MODES): Self = this.set("wrapMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapMode: Self = this.set("wrapMode", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "unimodules-permissions-interface" : "5.0.0"
+      "unimodules-permissions-interface" : "5.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "unimodules-permissions-interface" : "5.0.0"
+      "unimodules-permissions-interface" : "5.2.1"
     }
   ],
   "compile-devDependencies" : [

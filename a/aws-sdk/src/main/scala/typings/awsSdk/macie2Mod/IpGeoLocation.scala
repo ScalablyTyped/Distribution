@@ -7,22 +7,41 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IpGeoLocation extends js.Object {
   /**
-    * Reserved for future use.
+    * The latitude coordinate of the location, rounded to four decimal places.
     */
   var lat: js.UndefOr[double] = js.native
   /**
-    * Reserved for future use.
+    * The longitude coordinate of the location, rounded to four decimal places.
     */
   var lon: js.UndefOr[double] = js.native
 }
 
 object IpGeoLocation {
   @scala.inline
-  def apply(lat: js.UndefOr[double] = js.undefined, lon: js.UndefOr[double] = js.undefined): IpGeoLocation = {
+  def apply(): IpGeoLocation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lat)) __obj.updateDynamic("lat")(lat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lon)) __obj.updateDynamic("lon")(lon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpGeoLocation]
   }
+  @scala.inline
+  implicit class IpGeoLocationOps[Self <: IpGeoLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLat(value: double): Self = this.set("lat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLat: Self = this.set("lat", js.undefined)
+    @scala.inline
+    def setLon(value: double): Self = this.set("lon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLon: Self = this.set("lon", js.undefined)
+  }
+  
 }
 

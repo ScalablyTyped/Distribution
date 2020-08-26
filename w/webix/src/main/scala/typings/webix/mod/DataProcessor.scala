@@ -30,9 +30,11 @@ trait DataProcessor extends js.Object {
   def processResult(data: js.Any): Unit = js.native
   def reset(): Unit = js.native
   def save(id: String): js.Promise[_] = js.native
+  def save(id: String, operation: js.UndefOr[scala.Nothing], obj: js.Any): js.Promise[_] = js.native
   def save(id: String, operation: String): js.Promise[_] = js.native
   def save(id: String, operation: String, obj: js.Any): js.Promise[_] = js.native
   def save(id: Double): js.Promise[_] = js.native
+  def save(id: Double, operation: js.UndefOr[scala.Nothing], obj: js.Any): js.Promise[_] = js.native
   def save(id: Double, operation: String): js.Promise[_] = js.native
   def save(id: Double, operation: String, obj: js.Any): js.Promise[_] = js.native
   def send(): js.Promise[_] = js.native

@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 class Cluster () extends js.Object {
   def this(cnstr: String) = this()
+  def this(cnstr: js.UndefOr[scala.Nothing], options: ClusterConstructorOptions) = this()
   def this(cnstr: String, options: ClusterConstructorOptions) = this()
   /**
     * Authenticate to the cluster using a specific authentication type.
@@ -43,8 +44,13 @@ class Cluster () extends js.Object {
     * @param name The name of the bucket to open.
     */
   def openBucket(): Bucket = js.native
+  def openBucket(name: js.UndefOr[scala.Nothing], callback: js.Function): Bucket = js.native
+  def openBucket(name: js.UndefOr[scala.Nothing], password: js.UndefOr[scala.Nothing], callback: js.Function): Bucket = js.native
+  def openBucket(name: js.UndefOr[scala.Nothing], password: String): Bucket = js.native
+  def openBucket(name: js.UndefOr[scala.Nothing], password: String, callback: js.Function): Bucket = js.native
   def openBucket(name: String): Bucket = js.native
   def openBucket(name: String, callback: js.Function): Bucket = js.native
+  def openBucket(name: String, password: js.UndefOr[scala.Nothing], callback: js.Function): Bucket = js.native
   def openBucket(name: String, password: String): Bucket = js.native
   def openBucket(name: String, password: String, callback: js.Function): Bucket = js.native
 }

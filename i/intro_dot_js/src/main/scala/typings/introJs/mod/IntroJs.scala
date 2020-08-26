@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IntroJs extends js.Object {
   def addHints(): IntroJs = js.native
+  /**
+    * @link https://introjs.com/docs/intro/api/#introjsaddstepoptions
+    */
+  def addStep(options: Step): IntroJs = js.native
+  /**
+    * @link https://introjs.com/docs/intro/api/#introjsaddstepssteps
+    */
+  def addSteps(steps: js.Array[Step]): IntroJs = js.native
   def exit(): IntroJs = js.native
   def goToStep(step: Double): IntroJs = js.native
   def goToStepNumber(stepId: Double): IntroJs = js.native

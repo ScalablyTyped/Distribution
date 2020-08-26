@@ -4,33 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProcessOptions extends NodeProcessOptions {
   /**
     *  Whether the command will automatically start when this BufferedProcess is
     *  created.
     */
-  var autoStart: js.UndefOr[Boolean] = js.undefined
+  var autoStart: js.UndefOr[Boolean] = js.native
 }
 
 object ProcessOptions {
   @scala.inline
-  def apply(
-    command: String,
-    args: js.Array[String] = null,
-    autoStart: js.UndefOr[Boolean] = js.undefined,
-    exit: /* code */ Double => Unit = null,
-    options: SpawnProcessOptions = null,
-    stderr: /* data */ String => Unit = null,
-    stdout: /* data */ String => Unit = null
-  ): ProcessOptions = {
+  def apply(command: String): ProcessOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
-    if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction1(exit))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (stderr != null) __obj.updateDynamic("stderr")(js.Any.fromFunction1(stderr))
-    if (stdout != null) __obj.updateDynamic("stdout")(js.Any.fromFunction1(stdout))
     __obj.asInstanceOf[ProcessOptions]
   }
+  @scala.inline
+  implicit class ProcessOptionsOps[Self <: ProcessOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoStart(value: Boolean): Self = this.set("autoStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoStart: Self = this.set("autoStart", js.undefined)
+  }
+  
 }
 

@@ -139,6 +139,9 @@ object jwplayerStrings {
   sealed trait play extends js.Object
   
   @js.native
+  sealed trait playbackRateChanged extends js.Object
+  
+  @js.native
   sealed trait playing extends js.Object
   
   @js.native
@@ -277,6 +280,8 @@ object jwplayerStrings {
   def paused: paused = "paused".asInstanceOf[paused]
   @scala.inline
   def play: play = "play".asInstanceOf[play]
+  @scala.inline
+  def playbackRateChanged: playbackRateChanged = "playbackRateChanged".asInstanceOf[playbackRateChanged]
   @scala.inline
   def playing: playing = "playing".asInstanceOf[playing]
   @scala.inline

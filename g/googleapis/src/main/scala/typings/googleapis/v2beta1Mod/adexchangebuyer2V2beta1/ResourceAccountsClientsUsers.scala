@@ -29,6 +29,7 @@ class ResourceAccountsClientsUsers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaClientUser] = js.native
   def get(callback: BodyResponseCallback[SchemaClientUser]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientUser] = js.native
   def get(params: ParamsResourceAccountsClientsUsersGet): GaxiosPromise[SchemaClientUser] = js.native
   def get(params: ParamsResourceAccountsClientsUsersGet, callback: BodyResponseCallback[SchemaClientUser]): Unit = js.native
   def get(
@@ -60,6 +61,7 @@ class ResourceAccountsClientsUsers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListClientUsersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListClientUsersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListClientUsersResponse] = js.native
   def list(params: ParamsResourceAccountsClientsUsersList): GaxiosPromise[SchemaListClientUsersResponse] = js.native
   def list(
     params: ParamsResourceAccountsClientsUsersList,
@@ -94,6 +96,7 @@ class ResourceAccountsClientsUsers protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaClientUser] = js.native
   def update(callback: BodyResponseCallback[SchemaClientUser]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientUser] = js.native
   def update(params: ParamsResourceAccountsClientsUsersUpdate): GaxiosPromise[SchemaClientUser] = js.native
   def update(params: ParamsResourceAccountsClientsUsersUpdate, callback: BodyResponseCallback[SchemaClientUser]): Unit = js.native
   def update(

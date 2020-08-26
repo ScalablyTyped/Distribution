@@ -26,18 +26,38 @@ trait ServiceRegistry extends js.Object {
 
 object ServiceRegistry {
   @scala.inline
-  def apply(
-    containerName: String = null,
-    containerPort: js.UndefOr[BoxedInteger] = js.undefined,
-    port: js.UndefOr[BoxedInteger] = js.undefined,
-    registryArn: String = null
-  ): ServiceRegistry = {
+  def apply(): ServiceRegistry = {
     val __obj = js.Dynamic.literal()
-    if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerPort)) __obj.updateDynamic("containerPort")(containerPort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (registryArn != null) __obj.updateDynamic("registryArn")(registryArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceRegistry]
   }
+  @scala.inline
+  implicit class ServiceRegistryOps[Self <: ServiceRegistry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    @scala.inline
+    def setContainerPort(value: BoxedInteger): Self = this.set("containerPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerPort: Self = this.set("containerPort", js.undefined)
+    @scala.inline
+    def setPort(value: BoxedInteger): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setRegistryArn(value: String): Self = this.set("registryArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryArn: Self = this.set("registryArn", js.undefined)
+  }
+  
 }
 

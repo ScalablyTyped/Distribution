@@ -62,36 +62,78 @@ trait ParameterHistory extends js.Object {
 
 object ParameterHistory {
   @scala.inline
-  def apply(
-    AllowedPattern: AllowedPattern = null,
-    DataType: ParameterDataType = null,
-    Description: ParameterDescription = null,
-    KeyId: ParameterKeyId = null,
-    Labels: ParameterLabelList = null,
-    LastModifiedDate: DateTime = null,
-    LastModifiedUser: String = null,
-    Name: PSParameterName = null,
-    Policies: ParameterPolicyList = null,
-    Tier: ParameterTier = null,
-    Type: ParameterType = null,
-    Value: PSParameterValue = null,
-    Version: js.UndefOr[PSParameterVersion] = js.undefined
-  ): ParameterHistory = {
+  def apply(): ParameterHistory = {
     val __obj = js.Dynamic.literal()
-    if (AllowedPattern != null) __obj.updateDynamic("AllowedPattern")(AllowedPattern.asInstanceOf[js.Any])
-    if (DataType != null) __obj.updateDynamic("DataType")(DataType.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (LastModifiedUser != null) __obj.updateDynamic("LastModifiedUser")(LastModifiedUser.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Policies != null) __obj.updateDynamic("Policies")(Policies.asInstanceOf[js.Any])
-    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterHistory]
   }
+  @scala.inline
+  implicit class ParameterHistoryOps[Self <: ParameterHistory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedPattern(value: AllowedPattern): Self = this.set("AllowedPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedPattern: Self = this.set("AllowedPattern", js.undefined)
+    @scala.inline
+    def setDataType(value: ParameterDataType): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataType: Self = this.set("DataType", js.undefined)
+    @scala.inline
+    def setDescription(value: ParameterDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setKeyId(value: ParameterKeyId): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: ParameterLabel*): Self = this.set("Labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: ParameterLabelList): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateTime): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setLastModifiedUser(value: String): Self = this.set("LastModifiedUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedUser: Self = this.set("LastModifiedUser", js.undefined)
+    @scala.inline
+    def setName(value: PSParameterName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPoliciesVarargs(value: ParameterInlinePolicy*): Self = this.set("Policies", js.Array(value :_*))
+    @scala.inline
+    def setPolicies(value: ParameterPolicyList): Self = this.set("Policies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicies: Self = this.set("Policies", js.undefined)
+    @scala.inline
+    def setTier(value: ParameterTier): Self = this.set("Tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("Tier", js.undefined)
+    @scala.inline
+    def setType(value: ParameterType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setValue(value: PSParameterValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+    @scala.inline
+    def setVersion(value: PSParameterVersion): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

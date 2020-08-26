@@ -50,6 +50,7 @@ trait KnockoutUtils extends js.Object {
   def setTextContent(element: js.Any, textContent: String): Unit = js.native
   def setTextContent(element: js.Any, textContent: KnockoutObservable[String]): Unit = js.native
   def stringifyJson(data: js.Any): String = js.native
+  def stringifyJson(data: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
   def stringifyJson(data: js.Any, replacer: js.Function): String = js.native
   def stringifyJson(data: js.Any, replacer: js.Function, space: String): String = js.native
   def toggleDomNodeCssClass(node: js.Any, className: String, shouldHaveClass: Boolean): Unit = js.native

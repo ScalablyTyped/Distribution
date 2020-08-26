@@ -10,9 +10,9 @@ Typings are for version 4.0
 | ------------------ | :-------------: |
 | Full name          | react-with-styles |
 | Keywords           | react, css, styles, aphrodite, radium, inline, styles, react, native |
-| # releases         | 20 |
-| # dependents       | 51 |
-| # downloads        | 9752224 |
+| # releases         | 19 |
+| # dependents       | 53 |
+| # downloads        | 10075919 |
 | # stars            | 4 |
 
 ## Links

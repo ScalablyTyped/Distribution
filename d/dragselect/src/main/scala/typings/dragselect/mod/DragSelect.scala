@@ -58,6 +58,11 @@ trait DragSelect extends js.Object {
     * @return all selected nodes
     */
   def addSelection(_nodes: ArrayLike[HTMLElement | SVGElement]): js.Array[HTMLElement | SVGElement] = js.native
+  def addSelection(
+    _nodes: ArrayLike[HTMLElement | SVGElement],
+    triggerCallback: js.UndefOr[scala.Nothing],
+    dontAddToSelectables: Boolean
+  ): js.Array[HTMLElement | SVGElement] = js.native
   def addSelection(_nodes: ArrayLike[HTMLElement | SVGElement], triggerCallback: Boolean): js.Array[HTMLElement | SVGElement] = js.native
   def addSelection(
     _nodes: ArrayLike[HTMLElement | SVGElement],
@@ -109,16 +114,27 @@ trait DragSelect extends js.Object {
     * @return cursor { x/y }
     */
   def getCursorPos(): X = js.native
+  def getCursorPos(event: js.UndefOr[scala.Nothing], _area: js.UndefOr[scala.Nothing], ignoreScroll: Boolean): X = js.native
+  def getCursorPos(event: js.UndefOr[scala.Nothing], _area: HTMLElement): X = js.native
+  def getCursorPos(event: js.UndefOr[scala.Nothing], _area: HTMLElement, ignoreScroll: Boolean): X = js.native
+  def getCursorPos(event: js.UndefOr[scala.Nothing], _area: SVGElement): X = js.native
+  def getCursorPos(event: js.UndefOr[scala.Nothing], _area: SVGElement, ignoreScroll: Boolean): X = js.native
   def getCursorPos(event: MouseEvent): X = js.native
+  def getCursorPos(event: MouseEvent, _area: js.UndefOr[scala.Nothing], ignoreScroll: Boolean): X = js.native
   def getCursorPos(event: MouseEvent, _area: HTMLElement): X = js.native
   def getCursorPos(event: MouseEvent, _area: HTMLElement, ignoreScroll: Boolean): X = js.native
   def getCursorPos(event: MouseEvent, _area: SVGElement): X = js.native
   def getCursorPos(event: MouseEvent, _area: SVGElement, ignoreScroll: Boolean): X = js.native
   def getCursorPos(event: TouchEvent): X = js.native
+  def getCursorPos(event: TouchEvent, _area: js.UndefOr[scala.Nothing], ignoreScroll: Boolean): X = js.native
   def getCursorPos(event: TouchEvent, _area: HTMLElement): X = js.native
   def getCursorPos(event: TouchEvent, _area: HTMLElement, ignoreScroll: Boolean): X = js.native
   def getCursorPos(event: TouchEvent, _area: SVGElement): X = js.native
   def getCursorPos(event: TouchEvent, _area: SVGElement, ignoreScroll: Boolean): X = js.native
+  @JSName("getCursorPos")
+  def getCursorPos_false(event: js.UndefOr[scala.Nothing], _area: `false`): X = js.native
+  @JSName("getCursorPos")
+  def getCursorPos_false(event: js.UndefOr[scala.Nothing], _area: `false`, ignoreScroll: Boolean): X = js.native
   @JSName("getCursorPos")
   def getCursorPos_false(event: MouseEvent, _area: `false`): X = js.native
   @JSName("getCursorPos")
@@ -161,13 +177,17 @@ trait DragSelect extends js.Object {
     * Returns the current selected nodes
     */
   def getSelection(): js.Array[HTMLElement | SVGElement] = js.native
+  def isCursorNearEdge(event: js.UndefOr[scala.Nothing], area: HTMLElement): `false` | left | right | top | bottom = js.native
+  def isCursorNearEdge(event: js.UndefOr[scala.Nothing], area: SVGElement): `false` | left | right | top | bottom = js.native
   /**
     * Check if the selector is near an edge of the area
     * @param [event] event object.
     * @param area the area.
     */
-  def isCursorNearEdge(event: js.UndefOr[MouseEvent | TouchEvent], area: HTMLElement): `false` | left | right | top | bottom = js.native
-  def isCursorNearEdge(event: js.UndefOr[MouseEvent | TouchEvent], area: SVGElement): `false` | left | right | top | bottom = js.native
+  def isCursorNearEdge(event: MouseEvent, area: HTMLElement): `false` | left | right | top | bottom = js.native
+  def isCursorNearEdge(event: MouseEvent, area: SVGElement): `false` | left | right | top | bottom = js.native
+  def isCursorNearEdge(event: TouchEvent, area: HTMLElement): `false` | left | right | top | bottom = js.native
+  def isCursorNearEdge(event: TouchEvent, area: SVGElement): `false` | left | right | top | bottom = js.native
   def moveCallback(event: MouseEvent): Unit = js.native
   def moveCallback(event: TouchEvent): Unit = js.native
   def moveStartCallback(event: MouseEvent): Unit = js.native
@@ -191,6 +211,11 @@ trait DragSelect extends js.Object {
     * @return all selected nodes
     */
   def removeSelection(_nodes: ArrayLike[HTMLElement | SVGElement]): js.Array[HTMLElement | SVGElement] = js.native
+  def removeSelection(
+    _nodes: ArrayLike[HTMLElement | SVGElement],
+    triggerCallback: js.UndefOr[scala.Nothing],
+    removeFromSelectables: Boolean
+  ): js.Array[HTMLElement | SVGElement] = js.native
   def removeSelection(_nodes: ArrayLike[HTMLElement | SVGElement], triggerCallback: Boolean): js.Array[HTMLElement | SVGElement] = js.native
   def removeSelection(
     _nodes: ArrayLike[HTMLElement | SVGElement],
@@ -203,6 +228,7 @@ trait DragSelect extends js.Object {
     * @param [withCallback] - whether or not the callback should be called
     */
   def reset(): Boolean = js.native
+  def reset(event: js.UndefOr[scala.Nothing], withCallback: Boolean): Boolean = js.native
   def reset(event: MouseEvent): Boolean = js.native
   def reset(event: MouseEvent, withCallback: Boolean): Boolean = js.native
   def reset(event: TouchEvent): Boolean = js.native
@@ -226,6 +252,11 @@ trait DragSelect extends js.Object {
     * @return nodes – the added node(s)
     */
   def setSelectables(nodes: ArrayLike[HTMLElement | SVGElement]): js.Array[HTMLElement | SVGElement] = js.native
+  def setSelectables(
+    nodes: ArrayLike[HTMLElement | SVGElement],
+    removeFromSelection: js.UndefOr[scala.Nothing],
+    addToSelection: Boolean
+  ): js.Array[HTMLElement | SVGElement] = js.native
   def setSelectables(nodes: ArrayLike[HTMLElement | SVGElement], removeFromSelection: Boolean): js.Array[HTMLElement | SVGElement] = js.native
   def setSelectables(nodes: ArrayLike[HTMLElement | SVGElement], removeFromSelection: Boolean, addToSelection: Boolean): js.Array[HTMLElement | SVGElement] = js.native
   /**
@@ -236,6 +267,11 @@ trait DragSelect extends js.Object {
     * @param [dontAddToSelectables] - if element should not be added to the list of selectable nodes
     */
   def setSelection(_nodes: ArrayLike[HTMLElement | SVGElement]): js.Array[HTMLElement | SVGElement] = js.native
+  def setSelection(
+    _nodes: ArrayLike[HTMLElement | SVGElement],
+    triggerCallback: js.UndefOr[scala.Nothing],
+    dontAddToSelectables: Boolean
+  ): js.Array[HTMLElement | SVGElement] = js.native
   def setSelection(_nodes: ArrayLike[HTMLElement | SVGElement], triggerCallback: Boolean): js.Array[HTMLElement | SVGElement] = js.native
   def setSelection(
     _nodes: ArrayLike[HTMLElement | SVGElement],
@@ -255,7 +291,11 @@ trait DragSelect extends js.Object {
     * @param [withCallback] - if elements should also be added/removed to the selection.
     */
   def stop(): Unit = js.native
+  def stop(remove: js.UndefOr[scala.Nothing], fromSelection: js.UndefOr[scala.Nothing], withCallback: Boolean): Unit = js.native
+  def stop(remove: js.UndefOr[scala.Nothing], fromSelection: Boolean): Unit = js.native
+  def stop(remove: js.UndefOr[scala.Nothing], fromSelection: Boolean, withCallback: Boolean): Unit = js.native
   def stop(remove: Boolean): Unit = js.native
+  def stop(remove: Boolean, fromSelection: js.UndefOr[scala.Nothing], withCallback: Boolean): Unit = js.native
   def stop(remove: Boolean, fromSelection: Boolean): Unit = js.native
   def stop(remove: Boolean, fromSelection: Boolean, withCallback: Boolean): Unit = js.native
   /**
@@ -276,6 +316,11 @@ trait DragSelect extends js.Object {
     * @return all selected nodes
     */
   def toggleSelection(_nodes: ArrayLike[HTMLElement | SVGElement]): js.Array[HTMLElement | SVGElement] = js.native
+  def toggleSelection(
+    _nodes: ArrayLike[HTMLElement | SVGElement],
+    triggerCallback: js.UndefOr[scala.Nothing],
+    special: Boolean
+  ): js.Array[HTMLElement | SVGElement] = js.native
   def toggleSelection(_nodes: ArrayLike[HTMLElement | SVGElement], triggerCallback: Boolean): js.Array[HTMLElement | SVGElement] = js.native
   def toggleSelection(_nodes: ArrayLike[HTMLElement | SVGElement], triggerCallback: Boolean, special: Boolean): js.Array[HTMLElement | SVGElement] = js.native
   /**

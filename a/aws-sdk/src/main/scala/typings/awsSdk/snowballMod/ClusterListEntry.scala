@@ -26,18 +26,38 @@ trait ClusterListEntry extends js.Object {
 
 object ClusterListEntry {
   @scala.inline
-  def apply(
-    ClusterId: String = null,
-    ClusterState: ClusterState = null,
-    CreationDate: Timestamp = null,
-    Description: String = null
-  ): ClusterListEntry = {
+  def apply(): ClusterListEntry = {
     val __obj = js.Dynamic.literal()
-    if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
-    if (ClusterState != null) __obj.updateDynamic("ClusterState")(ClusterState.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterListEntry]
   }
+  @scala.inline
+  implicit class ClusterListEntryOps[Self <: ClusterListEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterId(value: String): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    @scala.inline
+    def setClusterState(value: ClusterState): Self = this.set("ClusterState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterState: Self = this.set("ClusterState", js.undefined)
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

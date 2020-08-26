@@ -4,33 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PageIndexChangingEventUIParam extends js.Object {
   /**
     * Gets current page index.
     */
-  var currentPageIndex: js.UndefOr[Double] = js.undefined
+  var currentPageIndex: js.UndefOr[Double] = js.native
   /**
     * Gets new page index.
     */
-  var newPageIndex: js.UndefOr[Double] = js.undefined
+  var newPageIndex: js.UndefOr[Double] = js.native
   /**
     * Gets reference to GridPaging.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[js.Any] = js.native
 }
 
 object PageIndexChangingEventUIParam {
   @scala.inline
-  def apply(
-    currentPageIndex: js.UndefOr[Double] = js.undefined,
-    newPageIndex: js.UndefOr[Double] = js.undefined,
-    owner: js.Any = null
-  ): PageIndexChangingEventUIParam = {
+  def apply(): PageIndexChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(currentPageIndex)) __obj.updateDynamic("currentPageIndex")(currentPageIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(newPageIndex)) __obj.updateDynamic("newPageIndex")(newPageIndex.get.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageIndexChangingEventUIParam]
   }
+  @scala.inline
+  implicit class PageIndexChangingEventUIParamOps[Self <: PageIndexChangingEventUIParam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentPageIndex(value: Double): Self = this.set("currentPageIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPageIndex: Self = this.set("currentPageIndex", js.undefined)
+    @scala.inline
+    def setNewPageIndex(value: Double): Self = this.set("newPageIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewPageIndex: Self = this.set("newPageIndex", js.undefined)
+    @scala.inline
+    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+  }
+  
 }
 

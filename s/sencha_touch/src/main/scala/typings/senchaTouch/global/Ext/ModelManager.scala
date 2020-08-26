@@ -49,7 +49,11 @@ object ModelManager extends js.Object {
     * @returns Object
     */
   def create(): js.Any = js.native
+  def create(data: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], id: Double): js.Any = js.native
+  def create(data: js.UndefOr[scala.Nothing], name: java.lang.String): js.Any = js.native
+  def create(data: js.UndefOr[scala.Nothing], name: java.lang.String, id: Double): js.Any = js.native
   def create(data: js.Any): js.Any = js.native
+  def create(data: js.Any, name: js.UndefOr[scala.Nothing], id: Double): js.Any = js.native
   def create(data: js.Any, name: java.lang.String): js.Any = js.native
   def create(data: js.Any, name: java.lang.String, id: Double): js.Any = js.native
   /** [Method]  */
@@ -59,6 +63,7 @@ object ModelManager extends js.Object {
     * @param scope Object The scope to execute in.
     */
   def each(): Unit = js.native
+  def each(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def each(fn: js.Any): Unit = js.native
   def each(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Returns an item by id
@@ -101,7 +106,11 @@ object ModelManager extends js.Object {
     * @param scope Object The scope (this reference) in which the callback is executed. Defaults to the item.
     */
   def onAvailable(): Unit = js.native
+  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def onAvailable(id: java.lang.String): Unit = js.native
+  def onAvailable(id: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def onAvailable(id: java.lang.String, fn: js.Any): Unit = js.native
   def onAvailable(id: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Registers an item to be managed
@@ -115,6 +124,7 @@ object ModelManager extends js.Object {
     * @returns Object
     */
   def registerType(): js.Any = js.native
+  def registerType(name: js.UndefOr[scala.Nothing], config: js.Any): js.Any = js.native
   def registerType(name: java.lang.String): js.Any = js.native
   def registerType(name: java.lang.String, config: js.Any): js.Any = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

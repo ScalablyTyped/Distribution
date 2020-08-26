@@ -21,6 +21,7 @@ trait OverlayInterface extends js.Object {
   var willDismiss: EventEmitter[OverlayEventDetail[_]] = js.native
   var willPresent: EventEmitter[Unit] = js.native
   def dismiss(): js.Promise[Boolean] = js.native
+  def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
   def present(): js.Promise[Unit] = js.native

@@ -12,11 +12,30 @@ trait TotalItems extends js.Object {
 
 object TotalItems {
   @scala.inline
-  def apply(selfLink: String = null, totalItems: String = null): TotalItems = {
+  def apply(): TotalItems = {
     val __obj = js.Dynamic.literal()
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[TotalItems]
   }
+  @scala.inline
+  implicit class TotalItemsOps[Self <: TotalItems] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setTotalItems(value: String): Self = this.set("totalItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalItems: Self = this.set("totalItems", js.undefined)
+  }
+  
 }
 

@@ -51,6 +51,12 @@ object managedApplicationClientMod extends js.Object {
     def this(
       credentials: ServiceClientCredentials,
       subscriptionId: String,
+      baseUri: js.UndefOr[scala.Nothing],
+      options: AzureServiceClientOptions
+    ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
@@ -202,6 +208,12 @@ object managedApplicationClientMod extends js.Object {
       */
     def this(credentials: ServiceClientCredentials, subscriptionId: String) = this()
     def this(credentials: ServiceClientCredentials, subscriptionId: String, baseUri: String) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: js.UndefOr[scala.Nothing],
+      options: AzureServiceClientOptions
+    ) = this()
     def this(
       credentials: ServiceClientCredentials,
       subscriptionId: String,

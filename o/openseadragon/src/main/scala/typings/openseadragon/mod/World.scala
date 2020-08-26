@@ -17,6 +17,12 @@ class World protected () extends EventSource {
   def addItem(item: TiledImage): Unit = js.native
   def addItem(item: TiledImage, options: Index): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[WorldEvent]): Unit = js.native
+  def addOnceHandler(
+    eventName: String,
+    handler: EventHandler[WorldEvent],
+    userData: js.UndefOr[scala.Nothing],
+    times: Double
+  ): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[WorldEvent], userData: js.Object): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[WorldEvent], userData: js.Object, times: Double): Unit = js.native
   def arrange(options: Columns): Unit = js.native

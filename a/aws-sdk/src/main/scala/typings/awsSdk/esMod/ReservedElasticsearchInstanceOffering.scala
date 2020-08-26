@@ -42,26 +42,56 @@ trait ReservedElasticsearchInstanceOffering extends js.Object {
 
 object ReservedElasticsearchInstanceOffering {
   @scala.inline
-  def apply(
-    CurrencyCode: String = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
-    ElasticsearchInstanceType: ESPartitionInstanceType = null,
-    FixedPrice: js.UndefOr[Double] = js.undefined,
-    PaymentOption: ReservedElasticsearchInstancePaymentOption = null,
-    RecurringCharges: RecurringChargeList = null,
-    ReservedElasticsearchInstanceOfferingId: GUID = null,
-    UsagePrice: js.UndefOr[Double] = js.undefined
-  ): ReservedElasticsearchInstanceOffering = {
+  def apply(): ReservedElasticsearchInstanceOffering = {
     val __obj = js.Dynamic.literal()
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (ElasticsearchInstanceType != null) __obj.updateDynamic("ElasticsearchInstanceType")(ElasticsearchInstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice.get.asInstanceOf[js.Any])
-    if (PaymentOption != null) __obj.updateDynamic("PaymentOption")(PaymentOption.asInstanceOf[js.Any])
-    if (RecurringCharges != null) __obj.updateDynamic("RecurringCharges")(RecurringCharges.asInstanceOf[js.Any])
-    if (ReservedElasticsearchInstanceOfferingId != null) __obj.updateDynamic("ReservedElasticsearchInstanceOfferingId")(ReservedElasticsearchInstanceOfferingId.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedElasticsearchInstanceOffering]
   }
+  @scala.inline
+  implicit class ReservedElasticsearchInstanceOfferingOps[Self <: ReservedElasticsearchInstanceOffering] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setDuration(value: Integer): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setElasticsearchInstanceType(value: ESPartitionInstanceType): Self = this.set("ElasticsearchInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchInstanceType: Self = this.set("ElasticsearchInstanceType", js.undefined)
+    @scala.inline
+    def setFixedPrice(value: Double): Self = this.set("FixedPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedPrice: Self = this.set("FixedPrice", js.undefined)
+    @scala.inline
+    def setPaymentOption(value: ReservedElasticsearchInstancePaymentOption): Self = this.set("PaymentOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentOption: Self = this.set("PaymentOption", js.undefined)
+    @scala.inline
+    def setRecurringChargesVarargs(value: RecurringCharge*): Self = this.set("RecurringCharges", js.Array(value :_*))
+    @scala.inline
+    def setRecurringCharges(value: RecurringChargeList): Self = this.set("RecurringCharges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurringCharges: Self = this.set("RecurringCharges", js.undefined)
+    @scala.inline
+    def setReservedElasticsearchInstanceOfferingId(value: GUID): Self = this.set("ReservedElasticsearchInstanceOfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedElasticsearchInstanceOfferingId: Self = this.set("ReservedElasticsearchInstanceOfferingId", js.undefined)
+    @scala.inline
+    def setUsagePrice(value: Double): Self = this.set("UsagePrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsagePrice: Self = this.set("UsagePrice", js.undefined)
+  }
+  
 }
 

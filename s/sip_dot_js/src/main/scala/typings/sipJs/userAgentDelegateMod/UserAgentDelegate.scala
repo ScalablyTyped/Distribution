@@ -13,37 +13,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserAgentDelegate extends js.Object {
   /**
     * Called upon transport transitioning to connected state.
     */
-  var onConnect: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onConnect: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Called upon transport transitioning from connected state.
     * @param error - An error if disconnect triggered by transport. Otherwise undefined.
     */
-  var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.undefined
+  var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.native
   /**
     * Called upon receipt of an invitation.
     * @remarks
     * Handler for incoming out of dialog INVITE requests.
     * @param invitation - The invitation.
     */
-  var onInvite: js.UndefOr[js.Function1[/* invitation */ Invitation, Unit]] = js.undefined
+  var onInvite: js.UndefOr[js.Function1[/* invitation */ Invitation, Unit]] = js.native
   /**
     * Called upon receipt of a message.
     * @remarks
     * Handler for incoming out of dialog MESSAGE requests.
     * @param message - The message.
     */
-  var onMessage: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.undefined
+  var onMessage: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.native
   /**
     * Called upon receipt of a notification.
     * @remarks
     * Handler for incoming out of dialog NOTIFY requests.
     * @param notification - The notification.
     */
-  var onNotify: js.UndefOr[js.Function1[/* notification */ Notification, Unit]] = js.undefined
+  var onNotify: js.UndefOr[js.Function1[/* notification */ Notification, Unit]] = js.native
   /**
     * @alpha
     * Called upon receipt of a referral.
@@ -51,13 +52,13 @@ trait UserAgentDelegate extends js.Object {
     * Handler for incoming out of dialog REFER requests.
     * @param referral - The referral.
     */
-  var onRefer: js.UndefOr[js.Function1[/* referral */ Referral, Unit]] = js.undefined
+  var onRefer: js.UndefOr[js.Function1[/* referral */ Referral, Unit]] = js.native
   /**
     * @internal
     * Called upon receipt of an out of dialog REFER. Used by test suite.
     * @param request - The request.
     */
-  var onReferRequest: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.undefined
+  var onReferRequest: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.native
   /**
     * @alpha
     * Called upon receipt of a registration.
@@ -65,13 +66,13 @@ trait UserAgentDelegate extends js.Object {
     * Handler for incoming out of dialog REGISTER requests.
     * @param registration - The registration.
     */
-  var onRegister: js.UndefOr[js.Function1[/* registration */ js.Any, Unit]] = js.undefined
+  var onRegister: js.UndefOr[js.Function1[/* registration */ js.Any, Unit]] = js.native
   /**
     * @internal
     * Called upon receipt of a REGISTER request. Used by test suite.
     * @param request - The request.
     */
-  var onRegisterRequest: js.UndefOr[js.Function1[/* request */ IncomingRegisterRequest, Unit]] = js.undefined
+  var onRegisterRequest: js.UndefOr[js.Function1[/* request */ IncomingRegisterRequest, Unit]] = js.native
   /**
     * @alpha
     * Called upon receipt of a subscription.
@@ -79,43 +80,77 @@ trait UserAgentDelegate extends js.Object {
     * Handler for incoming out of dialog SUBSCRIBE requests.
     * @param subscription - The subscription.
     */
-  var onSubscribe: js.UndefOr[js.Function1[/* subscription */ Subscription, Unit]] = js.undefined
+  var onSubscribe: js.UndefOr[js.Function1[/* subscription */ Subscription, Unit]] = js.native
   /**
     * @internal
     * Called upon receipt of an out of dialog SUBSCRIBE request. Used by test suite.
     * @param request - The request.
     */
-  var onSubscribeRequest: js.UndefOr[js.Function1[/* request */ IncomingSubscribeRequest, Unit]] = js.undefined
+  var onSubscribeRequest: js.UndefOr[js.Function1[/* request */ IncomingSubscribeRequest, Unit]] = js.native
 }
 
 object UserAgentDelegate {
   @scala.inline
-  def apply(
-    onConnect: () => Unit = null,
-    onDisconnect: /* error */ js.UndefOr[Error] => Unit = null,
-    onInvite: /* invitation */ Invitation => Unit = null,
-    onMessage: /* message */ Message => Unit = null,
-    onNotify: /* notification */ Notification => Unit = null,
-    onRefer: /* referral */ Referral => Unit = null,
-    onReferRequest: /* request */ IncomingReferRequest => Unit = null,
-    onRegister: /* registration */ js.Any => Unit = null,
-    onRegisterRequest: /* request */ IncomingRegisterRequest => Unit = null,
-    onSubscribe: /* subscription */ Subscription => Unit = null,
-    onSubscribeRequest: /* request */ IncomingSubscribeRequest => Unit = null
-  ): UserAgentDelegate = {
+  def apply(): UserAgentDelegate = {
     val __obj = js.Dynamic.literal()
-    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction0(onConnect))
-    if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(js.Any.fromFunction1(onDisconnect))
-    if (onInvite != null) __obj.updateDynamic("onInvite")(js.Any.fromFunction1(onInvite))
-    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
-    if (onNotify != null) __obj.updateDynamic("onNotify")(js.Any.fromFunction1(onNotify))
-    if (onRefer != null) __obj.updateDynamic("onRefer")(js.Any.fromFunction1(onRefer))
-    if (onReferRequest != null) __obj.updateDynamic("onReferRequest")(js.Any.fromFunction1(onReferRequest))
-    if (onRegister != null) __obj.updateDynamic("onRegister")(js.Any.fromFunction1(onRegister))
-    if (onRegisterRequest != null) __obj.updateDynamic("onRegisterRequest")(js.Any.fromFunction1(onRegisterRequest))
-    if (onSubscribe != null) __obj.updateDynamic("onSubscribe")(js.Any.fromFunction1(onSubscribe))
-    if (onSubscribeRequest != null) __obj.updateDynamic("onSubscribeRequest")(js.Any.fromFunction1(onSubscribeRequest))
     __obj.asInstanceOf[UserAgentDelegate]
   }
+  @scala.inline
+  implicit class UserAgentDelegateOps[Self <: UserAgentDelegate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnConnect(value: () => Unit): Self = this.set("onConnect", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnConnect: Self = this.set("onConnect", js.undefined)
+    @scala.inline
+    def setOnDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = this.set("onDisconnect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDisconnect: Self = this.set("onDisconnect", js.undefined)
+    @scala.inline
+    def setOnInvite(value: /* invitation */ Invitation => Unit): Self = this.set("onInvite", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInvite: Self = this.set("onInvite", js.undefined)
+    @scala.inline
+    def setOnMessage(value: /* message */ Message => Unit): Self = this.set("onMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMessage: Self = this.set("onMessage", js.undefined)
+    @scala.inline
+    def setOnNotify(value: /* notification */ Notification => Unit): Self = this.set("onNotify", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnNotify: Self = this.set("onNotify", js.undefined)
+    @scala.inline
+    def setOnRefer(value: /* referral */ Referral => Unit): Self = this.set("onRefer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRefer: Self = this.set("onRefer", js.undefined)
+    @scala.inline
+    def setOnReferRequest(value: /* request */ IncomingReferRequest => Unit): Self = this.set("onReferRequest", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReferRequest: Self = this.set("onReferRequest", js.undefined)
+    @scala.inline
+    def setOnRegister(value: /* registration */ js.Any => Unit): Self = this.set("onRegister", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRegister: Self = this.set("onRegister", js.undefined)
+    @scala.inline
+    def setOnRegisterRequest(value: /* request */ IncomingRegisterRequest => Unit): Self = this.set("onRegisterRequest", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRegisterRequest: Self = this.set("onRegisterRequest", js.undefined)
+    @scala.inline
+    def setOnSubscribe(value: /* subscription */ Subscription => Unit): Self = this.set("onSubscribe", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubscribe: Self = this.set("onSubscribe", js.undefined)
+    @scala.inline
+    def setOnSubscribeRequest(value: /* request */ IncomingSubscribeRequest => Unit): Self = this.set("onSubscribeRequest", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubscribeRequest: Self = this.set("onSubscribeRequest", js.undefined)
+  }
+  
 }
 

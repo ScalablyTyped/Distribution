@@ -55,24 +55,63 @@ object CreateProcessingJobRequest {
     AppSpecification: AppSpecification,
     ProcessingJobName: ProcessingJobName,
     ProcessingResources: ProcessingResources,
-    RoleArn: RoleArn,
-    Environment: ProcessingEnvironmentMap = null,
-    ExperimentConfig: ExperimentConfig = null,
-    NetworkConfig: NetworkConfig = null,
-    ProcessingInputs: ProcessingInputs = null,
-    ProcessingOutputConfig: ProcessingOutputConfig = null,
-    StoppingCondition: ProcessingStoppingCondition = null,
-    Tags: TagList = null
+    RoleArn: RoleArn
   ): CreateProcessingJobRequest = {
     val __obj = js.Dynamic.literal(AppSpecification = AppSpecification.asInstanceOf[js.Any], ProcessingJobName = ProcessingJobName.asInstanceOf[js.Any], ProcessingResources = ProcessingResources.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
-    if (ExperimentConfig != null) __obj.updateDynamic("ExperimentConfig")(ExperimentConfig.asInstanceOf[js.Any])
-    if (NetworkConfig != null) __obj.updateDynamic("NetworkConfig")(NetworkConfig.asInstanceOf[js.Any])
-    if (ProcessingInputs != null) __obj.updateDynamic("ProcessingInputs")(ProcessingInputs.asInstanceOf[js.Any])
-    if (ProcessingOutputConfig != null) __obj.updateDynamic("ProcessingOutputConfig")(ProcessingOutputConfig.asInstanceOf[js.Any])
-    if (StoppingCondition != null) __obj.updateDynamic("StoppingCondition")(StoppingCondition.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProcessingJobRequest]
   }
+  @scala.inline
+  implicit class CreateProcessingJobRequestOps[Self <: CreateProcessingJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppSpecification(value: AppSpecification): Self = this.set("AppSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProcessingJobName(value: ProcessingJobName): Self = this.set("ProcessingJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProcessingResources(value: ProcessingResources): Self = this.set("ProcessingResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnvironment(value: ProcessingEnvironmentMap): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    @scala.inline
+    def setExperimentConfig(value: ExperimentConfig): Self = this.set("ExperimentConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentConfig: Self = this.set("ExperimentConfig", js.undefined)
+    @scala.inline
+    def setNetworkConfig(value: NetworkConfig): Self = this.set("NetworkConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkConfig: Self = this.set("NetworkConfig", js.undefined)
+    @scala.inline
+    def setProcessingInputsVarargs(value: ProcessingInput*): Self = this.set("ProcessingInputs", js.Array(value :_*))
+    @scala.inline
+    def setProcessingInputs(value: ProcessingInputs): Self = this.set("ProcessingInputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingInputs: Self = this.set("ProcessingInputs", js.undefined)
+    @scala.inline
+    def setProcessingOutputConfig(value: ProcessingOutputConfig): Self = this.set("ProcessingOutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingOutputConfig: Self = this.set("ProcessingOutputConfig", js.undefined)
+    @scala.inline
+    def setStoppingCondition(value: ProcessingStoppingCondition): Self = this.set("StoppingCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppingCondition: Self = this.set("StoppingCondition", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

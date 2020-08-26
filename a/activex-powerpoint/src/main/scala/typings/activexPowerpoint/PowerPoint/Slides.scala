@@ -19,6 +19,7 @@ trait Slides extends js.Object {
     * @param number [SlideEnd=-1]
     */
   def InsertFromFile(FileName: String, Index: Double): Double = js.native
+  def InsertFromFile(FileName: String, Index: Double, SlideStart: js.UndefOr[scala.Nothing], SlideEnd: Double): Double = js.native
   def InsertFromFile(FileName: String, Index: Double, SlideStart: Double): Double = js.native
   def InsertFromFile(FileName: String, Index: Double, SlideStart: Double, SlideEnd: Double): Double = js.native
   def Item(Index: js.Any): Slide = js.native

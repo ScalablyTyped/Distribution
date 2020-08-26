@@ -11,8 +11,8 @@ get the current git commit hash, tag or branch in node
 | Full name          | git-rev |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 95 |
-| # downloads        | 1493406 |
+| # dependents       | 94 |
+| # downloads        | 1499935 |
 | # stars            | 15 |
 
 ## Links

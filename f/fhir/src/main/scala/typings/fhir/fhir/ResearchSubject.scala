@@ -8,104 +8,110 @@ import scala.scalajs.js.annotation._
   * Investigation to increase healthcare-related patient-independent knowledge
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait ResearchSubject extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait ResearchSubject extends DomainResource {
   /**
     * Contains extended information for property 'actualArm'.
     */
-  var _actualArm: js.UndefOr[Element] = js.undefined
+  var _actualArm: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'assignedArm'.
     */
-  var _assignedArm: js.UndefOr[Element] = js.undefined
+  var _assignedArm: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * What path was followed
     */
-  var actualArm: js.UndefOr[String] = js.undefined
+  var actualArm: js.UndefOr[String] = js.native
   /**
     * What path should be followed
     */
-  var assignedArm: js.UndefOr[String] = js.undefined
+  var assignedArm: js.UndefOr[String] = js.native
   /**
     * Agreement to participate in study
     */
-  var consent: js.UndefOr[Reference] = js.undefined
+  var consent: js.UndefOr[Reference] = js.native
   /**
     * Business Identifier for research subject
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Who is part of study
     */
-  var individual: Reference
+  var individual: Reference = js.native
   /**
     * Start and end of participation
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
   /**
     * candidate | enrolled | active | suspended | withdrawn | completed
     */
-  var status: code
+  var status: code = js.native
   /**
     * Study subject is part of
     */
-  var study: Reference
+  var study: Reference = js.native
 }
 
 object ResearchSubject {
   @scala.inline
-  def apply(
-    individual: Reference,
-    status: code,
-    study: Reference,
-    _actualArm: Element = null,
-    _assignedArm: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    actualArm: String = null,
-    assignedArm: String = null,
-    consent: Reference = null,
-    contained: js.Array[Resource] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: Identifier = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    period: Period = null,
-    resourceType: code = null,
-    text: Narrative = null
-  ): ResearchSubject = {
+  def apply(individual: Reference, status: code, study: Reference): ResearchSubject = {
     val __obj = js.Dynamic.literal(individual = individual.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], study = study.asInstanceOf[js.Any])
-    if (_actualArm != null) __obj.updateDynamic("_actualArm")(_actualArm.asInstanceOf[js.Any])
-    if (_assignedArm != null) __obj.updateDynamic("_assignedArm")(_assignedArm.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (actualArm != null) __obj.updateDynamic("actualArm")(actualArm.asInstanceOf[js.Any])
-    if (assignedArm != null) __obj.updateDynamic("assignedArm")(assignedArm.asInstanceOf[js.Any])
-    if (consent != null) __obj.updateDynamic("consent")(consent.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResearchSubject]
   }
+  @scala.inline
+  implicit class ResearchSubjectOps[Self <: ResearchSubject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndividual(value: Reference): Self = this.set("individual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStudy(value: Reference): Self = this.set("study", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_actualArm(value: Element): Self = this.set("_actualArm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_actualArm: Self = this.set("_actualArm", js.undefined)
+    @scala.inline
+    def set_assignedArm(value: Element): Self = this.set("_assignedArm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_assignedArm: Self = this.set("_assignedArm", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setActualArm(value: String): Self = this.set("actualArm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActualArm: Self = this.set("actualArm", js.undefined)
+    @scala.inline
+    def setAssignedArm(value: String): Self = this.set("assignedArm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignedArm: Self = this.set("assignedArm", js.undefined)
+    @scala.inline
+    def setConsent(value: Reference): Self = this.set("consent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsent: Self = this.set("consent", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+  }
+  
 }
 

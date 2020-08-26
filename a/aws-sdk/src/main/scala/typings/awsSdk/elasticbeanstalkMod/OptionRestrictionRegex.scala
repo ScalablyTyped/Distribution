@@ -18,11 +18,30 @@ trait OptionRestrictionRegex extends js.Object {
 
 object OptionRestrictionRegex {
   @scala.inline
-  def apply(Label: RegexLabel = null, Pattern: RegexPattern = null): OptionRestrictionRegex = {
+  def apply(): OptionRestrictionRegex = {
     val __obj = js.Dynamic.literal()
-    if (Label != null) __obj.updateDynamic("Label")(Label.asInstanceOf[js.Any])
-    if (Pattern != null) __obj.updateDynamic("Pattern")(Pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionRestrictionRegex]
   }
+  @scala.inline
+  implicit class OptionRestrictionRegexOps[Self <: OptionRestrictionRegex] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabel(value: RegexLabel): Self = this.set("Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("Label", js.undefined)
+    @scala.inline
+    def setPattern(value: RegexPattern): Self = this.set("Pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("Pattern", js.undefined)
+  }
+  
 }
 

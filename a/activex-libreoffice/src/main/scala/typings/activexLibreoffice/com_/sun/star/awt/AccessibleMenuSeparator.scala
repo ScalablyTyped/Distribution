@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * specifies accessibility support for a menu separator.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleMenuSeparator
   extends XAccessibleExtendedComponent
      with XAccessibleContext

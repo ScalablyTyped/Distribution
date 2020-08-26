@@ -6,11 +6,12 @@ import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.estree.mod.Node because Already inherited
-- typings.estree.mod.Expression because Already inherited */ trait NewExpression
+- typings.estree.mod.Expression because Already inherited */ @js.native
+trait NewExpression
   extends BaseCallExpression
      with CallExpression {
   @JSName("type")
-  var type_NewExpression: typings.estree.estreeStrings.NewExpression
+  var type_NewExpression: typings.estree.estreeStrings.NewExpression = js.native
 }
 
 object NewExpression {
@@ -18,19 +19,26 @@ object NewExpression {
   def apply(
     arguments: js.Array[Expression | SpreadElement],
     callee: Expression | Super,
-    `type`: typings.estree.estreeStrings.NewExpression,
-    leadingComments: js.Array[Comment] = null,
-    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
+    `type`: typings.estree.estreeStrings.NewExpression
   ): NewExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewExpression]
   }
+  @scala.inline
+  implicit class NewExpressionOps[Self <: NewExpression] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: typings.estree.estreeStrings.NewExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -1,6 +1,5 @@
 package typings.agGrid
 
-import typings.agGrid.dragAndDropServiceMod.DragSourceType
 import typings.agGrid.dragAndDropServiceMod.DraggingEvent
 import typings.agGrid.dragAndDropServiceMod.DropTarget
 import typings.agGrid.gridPanelMod.GridPanel
@@ -34,13 +33,8 @@ object rowDragFeatureMod extends js.Object {
     /* private */ def doManagedDrag(draggingEvent: js.Any, pixel: js.Any): js.Any = js.native
     /* private */ def ensureIntervalCleared(): js.Any = js.native
     /* private */ def ensureIntervalStarted(): js.Any = js.native
-    /** The main container that will get the drop. */
-    /* CompleteClass */
-    override def getContainer(): HTMLElement = js.native
     @JSName("getIconName")
     def getIconName_MRowDragFeature(): String = js.native
-    /* CompleteClass */
-    override def isInterestedIn(`type`: DragSourceType): Boolean = js.native
     /* private */ def moveInterval(): js.Any = js.native
     /* private */ def normaliseForScroll(pixel: js.Any): js.Any = js.native
     @JSName("onDragEnter")

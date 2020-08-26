@@ -14,10 +14,26 @@ trait GetKeyPairResult extends js.Object {
 
 object GetKeyPairResult {
   @scala.inline
-  def apply(keyPair: KeyPair = null): GetKeyPairResult = {
+  def apply(): GetKeyPairResult = {
     val __obj = js.Dynamic.literal()
-    if (keyPair != null) __obj.updateDynamic("keyPair")(keyPair.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyPairResult]
   }
+  @scala.inline
+  implicit class GetKeyPairResultOps[Self <: GetKeyPairResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyPair(value: KeyPair): Self = this.set("keyPair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPair: Self = this.set("keyPair", js.undefined)
+  }
+  
 }
 

@@ -14,6 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Pick<@wordpress/components.@wordpress/components.DropZone.Props, 'onHTMLDrop'> */
+@js.native
 trait Props[T /* <: Boolean */] extends js.Object {
   /**
     * A string passed to `FormFileUpload` that tells the browser which file types can be uploaded
@@ -25,7 +26,7 @@ trait Props[T /* <: Boolean */] extends js.Object {
     *
     * See: {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#Unique_file_type_specifiers }
     */
-  var accept: js.UndefOr[String] = js.undefined
+  var accept: js.UndefOr[String] = js.native
   /**
     * If `true`, and if  `gallery === true` the gallery media modal opens directly in the media
     * library where the user can add additional images. When uploading/selecting files on the
@@ -35,7 +36,7 @@ trait Props[T /* <: Boolean */] extends js.Object {
     * on the placeholder the files replace the existing files list.
     * @defaultValue false
     */
-  var addToGallery: js.UndefOr[Boolean] = js.undefined
+  var addToGallery: js.UndefOr[Boolean] = js.native
   /**
     * Array with the types of the media to upload/select from the media library.
     *
@@ -48,14 +49,15 @@ trait Props[T /* <: Boolean */] extends js.Object {
     * affects the behavior of `MediaUpload` while `accept` affects the behavior
     * `FormFileUpload`.
     */
-  var allowedTypes: js.UndefOr[js.Array[String]] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
+  var allowedTypes: js.UndefOr[js.Array[String]] = js.native
+  var children: js.UndefOr[scala.Nothing] = js.native
+  var className: js.UndefOr[String] = js.native
   /** Undocumented. */
-  var dropZoneUIOnly: js.UndefOr[Boolean] = js.undefined
+  var dropZoneUIOnly: js.UndefOr[Boolean] = js.native
   /**
     * Icon to display left of the title.
     */
-  var icon: js.UndefOr[Icon | Element] = js.undefined
+  var icon: js.UndefOr[Icon | Element] = js.native
   /**
     * If `true`, the property changes the look of the placeholder to be adequate to scenarios
     * where new files are added to an already existing set of files, e.g., adding files to a
@@ -65,73 +67,124 @@ trait Props[T /* <: Boolean */] extends js.Object {
     *
     * @defaultValue false
     */
-  var isAppender: js.UndefOr[Boolean] = js.undefined
+  var isAppender: js.UndefOr[Boolean] = js.native
   /**
     * An object that can contain a `title` and `instructions` properties. These properties are
     * passed to the placeholder component as `label` and `instructions` respectively.
     */
-  var labels: js.UndefOr[Instructions] = js.undefined
+  var labels: js.UndefOr[Instructions] = js.native
   /** Undocumented. */
-  var mediaPreview: js.UndefOr[Element] = js.undefined
-  var multiple: js.UndefOr[T] = js.undefined
+  var mediaPreview: js.UndefOr[Element] = js.native
+  var multiple: js.UndefOr[T] = js.native
   /**
     * Optionally pass in `noticeUI` obtained from `withNotices` HOC.
     */
-  var notices: js.UndefOr[Element] = js.undefined
-  var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var notices: js.UndefOr[Element] = js.native
+  var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
   /**
     * Callback called when an upload error happens.
     */
-  var onError: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
-  var onHTMLDrop: js.UndefOr[js.Function2[/* html */ String, /* position */ HoverPosition, Unit]] = js.undefined
-  var onSelectURL: js.UndefOr[js.Function1[/* src */ String, Unit]] = js.undefined
-  var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+  var onHTMLDrop: js.UndefOr[js.Function2[/* html */ String, /* position */ HoverPosition, Unit]] = js.native
+  var onSelectURL: js.UndefOr[js.Function1[/* src */ String, Unit]] = js.native
+  var value: js.UndefOr[Double | js.Array[Double]] = js.native
   @JSName("onSelect")
-  def onSelect_true(value: Dictk | js.Array[Dictk]): Unit
+  def onSelect_true(value: Dictk | js.Array[Dictk]): Unit = js.native
 }
 
 object Props {
   @scala.inline
-  def apply[/* <: scala.Boolean */ T](
-    onSelect: Dictk | js.Array[Dictk] => Unit,
-    accept: String = null,
-    addToGallery: js.UndefOr[Boolean] = js.undefined,
-    allowedTypes: js.Array[String] = null,
-    className: String = null,
-    dropZoneUIOnly: js.UndefOr[Boolean] = js.undefined,
-    icon: Icon | Element = null,
-    isAppender: js.UndefOr[Boolean] = js.undefined,
-    labels: Instructions = null,
-    mediaPreview: Element = null,
-    multiple: T = null,
-    notices: Element = null,
-    onCancel: () => Unit = null,
-    onDoubleClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onError: /* message */ String => Unit = null,
-    onHTMLDrop: (/* html */ String, /* position */ HoverPosition) => Unit = null,
-    onSelectURL: /* src */ String => Unit = null,
-    value: Double | js.Array[Double] = null
-  ): Props[T] = {
+  def apply[/* <: scala.Boolean */ T](onSelect: Dictk | js.Array[Dictk] => Unit): Props[T] = {
     val __obj = js.Dynamic.literal(onSelect = js.Any.fromFunction1(onSelect))
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (!js.isUndefined(addToGallery)) __obj.updateDynamic("addToGallery")(addToGallery.get.asInstanceOf[js.Any])
-    if (allowedTypes != null) __obj.updateDynamic("allowedTypes")(allowedTypes.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropZoneUIOnly)) __obj.updateDynamic("dropZoneUIOnly")(dropZoneUIOnly.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAppender)) __obj.updateDynamic("isAppender")(isAppender.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (mediaPreview != null) __obj.updateDynamic("mediaPreview")(mediaPreview.asInstanceOf[js.Any])
-    if (multiple != null) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (notices != null) __obj.updateDynamic("notices")(notices.asInstanceOf[js.Any])
-    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onHTMLDrop != null) __obj.updateDynamic("onHTMLDrop")(js.Any.fromFunction2(onHTMLDrop))
-    if (onSelectURL != null) __obj.updateDynamic("onSelectURL")(js.Any.fromFunction1(onSelectURL))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[T]]
   }
+  @scala.inline
+  implicit class PropsOps[Self <: Props[_], /* <: scala.Boolean */ T] (val x: Self with Props[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnSelect(value: Dictk | js.Array[Dictk] => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAccept(value: String): Self = this.set("accept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept: Self = this.set("accept", js.undefined)
+    @scala.inline
+    def setAddToGallery(value: Boolean): Self = this.set("addToGallery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddToGallery: Self = this.set("addToGallery", js.undefined)
+    @scala.inline
+    def setAllowedTypesVarargs(value: String*): Self = this.set("allowedTypes", js.Array(value :_*))
+    @scala.inline
+    def setAllowedTypes(value: js.Array[String]): Self = this.set("allowedTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedTypes: Self = this.set("allowedTypes", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDropZoneUIOnly(value: Boolean): Self = this.set("dropZoneUIOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropZoneUIOnly: Self = this.set("dropZoneUIOnly", js.undefined)
+    @scala.inline
+    def setIcon(value: Icon | Element): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIsAppender(value: Boolean): Self = this.set("isAppender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsAppender: Self = this.set("isAppender", js.undefined)
+    @scala.inline
+    def setLabels(value: Instructions): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMediaPreview(value: Element): Self = this.set("mediaPreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaPreview: Self = this.set("mediaPreview", js.undefined)
+    @scala.inline
+    def setMultiple(value: T): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setNotices(value: Element): Self = this.set("notices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotices: Self = this.set("notices", js.undefined)
+    @scala.inline
+    def setOnCancel(value: () => Unit): Self = this.set("onCancel", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
+    @scala.inline
+    def setOnDoubleClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onDoubleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    @scala.inline
+    def setOnError(value: /* message */ String => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnHTMLDrop(value: (/* html */ String, /* position */ HoverPosition) => Unit): Self = this.set("onHTMLDrop", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnHTMLDrop: Self = this.set("onHTMLDrop", js.undefined)
+    @scala.inline
+    def setOnSelectURL(value: /* src */ String => Unit): Self = this.set("onSelectURL", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelectURL: Self = this.set("onSelectURL", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: Double*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: Double | js.Array[Double]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InitializeError extends js.Object {
   /**
     * Indicates whether the client execute the following retry logic:
@@ -11,7 +12,7 @@ trait InitializeError extends js.Object {
     * (2) user selects retry or cancel
     * (3) if user selected retry the initialize method is sent again.
     */
-  var retry: Boolean
+  var retry: Boolean = js.native
 }
 
 @JSImport("vscode-languageserver-protocol/lib/protocol", "InitializeError")

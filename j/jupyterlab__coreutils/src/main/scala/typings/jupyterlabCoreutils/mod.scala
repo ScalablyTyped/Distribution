@@ -341,7 +341,8 @@ object mod extends js.Object {
       * @returns the joined url.
       */
     def join(parts: String*): String = js.native
-    def normalize(): js.UndefOr[scala.Nothing] = js.native
+    def normalize(): js.UndefOr[String] = js.native
+    def normalize(url: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
     /**
       * Normalize a url.
       */

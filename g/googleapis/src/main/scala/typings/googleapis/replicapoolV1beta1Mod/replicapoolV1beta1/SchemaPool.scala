@@ -88,40 +88,90 @@ trait SchemaPool extends js.Object {
 
 object SchemaPool {
   @scala.inline
-  def apply(
-    autoRestart: js.UndefOr[Boolean] = js.undefined,
-    baseInstanceName: String = null,
-    currentNumReplicas: js.UndefOr[Double] = js.undefined,
-    description: String = null,
-    healthChecks: js.Array[SchemaHealthCheck] = null,
-    initialNumReplicas: js.UndefOr[Double] = js.undefined,
-    labels: js.Array[SchemaLabel] = null,
-    name: String = null,
-    numReplicas: js.UndefOr[Double] = js.undefined,
-    resourceViews: js.Array[String] = null,
-    selfLink: String = null,
-    targetPool: String = null,
-    targetPools: js.Array[String] = null,
-    template: SchemaTemplate = null,
-    `type`: String = null
-  ): SchemaPool = {
+  def apply(): SchemaPool = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRestart)) __obj.updateDynamic("autoRestart")(autoRestart.get.asInstanceOf[js.Any])
-    if (baseInstanceName != null) __obj.updateDynamic("baseInstanceName")(baseInstanceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(currentNumReplicas)) __obj.updateDynamic("currentNumReplicas")(currentNumReplicas.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialNumReplicas)) __obj.updateDynamic("initialNumReplicas")(initialNumReplicas.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(numReplicas)) __obj.updateDynamic("numReplicas")(numReplicas.get.asInstanceOf[js.Any])
-    if (resourceViews != null) __obj.updateDynamic("resourceViews")(resourceViews.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (targetPool != null) __obj.updateDynamic("targetPool")(targetPool.asInstanceOf[js.Any])
-    if (targetPools != null) __obj.updateDynamic("targetPools")(targetPools.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPool]
   }
+  @scala.inline
+  implicit class SchemaPoolOps[Self <: SchemaPool] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRestart(value: Boolean): Self = this.set("autoRestart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRestart: Self = this.set("autoRestart", js.undefined)
+    @scala.inline
+    def setBaseInstanceName(value: String): Self = this.set("baseInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseInstanceName: Self = this.set("baseInstanceName", js.undefined)
+    @scala.inline
+    def setCurrentNumReplicas(value: Double): Self = this.set("currentNumReplicas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentNumReplicas: Self = this.set("currentNumReplicas", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = this.set("healthChecks", js.Array(value :_*))
+    @scala.inline
+    def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = this.set("healthChecks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthChecks: Self = this.set("healthChecks", js.undefined)
+    @scala.inline
+    def setInitialNumReplicas(value: Double): Self = this.set("initialNumReplicas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialNumReplicas: Self = this.set("initialNumReplicas", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: SchemaLabel*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: js.Array[SchemaLabel]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNumReplicas(value: Double): Self = this.set("numReplicas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumReplicas: Self = this.set("numReplicas", js.undefined)
+    @scala.inline
+    def setResourceViewsVarargs(value: String*): Self = this.set("resourceViews", js.Array(value :_*))
+    @scala.inline
+    def setResourceViews(value: js.Array[String]): Self = this.set("resourceViews", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceViews: Self = this.set("resourceViews", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setTargetPool(value: String): Self = this.set("targetPool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetPool: Self = this.set("targetPool", js.undefined)
+    @scala.inline
+    def setTargetPoolsVarargs(value: String*): Self = this.set("targetPools", js.Array(value :_*))
+    @scala.inline
+    def setTargetPools(value: js.Array[String]): Self = this.set("targetPools", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetPools: Self = this.set("targetPools", js.undefined)
+    @scala.inline
+    def setTemplate(value: SchemaTemplate): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

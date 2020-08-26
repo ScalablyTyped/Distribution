@@ -9,7 +9,42 @@ import scala.scalajs.js.annotation._
 @js.native
 object createGroups extends js.Object {
   def apply(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double): js.Array[IGroup] = js.native
+  def apply(
+    groupCount: Double,
+    groupDepth: Double,
+    startIndex: Double,
+    itemsPerGroup: Double,
+    level: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    isCollapsed: Boolean
+  ): js.Array[IGroup] = js.native
+  def apply(
+    groupCount: Double,
+    groupDepth: Double,
+    startIndex: Double,
+    itemsPerGroup: Double,
+    level: js.UndefOr[scala.Nothing],
+    key: String
+  ): js.Array[IGroup] = js.native
+  def apply(
+    groupCount: Double,
+    groupDepth: Double,
+    startIndex: Double,
+    itemsPerGroup: Double,
+    level: js.UndefOr[scala.Nothing],
+    key: String,
+    isCollapsed: Boolean
+  ): js.Array[IGroup] = js.native
   def apply(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double, level: Double): js.Array[IGroup] = js.native
+  def apply(
+    groupCount: Double,
+    groupDepth: Double,
+    startIndex: Double,
+    itemsPerGroup: Double,
+    level: Double,
+    key: js.UndefOr[scala.Nothing],
+    isCollapsed: Boolean
+  ): js.Array[IGroup] = js.native
   def apply(
     groupCount: Double,
     groupDepth: Double,

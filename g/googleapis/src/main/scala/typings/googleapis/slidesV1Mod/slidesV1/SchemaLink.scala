@@ -32,18 +32,38 @@ trait SchemaLink extends js.Object {
 
 object SchemaLink {
   @scala.inline
-  def apply(
-    pageObjectId: String = null,
-    relativeLink: String = null,
-    slideIndex: js.UndefOr[Double] = js.undefined,
-    url: String = null
-  ): SchemaLink = {
+  def apply(): SchemaLink = {
     val __obj = js.Dynamic.literal()
-    if (pageObjectId != null) __obj.updateDynamic("pageObjectId")(pageObjectId.asInstanceOf[js.Any])
-    if (relativeLink != null) __obj.updateDynamic("relativeLink")(relativeLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideIndex)) __obj.updateDynamic("slideIndex")(slideIndex.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLink]
   }
+  @scala.inline
+  implicit class SchemaLinkOps[Self <: SchemaLink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPageObjectId(value: String): Self = this.set("pageObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageObjectId: Self = this.set("pageObjectId", js.undefined)
+    @scala.inline
+    def setRelativeLink(value: String): Self = this.set("relativeLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativeLink: Self = this.set("relativeLink", js.undefined)
+    @scala.inline
+    def setSlideIndex(value: Double): Self = this.set("slideIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideIndex: Self = this.set("slideIndex", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

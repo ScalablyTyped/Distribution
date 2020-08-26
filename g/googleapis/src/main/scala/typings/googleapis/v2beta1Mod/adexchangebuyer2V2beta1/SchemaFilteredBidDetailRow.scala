@@ -28,16 +28,34 @@ trait SchemaFilteredBidDetailRow extends js.Object {
 
 object SchemaFilteredBidDetailRow {
   @scala.inline
-  def apply(
-    bidCount: SchemaMetricValue = null,
-    detailId: js.UndefOr[Double] = js.undefined,
-    rowDimensions: SchemaRowDimensions = null
-  ): SchemaFilteredBidDetailRow = {
+  def apply(): SchemaFilteredBidDetailRow = {
     val __obj = js.Dynamic.literal()
-    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(detailId)) __obj.updateDynamic("detailId")(detailId.get.asInstanceOf[js.Any])
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFilteredBidDetailRow]
   }
+  @scala.inline
+  implicit class SchemaFilteredBidDetailRowOps[Self <: SchemaFilteredBidDetailRow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBidCount(value: SchemaMetricValue): Self = this.set("bidCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidCount: Self = this.set("bidCount", js.undefined)
+    @scala.inline
+    def setDetailId(value: Double): Self = this.set("detailId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailId: Self = this.set("detailId", js.undefined)
+    @scala.inline
+    def setRowDimensions(value: SchemaRowDimensions): Self = this.set("rowDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowDimensions: Self = this.set("rowDimensions", js.undefined)
+  }
+  
 }
 

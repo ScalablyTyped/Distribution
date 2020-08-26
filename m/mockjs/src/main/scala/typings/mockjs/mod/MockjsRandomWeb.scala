@@ -19,6 +19,7 @@ trait MockjsRandomWeb extends js.Object {
   def protocal(): RandomWebProtocal = js.native
   // Random.url
   def url(): S = js.native
+  def url(protocol: js.UndefOr[scala.Nothing], host: S): S = js.native
   def url(protocol: S): S = js.native
   def url(protocol: S, host: S): S = js.native
 }

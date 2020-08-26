@@ -93,38 +93,78 @@ trait SchemaTransferConfig extends js.Object {
 
 object SchemaTransferConfig {
   @scala.inline
-  def apply(
-    dataRefreshWindowDays: js.UndefOr[Double] = js.undefined,
-    dataSourceId: String = null,
-    datasetRegion: String = null,
-    destinationDatasetId: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    displayName: String = null,
-    name: String = null,
-    nextRunTime: String = null,
-    params: StringDictionary[js.Any] = null,
-    schedule: String = null,
-    scheduleOptions: SchemaScheduleOptions = null,
-    state: String = null,
-    updateTime: String = null,
-    userId: String = null
-  ): SchemaTransferConfig = {
+  def apply(): SchemaTransferConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dataRefreshWindowDays)) __obj.updateDynamic("dataRefreshWindowDays")(dataRefreshWindowDays.get.asInstanceOf[js.Any])
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
-    if (datasetRegion != null) __obj.updateDynamic("datasetRegion")(datasetRegion.asInstanceOf[js.Any])
-    if (destinationDatasetId != null) __obj.updateDynamic("destinationDatasetId")(destinationDatasetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nextRunTime != null) __obj.updateDynamic("nextRunTime")(nextRunTime.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (scheduleOptions != null) __obj.updateDynamic("scheduleOptions")(scheduleOptions.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransferConfig]
   }
+  @scala.inline
+  implicit class SchemaTransferConfigOps[Self <: SchemaTransferConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataRefreshWindowDays(value: Double): Self = this.set("dataRefreshWindowDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRefreshWindowDays: Self = this.set("dataRefreshWindowDays", js.undefined)
+    @scala.inline
+    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    @scala.inline
+    def setDatasetRegion(value: String): Self = this.set("datasetRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetRegion: Self = this.set("datasetRegion", js.undefined)
+    @scala.inline
+    def setDestinationDatasetId(value: String): Self = this.set("destinationDatasetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationDatasetId: Self = this.set("destinationDatasetId", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNextRunTime(value: String): Self = this.set("nextRunTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextRunTime: Self = this.set("nextRunTime", js.undefined)
+    @scala.inline
+    def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setSchedule(value: String): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setScheduleOptions(value: SchemaScheduleOptions): Self = this.set("scheduleOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleOptions: Self = this.set("scheduleOptions", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

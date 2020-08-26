@@ -25,12 +25,36 @@ trait SchemaDomains2 extends js.Object {
 
 object SchemaDomains2 {
   @scala.inline
-  def apply(domains: js.Array[SchemaDomains] = null, etag: String = null, kind: String = null): SchemaDomains2 = {
+  def apply(): SchemaDomains2 = {
     val __obj = js.Dynamic.literal()
-    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDomains2]
   }
+  @scala.inline
+  implicit class SchemaDomains2Ops[Self <: SchemaDomains2] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainsVarargs(value: SchemaDomains*): Self = this.set("domains", js.Array(value :_*))
+    @scala.inline
+    def setDomains(value: js.Array[SchemaDomains]): Self = this.set("domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomains: Self = this.set("domains", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

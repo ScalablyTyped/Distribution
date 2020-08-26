@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  duration  :number | string,   easing  :string,   delay  :number | string}> */
+/* Inlined std.Partial<{  duration :number | string,   easing :string,   delay :number | string}> */
 @js.native
 trait Partialdurationnumberstri extends js.Object {
   var delay: js.UndefOr[Double | String] = js.native
@@ -14,12 +14,34 @@ trait Partialdurationnumberstri extends js.Object {
 
 object Partialdurationnumberstri {
   @scala.inline
-  def apply(delay: Double | String = null, duration: Double | String = null, easing: String = null): Partialdurationnumberstri = {
+  def apply(): Partialdurationnumberstri = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Partialdurationnumberstri]
   }
+  @scala.inline
+  implicit class PartialdurationnumberstriOps[Self <: Partialdurationnumberstri] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelay(value: Double | String): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDuration(value: Double | String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+  }
+  
 }
 

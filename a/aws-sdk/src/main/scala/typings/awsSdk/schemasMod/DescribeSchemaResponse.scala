@@ -46,28 +46,58 @@ trait DescribeSchemaResponse extends js.Object {
 
 object DescribeSchemaResponse {
   @scala.inline
-  def apply(
-    Content: string = null,
-    Description: string = null,
-    LastModified: timestampIso8601 = null,
-    SchemaArn: string = null,
-    SchemaName: string = null,
-    SchemaVersion: string = null,
-    Tags: Tags = null,
-    Type: string = null,
-    VersionCreatedDate: timestampIso8601 = null
-  ): DescribeSchemaResponse = {
+  def apply(): DescribeSchemaResponse = {
     val __obj = js.Dynamic.literal()
-    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (SchemaArn != null) __obj.updateDynamic("SchemaArn")(SchemaArn.asInstanceOf[js.Any])
-    if (SchemaName != null) __obj.updateDynamic("SchemaName")(SchemaName.asInstanceOf[js.Any])
-    if (SchemaVersion != null) __obj.updateDynamic("SchemaVersion")(SchemaVersion.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (VersionCreatedDate != null) __obj.updateDynamic("VersionCreatedDate")(VersionCreatedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSchemaResponse]
   }
+  @scala.inline
+  implicit class DescribeSchemaResponseOps[Self <: DescribeSchemaResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: string): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("Content", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLastModified(value: timestampIso8601): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setSchemaArn(value: string): Self = this.set("SchemaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaArn: Self = this.set("SchemaArn", js.undefined)
+    @scala.inline
+    def setSchemaName(value: string): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaName: Self = this.set("SchemaName", js.undefined)
+    @scala.inline
+    def setSchemaVersion(value: string): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaVersion: Self = this.set("SchemaVersion", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setType(value: string): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setVersionCreatedDate(value: timestampIso8601): Self = this.set("VersionCreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionCreatedDate: Self = this.set("VersionCreatedDate", js.undefined)
+  }
+  
 }
 

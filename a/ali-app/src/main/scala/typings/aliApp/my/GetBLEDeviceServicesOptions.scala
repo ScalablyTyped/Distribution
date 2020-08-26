@@ -5,31 +5,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetBLEDeviceServicesOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
     * 蓝牙设备 id，参考 device 对象
     */
-  var deviceId: String
+  var deviceId: String = js.native
   /**
     * 成功则返回本机蓝牙适配器状态
     */
   @JSName("success")
-  def success_MGetBLEDeviceServicesOptions(res: servicesArrayserviceIdstr): Unit
+  def success_MGetBLEDeviceServicesOptions(res: servicesArrayserviceIdstr): Unit = js.native
 }
 
 object GetBLEDeviceServicesOptions {
   @scala.inline
-  def apply(
-    deviceId: String,
-    success: servicesArrayserviceIdstr => Unit,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null
-  ): GetBLEDeviceServicesOptions = {
+  def apply(deviceId: String, success: servicesArrayserviceIdstr => Unit): GetBLEDeviceServicesOptions = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[GetBLEDeviceServicesOptions]
   }
+  @scala.inline
+  implicit class GetBLEDeviceServicesOptionsOps[Self <: GetBLEDeviceServicesOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuccess(value: servicesArrayserviceIdstr => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourceWorkers protected () extends js.Object {
     */
   def checkIn(): GaxiosPromise[SchemaCheckInResponse] = js.native
   def checkIn(callback: BodyResponseCallback[SchemaCheckInResponse]): Unit = js.native
+  def checkIn(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckInResponse] = js.native
   def checkIn(params: ParamsResourceWorkersCheckin): GaxiosPromise[SchemaCheckInResponse] = js.native
   def checkIn(params: ParamsResourceWorkersCheckin, callback: BodyResponseCallback[SchemaCheckInResponse]): Unit = js.native
   def checkIn(

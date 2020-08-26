@@ -15,8 +15,8 @@ object encryptSessionKey extends js.Object {
     data: Uint8Array,
     algorithm: String,
     aeadAlgorithm: js.UndefOr[String],
-    publicKeys: js.UndefOr[js.Array[Key] | Key],
-    passwords: js.UndefOr[js.Array[String] | String],
+    publicKeys: js.UndefOr[Key | js.Array[Key]],
+    passwords: js.UndefOr[String | js.Array[String]],
     wildcard: js.UndefOr[Boolean],
     date: js.UndefOr[Date],
     toUserIds: js.UndefOr[js.Array[_]]

@@ -18,11 +18,30 @@ trait GetPipelineOutput extends js.Object {
 
 object GetPipelineOutput {
   @scala.inline
-  def apply(metadata: PipelineMetadata = null, pipeline: PipelineDeclaration = null): GetPipelineOutput = {
+  def apply(): GetPipelineOutput = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPipelineOutput]
   }
+  @scala.inline
+  implicit class GetPipelineOutputOps[Self <: GetPipelineOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetadata(value: PipelineMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setPipeline(value: PipelineDeclaration): Self = this.set("pipeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipeline: Self = this.set("pipeline", js.undefined)
+  }
+  
 }
 

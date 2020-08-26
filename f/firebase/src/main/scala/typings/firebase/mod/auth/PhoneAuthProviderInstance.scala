@@ -11,8 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PhoneAuthProviderInstance () extends AuthProvider {
   def this(auth: Auth) = this()
-  /* CompleteClass */
-  override var providerId: String = js.native
   def verifyPhoneNumber(phoneInfoOptions: String, applicationVerifier: ApplicationVerifier): js.Promise[String] = js.native
   /**
     * Starts a phone number authentication flow by sending a verification code to

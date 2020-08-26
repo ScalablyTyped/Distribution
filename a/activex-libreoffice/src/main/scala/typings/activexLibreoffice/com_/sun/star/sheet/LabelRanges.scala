@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.LabelRange
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
+@js.native
 trait LabelRanges
   extends XLabelRanges
      with XEnumerationAccess

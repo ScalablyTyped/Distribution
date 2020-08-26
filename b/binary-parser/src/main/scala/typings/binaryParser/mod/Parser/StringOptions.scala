@@ -4,36 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StringOptions extends Options {
-  var encoding: js.UndefOr[String] = js.undefined
-  var greedy: js.UndefOr[Boolean] = js.undefined
+  var encoding: js.UndefOr[String] = js.native
+  var greedy: js.UndefOr[Boolean] = js.native
   var length: js.UndefOr[
     Double | String | (js.ThisFunction0[/* this */ typings.binaryParser.mod.Parser[_], Double])
-  ] = js.undefined
-  var stripNull: js.UndefOr[Boolean] = js.undefined
-  var zeroTerminated: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var stripNull: js.UndefOr[Boolean] = js.native
+  var zeroTerminated: js.UndefOr[Boolean] = js.native
 }
 
 object StringOptions {
   @scala.inline
-  def apply(
-    assert: String | Double | (js.Function1[/* value */ Data, Boolean]) = null,
-    encoding: String = null,
-    formatter: /* value */ Data => _ = null,
-    greedy: js.UndefOr[Boolean] = js.undefined,
-    length: Double | String | (js.ThisFunction0[/* this */ typings.binaryParser.mod.Parser[_], Double]) = null,
-    stripNull: js.UndefOr[Boolean] = js.undefined,
-    zeroTerminated: js.UndefOr[Boolean] = js.undefined
-  ): StringOptions = {
+  def apply(): StringOptions = {
     val __obj = js.Dynamic.literal()
-    if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.get.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripNull)) __obj.updateDynamic("stripNull")(stripNull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zeroTerminated)) __obj.updateDynamic("zeroTerminated")(zeroTerminated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringOptions]
   }
+  @scala.inline
+  implicit class StringOptionsOps[Self <: StringOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setGreedy(value: Boolean): Self = this.set("greedy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreedy: Self = this.set("greedy", js.undefined)
+    @scala.inline
+    def setLength(value: Double | String | (js.ThisFunction0[/* this */ typings.binaryParser.mod.Parser[_], Double])): Self = this.set("length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    @scala.inline
+    def setStripNull(value: Boolean): Self = this.set("stripNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripNull: Self = this.set("stripNull", js.undefined)
+    @scala.inline
+    def setZeroTerminated(value: Boolean): Self = this.set("zeroTerminated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZeroTerminated: Self = this.set("zeroTerminated", js.undefined)
+  }
+  
 }
 

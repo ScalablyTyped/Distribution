@@ -8,146 +8,170 @@ import scala.scalajs.js.annotation._
   * Describes the results of a TestScript execution
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait TestReport extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait TestReport extends DomainResource {
   /**
     * Contains extended information for property 'issued'.
     */
-  var _issued: js.UndefOr[Element] = js.undefined
+  var _issued: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'result'.
     */
-  var _result: js.UndefOr[Element] = js.undefined
+  var _result: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'score'.
     */
-  var _score: js.UndefOr[Element] = js.undefined
+  var _score: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'tester'.
     */
-  var _tester: js.UndefOr[Element] = js.undefined
+  var _tester: js.UndefOr[Element] = js.native
   /**
     * External identifier
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * When the TestScript was executed and this TestReport was generated
     */
-  var issued: js.UndefOr[dateTime] = js.undefined
+  var issued: js.UndefOr[dateTime] = js.native
   /**
     * Informal name of the executed TestScript
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * A participant in the test execution, either the execution engine, a client, or a server
     */
-  var participant: js.UndefOr[js.Array[TestReportParticipant]] = js.undefined
+  var participant: js.UndefOr[js.Array[TestReportParticipant]] = js.native
   /**
     * pass | fail | pending
     */
-  var result: code
+  var result: code = js.native
   /**
     * The final score (percentage of tests passed) resulting from the execution of the TestScript
     */
-  var score: js.UndefOr[decimal] = js.undefined
+  var score: js.UndefOr[decimal] = js.native
   /**
     * The results of the series of required setup operations before the tests were executed
     */
-  var setup: js.UndefOr[TestReportSetup] = js.undefined
+  var setup: js.UndefOr[TestReportSetup] = js.native
   /**
     * completed | in-progress | waiting | stopped | entered-in-error
     */
-  var status: code
+  var status: code = js.native
   /**
     * The results of running the series of required clean up steps
     */
-  var teardown: js.UndefOr[TestReportTeardown] = js.undefined
+  var teardown: js.UndefOr[TestReportTeardown] = js.native
   /**
     * A test executed from the test script
     */
-  var test: js.UndefOr[js.Array[TestReportTest]] = js.undefined
+  var test: js.UndefOr[js.Array[TestReportTest]] = js.native
   /**
     * Reference to the  version-specific TestScript that was executed to produce this TestReport
     */
-  var testScript: Reference
+  var testScript: Reference = js.native
   /**
     * Name of the tester producing this report (Organization or individual)
     */
-  var tester: js.UndefOr[String] = js.undefined
+  var tester: js.UndefOr[String] = js.native
 }
 
 object TestReport {
   @scala.inline
-  def apply(
-    result: code,
-    status: code,
-    testScript: Reference,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _issued: Element = null,
-    _language: Element = null,
-    _name: Element = null,
-    _resourceType: Element = null,
-    _result: Element = null,
-    _score: Element = null,
-    _status: Element = null,
-    _tester: Element = null,
-    contained: js.Array[Resource] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: Identifier = null,
-    implicitRules: uri = null,
-    issued: dateTime = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    name: String = null,
-    participant: js.Array[TestReportParticipant] = null,
-    resourceType: code = null,
-    score: js.UndefOr[decimal] = js.undefined,
-    setup: TestReportSetup = null,
-    teardown: TestReportTeardown = null,
-    test: js.Array[TestReportTest] = null,
-    tester: String = null,
-    text: Narrative = null
-  ): TestReport = {
+  def apply(result: code, status: code, testScript: Reference): TestReport = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], testScript = testScript.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_issued != null) __obj.updateDynamic("_issued")(_issued.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_result != null) __obj.updateDynamic("_result")(_result.asInstanceOf[js.Any])
-    if (_score != null) __obj.updateDynamic("_score")(_score.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (_tester != null) __obj.updateDynamic("_tester")(_tester.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (issued != null) __obj.updateDynamic("issued")(issued.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (participant != null) __obj.updateDynamic("participant")(participant.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
-    if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
-    if (teardown != null) __obj.updateDynamic("teardown")(teardown.asInstanceOf[js.Any])
-    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (tester != null) __obj.updateDynamic("tester")(tester.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestReport]
   }
+  @scala.inline
+  implicit class TestReportOps[Self <: TestReport] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResult(value: code): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTestScript(value: Reference): Self = this.set("testScript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_issued(value: Element): Self = this.set("_issued", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_issued: Self = this.set("_issued", js.undefined)
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_result(value: Element): Self = this.set("_result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_result: Self = this.set("_result", js.undefined)
+    @scala.inline
+    def set_score(value: Element): Self = this.set("_score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_score: Self = this.set("_score", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def set_tester(value: Element): Self = this.set("_tester", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_tester: Self = this.set("_tester", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setIssued(value: dateTime): Self = this.set("issued", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssued: Self = this.set("issued", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParticipantVarargs(value: TestReportParticipant*): Self = this.set("participant", js.Array(value :_*))
+    @scala.inline
+    def setParticipant(value: js.Array[TestReportParticipant]): Self = this.set("participant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipant: Self = this.set("participant", js.undefined)
+    @scala.inline
+    def setScore(value: decimal): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+    @scala.inline
+    def setSetup(value: TestReportSetup): Self = this.set("setup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetup: Self = this.set("setup", js.undefined)
+    @scala.inline
+    def setTeardown(value: TestReportTeardown): Self = this.set("teardown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeardown: Self = this.set("teardown", js.undefined)
+    @scala.inline
+    def setTestVarargs(value: TestReportTest*): Self = this.set("test", js.Array(value :_*))
+    @scala.inline
+    def setTest(value: js.Array[TestReportTest]): Self = this.set("test", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTest: Self = this.set("test", js.undefined)
+    @scala.inline
+    def setTester(value: String): Self = this.set("tester", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTester: Self = this.set("tester", js.undefined)
+  }
+  
 }
 

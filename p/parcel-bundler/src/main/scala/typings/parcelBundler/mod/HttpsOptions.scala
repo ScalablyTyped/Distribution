@@ -4,28 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HttpsOptions extends js.Object {
   /**
     * Path to custom certificate
     *
     * @default "./ssl/c.crt"
     */
-  var cert: js.UndefOr[String] = js.undefined
+  var cert: js.UndefOr[String] = js.native
   /**
     * Path to custom key
     *
     * @default "./ssl/k.key"
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
 }
 
 object HttpsOptions {
   @scala.inline
-  def apply(cert: String = null, key: String = null): HttpsOptions = {
+  def apply(): HttpsOptions = {
     val __obj = js.Dynamic.literal()
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpsOptions]
   }
+  @scala.inline
+  implicit class HttpsOptionsOps[Self <: HttpsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCert(value: String): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+  }
+  
 }
 

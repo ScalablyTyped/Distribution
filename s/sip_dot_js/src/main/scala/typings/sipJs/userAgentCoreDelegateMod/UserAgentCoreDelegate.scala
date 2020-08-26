@@ -10,57 +10,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserAgentCoreDelegate extends js.Object {
   /**
     * Receive INVITE request.
     * @param request - Incoming INVITE request.
     */
-  var onInvite: js.UndefOr[js.Function1[/* request */ IncomingInviteRequest, Unit]] = js.undefined
+  var onInvite: js.UndefOr[js.Function1[/* request */ IncomingInviteRequest, Unit]] = js.native
   /**
     * Receive MESSAGE request.
     * @param request - Incoming MESSAGE request.
     */
-  var onMessage: js.UndefOr[js.Function1[/* request */ IncomingMessageRequest, Unit]] = js.undefined
+  var onMessage: js.UndefOr[js.Function1[/* request */ IncomingMessageRequest, Unit]] = js.native
   /**
     * DEPRECATED. Receive NOTIFY request.
     * @param message - Incoming NOTIFY request.
     */
-  var onNotify: js.UndefOr[js.Function1[/* request */ IncomingNotifyRequest, Unit]] = js.undefined
+  var onNotify: js.UndefOr[js.Function1[/* request */ IncomingNotifyRequest, Unit]] = js.native
   /**
     * Receive REFER request.
     * @param request - Incoming REFER request.
     */
-  var onRefer: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.undefined
+  var onRefer: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.native
   /**
     * Receive REGISTER request.
     * @param request - Incoming REGISTER request.
     */
-  var onRegister: js.UndefOr[js.Function1[/* request */ IncomingRegisterRequest, Unit]] = js.undefined
+  var onRegister: js.UndefOr[js.Function1[/* request */ IncomingRegisterRequest, Unit]] = js.native
   /**
     * Receive SUBSCRIBE request.
     * @param request - Incoming SUBSCRIBE request.
     */
-  var onSubscribe: js.UndefOr[js.Function1[/* request */ IncomingSubscribeRequest, Unit]] = js.undefined
+  var onSubscribe: js.UndefOr[js.Function1[/* request */ IncomingSubscribeRequest, Unit]] = js.native
 }
 
 object UserAgentCoreDelegate {
   @scala.inline
-  def apply(
-    onInvite: /* request */ IncomingInviteRequest => Unit = null,
-    onMessage: /* request */ IncomingMessageRequest => Unit = null,
-    onNotify: /* request */ IncomingNotifyRequest => Unit = null,
-    onRefer: /* request */ IncomingReferRequest => Unit = null,
-    onRegister: /* request */ IncomingRegisterRequest => Unit = null,
-    onSubscribe: /* request */ IncomingSubscribeRequest => Unit = null
-  ): UserAgentCoreDelegate = {
+  def apply(): UserAgentCoreDelegate = {
     val __obj = js.Dynamic.literal()
-    if (onInvite != null) __obj.updateDynamic("onInvite")(js.Any.fromFunction1(onInvite))
-    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
-    if (onNotify != null) __obj.updateDynamic("onNotify")(js.Any.fromFunction1(onNotify))
-    if (onRefer != null) __obj.updateDynamic("onRefer")(js.Any.fromFunction1(onRefer))
-    if (onRegister != null) __obj.updateDynamic("onRegister")(js.Any.fromFunction1(onRegister))
-    if (onSubscribe != null) __obj.updateDynamic("onSubscribe")(js.Any.fromFunction1(onSubscribe))
     __obj.asInstanceOf[UserAgentCoreDelegate]
   }
+  @scala.inline
+  implicit class UserAgentCoreDelegateOps[Self <: UserAgentCoreDelegate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnInvite(value: /* request */ IncomingInviteRequest => Unit): Self = this.set("onInvite", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInvite: Self = this.set("onInvite", js.undefined)
+    @scala.inline
+    def setOnMessage(value: /* request */ IncomingMessageRequest => Unit): Self = this.set("onMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMessage: Self = this.set("onMessage", js.undefined)
+    @scala.inline
+    def setOnNotify(value: /* request */ IncomingNotifyRequest => Unit): Self = this.set("onNotify", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnNotify: Self = this.set("onNotify", js.undefined)
+    @scala.inline
+    def setOnRefer(value: /* request */ IncomingReferRequest => Unit): Self = this.set("onRefer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRefer: Self = this.set("onRefer", js.undefined)
+    @scala.inline
+    def setOnRegister(value: /* request */ IncomingRegisterRequest => Unit): Self = this.set("onRegister", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRegister: Self = this.set("onRegister", js.undefined)
+    @scala.inline
+    def setOnSubscribe(value: /* request */ IncomingSubscribeRequest => Unit): Self = this.set("onSubscribe", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubscribe: Self = this.set("onSubscribe", js.undefined)
+  }
+  
 }
 

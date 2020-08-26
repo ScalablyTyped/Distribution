@@ -11,8 +11,8 @@ A very fast HTML parser, generating a simplified DOM, with basic element query s
 | Full name          | fast-html-parser |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 26 |
-| # downloads        | 119784 |
+| # dependents       | 25 |
+| # downloads        | 130803 |
 | # stars            | 9 |
 
 ## Links

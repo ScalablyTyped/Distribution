@@ -29,6 +29,7 @@ class ResourceAchievementdefinitions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAchievementDefinitionsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAchievementDefinitionsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementDefinitionsListResponse] = js.native
   def list(params: ParamsResourceAchievementdefinitionsList): GaxiosPromise[SchemaAchievementDefinitionsListResponse] = js.native
   def list(
     params: ParamsResourceAchievementdefinitionsList,

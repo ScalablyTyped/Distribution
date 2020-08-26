@@ -32,8 +32,39 @@ class ListBinding protected ()
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
     oContext: typings.openui5.sap.ui.model.Context,
+    aSorters: js.UndefOr[scala.Nothing],
+    aFilters: js.Array[_]
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: typings.openui5.sap.ui.model.Context,
     aSorters: js.Array[_],
     aFilters: js.Array[_]
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: typings.openui5.sap.ui.model.Context,
+    aSorters: js.UndefOr[scala.Nothing],
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.Any
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: typings.openui5.sap.ui.model.Context,
+    aSorters: js.UndefOr[scala.Nothing],
+    aFilters: js.Array[_],
+    mParameters: js.Any
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: typings.openui5.sap.ui.model.Context,
+    aSorters: js.Array[_],
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.Any
   ) = this()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,

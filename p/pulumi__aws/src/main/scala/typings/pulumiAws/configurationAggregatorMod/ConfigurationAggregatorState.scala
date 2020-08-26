@@ -27,27 +27,49 @@ trait ConfigurationAggregatorState extends js.Object {
     */
   val organizationAggregationSource: js.UndefOr[Input[ConfigurationAggregatorOrganizationAggregationSource]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object ConfigurationAggregatorState {
   @scala.inline
-  def apply(
-    accountAggregationSource: Input[ConfigurationAggregatorAccountAggregationSource] = null,
-    arn: Input[String] = null,
-    name: Input[String] = null,
-    organizationAggregationSource: Input[ConfigurationAggregatorOrganizationAggregationSource] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): ConfigurationAggregatorState = {
+  def apply(): ConfigurationAggregatorState = {
     val __obj = js.Dynamic.literal()
-    if (accountAggregationSource != null) __obj.updateDynamic("accountAggregationSource")(accountAggregationSource.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (organizationAggregationSource != null) __obj.updateDynamic("organizationAggregationSource")(organizationAggregationSource.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationAggregatorState]
   }
+  @scala.inline
+  implicit class ConfigurationAggregatorStateOps[Self <: ConfigurationAggregatorState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountAggregationSource(value: Input[ConfigurationAggregatorAccountAggregationSource]): Self = this.set("accountAggregationSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountAggregationSource: Self = this.set("accountAggregationSource", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrganizationAggregationSource(value: Input[ConfigurationAggregatorOrganizationAggregationSource]): Self = this.set("organizationAggregationSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationAggregationSource: Self = this.set("organizationAggregationSource", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

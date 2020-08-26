@@ -24,16 +24,16 @@ import scala.scalajs.js.annotation._
 object stateServiceMod extends js.Object {
   @js.native
   class StateService protected () extends js.Object {
-    /** @internalapi */
-    def this(/** @hidden */ router: UIRouter) = this()
+    /** @internal */
+    def this(/** @internal */ router: UIRouter) = this()
     /**
-      * The current [[StateObject]]
+      * The current [[StateObject]] (an internal API)
       *
-      * This is a passthrough through to [[UIRouterGlobals.$current]]
+      * @deprecated This is a passthrough through to [[UIRouterGlobals.$current]]
       */
     @JSName("$current")
     var $current: StateObject = js.native
-    /** @hidden */
+    /** @internal */
     var _defaultErrorHandler: js.Any = js.native
     /**
       * Handler for when [[transitionTo]] is called with an invalid state.
@@ -44,29 +44,30 @@ object stateServiceMod extends js.Object {
       *
       * If a callback returns an TargetState, then it is used as arguments to $state.transitionTo() and the result returned.
       *
-      * @internalapi
+      * @internal
       */
     var _handleInvalidTargetState: js.Any = js.native
     /**
       * The current [[StateDeclaration]]
       *
-      * This is a passthrough through to [[UIRouterGlobals.current]]
+      * @deprecated This is a passthrough through to [[UIRouterGlobals.current]]
       */
     var current: StateDeclaration = js.native
+    /** @internal */
     var getCurrentPath: js.Any = js.native
-    /** @internalapi */
+    /** @internal */
     var invalidCallbacks: js.Array[OnInvalidCallback] = js.native
     /**
       * The latest successful state parameters
       *
-      * This is a passthrough through to [[UIRouterGlobals.params]]
+      * @deprecated This is a passthrough through to [[UIRouterGlobals.params]]
       */
     var params: StateParams = js.native
     var router: js.Any = js.native
     /**
       * The [[Transition]] currently in progress (or null)
       *
-      * This is a passthrough through to [[UIRouterGlobals.transition]]
+      * @deprecated This is a passthrough through to [[UIRouterGlobals.transition]]
       */
     var transition: Transition = js.native
     /**
@@ -95,7 +96,7 @@ object stateServiceMod extends js.Object {
       */
     def defaultErrorHandler(): js.Function1[/* error */ js.Any, Unit] = js.native
     def defaultErrorHandler(handler: js.Function1[/* error */ js.Any, Unit]): js.Function1[/* error */ js.Any, Unit] = js.native
-    /** @internalapi */
+    /** @internal */
     def dispose(): Unit = js.native
     def get(): js.Array[StateDeclaration] = js.native
     def get(stateOrName: StateOrName): StateDeclaration = js.native
@@ -109,6 +110,7 @@ object stateServiceMod extends js.Object {
       * @param base When `stateOrName` is a relative state reference (such as `.bar.baz`), the state will be retrieved relative to this state.
       *
       * @returns a [[StateDeclaration]] object (or array of all registered [[StateDeclaration]] objects.)
+      * @deprecated use [[StateRegistry.get]]
       */
     def get(stateOrName: StateOrName, base: StateOrName): StateDeclaration = js.native
     /**
@@ -152,6 +154,7 @@ object stateServiceMod extends js.Object {
       * @returns {promise} A promise representing the state of the new transition.
       */
     def go(to: StateOrName): TransitionPromise = js.native
+    def go(to: StateOrName, params: js.UndefOr[scala.Nothing], options: TransitionOptions): TransitionPromise = js.native
     def go(to: StateOrName, params: RawParams): TransitionPromise = js.native
     def go(to: StateOrName, params: RawParams, options: TransitionOptions): TransitionPromise = js.native
     /**
@@ -171,6 +174,7 @@ object stateServiceMod extends js.Object {
       * @returns {string} compiled state url
       */
     def href(stateOrName: StateOrName): String = js.native
+    def href(stateOrName: StateOrName, params: js.UndefOr[scala.Nothing], options: HrefOptions): String = js.native
     def href(stateOrName: StateOrName, params: RawParams): String = js.native
     def href(stateOrName: StateOrName, params: RawParams, options: HrefOptions): String = js.native
     /**
@@ -212,6 +216,7 @@ object stateServiceMod extends js.Object {
       * @returns {boolean} Returns true if it does include the state
       */
     def includes(stateOrName: StateOrName): Boolean = js.native
+    def includes(stateOrName: StateOrName, params: js.UndefOr[scala.Nothing], options: TransitionOptions): Boolean = js.native
     def includes(stateOrName: StateOrName, params: RawParams): Boolean = js.native
     def includes(stateOrName: StateOrName, params: RawParams, options: TransitionOptions): Boolean = js.native
     /**
@@ -246,6 +251,7 @@ object stateServiceMod extends js.Object {
       * @returns Returns true if it is the state.
       */
     def is(stateOrName: StateOrName): Boolean = js.native
+    def is(stateOrName: StateOrName, params: js.UndefOr[scala.Nothing], options: Relative): Boolean = js.native
     def is(stateOrName: StateOrName, params: RawParams): Boolean = js.native
     def is(stateOrName: StateOrName, params: RawParams, options: Relative): Boolean = js.native
     /**
@@ -341,6 +347,7 @@ object stateServiceMod extends js.Object {
       * This may be returned from a Transition Hook to redirect a transition, for example.
       */
     def target(identifier: StateOrName): TargetState = js.native
+    def target(identifier: StateOrName, params: js.UndefOr[scala.Nothing], options: TransitionOptions): TargetState = js.native
     def target(identifier: StateOrName, params: RawParams): TargetState = js.native
     def target(identifier: StateOrName, params: RawParams, options: TransitionOptions): TargetState = js.native
     /**
@@ -367,6 +374,7 @@ object stateServiceMod extends js.Object {
       * @returns A promise representing the state of the new transition. See [[go]]
       */
     def transitionTo(to: StateOrName): TransitionPromise = js.native
+    def transitionTo(to: StateOrName, toParams: js.UndefOr[scala.Nothing], options: TransitionOptions): TransitionPromise = js.native
     def transitionTo(to: StateOrName, toParams: RawParams): TransitionPromise = js.native
     def transitionTo(to: StateOrName, toParams: RawParams, options: TransitionOptions): TransitionPromise = js.native
   }

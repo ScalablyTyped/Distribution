@@ -1,17 +1,20 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.BackgroundImageProperty
-import typings.csstype.mod.BackgroundPositionProperty
-import typings.csstype.mod.BackgroundRepeatProperty
-import typings.csstype.mod.BackgroundSizeProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BackgroundProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
   extends BackgroundImageProps[ThemeType]
-     with BackgroundSizeProps[ThemeType, BackgroundSizeProperty[TLengthStyledSystem]]
-     with BackgroundPositionProps[ThemeType, BackgroundPositionProperty[TLengthStyledSystem]]
+     with BackgroundSizeProps[
+      ThemeType, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BackgroundSizeProperty<TLengthStyledSystem> */ js.Any
+    ]
+     with BackgroundPositionProps[
+      ThemeType, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BackgroundPositionProperty<TLengthStyledSystem> */ js.Any
+    ]
      with BackgroundRepeatProps[ThemeType] {
   /**
     * The background shorthand CSS property sets all background style properties at once,
@@ -19,27 +22,35 @@ trait BackgroundProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
     */
-  var background: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
+  var background: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
 }
 
 object BackgroundProps {
   @scala.inline
-  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](
-    background: js.UndefOr[Null | (ResponsiveValue[TVal, ThemeType])] = js.undefined,
-    backgroundImage: js.UndefOr[Null | (ResponsiveValue[BackgroundImageProperty, ThemeType])] = js.undefined,
-    backgroundPosition: js.UndefOr[
-      Null | (ResponsiveValue[BackgroundPositionProperty[TLengthStyledSystem], ThemeType])
-    ] = js.undefined,
-    backgroundRepeat: js.UndefOr[Null | (ResponsiveValue[BackgroundRepeatProperty, ThemeType])] = js.undefined,
-    backgroundSize: js.UndefOr[Null | (ResponsiveValue[BackgroundSizeProperty[TLengthStyledSystem], ThemeType])] = js.undefined
-  ): BackgroundProps[ThemeType, TVal] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal](): BackgroundProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundImage)) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundPosition)) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundRepeat)) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundSize)) __obj.updateDynamic("backgroundSize")(backgroundSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundProps[ThemeType, TVal]]
   }
+  @scala.inline
+  implicit class BackgroundPropsOps[Self <: BackgroundProps[_, _], /* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType, TVal] (val x: Self with (BackgroundProps[ThemeType, TVal])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundVarargs(value: (TVal | Null)*): Self = this.set("background", js.Array(value :_*))
+    @scala.inline
+    def setBackground(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBackgroundNull: Self = this.set("background", null)
+  }
+  
 }
 

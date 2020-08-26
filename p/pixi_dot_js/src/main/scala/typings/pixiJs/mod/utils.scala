@@ -3,7 +3,6 @@ package typings.pixiJs.mod
 import typings.pixiJs.PIXI.utils.DecomposedDataUri
 import typings.pixiJs.anon.Device
 import typings.pixiJs.anon.Phone
-import typings.std.CanvasRenderingContext2D
 import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import typings.std.Uint16Array
@@ -44,48 +43,6 @@ object utils extends js.Object {
     extends typings.pixiJs.PIXI.utils.CanvasRenderTarget {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, resolution: Double) = this()
-    /**
-      * The Canvas object that belongs to this CanvasRenderTarget.
-      *
-      * @member {HTMLCanvasElement} PIXI.utils.CanvasRenderTarget#canvas
-      */
-    /* CompleteClass */
-    override var canvas: HTMLCanvasElement = js.native
-    /**
-      * A CanvasRenderingContext2D object representing a two-dimensional rendering context.
-      *
-      * @member {CanvasRenderingContext2D} PIXI.utils.CanvasRenderTarget#context
-      */
-    /* CompleteClass */
-    override var context: CanvasRenderingContext2D = js.native
-    /**
-      * The height of the canvas buffer in pixels.
-      *
-      * @member {number}
-      */
-    /* CompleteClass */
-    override var height: Double = js.native
-    /**
-      * The width of the canvas buffer in pixels.
-      *
-      * @member {number}
-      */
-    /* CompleteClass */
-    override var width: Double = js.native
-    /**
-      * Destroys this canvas.
-      *
-      */
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
-    /**
-      * Resizes the canvas to the specified width and height.
-      *
-      * @param {number} width - the new width of the canvas
-      * @param {number} height - the new height of the canvas
-      */
-    /* CompleteClass */
-    override def resize(width: Double, height: Double): Unit = js.native
   }
   
   /**
@@ -218,6 +175,7 @@ object utils extends js.Object {
     * @return {number[]} Triangulated polygon
     */
   def earcut(vertices: js.Array[Double]): js.Array[Double] = js.native
+  def earcut(vertices: js.Array[Double], holes: js.UndefOr[scala.Nothing], dimensions: Double): js.Array[Double] = js.native
   def earcut(vertices: js.Array[Double], holes: js.Array[Double]): js.Array[Double] = js.native
   def earcut(vertices: js.Array[Double], holes: js.Array[Double], dimensions: Double): js.Array[Double] = js.native
   /**
@@ -292,6 +250,7 @@ object utils extends js.Object {
     */
   def nextPow2(v: Double): Double = js.native
   def premultiplyRgba(rgb: js.Array[Double], alpha: Double): Float32Array = js.native
+  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: js.UndefOr[scala.Nothing], premultiply: Boolean): Float32Array = js.native
   def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array): Float32Array = js.native
   def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = js.native
   /**
@@ -306,6 +265,7 @@ object utils extends js.Object {
     * @returns {Float32Array} vec4 rgba
     */
   def premultiplyRgba(rgb: Float32Array, alpha: Double): Float32Array = js.native
+  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: js.UndefOr[scala.Nothing], premultiply: Boolean): Float32Array = js.native
   def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array): Float32Array = js.native
   def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = js.native
   /**
@@ -330,6 +290,7 @@ object utils extends js.Object {
     * @returns {Float32Array} vec4 rgba
     */
   def premultiplyTintToRgba(tint: Double, alpha: Double): Float32Array = js.native
+  def premultiplyTintToRgba(tint: Double, alpha: Double, out: js.UndefOr[scala.Nothing], premultiply: Boolean): Float32Array = js.native
   def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array): Float32Array = js.native
   def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = js.native
   /**
@@ -387,10 +348,10 @@ object utils extends js.Object {
     * PIXI.utils.string2hex("#ffffff"); // returns 0xffffff
     * @memberof PIXI.utils
     * @function string2hex
-    * @param {string} - The string color (e.g., `"#ffffff"`)
+    * @param {string} string - The string color (e.g., `"#ffffff"`)
     * @return {number} Number in hexadecimal.
     */
-  def string2hex(): Double = js.native
+  def string2hex(string: String): Double = js.native
   /**
     * Trim transparent borders from a canvas
     *

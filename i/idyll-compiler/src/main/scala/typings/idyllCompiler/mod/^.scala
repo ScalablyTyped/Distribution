@@ -17,6 +17,7 @@ object ^ extends js.Object {
     *
     */
   def apply(input: String): js.Promise[AST] | AST = js.native
+  def apply(input: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Promise[AST] | AST = js.native
   def apply(input: String, options: Options): js.Promise[AST] | AST = js.native
   def apply(input: String, options: Options, callback: js.Function0[Unit]): js.Promise[AST] | AST = js.native
 }

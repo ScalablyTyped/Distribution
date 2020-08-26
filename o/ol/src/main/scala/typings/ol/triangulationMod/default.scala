@@ -16,9 +16,5 @@ class default protected () extends Triangulation {
     errorThreshold: Double,
     opt_destinationResolution: Double
   ) = this()
-  /* CompleteClass */
-  override def calculateSourceExtent(): Extent = js.native
-  /* CompleteClass */
-  override def getTriangles(): js.Array[Triangle] = js.native
 }
 

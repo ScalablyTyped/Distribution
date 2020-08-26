@@ -18,14 +18,32 @@ trait ListDocumentClassificationJobsResponse extends js.Object {
 
 object ListDocumentClassificationJobsResponse {
   @scala.inline
-  def apply(
-    DocumentClassificationJobPropertiesList: DocumentClassificationJobPropertiesList = null,
-    NextToken: String = null
-  ): ListDocumentClassificationJobsResponse = {
+  def apply(): ListDocumentClassificationJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (DocumentClassificationJobPropertiesList != null) __obj.updateDynamic("DocumentClassificationJobPropertiesList")(DocumentClassificationJobPropertiesList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDocumentClassificationJobsResponse]
   }
+  @scala.inline
+  implicit class ListDocumentClassificationJobsResponseOps[Self <: ListDocumentClassificationJobsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentClassificationJobPropertiesListVarargs(value: DocumentClassificationJobProperties*): Self = this.set("DocumentClassificationJobPropertiesList", js.Array(value :_*))
+    @scala.inline
+    def setDocumentClassificationJobPropertiesList(value: DocumentClassificationJobPropertiesList): Self = this.set("DocumentClassificationJobPropertiesList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentClassificationJobPropertiesList: Self = this.set("DocumentClassificationJobPropertiesList", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

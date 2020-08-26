@@ -5,54 +5,93 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<css-mediaquery.css-mediaquery.MediaValues> */
+@js.native
 trait PartialMediaValues extends js.Object {
-  var `aspect-ratio`: js.UndefOr[js.Any] = js.undefined
-  var color: js.UndefOr[js.Any] = js.undefined
-  var `color-index`: js.UndefOr[js.Any] = js.undefined
-  var `device-aspect-ratio`: js.UndefOr[js.Any] = js.undefined
-  var `device-height`: js.UndefOr[js.Any] = js.undefined
-  var `device-width`: js.UndefOr[js.Any] = js.undefined
-  var grid: js.UndefOr[js.Any] = js.undefined
-  var height: js.UndefOr[js.Any] = js.undefined
-  var monochrome: js.UndefOr[js.Any] = js.undefined
-  var orientation: js.UndefOr[js.Any] = js.undefined
-  var resolution: js.UndefOr[js.Any] = js.undefined
-  var scan: js.UndefOr[js.Any] = js.undefined
-  var width: js.UndefOr[js.Any] = js.undefined
+  var `aspect-ratio`: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.native
+  var `color-index`: js.UndefOr[js.Any] = js.native
+  var `device-aspect-ratio`: js.UndefOr[js.Any] = js.native
+  var `device-height`: js.UndefOr[js.Any] = js.native
+  var `device-width`: js.UndefOr[js.Any] = js.native
+  var grid: js.UndefOr[js.Any] = js.native
+  var height: js.UndefOr[js.Any] = js.native
+  var monochrome: js.UndefOr[js.Any] = js.native
+  var orientation: js.UndefOr[js.Any] = js.native
+  var resolution: js.UndefOr[js.Any] = js.native
+  var scan: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[js.Any] = js.native
 }
 
 object PartialMediaValues {
   @scala.inline
-  def apply(
-    `aspect-ratio`: js.Any = null,
-    color: js.Any = null,
-    `color-index`: js.Any = null,
-    `device-aspect-ratio`: js.Any = null,
-    `device-height`: js.Any = null,
-    `device-width`: js.Any = null,
-    grid: js.Any = null,
-    height: js.Any = null,
-    monochrome: js.Any = null,
-    orientation: js.Any = null,
-    resolution: js.Any = null,
-    scan: js.Any = null,
-    width: js.Any = null
-  ): PartialMediaValues = {
+  def apply(): PartialMediaValues = {
     val __obj = js.Dynamic.literal()
-    if (`aspect-ratio` != null) __obj.updateDynamic("aspect-ratio")(`aspect-ratio`.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (`color-index` != null) __obj.updateDynamic("color-index")(`color-index`.asInstanceOf[js.Any])
-    if (`device-aspect-ratio` != null) __obj.updateDynamic("device-aspect-ratio")(`device-aspect-ratio`.asInstanceOf[js.Any])
-    if (`device-height` != null) __obj.updateDynamic("device-height")(`device-height`.asInstanceOf[js.Any])
-    if (`device-width` != null) __obj.updateDynamic("device-width")(`device-width`.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (monochrome != null) __obj.updateDynamic("monochrome")(monochrome.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (scan != null) __obj.updateDynamic("scan")(scan.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialMediaValues]
   }
+  @scala.inline
+  implicit class PartialMediaValuesOps[Self <: PartialMediaValues] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setAspect-ratio`(value: js.Any): Self = this.set("aspect-ratio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAspect-ratio`: Self = this.set("aspect-ratio", js.undefined)
+    @scala.inline
+    def setColor(value: js.Any): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def `setColor-index`(value: js.Any): Self = this.set("color-index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteColor-index`: Self = this.set("color-index", js.undefined)
+    @scala.inline
+    def `setDevice-aspect-ratio`(value: js.Any): Self = this.set("device-aspect-ratio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDevice-aspect-ratio`: Self = this.set("device-aspect-ratio", js.undefined)
+    @scala.inline
+    def `setDevice-height`(value: js.Any): Self = this.set("device-height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDevice-height`: Self = this.set("device-height", js.undefined)
+    @scala.inline
+    def `setDevice-width`(value: js.Any): Self = this.set("device-width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDevice-width`: Self = this.set("device-width", js.undefined)
+    @scala.inline
+    def setGrid(value: js.Any): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setHeight(value: js.Any): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMonochrome(value: js.Any): Self = this.set("monochrome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonochrome: Self = this.set("monochrome", js.undefined)
+    @scala.inline
+    def setOrientation(value: js.Any): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setResolution(value: js.Any): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setScan(value: js.Any): Self = this.set("scan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScan: Self = this.set("scan", js.undefined)
+    @scala.inline
+    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

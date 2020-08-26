@@ -30,7 +30,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined node.stream.PassThrough & {  statusCode  :number,   statusMessage  :string,   headers  :bent.bent.Headers} */
+/* Inlined node.stream.PassThrough & {  statusCode :number,   statusMessage :string,   headers :bent.bent.Headers, arrayBuffer (): std.Promise<node.Buffer>, text (): std.Promise<string>, json (): std.Promise<bent.bent.Json>} */
 @js.native
 trait NodeResponse extends BentResponse {
   var _writev: js.UndefOr[
@@ -45,6 +45,7 @@ trait NodeResponse extends BentResponse {
   var readable: Boolean = js.native
   val readableEncoding: BufferEncoding | Null = js.native
   val readableEnded: Boolean = js.native
+  val readableFlowing: Boolean | Null = js.native
   val readableHighWaterMark: Double = js.native
   val readableLength: Double = js.native
   val readableObjectMode: Boolean = js.native
@@ -102,6 +103,7 @@ trait NodeResponse extends BentResponse {
   def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
+  def arrayBuffer(): js.Promise[Buffer] = js.native
   def cork(): Unit = js.native
   def destroy(): Unit = js.native
   def destroy(error: Error): Unit = js.native
@@ -133,17 +135,20 @@ trait NodeResponse extends BentResponse {
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any): Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
   def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   def end(data: String): Unit = js.native
   def end(data: String, cb: js.Function0[Unit]): Unit = js.native
   def end(data: Uint8Array): Unit = js.native
   def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   def eventNames(): js.Array[String | js.Symbol] = js.native
   def getMaxListeners(): Double = js.native
   def isPaused(): Boolean = js.native
+  def json(): js.Promise[Json] = js.native
   def listenerCount(`type`: String): Double = js.native
   def listenerCount(`type`: js.Symbol): Double = js.native
   def listeners(event: String): js.Array[js.Function] = js.native
@@ -290,6 +295,7 @@ trait NodeResponse extends BentResponse {
   def setDefaultEncoding(encoding: BufferEncoding): this.type = js.native
   def setEncoding(encoding: BufferEncoding): this.type = js.native
   def setMaxListeners(n: Double): this.type = js.native
+  def text(): js.Promise[String] = js.native
   def uncork(): Unit = js.native
   def unpipe(): this.type = js.native
   def unpipe(destination: WritableStream): this.type = js.native
@@ -306,11 +312,21 @@ trait NodeResponse extends BentResponse {
   def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(chunk: js.Any): Boolean = js.native
   def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(
+    chunk: js.Any,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
   def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
   def write(
     chunk: js.Any,
     encoding: BufferEncoding,
     cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
+  def write(
+    str: String,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
   ): Boolean = js.native
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native

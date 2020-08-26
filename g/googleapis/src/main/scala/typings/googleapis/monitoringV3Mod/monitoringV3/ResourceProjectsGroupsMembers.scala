@@ -86,6 +86,7 @@ class ResourceProjectsGroupsMembers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListGroupMembersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListGroupMembersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListGroupMembersResponse] = js.native
   def list(params: ParamsResourceProjectsGroupsMembersList): GaxiosPromise[SchemaListGroupMembersResponse] = js.native
   def list(
     params: ParamsResourceProjectsGroupsMembersList,

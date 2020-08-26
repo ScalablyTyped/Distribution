@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContactPickerActivatedEventArgs extends IContactPickerActivatedEventArgs
 
 object ContactPickerActivatedEventArgs {

@@ -81,34 +81,78 @@ trait SchemaContact extends js.Object {
 
 object SchemaContact {
   @scala.inline
-  def apply(
-    acceptCommands: js.Array[SchemaCommand] = null,
-    acceptTypes: js.Array[String] = null,
-    displayName: String = null,
-    id: String = null,
-    imageUrls: js.Array[String] = null,
-    kind: String = null,
-    phoneNumber: String = null,
-    priority: js.UndefOr[Double] = js.undefined,
-    sharingFeatures: js.Array[String] = null,
-    source: String = null,
-    speakableName: String = null,
-    `type`: String = null
-  ): SchemaContact = {
+  def apply(): SchemaContact = {
     val __obj = js.Dynamic.literal()
-    if (acceptCommands != null) __obj.updateDynamic("acceptCommands")(acceptCommands.asInstanceOf[js.Any])
-    if (acceptTypes != null) __obj.updateDynamic("acceptTypes")(acceptTypes.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageUrls != null) __obj.updateDynamic("imageUrls")(imageUrls.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (sharingFeatures != null) __obj.updateDynamic("sharingFeatures")(sharingFeatures.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (speakableName != null) __obj.updateDynamic("speakableName")(speakableName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContact]
   }
+  @scala.inline
+  implicit class SchemaContactOps[Self <: SchemaContact] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptCommandsVarargs(value: SchemaCommand*): Self = this.set("acceptCommands", js.Array(value :_*))
+    @scala.inline
+    def setAcceptCommands(value: js.Array[SchemaCommand]): Self = this.set("acceptCommands", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptCommands: Self = this.set("acceptCommands", js.undefined)
+    @scala.inline
+    def setAcceptTypesVarargs(value: String*): Self = this.set("acceptTypes", js.Array(value :_*))
+    @scala.inline
+    def setAcceptTypes(value: js.Array[String]): Self = this.set("acceptTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptTypes: Self = this.set("acceptTypes", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImageUrlsVarargs(value: String*): Self = this.set("imageUrls", js.Array(value :_*))
+    @scala.inline
+    def setImageUrls(value: js.Array[String]): Self = this.set("imageUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrls: Self = this.set("imageUrls", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setSharingFeaturesVarargs(value: String*): Self = this.set("sharingFeatures", js.Array(value :_*))
+    @scala.inline
+    def setSharingFeatures(value: js.Array[String]): Self = this.set("sharingFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharingFeatures: Self = this.set("sharingFeatures", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSpeakableName(value: String): Self = this.set("speakableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeakableName: Self = this.set("speakableName", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

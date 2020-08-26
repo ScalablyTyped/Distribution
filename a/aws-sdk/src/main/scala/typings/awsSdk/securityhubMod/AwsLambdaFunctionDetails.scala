@@ -82,46 +82,96 @@ trait AwsLambdaFunctionDetails extends js.Object {
 
 object AwsLambdaFunctionDetails {
   @scala.inline
-  def apply(
-    Code: AwsLambdaFunctionCode = null,
-    CodeSha256: NonEmptyString = null,
-    DeadLetterConfig: AwsLambdaFunctionDeadLetterConfig = null,
-    Environment: AwsLambdaFunctionEnvironment = null,
-    FunctionName: NonEmptyString = null,
-    Handler: NonEmptyString = null,
-    KmsKeyArn: NonEmptyString = null,
-    LastModified: NonEmptyString = null,
-    Layers: AwsLambdaFunctionLayerList = null,
-    MasterArn: NonEmptyString = null,
-    MemorySize: js.UndefOr[Integer] = js.undefined,
-    RevisionId: NonEmptyString = null,
-    Role: NonEmptyString = null,
-    Runtime: NonEmptyString = null,
-    Timeout: js.UndefOr[Integer] = js.undefined,
-    TracingConfig: AwsLambdaFunctionTracingConfig = null,
-    Version: NonEmptyString = null,
-    VpcConfig: AwsLambdaFunctionVpcConfig = null
-  ): AwsLambdaFunctionDetails = {
+  def apply(): AwsLambdaFunctionDetails = {
     val __obj = js.Dynamic.literal()
-    if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
-    if (CodeSha256 != null) __obj.updateDynamic("CodeSha256")(CodeSha256.asInstanceOf[js.Any])
-    if (DeadLetterConfig != null) __obj.updateDynamic("DeadLetterConfig")(DeadLetterConfig.asInstanceOf[js.Any])
-    if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
-    if (FunctionName != null) __obj.updateDynamic("FunctionName")(FunctionName.asInstanceOf[js.Any])
-    if (Handler != null) __obj.updateDynamic("Handler")(Handler.asInstanceOf[js.Any])
-    if (KmsKeyArn != null) __obj.updateDynamic("KmsKeyArn")(KmsKeyArn.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (Layers != null) __obj.updateDynamic("Layers")(Layers.asInstanceOf[js.Any])
-    if (MasterArn != null) __obj.updateDynamic("MasterArn")(MasterArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize.get.asInstanceOf[js.Any])
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
-    if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
-    if (Runtime != null) __obj.updateDynamic("Runtime")(Runtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
-    if (TracingConfig != null) __obj.updateDynamic("TracingConfig")(TracingConfig.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsLambdaFunctionDetails]
   }
+  @scala.inline
+  implicit class AwsLambdaFunctionDetailsOps[Self <: AwsLambdaFunctionDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: AwsLambdaFunctionCode): Self = this.set("Code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("Code", js.undefined)
+    @scala.inline
+    def setCodeSha256(value: NonEmptyString): Self = this.set("CodeSha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeSha256: Self = this.set("CodeSha256", js.undefined)
+    @scala.inline
+    def setDeadLetterConfig(value: AwsLambdaFunctionDeadLetterConfig): Self = this.set("DeadLetterConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeadLetterConfig: Self = this.set("DeadLetterConfig", js.undefined)
+    @scala.inline
+    def setEnvironment(value: AwsLambdaFunctionEnvironment): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    @scala.inline
+    def setFunctionName(value: NonEmptyString): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionName: Self = this.set("FunctionName", js.undefined)
+    @scala.inline
+    def setHandler(value: NonEmptyString): Self = this.set("Handler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandler: Self = this.set("Handler", js.undefined)
+    @scala.inline
+    def setKmsKeyArn(value: NonEmptyString): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+    @scala.inline
+    def setLastModified(value: NonEmptyString): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setLayersVarargs(value: AwsLambdaFunctionLayer*): Self = this.set("Layers", js.Array(value :_*))
+    @scala.inline
+    def setLayers(value: AwsLambdaFunctionLayerList): Self = this.set("Layers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayers: Self = this.set("Layers", js.undefined)
+    @scala.inline
+    def setMasterArn(value: NonEmptyString): Self = this.set("MasterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterArn: Self = this.set("MasterArn", js.undefined)
+    @scala.inline
+    def setMemorySize(value: Integer): Self = this.set("MemorySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemorySize: Self = this.set("MemorySize", js.undefined)
+    @scala.inline
+    def setRevisionId(value: NonEmptyString): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    @scala.inline
+    def setRole(value: NonEmptyString): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("Role", js.undefined)
+    @scala.inline
+    def setRuntime(value: NonEmptyString): Self = this.set("Runtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntime: Self = this.set("Runtime", js.undefined)
+    @scala.inline
+    def setTimeout(value: Integer): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    @scala.inline
+    def setTracingConfig(value: AwsLambdaFunctionTracingConfig): Self = this.set("TracingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracingConfig: Self = this.set("TracingConfig", js.undefined)
+    @scala.inline
+    def setVersion(value: NonEmptyString): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: AwsLambdaFunctionVpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

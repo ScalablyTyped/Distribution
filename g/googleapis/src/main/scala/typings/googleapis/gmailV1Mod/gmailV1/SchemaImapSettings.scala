@@ -34,18 +34,38 @@ trait SchemaImapSettings extends js.Object {
 
 object SchemaImapSettings {
   @scala.inline
-  def apply(
-    autoExpunge: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    expungeBehavior: String = null,
-    maxFolderSize: js.UndefOr[Double] = js.undefined
-  ): SchemaImapSettings = {
+  def apply(): SchemaImapSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoExpunge)) __obj.updateDynamic("autoExpunge")(autoExpunge.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (expungeBehavior != null) __obj.updateDynamic("expungeBehavior")(expungeBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFolderSize)) __obj.updateDynamic("maxFolderSize")(maxFolderSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImapSettings]
   }
+  @scala.inline
+  implicit class SchemaImapSettingsOps[Self <: SchemaImapSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoExpunge(value: Boolean): Self = this.set("autoExpunge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoExpunge: Self = this.set("autoExpunge", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setExpungeBehavior(value: String): Self = this.set("expungeBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpungeBehavior: Self = this.set("expungeBehavior", js.undefined)
+    @scala.inline
+    def setMaxFolderSize(value: Double): Self = this.set("maxFolderSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFolderSize: Self = this.set("maxFolderSize", js.undefined)
+  }
+  
 }
 

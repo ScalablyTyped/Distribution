@@ -6,12 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var algorithms: js.UndefOr[js.Array[String]] = js.undefined
-  var audience: js.UndefOr[String | js.Array[String]] = js.undefined
-  var cookie: js.UndefOr[String] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var getToken: js.UndefOr[js.Function2[/* ctx */ Context, /* opts */ this.type, String]] = js.undefined
+  var algorithms: js.UndefOr[js.Array[String]] = js.native
+  var audience: js.UndefOr[String | js.Array[String]] = js.native
+  var cookie: js.UndefOr[String] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var getToken: js.UndefOr[js.Function2[/* ctx */ Context, /* opts */ this.type, String]] = js.native
   var isRevoked: js.UndefOr[
     js.Function3[
       /* ctx */ Context, 
@@ -19,41 +20,88 @@ trait Options extends js.Object {
       /* token */ String, 
       js.Promise[Boolean]
     ]
-  ] = js.undefined
-  var issuer: js.UndefOr[String] = js.undefined
-  var key: js.UndefOr[String] = js.undefined
-  var passthrough: js.UndefOr[Boolean] = js.undefined
-  var secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader
-  var tokenKey: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var issuer: js.UndefOr[String | js.Array[String]] = js.native
+  var key: js.UndefOr[String] = js.native
+  var passthrough: js.UndefOr[Boolean] = js.native
+  var secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader = js.native
+  var tokenKey: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader,
-    algorithms: js.Array[String] = null,
-    audience: String | js.Array[String] = null,
-    cookie: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    getToken: (/* ctx */ Context, Options) => String = null,
-    isRevoked: (/* ctx */ Context, /* decodedToken */ js.Object, /* token */ String) => js.Promise[Boolean] = null,
-    issuer: String = null,
-    key: String = null,
-    passthrough: js.UndefOr[Boolean] = js.undefined,
-    tokenKey: String = null
-  ): Options = {
+  def apply(secret: String | (js.Array[Buffer | String]) | Buffer | SecretLoader): Options = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (getToken != null) __obj.updateDynamic("getToken")(js.Any.fromFunction2(getToken))
-    if (isRevoked != null) __obj.updateDynamic("isRevoked")(js.Any.fromFunction3(isRevoked))
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough.get.asInstanceOf[js.Any])
-    if (tokenKey != null) __obj.updateDynamic("tokenKey")(tokenKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecretFunction2(
+      value: (/* header */ js.Any, /* payload */ js.Any) => js.Promise[String | (js.Array[Buffer | String]) | Buffer]
+    ): Self = this.set("secret", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSecretVarargs(value: (Buffer | String)*): Self = this.set("secret", js.Array(value :_*))
+    @scala.inline
+    def setSecret(value: String | (js.Array[Buffer | String]) | Buffer | SecretLoader): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithmsVarargs(value: String*): Self = this.set("algorithms", js.Array(value :_*))
+    @scala.inline
+    def setAlgorithms(value: js.Array[String]): Self = this.set("algorithms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithms: Self = this.set("algorithms", js.undefined)
+    @scala.inline
+    def setAudienceVarargs(value: String*): Self = this.set("audience", js.Array(value :_*))
+    @scala.inline
+    def setAudience(value: String | js.Array[String]): Self = this.set("audience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudience: Self = this.set("audience", js.undefined)
+    @scala.inline
+    def setCookie(value: String): Self = this.set("cookie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookie: Self = this.set("cookie", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setGetToken(value: (/* ctx */ Context, Options) => String): Self = this.set("getToken", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetToken: Self = this.set("getToken", js.undefined)
+    @scala.inline
+    def setIsRevoked(
+      value: (/* ctx */ Context, /* decodedToken */ js.Object, /* token */ String) => js.Promise[Boolean]
+    ): Self = this.set("isRevoked", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteIsRevoked: Self = this.set("isRevoked", js.undefined)
+    @scala.inline
+    def setIssuerVarargs(value: String*): Self = this.set("issuer", js.Array(value :_*))
+    @scala.inline
+    def setIssuer(value: String | js.Array[String]): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setPassthrough(value: Boolean): Self = this.set("passthrough", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassthrough: Self = this.set("passthrough", js.undefined)
+    @scala.inline
+    def setTokenKey(value: String): Self = this.set("tokenKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenKey: Self = this.set("tokenKey", js.undefined)
+  }
+  
 }
 

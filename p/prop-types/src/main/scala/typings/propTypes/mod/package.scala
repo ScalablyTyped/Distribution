@@ -13,7 +13,7 @@ package object mod {
     */ typings.propTypes.propTypesStrings.InferPropsInner with org.scalablytyped.runtime.TopLevel[V]
   type InferType[V] = js.Any
   type OptionalKeys[V] = typings.std.Exclude[/* keyof V */ java.lang.String, typings.propTypes.mod.RequiredKeys[V]]
-  type ReactComponentLike = java.lang.String | (js.Function2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], js.Any]) | (org.scalablytyped.runtime.Instantiable2[/* props */ js.Any, js.UndefOr[/* context */ js.Any], js.Any])
+  type ReactComponentLike = java.lang.String | (js.Function2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], js.Any]) | (org.scalablytyped.runtime.Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], js.Any])
   /* Rewritten from type alias, can be one of: 
     - js.Object
     - typings.propTypes.mod.ReactElementLike

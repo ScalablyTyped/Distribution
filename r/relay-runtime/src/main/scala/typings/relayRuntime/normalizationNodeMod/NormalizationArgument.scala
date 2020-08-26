@@ -12,16 +12,13 @@ trait NormalizationArgument extends js.Object
 
 object NormalizationArgument {
   @scala.inline
-  def NormalizationLiteral(kind: String, name: String, `type`: js.UndefOr[Null | String] = js.undefined, value: js.Any = null): NormalizationArgument = {
+  def NormalizationLiteral(kind: String, name: String): NormalizationArgument = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationArgument]
   }
   @scala.inline
-  def NormalizationVariable(kind: String, name: String, variableName: String, `type`: js.UndefOr[Null | String] = js.undefined): NormalizationArgument = {
+  def NormalizationVariable(kind: String, name: String, variableName: String): NormalizationArgument = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationArgument]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for leveldown
 
-Typings are for version 4.0
+Typings are for version 3.0.2
 
 ## Library description:
 A low-level Node.js LevelDB binding
@@ -11,8 +11,8 @@ A low-level Node.js LevelDB binding
 | Full name          | leveldown |
 | Keywords           | leveldb, level |
 | # releases         | 22 |
-| # dependents       | 436 |
-| # downloads        | 3960886 |
+| # dependents       | 440 |
+| # downloads        | 4112441 |
 | # stars            | 21 |
 
 ## Links
@@ -24,7 +24,7 @@ A low-level Node.js LevelDB binding
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

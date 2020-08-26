@@ -7,21 +7,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExtendedBase extends Base {
-  var AuthorizationRules: String
-  var AutoDeleteOnIdle: String
-  var DefaultMessageTimeToLive: String
-  var DuplicateDetectionHistoryTimeWindow: Duration
-  var EnableBatchedOperations: String
-  var EnableExpress: String
-  var EnablePartitioning: String
-  var EntityAvailabilityStatus: String
-  var IsAnonymousAccessible: String
-  var MaxSizeInMegabytes: String
-  var RequiresDuplicateDetection: String
-  var SizeInBytes: String
-  var Status: EntityStatus
-  var UpdatedAt: DateString
+  var AuthorizationRules: String = js.native
+  var AutoDeleteOnIdle: String = js.native
+  var DefaultMessageTimeToLive: String = js.native
+  var DuplicateDetectionHistoryTimeWindow: Duration = js.native
+  var EnableBatchedOperations: String = js.native
+  var EnableExpress: String = js.native
+  var EnablePartitioning: String = js.native
+  var EntityAvailabilityStatus: String = js.native
+  var IsAnonymousAccessible: String = js.native
+  var MaxSizeInMegabytes: String = js.native
+  var RequiresDuplicateDetection: String = js.native
+  var SizeInBytes: String = js.native
+  var Status: EntityStatus = js.native
+  var UpdatedAt: DateString = js.native
 }
 
 object ExtendedBase {
@@ -48,5 +49,46 @@ object ExtendedBase {
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedBase]
   }
+  @scala.inline
+  implicit class ExtendedBaseOps[Self <: ExtendedBase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizationRules(value: String): Self = this.set("AuthorizationRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoDeleteOnIdle(value: String): Self = this.set("AutoDeleteOnIdle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultMessageTimeToLive(value: String): Self = this.set("DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDuplicateDetectionHistoryTimeWindow(value: Duration): Self = this.set("DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnableBatchedOperations(value: String): Self = this.set("EnableBatchedOperations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnableExpress(value: String): Self = this.set("EnableExpress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnablePartitioning(value: String): Self = this.set("EnablePartitioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEntityAvailabilityStatus(value: String): Self = this.set("EntityAvailabilityStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsAnonymousAccessible(value: String): Self = this.set("IsAnonymousAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxSizeInMegabytes(value: String): Self = this.set("MaxSizeInMegabytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequiresDuplicateDetection(value: String): Self = this.set("RequiresDuplicateDetection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSizeInBytes(value: String): Self = this.set("SizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: EntityStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedAt(value: DateString): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+  }
+  
 }
 

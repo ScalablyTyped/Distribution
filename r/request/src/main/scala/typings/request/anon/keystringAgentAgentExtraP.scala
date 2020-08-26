@@ -8,22 +8,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[key: string] : node.http.Agent | node.https.Agent} & request.request.ExtraPoolOptions */
+@js.native
 trait keystringAgentAgentExtraP
   extends /* key */ StringDictionary[Agent | typings.node.httpsMod.Agent]
      with PoolOptions {
-  var maxSockets: js.UndefOr[Double] = js.undefined
+  var maxSockets: js.UndefOr[Double] = js.native
 }
 
 object keystringAgentAgentExtraP {
   @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[Agent | typings.node.httpsMod.Agent] = null,
-    maxSockets: js.UndefOr[Double] = js.undefined
-  ): keystringAgentAgentExtraP = {
+  def apply(): keystringAgentAgentExtraP = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(maxSockets)) __obj.updateDynamic("maxSockets")(maxSockets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[keystringAgentAgentExtraP]
   }
+  @scala.inline
+  implicit class keystringAgentAgentExtraPOps[Self <: keystringAgentAgentExtraP] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxSockets(value: Double): Self = this.set("maxSockets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSockets: Self = this.set("maxSockets", js.undefined)
+  }
+  
 }
 

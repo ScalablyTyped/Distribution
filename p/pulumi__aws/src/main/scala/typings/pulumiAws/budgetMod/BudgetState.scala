@@ -21,7 +21,7 @@ trait BudgetState extends js.Object {
   /**
     * Map of CostFilters key/value pairs to apply to the budget.
     */
-  val costFilters: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val costFilters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
     */
@@ -62,34 +62,72 @@ trait BudgetState extends js.Object {
 
 object BudgetState {
   @scala.inline
-  def apply(
-    accountId: Input[String] = null,
-    budgetType: Input[String] = null,
-    costFilters: Input[StringDictionary[_]] = null,
-    costTypes: Input[BudgetCostTypes] = null,
-    limitAmount: Input[String] = null,
-    limitUnit: Input[String] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    notifications: Input[js.Array[Input[BudgetNotification]]] = null,
-    timePeriodEnd: Input[String] = null,
-    timePeriodStart: Input[String] = null,
-    timeUnit: Input[String] = null
-  ): BudgetState = {
+  def apply(): BudgetState = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (budgetType != null) __obj.updateDynamic("budgetType")(budgetType.asInstanceOf[js.Any])
-    if (costFilters != null) __obj.updateDynamic("costFilters")(costFilters.asInstanceOf[js.Any])
-    if (costTypes != null) __obj.updateDynamic("costTypes")(costTypes.asInstanceOf[js.Any])
-    if (limitAmount != null) __obj.updateDynamic("limitAmount")(limitAmount.asInstanceOf[js.Any])
-    if (limitUnit != null) __obj.updateDynamic("limitUnit")(limitUnit.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (notifications != null) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
-    if (timePeriodEnd != null) __obj.updateDynamic("timePeriodEnd")(timePeriodEnd.asInstanceOf[js.Any])
-    if (timePeriodStart != null) __obj.updateDynamic("timePeriodStart")(timePeriodStart.asInstanceOf[js.Any])
-    if (timeUnit != null) __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[BudgetState]
   }
+  @scala.inline
+  implicit class BudgetStateOps[Self <: BudgetState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: Input[String]): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setBudgetType(value: Input[String]): Self = this.set("budgetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBudgetType: Self = this.set("budgetType", js.undefined)
+    @scala.inline
+    def setCostFilters(value: Input[StringDictionary[Input[String]]]): Self = this.set("costFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCostFilters: Self = this.set("costFilters", js.undefined)
+    @scala.inline
+    def setCostTypes(value: Input[BudgetCostTypes]): Self = this.set("costTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCostTypes: Self = this.set("costTypes", js.undefined)
+    @scala.inline
+    def setLimitAmount(value: Input[String]): Self = this.set("limitAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitAmount: Self = this.set("limitAmount", js.undefined)
+    @scala.inline
+    def setLimitUnit(value: Input[String]): Self = this.set("limitUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitUnit: Self = this.set("limitUnit", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setNotificationsVarargs(value: Input[BudgetNotification]*): Self = this.set("notifications", js.Array(value :_*))
+    @scala.inline
+    def setNotifications(value: Input[js.Array[Input[BudgetNotification]]]): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifications: Self = this.set("notifications", js.undefined)
+    @scala.inline
+    def setTimePeriodEnd(value: Input[String]): Self = this.set("timePeriodEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePeriodEnd: Self = this.set("timePeriodEnd", js.undefined)
+    @scala.inline
+    def setTimePeriodStart(value: Input[String]): Self = this.set("timePeriodStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePeriodStart: Self = this.set("timePeriodStart", js.undefined)
+    @scala.inline
+    def setTimeUnit(value: Input[String]): Self = this.set("timeUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeUnit: Self = this.set("timeUnit", js.undefined)
+  }
+  
 }
 

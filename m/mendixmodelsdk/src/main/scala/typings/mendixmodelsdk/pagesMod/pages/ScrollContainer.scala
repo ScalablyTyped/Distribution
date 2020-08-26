@@ -30,33 +30,25 @@ class ScrollContainer protected () extends Widget {
   @JSName("model")
   var model_FScrollContainer: IModel = js.native
   def alignment: AlignmentEnum = js.native
-  def alignment(newValue: AlignmentEnum): js.Any = js.native
-  def bottom(): js.Any = js.native
-  def bottom(newValue: ScrollContainerRegion): js.Any = js.native
-  @JSName("bottom")
-  def bottom_Union: ScrollContainerRegion | Null = js.native
+  def alignment_=(newValue: AlignmentEnum): Unit = js.native
+  def bottom: ScrollContainerRegion | Null = js.native
+  def bottom_=(newValue: ScrollContainerRegion | Null): Unit = js.native
   def center: ScrollContainerRegion = js.native
-  def center(newValue: ScrollContainerRegion): js.Any = js.native
+  def center_=(newValue: ScrollContainerRegion): Unit = js.native
   def layoutMode: LayoutModeType = js.native
-  def layoutMode(newValue: LayoutModeType): js.Any = js.native
-  def left(): js.Any = js.native
-  def left(newValue: ScrollContainerRegion): js.Any = js.native
-  @JSName("left")
-  def left_Union: ScrollContainerRegion | Null = js.native
-  def right(): js.Any = js.native
-  def right(newValue: ScrollContainerRegion): js.Any = js.native
-  @JSName("right")
-  def right_Union: ScrollContainerRegion | Null = js.native
+  def layoutMode_=(newValue: LayoutModeType): Unit = js.native
+  def left: ScrollContainerRegion | Null = js.native
+  def left_=(newValue: ScrollContainerRegion | Null): Unit = js.native
+  def right: ScrollContainerRegion | Null = js.native
+  def right_=(newValue: ScrollContainerRegion | Null): Unit = js.native
   def scrollBehavior: ScrollBehavior = js.native
-  def scrollBehavior(newValue: ScrollBehavior): js.Any = js.native
-  def top(): js.Any = js.native
-  def top(newValue: ScrollContainerRegion): js.Any = js.native
-  @JSName("top")
-  def top_Union: ScrollContainerRegion | Null = js.native
+  def scrollBehavior_=(newValue: ScrollBehavior): Unit = js.native
+  def top: ScrollContainerRegion | Null = js.native
+  def top_=(newValue: ScrollContainerRegion | Null): Unit = js.native
   def width: Double = js.native
-  def width(newValue: Double): js.Any = js.native
   def widthMode: SizeMode = js.native
-  def widthMode(newValue: SizeMode): js.Any = js.native
+  def widthMode_=(newValue: SizeMode): Unit = js.native
+  def width_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

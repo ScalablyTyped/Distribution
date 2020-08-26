@@ -1,11 +1,11 @@
 package typings.actionsOnGoogle.actionssdkActionssdkMod
 
 import typings.actionsOnGoogle.conversationConversationMod.ConversationAppOptions
-import typings.actionsOnGoogle.conversationConversationMod.ConversationOptionsInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionsSdkOptions[TConvData, TUserStorage] extends ConversationAppOptions[TConvData, TUserStorage] {
   /**
     * Validates whether request is from Google through signature verification.
@@ -22,25 +22,31 @@ trait ActionsSdkOptions[TConvData, TUserStorage] extends ConversationAppOptions[
     *
     * @public
     */
-  var verification: js.UndefOr[ActionsSdkVerification | String] = js.undefined
+  var verification: js.UndefOr[ActionsSdkVerification | String] = js.native
 }
 
 object ActionsSdkOptions {
   @scala.inline
-  def apply[TConvData, TUserStorage](
-    clientId: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    init: () => ConversationOptionsInit[TConvData, TUserStorage] = null,
-    ordersv3: js.UndefOr[Boolean] = js.undefined,
-    verification: ActionsSdkVerification | String = null
-  ): ActionsSdkOptions[TConvData, TUserStorage] = {
+  def apply[TConvData, TUserStorage](): ActionsSdkOptions[TConvData, TUserStorage] = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
-    if (!js.isUndefined(ordersv3)) __obj.updateDynamic("ordersv3")(ordersv3.get.asInstanceOf[js.Any])
-    if (verification != null) __obj.updateDynamic("verification")(verification.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsSdkOptions[TConvData, TUserStorage]]
   }
+  @scala.inline
+  implicit class ActionsSdkOptionsOps[Self <: ActionsSdkOptions[_, _], TConvData, TUserStorage] (val x: Self with (ActionsSdkOptions[TConvData, TUserStorage])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVerification(value: ActionsSdkVerification | String): Self = this.set("verification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerification: Self = this.set("verification", js.undefined)
+  }
+  
 }
 

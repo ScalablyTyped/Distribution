@@ -39,7 +39,7 @@ trait ConfigRule extends js.Object {
     */
   var MaximumExecutionFrequency: js.UndefOr[typings.awsSdk.configserviceMod.MaximumExecutionFrequency] = js.native
   /**
-    * Defines which resources can trigger an evaluation for the rule. The scope can include one or more resource types, a combination of one resource type and one resource ID, or a combination of a tag key and value. Specify a scope to constrain the resources that can trigger an evaluation for the rule. If you do not specify a scope, evaluations are triggered when any resource in the recording group changes.
+    * Defines which resources can trigger an evaluation for the rule. The scope can include one or more resource types, a combination of one resource type and one resource ID, or a combination of a tag key and value. Specify a scope to constrain the resources that can trigger an evaluation for the rule. If you do not specify a scope, evaluations are triggered when any resource in the recording group changes.  The scope can be empty.  
     */
   var Scope: js.UndefOr[typings.awsSdk.configserviceMod.Scope] = js.native
   /**
@@ -50,29 +50,60 @@ trait ConfigRule extends js.Object {
 
 object ConfigRule {
   @scala.inline
-  def apply(
-    Source: Source,
-    ConfigRuleArn: StringWithCharLimit256 = null,
-    ConfigRuleId: StringWithCharLimit64 = null,
-    ConfigRuleName: ConfigRuleName = null,
-    ConfigRuleState: ConfigRuleState = null,
-    CreatedBy: StringWithCharLimit256 = null,
-    Description: EmptiableStringWithCharLimit256 = null,
-    InputParameters: StringWithCharLimit1024 = null,
-    MaximumExecutionFrequency: MaximumExecutionFrequency = null,
-    Scope: Scope = null
-  ): ConfigRule = {
+  def apply(Source: Source): ConfigRule = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any])
-    if (ConfigRuleArn != null) __obj.updateDynamic("ConfigRuleArn")(ConfigRuleArn.asInstanceOf[js.Any])
-    if (ConfigRuleId != null) __obj.updateDynamic("ConfigRuleId")(ConfigRuleId.asInstanceOf[js.Any])
-    if (ConfigRuleName != null) __obj.updateDynamic("ConfigRuleName")(ConfigRuleName.asInstanceOf[js.Any])
-    if (ConfigRuleState != null) __obj.updateDynamic("ConfigRuleState")(ConfigRuleState.asInstanceOf[js.Any])
-    if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (InputParameters != null) __obj.updateDynamic("InputParameters")(InputParameters.asInstanceOf[js.Any])
-    if (MaximumExecutionFrequency != null) __obj.updateDynamic("MaximumExecutionFrequency")(MaximumExecutionFrequency.asInstanceOf[js.Any])
-    if (Scope != null) __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigRule]
   }
+  @scala.inline
+  implicit class ConfigRuleOps[Self <: ConfigRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSource(value: Source): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigRuleArn(value: StringWithCharLimit256): Self = this.set("ConfigRuleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleArn: Self = this.set("ConfigRuleArn", js.undefined)
+    @scala.inline
+    def setConfigRuleId(value: StringWithCharLimit64): Self = this.set("ConfigRuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleId: Self = this.set("ConfigRuleId", js.undefined)
+    @scala.inline
+    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleName: Self = this.set("ConfigRuleName", js.undefined)
+    @scala.inline
+    def setConfigRuleState(value: ConfigRuleState): Self = this.set("ConfigRuleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleState: Self = this.set("ConfigRuleState", js.undefined)
+    @scala.inline
+    def setCreatedBy(value: StringWithCharLimit256): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    @scala.inline
+    def setDescription(value: EmptiableStringWithCharLimit256): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setInputParameters(value: StringWithCharLimit1024): Self = this.set("InputParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputParameters: Self = this.set("InputParameters", js.undefined)
+    @scala.inline
+    def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = this.set("MaximumExecutionFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumExecutionFrequency: Self = this.set("MaximumExecutionFrequency", js.undefined)
+    @scala.inline
+    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("Scope", js.undefined)
+  }
+  
 }
 

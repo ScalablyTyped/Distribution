@@ -10,9 +10,9 @@ Simple UDP based protocol for service discovery implemented in pure JS.
 | ------------------ | :-------------: |
 | Full name          | @ionic/discover |
 | Keywords           | - |
-| # releases         | 104 |
+| # releases         | 98 |
 | # dependents       | 1 |
-| # downloads        | 2748686 |
+| # downloads        | 2751059 |
 | # stars            | 0 |
 
 ## Links

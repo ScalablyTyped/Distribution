@@ -27,7 +27,34 @@ object browserPollConnectionMod extends js.Object {
       */
     def this(connId: String, repoInfo: RepoInfo) = this()
     def this(connId: String, repoInfo: RepoInfo, applicationId: String) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: js.UndefOr[scala.Nothing],
+      transportSessionId: String
+    ) = this()
     def this(connId: String, repoInfo: RepoInfo, applicationId: String, transportSessionId: String) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: js.UndefOr[scala.Nothing],
+      transportSessionId: js.UndefOr[scala.Nothing],
+      lastSessionId: String
+    ) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: js.UndefOr[scala.Nothing],
+      transportSessionId: String,
+      lastSessionId: String
+    ) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: String,
+      transportSessionId: js.UndefOr[scala.Nothing],
+      lastSessionId: String
+    ) = this()
     def this(
       connId: String,
       repoInfo: RepoInfo,
@@ -35,7 +62,7 @@ object browserPollConnectionMod extends js.Object {
       transportSessionId: String,
       lastSessionId: String
     ) = this()
-    var applicationId: js.UndefOr[js.Any] = js.native
+    var applicationId: js.Any = js.native
     var connectTimeoutTimer_ : js.Any = js.native
     var curSegmentNum: Double = js.native
     var everConnected_ : js.Any = js.native

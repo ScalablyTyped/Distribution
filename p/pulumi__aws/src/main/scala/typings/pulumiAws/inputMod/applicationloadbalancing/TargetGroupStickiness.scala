@@ -23,12 +23,33 @@ trait TargetGroupStickiness extends js.Object {
 
 object TargetGroupStickiness {
   @scala.inline
-  def apply(`type`: Input[String], cookieDuration: Input[Double] = null, enabled: Input[Boolean] = null): TargetGroupStickiness = {
+  def apply(`type`: Input[String]): TargetGroupStickiness = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (cookieDuration != null) __obj.updateDynamic("cookieDuration")(cookieDuration.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetGroupStickiness]
   }
+  @scala.inline
+  implicit class TargetGroupStickinessOps[Self <: TargetGroupStickiness] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCookieDuration(value: Input[Double]): Self = this.set("cookieDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieDuration: Self = this.set("cookieDuration", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+  }
+  
 }
 

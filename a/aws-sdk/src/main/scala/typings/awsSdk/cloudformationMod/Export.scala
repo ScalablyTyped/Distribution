@@ -22,12 +22,34 @@ trait Export extends js.Object {
 
 object Export {
   @scala.inline
-  def apply(ExportingStackId: StackId = null, Name: ExportName = null, Value: ExportValue = null): Export = {
+  def apply(): Export = {
     val __obj = js.Dynamic.literal()
-    if (ExportingStackId != null) __obj.updateDynamic("ExportingStackId")(ExportingStackId.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Export]
   }
+  @scala.inline
+  implicit class ExportOps[Self <: Export] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportingStackId(value: StackId): Self = this.set("ExportingStackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportingStackId: Self = this.set("ExportingStackId", js.undefined)
+    @scala.inline
+    def setName(value: ExportName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setValue(value: ExportValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+  }
+  
 }
 

@@ -19,7 +19,26 @@ object actionsMod extends js.Object {
   def exitFormattedText(): Unit = js.native
   def hideInsertionPoint(): Unit = js.native
   def insertBlock(block: BlockInstance[StringDictionary[_]]): Unit = js.native
+  def insertBlock(
+    block: BlockInstance[StringDictionary[_]],
+    index: js.UndefOr[scala.Nothing],
+    rootClientId: js.UndefOr[scala.Nothing],
+    updateSelection: Boolean
+  ): Unit = js.native
+  def insertBlock(block: BlockInstance[StringDictionary[_]], index: js.UndefOr[scala.Nothing], rootClientId: String): Unit = js.native
+  def insertBlock(
+    block: BlockInstance[StringDictionary[_]],
+    index: js.UndefOr[scala.Nothing],
+    rootClientId: String,
+    updateSelection: Boolean
+  ): Unit = js.native
   def insertBlock(block: BlockInstance[StringDictionary[_]], index: Double): Unit = js.native
+  def insertBlock(
+    block: BlockInstance[StringDictionary[_]],
+    index: Double,
+    rootClientId: js.UndefOr[scala.Nothing],
+    updateSelection: Boolean
+  ): Unit = js.native
   def insertBlock(block: BlockInstance[StringDictionary[_]], index: Double, rootClientId: String): Unit = js.native
   def insertBlock(
     block: BlockInstance[StringDictionary[_]],
@@ -28,7 +47,30 @@ object actionsMod extends js.Object {
     updateSelection: Boolean
   ): Unit = js.native
   def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]]): IterableIterator[Unit] = js.native
+  def insertBlocks(
+    blocks: js.Array[BlockInstance[StringDictionary[_]]],
+    index: js.UndefOr[scala.Nothing],
+    rootClientId: js.UndefOr[scala.Nothing],
+    updateSelection: Boolean
+  ): IterableIterator[Unit] = js.native
+  def insertBlocks(
+    blocks: js.Array[BlockInstance[StringDictionary[_]]],
+    index: js.UndefOr[scala.Nothing],
+    rootClientId: String
+  ): IterableIterator[Unit] = js.native
+  def insertBlocks(
+    blocks: js.Array[BlockInstance[StringDictionary[_]]],
+    index: js.UndefOr[scala.Nothing],
+    rootClientId: String,
+    updateSelection: Boolean
+  ): IterableIterator[Unit] = js.native
   def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]], index: Double): IterableIterator[Unit] = js.native
+  def insertBlocks(
+    blocks: js.Array[BlockInstance[StringDictionary[_]]],
+    index: Double,
+    rootClientId: js.UndefOr[scala.Nothing],
+    updateSelection: Boolean
+  ): IterableIterator[Unit] = js.native
   def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[_]]], index: Double, rootClientId: String): IterableIterator[Unit] = js.native
   def insertBlocks(
     blocks: js.Array[BlockInstance[StringDictionary[_]]],
@@ -37,16 +79,57 @@ object actionsMod extends js.Object {
     updateSelection: Boolean
   ): IterableIterator[Unit] = js.native
   def insertDefaultBlock(): Unit = js.native
+  def insertDefaultBlock(attributes: js.UndefOr[scala.Nothing], rootClientId: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
+  def insertDefaultBlock(attributes: js.UndefOr[scala.Nothing], rootClientId: String): Unit = js.native
+  def insertDefaultBlock(attributes: js.UndefOr[scala.Nothing], rootClientId: String, index: Double): Unit = js.native
   def insertDefaultBlock(attributes: Record[String, _]): Unit = js.native
+  def insertDefaultBlock(attributes: Record[String, _], rootClientId: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def insertDefaultBlock(attributes: Record[String, _], rootClientId: String): Unit = js.native
   def insertDefaultBlock(attributes: Record[String, _], rootClientId: String, index: Double): Unit = js.native
   def mergeBlocks(firstBlockClientId: String, secondBlockClientId: String): Unit = js.native
   def moveBlockToPosition(
-    clientId: js.UndefOr[String],
-    fromRootClientId: js.UndefOr[String],
-    toRootClientId: js.UndefOr[String],
+    clientId: js.UndefOr[scala.Nothing],
+    fromRootClientId: js.UndefOr[scala.Nothing],
+    toRootClientId: js.UndefOr[scala.Nothing],
     index: Double
   ): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(
+    clientId: js.UndefOr[scala.Nothing],
+    fromRootClientId: js.UndefOr[scala.Nothing],
+    toRootClientId: String,
+    index: Double
+  ): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(
+    clientId: js.UndefOr[scala.Nothing],
+    fromRootClientId: String,
+    toRootClientId: js.UndefOr[scala.Nothing],
+    index: Double
+  ): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(
+    clientId: js.UndefOr[scala.Nothing],
+    fromRootClientId: String,
+    toRootClientId: String,
+    index: Double
+  ): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(
+    clientId: String,
+    fromRootClientId: js.UndefOr[scala.Nothing],
+    toRootClientId: js.UndefOr[scala.Nothing],
+    index: Double
+  ): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(
+    clientId: String,
+    fromRootClientId: js.UndefOr[scala.Nothing],
+    toRootClientId: String,
+    index: Double
+  ): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(
+    clientId: String,
+    fromRootClientId: String,
+    toRootClientId: js.UndefOr[scala.Nothing],
+    index: Double
+  ): IterableIterator[Unit] = js.native
+  def moveBlockToPosition(clientId: String, fromRootClientId: String, toRootClientId: String, index: Double): IterableIterator[Unit] = js.native
   def moveBlocksDown(clientIds: String, rootClientId: String): Unit = js.native
   def moveBlocksDown(clientIds: js.Array[String], rootClientId: String): Unit = js.native
   def moveBlocksUp(clientIds: String, rootClientId: String): Unit = js.native
@@ -89,6 +172,7 @@ object actionsMod extends js.Object {
   def selectionChange(clientId: String, attributeKey: String, startOffset: Double, endOffset: Double): Unit = js.native
   def setTemplateValidity(isValid: Boolean): Unit = js.native
   def showInsertionPoint(): Unit = js.native
+  def showInsertionPoint(rootClientId: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def showInsertionPoint(rootClientId: String): Unit = js.native
   def showInsertionPoint(rootClientId: String, index: Double): Unit = js.native
   def startMultiSelect(): Unit = js.native

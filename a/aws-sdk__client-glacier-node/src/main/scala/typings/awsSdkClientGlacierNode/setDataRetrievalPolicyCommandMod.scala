@@ -26,16 +26,9 @@ object setDataRetrievalPolicyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: SetDataRetrievalPolicyInput) = this()
-    /* CompleteClass */
-    override val input: SetDataRetrievalPolicyInput = js.native
     val middlewareStack: MiddlewareStack[SetDataRetrievalPolicyInput, SetDataRetrievalPolicyOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[SetDataRetrievalPolicyInput, SetDataRetrievalPolicyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[SetDataRetrievalPolicyInput, SetDataRetrievalPolicyOutput] = js.native
   }

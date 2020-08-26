@@ -8,54 +8,105 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConverterGlobals extends js.Object {
-  var converter: js.UndefOr[Converter] = js.undefined
-  var gDimensions: js.UndefOr[Height] = js.undefined
-  var gHtmlBlocks: js.UndefOr[js.Array[String]] = js.undefined
-  var gHtmlMdBlocks: js.UndefOr[js.Array[String]] = js.undefined
-  var gHtmlSpans: js.UndefOr[js.Array[String]] = js.undefined
-  var gListLevel: js.UndefOr[Double] = js.undefined
-  var gTitles: js.UndefOr[StringDictionary[String]] = js.undefined
-  var gUrls: js.UndefOr[StringDictionary[String]] = js.undefined
-  var ghCodeBlocks: js.UndefOr[js.Array[Codeblock]] = js.undefined
-  var hashLinkCounts: js.UndefOr[StringDictionary[Double]] = js.undefined
-  var langExtensions: js.UndefOr[js.Array[ShowdownExtension]] = js.undefined
-  var metadata: js.UndefOr[Format] = js.undefined
-  var outputModifiers: js.UndefOr[js.Array[ShowdownExtension]] = js.undefined
+  var converter: js.UndefOr[Converter] = js.native
+  var gDimensions: js.UndefOr[Height] = js.native
+  var gHtmlBlocks: js.UndefOr[js.Array[String]] = js.native
+  var gHtmlMdBlocks: js.UndefOr[js.Array[String]] = js.native
+  var gHtmlSpans: js.UndefOr[js.Array[String]] = js.native
+  var gListLevel: js.UndefOr[Double] = js.native
+  var gTitles: js.UndefOr[StringDictionary[String]] = js.native
+  var gUrls: js.UndefOr[StringDictionary[String]] = js.native
+  var ghCodeBlocks: js.UndefOr[js.Array[Codeblock]] = js.native
+  var hashLinkCounts: js.UndefOr[StringDictionary[Double]] = js.native
+  var langExtensions: js.UndefOr[js.Array[ShowdownExtension]] = js.native
+  var metadata: js.UndefOr[Format] = js.native
+  var outputModifiers: js.UndefOr[js.Array[ShowdownExtension]] = js.native
 }
 
 object ConverterGlobals {
   @scala.inline
-  def apply(
-    converter: Converter = null,
-    gDimensions: Height = null,
-    gHtmlBlocks: js.Array[String] = null,
-    gHtmlMdBlocks: js.Array[String] = null,
-    gHtmlSpans: js.Array[String] = null,
-    gListLevel: js.UndefOr[Double] = js.undefined,
-    gTitles: StringDictionary[String] = null,
-    gUrls: StringDictionary[String] = null,
-    ghCodeBlocks: js.Array[Codeblock] = null,
-    hashLinkCounts: StringDictionary[Double] = null,
-    langExtensions: js.Array[ShowdownExtension] = null,
-    metadata: Format = null,
-    outputModifiers: js.Array[ShowdownExtension] = null
-  ): ConverterGlobals = {
+  def apply(): ConverterGlobals = {
     val __obj = js.Dynamic.literal()
-    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
-    if (gDimensions != null) __obj.updateDynamic("gDimensions")(gDimensions.asInstanceOf[js.Any])
-    if (gHtmlBlocks != null) __obj.updateDynamic("gHtmlBlocks")(gHtmlBlocks.asInstanceOf[js.Any])
-    if (gHtmlMdBlocks != null) __obj.updateDynamic("gHtmlMdBlocks")(gHtmlMdBlocks.asInstanceOf[js.Any])
-    if (gHtmlSpans != null) __obj.updateDynamic("gHtmlSpans")(gHtmlSpans.asInstanceOf[js.Any])
-    if (!js.isUndefined(gListLevel)) __obj.updateDynamic("gListLevel")(gListLevel.get.asInstanceOf[js.Any])
-    if (gTitles != null) __obj.updateDynamic("gTitles")(gTitles.asInstanceOf[js.Any])
-    if (gUrls != null) __obj.updateDynamic("gUrls")(gUrls.asInstanceOf[js.Any])
-    if (ghCodeBlocks != null) __obj.updateDynamic("ghCodeBlocks")(ghCodeBlocks.asInstanceOf[js.Any])
-    if (hashLinkCounts != null) __obj.updateDynamic("hashLinkCounts")(hashLinkCounts.asInstanceOf[js.Any])
-    if (langExtensions != null) __obj.updateDynamic("langExtensions")(langExtensions.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (outputModifiers != null) __obj.updateDynamic("outputModifiers")(outputModifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConverterGlobals]
   }
+  @scala.inline
+  implicit class ConverterGlobalsOps[Self <: ConverterGlobals] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConverter(value: Converter): Self = this.set("converter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConverter: Self = this.set("converter", js.undefined)
+    @scala.inline
+    def setGDimensions(value: Height): Self = this.set("gDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGDimensions: Self = this.set("gDimensions", js.undefined)
+    @scala.inline
+    def setGHtmlBlocksVarargs(value: String*): Self = this.set("gHtmlBlocks", js.Array(value :_*))
+    @scala.inline
+    def setGHtmlBlocks(value: js.Array[String]): Self = this.set("gHtmlBlocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGHtmlBlocks: Self = this.set("gHtmlBlocks", js.undefined)
+    @scala.inline
+    def setGHtmlMdBlocksVarargs(value: String*): Self = this.set("gHtmlMdBlocks", js.Array(value :_*))
+    @scala.inline
+    def setGHtmlMdBlocks(value: js.Array[String]): Self = this.set("gHtmlMdBlocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGHtmlMdBlocks: Self = this.set("gHtmlMdBlocks", js.undefined)
+    @scala.inline
+    def setGHtmlSpansVarargs(value: String*): Self = this.set("gHtmlSpans", js.Array(value :_*))
+    @scala.inline
+    def setGHtmlSpans(value: js.Array[String]): Self = this.set("gHtmlSpans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGHtmlSpans: Self = this.set("gHtmlSpans", js.undefined)
+    @scala.inline
+    def setGListLevel(value: Double): Self = this.set("gListLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGListLevel: Self = this.set("gListLevel", js.undefined)
+    @scala.inline
+    def setGTitles(value: StringDictionary[String]): Self = this.set("gTitles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGTitles: Self = this.set("gTitles", js.undefined)
+    @scala.inline
+    def setGUrls(value: StringDictionary[String]): Self = this.set("gUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGUrls: Self = this.set("gUrls", js.undefined)
+    @scala.inline
+    def setGhCodeBlocksVarargs(value: Codeblock*): Self = this.set("ghCodeBlocks", js.Array(value :_*))
+    @scala.inline
+    def setGhCodeBlocks(value: js.Array[Codeblock]): Self = this.set("ghCodeBlocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGhCodeBlocks: Self = this.set("ghCodeBlocks", js.undefined)
+    @scala.inline
+    def setHashLinkCounts(value: StringDictionary[Double]): Self = this.set("hashLinkCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashLinkCounts: Self = this.set("hashLinkCounts", js.undefined)
+    @scala.inline
+    def setLangExtensionsVarargs(value: ShowdownExtension*): Self = this.set("langExtensions", js.Array(value :_*))
+    @scala.inline
+    def setLangExtensions(value: js.Array[ShowdownExtension]): Self = this.set("langExtensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLangExtensions: Self = this.set("langExtensions", js.undefined)
+    @scala.inline
+    def setMetadata(value: Format): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setOutputModifiersVarargs(value: ShowdownExtension*): Self = this.set("outputModifiers", js.Array(value :_*))
+    @scala.inline
+    def setOutputModifiers(value: js.Array[ShowdownExtension]): Self = this.set("outputModifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputModifiers: Self = this.set("outputModifiers", js.undefined)
+  }
+  
 }
 

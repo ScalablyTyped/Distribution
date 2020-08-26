@@ -13,9 +13,8 @@ object _InheritedColorProp {
     __obj.asInstanceOf[_InheritedColorProp[D]]
   }
   @scala.inline
-  def From[D](from: String, modifiers: js.Array[ColorModifier] = null): _InheritedColorProp[D] = {
+  def From[D](from: String): _InheritedColorProp[D] = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[_InheritedColorProp[D]]
   }
 }

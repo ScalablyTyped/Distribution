@@ -12,8 +12,66 @@ class FunctionBreakpoint protected () extends Breakpoint {
     */
   def this(functionName: String) = this()
   def this(functionName: String, enabled: Boolean) = this()
+  def this(functionName: String, enabled: js.UndefOr[scala.Nothing], condition: String) = this()
   def this(functionName: String, enabled: Boolean, condition: String) = this()
+  def this(
+    functionName: String,
+    enabled: js.UndefOr[scala.Nothing],
+    condition: js.UndefOr[scala.Nothing],
+    hitCondition: String
+  ) = this()
+  def this(functionName: String, enabled: js.UndefOr[scala.Nothing], condition: String, hitCondition: String) = this()
+  def this(functionName: String, enabled: Boolean, condition: js.UndefOr[scala.Nothing], hitCondition: String) = this()
   def this(functionName: String, enabled: Boolean, condition: String, hitCondition: String) = this()
+  def this(
+    functionName: String,
+    enabled: js.UndefOr[scala.Nothing],
+    condition: js.UndefOr[scala.Nothing],
+    hitCondition: js.UndefOr[scala.Nothing],
+    logMessage: String
+  ) = this()
+  def this(
+    functionName: String,
+    enabled: js.UndefOr[scala.Nothing],
+    condition: js.UndefOr[scala.Nothing],
+    hitCondition: String,
+    logMessage: String
+  ) = this()
+  def this(
+    functionName: String,
+    enabled: js.UndefOr[scala.Nothing],
+    condition: String,
+    hitCondition: js.UndefOr[scala.Nothing],
+    logMessage: String
+  ) = this()
+  def this(
+    functionName: String,
+    enabled: js.UndefOr[scala.Nothing],
+    condition: String,
+    hitCondition: String,
+    logMessage: String
+  ) = this()
+  def this(
+    functionName: String,
+    enabled: Boolean,
+    condition: js.UndefOr[scala.Nothing],
+    hitCondition: js.UndefOr[scala.Nothing],
+    logMessage: String
+  ) = this()
+  def this(
+    functionName: String,
+    enabled: Boolean,
+    condition: js.UndefOr[scala.Nothing],
+    hitCondition: String,
+    logMessage: String
+  ) = this()
+  def this(
+    functionName: String,
+    enabled: Boolean,
+    condition: String,
+    hitCondition: js.UndefOr[scala.Nothing],
+    logMessage: String
+  ) = this()
   def this(
     functionName: String,
     enabled: Boolean,

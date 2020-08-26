@@ -17,24 +17,50 @@ trait ByteSize extends js.Object {
 
 object ByteSize {
   @scala.inline
-  def apply(
-    byteSize: js.UndefOr[Double] = js.undefined,
-    contextLink: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    thumbnailHeight: js.UndefOr[Double] = js.undefined,
-    thumbnailLink: String = null,
-    thumbnailWidth: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): ByteSize = {
+  def apply(): ByteSize = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(byteSize)) __obj.updateDynamic("byteSize")(byteSize.get.asInstanceOf[js.Any])
-    if (contextLink != null) __obj.updateDynamic("contextLink")(contextLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbnailHeight)) __obj.updateDynamic("thumbnailHeight")(thumbnailHeight.get.asInstanceOf[js.Any])
-    if (thumbnailLink != null) __obj.updateDynamic("thumbnailLink")(thumbnailLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbnailWidth)) __obj.updateDynamic("thumbnailWidth")(thumbnailWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByteSize]
   }
+  @scala.inline
+  implicit class ByteSizeOps[Self <: ByteSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setByteSize(value: Double): Self = this.set("byteSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByteSize: Self = this.set("byteSize", js.undefined)
+    @scala.inline
+    def setContextLink(value: String): Self = this.set("contextLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextLink: Self = this.set("contextLink", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setThumbnailHeight(value: Double): Self = this.set("thumbnailHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailHeight: Self = this.set("thumbnailHeight", js.undefined)
+    @scala.inline
+    def setThumbnailLink(value: String): Self = this.set("thumbnailLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailLink: Self = this.set("thumbnailLink", js.undefined)
+    @scala.inline
+    def setThumbnailWidth(value: Double): Self = this.set("thumbnailWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailWidth: Self = this.set("thumbnailWidth", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

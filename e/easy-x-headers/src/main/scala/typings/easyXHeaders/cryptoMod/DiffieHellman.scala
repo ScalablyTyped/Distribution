@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DiffieHellman extends js.Object {
   def computeSecret(other_public_key: String): String = js.native
+  def computeSecret(other_public_key: String, input_encoding: js.UndefOr[scala.Nothing], output_encoding: String): String = js.native
   def computeSecret(other_public_key: String, input_encoding: String): String = js.native
   def computeSecret(other_public_key: String, input_encoding: String, output_encoding: String): String = js.native
   def generateKeys(): String = js.native

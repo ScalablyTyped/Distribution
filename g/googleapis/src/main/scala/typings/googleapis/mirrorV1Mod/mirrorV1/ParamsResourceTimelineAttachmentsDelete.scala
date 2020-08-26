@@ -26,30 +26,34 @@ trait ParamsResourceTimelineAttachmentsDelete extends StandardParameters {
 
 object ParamsResourceTimelineAttachmentsDelete {
   @scala.inline
-  def apply(
-    alt: String = null,
-    attachmentId: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    fields: String = null,
-    itemId: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    userIp: String = null
-  ): ParamsResourceTimelineAttachmentsDelete = {
+  def apply(): ParamsResourceTimelineAttachmentsDelete = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceTimelineAttachmentsDelete]
   }
+  @scala.inline
+  implicit class ParamsResourceTimelineAttachmentsDeleteOps[Self <: ParamsResourceTimelineAttachmentsDelete] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentId(value: String): Self = this.set("attachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentId: Self = this.set("attachmentId", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setItemId(value: String): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemId: Self = this.set("itemId", js.undefined)
+  }
+  
 }
 

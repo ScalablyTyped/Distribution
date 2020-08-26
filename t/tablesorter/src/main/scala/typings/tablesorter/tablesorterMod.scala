@@ -174,6 +174,7 @@ object tablesorterMod extends js.Object {
       */
     def appendCache(config: TablesorterConfigurationStore[TElement]): Unit = js.native
     def applyWidget(table: TElement): Unit = js.native
+    def applyWidget(table: TElement, initialize: js.UndefOr[scala.Nothing], callback: TriggerCallbackHandler[TElement]): Unit = js.native
     def applyWidget(table: TElement, initialize: Boolean): Unit = js.native
     def applyWidget(table: TElement, initialize: Boolean, callback: TriggerCallbackHandler[TElement]): Unit = js.native
     /**
@@ -189,6 +190,11 @@ object tablesorterMod extends js.Object {
       * A callback for post-processing the table.
       */
     def applyWidget(table: JQuery[TElement]): Unit = js.native
+    def applyWidget(
+      table: JQuery[TElement],
+      initialize: js.UndefOr[scala.Nothing],
+      callback: TriggerCallbackHandler[TElement]
+    ): Unit = js.native
     def applyWidget(table: JQuery[TElement], initialize: Boolean): Unit = js.native
     def applyWidget(table: JQuery[TElement], initialize: Boolean, callback: TriggerCallbackHandler[TElement]): Unit = js.native
     def applyWidgetId(table: TElement, id: String): Unit = js.native
@@ -235,6 +241,11 @@ object tablesorterMod extends js.Object {
     def computeColumnIndex(rows: JQuery[HTMLElement]): Unit = js.native
     def computeColumnIndex(rows: JQuery[HTMLElement], config: TablesorterConfigurationStore[TElement]): Unit = js.native
     def destroy(table: TElement): Unit = js.native
+    def destroy(
+      table: TElement,
+      removeClasses: js.UndefOr[scala.Nothing],
+      callback: TriggerCallbackHandler[TElement]
+    ): Unit = js.native
     def destroy(table: TElement, removeClasses: Boolean): Unit = js.native
     def destroy(table: TElement, removeClasses: Boolean, callback: TriggerCallbackHandler[TElement]): Unit = js.native
     /**
@@ -250,6 +261,11 @@ object tablesorterMod extends js.Object {
       * A callback for post-processing the table.
       */
     def destroy(table: JQuery[TElement]): Unit = js.native
+    def destroy(
+      table: JQuery[TElement],
+      removeClasses: js.UndefOr[scala.Nothing],
+      callback: TriggerCallbackHandler[TElement]
+    ): Unit = js.native
     def destroy(table: JQuery[TElement], removeClasses: Boolean): Unit = js.native
     def destroy(table: JQuery[TElement], removeClasses: Boolean, callback: TriggerCallbackHandler[TElement]): Unit = js.native
     def fixColumnWidth(table: TElement): Unit = js.native
@@ -291,6 +307,25 @@ object tablesorterMod extends js.Object {
     def getColumnData[T](table: JQuery[TElement], `object`: MappedSettings[T], key: String): T = js.native
     def getColumnData[T](table: JQuery[TElement], `object`: MappedSettings[T], key: Double): T = js.native
     def getColumnText(table: TElement, column: Double): ParsedData = js.native
+    def getColumnText(
+      table: TElement,
+      column: Double,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: js.ThisFunction2[/* this */ HTMLElement, /* index */ Double, /* element */ HTMLElement, Boolean]
+    ): ParsedData = js.native
+    def getColumnText(table: TElement, column: Double, callback: js.UndefOr[scala.Nothing], rowFilter: Selector): ParsedData = js.native
+    def getColumnText(
+      table: TElement,
+      column: Double,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: TypeOrArray[Element]
+    ): ParsedData = js.native
+    def getColumnText(
+      table: TElement,
+      column: Double,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: JQuery[HTMLElement]
+    ): ParsedData = js.native
     def getColumnText(table: TElement, column: Double, callback: js.Function1[/* cell */ ParsedCell, Unit]): ParsedData = js.native
     def getColumnText(
       table: TElement,
@@ -335,6 +370,25 @@ object tablesorterMod extends js.Object {
       * The parsed data of the column.
       */
     def getColumnText(table: JQuery[TElement], column: Double): ParsedData = js.native
+    def getColumnText(
+      table: JQuery[TElement],
+      column: Double,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: js.ThisFunction2[/* this */ HTMLElement, /* index */ Double, /* element */ HTMLElement, Boolean]
+    ): ParsedData = js.native
+    def getColumnText(table: JQuery[TElement], column: Double, callback: js.UndefOr[scala.Nothing], rowFilter: Selector): ParsedData = js.native
+    def getColumnText(
+      table: JQuery[TElement],
+      column: Double,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: TypeOrArray[Element]
+    ): ParsedData = js.native
+    def getColumnText(
+      table: JQuery[TElement],
+      column: Double,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: JQuery[HTMLElement]
+    ): ParsedData = js.native
     def getColumnText(table: JQuery[TElement], column: Double, callback: js.Function1[/* cell */ ParsedCell, Unit]): ParsedData = js.native
     def getColumnText(
       table: JQuery[TElement],
@@ -362,6 +416,19 @@ object tablesorterMod extends js.Object {
     ): ParsedData = js.native
     @JSName("getColumnText")
     def getColumnText_all(table: TElement, column: all): ParsedData = js.native
+    @JSName("getColumnText")
+    def getColumnText_all(
+      table: TElement,
+      column: all,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: js.ThisFunction2[/* this */ HTMLElement, /* index */ Double, /* element */ HTMLElement, Boolean]
+    ): ParsedData = js.native
+    @JSName("getColumnText")
+    def getColumnText_all(table: TElement, column: all, callback: js.UndefOr[scala.Nothing], rowFilter: Selector): ParsedData = js.native
+    @JSName("getColumnText")
+    def getColumnText_all(table: TElement, column: all, callback: js.UndefOr[scala.Nothing], rowFilter: TypeOrArray[Element]): ParsedData = js.native
+    @JSName("getColumnText")
+    def getColumnText_all(table: TElement, column: all, callback: js.UndefOr[scala.Nothing], rowFilter: JQuery[HTMLElement]): ParsedData = js.native
     @JSName("getColumnText")
     def getColumnText_all(table: TElement, column: all, callback: js.Function1[/* cell */ ParsedCell, Unit]): ParsedData = js.native
     @JSName("getColumnText")
@@ -395,6 +462,29 @@ object tablesorterMod extends js.Object {
     @JSName("getColumnText")
     def getColumnText_all(table: JQuery[TElement], column: all): ParsedData = js.native
     @JSName("getColumnText")
+    def getColumnText_all(
+      table: JQuery[TElement],
+      column: all,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: js.ThisFunction2[/* this */ HTMLElement, /* index */ Double, /* element */ HTMLElement, Boolean]
+    ): ParsedData = js.native
+    @JSName("getColumnText")
+    def getColumnText_all(table: JQuery[TElement], column: all, callback: js.UndefOr[scala.Nothing], rowFilter: Selector): ParsedData = js.native
+    @JSName("getColumnText")
+    def getColumnText_all(
+      table: JQuery[TElement],
+      column: all,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: TypeOrArray[Element]
+    ): ParsedData = js.native
+    @JSName("getColumnText")
+    def getColumnText_all(
+      table: JQuery[TElement],
+      column: all,
+      callback: js.UndefOr[scala.Nothing],
+      rowFilter: JQuery[HTMLElement]
+    ): ParsedData = js.native
+    @JSName("getColumnText")
     def getColumnText_all(table: JQuery[TElement], column: all, callback: js.Function1[/* cell */ ParsedCell, Unit]): ParsedData = js.native
     @JSName("getColumnText")
     def getColumnText_all(
@@ -425,35 +515,35 @@ object tablesorterMod extends js.Object {
       rowFilter: JQuery[HTMLElement]
     ): ParsedData = js.native
     @JSName("getData")
-    def getData_dateFormat(header: HTMLElement, headerConfig: TablesorterHeading, option: dateFormat): String = js.native
+    def getData_dateFormat(header: HTMLElement, headerConfig: TablesorterHeading, option: dateFormat): js.UndefOr[String] = js.native
     @JSName("getData")
-    def getData_dateFormat(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: dateFormat): String = js.native
+    def getData_dateFormat(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: dateFormat): js.UndefOr[String] = js.native
     @JSName("getData")
-    def getData_empty(header: HTMLElement, headerConfig: TablesorterHeading, option: empty): EmptySorting = js.native
+    def getData_empty(header: HTMLElement, headerConfig: TablesorterHeading, option: empty): js.UndefOr[EmptySorting] = js.native
     @JSName("getData")
-    def getData_empty(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: empty): EmptySorting = js.native
+    def getData_empty(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: empty): js.UndefOr[EmptySorting] = js.native
     @JSName("getData")
-    def getData_filter(header: HTMLElement, headerConfig: TablesorterHeading, option: filter): ColumnFilter = js.native
+    def getData_filter(header: HTMLElement, headerConfig: TablesorterHeading, option: filter): js.UndefOr[ColumnFilter] = js.native
     @JSName("getData")
-    def getData_filter(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: filter): ColumnFilter = js.native
+    def getData_filter(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: filter): js.UndefOr[ColumnFilter] = js.native
     @JSName("getData")
-    def getData_lockedOrder(header: HTMLElement, headerConfig: TablesorterHeading, option: lockedOrder): SortOrder = js.native
+    def getData_lockedOrder(header: HTMLElement, headerConfig: TablesorterHeading, option: lockedOrder): js.UndefOr[SortOrder] = js.native
     @JSName("getData")
-    def getData_lockedOrder(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: lockedOrder): SortOrder = js.native
+    def getData_lockedOrder(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: lockedOrder): js.UndefOr[SortOrder] = js.native
     @JSName("getData")
-    def getData_parser(header: HTMLElement, headerConfig: TablesorterHeading, option: parser): String | Boolean = js.native
+    def getData_parser(header: HTMLElement, headerConfig: TablesorterHeading, option: parser): js.UndefOr[String | Boolean] = js.native
     @JSName("getData")
-    def getData_parser(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: parser): String | Boolean = js.native
+    def getData_parser(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: parser): js.UndefOr[String | Boolean] = js.native
     @JSName("getData")
-    def getData_resizable(header: HTMLElement, headerConfig: TablesorterHeading, option: resizable): Boolean = js.native
+    def getData_resizable(header: HTMLElement, headerConfig: TablesorterHeading, option: resizable): js.UndefOr[Boolean] = js.native
     @JSName("getData")
-    def getData_resizable(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: resizable): Boolean = js.native
+    def getData_resizable(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: resizable): js.UndefOr[Boolean] = js.native
     @JSName("getData")
-    def getData_sortInitialOrder(header: HTMLElement, headerConfig: TablesorterHeading, option: sortInitialOrder): SortOrder = js.native
+    def getData_sortInitialOrder(header: HTMLElement, headerConfig: TablesorterHeading, option: sortInitialOrder): js.UndefOr[SortOrder] = js.native
     @JSName("getData")
-    def getData_sortInitialOrder(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: sortInitialOrder): SortOrder = js.native
+    def getData_sortInitialOrder(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: sortInitialOrder): js.UndefOr[SortOrder] = js.native
     @JSName("getData")
-    def getData_sorter(header: HTMLElement, headerConfig: TablesorterHeading, option: sorter): String | Boolean = js.native
+    def getData_sorter(header: HTMLElement, headerConfig: TablesorterHeading, option: sorter): js.UndefOr[String | Boolean] = js.native
     /**
       * Identifies the correct setting for a header.
       *
@@ -470,11 +560,11 @@ object tablesorterMod extends js.Object {
       * The correct `option` for the specified `header`.
       */
     @JSName("getData")
-    def getData_sorter(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: sorter): String | Boolean = js.native
+    def getData_sorter(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: sorter): js.UndefOr[String | Boolean] = js.native
     @JSName("getData")
-    def getData_string(header: HTMLElement, headerConfig: TablesorterHeading, option: string): StringSorting = js.native
+    def getData_string(header: HTMLElement, headerConfig: TablesorterHeading, option: string): js.UndefOr[StringSorting] = js.native
     @JSName("getData")
-    def getData_string(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: string): StringSorting = js.native
+    def getData_string(header: JQuery[HTMLElement], headerConfig: TablesorterHeading, option: string): js.UndefOr[StringSorting] = js.native
     def getFilters(table: TElement): js.Array[String] = js.native
     def getFilters(table: TElement, cached: Boolean): js.Array[String] = js.native
     /**
@@ -584,6 +674,7 @@ object tablesorterMod extends js.Object {
     @JSName("processTbody")
     def processTbody_true(table: JQuery[TElement], tbody: JQuery[HTMLElement], detach: `true`): JQuery[HTMLElement] = js.native
     def refreshWidgets(table: TElement): Unit = js.native
+    def refreshWidgets(table: TElement, removeAll: js.UndefOr[scala.Nothing], reapply: Boolean): Unit = js.native
     def refreshWidgets(table: TElement, removeAll: Boolean): Unit = js.native
     def refreshWidgets(table: TElement, removeAll: Boolean, reapply: Boolean): Unit = js.native
     /**
@@ -599,6 +690,7 @@ object tablesorterMod extends js.Object {
       * A value indicating whether the widgets should be reapplied after removing them.
       */
     def refreshWidgets(table: JQuery[TElement]): Unit = js.native
+    def refreshWidgets(table: JQuery[TElement], removeAll: js.UndefOr[scala.Nothing], reapply: Boolean): Unit = js.native
     def refreshWidgets(table: JQuery[TElement], removeAll: Boolean): Unit = js.native
     def refreshWidgets(table: JQuery[TElement], removeAll: Boolean, reapply: Boolean): Unit = js.native
     def removeWidget(table: TElement, id: String): Unit = js.native
@@ -774,6 +866,7 @@ object tablesorterMod extends js.Object {
       */
     def sortText(x: String, y: String): Double = js.native
     def storage(table: TElement, key: String): js.Any = js.native
+    def storage(table: TElement, key: String, value: js.UndefOr[scala.Nothing], options: StorageConfiguration): js.Any = js.native
     def storage(table: TElement, key: String, value: js.Any): Unit = js.native
     def storage(table: TElement, key: String, value: js.Any, options: StorageConfiguration): Unit = js.native
     def storage(table: TElement, key: String, value: Null, options: StorageConfiguration): js.Any = js.native
@@ -793,6 +886,12 @@ object tablesorterMod extends js.Object {
       * The options for customizing the way to save the data to the storage.
       */
     def storage(table: JQuery[TElement], key: String): js.Any = js.native
+    def storage(
+      table: JQuery[TElement],
+      key: String,
+      value: js.UndefOr[scala.Nothing],
+      options: StorageConfiguration
+    ): js.Any = js.native
     /**
       * Saves data to the storage.
       *
@@ -821,6 +920,11 @@ object tablesorterMod extends js.Object {
       * A callback for post-processing the table.
       */
     def update(config: TablesorterConfigurationStore[TElement]): Unit = js.native
+    def update(
+      config: TablesorterConfigurationStore[TElement],
+      sorting: js.UndefOr[scala.Nothing],
+      callback: TriggerCallbackHandler[TElement]
+    ): Unit = js.native
     def update(config: TablesorterConfigurationStore[TElement], sorting: js.Array[SortDefinition]): Unit = js.native
     def update(
       config: TablesorterConfigurationStore[TElement],
@@ -846,6 +950,11 @@ object tablesorterMod extends js.Object {
       * A callback for post-processing the table.
       */
     def updateAll(config: TablesorterConfigurationStore[TElement]): Unit = js.native
+    def updateAll(
+      config: TablesorterConfigurationStore[TElement],
+      sorting: js.UndefOr[scala.Nothing],
+      callback: TriggerCallbackHandler[TElement]
+    ): Unit = js.native
     def updateAll(config: TablesorterConfigurationStore[TElement], sorting: js.Array[SortDefinition]): Unit = js.native
     def updateAll(
       config: TablesorterConfigurationStore[TElement],
@@ -871,6 +980,11 @@ object tablesorterMod extends js.Object {
       * The `tbody`s to add.
       */
     def updateCache(config: TablesorterConfigurationStore[TElement]): Unit = js.native
+    def updateCache(
+      config: TablesorterConfigurationStore[TElement],
+      callback: js.UndefOr[scala.Nothing],
+      tbodies: JQuery[HTMLElement]
+    ): Unit = js.native
     def updateCache(config: TablesorterConfigurationStore[TElement], callback: TriggerCallbackHandler[TElement]): Unit = js.native
     def updateCache(
       config: TablesorterConfigurationStore[TElement],
@@ -893,6 +1007,12 @@ object tablesorterMod extends js.Object {
       * A callback for post-processing the table.
       */
     def updateCell(config: TablesorterConfigurationStore[TElement], cell: JQuery[HTMLElement]): Unit = js.native
+    def updateCell(
+      config: TablesorterConfigurationStore[TElement],
+      cell: JQuery[HTMLElement],
+      sorting: js.UndefOr[scala.Nothing],
+      callback: TriggerCallbackHandler[TElement]
+    ): Unit = js.native
     def updateCell(
       config: TablesorterConfigurationStore[TElement],
       cell: JQuery[HTMLElement],
@@ -932,6 +1052,11 @@ object tablesorterMod extends js.Object {
       * A callback for post-processing the table.
       */
     def updateRows(config: TablesorterConfigurationStore[TElement]): Unit = js.native
+    def updateRows(
+      config: TablesorterConfigurationStore[TElement],
+      sorting: js.UndefOr[scala.Nothing],
+      callback: TriggerCallbackHandler[TElement]
+    ): Unit = js.native
     def updateRows(config: TablesorterConfigurationStore[TElement], sorting: js.Array[SortDefinition]): Unit = js.native
     def updateRows(
       config: TablesorterConfigurationStore[TElement],

@@ -36,11 +36,55 @@ object Utils extends js.Object {
       * @param context The context in which the callback is invoked.
       */
     def Add(array: js.Array[_], item: js.Any): js.Array[_] = js.native
+    def Add(
+      array: js.Array[_],
+      item: js.Any,
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
+    def Add(array: js.Array[_], item: js.Any, limit: js.UndefOr[scala.Nothing], callback: js.Function): js.Array[_] = js.native
+    def Add(
+      array: js.Array[_],
+      item: js.Any,
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[_] = js.native
     def Add(array: js.Array[_], item: js.Any, limit: integer): js.Array[_] = js.native
+    def Add(
+      array: js.Array[_],
+      item: js.Any,
+      limit: integer,
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
     def Add(array: js.Array[_], item: js.Any, limit: integer, callback: js.Function): js.Array[_] = js.native
     def Add(array: js.Array[_], item: js.Any, limit: integer, callback: js.Function, context: js.Object): js.Array[_] = js.native
     def Add(array: js.Array[_], item: js.Array[_]): js.Array[_] = js.native
+    def Add(
+      array: js.Array[_],
+      item: js.Array[_],
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
+    def Add(array: js.Array[_], item: js.Array[_], limit: js.UndefOr[scala.Nothing], callback: js.Function): js.Array[_] = js.native
+    def Add(
+      array: js.Array[_],
+      item: js.Array[_],
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[_] = js.native
     def Add(array: js.Array[_], item: js.Array[_], limit: integer): js.Array[_] = js.native
+    def Add(
+      array: js.Array[_],
+      item: js.Array[_],
+      limit: integer,
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
     def Add(array: js.Array[_], item: js.Array[_], limit: integer, callback: js.Function): js.Array[_] = js.native
     def Add(array: js.Array[_], item: js.Array[_], limit: integer, callback: js.Function, context: js.Object): js.Array[_] = js.native
     /**
@@ -64,8 +108,86 @@ object Utils extends js.Object {
       * @param context The context in which the callback is invoked.
       */
     def AddAt(array: js.Array[_], item: js.Any): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: js.UndefOr[scala.Nothing],
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: js.UndefOr[scala.Nothing],
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: js.UndefOr[scala.Nothing],
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[_] = js.native
+    def AddAt(array: js.Array[_], item: js.Any, index: js.UndefOr[scala.Nothing], limit: integer): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: js.UndefOr[scala.Nothing],
+      limit: integer,
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: js.UndefOr[scala.Nothing],
+      limit: integer,
+      callback: js.Function
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: js.UndefOr[scala.Nothing],
+      limit: integer,
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[_] = js.native
     def AddAt(array: js.Array[_], item: js.Any, index: integer): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: integer,
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: integer,
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: integer,
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[_] = js.native
     def AddAt(array: js.Array[_], item: js.Any, index: integer, limit: integer): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Any,
+      index: integer,
+      limit: integer,
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
     def AddAt(array: js.Array[_], item: js.Any, index: integer, limit: integer, callback: js.Function): js.Array[_] = js.native
     def AddAt(
       array: js.Array[_],
@@ -76,8 +198,86 @@ object Utils extends js.Object {
       context: js.Object
     ): js.Array[_] = js.native
     def AddAt(array: js.Array[_], item: js.Array[_]): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: js.UndefOr[scala.Nothing],
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: js.UndefOr[scala.Nothing],
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: js.UndefOr[scala.Nothing],
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[_] = js.native
+    def AddAt(array: js.Array[_], item: js.Array[_], index: js.UndefOr[scala.Nothing], limit: integer): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: js.UndefOr[scala.Nothing],
+      limit: integer,
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: js.UndefOr[scala.Nothing],
+      limit: integer,
+      callback: js.Function
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: js.UndefOr[scala.Nothing],
+      limit: integer,
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[_] = js.native
     def AddAt(array: js.Array[_], item: js.Array[_], index: integer): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: integer,
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: integer,
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function
+    ): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: integer,
+      limit: js.UndefOr[scala.Nothing],
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[_] = js.native
     def AddAt(array: js.Array[_], item: js.Array[_], index: integer, limit: integer): js.Array[_] = js.native
+    def AddAt(
+      array: js.Array[_],
+      item: js.Array[_],
+      index: integer,
+      limit: integer,
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
     def AddAt(array: js.Array[_], item: js.Array[_], index: integer, limit: integer, callback: js.Function): js.Array[_] = js.native
     def AddAt(
       array: js.Array[_],
@@ -103,6 +303,13 @@ object Utils extends js.Object {
       * @param endIndex An optional end index to search to.
       */
     def CountAllMatching(array: js.Array[_], property: String, value: js.Any): integer = js.native
+    def CountAllMatching(
+      array: js.Array[_],
+      property: String,
+      value: js.Any,
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): integer = js.native
     def CountAllMatching(array: js.Array[_], property: String, value: js.Any, startIndex: integer): integer = js.native
     def CountAllMatching(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): integer = js.native
     /**
@@ -158,8 +365,66 @@ object Utils extends js.Object {
       * @param endIndex An optional end index to search to.
       */
     def GetAll(array: js.Array[_]): js.Array[_] = js.native
+    def GetAll(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.UndefOr[scala.Nothing],
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): js.Array[_] = js.native
+    def GetAll(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.UndefOr[scala.Nothing],
+      startIndex: integer
+    ): js.Array[_] = js.native
+    def GetAll(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.UndefOr[scala.Nothing],
+      startIndex: integer,
+      endIndex: integer
+    ): js.Array[_] = js.native
+    def GetAll(array: js.Array[_], property: js.UndefOr[scala.Nothing], value: js.Any): js.Array[_] = js.native
+    def GetAll(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.Any,
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): js.Array[_] = js.native
+    def GetAll(array: js.Array[_], property: js.UndefOr[scala.Nothing], value: js.Any, startIndex: integer): js.Array[_] = js.native
+    def GetAll(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.Any,
+      startIndex: integer,
+      endIndex: integer
+    ): js.Array[_] = js.native
     def GetAll(array: js.Array[_], property: String): js.Array[_] = js.native
+    def GetAll(
+      array: js.Array[_],
+      property: String,
+      value: js.UndefOr[scala.Nothing],
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): js.Array[_] = js.native
+    def GetAll(array: js.Array[_], property: String, value: js.UndefOr[scala.Nothing], startIndex: integer): js.Array[_] = js.native
+    def GetAll(
+      array: js.Array[_],
+      property: String,
+      value: js.UndefOr[scala.Nothing],
+      startIndex: integer,
+      endIndex: integer
+    ): js.Array[_] = js.native
     def GetAll(array: js.Array[_], property: String, value: js.Any): js.Array[_] = js.native
+    def GetAll(
+      array: js.Array[_],
+      property: String,
+      value: js.Any,
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): js.Array[_] = js.native
     def GetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer): js.Array[_] = js.native
     def GetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[_] = js.native
     /**
@@ -178,8 +443,66 @@ object Utils extends js.Object {
       * @param endIndex An optional end index to search up to (but not included) Default array.length.
       */
     def GetFirst(array: js.Array[_]): js.Object = js.native
+    def GetFirst(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.UndefOr[scala.Nothing],
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): js.Object = js.native
+    def GetFirst(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.UndefOr[scala.Nothing],
+      startIndex: integer
+    ): js.Object = js.native
+    def GetFirst(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.UndefOr[scala.Nothing],
+      startIndex: integer,
+      endIndex: integer
+    ): js.Object = js.native
+    def GetFirst(array: js.Array[_], property: js.UndefOr[scala.Nothing], value: js.Any): js.Object = js.native
+    def GetFirst(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.Any,
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): js.Object = js.native
+    def GetFirst(array: js.Array[_], property: js.UndefOr[scala.Nothing], value: js.Any, startIndex: integer): js.Object = js.native
+    def GetFirst(
+      array: js.Array[_],
+      property: js.UndefOr[scala.Nothing],
+      value: js.Any,
+      startIndex: integer,
+      endIndex: integer
+    ): js.Object = js.native
     def GetFirst(array: js.Array[_], property: String): js.Object = js.native
+    def GetFirst(
+      array: js.Array[_],
+      property: String,
+      value: js.UndefOr[scala.Nothing],
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): js.Object = js.native
+    def GetFirst(array: js.Array[_], property: String, value: js.UndefOr[scala.Nothing], startIndex: integer): js.Object = js.native
+    def GetFirst(
+      array: js.Array[_],
+      property: String,
+      value: js.UndefOr[scala.Nothing],
+      startIndex: integer,
+      endIndex: integer
+    ): js.Object = js.native
     def GetFirst(array: js.Array[_], property: String, value: js.Any): js.Object = js.native
+    def GetFirst(
+      array: js.Array[_],
+      property: String,
+      value: js.Any,
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): js.Object = js.native
     def GetFirst(array: js.Array[_], property: String, value: js.Any, startIndex: integer): js.Object = js.native
     def GetFirst(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Object = js.native
     /**
@@ -189,6 +512,7 @@ object Utils extends js.Object {
       * @param length An optional length, the total number of elements (from the startIndex) to choose from. Default array.length.
       */
     def GetRandom(array: js.Array[_]): js.Any = js.native
+    def GetRandom(array: js.Array[_], startIndex: js.UndefOr[scala.Nothing], length: integer): js.Any = js.native
     def GetRandom(array: js.Array[_], startIndex: integer): js.Any = js.native
     def GetRandom(array: js.Array[_], startIndex: integer, length: integer): js.Any = js.native
     /**
@@ -233,6 +557,7 @@ object Utils extends js.Object {
       * @param suffix Optional suffix to place after the number. If provided the array will contain strings, not integers.
       */
     def NumberArray(start: Double, end: Double): js.Array[Double | String] = js.native
+    def NumberArray(start: Double, end: Double, prefix: js.UndefOr[scala.Nothing], suffix: String): js.Array[Double | String] = js.native
     def NumberArray(start: Double, end: Double, prefix: String): js.Array[Double | String] = js.native
     def NumberArray(start: Double, end: Double, prefix: String, suffix: String): js.Array[Double | String] = js.native
     /**
@@ -248,7 +573,11 @@ object Utils extends js.Object {
       * @param step The value to increment or decrement by. Default 1.
       */
     def NumberArrayStep(): js.Array[Double] = js.native
+    def NumberArrayStep(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], step: Double): js.Array[Double] = js.native
+    def NumberArrayStep(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Double] = js.native
+    def NumberArrayStep(start: js.UndefOr[scala.Nothing], end: Double, step: Double): js.Array[Double] = js.native
     def NumberArrayStep(start: Double): js.Array[Double] = js.native
+    def NumberArrayStep(start: Double, end: js.UndefOr[scala.Nothing], step: Double): js.Array[Double] = js.native
     def NumberArrayStep(start: Double, end: Double): js.Array[Double] = js.native
     def NumberArrayStep(start: Double, end: Double, step: Double): js.Array[Double] = js.native
     /**
@@ -267,7 +596,29 @@ object Utils extends js.Object {
       * @param compare An optional comparison function. Is passed two elements and should return 0, 1 or -1.
       */
     def QuickSelect(arr: js.Array[_], k: integer): Unit = js.native
+    def QuickSelect(
+      arr: js.Array[_],
+      k: integer,
+      left: js.UndefOr[scala.Nothing],
+      right: js.UndefOr[scala.Nothing],
+      compare: js.Function
+    ): Unit = js.native
+    def QuickSelect(arr: js.Array[_], k: integer, left: js.UndefOr[scala.Nothing], right: integer): Unit = js.native
+    def QuickSelect(
+      arr: js.Array[_],
+      k: integer,
+      left: js.UndefOr[scala.Nothing],
+      right: integer,
+      compare: js.Function
+    ): Unit = js.native
     def QuickSelect(arr: js.Array[_], k: integer, left: integer): Unit = js.native
+    def QuickSelect(
+      arr: js.Array[_],
+      k: integer,
+      left: integer,
+      right: js.UndefOr[scala.Nothing],
+      compare: js.Function
+    ): Unit = js.native
     def QuickSelect(arr: js.Array[_], k: integer, left: integer, right: integer): Unit = js.native
     def QuickSelect(arr: js.Array[_], k: integer, left: integer, right: integer, compare: js.Function): Unit = js.native
     /**
@@ -318,9 +669,11 @@ object Utils extends js.Object {
       * @param context The context in which the callback is invoked.
       */
     def Remove(array: js.Array[_], item: js.Any): js.Any | js.Array[_] = js.native
+    def Remove(array: js.Array[_], item: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Object): js.Any | js.Array[_] = js.native
     def Remove(array: js.Array[_], item: js.Any, callback: js.Function): js.Any | js.Array[_] = js.native
     def Remove(array: js.Array[_], item: js.Any, callback: js.Function, context: js.Object): js.Any | js.Array[_] = js.native
     def Remove(array: js.Array[_], item: js.Array[_]): js.Any | js.Array[_] = js.native
+    def Remove(array: js.Array[_], item: js.Array[_], callback: js.UndefOr[scala.Nothing], context: js.Object): js.Any | js.Array[_] = js.native
     def Remove(array: js.Array[_], item: js.Array[_], callback: js.Function): js.Any | js.Array[_] = js.native
     def Remove(array: js.Array[_], item: js.Array[_], callback: js.Function, context: js.Object): js.Any | js.Array[_] = js.native
     /**
@@ -335,6 +688,7 @@ object Utils extends js.Object {
       * @param context The context in which the callback is invoked.
       */
     def RemoveAt(array: js.Array[_], index: integer): js.Any = js.native
+    def RemoveAt(array: js.Array[_], index: integer, callback: js.UndefOr[scala.Nothing], context: js.Object): js.Any = js.native
     def RemoveAt(array: js.Array[_], index: integer, callback: js.Function): js.Any = js.native
     def RemoveAt(array: js.Array[_], index: integer, callback: js.Function, context: js.Object): js.Any = js.native
     /**
@@ -350,6 +704,13 @@ object Utils extends js.Object {
       * @param context The context in which the callback is invoked.
       */
     def RemoveBetween(array: js.Array[_], startIndex: integer, endIndex: integer): js.Array[_] = js.native
+    def RemoveBetween(
+      array: js.Array[_],
+      startIndex: integer,
+      endIndex: integer,
+      callback: js.UndefOr[scala.Nothing],
+      context: js.Object
+    ): js.Array[_] = js.native
     def RemoveBetween(array: js.Array[_], startIndex: integer, endIndex: integer, callback: js.Function): js.Array[_] = js.native
     def RemoveBetween(
       array: js.Array[_],
@@ -366,6 +727,7 @@ object Utils extends js.Object {
       * @param length Optional restriction on the number of elements to randomly select from. Default array.length.
       */
     def RemoveRandomElement(array: js.Array[_]): js.Object = js.native
+    def RemoveRandomElement(array: js.Array[_], start: js.UndefOr[scala.Nothing], length: integer): js.Object = js.native
     def RemoveRandomElement(array: js.Array[_], start: integer): js.Object = js.native
     def RemoveRandomElement(array: js.Array[_], start: integer, length: integer): js.Object = js.native
     /**
@@ -423,6 +785,13 @@ object Utils extends js.Object {
       * @param endIndex An optional end index to search to.
       */
     def SetAll(array: js.Array[_], property: String, value: js.Any): js.Array[_] = js.native
+    def SetAll(
+      array: js.Array[_],
+      property: String,
+      value: js.Any,
+      startIndex: js.UndefOr[scala.Nothing],
+      endIndex: integer
+    ): js.Array[_] = js.native
     def SetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer): js.Array[_] = js.native
     def SetAll(array: js.Array[_], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[_] = js.native
     /**
@@ -517,6 +886,8 @@ object Utils extends js.Object {
         * @param direction The amount to rotate the matrix by. Default 90.
         */
       def RotateMatrix[T](): js.Array[js.Array[T]] = js.native
+      def RotateMatrix[T](matrix: js.UndefOr[scala.Nothing], direction: String): js.Array[js.Array[T]] = js.native
+      def RotateMatrix[T](matrix: js.UndefOr[scala.Nothing], direction: Double): js.Array[js.Array[T]] = js.native
       def RotateMatrix[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
       def RotateMatrix[T](matrix: js.Array[js.Array[T]], direction: String): js.Array[js.Array[T]] = js.native
       def RotateMatrix[T](matrix: js.Array[js.Array[T]], direction: Double): js.Array[js.Array[T]] = js.native
@@ -749,15 +1120,32 @@ object Utils extends js.Object {
       * @param dir The direction dir = 1 (left), 2 (right), 3 (both). Default 3.
       */
     def Pad(str: java.lang.String): java.lang.String = js.native
+    def Pad(
+      str: java.lang.String,
+      len: js.UndefOr[scala.Nothing],
+      pad: js.UndefOr[scala.Nothing],
+      dir: integer
+    ): java.lang.String = js.native
+    def Pad(str: java.lang.String, len: js.UndefOr[scala.Nothing], pad: java.lang.String): java.lang.String = js.native
+    def Pad(str: java.lang.String, len: js.UndefOr[scala.Nothing], pad: java.lang.String, dir: integer): java.lang.String = js.native
     def Pad(str: java.lang.String, len: integer): java.lang.String = js.native
+    def Pad(str: java.lang.String, len: integer, pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
     def Pad(str: java.lang.String, len: integer, pad: java.lang.String): java.lang.String = js.native
     def Pad(str: java.lang.String, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
     def Pad(str: js.Object): java.lang.String = js.native
+    def Pad(str: js.Object, len: js.UndefOr[scala.Nothing], pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
+    def Pad(str: js.Object, len: js.UndefOr[scala.Nothing], pad: java.lang.String): java.lang.String = js.native
+    def Pad(str: js.Object, len: js.UndefOr[scala.Nothing], pad: java.lang.String, dir: integer): java.lang.String = js.native
     def Pad(str: js.Object, len: integer): java.lang.String = js.native
+    def Pad(str: js.Object, len: integer, pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
     def Pad(str: js.Object, len: integer, pad: java.lang.String): java.lang.String = js.native
     def Pad(str: js.Object, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
     def Pad(str: Double): java.lang.String = js.native
+    def Pad(str: Double, len: js.UndefOr[scala.Nothing], pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
+    def Pad(str: Double, len: js.UndefOr[scala.Nothing], pad: java.lang.String): java.lang.String = js.native
+    def Pad(str: Double, len: js.UndefOr[scala.Nothing], pad: java.lang.String, dir: integer): java.lang.String = js.native
     def Pad(str: Double, len: integer): java.lang.String = js.native
+    def Pad(str: Double, len: integer, pad: js.UndefOr[scala.Nothing], dir: integer): java.lang.String = js.native
     def Pad(str: Double, len: integer, pad: java.lang.String): java.lang.String = js.native
     def Pad(str: Double, len: integer, pad: java.lang.String, dir: integer): java.lang.String = js.native
     /**

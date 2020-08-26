@@ -12,7 +12,7 @@ Converts binary buffers to and from lowercase hexadecimal encoding
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 913524 |
+| # downloads        | 950023 |
 | # stars            | 0 |
 
 ## Links

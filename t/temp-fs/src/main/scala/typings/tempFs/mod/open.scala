@@ -17,6 +17,7 @@ object open extends js.Object {
     */
   def apply(): js.Any = js.native
   def apply(callback: js.Function2[/* err */ js.Any, /* file */ file, _]): js.Any = js.native
+  def apply(options: js.UndefOr[scala.Nothing], callback: js.Function2[/* err */ js.Any, /* file */ file, _]): js.Any = js.native
   def apply(options: options): js.Any = js.native
   def apply(options: options, callback: js.Function2[/* err */ js.Any, /* file */ file, _]): js.Any = js.native
 }

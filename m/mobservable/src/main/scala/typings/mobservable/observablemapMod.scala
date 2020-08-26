@@ -15,6 +15,7 @@ object observablemapMod extends js.Object {
   class ObservableMap[V] () extends js.Object {
     def this(initialData: Entries[V]) = this()
     def this(initialData: KeyValueMap[V]) = this()
+    def this(initialData: js.UndefOr[scala.Nothing], valueModeFunc: js.Function) = this()
     def this(initialData: Entries[V], valueModeFunc: js.Function) = this()
     def this(initialData: KeyValueMap[V], valueModeFunc: js.Function) = this()
     var _data: js.Any = js.native

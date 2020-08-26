@@ -30,19 +30,44 @@ trait GetFederationTokenRequest extends js.Object {
 
 object GetFederationTokenRequest {
   @scala.inline
-  def apply(
-    Name: userNameType,
-    DurationSeconds: js.UndefOr[durationSecondsType] = js.undefined,
-    Policy: sessionPolicyDocumentType = null,
-    PolicyArns: policyDescriptorListType = null,
-    Tags: tagListType = null
-  ): GetFederationTokenRequest = {
+  def apply(Name: userNameType): GetFederationTokenRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
-    if (PolicyArns != null) __obj.updateDynamic("PolicyArns")(PolicyArns.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFederationTokenRequest]
   }
+  @scala.inline
+  implicit class GetFederationTokenRequestOps[Self <: GetFederationTokenRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: userNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDurationSeconds(value: durationSecondsType): Self = this.set("DurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationSeconds: Self = this.set("DurationSeconds", js.undefined)
+    @scala.inline
+    def setPolicy(value: sessionPolicyDocumentType): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("Policy", js.undefined)
+    @scala.inline
+    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = this.set("PolicyArns", js.Array(value :_*))
+    @scala.inline
+    def setPolicyArns(value: policyDescriptorListType): Self = this.set("PolicyArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyArns: Self = this.set("PolicyArns", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: tagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

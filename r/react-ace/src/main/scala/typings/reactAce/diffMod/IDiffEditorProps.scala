@@ -5,105 +5,186 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDiffEditorProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var cursorStart: js.UndefOr[Double] = js.undefined
-  var editorProps: js.UndefOr[js.Object] = js.undefined
-  var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
-  var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
-  var focus: js.UndefOr[Boolean] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[String] = js.undefined
-  var highlightActiveLine: js.UndefOr[Boolean] = js.undefined
-  var maxLines: js.UndefOr[Double] = js.undefined
-  var minLines: js.UndefOr[Double] = js.undefined
-  var mode: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
-  var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
-  var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var scrollMargin: js.UndefOr[js.Array[Double]] = js.undefined
-  var setOptions: js.UndefOr[js.Object] = js.undefined
-  var showGutter: js.UndefOr[Boolean] = js.undefined
-  var showPrintMargin: js.UndefOr[Boolean] = js.undefined
-  var splits: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var tabSize: js.UndefOr[Double] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Array[String]] = js.undefined
-  var width: js.UndefOr[String] = js.undefined
-  var wrapEnabled: js.UndefOr[Boolean] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var cursorStart: js.UndefOr[Double] = js.native
+  var editorProps: js.UndefOr[js.Object] = js.native
+  var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var focus: js.UndefOr[Boolean] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[String] = js.native
+  var highlightActiveLine: js.UndefOr[Boolean] = js.native
+  var maxLines: js.UndefOr[Double] = js.native
+  var minLines: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+  var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+  var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+  var orientation: js.UndefOr[String] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var scrollMargin: js.UndefOr[js.Array[Double]] = js.native
+  var setOptions: js.UndefOr[js.Object] = js.native
+  var showGutter: js.UndefOr[Boolean] = js.native
+  var showPrintMargin: js.UndefOr[Boolean] = js.native
+  var splits: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var tabSize: js.UndefOr[Double] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var value: js.UndefOr[js.Array[String]] = js.native
+  var width: js.UndefOr[String] = js.native
+  var wrapEnabled: js.UndefOr[Boolean] = js.native
 }
 
 object IDiffEditorProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    cursorStart: js.UndefOr[Double] = js.undefined,
-    editorProps: js.Object = null,
-    enableBasicAutocompletion: Boolean | js.Array[String] = null,
-    enableLiveAutocompletion: Boolean | js.Array[String] = null,
-    focus: js.UndefOr[Boolean] = js.undefined,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    height: String = null,
-    highlightActiveLine: js.UndefOr[Boolean] = js.undefined,
-    maxLines: js.UndefOr[Double] = js.undefined,
-    minLines: js.UndefOr[Double] = js.undefined,
-    mode: String = null,
-    name: String = null,
-    onChange: (/* value */ js.Array[String], /* event */ js.UndefOr[js.Any]) => Unit = null,
-    onLoad: /* editor */ IEditorProps => Unit = null,
-    onPaste: /* value */ String => Unit = null,
-    onScroll: /* editor */ IEditorProps => Unit = null,
-    orientation: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    scrollMargin: js.Array[Double] = null,
-    setOptions: js.Object = null,
-    showGutter: js.UndefOr[Boolean] = js.undefined,
-    showPrintMargin: js.UndefOr[Boolean] = js.undefined,
-    splits: js.UndefOr[Double] = js.undefined,
-    style: js.Object = null,
-    tabSize: js.UndefOr[Double] = js.undefined,
-    theme: String = null,
-    value: js.Array[String] = null,
-    width: String = null,
-    wrapEnabled: js.UndefOr[Boolean] = js.undefined
-  ): IDiffEditorProps = {
+  def apply(): IDiffEditorProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(cursorStart)) __obj.updateDynamic("cursorStart")(cursorStart.get.asInstanceOf[js.Any])
-    if (editorProps != null) __obj.updateDynamic("editorProps")(editorProps.asInstanceOf[js.Any])
-    if (enableBasicAutocompletion != null) __obj.updateDynamic("enableBasicAutocompletion")(enableBasicAutocompletion.asInstanceOf[js.Any])
-    if (enableLiveAutocompletion != null) __obj.updateDynamic("enableLiveAutocompletion")(enableLiveAutocompletion.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightActiveLine)) __obj.updateDynamic("highlightActiveLine")(highlightActiveLine.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLines)) __obj.updateDynamic("maxLines")(maxLines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLines)) __obj.updateDynamic("minLines")(minLines.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (scrollMargin != null) __obj.updateDynamic("scrollMargin")(scrollMargin.asInstanceOf[js.Any])
-    if (setOptions != null) __obj.updateDynamic("setOptions")(setOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGutter)) __obj.updateDynamic("showGutter")(showGutter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPrintMargin)) __obj.updateDynamic("showPrintMargin")(showPrintMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(splits)) __obj.updateDynamic("splits")(splits.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapEnabled)) __obj.updateDynamic("wrapEnabled")(wrapEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDiffEditorProps]
   }
+  @scala.inline
+  implicit class IDiffEditorPropsOps[Self <: IDiffEditorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCursorStart(value: Double): Self = this.set("cursorStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursorStart: Self = this.set("cursorStart", js.undefined)
+    @scala.inline
+    def setEditorProps(value: js.Object): Self = this.set("editorProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorProps: Self = this.set("editorProps", js.undefined)
+    @scala.inline
+    def setEnableBasicAutocompletionVarargs(value: String*): Self = this.set("enableBasicAutocompletion", js.Array(value :_*))
+    @scala.inline
+    def setEnableBasicAutocompletion(value: Boolean | js.Array[String]): Self = this.set("enableBasicAutocompletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableBasicAutocompletion: Self = this.set("enableBasicAutocompletion", js.undefined)
+    @scala.inline
+    def setEnableLiveAutocompletionVarargs(value: String*): Self = this.set("enableLiveAutocompletion", js.Array(value :_*))
+    @scala.inline
+    def setEnableLiveAutocompletion(value: Boolean | js.Array[String]): Self = this.set("enableLiveAutocompletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLiveAutocompletion: Self = this.set("enableLiveAutocompletion", js.undefined)
+    @scala.inline
+    def setFocus(value: Boolean): Self = this.set("focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHighlightActiveLine(value: Boolean): Self = this.set("highlightActiveLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightActiveLine: Self = this.set("highlightActiveLine", js.undefined)
+    @scala.inline
+    def setMaxLines(value: Double): Self = this.set("maxLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLines: Self = this.set("maxLines", js.undefined)
+    @scala.inline
+    def setMinLines(value: Double): Self = this.set("minLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLines: Self = this.set("minLines", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnChange(value: (/* value */ js.Array[String], /* event */ js.UndefOr[js.Any]) => Unit): Self = this.set("onChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnLoad(value: /* editor */ IEditorProps => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnPaste(value: /* value */ String => Unit): Self = this.set("onPaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setOnScroll(value: /* editor */ IEditorProps => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setScrollMarginVarargs(value: Double*): Self = this.set("scrollMargin", js.Array(value :_*))
+    @scala.inline
+    def setScrollMargin(value: js.Array[Double]): Self = this.set("scrollMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollMargin: Self = this.set("scrollMargin", js.undefined)
+    @scala.inline
+    def setSetOptions(value: js.Object): Self = this.set("setOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetOptions: Self = this.set("setOptions", js.undefined)
+    @scala.inline
+    def setShowGutter(value: Boolean): Self = this.set("showGutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowGutter: Self = this.set("showGutter", js.undefined)
+    @scala.inline
+    def setShowPrintMargin(value: Boolean): Self = this.set("showPrintMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPrintMargin: Self = this.set("showPrintMargin", js.undefined)
+    @scala.inline
+    def setSplits(value: Double): Self = this.set("splits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplits: Self = this.set("splits", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTabSize(value: Double): Self = this.set("tabSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabSize: Self = this.set("tabSize", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: String*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: js.Array[String]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWrapEnabled(value: Boolean): Self = this.set("wrapEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapEnabled: Self = this.set("wrapEnabled", js.undefined)
+  }
+  
 }
 

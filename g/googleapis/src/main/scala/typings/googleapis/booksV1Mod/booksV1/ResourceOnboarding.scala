@@ -27,6 +27,7 @@ class ResourceOnboarding protected () extends js.Object {
     */
   def listCategories(): GaxiosPromise[SchemaCategory] = js.native
   def listCategories(callback: BodyResponseCallback[SchemaCategory]): Unit = js.native
+  def listCategories(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCategory] = js.native
   def listCategories(params: ParamsResourceOnboardingListcategories): GaxiosPromise[SchemaCategory] = js.native
   def listCategories(params: ParamsResourceOnboardingListcategories, callback: BodyResponseCallback[SchemaCategory]): Unit = js.native
   def listCategories(
@@ -58,6 +59,7 @@ class ResourceOnboarding protected () extends js.Object {
     */
   def listCategoryVolumes(): GaxiosPromise[SchemaVolume2] = js.native
   def listCategoryVolumes(callback: BodyResponseCallback[SchemaVolume2]): Unit = js.native
+  def listCategoryVolumes(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolume2] = js.native
   def listCategoryVolumes(params: ParamsResourceOnboardingListcategoryvolumes): GaxiosPromise[SchemaVolume2] = js.native
   def listCategoryVolumes(params: ParamsResourceOnboardingListcategoryvolumes, callback: BodyResponseCallback[SchemaVolume2]): Unit = js.native
   def listCategoryVolumes(

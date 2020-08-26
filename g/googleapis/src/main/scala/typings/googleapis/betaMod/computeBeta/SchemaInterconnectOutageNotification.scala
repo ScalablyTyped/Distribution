@@ -51,26 +51,56 @@ trait SchemaInterconnectOutageNotification extends js.Object {
 
 object SchemaInterconnectOutageNotification {
   @scala.inline
-  def apply(
-    affectedCircuits: js.Array[String] = null,
-    description: String = null,
-    endTime: String = null,
-    issueType: String = null,
-    name: String = null,
-    source: String = null,
-    startTime: String = null,
-    state: String = null
-  ): SchemaInterconnectOutageNotification = {
+  def apply(): SchemaInterconnectOutageNotification = {
     val __obj = js.Dynamic.literal()
-    if (affectedCircuits != null) __obj.updateDynamic("affectedCircuits")(affectedCircuits.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (issueType != null) __obj.updateDynamic("issueType")(issueType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInterconnectOutageNotification]
   }
+  @scala.inline
+  implicit class SchemaInterconnectOutageNotificationOps[Self <: SchemaInterconnectOutageNotification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffectedCircuitsVarargs(value: String*): Self = this.set("affectedCircuits", js.Array(value :_*))
+    @scala.inline
+    def setAffectedCircuits(value: js.Array[String]): Self = this.set("affectedCircuits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffectedCircuits: Self = this.set("affectedCircuits", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setIssueType(value: String): Self = this.set("issueType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssueType: Self = this.set("issueType", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

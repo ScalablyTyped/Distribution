@@ -17,15 +17,5 @@ class ASPxClientCardViewBatchEditCardValidatingEventArgs protected ()
     * @param validationInfo An object containing validation information.
     */
   def this(visibleIndex: Double, validationInfo: js.Any) = this()
-  /**
-    * Provides validation information of a card currently being validated.
-    */
-  /* CompleteClass */
-  override var validationInfo: js.Any = js.native
-  /**
-    * Gets the processed card's visible index.
-    */
-  /* CompleteClass */
-  override var visibleIndex: Double = js.native
 }
 

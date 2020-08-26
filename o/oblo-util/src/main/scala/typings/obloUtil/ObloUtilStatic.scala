@@ -21,6 +21,7 @@ trait ObloUtilStatic extends js.Object {
   def setAttr($elt: JQuery[HTMLElement], attrName: String, isSet: Boolean): Unit = js.native
   def showDate(date: Date): String = js.native
   def showJSON(json: js.Any): String = js.native
+  def showJSON(json: js.Any, indentStr: js.UndefOr[scala.Nothing], maxDepth: Double): String = js.native
   def showJSON(json: js.Any, indentStr: String): String = js.native
   def showJSON(json: js.Any, indentStr: String, maxDepth: Double): String = js.native
   def showTime(date: Date): String = js.native

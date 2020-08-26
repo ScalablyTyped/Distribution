@@ -30,20 +30,42 @@ trait RecommendationSummary extends js.Object {
 
 object RecommendationSummary {
   @scala.inline
-  def apply(
-    Description: Text = null,
-    EndLine: js.UndefOr[LineNumber] = js.undefined,
-    FilePath: FilePath = null,
-    RecommendationId: RecommendationId = null,
-    StartLine: js.UndefOr[LineNumber] = js.undefined
-  ): RecommendationSummary = {
+  def apply(): RecommendationSummary = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(EndLine)) __obj.updateDynamic("EndLine")(EndLine.get.asInstanceOf[js.Any])
-    if (FilePath != null) __obj.updateDynamic("FilePath")(FilePath.asInstanceOf[js.Any])
-    if (RecommendationId != null) __obj.updateDynamic("RecommendationId")(RecommendationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(StartLine)) __obj.updateDynamic("StartLine")(StartLine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendationSummary]
   }
+  @scala.inline
+  implicit class RecommendationSummaryOps[Self <: RecommendationSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: Text): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEndLine(value: LineNumber): Self = this.set("EndLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndLine: Self = this.set("EndLine", js.undefined)
+    @scala.inline
+    def setFilePath(value: FilePath): Self = this.set("FilePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilePath: Self = this.set("FilePath", js.undefined)
+    @scala.inline
+    def setRecommendationId(value: RecommendationId): Self = this.set("RecommendationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationId: Self = this.set("RecommendationId", js.undefined)
+    @scala.inline
+    def setStartLine(value: LineNumber): Self = this.set("StartLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartLine: Self = this.set("StartLine", js.undefined)
+  }
+  
 }
 

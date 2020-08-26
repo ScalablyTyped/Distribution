@@ -26,17 +26,36 @@ trait CheckpointConfiguration extends js.Object {
 
 object CheckpointConfiguration {
   @scala.inline
-  def apply(
-    ConfigurationType: ConfigurationType,
-    CheckpointInterval: js.UndefOr[CheckpointInterval] = js.undefined,
-    CheckpointingEnabled: js.UndefOr[BooleanObject] = js.undefined,
-    MinPauseBetweenCheckpoints: js.UndefOr[MinPauseBetweenCheckpoints] = js.undefined
-  ): CheckpointConfiguration = {
+  def apply(ConfigurationType: ConfigurationType): CheckpointConfiguration = {
     val __obj = js.Dynamic.literal(ConfigurationType = ConfigurationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(CheckpointInterval)) __obj.updateDynamic("CheckpointInterval")(CheckpointInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CheckpointingEnabled)) __obj.updateDynamic("CheckpointingEnabled")(CheckpointingEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinPauseBetweenCheckpoints)) __obj.updateDynamic("MinPauseBetweenCheckpoints")(MinPauseBetweenCheckpoints.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckpointConfiguration]
   }
+  @scala.inline
+  implicit class CheckpointConfigurationOps[Self <: CheckpointConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationType(value: ConfigurationType): Self = this.set("ConfigurationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCheckpointInterval(value: CheckpointInterval): Self = this.set("CheckpointInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckpointInterval: Self = this.set("CheckpointInterval", js.undefined)
+    @scala.inline
+    def setCheckpointingEnabled(value: BooleanObject): Self = this.set("CheckpointingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckpointingEnabled: Self = this.set("CheckpointingEnabled", js.undefined)
+    @scala.inline
+    def setMinPauseBetweenCheckpoints(value: MinPauseBetweenCheckpoints): Self = this.set("MinPauseBetweenCheckpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinPauseBetweenCheckpoints: Self = this.set("MinPauseBetweenCheckpoints", js.undefined)
+  }
+  
 }
 

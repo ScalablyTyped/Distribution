@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "RecursiveVisitor")
 @js.native
 class RecursiveVisitor ()
-  extends typings.angularCompiler.publicApiMod.RecursiveVisitor
+  extends typings.angularCompiler.compilerMod.RecursiveVisitor
 

@@ -26,16 +26,36 @@ trait SchemaGooglePrivacyDlpV2Result extends js.Object {
 
 object SchemaGooglePrivacyDlpV2Result {
   @scala.inline
-  def apply(
-    infoTypeStats: js.Array[SchemaGooglePrivacyDlpV2InfoTypeStats] = null,
-    processedBytes: String = null,
-    totalEstimatedBytes: String = null
-  ): SchemaGooglePrivacyDlpV2Result = {
+  def apply(): SchemaGooglePrivacyDlpV2Result = {
     val __obj = js.Dynamic.literal()
-    if (infoTypeStats != null) __obj.updateDynamic("infoTypeStats")(infoTypeStats.asInstanceOf[js.Any])
-    if (processedBytes != null) __obj.updateDynamic("processedBytes")(processedBytes.asInstanceOf[js.Any])
-    if (totalEstimatedBytes != null) __obj.updateDynamic("totalEstimatedBytes")(totalEstimatedBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Result]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2ResultOps[Self <: SchemaGooglePrivacyDlpV2Result] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInfoTypeStatsVarargs(value: SchemaGooglePrivacyDlpV2InfoTypeStats*): Self = this.set("infoTypeStats", js.Array(value :_*))
+    @scala.inline
+    def setInfoTypeStats(value: js.Array[SchemaGooglePrivacyDlpV2InfoTypeStats]): Self = this.set("infoTypeStats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoTypeStats: Self = this.set("infoTypeStats", js.undefined)
+    @scala.inline
+    def setProcessedBytes(value: String): Self = this.set("processedBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessedBytes: Self = this.set("processedBytes", js.undefined)
+    @scala.inline
+    def setTotalEstimatedBytes(value: String): Self = this.set("totalEstimatedBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalEstimatedBytes: Self = this.set("totalEstimatedBytes", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ A modern smooth scrolling library.
 | Keywords           | smooth, scroll |
 | # releases         | 0 |
 | # dependents       | 51 |
-| # downloads        | 2241018 |
+| # downloads        | 2306894 |
 | # stars            | 6 |
 
 ## Links

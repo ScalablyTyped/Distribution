@@ -22,16 +22,34 @@ trait DeleteFleetSuccessItem extends js.Object {
 
 object DeleteFleetSuccessItem {
   @scala.inline
-  def apply(
-    CurrentFleetState: FleetStateCode = null,
-    FleetId: FleetId = null,
-    PreviousFleetState: FleetStateCode = null
-  ): DeleteFleetSuccessItem = {
+  def apply(): DeleteFleetSuccessItem = {
     val __obj = js.Dynamic.literal()
-    if (CurrentFleetState != null) __obj.updateDynamic("CurrentFleetState")(CurrentFleetState.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (PreviousFleetState != null) __obj.updateDynamic("PreviousFleetState")(PreviousFleetState.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFleetSuccessItem]
   }
+  @scala.inline
+  implicit class DeleteFleetSuccessItemOps[Self <: DeleteFleetSuccessItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentFleetState(value: FleetStateCode): Self = this.set("CurrentFleetState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentFleetState: Self = this.set("CurrentFleetState", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setPreviousFleetState(value: FleetStateCode): Self = this.set("PreviousFleetState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousFleetState: Self = this.set("PreviousFleetState", js.undefined)
+  }
+  
 }
 

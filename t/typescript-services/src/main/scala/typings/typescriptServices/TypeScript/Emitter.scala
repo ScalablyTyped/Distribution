@@ -95,7 +95,26 @@ trait Emitter extends js.Object {
   def emitJavascript(ast: AST, startLine: Boolean): Unit = js.native
   def emitLabeledStatement(statement: LabeledStatement): Unit = js.native
   def emitList(list: ISyntaxList2): Unit = js.native
+  def emitList(
+    list: ISyntaxList2,
+    useNewLineSeparator: js.UndefOr[scala.Nothing],
+    startInclusive: js.UndefOr[scala.Nothing],
+    endExclusive: Double
+  ): Unit = js.native
+  def emitList(list: ISyntaxList2, useNewLineSeparator: js.UndefOr[scala.Nothing], startInclusive: Double): Unit = js.native
+  def emitList(
+    list: ISyntaxList2,
+    useNewLineSeparator: js.UndefOr[scala.Nothing],
+    startInclusive: Double,
+    endExclusive: Double
+  ): Unit = js.native
   def emitList(list: ISyntaxList2, useNewLineSeparator: Boolean): Unit = js.native
+  def emitList(
+    list: ISyntaxList2,
+    useNewLineSeparator: Boolean,
+    startInclusive: js.UndefOr[scala.Nothing],
+    endExclusive: Double
+  ): Unit = js.native
   def emitList(list: ISyntaxList2, useNewLineSeparator: Boolean, startInclusive: Double): Unit = js.native
   def emitList(list: ISyntaxList2, useNewLineSeparator: Boolean, startInclusive: Double, endExclusive: Double): Unit = js.native
   def emitLiteralExpression(expression: LiteralExpression): Unit = js.native
@@ -122,7 +141,30 @@ trait Emitter extends js.Object {
   def emitReturnStatement(statement: ReturnStatement): Unit = js.native
   def emitScriptElements(sourceUnit: SourceUnit): Unit = js.native
   def emitSeparatedList(list: ISeparatedSyntaxList2): Unit = js.native
+  def emitSeparatedList(
+    list: ISeparatedSyntaxList2,
+    useNewLineSeparator: js.UndefOr[scala.Nothing],
+    startInclusive: js.UndefOr[scala.Nothing],
+    endExclusive: Double
+  ): Unit = js.native
+  def emitSeparatedList(
+    list: ISeparatedSyntaxList2,
+    useNewLineSeparator: js.UndefOr[scala.Nothing],
+    startInclusive: Double
+  ): Unit = js.native
+  def emitSeparatedList(
+    list: ISeparatedSyntaxList2,
+    useNewLineSeparator: js.UndefOr[scala.Nothing],
+    startInclusive: Double,
+    endExclusive: Double
+  ): Unit = js.native
   def emitSeparatedList(list: ISeparatedSyntaxList2, useNewLineSeparator: Boolean): Unit = js.native
+  def emitSeparatedList(
+    list: ISeparatedSyntaxList2,
+    useNewLineSeparator: Boolean,
+    startInclusive: js.UndefOr[scala.Nothing],
+    endExclusive: Double
+  ): Unit = js.native
   def emitSeparatedList(list: ISeparatedSyntaxList2, useNewLineSeparator: Boolean, startInclusive: Double): Unit = js.native
   def emitSeparatedList(
     list: ISeparatedSyntaxList2,
@@ -162,7 +204,6 @@ trait Emitter extends js.Object {
   /* private */ def getIndentString(): js.Any = js.native
   /* private */ def getModuleDeclToVerifyChildNameCollision(moduleDecl: js.Any, changeNameIfAnyDeclarationInContext: js.Any): js.Any = js.native
   def getModuleImportAndDependencyList(sourceUnit: SourceUnit): DependencyList = js.native
-  /* private */ def getModuleName(moduleDecl: js.Any): js.Any = js.native
   /* private */ def getModuleName(moduleDecl: js.Any, changeNameIfAnyDeclarationInContext: js.Any): js.Any = js.native
   def getOutputFiles(): js.Array[OutputFile] = js.native
   /* private */ def getSymbolForEmit(ast: js.Any): js.Any = js.native
@@ -192,7 +233,6 @@ trait Emitter extends js.Object {
   def shouldEmitModuleDeclaration(declaration: ModuleDeclaration): Boolean = js.native
   def shouldEmitVariableStatement(statement: VariableStatement): Boolean = js.native
   /* private */ def shouldQualifySymbolNameWithParentName(symbol: js.Any): js.Any = js.native
-  /* private */ def symbolIsUsedInItsEnclosingContainer(symbol: js.Any): js.Any = js.native
   /* private */ def symbolIsUsedInItsEnclosingContainer(symbol: js.Any, dynamic: js.Any): js.Any = js.native
   def tryEmitConstant(dotExpr: MemberAccessExpression): Boolean = js.native
   /* private */ def updateLineAndColumn(s: js.Any): js.Any = js.native

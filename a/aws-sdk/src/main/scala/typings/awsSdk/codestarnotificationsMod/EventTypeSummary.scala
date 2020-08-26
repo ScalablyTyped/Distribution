@@ -26,18 +26,38 @@ trait EventTypeSummary extends js.Object {
 
 object EventTypeSummary {
   @scala.inline
-  def apply(
-    EventTypeId: EventTypeId = null,
-    EventTypeName: EventTypeName = null,
-    ResourceType: ResourceType = null,
-    ServiceName: ServiceName = null
-  ): EventTypeSummary = {
+  def apply(): EventTypeSummary = {
     val __obj = js.Dynamic.literal()
-    if (EventTypeId != null) __obj.updateDynamic("EventTypeId")(EventTypeId.asInstanceOf[js.Any])
-    if (EventTypeName != null) __obj.updateDynamic("EventTypeName")(EventTypeName.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTypeSummary]
   }
+  @scala.inline
+  implicit class EventTypeSummaryOps[Self <: EventTypeSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventTypeId(value: EventTypeId): Self = this.set("EventTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeId: Self = this.set("EventTypeId", js.undefined)
+    @scala.inline
+    def setEventTypeName(value: EventTypeName): Self = this.set("EventTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeName: Self = this.set("EventTypeName", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setServiceName(value: ServiceName): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+  }
+  
 }
 

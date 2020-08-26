@@ -11,8 +11,8 @@ request the caniuse data to check browsers compatibilities
 | Full name          | caniuse-api |
 | Keywords           | caniuse, browserslist |
 | # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 208325586 |
+| # dependents       | 54 |
+| # downloads        | 212642036 |
 | # stars            | 6 |
 
 ## Links

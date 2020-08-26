@@ -26,17 +26,36 @@ trait CancelJobRequest extends js.Object {
 
 object CancelJobRequest {
   @scala.inline
-  def apply(
-    jobId: JobId,
-    comment: Comment = null,
-    force: js.UndefOr[ForceFlag] = js.undefined,
-    reasonCode: ReasonCode = null
-  ): CancelJobRequest = {
+  def apply(jobId: JobId): CancelJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelJobRequest]
   }
+  @scala.inline
+  implicit class CancelJobRequestOps[Self <: CancelJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: Comment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setForce(value: ForceFlag): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setReasonCode(value: ReasonCode): Self = this.set("reasonCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonCode: Self = this.set("reasonCode", js.undefined)
+  }
+  
 }
 

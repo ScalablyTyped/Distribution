@@ -16,6 +16,12 @@ object clientApiBasesMod extends js.Object {
   class ClientApiBase protected () extends js.Object {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], userAgent: String) = this()
+    def this(
+      baseUrl: String,
+      handlers: js.Array[IRequestHandler],
+      userAgent: js.UndefOr[scala.Nothing],
+      options: IRequestOptions
+    ) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], userAgent: String, options: IRequestOptions) = this()
     var baseUrl: String = js.native
     var http: HttpClient = js.native

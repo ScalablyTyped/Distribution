@@ -37,20 +37,42 @@ trait SchemaMarketplaceTargeting extends js.Object {
 
 object SchemaMarketplaceTargeting {
   @scala.inline
-  def apply(
-    geoTargeting: SchemaCriteriaTargeting = null,
-    inventorySizeTargeting: SchemaInventorySizeTargeting = null,
-    placementTargeting: SchemaPlacementTargeting = null,
-    technologyTargeting: SchemaTechnologyTargeting = null,
-    videoTargeting: SchemaVideoTargeting = null
-  ): SchemaMarketplaceTargeting = {
+  def apply(): SchemaMarketplaceTargeting = {
     val __obj = js.Dynamic.literal()
-    if (geoTargeting != null) __obj.updateDynamic("geoTargeting")(geoTargeting.asInstanceOf[js.Any])
-    if (inventorySizeTargeting != null) __obj.updateDynamic("inventorySizeTargeting")(inventorySizeTargeting.asInstanceOf[js.Any])
-    if (placementTargeting != null) __obj.updateDynamic("placementTargeting")(placementTargeting.asInstanceOf[js.Any])
-    if (technologyTargeting != null) __obj.updateDynamic("technologyTargeting")(technologyTargeting.asInstanceOf[js.Any])
-    if (videoTargeting != null) __obj.updateDynamic("videoTargeting")(videoTargeting.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMarketplaceTargeting]
   }
+  @scala.inline
+  implicit class SchemaMarketplaceTargetingOps[Self <: SchemaMarketplaceTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGeoTargeting(value: SchemaCriteriaTargeting): Self = this.set("geoTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoTargeting: Self = this.set("geoTargeting", js.undefined)
+    @scala.inline
+    def setInventorySizeTargeting(value: SchemaInventorySizeTargeting): Self = this.set("inventorySizeTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventorySizeTargeting: Self = this.set("inventorySizeTargeting", js.undefined)
+    @scala.inline
+    def setPlacementTargeting(value: SchemaPlacementTargeting): Self = this.set("placementTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementTargeting: Self = this.set("placementTargeting", js.undefined)
+    @scala.inline
+    def setTechnologyTargeting(value: SchemaTechnologyTargeting): Self = this.set("technologyTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTechnologyTargeting: Self = this.set("technologyTargeting", js.undefined)
+    @scala.inline
+    def setVideoTargeting(value: SchemaVideoTargeting): Self = this.set("videoTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoTargeting: Self = this.set("videoTargeting", js.undefined)
+  }
+  
 }
 

@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.Import.PhotoImportSelectionChangedEventArgs")
 @js.native
 abstract class PhotoImportSelectionChangedEventArgs ()
-  extends typings.winrtUwp.Windows.Media.Import.PhotoImportSelectionChangedEventArgs {
-  /** Gets a value indicating whether no items are selected after the selection has changed. */
-  /* CompleteClass */
-  override var isSelectionEmpty: Boolean = js.native
-}
+  extends typings.winrtUwp.Windows.Media.Import.PhotoImportSelectionChangedEventArgs
 

@@ -4,35 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CameraOptions extends js.Object {
   /** If zooming, the zoom center (defaults to map center) */
-  var around: js.UndefOr[LngLatLike] = js.undefined
+  var around: js.UndefOr[LngLatLike] = js.native
   /** Map rotation bearing in degrees counter-clockwise from north */
-  var bearing: js.UndefOr[Double] = js.undefined
+  var bearing: js.UndefOr[Double] = js.native
   /** Map center */
-  var center: js.UndefOr[LngLatLike] = js.undefined
+  var center: js.UndefOr[LngLatLike] = js.native
   /** Map angle in degrees at which the camera is looking at the ground */
-  var pitch: js.UndefOr[Double] = js.undefined
+  var pitch: js.UndefOr[Double] = js.native
   /** Map zoom level */
-  var zoom: js.UndefOr[Double] = js.undefined
+  var zoom: js.UndefOr[Double] = js.native
 }
 
 object CameraOptions {
   @scala.inline
-  def apply(
-    around: LngLatLike = null,
-    bearing: js.UndefOr[Double] = js.undefined,
-    center: LngLatLike = null,
-    pitch: js.UndefOr[Double] = js.undefined,
-    zoom: js.UndefOr[Double] = js.undefined
-  ): CameraOptions = {
+  def apply(): CameraOptions = {
     val __obj = js.Dynamic.literal()
-    if (around != null) __obj.updateDynamic("around")(around.asInstanceOf[js.Any])
-    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraOptions]
   }
+  @scala.inline
+  implicit class CameraOptionsOps[Self <: CameraOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAround(value: LngLatLike): Self = this.set("around", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAround: Self = this.set("around", js.undefined)
+    @scala.inline
+    def setBearing(value: Double): Self = this.set("bearing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBearing: Self = this.set("bearing", js.undefined)
+    @scala.inline
+    def setCenter(value: LngLatLike): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenter: Self = this.set("center", js.undefined)
+    @scala.inline
+    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePitch: Self = this.set("pitch", js.undefined)
+    @scala.inline
+    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+  }
+  
 }
 

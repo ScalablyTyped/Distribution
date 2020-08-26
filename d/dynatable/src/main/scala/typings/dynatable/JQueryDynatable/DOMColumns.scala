@@ -16,6 +16,7 @@ trait DOMColumns extends js.Object {
     * @param skipUpdate A boolean allowing to skip the call to `dom.update()`
     */
   def add($column: JQuery, position: Double): Unit = js.native
+  def add($column: JQuery, position: Double, skipAppend: js.UndefOr[scala.Nothing], skipUpdate: Boolean): Unit = js.native
   def add($column: JQuery, position: Double, skipAppend: Boolean): Unit = js.native
   def add($column: JQuery, position: Double, skipAppend: Boolean, skipUpdate: Boolean): Unit = js.native
   /**

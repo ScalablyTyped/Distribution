@@ -12,33 +12,54 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojformlayout.ojFormLayoutSettableProperties> */
+@js.native
 trait ojFormLayoutSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var direction: js.UndefOr[column | row] = js.undefined
-  var labelEdge: js.UndefOr[start | top] = js.undefined
-  var labelWidth: js.UndefOr[String] = js.undefined
-  var labelWrapping: js.UndefOr[truncate | wrap] = js.undefined
-  var maxColumns: js.UndefOr[Double] = js.undefined
+  var direction: js.UndefOr[column | row] = js.native
+  var labelEdge: js.UndefOr[start | top] = js.native
+  var labelWidth: js.UndefOr[String] = js.native
+  var labelWrapping: js.UndefOr[truncate | wrap] = js.native
+  var maxColumns: js.UndefOr[Double] = js.native
 }
 
 object ojFormLayoutSettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    direction: column | row = null,
-    labelEdge: start | top = null,
-    labelWidth: String = null,
-    labelWrapping: truncate | wrap = null,
-    maxColumns: js.UndefOr[Double] = js.undefined
-  ): ojFormLayoutSettablePropertiesLenient = {
+  def apply(): ojFormLayoutSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (labelEdge != null) __obj.updateDynamic("labelEdge")(labelEdge.asInstanceOf[js.Any])
-    if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth.asInstanceOf[js.Any])
-    if (labelWrapping != null) __obj.updateDynamic("labelWrapping")(labelWrapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxColumns)) __obj.updateDynamic("maxColumns")(maxColumns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojFormLayoutSettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojFormLayoutSettablePropertiesLenientOps[Self <: ojFormLayoutSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirection(value: column | row): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setLabelEdge(value: start | top): Self = this.set("labelEdge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelEdge: Self = this.set("labelEdge", js.undefined)
+    @scala.inline
+    def setLabelWidth(value: String): Self = this.set("labelWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelWidth: Self = this.set("labelWidth", js.undefined)
+    @scala.inline
+    def setLabelWrapping(value: truncate | wrap): Self = this.set("labelWrapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelWrapping: Self = this.set("labelWrapping", js.undefined)
+    @scala.inline
+    def setMaxColumns(value: Double): Self = this.set("maxColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxColumns: Self = this.set("maxColumns", js.undefined)
+  }
+  
 }
 

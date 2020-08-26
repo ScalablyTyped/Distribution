@@ -26,16 +26,9 @@ object deleteAliasCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteAliasInput) = this()
-    /* CompleteClass */
-    override val input: DeleteAliasInput = js.native
     val middlewareStack: MiddlewareStack[DeleteAliasInput, DeleteAliasOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KMSResolvedConfiguration
-    ): Handler[DeleteAliasInput, DeleteAliasOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KMSResolvedConfiguration
     ): Handler[DeleteAliasInput, DeleteAliasOutput] = js.native
   }

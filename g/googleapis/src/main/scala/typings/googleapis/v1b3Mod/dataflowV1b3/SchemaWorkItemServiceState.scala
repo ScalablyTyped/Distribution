@@ -55,26 +55,56 @@ trait SchemaWorkItemServiceState extends js.Object {
 
 object SchemaWorkItemServiceState {
   @scala.inline
-  def apply(
-    harnessData: StringDictionary[js.Any] = null,
-    leaseExpireTime: String = null,
-    metricShortId: js.Array[SchemaMetricShortId] = null,
-    nextReportIndex: String = null,
-    reportStatusInterval: String = null,
-    splitRequest: SchemaApproximateSplitRequest = null,
-    suggestedStopPoint: SchemaApproximateProgress = null,
-    suggestedStopPosition: SchemaPosition = null
-  ): SchemaWorkItemServiceState = {
+  def apply(): SchemaWorkItemServiceState = {
     val __obj = js.Dynamic.literal()
-    if (harnessData != null) __obj.updateDynamic("harnessData")(harnessData.asInstanceOf[js.Any])
-    if (leaseExpireTime != null) __obj.updateDynamic("leaseExpireTime")(leaseExpireTime.asInstanceOf[js.Any])
-    if (metricShortId != null) __obj.updateDynamic("metricShortId")(metricShortId.asInstanceOf[js.Any])
-    if (nextReportIndex != null) __obj.updateDynamic("nextReportIndex")(nextReportIndex.asInstanceOf[js.Any])
-    if (reportStatusInterval != null) __obj.updateDynamic("reportStatusInterval")(reportStatusInterval.asInstanceOf[js.Any])
-    if (splitRequest != null) __obj.updateDynamic("splitRequest")(splitRequest.asInstanceOf[js.Any])
-    if (suggestedStopPoint != null) __obj.updateDynamic("suggestedStopPoint")(suggestedStopPoint.asInstanceOf[js.Any])
-    if (suggestedStopPosition != null) __obj.updateDynamic("suggestedStopPosition")(suggestedStopPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkItemServiceState]
   }
+  @scala.inline
+  implicit class SchemaWorkItemServiceStateOps[Self <: SchemaWorkItemServiceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHarnessData(value: StringDictionary[js.Any]): Self = this.set("harnessData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHarnessData: Self = this.set("harnessData", js.undefined)
+    @scala.inline
+    def setLeaseExpireTime(value: String): Self = this.set("leaseExpireTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaseExpireTime: Self = this.set("leaseExpireTime", js.undefined)
+    @scala.inline
+    def setMetricShortIdVarargs(value: SchemaMetricShortId*): Self = this.set("metricShortId", js.Array(value :_*))
+    @scala.inline
+    def setMetricShortId(value: js.Array[SchemaMetricShortId]): Self = this.set("metricShortId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricShortId: Self = this.set("metricShortId", js.undefined)
+    @scala.inline
+    def setNextReportIndex(value: String): Self = this.set("nextReportIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextReportIndex: Self = this.set("nextReportIndex", js.undefined)
+    @scala.inline
+    def setReportStatusInterval(value: String): Self = this.set("reportStatusInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportStatusInterval: Self = this.set("reportStatusInterval", js.undefined)
+    @scala.inline
+    def setSplitRequest(value: SchemaApproximateSplitRequest): Self = this.set("splitRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitRequest: Self = this.set("splitRequest", js.undefined)
+    @scala.inline
+    def setSuggestedStopPoint(value: SchemaApproximateProgress): Self = this.set("suggestedStopPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedStopPoint: Self = this.set("suggestedStopPoint", js.undefined)
+    @scala.inline
+    def setSuggestedStopPosition(value: SchemaPosition): Self = this.set("suggestedStopPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedStopPosition: Self = this.set("suggestedStopPosition", js.undefined)
+  }
+  
 }
 

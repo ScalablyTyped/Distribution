@@ -42,6 +42,7 @@ trait Filter extends Effect {
     *   frequency from 0.001 to 1000
     */
   def process(Signal: js.Object): Unit = js.native
+  def process(Signal: js.Object, freq: js.UndefOr[scala.Nothing], res: Double): Unit = js.native
   def process(Signal: js.Object, freq: Double): Unit = js.native
   def process(Signal: js.Object, freq: Double, res: Double): Unit = js.native
   /**
@@ -63,7 +64,11 @@ trait Filter extends Effect {
     *   seconds from now
     */
   def set(): Unit = js.native
+  def set(freq: js.UndefOr[scala.Nothing], res: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
+  def set(freq: js.UndefOr[scala.Nothing], res: Double): Unit = js.native
+  def set(freq: js.UndefOr[scala.Nothing], res: Double, timeFromNow: Double): Unit = js.native
   def set(freq: Double): Unit = js.native
+  def set(freq: Double, res: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
   def set(freq: Double, res: Double): Unit = js.native
   def set(freq: Double, res: Double, timeFromNow: Double): Unit = js.native
   /**

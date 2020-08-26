@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Event & {  error  :std.Error} */
+/* Inlined std.Event & {  error :std.Error} */
 @js.native
 trait EventerrorError extends js.Object {
   val AT_TARGET: Double = js.native
@@ -63,6 +63,7 @@ trait EventerrorError extends js.Object {
     */
   def composedPath(): js.Array[EventTarget] = js.native
   def initEvent(`type`: String): Unit = js.native
+  def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
   /**

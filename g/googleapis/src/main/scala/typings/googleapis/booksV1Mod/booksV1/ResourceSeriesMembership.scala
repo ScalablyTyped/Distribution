@@ -29,6 +29,7 @@ class ResourceSeriesMembership protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSeriesmembership] = js.native
   def get(callback: BodyResponseCallback[SchemaSeriesmembership]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSeriesmembership] = js.native
   def get(params: ParamsResourceSeriesMembershipGet): GaxiosPromise[SchemaSeriesmembership] = js.native
   def get(params: ParamsResourceSeriesMembershipGet, callback: BodyResponseCallback[SchemaSeriesmembership]): Unit = js.native
   def get(

@@ -32,8 +32,10 @@ trait FormBuilder extends ContainerBuilder[FormContainer, FormLayout, FormItemLa
     */
   def insertFormItem(formComponent: FormComponent): Unit = js.native
   def insertFormItem(formComponent: FormComponentGroup): Unit = js.native
+  def insertFormItem(formComponent: FormComponentGroup, index: js.UndefOr[scala.Nothing], itemLayout: FormItemLayout): Unit = js.native
   def insertFormItem(formComponent: FormComponentGroup, index: Double): Unit = js.native
   def insertFormItem(formComponent: FormComponentGroup, index: Double, itemLayout: FormItemLayout): Unit = js.native
+  def insertFormItem(formComponent: FormComponent, index: js.UndefOr[scala.Nothing], itemLayout: FormItemLayout): Unit = js.native
   def insertFormItem(formComponent: FormComponent, index: Double): Unit = js.native
   def insertFormItem(formComponent: FormComponent, index: Double, itemLayout: FormItemLayout): Unit = js.native
   /**

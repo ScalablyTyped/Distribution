@@ -4,24 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadSubPackageOptions
   extends BaseOptions[js.Any, js.Any] {
-  var root: String
+  var root: String = js.native
 }
 
 object LoadSubPackageOptions {
   @scala.inline
-  def apply(
-    root: String,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null,
-    success: js.Any => Unit = null
-  ): LoadSubPackageOptions = {
+  def apply(root: String): LoadSubPackageOptions = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[LoadSubPackageOptions]
   }
+  @scala.inline
+  implicit class LoadSubPackageOptionsOps[Self <: LoadSubPackageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+  }
+  
 }
 

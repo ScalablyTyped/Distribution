@@ -18,14 +18,15 @@ import scala.scalajs.js.annotation._
   * @property dragTarget {(H.map.Object | H.Map)} - Object which is currently dragged by the pointer
   * @property button {H.mapevents.Pointer.Button} - Indicates which pointer device button has changed.
   */
+@js.native
 trait Pointer extends js.Object {
-  var button: Button
-  var dragTarget: Object | Map_
-  var id: Double
-  var target: Object | Map_
-  var `type`: String
-  var viewportX: Double
-  var viewportY: Double
+  var button: Button = js.native
+  var dragTarget: Object | Map_ = js.native
+  var id: Double = js.native
+  var target: Object | Map_ = js.native
+  var `type`: String = js.native
+  var viewportX: Double = js.native
+  var viewportY: Double = js.native
 }
 
 @JSGlobal("H.mapevents.Pointer")

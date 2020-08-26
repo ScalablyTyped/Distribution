@@ -38,24 +38,58 @@ trait AwsEc2SecurityGroupIpPermission extends js.Object {
 
 object AwsEc2SecurityGroupIpPermission {
   @scala.inline
-  def apply(
-    FromPort: js.UndefOr[Integer] = js.undefined,
-    IpProtocol: NonEmptyString = null,
-    IpRanges: AwsEc2SecurityGroupIpRangeList = null,
-    Ipv6Ranges: AwsEc2SecurityGroupIpv6RangeList = null,
-    PrefixListIds: AwsEc2SecurityGroupPrefixListIdList = null,
-    ToPort: js.UndefOr[Integer] = js.undefined,
-    UserIdGroupPairs: AwsEc2SecurityGroupUserIdGroupPairList = null
-  ): AwsEc2SecurityGroupIpPermission = {
+  def apply(): AwsEc2SecurityGroupIpPermission = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort.get.asInstanceOf[js.Any])
-    if (IpProtocol != null) __obj.updateDynamic("IpProtocol")(IpProtocol.asInstanceOf[js.Any])
-    if (IpRanges != null) __obj.updateDynamic("IpRanges")(IpRanges.asInstanceOf[js.Any])
-    if (Ipv6Ranges != null) __obj.updateDynamic("Ipv6Ranges")(Ipv6Ranges.asInstanceOf[js.Any])
-    if (PrefixListIds != null) __obj.updateDynamic("PrefixListIds")(PrefixListIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort.get.asInstanceOf[js.Any])
-    if (UserIdGroupPairs != null) __obj.updateDynamic("UserIdGroupPairs")(UserIdGroupPairs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsEc2SecurityGroupIpPermission]
   }
+  @scala.inline
+  implicit class AwsEc2SecurityGroupIpPermissionOps[Self <: AwsEc2SecurityGroupIpPermission] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFromPort(value: Integer): Self = this.set("FromPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromPort: Self = this.set("FromPort", js.undefined)
+    @scala.inline
+    def setIpProtocol(value: NonEmptyString): Self = this.set("IpProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpProtocol: Self = this.set("IpProtocol", js.undefined)
+    @scala.inline
+    def setIpRangesVarargs(value: AwsEc2SecurityGroupIpRange*): Self = this.set("IpRanges", js.Array(value :_*))
+    @scala.inline
+    def setIpRanges(value: AwsEc2SecurityGroupIpRangeList): Self = this.set("IpRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpRanges: Self = this.set("IpRanges", js.undefined)
+    @scala.inline
+    def setIpv6RangesVarargs(value: AwsEc2SecurityGroupIpv6Range*): Self = this.set("Ipv6Ranges", js.Array(value :_*))
+    @scala.inline
+    def setIpv6Ranges(value: AwsEc2SecurityGroupIpv6RangeList): Self = this.set("Ipv6Ranges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Ranges: Self = this.set("Ipv6Ranges", js.undefined)
+    @scala.inline
+    def setPrefixListIdsVarargs(value: AwsEc2SecurityGroupPrefixListId*): Self = this.set("PrefixListIds", js.Array(value :_*))
+    @scala.inline
+    def setPrefixListIds(value: AwsEc2SecurityGroupPrefixListIdList): Self = this.set("PrefixListIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixListIds: Self = this.set("PrefixListIds", js.undefined)
+    @scala.inline
+    def setToPort(value: Integer): Self = this.set("ToPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToPort: Self = this.set("ToPort", js.undefined)
+    @scala.inline
+    def setUserIdGroupPairsVarargs(value: AwsEc2SecurityGroupUserIdGroupPair*): Self = this.set("UserIdGroupPairs", js.Array(value :_*))
+    @scala.inline
+    def setUserIdGroupPairs(value: AwsEc2SecurityGroupUserIdGroupPairList): Self = this.set("UserIdGroupPairs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIdGroupPairs: Self = this.set("UserIdGroupPairs", js.undefined)
+  }
+  
 }
 

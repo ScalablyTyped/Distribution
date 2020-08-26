@@ -27,12 +27,34 @@ trait SchemaGender extends js.Object {
 
 object SchemaGender {
   @scala.inline
-  def apply(formattedValue: String = null, metadata: SchemaFieldMetadata = null, value: String = null): SchemaGender = {
+  def apply(): SchemaGender = {
     val __obj = js.Dynamic.literal()
-    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGender]
   }
+  @scala.inline
+  implicit class SchemaGenderOps[Self <: SchemaGender] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormattedValue(value: String): Self = this.set("formattedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattedValue: Self = this.set("formattedValue", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaFieldMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

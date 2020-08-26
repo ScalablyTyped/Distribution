@@ -27,6 +27,8 @@ class Job protected () extends CustomResource {
   def this(name: String, args: JobArgs, opts: CustomResourceOptions) = this()
   /**
     * **DEPRECATED** (Optional) The number of AWS Glue data processing units (DPUs) to allocate to this Job. At least 2 DPUs need to be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory.
+    *
+    * @deprecated Please use attribute `max_capacity' instead. This attribute might be removed in future releases.
     */
   val allocatedCapacity: Output_[Double] = js.native
   /**
@@ -44,7 +46,7 @@ class Job protected () extends CustomResource {
   /**
     * The map of default arguments for this job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the [Calling AWS Glue APIs in Python](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html) topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the [Special Parameters Used by AWS Glue](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html) topic in the developer guide.
     */
-  val defaultArguments: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val defaultArguments: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Description of the job.
     */
@@ -86,9 +88,9 @@ class Job protected () extends CustomResource {
     */
   val securityConfiguration: Output_[js.UndefOr[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The job timeout in minutes. The default is 2880 minutes (48 hours).
     */
@@ -110,8 +112,10 @@ object Job extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Job = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Job = js.native
   def get(name: String, id: Input[ID], state: JobState): Job = js.native
   def get(name: String, id: Input[ID], state: JobState, opts: CustomResourceOptions): Job = js.native
   /**

@@ -1,52 +1,63 @@
 package typings.antdMobile.tabBarMod
 
-import typings.antdMobile.antdMobileStrings.bottom
-import typings.antdMobile.antdMobileStrings.top
 import typings.antdMobile.tabBarPropsTypeMod.TabBarProps
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AntTabbarProps extends TabBarProps {
-  var className: js.UndefOr[String] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var noRenderContent: js.UndefOr[Boolean] = js.undefined
-  var placeholder: js.UndefOr[ReactNode] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var noRenderContent: js.UndefOr[Boolean] = js.native
+  var placeholder: js.UndefOr[ReactNode] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var prerenderingSiblingsNumber: js.UndefOr[Double] = js.native
 }
 
 object AntTabbarProps {
   @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    barTintColor: String = null,
-    className: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    noRenderContent: js.UndefOr[Boolean] = js.undefined,
-    placeholder: ReactNode = null,
-    prefixCls: String = null,
-    prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined,
-    swipeable: js.UndefOr[Boolean] = js.undefined,
-    tabBarPosition: top | bottom = null,
-    tintColor: String = null,
-    unselectedTintColor: String = null
-  ): AntTabbarProps = {
+  def apply(): AntTabbarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noRenderContent)) __obj.updateDynamic("noRenderContent")(noRenderContent.get.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(prerenderingSiblingsNumber)) __obj.updateDynamic("prerenderingSiblingsNumber")(prerenderingSiblingsNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeable)) __obj.updateDynamic("swipeable")(swipeable.get.asInstanceOf[js.Any])
-    if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
-    if (unselectedTintColor != null) __obj.updateDynamic("unselectedTintColor")(unselectedTintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntTabbarProps]
   }
+  @scala.inline
+  implicit class AntTabbarPropsOps[Self <: AntTabbarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setNoRenderContent(value: Boolean): Self = this.set("noRenderContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoRenderContent: Self = this.set("noRenderContent", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: ReactNode): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setPrerenderingSiblingsNumber(value: Double): Self = this.set("prerenderingSiblingsNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrerenderingSiblingsNumber: Self = this.set("prerenderingSiblingsNumber", js.undefined)
+  }
+  
 }
 

@@ -1,9 +1,6 @@
 package typings.gapiCalendar
 
 import typings.gapi.gapi.client.HttpRequest
-import typings.gapiCalendar.anon.Date
-import typings.gapiCalendar.anon.DisplayName
-import typings.gapiCalendar.anon.UseDefault
 import typings.gapiCalendar.gapi.client.calendar.AclDeleteParameters
 import typings.gapiCalendar.gapi.client.calendar.AclGetParameters
 import typings.gapiCalendar.gapi.client.calendar.AclInsertParameters
@@ -25,9 +22,6 @@ import typings.gapiCalendar.gapi.client.calendar.EventsUpdateParameters
 import typings.gapiCalendar.gapi.client.calendar.Events_
 import typings.gapiCalendar.gapi.client.calendar.FreeBusyQueryParameters
 import typings.gapiCalendar.gapi.client.calendar.FreeBusy_
-import typings.gapiCalendar.gapi.client.calendar.datetime
-import typings.gapiCalendar.gapi.client.calendar.integer
-import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersignevent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,44 +37,7 @@ object global extends js.Object {
       object calendar extends js.Object {
         @js.native
         class Event ()
-          extends typings.gapiCalendar.gapi.client.calendar.Event {
-          /* CompleteClass */
-          override var created: datetime = js.native
-          // The creator of the event. Read-only.
-          /* CompleteClass */
-          override var creator: DisplayName = js.native
-          /* CompleteClass */
-          override var description: String = js.native
-          // The (exclusive) end time of the event. For a recurring event, this is the end time of the first instance.
-          /* CompleteClass */
-          override var end: Date = js.native
-          /* CompleteClass */
-          override var etag: typings.gapiCalendar.gapi.client.calendar.etag = js.native
-          /* CompleteClass */
-          override var htmlLink: String = js.native
-          /* CompleteClass */
-          override var iCalUID: String = js.native
-          /* CompleteClass */
-          override var id: String = js.native
-          /* CompleteClass */
-          override var kind: calendarNumbersignevent = js.native
-          // The organizer of the event.
-          /* CompleteClass */
-          override var organizer: DisplayName = js.native
-          /* CompleteClass */
-          override var recurrence: js.Array[String] = js.native
-          /* CompleteClass */
-          override var reminders: UseDefault = js.native
-          /* CompleteClass */
-          override var sequence: integer = js.native
-          // The (inclusive) start time of the event. For a recurring event, this is the start time of the first instance.
-          /* CompleteClass */
-          override var start: Date = js.native
-          /* CompleteClass */
-          override var summary: String = js.native
-          /* CompleteClass */
-          override var updated: datetime = js.native
-        }
+          extends typings.gapiCalendar.gapi.client.calendar.Event
         
         @js.native
         class acl ()

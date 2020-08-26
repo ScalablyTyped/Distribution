@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SVGAnimatedAngle")
 @js.native
 class SVGAnimatedAngle ()
-  extends typings.std.SVGAnimatedAngle {
-  /* CompleteClass */
-  override val animVal: typings.std.SVGAngle = js.native
-  /* CompleteClass */
-  override val baseVal: typings.std.SVGAngle = js.native
-}
+  extends typings.std.SVGAnimatedAngle
 
 @JSGlobal("SVGAnimatedAngle")
 @js.native

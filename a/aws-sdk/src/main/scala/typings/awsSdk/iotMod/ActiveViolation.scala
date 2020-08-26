@@ -38,24 +38,50 @@ trait ActiveViolation extends js.Object {
 
 object ActiveViolation {
   @scala.inline
-  def apply(
-    behavior: Behavior = null,
-    lastViolationTime: Timestamp = null,
-    lastViolationValue: MetricValue = null,
-    securityProfileName: SecurityProfileName = null,
-    thingName: DeviceDefenderThingName = null,
-    violationId: ViolationId = null,
-    violationStartTime: Timestamp = null
-  ): ActiveViolation = {
+  def apply(): ActiveViolation = {
     val __obj = js.Dynamic.literal()
-    if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
-    if (lastViolationTime != null) __obj.updateDynamic("lastViolationTime")(lastViolationTime.asInstanceOf[js.Any])
-    if (lastViolationValue != null) __obj.updateDynamic("lastViolationValue")(lastViolationValue.asInstanceOf[js.Any])
-    if (securityProfileName != null) __obj.updateDynamic("securityProfileName")(securityProfileName.asInstanceOf[js.Any])
-    if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])
-    if (violationId != null) __obj.updateDynamic("violationId")(violationId.asInstanceOf[js.Any])
-    if (violationStartTime != null) __obj.updateDynamic("violationStartTime")(violationStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveViolation]
   }
+  @scala.inline
+  implicit class ActiveViolationOps[Self <: ActiveViolation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBehavior(value: Behavior): Self = this.set("behavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBehavior: Self = this.set("behavior", js.undefined)
+    @scala.inline
+    def setLastViolationTime(value: Timestamp): Self = this.set("lastViolationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastViolationTime: Self = this.set("lastViolationTime", js.undefined)
+    @scala.inline
+    def setLastViolationValue(value: MetricValue): Self = this.set("lastViolationValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastViolationValue: Self = this.set("lastViolationValue", js.undefined)
+    @scala.inline
+    def setSecurityProfileName(value: SecurityProfileName): Self = this.set("securityProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityProfileName: Self = this.set("securityProfileName", js.undefined)
+    @scala.inline
+    def setThingName(value: DeviceDefenderThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingName: Self = this.set("thingName", js.undefined)
+    @scala.inline
+    def setViolationId(value: ViolationId): Self = this.set("violationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViolationId: Self = this.set("violationId", js.undefined)
+    @scala.inline
+    def setViolationStartTime(value: Timestamp): Self = this.set("violationStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViolationStartTime: Self = this.set("violationStartTime", js.undefined)
+  }
+  
 }
 

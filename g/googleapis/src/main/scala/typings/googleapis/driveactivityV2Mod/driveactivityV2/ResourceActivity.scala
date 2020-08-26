@@ -27,6 +27,7 @@ class ResourceActivity protected () extends js.Object {
     */
   def query(): GaxiosPromise[SchemaQueryDriveActivityResponse] = js.native
   def query(callback: BodyResponseCallback[SchemaQueryDriveActivityResponse]): Unit = js.native
+  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQueryDriveActivityResponse] = js.native
   def query(params: ParamsResourceActivityQuery): GaxiosPromise[SchemaQueryDriveActivityResponse] = js.native
   def query(
     params: ParamsResourceActivityQuery,

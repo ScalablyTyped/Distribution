@@ -237,6 +237,7 @@ object mod extends js.Object {
   def minmax[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* first */ T, /* second */ T, Double]): js.UndefOr[js.Tuple2[T, T]] = js.native
   def once[T](value: T): IIterator[T] = js.native
   def range(start: Double): IIterator[Double] = js.native
+  def range(start: Double, stop: js.UndefOr[scala.Nothing], step: Double): IIterator[Double] = js.native
   def range(start: Double, stop: Double): IIterator[Double] = js.native
   def range(start: Double, stop: Double, step: Double): IIterator[Double] = js.native
   def reduce[T](
@@ -295,6 +296,7 @@ object mod extends js.Object {
       * ```
       */
     def fill[T](array: MutableArrayLike[T], value: T): Unit = js.native
+    def fill[T](array: MutableArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
     def fill[T](array: MutableArrayLike[T], value: T, start: Double): Unit = js.native
     def fill[T](array: MutableArrayLike[T], value: T, start: Double, stop: Double): Unit = js.native
     /**
@@ -342,6 +344,12 @@ object mod extends js.Object {
       * ```
       */
     def findFirstIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
+    def findFirstIndex[T](
+      array: ArrayLike[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: js.UndefOr[scala.Nothing],
+      stop: Double
+    ): Double = js.native
     def findFirstIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
     def findFirstIndex[T](
       array: ArrayLike[T],
@@ -394,6 +402,12 @@ object mod extends js.Object {
       * ```
       */
     def findFirstValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
+    def findFirstValue[T](
+      array: ArrayLike[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: js.UndefOr[scala.Nothing],
+      stop: Double
+    ): js.UndefOr[T] = js.native
     def findFirstValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): js.UndefOr[T] = js.native
     def findFirstValue[T](
       array: ArrayLike[T],
@@ -446,6 +460,12 @@ object mod extends js.Object {
       * ```
       */
     def findLastIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
+    def findLastIndex[T](
+      array: ArrayLike[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: js.UndefOr[scala.Nothing],
+      stop: Double
+    ): Double = js.native
     def findLastIndex[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
     def findLastIndex[T](
       array: ArrayLike[T],
@@ -498,6 +518,12 @@ object mod extends js.Object {
       * ```
       */
     def findLastValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
+    def findLastValue[T](
+      array: ArrayLike[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: js.UndefOr[scala.Nothing],
+      stop: Double
+    ): js.UndefOr[T] = js.native
     def findLastValue[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): js.UndefOr[T] = js.native
     def findLastValue[T](
       array: ArrayLike[T],
@@ -546,6 +572,7 @@ object mod extends js.Object {
       * ```
       */
     def firstIndexOf[T](array: ArrayLike[T], value: T): Double = js.native
+    def firstIndexOf[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
     def firstIndexOf[T](array: ArrayLike[T], value: T, start: Double): Double = js.native
     def firstIndexOf[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = js.native
     /**
@@ -617,6 +644,7 @@ object mod extends js.Object {
       * ```
       */
     def lastIndexOf[T](array: ArrayLike[T], value: T): Double = js.native
+    def lastIndexOf[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
     def lastIndexOf[T](array: ArrayLike[T], value: T, start: Double): Double = js.native
     def lastIndexOf[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = js.native
     /**
@@ -675,6 +703,13 @@ object mod extends js.Object {
       * ```
       */
     def lowerBound[T, U](array: ArrayLike[T], value: U, fn: js.Function2[/* element */ T, /* value */ U, Double]): Double = js.native
+    def lowerBound[T, U](
+      array: ArrayLike[T],
+      value: U,
+      fn: js.Function2[/* element */ T, /* value */ U, Double],
+      start: js.UndefOr[scala.Nothing],
+      stop: Double
+    ): Double = js.native
     def lowerBound[T, U](
       array: ArrayLike[T],
       value: U,
@@ -751,6 +786,7 @@ object mod extends js.Object {
       * ```
       */
     def removeAllOf[T](array: js.Array[T], value: T): Double = js.native
+    def removeAllOf[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
     def removeAllOf[T](array: js.Array[T], value: T, start: Double): Double = js.native
     def removeAllOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
     /**
@@ -795,6 +831,12 @@ object mod extends js.Object {
       * ```
       */
     def removeAllWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
+    def removeAllWhere[T](
+      array: js.Array[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: js.UndefOr[scala.Nothing],
+      stop: Double
+    ): Double = js.native
     def removeAllWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
     def removeAllWhere[T](
       array: js.Array[T],
@@ -867,6 +909,7 @@ object mod extends js.Object {
       * ```
       */
     def removeFirstOf[T](array: js.Array[T], value: T): Double = js.native
+    def removeFirstOf[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
     def removeFirstOf[T](array: js.Array[T], value: T, start: Double): Double = js.native
     def removeFirstOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
     /**
@@ -908,6 +951,12 @@ object mod extends js.Object {
       * ```
       */
     def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
+    def removeFirstWhere[T](
+      array: js.Array[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: js.UndefOr[scala.Nothing],
+      stop: Double
+    ): Index[T] = js.native
     def removeFirstWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
     def removeFirstWhere[T](
       array: js.Array[T],
@@ -952,6 +1001,7 @@ object mod extends js.Object {
       * ```
       */
     def removeLastOf[T](array: js.Array[T], value: T): Double = js.native
+    def removeLastOf[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
     def removeLastOf[T](array: js.Array[T], value: T, start: Double): Double = js.native
     def removeLastOf[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
     /**
@@ -993,6 +1043,12 @@ object mod extends js.Object {
       * ```
       */
     def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
+    def removeLastWhere[T](
+      array: js.Array[T],
+      fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+      start: js.UndefOr[scala.Nothing],
+      stop: Double
+    ): Index[T] = js.native
     def removeLastWhere[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
     def removeLastWhere[T](
       array: js.Array[T],
@@ -1030,6 +1086,7 @@ object mod extends js.Object {
       * ```
       */
     def reverse[T](array: MutableArrayLike[T]): Unit = js.native
+    def reverse[T](array: MutableArrayLike[T], start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
     def reverse[T](array: MutableArrayLike[T], start: Double): Unit = js.native
     def reverse[T](array: MutableArrayLike[T], start: Double, stop: Double): Unit = js.native
     /**
@@ -1068,6 +1125,7 @@ object mod extends js.Object {
       * ```
       */
     def rotate[T](array: MutableArrayLike[T], delta: Double): Unit = js.native
+    def rotate[T](array: MutableArrayLike[T], delta: Double, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
     def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double): Unit = js.native
     def rotate[T](array: MutableArrayLike[T], delta: Double, start: Double, stop: Double): Unit = js.native
     /**
@@ -1158,6 +1216,13 @@ object mod extends js.Object {
       * ```
       */
     def upperBound[T, U](array: ArrayLike[T], value: U, fn: js.Function2[/* element */ T, /* value */ U, Double]): Double = js.native
+    def upperBound[T, U](
+      array: ArrayLike[T],
+      value: U,
+      fn: js.Function2[/* element */ T, /* value */ U, Double],
+      start: js.UndefOr[scala.Nothing],
+      stop: Double
+    ): Double = js.native
     def upperBound[T, U](
       array: ArrayLike[T],
       value: U,

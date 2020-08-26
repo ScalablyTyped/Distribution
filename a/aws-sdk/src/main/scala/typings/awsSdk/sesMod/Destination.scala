@@ -22,12 +22,40 @@ trait Destination extends js.Object {
 
 object Destination {
   @scala.inline
-  def apply(BccAddresses: AddressList = null, CcAddresses: AddressList = null, ToAddresses: AddressList = null): Destination = {
+  def apply(): Destination = {
     val __obj = js.Dynamic.literal()
-    if (BccAddresses != null) __obj.updateDynamic("BccAddresses")(BccAddresses.asInstanceOf[js.Any])
-    if (CcAddresses != null) __obj.updateDynamic("CcAddresses")(CcAddresses.asInstanceOf[js.Any])
-    if (ToAddresses != null) __obj.updateDynamic("ToAddresses")(ToAddresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Destination]
   }
+  @scala.inline
+  implicit class DestinationOps[Self <: Destination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBccAddressesVarargs(value: Address*): Self = this.set("BccAddresses", js.Array(value :_*))
+    @scala.inline
+    def setBccAddresses(value: AddressList): Self = this.set("BccAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBccAddresses: Self = this.set("BccAddresses", js.undefined)
+    @scala.inline
+    def setCcAddressesVarargs(value: Address*): Self = this.set("CcAddresses", js.Array(value :_*))
+    @scala.inline
+    def setCcAddresses(value: AddressList): Self = this.set("CcAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCcAddresses: Self = this.set("CcAddresses", js.undefined)
+    @scala.inline
+    def setToAddressesVarargs(value: Address*): Self = this.set("ToAddresses", js.Array(value :_*))
+    @scala.inline
+    def setToAddresses(value: AddressList): Self = this.set("ToAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToAddresses: Self = this.set("ToAddresses", js.undefined)
+  }
+  
 }
 

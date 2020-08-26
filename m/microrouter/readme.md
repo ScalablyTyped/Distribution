@@ -12,7 +12,7 @@ Typings are for version 3.1
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 42 |
-| # downloads        | 199696 |
+| # downloads        | 200539 |
 | # stars            | 3 |
 
 ## Links

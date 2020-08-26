@@ -27,11 +27,30 @@ trait SchemaPkixPublicKey extends js.Object {
 
 object SchemaPkixPublicKey {
   @scala.inline
-  def apply(publicKeyPem: String = null, signatureAlgorithm: String = null): SchemaPkixPublicKey = {
+  def apply(): SchemaPkixPublicKey = {
     val __obj = js.Dynamic.literal()
-    if (publicKeyPem != null) __obj.updateDynamic("publicKeyPem")(publicKeyPem.asInstanceOf[js.Any])
-    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPkixPublicKey]
   }
+  @scala.inline
+  implicit class SchemaPkixPublicKeyOps[Self <: SchemaPkixPublicKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPublicKeyPem(value: String): Self = this.set("publicKeyPem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKeyPem: Self = this.set("publicKeyPem", js.undefined)
+    @scala.inline
+    def setSignatureAlgorithm(value: String): Self = this.set("signatureAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatureAlgorithm: Self = this.set("signatureAlgorithm", js.undefined)
+  }
+  
 }
 

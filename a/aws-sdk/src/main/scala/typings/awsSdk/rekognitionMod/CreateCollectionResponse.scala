@@ -22,16 +22,34 @@ trait CreateCollectionResponse extends js.Object {
 
 object CreateCollectionResponse {
   @scala.inline
-  def apply(
-    CollectionArn: String = null,
-    FaceModelVersion: String = null,
-    StatusCode: js.UndefOr[UInteger] = js.undefined
-  ): CreateCollectionResponse = {
+  def apply(): CreateCollectionResponse = {
     val __obj = js.Dynamic.literal()
-    if (CollectionArn != null) __obj.updateDynamic("CollectionArn")(CollectionArn.asInstanceOf[js.Any])
-    if (FaceModelVersion != null) __obj.updateDynamic("FaceModelVersion")(FaceModelVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectionResponse]
   }
+  @scala.inline
+  implicit class CreateCollectionResponseOps[Self <: CreateCollectionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectionArn(value: String): Self = this.set("CollectionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionArn: Self = this.set("CollectionArn", js.undefined)
+    @scala.inline
+    def setFaceModelVersion(value: String): Self = this.set("FaceModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceModelVersion: Self = this.set("FaceModelVersion", js.undefined)
+    @scala.inline
+    def setStatusCode(value: UInteger): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+  }
+  
 }
 

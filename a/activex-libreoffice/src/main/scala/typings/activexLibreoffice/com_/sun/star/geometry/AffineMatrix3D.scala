@@ -27,19 +27,20 @@ import scala.scalajs.js.annotation._
   * (including projection to 2D) and the device resolution determine the actual measurement unit in 3D.
   * @since OOo 2.0
   */
+@js.native
 trait AffineMatrix3D extends js.Object {
-  var m00: Double
-  var m01: Double
-  var m02: Double
-  var m03: Double
-  var m10: Double
-  var m11: Double
-  var m12: Double
-  var m13: Double
-  var m20: Double
-  var m21: Double
-  var m22: Double
-  var m23: Double
+  var m00: Double = js.native
+  var m01: Double = js.native
+  var m02: Double = js.native
+  var m03: Double = js.native
+  var m10: Double = js.native
+  var m11: Double = js.native
+  var m12: Double = js.native
+  var m13: Double = js.native
+  var m20: Double = js.native
+  var m21: Double = js.native
+  var m22: Double = js.native
+  var m23: Double = js.native
 }
 
 object AffineMatrix3D {
@@ -61,5 +62,42 @@ object AffineMatrix3D {
     val __obj = js.Dynamic.literal(m00 = m00.asInstanceOf[js.Any], m01 = m01.asInstanceOf[js.Any], m02 = m02.asInstanceOf[js.Any], m03 = m03.asInstanceOf[js.Any], m10 = m10.asInstanceOf[js.Any], m11 = m11.asInstanceOf[js.Any], m12 = m12.asInstanceOf[js.Any], m13 = m13.asInstanceOf[js.Any], m20 = m20.asInstanceOf[js.Any], m21 = m21.asInstanceOf[js.Any], m22 = m22.asInstanceOf[js.Any], m23 = m23.asInstanceOf[js.Any])
     __obj.asInstanceOf[AffineMatrix3D]
   }
+  @scala.inline
+  implicit class AffineMatrix3DOps[Self <: AffineMatrix3D] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setM00(value: Double): Self = this.set("m00", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM01(value: Double): Self = this.set("m01", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM02(value: Double): Self = this.set("m02", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM03(value: Double): Self = this.set("m03", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM10(value: Double): Self = this.set("m10", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM11(value: Double): Self = this.set("m11", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM12(value: Double): Self = this.set("m12", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM13(value: Double): Self = this.set("m13", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM20(value: Double): Self = this.set("m20", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM21(value: Double): Self = this.set("m21", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM22(value: Double): Self = this.set("m22", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setM23(value: Double): Self = this.set("m23", value.asInstanceOf[js.Any])
+  }
+  
 }
 

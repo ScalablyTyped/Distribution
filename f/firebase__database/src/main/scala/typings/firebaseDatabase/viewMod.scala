@@ -34,7 +34,6 @@ object viewMod extends js.Object {
       * @param {!EventRegistration} eventRegistration
       */
     def addEventRegistration(eventRegistration: EventRegistration): Unit = js.native
-    def applyOperation(operation: Operation, writesCache: WriteTreeRef): js.Array[Event] = js.native
     /**
       * Applies the given Operation, updates our cache, and returns the appropriate events.
       *
@@ -43,6 +42,7 @@ object viewMod extends js.Object {
       * @param {?Node} completeServerCache
       * @return {!Array.<!Event>}
       */
+    def applyOperation(operation: Operation, writesCache: WriteTreeRef): js.Array[Event] = js.native
     def applyOperation(operation: Operation, writesCache: WriteTreeRef, completeServerCache: Node): js.Array[Event] = js.native
     /**
       * @private
@@ -75,13 +75,13 @@ object viewMod extends js.Object {
       * @return {boolean}
       */
     def isEmpty(): Boolean = js.native
-    def removeEventRegistration(): js.Array[Event] = js.native
-    def removeEventRegistration(eventRegistration: Null, cancelError: Error): js.Array[Event] = js.native
     /**
       * @param {?EventRegistration} eventRegistration If null, remove all callbacks.
       * @param {Error=} cancelError If a cancelError is provided, appropriate cancel events will be returned.
       * @return {!Array.<!Event>} Cancel events, if cancelError was provided.
       */
+    def removeEventRegistration(): js.Array[Event] = js.native
+    def removeEventRegistration(eventRegistration: Null, cancelError: Error): js.Array[Event] = js.native
     def removeEventRegistration(eventRegistration: EventRegistration): js.Array[Event] = js.native
     def removeEventRegistration(eventRegistration: EventRegistration, cancelError: Error): js.Array[Event] = js.native
   }

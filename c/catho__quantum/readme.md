@@ -1,7 +1,7 @@
 
 # Scala.js typings for catho__quantum
 
-Typings are for version 4.4.0
+Typings are for version 5.3.0
 
 ## Library description:
 Catho react components
@@ -10,9 +10,9 @@ Catho react components
 | ------------------ | :-------------: |
 | Full name          | @catho/quantum |
 | Keywords           | catho, react, components, style, guide, quantum |
-| # releases         | 85 |
+| # releases         | 82 |
 | # dependents       | 1 |
-| # downloads        | 18904 |
+| # downloads        | 18241 |
 | # stars            | 0 |
 
 ## Links

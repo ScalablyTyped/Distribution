@@ -42,26 +42,62 @@ trait ContainerOverride extends js.Object {
 
 object ContainerOverride {
   @scala.inline
-  def apply(
-    command: StringList = null,
-    cpu: js.UndefOr[BoxedInteger] = js.undefined,
-    environment: EnvironmentVariables = null,
-    environmentFiles: EnvironmentFiles = null,
-    memory: js.UndefOr[BoxedInteger] = js.undefined,
-    memoryReservation: js.UndefOr[BoxedInteger] = js.undefined,
-    name: String = null,
-    resourceRequirements: ResourceRequirements = null
-  ): ContainerOverride = {
+  def apply(): ContainerOverride = {
     val __obj = js.Dynamic.literal()
-    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.get.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (environmentFiles != null) __obj.updateDynamic("environmentFiles")(environmentFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(memoryReservation)) __obj.updateDynamic("memoryReservation")(memoryReservation.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerOverride]
   }
+  @scala.inline
+  implicit class ContainerOverrideOps[Self <: ContainerOverride] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommandVarargs(value: String*): Self = this.set("command", js.Array(value :_*))
+    @scala.inline
+    def setCommand(value: StringList): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("command", js.undefined)
+    @scala.inline
+    def setCpu(value: BoxedInteger): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setEnvironmentVarargs(value: KeyValuePair*): Self = this.set("environment", js.Array(value :_*))
+    @scala.inline
+    def setEnvironment(value: EnvironmentVariables): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setEnvironmentFilesVarargs(value: EnvironmentFile*): Self = this.set("environmentFiles", js.Array(value :_*))
+    @scala.inline
+    def setEnvironmentFiles(value: EnvironmentFiles): Self = this.set("environmentFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentFiles: Self = this.set("environmentFiles", js.undefined)
+    @scala.inline
+    def setMemory(value: BoxedInteger): Self = this.set("memory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemory: Self = this.set("memory", js.undefined)
+    @scala.inline
+    def setMemoryReservation(value: BoxedInteger): Self = this.set("memoryReservation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryReservation: Self = this.set("memoryReservation", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceRequirementsVarargs(value: ResourceRequirement*): Self = this.set("resourceRequirements", js.Array(value :_*))
+    @scala.inline
+    def setResourceRequirements(value: ResourceRequirements): Self = this.set("resourceRequirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRequirements: Self = this.set("resourceRequirements", js.undefined)
+  }
+  
 }
 

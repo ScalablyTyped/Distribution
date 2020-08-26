@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledSamplingRule extends SamplingRule {
   /**
     * <p>Matches attributes derived from the request.</p>
     */
   @JSName("Attributes")
-  var Attributes_UnmarshalledSamplingRule: js.UndefOr[StringDictionary[String]] = js.undefined
+  var Attributes_UnmarshalledSamplingRule: js.UndefOr[StringDictionary[String]] = js.native
 }
 
 object UnmarshalledSamplingRule {
@@ -25,16 +26,27 @@ object UnmarshalledSamplingRule {
     ServiceName: String,
     ServiceType: String,
     URLPath: String,
-    Version: Double,
-    Attributes: StringDictionary[String] = null,
-    RuleARN: String = null,
-    RuleName: String = null
+    Version: Double
   ): UnmarshalledSamplingRule = {
     val __obj = js.Dynamic.literal(FixedRate = FixedRate.asInstanceOf[js.Any], HTTPMethod = HTTPMethod.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], ReservoirSize = ReservoirSize.asInstanceOf[js.Any], ResourceARN = ResourceARN.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], ServiceType = ServiceType.asInstanceOf[js.Any], URLPath = URLPath.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (RuleARN != null) __obj.updateDynamic("RuleARN")(RuleARN.asInstanceOf[js.Any])
-    if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledSamplingRule]
   }
+  @scala.inline
+  implicit class UnmarshalledSamplingRuleOps[Self <: UnmarshalledSamplingRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: StringDictionary[String]): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+  }
+  
 }
 

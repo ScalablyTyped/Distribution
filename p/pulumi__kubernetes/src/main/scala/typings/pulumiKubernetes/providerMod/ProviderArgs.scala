@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProviderArgs extends js.Object {
   /**
     * If present, the name of the kubeconfig cluster to use.
     */
-  val cluster: js.UndefOr[Input[String]] = js.undefined
+  val cluster: js.UndefOr[Input[String]] = js.native
   /**
     * If present, the name of the kubeconfig context to use.
     */
-  val context: js.UndefOr[Input[String]] = js.undefined
+  val context: js.UndefOr[Input[String]] = js.native
   /**
     * BETA FEATURE - If present and set to true, enable server-side diff calculations.
     * This feature is in developer preview, and is disabled by default.
@@ -22,11 +23,11 @@ trait ProviderArgs extends js.Object {
     * 1. This `enableDryRun` parameter.
     * 2. The `PULUMI_K8S_ENABLE_DRY_RUN` environment variable.
     */
-  val enableDryRun: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableDryRun: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The contents of a kubeconfig file. If this is set, this config will be used instead of $KUBECONFIG.
     */
-  val kubeconfig: js.UndefOr[Input[String]] = js.undefined
+  val kubeconfig: js.UndefOr[Input[String]] = js.native
   /**
     * If present, the default namespace to use. This flag is ignored for cluster-scoped resources.
     *
@@ -35,7 +36,7 @@ trait ProviderArgs extends js.Object {
     * 2. This `namespace` parameter.
     * 3. `namespace` set for the active context in the kubeconfig.
     */
-  val namespace: js.UndefOr[Input[String]] = js.undefined
+  val namespace: js.UndefOr[Input[String]] = js.native
   /**
     * BETA FEATURE - If present, render resource manifests to this directory. In this mode, resources will not
     * be created on a Kubernetes cluster, but the rendered manifests will be kept in sync with changes
@@ -46,7 +47,7 @@ trait ProviderArgs extends js.Object {
     * and may result in an error if they are referenced by other resources. Also note that any secret values
     * used in these resources will be rendered in plaintext to the resulting YAML.
     */
-  val renderYamlToDirectory: js.UndefOr[Input[String]] = js.undefined
+  val renderYamlToDirectory: js.UndefOr[Input[String]] = js.native
   /**
     * If present and set to true, suppress apiVersion deprecation warnings from the CLI.
     *
@@ -54,29 +55,55 @@ trait ProviderArgs extends js.Object {
     * 1. This `suppressDeprecationWarnings` parameter.
     * 2. The `PULUMI_K8S_SUPPRESS_DEPRECATION_WARNINGS` environment variable.
     */
-  val suppressDeprecationWarnings: js.UndefOr[Input[Boolean]] = js.undefined
+  val suppressDeprecationWarnings: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object ProviderArgs {
   @scala.inline
-  def apply(
-    cluster: Input[String] = null,
-    context: Input[String] = null,
-    enableDryRun: Input[Boolean] = null,
-    kubeconfig: Input[String] = null,
-    namespace: Input[String] = null,
-    renderYamlToDirectory: Input[String] = null,
-    suppressDeprecationWarnings: Input[Boolean] = null
-  ): ProviderArgs = {
+  def apply(): ProviderArgs = {
     val __obj = js.Dynamic.literal()
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (enableDryRun != null) __obj.updateDynamic("enableDryRun")(enableDryRun.asInstanceOf[js.Any])
-    if (kubeconfig != null) __obj.updateDynamic("kubeconfig")(kubeconfig.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (renderYamlToDirectory != null) __obj.updateDynamic("renderYamlToDirectory")(renderYamlToDirectory.asInstanceOf[js.Any])
-    if (suppressDeprecationWarnings != null) __obj.updateDynamic("suppressDeprecationWarnings")(suppressDeprecationWarnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderArgs]
   }
+  @scala.inline
+  implicit class ProviderArgsOps[Self <: ProviderArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCluster(value: Input[String]): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCluster: Self = this.set("cluster", js.undefined)
+    @scala.inline
+    def setContext(value: Input[String]): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setEnableDryRun(value: Input[Boolean]): Self = this.set("enableDryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDryRun: Self = this.set("enableDryRun", js.undefined)
+    @scala.inline
+    def setKubeconfig(value: Input[String]): Self = this.set("kubeconfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKubeconfig: Self = this.set("kubeconfig", js.undefined)
+    @scala.inline
+    def setNamespace(value: Input[String]): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setRenderYamlToDirectory(value: Input[String]): Self = this.set("renderYamlToDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderYamlToDirectory: Self = this.set("renderYamlToDirectory", js.undefined)
+    @scala.inline
+    def setSuppressDeprecationWarnings(value: Input[Boolean]): Self = this.set("suppressDeprecationWarnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressDeprecationWarnings: Self = this.set("suppressDeprecationWarnings", js.undefined)
+  }
+  
 }
 

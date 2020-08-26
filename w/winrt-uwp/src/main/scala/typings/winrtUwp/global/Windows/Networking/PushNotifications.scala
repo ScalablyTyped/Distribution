@@ -1,10 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationType
-import typings.winrtUwp.Windows.UI.Notifications.BadgeNotification
-import typings.winrtUwp.Windows.UI.Notifications.TileNotification
-import typings.winrtUwp.Windows.UI.Notifications.ToastNotification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,34 +22,12 @@ object PushNotifications extends js.Object {
   /** Encapsulates a push notification that has been received from the app server, identifying the type and supplying the content of the notification. Windows passes this information in the PushNotificationReceived event. */
   @js.native
   abstract class PushNotificationReceivedEventArgs ()
-    extends typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs {
-    /** Gets the content of a badge update to perform in response to this push notification. */
-    /* CompleteClass */
-    override var badgeNotification: BadgeNotification = js.native
-    /** Gets or sets whether Windows should perform its default handling of the notification. */
-    /* CompleteClass */
-    override var cancel: Boolean = js.native
-    /** Gets the type of push notification that has been received from the app server. */
-    /* CompleteClass */
-    override var notificationType: PushNotificationType = js.native
-    /* CompleteClass */
-    override var rawNotification: js.Any = js.native
-     /* unmapped type */ /** Gets the content of a tile update to perform in response to this push notification. */
-    /* CompleteClass */
-    override var tileNotification: TileNotification = js.native
-    /** Gets the content of a toast to display in response to this push notification. */
-    /* CompleteClass */
-    override var toastNotification: ToastNotification = js.native
-  }
+    extends typings.winrtUwp.Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs
   
   /** Encapsulates the app-defined content of a raw notification (a push notification that does not involve UI). Its contents can be used in an app's background task, if the app has that capability, or otherwise consumed by the app and acted on as needed. */
   @js.native
   abstract class RawNotification ()
-    extends typings.winrtUwp.Windows.Networking.PushNotifications.RawNotification {
-    /** Gets the content of the raw notification as a string. This string specifies a background task associated with the app. */
-    /* CompleteClass */
-    override var content: String = js.native
-  }
+    extends typings.winrtUwp.Windows.Networking.PushNotifications.RawNotification
   
   /* static members */
   @js.native

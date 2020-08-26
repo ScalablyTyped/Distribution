@@ -16,6 +16,7 @@ trait InlineShapes extends js.Object {
   var WordDotInlineShapes_typekey: InlineShapes = js.native
   /** @param Office.XlChartType [Type=-1] */
   def AddChart(): InlineShape = js.native
+  def AddChart(Type: js.UndefOr[scala.Nothing], Range: js.Any): InlineShape = js.native
   def AddChart(Type: XlChartType): InlineShape = js.native
   def AddChart(Type: XlChartType, Range: js.Any): InlineShape = js.native
   def AddHorizontalLine(FileName: String): InlineShape = js.native
@@ -23,6 +24,7 @@ trait InlineShapes extends js.Object {
   def AddHorizontalLineStandard(): InlineShape = js.native
   def AddHorizontalLineStandard(Range: js.Any): InlineShape = js.native
   def AddOLEControl(): InlineShape = js.native
+  def AddOLEControl(ClassType: js.UndefOr[scala.Nothing], Range: js.Any): InlineShape = js.native
   def AddOLEControl(ClassType: js.Any): InlineShape = js.native
   def AddOLEControl(ClassType: js.Any, Range: js.Any): InlineShape = js.native
   def AddOLEObject(
@@ -36,7 +38,16 @@ trait InlineShapes extends js.Object {
     Range: js.UndefOr[js.Any]
   ): InlineShape = js.native
   def AddPicture(FileName: String): InlineShape = js.native
+  def AddPicture(
+    FileName: String,
+    LinkToFile: js.UndefOr[scala.Nothing],
+    SaveWithDocument: js.UndefOr[scala.Nothing],
+    Range: js.Any
+  ): InlineShape = js.native
+  def AddPicture(FileName: String, LinkToFile: js.UndefOr[scala.Nothing], SaveWithDocument: js.Any): InlineShape = js.native
+  def AddPicture(FileName: String, LinkToFile: js.UndefOr[scala.Nothing], SaveWithDocument: js.Any, Range: js.Any): InlineShape = js.native
   def AddPicture(FileName: String, LinkToFile: js.Any): InlineShape = js.native
+  def AddPicture(FileName: String, LinkToFile: js.Any, SaveWithDocument: js.UndefOr[scala.Nothing], Range: js.Any): InlineShape = js.native
   def AddPicture(FileName: String, LinkToFile: js.Any, SaveWithDocument: js.Any): InlineShape = js.native
   def AddPicture(FileName: String, LinkToFile: js.Any, SaveWithDocument: js.Any, Range: js.Any): InlineShape = js.native
   def AddPictureBullet(FileName: String): InlineShape = js.native

@@ -18,8 +18,8 @@ trait PrivateKey extends js.Object {
   var q: BigInteger = js.native
   var qInv: BigInteger = js.native
   def decrypt(data: Bytes): Bytes = js.native
+  def decrypt(data: Bytes, scheme: js.UndefOr[EncryptionScheme], schemeOptions: js.Any): Bytes = js.native
   def decrypt(data: Bytes, scheme: EncryptionScheme): Bytes = js.native
-  def decrypt(data: Bytes, scheme: EncryptionScheme, schemeOptions: js.Any): Bytes = js.native
   def sign(md: MessageDigest): Bytes = js.native
   def sign(md: MessageDigest, scheme: SignatureScheme): Bytes = js.native
 }

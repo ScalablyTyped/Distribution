@@ -12,7 +12,7 @@ Standalone cross-platform zip/unzip with 7za
 | Keywords           | 7z, 7zip, 7-zip, 7za, compress, decompress, extract, lzma, zip, gzip, bzip2, tar |
 | # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 2913 |
+| # downloads        | 3012 |
 | # stars            | 0 |
 
 ## Links

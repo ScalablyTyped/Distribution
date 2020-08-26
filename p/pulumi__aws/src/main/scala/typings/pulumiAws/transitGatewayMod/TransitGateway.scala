@@ -23,6 +23,7 @@ class TransitGateway protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: TransitGatewayArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: TransitGatewayArgs, opts: CustomResourceOptions) = this()
   /**
     * Private Autonomous System Number (ASN) for the Amazon side of a BGP session. The range is `64512` to `65534` for 16-bit ASNs and `4200000000` to `4294967294` for 32-bit ASNs. Default value: `64512`.
@@ -67,7 +68,7 @@ class TransitGateway protected () extends CustomResource {
   /**
     * Key-value tags for the EC2 Transit Gateway.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Whether VPN Equal Cost Multipath Protocol support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
     */
@@ -85,8 +86,10 @@ object TransitGateway extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): TransitGateway = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TransitGateway = js.native
   def get(name: String, id: Input[ID], state: TransitGatewayState): TransitGateway = js.native
   def get(name: String, id: Input[ID], state: TransitGatewayState, opts: CustomResourceOptions): TransitGateway = js.native
   /**

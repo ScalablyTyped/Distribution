@@ -13,6 +13,11 @@ trait Video extends js.Object {
   def fnAddWatermark(watermarkPath: String, newPilePath: String, settings: WatermarkSettings, callback: SaveCallback): Unit = js.native
   def fnExtractFrameToJPG(destinationFolder: String, settings: FrameToJPGSettings, callback: SaveCallback): Unit = js.native
   def fnExtractSoundToMP3(destinationFileName: String, callback: SaveCallback): Unit = js.native
+  def save(destinationFileName: String): js.Promise[String] = js.native
+  /**
+    * After setting the desired parameters have to start the conversion process.
+    * To do this you must call the function 'save'.
+    */
   def save(destinationFileName: String, callback: SaveCallback): Unit = js.native
   def setAudioBitrate(bitrate: Double): Video = js.native
   def setAudioChannels(channel: Double): Video = js.native

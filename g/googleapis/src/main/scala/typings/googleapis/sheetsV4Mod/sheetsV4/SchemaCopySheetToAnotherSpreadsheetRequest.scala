@@ -17,10 +17,26 @@ trait SchemaCopySheetToAnotherSpreadsheetRequest extends js.Object {
 
 object SchemaCopySheetToAnotherSpreadsheetRequest {
   @scala.inline
-  def apply(destinationSpreadsheetId: String = null): SchemaCopySheetToAnotherSpreadsheetRequest = {
+  def apply(): SchemaCopySheetToAnotherSpreadsheetRequest = {
     val __obj = js.Dynamic.literal()
-    if (destinationSpreadsheetId != null) __obj.updateDynamic("destinationSpreadsheetId")(destinationSpreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCopySheetToAnotherSpreadsheetRequest]
   }
+  @scala.inline
+  implicit class SchemaCopySheetToAnotherSpreadsheetRequestOps[Self <: SchemaCopySheetToAnotherSpreadsheetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationSpreadsheetId(value: String): Self = this.set("destinationSpreadsheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationSpreadsheetId: Self = this.set("destinationSpreadsheetId", js.undefined)
+  }
+  
 }
 

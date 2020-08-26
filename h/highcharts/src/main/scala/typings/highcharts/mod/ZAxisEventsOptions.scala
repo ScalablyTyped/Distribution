@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZAxisEventsOptions extends js.Object {
   /**
     * (Highcharts, Gantt) An event fired after the breaks have rendered.
     */
-  var afterBreaks: js.UndefOr[AxisEventCallbackFunction] = js.undefined
+  var afterBreaks: js.UndefOr[AxisEventCallbackFunction] = js.native
   /**
     * (Highcharts) As opposed to the `setExtremes` event, this event fires
     * after the final min and max values are computed and corrected for
@@ -24,17 +25,17 @@ trait ZAxisEventsOptions extends js.Object {
     * values. The actual data extremes are found in `event.dataMin` and
     * `event.dataMax`.
     */
-  var afterSetExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.undefined
+  var afterSetExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.native
   /**
     * (Highcharts, Gantt) An event fired when a break from this axis occurs on
     * a point.
     */
-  var pointBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.undefined
+  var pointBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.native
   /**
     * (Highcharts, Highstock, Gantt) An event fired when a point falls inside a
     * break from this axis.
     */
-  var pointInBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.undefined
+  var pointInBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.native
   /**
     * (Highcharts) Fires when the minimum and maximum is set for the axis,
     * either by calling the `.setExtremes()` method or by selecting an area in
@@ -47,25 +48,47 @@ trait ZAxisEventsOptions extends js.Object {
     * button, `event.min` and `event.max` are null, and the new extremes are
     * set based on `this.dataMin` and `this.dataMax`.
     */
-  var setExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.undefined
+  var setExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.native
 }
 
 object ZAxisEventsOptions {
   @scala.inline
-  def apply(
-    afterBreaks: AxisEventCallbackFunction = null,
-    afterSetExtremes: AxisSetExtremesEventCallbackFunction = null,
-    pointBreak: AxisPointBreakEventCallbackFunction = null,
-    pointInBreak: AxisPointBreakEventCallbackFunction = null,
-    setExtremes: AxisSetExtremesEventCallbackFunction = null
-  ): ZAxisEventsOptions = {
+  def apply(): ZAxisEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterBreaks != null) __obj.updateDynamic("afterBreaks")(afterBreaks.asInstanceOf[js.Any])
-    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(afterSetExtremes.asInstanceOf[js.Any])
-    if (pointBreak != null) __obj.updateDynamic("pointBreak")(pointBreak.asInstanceOf[js.Any])
-    if (pointInBreak != null) __obj.updateDynamic("pointInBreak")(pointInBreak.asInstanceOf[js.Any])
-    if (setExtremes != null) __obj.updateDynamic("setExtremes")(setExtremes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZAxisEventsOptions]
   }
+  @scala.inline
+  implicit class ZAxisEventsOptionsOps[Self <: ZAxisEventsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterBreaks(value: AxisEventCallbackFunction): Self = this.set("afterBreaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterBreaks: Self = this.set("afterBreaks", js.undefined)
+    @scala.inline
+    def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = this.set("afterSetExtremes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterSetExtremes: Self = this.set("afterSetExtremes", js.undefined)
+    @scala.inline
+    def setPointBreak(value: AxisPointBreakEventCallbackFunction): Self = this.set("pointBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointBreak: Self = this.set("pointBreak", js.undefined)
+    @scala.inline
+    def setPointInBreak(value: AxisPointBreakEventCallbackFunction): Self = this.set("pointInBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointInBreak: Self = this.set("pointInBreak", js.undefined)
+    @scala.inline
+    def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = this.set("setExtremes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetExtremes: Self = this.set("setExtremes", js.undefined)
+  }
+  
 }
 

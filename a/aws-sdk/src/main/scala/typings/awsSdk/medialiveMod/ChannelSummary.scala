@@ -58,36 +58,80 @@ trait ChannelSummary extends js.Object {
 
 object ChannelSummary {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    ChannelClass: ChannelClass = null,
-    Destinations: listOfOutputDestination = null,
-    EgressEndpoints: listOfChannelEgressEndpoint = null,
-    Id: string = null,
-    InputAttachments: listOfInputAttachment = null,
-    InputSpecification: InputSpecification = null,
-    LogLevel: LogLevel = null,
-    Name: string = null,
-    PipelinesRunningCount: js.UndefOr[integer] = js.undefined,
-    RoleArn: string = null,
-    State: ChannelState = null,
-    Tags: Tags = null
-  ): ChannelSummary = {
+  def apply(): ChannelSummary = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (ChannelClass != null) __obj.updateDynamic("ChannelClass")(ChannelClass.asInstanceOf[js.Any])
-    if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations.asInstanceOf[js.Any])
-    if (EgressEndpoints != null) __obj.updateDynamic("EgressEndpoints")(EgressEndpoints.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (InputAttachments != null) __obj.updateDynamic("InputAttachments")(InputAttachments.asInstanceOf[js.Any])
-    if (InputSpecification != null) __obj.updateDynamic("InputSpecification")(InputSpecification.asInstanceOf[js.Any])
-    if (LogLevel != null) __obj.updateDynamic("LogLevel")(LogLevel.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(PipelinesRunningCount)) __obj.updateDynamic("PipelinesRunningCount")(PipelinesRunningCount.get.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSummary]
   }
+  @scala.inline
+  implicit class ChannelSummaryOps[Self <: ChannelSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setChannelClass(value: ChannelClass): Self = this.set("ChannelClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelClass: Self = this.set("ChannelClass", js.undefined)
+    @scala.inline
+    def setDestinationsVarargs(value: OutputDestination*): Self = this.set("Destinations", js.Array(value :_*))
+    @scala.inline
+    def setDestinations(value: listOfOutputDestination): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinations: Self = this.set("Destinations", js.undefined)
+    @scala.inline
+    def setEgressEndpointsVarargs(value: ChannelEgressEndpoint*): Self = this.set("EgressEndpoints", js.Array(value :_*))
+    @scala.inline
+    def setEgressEndpoints(value: listOfChannelEgressEndpoint): Self = this.set("EgressEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEgressEndpoints: Self = this.set("EgressEndpoints", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setInputAttachmentsVarargs(value: InputAttachment*): Self = this.set("InputAttachments", js.Array(value :_*))
+    @scala.inline
+    def setInputAttachments(value: listOfInputAttachment): Self = this.set("InputAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAttachments: Self = this.set("InputAttachments", js.undefined)
+    @scala.inline
+    def setInputSpecification(value: InputSpecification): Self = this.set("InputSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputSpecification: Self = this.set("InputSpecification", js.undefined)
+    @scala.inline
+    def setLogLevel(value: LogLevel): Self = this.set("LogLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("LogLevel", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPipelinesRunningCount(value: integer): Self = this.set("PipelinesRunningCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelinesRunningCount: Self = this.set("PipelinesRunningCount", js.undefined)
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setState(value: ChannelState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

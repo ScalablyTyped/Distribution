@@ -4,45 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DesaturationColorMapping extends js.Object {
   /** Specifies the color for desaturationColorMapping
     * @Default {null}
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /** Specifies the from value for desaturation color mapping
     * @Default {0}
     */
-  var from: js.UndefOr[Double] = js.undefined
+  var from: js.UndefOr[Double] = js.native
   /** Specifies the rangeMaximum value for desaturation color mapping
     * @Default {0}
     */
-  var rangeMaximum: js.UndefOr[Double] = js.undefined
+  var rangeMaximum: js.UndefOr[Double] = js.native
   /** Specifies the rangeMinimum value for desaturation color mapping
     * @Default {0}
     */
-  var rangeMinimum: js.UndefOr[Double] = js.undefined
+  var rangeMinimum: js.UndefOr[Double] = js.native
   /** Specifies the to value for desaturation color mapping
     * @Default {0}
     */
-  var to: js.UndefOr[Double] = js.undefined
+  var to: js.UndefOr[Double] = js.native
 }
 
 object DesaturationColorMapping {
   @scala.inline
-  def apply(
-    color: String = null,
-    from: js.UndefOr[Double] = js.undefined,
-    rangeMaximum: js.UndefOr[Double] = js.undefined,
-    rangeMinimum: js.UndefOr[Double] = js.undefined,
-    to: js.UndefOr[Double] = js.undefined
-  ): DesaturationColorMapping = {
+  def apply(): DesaturationColorMapping = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeMaximum)) __obj.updateDynamic("rangeMaximum")(rangeMaximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeMinimum)) __obj.updateDynamic("rangeMinimum")(rangeMinimum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DesaturationColorMapping]
   }
+  @scala.inline
+  implicit class DesaturationColorMappingOps[Self <: DesaturationColorMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setRangeMaximum(value: Double): Self = this.set("rangeMaximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeMaximum: Self = this.set("rangeMaximum", js.undefined)
+    @scala.inline
+    def setRangeMinimum(value: Double): Self = this.set("rangeMinimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeMinimum: Self = this.set("rangeMinimum", js.undefined)
+    @scala.inline
+    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

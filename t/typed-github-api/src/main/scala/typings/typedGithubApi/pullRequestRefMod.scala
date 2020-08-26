@@ -1,7 +1,6 @@
 package typings.typedGithubApi
 
 import typings.typedGithubApi.githubRefMod.GitHubRef
-import typings.typedGithubApi.interfacesPullRequestMod.PullRequest
 import typings.typedGithubApi.interfacesPullRequestMod.PullRequestRef
 import typings.typedGithubApi.interfacesRepositoryMod.RepositoryRef
 import typings.typedGithubApi.repositoryRefMod.RepositoryRefClass
@@ -17,11 +16,7 @@ object pullRequestRefMod extends js.Object {
     extends GitHubRef
        with PullRequestRef {
     def this(repository: RepositoryRefClass, pullRequestNumber: Double) = this()
-    /* CompleteClass */
-    override val number: Double = js.native
     val repository: RepositoryRef = js.native
-    /* CompleteClass */
-    override def loadAsync(): js.Promise[PullRequest | Null] = js.native
   }
   
 }

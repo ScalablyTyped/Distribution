@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MultipartOptions extends js.Object {
   var checkFile: js.UndefOr[
     js.Function5[
@@ -16,27 +17,49 @@ trait MultipartOptions extends js.Object {
       /* mimetype */ String, 
       Unit | Error
     ]
-  ] = js.undefined
+  ] = js.native
    // required file submit, default is true
-  var defCharset: js.UndefOr[String] = js.undefined
-  var limits: js.UndefOr[FieldNameSize] = js.undefined
-  var requireFile: js.UndefOr[Boolean] = js.undefined
+  var defCharset: js.UndefOr[String] = js.native
+  var limits: js.UndefOr[FieldNameSize] = js.native
+  var requireFile: js.UndefOr[Boolean] = js.native
 }
 
 object MultipartOptions {
   @scala.inline
-  def apply(
-    checkFile: (/* fieldname */ String, /* file */ js.Any, /* filename */ String, /* encoding */ String, /* mimetype */ String) => Unit | Error = null,
-    defCharset: String = null,
-    limits: FieldNameSize = null,
-    requireFile: js.UndefOr[Boolean] = js.undefined
-  ): MultipartOptions = {
+  def apply(): MultipartOptions = {
     val __obj = js.Dynamic.literal()
-    if (checkFile != null) __obj.updateDynamic("checkFile")(js.Any.fromFunction5(checkFile))
-    if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset.asInstanceOf[js.Any])
-    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireFile)) __obj.updateDynamic("requireFile")(requireFile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipartOptions]
   }
+  @scala.inline
+  implicit class MultipartOptionsOps[Self <: MultipartOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckFile(
+      value: (/* fieldname */ String, /* file */ js.Any, /* filename */ String, /* encoding */ String, /* mimetype */ String) => Unit | Error
+    ): Self = this.set("checkFile", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteCheckFile: Self = this.set("checkFile", js.undefined)
+    @scala.inline
+    def setDefCharset(value: String): Self = this.set("defCharset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefCharset: Self = this.set("defCharset", js.undefined)
+    @scala.inline
+    def setLimits(value: FieldNameSize): Self = this.set("limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("limits", js.undefined)
+    @scala.inline
+    def setRequireFile(value: Boolean): Self = this.set("requireFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireFile: Self = this.set("requireFile", js.undefined)
+  }
+  
 }
 

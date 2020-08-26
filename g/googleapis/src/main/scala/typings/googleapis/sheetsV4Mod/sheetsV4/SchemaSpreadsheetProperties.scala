@@ -47,22 +47,46 @@ trait SchemaSpreadsheetProperties extends js.Object {
 
 object SchemaSpreadsheetProperties {
   @scala.inline
-  def apply(
-    autoRecalc: String = null,
-    defaultFormat: SchemaCellFormat = null,
-    iterativeCalculationSettings: SchemaIterativeCalculationSettings = null,
-    locale: String = null,
-    timeZone: String = null,
-    title: String = null
-  ): SchemaSpreadsheetProperties = {
+  def apply(): SchemaSpreadsheetProperties = {
     val __obj = js.Dynamic.literal()
-    if (autoRecalc != null) __obj.updateDynamic("autoRecalc")(autoRecalc.asInstanceOf[js.Any])
-    if (defaultFormat != null) __obj.updateDynamic("defaultFormat")(defaultFormat.asInstanceOf[js.Any])
-    if (iterativeCalculationSettings != null) __obj.updateDynamic("iterativeCalculationSettings")(iterativeCalculationSettings.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpreadsheetProperties]
   }
+  @scala.inline
+  implicit class SchemaSpreadsheetPropertiesOps[Self <: SchemaSpreadsheetProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRecalc(value: String): Self = this.set("autoRecalc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRecalc: Self = this.set("autoRecalc", js.undefined)
+    @scala.inline
+    def setDefaultFormat(value: SchemaCellFormat): Self = this.set("defaultFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultFormat: Self = this.set("defaultFormat", js.undefined)
+    @scala.inline
+    def setIterativeCalculationSettings(value: SchemaIterativeCalculationSettings): Self = this.set("iterativeCalculationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIterativeCalculationSettings: Self = this.set("iterativeCalculationSettings", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

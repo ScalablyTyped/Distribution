@@ -28,11 +28,30 @@ trait SchemaCertificateRawData extends js.Object {
 
 object SchemaCertificateRawData {
   @scala.inline
-  def apply(privateKey: String = null, publicCertificate: String = null): SchemaCertificateRawData = {
+  def apply(): SchemaCertificateRawData = {
     val __obj = js.Dynamic.literal()
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
-    if (publicCertificate != null) __obj.updateDynamic("publicCertificate")(publicCertificate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCertificateRawData]
   }
+  @scala.inline
+  implicit class SchemaCertificateRawDataOps[Self <: SchemaCertificateRawData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrivateKey(value: String): Self = this.set("privateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKey: Self = this.set("privateKey", js.undefined)
+    @scala.inline
+    def setPublicCertificate(value: String): Self = this.set("publicCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicCertificate: Self = this.set("publicCertificate", js.undefined)
+  }
+  
 }
 

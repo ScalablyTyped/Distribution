@@ -12,7 +12,7 @@ Check if something is a promise
 | Keywords           | promise, is, detect, check, kind, type, thenable, es2015, async, await, promises, bluebird |
 | # releases         | 4 |
 | # dependents       | 43 |
-| # downloads        | 321798521 |
+| # downloads        | 336204493 |
 | # stars            | 1 |
 
 ## Links

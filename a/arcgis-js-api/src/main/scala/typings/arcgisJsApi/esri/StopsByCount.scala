@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StopsByCount extends Object {
   /**
-    * Specifies number of stops count.
+    * Number of evenly spaced divisions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByCount)
     */
-  var count: Double
+  var count: Double = js.native
   /**
-    * A period of time with definitive start and end dates. The time slider widget's [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#fullTimeExtent) will be used if this property is not specified.
+    * The time period to divide. If unspecified, the time slider's [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#fullTimeExtent) will be used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByCount)
     */
-  var timeExtent: js.UndefOr[TimeExtent] = js.undefined
+  var timeExtent: js.UndefOr[TimeExtent] = js.native
 }
 
 object StopsByCount {
@@ -27,12 +28,29 @@ object StopsByCount {
     constructor: js.Function,
     count: Double,
     hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    timeExtent: TimeExtent = null
+    propertyIsEnumerable: PropertyKey => Boolean
   ): StopsByCount = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopsByCount]
   }
+  @scala.inline
+  implicit class StopsByCountOps[Self <: StopsByCount] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeExtent(value: TimeExtent): Self = this.set("timeExtent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeExtent: Self = this.set("timeExtent", js.undefined)
+  }
+  
 }
 

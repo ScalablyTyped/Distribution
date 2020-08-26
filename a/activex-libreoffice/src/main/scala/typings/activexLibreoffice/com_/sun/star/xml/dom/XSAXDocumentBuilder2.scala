@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * Provides a unified interface for the {@link SAXDocumentBuilder} service to implement.
   * @since LibreOffice 4.0
   */
+@js.native
 trait XSAXDocumentBuilder2
   extends XSAXDocumentBuilder
      with XDocumentHandler

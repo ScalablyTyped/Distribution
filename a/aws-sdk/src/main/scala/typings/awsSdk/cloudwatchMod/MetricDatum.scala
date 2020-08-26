@@ -46,27 +46,62 @@ trait MetricDatum extends js.Object {
 
 object MetricDatum {
   @scala.inline
-  def apply(
-    MetricName: MetricName,
-    Counts: Counts = null,
-    Dimensions: Dimensions = null,
-    StatisticValues: StatisticSet = null,
-    StorageResolution: js.UndefOr[StorageResolution] = js.undefined,
-    Timestamp: Timestamp = null,
-    Unit: StandardUnit = null,
-    Value: js.UndefOr[DatapointValue] = js.undefined,
-    Values: Values = null
-  ): MetricDatum = {
+  def apply(MetricName: MetricName): MetricDatum = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any])
-    if (Counts != null) __obj.updateDynamic("Counts")(Counts.asInstanceOf[js.Any])
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (StatisticValues != null) __obj.updateDynamic("StatisticValues")(StatisticValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageResolution)) __obj.updateDynamic("StorageResolution")(StorageResolution.get.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDatum]
   }
+  @scala.inline
+  implicit class MetricDatumOps[Self <: MetricDatum] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCountsVarargs(value: DatapointValue*): Self = this.set("Counts", js.Array(value :_*))
+    @scala.inline
+    def setCounts(value: Counts): Self = this.set("Counts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCounts: Self = this.set("Counts", js.undefined)
+    @scala.inline
+    def setDimensionsVarargs(value: Dimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: Dimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setStatisticValues(value: StatisticSet): Self = this.set("StatisticValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatisticValues: Self = this.set("StatisticValues", js.undefined)
+    @scala.inline
+    def setStorageResolution(value: StorageResolution): Self = this.set("StorageResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageResolution: Self = this.set("StorageResolution", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    @scala.inline
+    def setUnit(value: StandardUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+    @scala.inline
+    def setValue(value: DatapointValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: DatapointValue*): Self = this.set("Values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: Values): Self = this.set("Values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("Values", js.undefined)
+  }
+  
 }
 

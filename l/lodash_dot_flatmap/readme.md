@@ -12,7 +12,7 @@ The lodash method `_.flatMap` exported as a module.
 | Keywords           | lodash-modularized, flatmap |
 | # releases         | 0 |
 | # dependents       | 67 |
-| # downloads        | 1119811 |
+| # downloads        | 1193775 |
 | # stars            | 0 |
 
 ## Links

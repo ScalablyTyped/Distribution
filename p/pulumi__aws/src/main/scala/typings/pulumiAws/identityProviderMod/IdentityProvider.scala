@@ -25,7 +25,7 @@ class IdentityProvider protected () extends CustomResource {
   /**
     * The map of attribute mapping of user pool attributes. [AttributeMapping in AWS API documentation](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-AttributeMapping)
     */
-  val attributeMapping: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val attributeMapping: Output_[StringDictionary[String]] = js.native
   /**
     * The list of identity providers.
     */
@@ -33,7 +33,7 @@ class IdentityProvider protected () extends CustomResource {
   /**
     * The map of identity details, such as access token
     */
-  val providerDetails: Output_[StringDictionary[_]] = js.native
+  val providerDetails: Output_[StringDictionary[String]] = js.native
   /**
     * The provider name
     */
@@ -59,8 +59,10 @@ object IdentityProvider extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): IdentityProvider = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IdentityProvider = js.native
   def get(name: String, id: Input[ID], state: IdentityProviderState): IdentityProvider = js.native
   def get(name: String, id: Input[ID], state: IdentityProviderState, opts: CustomResourceOptions): IdentityProvider = js.native
   /**

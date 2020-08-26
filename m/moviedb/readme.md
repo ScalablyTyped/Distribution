@@ -10,8 +10,8 @@ Library for interacting with themoviedb.com API
 | Full name          | moviedb |
 | Keywords           | themoviedb, api, tmdb |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 39506 |
+| # dependents       | 13 |
+| # downloads        | 39495 |
 | # stars            | 9 |
 
 ## Links

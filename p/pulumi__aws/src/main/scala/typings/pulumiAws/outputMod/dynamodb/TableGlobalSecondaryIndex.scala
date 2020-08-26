@@ -45,21 +45,46 @@ trait TableGlobalSecondaryIndex extends js.Object {
 
 object TableGlobalSecondaryIndex {
   @scala.inline
-  def apply(
-    hashKey: String,
-    name: String,
-    projectionType: String,
-    nonKeyAttributes: js.Array[String] = null,
-    rangeKey: String = null,
-    readCapacity: js.UndefOr[Double] = js.undefined,
-    writeCapacity: js.UndefOr[Double] = js.undefined
-  ): TableGlobalSecondaryIndex = {
+  def apply(hashKey: String, name: String, projectionType: String): TableGlobalSecondaryIndex = {
     val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any])
-    if (nonKeyAttributes != null) __obj.updateDynamic("nonKeyAttributes")(nonKeyAttributes.asInstanceOf[js.Any])
-    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(readCapacity)) __obj.updateDynamic("readCapacity")(readCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeCapacity)) __obj.updateDynamic("writeCapacity")(writeCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableGlobalSecondaryIndex]
   }
+  @scala.inline
+  implicit class TableGlobalSecondaryIndexOps[Self <: TableGlobalSecondaryIndex] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHashKey(value: String): Self = this.set("hashKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProjectionType(value: String): Self = this.set("projectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNonKeyAttributesVarargs(value: String*): Self = this.set("nonKeyAttributes", js.Array(value :_*))
+    @scala.inline
+    def setNonKeyAttributes(value: js.Array[String]): Self = this.set("nonKeyAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonKeyAttributes: Self = this.set("nonKeyAttributes", js.undefined)
+    @scala.inline
+    def setRangeKey(value: String): Self = this.set("rangeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeKey: Self = this.set("rangeKey", js.undefined)
+    @scala.inline
+    def setReadCapacity(value: Double): Self = this.set("readCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadCapacity: Self = this.set("readCapacity", js.undefined)
+    @scala.inline
+    def setWriteCapacity(value: Double): Self = this.set("writeCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteCapacity: Self = this.set("writeCapacity", js.undefined)
+  }
+  
 }
 

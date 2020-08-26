@@ -18,11 +18,32 @@ trait ListMissionProfilesResponse extends js.Object {
 
 object ListMissionProfilesResponse {
   @scala.inline
-  def apply(missionProfileList: MissionProfileList = null, nextToken: String = null): ListMissionProfilesResponse = {
+  def apply(): ListMissionProfilesResponse = {
     val __obj = js.Dynamic.literal()
-    if (missionProfileList != null) __obj.updateDynamic("missionProfileList")(missionProfileList.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMissionProfilesResponse]
   }
+  @scala.inline
+  implicit class ListMissionProfilesResponseOps[Self <: ListMissionProfilesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMissionProfileListVarargs(value: MissionProfileListItem*): Self = this.set("missionProfileList", js.Array(value :_*))
+    @scala.inline
+    def setMissionProfileList(value: MissionProfileList): Self = this.set("missionProfileList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissionProfileList: Self = this.set("missionProfileList", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

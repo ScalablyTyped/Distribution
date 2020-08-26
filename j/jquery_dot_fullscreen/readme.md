@@ -11,7 +11,7 @@ jQuery plugin for showing any DOM element on a page in fullscreen mode
 | Keywords           | jquery-plugin, fullscreen, ui, firefox, webkit, chrome, safari, opera, IE |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 4773 |
+| # downloads        | 4427 |
 | # stars            | 0 |
 
 ## Links

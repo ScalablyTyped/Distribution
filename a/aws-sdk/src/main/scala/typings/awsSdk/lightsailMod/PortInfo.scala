@@ -30,20 +30,46 @@ trait PortInfo extends js.Object {
 
 object PortInfo {
   @scala.inline
-  def apply(
-    cidrListAliases: StringList = null,
-    cidrs: StringList = null,
-    fromPort: js.UndefOr[Port] = js.undefined,
-    protocol: NetworkProtocol = null,
-    toPort: js.UndefOr[Port] = js.undefined
-  ): PortInfo = {
+  def apply(): PortInfo = {
     val __obj = js.Dynamic.literal()
-    if (cidrListAliases != null) __obj.updateDynamic("cidrListAliases")(cidrListAliases.asInstanceOf[js.Any])
-    if (cidrs != null) __obj.updateDynamic("cidrs")(cidrs.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromPort)) __obj.updateDynamic("fromPort")(fromPort.get.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(toPort)) __obj.updateDynamic("toPort")(toPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortInfo]
   }
+  @scala.inline
+  implicit class PortInfoOps[Self <: PortInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrListAliasesVarargs(value: String*): Self = this.set("cidrListAliases", js.Array(value :_*))
+    @scala.inline
+    def setCidrListAliases(value: StringList): Self = this.set("cidrListAliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrListAliases: Self = this.set("cidrListAliases", js.undefined)
+    @scala.inline
+    def setCidrsVarargs(value: String*): Self = this.set("cidrs", js.Array(value :_*))
+    @scala.inline
+    def setCidrs(value: StringList): Self = this.set("cidrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrs: Self = this.set("cidrs", js.undefined)
+    @scala.inline
+    def setFromPort(value: Port): Self = this.set("fromPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromPort: Self = this.set("fromPort", js.undefined)
+    @scala.inline
+    def setProtocol(value: NetworkProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setToPort(value: Port): Self = this.set("toPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToPort: Self = this.set("toPort", js.undefined)
+  }
+  
 }
 

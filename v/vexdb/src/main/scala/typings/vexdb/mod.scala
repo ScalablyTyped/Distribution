@@ -9,7 +9,6 @@ import typings.vexdb.anon.LiveRequestObjectRankings
 import typings.vexdb.anon.LiveRequestObjectSeasonRa
 import typings.vexdb.anon.LiveRequestObjectSkillsRe
 import typings.vexdb.anon.LiveRequestObjectTeamsReq
-import typings.vexdb.anon.Result
 import typings.vexdb.cacheMod.APIResponse
 import typings.vexdb.liveMod.LiveEventEmitter
 import typings.vexdb.liveMod.LiveRequestObject
@@ -73,7 +72,7 @@ object mod extends js.Object {
   def live_skills(endpoint: skills, params: LiveRequestObjectSkillsRe): LiveEventEmitter[SkillsRequestObject, SkillsResponseObject] = js.native
   @JSName("live")
   def live_teams(endpoint: teams, params: LiveRequestObjectTeamsReq): LiveEventEmitter[TeamsRequestObject, TeamsResponseObject] = js.native
-  def request(endpoint: js.Any, params: js.Any): js.Promise[Result] = js.native
+  def request[T /* <: ResponseObject */](endpoint: js.Any, params: js.Any): js.Promise[APIResponse[T]] = js.native
   @JSName("size")
   def size_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[Double] = js.native
   @JSName("size")
@@ -126,10 +125,11 @@ object mod extends js.Object {
   
   @js.native
   object constant extends js.Object {
+    var SkillsType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof req.SkillsType */ js.Any = js.native
     var endpoints: js.Array[Endpoint] = js.native
     var isBrowser: js.Function = js.native
+    var passableParams: Awards = js.native
     var settings: typings.vexdb.settingsMod.settings = js.native
-    var validParams: Awards = js.native
     def header(headers: StringDictionary[String]): Unit = js.native
     def param(params: RequestObject): Unit = js.native
   }

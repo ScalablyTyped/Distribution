@@ -13,5 +13,6 @@ import scala.scalajs.js.annotation._
   * @property {number} [textureWidth=512] - the width of the texture atlas
   * @property {number} [textureHeight=512] - the height of the texture atlas
   */
+@js.native
 trait IBitmapFontOptions extends js.Object
 

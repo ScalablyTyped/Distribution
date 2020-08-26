@@ -30,7 +30,7 @@ class RadioButtonGroup protected () extends AttributeWidget {
   @JSName("model")
   var model_FRadioButtonGroup: IModel = js.native
   def renderHorizontal: Boolean = js.native
-  def renderHorizontal(newValue: Boolean): js.Any = js.native
+  def renderHorizontal_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

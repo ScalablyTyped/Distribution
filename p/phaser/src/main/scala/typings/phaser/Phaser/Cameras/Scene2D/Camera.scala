@@ -309,9 +309,264 @@ trait Camera
     * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
     */
   def pan(x: Double, y: Double): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def pan(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], ease: String): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def pan(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], ease: String, force: Boolean): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: Boolean,
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def pan(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], ease: js.Function): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def pan(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], ease: js.Function, force: Boolean): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: Boolean,
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
   def pan(x: Double, y: Double, duration: integer): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def pan(x: Double, y: Double, duration: integer, ease: js.UndefOr[scala.Nothing], force: Boolean): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
   def pan(x: Double, y: Double, duration: integer, ease: String): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
   def pan(x: Double, y: Double, duration: integer, ease: String, force: Boolean): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: String,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
   def pan(x: Double, y: Double, duration: integer, ease: String, force: Boolean, callback: CameraPanCallback): this.type = js.native
   def pan(
     x: Double,
@@ -323,7 +578,42 @@ trait Camera
     context: js.Any
   ): this.type = js.native
   def pan(x: Double, y: Double, duration: integer, ease: js.Function): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
   def pan(x: Double, y: Double, duration: integer, ease: js.Function, force: Boolean): this.type = js.native
+  def pan(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.Function,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
   def pan(
     x: Double,
     y: Double,
@@ -363,7 +653,7 @@ trait Camera
     radians: Double,
     shortestPath: js.UndefOr[Boolean],
     duration: js.UndefOr[integer],
-    ease: js.UndefOr[js.Function | String],
+    ease: js.UndefOr[String | js.Function],
     force: js.UndefOr[Boolean],
     callback: js.UndefOr[CameraRotateCallback],
     context: js.UndefOr[js.Any]
@@ -387,6 +677,7 @@ trait Camera
     * @param height The height of the deadzone rectangle in pixels.
     */
   def setDeadzone(): this.type = js.native
+  def setDeadzone(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setDeadzone(width: Double): this.type = js.native
   def setDeadzone(width: Double, height: Double): this.type = js.native
   /**
@@ -396,6 +687,7 @@ trait Camera
     * @param y The vertical offset from the camera follow target.y position. Default 0.
     */
   def setFollowOffset(): this.type = js.native
+  def setFollowOffset(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setFollowOffset(x: Double): this.type = js.native
   def setFollowOffset(x: Double, y: Double): this.type = js.native
   /**
@@ -411,6 +703,7 @@ trait Camera
     * @param y The amount added to the vertical linear interpolation of the follow target. Default 1.
     */
   def setLerp(): this.type = js.native
+  def setLerp(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setLerp(x: Double): this.type = js.native
   def setLerp(x: Double, y: Double): this.type = js.native
   /**
@@ -461,6 +754,7 @@ trait Camera
     * @param renderToGame If you do not need the Camera to still render to the Game, set this parameter to `false`. Default true.
     */
   def setRenderToTexture(): this.type = js.native
+  def setRenderToTexture(pipeline: js.UndefOr[scala.Nothing], renderToGame: Boolean): this.type = js.native
   def setRenderToTexture(pipeline: String): this.type = js.native
   def setRenderToTexture(pipeline: String, renderToGame: Boolean): this.type = js.native
   def setRenderToTexture(pipeline: WebGLPipeline): this.type = js.native
@@ -475,28 +769,210 @@ trait Camera
     * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
     */
   def shake(): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: js.UndefOr[scala.Nothing], intensity: js.UndefOr[scala.Nothing], force: Boolean): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.Function
+  ): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: js.UndefOr[scala.Nothing], intensity: Double): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: js.UndefOr[scala.Nothing], intensity: Double, force: Boolean): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: js.UndefOr[scala.Nothing], intensity: Double, force: Boolean, callback: js.Function): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: Boolean,
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: js.UndefOr[scala.Nothing], intensity: Vector2): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: js.UndefOr[scala.Nothing], intensity: Vector2, force: Boolean): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: js.UndefOr[scala.Nothing], intensity: Vector2, force: Boolean, callback: js.Function): this.type = js.native
+  def shake(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: Boolean,
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
   def shake(duration: integer): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: integer, intensity: js.UndefOr[scala.Nothing], force: Boolean): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: integer, intensity: js.UndefOr[scala.Nothing], force: Boolean, callback: js.Function): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
   def shake(duration: integer, intensity: Double): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: integer, intensity: Double, force: js.UndefOr[scala.Nothing], callback: js.Function): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
   def shake(duration: integer, intensity: Double, force: Boolean): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: Double,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
   def shake(duration: integer, intensity: Double, force: Boolean, callback: js.Function): this.type = js.native
   def shake(duration: integer, intensity: Double, force: Boolean, callback: js.Function, context: js.Any): this.type = js.native
   def shake(duration: integer, intensity: Vector2): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def shake(duration: integer, intensity: Vector2, force: js.UndefOr[scala.Nothing], callback: js.Function): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.Function,
+    context: js.Any
+  ): this.type = js.native
   def shake(duration: integer, intensity: Vector2, force: Boolean): this.type = js.native
+  def shake(
+    duration: integer,
+    intensity: Vector2,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
   def shake(duration: integer, intensity: Vector2, force: Boolean, callback: js.Function): this.type = js.native
   def shake(duration: integer, intensity: Vector2, force: Boolean, callback: js.Function, context: js.Any): this.type = js.native
-  def startFollow(target: js.Object): this.type = js.native
-  def startFollow(target: js.Object, roundPixels: Boolean): this.type = js.native
-  def startFollow(target: js.Object, roundPixels: Boolean, lerpX: Double): this.type = js.native
-  def startFollow(target: js.Object, roundPixels: Boolean, lerpX: Double, lerpY: Double): this.type = js.native
-  def startFollow(target: js.Object, roundPixels: Boolean, lerpX: Double, lerpY: Double, offsetX: Double): this.type = js.native
-  def startFollow(
-    target: js.Object,
-    roundPixels: Boolean,
-    lerpX: Double,
-    lerpY: Double,
-    offsetX: Double,
-    offsetY: Double
-  ): this.type = js.native
   /**
     * Sets the Camera to follow a Game Object.
     * 
@@ -517,18 +993,13 @@ trait Camera
     * @param offsetX The horizontal offset from the camera follow target.x position. Default 0.
     * @param offsetY The vertical offset from the camera follow target.y position. Default 0.
     */
-  def startFollow(target: GameObject): this.type = js.native
-  def startFollow(target: GameObject, roundPixels: Boolean): this.type = js.native
-  def startFollow(target: GameObject, roundPixels: Boolean, lerpX: Double): this.type = js.native
-  def startFollow(target: GameObject, roundPixels: Boolean, lerpX: Double, lerpY: Double): this.type = js.native
-  def startFollow(target: GameObject, roundPixels: Boolean, lerpX: Double, lerpY: Double, offsetX: Double): this.type = js.native
   def startFollow(
-    target: GameObject,
-    roundPixels: Boolean,
-    lerpX: Double,
-    lerpY: Double,
-    offsetX: Double,
-    offsetY: Double
+    target: GameObject | js.Object,
+    roundPixels: js.UndefOr[Boolean],
+    lerpX: js.UndefOr[Double],
+    lerpY: js.UndefOr[Double],
+    offsetX: js.UndefOr[Double],
+    offsetY: js.UndefOr[Double]
   ): this.type = js.native
   /**
     * Stops a Camera from following a Game Object, if previously set via `Camera.startFollow`.
@@ -546,9 +1017,230 @@ trait Camera
     * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
     */
   def zoomTo(zoom: Double): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(zoom: Double, duration: js.UndefOr[scala.Nothing], ease: js.UndefOr[scala.Nothing], force: Boolean): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(zoom: Double, duration: js.UndefOr[scala.Nothing], ease: String): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(zoom: Double, duration: js.UndefOr[scala.Nothing], ease: String, force: Boolean): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: Boolean,
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(zoom: Double, duration: js.UndefOr[scala.Nothing], ease: js.Function): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(zoom: Double, duration: js.UndefOr[scala.Nothing], ease: js.Function, force: Boolean): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: Boolean,
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
   def zoomTo(zoom: Double, duration: integer): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(zoom: Double, duration: integer, ease: js.UndefOr[scala.Nothing], force: Boolean): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
   def zoomTo(zoom: Double, duration: integer, ease: String): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
   def zoomTo(zoom: Double, duration: integer, ease: String, force: Boolean): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: String,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
   def zoomTo(zoom: Double, duration: integer, ease: String, force: Boolean, callback: CameraPanCallback): this.type = js.native
   def zoomTo(
     zoom: Double,
@@ -559,7 +1251,38 @@ trait Camera
     context: js.Any
   ): this.type = js.native
   def zoomTo(zoom: Double, duration: integer, ease: js.Function): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): this.type = js.native
   def zoomTo(zoom: Double, duration: integer, ease: js.Function, force: Boolean): this.type = js.native
+  def zoomTo(
+    zoom: Double,
+    duration: integer,
+    ease: js.Function,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
   def zoomTo(zoom: Double, duration: integer, ease: js.Function, force: Boolean, callback: CameraPanCallback): this.type = js.native
   def zoomTo(
     zoom: Double,

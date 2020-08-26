@@ -10,6 +10,8 @@ trait ISqlTypeWithTvpType extends ISqlType {
   @JSName("type")
   var type_Original: ISqlTypeFactoryWithTvpType = js.native
   @JSName("type")
+  def type_MISqlTypeWithTvpType(): ISqlTypeWithTvpType = js.native
+  @JSName("type")
   def type_MISqlTypeWithTvpType(tvpType: js.Any): ISqlTypeWithTvpType = js.native
 }
 

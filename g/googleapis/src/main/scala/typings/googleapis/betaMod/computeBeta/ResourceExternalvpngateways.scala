@@ -29,6 +29,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceExternalvpngatewaysDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceExternalvpngatewaysDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -58,6 +59,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaExternalVpnGateway] = js.native
   def get(callback: BodyResponseCallback[SchemaExternalVpnGateway]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExternalVpnGateway] = js.native
   def get(params: ParamsResourceExternalvpngatewaysGet): GaxiosPromise[SchemaExternalVpnGateway] = js.native
   def get(
     params: ParamsResourceExternalvpngatewaysGet,
@@ -91,6 +93,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceExternalvpngatewaysInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceExternalvpngatewaysInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -123,6 +126,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaExternalVpnGatewayList] = js.native
   def list(callback: BodyResponseCallback[SchemaExternalVpnGatewayList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExternalVpnGatewayList] = js.native
   def list(params: ParamsResourceExternalvpngatewaysList): GaxiosPromise[SchemaExternalVpnGatewayList] = js.native
   def list(
     params: ParamsResourceExternalvpngatewaysList,
@@ -156,6 +160,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceExternalvpngatewaysSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(
     params: ParamsResourceExternalvpngatewaysSetlabels,
@@ -188,6 +193,7 @@ class ResourceExternalvpngateways protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceExternalvpngatewaysTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceExternalvpngatewaysTestiampermissions,

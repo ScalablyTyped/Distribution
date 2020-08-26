@@ -26,11 +26,8 @@ object SendMessagePayload {
     __obj.asInstanceOf[SendMessagePayload]
   }
   @scala.inline
-  def FilePayload(file: Blob, customData: js.Any = null, name: String = null, `type`: String = null): SendMessagePayload = {
+  def FilePayload(file: Blob): SendMessagePayload = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-    if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMessagePayload]
   }
 }

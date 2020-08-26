@@ -12,7 +12,7 @@ Higher-level content negotiation
 | Keywords           | content, negotiation, accept, accepts |
 | # releases         | 4 |
 | # dependents       | 433 |
-| # downloads        | 499631581 |
+| # downloads        | 509959987 |
 | # stars            | 21 |
 
 ## Links

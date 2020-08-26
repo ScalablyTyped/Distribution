@@ -4,30 +4,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined graphql.graphql/language/tokenKind._TokenKind[keyof graphql.graphql/language/tokenKind._TokenKind] */
+/* Inlined {  SOF :'<SOF>',   EOF :'<EOF>',   BANG :'!',   DOLLAR :'$',   AMP :'&',   PAREN_L :'(',   PAREN_R :')',   SPREAD :'...',   COLON :':',   EQUALS :'=',   AT :'@',   BRACKET_L :'[',   BRACKET_R :']',   BRACE_L :'{',   PIPE :'|',   BRACE_R :'}',   NAME :'Name',   INT :'Int',   FLOAT :'Float',   STRING :'String',   BLOCK_STRING :'BlockString',   COMMENT :'Comment'}[keyof {  SOF :'<SOF>',   EOF :'<EOF>',   BANG :'!',   DOLLAR :'$',   AMP :'&',   PAREN_L :'(',   PAREN_R :')',   SPREAD :'...',   COLON :':',   EQUALS :'=',   AT :'@',   BRACKET_L :'[',   BRACKET_R :']',   BRACE_L :'{',   PIPE :'|',   BRACE_R :'}',   NAME :'Name',   INT :'Int',   FLOAT :'Float',   STRING :'String',   BLOCK_STRING :'BlockString',   COMMENT :'Comment'}] */
 /* Rewritten from type alias, can be one of: 
-  - typings.graphql.graphqlStrings.`]`
-  - typings.graphql.graphqlStrings.Equalssign
-  - typings.graphql.graphqlStrings.DotDotDot
-  - typings.graphql.graphqlStrings.`[`
-  - typings.graphql.graphqlStrings.Int
-  - typings.graphql.graphqlStrings.BlockString
-  - typings.graphql.graphqlStrings.Colon
-  - typings.graphql.graphqlStrings.Exclamationmark
-  - typings.graphql.graphqlStrings.String
+  - typings.graphql.graphqlStrings.Rightparenthesis
   - typings.graphql.graphqlStrings.Rightcurlybracket
+  - typings.graphql.graphqlStrings.`@`
+  - typings.graphql.graphqlStrings.DotDotDot
+  - typings.graphql.graphqlStrings.String
+  - typings.graphql.graphqlStrings.Leftparenthesis
+  - typings.graphql.graphqlStrings.LessthansignSOFGreaterthansign
   - typings.graphql.graphqlStrings.LessthansignEOFGreaterthansign
   - typings.graphql.graphqlStrings.Leftcurlybracket
-  - typings.graphql.graphqlStrings.Ampersand
-  - typings.graphql.graphqlStrings.Leftparenthesis
-  - typings.graphql.graphqlStrings.`@`
   - typings.graphql.graphqlStrings.Comment
   - typings.graphql.graphqlStrings.Name
-  - typings.graphql.graphqlStrings.Rightparenthesis
+  - typings.graphql.graphqlStrings.Ampersand
+  - typings.graphql.graphqlStrings.BlockString
+  - typings.graphql.graphqlStrings.`[`
+  - typings.graphql.graphqlStrings.Colon
   - typings.graphql.graphqlStrings.$
+  - typings.graphql.graphqlStrings.Equalssign
   - typings.graphql.graphqlStrings.Float
+  - typings.graphql.graphqlStrings.`]`
   - typings.graphql.graphqlStrings.Verticalline
-  - typings.graphql.graphqlStrings.LessthansignSOFGreaterthansign
+  - typings.graphql.graphqlStrings.Int
+  - typings.graphql.graphqlStrings.Exclamationmark
 */
 trait TokenKindEnum extends js.Object
 

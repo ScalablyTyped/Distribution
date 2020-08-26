@@ -29,6 +29,7 @@ class ResourceNotification protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaNotification] = js.native
   def get(callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
   def get(params: ParamsResourceNotificationGet): GaxiosPromise[SchemaNotification] = js.native
   def get(params: ParamsResourceNotificationGet, callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def get(

@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "RadioButtonGroup")
+@JSImport("grommet/es6", "RadioButtonGroup")
 @js.native
 class RadioButtonGroup protected ()
   extends Component[
@@ -28,7 +28,7 @@ class RadioButtonGroup protected ()
   ) = this()
 }
 
-@JSImport("grommet", "RadioButtonGroup")
+@JSImport("grommet/es6", "RadioButtonGroup")
 @js.native
 object RadioButtonGroup extends TopLevel[
       ComponentClass[

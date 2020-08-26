@@ -4,18 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RegularOutput extends Output {
-  var address: String
-  var amount: String
-  var script_type: js.UndefOr[String] = js.undefined
+  var address: String = js.native
+  var amount: String = js.native
+  var script_type: js.UndefOr[String] = js.native
 }
 
 object RegularOutput {
   @scala.inline
-  def apply(address: String, amount: String, script_type: String = null): RegularOutput = {
+  def apply(address: String, amount: String): RegularOutput = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any])
-    if (script_type != null) __obj.updateDynamic("script_type")(script_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegularOutput]
   }
+  @scala.inline
+  implicit class RegularOutputOps[Self <: RegularOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScript_type(value: String): Self = this.set("script_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScript_type: Self = this.set("script_type", js.undefined)
+  }
+  
 }
 

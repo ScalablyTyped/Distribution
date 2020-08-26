@@ -4,53 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait unsubscribeConfig extends baseRequestConfig {
   /**
     * The channel from which the client should be unsubscribed. Must start with a forward slash (/). Overrides channels.
     */
-  var channel: js.UndefOr[String] = js.undefined
+  var channel: js.UndefOr[String] = js.native
   /**
     * The channels from which the client should be unsubscribed. Each must start with a forward slash (/). Overrides channel.
     */
-  var channels: js.UndefOr[js.Array[String]] = js.undefined
+  var channels: js.UndefOr[js.Array[String]] = js.native
   /**
     * The callback to invoke after onSuccess or onFailure. See unsubscribeCompleteArgs for callback argument details.
     */
-  var onComplete: js.UndefOr[js.Function1[/* args */ baseResponseArgs, Unit]] = js.undefined
+  var onComplete: js.UndefOr[js.Function1[/* args */ baseResponseArgs, Unit]] = js.native
   /**
     * The callback to invoke if the unsubscribe fails. See unsubscribeFailureArgs for callback argument details.
     */
-  var onFailure: js.UndefOr[js.Function1[/* args */ baseFailureArgs, Unit]] = js.undefined
+  var onFailure: js.UndefOr[js.Function1[/* args */ baseFailureArgs, Unit]] = js.native
   /**
     * The callback to invoke if the unsubscribe succeeds. See unsubscribeSuccessArgs for callback argument details.
     */
-  var onSuccess: js.UndefOr[js.Function1[/* args */ unsubscribeSuccessArgs, Unit]] = js.undefined
+  var onSuccess: js.UndefOr[js.Function1[/* args */ unsubscribeSuccessArgs, Unit]] = js.native
 }
 
 object unsubscribeConfig {
   @scala.inline
-  def apply(
-    channel: String = null,
-    channels: js.Array[String] = null,
-    meta: js.Any = null,
-    onComplete: /* args */ baseResponseArgs => Unit = null,
-    onFailure: /* args */ baseFailureArgs => Unit = null,
-    onSuccess: /* args */ unsubscribeSuccessArgs => Unit = null,
-    requestUrl: String = null,
-    suppressErrors: js.UndefOr[Boolean] = js.undefined,
-    sync: js.UndefOr[Boolean] = js.undefined
-  ): unsubscribeConfig = {
+  def apply(): unsubscribeConfig = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
-    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[unsubscribeConfig]
   }
+  @scala.inline
+  implicit class unsubscribeConfigOps[Self <: unsubscribeConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannel: Self = this.set("channel", js.undefined)
+    @scala.inline
+    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    @scala.inline
+    def setChannels(value: js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("channels", js.undefined)
+    @scala.inline
+    def setOnComplete(value: /* args */ baseResponseArgs => Unit): Self = this.set("onComplete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    @scala.inline
+    def setOnFailure(value: /* args */ baseFailureArgs => Unit): Self = this.set("onFailure", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
+    @scala.inline
+    def setOnSuccess(value: /* args */ unsubscribeSuccessArgs => Unit): Self = this.set("onSuccess", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+  }
+  
 }
 

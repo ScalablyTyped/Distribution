@@ -17,15 +17,5 @@ class ASPxClientFileManagerItemsMovedEventArgs protected ()
     * @param oldFolderFullName A string value that specifies the folder's full name.
     */
   def this(items: js.Array[typings.devexpressWeb.ASPxClientFileManagerItem], oldFolderFullName: String) = this()
-  /**
-    * Gets an array of the currently processed items.
-    */
-  /* CompleteClass */
-  override var items: js.Array[typings.devexpressWeb.ASPxClientFileManagerItem] = js.native
-  /**
-    * Gets the full name of the folder from which items are moved.
-    */
-  /* CompleteClass */
-  override var oldFolderFullName: String = js.native
 }
 

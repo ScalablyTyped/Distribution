@@ -12,7 +12,7 @@ Simple like Promise.all(), but sequentially!
 | Keywords           | promise, queue, seq, sequence, sequential |
 | # releases         | 1 |
 | # dependents       | 37 |
-| # downloads        | 349304 |
+| # downloads        | 358504 |
 | # stars            | 5 |
 
 ## Links

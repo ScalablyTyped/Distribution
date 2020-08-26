@@ -5,96 +5,133 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait YouTubePlayerOptions extends js.Object {
   /**
     * This parameter indicates whether the player will show video annotations.
     * The default value is true.
     */
-  var annotations: js.UndefOr[Boolean] = js.undefined
+  var annotations: js.UndefOr[Boolean] = js.native
   /**
     * This parameter indicates whether the initial video will automatically
     * start to play when the player loads. The default value is false.
     */
-  var autoplay: js.UndefOr[Boolean] = js.undefined
+  var autoplay: js.UndefOr[Boolean] = js.native
   /**
     * This parameter indicates whether closed captions should be shown, even if
     * the user has turned captions off. The default behavior is based on user
     * preference.
     */
-  var captions: js.UndefOr[`false` | String] = js.undefined
+  var captions: js.UndefOr[`false` | String] = js.native
   /**
     * This parameter indicates whether the video player controls are displayed.
     * The default value is true.
     */
-  var controls: js.UndefOr[Boolean] = js.undefined
+  var controls: js.UndefOr[Boolean] = js.native
   /**
     * This parameter indicates whether the player will show a fullscreen
     * button. The default value is true.
     */
-  var fullscreen: js.UndefOr[Boolean] = js.undefined
+  var fullscreen: js.UndefOr[Boolean] = js.native
   /** This parameter indicates the height of the player. */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * This parameter indicates whether the player will respond to keyboard
     * shortcuts. The default value is true.
     */
-  var keyboard: js.UndefOr[Boolean] = js.undefined
+  var keyboard: js.UndefOr[Boolean] = js.native
   /**
     * This parameter lets you use a YouTube player that does not show a
     * YouTube logo. Even when this option is enabled, a small YouTube text
     * label will still display in the upper-right corner of a paused video
     * when the user's mouse pointer hovers over the player.
     */
-  var modestBranding: js.UndefOr[Boolean] = js.undefined
+  var modestBranding: js.UndefOr[Boolean] = js.native
   /**
     * This parameter controls whether videos play inline or fullscreen in an
     * HTML5 player on iOS. The default value is true.
     */
-  var playsInline: js.UndefOr[Boolean] = js.undefined
+  var playsInline: js.UndefOr[Boolean] = js.native
   /**
     * This parameter indicates whether the player should show related videos
     * from other channels
     */
-  var related: js.UndefOr[Boolean] = js.undefined
+  var related: js.UndefOr[Boolean] = js.native
   /**
     * The time between onTimeupdate callbacks, in milliseconds. Default is
     * 1000.
     */
-  var timeupdateFrequency: js.UndefOr[Double] = js.undefined
+  var timeupdateFrequency: js.UndefOr[Double] = js.native
   /**  This parameter indicates the width of the player. */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object YouTubePlayerOptions {
   @scala.inline
-  def apply(
-    annotations: js.UndefOr[Boolean] = js.undefined,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    captions: `false` | String = null,
-    controls: js.UndefOr[Boolean] = js.undefined,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    modestBranding: js.UndefOr[Boolean] = js.undefined,
-    playsInline: js.UndefOr[Boolean] = js.undefined,
-    related: js.UndefOr[Boolean] = js.undefined,
-    timeupdateFrequency: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): YouTubePlayerOptions = {
+  def apply(): YouTubePlayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(annotations)) __obj.updateDynamic("annotations")(annotations.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
-    if (captions != null) __obj.updateDynamic("captions")(captions.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(modestBranding)) __obj.updateDynamic("modestBranding")(modestBranding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeupdateFrequency)) __obj.updateDynamic("timeupdateFrequency")(timeupdateFrequency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[YouTubePlayerOptions]
   }
+  @scala.inline
+  implicit class YouTubePlayerOptionsOps[Self <: YouTubePlayerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotations(value: Boolean): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    @scala.inline
+    def setCaptions(value: `false` | String): Self = this.set("captions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptions: Self = this.set("captions", js.undefined)
+    @scala.inline
+    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    @scala.inline
+    def setModestBranding(value: Boolean): Self = this.set("modestBranding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModestBranding: Self = this.set("modestBranding", js.undefined)
+    @scala.inline
+    def setPlaysInline(value: Boolean): Self = this.set("playsInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaysInline: Self = this.set("playsInline", js.undefined)
+    @scala.inline
+    def setRelated(value: Boolean): Self = this.set("related", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelated: Self = this.set("related", js.undefined)
+    @scala.inline
+    def setTimeupdateFrequency(value: Double): Self = this.set("timeupdateFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeupdateFrequency: Self = this.set("timeupdateFrequency", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

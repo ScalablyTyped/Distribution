@@ -32,11 +32,11 @@ class PlatformRef () extends js.Object {
   def bootstrapModule[M](moduleType: Type[M], compilerOptions: CompilerOptions with BootstrapOptions): js.Promise[NgModuleRef[M]] = js.native
   def bootstrapModule[M](moduleType: Type[M], compilerOptions: js.Array[CompilerOptions with BootstrapOptions]): js.Promise[NgModuleRef[M]] = js.native
   /**
-    * Creates an instance of an `@NgModule` for the given platform
-    * for offline compilation.
+    * Creates an instance of an `@NgModule` for the given platform for offline compilation.
     *
     * @usageNotes
-    * ### Simple Example
+    *
+    * The following example creates the NgModule for a browser platform.
     *
     * ```typescript
     * my_module.ts:
@@ -56,17 +56,18 @@ class PlatformRef () extends js.Object {
   def bootstrapModuleFactory[M](moduleFactory: NgModuleFactory[M]): js.Promise[NgModuleRef[M]] = js.native
   def bootstrapModuleFactory[M](moduleFactory: NgModuleFactory[M], options: BootstrapOptions): js.Promise[NgModuleRef[M]] = js.native
   /**
-    * Destroy the Angular platform and all Angular applications on the page.
+    * Destroys the current Angular platform and all Angular applications on the page.
+    * Destroys all modules and listeners registered with the platform.
     */
   def destroy(): Unit = js.native
   def destroyed: Boolean = js.native
   /**
-    * Retrieve the platform {@link Injector}, which is the parent injector for
+    * Retrieves the platform {@link Injector}, which is the parent injector for
     * every Angular application on the page and provides singleton providers.
     */
   def injector: Injector = js.native
   /**
-    * Register a listener to be called when the platform is disposed.
+    * Registers a listener to be called when the platform is destroyed.
     */
   def onDestroy(callback: js.Function0[Unit]): Unit = js.native
 }

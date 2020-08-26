@@ -42,24 +42,50 @@ trait SchemaAsp extends js.Object {
 
 object SchemaAsp {
   @scala.inline
-  def apply(
-    codeId: js.UndefOr[Double] = js.undefined,
-    creationTime: String = null,
-    etag: String = null,
-    kind: String = null,
-    lastTimeUsed: String = null,
-    name: String = null,
-    userKey: String = null
-  ): SchemaAsp = {
+  def apply(): SchemaAsp = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(codeId)) __obj.updateDynamic("codeId")(codeId.get.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastTimeUsed != null) __obj.updateDynamic("lastTimeUsed")(lastTimeUsed.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (userKey != null) __obj.updateDynamic("userKey")(userKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAsp]
   }
+  @scala.inline
+  implicit class SchemaAspOps[Self <: SchemaAsp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodeId(value: Double): Self = this.set("codeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeId: Self = this.set("codeId", js.undefined)
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastTimeUsed(value: String): Self = this.set("lastTimeUsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastTimeUsed: Self = this.set("lastTimeUsed", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUserKey(value: String): Self = this.set("userKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserKey: Self = this.set("userKey", js.undefined)
+  }
+  
 }
 

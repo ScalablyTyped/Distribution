@@ -14,6 +14,7 @@ trait Arc
   def geometry(): typings.kendoUi.kendo.geometry.Arc = js.native
   def geometry(value: typings.kendoUi.kendo.geometry.Arc): Unit = js.native
   def stroke(color: String): typings.kendoUi.kendo.drawing.Arc = js.native
+  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): typings.kendoUi.kendo.drawing.Arc = js.native
   def stroke(color: String, width: Double): typings.kendoUi.kendo.drawing.Arc = js.native
   def stroke(color: String, width: Double, opacity: Double): typings.kendoUi.kendo.drawing.Arc = js.native
 }

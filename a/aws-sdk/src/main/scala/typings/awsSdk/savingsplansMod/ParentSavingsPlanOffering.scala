@@ -34,22 +34,46 @@ trait ParentSavingsPlanOffering extends js.Object {
 
 object ParentSavingsPlanOffering {
   @scala.inline
-  def apply(
-    currency: CurrencyCode = null,
-    durationSeconds: js.UndefOr[SavingsPlansDuration] = js.undefined,
-    offeringId: UUID = null,
-    paymentOption: SavingsPlanPaymentOption = null,
-    planDescription: SavingsPlanDescription = null,
-    planType: SavingsPlanType = null
-  ): ParentSavingsPlanOffering = {
+  def apply(): ParentSavingsPlanOffering = {
     val __obj = js.Dynamic.literal()
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(durationSeconds)) __obj.updateDynamic("durationSeconds")(durationSeconds.get.asInstanceOf[js.Any])
-    if (offeringId != null) __obj.updateDynamic("offeringId")(offeringId.asInstanceOf[js.Any])
-    if (paymentOption != null) __obj.updateDynamic("paymentOption")(paymentOption.asInstanceOf[js.Any])
-    if (planDescription != null) __obj.updateDynamic("planDescription")(planDescription.asInstanceOf[js.Any])
-    if (planType != null) __obj.updateDynamic("planType")(planType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParentSavingsPlanOffering]
   }
+  @scala.inline
+  implicit class ParentSavingsPlanOfferingOps[Self <: ParentSavingsPlanOffering] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrency(value: CurrencyCode): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setDurationSeconds(value: SavingsPlansDuration): Self = this.set("durationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
+    @scala.inline
+    def setOfferingId(value: UUID): Self = this.set("offeringId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingId: Self = this.set("offeringId", js.undefined)
+    @scala.inline
+    def setPaymentOption(value: SavingsPlanPaymentOption): Self = this.set("paymentOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentOption: Self = this.set("paymentOption", js.undefined)
+    @scala.inline
+    def setPlanDescription(value: SavingsPlanDescription): Self = this.set("planDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlanDescription: Self = this.set("planDescription", js.undefined)
+    @scala.inline
+    def setPlanType(value: SavingsPlanType): Self = this.set("planType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlanType: Self = this.set("planType", js.undefined)
+  }
+  
 }
 

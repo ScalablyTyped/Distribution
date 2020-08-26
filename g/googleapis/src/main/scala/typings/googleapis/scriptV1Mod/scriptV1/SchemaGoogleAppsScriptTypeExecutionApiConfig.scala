@@ -17,10 +17,26 @@ trait SchemaGoogleAppsScriptTypeExecutionApiConfig extends js.Object {
 
 object SchemaGoogleAppsScriptTypeExecutionApiConfig {
   @scala.inline
-  def apply(access: String = null): SchemaGoogleAppsScriptTypeExecutionApiConfig = {
+  def apply(): SchemaGoogleAppsScriptTypeExecutionApiConfig = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleAppsScriptTypeExecutionApiConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleAppsScriptTypeExecutionApiConfigOps[Self <: SchemaGoogleAppsScriptTypeExecutionApiConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccess(value: String): Self = this.set("access", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccess: Self = this.set("access", js.undefined)
+  }
+  
 }
 

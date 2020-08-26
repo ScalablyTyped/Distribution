@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
 class RoughEase protected ()
   extends typings.gsap.gsap.RoughEase {
   def this(vars: RoughEaseConfig) = this()
-  /** Translates the tween's progress ratio into the corresponding ease ratio. */
-  /* CompleteClass */
-  override def getRatio(p: Double): Double = js.native
 }
 
 /* static members */

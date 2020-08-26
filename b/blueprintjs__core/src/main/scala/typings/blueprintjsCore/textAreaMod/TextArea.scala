@@ -14,6 +14,8 @@ class TextArea ()
   var internalTextAreaRef: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MTextArea(): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MTextArea(prevProps: ITextAreaProps): Unit = js.native
 }
 
 /* static members */

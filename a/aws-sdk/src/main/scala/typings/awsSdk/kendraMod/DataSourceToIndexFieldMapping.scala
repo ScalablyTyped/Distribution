@@ -22,14 +22,30 @@ trait DataSourceToIndexFieldMapping extends js.Object {
 
 object DataSourceToIndexFieldMapping {
   @scala.inline
-  def apply(
-    DataSourceFieldName: DataSourceFieldName,
-    IndexFieldName: IndexFieldName,
-    DateFieldFormat: DataSourceDateFieldFormat = null
-  ): DataSourceToIndexFieldMapping = {
+  def apply(DataSourceFieldName: DataSourceFieldName, IndexFieldName: IndexFieldName): DataSourceToIndexFieldMapping = {
     val __obj = js.Dynamic.literal(DataSourceFieldName = DataSourceFieldName.asInstanceOf[js.Any], IndexFieldName = IndexFieldName.asInstanceOf[js.Any])
-    if (DateFieldFormat != null) __obj.updateDynamic("DateFieldFormat")(DateFieldFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceToIndexFieldMapping]
   }
+  @scala.inline
+  implicit class DataSourceToIndexFieldMappingOps[Self <: DataSourceToIndexFieldMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceFieldName(value: DataSourceFieldName): Self = this.set("DataSourceFieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndexFieldName(value: IndexFieldName): Self = this.set("IndexFieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDateFieldFormat(value: DataSourceDateFieldFormat): Self = this.set("DateFieldFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateFieldFormat: Self = this.set("DateFieldFormat", js.undefined)
+  }
+  
 }
 

@@ -30,16 +30,34 @@ trait SchemaOsConstraint extends js.Object {
 
 object SchemaOsConstraint {
   @scala.inline
-  def apply(
-    minimumVersion: String = null,
-    osType: String = null,
-    requireVerifiedChromeOs: js.UndefOr[Boolean] = js.undefined
-  ): SchemaOsConstraint = {
+  def apply(): SchemaOsConstraint = {
     val __obj = js.Dynamic.literal()
-    if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion.asInstanceOf[js.Any])
-    if (osType != null) __obj.updateDynamic("osType")(osType.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireVerifiedChromeOs)) __obj.updateDynamic("requireVerifiedChromeOs")(requireVerifiedChromeOs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOsConstraint]
   }
+  @scala.inline
+  implicit class SchemaOsConstraintOps[Self <: SchemaOsConstraint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMinimumVersion(value: String): Self = this.set("minimumVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumVersion: Self = this.set("minimumVersion", js.undefined)
+    @scala.inline
+    def setOsType(value: String): Self = this.set("osType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOsType: Self = this.set("osType", js.undefined)
+    @scala.inline
+    def setRequireVerifiedChromeOs(value: Boolean): Self = this.set("requireVerifiedChromeOs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireVerifiedChromeOs: Self = this.set("requireVerifiedChromeOs", js.undefined)
+  }
+  
 }
 

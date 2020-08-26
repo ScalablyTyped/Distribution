@@ -42,6 +42,7 @@ object servicesOrdersMod extends js.Object {
       * @param options Options for creating the order.
       */
     def create(order: Order): js.Promise[Order] = js.native
+    def create(order: Order, transactions: js.UndefOr[scala.Nothing], options: OrderCreateOptions): js.Promise[Order] = js.native
     def create(order: Order, transactions: js.Array[Transaction]): js.Promise[Order] = js.native
     def create(order: Order, transactions: js.Array[Transaction], options: OrderCreateOptions): js.Promise[Order] = js.native
     /**

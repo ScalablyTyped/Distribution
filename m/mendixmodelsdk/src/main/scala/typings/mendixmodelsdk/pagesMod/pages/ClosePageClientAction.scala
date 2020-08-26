@@ -32,7 +32,7 @@ class ClosePageClientAction protected () extends ClientAction {
     * In version 8.9.0: introduced
     */
   def numberOfPages: Double = js.native
-  def numberOfPages(newValue: Double): js.Any = js.native
+  def numberOfPages_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

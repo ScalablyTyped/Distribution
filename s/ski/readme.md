@@ -12,7 +12,7 @@ eponymous functions from the SKI calculus
 | Keywords           | identity, constant, SKI, combinator |
 | # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 121448 |
+| # downloads        | 116511 |
 | # stars            | 1 |
 
 ## Links

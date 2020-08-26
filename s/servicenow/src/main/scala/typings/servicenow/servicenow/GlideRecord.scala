@@ -16,11 +16,13 @@ trait GlideRecord extends Instantiable1[/* type */ String, GlideRecord] {
   val sys_updated_on: GlideDateTime with GlideElement = js.native
   def _next(): Boolean = js.native
   def _query(): Unit = js.native
+  def _query(field: js.UndefOr[scala.Nothing], value: js.Object): Unit = js.native
   def _query(field: String): Unit = js.native
   def _query(field: String, value: js.Object): Unit = js.native
   def addActiveQuery(): GlideQueryCondition = js.native
   def addEncodedQuery(query: String): Unit = js.native
   def addJoinQuery(joinTable: String): GlideQueryCondition = js.native
+  def addJoinQuery(joinTable: String, primaryField: js.UndefOr[scala.Nothing], joinTableField: String): GlideQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String): GlideQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String, joinTableField: String): GlideQueryCondition = js.native
   def addNotNullQuery(fieldName: String): GlideQueryCondition = js.native
@@ -71,6 +73,7 @@ trait GlideRecord extends Instantiable1[/* type */ String, GlideRecord] {
   def orderBy(name: String): Unit = js.native
   def orderByDesc(name: String): Unit = js.native
   def query(): Unit = js.native
+  def query(field: js.UndefOr[scala.Nothing], value: js.Object): Unit = js.native
   def query(field: String): Unit = js.native
   def query(field: String, value: js.Object): Unit = js.native
   def setAbortAction(b: Boolean): Unit = js.native

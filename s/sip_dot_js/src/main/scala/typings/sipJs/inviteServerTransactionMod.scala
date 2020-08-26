@@ -76,19 +76,19 @@ object inviteServerTransactionMod extends js.Object {
       * it is reset with the value of T2.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
       */
-    var timer_G: js.Any = js.native
+    var timerG: js.Any = js.native
     /**
       * If timer H fires while in the "Completed" state, it implies that the ACK was never received.
       * In this case, the server transaction MUST transition to the "Terminated" state, and MUST
       * indicate to the TU that a transaction failure has occurred.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
       */
-    var timer_H: js.Any = js.native
+    var timerH: js.Any = js.native
     /**
       * Once timer I fires, the server MUST transition to the "Terminated" state.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
       */
-    var timer_I: js.Any = js.native
+    var timerI: js.Any = js.native
     /**
       * When Timer L fires and the state machine is in the "Accepted" state, the machine MUST
       * transition to the "Terminated" state. Once the transaction is in the "Terminated" state,
@@ -98,7 +98,7 @@ object inviteServerTransactionMod extends js.Object {
       * https://tools.ietf.org/html/rfc6026#section-7.1
       * https://tools.ietf.org/html/rfc6026#section-8.7
       */
-    var timer_L: js.Any = js.native
+    var timerL: js.Any = js.native
     /**
       * First, the procedures in [4] are followed, which attempt to deliver the response to a backup.
       * If those should all fail, based on the definition of failure in [4], the server transaction SHOULD

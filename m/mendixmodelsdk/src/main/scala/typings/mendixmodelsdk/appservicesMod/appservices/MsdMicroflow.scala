@@ -26,25 +26,25 @@ class MsdMicroflow protected () extends Element {
   var model_FMsdMicroflow: IModel = js.native
   def containerAsMsdMetadata: MsdMetadata = js.native
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def image: String = js.native
-  def image(newValue: String): js.Any = js.native
+  def image_=(newValue: String): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def parameters: IList[MsdMicroflowParameter] = js.native
   def returnType: String = js.native
-  def returnType(newValue: String): js.Any = js.native
   def returnTypeCanBeEmpty: Boolean = js.native
-  def returnTypeCanBeEmpty(newValue: Boolean): js.Any = js.native
+  def returnTypeCanBeEmpty_=(newValue: Boolean): Unit = js.native
   def returnTypeSpecification: String = js.native
-  def returnTypeSpecification(newValue: String): js.Any = js.native
+  def returnTypeSpecification_=(newValue: String): Unit = js.native
+  def returnType_=(newValue: String): Unit = js.native
   /**
     * In version 6.1.0: deleted
     */
   def systemEntityType: String = js.native
-  def systemEntityType(newValue: String): js.Any = js.native
+  def systemEntityType_=(newValue: String): Unit = js.native
 }
 
 /* static members */

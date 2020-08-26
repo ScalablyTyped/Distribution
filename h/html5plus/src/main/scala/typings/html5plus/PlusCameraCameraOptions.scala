@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
   */
+@js.native
 trait PlusCameraCameraOptions extends js.Object {
   /**
     * 拍照或摄像文件保存的路径
@@ -25,14 +26,14 @@ trait PlusCameraCameraOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var filename: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.undefined
+  var filename: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.native
   /**
     * 拍照或摄像的文件格式
     * 可通过Camera对象的supportedImageFormats或supportedVideoFormats获取，如果设置的参数无效则使用系统默认值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
   /**
     * 拍照或摄像默认使用的摄像头
     * 拍照或摄像界面默认使用的摄像头编号，1表示主摄像头，2表示辅摄像头。
@@ -41,7 +42,7 @@ trait PlusCameraCameraOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var index: js.UndefOr[`1` | `2`] = js.undefined
+  var index: js.UndefOr[`1` | `2`] = js.native
   /**
     * 是否优化图片
     * 自动调整图片的方向，在部分设备上可能出现图片方向不正确的问题，此参数将配置是否自动调整图片方向。
@@ -53,21 +54,21 @@ trait PlusCameraCameraOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var optimize: js.UndefOr[Boolean] = js.undefined
+  var optimize: js.UndefOr[Boolean] = js.native
   /**
     * 拍照或摄像界面弹出指示区域
     * 对于大屏幕设备如iPad，拍照或摄像界面为弹出窗口，此时可通过此参数设置弹出窗口位置，其为JSON对象，格式如{top:"10px",left:"10px",width:"200px",height:"200px"}，默认弹出位置为屏幕居中。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var popover: js.UndefOr[PlusCameraPopPosition] = js.undefined
+  var popover: js.UndefOr[PlusCameraPopPosition] = js.native
   /**
     * 拍照或摄像使用的分辨率
     * 可通过Camera对象的supportedImageResolutions或supportedVideoResolutions获取，如果设置的参数无效则使用系统默认值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var resolution: js.UndefOr[String] = js.undefined
+  var resolution: js.UndefOr[String] = js.native
   /**
     * 视频长度
     * 单位为秒（s），小于等于0表示不限定视频长度。
@@ -76,29 +77,55 @@ trait PlusCameraCameraOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var videoMaximumDuration: js.UndefOr[Double] = js.undefined
+  var videoMaximumDuration: js.UndefOr[Double] = js.native
 }
 
 object PlusCameraCameraOptions {
   @scala.inline
-  def apply(
-    filename: _docSlash | _documentsSlash | _downloadsSlash = null,
-    format: String = null,
-    index: `1` | `2` = null,
-    optimize: js.UndefOr[Boolean] = js.undefined,
-    popover: PlusCameraPopPosition = null,
-    resolution: String = null,
-    videoMaximumDuration: js.UndefOr[Double] = js.undefined
-  ): PlusCameraCameraOptions = {
+  def apply(): PlusCameraCameraOptions = {
     val __obj = js.Dynamic.literal()
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimize)) __obj.updateDynamic("optimize")(optimize.get.asInstanceOf[js.Any])
-    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoMaximumDuration)) __obj.updateDynamic("videoMaximumDuration")(videoMaximumDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusCameraCameraOptions]
   }
+  @scala.inline
+  implicit class PlusCameraCameraOptionsOps[Self <: PlusCameraCameraOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilename(value: _docSlash | _documentsSlash | _downloadsSlash): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setIndex(value: `1` | `2`): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setOptimize(value: Boolean): Self = this.set("optimize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptimize: Self = this.set("optimize", js.undefined)
+    @scala.inline
+    def setPopover(value: PlusCameraPopPosition): Self = this.set("popover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopover: Self = this.set("popover", js.undefined)
+    @scala.inline
+    def setResolution(value: String): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setVideoMaximumDuration(value: Double): Self = this.set("videoMaximumDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoMaximumDuration: Self = this.set("videoMaximumDuration", js.undefined)
+  }
+  
 }
 

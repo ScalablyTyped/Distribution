@@ -41,6 +41,7 @@ trait Folder extends js.Object {
   var WebViewOn: Boolean = js.native
   var WebViewURL: String = js.native
   def AddToFavorites(): Unit = js.native
+  def AddToFavorites(fNoUI: js.UndefOr[scala.Nothing], Name: js.Any): Unit = js.native
   def AddToFavorites(fNoUI: js.Any): Unit = js.native
   def AddToFavorites(fNoUI: js.Any, Name: js.Any): Unit = js.native
   def AddToPFFavorites(): Unit = js.native
@@ -53,6 +54,7 @@ trait Folder extends js.Object {
   def GetExplorer(DisplayMode: js.Any): Explorer = js.native
   def GetStorage(StorageIdentifier: String, StorageIdentifierType: OlStorageIdentifierType): StorageItem = js.native
   def GetTable(): Table = js.native
+  def GetTable(Filter: js.UndefOr[scala.Nothing], TableContents: js.Any): Table = js.native
   def GetTable(Filter: js.Any): Table = js.native
   def GetTable(Filter: js.Any, TableContents: js.Any): Table = js.native
   def MoveTo(DestinationFolder: Folder): Unit = js.native

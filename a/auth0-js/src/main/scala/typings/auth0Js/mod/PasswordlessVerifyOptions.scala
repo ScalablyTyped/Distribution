@@ -4,49 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PasswordlessVerifyOptions extends BaseAuthOptions {
-  var connection: String
-  var email: js.UndefOr[String] = js.undefined
-  var phoneNumber: js.UndefOr[String] = js.undefined
-  var responseMode: js.UndefOr[String] = js.undefined
-  var send: js.UndefOr[String] = js.undefined
-  var verificationCode: String
+  var connection: String = js.native
+  var email: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.native
+  var responseMode: js.UndefOr[String] = js.native
+  var send: js.UndefOr[String] = js.native
+  var verificationCode: String = js.native
 }
 
 object PasswordlessVerifyOptions {
   @scala.inline
-  def apply(
-    connection: String,
-    verificationCode: String,
-    __instate: String = null,
-    _csrf: String = null,
-    audience: String = null,
-    clientID: String = null,
-    email: String = null,
-    nonce: String = null,
-    phoneNumber: String = null,
-    redirectUri: String = null,
-    responseMode: String = null,
-    responseType: String = null,
-    scope: String = null,
-    send: String = null,
-    state: String = null
-  ): PasswordlessVerifyOptions = {
+  def apply(connection: String, verificationCode: String): PasswordlessVerifyOptions = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], verificationCode = verificationCode.asInstanceOf[js.Any])
-    if (__instate != null) __obj.updateDynamic("__instate")(__instate.asInstanceOf[js.Any])
-    if (_csrf != null) __obj.updateDynamic("_csrf")(_csrf.asInstanceOf[js.Any])
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (clientID != null) __obj.updateDynamic("clientID")(clientID.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
-    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (send != null) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordlessVerifyOptions]
   }
+  @scala.inline
+  implicit class PasswordlessVerifyOptionsOps[Self <: PasswordlessVerifyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnection(value: String): Self = this.set("connection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVerificationCode(value: String): Self = this.set("verificationCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    @scala.inline
+    def setResponseMode(value: String): Self = this.set("responseMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseMode: Self = this.set("responseMode", js.undefined)
+    @scala.inline
+    def setSend(value: String): Self = this.set("send", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSend: Self = this.set("send", js.undefined)
+  }
+  
 }
 

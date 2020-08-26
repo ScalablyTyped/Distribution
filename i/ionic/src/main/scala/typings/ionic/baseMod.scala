@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object baseMod extends js.Object {
   @js.native
   abstract class CapacitorCommand () extends Command {
-    var _integration: js.UndefOr[js.Any] = js.native
+    var _integration: js.Any = js.native
     var _runCapacitor: js.Any = js.native
     var promptToInstallCapacitor: js.Any = js.native
     def checkCapacitor(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native

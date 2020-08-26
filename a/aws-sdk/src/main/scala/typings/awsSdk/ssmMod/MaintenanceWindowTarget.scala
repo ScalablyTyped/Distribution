@@ -38,24 +38,52 @@ trait MaintenanceWindowTarget extends js.Object {
 
 object MaintenanceWindowTarget {
   @scala.inline
-  def apply(
-    Description: MaintenanceWindowDescription = null,
-    Name: MaintenanceWindowName = null,
-    OwnerInformation: OwnerInformation = null,
-    ResourceType: MaintenanceWindowResourceType = null,
-    Targets: Targets = null,
-    WindowId: MaintenanceWindowId = null,
-    WindowTargetId: MaintenanceWindowTargetId = null
-  ): MaintenanceWindowTarget = {
+  def apply(): MaintenanceWindowTarget = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OwnerInformation != null) __obj.updateDynamic("OwnerInformation")(OwnerInformation.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
-    if (WindowId != null) __obj.updateDynamic("WindowId")(WindowId.asInstanceOf[js.Any])
-    if (WindowTargetId != null) __obj.updateDynamic("WindowTargetId")(WindowTargetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowTarget]
   }
+  @scala.inline
+  implicit class MaintenanceWindowTargetOps[Self <: MaintenanceWindowTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: MaintenanceWindowDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setName(value: MaintenanceWindowName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOwnerInformation(value: OwnerInformation): Self = this.set("OwnerInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerInformation: Self = this.set("OwnerInformation", js.undefined)
+    @scala.inline
+    def setResourceType(value: MaintenanceWindowResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("Targets", js.undefined)
+    @scala.inline
+    def setWindowId(value: MaintenanceWindowId): Self = this.set("WindowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowId: Self = this.set("WindowId", js.undefined)
+    @scala.inline
+    def setWindowTargetId(value: MaintenanceWindowTargetId): Self = this.set("WindowTargetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowTargetId: Self = this.set("WindowTargetId", js.undefined)
+  }
+  
 }
 

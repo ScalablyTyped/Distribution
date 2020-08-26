@@ -23,11 +23,32 @@ trait GetCredentialsForIdentityInput extends CognitoIdentityCredentialsInputs {
 
 object GetCredentialsForIdentityInput {
   @scala.inline
-  def apply(IdentityId: IdentityId, CustomRoleArn: ARNString = null, Logins: LoginsMap = null): GetCredentialsForIdentityInput = {
+  def apply(IdentityId: IdentityId): GetCredentialsForIdentityInput = {
     val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any])
-    if (CustomRoleArn != null) __obj.updateDynamic("CustomRoleArn")(CustomRoleArn.asInstanceOf[js.Any])
-    if (Logins != null) __obj.updateDynamic("Logins")(Logins.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCredentialsForIdentityInput]
   }
+  @scala.inline
+  implicit class GetCredentialsForIdentityInputOps[Self <: GetCredentialsForIdentityInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentityId(value: IdentityId): Self = this.set("IdentityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomRoleArn(value: ARNString): Self = this.set("CustomRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomRoleArn: Self = this.set("CustomRoleArn", js.undefined)
+    @scala.inline
+    def setLogins(value: LoginsMap): Self = this.set("Logins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogins: Self = this.set("Logins", js.undefined)
+  }
+  
 }
 

@@ -129,54 +129,118 @@ trait SchemaBuild extends js.Object {
 
 object SchemaBuild {
   @scala.inline
-  def apply(
-    artifacts: SchemaArtifacts = null,
-    buildTriggerId: String = null,
-    createTime: String = null,
-    finishTime: String = null,
-    id: String = null,
-    images: js.Array[String] = null,
-    logUrl: String = null,
-    logsBucket: String = null,
-    options: SchemaBuildOptions = null,
-    projectId: String = null,
-    results: SchemaResults = null,
-    secrets: js.Array[SchemaSecret] = null,
-    source: SchemaSource = null,
-    sourceProvenance: SchemaSourceProvenance = null,
-    startTime: String = null,
-    status: String = null,
-    statusDetail: String = null,
-    steps: js.Array[SchemaBuildStep] = null,
-    substitutions: StringDictionary[String] = null,
-    tags: js.Array[String] = null,
-    timeout: String = null,
-    timing: StringDictionary[SchemaTimeSpan] = null
-  ): SchemaBuild = {
+  def apply(): SchemaBuild = {
     val __obj = js.Dynamic.literal()
-    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts.asInstanceOf[js.Any])
-    if (buildTriggerId != null) __obj.updateDynamic("buildTriggerId")(buildTriggerId.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (finishTime != null) __obj.updateDynamic("finishTime")(finishTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl.asInstanceOf[js.Any])
-    if (logsBucket != null) __obj.updateDynamic("logsBucket")(logsBucket.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (secrets != null) __obj.updateDynamic("secrets")(secrets.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (sourceProvenance != null) __obj.updateDynamic("sourceProvenance")(sourceProvenance.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusDetail != null) __obj.updateDynamic("statusDetail")(statusDetail.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
-    if (substitutions != null) __obj.updateDynamic("substitutions")(substitutions.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuild]
   }
+  @scala.inline
+  implicit class SchemaBuildOps[Self <: SchemaBuild] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifacts(value: SchemaArtifacts): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifacts: Self = this.set("artifacts", js.undefined)
+    @scala.inline
+    def setBuildTriggerId(value: String): Self = this.set("buildTriggerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildTriggerId: Self = this.set("buildTriggerId", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setFinishTime(value: String): Self = this.set("finishTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinishTime: Self = this.set("finishTime", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImagesVarargs(value: String*): Self = this.set("images", js.Array(value :_*))
+    @scala.inline
+    def setImages(value: js.Array[String]): Self = this.set("images", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImages: Self = this.set("images", js.undefined)
+    @scala.inline
+    def setLogUrl(value: String): Self = this.set("logUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUrl: Self = this.set("logUrl", js.undefined)
+    @scala.inline
+    def setLogsBucket(value: String): Self = this.set("logsBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogsBucket: Self = this.set("logsBucket", js.undefined)
+    @scala.inline
+    def setOptions(value: SchemaBuildOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setResults(value: SchemaResults): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setSecretsVarargs(value: SchemaSecret*): Self = this.set("secrets", js.Array(value :_*))
+    @scala.inline
+    def setSecrets(value: js.Array[SchemaSecret]): Self = this.set("secrets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecrets: Self = this.set("secrets", js.undefined)
+    @scala.inline
+    def setSource(value: SchemaSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSourceProvenance(value: SchemaSourceProvenance): Self = this.set("sourceProvenance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceProvenance: Self = this.set("sourceProvenance", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusDetail(value: String): Self = this.set("statusDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetail: Self = this.set("statusDetail", js.undefined)
+    @scala.inline
+    def setStepsVarargs(value: SchemaBuildStep*): Self = this.set("steps", js.Array(value :_*))
+    @scala.inline
+    def setSteps(value: js.Array[SchemaBuildStep]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSteps: Self = this.set("steps", js.undefined)
+    @scala.inline
+    def setSubstitutions(value: StringDictionary[String]): Self = this.set("substitutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubstitutions: Self = this.set("substitutions", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTiming(value: StringDictionary[SchemaTimeSpan]): Self = this.set("timing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTiming: Self = this.set("timing", js.undefined)
+  }
+  
 }
 

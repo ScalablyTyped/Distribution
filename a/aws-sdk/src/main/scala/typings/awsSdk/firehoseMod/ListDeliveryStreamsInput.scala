@@ -22,16 +22,34 @@ trait ListDeliveryStreamsInput extends js.Object {
 
 object ListDeliveryStreamsInput {
   @scala.inline
-  def apply(
-    DeliveryStreamType: DeliveryStreamType = null,
-    ExclusiveStartDeliveryStreamName: DeliveryStreamName = null,
-    Limit: js.UndefOr[ListDeliveryStreamsInputLimit] = js.undefined
-  ): ListDeliveryStreamsInput = {
+  def apply(): ListDeliveryStreamsInput = {
     val __obj = js.Dynamic.literal()
-    if (DeliveryStreamType != null) __obj.updateDynamic("DeliveryStreamType")(DeliveryStreamType.asInstanceOf[js.Any])
-    if (ExclusiveStartDeliveryStreamName != null) __obj.updateDynamic("ExclusiveStartDeliveryStreamName")(ExclusiveStartDeliveryStreamName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeliveryStreamsInput]
   }
+  @scala.inline
+  implicit class ListDeliveryStreamsInputOps[Self <: ListDeliveryStreamsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryStreamType(value: DeliveryStreamType): Self = this.set("DeliveryStreamType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryStreamType: Self = this.set("DeliveryStreamType", js.undefined)
+    @scala.inline
+    def setExclusiveStartDeliveryStreamName(value: DeliveryStreamName): Self = this.set("ExclusiveStartDeliveryStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveStartDeliveryStreamName: Self = this.set("ExclusiveStartDeliveryStreamName", js.undefined)
+    @scala.inline
+    def setLimit(value: ListDeliveryStreamsInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+  }
+  
 }
 

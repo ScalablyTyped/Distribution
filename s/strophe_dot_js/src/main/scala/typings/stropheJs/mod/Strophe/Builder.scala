@@ -81,6 +81,7 @@ class Builder protected () extends js.Object {
     *    The Strophe.Builder object.
     */
   def c(name: String): Builder = js.native
+  def c(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Builder = js.native
   def c(name: String, attrs: js.Any): Builder = js.native
   def c(name: String, attrs: js.Any, text: String): Builder = js.native
   /** Function: cnode

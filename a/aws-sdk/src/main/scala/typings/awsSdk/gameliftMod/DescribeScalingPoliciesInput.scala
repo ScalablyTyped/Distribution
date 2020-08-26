@@ -26,17 +26,36 @@ trait DescribeScalingPoliciesInput extends js.Object {
 
 object DescribeScalingPoliciesInput {
   @scala.inline
-  def apply(
-    FleetId: FleetIdOrArn,
-    Limit: js.UndefOr[PositiveInteger] = js.undefined,
-    NextToken: NonZeroAndMaxString = null,
-    StatusFilter: ScalingStatusType = null
-  ): DescribeScalingPoliciesInput = {
+  def apply(FleetId: FleetIdOrArn): DescribeScalingPoliciesInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StatusFilter != null) __obj.updateDynamic("StatusFilter")(StatusFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingPoliciesInput]
   }
+  @scala.inline
+  implicit class DescribeScalingPoliciesInputOps[Self <: DescribeScalingPoliciesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetId(value: FleetIdOrArn): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimit(value: PositiveInteger): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStatusFilter(value: ScalingStatusType): Self = this.set("StatusFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusFilter: Self = this.set("StatusFilter", js.undefined)
+  }
+  
 }
 

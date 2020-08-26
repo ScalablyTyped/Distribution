@@ -34,25 +34,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined { readonly channels  :3,  readonly labels  :'rgb', readonly hsl (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HSL, readonly hsv (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HSV, readonly hwb (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HWB, readonly cmyk (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.CMYK, readonly keyword (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.KEYWORD, readonly xyz (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.XYZ, readonly lab (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.LAB, readonly ansi16 (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.ANSI16, readonly ansi256 (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.ANSI256, readonly hex (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HEX, readonly hcg (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HCG, readonly apple (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.APPLE, readonly gray (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.GRAY} & color-convert.color-convert/route.rgb & {[ F in keyof color-convert.color-convert/route.rgb ]: {  raw  :color-convert.color-convert/route.rgb[F]}} */
+/* Inlined { readonly channels :3,  readonly labels :'rgb', readonly hsl (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HSL, readonly hsv (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HSV, readonly hwb (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HWB, readonly cmyk (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.CMYK, readonly keyword (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.KEYWORD, readonly xyz (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.XYZ, readonly lab (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.LAB, readonly ansi16 (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.ANSI16, readonly ansi256 (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.ANSI256, readonly hex (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HEX, readonly hcg (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HCG, readonly apple (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.APPLE, readonly gray (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.GRAY} & color-convert.color-convert/route.rgb & {[ F in keyof color-convert.color-convert/route.rgb ]: {  raw :color-convert.color-convert/route.rgb[F]}} */
 @js.native
 trait readonlychannels3readonly extends js.Object {
-  var ansi16: `2` = js.native
-  var ansi256: `1` = js.native
-  var apple: `10` = js.native
+  var ansi16: `11` = js.native
+  var ansi256: `2` = js.native
+  var apple: Raw = js.native
   val channels: `3` = js.native
-  var cmyk: `5` = js.native
-  var gray: `8` = js.native
-  var hcg: `0` = js.native
-  var hex: typings.colorConvert.anon.`3` = js.native
-  var hsl: `6` = js.native
-  var hsv: `9` = js.native
-  var hwb: `11` = js.native
-  var keyword: `7` = js.native
+  var cmyk: `4` = js.native
+  var gray: `1` = js.native
+  var hcg: `5` = js.native
+  var hex: `9` = js.native
+  var hsl: `10` = js.native
+  var hsv: `7` = js.native
+  var hwb: typings.colorConvert.anon.`3` = js.native
+  var keyword: `0` = js.native
   var lab: `12` = js.native
   val labels: rgb = js.native
-  var lch: `4` = js.native
-  var xyz: Raw = js.native
+  var lch: `8` = js.native
+  var xyz: `6` = js.native
   def ansi16(rgb: RGB_): ANSI16_ = js.native
   def ansi256(rgb: RGB_): ANSI256_ = js.native
   def apple(rgb: RGB_): APPLE_ = js.native

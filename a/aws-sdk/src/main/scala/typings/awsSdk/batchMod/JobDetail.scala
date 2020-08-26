@@ -88,34 +88,87 @@ object JobDetail {
     jobName: String,
     jobQueue: String,
     startedAt: Long,
-    status: JobStatus,
-    arrayProperties: ArrayPropertiesDetail = null,
-    attempts: AttemptDetails = null,
-    container: ContainerDetail = null,
-    createdAt: js.UndefOr[Long] = js.undefined,
-    dependsOn: JobDependencyList = null,
-    nodeDetails: NodeDetails = null,
-    nodeProperties: NodeProperties = null,
-    parameters: ParametersMap = null,
-    retryStrategy: RetryStrategy = null,
-    statusReason: String = null,
-    stoppedAt: js.UndefOr[Long] = js.undefined,
-    timeout: JobTimeout = null
+    status: JobStatus
   ): JobDetail = {
     val __obj = js.Dynamic.literal(jobDefinition = jobDefinition.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any], jobQueue = jobQueue.asInstanceOf[js.Any], startedAt = startedAt.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (arrayProperties != null) __obj.updateDynamic("arrayProperties")(arrayProperties.asInstanceOf[js.Any])
-    if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(createdAt)) __obj.updateDynamic("createdAt")(createdAt.get.asInstanceOf[js.Any])
-    if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
-    if (nodeDetails != null) __obj.updateDynamic("nodeDetails")(nodeDetails.asInstanceOf[js.Any])
-    if (nodeProperties != null) __obj.updateDynamic("nodeProperties")(nodeProperties.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(retryStrategy.asInstanceOf[js.Any])
-    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(stoppedAt)) __obj.updateDynamic("stoppedAt")(stoppedAt.get.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobDetail]
   }
+  @scala.inline
+  implicit class JobDetailOps[Self <: JobDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobDefinition(value: String): Self = this.set("jobDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobQueue(value: String): Self = this.set("jobQueue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartedAt(value: Long): Self = this.set("startedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayProperties(value: ArrayPropertiesDetail): Self = this.set("arrayProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayProperties: Self = this.set("arrayProperties", js.undefined)
+    @scala.inline
+    def setAttemptsVarargs(value: AttemptDetail*): Self = this.set("attempts", js.Array(value :_*))
+    @scala.inline
+    def setAttempts(value: AttemptDetails): Self = this.set("attempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttempts: Self = this.set("attempts", js.undefined)
+    @scala.inline
+    def setContainer(value: ContainerDetail): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Long): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDependsOnVarargs(value: JobDependency*): Self = this.set("dependsOn", js.Array(value :_*))
+    @scala.inline
+    def setDependsOn(value: JobDependencyList): Self = this.set("dependsOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependsOn: Self = this.set("dependsOn", js.undefined)
+    @scala.inline
+    def setNodeDetails(value: NodeDetails): Self = this.set("nodeDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeDetails: Self = this.set("nodeDetails", js.undefined)
+    @scala.inline
+    def setNodeProperties(value: NodeProperties): Self = this.set("nodeProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeProperties: Self = this.set("nodeProperties", js.undefined)
+    @scala.inline
+    def setParameters(value: ParametersMap): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setRetryStrategy(value: RetryStrategy): Self = this.set("retryStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryStrategy: Self = this.set("retryStrategy", js.undefined)
+    @scala.inline
+    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    @scala.inline
+    def setStoppedAt(value: Long): Self = this.set("stoppedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppedAt: Self = this.set("stoppedAt", js.undefined)
+    @scala.inline
+    def setTimeout(value: JobTimeout): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

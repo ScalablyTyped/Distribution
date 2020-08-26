@@ -34,22 +34,46 @@ trait GetMedicalVocabularyResponse extends js.Object {
 
 object GetMedicalVocabularyResponse {
   @scala.inline
-  def apply(
-    DownloadUri: Uri = null,
-    FailureReason: FailureReason = null,
-    LanguageCode: LanguageCode = null,
-    LastModifiedTime: DateTime = null,
-    VocabularyName: VocabularyName = null,
-    VocabularyState: VocabularyState = null
-  ): GetMedicalVocabularyResponse = {
+  def apply(): GetMedicalVocabularyResponse = {
     val __obj = js.Dynamic.literal()
-    if (DownloadUri != null) __obj.updateDynamic("DownloadUri")(DownloadUri.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (VocabularyName != null) __obj.updateDynamic("VocabularyName")(VocabularyName.asInstanceOf[js.Any])
-    if (VocabularyState != null) __obj.updateDynamic("VocabularyState")(VocabularyState.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMedicalVocabularyResponse]
   }
+  @scala.inline
+  implicit class GetMedicalVocabularyResponseOps[Self <: GetMedicalVocabularyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDownloadUri(value: Uri): Self = this.set("DownloadUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadUri: Self = this.set("DownloadUri", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: DateTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setVocabularyName(value: VocabularyName): Self = this.set("VocabularyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocabularyName: Self = this.set("VocabularyName", js.undefined)
+    @scala.inline
+    def setVocabularyState(value: VocabularyState): Self = this.set("VocabularyState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocabularyState: Self = this.set("VocabularyState", js.undefined)
+  }
+  
 }
 

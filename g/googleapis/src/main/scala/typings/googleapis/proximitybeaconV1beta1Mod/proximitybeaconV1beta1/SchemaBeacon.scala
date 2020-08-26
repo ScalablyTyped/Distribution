@@ -89,32 +89,66 @@ trait SchemaBeacon extends js.Object {
 
 object SchemaBeacon {
   @scala.inline
-  def apply(
-    advertisedId: SchemaAdvertisedId = null,
-    beaconName: String = null,
-    description: String = null,
-    ephemeralIdRegistration: SchemaEphemeralIdRegistration = null,
-    expectedStability: String = null,
-    indoorLevel: SchemaIndoorLevel = null,
-    latLng: SchemaLatLng = null,
-    placeId: String = null,
-    properties: StringDictionary[String] = null,
-    provisioningKey: String = null,
-    status: String = null
-  ): SchemaBeacon = {
+  def apply(): SchemaBeacon = {
     val __obj = js.Dynamic.literal()
-    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId.asInstanceOf[js.Any])
-    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (ephemeralIdRegistration != null) __obj.updateDynamic("ephemeralIdRegistration")(ephemeralIdRegistration.asInstanceOf[js.Any])
-    if (expectedStability != null) __obj.updateDynamic("expectedStability")(expectedStability.asInstanceOf[js.Any])
-    if (indoorLevel != null) __obj.updateDynamic("indoorLevel")(indoorLevel.asInstanceOf[js.Any])
-    if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
-    if (placeId != null) __obj.updateDynamic("placeId")(placeId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (provisioningKey != null) __obj.updateDynamic("provisioningKey")(provisioningKey.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBeacon]
   }
+  @scala.inline
+  implicit class SchemaBeaconOps[Self <: SchemaBeacon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertisedId(value: SchemaAdvertisedId): Self = this.set("advertisedId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertisedId: Self = this.set("advertisedId", js.undefined)
+    @scala.inline
+    def setBeaconName(value: String): Self = this.set("beaconName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeaconName: Self = this.set("beaconName", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEphemeralIdRegistration(value: SchemaEphemeralIdRegistration): Self = this.set("ephemeralIdRegistration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEphemeralIdRegistration: Self = this.set("ephemeralIdRegistration", js.undefined)
+    @scala.inline
+    def setExpectedStability(value: String): Self = this.set("expectedStability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedStability: Self = this.set("expectedStability", js.undefined)
+    @scala.inline
+    def setIndoorLevel(value: SchemaIndoorLevel): Self = this.set("indoorLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndoorLevel: Self = this.set("indoorLevel", js.undefined)
+    @scala.inline
+    def setLatLng(value: SchemaLatLng): Self = this.set("latLng", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatLng: Self = this.set("latLng", js.undefined)
+    @scala.inline
+    def setPlaceId(value: String): Self = this.set("placeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceId: Self = this.set("placeId", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setProvisioningKey(value: String): Self = this.set("provisioningKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisioningKey: Self = this.set("provisioningKey", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

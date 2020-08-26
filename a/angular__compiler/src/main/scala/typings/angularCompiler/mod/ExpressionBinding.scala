@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ExpressionBinding")
 @js.native
 class ExpressionBinding protected ()
-  extends typings.angularCompiler.publicApiMod.ExpressionBinding {
-  def this(sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan, key: TemplateBindingIdentifier) = this()
+  extends typings.angularCompiler.compilerMod.ExpressionBinding {
   /**
     * @param sourceSpan entire span of the binding.
     * @param key binding name, like ngForOf, ngForTrackBy, ngIf, along with its
@@ -20,6 +19,7 @@ class ExpressionBinding protected ()
     * 3. key.source = ngForTrackBy, key.span is for "trackBy"
     * @param value optional expression for the RHS.
     */
+  def this(sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan, key: TemplateBindingIdentifier) = this()
   def this(
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
     key: TemplateBindingIdentifier,

@@ -22,16 +22,34 @@ trait DashboardPublishOptions extends js.Object {
 
 object DashboardPublishOptions {
   @scala.inline
-  def apply(
-    AdHocFilteringOption: AdHocFilteringOption = null,
-    ExportToCSVOption: ExportToCSVOption = null,
-    SheetControlsOption: SheetControlsOption = null
-  ): DashboardPublishOptions = {
+  def apply(): DashboardPublishOptions = {
     val __obj = js.Dynamic.literal()
-    if (AdHocFilteringOption != null) __obj.updateDynamic("AdHocFilteringOption")(AdHocFilteringOption.asInstanceOf[js.Any])
-    if (ExportToCSVOption != null) __obj.updateDynamic("ExportToCSVOption")(ExportToCSVOption.asInstanceOf[js.Any])
-    if (SheetControlsOption != null) __obj.updateDynamic("SheetControlsOption")(SheetControlsOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashboardPublishOptions]
   }
+  @scala.inline
+  implicit class DashboardPublishOptionsOps[Self <: DashboardPublishOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdHocFilteringOption(value: AdHocFilteringOption): Self = this.set("AdHocFilteringOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdHocFilteringOption: Self = this.set("AdHocFilteringOption", js.undefined)
+    @scala.inline
+    def setExportToCSVOption(value: ExportToCSVOption): Self = this.set("ExportToCSVOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportToCSVOption: Self = this.set("ExportToCSVOption", js.undefined)
+    @scala.inline
+    def setSheetControlsOption(value: SheetControlsOption): Self = this.set("SheetControlsOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetControlsOption: Self = this.set("SheetControlsOption", js.undefined)
+  }
+  
 }
 

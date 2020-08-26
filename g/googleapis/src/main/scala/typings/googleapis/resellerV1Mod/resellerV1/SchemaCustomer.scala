@@ -60,26 +60,54 @@ trait SchemaCustomer extends js.Object {
 
 object SchemaCustomer {
   @scala.inline
-  def apply(
-    alternateEmail: String = null,
-    customerDomain: String = null,
-    customerDomainVerified: js.UndefOr[Boolean] = js.undefined,
-    customerId: String = null,
-    kind: String = null,
-    phoneNumber: String = null,
-    postalAddress: SchemaAddress = null,
-    resourceUiUrl: String = null
-  ): SchemaCustomer = {
+  def apply(): SchemaCustomer = {
     val __obj = js.Dynamic.literal()
-    if (alternateEmail != null) __obj.updateDynamic("alternateEmail")(alternateEmail.asInstanceOf[js.Any])
-    if (customerDomain != null) __obj.updateDynamic("customerDomain")(customerDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(customerDomainVerified)) __obj.updateDynamic("customerDomainVerified")(customerDomainVerified.get.asInstanceOf[js.Any])
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
-    if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress.asInstanceOf[js.Any])
-    if (resourceUiUrl != null) __obj.updateDynamic("resourceUiUrl")(resourceUiUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomer]
   }
+  @scala.inline
+  implicit class SchemaCustomerOps[Self <: SchemaCustomer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlternateEmail(value: String): Self = this.set("alternateEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternateEmail: Self = this.set("alternateEmail", js.undefined)
+    @scala.inline
+    def setCustomerDomain(value: String): Self = this.set("customerDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerDomain: Self = this.set("customerDomain", js.undefined)
+    @scala.inline
+    def setCustomerDomainVerified(value: Boolean): Self = this.set("customerDomainVerified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerDomainVerified: Self = this.set("customerDomainVerified", js.undefined)
+    @scala.inline
+    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    @scala.inline
+    def setPostalAddress(value: SchemaAddress): Self = this.set("postalAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalAddress: Self = this.set("postalAddress", js.undefined)
+    @scala.inline
+    def setResourceUiUrl(value: String): Self = this.set("resourceUiUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceUiUrl: Self = this.set("resourceUiUrl", js.undefined)
+  }
+  
 }
 

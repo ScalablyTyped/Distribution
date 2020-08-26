@@ -15,23 +15,41 @@ trait CreateFieldLevelEncryptionProfileResult extends js.Object {
     */
   var FieldLevelEncryptionProfile: js.UndefOr[typings.awsSdk.cloudfrontMod.FieldLevelEncryptionProfile] = js.native
   /**
-    * The fully qualified URI of the new profile resource just created. For example: https://cloudfront.amazonaws.com/2010-11-01/field-level-encryption-profile/EDFDVBD632BHDS5.
+    * The fully qualified URI of the new profile resource just created.
     */
   var Location: js.UndefOr[String] = js.native
 }
 
 object CreateFieldLevelEncryptionProfileResult {
   @scala.inline
-  def apply(
-    ETag: String = null,
-    FieldLevelEncryptionProfile: FieldLevelEncryptionProfile = null,
-    Location: String = null
-  ): CreateFieldLevelEncryptionProfileResult = {
+  def apply(): CreateFieldLevelEncryptionProfileResult = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (FieldLevelEncryptionProfile != null) __obj.updateDynamic("FieldLevelEncryptionProfile")(FieldLevelEncryptionProfile.asInstanceOf[js.Any])
-    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFieldLevelEncryptionProfileResult]
   }
+  @scala.inline
+  implicit class CreateFieldLevelEncryptionProfileResultOps[Self <: CreateFieldLevelEncryptionProfileResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setFieldLevelEncryptionProfile(value: FieldLevelEncryptionProfile): Self = this.set("FieldLevelEncryptionProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldLevelEncryptionProfile: Self = this.set("FieldLevelEncryptionProfile", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("Location", js.undefined)
+  }
+  
 }
 

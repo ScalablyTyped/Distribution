@@ -11,8 +11,8 @@ LESS.js middleware for connect.
 | Full name          | less-middleware |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 244 |
-| # downloads        | 627385 |
+| # dependents       | 248 |
+| # downloads        | 600240 |
 | # stars            | 15 |
 
 ## Links

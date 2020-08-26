@@ -15,8 +15,5 @@ class GattCharacteristicNotificationTrigger protected ()
     * @param characteristic The GATT characteristic for which value change notifications are desired.
     */
   def this(characteristic: GattCharacteristic) = this()
-  /** Gets the GATT characteristic for which value change notifications are desired. */
-  /* CompleteClass */
-  override var characteristic: GattCharacteristic = js.native
 }
 

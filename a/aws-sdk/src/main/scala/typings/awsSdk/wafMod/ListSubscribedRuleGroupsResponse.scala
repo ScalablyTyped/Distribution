@@ -18,11 +18,32 @@ trait ListSubscribedRuleGroupsResponse extends js.Object {
 
 object ListSubscribedRuleGroupsResponse {
   @scala.inline
-  def apply(NextMarker: NextMarker = null, RuleGroups: SubscribedRuleGroupSummaries = null): ListSubscribedRuleGroupsResponse = {
+  def apply(): ListSubscribedRuleGroupsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
-    if (RuleGroups != null) __obj.updateDynamic("RuleGroups")(RuleGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSubscribedRuleGroupsResponse]
   }
+  @scala.inline
+  implicit class ListSubscribedRuleGroupsResponseOps[Self <: ListSubscribedRuleGroupsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    @scala.inline
+    def setRuleGroupsVarargs(value: SubscribedRuleGroupSummary*): Self = this.set("RuleGroups", js.Array(value :_*))
+    @scala.inline
+    def setRuleGroups(value: SubscribedRuleGroupSummaries): Self = this.set("RuleGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleGroups: Self = this.set("RuleGroups", js.undefined)
+  }
+  
 }
 

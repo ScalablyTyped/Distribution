@@ -18,5 +18,20 @@ object VpcConfiguration {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcConfiguration]
   }
+  @scala.inline
+  implicit class VpcConfigurationOps[Self <: VpcConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

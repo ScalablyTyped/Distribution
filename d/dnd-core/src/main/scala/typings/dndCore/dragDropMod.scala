@@ -1,6 +1,6 @@
 package typings.dndCore
 
-import typings.dndCore.anon.BeginDrag
+import typings.dndCore.interfacesMod.DragDropActions
 import typings.dndCore.interfacesMod.DragDropManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ object dragDropMod extends js.Object {
   val HOVER: /* "dnd-core/HOVER" */ String = js.native
   val INIT_COORDS: /* "dnd-core/INIT_COORDS" */ String = js.native
   val PUBLISH_DRAG_SOURCE: /* "dnd-core/PUBLISH_DRAG_SOURCE" */ String = js.native
-  def default(manager: DragDropManager): BeginDrag = js.native
+  def createDragDropActions(manager: DragDropManager): DragDropActions = js.native
 }
 

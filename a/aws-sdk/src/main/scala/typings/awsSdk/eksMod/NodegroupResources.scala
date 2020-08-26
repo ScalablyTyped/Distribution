@@ -18,11 +18,32 @@ trait NodegroupResources extends js.Object {
 
 object NodegroupResources {
   @scala.inline
-  def apply(autoScalingGroups: AutoScalingGroupList = null, remoteAccessSecurityGroup: String = null): NodegroupResources = {
+  def apply(): NodegroupResources = {
     val __obj = js.Dynamic.literal()
-    if (autoScalingGroups != null) __obj.updateDynamic("autoScalingGroups")(autoScalingGroups.asInstanceOf[js.Any])
-    if (remoteAccessSecurityGroup != null) __obj.updateDynamic("remoteAccessSecurityGroup")(remoteAccessSecurityGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodegroupResources]
   }
+  @scala.inline
+  implicit class NodegroupResourcesOps[Self <: NodegroupResources] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = this.set("autoScalingGroups", js.Array(value :_*))
+    @scala.inline
+    def setAutoScalingGroups(value: AutoScalingGroupList): Self = this.set("autoScalingGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroups: Self = this.set("autoScalingGroups", js.undefined)
+    @scala.inline
+    def setRemoteAccessSecurityGroup(value: String): Self = this.set("remoteAccessSecurityGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteAccessSecurityGroup: Self = this.set("remoteAccessSecurityGroup", js.undefined)
+  }
+  
 }
 

@@ -34,19 +34,40 @@ trait ConditionCheck extends js.Object {
 
 object ConditionCheck {
   @scala.inline
-  def apply(
-    ConditionExpression: ConditionExpression,
-    Key: Key,
-    TableName: TableName,
-    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
-    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
-    ReturnValuesOnConditionCheckFailure: ReturnValuesOnConditionCheckFailure = null
-  ): ConditionCheck = {
+  def apply(ConditionExpression: ConditionExpression, Key: Key, TableName: TableName): ConditionCheck = {
     val __obj = js.Dynamic.literal(ConditionExpression = ConditionExpression.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
-    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues.asInstanceOf[js.Any])
-    if (ReturnValuesOnConditionCheckFailure != null) __obj.updateDynamic("ReturnValuesOnConditionCheckFailure")(ReturnValuesOnConditionCheckFailure.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionCheck]
   }
+  @scala.inline
+  implicit class ConditionCheckOps[Self <: ConditionCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionExpression(value: ConditionExpression): Self = this.set("ConditionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: Key): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = this.set("ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeNames: Self = this.set("ExpressionAttributeNames", js.undefined)
+    @scala.inline
+    def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = this.set("ExpressionAttributeValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeValues: Self = this.set("ExpressionAttributeValues", js.undefined)
+    @scala.inline
+    def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = this.set("ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnValuesOnConditionCheckFailure: Self = this.set("ReturnValuesOnConditionCheckFailure", js.undefined)
+  }
+  
 }
 

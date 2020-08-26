@@ -29,16 +29,34 @@ trait SchemaPrincipal extends js.Object {
 
 object SchemaPrincipal {
   @scala.inline
-  def apply(
-    groupResourceName: String = null,
-    gsuitePrincipal: SchemaGSuitePrincipal = null,
-    userResourceName: String = null
-  ): SchemaPrincipal = {
+  def apply(): SchemaPrincipal = {
     val __obj = js.Dynamic.literal()
-    if (groupResourceName != null) __obj.updateDynamic("groupResourceName")(groupResourceName.asInstanceOf[js.Any])
-    if (gsuitePrincipal != null) __obj.updateDynamic("gsuitePrincipal")(gsuitePrincipal.asInstanceOf[js.Any])
-    if (userResourceName != null) __obj.updateDynamic("userResourceName")(userResourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPrincipal]
   }
+  @scala.inline
+  implicit class SchemaPrincipalOps[Self <: SchemaPrincipal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupResourceName(value: String): Self = this.set("groupResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupResourceName: Self = this.set("groupResourceName", js.undefined)
+    @scala.inline
+    def setGsuitePrincipal(value: SchemaGSuitePrincipal): Self = this.set("gsuitePrincipal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGsuitePrincipal: Self = this.set("gsuitePrincipal", js.undefined)
+    @scala.inline
+    def setUserResourceName(value: String): Self = this.set("userResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserResourceName: Self = this.set("userResourceName", js.undefined)
+  }
+  
 }
 

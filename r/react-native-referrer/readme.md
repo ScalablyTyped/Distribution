@@ -12,7 +12,7 @@ Typings are for version 0.1
 | Keywords           | react-native, referrer, play store |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 40174 |
+| # downloads        | 29616 |
 | # stars            | 0 |
 
 ## Links

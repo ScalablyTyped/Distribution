@@ -5,60 +5,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleActionsV2OrdersCart extends js.Object {
   /**
     * Extension to the cart based on the type of order.
     */
-  var extension: js.UndefOr[ApiClientObjectMap[_]] = js.undefined
+  var extension: js.UndefOr[ApiClientObjectMap[_]] = js.native
   /**
     * Optional id for this cart. Included as part of the
     * Cart returned back to the integrator at confirmation time.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * The good(s) or service(s) the user is ordering. There must be at least
     * one line item.
     */
-  var lineItems: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItem]] = js.undefined
+  var lineItems: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItem]] = js.native
   /**
     * Merchant for the cart, if different from the caller.
     */
-  var merchant: js.UndefOr[GoogleActionsV2OrdersMerchant] = js.undefined
+  var merchant: js.UndefOr[GoogleActionsV2OrdersMerchant] = js.native
   /**
     * Notes about this cart.
     */
-  var notes: js.UndefOr[String] = js.undefined
+  var notes: js.UndefOr[String] = js.native
   /**
     * Adjustments entered by the user, e.g. gratuity.
     */
-  var otherItems: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItem]] = js.undefined
+  var otherItems: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItem]] = js.native
   /**
     * Optional. Promotional coupons added to the cart. Eligible promotions will
     * be sent back as discount line items in proposed order.
     */
-  var promotions: js.UndefOr[js.Array[GoogleActionsV2OrdersPromotion]] = js.undefined
+  var promotions: js.UndefOr[js.Array[GoogleActionsV2OrdersPromotion]] = js.native
 }
 
 object GoogleActionsV2OrdersCart {
   @scala.inline
-  def apply(
-    extension: ApiClientObjectMap[_] = null,
-    id: String = null,
-    lineItems: js.Array[GoogleActionsV2OrdersLineItem] = null,
-    merchant: GoogleActionsV2OrdersMerchant = null,
-    notes: String = null,
-    otherItems: js.Array[GoogleActionsV2OrdersLineItem] = null,
-    promotions: js.Array[GoogleActionsV2OrdersPromotion] = null
-  ): GoogleActionsV2OrdersCart = {
+  def apply(): GoogleActionsV2OrdersCart = {
     val __obj = js.Dynamic.literal()
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
-    if (merchant != null) __obj.updateDynamic("merchant")(merchant.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (otherItems != null) __obj.updateDynamic("otherItems")(otherItems.asInstanceOf[js.Any])
-    if (promotions != null) __obj.updateDynamic("promotions")(promotions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersCart]
   }
+  @scala.inline
+  implicit class GoogleActionsV2OrdersCartOps[Self <: GoogleActionsV2OrdersCart] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExtension(value: ApiClientObjectMap[_]): Self = this.set("extension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtension: Self = this.set("extension", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLineItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = this.set("lineItems", js.Array(value :_*))
+    @scala.inline
+    def setLineItems(value: js.Array[GoogleActionsV2OrdersLineItem]): Self = this.set("lineItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+    @scala.inline
+    def setMerchant(value: GoogleActionsV2OrdersMerchant): Self = this.set("merchant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchant: Self = this.set("merchant", js.undefined)
+    @scala.inline
+    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+    @scala.inline
+    def setOtherItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = this.set("otherItems", js.Array(value :_*))
+    @scala.inline
+    def setOtherItems(value: js.Array[GoogleActionsV2OrdersLineItem]): Self = this.set("otherItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherItems: Self = this.set("otherItems", js.undefined)
+    @scala.inline
+    def setPromotionsVarargs(value: GoogleActionsV2OrdersPromotion*): Self = this.set("promotions", js.Array(value :_*))
+    @scala.inline
+    def setPromotions(value: js.Array[GoogleActionsV2OrdersPromotion]): Self = this.set("promotions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotions: Self = this.set("promotions", js.undefined)
+  }
+  
 }
 

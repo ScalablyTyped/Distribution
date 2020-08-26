@@ -10,9 +10,9 @@ A consistent interface for SHA256 across browsers and NodeJs
 | ------------------ | :-------------: |
 | Full name          | @aws-crypto/sha256-universal |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 2277 |
+| # downloads        | 2757 |
 | # stars            | 0 |
 
 ## Links

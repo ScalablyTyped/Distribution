@@ -19,6 +19,7 @@ object OpenJsCad extends js.Object {
     extends typings.openjscad.OpenJsCad.Processor {
     def this(containerdiv: HTMLDivElement) = this()
     def this(containerdiv: HTMLDivElement, options: ProcessorOptions) = this()
+    def this(containerdiv: HTMLDivElement, options: js.UndefOr[scala.Nothing], onchange: EventHandler) = this()
     def this(containerdiv: HTMLDivElement, options: ProcessorOptions, onchange: EventHandler) = this()
   }
   

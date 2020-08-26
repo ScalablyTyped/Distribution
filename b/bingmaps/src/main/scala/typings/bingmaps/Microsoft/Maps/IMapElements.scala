@@ -4,261 +4,396 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IMapElements extends js.Object {
   /** Admin1, state, province, etc. */
-  var adminDistrict: js.UndefOr[IBorderedMapElementStyle] = js.undefined
+  var adminDistrict: js.UndefOr[IBorderedMapElementStyle] = js.native
   /** Icon representing the capital of a state/province. */
-  var adminDistrictCapital: js.UndefOr[IMapElementStyle] = js.undefined
+  var adminDistrictCapital: js.UndefOr[IMapElementStyle] = js.native
   /** Area of land encompassing an airport. */
-  var airport: js.UndefOr[IMapElementStyle] = js.undefined
+  var airport: js.UndefOr[IMapElementStyle] = js.native
   /** Area of land use, not to be confused with Structure */
-  var area: js.UndefOr[IMapElementStyle] = js.undefined
+  var area: js.UndefOr[IMapElementStyle] = js.native
   /** An arterial road is a high-capacity urban road. Its primary function is to deliver traffic from collector roads to freeways or expressways, and between urban centers efficiently. */
-  var arterialRoad: js.UndefOr[IMapElementStyle] = js.undefined
+  var arterialRoad: js.UndefOr[IMapElementStyle] = js.native
   /** A structure such as a house, store, factory. */
-  var building: js.UndefOr[IMapElementStyle] = js.undefined
+  var building: js.UndefOr[IMapElementStyle] = js.native
   /** Restaurant, hospital, school, etc. */
-  var business: js.UndefOr[IMapElementStyle] = js.undefined
+  var business: js.UndefOr[IMapElementStyle] = js.native
   /** Icon representing the capital populated place. */
-  var capital: js.UndefOr[IMapElementStyle] = js.undefined
+  var capital: js.UndefOr[IMapElementStyle] = js.native
   /** Area of a cemetery */
-  var cemetery: js.UndefOr[IMapElementStyle] = js.undefined
+  var cemetery: js.UndefOr[IMapElementStyle] = js.native
   /** Area of a whole continent */
-  var continent: js.UndefOr[IMapElementStyle] = js.undefined
+  var continent: js.UndefOr[IMapElementStyle] = js.native
   /** A controlled-access highway is a type of road which has been designed for high-speed vehicular traffic, with all traffic flow and ingress/egress regulated. Also known as a highway, freeway, motorway, expressway, interstate, parkway. */
-  var controlledAccessHighway: js.UndefOr[IMapElementStyle] = js.undefined
+  var controlledAccessHighway: js.UndefOr[IMapElementStyle] = js.native
   /** A country or independent sovereign state. */
-  var countryRegion: js.UndefOr[IBorderedMapElementStyle] = js.undefined
+  var countryRegion: js.UndefOr[IBorderedMapElementStyle] = js.native
   /** Icon representing the capital of a country/region. */
-  var countryRegionCapital: js.UndefOr[IMapElementStyle] = js.undefined
+  var countryRegionCapital: js.UndefOr[IMapElementStyle] = js.native
   /** Admin2, county, etc. */
-  var district: js.UndefOr[IBorderedMapElementStyle] = js.undefined
+  var district: js.UndefOr[IBorderedMapElementStyle] = js.native
   /** An area of land used for educational purposes such as a school campus. */
-  var education: js.UndefOr[IMapElementStyle] = js.undefined
+  var education: js.UndefOr[IMapElementStyle] = js.native
   /** A school or other educational building. */
-  var educationBuilding: js.UndefOr[IMapElementStyle] = js.undefined
+  var educationBuilding: js.UndefOr[IMapElementStyle] = js.native
   /** Restaurant, caf�, etc. */
-  var foodPoint: js.UndefOr[IMapElementStyle] = js.undefined
+  var foodPoint: js.UndefOr[IMapElementStyle] = js.native
   /** Area of forest land. */
-  var forest: js.UndefOr[IMapElementStyle] = js.undefined
+  var forest: js.UndefOr[IMapElementStyle] = js.native
   /** An area of land where the game of golf is played. */
-  var golfCourse: js.UndefOr[IMapElementStyle] = js.undefined
+  var golfCourse: js.UndefOr[IMapElementStyle] = js.native
   /** Lines representing ramps typically alongside ControlledAccessHighways */
-  var highSpeedRamp: js.UndefOr[IMapElementStyle] = js.undefined
+  var highSpeedRamp: js.UndefOr[IMapElementStyle] = js.native
   /** A highway. */
-  var highway: js.UndefOr[IMapElementStyle] = js.undefined
+  var highway: js.UndefOr[IMapElementStyle] = js.native
   /** An area of land reserved for Indigenous people. */
-  var indigenousPeoplesReserve: js.UndefOr[IMapElementStyle] = js.undefined
+  var indigenousPeoplesReserve: js.UndefOr[IMapElementStyle] = js.native
   /** Labeling of area of an island.  */
-  var island: js.UndefOr[IMapElementStyle] = js.undefined
+  var island: js.UndefOr[IMapElementStyle] = js.native
   /** Major roads. */
-  var majorRoad: js.UndefOr[IMapElementStyle] = js.undefined
+  var majorRoad: js.UndefOr[IMapElementStyle] = js.native
   /** The base map element in which all other map elements inherit from. */
-  var mapElement: js.UndefOr[IMapElementStyle] = js.undefined
+  var mapElement: js.UndefOr[IMapElementStyle] = js.native
   /** Area of land used for medical purposes. Generally, hospital campuses. */
-  var medical: js.UndefOr[IMapElementStyle] = js.undefined
+  var medical: js.UndefOr[IMapElementStyle] = js.native
   /** A building which provides medical services. */
-  var medicalBuilding: js.UndefOr[IMapElementStyle] = js.undefined
+  var medicalBuilding: js.UndefOr[IMapElementStyle] = js.native
   /** A military area. */
-  var military: js.UndefOr[IMapElementStyle] = js.undefined
+  var military: js.UndefOr[IMapElementStyle] = js.native
   /** A natural point of interest. */
-  var naturalPoint: js.UndefOr[IMapElementStyle] = js.undefined
+  var naturalPoint: js.UndefOr[IMapElementStyle] = js.native
   /** Area of land used for nautical purposes. */
-  var nautical: js.UndefOr[IMapElementStyle] = js.undefined
+  var nautical: js.UndefOr[IMapElementStyle] = js.native
   /** Area defined as a neighborhood. Labels only. */
-  var neighborhood: js.UndefOr[IMapElementStyle] = js.undefined
+  var neighborhood: js.UndefOr[IMapElementStyle] = js.native
   /** Area of any kind of park. */
-  var park: js.UndefOr[IMapElementStyle] = js.undefined
+  var park: js.UndefOr[IMapElementStyle] = js.native
   /** Icon representing the peak of a mountain. */
-  var peak: js.UndefOr[IMapElementStyle] = js.undefined
+  var peak: js.UndefOr[IMapElementStyle] = js.native
   /** Extracted pitches such as a baseball field or tennis court. */
-  var playingField: js.UndefOr[IMapElementStyle] = js.undefined
+  var playingField: js.UndefOr[IMapElementStyle] = js.native
   /** All point features that are rendered with an icon of some sort */
-  var point: js.UndefOr[IMapElementStyle] = js.undefined
+  var point: js.UndefOr[IMapElementStyle] = js.native
   /** Restaurant, hospital, school, marina, ski area, etc. */
-  var pointOfInterest: js.UndefOr[IMapElementStyle] = js.undefined
+  var pointOfInterest: js.UndefOr[IMapElementStyle] = js.native
   /** A political border. */
-  var political: js.UndefOr[IBorderedMapElementStyle] = js.undefined
+  var political: js.UndefOr[IBorderedMapElementStyle] = js.native
   /** Icon representing size of populated place (city, town, etc). */
-  var populatedPlace: js.UndefOr[IMapElementStyle] = js.undefined
+  var populatedPlace: js.UndefOr[IMapElementStyle] = js.native
   /** Railway lines */
-  var railway: js.UndefOr[IMapElementStyle] = js.undefined
+  var railway: js.UndefOr[IMapElementStyle] = js.native
   /** Line representing the connecting entrance/exit to a highway. */
-  var ramp: js.UndefOr[IMapElementStyle] = js.undefined
+  var ramp: js.UndefOr[IMapElementStyle] = js.native
   /** Area of nature reserve. */
-  var reserve: js.UndefOr[IMapElementStyle] = js.undefined
+  var reserve: js.UndefOr[IMapElementStyle] = js.native
   /** River, stream, or other passage. Note that this may be a line or polygon and may connect to non-river water bodies. */
-  var river: js.UndefOr[IMapElementStyle] = js.undefined
+  var river: js.UndefOr[IMapElementStyle] = js.native
   /** Lines that represent all roads */
-  var road: js.UndefOr[IMapElementStyle] = js.undefined
+  var road: js.UndefOr[IMapElementStyle] = js.native
   /** Icon representing the exit, typically from a controlled access highway. */
-  var roadExit: js.UndefOr[IMapElementStyle] = js.undefined
+  var roadExit: js.UndefOr[IMapElementStyle] = js.native
   /** Sign representing a compact name for a road. For example, I-5. */
   //roadShield?: IMapElementStyle;
   /** Land area covered by a runway. See also Airport for the land area of the whole airport. */
-  var runway: js.UndefOr[IMapElementStyle] = js.undefined
+  var runway: js.UndefOr[IMapElementStyle] = js.native
   /** Area generally used for beaches, but could be used for sandy areas/golf bunkers in the future. */
-  var sand: js.UndefOr[IMapElementStyle] = js.undefined
+  var sand: js.UndefOr[IMapElementStyle] = js.native
   /** A shopping center or mall. */
-  var shoppingCenter: js.UndefOr[IMapElementStyle] = js.undefined
+  var shoppingCenter: js.UndefOr[IMapElementStyle] = js.native
   /** Area of a stadium. */
-  var stadium: js.UndefOr[IMapElementStyle] = js.undefined
+  var stadium: js.UndefOr[IMapElementStyle] = js.native
   /** A street. */
-  var street: js.UndefOr[IMapElementStyle] = js.undefined
+  var street: js.UndefOr[IMapElementStyle] = js.native
   /** Buildings and other building-like structures */
-  var structure: js.UndefOr[IMapElementStyle] = js.undefined
+  var structure: js.UndefOr[IMapElementStyle] = js.native
   /** A toll road. */
-  var tollRoad: js.UndefOr[IMapElementStyle] = js.undefined
+  var tollRoad: js.UndefOr[IMapElementStyle] = js.native
   /** Walking trail, either through park or hiking trail */
-  var trail: js.UndefOr[IMapElementStyle] = js.undefined
+  var trail: js.UndefOr[IMapElementStyle] = js.native
   /** Icon representing a bus stop, train stop, airport, etc. */
-  var transit: js.UndefOr[IMapElementStyle] = js.undefined
+  var transit: js.UndefOr[IMapElementStyle] = js.native
   /** A transit building. */
-  var transitBuilding: js.UndefOr[IMapElementStyle] = js.undefined
+  var transitBuilding: js.UndefOr[IMapElementStyle] = js.native
   /** Lines that are part of the transportation network (roads, trains, ferries, etc) */
-  var transportation: js.UndefOr[IMapElementStyle] = js.undefined
+  var transportation: js.UndefOr[IMapElementStyle] = js.native
   /** An unpaved street. */
-  var unpavedStreet: js.UndefOr[IMapElementStyle] = js.undefined
+  var unpavedStreet: js.UndefOr[IMapElementStyle] = js.native
   /** Forests, grassy areas, etc. */
-  var vegetation: js.UndefOr[IMapElementStyle] = js.undefined
+  var vegetation: js.UndefOr[IMapElementStyle] = js.native
   /** Icon representing the peak of a volcano. */
-  var volcanicPeak: js.UndefOr[IMapElementStyle] = js.undefined
+  var volcanicPeak: js.UndefOr[IMapElementStyle] = js.native
   /** Anything that looks like water */
-  var water: js.UndefOr[IMapElementStyle] = js.undefined
+  var water: js.UndefOr[IMapElementStyle] = js.native
   /** Icon representing a water feature location such as a waterfall. */
-  var waterPoint: js.UndefOr[IMapElementStyle] = js.undefined
+  var waterPoint: js.UndefOr[IMapElementStyle] = js.native
   /** Ferry route lines */
-  var waterRoute: js.UndefOr[IMapElementStyle] = js.undefined
+  var waterRoute: js.UndefOr[IMapElementStyle] = js.native
 }
 
 object IMapElements {
   @scala.inline
-  def apply(
-    adminDistrict: IBorderedMapElementStyle = null,
-    adminDistrictCapital: IMapElementStyle = null,
-    airport: IMapElementStyle = null,
-    area: IMapElementStyle = null,
-    arterialRoad: IMapElementStyle = null,
-    building: IMapElementStyle = null,
-    business: IMapElementStyle = null,
-    capital: IMapElementStyle = null,
-    cemetery: IMapElementStyle = null,
-    continent: IMapElementStyle = null,
-    controlledAccessHighway: IMapElementStyle = null,
-    countryRegion: IBorderedMapElementStyle = null,
-    countryRegionCapital: IMapElementStyle = null,
-    district: IBorderedMapElementStyle = null,
-    education: IMapElementStyle = null,
-    educationBuilding: IMapElementStyle = null,
-    foodPoint: IMapElementStyle = null,
-    forest: IMapElementStyle = null,
-    golfCourse: IMapElementStyle = null,
-    highSpeedRamp: IMapElementStyle = null,
-    highway: IMapElementStyle = null,
-    indigenousPeoplesReserve: IMapElementStyle = null,
-    island: IMapElementStyle = null,
-    majorRoad: IMapElementStyle = null,
-    mapElement: IMapElementStyle = null,
-    medical: IMapElementStyle = null,
-    medicalBuilding: IMapElementStyle = null,
-    military: IMapElementStyle = null,
-    naturalPoint: IMapElementStyle = null,
-    nautical: IMapElementStyle = null,
-    neighborhood: IMapElementStyle = null,
-    park: IMapElementStyle = null,
-    peak: IMapElementStyle = null,
-    playingField: IMapElementStyle = null,
-    point: IMapElementStyle = null,
-    pointOfInterest: IMapElementStyle = null,
-    political: IBorderedMapElementStyle = null,
-    populatedPlace: IMapElementStyle = null,
-    railway: IMapElementStyle = null,
-    ramp: IMapElementStyle = null,
-    reserve: IMapElementStyle = null,
-    river: IMapElementStyle = null,
-    road: IMapElementStyle = null,
-    roadExit: IMapElementStyle = null,
-    runway: IMapElementStyle = null,
-    sand: IMapElementStyle = null,
-    shoppingCenter: IMapElementStyle = null,
-    stadium: IMapElementStyle = null,
-    street: IMapElementStyle = null,
-    structure: IMapElementStyle = null,
-    tollRoad: IMapElementStyle = null,
-    trail: IMapElementStyle = null,
-    transit: IMapElementStyle = null,
-    transitBuilding: IMapElementStyle = null,
-    transportation: IMapElementStyle = null,
-    unpavedStreet: IMapElementStyle = null,
-    vegetation: IMapElementStyle = null,
-    volcanicPeak: IMapElementStyle = null,
-    water: IMapElementStyle = null,
-    waterPoint: IMapElementStyle = null,
-    waterRoute: IMapElementStyle = null
-  ): IMapElements = {
+  def apply(): IMapElements = {
     val __obj = js.Dynamic.literal()
-    if (adminDistrict != null) __obj.updateDynamic("adminDistrict")(adminDistrict.asInstanceOf[js.Any])
-    if (adminDistrictCapital != null) __obj.updateDynamic("adminDistrictCapital")(adminDistrictCapital.asInstanceOf[js.Any])
-    if (airport != null) __obj.updateDynamic("airport")(airport.asInstanceOf[js.Any])
-    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (arterialRoad != null) __obj.updateDynamic("arterialRoad")(arterialRoad.asInstanceOf[js.Any])
-    if (building != null) __obj.updateDynamic("building")(building.asInstanceOf[js.Any])
-    if (business != null) __obj.updateDynamic("business")(business.asInstanceOf[js.Any])
-    if (capital != null) __obj.updateDynamic("capital")(capital.asInstanceOf[js.Any])
-    if (cemetery != null) __obj.updateDynamic("cemetery")(cemetery.asInstanceOf[js.Any])
-    if (continent != null) __obj.updateDynamic("continent")(continent.asInstanceOf[js.Any])
-    if (controlledAccessHighway != null) __obj.updateDynamic("controlledAccessHighway")(controlledAccessHighway.asInstanceOf[js.Any])
-    if (countryRegion != null) __obj.updateDynamic("countryRegion")(countryRegion.asInstanceOf[js.Any])
-    if (countryRegionCapital != null) __obj.updateDynamic("countryRegionCapital")(countryRegionCapital.asInstanceOf[js.Any])
-    if (district != null) __obj.updateDynamic("district")(district.asInstanceOf[js.Any])
-    if (education != null) __obj.updateDynamic("education")(education.asInstanceOf[js.Any])
-    if (educationBuilding != null) __obj.updateDynamic("educationBuilding")(educationBuilding.asInstanceOf[js.Any])
-    if (foodPoint != null) __obj.updateDynamic("foodPoint")(foodPoint.asInstanceOf[js.Any])
-    if (forest != null) __obj.updateDynamic("forest")(forest.asInstanceOf[js.Any])
-    if (golfCourse != null) __obj.updateDynamic("golfCourse")(golfCourse.asInstanceOf[js.Any])
-    if (highSpeedRamp != null) __obj.updateDynamic("highSpeedRamp")(highSpeedRamp.asInstanceOf[js.Any])
-    if (highway != null) __obj.updateDynamic("highway")(highway.asInstanceOf[js.Any])
-    if (indigenousPeoplesReserve != null) __obj.updateDynamic("indigenousPeoplesReserve")(indigenousPeoplesReserve.asInstanceOf[js.Any])
-    if (island != null) __obj.updateDynamic("island")(island.asInstanceOf[js.Any])
-    if (majorRoad != null) __obj.updateDynamic("majorRoad")(majorRoad.asInstanceOf[js.Any])
-    if (mapElement != null) __obj.updateDynamic("mapElement")(mapElement.asInstanceOf[js.Any])
-    if (medical != null) __obj.updateDynamic("medical")(medical.asInstanceOf[js.Any])
-    if (medicalBuilding != null) __obj.updateDynamic("medicalBuilding")(medicalBuilding.asInstanceOf[js.Any])
-    if (military != null) __obj.updateDynamic("military")(military.asInstanceOf[js.Any])
-    if (naturalPoint != null) __obj.updateDynamic("naturalPoint")(naturalPoint.asInstanceOf[js.Any])
-    if (nautical != null) __obj.updateDynamic("nautical")(nautical.asInstanceOf[js.Any])
-    if (neighborhood != null) __obj.updateDynamic("neighborhood")(neighborhood.asInstanceOf[js.Any])
-    if (park != null) __obj.updateDynamic("park")(park.asInstanceOf[js.Any])
-    if (peak != null) __obj.updateDynamic("peak")(peak.asInstanceOf[js.Any])
-    if (playingField != null) __obj.updateDynamic("playingField")(playingField.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (pointOfInterest != null) __obj.updateDynamic("pointOfInterest")(pointOfInterest.asInstanceOf[js.Any])
-    if (political != null) __obj.updateDynamic("political")(political.asInstanceOf[js.Any])
-    if (populatedPlace != null) __obj.updateDynamic("populatedPlace")(populatedPlace.asInstanceOf[js.Any])
-    if (railway != null) __obj.updateDynamic("railway")(railway.asInstanceOf[js.Any])
-    if (ramp != null) __obj.updateDynamic("ramp")(ramp.asInstanceOf[js.Any])
-    if (reserve != null) __obj.updateDynamic("reserve")(reserve.asInstanceOf[js.Any])
-    if (river != null) __obj.updateDynamic("river")(river.asInstanceOf[js.Any])
-    if (road != null) __obj.updateDynamic("road")(road.asInstanceOf[js.Any])
-    if (roadExit != null) __obj.updateDynamic("roadExit")(roadExit.asInstanceOf[js.Any])
-    if (runway != null) __obj.updateDynamic("runway")(runway.asInstanceOf[js.Any])
-    if (sand != null) __obj.updateDynamic("sand")(sand.asInstanceOf[js.Any])
-    if (shoppingCenter != null) __obj.updateDynamic("shoppingCenter")(shoppingCenter.asInstanceOf[js.Any])
-    if (stadium != null) __obj.updateDynamic("stadium")(stadium.asInstanceOf[js.Any])
-    if (street != null) __obj.updateDynamic("street")(street.asInstanceOf[js.Any])
-    if (structure != null) __obj.updateDynamic("structure")(structure.asInstanceOf[js.Any])
-    if (tollRoad != null) __obj.updateDynamic("tollRoad")(tollRoad.asInstanceOf[js.Any])
-    if (trail != null) __obj.updateDynamic("trail")(trail.asInstanceOf[js.Any])
-    if (transit != null) __obj.updateDynamic("transit")(transit.asInstanceOf[js.Any])
-    if (transitBuilding != null) __obj.updateDynamic("transitBuilding")(transitBuilding.asInstanceOf[js.Any])
-    if (transportation != null) __obj.updateDynamic("transportation")(transportation.asInstanceOf[js.Any])
-    if (unpavedStreet != null) __obj.updateDynamic("unpavedStreet")(unpavedStreet.asInstanceOf[js.Any])
-    if (vegetation != null) __obj.updateDynamic("vegetation")(vegetation.asInstanceOf[js.Any])
-    if (volcanicPeak != null) __obj.updateDynamic("volcanicPeak")(volcanicPeak.asInstanceOf[js.Any])
-    if (water != null) __obj.updateDynamic("water")(water.asInstanceOf[js.Any])
-    if (waterPoint != null) __obj.updateDynamic("waterPoint")(waterPoint.asInstanceOf[js.Any])
-    if (waterRoute != null) __obj.updateDynamic("waterRoute")(waterRoute.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapElements]
   }
+  @scala.inline
+  implicit class IMapElementsOps[Self <: IMapElements] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminDistrict(value: IBorderedMapElementStyle): Self = this.set("adminDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminDistrict: Self = this.set("adminDistrict", js.undefined)
+    @scala.inline
+    def setAdminDistrictCapital(value: IMapElementStyle): Self = this.set("adminDistrictCapital", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminDistrictCapital: Self = this.set("adminDistrictCapital", js.undefined)
+    @scala.inline
+    def setAirport(value: IMapElementStyle): Self = this.set("airport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAirport: Self = this.set("airport", js.undefined)
+    @scala.inline
+    def setArea(value: IMapElementStyle): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArea: Self = this.set("area", js.undefined)
+    @scala.inline
+    def setArterialRoad(value: IMapElementStyle): Self = this.set("arterialRoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArterialRoad: Self = this.set("arterialRoad", js.undefined)
+    @scala.inline
+    def setBuilding(value: IMapElementStyle): Self = this.set("building", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuilding: Self = this.set("building", js.undefined)
+    @scala.inline
+    def setBusiness(value: IMapElementStyle): Self = this.set("business", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBusiness: Self = this.set("business", js.undefined)
+    @scala.inline
+    def setCapital(value: IMapElementStyle): Self = this.set("capital", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapital: Self = this.set("capital", js.undefined)
+    @scala.inline
+    def setCemetery(value: IMapElementStyle): Self = this.set("cemetery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCemetery: Self = this.set("cemetery", js.undefined)
+    @scala.inline
+    def setContinent(value: IMapElementStyle): Self = this.set("continent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinent: Self = this.set("continent", js.undefined)
+    @scala.inline
+    def setControlledAccessHighway(value: IMapElementStyle): Self = this.set("controlledAccessHighway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlledAccessHighway: Self = this.set("controlledAccessHighway", js.undefined)
+    @scala.inline
+    def setCountryRegion(value: IBorderedMapElementStyle): Self = this.set("countryRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryRegion: Self = this.set("countryRegion", js.undefined)
+    @scala.inline
+    def setCountryRegionCapital(value: IMapElementStyle): Self = this.set("countryRegionCapital", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryRegionCapital: Self = this.set("countryRegionCapital", js.undefined)
+    @scala.inline
+    def setDistrict(value: IBorderedMapElementStyle): Self = this.set("district", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistrict: Self = this.set("district", js.undefined)
+    @scala.inline
+    def setEducation(value: IMapElementStyle): Self = this.set("education", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEducation: Self = this.set("education", js.undefined)
+    @scala.inline
+    def setEducationBuilding(value: IMapElementStyle): Self = this.set("educationBuilding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEducationBuilding: Self = this.set("educationBuilding", js.undefined)
+    @scala.inline
+    def setFoodPoint(value: IMapElementStyle): Self = this.set("foodPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFoodPoint: Self = this.set("foodPoint", js.undefined)
+    @scala.inline
+    def setForest(value: IMapElementStyle): Self = this.set("forest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForest: Self = this.set("forest", js.undefined)
+    @scala.inline
+    def setGolfCourse(value: IMapElementStyle): Self = this.set("golfCourse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGolfCourse: Self = this.set("golfCourse", js.undefined)
+    @scala.inline
+    def setHighSpeedRamp(value: IMapElementStyle): Self = this.set("highSpeedRamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighSpeedRamp: Self = this.set("highSpeedRamp", js.undefined)
+    @scala.inline
+    def setHighway(value: IMapElementStyle): Self = this.set("highway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighway: Self = this.set("highway", js.undefined)
+    @scala.inline
+    def setIndigenousPeoplesReserve(value: IMapElementStyle): Self = this.set("indigenousPeoplesReserve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndigenousPeoplesReserve: Self = this.set("indigenousPeoplesReserve", js.undefined)
+    @scala.inline
+    def setIsland(value: IMapElementStyle): Self = this.set("island", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsland: Self = this.set("island", js.undefined)
+    @scala.inline
+    def setMajorRoad(value: IMapElementStyle): Self = this.set("majorRoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorRoad: Self = this.set("majorRoad", js.undefined)
+    @scala.inline
+    def setMapElement(value: IMapElementStyle): Self = this.set("mapElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapElement: Self = this.set("mapElement", js.undefined)
+    @scala.inline
+    def setMedical(value: IMapElementStyle): Self = this.set("medical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedical: Self = this.set("medical", js.undefined)
+    @scala.inline
+    def setMedicalBuilding(value: IMapElementStyle): Self = this.set("medicalBuilding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedicalBuilding: Self = this.set("medicalBuilding", js.undefined)
+    @scala.inline
+    def setMilitary(value: IMapElementStyle): Self = this.set("military", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMilitary: Self = this.set("military", js.undefined)
+    @scala.inline
+    def setNaturalPoint(value: IMapElementStyle): Self = this.set("naturalPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNaturalPoint: Self = this.set("naturalPoint", js.undefined)
+    @scala.inline
+    def setNautical(value: IMapElementStyle): Self = this.set("nautical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNautical: Self = this.set("nautical", js.undefined)
+    @scala.inline
+    def setNeighborhood(value: IMapElementStyle): Self = this.set("neighborhood", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeighborhood: Self = this.set("neighborhood", js.undefined)
+    @scala.inline
+    def setPark(value: IMapElementStyle): Self = this.set("park", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePark: Self = this.set("park", js.undefined)
+    @scala.inline
+    def setPeak(value: IMapElementStyle): Self = this.set("peak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeak: Self = this.set("peak", js.undefined)
+    @scala.inline
+    def setPlayingField(value: IMapElementStyle): Self = this.set("playingField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayingField: Self = this.set("playingField", js.undefined)
+    @scala.inline
+    def setPoint(value: IMapElementStyle): Self = this.set("point", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoint: Self = this.set("point", js.undefined)
+    @scala.inline
+    def setPointOfInterest(value: IMapElementStyle): Self = this.set("pointOfInterest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointOfInterest: Self = this.set("pointOfInterest", js.undefined)
+    @scala.inline
+    def setPolitical(value: IBorderedMapElementStyle): Self = this.set("political", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolitical: Self = this.set("political", js.undefined)
+    @scala.inline
+    def setPopulatedPlace(value: IMapElementStyle): Self = this.set("populatedPlace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopulatedPlace: Self = this.set("populatedPlace", js.undefined)
+    @scala.inline
+    def setRailway(value: IMapElementStyle): Self = this.set("railway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRailway: Self = this.set("railway", js.undefined)
+    @scala.inline
+    def setRamp(value: IMapElementStyle): Self = this.set("ramp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRamp: Self = this.set("ramp", js.undefined)
+    @scala.inline
+    def setReserve(value: IMapElementStyle): Self = this.set("reserve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReserve: Self = this.set("reserve", js.undefined)
+    @scala.inline
+    def setRiver(value: IMapElementStyle): Self = this.set("river", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiver: Self = this.set("river", js.undefined)
+    @scala.inline
+    def setRoad(value: IMapElementStyle): Self = this.set("road", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoad: Self = this.set("road", js.undefined)
+    @scala.inline
+    def setRoadExit(value: IMapElementStyle): Self = this.set("roadExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoadExit: Self = this.set("roadExit", js.undefined)
+    @scala.inline
+    def setRunway(value: IMapElementStyle): Self = this.set("runway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunway: Self = this.set("runway", js.undefined)
+    @scala.inline
+    def setSand(value: IMapElementStyle): Self = this.set("sand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSand: Self = this.set("sand", js.undefined)
+    @scala.inline
+    def setShoppingCenter(value: IMapElementStyle): Self = this.set("shoppingCenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShoppingCenter: Self = this.set("shoppingCenter", js.undefined)
+    @scala.inline
+    def setStadium(value: IMapElementStyle): Self = this.set("stadium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStadium: Self = this.set("stadium", js.undefined)
+    @scala.inline
+    def setStreet(value: IMapElementStyle): Self = this.set("street", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreet: Self = this.set("street", js.undefined)
+    @scala.inline
+    def setStructure(value: IMapElementStyle): Self = this.set("structure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStructure: Self = this.set("structure", js.undefined)
+    @scala.inline
+    def setTollRoad(value: IMapElementStyle): Self = this.set("tollRoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTollRoad: Self = this.set("tollRoad", js.undefined)
+    @scala.inline
+    def setTrail(value: IMapElementStyle): Self = this.set("trail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrail: Self = this.set("trail", js.undefined)
+    @scala.inline
+    def setTransit(value: IMapElementStyle): Self = this.set("transit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransit: Self = this.set("transit", js.undefined)
+    @scala.inline
+    def setTransitBuilding(value: IMapElementStyle): Self = this.set("transitBuilding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitBuilding: Self = this.set("transitBuilding", js.undefined)
+    @scala.inline
+    def setTransportation(value: IMapElementStyle): Self = this.set("transportation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransportation: Self = this.set("transportation", js.undefined)
+    @scala.inline
+    def setUnpavedStreet(value: IMapElementStyle): Self = this.set("unpavedStreet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnpavedStreet: Self = this.set("unpavedStreet", js.undefined)
+    @scala.inline
+    def setVegetation(value: IMapElementStyle): Self = this.set("vegetation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVegetation: Self = this.set("vegetation", js.undefined)
+    @scala.inline
+    def setVolcanicPeak(value: IMapElementStyle): Self = this.set("volcanicPeak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolcanicPeak: Self = this.set("volcanicPeak", js.undefined)
+    @scala.inline
+    def setWater(value: IMapElementStyle): Self = this.set("water", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWater: Self = this.set("water", js.undefined)
+    @scala.inline
+    def setWaterPoint(value: IMapElementStyle): Self = this.set("waterPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaterPoint: Self = this.set("waterPoint", js.undefined)
+    @scala.inline
+    def setWaterRoute(value: IMapElementStyle): Self = this.set("waterRoute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaterRoute: Self = this.set("waterRoute", js.undefined)
+  }
+  
 }
 

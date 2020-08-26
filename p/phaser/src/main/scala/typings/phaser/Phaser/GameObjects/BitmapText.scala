@@ -151,6 +151,7 @@ trait BitmapText
     * @param align The alignment of the text in a multi-line BitmapText object. If not specified the current alignment will be used. Default 0.
     */
   def setFont(font: String): this.type = js.native
+  def setFont(font: String, size: js.UndefOr[scala.Nothing], align: integer): this.type = js.native
   def setFont(font: String, size: Double): this.type = js.native
   def setFont(font: String, size: Double, align: integer): this.type = js.native
   /**

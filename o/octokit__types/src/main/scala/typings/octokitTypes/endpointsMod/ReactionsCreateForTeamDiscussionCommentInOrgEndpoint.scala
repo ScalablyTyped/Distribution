@@ -1,6 +1,6 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`9`
+import typings.octokitTypes.anon.`12`
 import typings.octokitTypes.octokitTypesStrings.Plussign1
 import typings.octokitTypes.octokitTypesStrings.`-1`
 import typings.octokitTypes.octokitTypesStrings.confused
@@ -13,18 +13,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  org  :string,   team_slug  :string,   discussion_number  :number,   comment_number  :number,   content  :'+1' | '-1' | 'laugh' | 'confused' | 'heart' | 'hooray' | 'rocket' | 'eyes'} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'squirrel-girl'> */
+/* Inlined {  org :string,   team_slug :string,   discussion_number :number,   comment_number :number,   content :'+1' | '-1' | 'laugh' | 'confused' | 'heart' | 'hooray' | 'rocket' | 'eyes'} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'squirrel-girl'> */
+@js.native
 trait ReactionsCreateForTeamDiscussionCommentInOrgEndpoint extends js.Object {
-  var comment_number: Double
+  var comment_number: Double = js.native
   /**
     * The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the team discussion comment.
     */
-  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes
-  var discussion_number: Double
-  var mediaType: `9`
+  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes = js.native
+  var discussion_number: Double = js.native
+  var mediaType: `12` = js.native
   @JSName("org")
-  var org_ : String
-  var team_slug: String
+  var org_ : String = js.native
+  var team_slug: String = js.native
 }
 
 object ReactionsCreateForTeamDiscussionCommentInOrgEndpoint {
@@ -33,7 +34,7 @@ object ReactionsCreateForTeamDiscussionCommentInOrgEndpoint {
     comment_number: Double,
     content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes,
     discussion_number: Double,
-    mediaType: `9`,
+    mediaType: `12`,
     org_ : String,
     team_slug: String
   ): ReactionsCreateForTeamDiscussionCommentInOrgEndpoint = {
@@ -41,5 +42,30 @@ object ReactionsCreateForTeamDiscussionCommentInOrgEndpoint {
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactionsCreateForTeamDiscussionCommentInOrgEndpoint]
   }
+  @scala.inline
+  implicit class ReactionsCreateForTeamDiscussionCommentInOrgEndpointOps[Self <: ReactionsCreateForTeamDiscussionCommentInOrgEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComment_number(value: Double): Self = this.set("comment_number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiscussion_number(value: Double): Self = this.set("discussion_number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMediaType(value: `12`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrg_(value: String): Self = this.set("org", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTeam_slug(value: String): Self = this.set("team_slug", value.asInstanceOf[js.Any])
+  }
+  
 }
 

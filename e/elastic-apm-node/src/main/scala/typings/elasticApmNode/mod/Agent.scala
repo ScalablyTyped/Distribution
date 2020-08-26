@@ -30,21 +30,29 @@ trait Agent
   def addTransactionFilter(fn: FilterFn): Unit = js.native
   def captureError(err: String): Unit = js.native
   def captureError(err: String, callback: CaptureErrorCallback): Unit = js.native
+  def captureError(err: String, options: js.UndefOr[scala.Nothing], callback: CaptureErrorCallback): Unit = js.native
   def captureError(err: String, options: CaptureErrorOptions): Unit = js.native
   def captureError(err: String, options: CaptureErrorOptions, callback: CaptureErrorCallback): Unit = js.native
   def captureError(err: ParameterizedMessageObject): Unit = js.native
   def captureError(err: ParameterizedMessageObject, callback: CaptureErrorCallback): Unit = js.native
+  def captureError(
+    err: ParameterizedMessageObject,
+    options: js.UndefOr[scala.Nothing],
+    callback: CaptureErrorCallback
+  ): Unit = js.native
   def captureError(err: ParameterizedMessageObject, options: CaptureErrorOptions): Unit = js.native
   def captureError(err: ParameterizedMessageObject, options: CaptureErrorOptions, callback: CaptureErrorCallback): Unit = js.native
   // Errors
   def captureError(err: Error): Unit = js.native
   def captureError(err: Error, callback: CaptureErrorCallback): Unit = js.native
+  def captureError(err: Error, options: js.UndefOr[scala.Nothing], callback: CaptureErrorCallback): Unit = js.native
   def captureError(err: Error, options: CaptureErrorOptions): Unit = js.native
   def captureError(err: Error, options: CaptureErrorOptions, callback: CaptureErrorCallback): Unit = js.native
   def clearPatches(modules: String): Unit = js.native
   def clearPatches(modules: js.Array[String]): Unit = js.native
   def destroy(): Unit = js.native
   def endTransaction(): Unit = js.native
+  def endTransaction(result: js.UndefOr[scala.Nothing], endTime: Double): Unit = js.native
   def endTransaction(result: String): Unit = js.native
   def endTransaction(result: String, endTime: Double): Unit = js.native
   def endTransaction(result: Double): Unit = js.native
@@ -72,6 +80,7 @@ trait Agent
   def start(options: AgentConfigOptions): Agent = js.native
   // Transactions
   def startTransaction(): Transaction | Null = js.native
+  def startTransaction(name: js.UndefOr[scala.Nothing], options: TransactionOptions): Transaction | Null = js.native
   def startTransaction(name: String): Transaction | Null = js.native
   def startTransaction(name: String, options: TransactionOptions): Transaction | Null = js.native
   def startTransaction(name: String, `type`: String): Transaction | Null = js.native

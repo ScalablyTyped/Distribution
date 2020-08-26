@@ -12,10 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object commonMod extends js.Object {
   def executeItemsEqual[T](): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: T, itemB: T): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: js.UndefOr[scala.Nothing], itemB: T): Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: js.UndefOr[ItemsEqualProp[T]], itemA: Null, itemB: T): Boolean = js.native
   def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T]): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: T): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: T, itemB: T): Boolean = js.native
-  def executeItemsEqual[T](itemsEqualProp: ItemsEqualProp[T], itemA: Null, itemB: T): Boolean = js.native
   def getActiveItem[T](): T | Null = js.native
   def getActiveItem[T](activeItem: T): T | Null = js.native
   def getActiveItem[T](activeItem: ICreateNewItem): T | Null = js.native
@@ -24,8 +25,8 @@ object commonMod extends js.Object {
   def isCreateNewItem[T](item: T): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ Boolean = js.native
   def isCreateNewItem[T](item: ICreateNewItem): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ Boolean = js.native
   def renderFilteredItems(props: IItemListRendererProps[_]): ReactNode = js.native
+  def renderFilteredItems(props: IItemListRendererProps[_], noResults: js.UndefOr[ReactNode], initialContent: ReactNode): ReactNode = js.native
   def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode): ReactNode = js.native
-  def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode, initialContent: ReactNode): ReactNode = js.native
   @js.native
   object Classes extends js.Object {
     val MULTISELECT: String = js.native

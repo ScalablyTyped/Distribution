@@ -410,6 +410,7 @@ class SurveyModel ()
   /**
     * This event is fired on clearing the value in a QuestionFile. Use this event to remove files stored on your server.
     * <br/> `sender` - the survey object that fires the event.
+    * <br/> `question` - the question instance.
     * <br/> `options.name` - the question name.
     * <br/> `options.value` - the question value.
     * <br/> `options.fileName` - a removed file's name, set it to `null` to clear all files.
@@ -424,7 +425,8 @@ class SurveyModel ()
     * <br/> `options.showDataSavingError(text)` - call this method to show that an error occurred while saving the data on your server. If you want to show a custom error, use an optional `text` parameter.
     * <br/> `options.showDataSavingSuccess(text)` - call this method to show that the data was successfully saved on the server.
     * <br/> `options.showDataSavingClear` - call this method to hide the text about the saving progress.
-    * @see data
+    * <br/> `options.isCompleteOnTrigger` - returns true if the survey is completed on "complete" trigger.
+    *  @see data
     * @see clearInvisibleValues
     * @see completeLastPage
     * @see surveyPostId
@@ -434,6 +436,7 @@ class SurveyModel ()
     * The event is fired before the survey is completed and the `onComplete` event is fired. You can prevent the survey from completing by setting `options.allowComplete` to `false`
     * <br/> `sender` - the survey object that fires the event.
     * <br/> `options.allowComplete` - Specifies whether a user can complete a survey. Set this property to `false` to prevent the survey from completing. The default value is `true`.
+    * <br/> `options.isCompleteOnTrigger` - returns true if the survey is completing on "complete" trigger.
     * @see onComplete
     */
   var onCompleting: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
@@ -884,6 +887,7 @@ class SurveyModel ()
   /**
     * The event is fired on uploading the file in QuestionFile when `storeDataAsText` is set to `false`. Use this event to change the uploaded file name or to prevent a particular file from being uploaded.
     * <br/> `sender` - the survey object that fires the event.
+    * <br/> `options.question` - the file question instance.
     * <br/> `options.name` - the file name.
     * <br/> `options.file` - the Javascript File object.
     * <br/> `options.accept` - a boolean value, `true` by default. Set it to `false` to deny this file uploading.
@@ -1323,9 +1327,11 @@ class SurveyModel ()
     * @see currentPage
     */
   def clear(): Unit = js.native
+  def clear(clearData: js.UndefOr[scala.Nothing], gotoFirstPage: Boolean): Unit = js.native
   def clear(clearData: Boolean): Unit = js.native
   def clear(clearData: Boolean, gotoFirstPage: Boolean): Unit = js.native
   def clearFiles(
+    question: IQuestion,
     name: String,
     value: js.Any,
     fileName: String,
@@ -1333,12 +1339,14 @@ class SurveyModel ()
   ): js.Any = js.native
   /**
     * Clears files from server.
-    * @param name a question name
-    * @param value a file question value
-    * @param callback a call back function to get the status of the clearing operation
+    * @param question question
+    * @param name question name
+    * @param value file question value
+    * @param callback call back function to get the status of the clearing operation
     */
   @JSName("clearFiles")
   def clearFiles_Unit(
+    question: IQuestion,
     name: String,
     value: js.Any,
     fileName: String,
@@ -1367,8 +1375,6 @@ class SurveyModel ()
     * @see doComplete
     */
   def completeLastPage(): Boolean = js.native
-  /* CompleteClass */
-  override def copyTriggerValue(name: String, fromName: String): js.Any = js.native
   /* protected */ def createNewPage(name: String): PageModel = js.native
   /* protected */ def createSurveyService(): dxSurveyService = js.native
   /* protected */ def currentPageChanged(newValue: PageModel, oldValue: PageModel): Unit = js.native
@@ -1408,6 +1414,7 @@ class SurveyModel ()
     * @see navigateToUrlOnCondition
     */
   def doComplete(): Unit = js.native
+  def doComplete(isCompleteOnTrigger: Boolean): Unit = js.native
   /* protected */ def doCurrentPageComplete(doComplete: Boolean): Boolean = js.native
   /* protected */ def doNextPage(): Unit = js.native
   /* protected */ def doOnPageAdded(page: PageModel): Unit = js.native
@@ -1447,14 +1454,11 @@ class SurveyModel ()
     * Sets the input focus to the first question with the input field.
     */
   def focusFirstQuestion(): Unit = js.native
-  /* CompleteClass */
-  override def focusQuestion(name: String): Boolean = js.native
-  /* CompleteClass */
-  override def geSurveyData(): ISurveyData = js.native
   /**
     * Returns a list of all survey's panels.
     */
   def getAllPanels(): js.Array[IPanel] = js.native
+  def getAllPanels(visibleOnly: js.UndefOr[scala.Nothing], includingDesignTime: Boolean): js.Array[IPanel] = js.native
   def getAllPanels(visibleOnly: Boolean): js.Array[IPanel] = js.native
   def getAllPanels(visibleOnly: Boolean, includingDesignTime: Boolean): js.Array[IPanel] = js.native
   /**
@@ -1462,6 +1466,7 @@ class SurveyModel ()
     * @param visibleOnly set it `true`, if you want to get only visible questions
     */
   def getAllQuestions(): js.Array[Question] = js.native
+  def getAllQuestions(visibleOnly: js.UndefOr[scala.Nothing], includingDesignTime: Boolean): js.Array[Question] = js.native
   def getAllQuestions(visibleOnly: Boolean): js.Array[Question] = js.native
   def getAllQuestions(visibleOnly: Boolean, includingDesignTime: Boolean): js.Array[Question] = js.native
   /**
@@ -1471,21 +1476,13 @@ class SurveyModel ()
   def getCorrectedAnswers(): Double = js.native
   def getCss(): js.Any = js.native
   def getDataValueCore(valuesHash: js.Any, key: String): js.Any = js.native
-  /* CompleteClass */
-  override def getErrorCustomText(text: String, error: SurveyError): String = js.native
   /**
     * Returns an amount of incorrect quiz answers.
     */
   def getInCorrectedAnswerCount(): Double = js.native
   def getInCorrectedAnswers(): Double = js.native
   def getLocString(str: String): js.Any = js.native
-  /* CompleteClass */
-  override def getLocale(): String = js.native
-  /* CompleteClass */
-  override def getMarkdownHtml(text: String): String = js.native
   def getNavigateToUrl(): String = js.native
-  /* CompleteClass */
-  override def getObjects(pages: js.Array[String], questions: js.Array[String]): js.Array[_] = js.native
   def getPage(index: Double): PageModel = js.native
   /**
     * Returns a page on which an element (question or panel) is placed.
@@ -1524,8 +1521,6 @@ class SurveyModel ()
     */
   def getPlainData(): js.Array[_] = js.native
   def getPlainData(options: IncludeEmpty): js.Array[_] = js.native
-  /* CompleteClass */
-  override def getProcessedText(text: String): String = js.native
   /**
     * Returns the progress that a user made while going through the survey.
     */
@@ -1573,11 +1568,7 @@ class SurveyModel ()
     * @see onGetResult
     */
   def getResult(resultId: String, name: String): Unit = js.native
-  /* CompleteClass */
-  override def getSurvey(): ISurvey = js.native
   def getSurveyMarkdownHtml(element: Base, text: String): String = js.native
-  /* CompleteClass */
-  override def getTextProcessor(): ITextProcessor = js.native
   /* protected */ def getUnbindValue(value: js.Any): js.Any = js.native
   def getUpdatedQuestionTitle(question: IQuestion, title: String): String = js.native
   /**
@@ -1590,6 +1581,7 @@ class SurveyModel ()
     * @param focusOnFirstError set it to `true` to focus on the first question that doesn't pass the validation and make the page, where the question is located, the current.
     */
   def hasErrors(): Boolean = js.native
+  def hasErrors(fireCallback: js.UndefOr[scala.Nothing], focusOnFirstError: Boolean): Boolean = js.native
   def hasErrors(fireCallback: Boolean): Boolean = js.native
   def hasErrors(fireCallback: Boolean, focusOnFirstError: Boolean): Boolean = js.native
   def hasVisibleQuestionByValueName(valueName: String): Boolean = js.native
@@ -1603,6 +1595,7 @@ class SurveyModel ()
     * @see onLoadedSurveyFromService
     */
   def loadSurveyFromService(): Unit = js.native
+  def loadSurveyFromService(surveyId: js.UndefOr[scala.Nothing], cliendId: String): Unit = js.native
   def loadSurveyFromService(surveyId: String): Unit = js.native
   def loadSurveyFromService(surveyId: String, cliendId: String): Unit = js.native
   def matrixAfterCellRender(question: IQuestion, options: js.Any): js.Any = js.native
@@ -1635,6 +1628,7 @@ class SurveyModel ()
     */
   def mergeData(data: js.Any): Unit = js.native
   def mergeValues(src: js.Any, dest: js.Any): Unit = js.native
+  def navigationMouseDown(): Boolean = js.native
   /**
     * Navigates user to the next page.
     *
@@ -1674,10 +1668,6 @@ class SurveyModel ()
     */
   def prevPage(): Boolean = js.native
   def processHtml(html: String): String = js.native
-  /* CompleteClass */
-  override def processText(text: String, returnDisplayValue: Boolean): String = js.native
-  /* CompleteClass */
-  override def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
   def questionAdded(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native
   @JSName("questionAdded")
   def questionAdded_Unit(question: IQuestion, index: Double, parentPanel: js.Any, rootPanel: js.Any): Unit = js.native
@@ -1717,7 +1707,15 @@ class SurveyModel ()
     * @see clientId
     */
   def sendResult(): Unit = js.native
+  def sendResult(
+    postId: js.UndefOr[scala.Nothing],
+    clientId: js.UndefOr[scala.Nothing],
+    isPartialCompleted: Boolean
+  ): Unit = js.native
+  def sendResult(postId: js.UndefOr[scala.Nothing], clientId: String): Unit = js.native
+  def sendResult(postId: js.UndefOr[scala.Nothing], clientId: String, isPartialCompleted: Boolean): Unit = js.native
   def sendResult(postId: String): Unit = js.native
+  def sendResult(postId: String, clientId: js.UndefOr[scala.Nothing], isPartialCompleted: Boolean): Unit = js.native
   def sendResult(postId: String, clientId: String): Unit = js.native
   def sendResult(postId: String, clientId: String, isPartialCompleted: Boolean): Unit = js.native
   /**
@@ -1727,8 +1725,6 @@ class SurveyModel ()
     * @see getComment
     */
   def setComment(name: String, newValue: String): Unit = js.native
-  /* CompleteClass */
-  override def setCompleted(): js.Any = js.native
   /* protected */ def setCompletedState(value: String, text: String): Unit = js.native
   /**
     * Set the cookie with `cookieName` in user's browser. It is done automatically on survey complete if the `cookieName` property value is not empty.
@@ -1745,8 +1741,6 @@ class SurveyModel ()
     */
   def setDesignMode(value: Boolean): Unit = js.native
   def setJsonObject(jsonObj: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def setTriggerValue(name: String, value: js.Any, isVariable: Boolean): js.Any = js.native
   /**
     * Sets a question value (answer). It runs all triggers and conditions (`visibleIf` properties).
     *
@@ -1760,6 +1754,12 @@ class SurveyModel ()
     * @see goNextPageAutomatic
     */
   def setValue(name: String, newQuestionValue: js.Any): Unit = js.native
+  def setValue(
+    name: String,
+    newQuestionValue: js.Any,
+    locNotification: js.UndefOr[scala.Nothing],
+    allowNotifyValueChanged: Boolean
+  ): Unit = js.native
   /**
     * Show preview for the survey. Go to the "preview" state
     * @see showPreviewBeforeComplete

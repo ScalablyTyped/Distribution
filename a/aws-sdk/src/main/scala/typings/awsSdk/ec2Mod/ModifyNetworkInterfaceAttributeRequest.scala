@@ -34,21 +34,46 @@ trait ModifyNetworkInterfaceAttributeRequest extends js.Object {
 
 object ModifyNetworkInterfaceAttributeRequest {
   @scala.inline
-  def apply(
-    NetworkInterfaceId: NetworkInterfaceId,
-    Attachment: NetworkInterfaceAttachmentChanges = null,
-    Description: AttributeValue = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Groups: SecurityGroupIdStringList = null,
-    SourceDestCheck: AttributeBooleanValue = null
-  ): ModifyNetworkInterfaceAttributeRequest = {
+  def apply(NetworkInterfaceId: NetworkInterfaceId): ModifyNetworkInterfaceAttributeRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
-    if (Attachment != null) __obj.updateDynamic("Attachment")(Attachment.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
-    if (SourceDestCheck != null) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyNetworkInterfaceAttributeRequest]
   }
+  @scala.inline
+  implicit class ModifyNetworkInterfaceAttributeRequestOps[Self <: ModifyNetworkInterfaceAttributeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttachment(value: NetworkInterfaceAttachmentChanges): Self = this.set("Attachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachment: Self = this.set("Attachment", js.undefined)
+    @scala.inline
+    def setDescription(value: AttributeValue): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: SecurityGroupId*): Self = this.set("Groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: SecurityGroupIdStringList): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("Groups", js.undefined)
+    @scala.inline
+    def setSourceDestCheck(value: AttributeBooleanValue): Self = this.set("SourceDestCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDestCheck: Self = this.set("SourceDestCheck", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def boundedNumber(number: Double): String = js.native
+  def boundedNumber(number: Double, bounds: js.UndefOr[scala.Nothing], ending: String): String = js.native
   def boundedNumber(number: Double, bounds: Double): String = js.native
   def boundedNumber(number: Double, bounds: Double, ending: String): String = js.native
   def capitalize(string: String): String = js.native
@@ -27,11 +28,13 @@ object mod extends js.Object {
   def normalizePrecision(value: Double, base: Double): Double = js.native
   def ordinal(value: Double): String = js.native
   def oxford(items: js.Array[_]): String = js.native
+  def oxford(items: js.Array[_], limit: js.UndefOr[scala.Nothing], limitStr: String): String = js.native
   def oxford(items: js.Array[_], limit: Double): String = js.native
   def oxford(items: js.Array[_], limit: Double, limitStr: String): String = js.native
   def pace(value: Double, intervalMs: Double): String = js.native
   def pace(value: Double, intervalMs: Double, unit: String): String = js.native
   def pluralize(number: Double): String = js.native
+  def pluralize(number: Double, singular: js.UndefOr[scala.Nothing], plural: String): String = js.native
   def pluralize(number: Double, singular: String): String = js.native
   def pluralize(number: Double, singular: String, plural: String): String = js.native
   def times(value: Double): String = js.native
@@ -40,6 +43,7 @@ object mod extends js.Object {
   def toFixed(value: Double): String = js.native
   def toFixed(value: Double, precision: Double): String = js.native
   def truncate(string: String): String = js.native
+  def truncate(string: String, length: js.UndefOr[scala.Nothing], ending: String): String = js.native
   def truncate(string: String, length: Double): String = js.native
   def truncate(string: String, length: Double, ending: String): String = js.native
   def truncateWords(string: String): String | Null = js.native

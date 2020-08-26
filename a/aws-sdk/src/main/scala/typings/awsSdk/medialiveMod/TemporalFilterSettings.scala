@@ -20,14 +20,30 @@ trait TemporalFilterSettings extends js.Object {
 
 object TemporalFilterSettings {
   @scala.inline
-  def apply(
-    PostFilterSharpening: TemporalFilterPostFilterSharpening = null,
-    Strength: TemporalFilterStrength = null
-  ): TemporalFilterSettings = {
+  def apply(): TemporalFilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (PostFilterSharpening != null) __obj.updateDynamic("PostFilterSharpening")(PostFilterSharpening.asInstanceOf[js.Any])
-    if (Strength != null) __obj.updateDynamic("Strength")(Strength.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemporalFilterSettings]
   }
+  @scala.inline
+  implicit class TemporalFilterSettingsOps[Self <: TemporalFilterSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPostFilterSharpening(value: TemporalFilterPostFilterSharpening): Self = this.set("PostFilterSharpening", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostFilterSharpening: Self = this.set("PostFilterSharpening", js.undefined)
+    @scala.inline
+    def setStrength(value: TemporalFilterStrength): Self = this.set("Strength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrength: Self = this.set("Strength", js.undefined)
+  }
+  
 }
 

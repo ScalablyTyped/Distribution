@@ -11,8 +11,8 @@ Get available v8 flags.
 | Full name          | v8flags |
 | Keywords           | v8 flags, harmony flags |
 | # releases         | 6 |
-| # dependents       | 170 |
-| # downloads        | 149821914 |
+| # dependents       | 172 |
+| # downloads        | 150319569 |
 | # stars            | 6 |
 
 ## Links

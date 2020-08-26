@@ -16,6 +16,7 @@ class BigInt64Array ()
   def this(buffer: ArrayBufferLike) = this()
   def this(length: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: js.UndefOr[scala.Nothing], length: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
 }
 

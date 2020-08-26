@@ -4,26 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FindAllArgs extends FindChunksArgs {
-  var findChunks: js.UndefOr[js.Function1[/* args */ FindChunksArgs, js.Array[Chunk]]] = js.undefined
+  var findChunks: js.UndefOr[js.Function1[/* args */ FindChunksArgs, js.Array[Chunk]]] = js.native
 }
 
 object FindAllArgs {
   @scala.inline
-  def apply(
-    searchWords: js.Array[String],
-    textToHighlight: String,
-    autoEscape: js.UndefOr[Boolean] = js.undefined,
-    caseSensitive: js.UndefOr[Boolean] = js.undefined,
-    findChunks: /* args */ FindChunksArgs => js.Array[Chunk] = null,
-    sanitize: /* text */ String => String = null
-  ): FindAllArgs = {
+  def apply(searchWords: js.Array[String], textToHighlight: String): FindAllArgs = {
     val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any], textToHighlight = textToHighlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoEscape)) __obj.updateDynamic("autoEscape")(autoEscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
-    if (findChunks != null) __obj.updateDynamic("findChunks")(js.Any.fromFunction1(findChunks))
-    if (sanitize != null) __obj.updateDynamic("sanitize")(js.Any.fromFunction1(sanitize))
     __obj.asInstanceOf[FindAllArgs]
   }
+  @scala.inline
+  implicit class FindAllArgsOps[Self <: FindAllArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFindChunks(value: /* args */ FindChunksArgs => js.Array[Chunk]): Self = this.set("findChunks", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFindChunks: Self = this.set("findChunks", js.undefined)
+  }
+  
 }
 

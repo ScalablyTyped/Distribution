@@ -38,24 +38,52 @@ trait EmailMessage extends js.Object {
 
 object EmailMessage {
   @scala.inline
-  def apply(
-    Body: string = null,
-    FeedbackForwardingAddress: string = null,
-    FromAddress: string = null,
-    RawEmail: RawEmail = null,
-    ReplyToAddresses: ListOfString = null,
-    SimpleEmail: SimpleEmail = null,
-    Substitutions: MapOfListOfString = null
-  ): EmailMessage = {
+  def apply(): EmailMessage = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (FeedbackForwardingAddress != null) __obj.updateDynamic("FeedbackForwardingAddress")(FeedbackForwardingAddress.asInstanceOf[js.Any])
-    if (FromAddress != null) __obj.updateDynamic("FromAddress")(FromAddress.asInstanceOf[js.Any])
-    if (RawEmail != null) __obj.updateDynamic("RawEmail")(RawEmail.asInstanceOf[js.Any])
-    if (ReplyToAddresses != null) __obj.updateDynamic("ReplyToAddresses")(ReplyToAddresses.asInstanceOf[js.Any])
-    if (SimpleEmail != null) __obj.updateDynamic("SimpleEmail")(SimpleEmail.asInstanceOf[js.Any])
-    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailMessage]
   }
+  @scala.inline
+  implicit class EmailMessageOps[Self <: EmailMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setFeedbackForwardingAddress(value: string): Self = this.set("FeedbackForwardingAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeedbackForwardingAddress: Self = this.set("FeedbackForwardingAddress", js.undefined)
+    @scala.inline
+    def setFromAddress(value: string): Self = this.set("FromAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromAddress: Self = this.set("FromAddress", js.undefined)
+    @scala.inline
+    def setRawEmail(value: RawEmail): Self = this.set("RawEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawEmail: Self = this.set("RawEmail", js.undefined)
+    @scala.inline
+    def setReplyToAddressesVarargs(value: string*): Self = this.set("ReplyToAddresses", js.Array(value :_*))
+    @scala.inline
+    def setReplyToAddresses(value: ListOfString): Self = this.set("ReplyToAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyToAddresses: Self = this.set("ReplyToAddresses", js.undefined)
+    @scala.inline
+    def setSimpleEmail(value: SimpleEmail): Self = this.set("SimpleEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimpleEmail: Self = this.set("SimpleEmail", js.undefined)
+    @scala.inline
+    def setSubstitutions(value: MapOfListOfString): Self = this.set("Substitutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubstitutions: Self = this.set("Substitutions", js.undefined)
+  }
+  
 }
 

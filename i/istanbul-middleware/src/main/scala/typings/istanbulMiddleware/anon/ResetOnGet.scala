@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResetOnGet extends js.Object {
-  var resetOnGet: js.UndefOr[Boolean] = js.undefined
+  var resetOnGet: js.UndefOr[Boolean] = js.native
 }
 
 object ResetOnGet {
   @scala.inline
-  def apply(resetOnGet: js.UndefOr[Boolean] = js.undefined): ResetOnGet = {
+  def apply(): ResetOnGet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resetOnGet)) __obj.updateDynamic("resetOnGet")(resetOnGet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetOnGet]
   }
+  @scala.inline
+  implicit class ResetOnGetOps[Self <: ResetOnGet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResetOnGet(value: Boolean): Self = this.set("resetOnGet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetOnGet: Self = this.set("resetOnGet", js.undefined)
+  }
+  
 }
 

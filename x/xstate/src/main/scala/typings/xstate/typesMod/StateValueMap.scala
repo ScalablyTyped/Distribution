@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StateValueMap extends /* key */ StringDictionary[StateValue]
 
 object StateValueMap {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[StateValue] = null): StateValueMap = {
+  def apply(): StateValueMap = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[StateValueMap]
   }
 }

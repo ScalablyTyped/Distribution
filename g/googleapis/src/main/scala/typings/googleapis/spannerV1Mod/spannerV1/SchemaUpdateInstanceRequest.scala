@@ -28,11 +28,30 @@ trait SchemaUpdateInstanceRequest extends js.Object {
 
 object SchemaUpdateInstanceRequest {
   @scala.inline
-  def apply(fieldMask: String = null, instance: SchemaInstance = null): SchemaUpdateInstanceRequest = {
+  def apply(): SchemaUpdateInstanceRequest = {
     val __obj = js.Dynamic.literal()
-    if (fieldMask != null) __obj.updateDynamic("fieldMask")(fieldMask.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateInstanceRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateInstanceRequestOps[Self <: SchemaUpdateInstanceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFieldMask(value: String): Self = this.set("fieldMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldMask: Self = this.set("fieldMask", js.undefined)
+    @scala.inline
+    def setInstance(value: SchemaInstance): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+  }
+  
 }
 

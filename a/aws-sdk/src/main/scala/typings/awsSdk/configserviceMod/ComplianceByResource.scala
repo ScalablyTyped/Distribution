@@ -22,16 +22,34 @@ trait ComplianceByResource extends js.Object {
 
 object ComplianceByResource {
   @scala.inline
-  def apply(
-    Compliance: Compliance = null,
-    ResourceId: BaseResourceId = null,
-    ResourceType: StringWithCharLimit256 = null
-  ): ComplianceByResource = {
+  def apply(): ComplianceByResource = {
     val __obj = js.Dynamic.literal()
-    if (Compliance != null) __obj.updateDynamic("Compliance")(Compliance.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceByResource]
   }
+  @scala.inline
+  implicit class ComplianceByResourceOps[Self <: ComplianceByResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompliance(value: Compliance): Self = this.set("Compliance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompliance: Self = this.set("Compliance", js.undefined)
+    @scala.inline
+    def setResourceId(value: BaseResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setResourceType(value: StringWithCharLimit256): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

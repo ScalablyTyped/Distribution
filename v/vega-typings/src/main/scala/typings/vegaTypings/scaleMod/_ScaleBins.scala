@@ -14,10 +14,8 @@ object _ScaleBins {
     __obj.asInstanceOf[_ScaleBins]
   }
   @scala.inline
-  def ScaleBinParams(step: Double | SignalRef, start: Double | SignalRef = null, stop: Double | SignalRef = null): _ScaleBins = {
+  def ScaleBinParams(step: Double | SignalRef): _ScaleBins = {
     val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ScaleBins]
   }
 }

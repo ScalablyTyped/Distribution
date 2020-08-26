@@ -22,16 +22,34 @@ trait GetFederationTokenResponse extends js.Object {
 
 object GetFederationTokenResponse {
   @scala.inline
-  def apply(
-    Credentials: Credentials = null,
-    FederatedUser: FederatedUser = null,
-    PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined
-  ): GetFederationTokenResponse = {
+  def apply(): GetFederationTokenResponse = {
     val __obj = js.Dynamic.literal()
-    if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
-    if (FederatedUser != null) __obj.updateDynamic("FederatedUser")(FederatedUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(PackedPolicySize)) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFederationTokenResponse]
   }
+  @scala.inline
+  implicit class GetFederationTokenResponseOps[Self <: GetFederationTokenResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCredentials(value: Credentials): Self = this.set("Credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("Credentials", js.undefined)
+    @scala.inline
+    def setFederatedUser(value: FederatedUser): Self = this.set("FederatedUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFederatedUser: Self = this.set("FederatedUser", js.undefined)
+    @scala.inline
+    def setPackedPolicySize(value: nonNegativeIntegerType): Self = this.set("PackedPolicySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackedPolicySize: Self = this.set("PackedPolicySize", js.undefined)
+  }
+  
 }
 

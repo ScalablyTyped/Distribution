@@ -18,11 +18,32 @@ trait HttpHeaderConditionConfig extends js.Object {
 
 object HttpHeaderConditionConfig {
   @scala.inline
-  def apply(HttpHeaderName: HttpHeaderConditionName = null, Values: ListOfString = null): HttpHeaderConditionConfig = {
+  def apply(): HttpHeaderConditionConfig = {
     val __obj = js.Dynamic.literal()
-    if (HttpHeaderName != null) __obj.updateDynamic("HttpHeaderName")(HttpHeaderName.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpHeaderConditionConfig]
   }
+  @scala.inline
+  implicit class HttpHeaderConditionConfigOps[Self <: HttpHeaderConditionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpHeaderName(value: HttpHeaderConditionName): Self = this.set("HttpHeaderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpHeaderName: Self = this.set("HttpHeaderName", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: StringValue*): Self = this.set("Values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: ListOfString): Self = this.set("Values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("Values", js.undefined)
+  }
+  
 }
 

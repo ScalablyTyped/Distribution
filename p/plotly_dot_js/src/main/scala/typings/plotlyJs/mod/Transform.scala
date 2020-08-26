@@ -10,18 +10,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Transform extends js.Object {
-  var aggregations: js.Array[TransformAggregation]
-  var enabled: Boolean
-  var groups: String | (js.Array[Double | String])
-  var nameformat: String
-  var operation: String
-  var order: ascending | descending
-  var preservegaps: Boolean
-  var styles: js.Array[TransformStyle]
-  var target: Double | String | (js.Array[Double | String])
-  var `type`: aggregate | filter | groupby | sort
-  var value: js.Any
+  var aggregations: js.Array[TransformAggregation] = js.native
+  var enabled: Boolean = js.native
+  var groups: String | (js.Array[Double | String]) = js.native
+  var nameformat: String = js.native
+  var operation: String = js.native
+  var order: ascending | descending = js.native
+  var preservegaps: Boolean = js.native
+  var styles: js.Array[TransformStyle] = js.native
+  var target: Double | String | (js.Array[Double | String]) = js.native
+  var `type`: aggregate | filter | groupby | sort = js.native
+  var value: js.Any = js.native
 }
 
 object Transform {
@@ -43,5 +44,48 @@ object Transform {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transform]
   }
+  @scala.inline
+  implicit class TransformOps[Self <: Transform] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregationsVarargs(value: TransformAggregation*): Self = this.set("aggregations", js.Array(value :_*))
+    @scala.inline
+    def setAggregations(value: js.Array[TransformAggregation]): Self = this.set("aggregations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupsVarargs(value: (Double | String)*): Self = this.set("groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: String | (js.Array[Double | String])): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNameformat(value: String): Self = this.set("nameformat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrder(value: ascending | descending): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreservegaps(value: Boolean): Self = this.set("preservegaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStylesVarargs(value: TransformStyle*): Self = this.set("styles", js.Array(value :_*))
+    @scala.inline
+    def setStyles(value: js.Array[TransformStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetVarargs(value: (Double | String)*): Self = this.set("target", js.Array(value :_*))
+    @scala.inline
+    def setTarget(value: Double | String | (js.Array[Double | String])): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: aggregate | filter | groupby | sort): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+  }
+  
 }
 

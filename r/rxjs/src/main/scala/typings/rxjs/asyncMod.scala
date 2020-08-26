@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object asyncMod extends js.Object {
   val async: AsyncScheduler = js.native
+  val asyncScheduler: AsyncScheduler = js.native
 }
 

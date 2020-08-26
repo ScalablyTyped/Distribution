@@ -23,14 +23,16 @@ trait Instantiable
      with Instantiable4[
       /* errorClass */ String, 
       /* errorMessage */ String, 
-      /* stacktrace */ js.Array[js.Any], 
+      js.UndefOr[/* stacktrace */ js.Array[js.Any]], 
       /* handledState */ IHandledState, 
       default
     ] {
   def ensureReport(reportOrError: js.Any): Report = js.native
+  def ensureReport(reportOrError: js.Any, errorFramesToSkip: js.UndefOr[scala.Nothing], generatedFramesToSkip: Double): Report = js.native
   def ensureReport(reportOrError: js.Any, errorFramesToSkip: Double): Report = js.native
   def ensureReport(reportOrError: js.Any, errorFramesToSkip: Double, generatedFramesToSkip: Double): Report = js.native
   def getStacktrace(error: js.Any): js.Array[IStackframe] = js.native
+  def getStacktrace(error: js.Any, errorFramesToSkip: js.UndefOr[scala.Nothing], generatedFramesToSkip: Double): js.Array[IStackframe] = js.native
   def getStacktrace(error: js.Any, errorFramesToSkip: Double): js.Array[IStackframe] = js.native
   def getStacktrace(error: js.Any, errorFramesToSkip: Double, generatedFramesToSkip: Double): js.Array[IStackframe] = js.native
 }

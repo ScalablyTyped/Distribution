@@ -47,28 +47,58 @@ trait UserState extends js.Object {
 
 object UserState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    awsAccountId: Input[String] = null,
-    email: Input[String] = null,
-    iamArn: Input[String] = null,
-    identityType: Input[String] = null,
-    namespace: Input[String] = null,
-    sessionName: Input[String] = null,
-    userName: Input[String] = null,
-    userRole: Input[String] = null
-  ): UserState = {
+  def apply(): UserState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (awsAccountId != null) __obj.updateDynamic("awsAccountId")(awsAccountId.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (iamArn != null) __obj.updateDynamic("iamArn")(iamArn.asInstanceOf[js.Any])
-    if (identityType != null) __obj.updateDynamic("identityType")(identityType.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (sessionName != null) __obj.updateDynamic("sessionName")(sessionName.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
-    if (userRole != null) __obj.updateDynamic("userRole")(userRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserState]
   }
+  @scala.inline
+  implicit class UserStateOps[Self <: UserState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAwsAccountId(value: Input[String]): Self = this.set("awsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAccountId: Self = this.set("awsAccountId", js.undefined)
+    @scala.inline
+    def setEmail(value: Input[String]): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setIamArn(value: Input[String]): Self = this.set("iamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamArn: Self = this.set("iamArn", js.undefined)
+    @scala.inline
+    def setIdentityType(value: Input[String]): Self = this.set("identityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityType: Self = this.set("identityType", js.undefined)
+    @scala.inline
+    def setNamespace(value: Input[String]): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setSessionName(value: Input[String]): Self = this.set("sessionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionName: Self = this.set("sessionName", js.undefined)
+    @scala.inline
+    def setUserName(value: Input[String]): Self = this.set("userName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("userName", js.undefined)
+    @scala.inline
+    def setUserRole(value: Input[String]): Self = this.set("userRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserRole: Self = this.set("userRole", js.undefined)
+  }
+  
 }
 

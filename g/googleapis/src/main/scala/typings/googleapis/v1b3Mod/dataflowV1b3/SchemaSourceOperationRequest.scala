@@ -41,22 +41,46 @@ trait SchemaSourceOperationRequest extends js.Object {
 
 object SchemaSourceOperationRequest {
   @scala.inline
-  def apply(
-    getMetadata: SchemaSourceGetMetadataRequest = null,
-    name: String = null,
-    originalName: String = null,
-    split: SchemaSourceSplitRequest = null,
-    stageName: String = null,
-    systemName: String = null
-  ): SchemaSourceOperationRequest = {
+  def apply(): SchemaSourceOperationRequest = {
     val __obj = js.Dynamic.literal()
-    if (getMetadata != null) __obj.updateDynamic("getMetadata")(getMetadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (originalName != null) __obj.updateDynamic("originalName")(originalName.asInstanceOf[js.Any])
-    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
-    if (systemName != null) __obj.updateDynamic("systemName")(systemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceOperationRequest]
   }
+  @scala.inline
+  implicit class SchemaSourceOperationRequestOps[Self <: SchemaSourceOperationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetMetadata(value: SchemaSourceGetMetadataRequest): Self = this.set("getMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetMetadata: Self = this.set("getMetadata", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOriginalName(value: String): Self = this.set("originalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalName: Self = this.set("originalName", js.undefined)
+    @scala.inline
+    def setSplit(value: SchemaSourceSplitRequest): Self = this.set("split", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplit: Self = this.set("split", js.undefined)
+    @scala.inline
+    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("stageName", js.undefined)
+    @scala.inline
+    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemName: Self = this.set("systemName", js.undefined)
+  }
+  
 }
 

@@ -1,32 +1,17 @@
 package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.INgModelOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDropdownConfigNgOptions extends INgModelOptions
 
 object IDropdownConfigNgOptions {
   @scala.inline
-  def apply(
-    allowInvalid: js.UndefOr[Boolean] = js.undefined,
-    debounce: Double | StringDictionary[Double] = null,
-    getterSetter: js.UndefOr[Boolean] = js.undefined,
-    timeSecondsFormat: String = null,
-    timeStripZeroSeconds: js.UndefOr[Boolean] = js.undefined,
-    timezone: String = null,
-    updateOn: String = null
-  ): IDropdownConfigNgOptions = {
+  def apply(): IDropdownConfigNgOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowInvalid)) __obj.updateDynamic("allowInvalid")(allowInvalid.get.asInstanceOf[js.Any])
-    if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
-    if (!js.isUndefined(getterSetter)) __obj.updateDynamic("getterSetter")(getterSetter.get.asInstanceOf[js.Any])
-    if (timeSecondsFormat != null) __obj.updateDynamic("timeSecondsFormat")(timeSecondsFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeStripZeroSeconds)) __obj.updateDynamic("timeStripZeroSeconds")(timeStripZeroSeconds.get.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (updateOn != null) __obj.updateDynamic("updateOn")(updateOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDropdownConfigNgOptions]
   }
 }

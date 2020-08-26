@@ -32,11 +32,11 @@ trait Stamp[Obj]
   @JSName("create")
   var create_Original: FactoryFunction[Obj] = js.native
   /* InferMemberOverrides */
-  override def apply(): StampObjectType[Obj] with js.Any = js.native
+  override def apply(options: js.UndefOr[scala.Nothing], args: js.Any*): StampObjectType[Obj] with js.Any = js.native
   /* InferMemberOverrides */
   override def apply(options: PropertyMap, args: js.Any*): StampObjectType[Obj] with js.Any = js.native
+  def create(options: js.UndefOr[scala.Nothing], args: js.Any*): StampObjectType[Obj] = js.native
   /** Just like calling stamp(), stamp.create() invokes the stamp and returns a new instance. */
-  def create(): StampObjectType[Obj] = js.native
   def create(options: PropertyMap, args: js.Any*): StampObjectType[Obj] = js.native
 }
 

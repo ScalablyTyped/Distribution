@@ -19,10 +19,32 @@ trait OutputGroup extends js.Object {
 
 object OutputGroup {
   @scala.inline
-  def apply(OutputGroupSettings: OutputGroupSettings, Outputs: listOfOutput, Name: stringMax32 = null): OutputGroup = {
+  def apply(OutputGroupSettings: OutputGroupSettings, Outputs: listOfOutput): OutputGroup = {
     val __obj = js.Dynamic.literal(OutputGroupSettings = OutputGroupSettings.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputGroup]
   }
+  @scala.inline
+  implicit class OutputGroupOps[Self <: OutputGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOutputGroupSettings(value: OutputGroupSettings): Self = this.set("OutputGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputsVarargs(value: Output*): Self = this.set("Outputs", js.Array(value :_*))
+    @scala.inline
+    def setOutputs(value: listOfOutput): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: stringMax32): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

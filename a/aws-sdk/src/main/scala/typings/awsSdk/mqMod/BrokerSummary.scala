@@ -38,24 +38,50 @@ trait BrokerSummary extends js.Object {
 
 object BrokerSummary {
   @scala.inline
-  def apply(
-    BrokerArn: string = null,
-    BrokerId: string = null,
-    BrokerName: string = null,
-    BrokerState: BrokerState = null,
-    Created: timestampIso8601 = null,
-    DeploymentMode: DeploymentMode = null,
-    HostInstanceType: string = null
-  ): BrokerSummary = {
+  def apply(): BrokerSummary = {
     val __obj = js.Dynamic.literal()
-    if (BrokerArn != null) __obj.updateDynamic("BrokerArn")(BrokerArn.asInstanceOf[js.Any])
-    if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId.asInstanceOf[js.Any])
-    if (BrokerName != null) __obj.updateDynamic("BrokerName")(BrokerName.asInstanceOf[js.Any])
-    if (BrokerState != null) __obj.updateDynamic("BrokerState")(BrokerState.asInstanceOf[js.Any])
-    if (Created != null) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
-    if (DeploymentMode != null) __obj.updateDynamic("DeploymentMode")(DeploymentMode.asInstanceOf[js.Any])
-    if (HostInstanceType != null) __obj.updateDynamic("HostInstanceType")(HostInstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerSummary]
   }
+  @scala.inline
+  implicit class BrokerSummaryOps[Self <: BrokerSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokerArn(value: string): Self = this.set("BrokerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerArn: Self = this.set("BrokerArn", js.undefined)
+    @scala.inline
+    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+    @scala.inline
+    def setBrokerName(value: string): Self = this.set("BrokerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerName: Self = this.set("BrokerName", js.undefined)
+    @scala.inline
+    def setBrokerState(value: BrokerState): Self = this.set("BrokerState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerState: Self = this.set("BrokerState", js.undefined)
+    @scala.inline
+    def setCreated(value: timestampIso8601): Self = this.set("Created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("Created", js.undefined)
+    @scala.inline
+    def setDeploymentMode(value: DeploymentMode): Self = this.set("DeploymentMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentMode: Self = this.set("DeploymentMode", js.undefined)
+    @scala.inline
+    def setHostInstanceType(value: string): Self = this.set("HostInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostInstanceType: Self = this.set("HostInstanceType", js.undefined)
+  }
+  
 }
 

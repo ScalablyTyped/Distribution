@@ -18,11 +18,34 @@ trait Filters extends js.Object {
 
 object Filters {
   @scala.inline
-  def apply(Channels: Channels = null, Queues: Queues = null): Filters = {
+  def apply(): Filters = {
     val __obj = js.Dynamic.literal()
-    if (Channels != null) __obj.updateDynamic("Channels")(Channels.asInstanceOf[js.Any])
-    if (Queues != null) __obj.updateDynamic("Queues")(Queues.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filters]
   }
+  @scala.inline
+  implicit class FiltersOps[Self <: Filters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelsVarargs(value: Channel*): Self = this.set("Channels", js.Array(value :_*))
+    @scala.inline
+    def setChannels(value: Channels): Self = this.set("Channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("Channels", js.undefined)
+    @scala.inline
+    def setQueuesVarargs(value: QueueId*): Self = this.set("Queues", js.Array(value :_*))
+    @scala.inline
+    def setQueues(value: Queues): Self = this.set("Queues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueues: Self = this.set("Queues", js.undefined)
+  }
+  
 }
 

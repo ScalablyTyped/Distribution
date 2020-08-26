@@ -38,21 +38,44 @@ trait ListRecordsRequest extends js.Object {
 
 object ListRecordsRequest {
   @scala.inline
-  def apply(
-    DatasetName: DatasetName,
-    IdentityId: IdentityId,
-    IdentityPoolId: IdentityPoolId,
-    LastSyncCount: js.UndefOr[Long] = js.undefined,
-    MaxResults: js.UndefOr[IntegerString] = js.undefined,
-    NextToken: String = null,
-    SyncSessionToken: SyncSessionToken = null
-  ): ListRecordsRequest = {
+  def apply(DatasetName: DatasetName, IdentityId: IdentityId, IdentityPoolId: IdentityPoolId): ListRecordsRequest = {
     val __obj = js.Dynamic.literal(DatasetName = DatasetName.asInstanceOf[js.Any], IdentityId = IdentityId.asInstanceOf[js.Any], IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
-    if (!js.isUndefined(LastSyncCount)) __obj.updateDynamic("LastSyncCount")(LastSyncCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SyncSessionToken != null) __obj.updateDynamic("SyncSessionToken")(SyncSessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecordsRequest]
   }
+  @scala.inline
+  implicit class ListRecordsRequestOps[Self <: ListRecordsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatasetName(value: DatasetName): Self = this.set("DatasetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentityId(value: IdentityId): Self = this.set("IdentityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastSyncCount(value: Long): Self = this.set("LastSyncCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSyncCount: Self = this.set("LastSyncCount", js.undefined)
+    @scala.inline
+    def setMaxResults(value: IntegerString): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSyncSessionToken(value: SyncSessionToken): Self = this.set("SyncSessionToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncSessionToken: Self = this.set("SyncSessionToken", js.undefined)
+  }
+  
 }
 

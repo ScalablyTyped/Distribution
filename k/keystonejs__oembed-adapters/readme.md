@@ -10,9 +10,9 @@ Adapters for fetching oEmbed data for the OEmbed field type
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/oembed-adapters |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 428 |
+| # downloads        | 667 |
 | # stars            | 0 |
 
 ## Links

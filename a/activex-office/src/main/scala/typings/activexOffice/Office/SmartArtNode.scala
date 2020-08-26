@@ -26,6 +26,7 @@ trait SmartArtNode extends js.Object {
     * @param Type [Type=1]
     */
   def AddNode(): SmartArtNode = js.native
+  def AddNode(Position: js.UndefOr[scala.Nothing], Type: MsoSmartArtNodeType): SmartArtNode = js.native
   def AddNode(Position: MsoSmartArtNodePosition): SmartArtNode = js.native
   def AddNode(Position: MsoSmartArtNodePosition, Type: MsoSmartArtNodeType): SmartArtNode = js.native
   def Delete(): Unit = js.native

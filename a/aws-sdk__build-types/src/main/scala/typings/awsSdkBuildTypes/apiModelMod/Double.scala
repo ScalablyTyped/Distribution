@@ -5,33 +5,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Double
   extends ShapeDef
      with Shape {
-  var max: js.UndefOr[scala.Double] = js.undefined
-  var min: js.UndefOr[scala.Double] = js.undefined
+  var max: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.native
   @JSName("type")
-  val type_Double: double
+  val type_Double: double = js.native
 }
 
 object Double {
   @scala.inline
-  def apply(
-    `type`: double,
-    deprecated: js.UndefOr[scala.Boolean] = js.undefined,
-    documentation: java.lang.String = null,
-    max: js.UndefOr[scala.Double] = js.undefined,
-    min: js.UndefOr[scala.Double] = js.undefined,
-    sensitive: js.UndefOr[scala.Boolean] = js.undefined
-  ): Double = {
+  def apply(`type`: double): Double = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Double]
   }
+  @scala.inline
+  implicit class DoubleOps[Self <: Double] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: double): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMax(value: scala.Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: scala.Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+  }
+  
 }
 

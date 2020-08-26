@@ -12,7 +12,7 @@ A service to handle common dialog types in a web application.  Built on top of A
 | Keywords           | angular, dialog, modal, service |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 72202 |
+| # downloads        | 75704 |
 | # stars            | 1 |
 
 ## Links

@@ -22,16 +22,36 @@ trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificat
 
 object MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig {
   @scala.inline
-  def apply(
-    notificationArn: String = null,
-    notificationEvents: js.Array[String] = null,
-    notificationType: String = null
-  ): MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig = {
+  def apply(): MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig = {
     val __obj = js.Dynamic.literal()
-    if (notificationArn != null) __obj.updateDynamic("notificationArn")(notificationArn.asInstanceOf[js.Any])
-    if (notificationEvents != null) __obj.updateDynamic("notificationEvents")(notificationEvents.asInstanceOf[js.Any])
-    if (notificationType != null) __obj.updateDynamic("notificationType")(notificationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig]
   }
+  @scala.inline
+  implicit class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOps[Self <: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotificationArn(value: String): Self = this.set("notificationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationArn: Self = this.set("notificationArn", js.undefined)
+    @scala.inline
+    def setNotificationEventsVarargs(value: String*): Self = this.set("notificationEvents", js.Array(value :_*))
+    @scala.inline
+    def setNotificationEvents(value: js.Array[String]): Self = this.set("notificationEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationEvents: Self = this.set("notificationEvents", js.undefined)
+    @scala.inline
+    def setNotificationType(value: String): Self = this.set("notificationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationType: Self = this.set("notificationType", js.undefined)
+  }
+  
 }
 

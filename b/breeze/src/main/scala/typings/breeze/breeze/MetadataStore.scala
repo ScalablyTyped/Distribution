@@ -14,9 +14,11 @@ trait MetadataStore extends js.Object {
   def addEntityType(structuralType: IStructuralType): Unit = js.native
   def exportMetadata(): String = js.native
   def fetchMetadata(dataService: String): js.Promise[_] = js.native
+  def fetchMetadata(dataService: String, callback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): js.Promise[_] = js.native
   def fetchMetadata(dataService: String, callback: js.Function1[/* data */ js.Any, Unit]): js.Promise[_] = js.native
   def fetchMetadata(dataService: String, callback: js.Function1[/* data */ js.Any, Unit], errorCallback: ErrorCallback): js.Promise[_] = js.native
   def fetchMetadata(dataService: DataService): js.Promise[_] = js.native
+  def fetchMetadata(dataService: DataService, callback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): js.Promise[_] = js.native
   def fetchMetadata(dataService: DataService, callback: js.Function1[/* data */ js.Any, Unit]): js.Promise[_] = js.native
   def fetchMetadata(
     dataService: DataService,
@@ -33,6 +35,12 @@ trait MetadataStore extends js.Object {
   def importMetadata(exportedString: String, allowMerge: Boolean): MetadataStore = js.native
   def isEmpty(): Boolean = js.native
   def registerEntityTypeCtor(entityTypeName: String, entityCtor: js.Function): Unit = js.native
+  def registerEntityTypeCtor(
+    entityTypeName: String,
+    entityCtor: js.Function,
+    initializationFn: js.UndefOr[scala.Nothing],
+    noTrackingFn: js.Function2[/* node */ js.Object, /* entityType */ EntityType, js.Object]
+  ): Unit = js.native
   def registerEntityTypeCtor(
     entityTypeName: String,
     entityCtor: js.Function,

@@ -31,8 +31,8 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object IonicStorageModule extends js.Object {
-    def forRoot(): ModuleWithProviders[_] = js.native
-    def forRoot(storageConfig: StorageConfig): ModuleWithProviders[_] = js.native
+    def forRoot(): ModuleWithProviders[IonicStorageModule] = js.native
+    def forRoot(storageConfig: StorageConfig): ModuleWithProviders[IonicStorageModule] = js.native
   }
   
 }

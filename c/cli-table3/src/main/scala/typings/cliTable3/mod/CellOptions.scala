@@ -6,39 +6,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CellOptions extends js.Object {
-  var chars: js.UndefOr[PartialRecordCharNamestri] = js.undefined
-  var colSpan: js.UndefOr[Double] = js.undefined
-  var content: CellValue
-  var hAlign: js.UndefOr[HorizontalAlignment] = js.undefined
-  var rowSpan: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[Head] = js.undefined
-  var truncate: js.UndefOr[String] = js.undefined
-  var vAlign: js.UndefOr[VerticalAlignment] = js.undefined
+  var chars: js.UndefOr[PartialRecordCharNamestri] = js.native
+  var colSpan: js.UndefOr[Double] = js.native
+  var content: CellValue = js.native
+  var hAlign: js.UndefOr[HorizontalAlignment] = js.native
+  var rowSpan: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[Head] = js.native
+  var truncate: js.UndefOr[String] = js.native
+  var vAlign: js.UndefOr[VerticalAlignment] = js.native
 }
 
 object CellOptions {
   @scala.inline
-  def apply(
-    chars: PartialRecordCharNamestri = null,
-    colSpan: js.UndefOr[Double] = js.undefined,
-    content: js.UndefOr[Null | CellValue] = js.undefined,
-    hAlign: HorizontalAlignment = null,
-    rowSpan: js.UndefOr[Double] = js.undefined,
-    style: Head = null,
-    truncate: String = null,
-    vAlign: VerticalAlignment = null
-  ): CellOptions = {
+  def apply(): CellOptions = {
     val __obj = js.Dynamic.literal()
-    if (chars != null) __obj.updateDynamic("chars")(chars.asInstanceOf[js.Any])
-    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
-    if (vAlign != null) __obj.updateDynamic("vAlign")(vAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellOptions]
   }
+  @scala.inline
+  implicit class CellOptionsOps[Self <: CellOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChars(value: PartialRecordCharNamestri): Self = this.set("chars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChars: Self = this.set("chars", js.undefined)
+    @scala.inline
+    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    @scala.inline
+    def setContent(value: CellValue): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContentNull: Self = this.set("content", null)
+    @scala.inline
+    def setHAlign(value: HorizontalAlignment): Self = this.set("hAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHAlign: Self = this.set("hAlign", js.undefined)
+    @scala.inline
+    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    @scala.inline
+    def setStyle(value: Head): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTruncate(value: String): Self = this.set("truncate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruncate: Self = this.set("truncate", js.undefined)
+    @scala.inline
+    def setVAlign(value: VerticalAlignment): Self = this.set("vAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVAlign: Self = this.set("vAlign", js.undefined)
+  }
+  
 }
 

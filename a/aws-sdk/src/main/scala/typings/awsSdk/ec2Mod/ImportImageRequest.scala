@@ -66,38 +66,84 @@ trait ImportImageRequest extends js.Object {
 
 object ImportImageRequest {
   @scala.inline
-  def apply(
-    Architecture: String = null,
-    ClientData: ClientData = null,
-    ClientToken: String = null,
-    Description: String = null,
-    DiskContainers: ImageDiskContainerList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    Hypervisor: String = null,
-    KmsKeyId: KmsKeyId = null,
-    LicenseSpecifications: ImportImageLicenseSpecificationListRequest = null,
-    LicenseType: String = null,
-    Platform: String = null,
-    RoleName: String = null,
-    TagSpecifications: TagSpecificationList = null
-  ): ImportImageRequest = {
+  def apply(): ImportImageRequest = {
     val __obj = js.Dynamic.literal()
-    if (Architecture != null) __obj.updateDynamic("Architecture")(Architecture.asInstanceOf[js.Any])
-    if (ClientData != null) __obj.updateDynamic("ClientData")(ClientData.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DiskContainers != null) __obj.updateDynamic("DiskContainers")(DiskContainers.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
-    if (Hypervisor != null) __obj.updateDynamic("Hypervisor")(Hypervisor.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (LicenseSpecifications != null) __obj.updateDynamic("LicenseSpecifications")(LicenseSpecifications.asInstanceOf[js.Any])
-    if (LicenseType != null) __obj.updateDynamic("LicenseType")(LicenseType.asInstanceOf[js.Any])
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
-    if (RoleName != null) __obj.updateDynamic("RoleName")(RoleName.asInstanceOf[js.Any])
-    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportImageRequest]
   }
+  @scala.inline
+  implicit class ImportImageRequestOps[Self <: ImportImageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchitecture(value: String): Self = this.set("Architecture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchitecture: Self = this.set("Architecture", js.undefined)
+    @scala.inline
+    def setClientData(value: ClientData): Self = this.set("ClientData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientData: Self = this.set("ClientData", js.undefined)
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDiskContainersVarargs(value: ImageDiskContainer*): Self = this.set("DiskContainers", js.Array(value :_*))
+    @scala.inline
+    def setDiskContainers(value: ImageDiskContainerList): Self = this.set("DiskContainers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskContainers: Self = this.set("DiskContainers", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    @scala.inline
+    def setHypervisor(value: String): Self = this.set("Hypervisor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHypervisor: Self = this.set("Hypervisor", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setLicenseSpecificationsVarargs(value: ImportImageLicenseConfigurationRequest*): Self = this.set("LicenseSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setLicenseSpecifications(value: ImportImageLicenseSpecificationListRequest): Self = this.set("LicenseSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseSpecifications: Self = this.set("LicenseSpecifications", js.undefined)
+    @scala.inline
+    def setLicenseType(value: String): Self = this.set("LicenseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseType: Self = this.set("LicenseType", js.undefined)
+    @scala.inline
+    def setPlatform(value: String): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("Platform", js.undefined)
+    @scala.inline
+    def setRoleName(value: String): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleName: Self = this.set("RoleName", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+  }
+  
 }
 

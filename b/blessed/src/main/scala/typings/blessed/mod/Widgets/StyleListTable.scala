@@ -4,26 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StyleListTable extends ListElementStyle {
   /**
     * Cell style.
     */
-  var cell: js.UndefOr[js.Any] = js.undefined
+  var cell: js.UndefOr[js.Any] = js.native
   /**
     * Header style.
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[js.Any] = js.native
 }
 
 object StyleListTable {
   @scala.inline
-  def apply(cell: js.Any = null, header: js.Any = null, item: js.Any = null, selected: js.Any = null): StyleListTable = {
+  def apply(): StyleListTable = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleListTable]
   }
+  @scala.inline
+  implicit class StyleListTableOps[Self <: StyleListTable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCell(value: js.Any): Self = this.set("cell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCell: Self = this.set("cell", js.undefined)
+    @scala.inline
+    def setHeader(value: js.Any): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+  }
+  
 }
 

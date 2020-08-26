@@ -51,6 +51,7 @@ trait Fancytree extends js.Object {
   def enableUpdate(enabled: Boolean): Unit = js.native
   /** Expand (or collapse) all parent nodes. */
   def expandAll(): Unit = js.native
+  def expandAll(flag: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
   def expandAll(flag: Boolean): Unit = js.native
   def expandAll(flag: Boolean, options: js.Object): Unit = js.native
   /** [ext-filter] Dimm or hide whole branches.
@@ -91,6 +92,7 @@ trait Fancytree extends js.Object {
   def findNextNode(`match`: js.Function1[/* node */ FancytreeNode, Boolean], startNode: FancytreeNode): FancytreeNode = js.native
   /** Generate INPUT elements that can be submitted with html forms. In selectMode 3 only the topmost selected nodes are considered. */
   def generateFormElements(): Unit = js.native
+  def generateFormElements(selected: js.UndefOr[scala.Nothing], active: Boolean): Unit = js.native
   def generateFormElements(selected: Boolean): Unit = js.native
   def generateFormElements(selected: Boolean, active: Boolean): Unit = js.native
   /** Return the currently active node or null.  */
@@ -160,6 +162,7 @@ trait Fancytree extends js.Object {
     * @param deep (default = false)
     */
   def render(): Unit = js.native
+  def render(force: js.UndefOr[scala.Nothing], deep: Boolean): Unit = js.native
   def render(force: Boolean): Unit = js.native
   def render(force: Boolean, deep: Boolean): Unit = js.native
   /** @param flag (default = true) */
@@ -171,6 +174,7 @@ trait Fancytree extends js.Object {
     * @param includeRoot Returns the hidden system root node (and its children) (default = false)
     */
   def toDict(): js.Any = js.native
+  def toDict(includeRoot: js.UndefOr[scala.Nothing], callback: js.Function1[/* node */ FancytreeNode, Unit]): js.Any = js.native
   def toDict(includeRoot: Boolean): js.Any = js.native
   def toDict(includeRoot: Boolean, callback: js.Function1[/* node */ FancytreeNode, Unit]): js.Any = js.native
   /** Call fn(node) for all nodes.

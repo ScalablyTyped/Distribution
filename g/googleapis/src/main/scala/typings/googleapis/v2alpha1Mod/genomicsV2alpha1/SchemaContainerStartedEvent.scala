@@ -31,16 +31,34 @@ trait SchemaContainerStartedEvent extends js.Object {
 
 object SchemaContainerStartedEvent {
   @scala.inline
-  def apply(
-    actionId: js.UndefOr[Double] = js.undefined,
-    ipAddress: String = null,
-    portMappings: StringDictionary[Double] = null
-  ): SchemaContainerStartedEvent = {
+  def apply(): SchemaContainerStartedEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(actionId)) __obj.updateDynamic("actionId")(actionId.get.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (portMappings != null) __obj.updateDynamic("portMappings")(portMappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainerStartedEvent]
   }
+  @scala.inline
+  implicit class SchemaContainerStartedEventOps[Self <: SchemaContainerStartedEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionId(value: Double): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionId: Self = this.set("actionId", js.undefined)
+    @scala.inline
+    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    @scala.inline
+    def setPortMappings(value: StringDictionary[Double]): Self = this.set("portMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortMappings: Self = this.set("portMappings", js.undefined)
+  }
+  
 }
 

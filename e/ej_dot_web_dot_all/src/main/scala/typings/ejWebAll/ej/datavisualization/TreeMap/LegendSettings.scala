@@ -4,84 +4,121 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LegendSettings extends js.Object {
   /** Specifies the alignment text for legend
     * @Default {near}
     */
-  var alignment: js.UndefOr[String] = js.undefined
+  var alignment: js.UndefOr[String] = js.native
   /** Specifies the alignment text for legend
     * @Default {0}
     */
-  var columnCount: js.UndefOr[Double] = js.undefined
+  var columnCount: js.UndefOr[Double] = js.native
   /** Specifies the dockPosition text for legend
     * @Default {top}
     */
-  var dockPosition: js.UndefOr[String] = js.undefined
+  var dockPosition: js.UndefOr[String] = js.native
   /** Specifies the height for legend
     * @Default {30}
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /** Specifies the iconHeight for legend
     * @Default {15}
     */
-  var iconHeight: js.UndefOr[Double] = js.undefined
+  var iconHeight: js.UndefOr[Double] = js.native
   /** Specifies the iconWidth for legend
     * @Default {15}
     */
-  var iconWidth: js.UndefOr[Double] = js.undefined
+  var iconWidth: js.UndefOr[Double] = js.native
   /** Specifies the leftLabel text for legend
     */
-  var leftLabel: js.UndefOr[String] = js.undefined
+  var leftLabel: js.UndefOr[String] = js.native
   /** Specifies the mode for legendSettings whether default or interactive mode
     * @Default {default}
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[String] = js.native
   /** Specifies the rightLabel text for legend
     */
-  var rightLabel: js.UndefOr[String] = js.undefined
+  var rightLabel: js.UndefOr[String] = js.native
   /** Specifies the template for legendSettings
     * @Default {null}
     */
-  var template: js.UndefOr[String] = js.undefined
+  var template: js.UndefOr[String] = js.native
   /** Specifies the title text for legend
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /** Specifies the width for legend
     * @Default {100}
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object LegendSettings {
   @scala.inline
-  def apply(
-    alignment: String = null,
-    columnCount: js.UndefOr[Double] = js.undefined,
-    dockPosition: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    iconHeight: js.UndefOr[Double] = js.undefined,
-    iconWidth: js.UndefOr[Double] = js.undefined,
-    leftLabel: String = null,
-    mode: String = null,
-    rightLabel: String = null,
-    template: String = null,
-    title: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): LegendSettings = {
+  def apply(): LegendSettings = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
-    if (dockPosition != null) __obj.updateDynamic("dockPosition")(dockPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconHeight)) __obj.updateDynamic("iconHeight")(iconHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconWidth)) __obj.updateDynamic("iconWidth")(iconWidth.get.asInstanceOf[js.Any])
-    if (leftLabel != null) __obj.updateDynamic("leftLabel")(leftLabel.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (rightLabel != null) __obj.updateDynamic("rightLabel")(rightLabel.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendSettings]
   }
+  @scala.inline
+  implicit class LegendSettingsOps[Self <: LegendSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    @scala.inline
+    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    @scala.inline
+    def setDockPosition(value: String): Self = this.set("dockPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDockPosition: Self = this.set("dockPosition", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIconHeight(value: Double): Self = this.set("iconHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconHeight: Self = this.set("iconHeight", js.undefined)
+    @scala.inline
+    def setIconWidth(value: Double): Self = this.set("iconWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconWidth: Self = this.set("iconWidth", js.undefined)
+    @scala.inline
+    def setLeftLabel(value: String): Self = this.set("leftLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftLabel: Self = this.set("leftLabel", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setRightLabel(value: String): Self = this.set("rightLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightLabel: Self = this.set("rightLabel", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

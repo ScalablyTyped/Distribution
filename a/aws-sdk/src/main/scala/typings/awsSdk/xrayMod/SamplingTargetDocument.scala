@@ -30,20 +30,42 @@ trait SamplingTargetDocument extends js.Object {
 
 object SamplingTargetDocument {
   @scala.inline
-  def apply(
-    FixedRate: js.UndefOr[Double] = js.undefined,
-    Interval: js.UndefOr[NullableInteger] = js.undefined,
-    ReservoirQuota: js.UndefOr[NullableInteger] = js.undefined,
-    ReservoirQuotaTTL: Timestamp = null,
-    RuleName: String = null
-  ): SamplingTargetDocument = {
+  def apply(): SamplingTargetDocument = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FixedRate)) __obj.updateDynamic("FixedRate")(FixedRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReservoirQuota)) __obj.updateDynamic("ReservoirQuota")(ReservoirQuota.get.asInstanceOf[js.Any])
-    if (ReservoirQuotaTTL != null) __obj.updateDynamic("ReservoirQuotaTTL")(ReservoirQuotaTTL.asInstanceOf[js.Any])
-    if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingTargetDocument]
   }
+  @scala.inline
+  implicit class SamplingTargetDocumentOps[Self <: SamplingTargetDocument] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFixedRate(value: Double): Self = this.set("FixedRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedRate: Self = this.set("FixedRate", js.undefined)
+    @scala.inline
+    def setInterval(value: NullableInteger): Self = this.set("Interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("Interval", js.undefined)
+    @scala.inline
+    def setReservoirQuota(value: NullableInteger): Self = this.set("ReservoirQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservoirQuota: Self = this.set("ReservoirQuota", js.undefined)
+    @scala.inline
+    def setReservoirQuotaTTL(value: Timestamp): Self = this.set("ReservoirQuotaTTL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservoirQuotaTTL: Self = this.set("ReservoirQuotaTTL", js.undefined)
+    @scala.inline
+    def setRuleName(value: String): Self = this.set("RuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleName: Self = this.set("RuleName", js.undefined)
+  }
+  
 }
 

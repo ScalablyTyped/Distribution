@@ -4,81 +4,138 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LabelAccSelectionAffordanceBottom extends js.Object {
-  var labelAccSelectionAffordanceBottom: js.UndefOr[String] = js.undefined
-  var labelAccSelectionAffordanceTop: js.UndefOr[String] = js.undefined
-  var labelDisableNonContiguousSelection: js.UndefOr[String] = js.undefined
-  var labelEditRow: js.UndefOr[String] = js.undefined
-  var labelEnableNonContiguousSelection: js.UndefOr[String] = js.undefined
-  var labelResize: js.UndefOr[String] = js.undefined
-  var labelResizePopupSpinner: js.UndefOr[String] = js.undefined
-  var labelResizePopupSubmit: js.UndefOr[String] = js.undefined
-  var labelSelectAndEditRow: js.UndefOr[String] = js.undefined
-  var labelSelectColum: js.UndefOr[String] = js.undefined
-  var labelSelectRow: js.UndefOr[String] = js.undefined
-  var labelSort: js.UndefOr[String] = js.undefined
-  var labelSortAsc: js.UndefOr[String] = js.undefined
-  var labelSortDsc: js.UndefOr[String] = js.undefined
-  var msgColumnResizeWidthValidation: js.UndefOr[String] = js.undefined
-  var msgFetchingData: js.UndefOr[String] = js.undefined
-  var msgInitializing: js.UndefOr[String] = js.undefined
-  var msgNoData: js.UndefOr[String] = js.undefined
-  var msgScrollPolicyMaxCountDetail: js.UndefOr[String] = js.undefined
-  var msgScrollPolicyMaxCountSummary: js.UndefOr[String] = js.undefined
-  var msgStatusSortAscending: js.UndefOr[String] = js.undefined
-  var msgStatusSortDescending: js.UndefOr[String] = js.undefined
+  var labelAccSelectionAffordanceBottom: js.UndefOr[String] = js.native
+  var labelAccSelectionAffordanceTop: js.UndefOr[String] = js.native
+  var labelDisableNonContiguousSelection: js.UndefOr[String] = js.native
+  var labelEditRow: js.UndefOr[String] = js.native
+  var labelEnableNonContiguousSelection: js.UndefOr[String] = js.native
+  var labelResize: js.UndefOr[String] = js.native
+  var labelResizePopupSpinner: js.UndefOr[String] = js.native
+  var labelResizePopupSubmit: js.UndefOr[String] = js.native
+  var labelSelectAndEditRow: js.UndefOr[String] = js.native
+  var labelSelectColum: js.UndefOr[String] = js.native
+  var labelSelectRow: js.UndefOr[String] = js.native
+  var labelSort: js.UndefOr[String] = js.native
+  var labelSortAsc: js.UndefOr[String] = js.native
+  var labelSortDsc: js.UndefOr[String] = js.native
+  var msgColumnResizeWidthValidation: js.UndefOr[String] = js.native
+  var msgFetchingData: js.UndefOr[String] = js.native
+  var msgInitializing: js.UndefOr[String] = js.native
+  var msgNoData: js.UndefOr[String] = js.native
+  var msgScrollPolicyMaxCountDetail: js.UndefOr[String] = js.native
+  var msgScrollPolicyMaxCountSummary: js.UndefOr[String] = js.native
+  var msgStatusSortAscending: js.UndefOr[String] = js.native
+  var msgStatusSortDescending: js.UndefOr[String] = js.native
 }
 
 object LabelAccSelectionAffordanceBottom {
   @scala.inline
-  def apply(
-    labelAccSelectionAffordanceBottom: String = null,
-    labelAccSelectionAffordanceTop: String = null,
-    labelDisableNonContiguousSelection: String = null,
-    labelEditRow: String = null,
-    labelEnableNonContiguousSelection: String = null,
-    labelResize: String = null,
-    labelResizePopupSpinner: String = null,
-    labelResizePopupSubmit: String = null,
-    labelSelectAndEditRow: String = null,
-    labelSelectColum: String = null,
-    labelSelectRow: String = null,
-    labelSort: String = null,
-    labelSortAsc: String = null,
-    labelSortDsc: String = null,
-    msgColumnResizeWidthValidation: String = null,
-    msgFetchingData: String = null,
-    msgInitializing: String = null,
-    msgNoData: String = null,
-    msgScrollPolicyMaxCountDetail: String = null,
-    msgScrollPolicyMaxCountSummary: String = null,
-    msgStatusSortAscending: String = null,
-    msgStatusSortDescending: String = null
-  ): LabelAccSelectionAffordanceBottom = {
+  def apply(): LabelAccSelectionAffordanceBottom = {
     val __obj = js.Dynamic.literal()
-    if (labelAccSelectionAffordanceBottom != null) __obj.updateDynamic("labelAccSelectionAffordanceBottom")(labelAccSelectionAffordanceBottom.asInstanceOf[js.Any])
-    if (labelAccSelectionAffordanceTop != null) __obj.updateDynamic("labelAccSelectionAffordanceTop")(labelAccSelectionAffordanceTop.asInstanceOf[js.Any])
-    if (labelDisableNonContiguousSelection != null) __obj.updateDynamic("labelDisableNonContiguousSelection")(labelDisableNonContiguousSelection.asInstanceOf[js.Any])
-    if (labelEditRow != null) __obj.updateDynamic("labelEditRow")(labelEditRow.asInstanceOf[js.Any])
-    if (labelEnableNonContiguousSelection != null) __obj.updateDynamic("labelEnableNonContiguousSelection")(labelEnableNonContiguousSelection.asInstanceOf[js.Any])
-    if (labelResize != null) __obj.updateDynamic("labelResize")(labelResize.asInstanceOf[js.Any])
-    if (labelResizePopupSpinner != null) __obj.updateDynamic("labelResizePopupSpinner")(labelResizePopupSpinner.asInstanceOf[js.Any])
-    if (labelResizePopupSubmit != null) __obj.updateDynamic("labelResizePopupSubmit")(labelResizePopupSubmit.asInstanceOf[js.Any])
-    if (labelSelectAndEditRow != null) __obj.updateDynamic("labelSelectAndEditRow")(labelSelectAndEditRow.asInstanceOf[js.Any])
-    if (labelSelectColum != null) __obj.updateDynamic("labelSelectColum")(labelSelectColum.asInstanceOf[js.Any])
-    if (labelSelectRow != null) __obj.updateDynamic("labelSelectRow")(labelSelectRow.asInstanceOf[js.Any])
-    if (labelSort != null) __obj.updateDynamic("labelSort")(labelSort.asInstanceOf[js.Any])
-    if (labelSortAsc != null) __obj.updateDynamic("labelSortAsc")(labelSortAsc.asInstanceOf[js.Any])
-    if (labelSortDsc != null) __obj.updateDynamic("labelSortDsc")(labelSortDsc.asInstanceOf[js.Any])
-    if (msgColumnResizeWidthValidation != null) __obj.updateDynamic("msgColumnResizeWidthValidation")(msgColumnResizeWidthValidation.asInstanceOf[js.Any])
-    if (msgFetchingData != null) __obj.updateDynamic("msgFetchingData")(msgFetchingData.asInstanceOf[js.Any])
-    if (msgInitializing != null) __obj.updateDynamic("msgInitializing")(msgInitializing.asInstanceOf[js.Any])
-    if (msgNoData != null) __obj.updateDynamic("msgNoData")(msgNoData.asInstanceOf[js.Any])
-    if (msgScrollPolicyMaxCountDetail != null) __obj.updateDynamic("msgScrollPolicyMaxCountDetail")(msgScrollPolicyMaxCountDetail.asInstanceOf[js.Any])
-    if (msgScrollPolicyMaxCountSummary != null) __obj.updateDynamic("msgScrollPolicyMaxCountSummary")(msgScrollPolicyMaxCountSummary.asInstanceOf[js.Any])
-    if (msgStatusSortAscending != null) __obj.updateDynamic("msgStatusSortAscending")(msgStatusSortAscending.asInstanceOf[js.Any])
-    if (msgStatusSortDescending != null) __obj.updateDynamic("msgStatusSortDescending")(msgStatusSortDescending.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelAccSelectionAffordanceBottom]
   }
+  @scala.inline
+  implicit class LabelAccSelectionAffordanceBottomOps[Self <: LabelAccSelectionAffordanceBottom] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabelAccSelectionAffordanceBottom(value: String): Self = this.set("labelAccSelectionAffordanceBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelAccSelectionAffordanceBottom: Self = this.set("labelAccSelectionAffordanceBottom", js.undefined)
+    @scala.inline
+    def setLabelAccSelectionAffordanceTop(value: String): Self = this.set("labelAccSelectionAffordanceTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelAccSelectionAffordanceTop: Self = this.set("labelAccSelectionAffordanceTop", js.undefined)
+    @scala.inline
+    def setLabelDisableNonContiguousSelection(value: String): Self = this.set("labelDisableNonContiguousSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelDisableNonContiguousSelection: Self = this.set("labelDisableNonContiguousSelection", js.undefined)
+    @scala.inline
+    def setLabelEditRow(value: String): Self = this.set("labelEditRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelEditRow: Self = this.set("labelEditRow", js.undefined)
+    @scala.inline
+    def setLabelEnableNonContiguousSelection(value: String): Self = this.set("labelEnableNonContiguousSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelEnableNonContiguousSelection: Self = this.set("labelEnableNonContiguousSelection", js.undefined)
+    @scala.inline
+    def setLabelResize(value: String): Self = this.set("labelResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelResize: Self = this.set("labelResize", js.undefined)
+    @scala.inline
+    def setLabelResizePopupSpinner(value: String): Self = this.set("labelResizePopupSpinner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelResizePopupSpinner: Self = this.set("labelResizePopupSpinner", js.undefined)
+    @scala.inline
+    def setLabelResizePopupSubmit(value: String): Self = this.set("labelResizePopupSubmit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelResizePopupSubmit: Self = this.set("labelResizePopupSubmit", js.undefined)
+    @scala.inline
+    def setLabelSelectAndEditRow(value: String): Self = this.set("labelSelectAndEditRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSelectAndEditRow: Self = this.set("labelSelectAndEditRow", js.undefined)
+    @scala.inline
+    def setLabelSelectColum(value: String): Self = this.set("labelSelectColum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSelectColum: Self = this.set("labelSelectColum", js.undefined)
+    @scala.inline
+    def setLabelSelectRow(value: String): Self = this.set("labelSelectRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSelectRow: Self = this.set("labelSelectRow", js.undefined)
+    @scala.inline
+    def setLabelSort(value: String): Self = this.set("labelSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSort: Self = this.set("labelSort", js.undefined)
+    @scala.inline
+    def setLabelSortAsc(value: String): Self = this.set("labelSortAsc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSortAsc: Self = this.set("labelSortAsc", js.undefined)
+    @scala.inline
+    def setLabelSortDsc(value: String): Self = this.set("labelSortDsc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSortDsc: Self = this.set("labelSortDsc", js.undefined)
+    @scala.inline
+    def setMsgColumnResizeWidthValidation(value: String): Self = this.set("msgColumnResizeWidthValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgColumnResizeWidthValidation: Self = this.set("msgColumnResizeWidthValidation", js.undefined)
+    @scala.inline
+    def setMsgFetchingData(value: String): Self = this.set("msgFetchingData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFetchingData: Self = this.set("msgFetchingData", js.undefined)
+    @scala.inline
+    def setMsgInitializing(value: String): Self = this.set("msgInitializing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgInitializing: Self = this.set("msgInitializing", js.undefined)
+    @scala.inline
+    def setMsgNoData(value: String): Self = this.set("msgNoData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgNoData: Self = this.set("msgNoData", js.undefined)
+    @scala.inline
+    def setMsgScrollPolicyMaxCountDetail(value: String): Self = this.set("msgScrollPolicyMaxCountDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgScrollPolicyMaxCountDetail: Self = this.set("msgScrollPolicyMaxCountDetail", js.undefined)
+    @scala.inline
+    def setMsgScrollPolicyMaxCountSummary(value: String): Self = this.set("msgScrollPolicyMaxCountSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgScrollPolicyMaxCountSummary: Self = this.set("msgScrollPolicyMaxCountSummary", js.undefined)
+    @scala.inline
+    def setMsgStatusSortAscending(value: String): Self = this.set("msgStatusSortAscending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgStatusSortAscending: Self = this.set("msgStatusSortAscending", js.undefined)
+    @scala.inline
+    def setMsgStatusSortDescending(value: String): Self = this.set("msgStatusSortDescending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgStatusSortDescending: Self = this.set("msgStatusSortDescending", js.undefined)
+  }
+  
 }
 

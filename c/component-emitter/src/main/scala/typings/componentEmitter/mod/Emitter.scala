@@ -12,6 +12,7 @@ trait Emitter[Event] extends js.Object {
   def off(): Emitter[String] = js.native
   def off(event: Event): Emitter[String] = js.native
   def off(event: Event, listener: js.Function): Emitter[String] = js.native
+  def off(event: js.UndefOr[scala.Nothing], listener: js.Function): Emitter[String] = js.native
   def on(event: Event, listener: js.Function): Emitter[String] = js.native
   def once(event: Event, listener: js.Function): Emitter[String] = js.native
 }

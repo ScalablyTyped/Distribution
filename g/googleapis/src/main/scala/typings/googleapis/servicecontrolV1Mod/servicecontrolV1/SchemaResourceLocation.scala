@@ -29,11 +29,34 @@ trait SchemaResourceLocation extends js.Object {
 
 object SchemaResourceLocation {
   @scala.inline
-  def apply(currentLocations: js.Array[String] = null, originalLocations: js.Array[String] = null): SchemaResourceLocation = {
+  def apply(): SchemaResourceLocation = {
     val __obj = js.Dynamic.literal()
-    if (currentLocations != null) __obj.updateDynamic("currentLocations")(currentLocations.asInstanceOf[js.Any])
-    if (originalLocations != null) __obj.updateDynamic("originalLocations")(originalLocations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourceLocation]
   }
+  @scala.inline
+  implicit class SchemaResourceLocationOps[Self <: SchemaResourceLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentLocationsVarargs(value: String*): Self = this.set("currentLocations", js.Array(value :_*))
+    @scala.inline
+    def setCurrentLocations(value: js.Array[String]): Self = this.set("currentLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentLocations: Self = this.set("currentLocations", js.undefined)
+    @scala.inline
+    def setOriginalLocationsVarargs(value: String*): Self = this.set("originalLocations", js.Array(value :_*))
+    @scala.inline
+    def setOriginalLocations(value: js.Array[String]): Self = this.set("originalLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalLocations: Self = this.set("originalLocations", js.undefined)
+  }
+  
 }
 

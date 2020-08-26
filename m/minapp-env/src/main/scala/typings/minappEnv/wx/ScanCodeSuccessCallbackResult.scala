@@ -23,15 +23,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScanCodeSuccessCallbackResult extends js.Object {
   /** 所扫码的字符集 */
-  var charSet: String
+  var charSet: String = js.native
   /** 当所扫的码为当前小程序的合法二维码时，会返回此字段，内容为二维码携带的 path */
-  var path: String
+  var path: String = js.native
   /** 原始数据，base64编码 */
-  var rawData: String
+  var rawData: String = js.native
   /** 所扫码的内容 */
-  var result: String
+  var result: String = js.native
   /** 所扫码的类型
     *
     * 可选值：
@@ -54,7 +55,7 @@ trait ScanCodeSuccessCallbackResult extends js.Object {
     * - 'UPC_EAN_EXTENSION': 一维码;
     * - 'WX_CODE': 二维码;
     * - 'CODE_25': 一维码; */
-  var scanType: QR_CODE | AZTEC | CODABAR | CODE_39 | CODE_93 | CODE_128 | DATA_MATRIX | EAN_8 | EAN_13 | ITF | MAXICODE | PDF_417 | RSS_14 | RSS_EXPANDED | UPC_A | UPC_E | UPC_EAN_EXTENSION | WX_CODE | CODE_25
+  var scanType: QR_CODE | AZTEC | CODABAR | CODE_39 | CODE_93 | CODE_128 | DATA_MATRIX | EAN_8 | EAN_13 | ITF | MAXICODE | PDF_417 | RSS_14 | RSS_EXPANDED | UPC_A | UPC_E | UPC_EAN_EXTENSION | WX_CODE | CODE_25 = js.native
 }
 
 object ScanCodeSuccessCallbackResult {
@@ -69,5 +70,30 @@ object ScanCodeSuccessCallbackResult {
     val __obj = js.Dynamic.literal(charSet = charSet.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], scanType = scanType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanCodeSuccessCallbackResult]
   }
+  @scala.inline
+  implicit class ScanCodeSuccessCallbackResultOps[Self <: ScanCodeSuccessCallbackResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCharSet(value: String): Self = this.set("charSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRawData(value: String): Self = this.set("rawData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResult(value: String): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScanType(
+      value: QR_CODE | AZTEC | CODABAR | CODE_39 | CODE_93 | CODE_128 | DATA_MATRIX | EAN_8 | EAN_13 | ITF | MAXICODE | PDF_417 | RSS_14 | RSS_EXPANDED | UPC_A | UPC_E | UPC_EAN_EXTENSION | WX_CODE | CODE_25
+    ): Self = this.set("scanType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

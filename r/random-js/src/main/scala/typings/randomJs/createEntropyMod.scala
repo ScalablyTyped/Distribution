@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createEntropyMod extends js.Object {
   def createEntropy(): js.Array[Double] = js.native
+  def createEntropy(engine: js.UndefOr[scala.Nothing], length: Double): js.Array[Double] = js.native
   def createEntropy(engine: Engine): js.Array[Double] = js.native
   def createEntropy(engine: Engine, length: Double): js.Array[Double] = js.native
 }

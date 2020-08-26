@@ -26,15 +26,32 @@ trait ModifyInstanceEventStartTimeRequest extends js.Object {
 
 object ModifyInstanceEventStartTimeRequest {
   @scala.inline
-  def apply(
-    InstanceEventId: String,
-    InstanceId: InstanceId,
-    NotBefore: DateTime,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): ModifyInstanceEventStartTimeRequest = {
+  def apply(InstanceEventId: String, InstanceId: InstanceId, NotBefore: DateTime): ModifyInstanceEventStartTimeRequest = {
     val __obj = js.Dynamic.literal(InstanceEventId = InstanceEventId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], NotBefore = NotBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceEventStartTimeRequest]
   }
+  @scala.inline
+  implicit class ModifyInstanceEventStartTimeRequestOps[Self <: ModifyInstanceEventStartTimeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceEventId(value: String): Self = this.set("InstanceEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotBefore(value: DateTime): Self = this.set("NotBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

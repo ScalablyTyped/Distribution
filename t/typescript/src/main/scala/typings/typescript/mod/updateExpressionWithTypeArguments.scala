@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
 object updateExpressionWithTypeArguments extends js.Object {
   def apply(
     node: ExpressionWithTypeArguments,
-    typeArguments: js.UndefOr[js.Array[TypeNode]],
+    typeArguments: js.UndefOr[scala.Nothing],
     expression: Expression
   ): ExpressionWithTypeArguments = js.native
+  def apply(node: ExpressionWithTypeArguments, typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = js.native
 }
 

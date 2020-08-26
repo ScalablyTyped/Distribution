@@ -64,23 +64,60 @@ object ImportComponentRequest {
     name: ResourceName,
     platform: Platform,
     semanticVersion: VersionNumber,
-    `type`: ComponentType,
-    changeDescription: NonEmptyString = null,
-    data: NonEmptyString = null,
-    description: NonEmptyString = null,
-    kmsKeyId: NonEmptyString = null,
-    tags: TagMap = null,
-    uri: Uri = null
+    `type`: ComponentType
   ): ImportComponentRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], semanticVersion = semanticVersion.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (changeDescription != null) __obj.updateDynamic("changeDescription")(changeDescription.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportComponentRequest]
   }
+  @scala.inline
+  implicit class ImportComponentRequestOps[Self <: ImportComponentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: ComponentFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSemanticVersion(value: VersionNumber): Self = this.set("semanticVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: ComponentType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChangeDescription(value: NonEmptyString): Self = this.set("changeDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeDescription: Self = this.set("changeDescription", js.undefined)
+    @scala.inline
+    def setData(value: NonEmptyString): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDescription(value: NonEmptyString): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: NonEmptyString): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUri(value: Uri): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

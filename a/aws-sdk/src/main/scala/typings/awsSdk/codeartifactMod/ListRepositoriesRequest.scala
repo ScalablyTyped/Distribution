@@ -22,16 +22,34 @@ trait ListRepositoriesRequest extends js.Object {
 
 object ListRepositoriesRequest {
   @scala.inline
-  def apply(
-    maxResults: js.UndefOr[ListRepositoriesMaxResults] = js.undefined,
-    nextToken: PaginationToken = null,
-    repositoryPrefix: RepositoryName = null
-  ): ListRepositoriesRequest = {
+  def apply(): ListRepositoriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (repositoryPrefix != null) __obj.updateDynamic("repositoryPrefix")(repositoryPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRepositoriesRequest]
   }
+  @scala.inline
+  implicit class ListRepositoriesRequestOps[Self <: ListRepositoriesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxResults(value: ListRepositoriesMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRepositoryPrefix(value: RepositoryName): Self = this.set("repositoryPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryPrefix: Self = this.set("repositoryPrefix", js.undefined)
+  }
+  
 }
 

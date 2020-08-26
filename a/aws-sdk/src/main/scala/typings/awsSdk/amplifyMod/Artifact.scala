@@ -22,5 +22,22 @@ object Artifact {
     val __obj = js.Dynamic.literal(artifactFileName = artifactFileName.asInstanceOf[js.Any], artifactId = artifactId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Artifact]
   }
+  @scala.inline
+  implicit class ArtifactOps[Self <: Artifact] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifactFileName(value: ArtifactFileName): Self = this.set("artifactFileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArtifactId(value: ArtifactId): Self = this.set("artifactId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

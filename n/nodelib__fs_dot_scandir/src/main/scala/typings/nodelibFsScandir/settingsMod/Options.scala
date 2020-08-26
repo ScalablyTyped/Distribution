@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var followSymbolicLinks: js.UndefOr[Boolean] = js.undefined
-  var fs: js.UndefOr[PartialFileSystemAdapter] = js.undefined
-  var pathSegmentSeparator: js.UndefOr[String] = js.undefined
-  var stats: js.UndefOr[Boolean] = js.undefined
-  var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
+  var followSymbolicLinks: js.UndefOr[Boolean] = js.native
+  var fs: js.UndefOr[PartialFileSystemAdapter] = js.native
+  var pathSegmentSeparator: js.UndefOr[String] = js.native
+  var stats: js.UndefOr[Boolean] = js.native
+  var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    followSymbolicLinks: js.UndefOr[Boolean] = js.undefined,
-    fs: PartialFileSystemAdapter = null,
-    pathSegmentSeparator: String = null,
-    stats: js.UndefOr[Boolean] = js.undefined,
-    throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(followSymbolicLinks)) __obj.updateDynamic("followSymbolicLinks")(followSymbolicLinks.get.asInstanceOf[js.Any])
-    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
-    if (pathSegmentSeparator != null) __obj.updateDynamic("pathSegmentSeparator")(pathSegmentSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(stats)) __obj.updateDynamic("stats")(stats.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwErrorOnBrokenSymbolicLink)) __obj.updateDynamic("throwErrorOnBrokenSymbolicLink")(throwErrorOnBrokenSymbolicLink.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFollowSymbolicLinks(value: Boolean): Self = this.set("followSymbolicLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollowSymbolicLinks: Self = this.set("followSymbolicLinks", js.undefined)
+    @scala.inline
+    def setFs(value: PartialFileSystemAdapter): Self = this.set("fs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFs: Self = this.set("fs", js.undefined)
+    @scala.inline
+    def setPathSegmentSeparator(value: String): Self = this.set("pathSegmentSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathSegmentSeparator: Self = this.set("pathSegmentSeparator", js.undefined)
+    @scala.inline
+    def setStats(value: Boolean): Self = this.set("stats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStats: Self = this.set("stats", js.undefined)
+    @scala.inline
+    def setThrowErrorOnBrokenSymbolicLink(value: Boolean): Self = this.set("throwErrorOnBrokenSymbolicLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrowErrorOnBrokenSymbolicLink: Self = this.set("throwErrorOnBrokenSymbolicLink", js.undefined)
+  }
+  
 }
 

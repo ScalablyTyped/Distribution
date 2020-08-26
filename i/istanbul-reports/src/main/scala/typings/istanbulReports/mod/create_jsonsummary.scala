@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object create_jsonsummary extends js.Object {
   def apply(name: `json-summary`): Visitor[Node] = js.native
-  def apply(name: `json-summary`, options: Partial[Options]): Visitor[Node] = js.native
+  def apply(name: `json-summary`, options: Partial[JsonSummaryOptions]): Visitor[Node] = js.native
 }
 

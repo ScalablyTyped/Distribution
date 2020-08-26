@@ -12,19 +12,38 @@ trait BucketReplicationConfigurationRuleFilter extends js.Object {
     */
   var prefix: js.UndefOr[String] = js.native
   /**
-    * A mapping of tags that identifies subset of objects to which the rule applies.
+    * A map of tags that identifies subset of objects to which the rule applies.
     * The rule applies only to objects having all the tags in its tagset.
     */
-  var tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var tags: js.UndefOr[StringDictionary[String]] = js.native
 }
 
 object BucketReplicationConfigurationRuleFilter {
   @scala.inline
-  def apply(prefix: String = null, tags: StringDictionary[js.Any] = null): BucketReplicationConfigurationRuleFilter = {
+  def apply(): BucketReplicationConfigurationRuleFilter = {
     val __obj = js.Dynamic.literal()
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRuleFilter]
   }
+  @scala.inline
+  implicit class BucketReplicationConfigurationRuleFilterOps[Self <: BucketReplicationConfigurationRuleFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

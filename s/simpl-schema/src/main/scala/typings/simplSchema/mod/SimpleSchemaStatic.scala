@@ -29,6 +29,7 @@ trait SimpleSchemaStatic
   def extend(otherSchema: SimpleSchemaStatic): SimpleSchemaStatic = js.native
   def extendOptions(options: js.Array[String]): Unit = js.native
   def getDefinition(key: String): js.Any = js.native
+  def getDefinition(key: String, propList: js.UndefOr[scala.Nothing], functionContext: js.Any): js.Any = js.native
   def getDefinition(key: String, propList: js.Any): js.Any = js.native
   def getDefinition(key: String, propList: js.Any, functionContext: js.Any): js.Any = js.native
   def keyIsInBlackBox(key: String): Boolean = js.native

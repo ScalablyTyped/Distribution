@@ -15,7 +15,7 @@ trait SharePointConfiguration extends js.Object {
     */
   var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.native
   /**
-    * A list of regulary expression patterns. Documents that match the patterns are excluded from the index. Documents that don't match the patterns are included in the index. If a document matches both an exclusion pattern and an inclusion pattern, the document is not included in the index. The regex is applied to the display URL of the SharePoint document.
+    * A list of regular expression patterns. Documents that match the patterns are excluded from the index. Documents that don't match the patterns are included in the index. If a document matches both an exclusion pattern and an inclusion pattern, the document is not included in the index. The regex is applied to the display URL of the SharePoint document.
     */
   var ExclusionPatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.native
   /**
@@ -47,27 +47,64 @@ trait SharePointConfiguration extends js.Object {
 
 object SharePointConfiguration {
   @scala.inline
-  def apply(
-    SecretArn: SecretArn,
-    SharePointVersion: SharePointVersion,
-    Urls: SharePointUrlList,
-    CrawlAttachments: js.UndefOr[Boolean] = js.undefined,
-    DocumentTitleFieldName: DataSourceFieldName = null,
-    ExclusionPatterns: DataSourceInclusionsExclusionsStrings = null,
-    FieldMappings: DataSourceToIndexFieldMappingList = null,
-    InclusionPatterns: DataSourceInclusionsExclusionsStrings = null,
-    UseChangeLog: js.UndefOr[Boolean] = js.undefined,
-    VpcConfiguration: DataSourceVpcConfiguration = null
-  ): SharePointConfiguration = {
+  def apply(SecretArn: SecretArn, SharePointVersion: SharePointVersion, Urls: SharePointUrlList): SharePointConfiguration = {
     val __obj = js.Dynamic.literal(SecretArn = SecretArn.asInstanceOf[js.Any], SharePointVersion = SharePointVersion.asInstanceOf[js.Any], Urls = Urls.asInstanceOf[js.Any])
-    if (!js.isUndefined(CrawlAttachments)) __obj.updateDynamic("CrawlAttachments")(CrawlAttachments.get.asInstanceOf[js.Any])
-    if (DocumentTitleFieldName != null) __obj.updateDynamic("DocumentTitleFieldName")(DocumentTitleFieldName.asInstanceOf[js.Any])
-    if (ExclusionPatterns != null) __obj.updateDynamic("ExclusionPatterns")(ExclusionPatterns.asInstanceOf[js.Any])
-    if (FieldMappings != null) __obj.updateDynamic("FieldMappings")(FieldMappings.asInstanceOf[js.Any])
-    if (InclusionPatterns != null) __obj.updateDynamic("InclusionPatterns")(InclusionPatterns.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseChangeLog)) __obj.updateDynamic("UseChangeLog")(UseChangeLog.get.asInstanceOf[js.Any])
-    if (VpcConfiguration != null) __obj.updateDynamic("VpcConfiguration")(VpcConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePointConfiguration]
   }
+  @scala.inline
+  implicit class SharePointConfigurationOps[Self <: SharePointConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSharePointVersion(value: SharePointVersion): Self = this.set("SharePointVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrlsVarargs(value: Url*): Self = this.set("Urls", js.Array(value :_*))
+    @scala.inline
+    def setUrls(value: SharePointUrlList): Self = this.set("Urls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCrawlAttachments(value: Boolean): Self = this.set("CrawlAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlAttachments: Self = this.set("CrawlAttachments", js.undefined)
+    @scala.inline
+    def setDocumentTitleFieldName(value: DataSourceFieldName): Self = this.set("DocumentTitleFieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentTitleFieldName: Self = this.set("DocumentTitleFieldName", js.undefined)
+    @scala.inline
+    def setExclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("ExclusionPatterns", js.Array(value :_*))
+    @scala.inline
+    def setExclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("ExclusionPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusionPatterns: Self = this.set("ExclusionPatterns", js.undefined)
+    @scala.inline
+    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = this.set("FieldMappings", js.Array(value :_*))
+    @scala.inline
+    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = this.set("FieldMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldMappings: Self = this.set("FieldMappings", js.undefined)
+    @scala.inline
+    def setInclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("InclusionPatterns", js.Array(value :_*))
+    @scala.inline
+    def setInclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("InclusionPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclusionPatterns: Self = this.set("InclusionPatterns", js.undefined)
+    @scala.inline
+    def setUseChangeLog(value: Boolean): Self = this.set("UseChangeLog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseChangeLog: Self = this.set("UseChangeLog", js.undefined)
+    @scala.inline
+    def setVpcConfiguration(value: DataSourceVpcConfiguration): Self = this.set("VpcConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfiguration: Self = this.set("VpcConfiguration", js.undefined)
+  }
+  
 }
 

@@ -22,11 +22,30 @@ trait SchemaClientInfo extends js.Object {
 
 object SchemaClientInfo {
   @scala.inline
-  def apply(clientId: String = null, clientVersion: String = null): SchemaClientInfo = {
+  def apply(): SchemaClientInfo = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (clientVersion != null) __obj.updateDynamic("clientVersion")(clientVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClientInfo]
   }
+  @scala.inline
+  implicit class SchemaClientInfoOps[Self <: SchemaClientInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setClientVersion(value: String): Self = this.set("clientVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientVersion: Self = this.set("clientVersion", js.undefined)
+  }
+  
 }
 

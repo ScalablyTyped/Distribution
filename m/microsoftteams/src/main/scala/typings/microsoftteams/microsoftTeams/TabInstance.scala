@@ -4,53 +4,91 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabInstance extends js.Object {
-  var channelId: js.UndefOr[String] = js.undefined
-  var channelIsFavorite: js.UndefOr[Boolean] = js.undefined
-  var channelName: js.UndefOr[String] = js.undefined
-  var entityId: js.UndefOr[String] = js.undefined
-  var groupId: js.UndefOr[String] = js.undefined
-  var internalTabInstanceId: js.UndefOr[String] = js.undefined
-  var lastViewUnixEpochTime: js.UndefOr[String] = js.undefined
-  var tabName: String
-  var teamId: js.UndefOr[String] = js.undefined
-  var teamIsFavorite: js.UndefOr[Boolean] = js.undefined
-  var teamName: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
-  var websiteUrl: js.UndefOr[String] = js.undefined
+  var channelId: js.UndefOr[String] = js.native
+  var channelIsFavorite: js.UndefOr[Boolean] = js.native
+  var channelName: js.UndefOr[String] = js.native
+  var entityId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.native
+  var internalTabInstanceId: js.UndefOr[String] = js.native
+  var lastViewUnixEpochTime: js.UndefOr[String] = js.native
+  var tabName: String = js.native
+  var teamId: js.UndefOr[String] = js.native
+  var teamIsFavorite: js.UndefOr[Boolean] = js.native
+  var teamName: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.native
+  var websiteUrl: js.UndefOr[String] = js.native
 }
 
 object TabInstance {
   @scala.inline
-  def apply(
-    tabName: String,
-    channelId: String = null,
-    channelIsFavorite: js.UndefOr[Boolean] = js.undefined,
-    channelName: String = null,
-    entityId: String = null,
-    groupId: String = null,
-    internalTabInstanceId: String = null,
-    lastViewUnixEpochTime: String = null,
-    teamId: String = null,
-    teamIsFavorite: js.UndefOr[Boolean] = js.undefined,
-    teamName: String = null,
-    url: String = null,
-    websiteUrl: String = null
-  ): TabInstance = {
+  def apply(tabName: String): TabInstance = {
     val __obj = js.Dynamic.literal(tabName = tabName.asInstanceOf[js.Any])
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (!js.isUndefined(channelIsFavorite)) __obj.updateDynamic("channelIsFavorite")(channelIsFavorite.get.asInstanceOf[js.Any])
-    if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
-    if (internalTabInstanceId != null) __obj.updateDynamic("internalTabInstanceId")(internalTabInstanceId.asInstanceOf[js.Any])
-    if (lastViewUnixEpochTime != null) __obj.updateDynamic("lastViewUnixEpochTime")(lastViewUnixEpochTime.asInstanceOf[js.Any])
-    if (teamId != null) __obj.updateDynamic("teamId")(teamId.asInstanceOf[js.Any])
-    if (!js.isUndefined(teamIsFavorite)) __obj.updateDynamic("teamIsFavorite")(teamIsFavorite.get.asInstanceOf[js.Any])
-    if (teamName != null) __obj.updateDynamic("teamName")(teamName.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabInstance]
   }
+  @scala.inline
+  implicit class TabInstanceOps[Self <: TabInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTabName(value: String): Self = this.set("tabName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setChannelIsFavorite(value: Boolean): Self = this.set("channelIsFavorite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelIsFavorite: Self = this.set("channelIsFavorite", js.undefined)
+    @scala.inline
+    def setChannelName(value: String): Self = this.set("channelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelName: Self = this.set("channelName", js.undefined)
+    @scala.inline
+    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    @scala.inline
+    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    @scala.inline
+    def setInternalTabInstanceId(value: String): Self = this.set("internalTabInstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalTabInstanceId: Self = this.set("internalTabInstanceId", js.undefined)
+    @scala.inline
+    def setLastViewUnixEpochTime(value: String): Self = this.set("lastViewUnixEpochTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastViewUnixEpochTime: Self = this.set("lastViewUnixEpochTime", js.undefined)
+    @scala.inline
+    def setTeamId(value: String): Self = this.set("teamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamId: Self = this.set("teamId", js.undefined)
+    @scala.inline
+    def setTeamIsFavorite(value: Boolean): Self = this.set("teamIsFavorite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamIsFavorite: Self = this.set("teamIsFavorite", js.undefined)
+    @scala.inline
+    def setTeamName(value: String): Self = this.set("teamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamName: Self = this.set("teamName", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setWebsiteUrl(value: String): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
+  }
+  
 }
 

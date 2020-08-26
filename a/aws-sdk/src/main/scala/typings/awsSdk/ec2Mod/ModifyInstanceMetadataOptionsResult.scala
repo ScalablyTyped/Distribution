@@ -18,11 +18,30 @@ trait ModifyInstanceMetadataOptionsResult extends js.Object {
 
 object ModifyInstanceMetadataOptionsResult {
   @scala.inline
-  def apply(InstanceId: String = null, InstanceMetadataOptions: InstanceMetadataOptionsResponse = null): ModifyInstanceMetadataOptionsResult = {
+  def apply(): ModifyInstanceMetadataOptionsResult = {
     val __obj = js.Dynamic.literal()
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (InstanceMetadataOptions != null) __obj.updateDynamic("InstanceMetadataOptions")(InstanceMetadataOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceMetadataOptionsResult]
   }
+  @scala.inline
+  implicit class ModifyInstanceMetadataOptionsResultOps[Self <: ModifyInstanceMetadataOptionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setInstanceMetadataOptions(value: InstanceMetadataOptionsResponse): Self = this.set("InstanceMetadataOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceMetadataOptions: Self = this.set("InstanceMetadataOptions", js.undefined)
+  }
+  
 }
 

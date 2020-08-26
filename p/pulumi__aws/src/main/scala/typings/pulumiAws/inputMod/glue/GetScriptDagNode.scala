@@ -26,15 +26,34 @@ trait GetScriptDagNode extends js.Object {
 
 object GetScriptDagNode {
   @scala.inline
-  def apply(
-    args: js.Array[GetScriptDagNodeArg],
-    id: String,
-    nodeType: String,
-    lineNumber: js.UndefOr[Double] = js.undefined
-  ): GetScriptDagNode = {
+  def apply(args: js.Array[GetScriptDagNodeArg], id: String, nodeType: String): GetScriptDagNode = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptDagNode]
   }
+  @scala.inline
+  implicit class GetScriptDagNodeOps[Self <: GetScriptDagNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: GetScriptDagNodeArg*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[GetScriptDagNodeArg]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeType(value: String): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
+  }
+  
 }
 

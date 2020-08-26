@@ -42,26 +42,54 @@ trait AffectedEntity extends js.Object {
 
 object AffectedEntity {
   @scala.inline
-  def apply(
-    awsAccountId: accountId = null,
-    entityArn: entityArn = null,
-    entityUrl: entityUrl = null,
-    entityValue: entityValue = null,
-    eventArn: eventArn = null,
-    lastUpdatedTime: timestamp = null,
-    statusCode: entityStatusCode = null,
-    tags: tagSet = null
-  ): AffectedEntity = {
+  def apply(): AffectedEntity = {
     val __obj = js.Dynamic.literal()
-    if (awsAccountId != null) __obj.updateDynamic("awsAccountId")(awsAccountId.asInstanceOf[js.Any])
-    if (entityArn != null) __obj.updateDynamic("entityArn")(entityArn.asInstanceOf[js.Any])
-    if (entityUrl != null) __obj.updateDynamic("entityUrl")(entityUrl.asInstanceOf[js.Any])
-    if (entityValue != null) __obj.updateDynamic("entityValue")(entityValue.asInstanceOf[js.Any])
-    if (eventArn != null) __obj.updateDynamic("eventArn")(eventArn.asInstanceOf[js.Any])
-    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AffectedEntity]
   }
+  @scala.inline
+  implicit class AffectedEntityOps[Self <: AffectedEntity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountId(value: accountId): Self = this.set("awsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAccountId: Self = this.set("awsAccountId", js.undefined)
+    @scala.inline
+    def setEntityArn(value: entityArn): Self = this.set("entityArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityArn: Self = this.set("entityArn", js.undefined)
+    @scala.inline
+    def setEntityUrl(value: entityUrl): Self = this.set("entityUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityUrl: Self = this.set("entityUrl", js.undefined)
+    @scala.inline
+    def setEntityValue(value: entityValue): Self = this.set("entityValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityValue: Self = this.set("entityValue", js.undefined)
+    @scala.inline
+    def setEventArn(value: eventArn): Self = this.set("eventArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventArn: Self = this.set("eventArn", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: timestamp): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setStatusCode(value: entityStatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+    @scala.inline
+    def setTags(value: tagSet): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

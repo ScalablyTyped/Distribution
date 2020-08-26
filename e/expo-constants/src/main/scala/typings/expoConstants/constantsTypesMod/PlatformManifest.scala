@@ -6,42 +6,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlatformManifest
   extends /* key */ StringDictionary[js.Any] {
-  var android: js.UndefOr[AndroidManifest] = js.undefined
-  var detach: js.UndefOr[Scheme] = js.undefined
-  var developer: js.UndefOr[String] = js.undefined
-  var hostUri: js.UndefOr[String] = js.undefined
-  var ios: js.UndefOr[IOSManifest] = js.undefined
-  var logUrl: js.UndefOr[String] = js.undefined
-  var scheme: js.UndefOr[String] = js.undefined
-  var web: js.UndefOr[WebManifest] = js.undefined
+  var android: js.UndefOr[AndroidManifest] = js.native
+  var detach: js.UndefOr[Scheme] = js.native
+  var developer: js.UndefOr[String] = js.native
+  var hostUri: js.UndefOr[String] = js.native
+  var ios: js.UndefOr[IOSManifest] = js.native
+  var logUrl: js.UndefOr[String] = js.native
+  var scheme: js.UndefOr[String] = js.native
+  var web: js.UndefOr[WebManifest] = js.native
 }
 
 object PlatformManifest {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    android: AndroidManifest = null,
-    detach: Scheme = null,
-    developer: String = null,
-    hostUri: String = null,
-    ios: IOSManifest = null,
-    logUrl: String = null,
-    scheme: String = null,
-    web: WebManifest = null
-  ): PlatformManifest = {
+  def apply(): PlatformManifest = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
-    if (detach != null) __obj.updateDynamic("detach")(detach.asInstanceOf[js.Any])
-    if (developer != null) __obj.updateDynamic("developer")(developer.asInstanceOf[js.Any])
-    if (hostUri != null) __obj.updateDynamic("hostUri")(hostUri.asInstanceOf[js.Any])
-    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
-    if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (web != null) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformManifest]
   }
+  @scala.inline
+  implicit class PlatformManifestOps[Self <: PlatformManifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroid(value: AndroidManifest): Self = this.set("android", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroid: Self = this.set("android", js.undefined)
+    @scala.inline
+    def setDetach(value: Scheme): Self = this.set("detach", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetach: Self = this.set("detach", js.undefined)
+    @scala.inline
+    def setDeveloper(value: String): Self = this.set("developer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeveloper: Self = this.set("developer", js.undefined)
+    @scala.inline
+    def setHostUri(value: String): Self = this.set("hostUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostUri: Self = this.set("hostUri", js.undefined)
+    @scala.inline
+    def setIos(value: IOSManifest): Self = this.set("ios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIos: Self = this.set("ios", js.undefined)
+    @scala.inline
+    def setLogUrl(value: String): Self = this.set("logUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUrl: Self = this.set("logUrl", js.undefined)
+    @scala.inline
+    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheme: Self = this.set("scheme", js.undefined)
+    @scala.inline
+    def setWeb(value: WebManifest): Self = this.set("web", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeb: Self = this.set("web", js.undefined)
+  }
+  
 }
 

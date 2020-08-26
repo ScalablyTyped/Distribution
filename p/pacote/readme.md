@@ -12,7 +12,7 @@ JavaScript package downloader
 | Keywords           | packages, npm, git |
 | # releases         | 56 |
 | # dependents       | 118 |
-| # downloads        | 63853944 |
+| # downloads        | 64017019 |
 | # stars            | 6 |
 
 ## Links

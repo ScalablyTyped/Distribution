@@ -14,7 +14,38 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IResourceService extends js.Object {
   def apply(url: String): IResourceClass[IResource[_]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: js.UndefOr[scala.Nothing],
+    /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
+    where deleteDescriptor : IActionDescriptor */
+  actions: js.UndefOr[scala.Nothing],
+    options: IResourceOptions
+  ): IResourceClass[IResource[_]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: js.UndefOr[scala.Nothing],
+    /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
+    where deleteDescriptor : IActionDescriptor */
+  actions: js.Any
+  ): IResourceClass[IResource[_]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: js.UndefOr[scala.Nothing],
+    /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
+    where deleteDescriptor : IActionDescriptor */
+  actions: js.Any,
+    options: IResourceOptions
+  ): IResourceClass[IResource[_]] = js.native
   def apply(url: String, paramDefaults: js.Any): IResourceClass[IResource[_]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: js.Any,
+    /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
+    where deleteDescriptor : IActionDescriptor */
+  actions: js.UndefOr[scala.Nothing],
+    options: IResourceOptions
+  ): IResourceClass[IResource[_]] = js.native
   def apply(
     url: String,
     paramDefaults: js.Any,

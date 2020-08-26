@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Box3 ()
   extends typings.three.box3Mod.Box3 {
   def this(min: typings.three.vector3Mod.Vector3) = this()
+  def this(min: js.UndefOr[scala.Nothing], max: typings.three.vector3Mod.Vector3) = this()
   def this(min: typings.three.vector3Mod.Vector3, max: typings.three.vector3Mod.Vector3) = this()
 }
 

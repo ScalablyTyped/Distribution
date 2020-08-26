@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "findup-sync"
-version := "2.0-dt-20200515Z-c274a2"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20200515Z-7f1a9d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "braces" % "3.0-dt-20200515Z-31b778",
-  "org.scalablytyped" %%% "micromatch" % "4.0-dt-20200515Z-a16cc3",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "braces" % "3.0-dt-20200515Z-42ecb0",
+  "org.scalablytyped" %%% "micromatch" % "4.0-dt-20200515Z-3755fa",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

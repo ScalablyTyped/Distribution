@@ -10,9 +10,9 @@ Highly configurable, well-tested, JavaScript-based HTML minifier.
 | ------------------ | :-------------: |
 | Full name          | html-minifier-terser |
 | Keywords           | cli, compress, compressor, css, html, htmlmin, javascript, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, terser, uglifier, uglify |
-| # releases         | 7 |
-| # dependents       | 7 |
-| # downloads        | 11479870 |
+| # releases         | 5 |
+| # dependents       | 2 |
+| # downloads        | 6727444 |
 | # stars            | 0 |
 
 ## Links

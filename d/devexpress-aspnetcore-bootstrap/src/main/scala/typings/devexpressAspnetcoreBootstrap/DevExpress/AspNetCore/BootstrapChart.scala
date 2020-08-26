@@ -29,6 +29,16 @@ trait BootstrapChart extends Control {
   def exportTo(format: String, fileName: String): Unit = js.native
   def getDataSource(): js.Any = js.native
   def getInstance(): js.Any = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        BootstrapChartElementActionEventArgs | BootstrapChartElementClickEventArgs | BootstrapChartErrorEventArgs | BootstrapChartEventArgsBase | BootstrapChartExportEventArgs | BootstrapChartOptionChangedEventArgs | BootstrapChartZoomEndEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_argumentAxisClick(eventName: argumentAxisClick): this.type = js.native
   @JSName("off")

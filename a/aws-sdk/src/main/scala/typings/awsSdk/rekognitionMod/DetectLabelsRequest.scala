@@ -22,15 +22,32 @@ trait DetectLabelsRequest extends js.Object {
 
 object DetectLabelsRequest {
   @scala.inline
-  def apply(
-    Image: Image,
-    MaxLabels: js.UndefOr[UInteger] = js.undefined,
-    MinConfidence: js.UndefOr[Percent] = js.undefined
-  ): DetectLabelsRequest = {
+  def apply(Image: Image): DetectLabelsRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxLabels)) __obj.updateDynamic("MaxLabels")(MaxLabels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinConfidence)) __obj.updateDynamic("MinConfidence")(MinConfidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectLabelsRequest]
   }
+  @scala.inline
+  implicit class DetectLabelsRequestOps[Self <: DetectLabelsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImage(value: Image): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxLabels(value: UInteger): Self = this.set("MaxLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLabels: Self = this.set("MaxLabels", js.undefined)
+    @scala.inline
+    def setMinConfidence(value: Percent): Self = this.set("MinConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinConfidence: Self = this.set("MinConfidence", js.undefined)
+  }
+  
 }
 

@@ -89,14 +89,65 @@ trait ChromaStatic extends js.Object {
     * You can convert it to a scale instance by calling <code>chroma.bezier(...).scale()</code>
     */
   def bezier(colors: js.Array[String]): Call = js.native
+  @JSName("blend")
+  def blend_burn(color1: String, color2: String, blendMode: burn): Color = js.native
+  @JSName("blend")
+  def blend_burn(color1: String, color2: Color, blendMode: burn): Color = js.native
+  @JSName("blend")
+  def blend_burn(color1: Color, color2: String, blendMode: burn): Color = js.native
+  @JSName("blend")
+  def blend_burn(color1: Color, color2: Color, blendMode: burn): Color = js.native
+  @JSName("blend")
+  def blend_darken(color1: String, color2: String, blendMode: darken): Color = js.native
+  @JSName("blend")
+  def blend_darken(color1: String, color2: Color, blendMode: darken): Color = js.native
+  @JSName("blend")
+  def blend_darken(color1: Color, color2: String, blendMode: darken): Color = js.native
+  @JSName("blend")
+  def blend_darken(color1: Color, color2: Color, blendMode: darken): Color = js.native
+  @JSName("blend")
+  def blend_dodge(color1: String, color2: String, blendMode: dodge): Color = js.native
+  @JSName("blend")
+  def blend_dodge(color1: String, color2: Color, blendMode: dodge): Color = js.native
+  @JSName("blend")
+  def blend_dodge(color1: Color, color2: String, blendMode: dodge): Color = js.native
+  @JSName("blend")
+  def blend_dodge(color1: Color, color2: Color, blendMode: dodge): Color = js.native
+  @JSName("blend")
+  def blend_lighten(color1: String, color2: String, blendMode: lighten): Color = js.native
+  @JSName("blend")
+  def blend_lighten(color1: String, color2: Color, blendMode: lighten): Color = js.native
+  @JSName("blend")
+  def blend_lighten(color1: Color, color2: String, blendMode: lighten): Color = js.native
+  @JSName("blend")
+  def blend_lighten(color1: Color, color2: Color, blendMode: lighten): Color = js.native
   /**
     * Blends two colors using RGB channel-wise blend functions.
     */
-  def blend(
-    color1: String | Color,
-    color2: String | Color,
-    blendMode: multiply | darken | lighten | screen | overlay | burn | dodge
-  ): Color = js.native
+  @JSName("blend")
+  def blend_multiply(color1: String, color2: String, blendMode: multiply): Color = js.native
+  @JSName("blend")
+  def blend_multiply(color1: String, color2: Color, blendMode: multiply): Color = js.native
+  @JSName("blend")
+  def blend_multiply(color1: Color, color2: String, blendMode: multiply): Color = js.native
+  @JSName("blend")
+  def blend_multiply(color1: Color, color2: Color, blendMode: multiply): Color = js.native
+  @JSName("blend")
+  def blend_overlay(color1: String, color2: String, blendMode: overlay): Color = js.native
+  @JSName("blend")
+  def blend_overlay(color1: String, color2: Color, blendMode: overlay): Color = js.native
+  @JSName("blend")
+  def blend_overlay(color1: Color, color2: String, blendMode: overlay): Color = js.native
+  @JSName("blend")
+  def blend_overlay(color1: Color, color2: Color, blendMode: overlay): Color = js.native
+  @JSName("blend")
+  def blend_screen(color1: String, color2: String, blendMode: screen): Color = js.native
+  @JSName("blend")
+  def blend_screen(color1: String, color2: Color, blendMode: screen): Color = js.native
+  @JSName("blend")
+  def blend_screen(color1: Color, color2: String, blendMode: screen): Color = js.native
+  @JSName("blend")
+  def blend_screen(color1: Color, color2: Color, blendMode: screen): Color = js.native
   def cmyk(c: Double, m: Double, y: Double, k: Double): Color = js.native
   /**
     * Computes the WCAG contrast ratio between two colors.
@@ -117,15 +168,19 @@ trait ChromaStatic extends js.Object {
     * The parameters L (default 1) and C (default 1) are weighting factors for lightness and chromacity.
     */
   def deltaE(color1: String, color2: String): Double = js.native
+  def deltaE(color1: String, color2: String, L: js.UndefOr[scala.Nothing], C: Double): Double = js.native
   def deltaE(color1: String, color2: String, L: Double): Double = js.native
   def deltaE(color1: String, color2: String, L: Double, C: Double): Double = js.native
   def deltaE(color1: String, color2: Color): Double = js.native
+  def deltaE(color1: String, color2: Color, L: js.UndefOr[scala.Nothing], C: Double): Double = js.native
   def deltaE(color1: String, color2: Color, L: Double): Double = js.native
   def deltaE(color1: String, color2: Color, L: Double, C: Double): Double = js.native
   def deltaE(color1: Color, color2: String): Double = js.native
+  def deltaE(color1: Color, color2: String, L: js.UndefOr[scala.Nothing], C: Double): Double = js.native
   def deltaE(color1: Color, color2: String, L: Double): Double = js.native
   def deltaE(color1: Color, color2: String, L: Double, C: Double): Double = js.native
   def deltaE(color1: Color, color2: Color): Double = js.native
+  def deltaE(color1: Color, color2: Color, L: js.UndefOr[scala.Nothing], C: Double): Double = js.native
   def deltaE(color1: Color, color2: Color, L: Double): Double = js.native
   def deltaE(color1: Color, color2: Color, L: Double, C: Double): Double = js.native
   /**
@@ -176,6 +231,12 @@ trait ChromaStatic extends js.Object {
     * Alias for {@see mix}.
     */
   def interpolate(color1: String, color2: String): Color = js.native
+  def interpolate(
+    color1: String,
+    color2: String,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
   def interpolate(color1: String, color2: String, f: Double): Color = js.native
   def interpolate(
     color1: String,
@@ -184,6 +245,12 @@ trait ChromaStatic extends js.Object {
     colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
   ): Color = js.native
   def interpolate(color1: String, color2: Color): Color = js.native
+  def interpolate(
+    color1: String,
+    color2: Color,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
   def interpolate(color1: String, color2: Color, f: Double): Color = js.native
   def interpolate(
     color1: String,
@@ -192,6 +259,12 @@ trait ChromaStatic extends js.Object {
     colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
   ): Color = js.native
   def interpolate(color1: Color, color2: String): Color = js.native
+  def interpolate(
+    color1: Color,
+    color2: String,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
   def interpolate(color1: Color, color2: String, f: Double): Color = js.native
   def interpolate(
     color1: Color,
@@ -200,6 +273,12 @@ trait ChromaStatic extends js.Object {
     colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
   ): Color = js.native
   def interpolate(color1: Color, color2: Color): Color = js.native
+  def interpolate(
+    color1: Color,
+    color2: Color,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
   def interpolate(color1: Color, color2: Color, f: Double): Color = js.native
   def interpolate(
     color1: Color,
@@ -236,6 +315,12 @@ trait ChromaStatic extends js.Object {
     * @example chroma.mix('red', 'blue', 0.5, 'hsl') // => #ff00ff
     */
   def mix(color1: String, color2: String): Color = js.native
+  def mix(
+    color1: String,
+    color2: String,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
   def mix(color1: String, color2: String, f: Double): Color = js.native
   def mix(
     color1: String,
@@ -244,6 +329,12 @@ trait ChromaStatic extends js.Object {
     colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
   ): Color = js.native
   def mix(color1: String, color2: Color): Color = js.native
+  def mix(
+    color1: String,
+    color2: Color,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
   def mix(color1: String, color2: Color, f: Double): Color = js.native
   def mix(
     color1: String,
@@ -252,6 +343,12 @@ trait ChromaStatic extends js.Object {
     colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
   ): Color = js.native
   def mix(color1: Color, color2: String): Color = js.native
+  def mix(
+    color1: Color,
+    color2: String,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
   def mix(color1: Color, color2: String, f: Double): Color = js.native
   def mix(
     color1: Color,
@@ -260,6 +357,12 @@ trait ChromaStatic extends js.Object {
     colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
   ): Color = js.native
   def mix(color1: Color, color2: Color): Color = js.native
+  def mix(
+    color1: Color,
+    color2: Color,
+    f: js.UndefOr[scala.Nothing],
+    colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+  ): Color = js.native
   def mix(color1: Color, color2: Color, f: Double): Color = js.native
   def mix(
     color1: Color,

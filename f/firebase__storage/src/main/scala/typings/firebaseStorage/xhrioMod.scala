@@ -29,6 +29,7 @@ object xhrioMod extends js.Object {
     def getStatus(): Double = js.native
     def removeUploadProgressListener(listener: js.Function1[/* p1 */ ProgressEvent[EventTarget], Unit]): Unit = js.native
     def send(url: String, method: String): js.Promise[XhrIo] = js.native
+    def send(url: String, method: String, body: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[XhrIo] = js.native
     def send(url: String, method: String, body: String): js.Promise[XhrIo] = js.native
     def send(url: String, method: String, body: String, headers: Headers): js.Promise[XhrIo] = js.native
     def send(url: String, method: String, body: Null, headers: Headers): js.Promise[XhrIo] = js.native

@@ -22,15 +22,34 @@ trait ListPipelinesOutput extends js.Object {
 
 object ListPipelinesOutput {
   @scala.inline
-  def apply(
-    pipelineIdList: pipelineList,
-    hasMoreResults: js.UndefOr[Boolean] = js.undefined,
-    marker: String = null
-  ): ListPipelinesOutput = {
+  def apply(pipelineIdList: pipelineList): ListPipelinesOutput = {
     val __obj = js.Dynamic.literal(pipelineIdList = pipelineIdList.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMoreResults)) __obj.updateDynamic("hasMoreResults")(hasMoreResults.get.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPipelinesOutput]
   }
+  @scala.inline
+  implicit class ListPipelinesOutputOps[Self <: ListPipelinesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPipelineIdListVarargs(value: PipelineIdName*): Self = this.set("pipelineIdList", js.Array(value :_*))
+    @scala.inline
+    def setPipelineIdList(value: pipelineList): Self = this.set("pipelineIdList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasMoreResults(value: Boolean): Self = this.set("hasMoreResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasMoreResults: Self = this.set("hasMoreResults", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+  }
+  
 }
 

@@ -19,6 +19,12 @@ trait EventTarget extends js.Object {
     * @param opt_scope {Object=} - scope for the handler function
     */
   def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject): Unit = js.native
+  def addEventListener(
+    `type`: String,
+    handler: EventListenerOrEventListenerObject,
+    opt_capture: js.UndefOr[scala.Nothing],
+    opt_scope: js.Any
+  ): Unit = js.native
   def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Boolean): Unit = js.native
   def addEventListener(
     `type`: String,
@@ -51,6 +57,12 @@ trait EventTarget extends js.Object {
     * @param opt_scope {Object=} - scope for the handler function
     */
   def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject): Unit = js.native
+  def removeEventListener(
+    `type`: String,
+    handler: EventListenerOrEventListenerObject,
+    opt_capture: js.UndefOr[scala.Nothing],
+    opt_scope: js.Any
+  ): Unit = js.native
   def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Boolean): Unit = js.native
   def removeEventListener(
     `type`: String,

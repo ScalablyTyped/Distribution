@@ -7,142 +7,197 @@ import scala.scalajs.js.annotation._
 /**
   * TouchSpinOptions. All options are optional
   */
+@js.native
 trait TouchSpinOptions extends js.Object {
   /**
     * Boost at every nth step.
     */
-  var boostat: js.UndefOr[Double] = js.undefined
+  var boostat: js.UndefOr[Double] = js.native
   /**
     * If enabled, the the spinner is continually becoming faster as holding the button.
     */
-  var booster: js.UndefOr[Boolean] = js.undefined
+  var booster: js.UndefOr[Boolean] = js.native
   /**
     * Class(es) of down button.
     */
-  var buttondown_class: js.UndefOr[String] = js.undefined
+  var buttondown_class: js.UndefOr[String] = js.native
   /**
     * Class(es) of up button.
     */
-  var buttonup_class: js.UndefOr[String] = js.undefined
+  var buttonup_class: js.UndefOr[String] = js.native
   /**
     * Number of decimal points.
     */
-  var decimals: js.UndefOr[Double] = js.undefined
+  var decimals: js.UndefOr[Double] = js.native
   /**
     * How to force the value to be divisible by step value: 'none' | 'round' | 'floor' | 'ceil'
     */
-  var forcestepdivisibility: js.UndefOr[String] = js.undefined
+  var forcestepdivisibility: js.UndefOr[String] = js.native
   /**
     * Applied when no explicit value is set on the input with the value attribute.
     * Empty string means that the value remains empty on initialization.
     */
-  var initval: js.UndefOr[Double | String] = js.undefined
+  var initval: js.UndefOr[Double | String] = js.native
   /**
     * Maximum value.
     */
-  var max: js.UndefOr[Double] = js.undefined
+  var max: js.UndefOr[Double] = js.native
   /**
     * Maximum step when boosted.
     */
-  var maxboostedstep: js.UndefOr[Double | Boolean] = js.undefined
+  var maxboostedstep: js.UndefOr[Double | Boolean] = js.native
   /**
     * Minimum value.
     */
-  var min: js.UndefOr[Double] = js.undefined
+  var min: js.UndefOr[Double] = js.native
   /**
     * Enables the mouse wheel to change the value of the input.
     */
-  var mousewheel: js.UndefOr[Boolean] = js.undefined
+  var mousewheel: js.UndefOr[Boolean] = js.native
   /**
     * Text after the input.
     */
-  var postfix: js.UndefOr[String] = js.undefined
+  var postfix: js.UndefOr[String] = js.native
   /**
     * Extra class(es) for postfix.
     */
-  var postfix_extraclass: js.UndefOr[String] = js.undefined
+  var postfix_extraclass: js.UndefOr[String] = js.native
   /**
     * Text before the input.
     */
-  var prefix: js.UndefOr[String] = js.undefined
+  var prefix: js.UndefOr[String] = js.native
   /**
     * Extra class(es) for prefix.
     */
-  var prefix_extraclass: js.UndefOr[String] = js.undefined
+  var prefix_extraclass: js.UndefOr[String] = js.native
   /**
     * Incremental/decremental step on up/down change.
     */
-  var step: js.UndefOr[Double] = js.undefined
+  var step: js.UndefOr[Double] = js.native
   /**
     * Refresh rate of the spinner in milliseconds.
     */
-  var stepinterval: js.UndefOr[Double] = js.undefined
+  var stepinterval: js.UndefOr[Double] = js.native
   /**
     * Time in milliseconds before the spinner starts to spin.
     */
-  var stepintervaldelay: js.UndefOr[Double] = js.undefined
+  var stepintervaldelay: js.UndefOr[Double] = js.native
   /**
     * Enables the traditional up/down buttons.
     */
-  var verticalbuttons: js.UndefOr[Boolean] = js.undefined
+  var verticalbuttons: js.UndefOr[Boolean] = js.native
   /**
     * Class of the down button with vertical buttons mode enabled.
     */
-  var verticaldownclass: js.UndefOr[String] = js.undefined
+  var verticaldownclass: js.UndefOr[String] = js.native
   /**
     * Class of the up button with vertical buttons mode enabled.
     */
-  var verticalupclass: js.UndefOr[String] = js.undefined
+  var verticalupclass: js.UndefOr[String] = js.native
 }
 
 object TouchSpinOptions {
   @scala.inline
-  def apply(
-    boostat: js.UndefOr[Double] = js.undefined,
-    booster: js.UndefOr[Boolean] = js.undefined,
-    buttondown_class: String = null,
-    buttonup_class: String = null,
-    decimals: js.UndefOr[Double] = js.undefined,
-    forcestepdivisibility: String = null,
-    initval: Double | String = null,
-    max: js.UndefOr[Double] = js.undefined,
-    maxboostedstep: Double | Boolean = null,
-    min: js.UndefOr[Double] = js.undefined,
-    mousewheel: js.UndefOr[Boolean] = js.undefined,
-    postfix: String = null,
-    postfix_extraclass: String = null,
-    prefix: String = null,
-    prefix_extraclass: String = null,
-    step: js.UndefOr[Double] = js.undefined,
-    stepinterval: js.UndefOr[Double] = js.undefined,
-    stepintervaldelay: js.UndefOr[Double] = js.undefined,
-    verticalbuttons: js.UndefOr[Boolean] = js.undefined,
-    verticaldownclass: String = null,
-    verticalupclass: String = null
-  ): TouchSpinOptions = {
+  def apply(): TouchSpinOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boostat)) __obj.updateDynamic("boostat")(boostat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(booster)) __obj.updateDynamic("booster")(booster.get.asInstanceOf[js.Any])
-    if (buttondown_class != null) __obj.updateDynamic("buttondown_class")(buttondown_class.asInstanceOf[js.Any])
-    if (buttonup_class != null) __obj.updateDynamic("buttonup_class")(buttonup_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
-    if (forcestepdivisibility != null) __obj.updateDynamic("forcestepdivisibility")(forcestepdivisibility.asInstanceOf[js.Any])
-    if (initval != null) __obj.updateDynamic("initval")(initval.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (maxboostedstep != null) __obj.updateDynamic("maxboostedstep")(maxboostedstep.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel.get.asInstanceOf[js.Any])
-    if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
-    if (postfix_extraclass != null) __obj.updateDynamic("postfix_extraclass")(postfix_extraclass.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (prefix_extraclass != null) __obj.updateDynamic("prefix_extraclass")(prefix_extraclass.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepinterval)) __obj.updateDynamic("stepinterval")(stepinterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepintervaldelay)) __obj.updateDynamic("stepintervaldelay")(stepintervaldelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalbuttons)) __obj.updateDynamic("verticalbuttons")(verticalbuttons.get.asInstanceOf[js.Any])
-    if (verticaldownclass != null) __obj.updateDynamic("verticaldownclass")(verticaldownclass.asInstanceOf[js.Any])
-    if (verticalupclass != null) __obj.updateDynamic("verticalupclass")(verticalupclass.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchSpinOptions]
   }
+  @scala.inline
+  implicit class TouchSpinOptionsOps[Self <: TouchSpinOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoostat(value: Double): Self = this.set("boostat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoostat: Self = this.set("boostat", js.undefined)
+    @scala.inline
+    def setBooster(value: Boolean): Self = this.set("booster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooster: Self = this.set("booster", js.undefined)
+    @scala.inline
+    def setButtondown_class(value: String): Self = this.set("buttondown_class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtondown_class: Self = this.set("buttondown_class", js.undefined)
+    @scala.inline
+    def setButtonup_class(value: String): Self = this.set("buttonup_class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonup_class: Self = this.set("buttonup_class", js.undefined)
+    @scala.inline
+    def setDecimals(value: Double): Self = this.set("decimals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecimals: Self = this.set("decimals", js.undefined)
+    @scala.inline
+    def setForcestepdivisibility(value: String): Self = this.set("forcestepdivisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForcestepdivisibility: Self = this.set("forcestepdivisibility", js.undefined)
+    @scala.inline
+    def setInitval(value: Double | String): Self = this.set("initval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitval: Self = this.set("initval", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMaxboostedstep(value: Double | Boolean): Self = this.set("maxboostedstep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxboostedstep: Self = this.set("maxboostedstep", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMousewheel(value: Boolean): Self = this.set("mousewheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMousewheel: Self = this.set("mousewheel", js.undefined)
+    @scala.inline
+    def setPostfix(value: String): Self = this.set("postfix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostfix: Self = this.set("postfix", js.undefined)
+    @scala.inline
+    def setPostfix_extraclass(value: String): Self = this.set("postfix_extraclass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostfix_extraclass: Self = this.set("postfix_extraclass", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setPrefix_extraclass(value: String): Self = this.set("prefix_extraclass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix_extraclass: Self = this.set("prefix_extraclass", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setStepinterval(value: Double): Self = this.set("stepinterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepinterval: Self = this.set("stepinterval", js.undefined)
+    @scala.inline
+    def setStepintervaldelay(value: Double): Self = this.set("stepintervaldelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepintervaldelay: Self = this.set("stepintervaldelay", js.undefined)
+    @scala.inline
+    def setVerticalbuttons(value: Boolean): Self = this.set("verticalbuttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalbuttons: Self = this.set("verticalbuttons", js.undefined)
+    @scala.inline
+    def setVerticaldownclass(value: String): Self = this.set("verticaldownclass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticaldownclass: Self = this.set("verticaldownclass", js.undefined)
+    @scala.inline
+    def setVerticalupclass(value: String): Self = this.set("verticalupclass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalupclass: Self = this.set("verticalupclass", js.undefined)
+  }
+  
 }
 

@@ -18,10 +18,26 @@ trait SchemaMobileApplicationTargeting extends js.Object {
 
 object SchemaMobileApplicationTargeting {
   @scala.inline
-  def apply(firstPartyTargeting: SchemaFirstPartyMobileApplicationTargeting = null): SchemaMobileApplicationTargeting = {
+  def apply(): SchemaMobileApplicationTargeting = {
     val __obj = js.Dynamic.literal()
-    if (firstPartyTargeting != null) __obj.updateDynamic("firstPartyTargeting")(firstPartyTargeting.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMobileApplicationTargeting]
   }
+  @scala.inline
+  implicit class SchemaMobileApplicationTargetingOps[Self <: SchemaMobileApplicationTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFirstPartyTargeting(value: SchemaFirstPartyMobileApplicationTargeting): Self = this.set("firstPartyTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstPartyTargeting: Self = this.set("firstPartyTargeting", js.undefined)
+  }
+  
 }
 

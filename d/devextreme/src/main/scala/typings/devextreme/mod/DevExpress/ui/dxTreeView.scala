@@ -23,18 +23,26 @@ trait dxTreeView extends CollectionWidget {
   def expandItem(itemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
   /** @name dxTreeView.getNodes() */
   def getNodes(): js.Array[dxTreeViewNode] = js.native
+  /** @name dxTreeView.getSelectedNodeKeys() */
+  def getSelectedNodeKeys(): js.Array[_] = js.native
+  /** @name dxTreeView.getSelectedNodes() */
+  def getSelectedNodes(): js.Array[dxTreeViewNode] = js.native
+  /** @name dxTreeView.scrollToItem(itemData) */
+  def scrollToItem(itemData: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+  /** @name dxTreeView.scrollToItem(itemElement) */
+  def scrollToItem(itemElement: Element): Promise[Unit] with JQueryPromise[Unit] = js.native
   /** @name dxTreeView.selectAll() */
   def selectAll(): Unit = js.native
   /** @name dxTreeView.selectItem(itemData) */
-  def selectItem(itemData: js.Any): Unit = js.native
+  def selectItem(itemData: js.Any): Boolean = js.native
   /** @name dxTreeView.selectItem(itemElement) */
-  def selectItem(itemElement: Element): Unit = js.native
+  def selectItem(itemElement: Element): Boolean = js.native
   /** @name dxTreeView.unselectAll() */
   def unselectAll(): Unit = js.native
   /** @name dxTreeView.unselectItem(itemData) */
-  def unselectItem(itemData: js.Any): Unit = js.native
+  def unselectItem(itemData: js.Any): Boolean = js.native
   /** @name dxTreeView.unselectItem(itemElement) */
-  def unselectItem(itemElement: Element): Unit = js.native
+  def unselectItem(itemElement: Element): Boolean = js.native
   /** @name dxTreeView.updateDimensions() */
   def updateDimensions(): Promise[Unit] with JQueryPromise[Unit] = js.native
 }

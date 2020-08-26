@@ -19,57 +19,94 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options
   extends /* key */ StringDictionary[js.Any] {
-  var Date: js.UndefOr[ISO8601 | epoch] = js.undefined
-  var POSIXt: js.UndefOr[string | ISO8601 | epoch | mongo] = js.undefined
-  var auto_unbox: js.UndefOr[Boolean] = js.undefined
-  var complex: js.UndefOr[string | list] = js.undefined
-  var dataframe: js.UndefOr[rows | colums | values] = js.undefined
-  var digits: js.UndefOr[Double] = js.undefined
-  var factor: js.UndefOr[string | integer] = js.undefined
-  var force: js.UndefOr[Boolean] = js.undefined
-  var matrix: js.UndefOr[rowmajor | columnmajor] = js.undefined
-  var na: js.UndefOr[`null` | string] = js.undefined
-  var `null`: js.UndefOr[list | typings.rScript.rScriptStrings.`null`] = js.undefined
-  var pretty: js.UndefOr[Boolean] = js.undefined
-  var raw: js.UndefOr[base64 | hex | mongo] = js.undefined
+  var Date: js.UndefOr[ISO8601 | epoch] = js.native
+  var POSIXt: js.UndefOr[string | ISO8601 | epoch | mongo] = js.native
+  var auto_unbox: js.UndefOr[Boolean] = js.native
+  var complex: js.UndefOr[string | list] = js.native
+  var dataframe: js.UndefOr[rows | colums | values] = js.native
+  var digits: js.UndefOr[Double] = js.native
+  var factor: js.UndefOr[string | integer] = js.native
+  var force: js.UndefOr[Boolean] = js.native
+  var matrix: js.UndefOr[rowmajor | columnmajor] = js.native
+  var na: js.UndefOr[`null` | string] = js.native
+  var `null`: js.UndefOr[list | typings.rScript.rScriptStrings.`null`] = js.native
+  var pretty: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[base64 | hex | mongo] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    Date: ISO8601 | epoch = null,
-    POSIXt: string | ISO8601 | epoch | mongo = null,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    auto_unbox: js.UndefOr[Boolean] = js.undefined,
-    complex: string | list = null,
-    dataframe: rows | colums | values = null,
-    digits: js.UndefOr[Double] = js.undefined,
-    factor: string | integer = null,
-    force: js.UndefOr[Boolean] = js.undefined,
-    matrix: rowmajor | columnmajor = null,
-    na: `null` | string = null,
-    `null`: list | `null` = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    raw: base64 | hex | mongo = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
-    if (POSIXt != null) __obj.updateDynamic("POSIXt")(POSIXt.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(auto_unbox)) __obj.updateDynamic("auto_unbox")(auto_unbox.get.asInstanceOf[js.Any])
-    if (complex != null) __obj.updateDynamic("complex")(complex.asInstanceOf[js.Any])
-    if (dataframe != null) __obj.updateDynamic("dataframe")(dataframe.asInstanceOf[js.Any])
-    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
-    if (na != null) __obj.updateDynamic("na")(na.asInstanceOf[js.Any])
-    if (`null` != null) __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: ISO8601 | epoch): Self = this.set("Date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("Date", js.undefined)
+    @scala.inline
+    def setPOSIXt(value: string | ISO8601 | epoch | mongo): Self = this.set("POSIXt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePOSIXt: Self = this.set("POSIXt", js.undefined)
+    @scala.inline
+    def setAuto_unbox(value: Boolean): Self = this.set("auto_unbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuto_unbox: Self = this.set("auto_unbox", js.undefined)
+    @scala.inline
+    def setComplex(value: string | list): Self = this.set("complex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplex: Self = this.set("complex", js.undefined)
+    @scala.inline
+    def setDataframe(value: rows | colums | values): Self = this.set("dataframe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataframe: Self = this.set("dataframe", js.undefined)
+    @scala.inline
+    def setDigits(value: Double): Self = this.set("digits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigits: Self = this.set("digits", js.undefined)
+    @scala.inline
+    def setFactor(value: string | integer): Self = this.set("factor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFactor: Self = this.set("factor", js.undefined)
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setMatrix(value: rowmajor | columnmajor): Self = this.set("matrix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatrix: Self = this.set("matrix", js.undefined)
+    @scala.inline
+    def setNa(value: `null` | string): Self = this.set("na", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNa: Self = this.set("na", js.undefined)
+    @scala.inline
+    def setNull(value: list | `null`): Self = this.set("null", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNull: Self = this.set("null", js.undefined)
+    @scala.inline
+    def setPretty(value: Boolean): Self = this.set("pretty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePretty: Self = this.set("pretty", js.undefined)
+    @scala.inline
+    def setRaw(value: base64 | hex | mongo): Self = this.set("raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaw: Self = this.set("raw", js.undefined)
+  }
+  
 }
 

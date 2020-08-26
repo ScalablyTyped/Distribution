@@ -6,29 +6,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSTupleType_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait TSTupleType_
   extends TSType
      with BaseNode {
-  var elementTypes: js.Array[TSType]
+  var elementTypes: js.Array[TSType | TSNamedTupleMember_] = js.native
   @JSName("type")
-  var type_TSTupleType_ : TSTupleType
+  var type_TSTupleType_ : TSTupleType = js.native
 }
 
 object TSTupleType_ {
   @scala.inline
-  def apply(
-    elementTypes: js.Array[TSType],
-    `type`: TSTupleType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSTupleType_ = {
-    val __obj = js.Dynamic.literal(elementTypes = elementTypes.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def apply(elementTypes: js.Array[TSType | TSNamedTupleMember_], `type`: TSTupleType): TSTupleType_ = {
+    val __obj = js.Dynamic.literal(elementTypes = elementTypes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSTupleType_]
   }
+  @scala.inline
+  implicit class TSTupleType_Ops[Self <: TSTupleType_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElementTypesVarargs(value: (TSType | TSNamedTupleMember_)*): Self = this.set("elementTypes", js.Array(value :_*))
+    @scala.inline
+    def setElementTypes(value: js.Array[TSType | TSNamedTupleMember_]): Self = this.set("elementTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: TSTupleType): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

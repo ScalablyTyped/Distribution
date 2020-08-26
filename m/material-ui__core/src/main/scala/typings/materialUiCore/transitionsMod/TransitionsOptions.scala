@@ -23,18 +23,40 @@ trait TransitionsOptions extends js.Object {
 
 object TransitionsOptions {
   @scala.inline
-  def apply(
-    create: (/* props */ String | js.Array[String], /* options */ js.UndefOr[Partialdurationnumberstri]) => String = null,
-    duration: PartialDuration = null,
-    easing: PartialEasing = null,
-    getAutoHeightDuration: /* height */ Double => Double = null
-  ): TransitionsOptions = {
+  def apply(): TransitionsOptions = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (getAutoHeightDuration != null) __obj.updateDynamic("getAutoHeightDuration")(js.Any.fromFunction1(getAutoHeightDuration))
     __obj.asInstanceOf[TransitionsOptions]
   }
+  @scala.inline
+  implicit class TransitionsOptionsOps[Self <: TransitionsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreate(
+      value: (/* props */ String | js.Array[String], /* options */ js.UndefOr[Partialdurationnumberstri]) => String
+    ): Self = this.set("create", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setDuration(value: PartialDuration): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEasing(value: PartialEasing): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setGetAutoHeightDuration(value: /* height */ Double => Double): Self = this.set("getAutoHeightDuration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetAutoHeightDuration: Self = this.set("getAutoHeightDuration", js.undefined)
+  }
+  
 }
 

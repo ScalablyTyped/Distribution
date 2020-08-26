@@ -30,6 +30,7 @@ class ResourceActionresults protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def get(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2ActionResult]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def get(params: ParamsResourceActionresultsGet): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def get(
     params: ParamsResourceActionresultsGet,
@@ -71,6 +72,7 @@ class ResourceActionresults protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def update(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2ActionResult]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def update(params: ParamsResourceActionresultsUpdate): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
   def update(
     params: ParamsResourceActionresultsUpdate,

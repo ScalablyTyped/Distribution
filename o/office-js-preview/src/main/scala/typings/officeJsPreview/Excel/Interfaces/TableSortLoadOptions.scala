@@ -10,49 +10,70 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.2]
   */
+@js.native
 trait TableSortLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies the current conditions used to last sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
-  var fields: js.UndefOr[Boolean] = js.undefined
+  var fields: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies if the casing impacts the last sort of the table.
     *
     * [Api set: ExcelApi 1.2]
     */
-  var matchCase: js.UndefOr[Boolean] = js.undefined
+  var matchCase: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents Chinese character ordering method last used to sort the table.
     *
     * [Api set: ExcelApi 1.2]
     */
-  var method: js.UndefOr[Boolean] = js.undefined
+  var method: js.UndefOr[Boolean] = js.native
 }
 
 object TableSortLoadOptions {
   @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    fields: js.UndefOr[Boolean] = js.undefined,
-    matchCase: js.UndefOr[Boolean] = js.undefined,
-    method: js.UndefOr[Boolean] = js.undefined
-  ): TableSortLoadOptions = {
+  def apply(): TableSortLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableSortLoadOptions]
   }
+  @scala.inline
+  implicit class TableSortLoadOptionsOps[Self <: TableSortLoadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$all: Self = this.set("$all", js.undefined)
+    @scala.inline
+    def setFields(value: Boolean): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setMatchCase(value: Boolean): Self = this.set("matchCase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchCase: Self = this.set("matchCase", js.undefined)
+    @scala.inline
+    def setMethod(value: Boolean): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+  }
+  
 }
 

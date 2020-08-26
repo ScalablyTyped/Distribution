@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.std.Event because var conflicts: bubbles, cancelable, currentTarget, defaultPrevented, eventPhase, isTrusted, target, timeStamp, `type`. Inlined AT_TARGET, BUBBLING_PHASE, CAPTURING_PHASE, NONE, cancelBubble, composed, returnValue, srcElement, composedPath, initEvent, initEvent, initEvent, stopImmediatePropagation */ @js.native
+- typings.std.Event because var conflicts: bubbles, cancelable, currentTarget, defaultPrevented, eventPhase, isTrusted, target, timeStamp, `type`. Inlined AT_TARGET, BUBBLING_PHASE, CAPTURING_PHASE, NONE, cancelBubble, composed, returnValue, srcElement, composedPath, initEvent, initEvent, initEvent, initEvent, stopImmediatePropagation */ @js.native
 trait FocusEvent[T] extends BaseSyntheticEvent[NativeFocusEvent, EventTarget with T, EventTarget] {
   val AT_TARGET: Double = js.native
   val BUBBLING_PHASE: Double = js.native
@@ -27,6 +27,7 @@ trait FocusEvent[T] extends BaseSyntheticEvent[NativeFocusEvent, EventTarget wit
     */
   def composedPath(): js.Array[typings.std.EventTarget] = js.native
   def initEvent(`type`: String): Unit = js.native
+  def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
   /**

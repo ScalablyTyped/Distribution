@@ -20,8 +20,6 @@ object subscriptionMod extends js.Object {
     var _parentOrParents: Subscription | js.Array[Subscription] = js.native
     /** @internal */
     var _subscriptions: js.Any = js.native
-    /* CompleteClass */
-    override val closed: Boolean = js.native
     /**
       * Adds a tear down to be called during the unsubscribe() of this
       * Subscription. Can also be used to add a child subscription.
@@ -50,8 +48,6 @@ object subscriptionMod extends js.Object {
       * @return {void}
       */
     def remove(subscription: Subscription): Unit = js.native
-    /* CompleteClass */
-    override def unsubscribe(): Unit = js.native
   }
   
   /* static members */

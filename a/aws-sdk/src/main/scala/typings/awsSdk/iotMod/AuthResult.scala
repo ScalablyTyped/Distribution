@@ -30,20 +30,44 @@ trait AuthResult extends js.Object {
 
 object AuthResult {
   @scala.inline
-  def apply(
-    allowed: Allowed = null,
-    authDecision: AuthDecision = null,
-    authInfo: AuthInfo = null,
-    denied: Denied = null,
-    missingContextValues: MissingContextValues = null
-  ): AuthResult = {
+  def apply(): AuthResult = {
     val __obj = js.Dynamic.literal()
-    if (allowed != null) __obj.updateDynamic("allowed")(allowed.asInstanceOf[js.Any])
-    if (authDecision != null) __obj.updateDynamic("authDecision")(authDecision.asInstanceOf[js.Any])
-    if (authInfo != null) __obj.updateDynamic("authInfo")(authInfo.asInstanceOf[js.Any])
-    if (denied != null) __obj.updateDynamic("denied")(denied.asInstanceOf[js.Any])
-    if (missingContextValues != null) __obj.updateDynamic("missingContextValues")(missingContextValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthResult]
   }
+  @scala.inline
+  implicit class AuthResultOps[Self <: AuthResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowed(value: Allowed): Self = this.set("allowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowed: Self = this.set("allowed", js.undefined)
+    @scala.inline
+    def setAuthDecision(value: AuthDecision): Self = this.set("authDecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthDecision: Self = this.set("authDecision", js.undefined)
+    @scala.inline
+    def setAuthInfo(value: AuthInfo): Self = this.set("authInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthInfo: Self = this.set("authInfo", js.undefined)
+    @scala.inline
+    def setDenied(value: Denied): Self = this.set("denied", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDenied: Self = this.set("denied", js.undefined)
+    @scala.inline
+    def setMissingContextValuesVarargs(value: MissingContextValue*): Self = this.set("missingContextValues", js.Array(value :_*))
+    @scala.inline
+    def setMissingContextValues(value: MissingContextValues): Self = this.set("missingContextValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissingContextValues: Self = this.set("missingContextValues", js.undefined)
+  }
+  
 }
 

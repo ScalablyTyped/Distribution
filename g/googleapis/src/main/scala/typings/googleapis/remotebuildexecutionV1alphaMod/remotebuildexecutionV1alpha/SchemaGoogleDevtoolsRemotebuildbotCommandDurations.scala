@@ -44,24 +44,50 @@ trait SchemaGoogleDevtoolsRemotebuildbotCommandDurations extends js.Object {
 
 object SchemaGoogleDevtoolsRemotebuildbotCommandDurations {
   @scala.inline
-  def apply(
-    dockerPrep: String = null,
-    download: String = null,
-    execution: String = null,
-    isoPrepDone: String = null,
-    overall: String = null,
-    stdout: String = null,
-    upload: String = null
-  ): SchemaGoogleDevtoolsRemotebuildbotCommandDurations = {
+  def apply(): SchemaGoogleDevtoolsRemotebuildbotCommandDurations = {
     val __obj = js.Dynamic.literal()
-    if (dockerPrep != null) __obj.updateDynamic("dockerPrep")(dockerPrep.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (execution != null) __obj.updateDynamic("execution")(execution.asInstanceOf[js.Any])
-    if (isoPrepDone != null) __obj.updateDynamic("isoPrepDone")(isoPrepDone.asInstanceOf[js.Any])
-    if (overall != null) __obj.updateDynamic("overall")(overall.asInstanceOf[js.Any])
-    if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
-    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemotebuildbotCommandDurations]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemotebuildbotCommandDurationsOps[Self <: SchemaGoogleDevtoolsRemotebuildbotCommandDurations] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDockerPrep(value: String): Self = this.set("dockerPrep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDockerPrep: Self = this.set("dockerPrep", js.undefined)
+    @scala.inline
+    def setDownload(value: String): Self = this.set("download", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownload: Self = this.set("download", js.undefined)
+    @scala.inline
+    def setExecution(value: String): Self = this.set("execution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecution: Self = this.set("execution", js.undefined)
+    @scala.inline
+    def setIsoPrepDone(value: String): Self = this.set("isoPrepDone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsoPrepDone: Self = this.set("isoPrepDone", js.undefined)
+    @scala.inline
+    def setOverall(value: String): Self = this.set("overall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverall: Self = this.set("overall", js.undefined)
+    @scala.inline
+    def setStdout(value: String): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdout: Self = this.set("stdout", js.undefined)
+    @scala.inline
+    def setUpload(value: String): Self = this.set("upload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpload: Self = this.set("upload", js.undefined)
+  }
+  
 }
 

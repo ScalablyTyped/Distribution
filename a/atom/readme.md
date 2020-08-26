@@ -12,7 +12,7 @@ shared, synchronous, independent state for javascript apps
 | Keywords           | shared, synchronous, independent, state |
 | # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 7863 |
+| # downloads        | 7852 |
 | # stars            | 0 |
 
 ## Links

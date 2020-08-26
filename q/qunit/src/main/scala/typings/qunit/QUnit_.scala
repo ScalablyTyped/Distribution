@@ -177,6 +177,11 @@ trait QUnit_ extends js.Object {
     * @param nested A callback with grouped tests and nested modules to run under the current module label
     */
   def module(name: String): Unit = js.native
+  def module(
+    name: String,
+    hooks: js.UndefOr[scala.Nothing],
+    nested: js.Function1[/* hooks */ NestedHooks, Unit]
+  ): Unit = js.native
   def module(name: String, hooks: Hooks): Unit = js.native
   def module(name: String, hooks: Hooks, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit = js.native
   def module(name: String, nested: js.Function1[/* hooks */ NestedHooks, Unit]): Unit = js.native

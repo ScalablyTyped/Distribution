@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-align/lib/util", JSImport.Namespace)
+@JSImport("rc-align/es/util", JSImport.Namespace)
 @js.native
 object utilMod extends js.Object {
   def isSamePoint(prev: TargetPoint, next: TargetPoint): Boolean = js.native

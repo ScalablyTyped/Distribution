@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
   * The {@link com.sun.star.accessibility.XAccessibleExtendedComponent} is supported by all chart elements.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleChartElement
   extends XAccessibleExtendedComponent
      with XAccessible

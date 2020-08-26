@@ -16,6 +16,11 @@ import scala.scalajs.js.annotation._
 object watch extends js.Object {
   def apply(filename: PathLike): FSWatcher = js.native
   def apply(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
+  def apply(
+    filename: PathLike,
+    options: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
+  ): FSWatcher = js.native
   def apply(filename: PathLike, options: String): FSWatcher = js.native
   def apply(
     filename: PathLike,

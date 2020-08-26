@@ -1,23 +1,15 @@
 package typings.androiduix.android.widget
 
-import org.scalablytyped.runtime.TopLevel
-import typings.androiduix.android.content.Context
 import typings.androiduix.android.graphics.Matrix
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.android.view.View
 import typings.androiduix.android.widget.ImageView.ScaleType
-import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.ImageView")
 @js.native
-class ImageView protected () extends View {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
+trait ImageView extends View {
   var mAdjustViewBounds: js.Any = js.native
   var mAdjustViewBoundsCompat: js.Any = js.native
   var mAlpha: js.Any = js.native
@@ -74,16 +66,12 @@ class ImageView protected () extends View {
   /* private */ def updateDrawable(d: js.Any): js.Any = js.native
 }
 
-/* static members */
 @JSGlobal("android.widget.ImageView")
 @js.native
 object ImageView extends js.Object {
   @js.native
   sealed trait ScaleType extends js.Object
   
-  var sS2FArray: js.Any = js.native
-  def parseScaleType(s: String, defaultType: ScaleType): ScaleType = js.native
-  /* private */ def scaleTypeToScaleToFit(st: js.Any): js.Any = js.native
   @js.native
   object ScaleType extends js.Object {
     @js.native
@@ -109,32 +97,6 @@ object ImageView extends js.Object {
     
     @js.native
     sealed trait MATRIX extends ScaleType
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ScaleType with Double] = js.native
-    /* 5 */ @js.native
-    object CENTER extends TopLevel[CENTER with Double]
-    
-    /* 6 */ @js.native
-    object CENTER_CROP extends TopLevel[CENTER_CROP with Double]
-    
-    /* 7 */ @js.native
-    object CENTER_INSIDE extends TopLevel[CENTER_INSIDE with Double]
-    
-    /* 3 */ @js.native
-    object FIT_CENTER extends TopLevel[FIT_CENTER with Double]
-    
-    /* 4 */ @js.native
-    object FIT_END extends TopLevel[FIT_END with Double]
-    
-    /* 2 */ @js.native
-    object FIT_START extends TopLevel[FIT_START with Double]
-    
-    /* 1 */ @js.native
-    object FIT_XY extends TopLevel[FIT_XY with Double]
-    
-    /* 0 */ @js.native
-    object MATRIX extends TopLevel[MATRIX with Double]
     
   }
   

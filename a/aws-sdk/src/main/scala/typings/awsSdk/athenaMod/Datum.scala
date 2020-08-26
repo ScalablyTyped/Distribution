@@ -14,10 +14,26 @@ trait Datum extends js.Object {
 
 object Datum {
   @scala.inline
-  def apply(VarCharValue: datumString = null): Datum = {
+  def apply(): Datum = {
     val __obj = js.Dynamic.literal()
-    if (VarCharValue != null) __obj.updateDynamic("VarCharValue")(VarCharValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Datum]
   }
+  @scala.inline
+  implicit class DatumOps[Self <: Datum] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVarCharValue(value: datumString): Self = this.set("VarCharValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVarCharValue: Self = this.set("VarCharValue", js.undefined)
+  }
+  
 }
 

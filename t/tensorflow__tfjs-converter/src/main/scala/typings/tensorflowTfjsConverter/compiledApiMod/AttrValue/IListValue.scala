@@ -9,47 +9,108 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Properties of a ListValue. */
+@js.native
 trait IListValue extends js.Object {
   /** ListValue b */
-  var b: js.UndefOr[js.Array[Boolean] | Null] = js.undefined
+  var b: js.UndefOr[js.Array[Boolean] | Null] = js.native
   /** ListValue f */
-  var f: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var f: js.UndefOr[js.Array[Double] | Null] = js.native
   /** ListValue func */
-  var func: js.UndefOr[js.Array[INameAttrList] | Null] = js.undefined
+  var func: js.UndefOr[js.Array[INameAttrList] | Null] = js.native
   /** ListValue i */
-  var i: js.UndefOr[(js.Array[Double | String]) | Null] = js.undefined
+  var i: js.UndefOr[(js.Array[Double | String]) | Null] = js.native
   /** ListValue s */
-  var s: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var s: js.UndefOr[js.Array[String] | Null] = js.native
   /** ListValue shape */
-  var shape: js.UndefOr[js.Array[ITensorShape] | Null] = js.undefined
+  var shape: js.UndefOr[js.Array[ITensorShape] | Null] = js.native
   /** ListValue tensor */
-  var tensor: js.UndefOr[js.Array[ITensor] | Null] = js.undefined
+  var tensor: js.UndefOr[js.Array[ITensor] | Null] = js.native
   /** ListValue type */
-  var `type`: js.UndefOr[js.Array[DataType] | Null] = js.undefined
+  var `type`: js.UndefOr[js.Array[DataType] | Null] = js.native
 }
 
 object IListValue {
   @scala.inline
-  def apply(
-    b: js.UndefOr[Null | js.Array[Boolean]] = js.undefined,
-    f: js.UndefOr[Null | js.Array[Double]] = js.undefined,
-    func: js.UndefOr[Null | js.Array[INameAttrList]] = js.undefined,
-    i: js.UndefOr[Null | (js.Array[Double | String])] = js.undefined,
-    s: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    shape: js.UndefOr[Null | js.Array[ITensorShape]] = js.undefined,
-    tensor: js.UndefOr[Null | js.Array[ITensor]] = js.undefined,
-    `type`: js.UndefOr[Null | js.Array[DataType]] = js.undefined
-  ): IListValue = {
+  def apply(): IListValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(b)) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (!js.isUndefined(f)) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
-    if (!js.isUndefined(func)) __obj.updateDynamic("func")(func.asInstanceOf[js.Any])
-    if (!js.isUndefined(i)) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
-    if (!js.isUndefined(s)) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
-    if (!js.isUndefined(shape)) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(tensor)) __obj.updateDynamic("tensor")(tensor.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListValue]
   }
+  @scala.inline
+  implicit class IListValueOps[Self <: IListValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBVarargs(value: Boolean*): Self = this.set("b", js.Array(value :_*))
+    @scala.inline
+    def setB(value: js.Array[Boolean]): Self = this.set("b", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteB: Self = this.set("b", js.undefined)
+    @scala.inline
+    def setBNull: Self = this.set("b", null)
+    @scala.inline
+    def setFVarargs(value: Double*): Self = this.set("f", js.Array(value :_*))
+    @scala.inline
+    def setF(value: js.Array[Double]): Self = this.set("f", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF: Self = this.set("f", js.undefined)
+    @scala.inline
+    def setFNull: Self = this.set("f", null)
+    @scala.inline
+    def setFuncVarargs(value: INameAttrList*): Self = this.set("func", js.Array(value :_*))
+    @scala.inline
+    def setFunc(value: js.Array[INameAttrList]): Self = this.set("func", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunc: Self = this.set("func", js.undefined)
+    @scala.inline
+    def setFuncNull: Self = this.set("func", null)
+    @scala.inline
+    def setIVarargs(value: (Double | String)*): Self = this.set("i", js.Array(value :_*))
+    @scala.inline
+    def setI(value: js.Array[Double | String]): Self = this.set("i", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI: Self = this.set("i", js.undefined)
+    @scala.inline
+    def setINull: Self = this.set("i", null)
+    @scala.inline
+    def setSVarargs(value: String*): Self = this.set("s", js.Array(value :_*))
+    @scala.inline
+    def setS(value: js.Array[String]): Self = this.set("s", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS: Self = this.set("s", js.undefined)
+    @scala.inline
+    def setSNull: Self = this.set("s", null)
+    @scala.inline
+    def setShapeVarargs(value: ITensorShape*): Self = this.set("shape", js.Array(value :_*))
+    @scala.inline
+    def setShape(value: js.Array[ITensorShape]): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setShapeNull: Self = this.set("shape", null)
+    @scala.inline
+    def setTensorVarargs(value: ITensor*): Self = this.set("tensor", js.Array(value :_*))
+    @scala.inline
+    def setTensor(value: js.Array[ITensor]): Self = this.set("tensor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTensor: Self = this.set("tensor", js.undefined)
+    @scala.inline
+    def setTensorNull: Self = this.set("tensor", null)
+    @scala.inline
+    def setTypeVarargs(value: DataType*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: js.Array[DataType]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTypeNull: Self = this.set("type", null)
+  }
+  
 }
 

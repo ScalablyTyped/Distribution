@@ -126,6 +126,7 @@ package object cloudwatchMod {
   type NextToken = java.lang.String
   type OutputFormat = java.lang.String
   type Period = scala.Double
+  type RecentlyActive = typings.awsSdk.awsSdkStrings.PT3H | java.lang.String
   type ResourceList = js.Array[typings.awsSdk.cloudwatchMod.ResourceName]
   type ResourceName = java.lang.String
   type ReturnData = scala.Boolean

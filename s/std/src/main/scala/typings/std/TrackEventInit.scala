@@ -4,24 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TrackEventInit extends EventInit {
-  var track: js.UndefOr[TextTrack | Null] = js.undefined
+  var track: js.UndefOr[TextTrack | Null] = js.native
 }
 
 object TrackEventInit {
   @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    track: js.UndefOr[Null | TextTrack] = js.undefined
-  ): TrackEventInit = {
+  def apply(): TrackEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackEventInit]
   }
+  @scala.inline
+  implicit class TrackEventInitOps[Self <: TrackEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrack(value: TextTrack): Self = this.set("track", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrack: Self = this.set("track", js.undefined)
+    @scala.inline
+    def setTrackNull: Self = this.set("track", null)
+  }
+  
 }
 

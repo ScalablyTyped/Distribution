@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object layerGroup extends js.Object {
   def apply(): LayerGroup_[_] = js.native
+  def apply(layers: js.UndefOr[scala.Nothing], options: LayerOptions): LayerGroup_[_] = js.native
   def apply(layers: js.Array[Layer]): LayerGroup_[_] = js.native
   def apply(layers: js.Array[Layer], options: LayerOptions): LayerGroup_[_] = js.native
 }

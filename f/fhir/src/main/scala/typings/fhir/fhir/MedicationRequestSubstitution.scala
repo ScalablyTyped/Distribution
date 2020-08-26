@@ -7,44 +7,50 @@ import scala.scalajs.js.annotation._
 /**
   * Any restrictions on medication substitution
   */
+@js.native
 trait MedicationRequestSubstitution extends BackboneElement {
   /**
     * Contains extended information for property 'allowed'.
     */
-  var _allowed: js.UndefOr[Element] = js.undefined
+  var _allowed: js.UndefOr[Element] = js.native
   /**
     * Whether substitution is allowed or not
     */
-  var allowed: Boolean
+  var allowed: Boolean = js.native
   /**
     * Why should (not) substitution be made
     */
-  var reason: js.UndefOr[CodeableConcept] = js.undefined
+  var reason: js.UndefOr[CodeableConcept] = js.native
 }
 
 object MedicationRequestSubstitution {
   @scala.inline
-  def apply(
-    allowed: Boolean,
-    _allowed: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    reason: CodeableConcept = null
-  ): MedicationRequestSubstitution = {
+  def apply(allowed: Boolean): MedicationRequestSubstitution = {
     val __obj = js.Dynamic.literal(allowed = allowed.asInstanceOf[js.Any])
-    if (_allowed != null) __obj.updateDynamic("_allowed")(_allowed.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicationRequestSubstitution]
   }
+  @scala.inline
+  implicit class MedicationRequestSubstitutionOps[Self <: MedicationRequestSubstitution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowed(value: Boolean): Self = this.set("allowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_allowed(value: Element): Self = this.set("_allowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_allowed: Self = this.set("_allowed", js.undefined)
+    @scala.inline
+    def setReason(value: CodeableConcept): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+  }
+  
 }
 

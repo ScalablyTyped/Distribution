@@ -75,24 +75,59 @@ object CreateClusterRequest {
     BrokerNodeGroupInfo: BrokerNodeGroupInfo,
     ClusterName: stringMin1Max64,
     KafkaVersion: stringMin1Max128,
-    NumberOfBrokerNodes: integerMin1Max15,
-    ClientAuthentication: ClientAuthentication = null,
-    ConfigurationInfo: ConfigurationInfo = null,
-    EncryptionInfo: EncryptionInfo = null,
-    EnhancedMonitoring: EnhancedMonitoring = null,
-    LoggingInfo: LoggingInfo = null,
-    OpenMonitoring: OpenMonitoringInfo = null,
-    Tags: mapOfString = null
+    NumberOfBrokerNodes: integerMin1Max15
   ): CreateClusterRequest = {
     val __obj = js.Dynamic.literal(BrokerNodeGroupInfo = BrokerNodeGroupInfo.asInstanceOf[js.Any], ClusterName = ClusterName.asInstanceOf[js.Any], KafkaVersion = KafkaVersion.asInstanceOf[js.Any], NumberOfBrokerNodes = NumberOfBrokerNodes.asInstanceOf[js.Any])
-    if (ClientAuthentication != null) __obj.updateDynamic("ClientAuthentication")(ClientAuthentication.asInstanceOf[js.Any])
-    if (ConfigurationInfo != null) __obj.updateDynamic("ConfigurationInfo")(ConfigurationInfo.asInstanceOf[js.Any])
-    if (EncryptionInfo != null) __obj.updateDynamic("EncryptionInfo")(EncryptionInfo.asInstanceOf[js.Any])
-    if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
-    if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
-    if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]
   }
+  @scala.inline
+  implicit class CreateClusterRequestOps[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokerNodeGroupInfo(value: BrokerNodeGroupInfo): Self = this.set("BrokerNodeGroupInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterName(value: stringMin1Max64): Self = this.set("ClusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKafkaVersion(value: stringMin1Max128): Self = this.set("KafkaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberOfBrokerNodes(value: integerMin1Max15): Self = this.set("NumberOfBrokerNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientAuthentication(value: ClientAuthentication): Self = this.set("ClientAuthentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientAuthentication: Self = this.set("ClientAuthentication", js.undefined)
+    @scala.inline
+    def setConfigurationInfo(value: ConfigurationInfo): Self = this.set("ConfigurationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationInfo: Self = this.set("ConfigurationInfo", js.undefined)
+    @scala.inline
+    def setEncryptionInfo(value: EncryptionInfo): Self = this.set("EncryptionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionInfo: Self = this.set("EncryptionInfo", js.undefined)
+    @scala.inline
+    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = this.set("EnhancedMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedMonitoring: Self = this.set("EnhancedMonitoring", js.undefined)
+    @scala.inline
+    def setLoggingInfo(value: LoggingInfo): Self = this.set("LoggingInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingInfo: Self = this.set("LoggingInfo", js.undefined)
+    @scala.inline
+    def setOpenMonitoring(value: OpenMonitoringInfo): Self = this.set("OpenMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenMonitoring: Self = this.set("OpenMonitoring", js.undefined)
+    @scala.inline
+    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

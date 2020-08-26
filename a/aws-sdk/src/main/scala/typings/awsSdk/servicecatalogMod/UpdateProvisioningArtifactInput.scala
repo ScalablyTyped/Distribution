@@ -38,22 +38,46 @@ trait UpdateProvisioningArtifactInput extends js.Object {
 
 object UpdateProvisioningArtifactInput {
   @scala.inline
-  def apply(
-    ProductId: Id,
-    ProvisioningArtifactId: Id,
-    AcceptLanguage: AcceptLanguage = null,
-    Active: js.UndefOr[ProvisioningArtifactActive] = js.undefined,
-    Description: ProvisioningArtifactDescription = null,
-    Guidance: ProvisioningArtifactGuidance = null,
-    Name: ProvisioningArtifactName = null
-  ): UpdateProvisioningArtifactInput = {
+  def apply(ProductId: Id, ProvisioningArtifactId: Id): UpdateProvisioningArtifactInput = {
     val __obj = js.Dynamic.literal(ProductId = ProductId.asInstanceOf[js.Any], ProvisioningArtifactId = ProvisioningArtifactId.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Guidance != null) __obj.updateDynamic("Guidance")(Guidance.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProvisioningArtifactInput]
   }
+  @scala.inline
+  implicit class UpdateProvisioningArtifactInputOps[Self <: UpdateProvisioningArtifactInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProductId(value: Id): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvisioningArtifactId(value: Id): Self = this.set("ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setActive(value: ProvisioningArtifactActive): Self = this.set("Active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("Active", js.undefined)
+    @scala.inline
+    def setDescription(value: ProvisioningArtifactDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setGuidance(value: ProvisioningArtifactGuidance): Self = this.set("Guidance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuidance: Self = this.set("Guidance", js.undefined)
+    @scala.inline
+    def setName(value: ProvisioningArtifactName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

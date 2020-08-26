@@ -9,52 +9,69 @@ import scala.scalajs.js.annotation._
 /**
   * A media object from the camera or photo gallery.
   */
+@js.native
 trait CameraMediaItemType extends SuccessResponse {
   /**
     * Simple object defining the user's selected crop rectangle, or `null` if the user has not edited the photo. `width`/`height` values are assumed to be in pixels.
     */
-  var cropRect: js.UndefOr[Dimension] = js.undefined
+  var cropRect: js.UndefOr[Dimension] = js.native
   /**
     * The live photo object, as a <Titanium.UI.iOS.LivePhoto> and
     * `undefined` if no live photo is selected.
     */
-  var livePhoto: js.UndefOr[LivePhoto] = js.undefined
+  var livePhoto: js.UndefOr[LivePhoto] = js.native
   /**
     * The media object, as a [Blob](Titanium.Blob).
     */
-  var media: js.UndefOr[Blob] = js.undefined
+  var media: js.UndefOr[Blob] = js.native
   /**
     * The type of media, either `MEDIA_TYPE_PHOTO`, `MEDIA_TYPE_LIVEPHOTO` or `MEDIA_TYPE_VIDEO` defined in <Titanium.Media>.
     */
-  var mediaType: js.UndefOr[java.lang.String] = js.undefined
+  var mediaType: js.UndefOr[java.lang.String] = js.native
   /**
     * Simple object defining the preview image size. This will be undefined when custom camera overlay is not used. Values are assumed to be in pixels.
     */
-  var previewRect: js.UndefOr[Size] = js.undefined
+  var previewRect: js.UndefOr[Size] = js.native
 }
 
 object CameraMediaItemType {
   @scala.inline
-  def apply(
-    code: js.UndefOr[Double] = js.undefined,
-    cropRect: Dimension = null,
-    error: java.lang.String = null,
-    livePhoto: LivePhoto = null,
-    media: Blob = null,
-    mediaType: java.lang.String = null,
-    previewRect: Size = null,
-    success: js.UndefOr[Boolean] = js.undefined
-  ): CameraMediaItemType = {
+  def apply(): CameraMediaItemType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
-    if (cropRect != null) __obj.updateDynamic("cropRect")(cropRect.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (livePhoto != null) __obj.updateDynamic("livePhoto")(livePhoto.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
-    if (previewRect != null) __obj.updateDynamic("previewRect")(previewRect.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraMediaItemType]
   }
+  @scala.inline
+  implicit class CameraMediaItemTypeOps[Self <: CameraMediaItemType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCropRect(value: Dimension): Self = this.set("cropRect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCropRect: Self = this.set("cropRect", js.undefined)
+    @scala.inline
+    def setLivePhoto(value: LivePhoto): Self = this.set("livePhoto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLivePhoto: Self = this.set("livePhoto", js.undefined)
+    @scala.inline
+    def setMedia(value: Blob): Self = this.set("media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedia: Self = this.set("media", js.undefined)
+    @scala.inline
+    def setMediaType(value: java.lang.String): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+    @scala.inline
+    def setPreviewRect(value: Size): Self = this.set("previewRect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewRect: Self = this.set("previewRect", js.undefined)
+  }
+  
 }
 

@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 class NoncentralF ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.NoncentralF] {
   def this(d1: Double) = this()
+  def this(d1: js.UndefOr[scala.Nothing], d2: Double) = this()
   def this(d1: Double, d2: Double) = this()
+  def this(d1: js.UndefOr[scala.Nothing], d2: js.UndefOr[scala.Nothing], lambda: Double) = this()
+  def this(d1: js.UndefOr[scala.Nothing], d2: Double, lambda: Double) = this()
+  def this(d1: Double, d2: js.UndefOr[scala.Nothing], lambda: Double) = this()
   def this(d1: Double, d2: Double, lambda: Double) = this()
 }
 

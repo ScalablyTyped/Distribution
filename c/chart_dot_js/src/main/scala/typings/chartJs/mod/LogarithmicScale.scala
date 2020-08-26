@@ -4,33 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LogarithmicScale extends ChartScales {
   @JSName("ticks")
-  var ticks_LogarithmicScale: js.UndefOr[LogarithmicTickOptions] = js.undefined
+  var ticks_LogarithmicScale: js.UndefOr[LogarithmicTickOptions] = js.native
 }
 
 object LogarithmicScale {
   @scala.inline
-  def apply(
-    display: js.UndefOr[Boolean] = js.undefined,
-    gridLines: GridLineOptions = null,
-    position: PositionType | String = null,
-    scaleLabel: ScaleTitleOptions = null,
-    ticks: LogarithmicTickOptions = null,
-    `type`: ScaleType | String = null,
-    xAxes: js.Array[ChartXAxe] = null,
-    yAxes: js.Array[ChartYAxe] = null
-  ): LogarithmicScale = {
+  def apply(): LogarithmicScale = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.get.asInstanceOf[js.Any])
-    if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (scaleLabel != null) __obj.updateDynamic("scaleLabel")(scaleLabel.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (xAxes != null) __obj.updateDynamic("xAxes")(xAxes.asInstanceOf[js.Any])
-    if (yAxes != null) __obj.updateDynamic("yAxes")(yAxes.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogarithmicScale]
   }
+  @scala.inline
+  implicit class LogarithmicScaleOps[Self <: LogarithmicScale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTicks(value: LogarithmicTickOptions): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicks: Self = this.set("ticks", js.undefined)
+  }
+  
 }
 

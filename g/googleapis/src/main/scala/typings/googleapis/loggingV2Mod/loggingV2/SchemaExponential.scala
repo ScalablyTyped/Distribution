@@ -30,16 +30,34 @@ trait SchemaExponential extends js.Object {
 
 object SchemaExponential {
   @scala.inline
-  def apply(
-    growthFactor: js.UndefOr[Double] = js.undefined,
-    numFiniteBuckets: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Double] = js.undefined
-  ): SchemaExponential = {
+  def apply(): SchemaExponential = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(growthFactor)) __obj.updateDynamic("growthFactor")(growthFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numFiniteBuckets)) __obj.updateDynamic("numFiniteBuckets")(numFiniteBuckets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExponential]
   }
+  @scala.inline
+  implicit class SchemaExponentialOps[Self <: SchemaExponential] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGrowthFactor(value: Double): Self = this.set("growthFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowthFactor: Self = this.set("growthFactor", js.undefined)
+    @scala.inline
+    def setNumFiniteBuckets(value: Double): Self = this.set("numFiniteBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumFiniteBuckets: Self = this.set("numFiniteBuckets", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+  }
+  
 }
 

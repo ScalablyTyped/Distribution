@@ -75,40 +75,88 @@ trait SchemaOrderLineItem extends js.Object {
 
 object SchemaOrderLineItem {
   @scala.inline
-  def apply(
-    annotations: js.Array[SchemaOrderMerchantProvidedAnnotation] = null,
-    cancellations: js.Array[SchemaOrderCancellation] = null,
-    id: String = null,
-    price: SchemaPrice = null,
-    product: SchemaOrderLineItemProduct = null,
-    quantityCanceled: js.UndefOr[Double] = js.undefined,
-    quantityDelivered: js.UndefOr[Double] = js.undefined,
-    quantityOrdered: js.UndefOr[Double] = js.undefined,
-    quantityPending: js.UndefOr[Double] = js.undefined,
-    quantityReturned: js.UndefOr[Double] = js.undefined,
-    quantityShipped: js.UndefOr[Double] = js.undefined,
-    returnInfo: SchemaOrderLineItemReturnInfo = null,
-    returns: js.Array[SchemaOrderReturn] = null,
-    shippingDetails: SchemaOrderLineItemShippingDetails = null,
-    tax: SchemaPrice = null
-  ): SchemaOrderLineItem = {
+  def apply(): SchemaOrderLineItem = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (cancellations != null) __obj.updateDynamic("cancellations")(cancellations.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantityCanceled)) __obj.updateDynamic("quantityCanceled")(quantityCanceled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantityDelivered)) __obj.updateDynamic("quantityDelivered")(quantityDelivered.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantityOrdered)) __obj.updateDynamic("quantityOrdered")(quantityOrdered.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantityPending)) __obj.updateDynamic("quantityPending")(quantityPending.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantityReturned)) __obj.updateDynamic("quantityReturned")(quantityReturned.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantityShipped)) __obj.updateDynamic("quantityShipped")(quantityShipped.get.asInstanceOf[js.Any])
-    if (returnInfo != null) __obj.updateDynamic("returnInfo")(returnInfo.asInstanceOf[js.Any])
-    if (returns != null) __obj.updateDynamic("returns")(returns.asInstanceOf[js.Any])
-    if (shippingDetails != null) __obj.updateDynamic("shippingDetails")(shippingDetails.asInstanceOf[js.Any])
-    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrderLineItem]
   }
+  @scala.inline
+  implicit class SchemaOrderLineItemOps[Self <: SchemaOrderLineItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotationsVarargs(value: SchemaOrderMerchantProvidedAnnotation*): Self = this.set("annotations", js.Array(value :_*))
+    @scala.inline
+    def setAnnotations(value: js.Array[SchemaOrderMerchantProvidedAnnotation]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setCancellationsVarargs(value: SchemaOrderCancellation*): Self = this.set("cancellations", js.Array(value :_*))
+    @scala.inline
+    def setCancellations(value: js.Array[SchemaOrderCancellation]): Self = this.set("cancellations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancellations: Self = this.set("cancellations", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setPrice(value: SchemaPrice): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+    @scala.inline
+    def setProduct(value: SchemaOrderLineItemProduct): Self = this.set("product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("product", js.undefined)
+    @scala.inline
+    def setQuantityCanceled(value: Double): Self = this.set("quantityCanceled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantityCanceled: Self = this.set("quantityCanceled", js.undefined)
+    @scala.inline
+    def setQuantityDelivered(value: Double): Self = this.set("quantityDelivered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantityDelivered: Self = this.set("quantityDelivered", js.undefined)
+    @scala.inline
+    def setQuantityOrdered(value: Double): Self = this.set("quantityOrdered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantityOrdered: Self = this.set("quantityOrdered", js.undefined)
+    @scala.inline
+    def setQuantityPending(value: Double): Self = this.set("quantityPending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantityPending: Self = this.set("quantityPending", js.undefined)
+    @scala.inline
+    def setQuantityReturned(value: Double): Self = this.set("quantityReturned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantityReturned: Self = this.set("quantityReturned", js.undefined)
+    @scala.inline
+    def setQuantityShipped(value: Double): Self = this.set("quantityShipped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantityShipped: Self = this.set("quantityShipped", js.undefined)
+    @scala.inline
+    def setReturnInfo(value: SchemaOrderLineItemReturnInfo): Self = this.set("returnInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnInfo: Self = this.set("returnInfo", js.undefined)
+    @scala.inline
+    def setReturnsVarargs(value: SchemaOrderReturn*): Self = this.set("returns", js.Array(value :_*))
+    @scala.inline
+    def setReturns(value: js.Array[SchemaOrderReturn]): Self = this.set("returns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturns: Self = this.set("returns", js.undefined)
+    @scala.inline
+    def setShippingDetails(value: SchemaOrderLineItemShippingDetails): Self = this.set("shippingDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingDetails: Self = this.set("shippingDetails", js.undefined)
+    @scala.inline
+    def setTax(value: SchemaPrice): Self = this.set("tax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax: Self = this.set("tax", js.undefined)
+  }
+  
 }
 

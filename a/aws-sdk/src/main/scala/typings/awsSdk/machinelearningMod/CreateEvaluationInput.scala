@@ -26,15 +26,32 @@ trait CreateEvaluationInput extends js.Object {
 
 object CreateEvaluationInput {
   @scala.inline
-  def apply(
-    EvaluationDataSourceId: EntityId,
-    EvaluationId: EntityId,
-    MLModelId: EntityId,
-    EvaluationName: EntityName = null
-  ): CreateEvaluationInput = {
+  def apply(EvaluationDataSourceId: EntityId, EvaluationId: EntityId, MLModelId: EntityId): CreateEvaluationInput = {
     val __obj = js.Dynamic.literal(EvaluationDataSourceId = EvaluationDataSourceId.asInstanceOf[js.Any], EvaluationId = EvaluationId.asInstanceOf[js.Any], MLModelId = MLModelId.asInstanceOf[js.Any])
-    if (EvaluationName != null) __obj.updateDynamic("EvaluationName")(EvaluationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEvaluationInput]
   }
+  @scala.inline
+  implicit class CreateEvaluationInputOps[Self <: CreateEvaluationInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvaluationDataSourceId(value: EntityId): Self = this.set("EvaluationDataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvaluationId(value: EntityId): Self = this.set("EvaluationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvaluationName(value: EntityName): Self = this.set("EvaluationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationName: Self = this.set("EvaluationName", js.undefined)
+  }
+  
 }
 

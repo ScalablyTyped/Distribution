@@ -1,8 +1,5 @@
 package typings.antdMobileRn.paginationIndexNativeMod
 
-import typings.antdMobileRn.antdMobileRnStrings.button
-import typings.antdMobileRn.antdMobileRnStrings.number
-import typings.antdMobileRn.antdMobileRnStrings.pointer
 import typings.antdMobileRn.paginationPropsTypeMod.PaginationPropsType
 import typings.antdMobileRn.paginationStyleIndexNativeMod.IPaginationStyle
 import typings.reactNative.mod.StyleProp
@@ -11,40 +8,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaginationNativeProps extends PaginationPropsType {
-  var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var styles: js.UndefOr[IPaginationStyle] = js.undefined
+  var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var styles: js.UndefOr[IPaginationStyle] = js.native
 }
 
 object PaginationNativeProps {
   @scala.inline
-  def apply(
-    current: Double,
-    total: Double,
-    indicatorStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    mode: button | number | pointer = null,
-    nextText: String = null,
-    onChange: /* current */ Double => Unit = null,
-    onNext: () => Unit = null,
-    onPrev: () => Unit = null,
-    prevText: String = null,
-    simple: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    styles: IPaginationStyle = null
-  ): PaginationNativeProps = {
+  def apply(current: Double, total: Double): PaginationNativeProps = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-    if (!js.isUndefined(indicatorStyle)) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction0(onNext))
-    if (onPrev != null) __obj.updateDynamic("onPrev")(js.Any.fromFunction0(onPrev))
-    if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationNativeProps]
   }
+  @scala.inline
+  implicit class PaginationNativePropsOps[Self <: PaginationNativeProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndicatorStyle(value: StyleProp[ViewStyle]): Self = this.set("indicatorStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndicatorStyle: Self = this.set("indicatorStyle", js.undefined)
+    @scala.inline
+    def setIndicatorStyleNull: Self = this.set("indicatorStyle", null)
+    @scala.inline
+    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+    @scala.inline
+    def setStyles(value: IPaginationStyle): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+  }
+  
 }
 

@@ -16,22 +16,46 @@ trait Family extends js.Object {
 
 object Family {
   @scala.inline
-  def apply(
-    family: String = null,
-    firmwareVersion: String = null,
-    manufacturer: String = null,
-    specLevel: String = null,
-    tpmModel: String = null,
-    vendorSpecific: String = null
-  ): Family = {
+  def apply(): Family = {
     val __obj = js.Dynamic.literal()
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (firmwareVersion != null) __obj.updateDynamic("firmwareVersion")(firmwareVersion.asInstanceOf[js.Any])
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (specLevel != null) __obj.updateDynamic("specLevel")(specLevel.asInstanceOf[js.Any])
-    if (tpmModel != null) __obj.updateDynamic("tpmModel")(tpmModel.asInstanceOf[js.Any])
-    if (vendorSpecific != null) __obj.updateDynamic("vendorSpecific")(vendorSpecific.asInstanceOf[js.Any])
     __obj.asInstanceOf[Family]
   }
+  @scala.inline
+  implicit class FamilyOps[Self <: Family] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily: Self = this.set("family", js.undefined)
+    @scala.inline
+    def setFirmwareVersion(value: String): Self = this.set("firmwareVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirmwareVersion: Self = this.set("firmwareVersion", js.undefined)
+    @scala.inline
+    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    @scala.inline
+    def setSpecLevel(value: String): Self = this.set("specLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecLevel: Self = this.set("specLevel", js.undefined)
+    @scala.inline
+    def setTpmModel(value: String): Self = this.set("tpmModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTpmModel: Self = this.set("tpmModel", js.undefined)
+    @scala.inline
+    def setVendorSpecific(value: String): Self = this.set("vendorSpecific", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVendorSpecific: Self = this.set("vendorSpecific", js.undefined)
+  }
+  
 }
 

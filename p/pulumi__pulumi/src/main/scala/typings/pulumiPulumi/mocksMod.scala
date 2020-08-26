@@ -43,12 +43,22 @@ object mocksMod extends js.Object {
       * @param id_: If provided, the physical identifier of an existing resource to read or import.
       */
     def newResource(`type`: String, name: String, inputs: js.Any): Id = js.native
+    def newResource(`type`: String, name: String, inputs: js.Any, provider: js.UndefOr[scala.Nothing], id: String): Id = js.native
     def newResource(`type`: String, name: String, inputs: js.Any, provider: String): Id = js.native
     def newResource(`type`: String, name: String, inputs: js.Any, provider: String, id: String): Id = js.native
   }
   
   def setMocks(mocks: Mocks): Unit = js.native
+  def setMocks(
+    mocks: Mocks,
+    project: js.UndefOr[scala.Nothing],
+    stack: js.UndefOr[scala.Nothing],
+    preview: Boolean
+  ): Unit = js.native
+  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String): Unit = js.native
+  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String, preview: Boolean): Unit = js.native
   def setMocks(mocks: Mocks, project: String): Unit = js.native
+  def setMocks(mocks: Mocks, project: String, stack: js.UndefOr[scala.Nothing], preview: Boolean): Unit = js.native
   def setMocks(mocks: Mocks, project: String, stack: String): Unit = js.native
   def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = js.native
 }

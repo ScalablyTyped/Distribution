@@ -31,6 +31,7 @@ class ResourceAccountsAdunitsCustomchannels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(callback: BodyResponseCallback[SchemaCustomChannels]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(params: ParamsResourceAccountsAdunitsCustomchannelsList): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(
     params: ParamsResourceAccountsAdunitsCustomchannelsList,

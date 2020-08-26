@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * Supported URLs must match follow format: `protocol scheme:protocol specific part` If a handler provides optional arguments ("?") or jump marks ("#")
   * depends from its definition and implementation. The generic dispatch provider will use registered URL pattern to detect right handler.
   */
+@js.native
 trait ProtocolHandler
   extends XDispatchProvider
      with XInitialization

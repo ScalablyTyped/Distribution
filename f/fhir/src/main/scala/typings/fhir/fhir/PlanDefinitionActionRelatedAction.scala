@@ -7,61 +7,72 @@ import scala.scalajs.js.annotation._
 /**
   * Relationship to another action
   */
+@js.native
 trait PlanDefinitionActionRelatedAction extends BackboneElement {
   /**
     * Contains extended information for property 'actionId'.
     */
-  var _actionId: js.UndefOr[Element] = js.undefined
+  var _actionId: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'relationship'.
     */
-  var _relationship: js.UndefOr[Element] = js.undefined
+  var _relationship: js.UndefOr[Element] = js.native
   /**
     * What action is this related to
     */
-  var actionId: id
+  var actionId: id = js.native
   /**
     * Time offset for the relationship
     */
-  var offsetDuration: js.UndefOr[Duration] = js.undefined
+  var offsetDuration: js.UndefOr[Duration] = js.native
   /**
     * Time offset for the relationship
     */
-  var offsetRange: js.UndefOr[Range] = js.undefined
+  var offsetRange: js.UndefOr[Range] = js.native
   /**
     * before-start | before | before-end | concurrent-with-start | concurrent | concurrent-with-end | after-start | after | after-end
     */
-  var relationship: code
+  var relationship: code = js.native
 }
 
 object PlanDefinitionActionRelatedAction {
   @scala.inline
-  def apply(
-    actionId: id,
-    relationship: code,
-    _actionId: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _relationship: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    offsetDuration: Duration = null,
-    offsetRange: Range = null
-  ): PlanDefinitionActionRelatedAction = {
+  def apply(actionId: id, relationship: code): PlanDefinitionActionRelatedAction = {
     val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], relationship = relationship.asInstanceOf[js.Any])
-    if (_actionId != null) __obj.updateDynamic("_actionId")(_actionId.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_relationship != null) __obj.updateDynamic("_relationship")(_relationship.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (offsetDuration != null) __obj.updateDynamic("offsetDuration")(offsetDuration.asInstanceOf[js.Any])
-    if (offsetRange != null) __obj.updateDynamic("offsetRange")(offsetRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanDefinitionActionRelatedAction]
   }
+  @scala.inline
+  implicit class PlanDefinitionActionRelatedActionOps[Self <: PlanDefinitionActionRelatedAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionId(value: id): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelationship(value: code): Self = this.set("relationship", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_actionId(value: Element): Self = this.set("_actionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_actionId: Self = this.set("_actionId", js.undefined)
+    @scala.inline
+    def set_relationship(value: Element): Self = this.set("_relationship", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_relationship: Self = this.set("_relationship", js.undefined)
+    @scala.inline
+    def setOffsetDuration(value: Duration): Self = this.set("offsetDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetDuration: Self = this.set("offsetDuration", js.undefined)
+    @scala.inline
+    def setOffsetRange(value: Range): Self = this.set("offsetRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetRange: Self = this.set("offsetRange", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,36 @@ trait RuntimeConfiguration extends js.Object {
 
 object RuntimeConfiguration {
   @scala.inline
-  def apply(
-    GameSessionActivationTimeoutSeconds: js.UndefOr[GameSessionActivationTimeoutSeconds] = js.undefined,
-    MaxConcurrentGameSessionActivations: js.UndefOr[MaxConcurrentGameSessionActivations] = js.undefined,
-    ServerProcesses: ServerProcessList = null
-  ): RuntimeConfiguration = {
+  def apply(): RuntimeConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(GameSessionActivationTimeoutSeconds)) __obj.updateDynamic("GameSessionActivationTimeoutSeconds")(GameSessionActivationTimeoutSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxConcurrentGameSessionActivations)) __obj.updateDynamic("MaxConcurrentGameSessionActivations")(MaxConcurrentGameSessionActivations.get.asInstanceOf[js.Any])
-    if (ServerProcesses != null) __obj.updateDynamic("ServerProcesses")(ServerProcesses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeConfiguration]
   }
+  @scala.inline
+  implicit class RuntimeConfigurationOps[Self <: RuntimeConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGameSessionActivationTimeoutSeconds(value: GameSessionActivationTimeoutSeconds): Self = this.set("GameSessionActivationTimeoutSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameSessionActivationTimeoutSeconds: Self = this.set("GameSessionActivationTimeoutSeconds", js.undefined)
+    @scala.inline
+    def setMaxConcurrentGameSessionActivations(value: MaxConcurrentGameSessionActivations): Self = this.set("MaxConcurrentGameSessionActivations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrentGameSessionActivations: Self = this.set("MaxConcurrentGameSessionActivations", js.undefined)
+    @scala.inline
+    def setServerProcessesVarargs(value: ServerProcess*): Self = this.set("ServerProcesses", js.Array(value :_*))
+    @scala.inline
+    def setServerProcesses(value: ServerProcessList): Self = this.set("ServerProcesses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerProcesses: Self = this.set("ServerProcesses", js.undefined)
+  }
+  
 }
 

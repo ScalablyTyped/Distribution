@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 /**
   *
   */
+@js.native
 trait GetFieldRet extends js.Object
 

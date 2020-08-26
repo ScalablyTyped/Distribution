@@ -22,16 +22,36 @@ trait NotificationConfig extends js.Object {
 
 object NotificationConfig {
   @scala.inline
-  def apply(
-    NotificationArn: NotificationArn = null,
-    NotificationEvents: NotificationEventList = null,
-    NotificationType: NotificationType = null
-  ): NotificationConfig = {
+  def apply(): NotificationConfig = {
     val __obj = js.Dynamic.literal()
-    if (NotificationArn != null) __obj.updateDynamic("NotificationArn")(NotificationArn.asInstanceOf[js.Any])
-    if (NotificationEvents != null) __obj.updateDynamic("NotificationEvents")(NotificationEvents.asInstanceOf[js.Any])
-    if (NotificationType != null) __obj.updateDynamic("NotificationType")(NotificationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationConfig]
   }
+  @scala.inline
+  implicit class NotificationConfigOps[Self <: NotificationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotificationArn(value: NotificationArn): Self = this.set("NotificationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationArn: Self = this.set("NotificationArn", js.undefined)
+    @scala.inline
+    def setNotificationEventsVarargs(value: NotificationEvent*): Self = this.set("NotificationEvents", js.Array(value :_*))
+    @scala.inline
+    def setNotificationEvents(value: NotificationEventList): Self = this.set("NotificationEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationEvents: Self = this.set("NotificationEvents", js.undefined)
+    @scala.inline
+    def setNotificationType(value: NotificationType): Self = this.set("NotificationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationType: Self = this.set("NotificationType", js.undefined)
+  }
+  
 }
 

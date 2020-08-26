@@ -34,18 +34,38 @@ trait AccessPolicySummary extends js.Object {
 
 object AccessPolicySummary {
   @scala.inline
-  def apply(
-    id: ID,
-    identity: Identity,
-    permission: Permission,
-    resource: Resource,
-    creationDate: Timestamp = null,
-    lastUpdateDate: Timestamp = null
-  ): AccessPolicySummary = {
+  def apply(id: ID, identity: Identity, permission: Permission, resource: Resource): AccessPolicySummary = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], permission = permission.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (lastUpdateDate != null) __obj.updateDynamic("lastUpdateDate")(lastUpdateDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessPolicySummary]
   }
+  @scala.inline
+  implicit class AccessPolicySummaryOps[Self <: AccessPolicySummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: ID): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentity(value: Identity): Self = this.set("identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPermission(value: Permission): Self = this.set("permission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResource(value: Resource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setLastUpdateDate(value: Timestamp): Self = this.set("lastUpdateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateDate: Self = this.set("lastUpdateDate", js.undefined)
+  }
+  
 }
 

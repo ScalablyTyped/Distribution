@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SideXDimension () extends AbstractDimension {
   def this(xAxis: Double) = this()
+  def this(xAxis: js.UndefOr[scala.Nothing], zAxis: Double) = this()
   def this(xAxis: Double, zAxis: Double) = this()
 }
 

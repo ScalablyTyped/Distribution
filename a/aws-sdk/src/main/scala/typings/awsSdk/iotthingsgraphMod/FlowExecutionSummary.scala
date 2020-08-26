@@ -34,22 +34,46 @@ trait FlowExecutionSummary extends js.Object {
 
 object FlowExecutionSummary {
   @scala.inline
-  def apply(
-    createdAt: Timestamp = null,
-    flowExecutionId: FlowExecutionId = null,
-    flowTemplateId: Urn = null,
-    status: FlowExecutionStatus = null,
-    systemInstanceId: Urn = null,
-    updatedAt: Timestamp = null
-  ): FlowExecutionSummary = {
+  def apply(): FlowExecutionSummary = {
     val __obj = js.Dynamic.literal()
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (flowExecutionId != null) __obj.updateDynamic("flowExecutionId")(flowExecutionId.asInstanceOf[js.Any])
-    if (flowTemplateId != null) __obj.updateDynamic("flowTemplateId")(flowTemplateId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (systemInstanceId != null) __obj.updateDynamic("systemInstanceId")(systemInstanceId.asInstanceOf[js.Any])
-    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowExecutionSummary]
   }
+  @scala.inline
+  implicit class FlowExecutionSummaryOps[Self <: FlowExecutionSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setFlowExecutionId(value: FlowExecutionId): Self = this.set("flowExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowExecutionId: Self = this.set("flowExecutionId", js.undefined)
+    @scala.inline
+    def setFlowTemplateId(value: Urn): Self = this.set("flowTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowTemplateId: Self = this.set("flowTemplateId", js.undefined)
+    @scala.inline
+    def setStatus(value: FlowExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSystemInstanceId(value: Urn): Self = this.set("systemInstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemInstanceId: Self = this.set("systemInstanceId", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+  }
+  
 }
 

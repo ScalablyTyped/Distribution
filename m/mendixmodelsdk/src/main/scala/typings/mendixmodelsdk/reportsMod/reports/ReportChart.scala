@@ -52,26 +52,26 @@ class ReportChart protected () extends ReportWidget {
   @JSName("model")
   var model_FReportChart: IModel = js.native
   def aspectRatio: AspectRatio = js.native
-  def aspectRatio(newValue: AspectRatio): js.Any = js.native
+  def aspectRatio_=(newValue: AspectRatio): Unit = js.native
   def seriess: IList[ReportChartSeries] = js.native
   def `type`: ChartType = js.native
-  def `type`(newValue: ChartType): js.Any = js.native
+  def type_=(newValue: ChartType): Unit = js.native
   def xAxisCaption: Text = js.native
-  def xAxisCaption(newValue: Text): js.Any = js.native
+  def xAxisCaption_=(newValue: Text): Unit = js.native
   def xAxisColumn: String = js.native
-  def xAxisColumn(newValue: String): js.Any = js.native
+  def xAxisColumn_=(newValue: String): Unit = js.native
   def xAxisFormat: ColumnFormat = js.native
-  def xAxisFormat(newValue: ColumnFormat): js.Any = js.native
+  def xAxisFormat_=(newValue: ColumnFormat): Unit = js.native
   def yAxisCaption: Text = js.native
-  def yAxisCaption(newValue: Text): js.Any = js.native
+  def yAxisCaption_=(newValue: Text): Unit = js.native
   def yAxisMaximum: Double = js.native
-  def yAxisMaximum(newValue: Double): js.Any = js.native
+  def yAxisMaximum_=(newValue: Double): Unit = js.native
   def yAxisMinimum: Double = js.native
-  def yAxisMinimum(newValue: Double): js.Any = js.native
+  def yAxisMinimum_=(newValue: Double): Unit = js.native
   def yAxisPrecision: Double = js.native
-  def yAxisPrecision(newValue: Double): js.Any = js.native
+  def yAxisPrecision_=(newValue: Double): Unit = js.native
   def yAxisUseMinMax: Boolean = js.native
-  def yAxisUseMinMax(newValue: Boolean): js.Any = js.native
+  def yAxisUseMinMax_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

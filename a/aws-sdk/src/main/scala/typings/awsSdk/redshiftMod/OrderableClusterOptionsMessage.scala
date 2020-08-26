@@ -18,11 +18,32 @@ trait OrderableClusterOptionsMessage extends js.Object {
 
 object OrderableClusterOptionsMessage {
   @scala.inline
-  def apply(Marker: String = null, OrderableClusterOptions: OrderableClusterOptionsList = null): OrderableClusterOptionsMessage = {
+  def apply(): OrderableClusterOptionsMessage = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (OrderableClusterOptions != null) __obj.updateDynamic("OrderableClusterOptions")(OrderableClusterOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderableClusterOptionsMessage]
   }
+  @scala.inline
+  implicit class OrderableClusterOptionsMessageOps[Self <: OrderableClusterOptionsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setOrderableClusterOptionsVarargs(value: OrderableClusterOption*): Self = this.set("OrderableClusterOptions", js.Array(value :_*))
+    @scala.inline
+    def setOrderableClusterOptions(value: OrderableClusterOptionsList): Self = this.set("OrderableClusterOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderableClusterOptions: Self = this.set("OrderableClusterOptions", js.undefined)
+  }
+  
 }
 

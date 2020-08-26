@@ -1,64 +1,82 @@
 package typings.winstonSyslog.mod
 
-import typings.logform.mod.Format_
 import typings.winstonTransport.mod.TransportStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SyslogTransportOptions extends TransportStreamOptions {
-  var app_name: js.UndefOr[String] = js.undefined
-  var eol: js.UndefOr[String] = js.undefined
-  var facility: js.UndefOr[String] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var localhost: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var pid: js.UndefOr[Double] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var app_name: js.UndefOr[String] = js.native
+  var eol: js.UndefOr[String] = js.native
+  var facility: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.native
+  var localhost: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.native
+  var pid: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var protocol: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object SyslogTransportOptions {
   @scala.inline
-  def apply(
-    app_name: String = null,
-    close: () => Unit = null,
-    eol: String = null,
-    facility: String = null,
-    format: Format_ = null,
-    handleExceptions: js.UndefOr[Boolean] = js.undefined,
-    host: String = null,
-    level: String = null,
-    localhost: String = null,
-    log: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _ = null,
-    logv: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _ = null,
-    path: String = null,
-    pid: js.UndefOr[Double] = js.undefined,
-    port: js.UndefOr[Double] = js.undefined,
-    protocol: String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null
-  ): SyslogTransportOptions = {
+  def apply(): SyslogTransportOptions = {
     val __obj = js.Dynamic.literal()
-    if (app_name != null) __obj.updateDynamic("app_name")(app_name.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
-    if (facility != null) __obj.updateDynamic("facility")(facility.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (localhost != null) __obj.updateDynamic("localhost")(localhost.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
-    if (logv != null) __obj.updateDynamic("logv")(js.Any.fromFunction2(logv))
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(pid)) __obj.updateDynamic("pid")(pid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyslogTransportOptions]
   }
+  @scala.inline
+  implicit class SyslogTransportOptionsOps[Self <: SyslogTransportOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApp_name(value: String): Self = this.set("app_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApp_name: Self = this.set("app_name", js.undefined)
+    @scala.inline
+    def setEol(value: String): Self = this.set("eol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEol: Self = this.set("eol", js.undefined)
+    @scala.inline
+    def setFacility(value: String): Self = this.set("facility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFacility: Self = this.set("facility", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setLocalhost(value: String): Self = this.set("localhost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalhost: Self = this.set("localhost", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePid: Self = this.set("pid", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -21,6 +21,7 @@ class Vector2 ()
   extends typings.phaser.Phaser.Math.Vector2 {
   def this(x: Double) = this()
   def this(x: Vector2Like) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Vector2Like, y: Double) = this()
 }

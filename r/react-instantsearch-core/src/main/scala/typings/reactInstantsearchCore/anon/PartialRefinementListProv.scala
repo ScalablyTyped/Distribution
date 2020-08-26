@@ -5,36 +5,67 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-instantsearch-core.react-instantsearch-core.RefinementListProvided> */
+@js.native
 trait PartialRefinementListProv extends js.Object {
-  var canRefine: js.UndefOr[Boolean] = js.undefined
-  var createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var currentRefinement: js.UndefOr[js.Array[String]] = js.undefined
-  var isFromSearch: js.UndefOr[Boolean] = js.undefined
-  var items: js.UndefOr[js.Array[HitcountnumberisRefinedbo]] = js.undefined
-  var refine: js.UndefOr[js.Function1[/* value */ js.Array[String], _]] = js.undefined
-  var searchForItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var canRefine: js.UndefOr[Boolean] = js.native
+  var createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var currentRefinement: js.UndefOr[js.Array[String]] = js.native
+  var isFromSearch: js.UndefOr[Boolean] = js.native
+  var items: js.UndefOr[js.Array[HitcountnumberisRefinedbo]] = js.native
+  var refine: js.UndefOr[js.Function1[/* value */ js.Array[String], _]] = js.native
+  var searchForItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
 }
 
 object PartialRefinementListProv {
   @scala.inline
-  def apply(
-    canRefine: js.UndefOr[Boolean] = js.undefined,
-    createURL: /* repeated */ js.Any => _ = null,
-    currentRefinement: js.Array[String] = null,
-    isFromSearch: js.UndefOr[Boolean] = js.undefined,
-    items: js.Array[HitcountnumberisRefinedbo] = null,
-    refine: /* value */ js.Array[String] => _ = null,
-    searchForItems: /* repeated */ js.Any => _ = null
-  ): PartialRefinementListProv = {
+  def apply(): PartialRefinementListProv = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canRefine)) __obj.updateDynamic("canRefine")(canRefine.get.asInstanceOf[js.Any])
-    if (createURL != null) __obj.updateDynamic("createURL")(js.Any.fromFunction1(createURL))
-    if (currentRefinement != null) __obj.updateDynamic("currentRefinement")(currentRefinement.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFromSearch)) __obj.updateDynamic("isFromSearch")(isFromSearch.get.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (refine != null) __obj.updateDynamic("refine")(js.Any.fromFunction1(refine))
-    if (searchForItems != null) __obj.updateDynamic("searchForItems")(js.Any.fromFunction1(searchForItems))
     __obj.asInstanceOf[PartialRefinementListProv]
   }
+  @scala.inline
+  implicit class PartialRefinementListProvOps[Self <: PartialRefinementListProv] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanRefine(value: Boolean): Self = this.set("canRefine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanRefine: Self = this.set("canRefine", js.undefined)
+    @scala.inline
+    def setCreateURL(value: /* repeated */ js.Any => _): Self = this.set("createURL", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCreateURL: Self = this.set("createURL", js.undefined)
+    @scala.inline
+    def setCurrentRefinementVarargs(value: String*): Self = this.set("currentRefinement", js.Array(value :_*))
+    @scala.inline
+    def setCurrentRefinement(value: js.Array[String]): Self = this.set("currentRefinement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentRefinement: Self = this.set("currentRefinement", js.undefined)
+    @scala.inline
+    def setIsFromSearch(value: Boolean): Self = this.set("isFromSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFromSearch: Self = this.set("isFromSearch", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: HitcountnumberisRefinedbo*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[HitcountnumberisRefinedbo]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setRefine(value: /* value */ js.Array[String] => _): Self = this.set("refine", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRefine: Self = this.set("refine", js.undefined)
+    @scala.inline
+    def setSearchForItems(value: /* repeated */ js.Any => _): Self = this.set("searchForItems", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSearchForItems: Self = this.set("searchForItems", js.undefined)
+  }
+  
 }
 

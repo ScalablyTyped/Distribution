@@ -26,18 +26,38 @@ trait DBParameterGroup extends js.Object {
 
 object DBParameterGroup {
   @scala.inline
-  def apply(
-    DBParameterGroupArn: String = null,
-    DBParameterGroupFamily: String = null,
-    DBParameterGroupName: String = null,
-    Description: String = null
-  ): DBParameterGroup = {
+  def apply(): DBParameterGroup = {
     val __obj = js.Dynamic.literal()
-    if (DBParameterGroupArn != null) __obj.updateDynamic("DBParameterGroupArn")(DBParameterGroupArn.asInstanceOf[js.Any])
-    if (DBParameterGroupFamily != null) __obj.updateDynamic("DBParameterGroupFamily")(DBParameterGroupFamily.asInstanceOf[js.Any])
-    if (DBParameterGroupName != null) __obj.updateDynamic("DBParameterGroupName")(DBParameterGroupName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBParameterGroup]
   }
+  @scala.inline
+  implicit class DBParameterGroupOps[Self <: DBParameterGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBParameterGroupArn(value: String): Self = this.set("DBParameterGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBParameterGroupArn: Self = this.set("DBParameterGroupArn", js.undefined)
+    @scala.inline
+    def setDBParameterGroupFamily(value: String): Self = this.set("DBParameterGroupFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBParameterGroupFamily: Self = this.set("DBParameterGroupFamily", js.undefined)
+    @scala.inline
+    def setDBParameterGroupName(value: String): Self = this.set("DBParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBParameterGroupName: Self = this.set("DBParameterGroupName", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

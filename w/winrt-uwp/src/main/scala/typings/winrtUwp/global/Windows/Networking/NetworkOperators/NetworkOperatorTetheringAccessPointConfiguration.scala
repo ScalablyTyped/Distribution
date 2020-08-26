@@ -9,12 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Creates an instance of the NetworkOperatorTetheringAccessPointConfiguration . */
 class NetworkOperatorTetheringAccessPointConfiguration ()
-  extends typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringAccessPointConfiguration {
-  /** Gets or sets the passphrase used to authenticate the connection. */
-  /* CompleteClass */
-  override var passphrase: String = js.native
-  /** Gets or sets the network account ID. */
-  /* CompleteClass */
-  override var ssid: String = js.native
-}
+  extends typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringAccessPointConfiguration
 

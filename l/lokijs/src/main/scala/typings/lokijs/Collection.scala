@@ -215,6 +215,7 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     * @returns (this) resultset, or data array if any map or join functions where called
     */
   def chain(): Resultset[E with LokiObj] = js.native
+  def chain(transform: js.UndefOr[scala.Nothing], parameters: js.Object): Resultset[_] = js.native
   def chain(transform: String): Resultset[_] = js.native
   def chain(transform: String, parameters: js.Object): Resultset[_] = js.native
   def chain(transform: js.Array[String | Transform]): Resultset[_] = js.native
@@ -293,6 +294,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: js.Array[_],
     leftJoinProp: String,
     rightJoinProp: String,
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: js.Array[_],
+    leftJoinProp: String,
+    rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
   ): Resultset[_] = js.native
   def eqJoin(
@@ -303,6 +311,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(joinData: js.Array[_], leftJoinProp: String, rightJoinProp: js.Function1[/* obj */ js.Any, String]): Resultset[_] = js.native
+  def eqJoin(
+    joinData: js.Array[_],
+    leftJoinProp: String,
+    rightJoinProp: js.Function1[/* obj */ js.Any, String],
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[_] = js.native
   def eqJoin(
     joinData: js.Array[_],
     leftJoinProp: String,
@@ -321,6 +336,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: js.Array[_],
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: String,
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: js.Array[_],
+    leftJoinProp: js.Function1[/* obj */ js.Any, String],
+    rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
   ): Resultset[_] = js.native
   def eqJoin(
@@ -334,6 +356,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: js.Array[_],
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: js.Function1[/* obj */ js.Any, String]
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: js.Array[_],
+    leftJoinProp: js.Function1[/* obj */ js.Any, String],
+    rightJoinProp: js.Function1[/* obj */ js.Any, String],
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: js.Array[_],
@@ -366,6 +395,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: Collection[_],
     leftJoinProp: String,
     rightJoinProp: String,
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: Collection[_],
+    leftJoinProp: String,
+    rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
   ): Resultset[_] = js.native
   def eqJoin(
@@ -379,6 +415,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: Collection[_],
     leftJoinProp: String,
     rightJoinProp: js.Function1[/* obj */ js.Any, String]
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: Collection[_],
+    leftJoinProp: String,
+    rightJoinProp: js.Function1[/* obj */ js.Any, String],
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Collection[_],
@@ -402,6 +445,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: Collection[_],
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: String,
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: Collection[_],
+    leftJoinProp: js.Function1[/* obj */ js.Any, String],
+    rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
   ): Resultset[_] = js.native
   def eqJoin(
@@ -415,6 +465,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: Collection[_],
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: js.Function1[/* obj */ js.Any, String]
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: Collection[_],
+    leftJoinProp: js.Function1[/* obj */ js.Any, String],
+    rightJoinProp: js.Function1[/* obj */ js.Any, String],
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Collection[_],
@@ -434,6 +491,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: Resultset[_],
     leftJoinProp: String,
     rightJoinProp: String,
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: Resultset[_],
+    leftJoinProp: String,
+    rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
   ): Resultset[_] = js.native
   def eqJoin(
@@ -447,6 +511,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: Resultset[_],
     leftJoinProp: String,
     rightJoinProp: js.Function1[/* obj */ js.Any, String]
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: Resultset[_],
+    leftJoinProp: String,
+    rightJoinProp: js.Function1[/* obj */ js.Any, String],
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Resultset[_],
@@ -470,6 +541,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: Resultset[_],
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: String,
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: Resultset[_],
+    leftJoinProp: js.Function1[/* obj */ js.Any, String],
+    rightJoinProp: String,
     mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
   ): Resultset[_] = js.native
   def eqJoin(
@@ -483,6 +561,13 @@ trait Collection[E /* <: js.Object */] extends LokiEventEmitter {
     joinData: Resultset[_],
     leftJoinProp: js.Function1[/* obj */ js.Any, String],
     rightJoinProp: js.Function1[/* obj */ js.Any, String]
+  ): Resultset[_] = js.native
+  def eqJoin(
+    joinData: Resultset[_],
+    leftJoinProp: js.Function1[/* obj */ js.Any, String],
+    rightJoinProp: js.Function1[/* obj */ js.Any, String],
+    mapFun: js.UndefOr[scala.Nothing],
+    dataOptions: PartialGetDataOptions
   ): Resultset[_] = js.native
   def eqJoin(
     joinData: Resultset[_],

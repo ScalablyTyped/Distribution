@@ -35,6 +35,7 @@ trait FileSystem extends js.Object {
     thisValue: T
   ): Unit = js.native
   def open(path: String): FileBinaryMode | FileTextMode = js.native
+  def open(path: String, mode: js.UndefOr[scala.Nothing], encoding: Encoding): FileBinaryMode | FileTextMode = js.native
   def open(path: String, mode: String): FileBinaryMode | FileTextMode = js.native
   def open(path: String, mode: String, encoding: Encoding): FileBinaryMode | FileTextMode = js.native
   def remove(path: String): Unit = js.native

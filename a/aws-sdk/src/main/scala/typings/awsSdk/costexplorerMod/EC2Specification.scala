@@ -14,10 +14,26 @@ trait EC2Specification extends js.Object {
 
 object EC2Specification {
   @scala.inline
-  def apply(OfferingClass: OfferingClass = null): EC2Specification = {
+  def apply(): EC2Specification = {
     val __obj = js.Dynamic.literal()
-    if (OfferingClass != null) __obj.updateDynamic("OfferingClass")(OfferingClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[EC2Specification]
   }
+  @scala.inline
+  implicit class EC2SpecificationOps[Self <: EC2Specification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOfferingClass(value: OfferingClass): Self = this.set("OfferingClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingClass: Self = this.set("OfferingClass", js.undefined)
+  }
+  
 }
 

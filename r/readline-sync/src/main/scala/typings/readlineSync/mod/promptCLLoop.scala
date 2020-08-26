@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object promptCLLoop extends js.Object {
   def apply(): Unit = js.native
+  def apply(commandHandler: js.UndefOr[scala.Nothing], options: BasicOptions): Unit = js.native
   def apply(commandHandler: js.Function2[/* command */ String, /* repeated */ String, Boolean | Unit]): Unit = js.native
   def apply(
     commandHandler: js.Function2[/* command */ String, /* repeated */ String, Boolean | Unit],

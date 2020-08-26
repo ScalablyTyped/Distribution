@@ -26,16 +26,34 @@ trait SchemaEnvironmentMatrix extends js.Object {
 
 object SchemaEnvironmentMatrix {
   @scala.inline
-  def apply(
-    androidDeviceList: SchemaAndroidDeviceList = null,
-    androidMatrix: SchemaAndroidMatrix = null,
-    iosDeviceList: SchemaIosDeviceList = null
-  ): SchemaEnvironmentMatrix = {
+  def apply(): SchemaEnvironmentMatrix = {
     val __obj = js.Dynamic.literal()
-    if (androidDeviceList != null) __obj.updateDynamic("androidDeviceList")(androidDeviceList.asInstanceOf[js.Any])
-    if (androidMatrix != null) __obj.updateDynamic("androidMatrix")(androidMatrix.asInstanceOf[js.Any])
-    if (iosDeviceList != null) __obj.updateDynamic("iosDeviceList")(iosDeviceList.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnvironmentMatrix]
   }
+  @scala.inline
+  implicit class SchemaEnvironmentMatrixOps[Self <: SchemaEnvironmentMatrix] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidDeviceList(value: SchemaAndroidDeviceList): Self = this.set("androidDeviceList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidDeviceList: Self = this.set("androidDeviceList", js.undefined)
+    @scala.inline
+    def setAndroidMatrix(value: SchemaAndroidMatrix): Self = this.set("androidMatrix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidMatrix: Self = this.set("androidMatrix", js.undefined)
+    @scala.inline
+    def setIosDeviceList(value: SchemaIosDeviceList): Self = this.set("iosDeviceList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosDeviceList: Self = this.set("iosDeviceList", js.undefined)
+  }
+  
 }
 

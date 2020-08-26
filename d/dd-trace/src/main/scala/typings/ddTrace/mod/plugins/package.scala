@@ -64,6 +64,11 @@ package object plugins {
   type limitdClient = typings.ddTrace.mod.plugins.Integration
   /**
     * This plugin automatically instruments the
+    * [microgateway-core](https://github.com/apigee/microgateway-core) module.
+    */
+  type microgatewayCore = typings.ddTrace.mod.plugins.HttpServer
+  /**
+    * This plugin automatically instruments the
     * [paperplane](https://github.com/articulate/paperplane) module.
     */
   type paperplane = typings.ddTrace.mod.plugins.HttpServer

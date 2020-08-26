@@ -33,20 +33,42 @@ trait SchemaExportOptions extends js.Object {
 
 object SchemaExportOptions {
   @scala.inline
-  def apply(
-    driveOptions: SchemaDriveExportOptions = null,
-    groupsOptions: SchemaGroupsExportOptions = null,
-    hangoutsChatOptions: SchemaHangoutsChatExportOptions = null,
-    mailOptions: SchemaMailExportOptions = null,
-    region: String = null
-  ): SchemaExportOptions = {
+  def apply(): SchemaExportOptions = {
     val __obj = js.Dynamic.literal()
-    if (driveOptions != null) __obj.updateDynamic("driveOptions")(driveOptions.asInstanceOf[js.Any])
-    if (groupsOptions != null) __obj.updateDynamic("groupsOptions")(groupsOptions.asInstanceOf[js.Any])
-    if (hangoutsChatOptions != null) __obj.updateDynamic("hangoutsChatOptions")(hangoutsChatOptions.asInstanceOf[js.Any])
-    if (mailOptions != null) __obj.updateDynamic("mailOptions")(mailOptions.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExportOptions]
   }
+  @scala.inline
+  implicit class SchemaExportOptionsOps[Self <: SchemaExportOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDriveOptions(value: SchemaDriveExportOptions): Self = this.set("driveOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriveOptions: Self = this.set("driveOptions", js.undefined)
+    @scala.inline
+    def setGroupsOptions(value: SchemaGroupsExportOptions): Self = this.set("groupsOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupsOptions: Self = this.set("groupsOptions", js.undefined)
+    @scala.inline
+    def setHangoutsChatOptions(value: SchemaHangoutsChatExportOptions): Self = this.set("hangoutsChatOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHangoutsChatOptions: Self = this.set("hangoutsChatOptions", js.undefined)
+    @scala.inline
+    def setMailOptions(value: SchemaMailExportOptions): Self = this.set("mailOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMailOptions: Self = this.set("mailOptions", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+  }
+  
 }
 

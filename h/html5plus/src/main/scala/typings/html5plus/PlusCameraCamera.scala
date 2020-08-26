@@ -52,7 +52,23 @@ trait PlusCameraCamera extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
   def captureImage(): Unit = js.native
+  def captureImage(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusCameraCameraOptions
+  ): Unit = js.native
+  def captureImage(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def captureImage(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    options: PlusCameraCameraOptions
+  ): Unit = js.native
   def captureImage(successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
+  def captureImage(
+    successCB: js.Function1[/* result */ String, Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusCameraCameraOptions
+  ): Unit = js.native
   def captureImage(
     successCB: js.Function1[/* result */ String, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
@@ -71,7 +87,23 @@ trait PlusCameraCamera extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
   def startVideoCapture(): Unit = js.native
+  def startVideoCapture(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    option: PlusCameraCameraOptions
+  ): Unit = js.native
+  def startVideoCapture(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def startVideoCapture(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    option: PlusCameraCameraOptions
+  ): Unit = js.native
   def startVideoCapture(successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
+  def startVideoCapture(
+    successCB: js.Function1[/* result */ String, Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    option: PlusCameraCameraOptions
+  ): Unit = js.native
   def startVideoCapture(
     successCB: js.Function1[/* result */ String, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]

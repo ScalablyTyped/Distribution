@@ -28,6 +28,7 @@ class ResourceOrgunits protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceOrgunitsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceOrgunitsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -52,6 +53,7 @@ class ResourceOrgunits protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaOrgUnit] = js.native
   def get(callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
   def get(params: ParamsResourceOrgunitsGet): GaxiosPromise[SchemaOrgUnit] = js.native
   def get(params: ParamsResourceOrgunitsGet, callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def get(
@@ -80,6 +82,7 @@ class ResourceOrgunits protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOrgUnit] = js.native
   def insert(callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
   def insert(params: ParamsResourceOrgunitsInsert): GaxiosPromise[SchemaOrgUnit] = js.native
   def insert(params: ParamsResourceOrgunitsInsert, callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def insert(
@@ -109,6 +112,7 @@ class ResourceOrgunits protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaOrgUnits] = js.native
   def list(callback: BodyResponseCallback[SchemaOrgUnits]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgUnits] = js.native
   def list(params: ParamsResourceOrgunitsList): GaxiosPromise[SchemaOrgUnits] = js.native
   def list(params: ParamsResourceOrgunitsList, callback: BodyResponseCallback[SchemaOrgUnits]): Unit = js.native
   def list(
@@ -138,6 +142,7 @@ class ResourceOrgunits protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOrgUnit] = js.native
   def patch(callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
   def patch(params: ParamsResourceOrgunitsPatch): GaxiosPromise[SchemaOrgUnit] = js.native
   def patch(params: ParamsResourceOrgunitsPatch, callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def patch(
@@ -167,6 +172,7 @@ class ResourceOrgunits protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaOrgUnit] = js.native
   def update(callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
   def update(params: ParamsResourceOrgunitsUpdate): GaxiosPromise[SchemaOrgUnit] = js.native
   def update(params: ParamsResourceOrgunitsUpdate, callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def update(

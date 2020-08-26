@@ -18,14 +18,32 @@ trait ListEntitiesDetectionJobsResponse extends js.Object {
 
 object ListEntitiesDetectionJobsResponse {
   @scala.inline
-  def apply(
-    EntitiesDetectionJobPropertiesList: EntitiesDetectionJobPropertiesList = null,
-    NextToken: String = null
-  ): ListEntitiesDetectionJobsResponse = {
+  def apply(): ListEntitiesDetectionJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (EntitiesDetectionJobPropertiesList != null) __obj.updateDynamic("EntitiesDetectionJobPropertiesList")(EntitiesDetectionJobPropertiesList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEntitiesDetectionJobsResponse]
   }
+  @scala.inline
+  implicit class ListEntitiesDetectionJobsResponseOps[Self <: ListEntitiesDetectionJobsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntitiesDetectionJobPropertiesListVarargs(value: EntitiesDetectionJobProperties*): Self = this.set("EntitiesDetectionJobPropertiesList", js.Array(value :_*))
+    @scala.inline
+    def setEntitiesDetectionJobPropertiesList(value: EntitiesDetectionJobPropertiesList): Self = this.set("EntitiesDetectionJobPropertiesList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntitiesDetectionJobPropertiesList: Self = this.set("EntitiesDetectionJobPropertiesList", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

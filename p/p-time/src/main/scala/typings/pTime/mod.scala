@@ -1,6 +1,5 @@
 package typings.pTime
 
-import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  trait PromiseWithTime[ValueType] extends Promise[ValueType] {
+  trait PromiseWithTime[ValueType]
+    extends js.Promise[ValueType] {
     /**
     		The elapsed time in milliseconds.
     		*/

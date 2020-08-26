@@ -18,6 +18,7 @@ trait RowComponent extends js.Object {
     * If you want to add the row next to an existing row you can pass an optional third argument to the function that will position the new row next to the specified row (above or below based on the value of the second argument). This argument will take any of the standard row component look up options. This must be a row that has the same parent as the row you want to add
     **/
   def addTreeChild(rowData: js.Object): Unit = js.native
+  def addTreeChild(rowData: js.Object, position: js.UndefOr[scala.Nothing], existingRow: RowComponent): Unit = js.native
   def addTreeChild(rowData: js.Object, position: Boolean): Unit = js.native
   def addTreeChild(rowData: js.Object, position: Boolean, existingRow: RowComponent): Unit = js.native
   /** The delete function deletes the row, removing its data from the table

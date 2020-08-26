@@ -52,12 +52,21 @@ trait RenderTextureSystem extends System {
   val sourceFrame: Rectangle = js.native
   /**
     * Bind the current render texture
+    *
     * @param {PIXI.RenderTexture} [renderTexture] - RenderTexture to bind, by default its `null`, the screen
     * @param {PIXI.Rectangle} [sourceFrame] - part of screen that is mapped to the renderTexture
     * @param {PIXI.Rectangle} [destinationFrame] - part of renderTexture, by default it has the same size as sourceFrame
     */
   def bind(): Unit = js.native
+  def bind(
+    renderTexture: js.UndefOr[scala.Nothing],
+    sourceFrame: js.UndefOr[scala.Nothing],
+    destinationFrame: Rectangle
+  ): Unit = js.native
+  def bind(renderTexture: js.UndefOr[scala.Nothing], sourceFrame: Rectangle): Unit = js.native
+  def bind(renderTexture: js.UndefOr[scala.Nothing], sourceFrame: Rectangle, destinationFrame: Rectangle): Unit = js.native
   def bind(renderTexture: RenderTexture): Unit = js.native
+  def bind(renderTexture: RenderTexture, sourceFrame: js.UndefOr[scala.Nothing], destinationFrame: Rectangle): Unit = js.native
   def bind(renderTexture: RenderTexture, sourceFrame: Rectangle): Unit = js.native
   def bind(renderTexture: RenderTexture, sourceFrame: Rectangle, destinationFrame: Rectangle): Unit = js.native
   /**
@@ -69,6 +78,7 @@ trait RenderTextureSystem extends System {
     * @return {PIXI.Renderer} Returns itself.
     */
   def clear(): Renderer = js.native
+  def clear(clearColor: js.UndefOr[scala.Nothing], mask: BUFFER_BITS): Renderer = js.native
   def clear(clearColor: js.Array[Double]): Renderer = js.native
   def clear(clearColor: js.Array[Double], mask: BUFFER_BITS): Renderer = js.native
   /**

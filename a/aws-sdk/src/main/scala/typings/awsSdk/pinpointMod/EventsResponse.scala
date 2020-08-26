@@ -14,10 +14,26 @@ trait EventsResponse extends js.Object {
 
 object EventsResponse {
   @scala.inline
-  def apply(Results: MapOfItemResponse = null): EventsResponse = {
+  def apply(): EventsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Results != null) __obj.updateDynamic("Results")(Results.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventsResponse]
   }
+  @scala.inline
+  implicit class EventsResponseOps[Self <: EventsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResults(value: MapOfItemResponse): Self = this.set("Results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("Results", js.undefined)
+  }
+  
 }
 

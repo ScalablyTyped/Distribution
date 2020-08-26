@@ -54,30 +54,66 @@ trait SchemaTable extends js.Object {
 
 object SchemaTable {
   @scala.inline
-  def apply(
-    attribution: String = null,
-    attributionLink: String = null,
-    baseTableIds: js.Array[String] = null,
-    columns: js.Array[SchemaColumn] = null,
-    description: String = null,
-    isExportable: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    name: String = null,
-    sql: String = null,
-    tableId: String = null
-  ): SchemaTable = {
+  def apply(): SchemaTable = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (attributionLink != null) __obj.updateDynamic("attributionLink")(attributionLink.asInstanceOf[js.Any])
-    if (baseTableIds != null) __obj.updateDynamic("baseTableIds")(baseTableIds.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExportable)) __obj.updateDynamic("isExportable")(isExportable.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTable]
   }
+  @scala.inline
+  implicit class SchemaTableOps[Self <: SchemaTable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttribution(value: String): Self = this.set("attribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribution: Self = this.set("attribution", js.undefined)
+    @scala.inline
+    def setAttributionLink(value: String): Self = this.set("attributionLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributionLink: Self = this.set("attributionLink", js.undefined)
+    @scala.inline
+    def setBaseTableIdsVarargs(value: String*): Self = this.set("baseTableIds", js.Array(value :_*))
+    @scala.inline
+    def setBaseTableIds(value: js.Array[String]): Self = this.set("baseTableIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseTableIds: Self = this.set("baseTableIds", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: SchemaColumn*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[SchemaColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIsExportable(value: Boolean): Self = this.set("isExportable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsExportable: Self = this.set("isExportable", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSql: Self = this.set("sql", js.undefined)
+    @scala.inline
+    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableId: Self = this.set("tableId", js.undefined)
+  }
+  
 }
 

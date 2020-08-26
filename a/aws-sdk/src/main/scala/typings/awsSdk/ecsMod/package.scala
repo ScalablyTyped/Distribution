@@ -160,7 +160,7 @@ package object ecsMod {
   type InferenceAccelerators = js.Array[typings.awsSdk.ecsMod.InferenceAccelerator]
   type Integer = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.host_
+    - typings.awsSdk.awsSdkStrings.host__
     - typings.awsSdk.awsSdkStrings.task_
     - typings.awsSdk.awsSdkStrings.none__
     - java.lang.String
@@ -206,14 +206,14 @@ package object ecsMod {
   type NetworkInterfaces = js.Array[typings.awsSdk.ecsMod.NetworkInterface]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.bridge
-    - typings.awsSdk.awsSdkStrings.host_
+    - typings.awsSdk.awsSdkStrings.host__
     - typings.awsSdk.awsSdkStrings.awsvpc_
     - typings.awsSdk.awsSdkStrings.none__
     - java.lang.String
   */
   type NetworkMode = typings.awsSdk.ecsMod._NetworkMode | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.host_
+    - typings.awsSdk.awsSdkStrings.host__
     - typings.awsSdk.awsSdkStrings.task_
     - java.lang.String
   */

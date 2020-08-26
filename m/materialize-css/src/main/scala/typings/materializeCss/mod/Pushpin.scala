@@ -9,13 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "Pushpin")
 @js.native
 class Pushpin ()
-  extends typings.materializeCss.M.Pushpin {
-  /**
-    * Original offsetTop of element
-    */
-  /* CompleteClass */
-  override var originalOffset: Double = js.native
-}
+  extends typings.materializeCss.M.Pushpin
 
 /* static members */
 @JSImport("materialize-css", "Pushpin")

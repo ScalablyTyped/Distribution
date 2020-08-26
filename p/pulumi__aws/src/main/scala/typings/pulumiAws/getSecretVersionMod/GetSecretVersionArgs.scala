@@ -22,11 +22,32 @@ trait GetSecretVersionArgs extends js.Object {
 
 object GetSecretVersionArgs {
   @scala.inline
-  def apply(secretId: String, versionId: String = null, versionStage: String = null): GetSecretVersionArgs = {
+  def apply(secretId: String): GetSecretVersionArgs = {
     val __obj = js.Dynamic.literal(secretId = secretId.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
-    if (versionStage != null) __obj.updateDynamic("versionStage")(versionStage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSecretVersionArgs]
   }
+  @scala.inline
+  implicit class GetSecretVersionArgsOps[Self <: GetSecretVersionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecretId(value: String): Self = this.set("secretId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersionId(value: String): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    @scala.inline
+    def setVersionStage(value: String): Self = this.set("versionStage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionStage: Self = this.set("versionStage", js.undefined)
+  }
+  
 }
 

@@ -9,24 +9,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Compression extends js.Object {
-  var compression: js.UndefOr[Double] = js.undefined
-  var level: js.UndefOr[Double] = js.undefined
-  var strategy: js.UndefOr[FILTERED | HUFFMAN_ONLY | RLE | FIXED | DEFAULT] = js.undefined
+  var compression: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.native
+  var strategy: js.UndefOr[FILTERED | HUFFMAN_ONLY | RLE | FIXED | DEFAULT] = js.native
 }
 
 object Compression {
   @scala.inline
-  def apply(
-    compression: js.UndefOr[Double] = js.undefined,
-    level: js.UndefOr[Double] = js.undefined,
-    strategy: FILTERED | HUFFMAN_ONLY | RLE | FIXED | DEFAULT = null
-  ): Compression = {
+  def apply(): Compression = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Compression]
   }
+  @scala.inline
+  implicit class CompressionOps[Self <: Compression] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompression(value: Double): Self = this.set("compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompression: Self = this.set("compression", js.undefined)
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setStrategy(value: FILTERED | HUFFMAN_ONLY | RLE | FIXED | DEFAULT): Self = this.set("strategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrategy: Self = this.set("strategy", js.undefined)
+  }
+  
 }
 

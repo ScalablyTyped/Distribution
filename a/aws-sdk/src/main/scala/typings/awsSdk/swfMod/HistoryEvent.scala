@@ -238,121 +238,244 @@ trait HistoryEvent extends js.Object {
 
 object HistoryEvent {
   @scala.inline
-  def apply(
-    eventId: EventId,
-    eventTimestamp: Timestamp,
-    eventType: EventType,
-    activityTaskCancelRequestedEventAttributes: ActivityTaskCancelRequestedEventAttributes = null,
-    activityTaskCanceledEventAttributes: ActivityTaskCanceledEventAttributes = null,
-    activityTaskCompletedEventAttributes: ActivityTaskCompletedEventAttributes = null,
-    activityTaskFailedEventAttributes: ActivityTaskFailedEventAttributes = null,
-    activityTaskScheduledEventAttributes: ActivityTaskScheduledEventAttributes = null,
-    activityTaskStartedEventAttributes: ActivityTaskStartedEventAttributes = null,
-    activityTaskTimedOutEventAttributes: ActivityTaskTimedOutEventAttributes = null,
-    cancelTimerFailedEventAttributes: CancelTimerFailedEventAttributes = null,
-    cancelWorkflowExecutionFailedEventAttributes: CancelWorkflowExecutionFailedEventAttributes = null,
-    childWorkflowExecutionCanceledEventAttributes: ChildWorkflowExecutionCanceledEventAttributes = null,
-    childWorkflowExecutionCompletedEventAttributes: ChildWorkflowExecutionCompletedEventAttributes = null,
-    childWorkflowExecutionFailedEventAttributes: ChildWorkflowExecutionFailedEventAttributes = null,
-    childWorkflowExecutionStartedEventAttributes: ChildWorkflowExecutionStartedEventAttributes = null,
-    childWorkflowExecutionTerminatedEventAttributes: ChildWorkflowExecutionTerminatedEventAttributes = null,
-    childWorkflowExecutionTimedOutEventAttributes: ChildWorkflowExecutionTimedOutEventAttributes = null,
-    completeWorkflowExecutionFailedEventAttributes: CompleteWorkflowExecutionFailedEventAttributes = null,
-    continueAsNewWorkflowExecutionFailedEventAttributes: ContinueAsNewWorkflowExecutionFailedEventAttributes = null,
-    decisionTaskCompletedEventAttributes: DecisionTaskCompletedEventAttributes = null,
-    decisionTaskScheduledEventAttributes: DecisionTaskScheduledEventAttributes = null,
-    decisionTaskStartedEventAttributes: DecisionTaskStartedEventAttributes = null,
-    decisionTaskTimedOutEventAttributes: DecisionTaskTimedOutEventAttributes = null,
-    externalWorkflowExecutionCancelRequestedEventAttributes: ExternalWorkflowExecutionCancelRequestedEventAttributes = null,
-    externalWorkflowExecutionSignaledEventAttributes: ExternalWorkflowExecutionSignaledEventAttributes = null,
-    failWorkflowExecutionFailedEventAttributes: FailWorkflowExecutionFailedEventAttributes = null,
-    lambdaFunctionCompletedEventAttributes: LambdaFunctionCompletedEventAttributes = null,
-    lambdaFunctionFailedEventAttributes: LambdaFunctionFailedEventAttributes = null,
-    lambdaFunctionScheduledEventAttributes: LambdaFunctionScheduledEventAttributes = null,
-    lambdaFunctionStartedEventAttributes: LambdaFunctionStartedEventAttributes = null,
-    lambdaFunctionTimedOutEventAttributes: LambdaFunctionTimedOutEventAttributes = null,
-    markerRecordedEventAttributes: MarkerRecordedEventAttributes = null,
-    recordMarkerFailedEventAttributes: RecordMarkerFailedEventAttributes = null,
-    requestCancelActivityTaskFailedEventAttributes: RequestCancelActivityTaskFailedEventAttributes = null,
-    requestCancelExternalWorkflowExecutionFailedEventAttributes: RequestCancelExternalWorkflowExecutionFailedEventAttributes = null,
-    requestCancelExternalWorkflowExecutionInitiatedEventAttributes: RequestCancelExternalWorkflowExecutionInitiatedEventAttributes = null,
-    scheduleActivityTaskFailedEventAttributes: ScheduleActivityTaskFailedEventAttributes = null,
-    scheduleLambdaFunctionFailedEventAttributes: ScheduleLambdaFunctionFailedEventAttributes = null,
-    signalExternalWorkflowExecutionFailedEventAttributes: SignalExternalWorkflowExecutionFailedEventAttributes = null,
-    signalExternalWorkflowExecutionInitiatedEventAttributes: SignalExternalWorkflowExecutionInitiatedEventAttributes = null,
-    startChildWorkflowExecutionFailedEventAttributes: StartChildWorkflowExecutionFailedEventAttributes = null,
-    startChildWorkflowExecutionInitiatedEventAttributes: StartChildWorkflowExecutionInitiatedEventAttributes = null,
-    startLambdaFunctionFailedEventAttributes: StartLambdaFunctionFailedEventAttributes = null,
-    startTimerFailedEventAttributes: StartTimerFailedEventAttributes = null,
-    timerCanceledEventAttributes: TimerCanceledEventAttributes = null,
-    timerFiredEventAttributes: TimerFiredEventAttributes = null,
-    timerStartedEventAttributes: TimerStartedEventAttributes = null,
-    workflowExecutionCancelRequestedEventAttributes: WorkflowExecutionCancelRequestedEventAttributes = null,
-    workflowExecutionCanceledEventAttributes: WorkflowExecutionCanceledEventAttributes = null,
-    workflowExecutionCompletedEventAttributes: WorkflowExecutionCompletedEventAttributes = null,
-    workflowExecutionContinuedAsNewEventAttributes: WorkflowExecutionContinuedAsNewEventAttributes = null,
-    workflowExecutionFailedEventAttributes: WorkflowExecutionFailedEventAttributes = null,
-    workflowExecutionSignaledEventAttributes: WorkflowExecutionSignaledEventAttributes = null,
-    workflowExecutionStartedEventAttributes: WorkflowExecutionStartedEventAttributes = null,
-    workflowExecutionTerminatedEventAttributes: WorkflowExecutionTerminatedEventAttributes = null,
-    workflowExecutionTimedOutEventAttributes: WorkflowExecutionTimedOutEventAttributes = null
-  ): HistoryEvent = {
+  def apply(eventId: EventId, eventTimestamp: Timestamp, eventType: EventType): HistoryEvent = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], eventTimestamp = eventTimestamp.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any])
-    if (activityTaskCancelRequestedEventAttributes != null) __obj.updateDynamic("activityTaskCancelRequestedEventAttributes")(activityTaskCancelRequestedEventAttributes.asInstanceOf[js.Any])
-    if (activityTaskCanceledEventAttributes != null) __obj.updateDynamic("activityTaskCanceledEventAttributes")(activityTaskCanceledEventAttributes.asInstanceOf[js.Any])
-    if (activityTaskCompletedEventAttributes != null) __obj.updateDynamic("activityTaskCompletedEventAttributes")(activityTaskCompletedEventAttributes.asInstanceOf[js.Any])
-    if (activityTaskFailedEventAttributes != null) __obj.updateDynamic("activityTaskFailedEventAttributes")(activityTaskFailedEventAttributes.asInstanceOf[js.Any])
-    if (activityTaskScheduledEventAttributes != null) __obj.updateDynamic("activityTaskScheduledEventAttributes")(activityTaskScheduledEventAttributes.asInstanceOf[js.Any])
-    if (activityTaskStartedEventAttributes != null) __obj.updateDynamic("activityTaskStartedEventAttributes")(activityTaskStartedEventAttributes.asInstanceOf[js.Any])
-    if (activityTaskTimedOutEventAttributes != null) __obj.updateDynamic("activityTaskTimedOutEventAttributes")(activityTaskTimedOutEventAttributes.asInstanceOf[js.Any])
-    if (cancelTimerFailedEventAttributes != null) __obj.updateDynamic("cancelTimerFailedEventAttributes")(cancelTimerFailedEventAttributes.asInstanceOf[js.Any])
-    if (cancelWorkflowExecutionFailedEventAttributes != null) __obj.updateDynamic("cancelWorkflowExecutionFailedEventAttributes")(cancelWorkflowExecutionFailedEventAttributes.asInstanceOf[js.Any])
-    if (childWorkflowExecutionCanceledEventAttributes != null) __obj.updateDynamic("childWorkflowExecutionCanceledEventAttributes")(childWorkflowExecutionCanceledEventAttributes.asInstanceOf[js.Any])
-    if (childWorkflowExecutionCompletedEventAttributes != null) __obj.updateDynamic("childWorkflowExecutionCompletedEventAttributes")(childWorkflowExecutionCompletedEventAttributes.asInstanceOf[js.Any])
-    if (childWorkflowExecutionFailedEventAttributes != null) __obj.updateDynamic("childWorkflowExecutionFailedEventAttributes")(childWorkflowExecutionFailedEventAttributes.asInstanceOf[js.Any])
-    if (childWorkflowExecutionStartedEventAttributes != null) __obj.updateDynamic("childWorkflowExecutionStartedEventAttributes")(childWorkflowExecutionStartedEventAttributes.asInstanceOf[js.Any])
-    if (childWorkflowExecutionTerminatedEventAttributes != null) __obj.updateDynamic("childWorkflowExecutionTerminatedEventAttributes")(childWorkflowExecutionTerminatedEventAttributes.asInstanceOf[js.Any])
-    if (childWorkflowExecutionTimedOutEventAttributes != null) __obj.updateDynamic("childWorkflowExecutionTimedOutEventAttributes")(childWorkflowExecutionTimedOutEventAttributes.asInstanceOf[js.Any])
-    if (completeWorkflowExecutionFailedEventAttributes != null) __obj.updateDynamic("completeWorkflowExecutionFailedEventAttributes")(completeWorkflowExecutionFailedEventAttributes.asInstanceOf[js.Any])
-    if (continueAsNewWorkflowExecutionFailedEventAttributes != null) __obj.updateDynamic("continueAsNewWorkflowExecutionFailedEventAttributes")(continueAsNewWorkflowExecutionFailedEventAttributes.asInstanceOf[js.Any])
-    if (decisionTaskCompletedEventAttributes != null) __obj.updateDynamic("decisionTaskCompletedEventAttributes")(decisionTaskCompletedEventAttributes.asInstanceOf[js.Any])
-    if (decisionTaskScheduledEventAttributes != null) __obj.updateDynamic("decisionTaskScheduledEventAttributes")(decisionTaskScheduledEventAttributes.asInstanceOf[js.Any])
-    if (decisionTaskStartedEventAttributes != null) __obj.updateDynamic("decisionTaskStartedEventAttributes")(decisionTaskStartedEventAttributes.asInstanceOf[js.Any])
-    if (decisionTaskTimedOutEventAttributes != null) __obj.updateDynamic("decisionTaskTimedOutEventAttributes")(decisionTaskTimedOutEventAttributes.asInstanceOf[js.Any])
-    if (externalWorkflowExecutionCancelRequestedEventAttributes != null) __obj.updateDynamic("externalWorkflowExecutionCancelRequestedEventAttributes")(externalWorkflowExecutionCancelRequestedEventAttributes.asInstanceOf[js.Any])
-    if (externalWorkflowExecutionSignaledEventAttributes != null) __obj.updateDynamic("externalWorkflowExecutionSignaledEventAttributes")(externalWorkflowExecutionSignaledEventAttributes.asInstanceOf[js.Any])
-    if (failWorkflowExecutionFailedEventAttributes != null) __obj.updateDynamic("failWorkflowExecutionFailedEventAttributes")(failWorkflowExecutionFailedEventAttributes.asInstanceOf[js.Any])
-    if (lambdaFunctionCompletedEventAttributes != null) __obj.updateDynamic("lambdaFunctionCompletedEventAttributes")(lambdaFunctionCompletedEventAttributes.asInstanceOf[js.Any])
-    if (lambdaFunctionFailedEventAttributes != null) __obj.updateDynamic("lambdaFunctionFailedEventAttributes")(lambdaFunctionFailedEventAttributes.asInstanceOf[js.Any])
-    if (lambdaFunctionScheduledEventAttributes != null) __obj.updateDynamic("lambdaFunctionScheduledEventAttributes")(lambdaFunctionScheduledEventAttributes.asInstanceOf[js.Any])
-    if (lambdaFunctionStartedEventAttributes != null) __obj.updateDynamic("lambdaFunctionStartedEventAttributes")(lambdaFunctionStartedEventAttributes.asInstanceOf[js.Any])
-    if (lambdaFunctionTimedOutEventAttributes != null) __obj.updateDynamic("lambdaFunctionTimedOutEventAttributes")(lambdaFunctionTimedOutEventAttributes.asInstanceOf[js.Any])
-    if (markerRecordedEventAttributes != null) __obj.updateDynamic("markerRecordedEventAttributes")(markerRecordedEventAttributes.asInstanceOf[js.Any])
-    if (recordMarkerFailedEventAttributes != null) __obj.updateDynamic("recordMarkerFailedEventAttributes")(recordMarkerFailedEventAttributes.asInstanceOf[js.Any])
-    if (requestCancelActivityTaskFailedEventAttributes != null) __obj.updateDynamic("requestCancelActivityTaskFailedEventAttributes")(requestCancelActivityTaskFailedEventAttributes.asInstanceOf[js.Any])
-    if (requestCancelExternalWorkflowExecutionFailedEventAttributes != null) __obj.updateDynamic("requestCancelExternalWorkflowExecutionFailedEventAttributes")(requestCancelExternalWorkflowExecutionFailedEventAttributes.asInstanceOf[js.Any])
-    if (requestCancelExternalWorkflowExecutionInitiatedEventAttributes != null) __obj.updateDynamic("requestCancelExternalWorkflowExecutionInitiatedEventAttributes")(requestCancelExternalWorkflowExecutionInitiatedEventAttributes.asInstanceOf[js.Any])
-    if (scheduleActivityTaskFailedEventAttributes != null) __obj.updateDynamic("scheduleActivityTaskFailedEventAttributes")(scheduleActivityTaskFailedEventAttributes.asInstanceOf[js.Any])
-    if (scheduleLambdaFunctionFailedEventAttributes != null) __obj.updateDynamic("scheduleLambdaFunctionFailedEventAttributes")(scheduleLambdaFunctionFailedEventAttributes.asInstanceOf[js.Any])
-    if (signalExternalWorkflowExecutionFailedEventAttributes != null) __obj.updateDynamic("signalExternalWorkflowExecutionFailedEventAttributes")(signalExternalWorkflowExecutionFailedEventAttributes.asInstanceOf[js.Any])
-    if (signalExternalWorkflowExecutionInitiatedEventAttributes != null) __obj.updateDynamic("signalExternalWorkflowExecutionInitiatedEventAttributes")(signalExternalWorkflowExecutionInitiatedEventAttributes.asInstanceOf[js.Any])
-    if (startChildWorkflowExecutionFailedEventAttributes != null) __obj.updateDynamic("startChildWorkflowExecutionFailedEventAttributes")(startChildWorkflowExecutionFailedEventAttributes.asInstanceOf[js.Any])
-    if (startChildWorkflowExecutionInitiatedEventAttributes != null) __obj.updateDynamic("startChildWorkflowExecutionInitiatedEventAttributes")(startChildWorkflowExecutionInitiatedEventAttributes.asInstanceOf[js.Any])
-    if (startLambdaFunctionFailedEventAttributes != null) __obj.updateDynamic("startLambdaFunctionFailedEventAttributes")(startLambdaFunctionFailedEventAttributes.asInstanceOf[js.Any])
-    if (startTimerFailedEventAttributes != null) __obj.updateDynamic("startTimerFailedEventAttributes")(startTimerFailedEventAttributes.asInstanceOf[js.Any])
-    if (timerCanceledEventAttributes != null) __obj.updateDynamic("timerCanceledEventAttributes")(timerCanceledEventAttributes.asInstanceOf[js.Any])
-    if (timerFiredEventAttributes != null) __obj.updateDynamic("timerFiredEventAttributes")(timerFiredEventAttributes.asInstanceOf[js.Any])
-    if (timerStartedEventAttributes != null) __obj.updateDynamic("timerStartedEventAttributes")(timerStartedEventAttributes.asInstanceOf[js.Any])
-    if (workflowExecutionCancelRequestedEventAttributes != null) __obj.updateDynamic("workflowExecutionCancelRequestedEventAttributes")(workflowExecutionCancelRequestedEventAttributes.asInstanceOf[js.Any])
-    if (workflowExecutionCanceledEventAttributes != null) __obj.updateDynamic("workflowExecutionCanceledEventAttributes")(workflowExecutionCanceledEventAttributes.asInstanceOf[js.Any])
-    if (workflowExecutionCompletedEventAttributes != null) __obj.updateDynamic("workflowExecutionCompletedEventAttributes")(workflowExecutionCompletedEventAttributes.asInstanceOf[js.Any])
-    if (workflowExecutionContinuedAsNewEventAttributes != null) __obj.updateDynamic("workflowExecutionContinuedAsNewEventAttributes")(workflowExecutionContinuedAsNewEventAttributes.asInstanceOf[js.Any])
-    if (workflowExecutionFailedEventAttributes != null) __obj.updateDynamic("workflowExecutionFailedEventAttributes")(workflowExecutionFailedEventAttributes.asInstanceOf[js.Any])
-    if (workflowExecutionSignaledEventAttributes != null) __obj.updateDynamic("workflowExecutionSignaledEventAttributes")(workflowExecutionSignaledEventAttributes.asInstanceOf[js.Any])
-    if (workflowExecutionStartedEventAttributes != null) __obj.updateDynamic("workflowExecutionStartedEventAttributes")(workflowExecutionStartedEventAttributes.asInstanceOf[js.Any])
-    if (workflowExecutionTerminatedEventAttributes != null) __obj.updateDynamic("workflowExecutionTerminatedEventAttributes")(workflowExecutionTerminatedEventAttributes.asInstanceOf[js.Any])
-    if (workflowExecutionTimedOutEventAttributes != null) __obj.updateDynamic("workflowExecutionTimedOutEventAttributes")(workflowExecutionTimedOutEventAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryEvent]
   }
+  @scala.inline
+  implicit class HistoryEventOps[Self <: HistoryEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventId(value: EventId): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventTimestamp(value: Timestamp): Self = this.set("eventTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventType(value: EventType): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivityTaskCancelRequestedEventAttributes(value: ActivityTaskCancelRequestedEventAttributes): Self = this.set("activityTaskCancelRequestedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityTaskCancelRequestedEventAttributes: Self = this.set("activityTaskCancelRequestedEventAttributes", js.undefined)
+    @scala.inline
+    def setActivityTaskCanceledEventAttributes(value: ActivityTaskCanceledEventAttributes): Self = this.set("activityTaskCanceledEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityTaskCanceledEventAttributes: Self = this.set("activityTaskCanceledEventAttributes", js.undefined)
+    @scala.inline
+    def setActivityTaskCompletedEventAttributes(value: ActivityTaskCompletedEventAttributes): Self = this.set("activityTaskCompletedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityTaskCompletedEventAttributes: Self = this.set("activityTaskCompletedEventAttributes", js.undefined)
+    @scala.inline
+    def setActivityTaskFailedEventAttributes(value: ActivityTaskFailedEventAttributes): Self = this.set("activityTaskFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityTaskFailedEventAttributes: Self = this.set("activityTaskFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setActivityTaskScheduledEventAttributes(value: ActivityTaskScheduledEventAttributes): Self = this.set("activityTaskScheduledEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityTaskScheduledEventAttributes: Self = this.set("activityTaskScheduledEventAttributes", js.undefined)
+    @scala.inline
+    def setActivityTaskStartedEventAttributes(value: ActivityTaskStartedEventAttributes): Self = this.set("activityTaskStartedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityTaskStartedEventAttributes: Self = this.set("activityTaskStartedEventAttributes", js.undefined)
+    @scala.inline
+    def setActivityTaskTimedOutEventAttributes(value: ActivityTaskTimedOutEventAttributes): Self = this.set("activityTaskTimedOutEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityTaskTimedOutEventAttributes: Self = this.set("activityTaskTimedOutEventAttributes", js.undefined)
+    @scala.inline
+    def setCancelTimerFailedEventAttributes(value: CancelTimerFailedEventAttributes): Self = this.set("cancelTimerFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelTimerFailedEventAttributes: Self = this.set("cancelTimerFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setCancelWorkflowExecutionFailedEventAttributes(value: CancelWorkflowExecutionFailedEventAttributes): Self = this.set("cancelWorkflowExecutionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelWorkflowExecutionFailedEventAttributes: Self = this.set("cancelWorkflowExecutionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setChildWorkflowExecutionCanceledEventAttributes(value: ChildWorkflowExecutionCanceledEventAttributes): Self = this.set("childWorkflowExecutionCanceledEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildWorkflowExecutionCanceledEventAttributes: Self = this.set("childWorkflowExecutionCanceledEventAttributes", js.undefined)
+    @scala.inline
+    def setChildWorkflowExecutionCompletedEventAttributes(value: ChildWorkflowExecutionCompletedEventAttributes): Self = this.set("childWorkflowExecutionCompletedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildWorkflowExecutionCompletedEventAttributes: Self = this.set("childWorkflowExecutionCompletedEventAttributes", js.undefined)
+    @scala.inline
+    def setChildWorkflowExecutionFailedEventAttributes(value: ChildWorkflowExecutionFailedEventAttributes): Self = this.set("childWorkflowExecutionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildWorkflowExecutionFailedEventAttributes: Self = this.set("childWorkflowExecutionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setChildWorkflowExecutionStartedEventAttributes(value: ChildWorkflowExecutionStartedEventAttributes): Self = this.set("childWorkflowExecutionStartedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildWorkflowExecutionStartedEventAttributes: Self = this.set("childWorkflowExecutionStartedEventAttributes", js.undefined)
+    @scala.inline
+    def setChildWorkflowExecutionTerminatedEventAttributes(value: ChildWorkflowExecutionTerminatedEventAttributes): Self = this.set("childWorkflowExecutionTerminatedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildWorkflowExecutionTerminatedEventAttributes: Self = this.set("childWorkflowExecutionTerminatedEventAttributes", js.undefined)
+    @scala.inline
+    def setChildWorkflowExecutionTimedOutEventAttributes(value: ChildWorkflowExecutionTimedOutEventAttributes): Self = this.set("childWorkflowExecutionTimedOutEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildWorkflowExecutionTimedOutEventAttributes: Self = this.set("childWorkflowExecutionTimedOutEventAttributes", js.undefined)
+    @scala.inline
+    def setCompleteWorkflowExecutionFailedEventAttributes(value: CompleteWorkflowExecutionFailedEventAttributes): Self = this.set("completeWorkflowExecutionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleteWorkflowExecutionFailedEventAttributes: Self = this.set("completeWorkflowExecutionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setContinueAsNewWorkflowExecutionFailedEventAttributes(value: ContinueAsNewWorkflowExecutionFailedEventAttributes): Self = this.set("continueAsNewWorkflowExecutionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinueAsNewWorkflowExecutionFailedEventAttributes: Self = this.set("continueAsNewWorkflowExecutionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setDecisionTaskCompletedEventAttributes(value: DecisionTaskCompletedEventAttributes): Self = this.set("decisionTaskCompletedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecisionTaskCompletedEventAttributes: Self = this.set("decisionTaskCompletedEventAttributes", js.undefined)
+    @scala.inline
+    def setDecisionTaskScheduledEventAttributes(value: DecisionTaskScheduledEventAttributes): Self = this.set("decisionTaskScheduledEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecisionTaskScheduledEventAttributes: Self = this.set("decisionTaskScheduledEventAttributes", js.undefined)
+    @scala.inline
+    def setDecisionTaskStartedEventAttributes(value: DecisionTaskStartedEventAttributes): Self = this.set("decisionTaskStartedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecisionTaskStartedEventAttributes: Self = this.set("decisionTaskStartedEventAttributes", js.undefined)
+    @scala.inline
+    def setDecisionTaskTimedOutEventAttributes(value: DecisionTaskTimedOutEventAttributes): Self = this.set("decisionTaskTimedOutEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecisionTaskTimedOutEventAttributes: Self = this.set("decisionTaskTimedOutEventAttributes", js.undefined)
+    @scala.inline
+    def setExternalWorkflowExecutionCancelRequestedEventAttributes(value: ExternalWorkflowExecutionCancelRequestedEventAttributes): Self = this.set("externalWorkflowExecutionCancelRequestedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalWorkflowExecutionCancelRequestedEventAttributes: Self = this.set("externalWorkflowExecutionCancelRequestedEventAttributes", js.undefined)
+    @scala.inline
+    def setExternalWorkflowExecutionSignaledEventAttributes(value: ExternalWorkflowExecutionSignaledEventAttributes): Self = this.set("externalWorkflowExecutionSignaledEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalWorkflowExecutionSignaledEventAttributes: Self = this.set("externalWorkflowExecutionSignaledEventAttributes", js.undefined)
+    @scala.inline
+    def setFailWorkflowExecutionFailedEventAttributes(value: FailWorkflowExecutionFailedEventAttributes): Self = this.set("failWorkflowExecutionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailWorkflowExecutionFailedEventAttributes: Self = this.set("failWorkflowExecutionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setLambdaFunctionCompletedEventAttributes(value: LambdaFunctionCompletedEventAttributes): Self = this.set("lambdaFunctionCompletedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaFunctionCompletedEventAttributes: Self = this.set("lambdaFunctionCompletedEventAttributes", js.undefined)
+    @scala.inline
+    def setLambdaFunctionFailedEventAttributes(value: LambdaFunctionFailedEventAttributes): Self = this.set("lambdaFunctionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaFunctionFailedEventAttributes: Self = this.set("lambdaFunctionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setLambdaFunctionScheduledEventAttributes(value: LambdaFunctionScheduledEventAttributes): Self = this.set("lambdaFunctionScheduledEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaFunctionScheduledEventAttributes: Self = this.set("lambdaFunctionScheduledEventAttributes", js.undefined)
+    @scala.inline
+    def setLambdaFunctionStartedEventAttributes(value: LambdaFunctionStartedEventAttributes): Self = this.set("lambdaFunctionStartedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaFunctionStartedEventAttributes: Self = this.set("lambdaFunctionStartedEventAttributes", js.undefined)
+    @scala.inline
+    def setLambdaFunctionTimedOutEventAttributes(value: LambdaFunctionTimedOutEventAttributes): Self = this.set("lambdaFunctionTimedOutEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaFunctionTimedOutEventAttributes: Self = this.set("lambdaFunctionTimedOutEventAttributes", js.undefined)
+    @scala.inline
+    def setMarkerRecordedEventAttributes(value: MarkerRecordedEventAttributes): Self = this.set("markerRecordedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerRecordedEventAttributes: Self = this.set("markerRecordedEventAttributes", js.undefined)
+    @scala.inline
+    def setRecordMarkerFailedEventAttributes(value: RecordMarkerFailedEventAttributes): Self = this.set("recordMarkerFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordMarkerFailedEventAttributes: Self = this.set("recordMarkerFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setRequestCancelActivityTaskFailedEventAttributes(value: RequestCancelActivityTaskFailedEventAttributes): Self = this.set("requestCancelActivityTaskFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCancelActivityTaskFailedEventAttributes: Self = this.set("requestCancelActivityTaskFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setRequestCancelExternalWorkflowExecutionFailedEventAttributes(value: RequestCancelExternalWorkflowExecutionFailedEventAttributes): Self = this.set("requestCancelExternalWorkflowExecutionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCancelExternalWorkflowExecutionFailedEventAttributes: Self = this.set("requestCancelExternalWorkflowExecutionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setRequestCancelExternalWorkflowExecutionInitiatedEventAttributes(value: RequestCancelExternalWorkflowExecutionInitiatedEventAttributes): Self = this.set("requestCancelExternalWorkflowExecutionInitiatedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCancelExternalWorkflowExecutionInitiatedEventAttributes: Self = this.set("requestCancelExternalWorkflowExecutionInitiatedEventAttributes", js.undefined)
+    @scala.inline
+    def setScheduleActivityTaskFailedEventAttributes(value: ScheduleActivityTaskFailedEventAttributes): Self = this.set("scheduleActivityTaskFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleActivityTaskFailedEventAttributes: Self = this.set("scheduleActivityTaskFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setScheduleLambdaFunctionFailedEventAttributes(value: ScheduleLambdaFunctionFailedEventAttributes): Self = this.set("scheduleLambdaFunctionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleLambdaFunctionFailedEventAttributes: Self = this.set("scheduleLambdaFunctionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setSignalExternalWorkflowExecutionFailedEventAttributes(value: SignalExternalWorkflowExecutionFailedEventAttributes): Self = this.set("signalExternalWorkflowExecutionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignalExternalWorkflowExecutionFailedEventAttributes: Self = this.set("signalExternalWorkflowExecutionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setSignalExternalWorkflowExecutionInitiatedEventAttributes(value: SignalExternalWorkflowExecutionInitiatedEventAttributes): Self = this.set("signalExternalWorkflowExecutionInitiatedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignalExternalWorkflowExecutionInitiatedEventAttributes: Self = this.set("signalExternalWorkflowExecutionInitiatedEventAttributes", js.undefined)
+    @scala.inline
+    def setStartChildWorkflowExecutionFailedEventAttributes(value: StartChildWorkflowExecutionFailedEventAttributes): Self = this.set("startChildWorkflowExecutionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartChildWorkflowExecutionFailedEventAttributes: Self = this.set("startChildWorkflowExecutionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setStartChildWorkflowExecutionInitiatedEventAttributes(value: StartChildWorkflowExecutionInitiatedEventAttributes): Self = this.set("startChildWorkflowExecutionInitiatedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartChildWorkflowExecutionInitiatedEventAttributes: Self = this.set("startChildWorkflowExecutionInitiatedEventAttributes", js.undefined)
+    @scala.inline
+    def setStartLambdaFunctionFailedEventAttributes(value: StartLambdaFunctionFailedEventAttributes): Self = this.set("startLambdaFunctionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartLambdaFunctionFailedEventAttributes: Self = this.set("startLambdaFunctionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setStartTimerFailedEventAttributes(value: StartTimerFailedEventAttributes): Self = this.set("startTimerFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimerFailedEventAttributes: Self = this.set("startTimerFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setTimerCanceledEventAttributes(value: TimerCanceledEventAttributes): Self = this.set("timerCanceledEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimerCanceledEventAttributes: Self = this.set("timerCanceledEventAttributes", js.undefined)
+    @scala.inline
+    def setTimerFiredEventAttributes(value: TimerFiredEventAttributes): Self = this.set("timerFiredEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimerFiredEventAttributes: Self = this.set("timerFiredEventAttributes", js.undefined)
+    @scala.inline
+    def setTimerStartedEventAttributes(value: TimerStartedEventAttributes): Self = this.set("timerStartedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimerStartedEventAttributes: Self = this.set("timerStartedEventAttributes", js.undefined)
+    @scala.inline
+    def setWorkflowExecutionCancelRequestedEventAttributes(value: WorkflowExecutionCancelRequestedEventAttributes): Self = this.set("workflowExecutionCancelRequestedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowExecutionCancelRequestedEventAttributes: Self = this.set("workflowExecutionCancelRequestedEventAttributes", js.undefined)
+    @scala.inline
+    def setWorkflowExecutionCanceledEventAttributes(value: WorkflowExecutionCanceledEventAttributes): Self = this.set("workflowExecutionCanceledEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowExecutionCanceledEventAttributes: Self = this.set("workflowExecutionCanceledEventAttributes", js.undefined)
+    @scala.inline
+    def setWorkflowExecutionCompletedEventAttributes(value: WorkflowExecutionCompletedEventAttributes): Self = this.set("workflowExecutionCompletedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowExecutionCompletedEventAttributes: Self = this.set("workflowExecutionCompletedEventAttributes", js.undefined)
+    @scala.inline
+    def setWorkflowExecutionContinuedAsNewEventAttributes(value: WorkflowExecutionContinuedAsNewEventAttributes): Self = this.set("workflowExecutionContinuedAsNewEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowExecutionContinuedAsNewEventAttributes: Self = this.set("workflowExecutionContinuedAsNewEventAttributes", js.undefined)
+    @scala.inline
+    def setWorkflowExecutionFailedEventAttributes(value: WorkflowExecutionFailedEventAttributes): Self = this.set("workflowExecutionFailedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowExecutionFailedEventAttributes: Self = this.set("workflowExecutionFailedEventAttributes", js.undefined)
+    @scala.inline
+    def setWorkflowExecutionSignaledEventAttributes(value: WorkflowExecutionSignaledEventAttributes): Self = this.set("workflowExecutionSignaledEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowExecutionSignaledEventAttributes: Self = this.set("workflowExecutionSignaledEventAttributes", js.undefined)
+    @scala.inline
+    def setWorkflowExecutionStartedEventAttributes(value: WorkflowExecutionStartedEventAttributes): Self = this.set("workflowExecutionStartedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowExecutionStartedEventAttributes: Self = this.set("workflowExecutionStartedEventAttributes", js.undefined)
+    @scala.inline
+    def setWorkflowExecutionTerminatedEventAttributes(value: WorkflowExecutionTerminatedEventAttributes): Self = this.set("workflowExecutionTerminatedEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowExecutionTerminatedEventAttributes: Self = this.set("workflowExecutionTerminatedEventAttributes", js.undefined)
+    @scala.inline
+    def setWorkflowExecutionTimedOutEventAttributes(value: WorkflowExecutionTimedOutEventAttributes): Self = this.set("workflowExecutionTimedOutEventAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowExecutionTimedOutEventAttributes: Self = this.set("workflowExecutionTimedOutEventAttributes", js.undefined)
+  }
+  
 }
 

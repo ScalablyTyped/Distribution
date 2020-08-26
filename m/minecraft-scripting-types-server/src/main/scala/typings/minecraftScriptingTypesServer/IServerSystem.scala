@@ -106,7 +106,26 @@ trait IServerSystem[TSystem]
   //Ideally this would be in system.d.ts, but it seems to conflict with the parameterized version
   def registerQuery(): IQuery | Null = js.native
   def registerQuery(component: String): IQuery | Null = js.native
+  def registerQuery(
+    component: String,
+    componentField1: js.UndefOr[scala.Nothing],
+    componentField2: js.UndefOr[scala.Nothing],
+    componentField3: String
+  ): IQuery | Null = js.native
+  def registerQuery(component: String, componentField1: js.UndefOr[scala.Nothing], componentField2: String): IQuery | Null = js.native
+  def registerQuery(
+    component: String,
+    componentField1: js.UndefOr[scala.Nothing],
+    componentField2: String,
+    componentField3: String
+  ): IQuery | Null = js.native
   def registerQuery(component: String, componentField1: String): IQuery | Null = js.native
+  def registerQuery(
+    component: String,
+    componentField1: String,
+    componentField2: js.UndefOr[scala.Nothing],
+    componentField3: String
+  ): IQuery | Null = js.native
   def registerQuery(component: String, componentField1: String, componentField2: String): IQuery | Null = js.native
   def registerQuery(component: String, componentField1: String, componentField2: String, componentField3: String): IQuery | Null = js.native
   /**
@@ -118,7 +137,26 @@ trait IServerSystem[TSystem]
     * @param componentField3 This is the name of the third field of the component that we want to filter entities by. By default this is set to z. If the component you used doesn't have the field you defined here, the field will be ignored
     */
   def registerQuery(component: MinecraftComponent): IQuery | Null = js.native
+  def registerQuery(
+    component: MinecraftComponent,
+    componentField1: js.UndefOr[scala.Nothing],
+    componentField2: js.UndefOr[scala.Nothing],
+    componentField3: String
+  ): IQuery | Null = js.native
+  def registerQuery(component: MinecraftComponent, componentField1: js.UndefOr[scala.Nothing], componentField2: String): IQuery | Null = js.native
+  def registerQuery(
+    component: MinecraftComponent,
+    componentField1: js.UndefOr[scala.Nothing],
+    componentField2: String,
+    componentField3: String
+  ): IQuery | Null = js.native
   def registerQuery(component: MinecraftComponent, componentField1: String): IQuery | Null = js.native
+  def registerQuery(
+    component: MinecraftComponent,
+    componentField1: String,
+    componentField2: js.UndefOr[scala.Nothing],
+    componentField3: String
+  ): IQuery | Null = js.native
   def registerQuery(component: MinecraftComponent, componentField1: String, componentField2: String): IQuery | Null = js.native
   def registerQuery(
     component: MinecraftComponent,

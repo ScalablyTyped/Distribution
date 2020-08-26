@@ -12,7 +12,7 @@ Get a list of fields while resolving a GraphQL query
 | Keywords           | ast, schema, fields, graphqlresolveinfo, graphql-js, graphql |
 | # releases         | 3 |
 | # dependents       | 9 |
-| # downloads        | 286507 |
+| # downloads        | 312159 |
 | # stars            | 1 |
 
 ## Links

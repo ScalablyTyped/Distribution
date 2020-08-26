@@ -15,12 +15,34 @@ trait PartialStyleRulesAvatarCl extends js.Object {
 
 object PartialStyleRulesAvatarCl {
   @scala.inline
-  def apply(colorDefault: CSSProperties = null, img: CSSProperties = null, root: CSSProperties = null): PartialStyleRulesAvatarCl = {
+  def apply(): PartialStyleRulesAvatarCl = {
     val __obj = js.Dynamic.literal()
-    if (colorDefault != null) __obj.updateDynamic("colorDefault")(colorDefault.asInstanceOf[js.Any])
-    if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesAvatarCl]
   }
+  @scala.inline
+  implicit class PartialStyleRulesAvatarClOps[Self <: PartialStyleRulesAvatarCl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorDefault(value: CSSProperties): Self = this.set("colorDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorDefault: Self = this.set("colorDefault", js.undefined)
+    @scala.inline
+    def setImg(value: CSSProperties): Self = this.set("img", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImg: Self = this.set("img", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

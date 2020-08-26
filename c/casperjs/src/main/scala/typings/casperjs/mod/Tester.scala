@@ -17,6 +17,7 @@ trait Tester extends js.Object {
   def assertEquals(testValue: js.Any, expected: js.Any, message: String): js.Any = js.native
   def assertEval(fn: js.Function, message: String, args: js.Any): js.Any = js.native
   def assertEvalEquals(fn: js.Function, expected: js.Any): js.Any = js.native
+  def assertEvalEquals(fn: js.Function, expected: js.Any, message: js.UndefOr[scala.Nothing], args: js.Any): js.Any = js.native
   def assertEvalEquals(fn: js.Function, expected: js.Any, message: String): js.Any = js.native
   def assertEvalEquals(fn: js.Function, expected: js.Any, message: String, args: js.Any): js.Any = js.native
   def assertExists(selector: String): js.Any = js.native
@@ -28,6 +29,7 @@ trait Tester extends js.Object {
   def assertFieldCSS(cssSelector: String, expected: String): js.Any = js.native
   def assertFieldCSS(cssSelector: String, expected: String, message: String): js.Any = js.native
   def assertFieldName(inputName: String, expected: String): js.Any = js.native
+  def assertFieldName(inputName: String, expected: String, message: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def assertFieldName(inputName: String, expected: String, message: String): js.Any = js.native
   def assertFieldName(inputName: String, expected: String, message: String, options: js.Any): js.Any = js.native
   def assertFieldXPath(xpathSelector: String, expected: String): js.Any = js.native

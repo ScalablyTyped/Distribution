@@ -28,11 +28,12 @@ trait Shell extends js.Object {
   def openExternal(url: String): js.Promise[Unit] = js.native
   def openExternal(url: String, options: OpenExternalOptions): js.Promise[Unit] = js.native
   /**
-    * Whether the item was successfully opened.
+    * Resolves with an string containing the error message corresponding to the
+    * failure if a failure occurred, otherwise "".
     * 
   Open the given file in the desktop's default manner.
     */
-  def openItem(fullPath: String): Boolean = js.native
+  def openPath(path: String): js.Promise[String] = js.native
   /**
     * Resolves the shortcut link at `shortcutPath`.
     * 

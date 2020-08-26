@@ -7,39 +7,48 @@ import scala.scalajs.js.annotation._
 /**
   * Supporting evidence
   */
+@js.native
 trait ConditionEvidence extends BackboneElement {
   /**
     * Manifestation/symptom
     */
-  var code: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var code: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Supporting information found elsewhere
     */
-  var detail: js.UndefOr[js.Array[Reference]] = js.undefined
+  var detail: js.UndefOr[js.Array[Reference]] = js.native
 }
 
 object ConditionEvidence {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    code: js.Array[CodeableConcept] = null,
-    detail: js.Array[Reference] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null
-  ): ConditionEvidence = {
+  def apply(): ConditionEvidence = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionEvidence]
   }
+  @scala.inline
+  implicit class ConditionEvidenceOps[Self <: ConditionEvidence] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodeVarargs(value: CodeableConcept*): Self = this.set("code", js.Array(value :_*))
+    @scala.inline
+    def setCode(value: js.Array[CodeableConcept]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setDetailVarargs(value: Reference*): Self = this.set("detail", js.Array(value :_*))
+    @scala.inline
+    def setDetail(value: js.Array[Reference]): Self = this.set("detail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetail: Self = this.set("detail", js.undefined)
+  }
+  
 }
 

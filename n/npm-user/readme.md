@@ -12,7 +12,7 @@ Get user info of an npm user
 | Keywords           | npm, user, username, homepage, email, get, website, scrape, info, profile |
 | # releases         | 5 |
 | # dependents       | 9 |
-| # downloads        | 3502 |
+| # downloads        | 3350 |
 | # stars            | 1 |
 
 ## Links

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "karma-ie-launcher"
-version := "1.0-dt-20200212Z-ea7ad6"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200212Z-7316ce"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

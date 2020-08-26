@@ -12,7 +12,7 @@ A complex number library
 | Keywords           | complex numbers, math, complex, number, calculus, parser, arithmetic |
 | # releases         | 7 |
 | # dependents       | 7 |
-| # downloads        | 6325181 |
+| # downloads        | 6470068 |
 | # stars            | 4 |
 
 ## Links

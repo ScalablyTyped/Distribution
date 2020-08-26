@@ -12,7 +12,7 @@ The Comprehensive Bulma UI Framework for React
 | Keywords           | react, bulma, bulma.io, typescript |
 | # releases         | 29 |
 | # dependents       | 0 |
-| # downloads        | 32539 |
+| # downloads        | 34325 |
 | # stars            | 0 |
 
 ## Links

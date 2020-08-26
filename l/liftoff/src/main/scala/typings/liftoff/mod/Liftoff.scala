@@ -4,8 +4,8 @@ import typings.interpret.mod.ExtensionDescriptor
 import typings.liftoff.liftoffStrings.require
 import typings.liftoff.liftoffStrings.requireFail
 import typings.liftoff.liftoffStrings.respawn
-import typings.node.NodeJS.Process
 import typings.node.eventsMod.EventEmitter
+import typings.node.processMod.global.NodeJS.Process
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

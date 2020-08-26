@@ -23,10 +23,26 @@ trait SchemaRunTaskRequest extends js.Object {
 
 object SchemaRunTaskRequest {
   @scala.inline
-  def apply(responseView: String = null): SchemaRunTaskRequest = {
+  def apply(): SchemaRunTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRunTaskRequest]
   }
+  @scala.inline
+  implicit class SchemaRunTaskRequestOps[Self <: SchemaRunTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResponseView(value: String): Self = this.set("responseView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseView: Self = this.set("responseView", js.undefined)
+  }
+  
 }
 

@@ -50,32 +50,68 @@ trait InstanceGroupState extends js.Object {
 
 object InstanceGroupState {
   @scala.inline
-  def apply(
-    autoscalingPolicy: Input[String] = null,
-    bidPrice: Input[String] = null,
-    clusterId: Input[String] = null,
-    configurationsJson: Input[String] = null,
-    ebsConfigs: Input[js.Array[Input[InstanceGroupEbsConfig]]] = null,
-    ebsOptimized: Input[Boolean] = null,
-    instanceCount: Input[Double] = null,
-    instanceType: Input[String] = null,
-    name: Input[String] = null,
-    runningInstanceCount: Input[Double] = null,
-    status: Input[String] = null
-  ): InstanceGroupState = {
+  def apply(): InstanceGroupState = {
     val __obj = js.Dynamic.literal()
-    if (autoscalingPolicy != null) __obj.updateDynamic("autoscalingPolicy")(autoscalingPolicy.asInstanceOf[js.Any])
-    if (bidPrice != null) __obj.updateDynamic("bidPrice")(bidPrice.asInstanceOf[js.Any])
-    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
-    if (configurationsJson != null) __obj.updateDynamic("configurationsJson")(configurationsJson.asInstanceOf[js.Any])
-    if (ebsConfigs != null) __obj.updateDynamic("ebsConfigs")(ebsConfigs.asInstanceOf[js.Any])
-    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
-    if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
-    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (runningInstanceCount != null) __obj.updateDynamic("runningInstanceCount")(runningInstanceCount.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupState]
   }
+  @scala.inline
+  implicit class InstanceGroupStateOps[Self <: InstanceGroupState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoscalingPolicy(value: Input[String]): Self = this.set("autoscalingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscalingPolicy: Self = this.set("autoscalingPolicy", js.undefined)
+    @scala.inline
+    def setBidPrice(value: Input[String]): Self = this.set("bidPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidPrice: Self = this.set("bidPrice", js.undefined)
+    @scala.inline
+    def setClusterId(value: Input[String]): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    @scala.inline
+    def setConfigurationsJson(value: Input[String]): Self = this.set("configurationsJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationsJson: Self = this.set("configurationsJson", js.undefined)
+    @scala.inline
+    def setEbsConfigsVarargs(value: Input[InstanceGroupEbsConfig]*): Self = this.set("ebsConfigs", js.Array(value :_*))
+    @scala.inline
+    def setEbsConfigs(value: Input[js.Array[Input[InstanceGroupEbsConfig]]]): Self = this.set("ebsConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsConfigs: Self = this.set("ebsConfigs", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: Input[Boolean]): Self = this.set("ebsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("ebsOptimized", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: Input[Double]): Self = this.set("instanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("instanceCount", js.undefined)
+    @scala.inline
+    def setInstanceType(value: Input[String]): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRunningInstanceCount(value: Input[Double]): Self = this.set("runningInstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningInstanceCount: Self = this.set("runningInstanceCount", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

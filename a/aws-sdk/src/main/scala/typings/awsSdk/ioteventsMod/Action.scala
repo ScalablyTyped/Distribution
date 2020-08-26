@@ -62,36 +62,74 @@ trait Action extends js.Object {
 
 object Action {
   @scala.inline
-  def apply(
-    clearTimer: ClearTimerAction = null,
-    dynamoDB: DynamoDBAction = null,
-    dynamoDBv2: DynamoDBv2Action = null,
-    firehose: FirehoseAction = null,
-    iotEvents: IotEventsAction = null,
-    iotSiteWise: IotSiteWiseAction = null,
-    iotTopicPublish: IotTopicPublishAction = null,
-    lambda: LambdaAction = null,
-    resetTimer: ResetTimerAction = null,
-    setTimer: SetTimerAction = null,
-    setVariable: SetVariableAction = null,
-    sns: SNSTopicPublishAction = null,
-    sqs: SqsAction = null
-  ): Action = {
+  def apply(): Action = {
     val __obj = js.Dynamic.literal()
-    if (clearTimer != null) __obj.updateDynamic("clearTimer")(clearTimer.asInstanceOf[js.Any])
-    if (dynamoDB != null) __obj.updateDynamic("dynamoDB")(dynamoDB.asInstanceOf[js.Any])
-    if (dynamoDBv2 != null) __obj.updateDynamic("dynamoDBv2")(dynamoDBv2.asInstanceOf[js.Any])
-    if (firehose != null) __obj.updateDynamic("firehose")(firehose.asInstanceOf[js.Any])
-    if (iotEvents != null) __obj.updateDynamic("iotEvents")(iotEvents.asInstanceOf[js.Any])
-    if (iotSiteWise != null) __obj.updateDynamic("iotSiteWise")(iotSiteWise.asInstanceOf[js.Any])
-    if (iotTopicPublish != null) __obj.updateDynamic("iotTopicPublish")(iotTopicPublish.asInstanceOf[js.Any])
-    if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
-    if (resetTimer != null) __obj.updateDynamic("resetTimer")(resetTimer.asInstanceOf[js.Any])
-    if (setTimer != null) __obj.updateDynamic("setTimer")(setTimer.asInstanceOf[js.Any])
-    if (setVariable != null) __obj.updateDynamic("setVariable")(setVariable.asInstanceOf[js.Any])
-    if (sns != null) __obj.updateDynamic("sns")(sns.asInstanceOf[js.Any])
-    if (sqs != null) __obj.updateDynamic("sqs")(sqs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
+  @scala.inline
+  implicit class ActionOps[Self <: Action] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClearTimer(value: ClearTimerAction): Self = this.set("clearTimer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearTimer: Self = this.set("clearTimer", js.undefined)
+    @scala.inline
+    def setDynamoDB(value: DynamoDBAction): Self = this.set("dynamoDB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamoDB: Self = this.set("dynamoDB", js.undefined)
+    @scala.inline
+    def setDynamoDBv2(value: DynamoDBv2Action): Self = this.set("dynamoDBv2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamoDBv2: Self = this.set("dynamoDBv2", js.undefined)
+    @scala.inline
+    def setFirehose(value: FirehoseAction): Self = this.set("firehose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirehose: Self = this.set("firehose", js.undefined)
+    @scala.inline
+    def setIotEvents(value: IotEventsAction): Self = this.set("iotEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotEvents: Self = this.set("iotEvents", js.undefined)
+    @scala.inline
+    def setIotSiteWise(value: IotSiteWiseAction): Self = this.set("iotSiteWise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotSiteWise: Self = this.set("iotSiteWise", js.undefined)
+    @scala.inline
+    def setIotTopicPublish(value: IotTopicPublishAction): Self = this.set("iotTopicPublish", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotTopicPublish: Self = this.set("iotTopicPublish", js.undefined)
+    @scala.inline
+    def setLambda(value: LambdaAction): Self = this.set("lambda", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambda: Self = this.set("lambda", js.undefined)
+    @scala.inline
+    def setResetTimer(value: ResetTimerAction): Self = this.set("resetTimer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetTimer: Self = this.set("resetTimer", js.undefined)
+    @scala.inline
+    def setSetTimer(value: SetTimerAction): Self = this.set("setTimer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetTimer: Self = this.set("setTimer", js.undefined)
+    @scala.inline
+    def setSetVariable(value: SetVariableAction): Self = this.set("setVariable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetVariable: Self = this.set("setVariable", js.undefined)
+    @scala.inline
+    def setSns(value: SNSTopicPublishAction): Self = this.set("sns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSns: Self = this.set("sns", js.undefined)
+    @scala.inline
+    def setSqs(value: SqsAction): Self = this.set("sqs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqs: Self = this.set("sqs", js.undefined)
+  }
+  
 }
 

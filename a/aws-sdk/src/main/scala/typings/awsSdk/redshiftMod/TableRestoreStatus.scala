@@ -66,38 +66,78 @@ trait TableRestoreStatus extends js.Object {
 
 object TableRestoreStatus {
   @scala.inline
-  def apply(
-    ClusterIdentifier: String = null,
-    Message: String = null,
-    NewTableName: String = null,
-    ProgressInMegaBytes: js.UndefOr[LongOptional] = js.undefined,
-    RequestTime: TStamp = null,
-    SnapshotIdentifier: String = null,
-    SourceDatabaseName: String = null,
-    SourceSchemaName: String = null,
-    SourceTableName: String = null,
-    Status: TableRestoreStatusType = null,
-    TableRestoreRequestId: String = null,
-    TargetDatabaseName: String = null,
-    TargetSchemaName: String = null,
-    TotalDataInMegaBytes: js.UndefOr[LongOptional] = js.undefined
-  ): TableRestoreStatus = {
+  def apply(): TableRestoreStatus = {
     val __obj = js.Dynamic.literal()
-    if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (NewTableName != null) __obj.updateDynamic("NewTableName")(NewTableName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgressInMegaBytes)) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes.get.asInstanceOf[js.Any])
-    if (RequestTime != null) __obj.updateDynamic("RequestTime")(RequestTime.asInstanceOf[js.Any])
-    if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier.asInstanceOf[js.Any])
-    if (SourceDatabaseName != null) __obj.updateDynamic("SourceDatabaseName")(SourceDatabaseName.asInstanceOf[js.Any])
-    if (SourceSchemaName != null) __obj.updateDynamic("SourceSchemaName")(SourceSchemaName.asInstanceOf[js.Any])
-    if (SourceTableName != null) __obj.updateDynamic("SourceTableName")(SourceTableName.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TableRestoreRequestId != null) __obj.updateDynamic("TableRestoreRequestId")(TableRestoreRequestId.asInstanceOf[js.Any])
-    if (TargetDatabaseName != null) __obj.updateDynamic("TargetDatabaseName")(TargetDatabaseName.asInstanceOf[js.Any])
-    if (TargetSchemaName != null) __obj.updateDynamic("TargetSchemaName")(TargetSchemaName.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalDataInMegaBytes)) __obj.updateDynamic("TotalDataInMegaBytes")(TotalDataInMegaBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRestoreStatus]
   }
+  @scala.inline
+  implicit class TableRestoreStatusOps[Self <: TableRestoreStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setNewTableName(value: String): Self = this.set("NewTableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewTableName: Self = this.set("NewTableName", js.undefined)
+    @scala.inline
+    def setProgressInMegaBytes(value: LongOptional): Self = this.set("ProgressInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressInMegaBytes: Self = this.set("ProgressInMegaBytes", js.undefined)
+    @scala.inline
+    def setRequestTime(value: TStamp): Self = this.set("RequestTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestTime: Self = this.set("RequestTime", js.undefined)
+    @scala.inline
+    def setSnapshotIdentifier(value: String): Self = this.set("SnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIdentifier: Self = this.set("SnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setSourceDatabaseName(value: String): Self = this.set("SourceDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDatabaseName: Self = this.set("SourceDatabaseName", js.undefined)
+    @scala.inline
+    def setSourceSchemaName(value: String): Self = this.set("SourceSchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSchemaName: Self = this.set("SourceSchemaName", js.undefined)
+    @scala.inline
+    def setSourceTableName(value: String): Self = this.set("SourceTableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceTableName: Self = this.set("SourceTableName", js.undefined)
+    @scala.inline
+    def setStatus(value: TableRestoreStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTableRestoreRequestId(value: String): Self = this.set("TableRestoreRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableRestoreRequestId: Self = this.set("TableRestoreRequestId", js.undefined)
+    @scala.inline
+    def setTargetDatabaseName(value: String): Self = this.set("TargetDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetDatabaseName: Self = this.set("TargetDatabaseName", js.undefined)
+    @scala.inline
+    def setTargetSchemaName(value: String): Self = this.set("TargetSchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetSchemaName: Self = this.set("TargetSchemaName", js.undefined)
+    @scala.inline
+    def setTotalDataInMegaBytes(value: LongOptional): Self = this.set("TotalDataInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalDataInMegaBytes: Self = this.set("TotalDataInMegaBytes", js.undefined)
+  }
+  
 }
 

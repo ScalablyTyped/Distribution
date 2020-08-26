@@ -31,6 +31,8 @@ trait TypeofDataFactoryExt extends Instantiable0[DataFactoryExt] {
   def dataset(): DatasetExt = js.native
   def dataset(quads: js.Array[Quad]): DatasetExt = js.native
   @JSName("dataset")
+  def dataset_graph(quads: js.UndefOr[scala.Nothing], graph: PropType[QuadExt, graph]): DatasetExt = js.native
+  @JSName("dataset")
   def dataset_graph(quads: js.Array[Quad], graph: PropType[QuadExt, graph]): DatasetExt = js.native
   def defaultGraph(): DefaultGraphExt = js.native
   def graph(): DatasetExt = js.native

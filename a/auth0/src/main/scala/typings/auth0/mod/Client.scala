@@ -6,156 +6,247 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Client extends js.Object {
-  var addons: js.UndefOr[js.Any] = js.undefined
-  var allowed_clients: js.UndefOr[js.Array[String]] = js.undefined
-  var allowed_logout_urls: js.UndefOr[js.Array[String]] = js.undefined
-  var allowed_origins: js.UndefOr[js.Array[String]] = js.undefined
+  var addons: js.UndefOr[js.Any] = js.native
+  var allowed_clients: js.UndefOr[js.Array[String]] = js.native
+  var allowed_logout_urls: js.UndefOr[js.Array[String]] = js.native
+  var allowed_origins: js.UndefOr[js.Array[String]] = js.native
   /**
     * The type of application this client represents.
     */
-  var app_type: js.UndefOr[String] = js.undefined
+  var app_type: js.UndefOr[String] = js.native
   /**
     * The URLs that Auth0 can use to as a callback for the client.
     */
-  var callbacks: js.UndefOr[js.Array[String]] = js.undefined
-  var client_aliases: js.UndefOr[js.Array[String]] = js.undefined
+  var callbacks: js.UndefOr[js.Array[String]] = js.native
+  var client_aliases: js.UndefOr[js.Array[String]] = js.native
   /**
     * The id of the client.
     */
-  var client_id: js.UndefOr[String] = js.undefined
-  var client_metadata: js.UndefOr[js.Any] = js.undefined
+  var client_id: js.UndefOr[String] = js.native
+  var client_metadata: js.UndefOr[js.Any] = js.native
   /**
     * The client secret, it must not be public.
     */
-  var client_secret: js.UndefOr[String] = js.undefined
+  var client_secret: js.UndefOr[String] = js.native
   /**
     * `true` if this client can be used to make cross-origin authentication requests, `false` otherwise (default: `false`)
     */
-  var cross_origin_auth: js.UndefOr[Boolean] = js.undefined
+  var cross_origin_auth: js.UndefOr[Boolean] = js.native
   /**
     * Url fo the location in your site where the cross origin verification takes place for the cross-origin auth flow when performing Auth in your own domain instead of Auth0 hosted login page.
     */
-  var cross_origin_loc: js.UndefOr[String] = js.undefined
-  var custom_login_page: js.UndefOr[String] = js.undefined
+  var cross_origin_loc: js.UndefOr[String] = js.native
+  var custom_login_page: js.UndefOr[String] = js.native
   /**
     * `true` if the custom login page is to be used, `false` otherwise. (default: `true`)
     */
-  var custom_login_page_on: js.UndefOr[Boolean] = js.undefined
-  var custom_login_page_preview: js.UndefOr[String] = js.undefined
+  var custom_login_page_on: js.UndefOr[Boolean] = js.native
+  var custom_login_page_preview: js.UndefOr[String] = js.native
   /**
     * Free text description of the purpose of the Client. (Max character length: `140`).
     */
-  var description: js.UndefOr[String] = js.undefined
-  var encryption_key: js.UndefOr[Cert] = js.undefined
-  var form_template: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
+  var encryption_key: js.UndefOr[Cert] = js.native
+  var form_template: js.UndefOr[String] = js.native
   /**
     * A set of grant types that the client is authorized to use
     */
-  var grant_types: js.UndefOr[js.Array[Grant]] = js.undefined
-  var initiate_login_uri: js.UndefOr[String] = js.undefined
+  var grant_types: js.UndefOr[js.Array[Grant]] = js.native
+  var initiate_login_uri: js.UndefOr[String] = js.native
   /**
     * Whether this client a first party client or not.
     */
-  var is_first_party: js.UndefOr[Boolean] = js.undefined
-  var jwt_configuration: js.UndefOr[Alg] = js.undefined
+  var is_first_party: js.UndefOr[Boolean] = js.native
+  var jwt_configuration: js.UndefOr[Alg] = js.native
   /**
     * The URL of the client logo (recommended size: 150x150).
     */
-  var logo_uri: js.UndefOr[String] = js.undefined
-  var mobile: js.UndefOr[js.Any] = js.undefined
+  var logo_uri: js.UndefOr[String] = js.native
+  var mobile: js.UndefOr[js.Any] = js.native
   /**
     * The name of the client.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Whether this client will conform to strict OIDC specifications.
     */
-  var oidc_conformant: js.UndefOr[Boolean] = js.undefined
+  var oidc_conformant: js.UndefOr[Boolean] = js.native
   /**
     * Client signing keys.
     */
-  var signing_keys: js.UndefOr[js.Array[String]] = js.undefined
-  var sso: js.UndefOr[Boolean] = js.undefined
+  var signing_keys: js.UndefOr[js.Array[String]] = js.native
+  var sso: js.UndefOr[Boolean] = js.native
   /**
     * `true` to disable Single Sign On, `false` otherwise (default: `false`)
     */
-  var sso_disabled: js.UndefOr[Boolean] = js.undefined
+  var sso_disabled: js.UndefOr[Boolean] = js.native
   /**
     * Defines the requested authentication method for the token endpoint. Possible values are 'none' (public client without a client secret), 'client_secret_post' (client uses HTTP POST parameters) or 'client_secret_basic' (client uses HTTP Basic) ['none' or 'client_secret_post' or 'client_secret_basic']
     */
-  var token_endpoint_auth_method: js.UndefOr[String] = js.undefined
-  var web_origins: js.UndefOr[js.Array[String]] = js.undefined
+  var token_endpoint_auth_method: js.UndefOr[String] = js.native
+  var web_origins: js.UndefOr[js.Array[String]] = js.native
 }
 
 object Client {
   @scala.inline
-  def apply(
-    addons: js.Any = null,
-    allowed_clients: js.Array[String] = null,
-    allowed_logout_urls: js.Array[String] = null,
-    allowed_origins: js.Array[String] = null,
-    app_type: String = null,
-    callbacks: js.Array[String] = null,
-    client_aliases: js.Array[String] = null,
-    client_id: String = null,
-    client_metadata: js.Any = null,
-    client_secret: String = null,
-    cross_origin_auth: js.UndefOr[Boolean] = js.undefined,
-    cross_origin_loc: String = null,
-    custom_login_page: String = null,
-    custom_login_page_on: js.UndefOr[Boolean] = js.undefined,
-    custom_login_page_preview: String = null,
-    description: String = null,
-    encryption_key: Cert = null,
-    form_template: String = null,
-    grant_types: js.Array[Grant] = null,
-    initiate_login_uri: String = null,
-    is_first_party: js.UndefOr[Boolean] = js.undefined,
-    jwt_configuration: Alg = null,
-    logo_uri: String = null,
-    mobile: js.Any = null,
-    name: String = null,
-    oidc_conformant: js.UndefOr[Boolean] = js.undefined,
-    signing_keys: js.Array[String] = null,
-    sso: js.UndefOr[Boolean] = js.undefined,
-    sso_disabled: js.UndefOr[Boolean] = js.undefined,
-    token_endpoint_auth_method: String = null,
-    web_origins: js.Array[String] = null
-  ): Client = {
+  def apply(): Client = {
     val __obj = js.Dynamic.literal()
-    if (addons != null) __obj.updateDynamic("addons")(addons.asInstanceOf[js.Any])
-    if (allowed_clients != null) __obj.updateDynamic("allowed_clients")(allowed_clients.asInstanceOf[js.Any])
-    if (allowed_logout_urls != null) __obj.updateDynamic("allowed_logout_urls")(allowed_logout_urls.asInstanceOf[js.Any])
-    if (allowed_origins != null) __obj.updateDynamic("allowed_origins")(allowed_origins.asInstanceOf[js.Any])
-    if (app_type != null) __obj.updateDynamic("app_type")(app_type.asInstanceOf[js.Any])
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (client_aliases != null) __obj.updateDynamic("client_aliases")(client_aliases.asInstanceOf[js.Any])
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
-    if (client_metadata != null) __obj.updateDynamic("client_metadata")(client_metadata.asInstanceOf[js.Any])
-    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(cross_origin_auth)) __obj.updateDynamic("cross_origin_auth")(cross_origin_auth.get.asInstanceOf[js.Any])
-    if (cross_origin_loc != null) __obj.updateDynamic("cross_origin_loc")(cross_origin_loc.asInstanceOf[js.Any])
-    if (custom_login_page != null) __obj.updateDynamic("custom_login_page")(custom_login_page.asInstanceOf[js.Any])
-    if (!js.isUndefined(custom_login_page_on)) __obj.updateDynamic("custom_login_page_on")(custom_login_page_on.get.asInstanceOf[js.Any])
-    if (custom_login_page_preview != null) __obj.updateDynamic("custom_login_page_preview")(custom_login_page_preview.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (encryption_key != null) __obj.updateDynamic("encryption_key")(encryption_key.asInstanceOf[js.Any])
-    if (form_template != null) __obj.updateDynamic("form_template")(form_template.asInstanceOf[js.Any])
-    if (grant_types != null) __obj.updateDynamic("grant_types")(grant_types.asInstanceOf[js.Any])
-    if (initiate_login_uri != null) __obj.updateDynamic("initiate_login_uri")(initiate_login_uri.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_first_party)) __obj.updateDynamic("is_first_party")(is_first_party.get.asInstanceOf[js.Any])
-    if (jwt_configuration != null) __obj.updateDynamic("jwt_configuration")(jwt_configuration.asInstanceOf[js.Any])
-    if (logo_uri != null) __obj.updateDynamic("logo_uri")(logo_uri.asInstanceOf[js.Any])
-    if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(oidc_conformant)) __obj.updateDynamic("oidc_conformant")(oidc_conformant.get.asInstanceOf[js.Any])
-    if (signing_keys != null) __obj.updateDynamic("signing_keys")(signing_keys.asInstanceOf[js.Any])
-    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sso_disabled)) __obj.updateDynamic("sso_disabled")(sso_disabled.get.asInstanceOf[js.Any])
-    if (token_endpoint_auth_method != null) __obj.updateDynamic("token_endpoint_auth_method")(token_endpoint_auth_method.asInstanceOf[js.Any])
-    if (web_origins != null) __obj.updateDynamic("web_origins")(web_origins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Client]
   }
+  @scala.inline
+  implicit class ClientOps[Self <: Client] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddons(value: js.Any): Self = this.set("addons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddons: Self = this.set("addons", js.undefined)
+    @scala.inline
+    def setAllowed_clientsVarargs(value: String*): Self = this.set("allowed_clients", js.Array(value :_*))
+    @scala.inline
+    def setAllowed_clients(value: js.Array[String]): Self = this.set("allowed_clients", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowed_clients: Self = this.set("allowed_clients", js.undefined)
+    @scala.inline
+    def setAllowed_logout_urlsVarargs(value: String*): Self = this.set("allowed_logout_urls", js.Array(value :_*))
+    @scala.inline
+    def setAllowed_logout_urls(value: js.Array[String]): Self = this.set("allowed_logout_urls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowed_logout_urls: Self = this.set("allowed_logout_urls", js.undefined)
+    @scala.inline
+    def setAllowed_originsVarargs(value: String*): Self = this.set("allowed_origins", js.Array(value :_*))
+    @scala.inline
+    def setAllowed_origins(value: js.Array[String]): Self = this.set("allowed_origins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowed_origins: Self = this.set("allowed_origins", js.undefined)
+    @scala.inline
+    def setApp_type(value: String): Self = this.set("app_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApp_type: Self = this.set("app_type", js.undefined)
+    @scala.inline
+    def setCallbacksVarargs(value: String*): Self = this.set("callbacks", js.Array(value :_*))
+    @scala.inline
+    def setCallbacks(value: js.Array[String]): Self = this.set("callbacks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbacks: Self = this.set("callbacks", js.undefined)
+    @scala.inline
+    def setClient_aliasesVarargs(value: String*): Self = this.set("client_aliases", js.Array(value :_*))
+    @scala.inline
+    def setClient_aliases(value: js.Array[String]): Self = this.set("client_aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient_aliases: Self = this.set("client_aliases", js.undefined)
+    @scala.inline
+    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient_id: Self = this.set("client_id", js.undefined)
+    @scala.inline
+    def setClient_metadata(value: js.Any): Self = this.set("client_metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient_metadata: Self = this.set("client_metadata", js.undefined)
+    @scala.inline
+    def setClient_secret(value: String): Self = this.set("client_secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient_secret: Self = this.set("client_secret", js.undefined)
+    @scala.inline
+    def setCross_origin_auth(value: Boolean): Self = this.set("cross_origin_auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCross_origin_auth: Self = this.set("cross_origin_auth", js.undefined)
+    @scala.inline
+    def setCross_origin_loc(value: String): Self = this.set("cross_origin_loc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCross_origin_loc: Self = this.set("cross_origin_loc", js.undefined)
+    @scala.inline
+    def setCustom_login_page(value: String): Self = this.set("custom_login_page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom_login_page: Self = this.set("custom_login_page", js.undefined)
+    @scala.inline
+    def setCustom_login_page_on(value: Boolean): Self = this.set("custom_login_page_on", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom_login_page_on: Self = this.set("custom_login_page_on", js.undefined)
+    @scala.inline
+    def setCustom_login_page_preview(value: String): Self = this.set("custom_login_page_preview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom_login_page_preview: Self = this.set("custom_login_page_preview", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEncryption_key(value: Cert): Self = this.set("encryption_key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption_key: Self = this.set("encryption_key", js.undefined)
+    @scala.inline
+    def setForm_template(value: String): Self = this.set("form_template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForm_template: Self = this.set("form_template", js.undefined)
+    @scala.inline
+    def setGrant_typesVarargs(value: Grant*): Self = this.set("grant_types", js.Array(value :_*))
+    @scala.inline
+    def setGrant_types(value: js.Array[Grant]): Self = this.set("grant_types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrant_types: Self = this.set("grant_types", js.undefined)
+    @scala.inline
+    def setInitiate_login_uri(value: String): Self = this.set("initiate_login_uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitiate_login_uri: Self = this.set("initiate_login_uri", js.undefined)
+    @scala.inline
+    def setIs_first_party(value: Boolean): Self = this.set("is_first_party", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_first_party: Self = this.set("is_first_party", js.undefined)
+    @scala.inline
+    def setJwt_configuration(value: Alg): Self = this.set("jwt_configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwt_configuration: Self = this.set("jwt_configuration", js.undefined)
+    @scala.inline
+    def setLogo_uri(value: String): Self = this.set("logo_uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogo_uri: Self = this.set("logo_uri", js.undefined)
+    @scala.inline
+    def setMobile(value: js.Any): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobile: Self = this.set("mobile", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOidc_conformant(value: Boolean): Self = this.set("oidc_conformant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOidc_conformant: Self = this.set("oidc_conformant", js.undefined)
+    @scala.inline
+    def setSigning_keysVarargs(value: String*): Self = this.set("signing_keys", js.Array(value :_*))
+    @scala.inline
+    def setSigning_keys(value: js.Array[String]): Self = this.set("signing_keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigning_keys: Self = this.set("signing_keys", js.undefined)
+    @scala.inline
+    def setSso(value: Boolean): Self = this.set("sso", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSso: Self = this.set("sso", js.undefined)
+    @scala.inline
+    def setSso_disabled(value: Boolean): Self = this.set("sso_disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSso_disabled: Self = this.set("sso_disabled", js.undefined)
+    @scala.inline
+    def setToken_endpoint_auth_method(value: String): Self = this.set("token_endpoint_auth_method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken_endpoint_auth_method: Self = this.set("token_endpoint_auth_method", js.undefined)
+    @scala.inline
+    def setWeb_originsVarargs(value: String*): Self = this.set("web_origins", js.Array(value :_*))
+    @scala.inline
+    def setWeb_origins(value: js.Array[String]): Self = this.set("web_origins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeb_origins: Self = this.set("web_origins", js.undefined)
+  }
+  
 }
 

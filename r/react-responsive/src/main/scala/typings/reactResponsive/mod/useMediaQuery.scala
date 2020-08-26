@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object useMediaQuery extends js.Object {
   def apply(settings: PartialMediaQueryAllQueryAll): Boolean = js.native
+  def apply(
+    settings: PartialMediaQueryAllQueryAll,
+    device: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* matches */ Boolean, Unit]
+  ): Boolean = js.native
   def apply(settings: PartialMediaQueryAllQueryAll, device: MediaQueryMatchers): Boolean = js.native
   def apply(
     settings: PartialMediaQueryAllQueryAll,

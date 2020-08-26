@@ -42,26 +42,54 @@ trait UpdateRevisionResponse extends js.Object {
 
 object UpdateRevisionResponse {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    Comment: stringMin0Max16384 = null,
-    CreatedAt: Timestamp = null,
-    DataSetId: Id = null,
-    Finalized: js.UndefOr[boolean] = js.undefined,
-    Id: Id = null,
-    SourceId: Id = null,
-    UpdatedAt: Timestamp = null
-  ): UpdateRevisionResponse = {
+  def apply(): UpdateRevisionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (DataSetId != null) __obj.updateDynamic("DataSetId")(DataSetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Finalized)) __obj.updateDynamic("Finalized")(Finalized.get.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (SourceId != null) __obj.updateDynamic("SourceId")(SourceId.asInstanceOf[js.Any])
-    if (UpdatedAt != null) __obj.updateDynamic("UpdatedAt")(UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRevisionResponse]
   }
+  @scala.inline
+  implicit class UpdateRevisionResponseOps[Self <: UpdateRevisionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setComment(value: stringMin0Max16384): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("Comment", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDataSetId(value: Id): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSetId: Self = this.set("DataSetId", js.undefined)
+    @scala.inline
+    def setFinalized(value: boolean): Self = this.set("Finalized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalized: Self = this.set("Finalized", js.undefined)
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setSourceId(value: Id): Self = this.set("SourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceId: Self = this.set("SourceId", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+  }
+  
 }
 

@@ -31,6 +31,7 @@ object global extends js.Object {
           * If null or undefined, the current URL fragment is not changed. If empty, the URL fragment is cleared.
           */
         def push(stateObject: State): Unit = js.native
+        def push(stateObject: State, params: js.UndefOr[scala.Nothing], hash: String): Unit = js.native
         def push(stateObject: State, params: Query): Unit = js.native
         def push(stateObject: State, params: Query, hash: String): Unit = js.native
         /**
@@ -45,6 +46,7 @@ object global extends js.Object {
           * If null or undefined, the current URL fragment is not changed. If empty, the URL fragment is cleared.
           */
         def replace(stateObject: State): Unit = js.native
+        def replace(stateObject: State, params: js.UndefOr[scala.Nothing], hash: String): Unit = js.native
         def replace(stateObject: State, params: Query): Unit = js.native
         def replace(stateObject: State, params: Query, hash: String): Unit = js.native
         /**

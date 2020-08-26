@@ -1,6 +1,5 @@
 package typings.knockback.Knockback
 
-import typings.knockout.KnockoutObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,44 +17,86 @@ import scala.scalajs.js.annotation._
   factory (kb.Factory) — a factory used to create view models.
   options (Object) — a set of options merge into these options using _.defaults. Useful for extending options when deriving classes rather than merging them by hand.
   */
+@js.native
 trait IObservableOptions extends js.Object {
-  var args: js.UndefOr[js.Array[KnockoutObservable[_]]] = js.undefined
-  var default: js.UndefOr[js.Any] = js.undefined
-  var factory: js.UndefOr[js.Any] = js.undefined
-  var key: String
-  var localizer: js.UndefOr[LocalizedObservable] = js.undefined
-  var options: js.UndefOr[js.Any] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var read: js.UndefOr[js.Function0[_]] = js.undefined
-  var store: js.UndefOr[js.Any] = js.undefined
-  var write: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  var args: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ _
+    ]
+  ] = js.native
+  var default: js.UndefOr[js.Any] = js.native
+  var factory: js.UndefOr[js.Any] = js.native
+  var key: String = js.native
+  var localizer: js.UndefOr[LocalizedObservable] = js.native
+  var options: js.UndefOr[js.Any] = js.native
+  var path: js.UndefOr[String] = js.native
+  var read: js.UndefOr[js.Function0[_]] = js.native
+  var store: js.UndefOr[js.Any] = js.native
+  var write: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
 }
 
 object IObservableOptions {
   @scala.inline
-  def apply(
-    key: String,
-    args: js.Array[KnockoutObservable[_]] = null,
-    default: js.Any = null,
-    factory: js.Any = null,
-    localizer: LocalizedObservable = null,
-    options: js.Any = null,
-    path: String = null,
-    read: () => _ = null,
-    store: js.Any = null,
-    write: /* value */ js.Any => Unit = null
-  ): IObservableOptions = {
+  def apply(key: String): IObservableOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
-    if (localizer != null) __obj.updateDynamic("localizer")(localizer.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction0(read))
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
     __obj.asInstanceOf[IObservableOptions]
   }
+  @scala.inline
+  implicit class IObservableOptionsOps[Self <: IObservableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArgsVarargs(value: js.Any*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(
+      value: js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ _
+        ]
+    ): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setFactory(value: js.Any): Self = this.set("factory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFactory: Self = this.set("factory", js.undefined)
+    @scala.inline
+    def setLocalizer(value: LocalizedObservable): Self = this.set("localizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalizer: Self = this.set("localizer", js.undefined)
+    @scala.inline
+    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setRead(value: () => _): Self = this.set("read", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRead: Self = this.set("read", js.undefined)
+    @scala.inline
+    def setStore(value: js.Any): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+    @scala.inline
+    def setWrite(value: /* value */ js.Any => Unit): Self = this.set("write", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteWrite: Self = this.set("write", js.undefined)
+  }
+  
 }
 

@@ -36,6 +36,7 @@ trait htmlform extends baseview {
   def hasEvent(name: String): Boolean = js.native
   def isDirty(): Boolean = js.native
   def load(url: String): js.Promise[_] = js.native
+  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
   def load(url: String, `type`: String): js.Promise[_] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
   def mapEvent(map: js.Any): Unit = js.native

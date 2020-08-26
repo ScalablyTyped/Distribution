@@ -1,5 +1,7 @@
 package typings.reactNativeElements.anon
 
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
@@ -22,31 +24,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.OverlayProps>> */
+@js.native
 trait RecursivePartialPartialOv extends js.Object {
-  var animated: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var animationType: js.UndefOr[RecursivePartial[js.UndefOr[none | slide | fade]]] = js.undefined
-  var borderRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
-  var children: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.undefined
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
-  var fullScreen: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var hardwareAccelerated: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double | String]]] = js.undefined
-  var isVisible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var onBackdropPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
-  var onDismiss: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
+  var ModalComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
+  var animated: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var animationType: js.UndefOr[RecursivePartial[js.UndefOr[none | slide | fade]]] = js.native
+  var backdropStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var children: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.native
+  var fullScreen: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var hardwareAccelerated: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var isVisible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var onBackdropPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onDismiss: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
   var onOrientationChange: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]]]
-  ] = js.undefined
-  var onRequestClose: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
+  ] = js.native
+  var onRequestClose: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
   var onShow: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]]]
-  ] = js.undefined
-  var overlayBackgroundColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
-  var overlayStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
+  ] = js.native
+  var overlayStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
   var presentationStyle: js.UndefOr[
     RecursivePartial[js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen]]
-  ] = js.undefined
-  var statusBarTranslucent: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
+  ] = js.native
+  var statusBarTranslucent: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
   var supportedOrientations: js.UndefOr[
     RecursivePartial[
       js.UndefOr[
@@ -55,71 +56,113 @@ trait RecursivePartialPartialOv extends js.Object {
         ]
       ]
     ]
-  ] = js.undefined
-  var transparent: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var visible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double | String]]] = js.undefined
-  var windowBackgroundColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  ] = js.native
+  var transparent: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var visible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
 }
 
 object RecursivePartialPartialOv {
   @scala.inline
-  def apply(
-    animated: RecursivePartial[js.UndefOr[Boolean]] = null,
-    animationType: RecursivePartial[js.UndefOr[none | slide | fade]] = null,
-    borderRadius: RecursivePartial[js.UndefOr[Double]] = null,
-    children: RecursivePartial[js.UndefOr[ReactElement]] = null,
-    containerStyle: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]] = null,
-    fullScreen: RecursivePartial[js.UndefOr[Boolean]] = null,
-    hardwareAccelerated: RecursivePartial[js.UndefOr[Boolean]] = null,
-    height: RecursivePartial[js.UndefOr[Double | String]] = null,
-    isVisible: RecursivePartial[js.UndefOr[Boolean]] = null,
-    onBackdropPress: RecursivePartial[js.UndefOr[js.Function0[Unit]]] = null,
-    onDismiss: RecursivePartial[js.UndefOr[js.Function0[Unit]]] = null,
-    onOrientationChange: RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]]] = null,
-    onRequestClose: RecursivePartial[js.UndefOr[js.Function0[Unit]]] = null,
-    onShow: RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]]] = null,
-    overlayBackgroundColor: RecursivePartial[js.UndefOr[String]] = null,
-    overlayStyle: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]] = null,
-    presentationStyle: RecursivePartial[js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen]] = null,
-    statusBarTranslucent: RecursivePartial[js.UndefOr[Boolean]] = null,
-    supportedOrientations: RecursivePartial[
-      js.UndefOr[
-        js.Array[
-          portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
-        ]
-      ]
-    ] = null,
-    transparent: RecursivePartial[js.UndefOr[Boolean]] = null,
-    visible: RecursivePartial[js.UndefOr[Boolean]] = null,
-    width: RecursivePartial[js.UndefOr[Double | String]] = null,
-    windowBackgroundColor: RecursivePartial[js.UndefOr[String]] = null
-  ): RecursivePartialPartialOv = {
+  def apply(): RecursivePartialPartialOv = {
     val __obj = js.Dynamic.literal()
-    if (animated != null) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (fullScreen != null) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
-    if (hardwareAccelerated != null) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (isVisible != null) __obj.updateDynamic("isVisible")(isVisible.asInstanceOf[js.Any])
-    if (onBackdropPress != null) __obj.updateDynamic("onBackdropPress")(onBackdropPress.asInstanceOf[js.Any])
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss.asInstanceOf[js.Any])
-    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(onOrientationChange.asInstanceOf[js.Any])
-    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(onRequestClose.asInstanceOf[js.Any])
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow.asInstanceOf[js.Any])
-    if (overlayBackgroundColor != null) __obj.updateDynamic("overlayBackgroundColor")(overlayBackgroundColor.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
-    if (statusBarTranslucent != null) __obj.updateDynamic("statusBarTranslucent")(statusBarTranslucent.asInstanceOf[js.Any])
-    if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations.asInstanceOf[js.Any])
-    if (transparent != null) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (windowBackgroundColor != null) __obj.updateDynamic("windowBackgroundColor")(windowBackgroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecursivePartialPartialOv]
   }
+  @scala.inline
+  implicit class RecursivePartialPartialOvOps[Self <: RecursivePartialPartialOv] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModalComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = this.set("ModalComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModalComponent: Self = this.set("ModalComponent", js.undefined)
+    @scala.inline
+    def setAnimated(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setAnimationType(value: RecursivePartial[js.UndefOr[none | slide | fade]]): Self = this.set("animationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationType: Self = this.set("animationType", js.undefined)
+    @scala.inline
+    def setBackdropStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("backdropStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdropStyle: Self = this.set("backdropStyle", js.undefined)
+    @scala.inline
+    def setChildren(value: RecursivePartial[js.UndefOr[ReactElement]]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setFullScreen(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullScreen: Self = this.set("fullScreen", js.undefined)
+    @scala.inline
+    def setHardwareAccelerated(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("hardwareAccelerated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHardwareAccelerated: Self = this.set("hardwareAccelerated", js.undefined)
+    @scala.inline
+    def setIsVisible(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("isVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsVisible: Self = this.set("isVisible", js.undefined)
+    @scala.inline
+    def setOnBackdropPress(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onBackdropPress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBackdropPress: Self = this.set("onBackdropPress", js.undefined)
+    @scala.inline
+    def setOnDismiss(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    @scala.inline
+    def setOnOrientationChange(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]]]): Self = this.set("onOrientationChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnOrientationChange: Self = this.set("onOrientationChange", js.undefined)
+    @scala.inline
+    def setOnRequestClose(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onRequestClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRequestClose: Self = this.set("onRequestClose", js.undefined)
+    @scala.inline
+    def setOnShow(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]]]): Self = this.set("onShow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    @scala.inline
+    def setOverlayStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("overlayStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayStyle: Self = this.set("overlayStyle", js.undefined)
+    @scala.inline
+    def setPresentationStyle(value: RecursivePartial[js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen]]): Self = this.set("presentationStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresentationStyle: Self = this.set("presentationStyle", js.undefined)
+    @scala.inline
+    def setStatusBarTranslucent(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("statusBarTranslucent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusBarTranslucent: Self = this.set("statusBarTranslucent", js.undefined)
+    @scala.inline
+    def setSupportedOrientations(
+      value: RecursivePartial[
+          js.UndefOr[
+            js.Array[
+              portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
+            ]
+          ]
+        ]
+    ): Self = this.set("supportedOrientations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedOrientations: Self = this.set("supportedOrientations", js.undefined)
+    @scala.inline
+    def setTransparent(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    @scala.inline
+    def setVisible(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

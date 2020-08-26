@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Crypto extends js.Object {
   val subtle: SubtleCrypto = js.native
-  def getRandomValues(): Null = js.native
+  def getRandomValues(array: Null): Null = js.native
   def getRandomValues(array: DataView): DataView = js.native
   def getRandomValues(array: Float32Array): Float32Array = js.native
   def getRandomValues(array: Float64Array): Float64Array = js.native

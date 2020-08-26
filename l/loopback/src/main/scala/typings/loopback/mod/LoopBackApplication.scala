@@ -94,6 +94,7 @@ trait LoopBackApplication
     * @header app.middleware(name, handler
     */
   def middleware(name: String): js.Any = js.native
+  def middleware(name: String, paths: js.UndefOr[scala.Nothing], handler: Handler): js.Any = js.native
   def middleware(name: String, paths: String): js.Any = js.native
   def middleware(name: String, paths: String, handler: Handler): js.Any = js.native
   def middleware(name: String, paths: js.Array[_]): js.Any = js.native

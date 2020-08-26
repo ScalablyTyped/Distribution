@@ -15,10 +15,7 @@ object autoGroupColServiceMod extends js.Object {
     var context: js.Any = js.native
     var gridOptionsWrapper: js.Any = js.native
     def createAutoGroupColumns(rowGroupColumns: js.Array[Column]): js.Array[Column] = js.native
-    /* private */ def createOneAutoGroupColumn(): js.Any = js.native
-    /* private */ def createOneAutoGroupColumn(rowGroupCol: js.Any): js.Any = js.native
     /* private */ def createOneAutoGroupColumn(rowGroupCol: js.Any, index: js.Any): js.Any = js.native
-    /* private */ def generateDefaultColDef(): js.Any = js.native
     /* private */ def generateDefaultColDef(rowGroupCol: js.Any): js.Any = js.native
   }
   

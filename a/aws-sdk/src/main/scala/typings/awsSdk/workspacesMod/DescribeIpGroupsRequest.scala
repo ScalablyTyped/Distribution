@@ -22,16 +22,36 @@ trait DescribeIpGroupsRequest extends js.Object {
 
 object DescribeIpGroupsRequest {
   @scala.inline
-  def apply(
-    GroupIds: IpGroupIdList = null,
-    MaxResults: js.UndefOr[Limit] = js.undefined,
-    NextToken: PaginationToken = null
-  ): DescribeIpGroupsRequest = {
+  def apply(): DescribeIpGroupsRequest = {
     val __obj = js.Dynamic.literal()
-    if (GroupIds != null) __obj.updateDynamic("GroupIds")(GroupIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIpGroupsRequest]
   }
+  @scala.inline
+  implicit class DescribeIpGroupsRequestOps[Self <: DescribeIpGroupsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupIdsVarargs(value: IpGroupId*): Self = this.set("GroupIds", js.Array(value :_*))
+    @scala.inline
+    def setGroupIds(value: IpGroupIdList): Self = this.set("GroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupIds: Self = this.set("GroupIds", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Limit): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

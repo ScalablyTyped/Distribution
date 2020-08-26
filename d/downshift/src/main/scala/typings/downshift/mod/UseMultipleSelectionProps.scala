@@ -1,69 +1,121 @@
 package typings.downshift.mod
 
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UseMultipleSelectionProps[Item] extends js.Object {
-  var activeIndex: js.UndefOr[Double] = js.undefined
-  var defaultActiveIndex: js.UndefOr[Double] = js.undefined
-  var defaultSelectedItems: js.UndefOr[js.Array[Item]] = js.undefined
-  var environment: js.UndefOr[Environment] = js.undefined
-  var getA11yRemovalMessage: js.UndefOr[js.Function1[/* options */ A11yRemovalMessage[Item], String]] = js.undefined
-  var initialActiveIndex: js.UndefOr[Double] = js.undefined
-  var initialSelectedItems: js.UndefOr[js.Array[Item]] = js.undefined
-  var itemToString: js.UndefOr[js.Function1[/* item */ Item, String]] = js.undefined
-  var keyNavigationNext: js.UndefOr[String] = js.undefined
-  var keyNavigationPrevious: js.UndefOr[String] = js.undefined
-  var onActiveIndexChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.undefined
-  var onSelectedItemsChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.undefined
-  var onStateChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.undefined
-  var selectedItems: js.UndefOr[js.Array[Item]] = js.undefined
+  var activeIndex: js.UndefOr[Double] = js.native
+  var defaultActiveIndex: js.UndefOr[Double] = js.native
+  var defaultSelectedItems: js.UndefOr[js.Array[Item]] = js.native
+  var environment: js.UndefOr[Environment] = js.native
+  var getA11yRemovalMessage: js.UndefOr[js.Function1[/* options */ A11yRemovalMessage[Item], String]] = js.native
+  var initialActiveIndex: js.UndefOr[Double] = js.native
+  var initialSelectedItems: js.UndefOr[js.Array[Item]] = js.native
+  var itemToString: js.UndefOr[js.Function1[/* item */ Item, String]] = js.native
+  var keyNavigationNext: js.UndefOr[String] = js.native
+  var keyNavigationPrevious: js.UndefOr[String] = js.native
+  var onActiveIndexChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.native
+  var onSelectedItemsChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.native
+  var onStateChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.native
+  var selectedItems: js.UndefOr[js.Array[Item]] = js.native
   var stateReducer: js.UndefOr[
     js.Function2[
       /* state */ UseMultipleSelectionState[Item], 
       /* actionAndChanges */ UseMultipleSelectionStateChangeOptions[Item], 
-      UseMultipleSelectionState[Item]
+      Partial[UseMultipleSelectionState[Item]]
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object UseMultipleSelectionProps {
   @scala.inline
-  def apply[Item](
-    activeIndex: js.UndefOr[Double] = js.undefined,
-    defaultActiveIndex: js.UndefOr[Double] = js.undefined,
-    defaultSelectedItems: js.Array[Item] = null,
-    environment: Environment = null,
-    getA11yRemovalMessage: /* options */ A11yRemovalMessage[Item] => String = null,
-    initialActiveIndex: js.UndefOr[Double] = js.undefined,
-    initialSelectedItems: js.Array[Item] = null,
-    itemToString: /* item */ Item => String = null,
-    keyNavigationNext: String = null,
-    keyNavigationPrevious: String = null,
-    onActiveIndexChange: /* changes */ UseMultipleSelectionStateChange[Item] => Unit = null,
-    onSelectedItemsChange: /* changes */ UseMultipleSelectionStateChange[Item] => Unit = null,
-    onStateChange: /* changes */ UseMultipleSelectionStateChange[Item] => Unit = null,
-    selectedItems: js.Array[Item] = null,
-    stateReducer: (/* state */ UseMultipleSelectionState[Item], /* actionAndChanges */ UseMultipleSelectionStateChangeOptions[Item]) => UseMultipleSelectionState[Item] = null
-  ): UseMultipleSelectionProps[Item] = {
+  def apply[Item](): UseMultipleSelectionProps[Item] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultActiveIndex)) __obj.updateDynamic("defaultActiveIndex")(defaultActiveIndex.get.asInstanceOf[js.Any])
-    if (defaultSelectedItems != null) __obj.updateDynamic("defaultSelectedItems")(defaultSelectedItems.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (getA11yRemovalMessage != null) __obj.updateDynamic("getA11yRemovalMessage")(js.Any.fromFunction1(getA11yRemovalMessage))
-    if (!js.isUndefined(initialActiveIndex)) __obj.updateDynamic("initialActiveIndex")(initialActiveIndex.get.asInstanceOf[js.Any])
-    if (initialSelectedItems != null) __obj.updateDynamic("initialSelectedItems")(initialSelectedItems.asInstanceOf[js.Any])
-    if (itemToString != null) __obj.updateDynamic("itemToString")(js.Any.fromFunction1(itemToString))
-    if (keyNavigationNext != null) __obj.updateDynamic("keyNavigationNext")(keyNavigationNext.asInstanceOf[js.Any])
-    if (keyNavigationPrevious != null) __obj.updateDynamic("keyNavigationPrevious")(keyNavigationPrevious.asInstanceOf[js.Any])
-    if (onActiveIndexChange != null) __obj.updateDynamic("onActiveIndexChange")(js.Any.fromFunction1(onActiveIndexChange))
-    if (onSelectedItemsChange != null) __obj.updateDynamic("onSelectedItemsChange")(js.Any.fromFunction1(onSelectedItemsChange))
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
-    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction2(stateReducer))
     __obj.asInstanceOf[UseMultipleSelectionProps[Item]]
   }
+  @scala.inline
+  implicit class UseMultipleSelectionPropsOps[Self <: UseMultipleSelectionProps[_], Item] (val x: Self with UseMultipleSelectionProps[Item]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveIndex: Self = this.set("activeIndex", js.undefined)
+    @scala.inline
+    def setDefaultActiveIndex(value: Double): Self = this.set("defaultActiveIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultActiveIndex: Self = this.set("defaultActiveIndex", js.undefined)
+    @scala.inline
+    def setDefaultSelectedItemsVarargs(value: Item*): Self = this.set("defaultSelectedItems", js.Array(value :_*))
+    @scala.inline
+    def setDefaultSelectedItems(value: js.Array[Item]): Self = this.set("defaultSelectedItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSelectedItems: Self = this.set("defaultSelectedItems", js.undefined)
+    @scala.inline
+    def setEnvironment(value: Environment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setGetA11yRemovalMessage(value: /* options */ A11yRemovalMessage[Item] => String): Self = this.set("getA11yRemovalMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetA11yRemovalMessage: Self = this.set("getA11yRemovalMessage", js.undefined)
+    @scala.inline
+    def setInitialActiveIndex(value: Double): Self = this.set("initialActiveIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialActiveIndex: Self = this.set("initialActiveIndex", js.undefined)
+    @scala.inline
+    def setInitialSelectedItemsVarargs(value: Item*): Self = this.set("initialSelectedItems", js.Array(value :_*))
+    @scala.inline
+    def setInitialSelectedItems(value: js.Array[Item]): Self = this.set("initialSelectedItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialSelectedItems: Self = this.set("initialSelectedItems", js.undefined)
+    @scala.inline
+    def setItemToString(value: /* item */ Item => String): Self = this.set("itemToString", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemToString: Self = this.set("itemToString", js.undefined)
+    @scala.inline
+    def setKeyNavigationNext(value: String): Self = this.set("keyNavigationNext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyNavigationNext: Self = this.set("keyNavigationNext", js.undefined)
+    @scala.inline
+    def setKeyNavigationPrevious(value: String): Self = this.set("keyNavigationPrevious", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyNavigationPrevious: Self = this.set("keyNavigationPrevious", js.undefined)
+    @scala.inline
+    def setOnActiveIndexChange(value: /* changes */ UseMultipleSelectionStateChange[Item] => Unit): Self = this.set("onActiveIndexChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnActiveIndexChange: Self = this.set("onActiveIndexChange", js.undefined)
+    @scala.inline
+    def setOnSelectedItemsChange(value: /* changes */ UseMultipleSelectionStateChange[Item] => Unit): Self = this.set("onSelectedItemsChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelectedItemsChange: Self = this.set("onSelectedItemsChange", js.undefined)
+    @scala.inline
+    def setOnStateChange(value: /* changes */ UseMultipleSelectionStateChange[Item] => Unit): Self = this.set("onStateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStateChange: Self = this.set("onStateChange", js.undefined)
+    @scala.inline
+    def setSelectedItemsVarargs(value: Item*): Self = this.set("selectedItems", js.Array(value :_*))
+    @scala.inline
+    def setSelectedItems(value: js.Array[Item]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItems: Self = this.set("selectedItems", js.undefined)
+    @scala.inline
+    def setStateReducer(
+      value: (/* state */ UseMultipleSelectionState[Item], /* actionAndChanges */ UseMultipleSelectionStateChangeOptions[Item]) => Partial[UseMultipleSelectionState[Item]]
+    ): Self = this.set("stateReducer", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStateReducer: Self = this.set("stateReducer", js.undefined)
+  }
+  
 }
 

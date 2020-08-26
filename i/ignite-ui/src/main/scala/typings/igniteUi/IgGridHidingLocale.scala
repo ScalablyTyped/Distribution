@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridHidingLocale
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,89 +15,121 @@ trait IgGridHidingLocale
     * Specifies the text of the button which applies changes in the modal dialog.
     *
     */
-  var columnChooserButtonApplyText: js.UndefOr[String] = js.undefined
+  var columnChooserButtonApplyText: js.UndefOr[String] = js.native
   /**
     * Specifies the text of the button which cancels changes in the modal dialog.
     *
     */
-  var columnChooserButtonCancelText: js.UndefOr[String] = js.undefined
+  var columnChooserButtonCancelText: js.UndefOr[String] = js.native
   /**
     * The caption of the column chooser dialog.
     *
     */
-  var columnChooserCaptionLabel: js.UndefOr[String] = js.undefined
+  var columnChooserCaptionLabel: js.UndefOr[String] = js.native
   /**
     * The close button tooltip of the column chooser dialog.
     *
     */
-  var columnChooserCloseButtonTooltip: js.UndefOr[String] = js.undefined
+  var columnChooserCloseButtonTooltip: js.UndefOr[String] = js.native
   /**
     * The text used in the drop down tools menu(Feature Chooser) to launch the column chooser dialog.
     *
     */
-  var columnChooserDisplayText: js.UndefOr[String] = js.undefined
+  var columnChooserDisplayText: js.UndefOr[String] = js.native
   /**
     * The text used in the column chooser to hide column.
     *
     */
-  var columnChooserHideText: js.UndefOr[String] = js.undefined
+  var columnChooserHideText: js.UndefOr[String] = js.native
   /**
     * Text label for reset button.
     *
     */
-  var columnChooserResetButtonLabel: js.UndefOr[String] = js.undefined
+  var columnChooserResetButtonLabel: js.UndefOr[String] = js.native
   /**
     * The text used in the column chooser to show column.
     *
     */
-  var columnChooserShowText: js.UndefOr[String] = js.undefined
+  var columnChooserShowText: js.UndefOr[String] = js.native
   /**
     * The text used in the drop down tools menu(Feature Chooser) to hide a column.
     *
     */
-  var columnHideText: js.UndefOr[String] = js.undefined
+  var columnHideText: js.UndefOr[String] = js.native
   /**
     * The text displayed in the tooltip of the hidden column indicator.
     *
     */
-  var hiddenColumnIndicatorTooltipText: js.UndefOr[String] = js.undefined
+  var hiddenColumnIndicatorTooltipText: js.UndefOr[String] = js.native
   /**
     * Specifies the hiding column icon tooltip.
     *
     */
-  var hideColumnIconTooltip: js.UndefOr[String] = js.undefined
+  var hideColumnIconTooltip: js.UndefOr[String] = js.native
 }
 
 object IgGridHidingLocale {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    columnChooserButtonApplyText: String = null,
-    columnChooserButtonCancelText: String = null,
-    columnChooserCaptionLabel: String = null,
-    columnChooserCloseButtonTooltip: String = null,
-    columnChooserDisplayText: String = null,
-    columnChooserHideText: String = null,
-    columnChooserResetButtonLabel: String = null,
-    columnChooserShowText: String = null,
-    columnHideText: String = null,
-    hiddenColumnIndicatorTooltipText: String = null,
-    hideColumnIconTooltip: String = null
-  ): IgGridHidingLocale = {
+  def apply(): IgGridHidingLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnChooserButtonApplyText != null) __obj.updateDynamic("columnChooserButtonApplyText")(columnChooserButtonApplyText.asInstanceOf[js.Any])
-    if (columnChooserButtonCancelText != null) __obj.updateDynamic("columnChooserButtonCancelText")(columnChooserButtonCancelText.asInstanceOf[js.Any])
-    if (columnChooserCaptionLabel != null) __obj.updateDynamic("columnChooserCaptionLabel")(columnChooserCaptionLabel.asInstanceOf[js.Any])
-    if (columnChooserCloseButtonTooltip != null) __obj.updateDynamic("columnChooserCloseButtonTooltip")(columnChooserCloseButtonTooltip.asInstanceOf[js.Any])
-    if (columnChooserDisplayText != null) __obj.updateDynamic("columnChooserDisplayText")(columnChooserDisplayText.asInstanceOf[js.Any])
-    if (columnChooserHideText != null) __obj.updateDynamic("columnChooserHideText")(columnChooserHideText.asInstanceOf[js.Any])
-    if (columnChooserResetButtonLabel != null) __obj.updateDynamic("columnChooserResetButtonLabel")(columnChooserResetButtonLabel.asInstanceOf[js.Any])
-    if (columnChooserShowText != null) __obj.updateDynamic("columnChooserShowText")(columnChooserShowText.asInstanceOf[js.Any])
-    if (columnHideText != null) __obj.updateDynamic("columnHideText")(columnHideText.asInstanceOf[js.Any])
-    if (hiddenColumnIndicatorTooltipText != null) __obj.updateDynamic("hiddenColumnIndicatorTooltipText")(hiddenColumnIndicatorTooltipText.asInstanceOf[js.Any])
-    if (hideColumnIconTooltip != null) __obj.updateDynamic("hideColumnIconTooltip")(hideColumnIconTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridHidingLocale]
   }
+  @scala.inline
+  implicit class IgGridHidingLocaleOps[Self <: IgGridHidingLocale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnChooserButtonApplyText(value: String): Self = this.set("columnChooserButtonApplyText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnChooserButtonApplyText: Self = this.set("columnChooserButtonApplyText", js.undefined)
+    @scala.inline
+    def setColumnChooserButtonCancelText(value: String): Self = this.set("columnChooserButtonCancelText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnChooserButtonCancelText: Self = this.set("columnChooserButtonCancelText", js.undefined)
+    @scala.inline
+    def setColumnChooserCaptionLabel(value: String): Self = this.set("columnChooserCaptionLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnChooserCaptionLabel: Self = this.set("columnChooserCaptionLabel", js.undefined)
+    @scala.inline
+    def setColumnChooserCloseButtonTooltip(value: String): Self = this.set("columnChooserCloseButtonTooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnChooserCloseButtonTooltip: Self = this.set("columnChooserCloseButtonTooltip", js.undefined)
+    @scala.inline
+    def setColumnChooserDisplayText(value: String): Self = this.set("columnChooserDisplayText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnChooserDisplayText: Self = this.set("columnChooserDisplayText", js.undefined)
+    @scala.inline
+    def setColumnChooserHideText(value: String): Self = this.set("columnChooserHideText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnChooserHideText: Self = this.set("columnChooserHideText", js.undefined)
+    @scala.inline
+    def setColumnChooserResetButtonLabel(value: String): Self = this.set("columnChooserResetButtonLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnChooserResetButtonLabel: Self = this.set("columnChooserResetButtonLabel", js.undefined)
+    @scala.inline
+    def setColumnChooserShowText(value: String): Self = this.set("columnChooserShowText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnChooserShowText: Self = this.set("columnChooserShowText", js.undefined)
+    @scala.inline
+    def setColumnHideText(value: String): Self = this.set("columnHideText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnHideText: Self = this.set("columnHideText", js.undefined)
+    @scala.inline
+    def setHiddenColumnIndicatorTooltipText(value: String): Self = this.set("hiddenColumnIndicatorTooltipText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenColumnIndicatorTooltipText: Self = this.set("hiddenColumnIndicatorTooltipText", js.undefined)
+    @scala.inline
+    def setHideColumnIconTooltip(value: String): Self = this.set("hideColumnIconTooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideColumnIconTooltip: Self = this.set("hideColumnIconTooltip", js.undefined)
+  }
+  
 }
 

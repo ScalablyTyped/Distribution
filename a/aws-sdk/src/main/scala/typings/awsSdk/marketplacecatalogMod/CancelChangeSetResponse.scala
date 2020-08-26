@@ -18,11 +18,30 @@ trait CancelChangeSetResponse extends js.Object {
 
 object CancelChangeSetResponse {
   @scala.inline
-  def apply(ChangeSetArn: ARN = null, ChangeSetId: ResourceId = null): CancelChangeSetResponse = {
+  def apply(): CancelChangeSetResponse = {
     val __obj = js.Dynamic.literal()
-    if (ChangeSetArn != null) __obj.updateDynamic("ChangeSetArn")(ChangeSetArn.asInstanceOf[js.Any])
-    if (ChangeSetId != null) __obj.updateDynamic("ChangeSetId")(ChangeSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelChangeSetResponse]
   }
+  @scala.inline
+  implicit class CancelChangeSetResponseOps[Self <: CancelChangeSetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeSetArn(value: ARN): Self = this.set("ChangeSetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetArn: Self = this.set("ChangeSetArn", js.undefined)
+    @scala.inline
+    def setChangeSetId(value: ResourceId): Self = this.set("ChangeSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetId: Self = this.set("ChangeSetId", js.undefined)
+  }
+  
 }
 

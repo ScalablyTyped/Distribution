@@ -6,37 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxOutgoingQueue Class */
+@js.native
 trait FaxOutgoingQueue extends js.Object {
   /** How long the failed fax message is kept on the server */
-  var AgeLimit: Double
+  var AgeLimit: Double = js.native
   /** Are personal cover pages allowed */
-  var AllowPersonalCoverPages: Boolean
+  var AllowPersonalCoverPages: Boolean = js.native
   /** Is the queue blocked */
-  var Blocked: Boolean
+  var Blocked: Boolean = js.native
   /** Does the server generate a brand */
-  var Branding: Boolean
+  var Branding: Boolean = js.native
   /** End of the discount rate period */
-  var DiscountRateEnd: VarDate
+  var DiscountRateEnd: VarDate = js.native
   /** Start of the discount rate period */
-  var DiscountRateStart: VarDate
+  var DiscountRateStart: VarDate = js.native
   @JSName("FAXCOMEXLib.FaxOutgoingQueue_typekey")
-  var FAXCOMEXLibDotFaxOutgoingQueue_typekey: FaxOutgoingQueue
+  var FAXCOMEXLibDotFaxOutgoingQueue_typekey: FaxOutgoingQueue = js.native
   /** Is the queue paused */
-  var Paused: Boolean
+  var Paused: Boolean = js.native
   /** Number of retries */
-  var Retries: Double
+  var Retries: Double = js.native
   /** Retry delay */
-  var RetryDelay: Double
+  var RetryDelay: Double = js.native
   /** Is device Transmitting Station ID used */
-  var UseDeviceTSID: Boolean
+  var UseDeviceTSID: Boolean = js.native
   /** Outgoing job by ID */
-  def GetJob(bstrJobId: String): IFaxOutgoingJob
+  def GetJob(bstrJobId: String): IFaxOutgoingJob = js.native
   /** Collection of outgoing jobs */
-  def GetJobs(): FaxOutgoingJobs
+  def GetJobs(): FaxOutgoingJobs = js.native
   /** Refresh the object */
-  def Refresh(): Unit
+  def Refresh(): Unit = js.native
   /** Save the object */
-  def Save(): Unit
+  def Save(): Unit = js.native
 }
 
 object FaxOutgoingQueue {
@@ -62,5 +63,48 @@ object FaxOutgoingQueue {
     __obj.updateDynamic("FAXCOMEXLib.FaxOutgoingQueue_typekey")(FAXCOMEXLibDotFaxOutgoingQueue_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaxOutgoingQueue]
   }
+  @scala.inline
+  implicit class FaxOutgoingQueueOps[Self <: FaxOutgoingQueue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgeLimit(value: Double): Self = this.set("AgeLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowPersonalCoverPages(value: Boolean): Self = this.set("AllowPersonalCoverPages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlocked(value: Boolean): Self = this.set("Blocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBranding(value: Boolean): Self = this.set("Branding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiscountRateEnd(value: VarDate): Self = this.set("DiscountRateEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiscountRateStart(value: VarDate): Self = this.set("DiscountRateStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFAXCOMEXLibDotFaxOutgoingQueue_typekey(value: FaxOutgoingQueue): Self = this.set("FAXCOMEXLib.FaxOutgoingQueue_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetJob(value: String => IFaxOutgoingJob): Self = this.set("GetJob", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetJobs(value: () => FaxOutgoingJobs): Self = this.set("GetJobs", js.Any.fromFunction0(value))
+    @scala.inline
+    def setPaused(value: Boolean): Self = this.set("Paused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRefresh(value: () => Unit): Self = this.set("Refresh", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRetries(value: Double): Self = this.set("Retries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRetryDelay(value: Double): Self = this.set("RetryDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseDeviceTSID(value: Boolean): Self = this.set("UseDeviceTSID", value.asInstanceOf[js.Any])
+  }
+  
 }
 

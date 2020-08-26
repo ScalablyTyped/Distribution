@@ -9,9 +9,9 @@ Add `spread` method to the promise of $q.all
 | ------------------ | :-------------: |
 | Full name          | angular-q-spread |
 | Keywords           | $q, all, spread, angular, angularjs |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3121 |
+| # downloads        | 3125 |
 | # stars            | 0 |
 
 ## Links

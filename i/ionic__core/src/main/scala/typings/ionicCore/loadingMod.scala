@@ -6,6 +6,7 @@ import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +34,7 @@ object loadingMod extends js.Object {
     var durationTimeout: js.Any = js.native
     @JSName("el")
     var el_Loading: HTMLIonLoadingElement = js.native
+    var lastFocus: js.UndefOr[HTMLElement] = js.native
     /**
       * Optional text content to display in the loading indicator.
       */
@@ -54,6 +56,8 @@ object loadingMod extends js.Object {
     var translucent: Boolean = js.native
     @JSName("componentWillLoad")
     def componentWillLoad_MLoading(): Unit = js.native
+    @JSName("connectedCallback")
+    def connectedCallback_MLoading(): Unit = js.native
     /**
       * Returns a promise that resolves when the loading did dismiss.
       */

@@ -1,40 +1,87 @@
 package typings.vexdb.requestObjectsMod
 
 import typings.vexdb.responseObjectsMod.AwardsResponseObject
+import typings.vexdb.vexdbStrings.name
+import typings.vexdb.vexdbStrings.order
+import typings.vexdb.vexdbStrings.sku
+import typings.vexdb.vexdbStrings.team
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AwardsRequestObject extends RequestObject {
-  var limit_number: js.UndefOr[Double] = js.undefined
-  var limit_start: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[StringRequest[AwardsResponseObject, String]] = js.undefined
-  var order: js.UndefOr[NumberRequest[AwardsResponseObject, Double]] = js.undefined
-  var season: js.UndefOr[StringRequest[AwardsResponseObject, Seasons]] = js.undefined
-  var sku: js.UndefOr[StringRequest[AwardsResponseObject, String]] = js.undefined
-  var team: js.UndefOr[StringRequest[AwardsResponseObject, String]] = js.undefined
+  var limit_number: js.UndefOr[Double] = js.native
+  var limit_start: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.name, String]] = js.native
+  var order: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.order, Double]] = js.native
+  var season: js.UndefOr[Seasons] = js.native
+  var sku: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.native
+  var team: js.UndefOr[Filter[AwardsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.native
 }
 
 object AwardsRequestObject {
   @scala.inline
-  def apply(
-    limit_number: js.UndefOr[Double] = js.undefined,
-    limit_start: js.UndefOr[Double] = js.undefined,
-    name: StringRequest[AwardsResponseObject, String] = null,
-    order: NumberRequest[AwardsResponseObject, Double] = null,
-    season: StringRequest[AwardsResponseObject, Seasons] = null,
-    sku: StringRequest[AwardsResponseObject, String] = null,
-    team: StringRequest[AwardsResponseObject, String] = null
-  ): AwardsRequestObject = {
+  def apply(): AwardsRequestObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
-    if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwardsRequestObject]
   }
+  @scala.inline
+  implicit class AwardsRequestObjectOps[Self <: AwardsRequestObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimit_number(value: Double): Self = this.set("limit_number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit_number: Self = this.set("limit_number", js.undefined)
+    @scala.inline
+    def setLimit_start(value: Double): Self = this.set("limit_start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit_start: Self = this.set("limit_start", js.undefined)
+    @scala.inline
+    def setNameFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, AwardsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("name", js.Any.fromFunction2(value))
+    @scala.inline
+    def setName(value: Filter[AwardsResponseObject, name, String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrderFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, AwardsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("order", js.Any.fromFunction2(value))
+    @scala.inline
+    def setOrder(value: Filter[AwardsResponseObject, order, Double]): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setSeason(value: Seasons): Self = this.set("season", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeason: Self = this.set("season", js.undefined)
+    @scala.inline
+    def setSkuFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, AwardsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("sku", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSku(value: Filter[AwardsResponseObject, sku, String]): Self = this.set("sku", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSku: Self = this.set("sku", js.undefined)
+    @scala.inline
+    def setTeamFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, AwardsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("team", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTeam(value: Filter[AwardsResponseObject, team, String]): Self = this.set("team", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeam: Self = this.set("team", js.undefined)
+  }
+  
 }
 

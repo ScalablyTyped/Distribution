@@ -18,10 +18,28 @@ trait LambdaAction extends js.Object {
 
 object LambdaAction {
   @scala.inline
-  def apply(functionArn: AmazonResourceName, payload: Payload = null): LambdaAction = {
+  def apply(functionArn: AmazonResourceName): LambdaAction = {
     val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaAction]
   }
+  @scala.inline
+  implicit class LambdaActionOps[Self <: LambdaAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionArn(value: AmazonResourceName): Self = this.set("functionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPayload(value: Payload): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("payload", js.undefined)
+  }
+  
 }
 

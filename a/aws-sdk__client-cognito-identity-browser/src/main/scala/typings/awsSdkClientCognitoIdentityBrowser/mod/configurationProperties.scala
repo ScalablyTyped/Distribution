@@ -33,17 +33,21 @@ object configurationProperties extends js.Object {
     CognitoIdentityResolvableConfiguration, 
     CognitoIdentityResolvedConfiguration
   ] = js.native
-  val base64Decoder: ConfigurationPropertyDefinition[
-    js.UndefOr[Decoder], 
-    Decoder, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val base64Decoder: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Decoder], 
+      Decoder, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val base64Encoder: ConfigurationPropertyDefinition[
-    js.UndefOr[Encoder], 
-    Encoder, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val base64Encoder: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Encoder], 
+      Encoder, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
   val bodyLengthChecker: ConfigurationPropertyDefinition[
     js.Function1[/* body */ _, js.UndefOr[Double]], 
@@ -57,47 +61,61 @@ object configurationProperties extends js.Object {
     CognitoIdentityResolvableConfiguration, 
     CognitoIdentityResolvedConfiguration
   ] = js.native
-  val delayDecider: ConfigurationPropertyDefinition[
-    js.UndefOr[DelayDecider], 
-    js.UndefOr[DelayDecider], 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val delayDecider: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[DelayDecider], 
+      js.UndefOr[DelayDecider], 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val endpoint: ConfigurationPropertyDefinition[
-    js.UndefOr[String | HttpEndpoint | Provider[HttpEndpoint]], 
-    Provider[HttpEndpoint], 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val endpoint: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[String | HttpEndpoint | Provider[HttpEndpoint]], 
+      Provider[HttpEndpoint], 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val endpointProvider: ConfigurationPropertyDefinition[
-    js.UndefOr[_], 
-    _, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val endpointProvider: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[_], 
+      _, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val handler: ConfigurationPropertyDefinition[
-    js.UndefOr[Terminalware[_, Blob]], 
-    Terminalware[_, Blob], 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val handler: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Terminalware[_, Blob]], 
+      Terminalware[_, Blob], 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val httpHandler: ConfigurationPropertyDefinition[
-    js.UndefOr[HttpHandler[Blob, HttpOptions]], 
-    HttpHandler[Blob, HttpOptions], 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val httpHandler: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[HttpHandler[Blob, HttpOptions]], 
+      HttpHandler[Blob, HttpOptions], 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val maxRedirects: ConfigurationPropertyDefinition[
-    js.UndefOr[Double], 
-    Double, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val maxRedirects: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Double], 
+      Double, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val maxRetries: ConfigurationPropertyDefinition[
-    js.UndefOr[Double], 
-    Double, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val maxRetries: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Double], 
+      Double, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
   val parser: ConfigurationPropertyDefinition[
     ResponseParser[Blob], 
@@ -105,11 +123,13 @@ object configurationProperties extends js.Object {
     CognitoIdentityResolvableConfiguration, 
     CognitoIdentityResolvedConfiguration
   ] = js.native
-  val profile: ConfigurationPropertyDefinition[
-    js.UndefOr[String], 
-    js.UndefOr[String], 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val profile: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[String], 
+      js.UndefOr[String], 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
   val region: ConfigurationPropertyDefinition[
     String | Provider[String], 
@@ -117,11 +137,13 @@ object configurationProperties extends js.Object {
     CognitoIdentityResolvableConfiguration, 
     CognitoIdentityResolvedConfiguration
   ] = js.native
-  val retryDecider: ConfigurationPropertyDefinition[
-    js.UndefOr[RetryDecider], 
-    js.UndefOr[RetryDecider], 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val retryDecider: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[RetryDecider], 
+      js.UndefOr[RetryDecider], 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
   val serializer: ConfigurationPropertyDefinition[
     Provider[RequestSerializer[Blob]], 
@@ -129,53 +151,69 @@ object configurationProperties extends js.Object {
     CognitoIdentityResolvableConfiguration, 
     CognitoIdentityResolvedConfiguration
   ] = js.native
-  val sha256: ConfigurationPropertyDefinition[
-    js.UndefOr[HashConstructor], 
-    HashConstructor, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val sha256: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[HashConstructor], 
+      HashConstructor, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val signer: ConfigurationPropertyDefinition[
-    js.UndefOr[RequestSigner], 
-    RequestSigner, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val signer: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[RequestSigner], 
+      RequestSigner, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val signingName: ConfigurationPropertyDefinition[
-    js.UndefOr[String], 
-    String, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val signingName: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[String], 
+      String, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val sslEnabled: ConfigurationPropertyDefinition[
-    js.UndefOr[Boolean], 
-    Boolean, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val sslEnabled: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Boolean], 
+      Boolean, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val streamCollector: ConfigurationPropertyDefinition[
-    js.UndefOr[StreamCollector[Blob]], 
-    StreamCollector[Blob], 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val streamCollector: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[StreamCollector[Blob]], 
+      StreamCollector[Blob], 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val urlParser: ConfigurationPropertyDefinition[
-    js.UndefOr[UrlParser], 
-    UrlParser, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val urlParser: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[UrlParser], 
+      UrlParser, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val utf8Decoder: ConfigurationPropertyDefinition[
-    js.UndefOr[Decoder], 
-    Decoder, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val utf8Decoder: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Decoder], 
+      Decoder, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
-  val utf8Encoder: ConfigurationPropertyDefinition[
-    js.UndefOr[Encoder], 
-    Encoder, 
-    CognitoIdentityResolvableConfiguration, 
-    CognitoIdentityResolvedConfiguration
+  val utf8Encoder: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Encoder], 
+      Encoder, 
+      CognitoIdentityResolvableConfiguration, 
+      CognitoIdentityResolvedConfiguration
+    ]
   ] = js.native
 }
 

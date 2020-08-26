@@ -232,7 +232,7 @@ object mod extends js.Object {
     var Bucket: Instantiable3[
         /* storage */ typings.googleCloudStorage.storageMod.Storage, 
         /* name */ String, 
-        js.UndefOr[/* options */ BucketOptions], 
+        /* options */ js.UndefOr[BucketOptions], 
         typings.googleCloudStorage.bucketMod.Bucket
       ] = js.native
     /**
@@ -258,7 +258,7 @@ object mod extends js.Object {
     var File: Instantiable3[
         /* bucket */ typings.googleCloudStorage.bucketMod.Bucket, 
         /* name */ String, 
-        js.UndefOr[/* options */ FileOptions], 
+        /* options */ js.UndefOr[FileOptions], 
         typings.googleCloudStorage.fileMod.File
       ] = js.native
     /**
@@ -271,7 +271,7 @@ object mod extends js.Object {
     var HmacKey: Instantiable3[
         /* storage */ typings.googleCloudStorage.storageMod.Storage, 
         /* accessId */ String, 
-        js.UndefOr[/* options */ HmacKeyOptions], 
+        /* options */ js.UndefOr[HmacKeyOptions], 
         typings.googleCloudStorage.hmacKeyMod.HmacKey
       ] = js.native
     /**
@@ -331,6 +331,7 @@ object mod extends js.Object {
       * });
       */
     var acl: OWNERROLE = js.native
+    var sanitizeEndpoint: js.Any = js.native
   }
   
 }

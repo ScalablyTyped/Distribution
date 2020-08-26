@@ -11,8 +11,8 @@ Typings are for version 2.0.2
 | Full name          | react-mixin |
 | Keywords           | react, mixin, es6, class, smart-mixin |
 | # releases         | 2 |
-| # dependents       | 188 |
-| # downloads        | 1220420 |
+| # dependents       | 191 |
+| # downloads        | 1187039 |
 | # stars            | 7 |
 
 ## Links

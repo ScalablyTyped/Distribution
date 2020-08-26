@@ -69,7 +69,38 @@ trait LanguageService extends js.Object {
     fileName: java.lang.String,
     position: Double,
     entryName: java.lang.String,
+    formatOptions: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: js.UndefOr[scala.Nothing],
+    source: java.lang.String
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: js.UndefOr[scala.Nothing],
+    source: java.lang.String,
+    preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
     formatOptions: FormatCodeOptions
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeOptions,
+    source: js.UndefOr[scala.Nothing],
+    preferences: UserPreferences
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
@@ -91,6 +122,14 @@ trait LanguageService extends js.Object {
     position: Double,
     entryName: java.lang.String,
     formatOptions: FormatCodeSettings
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    source: js.UndefOr[scala.Nothing],
+    preferences: UserPreferences
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
@@ -161,6 +200,7 @@ trait LanguageService extends js.Object {
     preferences: UserPreferences
   ): js.UndefOr[RefactorEditInfo] = js.native
   def getEmitOutput(fileName: java.lang.String): EmitOutput = js.native
+  def getEmitOutput(fileName: java.lang.String, emitOnlyDtsFiles: js.UndefOr[scala.Nothing], forceDtsEmit: Boolean): EmitOutput = js.native
   def getEmitOutput(fileName: java.lang.String, emitOnlyDtsFiles: Boolean): EmitOutput = js.native
   def getEmitOutput(fileName: java.lang.String, emitOnlyDtsFiles: Boolean, forceDtsEmit: Boolean): EmitOutput = js.native
   def getEncodedSemanticClassifications(fileName: java.lang.String, span: TextSpan): Classifications = js.native
@@ -181,7 +221,30 @@ trait LanguageService extends js.Object {
   def getJsxClosingTagAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[JsxClosingTagInfo] = js.native
   def getNameOrDottedNameSpan(fileName: java.lang.String, startPos: Double, endPos: Double): js.UndefOr[TextSpan] = js.native
   def getNavigateToItems(searchValue: java.lang.String): js.Array[NavigateToItem] = js.native
+  def getNavigateToItems(
+    searchValue: java.lang.String,
+    maxResultCount: js.UndefOr[scala.Nothing],
+    fileName: js.UndefOr[scala.Nothing],
+    excludeDtsFiles: Boolean
+  ): js.Array[NavigateToItem] = js.native
+  def getNavigateToItems(
+    searchValue: java.lang.String,
+    maxResultCount: js.UndefOr[scala.Nothing],
+    fileName: java.lang.String
+  ): js.Array[NavigateToItem] = js.native
+  def getNavigateToItems(
+    searchValue: java.lang.String,
+    maxResultCount: js.UndefOr[scala.Nothing],
+    fileName: java.lang.String,
+    excludeDtsFiles: Boolean
+  ): js.Array[NavigateToItem] = js.native
   def getNavigateToItems(searchValue: java.lang.String, maxResultCount: Double): js.Array[NavigateToItem] = js.native
+  def getNavigateToItems(
+    searchValue: java.lang.String,
+    maxResultCount: Double,
+    fileName: js.UndefOr[scala.Nothing],
+    excludeDtsFiles: Boolean
+  ): js.Array[NavigateToItem] = js.native
   def getNavigateToItems(searchValue: java.lang.String, maxResultCount: Double, fileName: java.lang.String): js.Array[NavigateToItem] = js.native
   def getNavigateToItems(
     searchValue: java.lang.String,

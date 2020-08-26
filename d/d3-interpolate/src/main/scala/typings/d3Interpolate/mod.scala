@@ -41,8 +41,8 @@ object mod extends js.Object {
   val interpolateRgb: ColorGammaInterpolationFactory = js.native
   def interpolate(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
   def interpolate(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  def interpolate(a: js.Any): js.Function1[/* t */ Double, Null] = js.native
   def interpolate(a: js.Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = js.native
+  def interpolate(a: js.Any, b: Null): js.Function1[/* t */ Double, Null] = js.native
   def interpolate(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
   def interpolate(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
   def interpolate(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native

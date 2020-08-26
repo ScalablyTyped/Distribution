@@ -22,11 +22,32 @@ trait SchemaPagespeedApiFormatStringV2 extends js.Object {
 
 object SchemaPagespeedApiFormatStringV2 {
   @scala.inline
-  def apply(args: js.Array[Rects] = null, format: String = null): SchemaPagespeedApiFormatStringV2 = {
+  def apply(): SchemaPagespeedApiFormatStringV2 = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPagespeedApiFormatStringV2]
   }
+  @scala.inline
+  implicit class SchemaPagespeedApiFormatStringV2Ops[Self <: SchemaPagespeedApiFormatStringV2] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: Rects*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[Rects]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+  }
+  
 }
 

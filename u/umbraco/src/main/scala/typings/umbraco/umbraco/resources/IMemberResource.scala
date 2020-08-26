@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * @name umbraco.resources.memberResource
   * @description Loads in data for members
   **/
+@js.native
 trait IMemberResource extends js.Object {
   /**
     * @ngdoc method
@@ -31,7 +32,7 @@ trait IMemberResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def deleteByKey(key: String): IPromise[IResourcePromise]
+  def deleteByKey(key: String): IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.memberResource#getByKey
@@ -53,9 +54,9 @@ trait IMemberResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the member item.
     *
     */
-  def getByKey(key: String): IPromise[IResourcePromise]
-  def getListNode(listName: String): js.Any
-  def getPagedResults(memberTypeAlias: String, options: js.Any): js.Any
+  def getByKey(key: String): IPromise[IResourcePromise] = js.native
+  def getListNode(listName: String): js.Any = js.native
+  def getPagedResults(memberTypeAlias: String, options: js.Any): js.Any = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.memberResource#getScaffold
@@ -86,7 +87,7 @@ trait IMemberResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the member scaffold.
     *
     */
-  def getScaffold(alias: String): IPromise[IResourcePromise]
+  def getScaffold(alias: String): IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.memberResource#save
@@ -115,7 +116,7 @@ trait IMemberResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the saved media item.
     *
     */
-  def save(member: js.Object, isNew: Boolean, files: js.Array[_]): IPromise[IResourcePromise]
+  def save(member: js.Object, isNew: Boolean, files: js.Array[_]): IPromise[IResourcePromise] = js.native
 }
 
 object IMemberResource {
@@ -131,5 +132,30 @@ object IMemberResource {
     val __obj = js.Dynamic.literal(deleteByKey = js.Any.fromFunction1(deleteByKey), getByKey = js.Any.fromFunction1(getByKey), getListNode = js.Any.fromFunction1(getListNode), getPagedResults = js.Any.fromFunction2(getPagedResults), getScaffold = js.Any.fromFunction1(getScaffold), save = js.Any.fromFunction3(save))
     __obj.asInstanceOf[IMemberResource]
   }
+  @scala.inline
+  implicit class IMemberResourceOps[Self <: IMemberResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteByKey(value: String => IPromise[IResourcePromise]): Self = this.set("deleteByKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetByKey(value: String => IPromise[IResourcePromise]): Self = this.set("getByKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetListNode(value: String => js.Any): Self = this.set("getListNode", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetPagedResults(value: (String, js.Any) => js.Any): Self = this.set("getPagedResults", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetScaffold(value: String => IPromise[IResourcePromise]): Self = this.set("getScaffold", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSave(value: (js.Object, Boolean, js.Array[_]) => IPromise[IResourcePromise]): Self = this.set("save", js.Any.fromFunction3(value))
+  }
+  
 }
 

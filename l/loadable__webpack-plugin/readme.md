@@ -10,15 +10,15 @@ Webpack plugin for loadable (required for SSR).
 | ------------------ | :-------------: |
 | Full name          | @loadable/webpack-plugin |
 | Keywords           | loadable |
-| # releases         | 17 |
+| # releases         | 16 |
 | # dependents       | 36 |
-| # downloads        | 1118768 |
+| # downloads        | 1138182 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/smooth-code/loadable-components#readme)
-- [Bugs](https://github.com/smooth-code/loadable-components/issues)
-- [Repository](https://github.com/smooth-code/loadable-components)
+- [Homepage](https://github.com/gregberge/loadable-components#readme)
+- [Bugs](https://github.com/gregberge/loadable-components/issues)
+- [Repository](https://github.com/gregberge/loadable-components)
 - [Npm](https://www.npmjs.com/package/%40loadable%2Fwebpack-plugin)
     
 

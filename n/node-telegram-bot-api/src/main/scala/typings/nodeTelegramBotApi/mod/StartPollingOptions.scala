@@ -1,34 +1,36 @@
 package typings.nodeTelegramBotApi.mod
 
-import typings.request.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StartPollingOptions extends ConstructorOptions {
-  var restart: js.UndefOr[Boolean] = js.undefined
+  var restart: js.UndefOr[Boolean] = js.native
 }
 
 object StartPollingOptions {
   @scala.inline
-  def apply(
-    baseApiUrl: String = null,
-    filepath: js.UndefOr[Boolean] = js.undefined,
-    onlyFirstMatch: js.UndefOr[Boolean] = js.undefined,
-    polling: Boolean | PollingOptions = null,
-    request: Options = null,
-    restart: js.UndefOr[Boolean] = js.undefined,
-    webHook: Boolean | WebHookOptions = null
-  ): StartPollingOptions = {
+  def apply(): StartPollingOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseApiUrl != null) __obj.updateDynamic("baseApiUrl")(baseApiUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(filepath)) __obj.updateDynamic("filepath")(filepath.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyFirstMatch)) __obj.updateDynamic("onlyFirstMatch")(onlyFirstMatch.get.asInstanceOf[js.Any])
-    if (polling != null) __obj.updateDynamic("polling")(polling.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (!js.isUndefined(restart)) __obj.updateDynamic("restart")(restart.get.asInstanceOf[js.Any])
-    if (webHook != null) __obj.updateDynamic("webHook")(webHook.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPollingOptions]
   }
+  @scala.inline
+  implicit class StartPollingOptionsOps[Self <: StartPollingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRestart(value: Boolean): Self = this.set("restart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestart: Self = this.set("restart", js.undefined)
+  }
+  
 }
 

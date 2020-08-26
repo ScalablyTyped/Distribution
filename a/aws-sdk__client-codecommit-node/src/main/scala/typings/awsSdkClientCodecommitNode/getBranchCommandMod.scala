@@ -26,16 +26,9 @@ object getBranchCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetBranchInput) = this()
-    /* CompleteClass */
-    override val input: GetBranchInput = js.native
     val middlewareStack: MiddlewareStack[GetBranchInput, GetBranchOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[GetBranchInput, GetBranchOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[GetBranchInput, GetBranchOutput] = js.native
   }

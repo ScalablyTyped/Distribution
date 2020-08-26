@@ -1,6 +1,5 @@
 package typings.graphql.mod
 
-import typings.graphql.sourceMod.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +10,7 @@ class Source protected ()
   extends typings.graphql.languageMod.Source {
   def this(body: String) = this()
   def this(body: String, name: String) = this()
-  def this(body: String, name: String, locationOffset: Location) = this()
+  def this(body: String, name: js.UndefOr[scala.Nothing], locationOffset: typings.graphql.sourceMod.Location) = this()
+  def this(body: String, name: String, locationOffset: typings.graphql.sourceMod.Location) = this()
 }
 

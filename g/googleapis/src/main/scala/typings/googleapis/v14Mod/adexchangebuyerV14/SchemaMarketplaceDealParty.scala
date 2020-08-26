@@ -20,11 +20,30 @@ trait SchemaMarketplaceDealParty extends js.Object {
 
 object SchemaMarketplaceDealParty {
   @scala.inline
-  def apply(buyer: SchemaBuyer = null, seller: SchemaSeller = null): SchemaMarketplaceDealParty = {
+  def apply(): SchemaMarketplaceDealParty = {
     val __obj = js.Dynamic.literal()
-    if (buyer != null) __obj.updateDynamic("buyer")(buyer.asInstanceOf[js.Any])
-    if (seller != null) __obj.updateDynamic("seller")(seller.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMarketplaceDealParty]
   }
+  @scala.inline
+  implicit class SchemaMarketplaceDealPartyOps[Self <: SchemaMarketplaceDealParty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuyer(value: SchemaBuyer): Self = this.set("buyer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuyer: Self = this.set("buyer", js.undefined)
+    @scala.inline
+    def setSeller(value: SchemaSeller): Self = this.set("seller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeller: Self = this.set("seller", js.undefined)
+  }
+  
 }
 

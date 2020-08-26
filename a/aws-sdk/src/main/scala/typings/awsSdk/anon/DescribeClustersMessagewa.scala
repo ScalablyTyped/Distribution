@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/redshift.DescribeClustersMessage & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/redshift.DescribeClustersMessage & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeClustersMessagewa extends js.Object {
   @JSName("$waiter")
@@ -38,22 +38,50 @@ trait DescribeClustersMessagewa extends js.Object {
 
 object DescribeClustersMessagewa {
   @scala.inline
-  def apply(
-    $waiter: WaiterConfiguration = null,
-    ClusterIdentifier: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    TagKeys: TagKeyList = null,
-    TagValues: TagValueList = null
-  ): DescribeClustersMessagewa = {
+  def apply(): DescribeClustersMessagewa = {
     val __obj = js.Dynamic.literal()
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys.asInstanceOf[js.Any])
-    if (TagValues != null) __obj.updateDynamic("TagValues")(TagValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClustersMessagewa]
   }
+  @scala.inline
+  implicit class DescribeClustersMessagewaOps[Self <: DescribeClustersMessagewa] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setTagKeysVarargs(value: String*): Self = this.set("TagKeys", js.Array(value :_*))
+    @scala.inline
+    def setTagKeys(value: TagKeyList): Self = this.set("TagKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagKeys: Self = this.set("TagKeys", js.undefined)
+    @scala.inline
+    def setTagValuesVarargs(value: String*): Self = this.set("TagValues", js.Array(value :_*))
+    @scala.inline
+    def setTagValues(value: TagValueList): Self = this.set("TagValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagValues: Self = this.set("TagValues", js.undefined)
+  }
+  
 }
 

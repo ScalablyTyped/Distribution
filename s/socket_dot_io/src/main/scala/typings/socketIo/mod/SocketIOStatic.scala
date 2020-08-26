@@ -1,11 +1,41 @@
 package typings.socketIo.mod
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SocketIOStatic extends js.Object {
+trait SocketIOStatic
+  extends /**
+  * Creates a new Server
+  * @param A parameters object
+  */
+/**
+  * Creates a new Server
+  * @param port A port to bind to, as a number, or a string
+  * @param An optional parameters object
+  */
+/**
+  * Creates a new Server
+  * @param srv The HTTP server that we're going to bind to
+  * @param opts An optional parameters object
+  */
+Instantiable1[
+      (/* port */ Double) | (/* srv */ typings.node.httpMod.Server) | (/* srv */ typings.node.httpsMod.Server) | (/* opts */ ServerOptions) | (/* port */ String), 
+      Server
+    ]
+     with /**
+  * Default Server constructor
+  */
+Instantiable0[Server]
+     with Instantiable2[
+      (/* port */ Double) | (/* srv */ typings.node.httpMod.Server) | (/* srv */ typings.node.httpsMod.Server) | (/* port */ String), 
+      /* opts */ ServerOptions, 
+      Server
+    ] {
   /**
     * Backwards compatibility
     * @see io().listen()
@@ -35,8 +65,10 @@ trait SocketIOStatic extends js.Object {
     * @param srv The HTTP server that we're going to bind to
     * @param opts An optional parameters object
     */
-  def apply(srv: js.Any): Server = js.native
-  def apply(srv: js.Any, opts: ServerOptions): Server = js.native
+  def apply(srv: typings.node.httpMod.Server): Server = js.native
+  def apply(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
+  def apply(srv: typings.node.httpsMod.Server): Server = js.native
+  def apply(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
   /**
     * Default Server constructor
     */
@@ -76,7 +108,9 @@ trait SocketIOStatic extends js.Object {
     * Backwards compatibility
     * @see io().listen()
     */
-  def listen(srv: js.Any): Server = js.native
-  def listen(srv: js.Any, opts: ServerOptions): Server = js.native
+  def listen(srv: typings.node.httpMod.Server): Server = js.native
+  def listen(srv: typings.node.httpMod.Server, opts: ServerOptions): Server = js.native
+  def listen(srv: typings.node.httpsMod.Server): Server = js.native
+  def listen(srv: typings.node.httpsMod.Server, opts: ServerOptions): Server = js.native
 }
 

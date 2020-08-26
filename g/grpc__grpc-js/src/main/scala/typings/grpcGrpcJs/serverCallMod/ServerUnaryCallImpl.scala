@@ -13,7 +13,6 @@ class ServerUnaryCallImpl[RequestType, ResponseType] protected ()
      with ServerUnaryCall[RequestType, ResponseType] {
   def this(call: Http2ServerCallStream[RequestType, ResponseType], metadata: Metadata) = this()
   var call: js.Any = js.native
-  var metadata: Metadata = js.native
   /* InferMemberOverrides */
   override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /* InferMemberOverrides */

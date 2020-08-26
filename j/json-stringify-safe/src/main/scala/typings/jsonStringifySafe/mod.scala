@@ -8,12 +8,30 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(obj: js.Any): String = js.native
+  def apply(
+    obj: js.Any,
+    serializer: js.UndefOr[scala.Nothing],
+    indent: js.UndefOr[scala.Nothing],
+    decycler: EntryProcessor
+  ): String = js.native
+  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: String): String = js.native
+  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: String, decycler: EntryProcessor): String = js.native
+  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: Double): String = js.native
+  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: Double, decycler: EntryProcessor): String = js.native
+  def apply(obj: js.Any, serializer: js.UndefOr[scala.Nothing], indent: Null, decycler: EntryProcessor): String = js.native
+  def apply(obj: js.Any, serializer: Null, indent: js.UndefOr[scala.Nothing], decycler: EntryProcessor): String = js.native
   def apply(obj: js.Any, serializer: Null, indent: String): String = js.native
   def apply(obj: js.Any, serializer: Null, indent: String, decycler: EntryProcessor): String = js.native
   def apply(obj: js.Any, serializer: Null, indent: Double): String = js.native
   def apply(obj: js.Any, serializer: Null, indent: Double, decycler: EntryProcessor): String = js.native
   def apply(obj: js.Any, serializer: Null, indent: Null, decycler: EntryProcessor): String = js.native
   def apply(obj: js.Any, serializer: EntryProcessor): String = js.native
+  def apply(
+    obj: js.Any,
+    serializer: EntryProcessor,
+    indent: js.UndefOr[scala.Nothing],
+    decycler: EntryProcessor
+  ): String = js.native
   def apply(obj: js.Any, serializer: EntryProcessor, indent: String): String = js.native
   def apply(obj: js.Any, serializer: EntryProcessor, indent: String, decycler: EntryProcessor): String = js.native
   def apply(obj: js.Any, serializer: EntryProcessor, indent: Double): String = js.native

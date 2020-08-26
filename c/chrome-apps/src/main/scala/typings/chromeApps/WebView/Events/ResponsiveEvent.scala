@@ -1,7 +1,7 @@
 package typings.chromeApps.WebView.Events
 
 import typings.chromeApps.chrome.integer
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   * });
   */
 @js.native
-trait ResponsiveEvent extends Event_ {
+trait ResponsiveEvent extends Event {
   /** Chrome's internal ID of the process that became responsive. */
   var processID: integer = js.native
 }

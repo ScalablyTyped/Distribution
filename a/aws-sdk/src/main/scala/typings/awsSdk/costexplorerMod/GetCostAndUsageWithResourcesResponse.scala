@@ -22,16 +22,38 @@ trait GetCostAndUsageWithResourcesResponse extends js.Object {
 
 object GetCostAndUsageWithResourcesResponse {
   @scala.inline
-  def apply(
-    GroupDefinitions: GroupDefinitions = null,
-    NextPageToken: NextPageToken = null,
-    ResultsByTime: ResultsByTime = null
-  ): GetCostAndUsageWithResourcesResponse = {
+  def apply(): GetCostAndUsageWithResourcesResponse = {
     val __obj = js.Dynamic.literal()
-    if (GroupDefinitions != null) __obj.updateDynamic("GroupDefinitions")(GroupDefinitions.asInstanceOf[js.Any])
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (ResultsByTime != null) __obj.updateDynamic("ResultsByTime")(ResultsByTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCostAndUsageWithResourcesResponse]
   }
+  @scala.inline
+  implicit class GetCostAndUsageWithResourcesResponseOps[Self <: GetCostAndUsageWithResourcesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupDefinitionsVarargs(value: GroupDefinition*): Self = this.set("GroupDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setGroupDefinitions(value: GroupDefinitions): Self = this.set("GroupDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupDefinitions: Self = this.set("GroupDefinitions", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setResultsByTimeVarargs(value: ResultByTime*): Self = this.set("ResultsByTime", js.Array(value :_*))
+    @scala.inline
+    def setResultsByTime(value: ResultsByTime): Self = this.set("ResultsByTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultsByTime: Self = this.set("ResultsByTime", js.undefined)
+  }
+  
 }
 

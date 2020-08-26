@@ -26,18 +26,40 @@ trait Scope extends js.Object {
 
 object Scope {
   @scala.inline
-  def apply(
-    ComplianceResourceId: BaseResourceId = null,
-    ComplianceResourceTypes: ComplianceResourceTypes = null,
-    TagKey: StringWithCharLimit128 = null,
-    TagValue: StringWithCharLimit256 = null
-  ): Scope = {
+  def apply(): Scope = {
     val __obj = js.Dynamic.literal()
-    if (ComplianceResourceId != null) __obj.updateDynamic("ComplianceResourceId")(ComplianceResourceId.asInstanceOf[js.Any])
-    if (ComplianceResourceTypes != null) __obj.updateDynamic("ComplianceResourceTypes")(ComplianceResourceTypes.asInstanceOf[js.Any])
-    if (TagKey != null) __obj.updateDynamic("TagKey")(TagKey.asInstanceOf[js.Any])
-    if (TagValue != null) __obj.updateDynamic("TagValue")(TagValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
+  @scala.inline
+  implicit class ScopeOps[Self <: Scope] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplianceResourceId(value: BaseResourceId): Self = this.set("ComplianceResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceResourceId: Self = this.set("ComplianceResourceId", js.undefined)
+    @scala.inline
+    def setComplianceResourceTypesVarargs(value: StringWithCharLimit256*): Self = this.set("ComplianceResourceTypes", js.Array(value :_*))
+    @scala.inline
+    def setComplianceResourceTypes(value: ComplianceResourceTypes): Self = this.set("ComplianceResourceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceResourceTypes: Self = this.set("ComplianceResourceTypes", js.undefined)
+    @scala.inline
+    def setTagKey(value: StringWithCharLimit128): Self = this.set("TagKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagKey: Self = this.set("TagKey", js.undefined)
+    @scala.inline
+    def setTagValue(value: StringWithCharLimit256): Self = this.set("TagValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagValue: Self = this.set("TagValue", js.undefined)
+  }
+  
 }
 

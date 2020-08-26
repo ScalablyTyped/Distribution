@@ -20,10 +20,15 @@ trait Emitter extends js.Object {
   def once(event: String, callback: js.Function): Unit = js.native
   def once(event: String, callback: js.Function, options: `0`): Unit = js.native
   def stopDelegating(): Unit = js.native
+  def stopDelegating(event: js.UndefOr[scala.Nothing], emitter: Emitter): Unit = js.native
   def stopDelegating(event: String): Unit = js.native
   def stopDelegating(event: String, emitter: Emitter): Unit = js.native
   def stopListening(): Unit = js.native
+  def stopListening(emitter: js.UndefOr[scala.Nothing], event: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
+  def stopListening(emitter: js.UndefOr[scala.Nothing], event: String): Unit = js.native
+  def stopListening(emitter: js.UndefOr[scala.Nothing], event: String, callback: js.Function): Unit = js.native
   def stopListening(emitter: Emitter): Unit = js.native
+  def stopListening(emitter: Emitter, event: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def stopListening(emitter: Emitter, event: String): Unit = js.native
   def stopListening(emitter: Emitter, event: String, callback: js.Function): Unit = js.native
 }

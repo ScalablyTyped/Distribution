@@ -22,10 +22,30 @@ trait GetDownloadUrlForLayerRequest extends js.Object {
 
 object GetDownloadUrlForLayerRequest {
   @scala.inline
-  def apply(layerDigest: LayerDigest, repositoryName: RepositoryName, registryId: RegistryId = null): GetDownloadUrlForLayerRequest = {
+  def apply(layerDigest: LayerDigest, repositoryName: RepositoryName): GetDownloadUrlForLayerRequest = {
     val __obj = js.Dynamic.literal(layerDigest = layerDigest.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDownloadUrlForLayerRequest]
   }
+  @scala.inline
+  implicit class GetDownloadUrlForLayerRequestOps[Self <: GetDownloadUrlForLayerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayerDigest(value: LayerDigest): Self = this.set("layerDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+  }
+  
 }
 

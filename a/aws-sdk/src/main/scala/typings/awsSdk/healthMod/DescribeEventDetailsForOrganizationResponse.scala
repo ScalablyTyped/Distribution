@@ -18,14 +18,34 @@ trait DescribeEventDetailsForOrganizationResponse extends js.Object {
 
 object DescribeEventDetailsForOrganizationResponse {
   @scala.inline
-  def apply(
-    failedSet: DescribeEventDetailsForOrganizationFailedSet = null,
-    successfulSet: DescribeEventDetailsForOrganizationSuccessfulSet = null
-  ): DescribeEventDetailsForOrganizationResponse = {
+  def apply(): DescribeEventDetailsForOrganizationResponse = {
     val __obj = js.Dynamic.literal()
-    if (failedSet != null) __obj.updateDynamic("failedSet")(failedSet.asInstanceOf[js.Any])
-    if (successfulSet != null) __obj.updateDynamic("successfulSet")(successfulSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEventDetailsForOrganizationResponse]
   }
+  @scala.inline
+  implicit class DescribeEventDetailsForOrganizationResponseOps[Self <: DescribeEventDetailsForOrganizationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailedSetVarargs(value: OrganizationEventDetailsErrorItem*): Self = this.set("failedSet", js.Array(value :_*))
+    @scala.inline
+    def setFailedSet(value: DescribeEventDetailsForOrganizationFailedSet): Self = this.set("failedSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedSet: Self = this.set("failedSet", js.undefined)
+    @scala.inline
+    def setSuccessfulSetVarargs(value: OrganizationEventDetails*): Self = this.set("successfulSet", js.Array(value :_*))
+    @scala.inline
+    def setSuccessfulSet(value: DescribeEventDetailsForOrganizationSuccessfulSet): Self = this.set("successfulSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessfulSet: Self = this.set("successfulSet", js.undefined)
+  }
+  
 }
 

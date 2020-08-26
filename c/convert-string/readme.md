@@ -12,7 +12,7 @@ Convert to/from strings and array of bytes
 | Keywords           | string, strings, convert, hex, bytes |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 991255 |
+| # downloads        | 1009256 |
 | # stars            | 0 |
 
 ## Links

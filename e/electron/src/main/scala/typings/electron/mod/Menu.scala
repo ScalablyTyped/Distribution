@@ -43,7 +43,6 @@ object Menu extends js.Object {
     * @platform darwin
     */
   def sendActionToFirstResponder(action: String): Unit = js.native
-  def setApplicationMenu(): Unit = js.native
   /**
     * Sets `menu` as the application menu on macOS. On Windows and Linux, the `menu`
     * will be set as each window's top menu.
@@ -61,6 +60,7 @@ object Menu extends js.Object {
     * one. It contains standard items such as `File`, `Edit`, `View`, `Window` and
     * `Help`.
     */
+  def setApplicationMenu(): Unit = js.native
   def setApplicationMenu(menu: typings.electron.Electron.Menu): Unit = js.native
 }
 

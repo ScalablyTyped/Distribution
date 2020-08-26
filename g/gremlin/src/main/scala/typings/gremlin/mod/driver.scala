@@ -53,6 +53,7 @@ object driver extends js.Object {
   @js.native
   class RemoteTraversal () extends Traversal_ {
     def this(traversers: js.Array[Traverser]) = this()
+    def this(traversers: js.UndefOr[scala.Nothing], sideEffects: TraversalSideEffects) = this()
     def this(traversers: js.Array[Traverser], sideEffects: TraversalSideEffects) = this()
   }
   

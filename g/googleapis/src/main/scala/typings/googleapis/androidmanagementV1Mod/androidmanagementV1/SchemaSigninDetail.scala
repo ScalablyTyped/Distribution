@@ -35,12 +35,34 @@ trait SchemaSigninDetail extends js.Object {
 
 object SchemaSigninDetail {
   @scala.inline
-  def apply(qrCode: String = null, signinEnrollmentToken: String = null, signinUrl: String = null): SchemaSigninDetail = {
+  def apply(): SchemaSigninDetail = {
     val __obj = js.Dynamic.literal()
-    if (qrCode != null) __obj.updateDynamic("qrCode")(qrCode.asInstanceOf[js.Any])
-    if (signinEnrollmentToken != null) __obj.updateDynamic("signinEnrollmentToken")(signinEnrollmentToken.asInstanceOf[js.Any])
-    if (signinUrl != null) __obj.updateDynamic("signinUrl")(signinUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSigninDetail]
   }
+  @scala.inline
+  implicit class SchemaSigninDetailOps[Self <: SchemaSigninDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQrCode(value: String): Self = this.set("qrCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQrCode: Self = this.set("qrCode", js.undefined)
+    @scala.inline
+    def setSigninEnrollmentToken(value: String): Self = this.set("signinEnrollmentToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigninEnrollmentToken: Self = this.set("signinEnrollmentToken", js.undefined)
+    @scala.inline
+    def setSigninUrl(value: String): Self = this.set("signinUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigninUrl: Self = this.set("signinUrl", js.undefined)
+  }
+  
 }
 

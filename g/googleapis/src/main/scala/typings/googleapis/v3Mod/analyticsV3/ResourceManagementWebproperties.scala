@@ -28,6 +28,7 @@ class ResourceManagementWebproperties protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaWebproperty] = js.native
   def get(callback: BodyResponseCallback[SchemaWebproperty]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebproperty] = js.native
   def get(params: ParamsResourceManagementWebpropertiesGet): GaxiosPromise[SchemaWebproperty] = js.native
   def get(
     params: ParamsResourceManagementWebpropertiesGet,
@@ -61,6 +62,7 @@ class ResourceManagementWebproperties protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaWebproperty] = js.native
   def insert(callback: BodyResponseCallback[SchemaWebproperty]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebproperty] = js.native
   def insert(params: ParamsResourceManagementWebpropertiesInsert): GaxiosPromise[SchemaWebproperty] = js.native
   def insert(
     params: ParamsResourceManagementWebpropertiesInsert,
@@ -93,6 +95,7 @@ class ResourceManagementWebproperties protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaWebproperties] = js.native
   def list(callback: BodyResponseCallback[SchemaWebproperties]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebproperties] = js.native
   def list(params: ParamsResourceManagementWebpropertiesList): GaxiosPromise[SchemaWebproperties] = js.native
   def list(
     params: ParamsResourceManagementWebpropertiesList,
@@ -126,6 +129,7 @@ class ResourceManagementWebproperties protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaWebproperty] = js.native
   def patch(callback: BodyResponseCallback[SchemaWebproperty]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebproperty] = js.native
   def patch(params: ParamsResourceManagementWebpropertiesPatch): GaxiosPromise[SchemaWebproperty] = js.native
   def patch(
     params: ParamsResourceManagementWebpropertiesPatch,
@@ -158,6 +162,7 @@ class ResourceManagementWebproperties protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaWebproperty] = js.native
   def update(callback: BodyResponseCallback[SchemaWebproperty]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebproperty] = js.native
   def update(params: ParamsResourceManagementWebpropertiesUpdate): GaxiosPromise[SchemaWebproperty] = js.native
   def update(
     params: ParamsResourceManagementWebpropertiesUpdate,

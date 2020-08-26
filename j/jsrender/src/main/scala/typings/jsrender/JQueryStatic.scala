@@ -48,7 +48,7 @@ trait JQueryStatic extends js.Object {
   /* $.templates(...) or $.templates.templateName: Compile/get template */
   def templates(namedItems: Hash[TemplateSetter]): Views = js.native
   def templates(namedItems: Hash[TemplateSetter], parentTmpl: Template): Views = js.native
+  def templates(name: String, item: js.UndefOr[TemplateSetter], parentTmpl: Template): Template = js.native
   def templates(name: String, item: TemplateSetter): Template = js.native
-  def templates(name: String, item: TemplateSetter, parentTmpl: Template): Template = js.native
 }
 

@@ -14,6 +14,7 @@ class Status ()
 @js.native
 object Status extends js.Object {
   def addStatus(strTitle: String): String = js.native
+  def addStatus(strTitle: String, strHtml: js.UndefOr[scala.Nothing], atBegining: Boolean): String = js.native
   def addStatus(strTitle: String, strHtml: String): String = js.native
   def addStatus(strTitle: String, strHtml: String, atBegining: Boolean): String = js.native
   def appendStatus(sid: String, strTitle: String, strHtml: String): String = js.native

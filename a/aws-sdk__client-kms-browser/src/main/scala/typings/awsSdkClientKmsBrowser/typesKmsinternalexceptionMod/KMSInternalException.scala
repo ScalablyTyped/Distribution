@@ -41,6 +41,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KMSInternalException
   extends ServiceException[KMSInternalExceptionDetails]
      with CancelKeyDeletionExceptionsUnion
@@ -79,7 +80,7 @@ trait KMSInternalException
      with UpdateAliasExceptionsUnion
      with UpdateKeyDescriptionExceptionsUnion {
   @JSName("name")
-  var name_KMSInternalException: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException
+  var name_KMSInternalException: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException = js.native
 }
 
 object KMSInternalException {
@@ -88,12 +89,25 @@ object KMSInternalException {
     $metadata: ResponseMetadata,
     details: KMSInternalExceptionDetails,
     message: String,
-    name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException,
-    stack: String = null
+    name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException
   ): KMSInternalException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[KMSInternalException]
   }
+  @scala.inline
+  implicit class KMSInternalExceptionOps[Self <: KMSInternalException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KMSInternalException): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

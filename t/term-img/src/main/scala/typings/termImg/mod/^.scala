@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var UnsupportedTerminalError: Instantiable0[UnsupportedTerminalErrorClass] = js.native
   /**
-  	Log the image to the terminal directly.
+  	Get the image as a `string` that you can log manually.
   	@param image - Filepath to an image or an image as a buffer.
   	@example
   	```
@@ -22,17 +22,9 @@ object ^ extends js.Object {
   	termImg('unicorn.jpg', {fallback});
   	```
   	*/
-  def apply(image: String): Unit = js.native
-  def apply(image: String, options: Options[_]): Unit = js.native
-  def apply(image: Buffer): Unit = js.native
-  def apply(image: Buffer, options: Options[_]): Unit = js.native
-  /**
-  	Get the image as a `string` that you can log manually.
-  	@param image - Filepath to an image or an image as a buffer.
-  	*/
-  def string[FallbackType](image: String): String | FallbackType = js.native
-  def string[FallbackType](image: String, options: Options[FallbackType]): String | FallbackType = js.native
-  def string[FallbackType](image: Buffer): String | FallbackType = js.native
-  def string[FallbackType](image: Buffer, options: Options[FallbackType]): String | FallbackType = js.native
+  def apply[FallbackType](image: String): String | FallbackType = js.native
+  def apply[FallbackType](image: String, options: Options[FallbackType]): String | FallbackType = js.native
+  def apply[FallbackType](image: Buffer): String | FallbackType = js.native
+  def apply[FallbackType](image: Buffer, options: Options[FallbackType]): String | FallbackType = js.native
 }
 

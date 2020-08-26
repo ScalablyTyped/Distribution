@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Repetition extends StaveModifier {
-  def draw(stave: Stave, x: Double): Repetition
-  def drawCodaFixed(stave: Stave, x: Double): Repetition
-  def drawSignoFixed(stave: Stave, x: Double): Repetition
+  def draw(stave: Stave, x: Double): Repetition = js.native
+  def drawCodaFixed(stave: Stave, x: Double): Repetition = js.native
+  def drawSignoFixed(stave: Stave, x: Double): Repetition = js.native
    //inconsistent name: drawSignoFixed -> drawSegnoFixed
-  def drawSymbolText(stave: Stave, x: Double, text: String, draw_coda: Boolean): Repetition
-  def setShiftX(x: Double): Repetition
-  def setShiftY(y: Double): Repetition
+  def drawSymbolText(stave: Stave, x: Double, text: String, draw_coda: Boolean): Repetition = js.native
+  def setShiftX(x: Double): Repetition = js.native
+  def setShiftY(y: Double): Repetition = js.native
 }
 
 @JSGlobal("Vex.Flow.Repetition")

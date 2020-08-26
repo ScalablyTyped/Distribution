@@ -22,11 +22,32 @@ trait SchemaCreativeSpecification extends js.Object {
 
 object SchemaCreativeSpecification {
   @scala.inline
-  def apply(creativeCompanionSizes: js.Array[SchemaAdSize] = null, creativeSize: SchemaAdSize = null): SchemaCreativeSpecification = {
+  def apply(): SchemaCreativeSpecification = {
     val __obj = js.Dynamic.literal()
-    if (creativeCompanionSizes != null) __obj.updateDynamic("creativeCompanionSizes")(creativeCompanionSizes.asInstanceOf[js.Any])
-    if (creativeSize != null) __obj.updateDynamic("creativeSize")(creativeSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreativeSpecification]
   }
+  @scala.inline
+  implicit class SchemaCreativeSpecificationOps[Self <: SchemaCreativeSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreativeCompanionSizesVarargs(value: SchemaAdSize*): Self = this.set("creativeCompanionSizes", js.Array(value :_*))
+    @scala.inline
+    def setCreativeCompanionSizes(value: js.Array[SchemaAdSize]): Self = this.set("creativeCompanionSizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeCompanionSizes: Self = this.set("creativeCompanionSizes", js.undefined)
+    @scala.inline
+    def setCreativeSize(value: SchemaAdSize): Self = this.set("creativeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeSize: Self = this.set("creativeSize", js.undefined)
+  }
+  
 }
 

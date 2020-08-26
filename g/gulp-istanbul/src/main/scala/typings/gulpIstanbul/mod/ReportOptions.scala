@@ -5,27 +5,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReportOptions extends js.Object {
-  var coverageVariable: js.UndefOr[String] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
-  var reportOpts: js.UndefOr[Dir] = js.undefined
-  var reporters: js.UndefOr[js.Array[String]] = js.undefined
+  var coverageVariable: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.native
+  var reportOpts: js.UndefOr[Dir] = js.native
+  var reporters: js.UndefOr[js.Array[String]] = js.native
 }
 
 object ReportOptions {
   @scala.inline
-  def apply(
-    coverageVariable: String = null,
-    dir: String = null,
-    reportOpts: Dir = null,
-    reporters: js.Array[String] = null
-  ): ReportOptions = {
+  def apply(): ReportOptions = {
     val __obj = js.Dynamic.literal()
-    if (coverageVariable != null) __obj.updateDynamic("coverageVariable")(coverageVariable.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (reportOpts != null) __obj.updateDynamic("reportOpts")(reportOpts.asInstanceOf[js.Any])
-    if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportOptions]
   }
+  @scala.inline
+  implicit class ReportOptionsOps[Self <: ReportOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoverageVariable(value: String): Self = this.set("coverageVariable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageVariable: Self = this.set("coverageVariable", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setReportOpts(value: Dir): Self = this.set("reportOpts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportOpts: Self = this.set("reportOpts", js.undefined)
+    @scala.inline
+    def setReportersVarargs(value: String*): Self = this.set("reporters", js.Array(value :_*))
+    @scala.inline
+    def setReporters(value: js.Array[String]): Self = this.set("reporters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReporters: Self = this.set("reporters", js.undefined)
+  }
+  
 }
 

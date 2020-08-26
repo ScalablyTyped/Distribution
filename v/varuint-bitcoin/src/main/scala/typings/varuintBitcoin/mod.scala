@@ -19,6 +19,7 @@ object mod extends js.Object {
   trait Encode_ extends js.Object {
     var bytes: Double = js.native
     def apply(num: Double): Buffer = js.native
+    def apply(num: Double, buffer: js.UndefOr[scala.Nothing], offset: Double): Buffer = js.native
     def apply(num: Double, buffer: Buffer): Buffer = js.native
     def apply(num: Double, buffer: Buffer, offset: Double): Buffer = js.native
   }

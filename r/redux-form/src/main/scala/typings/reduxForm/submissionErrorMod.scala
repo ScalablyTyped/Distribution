@@ -13,10 +13,6 @@ object submissionErrorMod extends js.Object {
   class SubmissionError[FormData, ErrorType] protected () extends Error {
     def this(errors: FormErrors[FormData, ErrorType]) = this()
     var errors: FormErrors[FormData, ErrorType] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native

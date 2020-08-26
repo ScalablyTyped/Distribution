@@ -30,7 +30,7 @@ class VpcPeeringConnectionAccepter protected () extends CustomResource {
   val acceptStatus: Output_[String] = js.native
   /**
     * A configuration block that describes [VPC Peering Connection]
-    * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
+    * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
     */
   val accepter: Output_[VpcPeeringConnectionAccepterAccepter] = js.native
   /**
@@ -51,13 +51,13 @@ class VpcPeeringConnectionAccepter protected () extends CustomResource {
   val peerVpcId: Output_[String] = js.native
   /**
     * A configuration block that describes [VPC Peering Connection]
-    * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
+    * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
     */
   val requester: Output_[VpcPeeringConnectionAccepterRequester] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The ID of the accepter VPC.
     */
@@ -79,8 +79,10 @@ object VpcPeeringConnectionAccepter extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VpcPeeringConnectionAccepter = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcPeeringConnectionAccepter = js.native
   def get(name: String, id: Input[ID], state: VpcPeeringConnectionAccepterState): VpcPeeringConnectionAccepter = js.native
   def get(name: String, id: Input[ID], state: VpcPeeringConnectionAccepterState, opts: CustomResourceOptions): VpcPeeringConnectionAccepter = js.native
   /**

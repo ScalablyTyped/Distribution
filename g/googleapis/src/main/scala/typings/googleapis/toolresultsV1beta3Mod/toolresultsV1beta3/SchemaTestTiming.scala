@@ -18,10 +18,26 @@ trait SchemaTestTiming extends js.Object {
 
 object SchemaTestTiming {
   @scala.inline
-  def apply(testProcessDuration: SchemaDuration = null): SchemaTestTiming = {
+  def apply(): SchemaTestTiming = {
     val __obj = js.Dynamic.literal()
-    if (testProcessDuration != null) __obj.updateDynamic("testProcessDuration")(testProcessDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestTiming]
   }
+  @scala.inline
+  implicit class SchemaTestTimingOps[Self <: SchemaTestTiming] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTestProcessDuration(value: SchemaDuration): Self = this.set("testProcessDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestProcessDuration: Self = this.set("testProcessDuration", js.undefined)
+  }
+  
 }
 

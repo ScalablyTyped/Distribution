@@ -18,10 +18,30 @@ trait MonitoringOutputConfig extends js.Object {
 
 object MonitoringOutputConfig {
   @scala.inline
-  def apply(MonitoringOutputs: MonitoringOutputs, KmsKeyId: KmsKeyId = null): MonitoringOutputConfig = {
+  def apply(MonitoringOutputs: MonitoringOutputs): MonitoringOutputConfig = {
     val __obj = js.Dynamic.literal(MonitoringOutputs = MonitoringOutputs.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringOutputConfig]
   }
+  @scala.inline
+  implicit class MonitoringOutputConfigOps[Self <: MonitoringOutputConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMonitoringOutputsVarargs(value: MonitoringOutput*): Self = this.set("MonitoringOutputs", js.Array(value :_*))
+    @scala.inline
+    def setMonitoringOutputs(value: MonitoringOutputs): Self = this.set("MonitoringOutputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+  }
+  
 }
 

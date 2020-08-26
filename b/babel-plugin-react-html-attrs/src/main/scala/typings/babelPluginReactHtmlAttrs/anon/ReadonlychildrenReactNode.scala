@@ -5,17 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Readonly<{  children ? :babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactNode}> */
+/* Inlined std.Readonly<{  children :babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactNode | undefined}> */
+@js.native
 trait ReadonlychildrenReactNode extends js.Object {
-  val children: js.UndefOr[ReactNode] = js.undefined
+  val children: js.UndefOr[ReactNode] = js.native
 }
 
 object ReadonlychildrenReactNode {
   @scala.inline
-  def apply(children: js.UndefOr[Null | ReactNode] = js.undefined): ReadonlychildrenReactNode = {
+  def apply(): ReadonlychildrenReactNode = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlychildrenReactNode]
   }
+  @scala.inline
+  implicit class ReadonlychildrenReactNodeOps[Self <: ReadonlychildrenReactNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setChildrenNull: Self = this.set("children", null)
+  }
+  
 }
 

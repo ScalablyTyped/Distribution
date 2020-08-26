@@ -5,151 +5,212 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Model extends js.Object {
   /** Enables the rating control with reset button.It can be used to reset the rating control value.
     * @Default {true}
     */
-  var allowReset: js.UndefOr[Boolean] = js.undefined
+  var allowReset: js.UndefOr[Boolean] = js.native
   /** Fires when Rating value changes.
     */
-  var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
   /** Fires when Rating control is clicked successfully.
     */
-  var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
+  var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
   /** Fires when Rating control is created.
     */
-  var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
+  var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
   /** Specify the CSS class to achieve custom theme.
     */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** Fires when Rating control is destroyed successfully.
     */
-  var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
+  var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
   /** Save current model value to browser cookies for state maintenance. While refresh the page Rating control values are retained.
     * @Default {false}
     */
-  var enablePersistence: js.UndefOr[Boolean] = js.undefined
+  var enablePersistence: js.UndefOr[Boolean] = js.native
   /** When this property is set to false, it disables the rating control.
     * @Default {true}
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /** Specifies the height of the Rating control wrapper.
     * @Default {null}
     */
-  var height: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String] = js.native
   /** Specifies the list of HTML attributes to be added to rating control.
     * @Default {{}}
     */
-  var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+  var htmlAttributes: js.UndefOr[js.Any] = js.native
   /** Specifies the value to be increased while navigating between shapes(stars) in Rating control.
     * @Default {1}
     */
-  var incrementStep: js.UndefOr[Double] = js.undefined
+  var incrementStep: js.UndefOr[Double] = js.native
   /** Allow to render the maximum number of Rating shape(star).
     * @Default {5}
     */
-  var maxValue: js.UndefOr[Double] = js.undefined
+  var maxValue: js.UndefOr[Double] = js.native
   /** Allow to render the minimum number of Rating shape(star).
     * @Default {0}
     */
-  var minValue: js.UndefOr[Double] = js.undefined
+  var minValue: js.UndefOr[Double] = js.native
   /** Fires when mouse move is moving the Rating control.
     */
-  var mousemove: js.UndefOr[js.Function1[/* e */ MousemoveEventArgs, Unit]] = js.undefined
+  var mousemove: js.UndefOr[js.Function1[/* e */ MousemoveEventArgs, Unit]] = js.native
   /** Fires when mouse hover is removed from Rating control.
     */
-  var mouseout: js.UndefOr[js.Function1[/* e */ MouseoutEventArgs, Unit]] = js.undefined
+  var mouseout: js.UndefOr[js.Function1[/* e */ MouseoutEventArgs, Unit]] = js.native
   /** Fires when mouse hovered over the Rating control.
     */
-  var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
+  var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.native
   /** Specifies the orientation of Rating control. See Orientation
     * @Default {ej.Rating.Orientation.Horizontal}
     */
-  var orientation: js.UndefOr[Orientation | String] = js.undefined
+  var orientation: js.UndefOr[Orientation | String] = js.native
   /** Helps to provide more precise ratings.Rating control supports three precision modes - full, half, and exact. See Precision
     * @Default {full}
     */
-  var precision: js.UndefOr[Precision | String] = js.undefined
+  var precision: js.UndefOr[Precision | String] = js.native
   /** Interaction with Rating control can be prevented by enabling this API.
     * @Default {false}
     */
-  var readOnly: js.UndefOr[Boolean] = js.undefined
+  var readOnly: js.UndefOr[Boolean] = js.native
   /** To specify the height of each shape in Rating control.
     * @Default {23}
     */
-  var shapeHeight: js.UndefOr[Double] = js.undefined
+  var shapeHeight: js.UndefOr[Double] = js.native
   /** To specify the width of each shape in Rating control.
     * @Default {23}
     */
-  var shapeWidth: js.UndefOr[Double] = js.undefined
+  var shapeWidth: js.UndefOr[Double] = js.native
   /** Enables the tooltip option.Currently selected value will be displayed in tooltip.
     * @Default {true}
     */
-  var showTooltip: js.UndefOr[Boolean] = js.undefined
+  var showTooltip: js.UndefOr[Boolean] = js.native
   /** To specify the number of stars to be selected while rendering.
     * @Default {1}
     */
-  var value: js.UndefOr[Double] = js.undefined
+  var value: js.UndefOr[Double] = js.native
   /** Specifies the width of the Rating control wrapper.
     * @Default {null}
     */
-  var width: js.UndefOr[String] = js.undefined
+  var width: js.UndefOr[String] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    allowReset: js.UndefOr[Boolean] = js.undefined,
-    change: /* e */ ChangeEventArgs => Unit = null,
-    click: /* e */ ClickEventArgs => Unit = null,
-    create: /* e */ CreateEventArgs => Unit = null,
-    cssClass: String = null,
-    destroy: /* e */ DestroyEventArgs => Unit = null,
-    enablePersistence: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    height: String = null,
-    htmlAttributes: js.Any = null,
-    incrementStep: js.UndefOr[Double] = js.undefined,
-    maxValue: js.UndefOr[Double] = js.undefined,
-    minValue: js.UndefOr[Double] = js.undefined,
-    mousemove: /* e */ MousemoveEventArgs => Unit = null,
-    mouseout: /* e */ MouseoutEventArgs => Unit = null,
-    mouseover: /* e */ MouseoverEventArgs => Unit = null,
-    orientation: Orientation | String = null,
-    precision: Precision | String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    shapeHeight: js.UndefOr[Double] = js.undefined,
-    shapeWidth: js.UndefOr[Double] = js.undefined,
-    showTooltip: js.UndefOr[Boolean] = js.undefined,
-    value: js.UndefOr[Double] = js.undefined,
-    width: String = null
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowReset)) __obj.updateDynamic("allowReset")(allowReset.get.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(incrementStep)) __obj.updateDynamic("incrementStep")(incrementStep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
-    if (mousemove != null) __obj.updateDynamic("mousemove")(js.Any.fromFunction1(mousemove))
-    if (mouseout != null) __obj.updateDynamic("mouseout")(js.Any.fromFunction1(mouseout))
-    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shapeHeight)) __obj.updateDynamic("shapeHeight")(shapeHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shapeWidth)) __obj.updateDynamic("shapeWidth")(shapeWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowReset(value: Boolean): Self = this.set("allowReset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowReset: Self = this.set("allowReset", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ ChangeEventArgs => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setClick(value: /* e */ ClickEventArgs => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setCreate(value: /* e */ CreateEventArgs => Unit): Self = this.set("create", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = this.set("destroy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setEnablePersistence(value: Boolean): Self = this.set("enablePersistence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePersistence: Self = this.set("enablePersistence", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHtmlAttributes(value: js.Any): Self = this.set("htmlAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlAttributes: Self = this.set("htmlAttributes", js.undefined)
+    @scala.inline
+    def setIncrementStep(value: Double): Self = this.set("incrementStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncrementStep: Self = this.set("incrementStep", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setMousemove(value: /* e */ MousemoveEventArgs => Unit): Self = this.set("mousemove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMousemove: Self = this.set("mousemove", js.undefined)
+    @scala.inline
+    def setMouseout(value: /* e */ MouseoutEventArgs => Unit): Self = this.set("mouseout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMouseout: Self = this.set("mouseout", js.undefined)
+    @scala.inline
+    def setMouseover(value: /* e */ MouseoverEventArgs => Unit): Self = this.set("mouseover", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMouseover: Self = this.set("mouseover", js.undefined)
+    @scala.inline
+    def setOrientation(value: Orientation | String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setPrecision(value: Precision | String): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setShapeHeight(value: Double): Self = this.set("shapeHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeHeight: Self = this.set("shapeHeight", js.undefined)
+    @scala.inline
+    def setShapeWidth(value: Double): Self = this.set("shapeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeWidth: Self = this.set("shapeWidth", js.undefined)
+    @scala.inline
+    def setShowTooltip(value: Boolean): Self = this.set("showTooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTooltip: Self = this.set("showTooltip", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

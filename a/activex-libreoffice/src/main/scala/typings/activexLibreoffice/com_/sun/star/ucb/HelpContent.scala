@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   * an object allowing access to the concrete written help content.
   * @see com.sun.star.ucb.HelpContentProvider
   */
+@js.native
 trait HelpContent
   extends XCommandProcessor2
      with XComponent

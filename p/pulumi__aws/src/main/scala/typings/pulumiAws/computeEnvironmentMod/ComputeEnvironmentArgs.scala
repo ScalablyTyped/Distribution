@@ -36,21 +36,43 @@ trait ComputeEnvironmentArgs extends js.Object {
 
 object ComputeEnvironmentArgs {
   @scala.inline
-  def apply(
-    serviceRole: Input[String],
-    `type`: Input[String],
-    computeEnvironmentName: Input[String] = null,
-    computeEnvironmentNamePrefix: Input[String] = null,
-    computeResources: Input[ComputeEnvironmentComputeResources] = null,
-    state: Input[String] = null
-  ): ComputeEnvironmentArgs = {
+  def apply(serviceRole: Input[String], `type`: Input[String]): ComputeEnvironmentArgs = {
     val __obj = js.Dynamic.literal(serviceRole = serviceRole.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (computeEnvironmentName != null) __obj.updateDynamic("computeEnvironmentName")(computeEnvironmentName.asInstanceOf[js.Any])
-    if (computeEnvironmentNamePrefix != null) __obj.updateDynamic("computeEnvironmentNamePrefix")(computeEnvironmentNamePrefix.asInstanceOf[js.Any])
-    if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeEnvironmentArgs]
   }
+  @scala.inline
+  implicit class ComputeEnvironmentArgsOps[Self <: ComputeEnvironmentArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceRole(value: Input[String]): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComputeEnvironmentName(value: Input[String]): Self = this.set("computeEnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeEnvironmentName: Self = this.set("computeEnvironmentName", js.undefined)
+    @scala.inline
+    def setComputeEnvironmentNamePrefix(value: Input[String]): Self = this.set("computeEnvironmentNamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeEnvironmentNamePrefix: Self = this.set("computeEnvironmentNamePrefix", js.undefined)
+    @scala.inline
+    def setComputeResources(value: Input[ComputeEnvironmentComputeResources]): Self = this.set("computeResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeResources: Self = this.set("computeResources", js.undefined)
+    @scala.inline
+    def setState(value: Input[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

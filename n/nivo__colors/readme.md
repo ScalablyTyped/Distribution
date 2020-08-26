@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__colors
 
-Typings are for version 0.61.0
+Typings are for version 0.62.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/colors.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/colors)
@@ -10,9 +10,9 @@ Typings are for version 0.61.0
 | ------------------ | :-------------: |
 | Full name          | @nivo/colors |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 22 |
-| # downloads        | 423965 |
+| # downloads        | 497083 |
 | # stars            | 0 |
 
 ## Links

@@ -22,16 +22,34 @@ trait ListQueryExecutionsInput extends js.Object {
 
 object ListQueryExecutionsInput {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[MaxQueryExecutionsCount] = js.undefined,
-    NextToken: Token = null,
-    WorkGroup: WorkGroupName = null
-  ): ListQueryExecutionsInput = {
+  def apply(): ListQueryExecutionsInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (WorkGroup != null) __obj.updateDynamic("WorkGroup")(WorkGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueryExecutionsInput]
   }
+  @scala.inline
+  implicit class ListQueryExecutionsInputOps[Self <: ListQueryExecutionsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxResults(value: MaxQueryExecutionsCount): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setWorkGroup(value: WorkGroupName): Self = this.set("WorkGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkGroup: Self = this.set("WorkGroup", js.undefined)
+  }
+  
 }
 

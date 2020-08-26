@@ -40,6 +40,7 @@ trait BodyBounds extends js.Object {
     * @param y Optional vertical offset to add to the returned coordinates. Default 0.
     */
   def getBottomCenter(body: MatterBody): Vector2 | `false` = js.native
+  def getBottomCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getBottomCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getBottomCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
   /**
@@ -52,6 +53,7 @@ trait BodyBounds extends js.Object {
     * @param y Optional vertical offset to add to the returned coordinates. Default 0.
     */
   def getBottomLeft(body: MatterBody): Vector2 | `false` = js.native
+  def getBottomLeft(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getBottomLeft(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getBottomLeft(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
   /**
@@ -64,6 +66,7 @@ trait BodyBounds extends js.Object {
     * @param y Optional vertical offset to add to the returned coordinates. Default 0.
     */
   def getBottomRight(body: MatterBody): Vector2 | `false` = js.native
+  def getBottomRight(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getBottomRight(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getBottomRight(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
   /**
@@ -76,6 +79,7 @@ trait BodyBounds extends js.Object {
     * @param y Optional vertical offset to add to the returned coordinates. Default 0.
     */
   def getCenter(body: MatterBody): Vector2 | `false` = js.native
+  def getCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
   /**
@@ -88,6 +92,7 @@ trait BodyBounds extends js.Object {
     * @param y Optional vertical offset to add to the returned coordinates. Default 0.
     */
   def getLeftCenter(body: MatterBody): Vector2 | `false` = js.native
+  def getLeftCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getLeftCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getLeftCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
   /**
@@ -100,6 +105,7 @@ trait BodyBounds extends js.Object {
     * @param y Optional vertical offset to add to the returned coordinates. Default 0.
     */
   def getRightCenter(body: MatterBody): Vector2 | `false` = js.native
+  def getRightCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getRightCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getRightCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
   /**
@@ -112,6 +118,7 @@ trait BodyBounds extends js.Object {
     * @param y Optional vertical offset to add to the returned coordinates. Default 0.
     */
   def getTopCenter(body: MatterBody): Vector2 | `false` = js.native
+  def getTopCenter(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getTopCenter(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getTopCenter(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
   /**
@@ -124,6 +131,7 @@ trait BodyBounds extends js.Object {
     * @param y Optional vertical offset to add to the returned coordinates. Default 0.
     */
   def getTopLeft(body: MatterBody): Vector2 | `false` = js.native
+  def getTopLeft(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getTopLeft(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getTopLeft(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
   /**
@@ -136,6 +144,7 @@ trait BodyBounds extends js.Object {
     * @param y Optional vertical offset to add to the returned coordinates. Default 0.
     */
   def getTopRight(body: MatterBody): Vector2 | `false` = js.native
+  def getTopRight(body: MatterBody, x: js.UndefOr[scala.Nothing], y: Double): Vector2 | `false` = js.native
   def getTopRight(body: MatterBody, x: Double): Vector2 | `false` = js.native
   def getTopRight(body: MatterBody, x: Double, y: Double): Vector2 | `false` = js.native
   /**

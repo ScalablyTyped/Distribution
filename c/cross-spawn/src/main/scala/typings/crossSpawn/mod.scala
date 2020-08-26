@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(command: String): ChildProcess = js.native
+  def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptions): ChildProcess = js.native
   def apply(command: String, args: js.Array[String]): ChildProcess = js.native
   def apply(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
   /**
@@ -35,6 +36,7 @@ object mod extends js.Object {
   @js.native
   object spawn extends js.Object {
     def apply(command: String): ChildProcessWithoutNullStreams = js.native
+    def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
     def apply(command: String, args: js.Array[String]): ChildProcessWithoutNullStreams = js.native
     def apply(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
     def apply(
@@ -58,6 +60,9 @@ object mod extends js.Object {
   @js.native
   object sync extends js.Object {
     def apply(command: String): SpawnSyncReturns[Buffer] = js.native
+    def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
+    def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
+    def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
     def apply(command: String, args: js.Array[String]): SpawnSyncReturns[Buffer] = js.native
     def apply(command: String, args: js.Array[String], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
     def apply(command: String, args: js.Array[String], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native

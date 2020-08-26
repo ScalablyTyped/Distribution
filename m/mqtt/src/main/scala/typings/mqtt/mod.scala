@@ -51,6 +51,7 @@ object mod extends js.Object {
     * @param {Object} opts - see MqttClient#constructor
     */
   def connect(): typings.mqtt.clientMod.MqttClient = js.native
+  def connect(brokerUrl: js.UndefOr[scala.Nothing], opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
   def connect(brokerUrl: String): typings.mqtt.clientMod.MqttClient = js.native
   def connect(brokerUrl: String, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
   def connect(brokerUrl: js.Any): typings.mqtt.clientMod.MqttClient = js.native

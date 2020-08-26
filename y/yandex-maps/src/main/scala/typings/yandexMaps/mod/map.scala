@@ -14,16 +14,12 @@ object map extends js.Object {
     extends IBalloonManager[typings.yandexMaps.mod.map.Balloon] {
     //tslint:disable-line no-shadowed-variable
     def this(map: Map_) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
   }
   
   @js.native
   class Container protected () extends IEventEmitter {
     def this(parentElement: String) = this()
     def this(parentElement: HTMLElement) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
     def enterFullscreen(): Unit = js.native
     def exitFullscreen(): Unit = js.native
     def fitToViewport(): Unit = js.native
@@ -50,6 +46,7 @@ object map extends js.Object {
     def add(customCopyrights: HTMLElement): ICopyrightsAccessor = js.native
     def addProvider(provider: ICopyrightsProvider): this.type = js.native
     def get(): js.Promise[js.Array[String | HTMLElement]] = js.native
+    def get(point: js.UndefOr[scala.Nothing], zoom: Double): js.Promise[js.Array[String | HTMLElement]] = js.native
     def get(point: js.Array[Double]): js.Promise[js.Array[String | HTMLElement]] = js.native
     def get(point: js.Array[Double], zoom: Double): js.Promise[js.Array[String | HTMLElement]] = js.native
     def getPromoLink(): String = js.native
@@ -60,26 +57,16 @@ object map extends js.Object {
   class GeoObjects protected () extends IGeoObjectCollection {
     def this(map: Map_) = this()
     def this(map: Map_, options: js.Object) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
-    /* CompleteClass */
-    override var options: IOptionManager = js.native
-    /* CompleteClass */
-    override def getMap(): Map_ = js.native
   }
   
   @js.native
   class Hint protected () extends IPopupManager[Hint] {
     def this(map: Map_) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
   }
   
   @js.native
   class ZoomRange protected () extends IEventEmitter {
     def this(map: Map_, constraints: js.Array[Double]) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
     def get(): js.Promise[js.Array[Double]] = js.native
     def get(coords: js.Array[Double]): js.Promise[js.Array[Double]] = js.native
     def getCurrent(): js.Array[Double] = js.native
@@ -90,8 +77,6 @@ object map extends js.Object {
     @js.native
     class Manager protected () extends IEventEmitter {
       def this(map: Map_) = this()
-      /* CompleteClass */
-      override var events: IEventManager = js.native
       def breakTick(): Unit = js.native
       def execute(action: IMapAction): Unit = js.native
       def getCurrentState(): js.Object = js.native
@@ -111,18 +96,13 @@ object map extends js.Object {
          with IParentOnMap {
       def this(map: Map_) = this()
       def this(map: Map_, behaviors: js.Array[js.Array[String] | String]) = this()
+      def this(map: Map_, behaviors: js.UndefOr[scala.Nothing], options: js.Object) = this()
       def this(map: Map_, behaviors: js.Array[js.Array[String] | String], options: js.Object) = this()
-      /* CompleteClass */
-      override var events: IEventManager = js.native
-      /* CompleteClass */
-      override var options: IOptionManager = js.native
       def disable(behaviors: String): this.type = js.native
       def disable(behaviors: js.Array[js.Array[String] | String]): this.type = js.native
       def enable(behaviors: String): this.type = js.native
       def enable(behaviors: js.Array[js.Array[String] | String]): this.type = js.native
       def get(behaviorName: String): IBehavior = js.native
-      /* CompleteClass */
-      override def getMap(): Map_ = js.native
       def isEnabled(behaviorName: String): Boolean = js.native
     }
     
@@ -138,14 +118,10 @@ object map extends js.Object {
          with IParentOnMap {
       def this(map: Map_) = this()
       def this(map: Map_, options: TrafficImageZIndex) = this()
-      /* CompleteClass */
-      override var events: IEventManager = js.native
       def add(`object`: js.Object): this.type = js.native
       def each(callback: js.Function1[/* layer */ ILayer, Unit]): Unit = js.native
       def each(callback: js.Function1[/* layer */ ILayer, Unit], context: js.Object): Unit = js.native
       def getIterator(): IIterator = js.native
-      /* CompleteClass */
-      override def getMap(): Map_ = js.native
       def remove(`object`: js.Object): this.type = js.native
       def setParent(parent: IControlParent): this.type = js.native
     }

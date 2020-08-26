@@ -30,20 +30,42 @@ trait RefreshSchemasStatus extends js.Object {
 
 object RefreshSchemasStatus {
   @scala.inline
-  def apply(
-    EndpointArn: String = null,
-    LastFailureMessage: String = null,
-    LastRefreshDate: TStamp = null,
-    ReplicationInstanceArn: String = null,
-    Status: RefreshSchemasStatusTypeValue = null
-  ): RefreshSchemasStatus = {
+  def apply(): RefreshSchemasStatus = {
     val __obj = js.Dynamic.literal()
-    if (EndpointArn != null) __obj.updateDynamic("EndpointArn")(EndpointArn.asInstanceOf[js.Any])
-    if (LastFailureMessage != null) __obj.updateDynamic("LastFailureMessage")(LastFailureMessage.asInstanceOf[js.Any])
-    if (LastRefreshDate != null) __obj.updateDynamic("LastRefreshDate")(LastRefreshDate.asInstanceOf[js.Any])
-    if (ReplicationInstanceArn != null) __obj.updateDynamic("ReplicationInstanceArn")(ReplicationInstanceArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshSchemasStatus]
   }
+  @scala.inline
+  implicit class RefreshSchemasStatusOps[Self <: RefreshSchemasStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointArn(value: String): Self = this.set("EndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointArn: Self = this.set("EndpointArn", js.undefined)
+    @scala.inline
+    def setLastFailureMessage(value: String): Self = this.set("LastFailureMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastFailureMessage: Self = this.set("LastFailureMessage", js.undefined)
+    @scala.inline
+    def setLastRefreshDate(value: TStamp): Self = this.set("LastRefreshDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRefreshDate: Self = this.set("LastRefreshDate", js.undefined)
+    @scala.inline
+    def setReplicationInstanceArn(value: String): Self = this.set("ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceArn: Self = this.set("ReplicationInstanceArn", js.undefined)
+    @scala.inline
+    def setStatus(value: RefreshSchemasStatusTypeValue): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

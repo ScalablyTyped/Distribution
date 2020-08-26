@@ -13,11 +13,24 @@ package object secretsmanagerMod {
   type DeletedDateType = typings.std.Date
   type DeletionDateType = typings.std.Date
   type DescriptionType = java.lang.String
+  type ErrorMessage = java.lang.String
   type ExcludeCharactersType = java.lang.String
   type ExcludeLowercaseType = scala.Boolean
   type ExcludeNumbersType = scala.Boolean
   type ExcludePunctuationType = scala.Boolean
   type ExcludeUppercaseType = scala.Boolean
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.description
+    - typings.awsSdk.awsSdkStrings.name__
+    - typings.awsSdk.awsSdkStrings.`tag-key`
+    - typings.awsSdk.awsSdkStrings.`tag-value`
+    - typings.awsSdk.awsSdkStrings.all__
+    - java.lang.String
+  */
+  type FilterNameStringType = typings.awsSdk.secretsmanagerMod._FilterNameStringType | java.lang.String
+  type FilterValueStringType = java.lang.String
+  type FilterValuesStringList = js.Array[typings.awsSdk.secretsmanagerMod.FilterValueStringType]
+  type FiltersListType = js.Array[typings.awsSdk.secretsmanagerMod.Filter]
   type IncludeSpaceType = scala.Boolean
   type KmsKeyIdType = java.lang.String
   type LastAccessedDateType = typings.std.Date
@@ -45,10 +58,18 @@ package object secretsmanagerMod {
   type SecretVersionStagesType = js.Array[typings.awsSdk.secretsmanagerMod.SecretVersionStageType]
   type SecretVersionsListType = js.Array[typings.awsSdk.secretsmanagerMod.SecretVersionsListEntry]
   type SecretVersionsToStagesMapType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.secretsmanagerMod.SecretVersionStagesType]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.asc_
+    - typings.awsSdk.awsSdkStrings.desc_
+    - java.lang.String
+  */
+  type SortOrderType = typings.awsSdk.secretsmanagerMod._SortOrderType | java.lang.String
   type TagKeyListType = js.Array[typings.awsSdk.secretsmanagerMod.TagKeyType]
   type TagKeyType = java.lang.String
   type TagListType = js.Array[typings.awsSdk.secretsmanagerMod.Tag]
   type TagValueType = java.lang.String
+  type TimestampType = typings.std.Date
+  type ValidationErrorsType = js.Array[typings.awsSdk.secretsmanagerMod.ValidationErrorsEntry]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-10-17`
     - typings.awsSdk.awsSdkStrings.latest_

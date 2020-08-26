@@ -18,14 +18,32 @@ trait SchemaVmEndpointNatMappings extends js.Object {
 
 object SchemaVmEndpointNatMappings {
   @scala.inline
-  def apply(
-    instanceName: String = null,
-    interfaceNatMappings: js.Array[SchemaVmEndpointNatMappingsInterfaceNatMappings] = null
-  ): SchemaVmEndpointNatMappings = {
+  def apply(): SchemaVmEndpointNatMappings = {
     val __obj = js.Dynamic.literal()
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
-    if (interfaceNatMappings != null) __obj.updateDynamic("interfaceNatMappings")(interfaceNatMappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVmEndpointNatMappings]
   }
+  @scala.inline
+  implicit class SchemaVmEndpointNatMappingsOps[Self <: SchemaVmEndpointNatMappings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceName(value: String): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    @scala.inline
+    def setInterfaceNatMappingsVarargs(value: SchemaVmEndpointNatMappingsInterfaceNatMappings*): Self = this.set("interfaceNatMappings", js.Array(value :_*))
+    @scala.inline
+    def setInterfaceNatMappings(value: js.Array[SchemaVmEndpointNatMappingsInterfaceNatMappings]): Self = this.set("interfaceNatMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterfaceNatMappings: Self = this.set("interfaceNatMappings", js.undefined)
+  }
+  
 }
 

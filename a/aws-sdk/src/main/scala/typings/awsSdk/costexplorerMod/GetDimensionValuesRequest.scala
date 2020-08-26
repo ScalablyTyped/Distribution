@@ -30,18 +30,38 @@ trait GetDimensionValuesRequest extends js.Object {
 
 object GetDimensionValuesRequest {
   @scala.inline
-  def apply(
-    Dimension: Dimension,
-    TimePeriod: DateInterval,
-    Context: Context = null,
-    NextPageToken: NextPageToken = null,
-    SearchString: SearchString = null
-  ): GetDimensionValuesRequest = {
+  def apply(Dimension: Dimension, TimePeriod: DateInterval): GetDimensionValuesRequest = {
     val __obj = js.Dynamic.literal(Dimension = Dimension.asInstanceOf[js.Any], TimePeriod = TimePeriod.asInstanceOf[js.Any])
-    if (Context != null) __obj.updateDynamic("Context")(Context.asInstanceOf[js.Any])
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (SearchString != null) __obj.updateDynamic("SearchString")(SearchString.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDimensionValuesRequest]
   }
+  @scala.inline
+  implicit class GetDimensionValuesRequestOps[Self <: GetDimensionValuesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimension(value: Dimension): Self = this.set("Dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContext(value: Context): Self = this.set("Context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("Context", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setSearchString(value: SearchString): Self = this.set("SearchString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchString: Self = this.set("SearchString", js.undefined)
+  }
+  
 }
 

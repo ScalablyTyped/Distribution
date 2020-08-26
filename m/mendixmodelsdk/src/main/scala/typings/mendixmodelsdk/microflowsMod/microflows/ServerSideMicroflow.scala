@@ -32,7 +32,7 @@ abstract class ServerSideMicroflow protected () extends MicroflowBase {
   @JSName("model")
   var model_FServerSideMicroflow: IModel = js.native
   def applyEntityAccess: Boolean = js.native
-  def applyEntityAccess(newValue: Boolean): js.Any = js.native
+  def applyEntityAccess_=(newValue: Boolean): Unit = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MServerSideMicroflow: FolderBase = js.native
 }

@@ -46,15 +46,11 @@ class ReportPane protected () extends Widget {
   @JSName("model")
   var model_FReportPane: IModel = js.native
   def generateOnLoad: Boolean = js.native
-  def generateOnLoad(newValue: Boolean): js.Any = js.native
-  def parameterWidget(): js.Any = js.native
-  def parameterWidget(newValue: Widget): js.Any = js.native
-  @JSName("parameterWidget")
-  def parameterWidget_Union: Widget | Null = js.native
-  def reportWidget(): js.Any = js.native
-  def reportWidget(newValue: Widget): js.Any = js.native
-  @JSName("reportWidget")
-  def reportWidget_Union: Widget | Null = js.native
+  def generateOnLoad_=(newValue: Boolean): Unit = js.native
+  def parameterWidget: Widget | Null = js.native
+  def parameterWidget_=(newValue: Widget | Null): Unit = js.native
+  def reportWidget: Widget | Null = js.native
+  def reportWidget_=(newValue: Widget | Null): Unit = js.native
 }
 
 /* static members */

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReportedErrorEvent extends js.Object {
   /** [Optional] A description of the context in which the error occurred. */
-  var context: js.UndefOr[ErrorContext] = js.undefined
+  var context: js.UndefOr[ErrorContext] = js.native
   /**
     * [Optional] Time when the event occurred.
     * If not provided, the time when the event was received by the
     * Error Reporting system will be used.
     */
-  var eventTime: js.UndefOr[String] = js.undefined
+  var eventTime: js.UndefOr[String] = js.native
   /**
     * [Required] The error message.
     * If no `context.reportLocation` is provided, the message must contain a
@@ -33,25 +34,45 @@ trait ReportedErrorEvent extends js.Object {
     * and contain the result of [`(string)$exception`](http://php.net/manual/en/exception.tostring.php).
     * &#42; &#42;&#42;Go&#42;&#42;: Must be the return value of [`runtime.Stack()`](https://golang.org/pkg/runtime/debug/#Stack).
     */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String] = js.native
   /** [Required] The service context in which this error has occurred. */
-  var serviceContext: js.UndefOr[ServiceContext] = js.undefined
+  var serviceContext: js.UndefOr[ServiceContext] = js.native
 }
 
 object ReportedErrorEvent {
   @scala.inline
-  def apply(
-    context: ErrorContext = null,
-    eventTime: String = null,
-    message: String = null,
-    serviceContext: ServiceContext = null
-  ): ReportedErrorEvent = {
+  def apply(): ReportedErrorEvent = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (serviceContext != null) __obj.updateDynamic("serviceContext")(serviceContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportedErrorEvent]
   }
+  @scala.inline
+  implicit class ReportedErrorEventOps[Self <: ReportedErrorEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContext(value: ErrorContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setEventTime(value: String): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTime: Self = this.set("eventTime", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setServiceContext(value: ServiceContext): Self = this.set("serviceContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceContext: Self = this.set("serviceContext", js.undefined)
+  }
+  
 }
 

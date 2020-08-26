@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TieredDatastore
   extends Datastore[js.Any] {
-  var stores: js.Array[Datastore[_]]
+  var stores: js.Array[Datastore[_]] = js.native
 }
 
 @JSImport("datastore-core", "TieredDatastore")

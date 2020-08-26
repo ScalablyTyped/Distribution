@@ -95,38 +95,80 @@ trait SchemaAuditLog extends js.Object {
 
 object SchemaAuditLog {
   @scala.inline
-  def apply(
-    authenticationInfo: SchemaAuthenticationInfo = null,
-    authorizationInfo: js.Array[SchemaAuthorizationInfo] = null,
-    metadata: StringDictionary[js.Any] = null,
-    methodName: String = null,
-    numResponseItems: String = null,
-    request: StringDictionary[js.Any] = null,
-    requestMetadata: SchemaRequestMetadata = null,
-    resourceLocation: SchemaResourceLocation = null,
-    resourceName: String = null,
-    resourceOriginalState: StringDictionary[js.Any] = null,
-    response: StringDictionary[js.Any] = null,
-    serviceData: StringDictionary[js.Any] = null,
-    serviceName: String = null,
-    status: SchemaStatus = null
-  ): SchemaAuditLog = {
+  def apply(): SchemaAuditLog = {
     val __obj = js.Dynamic.literal()
-    if (authenticationInfo != null) __obj.updateDynamic("authenticationInfo")(authenticationInfo.asInstanceOf[js.Any])
-    if (authorizationInfo != null) __obj.updateDynamic("authorizationInfo")(authorizationInfo.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
-    if (numResponseItems != null) __obj.updateDynamic("numResponseItems")(numResponseItems.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata.asInstanceOf[js.Any])
-    if (resourceLocation != null) __obj.updateDynamic("resourceLocation")(resourceLocation.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (resourceOriginalState != null) __obj.updateDynamic("resourceOriginalState")(resourceOriginalState.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (serviceData != null) __obj.updateDynamic("serviceData")(serviceData.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAuditLog]
   }
+  @scala.inline
+  implicit class SchemaAuditLogOps[Self <: SchemaAuditLog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationInfo(value: SchemaAuthenticationInfo): Self = this.set("authenticationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationInfo: Self = this.set("authenticationInfo", js.undefined)
+    @scala.inline
+    def setAuthorizationInfoVarargs(value: SchemaAuthorizationInfo*): Self = this.set("authorizationInfo", js.Array(value :_*))
+    @scala.inline
+    def setAuthorizationInfo(value: js.Array[SchemaAuthorizationInfo]): Self = this.set("authorizationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationInfo: Self = this.set("authorizationInfo", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[js.Any]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMethodName(value: String): Self = this.set("methodName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethodName: Self = this.set("methodName", js.undefined)
+    @scala.inline
+    def setNumResponseItems(value: String): Self = this.set("numResponseItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumResponseItems: Self = this.set("numResponseItems", js.undefined)
+    @scala.inline
+    def setRequest(value: StringDictionary[js.Any]): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setRequestMetadata(value: SchemaRequestMetadata): Self = this.set("requestMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestMetadata: Self = this.set("requestMetadata", js.undefined)
+    @scala.inline
+    def setResourceLocation(value: SchemaResourceLocation): Self = this.set("resourceLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceLocation: Self = this.set("resourceLocation", js.undefined)
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    @scala.inline
+    def setResourceOriginalState(value: StringDictionary[js.Any]): Self = this.set("resourceOriginalState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceOriginalState: Self = this.set("resourceOriginalState", js.undefined)
+    @scala.inline
+    def setResponse(value: StringDictionary[js.Any]): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+    @scala.inline
+    def setServiceData(value: StringDictionary[js.Any]): Self = this.set("serviceData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceData: Self = this.set("serviceData", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

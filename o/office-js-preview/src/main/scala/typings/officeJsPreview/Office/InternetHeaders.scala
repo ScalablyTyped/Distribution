@@ -56,6 +56,11 @@ trait InternetHeaders extends js.Object {
     */
   def getAsync(names: js.Array[String]): Unit = js.native
   def getAsync(names: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
+  def getAsync(
+    names: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]
+  ): Unit = js.native
   def getAsync(names: js.Array[String], options: AsyncContextOptions): Unit = js.native
   def getAsync(
     names: js.Array[String],
@@ -83,6 +88,11 @@ trait InternetHeaders extends js.Object {
     */
   def removeAsync(names: js.Array[String]): Unit = js.native
   def removeAsync(names: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
+  def removeAsync(
+    names: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]
+  ): Unit = js.native
   def removeAsync(names: js.Array[String], options: AsyncContextOptions): Unit = js.native
   def removeAsync(
     names: js.Array[String],
@@ -114,6 +124,11 @@ trait InternetHeaders extends js.Object {
     */
   def setAsync(headers: js.Object): Unit = js.native
   def setAsync(headers: js.Object, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setAsync(
+    headers: js.Object,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setAsync(headers: js.Object, options: AsyncContextOptions): Unit = js.native
   def setAsync(
     headers: js.Object,

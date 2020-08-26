@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-map
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Map over promises concurrently
@@ -11,8 +11,8 @@ Map over promises concurrently
 | Full name          | p-map |
 | Keywords           | promise, map, resolved, wait, collection, iterable, iterator, race, fulfilled, async, await, promises, concurrently, concurrency, parallel, bluebird |
 | # releases         | 4 |
-| # dependents       | 375 |
-| # downloads        | 366057221 |
+| # dependents       | 387 |
+| # downloads        | 385175510 |
 | # stars            | 6 |
 
 ## Links

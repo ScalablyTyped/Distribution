@@ -34,20 +34,42 @@ trait AccessDetail extends js.Object {
 
 object AccessDetail {
   @scala.inline
-  def apply(
-    ServiceName: serviceNameType,
-    ServiceNamespace: serviceNamespaceType,
-    EntityPath: organizationsEntityPathType = null,
-    LastAuthenticatedTime: dateType = null,
-    Region: stringType = null,
-    TotalAuthenticatedEntities: js.UndefOr[integerType] = js.undefined
-  ): AccessDetail = {
+  def apply(ServiceName: serviceNameType, ServiceNamespace: serviceNamespaceType): AccessDetail = {
     val __obj = js.Dynamic.literal(ServiceName = ServiceName.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-    if (EntityPath != null) __obj.updateDynamic("EntityPath")(EntityPath.asInstanceOf[js.Any])
-    if (LastAuthenticatedTime != null) __obj.updateDynamic("LastAuthenticatedTime")(LastAuthenticatedTime.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalAuthenticatedEntities)) __obj.updateDynamic("TotalAuthenticatedEntities")(TotalAuthenticatedEntities.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessDetail]
   }
+  @scala.inline
+  implicit class AccessDetailOps[Self <: AccessDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceName(value: serviceNameType): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceNamespace(value: serviceNamespaceType): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEntityPath(value: organizationsEntityPathType): Self = this.set("EntityPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityPath: Self = this.set("EntityPath", js.undefined)
+    @scala.inline
+    def setLastAuthenticatedTime(value: dateType): Self = this.set("LastAuthenticatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAuthenticatedTime: Self = this.set("LastAuthenticatedTime", js.undefined)
+    @scala.inline
+    def setRegion(value: stringType): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setTotalAuthenticatedEntities(value: integerType): Self = this.set("TotalAuthenticatedEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalAuthenticatedEntities: Self = this.set("TotalAuthenticatedEntities", js.undefined)
+  }
+  
 }
 

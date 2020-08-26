@@ -9,18 +9,6 @@ import scala.scalajs.js.annotation._
 class ConnectorList protected ()
   extends typings.openjscad.CSG.ConnectorList {
   def this(connectors: js.Array[typings.openjscad.CSG.Connector]) = this()
-  /* CompleteClass */
-  override var closed: Boolean = js.native
-  /* CompleteClass */
-  override var connectors_ : js.Array[typings.openjscad.CSG.Connector] = js.native
-  /* CompleteClass */
-  override def appendConnector(conn: typings.openjscad.CSG.Connector): Unit = js.native
-  /* CompleteClass */
-  override def followWith(cagish: js.Any): typings.openjscad.CSG = js.native
-  /* CompleteClass */
-  override def setClosed(bool: Boolean): Unit = js.native
-  /* CompleteClass */
-  override def verify(): Unit = js.native
 }
 
 /* static members */

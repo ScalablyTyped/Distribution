@@ -14,6 +14,7 @@ trait CustomXMLParts extends js.Object {
   def apply(Index: Double): CustomXMLPart = js.native
   /** @param XML [XML=''] */
   def Add(): CustomXMLPart = js.native
+  def Add(XML: js.UndefOr[scala.Nothing], SchemaCollection: CustomXMLSchemaCollection): CustomXMLPart = js.native
   def Add(XML: String): CustomXMLPart = js.native
   def Add(XML: String, SchemaCollection: CustomXMLSchemaCollection): CustomXMLPart = js.native
   def Item(Index: String): CustomXMLPart = js.native

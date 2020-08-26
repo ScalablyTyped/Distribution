@@ -23,11 +23,32 @@ trait SchemaListGuardiansResponse extends js.Object {
 
 object SchemaListGuardiansResponse {
   @scala.inline
-  def apply(guardians: js.Array[SchemaGuardian] = null, nextPageToken: String = null): SchemaListGuardiansResponse = {
+  def apply(): SchemaListGuardiansResponse = {
     val __obj = js.Dynamic.literal()
-    if (guardians != null) __obj.updateDynamic("guardians")(guardians.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListGuardiansResponse]
   }
+  @scala.inline
+  implicit class SchemaListGuardiansResponseOps[Self <: SchemaListGuardiansResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGuardiansVarargs(value: SchemaGuardian*): Self = this.set("guardians", js.Array(value :_*))
+    @scala.inline
+    def setGuardians(value: js.Array[SchemaGuardian]): Self = this.set("guardians", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuardians: Self = this.set("guardians", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

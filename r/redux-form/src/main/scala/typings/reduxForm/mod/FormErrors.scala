@@ -6,48 +6,83 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ P in keyof FormData ]:? react.react.ReactElement | T} & redux-form.redux-form.ErrorOther<T> */
+@js.native
 trait FormErrors[FormData, T] extends js.Object {
-  var _error: js.UndefOr[T] = js.undefined
-  var append: js.UndefOr[ReactElement | T] = js.undefined
-  var delete: js.UndefOr[ReactElement | T] = js.undefined
-  var entries: js.UndefOr[ReactElement | T] = js.undefined
-  var forEach: js.UndefOr[ReactElement | T] = js.undefined
-  var get: js.UndefOr[ReactElement | T] = js.undefined
-  var getAll: js.UndefOr[ReactElement | T] = js.undefined
-  var has: js.UndefOr[ReactElement | T] = js.undefined
-  var keys: js.UndefOr[ReactElement | T] = js.undefined
-  var set: js.UndefOr[ReactElement | T] = js.undefined
-  var values: js.UndefOr[ReactElement | T] = js.undefined
+  var _error: js.UndefOr[T] = js.native
+  var append: js.UndefOr[ReactElement | T] = js.native
+  var delete: js.UndefOr[ReactElement | T] = js.native
+  var entries: js.UndefOr[ReactElement | T] = js.native
+  var forEach: js.UndefOr[ReactElement | T] = js.native
+  var get: js.UndefOr[ReactElement | T] = js.native
+  var getAll: js.UndefOr[ReactElement | T] = js.native
+  var has: js.UndefOr[ReactElement | T] = js.native
+  var keys: js.UndefOr[ReactElement | T] = js.native
+  var set: js.UndefOr[ReactElement | T] = js.native
+  var values: js.UndefOr[ReactElement | T] = js.native
 }
 
 object FormErrors {
   @scala.inline
-  def apply[FormData, T](
-    _error: T = null,
-    append: ReactElement | T = null,
-    delete: ReactElement | T = null,
-    entries: ReactElement | T = null,
-    forEach: ReactElement | T = null,
-    get: ReactElement | T = null,
-    getAll: ReactElement | T = null,
-    has: ReactElement | T = null,
-    keys: ReactElement | T = null,
-    set: ReactElement | T = null,
-    values: ReactElement | T = null
-  ): FormErrors[FormData, T] = {
+  def apply[FormData, T](): FormErrors[FormData, T] = {
     val __obj = js.Dynamic.literal()
-    if (_error != null) __obj.updateDynamic("_error")(_error.asInstanceOf[js.Any])
-    if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
-    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (forEach != null) __obj.updateDynamic("forEach")(forEach.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
-    if (getAll != null) __obj.updateDynamic("getAll")(getAll.asInstanceOf[js.Any])
-    if (has != null) __obj.updateDynamic("has")(has.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormErrors[FormData, T]]
   }
+  @scala.inline
+  implicit class FormErrorsOps[Self <: FormErrors[_, _], FormData, T] (val x: Self with (FormErrors[FormData, T])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_error(value: T): Self = this.set("_error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_error: Self = this.set("_error", js.undefined)
+    @scala.inline
+    def setAppend(value: ReactElement | T): Self = this.set("append", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppend: Self = this.set("append", js.undefined)
+    @scala.inline
+    def setDelete(value: ReactElement | T): Self = this.set("delete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelete: Self = this.set("delete", js.undefined)
+    @scala.inline
+    def setEntries(value: ReactElement | T): Self = this.set("entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("entries", js.undefined)
+    @scala.inline
+    def setForEach(value: ReactElement | T): Self = this.set("forEach", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForEach: Self = this.set("forEach", js.undefined)
+    @scala.inline
+    def setGet(value: ReactElement | T): Self = this.set("get", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGet: Self = this.set("get", js.undefined)
+    @scala.inline
+    def setGetAll(value: ReactElement | T): Self = this.set("getAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetAll: Self = this.set("getAll", js.undefined)
+    @scala.inline
+    def setHas(value: ReactElement | T): Self = this.set("has", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHas: Self = this.set("has", js.undefined)
+    @scala.inline
+    def setKeys(value: ReactElement | T): Self = this.set("keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("keys", js.undefined)
+    @scala.inline
+    def setSet(value: ReactElement | T): Self = this.set("set", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSet: Self = this.set("set", js.undefined)
+    @scala.inline
+    def setValues(value: ReactElement | T): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

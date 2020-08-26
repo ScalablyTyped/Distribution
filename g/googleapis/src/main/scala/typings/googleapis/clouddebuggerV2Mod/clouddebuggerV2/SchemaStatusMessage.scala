@@ -29,16 +29,34 @@ trait SchemaStatusMessage extends js.Object {
 
 object SchemaStatusMessage {
   @scala.inline
-  def apply(
-    description: SchemaFormatMessage = null,
-    isError: js.UndefOr[Boolean] = js.undefined,
-    refersTo: String = null
-  ): SchemaStatusMessage = {
+  def apply(): SchemaStatusMessage = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(isError)) __obj.updateDynamic("isError")(isError.get.asInstanceOf[js.Any])
-    if (refersTo != null) __obj.updateDynamic("refersTo")(refersTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStatusMessage]
   }
+  @scala.inline
+  implicit class SchemaStatusMessageOps[Self <: SchemaStatusMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: SchemaFormatMessage): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIsError(value: Boolean): Self = this.set("isError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsError: Self = this.set("isError", js.undefined)
+    @scala.inline
+    def setRefersTo(value: String): Self = this.set("refersTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefersTo: Self = this.set("refersTo", js.undefined)
+  }
+  
 }
 

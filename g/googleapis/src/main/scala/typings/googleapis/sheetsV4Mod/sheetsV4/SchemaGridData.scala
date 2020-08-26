@@ -37,20 +37,48 @@ trait SchemaGridData extends js.Object {
 
 object SchemaGridData {
   @scala.inline
-  def apply(
-    columnMetadata: js.Array[SchemaDimensionProperties] = null,
-    rowData: js.Array[SchemaRowData] = null,
-    rowMetadata: js.Array[SchemaDimensionProperties] = null,
-    startColumn: js.UndefOr[Double] = js.undefined,
-    startRow: js.UndefOr[Double] = js.undefined
-  ): SchemaGridData = {
+  def apply(): SchemaGridData = {
     val __obj = js.Dynamic.literal()
-    if (columnMetadata != null) __obj.updateDynamic("columnMetadata")(columnMetadata.asInstanceOf[js.Any])
-    if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
-    if (rowMetadata != null) __obj.updateDynamic("rowMetadata")(rowMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(startColumn)) __obj.updateDynamic("startColumn")(startColumn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGridData]
   }
+  @scala.inline
+  implicit class SchemaGridDataOps[Self <: SchemaGridData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnMetadataVarargs(value: SchemaDimensionProperties*): Self = this.set("columnMetadata", js.Array(value :_*))
+    @scala.inline
+    def setColumnMetadata(value: js.Array[SchemaDimensionProperties]): Self = this.set("columnMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnMetadata: Self = this.set("columnMetadata", js.undefined)
+    @scala.inline
+    def setRowDataVarargs(value: SchemaRowData*): Self = this.set("rowData", js.Array(value :_*))
+    @scala.inline
+    def setRowData(value: js.Array[SchemaRowData]): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowData: Self = this.set("rowData", js.undefined)
+    @scala.inline
+    def setRowMetadataVarargs(value: SchemaDimensionProperties*): Self = this.set("rowMetadata", js.Array(value :_*))
+    @scala.inline
+    def setRowMetadata(value: js.Array[SchemaDimensionProperties]): Self = this.set("rowMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowMetadata: Self = this.set("rowMetadata", js.undefined)
+    @scala.inline
+    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartColumn: Self = this.set("startColumn", js.undefined)
+    @scala.inline
+    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartRow: Self = this.set("startRow", js.undefined)
+  }
+  
 }
 

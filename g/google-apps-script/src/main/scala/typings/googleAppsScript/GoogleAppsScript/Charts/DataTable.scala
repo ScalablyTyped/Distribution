@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
   * methods: a DataTable can be passed around, but not manipulated directly.
   */
 // tslint:disable-next-line: no-empty-interface
+@js.native
 trait DataTable extends js.Object
 

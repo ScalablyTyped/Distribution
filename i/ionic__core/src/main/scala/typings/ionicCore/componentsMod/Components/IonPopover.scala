@@ -69,6 +69,7 @@ trait IonPopover extends js.Object {
     * @param role The role of the element that is dismissing the popover. For example, 'cancel' or 'backdrop'.
     */
   def dismiss(): js.Promise[Boolean] = js.native
+  def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
   /**

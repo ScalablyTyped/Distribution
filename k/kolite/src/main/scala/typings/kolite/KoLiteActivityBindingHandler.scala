@@ -1,35 +1,35 @@
 package typings.kolite
 
-import typings.knockout.KnockoutAllBindingsAccessor
-import typings.knockout.KnockoutBindingContext
-import typings.knockout.KnockoutBindingHandler
-import typings.knockout.anon.ControlsDescendantBindings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait KoLiteActivityBindingHandler
-  extends KnockoutBindingHandler[js.Any, js.Any, js.Any] {
-  var defaultOptions: KoLiteActivityDefaultOptions
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler * / any */ @js.native
+trait KoLiteActivityBindingHandler extends js.Object {
+  var defaultOptions: KoLiteActivityDefaultOptions = js.native
 }
 
 object KoLiteActivityBindingHandler {
   @scala.inline
-  def apply(
-    defaultOptions: KoLiteActivityDefaultOptions,
-    after: js.Array[String] = null,
-    init: (js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, js.Any, /* bindingContext */ KnockoutBindingContext) => Unit | ControlsDescendantBindings = null,
-    options: js.Any = null,
-    preprocess: (/* value */ String, /* name */ String, /* addBindingCallback */ js.UndefOr[js.Function2[/* name */ String, /* value */ String, Unit]]) => String = null,
-    update: (js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, js.Any, /* bindingContext */ KnockoutBindingContext) => Unit = null
-  ): KoLiteActivityBindingHandler = {
+  def apply(defaultOptions: KoLiteActivityDefaultOptions): KoLiteActivityBindingHandler = {
     val __obj = js.Dynamic.literal(defaultOptions = defaultOptions.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction5(init))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction3(preprocess))
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction5(update))
     __obj.asInstanceOf[KoLiteActivityBindingHandler]
   }
+  @scala.inline
+  implicit class KoLiteActivityBindingHandlerOps[Self <: KoLiteActivityBindingHandler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultOptions(value: KoLiteActivityDefaultOptions): Self = this.set("defaultOptions", value.asInstanceOf[js.Any])
+  }
+  
 }
 

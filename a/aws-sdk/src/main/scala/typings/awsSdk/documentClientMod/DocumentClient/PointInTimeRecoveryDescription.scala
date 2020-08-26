@@ -22,16 +22,34 @@ trait PointInTimeRecoveryDescription extends js.Object {
 
 object PointInTimeRecoveryDescription {
   @scala.inline
-  def apply(
-    EarliestRestorableDateTime: Date = null,
-    LatestRestorableDateTime: Date = null,
-    PointInTimeRecoveryStatus: PointInTimeRecoveryStatus = null
-  ): PointInTimeRecoveryDescription = {
+  def apply(): PointInTimeRecoveryDescription = {
     val __obj = js.Dynamic.literal()
-    if (EarliestRestorableDateTime != null) __obj.updateDynamic("EarliestRestorableDateTime")(EarliestRestorableDateTime.asInstanceOf[js.Any])
-    if (LatestRestorableDateTime != null) __obj.updateDynamic("LatestRestorableDateTime")(LatestRestorableDateTime.asInstanceOf[js.Any])
-    if (PointInTimeRecoveryStatus != null) __obj.updateDynamic("PointInTimeRecoveryStatus")(PointInTimeRecoveryStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointInTimeRecoveryDescription]
   }
+  @scala.inline
+  implicit class PointInTimeRecoveryDescriptionOps[Self <: PointInTimeRecoveryDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEarliestRestorableDateTime(value: Date): Self = this.set("EarliestRestorableDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEarliestRestorableDateTime: Self = this.set("EarliestRestorableDateTime", js.undefined)
+    @scala.inline
+    def setLatestRestorableDateTime(value: Date): Self = this.set("LatestRestorableDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestRestorableDateTime: Self = this.set("LatestRestorableDateTime", js.undefined)
+    @scala.inline
+    def setPointInTimeRecoveryStatus(value: PointInTimeRecoveryStatus): Self = this.set("PointInTimeRecoveryStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointInTimeRecoveryStatus: Self = this.set("PointInTimeRecoveryStatus", js.undefined)
+  }
+  
 }
 

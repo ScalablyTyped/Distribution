@@ -1,56 +1,84 @@
 package typings.reactNativeNavigation.optionsMod
 
+import typings.reactNativeNavigation.reactNativeNavigationStrings.locale
 import typings.reactNativeNavigation.reactNativeNavigationStrings.ltr
 import typings.reactNativeNavigation.reactNativeNavigationStrings.rtl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionsLayout extends js.Object {
   /**
     * Set the screen background color
     */
-  var backgroundColor: js.UndefOr[Color] = js.undefined
+  var backgroundColor: js.UndefOr[Color] = js.native
   /**
     * Set background color only for components, helps reduce overdraw if background color is set in default options.
     * #### (Android specific)
     */
-  var componentBackgroundColor: js.UndefOr[Color] = js.undefined
+  var componentBackgroundColor: js.UndefOr[Color] = js.native
   /**
     * Set language direction.
     * only works with DefaultOptions
     */
-  var direction: js.UndefOr[rtl | ltr] = js.undefined
-  var fitSystemWindows: js.UndefOr[Boolean] = js.undefined
+  var direction: js.UndefOr[rtl | ltr | locale] = js.native
+  var fitSystemWindows: js.UndefOr[Boolean] = js.native
   /**
     * Set the allowed orientations
     */
-  var orientation: js.UndefOr[js.Array[LayoutOrientation]] = js.undefined
+  var orientation: js.UndefOr[js.Array[LayoutOrientation]] = js.native
   /**
     * Layout top margin
     * #### (Android specific)
     */
-  var topMargin: js.UndefOr[Double] = js.undefined
+  var topMargin: js.UndefOr[Double] = js.native
 }
 
 object OptionsLayout {
   @scala.inline
-  def apply(
-    backgroundColor: Color = null,
-    componentBackgroundColor: Color = null,
-    direction: rtl | ltr = null,
-    fitSystemWindows: js.UndefOr[Boolean] = js.undefined,
-    orientation: js.Array[LayoutOrientation] = null,
-    topMargin: js.UndefOr[Double] = js.undefined
-  ): OptionsLayout = {
+  def apply(): OptionsLayout = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (componentBackgroundColor != null) __obj.updateDynamic("componentBackgroundColor")(componentBackgroundColor.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitSystemWindows)) __obj.updateDynamic("fitSystemWindows")(fitSystemWindows.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(topMargin)) __obj.updateDynamic("topMargin")(topMargin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsLayout]
   }
+  @scala.inline
+  implicit class OptionsLayoutOps[Self <: OptionsLayout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setComponentBackgroundColor(value: Color): Self = this.set("componentBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentBackgroundColor: Self = this.set("componentBackgroundColor", js.undefined)
+    @scala.inline
+    def setDirection(value: rtl | ltr | locale): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setFitSystemWindows(value: Boolean): Self = this.set("fitSystemWindows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFitSystemWindows: Self = this.set("fitSystemWindows", js.undefined)
+    @scala.inline
+    def setOrientationVarargs(value: LayoutOrientation*): Self = this.set("orientation", js.Array(value :_*))
+    @scala.inline
+    def setOrientation(value: js.Array[LayoutOrientation]): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setTopMargin(value: Double): Self = this.set("topMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopMargin: Self = this.set("topMargin", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait AdminListUserAuthEventsResponse extends js.Object {
 
 object AdminListUserAuthEventsResponse {
   @scala.inline
-  def apply(AuthEvents: AuthEventsType = null, NextToken: PaginationKey = null): AdminListUserAuthEventsResponse = {
+  def apply(): AdminListUserAuthEventsResponse = {
     val __obj = js.Dynamic.literal()
-    if (AuthEvents != null) __obj.updateDynamic("AuthEvents")(AuthEvents.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminListUserAuthEventsResponse]
   }
+  @scala.inline
+  implicit class AdminListUserAuthEventsResponseOps[Self <: AdminListUserAuthEventsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthEventsVarargs(value: AuthEventType*): Self = this.set("AuthEvents", js.Array(value :_*))
+    @scala.inline
+    def setAuthEvents(value: AuthEventsType): Self = this.set("AuthEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthEvents: Self = this.set("AuthEvents", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationKey): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

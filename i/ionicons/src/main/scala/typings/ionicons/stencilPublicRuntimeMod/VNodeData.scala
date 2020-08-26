@@ -5,24 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VNodeData
   extends /* prop */ StringDictionary[js.Any] {
-  var `class`: js.UndefOr[StringDictionary[Boolean]] = js.undefined
-  var style: js.UndefOr[js.Any] = js.undefined
+  var `class`: js.UndefOr[StringDictionary[Boolean]] = js.native
+  var style: js.UndefOr[js.Any] = js.native
 }
 
 object VNodeData {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    `class`: StringDictionary[Boolean] = null,
-    style: js.Any = null
-  ): VNodeData = {
+  def apply(): VNodeData = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNodeData]
   }
+  @scala.inline
+  implicit class VNodeDataOps[Self <: VNodeData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClass(value: StringDictionary[Boolean]): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

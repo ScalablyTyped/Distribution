@@ -74,42 +74,86 @@ trait ImagePipeline extends js.Object {
 
 object ImagePipeline {
   @scala.inline
-  def apply(
-    arn: ImageBuilderArn = null,
-    dateCreated: DateTime = null,
-    dateLastRun: DateTime = null,
-    dateNextRun: DateTime = null,
-    dateUpdated: DateTime = null,
-    description: NonEmptyString = null,
-    distributionConfigurationArn: Arn = null,
-    enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined,
-    imageRecipeArn: Arn = null,
-    imageTestsConfiguration: ImageTestsConfiguration = null,
-    infrastructureConfigurationArn: Arn = null,
-    name: ResourceName = null,
-    platform: Platform = null,
-    schedule: Schedule = null,
-    status: PipelineStatus = null,
-    tags: TagMap = null
-  ): ImagePipeline = {
+  def apply(): ImagePipeline = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (dateCreated != null) __obj.updateDynamic("dateCreated")(dateCreated.asInstanceOf[js.Any])
-    if (dateLastRun != null) __obj.updateDynamic("dateLastRun")(dateLastRun.asInstanceOf[js.Any])
-    if (dateNextRun != null) __obj.updateDynamic("dateNextRun")(dateNextRun.asInstanceOf[js.Any])
-    if (dateUpdated != null) __obj.updateDynamic("dateUpdated")(dateUpdated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (distributionConfigurationArn != null) __obj.updateDynamic("distributionConfigurationArn")(distributionConfigurationArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.get.asInstanceOf[js.Any])
-    if (imageRecipeArn != null) __obj.updateDynamic("imageRecipeArn")(imageRecipeArn.asInstanceOf[js.Any])
-    if (imageTestsConfiguration != null) __obj.updateDynamic("imageTestsConfiguration")(imageTestsConfiguration.asInstanceOf[js.Any])
-    if (infrastructureConfigurationArn != null) __obj.updateDynamic("infrastructureConfigurationArn")(infrastructureConfigurationArn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePipeline]
   }
+  @scala.inline
+  implicit class ImagePipelineOps[Self <: ImagePipeline] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: ImageBuilderArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDateCreated(value: DateTime): Self = this.set("dateCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateCreated: Self = this.set("dateCreated", js.undefined)
+    @scala.inline
+    def setDateLastRun(value: DateTime): Self = this.set("dateLastRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateLastRun: Self = this.set("dateLastRun", js.undefined)
+    @scala.inline
+    def setDateNextRun(value: DateTime): Self = this.set("dateNextRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateNextRun: Self = this.set("dateNextRun", js.undefined)
+    @scala.inline
+    def setDateUpdated(value: DateTime): Self = this.set("dateUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateUpdated: Self = this.set("dateUpdated", js.undefined)
+    @scala.inline
+    def setDescription(value: NonEmptyString): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDistributionConfigurationArn(value: Arn): Self = this.set("distributionConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributionConfigurationArn: Self = this.set("distributionConfigurationArn", js.undefined)
+    @scala.inline
+    def setEnhancedImageMetadataEnabled(value: NullableBoolean): Self = this.set("enhancedImageMetadataEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedImageMetadataEnabled: Self = this.set("enhancedImageMetadataEnabled", js.undefined)
+    @scala.inline
+    def setImageRecipeArn(value: Arn): Self = this.set("imageRecipeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageRecipeArn: Self = this.set("imageRecipeArn", js.undefined)
+    @scala.inline
+    def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = this.set("imageTestsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageTestsConfiguration: Self = this.set("imageTestsConfiguration", js.undefined)
+    @scala.inline
+    def setInfrastructureConfigurationArn(value: Arn): Self = this.set("infrastructureConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfrastructureConfigurationArn: Self = this.set("infrastructureConfigurationArn", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setSchedule(value: Schedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setStatus(value: PipelineStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

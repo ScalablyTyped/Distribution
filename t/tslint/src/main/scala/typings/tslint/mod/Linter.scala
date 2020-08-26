@@ -56,11 +56,13 @@ object Linter extends js.Object {
     */
   def getFileNames(program: Program): js.Array[String] = js.native
   def getRulesDirectories(): js.Array[String] = js.native
+  def getRulesDirectories(directories: js.UndefOr[scala.Nothing], relativeTo: String): js.Array[String] = js.native
   def getRulesDirectories(directories: String): js.Array[String] = js.native
   def getRulesDirectories(directories: String, relativeTo: String): js.Array[String] = js.native
   def getRulesDirectories(directories: js.Array[String]): js.Array[String] = js.native
   def getRulesDirectories(directories: js.Array[String], relativeTo: String): js.Array[String] = js.native
   def loadConfigurationFromPath(): IConfigurationFile = js.native
+  def loadConfigurationFromPath(configFilePath: js.UndefOr[scala.Nothing], _originalFilePath: String): IConfigurationFile = js.native
   def loadConfigurationFromPath(configFilePath: String): IConfigurationFile = js.native
   def loadConfigurationFromPath(configFilePath: String, _originalFilePath: String): IConfigurationFile = js.native
 }

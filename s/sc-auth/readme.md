@@ -12,7 +12,7 @@ Auth module for SocketCluster
 | Keywords           | Auth, SocketCluster, JWT |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 884432 |
+| # downloads        | 903670 |
 | # stars            | 0 |
 
 ## Links

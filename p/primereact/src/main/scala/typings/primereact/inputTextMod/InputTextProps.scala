@@ -11,44 +11,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputTextProps
   extends AllHTMLAttributes[HTMLInputElement]
      with ClassAttributes[HTMLInputElement]
      with /* key */ StringDictionary[js.Any] {
-  var keyfilter: js.UndefOr[js.Any] = js.undefined
+  var keyfilter: js.UndefOr[js.Any] = js.native
   @JSName("onInput")
-  var onInput_InputTextProps: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLInputElement], Unit]] = js.undefined
+  var onInput_InputTextProps: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLInputElement], Unit]] = js.native
   @JSName("onKeyPress")
-  var onKeyPress_InputTextProps: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLInputElement], Unit]] = js.undefined
-  var tooltip: js.UndefOr[js.Any] = js.undefined
-  var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
-  var validateOnly: js.UndefOr[Boolean] = js.undefined
+  var onKeyPress_InputTextProps: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLInputElement], Unit]] = js.native
+  var tooltip: js.UndefOr[js.Any] = js.native
+  var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+  var validateOnly: js.UndefOr[Boolean] = js.native
 }
 
 object InputTextProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLInputElement] = null,
-    ClassAttributes: ClassAttributes[HTMLInputElement] = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    keyfilter: js.Any = null,
-    onInput: /* event */ FormEvent[HTMLInputElement] => Unit = null,
-    onKeyPress: /* event */ KeyboardEvent[HTMLInputElement] => Unit = null,
-    tooltip: js.Any = null,
-    tooltipOptions: TooltipOptions = null,
-    validateOnly: js.UndefOr[Boolean] = js.undefined
-  ): InputTextProps = {
+  def apply(): InputTextProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (keyfilter != null) __obj.updateDynamic("keyfilter")(keyfilter.asInstanceOf[js.Any])
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputTextProps]
   }
+  @scala.inline
+  implicit class InputTextPropsOps[Self <: InputTextProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyfilter(value: js.Any): Self = this.set("keyfilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyfilter: Self = this.set("keyfilter", js.undefined)
+    @scala.inline
+    def setOnInput(value: /* event */ FormEvent[HTMLInputElement] => Unit): Self = this.set("onInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: /* event */ KeyboardEvent[HTMLInputElement] => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setTooltip(value: js.Any): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTooltipOptions(value: TooltipOptions): Self = this.set("tooltipOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipOptions: Self = this.set("tooltipOptions", js.undefined)
+    @scala.inline
+    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
+  }
+  
 }
 

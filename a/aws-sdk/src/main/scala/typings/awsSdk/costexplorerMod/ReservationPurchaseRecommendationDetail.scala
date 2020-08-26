@@ -86,48 +86,98 @@ trait ReservationPurchaseRecommendationDetail extends js.Object {
 
 object ReservationPurchaseRecommendationDetail {
   @scala.inline
-  def apply(
-    AccountId: GenericString = null,
-    AverageNormalizedUnitsUsedPerHour: GenericString = null,
-    AverageNumberOfInstancesUsedPerHour: GenericString = null,
-    AverageUtilization: GenericString = null,
-    CurrencyCode: GenericString = null,
-    EstimatedBreakEvenInMonths: GenericString = null,
-    EstimatedMonthlyOnDemandCost: GenericString = null,
-    EstimatedMonthlySavingsAmount: GenericString = null,
-    EstimatedMonthlySavingsPercentage: GenericString = null,
-    EstimatedReservationCostForLookbackPeriod: GenericString = null,
-    InstanceDetails: InstanceDetails = null,
-    MaximumNormalizedUnitsUsedPerHour: GenericString = null,
-    MaximumNumberOfInstancesUsedPerHour: GenericString = null,
-    MinimumNormalizedUnitsUsedPerHour: GenericString = null,
-    MinimumNumberOfInstancesUsedPerHour: GenericString = null,
-    RecommendedNormalizedUnitsToPurchase: GenericString = null,
-    RecommendedNumberOfInstancesToPurchase: GenericString = null,
-    RecurringStandardMonthlyCost: GenericString = null,
-    UpfrontCost: GenericString = null
-  ): ReservationPurchaseRecommendationDetail = {
+  def apply(): ReservationPurchaseRecommendationDetail = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (AverageNormalizedUnitsUsedPerHour != null) __obj.updateDynamic("AverageNormalizedUnitsUsedPerHour")(AverageNormalizedUnitsUsedPerHour.asInstanceOf[js.Any])
-    if (AverageNumberOfInstancesUsedPerHour != null) __obj.updateDynamic("AverageNumberOfInstancesUsedPerHour")(AverageNumberOfInstancesUsedPerHour.asInstanceOf[js.Any])
-    if (AverageUtilization != null) __obj.updateDynamic("AverageUtilization")(AverageUtilization.asInstanceOf[js.Any])
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (EstimatedBreakEvenInMonths != null) __obj.updateDynamic("EstimatedBreakEvenInMonths")(EstimatedBreakEvenInMonths.asInstanceOf[js.Any])
-    if (EstimatedMonthlyOnDemandCost != null) __obj.updateDynamic("EstimatedMonthlyOnDemandCost")(EstimatedMonthlyOnDemandCost.asInstanceOf[js.Any])
-    if (EstimatedMonthlySavingsAmount != null) __obj.updateDynamic("EstimatedMonthlySavingsAmount")(EstimatedMonthlySavingsAmount.asInstanceOf[js.Any])
-    if (EstimatedMonthlySavingsPercentage != null) __obj.updateDynamic("EstimatedMonthlySavingsPercentage")(EstimatedMonthlySavingsPercentage.asInstanceOf[js.Any])
-    if (EstimatedReservationCostForLookbackPeriod != null) __obj.updateDynamic("EstimatedReservationCostForLookbackPeriod")(EstimatedReservationCostForLookbackPeriod.asInstanceOf[js.Any])
-    if (InstanceDetails != null) __obj.updateDynamic("InstanceDetails")(InstanceDetails.asInstanceOf[js.Any])
-    if (MaximumNormalizedUnitsUsedPerHour != null) __obj.updateDynamic("MaximumNormalizedUnitsUsedPerHour")(MaximumNormalizedUnitsUsedPerHour.asInstanceOf[js.Any])
-    if (MaximumNumberOfInstancesUsedPerHour != null) __obj.updateDynamic("MaximumNumberOfInstancesUsedPerHour")(MaximumNumberOfInstancesUsedPerHour.asInstanceOf[js.Any])
-    if (MinimumNormalizedUnitsUsedPerHour != null) __obj.updateDynamic("MinimumNormalizedUnitsUsedPerHour")(MinimumNormalizedUnitsUsedPerHour.asInstanceOf[js.Any])
-    if (MinimumNumberOfInstancesUsedPerHour != null) __obj.updateDynamic("MinimumNumberOfInstancesUsedPerHour")(MinimumNumberOfInstancesUsedPerHour.asInstanceOf[js.Any])
-    if (RecommendedNormalizedUnitsToPurchase != null) __obj.updateDynamic("RecommendedNormalizedUnitsToPurchase")(RecommendedNormalizedUnitsToPurchase.asInstanceOf[js.Any])
-    if (RecommendedNumberOfInstancesToPurchase != null) __obj.updateDynamic("RecommendedNumberOfInstancesToPurchase")(RecommendedNumberOfInstancesToPurchase.asInstanceOf[js.Any])
-    if (RecurringStandardMonthlyCost != null) __obj.updateDynamic("RecurringStandardMonthlyCost")(RecurringStandardMonthlyCost.asInstanceOf[js.Any])
-    if (UpfrontCost != null) __obj.updateDynamic("UpfrontCost")(UpfrontCost.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservationPurchaseRecommendationDetail]
   }
+  @scala.inline
+  implicit class ReservationPurchaseRecommendationDetailOps[Self <: ReservationPurchaseRecommendationDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: GenericString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setAverageNormalizedUnitsUsedPerHour(value: GenericString): Self = this.set("AverageNormalizedUnitsUsedPerHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverageNormalizedUnitsUsedPerHour: Self = this.set("AverageNormalizedUnitsUsedPerHour", js.undefined)
+    @scala.inline
+    def setAverageNumberOfInstancesUsedPerHour(value: GenericString): Self = this.set("AverageNumberOfInstancesUsedPerHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverageNumberOfInstancesUsedPerHour: Self = this.set("AverageNumberOfInstancesUsedPerHour", js.undefined)
+    @scala.inline
+    def setAverageUtilization(value: GenericString): Self = this.set("AverageUtilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverageUtilization: Self = this.set("AverageUtilization", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: GenericString): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setEstimatedBreakEvenInMonths(value: GenericString): Self = this.set("EstimatedBreakEvenInMonths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedBreakEvenInMonths: Self = this.set("EstimatedBreakEvenInMonths", js.undefined)
+    @scala.inline
+    def setEstimatedMonthlyOnDemandCost(value: GenericString): Self = this.set("EstimatedMonthlyOnDemandCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedMonthlyOnDemandCost: Self = this.set("EstimatedMonthlyOnDemandCost", js.undefined)
+    @scala.inline
+    def setEstimatedMonthlySavingsAmount(value: GenericString): Self = this.set("EstimatedMonthlySavingsAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedMonthlySavingsAmount: Self = this.set("EstimatedMonthlySavingsAmount", js.undefined)
+    @scala.inline
+    def setEstimatedMonthlySavingsPercentage(value: GenericString): Self = this.set("EstimatedMonthlySavingsPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedMonthlySavingsPercentage: Self = this.set("EstimatedMonthlySavingsPercentage", js.undefined)
+    @scala.inline
+    def setEstimatedReservationCostForLookbackPeriod(value: GenericString): Self = this.set("EstimatedReservationCostForLookbackPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedReservationCostForLookbackPeriod: Self = this.set("EstimatedReservationCostForLookbackPeriod", js.undefined)
+    @scala.inline
+    def setInstanceDetails(value: InstanceDetails): Self = this.set("InstanceDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceDetails: Self = this.set("InstanceDetails", js.undefined)
+    @scala.inline
+    def setMaximumNormalizedUnitsUsedPerHour(value: GenericString): Self = this.set("MaximumNormalizedUnitsUsedPerHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumNormalizedUnitsUsedPerHour: Self = this.set("MaximumNormalizedUnitsUsedPerHour", js.undefined)
+    @scala.inline
+    def setMaximumNumberOfInstancesUsedPerHour(value: GenericString): Self = this.set("MaximumNumberOfInstancesUsedPerHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumNumberOfInstancesUsedPerHour: Self = this.set("MaximumNumberOfInstancesUsedPerHour", js.undefined)
+    @scala.inline
+    def setMinimumNormalizedUnitsUsedPerHour(value: GenericString): Self = this.set("MinimumNormalizedUnitsUsedPerHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumNormalizedUnitsUsedPerHour: Self = this.set("MinimumNormalizedUnitsUsedPerHour", js.undefined)
+    @scala.inline
+    def setMinimumNumberOfInstancesUsedPerHour(value: GenericString): Self = this.set("MinimumNumberOfInstancesUsedPerHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumNumberOfInstancesUsedPerHour: Self = this.set("MinimumNumberOfInstancesUsedPerHour", js.undefined)
+    @scala.inline
+    def setRecommendedNormalizedUnitsToPurchase(value: GenericString): Self = this.set("RecommendedNormalizedUnitsToPurchase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendedNormalizedUnitsToPurchase: Self = this.set("RecommendedNormalizedUnitsToPurchase", js.undefined)
+    @scala.inline
+    def setRecommendedNumberOfInstancesToPurchase(value: GenericString): Self = this.set("RecommendedNumberOfInstancesToPurchase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendedNumberOfInstancesToPurchase: Self = this.set("RecommendedNumberOfInstancesToPurchase", js.undefined)
+    @scala.inline
+    def setRecurringStandardMonthlyCost(value: GenericString): Self = this.set("RecurringStandardMonthlyCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurringStandardMonthlyCost: Self = this.set("RecurringStandardMonthlyCost", js.undefined)
+    @scala.inline
+    def setUpfrontCost(value: GenericString): Self = this.set("UpfrontCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpfrontCost: Self = this.set("UpfrontCost", js.undefined)
+  }
+  
 }
 

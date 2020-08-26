@@ -29,9 +29,9 @@ class OpenLinkClientAction protected () extends ClientAction {
   @JSName("model")
   var model_FOpenLinkClientAction: IModel = js.native
   def address: StaticOrDynamicString = js.native
-  def address(newValue: StaticOrDynamicString): js.Any = js.native
+  def address_=(newValue: StaticOrDynamicString): Unit = js.native
   def linkType: LinkType = js.native
-  def linkType(newValue: LinkType): js.Any = js.native
+  def linkType_=(newValue: LinkType): Unit = js.native
 }
 
 /* static members */

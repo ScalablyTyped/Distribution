@@ -4,24 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetReportsResponse extends js.Object {
-  var queryCost: js.UndefOr[Double] = js.undefined
-  var reports: js.UndefOr[js.Array[Report]] = js.undefined
-  var resourceQuotasRemaining: js.UndefOr[ResourceQuotasRemaining] = js.undefined
+  var queryCost: js.UndefOr[Double] = js.native
+  var reports: js.UndefOr[js.Array[Report]] = js.native
+  var resourceQuotasRemaining: js.UndefOr[ResourceQuotasRemaining] = js.native
 }
 
 object GetReportsResponse {
   @scala.inline
-  def apply(
-    queryCost: js.UndefOr[Double] = js.undefined,
-    reports: js.Array[Report] = null,
-    resourceQuotasRemaining: ResourceQuotasRemaining = null
-  ): GetReportsResponse = {
+  def apply(): GetReportsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(queryCost)) __obj.updateDynamic("queryCost")(queryCost.get.asInstanceOf[js.Any])
-    if (reports != null) __obj.updateDynamic("reports")(reports.asInstanceOf[js.Any])
-    if (resourceQuotasRemaining != null) __obj.updateDynamic("resourceQuotasRemaining")(resourceQuotasRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReportsResponse]
   }
+  @scala.inline
+  implicit class GetReportsResponseOps[Self <: GetReportsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryCost(value: Double): Self = this.set("queryCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryCost: Self = this.set("queryCost", js.undefined)
+    @scala.inline
+    def setReportsVarargs(value: Report*): Self = this.set("reports", js.Array(value :_*))
+    @scala.inline
+    def setReports(value: js.Array[Report]): Self = this.set("reports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReports: Self = this.set("reports", js.undefined)
+    @scala.inline
+    def setResourceQuotasRemaining(value: ResourceQuotasRemaining): Self = this.set("resourceQuotasRemaining", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceQuotasRemaining: Self = this.set("resourceQuotasRemaining", js.undefined)
+  }
+  
 }
 

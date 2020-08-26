@@ -1,8 +1,6 @@
 package typings.carlo.mod
 
 import typings.carlo.anon.Height
-import typings.puppeteer.mod.Page
-import typings.puppeteer.mod.Serializable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,8 +21,18 @@ trait Window extends js.Object {
     * Closes this window.
     */
   def close(): js.Promise[Unit] = js.native
-  def evaluate(pageFunction: String, args: Serializable*): js.Promise[Serializable] = js.native
-  def evaluate(pageFunction: js.Function1[/* repeated */ js.Any, _], args: Serializable*): js.Promise[Serializable] = js.native
+  def evaluate(
+    pageFunction: String,
+    args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+  ): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ _
+  ] = js.native
+  def evaluate(
+    pageFunction: js.Function1[/* repeated */ js.Any, _],
+    args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+  ): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ _
+  ] = js.native
   /**
     * @param name Name of the function on the window object.
     * @param carloFunction Callback function which will be called in Carlo's context.
@@ -59,7 +67,7 @@ trait Window extends js.Object {
   /**
     * Returns Puppeteer page object for testing.
     */
-  def pageForTest(): Page = js.native
+  def pageForTest(): js.Any = js.native
   /**
     * Returns the options.paramsForReuse value passed into the carlo.launch.
     */

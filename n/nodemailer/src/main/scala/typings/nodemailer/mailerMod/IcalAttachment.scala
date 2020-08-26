@@ -1,42 +1,56 @@
 package typings.nodemailer.mailerMod
 
-import typings.node.Buffer
-import typings.node.streamMod.Readable
-import typings.node.urlMod.Url
 import typings.nodemailer.nodemailerBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IcalAttachment extends AttachmentLike {
   /** defines optional content encoding, eg. ‘base64’ or ‘hex’. This only applies if the content is a string. By default an unicode string is assumed. */
-  var encoding: js.UndefOr[String] = js.undefined
+  var encoding: js.UndefOr[String] = js.native
   /** optional filename, defaults to ‘invite.ics’ */
-  var filename: js.UndefOr[String | `false`] = js.undefined
+  var filename: js.UndefOr[String | `false`] = js.native
   /** is an alternative for content to load the calendar data from an URL */
-  var href: js.UndefOr[String] = js.undefined
+  var href: js.UndefOr[String] = js.native
   /** optional method, case insensitive, defaults to ‘publish’. Other possible values would be ‘request’, ‘reply’, ‘cancel’ or any other valid calendar method listed in RFC5546. This should match the METHOD: value in calendar event file. */
-  var method: js.UndefOr[String] = js.undefined
+  var method: js.UndefOr[String] = js.native
 }
 
 object IcalAttachment {
   @scala.inline
-  def apply(
-    content: String | Buffer | Readable = null,
-    encoding: String = null,
-    filename: String | `false` = null,
-    href: String = null,
-    method: String = null,
-    path: String | Url = null
-  ): IcalAttachment = {
+  def apply(): IcalAttachment = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IcalAttachment]
   }
+  @scala.inline
+  implicit class IcalAttachmentOps[Self <: IcalAttachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setFilename(value: String | `false`): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHref: Self = this.set("href", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+  }
+  
 }
 

@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "passport_dot_socketio"
-version := "3.7-dt-20200204Z-1fc0dd"
-scalaVersion := "2.13.2"
+version := "3.7-dt-20200722Z-67b556"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-8ef17f",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-72dac4",
-  "org.scalablytyped" %%% "engine_dot_io" % "3.1-dt-20200530Z-6a5d7a",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20200515Z-d9cc4e",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200624Z-cd1cc0",
-  "org.scalablytyped" %%% "express-session" % "1.17-dt-20200515Z-00a91f",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20200515Z-a16f63",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20200515Z-42389e",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-7b3798",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c5e2e8",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-9b0303",
-  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20200521Z-d3e480",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-3a735c",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-3cac79",
+  "org.scalablytyped" %%% "engine_dot_io" % "3.1-dt-20200530Z-36ecfc",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20200706Z-53ce1b",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200722Z-ebd859",
+  "org.scalablytyped" %%% "express-session" % "1.17-dt-20200515Z-6c07bb",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20200722Z-298525",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20200706Z-e89218",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-556671",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-3a906b",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-4f6d32",
+  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20200721Z-2e9f38",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

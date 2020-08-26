@@ -43,22 +43,48 @@ trait SchemaTemplate extends js.Object {
 
 object SchemaTemplate {
   @scala.inline
-  def apply(
-    automaticColumnNames: js.Array[String] = null,
-    body: String = null,
-    kind: String = null,
-    name: String = null,
-    tableId: String = null,
-    templateId: js.UndefOr[Double] = js.undefined
-  ): SchemaTemplate = {
+  def apply(): SchemaTemplate = {
     val __obj = js.Dynamic.literal()
-    if (automaticColumnNames != null) __obj.updateDynamic("automaticColumnNames")(automaticColumnNames.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
-    if (!js.isUndefined(templateId)) __obj.updateDynamic("templateId")(templateId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTemplate]
   }
+  @scala.inline
+  implicit class SchemaTemplateOps[Self <: SchemaTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomaticColumnNamesVarargs(value: String*): Self = this.set("automaticColumnNames", js.Array(value :_*))
+    @scala.inline
+    def setAutomaticColumnNames(value: js.Array[String]): Self = this.set("automaticColumnNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticColumnNames: Self = this.set("automaticColumnNames", js.undefined)
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableId: Self = this.set("tableId", js.undefined)
+    @scala.inline
+    def setTemplateId(value: Double): Self = this.set("templateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateId: Self = this.set("templateId", js.undefined)
+  }
+  
 }
 

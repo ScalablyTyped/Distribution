@@ -43,26 +43,56 @@ trait GetOrganizationsAccessReportResponse extends js.Object {
 
 object GetOrganizationsAccessReportResponse {
   @scala.inline
-  def apply(
-    JobCreationDate: dateType,
-    JobStatus: jobStatusType,
-    AccessDetails: AccessDetails = null,
-    ErrorDetails: ErrorDetails = null,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    JobCompletionDate: dateType = null,
-    Marker: markerType = null,
-    NumberOfServicesAccessible: js.UndefOr[integerType] = js.undefined,
-    NumberOfServicesNotAccessed: js.UndefOr[integerType] = js.undefined
-  ): GetOrganizationsAccessReportResponse = {
+  def apply(JobCreationDate: dateType, JobStatus: jobStatusType): GetOrganizationsAccessReportResponse = {
     val __obj = js.Dynamic.literal(JobCreationDate = JobCreationDate.asInstanceOf[js.Any], JobStatus = JobStatus.asInstanceOf[js.Any])
-    if (AccessDetails != null) __obj.updateDynamic("AccessDetails")(AccessDetails.asInstanceOf[js.Any])
-    if (ErrorDetails != null) __obj.updateDynamic("ErrorDetails")(ErrorDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (JobCompletionDate != null) __obj.updateDynamic("JobCompletionDate")(JobCompletionDate.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfServicesAccessible)) __obj.updateDynamic("NumberOfServicesAccessible")(NumberOfServicesAccessible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfServicesNotAccessed)) __obj.updateDynamic("NumberOfServicesNotAccessed")(NumberOfServicesNotAccessed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOrganizationsAccessReportResponse]
   }
+  @scala.inline
+  implicit class GetOrganizationsAccessReportResponseOps[Self <: GetOrganizationsAccessReportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobCreationDate(value: dateType): Self = this.set("JobCreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobStatus(value: jobStatusType): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessDetailsVarargs(value: AccessDetail*): Self = this.set("AccessDetails", js.Array(value :_*))
+    @scala.inline
+    def setAccessDetails(value: AccessDetails): Self = this.set("AccessDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessDetails: Self = this.set("AccessDetails", js.undefined)
+    @scala.inline
+    def setErrorDetails(value: ErrorDetails): Self = this.set("ErrorDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorDetails: Self = this.set("ErrorDetails", js.undefined)
+    @scala.inline
+    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setJobCompletionDate(value: dateType): Self = this.set("JobCompletionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobCompletionDate: Self = this.set("JobCompletionDate", js.undefined)
+    @scala.inline
+    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setNumberOfServicesAccessible(value: integerType): Self = this.set("NumberOfServicesAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfServicesAccessible: Self = this.set("NumberOfServicesAccessible", js.undefined)
+    @scala.inline
+    def setNumberOfServicesNotAccessed(value: integerType): Self = this.set("NumberOfServicesNotAccessed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfServicesNotAccessed: Self = this.set("NumberOfServicesNotAccessed", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,38 @@ trait DescribeAffectedEntitiesForOrganizationResponse extends js.Object {
 
 object DescribeAffectedEntitiesForOrganizationResponse {
   @scala.inline
-  def apply(
-    entities: EntityList = null,
-    failedSet: DescribeAffectedEntitiesForOrganizationFailedSet = null,
-    nextToken: nextToken = null
-  ): DescribeAffectedEntitiesForOrganizationResponse = {
+  def apply(): DescribeAffectedEntitiesForOrganizationResponse = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (failedSet != null) __obj.updateDynamic("failedSet")(failedSet.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAffectedEntitiesForOrganizationResponse]
   }
+  @scala.inline
+  implicit class DescribeAffectedEntitiesForOrganizationResponseOps[Self <: DescribeAffectedEntitiesForOrganizationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntitiesVarargs(value: AffectedEntity*): Self = this.set("entities", js.Array(value :_*))
+    @scala.inline
+    def setEntities(value: EntityList): Self = this.set("entities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntities: Self = this.set("entities", js.undefined)
+    @scala.inline
+    def setFailedSetVarargs(value: OrganizationAffectedEntitiesErrorItem*): Self = this.set("failedSet", js.Array(value :_*))
+    @scala.inline
+    def setFailedSet(value: DescribeAffectedEntitiesForOrganizationFailedSet): Self = this.set("failedSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedSet: Self = this.set("failedSet", js.undefined)
+    @scala.inline
+    def setNextToken(value: nextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

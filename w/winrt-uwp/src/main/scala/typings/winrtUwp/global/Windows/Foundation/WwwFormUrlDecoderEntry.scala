@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Foundation.WwwFormUrlDecoderEntry")
 @js.native
 abstract class WwwFormUrlDecoderEntry ()
-  extends typings.winrtUwp.Windows.Foundation.WwwFormUrlDecoderEntry {
-  /** Represents the name of a parameter in a URL query string. Use the IWwwFormUrlDecoderEntry interface version ( IWwwFormUrlDecoderEntry.Name ) instead; see Remarks. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Represents a named value in a URL query string. Use the IWwwFormUrlDecoderEntry interface version ( IWwwFormUrlDecoderEntry.Value ) instead; see Remarks. */
-  /* CompleteClass */
-  override var value: String = js.native
-}
+  extends typings.winrtUwp.Windows.Foundation.WwwFormUrlDecoderEntry
 

@@ -1,7 +1,9 @@
 package typings.tensorflowTfjsConverter
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.tensorflowTfjsConverter.compiledApiMod.ISignatureDef
+import typings.tensorflowTfjsConverter.executorTypesMod.FunctionExecutor
 import typings.tensorflowTfjsConverter.operationsTypesMod.Graph
-import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
 import typings.tensorflowTfjsConverter.typesMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.tensorMod.Tensor
@@ -14,12 +16,24 @@ import scala.scalajs.js.annotation._
 @js.native
 object graphExecutorMod extends js.Object {
   @js.native
-  class GraphExecutor protected () extends js.Object {
+  class GraphExecutor protected () extends FunctionExecutor {
+    /**
+      *
+      * @param graph Graph the model or function graph to be executed.
+      * @param parent When building function exector you need to set the parent
+      * executor. Since the weights and function executor maps are set at parant
+      * level, that function executor can access the function maps and weight maps
+      * through the parent.
+      */
     def this(graph: Graph) = this()
+    def this(graph: Graph, parent: GraphExecutor) = this()
     var SEPERATOR: js.Any = js.native
+    var _functionExecutorMap: js.Any = js.native
+    var _functions: js.Any = js.native
     var _inputs: js.Any = js.native
     var _outputs: js.Any = js.native
     var _signature: js.Any = js.native
+    var _weightIds: js.Any = js.native
     var _weightMap: js.Any = js.native
     var checkInputShapeAndType: js.Any = js.native
     var checkInputs: js.Any = js.native
@@ -36,8 +50,11 @@ object graphExecutorMod extends js.Object {
       * ExecutionContext to keep track of the frames and loop iterators.
       * @param inputs placeholder tensors for the graph.
       * @param context the execution context object for current execution.
+      * @param disableWarning disable no async op warning
       */
     var executeWithControlFlow: js.Any = js.native
+    val functionExecutorMap: StringDictionary[FunctionExecutor] = js.native
+    val functions: StringDictionary[ISignatureDef] = js.native
     var getCompilationKey: js.Any = js.native
     var getFrozenTensorIds: js.Any = js.native
     var graph: js.Any = js.native
@@ -47,10 +64,10 @@ object graphExecutorMod extends js.Object {
     var mapOutputs: js.Any = js.native
     val outputNodes: js.Array[String] = js.native
     val outputs: js.Array[TensorInfo] = js.native
+    var parent: js.Any = js.native
     var processChildNodes: js.Any = js.native
     var processStack: js.Any = js.native
-    var weightIds: js.Any = js.native
-    var weightMap: NamedTensorsMap = js.native
+    val weightIds: js.Array[Double] = js.native
     /**
       * Releases the memory used by the weight tensors.
       */
@@ -73,8 +90,11 @@ object graphExecutorMod extends js.Object {
       * are specified, the default outputs of the model would be used. You can
       * inspect intermediate nodes of the model by adding them to the outputs
       * array.
+      * @param disableWarning disable the no dynamic ops warning message, default
+      * to false
       */
     def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String]): js.Promise[js.Array[Tensor[Rank]]] = js.native
+    def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String], disableWarning: Boolean): js.Promise[js.Array[Tensor[Rank]]] = js.native
   }
   
 }

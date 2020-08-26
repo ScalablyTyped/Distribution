@@ -18,10 +18,28 @@ trait CheckDomainTransferabilityRequest extends js.Object {
 
 object CheckDomainTransferabilityRequest {
   @scala.inline
-  def apply(DomainName: DomainName, AuthCode: DomainAuthCode = null): CheckDomainTransferabilityRequest = {
+  def apply(DomainName: DomainName): CheckDomainTransferabilityRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (AuthCode != null) __obj.updateDynamic("AuthCode")(AuthCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckDomainTransferabilityRequest]
   }
+  @scala.inline
+  implicit class CheckDomainTransferabilityRequestOps[Self <: CheckDomainTransferabilityRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthCode(value: DomainAuthCode): Self = this.set("AuthCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthCode: Self = this.set("AuthCode", js.undefined)
+  }
+  
 }
 

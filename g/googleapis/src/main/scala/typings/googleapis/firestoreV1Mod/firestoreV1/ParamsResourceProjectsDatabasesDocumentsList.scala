@@ -67,52 +67,64 @@ trait ParamsResourceProjectsDatabasesDocumentsList extends StandardParameters {
 
 object ParamsResourceProjectsDatabasesDocumentsList {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    collectionId: String = null,
-    fields: String = null,
-    key: String = null,
-    maskDotfieldPaths: js.Array[String] = null,
-    oauth_token: String = null,
-    orderBy: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    parent: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    readTime: String = null,
-    showMissing: js.UndefOr[Boolean] = js.undefined,
-    transaction: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): ParamsResourceProjectsDatabasesDocumentsList = {
+  def apply(): ParamsResourceProjectsDatabasesDocumentsList = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (collectionId != null) __obj.updateDynamic("collectionId")(collectionId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maskDotfieldPaths != null) __obj.updateDynamic("mask.fieldPaths")(maskDotfieldPaths.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMissing)) __obj.updateDynamic("showMissing")(showMissing.get.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceProjectsDatabasesDocumentsList]
   }
+  @scala.inline
+  implicit class ParamsResourceProjectsDatabasesDocumentsListOps[Self <: ParamsResourceProjectsDatabasesDocumentsList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCollectionId(value: String): Self = this.set("collectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionId: Self = this.set("collectionId", js.undefined)
+    @scala.inline
+    def setMaskDotfieldPathsVarargs(value: String*): Self = this.set("mask.fieldPaths", js.Array(value :_*))
+    @scala.inline
+    def setMaskDotfieldPaths(value: js.Array[String]): Self = this.set("mask.fieldPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskDotfieldPaths: Self = this.set("mask.fieldPaths", js.undefined)
+    @scala.inline
+    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    @scala.inline
+    def setShowMissing(value: Boolean): Self = this.set("showMissing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMissing: Self = this.set("showMissing", js.undefined)
+    @scala.inline
+    def setTransaction(value: String): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransaction: Self = this.set("transaction", js.undefined)
+  }
+  
 }
 

@@ -28,16 +28,34 @@ trait SchemaFeed extends js.Object {
 
 object SchemaFeed {
   @scala.inline
-  def apply(
-    courseRosterChangesInfo: SchemaCourseRosterChangesInfo = null,
-    courseWorkChangesInfo: SchemaCourseWorkChangesInfo = null,
-    feedType: String = null
-  ): SchemaFeed = {
+  def apply(): SchemaFeed = {
     val __obj = js.Dynamic.literal()
-    if (courseRosterChangesInfo != null) __obj.updateDynamic("courseRosterChangesInfo")(courseRosterChangesInfo.asInstanceOf[js.Any])
-    if (courseWorkChangesInfo != null) __obj.updateDynamic("courseWorkChangesInfo")(courseWorkChangesInfo.asInstanceOf[js.Any])
-    if (feedType != null) __obj.updateDynamic("feedType")(feedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFeed]
   }
+  @scala.inline
+  implicit class SchemaFeedOps[Self <: SchemaFeed] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCourseRosterChangesInfo(value: SchemaCourseRosterChangesInfo): Self = this.set("courseRosterChangesInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCourseRosterChangesInfo: Self = this.set("courseRosterChangesInfo", js.undefined)
+    @scala.inline
+    def setCourseWorkChangesInfo(value: SchemaCourseWorkChangesInfo): Self = this.set("courseWorkChangesInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCourseWorkChangesInfo: Self = this.set("courseWorkChangesInfo", js.undefined)
+    @scala.inline
+    def setFeedType(value: String): Self = this.set("feedType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeedType: Self = this.set("feedType", js.undefined)
+  }
+  
 }
 

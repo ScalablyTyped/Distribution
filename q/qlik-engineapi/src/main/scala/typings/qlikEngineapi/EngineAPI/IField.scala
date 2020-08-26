@@ -80,6 +80,7 @@ trait IField extends js.Object {
     * @returns - A promise true or false
     */
   def select(qMatch: String): js.Promise[Boolean] = js.native
+  def select(qMatch: String, qSoftLock: js.UndefOr[scala.Nothing], qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
   def select(qMatch: String, qSoftLock: Boolean): js.Promise[Boolean] = js.native
   def select(qMatch: String, qSoftLock: Boolean, qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
   /**
@@ -138,6 +139,7 @@ trait IField extends js.Object {
     * @returns - A promise true or false
     */
   def selectValues(qFieldValues: js.Array[IFieldValue]): js.Promise[Boolean] = js.native
+  def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: js.UndefOr[scala.Nothing], qSoftLock: Boolean): js.Promise[Boolean] = js.native
   def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: Boolean): js.Promise[Boolean] = js.native
   def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: Boolean, qSoftLock: Boolean): js.Promise[Boolean] = js.native
   /**
@@ -171,6 +173,7 @@ trait IField extends js.Object {
     * @returns - A promise true or false
     */
   def toggleSelect(qMatch: String): js.Promise[Boolean] = js.native
+  def toggleSelect(qMatch: String, qSoftLock: js.UndefOr[scala.Nothing], qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
   def toggleSelect(qMatch: String, qSoftLock: Boolean): js.Promise[Boolean] = js.native
   def toggleSelect(qMatch: String, qSoftLock: Boolean, qExcludedValuesMode: Double): js.Promise[Boolean] = js.native
   /**

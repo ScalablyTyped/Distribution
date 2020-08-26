@@ -18,10 +18,30 @@ trait ListAnalyzedResourcesResponse extends js.Object {
 
 object ListAnalyzedResourcesResponse {
   @scala.inline
-  def apply(analyzedResources: AnalyzedResourcesList, nextToken: Token = null): ListAnalyzedResourcesResponse = {
+  def apply(analyzedResources: AnalyzedResourcesList): ListAnalyzedResourcesResponse = {
     val __obj = js.Dynamic.literal(analyzedResources = analyzedResources.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAnalyzedResourcesResponse]
   }
+  @scala.inline
+  implicit class ListAnalyzedResourcesResponseOps[Self <: ListAnalyzedResourcesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnalyzedResourcesVarargs(value: AnalyzedResourceSummary*): Self = this.set("analyzedResources", js.Array(value :_*))
+    @scala.inline
+    def setAnalyzedResources(value: AnalyzedResourcesList): Self = this.set("analyzedResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

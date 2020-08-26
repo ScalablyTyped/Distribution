@@ -20,34 +20,42 @@ trait LinkProps
 
 object LinkProps {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    containsIcon: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
-    inverse: js.UndefOr[Boolean] = js.undefined,
-    isButton: js.UndefOr[Boolean] = js.undefined,
-    nochrome: js.UndefOr[Boolean] = js.undefined,
-    onClick: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit = null,
-    secondary: js.UndefOr[Boolean] = js.undefined,
-    style: js.Object = null,
-    tertiary: js.UndefOr[Boolean] = js.undefined,
-    withArrow: js.UndefOr[Boolean] = js.undefined
-  ): LinkProps = {
+  def apply(): LinkProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(containsIcon)) __obj.updateDynamic("containsIcon")(containsIcon.get.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isButton)) __obj.updateDynamic("isButton")(isButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nochrome)) __obj.updateDynamic("nochrome")(nochrome.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tertiary)) __obj.updateDynamic("tertiary")(tertiary.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withArrow)) __obj.updateDynamic("withArrow")(withArrow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps]
   }
+  @scala.inline
+  implicit class LinkPropsOps[Self <: LinkProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHref: Self = this.set("href", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

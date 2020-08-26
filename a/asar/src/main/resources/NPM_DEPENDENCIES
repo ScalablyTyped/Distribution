@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "asar" : "2.1.0"
+      "asar" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "asar" : "2.1.0"
+      "asar" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

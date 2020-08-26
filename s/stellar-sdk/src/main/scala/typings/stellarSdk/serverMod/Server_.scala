@@ -1,6 +1,7 @@
 package typings.stellarSdk.serverMod
 
 import typings.stellarBase.mod.Asset
+import typings.stellarBase.mod.FeeBumpTransaction
 import typings.stellarBase.mod.Memo
 import typings.stellarBase.mod.MemoType
 import typings.stellarBase.mod.Operation
@@ -37,6 +38,7 @@ class Server_ protected () extends js.Object {
   val serverURL: URI = js.native
   def accounts(): AccountCallBuilder = js.native
   def assets(): AssetsCallBuilder = js.native
+  def checkMemoRequired(transaction: FeeBumpTransaction): js.Promise[Unit] = js.native
   def checkMemoRequired(transaction: Transaction[Memo[MemoType], js.Array[Operation]]): js.Promise[Unit] = js.native
   def effects(): EffectCallBuilder = js.native
   def feeStats(): js.Promise[FeeStatsResponse] = js.native
@@ -49,12 +51,13 @@ class Server_ protected () extends js.Object {
   def offers(): OfferCallBuilder = js.native
   def operations(): OperationCallBuilder = js.native
   def orderbook(selling: Asset, buying: Asset): OrderbookCallBuilder = js.native
-  def paths(source: String, destination: String, destinationAsset: Asset, destinationAmount: String): PathCallBuilder = js.native
   def payments(): PaymentCallBuilder = js.native
   def strictReceivePaths(source: String, destinationAsset: Asset, destinationAmount: String): PathCallBuilder = js.native
   def strictReceivePaths(source: js.Array[Asset], destinationAsset: Asset, destinationAmount: String): PathCallBuilder = js.native
   def strictSendPaths(sourceAsset: Asset, sourceAmount: String, destination: String): PathCallBuilder = js.native
   def strictSendPaths(sourceAsset: Asset, sourceAmount: String, destination: js.Array[Asset]): PathCallBuilder = js.native
+  def submitTransaction(transaction: FeeBumpTransaction): js.Promise[SubmitTransactionResponse] = js.native
+  def submitTransaction(transaction: FeeBumpTransaction, opts: SubmitTransactionOptions): js.Promise[SubmitTransactionResponse] = js.native
   def submitTransaction(transaction: Transaction[Memo[MemoType], js.Array[Operation]]): js.Promise[SubmitTransactionResponse] = js.native
   def submitTransaction(transaction: Transaction[Memo[MemoType], js.Array[Operation]], opts: SubmitTransactionOptions): js.Promise[SubmitTransactionResponse] = js.native
   def tradeAggregation(

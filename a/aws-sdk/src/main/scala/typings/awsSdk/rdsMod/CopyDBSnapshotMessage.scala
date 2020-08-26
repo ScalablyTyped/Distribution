@@ -39,24 +39,52 @@ trait CopyDBSnapshotMessage extends js.Object {
 
 object CopyDBSnapshotMessage {
   @scala.inline
-  def apply(
-    SourceDBSnapshotIdentifier: String,
-    TargetDBSnapshotIdentifier: String,
-    CopyTags: js.UndefOr[BooleanOptional] = js.undefined,
-    KmsKeyId: String = null,
-    OptionGroupName: String = null,
-    PreSignedUrl: String = null,
-    SourceRegion: String = null,
-    Tags: TagList = null
-  ): CopyDBSnapshotMessage = {
+  def apply(SourceDBSnapshotIdentifier: String, TargetDBSnapshotIdentifier: String): CopyDBSnapshotMessage = {
     val __obj = js.Dynamic.literal(SourceDBSnapshotIdentifier = SourceDBSnapshotIdentifier.asInstanceOf[js.Any], TargetDBSnapshotIdentifier = TargetDBSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.get.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName.asInstanceOf[js.Any])
-    if (PreSignedUrl != null) __obj.updateDynamic("PreSignedUrl")(PreSignedUrl.asInstanceOf[js.Any])
-    if (SourceRegion != null) __obj.updateDynamic("SourceRegion")(SourceRegion.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyDBSnapshotMessage]
   }
+  @scala.inline
+  implicit class CopyDBSnapshotMessageOps[Self <: CopyDBSnapshotMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceDBSnapshotIdentifier(value: String): Self = this.set("SourceDBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetDBSnapshotIdentifier(value: String): Self = this.set("TargetDBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopyTags(value: BooleanOptional): Self = this.set("CopyTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTags: Self = this.set("CopyTags", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setOptionGroupName(value: String): Self = this.set("OptionGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupName: Self = this.set("OptionGroupName", js.undefined)
+    @scala.inline
+    def setPreSignedUrl(value: String): Self = this.set("PreSignedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreSignedUrl: Self = this.set("PreSignedUrl", js.undefined)
+    @scala.inline
+    def setSourceRegion(value: String): Self = this.set("SourceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRegion: Self = this.set("SourceRegion", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

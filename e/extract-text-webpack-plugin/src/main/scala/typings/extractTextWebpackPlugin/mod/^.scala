@@ -1,6 +1,5 @@
 package typings.extractTextWebpackPlugin.mod
 
-import typings.webpack.mod.Loader_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,13 +19,25 @@ class ^ protected () extends ExtractTextPlugin {
 @JSImport("extract-text-webpack-plugin", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def extract(loader: js.Array[Loader_]): js.Array[Loader_] = js.native
-  def extract(loader: LoaderOptions): js.Array[Loader_] = js.native
   /**
     * Creates an extracting loader from an existing loader (static).
     * Use the resulting loader in `module.rules`/`module.loaders`.
     * @see {@link https://www.npmjs.com/package/extract-text-webpack-plugin#extract}
     */
-  def extract(loader: Loader_): js.Array[Loader_] = js.native
+  def extract(
+    loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ js.Any
+  ): js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+  ] = js.native
+  def extract(
+    loader: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+    ]
+  ): js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+  ] = js.native
+  def extract(loader: LoaderOptions): js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Loader */ _
+  ] = js.native
 }
 

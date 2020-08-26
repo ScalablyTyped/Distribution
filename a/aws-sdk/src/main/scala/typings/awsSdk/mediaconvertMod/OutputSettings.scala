@@ -14,10 +14,26 @@ trait OutputSettings extends js.Object {
 
 object OutputSettings {
   @scala.inline
-  def apply(HlsSettings: HlsSettings = null): OutputSettings = {
+  def apply(): OutputSettings = {
     val __obj = js.Dynamic.literal()
-    if (HlsSettings != null) __obj.updateDynamic("HlsSettings")(HlsSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputSettings]
   }
+  @scala.inline
+  implicit class OutputSettingsOps[Self <: OutputSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHlsSettings(value: HlsSettings): Self = this.set("HlsSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsSettings: Self = this.set("HlsSettings", js.undefined)
+  }
+  
 }
 

@@ -23,11 +23,30 @@ trait SchemaGoogleCloudVisionV1p1beta1ImageAnnotationContext extends js.Object {
 
 object SchemaGoogleCloudVisionV1p1beta1ImageAnnotationContext {
   @scala.inline
-  def apply(pageNumber: js.UndefOr[Double] = js.undefined, uri: String = null): SchemaGoogleCloudVisionV1p1beta1ImageAnnotationContext = {
+  def apply(): SchemaGoogleCloudVisionV1p1beta1ImageAnnotationContext = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pageNumber)) __obj.updateDynamic("pageNumber")(pageNumber.get.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1ImageAnnotationContext]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p1beta1ImageAnnotationContextOps[Self <: SchemaGoogleCloudVisionV1p1beta1ImageAnnotationContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPageNumber(value: Double): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageNumber: Self = this.set("pageNumber", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

@@ -4,51 +4,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * cache compiled templates
     */
-  var cache: js.UndefOr[Boolean] = js.undefined
+  var cache: js.UndefOr[Boolean] = js.native
   /**
     * default extname
     */
-  var default: js.UndefOr[String] = js.undefined
+  var default: js.UndefOr[String] = js.native
   /**
     * default extname
     */
-  var ext: js.UndefOr[String] = js.undefined
+  var ext: js.UndefOr[String] = js.native
   /**
     * common locals data
     */
-  var locals: js.UndefOr[js.Object] = js.undefined
+  var locals: js.UndefOr[js.Object] = js.native
   /**
     * engine map
     */
-  var map: js.UndefOr[js.Object] = js.undefined
+  var map: js.UndefOr[js.Object] = js.native
   /**
     * proxy partials
     */
-  var partials: js.UndefOr[js.Object] = js.undefined
+  var partials: js.UndefOr[js.Object] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    cache: js.UndefOr[Boolean] = js.undefined,
-    default: String = null,
-    ext: String = null,
-    locals: js.Object = null,
-    map: js.Object = null,
-    partials: js.Object = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (partials != null) __obj.updateDynamic("partials")(partials.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setExt(value: String): Self = this.set("ext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExt: Self = this.set("ext", js.undefined)
+    @scala.inline
+    def setLocals(value: js.Object): Self = this.set("locals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocals: Self = this.set("locals", js.undefined)
+    @scala.inline
+    def setMap(value: js.Object): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setPartials(value: js.Object): Self = this.set("partials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartials: Self = this.set("partials", js.undefined)
+  }
+  
 }
 

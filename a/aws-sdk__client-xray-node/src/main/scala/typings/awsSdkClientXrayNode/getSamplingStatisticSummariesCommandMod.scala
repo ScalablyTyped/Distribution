@@ -26,16 +26,9 @@ object getSamplingStatisticSummariesCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetSamplingStatisticSummariesInput) = this()
-    /* CompleteClass */
-    override val input: GetSamplingStatisticSummariesInput = js.native
     val middlewareStack: MiddlewareStack[GetSamplingStatisticSummariesInput, GetSamplingStatisticSummariesOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: XRayResolvedConfiguration
-    ): Handler[GetSamplingStatisticSummariesInput, GetSamplingStatisticSummariesOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: XRayResolvedConfiguration
     ): Handler[GetSamplingStatisticSummariesInput, GetSamplingStatisticSummariesOutput] = js.native
   }

@@ -32,6 +32,7 @@ object decoratorsMod extends js.Object {
   def TransformPlainToClass(classType: js.Any): js.Function = js.native
   def TransformPlainToClass(classType: js.Any, params: ClassTransformOptions): js.Function = js.native
   def Type(): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
+  def Type(typeFunction: js.UndefOr[scala.Nothing], options: TypeOptions): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
   def Type(typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function]): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
   def Type(
     typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function],

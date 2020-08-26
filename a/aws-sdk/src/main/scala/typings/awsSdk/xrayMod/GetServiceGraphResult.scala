@@ -30,20 +30,44 @@ trait GetServiceGraphResult extends js.Object {
 
 object GetServiceGraphResult {
   @scala.inline
-  def apply(
-    ContainsOldGroupVersions: js.UndefOr[Boolean] = js.undefined,
-    EndTime: Timestamp = null,
-    NextToken: String = null,
-    Services: ServiceList = null,
-    StartTime: Timestamp = null
-  ): GetServiceGraphResult = {
+  def apply(): GetServiceGraphResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ContainsOldGroupVersions)) __obj.updateDynamic("ContainsOldGroupVersions")(ContainsOldGroupVersions.get.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Services != null) __obj.updateDynamic("Services")(Services.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceGraphResult]
   }
+  @scala.inline
+  implicit class GetServiceGraphResultOps[Self <: GetServiceGraphResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainsOldGroupVersions(value: Boolean): Self = this.set("ContainsOldGroupVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsOldGroupVersions: Self = this.set("ContainsOldGroupVersions", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setServicesVarargs(value: Service*): Self = this.set("Services", js.Array(value :_*))
+    @scala.inline
+    def setServices(value: ServiceList): Self = this.set("Services", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServices: Self = this.set("Services", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+  }
+  
 }
 

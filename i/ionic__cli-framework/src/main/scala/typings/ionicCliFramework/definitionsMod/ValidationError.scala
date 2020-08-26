@@ -12,6 +12,7 @@ trait ValidationError extends js.Object {
   @JSName("validator")
   var validator_Original: Validator = js.native
   def validator(): `true` | String = js.native
+  def validator(input: js.UndefOr[scala.Nothing], key: String): `true` | String = js.native
   def validator(input: String): `true` | String = js.native
   def validator(input: String, key: String): `true` | String = js.native
 }

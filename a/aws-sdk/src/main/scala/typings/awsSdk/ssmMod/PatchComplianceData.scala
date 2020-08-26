@@ -45,5 +45,30 @@ object PatchComplianceData {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], InstalledTime = InstalledTime.asInstanceOf[js.Any], KBId = KBId.asInstanceOf[js.Any], Severity = Severity.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchComplianceData]
   }
+  @scala.inline
+  implicit class PatchComplianceDataOps[Self <: PatchComplianceData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassification(value: PatchClassification): Self = this.set("Classification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstalledTime(value: DateTime): Self = this.set("InstalledTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKBId(value: PatchKbNumber): Self = this.set("KBId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSeverity(value: PatchSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: PatchComplianceDataState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: PatchTitle): Self = this.set("Title", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -28,6 +28,7 @@ class ResourceGroupitems protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceGroupitemsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceGroupitemsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceGroupitems protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaGroupItem] = js.native
   def insert(callback: BodyResponseCallback[SchemaGroupItem]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupItem] = js.native
   def insert(params: ParamsResourceGroupitemsInsert): GaxiosPromise[SchemaGroupItem] = js.native
   def insert(params: ParamsResourceGroupitemsInsert, callback: BodyResponseCallback[SchemaGroupItem]): Unit = js.native
   def insert(
@@ -85,6 +87,7 @@ class ResourceGroupitems protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGroupItemListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGroupItemListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupItemListResponse] = js.native
   def list(params: ParamsResourceGroupitemsList): GaxiosPromise[SchemaGroupItemListResponse] = js.native
   def list(params: ParamsResourceGroupitemsList, callback: BodyResponseCallback[SchemaGroupItemListResponse]): Unit = js.native
   def list(

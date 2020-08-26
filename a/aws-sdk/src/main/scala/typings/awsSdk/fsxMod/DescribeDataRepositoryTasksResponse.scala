@@ -15,11 +15,32 @@ trait DescribeDataRepositoryTasksResponse extends js.Object {
 
 object DescribeDataRepositoryTasksResponse {
   @scala.inline
-  def apply(DataRepositoryTasks: DataRepositoryTasks = null, NextToken: NextToken = null): DescribeDataRepositoryTasksResponse = {
+  def apply(): DescribeDataRepositoryTasksResponse = {
     val __obj = js.Dynamic.literal()
-    if (DataRepositoryTasks != null) __obj.updateDynamic("DataRepositoryTasks")(DataRepositoryTasks.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDataRepositoryTasksResponse]
   }
+  @scala.inline
+  implicit class DescribeDataRepositoryTasksResponseOps[Self <: DescribeDataRepositoryTasksResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataRepositoryTasksVarargs(value: DataRepositoryTask*): Self = this.set("DataRepositoryTasks", js.Array(value :_*))
+    @scala.inline
+    def setDataRepositoryTasks(value: DataRepositoryTasks): Self = this.set("DataRepositoryTasks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRepositoryTasks: Self = this.set("DataRepositoryTasks", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

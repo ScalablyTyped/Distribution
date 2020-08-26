@@ -18,11 +18,30 @@ trait CommitTransactionResult extends js.Object {
 
 object CommitTransactionResult {
   @scala.inline
-  def apply(CommitDigest: CommitDigest = null, TransactionId: TransactionId = null): CommitTransactionResult = {
+  def apply(): CommitTransactionResult = {
     val __obj = js.Dynamic.literal()
-    if (CommitDigest != null) __obj.updateDynamic("CommitDigest")(CommitDigest.asInstanceOf[js.Any])
-    if (TransactionId != null) __obj.updateDynamic("TransactionId")(TransactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitTransactionResult]
   }
+  @scala.inline
+  implicit class CommitTransactionResultOps[Self <: CommitTransactionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommitDigest(value: CommitDigest): Self = this.set("CommitDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitDigest: Self = this.set("CommitDigest", js.undefined)
+    @scala.inline
+    def setTransactionId(value: TransactionId): Self = this.set("TransactionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionId: Self = this.set("TransactionId", js.undefined)
+  }
+  
 }
 

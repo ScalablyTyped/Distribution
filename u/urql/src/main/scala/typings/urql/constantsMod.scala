@@ -13,6 +13,7 @@ object constantsMod extends js.Object {
     var error: js.UndefOr[scala.Nothing] = js.native
     var extensions: js.UndefOr[scala.Nothing] = js.native
     var fetching: Boolean = js.native
+    var operation: js.UndefOr[scala.Nothing] = js.native
     var stale: Boolean = js.native
   }
   

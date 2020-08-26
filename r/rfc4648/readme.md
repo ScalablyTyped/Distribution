@@ -1,7 +1,7 @@
 
 # Scala.js typings for rfc4648
 
-Typings are for version 1.3.0
+Typings are for version 1.4.0
 
 ## Library description:
 Encoding and decoding for base64, base32, base16, and friends

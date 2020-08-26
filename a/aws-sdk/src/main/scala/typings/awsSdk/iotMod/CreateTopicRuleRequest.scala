@@ -22,10 +22,30 @@ trait CreateTopicRuleRequest extends js.Object {
 
 object CreateTopicRuleRequest {
   @scala.inline
-  def apply(ruleName: RuleName, topicRulePayload: TopicRulePayload, tags: String = null): CreateTopicRuleRequest = {
+  def apply(ruleName: RuleName, topicRulePayload: TopicRulePayload): CreateTopicRuleRequest = {
     val __obj = js.Dynamic.literal(ruleName = ruleName.asInstanceOf[js.Any], topicRulePayload = topicRulePayload.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTopicRuleRequest]
   }
+  @scala.inline
+  implicit class CreateTopicRuleRequestOps[Self <: CreateTopicRuleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRuleName(value: RuleName): Self = this.set("ruleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopicRulePayload(value: TopicRulePayload): Self = this.set("topicRulePayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: String): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

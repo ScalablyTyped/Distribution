@@ -28,11 +28,30 @@ trait SchemaGenerateConfigReportRequest extends js.Object {
 
 object SchemaGenerateConfigReportRequest {
   @scala.inline
-  def apply(newConfig: StringDictionary[js.Any] = null, oldConfig: StringDictionary[js.Any] = null): SchemaGenerateConfigReportRequest = {
+  def apply(): SchemaGenerateConfigReportRequest = {
     val __obj = js.Dynamic.literal()
-    if (newConfig != null) __obj.updateDynamic("newConfig")(newConfig.asInstanceOf[js.Any])
-    if (oldConfig != null) __obj.updateDynamic("oldConfig")(oldConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGenerateConfigReportRequest]
   }
+  @scala.inline
+  implicit class SchemaGenerateConfigReportRequestOps[Self <: SchemaGenerateConfigReportRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewConfig(value: StringDictionary[js.Any]): Self = this.set("newConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewConfig: Self = this.set("newConfig", js.undefined)
+    @scala.inline
+    def setOldConfig(value: StringDictionary[js.Any]): Self = this.set("oldConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOldConfig: Self = this.set("oldConfig", js.undefined)
+  }
+  
 }
 

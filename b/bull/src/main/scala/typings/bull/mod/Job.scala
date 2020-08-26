@@ -105,7 +105,11 @@ trait Job[T] extends js.Object {
     * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.
     */
   def moveToCompleted(): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
+  def moveToCompleted(returnValue: js.UndefOr[scala.Nothing], ignoreLock: js.UndefOr[scala.Nothing], notFetch: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
+  def moveToCompleted(returnValue: js.UndefOr[scala.Nothing], ignoreLock: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
+  def moveToCompleted(returnValue: js.UndefOr[scala.Nothing], ignoreLock: Boolean, notFetch: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
   def moveToCompleted(returnValue: String): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
+  def moveToCompleted(returnValue: String, ignoreLock: js.UndefOr[scala.Nothing], notFetch: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
   def moveToCompleted(returnValue: String, ignoreLock: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
   def moveToCompleted(returnValue: String, ignoreLock: Boolean, notFetch: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
   /**

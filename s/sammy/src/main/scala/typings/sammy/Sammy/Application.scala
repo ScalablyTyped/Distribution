@@ -61,7 +61,11 @@ trait Application extends Object {
   def run(): Application = js.native
   def run(start_url: String): Application = js.native
   def runRoute(verb: String): js.Any = js.native
+  def runRoute(verb: String, path: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
+  def runRoute(verb: String, path: js.UndefOr[scala.Nothing], params: js.Any): js.Any = js.native
+  def runRoute(verb: String, path: js.UndefOr[scala.Nothing], params: js.Any, target: js.Any): js.Any = js.native
   def runRoute(verb: String, path: String): js.Any = js.native
+  def runRoute(verb: String, path: String, params: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
   def runRoute(verb: String, path: String, params: js.Any): js.Any = js.native
   def runRoute(verb: String, path: String, params: js.Any, target: js.Any): js.Any = js.native
   def send(params: js.Any*): js.Any = js.native

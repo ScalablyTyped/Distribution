@@ -12,6 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object matchPathSyncMod extends js.Object {
   def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPath = js.native
+  def createMatchPath(
+    absoluteBaseUrl: String,
+    paths: StringDictionary[js.Array[String]],
+    mainFields: js.UndefOr[scala.Nothing],
+    addMatchAll: Boolean
+  ): MatchPath = js.native
   def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]], mainFields: js.Array[String]): MatchPath = js.native
   def createMatchPath(
     absoluteBaseUrl: String,
@@ -20,12 +26,95 @@ object matchPathSyncMod extends js.Object {
     addMatchAll: Boolean
   ): MatchPath = js.native
   def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.UndefOr[scala.Nothing],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsSync_
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsSync_,
+    extensions: js.UndefOr[scala.Nothing],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsSync_,
+    extensions: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsSync_,
+    extensions: js.Array[String],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
   def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String, readJson: ReadJsonSync): js.UndefOr[String] = js.native
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
     readJson: ReadJsonSync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.UndefOr[scala.Nothing],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
     fileExists: FileExistsSync_
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
+    fileExists: FileExistsSync_,
+    extensions: js.UndefOr[scala.Nothing],
+    mainFields: js.Array[String]
   ): js.UndefOr[String] = js.native
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],

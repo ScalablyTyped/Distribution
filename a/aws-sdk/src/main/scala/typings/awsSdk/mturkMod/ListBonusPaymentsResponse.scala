@@ -19,16 +19,36 @@ trait ListBonusPaymentsResponse extends js.Object {
 
 object ListBonusPaymentsResponse {
   @scala.inline
-  def apply(
-    BonusPayments: BonusPaymentList = null,
-    NextToken: PaginationToken = null,
-    NumResults: js.UndefOr[Integer] = js.undefined
-  ): ListBonusPaymentsResponse = {
+  def apply(): ListBonusPaymentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (BonusPayments != null) __obj.updateDynamic("BonusPayments")(BonusPayments.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBonusPaymentsResponse]
   }
+  @scala.inline
+  implicit class ListBonusPaymentsResponseOps[Self <: ListBonusPaymentsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBonusPaymentsVarargs(value: BonusPayment*): Self = this.set("BonusPayments", js.Array(value :_*))
+    @scala.inline
+    def setBonusPayments(value: BonusPaymentList): Self = this.set("BonusPayments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBonusPayments: Self = this.set("BonusPayments", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setNumResults(value: Integer): Self = this.set("NumResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumResults: Self = this.set("NumResults", js.undefined)
+  }
+  
 }
 

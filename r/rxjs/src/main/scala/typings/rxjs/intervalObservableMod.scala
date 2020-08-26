@@ -16,6 +16,10 @@ object intervalObservableMod extends js.Object {
   @js.native
   object IntervalObservable extends js.Object {
     def create(): js.Any = js.native
+    def create(
+      period: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
     def create(period: Double): js.Any = js.native
     def create(
       period: Double,

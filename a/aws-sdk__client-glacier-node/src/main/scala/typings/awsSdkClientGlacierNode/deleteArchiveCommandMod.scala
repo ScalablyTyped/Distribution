@@ -26,16 +26,9 @@ object deleteArchiveCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DeleteArchiveInput) = this()
-    /* CompleteClass */
-    override val input: DeleteArchiveInput = js.native
     val middlewareStack: MiddlewareStack[DeleteArchiveInput, DeleteArchiveOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[DeleteArchiveInput, DeleteArchiveOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[DeleteArchiveInput, DeleteArchiveOutput] = js.native
   }

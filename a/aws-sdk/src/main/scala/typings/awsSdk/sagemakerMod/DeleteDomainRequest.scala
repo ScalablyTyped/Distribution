@@ -18,10 +18,28 @@ trait DeleteDomainRequest extends js.Object {
 
 object DeleteDomainRequest {
   @scala.inline
-  def apply(DomainId: DomainId, RetentionPolicy: RetentionPolicy = null): DeleteDomainRequest = {
+  def apply(DomainId: DomainId): DeleteDomainRequest = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any])
-    if (RetentionPolicy != null) __obj.updateDynamic("RetentionPolicy")(RetentionPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDomainRequest]
   }
+  @scala.inline
+  implicit class DeleteDomainRequestOps[Self <: DeleteDomainRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainId(value: DomainId): Self = this.set("DomainId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRetentionPolicy(value: RetentionPolicy): Self = this.set("RetentionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetentionPolicy: Self = this.set("RetentionPolicy", js.undefined)
+  }
+  
 }
 

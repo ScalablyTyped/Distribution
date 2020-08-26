@@ -22,14 +22,32 @@ trait CreateLabelsRequest extends js.Object {
 
 object CreateLabelsRequest {
   @scala.inline
-  def apply(
-    Labels: SharedLabels,
-    ResourceId: ResourceIdType,
-    AuthenticationToken: AuthenticationHeaderType = null
-  ): CreateLabelsRequest = {
+  def apply(Labels: SharedLabels, ResourceId: ResourceIdType): CreateLabelsRequest = {
     val __obj = js.Dynamic.literal(Labels = Labels.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLabelsRequest]
   }
+  @scala.inline
+  implicit class CreateLabelsRequestOps[Self <: CreateLabelsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabelsVarargs(value: SharedLabel*): Self = this.set("Labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: SharedLabels): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceId(value: ResourceIdType): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+  }
+  
 }
 

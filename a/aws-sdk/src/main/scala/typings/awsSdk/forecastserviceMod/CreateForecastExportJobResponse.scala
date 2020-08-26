@@ -14,10 +14,26 @@ trait CreateForecastExportJobResponse extends js.Object {
 
 object CreateForecastExportJobResponse {
   @scala.inline
-  def apply(ForecastExportJobArn: Arn = null): CreateForecastExportJobResponse = {
+  def apply(): CreateForecastExportJobResponse = {
     val __obj = js.Dynamic.literal()
-    if (ForecastExportJobArn != null) __obj.updateDynamic("ForecastExportJobArn")(ForecastExportJobArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateForecastExportJobResponse]
   }
+  @scala.inline
+  implicit class CreateForecastExportJobResponseOps[Self <: CreateForecastExportJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForecastExportJobArn(value: Arn): Self = this.set("ForecastExportJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastExportJobArn: Self = this.set("ForecastExportJobArn", js.undefined)
+  }
+  
 }
 

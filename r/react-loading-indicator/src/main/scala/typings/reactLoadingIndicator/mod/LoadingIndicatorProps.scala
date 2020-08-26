@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadingIndicatorProps extends js.Object {
   /*
     The color of the most solid segment—what we call each spoke of the loading indicator.
@@ -11,14 +12,14 @@ trait LoadingIndicatorProps extends js.Object {
     The first three color components are values between 0 and 255, inclusive.
     The alpha component is a value between 0 and 1, inclusive.
     */
-  var color: js.UndefOr[LoadingIndicatorColor] = js.undefined
+  var color: js.UndefOr[LoadingIndicatorColor] = js.native
   /*
     The number of steps between segments from the boldest segment to the faintest segments.
     If fadeSteps is segments - 1 then only the last segment will be the faintest,
     multiplied by fadeTo.
     If fadeSteps is a lower value, then several of the last segments will all have the faintest opacity.
     */
-  var fadeSteps: js.UndefOr[Double] = js.undefined
+  var fadeSteps: js.UndefOr[Double] = js.native
    // Extra spacing to pad the distance between the center of the loading indicator and each segment, in logical pixels.
   /*
     The alpha multiplier of the faintest segments.
@@ -26,36 +27,62 @@ trait LoadingIndicatorProps extends js.Object {
     prop by a gradually decreasing alpha multiplier that starts at 1 and linearly
     decreases to the fadeTo prop.
     */
-  var fadeTo: js.UndefOr[Double] = js.undefined
+  var fadeTo: js.UndefOr[Double] = js.native
    // The width of each segment, in logical pixels.
-  var segmentLength: js.UndefOr[Double] = js.undefined
+  var segmentLength: js.UndefOr[Double] = js.native
    // The number of segments, evenly spaced from each other.
-  var segmentWidth: js.UndefOr[Double] = js.undefined
-  var segments: js.UndefOr[Double] = js.undefined
+  var segmentWidth: js.UndefOr[Double] = js.native
+  var segments: js.UndefOr[Double] = js.native
    // The length of each segment, in logical pixels.
-  var spacing: js.UndefOr[Double] = js.undefined
+  var spacing: js.UndefOr[Double] = js.native
 }
 
 object LoadingIndicatorProps {
   @scala.inline
-  def apply(
-    color: LoadingIndicatorColor = null,
-    fadeSteps: js.UndefOr[Double] = js.undefined,
-    fadeTo: js.UndefOr[Double] = js.undefined,
-    segmentLength: js.UndefOr[Double] = js.undefined,
-    segmentWidth: js.UndefOr[Double] = js.undefined,
-    segments: js.UndefOr[Double] = js.undefined,
-    spacing: js.UndefOr[Double] = js.undefined
-  ): LoadingIndicatorProps = {
+  def apply(): LoadingIndicatorProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeSteps)) __obj.updateDynamic("fadeSteps")(fadeSteps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeTo)) __obj.updateDynamic("fadeTo")(fadeTo.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(segmentLength)) __obj.updateDynamic("segmentLength")(segmentLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(segmentWidth)) __obj.updateDynamic("segmentWidth")(segmentWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(segments)) __obj.updateDynamic("segments")(segments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingIndicatorProps]
   }
+  @scala.inline
+  implicit class LoadingIndicatorPropsOps[Self <: LoadingIndicatorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: LoadingIndicatorColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFadeSteps(value: Double): Self = this.set("fadeSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFadeSteps: Self = this.set("fadeSteps", js.undefined)
+    @scala.inline
+    def setFadeTo(value: Double): Self = this.set("fadeTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFadeTo: Self = this.set("fadeTo", js.undefined)
+    @scala.inline
+    def setSegmentLength(value: Double): Self = this.set("segmentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentLength: Self = this.set("segmentLength", js.undefined)
+    @scala.inline
+    def setSegmentWidth(value: Double): Self = this.set("segmentWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentWidth: Self = this.set("segmentWidth", js.undefined)
+    @scala.inline
+    def setSegments(value: Double): Self = this.set("segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegments: Self = this.set("segments", js.undefined)
+    @scala.inline
+    def setSpacing(value: Double): Self = this.set("spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacing: Self = this.set("spacing", js.undefined)
+  }
+  
 }
 

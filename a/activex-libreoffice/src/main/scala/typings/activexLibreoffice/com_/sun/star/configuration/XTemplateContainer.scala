@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * `string` returned from {@link XTemplateContainer.getElementTemplateName()} can be used as the service name argument.
   * @see XTemplateInstance
   */
+@js.native
 trait XTemplateContainer extends XInterface {
   /**
     * retrieves the name of the template
@@ -25,7 +26,7 @@ trait XTemplateContainer extends XInterface {
     * Instances of the template must be created using an appropriate factory.
     * @returns the name of the (default) template for elements.
     */
-  val ElementTemplateName: String
+  val ElementTemplateName: String = js.native
   /**
     * retrieves the name of the template
     *
@@ -34,7 +35,7 @@ trait XTemplateContainer extends XInterface {
     * Instances of the template must be created using an appropriate factory.
     * @returns the name of the (default) template for elements.
     */
-  def getElementTemplateName(): String
+  def getElementTemplateName(): String = js.native
 }
 
 object XTemplateContainer {
@@ -49,5 +50,22 @@ object XTemplateContainer {
     val __obj = js.Dynamic.literal(ElementTemplateName = ElementTemplateName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getElementTemplateName = js.Any.fromFunction0(getElementTemplateName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XTemplateContainer]
   }
+  @scala.inline
+  implicit class XTemplateContainerOps[Self <: XTemplateContainer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElementTemplateName(value: String): Self = this.set("ElementTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetElementTemplateName(value: () => String): Self = this.set("getElementTemplateName", js.Any.fromFunction0(value))
+  }
+  
 }
 

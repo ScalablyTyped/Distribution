@@ -22,6 +22,14 @@ object orthographicCameraMod extends js.Object {
     	 */
     def this(left: Double, right: Double, top: Double, bottom: Double) = this()
     def this(left: Double, right: Double, top: Double, bottom: Double, near: Double) = this()
+    def this(
+      left: Double,
+      right: Double,
+      top: Double,
+      bottom: Double,
+      near: js.UndefOr[scala.Nothing],
+      far: Double
+    ) = this()
     def this(left: Double, right: Double, top: Double, bottom: Double, near: Double, far: Double) = this()
     /**
     	 * Camera frustum bottom plane.

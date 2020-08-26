@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomTextEditorProvider extends js.Object {
   /**
     * Resolve a custom editor for a given text resource.
@@ -25,7 +26,7 @@ trait CustomTextEditorProvider extends js.Object {
     *
     * @return Thenable indicating that the custom editor has been resolved.
     */
-  def resolveCustomTextEditor(document: TextDocument, webviewPanel: WebviewPanel, token: CancellationToken): Thenable[Unit] | Unit
+  def resolveCustomTextEditor(document: TextDocument, webviewPanel: WebviewPanel, token: CancellationToken): Thenable[Unit] | Unit = js.native
 }
 
 object CustomTextEditorProvider {
@@ -34,5 +35,20 @@ object CustomTextEditorProvider {
     val __obj = js.Dynamic.literal(resolveCustomTextEditor = js.Any.fromFunction3(resolveCustomTextEditor))
     __obj.asInstanceOf[CustomTextEditorProvider]
   }
+  @scala.inline
+  implicit class CustomTextEditorProviderOps[Self <: CustomTextEditorProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResolveCustomTextEditor(value: (TextDocument, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): Self = this.set("resolveCustomTextEditor", js.Any.fromFunction3(value))
+  }
+  
 }
 

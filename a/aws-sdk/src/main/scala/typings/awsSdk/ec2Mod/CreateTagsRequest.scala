@@ -22,10 +22,34 @@ trait CreateTagsRequest extends js.Object {
 
 object CreateTagsRequest {
   @scala.inline
-  def apply(Resources: ResourceIdList, Tags: TagList, DryRun: js.UndefOr[Boolean] = js.undefined): CreateTagsRequest = {
+  def apply(Resources: ResourceIdList, Tags: TagList): CreateTagsRequest = {
     val __obj = js.Dynamic.literal(Resources = Resources.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTagsRequest]
   }
+  @scala.inline
+  implicit class CreateTagsRequestOps[Self <: CreateTagsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourcesVarargs(value: TaggableResourceId*): Self = this.set("Resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: ResourceIdList): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

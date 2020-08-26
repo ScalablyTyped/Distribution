@@ -52,15 +52,11 @@ object sourceConnectorMod extends js.Object {
     @JSName("connectTarget")
     def connectTarget_MSourceConnector: js.Any = js.native
     /* private */ def dragPreview: js.Any = js.native
-    def dragPreviewOptions(): js.Any = js.native
-    def dragPreviewOptions(options: DragPreviewOptions): js.Any = js.native
-    @JSName("dragPreviewOptions")
-    def dragPreviewOptions_Union: DragPreviewOptions | Null = js.native
+    def dragPreviewOptions: DragPreviewOptions | Null = js.native
+    def dragPreviewOptions_=(options: DragPreviewOptions | Null): Unit = js.native
     /* private */ def dragSource: js.Any = js.native
-    def dragSourceOptions(): js.Any = js.native
-    def dragSourceOptions(options: DragSourceOptions): js.Any = js.native
-    @JSName("dragSourceOptions")
-    def dragSourceOptions_Union: DragSourceOptions | Null = js.native
+    def dragSourceOptions: DragSourceOptions | Null = js.native
+    def dragSourceOptions_=(options: DragSourceOptions | Null): Unit = js.native
   }
   
 }

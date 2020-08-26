@@ -11,8 +11,8 @@ A PNG decoder fully written in JavaScript
 | Full name          | png.js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 166559 |
+| # dependents       | 6 |
+| # downloads        | 169842 |
 | # stars            | 0 |
 
 ## Links

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EventsList_ () extends Message {
   def addEvents(): Event = js.native
+  def addEvents(value: js.UndefOr[scala.Nothing], index: Double): Event = js.native
   def addEvents(value: Event): Event = js.native
   def addEvents(value: Event, index: Double): Event = js.native
   def clearEventsList(): Unit = js.native

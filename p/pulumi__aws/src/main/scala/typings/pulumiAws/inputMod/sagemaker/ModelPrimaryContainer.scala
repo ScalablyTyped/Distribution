@@ -16,7 +16,7 @@ trait ModelPrimaryContainer extends js.Object {
     * Environment variables for the Docker container.
     * A list of key value pairs.
     */
-  var environment: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  var environment: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The registry path where the inference code image is stored in Amazon ECR.
     */
@@ -29,17 +29,36 @@ trait ModelPrimaryContainer extends js.Object {
 
 object ModelPrimaryContainer {
   @scala.inline
-  def apply(
-    image: Input[String],
-    containerHostname: Input[String] = null,
-    environment: Input[StringDictionary[_]] = null,
-    modelDataUrl: Input[String] = null
-  ): ModelPrimaryContainer = {
+  def apply(image: Input[String]): ModelPrimaryContainer = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
-    if (containerHostname != null) __obj.updateDynamic("containerHostname")(containerHostname.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (modelDataUrl != null) __obj.updateDynamic("modelDataUrl")(modelDataUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelPrimaryContainer]
   }
+  @scala.inline
+  implicit class ModelPrimaryContainerOps[Self <: ModelPrimaryContainer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImage(value: Input[String]): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainerHostname(value: Input[String]): Self = this.set("containerHostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerHostname: Self = this.set("containerHostname", js.undefined)
+    @scala.inline
+    def setEnvironment(value: Input[StringDictionary[Input[String]]]): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setModelDataUrl(value: Input[String]): Self = this.set("modelDataUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelDataUrl: Self = this.set("modelDataUrl", js.undefined)
+  }
+  
 }
 

@@ -28,12 +28,34 @@ trait SchemaTurnBasedMatchData extends js.Object {
 
 object SchemaTurnBasedMatchData {
   @scala.inline
-  def apply(data: String = null, dataAvailable: js.UndefOr[Boolean] = js.undefined, kind: String = null): SchemaTurnBasedMatchData = {
+  def apply(): SchemaTurnBasedMatchData = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataAvailable)) __obj.updateDynamic("dataAvailable")(dataAvailable.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTurnBasedMatchData]
   }
+  @scala.inline
+  implicit class SchemaTurnBasedMatchDataOps[Self <: SchemaTurnBasedMatchData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataAvailable(value: Boolean): Self = this.set("dataAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataAvailable: Self = this.set("dataAvailable", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

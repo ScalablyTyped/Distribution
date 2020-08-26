@@ -1,10 +1,10 @@
 package typings.vscodeJsonrpc
 
 import typings.node.BufferEncoding
-import typings.node.NodeJS.Process
 import typings.node.NodeJS.WritableStream
 import typings.node.childProcessMod.ChildProcess
 import typings.node.netMod.Socket
+import typings.node.processMod.global.NodeJS.Process
 import typings.std.Error
 import typings.vscodeJsonrpc.eventsMod.Disposable
 import typings.vscodeJsonrpc.eventsMod.Event
@@ -24,6 +24,7 @@ object messageWriterMod extends js.Object {
     def dispose(): Unit = js.native
     /* protected */ def fireClose(): Unit = js.native
     /* protected */ def fireError(error: js.Any): Unit = js.native
+    /* protected */ def fireError(error: js.Any, message: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
     /* protected */ def fireError(error: js.Any, message: Message): Unit = js.native
     /* protected */ def fireError(error: js.Any, message: Message, count: Double): Unit = js.native
     def onClose: Event[Unit] = js.native
@@ -34,8 +35,8 @@ object messageWriterMod extends js.Object {
   class IPCMessageWriter protected ()
     extends AbstractMessageWriter
        with MessageWriter {
-    def this(process: Process) = this()
     def this(process: ChildProcess) = this()
+    def this(process: Process) = this()
     var errorCount: js.Any = js.native
     var process: js.Any = js.native
     var queue: js.Any = js.native
@@ -49,9 +50,19 @@ object messageWriterMod extends js.Object {
   trait MessageWriter extends js.Object {
     def dispose(): Unit = js.native
     def onClose(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
+    def onClose(
+      listener: js.Function1[/* e */ Unit, _],
+      thisArgs: js.UndefOr[scala.Nothing],
+      disposables: js.Array[Disposable]
+    ): Disposable = js.native
     def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
     def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
     def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _]): Disposable = js.native
+    def onError(
+      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
+      thisArgs: js.UndefOr[scala.Nothing],
+      disposables: js.Array[Disposable]
+    ): Disposable = js.native
     def onError(
       listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
       thisArgs: js.Any

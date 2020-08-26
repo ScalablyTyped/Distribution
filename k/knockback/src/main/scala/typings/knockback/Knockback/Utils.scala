@@ -1,6 +1,5 @@
 package typings.knockback.Knockback
 
-import typings.knockout.KnockoutObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,9 @@ trait Utils extends js.Object {
   def inferCreator(value: js.Any, factory: Factory, path: String, owner: js.Any, key: String): js.Any = js.native
   def optionsPathJoin(options: js.Any, path: String): js.Any = js.native
   def pathJoin(path1: String, path2: String): String = js.native
-  def valueType(observable: KnockoutObservable[_]): js.Any = js.native
+  def valueType(
+    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
+  ): js.Any = js.native
   def wrappedDestroy(obj: js.Any): js.Any = js.native
   def wrappedEventWatcher(obj: js.Any): js.Any = js.native
   def wrappedEventWatcher(obj: js.Any, value: js.Any): js.Any = js.native

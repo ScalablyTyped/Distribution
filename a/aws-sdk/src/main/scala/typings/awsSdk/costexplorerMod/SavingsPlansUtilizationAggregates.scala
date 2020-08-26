@@ -22,15 +22,32 @@ trait SavingsPlansUtilizationAggregates extends js.Object {
 
 object SavingsPlansUtilizationAggregates {
   @scala.inline
-  def apply(
-    Utilization: SavingsPlansUtilization,
-    AmortizedCommitment: SavingsPlansAmortizedCommitment = null,
-    Savings: SavingsPlansSavings = null
-  ): SavingsPlansUtilizationAggregates = {
+  def apply(Utilization: SavingsPlansUtilization): SavingsPlansUtilizationAggregates = {
     val __obj = js.Dynamic.literal(Utilization = Utilization.asInstanceOf[js.Any])
-    if (AmortizedCommitment != null) __obj.updateDynamic("AmortizedCommitment")(AmortizedCommitment.asInstanceOf[js.Any])
-    if (Savings != null) __obj.updateDynamic("Savings")(Savings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlansUtilizationAggregates]
   }
+  @scala.inline
+  implicit class SavingsPlansUtilizationAggregatesOps[Self <: SavingsPlansUtilizationAggregates] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUtilization(value: SavingsPlansUtilization): Self = this.set("Utilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = this.set("AmortizedCommitment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmortizedCommitment: Self = this.set("AmortizedCommitment", js.undefined)
+    @scala.inline
+    def setSavings(value: SavingsPlansSavings): Self = this.set("Savings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavings: Self = this.set("Savings", js.undefined)
+  }
+  
 }
 

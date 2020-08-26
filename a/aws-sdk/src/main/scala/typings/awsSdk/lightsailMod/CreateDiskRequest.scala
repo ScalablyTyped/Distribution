@@ -23,24 +23,47 @@ trait CreateDiskRequest extends js.Object {
     */
   var sizeInGb: integer = js.native
   /**
-    * The tag keys and optional values to add to the resource during create. To tag a resource after it has been created, see the tag resource operation.
+    * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
   var tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateDiskRequest {
   @scala.inline
-  def apply(
-    availabilityZone: NonEmptyString,
-    diskName: ResourceName,
-    sizeInGb: integer,
-    addOns: AddOnRequestList = null,
-    tags: TagList = null
-  ): CreateDiskRequest = {
+  def apply(availabilityZone: NonEmptyString, diskName: ResourceName, sizeInGb: integer): CreateDiskRequest = {
     val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], diskName = diskName.asInstanceOf[js.Any], sizeInGb = sizeInGb.asInstanceOf[js.Any])
-    if (addOns != null) __obj.updateDynamic("addOns")(addOns.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDiskRequest]
   }
+  @scala.inline
+  implicit class CreateDiskRequestOps[Self <: CreateDiskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: NonEmptyString): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiskName(value: ResourceName): Self = this.set("diskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSizeInGb(value: integer): Self = this.set("sizeInGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddOnsVarargs(value: AddOnRequest*): Self = this.set("addOns", js.Array(value :_*))
+    @scala.inline
+    def setAddOns(value: AddOnRequestList): Self = this.set("addOns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddOns: Self = this.set("addOns", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Mutex locks, Read/Write locks, Condition variables and Semaphores
 | Keywords           | locks, mutex, semaphore, condition, rwlock, synchronize, synchronise, synchronization, synchronisation |
 | # releases         | 1 |
 | # dependents       | 34 |
-| # downloads        | 127385 |
+| # downloads        | 127730 |
 | # stars            | 2 |
 
 ## Links

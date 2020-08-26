@@ -50,30 +50,68 @@ trait Vpc extends js.Object {
 
 object Vpc {
   @scala.inline
-  def apply(
-    CidrBlock: String = null,
-    CidrBlockAssociationSet: VpcCidrBlockAssociationSet = null,
-    DhcpOptionsId: String = null,
-    InstanceTenancy: Tenancy = null,
-    Ipv6CidrBlockAssociationSet: VpcIpv6CidrBlockAssociationSet = null,
-    IsDefault: js.UndefOr[Boolean] = js.undefined,
-    OwnerId: String = null,
-    State: VpcState = null,
-    Tags: TagList = null,
-    VpcId: String = null
-  ): Vpc = {
+  def apply(): Vpc = {
     val __obj = js.Dynamic.literal()
-    if (CidrBlock != null) __obj.updateDynamic("CidrBlock")(CidrBlock.asInstanceOf[js.Any])
-    if (CidrBlockAssociationSet != null) __obj.updateDynamic("CidrBlockAssociationSet")(CidrBlockAssociationSet.asInstanceOf[js.Any])
-    if (DhcpOptionsId != null) __obj.updateDynamic("DhcpOptionsId")(DhcpOptionsId.asInstanceOf[js.Any])
-    if (InstanceTenancy != null) __obj.updateDynamic("InstanceTenancy")(InstanceTenancy.asInstanceOf[js.Any])
-    if (Ipv6CidrBlockAssociationSet != null) __obj.updateDynamic("Ipv6CidrBlockAssociationSet")(Ipv6CidrBlockAssociationSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vpc]
   }
+  @scala.inline
+  implicit class VpcOps[Self <: Vpc] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrBlock(value: String): Self = this.set("CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlock: Self = this.set("CidrBlock", js.undefined)
+    @scala.inline
+    def setCidrBlockAssociationSetVarargs(value: VpcCidrBlockAssociation*): Self = this.set("CidrBlockAssociationSet", js.Array(value :_*))
+    @scala.inline
+    def setCidrBlockAssociationSet(value: VpcCidrBlockAssociationSet): Self = this.set("CidrBlockAssociationSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlockAssociationSet: Self = this.set("CidrBlockAssociationSet", js.undefined)
+    @scala.inline
+    def setDhcpOptionsId(value: String): Self = this.set("DhcpOptionsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDhcpOptionsId: Self = this.set("DhcpOptionsId", js.undefined)
+    @scala.inline
+    def setInstanceTenancy(value: Tenancy): Self = this.set("InstanceTenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTenancy: Self = this.set("InstanceTenancy", js.undefined)
+    @scala.inline
+    def setIpv6CidrBlockAssociationSetVarargs(value: VpcIpv6CidrBlockAssociation*): Self = this.set("Ipv6CidrBlockAssociationSet", js.Array(value :_*))
+    @scala.inline
+    def setIpv6CidrBlockAssociationSet(value: VpcIpv6CidrBlockAssociationSet): Self = this.set("Ipv6CidrBlockAssociationSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6CidrBlockAssociationSet: Self = this.set("Ipv6CidrBlockAssociationSet", js.undefined)
+    @scala.inline
+    def setIsDefault(value: Boolean): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setState(value: VpcState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

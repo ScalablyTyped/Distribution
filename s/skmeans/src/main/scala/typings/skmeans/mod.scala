@@ -29,27 +29,34 @@ object mod extends js.Object {
     * @param distance Custom distance function. Takes two points as arguments and returns a scalar number.
     */
   def apply(data: js.Array[js.Array[Double] | Double], k: Double): Data = js.native
-  def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: CentroidValues): Data = js.native
   def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
-    centroids: CentroidValues,
+    centroids: js.UndefOr[CentroidValues],
+    iterations: js.UndefOr[scala.Nothing],
+    distance: js.Function2[/* x */ Double, /* y */ Double, Double]
+  ): Data = js.native
+  def apply(
+    data: js.Array[js.Array[Double] | Double],
+    k: Double,
+    centroids: js.UndefOr[CentroidValues],
     iterations: Double
   ): Data = js.native
   def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
-    centroids: CentroidValues,
+    centroids: js.UndefOr[CentroidValues],
     iterations: Double,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = js.native
   def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
-    centroids: CentroidValues,
+    centroids: js.UndefOr[CentroidValues],
     iterations: Null,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = js.native
+  def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: CentroidValues): Data = js.native
   /* Rewritten from type alias, can be one of: 
     - typings.skmeans.skmeansStrings.kmrand
     - typings.skmeans.skmeansStrings.kmpp

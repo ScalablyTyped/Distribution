@@ -12,7 +12,7 @@ compress your redux state
 | Keywords           | redux, redux-persist, redux-persist-transform, compression |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 70995 |
+| # downloads        | 71368 |
 | # stars            | 1 |
 
 ## Links

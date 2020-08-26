@@ -1,5 +1,6 @@
 package typings.awsSdk.anon
 
+import typings.awsSdk.ecrMod.ImageIdentifier
 import typings.awsSdk.ecrMod.ImageIdentifierList
 import typings.awsSdk.ecrMod.LifecyclePolicyPreviewFilter
 import typings.awsSdk.ecrMod.LifecyclePreviewMaxResults
@@ -11,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/ecr.GetLifecyclePolicyPreviewRequest & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/ecr.GetLifecyclePolicyPreviewRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait GetLifecyclePolicyPreview extends js.Object {
   @JSName("$waiter")
@@ -44,23 +45,50 @@ trait GetLifecyclePolicyPreview extends js.Object {
 
 object GetLifecyclePolicyPreview {
   @scala.inline
-  def apply(
-    repositoryName: RepositoryName,
-    $waiter: WaiterConfiguration = null,
-    filter: LifecyclePolicyPreviewFilter = null,
-    imageIds: ImageIdentifierList = null,
-    maxResults: js.UndefOr[LifecyclePreviewMaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    registryId: RegistryId = null
-  ): GetLifecyclePolicyPreview = {
+  def apply(repositoryName: RepositoryName): GetLifecyclePolicyPreview = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (imageIds != null) __obj.updateDynamic("imageIds")(imageIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLifecyclePolicyPreview]
   }
+  @scala.inline
+  implicit class GetLifecyclePolicyPreviewOps[Self <: GetLifecyclePolicyPreview] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setFilter(value: LifecyclePolicyPreviewFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setImageIdsVarargs(value: ImageIdentifier*): Self = this.set("imageIds", js.Array(value :_*))
+    @scala.inline
+    def setImageIds(value: ImageIdentifierList): Self = this.set("imageIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageIds: Self = this.set("imageIds", js.undefined)
+    @scala.inline
+    def setMaxResults(value: LifecyclePreviewMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+  }
+  
 }
 

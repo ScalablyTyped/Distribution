@@ -14,11 +14,5 @@ class QueueInsertItemsRequest protected ()
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueInsertItemsRequest
     */
   def this(itemsToInsert: js.Array[typings.chrome.chrome.cast.media.QueueItem]) = this()
-  /* CompleteClass */
-  override var customData: js.Object = js.native
-  /* CompleteClass */
-  override var insertBefore: Double = js.native
-  /* CompleteClass */
-  override var items: js.Array[typings.chrome.chrome.cast.media.QueueItem] = js.native
 }
 

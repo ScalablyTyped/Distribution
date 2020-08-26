@@ -12,7 +12,7 @@ A parser and formatter for MongoDB URIs.
 | Keywords           | mongodb, uri, url, parser, formatter, mongoose |
 | # releases         | 0 |
 | # dependents       | 76 |
-| # downloads        | 2872412 |
+| # downloads        | 2979132 |
 | # stars            | 6 |
 
 ## Links

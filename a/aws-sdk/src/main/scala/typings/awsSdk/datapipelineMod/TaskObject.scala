@@ -26,18 +26,38 @@ trait TaskObject extends js.Object {
 
 object TaskObject {
   @scala.inline
-  def apply(
-    attemptId: id = null,
-    objects: PipelineObjectMap = null,
-    pipelineId: id = null,
-    taskId: taskId = null
-  ): TaskObject = {
+  def apply(): TaskObject = {
     val __obj = js.Dynamic.literal()
-    if (attemptId != null) __obj.updateDynamic("attemptId")(attemptId.asInstanceOf[js.Any])
-    if (objects != null) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
-    if (pipelineId != null) __obj.updateDynamic("pipelineId")(pipelineId.asInstanceOf[js.Any])
-    if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskObject]
   }
+  @scala.inline
+  implicit class TaskObjectOps[Self <: TaskObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttemptId(value: id): Self = this.set("attemptId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttemptId: Self = this.set("attemptId", js.undefined)
+    @scala.inline
+    def setObjects(value: PipelineObjectMap): Self = this.set("objects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjects: Self = this.set("objects", js.undefined)
+    @scala.inline
+    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineId: Self = this.set("pipelineId", js.undefined)
+    @scala.inline
+    def setTaskId(value: taskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskId: Self = this.set("taskId", js.undefined)
+  }
+  
 }
 

@@ -21,26 +21,48 @@ import scala.scalajs.js.annotation._
   *
   *   - "props": Props to be passed into the React component that will be used.
   */
+@js.native
 trait DraftDecorator extends js.Object {
-  var component: js.Function
-  var props: js.UndefOr[js.Object] = js.undefined
+  var component: js.Function = js.native
+  var props: js.UndefOr[js.Object] = js.native
   def strategy(
     block: ContentBlock,
     callback: js.Function2[/* start */ Double, /* end */ Double, Unit],
     contentState: ContentState
-  ): Unit
+  ): Unit = js.native
 }
 
 object DraftDecorator {
   @scala.inline
   def apply(
     component: js.Function,
-    strategy: (ContentBlock, js.Function2[/* start */ Double, /* end */ Double, Unit], ContentState) => Unit,
-    props: js.Object = null
+    strategy: (ContentBlock, js.Function2[/* start */ Double, /* end */ Double, Unit], ContentState) => Unit
   ): DraftDecorator = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], strategy = js.Any.fromFunction3(strategy))
-    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraftDecorator]
   }
+  @scala.inline
+  implicit class DraftDecoratorOps[Self <: DraftDecorator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponent(value: js.Function): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStrategy(
+      value: (ContentBlock, js.Function2[/* start */ Double, /* end */ Double, Unit], ContentState) => Unit
+    ): Self = this.set("strategy", js.Any.fromFunction3(value))
+    @scala.inline
+    def setProps(value: js.Object): Self = this.set("props", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProps: Self = this.set("props", js.undefined)
+  }
+  
 }
 

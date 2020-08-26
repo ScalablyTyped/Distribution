@@ -3,7 +3,6 @@ package typings.rbx
 import typings.propTypes.mod.ValidationMap
 import typings.rbx.anon.ClassName
 import typings.rbx.anon.PartialVariablesDefinitio
-import typings.rbx.anon.`2`
 import typings.rbx.rbxStrings.className
 import typings.rbx.typesMod.UnionToIntersection
 import typings.rbx.variablesMod.VariablesDefinitions
@@ -42,7 +41,7 @@ object factoryMod extends js.Object {
           className, 
           /* keyof rbx.rbx/types.UnionToIntersection<rbx.rbx/base/helpers/factory.ExtractTTransformProps<T[number]>> */ String
         ]
-      ]) with `2` with (UnionToIntersection[
+      ]) with ClassName with (UnionToIntersection[
         ExtractTNewProps[
           /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
         ]
@@ -74,7 +73,7 @@ object factoryMod extends js.Object {
     (Omit[
       ClassName with Partial[TTransformProps], 
       (/* keyof TTransformProps */ String) | className
-    ]) with `2` with TNewProps
+    ]) with ClassName with TNewProps
   ]
   type ValidatingTransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function3[
     /* props */ ClassName with Partial[TTransformProps], 

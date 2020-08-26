@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/string", "StringExt.findIndices")
+@JSImport("@lumino/algorithm/types/string", "StringExt.findIndices")
 @js.native
 object findIndices extends js.Object {
   /**

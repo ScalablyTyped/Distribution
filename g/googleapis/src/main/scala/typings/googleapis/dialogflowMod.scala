@@ -41,7 +41,7 @@ object dialogflowMod extends js.Object {
     @js.native
     object v2
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Dialogflow]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dialogflow]
             ]
     
     @js.native
@@ -49,7 +49,7 @@ object dialogflowMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow
               ]
             ]

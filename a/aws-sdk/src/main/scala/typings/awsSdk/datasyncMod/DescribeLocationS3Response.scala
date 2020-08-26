@@ -27,20 +27,42 @@ trait DescribeLocationS3Response extends js.Object {
 
 object DescribeLocationS3Response {
   @scala.inline
-  def apply(
-    CreationTime: Time = null,
-    LocationArn: LocationArn = null,
-    LocationUri: LocationUri = null,
-    S3Config: S3Config = null,
-    S3StorageClass: S3StorageClass = null
-  ): DescribeLocationS3Response = {
+  def apply(): DescribeLocationS3Response = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (LocationArn != null) __obj.updateDynamic("LocationArn")(LocationArn.asInstanceOf[js.Any])
-    if (LocationUri != null) __obj.updateDynamic("LocationUri")(LocationUri.asInstanceOf[js.Any])
-    if (S3Config != null) __obj.updateDynamic("S3Config")(S3Config.asInstanceOf[js.Any])
-    if (S3StorageClass != null) __obj.updateDynamic("S3StorageClass")(S3StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLocationS3Response]
   }
+  @scala.inline
+  implicit class DescribeLocationS3ResponseOps[Self <: DescribeLocationS3Response] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setLocationArn(value: LocationArn): Self = this.set("LocationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationArn: Self = this.set("LocationArn", js.undefined)
+    @scala.inline
+    def setLocationUri(value: LocationUri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    @scala.inline
+    def setS3Config(value: S3Config): Self = this.set("S3Config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Config: Self = this.set("S3Config", js.undefined)
+    @scala.inline
+    def setS3StorageClass(value: S3StorageClass): Self = this.set("S3StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3StorageClass: Self = this.set("S3StorageClass", js.undefined)
+  }
+  
 }
 

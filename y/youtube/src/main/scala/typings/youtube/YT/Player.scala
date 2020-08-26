@@ -47,11 +47,49 @@ trait Player extends js.Object {
     * @param suggestedQuality   Suggested video player quality.
     */
   def cuePlaylist(playlist: String): Unit = js.native
+  def cuePlaylist(
+    playlist: String,
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
+  def cuePlaylist(playlist: String, index: js.UndefOr[scala.Nothing], startSeconds: Double): Unit = js.native
+  def cuePlaylist(
+    playlist: String,
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: Double,
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def cuePlaylist(playlist: String, index: Double): Unit = js.native
+  def cuePlaylist(
+    playlist: String,
+    index: Double,
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def cuePlaylist(playlist: String, index: Double, startSeconds: Double): Unit = js.native
   def cuePlaylist(playlist: String, index: Double, startSeconds: Double, suggestedQuality: SuggestedVideoQuality): Unit = js.native
   def cuePlaylist(playlist: js.Array[String]): Unit = js.native
+  def cuePlaylist(
+    playlist: js.Array[String],
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
+  def cuePlaylist(playlist: js.Array[String], index: js.UndefOr[scala.Nothing], startSeconds: Double): Unit = js.native
+  def cuePlaylist(
+    playlist: js.Array[String],
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: Double,
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def cuePlaylist(playlist: js.Array[String], index: Double): Unit = js.native
+  def cuePlaylist(
+    playlist: js.Array[String],
+    index: Double,
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def cuePlaylist(playlist: js.Array[String], index: Double, startSeconds: Double): Unit = js.native
   def cuePlaylist(
     playlist: js.Array[String],
@@ -73,6 +111,7 @@ trait Player extends js.Object {
     * @param suggestedQuality   Suggested video player quality.
     */
   def cueVideoById(videoId: String): Unit = js.native
+  def cueVideoById(videoId: String, startSeconds: js.UndefOr[scala.Nothing], suggestedQuality: SuggestedVideoQuality): Unit = js.native
   def cueVideoById(videoId: String, startSeconds: Double): Unit = js.native
   def cueVideoById(videoId: String, startSeconds: Double, suggestedQuality: SuggestedVideoQuality): Unit = js.native
   /**
@@ -89,6 +128,11 @@ trait Player extends js.Object {
     * @param suggestedQuality   Suggested video player quality.
     */
   def cueVideoByUrl(mediaContentUrl: String): Unit = js.native
+  def cueVideoByUrl(
+    mediaContentUrl: String,
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double): Unit = js.native
   def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: SuggestedVideoQuality): Unit = js.native
   /**
@@ -170,11 +214,49 @@ trait Player extends js.Object {
     * @param suggestedQuality   Suggested video player quality.
     */
   def loadPlaylist(playlist: String): Unit = js.native
+  def loadPlaylist(
+    playlist: String,
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
+  def loadPlaylist(playlist: String, index: js.UndefOr[scala.Nothing], startSeconds: Double): Unit = js.native
+  def loadPlaylist(
+    playlist: String,
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: Double,
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def loadPlaylist(playlist: String, index: Double): Unit = js.native
+  def loadPlaylist(
+    playlist: String,
+    index: Double,
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def loadPlaylist(playlist: String, index: Double, startSeconds: Double): Unit = js.native
   def loadPlaylist(playlist: String, index: Double, startSeconds: Double, suggestedQuality: SuggestedVideoQuality): Unit = js.native
   def loadPlaylist(playlist: js.Array[String]): Unit = js.native
+  def loadPlaylist(
+    playlist: js.Array[String],
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
+  def loadPlaylist(playlist: js.Array[String], index: js.UndefOr[scala.Nothing], startSeconds: Double): Unit = js.native
+  def loadPlaylist(
+    playlist: js.Array[String],
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: Double,
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def loadPlaylist(playlist: js.Array[String], index: Double): Unit = js.native
+  def loadPlaylist(
+    playlist: js.Array[String],
+    index: Double,
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def loadPlaylist(playlist: js.Array[String], index: Double, startSeconds: Double): Unit = js.native
   def loadPlaylist(
     playlist: js.Array[String],
@@ -196,6 +278,7 @@ trait Player extends js.Object {
     * @param suggestedQuality   Suggested video player quality.
     */
   def loadVideoById(videoId: String): Unit = js.native
+  def loadVideoById(videoId: String, startSeconds: js.UndefOr[scala.Nothing], suggestedQuality: SuggestedVideoQuality): Unit = js.native
   def loadVideoById(videoId: String, startSeconds: Double): Unit = js.native
   def loadVideoById(videoId: String, startSeconds: Double, suggestedQuality: SuggestedVideoQuality): Unit = js.native
   /**
@@ -212,6 +295,11 @@ trait Player extends js.Object {
     * @param suggestedQuality   Suggested video player quality.
     */
   def loadVideoByUrl(mediaContentUrl: String): Unit = js.native
+  def loadVideoByUrl(
+    mediaContentUrl: String,
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: SuggestedVideoQuality
+  ): Unit = js.native
   def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double): Unit = js.native
   def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: SuggestedVideoQuality): Unit = js.native
   /**

@@ -14,10 +14,26 @@ trait CreateGameServerGroupOutput extends js.Object {
 
 object CreateGameServerGroupOutput {
   @scala.inline
-  def apply(GameServerGroup: GameServerGroup = null): CreateGameServerGroupOutput = {
+  def apply(): CreateGameServerGroupOutput = {
     val __obj = js.Dynamic.literal()
-    if (GameServerGroup != null) __obj.updateDynamic("GameServerGroup")(GameServerGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGameServerGroupOutput]
   }
+  @scala.inline
+  implicit class CreateGameServerGroupOutputOps[Self <: CreateGameServerGroupOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGameServerGroup(value: GameServerGroup): Self = this.set("GameServerGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerGroup: Self = this.set("GameServerGroup", js.undefined)
+  }
+  
 }
 

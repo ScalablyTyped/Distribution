@@ -18,11 +18,30 @@ trait BackupPlanTemplatesListMember extends js.Object {
 
 object BackupPlanTemplatesListMember {
   @scala.inline
-  def apply(BackupPlanTemplateId: String = null, BackupPlanTemplateName: String = null): BackupPlanTemplatesListMember = {
+  def apply(): BackupPlanTemplatesListMember = {
     val __obj = js.Dynamic.literal()
-    if (BackupPlanTemplateId != null) __obj.updateDynamic("BackupPlanTemplateId")(BackupPlanTemplateId.asInstanceOf[js.Any])
-    if (BackupPlanTemplateName != null) __obj.updateDynamic("BackupPlanTemplateName")(BackupPlanTemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupPlanTemplatesListMember]
   }
+  @scala.inline
+  implicit class BackupPlanTemplatesListMemberOps[Self <: BackupPlanTemplatesListMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupPlanTemplateId(value: String): Self = this.set("BackupPlanTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanTemplateId: Self = this.set("BackupPlanTemplateId", js.undefined)
+    @scala.inline
+    def setBackupPlanTemplateName(value: String): Self = this.set("BackupPlanTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanTemplateName: Self = this.set("BackupPlanTemplateName", js.undefined)
+  }
+  
 }
 

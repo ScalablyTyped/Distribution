@@ -1,47 +1,47 @@
 package typings.senchaTouch.Ext.data
 
 import typings.senchaTouch.Ext.Array
-import typings.senchaTouch.Ext.IClass
 import typings.senchaTouch.Ext.mixin.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBatch extends IObservable {
   /** [Method] Adds a new operation to this batch
     * @param operation Object The Operation object.
     */
-  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Config Option] (Boolean) */
-  var autoStart: js.UndefOr[Boolean] = js.undefined
+  var autoStart: js.UndefOr[Boolean] = js.native
   /** [Property] (Number) */
-  var current: js.UndefOr[Double] = js.undefined
+  var current: js.UndefOr[Double] = js.native
   /** [Method] Returns the value of autoStart
     * @returns Boolean
     */
-  var getAutoStart: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getAutoStart: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of pauseOnException
     * @returns Boolean
     */
-  var getPauseOnException: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getPauseOnException: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of proxy
     * @returns Ext.data.Proxy
     */
-  var getProxy: js.UndefOr[js.Function0[IProxy]] = js.undefined
+  var getProxy: js.UndefOr[js.Function0[IProxy]] = js.native
   /** [Property] (Boolean) */
-  var hasException: js.UndefOr[Boolean] = js.undefined
+  var hasException: js.UndefOr[Boolean] = js.native
   /** [Property] (Boolean) */
-  var isComplete: js.UndefOr[Boolean] = js.undefined
+  var isComplete: js.UndefOr[Boolean] = js.native
   /** [Property] (Boolean) */
-  var isRunning: js.UndefOr[Boolean] = js.undefined
+  var isRunning: js.UndefOr[Boolean] = js.native
   /** [Property] (Ext.data.Operation[]) */
-  var operations: js.UndefOr[Array] = js.undefined
+  var operations: js.UndefOr[Array] = js.native
   /** [Method] Pauses execution of the batch but does not cancel the current operation  */
-  var pause: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var pause: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Boolean) */
-  var pauseOnException: js.UndefOr[Boolean] = js.undefined
+  var pauseOnException: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Ext.data.Proxy) */
-  var proxy: js.UndefOr[IProxy] = js.undefined
+  var proxy: js.UndefOr[IProxy] = js.native
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
     * @param events String/Array/Object Array of event names to relay.
@@ -50,171 +50,127 @@ trait IBatch extends IObservable {
   @JSName("relayEvents")
   var relayEvents_IBatch: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Executes a operation by its numeric index
     * @param index Number The operation index to run.
     */
-  var runOperation: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
+  var runOperation: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of autoStart
     * @param autoStart Boolean The new value.
     */
-  var setAutoStart: js.UndefOr[js.Function1[/* autoStart */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setAutoStart: js.UndefOr[js.Function1[/* autoStart */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of pauseOnException
     * @param pauseOnException Boolean The new value.
     */
-  var setPauseOnException: js.UndefOr[js.Function1[/* pauseOnException */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setPauseOnException: js.UndefOr[js.Function1[/* pauseOnException */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of proxy
     * @param proxy Ext.data.Proxy The new value.
     */
-  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[IProxy], Unit]] = js.undefined
+  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[IProxy], Unit]] = js.native
   /** [Method] Kicks off the execution of the batch continuing from the next operation if the previous operation encountered an exc  */
-  var start: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var start: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Property] (Number) */
-  var total: js.UndefOr[Double] = js.undefined
+  var total: js.UndefOr[Double] = js.native
 }
 
 object IBatch {
   @scala.inline
-  def apply(
-    add: /* operation */ js.UndefOr[js.Any] => Unit = null,
-    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    autoStart: js.UndefOr[Boolean] = js.undefined,
-    bubbleEvents: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clearListeners: () => Unit = null,
-    config: js.Any = null,
-    current: js.UndefOr[Double] = js.undefined,
-    destroy: () => Unit = null,
-    enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: String = null,
-    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
-    getAutoStart: () => Boolean = null,
-    getBubbleEvents: () => _ = null,
-    getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getListeners: () => _ = null,
-    getPauseOnException: () => Boolean = null,
-    getProxy: () => IProxy = null,
-    hasException: js.UndefOr[Boolean] = js.undefined,
-    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    isComplete: js.UndefOr[Boolean] = js.undefined,
-    isRunning: js.UndefOr[Boolean] = js.undefined,
-    listeners: js.Any = null,
-    mixins: js.Any = null,
-    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    operations: Array = null,
-    pause: () => Unit = null,
-    pauseOnException: js.UndefOr[Boolean] = js.undefined,
-    platformConfig: js.Any = null,
-    proxy: IProxy = null,
-    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
-    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    runOperation: /* index */ js.UndefOr[Double] => Unit = null,
-    self: IClass = null,
-    setAutoStart: /* autoStart */ js.UndefOr[Boolean] => Unit = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setPauseOnException: /* pauseOnException */ js.UndefOr[Boolean] => Unit = null,
-    setProxy: /* proxy */ js.UndefOr[IProxy] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    start: () => Unit = null,
-    statics: js.Any = null,
-    suspendEvents: () => Unit = null,
-    total: js.UndefOr[Double] = js.undefined,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    uses: Array = null
-  ): IBatch = {
+  def apply(): IBatch = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (getAutoStart != null) __obj.updateDynamic("getAutoStart")(js.Any.fromFunction0(getAutoStart))
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
-    if (getPauseOnException != null) __obj.updateDynamic("getPauseOnException")(js.Any.fromFunction0(getPauseOnException))
-    if (getProxy != null) __obj.updateDynamic("getProxy")(js.Any.fromFunction0(getProxy))
-    if (!js.isUndefined(hasException)) __obj.updateDynamic("hasException")(hasException.get.asInstanceOf[js.Any])
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isComplete)) __obj.updateDynamic("isComplete")(isComplete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRunning)) __obj.updateDynamic("isRunning")(isRunning.get.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
-    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
-    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
-    if (pause != null) __obj.updateDynamic("pause")(js.Any.fromFunction0(pause))
-    if (!js.isUndefined(pauseOnException)) __obj.updateDynamic("pauseOnException")(pauseOnException.get.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (runOperation != null) __obj.updateDynamic("runOperation")(js.Any.fromFunction1(runOperation))
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setAutoStart != null) __obj.updateDynamic("setAutoStart")(js.Any.fromFunction1(setAutoStart))
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
-    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (setPauseOnException != null) __obj.updateDynamic("setPauseOnException")(js.Any.fromFunction1(setPauseOnException))
-    if (setProxy != null) __obj.updateDynamic("setProxy")(js.Any.fromFunction1(setProxy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction0(start))
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
-    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
-    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatch]
   }
+  @scala.inline
+  implicit class IBatchOps[Self <: IBatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: /* operation */ js.UndefOr[js.Any] => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAdd: Self = this.set("add", js.undefined)
+    @scala.inline
+    def setAutoStart(value: Boolean): Self = this.set("autoStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoStart: Self = this.set("autoStart", js.undefined)
+    @scala.inline
+    def setCurrent(value: Double): Self = this.set("current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrent: Self = this.set("current", js.undefined)
+    @scala.inline
+    def setGetAutoStart(value: () => Boolean): Self = this.set("getAutoStart", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAutoStart: Self = this.set("getAutoStart", js.undefined)
+    @scala.inline
+    def setGetPauseOnException(value: () => Boolean): Self = this.set("getPauseOnException", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPauseOnException: Self = this.set("getPauseOnException", js.undefined)
+    @scala.inline
+    def setGetProxy(value: () => IProxy): Self = this.set("getProxy", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetProxy: Self = this.set("getProxy", js.undefined)
+    @scala.inline
+    def setHasException(value: Boolean): Self = this.set("hasException", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasException: Self = this.set("hasException", js.undefined)
+    @scala.inline
+    def setIsComplete(value: Boolean): Self = this.set("isComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsComplete: Self = this.set("isComplete", js.undefined)
+    @scala.inline
+    def setIsRunning(value: Boolean): Self = this.set("isRunning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRunning: Self = this.set("isRunning", js.undefined)
+    @scala.inline
+    def setOperations(value: Array): Self = this.set("operations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperations: Self = this.set("operations", js.undefined)
+    @scala.inline
+    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    @scala.inline
+    def deletePause: Self = this.set("pause", js.undefined)
+    @scala.inline
+    def setPauseOnException(value: Boolean): Self = this.set("pauseOnException", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePauseOnException: Self = this.set("pauseOnException", js.undefined)
+    @scala.inline
+    def setProxy(value: IProxy): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+    @scala.inline
+    def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = this.set("relayEvents", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRelayEvents: Self = this.set("relayEvents", js.undefined)
+    @scala.inline
+    def setRunOperation(value: /* index */ js.UndefOr[Double] => Unit): Self = this.set("runOperation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRunOperation: Self = this.set("runOperation", js.undefined)
+    @scala.inline
+    def setSetAutoStart(value: /* autoStart */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAutoStart: Self = this.set("setAutoStart", js.undefined)
+    @scala.inline
+    def setSetPauseOnException(value: /* pauseOnException */ js.UndefOr[Boolean] => Unit): Self = this.set("setPauseOnException", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPauseOnException: Self = this.set("setPauseOnException", js.undefined)
+    @scala.inline
+    def setSetProxy(value: /* proxy */ js.UndefOr[IProxy] => Unit): Self = this.set("setProxy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetProxy: Self = this.set("setProxy", js.undefined)
+    @scala.inline
+    def setStart(value: () => Unit): Self = this.set("start", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("total", js.undefined)
+  }
+  
 }
 

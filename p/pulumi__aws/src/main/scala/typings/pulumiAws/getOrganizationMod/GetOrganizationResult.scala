@@ -30,7 +30,7 @@ trait GetOrganizationResult extends js.Object {
     */
   val featureSet: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -73,5 +73,50 @@ object GetOrganizationResult {
     val __obj = js.Dynamic.literal(accounts = accounts.asInstanceOf[js.Any], arn = arn.asInstanceOf[js.Any], awsServiceAccessPrincipals = awsServiceAccessPrincipals.asInstanceOf[js.Any], enabledPolicyTypes = enabledPolicyTypes.asInstanceOf[js.Any], featureSet = featureSet.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], masterAccountArn = masterAccountArn.asInstanceOf[js.Any], masterAccountEmail = masterAccountEmail.asInstanceOf[js.Any], masterAccountId = masterAccountId.asInstanceOf[js.Any], nonMasterAccounts = nonMasterAccounts.asInstanceOf[js.Any], roots = roots.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOrganizationResult]
   }
+  @scala.inline
+  implicit class GetOrganizationResultOps[Self <: GetOrganizationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountsVarargs(value: GetOrganizationAccount*): Self = this.set("accounts", js.Array(value :_*))
+    @scala.inline
+    def setAccounts(value: js.Array[GetOrganizationAccount]): Self = this.set("accounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAwsServiceAccessPrincipalsVarargs(value: String*): Self = this.set("awsServiceAccessPrincipals", js.Array(value :_*))
+    @scala.inline
+    def setAwsServiceAccessPrincipals(value: js.Array[String]): Self = this.set("awsServiceAccessPrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabledPolicyTypesVarargs(value: String*): Self = this.set("enabledPolicyTypes", js.Array(value :_*))
+    @scala.inline
+    def setEnabledPolicyTypes(value: js.Array[String]): Self = this.set("enabledPolicyTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeatureSet(value: String): Self = this.set("featureSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMasterAccountArn(value: String): Self = this.set("masterAccountArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMasterAccountEmail(value: String): Self = this.set("masterAccountEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMasterAccountId(value: String): Self = this.set("masterAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNonMasterAccountsVarargs(value: GetOrganizationNonMasterAccount*): Self = this.set("nonMasterAccounts", js.Array(value :_*))
+    @scala.inline
+    def setNonMasterAccounts(value: js.Array[GetOrganizationNonMasterAccount]): Self = this.set("nonMasterAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRootsVarargs(value: GetOrganizationRoot*): Self = this.set("roots", js.Array(value :_*))
+    @scala.inline
+    def setRoots(value: js.Array[GetOrganizationRoot]): Self = this.set("roots", value.asInstanceOf[js.Any])
+  }
+  
 }
 

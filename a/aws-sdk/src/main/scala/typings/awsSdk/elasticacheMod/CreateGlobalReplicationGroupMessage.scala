@@ -22,14 +22,30 @@ trait CreateGlobalReplicationGroupMessage extends js.Object {
 
 object CreateGlobalReplicationGroupMessage {
   @scala.inline
-  def apply(
-    GlobalReplicationGroupIdSuffix: String,
-    PrimaryReplicationGroupId: String,
-    GlobalReplicationGroupDescription: String = null
-  ): CreateGlobalReplicationGroupMessage = {
+  def apply(GlobalReplicationGroupIdSuffix: String, PrimaryReplicationGroupId: String): CreateGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(GlobalReplicationGroupIdSuffix = GlobalReplicationGroupIdSuffix.asInstanceOf[js.Any], PrimaryReplicationGroupId = PrimaryReplicationGroupId.asInstanceOf[js.Any])
-    if (GlobalReplicationGroupDescription != null) __obj.updateDynamic("GlobalReplicationGroupDescription")(GlobalReplicationGroupDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGlobalReplicationGroupMessage]
   }
+  @scala.inline
+  implicit class CreateGlobalReplicationGroupMessageOps[Self <: CreateGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalReplicationGroupIdSuffix(value: String): Self = this.set("GlobalReplicationGroupIdSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrimaryReplicationGroupId(value: String): Self = this.set("PrimaryReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlobalReplicationGroupDescription(value: String): Self = this.set("GlobalReplicationGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalReplicationGroupDescription: Self = this.set("GlobalReplicationGroupDescription", js.undefined)
+  }
+  
 }
 

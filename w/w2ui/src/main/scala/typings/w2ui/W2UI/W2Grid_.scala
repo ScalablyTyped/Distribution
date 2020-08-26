@@ -81,6 +81,7 @@ trait W2Grid_
   def dblClick(recid: String, event: js.Object): Unit = js.native
   def delete(force: Boolean): Unit = js.native
   def editField(recid: String, column: Double): Unit = js.native
+  def editField(recid: String, column: Double, value: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def editField(recid: String, column: Double, value: String): Unit = js.native
   def editField(recid: String, column: Double, value: String, event: js.Object): Unit = js.native
   def error(msg: String): Unit = js.native
@@ -146,7 +147,16 @@ trait W2Grid_
   def removeRange(rangeNames: String*): Double = js.native
   def removeSearch(fields: String*): Double = js.native
   def request(cmd: String): Unit = js.native
+  def request(
+    cmd: String,
+    params: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Unit = js.native
+  def request(cmd: String, params: js.UndefOr[scala.Nothing], url: String): Unit = js.native
+  def request(cmd: String, params: js.UndefOr[scala.Nothing], url: String, callback: js.Function): Unit = js.native
   def request(cmd: String, params: js.Object): Unit = js.native
+  def request(cmd: String, params: js.Object, url: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def request(cmd: String, params: js.Object, url: String): Unit = js.native
   def request(cmd: String, params: js.Object, url: String, callback: js.Function): Unit = js.native
   def requestComplete(status: String, cmd: String): Unit = js.native
@@ -178,6 +188,7 @@ trait W2Grid_
   def skip(offset: Double): Double = js.native
   def sort(): Unit = js.native
   def sort(field: String): Unit = js.native
+  def sort(field: String, direction: js.UndefOr[scala.Nothing], multiField: Boolean): Unit = js.native
   def sort(field: String, direction: String): Unit = js.native
   def sort(field: String, direction: String, multiField: Boolean): Unit = js.native
   def stateReset(): Unit = js.native

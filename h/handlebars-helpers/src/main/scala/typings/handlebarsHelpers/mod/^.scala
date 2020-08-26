@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): StringDictionary[HelperDelegate] = js.native
+  def apply(groups: js.UndefOr[scala.Nothing], options: Options): StringDictionary[HelperDelegate] = js.native
   def apply(groups: String): StringDictionary[HelperDelegate] = js.native
   def apply(groups: String, options: Options): StringDictionary[HelperDelegate] = js.native
   def apply(groups: js.Array[String]): StringDictionary[HelperDelegate] = js.native

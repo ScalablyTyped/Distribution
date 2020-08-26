@@ -88,6 +88,7 @@ class Position protected () extends js.Object {
     * is not changing anything.
     */
   def translate(change: CharacterDelta): Position = js.native
+  def translate(lineDelta: js.UndefOr[scala.Nothing], characterDelta: Double): Position = js.native
   def translate(lineDelta: Double): Position = js.native
   def translate(lineDelta: Double, characterDelta: Double): Position = js.native
   /**
@@ -106,6 +107,7 @@ class Position protected () extends js.Object {
     * is not changing anything.
     */
   def `with`(change: Character): Position = js.native
+  def `with`(line: js.UndefOr[scala.Nothing], character: Double): Position = js.native
   def `with`(line: Double): Position = js.native
   def `with`(line: Double, character: Double): Position = js.native
 }

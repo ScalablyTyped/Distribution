@@ -7,13 +7,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WaypointContext extends js.Object {
-  var adapter: WaypointAdapter
-  var element: HTMLElement | Window
-  var waypoints: Horizontal
+  var adapter: WaypointAdapter = js.native
+  var element: HTMLElement | Window = js.native
+  var waypoints: Horizontal = js.native
    // http://imakewebthings.com/waypoints/api/context/#waypoints-property
-  def destroy(): Waypoint
-  def refresh(): Waypoint
+  def destroy(): Waypoint = js.native
+  def refresh(): Waypoint = js.native
 }
 
 object WaypointContext {
@@ -28,5 +29,28 @@ object WaypointContext {
     val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), element = element.asInstanceOf[js.Any], refresh = js.Any.fromFunction0(refresh), waypoints = waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaypointContext]
   }
+  @scala.inline
+  implicit class WaypointContextOps[Self <: WaypointContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdapter(value: WaypointAdapter): Self = this.set("adapter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestroy(value: () => Waypoint): Self = this.set("destroy", js.Any.fromFunction0(value))
+    @scala.inline
+    def setElement(value: HTMLElement | Window): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRefresh(value: () => Waypoint): Self = this.set("refresh", js.Any.fromFunction0(value))
+    @scala.inline
+    def setWaypoints(value: Horizontal): Self = this.set("waypoints", value.asInstanceOf[js.Any])
+  }
+  
 }
 

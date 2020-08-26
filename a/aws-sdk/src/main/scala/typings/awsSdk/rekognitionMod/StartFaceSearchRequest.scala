@@ -34,20 +34,42 @@ trait StartFaceSearchRequest extends js.Object {
 
 object StartFaceSearchRequest {
   @scala.inline
-  def apply(
-    CollectionId: CollectionId,
-    Video: Video,
-    ClientRequestToken: ClientRequestToken = null,
-    FaceMatchThreshold: js.UndefOr[Percent] = js.undefined,
-    JobTag: JobTag = null,
-    NotificationChannel: NotificationChannel = null
-  ): StartFaceSearchRequest = {
+  def apply(CollectionId: CollectionId, Video: Video): StartFaceSearchRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], Video = Video.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(FaceMatchThreshold)) __obj.updateDynamic("FaceMatchThreshold")(FaceMatchThreshold.get.asInstanceOf[js.Any])
-    if (JobTag != null) __obj.updateDynamic("JobTag")(JobTag.asInstanceOf[js.Any])
-    if (NotificationChannel != null) __obj.updateDynamic("NotificationChannel")(NotificationChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartFaceSearchRequest]
   }
+  @scala.inline
+  implicit class StartFaceSearchRequestOps[Self <: StartFaceSearchRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectionId(value: CollectionId): Self = this.set("CollectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVideo(value: Video): Self = this.set("Video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setFaceMatchThreshold(value: Percent): Self = this.set("FaceMatchThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceMatchThreshold: Self = this.set("FaceMatchThreshold", js.undefined)
+    @scala.inline
+    def setJobTag(value: JobTag): Self = this.set("JobTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTag: Self = this.set("JobTag", js.undefined)
+    @scala.inline
+    def setNotificationChannel(value: NotificationChannel): Self = this.set("NotificationChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationChannel: Self = this.set("NotificationChannel", js.undefined)
+  }
+  
 }
 

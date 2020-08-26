@@ -26,18 +26,38 @@ trait S3Location extends js.Object {
 
 object S3Location {
   @scala.inline
-  def apply(
-    Bucket: NonEmptyString = null,
-    Key: NonEmptyString = null,
-    ObjectVersion: NonEmptyString = null,
-    RoleArn: NonEmptyString = null
-  ): S3Location = {
+  def apply(): S3Location = {
     val __obj = js.Dynamic.literal()
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (ObjectVersion != null) __obj.updateDynamic("ObjectVersion")(ObjectVersion.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Location]
   }
+  @scala.inline
+  implicit class S3LocationOps[Self <: S3Location] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: NonEmptyString): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    @scala.inline
+    def setKey(value: NonEmptyString): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setObjectVersion(value: NonEmptyString): Self = this.set("ObjectVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectVersion: Self = this.set("ObjectVersion", js.undefined)
+    @scala.inline
+    def setRoleArn(value: NonEmptyString): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+  }
+  
 }
 

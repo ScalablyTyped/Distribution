@@ -12,7 +12,7 @@ A template literal tag for dedenting Fluent code
 | Keywords           | dedent, fluent, ftl |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 1216 |
+| # downloads        | 1376 |
 | # stars            | 0 |
 
 ## Links

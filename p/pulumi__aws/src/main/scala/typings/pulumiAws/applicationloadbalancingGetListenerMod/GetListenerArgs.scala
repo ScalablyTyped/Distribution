@@ -22,12 +22,34 @@ trait GetListenerArgs extends js.Object {
 
 object GetListenerArgs {
   @scala.inline
-  def apply(arn: String = null, loadBalancerArn: String = null, port: js.UndefOr[Double] = js.undefined): GetListenerArgs = {
+  def apply(): GetListenerArgs = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (loadBalancerArn != null) __obj.updateDynamic("loadBalancerArn")(loadBalancerArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetListenerArgs]
   }
+  @scala.inline
+  implicit class GetListenerArgsOps[Self <: GetListenerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setLoadBalancerArn(value: String): Self = this.set("loadBalancerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerArn: Self = this.set("loadBalancerArn", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+  }
+  
 }
 

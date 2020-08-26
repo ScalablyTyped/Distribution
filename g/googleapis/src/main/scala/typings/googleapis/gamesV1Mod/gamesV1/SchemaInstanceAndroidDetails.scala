@@ -30,18 +30,38 @@ trait SchemaInstanceAndroidDetails extends js.Object {
 
 object SchemaInstanceAndroidDetails {
   @scala.inline
-  def apply(
-    enablePiracyCheck: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    packageName: String = null,
-    preferred: js.UndefOr[Boolean] = js.undefined
-  ): SchemaInstanceAndroidDetails = {
+  def apply(): SchemaInstanceAndroidDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePiracyCheck)) __obj.updateDynamic("enablePiracyCheck")(enablePiracyCheck.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceAndroidDetails]
   }
+  @scala.inline
+  implicit class SchemaInstanceAndroidDetailsOps[Self <: SchemaInstanceAndroidDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnablePiracyCheck(value: Boolean): Self = this.set("enablePiracyCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePiracyCheck: Self = this.set("enablePiracyCheck", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageName: Self = this.set("packageName", js.undefined)
+    @scala.inline
+    def setPreferred(value: Boolean): Self = this.set("preferred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferred: Self = this.set("preferred", js.undefined)
+  }
+  
 }
 

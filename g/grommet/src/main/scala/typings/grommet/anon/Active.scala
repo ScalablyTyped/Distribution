@@ -1,78 +1,57 @@
 package typings.grommet.anon
 
+import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Active extends js.Object {
-  var active: js.UndefOr[BackgroundColor] = js.undefined
-  var animation: js.UndefOr[Jiggle] = js.undefined
-  var borderSize: js.UndefOr[Large] = js.undefined
-  var breakpoints: js.UndefOr[Dictx] = js.undefined
-  var colors: js.UndefOr[typings.grommet.baseMod.Colors] = js.undefined
-  var control: js.UndefOr[BorderDisabled] = js.undefined
-  var debounceDelay: js.UndefOr[Double] = js.undefined
-  var deviceBreakpoints: js.UndefOr[Computer] = js.undefined
-  var drop: js.UndefOr[ShadowSize] = js.undefined
-  var edgeSize: js.UndefOr[Hair] = js.undefined
-  var elevation: js.UndefOr[DarkLight] = js.undefined
-  var focus: js.UndefOr[Outline] = js.undefined
-  var font: js.UndefOr[Face] = js.undefined
-  var graph: js.UndefOr[Colors] = js.undefined
-  var hover: js.UndefOr[BackgroundBackgroundType] = js.undefined
-  var input: js.UndefOr[Font] = js.undefined
-  var opacity: js.UndefOr[Strong] = js.undefined
-  var selected: js.UndefOr[BackgroundBackgroundType] = js.undefined
-  var size: js.UndefOr[Full] = js.undefined
-  var spacing: js.UndefOr[String] = js.undefined
+  var active: js.UndefOr[`0`] = js.native
+  var color: js.UndefOr[ColorType] = js.native
+  var hover: js.UndefOr[ColorExtend] = js.native
+  var side: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.native
 }
 
 object Active {
   @scala.inline
-  def apply(
-    active: BackgroundColor = null,
-    animation: Jiggle = null,
-    borderSize: Large = null,
-    breakpoints: Dictx = null,
-    colors: typings.grommet.baseMod.Colors = null,
-    control: BorderDisabled = null,
-    debounceDelay: js.UndefOr[Double] = js.undefined,
-    deviceBreakpoints: Computer = null,
-    drop: ShadowSize = null,
-    edgeSize: Hair = null,
-    elevation: DarkLight = null,
-    focus: Outline = null,
-    font: Face = null,
-    graph: Colors = null,
-    hover: BackgroundBackgroundType = null,
-    input: Font = null,
-    opacity: Strong = null,
-    selected: BackgroundBackgroundType = null,
-    size: Full = null,
-    spacing: String = null
-  ): Active = {
+  def apply(): Active = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (borderSize != null) __obj.updateDynamic("borderSize")(borderSize.asInstanceOf[js.Any])
-    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (!js.isUndefined(debounceDelay)) __obj.updateDynamic("debounceDelay")(debounceDelay.get.asInstanceOf[js.Any])
-    if (deviceBreakpoints != null) __obj.updateDynamic("deviceBreakpoints")(deviceBreakpoints.asInstanceOf[js.Any])
-    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
-    if (edgeSize != null) __obj.updateDynamic("edgeSize")(edgeSize.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Active]
   }
+  @scala.inline
+  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: `0`): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setHover(value: ColorExtend): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+    @scala.inline
+    def setSide(value: String): Self = this.set("side", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSide: Self = this.set("side", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

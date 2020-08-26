@@ -26,16 +26,9 @@ object deregisterStreamConsumerCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeregisterStreamConsumerInput) = this()
-    /* CompleteClass */
-    override val input: DeregisterStreamConsumerInput = js.native
     val middlewareStack: MiddlewareStack[DeregisterStreamConsumerInput, DeregisterStreamConsumerOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KinesisResolvedConfiguration
-    ): Handler[DeregisterStreamConsumerInput, DeregisterStreamConsumerOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KinesisResolvedConfiguration
     ): Handler[DeregisterStreamConsumerInput, DeregisterStreamConsumerOutput] = js.native
   }

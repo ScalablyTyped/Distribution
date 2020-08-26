@@ -51,22 +51,48 @@ trait SchemaExportContext extends js.Object {
 
 object SchemaExportContext {
   @scala.inline
-  def apply(
-    csvExportOptions: SelectQuery = null,
-    databases: js.Array[String] = null,
-    fileType: String = null,
-    kind: String = null,
-    sqlExportOptions: MysqlExportOptions = null,
-    uri: String = null
-  ): SchemaExportContext = {
+  def apply(): SchemaExportContext = {
     val __obj = js.Dynamic.literal()
-    if (csvExportOptions != null) __obj.updateDynamic("csvExportOptions")(csvExportOptions.asInstanceOf[js.Any])
-    if (databases != null) __obj.updateDynamic("databases")(databases.asInstanceOf[js.Any])
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (sqlExportOptions != null) __obj.updateDynamic("sqlExportOptions")(sqlExportOptions.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExportContext]
   }
+  @scala.inline
+  implicit class SchemaExportContextOps[Self <: SchemaExportContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCsvExportOptions(value: SelectQuery): Self = this.set("csvExportOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvExportOptions: Self = this.set("csvExportOptions", js.undefined)
+    @scala.inline
+    def setDatabasesVarargs(value: String*): Self = this.set("databases", js.Array(value :_*))
+    @scala.inline
+    def setDatabases(value: js.Array[String]): Self = this.set("databases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabases: Self = this.set("databases", js.undefined)
+    @scala.inline
+    def setFileType(value: String): Self = this.set("fileType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileType: Self = this.set("fileType", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSqlExportOptions(value: MysqlExportOptions): Self = this.set("sqlExportOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqlExportOptions: Self = this.set("sqlExportOptions", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

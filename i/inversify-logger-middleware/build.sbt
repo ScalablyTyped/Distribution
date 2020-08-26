@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "inversify-logger-middleware"
-version := "3.1.0-e17593"
-scalaVersion := "2.13.2"
+version := "3.1.0-eec689"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chalk" % "3.0.0-08eee5",
-  "org.scalablytyped" %%% "inversify" % "5.0.1-4d94a2",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "chalk" % "4.1.0-f17808",
+  "org.scalablytyped" %%% "inversify" % "5.0.1-c2c26d",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

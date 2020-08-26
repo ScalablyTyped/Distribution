@@ -4,27 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined graphql.graphql/language/directiveLocation._DirectiveLocation[keyof graphql.graphql/language/directiveLocation._DirectiveLocation] */
+/* Inlined {  QUERY :'QUERY',   MUTATION :'MUTATION',   SUBSCRIPTION :'SUBSCRIPTION',   FIELD :'FIELD',   FRAGMENT_DEFINITION :'FRAGMENT_DEFINITION',   FRAGMENT_SPREAD :'FRAGMENT_SPREAD',   INLINE_FRAGMENT :'INLINE_FRAGMENT',   VARIABLE_DEFINITION :'VARIABLE_DEFINITION',   SCHEMA :'SCHEMA',   SCALAR :'SCALAR',   OBJECT :'OBJECT',   FIELD_DEFINITION :'FIELD_DEFINITION',   ARGUMENT_DEFINITION :'ARGUMENT_DEFINITION',   INTERFACE :'INTERFACE',   UNION :'UNION',   ENUM :'ENUM',   ENUM_VALUE :'ENUM_VALUE',   INPUT_OBJECT :'INPUT_OBJECT',   INPUT_FIELD_DEFINITION :'INPUT_FIELD_DEFINITION'}[keyof {  QUERY :'QUERY',   MUTATION :'MUTATION',   SUBSCRIPTION :'SUBSCRIPTION',   FIELD :'FIELD',   FRAGMENT_DEFINITION :'FRAGMENT_DEFINITION',   FRAGMENT_SPREAD :'FRAGMENT_SPREAD',   INLINE_FRAGMENT :'INLINE_FRAGMENT',   VARIABLE_DEFINITION :'VARIABLE_DEFINITION',   SCHEMA :'SCHEMA',   SCALAR :'SCALAR',   OBJECT :'OBJECT',   FIELD_DEFINITION :'FIELD_DEFINITION',   ARGUMENT_DEFINITION :'ARGUMENT_DEFINITION',   INTERFACE :'INTERFACE',   UNION :'UNION',   ENUM :'ENUM',   ENUM_VALUE :'ENUM_VALUE',   INPUT_OBJECT :'INPUT_OBJECT',   INPUT_FIELD_DEFINITION :'INPUT_FIELD_DEFINITION'}] */
 /* Rewritten from type alias, can be one of: 
-  - typings.graphql.graphqlStrings.VARIABLE_DEFINITION
-  - typings.graphql.graphqlStrings.INLINE_FRAGMENT
-  - typings.graphql.graphqlStrings.MUTATION
-  - typings.graphql.graphqlStrings.INPUT_OBJECT
-  - typings.graphql.graphqlStrings.FIELD
   - typings.graphql.graphqlStrings.UNION
-  - typings.graphql.graphqlStrings.FIELD_DEFINITION
+  - typings.graphql.graphqlStrings.INPUT_FIELD_DEFINITION
+  - typings.graphql.graphqlStrings.SCHEMA
   - typings.graphql.graphqlStrings.ENUM
+  - typings.graphql.graphqlStrings.OBJECT
+  - typings.graphql.graphqlStrings.ARGUMENT_DEFINITION
+  - typings.graphql.graphqlStrings.VARIABLE_DEFINITION
+  - typings.graphql.graphqlStrings.SCALAR
+  - typings.graphql.graphqlStrings.SUBSCRIPTION
+  - typings.graphql.graphqlStrings.INPUT_OBJECT
+  - typings.graphql.graphqlStrings.QUERY
+  - typings.graphql.graphqlStrings.MUTATION
+  - typings.graphql.graphqlStrings.INTERFACE
+  - typings.graphql.graphqlStrings.FIELD
+  - typings.graphql.graphqlStrings.INLINE_FRAGMENT
   - typings.graphql.graphqlStrings.FRAGMENT_DEFINITION
   - typings.graphql.graphqlStrings.ENUM_VALUE
-  - typings.graphql.graphqlStrings.INPUT_FIELD_DEFINITION
-  - typings.graphql.graphqlStrings.OBJECT
-  - typings.graphql.graphqlStrings.INTERFACE
-  - typings.graphql.graphqlStrings.QUERY
-  - typings.graphql.graphqlStrings.SCALAR
-  - typings.graphql.graphqlStrings.SCHEMA
+  - typings.graphql.graphqlStrings.FIELD_DEFINITION
   - typings.graphql.graphqlStrings.FRAGMENT_SPREAD
-  - typings.graphql.graphqlStrings.SUBSCRIPTION
-  - typings.graphql.graphqlStrings.ARGUMENT_DEFINITION
 */
 trait DirectiveLocationEnum extends js.Object
 

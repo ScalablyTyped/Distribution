@@ -54,28 +54,58 @@ trait Step extends js.Object {
 
 object Step {
   @scala.inline
-  def apply(
-    endTime: EndTime,
-    startTime: StartTime,
-    status: JobStatus,
-    stepName: StepName,
-    artifactsUrl: ArtifactsUrl = null,
-    context: Context = null,
-    logUrl: LogUrl = null,
-    screenshots: Screenshots = null,
-    statusReason: StatusReason = null,
-    testArtifactsUrl: TestArtifactsUrl = null,
-    testConfigUrl: TestConfigUrl = null
-  ): Step = {
+  def apply(endTime: EndTime, startTime: StartTime, status: JobStatus, stepName: StepName): Step = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stepName = stepName.asInstanceOf[js.Any])
-    if (artifactsUrl != null) __obj.updateDynamic("artifactsUrl")(artifactsUrl.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl.asInstanceOf[js.Any])
-    if (screenshots != null) __obj.updateDynamic("screenshots")(screenshots.asInstanceOf[js.Any])
-    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
-    if (testArtifactsUrl != null) __obj.updateDynamic("testArtifactsUrl")(testArtifactsUrl.asInstanceOf[js.Any])
-    if (testConfigUrl != null) __obj.updateDynamic("testConfigUrl")(testConfigUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
+  @scala.inline
+  implicit class StepOps[Self <: Step] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: EndTime): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: StartTime): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStepName(value: StepName): Self = this.set("stepName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArtifactsUrl(value: ArtifactsUrl): Self = this.set("artifactsUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactsUrl: Self = this.set("artifactsUrl", js.undefined)
+    @scala.inline
+    def setContext(value: Context): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setLogUrl(value: LogUrl): Self = this.set("logUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUrl: Self = this.set("logUrl", js.undefined)
+    @scala.inline
+    def setScreenshots(value: Screenshots): Self = this.set("screenshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenshots: Self = this.set("screenshots", js.undefined)
+    @scala.inline
+    def setStatusReason(value: StatusReason): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    @scala.inline
+    def setTestArtifactsUrl(value: TestArtifactsUrl): Self = this.set("testArtifactsUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestArtifactsUrl: Self = this.set("testArtifactsUrl", js.undefined)
+    @scala.inline
+    def setTestConfigUrl(value: TestConfigUrl): Self = this.set("testConfigUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestConfigUrl: Self = this.set("testConfigUrl", js.undefined)
+  }
+  
 }
 

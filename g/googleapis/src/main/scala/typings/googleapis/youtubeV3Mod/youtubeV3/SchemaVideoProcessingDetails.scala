@@ -63,26 +63,54 @@ trait SchemaVideoProcessingDetails extends js.Object {
 
 object SchemaVideoProcessingDetails {
   @scala.inline
-  def apply(
-    editorSuggestionsAvailability: String = null,
-    fileDetailsAvailability: String = null,
-    processingFailureReason: String = null,
-    processingIssuesAvailability: String = null,
-    processingProgress: SchemaVideoProcessingDetailsProcessingProgress = null,
-    processingStatus: String = null,
-    tagSuggestionsAvailability: String = null,
-    thumbnailsAvailability: String = null
-  ): SchemaVideoProcessingDetails = {
+  def apply(): SchemaVideoProcessingDetails = {
     val __obj = js.Dynamic.literal()
-    if (editorSuggestionsAvailability != null) __obj.updateDynamic("editorSuggestionsAvailability")(editorSuggestionsAvailability.asInstanceOf[js.Any])
-    if (fileDetailsAvailability != null) __obj.updateDynamic("fileDetailsAvailability")(fileDetailsAvailability.asInstanceOf[js.Any])
-    if (processingFailureReason != null) __obj.updateDynamic("processingFailureReason")(processingFailureReason.asInstanceOf[js.Any])
-    if (processingIssuesAvailability != null) __obj.updateDynamic("processingIssuesAvailability")(processingIssuesAvailability.asInstanceOf[js.Any])
-    if (processingProgress != null) __obj.updateDynamic("processingProgress")(processingProgress.asInstanceOf[js.Any])
-    if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus.asInstanceOf[js.Any])
-    if (tagSuggestionsAvailability != null) __obj.updateDynamic("tagSuggestionsAvailability")(tagSuggestionsAvailability.asInstanceOf[js.Any])
-    if (thumbnailsAvailability != null) __obj.updateDynamic("thumbnailsAvailability")(thumbnailsAvailability.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoProcessingDetails]
   }
+  @scala.inline
+  implicit class SchemaVideoProcessingDetailsOps[Self <: SchemaVideoProcessingDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEditorSuggestionsAvailability(value: String): Self = this.set("editorSuggestionsAvailability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorSuggestionsAvailability: Self = this.set("editorSuggestionsAvailability", js.undefined)
+    @scala.inline
+    def setFileDetailsAvailability(value: String): Self = this.set("fileDetailsAvailability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileDetailsAvailability: Self = this.set("fileDetailsAvailability", js.undefined)
+    @scala.inline
+    def setProcessingFailureReason(value: String): Self = this.set("processingFailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingFailureReason: Self = this.set("processingFailureReason", js.undefined)
+    @scala.inline
+    def setProcessingIssuesAvailability(value: String): Self = this.set("processingIssuesAvailability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingIssuesAvailability: Self = this.set("processingIssuesAvailability", js.undefined)
+    @scala.inline
+    def setProcessingProgress(value: SchemaVideoProcessingDetailsProcessingProgress): Self = this.set("processingProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingProgress: Self = this.set("processingProgress", js.undefined)
+    @scala.inline
+    def setProcessingStatus(value: String): Self = this.set("processingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingStatus: Self = this.set("processingStatus", js.undefined)
+    @scala.inline
+    def setTagSuggestionsAvailability(value: String): Self = this.set("tagSuggestionsAvailability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSuggestionsAvailability: Self = this.set("tagSuggestionsAvailability", js.undefined)
+    @scala.inline
+    def setThumbnailsAvailability(value: String): Self = this.set("thumbnailsAvailability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailsAvailability: Self = this.set("thumbnailsAvailability", js.undefined)
+  }
+  
 }
 

@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExcludeOptions extends js.Object {
-  var toClassOnly: js.UndefOr[Boolean] = js.undefined
-  var toPlainOnly: js.UndefOr[Boolean] = js.undefined
+  var toClassOnly: js.UndefOr[Boolean] = js.native
+  var toPlainOnly: js.UndefOr[Boolean] = js.native
 }
 
 object ExcludeOptions {
   @scala.inline
-  def apply(toClassOnly: js.UndefOr[Boolean] = js.undefined, toPlainOnly: js.UndefOr[Boolean] = js.undefined): ExcludeOptions = {
+  def apply(): ExcludeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(toClassOnly)) __obj.updateDynamic("toClassOnly")(toClassOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(toPlainOnly)) __obj.updateDynamic("toPlainOnly")(toPlainOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcludeOptions]
   }
+  @scala.inline
+  implicit class ExcludeOptionsOps[Self <: ExcludeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setToClassOnly(value: Boolean): Self = this.set("toClassOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToClassOnly: Self = this.set("toClassOnly", js.undefined)
+    @scala.inline
+    def setToPlainOnly(value: Boolean): Self = this.set("toPlainOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToPlainOnly: Self = this.set("toPlainOnly", js.undefined)
+  }
+  
 }
 

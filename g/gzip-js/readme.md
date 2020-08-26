@@ -12,7 +12,7 @@ GZIP in pure JavaScript (works in the browser)
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 34 |
-| # downloads        | 417161 |
+| # downloads        | 421849 |
 | # stars            | 5 |
 
 ## Links

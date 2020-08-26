@@ -12,7 +12,7 @@ TypeScript definition for strtok3 token
 | Keywords           | token, interface, tokenizer, TypeScript |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 426373 |
+| # downloads        | 2471227 |
 | # stars            | 0 |
 
 ## Links

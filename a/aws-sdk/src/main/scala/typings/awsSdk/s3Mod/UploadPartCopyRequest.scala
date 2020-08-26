@@ -80,34 +80,81 @@ object UploadPartCopyRequest {
     CopySource: CopySource,
     Key: ObjectKey,
     PartNumber: PartNumber,
-    UploadId: MultipartUploadId,
-    CopySourceIfMatch: CopySourceIfMatch = null,
-    CopySourceIfModifiedSince: CopySourceIfModifiedSince = null,
-    CopySourceIfNoneMatch: CopySourceIfNoneMatch = null,
-    CopySourceIfUnmodifiedSince: CopySourceIfUnmodifiedSince = null,
-    CopySourceRange: CopySourceRange = null,
-    CopySourceSSECustomerAlgorithm: CopySourceSSECustomerAlgorithm = null,
-    CopySourceSSECustomerKey: CopySourceSSECustomerKey = null,
-    CopySourceSSECustomerKeyMD5: CopySourceSSECustomerKeyMD5 = null,
-    RequestPayer: RequestPayer = null,
-    SSECustomerAlgorithm: SSECustomerAlgorithm = null,
-    SSECustomerKey: SSECustomerKey = null,
-    SSECustomerKeyMD5: SSECustomerKeyMD5 = null
+    UploadId: MultipartUploadId
   ): UploadPartCopyRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], CopySource = CopySource.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], PartNumber = PartNumber.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
-    if (CopySourceIfMatch != null) __obj.updateDynamic("CopySourceIfMatch")(CopySourceIfMatch.asInstanceOf[js.Any])
-    if (CopySourceIfModifiedSince != null) __obj.updateDynamic("CopySourceIfModifiedSince")(CopySourceIfModifiedSince.asInstanceOf[js.Any])
-    if (CopySourceIfNoneMatch != null) __obj.updateDynamic("CopySourceIfNoneMatch")(CopySourceIfNoneMatch.asInstanceOf[js.Any])
-    if (CopySourceIfUnmodifiedSince != null) __obj.updateDynamic("CopySourceIfUnmodifiedSince")(CopySourceIfUnmodifiedSince.asInstanceOf[js.Any])
-    if (CopySourceRange != null) __obj.updateDynamic("CopySourceRange")(CopySourceRange.asInstanceOf[js.Any])
-    if (CopySourceSSECustomerAlgorithm != null) __obj.updateDynamic("CopySourceSSECustomerAlgorithm")(CopySourceSSECustomerAlgorithm.asInstanceOf[js.Any])
-    if (CopySourceSSECustomerKey != null) __obj.updateDynamic("CopySourceSSECustomerKey")(CopySourceSSECustomerKey.asInstanceOf[js.Any])
-    if (CopySourceSSECustomerKeyMD5 != null) __obj.updateDynamic("CopySourceSSECustomerKeyMD5")(CopySourceSSECustomerKeyMD5.asInstanceOf[js.Any])
-    if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
-    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])
-    if (SSECustomerKey != null) __obj.updateDynamic("SSECustomerKey")(SSECustomerKey.asInstanceOf[js.Any])
-    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPartCopyRequest]
   }
+  @scala.inline
+  implicit class UploadPartCopyRequestOps[Self <: UploadPartCopyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopySource(value: CopySource): Self = this.set("CopySource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPartNumber(value: PartNumber): Self = this.set("PartNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUploadId(value: MultipartUploadId): Self = this.set("UploadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopySourceIfMatch(value: CopySourceIfMatch): Self = this.set("CopySourceIfMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopySourceIfMatch: Self = this.set("CopySourceIfMatch", js.undefined)
+    @scala.inline
+    def setCopySourceIfModifiedSince(value: CopySourceIfModifiedSince): Self = this.set("CopySourceIfModifiedSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopySourceIfModifiedSince: Self = this.set("CopySourceIfModifiedSince", js.undefined)
+    @scala.inline
+    def setCopySourceIfNoneMatch(value: CopySourceIfNoneMatch): Self = this.set("CopySourceIfNoneMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopySourceIfNoneMatch: Self = this.set("CopySourceIfNoneMatch", js.undefined)
+    @scala.inline
+    def setCopySourceIfUnmodifiedSince(value: CopySourceIfUnmodifiedSince): Self = this.set("CopySourceIfUnmodifiedSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopySourceIfUnmodifiedSince: Self = this.set("CopySourceIfUnmodifiedSince", js.undefined)
+    @scala.inline
+    def setCopySourceRange(value: CopySourceRange): Self = this.set("CopySourceRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopySourceRange: Self = this.set("CopySourceRange", js.undefined)
+    @scala.inline
+    def setCopySourceSSECustomerAlgorithm(value: CopySourceSSECustomerAlgorithm): Self = this.set("CopySourceSSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopySourceSSECustomerAlgorithm: Self = this.set("CopySourceSSECustomerAlgorithm", js.undefined)
+    @scala.inline
+    def setCopySourceSSECustomerKey(value: CopySourceSSECustomerKey): Self = this.set("CopySourceSSECustomerKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopySourceSSECustomerKey: Self = this.set("CopySourceSSECustomerKey", js.undefined)
+    @scala.inline
+    def setCopySourceSSECustomerKeyMD5(value: CopySourceSSECustomerKeyMD5): Self = this.set("CopySourceSSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopySourceSSECustomerKeyMD5: Self = this.set("CopySourceSSECustomerKeyMD5", js.undefined)
+    @scala.inline
+    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    @scala.inline
+    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = this.set("SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerAlgorithm: Self = this.set("SSECustomerAlgorithm", js.undefined)
+    @scala.inline
+    def setSSECustomerKey(value: SSECustomerKey): Self = this.set("SSECustomerKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerKey: Self = this.set("SSECustomerKey", js.undefined)
+    @scala.inline
+    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = this.set("SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerKeyMD5: Self = this.set("SSECustomerKeyMD5", js.undefined)
+  }
+  
 }
 

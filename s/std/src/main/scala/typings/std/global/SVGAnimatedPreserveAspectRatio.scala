@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SVGAnimatedPreserveAspectRatio")
 @js.native
 class SVGAnimatedPreserveAspectRatio ()
-  extends typings.std.SVGAnimatedPreserveAspectRatio {
-  /* CompleteClass */
-  override val animVal: typings.std.SVGPreserveAspectRatio = js.native
-  /* CompleteClass */
-  override val baseVal: typings.std.SVGPreserveAspectRatio = js.native
-}
+  extends typings.std.SVGAnimatedPreserveAspectRatio
 
 @JSGlobal("SVGAnimatedPreserveAspectRatio")
 @js.native

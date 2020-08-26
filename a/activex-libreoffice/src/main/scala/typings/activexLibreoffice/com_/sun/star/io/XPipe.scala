@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * With the pipe-service, an outputstream can be converted into an input stream at the cost of an additional buffer.
   * @since LibreOffice 4.0
   */
+@js.native
 trait XPipe
   extends XOutputStream
      with XInputStream

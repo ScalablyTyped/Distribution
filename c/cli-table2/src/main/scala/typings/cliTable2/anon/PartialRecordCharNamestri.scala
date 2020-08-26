@@ -5,60 +5,103 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Record<cli-table2.cli-table2.CharName, string>> */
+@js.native
 trait PartialRecordCharNamestri extends js.Object {
-  var bottom: js.UndefOr[String] = js.undefined
-  var `bottom-left`: js.UndefOr[String] = js.undefined
-  var `bottom-mid`: js.UndefOr[String] = js.undefined
-  var `bottom-right`: js.UndefOr[String] = js.undefined
-  var left: js.UndefOr[String] = js.undefined
-  var `left-mid`: js.UndefOr[String] = js.undefined
-  var mid: js.UndefOr[String] = js.undefined
-  var `mid-mid`: js.UndefOr[String] = js.undefined
-  var middle: js.UndefOr[String] = js.undefined
-  var right: js.UndefOr[String] = js.undefined
-  var `right-mid`: js.UndefOr[String] = js.undefined
-  var top: js.UndefOr[String] = js.undefined
-  var `top-left`: js.UndefOr[String] = js.undefined
-  var `top-mid`: js.UndefOr[String] = js.undefined
-  var `top-right`: js.UndefOr[String] = js.undefined
+  var bottom: js.UndefOr[String] = js.native
+  var `bottom-left`: js.UndefOr[String] = js.native
+  var `bottom-mid`: js.UndefOr[String] = js.native
+  var `bottom-right`: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.native
+  var `left-mid`: js.UndefOr[String] = js.native
+  var mid: js.UndefOr[String] = js.native
+  var `mid-mid`: js.UndefOr[String] = js.native
+  var middle: js.UndefOr[String] = js.native
+  var right: js.UndefOr[String] = js.native
+  var `right-mid`: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.native
+  var `top-left`: js.UndefOr[String] = js.native
+  var `top-mid`: js.UndefOr[String] = js.native
+  var `top-right`: js.UndefOr[String] = js.native
 }
 
 object PartialRecordCharNamestri {
   @scala.inline
-  def apply(
-    bottom: String = null,
-    `bottom-left`: String = null,
-    `bottom-mid`: String = null,
-    `bottom-right`: String = null,
-    left: String = null,
-    `left-mid`: String = null,
-    mid: String = null,
-    `mid-mid`: String = null,
-    middle: String = null,
-    right: String = null,
-    `right-mid`: String = null,
-    top: String = null,
-    `top-left`: String = null,
-    `top-mid`: String = null,
-    `top-right`: String = null
-  ): PartialRecordCharNamestri = {
+  def apply(): PartialRecordCharNamestri = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (`bottom-left` != null) __obj.updateDynamic("bottom-left")(`bottom-left`.asInstanceOf[js.Any])
-    if (`bottom-mid` != null) __obj.updateDynamic("bottom-mid")(`bottom-mid`.asInstanceOf[js.Any])
-    if (`bottom-right` != null) __obj.updateDynamic("bottom-right")(`bottom-right`.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (`left-mid` != null) __obj.updateDynamic("left-mid")(`left-mid`.asInstanceOf[js.Any])
-    if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
-    if (`mid-mid` != null) __obj.updateDynamic("mid-mid")(`mid-mid`.asInstanceOf[js.Any])
-    if (middle != null) __obj.updateDynamic("middle")(middle.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (`right-mid` != null) __obj.updateDynamic("right-mid")(`right-mid`.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (`top-left` != null) __obj.updateDynamic("top-left")(`top-left`.asInstanceOf[js.Any])
-    if (`top-mid` != null) __obj.updateDynamic("top-mid")(`top-mid`.asInstanceOf[js.Any])
-    if (`top-right` != null) __obj.updateDynamic("top-right")(`top-right`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialRecordCharNamestri]
   }
+  @scala.inline
+  implicit class PartialRecordCharNamestriOps[Self <: PartialRecordCharNamestri] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBottom(value: String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def `setBottom-left`(value: String): Self = this.set("bottom-left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBottom-left`: Self = this.set("bottom-left", js.undefined)
+    @scala.inline
+    def `setBottom-mid`(value: String): Self = this.set("bottom-mid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBottom-mid`: Self = this.set("bottom-mid", js.undefined)
+    @scala.inline
+    def `setBottom-right`(value: String): Self = this.set("bottom-right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBottom-right`: Self = this.set("bottom-right", js.undefined)
+    @scala.inline
+    def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def `setLeft-mid`(value: String): Self = this.set("left-mid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteLeft-mid`: Self = this.set("left-mid", js.undefined)
+    @scala.inline
+    def setMid(value: String): Self = this.set("mid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMid: Self = this.set("mid", js.undefined)
+    @scala.inline
+    def `setMid-mid`(value: String): Self = this.set("mid-mid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteMid-mid`: Self = this.set("mid-mid", js.undefined)
+    @scala.inline
+    def setMiddle(value: String): Self = this.set("middle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiddle: Self = this.set("middle", js.undefined)
+    @scala.inline
+    def setRight(value: String): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def `setRight-mid`(value: String): Self = this.set("right-mid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteRight-mid`: Self = this.set("right-mid", js.undefined)
+    @scala.inline
+    def setTop(value: String): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def `setTop-left`(value: String): Self = this.set("top-left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteTop-left`: Self = this.set("top-left", js.undefined)
+    @scala.inline
+    def `setTop-mid`(value: String): Self = this.set("top-mid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteTop-mid`: Self = this.set("top-mid", js.undefined)
+    @scala.inline
+    def `setTop-right`(value: String): Self = this.set("top-right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteTop-right`: Self = this.set("top-right", js.undefined)
+  }
+  
 }
 

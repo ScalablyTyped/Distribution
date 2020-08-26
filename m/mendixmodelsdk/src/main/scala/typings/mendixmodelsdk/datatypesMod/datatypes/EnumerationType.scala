@@ -72,8 +72,8 @@ class EnumerationType protected () extends DataType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MEnumerationType: MicroflowParameterBase = js.native
   def enumeration: IEnumeration = js.native
-  def enumeration(newValue: IEnumeration): js.Any = js.native
   def enumerationQualifiedName: String = js.native
+  def enumeration_=(newValue: IEnumeration): Unit = js.native
 }
 
 /* static members */

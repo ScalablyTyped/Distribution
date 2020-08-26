@@ -68,22 +68,46 @@ trait SchemaHttpTarget extends js.Object {
 
 object SchemaHttpTarget {
   @scala.inline
-  def apply(
-    body: String = null,
-    headers: StringDictionary[String] = null,
-    httpMethod: String = null,
-    oauthToken: SchemaOAuthToken = null,
-    oidcToken: SchemaOidcToken = null,
-    uri: String = null
-  ): SchemaHttpTarget = {
+  def apply(): SchemaHttpTarget = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    if (oauthToken != null) __obj.updateDynamic("oauthToken")(oauthToken.asInstanceOf[js.Any])
-    if (oidcToken != null) __obj.updateDynamic("oidcToken")(oidcToken.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpTarget]
   }
+  @scala.inline
+  implicit class SchemaHttpTargetOps[Self <: SchemaHttpTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    @scala.inline
+    def setOauthToken(value: SchemaOAuthToken): Self = this.set("oauthToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthToken: Self = this.set("oauthToken", js.undefined)
+    @scala.inline
+    def setOidcToken(value: SchemaOidcToken): Self = this.set("oidcToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOidcToken: Self = this.set("oidcToken", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

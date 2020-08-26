@@ -32,6 +32,7 @@ trait Call extends js.Object {
   def apply(methodName: blur): Unit = js.native
   def apply(methodName: collapse): Unit = js.native
   def apply(methodName: collapseAll): Unit = js.native
+  def apply(methodName: collapseAll, event: js.UndefOr[scala.Nothing], all: Boolean): Unit = js.native
   def apply(methodName: collapseAll, event: JQueryEventObject): Unit = js.native
   def apply(methodName: collapseAll, event: JQueryEventObject, all: Boolean): Unit = js.native
   def apply(methodName: collapse, event: JQueryEventObject): Unit = js.native

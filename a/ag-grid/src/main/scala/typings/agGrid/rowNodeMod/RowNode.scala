@@ -165,6 +165,7 @@ class RowNode () extends IEventEmitter {
   def setRowSelectable(newVal: Boolean): Unit = js.native
   def setRowTop(rowTop: Double): Unit = js.native
   def setSelected(newValue: Boolean): Unit = js.native
+  def setSelected(newValue: Boolean, clearSelection: js.UndefOr[scala.Nothing], suppressFinishActions: Boolean): Unit = js.native
   def setSelected(newValue: Boolean, clearSelection: Boolean): Unit = js.native
   def setSelected(newValue: Boolean, clearSelection: Boolean, suppressFinishActions: Boolean): Unit = js.native
   def setSelectedInitialValue(selected: Boolean): Unit = js.native

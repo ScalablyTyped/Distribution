@@ -18,6 +18,12 @@ object pulumiAwsCloudwatchEventRuleAugmentingMod extends js.Object {
       * with options to control the behavior of the subscription.
       */
     def onEvent(name: String, handler: EventRuleEventHandler): typings.pulumiAws.eventRuleMixinsMod.EventRuleEventSubscription = js.native
+    def onEvent(
+      name: String,
+      handler: EventRuleEventHandler,
+      args: js.UndefOr[scala.Nothing],
+      opts: ComponentResourceOptions
+    ): typings.pulumiAws.eventRuleMixinsMod.EventRuleEventSubscription = js.native
     def onEvent(name: String, handler: EventRuleEventHandler, args: EventRuleEventSubscriptionArgs): typings.pulumiAws.eventRuleMixinsMod.EventRuleEventSubscription = js.native
     def onEvent(
       name: String,

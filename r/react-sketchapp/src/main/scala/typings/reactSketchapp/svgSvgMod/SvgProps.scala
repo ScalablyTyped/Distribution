@@ -1,50 +1,58 @@
 package typings.reactSketchapp.svgSvgMod
 
-import typings.react.mod.ReactNode
-import typings.reactSketchapp.mod.Style
-import typings.reactSketchapp.mod.StyleReference
 import typings.reactSketchapp.mod.ViewProps
-import typings.reactSketchapp.typesMod.ResizeConstraints
-import typings.reactSketchapp.typesMod.SketchShadow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SvgProps extends ViewProps {
-  var height: js.UndefOr[String | Double] = js.undefined
-  var opacity: js.UndefOr[String | Double] = js.undefined
-  var preserveAspectRatio: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String | Double] = js.native
+  var opacity: js.UndefOr[String | Double] = js.native
+  var preserveAspectRatio: js.UndefOr[String] = js.native
   // more detail https://svgwg.org/svg2-draft/coords.html#ViewBoxAttribute
-  var viewBox: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[String | Double] = js.undefined
+  var viewBox: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String | Double] = js.native
 }
 
 object SvgProps {
   @scala.inline
-  def apply(
-    children: js.Array[ReactNode] | ReactNode = null,
-    height: String | Double = null,
-    name: String = null,
-    opacity: String | Double = null,
-    preserveAspectRatio: String = null,
-    resizingConstraint: ResizeConstraints = null,
-    shadows: js.Array[SketchShadow] = null,
-    style: Style | StyleReference = null,
-    viewBox: String = null,
-    width: String | Double = null
-  ): SvgProps = {
+  def apply(): SvgProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
-    if (resizingConstraint != null) __obj.updateDynamic("resizingConstraint")(resizingConstraint.asInstanceOf[js.Any])
-    if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgProps]
   }
+  @scala.inline
+  implicit class SvgPropsOps[Self <: SvgProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOpacity(value: String | Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPreserveAspectRatio(value: String): Self = this.set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveAspectRatio: Self = this.set("preserveAspectRatio", js.undefined)
+    @scala.inline
+    def setViewBox(value: String): Self = this.set("viewBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewBox: Self = this.set("viewBox", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

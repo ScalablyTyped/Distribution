@@ -9,15 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Creates a UsbDeviceClass object. */
 class UsbDeviceClass ()
-  extends typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass {
-  /** Gets or sets the class code of the device. */
-  /* CompleteClass */
-  override var classCode: Double = js.native
-  /** Gets or sets the protocol code of the device. */
-  /* CompleteClass */
-  override var protocolCode: Double = js.native
-  /** Gets or sets the subclass code of the device. */
-  /* CompleteClass */
-  override var subclassCode: Double = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass
 

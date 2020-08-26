@@ -1,58 +1,63 @@
 package typings.klaw.mod
 
-import typings.node.BufferEncoding
-import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends ReadableOptions {
-  var depthLimit: js.UndefOr[Double] = js.undefined
+  var depthLimit: js.UndefOr[Double] = js.native
   // fs or mock-fs
-  var filter: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.undefined
-  var fs: js.UndefOr[js.Any] = js.undefined
-  var pathSorter: js.UndefOr[js.Function2[/* pathA */ String, /* pathB */ String, Double]] = js.undefined
-  var preserveSymlinks: js.UndefOr[Boolean] = js.undefined
-  var queueMethod: js.UndefOr[QueueMethod] = js.undefined
+  var filter: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.native
+  var fs: js.UndefOr[js.Any] = js.native
+  var pathSorter: js.UndefOr[js.Function2[/* pathA */ String, /* pathB */ String, Double]] = js.native
+  var preserveSymlinks: js.UndefOr[Boolean] = js.native
+  var queueMethod: js.UndefOr[QueueMethod] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    autoDestroy: js.UndefOr[Boolean] = js.undefined,
-    depthLimit: js.UndefOr[Double] = js.undefined,
-    destroy: js.ThisFunction2[
-      /* this */ Readable, 
-      /* error */ Error | Null, 
-      /* callback */ js.Function1[/* error */ Error | Null, Unit], 
-      Unit
-    ] = null,
-    encoding: BufferEncoding = null,
-    filter: /* path */ String => Boolean = null,
-    fs: js.Any = null,
-    highWaterMark: js.UndefOr[Double] = js.undefined,
-    objectMode: js.UndefOr[Boolean] = js.undefined,
-    pathSorter: (/* pathA */ String, /* pathB */ String) => Double = null,
-    preserveSymlinks: js.UndefOr[Boolean] = js.undefined,
-    queueMethod: QueueMethod = null,
-    read: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit] = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(depthLimit)) __obj.updateDynamic("depthLimit")(depthLimit.get.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
-    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
-    if (pathSorter != null) __obj.updateDynamic("pathSorter")(js.Any.fromFunction2(pathSorter))
-    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.get.asInstanceOf[js.Any])
-    if (queueMethod != null) __obj.updateDynamic("queueMethod")(queueMethod.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDepthLimit(value: Double): Self = this.set("depthLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepthLimit: Self = this.set("depthLimit", js.undefined)
+    @scala.inline
+    def setFilter(value: /* path */ String => Boolean): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFs(value: js.Any): Self = this.set("fs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFs: Self = this.set("fs", js.undefined)
+    @scala.inline
+    def setPathSorter(value: (/* pathA */ String, /* pathB */ String) => Double): Self = this.set("pathSorter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePathSorter: Self = this.set("pathSorter", js.undefined)
+    @scala.inline
+    def setPreserveSymlinks(value: Boolean): Self = this.set("preserveSymlinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveSymlinks: Self = this.set("preserveSymlinks", js.undefined)
+    @scala.inline
+    def setQueueMethod(value: QueueMethod): Self = this.set("queueMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueueMethod: Self = this.set("queueMethod", js.undefined)
+  }
+  
 }
 

@@ -15,9 +15,11 @@ trait Handle extends MissingFieldHandler {
   var kind: scalar = js.native
   def handle(
     field: NormalizationScalarField,
-    record: js.UndefOr[Null | Record],
+    record: js.UndefOr[scala.Nothing],
     args: Variables,
     store: ReadOnlyRecordSourceProxy
   ): js.Any = js.native
+  def handle(field: NormalizationScalarField, record: Null, args: Variables, store: ReadOnlyRecordSourceProxy): js.Any = js.native
+  def handle(field: NormalizationScalarField, record: Record, args: Variables, store: ReadOnlyRecordSourceProxy): js.Any = js.native
 }
 

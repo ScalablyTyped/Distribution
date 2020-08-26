@@ -42,26 +42,54 @@ trait Datapoint extends js.Object {
 
 object Datapoint {
   @scala.inline
-  def apply(
-    Average: js.UndefOr[DatapointValue] = js.undefined,
-    ExtendedStatistics: DatapointValueMap = null,
-    Maximum: js.UndefOr[DatapointValue] = js.undefined,
-    Minimum: js.UndefOr[DatapointValue] = js.undefined,
-    SampleCount: js.UndefOr[DatapointValue] = js.undefined,
-    Sum: js.UndefOr[DatapointValue] = js.undefined,
-    Timestamp: Timestamp = null,
-    Unit: StandardUnit = null
-  ): Datapoint = {
+  def apply(): Datapoint = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Average)) __obj.updateDynamic("Average")(Average.get.asInstanceOf[js.Any])
-    if (ExtendedStatistics != null) __obj.updateDynamic("ExtendedStatistics")(ExtendedStatistics.asInstanceOf[js.Any])
-    if (!js.isUndefined(Maximum)) __obj.updateDynamic("Maximum")(Maximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Minimum)) __obj.updateDynamic("Minimum")(Minimum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SampleCount)) __obj.updateDynamic("SampleCount")(SampleCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sum)) __obj.updateDynamic("Sum")(Sum.get.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Datapoint]
   }
+  @scala.inline
+  implicit class DatapointOps[Self <: Datapoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAverage(value: DatapointValue): Self = this.set("Average", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverage: Self = this.set("Average", js.undefined)
+    @scala.inline
+    def setExtendedStatistics(value: DatapointValueMap): Self = this.set("ExtendedStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedStatistics: Self = this.set("ExtendedStatistics", js.undefined)
+    @scala.inline
+    def setMaximum(value: DatapointValue): Self = this.set("Maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("Maximum", js.undefined)
+    @scala.inline
+    def setMinimum(value: DatapointValue): Self = this.set("Minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("Minimum", js.undefined)
+    @scala.inline
+    def setSampleCount(value: DatapointValue): Self = this.set("SampleCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleCount: Self = this.set("SampleCount", js.undefined)
+    @scala.inline
+    def setSum(value: DatapointValue): Self = this.set("Sum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSum: Self = this.set("Sum", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    @scala.inline
+    def setUnit(value: StandardUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+  }
+  
 }
 

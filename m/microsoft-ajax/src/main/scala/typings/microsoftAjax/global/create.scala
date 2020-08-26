@@ -28,8 +28,76 @@ object create extends js.Object {
   * @returns A new instance of a component that uses the specified parameters.
   */
   def apply(`type`: typings.microsoftAjax.Type): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.UndefOr[scala.Nothing],
+    events: js.UndefOr[scala.Nothing],
+    references: js.UndefOr[scala.Nothing],
+    element: HTMLElement
+  ): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.UndefOr[scala.Nothing],
+    events: js.UndefOr[scala.Nothing],
+    references: js.Any
+  ): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.UndefOr[scala.Nothing],
+    events: js.UndefOr[scala.Nothing],
+    references: js.Any,
+    element: HTMLElement
+  ): Component = js.native
+  def apply(`type`: typings.microsoftAjax.Type, properties: js.UndefOr[scala.Nothing], events: js.Any): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.UndefOr[scala.Nothing],
+    events: js.Any,
+    references: js.UndefOr[scala.Nothing],
+    element: HTMLElement
+  ): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.UndefOr[scala.Nothing],
+    events: js.Any,
+    references: js.Any
+  ): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.UndefOr[scala.Nothing],
+    events: js.Any,
+    references: js.Any,
+    element: HTMLElement
+  ): Component = js.native
   def apply(`type`: typings.microsoftAjax.Type, properties: js.Any): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.Any,
+    events: js.UndefOr[scala.Nothing],
+    references: js.UndefOr[scala.Nothing],
+    element: HTMLElement
+  ): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.Any,
+    events: js.UndefOr[scala.Nothing],
+    references: js.Any
+  ): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.Any,
+    events: js.UndefOr[scala.Nothing],
+    references: js.Any,
+    element: HTMLElement
+  ): Component = js.native
   def apply(`type`: typings.microsoftAjax.Type, properties: js.Any, events: js.Any): Component = js.native
+  def apply(
+    `type`: typings.microsoftAjax.Type,
+    properties: js.Any,
+    events: js.Any,
+    references: js.UndefOr[scala.Nothing],
+    element: HTMLElement
+  ): Component = js.native
   def apply(`type`: typings.microsoftAjax.Type, properties: js.Any, events: js.Any, references: js.Any): Component = js.native
   def apply(
     `type`: typings.microsoftAjax.Type,

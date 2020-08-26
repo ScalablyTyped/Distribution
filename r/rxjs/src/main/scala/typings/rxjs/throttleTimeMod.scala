@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object throttleTimeMod extends js.Object {
   def throttleTime[T](duration: Double): MonoTypeOperatorFunction[T] = js.native
+  def throttleTime[T](duration: Double, scheduler: js.UndefOr[scala.Nothing], config: ThrottleConfig): MonoTypeOperatorFunction[T] = js.native
   def throttleTime[T](duration: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def throttleTime[T](duration: Double, scheduler: SchedulerLike, config: ThrottleConfig): MonoTypeOperatorFunction[T] = js.native
 }

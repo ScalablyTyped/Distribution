@@ -12,7 +12,7 @@ HTTP Auth Interceptor Module for AngularJS.
 | Keywords           | angular, auth |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 73432 |
+| # downloads        | 75793 |
 | # stars            | 0 |
 
 ## Links

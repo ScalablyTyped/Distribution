@@ -26,5 +26,24 @@ object Condition {
     val __obj = js.Dynamic.literal(ConditionKey = ConditionKey.asInstanceOf[js.Any], ConditionType = ConditionType.asInstanceOf[js.Any], ConditionValue = ConditionValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
   }
+  @scala.inline
+  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionKey(value: ConditionKey): Self = this.set("ConditionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConditionType(value: ConditionType): Self = this.set("ConditionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConditionValue(value: ConditionValue): Self = this.set("ConditionValue", value.asInstanceOf[js.Any])
+  }
+  
 }
 

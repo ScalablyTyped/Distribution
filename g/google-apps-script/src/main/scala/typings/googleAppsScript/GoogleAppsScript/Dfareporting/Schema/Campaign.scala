@@ -4,99 +4,178 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Campaign extends js.Object {
-  var accountId: js.UndefOr[String] = js.undefined
-  var adBlockingConfiguration: js.UndefOr[AdBlockingConfiguration] = js.undefined
-  var additionalCreativeOptimizationConfigurations: js.UndefOr[js.Array[CreativeOptimizationConfiguration]] = js.undefined
-  var advertiserGroupId: js.UndefOr[String] = js.undefined
-  var advertiserId: js.UndefOr[String] = js.undefined
-  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  var archived: js.UndefOr[Boolean] = js.undefined
-  var audienceSegmentGroups: js.UndefOr[js.Array[AudienceSegmentGroup]] = js.undefined
-  var billingInvoiceCode: js.UndefOr[String] = js.undefined
-  var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.undefined
-  var comment: js.UndefOr[String] = js.undefined
-  var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
-  var creativeGroupIds: js.UndefOr[js.Array[String]] = js.undefined
-  var creativeOptimizationConfiguration: js.UndefOr[CreativeOptimizationConfiguration] = js.undefined
-  var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.undefined
-  var defaultLandingPageId: js.UndefOr[String] = js.undefined
-  var endDate: js.UndefOr[String] = js.undefined
-  var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.undefined
-  var externalId: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var nielsenOcrEnabled: js.UndefOr[Boolean] = js.undefined
-  var startDate: js.UndefOr[String] = js.undefined
-  var subaccountId: js.UndefOr[String] = js.undefined
-  var traffickerEmails: js.UndefOr[js.Array[String]] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
+  var adBlockingConfiguration: js.UndefOr[AdBlockingConfiguration] = js.native
+  var additionalCreativeOptimizationConfigurations: js.UndefOr[js.Array[CreativeOptimizationConfiguration]] = js.native
+  var advertiserGroupId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var archived: js.UndefOr[Boolean] = js.native
+  var audienceSegmentGroups: js.UndefOr[js.Array[AudienceSegmentGroup]] = js.native
+  var billingInvoiceCode: js.UndefOr[String] = js.native
+  var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.native
+  var comment: js.UndefOr[String] = js.native
+  var createInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var creativeGroupIds: js.UndefOr[js.Array[String]] = js.native
+  var creativeOptimizationConfiguration: js.UndefOr[CreativeOptimizationConfiguration] = js.native
+  var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.native
+  var defaultLandingPageId: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.native
+  var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.native
+  var externalId: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var name: js.UndefOr[String] = js.native
+  var nielsenOcrEnabled: js.UndefOr[Boolean] = js.native
+  var startDate: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.native
+  var traffickerEmails: js.UndefOr[js.Array[String]] = js.native
 }
 
 object Campaign {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    adBlockingConfiguration: AdBlockingConfiguration = null,
-    additionalCreativeOptimizationConfigurations: js.Array[CreativeOptimizationConfiguration] = null,
-    advertiserGroupId: String = null,
-    advertiserId: String = null,
-    advertiserIdDimensionValue: DimensionValue = null,
-    archived: js.UndefOr[Boolean] = js.undefined,
-    audienceSegmentGroups: js.Array[AudienceSegmentGroup] = null,
-    billingInvoiceCode: String = null,
-    clickThroughUrlSuffixProperties: ClickThroughUrlSuffixProperties = null,
-    comment: String = null,
-    createInfo: LastModifiedInfo = null,
-    creativeGroupIds: js.Array[String] = null,
-    creativeOptimizationConfiguration: CreativeOptimizationConfiguration = null,
-    defaultClickThroughEventTagProperties: DefaultClickThroughEventTagProperties = null,
-    defaultLandingPageId: String = null,
-    endDate: String = null,
-    eventTagOverrides: js.Array[EventTagOverride] = null,
-    externalId: String = null,
-    id: String = null,
-    idDimensionValue: DimensionValue = null,
-    kind: String = null,
-    lastModifiedInfo: LastModifiedInfo = null,
-    name: String = null,
-    nielsenOcrEnabled: js.UndefOr[Boolean] = js.undefined,
-    startDate: String = null,
-    subaccountId: String = null,
-    traffickerEmails: js.Array[String] = null
-  ): Campaign = {
+  def apply(): Campaign = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (adBlockingConfiguration != null) __obj.updateDynamic("adBlockingConfiguration")(adBlockingConfiguration.asInstanceOf[js.Any])
-    if (additionalCreativeOptimizationConfigurations != null) __obj.updateDynamic("additionalCreativeOptimizationConfigurations")(additionalCreativeOptimizationConfigurations.asInstanceOf[js.Any])
-    if (advertiserGroupId != null) __obj.updateDynamic("advertiserGroupId")(advertiserGroupId.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (audienceSegmentGroups != null) __obj.updateDynamic("audienceSegmentGroups")(audienceSegmentGroups.asInstanceOf[js.Any])
-    if (billingInvoiceCode != null) __obj.updateDynamic("billingInvoiceCode")(billingInvoiceCode.asInstanceOf[js.Any])
-    if (clickThroughUrlSuffixProperties != null) __obj.updateDynamic("clickThroughUrlSuffixProperties")(clickThroughUrlSuffixProperties.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (createInfo != null) __obj.updateDynamic("createInfo")(createInfo.asInstanceOf[js.Any])
-    if (creativeGroupIds != null) __obj.updateDynamic("creativeGroupIds")(creativeGroupIds.asInstanceOf[js.Any])
-    if (creativeOptimizationConfiguration != null) __obj.updateDynamic("creativeOptimizationConfiguration")(creativeOptimizationConfiguration.asInstanceOf[js.Any])
-    if (defaultClickThroughEventTagProperties != null) __obj.updateDynamic("defaultClickThroughEventTagProperties")(defaultClickThroughEventTagProperties.asInstanceOf[js.Any])
-    if (defaultLandingPageId != null) __obj.updateDynamic("defaultLandingPageId")(defaultLandingPageId.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (eventTagOverrides != null) __obj.updateDynamic("eventTagOverrides")(eventTagOverrides.asInstanceOf[js.Any])
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastModifiedInfo != null) __obj.updateDynamic("lastModifiedInfo")(lastModifiedInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(nielsenOcrEnabled)) __obj.updateDynamic("nielsenOcrEnabled")(nielsenOcrEnabled.get.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (traffickerEmails != null) __obj.updateDynamic("traffickerEmails")(traffickerEmails.asInstanceOf[js.Any])
     __obj.asInstanceOf[Campaign]
   }
+  @scala.inline
+  implicit class CampaignOps[Self <: Campaign] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdBlockingConfiguration(value: AdBlockingConfiguration): Self = this.set("adBlockingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdBlockingConfiguration: Self = this.set("adBlockingConfiguration", js.undefined)
+    @scala.inline
+    def setAdditionalCreativeOptimizationConfigurationsVarargs(value: CreativeOptimizationConfiguration*): Self = this.set("additionalCreativeOptimizationConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalCreativeOptimizationConfigurations(value: js.Array[CreativeOptimizationConfiguration]): Self = this.set("additionalCreativeOptimizationConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalCreativeOptimizationConfigurations: Self = this.set("additionalCreativeOptimizationConfigurations", js.undefined)
+    @scala.inline
+    def setAdvertiserGroupId(value: String): Self = this.set("advertiserGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserGroupId: Self = this.set("advertiserGroupId", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setAudienceSegmentGroupsVarargs(value: AudienceSegmentGroup*): Self = this.set("audienceSegmentGroups", js.Array(value :_*))
+    @scala.inline
+    def setAudienceSegmentGroups(value: js.Array[AudienceSegmentGroup]): Self = this.set("audienceSegmentGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudienceSegmentGroups: Self = this.set("audienceSegmentGroups", js.undefined)
+    @scala.inline
+    def setBillingInvoiceCode(value: String): Self = this.set("billingInvoiceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingInvoiceCode: Self = this.set("billingInvoiceCode", js.undefined)
+    @scala.inline
+    def setClickThroughUrlSuffixProperties(value: ClickThroughUrlSuffixProperties): Self = this.set("clickThroughUrlSuffixProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickThroughUrlSuffixProperties: Self = this.set("clickThroughUrlSuffixProperties", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setCreateInfo(value: LastModifiedInfo): Self = this.set("createInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateInfo: Self = this.set("createInfo", js.undefined)
+    @scala.inline
+    def setCreativeGroupIdsVarargs(value: String*): Self = this.set("creativeGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setCreativeGroupIds(value: js.Array[String]): Self = this.set("creativeGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeGroupIds: Self = this.set("creativeGroupIds", js.undefined)
+    @scala.inline
+    def setCreativeOptimizationConfiguration(value: CreativeOptimizationConfiguration): Self = this.set("creativeOptimizationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeOptimizationConfiguration: Self = this.set("creativeOptimizationConfiguration", js.undefined)
+    @scala.inline
+    def setDefaultClickThroughEventTagProperties(value: DefaultClickThroughEventTagProperties): Self = this.set("defaultClickThroughEventTagProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultClickThroughEventTagProperties: Self = this.set("defaultClickThroughEventTagProperties", js.undefined)
+    @scala.inline
+    def setDefaultLandingPageId(value: String): Self = this.set("defaultLandingPageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLandingPageId: Self = this.set("defaultLandingPageId", js.undefined)
+    @scala.inline
+    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setEventTagOverridesVarargs(value: EventTagOverride*): Self = this.set("eventTagOverrides", js.Array(value :_*))
+    @scala.inline
+    def setEventTagOverrides(value: js.Array[EventTagOverride]): Self = this.set("eventTagOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTagOverrides: Self = this.set("eventTagOverrides", js.undefined)
+    @scala.inline
+    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: DimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastModifiedInfo(value: LastModifiedInfo): Self = this.set("lastModifiedInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedInfo: Self = this.set("lastModifiedInfo", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNielsenOcrEnabled(value: Boolean): Self = this.set("nielsenOcrEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNielsenOcrEnabled: Self = this.set("nielsenOcrEnabled", js.undefined)
+    @scala.inline
+    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setTraffickerEmailsVarargs(value: String*): Self = this.set("traffickerEmails", js.Array(value :_*))
+    @scala.inline
+    def setTraffickerEmails(value: js.Array[String]): Self = this.set("traffickerEmails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraffickerEmails: Self = this.set("traffickerEmails", js.undefined)
+  }
+  
 }
 

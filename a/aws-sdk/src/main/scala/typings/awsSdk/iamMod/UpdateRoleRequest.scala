@@ -22,15 +22,32 @@ trait UpdateRoleRequest extends js.Object {
 
 object UpdateRoleRequest {
   @scala.inline
-  def apply(
-    RoleName: roleNameType,
-    Description: roleDescriptionType = null,
-    MaxSessionDuration: js.UndefOr[roleMaxSessionDurationType] = js.undefined
-  ): UpdateRoleRequest = {
+  def apply(RoleName: roleNameType): UpdateRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxSessionDuration)) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoleRequest]
   }
+  @scala.inline
+  implicit class UpdateRoleRequestOps[Self <: UpdateRoleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoleName(value: roleNameType): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: roleDescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setMaxSessionDuration(value: roleMaxSessionDurationType): Self = this.set("MaxSessionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSessionDuration: Self = this.set("MaxSessionDuration", js.undefined)
+  }
+  
 }
 

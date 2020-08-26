@@ -43,7 +43,7 @@ object cloudfunctionsMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Cloudfunctions
               ]
             ]
@@ -53,7 +53,7 @@ object cloudfunctionsMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions
               ]
             ]

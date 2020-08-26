@@ -25,7 +25,17 @@ class GUI () extends js.Object {
   def add(target: js.Object, propName: String): GUIController = js.native
   def add(target: js.Object, propName: String, items: js.Array[Double | String]): GUIController = js.native
   def add(target: js.Object, propName: String, items: js.Object): GUIController = js.native
+  def add(
+    target: js.Object,
+    propName: String,
+    min: js.UndefOr[scala.Nothing],
+    max: js.UndefOr[scala.Nothing],
+    step: Double
+  ): GUIController = js.native
+  def add(target: js.Object, propName: String, min: js.UndefOr[scala.Nothing], max: Double): GUIController = js.native
+  def add(target: js.Object, propName: String, min: js.UndefOr[scala.Nothing], max: Double, step: Double): GUIController = js.native
   def add(target: js.Object, propName: String, min: Double): GUIController = js.native
+  def add(target: js.Object, propName: String, min: Double, max: js.UndefOr[scala.Nothing], step: Double): GUIController = js.native
   def add(target: js.Object, propName: String, min: Double, max: Double): GUIController = js.native
   def add(target: js.Object, propName: String, min: Double, max: Double, step: Double): GUIController = js.native
   def add(target: js.Object, propName: String, status: Boolean): GUIController = js.native

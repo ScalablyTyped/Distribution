@@ -17,22 +17,46 @@ trait PartialTypeAction extends js.Object {
 
 object PartialTypeAction {
   @scala.inline
-  def apply(
-    active: String = null,
-    disabled: String = null,
-    disabledBackground: String = null,
-    hover: String = null,
-    hoverOpacity: js.UndefOr[Double] = js.undefined,
-    selected: String = null
-  ): PartialTypeAction = {
+  def apply(): PartialTypeAction = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledBackground != null) __obj.updateDynamic("disabledBackground")(disabledBackground.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverOpacity)) __obj.updateDynamic("hoverOpacity")(hoverOpacity.get.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTypeAction]
   }
+  @scala.inline
+  implicit class PartialTypeActionOps[Self <: PartialTypeAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisabledBackground(value: String): Self = this.set("disabledBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledBackground: Self = this.set("disabledBackground", js.undefined)
+    @scala.inline
+    def setHover(value: String): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+    @scala.inline
+    def setHoverOpacity(value: Double): Self = this.set("hoverOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverOpacity: Self = this.set("hoverOpacity", js.undefined)
+    @scala.inline
+    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+  }
+  
 }
 

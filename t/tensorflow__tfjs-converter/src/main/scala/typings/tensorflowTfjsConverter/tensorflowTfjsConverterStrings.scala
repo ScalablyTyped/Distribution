@@ -44,6 +44,9 @@ object tensorflowTfjsConverterStrings {
   sealed trait evaluation extends Category
   
   @js.native
+  sealed trait func extends ParamType
+  
+  @js.native
   sealed trait graph extends Category
   
   @js.native
@@ -118,6 +121,8 @@ object tensorflowTfjsConverterStrings {
   def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
   @scala.inline
   def evaluation: evaluation = "evaluation".asInstanceOf[evaluation]
+  @scala.inline
+  def func: func = "func".asInstanceOf[func]
   @scala.inline
   def graph: graph = "graph".asInstanceOf[graph]
   @scala.inline

@@ -37,6 +37,7 @@ class Text protected ()
   def this(text: String) = this()
   def this(text: String, style: js.Any) = this()
   def this(text: String, style: typings.pixiJs.PIXI.TextStyle) = this()
+  def this(text: String, style: js.UndefOr[scala.Nothing], canvas: HTMLCanvasElement) = this()
   def this(text: String, style: js.Any, canvas: HTMLCanvasElement) = this()
   def this(text: String, style: typings.pixiJs.PIXI.TextStyle, canvas: HTMLCanvasElement) = this()
 }

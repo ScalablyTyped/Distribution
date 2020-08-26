@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("grpc", "InterceptingCall")
 @js.native
+/**
+  * @param next_Call The next call in the chain
+  * @param requester Interceptor methods to handle request
+  */
 class InterceptingCall () extends js.Object {
-  /**
-    * @param next_Call The next call in the chain
-    * @param requester Interceptor methods to handle request
-    */
   def this(nextCall: InterceptingCall) = this()
   def this(nextCall: Null, requester: Requester) = this()
   def this(nextCall: InterceptingCall, requester: Requester) = this()

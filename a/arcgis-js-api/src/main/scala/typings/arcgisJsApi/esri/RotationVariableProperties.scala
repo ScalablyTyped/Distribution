@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RotationVariableProperties extends VisualVariableProperties {
   /**
     * Only applicable when working in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Defines the axis the rotation visual variable should be applied to when rendering features with an [ObjectSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html).  If the symbol resource is aligned such that its forward facing side points in the direction of the y-axis (the y-axis always points North in WGS84 or WebMercator coordinates), its upwards facing side is pointing in the direction of the z-axis, and its right-hand side points in the direction of the x-axis (the x-axis always points East in WGS84 or WebMercator coordinates), then the following rotation axis will rotate the symbol as indicated by their name.
@@ -24,7 +25,7 @@ trait RotationVariableProperties extends VisualVariableProperties {
     *
     * @default heading
     */
-  var axis: js.UndefOr[heading | tilt | roll] = js.undefined
+  var axis: js.UndefOr[heading | tilt | roll] = js.native
   /**
     * Defines the origin and direction of rotation depending on how the angle of rotation was measured. See the table below for a list of possible values. This property only applies to rotations around the `heading` axis.
     *
@@ -38,27 +39,35 @@ trait RotationVariableProperties extends VisualVariableProperties {
     *
     * @default geographic
     */
-  var rotationType: js.UndefOr[geographic | arithmetic] = js.undefined
+  var rotationType: js.UndefOr[geographic | arithmetic] = js.native
 }
 
 object RotationVariableProperties {
   @scala.inline
-  def apply(
-    axis: heading | tilt | roll = null,
-    field: String = null,
-    legendOptions: VisualVariableLegendOptions = null,
-    rotationType: geographic | arithmetic = null,
-    valueExpression: String = null,
-    valueExpressionTitle: String = null
-  ): RotationVariableProperties = {
+  def apply(): RotationVariableProperties = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
-    if (rotationType != null) __obj.updateDynamic("rotationType")(rotationType.asInstanceOf[js.Any])
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationVariableProperties]
   }
+  @scala.inline
+  implicit class RotationVariablePropertiesOps[Self <: RotationVariableProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxis(value: heading | tilt | roll): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setRotationType(value: geographic | arithmetic): Self = this.set("rotationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationType: Self = this.set("rotationType", js.undefined)
+  }
+  
 }
 

@@ -1,21 +1,20 @@
 package typings.vscodeLanguageserverProtocol.protocolCallHierarchyProposedMod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector
 import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CallHierarchyRegistrationOptions
   extends TextDocumentRegistrationOptions
      with WorkDoneProgressOptions
 
 object CallHierarchyRegistrationOptions {
   @scala.inline
-  def apply(documentSelector: DocumentSelector = null, workDoneProgress: js.UndefOr[Boolean] = js.undefined): CallHierarchyRegistrationOptions = {
-    val __obj = js.Dynamic.literal(documentSelector = documentSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
+  def apply(): CallHierarchyRegistrationOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallHierarchyRegistrationOptions]
   }
 }

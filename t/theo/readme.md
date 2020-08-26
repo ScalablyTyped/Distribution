@@ -12,7 +12,7 @@ Design Tokens formatter
 | Keywords           | css, design, properties, tokens, sass, scss, stylus, less, iOS, Android, aura |
 | # releases         | 13 |
 | # dependents       | 12 |
-| # downloads        | 159879 |
+| # downloads        | 162855 |
 | # stars            | 6 |
 
 ## Links

@@ -42,6 +42,7 @@ object app extends js.Object {
       * @param controller Ext.app.Controller The listening controller instance.
       */
     def control(): Unit = js.native
+    def control(selectors: js.UndefOr[scala.Nothing], controller: IController): Unit = js.native
     def control(selectors: js.Any): Unit = js.native
     def control(selectors: js.Any, controller: IController): Unit = js.native
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
@@ -61,6 +62,7 @@ object app extends js.Object {
       * @param controller Ext.app.Controller The listening controller instance.
       */
     def listen(): Unit = js.native
+    def listen(to: js.UndefOr[scala.Nothing], controller: IController): Unit = js.native
     def listen(to: js.Any): Unit = js.native
     def listen(to: js.Any, controller: IController): Unit = js.native
     /** [Method] Get the reference to the class from which this object was instantiated
@@ -137,6 +139,7 @@ object app extends js.Object {
         * @returns Boolean true if the target matches the selector.
         */
       def `match`(): Boolean = js.native
+      def `match`(target: js.UndefOr[scala.Nothing], selector: js.Any): Boolean = js.native
       def `match`(target: js.Any): Boolean = js.native
       def `match`(target: js.Any, selector: js.Any): Boolean = js.native
       /** [Method] This method is called by the derived class to monitor fireEvent calls
@@ -193,6 +196,7 @@ object app extends js.Object {
         * @returns Boolean true if the target matches the selector.
         */
       def `match`(): Boolean = js.native
+      def `match`(target: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
       def `match`(target: js.Any): Boolean = js.native
       def `match`(target: js.Any, selector: java.lang.String): Boolean = js.native
       /** [Method] This method is called by the derived class to monitor fireEvent calls
@@ -249,6 +253,7 @@ object app extends js.Object {
         * @returns Boolean true if the target matches the selector.
         */
       def `match`(): Boolean = js.native
+      def `match`(target: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
       def `match`(target: js.Any): Boolean = js.native
       def `match`(target: js.Any, selector: java.lang.String): Boolean = js.native
       /** [Method] This method is called by the derived class to monitor fireEvent calls
@@ -355,6 +360,7 @@ object app extends js.Object {
         * @returns Boolean true if the target matches the selector.
         */
       def `match`(): Boolean = js.native
+      def `match`(target: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
       def `match`(target: js.Any): Boolean = js.native
       def `match`(target: js.Any, selector: java.lang.String): Boolean = js.native
       /** [Method] This method is called by the derived class to monitor fireEvent calls

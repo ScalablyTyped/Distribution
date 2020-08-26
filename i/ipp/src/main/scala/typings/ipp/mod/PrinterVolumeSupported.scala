@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PrinterVolumeSupported extends js.Object {
-  var `x-dimension`: js.UndefOr[Double] = js.undefined
-  var `y-dimension`: js.UndefOr[Double] = js.undefined
-  var `z-dimension`: js.UndefOr[Double] = js.undefined
+  var `x-dimension`: js.UndefOr[Double] = js.native
+  var `y-dimension`: js.UndefOr[Double] = js.native
+  var `z-dimension`: js.UndefOr[Double] = js.native
 }
 
 object PrinterVolumeSupported {
   @scala.inline
-  def apply(
-    `x-dimension`: js.UndefOr[Double] = js.undefined,
-    `y-dimension`: js.UndefOr[Double] = js.undefined,
-    `z-dimension`: js.UndefOr[Double] = js.undefined
-  ): PrinterVolumeSupported = {
+  def apply(): PrinterVolumeSupported = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`x-dimension`)) __obj.updateDynamic("x-dimension")(`x-dimension`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`y-dimension`)) __obj.updateDynamic("y-dimension")(`y-dimension`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`z-dimension`)) __obj.updateDynamic("z-dimension")(`z-dimension`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrinterVolumeSupported]
   }
+  @scala.inline
+  implicit class PrinterVolumeSupportedOps[Self <: PrinterVolumeSupported] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setX-dimension`(value: Double): Self = this.set("x-dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteX-dimension`: Self = this.set("x-dimension", js.undefined)
+    @scala.inline
+    def `setY-dimension`(value: Double): Self = this.set("y-dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteY-dimension`: Self = this.set("y-dimension", js.undefined)
+    @scala.inline
+    def `setZ-dimension`(value: Double): Self = this.set("z-dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteZ-dimension`: Self = this.set("z-dimension", js.undefined)
+  }
+  
 }
 

@@ -28,7 +28,7 @@ class OpenUserTaskAction protected () extends MicroflowAction {
   @JSName("model")
   var model_FOpenUserTaskAction: IModel = js.native
   def userTaskVariable: String = js.native
-  def userTaskVariable(newValue: String): js.Any = js.native
+  def userTaskVariable_=(newValue: String): Unit = js.native
 }
 
 /* static members */

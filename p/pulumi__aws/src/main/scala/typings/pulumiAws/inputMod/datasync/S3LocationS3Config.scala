@@ -19,5 +19,20 @@ object S3LocationS3Config {
     val __obj = js.Dynamic.literal(bucketAccessRoleArn = bucketAccessRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3LocationS3Config]
   }
+  @scala.inline
+  implicit class S3LocationS3ConfigOps[Self <: S3LocationS3Config] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketAccessRoleArn(value: Input[String]): Self = this.set("bucketAccessRoleArn", value.asInstanceOf[js.Any])
+  }
+  
 }
 

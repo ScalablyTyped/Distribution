@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Badge extends js.Object {
-  var badge: js.Any
-  var device: Desktop
-  var launcher: Keywords
+  var badge: js.Any = js.native
+  var device: Desktop = js.native
+  var launcher: Keywords = js.native
    // TODO
-  var priority: Double
-  var `type`: String
+  var priority: Double = js.native
+  var `type`: String = js.native
 }
 
 object Badge {
@@ -20,5 +21,28 @@ object Badge {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Badge]
   }
+  @scala.inline
+  implicit class BadgeOps[Self <: Badge] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBadge(value: js.Any): Self = this.set("badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDevice(value: Desktop): Self = this.set("device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLauncher(value: Keywords): Self = this.set("launcher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

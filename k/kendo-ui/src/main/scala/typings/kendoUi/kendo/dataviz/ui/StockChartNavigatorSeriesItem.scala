@@ -4,105 +4,178 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StockChartNavigatorSeriesItem extends js.Object {
-  var aggregate: js.UndefOr[String | js.Function] = js.undefined
-  var axis: js.UndefOr[String] = js.undefined
-  var border: js.UndefOr[StockChartNavigatorSeriesItemBorder] = js.undefined
-  var categoryField: js.UndefOr[String] = js.undefined
-  var closeField: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var colorField: js.UndefOr[String] = js.undefined
-  var dashType: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var downColor: js.UndefOr[String] = js.undefined
-  var downColorField: js.UndefOr[String] = js.undefined
-  var field: js.UndefOr[String] = js.undefined
-  var gap: js.UndefOr[Double] = js.undefined
-  var highField: js.UndefOr[String] = js.undefined
-  var highlight: js.UndefOr[StockChartNavigatorSeriesItemHighlight] = js.undefined
-  var labels: js.UndefOr[StockChartNavigatorSeriesItemLabels] = js.undefined
-  var line: js.UndefOr[String | StockChartNavigatorSeriesItemLine] = js.undefined
-  var lowField: js.UndefOr[String] = js.undefined
-  var markers: js.UndefOr[StockChartNavigatorSeriesItemMarkers] = js.undefined
-  var missingValues: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var openField: js.UndefOr[String] = js.undefined
-  var overlay: js.UndefOr[StockChartNavigatorSeriesItemOverlay] = js.undefined
-  var spacing: js.UndefOr[Double] = js.undefined
-  var stack: js.UndefOr[Boolean | String | StockChartNavigatorSeriesItemStack] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[StockChartNavigatorSeriesItemTooltip] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var aggregate: js.UndefOr[String | js.Function] = js.native
+  var axis: js.UndefOr[String] = js.native
+  var border: js.UndefOr[StockChartNavigatorSeriesItemBorder] = js.native
+  var categoryField: js.UndefOr[String] = js.native
+  var closeField: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.native
+  var colorField: js.UndefOr[String] = js.native
+  var dashType: js.UndefOr[String] = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var downColor: js.UndefOr[String] = js.native
+  var downColorField: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.native
+  var gap: js.UndefOr[Double] = js.native
+  var highField: js.UndefOr[String] = js.native
+  var highlight: js.UndefOr[StockChartNavigatorSeriesItemHighlight] = js.native
+  var labels: js.UndefOr[StockChartNavigatorSeriesItemLabels] = js.native
+  var line: js.UndefOr[String | StockChartNavigatorSeriesItemLine] = js.native
+  var lowField: js.UndefOr[String] = js.native
+  var markers: js.UndefOr[StockChartNavigatorSeriesItemMarkers] = js.native
+  var missingValues: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var openField: js.UndefOr[String] = js.native
+  var overlay: js.UndefOr[StockChartNavigatorSeriesItemOverlay] = js.native
+  var spacing: js.UndefOr[Double] = js.native
+  var stack: js.UndefOr[Boolean | String | StockChartNavigatorSeriesItemStack] = js.native
+  var style: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[StockChartNavigatorSeriesItemTooltip] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object StockChartNavigatorSeriesItem {
   @scala.inline
-  def apply(
-    aggregate: String | js.Function = null,
-    axis: String = null,
-    border: StockChartNavigatorSeriesItemBorder = null,
-    categoryField: String = null,
-    closeField: String = null,
-    color: String = null,
-    colorField: String = null,
-    dashType: String = null,
-    data: js.Any = null,
-    downColor: String = null,
-    downColorField: String = null,
-    field: String = null,
-    gap: js.UndefOr[Double] = js.undefined,
-    highField: String = null,
-    highlight: StockChartNavigatorSeriesItemHighlight = null,
-    labels: StockChartNavigatorSeriesItemLabels = null,
-    line: String | StockChartNavigatorSeriesItemLine = null,
-    lowField: String = null,
-    markers: StockChartNavigatorSeriesItemMarkers = null,
-    missingValues: String = null,
-    name: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    openField: String = null,
-    overlay: StockChartNavigatorSeriesItemOverlay = null,
-    spacing: js.UndefOr[Double] = js.undefined,
-    stack: Boolean | String | StockChartNavigatorSeriesItemStack = null,
-    style: String = null,
-    tooltip: StockChartNavigatorSeriesItemTooltip = null,
-    `type`: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): StockChartNavigatorSeriesItem = {
+  def apply(): StockChartNavigatorSeriesItem = {
     val __obj = js.Dynamic.literal()
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (categoryField != null) __obj.updateDynamic("categoryField")(categoryField.asInstanceOf[js.Any])
-    if (closeField != null) __obj.updateDynamic("closeField")(closeField.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorField != null) __obj.updateDynamic("colorField")(colorField.asInstanceOf[js.Any])
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (downColor != null) __obj.updateDynamic("downColor")(downColor.asInstanceOf[js.Any])
-    if (downColorField != null) __obj.updateDynamic("downColorField")(downColorField.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
-    if (highField != null) __obj.updateDynamic("highField")(highField.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (lowField != null) __obj.updateDynamic("lowField")(lowField.asInstanceOf[js.Any])
-    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (missingValues != null) __obj.updateDynamic("missingValues")(missingValues.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (openField != null) __obj.updateDynamic("openField")(openField.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNavigatorSeriesItem]
   }
+  @scala.inline
+  implicit class StockChartNavigatorSeriesItemOps[Self <: StockChartNavigatorSeriesItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregate(value: String | js.Function): Self = this.set("aggregate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregate: Self = this.set("aggregate", js.undefined)
+    @scala.inline
+    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setBorder(value: StockChartNavigatorSeriesItemBorder): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setCategoryField(value: String): Self = this.set("categoryField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryField: Self = this.set("categoryField", js.undefined)
+    @scala.inline
+    def setCloseField(value: String): Self = this.set("closeField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseField: Self = this.set("closeField", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorField(value: String): Self = this.set("colorField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorField: Self = this.set("colorField", js.undefined)
+    @scala.inline
+    def setDashType(value: String): Self = this.set("dashType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashType: Self = this.set("dashType", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDownColor(value: String): Self = this.set("downColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownColor: Self = this.set("downColor", js.undefined)
+    @scala.inline
+    def setDownColorField(value: String): Self = this.set("downColorField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownColorField: Self = this.set("downColorField", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setGap(value: Double): Self = this.set("gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGap: Self = this.set("gap", js.undefined)
+    @scala.inline
+    def setHighField(value: String): Self = this.set("highField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighField: Self = this.set("highField", js.undefined)
+    @scala.inline
+    def setHighlight(value: StockChartNavigatorSeriesItemHighlight): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setLabels(value: StockChartNavigatorSeriesItemLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLine(value: String | StockChartNavigatorSeriesItemLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setLowField(value: String): Self = this.set("lowField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowField: Self = this.set("lowField", js.undefined)
+    @scala.inline
+    def setMarkers(value: StockChartNavigatorSeriesItemMarkers): Self = this.set("markers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkers: Self = this.set("markers", js.undefined)
+    @scala.inline
+    def setMissingValues(value: String): Self = this.set("missingValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissingValues: Self = this.set("missingValues", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setOpenField(value: String): Self = this.set("openField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenField: Self = this.set("openField", js.undefined)
+    @scala.inline
+    def setOverlay(value: StockChartNavigatorSeriesItemOverlay): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    @scala.inline
+    def setSpacing(value: Double): Self = this.set("spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    @scala.inline
+    def setStack(value: Boolean | String | StockChartNavigatorSeriesItemStack): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTooltip(value: StockChartNavigatorSeriesItemTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

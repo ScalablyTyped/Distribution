@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "diff-sequences"
-version := "24.9.0-8335ed"
-scalaVersion := "2.13.2"
+version := "26.0.0-b97a96"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

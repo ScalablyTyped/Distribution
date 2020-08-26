@@ -13,6 +13,7 @@ object defaultNodeModelMod extends js.Object {
   @js.native
   class DefaultNodeModel () extends NodeModel {
     def this(name: String) = this()
+    def this(name: js.UndefOr[scala.Nothing], color: String) = this()
     def this(name: String, color: String) = this()
     var color: String = js.native
     var name: String = js.native

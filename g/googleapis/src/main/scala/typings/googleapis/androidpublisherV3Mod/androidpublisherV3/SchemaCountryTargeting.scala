@@ -12,11 +12,32 @@ trait SchemaCountryTargeting extends js.Object {
 
 object SchemaCountryTargeting {
   @scala.inline
-  def apply(countries: js.Array[String] = null, includeRestOfWorld: js.UndefOr[Boolean] = js.undefined): SchemaCountryTargeting = {
+  def apply(): SchemaCountryTargeting = {
     val __obj = js.Dynamic.literal()
-    if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeRestOfWorld)) __obj.updateDynamic("includeRestOfWorld")(includeRestOfWorld.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCountryTargeting]
   }
+  @scala.inline
+  implicit class SchemaCountryTargetingOps[Self <: SchemaCountryTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountriesVarargs(value: String*): Self = this.set("countries", js.Array(value :_*))
+    @scala.inline
+    def setCountries(value: js.Array[String]): Self = this.set("countries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountries: Self = this.set("countries", js.undefined)
+    @scala.inline
+    def setIncludeRestOfWorld(value: Boolean): Self = this.set("includeRestOfWorld", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeRestOfWorld: Self = this.set("includeRestOfWorld", js.undefined)
+  }
+  
 }
 

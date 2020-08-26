@@ -65,6 +65,7 @@ object Scenes extends js.Object {
       */
     var scenes: js.Array[_] = js.native
     def add(key: String, sceneConfig: js.Function): Scene = js.native
+    def add(key: String, sceneConfig: js.Function, autoStart: js.UndefOr[scala.Nothing], data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: js.Function, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: js.Function, autoStart: Boolean, data: js.Object): Scene = js.native
     /**
@@ -83,15 +84,23 @@ object Scenes extends js.Object {
       * @param key A unique key used to reference the Scene, i.e. `MainMenu` or `Level1`.
       * @param sceneConfig The config for the Scene
       * @param autoStart If `true` the Scene will be started immediately after being added. Default false.
-      * @param data Optional data object. This will be set as Scene.settings.data and passed to `Scene.init`.
+      * @param data Optional data object. This will be set as `Scene.settings.data` and passed to `Scene.init`, and `Scene.create`.
       */
     def add(key: String, sceneConfig: Scene): Scene = js.native
+    def add(key: String, sceneConfig: Scene, autoStart: js.UndefOr[scala.Nothing], data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: Scene, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: Scene, autoStart: Boolean, data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: CreateSceneFromObjectConfig): Scene = js.native
+    def add(
+      key: String,
+      sceneConfig: CreateSceneFromObjectConfig,
+      autoStart: js.UndefOr[scala.Nothing],
+      data: js.Object
+    ): Scene = js.native
     def add(key: String, sceneConfig: CreateSceneFromObjectConfig, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: CreateSceneFromObjectConfig, autoStart: Boolean, data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig): Scene = js.native
+    def add(key: String, sceneConfig: SettingsConfig, autoStart: js.UndefOr[scala.Nothing], data: js.Object): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig, autoStart: Boolean): Scene = js.native
     def add(key: String, sceneConfig: SettingsConfig, autoStart: Boolean, data: js.Object): Scene = js.native
     /**
@@ -136,6 +145,7 @@ object Scenes extends js.Object {
       * @param inReverse Return the array of Scenes in reverse? Default false.
       */
     def getScenes(): js.Array[Scene] = js.native
+    def getScenes(isActive: js.UndefOr[scala.Nothing], inReverse: Boolean): js.Array[Scene] = js.native
     def getScenes(isActive: Boolean): js.Array[Scene] = js.native
     def getScenes(isActive: Boolean, inReverse: Boolean): js.Array[Scene] = js.native
     /**
@@ -258,7 +268,7 @@ object Scenes extends js.Object {
     /**
       * Starts the given Scene.
       * @param key The Scene to start.
-      * @param data Optional data object to pass to Scene.Settings and Scene.init.
+      * @param data Optional data object to pass to `Scene.Settings` and `Scene.init`, and `Scene.create`.
       */
     def start(key: String): SceneManager = js.native
     def start(key: String, data: js.Object): SceneManager = js.native
@@ -435,6 +445,7 @@ object Scenes extends js.Object {
       * @param data An optional data object that will be passed to the Scene and emitted in its pause event.
       */
     def pause(): ScenePlugin = js.native
+    def pause(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def pause(key: String): ScenePlugin = js.native
     def pause(key: String, data: js.Object): ScenePlugin = js.native
     /**
@@ -466,6 +477,7 @@ object Scenes extends js.Object {
       * @param data An optional data object that will be passed to the Scene and emitted in its resume event.
       */
     def resume(): ScenePlugin = js.native
+    def resume(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def resume(key: String): ScenePlugin = js.native
     def resume(key: String, data: js.Object): ScenePlugin = js.native
     /**
@@ -498,6 +510,7 @@ object Scenes extends js.Object {
       * @param data An optional data object that will be passed to the Scene and emitted with its events.
       */
     def setActive(value: Boolean): ScenePlugin = js.native
+    def setActive(value: Boolean, key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def setActive(value: Boolean, key: String): ScenePlugin = js.native
     def setActive(value: Boolean, key: String, data: js.Object): ScenePlugin = js.native
     /**
@@ -515,6 +528,7 @@ object Scenes extends js.Object {
       * @param data An optional data object that will be passed to the Scene and emitted in its sleep event.
       */
     def sleep(): ScenePlugin = js.native
+    def sleep(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def sleep(key: String): ScenePlugin = js.native
     def sleep(key: String, data: js.Object): ScenePlugin = js.native
     /**
@@ -525,6 +539,7 @@ object Scenes extends js.Object {
       * @param data The Scene data.
       */
     def start(): ScenePlugin = js.native
+    def start(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def start(key: String): ScenePlugin = js.native
     def start(key: String, data: js.Object): ScenePlugin = js.native
     /**
@@ -535,6 +550,7 @@ object Scenes extends js.Object {
       * @param data Optional data object to pass to Scene.Systems.shutdown.
       */
     def stop(): ScenePlugin = js.native
+    def stop(key: js.UndefOr[scala.Nothing], data: js.Any): ScenePlugin = js.native
     def stop(key: String): ScenePlugin = js.native
     def stop(key: String, data: js.Any): ScenePlugin = js.native
     /**
@@ -593,6 +609,7 @@ object Scenes extends js.Object {
       * @param data An optional data object that will be passed to the Scene and emitted in its wake event.
       */
     def wake(): ScenePlugin = js.native
+    def wake(key: js.UndefOr[scala.Nothing], data: js.Object): ScenePlugin = js.native
     def wake(key: String): ScenePlugin = js.native
     def wake(key: String, data: js.Object): ScenePlugin = js.native
   }

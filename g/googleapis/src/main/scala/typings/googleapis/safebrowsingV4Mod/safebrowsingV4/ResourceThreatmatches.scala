@@ -27,6 +27,7 @@ class ResourceThreatmatches protected () extends js.Object {
     */
   def find(): GaxiosPromise[SchemaFindThreatMatchesResponse] = js.native
   def find(callback: BodyResponseCallback[SchemaFindThreatMatchesResponse]): Unit = js.native
+  def find(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFindThreatMatchesResponse] = js.native
   def find(params: ParamsResourceThreatmatchesFind): GaxiosPromise[SchemaFindThreatMatchesResponse] = js.native
   def find(
     params: ParamsResourceThreatmatchesFind,

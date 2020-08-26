@@ -20,11 +20,32 @@ trait ResolverEndpointIpAddress extends js.Object {
 
 object ResolverEndpointIpAddress {
   @scala.inline
-  def apply(subnetId: Input[String], ip: Input[String] = null, ipId: Input[String] = null): ResolverEndpointIpAddress = {
+  def apply(subnetId: Input[String]): ResolverEndpointIpAddress = {
     val __obj = js.Dynamic.literal(subnetId = subnetId.asInstanceOf[js.Any])
-    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
-    if (ipId != null) __obj.updateDynamic("ipId")(ipId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverEndpointIpAddress]
   }
+  @scala.inline
+  implicit class ResolverEndpointIpAddressOps[Self <: ResolverEndpointIpAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubnetId(value: Input[String]): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIp(value: Input[String]): Self = this.set("ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIp: Self = this.set("ip", js.undefined)
+    @scala.inline
+    def setIpId(value: Input[String]): Self = this.set("ipId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpId: Self = this.set("ipId", js.undefined)
+  }
+  
 }
 

@@ -575,6 +575,7 @@ trait Mapper
     * @since 3.0.0
     */
   def create(): js.Promise[_] = js.native
+  def create(props: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
   def create(props: js.Any): js.Promise[_] = js.native
   def create(props: js.Any, opts: js.Any): js.Promise[_] = js.native
   /**
@@ -679,6 +680,7 @@ trait Mapper
     * @tutorial ["http://www.js-data.io/v3.0/docs/saving-data","Saving data"]
     */
   def createMany(): js.Promise[_] = js.native
+  def createMany(records: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
   def createMany(records: js.Array[_]): js.Promise[_] = js.native
   def createMany(records: js.Array[_], opts: js.Any): js.Promise[_] = js.native
   /**
@@ -757,6 +759,7 @@ trait Mapper
     * @since 3.0.0
     */
   def createRecord(): typings.jsData.recordMod.default | js.Array[typings.jsData.recordMod.default] | js.Any = js.native
+  def createRecord(props: js.UndefOr[scala.Nothing], opts: js.Any): typings.jsData.recordMod.default | js.Array[typings.jsData.recordMod.default] | js.Any = js.native
   def createRecord(props: js.Any): typings.jsData.recordMod.default | js.Array[typings.jsData.recordMod.default] | js.Any = js.native
   def createRecord(props: js.Any, opts: js.Any): typings.jsData.recordMod.default | js.Array[typings.jsData.recordMod.default] | js.Any = js.native
   /**
@@ -958,6 +961,7 @@ trait Mapper
     * @tutorial ["http://www.js-data.io/v3.0/docs/saving-data","Saving data"]
     */
   def destroyAll(): js.Promise[_] = js.native
+  def destroyAll(query: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
   def destroyAll(query: js.Any): js.Promise[_] = js.native
   def destroyAll(query: js.Any, opts: js.Any): js.Promise[_] = js.native
   /**
@@ -1498,6 +1502,7 @@ trait Mapper
     * @tutorial ["http://www.js-data.io/v3.0/docs/saving-data","Saving data"]
     */
   def updateAll(props: js.Any): js.Promise[_] = js.native
+  def updateAll(props: js.Any, query: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
   def updateAll(props: js.Any, query: QueryDefinition): js.Promise[_] = js.native
   def updateAll(props: js.Any, query: QueryDefinition, opts: js.Any): js.Promise[_] = js.native
   /**

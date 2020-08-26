@@ -29,6 +29,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLicenseassignmentsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLicenseassignmentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -58,6 +59,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def get(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def get(params: ParamsResourceLicenseassignmentsGet): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def get(
     params: ParamsResourceLicenseassignmentsGet,
@@ -90,6 +92,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def insert(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def insert(params: ParamsResourceLicenseassignmentsInsert): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def insert(
     params: ParamsResourceLicenseassignmentsInsert,
@@ -123,6 +126,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     */
   def listForProduct(): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
   def listForProduct(callback: BodyResponseCallback[SchemaLicenseAssignmentList]): Unit = js.native
+  def listForProduct(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
   def listForProduct(params: ParamsResourceLicenseassignmentsListforproduct): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
   def listForProduct(
     params: ParamsResourceLicenseassignmentsListforproduct,
@@ -157,6 +161,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     */
   def listForProductAndSku(): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
   def listForProductAndSku(callback: BodyResponseCallback[SchemaLicenseAssignmentList]): Unit = js.native
+  def listForProductAndSku(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
   def listForProductAndSku(params: ParamsResourceLicenseassignmentsListforproductandsku): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
   def listForProductAndSku(
     params: ParamsResourceLicenseassignmentsListforproductandsku,
@@ -190,6 +195,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def patch(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def patch(params: ParamsResourceLicenseassignmentsPatch): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def patch(
     params: ParamsResourceLicenseassignmentsPatch,
@@ -223,6 +229,7 @@ class ResourceLicenseassignments protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def update(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def update(params: ParamsResourceLicenseassignmentsUpdate): GaxiosPromise[SchemaLicenseAssignment] = js.native
   def update(
     params: ParamsResourceLicenseassignmentsUpdate,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FeaturizationConfig extends js.Object {
   /**
-    * An array of featurization (transformation) information for the fields of a dataset. Only a single featurization is supported.
+    * An array of featurization (transformation) information for the fields of a dataset.
     */
   var Featurizations: js.UndefOr[typings.awsSdk.forecastserviceMod.Featurizations] = js.native
   /**
@@ -22,15 +22,36 @@ trait FeaturizationConfig extends js.Object {
 
 object FeaturizationConfig {
   @scala.inline
-  def apply(
-    ForecastFrequency: Frequency,
-    Featurizations: Featurizations = null,
-    ForecastDimensions: ForecastDimensions = null
-  ): FeaturizationConfig = {
+  def apply(ForecastFrequency: Frequency): FeaturizationConfig = {
     val __obj = js.Dynamic.literal(ForecastFrequency = ForecastFrequency.asInstanceOf[js.Any])
-    if (Featurizations != null) __obj.updateDynamic("Featurizations")(Featurizations.asInstanceOf[js.Any])
-    if (ForecastDimensions != null) __obj.updateDynamic("ForecastDimensions")(ForecastDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeaturizationConfig]
   }
+  @scala.inline
+  implicit class FeaturizationConfigOps[Self <: FeaturizationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForecastFrequency(value: Frequency): Self = this.set("ForecastFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeaturizationsVarargs(value: Featurization*): Self = this.set("Featurizations", js.Array(value :_*))
+    @scala.inline
+    def setFeaturizations(value: Featurizations): Self = this.set("Featurizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeaturizations: Self = this.set("Featurizations", js.undefined)
+    @scala.inline
+    def setForecastDimensionsVarargs(value: Name*): Self = this.set("ForecastDimensions", js.Array(value :_*))
+    @scala.inline
+    def setForecastDimensions(value: ForecastDimensions): Self = this.set("ForecastDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastDimensions: Self = this.set("ForecastDimensions", js.undefined)
+  }
+  
 }
 

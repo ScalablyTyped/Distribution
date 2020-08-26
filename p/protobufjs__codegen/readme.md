@@ -12,7 +12,7 @@ A minimalistic code generation utility.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 32 |
-| # downloads        | 54293494 |
+| # downloads        | 57264332 |
 | # stars            | 0 |
 
 ## Links

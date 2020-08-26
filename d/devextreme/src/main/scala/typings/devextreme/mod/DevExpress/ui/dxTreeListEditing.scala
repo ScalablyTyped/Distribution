@@ -1,60 +1,63 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.ComponentDxTreeList
-import typings.devextreme.devextremeStrings.batch
-import typings.devextreme.devextremeStrings.cell
-import typings.devextreme.devextremeStrings.click
-import typings.devextreme.devextremeStrings.dblClick
-import typings.devextreme.devextremeStrings.form
-import typings.devextreme.devextremeStrings.full
-import typings.devextreme.devextremeStrings.popup
-import typings.devextreme.devextremeStrings.repaint
-import typings.devextreme.devextremeStrings.reshape
-import typings.devextreme.devextremeStrings.row
+import typings.devextreme.anon.`11`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxTreeListEditing extends GridBaseEditing {
   /** @name dxTreeList.Options.editing.allowAdding */
-  var allowAdding: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentDxTreeList, Boolean])] = js.undefined
+  var allowAdding: js.UndefOr[Boolean | (js.Function1[/* options */ `11`, Boolean])] = js.native
   /** @name dxTreeList.Options.editing.allowDeleting */
-  var allowDeleting: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentDxTreeList, Boolean])] = js.undefined
+  var allowDeleting: js.UndefOr[Boolean | (js.Function1[/* options */ `11`, Boolean])] = js.native
   /** @name dxTreeList.Options.editing.allowUpdating */
-  var allowUpdating: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentDxTreeList, Boolean])] = js.undefined
+  var allowUpdating: js.UndefOr[Boolean | (js.Function1[/* options */ `11`, Boolean])] = js.native
   /** @name dxTreeList.Options.editing.texts */
   @JSName("texts")
-  var texts_dxTreeListEditing: js.UndefOr[dxTreeListEditingTexts] = js.undefined
+  var texts_dxTreeListEditing: js.UndefOr[dxTreeListEditingTexts] = js.native
 }
 
 object dxTreeListEditing {
   @scala.inline
-  def apply(
-    allowAdding: Boolean | (js.Function1[/* options */ ComponentDxTreeList, Boolean]) = null,
-    allowDeleting: Boolean | (js.Function1[/* options */ ComponentDxTreeList, Boolean]) = null,
-    allowUpdating: Boolean | (js.Function1[/* options */ ComponentDxTreeList, Boolean]) = null,
-    form: dxFormOptions = null,
-    mode: batch | cell | row | form | popup = null,
-    popup: dxPopupOptions[dxPopup] = null,
-    refreshMode: full | reshape | repaint = null,
-    selectTextOnEditStart: js.UndefOr[Boolean] = js.undefined,
-    startEditAction: click | dblClick = null,
-    texts: dxTreeListEditingTexts = null,
-    useIcons: js.UndefOr[Boolean] = js.undefined
-  ): dxTreeListEditing = {
+  def apply(): dxTreeListEditing = {
     val __obj = js.Dynamic.literal()
-    if (allowAdding != null) __obj.updateDynamic("allowAdding")(allowAdding.asInstanceOf[js.Any])
-    if (allowDeleting != null) __obj.updateDynamic("allowDeleting")(allowDeleting.asInstanceOf[js.Any])
-    if (allowUpdating != null) __obj.updateDynamic("allowUpdating")(allowUpdating.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (refreshMode != null) __obj.updateDynamic("refreshMode")(refreshMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectTextOnEditStart)) __obj.updateDynamic("selectTextOnEditStart")(selectTextOnEditStart.get.asInstanceOf[js.Any])
-    if (startEditAction != null) __obj.updateDynamic("startEditAction")(startEditAction.asInstanceOf[js.Any])
-    if (texts != null) __obj.updateDynamic("texts")(texts.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIcons)) __obj.updateDynamic("useIcons")(useIcons.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxTreeListEditing]
   }
+  @scala.inline
+  implicit class dxTreeListEditingOps[Self <: dxTreeListEditing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowAddingFunction1(value: /* options */ `11` => Boolean): Self = this.set("allowAdding", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAllowAdding(value: Boolean | (js.Function1[/* options */ `11`, Boolean])): Self = this.set("allowAdding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAdding: Self = this.set("allowAdding", js.undefined)
+    @scala.inline
+    def setAllowDeletingFunction1(value: /* options */ `11` => Boolean): Self = this.set("allowDeleting", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAllowDeleting(value: Boolean | (js.Function1[/* options */ `11`, Boolean])): Self = this.set("allowDeleting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDeleting: Self = this.set("allowDeleting", js.undefined)
+    @scala.inline
+    def setAllowUpdatingFunction1(value: /* options */ `11` => Boolean): Self = this.set("allowUpdating", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAllowUpdating(value: Boolean | (js.Function1[/* options */ `11`, Boolean])): Self = this.set("allowUpdating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowUpdating: Self = this.set("allowUpdating", js.undefined)
+    @scala.inline
+    def setTexts(value: dxTreeListEditingTexts): Self = this.set("texts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTexts: Self = this.set("texts", js.undefined)
+  }
+  
 }
 

@@ -5,33 +5,58 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, boolean>> */
+@js.native
 trait ScreenMap extends js.Object {
-  var lg: js.UndefOr[Boolean] = js.undefined
-  var md: js.UndefOr[Boolean] = js.undefined
-  var sm: js.UndefOr[Boolean] = js.undefined
-  var xl: js.UndefOr[Boolean] = js.undefined
-  var xs: js.UndefOr[Boolean] = js.undefined
-  var xxl: js.UndefOr[Boolean] = js.undefined
+  var lg: js.UndefOr[Boolean] = js.native
+  var md: js.UndefOr[Boolean] = js.native
+  var sm: js.UndefOr[Boolean] = js.native
+  var xl: js.UndefOr[Boolean] = js.native
+  var xs: js.UndefOr[Boolean] = js.native
+  var xxl: js.UndefOr[Boolean] = js.native
 }
 
 object ScreenMap {
   @scala.inline
-  def apply(
-    lg: js.UndefOr[Boolean] = js.undefined,
-    md: js.UndefOr[Boolean] = js.undefined,
-    sm: js.UndefOr[Boolean] = js.undefined,
-    xl: js.UndefOr[Boolean] = js.undefined,
-    xs: js.UndefOr[Boolean] = js.undefined,
-    xxl: js.UndefOr[Boolean] = js.undefined
-  ): ScreenMap = {
+  def apply(): ScreenMap = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lg)) __obj.updateDynamic("lg")(lg.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(md)) __obj.updateDynamic("md")(md.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sm)) __obj.updateDynamic("sm")(sm.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xl)) __obj.updateDynamic("xl")(xl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xs)) __obj.updateDynamic("xs")(xs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xxl)) __obj.updateDynamic("xxl")(xxl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenMap]
   }
+  @scala.inline
+  implicit class ScreenMapOps[Self <: ScreenMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLg(value: Boolean): Self = this.set("lg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLg: Self = this.set("lg", js.undefined)
+    @scala.inline
+    def setMd(value: Boolean): Self = this.set("md", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd: Self = this.set("md", js.undefined)
+    @scala.inline
+    def setSm(value: Boolean): Self = this.set("sm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSm: Self = this.set("sm", js.undefined)
+    @scala.inline
+    def setXl(value: Boolean): Self = this.set("xl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXl: Self = this.set("xl", js.undefined)
+    @scala.inline
+    def setXs(value: Boolean): Self = this.set("xs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXs: Self = this.set("xs", js.undefined)
+    @scala.inline
+    def setXxl(value: Boolean): Self = this.set("xxl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXxl: Self = this.set("xxl", js.undefined)
+  }
+  
 }
 

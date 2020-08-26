@@ -541,9 +541,23 @@ Instantiable0[js.Any] {
     */
   def setCurrentLineItemMatrixValue(group: String, name: String, column: js.Any, value: String): js.Any = js.native
   def setCurrentLineItemText(group: String, name: String, value: String): Unit = js.native
+  def setCurrentLineItemText(
+    group: String,
+    name: String,
+    value: String,
+    firefieldchanged: js.UndefOr[scala.Nothing],
+    synchronous: Boolean
+  ): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: String, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: Double): Unit = js.native
+  def setCurrentLineItemText(
+    group: String,
+    name: String,
+    value: Double,
+    firefieldchanged: js.UndefOr[scala.Nothing],
+    synchronous: Boolean
+  ): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: Double, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemText(group: String, name: String, value: Double, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
   /**
@@ -563,9 +577,23 @@ Instantiable0[js.Any] {
     * @return
     */
   def setCurrentLineItemValue(group: String, name: String, value: String): Unit = js.native
+  def setCurrentLineItemValue(
+    group: String,
+    name: String,
+    value: String,
+    firefieldchanged: js.UndefOr[scala.Nothing],
+    synchronous: Boolean
+  ): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: String, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: Double): Unit = js.native
+  def setCurrentLineItemValue(
+    group: String,
+    name: String,
+    value: Double,
+    firefieldchanged: js.UndefOr[scala.Nothing],
+    synchronous: Boolean
+  ): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: Double, firefieldchanged: Boolean): Unit = js.native
   def setCurrentLineItemValue(group: String, name: String, value: Double, firefieldchanged: Boolean, synchronous: Boolean): Unit = js.native
   /**

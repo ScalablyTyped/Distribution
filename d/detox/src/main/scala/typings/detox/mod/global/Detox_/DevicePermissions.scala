@@ -7,60 +7,103 @@ import scala.scalajs.js.annotation._
 /**
   *  Source for string definitions is https://github.com/wix/AppleSimulatorUtils
   */
+@js.native
 trait DevicePermissions extends js.Object {
-  var calendar: js.UndefOr[CalendarPermission] = js.undefined
-  var camera: js.UndefOr[CameraPermission] = js.undefined
-  var contacts: js.UndefOr[ContactsPermission] = js.undefined
-  var faceid: js.UndefOr[FaceIDPermission] = js.undefined
-  var health: js.UndefOr[HealthPermission] = js.undefined
-  var homekit: js.UndefOr[HomekitPermission] = js.undefined
-  var location: js.UndefOr[LocationPermission] = js.undefined
-  var medialibrary: js.UndefOr[MediaLibraryPermission] = js.undefined
-  var microphone: js.UndefOr[MicrophonePermission] = js.undefined
-  var motion: js.UndefOr[MotionPermission] = js.undefined
-  var notifications: js.UndefOr[NotificationsPermission] = js.undefined
-  var photos: js.UndefOr[PhotosPermission] = js.undefined
-  var reminders: js.UndefOr[RemindersPermission] = js.undefined
-  var siri: js.UndefOr[SiriPermission] = js.undefined
-  var speech: js.UndefOr[SpeechPermission] = js.undefined
+  var calendar: js.UndefOr[CalendarPermission] = js.native
+  var camera: js.UndefOr[CameraPermission] = js.native
+  var contacts: js.UndefOr[ContactsPermission] = js.native
+  var faceid: js.UndefOr[FaceIDPermission] = js.native
+  var health: js.UndefOr[HealthPermission] = js.native
+  var homekit: js.UndefOr[HomekitPermission] = js.native
+  var location: js.UndefOr[LocationPermission] = js.native
+  var medialibrary: js.UndefOr[MediaLibraryPermission] = js.native
+  var microphone: js.UndefOr[MicrophonePermission] = js.native
+  var motion: js.UndefOr[MotionPermission] = js.native
+  var notifications: js.UndefOr[NotificationsPermission] = js.native
+  var photos: js.UndefOr[PhotosPermission] = js.native
+  var reminders: js.UndefOr[RemindersPermission] = js.native
+  var siri: js.UndefOr[SiriPermission] = js.native
+  var speech: js.UndefOr[SpeechPermission] = js.native
 }
 
 object DevicePermissions {
   @scala.inline
-  def apply(
-    calendar: CalendarPermission = null,
-    camera: CameraPermission = null,
-    contacts: ContactsPermission = null,
-    faceid: FaceIDPermission = null,
-    health: HealthPermission = null,
-    homekit: HomekitPermission = null,
-    location: LocationPermission = null,
-    medialibrary: MediaLibraryPermission = null,
-    microphone: MicrophonePermission = null,
-    motion: MotionPermission = null,
-    notifications: NotificationsPermission = null,
-    photos: PhotosPermission = null,
-    reminders: RemindersPermission = null,
-    siri: SiriPermission = null,
-    speech: SpeechPermission = null
-  ): DevicePermissions = {
+  def apply(): DevicePermissions = {
     val __obj = js.Dynamic.literal()
-    if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])
-    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (contacts != null) __obj.updateDynamic("contacts")(contacts.asInstanceOf[js.Any])
-    if (faceid != null) __obj.updateDynamic("faceid")(faceid.asInstanceOf[js.Any])
-    if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
-    if (homekit != null) __obj.updateDynamic("homekit")(homekit.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (medialibrary != null) __obj.updateDynamic("medialibrary")(medialibrary.asInstanceOf[js.Any])
-    if (microphone != null) __obj.updateDynamic("microphone")(microphone.asInstanceOf[js.Any])
-    if (motion != null) __obj.updateDynamic("motion")(motion.asInstanceOf[js.Any])
-    if (notifications != null) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
-    if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
-    if (reminders != null) __obj.updateDynamic("reminders")(reminders.asInstanceOf[js.Any])
-    if (siri != null) __obj.updateDynamic("siri")(siri.asInstanceOf[js.Any])
-    if (speech != null) __obj.updateDynamic("speech")(speech.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicePermissions]
   }
+  @scala.inline
+  implicit class DevicePermissionsOps[Self <: DevicePermissions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCalendar(value: CalendarPermission): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    @scala.inline
+    def setCamera(value: CameraPermission): Self = this.set("camera", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCamera: Self = this.set("camera", js.undefined)
+    @scala.inline
+    def setContacts(value: ContactsPermission): Self = this.set("contacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContacts: Self = this.set("contacts", js.undefined)
+    @scala.inline
+    def setFaceid(value: FaceIDPermission): Self = this.set("faceid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceid: Self = this.set("faceid", js.undefined)
+    @scala.inline
+    def setHealth(value: HealthPermission): Self = this.set("health", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealth: Self = this.set("health", js.undefined)
+    @scala.inline
+    def setHomekit(value: HomekitPermission): Self = this.set("homekit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomekit: Self = this.set("homekit", js.undefined)
+    @scala.inline
+    def setLocation(value: LocationPermission): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMedialibrary(value: MediaLibraryPermission): Self = this.set("medialibrary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedialibrary: Self = this.set("medialibrary", js.undefined)
+    @scala.inline
+    def setMicrophone(value: MicrophonePermission): Self = this.set("microphone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMicrophone: Self = this.set("microphone", js.undefined)
+    @scala.inline
+    def setMotion(value: MotionPermission): Self = this.set("motion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMotion: Self = this.set("motion", js.undefined)
+    @scala.inline
+    def setNotifications(value: NotificationsPermission): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifications: Self = this.set("notifications", js.undefined)
+    @scala.inline
+    def setPhotos(value: PhotosPermission): Self = this.set("photos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhotos: Self = this.set("photos", js.undefined)
+    @scala.inline
+    def setReminders(value: RemindersPermission): Self = this.set("reminders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReminders: Self = this.set("reminders", js.undefined)
+    @scala.inline
+    def setSiri(value: SiriPermission): Self = this.set("siri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiri: Self = this.set("siri", js.undefined)
+    @scala.inline
+    def setSpeech(value: SpeechPermission): Self = this.set("speech", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeech: Self = this.set("speech", js.undefined)
+  }
+  
 }
 

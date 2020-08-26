@@ -24,11 +24,34 @@ trait SchemaVideoTargeting extends js.Object {
 
 object SchemaVideoTargeting {
   @scala.inline
-  def apply(excludedPositionTypes: js.Array[String] = null, targetedPositionTypes: js.Array[String] = null): SchemaVideoTargeting = {
+  def apply(): SchemaVideoTargeting = {
     val __obj = js.Dynamic.literal()
-    if (excludedPositionTypes != null) __obj.updateDynamic("excludedPositionTypes")(excludedPositionTypes.asInstanceOf[js.Any])
-    if (targetedPositionTypes != null) __obj.updateDynamic("targetedPositionTypes")(targetedPositionTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoTargeting]
   }
+  @scala.inline
+  implicit class SchemaVideoTargetingOps[Self <: SchemaVideoTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludedPositionTypesVarargs(value: String*): Self = this.set("excludedPositionTypes", js.Array(value :_*))
+    @scala.inline
+    def setExcludedPositionTypes(value: js.Array[String]): Self = this.set("excludedPositionTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedPositionTypes: Self = this.set("excludedPositionTypes", js.undefined)
+    @scala.inline
+    def setTargetedPositionTypesVarargs(value: String*): Self = this.set("targetedPositionTypes", js.Array(value :_*))
+    @scala.inline
+    def setTargetedPositionTypes(value: js.Array[String]): Self = this.set("targetedPositionTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetedPositionTypes: Self = this.set("targetedPositionTypes", js.undefined)
+  }
+  
 }
 

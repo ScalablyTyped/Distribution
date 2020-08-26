@@ -30,19 +30,40 @@ trait ListPortfolioAccessInput extends js.Object {
 
 object ListPortfolioAccessInput {
   @scala.inline
-  def apply(
-    PortfolioId: Id,
-    AcceptLanguage: AcceptLanguage = null,
-    OrganizationParentId: Id = null,
-    PageSize: js.UndefOr[PageSize] = js.undefined,
-    PageToken: PageToken = null
-  ): ListPortfolioAccessInput = {
+  def apply(PortfolioId: Id): ListPortfolioAccessInput = {
     val __obj = js.Dynamic.literal(PortfolioId = PortfolioId.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (OrganizationParentId != null) __obj.updateDynamic("OrganizationParentId")(OrganizationParentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
-    if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPortfolioAccessInput]
   }
+  @scala.inline
+  implicit class ListPortfolioAccessInputOps[Self <: ListPortfolioAccessInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPortfolioId(value: Id): Self = this.set("PortfolioId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setOrganizationParentId(value: Id): Self = this.set("OrganizationParentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationParentId: Self = this.set("OrganizationParentId", js.undefined)
+    @scala.inline
+    def setPageSize(value: PageSize): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: PageToken): Self = this.set("PageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("PageToken", js.undefined)
+  }
+  
 }
 

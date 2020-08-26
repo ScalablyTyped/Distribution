@@ -6,12 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Curve extends js.Object {
-  def draw(): Boolean
-  def isPartial(): Boolean
-  def renderCurve(params: Direction): Unit
-  def setContext(context: IRenderContext): Curve
-  def setNotes(from: Note, to: Note): Curve
+  def draw(): Boolean = js.native
+  def isPartial(): Boolean = js.native
+  def renderCurve(params: Direction): Unit = js.native
+  def setContext(context: IRenderContext): Curve = js.native
+  def setNotes(from: Note, to: Note): Curve = js.native
 }
 
 @JSGlobal("Vex.Flow.Curve")

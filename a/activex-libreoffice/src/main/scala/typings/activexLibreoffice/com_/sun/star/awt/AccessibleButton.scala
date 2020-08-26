@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
   * specifies accessibility support for a button.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleButton
   extends XAccessibleExtendedComponent
      with XAccessibleContext

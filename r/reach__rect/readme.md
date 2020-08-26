@@ -11,8 +11,8 @@ Measure React elements position in the DOM
 | Full name          | @reach/rect |
 | Keywords           | - |
 | # releases         | 18 |
-| # dependents       | 17 |
-| # downloads        | 773381 |
+| # dependents       | 16 |
+| # downloads        | 814145 |
 | # stars            | 0 |
 
 ## Links

@@ -33,18 +33,40 @@ trait SchemaWriteResponse extends js.Object {
 
 object SchemaWriteResponse {
   @scala.inline
-  def apply(
-    commitTime: String = null,
-    streamId: String = null,
-    streamToken: String = null,
-    writeResults: js.Array[SchemaWriteResult] = null
-  ): SchemaWriteResponse = {
+  def apply(): SchemaWriteResponse = {
     val __obj = js.Dynamic.literal()
-    if (commitTime != null) __obj.updateDynamic("commitTime")(commitTime.asInstanceOf[js.Any])
-    if (streamId != null) __obj.updateDynamic("streamId")(streamId.asInstanceOf[js.Any])
-    if (streamToken != null) __obj.updateDynamic("streamToken")(streamToken.asInstanceOf[js.Any])
-    if (writeResults != null) __obj.updateDynamic("writeResults")(writeResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWriteResponse]
   }
+  @scala.inline
+  implicit class SchemaWriteResponseOps[Self <: SchemaWriteResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommitTime(value: String): Self = this.set("commitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitTime: Self = this.set("commitTime", js.undefined)
+    @scala.inline
+    def setStreamId(value: String): Self = this.set("streamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamId: Self = this.set("streamId", js.undefined)
+    @scala.inline
+    def setStreamToken(value: String): Self = this.set("streamToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamToken: Self = this.set("streamToken", js.undefined)
+    @scala.inline
+    def setWriteResultsVarargs(value: SchemaWriteResult*): Self = this.set("writeResults", js.Array(value :_*))
+    @scala.inline
+    def setWriteResults(value: js.Array[SchemaWriteResult]): Self = this.set("writeResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteResults: Self = this.set("writeResults", js.undefined)
+  }
+  
 }
 

@@ -31,6 +31,7 @@ class ResourceProjectsAggregatedUsablesubnetworks protected () extends js.Object
     */
   def list(): GaxiosPromise[SchemaListUsableSubnetworksResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListUsableSubnetworksResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListUsableSubnetworksResponse] = js.native
   def list(params: ParamsResourceProjectsAggregatedUsablesubnetworksList): GaxiosPromise[SchemaListUsableSubnetworksResponse] = js.native
   def list(
     params: ParamsResourceProjectsAggregatedUsablesubnetworksList,

@@ -25,11 +25,30 @@ trait SchemaPullRequest extends js.Object {
 
 object SchemaPullRequest {
   @scala.inline
-  def apply(returnImmediately: js.UndefOr[Boolean] = js.undefined, subscription: String = null): SchemaPullRequest = {
+  def apply(): SchemaPullRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(returnImmediately)) __obj.updateDynamic("returnImmediately")(returnImmediately.get.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPullRequest]
   }
+  @scala.inline
+  implicit class SchemaPullRequestOps[Self <: SchemaPullRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReturnImmediately(value: Boolean): Self = this.set("returnImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnImmediately: Self = this.set("returnImmediately", js.undefined)
+    @scala.inline
+    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscription: Self = this.set("subscription", js.undefined)
+  }
+  
 }
 

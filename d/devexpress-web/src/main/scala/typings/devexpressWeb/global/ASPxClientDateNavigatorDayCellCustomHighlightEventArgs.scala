@@ -23,20 +23,5 @@ class ASPxClientDateNavigatorDayCellCustomHighlightEventArgs protected ()
     date: Date,
     appointments: js.Array[typings.devexpressWeb.ASPxClientAppointment]
   ) = this()
-  /**
-    * Provides access to the processed appointments.
-    */
-  /* CompleteClass */
-  override var appointments: js.Array[typings.devexpressWeb.ASPxClientAppointment] = js.native
-  /**
-    * Provides access to the date object of the processed cell.
-    */
-  /* CompleteClass */
-  override var date: Date = js.native
-  /**
-    * Gets the HTML element that the event was triggered on.
-    */
-  /* CompleteClass */
-  override var htmlElement: js.Any = js.native
 }
 

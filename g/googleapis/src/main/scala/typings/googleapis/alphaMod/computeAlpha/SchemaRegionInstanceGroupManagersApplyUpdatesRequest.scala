@@ -34,18 +34,40 @@ trait SchemaRegionInstanceGroupManagersApplyUpdatesRequest extends js.Object {
 
 object SchemaRegionInstanceGroupManagersApplyUpdatesRequest {
   @scala.inline
-  def apply(
-    instances: js.Array[String] = null,
-    maximalAction: String = null,
-    minimalAction: String = null,
-    mostDisruptiveAllowedAction: String = null
-  ): SchemaRegionInstanceGroupManagersApplyUpdatesRequest = {
+  def apply(): SchemaRegionInstanceGroupManagersApplyUpdatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
-    if (maximalAction != null) __obj.updateDynamic("maximalAction")(maximalAction.asInstanceOf[js.Any])
-    if (minimalAction != null) __obj.updateDynamic("minimalAction")(minimalAction.asInstanceOf[js.Any])
-    if (mostDisruptiveAllowedAction != null) __obj.updateDynamic("mostDisruptiveAllowedAction")(mostDisruptiveAllowedAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRegionInstanceGroupManagersApplyUpdatesRequest]
   }
+  @scala.inline
+  implicit class SchemaRegionInstanceGroupManagersApplyUpdatesRequestOps[Self <: SchemaRegionInstanceGroupManagersApplyUpdatesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstancesVarargs(value: String*): Self = this.set("instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: js.Array[String]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("instances", js.undefined)
+    @scala.inline
+    def setMaximalAction(value: String): Self = this.set("maximalAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximalAction: Self = this.set("maximalAction", js.undefined)
+    @scala.inline
+    def setMinimalAction(value: String): Self = this.set("minimalAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimalAction: Self = this.set("minimalAction", js.undefined)
+    @scala.inline
+    def setMostDisruptiveAllowedAction(value: String): Self = this.set("mostDisruptiveAllowedAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMostDisruptiveAllowedAction: Self = this.set("mostDisruptiveAllowedAction", js.undefined)
+  }
+  
 }
 

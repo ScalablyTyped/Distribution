@@ -5,27 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResizableEvents extends js.Object {
-  var create: js.UndefOr[ResizableEvent] = js.undefined
-  var resize: js.UndefOr[ResizableEvent] = js.undefined
-  var start: js.UndefOr[ResizableEvent] = js.undefined
-  var stop: js.UndefOr[ResizableEvent] = js.undefined
+  var create: js.UndefOr[ResizableEvent] = js.native
+  var resize: js.UndefOr[ResizableEvent] = js.native
+  var start: js.UndefOr[ResizableEvent] = js.native
+  var stop: js.UndefOr[ResizableEvent] = js.native
 }
 
 object ResizableEvents {
   @scala.inline
-  def apply(
-    create: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
-    resize: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
-    start: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null
-  ): ResizableEvents = {
+  def apply(): ResizableEvents = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction2(resize))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     __obj.asInstanceOf[ResizableEvents]
   }
+  @scala.inline
+  implicit class ResizableEventsOps[Self <: ResizableEvents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit): Self = this.set("create", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setResize(value: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit): Self = this.set("resize", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteResize: Self = this.set("resize", js.undefined)
+    @scala.inline
+    def setStart(value: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStop(value: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit): Self = this.set("stop", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStop: Self = this.set("stop", js.undefined)
+  }
+  
 }
 

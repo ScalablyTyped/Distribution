@@ -18,11 +18,30 @@ trait PartOfSpeechTag extends js.Object {
 
 object PartOfSpeechTag {
   @scala.inline
-  def apply(Score: js.UndefOr[Float] = js.undefined, Tag: PartOfSpeechTagType = null): PartOfSpeechTag = {
+  def apply(): PartOfSpeechTag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
-    if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartOfSpeechTag]
   }
+  @scala.inline
+  implicit class PartOfSpeechTagOps[Self <: PartOfSpeechTag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScore(value: Float): Self = this.set("Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("Score", js.undefined)
+    @scala.inline
+    def setTag(value: PartOfSpeechTagType): Self = this.set("Tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("Tag", js.undefined)
+  }
+  
 }
 

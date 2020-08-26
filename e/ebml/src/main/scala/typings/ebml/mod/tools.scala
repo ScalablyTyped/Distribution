@@ -44,6 +44,7 @@ object tools extends js.Object {
     * @returns the hex string
     */
   def readHexString(buff: Buffer): String = js.native
+  def readHexString(buff: Buffer, start: js.UndefOr[scala.Nothing], end: Double): String = js.native
   def readHexString(buff: Buffer, start: Double): String = js.native
   def readHexString(buff: Buffer, start: Double, end: Double): String = js.native
   /**

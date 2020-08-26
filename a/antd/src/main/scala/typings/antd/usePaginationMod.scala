@@ -12,15 +12,22 @@ object usePaginationMod extends js.Object {
   val DEFAULT_PAGE_SIZE: /* 10 */ Double = js.native
   def default(
     total: Double,
-    pagination: js.UndefOr[TablePaginationConfig],
+    pagination: js.UndefOr[scala.Nothing],
+    onChange: js.Function2[/* current */ Double, /* pageSize */ Double, Unit]
+  ): js.Tuple2[TablePaginationConfig, js.Function0[Unit]] = js.native
+  def default(
+    total: Double,
+    pagination: TablePaginationConfig,
     onChange: js.Function2[/* current */ Double, /* pageSize */ Double, Unit]
   ): js.Tuple2[TablePaginationConfig, js.Function0[Unit]] = js.native
   @JSName("default")
   def default_false(
     total: Double,
-    pagination: js.UndefOr[`false`],
+    pagination: `false`,
     onChange: js.Function2[/* current */ Double, /* pageSize */ Double, Unit]
   ): js.Tuple2[TablePaginationConfig, js.Function0[Unit]] = js.native
-  def getPaginationParam(pagination: js.UndefOr[Boolean | TablePaginationConfig], mergedPagination: TablePaginationConfig): js.Any = js.native
+  def getPaginationParam(pagination: js.UndefOr[scala.Nothing], mergedPagination: TablePaginationConfig): js.Any = js.native
+  def getPaginationParam(pagination: Boolean, mergedPagination: TablePaginationConfig): js.Any = js.native
+  def getPaginationParam(pagination: TablePaginationConfig, mergedPagination: TablePaginationConfig): js.Any = js.native
 }
 

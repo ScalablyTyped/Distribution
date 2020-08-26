@@ -60,17 +60,33 @@ trait ValidationError extends Error {
     * @returns {string}
     */
   def getSchemaPartText(): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[scala.Nothing], additionalPath: js.UndefOr[scala.Nothing], needDot: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[scala.Nothing], additionalPath: js.Array[String]): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[scala.Nothing], additionalPath: js.Array[String], needDot: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[scala.Nothing], additionalPath: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[scala.Nothing], additionalPath: Boolean, needDot: Boolean): String = js.native
   def getSchemaPartText(schemaPart: JSONSchema4): String = js.native
+  def getSchemaPartText(schemaPart: JSONSchema4, additionalPath: js.UndefOr[scala.Nothing], needDot: Boolean): String = js.native
   def getSchemaPartText(schemaPart: JSONSchema4, additionalPath: js.Array[String]): String = js.native
   def getSchemaPartText(schemaPart: JSONSchema4, additionalPath: js.Array[String], needDot: Boolean): String = js.native
   def getSchemaPartText(schemaPart: JSONSchema4, additionalPath: Boolean): String = js.native
   def getSchemaPartText(schemaPart: JSONSchema4, additionalPath: Boolean, needDot: Boolean): String = js.native
   def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6): String = js.native
+  def getSchemaPartText(
+    schemaPart: typings.jsonSchema.mod.JSONSchema6,
+    additionalPath: js.UndefOr[scala.Nothing],
+    needDot: Boolean
+  ): String = js.native
   def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6, additionalPath: js.Array[String]): String = js.native
   def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6, additionalPath: js.Array[String], needDot: Boolean): String = js.native
   def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6, additionalPath: Boolean): String = js.native
   def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema6, additionalPath: Boolean, needDot: Boolean): String = js.native
   def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema7): String = js.native
+  def getSchemaPartText(
+    schemaPart: typings.jsonSchema.mod.JSONSchema7,
+    additionalPath: js.UndefOr[scala.Nothing],
+    needDot: Boolean
+  ): String = js.native
   def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema7, additionalPath: js.Array[String]): String = js.native
   def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema7, additionalPath: js.Array[String], needDot: Boolean): String = js.native
   def getSchemaPartText(schemaPart: typings.jsonSchema.mod.JSONSchema7, additionalPath: Boolean): String = js.native

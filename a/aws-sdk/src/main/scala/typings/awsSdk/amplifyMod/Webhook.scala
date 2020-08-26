@@ -50,5 +50,32 @@ object Webhook {
     val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], updateTime = updateTime.asInstanceOf[js.Any], webhookArn = webhookArn.asInstanceOf[js.Any], webhookId = webhookId.asInstanceOf[js.Any], webhookUrl = webhookUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webhook]
   }
+  @scala.inline
+  implicit class WebhookOps[Self <: Webhook] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreateTime(value: CreateTime): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdateTime(value: UpdateTime): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebhookArn(value: WebhookArn): Self = this.set("webhookArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebhookId(value: WebhookId): Self = this.set("webhookId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebhookUrl(value: WebhookUrl): Self = this.set("webhookUrl", value.asInstanceOf[js.Any])
+  }
+  
 }
 

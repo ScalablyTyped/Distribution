@@ -45,5 +45,30 @@ object CreateCustomVerificationEmailTemplateRequest {
     val __obj = js.Dynamic.literal(FailureRedirectionURL = FailureRedirectionURL.asInstanceOf[js.Any], FromEmailAddress = FromEmailAddress.asInstanceOf[js.Any], SuccessRedirectionURL = SuccessRedirectionURL.asInstanceOf[js.Any], TemplateContent = TemplateContent.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any], TemplateSubject = TemplateSubject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCustomVerificationEmailTemplateRequest]
   }
+  @scala.inline
+  implicit class CreateCustomVerificationEmailTemplateRequestOps[Self <: CreateCustomVerificationEmailTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailureRedirectionURL(value: FailureRedirectionURL): Self = this.set("FailureRedirectionURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFromEmailAddress(value: FromAddress): Self = this.set("FromEmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuccessRedirectionURL(value: SuccessRedirectionURL): Self = this.set("SuccessRedirectionURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplateContent(value: TemplateContent): Self = this.set("TemplateContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplateName(value: TemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplateSubject(value: Subject): Self = this.set("TemplateSubject", value.asInstanceOf[js.Any])
+  }
+  
 }
 

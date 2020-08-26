@@ -18,11 +18,32 @@ trait ListHoursOfOperationsResponse extends js.Object {
 
 object ListHoursOfOperationsResponse {
   @scala.inline
-  def apply(HoursOfOperationSummaryList: HoursOfOperationSummaryList = null, NextToken: NextToken = null): ListHoursOfOperationsResponse = {
+  def apply(): ListHoursOfOperationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (HoursOfOperationSummaryList != null) __obj.updateDynamic("HoursOfOperationSummaryList")(HoursOfOperationSummaryList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHoursOfOperationsResponse]
   }
+  @scala.inline
+  implicit class ListHoursOfOperationsResponseOps[Self <: ListHoursOfOperationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHoursOfOperationSummaryListVarargs(value: HoursOfOperationSummary*): Self = this.set("HoursOfOperationSummaryList", js.Array(value :_*))
+    @scala.inline
+    def setHoursOfOperationSummaryList(value: HoursOfOperationSummaryList): Self = this.set("HoursOfOperationSummaryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoursOfOperationSummaryList: Self = this.set("HoursOfOperationSummaryList", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

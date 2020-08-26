@@ -12,7 +12,7 @@ Console browser and server app module with simplified express-like API
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 367 |
+| # downloads        | 375 |
 | # stars            | 0 |
 
 ## Links

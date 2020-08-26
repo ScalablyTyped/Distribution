@@ -22,7 +22,11 @@ import scala.scalajs.js.annotation._
   */
 class default () extends HTML5FS {
   def this(size: Double) = this()
+  def this(size: js.UndefOr[scala.Nothing], `type`: Double) = this()
   def this(size: Double, `type`: Double) = this()
+  def this(size: js.UndefOr[scala.Nothing], `type`: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+  def this(size: js.UndefOr[scala.Nothing], `type`: Double, deprecateMsg: Boolean) = this()
+  def this(size: Double, `type`: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
   def this(size: Double, `type`: Double, deprecateMsg: Boolean) = this()
 }
 

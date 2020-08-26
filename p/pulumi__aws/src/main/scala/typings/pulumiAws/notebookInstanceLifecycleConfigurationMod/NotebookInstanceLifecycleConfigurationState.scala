@@ -27,18 +27,38 @@ trait NotebookInstanceLifecycleConfigurationState extends js.Object {
 
 object NotebookInstanceLifecycleConfigurationState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    name: Input[String] = null,
-    onCreate: Input[String] = null,
-    onStart: Input[String] = null
-  ): NotebookInstanceLifecycleConfigurationState = {
+  def apply(): NotebookInstanceLifecycleConfigurationState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onCreate != null) __obj.updateDynamic("onCreate")(onCreate.asInstanceOf[js.Any])
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotebookInstanceLifecycleConfigurationState]
   }
+  @scala.inline
+  implicit class NotebookInstanceLifecycleConfigurationStateOps[Self <: NotebookInstanceLifecycleConfigurationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnCreate(value: Input[String]): Self = this.set("onCreate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCreate: Self = this.set("onCreate", js.undefined)
+    @scala.inline
+    def setOnStart(value: Input[String]): Self = this.set("onStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStart: Self = this.set("onStart", js.undefined)
+  }
+  
 }
 

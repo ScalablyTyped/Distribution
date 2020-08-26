@@ -23,6 +23,8 @@ trait JSON extends js.Object {
     * @param space Adds indentation, white space, and line break characters to the return-value JSON text to make it easier to read.
     */
   def stringify(value: js.Any): java.lang.String = js.native
+  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: java.lang.String): java.lang.String = js.native
+  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _]): java.lang.String = js.native
   def stringify(
     value: js.Any,

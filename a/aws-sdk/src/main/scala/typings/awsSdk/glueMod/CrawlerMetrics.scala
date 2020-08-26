@@ -42,26 +42,54 @@ trait CrawlerMetrics extends js.Object {
 
 object CrawlerMetrics {
   @scala.inline
-  def apply(
-    CrawlerName: NameString = null,
-    LastRuntimeSeconds: js.UndefOr[NonNegativeDouble] = js.undefined,
-    MedianRuntimeSeconds: js.UndefOr[NonNegativeDouble] = js.undefined,
-    StillEstimating: js.UndefOr[Boolean] = js.undefined,
-    TablesCreated: js.UndefOr[NonNegativeInteger] = js.undefined,
-    TablesDeleted: js.UndefOr[NonNegativeInteger] = js.undefined,
-    TablesUpdated: js.UndefOr[NonNegativeInteger] = js.undefined,
-    TimeLeftSeconds: js.UndefOr[NonNegativeDouble] = js.undefined
-  ): CrawlerMetrics = {
+  def apply(): CrawlerMetrics = {
     val __obj = js.Dynamic.literal()
-    if (CrawlerName != null) __obj.updateDynamic("CrawlerName")(CrawlerName.asInstanceOf[js.Any])
-    if (!js.isUndefined(LastRuntimeSeconds)) __obj.updateDynamic("LastRuntimeSeconds")(LastRuntimeSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MedianRuntimeSeconds)) __obj.updateDynamic("MedianRuntimeSeconds")(MedianRuntimeSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(StillEstimating)) __obj.updateDynamic("StillEstimating")(StillEstimating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TablesCreated)) __obj.updateDynamic("TablesCreated")(TablesCreated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TablesDeleted)) __obj.updateDynamic("TablesDeleted")(TablesDeleted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TablesUpdated)) __obj.updateDynamic("TablesUpdated")(TablesUpdated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeLeftSeconds)) __obj.updateDynamic("TimeLeftSeconds")(TimeLeftSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrawlerMetrics]
   }
+  @scala.inline
+  implicit class CrawlerMetricsOps[Self <: CrawlerMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCrawlerName(value: NameString): Self = this.set("CrawlerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlerName: Self = this.set("CrawlerName", js.undefined)
+    @scala.inline
+    def setLastRuntimeSeconds(value: NonNegativeDouble): Self = this.set("LastRuntimeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRuntimeSeconds: Self = this.set("LastRuntimeSeconds", js.undefined)
+    @scala.inline
+    def setMedianRuntimeSeconds(value: NonNegativeDouble): Self = this.set("MedianRuntimeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedianRuntimeSeconds: Self = this.set("MedianRuntimeSeconds", js.undefined)
+    @scala.inline
+    def setStillEstimating(value: Boolean): Self = this.set("StillEstimating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStillEstimating: Self = this.set("StillEstimating", js.undefined)
+    @scala.inline
+    def setTablesCreated(value: NonNegativeInteger): Self = this.set("TablesCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablesCreated: Self = this.set("TablesCreated", js.undefined)
+    @scala.inline
+    def setTablesDeleted(value: NonNegativeInteger): Self = this.set("TablesDeleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablesDeleted: Self = this.set("TablesDeleted", js.undefined)
+    @scala.inline
+    def setTablesUpdated(value: NonNegativeInteger): Self = this.set("TablesUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablesUpdated: Self = this.set("TablesUpdated", js.undefined)
+    @scala.inline
+    def setTimeLeftSeconds(value: NonNegativeDouble): Self = this.set("TimeLeftSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeLeftSeconds: Self = this.set("TimeLeftSeconds", js.undefined)
+  }
+  
 }
 

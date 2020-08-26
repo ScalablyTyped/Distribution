@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITemplate extends IColumn {
   /** [Method] When defined this will take precedence over the renderer config
     * @param value Object
@@ -18,19 +19,33 @@ trait ITemplate extends IColumn {
       /* record */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object ITemplate {
   @scala.inline
-  def apply(
-    IColumn: IColumn = null,
-    defaultRenderer: (/* value */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any]) => Unit = null
-  ): ITemplate = {
+  def apply(): ITemplate = {
     val __obj = js.Dynamic.literal()
-    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
-    if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(js.Any.fromFunction3(defaultRenderer))
     __obj.asInstanceOf[ITemplate]
   }
+  @scala.inline
+  implicit class ITemplateOps[Self <: ITemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultRenderer(
+      value: (/* value */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("defaultRenderer", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDefaultRenderer: Self = this.set("defaultRenderer", js.undefined)
+  }
+  
 }
 

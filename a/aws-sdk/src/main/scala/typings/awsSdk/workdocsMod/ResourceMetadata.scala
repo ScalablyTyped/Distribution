@@ -38,24 +38,50 @@ trait ResourceMetadata extends js.Object {
 
 object ResourceMetadata {
   @scala.inline
-  def apply(
-    Id: ResourceIdType = null,
-    Name: ResourceNameType = null,
-    OriginalName: ResourceNameType = null,
-    Owner: UserMetadata = null,
-    ParentId: ResourceIdType = null,
-    Type: ResourceType = null,
-    VersionId: DocumentVersionIdType = null
-  ): ResourceMetadata = {
+  def apply(): ResourceMetadata = {
     val __obj = js.Dynamic.literal()
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OriginalName != null) __obj.updateDynamic("OriginalName")(OriginalName.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (ParentId != null) __obj.updateDynamic("ParentId")(ParentId.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceMetadata]
   }
+  @scala.inline
+  implicit class ResourceMetadataOps[Self <: ResourceMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: ResourceIdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: ResourceNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOriginalName(value: ResourceNameType): Self = this.set("OriginalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalName: Self = this.set("OriginalName", js.undefined)
+    @scala.inline
+    def setOwner(value: UserMetadata): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setParentId(value: ResourceIdType): Self = this.set("ParentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("ParentId", js.undefined)
+    @scala.inline
+    def setType(value: ResourceType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setVersionId(value: DocumentVersionIdType): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

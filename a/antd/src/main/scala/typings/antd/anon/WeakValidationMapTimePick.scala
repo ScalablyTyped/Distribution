@@ -45,6 +45,7 @@ import typings.rcPicker.interfaceMod.OnPanelChange
 import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
+import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.Key
@@ -61,381 +62,621 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined react.react.WeakValidationMap<antd.antd/lib/time-picker.TimePickerProps & react.react.RefAttributes<any>> */
+@js.native
 trait WeakValidationMapTimePick extends js.Object {
-  var addon: js.UndefOr[Validator[js.UndefOr[js.Function0[ReactNode] | Null]]] = js.undefined
-  var allowClear: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
-  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
-  var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-colindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-colspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-controls`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-current`: js.UndefOr[Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]]] = js.undefined
-  var `aria-describedby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]] = js.undefined
-  var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]] = js.undefined
-  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.undefined
-  var `aria-keyshortcuts`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-label`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-labelledby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-level`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.undefined
-  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.undefined
-  var `aria-owns`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-placeholder`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-posinset`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
-  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var addon: js.UndefOr[Validator[js.UndefOr[js.Function0[ReactNode] | Null]]] = js.native
+  var allowClear: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.native
+  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.native
+  var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-controls`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-current`: js.UndefOr[Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]]] = js.native
+  var `aria-describedby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]] = js.native
+  var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]] = js.native
+  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-label`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-labelledby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-level`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.native
+  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.native
+  var `aria-owns`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-placeholder`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-posinset`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.native
+  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
   var `aria-relevant`: js.UndefOr[
     Validator[js.UndefOr[additions | (`additions text`) | all | removals | text | Null]]
-  ] = js.undefined
-  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-rowcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-rowindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.undefined
-  var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-valuemin`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-valuenow`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-valuetext`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var autoComplete: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var autoFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var bordered: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var clearIcon: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
-  var dateRender: js.UndefOr[Validator[js.UndefOr[DateRender[Moment] | Null]]] = js.undefined
-  var defaultOpen: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var defaultOpenValue: js.UndefOr[Validator[js.UndefOr[Moment | Null]]] = js.undefined
-  var defaultPickerValue: js.UndefOr[Validator[js.UndefOr[Moment | Null]]] = js.undefined
-  var defaultValue: js.UndefOr[Validator[js.UndefOr[Moment | Null]]] = js.undefined
-  var direction: js.UndefOr[Validator[js.UndefOr[ltr | rtl | Null]]] = js.undefined
-  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var disabledDate: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* date */ Moment, Boolean]) | Null]]] = js.undefined
-  var disabledHours: js.UndefOr[Validator[js.UndefOr[js.Function0[js.Array[Double]] | Null]]] = js.undefined
+  ] = js.native
+  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-rowcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.native
+  var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuemin`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuenow`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuetext`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoComplete: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoFocus: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var bordered: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var clearIcon: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var dateRender: js.UndefOr[Validator[js.UndefOr[DateRender[Moment] | Null]]] = js.native
+  var defaultOpen: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var defaultOpenValue: js.UndefOr[Validator[js.UndefOr[Moment | Null]]] = js.native
+  var defaultPickerValue: js.UndefOr[Validator[js.UndefOr[Moment | Null]]] = js.native
+  var defaultValue: js.UndefOr[Validator[js.UndefOr[Moment | Null]]] = js.native
+  var direction: js.UndefOr[Validator[js.UndefOr[ltr | rtl | Null]]] = js.native
+  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disabledDate: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* date */ Moment, Boolean]) | Null]]] = js.native
+  var disabledHours: js.UndefOr[Validator[js.UndefOr[js.Function0[js.Array[Double]] | Null]]] = js.native
   var disabledMinutes: js.UndefOr[
     Validator[js.UndefOr[(js.Function1[/* hour */ Double, js.Array[Double]]) | Null]]
-  ] = js.undefined
+  ] = js.native
   var disabledSeconds: js.UndefOr[
     Validator[
       js.UndefOr[(js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]) | Null]
     ]
-  ] = js.undefined
-  var dropdownAlign: js.UndefOr[
-    Validator[
-      js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ _) | Null
-      ]
-    ]
-  ] = js.undefined
-  var dropdownClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var format: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null | String]]] = js.undefined
+  ] = js.native
+  var dropdownAlign: js.UndefOr[Validator[js.UndefOr[AlignType | Null]]] = js.native
+  var dropdownClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var format: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null | String]]] = js.native
   var getPopupContainer: js.UndefOr[
     Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, HTMLElement]) | Null]]
-  ] = js.undefined
-  var hideDisabledOptions: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var hourStep: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var inputReadOnly: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var key: js.UndefOr[Validator[js.UndefOr[Key | Null]]] = js.undefined
-  var locale: js.UndefOr[Validator[js.UndefOr[Null | PickerLocale]]] = js.undefined
-  var minuteStep: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var mode: js.UndefOr[Validator[js.UndefOr[Null | PanelMode]]] = js.undefined
-  var monthCellRender: js.UndefOr[Validator[js.UndefOr[MonthCellRender[Moment] | Null]]] = js.undefined
-  var name: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]] = js.undefined
+  ] = js.native
+  var hideDisabledOptions: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var hourStep: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var inputReadOnly: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var key: js.UndefOr[Validator[js.UndefOr[Key | Null]]] = js.native
+  var locale: js.UndefOr[Validator[js.UndefOr[Null | PickerLocale]]] = js.native
+  var minuteStep: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var mode: js.UndefOr[Validator[js.UndefOr[Null | PanelMode]]] = js.native
+  var monthCellRender: js.UndefOr[Validator[js.UndefOr[MonthCellRender[Moment] | Null]]] = js.native
+  var name: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]] = js.native
   var onChange: js.UndefOr[
     Validator[js.UndefOr[(js.Function2[Moment | Null, /* dateString */ String, Unit]) | Null]]
-  ] = js.undefined
-  var onClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
-  var onContextMenu: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
-  var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]] = js.undefined
-  var onMouseDown: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
-  var onMouseEnter: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
-  var onMouseLeave: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
-  var onMouseUp: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
-  var onOk: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* date */ Moment, Unit]) | Null]]] = js.undefined
-  var onOpenChange: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* open */ Boolean, Unit]) | Null]]] = js.undefined
-  var onPanelChange: js.UndefOr[Validator[js.UndefOr[Null | OnPanelChange[Moment]]]] = js.undefined
-  var onSelect: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* value */ Moment, Unit]) | Null]]] = js.undefined
-  var open: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var pickerRef: js.UndefOr[Validator[js.UndefOr[MutableRefObject[PickerRefConfig] | Null]]] = js.undefined
-  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var popupClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var popupStyle: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
-  var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var ref: js.UndefOr[Validator[js.UndefOr[Null | Ref[_]]]] = js.undefined
-  var renderExtraFooter: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* mode */ PanelMode, ReactNode]) | Null]]] = js.undefined
-  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var secondStep: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var showHour: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var showMinute: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var showNow: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var showSecond: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var size: js.UndefOr[Validator[js.UndefOr[Null | SizeType]]] = js.undefined
-  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
-  var suffixIcon: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
-  var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var transitionName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var use12Hours: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var value: js.UndefOr[Validator[js.UndefOr[Moment | Null]]] = js.undefined
+  ] = js.native
+  var onClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onContextMenu: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]] = js.native
+  var onMouseDown: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseEnter: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseLeave: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onMouseUp: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.native
+  var onOk: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* date */ Moment, Unit]) | Null]]] = js.native
+  var onOpenChange: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* open */ Boolean, Unit]) | Null]]] = js.native
+  var onPanelChange: js.UndefOr[Validator[js.UndefOr[Null | OnPanelChange[Moment]]]] = js.native
+  var onSelect: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* value */ Moment, Unit]) | Null]]] = js.native
+  var open: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var panelRender: js.UndefOr[
+    Validator[js.UndefOr[(js.Function1[/* originPanel */ ReactNode, ReactNode]) | Null]]
+  ] = js.native
+  var pickerRef: js.UndefOr[Validator[js.UndefOr[MutableRefObject[PickerRefConfig] | Null]]] = js.native
+  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var popupClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var popupStyle: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var ref: js.UndefOr[Validator[js.UndefOr[Null | Ref[_]]]] = js.native
+  var renderExtraFooter: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* mode */ PanelMode, ReactNode]) | Null]]] = js.native
+  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var secondStep: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var showHour: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var showMinute: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var showNow: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var showSecond: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var size: js.UndefOr[Validator[js.UndefOr[Null | SizeType]]] = js.native
+  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var suffixIcon: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var transitionName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var use12Hours: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var value: js.UndefOr[Validator[js.UndefOr[Moment | Null]]] = js.native
 }
 
 object WeakValidationMapTimePick {
   @scala.inline
-  def apply(
-    addon: Validator[js.UndefOr[js.Function0[ReactNode] | Null]] = null,
-    allowClear: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list | both | Null]] = null,
-    `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
-    `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-colindex`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-colspan`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-controls`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-current`: Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]] = null,
-    `aria-describedby`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-details`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-disabled`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-dropeffect`: Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]] = null,
-    `aria-errormessage`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-expanded`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-flowto`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-grabbed`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-haspopup`: Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]] = null,
-    `aria-hidden`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-invalid`: Validator[js.UndefOr[grammar | spelling | Boolean | Null]] = null,
-    `aria-keyshortcuts`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-label`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-labelledby`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-level`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-live`: Validator[js.UndefOr[off | assertive | polite | Null]] = null,
-    `aria-modal`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-multiline`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-multiselectable`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-orientation`: Validator[js.UndefOr[horizontal | vertical | Null]] = null,
-    `aria-owns`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-placeholder`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-posinset`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-pressed`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
-    `aria-readonly`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-relevant`: Validator[js.UndefOr[additions | (`additions text`) | all | removals | text | Null]] = null,
-    `aria-required`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-roledescription`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-rowcount`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-rowindex`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-rowspan`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-selected`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-setsize`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-sort`: Validator[js.UndefOr[none | ascending | descending | other | Null]] = null,
-    `aria-valuemax`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-valuemin`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-valuenow`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-valuetext`: Validator[js.UndefOr[Null | String]] = null,
-    autoComplete: Validator[js.UndefOr[Null | String]] = null,
-    autoFocus: Validator[js.UndefOr[Boolean | Null]] = null,
-    bordered: Validator[js.UndefOr[Boolean | Null]] = null,
-    className: Validator[js.UndefOr[Null | String]] = null,
-    clearIcon: Validator[js.UndefOr[Null | ReactNode]] = null,
-    dateRender: Validator[js.UndefOr[DateRender[Moment] | Null]] = null,
-    defaultOpen: Validator[js.UndefOr[Boolean | Null]] = null,
-    defaultOpenValue: Validator[js.UndefOr[Moment | Null]] = null,
-    defaultPickerValue: Validator[js.UndefOr[Moment | Null]] = null,
-    defaultValue: Validator[js.UndefOr[Moment | Null]] = null,
-    direction: Validator[js.UndefOr[ltr | rtl | Null]] = null,
-    disabled: Validator[js.UndefOr[Boolean | Null]] = null,
-    disabledDate: Validator[js.UndefOr[(js.Function1[/* date */ Moment, Boolean]) | Null]] = null,
-    disabledHours: Validator[js.UndefOr[js.Function0[js.Array[Double]] | Null]] = null,
-    disabledMinutes: Validator[js.UndefOr[(js.Function1[/* hour */ Double, js.Array[Double]]) | Null]] = null,
-    disabledSeconds: Validator[
-      js.UndefOr[(js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]) | Null]
-    ] = null,
-    dropdownAlign: Validator[
-      js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ _) | Null
-      ]
-    ] = null,
-    dropdownClassName: Validator[js.UndefOr[Null | String]] = null,
-    format: Validator[js.UndefOr[js.Array[String] | Null | String]] = null,
-    getPopupContainer: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, HTMLElement]) | Null]] = null,
-    hideDisabledOptions: Validator[js.UndefOr[Boolean | Null]] = null,
-    hourStep: Validator[js.UndefOr[Double | Null]] = null,
-    id: Validator[js.UndefOr[Null | String]] = null,
-    inputReadOnly: Validator[js.UndefOr[Boolean | Null]] = null,
-    key: Validator[js.UndefOr[Key | Null]] = null,
-    locale: Validator[js.UndefOr[Null | PickerLocale]] = null,
-    minuteStep: Validator[js.UndefOr[Double | Null]] = null,
-    mode: Validator[js.UndefOr[Null | PanelMode]] = null,
-    monthCellRender: Validator[js.UndefOr[MonthCellRender[Moment] | Null]] = null,
-    name: Validator[js.UndefOr[Null | String]] = null,
-    onBlur: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]] = null,
-    onChange: Validator[js.UndefOr[(js.Function2[Moment | Null, /* dateString */ String, Unit]) | Null]] = null,
-    onClick: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]] = null,
-    onContextMenu: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]] = null,
-    onFocus: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]] = null,
-    onMouseDown: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]] = null,
-    onMouseEnter: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]] = null,
-    onMouseLeave: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]] = null,
-    onMouseUp: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]] = null,
-    onOk: Validator[js.UndefOr[(js.Function1[/* date */ Moment, Unit]) | Null]] = null,
-    onOpenChange: Validator[js.UndefOr[(js.Function1[/* open */ Boolean, Unit]) | Null]] = null,
-    onPanelChange: Validator[js.UndefOr[Null | OnPanelChange[Moment]]] = null,
-    onSelect: Validator[js.UndefOr[(js.Function1[/* value */ Moment, Unit]) | Null]] = null,
-    open: Validator[js.UndefOr[Boolean | Null]] = null,
-    pickerRef: Validator[js.UndefOr[MutableRefObject[PickerRefConfig] | Null]] = null,
-    placeholder: Validator[js.UndefOr[Null | String]] = null,
-    popupClassName: Validator[js.UndefOr[Null | String]] = null,
-    popupStyle: Validator[js.UndefOr[CSSProperties | Null]] = null,
-    prefixCls: Validator[js.UndefOr[Null | String]] = null,
-    ref: Validator[js.UndefOr[Null | Ref[_]]] = null,
-    renderExtraFooter: Validator[js.UndefOr[(js.Function1[/* mode */ PanelMode, ReactNode]) | Null]] = null,
-    role: Validator[js.UndefOr[Null | String]] = null,
-    secondStep: Validator[js.UndefOr[Double | Null]] = null,
-    showHour: Validator[js.UndefOr[Boolean | Null]] = null,
-    showMinute: Validator[js.UndefOr[Boolean | Null]] = null,
-    showNow: Validator[js.UndefOr[Boolean | Null]] = null,
-    showSecond: Validator[js.UndefOr[Boolean | Null]] = null,
-    size: Validator[js.UndefOr[Null | SizeType]] = null,
-    style: Validator[js.UndefOr[CSSProperties | Null]] = null,
-    suffixIcon: Validator[js.UndefOr[Null | ReactNode]] = null,
-    tabIndex: Validator[js.UndefOr[Double | Null]] = null,
-    transitionName: Validator[js.UndefOr[Null | String]] = null,
-    use12Hours: Validator[js.UndefOr[Boolean | Null]] = null,
-    value: Validator[js.UndefOr[Moment | Null]] = null
-  ): WeakValidationMapTimePick = {
+  def apply(): WeakValidationMapTimePick = {
     val __obj = js.Dynamic.literal()
-    if (addon != null) __obj.updateDynamic("addon")(addon.asInstanceOf[js.Any])
-    if (allowClear != null) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (`aria-atomic` != null) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (`aria-busy` != null) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (`aria-disabled` != null) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (`aria-expanded` != null) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (`aria-grabbed` != null) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (`aria-hidden` != null) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (`aria-modal` != null) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (`aria-multiline` != null) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (`aria-multiselectable` != null) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (`aria-readonly` != null) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (`aria-required` != null) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (`aria-selected` != null) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (autoFocus != null) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (bordered != null) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(dateRender.asInstanceOf[js.Any])
-    if (defaultOpen != null) __obj.updateDynamic("defaultOpen")(defaultOpen.asInstanceOf[js.Any])
-    if (defaultOpenValue != null) __obj.updateDynamic("defaultOpenValue")(defaultOpenValue.asInstanceOf[js.Any])
-    if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledDate != null) __obj.updateDynamic("disabledDate")(disabledDate.asInstanceOf[js.Any])
-    if (disabledHours != null) __obj.updateDynamic("disabledHours")(disabledHours.asInstanceOf[js.Any])
-    if (disabledMinutes != null) __obj.updateDynamic("disabledMinutes")(disabledMinutes.asInstanceOf[js.Any])
-    if (disabledSeconds != null) __obj.updateDynamic("disabledSeconds")(disabledSeconds.asInstanceOf[js.Any])
-    if (dropdownAlign != null) __obj.updateDynamic("dropdownAlign")(dropdownAlign.asInstanceOf[js.Any])
-    if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer.asInstanceOf[js.Any])
-    if (hideDisabledOptions != null) __obj.updateDynamic("hideDisabledOptions")(hideDisabledOptions.asInstanceOf[js.Any])
-    if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputReadOnly != null) __obj.updateDynamic("inputReadOnly")(inputReadOnly.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(monthCellRender.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus.asInstanceOf[js.Any])
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown.asInstanceOf[js.Any])
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter.asInstanceOf[js.Any])
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp.asInstanceOf[js.Any])
-    if (onOk != null) __obj.updateDynamic("onOk")(onOk.asInstanceOf[js.Any])
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(onOpenChange.asInstanceOf[js.Any])
-    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(onPanelChange.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName.asInstanceOf[js.Any])
-    if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(renderExtraFooter.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])
-    if (showHour != null) __obj.updateDynamic("showHour")(showHour.asInstanceOf[js.Any])
-    if (showMinute != null) __obj.updateDynamic("showMinute")(showMinute.asInstanceOf[js.Any])
-    if (showNow != null) __obj.updateDynamic("showNow")(showNow.asInstanceOf[js.Any])
-    if (showSecond != null) __obj.updateDynamic("showSecond")(showSecond.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (use12Hours != null) __obj.updateDynamic("use12Hours")(use12Hours.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeakValidationMapTimePick]
   }
+  @scala.inline
+  implicit class WeakValidationMapTimePickOps[Self <: WeakValidationMapTimePick] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddon(value: Validator[js.UndefOr[js.Function0[ReactNode] | Null]]): Self = this.set("addon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddon: Self = this.set("addon", js.undefined)
+    @scala.inline
+    def setAllowClear(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("allowClear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowClear: Self = this.set("allowClear", js.undefined)
+    @scala.inline
+    def `setAria-activedescendant`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-activedescendant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-activedescendant`: Self = this.set("aria-activedescendant", js.undefined)
+    @scala.inline
+    def `setAria-atomic`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-atomic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-atomic`: Self = this.set("aria-atomic", js.undefined)
+    @scala.inline
+    def `setAria-autocomplete`(value: Validator[js.UndefOr[none | `inline` | list | both | Null]]): Self = this.set("aria-autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-autocomplete`: Self = this.set("aria-autocomplete", js.undefined)
+    @scala.inline
+    def `setAria-busy`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-busy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-busy`: Self = this.set("aria-busy", js.undefined)
+    @scala.inline
+    def `setAria-checked`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = this.set("aria-checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-checked`: Self = this.set("aria-checked", js.undefined)
+    @scala.inline
+    def `setAria-colcount`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-colcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colcount`: Self = this.set("aria-colcount", js.undefined)
+    @scala.inline
+    def `setAria-colindex`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-colindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colindex`: Self = this.set("aria-colindex", js.undefined)
+    @scala.inline
+    def `setAria-colspan`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-colspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colspan`: Self = this.set("aria-colspan", js.undefined)
+    @scala.inline
+    def `setAria-controls`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-controls`: Self = this.set("aria-controls", js.undefined)
+    @scala.inline
+    def `setAria-current`(value: Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]]): Self = this.set("aria-current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-current`: Self = this.set("aria-current", js.undefined)
+    @scala.inline
+    def `setAria-describedby`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-describedby`: Self = this.set("aria-describedby", js.undefined)
+    @scala.inline
+    def `setAria-details`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-details`: Self = this.set("aria-details", js.undefined)
+    @scala.inline
+    def `setAria-disabled`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-disabled`: Self = this.set("aria-disabled", js.undefined)
+    @scala.inline
+    def `setAria-dropeffect`(value: Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]): Self = this.set("aria-dropeffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-dropeffect`: Self = this.set("aria-dropeffect", js.undefined)
+    @scala.inline
+    def `setAria-errormessage`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-errormessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-errormessage`: Self = this.set("aria-errormessage", js.undefined)
+    @scala.inline
+    def `setAria-expanded`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-expanded`: Self = this.set("aria-expanded", js.undefined)
+    @scala.inline
+    def `setAria-flowto`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-flowto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-flowto`: Self = this.set("aria-flowto", js.undefined)
+    @scala.inline
+    def `setAria-grabbed`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-grabbed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-grabbed`: Self = this.set("aria-grabbed", js.undefined)
+    @scala.inline
+    def `setAria-haspopup`(value: Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]): Self = this.set("aria-haspopup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-haspopup`: Self = this.set("aria-haspopup", js.undefined)
+    @scala.inline
+    def `setAria-hidden`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-hidden`: Self = this.set("aria-hidden", js.undefined)
+    @scala.inline
+    def `setAria-invalid`(value: Validator[js.UndefOr[grammar | spelling | Boolean | Null]]): Self = this.set("aria-invalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-invalid`: Self = this.set("aria-invalid", js.undefined)
+    @scala.inline
+    def `setAria-keyshortcuts`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-keyshortcuts`: Self = this.set("aria-keyshortcuts", js.undefined)
+    @scala.inline
+    def `setAria-label`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def `setAria-labelledby`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    @scala.inline
+    def `setAria-level`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-level`: Self = this.set("aria-level", js.undefined)
+    @scala.inline
+    def `setAria-live`(value: Validator[js.UndefOr[off | assertive | polite | Null]]): Self = this.set("aria-live", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-live`: Self = this.set("aria-live", js.undefined)
+    @scala.inline
+    def `setAria-modal`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-modal`: Self = this.set("aria-modal", js.undefined)
+    @scala.inline
+    def `setAria-multiline`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiline`: Self = this.set("aria-multiline", js.undefined)
+    @scala.inline
+    def `setAria-multiselectable`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-multiselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiselectable`: Self = this.set("aria-multiselectable", js.undefined)
+    @scala.inline
+    def `setAria-orientation`(value: Validator[js.UndefOr[horizontal | vertical | Null]]): Self = this.set("aria-orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-orientation`: Self = this.set("aria-orientation", js.undefined)
+    @scala.inline
+    def `setAria-owns`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-owns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-owns`: Self = this.set("aria-owns", js.undefined)
+    @scala.inline
+    def `setAria-placeholder`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-placeholder`: Self = this.set("aria-placeholder", js.undefined)
+    @scala.inline
+    def `setAria-posinset`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-posinset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-posinset`: Self = this.set("aria-posinset", js.undefined)
+    @scala.inline
+    def `setAria-pressed`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = this.set("aria-pressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-pressed`: Self = this.set("aria-pressed", js.undefined)
+    @scala.inline
+    def `setAria-readonly`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    @scala.inline
+    def `setAria-relevant`(value: Validator[js.UndefOr[additions | (`additions text`) | all | removals | text | Null]]): Self = this.set("aria-relevant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-relevant`: Self = this.set("aria-relevant", js.undefined)
+    @scala.inline
+    def `setAria-required`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-required`: Self = this.set("aria-required", js.undefined)
+    @scala.inline
+    def `setAria-roledescription`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-roledescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-roledescription`: Self = this.set("aria-roledescription", js.undefined)
+    @scala.inline
+    def `setAria-rowcount`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-rowcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowcount`: Self = this.set("aria-rowcount", js.undefined)
+    @scala.inline
+    def `setAria-rowindex`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-rowindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowindex`: Self = this.set("aria-rowindex", js.undefined)
+    @scala.inline
+    def `setAria-rowspan`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-rowspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowspan`: Self = this.set("aria-rowspan", js.undefined)
+    @scala.inline
+    def `setAria-selected`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-selected`: Self = this.set("aria-selected", js.undefined)
+    @scala.inline
+    def `setAria-setsize`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-setsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-setsize`: Self = this.set("aria-setsize", js.undefined)
+    @scala.inline
+    def `setAria-sort`(value: Validator[js.UndefOr[none | ascending | descending | other | Null]]): Self = this.set("aria-sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-sort`: Self = this.set("aria-sort", js.undefined)
+    @scala.inline
+    def `setAria-valuemax`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-valuemax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemax`: Self = this.set("aria-valuemax", js.undefined)
+    @scala.inline
+    def `setAria-valuemin`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-valuemin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemin`: Self = this.set("aria-valuemin", js.undefined)
+    @scala.inline
+    def `setAria-valuenow`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-valuenow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuenow`: Self = this.set("aria-valuenow", js.undefined)
+    @scala.inline
+    def `setAria-valuetext`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-valuetext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuetext`: Self = this.set("aria-valuetext", js.undefined)
+    @scala.inline
+    def setAutoComplete(value: Validator[js.UndefOr[Null | String]]): Self = this.set("autoComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoComplete: Self = this.set("autoComplete", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setBordered(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("bordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBordered: Self = this.set("bordered", js.undefined)
+    @scala.inline
+    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClearIcon(value: Validator[js.UndefOr[Null | ReactNode]]): Self = this.set("clearIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearIcon: Self = this.set("clearIcon", js.undefined)
+    @scala.inline
+    def setDateRender(value: Validator[js.UndefOr[DateRender[Moment] | Null]]): Self = this.set("dateRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateRender: Self = this.set("dateRender", js.undefined)
+    @scala.inline
+    def setDefaultOpen(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("defaultOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOpen: Self = this.set("defaultOpen", js.undefined)
+    @scala.inline
+    def setDefaultOpenValue(value: Validator[js.UndefOr[Moment | Null]]): Self = this.set("defaultOpenValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOpenValue: Self = this.set("defaultOpenValue", js.undefined)
+    @scala.inline
+    def setDefaultPickerValue(value: Validator[js.UndefOr[Moment | Null]]): Self = this.set("defaultPickerValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPickerValue: Self = this.set("defaultPickerValue", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: Validator[js.UndefOr[Moment | Null]]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDirection(value: Validator[js.UndefOr[ltr | rtl | Null]]): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisabledDate(value: Validator[js.UndefOr[(js.Function1[/* date */ Moment, Boolean]) | Null]]): Self = this.set("disabledDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDate: Self = this.set("disabledDate", js.undefined)
+    @scala.inline
+    def setDisabledHours(value: Validator[js.UndefOr[js.Function0[js.Array[Double]] | Null]]): Self = this.set("disabledHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledHours: Self = this.set("disabledHours", js.undefined)
+    @scala.inline
+    def setDisabledMinutes(value: Validator[js.UndefOr[(js.Function1[/* hour */ Double, js.Array[Double]]) | Null]]): Self = this.set("disabledMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledMinutes: Self = this.set("disabledMinutes", js.undefined)
+    @scala.inline
+    def setDisabledSeconds(
+      value: Validator[
+          js.UndefOr[(js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]) | Null]
+        ]
+    ): Self = this.set("disabledSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledSeconds: Self = this.set("disabledSeconds", js.undefined)
+    @scala.inline
+    def setDropdownAlign(value: Validator[js.UndefOr[AlignType | Null]]): Self = this.set("dropdownAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropdownAlign: Self = this.set("dropdownAlign", js.undefined)
+    @scala.inline
+    def setDropdownClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("dropdownClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropdownClassName: Self = this.set("dropdownClassName", js.undefined)
+    @scala.inline
+    def setFormat(value: Validator[js.UndefOr[js.Array[String] | Null | String]]): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGetPopupContainer(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, HTMLElement]) | Null]]): Self = this.set("getPopupContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetPopupContainer: Self = this.set("getPopupContainer", js.undefined)
+    @scala.inline
+    def setHideDisabledOptions(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("hideDisabledOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideDisabledOptions: Self = this.set("hideDisabledOptions", js.undefined)
+    @scala.inline
+    def setHourStep(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("hourStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHourStep: Self = this.set("hourStep", js.undefined)
+    @scala.inline
+    def setId(value: Validator[js.UndefOr[Null | String]]): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInputReadOnly(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("inputReadOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputReadOnly: Self = this.set("inputReadOnly", js.undefined)
+    @scala.inline
+    def setKey(value: Validator[js.UndefOr[Key | Null]]): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLocale(value: Validator[js.UndefOr[Null | PickerLocale]]): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMinuteStep(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("minuteStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinuteStep: Self = this.set("minuteStep", js.undefined)
+    @scala.inline
+    def setMode(value: Validator[js.UndefOr[Null | PanelMode]]): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setMonthCellRender(value: Validator[js.UndefOr[MonthCellRender[Moment] | Null]]): Self = this.set("monthCellRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthCellRender: Self = this.set("monthCellRender", js.undefined)
+    @scala.inline
+    def setName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnBlur(value: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: Validator[js.UndefOr[(js.Function2[Moment | Null, /* dateString */ String, Unit]) | Null]]): Self = this.set("onChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnContextMenu(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onContextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    @scala.inline
+    def setOnFocus(value: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]): Self = this.set("onFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onMouseDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onMouseEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onMouseLeave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onMouseUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnOk(value: Validator[js.UndefOr[(js.Function1[/* date */ Moment, Unit]) | Null]]): Self = this.set("onOk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnOk: Self = this.set("onOk", js.undefined)
+    @scala.inline
+    def setOnOpenChange(value: Validator[js.UndefOr[(js.Function1[/* open */ Boolean, Unit]) | Null]]): Self = this.set("onOpenChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnOpenChange: Self = this.set("onOpenChange", js.undefined)
+    @scala.inline
+    def setOnPanelChange(value: Validator[js.UndefOr[Null | OnPanelChange[Moment]]]): Self = this.set("onPanelChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPanelChange: Self = this.set("onPanelChange", js.undefined)
+    @scala.inline
+    def setOnSelect(value: Validator[js.UndefOr[(js.Function1[/* value */ Moment, Unit]) | Null]]): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOpen(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setPanelRender(value: Validator[js.UndefOr[(js.Function1[/* originPanel */ ReactNode, ReactNode]) | Null]]): Self = this.set("panelRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanelRender: Self = this.set("panelRender", js.undefined)
+    @scala.inline
+    def setPickerRef(value: Validator[js.UndefOr[MutableRefObject[PickerRefConfig] | Null]]): Self = this.set("pickerRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickerRef: Self = this.set("pickerRef", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: Validator[js.UndefOr[Null | String]]): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopupClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("popupClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupClassName: Self = this.set("popupClassName", js.undefined)
+    @scala.inline
+    def setPopupStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = this.set("popupStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupStyle: Self = this.set("popupStyle", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: Validator[js.UndefOr[Null | String]]): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setRef(value: Validator[js.UndefOr[Null | Ref[_]]]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setRenderExtraFooter(value: Validator[js.UndefOr[(js.Function1[/* mode */ PanelMode, ReactNode]) | Null]]): Self = this.set("renderExtraFooter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderExtraFooter: Self = this.set("renderExtraFooter", js.undefined)
+    @scala.inline
+    def setRole(value: Validator[js.UndefOr[Null | String]]): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setSecondStep(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("secondStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondStep: Self = this.set("secondStep", js.undefined)
+    @scala.inline
+    def setShowHour(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("showHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowHour: Self = this.set("showHour", js.undefined)
+    @scala.inline
+    def setShowMinute(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("showMinute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMinute: Self = this.set("showMinute", js.undefined)
+    @scala.inline
+    def setShowNow(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("showNow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNow: Self = this.set("showNow", js.undefined)
+    @scala.inline
+    def setShowSecond(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("showSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSecond: Self = this.set("showSecond", js.undefined)
+    @scala.inline
+    def setSize(value: Validator[js.UndefOr[Null | SizeType]]): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSuffixIcon(value: Validator[js.UndefOr[Null | ReactNode]]): Self = this.set("suffixIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffixIcon: Self = this.set("suffixIcon", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTransitionName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    @scala.inline
+    def setUse12Hours(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("use12Hours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUse12Hours: Self = this.set("use12Hours", js.undefined)
+    @scala.inline
+    def setValue(value: Validator[js.UndefOr[Moment | Null]]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

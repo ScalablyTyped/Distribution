@@ -42,26 +42,54 @@ trait KinesisSettings extends js.Object {
 
 object KinesisSettings {
   @scala.inline
-  def apply(
-    IncludeControlDetails: js.UndefOr[BooleanOptional] = js.undefined,
-    IncludePartitionValue: js.UndefOr[BooleanOptional] = js.undefined,
-    IncludeTableAlterOperations: js.UndefOr[BooleanOptional] = js.undefined,
-    IncludeTransactionDetails: js.UndefOr[BooleanOptional] = js.undefined,
-    MessageFormat: MessageFormatValue = null,
-    PartitionIncludeSchemaTable: js.UndefOr[BooleanOptional] = js.undefined,
-    ServiceAccessRoleArn: String = null,
-    StreamArn: String = null
-  ): KinesisSettings = {
+  def apply(): KinesisSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IncludeControlDetails)) __obj.updateDynamic("IncludeControlDetails")(IncludeControlDetails.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludePartitionValue)) __obj.updateDynamic("IncludePartitionValue")(IncludePartitionValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeTableAlterOperations)) __obj.updateDynamic("IncludeTableAlterOperations")(IncludeTableAlterOperations.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeTransactionDetails)) __obj.updateDynamic("IncludeTransactionDetails")(IncludeTransactionDetails.get.asInstanceOf[js.Any])
-    if (MessageFormat != null) __obj.updateDynamic("MessageFormat")(MessageFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(PartitionIncludeSchemaTable)) __obj.updateDynamic("PartitionIncludeSchemaTable")(PartitionIncludeSchemaTable.get.asInstanceOf[js.Any])
-    if (ServiceAccessRoleArn != null) __obj.updateDynamic("ServiceAccessRoleArn")(ServiceAccessRoleArn.asInstanceOf[js.Any])
-    if (StreamArn != null) __obj.updateDynamic("StreamArn")(StreamArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisSettings]
   }
+  @scala.inline
+  implicit class KinesisSettingsOps[Self <: KinesisSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncludeControlDetails(value: BooleanOptional): Self = this.set("IncludeControlDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeControlDetails: Self = this.set("IncludeControlDetails", js.undefined)
+    @scala.inline
+    def setIncludePartitionValue(value: BooleanOptional): Self = this.set("IncludePartitionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludePartitionValue: Self = this.set("IncludePartitionValue", js.undefined)
+    @scala.inline
+    def setIncludeTableAlterOperations(value: BooleanOptional): Self = this.set("IncludeTableAlterOperations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeTableAlterOperations: Self = this.set("IncludeTableAlterOperations", js.undefined)
+    @scala.inline
+    def setIncludeTransactionDetails(value: BooleanOptional): Self = this.set("IncludeTransactionDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeTransactionDetails: Self = this.set("IncludeTransactionDetails", js.undefined)
+    @scala.inline
+    def setMessageFormat(value: MessageFormatValue): Self = this.set("MessageFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageFormat: Self = this.set("MessageFormat", js.undefined)
+    @scala.inline
+    def setPartitionIncludeSchemaTable(value: BooleanOptional): Self = this.set("PartitionIncludeSchemaTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionIncludeSchemaTable: Self = this.set("PartitionIncludeSchemaTable", js.undefined)
+    @scala.inline
+    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccessRoleArn: Self = this.set("ServiceAccessRoleArn", js.undefined)
+    @scala.inline
+    def setStreamArn(value: String): Self = this.set("StreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamArn: Self = this.set("StreamArn", js.undefined)
+  }
+  
 }
 

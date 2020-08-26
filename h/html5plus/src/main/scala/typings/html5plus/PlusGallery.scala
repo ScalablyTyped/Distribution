@@ -42,7 +42,23 @@ trait PlusGallery extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
   def pick(): Unit = js.native
+  def pick(
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusGalleryGalleryOptions
+  ): Unit = js.native
+  def pick(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def pick(
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    options: PlusGalleryGalleryOptions
+  ): Unit = js.native
   def pick(succesCB: js.Function1[/* result */ String, Unit]): Unit = js.native
+  def pick(
+    succesCB: js.Function1[/* result */ String, Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusGalleryGalleryOptions
+  ): Unit = js.native
   def pick(
     succesCB: js.Function1[/* result */ String, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
@@ -61,7 +77,26 @@ trait PlusGallery extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
     */
   def save(): Unit = js.native
+  def save(
+    path: js.UndefOr[scala.Nothing],
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusGalleryGallerySaveEvent, Unit]
+  ): Unit = js.native
+  def save(
+    path: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusGalleryGallerySaveEvent, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def save(path: String): Unit = js.native
+  def save(
+    path: String,
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def save(path: String, succesCB: js.Function1[/* result */ PlusGalleryGallerySaveEvent, Unit]): Unit = js.native
   def save(
     path: String,

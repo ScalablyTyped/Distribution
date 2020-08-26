@@ -12,7 +12,7 @@ A minimal DOM implementation
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 19 |
-| # downloads        | 114068511 |
+| # downloads        | 116864519 |
 | # stars            | 8 |
 
 ## Links

@@ -74,42 +74,94 @@ trait OptionGroupOption extends js.Object {
 
 object OptionGroupOption {
   @scala.inline
-  def apply(
-    DefaultPort: js.UndefOr[IntegerOptional] = js.undefined,
-    Description: String = null,
-    EngineName: String = null,
-    MajorEngineVersion: String = null,
-    MinimumRequiredMinorEngineVersion: String = null,
-    Name: String = null,
-    OptionGroupOptionSettings: OptionGroupOptionSettingsList = null,
-    OptionGroupOptionVersions: OptionGroupOptionVersionsList = null,
-    OptionsConflictsWith: OptionsConflictsWith = null,
-    OptionsDependedOn: OptionsDependedOn = null,
-    Permanent: js.UndefOr[Boolean] = js.undefined,
-    Persistent: js.UndefOr[Boolean] = js.undefined,
-    PortRequired: js.UndefOr[Boolean] = js.undefined,
-    RequiresAutoMinorEngineVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    SupportsOptionVersionDowngrade: js.UndefOr[BooleanOptional] = js.undefined,
-    VpcOnly: js.UndefOr[Boolean] = js.undefined
-  ): OptionGroupOption = {
+  def apply(): OptionGroupOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DefaultPort)) __obj.updateDynamic("DefaultPort")(DefaultPort.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EngineName != null) __obj.updateDynamic("EngineName")(EngineName.asInstanceOf[js.Any])
-    if (MajorEngineVersion != null) __obj.updateDynamic("MajorEngineVersion")(MajorEngineVersion.asInstanceOf[js.Any])
-    if (MinimumRequiredMinorEngineVersion != null) __obj.updateDynamic("MinimumRequiredMinorEngineVersion")(MinimumRequiredMinorEngineVersion.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OptionGroupOptionSettings != null) __obj.updateDynamic("OptionGroupOptionSettings")(OptionGroupOptionSettings.asInstanceOf[js.Any])
-    if (OptionGroupOptionVersions != null) __obj.updateDynamic("OptionGroupOptionVersions")(OptionGroupOptionVersions.asInstanceOf[js.Any])
-    if (OptionsConflictsWith != null) __obj.updateDynamic("OptionsConflictsWith")(OptionsConflictsWith.asInstanceOf[js.Any])
-    if (OptionsDependedOn != null) __obj.updateDynamic("OptionsDependedOn")(OptionsDependedOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Permanent)) __obj.updateDynamic("Permanent")(Permanent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Persistent)) __obj.updateDynamic("Persistent")(Persistent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PortRequired)) __obj.updateDynamic("PortRequired")(PortRequired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequiresAutoMinorEngineVersionUpgrade)) __obj.updateDynamic("RequiresAutoMinorEngineVersionUpgrade")(RequiresAutoMinorEngineVersionUpgrade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsOptionVersionDowngrade)) __obj.updateDynamic("SupportsOptionVersionDowngrade")(SupportsOptionVersionDowngrade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(VpcOnly)) __obj.updateDynamic("VpcOnly")(VpcOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionGroupOption]
   }
+  @scala.inline
+  implicit class OptionGroupOptionOps[Self <: OptionGroupOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultPort(value: IntegerOptional): Self = this.set("DefaultPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPort: Self = this.set("DefaultPort", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEngineName(value: String): Self = this.set("EngineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineName: Self = this.set("EngineName", js.undefined)
+    @scala.inline
+    def setMajorEngineVersion(value: String): Self = this.set("MajorEngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorEngineVersion: Self = this.set("MajorEngineVersion", js.undefined)
+    @scala.inline
+    def setMinimumRequiredMinorEngineVersion(value: String): Self = this.set("MinimumRequiredMinorEngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumRequiredMinorEngineVersion: Self = this.set("MinimumRequiredMinorEngineVersion", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOptionGroupOptionSettingsVarargs(value: OptionGroupOptionSetting*): Self = this.set("OptionGroupOptionSettings", js.Array(value :_*))
+    @scala.inline
+    def setOptionGroupOptionSettings(value: OptionGroupOptionSettingsList): Self = this.set("OptionGroupOptionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupOptionSettings: Self = this.set("OptionGroupOptionSettings", js.undefined)
+    @scala.inline
+    def setOptionGroupOptionVersionsVarargs(value: OptionVersion*): Self = this.set("OptionGroupOptionVersions", js.Array(value :_*))
+    @scala.inline
+    def setOptionGroupOptionVersions(value: OptionGroupOptionVersionsList): Self = this.set("OptionGroupOptionVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupOptionVersions: Self = this.set("OptionGroupOptionVersions", js.undefined)
+    @scala.inline
+    def setOptionsConflictsWithVarargs(value: String*): Self = this.set("OptionsConflictsWith", js.Array(value :_*))
+    @scala.inline
+    def setOptionsConflictsWith(value: OptionsConflictsWith): Self = this.set("OptionsConflictsWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionsConflictsWith: Self = this.set("OptionsConflictsWith", js.undefined)
+    @scala.inline
+    def setOptionsDependedOnVarargs(value: String*): Self = this.set("OptionsDependedOn", js.Array(value :_*))
+    @scala.inline
+    def setOptionsDependedOn(value: OptionsDependedOn): Self = this.set("OptionsDependedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionsDependedOn: Self = this.set("OptionsDependedOn", js.undefined)
+    @scala.inline
+    def setPermanent(value: Boolean): Self = this.set("Permanent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermanent: Self = this.set("Permanent", js.undefined)
+    @scala.inline
+    def setPersistent(value: Boolean): Self = this.set("Persistent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersistent: Self = this.set("Persistent", js.undefined)
+    @scala.inline
+    def setPortRequired(value: Boolean): Self = this.set("PortRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortRequired: Self = this.set("PortRequired", js.undefined)
+    @scala.inline
+    def setRequiresAutoMinorEngineVersionUpgrade(value: Boolean): Self = this.set("RequiresAutoMinorEngineVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiresAutoMinorEngineVersionUpgrade: Self = this.set("RequiresAutoMinorEngineVersionUpgrade", js.undefined)
+    @scala.inline
+    def setSupportsOptionVersionDowngrade(value: BooleanOptional): Self = this.set("SupportsOptionVersionDowngrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsOptionVersionDowngrade: Self = this.set("SupportsOptionVersionDowngrade", js.undefined)
+    @scala.inline
+    def setVpcOnly(value: Boolean): Self = this.set("VpcOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcOnly: Self = this.set("VpcOnly", js.undefined)
+  }
+  
 }
 

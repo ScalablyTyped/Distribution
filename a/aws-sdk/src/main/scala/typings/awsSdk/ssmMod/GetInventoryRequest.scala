@@ -30,20 +30,48 @@ trait GetInventoryRequest extends js.Object {
 
 object GetInventoryRequest {
   @scala.inline
-  def apply(
-    Aggregators: InventoryAggregatorList = null,
-    Filters: InventoryFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    ResultAttributes: ResultAttributeList = null
-  ): GetInventoryRequest = {
+  def apply(): GetInventoryRequest = {
     val __obj = js.Dynamic.literal()
-    if (Aggregators != null) __obj.updateDynamic("Aggregators")(Aggregators.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ResultAttributes != null) __obj.updateDynamic("ResultAttributes")(ResultAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInventoryRequest]
   }
+  @scala.inline
+  implicit class GetInventoryRequestOps[Self <: GetInventoryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregatorsVarargs(value: InventoryAggregator*): Self = this.set("Aggregators", js.Array(value :_*))
+    @scala.inline
+    def setAggregators(value: InventoryAggregatorList): Self = this.set("Aggregators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregators: Self = this.set("Aggregators", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: InventoryFilter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: InventoryFilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setResultAttributesVarargs(value: ResultAttribute*): Self = this.set("ResultAttributes", js.Array(value :_*))
+    @scala.inline
+    def setResultAttributes(value: ResultAttributeList): Self = this.set("ResultAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultAttributes: Self = this.set("ResultAttributes", js.undefined)
+  }
+  
 }
 

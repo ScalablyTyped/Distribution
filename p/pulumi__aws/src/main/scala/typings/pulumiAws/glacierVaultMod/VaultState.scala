@@ -31,29 +31,55 @@ trait VaultState extends js.Object {
     */
   val notifications: js.UndefOr[Input[js.Array[Input[VaultNotification]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object VaultState {
   @scala.inline
-  def apply(
-    accessPolicy: Input[String] = null,
-    arn: Input[String] = null,
-    location: Input[String] = null,
-    name: Input[String] = null,
-    notifications: Input[js.Array[Input[VaultNotification]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): VaultState = {
+  def apply(): VaultState = {
     val __obj = js.Dynamic.literal()
-    if (accessPolicy != null) __obj.updateDynamic("accessPolicy")(accessPolicy.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notifications != null) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[VaultState]
   }
+  @scala.inline
+  implicit class VaultStateOps[Self <: VaultState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessPolicy(value: Input[String]): Self = this.set("accessPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessPolicy: Self = this.set("accessPolicy", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setLocation(value: Input[String]): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotificationsVarargs(value: Input[VaultNotification]*): Self = this.set("notifications", js.Array(value :_*))
+    @scala.inline
+    def setNotifications(value: Input[js.Array[Input[VaultNotification]]]): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifications: Self = this.set("notifications", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "zen-observable-ts" : "0.8.20"
+      "zen-observable-ts" : "0.8.21"
     }
   ],
   "test-dependencies" : [
     {
-      "zen-observable-ts" : "0.8.20"
+      "zen-observable-ts" : "0.8.21"
     }
   ],
   "compile-devDependencies" : [

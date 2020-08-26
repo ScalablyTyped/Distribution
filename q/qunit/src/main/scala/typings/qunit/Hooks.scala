@@ -4,40 +4,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Hooks extends js.Object {
   /**
     * Runs after the last test. If additional tests are defined after the
     * module's queue has emptied, it will not run this hook again.
     */
-  var after: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.undefined
+  var after: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.native
   /**
     * Runs after each test.
     */
-  var afterEach: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.undefined
+  var afterEach: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.native
   /**
     * Runs before the first test.
     */
-  var before: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.undefined
+  var before: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.native
   /**
     * Runs before each test.
     */
-  var beforeEach: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.undefined
+  var beforeEach: js.UndefOr[js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]]] = js.native
 }
 
 object Hooks {
   @scala.inline
-  def apply(
-    after: /* assert */ Assert => Unit | js.Promise[Unit] = null,
-    afterEach: /* assert */ Assert => Unit | js.Promise[Unit] = null,
-    before: /* assert */ Assert => Unit | js.Promise[Unit] = null,
-    beforeEach: /* assert */ Assert => Unit | js.Promise[Unit] = null
-  ): Hooks = {
+  def apply(): Hooks = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
-    if (afterEach != null) __obj.updateDynamic("afterEach")(js.Any.fromFunction1(afterEach))
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
-    if (beforeEach != null) __obj.updateDynamic("beforeEach")(js.Any.fromFunction1(beforeEach))
     __obj.asInstanceOf[Hooks]
   }
+  @scala.inline
+  implicit class HooksOps[Self <: Hooks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfter(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = this.set("after", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfter: Self = this.set("after", js.undefined)
+    @scala.inline
+    def setAfterEach(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = this.set("afterEach", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterEach: Self = this.set("afterEach", js.undefined)
+    @scala.inline
+    def setBefore(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = this.set("before", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBefore: Self = this.set("before", js.undefined)
+    @scala.inline
+    def setBeforeEach(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = this.set("beforeEach", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeEach: Self = this.set("beforeEach", js.undefined)
+  }
+  
 }
 

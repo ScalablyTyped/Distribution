@@ -9,110 +9,151 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MatchImageSnapshotOptions extends js.Object {
   /**
     * If set to true, the build will not fail when the screenshots to compare have different sizes.
     * @default false
     */
-  var allowSizeMismatch: js.UndefOr[Boolean] = js.undefined
+  var allowSizeMismatch: js.UndefOr[Boolean] = js.native
   /**
     * Applies Gaussian Blur on compared images, accepts radius in pixels as value. Useful when you have noise after
     * scaling images per different resolutions on your target website, usually setting its value to 1-2 should be
     * enough to solve that problem.
     * @default 0.
     */
-  var blur: js.UndefOr[Double] = js.undefined
+  var blur: js.UndefOr[Double] = js.native
   /**
     * Custom config passed to 'pixelmatch'
     */
-  var customDiffConfig: js.UndefOr[PixelmatchOptions] = js.undefined
+  var customDiffConfig: js.UndefOr[PixelmatchOptions] = js.native
   /**
     * A custom absolute path of a directory to keep this diff in
     */
-  var customDiffDir: js.UndefOr[String] = js.undefined
+  var customDiffDir: js.UndefOr[String] = js.native
   /**
     * A custom name to give this snapshot. If not provided, one is computed automatically. When a function is provided
     * it is called with an object containing testPath, currentTestName, counter and defaultIdentifier as its first
     * argument. The function must return an identifier to use for the snapshot.
     */
-  var customSnapshotIdentifier: js.UndefOr[(js.Function1[/* parameters */ Counter, String]) | String] = js.undefined
+  var customSnapshotIdentifier: js.UndefOr[(js.Function1[/* parameters */ Counter, String]) | String] = js.native
   /**
     * Custom snapshots directory.
     * Absolute path of a directory to keep the snapshot in.
     */
-  var customSnapshotsDir: js.UndefOr[String] = js.undefined
+  var customSnapshotsDir: js.UndefOr[String] = js.native
   /**
     * Changes diff image layout direction.
     * @default 'horizontal'
     */
-  var diffDirection: js.UndefOr[horizontal | vertical] = js.undefined
+  var diffDirection: js.UndefOr[horizontal | vertical] = js.native
   /**
     * Will output base64 string of a diff image to console in case of failed tests (in addition to creating a diff image).
     * This string can be copy-pasted to a browser address string to preview the diff for a failed test.
     * @default false
     */
-  var dumpDiffToConsole: js.UndefOr[Boolean] = js.undefined
+  var dumpDiffToConsole: js.UndefOr[Boolean] = js.native
   /**
     * Sets the threshold that would trigger a test failure based on the failureThresholdType selected. This is different
     * to the customDiffConfig.threshold above - the customDiffConfig.threshold is the per pixel failure threshold, whereas
     * this is the failure threshold for the entire comparison.
     * @default 0.
     */
-  var failureThreshold: js.UndefOr[Double] = js.undefined
+  var failureThreshold: js.UndefOr[Double] = js.native
   /**
     * Sets the type of threshold that would trigger a failure.
     * @default 'pixel'.
     */
-  var failureThresholdType: js.UndefOr[pixel | percent] = js.undefined
+  var failureThresholdType: js.UndefOr[pixel | percent] = js.native
   /**
     * Removes coloring from the console output, useful if storing the results to a file.
     * @default false.
     */
-  var noColors: js.UndefOr[Boolean] = js.undefined
+  var noColors: js.UndefOr[Boolean] = js.native
   /**
     * Runs the diff in process without spawning a child process.
     * @default false.
     */
-  var runInProcess: js.UndefOr[Boolean] = js.undefined
+  var runInProcess: js.UndefOr[Boolean] = js.native
   /**
     * Updates a snapshot even if it passed the threshold against the existing one.
     * @default false.
     */
-  var updatePassedSnapshot: js.UndefOr[Boolean] = js.undefined
+  var updatePassedSnapshot: js.UndefOr[Boolean] = js.native
 }
 
 object MatchImageSnapshotOptions {
   @scala.inline
-  def apply(
-    allowSizeMismatch: js.UndefOr[Boolean] = js.undefined,
-    blur: js.UndefOr[Double] = js.undefined,
-    customDiffConfig: PixelmatchOptions = null,
-    customDiffDir: String = null,
-    customSnapshotIdentifier: (js.Function1[/* parameters */ Counter, String]) | String = null,
-    customSnapshotsDir: String = null,
-    diffDirection: horizontal | vertical = null,
-    dumpDiffToConsole: js.UndefOr[Boolean] = js.undefined,
-    failureThreshold: js.UndefOr[Double] = js.undefined,
-    failureThresholdType: pixel | percent = null,
-    noColors: js.UndefOr[Boolean] = js.undefined,
-    runInProcess: js.UndefOr[Boolean] = js.undefined,
-    updatePassedSnapshot: js.UndefOr[Boolean] = js.undefined
-  ): MatchImageSnapshotOptions = {
+  def apply(): MatchImageSnapshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSizeMismatch)) __obj.updateDynamic("allowSizeMismatch")(allowSizeMismatch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur.get.asInstanceOf[js.Any])
-    if (customDiffConfig != null) __obj.updateDynamic("customDiffConfig")(customDiffConfig.asInstanceOf[js.Any])
-    if (customDiffDir != null) __obj.updateDynamic("customDiffDir")(customDiffDir.asInstanceOf[js.Any])
-    if (customSnapshotIdentifier != null) __obj.updateDynamic("customSnapshotIdentifier")(customSnapshotIdentifier.asInstanceOf[js.Any])
-    if (customSnapshotsDir != null) __obj.updateDynamic("customSnapshotsDir")(customSnapshotsDir.asInstanceOf[js.Any])
-    if (diffDirection != null) __obj.updateDynamic("diffDirection")(diffDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(dumpDiffToConsole)) __obj.updateDynamic("dumpDiffToConsole")(dumpDiffToConsole.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(failureThreshold)) __obj.updateDynamic("failureThreshold")(failureThreshold.get.asInstanceOf[js.Any])
-    if (failureThresholdType != null) __obj.updateDynamic("failureThresholdType")(failureThresholdType.asInstanceOf[js.Any])
-    if (!js.isUndefined(noColors)) __obj.updateDynamic("noColors")(noColors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(runInProcess)) __obj.updateDynamic("runInProcess")(runInProcess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatePassedSnapshot)) __obj.updateDynamic("updatePassedSnapshot")(updatePassedSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchImageSnapshotOptions]
   }
+  @scala.inline
+  implicit class MatchImageSnapshotOptionsOps[Self <: MatchImageSnapshotOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowSizeMismatch(value: Boolean): Self = this.set("allowSizeMismatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSizeMismatch: Self = this.set("allowSizeMismatch", js.undefined)
+    @scala.inline
+    def setBlur(value: Double): Self = this.set("blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlur: Self = this.set("blur", js.undefined)
+    @scala.inline
+    def setCustomDiffConfig(value: PixelmatchOptions): Self = this.set("customDiffConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDiffConfig: Self = this.set("customDiffConfig", js.undefined)
+    @scala.inline
+    def setCustomDiffDir(value: String): Self = this.set("customDiffDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDiffDir: Self = this.set("customDiffDir", js.undefined)
+    @scala.inline
+    def setCustomSnapshotIdentifierFunction1(value: /* parameters */ Counter => String): Self = this.set("customSnapshotIdentifier", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCustomSnapshotIdentifier(value: (js.Function1[/* parameters */ Counter, String]) | String): Self = this.set("customSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSnapshotIdentifier: Self = this.set("customSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setCustomSnapshotsDir(value: String): Self = this.set("customSnapshotsDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSnapshotsDir: Self = this.set("customSnapshotsDir", js.undefined)
+    @scala.inline
+    def setDiffDirection(value: horizontal | vertical): Self = this.set("diffDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiffDirection: Self = this.set("diffDirection", js.undefined)
+    @scala.inline
+    def setDumpDiffToConsole(value: Boolean): Self = this.set("dumpDiffToConsole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDumpDiffToConsole: Self = this.set("dumpDiffToConsole", js.undefined)
+    @scala.inline
+    def setFailureThreshold(value: Double): Self = this.set("failureThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureThreshold: Self = this.set("failureThreshold", js.undefined)
+    @scala.inline
+    def setFailureThresholdType(value: pixel | percent): Self = this.set("failureThresholdType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureThresholdType: Self = this.set("failureThresholdType", js.undefined)
+    @scala.inline
+    def setNoColors(value: Boolean): Self = this.set("noColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoColors: Self = this.set("noColors", js.undefined)
+    @scala.inline
+    def setRunInProcess(value: Boolean): Self = this.set("runInProcess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunInProcess: Self = this.set("runInProcess", js.undefined)
+    @scala.inline
+    def setUpdatePassedSnapshot(value: Boolean): Self = this.set("updatePassedSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatePassedSnapshot: Self = this.set("updatePassedSnapshot", js.undefined)
+  }
+  
 }
 

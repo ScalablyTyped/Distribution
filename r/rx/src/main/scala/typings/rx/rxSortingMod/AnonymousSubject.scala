@@ -1,0 +1,12 @@
+package typings.rx.rxSortingMod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.rx.Rx.AnonymousSubjectStatic
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("rx.sorting", "AnonymousSubject")
+@js.native
+object AnonymousSubject extends TopLevel[AnonymousSubjectStatic]
+

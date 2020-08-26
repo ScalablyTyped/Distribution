@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "dom-align"
-version := "1.12.0-8c072b"
-scalaVersion := "2.13.2"
+version := "1.12.0-7d0178"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

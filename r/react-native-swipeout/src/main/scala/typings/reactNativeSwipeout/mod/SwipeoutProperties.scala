@@ -4,67 +4,116 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SwipeoutProperties extends js.Object {
-  var autoClose: js.UndefOr[Boolean] = js.undefined
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var buttonWidth: js.UndefOr[Double] = js.undefined
-  var close: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var left: js.UndefOr[js.Array[SwipeoutButtonProperties]] = js.undefined
+  var autoClose: js.UndefOr[Boolean] = js.native
+  var backgroundColor: js.UndefOr[String] = js.native
+  var buttonWidth: js.UndefOr[Double] = js.native
+  var close: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[js.Array[SwipeoutButtonProperties]] = js.native
   var onClose: js.UndefOr[
     js.Function3[/* sectionId */ Double, /* rowId */ Double, /* direction */ String, Unit]
-  ] = js.undefined
+  ] = js.native
   var onOpen: js.UndefOr[
     js.Function3[/* sectionId */ Double, /* rowId */ Double, /* direction */ String, Unit]
-  ] = js.undefined
-  var openLeft: js.UndefOr[Boolean] = js.undefined
-  var openRight: js.UndefOr[Boolean] = js.undefined
-  var right: js.UndefOr[js.Array[SwipeoutButtonProperties]] = js.undefined
-  var rowId: js.UndefOr[Double] = js.undefined
-  var scroll: js.UndefOr[js.Function1[/* scrollEnabled */ Boolean, Unit]] = js.undefined
-  var sectionId: js.UndefOr[Double] = js.undefined
-  var sensitivity: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
+  ] = js.native
+  var openLeft: js.UndefOr[Boolean] = js.native
+  var openRight: js.UndefOr[Boolean] = js.native
+  var right: js.UndefOr[js.Array[SwipeoutButtonProperties]] = js.native
+  var rowId: js.UndefOr[Double] = js.native
+  var scroll: js.UndefOr[js.Function1[/* scrollEnabled */ Boolean, Unit]] = js.native
+  var sectionId: js.UndefOr[Double] = js.native
+  var sensitivity: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[js.Object] = js.native
 }
 
 object SwipeoutProperties {
   @scala.inline
-  def apply(
-    autoClose: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: String = null,
-    buttonWidth: js.UndefOr[Double] = js.undefined,
-    close: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    left: js.Array[SwipeoutButtonProperties] = null,
-    onClose: (/* sectionId */ Double, /* rowId */ Double, /* direction */ String) => Unit = null,
-    onOpen: (/* sectionId */ Double, /* rowId */ Double, /* direction */ String) => Unit = null,
-    openLeft: js.UndefOr[Boolean] = js.undefined,
-    openRight: js.UndefOr[Boolean] = js.undefined,
-    right: js.Array[SwipeoutButtonProperties] = null,
-    rowId: js.UndefOr[Double] = js.undefined,
-    scroll: /* scrollEnabled */ Boolean => Unit = null,
-    sectionId: js.UndefOr[Double] = js.undefined,
-    sensitivity: js.UndefOr[Double] = js.undefined,
-    style: js.Object = null
-  ): SwipeoutProperties = {
+  def apply(): SwipeoutProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonWidth)) __obj.updateDynamic("buttonWidth")(buttonWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction3(onClose))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction3(onOpen))
-    if (!js.isUndefined(openLeft)) __obj.updateDynamic("openLeft")(openLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(openRight)) __obj.updateDynamic("openRight")(openRight.get.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowId)) __obj.updateDynamic("rowId")(rowId.get.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(js.Any.fromFunction1(scroll))
-    if (!js.isUndefined(sectionId)) __obj.updateDynamic("sectionId")(sectionId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitivity)) __obj.updateDynamic("sensitivity")(sensitivity.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeoutProperties]
   }
+  @scala.inline
+  implicit class SwipeoutPropertiesOps[Self <: SwipeoutProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoClose(value: Boolean): Self = this.set("autoClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoClose: Self = this.set("autoClose", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setButtonWidth(value: Double): Self = this.set("buttonWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonWidth: Self = this.set("buttonWidth", js.undefined)
+    @scala.inline
+    def setClose(value: Boolean): Self = this.set("close", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setLeftVarargs(value: SwipeoutButtonProperties*): Self = this.set("left", js.Array(value :_*))
+    @scala.inline
+    def setLeft(value: js.Array[SwipeoutButtonProperties]): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setOnClose(value: (/* sectionId */ Double, /* rowId */ Double, /* direction */ String) => Unit): Self = this.set("onClose", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnOpen(value: (/* sectionId */ Double, /* rowId */ Double, /* direction */ String) => Unit): Self = this.set("onOpen", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    @scala.inline
+    def setOpenLeft(value: Boolean): Self = this.set("openLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenLeft: Self = this.set("openLeft", js.undefined)
+    @scala.inline
+    def setOpenRight(value: Boolean): Self = this.set("openRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenRight: Self = this.set("openRight", js.undefined)
+    @scala.inline
+    def setRightVarargs(value: SwipeoutButtonProperties*): Self = this.set("right", js.Array(value :_*))
+    @scala.inline
+    def setRight(value: js.Array[SwipeoutButtonProperties]): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setRowId(value: Double): Self = this.set("rowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowId: Self = this.set("rowId", js.undefined)
+    @scala.inline
+    def setScroll(value: /* scrollEnabled */ Boolean => Unit): Self = this.set("scroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteScroll: Self = this.set("scroll", js.undefined)
+    @scala.inline
+    def setSectionId(value: Double): Self = this.set("sectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSectionId: Self = this.set("sectionId", js.undefined)
+    @scala.inline
+    def setSensitivity(value: Double): Self = this.set("sensitivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSensitivity: Self = this.set("sensitivity", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

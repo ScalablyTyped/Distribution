@@ -86,48 +86,102 @@ trait AwsRdsDbInstanceDetails extends js.Object {
 
 object AwsRdsDbInstanceDetails {
   @scala.inline
-  def apply(
-    AssociatedRoles: AwsRdsDbInstanceAssociatedRoles = null,
-    CACertificateIdentifier: NonEmptyString = null,
-    DBClusterIdentifier: NonEmptyString = null,
-    DBInstanceClass: NonEmptyString = null,
-    DBInstanceIdentifier: NonEmptyString = null,
-    DBName: NonEmptyString = null,
-    DbInstancePort: js.UndefOr[Integer] = js.undefined,
-    DbiResourceId: NonEmptyString = null,
-    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
-    Endpoint: AwsRdsDbInstanceEndpoint = null,
-    Engine: NonEmptyString = null,
-    EngineVersion: NonEmptyString = null,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined,
-    InstanceCreateTime: NonEmptyString = null,
-    KmsKeyId: NonEmptyString = null,
-    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
-    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
-    TdeCredentialArn: NonEmptyString = null,
-    VpcSecurityGroups: AwsRdsDbInstanceVpcSecurityGroups = null
-  ): AwsRdsDbInstanceDetails = {
+  def apply(): AwsRdsDbInstanceDetails = {
     val __obj = js.Dynamic.literal()
-    if (AssociatedRoles != null) __obj.updateDynamic("AssociatedRoles")(AssociatedRoles.asInstanceOf[js.Any])
-    if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier.asInstanceOf[js.Any])
-    if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
-    if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass.asInstanceOf[js.Any])
-    if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier.asInstanceOf[js.Any])
-    if (DBName != null) __obj.updateDynamic("DBName")(DBName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DbInstancePort)) __obj.updateDynamic("DbInstancePort")(DbInstancePort.get.asInstanceOf[js.Any])
-    if (DbiResourceId != null) __obj.updateDynamic("DbiResourceId")(DbiResourceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled.get.asInstanceOf[js.Any])
-    if (InstanceCreateTime != null) __obj.updateDynamic("InstanceCreateTime")(InstanceCreateTime.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.get.asInstanceOf[js.Any])
-    if (TdeCredentialArn != null) __obj.updateDynamic("TdeCredentialArn")(TdeCredentialArn.asInstanceOf[js.Any])
-    if (VpcSecurityGroups != null) __obj.updateDynamic("VpcSecurityGroups")(VpcSecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsRdsDbInstanceDetails]
   }
+  @scala.inline
+  implicit class AwsRdsDbInstanceDetailsOps[Self <: AwsRdsDbInstanceDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociatedRolesVarargs(value: AwsRdsDbInstanceAssociatedRole*): Self = this.set("AssociatedRoles", js.Array(value :_*))
+    @scala.inline
+    def setAssociatedRoles(value: AwsRdsDbInstanceAssociatedRoles): Self = this.set("AssociatedRoles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedRoles: Self = this.set("AssociatedRoles", js.undefined)
+    @scala.inline
+    def setCACertificateIdentifier(value: NonEmptyString): Self = this.set("CACertificateIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCACertificateIdentifier: Self = this.set("CACertificateIdentifier", js.undefined)
+    @scala.inline
+    def setDBClusterIdentifier(value: NonEmptyString): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterIdentifier: Self = this.set("DBClusterIdentifier", js.undefined)
+    @scala.inline
+    def setDBInstanceClass(value: NonEmptyString): Self = this.set("DBInstanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceClass: Self = this.set("DBInstanceClass", js.undefined)
+    @scala.inline
+    def setDBInstanceIdentifier(value: NonEmptyString): Self = this.set("DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceIdentifier: Self = this.set("DBInstanceIdentifier", js.undefined)
+    @scala.inline
+    def setDBName(value: NonEmptyString): Self = this.set("DBName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBName: Self = this.set("DBName", js.undefined)
+    @scala.inline
+    def setDbInstancePort(value: Integer): Self = this.set("DbInstancePort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbInstancePort: Self = this.set("DbInstancePort", js.undefined)
+    @scala.inline
+    def setDbiResourceId(value: NonEmptyString): Self = this.set("DbiResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbiResourceId: Self = this.set("DbiResourceId", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: Boolean): Self = this.set("DeletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("DeletionProtection", js.undefined)
+    @scala.inline
+    def setEndpoint(value: AwsRdsDbInstanceEndpoint): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setEngine(value: NonEmptyString): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: NonEmptyString): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setIAMDatabaseAuthenticationEnabled(value: Boolean): Self = this.set("IAMDatabaseAuthenticationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIAMDatabaseAuthenticationEnabled: Self = this.set("IAMDatabaseAuthenticationEnabled", js.undefined)
+    @scala.inline
+    def setInstanceCreateTime(value: NonEmptyString): Self = this.set("InstanceCreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCreateTime: Self = this.set("InstanceCreateTime", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: NonEmptyString): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: Boolean): Self = this.set("PubliclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("PubliclyAccessible", js.undefined)
+    @scala.inline
+    def setStorageEncrypted(value: Boolean): Self = this.set("StorageEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEncrypted: Self = this.set("StorageEncrypted", js.undefined)
+    @scala.inline
+    def setTdeCredentialArn(value: NonEmptyString): Self = this.set("TdeCredentialArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTdeCredentialArn: Self = this.set("TdeCredentialArn", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupsVarargs(value: AwsRdsDbInstanceVpcSecurityGroup*): Self = this.set("VpcSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroups(value: AwsRdsDbInstanceVpcSecurityGroups): Self = this.set("VpcSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroups: Self = this.set("VpcSecurityGroups", js.undefined)
+  }
+  
 }
 

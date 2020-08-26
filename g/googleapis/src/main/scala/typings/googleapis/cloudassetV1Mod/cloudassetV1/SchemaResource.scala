@@ -55,22 +55,46 @@ trait SchemaResource extends js.Object {
 
 object SchemaResource {
   @scala.inline
-  def apply(
-    data: StringDictionary[js.Any] = null,
-    discoveryDocumentUri: String = null,
-    discoveryName: String = null,
-    parent: String = null,
-    resourceUrl: String = null,
-    version: String = null
-  ): SchemaResource = {
+  def apply(): SchemaResource = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (discoveryDocumentUri != null) __obj.updateDynamic("discoveryDocumentUri")(discoveryDocumentUri.asInstanceOf[js.Any])
-    if (discoveryName != null) __obj.updateDynamic("discoveryName")(discoveryName.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (resourceUrl != null) __obj.updateDynamic("resourceUrl")(resourceUrl.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResource]
   }
+  @scala.inline
+  implicit class SchemaResourceOps[Self <: SchemaResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDiscoveryDocumentUri(value: String): Self = this.set("discoveryDocumentUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscoveryDocumentUri: Self = this.set("discoveryDocumentUri", js.undefined)
+    @scala.inline
+    def setDiscoveryName(value: String): Self = this.set("discoveryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscoveryName: Self = this.set("discoveryName", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setResourceUrl(value: String): Self = this.set("resourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceUrl: Self = this.set("resourceUrl", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

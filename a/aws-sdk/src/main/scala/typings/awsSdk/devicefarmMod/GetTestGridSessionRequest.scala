@@ -22,12 +22,34 @@ trait GetTestGridSessionRequest extends js.Object {
 
 object GetTestGridSessionRequest {
   @scala.inline
-  def apply(projectArn: DeviceFarmArn = null, sessionArn: DeviceFarmArn = null, sessionId: ResourceId = null): GetTestGridSessionRequest = {
+  def apply(): GetTestGridSessionRequest = {
     val __obj = js.Dynamic.literal()
-    if (projectArn != null) __obj.updateDynamic("projectArn")(projectArn.asInstanceOf[js.Any])
-    if (sessionArn != null) __obj.updateDynamic("sessionArn")(sessionArn.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTestGridSessionRequest]
   }
+  @scala.inline
+  implicit class GetTestGridSessionRequestOps[Self <: GetTestGridSessionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProjectArn(value: DeviceFarmArn): Self = this.set("projectArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectArn: Self = this.set("projectArn", js.undefined)
+    @scala.inline
+    def setSessionArn(value: DeviceFarmArn): Self = this.set("sessionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionArn: Self = this.set("sessionArn", js.undefined)
+    @scala.inline
+    def setSessionId(value: ResourceId): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+  }
+  
 }
 

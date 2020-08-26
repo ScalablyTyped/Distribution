@@ -18,6 +18,13 @@ class Root () extends NamespaceBase {
   /** Resolved file names of loaded files. */
   var files: js.Array[String] = js.native
   /**
+    * Fetch content from file path or url
+    * This method exists so you can override it with your own logic.
+    * @param path File path or url
+    * @param callback Callback function
+    */
+  def fetch(path: String, callback: FetchCallback): Unit = js.native
+  /**
     * Loads one or multiple .proto or preprocessed .json files into this root namespace and returns a promise.
     * @param filename Names of one or multiple files to load
     * @param [options] Parse options. Defaults to {@link parse.defaults} when omitted.

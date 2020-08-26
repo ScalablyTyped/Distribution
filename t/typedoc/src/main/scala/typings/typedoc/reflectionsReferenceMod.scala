@@ -23,7 +23,7 @@ object reflectionsReferenceMod extends js.Object {
     ) = this()
     var _ensureProject: js.Any = js.native
     var _ensureResolved: js.Any = js.native
-    var _project: js.UndefOr[js.Any] = js.native
+    var _project: js.Any = js.native
     var _state: js.Any = js.native
     def getTargetReflection(): Reflection = js.native
     def getTargetReflectionDeep(): Reflection = js.native

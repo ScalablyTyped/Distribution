@@ -10,9 +10,9 @@ Typings are for version v0.1.2
 | ------------------ | :-------------: |
 | Full name          | contentful-resolve-response |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 5813724 |
+| # downloads        | 5971064 |
 | # stars            | 1 |
 
 ## Links

@@ -18,7 +18,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined typescript.typescript.BindingElement & {  name  :typescript.typescript.Identifier} */
+/* Inlined typescript.typescript.BindingElement & {  name :typescript.typescript.Identifier} */
 @js.native
 trait BindingElementnameIdentif extends js.Object {
   var _declarationBrand: js.Any = js.native
@@ -57,6 +57,7 @@ trait BindingElementnameIdentif extends js.Object {
   def getLeadingTriviaWidth(sourceFile: SourceFile): Double = js.native
   def getSourceFile(): SourceFile = js.native
   def getStart(): Double = js.native
+  def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
   def getStart(sourceFile: SourceFile): Double = js.native
   def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
   def getText(): String = js.native

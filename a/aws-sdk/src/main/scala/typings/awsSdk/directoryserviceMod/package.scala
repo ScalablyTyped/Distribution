@@ -48,7 +48,7 @@ package object directoryserviceMod {
   type DesiredNumberOfDomainControllers = scala.Double
   type DirectoryDescriptions = js.Array[typings.awsSdk.directoryserviceMod.DirectoryDescription]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.Enterprise
+    - typings.awsSdk.awsSdkStrings.Enterprise_
     - typings.awsSdk.awsSdkStrings.Standard_
     - java.lang.String
   */

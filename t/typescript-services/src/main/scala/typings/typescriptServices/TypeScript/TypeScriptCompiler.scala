@@ -47,9 +47,7 @@ trait TypeScriptCompiler extends js.Object {
   def emitAll(resolvePath: js.Function1[/* path */ String, String]): EmitOutput = js.native
   def emitAllDeclarations(resolvePath: js.Function1[/* path */ String, String]): EmitOutput = js.native
   def emitDeclarations(fileName: String, resolvePath: js.Function1[/* path */ String, String]): EmitOutput = js.native
-  /* private */ def emitDocumentDeclarationsWorker(document: js.Any, emitOptions: js.Any): js.Any = js.native
   /* private */ def emitDocumentDeclarationsWorker(document: js.Any, emitOptions: js.Any, declarationEmitter: js.Any): js.Any = js.native
-  /* private */ def emitDocumentWorker(document: js.Any, emitOptions: js.Any): js.Any = js.native
   /* private */ def emitDocumentWorker(document: js.Any, emitOptions: js.Any, emitter: js.Any): js.Any = js.native
   /* private */ def extractResolutionContextForVariable(
     inContextuallyTypedAssignment: js.Any,

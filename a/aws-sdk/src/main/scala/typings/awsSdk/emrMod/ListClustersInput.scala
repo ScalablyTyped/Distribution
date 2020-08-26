@@ -26,18 +26,40 @@ trait ListClustersInput extends js.Object {
 
 object ListClustersInput {
   @scala.inline
-  def apply(
-    ClusterStates: ClusterStateList = null,
-    CreatedAfter: Date = null,
-    CreatedBefore: Date = null,
-    Marker: Marker = null
-  ): ListClustersInput = {
+  def apply(): ListClustersInput = {
     val __obj = js.Dynamic.literal()
-    if (ClusterStates != null) __obj.updateDynamic("ClusterStates")(ClusterStates.asInstanceOf[js.Any])
-    if (CreatedAfter != null) __obj.updateDynamic("CreatedAfter")(CreatedAfter.asInstanceOf[js.Any])
-    if (CreatedBefore != null) __obj.updateDynamic("CreatedBefore")(CreatedBefore.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClustersInput]
   }
+  @scala.inline
+  implicit class ListClustersInputOps[Self <: ListClustersInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterStatesVarargs(value: ClusterState*): Self = this.set("ClusterStates", js.Array(value :_*))
+    @scala.inline
+    def setClusterStates(value: ClusterStateList): Self = this.set("ClusterStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterStates: Self = this.set("ClusterStates", js.undefined)
+    @scala.inline
+    def setCreatedAfter(value: Date): Self = this.set("CreatedAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAfter: Self = this.set("CreatedAfter", js.undefined)
+    @scala.inline
+    def setCreatedBefore(value: Date): Self = this.set("CreatedBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBefore: Self = this.set("CreatedBefore", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

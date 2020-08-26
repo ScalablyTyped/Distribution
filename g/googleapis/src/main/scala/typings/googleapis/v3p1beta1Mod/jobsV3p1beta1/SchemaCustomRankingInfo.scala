@@ -32,11 +32,30 @@ trait SchemaCustomRankingInfo extends js.Object {
 
 object SchemaCustomRankingInfo {
   @scala.inline
-  def apply(importanceLevel: String = null, rankingExpression: String = null): SchemaCustomRankingInfo = {
+  def apply(): SchemaCustomRankingInfo = {
     val __obj = js.Dynamic.literal()
-    if (importanceLevel != null) __obj.updateDynamic("importanceLevel")(importanceLevel.asInstanceOf[js.Any])
-    if (rankingExpression != null) __obj.updateDynamic("rankingExpression")(rankingExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomRankingInfo]
   }
+  @scala.inline
+  implicit class SchemaCustomRankingInfoOps[Self <: SchemaCustomRankingInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImportanceLevel(value: String): Self = this.set("importanceLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportanceLevel: Self = this.set("importanceLevel", js.undefined)
+    @scala.inline
+    def setRankingExpression(value: String): Self = this.set("rankingExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRankingExpression: Self = this.set("rankingExpression", js.undefined)
+  }
+  
 }
 

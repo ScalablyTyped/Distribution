@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * See [RFC   2396]{@link url="http://www.ietf.org/rfc/rfc2396.txt"} for a description of URI references and related terms.
   * @since OOo 2.0
   */
+@js.native
 trait XUriReferenceFactory extends XInterface {
   /**
     * resolves a relative URI reference to absolute form.
@@ -26,7 +27,7 @@ trait XUriReferenceFactory extends XInterface {
     uriReference: XUriReference,
     processSpecialBaseSegments: Boolean,
     excessParentSegments: RelativeUriExcessParentSegments
-  ): XUriReference
+  ): XUriReference = js.native
   /**
     * changes an absolute URI reference to relative form.
     * @param baseUriReference the base URI reference.
@@ -42,13 +43,13 @@ trait XUriReferenceFactory extends XInterface {
     preferAuthorityOverRelativePath: Boolean,
     preferAbsoluteOverRelativePath: Boolean,
     encodeRetainedSpecialSegments: Boolean
-  ): XUriReference
+  ): XUriReference = js.native
   /**
     * parses the textual representation of a URI reference.
     * @param uriReference the textual representation of a URI reference.
     * @returns an object that supports {@link com.sun.star.uri.XUriReference} (and possibly also additional, scheme-specific interfaces), if the given input can
     */
-  def parse(uriReference: String): XUriReference
+  def parse(uriReference: String): XUriReference = js.native
 }
 
 object XUriReferenceFactory {
@@ -64,5 +65,24 @@ object XUriReferenceFactory {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), makeAbsolute = js.Any.fromFunction4(makeAbsolute), makeRelative = js.Any.fromFunction5(makeRelative), parse = js.Any.fromFunction1(parse), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XUriReferenceFactory]
   }
+  @scala.inline
+  implicit class XUriReferenceFactoryOps[Self <: XUriReferenceFactory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMakeAbsolute(value: (XUriReference, XUriReference, Boolean, RelativeUriExcessParentSegments) => XUriReference): Self = this.set("makeAbsolute", js.Any.fromFunction4(value))
+    @scala.inline
+    def setMakeRelative(value: (XUriReference, XUriReference, Boolean, Boolean, Boolean) => XUriReference): Self = this.set("makeRelative", js.Any.fromFunction5(value))
+    @scala.inline
+    def setParse(value: String => XUriReference): Self = this.set("parse", js.Any.fromFunction1(value))
+  }
+  
 }
 

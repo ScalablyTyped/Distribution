@@ -4,48 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapLayerTooltip extends js.Object {
-  var animation: js.UndefOr[MapLayerTooltipAnimation] = js.undefined
-  var autoHide: js.UndefOr[Boolean] = js.undefined
-  var callout: js.UndefOr[Boolean] = js.undefined
-  var content: js.UndefOr[String | js.Function | MapLayerTooltipContent] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var iframe: js.UndefOr[Boolean] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var showAfter: js.UndefOr[Double] = js.undefined
-  var showOn: js.UndefOr[String] = js.undefined
-  var template: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var animation: js.UndefOr[MapLayerTooltipAnimation] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.native
+  var callout: js.UndefOr[Boolean] = js.native
+  var content: js.UndefOr[String | js.Function | MapLayerTooltipContent] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var iframe: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[String] = js.native
+  var showAfter: js.UndefOr[Double] = js.native
+  var showOn: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object MapLayerTooltip {
   @scala.inline
-  def apply(
-    animation: MapLayerTooltipAnimation = null,
-    autoHide: js.UndefOr[Boolean] = js.undefined,
-    callout: js.UndefOr[Boolean] = js.undefined,
-    content: String | js.Function | MapLayerTooltipContent = null,
-    height: js.UndefOr[Double] = js.undefined,
-    iframe: js.UndefOr[Boolean] = js.undefined,
-    position: String = null,
-    showAfter: js.UndefOr[Double] = js.undefined,
-    showOn: String = null,
-    template: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): MapLayerTooltip = {
+  def apply(): MapLayerTooltip = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAfter)) __obj.updateDynamic("showAfter")(showAfter.get.asInstanceOf[js.Any])
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerTooltip]
   }
+  @scala.inline
+  implicit class MapLayerTooltipOps[Self <: MapLayerTooltip] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: MapLayerTooltipAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    @scala.inline
+    def setCallout(value: Boolean): Self = this.set("callout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallout: Self = this.set("callout", js.undefined)
+    @scala.inline
+    def setContent(value: String | js.Function | MapLayerTooltipContent): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIframe(value: Boolean): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIframe: Self = this.set("iframe", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setShowAfter(value: Double): Self = this.set("showAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAfter: Self = this.set("showAfter", js.undefined)
+    @scala.inline
+    def setShowOn(value: String): Self = this.set("showOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOn: Self = this.set("showOn", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -1,0 +1,28 @@
+package typings.angularCompiler.compilerMod
+
+import typings.angularCompiler.i18nAstMod.I18nMeta
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler/compiler", "Expansion")
+@js.native
+class Expansion protected ()
+  extends typings.angularCompiler.publicApiMod.Expansion {
+  def this(
+    switchValue: String,
+    `type`: String,
+    cases: js.Array[typings.angularCompiler.mlParserAstMod.ExpansionCase],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    switchValueSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    switchValue: String,
+    `type`: String,
+    cases: js.Array[typings.angularCompiler.mlParserAstMod.ExpansionCase],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    switchValueSourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    i18n: I18nMeta
+  ) = this()
+}
+

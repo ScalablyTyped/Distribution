@@ -31,33 +31,6 @@ object Directions extends js.Object {
       * @param options: Options used to define the Waypoint.
       */
     def this(options: IWaypointOptions) = this()
-    /** Releases any resources associated with the waypoint. */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /**
-      * Gets the address associated with the waypoint.
-      * @returns The address associated with the waypoint.
-      */
-    /* CompleteClass */
-    override def getAddress(): String = js.native
-    /**
-      * Gets the location of the waypoint.
-      * @returns The location of the waypoint.
-      */
-    /* CompleteClass */
-    override def getLocation(): typings.bingmaps.Microsoft.Maps.Location = js.native
-    /**
-      * Gets a boolean value indicating whether the waypoint is a via point.
-      * @returns A boolean value indicating whether the waypoint is a via point.
-      */
-    /* CompleteClass */
-    override def isViapoint(): Boolean = js.native
-    /**
-      * Sets options for the waypoint. For these options to take effect, you must recalculate the route.
-      * @param options Options used to define the Waypoint.
-      */
-    /* CompleteClass */
-    override def setOptions(options: IWaypointOptions): Unit = js.native
   }
   
   @js.native

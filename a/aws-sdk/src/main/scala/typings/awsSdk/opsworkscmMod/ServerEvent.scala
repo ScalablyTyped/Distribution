@@ -26,18 +26,38 @@ trait ServerEvent extends js.Object {
 
 object ServerEvent {
   @scala.inline
-  def apply(
-    CreatedAt: Timestamp = null,
-    LogUrl: String = null,
-    Message: String = null,
-    ServerName: String = null
-  ): ServerEvent = {
+  def apply(): ServerEvent = {
     val __obj = js.Dynamic.literal()
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (LogUrl != null) __obj.updateDynamic("LogUrl")(LogUrl.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerEvent]
   }
+  @scala.inline
+  implicit class ServerEventOps[Self <: ServerEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setLogUrl(value: String): Self = this.set("LogUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUrl: Self = this.set("LogUrl", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerName: Self = this.set("ServerName", js.undefined)
+  }
+  
 }
 

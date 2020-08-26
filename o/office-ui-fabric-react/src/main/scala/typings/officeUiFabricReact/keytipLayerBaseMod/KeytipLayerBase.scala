@@ -60,7 +60,7 @@ class KeytipLayerBase protected ()
   var _keyHandled: js.Any = js.native
   var _keytipManager: js.Any = js.native
   var _keytipTree: js.Any = js.native
-  var _newCurrentKeytipSequences: js.UndefOr[js.Any] = js.native
+  var _newCurrentKeytipSequences: js.Any = js.native
   var _onDismiss: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   var _onKeyPress: js.Any = js.native

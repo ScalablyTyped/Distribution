@@ -22,16 +22,36 @@ trait DescribeTableStatisticsResponse extends js.Object {
 
 object DescribeTableStatisticsResponse {
   @scala.inline
-  def apply(
-    Marker: String = null,
-    ReplicationTaskArn: String = null,
-    TableStatistics: TableStatisticsList = null
-  ): DescribeTableStatisticsResponse = {
+  def apply(): DescribeTableStatisticsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (ReplicationTaskArn != null) __obj.updateDynamic("ReplicationTaskArn")(ReplicationTaskArn.asInstanceOf[js.Any])
-    if (TableStatistics != null) __obj.updateDynamic("TableStatistics")(TableStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableStatisticsResponse]
   }
+  @scala.inline
+  implicit class DescribeTableStatisticsResponseOps[Self <: DescribeTableStatisticsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setReplicationTaskArn(value: String): Self = this.set("ReplicationTaskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskArn: Self = this.set("ReplicationTaskArn", js.undefined)
+    @scala.inline
+    def setTableStatisticsVarargs(value: TableStatistics*): Self = this.set("TableStatistics", js.Array(value :_*))
+    @scala.inline
+    def setTableStatistics(value: TableStatisticsList): Self = this.set("TableStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableStatistics: Self = this.set("TableStatistics", js.undefined)
+  }
+  
 }
 

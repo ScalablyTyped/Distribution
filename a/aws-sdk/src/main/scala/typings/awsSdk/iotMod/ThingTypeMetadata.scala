@@ -22,16 +22,34 @@ trait ThingTypeMetadata extends js.Object {
 
 object ThingTypeMetadata {
   @scala.inline
-  def apply(
-    creationDate: CreationDate = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    deprecationDate: DeprecationDate = null
-  ): ThingTypeMetadata = {
+  def apply(): ThingTypeMetadata = {
     val __obj = js.Dynamic.literal()
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
-    if (deprecationDate != null) __obj.updateDynamic("deprecationDate")(deprecationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingTypeMetadata]
   }
+  @scala.inline
+  implicit class ThingTypeMetadataOps[Self <: ThingTypeMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setDeprecated(value: Boolean): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    @scala.inline
+    def setDeprecationDate(value: DeprecationDate): Self = this.set("deprecationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecationDate: Self = this.set("deprecationDate", js.undefined)
+  }
+  
 }
 

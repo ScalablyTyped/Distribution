@@ -18,10 +18,28 @@ trait GetThingShadowRequest extends js.Object {
 
 object GetThingShadowRequest {
   @scala.inline
-  def apply(thingName: ThingName, shadowName: ShadowName = null): GetThingShadowRequest = {
+  def apply(thingName: ThingName): GetThingShadowRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
-    if (shadowName != null) __obj.updateDynamic("shadowName")(shadowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetThingShadowRequest]
   }
+  @scala.inline
+  implicit class GetThingShadowRequestOps[Self <: GetThingShadowRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShadowName(value: ShadowName): Self = this.set("shadowName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowName: Self = this.set("shadowName", js.undefined)
+  }
+  
 }
 

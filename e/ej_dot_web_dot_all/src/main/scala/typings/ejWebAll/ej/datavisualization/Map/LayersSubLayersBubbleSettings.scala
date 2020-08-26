@@ -4,81 +4,116 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LayersSubLayersBubbleSettings extends js.Object {
   /** Specifies the bubble Opacity value of bubbles for shape layer in map
     * @Default {0.9}
     */
-  var bubbleOpacity: js.UndefOr[Double] = js.undefined
+  var bubbleOpacity: js.UndefOr[Double] = js.native
   /** Specifies the mouse hover color of the shape layer in map
     * @Default {gray}
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /** Specifies the colorMappings of the shape layer in map
     * @Default {null}
     */
-  var colorMappings: js.UndefOr[LayersSubLayersBubbleSettingsColorMappings] = js.undefined
+  var colorMappings: js.UndefOr[LayersSubLayersBubbleSettingsColorMappings] = js.native
   /** Specifies the field name in the datasource that contains color values for each bubbles.
     * @Default {null}
     */
-  var colorPath: js.UndefOr[String] = js.undefined
+  var colorPath: js.UndefOr[String] = js.native
   /** Specifies the bubble color valuePath of the shape layer in map
     * @Default {null}
     */
-  var colorValuePath: js.UndefOr[String] = js.undefined
+  var colorValuePath: js.UndefOr[String] = js.native
   /** Specifies the maximum size value of bubbles for shape layer in map
     * @Default {20}
     */
-  var maxValue: js.UndefOr[Double] = js.undefined
+  var maxValue: js.UndefOr[Double] = js.native
   /** Specifies the minimum size value of bubbles for shape layer in map
     * @Default {10}
     */
-  var minValue: js.UndefOr[Double] = js.undefined
+  var minValue: js.UndefOr[Double] = js.native
   /** Specifies the showBubble visibility status map
     * @Default {true}
     */
-  var showBubble: js.UndefOr[Boolean] = js.undefined
+  var showBubble: js.UndefOr[Boolean] = js.native
   /** Specifies the tooltip visibility status of the shape layer in map
     * @Default {false}
     */
-  var showTooltip: js.UndefOr[Boolean] = js.undefined
+  var showTooltip: js.UndefOr[Boolean] = js.native
   /** Specifies the bubble tooltip template of the shape layer in map
     * @Default {null}
     */
-  var tooltipTemplate: js.UndefOr[String] = js.undefined
+  var tooltipTemplate: js.UndefOr[String] = js.native
   /** Specifies the bubble valuePath of the shape layer in map
     * @Default {null}
     */
-  var valuePath: js.UndefOr[String] = js.undefined
+  var valuePath: js.UndefOr[String] = js.native
 }
 
 object LayersSubLayersBubbleSettings {
   @scala.inline
-  def apply(
-    bubbleOpacity: js.UndefOr[Double] = js.undefined,
-    color: String = null,
-    colorMappings: LayersSubLayersBubbleSettingsColorMappings = null,
-    colorPath: String = null,
-    colorValuePath: String = null,
-    maxValue: js.UndefOr[Double] = js.undefined,
-    minValue: js.UndefOr[Double] = js.undefined,
-    showBubble: js.UndefOr[Boolean] = js.undefined,
-    showTooltip: js.UndefOr[Boolean] = js.undefined,
-    tooltipTemplate: String = null,
-    valuePath: String = null
-  ): LayersSubLayersBubbleSettings = {
+  def apply(): LayersSubLayersBubbleSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbleOpacity)) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorMappings != null) __obj.updateDynamic("colorMappings")(colorMappings.asInstanceOf[js.Any])
-    if (colorPath != null) __obj.updateDynamic("colorPath")(colorPath.asInstanceOf[js.Any])
-    if (colorValuePath != null) __obj.updateDynamic("colorValuePath")(colorValuePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBubble)) __obj.updateDynamic("showBubble")(showBubble.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.get.asInstanceOf[js.Any])
-    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate.asInstanceOf[js.Any])
-    if (valuePath != null) __obj.updateDynamic("valuePath")(valuePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersSubLayersBubbleSettings]
   }
+  @scala.inline
+  implicit class LayersSubLayersBubbleSettingsOps[Self <: LayersSubLayersBubbleSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBubbleOpacity(value: Double): Self = this.set("bubbleOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBubbleOpacity: Self = this.set("bubbleOpacity", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorMappings(value: LayersSubLayersBubbleSettingsColorMappings): Self = this.set("colorMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorMappings: Self = this.set("colorMappings", js.undefined)
+    @scala.inline
+    def setColorPath(value: String): Self = this.set("colorPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPath: Self = this.set("colorPath", js.undefined)
+    @scala.inline
+    def setColorValuePath(value: String): Self = this.set("colorValuePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorValuePath: Self = this.set("colorValuePath", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setShowBubble(value: Boolean): Self = this.set("showBubble", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowBubble: Self = this.set("showBubble", js.undefined)
+    @scala.inline
+    def setShowTooltip(value: Boolean): Self = this.set("showTooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTooltip: Self = this.set("showTooltip", js.undefined)
+    @scala.inline
+    def setTooltipTemplate(value: String): Self = this.set("tooltipTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipTemplate: Self = this.set("tooltipTemplate", js.undefined)
+    @scala.inline
+    def setValuePath(value: String): Self = this.set("valuePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuePath: Self = this.set("valuePath", js.undefined)
+  }
+  
 }
 

@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IView extends ITable
 
 object IView {
   @scala.inline
-  def apply(ITable: ITable = null): IView = {
+  def apply(): IView = {
     val __obj = js.Dynamic.literal()
-    if (ITable != null) js.Dynamic.global.Object.assign(__obj, ITable)
     __obj.asInstanceOf[IView]
   }
 }

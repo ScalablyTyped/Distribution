@@ -16,22 +16,46 @@ trait Author extends js.Object {
 
 object Author {
   @scala.inline
-  def apply(
-    author: String = null,
-    canonicalVolumeLink: String = null,
-    coverUrl: String = null,
-    description: String = null,
-    title: String = null,
-    volumeId: String = null
-  ): Author = {
+  def apply(): Author = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (canonicalVolumeLink != null) __obj.updateDynamic("canonicalVolumeLink")(canonicalVolumeLink.asInstanceOf[js.Any])
-    if (coverUrl != null) __obj.updateDynamic("coverUrl")(coverUrl.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Author]
   }
+  @scala.inline
+  implicit class AuthorOps[Self <: Author] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setCanonicalVolumeLink(value: String): Self = this.set("canonicalVolumeLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanonicalVolumeLink: Self = this.set("canonicalVolumeLink", js.undefined)
+    @scala.inline
+    def setCoverUrl(value: String): Self = this.set("coverUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverUrl: Self = this.set("coverUrl", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+  }
+  
 }
 

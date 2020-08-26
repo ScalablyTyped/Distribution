@@ -11,7 +11,7 @@ trait RegisterScalableTargetRequest extends js.Object {
     */
   var MaxCapacity: js.UndefOr[ResourceCapacity] = js.native
   /**
-    * The minimum value that you plan to scale in to. When a scaling policy is in effect, Application Auto Scaling can scale in (contract) as needed to the minimum capacity limit in response to changing demand.  This parameter is required if you are registering a scalable target. For Lambda provisioned concurrency, the minimum value allowed is 0. For all other resources, the minimum value allowed is 1.
+    * The minimum value that you plan to scale in to. When a scaling policy is in effect, Application Auto Scaling can scale in (contract) as needed to the minimum capacity limit in response to changing demand.  This parameter is required if you are registering a scalable target. For certain resources, the minimum value allowed is 0. This includes Lambda provisioned concurrency, Spot Fleet, ECS services, Aurora DB clusters, EMR clusters, and custom resources. For all other resources, the minimum value allowed is 1.
     */
   var MinCapacity: js.UndefOr[ResourceCapacity] = js.native
   /**
@@ -41,18 +41,45 @@ object RegisterScalableTargetRequest {
   def apply(
     ResourceId: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
-    ServiceNamespace: ServiceNamespace,
-    MaxCapacity: js.UndefOr[ResourceCapacity] = js.undefined,
-    MinCapacity: js.UndefOr[ResourceCapacity] = js.undefined,
-    RoleARN: ResourceIdMaxLen1600 = null,
-    SuspendedState: SuspendedState = null
+    ServiceNamespace: ServiceNamespace
   ): RegisterScalableTargetRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinCapacity)) __obj.updateDynamic("MinCapacity")(MinCapacity.get.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
-    if (SuspendedState != null) __obj.updateDynamic("SuspendedState")(SuspendedState.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterScalableTargetRequest]
   }
+  @scala.inline
+  implicit class RegisterScalableTargetRequestOps[Self <: RegisterScalableTargetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceId(value: ResourceIdMaxLen1600): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxCapacity(value: ResourceCapacity): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    @scala.inline
+    def setMinCapacity(value: ResourceCapacity): Self = this.set("MinCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCapacity: Self = this.set("MinCapacity", js.undefined)
+    @scala.inline
+    def setRoleARN(value: ResourceIdMaxLen1600): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    @scala.inline
+    def setSuspendedState(value: SuspendedState): Self = this.set("SuspendedState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspendedState: Self = this.set("SuspendedState", js.undefined)
+  }
+  
 }
 

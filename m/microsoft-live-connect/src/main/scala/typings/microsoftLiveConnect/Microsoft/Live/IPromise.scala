@@ -23,6 +23,11 @@ trait IPromise[T] extends js.Object {
     *   making progress toward completion.
     */
   def `then`(onSuccess: js.Function1[/* response */ T, Unit]): IPromise[T] = js.native
+  def `then`(
+    onSuccess: js.Function1[/* response */ T, Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[T] = js.native
   def `then`(onSuccess: js.Function1[/* response */ T, Unit], onError: js.Function1[/* error */ js.Any, Unit]): IPromise[T] = js.native
   def `then`(
     onSuccess: js.Function1[/* response */ T, Unit],

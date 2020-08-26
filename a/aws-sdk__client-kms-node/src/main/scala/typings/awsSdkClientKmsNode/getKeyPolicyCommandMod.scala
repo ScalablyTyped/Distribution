@@ -26,16 +26,9 @@ object getKeyPolicyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetKeyPolicyInput) = this()
-    /* CompleteClass */
-    override val input: GetKeyPolicyInput = js.native
     val middlewareStack: MiddlewareStack[GetKeyPolicyInput, GetKeyPolicyOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[GetKeyPolicyInput, GetKeyPolicyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[GetKeyPolicyInput, GetKeyPolicyOutput] = js.native
   }

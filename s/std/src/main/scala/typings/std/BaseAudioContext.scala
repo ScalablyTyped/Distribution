@@ -57,12 +57,33 @@ trait BaseAudioContext extends EventTarget {
   def createPeriodicWave(real: Iterable[Double], imag: Iterable[Double]): PeriodicWave = js.native
   def createPeriodicWave(real: Iterable[Double], imag: Iterable[Double], constraints: PeriodicWaveConstraints): PeriodicWave = js.native
   def createScriptProcessor(): ScriptProcessorNode = js.native
+  def createScriptProcessor(
+    bufferSize: js.UndefOr[scala.Nothing],
+    numberOfInputChannels: js.UndefOr[scala.Nothing],
+    numberOfOutputChannels: Double
+  ): ScriptProcessorNode = js.native
+  def createScriptProcessor(bufferSize: js.UndefOr[scala.Nothing], numberOfInputChannels: Double): ScriptProcessorNode = js.native
+  def createScriptProcessor(
+    bufferSize: js.UndefOr[scala.Nothing],
+    numberOfInputChannels: Double,
+    numberOfOutputChannels: Double
+  ): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double): ScriptProcessorNode = js.native
+  def createScriptProcessor(
+    bufferSize: Double,
+    numberOfInputChannels: js.UndefOr[scala.Nothing],
+    numberOfOutputChannels: Double
+  ): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double, numberOfInputChannels: Double): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double, numberOfInputChannels: Double, numberOfOutputChannels: Double): ScriptProcessorNode = js.native
   def createStereoPanner(): StereoPannerNode = js.native
   def createWaveShaper(): WaveShaperNode = js.native
   def decodeAudioData(audioData: ArrayBuffer): js.Promise[AudioBuffer] = js.native
+  def decodeAudioData(
+    audioData: ArrayBuffer,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: DecodeErrorCallback
+  ): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: Null, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native

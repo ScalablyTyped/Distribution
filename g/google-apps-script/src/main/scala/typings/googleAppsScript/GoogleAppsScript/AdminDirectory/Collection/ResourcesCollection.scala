@@ -7,24 +7,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourcesCollection extends js.Object {
-  var Buildings: js.UndefOr[BuildingsCollection] = js.undefined
-  var Calendars: js.UndefOr[CalendarsCollection] = js.undefined
-  var Features: js.UndefOr[FeaturesCollection] = js.undefined
+  var Buildings: js.UndefOr[BuildingsCollection] = js.native
+  var Calendars: js.UndefOr[CalendarsCollection] = js.native
+  var Features: js.UndefOr[FeaturesCollection] = js.native
 }
 
 object ResourcesCollection {
   @scala.inline
-  def apply(
-    Buildings: BuildingsCollection = null,
-    Calendars: CalendarsCollection = null,
-    Features: FeaturesCollection = null
-  ): ResourcesCollection = {
+  def apply(): ResourcesCollection = {
     val __obj = js.Dynamic.literal()
-    if (Buildings != null) __obj.updateDynamic("Buildings")(Buildings.asInstanceOf[js.Any])
-    if (Calendars != null) __obj.updateDynamic("Calendars")(Calendars.asInstanceOf[js.Any])
-    if (Features != null) __obj.updateDynamic("Features")(Features.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourcesCollection]
   }
+  @scala.inline
+  implicit class ResourcesCollectionOps[Self <: ResourcesCollection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuildings(value: BuildingsCollection): Self = this.set("Buildings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildings: Self = this.set("Buildings", js.undefined)
+    @scala.inline
+    def setCalendars(value: CalendarsCollection): Self = this.set("Calendars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendars: Self = this.set("Calendars", js.undefined)
+    @scala.inline
+    def setFeatures(value: FeaturesCollection): Self = this.set("Features", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatures: Self = this.set("Features", js.undefined)
+  }
+  
 }
 

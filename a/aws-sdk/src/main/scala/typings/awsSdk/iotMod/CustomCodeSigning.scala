@@ -26,18 +26,38 @@ trait CustomCodeSigning extends js.Object {
 
 object CustomCodeSigning {
   @scala.inline
-  def apply(
-    certificateChain: CodeSigningCertificateChain = null,
-    hashAlgorithm: HashAlgorithm = null,
-    signature: CodeSigningSignature = null,
-    signatureAlgorithm: SignatureAlgorithm = null
-  ): CustomCodeSigning = {
+  def apply(): CustomCodeSigning = {
     val __obj = js.Dynamic.literal()
-    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
-    if (hashAlgorithm != null) __obj.updateDynamic("hashAlgorithm")(hashAlgorithm.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomCodeSigning]
   }
+  @scala.inline
+  implicit class CustomCodeSigningOps[Self <: CustomCodeSigning] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateChain(value: CodeSigningCertificateChain): Self = this.set("certificateChain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateChain: Self = this.set("certificateChain", js.undefined)
+    @scala.inline
+    def setHashAlgorithm(value: HashAlgorithm): Self = this.set("hashAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashAlgorithm: Self = this.set("hashAlgorithm", js.undefined)
+    @scala.inline
+    def setSignature(value: CodeSigningSignature): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+    @scala.inline
+    def setSignatureAlgorithm(value: SignatureAlgorithm): Self = this.set("signatureAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatureAlgorithm: Self = this.set("signatureAlgorithm", js.undefined)
+  }
+  
 }
 

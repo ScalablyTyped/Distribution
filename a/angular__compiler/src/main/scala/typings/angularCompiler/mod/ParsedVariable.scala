@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ParsedVariable")
 @js.native
 class ParsedVariable protected ()
-  extends typings.angularCompiler.publicApiMod.ParsedVariable {
+  extends typings.angularCompiler.compilerMod.ParsedVariable {
   def this(
     name: String,
     value: String,

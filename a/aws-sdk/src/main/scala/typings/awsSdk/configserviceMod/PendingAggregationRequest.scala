@@ -18,11 +18,30 @@ trait PendingAggregationRequest extends js.Object {
 
 object PendingAggregationRequest {
   @scala.inline
-  def apply(RequesterAccountId: AccountId = null, RequesterAwsRegion: AwsRegion = null): PendingAggregationRequest = {
+  def apply(): PendingAggregationRequest = {
     val __obj = js.Dynamic.literal()
-    if (RequesterAccountId != null) __obj.updateDynamic("RequesterAccountId")(RequesterAccountId.asInstanceOf[js.Any])
-    if (RequesterAwsRegion != null) __obj.updateDynamic("RequesterAwsRegion")(RequesterAwsRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingAggregationRequest]
   }
+  @scala.inline
+  implicit class PendingAggregationRequestOps[Self <: PendingAggregationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequesterAccountId(value: AccountId): Self = this.set("RequesterAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterAccountId: Self = this.set("RequesterAccountId", js.undefined)
+    @scala.inline
+    def setRequesterAwsRegion(value: AwsRegion): Self = this.set("RequesterAwsRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterAwsRegion: Self = this.set("RequesterAwsRegion", js.undefined)
+  }
+  
 }
 

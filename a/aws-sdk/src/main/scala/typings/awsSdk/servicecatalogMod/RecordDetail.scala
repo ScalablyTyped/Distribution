@@ -62,36 +62,78 @@ trait RecordDetail extends js.Object {
 
 object RecordDetail {
   @scala.inline
-  def apply(
-    CreatedTime: CreatedTime = null,
-    PathId: Id = null,
-    ProductId: Id = null,
-    ProvisionedProductId: Id = null,
-    ProvisionedProductName: ProvisionedProductName = null,
-    ProvisionedProductType: ProvisionedProductType = null,
-    ProvisioningArtifactId: Id = null,
-    RecordErrors: RecordErrors = null,
-    RecordId: Id = null,
-    RecordTags: RecordTags = null,
-    RecordType: RecordType = null,
-    Status: RecordStatus = null,
-    UpdatedTime: UpdatedTime = null
-  ): RecordDetail = {
+  def apply(): RecordDetail = {
     val __obj = js.Dynamic.literal()
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (PathId != null) __obj.updateDynamic("PathId")(PathId.asInstanceOf[js.Any])
-    if (ProductId != null) __obj.updateDynamic("ProductId")(ProductId.asInstanceOf[js.Any])
-    if (ProvisionedProductId != null) __obj.updateDynamic("ProvisionedProductId")(ProvisionedProductId.asInstanceOf[js.Any])
-    if (ProvisionedProductName != null) __obj.updateDynamic("ProvisionedProductName")(ProvisionedProductName.asInstanceOf[js.Any])
-    if (ProvisionedProductType != null) __obj.updateDynamic("ProvisionedProductType")(ProvisionedProductType.asInstanceOf[js.Any])
-    if (ProvisioningArtifactId != null) __obj.updateDynamic("ProvisioningArtifactId")(ProvisioningArtifactId.asInstanceOf[js.Any])
-    if (RecordErrors != null) __obj.updateDynamic("RecordErrors")(RecordErrors.asInstanceOf[js.Any])
-    if (RecordId != null) __obj.updateDynamic("RecordId")(RecordId.asInstanceOf[js.Any])
-    if (RecordTags != null) __obj.updateDynamic("RecordTags")(RecordTags.asInstanceOf[js.Any])
-    if (RecordType != null) __obj.updateDynamic("RecordType")(RecordType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UpdatedTime != null) __obj.updateDynamic("UpdatedTime")(UpdatedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordDetail]
   }
+  @scala.inline
+  implicit class RecordDetailOps[Self <: RecordDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedTime(value: CreatedTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setPathId(value: Id): Self = this.set("PathId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathId: Self = this.set("PathId", js.undefined)
+    @scala.inline
+    def setProductId(value: Id): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("ProductId", js.undefined)
+    @scala.inline
+    def setProvisionedProductId(value: Id): Self = this.set("ProvisionedProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedProductId: Self = this.set("ProvisionedProductId", js.undefined)
+    @scala.inline
+    def setProvisionedProductName(value: ProvisionedProductName): Self = this.set("ProvisionedProductName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedProductName: Self = this.set("ProvisionedProductName", js.undefined)
+    @scala.inline
+    def setProvisionedProductType(value: ProvisionedProductType): Self = this.set("ProvisionedProductType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedProductType: Self = this.set("ProvisionedProductType", js.undefined)
+    @scala.inline
+    def setProvisioningArtifactId(value: Id): Self = this.set("ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisioningArtifactId: Self = this.set("ProvisioningArtifactId", js.undefined)
+    @scala.inline
+    def setRecordErrorsVarargs(value: RecordError*): Self = this.set("RecordErrors", js.Array(value :_*))
+    @scala.inline
+    def setRecordErrors(value: RecordErrors): Self = this.set("RecordErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordErrors: Self = this.set("RecordErrors", js.undefined)
+    @scala.inline
+    def setRecordId(value: Id): Self = this.set("RecordId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordId: Self = this.set("RecordId", js.undefined)
+    @scala.inline
+    def setRecordTagsVarargs(value: RecordTag*): Self = this.set("RecordTags", js.Array(value :_*))
+    @scala.inline
+    def setRecordTags(value: RecordTags): Self = this.set("RecordTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordTags: Self = this.set("RecordTags", js.undefined)
+    @scala.inline
+    def setRecordType(value: RecordType): Self = this.set("RecordType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordType: Self = this.set("RecordType", js.undefined)
+    @scala.inline
+    def setStatus(value: RecordStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUpdatedTime(value: UpdatedTime): Self = this.set("UpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedTime: Self = this.set("UpdatedTime", js.undefined)
+  }
+  
 }
 

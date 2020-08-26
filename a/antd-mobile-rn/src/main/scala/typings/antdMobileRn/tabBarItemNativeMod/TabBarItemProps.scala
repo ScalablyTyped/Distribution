@@ -8,47 +8,87 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabBarItemProps extends js.Object {
-  var badge: js.UndefOr[String | Double] = js.undefined
-  var icon: js.UndefOr[ImageURISource | js.Array[ImageURISource] | ImageRequireSource] = js.undefined
-  var iconStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var renderAsOriginal: js.UndefOr[Boolean] = js.undefined
-  var selected: js.UndefOr[Boolean] = js.undefined
-  var selectedIcon: js.UndefOr[ImageURISource | js.Array[ImageURISource] | ImageRequireSource] = js.undefined
-  var styles: js.UndefOr[js.Any] = js.undefined
-  var tintColor: js.UndefOr[String] = js.undefined
-  var title: String
-  var unselectedTintColor: js.UndefOr[String] = js.undefined
+  var badge: js.UndefOr[String | Double] = js.native
+  var icon: js.UndefOr[ImageURISource | js.Array[ImageURISource] | ImageRequireSource] = js.native
+  var iconStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var renderAsOriginal: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.native
+  var selectedIcon: js.UndefOr[ImageURISource | js.Array[ImageURISource] | ImageRequireSource] = js.native
+  var styles: js.UndefOr[js.Any] = js.native
+  var tintColor: js.UndefOr[String] = js.native
+  var title: String = js.native
+  var unselectedTintColor: js.UndefOr[String] = js.native
 }
 
 object TabBarItemProps {
   @scala.inline
-  def apply(
-    title: String,
-    badge: String | Double = null,
-    icon: ImageURISource | js.Array[ImageURISource] | ImageRequireSource = null,
-    iconStyle: js.UndefOr[Null | StyleProp[ImageStyle]] = js.undefined,
-    onPress: () => Unit = null,
-    renderAsOriginal: js.UndefOr[Boolean] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    selectedIcon: ImageURISource | js.Array[ImageURISource] | ImageRequireSource = null,
-    styles: js.Any = null,
-    tintColor: String = null,
-    unselectedTintColor: String = null
-  ): TabBarItemProps = {
+  def apply(title: String): TabBarItemProps = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconStyle)) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (!js.isUndefined(renderAsOriginal)) __obj.updateDynamic("renderAsOriginal")(renderAsOriginal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
-    if (unselectedTintColor != null) __obj.updateDynamic("unselectedTintColor")(unselectedTintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarItemProps]
   }
+  @scala.inline
+  implicit class TabBarItemPropsOps[Self <: TabBarItemProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBadge(value: String | Double): Self = this.set("badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("badge", js.undefined)
+    @scala.inline
+    def setIconVarargs(value: ImageURISource*): Self = this.set("icon", js.Array(value :_*))
+    @scala.inline
+    def setIcon(value: ImageURISource | js.Array[ImageURISource] | ImageRequireSource): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconStyle(value: StyleProp[ImageStyle]): Self = this.set("iconStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconStyle: Self = this.set("iconStyle", js.undefined)
+    @scala.inline
+    def setIconStyleNull: Self = this.set("iconStyle", null)
+    @scala.inline
+    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    @scala.inline
+    def setRenderAsOriginal(value: Boolean): Self = this.set("renderAsOriginal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderAsOriginal: Self = this.set("renderAsOriginal", js.undefined)
+    @scala.inline
+    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setSelectedIconVarargs(value: ImageURISource*): Self = this.set("selectedIcon", js.Array(value :_*))
+    @scala.inline
+    def setSelectedIcon(value: ImageURISource | js.Array[ImageURISource] | ImageRequireSource): Self = this.set("selectedIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedIcon: Self = this.set("selectedIcon", js.undefined)
+    @scala.inline
+    def setStyles(value: js.Any): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setTintColor(value: String): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    @scala.inline
+    def setUnselectedTintColor(value: String): Self = this.set("unselectedTintColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnselectedTintColor: Self = this.set("unselectedTintColor", js.undefined)
+  }
+  
 }
 

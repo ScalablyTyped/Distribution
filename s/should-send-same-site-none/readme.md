@@ -10,9 +10,9 @@ A simple utility to detect incompatible user agents for `SameSite=None` cookie a
 | ------------------ | :-------------: |
 | Full name          | should-send-same-site-none |
 | Keywords           | Express, samesite, cookie, middleware |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 34500 |
+| # releases         | 9 |
+| # dependents       | 3 |
+| # downloads        | 164848 |
 | # stars            | 0 |
 
 ## Links

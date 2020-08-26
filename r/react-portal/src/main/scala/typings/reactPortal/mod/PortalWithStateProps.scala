@@ -1,7 +1,5 @@
 package typings.reactPortal.mod
 
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -10,44 +8,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PortalWithStateProps
   extends Props[js.Any] {
-  var closeOnEsc: js.UndefOr[Boolean] = js.undefined
-  var closeOnOutsideClick: js.UndefOr[Boolean] = js.undefined
-  var defaultOpen: js.UndefOr[Boolean] = js.undefined
-  var node: js.UndefOr[Element | Null] = js.undefined
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var openByClickOn: js.UndefOr[ReactElement] = js.undefined
+  var closeOnEsc: js.UndefOr[Boolean] = js.native
+  var closeOnOutsideClick: js.UndefOr[Boolean] = js.native
+  var defaultOpen: js.UndefOr[Boolean] = js.native
+  var node: js.UndefOr[Element | Null] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+  var openByClickOn: js.UndefOr[ReactElement] = js.native
   @JSName("children")
-  def children_MPortalWithStateProps(params: PortalFunctionParams): ReactNode
+  def children_MPortalWithStateProps(params: PortalFunctionParams): ReactNode = js.native
 }
 
 object PortalWithStateProps {
   @scala.inline
-  def apply(
-    children: PortalFunctionParams => ReactNode,
-    closeOnEsc: js.UndefOr[Boolean] = js.undefined,
-    closeOnOutsideClick: js.UndefOr[Boolean] = js.undefined,
-    defaultOpen: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    node: js.UndefOr[Null | Element] = js.undefined,
-    onClose: () => Unit = null,
-    onOpen: () => Unit = null,
-    openByClickOn: ReactElement = null,
-    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined
-  ): PortalWithStateProps = {
+  def apply(children: PortalFunctionParams => ReactNode): PortalWithStateProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnOutsideClick)) __obj.updateDynamic("closeOnOutsideClick")(closeOnOutsideClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(node)) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
-    if (openByClickOn != null) __obj.updateDynamic("openByClickOn")(openByClickOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalWithStateProps]
   }
+  @scala.inline
+  implicit class PortalWithStatePropsOps[Self <: PortalWithStateProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: PortalFunctionParams => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCloseOnEsc(value: Boolean): Self = this.set("closeOnEsc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnEsc: Self = this.set("closeOnEsc", js.undefined)
+    @scala.inline
+    def setCloseOnOutsideClick(value: Boolean): Self = this.set("closeOnOutsideClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnOutsideClick: Self = this.set("closeOnOutsideClick", js.undefined)
+    @scala.inline
+    def setDefaultOpen(value: Boolean): Self = this.set("defaultOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOpen: Self = this.set("defaultOpen", js.undefined)
+    @scala.inline
+    def setNode(value: Element): Self = this.set("node", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNode: Self = this.set("node", js.undefined)
+    @scala.inline
+    def setNodeNull: Self = this.set("node", null)
+    @scala.inline
+    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnOpen(value: () => Unit): Self = this.set("onOpen", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    @scala.inline
+    def setOpenByClickOn(value: ReactElement): Self = this.set("openByClickOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenByClickOn: Self = this.set("openByClickOn", js.undefined)
+  }
+  
 }
 

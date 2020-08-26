@@ -74,24 +74,50 @@ trait SchemaWaiter extends js.Object {
 
 object SchemaWaiter {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    done: js.UndefOr[Boolean] = js.undefined,
-    error: SchemaStatus = null,
-    failure: SchemaEndCondition = null,
-    name: String = null,
-    success: SchemaEndCondition = null,
-    timeout: String = null
-  ): SchemaWaiter = {
+  def apply(): SchemaWaiter = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (failure != null) __obj.updateDynamic("failure")(failure.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWaiter]
   }
+  @scala.inline
+  implicit class SchemaWaiterOps[Self <: SchemaWaiter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDone(value: Boolean): Self = this.set("done", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDone: Self = this.set("done", js.undefined)
+    @scala.inline
+    def setError(value: SchemaStatus): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFailure(value: SchemaEndCondition): Self = this.set("failure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailure: Self = this.set("failure", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSuccess(value: SchemaEndCondition): Self = this.set("success", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

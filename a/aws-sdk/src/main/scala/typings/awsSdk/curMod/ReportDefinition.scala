@@ -41,16 +41,55 @@ object ReportDefinition {
     S3Bucket: S3Bucket,
     S3Prefix: S3Prefix,
     S3Region: AWSRegion,
-    TimeUnit: TimeUnit,
-    AdditionalArtifacts: AdditionalArtifactList = null,
-    RefreshClosedReports: js.UndefOr[RefreshClosedReports] = js.undefined,
-    ReportVersioning: ReportVersioning = null
+    TimeUnit: TimeUnit
   ): ReportDefinition = {
     val __obj = js.Dynamic.literal(AdditionalSchemaElements = AdditionalSchemaElements.asInstanceOf[js.Any], Compression = Compression.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], ReportName = ReportName.asInstanceOf[js.Any], S3Bucket = S3Bucket.asInstanceOf[js.Any], S3Prefix = S3Prefix.asInstanceOf[js.Any], S3Region = S3Region.asInstanceOf[js.Any], TimeUnit = TimeUnit.asInstanceOf[js.Any])
-    if (AdditionalArtifacts != null) __obj.updateDynamic("AdditionalArtifacts")(AdditionalArtifacts.asInstanceOf[js.Any])
-    if (!js.isUndefined(RefreshClosedReports)) __obj.updateDynamic("RefreshClosedReports")(RefreshClosedReports.get.asInstanceOf[js.Any])
-    if (ReportVersioning != null) __obj.updateDynamic("ReportVersioning")(ReportVersioning.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportDefinition]
   }
+  @scala.inline
+  implicit class ReportDefinitionOps[Self <: ReportDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalSchemaElementsVarargs(value: SchemaElement*): Self = this.set("AdditionalSchemaElements", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalSchemaElements(value: SchemaElementList): Self = this.set("AdditionalSchemaElements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompression(value: CompressionFormat): Self = this.set("Compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: ReportFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReportName(value: ReportName): Self = this.set("ReportName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3Bucket(value: S3Bucket): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3Prefix(value: S3Prefix): Self = this.set("S3Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3Region(value: AWSRegion): Self = this.set("S3Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeUnit(value: TimeUnit): Self = this.set("TimeUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalArtifactsVarargs(value: AdditionalArtifact*): Self = this.set("AdditionalArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalArtifacts(value: AdditionalArtifactList): Self = this.set("AdditionalArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalArtifacts: Self = this.set("AdditionalArtifacts", js.undefined)
+    @scala.inline
+    def setRefreshClosedReports(value: RefreshClosedReports): Self = this.set("RefreshClosedReports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshClosedReports: Self = this.set("RefreshClosedReports", js.undefined)
+    @scala.inline
+    def setReportVersioning(value: ReportVersioning): Self = this.set("ReportVersioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportVersioning: Self = this.set("ReportVersioning", js.undefined)
+  }
+  
 }
 

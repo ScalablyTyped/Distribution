@@ -16,6 +16,7 @@ object storage extends js.Object {
   def remove(key: String): js.Promise[_] = js.native
   def remove(key: String, accessMode: accessMode): js.Promise[_] = js.native
   def set(key: String, value: js.Any): js.Promise[_] = js.native
+  def set(key: String, value: js.Any, accessMode: js.UndefOr[scala.Nothing], tappIds: js.Array[Double]): js.Promise[_] = js.native
   def set(key: String, value: js.Any, accessMode: accessMode): js.Promise[_] = js.native
   def set(key: String, value: js.Any, accessMode: accessMode, tappIds: js.Array[Double]): js.Promise[_] = js.native
   @js.native

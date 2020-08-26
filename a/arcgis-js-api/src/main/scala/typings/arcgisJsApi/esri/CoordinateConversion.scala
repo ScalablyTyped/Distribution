@@ -1,5 +1,10 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`expand-down`
+import typings.arcgisJsApi.arcgisJsApiStrings.`expand-up`
+import typings.arcgisJsApi.arcgisJsApiStrings.auto
+import typings.arcgisJsApi.arcgisJsApiStrings.capture
+import typings.arcgisJsApi.arcgisJsApiStrings.live
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +32,7 @@ trait CoordinateConversion
     */
   var formats: Collection[Format] = js.native
   /**
-    * Describes the current mode of the widget.  **Possible Values:** live | capture
+    * Describes the current mode of the widget.
     *   * While in `live` mode, the widget will update as the cursor moves.
     *   * While in `capture` mode, the widget will update on mouse click and display a graphic marking the current location.
     *
@@ -35,7 +40,7 @@ trait CoordinateConversion
     *
     * @default live
     */
-  var mode: String = js.native
+  var mode: live | capture = js.native
   /**
     * If this property is set to `true`, multiple conversions can be displayed.  For a simpler experience with only one conversion at a time, this property can be set to `false`.
     *
@@ -45,13 +50,13 @@ trait CoordinateConversion
     */
   var multipleConversions: Boolean = js.native
   /**
-    * Determines whether the widget should expand up or down.  If set to `auto` the widget will be oriented based on its position in the view.  **Possible Values:** auto | expand-up | expand-down
+    * Determines whether the widget should expand up or down.  If set to `auto` the widget will be oriented based on its position in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#orientation)
     *
     * @default auto
     */
-  var orientation: String = js.native
+  var orientation: auto | `expand-up` | `expand-down` = js.native
   /**
     * The number of milliseconds of delay before conversion requests will be sent to the [GeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html).  This only affects conversions that cannot be performed in the browser.
     *

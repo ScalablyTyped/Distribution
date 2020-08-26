@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/resources relevant section in reference guide}
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
@@ -33,7 +33,7 @@ class Folder protected () extends FolderBase {
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MFolder: FolderBase = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
 }
 
 /* static members */

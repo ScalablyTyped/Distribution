@@ -27,35 +27,61 @@ trait ViewerCertificate extends js.Object {
     */
   var IAMCertificateId: js.UndefOr[String] = js.native
   /**
-    * If the distribution uses Aliases (alternate domain names or CNAMEs), specify the security policy that you want CloudFront to use for HTTPS connections with viewers. The security policy determines two settings:   The minimum SSL/TLS protocol that CloudFront can use to communicate with viewers.   The ciphers that CloudFront can use to encrypt the content that it returns to viewers.   For more information, see Security Policy and Supported Protocols and Ciphers Between Viewers and CloudFront in the Amazon CloudFront Developer Guide.  On the CloudFront console, this setting is called Security Policy.  We recommend that you specify TLSv1.2_2018 unless your viewers are using browsers or devices that don’t support TLSv1.2. When you’re using SNI only (you set SSLSupportMethod to sni-only), you must specify TLSv1 or higher.  If the distribution uses the CloudFront domain name such as d111111abcdef8.cloudfront.net (you set CloudFrontDefaultCertificate to true), CloudFront automatically sets the security policy to TLSv1 regardless of the value that you set here.
+    * If the distribution uses Aliases (alternate domain names or CNAMEs), specify the security policy that you want CloudFront to use for HTTPS connections with viewers. The security policy determines two settings:   The minimum SSL/TLS protocol that CloudFront can use to communicate with viewers.   The ciphers that CloudFront can use to encrypt the content that it returns to viewers.   For more information, see Security Policy and Supported Protocols and Ciphers Between Viewers and CloudFront in the Amazon CloudFront Developer Guide.  On the CloudFront console, this setting is called Security Policy.  When you’re using SNI only (you set SSLSupportMethod to sni-only), you must specify TLSv1 or higher.  If the distribution uses the CloudFront domain name such as d111111abcdef8.cloudfront.net (you set CloudFrontDefaultCertificate to true), CloudFront automatically sets the security policy to TLSv1 regardless of the value that you set here.
     */
   var MinimumProtocolVersion: js.UndefOr[typings.awsSdk.cloudfrontMod.MinimumProtocolVersion] = js.native
   /**
-    * If the distribution uses Aliases (alternate domain names or CNAMEs), specify which viewers the distribution accepts HTTPS connections from.    sni-only – The distribution accepts HTTPS connections from only viewers that support server name indication (SNI). This is recommended. Most browsers and clients released after 2010 support SNI.    vip – The distribution accepts HTTPS connections from all viewers including those that don’t support SNI. This is not recommended, and results in additional monthly charges from CloudFront.   If the distribution uses the CloudFront domain name such as d111111abcdef8.cloudfront.net, don’t set a value for this field.
+    * If the distribution uses Aliases (alternate domain names or CNAMEs), specify which viewers the distribution accepts HTTPS connections from.    sni-only – The distribution accepts HTTPS connections from only viewers that support server name indication (SNI). This is recommended. Most browsers and clients support SNI.    vip – The distribution accepts HTTPS connections from all viewers including those that don’t support SNI. This is not recommended, and results in additional monthly charges from CloudFront.   If the distribution uses the CloudFront domain name such as d111111abcdef8.cloudfront.net, don’t set a value for this field.
     */
   var SSLSupportMethod: js.UndefOr[typings.awsSdk.cloudfrontMod.SSLSupportMethod] = js.native
 }
 
 object ViewerCertificate {
   @scala.inline
-  def apply(
-    ACMCertificateArn: String = null,
-    Certificate: String = null,
-    CertificateSource: CertificateSource = null,
-    CloudFrontDefaultCertificate: js.UndefOr[Boolean] = js.undefined,
-    IAMCertificateId: String = null,
-    MinimumProtocolVersion: MinimumProtocolVersion = null,
-    SSLSupportMethod: SSLSupportMethod = null
-  ): ViewerCertificate = {
+  def apply(): ViewerCertificate = {
     val __obj = js.Dynamic.literal()
-    if (ACMCertificateArn != null) __obj.updateDynamic("ACMCertificateArn")(ACMCertificateArn.asInstanceOf[js.Any])
-    if (Certificate != null) __obj.updateDynamic("Certificate")(Certificate.asInstanceOf[js.Any])
-    if (CertificateSource != null) __obj.updateDynamic("CertificateSource")(CertificateSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudFrontDefaultCertificate)) __obj.updateDynamic("CloudFrontDefaultCertificate")(CloudFrontDefaultCertificate.get.asInstanceOf[js.Any])
-    if (IAMCertificateId != null) __obj.updateDynamic("IAMCertificateId")(IAMCertificateId.asInstanceOf[js.Any])
-    if (MinimumProtocolVersion != null) __obj.updateDynamic("MinimumProtocolVersion")(MinimumProtocolVersion.asInstanceOf[js.Any])
-    if (SSLSupportMethod != null) __obj.updateDynamic("SSLSupportMethod")(SSLSupportMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewerCertificate]
   }
+  @scala.inline
+  implicit class ViewerCertificateOps[Self <: ViewerCertificate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setACMCertificateArn(value: String): Self = this.set("ACMCertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteACMCertificateArn: Self = this.set("ACMCertificateArn", js.undefined)
+    @scala.inline
+    def setCertificate(value: String): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    @scala.inline
+    def setCertificateSource(value: CertificateSource): Self = this.set("CertificateSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateSource: Self = this.set("CertificateSource", js.undefined)
+    @scala.inline
+    def setCloudFrontDefaultCertificate(value: Boolean): Self = this.set("CloudFrontDefaultCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudFrontDefaultCertificate: Self = this.set("CloudFrontDefaultCertificate", js.undefined)
+    @scala.inline
+    def setIAMCertificateId(value: String): Self = this.set("IAMCertificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIAMCertificateId: Self = this.set("IAMCertificateId", js.undefined)
+    @scala.inline
+    def setMinimumProtocolVersion(value: MinimumProtocolVersion): Self = this.set("MinimumProtocolVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumProtocolVersion: Self = this.set("MinimumProtocolVersion", js.undefined)
+    @scala.inline
+    def setSSLSupportMethod(value: SSLSupportMethod): Self = this.set("SSLSupportMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSLSupportMethod: Self = this.set("SSLSupportMethod", js.undefined)
+  }
+  
 }
 

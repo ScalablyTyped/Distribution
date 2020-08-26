@@ -12,7 +12,7 @@ JavaScript interval arithmetic library
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 218 |
+| # downloads        | 217 |
 | # stars            | 0 |
 
 ## Links

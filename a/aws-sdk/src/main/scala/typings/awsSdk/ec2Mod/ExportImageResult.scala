@@ -50,30 +50,64 @@ trait ExportImageResult extends js.Object {
 
 object ExportImageResult {
   @scala.inline
-  def apply(
-    Description: String = null,
-    DiskImageFormat: DiskImageFormat = null,
-    ExportImageTaskId: String = null,
-    ImageId: String = null,
-    Progress: String = null,
-    RoleName: String = null,
-    S3ExportLocation: ExportTaskS3Location = null,
-    Status: String = null,
-    StatusMessage: String = null,
-    Tags: TagList = null
-  ): ExportImageResult = {
+  def apply(): ExportImageResult = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DiskImageFormat != null) __obj.updateDynamic("DiskImageFormat")(DiskImageFormat.asInstanceOf[js.Any])
-    if (ExportImageTaskId != null) __obj.updateDynamic("ExportImageTaskId")(ExportImageTaskId.asInstanceOf[js.Any])
-    if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId.asInstanceOf[js.Any])
-    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
-    if (RoleName != null) __obj.updateDynamic("RoleName")(RoleName.asInstanceOf[js.Any])
-    if (S3ExportLocation != null) __obj.updateDynamic("S3ExportLocation")(S3ExportLocation.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportImageResult]
   }
+  @scala.inline
+  implicit class ExportImageResultOps[Self <: ExportImageResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDiskImageFormat(value: DiskImageFormat): Self = this.set("DiskImageFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskImageFormat: Self = this.set("DiskImageFormat", js.undefined)
+    @scala.inline
+    def setExportImageTaskId(value: String): Self = this.set("ExportImageTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportImageTaskId: Self = this.set("ExportImageTaskId", js.undefined)
+    @scala.inline
+    def setImageId(value: String): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    @scala.inline
+    def setProgress(value: String): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("Progress", js.undefined)
+    @scala.inline
+    def setRoleName(value: String): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleName: Self = this.set("RoleName", js.undefined)
+    @scala.inline
+    def setS3ExportLocation(value: ExportTaskS3Location): Self = this.set("S3ExportLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ExportLocation: Self = this.set("S3ExportLocation", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

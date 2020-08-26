@@ -8,50 +8,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabsProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var contentContainerClassName: js.UndefOr[String] = js.undefined
-  var contentContainerStyle: js.UndefOr[CSSProperties] = js.undefined
-  var initialSelectedIndex: js.UndefOr[Double] = js.undefined
-  var inkBarStyle: js.UndefOr[CSSProperties] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var contentContainerClassName: js.UndefOr[String] = js.native
+  var contentContainerStyle: js.UndefOr[CSSProperties] = js.native
+  var initialSelectedIndex: js.UndefOr[Double] = js.native
+  var inkBarStyle: js.UndefOr[CSSProperties] = js.native
   var onChange: js.UndefOr[
     js.Function3[/* value */ js.Any, /* e */ FormEvent[js.Object], /* tab */ Tab, Unit]
-  ] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var tabItemContainerStyle: js.UndefOr[CSSProperties] = js.undefined
-  var tabTemplate: js.UndefOr[ComponentClass[_, ComponentState]] = js.undefined
-  var tabTemplateStyle: js.UndefOr[CSSProperties] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  ] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var tabItemContainerStyle: js.UndefOr[CSSProperties] = js.native
+  var tabTemplate: js.UndefOr[ComponentClass[_, ComponentState]] = js.native
+  var tabTemplateStyle: js.UndefOr[CSSProperties] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object TabsProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    contentContainerClassName: String = null,
-    contentContainerStyle: CSSProperties = null,
-    initialSelectedIndex: js.UndefOr[Double] = js.undefined,
-    inkBarStyle: CSSProperties = null,
-    onChange: (/* value */ js.Any, /* e */ FormEvent[js.Object], /* tab */ Tab) => Unit = null,
-    style: CSSProperties = null,
-    tabItemContainerStyle: CSSProperties = null,
-    tabTemplate: ComponentClass[_, ComponentState] = null,
-    tabTemplateStyle: CSSProperties = null,
-    value: js.Any = null
-  ): TabsProps = {
+  def apply(): TabsProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (contentContainerClassName != null) __obj.updateDynamic("contentContainerClassName")(contentContainerClassName.asInstanceOf[js.Any])
-    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialSelectedIndex)) __obj.updateDynamic("initialSelectedIndex")(initialSelectedIndex.get.asInstanceOf[js.Any])
-    if (inkBarStyle != null) __obj.updateDynamic("inkBarStyle")(inkBarStyle.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabItemContainerStyle != null) __obj.updateDynamic("tabItemContainerStyle")(tabItemContainerStyle.asInstanceOf[js.Any])
-    if (tabTemplate != null) __obj.updateDynamic("tabTemplate")(tabTemplate.asInstanceOf[js.Any])
-    if (tabTemplateStyle != null) __obj.updateDynamic("tabTemplateStyle")(tabTemplateStyle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsProps]
   }
+  @scala.inline
+  implicit class TabsPropsOps[Self <: TabsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setContentContainerClassName(value: String): Self = this.set("contentContainerClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentContainerClassName: Self = this.set("contentContainerClassName", js.undefined)
+    @scala.inline
+    def setContentContainerStyle(value: CSSProperties): Self = this.set("contentContainerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentContainerStyle: Self = this.set("contentContainerStyle", js.undefined)
+    @scala.inline
+    def setInitialSelectedIndex(value: Double): Self = this.set("initialSelectedIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialSelectedIndex: Self = this.set("initialSelectedIndex", js.undefined)
+    @scala.inline
+    def setInkBarStyle(value: CSSProperties): Self = this.set("inkBarStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInkBarStyle: Self = this.set("inkBarStyle", js.undefined)
+    @scala.inline
+    def setOnChange(value: (/* value */ js.Any, /* e */ FormEvent[js.Object], /* tab */ Tab) => Unit): Self = this.set("onChange", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTabItemContainerStyle(value: CSSProperties): Self = this.set("tabItemContainerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabItemContainerStyle: Self = this.set("tabItemContainerStyle", js.undefined)
+    @scala.inline
+    def setTabTemplate(value: ComponentClass[_, ComponentState]): Self = this.set("tabTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabTemplate: Self = this.set("tabTemplate", js.undefined)
+    @scala.inline
+    def setTabTemplateStyle(value: CSSProperties): Self = this.set("tabTemplateStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabTemplateStyle: Self = this.set("tabTemplateStyle", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

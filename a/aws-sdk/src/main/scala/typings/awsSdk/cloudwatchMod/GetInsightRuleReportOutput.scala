@@ -34,22 +34,52 @@ trait GetInsightRuleReportOutput extends js.Object {
 
 object GetInsightRuleReportOutput {
   @scala.inline
-  def apply(
-    AggregateValue: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
-    AggregationStatistic: InsightRuleAggregationStatistic = null,
-    ApproximateUniqueCount: js.UndefOr[InsightRuleUnboundLong] = js.undefined,
-    Contributors: InsightRuleContributors = null,
-    KeyLabels: InsightRuleContributorKeyLabels = null,
-    MetricDatapoints: InsightRuleMetricDatapoints = null
-  ): GetInsightRuleReportOutput = {
+  def apply(): GetInsightRuleReportOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AggregateValue)) __obj.updateDynamic("AggregateValue")(AggregateValue.get.asInstanceOf[js.Any])
-    if (AggregationStatistic != null) __obj.updateDynamic("AggregationStatistic")(AggregationStatistic.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApproximateUniqueCount)) __obj.updateDynamic("ApproximateUniqueCount")(ApproximateUniqueCount.get.asInstanceOf[js.Any])
-    if (Contributors != null) __obj.updateDynamic("Contributors")(Contributors.asInstanceOf[js.Any])
-    if (KeyLabels != null) __obj.updateDynamic("KeyLabels")(KeyLabels.asInstanceOf[js.Any])
-    if (MetricDatapoints != null) __obj.updateDynamic("MetricDatapoints")(MetricDatapoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightRuleReportOutput]
   }
+  @scala.inline
+  implicit class GetInsightRuleReportOutputOps[Self <: GetInsightRuleReportOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregateValue(value: InsightRuleUnboundDouble): Self = this.set("AggregateValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregateValue: Self = this.set("AggregateValue", js.undefined)
+    @scala.inline
+    def setAggregationStatistic(value: InsightRuleAggregationStatistic): Self = this.set("AggregationStatistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationStatistic: Self = this.set("AggregationStatistic", js.undefined)
+    @scala.inline
+    def setApproximateUniqueCount(value: InsightRuleUnboundLong): Self = this.set("ApproximateUniqueCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproximateUniqueCount: Self = this.set("ApproximateUniqueCount", js.undefined)
+    @scala.inline
+    def setContributorsVarargs(value: InsightRuleContributor*): Self = this.set("Contributors", js.Array(value :_*))
+    @scala.inline
+    def setContributors(value: InsightRuleContributors): Self = this.set("Contributors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContributors: Self = this.set("Contributors", js.undefined)
+    @scala.inline
+    def setKeyLabelsVarargs(value: InsightRuleContributorKeyLabel*): Self = this.set("KeyLabels", js.Array(value :_*))
+    @scala.inline
+    def setKeyLabels(value: InsightRuleContributorKeyLabels): Self = this.set("KeyLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyLabels: Self = this.set("KeyLabels", js.undefined)
+    @scala.inline
+    def setMetricDatapointsVarargs(value: InsightRuleMetricDatapoint*): Self = this.set("MetricDatapoints", js.Array(value :_*))
+    @scala.inline
+    def setMetricDatapoints(value: InsightRuleMetricDatapoints): Self = this.set("MetricDatapoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricDatapoints: Self = this.set("MetricDatapoints", js.undefined)
+  }
+  
 }
 

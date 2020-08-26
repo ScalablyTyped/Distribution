@@ -28,33 +28,33 @@ class Style protected () extends Element {
   @JSName("model")
   var model_FStyle: IModel = js.native
   def backgroundColor: IColor = js.native
-  def backgroundColor(newValue: IColor): js.Any = js.native
+  def backgroundColor_=(newValue: IColor): Unit = js.native
   def bold: Boolean = js.native
-  def bold(newValue: Boolean): js.Any = js.native
+  def bold_=(newValue: Boolean): Unit = js.native
   def borderColorBottom: IColor = js.native
-  def borderColorBottom(newValue: IColor): js.Any = js.native
+  def borderColorBottom_=(newValue: IColor): Unit = js.native
   def borderColorLeft: IColor = js.native
-  def borderColorLeft(newValue: IColor): js.Any = js.native
+  def borderColorLeft_=(newValue: IColor): Unit = js.native
   def borderColorRight: IColor = js.native
-  def borderColorRight(newValue: IColor): js.Any = js.native
+  def borderColorRight_=(newValue: IColor): Unit = js.native
   def borderColorTop: IColor = js.native
-  def borderColorTop(newValue: IColor): js.Any = js.native
+  def borderColorTop_=(newValue: IColor): Unit = js.native
   def borderStyleBottom: BorderStyle = js.native
-  def borderStyleBottom(newValue: BorderStyle): js.Any = js.native
+  def borderStyleBottom_=(newValue: BorderStyle): Unit = js.native
   def borderStyleLeft: BorderStyle = js.native
-  def borderStyleLeft(newValue: BorderStyle): js.Any = js.native
+  def borderStyleLeft_=(newValue: BorderStyle): Unit = js.native
   def borderStyleRight: BorderStyle = js.native
-  def borderStyleRight(newValue: BorderStyle): js.Any = js.native
+  def borderStyleRight_=(newValue: BorderStyle): Unit = js.native
   def borderStyleTop: BorderStyle = js.native
-  def borderStyleTop(newValue: BorderStyle): js.Any = js.native
+  def borderStyleTop_=(newValue: BorderStyle): Unit = js.native
   def borderWidthBottom: Double = js.native
-  def borderWidthBottom(newValue: Double): js.Any = js.native
+  def borderWidthBottom_=(newValue: Double): Unit = js.native
   def borderWidthLeft: Double = js.native
-  def borderWidthLeft(newValue: Double): js.Any = js.native
+  def borderWidthLeft_=(newValue: Double): Unit = js.native
   def borderWidthRight: Double = js.native
-  def borderWidthRight(newValue: Double): js.Any = js.native
+  def borderWidthRight_=(newValue: Double): Unit = js.native
   def borderWidthTop: Double = js.native
-  def borderWidthTop(newValue: Double): js.Any = js.native
+  def borderWidthTop_=(newValue: Double): Unit = js.native
   def containerAsDataGridCell: DataGridCell = js.native
   def containerAsDataGridColumn: DataGridColumn = js.native
   def containerAsDocumentTemplate: DocumentTemplate = js.native
@@ -65,29 +65,29 @@ class Style protected () extends Element {
   def containerAsTableCell: TableCell = js.native
   def containerAsTitle: Title = js.native
   def customStyles: String = js.native
-  def customStyles(newValue: String): js.Any = js.native
+  def customStyles_=(newValue: String): Unit = js.native
   def fontColor: IColor = js.native
-  def fontColor(newValue: IColor): js.Any = js.native
+  def fontColor_=(newValue: IColor): Unit = js.native
   def fontFamily: FontFamily = js.native
-  def fontFamily(newValue: FontFamily): js.Any = js.native
+  def fontFamily_=(newValue: FontFamily): Unit = js.native
   def fontSize: Double = js.native
-  def fontSize(newValue: Double): js.Any = js.native
+  def fontSize_=(newValue: Double): Unit = js.native
   def italic: Boolean = js.native
-  def italic(newValue: Boolean): js.Any = js.native
+  def italic_=(newValue: Boolean): Unit = js.native
   def overrideBackgroundColor: Boolean = js.native
-  def overrideBackgroundColor(newValue: Boolean): js.Any = js.native
+  def overrideBackgroundColor_=(newValue: Boolean): Unit = js.native
   def overrideBold: Boolean = js.native
-  def overrideBold(newValue: Boolean): js.Any = js.native
+  def overrideBold_=(newValue: Boolean): Unit = js.native
   def overrideFontColor: Boolean = js.native
-  def overrideFontColor(newValue: Boolean): js.Any = js.native
+  def overrideFontColor_=(newValue: Boolean): Unit = js.native
   def overrideFontFamily: Boolean = js.native
-  def overrideFontFamily(newValue: Boolean): js.Any = js.native
+  def overrideFontFamily_=(newValue: Boolean): Unit = js.native
   def overrideFontSize: Boolean = js.native
-  def overrideFontSize(newValue: Boolean): js.Any = js.native
+  def overrideFontSize_=(newValue: Boolean): Unit = js.native
   def overrideItalic: Boolean = js.native
-  def overrideItalic(newValue: Boolean): js.Any = js.native
+  def overrideItalic_=(newValue: Boolean): Unit = js.native
   def textAlign: TextAlign = js.native
-  def textAlign(newValue: TextAlign): js.Any = js.native
+  def textAlign_=(newValue: TextAlign): Unit = js.native
 }
 
 /* static members */

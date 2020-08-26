@@ -27,15 +27,32 @@ trait VaultLockArgs extends js.Object {
 
 object VaultLockArgs {
   @scala.inline
-  def apply(
-    completeLock: Input[Boolean],
-    policy: Input[String],
-    vaultName: Input[String],
-    ignoreDeletionError: Input[Boolean] = null
-  ): VaultLockArgs = {
+  def apply(completeLock: Input[Boolean], policy: Input[String], vaultName: Input[String]): VaultLockArgs = {
     val __obj = js.Dynamic.literal(completeLock = completeLock.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-    if (ignoreDeletionError != null) __obj.updateDynamic("ignoreDeletionError")(ignoreDeletionError.asInstanceOf[js.Any])
     __obj.asInstanceOf[VaultLockArgs]
   }
+  @scala.inline
+  implicit class VaultLockArgsOps[Self <: VaultLockArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompleteLock(value: Input[Boolean]): Self = this.set("completeLock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicy(value: Input[String]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVaultName(value: Input[String]): Self = this.set("vaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIgnoreDeletionError(value: Input[Boolean]): Self = this.set("ignoreDeletionError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreDeletionError: Self = this.set("ignoreDeletionError", js.undefined)
+  }
+  
 }
 

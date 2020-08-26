@@ -1,9 +1,6 @@
 package typings.reactNativeSwiper.mod
 
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.NativeScrollEvent
 import typings.reactNative.mod.NativeSyntheticEvent
@@ -13,27 +10,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SwiperProperties extends Props[Swiper] {
-  var activeDot: js.UndefOr[Element] = js.undefined
-  var activeDotColor: js.UndefOr[String] = js.undefined
-  var activeDotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
-  var autoplay: js.UndefOr[Boolean] = js.undefined
-  var autoplayDirection: js.UndefOr[Boolean] = js.undefined
-  var autoplayTimeout: js.UndefOr[Double] = js.undefined
-  var bounces: js.UndefOr[Boolean] = js.undefined
-  var buttonWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var dot: js.UndefOr[Element] = js.undefined
-  var dotColor: js.UndefOr[String] = js.undefined
-  var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var horizontal: js.UndefOr[Boolean] = js.undefined
-  var index: js.UndefOr[Double] = js.undefined
-  var loadMinimal: js.UndefOr[Boolean] = js.undefined
-  var loadMinimalLoader: js.UndefOr[Element] = js.undefined
-  var loadMinimalSize: js.UndefOr[Double] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var nextButton: js.UndefOr[Element] = js.undefined
+  var activeDot: js.UndefOr[Element] = js.native
+  var activeDotColor: js.UndefOr[String] = js.native
+  var activeDotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplayDirection: js.UndefOr[Boolean] = js.native
+  var autoplayTimeout: js.UndefOr[Double] = js.native
+  var bounces: js.UndefOr[Boolean] = js.native
+  var buttonWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var dot: js.UndefOr[Element] = js.native
+  var dotColor: js.UndefOr[String] = js.native
+  var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[Double] = js.native
+  var loadMinimal: js.UndefOr[Boolean] = js.native
+  var loadMinimalLoader: js.UndefOr[Element] = js.native
+  var loadMinimalSize: js.UndefOr[Double] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var nextButton: js.UndefOr[Element] = js.native
   var onMomentumScrollEnd: js.UndefOr[
     js.Function3[
       /* event */ NativeSyntheticEvent[NativeScrollEvent], 
@@ -41,7 +39,7 @@ trait SwiperProperties extends Props[Swiper] {
       /* context */ Swiper, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var onResponderRelease: js.UndefOr[
     js.Function3[
       /* event */ NativeSyntheticEvent[NativeScrollEvent], 
@@ -49,7 +47,7 @@ trait SwiperProperties extends Props[Swiper] {
       /* context */ Swiper, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var onScrollBeginDrag: js.UndefOr[
     js.Function3[
       /* event */ NativeSyntheticEvent[NativeScrollEvent], 
@@ -57,7 +55,7 @@ trait SwiperProperties extends Props[Swiper] {
       /* context */ Swiper, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var onTouchEnd: js.UndefOr[
     js.Function3[
       /* event */ NativeSyntheticEvent[NativeScrollEvent], 
@@ -65,7 +63,7 @@ trait SwiperProperties extends Props[Swiper] {
       /* context */ Swiper, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var onTouchStart: js.UndefOr[
     js.Function3[
       /* event */ NativeSyntheticEvent[NativeScrollEvent], 
@@ -73,7 +71,7 @@ trait SwiperProperties extends Props[Swiper] {
       /* context */ Swiper, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var onTouchStartCapture: js.UndefOr[
     js.Function3[
       /* event */ NativeSyntheticEvent[NativeScrollEvent], 
@@ -81,114 +79,220 @@ trait SwiperProperties extends Props[Swiper] {
       /* context */ Swiper, 
       Unit
     ]
-  ] = js.undefined
-  var paginationStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var pagingEnabled: js.UndefOr[Boolean] = js.undefined
-  var prevButton: js.UndefOr[Element] = js.undefined
-  var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var paginationStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var pagingEnabled: js.UndefOr[Boolean] = js.native
+  var prevButton: js.UndefOr[Element] = js.native
+  var removeClippedSubviews: js.UndefOr[Boolean] = js.native
   var renderPagination: js.UndefOr[
     js.Function3[/* index */ Double, /* total */ Double, /* thisObject */ Swiper, Element]
-  ] = js.undefined
-  var scrollEnabled: js.UndefOr[Boolean] = js.undefined
-  var scrollsToTop: js.UndefOr[Boolean] = js.undefined
-  var showsButtons: js.UndefOr[Boolean] = js.undefined
-  var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined
-  var showsPagination: js.UndefOr[Boolean] = js.undefined
-  var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var scrollEnabled: js.UndefOr[Boolean] = js.native
+  var scrollsToTop: js.UndefOr[Boolean] = js.native
+  var showsButtons: js.UndefOr[Boolean] = js.native
+  var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.native
+  var showsPagination: js.UndefOr[Boolean] = js.native
+  var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object SwiperProperties {
   @scala.inline
-  def apply(
-    activeDot: Element = null,
-    activeDotColor: String = null,
-    activeDotStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    autoplayDirection: js.UndefOr[Boolean] = js.undefined,
-    autoplayTimeout: js.UndefOr[Double] = js.undefined,
-    bounces: js.UndefOr[Boolean] = js.undefined,
-    buttonWrapperStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    children: ReactNode = null,
-    dot: Element = null,
-    dotColor: String = null,
-    dotStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    index: js.UndefOr[Double] = js.undefined,
-    key: Key = null,
-    loadMinimal: js.UndefOr[Boolean] = js.undefined,
-    loadMinimalLoader: Element = null,
-    loadMinimalSize: js.UndefOr[Double] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    nextButton: Element = null,
-    onMomentumScrollEnd: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit = null,
-    onResponderRelease: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit = null,
-    onScrollBeginDrag: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit = null,
-    onTouchEnd: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit = null,
-    onTouchStart: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit = null,
-    onTouchStartCapture: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit = null,
-    paginationStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    pagingEnabled: js.UndefOr[Boolean] = js.undefined,
-    prevButton: Element = null,
-    ref: js.UndefOr[Null | LegacyRef[Swiper]] = js.undefined,
-    removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    renderPagination: (/* index */ Double, /* total */ Double, /* thisObject */ Swiper) => Element = null,
-    scrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    scrollsToTop: js.UndefOr[Boolean] = js.undefined,
-    showsButtons: js.UndefOr[Boolean] = js.undefined,
-    showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
-    showsPagination: js.UndefOr[Boolean] = js.undefined,
-    showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): SwiperProperties = {
+  def apply(): SwiperProperties = {
     val __obj = js.Dynamic.literal()
-    if (activeDot != null) __obj.updateDynamic("activeDot")(activeDot.asInstanceOf[js.Any])
-    if (activeDotColor != null) __obj.updateDynamic("activeDotColor")(activeDotColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeDotStyle)) __obj.updateDynamic("activeDotStyle")(activeDotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(automaticallyAdjustContentInsets)) __obj.updateDynamic("automaticallyAdjustContentInsets")(automaticallyAdjustContentInsets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplayDirection)) __obj.updateDynamic("autoplayDirection")(autoplayDirection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplayTimeout)) __obj.updateDynamic("autoplayTimeout")(autoplayTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounces)) __obj.updateDynamic("bounces")(bounces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonWrapperStyle)) __obj.updateDynamic("buttonWrapperStyle")(buttonWrapperStyle.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (dot != null) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
-    if (dotColor != null) __obj.updateDynamic("dotColor")(dotColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotStyle)) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadMinimal)) __obj.updateDynamic("loadMinimal")(loadMinimal.get.asInstanceOf[js.Any])
-    if (loadMinimalLoader != null) __obj.updateDynamic("loadMinimalLoader")(loadMinimalLoader.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadMinimalSize)) __obj.updateDynamic("loadMinimalSize")(loadMinimalSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (nextButton != null) __obj.updateDynamic("nextButton")(nextButton.asInstanceOf[js.Any])
-    if (onMomentumScrollEnd != null) __obj.updateDynamic("onMomentumScrollEnd")(js.Any.fromFunction3(onMomentumScrollEnd))
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction3(onResponderRelease))
-    if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(js.Any.fromFunction3(onScrollBeginDrag))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction3(onTouchEnd))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction3(onTouchStart))
-    if (onTouchStartCapture != null) __obj.updateDynamic("onTouchStartCapture")(js.Any.fromFunction3(onTouchStartCapture))
-    if (!js.isUndefined(paginationStyle)) __obj.updateDynamic("paginationStyle")(paginationStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagingEnabled)) __obj.updateDynamic("pagingEnabled")(pagingEnabled.get.asInstanceOf[js.Any])
-    if (prevButton != null) __obj.updateDynamic("prevButton")(prevButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.get.asInstanceOf[js.Any])
-    if (renderPagination != null) __obj.updateDynamic("renderPagination")(js.Any.fromFunction3(renderPagination))
-    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsButtons)) __obj.updateDynamic("showsButtons")(showsButtons.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsPagination)) __obj.updateDynamic("showsPagination")(showsPagination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsVerticalScrollIndicator)) __obj.updateDynamic("showsVerticalScrollIndicator")(showsVerticalScrollIndicator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwiperProperties]
   }
+  @scala.inline
+  implicit class SwiperPropertiesOps[Self <: SwiperProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveDot(value: Element): Self = this.set("activeDot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveDot: Self = this.set("activeDot", js.undefined)
+    @scala.inline
+    def setActiveDotColor(value: String): Self = this.set("activeDotColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveDotColor: Self = this.set("activeDotColor", js.undefined)
+    @scala.inline
+    def setActiveDotStyle(value: StyleProp[ViewStyle]): Self = this.set("activeDotStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveDotStyle: Self = this.set("activeDotStyle", js.undefined)
+    @scala.inline
+    def setActiveDotStyleNull: Self = this.set("activeDotStyle", null)
+    @scala.inline
+    def setAutomaticallyAdjustContentInsets(value: Boolean): Self = this.set("automaticallyAdjustContentInsets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticallyAdjustContentInsets: Self = this.set("automaticallyAdjustContentInsets", js.undefined)
+    @scala.inline
+    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    @scala.inline
+    def setAutoplayDirection(value: Boolean): Self = this.set("autoplayDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplayDirection: Self = this.set("autoplayDirection", js.undefined)
+    @scala.inline
+    def setAutoplayTimeout(value: Double): Self = this.set("autoplayTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplayTimeout: Self = this.set("autoplayTimeout", js.undefined)
+    @scala.inline
+    def setBounces(value: Boolean): Self = this.set("bounces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounces: Self = this.set("bounces", js.undefined)
+    @scala.inline
+    def setButtonWrapperStyle(value: StyleProp[ViewStyle]): Self = this.set("buttonWrapperStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonWrapperStyle: Self = this.set("buttonWrapperStyle", js.undefined)
+    @scala.inline
+    def setButtonWrapperStyleNull: Self = this.set("buttonWrapperStyle", null)
+    @scala.inline
+    def setDot(value: Element): Self = this.set("dot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDot: Self = this.set("dot", js.undefined)
+    @scala.inline
+    def setDotColor(value: String): Self = this.set("dotColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotColor: Self = this.set("dotColor", js.undefined)
+    @scala.inline
+    def setDotStyle(value: StyleProp[ViewStyle]): Self = this.set("dotStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotStyle: Self = this.set("dotStyle", js.undefined)
+    @scala.inline
+    def setDotStyleNull: Self = this.set("dotStyle", null)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setLoadMinimal(value: Boolean): Self = this.set("loadMinimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadMinimal: Self = this.set("loadMinimal", js.undefined)
+    @scala.inline
+    def setLoadMinimalLoader(value: Element): Self = this.set("loadMinimalLoader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadMinimalLoader: Self = this.set("loadMinimalLoader", js.undefined)
+    @scala.inline
+    def setLoadMinimalSize(value: Double): Self = this.set("loadMinimalSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadMinimalSize: Self = this.set("loadMinimalSize", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setNextButton(value: Element): Self = this.set("nextButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextButton: Self = this.set("nextButton", js.undefined)
+    @scala.inline
+    def setOnMomentumScrollEnd(
+      value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit
+    ): Self = this.set("onMomentumScrollEnd", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnMomentumScrollEnd: Self = this.set("onMomentumScrollEnd", js.undefined)
+    @scala.inline
+    def setOnResponderRelease(
+      value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit
+    ): Self = this.set("onResponderRelease", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnResponderRelease: Self = this.set("onResponderRelease", js.undefined)
+    @scala.inline
+    def setOnScrollBeginDrag(
+      value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit
+    ): Self = this.set("onScrollBeginDrag", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnScrollBeginDrag: Self = this.set("onScrollBeginDrag", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(
+      value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit
+    ): Self = this.set("onTouchEnd", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchStart(
+      value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit
+    ): Self = this.set("onTouchStart", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOnTouchStartCapture(
+      value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ SwiperState, /* context */ Swiper) => Unit
+    ): Self = this.set("onTouchStartCapture", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnTouchStartCapture: Self = this.set("onTouchStartCapture", js.undefined)
+    @scala.inline
+    def setPaginationStyle(value: StyleProp[ViewStyle]): Self = this.set("paginationStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationStyle: Self = this.set("paginationStyle", js.undefined)
+    @scala.inline
+    def setPaginationStyleNull: Self = this.set("paginationStyle", null)
+    @scala.inline
+    def setPagingEnabled(value: Boolean): Self = this.set("pagingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagingEnabled: Self = this.set("pagingEnabled", js.undefined)
+    @scala.inline
+    def setPrevButton(value: Element): Self = this.set("prevButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevButton: Self = this.set("prevButton", js.undefined)
+    @scala.inline
+    def setRemoveClippedSubviews(value: Boolean): Self = this.set("removeClippedSubviews", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveClippedSubviews: Self = this.set("removeClippedSubviews", js.undefined)
+    @scala.inline
+    def setRenderPagination(value: (/* index */ Double, /* total */ Double, /* thisObject */ Swiper) => Element): Self = this.set("renderPagination", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRenderPagination: Self = this.set("renderPagination", js.undefined)
+    @scala.inline
+    def setScrollEnabled(value: Boolean): Self = this.set("scrollEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollEnabled: Self = this.set("scrollEnabled", js.undefined)
+    @scala.inline
+    def setScrollsToTop(value: Boolean): Self = this.set("scrollsToTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollsToTop: Self = this.set("scrollsToTop", js.undefined)
+    @scala.inline
+    def setShowsButtons(value: Boolean): Self = this.set("showsButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowsButtons: Self = this.set("showsButtons", js.undefined)
+    @scala.inline
+    def setShowsHorizontalScrollIndicator(value: Boolean): Self = this.set("showsHorizontalScrollIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowsHorizontalScrollIndicator: Self = this.set("showsHorizontalScrollIndicator", js.undefined)
+    @scala.inline
+    def setShowsPagination(value: Boolean): Self = this.set("showsPagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowsPagination: Self = this.set("showsPagination", js.undefined)
+    @scala.inline
+    def setShowsVerticalScrollIndicator(value: Boolean): Self = this.set("showsVerticalScrollIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowsVerticalScrollIndicator: Self = this.set("showsVerticalScrollIndicator", js.undefined)
+    @scala.inline
+    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

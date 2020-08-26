@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 class Converter () extends Transform {
   def this(options: ConverterOptions) = this()
+  def this(options: js.UndefOr[scala.Nothing], streamOptions: StreamOptions) = this()
   def this(options: ConverterOptions, streamOptions: StreamOptions) = this()
   /**
     * Reads in a CSV from a file.

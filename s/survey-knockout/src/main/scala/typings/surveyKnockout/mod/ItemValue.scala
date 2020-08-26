@@ -12,6 +12,7 @@ class ItemValue protected ()
      with /* index */ StringDictionary[js.Any] {
   def this(value: js.Any) = this()
   def this(value: js.Any, text: String) = this()
+  def this(value: js.Any, text: js.UndefOr[scala.Nothing], typeName: String) = this()
   def this(value: js.Any, text: String, typeName: String) = this()
   val calculatedText: String = js.native
   val hasText: Boolean = js.native

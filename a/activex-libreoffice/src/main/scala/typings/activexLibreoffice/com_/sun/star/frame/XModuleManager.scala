@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * can be used to identify office modules.
   * @since OOo 2.0
   */
+@js.native
 trait XModuleManager extends XInterface {
   /**
     * This identifier can then be used at the service {@link ModuleManager} to get more information about this module.
@@ -23,7 +24,7 @@ trait XModuleManager extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the parameter Module is: an empty oneor does not provide one of the needed interface {@link XFr
     * @throws UnknownModuleException if the given module could not be identified. Note: If the module represent a {@link XFrame} instance with does not contain
     */
-  def identify(Module: XInterface): String
+  def identify(Module: XInterface): String = js.native
 }
 
 object XModuleManager {
@@ -37,5 +38,20 @@ object XModuleManager {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), identify = js.Any.fromFunction1(identify), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XModuleManager]
   }
+  @scala.inline
+  implicit class XModuleManagerOps[Self <: XModuleManager] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentify(value: XInterface => String): Self = this.set("identify", js.Any.fromFunction1(value))
+  }
+  
 }
 

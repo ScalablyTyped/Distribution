@@ -30,16 +30,34 @@ trait Logger extends js.Object {
 
 object Logger {
   @scala.inline
-  def apply(
-    Component: LoggerComponent,
-    Id: string,
-    Level: LoggerLevel,
-    Type: LoggerType,
-    Space: js.UndefOr[integer] = js.undefined
-  ): Logger = {
+  def apply(Component: LoggerComponent, Id: string, Level: LoggerLevel, Type: LoggerType): Logger = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Level = Level.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(Space)) __obj.updateDynamic("Space")(Space.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Logger]
   }
+  @scala.inline
+  implicit class LoggerOps[Self <: Logger] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponent(value: LoggerComponent): Self = this.set("Component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLevel(value: LoggerLevel): Self = this.set("Level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: LoggerType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpace(value: integer): Self = this.set("Space", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpace: Self = this.set("Space", js.undefined)
+  }
+  
 }
 

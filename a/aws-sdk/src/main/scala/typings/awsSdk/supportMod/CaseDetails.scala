@@ -58,34 +58,72 @@ trait CaseDetails extends js.Object {
 
 object CaseDetails {
   @scala.inline
-  def apply(
-    caseId: CaseId = null,
-    categoryCode: CategoryCode = null,
-    ccEmailAddresses: CcEmailAddressList = null,
-    displayId: DisplayId = null,
-    language: Language = null,
-    recentCommunications: RecentCaseCommunications = null,
-    serviceCode: ServiceCode = null,
-    severityCode: SeverityCode = null,
-    status: Status = null,
-    subject: Subject = null,
-    submittedBy: SubmittedBy = null,
-    timeCreated: TimeCreated = null
-  ): CaseDetails = {
+  def apply(): CaseDetails = {
     val __obj = js.Dynamic.literal()
-    if (caseId != null) __obj.updateDynamic("caseId")(caseId.asInstanceOf[js.Any])
-    if (categoryCode != null) __obj.updateDynamic("categoryCode")(categoryCode.asInstanceOf[js.Any])
-    if (ccEmailAddresses != null) __obj.updateDynamic("ccEmailAddresses")(ccEmailAddresses.asInstanceOf[js.Any])
-    if (displayId != null) __obj.updateDynamic("displayId")(displayId.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (recentCommunications != null) __obj.updateDynamic("recentCommunications")(recentCommunications.asInstanceOf[js.Any])
-    if (serviceCode != null) __obj.updateDynamic("serviceCode")(serviceCode.asInstanceOf[js.Any])
-    if (severityCode != null) __obj.updateDynamic("severityCode")(severityCode.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (submittedBy != null) __obj.updateDynamic("submittedBy")(submittedBy.asInstanceOf[js.Any])
-    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaseDetails]
   }
+  @scala.inline
+  implicit class CaseDetailsOps[Self <: CaseDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseId(value: CaseId): Self = this.set("caseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseId: Self = this.set("caseId", js.undefined)
+    @scala.inline
+    def setCategoryCode(value: CategoryCode): Self = this.set("categoryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryCode: Self = this.set("categoryCode", js.undefined)
+    @scala.inline
+    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = this.set("ccEmailAddresses", js.Array(value :_*))
+    @scala.inline
+    def setCcEmailAddresses(value: CcEmailAddressList): Self = this.set("ccEmailAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCcEmailAddresses: Self = this.set("ccEmailAddresses", js.undefined)
+    @scala.inline
+    def setDisplayId(value: DisplayId): Self = this.set("displayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayId: Self = this.set("displayId", js.undefined)
+    @scala.inline
+    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setRecentCommunications(value: RecentCaseCommunications): Self = this.set("recentCommunications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecentCommunications: Self = this.set("recentCommunications", js.undefined)
+    @scala.inline
+    def setServiceCode(value: ServiceCode): Self = this.set("serviceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCode: Self = this.set("serviceCode", js.undefined)
+    @scala.inline
+    def setSeverityCode(value: SeverityCode): Self = this.set("severityCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverityCode: Self = this.set("severityCode", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubject(value: Subject): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+    @scala.inline
+    def setSubmittedBy(value: SubmittedBy): Self = this.set("submittedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmittedBy: Self = this.set("submittedBy", js.undefined)
+    @scala.inline
+    def setTimeCreated(value: TimeCreated): Self = this.set("timeCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeCreated: Self = this.set("timeCreated", js.undefined)
+  }
+  
 }
 

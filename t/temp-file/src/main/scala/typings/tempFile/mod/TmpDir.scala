@@ -18,6 +18,7 @@ class TmpDir () extends js.Object {
   def getTempDir(): js.Promise[String] = js.native
   def getTempDir(options: GetTempFileOptions): js.Promise[String] = js.native
   def getTempFile(): js.Promise[String] = js.native
+  def getTempFile(options: js.UndefOr[scala.Nothing], isDir: Boolean): js.Promise[String] = js.native
   def getTempFile(options: GetTempFileOptions): js.Promise[String] = js.native
   def getTempFile(options: GetTempFileOptions, isDir: Boolean): js.Promise[String] = js.native
   def rootTempDir: js.Promise[String] = js.native

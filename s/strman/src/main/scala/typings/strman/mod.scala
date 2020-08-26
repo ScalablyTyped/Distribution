@@ -25,11 +25,13 @@ object mod extends js.Object {
   def containsAny(value: String, needle: js.Array[String]): Boolean = js.native
   def containsAny(value: String, needle: js.Array[String], caseSensitive: Boolean): Boolean = js.native
   def countSubstr(value: String, substr: String): Double = js.native
+  def countSubstr(value: String, substr: String, caseSensitive: js.UndefOr[scala.Nothing], allowOverlapping: Boolean): Double = js.native
   def countSubstr(value: String, substr: String, caseSensitive: Boolean): Double = js.native
   def countSubstr(value: String, substr: String, caseSensitive: Boolean, allowOverlapping: Boolean): Double = js.native
   def decDecode(value: String): String = js.native
   def decEncode(value: String): String = js.native
   def endsWith(value: String, search: String): Boolean = js.native
+  def endsWith(value: String, search: String, position: js.UndefOr[scala.Nothing], caseSensitive: Boolean): Boolean = js.native
   def endsWith(value: String, search: String, position: Double): Boolean = js.native
   def endsWith(value: String, search: String, position: Double, caseSensitive: Boolean): Boolean = js.native
   def ensureLeft(value: String, substr: String): String = js.native
@@ -50,6 +52,7 @@ object mod extends js.Object {
   def isUpperCase(value: String): Boolean = js.native
   def last(value: String, n: Double): String = js.native
   def lastIndexOf(value: String, needle: String): String = js.native
+  def lastIndexOf(value: String, needle: String, offset: js.UndefOr[scala.Nothing], caseSensitive: Boolean): String = js.native
   def lastIndexOf(value: String, needle: String, offset: Double): String = js.native
   def lastIndexOf(value: String, needle: String, offset: Double, caseSensitive: Boolean): String = js.native
   def leftPad(value: String, length: Double): String = js.native
@@ -69,6 +72,13 @@ object mod extends js.Object {
   def removeSpaces(value: String, replaced: String): String = js.native
   def repeat(string: String, multiplier: Double): String = js.native
   def replace(value: String, search: String, newValue: String): String = js.native
+  def replace(
+    value: String,
+    search: String,
+    newValue: String,
+    caseSensitive: js.UndefOr[scala.Nothing],
+    multiline: Boolean
+  ): String = js.native
   def replace(value: String, search: String, newValue: String, caseSensitive: Boolean): String = js.native
   def replace(value: String, search: String, newValue: String, caseSensitive: Boolean, multiline: Boolean): String = js.native
   def reverse(value: String): String = js.native
@@ -84,6 +94,7 @@ object mod extends js.Object {
   def split(value: String, separator: String): js.Array[String] = js.native
   def split(value: String, separator: String, limit: Double): js.Array[String] = js.native
   def startsWith(value: String, search: String): Boolean = js.native
+  def startsWith(value: String, search: String, position: js.UndefOr[scala.Nothing], caseSensitive: Boolean): Boolean = js.native
   def startsWith(value: String, search: String, position: Double): Boolean = js.native
   def startsWith(value: String, search: String, position: Double, caseSensitive: Boolean): Boolean = js.native
   def substr(value: String, start: Double, length: Double): String = js.native

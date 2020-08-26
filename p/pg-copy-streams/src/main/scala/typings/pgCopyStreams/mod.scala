@@ -4,7 +4,6 @@ import typings.node.NodeJS.WritableStream
 import typings.node.anon.End
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
-import typings.pg.mod.Connection
 import typings.pg.mod.Submittable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +20,6 @@ object mod extends js.Object {
     override def pipe[T /* <: WritableStream */](destination: T): T = js.native
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-    /* CompleteClass */
-    override def submit(connection: Connection): Unit = js.native
   }
   
   @js.native
@@ -33,8 +30,6 @@ object mod extends js.Object {
     override def pipe[T /* <: WritableStream */](destination: T): T = js.native
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-    /* CompleteClass */
-    override def submit(connection: Connection): Unit = js.native
   }
   
   def from(txt: String): CopyStreamQuery = js.native

@@ -12,7 +12,7 @@ Server side socketty, based on ws
 | Keywords           | websockets |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 489 |
+| # downloads        | 511 |
 | # stars            | 0 |
 
 ## Links

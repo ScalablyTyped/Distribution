@@ -11,7 +11,12 @@ import scala.scalajs.js.annotation._
 class ObservableSet[T] ()
   extends typings.mobx.internalMod.ObservableSet[T] {
   def this(initialData: IObservableSetInitialValues[T]) = this()
-  def this(initialData: IObservableSetInitialValues[T], enhancer: IEnhancer[T]) = this()
-  def this(initialData: IObservableSetInitialValues[T], enhancer: IEnhancer[T], name: String) = this()
+  def this(initialData: js.UndefOr[IObservableSetInitialValues[T]], enhancer: IEnhancer[T]) = this()
+  def this(
+    initialData: js.UndefOr[IObservableSetInitialValues[T]],
+    enhancer: js.UndefOr[scala.Nothing],
+    name: String
+  ) = this()
+  def this(initialData: js.UndefOr[IObservableSetInitialValues[T]], enhancer: IEnhancer[T], name: String) = this()
 }
 

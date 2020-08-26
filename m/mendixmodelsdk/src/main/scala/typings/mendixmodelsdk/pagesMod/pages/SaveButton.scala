@@ -32,12 +32,12 @@ class SaveButton protected () extends Button {
     * In version 6.7.0: introduced
     */
   def closePage: Boolean = js.native
-  def closePage(newValue: Boolean): js.Any = js.native
+  def closePage_=(newValue: Boolean): Unit = js.native
   /**
     * In version 6.6.0: introduced
     */
   def syncAutomatically: Boolean = js.native
-  def syncAutomatically(newValue: Boolean): js.Any = js.native
+  def syncAutomatically_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

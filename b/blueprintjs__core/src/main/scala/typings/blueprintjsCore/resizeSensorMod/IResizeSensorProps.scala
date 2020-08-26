@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IResizeSensorProps extends js.Object {
   /**
     * If `true`, all parent DOM elements of the container will also be
@@ -15,7 +16,7 @@ trait IResizeSensorProps extends js.Object {
     * not also cause the child element to resize.
     * @default false
     */
-  var observeParents: js.UndefOr[Boolean] = js.undefined
+  var observeParents: js.UndefOr[Boolean] = js.native
   /**
     * Callback invoked when the wrapped element resizes.
     *
@@ -26,15 +27,33 @@ trait IResizeSensorProps extends js.Object {
     * Note that this method is called _asynchronously_ after a resize is
     * detected and typically it will be called no more than once per frame.
     */
-  def onResize(entries: js.Array[IResizeEntry]): Unit
+  def onResize(entries: js.Array[IResizeEntry]): Unit = js.native
 }
 
 object IResizeSensorProps {
   @scala.inline
-  def apply(onResize: js.Array[IResizeEntry] => Unit, observeParents: js.UndefOr[Boolean] = js.undefined): IResizeSensorProps = {
+  def apply(onResize: js.Array[IResizeEntry] => Unit): IResizeSensorProps = {
     val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
-    if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResizeSensorProps]
   }
+  @scala.inline
+  implicit class IResizeSensorPropsOps[Self <: IResizeSensorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnResize(value: js.Array[IResizeEntry] => Unit): Self = this.set("onResize", js.Any.fromFunction1(value))
+    @scala.inline
+    def setObserveParents(value: Boolean): Self = this.set("observeParents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObserveParents: Self = this.set("observeParents", js.undefined)
+  }
+  
 }
 

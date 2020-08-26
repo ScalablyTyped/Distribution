@@ -27,6 +27,7 @@ class ResourceMetadataColumns protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaColumns] = js.native
   def list(callback: BodyResponseCallback[SchemaColumns]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaColumns] = js.native
   def list(params: ParamsResourceMetadataColumnsList): GaxiosPromise[SchemaColumns] = js.native
   def list(params: ParamsResourceMetadataColumnsList, callback: BodyResponseCallback[SchemaColumns]): Unit = js.native
   def list(

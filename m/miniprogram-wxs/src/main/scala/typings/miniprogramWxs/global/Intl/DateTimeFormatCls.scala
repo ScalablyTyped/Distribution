@@ -12,6 +12,7 @@ class DateTimeFormatCls ()
   extends typings.miniprogramWxs.Intl.DateTimeFormat {
   def this(locales: String) = this()
   def this(locales: Array[String]) = this()
+  def this(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions) = this()
   def this(locales: String, options: DateTimeFormatOptions) = this()
   def this(locales: Array[String], options: DateTimeFormatOptions) = this()
 }

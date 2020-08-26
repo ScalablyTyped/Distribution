@@ -18,11 +18,32 @@ trait ListBotsResponse extends js.Object {
 
 object ListBotsResponse {
   @scala.inline
-  def apply(Bots: BotList = null, NextToken: String = null): ListBotsResponse = {
+  def apply(): ListBotsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Bots != null) __obj.updateDynamic("Bots")(Bots.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBotsResponse]
   }
+  @scala.inline
+  implicit class ListBotsResponseOps[Self <: ListBotsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBotsVarargs(value: Bot*): Self = this.set("Bots", js.Array(value :_*))
+    @scala.inline
+    def setBots(value: BotList): Self = this.set("Bots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBots: Self = this.set("Bots", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

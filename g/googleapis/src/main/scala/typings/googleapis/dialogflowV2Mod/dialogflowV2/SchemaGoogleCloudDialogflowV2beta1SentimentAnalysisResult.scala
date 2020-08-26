@@ -18,10 +18,26 @@ trait SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult extends js.Objec
 
 object SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult {
   @scala.inline
-  def apply(queryTextSentiment: SchemaGoogleCloudDialogflowV2beta1Sentiment = null): SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult = {
     val __obj = js.Dynamic.literal()
-    if (queryTextSentiment != null) __obj.updateDynamic("queryTextSentiment")(queryTextSentiment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResultOps[Self <: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryTextSentiment(value: SchemaGoogleCloudDialogflowV2beta1Sentiment): Self = this.set("queryTextSentiment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryTextSentiment: Self = this.set("queryTextSentiment", js.undefined)
+  }
+  
 }
 

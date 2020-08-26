@@ -48,40 +48,58 @@ trait ParamsResourceVolumesMybooksList extends StandardParameters {
 
 object ParamsResourceVolumesMybooksList {
   @scala.inline
-  def apply(
-    acquireMethod: js.Array[String] = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    country: String = null,
-    fields: String = null,
-    key: String = null,
-    locale: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    processingState: js.Array[String] = null,
-    quotaUser: String = null,
-    source: String = null,
-    startIndex: js.UndefOr[Double] = js.undefined,
-    userIp: String = null
-  ): ParamsResourceVolumesMybooksList = {
+  def apply(): ParamsResourceVolumesMybooksList = {
     val __obj = js.Dynamic.literal()
-    if (acquireMethod != null) __obj.updateDynamic("acquireMethod")(acquireMethod.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (processingState != null) __obj.updateDynamic("processingState")(processingState.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceVolumesMybooksList]
   }
+  @scala.inline
+  implicit class ParamsResourceVolumesMybooksListOps[Self <: ParamsResourceVolumesMybooksList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcquireMethodVarargs(value: String*): Self = this.set("acquireMethod", js.Array(value :_*))
+    @scala.inline
+    def setAcquireMethod(value: js.Array[String]): Self = this.set("acquireMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcquireMethod: Self = this.set("acquireMethod", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setProcessingStateVarargs(value: String*): Self = this.set("processingState", js.Array(value :_*))
+    @scala.inline
+    def setProcessingState(value: js.Array[String]): Self = this.set("processingState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingState: Self = this.set("processingState", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+  }
+  
 }
 

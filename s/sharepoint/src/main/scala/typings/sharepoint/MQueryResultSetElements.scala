@@ -87,6 +87,7 @@ trait MQueryResultSetElements extends MQueryResultSet[HTMLElement] {
   def parents(): MQueryResultSetElements = js.native
   def parents(selector: String): MQueryResultSetElements = js.native
   def parentsUntil(): MQueryResultSetElements = js.native
+  def parentsUntil(selectorOrElement: js.UndefOr[scala.Nothing], filter: String): MQueryResultSetElements = js.native
   def parentsUntil(selectorOrElement: String): MQueryResultSetElements = js.native
   def parentsUntil(selectorOrElement: String, filter: String): MQueryResultSetElements = js.native
   def parentsUntil(selectorOrElement: HTMLElement): MQueryResultSetElements = js.native

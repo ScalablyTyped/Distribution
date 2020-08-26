@@ -33,11 +33,30 @@ trait SchemaAndroidAppAsset extends js.Object {
 
 object SchemaAndroidAppAsset {
   @scala.inline
-  def apply(certificate: SchemaCertificateInfo = null, packageName: String = null): SchemaAndroidAppAsset = {
+  def apply(): SchemaAndroidAppAsset = {
     val __obj = js.Dynamic.literal()
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAndroidAppAsset]
   }
+  @scala.inline
+  implicit class SchemaAndroidAppAssetOps[Self <: SchemaAndroidAppAsset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificate(value: SchemaCertificateInfo): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    @scala.inline
+    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageName: Self = this.set("packageName", js.undefined)
+  }
+  
 }
 

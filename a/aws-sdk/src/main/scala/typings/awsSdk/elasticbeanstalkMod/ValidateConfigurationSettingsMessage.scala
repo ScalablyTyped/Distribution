@@ -26,16 +26,36 @@ trait ValidateConfigurationSettingsMessage extends js.Object {
 
 object ValidateConfigurationSettingsMessage {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName,
-    OptionSettings: ConfigurationOptionSettingsList,
-    EnvironmentName: EnvironmentName = null,
-    TemplateName: ConfigurationTemplateName = null
-  ): ValidateConfigurationSettingsMessage = {
+  def apply(ApplicationName: ApplicationName, OptionSettings: ConfigurationOptionSettingsList): ValidateConfigurationSettingsMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], OptionSettings = OptionSettings.asInstanceOf[js.Any])
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (TemplateName != null) __obj.updateDynamic("TemplateName")(TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateConfigurationSettingsMessage]
   }
+  @scala.inline
+  implicit class ValidateConfigurationSettingsMessageOps[Self <: ValidateConfigurationSettingsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = this.set("OptionSettings", js.Array(value :_*))
+    @scala.inline
+    def setOptionSettings(value: ConfigurationOptionSettingsList): Self = this.set("OptionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    @scala.inline
+    def setTemplateName(value: ConfigurationTemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
+  }
+  
 }
 

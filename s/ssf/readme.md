@@ -1,7 +1,7 @@
 
 # Scala.js typings for ssf
 
-Typings are for version 0.10.3
+Typings are for version 0.11.2
 
 ## Library description:
 Format data using ECMA-376 spreadsheet Format Codes

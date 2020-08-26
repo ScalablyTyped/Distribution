@@ -5,6 +5,7 @@ import typings.reactNative.mod.Animated.WithAnimatedValue
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativeSafeAreaContext.safeAreaTypesMod.EdgeInsets
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigationStack.anon.Style
@@ -21,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderOptions & {headerTitle (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderTitleProps): react.react.ReactNode,   layout  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Layout,   insets  :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EdgeInsets * / any, onGoBack ? (): void,   title ? :string,   leftLabel ? :string,   scene  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Scene<react-navigation.react-navigation.NavigationRoute<react-navigation.react-navigation.NavigationParams>>,   styleInterpolator  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderStyleInterpolator} */
+/* Inlined react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderOptions & {headerTitle (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderTitleProps): react.react.ReactNode,   layout :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Layout,   insets :react-native-safe-area-context.react-native-safe-area-context.EdgeInsets,   onGoBack :(): void | undefined,   title :string | undefined,   leftLabel :string | undefined,   scene :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Scene<react-navigation.react-navigation.NavigationRoute<react-navigation.react-navigation.NavigationParams>>,   styleInterpolator :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderStyleInterpolator} */
 @js.native
 trait Props extends js.Object {
   /**
@@ -128,7 +129,7 @@ trait Props extends js.Object {
     * Title string used by the back button when `headerBackTitle` doesn't fit on the screen. `"Back"` by default.
     */
   var headerTruncatedBackTitle: js.UndefOr[String] = js.native
-  var insets: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EdgeInsets */ js.Any = js.native
+  var insets: EdgeInsets = js.native
   var layout: Layout = js.native
   var leftLabel: js.UndefOr[String] = js.native
   var onGoBack: js.UndefOr[js.Function0[Unit]] = js.native

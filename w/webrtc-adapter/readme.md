@@ -1,7 +1,7 @@
 
 # Scala.js typings for webrtc-adapter
 
-Typings are for version 7.5.0
+Typings are for version 7.6.4
 
 ## Library description:
 A shim to insulate apps from WebRTC spec changes and browser prefix differences
@@ -10,9 +10,9 @@ A shim to insulate apps from WebRTC spec changes and browser prefix differences
 | ------------------ | :-------------: |
 | Full name          | webrtc-adapter |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 230 |
-| # downloads        | 3307464 |
+| # releases         | 34 |
+| # dependents       | 282 |
+| # downloads        | 4098488 |
 | # stars            | 10 |
 
 ## Links

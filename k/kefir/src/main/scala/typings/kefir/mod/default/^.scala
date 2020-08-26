@@ -27,7 +27,7 @@ import typings.kefir.mod.Pool_
 import typings.kefir.mod.Property
 import typings.kefir.mod.Stream_
 import typings.kefir.mod.ValueOfAnObservable
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -335,6 +335,11 @@ object ^ extends js.Object {
   def stream[T, S](subscribe: js.Function1[/* emitter */ Emitter[T, S], js.Function | Unit]): Stream_[T, S] = js.native
   def withInterval[T, S](interval: Double, handler: js.Function1[/* emitter */ Emitter[T, S], Unit]): Stream_[T, S] = js.native
   def zip[T, S, U](obss: js.Array[typings.kefir.mod.Observable[T, S]]): typings.kefir.mod.Observable[U, S] = js.native
+  def zip[T, S, U](
+    obss: js.Array[typings.kefir.mod.Observable[T, S]],
+    passiveObss: js.UndefOr[scala.Nothing],
+    combinator: js.Function1[/* repeated */ T, U]
+  ): typings.kefir.mod.Observable[U, S] = js.native
   def zip[T, S, U](
     obss: js.Array[typings.kefir.mod.Observable[T, S]],
     passiveObss: js.Array[typings.kefir.mod.Observable[T, S]]

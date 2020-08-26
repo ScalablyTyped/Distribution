@@ -14,6 +14,7 @@ class Transaction () extends js.Object {
   var outs: js.Array[Output] = js.native
   var version: Double = js.native
   def addInput(hash: Buffer, index: Double): Double = js.native
+  def addInput(hash: Buffer, index: Double, sequence: js.UndefOr[scala.Nothing], scriptSig: Buffer): Double = js.native
   def addInput(hash: Buffer, index: Double, sequence: Double): Double = js.native
   def addInput(hash: Buffer, index: Double, sequence: Double, scriptSig: Buffer): Double = js.native
   def addOutput(scriptPubKey: Buffer, value: Double): Double = js.native
@@ -37,6 +38,7 @@ class Transaction () extends js.Object {
   def setInputScript(index: Double, scriptSig: Buffer): Unit = js.native
   def setWitness(index: Double, witness: js.Array[Buffer]): Unit = js.native
   def toBuffer(): Buffer = js.native
+  def toBuffer(buffer: js.UndefOr[scala.Nothing], initialOffset: Double): Buffer = js.native
   def toBuffer(buffer: Buffer): Buffer = js.native
   def toBuffer(buffer: Buffer, initialOffset: Double): Buffer = js.native
   def toHex(): String = js.native

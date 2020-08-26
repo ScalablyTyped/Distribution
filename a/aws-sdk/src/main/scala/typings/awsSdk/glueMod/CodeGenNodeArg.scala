@@ -22,10 +22,30 @@ trait CodeGenNodeArg extends js.Object {
 
 object CodeGenNodeArg {
   @scala.inline
-  def apply(Name: CodeGenArgName, Value: CodeGenArgValue, Param: js.UndefOr[Boolean] = js.undefined): CodeGenNodeArg = {
+  def apply(Name: CodeGenArgName, Value: CodeGenArgValue): CodeGenNodeArg = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
-    if (!js.isUndefined(Param)) __obj.updateDynamic("Param")(Param.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeGenNodeArg]
   }
+  @scala.inline
+  implicit class CodeGenNodeArgOps[Self <: CodeGenNodeArg] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: CodeGenArgName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValue(value: CodeGenArgValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParam(value: Boolean): Self = this.set("Param", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParam: Self = this.set("Param", js.undefined)
+  }
+  
 }
 

@@ -10,12 +10,15 @@ Use this module to start and stop the V8 inspector manually and collect precise 
 | ------------------ | :-------------: |
 | Full name          | collect-v8-coverage |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 1020055 |
+| # releases         | 4 |
+| # dependents       | 12 |
+| # downloads        | 40082945 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/SimenB/collect-v8-coverage#readme)
+- [Bugs](https://github.com/SimenB/collect-v8-coverage/issues)
+- [Repository](https://github.com/SimenB/collect-v8-coverage)
 - [Npm](https://www.npmjs.com/package/collect-v8-coverage)
     
 

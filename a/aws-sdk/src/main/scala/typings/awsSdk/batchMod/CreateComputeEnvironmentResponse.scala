@@ -18,11 +18,30 @@ trait CreateComputeEnvironmentResponse extends js.Object {
 
 object CreateComputeEnvironmentResponse {
   @scala.inline
-  def apply(computeEnvironmentArn: String = null, computeEnvironmentName: String = null): CreateComputeEnvironmentResponse = {
+  def apply(): CreateComputeEnvironmentResponse = {
     val __obj = js.Dynamic.literal()
-    if (computeEnvironmentArn != null) __obj.updateDynamic("computeEnvironmentArn")(computeEnvironmentArn.asInstanceOf[js.Any])
-    if (computeEnvironmentName != null) __obj.updateDynamic("computeEnvironmentName")(computeEnvironmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateComputeEnvironmentResponse]
   }
+  @scala.inline
+  implicit class CreateComputeEnvironmentResponseOps[Self <: CreateComputeEnvironmentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeEnvironmentArn(value: String): Self = this.set("computeEnvironmentArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeEnvironmentArn: Self = this.set("computeEnvironmentArn", js.undefined)
+    @scala.inline
+    def setComputeEnvironmentName(value: String): Self = this.set("computeEnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeEnvironmentName: Self = this.set("computeEnvironmentName", js.undefined)
+  }
+  
 }
 

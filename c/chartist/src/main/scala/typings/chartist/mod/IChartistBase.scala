@@ -39,5 +39,6 @@ trait IChartistBase[T /* <: IChartOptions */] extends js.Object {
   def update(data: js.Object): Unit = js.native
   def update(data: js.Object, options: T): Unit = js.native
   def update(data: js.Object, options: T, `override`: Boolean): Unit = js.native
+  def update(data: js.Object, options: js.UndefOr[scala.Nothing], `override`: Boolean): Unit = js.native
 }
 

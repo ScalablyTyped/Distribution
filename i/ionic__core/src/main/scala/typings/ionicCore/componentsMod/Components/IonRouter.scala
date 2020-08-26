@@ -20,6 +20,7 @@ trait IonRouter extends js.Object {
     * Go back to previous page in the window.history.
     */
   def back(): js.Promise[Unit] = js.native
+  def canTransition(): js.Promise[String | Boolean] = js.native
   def navChanged(direction: RouterDirection): js.Promise[Boolean] = js.native
   def printDebug(): js.Promise[Unit] = js.native
   /**
@@ -28,6 +29,7 @@ trait IonRouter extends js.Object {
     * @param direction The direction of the animation. Defaults to `"forward"`.
     */
   def push(url: String): js.Promise[Boolean] = js.native
+  def push(url: String, direction: js.UndefOr[scala.Nothing], animation: AnimationBuilder): js.Promise[Boolean] = js.native
   def push(url: String, direction: RouterDirection): js.Promise[Boolean] = js.native
   def push(url: String, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
 }

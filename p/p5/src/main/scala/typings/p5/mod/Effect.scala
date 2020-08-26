@@ -15,7 +15,11 @@ trait Effect extends js.Object {
     *   tFromNow seconds
     */
   def amp(): Unit = js.native
+  def amp(vol: js.UndefOr[scala.Nothing], rampTime: js.UndefOr[scala.Nothing], tFromNow: Double): Unit = js.native
+  def amp(vol: js.UndefOr[scala.Nothing], rampTime: Double): Unit = js.native
+  def amp(vol: js.UndefOr[scala.Nothing], rampTime: Double, tFromNow: Double): Unit = js.native
   def amp(vol: Double): Unit = js.native
+  def amp(vol: Double, rampTime: js.UndefOr[scala.Nothing], tFromNow: Double): Unit = js.native
   def amp(vol: Double, rampTime: Double): Unit = js.native
   def amp(vol: Double, rampTime: Double, tFromNow: Double): Unit = js.native
   /**

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AzureRestApiResponseModel extends AzureRestApiRequestModel {
   /**
     * Gets or sets the Asset operation status
     */
-  var operationStatus: RestApiResponseStatusModel
+  var operationStatus: RestApiResponseStatusModel = js.native
 }
 
 object AzureRestApiResponseModel {
@@ -29,5 +30,20 @@ object AzureRestApiResponseModel {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureRestApiResponseModel]
   }
+  @scala.inline
+  implicit class AzureRestApiResponseModelOps[Self <: AzureRestApiResponseModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOperationStatus(value: RestApiResponseStatusModel): Self = this.set("operationStatus", value.asInstanceOf[js.Any])
+  }
+  
 }
 

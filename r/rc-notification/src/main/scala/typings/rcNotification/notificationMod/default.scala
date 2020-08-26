@@ -6,12 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-notification/lib/Notification", JSImport.Default)
+@JSImport("rc-notification/es/Notification", JSImport.Default)
 @js.native
 class default () extends Notification
 
 /* static members */
-@JSImport("rc-notification/lib/Notification", JSImport.Default)
+@JSImport("rc-notification/es/Notification", JSImport.Default)
 @js.native
 object default extends js.Object {
   var defaultProps: Animation = js.native

@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OutlookBarShortcut extends js.Object {
-  val Application: typings.activexOutlook.Outlook.Application
-  val Class: OlObjectClass
-  var Name: String
+  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Class: OlObjectClass = js.native
+  var Name: String = js.native
   @JSName("Outlook.OutlookBarShortcut_typekey")
-  var OutlookDotOutlookBarShortcut_typekey: OutlookBarShortcut
-  val Parent: js.Any
-  val Session: NameSpace
-  val Target: js.Any
-  def SetIcon(Icon: js.Any): Unit
+  var OutlookDotOutlookBarShortcut_typekey: OutlookBarShortcut = js.native
+  val Parent: js.Any = js.native
+  val Session: NameSpace = js.native
+  val Target: js.Any = js.native
+  def SetIcon(Icon: js.Any): Unit = js.native
 }
 
 object OutlookBarShortcut {
@@ -32,5 +33,34 @@ object OutlookBarShortcut {
     __obj.updateDynamic("Outlook.OutlookBarShortcut_typekey")(OutlookDotOutlookBarShortcut_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutlookBarShortcut]
   }
+  @scala.inline
+  implicit class OutlookBarShortcutOps[Self <: OutlookBarShortcut] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutlookDotOutlookBarShortcut_typekey(value: OutlookBarShortcut): Self = this.set("Outlook.OutlookBarShortcut_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSetIcon(value: js.Any => Unit): Self = this.set("SetIcon", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTarget(value: js.Any): Self = this.set("Target", value.asInstanceOf[js.Any])
+  }
+  
 }
 

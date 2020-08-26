@@ -6,12 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CenterWindowOptions extends js.Object {
   /**
   	Animate the change.
   	@default false
   	*/
-  val animated: js.UndefOr[Boolean] = js.undefined
+  val animated: js.UndefOr[Boolean] = js.native
   /**
   	Set a new window size.
   	Default: Size of `window`
@@ -20,22 +21,44 @@ trait CenterWindowOptions extends js.Object {
   	{width: 600, height: 400}
   	```
   	*/
-  val size: js.UndefOr[Size] = js.undefined
+  val size: js.UndefOr[Size] = js.native
   /**
   	The window to center.
   	Default: Current window
   	*/
-  val window: js.UndefOr[BrowserWindow] = js.undefined
+  val window: js.UndefOr[BrowserWindow] = js.native
 }
 
 object CenterWindowOptions {
   @scala.inline
-  def apply(animated: js.UndefOr[Boolean] = js.undefined, size: Size = null, window: BrowserWindow = null): CenterWindowOptions = {
+  def apply(): CenterWindowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[CenterWindowOptions]
   }
+  @scala.inline
+  implicit class CenterWindowOptionsOps[Self <: CenterWindowOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setWindow(value: BrowserWindow): Self = this.set("window", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindow: Self = this.set("window", js.undefined)
+  }
+  
 }
 

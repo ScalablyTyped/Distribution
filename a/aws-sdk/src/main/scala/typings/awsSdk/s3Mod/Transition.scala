@@ -22,16 +22,34 @@ trait Transition extends js.Object {
 
 object Transition {
   @scala.inline
-  def apply(
-    Date: Date = null,
-    Days: js.UndefOr[Days] = js.undefined,
-    StorageClass: TransitionStorageClass = null
-  ): Transition = {
+  def apply(): Transition = {
     val __obj = js.Dynamic.literal()
-    if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
-    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transition]
   }
+  @scala.inline
+  implicit class TransitionOps[Self <: Transition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: Date): Self = this.set("Date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("Date", js.undefined)
+    @scala.inline
+    def setDays(value: Days): Self = this.set("Days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("Days", js.undefined)
+    @scala.inline
+    def setStorageClass(value: TransitionStorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+  }
+  
 }
 

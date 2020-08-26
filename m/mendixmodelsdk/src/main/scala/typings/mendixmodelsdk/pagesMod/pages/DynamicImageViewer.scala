@@ -34,39 +34,37 @@ class DynamicImageViewer protected () extends EntityWidget {
     * In version 8.6.0: introduced
     */
   def alternativeText: ClientTemplate = js.native
-  def alternativeText(newValue: ClientTemplate): js.Any = js.native
+  def alternativeText_=(newValue: ClientTemplate): Unit = js.native
   /**
     * In version 7.18.0: introduced
     */
   def clickAction: ClientAction = js.native
-  def clickAction(newValue: ClientAction): js.Any = js.native
-  def defaultImage(): js.Any = js.native
-  def defaultImage(newValue: IImage): js.Any = js.native
+  def clickAction_=(newValue: ClientAction): Unit = js.native
+  def defaultImage: IImage | Null = js.native
   def defaultImageQualifiedName: String | Null = js.native
-  @JSName("defaultImage")
-  def defaultImage_Union: IImage | Null = js.native
+  def defaultImage_=(newValue: IImage | Null): Unit = js.native
   def height: Double = js.native
-  def height(newValue: Double): js.Any = js.native
   def heightUnit: ImageSizeUnit = js.native
-  def heightUnit(newValue: ImageSizeUnit): js.Any = js.native
+  def heightUnit_=(newValue: ImageSizeUnit): Unit = js.native
+  def height_=(newValue: Double): Unit = js.native
   /**
     * In version 7.18.0: deleted
     */
   def onClickBehavior: OnClickBehavior = js.native
-  def onClickBehavior(newValue: OnClickBehavior): js.Any = js.native
+  def onClickBehavior_=(newValue: OnClickBehavior): Unit = js.native
   /**
     * In version 7.18.0: introduced
     */
   def onClickEnlarge: Boolean = js.native
-  def onClickEnlarge(newValue: Boolean): js.Any = js.native
+  def onClickEnlarge_=(newValue: Boolean): Unit = js.native
   def responsive: Boolean = js.native
-  def responsive(newValue: Boolean): js.Any = js.native
+  def responsive_=(newValue: Boolean): Unit = js.native
   def showAsThumbnail: Boolean = js.native
-  def showAsThumbnail(newValue: Boolean): js.Any = js.native
+  def showAsThumbnail_=(newValue: Boolean): Unit = js.native
   def width: Double = js.native
-  def width(newValue: Double): js.Any = js.native
   def widthUnit: ImageSizeUnit = js.native
-  def widthUnit(newValue: ImageSizeUnit): js.Any = js.native
+  def widthUnit_=(newValue: ImageSizeUnit): Unit = js.native
+  def width_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

@@ -12,7 +12,7 @@ A through2 to create an Array.prototype.map analog for streams.
 | Keywords           | streams, through, through2, map |
 | # releases         | 0 |
 | # dependents       | 109 |
-| # downloads        | 1513590 |
+| # downloads        | 1607217 |
 | # stars            | 21 |
 
 ## Links

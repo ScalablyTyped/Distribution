@@ -15,6 +15,7 @@ class ^ protected () extends FlatbushClass {
     */
   def this(numItems: Double) = this()
   def this(numItems: Double, nodeSize: Double) = this()
+  def this(numItems: Double, nodeSize: js.UndefOr[scala.Nothing], arrayType: TypedArrayConstructor) = this()
   def this(numItems: Double, nodeSize: Double, arrayType: TypedArrayConstructor) = this()
 }
 

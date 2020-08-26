@@ -32,7 +32,7 @@ class LayoutGrid protected () extends ConditionallyVisibleWidget {
   var model_FLayoutGrid: IModel = js.native
   def rows: IList[LayoutGridRow] = js.native
   def width: ContainerWidth = js.native
-  def width(newValue: ContainerWidth): js.Any = js.native
+  def width_=(newValue: ContainerWidth): Unit = js.native
 }
 
 /* static members */

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "word-wrap"
-version := "1.2.3-5a7aa3"
-scalaVersion := "2.13.2"
+version := "1.2.3-017d1d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

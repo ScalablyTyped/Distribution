@@ -54,31 +54,64 @@ trait Queue extends js.Object {
 
 object Queue {
   @scala.inline
-  def apply(
-    Name: string,
-    Arn: string = null,
-    CreatedAt: timestampUnix = null,
-    Description: string = null,
-    LastUpdated: timestampUnix = null,
-    PricingPlan: PricingPlan = null,
-    ProgressingJobsCount: js.UndefOr[integer] = js.undefined,
-    ReservationPlan: ReservationPlan = null,
-    Status: QueueStatus = null,
-    SubmittedJobsCount: js.UndefOr[integer] = js.undefined,
-    Type: Type = null
-  ): Queue = {
+  def apply(Name: string): Queue = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
-    if (PricingPlan != null) __obj.updateDynamic("PricingPlan")(PricingPlan.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgressingJobsCount)) __obj.updateDynamic("ProgressingJobsCount")(ProgressingJobsCount.get.asInstanceOf[js.Any])
-    if (ReservationPlan != null) __obj.updateDynamic("ReservationPlan")(ReservationPlan.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(SubmittedJobsCount)) __obj.updateDynamic("SubmittedJobsCount")(SubmittedJobsCount.get.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Queue]
   }
+  @scala.inline
+  implicit class QueueOps[Self <: Queue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: timestampUnix): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLastUpdated(value: timestampUnix): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    @scala.inline
+    def setPricingPlan(value: PricingPlan): Self = this.set("PricingPlan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingPlan: Self = this.set("PricingPlan", js.undefined)
+    @scala.inline
+    def setProgressingJobsCount(value: integer): Self = this.set("ProgressingJobsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressingJobsCount: Self = this.set("ProgressingJobsCount", js.undefined)
+    @scala.inline
+    def setReservationPlan(value: ReservationPlan): Self = this.set("ReservationPlan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservationPlan: Self = this.set("ReservationPlan", js.undefined)
+    @scala.inline
+    def setStatus(value: QueueStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubmittedJobsCount(value: integer): Self = this.set("SubmittedJobsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmittedJobsCount: Self = this.set("SubmittedJobsCount", js.undefined)
+    @scala.inline
+    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

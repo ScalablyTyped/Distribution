@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Font extends js.Object {
   /**
     * Color filled in this element.
@@ -13,7 +14,7 @@ trait Font extends js.Object {
     * '#000'
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.fill
     */
-  var fill: js.UndefOr[String] = js.undefined
+  var fill: js.UndefOr[String] = js.native
   /**
     * Font size, font type, font weight, font color, follow
     * the form of
@@ -27,14 +28,14 @@ trait Font extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.font
     */
-  var font: js.UndefOr[String] = js.undefined
+  var font: js.UndefOr[String] = js.native
   /**
     * Width of stroke.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.lineWidth
     */
-  var lineWidth: js.UndefOr[Double] = js.undefined
+  var lineWidth: js.UndefOr[Double] = js.native
   /**
     * Width of shadow.
     *
@@ -43,7 +44,7 @@ trait Font extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.shadowBlur
     */
-  var shadowBlur: js.UndefOr[Double] = js.undefined
+  var shadowBlur: js.UndefOr[Double] = js.native
   /**
     * color of shadow.
     *
@@ -52,7 +53,7 @@ trait Font extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.shadowColor
     */
-  var shadowColor: js.UndefOr[Double] = js.undefined
+  var shadowColor: js.UndefOr[Double] = js.native
   /**
     * X offset of shadow.
     *
@@ -61,7 +62,7 @@ trait Font extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[Double] = js.undefined
+  var shadowOffsetX: js.UndefOr[Double] = js.native
   /**
     * Y offset of shadow.
     *
@@ -70,14 +71,14 @@ trait Font extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[Double] = js.undefined
+  var shadowOffsetY: js.UndefOr[Double] = js.native
   /**
     * Color of stroke.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.stroke
     */
-  var stroke: js.UndefOr[String] = js.undefined
+  var stroke: js.UndefOr[String] = js.native
   /**
     * Text content. `\n` can be used as a line break.
     *
@@ -86,7 +87,7 @@ trait Font extends js.Object {
     * ''
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.text
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /**
     * Text horizontal alignment.
     * Optional values: `'left'`, `'center'`, `'right'`.
@@ -104,7 +105,7 @@ trait Font extends js.Object {
     * "left"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.textAlign
     */
-  var textAlign: js.UndefOr[String] = js.undefined
+  var textAlign: js.UndefOr[String] = js.native
   /**
     * Text vertical alignment.
     * Optional values: `'top'`, `'middle'`, `'bottom'`.
@@ -134,7 +135,7 @@ trait Font extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.textVerticalAlign
     */
-  var textVerticalAlign: js.UndefOr[String] = js.undefined
+  var textVerticalAlign: js.UndefOr[String] = js.native
   /**
     * The x value of the left-top corner of the element
     * in the coordinate system of its parent.
@@ -142,7 +143,7 @@ trait Font extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.x
     */
-  var x: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double] = js.native
   /**
     * The y value of the left-top corner of the element
     * in the coordinate system of its parent.
@@ -150,41 +151,79 @@ trait Font extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.style.y
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.native
 }
 
 object Font {
   @scala.inline
-  def apply(
-    fill: String = null,
-    font: String = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    shadowBlur: js.UndefOr[Double] = js.undefined,
-    shadowColor: js.UndefOr[Double] = js.undefined,
-    shadowOffsetX: js.UndefOr[Double] = js.undefined,
-    shadowOffsetY: js.UndefOr[Double] = js.undefined,
-    stroke: String = null,
-    text: String = null,
-    textAlign: String = null,
-    textVerticalAlign: String = null,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): Font = {
+  def apply(): Font = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowBlur)) __obj.updateDynamic("shadowBlur")(shadowBlur.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowColor)) __obj.updateDynamic("shadowColor")(shadowColor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowOffsetX)) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowOffsetY)) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.get.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (textVerticalAlign != null) __obj.updateDynamic("textVerticalAlign")(textVerticalAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Font]
   }
+  @scala.inline
+  implicit class FontOps[Self <: Font] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    @scala.inline
+    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    @scala.inline
+    def setShadowColor(value: Double): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    @scala.inline
+    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
+    @scala.inline
+    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
+    @scala.inline
+    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextAlign(value: String): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    @scala.inline
+    def setTextVerticalAlign(value: String): Self = this.set("textVerticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextVerticalAlign: Self = this.set("textVerticalAlign", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

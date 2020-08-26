@@ -163,58 +163,124 @@ trait SchemaJob extends js.Object {
 
 object SchemaJob {
   @scala.inline
-  def apply(
-    clientRequestId: String = null,
-    createTime: String = null,
-    createdFromSnapshotId: String = null,
-    currentState: String = null,
-    currentStateTime: String = null,
-    environment: SchemaEnvironment = null,
-    executionInfo: SchemaJobExecutionInfo = null,
-    id: String = null,
-    jobMetadata: SchemaJobMetadata = null,
-    labels: StringDictionary[String] = null,
-    location: String = null,
-    name: String = null,
-    pipelineDescription: SchemaPipelineDescription = null,
-    projectId: String = null,
-    replaceJobId: String = null,
-    replacedByJobId: String = null,
-    requestedState: String = null,
-    stageStates: js.Array[SchemaExecutionStageState] = null,
-    startTime: String = null,
-    steps: js.Array[SchemaStep] = null,
-    stepsLocation: String = null,
-    tempFiles: js.Array[String] = null,
-    transformNameMapping: StringDictionary[String] = null,
-    `type`: String = null
-  ): SchemaJob = {
+  def apply(): SchemaJob = {
     val __obj = js.Dynamic.literal()
-    if (clientRequestId != null) __obj.updateDynamic("clientRequestId")(clientRequestId.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (createdFromSnapshotId != null) __obj.updateDynamic("createdFromSnapshotId")(createdFromSnapshotId.asInstanceOf[js.Any])
-    if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
-    if (currentStateTime != null) __obj.updateDynamic("currentStateTime")(currentStateTime.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (executionInfo != null) __obj.updateDynamic("executionInfo")(executionInfo.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (jobMetadata != null) __obj.updateDynamic("jobMetadata")(jobMetadata.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pipelineDescription != null) __obj.updateDynamic("pipelineDescription")(pipelineDescription.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (replaceJobId != null) __obj.updateDynamic("replaceJobId")(replaceJobId.asInstanceOf[js.Any])
-    if (replacedByJobId != null) __obj.updateDynamic("replacedByJobId")(replacedByJobId.asInstanceOf[js.Any])
-    if (requestedState != null) __obj.updateDynamic("requestedState")(requestedState.asInstanceOf[js.Any])
-    if (stageStates != null) __obj.updateDynamic("stageStates")(stageStates.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
-    if (stepsLocation != null) __obj.updateDynamic("stepsLocation")(stepsLocation.asInstanceOf[js.Any])
-    if (tempFiles != null) __obj.updateDynamic("tempFiles")(tempFiles.asInstanceOf[js.Any])
-    if (transformNameMapping != null) __obj.updateDynamic("transformNameMapping")(transformNameMapping.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJob]
   }
+  @scala.inline
+  implicit class SchemaJobOps[Self <: SchemaJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientRequestId(value: String): Self = this.set("clientRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestId: Self = this.set("clientRequestId", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setCreatedFromSnapshotId(value: String): Self = this.set("createdFromSnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedFromSnapshotId: Self = this.set("createdFromSnapshotId", js.undefined)
+    @scala.inline
+    def setCurrentState(value: String): Self = this.set("currentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentState: Self = this.set("currentState", js.undefined)
+    @scala.inline
+    def setCurrentStateTime(value: String): Self = this.set("currentStateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentStateTime: Self = this.set("currentStateTime", js.undefined)
+    @scala.inline
+    def setEnvironment(value: SchemaEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setExecutionInfo(value: SchemaJobExecutionInfo): Self = this.set("executionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionInfo: Self = this.set("executionInfo", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setJobMetadata(value: SchemaJobMetadata): Self = this.set("jobMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobMetadata: Self = this.set("jobMetadata", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPipelineDescription(value: SchemaPipelineDescription): Self = this.set("pipelineDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineDescription: Self = this.set("pipelineDescription", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setReplaceJobId(value: String): Self = this.set("replaceJobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceJobId: Self = this.set("replaceJobId", js.undefined)
+    @scala.inline
+    def setReplacedByJobId(value: String): Self = this.set("replacedByJobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplacedByJobId: Self = this.set("replacedByJobId", js.undefined)
+    @scala.inline
+    def setRequestedState(value: String): Self = this.set("requestedState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedState: Self = this.set("requestedState", js.undefined)
+    @scala.inline
+    def setStageStatesVarargs(value: SchemaExecutionStageState*): Self = this.set("stageStates", js.Array(value :_*))
+    @scala.inline
+    def setStageStates(value: js.Array[SchemaExecutionStageState]): Self = this.set("stageStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageStates: Self = this.set("stageStates", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStepsVarargs(value: SchemaStep*): Self = this.set("steps", js.Array(value :_*))
+    @scala.inline
+    def setSteps(value: js.Array[SchemaStep]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSteps: Self = this.set("steps", js.undefined)
+    @scala.inline
+    def setStepsLocation(value: String): Self = this.set("stepsLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepsLocation: Self = this.set("stepsLocation", js.undefined)
+    @scala.inline
+    def setTempFilesVarargs(value: String*): Self = this.set("tempFiles", js.Array(value :_*))
+    @scala.inline
+    def setTempFiles(value: js.Array[String]): Self = this.set("tempFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTempFiles: Self = this.set("tempFiles", js.undefined)
+    @scala.inline
+    def setTransformNameMapping(value: StringDictionary[String]): Self = this.set("transformNameMapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformNameMapping: Self = this.set("transformNameMapping", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -13,12 +13,13 @@ trait PredicateFactory
      with Instantiable2[/* propertyOrValueOrPredicate */ js.Any, /* valueOrOperator */ js.Any, Predicate]
      with Instantiable3[
       /* propertyOrValueOrPredicate */ js.Any, 
-      /* valueOrOperator */ js.Any, 
+      js.UndefOr[/* valueOrOperator */ js.Any], 
       /* value */ js.Any, 
       Predicate
     ] {
   def and(andStatements: js.Any): IExecutable = js.native
   def create(propertyOrPredicate: js.Any): IExecutable = js.native
+  def create(propertyOrPredicate: js.Any, operatorOrValue: js.UndefOr[scala.Nothing], value: js.Any): IExecutable = js.native
   def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = js.native
   def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = js.native
   def or(orStatements: js.Array[_]): IExecutable = js.native

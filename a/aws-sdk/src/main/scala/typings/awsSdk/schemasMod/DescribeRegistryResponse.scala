@@ -26,18 +26,38 @@ trait DescribeRegistryResponse extends js.Object {
 
 object DescribeRegistryResponse {
   @scala.inline
-  def apply(
-    Description: string = null,
-    RegistryArn: string = null,
-    RegistryName: string = null,
-    Tags: Tags = null
-  ): DescribeRegistryResponse = {
+  def apply(): DescribeRegistryResponse = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (RegistryArn != null) __obj.updateDynamic("RegistryArn")(RegistryArn.asInstanceOf[js.Any])
-    if (RegistryName != null) __obj.updateDynamic("RegistryName")(RegistryName.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRegistryResponse]
   }
+  @scala.inline
+  implicit class DescribeRegistryResponseOps[Self <: DescribeRegistryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setRegistryArn(value: string): Self = this.set("RegistryArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryArn: Self = this.set("RegistryArn", js.undefined)
+    @scala.inline
+    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryName: Self = this.set("RegistryName", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

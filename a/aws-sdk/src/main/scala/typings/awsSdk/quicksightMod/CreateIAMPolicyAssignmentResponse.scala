@@ -38,24 +38,50 @@ trait CreateIAMPolicyAssignmentResponse extends js.Object {
 
 object CreateIAMPolicyAssignmentResponse {
   @scala.inline
-  def apply(
-    AssignmentId: String = null,
-    AssignmentName: IAMPolicyAssignmentName = null,
-    AssignmentStatus: AssignmentStatus = null,
-    Identities: IdentityMap = null,
-    PolicyArn: Arn = null,
-    RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined
-  ): CreateIAMPolicyAssignmentResponse = {
+  def apply(): CreateIAMPolicyAssignmentResponse = {
     val __obj = js.Dynamic.literal()
-    if (AssignmentId != null) __obj.updateDynamic("AssignmentId")(AssignmentId.asInstanceOf[js.Any])
-    if (AssignmentName != null) __obj.updateDynamic("AssignmentName")(AssignmentName.asInstanceOf[js.Any])
-    if (AssignmentStatus != null) __obj.updateDynamic("AssignmentStatus")(AssignmentStatus.asInstanceOf[js.Any])
-    if (Identities != null) __obj.updateDynamic("Identities")(Identities.asInstanceOf[js.Any])
-    if (PolicyArn != null) __obj.updateDynamic("PolicyArn")(PolicyArn.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIAMPolicyAssignmentResponse]
   }
+  @scala.inline
+  implicit class CreateIAMPolicyAssignmentResponseOps[Self <: CreateIAMPolicyAssignmentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignmentId(value: String): Self = this.set("AssignmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentId: Self = this.set("AssignmentId", js.undefined)
+    @scala.inline
+    def setAssignmentName(value: IAMPolicyAssignmentName): Self = this.set("AssignmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentName: Self = this.set("AssignmentName", js.undefined)
+    @scala.inline
+    def setAssignmentStatus(value: AssignmentStatus): Self = this.set("AssignmentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentStatus: Self = this.set("AssignmentStatus", js.undefined)
+    @scala.inline
+    def setIdentities(value: IdentityMap): Self = this.set("Identities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentities: Self = this.set("Identities", js.undefined)
+    @scala.inline
+    def setPolicyArn(value: Arn): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyArn: Self = this.set("PolicyArn", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

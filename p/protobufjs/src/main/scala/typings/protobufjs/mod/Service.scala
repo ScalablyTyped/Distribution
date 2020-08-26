@@ -28,6 +28,7 @@ class Service protected () extends NamespaceBase {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   def create(rpcImpl: RPCImpl): typings.protobufjs.mod.rpc.Service = js.native
+  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): typings.protobufjs.mod.rpc.Service = js.native
   def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.protobufjs.mod.rpc.Service = js.native
   def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.protobufjs.mod.rpc.Service = js.native
 }

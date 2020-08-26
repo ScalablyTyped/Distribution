@@ -49,7 +49,38 @@ trait PullSignatureSymbol
   override def getIsSpecialized(): Boolean = js.native
   def getParameterTypeAtIndex(iParam: Double): PullTypeSymbol = js.native
   def getSignatureTypeNameEx(prefix: String, shortform: Boolean, brackets: Boolean): MemberNameArray = js.native
+  def getSignatureTypeNameEx(
+    prefix: String,
+    shortform: Boolean,
+    brackets: Boolean,
+    scopeSymbol: js.UndefOr[scala.Nothing],
+    getParamMarkerInfo: js.UndefOr[scala.Nothing],
+    getTypeParamMarkerInfo: Boolean
+  ): MemberNameArray = js.native
+  def getSignatureTypeNameEx(
+    prefix: String,
+    shortform: Boolean,
+    brackets: Boolean,
+    scopeSymbol: js.UndefOr[scala.Nothing],
+    getParamMarkerInfo: Boolean
+  ): MemberNameArray = js.native
+  def getSignatureTypeNameEx(
+    prefix: String,
+    shortform: Boolean,
+    brackets: Boolean,
+    scopeSymbol: js.UndefOr[scala.Nothing],
+    getParamMarkerInfo: Boolean,
+    getTypeParamMarkerInfo: Boolean
+  ): MemberNameArray = js.native
   def getSignatureTypeNameEx(prefix: String, shortform: Boolean, brackets: Boolean, scopeSymbol: PullSymbol): MemberNameArray = js.native
+  def getSignatureTypeNameEx(
+    prefix: String,
+    shortform: Boolean,
+    brackets: Boolean,
+    scopeSymbol: PullSymbol,
+    getParamMarkerInfo: js.UndefOr[scala.Nothing],
+    getTypeParamMarkerInfo: Boolean
+  ): MemberNameArray = js.native
   def getSignatureTypeNameEx(
     prefix: String,
     shortform: Boolean,

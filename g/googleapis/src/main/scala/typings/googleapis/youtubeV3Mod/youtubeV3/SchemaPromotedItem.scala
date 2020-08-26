@@ -33,18 +33,38 @@ trait SchemaPromotedItem extends js.Object {
 
 object SchemaPromotedItem {
   @scala.inline
-  def apply(
-    customMessage: String = null,
-    id: SchemaPromotedItemId = null,
-    promotedByContentOwner: js.UndefOr[Boolean] = js.undefined,
-    timing: SchemaInvideoTiming = null
-  ): SchemaPromotedItem = {
+  def apply(): SchemaPromotedItem = {
     val __obj = js.Dynamic.literal()
-    if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(promotedByContentOwner)) __obj.updateDynamic("promotedByContentOwner")(promotedByContentOwner.get.asInstanceOf[js.Any])
-    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPromotedItem]
   }
+  @scala.inline
+  implicit class SchemaPromotedItemOps[Self <: SchemaPromotedItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomMessage(value: String): Self = this.set("customMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMessage: Self = this.set("customMessage", js.undefined)
+    @scala.inline
+    def setId(value: SchemaPromotedItemId): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setPromotedByContentOwner(value: Boolean): Self = this.set("promotedByContentOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotedByContentOwner: Self = this.set("promotedByContentOwner", js.undefined)
+    @scala.inline
+    def setTiming(value: SchemaInvideoTiming): Self = this.set("timing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTiming: Self = this.set("timing", js.undefined)
+  }
+  
 }
 

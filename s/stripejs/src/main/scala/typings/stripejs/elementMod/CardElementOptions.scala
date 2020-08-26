@@ -1,29 +1,28 @@
 package typings.stripejs.elementMod
 
-import typings.stripejs.anon.Empty
-import typings.stripejs.anon.Invalid
 import typings.stripejs.stripejsStrings.default
 import typings.stripejs.stripejsStrings.solid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CardElementOptions extends BaseOptions {
   /**
     * Whether or not to hide the postal code
     * NOTE: If you are already collecting a full billing address or postal code elsewhere, set this to `true`
     * @default false
     */
-  var hidePostalCode: js.UndefOr[Boolean] = js.undefined
+  var hidePostalCode: js.UndefOr[Boolean] = js.native
   /**
     * Appearance of the icon in the Element
     */
-  var iconStyle: js.UndefOr[solid | default] = js.undefined
+  var iconStyle: js.UndefOr[solid | default] = js.native
   /**
     * A placeholder text
     * NOTE: This is only available for `cardNumber`, `cardExpiry` & `cardCvc` elements
     */
-  var placeholder: js.UndefOr[String] = js.undefined
+  var placeholder: js.UndefOr[String] = js.native
   /**
     * A pre-filled value
     * NOTE: Sensitive card information (card number, CVC, and expiration date) cannot be pre-filled
@@ -31,31 +30,43 @@ trait CardElementOptions extends BaseOptions {
     *
     * @example {postalCode: '94110'}
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object CardElementOptions {
   @scala.inline
-  def apply(
-    classes: Empty = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    hideIcon: js.UndefOr[Boolean] = js.undefined,
-    hidePostalCode: js.UndefOr[Boolean] = js.undefined,
-    iconStyle: solid | default = null,
-    placeholder: String = null,
-    style: Invalid = null,
-    value: js.Any = null
-  ): CardElementOptions = {
+  def apply(): CardElementOptions = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.get.asInstanceOf[js.Any])
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardElementOptions]
   }
+  @scala.inline
+  implicit class CardElementOptionsOps[Self <: CardElementOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHidePostalCode(value: Boolean): Self = this.set("hidePostalCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidePostalCode: Self = this.set("hidePostalCode", js.undefined)
+    @scala.inline
+    def setIconStyle(value: solid | default): Self = this.set("iconStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconStyle: Self = this.set("iconStyle", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

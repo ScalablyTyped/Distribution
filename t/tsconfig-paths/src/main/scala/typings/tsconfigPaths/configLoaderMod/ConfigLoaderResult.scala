@@ -20,13 +20,9 @@ object ConfigLoaderResult {
     baseUrl: String,
     configFileAbsolutePath: String,
     paths: StringDictionary[js.Array[String]],
-    resultType: success,
-    addMatchAll: js.UndefOr[Boolean] = js.undefined,
-    mainFields: js.Array[String] = null
+    resultType: success
   ): ConfigLoaderResult = {
     val __obj = js.Dynamic.literal(absoluteBaseUrl = absoluteBaseUrl.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], configFileAbsolutePath = configFileAbsolutePath.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], resultType = resultType.asInstanceOf[js.Any])
-    if (!js.isUndefined(addMatchAll)) __obj.updateDynamic("addMatchAll")(addMatchAll.get.asInstanceOf[js.Any])
-    if (mainFields != null) __obj.updateDynamic("mainFields")(mainFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigLoaderResult]
   }
   @scala.inline

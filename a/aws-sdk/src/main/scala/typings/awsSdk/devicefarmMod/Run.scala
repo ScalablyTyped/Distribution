@@ -134,72 +134,146 @@ trait Run extends js.Object {
 
 object Run {
   @scala.inline
-  def apply(
-    appUpload: AmazonResourceName = null,
-    arn: AmazonResourceName = null,
-    billingMethod: BillingMethod = null,
-    completedJobs: js.UndefOr[Integer] = js.undefined,
-    counters: Counters = null,
-    created: DateTime = null,
-    customerArtifactPaths: CustomerArtifactPaths = null,
-    deviceMinutes: DeviceMinutes = null,
-    devicePoolArn: AmazonResourceName = null,
-    deviceSelectionResult: DeviceSelectionResult = null,
-    eventCount: js.UndefOr[Integer] = js.undefined,
-    jobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
-    locale: String = null,
-    location: Location = null,
-    message: Message = null,
-    name: Name = null,
-    networkProfile: NetworkProfile = null,
-    parsingResultUrl: String = null,
-    platform: DevicePlatform = null,
-    radios: Radios = null,
-    result: ExecutionResult = null,
-    resultCode: ExecutionResultCode = null,
-    seed: js.UndefOr[Integer] = js.undefined,
-    skipAppResign: js.UndefOr[SkipAppResign] = js.undefined,
-    started: DateTime = null,
-    status: ExecutionStatus = null,
-    stopped: DateTime = null,
-    testSpecArn: AmazonResourceName = null,
-    totalJobs: js.UndefOr[Integer] = js.undefined,
-    `type`: TestType = null,
-    webUrl: String = null
-  ): Run = {
+  def apply(): Run = {
     val __obj = js.Dynamic.literal()
-    if (appUpload != null) __obj.updateDynamic("appUpload")(appUpload.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (billingMethod != null) __obj.updateDynamic("billingMethod")(billingMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(completedJobs)) __obj.updateDynamic("completedJobs")(completedJobs.get.asInstanceOf[js.Any])
-    if (counters != null) __obj.updateDynamic("counters")(counters.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (customerArtifactPaths != null) __obj.updateDynamic("customerArtifactPaths")(customerArtifactPaths.asInstanceOf[js.Any])
-    if (deviceMinutes != null) __obj.updateDynamic("deviceMinutes")(deviceMinutes.asInstanceOf[js.Any])
-    if (devicePoolArn != null) __obj.updateDynamic("devicePoolArn")(devicePoolArn.asInstanceOf[js.Any])
-    if (deviceSelectionResult != null) __obj.updateDynamic("deviceSelectionResult")(deviceSelectionResult.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventCount)) __obj.updateDynamic("eventCount")(eventCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(jobTimeoutMinutes)) __obj.updateDynamic("jobTimeoutMinutes")(jobTimeoutMinutes.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (networkProfile != null) __obj.updateDynamic("networkProfile")(networkProfile.asInstanceOf[js.Any])
-    if (parsingResultUrl != null) __obj.updateDynamic("parsingResultUrl")(parsingResultUrl.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (radios != null) __obj.updateDynamic("radios")(radios.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (resultCode != null) __obj.updateDynamic("resultCode")(resultCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.get.asInstanceOf[js.Any])
-    if (started != null) __obj.updateDynamic("started")(started.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (stopped != null) __obj.updateDynamic("stopped")(stopped.asInstanceOf[js.Any])
-    if (testSpecArn != null) __obj.updateDynamic("testSpecArn")(testSpecArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalJobs)) __obj.updateDynamic("totalJobs")(totalJobs.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Run]
   }
+  @scala.inline
+  implicit class RunOps[Self <: Run] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppUpload(value: AmazonResourceName): Self = this.set("appUpload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppUpload: Self = this.set("appUpload", js.undefined)
+    @scala.inline
+    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setBillingMethod(value: BillingMethod): Self = this.set("billingMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingMethod: Self = this.set("billingMethod", js.undefined)
+    @scala.inline
+    def setCompletedJobs(value: Integer): Self = this.set("completedJobs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedJobs: Self = this.set("completedJobs", js.undefined)
+    @scala.inline
+    def setCounters(value: Counters): Self = this.set("counters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCounters: Self = this.set("counters", js.undefined)
+    @scala.inline
+    def setCreated(value: DateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setCustomerArtifactPaths(value: CustomerArtifactPaths): Self = this.set("customerArtifactPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerArtifactPaths: Self = this.set("customerArtifactPaths", js.undefined)
+    @scala.inline
+    def setDeviceMinutes(value: DeviceMinutes): Self = this.set("deviceMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceMinutes: Self = this.set("deviceMinutes", js.undefined)
+    @scala.inline
+    def setDevicePoolArn(value: AmazonResourceName): Self = this.set("devicePoolArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevicePoolArn: Self = this.set("devicePoolArn", js.undefined)
+    @scala.inline
+    def setDeviceSelectionResult(value: DeviceSelectionResult): Self = this.set("deviceSelectionResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceSelectionResult: Self = this.set("deviceSelectionResult", js.undefined)
+    @scala.inline
+    def setEventCount(value: Integer): Self = this.set("eventCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventCount: Self = this.set("eventCount", js.undefined)
+    @scala.inline
+    def setJobTimeoutMinutes(value: JobTimeoutMinutes): Self = this.set("jobTimeoutMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTimeoutMinutes: Self = this.set("jobTimeoutMinutes", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetworkProfile(value: NetworkProfile): Self = this.set("networkProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkProfile: Self = this.set("networkProfile", js.undefined)
+    @scala.inline
+    def setParsingResultUrl(value: String): Self = this.set("parsingResultUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParsingResultUrl: Self = this.set("parsingResultUrl", js.undefined)
+    @scala.inline
+    def setPlatform(value: DevicePlatform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setRadios(value: Radios): Self = this.set("radios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadios: Self = this.set("radios", js.undefined)
+    @scala.inline
+    def setResult(value: ExecutionResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("result", js.undefined)
+    @scala.inline
+    def setResultCode(value: ExecutionResultCode): Self = this.set("resultCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultCode: Self = this.set("resultCode", js.undefined)
+    @scala.inline
+    def setSeed(value: Integer): Self = this.set("seed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeed: Self = this.set("seed", js.undefined)
+    @scala.inline
+    def setSkipAppResign(value: SkipAppResign): Self = this.set("skipAppResign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipAppResign: Self = this.set("skipAppResign", js.undefined)
+    @scala.inline
+    def setStarted(value: DateTime): Self = this.set("started", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStarted: Self = this.set("started", js.undefined)
+    @scala.inline
+    def setStatus(value: ExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStopped(value: DateTime): Self = this.set("stopped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopped: Self = this.set("stopped", js.undefined)
+    @scala.inline
+    def setTestSpecArn(value: AmazonResourceName): Self = this.set("testSpecArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestSpecArn: Self = this.set("testSpecArn", js.undefined)
+    @scala.inline
+    def setTotalJobs(value: Integer): Self = this.set("totalJobs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalJobs: Self = this.set("totalJobs", js.undefined)
+    @scala.inline
+    def setType(value: TestType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWebUrl(value: String): Self = this.set("webUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebUrl: Self = this.set("webUrl", js.undefined)
+  }
+  
 }
 

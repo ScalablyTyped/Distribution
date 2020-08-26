@@ -31,6 +31,7 @@ class ResourceBiddersAccountsFiltersetsImpressionmetrics protected () extends js
     */
   def list(): GaxiosPromise[SchemaListImpressionMetricsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListImpressionMetricsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListImpressionMetricsResponse] = js.native
   def list(params: ParamsResourceBiddersAccountsFiltersetsImpressionmetricsList): GaxiosPromise[SchemaListImpressionMetricsResponse] = js.native
   def list(
     params: ParamsResourceBiddersAccountsFiltersetsImpressionmetricsList,

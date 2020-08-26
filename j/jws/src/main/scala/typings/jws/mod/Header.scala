@@ -4,39 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Header extends CertificateProperties {
-  var alg: Algorithm
-  var crit: js.UndefOr[js.Array[String]] = js.undefined
-  var cty: js.UndefOr[String] = js.undefined
-  var jwk: js.UndefOr[JWK] = js.undefined
-  var typ: js.UndefOr[String] = js.undefined
+  var alg: Algorithm = js.native
+  var crit: js.UndefOr[js.Array[String]] = js.native
+  var cty: js.UndefOr[String] = js.native
+  var jwk: js.UndefOr[JWK] = js.native
+  var typ: js.UndefOr[String] = js.native
 }
 
 object Header {
   @scala.inline
-  def apply(
-    alg: Algorithm,
-    crit: js.Array[String] = null,
-    cty: String = null,
-    jwk: JWK = null,
-    kid: String = null,
-    typ: String = null,
-    x5c: js.Array[String] = null,
-    x5t: String = null,
-    x5tNumbersignS256: String = null,
-    x5u: String = null
-  ): Header = {
+  def apply(alg: Algorithm): Header = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
-    if (crit != null) __obj.updateDynamic("crit")(crit.asInstanceOf[js.Any])
-    if (cty != null) __obj.updateDynamic("cty")(cty.asInstanceOf[js.Any])
-    if (jwk != null) __obj.updateDynamic("jwk")(jwk.asInstanceOf[js.Any])
-    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
-    if (typ != null) __obj.updateDynamic("typ")(typ.asInstanceOf[js.Any])
-    if (x5c != null) __obj.updateDynamic("x5c")(x5c.asInstanceOf[js.Any])
-    if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
-    if (x5tNumbersignS256 != null) __obj.updateDynamic("x5t#S256")(x5tNumbersignS256.asInstanceOf[js.Any])
-    if (x5u != null) __obj.updateDynamic("x5u")(x5u.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
+  @scala.inline
+  implicit class HeaderOps[Self <: Header] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlg(value: Algorithm): Self = this.set("alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCritVarargs(value: String*): Self = this.set("crit", js.Array(value :_*))
+    @scala.inline
+    def setCrit(value: js.Array[String]): Self = this.set("crit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrit: Self = this.set("crit", js.undefined)
+    @scala.inline
+    def setCty(value: String): Self = this.set("cty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCty: Self = this.set("cty", js.undefined)
+    @scala.inline
+    def setJwk(value: JWK): Self = this.set("jwk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwk: Self = this.set("jwk", js.undefined)
+    @scala.inline
+    def setTyp(value: String): Self = this.set("typ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTyp: Self = this.set("typ", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ A web-based tool to view, edit, format, and validate JSON
 | Full name          | jsoneditor |
 | Keywords           | - |
 | # releases         | 72 |
-| # dependents       | 102 |
-| # downloads        | 1574383 |
+| # dependents       | 101 |
+| # downloads        | 1643677 |
 | # stars            | 15 |
 
 ## Links

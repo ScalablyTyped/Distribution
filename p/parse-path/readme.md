@@ -12,7 +12,7 @@ Parse paths (local paths, urls: ssh/git/etc)
 | Keywords           | parse, path, url, node, git, advanced |
 | # releases         | 5 |
 | # dependents       | 8 |
-| # downloads        | 27585519 |
+| # downloads        | 30383525 |
 | # stars            | 0 |
 
 ## Links

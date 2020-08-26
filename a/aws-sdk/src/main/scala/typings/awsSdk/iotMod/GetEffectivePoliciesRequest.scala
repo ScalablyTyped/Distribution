@@ -22,16 +22,34 @@ trait GetEffectivePoliciesRequest extends js.Object {
 
 object GetEffectivePoliciesRequest {
   @scala.inline
-  def apply(
-    cognitoIdentityPoolId: CognitoIdentityPoolId = null,
-    principal: Principal = null,
-    thingName: ThingName = null
-  ): GetEffectivePoliciesRequest = {
+  def apply(): GetEffectivePoliciesRequest = {
     val __obj = js.Dynamic.literal()
-    if (cognitoIdentityPoolId != null) __obj.updateDynamic("cognitoIdentityPoolId")(cognitoIdentityPoolId.asInstanceOf[js.Any])
-    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
-    if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEffectivePoliciesRequest]
   }
+  @scala.inline
+  implicit class GetEffectivePoliciesRequestOps[Self <: GetEffectivePoliciesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCognitoIdentityPoolId(value: CognitoIdentityPoolId): Self = this.set("cognitoIdentityPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitoIdentityPoolId: Self = this.set("cognitoIdentityPoolId", js.undefined)
+    @scala.inline
+    def setPrincipal(value: Principal): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("principal", js.undefined)
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingName: Self = this.set("thingName", js.undefined)
+  }
+  
 }
 

@@ -211,10 +211,46 @@ trait Typeofpromises extends js.Object {
     * `null`, data will be read from the current position.
     */
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    position: Double
+  ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Null,
+    position: Double
+  ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: Null,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
   def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
@@ -358,6 +394,7 @@ trait Typeofpromises extends js.Object {
     * @param encoding The expected string encoding.
     */
   def write(handle: FileHandle, string: String): js.Promise[BufferBytesWritten] = js.native
+  def write(handle: FileHandle, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
   def write(handle: FileHandle, string: String, position: Double): js.Promise[BufferBytesWritten] = js.native
   def write(handle: FileHandle, string: String, position: Double, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
   def write(handle: FileHandle, string: String, position: Null, encoding: BufferEncoding): js.Promise[BufferBytesWritten] = js.native
@@ -372,10 +409,46 @@ trait Typeofpromises extends js.Object {
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    position: Double
+  ): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Null,
+    position: Double
+  ): js.Promise[BytesWritten[TBuffer]] = js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[BytesWritten[TBuffer]] = js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](
+    handle: FileHandle,
+    buffer: TBuffer,
+    offset: Null,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[BytesWritten[TBuffer]] = js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
   def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native

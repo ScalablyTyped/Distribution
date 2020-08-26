@@ -6,12 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Touch extends js.Object {
-  var config: js.Any
-  def disable(): Unit
-  def enable(): Unit
-  def limit(mode: Boolean): Unit
-  def scrollTo(node: HTMLElement, x: Double, y: Double, speed: String): Unit
+  var config: js.Any = js.native
+  def disable(): Unit = js.native
+  def enable(): Unit = js.native
+  def limit(mode: Boolean): Unit = js.native
+  def scrollTo(node: HTMLElement, x: Double, y: Double, speed: String): Unit = js.native
 }
 
 @JSImport("webix", "Touch")

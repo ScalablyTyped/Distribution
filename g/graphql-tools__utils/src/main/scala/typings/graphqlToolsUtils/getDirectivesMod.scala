@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object getDirectivesMod extends js.Object {
   def getDirectives(schema: GraphQLSchema, node: DirectableGraphQLObject): DirectiveUseMap = js.native
-  type DirectableGraphQLObject = GraphQLSchema | GraphQLSchemaConfig | GraphQLNamedType | (GraphQLObjectTypeConfig[js.Any, js.Any, StringDictionary[js.Any]]) | (GraphQLInterfaceTypeConfig[js.Any, js.Any, StringDictionary[js.Any]]) | (GraphQLUnionTypeConfig[js.Any, js.Any]) | (GraphQLScalarTypeConfig[js.Any, js.Any]) | GraphQLEnumTypeConfig | GraphQLEnumValue | GraphQLEnumValueConfig | GraphQLInputObjectTypeConfig | (GraphQLField[js.Any, js.Any, StringDictionary[js.Any]]) | GraphQLInputField | (GraphQLFieldConfig[js.Any, js.Any, StringDictionary[js.Any]]) | GraphQLInputFieldConfig
+  type DirectableGraphQLObject = GraphQLSchema | GraphQLSchemaConfig | GraphQLNamedType | (GraphQLObjectTypeConfig[js.Any, js.Any]) | (GraphQLInterfaceTypeConfig[js.Any, js.Any]) | (GraphQLUnionTypeConfig[js.Any, js.Any]) | (GraphQLScalarTypeConfig[js.Any, js.Any]) | GraphQLEnumTypeConfig | GraphQLEnumValue | GraphQLEnumValueConfig | GraphQLInputObjectTypeConfig | (GraphQLField[js.Any, js.Any, StringDictionary[js.Any]]) | GraphQLInputField | (GraphQLFieldConfig[js.Any, js.Any, StringDictionary[js.Any]]) | GraphQLInputFieldConfig
   type DirectiveUseMap = StringDictionary[js.Any]
 }
 

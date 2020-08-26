@@ -1,6 +1,5 @@
 package typings.pkijs.signedAndUnsignedAttributesMod
 
-import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,18 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends SignedAndUnsignedAttributes {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var attributes: js.Array[typings.pkijs.attributeMod.default] = js.native
-  /* CompleteClass */
-  override var encodedValue: ArrayBuffer = js.native
-  /* CompleteClass */
-  override var `type`: String = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

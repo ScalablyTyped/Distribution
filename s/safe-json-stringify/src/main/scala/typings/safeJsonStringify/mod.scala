@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(data: js.Object): String = js.native
+  def apply(data: js.Object, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
+  def apply(data: js.Object, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
   def apply(data: js.Object, replacer: js.Array[_]): String = js.native
   def apply(data: js.Object, replacer: js.Array[_], space: String): String = js.native
   def apply(data: js.Object, replacer: js.Array[_], space: Double): String = js.native

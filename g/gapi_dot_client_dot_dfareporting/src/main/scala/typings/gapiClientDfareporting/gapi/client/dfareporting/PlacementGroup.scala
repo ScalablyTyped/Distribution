@@ -4,132 +4,199 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlacementGroup extends js.Object {
   /** Account ID of this placement group. This is a read-only field that can be left blank. */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
   /** Advertiser ID of this placement group. This is a required field on insertion. */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  var advertiserId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the advertiser. This is a read-only, auto-generated field. */
-  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** Whether this placement group is archived. */
-  var archived: js.UndefOr[Boolean] = js.undefined
+  var archived: js.UndefOr[Boolean] = js.native
   /** Campaign ID of this placement group. This field is required on insertion. */
-  var campaignId: js.UndefOr[String] = js.undefined
+  var campaignId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the campaign. This is a read-only, auto-generated field. */
-  var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** IDs of placements which are assigned to this placement group. This is a read-only, auto-generated field. */
-  var childPlacementIds: js.UndefOr[js.Array[String]] = js.undefined
+  var childPlacementIds: js.UndefOr[js.Array[String]] = js.native
   /** Comments for this placement group. */
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[String] = js.native
   /** ID of the content category assigned to this placement group. */
-  var contentCategoryId: js.UndefOr[String] = js.undefined
+  var contentCategoryId: js.UndefOr[String] = js.native
   /** Information about the creation of this placement group. This is a read-only field. */
-  var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
+  var createInfo: js.UndefOr[LastModifiedInfo] = js.native
   /**
     * Directory site ID associated with this placement group. On insert, you must set either this field or the site_id field to specify the site associated
     * with this placement group. This is a required field that is read-only after insertion.
     */
-  var directorySiteId: js.UndefOr[String] = js.undefined
+  var directorySiteId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the directory site. This is a read-only, auto-generated field. */
-  var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** External ID for this placement. */
-  var externalId: js.UndefOr[String] = js.undefined
+  var externalId: js.UndefOr[String] = js.native
   /** ID of this placement group. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** Dimension value for the ID of this placement group. This is a read-only, auto-generated field. */
-  var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var idDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#placementGroup". */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Information about the most recent modification of this placement group. This is a read-only field. */
-  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
+  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
   /** Name of this placement group. This is a required field and must be less than 256 characters long. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Type of this placement group. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a group
     * of placements that not only acts as a single pricing point, but also assumes that all the tags in it will be served at the same time. A roadblock
     * requires one of its assigned placements to be marked as primary for reporting. This field is required on insertion.
     */
-  var placementGroupType: js.UndefOr[String] = js.undefined
+  var placementGroupType: js.UndefOr[String] = js.native
   /** ID of the placement strategy assigned to this placement group. */
-  var placementStrategyId: js.UndefOr[String] = js.undefined
+  var placementStrategyId: js.UndefOr[String] = js.native
   /** Pricing schedule of this placement group. This field is required on insertion. */
-  var pricingSchedule: js.UndefOr[PricingSchedule] = js.undefined
+  var pricingSchedule: js.UndefOr[PricingSchedule] = js.native
   /**
     * ID of the primary placement, used to calculate the media cost of a roadblock (placement group). Modifying this field will automatically modify the
     * primary field on all affected roadblock child placements.
     */
-  var primaryPlacementId: js.UndefOr[String] = js.undefined
+  var primaryPlacementId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the primary placement. This is a read-only, auto-generated field. */
-  var primaryPlacementIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var primaryPlacementIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /**
     * Site ID associated with this placement group. On insert, you must set either this field or the directorySiteId field to specify the site associated
     * with this placement group. This is a required field that is read-only after insertion.
     */
-  var siteId: js.UndefOr[String] = js.undefined
+  var siteId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the site. This is a read-only, auto-generated field. */
-  var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** Subaccount ID of this placement group. This is a read-only field that can be left blank. */
-  var subaccountId: js.UndefOr[String] = js.undefined
+  var subaccountId: js.UndefOr[String] = js.native
 }
 
 object PlacementGroup {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    advertiserId: String = null,
-    advertiserIdDimensionValue: DimensionValue = null,
-    archived: js.UndefOr[Boolean] = js.undefined,
-    campaignId: String = null,
-    campaignIdDimensionValue: DimensionValue = null,
-    childPlacementIds: js.Array[String] = null,
-    comment: String = null,
-    contentCategoryId: String = null,
-    createInfo: LastModifiedInfo = null,
-    directorySiteId: String = null,
-    directorySiteIdDimensionValue: DimensionValue = null,
-    externalId: String = null,
-    id: String = null,
-    idDimensionValue: DimensionValue = null,
-    kind: String = null,
-    lastModifiedInfo: LastModifiedInfo = null,
-    name: String = null,
-    placementGroupType: String = null,
-    placementStrategyId: String = null,
-    pricingSchedule: PricingSchedule = null,
-    primaryPlacementId: String = null,
-    primaryPlacementIdDimensionValue: DimensionValue = null,
-    siteId: String = null,
-    siteIdDimensionValue: DimensionValue = null,
-    subaccountId: String = null
-  ): PlacementGroup = {
+  def apply(): PlacementGroup = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId.asInstanceOf[js.Any])
-    if (campaignIdDimensionValue != null) __obj.updateDynamic("campaignIdDimensionValue")(campaignIdDimensionValue.asInstanceOf[js.Any])
-    if (childPlacementIds != null) __obj.updateDynamic("childPlacementIds")(childPlacementIds.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (contentCategoryId != null) __obj.updateDynamic("contentCategoryId")(contentCategoryId.asInstanceOf[js.Any])
-    if (createInfo != null) __obj.updateDynamic("createInfo")(createInfo.asInstanceOf[js.Any])
-    if (directorySiteId != null) __obj.updateDynamic("directorySiteId")(directorySiteId.asInstanceOf[js.Any])
-    if (directorySiteIdDimensionValue != null) __obj.updateDynamic("directorySiteIdDimensionValue")(directorySiteIdDimensionValue.asInstanceOf[js.Any])
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastModifiedInfo != null) __obj.updateDynamic("lastModifiedInfo")(lastModifiedInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (placementGroupType != null) __obj.updateDynamic("placementGroupType")(placementGroupType.asInstanceOf[js.Any])
-    if (placementStrategyId != null) __obj.updateDynamic("placementStrategyId")(placementStrategyId.asInstanceOf[js.Any])
-    if (pricingSchedule != null) __obj.updateDynamic("pricingSchedule")(pricingSchedule.asInstanceOf[js.Any])
-    if (primaryPlacementId != null) __obj.updateDynamic("primaryPlacementId")(primaryPlacementId.asInstanceOf[js.Any])
-    if (primaryPlacementIdDimensionValue != null) __obj.updateDynamic("primaryPlacementIdDimensionValue")(primaryPlacementIdDimensionValue.asInstanceOf[js.Any])
-    if (siteId != null) __obj.updateDynamic("siteId")(siteId.asInstanceOf[js.Any])
-    if (siteIdDimensionValue != null) __obj.updateDynamic("siteIdDimensionValue")(siteIdDimensionValue.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementGroup]
   }
+  @scala.inline
+  implicit class PlacementGroupOps[Self <: PlacementGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    @scala.inline
+    def setCampaignIdDimensionValue(value: DimensionValue): Self = this.set("campaignIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignIdDimensionValue: Self = this.set("campaignIdDimensionValue", js.undefined)
+    @scala.inline
+    def setChildPlacementIdsVarargs(value: String*): Self = this.set("childPlacementIds", js.Array(value :_*))
+    @scala.inline
+    def setChildPlacementIds(value: js.Array[String]): Self = this.set("childPlacementIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildPlacementIds: Self = this.set("childPlacementIds", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setContentCategoryId(value: String): Self = this.set("contentCategoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentCategoryId: Self = this.set("contentCategoryId", js.undefined)
+    @scala.inline
+    def setCreateInfo(value: LastModifiedInfo): Self = this.set("createInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateInfo: Self = this.set("createInfo", js.undefined)
+    @scala.inline
+    def setDirectorySiteId(value: String): Self = this.set("directorySiteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteId: Self = this.set("directorySiteId", js.undefined)
+    @scala.inline
+    def setDirectorySiteIdDimensionValue(value: DimensionValue): Self = this.set("directorySiteIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteIdDimensionValue: Self = this.set("directorySiteIdDimensionValue", js.undefined)
+    @scala.inline
+    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: DimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastModifiedInfo(value: LastModifiedInfo): Self = this.set("lastModifiedInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedInfo: Self = this.set("lastModifiedInfo", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlacementGroupType(value: String): Self = this.set("placementGroupType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroupType: Self = this.set("placementGroupType", js.undefined)
+    @scala.inline
+    def setPlacementStrategyId(value: String): Self = this.set("placementStrategyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementStrategyId: Self = this.set("placementStrategyId", js.undefined)
+    @scala.inline
+    def setPricingSchedule(value: PricingSchedule): Self = this.set("pricingSchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingSchedule: Self = this.set("pricingSchedule", js.undefined)
+    @scala.inline
+    def setPrimaryPlacementId(value: String): Self = this.set("primaryPlacementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryPlacementId: Self = this.set("primaryPlacementId", js.undefined)
+    @scala.inline
+    def setPrimaryPlacementIdDimensionValue(value: DimensionValue): Self = this.set("primaryPlacementIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryPlacementIdDimensionValue: Self = this.set("primaryPlacementIdDimensionValue", js.undefined)
+    @scala.inline
+    def setSiteId(value: String): Self = this.set("siteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteId: Self = this.set("siteId", js.undefined)
+    @scala.inline
+    def setSiteIdDimensionValue(value: DimensionValue): Self = this.set("siteIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteIdDimensionValue: Self = this.set("siteIdDimensionValue", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+  }
+  
 }
 

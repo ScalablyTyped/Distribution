@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_videointelligence"
-version := "1.0-dt-20200515Z-31e11f"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-055a26"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20200426Z-d384c4",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20200426Z-74950d",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

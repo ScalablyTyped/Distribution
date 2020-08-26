@@ -30,20 +30,42 @@ trait FleetUtilization extends js.Object {
 
 object FleetUtilization {
   @scala.inline
-  def apply(
-    ActiveGameSessionCount: js.UndefOr[WholeNumber] = js.undefined,
-    ActiveServerProcessCount: js.UndefOr[WholeNumber] = js.undefined,
-    CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
-    FleetId: FleetId = null,
-    MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
-  ): FleetUtilization = {
+  def apply(): FleetUtilization = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ActiveGameSessionCount)) __obj.updateDynamic("ActiveGameSessionCount")(ActiveGameSessionCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ActiveServerProcessCount)) __obj.updateDynamic("ActiveServerProcessCount")(ActiveServerProcessCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CurrentPlayerSessionCount)) __obj.updateDynamic("CurrentPlayerSessionCount")(CurrentPlayerSessionCount.get.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumPlayerSessionCount)) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetUtilization]
   }
+  @scala.inline
+  implicit class FleetUtilizationOps[Self <: FleetUtilization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveGameSessionCount(value: WholeNumber): Self = this.set("ActiveGameSessionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveGameSessionCount: Self = this.set("ActiveGameSessionCount", js.undefined)
+    @scala.inline
+    def setActiveServerProcessCount(value: WholeNumber): Self = this.set("ActiveServerProcessCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveServerProcessCount: Self = this.set("ActiveServerProcessCount", js.undefined)
+    @scala.inline
+    def setCurrentPlayerSessionCount(value: WholeNumber): Self = this.set("CurrentPlayerSessionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPlayerSessionCount: Self = this.set("CurrentPlayerSessionCount", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setMaximumPlayerSessionCount(value: WholeNumber): Self = this.set("MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumPlayerSessionCount: Self = this.set("MaximumPlayerSessionCount", js.undefined)
+  }
+  
 }
 

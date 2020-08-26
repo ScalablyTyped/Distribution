@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^[Content /* <: js.Object */] () extends Database[Content] {
   def this(name: String) = this()
+  def this(name: js.UndefOr[scala.Nothing], options: DatabaseConfiguration) = this()
   def this(name: String, options: DatabaseConfiguration) = this()
 }
 

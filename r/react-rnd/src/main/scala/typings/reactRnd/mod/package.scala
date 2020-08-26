@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type Grid = js.Tuple2[scala.Double, scala.Double]
+  type ResizeEnable = typings.reactRnd.anon.Bottom | scala.Boolean
   type RndDragCallback = typings.reactDraggable.mod.DraggableEventHandler
   type RndDragEvent = (typings.react.mod.MouseEvent[
     typings.std.HTMLElement | typings.std.SVGElement, 

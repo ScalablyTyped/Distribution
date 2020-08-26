@@ -19,7 +19,11 @@ trait Dependency
   def calculateKey(lassoContext: default, callback: Callback): js.Any = js.native
   def calculateKeyFromProps(): String = js.native
   def createPackageManifest(): js.Any = js.native
+  def createPackageManifest(manifest: js.UndefOr[scala.Nothing], dirname: js.UndefOr[scala.Nothing], filename: String): js.Any = js.native
+  def createPackageManifest(manifest: js.UndefOr[scala.Nothing], dirname: String): js.Any = js.native
+  def createPackageManifest(manifest: js.UndefOr[scala.Nothing], dirname: String, filename: String): js.Any = js.native
   def createPackageManifest(manifest: js.Any): js.Any = js.native
+  def createPackageManifest(manifest: js.Any, dirname: js.UndefOr[scala.Nothing], filename: String): js.Any = js.native
   def createPackageManifest(manifest: js.Any, dirname: String): js.Any = js.native
   def createPackageManifest(manifest: js.Any, dirname: String, filename: String): js.Any = js.native
   def createReadStream(lassoContext: default): js.Any = js.native
@@ -28,6 +32,7 @@ trait Dependency
   def doInit(lassoContext: default, callback: Callback): Unit = js.native
   def getContentType(): js.Any = js.native
   def getDefaultBundleName(): String = js.native
+  def getDefaultBundleName(pageBundleName: js.UndefOr[scala.Nothing], lassoContext: default): String = js.native
   def getDefaultBundleName(pageBundleName: String): String = js.native
   def getDefaultBundleName(pageBundleName: String, lassoContext: default): String = js.native
   def getDir(): String | Null = js.native

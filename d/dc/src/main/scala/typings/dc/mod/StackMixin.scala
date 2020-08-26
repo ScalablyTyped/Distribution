@@ -19,6 +19,7 @@ trait StackMixin[T] extends js.Object {
   def hideStack(name: String): Unit = js.native
   def showStack(name: String): Unit = js.native
   def stack(group: js.Any): Unit = js.native
+  def stack(group: js.Any, name: js.UndefOr[scala.Nothing], accessor: Accessor[_, _]): Unit = js.native
   def stack(group: js.Any, name: String): Unit = js.native
   def stack(group: js.Any, name: String, accessor: Accessor[_, _]): Unit = js.native
   // title(stackName: string, titleFn: Accessor<any, T>);

@@ -1,7 +1,7 @@
 
 # Scala.js typings for expect
 
-Typings are for version 25.5.0
+Typings are for version 26.2.0
 
 ## Library description:
 This package exports the `expect` function used in [Jest](https://jestjs.io/). You can find its documentation [on Jest's website](https://jestjs.io/docs/en/expect.html).
@@ -10,9 +10,9 @@ This package exports the `expect` function used in [Jest](https://jestjs.io/). Y
 | ------------------ | :-------------: |
 | Full name          | expect |
 | Keywords           | - |
-| # releases         | 63 |
+| # releases         | 62 |
 | # dependents       | 252 |
-| # downloads        | 214671142 |
+| # downloads        | 216887787 |
 | # stars            | 58 |
 
 ## Links

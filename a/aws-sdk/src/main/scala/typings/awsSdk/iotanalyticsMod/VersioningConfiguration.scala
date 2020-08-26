@@ -18,14 +18,30 @@ trait VersioningConfiguration extends js.Object {
 
 object VersioningConfiguration {
   @scala.inline
-  def apply(
-    maxVersions: js.UndefOr[MaxVersions] = js.undefined,
-    unlimited: js.UndefOr[UnlimitedVersioning] = js.undefined
-  ): VersioningConfiguration = {
+  def apply(): VersioningConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxVersions)) __obj.updateDynamic("maxVersions")(maxVersions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unlimited)) __obj.updateDynamic("unlimited")(unlimited.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersioningConfiguration]
   }
+  @scala.inline
+  implicit class VersioningConfigurationOps[Self <: VersioningConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxVersions(value: MaxVersions): Self = this.set("maxVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxVersions: Self = this.set("maxVersions", js.undefined)
+    @scala.inline
+    def setUnlimited(value: UnlimitedVersioning): Self = this.set("unlimited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnlimited: Self = this.set("unlimited", js.undefined)
+  }
+  
 }
 

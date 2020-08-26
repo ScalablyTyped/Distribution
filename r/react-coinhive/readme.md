@@ -12,7 +12,7 @@ react-coinhive React component
 | Keywords           | react, mining, crypto, miner, coinhive, coin-hive |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 509 |
+| # downloads        | 521 |
 | # stars            | 1 |
 
 ## Links

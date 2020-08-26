@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("events", "EventEmitter")
 @js.native
 class EventEmitter ()
-  extends typings.node.NodeJS.EventEmitter {
+  extends typings.node.eventsMod.global.NodeJS.EventEmitter {
   def this(options: EventEmitterOptions) = this()
 }
 

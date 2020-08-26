@@ -12,7 +12,7 @@ Single component release of progress
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 26075 |
+| # downloads        | 28577 |
 | # stars            | 0 |
 
 ## Links

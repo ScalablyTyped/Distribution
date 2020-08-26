@@ -29,6 +29,7 @@ trait DataSnapshot extends js.Object {
   var ServerValue: TIMESTAMP = js.native
   var TEST_ACCESS: TypeofTESTACCESS = js.native
   def enableLogging(): Unit = js.native
+  def enableLogging(logger_ : js.UndefOr[scala.Nothing], persistent: Boolean): Unit = js.native
   def enableLogging(logger_ : js.Function1[/* a */ String, Unit]): Unit = js.native
   def enableLogging(logger_ : js.Function1[/* a */ String, Unit], persistent: Boolean): Unit = js.native
   def enableLogging(logger_ : Boolean): Unit = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethereumjs-util
 
-Typings are for version 6.2.0
+Typings are for version 7.0.3
 
 ## Library description:
 a collection of utility functions for Ethereum

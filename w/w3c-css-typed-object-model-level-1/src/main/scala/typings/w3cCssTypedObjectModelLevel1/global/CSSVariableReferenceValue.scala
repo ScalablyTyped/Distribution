@@ -10,7 +10,5 @@ class CSSVariableReferenceValue protected ()
   extends typings.w3cCssTypedObjectModelLevel1.CSSVariableReferenceValue {
   def this(variable: String) = this()
   def this(variable: String, fallback: typings.w3cCssTypedObjectModelLevel1.CSSUnparsedValue) = this()
-  /* CompleteClass */
-  override var variable: String = js.native
 }
 

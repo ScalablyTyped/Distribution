@@ -30,18 +30,38 @@ trait SchemaTimePartitioning extends js.Object {
 
 object SchemaTimePartitioning {
   @scala.inline
-  def apply(
-    expirationMs: String = null,
-    field: String = null,
-    requirePartitionFilter: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null
-  ): SchemaTimePartitioning = {
+  def apply(): SchemaTimePartitioning = {
     val __obj = js.Dynamic.literal()
-    if (expirationMs != null) __obj.updateDynamic("expirationMs")(expirationMs.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(requirePartitionFilter)) __obj.updateDynamic("requirePartitionFilter")(requirePartitionFilter.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTimePartitioning]
   }
+  @scala.inline
+  implicit class SchemaTimePartitioningOps[Self <: SchemaTimePartitioning] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpirationMs(value: String): Self = this.set("expirationMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationMs: Self = this.set("expirationMs", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setRequirePartitionFilter(value: Boolean): Self = this.set("requirePartitionFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequirePartitionFilter: Self = this.set("requirePartitionFilter", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Cooperative scheduler for the browser environment.
 | Keywords           | react |
 | # releases         | 6 |
 | # dependents       | 12 |
-| # downloads        | 13505288 |
+| # downloads        | 12396604 |
 | # stars            | 3 |
 
 ## Links

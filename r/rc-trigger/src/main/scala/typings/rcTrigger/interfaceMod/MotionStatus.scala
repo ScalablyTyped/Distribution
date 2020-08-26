@@ -14,14 +14,12 @@ trait MotionStatus extends js.Object
 
 object MotionStatus {
   @scala.inline
-  def appear: typings.rcTrigger.rcTriggerStrings.appear = this.cast("appear")
+  def appear: typings.rcTrigger.rcTriggerStrings.appear = "appear".asInstanceOf[typings.rcTrigger.rcTriggerStrings.appear]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def enter: typings.rcTrigger.rcTriggerStrings.enter = "enter".asInstanceOf[typings.rcTrigger.rcTriggerStrings.enter]
   @scala.inline
-  def enter: typings.rcTrigger.rcTriggerStrings.enter = this.cast("enter")
+  def leave: typings.rcTrigger.rcTriggerStrings.leave = "leave".asInstanceOf[typings.rcTrigger.rcTriggerStrings.leave]
   @scala.inline
-  def leave: typings.rcTrigger.rcTriggerStrings.leave = this.cast("leave")
-  @scala.inline
-  def none: typings.rcTrigger.rcTriggerStrings.none = this.cast("none")
+  def none: typings.rcTrigger.rcTriggerStrings.none = "none".asInstanceOf[typings.rcTrigger.rcTriggerStrings.none]
 }
 

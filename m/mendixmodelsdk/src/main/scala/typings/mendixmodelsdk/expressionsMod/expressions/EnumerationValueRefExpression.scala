@@ -58,8 +58,8 @@ class EnumerationValueRefExpression protected () extends Expression {
   @JSName("model")
   var model_FEnumerationValueRefExpression: IModel = js.native
   def value: IEnumerationValue = js.native
-  def value(newValue: IEnumerationValue): js.Any = js.native
   def valueQualifiedName: String = js.native
+  def value_=(newValue: IEnumerationValue): Unit = js.native
 }
 
 /* static members */

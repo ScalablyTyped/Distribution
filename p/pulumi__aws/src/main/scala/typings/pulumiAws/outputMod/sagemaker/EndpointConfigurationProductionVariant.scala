@@ -34,18 +34,38 @@ trait EndpointConfigurationProductionVariant extends js.Object {
 
 object EndpointConfigurationProductionVariant {
   @scala.inline
-  def apply(
-    initialInstanceCount: Double,
-    instanceType: String,
-    modelName: String,
-    variantName: String,
-    acceleratorType: String = null,
-    initialVariantWeight: js.UndefOr[Double] = js.undefined
-  ): EndpointConfigurationProductionVariant = {
+  def apply(initialInstanceCount: Double, instanceType: String, modelName: String, variantName: String): EndpointConfigurationProductionVariant = {
     val __obj = js.Dynamic.literal(initialInstanceCount = initialInstanceCount.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], variantName = variantName.asInstanceOf[js.Any])
-    if (acceleratorType != null) __obj.updateDynamic("acceleratorType")(acceleratorType.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialVariantWeight)) __obj.updateDynamic("initialVariantWeight")(initialVariantWeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointConfigurationProductionVariant]
   }
+  @scala.inline
+  implicit class EndpointConfigurationProductionVariantOps[Self <: EndpointConfigurationProductionVariant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitialInstanceCount(value: Double): Self = this.set("initialInstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVariantName(value: String): Self = this.set("variantName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceleratorType(value: String): Self = this.set("acceleratorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorType: Self = this.set("acceleratorType", js.undefined)
+    @scala.inline
+    def setInitialVariantWeight(value: Double): Self = this.set("initialVariantWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialVariantWeight: Self = this.set("initialVariantWeight", js.undefined)
+  }
+  
 }
 

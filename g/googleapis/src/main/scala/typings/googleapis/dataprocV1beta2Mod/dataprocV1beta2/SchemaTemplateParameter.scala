@@ -66,18 +66,40 @@ trait SchemaTemplateParameter extends js.Object {
 
 object SchemaTemplateParameter {
   @scala.inline
-  def apply(
-    description: String = null,
-    fields: js.Array[String] = null,
-    name: String = null,
-    validation: SchemaParameterValidation = null
-  ): SchemaTemplateParameter = {
+  def apply(): SchemaTemplateParameter = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTemplateParameter]
   }
+  @scala.inline
+  implicit class SchemaTemplateParameterOps[Self <: SchemaTemplateParameter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setValidation(value: SchemaParameterValidation): Self = this.set("validation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidation: Self = this.set("validation", js.undefined)
+  }
+  
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-drawer/lib/utils", JSImport.Namespace)
+@JSImport("rc-drawer/es/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
   val transitionEnd: String = js.native

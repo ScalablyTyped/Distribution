@@ -12,14 +12,30 @@ trait MinimumTransferableSeats extends js.Object {
 
 object MinimumTransferableSeats {
   @scala.inline
-  def apply(
-    minimumTransferableSeats: js.UndefOr[Double] = js.undefined,
-    transferabilityExpirationTime: String = null
-  ): MinimumTransferableSeats = {
+  def apply(): MinimumTransferableSeats = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(minimumTransferableSeats)) __obj.updateDynamic("minimumTransferableSeats")(minimumTransferableSeats.get.asInstanceOf[js.Any])
-    if (transferabilityExpirationTime != null) __obj.updateDynamic("transferabilityExpirationTime")(transferabilityExpirationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinimumTransferableSeats]
   }
+  @scala.inline
+  implicit class MinimumTransferableSeatsOps[Self <: MinimumTransferableSeats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMinimumTransferableSeats(value: Double): Self = this.set("minimumTransferableSeats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumTransferableSeats: Self = this.set("minimumTransferableSeats", js.undefined)
+    @scala.inline
+    def setTransferabilityExpirationTime(value: String): Self = this.set("transferabilityExpirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferabilityExpirationTime: Self = this.set("transferabilityExpirationTime", js.undefined)
+  }
+  
 }
 

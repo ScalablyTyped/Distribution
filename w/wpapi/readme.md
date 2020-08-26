@@ -12,7 +12,7 @@ An isomorphic JavaScript client for interacting with the WordPress REST API
 | Keywords           | api, client, cms, wordpress |
 | # releases         | 5 |
 | # dependents       | 27 |
-| # downloads        | 456117 |
+| # downloads        | 474666 |
 | # stars            | 18 |
 
 ## Links

@@ -113,6 +113,7 @@ trait Tileset extends js.Object {
     * @param spacing The spacing between the tiles in the sheet (in pixels).
     */
   def setSpacing(): Tileset = js.native
+  def setSpacing(margin: js.UndefOr[scala.Nothing], spacing: integer): Tileset = js.native
   def setSpacing(margin: integer): Tileset = js.native
   def setSpacing(margin: integer, spacing: integer): Tileset = js.native
   /**
@@ -121,6 +122,7 @@ trait Tileset extends js.Object {
     * @param tileHeight The height of a tile in pixels.
     */
   def setTileSize(): Tileset = js.native
+  def setTileSize(tileWidth: js.UndefOr[scala.Nothing], tileHeight: integer): Tileset = js.native
   def setTileSize(tileWidth: integer): Tileset = js.native
   def setTileSize(tileWidth: integer, tileHeight: integer): Tileset = js.native
   /**

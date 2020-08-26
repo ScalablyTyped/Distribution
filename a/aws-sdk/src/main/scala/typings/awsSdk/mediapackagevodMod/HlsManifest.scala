@@ -44,22 +44,46 @@ trait HlsManifest extends js.Object {
 
 object HlsManifest {
   @scala.inline
-  def apply(
-    AdMarkers: AdMarkers = null,
-    IncludeIframeOnlyStream: js.UndefOr[boolean] = js.undefined,
-    ManifestName: string = null,
-    ProgramDateTimeIntervalSeconds: js.UndefOr[integer] = js.undefined,
-    RepeatExtXKey: js.UndefOr[boolean] = js.undefined,
-    StreamSelection: StreamSelection = null
-  ): HlsManifest = {
+  def apply(): HlsManifest = {
     val __obj = js.Dynamic.literal()
-    if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream.get.asInstanceOf[js.Any])
-    if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgramDateTimeIntervalSeconds)) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RepeatExtXKey)) __obj.updateDynamic("RepeatExtXKey")(RepeatExtXKey.get.asInstanceOf[js.Any])
-    if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsManifest]
   }
+  @scala.inline
+  implicit class HlsManifestOps[Self <: HlsManifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdMarkers(value: AdMarkers): Self = this.set("AdMarkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdMarkers: Self = this.set("AdMarkers", js.undefined)
+    @scala.inline
+    def setIncludeIframeOnlyStream(value: boolean): Self = this.set("IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeIframeOnlyStream: Self = this.set("IncludeIframeOnlyStream", js.undefined)
+    @scala.inline
+    def setManifestName(value: string): Self = this.set("ManifestName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestName: Self = this.set("ManifestName", js.undefined)
+    @scala.inline
+    def setProgramDateTimeIntervalSeconds(value: integer): Self = this.set("ProgramDateTimeIntervalSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramDateTimeIntervalSeconds: Self = this.set("ProgramDateTimeIntervalSeconds", js.undefined)
+    @scala.inline
+    def setRepeatExtXKey(value: boolean): Self = this.set("RepeatExtXKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeatExtXKey: Self = this.set("RepeatExtXKey", js.undefined)
+    @scala.inline
+    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
+  }
+  
 }
 

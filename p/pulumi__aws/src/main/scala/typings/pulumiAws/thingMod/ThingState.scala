@@ -15,7 +15,7 @@ trait ThingState extends js.Object {
   /**
     * Map of attributes of the thing.
     */
-  val attributes: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val attributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The default client ID.
     */
@@ -36,22 +36,46 @@ trait ThingState extends js.Object {
 
 object ThingState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    attributes: Input[StringDictionary[_]] = null,
-    defaultClientId: Input[String] = null,
-    name: Input[String] = null,
-    thingTypeName: Input[String] = null,
-    version: Input[Double] = null
-  ): ThingState = {
+  def apply(): ThingState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (defaultClientId != null) __obj.updateDynamic("defaultClientId")(defaultClientId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingState]
   }
+  @scala.inline
+  implicit class ThingStateOps[Self <: ThingState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAttributes(value: Input[StringDictionary[Input[String]]]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setDefaultClientId(value: Input[String]): Self = this.set("defaultClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultClientId: Self = this.set("defaultClientId", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setThingTypeName(value: Input[String]): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
+    @scala.inline
+    def setVersion(value: Input[Double]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -38,20 +38,44 @@ trait GetPolicyDocumentArgs extends js.Object {
 
 object GetPolicyDocumentArgs {
   @scala.inline
-  def apply(
-    overrideJson: String = null,
-    policyId: String = null,
-    sourceJson: String = null,
-    statements: js.Array[GetPolicyDocumentStatement] = null,
-    version: String = null
-  ): GetPolicyDocumentArgs = {
+  def apply(): GetPolicyDocumentArgs = {
     val __obj = js.Dynamic.literal()
-    if (overrideJson != null) __obj.updateDynamic("overrideJson")(overrideJson.asInstanceOf[js.Any])
-    if (policyId != null) __obj.updateDynamic("policyId")(policyId.asInstanceOf[js.Any])
-    if (sourceJson != null) __obj.updateDynamic("sourceJson")(sourceJson.asInstanceOf[js.Any])
-    if (statements != null) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPolicyDocumentArgs]
   }
+  @scala.inline
+  implicit class GetPolicyDocumentArgsOps[Self <: GetPolicyDocumentArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOverrideJson(value: String): Self = this.set("overrideJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideJson: Self = this.set("overrideJson", js.undefined)
+    @scala.inline
+    def setPolicyId(value: String): Self = this.set("policyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyId: Self = this.set("policyId", js.undefined)
+    @scala.inline
+    def setSourceJson(value: String): Self = this.set("sourceJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceJson: Self = this.set("sourceJson", js.undefined)
+    @scala.inline
+    def setStatementsVarargs(value: GetPolicyDocumentStatement*): Self = this.set("statements", js.Array(value :_*))
+    @scala.inline
+    def setStatements(value: js.Array[GetPolicyDocumentStatement]): Self = this.set("statements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatements: Self = this.set("statements", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

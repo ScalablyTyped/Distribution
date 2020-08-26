@@ -79,24 +79,50 @@ trait SchemaFieldTransform extends js.Object {
 
 object SchemaFieldTransform {
   @scala.inline
-  def apply(
-    appendMissingElements: SchemaArrayValue = null,
-    fieldPath: String = null,
-    increment: SchemaValue = null,
-    maximum: SchemaValue = null,
-    minimum: SchemaValue = null,
-    removeAllFromArray: SchemaArrayValue = null,
-    setToServerValue: String = null
-  ): SchemaFieldTransform = {
+  def apply(): SchemaFieldTransform = {
     val __obj = js.Dynamic.literal()
-    if (appendMissingElements != null) __obj.updateDynamic("appendMissingElements")(appendMissingElements.asInstanceOf[js.Any])
-    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath.asInstanceOf[js.Any])
-    if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (removeAllFromArray != null) __obj.updateDynamic("removeAllFromArray")(removeAllFromArray.asInstanceOf[js.Any])
-    if (setToServerValue != null) __obj.updateDynamic("setToServerValue")(setToServerValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldTransform]
   }
+  @scala.inline
+  implicit class SchemaFieldTransformOps[Self <: SchemaFieldTransform] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendMissingElements(value: SchemaArrayValue): Self = this.set("appendMissingElements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendMissingElements: Self = this.set("appendMissingElements", js.undefined)
+    @scala.inline
+    def setFieldPath(value: String): Self = this.set("fieldPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldPath: Self = this.set("fieldPath", js.undefined)
+    @scala.inline
+    def setIncrement(value: SchemaValue): Self = this.set("increment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncrement: Self = this.set("increment", js.undefined)
+    @scala.inline
+    def setMaximum(value: SchemaValue): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    @scala.inline
+    def setMinimum(value: SchemaValue): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    @scala.inline
+    def setRemoveAllFromArray(value: SchemaArrayValue): Self = this.set("removeAllFromArray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveAllFromArray: Self = this.set("removeAllFromArray", js.undefined)
+    @scala.inline
+    def setSetToServerValue(value: String): Self = this.set("setToServerValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetToServerValue: Self = this.set("setToServerValue", js.undefined)
+  }
+  
 }
 

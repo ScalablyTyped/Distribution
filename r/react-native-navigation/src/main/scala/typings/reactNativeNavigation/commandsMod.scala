@@ -3,6 +3,7 @@ package typings.reactNativeNavigation
 import typings.reactNativeNavigation.commandsObserverMod.CommandsObserver
 import typings.reactNativeNavigation.layoutMod.Layout
 import typings.reactNativeNavigation.layoutMod.LayoutRoot
+import typings.reactNativeNavigation.layoutProcessorMod.LayoutProcessor
 import typings.reactNativeNavigation.layoutTreeCrawlerMod.LayoutTreeCrawler
 import typings.reactNativeNavigation.layoutTreeParserMod.LayoutTreeParser
 import typings.reactNativeNavigation.nativeCommandsSenderMod.NativeCommandsSender
@@ -26,9 +27,11 @@ object commandsMod extends js.Object {
       layoutTreeCrawler: LayoutTreeCrawler,
       commandsObserver: CommandsObserver,
       uniqueIdProvider: UniqueIdProvider,
-      optionsProcessor: OptionsProcessor
+      optionsProcessor: OptionsProcessor,
+      layoutProcessor: LayoutProcessor
     ) = this()
     val commandsObserver: js.Any = js.native
+    val layoutProcessor: js.Any = js.native
     val layoutTreeCrawler: js.Any = js.native
     val layoutTreeParser: js.Any = js.native
     val nativeCommandsSender: js.Any = js.native

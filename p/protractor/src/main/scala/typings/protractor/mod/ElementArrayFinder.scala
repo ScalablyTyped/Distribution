@@ -15,8 +15,31 @@ class ElementArrayFinder protected ()
   ) = this()
   def this(
     browser_ : typings.protractor.browserMod.ProtractorBrowser,
+    getWebElements: js.UndefOr[scala.Nothing],
+    locator_ : js.Any
+  ) = this()
+  def this(
+    browser_ : typings.protractor.browserMod.ProtractorBrowser,
     getWebElements: js.Function0[js.Promise[js.Array[typings.seleniumWebdriver.mod.WebElement]]],
     locator_ : js.Any
+  ) = this()
+  def this(
+    browser_ : typings.protractor.browserMod.ProtractorBrowser,
+    getWebElements: js.UndefOr[scala.Nothing],
+    locator_ : js.UndefOr[scala.Nothing],
+    actionResults_ : js.Promise[_]
+  ) = this()
+  def this(
+    browser_ : typings.protractor.browserMod.ProtractorBrowser,
+    getWebElements: js.UndefOr[scala.Nothing],
+    locator_ : js.Any,
+    actionResults_ : js.Promise[_]
+  ) = this()
+  def this(
+    browser_ : typings.protractor.browserMod.ProtractorBrowser,
+    getWebElements: js.Function0[js.Promise[js.Array[typings.seleniumWebdriver.mod.WebElement]]],
+    locator_ : js.UndefOr[scala.Nothing],
+    actionResults_ : js.Promise[_]
   ) = this()
   def this(
     browser_ : typings.protractor.browserMod.ProtractorBrowser,

@@ -30,12 +30,36 @@ trait SchemaHostRule extends js.Object {
 
 object SchemaHostRule {
   @scala.inline
-  def apply(description: String = null, hosts: js.Array[String] = null, pathMatcher: String = null): SchemaHostRule = {
+  def apply(): SchemaHostRule = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
-    if (pathMatcher != null) __obj.updateDynamic("pathMatcher")(pathMatcher.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHostRule]
   }
+  @scala.inline
+  implicit class SchemaHostRuleOps[Self <: SchemaHostRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setHostsVarargs(value: String*): Self = this.set("hosts", js.Array(value :_*))
+    @scala.inline
+    def setHosts(value: js.Array[String]): Self = this.set("hosts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHosts: Self = this.set("hosts", js.undefined)
+    @scala.inline
+    def setPathMatcher(value: String): Self = this.set("pathMatcher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathMatcher: Self = this.set("pathMatcher", js.undefined)
+  }
+  
 }
 

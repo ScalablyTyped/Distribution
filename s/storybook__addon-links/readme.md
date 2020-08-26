@@ -10,9 +10,9 @@ Story Links addon for storybook
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-links |
 | Keywords           | addon, storybook |
-| # releases         | 416 |
-| # dependents       | 108 |
-| # downloads        | 24875595 |
+| # releases         | 417 |
+| # dependents       | 107 |
+| # downloads        | 25402422 |
 | # stars            | 0 |
 
 ## Links

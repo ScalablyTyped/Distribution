@@ -12,7 +12,7 @@ Basic IP rate-limiting middleware for Express that slows down responses rather t
 | Keywords           | express-rate-limit, express, rate, limit, ratelimit, rate-limit, middleware, ip, auth, authorization, security, brute, force, bruteforce, brute-force, attack |
 | # releases         | 7 |
 | # dependents       | 5 |
-| # downloads        | 236822 |
+| # downloads        | 263962 |
 | # stars            | 0 |
 
 ## Links

@@ -14,10 +14,28 @@ trait DescribeEmergencyContactSettingsResponse extends js.Object {
 
 object DescribeEmergencyContactSettingsResponse {
   @scala.inline
-  def apply(EmergencyContactList: EmergencyContactList = null): DescribeEmergencyContactSettingsResponse = {
+  def apply(): DescribeEmergencyContactSettingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (EmergencyContactList != null) __obj.updateDynamic("EmergencyContactList")(EmergencyContactList.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEmergencyContactSettingsResponse]
   }
+  @scala.inline
+  implicit class DescribeEmergencyContactSettingsResponseOps[Self <: DescribeEmergencyContactSettingsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmergencyContactListVarargs(value: EmergencyContact*): Self = this.set("EmergencyContactList", js.Array(value :_*))
+    @scala.inline
+    def setEmergencyContactList(value: EmergencyContactList): Self = this.set("EmergencyContactList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmergencyContactList: Self = this.set("EmergencyContactList", js.undefined)
+  }
+  
 }
 

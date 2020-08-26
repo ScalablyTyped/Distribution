@@ -29,16 +29,36 @@ trait SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequest extends js.Object 
 
 object SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequest {
   @scala.inline
-  def apply(
-    entities: js.Array[SchemaGoogleCloudDialogflowV2EntityTypeEntity] = null,
-    languageCode: String = null,
-    updateMask: String = null
-  ): SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequest = {
+  def apply(): SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequest]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequestOps[Self <: SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntitiesVarargs(value: SchemaGoogleCloudDialogflowV2EntityTypeEntity*): Self = this.set("entities", js.Array(value :_*))
+    @scala.inline
+    def setEntities(value: js.Array[SchemaGoogleCloudDialogflowV2EntityTypeEntity]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntities: Self = this.set("entities", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+  }
+  
 }
 

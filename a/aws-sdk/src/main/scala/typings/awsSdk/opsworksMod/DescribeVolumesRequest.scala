@@ -26,18 +26,40 @@ trait DescribeVolumesRequest extends js.Object {
 
 object DescribeVolumesRequest {
   @scala.inline
-  def apply(
-    InstanceId: String = null,
-    RaidArrayId: String = null,
-    StackId: String = null,
-    VolumeIds: Strings = null
-  ): DescribeVolumesRequest = {
+  def apply(): DescribeVolumesRequest = {
     val __obj = js.Dynamic.literal()
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (RaidArrayId != null) __obj.updateDynamic("RaidArrayId")(RaidArrayId.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (VolumeIds != null) __obj.updateDynamic("VolumeIds")(VolumeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVolumesRequest]
   }
+  @scala.inline
+  implicit class DescribeVolumesRequestOps[Self <: DescribeVolumesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setRaidArrayId(value: String): Self = this.set("RaidArrayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaidArrayId: Self = this.set("RaidArrayId", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setVolumeIdsVarargs(value: String*): Self = this.set("VolumeIds", js.Array(value :_*))
+    @scala.inline
+    def setVolumeIds(value: Strings): Self = this.set("VolumeIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeIds: Self = this.set("VolumeIds", js.undefined)
+  }
+  
 }
 

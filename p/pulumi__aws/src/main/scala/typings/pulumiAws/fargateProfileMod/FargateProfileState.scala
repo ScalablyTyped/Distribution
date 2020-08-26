@@ -38,33 +38,65 @@ trait FargateProfileState extends js.Object {
     */
   val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * Key-value mapping of resource tags.
+    * Key-value map of resource tags.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object FargateProfileState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    clusterName: Input[String] = null,
-    fargateProfileName: Input[String] = null,
-    podExecutionRoleArn: Input[String] = null,
-    selectors: Input[js.Array[Input[FargateProfileSelector]]] = null,
-    status: Input[String] = null,
-    subnetIds: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): FargateProfileState = {
+  def apply(): FargateProfileState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    if (fargateProfileName != null) __obj.updateDynamic("fargateProfileName")(fargateProfileName.asInstanceOf[js.Any])
-    if (podExecutionRoleArn != null) __obj.updateDynamic("podExecutionRoleArn")(podExecutionRoleArn.asInstanceOf[js.Any])
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FargateProfileState]
   }
+  @scala.inline
+  implicit class FargateProfileStateOps[Self <: FargateProfileState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setClusterName(value: Input[String]): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    @scala.inline
+    def setFargateProfileName(value: Input[String]): Self = this.set("fargateProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFargateProfileName: Self = this.set("fargateProfileName", js.undefined)
+    @scala.inline
+    def setPodExecutionRoleArn(value: Input[String]): Self = this.set("podExecutionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePodExecutionRoleArn: Self = this.set("podExecutionRoleArn", js.undefined)
+    @scala.inline
+    def setSelectorsVarargs(value: Input[FargateProfileSelector]*): Self = this.set("selectors", js.Array(value :_*))
+    @scala.inline
+    def setSelectors(value: Input[js.Array[Input[FargateProfileSelector]]]): Self = this.set("selectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectors: Self = this.set("selectors", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("subnetIds", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

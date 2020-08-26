@@ -19,10 +19,26 @@ trait SchemaRevertTagResponse extends js.Object {
 
 object SchemaRevertTagResponse {
   @scala.inline
-  def apply(tag: SchemaTag = null): SchemaRevertTagResponse = {
+  def apply(): SchemaRevertTagResponse = {
     val __obj = js.Dynamic.literal()
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRevertTagResponse]
   }
+  @scala.inline
+  implicit class SchemaRevertTagResponseOps[Self <: SchemaRevertTagResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTag(value: SchemaTag): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

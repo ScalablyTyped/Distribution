@@ -34,22 +34,50 @@ trait Region extends js.Object {
 
 object Region {
   @scala.inline
-  def apply(
-    availabilityZones: AvailabilityZoneList = null,
-    continentCode: String = null,
-    description: String = null,
-    displayName: String = null,
-    name: RegionName = null,
-    relationalDatabaseAvailabilityZones: AvailabilityZoneList = null
-  ): Region = {
+  def apply(): Region = {
     val __obj = js.Dynamic.literal()
-    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
-    if (continentCode != null) __obj.updateDynamic("continentCode")(continentCode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (relationalDatabaseAvailabilityZones != null) __obj.updateDynamic("relationalDatabaseAvailabilityZones")(relationalDatabaseAvailabilityZones.asInstanceOf[js.Any])
     __obj.asInstanceOf[Region]
   }
+  @scala.inline
+  implicit class RegionOps[Self <: Region] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("availabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: AvailabilityZoneList): Self = this.set("availabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("availabilityZones", js.undefined)
+    @scala.inline
+    def setContinentCode(value: String): Self = this.set("continentCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinentCode: Self = this.set("continentCode", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setName(value: RegionName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRelationalDatabaseAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("relationalDatabaseAvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setRelationalDatabaseAvailabilityZones(value: AvailabilityZoneList): Self = this.set("relationalDatabaseAvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationalDatabaseAvailabilityZones: Self = this.set("relationalDatabaseAvailabilityZones", js.undefined)
+  }
+  
 }
 

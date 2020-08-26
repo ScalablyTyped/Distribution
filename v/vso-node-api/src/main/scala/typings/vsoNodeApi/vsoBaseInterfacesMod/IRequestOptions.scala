@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IRequestOptions extends js.Object {
-  var cert: js.UndefOr[ICertConfiguration] = js.undefined
-  var ignoreSslError: js.UndefOr[Boolean] = js.undefined
-  var proxy: js.UndefOr[IProxyConfiguration] = js.undefined
-  var socketTimeout: js.UndefOr[Double] = js.undefined
+  var cert: js.UndefOr[ICertConfiguration] = js.native
+  var ignoreSslError: js.UndefOr[Boolean] = js.native
+  var proxy: js.UndefOr[IProxyConfiguration] = js.native
+  var socketTimeout: js.UndefOr[Double] = js.native
 }
 
 object IRequestOptions {
   @scala.inline
-  def apply(
-    cert: ICertConfiguration = null,
-    ignoreSslError: js.UndefOr[Boolean] = js.undefined,
-    proxy: IProxyConfiguration = null,
-    socketTimeout: js.UndefOr[Double] = js.undefined
-  ): IRequestOptions = {
+  def apply(): IRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSslError)) __obj.updateDynamic("ignoreSslError")(ignoreSslError.get.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestOptions]
   }
+  @scala.inline
+  implicit class IRequestOptionsOps[Self <: IRequestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCert(value: ICertConfiguration): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setIgnoreSslError(value: Boolean): Self = this.set("ignoreSslError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreSslError: Self = this.set("ignoreSslError", js.undefined)
+    @scala.inline
+    def setProxy(value: IProxyConfiguration): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+    @scala.inline
+    def setSocketTimeout(value: Double): Self = this.set("socketTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketTimeout: Self = this.set("socketTimeout", js.undefined)
+  }
+  
 }
 

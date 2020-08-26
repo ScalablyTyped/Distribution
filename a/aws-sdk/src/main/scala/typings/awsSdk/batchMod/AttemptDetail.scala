@@ -26,18 +26,38 @@ trait AttemptDetail extends js.Object {
 
 object AttemptDetail {
   @scala.inline
-  def apply(
-    container: AttemptContainerDetail = null,
-    startedAt: js.UndefOr[Long] = js.undefined,
-    statusReason: String = null,
-    stoppedAt: js.UndefOr[Long] = js.undefined
-  ): AttemptDetail = {
+  def apply(): AttemptDetail = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt.get.asInstanceOf[js.Any])
-    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(stoppedAt)) __obj.updateDynamic("stoppedAt")(stoppedAt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttemptDetail]
   }
+  @scala.inline
+  implicit class AttemptDetailOps[Self <: AttemptDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: AttemptContainerDetail): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setStartedAt(value: Long): Self = this.set("startedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedAt: Self = this.set("startedAt", js.undefined)
+    @scala.inline
+    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    @scala.inline
+    def setStoppedAt(value: Long): Self = this.set("stoppedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppedAt: Self = this.set("stoppedAt", js.undefined)
+  }
+  
 }
 

@@ -46,28 +46,62 @@ trait StreamDescription extends js.Object {
 
 object StreamDescription {
   @scala.inline
-  def apply(
-    CreationRequestDateTime: Date = null,
-    KeySchema: KeySchema = null,
-    LastEvaluatedShardId: ShardId = null,
-    Shards: ShardDescriptionList = null,
-    StreamArn: StreamArn = null,
-    StreamLabel: String = null,
-    StreamStatus: StreamStatus = null,
-    StreamViewType: StreamViewType = null,
-    TableName: TableName = null
-  ): StreamDescription = {
+  def apply(): StreamDescription = {
     val __obj = js.Dynamic.literal()
-    if (CreationRequestDateTime != null) __obj.updateDynamic("CreationRequestDateTime")(CreationRequestDateTime.asInstanceOf[js.Any])
-    if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema.asInstanceOf[js.Any])
-    if (LastEvaluatedShardId != null) __obj.updateDynamic("LastEvaluatedShardId")(LastEvaluatedShardId.asInstanceOf[js.Any])
-    if (Shards != null) __obj.updateDynamic("Shards")(Shards.asInstanceOf[js.Any])
-    if (StreamArn != null) __obj.updateDynamic("StreamArn")(StreamArn.asInstanceOf[js.Any])
-    if (StreamLabel != null) __obj.updateDynamic("StreamLabel")(StreamLabel.asInstanceOf[js.Any])
-    if (StreamStatus != null) __obj.updateDynamic("StreamStatus")(StreamStatus.asInstanceOf[js.Any])
-    if (StreamViewType != null) __obj.updateDynamic("StreamViewType")(StreamViewType.asInstanceOf[js.Any])
-    if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamDescription]
   }
+  @scala.inline
+  implicit class StreamDescriptionOps[Self <: StreamDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationRequestDateTime(value: Date): Self = this.set("CreationRequestDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationRequestDateTime: Self = this.set("CreationRequestDateTime", js.undefined)
+    @scala.inline
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    @scala.inline
+    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeySchema: Self = this.set("KeySchema", js.undefined)
+    @scala.inline
+    def setLastEvaluatedShardId(value: ShardId): Self = this.set("LastEvaluatedShardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEvaluatedShardId: Self = this.set("LastEvaluatedShardId", js.undefined)
+    @scala.inline
+    def setShardsVarargs(value: Shard*): Self = this.set("Shards", js.Array(value :_*))
+    @scala.inline
+    def setShards(value: ShardDescriptionList): Self = this.set("Shards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShards: Self = this.set("Shards", js.undefined)
+    @scala.inline
+    def setStreamArn(value: StreamArn): Self = this.set("StreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamArn: Self = this.set("StreamArn", js.undefined)
+    @scala.inline
+    def setStreamLabel(value: String): Self = this.set("StreamLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamLabel: Self = this.set("StreamLabel", js.undefined)
+    @scala.inline
+    def setStreamStatus(value: StreamStatus): Self = this.set("StreamStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamStatus: Self = this.set("StreamStatus", js.undefined)
+    @scala.inline
+    def setStreamViewType(value: StreamViewType): Self = this.set("StreamViewType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamViewType: Self = this.set("StreamViewType", js.undefined)
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableName: Self = this.set("TableName", js.undefined)
+  }
+  
 }
 

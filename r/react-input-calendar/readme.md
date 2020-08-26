@@ -9,9 +9,9 @@ Datepicker widget react component
 | ------------------ | :-------------: |
 | Full name          | react-input-calendar |
 | Keywords           | react, datepicker, calendar, input-datepicker, input-calendar, react-input-calendar, react-calendar, react-datepicker, react-component |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 48883 |
+| # downloads        | 50193 |
 | # stars            | 1 |
 
 ## Links

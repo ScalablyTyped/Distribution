@@ -15,6 +15,7 @@ trait TimecodeInstance extends js.Object {
   var minutes: Double = js.native
   var seconds: Double = js.native
   def add(timecode: TIMECODE): TimecodeInstance = js.native
+  def add(timecode: TIMECODE, negative: js.UndefOr[scala.Nothing], rollOverMaxHours: Double): TimecodeInstance = js.native
   def add(timecode: TIMECODE, negative: Boolean): TimecodeInstance = js.native
   def add(timecode: TIMECODE, negative: Boolean, rollOverMaxHours: Double): TimecodeInstance = js.native
   def subtract(timecode: TIMECODE): TimecodeInstance = js.native

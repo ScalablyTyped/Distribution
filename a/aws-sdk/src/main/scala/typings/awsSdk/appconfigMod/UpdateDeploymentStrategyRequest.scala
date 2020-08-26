@@ -34,21 +34,44 @@ trait UpdateDeploymentStrategyRequest extends js.Object {
 
 object UpdateDeploymentStrategyRequest {
   @scala.inline
-  def apply(
-    DeploymentStrategyId: DeploymentStrategyId,
-    DeploymentDurationInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined,
-    Description: Description = null,
-    FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined,
-    GrowthFactor: js.UndefOr[GrowthFactor] = js.undefined,
-    GrowthType: GrowthType = null
-  ): UpdateDeploymentStrategyRequest = {
+  def apply(DeploymentStrategyId: DeploymentStrategyId): UpdateDeploymentStrategyRequest = {
     val __obj = js.Dynamic.literal(DeploymentStrategyId = DeploymentStrategyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeploymentDurationInMinutes)) __obj.updateDynamic("DeploymentDurationInMinutes")(DeploymentDurationInMinutes.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(FinalBakeTimeInMinutes)) __obj.updateDynamic("FinalBakeTimeInMinutes")(FinalBakeTimeInMinutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GrowthFactor)) __obj.updateDynamic("GrowthFactor")(GrowthFactor.get.asInstanceOf[js.Any])
-    if (GrowthType != null) __obj.updateDynamic("GrowthType")(GrowthType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeploymentStrategyRequest]
   }
+  @scala.inline
+  implicit class UpdateDeploymentStrategyRequestOps[Self <: UpdateDeploymentStrategyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentStrategyId(value: DeploymentStrategyId): Self = this.set("DeploymentStrategyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = this.set("DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentDurationInMinutes: Self = this.set("DeploymentDurationInMinutes", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = this.set("FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalBakeTimeInMinutes: Self = this.set("FinalBakeTimeInMinutes", js.undefined)
+    @scala.inline
+    def setGrowthFactor(value: GrowthFactor): Self = this.set("GrowthFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowthFactor: Self = this.set("GrowthFactor", js.undefined)
+    @scala.inline
+    def setGrowthType(value: GrowthType): Self = this.set("GrowthType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowthType: Self = this.set("GrowthType", js.undefined)
+  }
+  
 }
 

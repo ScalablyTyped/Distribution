@@ -34,16 +34,16 @@ class WidgetValidation protected () extends Element {
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def expression: String = js.native
-  def expression(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
   def expressionModel: Expression = js.native
-  def expressionModel(newValue: Expression): js.Any = js.native
+  def expressionModel_=(newValue: Expression): Unit = js.native
+  def expression_=(newValue: String): Unit = js.native
   def message: Text = js.native
-  def message(newValue: Text): js.Any = js.native
+  def message_=(newValue: Text): Unit = js.native
 }
 
 /* static members */

@@ -24,13 +24,5 @@ class ^ protected () extends ResponseLike {
     body: Buffer,
     url: String
   ) = this()
-  /* CompleteClass */
-  override var body: Buffer = js.native
-  /* CompleteClass */
-  override var headers: StringDictionary[js.UndefOr[String | js.Array[String]]] = js.native
-  /* CompleteClass */
-  override var statusCode: Double = js.native
-  /* CompleteClass */
-  override var url: String = js.native
 }
 

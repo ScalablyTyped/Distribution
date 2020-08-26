@@ -4,42 +4,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GuideEncodeEntry[T] extends js.Object {
-  var enter: js.UndefOr[T] = js.undefined
-  var exit: js.UndefOr[T] = js.undefined
-  var hover: js.UndefOr[T] = js.undefined
+  var enter: js.UndefOr[T] = js.native
+  var exit: js.UndefOr[T] = js.native
+  var hover: js.UndefOr[T] = js.native
   /**
     * A boolean flag indicating if the guide element should respond to input events such as mouse hover.
     */
-  var interactive: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var interactive: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
   /**
     * A mark style property to apply to the guide group mark.
     */
-  var style: js.UndefOr[String | js.Array[String]] = js.undefined
-  var update: js.UndefOr[T] = js.undefined
+  var style: js.UndefOr[String | js.Array[String]] = js.native
+  var update: js.UndefOr[T] = js.native
 }
 
 object GuideEncodeEntry {
   @scala.inline
-  def apply[T](
-    enter: T = null,
-    exit: T = null,
-    hover: T = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    style: String | js.Array[String] = null,
-    update: T = null
-  ): GuideEncodeEntry[T] = {
+  def apply[T](): GuideEncodeEntry[T] = {
     val __obj = js.Dynamic.literal()
-    if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
-    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[GuideEncodeEntry[T]]
   }
+  @scala.inline
+  implicit class GuideEncodeEntryOps[Self <: GuideEncodeEntry[_], T] (val x: Self with GuideEncodeEntry[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnter(value: T): Self = this.set("enter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnter: Self = this.set("enter", js.undefined)
+    @scala.inline
+    def setExit(value: T): Self = this.set("exit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExit: Self = this.set("exit", js.undefined)
+    @scala.inline
+    def setHover(value: T): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+    @scala.inline
+    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStyleVarargs(value: String*): Self = this.set("style", js.Array(value :_*))
+    @scala.inline
+    def setStyle(value: String | js.Array[String]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setUpdate(value: T): Self = this.set("update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+  }
+  
 }
 

@@ -30,16 +30,38 @@ trait SchemaListAppProfilesResponse extends js.Object {
 
 object SchemaListAppProfilesResponse {
   @scala.inline
-  def apply(
-    appProfiles: js.Array[SchemaAppProfile] = null,
-    failedLocations: js.Array[String] = null,
-    nextPageToken: String = null
-  ): SchemaListAppProfilesResponse = {
+  def apply(): SchemaListAppProfilesResponse = {
     val __obj = js.Dynamic.literal()
-    if (appProfiles != null) __obj.updateDynamic("appProfiles")(appProfiles.asInstanceOf[js.Any])
-    if (failedLocations != null) __obj.updateDynamic("failedLocations")(failedLocations.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListAppProfilesResponse]
   }
+  @scala.inline
+  implicit class SchemaListAppProfilesResponseOps[Self <: SchemaListAppProfilesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppProfilesVarargs(value: SchemaAppProfile*): Self = this.set("appProfiles", js.Array(value :_*))
+    @scala.inline
+    def setAppProfiles(value: js.Array[SchemaAppProfile]): Self = this.set("appProfiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppProfiles: Self = this.set("appProfiles", js.undefined)
+    @scala.inline
+    def setFailedLocationsVarargs(value: String*): Self = this.set("failedLocations", js.Array(value :_*))
+    @scala.inline
+    def setFailedLocations(value: js.Array[String]): Self = this.set("failedLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedLocations: Self = this.set("failedLocations", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

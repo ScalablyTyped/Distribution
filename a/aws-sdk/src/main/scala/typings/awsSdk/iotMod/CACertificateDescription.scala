@@ -54,32 +54,66 @@ trait CACertificateDescription extends js.Object {
 
 object CACertificateDescription {
   @scala.inline
-  def apply(
-    autoRegistrationStatus: AutoRegistrationStatus = null,
-    certificateArn: CertificateArn = null,
-    certificateId: CertificateId = null,
-    certificatePem: CertificatePem = null,
-    creationDate: DateType = null,
-    customerVersion: js.UndefOr[CustomerVersion] = js.undefined,
-    generationId: GenerationId = null,
-    lastModifiedDate: DateType = null,
-    ownedBy: AwsAccountId = null,
-    status: CACertificateStatus = null,
-    validity: CertificateValidity = null
-  ): CACertificateDescription = {
+  def apply(): CACertificateDescription = {
     val __obj = js.Dynamic.literal()
-    if (autoRegistrationStatus != null) __obj.updateDynamic("autoRegistrationStatus")(autoRegistrationStatus.asInstanceOf[js.Any])
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (certificateId != null) __obj.updateDynamic("certificateId")(certificateId.asInstanceOf[js.Any])
-    if (certificatePem != null) __obj.updateDynamic("certificatePem")(certificatePem.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(customerVersion)) __obj.updateDynamic("customerVersion")(customerVersion.get.asInstanceOf[js.Any])
-    if (generationId != null) __obj.updateDynamic("generationId")(generationId.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (ownedBy != null) __obj.updateDynamic("ownedBy")(ownedBy.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (validity != null) __obj.updateDynamic("validity")(validity.asInstanceOf[js.Any])
     __obj.asInstanceOf[CACertificateDescription]
   }
+  @scala.inline
+  implicit class CACertificateDescriptionOps[Self <: CACertificateDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRegistrationStatus(value: AutoRegistrationStatus): Self = this.set("autoRegistrationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRegistrationStatus: Self = this.set("autoRegistrationStatus", js.undefined)
+    @scala.inline
+    def setCertificateArn(value: CertificateArn): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    @scala.inline
+    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateId: Self = this.set("certificateId", js.undefined)
+    @scala.inline
+    def setCertificatePem(value: CertificatePem): Self = this.set("certificatePem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatePem: Self = this.set("certificatePem", js.undefined)
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setCustomerVersion(value: CustomerVersion): Self = this.set("customerVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerVersion: Self = this.set("customerVersion", js.undefined)
+    @scala.inline
+    def setGenerationId(value: GenerationId): Self = this.set("generationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenerationId: Self = this.set("generationId", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateType): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setOwnedBy(value: AwsAccountId): Self = this.set("ownedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnedBy: Self = this.set("ownedBy", js.undefined)
+    @scala.inline
+    def setStatus(value: CACertificateStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setValidity(value: CertificateValidity): Self = this.set("validity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidity: Self = this.set("validity", js.undefined)
+  }
+  
 }
 

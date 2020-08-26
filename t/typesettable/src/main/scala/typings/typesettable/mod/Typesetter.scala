@@ -21,12 +21,15 @@ class Typesetter protected ()
 @js.native
 object Typesetter extends js.Object {
   def canvas(ctx: CanvasRenderingContext2D): typings.typesettable.typesetterMod.Typesetter = js.native
+  def canvas(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle): typings.typesettable.typesetterMod.Typesetter = js.native
   def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double): typings.typesettable.typesetterMod.Typesetter = js.native
   def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle): typings.typesettable.typesetterMod.Typesetter = js.native
   def html(element: HTMLElement): typings.typesettable.typesetterMod.Typesetter = js.native
+  def html(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean): typings.typesettable.typesetterMod.Typesetter = js.native
   def html(element: HTMLElement, className: String): typings.typesettable.typesetterMod.Typesetter = js.native
   def html(element: HTMLElement, className: String, addTitle: Boolean): typings.typesettable.typesetterMod.Typesetter = js.native
   def svg(element: SVGElement): typings.typesettable.typesetterMod.Typesetter = js.native
+  def svg(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean): typings.typesettable.typesetterMod.Typesetter = js.native
   def svg(element: SVGElement, className: String): typings.typesettable.typesetterMod.Typesetter = js.native
   def svg(element: SVGElement, className: String, addTitleElement: Boolean): typings.typesettable.typesetterMod.Typesetter = js.native
 }

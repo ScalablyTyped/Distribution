@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.accessibility.XAccessibleSelection
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleList
   extends XAccessibleExtendedComponent
      with XAccessibleContext

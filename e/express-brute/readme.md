@@ -11,7 +11,7 @@ A brute-force protection middleware for express routes that rate limits incoming
 | Keywords           | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | # releases         | 1 |
 | # dependents       | 45 |
-| # downloads        | 813283 |
+| # downloads        | 815019 |
 | # stars            | 44 |
 
 ## Links

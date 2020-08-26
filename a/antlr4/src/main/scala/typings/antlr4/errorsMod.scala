@@ -32,10 +32,6 @@ object errorsMod extends js.Object {
   class RecognitionException () extends Error {
     var ctx: ParserRuleContext = js.native
     var input: InputStream = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var offendingState: `-1` = js.native
     var offendingToken: Token = js.native
     var recognizer: Recognizer = js.native

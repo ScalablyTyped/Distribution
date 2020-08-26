@@ -1,8 +1,5 @@
 package typings.winrt.global.Windows.Media
 
-import typings.winrt.Windows.Foundation.Collections.IIterator
-import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
-import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Media.MediaProperties.AudioEncodingQuality
 import typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality
@@ -17,110 +14,31 @@ import scala.scalajs.js.annotation._
 object MediaProperties extends js.Object {
   @js.native
   class AudioEncodingProperties ()
-    extends typings.winrt.Windows.Media.MediaProperties.AudioEncodingProperties {
-    /* CompleteClass */
-    override var bitrate: Double = js.native
-    /* CompleteClass */
-    override var bitsPerSample: Double = js.native
-    /* CompleteClass */
-    override var channelCount: Double = js.native
-    /* CompleteClass */
-    override var properties: typings.winrt.Windows.Media.MediaProperties.MediaPropertySet = js.native
-    /* CompleteClass */
-    override var sampleRate: Double = js.native
-    /* CompleteClass */
-    override var subtype: String = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-  }
+    extends typings.winrt.Windows.Media.MediaProperties.AudioEncodingProperties
   
   @js.native
   class ContainerEncodingProperties ()
-    extends typings.winrt.Windows.Media.MediaProperties.ContainerEncodingProperties {
-    /* CompleteClass */
-    override var properties: typings.winrt.Windows.Media.MediaProperties.MediaPropertySet = js.native
-    /* CompleteClass */
-    override var subtype: String = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-  }
+    extends typings.winrt.Windows.Media.MediaProperties.ContainerEncodingProperties
   
   @js.native
   class ImageEncodingProperties ()
-    extends typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties {
-    /* CompleteClass */
-    override var height: Double = js.native
-    /* CompleteClass */
-    override var properties: typings.winrt.Windows.Media.MediaProperties.MediaPropertySet = js.native
-    /* CompleteClass */
-    override var subtype: String = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /* CompleteClass */
-    override var width: Double = js.native
-  }
+    extends typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties
   
   @js.native
   class MediaEncodingProfile ()
-    extends typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile {
-    /* CompleteClass */
-    override var audio: typings.winrt.Windows.Media.MediaProperties.AudioEncodingProperties = js.native
-    /* CompleteClass */
-    override var container: typings.winrt.Windows.Media.MediaProperties.ContainerEncodingProperties = js.native
-    /* CompleteClass */
-    override var video: typings.winrt.Windows.Media.MediaProperties.VideoEncodingProperties = js.native
-  }
+    extends typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile
   
   @js.native
   class MediaPropertySet ()
-    extends typings.winrt.Windows.Media.MediaProperties.MediaPropertySet {
-    /* CompleteClass */
-    override var size: Double = js.native
-    /* CompleteClass */
-    override def clear(): Unit = js.native
-    /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
-    /* CompleteClass */
-    override def getView(): IMapView[String, js.Any] = js.native
-    /* CompleteClass */
-    override def hasKey(key: String): Boolean = js.native
-    /* CompleteClass */
-    override def insert(key: String, value: js.Any): Boolean = js.native
-    /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
-    /* CompleteClass */
-    override def remove(key: String): Unit = js.native
-  }
+    extends typings.winrt.Windows.Media.MediaProperties.MediaPropertySet
   
   @js.native
   class MediaRatio ()
-    extends typings.winrt.Windows.Media.MediaProperties.MediaRatio {
-    /* CompleteClass */
-    override var denominator: Double = js.native
-    /* CompleteClass */
-    override var numerator: Double = js.native
-  }
+    extends typings.winrt.Windows.Media.MediaProperties.MediaRatio
   
   @js.native
   class VideoEncodingProperties ()
-    extends typings.winrt.Windows.Media.MediaProperties.VideoEncodingProperties {
-    /* CompleteClass */
-    override var bitrate: Double = js.native
-    /* CompleteClass */
-    override var frameRate: typings.winrt.Windows.Media.MediaProperties.MediaRatio = js.native
-    /* CompleteClass */
-    override var height: Double = js.native
-    /* CompleteClass */
-    override var pixelAspectRatio: typings.winrt.Windows.Media.MediaProperties.MediaRatio = js.native
-    /* CompleteClass */
-    override var properties: typings.winrt.Windows.Media.MediaProperties.MediaPropertySet = js.native
-    /* CompleteClass */
-    override var subtype: String = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /* CompleteClass */
-    override var width: Double = js.native
-  }
+    extends typings.winrt.Windows.Media.MediaProperties.VideoEncodingProperties
   
   @js.native
   object AudioEncodingQuality extends js.Object {

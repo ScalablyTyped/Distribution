@@ -70,40 +70,82 @@ trait User extends js.Object {
 
 object User {
   @scala.inline
-  def apply(
-    CreatedTimestamp: TimestampType = null,
-    EmailAddress: EmailAddressType = null,
-    GivenName: UserAttributeValueType = null,
-    Id: IdType = null,
-    Locale: LocaleType = null,
-    ModifiedTimestamp: TimestampType = null,
-    OrganizationId: IdType = null,
-    RecycleBinFolderId: ResourceIdType = null,
-    RootFolderId: ResourceIdType = null,
-    Status: UserStatusType = null,
-    Storage: UserStorageMetadata = null,
-    Surname: UserAttributeValueType = null,
-    TimeZoneId: TimeZoneIdType = null,
-    Type: UserType = null,
-    Username: UsernameType = null
-  ): User = {
+  def apply(): User = {
     val __obj = js.Dynamic.literal()
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (EmailAddress != null) __obj.updateDynamic("EmailAddress")(EmailAddress.asInstanceOf[js.Any])
-    if (GivenName != null) __obj.updateDynamic("GivenName")(GivenName.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
-    if (ModifiedTimestamp != null) __obj.updateDynamic("ModifiedTimestamp")(ModifiedTimestamp.asInstanceOf[js.Any])
-    if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId.asInstanceOf[js.Any])
-    if (RecycleBinFolderId != null) __obj.updateDynamic("RecycleBinFolderId")(RecycleBinFolderId.asInstanceOf[js.Any])
-    if (RootFolderId != null) __obj.updateDynamic("RootFolderId")(RootFolderId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Storage != null) __obj.updateDynamic("Storage")(Storage.asInstanceOf[js.Any])
-    if (Surname != null) __obj.updateDynamic("Surname")(Surname.asInstanceOf[js.Any])
-    if (TimeZoneId != null) __obj.updateDynamic("TimeZoneId")(TimeZoneId.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
+  @scala.inline
+  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedTimestamp(value: TimestampType): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setEmailAddress(value: EmailAddressType): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddress: Self = this.set("EmailAddress", js.undefined)
+    @scala.inline
+    def setGivenName(value: UserAttributeValueType): Self = this.set("GivenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGivenName: Self = this.set("GivenName", js.undefined)
+    @scala.inline
+    def setId(value: IdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLocale(value: LocaleType): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("Locale", js.undefined)
+    @scala.inline
+    def setModifiedTimestamp(value: TimestampType): Self = this.set("ModifiedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedTimestamp: Self = this.set("ModifiedTimestamp", js.undefined)
+    @scala.inline
+    def setOrganizationId(value: IdType): Self = this.set("OrganizationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationId: Self = this.set("OrganizationId", js.undefined)
+    @scala.inline
+    def setRecycleBinFolderId(value: ResourceIdType): Self = this.set("RecycleBinFolderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecycleBinFolderId: Self = this.set("RecycleBinFolderId", js.undefined)
+    @scala.inline
+    def setRootFolderId(value: ResourceIdType): Self = this.set("RootFolderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootFolderId: Self = this.set("RootFolderId", js.undefined)
+    @scala.inline
+    def setStatus(value: UserStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStorage(value: UserStorageMetadata): Self = this.set("Storage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorage: Self = this.set("Storage", js.undefined)
+    @scala.inline
+    def setSurname(value: UserAttributeValueType): Self = this.set("Surname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSurname: Self = this.set("Surname", js.undefined)
+    @scala.inline
+    def setTimeZoneId(value: TimeZoneIdType): Self = this.set("TimeZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZoneId: Self = this.set("TimeZoneId", js.undefined)
+    @scala.inline
+    def setType(value: UserType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

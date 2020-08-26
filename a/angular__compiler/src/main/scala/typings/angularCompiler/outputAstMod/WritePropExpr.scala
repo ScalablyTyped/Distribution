@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation._
 class WritePropExpr protected () extends Expression {
   def this(receiver: Expression, name: String, value: Expression) = this()
   def this(receiver: Expression, name: String, value: Expression, `type`: Type) = this()
+  def this(
+    receiver: Expression,
+    name: String,
+    value: Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
+  ) = this()
   def this(receiver: Expression, name: String, value: Expression, `type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(receiver: Expression, name: String, value: Expression, `type`: Type, sourceSpan: ParseSourceSpan) = this()
   var name: String = js.native

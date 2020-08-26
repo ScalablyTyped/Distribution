@@ -5,30 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IFlowFile extends js.Object {
-  var averageSpeed: Double
-  var chunks: js.Array[_]
-  var currentSpeed: Double
-  var error: Boolean
-  var file: File
-  var flowObj: IFlow
-  var name: String
-  var paused: Boolean
-  var relativePath: String
-  var size: Double
-  var uniqueIdentifier: String
-  def bootstrap(): Unit
-  def cancel(): Unit
-  def getExtension(): String
-  def getType(): String
-  def isComplete(): Boolean
-  def isUploading(): Boolean
-  def pause(): Unit
-  def progress(relative: Boolean): Double
-  def resume(): Unit
-  def retry(): Unit
-  def sizeUploaded(): Double
-  def timeRemaining(): Double
+  var averageSpeed: Double = js.native
+  var chunks: js.Array[_] = js.native
+  var currentSpeed: Double = js.native
+  var error: Boolean = js.native
+  var file: File = js.native
+  var flowObj: IFlow = js.native
+  var name: String = js.native
+  var paused: Boolean = js.native
+  var relativePath: String = js.native
+  var size: Double = js.native
+  var uniqueIdentifier: String = js.native
+  def bootstrap(): Unit = js.native
+  def cancel(): Unit = js.native
+  def getExtension(): String = js.native
+  def getType(): String = js.native
+  def isComplete(): Boolean = js.native
+  def isUploading(): Boolean = js.native
+  def pause(): Unit = js.native
+  def progress(relative: Boolean): Double = js.native
+  def resume(): Unit = js.native
+  def retry(): Unit = js.native
+  def sizeUploaded(): Double = js.native
+  def timeRemaining(): Double = js.native
 }
 
 object IFlowFile {
@@ -61,5 +62,66 @@ object IFlowFile {
     val __obj = js.Dynamic.literal(averageSpeed = averageSpeed.asInstanceOf[js.Any], bootstrap = js.Any.fromFunction0(bootstrap), cancel = js.Any.fromFunction0(cancel), chunks = chunks.asInstanceOf[js.Any], currentSpeed = currentSpeed.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], flowObj = flowObj.asInstanceOf[js.Any], getExtension = js.Any.fromFunction0(getExtension), getType = js.Any.fromFunction0(getType), isComplete = js.Any.fromFunction0(isComplete), isUploading = js.Any.fromFunction0(isUploading), name = name.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), paused = paused.asInstanceOf[js.Any], progress = js.Any.fromFunction1(progress), relativePath = relativePath.asInstanceOf[js.Any], resume = js.Any.fromFunction0(resume), retry = js.Any.fromFunction0(retry), size = size.asInstanceOf[js.Any], sizeUploaded = js.Any.fromFunction0(sizeUploaded), timeRemaining = js.Any.fromFunction0(timeRemaining), uniqueIdentifier = uniqueIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFlowFile]
   }
+  @scala.inline
+  implicit class IFlowFileOps[Self <: IFlowFile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAverageSpeed(value: Double): Self = this.set("averageSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBootstrap(value: () => Unit): Self = this.set("bootstrap", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    @scala.inline
+    def setChunksVarargs(value: js.Any*): Self = this.set("chunks", js.Array(value :_*))
+    @scala.inline
+    def setChunks(value: js.Array[_]): Self = this.set("chunks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentSpeed(value: Double): Self = this.set("currentSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFile(value: File): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFlowObj(value: IFlow): Self = this.set("flowObj", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetExtension(value: () => String): Self = this.set("getExtension", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetType(value: () => String): Self = this.set("getType", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsComplete(value: () => Boolean): Self = this.set("isComplete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsUploading(value: () => Boolean): Self = this.set("isUploading", js.Any.fromFunction0(value))
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    @scala.inline
+    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProgress(value: Boolean => Double): Self = this.set("progress", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRelativePath(value: String): Self = this.set("relativePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResume(value: () => Unit): Self = this.set("resume", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRetry(value: () => Unit): Self = this.set("retry", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSizeUploaded(value: () => Double): Self = this.set("sizeUploaded", js.Any.fromFunction0(value))
+    @scala.inline
+    def setTimeRemaining(value: () => Double): Self = this.set("timeRemaining", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUniqueIdentifier(value: String): Self = this.set("uniqueIdentifier", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -28,6 +28,7 @@ class ResourceUrlchannels protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaUrlChannel] = js.native
   def delete(callback: BodyResponseCallback[SchemaUrlChannel]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlChannel] = js.native
   def delete(params: ParamsResourceUrlchannelsDelete): GaxiosPromise[SchemaUrlChannel] = js.native
   def delete(params: ParamsResourceUrlchannelsDelete, callback: BodyResponseCallback[SchemaUrlChannel]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceUrlchannels protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaUrlChannel] = js.native
   def insert(callback: BodyResponseCallback[SchemaUrlChannel]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlChannel] = js.native
   def insert(params: ParamsResourceUrlchannelsInsert): GaxiosPromise[SchemaUrlChannel] = js.native
   def insert(params: ParamsResourceUrlchannelsInsert, callback: BodyResponseCallback[SchemaUrlChannel]): Unit = js.native
   def insert(
@@ -85,6 +87,7 @@ class ResourceUrlchannels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaUrlChannels] = js.native
   def list(callback: BodyResponseCallback[SchemaUrlChannels]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlChannels] = js.native
   def list(params: ParamsResourceUrlchannelsList): GaxiosPromise[SchemaUrlChannels] = js.native
   def list(params: ParamsResourceUrlchannelsList, callback: BodyResponseCallback[SchemaUrlChannels]): Unit = js.native
   def list(

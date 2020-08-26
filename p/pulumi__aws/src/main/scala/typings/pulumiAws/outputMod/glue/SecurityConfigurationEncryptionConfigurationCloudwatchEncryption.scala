@@ -18,11 +18,30 @@ trait SecurityConfigurationEncryptionConfigurationCloudwatchEncryption extends j
 
 object SecurityConfigurationEncryptionConfigurationCloudwatchEncryption {
   @scala.inline
-  def apply(cloudwatchEncryptionMode: String = null, kmsKeyArn: String = null): SecurityConfigurationEncryptionConfigurationCloudwatchEncryption = {
+  def apply(): SecurityConfigurationEncryptionConfigurationCloudwatchEncryption = {
     val __obj = js.Dynamic.literal()
-    if (cloudwatchEncryptionMode != null) __obj.updateDynamic("cloudwatchEncryptionMode")(cloudwatchEncryptionMode.asInstanceOf[js.Any])
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityConfigurationEncryptionConfigurationCloudwatchEncryption]
   }
+  @scala.inline
+  implicit class SecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOps[Self <: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatchEncryptionMode(value: String): Self = this.set("cloudwatchEncryptionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchEncryptionMode: Self = this.set("cloudwatchEncryptionMode", js.undefined)
+    @scala.inline
+    def setKmsKeyArn(value: String): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+  }
+  
 }
 

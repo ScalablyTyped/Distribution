@@ -4,33 +4,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LabeledStatement
   extends BaseNode
      with Statement {
-  var body: Statement
-  var label: Identifier
+  var body: Statement = js.native
+  var label: Identifier = js.native
   @JSName("type")
-  var type_LabeledStatement: typings.estree.estreeStrings.LabeledStatement
+  var type_LabeledStatement: typings.estree.estreeStrings.LabeledStatement = js.native
 }
 
 object LabeledStatement {
   @scala.inline
-  def apply(
-    body: Statement,
-    label: Identifier,
-    `type`: typings.estree.estreeStrings.LabeledStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): LabeledStatement = {
+  def apply(body: Statement, label: Identifier, `type`: typings.estree.estreeStrings.LabeledStatement): LabeledStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabeledStatement]
   }
+  @scala.inline
+  implicit class LabeledStatementOps[Self <: LabeledStatement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: Statement): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabel(value: Identifier): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: typings.estree.estreeStrings.LabeledStatement): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

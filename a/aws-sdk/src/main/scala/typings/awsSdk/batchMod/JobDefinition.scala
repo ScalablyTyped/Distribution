@@ -50,27 +50,55 @@ trait JobDefinition extends js.Object {
 
 object JobDefinition {
   @scala.inline
-  def apply(
-    jobDefinitionArn: String,
-    jobDefinitionName: String,
-    revision: Integer,
-    `type`: String,
-    containerProperties: ContainerProperties = null,
-    nodeProperties: NodeProperties = null,
-    parameters: ParametersMap = null,
-    retryStrategy: RetryStrategy = null,
-    status: String = null,
-    timeout: JobTimeout = null
-  ): JobDefinition = {
+  def apply(jobDefinitionArn: String, jobDefinitionName: String, revision: Integer, `type`: String): JobDefinition = {
     val __obj = js.Dynamic.literal(jobDefinitionArn = jobDefinitionArn.asInstanceOf[js.Any], jobDefinitionName = jobDefinitionName.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (containerProperties != null) __obj.updateDynamic("containerProperties")(containerProperties.asInstanceOf[js.Any])
-    if (nodeProperties != null) __obj.updateDynamic("nodeProperties")(nodeProperties.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(retryStrategy.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobDefinition]
   }
+  @scala.inline
+  implicit class JobDefinitionOps[Self <: JobDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobDefinitionArn(value: String): Self = this.set("jobDefinitionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobDefinitionName(value: String): Self = this.set("jobDefinitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevision(value: Integer): Self = this.set("revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainerProperties(value: ContainerProperties): Self = this.set("containerProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerProperties: Self = this.set("containerProperties", js.undefined)
+    @scala.inline
+    def setNodeProperties(value: NodeProperties): Self = this.set("nodeProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeProperties: Self = this.set("nodeProperties", js.undefined)
+    @scala.inline
+    def setParameters(value: ParametersMap): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setRetryStrategy(value: RetryStrategy): Self = this.set("retryStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryStrategy: Self = this.set("retryStrategy", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTimeout(value: JobTimeout): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

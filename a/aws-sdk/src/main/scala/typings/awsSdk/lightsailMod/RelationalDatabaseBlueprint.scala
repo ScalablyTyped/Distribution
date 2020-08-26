@@ -34,22 +34,46 @@ trait RelationalDatabaseBlueprint extends js.Object {
 
 object RelationalDatabaseBlueprint {
   @scala.inline
-  def apply(
-    blueprintId: String = null,
-    engine: RelationalDatabaseEngine = null,
-    engineDescription: String = null,
-    engineVersion: String = null,
-    engineVersionDescription: String = null,
-    isEngineDefault: js.UndefOr[Boolean] = js.undefined
-  ): RelationalDatabaseBlueprint = {
+  def apply(): RelationalDatabaseBlueprint = {
     val __obj = js.Dynamic.literal()
-    if (blueprintId != null) __obj.updateDynamic("blueprintId")(blueprintId.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (engineDescription != null) __obj.updateDynamic("engineDescription")(engineDescription.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (engineVersionDescription != null) __obj.updateDynamic("engineVersionDescription")(engineVersionDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEngineDefault)) __obj.updateDynamic("isEngineDefault")(isEngineDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationalDatabaseBlueprint]
   }
+  @scala.inline
+  implicit class RelationalDatabaseBlueprintOps[Self <: RelationalDatabaseBlueprint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlueprintId(value: String): Self = this.set("blueprintId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueprintId: Self = this.set("blueprintId", js.undefined)
+    @scala.inline
+    def setEngine(value: RelationalDatabaseEngine): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setEngineDescription(value: String): Self = this.set("engineDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineDescription: Self = this.set("engineDescription", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setEngineVersionDescription(value: String): Self = this.set("engineVersionDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersionDescription: Self = this.set("engineVersionDescription", js.undefined)
+    @scala.inline
+    def setIsEngineDefault(value: Boolean): Self = this.set("isEngineDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsEngineDefault: Self = this.set("isEngineDefault", js.undefined)
+  }
+  
 }
 

@@ -44,22 +44,48 @@ trait SchemaPartitionReadRequest extends js.Object {
 
 object SchemaPartitionReadRequest {
   @scala.inline
-  def apply(
-    columns: js.Array[String] = null,
-    index: String = null,
-    keySet: SchemaKeySet = null,
-    partitionOptions: SchemaPartitionOptions = null,
-    table: String = null,
-    transaction: SchemaTransactionSelector = null
-  ): SchemaPartitionReadRequest = {
+  def apply(): SchemaPartitionReadRequest = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (keySet != null) __obj.updateDynamic("keySet")(keySet.asInstanceOf[js.Any])
-    if (partitionOptions != null) __obj.updateDynamic("partitionOptions")(partitionOptions.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPartitionReadRequest]
   }
+  @scala.inline
+  implicit class SchemaPartitionReadRequestOps[Self <: SchemaPartitionReadRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnsVarargs(value: String*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[String]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setKeySet(value: SchemaKeySet): Self = this.set("keySet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeySet: Self = this.set("keySet", js.undefined)
+    @scala.inline
+    def setPartitionOptions(value: SchemaPartitionOptions): Self = this.set("partitionOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionOptions: Self = this.set("partitionOptions", js.undefined)
+    @scala.inline
+    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTransaction(value: SchemaTransactionSelector): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransaction: Self = this.set("transaction", js.undefined)
+  }
+  
 }
 

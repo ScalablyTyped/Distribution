@@ -66,38 +66,78 @@ trait ComprehendMedicalAsyncJobProperties extends js.Object {
 
 object ComprehendMedicalAsyncJobProperties {
   @scala.inline
-  def apply(
-    DataAccessRoleArn: IamRoleArn = null,
-    EndTime: Timestamp = null,
-    ExpirationTime: Timestamp = null,
-    InputDataConfig: InputDataConfig = null,
-    JobId: JobId = null,
-    JobName: JobName = null,
-    JobStatus: JobStatus = null,
-    KMSKey: KMSKey = null,
-    LanguageCode: LanguageCode = null,
-    ManifestFilePath: ManifestFilePath = null,
-    Message: AnyLengthString = null,
-    ModelVersion: ModelVersion = null,
-    OutputDataConfig: OutputDataConfig = null,
-    SubmitTime: Timestamp = null
-  ): ComprehendMedicalAsyncJobProperties = {
+  def apply(): ComprehendMedicalAsyncJobProperties = {
     val __obj = js.Dynamic.literal()
-    if (DataAccessRoleArn != null) __obj.updateDynamic("DataAccessRoleArn")(DataAccessRoleArn.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (ExpirationTime != null) __obj.updateDynamic("ExpirationTime")(ExpirationTime.asInstanceOf[js.Any])
-    if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
-    if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
-    if (JobStatus != null) __obj.updateDynamic("JobStatus")(JobStatus.asInstanceOf[js.Any])
-    if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (ManifestFilePath != null) __obj.updateDynamic("ManifestFilePath")(ManifestFilePath.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (ModelVersion != null) __obj.updateDynamic("ModelVersion")(ModelVersion.asInstanceOf[js.Any])
-    if (OutputDataConfig != null) __obj.updateDynamic("OutputDataConfig")(OutputDataConfig.asInstanceOf[js.Any])
-    if (SubmitTime != null) __obj.updateDynamic("SubmitTime")(SubmitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComprehendMedicalAsyncJobProperties]
   }
+  @scala.inline
+  implicit class ComprehendMedicalAsyncJobPropertiesOps[Self <: ComprehendMedicalAsyncJobProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataAccessRoleArn(value: IamRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataAccessRoleArn: Self = this.set("DataAccessRoleArn", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setExpirationTime(value: Timestamp): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTime: Self = this.set("ExpirationTime", js.undefined)
+    @scala.inline
+    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDataConfig: Self = this.set("InputDataConfig", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("JobId", js.undefined)
+    @scala.inline
+    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("JobName", js.undefined)
+    @scala.inline
+    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    @scala.inline
+    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setManifestFilePath(value: ManifestFilePath): Self = this.set("ManifestFilePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestFilePath: Self = this.set("ManifestFilePath", js.undefined)
+    @scala.inline
+    def setMessage(value: AnyLengthString): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setModelVersion(value: ModelVersion): Self = this.set("ModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelVersion: Self = this.set("ModelVersion", js.undefined)
+    @scala.inline
+    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDataConfig: Self = this.set("OutputDataConfig", js.undefined)
+    @scala.inline
+    def setSubmitTime(value: Timestamp): Self = this.set("SubmitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitTime: Self = this.set("SubmitTime", js.undefined)
+  }
+  
 }
 

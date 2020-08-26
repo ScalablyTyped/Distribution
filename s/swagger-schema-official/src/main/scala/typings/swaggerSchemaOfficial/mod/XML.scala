@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XML extends js.Object {
-  var attribute: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var namespace: js.UndefOr[String] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
-  var wrapped: js.UndefOr[Boolean] = js.undefined
+  var attribute: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.native
+  var wrapped: js.UndefOr[Boolean] = js.native
 }
 
 object XML {
   @scala.inline
-  def apply(
-    attribute: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    namespace: String = null,
-    prefix: String = null,
-    wrapped: js.UndefOr[Boolean] = js.undefined
-  ): XML = {
+  def apply(): XML = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attribute)) __obj.updateDynamic("attribute")(attribute.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapped)) __obj.updateDynamic("wrapped")(wrapped.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[XML]
   }
+  @scala.inline
+  implicit class XMLOps[Self <: XML] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttribute(value: Boolean): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setWrapped(value: Boolean): Self = this.set("wrapped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapped: Self = this.set("wrapped", js.undefined)
+  }
+  
 }
 

@@ -11,7 +11,7 @@ Request timeout middleware for Connect/Express
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 110 |
-| # downloads        | 8805764 |
+| # downloads        | 8623773 |
 | # stars            | 12 |
 
 ## Links

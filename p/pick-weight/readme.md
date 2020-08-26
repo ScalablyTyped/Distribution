@@ -12,7 +12,7 @@ Returns a single item from an array with relative weighting of odds.
 | Keywords           | pick, item, weight, odds, random, randomly, randomize, chance, test, dice, mock |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 786 |
+| # downloads        | 860 |
 | # stars            | 0 |
 
 ## Links

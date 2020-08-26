@@ -16,8 +16,35 @@ class EntityQueryExpression protected () extends js.Object {
   def this(
     criteria: MetadataFilterExpression,
     properties: MetadataPropertiesExpression,
+    attributeQuery: js.UndefOr[scala.Nothing],
+    relationshipQuery: RelationshipQueryExpression
+  ) = this()
+  def this(
+    criteria: MetadataFilterExpression,
+    properties: MetadataPropertiesExpression,
     attributeQuery: AttributeQueryExpression,
     relationshipQuery: RelationshipQueryExpression
+  ) = this()
+  def this(
+    criteria: MetadataFilterExpression,
+    properties: MetadataPropertiesExpression,
+    attributeQuery: js.UndefOr[scala.Nothing],
+    relationshipQuery: js.UndefOr[scala.Nothing],
+    labelQuery: LabelQueryExpression
+  ) = this()
+  def this(
+    criteria: MetadataFilterExpression,
+    properties: MetadataPropertiesExpression,
+    attributeQuery: js.UndefOr[scala.Nothing],
+    relationshipQuery: RelationshipQueryExpression,
+    labelQuery: LabelQueryExpression
+  ) = this()
+  def this(
+    criteria: MetadataFilterExpression,
+    properties: MetadataPropertiesExpression,
+    attributeQuery: AttributeQueryExpression,
+    relationshipQuery: js.UndefOr[scala.Nothing],
+    labelQuery: LabelQueryExpression
   ) = this()
   def this(
     criteria: MetadataFilterExpression,

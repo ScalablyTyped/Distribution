@@ -41,6 +41,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends js.O
     */
   def create(): GaxiosPromise[SchemaReferenceImage] = js.native
   def create(callback: BodyResponseCallback[SchemaReferenceImage]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReferenceImage] = js.native
   def create(params: ParamsResourceProjectsLocationsProductsReferenceimagesCreate): GaxiosPromise[SchemaReferenceImage] = js.native
   def create(
     params: ParamsResourceProjectsLocationsProductsReferenceimagesCreate,
@@ -75,6 +76,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends js.O
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsProductsReferenceimagesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsProductsReferenceimagesDelete,
@@ -106,6 +108,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends js.O
     */
   def get(): GaxiosPromise[SchemaReferenceImage] = js.native
   def get(callback: BodyResponseCallback[SchemaReferenceImage]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReferenceImage] = js.native
   def get(params: ParamsResourceProjectsLocationsProductsReferenceimagesGet): GaxiosPromise[SchemaReferenceImage] = js.native
   def get(
     params: ParamsResourceProjectsLocationsProductsReferenceimagesGet,
@@ -140,6 +143,7 @@ class ResourceProjectsLocationsProductsReferenceimages protected () extends js.O
     */
   def list(): GaxiosPromise[SchemaListReferenceImagesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListReferenceImagesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListReferenceImagesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsProductsReferenceimagesList): GaxiosPromise[SchemaListReferenceImagesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsProductsReferenceimagesList,

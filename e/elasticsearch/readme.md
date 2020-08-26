@@ -10,9 +10,9 @@ The official low-level Elasticsearch client for Node.js and the browser.
 | ------------------ | :-------------: |
 | Full name          | elasticsearch |
 | Keywords           | elasticsearch, mapping, REST |
-| # releases         | 21 |
-| # dependents       | 835 |
-| # downloads        | 13727316 |
+| # releases         | 20 |
+| # dependents       | 838 |
+| # downloads        | 13831082 |
 | # stars            | 123 |
 
 ## Links

@@ -21,8 +21,6 @@ object databaseMod extends js.Object {
     def this(repo_ : Repo) = this()
     @JSName("INTERNAL")
     var INTERNAL_Database: DatabaseInternals = js.native
-    /* CompleteClass */
-    override var app: FirebaseApp = js.native
     /**
       * @param {string} apiName
       */

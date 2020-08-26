@@ -92,6 +92,14 @@ object hooksMod extends js.Object {
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
     variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
+    options: js.UndefOr[scala.Nothing],
+    environmentProviderOptions: TEnvironmentProviderOptions
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
+  @JSName("preloadQuery")
+  def preloadQuery_variables[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
+    environment: Environment,
+    preloadableRequest: PreloadableConcreteRequest[TQuery],
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: Null,
     environmentProviderOptions: TEnvironmentProviderOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native

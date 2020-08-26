@@ -20,7 +20,7 @@ trait RouteTableArgs extends js.Object {
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The VPC ID.
     */
@@ -29,17 +29,40 @@ trait RouteTableArgs extends js.Object {
 
 object RouteTableArgs {
   @scala.inline
-  def apply(
-    vpcId: Input[String],
-    propagatingVgws: Input[js.Array[Input[String]]] = null,
-    routes: Input[js.Array[Input[RouteTableRoute]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): RouteTableArgs = {
+  def apply(vpcId: Input[String]): RouteTableArgs = {
     val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
-    if (propagatingVgws != null) __obj.updateDynamic("propagatingVgws")(propagatingVgws.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteTableArgs]
   }
+  @scala.inline
+  implicit class RouteTableArgsOps[Self <: RouteTableArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPropagatingVgwsVarargs(value: Input[String]*): Self = this.set("propagatingVgws", js.Array(value :_*))
+    @scala.inline
+    def setPropagatingVgws(value: Input[js.Array[Input[String]]]): Self = this.set("propagatingVgws", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropagatingVgws: Self = this.set("propagatingVgws", js.undefined)
+    @scala.inline
+    def setRoutesVarargs(value: Input[RouteTableRoute]*): Self = this.set("routes", js.Array(value :_*))
+    @scala.inline
+    def setRoutes(value: Input[js.Array[Input[RouteTableRoute]]]): Self = this.set("routes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutes: Self = this.set("routes", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -34,6 +34,7 @@ trait Array[T] extends js.Object {
     * length+end.
     */
   def fill(value: T): Array[T] = js.native
+  def fill(value: T, start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
   def fill(value: T, start: Double): Array[T] = js.native
   def fill(value: T, start: Double, end: Double): Array[T] = js.native
   /**

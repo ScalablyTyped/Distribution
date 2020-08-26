@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 trait TTransportConstructor
   extends Instantiable0[TTransport]
      with Instantiable1[/* buffer */ Buffer, TTransport]
-     with Instantiable2[/* buffer */ Buffer, /* callback */ TTransportCallback, TTransport]
+     with Instantiable2[js.UndefOr[/* buffer */ Buffer], /* callback */ TTransportCallback, TTransport]
 

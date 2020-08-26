@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object uniqueTypeNamesMod extends js.Object {
   def UniqueTypeNames(context: SDLValidationContext): ASTVisitor = js.native
-  def duplicateTypeNameMessage(typeName: String): String = js.native
-  def existedTypeNameMessage(typeName: String): String = js.native
 }
 

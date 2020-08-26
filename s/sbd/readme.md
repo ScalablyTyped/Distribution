@@ -12,7 +12,7 @@ Split text into sentences with Sentence Boundary Detection (SBD).
 | Keywords           | sentence, detection, boundary |
 | # releases         | 5 |
 | # dependents       | 16 |
-| # downloads        | 49072 |
+| # downloads        | 50457 |
 | # stars            | 6 |
 
 ## Links

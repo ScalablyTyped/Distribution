@@ -6,82 +6,135 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectionOptions extends js.Object {
-  var authMechanism: js.UndefOr[String] = js.undefined
-  var clientProperties: js.UndefOr[ApplicationName] = js.undefined
-  var connectionTimeout: js.UndefOr[Double] = js.undefined
-  var defaultExchangeName: js.UndefOr[String] = js.undefined
-  var heartbeat: js.UndefOr[Double] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var login: js.UndefOr[String] = js.undefined
-  var noDelay: js.UndefOr[Boolean] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
+  var authMechanism: js.UndefOr[String] = js.native
+  var clientProperties: js.UndefOr[ApplicationName] = js.native
+  var connectionTimeout: js.UndefOr[Double] = js.native
+  var defaultExchangeName: js.UndefOr[String] = js.native
+  var heartbeat: js.UndefOr[Double] = js.native
+  var host: js.UndefOr[String] = js.native
+  var login: js.UndefOr[String] = js.native
+  var noDelay: js.UndefOr[Boolean] = js.native
+  var password: js.UndefOr[String] = js.native
   /** Default: 'node-{NODE_VERSION}' */
-  var platform: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
+  var platform: js.UndefOr[String] = js.native
+  var port: js.UndefOr[Double] = js.native
   /** Default: 'node-amqp' */
-  var product: js.UndefOr[String] = js.undefined
+  var product: js.UndefOr[String] = js.native
   /** Default: true */
-  var reconnect: js.UndefOr[Boolean] = js.undefined
+  var reconnect: js.UndefOr[Boolean] = js.native
   /** Default: 'linear' */
-  var reconnectBackoffStrategy: js.UndefOr[String] = js.undefined
+  var reconnectBackoffStrategy: js.UndefOr[String] = js.native
   /** Default: 1000 */
-  var reconnectBackoffTime: js.UndefOr[Double] = js.undefined
+  var reconnectBackoffTime: js.UndefOr[Double] = js.native
   /** Default: 120000 */
-  var reconnectExponentialLimit: js.UndefOr[Double] = js.undefined
-  var ssl: js.UndefOr[CaFile] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var reconnectExponentialLimit: js.UndefOr[Double] = js.native
+  var ssl: js.UndefOr[CaFile] = js.native
+  var url: js.UndefOr[String] = js.native
   /** Default: node-amqp/package.json version */
-  var version: js.UndefOr[String] = js.undefined
-  var vhost: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
+  var vhost: js.UndefOr[String] = js.native
 }
 
 object ConnectionOptions {
   @scala.inline
-  def apply(
-    authMechanism: String = null,
-    clientProperties: ApplicationName = null,
-    connectionTimeout: js.UndefOr[Double] = js.undefined,
-    defaultExchangeName: String = null,
-    heartbeat: js.UndefOr[Double] = js.undefined,
-    host: String = null,
-    login: String = null,
-    noDelay: js.UndefOr[Boolean] = js.undefined,
-    password: String = null,
-    platform: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    product: String = null,
-    reconnect: js.UndefOr[Boolean] = js.undefined,
-    reconnectBackoffStrategy: String = null,
-    reconnectBackoffTime: js.UndefOr[Double] = js.undefined,
-    reconnectExponentialLimit: js.UndefOr[Double] = js.undefined,
-    ssl: CaFile = null,
-    url: String = null,
-    version: String = null,
-    vhost: String = null
-  ): ConnectionOptions = {
+  def apply(): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (authMechanism != null) __obj.updateDynamic("authMechanism")(authMechanism.asInstanceOf[js.Any])
-    if (clientProperties != null) __obj.updateDynamic("clientProperties")(clientProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
-    if (defaultExchangeName != null) __obj.updateDynamic("defaultExchangeName")(defaultExchangeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(heartbeat)) __obj.updateDynamic("heartbeat")(heartbeat.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (login != null) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDelay)) __obj.updateDynamic("noDelay")(noDelay.get.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect.get.asInstanceOf[js.Any])
-    if (reconnectBackoffStrategy != null) __obj.updateDynamic("reconnectBackoffStrategy")(reconnectBackoffStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectBackoffTime)) __obj.updateDynamic("reconnectBackoffTime")(reconnectBackoffTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectExponentialLimit)) __obj.updateDynamic("reconnectExponentialLimit")(reconnectExponentialLimit.get.asInstanceOf[js.Any])
-    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
+  @scala.inline
+  implicit class ConnectionOptionsOps[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthMechanism(value: String): Self = this.set("authMechanism", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthMechanism: Self = this.set("authMechanism", js.undefined)
+    @scala.inline
+    def setClientProperties(value: ApplicationName): Self = this.set("clientProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientProperties: Self = this.set("clientProperties", js.undefined)
+    @scala.inline
+    def setConnectionTimeout(value: Double): Self = this.set("connectionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionTimeout: Self = this.set("connectionTimeout", js.undefined)
+    @scala.inline
+    def setDefaultExchangeName(value: String): Self = this.set("defaultExchangeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultExchangeName: Self = this.set("defaultExchangeName", js.undefined)
+    @scala.inline
+    def setHeartbeat(value: Double): Self = this.set("heartbeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeartbeat: Self = this.set("heartbeat", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogin: Self = this.set("login", js.undefined)
+    @scala.inline
+    def setNoDelay(value: Boolean): Self = this.set("noDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoDelay: Self = this.set("noDelay", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("product", js.undefined)
+    @scala.inline
+    def setReconnect(value: Boolean): Self = this.set("reconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnect: Self = this.set("reconnect", js.undefined)
+    @scala.inline
+    def setReconnectBackoffStrategy(value: String): Self = this.set("reconnectBackoffStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectBackoffStrategy: Self = this.set("reconnectBackoffStrategy", js.undefined)
+    @scala.inline
+    def setReconnectBackoffTime(value: Double): Self = this.set("reconnectBackoffTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectBackoffTime: Self = this.set("reconnectBackoffTime", js.undefined)
+    @scala.inline
+    def setReconnectExponentialLimit(value: Double): Self = this.set("reconnectExponentialLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectExponentialLimit: Self = this.set("reconnectExponentialLimit", js.undefined)
+    @scala.inline
+    def setSsl(value: CaFile): Self = this.set("ssl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsl: Self = this.set("ssl", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVhost(value: String): Self = this.set("vhost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVhost: Self = this.set("vhost", js.undefined)
+  }
+  
 }
 

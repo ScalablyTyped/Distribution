@@ -80,22 +80,46 @@ trait SchemaQueue extends js.Object {
 
 object SchemaQueue {
   @scala.inline
-  def apply(
-    appEngineRoutingOverride: SchemaAppEngineRouting = null,
-    name: String = null,
-    purgeTime: String = null,
-    rateLimits: SchemaRateLimits = null,
-    retryConfig: SchemaRetryConfig = null,
-    state: String = null
-  ): SchemaQueue = {
+  def apply(): SchemaQueue = {
     val __obj = js.Dynamic.literal()
-    if (appEngineRoutingOverride != null) __obj.updateDynamic("appEngineRoutingOverride")(appEngineRoutingOverride.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (purgeTime != null) __obj.updateDynamic("purgeTime")(purgeTime.asInstanceOf[js.Any])
-    if (rateLimits != null) __obj.updateDynamic("rateLimits")(rateLimits.asInstanceOf[js.Any])
-    if (retryConfig != null) __obj.updateDynamic("retryConfig")(retryConfig.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueue]
   }
+  @scala.inline
+  implicit class SchemaQueueOps[Self <: SchemaQueue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppEngineRoutingOverride(value: SchemaAppEngineRouting): Self = this.set("appEngineRoutingOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppEngineRoutingOverride: Self = this.set("appEngineRoutingOverride", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPurgeTime(value: String): Self = this.set("purgeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurgeTime: Self = this.set("purgeTime", js.undefined)
+    @scala.inline
+    def setRateLimits(value: SchemaRateLimits): Self = this.set("rateLimits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateLimits: Self = this.set("rateLimits", js.undefined)
+    @scala.inline
+    def setRetryConfig(value: SchemaRetryConfig): Self = this.set("retryConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryConfig: Self = this.set("retryConfig", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

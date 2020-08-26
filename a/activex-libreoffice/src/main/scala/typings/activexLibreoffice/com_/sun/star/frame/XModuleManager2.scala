@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * This interface provides a merged single interface for the {@link ModuleManager} service to implement.
   * @since LibreOffice 4.0
   */
+@js.native
 trait XModuleManager2
   extends XNameReplace
      with XModuleManager

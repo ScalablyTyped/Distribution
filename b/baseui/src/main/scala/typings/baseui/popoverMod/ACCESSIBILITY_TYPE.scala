@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ACCESSIBILITY_TYPE extends js.Object {
-  var menu: typings.baseui.baseuiStrings.menu
-  var none: typings.baseui.baseuiStrings.none
-  var tooltip: typings.baseui.baseuiStrings.tooltip
+  var menu: typings.baseui.baseuiStrings.menu = js.native
+  var none: typings.baseui.baseuiStrings.none = js.native
+  var tooltip: typings.baseui.baseuiStrings.tooltip = js.native
 }
 
 @JSImport("baseui/popover", "ACCESSIBILITY_TYPE")

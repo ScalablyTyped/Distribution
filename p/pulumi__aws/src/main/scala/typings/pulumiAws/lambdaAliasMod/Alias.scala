@@ -39,7 +39,7 @@ class Alias protected () extends CustomResource {
     */
   val functionVersion: Output_[String] = js.native
   /**
-    * The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+    * The ARN to be used for invoking Lambda Function from API Gateway - to be used in `aws.apigateway.Integration`'s `uri`
     */
   val invokeArn: Output_[String] = js.native
   /**
@@ -63,8 +63,10 @@ object Alias extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Alias = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Alias = js.native
   def get(name: String, id: Input[ID], state: AliasState): Alias = js.native
   def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): Alias = js.native
   /**

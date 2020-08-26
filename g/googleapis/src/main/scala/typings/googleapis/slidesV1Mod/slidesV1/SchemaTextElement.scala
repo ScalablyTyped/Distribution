@@ -44,20 +44,42 @@ trait SchemaTextElement extends js.Object {
 
 object SchemaTextElement {
   @scala.inline
-  def apply(
-    autoText: SchemaAutoText = null,
-    endIndex: js.UndefOr[Double] = js.undefined,
-    paragraphMarker: SchemaParagraphMarker = null,
-    startIndex: js.UndefOr[Double] = js.undefined,
-    textRun: SchemaTextRun = null
-  ): SchemaTextElement = {
+  def apply(): SchemaTextElement = {
     val __obj = js.Dynamic.literal()
-    if (autoText != null) __obj.updateDynamic("autoText")(autoText.asInstanceOf[js.Any])
-    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
-    if (paragraphMarker != null) __obj.updateDynamic("paragraphMarker")(paragraphMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
-    if (textRun != null) __obj.updateDynamic("textRun")(textRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTextElement]
   }
+  @scala.inline
+  implicit class SchemaTextElementOps[Self <: SchemaTextElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoText(value: SchemaAutoText): Self = this.set("autoText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoText: Self = this.set("autoText", js.undefined)
+    @scala.inline
+    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    @scala.inline
+    def setParagraphMarker(value: SchemaParagraphMarker): Self = this.set("paragraphMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraphMarker: Self = this.set("paragraphMarker", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    @scala.inline
+    def setTextRun(value: SchemaTextRun): Self = this.set("textRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextRun: Self = this.set("textRun", js.undefined)
+  }
+  
 }
 

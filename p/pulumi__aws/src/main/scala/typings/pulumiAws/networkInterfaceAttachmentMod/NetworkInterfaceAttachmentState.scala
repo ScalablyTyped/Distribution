@@ -31,20 +31,42 @@ trait NetworkInterfaceAttachmentState extends js.Object {
 
 object NetworkInterfaceAttachmentState {
   @scala.inline
-  def apply(
-    attachmentId: Input[String] = null,
-    deviceIndex: Input[Double] = null,
-    instanceId: Input[String] = null,
-    networkInterfaceId: Input[String] = null,
-    status: Input[String] = null
-  ): NetworkInterfaceAttachmentState = {
+  def apply(): NetworkInterfaceAttachmentState = {
     val __obj = js.Dynamic.literal()
-    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
-    if (deviceIndex != null) __obj.updateDynamic("deviceIndex")(deviceIndex.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfaceAttachmentState]
   }
+  @scala.inline
+  implicit class NetworkInterfaceAttachmentStateOps[Self <: NetworkInterfaceAttachmentState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentId(value: Input[String]): Self = this.set("attachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentId: Self = this.set("attachmentId", js.undefined)
+    @scala.inline
+    def setDeviceIndex(value: Input[Double]): Self = this.set("deviceIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceIndex: Self = this.set("deviceIndex", js.undefined)
+    @scala.inline
+    def setInstanceId(value: Input[String]): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: Input[String]): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

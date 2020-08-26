@@ -26,5 +26,24 @@ object AliasTarget {
     val __obj = js.Dynamic.literal(DNSName = DNSName.asInstanceOf[js.Any], EvaluateTargetHealth = EvaluateTargetHealth.asInstanceOf[js.Any], HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasTarget]
   }
+  @scala.inline
+  implicit class AliasTargetOps[Self <: AliasTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDNSName(value: DNSName): Self = this.set("DNSName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvaluateTargetHealth(value: AliasHealthEnabled): Self = this.set("EvaluateTargetHealth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

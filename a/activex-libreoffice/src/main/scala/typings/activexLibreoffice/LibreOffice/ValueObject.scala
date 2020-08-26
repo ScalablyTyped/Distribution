@@ -43,33 +43,169 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ValueObject extends js.Object {
   /** Returns the value contained in the object, when the Value Object was used as an `inout` or `out` parameter */
-  def Get(): js.Any
+  def Get(): js.Any = js.native
   /** Initialize the object as an `inout` parameter */
-  def InitInOutParam(
-    `type`: `[][]any` | `[][]boolean` | `[][]byte` | `[][]char` | `[][]double` | `[][]float` | `[][]long` | `[][]object` | `[][]short` | `[][]string` | `[][]unsigned` | (`[][]unsigned long`) | (`[][]unsigned short`) | `[]any` | `[]boolean` | `[]byte` | `[]char` | `[]double` | `[]float` | `[]long` | `[]object` | `[]short` | `[]string` | `[]unsigned` | (`[]unsigned long`) | (`[]unsigned short`) | any | boolean | byte | char | double | float | long | `object` | short | string | unsigned | (`unsigned long`) | (`unsigned short`),
-    value: js.Any
-  ): Unit
+  @JSName("InitInOutParam")
+  def InitInOutParam_any(`type`: `[][]any`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_any(`type`: `[]any`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_any(`type`: any, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_boolean(`type`: `[][]boolean`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_boolean(`type`: `[]boolean`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_boolean(`type`: boolean, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_byte(`type`: `[][]byte`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_byte(`type`: `[]byte`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_byte(`type`: byte, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_char(`type`: `[][]char`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_char(`type`: `[]char`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_char(`type`: char, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_double(`type`: `[][]double`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_double(`type`: `[]double`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_double(`type`: double, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_float(`type`: `[][]float`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_float(`type`: `[]float`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_float(`type`: float, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_long(`type`: `[][]long`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_long(`type`: `[]long`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_long(`type`: long, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_object(`type`: `[][]object`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_object(`type`: `[]object`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_object(`type`: `object`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_short(`type`: `[][]short`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_short(`type`: `[]short`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_short(`type`: short, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_string(`type`: `[][]string`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_string(`type`: `[]string`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_string(`type`: string, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_unsigned(`type`: `[][]unsigned`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_unsigned(`type`: `[]unsigned`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_unsigned(`type`: unsigned, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_unsignedlong(`type`: `[][]unsigned long`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_unsignedlong(`type`: `[]unsigned long`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_unsignedlong(`type`: `unsigned long`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_unsignedshort(`type`: `[][]unsigned short`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_unsignedshort(`type`: `[]unsigned short`, value: js.Any): Unit = js.native
+  @JSName("InitInOutParam")
+  def InitInOutParam_unsignedshort(`type`: `unsigned short`, value: js.Any): Unit = js.native
   /** Initialize the object as an `out` parameter */
-  def InitOutParam(): Unit
+  def InitOutParam(): Unit = js.native
   /** Assigns a type and a value */
-  def Set(
-    `type`: `[][]any` | `[][]boolean` | `[][]byte` | `[][]char` | `[][]double` | `[][]float` | `[][]long` | `[][]object` | `[][]short` | `[][]string` | `[][]unsigned` | (`[][]unsigned long`) | (`[][]unsigned short`) | `[]any` | `[]boolean` | `[]byte` | `[]char` | `[]double` | `[]float` | `[]long` | `[]object` | `[]short` | `[]string` | `[]unsigned` | (`[]unsigned long`) | (`[]unsigned short`) | any | boolean | byte | char | double | float | long | `object` | short | string | unsigned | (`unsigned long`) | (`unsigned short`),
-    value: js.Any
-  ): Unit
-}
-
-object ValueObject {
-  @scala.inline
-  def apply(
-    Get: () => js.Any,
-    InitInOutParam: (`[][]any` | `[][]boolean` | `[][]byte` | `[][]char` | `[][]double` | `[][]float` | `[][]long` | `[][]object` | `[][]short` | `[][]string` | `[][]unsigned` | (`[][]unsigned long`) | (`[][]unsigned short`) | `[]any` | `[]boolean` | `[]byte` | `[]char` | `[]double` | `[]float` | `[]long` | `[]object` | `[]short` | `[]string` | `[]unsigned` | (`[]unsigned long`) | (`[]unsigned short`) | any | boolean | byte | char | double | float | long | `object` | short | string | unsigned | (`unsigned long`) | (`unsigned short`), js.Any) => Unit,
-    InitOutParam: () => Unit,
-    Set: (`[][]any` | `[][]boolean` | `[][]byte` | `[][]char` | `[][]double` | `[][]float` | `[][]long` | `[][]object` | `[][]short` | `[][]string` | `[][]unsigned` | (`[][]unsigned long`) | (`[][]unsigned short`) | `[]any` | `[]boolean` | `[]byte` | `[]char` | `[]double` | `[]float` | `[]long` | `[]object` | `[]short` | `[]string` | `[]unsigned` | (`[]unsigned long`) | (`[]unsigned short`) | any | boolean | byte | char | double | float | long | `object` | short | string | unsigned | (`unsigned long`) | (`unsigned short`), js.Any) => Unit
-  ): ValueObject = {
-    val __obj = js.Dynamic.literal(Get = js.Any.fromFunction0(Get), InitInOutParam = js.Any.fromFunction2(InitInOutParam), InitOutParam = js.Any.fromFunction0(InitOutParam), Set = js.Any.fromFunction2(Set))
-    __obj.asInstanceOf[ValueObject]
-  }
+  @JSName("Set")
+  def Set_any(`type`: `[][]any`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_any(`type`: `[]any`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_any(`type`: any, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_boolean(`type`: `[][]boolean`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_boolean(`type`: `[]boolean`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_boolean(`type`: boolean, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_byte(`type`: `[][]byte`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_byte(`type`: `[]byte`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_byte(`type`: byte, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_char(`type`: `[][]char`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_char(`type`: `[]char`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_char(`type`: char, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_double(`type`: `[][]double`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_double(`type`: `[]double`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_double(`type`: double, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_float(`type`: `[][]float`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_float(`type`: `[]float`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_float(`type`: float, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_long(`type`: `[][]long`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_long(`type`: `[]long`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_long(`type`: long, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_object(`type`: `[][]object`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_object(`type`: `[]object`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_object(`type`: `object`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_short(`type`: `[][]short`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_short(`type`: `[]short`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_short(`type`: short, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_string(`type`: `[][]string`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_string(`type`: `[]string`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_string(`type`: string, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_unsigned(`type`: `[][]unsigned`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_unsigned(`type`: `[]unsigned`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_unsigned(`type`: unsigned, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_unsignedlong(`type`: `[][]unsigned long`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_unsignedlong(`type`: `[]unsigned long`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_unsignedlong(`type`: `unsigned long`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_unsignedshort(`type`: `[][]unsigned short`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_unsignedshort(`type`: `[]unsigned short`, value: js.Any): Unit = js.native
+  @JSName("Set")
+  def Set_unsignedshort(`type`: `unsigned short`, value: js.Any): Unit = js.native
 }
 

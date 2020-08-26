@@ -14,10 +14,28 @@ trait GetBucketCorsOutput extends js.Object {
 
 object GetBucketCorsOutput {
   @scala.inline
-  def apply(CORSRules: CORSRules = null): GetBucketCorsOutput = {
+  def apply(): GetBucketCorsOutput = {
     val __obj = js.Dynamic.literal()
-    if (CORSRules != null) __obj.updateDynamic("CORSRules")(CORSRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketCorsOutput]
   }
+  @scala.inline
+  implicit class GetBucketCorsOutputOps[Self <: GetBucketCorsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCORSRulesVarargs(value: CORSRule*): Self = this.set("CORSRules", js.Array(value :_*))
+    @scala.inline
+    def setCORSRules(value: CORSRules): Self = this.set("CORSRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCORSRules: Self = this.set("CORSRules", js.undefined)
+  }
+  
 }
 

@@ -38,24 +38,50 @@ trait QueryExecutionStatistics extends js.Object {
 
 object QueryExecutionStatistics {
   @scala.inline
-  def apply(
-    DataManifestLocation: String = null,
-    DataScannedInBytes: js.UndefOr[Long] = js.undefined,
-    EngineExecutionTimeInMillis: js.UndefOr[Long] = js.undefined,
-    QueryPlanningTimeInMillis: js.UndefOr[Long] = js.undefined,
-    QueryQueueTimeInMillis: js.UndefOr[Long] = js.undefined,
-    ServiceProcessingTimeInMillis: js.UndefOr[Long] = js.undefined,
-    TotalExecutionTimeInMillis: js.UndefOr[Long] = js.undefined
-  ): QueryExecutionStatistics = {
+  def apply(): QueryExecutionStatistics = {
     val __obj = js.Dynamic.literal()
-    if (DataManifestLocation != null) __obj.updateDynamic("DataManifestLocation")(DataManifestLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataScannedInBytes)) __obj.updateDynamic("DataScannedInBytes")(DataScannedInBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EngineExecutionTimeInMillis)) __obj.updateDynamic("EngineExecutionTimeInMillis")(EngineExecutionTimeInMillis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(QueryPlanningTimeInMillis)) __obj.updateDynamic("QueryPlanningTimeInMillis")(QueryPlanningTimeInMillis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(QueryQueueTimeInMillis)) __obj.updateDynamic("QueryQueueTimeInMillis")(QueryQueueTimeInMillis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ServiceProcessingTimeInMillis)) __obj.updateDynamic("ServiceProcessingTimeInMillis")(ServiceProcessingTimeInMillis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalExecutionTimeInMillis)) __obj.updateDynamic("TotalExecutionTimeInMillis")(TotalExecutionTimeInMillis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecutionStatistics]
   }
+  @scala.inline
+  implicit class QueryExecutionStatisticsOps[Self <: QueryExecutionStatistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataManifestLocation(value: String): Self = this.set("DataManifestLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataManifestLocation: Self = this.set("DataManifestLocation", js.undefined)
+    @scala.inline
+    def setDataScannedInBytes(value: Long): Self = this.set("DataScannedInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataScannedInBytes: Self = this.set("DataScannedInBytes", js.undefined)
+    @scala.inline
+    def setEngineExecutionTimeInMillis(value: Long): Self = this.set("EngineExecutionTimeInMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineExecutionTimeInMillis: Self = this.set("EngineExecutionTimeInMillis", js.undefined)
+    @scala.inline
+    def setQueryPlanningTimeInMillis(value: Long): Self = this.set("QueryPlanningTimeInMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryPlanningTimeInMillis: Self = this.set("QueryPlanningTimeInMillis", js.undefined)
+    @scala.inline
+    def setQueryQueueTimeInMillis(value: Long): Self = this.set("QueryQueueTimeInMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryQueueTimeInMillis: Self = this.set("QueryQueueTimeInMillis", js.undefined)
+    @scala.inline
+    def setServiceProcessingTimeInMillis(value: Long): Self = this.set("ServiceProcessingTimeInMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceProcessingTimeInMillis: Self = this.set("ServiceProcessingTimeInMillis", js.undefined)
+    @scala.inline
+    def setTotalExecutionTimeInMillis(value: Long): Self = this.set("TotalExecutionTimeInMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalExecutionTimeInMillis: Self = this.set("TotalExecutionTimeInMillis", js.undefined)
+  }
+  
 }
 

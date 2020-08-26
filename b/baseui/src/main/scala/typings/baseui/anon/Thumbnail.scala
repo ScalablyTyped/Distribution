@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Thumbnail extends js.Object {
-  val thumbnail: js.UndefOr[String] = js.undefined
+  val thumbnail: js.UndefOr[String] = js.native
 }
 
 object Thumbnail {
   @scala.inline
-  def apply(thumbnail: String = null): Thumbnail = {
+  def apply(): Thumbnail = {
     val __obj = js.Dynamic.literal()
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Thumbnail]
   }
+  @scala.inline
+  implicit class ThumbnailOps[Self <: Thumbnail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThumbnail(value: String): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+  }
+  
 }
 

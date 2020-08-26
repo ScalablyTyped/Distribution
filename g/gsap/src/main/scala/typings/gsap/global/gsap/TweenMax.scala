@@ -19,7 +19,34 @@ class TweenMax protected ()
 object TweenMax extends js.Object {
   /** Provides a simple way to call a () => void after a set amount of time (or frames). */
   def delayedCall(delay: Double, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.gsap.gsap.TweenMax = js.native
+  def delayedCall(
+    delay: Double,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    useFrames: Boolean
+  ): typings.gsap.gsap.TweenMax = js.native
+  def delayedCall(
+    delay: Double,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Object
+  ): typings.gsap.gsap.TweenMax = js.native
+  def delayedCall(
+    delay: Double,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Object,
+    useFrames: Boolean
+  ): typings.gsap.gsap.TweenMax = js.native
   def delayedCall(delay: Double, callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_]): typings.gsap.gsap.TweenMax = js.native
+  def delayedCall(
+    delay: Double,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.Array[_],
+    scope: js.UndefOr[scala.Nothing],
+    useFrames: Boolean
+  ): typings.gsap.gsap.TweenMax = js.native
   def delayedCall(
     delay: Double,
     callback: js.Function1[/* repeated */ js.Any, Unit],
@@ -58,8 +85,39 @@ object TweenMax extends js.Object {
   def isTweening(target: js.Object): Boolean = js.native
   /** Kills all tweens and/or delayedCalls/callbacks, and/or timelines, optionally forcing them to completion first. */
   def killAll(): Unit = js.native
+  def killAll(
+    complete: js.UndefOr[scala.Nothing],
+    tweens: js.UndefOr[scala.Nothing],
+    delayedCalls: js.UndefOr[scala.Nothing],
+    timelines: Boolean
+  ): Unit = js.native
+  def killAll(complete: js.UndefOr[scala.Nothing], tweens: js.UndefOr[scala.Nothing], delayedCalls: Boolean): Unit = js.native
+  def killAll(
+    complete: js.UndefOr[scala.Nothing],
+    tweens: js.UndefOr[scala.Nothing],
+    delayedCalls: Boolean,
+    timelines: Boolean
+  ): Unit = js.native
+  def killAll(complete: js.UndefOr[scala.Nothing], tweens: Boolean): Unit = js.native
+  def killAll(
+    complete: js.UndefOr[scala.Nothing],
+    tweens: Boolean,
+    delayedCalls: js.UndefOr[scala.Nothing],
+    timelines: Boolean
+  ): Unit = js.native
+  def killAll(complete: js.UndefOr[scala.Nothing], tweens: Boolean, delayedCalls: Boolean): Unit = js.native
+  def killAll(complete: js.UndefOr[scala.Nothing], tweens: Boolean, delayedCalls: Boolean, timelines: Boolean): Unit = js.native
   def killAll(complete: Boolean): Unit = js.native
+  def killAll(
+    complete: Boolean,
+    tweens: js.UndefOr[scala.Nothing],
+    delayedCalls: js.UndefOr[scala.Nothing],
+    timelines: Boolean
+  ): Unit = js.native
+  def killAll(complete: Boolean, tweens: js.UndefOr[scala.Nothing], delayedCalls: Boolean): Unit = js.native
+  def killAll(complete: Boolean, tweens: js.UndefOr[scala.Nothing], delayedCalls: Boolean, timelines: Boolean): Unit = js.native
   def killAll(complete: Boolean, tweens: Boolean): Unit = js.native
+  def killAll(complete: Boolean, tweens: Boolean, delayedCalls: js.UndefOr[scala.Nothing], timelines: Boolean): Unit = js.native
   def killAll(complete: Boolean, tweens: Boolean, delayedCalls: Boolean): Unit = js.native
   def killAll(complete: Boolean, tweens: Boolean, delayedCalls: Boolean, timelines: Boolean): Unit = js.native
   /** Kills all tweens of the children of a particular DOM element, optionally forcing them to completion first. */
@@ -72,12 +130,20 @@ object TweenMax extends js.Object {
   def killTweensOf(target: js.Object, vars: js.Object): Unit = js.native
   /** Pauses all tweens and/or delayedCalls/callbacks and/or timelines. */
   def pauseAll(): Unit = js.native
+  def pauseAll(tweens: js.UndefOr[scala.Nothing], delayedCalls: js.UndefOr[scala.Nothing], timelines: Boolean): Unit = js.native
+  def pauseAll(tweens: js.UndefOr[scala.Nothing], delayedCalls: Boolean): Unit = js.native
+  def pauseAll(tweens: js.UndefOr[scala.Nothing], delayedCalls: Boolean, timelines: Boolean): Unit = js.native
   def pauseAll(tweens: Boolean): Unit = js.native
+  def pauseAll(tweens: Boolean, delayedCalls: js.UndefOr[scala.Nothing], timelines: Boolean): Unit = js.native
   def pauseAll(tweens: Boolean, delayedCalls: Boolean): Unit = js.native
   def pauseAll(tweens: Boolean, delayedCalls: Boolean, timelines: Boolean): Unit = js.native
   /** Resumes all paused tweens and/or delayedCalls/callbacks and/or timelines. */
   def resumeAll(): Unit = js.native
+  def resumeAll(tweens: js.UndefOr[scala.Nothing], delayedCalls: js.UndefOr[scala.Nothing], timelines: Boolean): Unit = js.native
+  def resumeAll(tweens: js.UndefOr[scala.Nothing], delayedCalls: Boolean): Unit = js.native
+  def resumeAll(tweens: js.UndefOr[scala.Nothing], delayedCalls: Boolean, timelines: Boolean): Unit = js.native
   def resumeAll(tweens: Boolean): Unit = js.native
+  def resumeAll(tweens: Boolean, delayedCalls: js.UndefOr[scala.Nothing], timelines: Boolean): Unit = js.native
   def resumeAll(tweens: Boolean, delayedCalls: Boolean): Unit = js.native
   def resumeAll(tweens: Boolean, delayedCalls: Boolean, timelines: Boolean): Unit = js.native
   /** Immediately sets properties of the target accordingly - essentially a zero-duration to() tween with a more intuitive name. */
@@ -92,7 +158,42 @@ object TweenMax extends js.Object {
     duration: Double,
     vars: js.Object,
     stagger: Double,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): js.Array[_] = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): js.Array[_] = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): js.Array[_] = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
     onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): js.Array[_] = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
   ): js.Array[_] = js.native
   def staggerFrom(
     targets: js.Any,
@@ -122,7 +223,46 @@ object TweenMax extends js.Object {
     fromVars: js.Object,
     toVars: js.Object,
     stagger: Double,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): js.Array[_] = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): js.Array[_] = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): js.Array[_] = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
     onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): js.Array[_] = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
   ): js.Array[_] = js.native
   def staggerFromTo(
     targets: js.Any,
@@ -153,7 +293,42 @@ object TweenMax extends js.Object {
     duration: Double,
     vars: js.Object,
     stagger: Double,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): js.Array[_] = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): js.Array[_] = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): js.Array[_] = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
     onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): js.Array[_] = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
   ): js.Array[_] = js.native
   def staggerTo(
     targets: js.Any,

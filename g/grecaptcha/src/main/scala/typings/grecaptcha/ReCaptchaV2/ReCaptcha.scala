@@ -42,9 +42,11 @@ trait ReCaptcha extends js.Object {
     * @return the ID of the newly created widget.
     */
   def render(container: String): Double = js.native
+  def render(container: String, parameters: js.UndefOr[scala.Nothing], inherit: Boolean): Double = js.native
   def render(container: String, parameters: Parameters): Double = js.native
   def render(container: String, parameters: Parameters, inherit: Boolean): Double = js.native
   def render(container: HTMLElement): Double = js.native
+  def render(container: HTMLElement, parameters: js.UndefOr[scala.Nothing], inherit: Boolean): Double = js.native
   def render(container: HTMLElement, parameters: Parameters): Double = js.native
   def render(container: HTMLElement, parameters: Parameters, inherit: Boolean): Double = js.native
   /**

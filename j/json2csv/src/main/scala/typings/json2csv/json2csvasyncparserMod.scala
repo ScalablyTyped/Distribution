@@ -28,6 +28,7 @@ object json2csvasyncparserMod extends js.Object {
   @js.native
   class default[T] () extends JSON2CSVAsyncParser[T] {
     def this(opts: Options[T]) = this()
+    def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
   

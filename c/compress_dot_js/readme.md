@@ -12,7 +12,7 @@ A client side JavaScript image compression library
 | Keywords           | javascript, image, compression, base64 |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 52317 |
+| # downloads        | 52256 |
 | # stars            | 1 |
 
 ## Links

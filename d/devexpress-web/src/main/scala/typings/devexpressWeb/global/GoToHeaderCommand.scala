@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("GoToHeaderCommand")
 @js.native
 class GoToHeaderCommand ()
-  extends typings.devexpressWeb.GoToHeaderCommand {
-  /**
-    * Executes the GoToHeaderCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.GoToHeaderCommand
 

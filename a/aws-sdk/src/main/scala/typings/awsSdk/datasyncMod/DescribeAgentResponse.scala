@@ -15,7 +15,7 @@ trait DescribeAgentResponse extends js.Object {
     */
   var CreationTime: js.UndefOr[Time] = js.native
   /**
-    * The type of endpoint that your agent is connected to. If the endpoint is a VPC endpoint, the agent is not accessible over the public Internet. 
+    * The type of endpoint that your agent is connected to. If the endpoint is a VPC endpoint, the agent is not accessible over the public internet. 
     */
   var EndpointType: js.UndefOr[typings.awsSdk.datasyncMod.EndpointType] = js.native
   /**
@@ -38,24 +38,50 @@ trait DescribeAgentResponse extends js.Object {
 
 object DescribeAgentResponse {
   @scala.inline
-  def apply(
-    AgentArn: AgentArn = null,
-    CreationTime: Time = null,
-    EndpointType: EndpointType = null,
-    LastConnectionTime: Time = null,
-    Name: TagValue = null,
-    PrivateLinkConfig: PrivateLinkConfig = null,
-    Status: AgentStatus = null
-  ): DescribeAgentResponse = {
+  def apply(): DescribeAgentResponse = {
     val __obj = js.Dynamic.literal()
-    if (AgentArn != null) __obj.updateDynamic("AgentArn")(AgentArn.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
-    if (LastConnectionTime != null) __obj.updateDynamic("LastConnectionTime")(LastConnectionTime.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PrivateLinkConfig != null) __obj.updateDynamic("PrivateLinkConfig")(PrivateLinkConfig.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAgentResponse]
   }
+  @scala.inline
+  implicit class DescribeAgentResponseOps[Self <: DescribeAgentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentArn(value: AgentArn): Self = this.set("AgentArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentArn: Self = this.set("AgentArn", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setEndpointType(value: EndpointType): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    @scala.inline
+    def setLastConnectionTime(value: Time): Self = this.set("LastConnectionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastConnectionTime: Self = this.set("LastConnectionTime", js.undefined)
+    @scala.inline
+    def setName(value: TagValue): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPrivateLinkConfig(value: PrivateLinkConfig): Self = this.set("PrivateLinkConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateLinkConfig: Self = this.set("PrivateLinkConfig", js.undefined)
+    @scala.inline
+    def setStatus(value: AgentStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

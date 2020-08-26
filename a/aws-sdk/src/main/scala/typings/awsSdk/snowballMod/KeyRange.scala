@@ -18,11 +18,30 @@ trait KeyRange extends js.Object {
 
 object KeyRange {
   @scala.inline
-  def apply(BeginMarker: String = null, EndMarker: String = null): KeyRange = {
+  def apply(): KeyRange = {
     val __obj = js.Dynamic.literal()
-    if (BeginMarker != null) __obj.updateDynamic("BeginMarker")(BeginMarker.asInstanceOf[js.Any])
-    if (EndMarker != null) __obj.updateDynamic("EndMarker")(EndMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyRange]
   }
+  @scala.inline
+  implicit class KeyRangeOps[Self <: KeyRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeginMarker(value: String): Self = this.set("BeginMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeginMarker: Self = this.set("BeginMarker", js.undefined)
+    @scala.inline
+    def setEndMarker(value: String): Self = this.set("EndMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndMarker: Self = this.set("EndMarker", js.undefined)
+  }
+  
 }
 

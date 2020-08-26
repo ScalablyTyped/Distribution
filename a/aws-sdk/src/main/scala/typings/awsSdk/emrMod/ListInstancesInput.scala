@@ -38,23 +38,52 @@ trait ListInstancesInput extends js.Object {
 
 object ListInstancesInput {
   @scala.inline
-  def apply(
-    ClusterId: ClusterId,
-    InstanceFleetId: InstanceFleetId = null,
-    InstanceFleetType: InstanceFleetType = null,
-    InstanceGroupId: InstanceGroupId = null,
-    InstanceGroupTypes: InstanceGroupTypeList = null,
-    InstanceStates: InstanceStateList = null,
-    Marker: Marker = null
-  ): ListInstancesInput = {
+  def apply(ClusterId: ClusterId): ListInstancesInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
-    if (InstanceFleetId != null) __obj.updateDynamic("InstanceFleetId")(InstanceFleetId.asInstanceOf[js.Any])
-    if (InstanceFleetType != null) __obj.updateDynamic("InstanceFleetType")(InstanceFleetType.asInstanceOf[js.Any])
-    if (InstanceGroupId != null) __obj.updateDynamic("InstanceGroupId")(InstanceGroupId.asInstanceOf[js.Any])
-    if (InstanceGroupTypes != null) __obj.updateDynamic("InstanceGroupTypes")(InstanceGroupTypes.asInstanceOf[js.Any])
-    if (InstanceStates != null) __obj.updateDynamic("InstanceStates")(InstanceStates.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInstancesInput]
   }
+  @scala.inline
+  implicit class ListInstancesInputOps[Self <: ListInstancesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceFleetId(value: InstanceFleetId): Self = this.set("InstanceFleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceFleetId: Self = this.set("InstanceFleetId", js.undefined)
+    @scala.inline
+    def setInstanceFleetType(value: InstanceFleetType): Self = this.set("InstanceFleetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceFleetType: Self = this.set("InstanceFleetType", js.undefined)
+    @scala.inline
+    def setInstanceGroupId(value: InstanceGroupId): Self = this.set("InstanceGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroupId: Self = this.set("InstanceGroupId", js.undefined)
+    @scala.inline
+    def setInstanceGroupTypesVarargs(value: InstanceGroupType*): Self = this.set("InstanceGroupTypes", js.Array(value :_*))
+    @scala.inline
+    def setInstanceGroupTypes(value: InstanceGroupTypeList): Self = this.set("InstanceGroupTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroupTypes: Self = this.set("InstanceGroupTypes", js.undefined)
+    @scala.inline
+    def setInstanceStatesVarargs(value: InstanceState*): Self = this.set("InstanceStates", js.Array(value :_*))
+    @scala.inline
+    def setInstanceStates(value: InstanceStateList): Self = this.set("InstanceStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceStates: Self = this.set("InstanceStates", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

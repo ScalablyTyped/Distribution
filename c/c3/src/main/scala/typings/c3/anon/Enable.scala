@@ -40,6 +40,6 @@ trait Enable extends js.Object {
     * @returns If `range` is _not_ given, returns an object with current max and min zoom values.
     */
   def range(): MinNumber = js.native
-  def range(range: MaxNumberMinNumber): Unit = js.native
+  def range(range: `5`): Unit = js.native
 }
 

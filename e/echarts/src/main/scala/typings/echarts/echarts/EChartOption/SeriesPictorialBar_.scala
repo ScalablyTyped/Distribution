@@ -6,8 +6,8 @@ import typings.echarts.anon.AnimationDuration
 import typings.echarts.anon.AnimationDurationAnimationDurationUpdate
 import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.LabelBorderRadius
-import typings.echarts.anon.`2`
+import typings.echarts.anon.`18`
+import typings.echarts.anon.`8`
 import typings.echarts.echarts.EChartOption.SeriesPictorialBar.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -94,6 +94,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-pictorialBar
   */
+@js.native
 trait SeriesPictorialBar_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -103,7 +104,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animation
     */
-  var animation: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -115,7 +116,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * 1000
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDuration: js.UndefOr[js.Function | Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -127,7 +128,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * 300
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationDurationUpdate
     */
-  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -139,7 +140,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasing
     */
-  var animationEasing: js.UndefOr[String] = js.undefined
+  var animationEasing: js.UndefOr[String] = js.native
   /**
     * Easing method used for animation.
     *
@@ -148,7 +149,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[`2`] = js.undefined
+  var animationEasingUpdate: js.UndefOr[`18`] = js.native
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -159,7 +160,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * 2000
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationThreshold
     */
-  var animationThreshold: js.UndefOr[Double] = js.undefined
+  var animationThreshold: js.UndefOr[Double] = js.native
   /**
     * The bar gap of a single series, defaults to be `20%` of the category
     * gap, can be set as a fixed value.
@@ -175,7 +176,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * '20%'
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barCategoryGap
     */
-  var barCategoryGap: js.UndefOr[String] = js.undefined
+  var barCategoryGap: js.UndefOr[String] = js.native
   /**
     * The gap between bars between different series, is a percent value
     * like `'30%'`, which means `30%` of the bar width.
@@ -198,7 +199,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * -100%
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barGap
     */
-  var barGap: js.UndefOr[String] = js.undefined
+  var barGap: js.UndefOr[String] = js.native
   /**
     * The maximum width of the bar. Adaptive when not specified.
     *
@@ -211,7 +212,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barMaxWidth
     */
-  var barMaxWidth: js.UndefOr[Double] = js.undefined
+  var barMaxWidth: js.UndefOr[Double] = js.native
   /**
     * The minimum width of bar.
     * It could be used to avoid the following situation: the interaction
@@ -220,7 +221,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barMinHeight
     */
-  var barMinHeight: js.UndefOr[Double] = js.undefined
+  var barMinHeight: js.UndefOr[Double] = js.native
   /**
     * The width of the bar. Adaptive when not specified.
     *
@@ -233,7 +234,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.barWidth
     */
-  var barWidth: js.UndefOr[Double] = js.undefined
+  var barWidth: js.UndefOr[Double] = js.native
   /**
     * The coordinate used in the series, whose options are:
     *
@@ -251,7 +252,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "cartesian2d"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.coordinateSystem
     */
-  var coordinateSystem: js.UndefOr[String] = js.undefined
+  var coordinateSystem: js.UndefOr[String] = js.native
   /**
     * The mouse style when mouse hovers on an element, the same as
     * `cursor` property in `CSS`.
@@ -261,7 +262,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "pointer"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.cursor
     */
-  var cursor: js.UndefOr[String] = js.undefined
+  var cursor: js.UndefOr[String] = js.native
   /**
     * Data array of series, which can be in the following forms:
     *
@@ -398,7 +399,7 @@ trait SeriesPictorialBar_ extends js.Object {
     js.Array[
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * `dimensions` can be used to define dimension info for `series.data`
     * or `dataset.source`.
@@ -446,11 +447,11 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.dimensions
     */
-  var dimensions: js.UndefOr[js.Array[_]] = js.undefined
+  var dimensions: js.UndefOr[js.Array[_]] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.emphasis
     */
-  var emphasis: js.UndefOr[LabelBorderRadius] = js.undefined
+  var emphasis: js.UndefOr[`8`] = js.native
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -487,7 +488,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.encode
     */
-  var encode: js.UndefOr[js.Object] = js.undefined
+  var encode: js.UndefOr[js.Object] = js.native
   /**
     * Whether to enable hover animation.
     *
@@ -507,7 +508,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation
     */
-  var hoverAnimation: js.UndefOr[AnimationDurationAnimationDurationUpdate] = js.undefined
+  var hoverAnimation: js.UndefOr[AnimationDurationAnimationDurationUpdate] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -516,7 +517,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -524,7 +525,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.native
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -536,7 +537,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.label
     */
-  var label: js.UndefOr[BorderRadius] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.native
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -547,7 +548,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.legendHoverLink
     */
-  var legendHoverLink: js.UndefOr[Boolean] = js.undefined
+  var legendHoverLink: js.UndefOr[Boolean] = js.native
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -555,21 +556,21 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markArea
     */
-  var markArea: js.UndefOr[AnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationDelayUpdate] = js.native
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markLine
     */
-  var markLine: js.UndefOr[AnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnimationDelay] = js.native
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markPoint
     */
-  var markPoint: js.UndefOr[AnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[AnimationDuration] = js.native
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -580,7 +581,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -589,7 +590,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.silent
     */
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.native
   /**
     * Specify the type of graphic elements.
     *
@@ -647,7 +648,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "circle"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbol
     */
-  var symbol: js.UndefOr[String] = js.undefined
+  var symbol: js.UndefOr[String] = js.native
   /**
     * Defines a bounding area availble for the graphic elements.
     * This setting gives a data, which will then be translated to a
@@ -744,7 +745,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolBoundingData
     */
-  var symbolBoundingData: js.UndefOr[Double] = js.undefined
+  var symbolBoundingData: js.UndefOr[Double] = js.native
   /**
     * Whether to clip graphic elements.
     *
@@ -789,7 +790,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolClip
     */
-  var symbolClip: js.UndefOr[Boolean] = js.undefined
+  var symbolClip: js.UndefOr[Boolean] = js.native
   /**
     * Specify margin of both sides of a graphic element.
     * ("both sides" means the two sides in the direction of its value
@@ -848,7 +849,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolMargin
     */
-  var symbolMargin: js.UndefOr[Double | String] = js.undefined
+  var symbolMargin: js.UndefOr[Double | String] = js.native
   /**
     * Specify the offset of graphic element according to its original
     * position.
@@ -885,7 +886,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
+  var symbolOffset: js.UndefOr[js.Array[_]] = js.native
   /**
     * Image can be used as the pattern of graphic elements.
     *
@@ -917,7 +918,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * 400
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolPatternSize
     */
-  var symbolPatternSize: js.UndefOr[Double] = js.undefined
+  var symbolPatternSize: js.UndefOr[Double] = js.native
   /**
     * Specify the location of the graphic elements.
     * Optional values:
@@ -951,7 +952,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "start"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolPosition
     */
-  var symbolPosition: js.UndefOr[String] = js.undefined
+  var symbolPosition: js.UndefOr[String] = js.native
   /**
     * Whether to repeat a graphic element. Optional values:
     *
@@ -995,7 +996,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat
     */
-  var symbolRepeat: js.UndefOr[Boolean | Double | String] = js.undefined
+  var symbolRepeat: js.UndefOr[Boolean | Double | String] = js.native
   /**
     * When
     * [symbolRepeat](https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeat)
@@ -1039,7 +1040,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "start"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRepeatDirection
     */
-  var symbolRepeatDirection: js.UndefOr[String] = js.undefined
+  var symbolRepeatDirection: js.UndefOr[String] = js.native
   /**
     * The degree of the rotation of a graphic element.
     *
@@ -1062,7 +1063,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolRotate
     */
-  var symbolRotate: js.UndefOr[Double] = js.undefined
+  var symbolRotate: js.UndefOr[Double] = js.native
   /**
     * Symbol size.
     *
@@ -1119,20 +1120,20 @@ trait SeriesPictorialBar_ extends js.Object {
     * ['100%', '100%']
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.native
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.tooltip
     */
-  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.native
   /**
     * @default
     * "pictorialBar"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * Index of
     * [x axis](https://echarts.apache.org/en/option.html#xAxis)
@@ -1141,7 +1142,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.xAxisIndex
     */
-  var xAxisIndex: js.UndefOr[Double] = js.undefined
+  var xAxisIndex: js.UndefOr[Double] = js.native
   /**
     * Index of
     * [y axis](https://echarts.apache.org/en/option.html#yAxis)
@@ -1150,7 +1151,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.yAxisIndex
     */
-  var yAxisIndex: js.UndefOr[Double] = js.undefined
+  var yAxisIndex: js.UndefOr[Double] = js.native
   /**
     * `z` value of all graghical elements in pictorial bar chart, which
     * controls order of drawing graphical components.
@@ -1165,7 +1166,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in pictorial bar chart.
     *
@@ -1183,105 +1184,215 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object SeriesPictorialBar_ {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: js.Function | Double = null,
-    animationDurationUpdate: js.Function | Double = null,
-    animationEasing: String = null,
-    animationEasingUpdate: `2` = null,
-    animationThreshold: js.UndefOr[Double] = js.undefined,
-    barCategoryGap: String = null,
-    barGap: String = null,
-    barMaxWidth: js.UndefOr[Double] = js.undefined,
-    barMinHeight: js.UndefOr[Double] = js.undefined,
-    barWidth: js.UndefOr[Double] = js.undefined,
-    coordinateSystem: String = null,
-    cursor: String = null,
-    data: js.Array[
-      (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
-    ] = null,
-    dimensions: js.Array[_] = null,
-    emphasis: LabelBorderRadius = null,
-    encode: js.Object = null,
-    hoverAnimation: AnimationDurationAnimationDurationUpdate = null,
-    id: String = null,
-    itemStyle: BorderType = null,
-    label: BorderRadius = null,
-    legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: AnimationDelayUpdate = null,
-    markLine: AnimationDelay = null,
-    markPoint: AnimationDuration = null,
-    name: String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    symbol: String = null,
-    symbolBoundingData: js.UndefOr[Double] = js.undefined,
-    symbolClip: js.UndefOr[Boolean] = js.undefined,
-    symbolMargin: Double | String = null,
-    symbolOffset: js.Array[_] = null,
-    symbolPatternSize: js.UndefOr[Double] = js.undefined,
-    symbolPosition: String = null,
-    symbolRepeat: Boolean | Double | String = null,
-    symbolRepeatDirection: String = null,
-    symbolRotate: js.UndefOr[Double] = js.undefined,
-    symbolSize: js.Array[_] | Double = null,
-    tooltip: BaseTooltip = null,
-    `type`: String = null,
-    xAxisIndex: js.UndefOr[Double] = js.undefined,
-    yAxisIndex: js.UndefOr[Double] = js.undefined,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): SeriesPictorialBar_ = {
+  def apply(): SeriesPictorialBar_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
-    if (barCategoryGap != null) __obj.updateDynamic("barCategoryGap")(barCategoryGap.asInstanceOf[js.Any])
-    if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
-    if (!js.isUndefined(barMaxWidth)) __obj.updateDynamic("barMaxWidth")(barMaxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(barMinHeight)) __obj.updateDynamic("barMinHeight")(barMinHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(barWidth)) __obj.updateDynamic("barWidth")(barWidth.get.asInstanceOf[js.Any])
-    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
-    if (hoverAnimation != null) __obj.updateDynamic("hoverAnimation")(hoverAnimation.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.get.asInstanceOf[js.Any])
-    if (markArea != null) __obj.updateDynamic("markArea")(markArea.asInstanceOf[js.Any])
-    if (markLine != null) __obj.updateDynamic("markLine")(markLine.asInstanceOf[js.Any])
-    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolBoundingData)) __obj.updateDynamic("symbolBoundingData")(symbolBoundingData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolClip)) __obj.updateDynamic("symbolClip")(symbolClip.get.asInstanceOf[js.Any])
-    if (symbolMargin != null) __obj.updateDynamic("symbolMargin")(symbolMargin.asInstanceOf[js.Any])
-    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolPatternSize)) __obj.updateDynamic("symbolPatternSize")(symbolPatternSize.get.asInstanceOf[js.Any])
-    if (symbolPosition != null) __obj.updateDynamic("symbolPosition")(symbolPosition.asInstanceOf[js.Any])
-    if (symbolRepeat != null) __obj.updateDynamic("symbolRepeat")(symbolRepeat.asInstanceOf[js.Any])
-    if (symbolRepeatDirection != null) __obj.updateDynamic("symbolRepeatDirection")(symbolRepeatDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
-    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisIndex)) __obj.updateDynamic("xAxisIndex")(xAxisIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisIndex)) __obj.updateDynamic("yAxisIndex")(yAxisIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPictorialBar_]
   }
+  @scala.inline
+  implicit class SeriesPictorialBar_Ops[Self <: SeriesPictorialBar_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setAnimationEasingUpdate(value: `18`): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    @scala.inline
+    def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    @scala.inline
+    def setBarCategoryGap(value: String): Self = this.set("barCategoryGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarCategoryGap: Self = this.set("barCategoryGap", js.undefined)
+    @scala.inline
+    def setBarGap(value: String): Self = this.set("barGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarGap: Self = this.set("barGap", js.undefined)
+    @scala.inline
+    def setBarMaxWidth(value: Double): Self = this.set("barMaxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarMaxWidth: Self = this.set("barMaxWidth", js.undefined)
+    @scala.inline
+    def setBarMinHeight(value: Double): Self = this.set("barMinHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarMinHeight: Self = this.set("barMinHeight", js.undefined)
+    @scala.inline
+    def setBarWidth(value: Double): Self = this.set("barWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarWidth: Self = this.set("barWidth", js.undefined)
+    @scala.inline
+    def setCoordinateSystem(value: String): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordinateSystem: Self = this.set("coordinateSystem", js.undefined)
+    @scala.inline
+    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: ((js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit)*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(
+      value: js.Array[
+          (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
+        ]
+    ): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDimensionsVarargs(value: js.Any*): Self = this.set("dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: js.Array[_]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def setEmphasis(value: `8`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setEncode(value: js.Object): Self = this.set("encode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncode: Self = this.set("encode", js.undefined)
+    @scala.inline
+    def setHoverAnimation(value: AnimationDurationAnimationDurationUpdate): Self = this.set("hoverAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverAnimation: Self = this.set("hoverAnimation", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: BorderRadius): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLegendHoverLink(value: Boolean): Self = this.set("legendHoverLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegendHoverLink: Self = this.set("legendHoverLink", js.undefined)
+    @scala.inline
+    def setMarkArea(value: AnimationDelayUpdate): Self = this.set("markArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkArea: Self = this.set("markArea", js.undefined)
+    @scala.inline
+    def setMarkLine(value: AnimationDelay): Self = this.set("markLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkLine: Self = this.set("markLine", js.undefined)
+    @scala.inline
+    def setMarkPoint(value: AnimationDuration): Self = this.set("markPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkPoint: Self = this.set("markPoint", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setSymbolBoundingData(value: Double): Self = this.set("symbolBoundingData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolBoundingData: Self = this.set("symbolBoundingData", js.undefined)
+    @scala.inline
+    def setSymbolClip(value: Boolean): Self = this.set("symbolClip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolClip: Self = this.set("symbolClip", js.undefined)
+    @scala.inline
+    def setSymbolMargin(value: Double | String): Self = this.set("symbolMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolMargin: Self = this.set("symbolMargin", js.undefined)
+    @scala.inline
+    def setSymbolOffsetVarargs(value: js.Any*): Self = this.set("symbolOffset", js.Array(value :_*))
+    @scala.inline
+    def setSymbolOffset(value: js.Array[_]): Self = this.set("symbolOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolOffset: Self = this.set("symbolOffset", js.undefined)
+    @scala.inline
+    def setSymbolPatternSize(value: Double): Self = this.set("symbolPatternSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolPatternSize: Self = this.set("symbolPatternSize", js.undefined)
+    @scala.inline
+    def setSymbolPosition(value: String): Self = this.set("symbolPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolPosition: Self = this.set("symbolPosition", js.undefined)
+    @scala.inline
+    def setSymbolRepeat(value: Boolean | Double | String): Self = this.set("symbolRepeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolRepeat: Self = this.set("symbolRepeat", js.undefined)
+    @scala.inline
+    def setSymbolRepeatDirection(value: String): Self = this.set("symbolRepeatDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolRepeatDirection: Self = this.set("symbolRepeatDirection", js.undefined)
+    @scala.inline
+    def setSymbolRotate(value: Double): Self = this.set("symbolRotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolRotate: Self = this.set("symbolRotate", js.undefined)
+    @scala.inline
+    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    @scala.inline
+    def setSymbolSize(value: js.Array[_] | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setXAxisIndex(value: Double): Self = this.set("xAxisIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisIndex: Self = this.set("xAxisIndex", js.undefined)
+    @scala.inline
+    def setYAxisIndex(value: Double): Self = this.set("yAxisIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisIndex: Self = this.set("yAxisIndex", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

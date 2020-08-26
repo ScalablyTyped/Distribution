@@ -13,8 +13,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColumnDescription[T /* <: js.Object */, E] extends js.Object {
-  var align: js.UndefOr[CellAlignment] = js.undefined
+  var align: js.UndefOr[CellAlignment] = js.native
   var classes: js.UndefOr[
     String | (js.Function4[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
@@ -23,39 +24,39 @@ trait ColumnDescription[T /* <: js.Object */, E] extends js.Object {
       /* colIndex */ Double, 
       String
     ])
-  ] = js.undefined
+  ] = js.native
   /**
     * Toggle column display in CSV export
     */
-  var csvExport: js.UndefOr[Boolean] = js.undefined
+  var csvExport: js.UndefOr[Boolean] = js.native
   /**
     * Custom csv cell formatter used when exporting csv
     */
-  var csvFormatter: js.UndefOr[ColumnFormatter[T, E, _]] = js.undefined
+  var csvFormatter: js.UndefOr[ColumnFormatter[T, E, _]] = js.native
   /**
     * csvText defaults to column.text
     */
-  var csvText: js.UndefOr[String] = js.undefined
+  var csvText: js.UndefOr[String] = js.native
   /**
     * CSV Column options only used with the toolkit provider
     */
   /**
     * export csv cell type can be Number or String
     */
-  var csvType: js.UndefOr[js.Object] = js.undefined
-  var dataField: js.Any
+  var csvType: js.UndefOr[js.Object] = js.native
+  var dataField: js.Any = js.native
   var editable: js.UndefOr[
     Boolean | (js.Function4[/* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double, Boolean])
-  ] = js.undefined
-  var editor: js.UndefOr[Options] = js.undefined
-  var filter: js.UndefOr[Boolean | (TableColumnFilterProps[_, _])] = js.undefined
+  ] = js.native
+  var editor: js.UndefOr[Options] = js.native
+  var filter: js.UndefOr[Boolean | (TableColumnFilterProps[_, _])] = js.native
   var filterValue: js.UndefOr[
     js.Function2[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
       /* row */ T, 
       String
     ]
-  ] = js.undefined
+  ] = js.native
   var footer: js.UndefOr[
     Boolean | Double | String | (js.Function3[
       /* columnData */ js.Any, 
@@ -63,32 +64,32 @@ trait ColumnDescription[T /* <: js.Object */, E] extends js.Object {
       /* columnIndex */ Double, 
       String
     ])
-  ] = js.undefined
+  ] = js.native
   var footerAlign: js.UndefOr[
     CellAlignment | (js.Function2[/* column */ ColumnDescription[T, E], /* colIndex */ Double, CellAlignment])
-  ] = js.undefined
+  ] = js.native
   var footerClasses: js.UndefOr[
     String | (js.Function2[/* column */ ColumnDescription[T, E], /* columnIndex */ Double, String])
-  ] = js.undefined
-  var footerEvents: js.UndefOr[OnClick[T, E]] = js.undefined
+  ] = js.native
+  var footerEvents: js.UndefOr[OnClick[T, E]] = js.native
   var footerFormatter: js.UndefOr[
     js.Function2[/* column */ ColumnDescription[T, E], /* columnIndex */ Double, Unit]
-  ] = js.undefined
-  var footerStyle: js.UndefOr[CSSProperties] = js.undefined
-  var footerTitle: js.UndefOr[Boolean] = js.undefined
-  var formatExtraData: js.UndefOr[TooltipFormatter[T] with E] = js.undefined
-  var formatter: js.UndefOr[ColumnFormatter[T, E, _]] = js.undefined
-  var headerAlign: js.UndefOr[CellAlignment] = js.undefined
-  var headerFormatter: js.UndefOr[HeaderFormatter[T]] = js.undefined
-  var headerStyle: js.UndefOr[CSSProperties | js.Function0[CSSProperties]] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var footerStyle: js.UndefOr[CSSProperties] = js.native
+  var footerTitle: js.UndefOr[Boolean] = js.native
+  var formatExtraData: js.UndefOr[TooltipFormatter[T] with E] = js.native
+  var formatter: js.UndefOr[ColumnFormatter[T, E, _]] = js.native
+  var headerAlign: js.UndefOr[CellAlignment] = js.native
+  var headerFormatter: js.UndefOr[HeaderFormatter[T]] = js.native
+  var headerStyle: js.UndefOr[CSSProperties | js.Function0[CSSProperties]] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
   /**
     * If set the column will not use cell values
     */
-  var isDummyField: js.UndefOr[Boolean] = js.undefined
-  var searchable: js.UndefOr[Boolean] = js.undefined
-  var sort: js.UndefOr[Boolean] = js.undefined
-  var sortFunc: js.UndefOr[ColumnSortFunc[T, _]] = js.undefined
+  var isDummyField: js.UndefOr[Boolean] = js.native
+  var searchable: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.native
+  var sortFunc: js.UndefOr[ColumnSortFunc[T, _]] = js.native
   var style: js.UndefOr[
     CSSProperties | (js.Function4[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
@@ -97,100 +98,212 @@ trait ColumnDescription[T /* <: js.Object */, E] extends js.Object {
       /* colIndex */ Double, 
       CSSProperties
     ])
-  ] = js.undefined
+  ] = js.native
   /**
     * Column header field
     */
-  var text: String
-  var tooltipDataField: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var text: String = js.native
+  var tooltipDataField: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object ColumnDescription {
   @scala.inline
-  def apply[/* <: js.Object */ T, E](
-    dataField: js.Any,
-    text: String,
-    align: CellAlignment = null,
-    classes: String | (js.Function4[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
-      /* row */ T, 
-      /* rowIndex */ Double, 
-      /* colIndex */ Double, 
-      String
-    ]) = null,
-    csvExport: js.UndefOr[Boolean] = js.undefined,
-    csvFormatter: (_, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText = null,
-    csvText: String = null,
-    csvType: js.Object = null,
-    editable: Boolean | (js.Function4[/* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double, Boolean]) = null,
-    editor: Options = null,
-    filter: Boolean | (TableColumnFilterProps[_, _]) = null,
-    filterValue: (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, /* row */ T) => String = null,
-    footer: Boolean | Double | String | (js.Function3[
-      /* columnData */ js.Any, 
-      /* column */ ColumnDescription[T, E], 
-      /* columnIndex */ Double, 
-      String
-    ]) = null,
-    footerAlign: CellAlignment | (js.Function2[/* column */ ColumnDescription[T, E], /* colIndex */ Double, CellAlignment]) = null,
-    footerClasses: String | (js.Function2[/* column */ ColumnDescription[T, E], /* columnIndex */ Double, String]) = null,
-    footerEvents: OnClick[T, E] = null,
-    footerFormatter: (/* column */ ColumnDescription[T, E], /* columnIndex */ Double) => Unit = null,
-    footerStyle: CSSProperties = null,
-    footerTitle: js.UndefOr[Boolean] = js.undefined,
-    formatExtraData: TooltipFormatter[T] with E = null,
-    formatter: (_, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText = null,
-    headerAlign: CellAlignment = null,
-    headerFormatter: (/* column */ ColumnDescription[T, js.Any], /* colIndex */ Double, /* components */ FilterElement) => Element | String | Double | ReactText = null,
-    headerStyle: CSSProperties | js.Function0[CSSProperties] = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    isDummyField: js.UndefOr[Boolean] = js.undefined,
-    searchable: js.UndefOr[Boolean] = js.undefined,
-    sort: js.UndefOr[Boolean] = js.undefined,
-    sortFunc: (/* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* a */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* b */ js.Any, /* order */ asc | desc, /* dataField */ js.Any, T, T) => Double = null,
-    style: CSSProperties | (js.Function4[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
-      /* row */ T, 
-      /* rowIndex */ Double, 
-      /* colIndex */ Double, 
-      CSSProperties
-    ]) = null,
-    tooltipDataField: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): ColumnDescription[T, E] = {
+  def apply[/* <: js.Object */ T, E](dataField: js.Any, text: String): ColumnDescription[T, E] = {
     val __obj = js.Dynamic.literal(dataField = dataField.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(csvExport)) __obj.updateDynamic("csvExport")(csvExport.get.asInstanceOf[js.Any])
-    if (csvFormatter != null) __obj.updateDynamic("csvFormatter")(js.Any.fromFunction4(csvFormatter))
-    if (csvText != null) __obj.updateDynamic("csvText")(csvText.asInstanceOf[js.Any])
-    if (csvType != null) __obj.updateDynamic("csvType")(csvType.asInstanceOf[js.Any])
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (filterValue != null) __obj.updateDynamic("filterValue")(js.Any.fromFunction2(filterValue))
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (footerAlign != null) __obj.updateDynamic("footerAlign")(footerAlign.asInstanceOf[js.Any])
-    if (footerClasses != null) __obj.updateDynamic("footerClasses")(footerClasses.asInstanceOf[js.Any])
-    if (footerEvents != null) __obj.updateDynamic("footerEvents")(footerEvents.asInstanceOf[js.Any])
-    if (footerFormatter != null) __obj.updateDynamic("footerFormatter")(js.Any.fromFunction2(footerFormatter))
-    if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(footerTitle)) __obj.updateDynamic("footerTitle")(footerTitle.get.asInstanceOf[js.Any])
-    if (formatExtraData != null) __obj.updateDynamic("formatExtraData")(formatExtraData.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction4(formatter))
-    if (headerAlign != null) __obj.updateDynamic("headerAlign")(headerAlign.asInstanceOf[js.Any])
-    if (headerFormatter != null) __obj.updateDynamic("headerFormatter")(js.Any.fromFunction3(headerFormatter))
-    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDummyField)) __obj.updateDynamic("isDummyField")(isDummyField.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
-    if (sortFunc != null) __obj.updateDynamic("sortFunc")(js.Any.fromFunction6(sortFunc))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tooltipDataField != null) __obj.updateDynamic("tooltipDataField")(tooltipDataField.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDescription[T, E]]
   }
+  @scala.inline
+  implicit class ColumnDescriptionOps[Self <: ColumnDescription[_, _], /* <: js.Object */ T, E] (val x: Self with (ColumnDescription[T, E])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataField(value: js.Any): Self = this.set("dataField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlign(value: CellAlignment): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setClassesFunction4(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double) => String
+    ): Self = this.set("classes", js.Any.fromFunction4(value))
+    @scala.inline
+    def setClasses(
+      value: String | (js.Function4[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
+          /* row */ T, 
+          /* rowIndex */ Double, 
+          /* colIndex */ Double, 
+          String
+        ])
+    ): Self = this.set("classes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClasses: Self = this.set("classes", js.undefined)
+    @scala.inline
+    def setCsvExport(value: Boolean): Self = this.set("csvExport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvExport: Self = this.set("csvExport", js.undefined)
+    @scala.inline
+    def setCsvFormatter(value: (_, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText): Self = this.set("csvFormatter", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteCsvFormatter: Self = this.set("csvFormatter", js.undefined)
+    @scala.inline
+    def setCsvText(value: String): Self = this.set("csvText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvText: Self = this.set("csvText", js.undefined)
+    @scala.inline
+    def setCsvType(value: js.Object): Self = this.set("csvType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvType: Self = this.set("csvType", js.undefined)
+    @scala.inline
+    def setEditableFunction4(value: (/* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double) => Boolean): Self = this.set("editable", js.Any.fromFunction4(value))
+    @scala.inline
+    def setEditable(
+      value: Boolean | (js.Function4[/* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double, Boolean])
+    ): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setEditor(value: Options): Self = this.set("editor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditor: Self = this.set("editor", js.undefined)
+    @scala.inline
+    def setFilter(value: Boolean | (TableColumnFilterProps[_, _])): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFilterValue(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, /* row */ T) => String
+    ): Self = this.set("filterValue", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFilterValue: Self = this.set("filterValue", js.undefined)
+    @scala.inline
+    def setFooterFunction3(
+      value: (/* columnData */ js.Any, /* column */ ColumnDescription[T, E], /* columnIndex */ Double) => String
+    ): Self = this.set("footer", js.Any.fromFunction3(value))
+    @scala.inline
+    def setFooter(
+      value: Boolean | Double | String | (js.Function3[
+          /* columnData */ js.Any, 
+          /* column */ ColumnDescription[T, E], 
+          /* columnIndex */ Double, 
+          String
+        ])
+    ): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setFooterAlignFunction2(value: (/* column */ ColumnDescription[T, E], /* colIndex */ Double) => CellAlignment): Self = this.set("footerAlign", js.Any.fromFunction2(value))
+    @scala.inline
+    def setFooterAlign(
+      value: CellAlignment | (js.Function2[/* column */ ColumnDescription[T, E], /* colIndex */ Double, CellAlignment])
+    ): Self = this.set("footerAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterAlign: Self = this.set("footerAlign", js.undefined)
+    @scala.inline
+    def setFooterClassesFunction2(value: (/* column */ ColumnDescription[T, E], /* columnIndex */ Double) => String): Self = this.set("footerClasses", js.Any.fromFunction2(value))
+    @scala.inline
+    def setFooterClasses(
+      value: String | (js.Function2[/* column */ ColumnDescription[T, E], /* columnIndex */ Double, String])
+    ): Self = this.set("footerClasses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterClasses: Self = this.set("footerClasses", js.undefined)
+    @scala.inline
+    def setFooterEvents(value: OnClick[T, E]): Self = this.set("footerEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterEvents: Self = this.set("footerEvents", js.undefined)
+    @scala.inline
+    def setFooterFormatter(value: (/* column */ ColumnDescription[T, E], /* columnIndex */ Double) => Unit): Self = this.set("footerFormatter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFooterFormatter: Self = this.set("footerFormatter", js.undefined)
+    @scala.inline
+    def setFooterStyle(value: CSSProperties): Self = this.set("footerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterStyle: Self = this.set("footerStyle", js.undefined)
+    @scala.inline
+    def setFooterTitle(value: Boolean): Self = this.set("footerTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterTitle: Self = this.set("footerTitle", js.undefined)
+    @scala.inline
+    def setFormatExtraData(value: TooltipFormatter[T] with E): Self = this.set("formatExtraData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatExtraData: Self = this.set("formatExtraData", js.undefined)
+    @scala.inline
+    def setFormatter(value: (_, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText): Self = this.set("formatter", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setHeaderAlign(value: CellAlignment): Self = this.set("headerAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderAlign: Self = this.set("headerAlign", js.undefined)
+    @scala.inline
+    def setHeaderFormatter(
+      value: (/* column */ ColumnDescription[T, js.Any], /* colIndex */ Double, /* components */ FilterElement) => Element | String | Double | ReactText
+    ): Self = this.set("headerFormatter", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteHeaderFormatter: Self = this.set("headerFormatter", js.undefined)
+    @scala.inline
+    def setHeaderStyleFunction0(value: () => CSSProperties): Self = this.set("headerStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setHeaderStyle(value: CSSProperties | js.Function0[CSSProperties]): Self = this.set("headerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderStyle: Self = this.set("headerStyle", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setIsDummyField(value: Boolean): Self = this.set("isDummyField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDummyField: Self = this.set("isDummyField", js.undefined)
+    @scala.inline
+    def setSearchable(value: Boolean): Self = this.set("searchable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchable: Self = this.set("searchable", js.undefined)
+    @scala.inline
+    def setSort(value: Boolean): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setSortFunc(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* a */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* b */ js.Any, /* order */ asc | desc, /* dataField */ js.Any, T, T) => Double
+    ): Self = this.set("sortFunc", js.Any.fromFunction6(value))
+    @scala.inline
+    def deleteSortFunc: Self = this.set("sortFunc", js.undefined)
+    @scala.inline
+    def setStyleFunction4(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double) => CSSProperties
+    ): Self = this.set("style", js.Any.fromFunction4(value))
+    @scala.inline
+    def setStyle(
+      value: CSSProperties | (js.Function4[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* cell */ js.Any, 
+          /* row */ T, 
+          /* rowIndex */ Double, 
+          /* colIndex */ Double, 
+          CSSProperties
+        ])
+    ): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTooltipDataField(value: String): Self = this.set("tooltipDataField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipDataField: Self = this.set("tooltipDataField", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

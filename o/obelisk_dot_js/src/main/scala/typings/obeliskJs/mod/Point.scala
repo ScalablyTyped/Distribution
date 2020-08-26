@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Point () extends js.Object {
   def this(x: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
   var x: Double = js.native
   var y: Double = js.native

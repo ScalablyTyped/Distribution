@@ -1,122 +1,117 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.rooftop
+import typings.arcgisJsApi.arcgisJsApiStrings.street
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LocatorSearchSourceProperties extends SearchSourceProperties {
   /**
     * A string array which limits the results to one or more categories. For example, `Populated Place` or `airport`. Only applicable when using the World Geocode Service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#categories)
     */
-  var categories: js.UndefOr[js.Array[String]] = js.undefined
+  var categories: js.UndefOr[js.Array[String]] = js.native
   /**
     * Constricts search results to a specified country code. For example, `US` for United States or `SE` for Sweden. Only applies to the World Geocode Service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#countryCode)
     */
-  var countryCode: js.UndefOr[String] = js.undefined
+  var countryCode: js.UndefOr[String] = js.native
   /**
-    * Sets the scale of the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#scale) for the resulting search result. This is useful if the locator service doesn’t return an extent with a scale.
+    * Sets the scale of the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#scale) for the resulting search result, if the locator service doesn’t return an extent with a scale. An example of this is using the `Use current location` option in the Search bar.  If you want to override the scale returned by the locator service, use [zoomScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#zoomScale) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#defaultZoomScale)
     *
     * @default null
     */
-  var defaultZoomScale: js.UndefOr[Double] = js.undefined
+  var defaultZoomScale: js.UndefOr[Double] = js.native
   /**
-    * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).  **Possible Values:** rooftop | street | null
+    * Defines the type of location, either `street` or `rooftop`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationType)
-    *
-    * @default null
     */
-  var locationType: js.UndefOr[String] = js.undefined
+  var locationType: js.UndefOr[rooftop | street] = js.native
   /**
     * The locator task used to search. This is **required** and defaults to the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locator)
     */
-  var locator: js.UndefOr[LocatorProperties] = js.undefined
+  var locator: js.UndefOr[LocatorProperties] = js.native
   /**
     * The name of the source for display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#name)
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * A template string used to display multiple fields in a defined order when results are displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#searchTemplate)
     */
-  var searchTemplate: js.UndefOr[String] = js.undefined
+  var searchTemplate: js.UndefOr[String] = js.native
   /**
     * The field name of the Single Line Address Field in the REST services directory for the locator service. Common values are `SingleLine` and `SingleLineFieldName`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#singleLineFieldName)
     */
-  var singleLineFieldName: js.UndefOr[String] = js.undefined
+  var singleLineFieldName: js.UndefOr[String] = js.native
 }
 
 object LocatorSearchSourceProperties {
   @scala.inline
-  def apply(
-    autoNavigate: js.UndefOr[Boolean] = js.undefined,
-    categories: js.Array[String] = null,
-    countryCode: String = null,
-    defaultZoomScale: js.UndefOr[Double] = js.undefined,
-    filter: SearchSourceFilter = null,
-    getResults: /* params */ js.Any => js.Promise[js.Array[SearchResult]] = null,
-    getSuggestions: /* params */ js.Any => js.Promise[js.Array[SuggestResult]] = null,
-    locationType: String = null,
-    locator: LocatorProperties = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    maxSuggestions: js.UndefOr[Double] = js.undefined,
-    minSuggestCharacters: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    outFields: js.Array[String] = null,
-    placeholder: String = null,
-    popupEnabled: js.UndefOr[Boolean] = js.undefined,
-    popupTemplate: PopupTemplateProperties = null,
-    prefix: String = null,
-    resultGraphicEnabled: js.UndefOr[Boolean] = js.undefined,
-    resultSymbol: SymbolProperties = null,
-    searchTemplate: String = null,
-    singleLineFieldName: String = null,
-    suffix: String = null,
-    suggestionsEnabled: js.UndefOr[Boolean] = js.undefined,
-    withinViewEnabled: js.UndefOr[Boolean] = js.undefined,
-    zoomScale: js.UndefOr[Double] = js.undefined
-  ): LocatorSearchSourceProperties = {
+  def apply(): LocatorSearchSourceProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoNavigate)) __obj.updateDynamic("autoNavigate")(autoNavigate.get.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultZoomScale)) __obj.updateDynamic("defaultZoomScale")(defaultZoomScale.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (getResults != null) __obj.updateDynamic("getResults")(js.Any.fromFunction1(getResults))
-    if (getSuggestions != null) __obj.updateDynamic("getSuggestions")(js.Any.fromFunction1(getSuggestions))
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
-    if (locator != null) __obj.updateDynamic("locator")(locator.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSuggestions)) __obj.updateDynamic("maxSuggestions")(maxSuggestions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSuggestCharacters)) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.get.asInstanceOf[js.Any])
-    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(resultGraphicEnabled)) __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled.get.asInstanceOf[js.Any])
-    if (resultSymbol != null) __obj.updateDynamic("resultSymbol")(resultSymbol.asInstanceOf[js.Any])
-    if (searchTemplate != null) __obj.updateDynamic("searchTemplate")(searchTemplate.asInstanceOf[js.Any])
-    if (singleLineFieldName != null) __obj.updateDynamic("singleLineFieldName")(singleLineFieldName.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(suggestionsEnabled)) __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withinViewEnabled)) __obj.updateDynamic("withinViewEnabled")(withinViewEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomScale)) __obj.updateDynamic("zoomScale")(zoomScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocatorSearchSourceProperties]
   }
+  @scala.inline
+  implicit class LocatorSearchSourcePropertiesOps[Self <: LocatorSearchSourceProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    @scala.inline
+    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategories: Self = this.set("categories", js.undefined)
+    @scala.inline
+    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    @scala.inline
+    def setDefaultZoomScale(value: Double): Self = this.set("defaultZoomScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultZoomScale: Self = this.set("defaultZoomScale", js.undefined)
+    @scala.inline
+    def setLocationType(value: rooftop | street): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationType: Self = this.set("locationType", js.undefined)
+    @scala.inline
+    def setLocator(value: LocatorProperties): Self = this.set("locator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocator: Self = this.set("locator", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSearchTemplate(value: String): Self = this.set("searchTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchTemplate: Self = this.set("searchTemplate", js.undefined)
+    @scala.inline
+    def setSingleLineFieldName(value: String): Self = this.set("singleLineFieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleLineFieldName: Self = this.set("singleLineFieldName", js.undefined)
+  }
+  
 }
 

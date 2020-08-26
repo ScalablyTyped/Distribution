@@ -26,16 +26,38 @@ trait SubmitFeedbackRequest extends js.Object {
 
 object SubmitFeedbackRequest {
   @scala.inline
-  def apply(
-    IndexId: IndexId,
-    QueryId: QueryId,
-    ClickFeedbackItems: ClickFeedbackList = null,
-    RelevanceFeedbackItems: RelevanceFeedbackList = null
-  ): SubmitFeedbackRequest = {
+  def apply(IndexId: IndexId, QueryId: QueryId): SubmitFeedbackRequest = {
     val __obj = js.Dynamic.literal(IndexId = IndexId.asInstanceOf[js.Any], QueryId = QueryId.asInstanceOf[js.Any])
-    if (ClickFeedbackItems != null) __obj.updateDynamic("ClickFeedbackItems")(ClickFeedbackItems.asInstanceOf[js.Any])
-    if (RelevanceFeedbackItems != null) __obj.updateDynamic("RelevanceFeedbackItems")(RelevanceFeedbackItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitFeedbackRequest]
   }
+  @scala.inline
+  implicit class SubmitFeedbackRequestOps[Self <: SubmitFeedbackRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexId(value: IndexId): Self = this.set("IndexId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQueryId(value: QueryId): Self = this.set("QueryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClickFeedbackItemsVarargs(value: ClickFeedback*): Self = this.set("ClickFeedbackItems", js.Array(value :_*))
+    @scala.inline
+    def setClickFeedbackItems(value: ClickFeedbackList): Self = this.set("ClickFeedbackItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickFeedbackItems: Self = this.set("ClickFeedbackItems", js.undefined)
+    @scala.inline
+    def setRelevanceFeedbackItemsVarargs(value: RelevanceFeedback*): Self = this.set("RelevanceFeedbackItems", js.Array(value :_*))
+    @scala.inline
+    def setRelevanceFeedbackItems(value: RelevanceFeedbackList): Self = this.set("RelevanceFeedbackItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelevanceFeedbackItems: Self = this.set("RelevanceFeedbackItems", js.undefined)
+  }
+  
 }
 

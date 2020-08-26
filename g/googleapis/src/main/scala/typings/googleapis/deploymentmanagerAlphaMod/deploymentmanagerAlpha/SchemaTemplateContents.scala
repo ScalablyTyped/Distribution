@@ -33,20 +33,44 @@ trait SchemaTemplateContents extends js.Object {
 
 object SchemaTemplateContents {
   @scala.inline
-  def apply(
-    imports: js.Array[SchemaImportFile] = null,
-    interpreter: String = null,
-    mainTemplate: String = null,
-    schema: String = null,
-    template: String = null
-  ): SchemaTemplateContents = {
+  def apply(): SchemaTemplateContents = {
     val __obj = js.Dynamic.literal()
-    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter.asInstanceOf[js.Any])
-    if (mainTemplate != null) __obj.updateDynamic("mainTemplate")(mainTemplate.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTemplateContents]
   }
+  @scala.inline
+  implicit class SchemaTemplateContentsOps[Self <: SchemaTemplateContents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImportsVarargs(value: SchemaImportFile*): Self = this.set("imports", js.Array(value :_*))
+    @scala.inline
+    def setImports(value: js.Array[SchemaImportFile]): Self = this.set("imports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImports: Self = this.set("imports", js.undefined)
+    @scala.inline
+    def setInterpreter(value: String): Self = this.set("interpreter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterpreter: Self = this.set("interpreter", js.undefined)
+    @scala.inline
+    def setMainTemplate(value: String): Self = this.set("mainTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainTemplate: Self = this.set("mainTemplate", js.undefined)
+    @scala.inline
+    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+  }
+  
 }
 

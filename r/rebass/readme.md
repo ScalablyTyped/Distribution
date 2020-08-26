@@ -12,7 +12,7 @@ React primitive UI components built with Styled System
 | Keywords           | components, react, react-component, ui, design-system, styled-system, styled-components, emotion, theming, presentational, stateless, functional |
 | # releases         | 56 |
 | # dependents       | 101 |
-| # downloads        | 1115171 |
+| # downloads        | 1175276 |
 | # stars            | 2 |
 
 ## Links

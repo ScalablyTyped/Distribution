@@ -10,9 +10,9 @@ A library to help you design your react-native app for the iPhone X
 | ------------------ | :-------------: |
 | Full name          | react-native-iphone-x-helper |
 | Keywords           | react-native, ios, iphone-x, iphoneX, stylesheet |
-| # releases         | 5 |
-| # dependents       | 76 |
-| # downloads        | 5805049 |
+| # releases         | 4 |
+| # dependents       | 104 |
+| # downloads        | 7995803 |
 | # stars            | 1 |
 
 ## Links

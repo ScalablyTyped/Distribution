@@ -22,16 +22,36 @@ trait DeviceSelectionResult extends js.Object {
 
 object DeviceSelectionResult {
   @scala.inline
-  def apply(
-    filters: DeviceFilters = null,
-    matchedDevicesCount: js.UndefOr[Integer] = js.undefined,
-    maxDevices: js.UndefOr[Integer] = js.undefined
-  ): DeviceSelectionResult = {
+  def apply(): DeviceSelectionResult = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchedDevicesCount)) __obj.updateDynamic("matchedDevicesCount")(matchedDevicesCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDevices)) __obj.updateDynamic("maxDevices")(maxDevices.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceSelectionResult]
   }
+  @scala.inline
+  implicit class DeviceSelectionResultOps[Self <: DeviceSelectionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: DeviceFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: DeviceFilters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setMatchedDevicesCount(value: Integer): Self = this.set("matchedDevicesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchedDevicesCount: Self = this.set("matchedDevicesCount", js.undefined)
+    @scala.inline
+    def setMaxDevices(value: Integer): Self = this.set("maxDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDevices: Self = this.set("maxDevices", js.undefined)
+  }
+  
 }
 

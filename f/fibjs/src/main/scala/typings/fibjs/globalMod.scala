@@ -40,7 +40,7 @@ object globalMod extends js.Object {
   def setHrInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
   def setImmediate(callback: js.Function, args: js.Any*): ClassTimer = js.native
   def setInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
-  def setTimeout(callback: js.Function): ClassTimer = js.native
+  def setTimeout(callback: js.Function, timeout: js.UndefOr[scala.Nothing], args: js.Any*): ClassTimer = js.native
   def setTimeout(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
   @js.native
   object console extends js.Object {

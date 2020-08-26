@@ -18,11 +18,32 @@ trait ListPoliciesResponse extends js.Object {
 
 object ListPoliciesResponse {
   @scala.inline
-  def apply(NextToken: PaginationToken = null, PolicyList: PolicySummaryList = null): ListPoliciesResponse = {
+  def apply(): ListPoliciesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PolicyList != null) __obj.updateDynamic("PolicyList")(PolicyList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPoliciesResponse]
   }
+  @scala.inline
+  implicit class ListPoliciesResponseOps[Self <: ListPoliciesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPolicyListVarargs(value: PolicySummary*): Self = this.set("PolicyList", js.Array(value :_*))
+    @scala.inline
+    def setPolicyList(value: PolicySummaryList): Self = this.set("PolicyList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyList: Self = this.set("PolicyList", js.undefined)
+  }
+  
 }
 

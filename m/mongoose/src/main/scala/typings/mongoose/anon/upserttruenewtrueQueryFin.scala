@@ -8,109 +8,165 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  upsert  :true,   new  :true} & mongoose.mongoose.QueryFindOneAndUpdateOptions */
+/* Inlined {  upsert :true,   new :true} & mongoose.mongoose.QueryFindOneAndUpdateOptions */
+@js.native
 trait upserttruenewtrueQueryFin extends js.Object {
   /**
     * Only update elements that match the arrayFilters conditions in the document or documents that match the query conditions.
     */
-  var arrayFilters: js.UndefOr[js.Array[StringDictionary[_]]] = js.undefined
+  var arrayFilters: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
   /**
     * if set to 'query' and runValidators is on, this will refer to the query in custom validator
     * functions that update validation runs. Does nothing if runValidators is false.
     */
-  var context: js.UndefOr[String] = js.undefined
+  var context: js.UndefOr[String] = js.native
   /** Field selection. Equivalent to .select(fields).findOneAndUpdate() */
-  var fields: js.UndefOr[js.Any | String] = js.undefined
+  var fields: js.UndefOr[js.Any | String] = js.native
   /**
     * if truthy, mongoose will return the document as a plain JavaScript object rather than a mongoose document. See Query.lean() and the Mongoose lean tutorial.
     */
-  var lean: js.UndefOr[js.Any] = js.undefined
+  var lean: js.UndefOr[js.Any] = js.native
   /** puts a time limit on the query - requires mongodb >= 2.6.0 */
-  var maxTimeMS: js.UndefOr[Double] = js.undefined
+  var maxTimeMS: js.UndefOr[Double] = js.native
   /**
     *  by default, mongoose only returns the first error that occurred in casting the query.
     *  Turn on this option to aggregate all the cast errors.
     */
-  var multipleCastError: js.UndefOr[Boolean] = js.undefined
+  var multipleCastError: js.UndefOr[Boolean] = js.native
   /** if true, return the modified document rather than the original. defaults to false (changed in 4.0) */
-  var `new`: js.UndefOr[`true` with Boolean] = js.undefined
+  var `new`: `true` with js.UndefOr[Boolean] = js.native
   /** If true, delete any properties whose value is undefined when casting an update. In other words,
     if this is set, Mongoose will delete baz from the update in Model.updateOne({}, { foo: 'bar', baz: undefined })
     before sending the update to the server.**/
-  var omitUndefined: js.UndefOr[Boolean] = js.undefined
+  var omitUndefined: js.UndefOr[Boolean] = js.native
   /** like select, it determines which fields to return */
-  var projection: js.UndefOr[js.Any] = js.undefined
+  var projection: js.UndefOr[js.Any] = js.native
   /** if true, returns the raw result from the MongoDB driver */
-  var rawResult: js.UndefOr[Boolean] = js.undefined
+  var rawResult: js.UndefOr[Boolean] = js.native
   /** if true, runs update validators on this command. Update validators validate the update operation against the model's schema. */
-  var runValidators: js.UndefOr[Boolean] = js.undefined
+  var runValidators: js.UndefOr[Boolean] = js.native
   /** sets the document fields to return */
-  var select: js.UndefOr[js.Any] = js.undefined
+  var select: js.UndefOr[js.Any] = js.native
   /** use client session for transaction */
-  var session: js.UndefOr[ClientSession] = js.undefined
+  var session: js.UndefOr[ClientSession] = js.native
   /**
     * if this and upsert are true, mongoose will apply the defaults specified in the model's schema if a new document
     * is created. This option only works on MongoDB >= 2.4 because it relies on MongoDB's $setOnInsert operator.
     */
-  var setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined
+  var setDefaultsOnInsert: js.UndefOr[Boolean] = js.native
   /**
     * if multiple docs are found by the conditions, sets the sort order to choose
     * which doc to update
     */
-  var sort: js.UndefOr[js.Any] = js.undefined
+  var sort: js.UndefOr[js.Any] = js.native
   /** overwrites the schema's strict mode option for this update */
-  var strict: js.UndefOr[Boolean | `throw`] = js.undefined
+  var strict: js.UndefOr[Boolean | `throw`] = js.native
   /**
     * If set to false and schema-level timestamps are enabled, skip timestamps for this update. Note that this allows you to overwrite timestamps.
     * Does nothing if schema-level timestamps are not set.
     */
-  var timestamps: js.UndefOr[Boolean] = js.undefined
+  var timestamps: js.UndefOr[Boolean] = js.native
   /** creates the object if it doesn't exist. defaults to false. */
-  var upsert: js.UndefOr[`true` with Boolean] = js.undefined
+  var upsert: `true` with js.UndefOr[Boolean] = js.native
+  /**
+    * True by default. Set to false to make findOneAndUpdate() and findOneAndRemove() use native findOneAndUpdate() rather than findAndModify().
+    */
+  var useFindAndModify: js.UndefOr[Boolean] = js.native
 }
 
 object upserttruenewtrueQueryFin {
   @scala.inline
-  def apply(
-    arrayFilters: js.Array[StringDictionary[_]] = null,
-    context: String = null,
-    fields: js.Any | String = null,
-    lean: js.Any = null,
-    maxTimeMS: js.UndefOr[Double] = js.undefined,
-    multipleCastError: js.UndefOr[Boolean] = js.undefined,
-    `new`: js.UndefOr[`true` with Boolean] = js.undefined,
-    omitUndefined: js.UndefOr[Boolean] = js.undefined,
-    projection: js.Any = null,
-    rawResult: js.UndefOr[Boolean] = js.undefined,
-    runValidators: js.UndefOr[Boolean] = js.undefined,
-    select: js.Any = null,
-    session: ClientSession = null,
-    setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined,
-    sort: js.Any = null,
-    strict: Boolean | `throw` = null,
-    timestamps: js.UndefOr[Boolean] = js.undefined,
-    upsert: js.UndefOr[`true` with Boolean] = js.undefined
-  ): upserttruenewtrueQueryFin = {
-    val __obj = js.Dynamic.literal()
-    if (arrayFilters != null) __obj.updateDynamic("arrayFilters")(arrayFilters.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (lean != null) __obj.updateDynamic("lean")(lean.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleCastError)) __obj.updateDynamic("multipleCastError")(multipleCastError.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`new`)) __obj.updateDynamic("new")(`new`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitUndefined)) __obj.updateDynamic("omitUndefined")(omitUndefined.get.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(runValidators)) __obj.updateDynamic("runValidators")(runValidators.get.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (!js.isUndefined(setDefaultsOnInsert)) __obj.updateDynamic("setDefaultsOnInsert")(setDefaultsOnInsert.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.get.asInstanceOf[js.Any])
+  def apply(`new`: `true` with js.UndefOr[Boolean], upsert: `true` with js.UndefOr[Boolean]): upserttruenewtrueQueryFin = {
+    val __obj = js.Dynamic.literal(upsert = upsert.asInstanceOf[js.Any])
+    __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
     __obj.asInstanceOf[upserttruenewtrueQueryFin]
   }
+  @scala.inline
+  implicit class upserttruenewtrueQueryFinOps[Self <: upserttruenewtrueQueryFin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNew(value: `true` with js.UndefOr[Boolean]): Self = this.set("new", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpsert(value: `true` with js.UndefOr[Boolean]): Self = this.set("upsert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayFiltersVarargs(value: StringDictionary[js.Any]*): Self = this.set("arrayFilters", js.Array(value :_*))
+    @scala.inline
+    def setArrayFilters(value: js.Array[StringDictionary[_]]): Self = this.set("arrayFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayFilters: Self = this.set("arrayFilters", js.undefined)
+    @scala.inline
+    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setFields(value: js.Any | String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setLean(value: js.Any): Self = this.set("lean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLean: Self = this.set("lean", js.undefined)
+    @scala.inline
+    def setMaxTimeMS(value: Double): Self = this.set("maxTimeMS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTimeMS: Self = this.set("maxTimeMS", js.undefined)
+    @scala.inline
+    def setMultipleCastError(value: Boolean): Self = this.set("multipleCastError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultipleCastError: Self = this.set("multipleCastError", js.undefined)
+    @scala.inline
+    def setOmitUndefined(value: Boolean): Self = this.set("omitUndefined", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOmitUndefined: Self = this.set("omitUndefined", js.undefined)
+    @scala.inline
+    def setProjection(value: js.Any): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setRawResult(value: Boolean): Self = this.set("rawResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawResult: Self = this.set("rawResult", js.undefined)
+    @scala.inline
+    def setRunValidators(value: Boolean): Self = this.set("runValidators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunValidators: Self = this.set("runValidators", js.undefined)
+    @scala.inline
+    def setSelect(value: js.Any): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setSession(value: ClientSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("session", js.undefined)
+    @scala.inline
+    def setSetDefaultsOnInsert(value: Boolean): Self = this.set("setDefaultsOnInsert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetDefaultsOnInsert: Self = this.set("setDefaultsOnInsert", js.undefined)
+    @scala.inline
+    def setSort(value: js.Any): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setStrict(value: Boolean | `throw`): Self = this.set("strict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrict: Self = this.set("strict", js.undefined)
+    @scala.inline
+    def setTimestamps(value: Boolean): Self = this.set("timestamps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamps: Self = this.set("timestamps", js.undefined)
+    @scala.inline
+    def setUseFindAndModify(value: Boolean): Self = this.set("useFindAndModify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseFindAndModify: Self = this.set("useFindAndModify", js.undefined)
+  }
+  
 }
 

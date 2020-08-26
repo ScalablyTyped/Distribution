@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RsaOtherPrimesInfo extends js.Object {
-  var d: js.UndefOr[java.lang.String] = js.undefined
-  var r: js.UndefOr[java.lang.String] = js.undefined
-  var t: js.UndefOr[java.lang.String] = js.undefined
+  var d: js.UndefOr[java.lang.String] = js.native
+  var r: js.UndefOr[java.lang.String] = js.native
+  var t: js.UndefOr[java.lang.String] = js.native
 }
 
 object RsaOtherPrimesInfo {
   @scala.inline
-  def apply(d: java.lang.String = null, r: java.lang.String = null, t: java.lang.String = null): RsaOtherPrimesInfo = {
+  def apply(): RsaOtherPrimesInfo = {
     val __obj = js.Dynamic.literal()
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (t != null) __obj.updateDynamic("t")(t.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaOtherPrimesInfo]
   }
+  @scala.inline
+  implicit class RsaOtherPrimesInfoOps[Self <: RsaOtherPrimesInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setD(value: java.lang.String): Self = this.set("d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteD: Self = this.set("d", js.undefined)
+    @scala.inline
+    def setR(value: java.lang.String): Self = this.set("r", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteR: Self = this.set("r", js.undefined)
+    @scala.inline
+    def setT(value: java.lang.String): Self = this.set("t", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteT: Self = this.set("t", js.undefined)
+  }
+  
 }
 

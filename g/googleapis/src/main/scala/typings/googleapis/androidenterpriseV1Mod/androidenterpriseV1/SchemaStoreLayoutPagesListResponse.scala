@@ -22,11 +22,32 @@ trait SchemaStoreLayoutPagesListResponse extends js.Object {
 
 object SchemaStoreLayoutPagesListResponse {
   @scala.inline
-  def apply(kind: String = null, page: js.Array[SchemaStorePage] = null): SchemaStoreLayoutPagesListResponse = {
+  def apply(): SchemaStoreLayoutPagesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStoreLayoutPagesListResponse]
   }
+  @scala.inline
+  implicit class SchemaStoreLayoutPagesListResponseOps[Self <: SchemaStoreLayoutPagesListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPageVarargs(value: SchemaStorePage*): Self = this.set("page", js.Array(value :_*))
+    @scala.inline
+    def setPage(value: js.Array[SchemaStorePage]): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+  }
+  
 }
 

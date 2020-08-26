@@ -6,42 +6,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledEvent extends Event {
   /**
     * Custom attributes that are associated with the event you're adding or updating.
     */
   @JSName("Attributes")
-  var Attributes_UnmarshalledEvent: js.UndefOr[StringDictionary[String]] = js.undefined
+  var Attributes_UnmarshalledEvent: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * Custom metrics related to the event.
     */
   @JSName("Metrics")
-  var Metrics_UnmarshalledEvent: js.UndefOr[StringDictionary[Double]] = js.undefined
+  var Metrics_UnmarshalledEvent: js.UndefOr[StringDictionary[Double]] = js.native
   /**
     * Information about the session in which the event occurred.
     */
   @JSName("Session")
-  var Session_UnmarshalledEvent: js.UndefOr[UnmarshalledSession] = js.undefined
+  var Session_UnmarshalledEvent: js.UndefOr[UnmarshalledSession] = js.native
 }
 
 object UnmarshalledEvent {
   @scala.inline
-  def apply(
-    Attributes: StringDictionary[String] = null,
-    ClientSdkVersion: String = null,
-    EventType: String = null,
-    Metrics: StringDictionary[Double] = null,
-    Session: UnmarshalledSession = null,
-    Timestamp: String = null
-  ): UnmarshalledEvent = {
+  def apply(): UnmarshalledEvent = {
     val __obj = js.Dynamic.literal()
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (ClientSdkVersion != null) __obj.updateDynamic("ClientSdkVersion")(ClientSdkVersion.asInstanceOf[js.Any])
-    if (EventType != null) __obj.updateDynamic("EventType")(EventType.asInstanceOf[js.Any])
-    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
-    if (Session != null) __obj.updateDynamic("Session")(Session.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledEvent]
   }
+  @scala.inline
+  implicit class UnmarshalledEventOps[Self <: UnmarshalledEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: StringDictionary[String]): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setMetrics(value: StringDictionary[Double]): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    @scala.inline
+    def setSession(value: UnmarshalledSession): Self = this.set("Session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("Session", js.undefined)
+  }
+  
 }
 

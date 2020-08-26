@@ -26,18 +26,42 @@ trait SegmentGroup extends js.Object {
 
 object SegmentGroup {
   @scala.inline
-  def apply(
-    Dimensions: ListOfSegmentDimensions = null,
-    SourceSegments: ListOfSegmentReference = null,
-    SourceType: SourceType = null,
-    Type: Type = null
-  ): SegmentGroup = {
+  def apply(): SegmentGroup = {
     val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (SourceSegments != null) __obj.updateDynamic("SourceSegments")(SourceSegments.asInstanceOf[js.Any])
-    if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentGroup]
   }
+  @scala.inline
+  implicit class SegmentGroupOps[Self <: SegmentGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionsVarargs(value: SegmentDimensions*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: ListOfSegmentDimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setSourceSegmentsVarargs(value: SegmentReference*): Self = this.set("SourceSegments", js.Array(value :_*))
+    @scala.inline
+    def setSourceSegments(value: ListOfSegmentReference): Self = this.set("SourceSegments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSegments: Self = this.set("SourceSegments", js.undefined)
+    @scala.inline
+    def setSourceType(value: SourceType): Self = this.set("SourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    @scala.inline
+    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

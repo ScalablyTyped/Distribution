@@ -64,6 +64,7 @@ class Accounts () extends StripeResource {
     * Returns a login link object if the call succeeded.
     */
   def createLoginLink(accId: String): js.Promise[ILoginLink] = js.native
+  def createLoginLink(accId: String, options: js.UndefOr[scala.Nothing], response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
   def createLoginLink(accId: String, options: ILoginLinkOptions): js.Promise[ILoginLink] = js.native
   def createLoginLink(accId: String, options: ILoginLinkOptions, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
   def createLoginLink(accId: String, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native

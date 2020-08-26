@@ -4,24 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateQueueMessagesOptions extends TimeoutIntervalOptions {
-  var messagetext: js.UndefOr[String] = js.undefined
+  var messagetext: js.UndefOr[String] = js.native
 }
 
 object UpdateQueueMessagesOptions {
   @scala.inline
-  def apply(
-    locationMode: String = null,
-    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
-    messagetext: String = null,
-    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
-  ): UpdateQueueMessagesOptions = {
+  def apply(): UpdateQueueMessagesOptions = {
     val __obj = js.Dynamic.literal()
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
-    if (messagetext != null) __obj.updateDynamic("messagetext")(messagetext.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateQueueMessagesOptions]
   }
+  @scala.inline
+  implicit class UpdateQueueMessagesOptionsOps[Self <: UpdateQueueMessagesOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessagetext(value: String): Self = this.set("messagetext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagetext: Self = this.set("messagetext", js.undefined)
+  }
+  
 }
 

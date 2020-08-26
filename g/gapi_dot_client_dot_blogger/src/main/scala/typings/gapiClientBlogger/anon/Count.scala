@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Count extends js.Object {
   /** Count of page views for the given time range */
-  var count: js.UndefOr[String] = js.undefined
+  var count: js.UndefOr[String] = js.native
   /** Time range the given count applies to */
-  var timeRange: js.UndefOr[String] = js.undefined
+  var timeRange: js.UndefOr[String] = js.native
 }
 
 object Count {
   @scala.inline
-  def apply(count: String = null, timeRange: String = null): Count = {
+  def apply(): Count = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Count]
   }
+  @scala.inline
+  implicit class CountOps[Self <: Count] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setTimeRange(value: String): Self = this.set("timeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeRange: Self = this.set("timeRange", js.undefined)
+  }
+  
 }
 

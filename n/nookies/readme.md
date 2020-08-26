@@ -12,7 +12,7 @@ A set of cookie helpers for Next.js
 | Keywords           | cookie, cookies, next, nextjs, js, auth, destory, parse, create, nookies |
 | # releases         | 22 |
 | # dependents       | 7 |
-| # downloads        | 469834 |
+| # downloads        | 513466 |
 | # stars            | 0 |
 
 ## Links

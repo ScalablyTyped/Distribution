@@ -25,9 +25,6 @@ class ColorSliderBase protected ()
   var _root: js.Any = js.native
   val _type: js.Any = js.native
   var _updateValue: js.Any = js.native
-  /** Current value of the slider. */
-  /* CompleteClass */
-  override var value: Double = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MColorSliderBase(prevProps: ReadonlyIColorSliderProps, prevState: ReadonlyIColorSliderState): Unit = js.native
   @JSName("componentWillUnmount")

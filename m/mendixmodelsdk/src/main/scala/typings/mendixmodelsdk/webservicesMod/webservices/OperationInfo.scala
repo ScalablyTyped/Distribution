@@ -28,35 +28,33 @@ class OperationInfo protected () extends Element {
     * In version 6.1.0: deleted
     */
   def allowSimpleMappingInheritance: Boolean = js.native
-  def allowSimpleMappingInheritance(newValue: Boolean): js.Any = js.native
+  def allowSimpleMappingInheritance_=(newValue: Boolean): Unit = js.native
   def containerAsServiceInfo: ServiceInfo = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def requestBodyElementName: String = js.native
-  def requestBodyElementName(newValue: String): js.Any = js.native
+  def requestBodyElementName_=(newValue: String): Unit = js.native
   def requestBodyEncoded: Boolean = js.native
-  def requestBodyEncoded(newValue: Boolean): js.Any = js.native
+  def requestBodyEncoded_=(newValue: Boolean): Unit = js.native
   def requestBodyPartEncodings: IList[PartEncoding] = js.native
   def requestBodyRpcElement: RpcOperationElement = js.native
-  def requestBodyRpcElement(newValue: RpcOperationElement): js.Any = js.native
+  def requestBodyRpcElement_=(newValue: RpcOperationElement): Unit = js.native
   def requestHeaderElementName: String = js.native
-  def requestHeaderElementName(newValue: String): js.Any = js.native
+  def requestHeaderElementName_=(newValue: String): Unit = js.native
   def requestHeaderEncoded: Boolean = js.native
-  def requestHeaderEncoded(newValue: Boolean): js.Any = js.native
-  def requestHeaderPartEncoding(): js.Any = js.native
-  def requestHeaderPartEncoding(newValue: PartEncoding): js.Any = js.native
-  @JSName("requestHeaderPartEncoding")
-  def requestHeaderPartEncoding_Union: PartEncoding | Null = js.native
+  def requestHeaderEncoded_=(newValue: Boolean): Unit = js.native
+  def requestHeaderPartEncoding: PartEncoding | Null = js.native
+  def requestHeaderPartEncoding_=(newValue: PartEncoding | Null): Unit = js.native
   def requestHeaderRpcElement: RpcOperationElement = js.native
-  def requestHeaderRpcElement(newValue: RpcOperationElement): js.Any = js.native
+  def requestHeaderRpcElement_=(newValue: RpcOperationElement): Unit = js.native
   def responseBodyElementName: String = js.native
-  def responseBodyElementName(newValue: String): js.Any = js.native
+  def responseBodyElementName_=(newValue: String): Unit = js.native
   def responseBodyRpcElement: RpcOperationElement = js.native
-  def responseBodyRpcElement(newValue: RpcOperationElement): js.Any = js.native
+  def responseBodyRpcElement_=(newValue: RpcOperationElement): Unit = js.native
   def soapAction: String = js.native
-  def soapAction(newValue: String): js.Any = js.native
+  def soapAction_=(newValue: String): Unit = js.native
 }
 
 /* static members */

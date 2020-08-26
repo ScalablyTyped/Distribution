@@ -4,54 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FitBoundsOptions extends FlyToOptions {
-  var linear: js.UndefOr[Boolean] = js.undefined
-  var maxZoom: js.UndefOr[Double] = js.undefined
-  var padding: js.UndefOr[Double | PaddingOptions] = js.undefined
+  var linear: js.UndefOr[Boolean] = js.native
+  var maxZoom: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double | PaddingOptions] = js.native
 }
 
 object FitBoundsOptions {
   @scala.inline
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    around: LngLatLike = null,
-    bearing: js.UndefOr[Double] = js.undefined,
-    center: LngLatLike = null,
-    curve: js.UndefOr[Double] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    easing: /* time */ Double => Double = null,
-    essential: js.UndefOr[Boolean] = js.undefined,
-    linear: js.UndefOr[Boolean] = js.undefined,
-    maxDuration: js.UndefOr[Double] = js.undefined,
-    maxZoom: js.UndefOr[Double] = js.undefined,
-    minZoom: js.UndefOr[Double] = js.undefined,
-    offset: PointLike = null,
-    padding: Double | PaddingOptions = null,
-    pitch: js.UndefOr[Double] = js.undefined,
-    screenSpeed: js.UndefOr[Double] = js.undefined,
-    speed: js.UndefOr[Double] = js.undefined,
-    zoom: js.UndefOr[Double] = js.undefined
-  ): FitBoundsOptions = {
+  def apply(): FitBoundsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (around != null) __obj.updateDynamic("around")(around.asInstanceOf[js.Any])
-    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(curve)) __obj.updateDynamic("curve")(curve.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(linear)) __obj.updateDynamic("linear")(linear.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDuration)) __obj.updateDynamic("maxDuration")(maxDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenSpeed)) __obj.updateDynamic("screenSpeed")(screenSpeed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FitBoundsOptions]
   }
+  @scala.inline
+  implicit class FitBoundsOptionsOps[Self <: FitBoundsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLinear(value: Boolean): Self = this.set("linear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinear: Self = this.set("linear", js.undefined)
+    @scala.inline
+    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    @scala.inline
+    def setPadding(value: Double | PaddingOptions): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+  }
+  
 }
 

@@ -22,5 +22,22 @@ object ProjectSourceVersion {
     val __obj = js.Dynamic.literal(sourceIdentifier = sourceIdentifier.asInstanceOf[js.Any], sourceVersion = sourceVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSourceVersion]
   }
+  @scala.inline
+  implicit class ProjectSourceVersionOps[Self <: ProjectSourceVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceIdentifier(value: String): Self = this.set("sourceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceVersion(value: String): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -4,27 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TestOptions extends ExperimentOptions {
   /** The expected number of assertions to execute */
-  var plan: js.UndefOr[Double] = js.undefined
+  var plan: js.UndefOr[Double] = js.native
 }
 
 object TestOptions {
   @scala.inline
-  def apply(
-    only: js.UndefOr[Boolean] = js.undefined,
-    parallel: js.UndefOr[Boolean] = js.undefined,
-    plan: js.UndefOr[Double] = js.undefined,
-    skip: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): TestOptions = {
+  def apply(): TestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(plan)) __obj.updateDynamic("plan")(plan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestOptions]
   }
+  @scala.inline
+  implicit class TestOptionsOps[Self <: TestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlan(value: Double): Self = this.set("plan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlan: Self = this.set("plan", js.undefined)
+  }
+  
 }
 

@@ -14,26 +14,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DividerModifierProps extends js.Object {
-  var children: js.UndefOr[String | Double] = js.undefined
+  var children: js.UndefOr[String | Double] = js.native
   var color: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link
-  ] = js.undefined
-  var vertical: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var vertical: js.UndefOr[Boolean] = js.native
 }
 
 object DividerModifierProps {
   @scala.inline
-  def apply(
-    children: String | Double = null,
-    color: primary | success | info | warning | danger | light | dark | white | black | link = null,
-    vertical: js.UndefOr[Boolean] = js.undefined
-  ): DividerModifierProps = {
+  def apply(): DividerModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DividerModifierProps]
   }
+  @scala.inline
+  implicit class DividerModifierPropsOps[Self <: DividerModifierProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: String | Double): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+  }
+  
 }
 

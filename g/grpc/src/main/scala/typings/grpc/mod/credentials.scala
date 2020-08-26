@@ -53,8 +53,54 @@ object credentials extends js.Object {
     * @return The SSL Credentials object
     */
   def createSsl(): ChannelCredentials = js.native
+  def createSsl(
+    rootCerts: js.UndefOr[scala.Nothing],
+    privateKey: js.UndefOr[scala.Nothing],
+    certChain: js.UndefOr[scala.Nothing],
+    verifyOptions: VerifyOptions
+  ): ChannelCredentials = js.native
+  def createSsl(rootCerts: js.UndefOr[scala.Nothing], privateKey: js.UndefOr[scala.Nothing], certChain: Buffer): ChannelCredentials = js.native
+  def createSsl(
+    rootCerts: js.UndefOr[scala.Nothing],
+    privateKey: js.UndefOr[scala.Nothing],
+    certChain: Buffer,
+    verifyOptions: VerifyOptions
+  ): ChannelCredentials = js.native
+  def createSsl(rootCerts: js.UndefOr[scala.Nothing], privateKey: Buffer): ChannelCredentials = js.native
+  def createSsl(
+    rootCerts: js.UndefOr[scala.Nothing],
+    privateKey: Buffer,
+    certChain: js.UndefOr[scala.Nothing],
+    verifyOptions: VerifyOptions
+  ): ChannelCredentials = js.native
+  def createSsl(rootCerts: js.UndefOr[scala.Nothing], privateKey: Buffer, certChain: Buffer): ChannelCredentials = js.native
+  def createSsl(
+    rootCerts: js.UndefOr[scala.Nothing],
+    privateKey: Buffer,
+    certChain: Buffer,
+    verifyOptions: VerifyOptions
+  ): ChannelCredentials = js.native
   def createSsl(rootCerts: Buffer): ChannelCredentials = js.native
+  def createSsl(
+    rootCerts: Buffer,
+    privateKey: js.UndefOr[scala.Nothing],
+    certChain: js.UndefOr[scala.Nothing],
+    verifyOptions: VerifyOptions
+  ): ChannelCredentials = js.native
+  def createSsl(rootCerts: Buffer, privateKey: js.UndefOr[scala.Nothing], certChain: Buffer): ChannelCredentials = js.native
+  def createSsl(
+    rootCerts: Buffer,
+    privateKey: js.UndefOr[scala.Nothing],
+    certChain: Buffer,
+    verifyOptions: VerifyOptions
+  ): ChannelCredentials = js.native
   def createSsl(rootCerts: Buffer, privateKey: Buffer): ChannelCredentials = js.native
+  def createSsl(
+    rootCerts: Buffer,
+    privateKey: Buffer,
+    certChain: js.UndefOr[scala.Nothing],
+    verifyOptions: VerifyOptions
+  ): ChannelCredentials = js.native
   def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer): ChannelCredentials = js.native
   def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer, verifyOptions: VerifyOptions): ChannelCredentials = js.native
 }

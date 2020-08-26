@@ -14,10 +14,26 @@ trait PinpointDestination extends js.Object {
 
 object PinpointDestination {
   @scala.inline
-  def apply(ApplicationArn: AmazonResourceName = null): PinpointDestination = {
+  def apply(): PinpointDestination = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationArn != null) __obj.updateDynamic("ApplicationArn")(ApplicationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinpointDestination]
   }
+  @scala.inline
+  implicit class PinpointDestinationOps[Self <: PinpointDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationArn(value: AmazonResourceName): Self = this.set("ApplicationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationArn: Self = this.set("ApplicationArn", js.undefined)
+  }
+  
 }
 

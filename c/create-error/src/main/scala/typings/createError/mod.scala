@@ -15,10 +15,11 @@ object mod extends js.Object {
     extends typings.std.Error
        with Instantiable0[T]
        with Instantiable1[/* message */ String, T]
-       with Instantiable2[/* message */ String, /* obj */ js.Any, T]
+       with Instantiable2[js.UndefOr[/* message */ String], /* obj */ js.Any, T]
   
   def apply(): Error[Error[Err]] = js.native
   def apply[T /* <: Error[Error[Err]] */](Target: Error[Error[Err]]): T = js.native
+  def apply[T /* <: Error[Error[Err]] */](Target: Error[Error[Err]], name: js.UndefOr[scala.Nothing], properties: js.Any): T = js.native
   def apply[T /* <: Error[Error[Err]] */](Target: Error[Error[Err]], name: String): T = js.native
   def apply[T /* <: Error[Error[Err]] */](Target: Error[Error[Err]], name: String, properties: js.Any): T = js.native
   def apply[T /* <: Error[Error[Err]] */](name: String): T = js.native

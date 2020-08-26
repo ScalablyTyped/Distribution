@@ -42,25 +42,56 @@ trait ModifyDBProxyRequest extends js.Object {
 
 object ModifyDBProxyRequest {
   @scala.inline
-  def apply(
-    DBProxyName: String,
-    Auth: UserAuthConfigList = null,
-    DebugLogging: js.UndefOr[BooleanOptional] = js.undefined,
-    IdleClientTimeout: js.UndefOr[IntegerOptional] = js.undefined,
-    NewDBProxyName: String = null,
-    RequireTLS: js.UndefOr[BooleanOptional] = js.undefined,
-    RoleArn: String = null,
-    SecurityGroups: StringList = null
-  ): ModifyDBProxyRequest = {
+  def apply(DBProxyName: String): ModifyDBProxyRequest = {
     val __obj = js.Dynamic.literal(DBProxyName = DBProxyName.asInstanceOf[js.Any])
-    if (Auth != null) __obj.updateDynamic("Auth")(Auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(DebugLogging)) __obj.updateDynamic("DebugLogging")(DebugLogging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IdleClientTimeout)) __obj.updateDynamic("IdleClientTimeout")(IdleClientTimeout.get.asInstanceOf[js.Any])
-    if (NewDBProxyName != null) __obj.updateDynamic("NewDBProxyName")(NewDBProxyName.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireTLS)) __obj.updateDynamic("RequireTLS")(RequireTLS.get.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBProxyRequest]
   }
+  @scala.inline
+  implicit class ModifyDBProxyRequestOps[Self <: ModifyDBProxyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthVarargs(value: UserAuthConfig*): Self = this.set("Auth", js.Array(value :_*))
+    @scala.inline
+    def setAuth(value: UserAuthConfigList): Self = this.set("Auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("Auth", js.undefined)
+    @scala.inline
+    def setDebugLogging(value: BooleanOptional): Self = this.set("DebugLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugLogging: Self = this.set("DebugLogging", js.undefined)
+    @scala.inline
+    def setIdleClientTimeout(value: IntegerOptional): Self = this.set("IdleClientTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleClientTimeout: Self = this.set("IdleClientTimeout", js.undefined)
+    @scala.inline
+    def setNewDBProxyName(value: String): Self = this.set("NewDBProxyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewDBProxyName: Self = this.set("NewDBProxyName", js.undefined)
+    @scala.inline
+    def setRequireTLS(value: BooleanOptional): Self = this.set("RequireTLS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireTLS: Self = this.set("RequireTLS", js.undefined)
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: String*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: StringList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+  }
+  
 }
 

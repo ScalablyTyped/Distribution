@@ -22,16 +22,36 @@ trait SensitiveDataItem extends js.Object {
 
 object SensitiveDataItem {
   @scala.inline
-  def apply(
-    category: SensitiveDataItemCategory = null,
-    detections: DefaultDetections = null,
-    totalCount: js.UndefOr[long] = js.undefined
-  ): SensitiveDataItem = {
+  def apply(): SensitiveDataItem = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (detections != null) __obj.updateDynamic("detections")(detections.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalCount)) __obj.updateDynamic("totalCount")(totalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SensitiveDataItem]
   }
+  @scala.inline
+  implicit class SensitiveDataItemOps[Self <: SensitiveDataItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: SensitiveDataItemCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setDetectionsVarargs(value: DefaultDetection*): Self = this.set("detections", js.Array(value :_*))
+    @scala.inline
+    def setDetections(value: DefaultDetections): Self = this.set("detections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetections: Self = this.set("detections", js.undefined)
+    @scala.inline
+    def setTotalCount(value: long): Self = this.set("totalCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
+  }
+  
 }
 

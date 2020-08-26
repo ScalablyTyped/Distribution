@@ -73,24 +73,65 @@ object InstanceGroupDetail {
     InstanceRunningCount: Integer,
     InstanceType: InstanceType,
     Market: MarketType,
-    State: InstanceGroupState,
-    BidPrice: XmlStringMaxLen256 = null,
-    EndDateTime: Date = null,
-    InstanceGroupId: XmlStringMaxLen256 = null,
-    LastStateChangeReason: XmlString = null,
-    Name: XmlStringMaxLen256 = null,
-    ReadyDateTime: Date = null,
-    StartDateTime: Date = null
+    State: InstanceGroupState
   ): InstanceGroupDetail = {
     val __obj = js.Dynamic.literal(CreationDateTime = CreationDateTime.asInstanceOf[js.Any], InstanceRequestCount = InstanceRequestCount.asInstanceOf[js.Any], InstanceRole = InstanceRole.asInstanceOf[js.Any], InstanceRunningCount = InstanceRunningCount.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any], Market = Market.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
-    if (BidPrice != null) __obj.updateDynamic("BidPrice")(BidPrice.asInstanceOf[js.Any])
-    if (EndDateTime != null) __obj.updateDynamic("EndDateTime")(EndDateTime.asInstanceOf[js.Any])
-    if (InstanceGroupId != null) __obj.updateDynamic("InstanceGroupId")(InstanceGroupId.asInstanceOf[js.Any])
-    if (LastStateChangeReason != null) __obj.updateDynamic("LastStateChangeReason")(LastStateChangeReason.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ReadyDateTime != null) __obj.updateDynamic("ReadyDateTime")(ReadyDateTime.asInstanceOf[js.Any])
-    if (StartDateTime != null) __obj.updateDynamic("StartDateTime")(StartDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupDetail]
   }
+  @scala.inline
+  implicit class InstanceGroupDetailOps[Self <: InstanceGroupDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDateTime(value: Date): Self = this.set("CreationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceRequestCount(value: Integer): Self = this.set("InstanceRequestCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceRole(value: InstanceRoleType): Self = this.set("InstanceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceRunningCount(value: Integer): Self = this.set("InstanceRunningCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMarket(value: MarketType): Self = this.set("Market", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: InstanceGroupState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBidPrice(value: XmlStringMaxLen256): Self = this.set("BidPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidPrice: Self = this.set("BidPrice", js.undefined)
+    @scala.inline
+    def setEndDateTime(value: Date): Self = this.set("EndDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDateTime: Self = this.set("EndDateTime", js.undefined)
+    @scala.inline
+    def setInstanceGroupId(value: XmlStringMaxLen256): Self = this.set("InstanceGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroupId: Self = this.set("InstanceGroupId", js.undefined)
+    @scala.inline
+    def setLastStateChangeReason(value: XmlString): Self = this.set("LastStateChangeReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStateChangeReason: Self = this.set("LastStateChangeReason", js.undefined)
+    @scala.inline
+    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setReadyDateTime(value: Date): Self = this.set("ReadyDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadyDateTime: Self = this.set("ReadyDateTime", js.undefined)
+    @scala.inline
+    def setStartDateTime(value: Date): Self = this.set("StartDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDateTime: Self = this.set("StartDateTime", js.undefined)
+  }
+  
 }
 

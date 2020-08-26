@@ -51,6 +51,7 @@ trait FancyBoxInstanceMethods extends js.Object {
     * @param nextHeight
     */
   def canPan(): Boolean = js.native
+  def canPan(nextWidth: js.UndefOr[scala.Nothing], nextHeight: Double): Boolean = js.native
   def canPan(nextWidth: Double): Boolean = js.native
   def canPan(nextWidth: Double, nextHeight: Double): Boolean = js.native
   /**
@@ -127,6 +128,7 @@ trait FancyBoxInstanceMethods extends js.Object {
     * @param nextHeight
     */
   def isScaledDown(): Boolean = js.native
+  def isScaledDown(nextWidth: js.UndefOr[scala.Nothing], nextHeight: Double): Boolean = js.native
   def isScaledDown(nextWidth: Double): Boolean = js.native
   def isScaledDown(nextWidth: Double, nextHeight: Double): Boolean = js.native
   /**
@@ -185,7 +187,11 @@ trait FancyBoxInstanceMethods extends js.Object {
     * @param duration
     */
   def scaleToActual(): Unit = js.native
+  def scaleToActual(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
+  def scaleToActual(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def scaleToActual(x: js.UndefOr[scala.Nothing], y: Double, duration: Double): Unit = js.native
   def scaleToActual(x: Double): Unit = js.native
+  def scaleToActual(x: Double, y: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
   def scaleToActual(x: Double, y: Double): Unit = js.native
   def scaleToActual(x: Double, y: Double, duration: Double): Unit = js.native
   /**

@@ -33,7 +33,11 @@ object ClassManager extends js.Object {
     * @param createdFn Object
     */
   def create(): Unit = js.native
+  def create(className: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], createdFn: js.Any): Unit = js.native
+  def create(className: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
+  def create(className: js.UndefOr[scala.Nothing], data: js.Any, createdFn: js.Any): Unit = js.native
   def create(className: js.Any): Unit = js.native
+  def create(className: js.Any, data: js.UndefOr[scala.Nothing], createdFn: js.Any): Unit = js.native
   def create(className: js.Any, data: js.Any): Unit = js.native
   def create(className: js.Any, data: js.Any, createdFn: js.Any): Unit = js.native
   /** [Method] Retrieve a class by its name
@@ -103,6 +107,7 @@ object ClassManager extends js.Object {
     * @returns Ext.ClassManager this
     */
   def set(): IClassManager = js.native
+  def set(name: js.UndefOr[scala.Nothing], value: js.Any): IClassManager = js.native
   def set(name: java.lang.String): IClassManager = js.native
   def set(name: java.lang.String, value: js.Any): IClassManager = js.native
   /** [Method] Register the alias for a class
@@ -111,6 +116,7 @@ object ClassManager extends js.Object {
     * @returns Ext.ClassManager this
     */
   def setAlias(): IClassManager = js.native
+  def setAlias(cls: js.UndefOr[scala.Nothing], alias: java.lang.String): IClassManager = js.native
   def setAlias(cls: js.Any): IClassManager = js.native
   def setAlias(cls: js.Any, alias: java.lang.String): IClassManager = js.native
   /** [Method] Creates a namespace and assign the value to the created object Ext ClassManager setNamespace MyCompany pkg Example
@@ -118,6 +124,7 @@ object ClassManager extends js.Object {
     * @param value Object
     */
   def setNamespace(): Unit = js.native
+  def setNamespace(name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def setNamespace(name: java.lang.String): Unit = js.native
   def setNamespace(name: java.lang.String, value: js.Any): Unit = js.native
 }

@@ -18,11 +18,32 @@ trait ReservedDBInstancesOfferingMessage extends js.Object {
 
 object ReservedDBInstancesOfferingMessage {
   @scala.inline
-  def apply(Marker: String = null, ReservedDBInstancesOfferings: ReservedDBInstancesOfferingList = null): ReservedDBInstancesOfferingMessage = {
+  def apply(): ReservedDBInstancesOfferingMessage = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (ReservedDBInstancesOfferings != null) __obj.updateDynamic("ReservedDBInstancesOfferings")(ReservedDBInstancesOfferings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedDBInstancesOfferingMessage]
   }
+  @scala.inline
+  implicit class ReservedDBInstancesOfferingMessageOps[Self <: ReservedDBInstancesOfferingMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setReservedDBInstancesOfferingsVarargs(value: ReservedDBInstancesOffering*): Self = this.set("ReservedDBInstancesOfferings", js.Array(value :_*))
+    @scala.inline
+    def setReservedDBInstancesOfferings(value: ReservedDBInstancesOfferingList): Self = this.set("ReservedDBInstancesOfferings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedDBInstancesOfferings: Self = this.set("ReservedDBInstancesOfferings", js.undefined)
+  }
+  
 }
 

@@ -19,6 +19,7 @@ trait IObservableArray[T] extends Array[T] {
   def remove(value: T): Boolean = js.native
   def replace(newItems: js.Array[T]): js.Array[T] = js.native
   def spliceWithArray(index: Double): js.Array[T] = js.native
+  def spliceWithArray(index: Double, deleteCount: js.UndefOr[scala.Nothing], newItems: js.Array[T]): js.Array[T] = js.native
   def spliceWithArray(index: Double, deleteCount: Double): js.Array[T] = js.native
   def spliceWithArray(index: Double, deleteCount: Double, newItems: js.Array[T]): js.Array[T] = js.native
   def toJS(): js.Array[T] = js.native

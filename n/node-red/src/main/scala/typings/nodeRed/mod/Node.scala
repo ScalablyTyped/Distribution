@@ -34,7 +34,11 @@ trait Node
     */
   def log(msg: js.Any): Unit = js.native
   def metric(): Unit = js.native
+  def metric(eventname: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], metricValue: js.Any): Unit = js.native
+  def metric(eventname: js.UndefOr[scala.Nothing], msg: js.Any): Unit = js.native
+  def metric(eventname: js.UndefOr[scala.Nothing], msg: js.Any, metricValue: js.Any): Unit = js.native
   def metric(eventname: js.Any): Unit = js.native
+  def metric(eventname: js.Any, msg: js.UndefOr[scala.Nothing], metricValue: js.Any): Unit = js.native
   def metric(eventname: js.Any, msg: js.Any): Unit = js.native
   def metric(eventname: js.Any, msg: js.Any, metricValue: js.Any): Unit = js.native
   /**

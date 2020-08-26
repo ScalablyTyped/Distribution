@@ -28,6 +28,7 @@ class ResourceGroupsAliases protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceGroupsAliasesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceGroupsAliasesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceGroupsAliases protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaAlias] = js.native
   def insert(callback: BodyResponseCallback[SchemaAlias]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlias] = js.native
   def insert(params: ParamsResourceGroupsAliasesInsert): GaxiosPromise[SchemaAlias] = js.native
   def insert(params: ParamsResourceGroupsAliasesInsert, callback: BodyResponseCallback[SchemaAlias]): Unit = js.native
   def insert(
@@ -83,6 +85,7 @@ class ResourceGroupsAliases protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAliases] = js.native
   def list(callback: BodyResponseCallback[SchemaAliases]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAliases] = js.native
   def list(params: ParamsResourceGroupsAliasesList): GaxiosPromise[SchemaAliases] = js.native
   def list(params: ParamsResourceGroupsAliasesList, callback: BodyResponseCallback[SchemaAliases]): Unit = js.native
   def list(

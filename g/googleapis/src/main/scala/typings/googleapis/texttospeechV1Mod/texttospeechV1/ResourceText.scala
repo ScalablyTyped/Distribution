@@ -28,6 +28,7 @@ class ResourceText protected () extends js.Object {
     */
   def synthesize(): GaxiosPromise[SchemaSynthesizeSpeechResponse] = js.native
   def synthesize(callback: BodyResponseCallback[SchemaSynthesizeSpeechResponse]): Unit = js.native
+  def synthesize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSynthesizeSpeechResponse] = js.native
   def synthesize(params: ParamsResourceTextSynthesize): GaxiosPromise[SchemaSynthesizeSpeechResponse] = js.native
   def synthesize(
     params: ParamsResourceTextSynthesize,

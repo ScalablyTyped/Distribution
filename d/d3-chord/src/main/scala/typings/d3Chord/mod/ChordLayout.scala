@@ -27,11 +27,9 @@ trait ChordLayout extends js.Object {
     */
   def padAngle(angle: Double): this.type = js.native
   /**
-    * Removes the current chord comparator and returns this chord layout.
-    *
-    * @param compare Use null to remove the current comparator function, if any.
+    * Returns the current chord comparator, which defaults to null.
     */
-  def sortChords(): this.type = js.native
+  def sortChords(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
   /**
     * Sets the chord comparator to the specified function and returns this chord layout.
     *
@@ -42,16 +40,15 @@ trait ChordLayout extends js.Object {
     */
   def sortChords(compare: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
   /**
-    * Returns the current chord comparator, which defaults to null.
-    */
-  @JSName("sortChords")
-  def sortChords_Union(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
-  /**
-    * Removes the current group comparator and returns this chord layout.
+    * Removes the current chord comparator and returns this chord layout.
     *
     * @param compare Use null to remove the current comparator function, if any.
     */
-  def sortGroups(): this.type = js.native
+  def sortChords(compare: Null): this.type = js.native
+  /**
+    * Returns the current group comparator, which defaults to null.
+    */
+  def sortGroups(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
   /**
     * Sets the group comparator to the specified function and returns this chord layout.
     *
@@ -61,16 +58,15 @@ trait ChordLayout extends js.Object {
     */
   def sortGroups(compare: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
   /**
-    * Returns the current group comparator, which defaults to null.
-    */
-  @JSName("sortGroups")
-  def sortGroups_Union(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
-  /**
-    * Removes the current subgroup comparator and returns this chord layout.
+    * Removes the current group comparator and returns this chord layout.
     *
     * @param compare Use null to remove the current comparator function, if any.
     */
-  def sortSubgroups(): this.type = js.native
+  def sortGroups(compare: Null): this.type = js.native
+  /**
+    * Returns the current subgroup comparator, which defaults to null.
+    */
+  def sortSubgroups(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
   /**
     * Sets the subgroup comparator to the specified function and returns this chord layout.
     *
@@ -81,9 +77,10 @@ trait ChordLayout extends js.Object {
     */
   def sortSubgroups(compare: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
   /**
-    * Returns the current subgroup comparator, which defaults to null.
+    * Removes the current subgroup comparator and returns this chord layout.
+    *
+    * @param compare Use null to remove the current comparator function, if any.
     */
-  @JSName("sortSubgroups")
-  def sortSubgroups_Union(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
+  def sortSubgroups(compare: Null): this.type = js.native
 }
 

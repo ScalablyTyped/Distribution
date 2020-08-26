@@ -17,10 +17,26 @@ trait SchemaChartData extends js.Object {
 
 object SchemaChartData {
   @scala.inline
-  def apply(sourceRange: SchemaChartSourceRange = null): SchemaChartData = {
+  def apply(): SchemaChartData = {
     val __obj = js.Dynamic.literal()
-    if (sourceRange != null) __obj.updateDynamic("sourceRange")(sourceRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChartData]
   }
+  @scala.inline
+  implicit class SchemaChartDataOps[Self <: SchemaChartData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceRange(value: SchemaChartSourceRange): Self = this.set("sourceRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRange: Self = this.set("sourceRange", js.undefined)
+  }
+  
 }
 

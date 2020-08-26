@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IAffixOptions extends js.Object {
-  var offsetBottom: js.UndefOr[Double] = js.undefined
-  var offsetParent: js.UndefOr[Double] = js.undefined
-  var offsetTop: js.UndefOr[Double] = js.undefined
-  var offsetUnpin: js.UndefOr[Double] = js.undefined
+  var offsetBottom: js.UndefOr[Double] = js.native
+  var offsetParent: js.UndefOr[Double] = js.native
+  var offsetTop: js.UndefOr[Double] = js.native
+  var offsetUnpin: js.UndefOr[Double] = js.native
 }
 
 object IAffixOptions {
   @scala.inline
-  def apply(
-    offsetBottom: js.UndefOr[Double] = js.undefined,
-    offsetParent: js.UndefOr[Double] = js.undefined,
-    offsetTop: js.UndefOr[Double] = js.undefined,
-    offsetUnpin: js.UndefOr[Double] = js.undefined
-  ): IAffixOptions = {
+  def apply(): IAffixOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(offsetBottom)) __obj.updateDynamic("offsetBottom")(offsetBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetParent)) __obj.updateDynamic("offsetParent")(offsetParent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetTop)) __obj.updateDynamic("offsetTop")(offsetTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetUnpin)) __obj.updateDynamic("offsetUnpin")(offsetUnpin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAffixOptions]
   }
+  @scala.inline
+  implicit class IAffixOptionsOps[Self <: IAffixOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOffsetBottom(value: Double): Self = this.set("offsetBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetBottom: Self = this.set("offsetBottom", js.undefined)
+    @scala.inline
+    def setOffsetParent(value: Double): Self = this.set("offsetParent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetParent: Self = this.set("offsetParent", js.undefined)
+    @scala.inline
+    def setOffsetTop(value: Double): Self = this.set("offsetTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetTop: Self = this.set("offsetTop", js.undefined)
+    @scala.inline
+    def setOffsetUnpin(value: Double): Self = this.set("offsetUnpin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetUnpin: Self = this.set("offsetUnpin", js.undefined)
+  }
+  
 }
 

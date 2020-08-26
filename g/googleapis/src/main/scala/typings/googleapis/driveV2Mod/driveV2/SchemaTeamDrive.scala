@@ -67,30 +67,62 @@ trait SchemaTeamDrive extends js.Object {
 
 object SchemaTeamDrive {
   @scala.inline
-  def apply(
-    backgroundImageFile: XCoordinate = null,
-    backgroundImageLink: String = null,
-    capabilities: CanChangeCopyRequiresWriterPermissionRestriction = null,
-    colorRgb: String = null,
-    createdDate: String = null,
-    id: String = null,
-    kind: String = null,
-    name: String = null,
-    restrictions: AdminManagedRestrictions = null,
-    themeId: String = null
-  ): SchemaTeamDrive = {
+  def apply(): SchemaTeamDrive = {
     val __obj = js.Dynamic.literal()
-    if (backgroundImageFile != null) __obj.updateDynamic("backgroundImageFile")(backgroundImageFile.asInstanceOf[js.Any])
-    if (backgroundImageLink != null) __obj.updateDynamic("backgroundImageLink")(backgroundImageLink.asInstanceOf[js.Any])
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (colorRgb != null) __obj.updateDynamic("colorRgb")(colorRgb.asInstanceOf[js.Any])
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
-    if (themeId != null) __obj.updateDynamic("themeId")(themeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTeamDrive]
   }
+  @scala.inline
+  implicit class SchemaTeamDriveOps[Self <: SchemaTeamDrive] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundImageFile(value: XCoordinate): Self = this.set("backgroundImageFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageFile: Self = this.set("backgroundImageFile", js.undefined)
+    @scala.inline
+    def setBackgroundImageLink(value: String): Self = this.set("backgroundImageLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageLink: Self = this.set("backgroundImageLink", js.undefined)
+    @scala.inline
+    def setCapabilities(value: CanChangeCopyRequiresWriterPermissionRestriction): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    @scala.inline
+    def setColorRgb(value: String): Self = this.set("colorRgb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorRgb: Self = this.set("colorRgb", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: String): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRestrictions(value: AdminManagedRestrictions): Self = this.set("restrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictions: Self = this.set("restrictions", js.undefined)
+    @scala.inline
+    def setThemeId(value: String): Self = this.set("themeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeId: Self = this.set("themeId", js.undefined)
+  }
+  
 }
 

@@ -26,6 +26,7 @@ class ResourceViolatingsites protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaViolatingSitesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaViolatingSitesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaViolatingSitesResponse] = js.native
   def list(params: ParamsResourceViolatingsitesList): GaxiosPromise[SchemaViolatingSitesResponse] = js.native
   def list(
     params: ParamsResourceViolatingsitesList,

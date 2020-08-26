@@ -17,6 +17,13 @@ trait IService
   def oneUrl(route: String, url: String): IElement = js.native
   def restangularizeCollection(parent: js.Any, element: js.Any, route: String): ICollection = js.native
   def restangularizeElement(parent: js.Any, element: js.Any, route: String): IElement = js.native
+  def restangularizeElement(
+    parent: js.Any,
+    element: js.Any,
+    route: String,
+    collection: js.UndefOr[scala.Nothing],
+    reqParams: js.Any
+  ): IElement = js.native
   def restangularizeElement(parent: js.Any, element: js.Any, route: String, collection: js.Any): IElement = js.native
   def restangularizeElement(parent: js.Any, element: js.Any, route: String, collection: js.Any, reqParams: js.Any): IElement = js.native
   def service(route: String): IScopedService = js.native

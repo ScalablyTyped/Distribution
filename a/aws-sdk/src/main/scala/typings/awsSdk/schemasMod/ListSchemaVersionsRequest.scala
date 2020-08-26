@@ -23,16 +23,34 @@ trait ListSchemaVersionsRequest extends js.Object {
 
 object ListSchemaVersionsRequest {
   @scala.inline
-  def apply(
-    RegistryName: string,
-    SchemaName: string,
-    Limit: js.UndefOr[integer] = js.undefined,
-    NextToken: string = null
-  ): ListSchemaVersionsRequest = {
+  def apply(RegistryName: string, SchemaName: string): ListSchemaVersionsRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSchemaVersionsRequest]
   }
+  @scala.inline
+  implicit class ListSchemaVersionsRequestOps[Self <: ListSchemaVersionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchemaName(value: string): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimit(value: integer): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

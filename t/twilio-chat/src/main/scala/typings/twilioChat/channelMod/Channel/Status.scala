@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.twilioChat.twilioChatStrings.unknown
-  - typings.twilioChat.twilioChatStrings.known
+  - typings.twilioChat.twilioChatStrings.notParticipating
   - typings.twilioChat.twilioChatStrings.invited
   - typings.twilioChat.twilioChatStrings.joined
 */
@@ -18,7 +18,7 @@ object Status {
   @scala.inline
   def joined: typings.twilioChat.twilioChatStrings.joined = "joined".asInstanceOf[typings.twilioChat.twilioChatStrings.joined]
   @scala.inline
-  def known: typings.twilioChat.twilioChatStrings.known = "known".asInstanceOf[typings.twilioChat.twilioChatStrings.known]
+  def notParticipating: typings.twilioChat.twilioChatStrings.notParticipating = "notParticipating".asInstanceOf[typings.twilioChat.twilioChatStrings.notParticipating]
   @scala.inline
   def unknown: typings.twilioChat.twilioChatStrings.unknown = "unknown".asInstanceOf[typings.twilioChat.twilioChatStrings.unknown]
 }

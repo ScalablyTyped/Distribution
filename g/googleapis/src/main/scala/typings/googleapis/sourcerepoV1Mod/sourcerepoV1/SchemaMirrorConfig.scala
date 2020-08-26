@@ -31,12 +31,34 @@ trait SchemaMirrorConfig extends js.Object {
 
 object SchemaMirrorConfig {
   @scala.inline
-  def apply(deployKeyId: String = null, url: String = null, webhookId: String = null): SchemaMirrorConfig = {
+  def apply(): SchemaMirrorConfig = {
     val __obj = js.Dynamic.literal()
-    if (deployKeyId != null) __obj.updateDynamic("deployKeyId")(deployKeyId.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (webhookId != null) __obj.updateDynamic("webhookId")(webhookId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMirrorConfig]
   }
+  @scala.inline
+  implicit class SchemaMirrorConfigOps[Self <: SchemaMirrorConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeployKeyId(value: String): Self = this.set("deployKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployKeyId: Self = this.set("deployKeyId", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setWebhookId(value: String): Self = this.set("webhookId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebhookId: Self = this.set("webhookId", js.undefined)
+  }
+  
 }
 

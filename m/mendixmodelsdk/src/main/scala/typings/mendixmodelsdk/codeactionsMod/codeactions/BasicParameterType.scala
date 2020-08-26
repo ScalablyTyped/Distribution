@@ -39,7 +39,7 @@ class BasicParameterType protected () extends ParameterType {
   @JSName("containerAsCodeActionParameter")
   def containerAsCodeActionParameter_MBasicParameterType: CodeActionParameter = js.native
   def `type`: Type = js.native
-  def `type`(newValue: Type): js.Any = js.native
+  def type_=(newValue: Type): Unit = js.native
 }
 
 /* static members */

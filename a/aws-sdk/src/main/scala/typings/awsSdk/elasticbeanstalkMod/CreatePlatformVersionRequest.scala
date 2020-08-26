@@ -34,19 +34,44 @@ trait CreatePlatformVersionRequest extends js.Object {
 
 object CreatePlatformVersionRequest {
   @scala.inline
-  def apply(
-    PlatformDefinitionBundle: S3Location,
-    PlatformName: PlatformName,
-    PlatformVersion: PlatformVersion,
-    EnvironmentName: EnvironmentName = null,
-    OptionSettings: ConfigurationOptionSettingsList = null,
-    Tags: Tags = null
-  ): CreatePlatformVersionRequest = {
+  def apply(PlatformDefinitionBundle: S3Location, PlatformName: PlatformName, PlatformVersion: PlatformVersion): CreatePlatformVersionRequest = {
     val __obj = js.Dynamic.literal(PlatformDefinitionBundle = PlatformDefinitionBundle.asInstanceOf[js.Any], PlatformName = PlatformName.asInstanceOf[js.Any], PlatformVersion = PlatformVersion.asInstanceOf[js.Any])
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (OptionSettings != null) __obj.updateDynamic("OptionSettings")(OptionSettings.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlatformVersionRequest]
   }
+  @scala.inline
+  implicit class CreatePlatformVersionRequestOps[Self <: CreatePlatformVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlatformDefinitionBundle(value: S3Location): Self = this.set("PlatformDefinitionBundle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlatformName(value: PlatformName): Self = this.set("PlatformName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlatformVersion(value: PlatformVersion): Self = this.set("PlatformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    @scala.inline
+    def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = this.set("OptionSettings", js.Array(value :_*))
+    @scala.inline
+    def setOptionSettings(value: ConfigurationOptionSettingsList): Self = this.set("OptionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionSettings: Self = this.set("OptionSettings", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

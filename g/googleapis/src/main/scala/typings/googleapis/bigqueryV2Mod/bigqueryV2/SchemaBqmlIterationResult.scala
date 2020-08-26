@@ -39,20 +39,42 @@ trait SchemaBqmlIterationResult extends js.Object {
 
 object SchemaBqmlIterationResult {
   @scala.inline
-  def apply(
-    durationMs: String = null,
-    evalLoss: js.UndefOr[Double] = js.undefined,
-    index: js.UndefOr[Double] = js.undefined,
-    learnRate: js.UndefOr[Double] = js.undefined,
-    trainingLoss: js.UndefOr[Double] = js.undefined
-  ): SchemaBqmlIterationResult = {
+  def apply(): SchemaBqmlIterationResult = {
     val __obj = js.Dynamic.literal()
-    if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(evalLoss)) __obj.updateDynamic("evalLoss")(evalLoss.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(learnRate)) __obj.updateDynamic("learnRate")(learnRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainingLoss)) __obj.updateDynamic("trainingLoss")(trainingLoss.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBqmlIterationResult]
   }
+  @scala.inline
+  implicit class SchemaBqmlIterationResultOps[Self <: SchemaBqmlIterationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDurationMs(value: String): Self = this.set("durationMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationMs: Self = this.set("durationMs", js.undefined)
+    @scala.inline
+    def setEvalLoss(value: Double): Self = this.set("evalLoss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvalLoss: Self = this.set("evalLoss", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setLearnRate(value: Double): Self = this.set("learnRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLearnRate: Self = this.set("learnRate", js.undefined)
+    @scala.inline
+    def setTrainingLoss(value: Double): Self = this.set("trainingLoss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingLoss: Self = this.set("trainingLoss", js.undefined)
+  }
+  
 }
 

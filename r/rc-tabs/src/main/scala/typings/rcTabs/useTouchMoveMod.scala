@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tabs/lib/hooks/useTouchMove", JSImport.Namespace)
+@JSImport("rc-tabs/es/hooks/useTouchMove", JSImport.Namespace)
 @js.native
 object useTouchMoveMod extends js.Object {
   def default(

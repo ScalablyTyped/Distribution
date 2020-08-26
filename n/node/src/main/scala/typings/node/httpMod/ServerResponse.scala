@@ -20,6 +20,7 @@ class ServerResponse protected () extends OutgoingMessage {
   def writeContinue(callback: js.Function0[Unit]): Unit = js.native
   def writeHead(statusCode: Double): this.type = js.native
   def writeHead(statusCode: Double, headers: OutgoingHttpHeaders): this.type = js.native
+  def writeHead(statusCode: Double, reasonPhrase: js.UndefOr[scala.Nothing], headers: OutgoingHttpHeaders): this.type = js.native
   def writeHead(statusCode: Double, reasonPhrase: String): this.type = js.native
   def writeHead(statusCode: Double, reasonPhrase: String, headers: OutgoingHttpHeaders): this.type = js.native
   def writeProcessing(): Unit = js.native

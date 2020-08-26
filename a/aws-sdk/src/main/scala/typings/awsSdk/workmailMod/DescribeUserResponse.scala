@@ -42,26 +42,54 @@ trait DescribeUserResponse extends js.Object {
 
 object DescribeUserResponse {
   @scala.inline
-  def apply(
-    DisabledDate: Timestamp = null,
-    DisplayName: String = null,
-    Email: EmailAddress = null,
-    EnabledDate: Timestamp = null,
-    Name: UserName = null,
-    State: EntityState = null,
-    UserId: WorkMailIdentifier = null,
-    UserRole: UserRole = null
-  ): DescribeUserResponse = {
+  def apply(): DescribeUserResponse = {
     val __obj = js.Dynamic.literal()
-    if (DisabledDate != null) __obj.updateDynamic("DisabledDate")(DisabledDate.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
-    if (EnabledDate != null) __obj.updateDynamic("EnabledDate")(EnabledDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
-    if (UserRole != null) __obj.updateDynamic("UserRole")(UserRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUserResponse]
   }
+  @scala.inline
+  implicit class DescribeUserResponseOps[Self <: DescribeUserResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabledDate(value: Timestamp): Self = this.set("DisabledDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDate: Self = this.set("DisabledDate", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setEmail(value: EmailAddress): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("Email", js.undefined)
+    @scala.inline
+    def setEnabledDate(value: Timestamp): Self = this.set("EnabledDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledDate: Self = this.set("EnabledDate", js.undefined)
+    @scala.inline
+    def setName(value: UserName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setState(value: EntityState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setUserId(value: WorkMailIdentifier): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("UserId", js.undefined)
+    @scala.inline
+    def setUserRole(value: UserRole): Self = this.set("UserRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserRole: Self = this.set("UserRole", js.undefined)
+  }
+  
 }
 

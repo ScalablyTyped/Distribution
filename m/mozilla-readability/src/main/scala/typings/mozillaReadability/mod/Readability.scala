@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * Note that isProbablyReaderable() was moved into a separate file in https://github.com/mozilla/readability/commit/2620542dd1e8380220d82afa97a2c283ae636e40
   * and therefore is no longer part of the Readability class.
   */
+@js.native
 trait Readability extends js.Object {
   /**
     * Runs readability.
@@ -35,7 +36,7 @@ trait Readability extends js.Object {
     *
     * The response will be null if the processing failed (https://github.com/mozilla/readability/blob/52ab9b5c8916c306a47b2119270dcdabebf9d203/Readability.js#L2038)
     */
-  def parse(): ParseResult | Null
+  def parse(): ParseResult | Null = js.native
 }
 
 object Readability {
@@ -44,5 +45,20 @@ object Readability {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction0(parse))
     __obj.asInstanceOf[Readability]
   }
+  @scala.inline
+  implicit class ReadabilityOps[Self <: Readability] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParse(value: () => ParseResult | Null): Self = this.set("parse", js.Any.fromFunction0(value))
+  }
+  
 }
 

@@ -36,6 +36,7 @@ object ^ extends js.Object {
   	```
   	*/
   def apply(file: String): ExecaChildProcess[String] = js.native
+  def apply(file: String, arguments: js.UndefOr[scala.Nothing], options: Options[Null | String]): ExecaChildProcess[String] = js.native
   def apply(file: String, arguments: js.Array[String]): ExecaChildProcess[String] = js.native
   def apply(file: String, arguments: js.Array[String], options: Options[Null | String]): ExecaChildProcess[String] = js.native
   def apply(file: String, options: Options[Null | String]): ExecaChildProcess[String] = js.native
@@ -75,6 +76,8 @@ object ^ extends js.Object {
   	@returns A [`child_process` instance](https://nodejs.org/api/child_process.html#child_process_class_childprocess), which is enhanced to also be a `Promise` for a result `Object` with `stdout` and `stderr` properties.
   	*/
   def node(scriptPath: String): ExecaChildProcess[String] = js.native
+  def node(scriptPath: String, arguments: js.UndefOr[scala.Nothing], options: NodeOptions[String]): ExecaChildProcess[String] = js.native
+  def node(scriptPath: String, arguments: js.UndefOr[scala.Nothing], options: Options[Null]): ExecaChildProcess[Buffer] = js.native
   def node(scriptPath: String, arguments: js.Array[String]): ExecaChildProcess[String] = js.native
   def node(scriptPath: String, arguments: js.Array[String], options: NodeOptions[String]): ExecaChildProcess[String] = js.native
   def node(scriptPath: String, arguments: js.Array[String], options: Options[Null]): ExecaChildProcess[Buffer] = js.native
@@ -87,6 +90,7 @@ object ^ extends js.Object {
   	@returns A result `Object` with `stdout` and `stderr` properties.
   	*/
   def sync(file: String): ExecaSyncReturnValue[String] = js.native
+  def sync(file: String, arguments: js.UndefOr[scala.Nothing], options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = js.native
   def sync(file: String, arguments: js.Array[String]): ExecaSyncReturnValue[String] = js.native
   def sync(file: String, arguments: js.Array[String], options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = js.native
   def sync(file: String, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = js.native

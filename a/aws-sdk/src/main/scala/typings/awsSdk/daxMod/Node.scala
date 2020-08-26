@@ -34,22 +34,46 @@ trait Node extends js.Object {
 
 object Node {
   @scala.inline
-  def apply(
-    AvailabilityZone: String = null,
-    Endpoint: Endpoint = null,
-    NodeCreateTime: TStamp = null,
-    NodeId: String = null,
-    NodeStatus: String = null,
-    ParameterGroupStatus: String = null
-  ): Node = {
+  def apply(): Node = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (NodeCreateTime != null) __obj.updateDynamic("NodeCreateTime")(NodeCreateTime.asInstanceOf[js.Any])
-    if (NodeId != null) __obj.updateDynamic("NodeId")(NodeId.asInstanceOf[js.Any])
-    if (NodeStatus != null) __obj.updateDynamic("NodeStatus")(NodeStatus.asInstanceOf[js.Any])
-    if (ParameterGroupStatus != null) __obj.updateDynamic("ParameterGroupStatus")(ParameterGroupStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
+  @scala.inline
+  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setEndpoint(value: Endpoint): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setNodeCreateTime(value: TStamp): Self = this.set("NodeCreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeCreateTime: Self = this.set("NodeCreateTime", js.undefined)
+    @scala.inline
+    def setNodeId(value: String): Self = this.set("NodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeId: Self = this.set("NodeId", js.undefined)
+    @scala.inline
+    def setNodeStatus(value: String): Self = this.set("NodeStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeStatus: Self = this.set("NodeStatus", js.undefined)
+    @scala.inline
+    def setParameterGroupStatus(value: String): Self = this.set("ParameterGroupStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterGroupStatus: Self = this.set("ParameterGroupStatus", js.undefined)
+  }
+  
 }
 

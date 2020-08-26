@@ -34,22 +34,46 @@ trait DBClusterBacktrack extends js.Object {
 
 object DBClusterBacktrack {
   @scala.inline
-  def apply(
-    BacktrackIdentifier: String = null,
-    BacktrackRequestCreationTime: TStamp = null,
-    BacktrackTo: TStamp = null,
-    BacktrackedFrom: TStamp = null,
-    DBClusterIdentifier: String = null,
-    Status: String = null
-  ): DBClusterBacktrack = {
+  def apply(): DBClusterBacktrack = {
     val __obj = js.Dynamic.literal()
-    if (BacktrackIdentifier != null) __obj.updateDynamic("BacktrackIdentifier")(BacktrackIdentifier.asInstanceOf[js.Any])
-    if (BacktrackRequestCreationTime != null) __obj.updateDynamic("BacktrackRequestCreationTime")(BacktrackRequestCreationTime.asInstanceOf[js.Any])
-    if (BacktrackTo != null) __obj.updateDynamic("BacktrackTo")(BacktrackTo.asInstanceOf[js.Any])
-    if (BacktrackedFrom != null) __obj.updateDynamic("BacktrackedFrom")(BacktrackedFrom.asInstanceOf[js.Any])
-    if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterBacktrack]
   }
+  @scala.inline
+  implicit class DBClusterBacktrackOps[Self <: DBClusterBacktrack] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBacktrackIdentifier(value: String): Self = this.set("BacktrackIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBacktrackIdentifier: Self = this.set("BacktrackIdentifier", js.undefined)
+    @scala.inline
+    def setBacktrackRequestCreationTime(value: TStamp): Self = this.set("BacktrackRequestCreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBacktrackRequestCreationTime: Self = this.set("BacktrackRequestCreationTime", js.undefined)
+    @scala.inline
+    def setBacktrackTo(value: TStamp): Self = this.set("BacktrackTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBacktrackTo: Self = this.set("BacktrackTo", js.undefined)
+    @scala.inline
+    def setBacktrackedFrom(value: TStamp): Self = this.set("BacktrackedFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBacktrackedFrom: Self = this.set("BacktrackedFrom", js.undefined)
+    @scala.inline
+    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterIdentifier: Self = this.set("DBClusterIdentifier", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

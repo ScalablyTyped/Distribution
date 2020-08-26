@@ -41,18 +41,40 @@ trait SchemaGqlQuery extends js.Object {
 
 object SchemaGqlQuery {
   @scala.inline
-  def apply(
-    allowLiterals: js.UndefOr[Boolean] = js.undefined,
-    namedBindings: StringDictionary[SchemaGqlQueryParameter] = null,
-    positionalBindings: js.Array[SchemaGqlQueryParameter] = null,
-    queryString: String = null
-  ): SchemaGqlQuery = {
+  def apply(): SchemaGqlQuery = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowLiterals)) __obj.updateDynamic("allowLiterals")(allowLiterals.get.asInstanceOf[js.Any])
-    if (namedBindings != null) __obj.updateDynamic("namedBindings")(namedBindings.asInstanceOf[js.Any])
-    if (positionalBindings != null) __obj.updateDynamic("positionalBindings")(positionalBindings.asInstanceOf[js.Any])
-    if (queryString != null) __obj.updateDynamic("queryString")(queryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGqlQuery]
   }
+  @scala.inline
+  implicit class SchemaGqlQueryOps[Self <: SchemaGqlQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowLiterals(value: Boolean): Self = this.set("allowLiterals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowLiterals: Self = this.set("allowLiterals", js.undefined)
+    @scala.inline
+    def setNamedBindings(value: StringDictionary[SchemaGqlQueryParameter]): Self = this.set("namedBindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedBindings: Self = this.set("namedBindings", js.undefined)
+    @scala.inline
+    def setPositionalBindingsVarargs(value: SchemaGqlQueryParameter*): Self = this.set("positionalBindings", js.Array(value :_*))
+    @scala.inline
+    def setPositionalBindings(value: js.Array[SchemaGqlQueryParameter]): Self = this.set("positionalBindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionalBindings: Self = this.set("positionalBindings", js.undefined)
+    @scala.inline
+    def setQueryString(value: String): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryString: Self = this.set("queryString", js.undefined)
+  }
+  
 }
 

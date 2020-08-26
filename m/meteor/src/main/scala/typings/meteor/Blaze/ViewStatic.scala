@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 trait ViewStatic
   extends Instantiable0[View]
      with Instantiable1[/* name */ String, View]
-     with Instantiable2[/* name */ String, /* renderFunction */ js.Function, View]
+     with Instantiable2[js.UndefOr[/* name */ String], /* renderFunction */ js.Function, View]
 

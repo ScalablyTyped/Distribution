@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextInputOptions extends js.Object {
-  var clearBtn: js.UndefOr[Boolean] = js.undefined
-  var clearBtnText: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var initSelector: js.UndefOr[String] = js.undefined
-  var mini: js.UndefOr[Boolean] = js.undefined
-  var preventFocusZoom: js.UndefOr[Boolean] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
+  var clearBtn: js.UndefOr[Boolean] = js.native
+  var clearBtnText: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var initSelector: js.UndefOr[String] = js.native
+  var mini: js.UndefOr[Boolean] = js.native
+  var preventFocusZoom: js.UndefOr[Boolean] = js.native
+  var theme: js.UndefOr[String] = js.native
 }
 
 object TextInputOptions {
   @scala.inline
-  def apply(
-    clearBtn: js.UndefOr[Boolean] = js.undefined,
-    clearBtnText: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    initSelector: String = null,
-    mini: js.UndefOr[Boolean] = js.undefined,
-    preventFocusZoom: js.UndefOr[Boolean] = js.undefined,
-    theme: String = null
-  ): TextInputOptions = {
+  def apply(): TextInputOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clearBtn)) __obj.updateDynamic("clearBtn")(clearBtn.get.asInstanceOf[js.Any])
-    if (clearBtnText != null) __obj.updateDynamic("clearBtnText")(clearBtnText.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventFocusZoom)) __obj.updateDynamic("preventFocusZoom")(preventFocusZoom.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputOptions]
   }
+  @scala.inline
+  implicit class TextInputOptionsOps[Self <: TextInputOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClearBtn(value: Boolean): Self = this.set("clearBtn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearBtn: Self = this.set("clearBtn", js.undefined)
+    @scala.inline
+    def setClearBtnText(value: String): Self = this.set("clearBtnText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearBtnText: Self = this.set("clearBtnText", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setInitSelector(value: String): Self = this.set("initSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitSelector: Self = this.set("initSelector", js.undefined)
+    @scala.inline
+    def setMini(value: Boolean): Self = this.set("mini", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMini: Self = this.set("mini", js.undefined)
+    @scala.inline
+    def setPreventFocusZoom(value: Boolean): Self = this.set("preventFocusZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreventFocusZoom: Self = this.set("preventFocusZoom", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

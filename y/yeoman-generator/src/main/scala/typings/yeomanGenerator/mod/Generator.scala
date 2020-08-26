@@ -35,10 +35,15 @@ trait Generator extends EventEmitter {
     * @param spawnOptions Options to pass `child_process.spawn`.
     */
   def bowerInstall(): Unit = js.native
+  def bowerInstall(component: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
+  def bowerInstall(component: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
+  def bowerInstall(component: js.UndefOr[scala.Nothing], options: js.Object, spawnOptions: js.Object): Unit = js.native
   def bowerInstall(component: String): Unit = js.native
+  def bowerInstall(component: String, options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
   def bowerInstall(component: String, options: js.Object): Unit = js.native
   def bowerInstall(component: String, options: js.Object, spawnOptions: js.Object): Unit = js.native
   def bowerInstall(component: js.Array[String]): Unit = js.native
+  def bowerInstall(component: js.Array[String], options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
   def bowerInstall(component: js.Array[String], options: js.Object): Unit = js.native
   def bowerInstall(component: js.Array[String], options: js.Object, spawnOptions: js.Object): Unit = js.native
   def composeWith(namespace: String, options: StringDictionary[js.Any]): this.type = js.native
@@ -69,6 +74,7 @@ trait Generator extends EventEmitter {
   def installDependencies(): Unit = js.native
   def installDependencies(options: InstallOptions): Unit = js.native
   def log(): Unit = js.native
+  def log(message: js.UndefOr[scala.Nothing], context: js.Any): Unit = js.native
   def log(message: String): Unit = js.native
   def log(message: String, context: js.Any): Unit = js.native
   /**
@@ -81,10 +87,15 @@ trait Generator extends EventEmitter {
     * @param spawnOptions Options to pass `child_process.spawn`.
     */
   def npmInstall(): Unit = js.native
+  def npmInstall(pkgs: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
+  def npmInstall(pkgs: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
+  def npmInstall(pkgs: js.UndefOr[scala.Nothing], options: js.Object, spawnOptions: js.Object): Unit = js.native
   def npmInstall(pkgs: String): Unit = js.native
+  def npmInstall(pkgs: String, options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
   def npmInstall(pkgs: String, options: js.Object): Unit = js.native
   def npmInstall(pkgs: String, options: js.Object, spawnOptions: js.Object): Unit = js.native
   def npmInstall(pkgs: js.Array[String]): Unit = js.native
+  def npmInstall(pkgs: js.Array[String], options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
   def npmInstall(pkgs: js.Array[String], options: js.Object): Unit = js.native
   def npmInstall(pkgs: js.Array[String], options: js.Object, spawnOptions: js.Object): Unit = js.native
   def option(name: String, config: OptionConfig): this.type = js.native
@@ -109,10 +120,25 @@ trait Generator extends EventEmitter {
     *                     https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options
     */
   def scheduleInstallTask(installer: String): Unit = js.native
+  def scheduleInstallTask(
+    installer: String,
+    paths: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    spawnOptions: js.Object
+  ): Unit = js.native
+  def scheduleInstallTask(installer: String, paths: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
+  def scheduleInstallTask(installer: String, paths: js.UndefOr[scala.Nothing], options: js.Object, spawnOptions: js.Object): Unit = js.native
   def scheduleInstallTask(installer: String, paths: String): Unit = js.native
+  def scheduleInstallTask(installer: String, paths: String, options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
   def scheduleInstallTask(installer: String, paths: String, options: js.Object): Unit = js.native
   def scheduleInstallTask(installer: String, paths: String, options: js.Object, spawnOptions: js.Object): Unit = js.native
   def scheduleInstallTask(installer: String, paths: js.Array[String]): Unit = js.native
+  def scheduleInstallTask(
+    installer: String,
+    paths: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    spawnOptions: js.Object
+  ): Unit = js.native
   def scheduleInstallTask(installer: String, paths: js.Array[String], options: js.Object): Unit = js.native
   def scheduleInstallTask(installer: String, paths: js.Array[String], options: js.Object, spawnOptions: js.Object): Unit = js.native
   def sourceRoot(): String = js.native
@@ -134,10 +160,15 @@ trait Generator extends EventEmitter {
     * @param spawnOptions Options to pass `child_process.spawn`.
     */
   def yarnInstall(): Unit = js.native
+  def yarnInstall(pkgs: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
+  def yarnInstall(pkgs: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
+  def yarnInstall(pkgs: js.UndefOr[scala.Nothing], options: js.Object, spawnOptions: js.Object): Unit = js.native
   def yarnInstall(pkgs: String): Unit = js.native
+  def yarnInstall(pkgs: String, options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
   def yarnInstall(pkgs: String, options: js.Object): Unit = js.native
   def yarnInstall(pkgs: String, options: js.Object, spawnOptions: js.Object): Unit = js.native
   def yarnInstall(pkgs: js.Array[String]): Unit = js.native
+  def yarnInstall(pkgs: js.Array[String], options: js.UndefOr[scala.Nothing], spawnOptions: js.Object): Unit = js.native
   def yarnInstall(pkgs: js.Array[String], options: js.Object): Unit = js.native
   def yarnInstall(pkgs: js.Array[String], options: js.Object, spawnOptions: js.Object): Unit = js.native
 }

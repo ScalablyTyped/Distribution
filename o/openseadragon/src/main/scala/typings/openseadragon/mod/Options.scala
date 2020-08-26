@@ -30,372 +30,627 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var ajaxHeaders: js.UndefOr[js.Object] = js.undefined
-  var ajaxWithCredentials: js.UndefOr[Boolean] = js.undefined
-  var alwaysBlend: js.UndefOr[Boolean] = js.undefined
-  var animationTime: js.UndefOr[Double] = js.undefined
-  var autoHideControls: js.UndefOr[Boolean] = js.undefined
-  var autoResize: js.UndefOr[Boolean] = js.undefined
-  var blendTime: js.UndefOr[Double] = js.undefined
-  var clickDistThreshold: js.UndefOr[Double] = js.undefined
-  var clickTimeThreshold: js.UndefOr[Double] = js.undefined
-  var collectionColumns: js.UndefOr[Double] = js.undefined
-  var collectionLayout: js.UndefOr[horizontal | vertical] = js.undefined
-  var collectionMode: js.UndefOr[Boolean] = js.undefined
-  var collectionRows: js.UndefOr[Double] = js.undefined
-  var collectionTileMargin: js.UndefOr[Double] = js.undefined
-  var collectionTileSize: js.UndefOr[Double] = js.undefined
+  var ajaxHeaders: js.UndefOr[js.Object] = js.native
+  var ajaxWithCredentials: js.UndefOr[Boolean] = js.native
+  var alwaysBlend: js.UndefOr[Boolean] = js.native
+  var animationTime: js.UndefOr[Double] = js.native
+  var autoHideControls: js.UndefOr[Boolean] = js.native
+  var autoResize: js.UndefOr[Boolean] = js.native
+  var blendTime: js.UndefOr[Double] = js.native
+  var clickDistThreshold: js.UndefOr[Double] = js.native
+  var clickTimeThreshold: js.UndefOr[Double] = js.native
+  var collectionColumns: js.UndefOr[Double] = js.native
+  var collectionLayout: js.UndefOr[horizontal | vertical] = js.native
+  var collectionMode: js.UndefOr[Boolean] = js.native
+  var collectionRows: js.UndefOr[Double] = js.native
+  var collectionTileMargin: js.UndefOr[Double] = js.native
+  var collectionTileSize: js.UndefOr[Double] = js.native
   var compositeOperation: js.UndefOr[
     `source-over` | `source-atop` | `source-in` | `source-out` | `destination-over` | `destination-atop` | `destination-in` | `destination-out` | lighter | copy | xor
-  ] = js.undefined
-  var constrainDuringPan: js.UndefOr[Boolean] = js.undefined
-  var controlsFadeDelay: js.UndefOr[Double] = js.undefined
-  var controlsFadeLength: js.UndefOr[Double] = js.undefined
-  var crossOriginPolicy: js.UndefOr[Anonymous | `use-credentials` | `false`] = js.undefined
-  var dblClickDistThreshold: js.UndefOr[Double] = js.undefined
-  var dblClickTimeThreshold: js.UndefOr[Double] = js.undefined
-  var debugGridColor: js.UndefOr[js.Array[String]] = js.undefined
-  var debugMode: js.UndefOr[Boolean] = js.undefined
-  var defaultZoomLevel: js.UndefOr[Double] = js.undefined
-  var degrees: js.UndefOr[Double] = js.undefined
-  var element: js.UndefOr[HTMLElement] = js.undefined
-  var flipped: js.UndefOr[Boolean] = js.undefined
-  var fullPageButton: js.UndefOr[String] = js.undefined
-  var gestureSettingsMouse: js.UndefOr[GestureSettings] = js.undefined
-  var gestureSettingsPen: js.UndefOr[GestureSettings] = js.undefined
-  var gestureSettingsTouch: js.UndefOr[GestureSettings] = js.undefined
-  var gestureSettingsUnknown: js.UndefOr[GestureSettings] = js.undefined
-  var homeButton: js.UndefOr[String] = js.undefined
-  var homeFillsViewer: js.UndefOr[Boolean] = js.undefined
-  var iOSDevice: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var imageLoaderLimit: js.UndefOr[Double] = js.undefined
-  var imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined
-  var immediateRender: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var constrainDuringPan: js.UndefOr[Boolean] = js.native
+  var controlsFadeDelay: js.UndefOr[Double] = js.native
+  var controlsFadeLength: js.UndefOr[Double] = js.native
+  var crossOriginPolicy: js.UndefOr[Anonymous | `use-credentials` | `false`] = js.native
+  var dblClickDistThreshold: js.UndefOr[Double] = js.native
+  var dblClickTimeThreshold: js.UndefOr[Double] = js.native
+  var debugGridColor: js.UndefOr[js.Array[String]] = js.native
+  var debugMode: js.UndefOr[Boolean] = js.native
+  var defaultZoomLevel: js.UndefOr[Double] = js.native
+  var degrees: js.UndefOr[Double] = js.native
+  var element: js.UndefOr[HTMLElement] = js.native
+  var flipped: js.UndefOr[Boolean] = js.native
+  var fullPageButton: js.UndefOr[String] = js.native
+  var gestureSettingsMouse: js.UndefOr[GestureSettings] = js.native
+  var gestureSettingsPen: js.UndefOr[GestureSettings] = js.native
+  var gestureSettingsTouch: js.UndefOr[GestureSettings] = js.native
+  var gestureSettingsUnknown: js.UndefOr[GestureSettings] = js.native
+  var homeButton: js.UndefOr[String] = js.native
+  var homeFillsViewer: js.UndefOr[Boolean] = js.native
+  var iOSDevice: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[String] = js.native
+  var imageLoaderLimit: js.UndefOr[Double] = js.native
+  var imageSmoothingEnabled: js.UndefOr[Boolean] = js.native
+  var immediateRender: js.UndefOr[Boolean] = js.native
   /**
     * If sequenceMode is true, display this page initially.
     * @default 0
     */
-  var initialPage: js.UndefOr[Double] = js.undefined
-  var loadTilesWithAjax: js.UndefOr[Boolean] = js.undefined
-  var maxImageCacheCount: js.UndefOr[Double] = js.undefined
-  var maxZoomLevel: js.UndefOr[Double] = js.undefined
-  var maxZoomPixelRatio: js.UndefOr[Double] = js.undefined
-  var minPixelRatio: js.UndefOr[Double] = js.undefined
-  var minScrollDeltaTime: js.UndefOr[Double] = js.undefined
-  var minZoomImageRatio: js.UndefOr[Double] = js.undefined
-  var minZoomLevel: js.UndefOr[Double] = js.undefined
-  var mouseNavEnabled: js.UndefOr[Double] = js.undefined
-  var navImages: js.UndefOr[NavImages] = js.undefined
-  var navPrevNextWrap: js.UndefOr[Boolean] = js.undefined
-  var navigationControlAnchor: js.UndefOr[ControlAnchor] = js.undefined
-  var navigatorAutoFade: js.UndefOr[Boolean] = js.undefined
-  var navigatorAutoResize: js.UndefOr[Boolean] = js.undefined
-  var navigatorBackground: js.UndefOr[String] = js.undefined
-  var navigatorBorderColor: js.UndefOr[String] = js.undefined
-  var navigatorDisplayRegionColor: js.UndefOr[String] = js.undefined
-  var navigatorHeight: js.UndefOr[Double | String] = js.undefined
-  var navigatorId: js.UndefOr[String] = js.undefined
-  var navigatorLeft: js.UndefOr[Double | String] = js.undefined
-  var navigatorMaintainSizeRatio: js.UndefOr[Boolean] = js.undefined
-  var navigatorOpacity: js.UndefOr[Double] = js.undefined
-  var navigatorPosition: js.UndefOr[TOP_LEFT | TOP_RIGHT | BOTTOM_LEFT | BOTTOM_RIGHT | ABSOLUTE] = js.undefined
-  var navigatorRotate: js.UndefOr[Boolean] = js.undefined
-  var navigatorSizeRatio: js.UndefOr[Double] = js.undefined
-  var navigatorTop: js.UndefOr[Double | String] = js.undefined
-  var navigatorWidth: js.UndefOr[Double | String] = js.undefined
-  var nextButton: js.UndefOr[String] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var overlays: js.UndefOr[js.Array[_]] = js.undefined
-  var panHorizontal: js.UndefOr[Boolean] = js.undefined
-  var panVertical: js.UndefOr[Boolean] = js.undefined
-  var pixelsPerArrowPress: js.UndefOr[Double] = js.undefined
-  var pixelsPerWheelLine: js.UndefOr[Double] = js.undefined
-  var placeholderFillStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.undefined
-  var prefixUrl: js.UndefOr[String] = js.undefined
-  var preload: js.UndefOr[Boolean] = js.undefined
-  var preserveImageSizeOnResize: js.UndefOr[Boolean] = js.undefined
-  var preserveOverlays: js.UndefOr[Boolean] = js.undefined
-  var preserveViewport: js.UndefOr[Boolean] = js.undefined
-  var previousButton: js.UndefOr[String] = js.undefined
-  var referenceStripElement: js.UndefOr[HTMLElement] = js.undefined
-  var referenceStripHeight: js.UndefOr[Double] = js.undefined
-  var referenceStripPosition: js.UndefOr[String] = js.undefined
-  var referenceStripScroll: js.UndefOr[String] = js.undefined
-  var referenceStripSizeRatio: js.UndefOr[Double] = js.undefined
-  var referenceStripWidth: js.UndefOr[Double] = js.undefined
-  var rotateLeftButton: js.UndefOr[String] = js.undefined
-  var rotateRightButton: js.UndefOr[String] = js.undefined
-  var rotationIncrement: js.UndefOr[Double] = js.undefined
-  var sequenceControlAnchor: js.UndefOr[ControlAnchor] = js.undefined
-  var sequenceMode: js.UndefOr[Boolean] = js.undefined
-  var showFlipControl: js.UndefOr[Boolean] = js.undefined
-  var showFullPageControl: js.UndefOr[Boolean] = js.undefined
-  var showHomeControl: js.UndefOr[Boolean] = js.undefined
-  var showNavigationControl: js.UndefOr[Boolean] = js.undefined
-  var showNavigator: js.UndefOr[Boolean] = js.undefined
-  var showReferenceStrip: js.UndefOr[Boolean] = js.undefined
-  var showRotationControl: js.UndefOr[Boolean] = js.undefined
-  var showSequenceControl: js.UndefOr[Boolean] = js.undefined
-  var showZoomControl: js.UndefOr[Boolean] = js.undefined
-  var smoothTileEdgesMinZoom: js.UndefOr[Double] = js.undefined
-  var springStiffness: js.UndefOr[Double] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
-  var tileSources: js.UndefOr[String | (js.Array[String | TileSource]) | TileSourceOptions | Levels | Image] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var useCanvas: js.UndefOr[Boolean] = js.undefined
-  var viewportMargins: js.UndefOr[js.Object] = js.undefined
-  var visibilityRatio: js.UndefOr[Double] = js.undefined
-  var wrapHorizontal: js.UndefOr[Boolean] = js.undefined
-  var wrapVertical: js.UndefOr[Boolean] = js.undefined
-  var zoomInButton: js.UndefOr[String] = js.undefined
-  var zoomOutButton: js.UndefOr[String] = js.undefined
-  var zoomPerClick: js.UndefOr[Double] = js.undefined
-  var zoomPerScroll: js.UndefOr[Double] = js.undefined
-  var zoomPerSecond: js.UndefOr[Double] = js.undefined
+  var initialPage: js.UndefOr[Double] = js.native
+  var loadTilesWithAjax: js.UndefOr[Boolean] = js.native
+  var maxImageCacheCount: js.UndefOr[Double] = js.native
+  var maxZoomLevel: js.UndefOr[Double] = js.native
+  var maxZoomPixelRatio: js.UndefOr[Double] = js.native
+  var minPixelRatio: js.UndefOr[Double] = js.native
+  var minScrollDeltaTime: js.UndefOr[Double] = js.native
+  var minZoomImageRatio: js.UndefOr[Double] = js.native
+  var minZoomLevel: js.UndefOr[Double] = js.native
+  var mouseNavEnabled: js.UndefOr[Double] = js.native
+  var navImages: js.UndefOr[NavImages] = js.native
+  var navPrevNextWrap: js.UndefOr[Boolean] = js.native
+  var navigationControlAnchor: js.UndefOr[ControlAnchor] = js.native
+  var navigatorAutoFade: js.UndefOr[Boolean] = js.native
+  var navigatorAutoResize: js.UndefOr[Boolean] = js.native
+  var navigatorBackground: js.UndefOr[String] = js.native
+  var navigatorBorderColor: js.UndefOr[String] = js.native
+  var navigatorDisplayRegionColor: js.UndefOr[String] = js.native
+  var navigatorHeight: js.UndefOr[Double | String] = js.native
+  var navigatorId: js.UndefOr[String] = js.native
+  var navigatorLeft: js.UndefOr[Double | String] = js.native
+  var navigatorMaintainSizeRatio: js.UndefOr[Boolean] = js.native
+  var navigatorOpacity: js.UndefOr[Double] = js.native
+  var navigatorPosition: js.UndefOr[TOP_LEFT | TOP_RIGHT | BOTTOM_LEFT | BOTTOM_RIGHT | ABSOLUTE] = js.native
+  var navigatorRotate: js.UndefOr[Boolean] = js.native
+  var navigatorSizeRatio: js.UndefOr[Double] = js.native
+  var navigatorTop: js.UndefOr[Double | String] = js.native
+  var navigatorWidth: js.UndefOr[Double | String] = js.native
+  var nextButton: js.UndefOr[String] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var overlays: js.UndefOr[js.Array[_]] = js.native
+  var panHorizontal: js.UndefOr[Boolean] = js.native
+  var panVertical: js.UndefOr[Boolean] = js.native
+  var pixelsPerArrowPress: js.UndefOr[Double] = js.native
+  var pixelsPerWheelLine: js.UndefOr[Double] = js.native
+  var placeholderFillStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.native
+  var prefixUrl: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[Boolean] = js.native
+  var preserveImageSizeOnResize: js.UndefOr[Boolean] = js.native
+  var preserveOverlays: js.UndefOr[Boolean] = js.native
+  var preserveViewport: js.UndefOr[Boolean] = js.native
+  var previousButton: js.UndefOr[String] = js.native
+  var referenceStripElement: js.UndefOr[HTMLElement] = js.native
+  var referenceStripHeight: js.UndefOr[Double] = js.native
+  var referenceStripPosition: js.UndefOr[String] = js.native
+  var referenceStripScroll: js.UndefOr[String] = js.native
+  var referenceStripSizeRatio: js.UndefOr[Double] = js.native
+  var referenceStripWidth: js.UndefOr[Double] = js.native
+  var rotateLeftButton: js.UndefOr[String] = js.native
+  var rotateRightButton: js.UndefOr[String] = js.native
+  var rotationIncrement: js.UndefOr[Double] = js.native
+  var sequenceControlAnchor: js.UndefOr[ControlAnchor] = js.native
+  var sequenceMode: js.UndefOr[Boolean] = js.native
+  var showFlipControl: js.UndefOr[Boolean] = js.native
+  var showFullPageControl: js.UndefOr[Boolean] = js.native
+  var showHomeControl: js.UndefOr[Boolean] = js.native
+  var showNavigationControl: js.UndefOr[Boolean] = js.native
+  var showNavigator: js.UndefOr[Boolean] = js.native
+  var showReferenceStrip: js.UndefOr[Boolean] = js.native
+  var showRotationControl: js.UndefOr[Boolean] = js.native
+  var showSequenceControl: js.UndefOr[Boolean] = js.native
+  var showZoomControl: js.UndefOr[Boolean] = js.native
+  var smoothTileEdgesMinZoom: js.UndefOr[Double] = js.native
+  var springStiffness: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
+  var tileSources: js.UndefOr[String | (js.Array[String | TileSource]) | TileSourceOptions | Levels | Image] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var useCanvas: js.UndefOr[Boolean] = js.native
+  var viewportMargins: js.UndefOr[js.Object] = js.native
+  var visibilityRatio: js.UndefOr[Double] = js.native
+  var wrapHorizontal: js.UndefOr[Boolean] = js.native
+  var wrapVertical: js.UndefOr[Boolean] = js.native
+  var zoomInButton: js.UndefOr[String] = js.native
+  var zoomOutButton: js.UndefOr[String] = js.native
+  var zoomPerClick: js.UndefOr[Double] = js.native
+  var zoomPerScroll: js.UndefOr[Double] = js.native
+  var zoomPerSecond: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    ajaxHeaders: js.Object = null,
-    ajaxWithCredentials: js.UndefOr[Boolean] = js.undefined,
-    alwaysBlend: js.UndefOr[Boolean] = js.undefined,
-    animationTime: js.UndefOr[Double] = js.undefined,
-    autoHideControls: js.UndefOr[Boolean] = js.undefined,
-    autoResize: js.UndefOr[Boolean] = js.undefined,
-    blendTime: js.UndefOr[Double] = js.undefined,
-    clickDistThreshold: js.UndefOr[Double] = js.undefined,
-    clickTimeThreshold: js.UndefOr[Double] = js.undefined,
-    collectionColumns: js.UndefOr[Double] = js.undefined,
-    collectionLayout: horizontal | vertical = null,
-    collectionMode: js.UndefOr[Boolean] = js.undefined,
-    collectionRows: js.UndefOr[Double] = js.undefined,
-    collectionTileMargin: js.UndefOr[Double] = js.undefined,
-    collectionTileSize: js.UndefOr[Double] = js.undefined,
-    compositeOperation: `source-over` | `source-atop` | `source-in` | `source-out` | `destination-over` | `destination-atop` | `destination-in` | `destination-out` | lighter | copy | xor = null,
-    constrainDuringPan: js.UndefOr[Boolean] = js.undefined,
-    controlsFadeDelay: js.UndefOr[Double] = js.undefined,
-    controlsFadeLength: js.UndefOr[Double] = js.undefined,
-    crossOriginPolicy: Anonymous | `use-credentials` | `false` = null,
-    dblClickDistThreshold: js.UndefOr[Double] = js.undefined,
-    dblClickTimeThreshold: js.UndefOr[Double] = js.undefined,
-    debugGridColor: js.Array[String] = null,
-    debugMode: js.UndefOr[Boolean] = js.undefined,
-    defaultZoomLevel: js.UndefOr[Double] = js.undefined,
-    degrees: js.UndefOr[Double] = js.undefined,
-    element: HTMLElement = null,
-    flipped: js.UndefOr[Boolean] = js.undefined,
-    fullPageButton: String = null,
-    gestureSettingsMouse: GestureSettings = null,
-    gestureSettingsPen: GestureSettings = null,
-    gestureSettingsTouch: GestureSettings = null,
-    gestureSettingsUnknown: GestureSettings = null,
-    homeButton: String = null,
-    homeFillsViewer: js.UndefOr[Boolean] = js.undefined,
-    iOSDevice: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    imageLoaderLimit: js.UndefOr[Double] = js.undefined,
-    imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined,
-    immediateRender: js.UndefOr[Boolean] = js.undefined,
-    initialPage: js.UndefOr[Double] = js.undefined,
-    loadTilesWithAjax: js.UndefOr[Boolean] = js.undefined,
-    maxImageCacheCount: js.UndefOr[Double] = js.undefined,
-    maxZoomLevel: js.UndefOr[Double] = js.undefined,
-    maxZoomPixelRatio: js.UndefOr[Double] = js.undefined,
-    minPixelRatio: js.UndefOr[Double] = js.undefined,
-    minScrollDeltaTime: js.UndefOr[Double] = js.undefined,
-    minZoomImageRatio: js.UndefOr[Double] = js.undefined,
-    minZoomLevel: js.UndefOr[Double] = js.undefined,
-    mouseNavEnabled: js.UndefOr[Double] = js.undefined,
-    navImages: NavImages = null,
-    navPrevNextWrap: js.UndefOr[Boolean] = js.undefined,
-    navigationControlAnchor: ControlAnchor = null,
-    navigatorAutoFade: js.UndefOr[Boolean] = js.undefined,
-    navigatorAutoResize: js.UndefOr[Boolean] = js.undefined,
-    navigatorBackground: String = null,
-    navigatorBorderColor: String = null,
-    navigatorDisplayRegionColor: String = null,
-    navigatorHeight: Double | String = null,
-    navigatorId: String = null,
-    navigatorLeft: Double | String = null,
-    navigatorMaintainSizeRatio: js.UndefOr[Boolean] = js.undefined,
-    navigatorOpacity: js.UndefOr[Double] = js.undefined,
-    navigatorPosition: TOP_LEFT | TOP_RIGHT | BOTTOM_LEFT | BOTTOM_RIGHT | ABSOLUTE = null,
-    navigatorRotate: js.UndefOr[Boolean] = js.undefined,
-    navigatorSizeRatio: js.UndefOr[Double] = js.undefined,
-    navigatorTop: Double | String = null,
-    navigatorWidth: Double | String = null,
-    nextButton: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    overlays: js.Array[_] = null,
-    panHorizontal: js.UndefOr[Boolean] = js.undefined,
-    panVertical: js.UndefOr[Boolean] = js.undefined,
-    pixelsPerArrowPress: js.UndefOr[Double] = js.undefined,
-    pixelsPerWheelLine: js.UndefOr[Double] = js.undefined,
-    placeholderFillStyle: String | CanvasGradient | CanvasPattern = null,
-    prefixUrl: String = null,
-    preload: js.UndefOr[Boolean] = js.undefined,
-    preserveImageSizeOnResize: js.UndefOr[Boolean] = js.undefined,
-    preserveOverlays: js.UndefOr[Boolean] = js.undefined,
-    preserveViewport: js.UndefOr[Boolean] = js.undefined,
-    previousButton: String = null,
-    referenceStripElement: HTMLElement = null,
-    referenceStripHeight: js.UndefOr[Double] = js.undefined,
-    referenceStripPosition: String = null,
-    referenceStripScroll: String = null,
-    referenceStripSizeRatio: js.UndefOr[Double] = js.undefined,
-    referenceStripWidth: js.UndefOr[Double] = js.undefined,
-    rotateLeftButton: String = null,
-    rotateRightButton: String = null,
-    rotationIncrement: js.UndefOr[Double] = js.undefined,
-    sequenceControlAnchor: ControlAnchor = null,
-    sequenceMode: js.UndefOr[Boolean] = js.undefined,
-    showFlipControl: js.UndefOr[Boolean] = js.undefined,
-    showFullPageControl: js.UndefOr[Boolean] = js.undefined,
-    showHomeControl: js.UndefOr[Boolean] = js.undefined,
-    showNavigationControl: js.UndefOr[Boolean] = js.undefined,
-    showNavigator: js.UndefOr[Boolean] = js.undefined,
-    showReferenceStrip: js.UndefOr[Boolean] = js.undefined,
-    showRotationControl: js.UndefOr[Boolean] = js.undefined,
-    showSequenceControl: js.UndefOr[Boolean] = js.undefined,
-    showZoomControl: js.UndefOr[Boolean] = js.undefined,
-    smoothTileEdgesMinZoom: js.UndefOr[Double] = js.undefined,
-    springStiffness: js.UndefOr[Double] = js.undefined,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    tileSources: String | (js.Array[String | TileSource]) | TileSourceOptions | Levels | Image = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    useCanvas: js.UndefOr[Boolean] = js.undefined,
-    viewportMargins: js.Object = null,
-    visibilityRatio: js.UndefOr[Double] = js.undefined,
-    wrapHorizontal: js.UndefOr[Boolean] = js.undefined,
-    wrapVertical: js.UndefOr[Boolean] = js.undefined,
-    zoomInButton: String = null,
-    zoomOutButton: String = null,
-    zoomPerClick: js.UndefOr[Double] = js.undefined,
-    zoomPerScroll: js.UndefOr[Double] = js.undefined,
-    zoomPerSecond: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (ajaxHeaders != null) __obj.updateDynamic("ajaxHeaders")(ajaxHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(ajaxWithCredentials)) __obj.updateDynamic("ajaxWithCredentials")(ajaxWithCredentials.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysBlend)) __obj.updateDynamic("alwaysBlend")(alwaysBlend.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationTime)) __obj.updateDynamic("animationTime")(animationTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHideControls)) __obj.updateDynamic("autoHideControls")(autoHideControls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blendTime)) __obj.updateDynamic("blendTime")(blendTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickDistThreshold)) __obj.updateDynamic("clickDistThreshold")(clickDistThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickTimeThreshold)) __obj.updateDynamic("clickTimeThreshold")(clickTimeThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collectionColumns)) __obj.updateDynamic("collectionColumns")(collectionColumns.get.asInstanceOf[js.Any])
-    if (collectionLayout != null) __obj.updateDynamic("collectionLayout")(collectionLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(collectionMode)) __obj.updateDynamic("collectionMode")(collectionMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collectionRows)) __obj.updateDynamic("collectionRows")(collectionRows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collectionTileMargin)) __obj.updateDynamic("collectionTileMargin")(collectionTileMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collectionTileSize)) __obj.updateDynamic("collectionTileSize")(collectionTileSize.get.asInstanceOf[js.Any])
-    if (compositeOperation != null) __obj.updateDynamic("compositeOperation")(compositeOperation.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainDuringPan)) __obj.updateDynamic("constrainDuringPan")(constrainDuringPan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(controlsFadeDelay)) __obj.updateDynamic("controlsFadeDelay")(controlsFadeDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(controlsFadeLength)) __obj.updateDynamic("controlsFadeLength")(controlsFadeLength.get.asInstanceOf[js.Any])
-    if (crossOriginPolicy != null) __obj.updateDynamic("crossOriginPolicy")(crossOriginPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(dblClickDistThreshold)) __obj.updateDynamic("dblClickDistThreshold")(dblClickDistThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dblClickTimeThreshold)) __obj.updateDynamic("dblClickTimeThreshold")(dblClickTimeThreshold.get.asInstanceOf[js.Any])
-    if (debugGridColor != null) __obj.updateDynamic("debugGridColor")(debugGridColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultZoomLevel)) __obj.updateDynamic("defaultZoomLevel")(defaultZoomLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(degrees)) __obj.updateDynamic("degrees")(degrees.get.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipped)) __obj.updateDynamic("flipped")(flipped.get.asInstanceOf[js.Any])
-    if (fullPageButton != null) __obj.updateDynamic("fullPageButton")(fullPageButton.asInstanceOf[js.Any])
-    if (gestureSettingsMouse != null) __obj.updateDynamic("gestureSettingsMouse")(gestureSettingsMouse.asInstanceOf[js.Any])
-    if (gestureSettingsPen != null) __obj.updateDynamic("gestureSettingsPen")(gestureSettingsPen.asInstanceOf[js.Any])
-    if (gestureSettingsTouch != null) __obj.updateDynamic("gestureSettingsTouch")(gestureSettingsTouch.asInstanceOf[js.Any])
-    if (gestureSettingsUnknown != null) __obj.updateDynamic("gestureSettingsUnknown")(gestureSettingsUnknown.asInstanceOf[js.Any])
-    if (homeButton != null) __obj.updateDynamic("homeButton")(homeButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(homeFillsViewer)) __obj.updateDynamic("homeFillsViewer")(homeFillsViewer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iOSDevice)) __obj.updateDynamic("iOSDevice")(iOSDevice.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageLoaderLimit)) __obj.updateDynamic("imageLoaderLimit")(imageLoaderLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageSmoothingEnabled)) __obj.updateDynamic("imageSmoothingEnabled")(imageSmoothingEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediateRender)) __obj.updateDynamic("immediateRender")(immediateRender.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialPage)) __obj.updateDynamic("initialPage")(initialPage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadTilesWithAjax)) __obj.updateDynamic("loadTilesWithAjax")(loadTilesWithAjax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxImageCacheCount)) __obj.updateDynamic("maxImageCacheCount")(maxImageCacheCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoomLevel)) __obj.updateDynamic("maxZoomLevel")(maxZoomLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoomPixelRatio)) __obj.updateDynamic("maxZoomPixelRatio")(maxZoomPixelRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minPixelRatio)) __obj.updateDynamic("minPixelRatio")(minPixelRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minScrollDeltaTime)) __obj.updateDynamic("minScrollDeltaTime")(minScrollDeltaTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoomImageRatio)) __obj.updateDynamic("minZoomImageRatio")(minZoomImageRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoomLevel)) __obj.updateDynamic("minZoomLevel")(minZoomLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseNavEnabled)) __obj.updateDynamic("mouseNavEnabled")(mouseNavEnabled.get.asInstanceOf[js.Any])
-    if (navImages != null) __obj.updateDynamic("navImages")(navImages.asInstanceOf[js.Any])
-    if (!js.isUndefined(navPrevNextWrap)) __obj.updateDynamic("navPrevNextWrap")(navPrevNextWrap.get.asInstanceOf[js.Any])
-    if (navigationControlAnchor != null) __obj.updateDynamic("navigationControlAnchor")(navigationControlAnchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatorAutoFade)) __obj.updateDynamic("navigatorAutoFade")(navigatorAutoFade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatorAutoResize)) __obj.updateDynamic("navigatorAutoResize")(navigatorAutoResize.get.asInstanceOf[js.Any])
-    if (navigatorBackground != null) __obj.updateDynamic("navigatorBackground")(navigatorBackground.asInstanceOf[js.Any])
-    if (navigatorBorderColor != null) __obj.updateDynamic("navigatorBorderColor")(navigatorBorderColor.asInstanceOf[js.Any])
-    if (navigatorDisplayRegionColor != null) __obj.updateDynamic("navigatorDisplayRegionColor")(navigatorDisplayRegionColor.asInstanceOf[js.Any])
-    if (navigatorHeight != null) __obj.updateDynamic("navigatorHeight")(navigatorHeight.asInstanceOf[js.Any])
-    if (navigatorId != null) __obj.updateDynamic("navigatorId")(navigatorId.asInstanceOf[js.Any])
-    if (navigatorLeft != null) __obj.updateDynamic("navigatorLeft")(navigatorLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatorMaintainSizeRatio)) __obj.updateDynamic("navigatorMaintainSizeRatio")(navigatorMaintainSizeRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatorOpacity)) __obj.updateDynamic("navigatorOpacity")(navigatorOpacity.get.asInstanceOf[js.Any])
-    if (navigatorPosition != null) __obj.updateDynamic("navigatorPosition")(navigatorPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatorRotate)) __obj.updateDynamic("navigatorRotate")(navigatorRotate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatorSizeRatio)) __obj.updateDynamic("navigatorSizeRatio")(navigatorSizeRatio.get.asInstanceOf[js.Any])
-    if (navigatorTop != null) __obj.updateDynamic("navigatorTop")(navigatorTop.asInstanceOf[js.Any])
-    if (navigatorWidth != null) __obj.updateDynamic("navigatorWidth")(navigatorWidth.asInstanceOf[js.Any])
-    if (nextButton != null) __obj.updateDynamic("nextButton")(nextButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (overlays != null) __obj.updateDynamic("overlays")(overlays.asInstanceOf[js.Any])
-    if (!js.isUndefined(panHorizontal)) __obj.updateDynamic("panHorizontal")(panHorizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(panVertical)) __obj.updateDynamic("panVertical")(panVertical.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelsPerArrowPress)) __obj.updateDynamic("pixelsPerArrowPress")(pixelsPerArrowPress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelsPerWheelLine)) __obj.updateDynamic("pixelsPerWheelLine")(pixelsPerWheelLine.get.asInstanceOf[js.Any])
-    if (placeholderFillStyle != null) __obj.updateDynamic("placeholderFillStyle")(placeholderFillStyle.asInstanceOf[js.Any])
-    if (prefixUrl != null) __obj.updateDynamic("prefixUrl")(prefixUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveImageSizeOnResize)) __obj.updateDynamic("preserveImageSizeOnResize")(preserveImageSizeOnResize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveOverlays)) __obj.updateDynamic("preserveOverlays")(preserveOverlays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveViewport)) __obj.updateDynamic("preserveViewport")(preserveViewport.get.asInstanceOf[js.Any])
-    if (previousButton != null) __obj.updateDynamic("previousButton")(previousButton.asInstanceOf[js.Any])
-    if (referenceStripElement != null) __obj.updateDynamic("referenceStripElement")(referenceStripElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(referenceStripHeight)) __obj.updateDynamic("referenceStripHeight")(referenceStripHeight.get.asInstanceOf[js.Any])
-    if (referenceStripPosition != null) __obj.updateDynamic("referenceStripPosition")(referenceStripPosition.asInstanceOf[js.Any])
-    if (referenceStripScroll != null) __obj.updateDynamic("referenceStripScroll")(referenceStripScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(referenceStripSizeRatio)) __obj.updateDynamic("referenceStripSizeRatio")(referenceStripSizeRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(referenceStripWidth)) __obj.updateDynamic("referenceStripWidth")(referenceStripWidth.get.asInstanceOf[js.Any])
-    if (rotateLeftButton != null) __obj.updateDynamic("rotateLeftButton")(rotateLeftButton.asInstanceOf[js.Any])
-    if (rotateRightButton != null) __obj.updateDynamic("rotateRightButton")(rotateRightButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotationIncrement)) __obj.updateDynamic("rotationIncrement")(rotationIncrement.get.asInstanceOf[js.Any])
-    if (sequenceControlAnchor != null) __obj.updateDynamic("sequenceControlAnchor")(sequenceControlAnchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(sequenceMode)) __obj.updateDynamic("sequenceMode")(sequenceMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFlipControl)) __obj.updateDynamic("showFlipControl")(showFlipControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFullPageControl)) __obj.updateDynamic("showFullPageControl")(showFullPageControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHomeControl)) __obj.updateDynamic("showHomeControl")(showHomeControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNavigationControl)) __obj.updateDynamic("showNavigationControl")(showNavigationControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNavigator)) __obj.updateDynamic("showNavigator")(showNavigator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showReferenceStrip)) __obj.updateDynamic("showReferenceStrip")(showReferenceStrip.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRotationControl)) __obj.updateDynamic("showRotationControl")(showRotationControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSequenceControl)) __obj.updateDynamic("showSequenceControl")(showSequenceControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showZoomControl)) __obj.updateDynamic("showZoomControl")(showZoomControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothTileEdgesMinZoom)) __obj.updateDynamic("smoothTileEdgesMinZoom")(smoothTileEdgesMinZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(springStiffness)) __obj.updateDynamic("springStiffness")(springStiffness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (tileSources != null) __obj.updateDynamic("tileSources")(tileSources.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCanvas)) __obj.updateDynamic("useCanvas")(useCanvas.get.asInstanceOf[js.Any])
-    if (viewportMargins != null) __obj.updateDynamic("viewportMargins")(viewportMargins.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibilityRatio)) __obj.updateDynamic("visibilityRatio")(visibilityRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapHorizontal)) __obj.updateDynamic("wrapHorizontal")(wrapHorizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapVertical)) __obj.updateDynamic("wrapVertical")(wrapVertical.get.asInstanceOf[js.Any])
-    if (zoomInButton != null) __obj.updateDynamic("zoomInButton")(zoomInButton.asInstanceOf[js.Any])
-    if (zoomOutButton != null) __obj.updateDynamic("zoomOutButton")(zoomOutButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomPerClick)) __obj.updateDynamic("zoomPerClick")(zoomPerClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomPerScroll)) __obj.updateDynamic("zoomPerScroll")(zoomPerScroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomPerSecond)) __obj.updateDynamic("zoomPerSecond")(zoomPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAjaxHeaders(value: js.Object): Self = this.set("ajaxHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxHeaders: Self = this.set("ajaxHeaders", js.undefined)
+    @scala.inline
+    def setAjaxWithCredentials(value: Boolean): Self = this.set("ajaxWithCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxWithCredentials: Self = this.set("ajaxWithCredentials", js.undefined)
+    @scala.inline
+    def setAlwaysBlend(value: Boolean): Self = this.set("alwaysBlend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysBlend: Self = this.set("alwaysBlend", js.undefined)
+    @scala.inline
+    def setAnimationTime(value: Double): Self = this.set("animationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationTime: Self = this.set("animationTime", js.undefined)
+    @scala.inline
+    def setAutoHideControls(value: Boolean): Self = this.set("autoHideControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHideControls: Self = this.set("autoHideControls", js.undefined)
+    @scala.inline
+    def setAutoResize(value: Boolean): Self = this.set("autoResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoResize: Self = this.set("autoResize", js.undefined)
+    @scala.inline
+    def setBlendTime(value: Double): Self = this.set("blendTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlendTime: Self = this.set("blendTime", js.undefined)
+    @scala.inline
+    def setClickDistThreshold(value: Double): Self = this.set("clickDistThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickDistThreshold: Self = this.set("clickDistThreshold", js.undefined)
+    @scala.inline
+    def setClickTimeThreshold(value: Double): Self = this.set("clickTimeThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickTimeThreshold: Self = this.set("clickTimeThreshold", js.undefined)
+    @scala.inline
+    def setCollectionColumns(value: Double): Self = this.set("collectionColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionColumns: Self = this.set("collectionColumns", js.undefined)
+    @scala.inline
+    def setCollectionLayout(value: horizontal | vertical): Self = this.set("collectionLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionLayout: Self = this.set("collectionLayout", js.undefined)
+    @scala.inline
+    def setCollectionMode(value: Boolean): Self = this.set("collectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionMode: Self = this.set("collectionMode", js.undefined)
+    @scala.inline
+    def setCollectionRows(value: Double): Self = this.set("collectionRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionRows: Self = this.set("collectionRows", js.undefined)
+    @scala.inline
+    def setCollectionTileMargin(value: Double): Self = this.set("collectionTileMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionTileMargin: Self = this.set("collectionTileMargin", js.undefined)
+    @scala.inline
+    def setCollectionTileSize(value: Double): Self = this.set("collectionTileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionTileSize: Self = this.set("collectionTileSize", js.undefined)
+    @scala.inline
+    def setCompositeOperation(
+      value: `source-over` | `source-atop` | `source-in` | `source-out` | `destination-over` | `destination-atop` | `destination-in` | `destination-out` | lighter | copy | xor
+    ): Self = this.set("compositeOperation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompositeOperation: Self = this.set("compositeOperation", js.undefined)
+    @scala.inline
+    def setConstrainDuringPan(value: Boolean): Self = this.set("constrainDuringPan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstrainDuringPan: Self = this.set("constrainDuringPan", js.undefined)
+    @scala.inline
+    def setControlsFadeDelay(value: Double): Self = this.set("controlsFadeDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlsFadeDelay: Self = this.set("controlsFadeDelay", js.undefined)
+    @scala.inline
+    def setControlsFadeLength(value: Double): Self = this.set("controlsFadeLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlsFadeLength: Self = this.set("controlsFadeLength", js.undefined)
+    @scala.inline
+    def setCrossOriginPolicy(value: Anonymous | `use-credentials` | `false`): Self = this.set("crossOriginPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossOriginPolicy: Self = this.set("crossOriginPolicy", js.undefined)
+    @scala.inline
+    def setDblClickDistThreshold(value: Double): Self = this.set("dblClickDistThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDblClickDistThreshold: Self = this.set("dblClickDistThreshold", js.undefined)
+    @scala.inline
+    def setDblClickTimeThreshold(value: Double): Self = this.set("dblClickTimeThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDblClickTimeThreshold: Self = this.set("dblClickTimeThreshold", js.undefined)
+    @scala.inline
+    def setDebugGridColorVarargs(value: String*): Self = this.set("debugGridColor", js.Array(value :_*))
+    @scala.inline
+    def setDebugGridColor(value: js.Array[String]): Self = this.set("debugGridColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugGridColor: Self = this.set("debugGridColor", js.undefined)
+    @scala.inline
+    def setDebugMode(value: Boolean): Self = this.set("debugMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugMode: Self = this.set("debugMode", js.undefined)
+    @scala.inline
+    def setDefaultZoomLevel(value: Double): Self = this.set("defaultZoomLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultZoomLevel: Self = this.set("defaultZoomLevel", js.undefined)
+    @scala.inline
+    def setDegrees(value: Double): Self = this.set("degrees", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDegrees: Self = this.set("degrees", js.undefined)
+    @scala.inline
+    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setFlipped(value: Boolean): Self = this.set("flipped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlipped: Self = this.set("flipped", js.undefined)
+    @scala.inline
+    def setFullPageButton(value: String): Self = this.set("fullPageButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullPageButton: Self = this.set("fullPageButton", js.undefined)
+    @scala.inline
+    def setGestureSettingsMouse(value: GestureSettings): Self = this.set("gestureSettingsMouse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGestureSettingsMouse: Self = this.set("gestureSettingsMouse", js.undefined)
+    @scala.inline
+    def setGestureSettingsPen(value: GestureSettings): Self = this.set("gestureSettingsPen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGestureSettingsPen: Self = this.set("gestureSettingsPen", js.undefined)
+    @scala.inline
+    def setGestureSettingsTouch(value: GestureSettings): Self = this.set("gestureSettingsTouch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGestureSettingsTouch: Self = this.set("gestureSettingsTouch", js.undefined)
+    @scala.inline
+    def setGestureSettingsUnknown(value: GestureSettings): Self = this.set("gestureSettingsUnknown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGestureSettingsUnknown: Self = this.set("gestureSettingsUnknown", js.undefined)
+    @scala.inline
+    def setHomeButton(value: String): Self = this.set("homeButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeButton: Self = this.set("homeButton", js.undefined)
+    @scala.inline
+    def setHomeFillsViewer(value: Boolean): Self = this.set("homeFillsViewer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeFillsViewer: Self = this.set("homeFillsViewer", js.undefined)
+    @scala.inline
+    def setIOSDevice(value: Boolean): Self = this.set("iOSDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIOSDevice: Self = this.set("iOSDevice", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImageLoaderLimit(value: Double): Self = this.set("imageLoaderLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageLoaderLimit: Self = this.set("imageLoaderLimit", js.undefined)
+    @scala.inline
+    def setImageSmoothingEnabled(value: Boolean): Self = this.set("imageSmoothingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageSmoothingEnabled: Self = this.set("imageSmoothingEnabled", js.undefined)
+    @scala.inline
+    def setImmediateRender(value: Boolean): Self = this.set("immediateRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImmediateRender: Self = this.set("immediateRender", js.undefined)
+    @scala.inline
+    def setInitialPage(value: Double): Self = this.set("initialPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPage: Self = this.set("initialPage", js.undefined)
+    @scala.inline
+    def setLoadTilesWithAjax(value: Boolean): Self = this.set("loadTilesWithAjax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadTilesWithAjax: Self = this.set("loadTilesWithAjax", js.undefined)
+    @scala.inline
+    def setMaxImageCacheCount(value: Double): Self = this.set("maxImageCacheCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxImageCacheCount: Self = this.set("maxImageCacheCount", js.undefined)
+    @scala.inline
+    def setMaxZoomLevel(value: Double): Self = this.set("maxZoomLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoomLevel: Self = this.set("maxZoomLevel", js.undefined)
+    @scala.inline
+    def setMaxZoomPixelRatio(value: Double): Self = this.set("maxZoomPixelRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoomPixelRatio: Self = this.set("maxZoomPixelRatio", js.undefined)
+    @scala.inline
+    def setMinPixelRatio(value: Double): Self = this.set("minPixelRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinPixelRatio: Self = this.set("minPixelRatio", js.undefined)
+    @scala.inline
+    def setMinScrollDeltaTime(value: Double): Self = this.set("minScrollDeltaTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinScrollDeltaTime: Self = this.set("minScrollDeltaTime", js.undefined)
+    @scala.inline
+    def setMinZoomImageRatio(value: Double): Self = this.set("minZoomImageRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoomImageRatio: Self = this.set("minZoomImageRatio", js.undefined)
+    @scala.inline
+    def setMinZoomLevel(value: Double): Self = this.set("minZoomLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoomLevel: Self = this.set("minZoomLevel", js.undefined)
+    @scala.inline
+    def setMouseNavEnabled(value: Double): Self = this.set("mouseNavEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseNavEnabled: Self = this.set("mouseNavEnabled", js.undefined)
+    @scala.inline
+    def setNavImages(value: NavImages): Self = this.set("navImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavImages: Self = this.set("navImages", js.undefined)
+    @scala.inline
+    def setNavPrevNextWrap(value: Boolean): Self = this.set("navPrevNextWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavPrevNextWrap: Self = this.set("navPrevNextWrap", js.undefined)
+    @scala.inline
+    def setNavigationControlAnchor(value: ControlAnchor): Self = this.set("navigationControlAnchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigationControlAnchor: Self = this.set("navigationControlAnchor", js.undefined)
+    @scala.inline
+    def setNavigatorAutoFade(value: Boolean): Self = this.set("navigatorAutoFade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorAutoFade: Self = this.set("navigatorAutoFade", js.undefined)
+    @scala.inline
+    def setNavigatorAutoResize(value: Boolean): Self = this.set("navigatorAutoResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorAutoResize: Self = this.set("navigatorAutoResize", js.undefined)
+    @scala.inline
+    def setNavigatorBackground(value: String): Self = this.set("navigatorBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorBackground: Self = this.set("navigatorBackground", js.undefined)
+    @scala.inline
+    def setNavigatorBorderColor(value: String): Self = this.set("navigatorBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorBorderColor: Self = this.set("navigatorBorderColor", js.undefined)
+    @scala.inline
+    def setNavigatorDisplayRegionColor(value: String): Self = this.set("navigatorDisplayRegionColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorDisplayRegionColor: Self = this.set("navigatorDisplayRegionColor", js.undefined)
+    @scala.inline
+    def setNavigatorHeight(value: Double | String): Self = this.set("navigatorHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorHeight: Self = this.set("navigatorHeight", js.undefined)
+    @scala.inline
+    def setNavigatorId(value: String): Self = this.set("navigatorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorId: Self = this.set("navigatorId", js.undefined)
+    @scala.inline
+    def setNavigatorLeft(value: Double | String): Self = this.set("navigatorLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorLeft: Self = this.set("navigatorLeft", js.undefined)
+    @scala.inline
+    def setNavigatorMaintainSizeRatio(value: Boolean): Self = this.set("navigatorMaintainSizeRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorMaintainSizeRatio: Self = this.set("navigatorMaintainSizeRatio", js.undefined)
+    @scala.inline
+    def setNavigatorOpacity(value: Double): Self = this.set("navigatorOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorOpacity: Self = this.set("navigatorOpacity", js.undefined)
+    @scala.inline
+    def setNavigatorPosition(value: TOP_LEFT | TOP_RIGHT | BOTTOM_LEFT | BOTTOM_RIGHT | ABSOLUTE): Self = this.set("navigatorPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorPosition: Self = this.set("navigatorPosition", js.undefined)
+    @scala.inline
+    def setNavigatorRotate(value: Boolean): Self = this.set("navigatorRotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorRotate: Self = this.set("navigatorRotate", js.undefined)
+    @scala.inline
+    def setNavigatorSizeRatio(value: Double): Self = this.set("navigatorSizeRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorSizeRatio: Self = this.set("navigatorSizeRatio", js.undefined)
+    @scala.inline
+    def setNavigatorTop(value: Double | String): Self = this.set("navigatorTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorTop: Self = this.set("navigatorTop", js.undefined)
+    @scala.inline
+    def setNavigatorWidth(value: Double | String): Self = this.set("navigatorWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorWidth: Self = this.set("navigatorWidth", js.undefined)
+    @scala.inline
+    def setNextButton(value: String): Self = this.set("nextButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextButton: Self = this.set("nextButton", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setOverlaysVarargs(value: js.Any*): Self = this.set("overlays", js.Array(value :_*))
+    @scala.inline
+    def setOverlays(value: js.Array[_]): Self = this.set("overlays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlays: Self = this.set("overlays", js.undefined)
+    @scala.inline
+    def setPanHorizontal(value: Boolean): Self = this.set("panHorizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanHorizontal: Self = this.set("panHorizontal", js.undefined)
+    @scala.inline
+    def setPanVertical(value: Boolean): Self = this.set("panVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanVertical: Self = this.set("panVertical", js.undefined)
+    @scala.inline
+    def setPixelsPerArrowPress(value: Double): Self = this.set("pixelsPerArrowPress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelsPerArrowPress: Self = this.set("pixelsPerArrowPress", js.undefined)
+    @scala.inline
+    def setPixelsPerWheelLine(value: Double): Self = this.set("pixelsPerWheelLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelsPerWheelLine: Self = this.set("pixelsPerWheelLine", js.undefined)
+    @scala.inline
+    def setPlaceholderFillStyle(value: String | CanvasGradient | CanvasPattern): Self = this.set("placeholderFillStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholderFillStyle: Self = this.set("placeholderFillStyle", js.undefined)
+    @scala.inline
+    def setPrefixUrl(value: String): Self = this.set("prefixUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixUrl: Self = this.set("prefixUrl", js.undefined)
+    @scala.inline
+    def setPreload(value: Boolean): Self = this.set("preload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreload: Self = this.set("preload", js.undefined)
+    @scala.inline
+    def setPreserveImageSizeOnResize(value: Boolean): Self = this.set("preserveImageSizeOnResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveImageSizeOnResize: Self = this.set("preserveImageSizeOnResize", js.undefined)
+    @scala.inline
+    def setPreserveOverlays(value: Boolean): Self = this.set("preserveOverlays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveOverlays: Self = this.set("preserveOverlays", js.undefined)
+    @scala.inline
+    def setPreserveViewport(value: Boolean): Self = this.set("preserveViewport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveViewport: Self = this.set("preserveViewport", js.undefined)
+    @scala.inline
+    def setPreviousButton(value: String): Self = this.set("previousButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousButton: Self = this.set("previousButton", js.undefined)
+    @scala.inline
+    def setReferenceStripElement(value: HTMLElement): Self = this.set("referenceStripElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceStripElement: Self = this.set("referenceStripElement", js.undefined)
+    @scala.inline
+    def setReferenceStripHeight(value: Double): Self = this.set("referenceStripHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceStripHeight: Self = this.set("referenceStripHeight", js.undefined)
+    @scala.inline
+    def setReferenceStripPosition(value: String): Self = this.set("referenceStripPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceStripPosition: Self = this.set("referenceStripPosition", js.undefined)
+    @scala.inline
+    def setReferenceStripScroll(value: String): Self = this.set("referenceStripScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceStripScroll: Self = this.set("referenceStripScroll", js.undefined)
+    @scala.inline
+    def setReferenceStripSizeRatio(value: Double): Self = this.set("referenceStripSizeRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceStripSizeRatio: Self = this.set("referenceStripSizeRatio", js.undefined)
+    @scala.inline
+    def setReferenceStripWidth(value: Double): Self = this.set("referenceStripWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceStripWidth: Self = this.set("referenceStripWidth", js.undefined)
+    @scala.inline
+    def setRotateLeftButton(value: String): Self = this.set("rotateLeftButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotateLeftButton: Self = this.set("rotateLeftButton", js.undefined)
+    @scala.inline
+    def setRotateRightButton(value: String): Self = this.set("rotateRightButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotateRightButton: Self = this.set("rotateRightButton", js.undefined)
+    @scala.inline
+    def setRotationIncrement(value: Double): Self = this.set("rotationIncrement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationIncrement: Self = this.set("rotationIncrement", js.undefined)
+    @scala.inline
+    def setSequenceControlAnchor(value: ControlAnchor): Self = this.set("sequenceControlAnchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceControlAnchor: Self = this.set("sequenceControlAnchor", js.undefined)
+    @scala.inline
+    def setSequenceMode(value: Boolean): Self = this.set("sequenceMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceMode: Self = this.set("sequenceMode", js.undefined)
+    @scala.inline
+    def setShowFlipControl(value: Boolean): Self = this.set("showFlipControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFlipControl: Self = this.set("showFlipControl", js.undefined)
+    @scala.inline
+    def setShowFullPageControl(value: Boolean): Self = this.set("showFullPageControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFullPageControl: Self = this.set("showFullPageControl", js.undefined)
+    @scala.inline
+    def setShowHomeControl(value: Boolean): Self = this.set("showHomeControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowHomeControl: Self = this.set("showHomeControl", js.undefined)
+    @scala.inline
+    def setShowNavigationControl(value: Boolean): Self = this.set("showNavigationControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNavigationControl: Self = this.set("showNavigationControl", js.undefined)
+    @scala.inline
+    def setShowNavigator(value: Boolean): Self = this.set("showNavigator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNavigator: Self = this.set("showNavigator", js.undefined)
+    @scala.inline
+    def setShowReferenceStrip(value: Boolean): Self = this.set("showReferenceStrip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowReferenceStrip: Self = this.set("showReferenceStrip", js.undefined)
+    @scala.inline
+    def setShowRotationControl(value: Boolean): Self = this.set("showRotationControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowRotationControl: Self = this.set("showRotationControl", js.undefined)
+    @scala.inline
+    def setShowSequenceControl(value: Boolean): Self = this.set("showSequenceControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSequenceControl: Self = this.set("showSequenceControl", js.undefined)
+    @scala.inline
+    def setShowZoomControl(value: Boolean): Self = this.set("showZoomControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowZoomControl: Self = this.set("showZoomControl", js.undefined)
+    @scala.inline
+    def setSmoothTileEdgesMinZoom(value: Double): Self = this.set("smoothTileEdgesMinZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmoothTileEdgesMinZoom: Self = this.set("smoothTileEdgesMinZoom", js.undefined)
+    @scala.inline
+    def setSpringStiffness(value: Double): Self = this.set("springStiffness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpringStiffness: Self = this.set("springStiffness", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTileSourcesVarargs(value: (String | TileSource)*): Self = this.set("tileSources", js.Array(value :_*))
+    @scala.inline
+    def setTileSources(value: String | (js.Array[String | TileSource]) | TileSourceOptions | Levels | Image): Self = this.set("tileSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileSources: Self = this.set("tileSources", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUseCanvas(value: Boolean): Self = this.set("useCanvas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseCanvas: Self = this.set("useCanvas", js.undefined)
+    @scala.inline
+    def setViewportMargins(value: js.Object): Self = this.set("viewportMargins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewportMargins: Self = this.set("viewportMargins", js.undefined)
+    @scala.inline
+    def setVisibilityRatio(value: Double): Self = this.set("visibilityRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibilityRatio: Self = this.set("visibilityRatio", js.undefined)
+    @scala.inline
+    def setWrapHorizontal(value: Boolean): Self = this.set("wrapHorizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapHorizontal: Self = this.set("wrapHorizontal", js.undefined)
+    @scala.inline
+    def setWrapVertical(value: Boolean): Self = this.set("wrapVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapVertical: Self = this.set("wrapVertical", js.undefined)
+    @scala.inline
+    def setZoomInButton(value: String): Self = this.set("zoomInButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomInButton: Self = this.set("zoomInButton", js.undefined)
+    @scala.inline
+    def setZoomOutButton(value: String): Self = this.set("zoomOutButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomOutButton: Self = this.set("zoomOutButton", js.undefined)
+    @scala.inline
+    def setZoomPerClick(value: Double): Self = this.set("zoomPerClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomPerClick: Self = this.set("zoomPerClick", js.undefined)
+    @scala.inline
+    def setZoomPerScroll(value: Double): Self = this.set("zoomPerScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomPerScroll: Self = this.set("zoomPerScroll", js.undefined)
+    @scala.inline
+    def setZoomPerSecond(value: Double): Self = this.set("zoomPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomPerSecond: Self = this.set("zoomPerSecond", js.undefined)
+  }
+  
 }
 

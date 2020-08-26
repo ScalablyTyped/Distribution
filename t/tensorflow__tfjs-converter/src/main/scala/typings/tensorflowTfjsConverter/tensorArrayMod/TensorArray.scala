@@ -19,12 +19,6 @@ class TensorArray protected () extends js.Object {
     dynamicSize: Boolean,
     clearAfterRead: Boolean
   ) = this()
-  /**
-    * This differs from util.assertShapesMatch in that it allows values of
-    * negative one, an undefined size of a dimensinon, in a shape to match
-    * anything.
-    */
-  var assertShapesMatchAllowUndefinedSize: js.Any = js.native
   val clearAfterRead: Boolean = js.native
   val closed: Boolean = js.native
   var closed_ : js.Any = js.native
@@ -35,7 +29,6 @@ class TensorArray protected () extends js.Object {
   val identicalElementShapes: Boolean = js.native
   var maxSize: js.Any = js.native
   val name: String = js.native
-  var shapesEqualAllowUndefinedSize: js.Any = js.native
   var tensors: js.Any = js.native
   /**
     * Close the current TensorArray.
@@ -55,6 +48,7 @@ class TensorArray protected () extends js.Object {
     * @param [dtype]
     */
   def gather(): Tensor[Rank] = js.native
+  def gather(indices: js.UndefOr[scala.Nothing], dtype: DataType): Tensor[Rank] = js.native
   def gather(indices: js.Array[Double]): Tensor[Rank] = js.native
   def gather(indices: js.Array[Double], dtype: DataType): Tensor[Rank] = js.native
   /**

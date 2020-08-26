@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait State extends js.Object {
   /**
     * The error code.
@@ -23,7 +24,7 @@ trait State extends js.Object {
     * - 12: The relay has already started. Possibly caused by calling {@link startChannelMediaRelay} repeatedly, or calling {@link startChannelMediaRelay} before {@link stopChannelMediaRelay} succeeds.
     * - 13: The relay has not started. Possibly caused by calling {@link updateChannelMediaRelay} before {@link startChannelMediaRelay} succeeds.
     */
-  var code: Double
+  var code: Double = js.native
   /**
     * The state code.
     *
@@ -32,7 +33,7 @@ trait State extends js.Object {
     * - 2: The SDK successfully relays the media stream to the destination channel.
     * - 3: An error occurs. See `code` for the error code. In case of an error, the SDK resets the media stream relay state, and you need to call {@link startChannelMediaRelay} to restart the relay.
     */
-  var state: Double
+  var state: Double = js.native
 }
 
 object State {
@@ -41,5 +42,22 @@ object State {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
+  @scala.inline
+  implicit class StateOps[Self <: State] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: Double): Self = this.set("state", value.asInstanceOf[js.Any])
+  }
+  
 }
 

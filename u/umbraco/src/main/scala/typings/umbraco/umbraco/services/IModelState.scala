@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Model state
   */
+@js.native
 trait IModelState extends js.Object
 

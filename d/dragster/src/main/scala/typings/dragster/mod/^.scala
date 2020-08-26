@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends Dragster {
   def this(elem: HTMLElement) = this()
-  /* CompleteClass */
-  override def removeListeners(): Unit = js.native
-  /* CompleteClass */
-  override def reset(): Unit = js.native
 }
 
 @JSImport("dragster", JSImport.Namespace)

@@ -49,20 +49,42 @@ trait SchemaCropProperties extends js.Object {
 
 object SchemaCropProperties {
   @scala.inline
-  def apply(
-    angle: js.UndefOr[Double] = js.undefined,
-    offsetBottom: js.UndefOr[Double] = js.undefined,
-    offsetLeft: js.UndefOr[Double] = js.undefined,
-    offsetRight: js.UndefOr[Double] = js.undefined,
-    offsetTop: js.UndefOr[Double] = js.undefined
-  ): SchemaCropProperties = {
+  def apply(): SchemaCropProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetBottom)) __obj.updateDynamic("offsetBottom")(offsetBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetLeft)) __obj.updateDynamic("offsetLeft")(offsetLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetRight)) __obj.updateDynamic("offsetRight")(offsetRight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetTop)) __obj.updateDynamic("offsetTop")(offsetTop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCropProperties]
   }
+  @scala.inline
+  implicit class SchemaCropPropertiesOps[Self <: SchemaCropProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngle: Self = this.set("angle", js.undefined)
+    @scala.inline
+    def setOffsetBottom(value: Double): Self = this.set("offsetBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetBottom: Self = this.set("offsetBottom", js.undefined)
+    @scala.inline
+    def setOffsetLeft(value: Double): Self = this.set("offsetLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetLeft: Self = this.set("offsetLeft", js.undefined)
+    @scala.inline
+    def setOffsetRight(value: Double): Self = this.set("offsetRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetRight: Self = this.set("offsetRight", js.undefined)
+    @scala.inline
+    def setOffsetTop(value: Double): Self = this.set("offsetTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetTop: Self = this.set("offsetTop", js.undefined)
+  }
+  
 }
 

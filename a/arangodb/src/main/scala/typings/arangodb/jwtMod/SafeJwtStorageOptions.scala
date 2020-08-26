@@ -5,29 +5,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SafeJwtStorageOptions extends js.Object {
-  var algorithm: js.UndefOr[JwtAlgorithm] = js.undefined
-  var maxExp: js.UndefOr[Double] = js.undefined
-  var secret: String
-  var ttl: js.UndefOr[Double] = js.undefined
-  var verify: js.UndefOr[Boolean] = js.undefined
+  var algorithm: js.UndefOr[JwtAlgorithm] = js.native
+  var maxExp: js.UndefOr[Double] = js.native
+  var secret: String = js.native
+  var ttl: js.UndefOr[Double] = js.native
+  var verify: js.UndefOr[Boolean] = js.native
 }
 
 object SafeJwtStorageOptions {
   @scala.inline
-  def apply(
-    secret: String,
-    algorithm: JwtAlgorithm = null,
-    maxExp: js.UndefOr[Double] = js.undefined,
-    ttl: js.UndefOr[Double] = js.undefined,
-    verify: js.UndefOr[Boolean] = js.undefined
-  ): SafeJwtStorageOptions = {
+  def apply(secret: String): SafeJwtStorageOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxExp)) __obj.updateDynamic("maxExp")(maxExp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeJwtStorageOptions]
   }
+  @scala.inline
+  implicit class SafeJwtStorageOptionsOps[Self <: SafeJwtStorageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecret(value: String): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithm(value: JwtAlgorithm): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    @scala.inline
+    def setMaxExp(value: Double): Self = this.set("maxExp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxExp: Self = this.set("maxExp", js.undefined)
+    @scala.inline
+    def setTtl(value: Double): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTtl: Self = this.set("ttl", js.undefined)
+    @scala.inline
+    def setVerify(value: Boolean): Self = this.set("verify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerify: Self = this.set("verify", js.undefined)
+  }
+  
 }
 

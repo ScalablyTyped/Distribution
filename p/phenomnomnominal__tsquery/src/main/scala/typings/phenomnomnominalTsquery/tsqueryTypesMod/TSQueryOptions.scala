@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSQueryOptions extends js.Object {
-  var visitAllChildren: js.UndefOr[Boolean] = js.undefined
+  var visitAllChildren: js.UndefOr[Boolean] = js.native
 }
 
 object TSQueryOptions {
   @scala.inline
-  def apply(visitAllChildren: js.UndefOr[Boolean] = js.undefined): TSQueryOptions = {
+  def apply(): TSQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(visitAllChildren)) __obj.updateDynamic("visitAllChildren")(visitAllChildren.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSQueryOptions]
   }
+  @scala.inline
+  implicit class TSQueryOptionsOps[Self <: TSQueryOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVisitAllChildren(value: Boolean): Self = this.set("visitAllChildren", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisitAllChildren: Self = this.set("visitAllChildren", js.undefined)
+  }
+  
 }
 

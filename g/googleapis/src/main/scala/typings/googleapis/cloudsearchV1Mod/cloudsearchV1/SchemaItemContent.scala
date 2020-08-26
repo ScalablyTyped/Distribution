@@ -29,18 +29,38 @@ trait SchemaItemContent extends js.Object {
 
 object SchemaItemContent {
   @scala.inline
-  def apply(
-    contentDataRef: SchemaUploadItemRef = null,
-    contentFormat: String = null,
-    hash: String = null,
-    inlineContent: String = null
-  ): SchemaItemContent = {
+  def apply(): SchemaItemContent = {
     val __obj = js.Dynamic.literal()
-    if (contentDataRef != null) __obj.updateDynamic("contentDataRef")(contentDataRef.asInstanceOf[js.Any])
-    if (contentFormat != null) __obj.updateDynamic("contentFormat")(contentFormat.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (inlineContent != null) __obj.updateDynamic("inlineContent")(inlineContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaItemContent]
   }
+  @scala.inline
+  implicit class SchemaItemContentOps[Self <: SchemaItemContent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentDataRef(value: SchemaUploadItemRef): Self = this.set("contentDataRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDataRef: Self = this.set("contentDataRef", js.undefined)
+    @scala.inline
+    def setContentFormat(value: String): Self = this.set("contentFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentFormat: Self = this.set("contentFormat", js.undefined)
+    @scala.inline
+    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setInlineContent(value: String): Self = this.set("inlineContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineContent: Self = this.set("inlineContent", js.undefined)
+  }
+  
 }
 

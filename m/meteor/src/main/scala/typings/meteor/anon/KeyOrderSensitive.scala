@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyOrderSensitive extends js.Object {
-  var keyOrderSensitive: js.UndefOr[Boolean] = js.undefined
+  var keyOrderSensitive: js.UndefOr[Boolean] = js.native
 }
 
 object KeyOrderSensitive {
   @scala.inline
-  def apply(keyOrderSensitive: js.UndefOr[Boolean] = js.undefined): KeyOrderSensitive = {
+  def apply(): KeyOrderSensitive = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keyOrderSensitive)) __obj.updateDynamic("keyOrderSensitive")(keyOrderSensitive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOrderSensitive]
   }
+  @scala.inline
+  implicit class KeyOrderSensitiveOps[Self <: KeyOrderSensitive] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyOrderSensitive(value: Boolean): Self = this.set("keyOrderSensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyOrderSensitive: Self = this.set("keyOrderSensitive", js.undefined)
+  }
+  
 }
 

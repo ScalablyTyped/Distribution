@@ -22,16 +22,34 @@ trait CreateThingGroupResponse extends js.Object {
 
 object CreateThingGroupResponse {
   @scala.inline
-  def apply(
-    thingGroupArn: ThingGroupArn = null,
-    thingGroupId: ThingGroupId = null,
-    thingGroupName: ThingGroupName = null
-  ): CreateThingGroupResponse = {
+  def apply(): CreateThingGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (thingGroupArn != null) __obj.updateDynamic("thingGroupArn")(thingGroupArn.asInstanceOf[js.Any])
-    if (thingGroupId != null) __obj.updateDynamic("thingGroupId")(thingGroupId.asInstanceOf[js.Any])
-    if (thingGroupName != null) __obj.updateDynamic("thingGroupName")(thingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateThingGroupResponse]
   }
+  @scala.inline
+  implicit class CreateThingGroupResponseOps[Self <: CreateThingGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingGroupArn(value: ThingGroupArn): Self = this.set("thingGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupArn: Self = this.set("thingGroupArn", js.undefined)
+    @scala.inline
+    def setThingGroupId(value: ThingGroupId): Self = this.set("thingGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupId: Self = this.set("thingGroupId", js.undefined)
+    @scala.inline
+    def setThingGroupName(value: ThingGroupName): Self = this.set("thingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupName: Self = this.set("thingGroupName", js.undefined)
+  }
+  
 }
 

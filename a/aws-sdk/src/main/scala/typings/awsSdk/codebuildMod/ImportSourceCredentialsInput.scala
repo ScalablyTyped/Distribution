@@ -30,17 +30,36 @@ trait ImportSourceCredentialsInput extends js.Object {
 
 object ImportSourceCredentialsInput {
   @scala.inline
-  def apply(
-    authType: AuthType,
-    serverType: ServerType,
-    token: SensitiveNonEmptyString,
-    shouldOverwrite: js.UndefOr[WrapperBoolean] = js.undefined,
-    username: NonEmptyString = null
-  ): ImportSourceCredentialsInput = {
+  def apply(authType: AuthType, serverType: ServerType, token: SensitiveNonEmptyString): ImportSourceCredentialsInput = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], serverType = serverType.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldOverwrite)) __obj.updateDynamic("shouldOverwrite")(shouldOverwrite.get.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportSourceCredentialsInput]
   }
+  @scala.inline
+  implicit class ImportSourceCredentialsInputOps[Self <: ImportSourceCredentialsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthType(value: AuthType): Self = this.set("authType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerType(value: ServerType): Self = this.set("serverType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToken(value: SensitiveNonEmptyString): Self = this.set("token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShouldOverwrite(value: WrapperBoolean): Self = this.set("shouldOverwrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShouldOverwrite: Self = this.set("shouldOverwrite", js.undefined)
+    @scala.inline
+    def setUsername(value: NonEmptyString): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

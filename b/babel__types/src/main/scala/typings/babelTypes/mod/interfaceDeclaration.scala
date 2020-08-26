@@ -9,8 +9,51 @@ import scala.scalajs.js.annotation._
 object interfaceDeclaration extends js.Object {
   def apply(
     id: Identifier_,
-    typeParameters: js.UndefOr[Null | TypeParameterDeclaration_],
-    _extends: js.UndefOr[js.Array[InterfaceExtends_] | Null],
+    typeParameters: js.UndefOr[scala.Nothing],
+    _extends: js.UndefOr[scala.Nothing],
+    body: ObjectTypeAnnotation_
+  ): InterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: js.UndefOr[scala.Nothing],
+    _extends: js.Array[InterfaceExtends_],
+    body: ObjectTypeAnnotation_
+  ): InterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: js.UndefOr[scala.Nothing],
+    _extends: Null,
+    body: ObjectTypeAnnotation_
+  ): InterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: Null,
+    _extends: js.UndefOr[scala.Nothing],
+    body: ObjectTypeAnnotation_
+  ): InterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: Null,
+    _extends: js.Array[InterfaceExtends_],
+    body: ObjectTypeAnnotation_
+  ): InterfaceDeclaration_ = js.native
+  def apply(id: Identifier_, typeParameters: Null, _extends: Null, body: ObjectTypeAnnotation_): InterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: TypeParameterDeclaration_,
+    _extends: js.UndefOr[scala.Nothing],
+    body: ObjectTypeAnnotation_
+  ): InterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: TypeParameterDeclaration_,
+    _extends: js.Array[InterfaceExtends_],
+    body: ObjectTypeAnnotation_
+  ): InterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: TypeParameterDeclaration_,
+    _extends: Null,
     body: ObjectTypeAnnotation_
   ): InterfaceDeclaration_ = js.native
 }

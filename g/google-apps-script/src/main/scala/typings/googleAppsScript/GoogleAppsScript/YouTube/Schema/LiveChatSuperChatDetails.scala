@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LiveChatSuperChatDetails extends js.Object {
-  var amountDisplayString: js.UndefOr[String] = js.undefined
-  var amountMicros: js.UndefOr[String] = js.undefined
-  var currency: js.UndefOr[String] = js.undefined
-  var tier: js.UndefOr[Double] = js.undefined
-  var userComment: js.UndefOr[String] = js.undefined
+  var amountDisplayString: js.UndefOr[String] = js.native
+  var amountMicros: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[Double] = js.native
+  var userComment: js.UndefOr[String] = js.native
 }
 
 object LiveChatSuperChatDetails {
   @scala.inline
-  def apply(
-    amountDisplayString: String = null,
-    amountMicros: String = null,
-    currency: String = null,
-    tier: js.UndefOr[Double] = js.undefined,
-    userComment: String = null
-  ): LiveChatSuperChatDetails = {
+  def apply(): LiveChatSuperChatDetails = {
     val __obj = js.Dynamic.literal()
-    if (amountDisplayString != null) __obj.updateDynamic("amountDisplayString")(amountDisplayString.asInstanceOf[js.Any])
-    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(tier)) __obj.updateDynamic("tier")(tier.get.asInstanceOf[js.Any])
-    if (userComment != null) __obj.updateDynamic("userComment")(userComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatSuperChatDetails]
   }
+  @scala.inline
+  implicit class LiveChatSuperChatDetailsOps[Self <: LiveChatSuperChatDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmountDisplayString(value: String): Self = this.set("amountDisplayString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmountDisplayString: Self = this.set("amountDisplayString", js.undefined)
+    @scala.inline
+    def setAmountMicros(value: String): Self = this.set("amountMicros", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmountMicros: Self = this.set("amountMicros", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setTier(value: Double): Self = this.set("tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("tier", js.undefined)
+    @scala.inline
+    def setUserComment(value: String): Self = this.set("userComment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserComment: Self = this.set("userComment", js.undefined)
+  }
+  
 }
 

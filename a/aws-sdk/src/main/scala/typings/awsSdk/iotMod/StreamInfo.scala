@@ -42,26 +42,56 @@ trait StreamInfo extends js.Object {
 
 object StreamInfo {
   @scala.inline
-  def apply(
-    createdAt: DateType = null,
-    description: StreamDescription = null,
-    files: StreamFiles = null,
-    lastUpdatedAt: DateType = null,
-    roleArn: RoleArn = null,
-    streamArn: StreamArn = null,
-    streamId: StreamId = null,
-    streamVersion: js.UndefOr[StreamVersion] = js.undefined
-  ): StreamInfo = {
+  def apply(): StreamInfo = {
     val __obj = js.Dynamic.literal()
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    if (streamArn != null) __obj.updateDynamic("streamArn")(streamArn.asInstanceOf[js.Any])
-    if (streamId != null) __obj.updateDynamic("streamId")(streamId.asInstanceOf[js.Any])
-    if (!js.isUndefined(streamVersion)) __obj.updateDynamic("streamVersion")(streamVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamInfo]
   }
+  @scala.inline
+  implicit class StreamInfoOps[Self <: StreamInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: DateType): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDescription(value: StreamDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFilesVarargs(value: StreamFile*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: StreamFiles): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: DateType): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    @scala.inline
+    def setStreamArn(value: StreamArn): Self = this.set("streamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamArn: Self = this.set("streamArn", js.undefined)
+    @scala.inline
+    def setStreamId(value: StreamId): Self = this.set("streamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamId: Self = this.set("streamId", js.undefined)
+    @scala.inline
+    def setStreamVersion(value: StreamVersion): Self = this.set("streamVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamVersion: Self = this.set("streamVersion", js.undefined)
+  }
+  
 }
 

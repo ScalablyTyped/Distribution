@@ -1393,10 +1393,16 @@ trait ojThematicMapMarker extends JetElement[ojThematicMapMarkerSettableProperti
   def setProperty(property: labelPosition, value: top): Unit = js.native
   def setProperty(property: selectable, value: auto): Unit = js.native
   def setProperty(property: selectable, value: off): Unit = js.native
-  def setProperty(
-    property: shape,
-    value: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
-  ): Unit = js.native
+  def setProperty(property: shape, value: circle): Unit = js.native
+  def setProperty(property: shape, value: diamond): Unit = js.native
+  def setProperty(property: shape, value: ellipse): Unit = js.native
+  def setProperty(property: shape, value: human): Unit = js.native
+  def setProperty(property: shape, value: plus): Unit = js.native
+  def setProperty(property: shape, value: rectangle): Unit = js.native
+  def setProperty(property: shape, value: square): Unit = js.native
+  def setProperty(property: shape, value: star): Unit = js.native
+  def setProperty(property: shape, value: triangleDown): Unit = js.native
+  def setProperty(property: shape, value: triangleUp): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojThematicMapMarkerSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_borderColor(property: borderColor, value: String): Unit = js.native
@@ -1418,6 +1424,10 @@ trait ojThematicMapMarker extends JetElement[ojThematicMapMarkerSettableProperti
   def setProperty_opacity(property: opacity, value: Double): Unit = js.native
   @JSName("setProperty")
   def setProperty_rotation(property: rotation, value: Double): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_shape(property: shape): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_shape(property: shape, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_shortDesc(property: shortDesc, value: String): Unit = js.native
   @JSName("setProperty")

@@ -33,20 +33,42 @@ trait SchemaElectionOfficial extends js.Object {
 
 object SchemaElectionOfficial {
   @scala.inline
-  def apply(
-    emailAddress: String = null,
-    faxNumber: String = null,
-    name: String = null,
-    officePhoneNumber: String = null,
-    title: String = null
-  ): SchemaElectionOfficial = {
+  def apply(): SchemaElectionOfficial = {
     val __obj = js.Dynamic.literal()
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (faxNumber != null) __obj.updateDynamic("faxNumber")(faxNumber.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (officePhoneNumber != null) __obj.updateDynamic("officePhoneNumber")(officePhoneNumber.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaElectionOfficial]
   }
+  @scala.inline
+  implicit class SchemaElectionOfficialOps[Self <: SchemaElectionOfficial] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    @scala.inline
+    def setFaxNumber(value: String): Self = this.set("faxNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaxNumber: Self = this.set("faxNumber", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOfficePhoneNumber(value: String): Self = this.set("officePhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfficePhoneNumber: Self = this.set("officePhoneNumber", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

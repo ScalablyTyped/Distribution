@@ -22,14 +22,30 @@ trait PutFileSystemPolicyRequest extends js.Object {
 
 object PutFileSystemPolicyRequest {
   @scala.inline
-  def apply(
-    FileSystemId: FileSystemId,
-    Policy: Policy,
-    BypassPolicyLockoutSafetyCheck: js.UndefOr[BypassPolicyLockoutSafetyCheck] = js.undefined
-  ): PutFileSystemPolicyRequest = {
+  def apply(FileSystemId: FileSystemId, Policy: Policy): PutFileSystemPolicyRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
-    if (!js.isUndefined(BypassPolicyLockoutSafetyCheck)) __obj.updateDynamic("BypassPolicyLockoutSafetyCheck")(BypassPolicyLockoutSafetyCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFileSystemPolicyRequest]
   }
+  @scala.inline
+  implicit class PutFileSystemPolicyRequestOps[Self <: PutFileSystemPolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicy(value: Policy): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBypassPolicyLockoutSafetyCheck(value: BypassPolicyLockoutSafetyCheck): Self = this.set("BypassPolicyLockoutSafetyCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBypassPolicyLockoutSafetyCheck: Self = this.set("BypassPolicyLockoutSafetyCheck", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Simple library for implementing and consuming evented APIs
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 93 |
-| # downloads        | 2487167 |
+| # downloads        | 2410825 |
 | # stars            | 3 |
 
 ## Links

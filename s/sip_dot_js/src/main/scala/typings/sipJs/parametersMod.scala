@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/core/messages/parameters", JSImport.Namespace)
+@JSImport("sip.js/lib/grammar/parameters", JSImport.Namespace)
 @js.native
 object parametersMod extends js.Object {
   @js.native

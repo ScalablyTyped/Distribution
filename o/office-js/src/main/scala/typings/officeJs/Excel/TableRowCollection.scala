@@ -49,6 +49,10 @@ trait TableRowCollection extends ClientObject {
     * @param values Optional. A 2-dimensional array of unformatted values of the table row.
     */
   def add(): TableRow = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: String): TableRow = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: js.Array[js.Array[Boolean | String | Double]]): TableRow = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: Boolean): TableRow = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: Double): TableRow = js.native
   def add(index: Double): TableRow = js.native
   def add(index: Double, values: String): TableRow = js.native
   def add(index: Double, values: js.Array[js.Array[Boolean | String | Double]]): TableRow = js.native

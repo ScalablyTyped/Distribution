@@ -47,20 +47,49 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration {
   def apply(
     bucketArn: String,
     cloudwatchLoggingOptions: FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions,
-    roleArn: String,
-    bufferInterval: js.UndefOr[Double] = js.undefined,
-    bufferSize: js.UndefOr[Double] = js.undefined,
-    compressionFormat: String = null,
-    kmsKeyArn: String = null,
-    prefix: String = null
+    roleArn: String
   ): FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration = {
     val __obj = js.Dynamic.literal(bucketArn = bucketArn.asInstanceOf[js.Any], cloudwatchLoggingOptions = cloudwatchLoggingOptions.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(bufferInterval)) __obj.updateDynamic("bufferInterval")(bufferInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
-    if (compressionFormat != null) __obj.updateDynamic("compressionFormat")(compressionFormat.asInstanceOf[js.Any])
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOps[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketArn(value: String): Self = this.set("bucketArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions): Self = this.set("cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBufferInterval(value: Double): Self = this.set("bufferInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferInterval: Self = this.set("bufferInterval", js.undefined)
+    @scala.inline
+    def setBufferSize(value: Double): Self = this.set("bufferSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferSize: Self = this.set("bufferSize", js.undefined)
+    @scala.inline
+    def setCompressionFormat(value: String): Self = this.set("compressionFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompressionFormat: Self = this.set("compressionFormat", js.undefined)
+    @scala.inline
+    def setKmsKeyArn(value: String): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+  }
+  
 }
 

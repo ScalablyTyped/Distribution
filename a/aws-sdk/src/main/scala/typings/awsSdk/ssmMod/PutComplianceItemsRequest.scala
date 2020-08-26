@@ -43,14 +43,43 @@ object PutComplianceItemsRequest {
     ExecutionSummary: ComplianceExecutionSummary,
     Items: ComplianceItemEntryList,
     ResourceId: ComplianceResourceId,
-    ResourceType: ComplianceResourceType,
-    ItemContentHash: ComplianceItemContentHash = null,
-    UploadType: ComplianceUploadType = null
+    ResourceType: ComplianceResourceType
   ): PutComplianceItemsRequest = {
     val __obj = js.Dynamic.literal(ComplianceType = ComplianceType.asInstanceOf[js.Any], ExecutionSummary = ExecutionSummary.asInstanceOf[js.Any], Items = Items.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
-    if (ItemContentHash != null) __obj.updateDynamic("ItemContentHash")(ItemContentHash.asInstanceOf[js.Any])
-    if (UploadType != null) __obj.updateDynamic("UploadType")(UploadType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutComplianceItemsRequest]
   }
+  @scala.inline
+  implicit class PutComplianceItemsRequestOps[Self <: PutComplianceItemsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplianceType(value: ComplianceTypeName): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExecutionSummary(value: ComplianceExecutionSummary): Self = this.set("ExecutionSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItemsVarargs(value: ComplianceItemEntry*): Self = this.set("Items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: ComplianceItemEntryList): Self = this.set("Items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceId(value: ComplianceResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceType(value: ComplianceResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItemContentHash(value: ComplianceItemContentHash): Self = this.set("ItemContentHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemContentHash: Self = this.set("ItemContentHash", js.undefined)
+    @scala.inline
+    def setUploadType(value: ComplianceUploadType): Self = this.set("UploadType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadType: Self = this.set("UploadType", js.undefined)
+  }
+  
 }
 

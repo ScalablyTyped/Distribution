@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SceneViewConstraints extends AnonymousAccessor {
   /**
     * Specifies a constraint on the minimum and maximum allowed camera altitude.
@@ -13,25 +14,25 @@ trait SceneViewConstraints extends AnonymousAccessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var altitude: js.UndefOr[SceneViewConstraintsAltitude] = js.undefined
+  var altitude: js.UndefOr[SceneViewConstraintsAltitude] = js.native
   /**
     * Specifies the near and far webgl clip distances.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var clipDistance: js.UndefOr[SceneViewConstraintsClipDistance] = js.undefined
+  var clipDistance: js.UndefOr[SceneViewConstraintsClipDistance] = js.native
   /**
     * When enabled, prevents the user from navigating below the surface in a local SceneView.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var collision: js.UndefOr[SceneViewConstraintsCollision] = js.undefined
+  var collision: js.UndefOr[SceneViewConstraintsCollision] = js.native
   /**
     * Specifies a constraint on the amount of allowed tilting of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var tilt: js.UndefOr[SceneViewConstraintsTilt] = js.undefined
+  var tilt: js.UndefOr[SceneViewConstraintsTilt] = js.native
 }
 
 object SceneViewConstraints {
@@ -40,23 +41,41 @@ object SceneViewConstraints {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    altitude: SceneViewConstraintsAltitude = null,
-    clipDistance: SceneViewConstraintsClipDistance = null,
-    collision: SceneViewConstraintsCollision = null,
-    get: /* propertyName */ String => _ = null,
-    set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewConstraints]) with (js.Function1[/* props */ HashMap[_], SceneViewConstraints]) = null,
-    tilt: SceneViewConstraintsTilt = null,
-    watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
+    set: (js.UndefOr[
+      js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewConstraints]
+    ]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], SceneViewConstraints]])
   ): SceneViewConstraints = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (clipDistance != null) __obj.updateDynamic("clipDistance")(clipDistance.asInstanceOf[js.Any])
-    if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewConstraints]
   }
+  @scala.inline
+  implicit class SceneViewConstraintsOps[Self <: SceneViewConstraints] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltitude(value: SceneViewConstraintsAltitude): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    @scala.inline
+    def setClipDistance(value: SceneViewConstraintsClipDistance): Self = this.set("clipDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClipDistance: Self = this.set("clipDistance", js.undefined)
+    @scala.inline
+    def setCollision(value: SceneViewConstraintsCollision): Self = this.set("collision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollision: Self = this.set("collision", js.undefined)
+    @scala.inline
+    def setTilt(value: SceneViewConstraintsTilt): Self = this.set("tilt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTilt: Self = this.set("tilt", js.undefined)
+  }
+  
 }
 

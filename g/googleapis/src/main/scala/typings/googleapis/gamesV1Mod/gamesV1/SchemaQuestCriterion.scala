@@ -42,20 +42,42 @@ trait SchemaQuestCriterion extends js.Object {
 
 object SchemaQuestCriterion {
   @scala.inline
-  def apply(
-    completionContribution: SchemaQuestContribution = null,
-    currentContribution: SchemaQuestContribution = null,
-    eventId: String = null,
-    initialPlayerProgress: SchemaQuestContribution = null,
-    kind: String = null
-  ): SchemaQuestCriterion = {
+  def apply(): SchemaQuestCriterion = {
     val __obj = js.Dynamic.literal()
-    if (completionContribution != null) __obj.updateDynamic("completionContribution")(completionContribution.asInstanceOf[js.Any])
-    if (currentContribution != null) __obj.updateDynamic("currentContribution")(currentContribution.asInstanceOf[js.Any])
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
-    if (initialPlayerProgress != null) __obj.updateDynamic("initialPlayerProgress")(initialPlayerProgress.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuestCriterion]
   }
+  @scala.inline
+  implicit class SchemaQuestCriterionOps[Self <: SchemaQuestCriterion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionContribution(value: SchemaQuestContribution): Self = this.set("completionContribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionContribution: Self = this.set("completionContribution", js.undefined)
+    @scala.inline
+    def setCurrentContribution(value: SchemaQuestContribution): Self = this.set("currentContribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentContribution: Self = this.set("currentContribution", js.undefined)
+    @scala.inline
+    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("eventId", js.undefined)
+    @scala.inline
+    def setInitialPlayerProgress(value: SchemaQuestContribution): Self = this.set("initialPlayerProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPlayerProgress: Self = this.set("initialPlayerProgress", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

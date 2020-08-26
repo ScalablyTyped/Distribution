@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * Provides a unified interface for the {@link PasswordContainer} service to implement.
   * @since LibreOffice 4.0
   */
+@js.native
 trait XPasswordContainer2
   extends XMasterPasswordHandling2
      with XPasswordContainer

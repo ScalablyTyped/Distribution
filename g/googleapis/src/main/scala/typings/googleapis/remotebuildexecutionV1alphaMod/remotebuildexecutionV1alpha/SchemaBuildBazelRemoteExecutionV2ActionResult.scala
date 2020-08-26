@@ -118,30 +118,70 @@ trait SchemaBuildBazelRemoteExecutionV2ActionResult extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2ActionResult {
   @scala.inline
-  def apply(
-    executionMetadata: SchemaBuildBazelRemoteExecutionV2ExecutedActionMetadata = null,
-    exitCode: js.UndefOr[Double] = js.undefined,
-    outputDirectories: js.Array[SchemaBuildBazelRemoteExecutionV2OutputDirectory] = null,
-    outputDirectorySymlinks: js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink] = null,
-    outputFileSymlinks: js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink] = null,
-    outputFiles: js.Array[SchemaBuildBazelRemoteExecutionV2OutputFile] = null,
-    stderrDigest: SchemaBuildBazelRemoteExecutionV2Digest = null,
-    stderrRaw: String = null,
-    stdoutDigest: SchemaBuildBazelRemoteExecutionV2Digest = null,
-    stdoutRaw: String = null
-  ): SchemaBuildBazelRemoteExecutionV2ActionResult = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2ActionResult = {
     val __obj = js.Dynamic.literal()
-    if (executionMetadata != null) __obj.updateDynamic("executionMetadata")(executionMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
-    if (outputDirectories != null) __obj.updateDynamic("outputDirectories")(outputDirectories.asInstanceOf[js.Any])
-    if (outputDirectorySymlinks != null) __obj.updateDynamic("outputDirectorySymlinks")(outputDirectorySymlinks.asInstanceOf[js.Any])
-    if (outputFileSymlinks != null) __obj.updateDynamic("outputFileSymlinks")(outputFileSymlinks.asInstanceOf[js.Any])
-    if (outputFiles != null) __obj.updateDynamic("outputFiles")(outputFiles.asInstanceOf[js.Any])
-    if (stderrDigest != null) __obj.updateDynamic("stderrDigest")(stderrDigest.asInstanceOf[js.Any])
-    if (stderrRaw != null) __obj.updateDynamic("stderrRaw")(stderrRaw.asInstanceOf[js.Any])
-    if (stdoutDigest != null) __obj.updateDynamic("stdoutDigest")(stdoutDigest.asInstanceOf[js.Any])
-    if (stdoutRaw != null) __obj.updateDynamic("stdoutRaw")(stdoutRaw.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ActionResult]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2ActionResultOps[Self <: SchemaBuildBazelRemoteExecutionV2ActionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutionMetadata(value: SchemaBuildBazelRemoteExecutionV2ExecutedActionMetadata): Self = this.set("executionMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionMetadata: Self = this.set("executionMetadata", js.undefined)
+    @scala.inline
+    def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    @scala.inline
+    def setOutputDirectoriesVarargs(value: SchemaBuildBazelRemoteExecutionV2OutputDirectory*): Self = this.set("outputDirectories", js.Array(value :_*))
+    @scala.inline
+    def setOutputDirectories(value: js.Array[SchemaBuildBazelRemoteExecutionV2OutputDirectory]): Self = this.set("outputDirectories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDirectories: Self = this.set("outputDirectories", js.undefined)
+    @scala.inline
+    def setOutputDirectorySymlinksVarargs(value: SchemaBuildBazelRemoteExecutionV2OutputSymlink*): Self = this.set("outputDirectorySymlinks", js.Array(value :_*))
+    @scala.inline
+    def setOutputDirectorySymlinks(value: js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink]): Self = this.set("outputDirectorySymlinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDirectorySymlinks: Self = this.set("outputDirectorySymlinks", js.undefined)
+    @scala.inline
+    def setOutputFileSymlinksVarargs(value: SchemaBuildBazelRemoteExecutionV2OutputSymlink*): Self = this.set("outputFileSymlinks", js.Array(value :_*))
+    @scala.inline
+    def setOutputFileSymlinks(value: js.Array[SchemaBuildBazelRemoteExecutionV2OutputSymlink]): Self = this.set("outputFileSymlinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFileSymlinks: Self = this.set("outputFileSymlinks", js.undefined)
+    @scala.inline
+    def setOutputFilesVarargs(value: SchemaBuildBazelRemoteExecutionV2OutputFile*): Self = this.set("outputFiles", js.Array(value :_*))
+    @scala.inline
+    def setOutputFiles(value: js.Array[SchemaBuildBazelRemoteExecutionV2OutputFile]): Self = this.set("outputFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFiles: Self = this.set("outputFiles", js.undefined)
+    @scala.inline
+    def setStderrDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = this.set("stderrDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStderrDigest: Self = this.set("stderrDigest", js.undefined)
+    @scala.inline
+    def setStderrRaw(value: String): Self = this.set("stderrRaw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStderrRaw: Self = this.set("stderrRaw", js.undefined)
+    @scala.inline
+    def setStdoutDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = this.set("stdoutDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdoutDigest: Self = this.set("stdoutDigest", js.undefined)
+    @scala.inline
+    def setStdoutRaw(value: String): Self = this.set("stdoutRaw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdoutRaw: Self = this.set("stdoutRaw", js.undefined)
+  }
+  
 }
 

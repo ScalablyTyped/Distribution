@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "retry-request" : "4.1.1"
+      "retry-request" : "4.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "retry-request" : "4.1.1"
+      "retry-request" : "4.1.2"
     }
   ],
   "compile-devDependencies" : [

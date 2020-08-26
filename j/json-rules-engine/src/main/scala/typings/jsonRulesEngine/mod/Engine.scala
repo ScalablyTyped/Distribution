@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Engine () extends js.Object {
   def this(rules: js.Array[RuleProperties]) = this()
+  def this(rules: js.UndefOr[scala.Nothing], options: EngineOptions) = this()
   def this(rules: js.Array[RuleProperties], options: EngineOptions) = this()
   def addFact[T](fact: Fact[T]): this.type = js.native
   def addFact[T](id: String, valueCallback: T): this.type = js.native

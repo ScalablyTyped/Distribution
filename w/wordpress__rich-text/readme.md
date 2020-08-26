@@ -12,7 +12,7 @@ Rich text value and manipulation API.
 | Keywords           | wordpress, rich-text |
 | # releases         | 34 |
 | # dependents       | 8 |
-| # downloads        | 170512 |
+| # downloads        | 178082 |
 | # stars            | 0 |
 
 ## Links

@@ -4,61 +4,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEvent {
   // Azure AD device identifier.
-  var deviceId: js.UndefOr[String] = js.undefined
+  var deviceId: js.UndefOr[String] = js.native
   /**
     * Type of the enrollment. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser,
     * appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin,
     * windowsCoManagement.
     */
-  var enrollmentType: js.UndefOr[DeviceEnrollmentType] = js.undefined
+  var enrollmentType: js.UndefOr[DeviceEnrollmentType] = js.native
   /**
     * Highlevel failure category. Possible values are: unknown, authentication, authorization, accountValidation,
     * userValidation, deviceNotSupported, inMaintenance, badRequest, featureNotSupported, enrollmentRestrictionsEnforced,
     * clientDisconnected, userAbandonment.
     */
-  var failureCategory: js.UndefOr[DeviceEnrollmentFailureReason] = js.undefined
+  var failureCategory: js.UndefOr[DeviceEnrollmentFailureReason] = js.native
   // Detailed failure reason.
-  var failureReason: js.UndefOr[String] = js.undefined
+  var failureReason: js.UndefOr[String] = js.native
   // Device identifier created or collected by Intune.
-  var managedDeviceIdentifier: js.UndefOr[String] = js.undefined
+  var managedDeviceIdentifier: js.UndefOr[String] = js.native
   // Operating System.
-  var operatingSystem: js.UndefOr[String] = js.undefined
+  var operatingSystem: js.UndefOr[String] = js.native
   // OS Version.
-  var osVersion: js.UndefOr[String] = js.undefined
+  var osVersion: js.UndefOr[String] = js.native
   // Identifier for the user that tried to enroll the device.
-  var userId: js.UndefOr[String] = js.undefined
+  var userId: js.UndefOr[String] = js.native
 }
 
 object EnrollmentTroubleshootingEvent {
   @scala.inline
-  def apply(
-    correlationId: String = null,
-    deviceId: String = null,
-    enrollmentType: DeviceEnrollmentType = null,
-    eventDateTime: String = null,
-    failureCategory: DeviceEnrollmentFailureReason = null,
-    failureReason: String = null,
-    id: String = null,
-    managedDeviceIdentifier: String = null,
-    operatingSystem: String = null,
-    osVersion: String = null,
-    userId: String = null
-  ): EnrollmentTroubleshootingEvent = {
+  def apply(): EnrollmentTroubleshootingEvent = {
     val __obj = js.Dynamic.literal()
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (enrollmentType != null) __obj.updateDynamic("enrollmentType")(enrollmentType.asInstanceOf[js.Any])
-    if (eventDateTime != null) __obj.updateDynamic("eventDateTime")(eventDateTime.asInstanceOf[js.Any])
-    if (failureCategory != null) __obj.updateDynamic("failureCategory")(failureCategory.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (managedDeviceIdentifier != null) __obj.updateDynamic("managedDeviceIdentifier")(managedDeviceIdentifier.asInstanceOf[js.Any])
-    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
-    if (osVersion != null) __obj.updateDynamic("osVersion")(osVersion.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnrollmentTroubleshootingEvent]
   }
+  @scala.inline
+  implicit class EnrollmentTroubleshootingEventOps[Self <: EnrollmentTroubleshootingEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    @scala.inline
+    def setEnrollmentType(value: DeviceEnrollmentType): Self = this.set("enrollmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnrollmentType: Self = this.set("enrollmentType", js.undefined)
+    @scala.inline
+    def setFailureCategory(value: DeviceEnrollmentFailureReason): Self = this.set("failureCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCategory: Self = this.set("failureCategory", js.undefined)
+    @scala.inline
+    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setManagedDeviceIdentifier(value: String): Self = this.set("managedDeviceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedDeviceIdentifier: Self = this.set("managedDeviceIdentifier", js.undefined)
+    @scala.inline
+    def setOperatingSystem(value: String): Self = this.set("operatingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystem: Self = this.set("operatingSystem", js.undefined)
+    @scala.inline
+    def setOsVersion(value: String): Self = this.set("osVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOsVersion: Self = this.set("osVersion", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

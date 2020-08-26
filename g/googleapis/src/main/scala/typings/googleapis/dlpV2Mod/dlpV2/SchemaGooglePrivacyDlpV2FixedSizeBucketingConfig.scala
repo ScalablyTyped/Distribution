@@ -44,16 +44,34 @@ trait SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig {
   @scala.inline
-  def apply(
-    bucketSize: js.UndefOr[Double] = js.undefined,
-    lowerBound: SchemaGooglePrivacyDlpV2Value = null,
-    upperBound: SchemaGooglePrivacyDlpV2Value = null
-  ): SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bucketSize)) __obj.updateDynamic("bucketSize")(bucketSize.get.asInstanceOf[js.Any])
-    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
-    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2FixedSizeBucketingConfigOps[Self <: SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketSize(value: Double): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    @scala.inline
+    def setLowerBound(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("lowerBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerBound: Self = this.set("lowerBound", js.undefined)
+    @scala.inline
+    def setUpperBound(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("upperBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpperBound: Self = this.set("upperBound", js.undefined)
+  }
+  
 }
 

@@ -99,7 +99,34 @@ object themeGeneratorThemeGeneratorMod extends js.Object {
       * existing customized colors.
       */
     def setSlot(rule: IThemeSlotRule, color: String): Unit = js.native
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: String,
+      isInverted: js.UndefOr[scala.Nothing],
+      isCustomization: js.UndefOr[scala.Nothing],
+      overwriteCustomColor: Boolean
+    ): Unit = js.native
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: String,
+      isInverted: js.UndefOr[scala.Nothing],
+      isCustomization: Boolean
+    ): Unit = js.native
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: String,
+      isInverted: js.UndefOr[scala.Nothing],
+      isCustomization: Boolean,
+      overwriteCustomColor: Boolean
+    ): Unit = js.native
     def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean): Unit = js.native
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: String,
+      isInverted: Boolean,
+      isCustomization: js.UndefOr[scala.Nothing],
+      overwriteCustomColor: Boolean
+    ): Unit = js.native
     def setSlot(rule: IThemeSlotRule, color: String, isInverted: Boolean, isCustomization: Boolean): Unit = js.native
     def setSlot(
       rule: IThemeSlotRule,
@@ -109,7 +136,34 @@ object themeGeneratorThemeGeneratorMod extends js.Object {
       overwriteCustomColor: Boolean
     ): Unit = js.native
     def setSlot(rule: IThemeSlotRule, color: IColor): Unit = js.native
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: IColor,
+      isInverted: js.UndefOr[scala.Nothing],
+      isCustomization: js.UndefOr[scala.Nothing],
+      overwriteCustomColor: Boolean
+    ): Unit = js.native
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: IColor,
+      isInverted: js.UndefOr[scala.Nothing],
+      isCustomization: Boolean
+    ): Unit = js.native
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: IColor,
+      isInverted: js.UndefOr[scala.Nothing],
+      isCustomization: Boolean,
+      overwriteCustomColor: Boolean
+    ): Unit = js.native
     def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean): Unit = js.native
+    def setSlot(
+      rule: IThemeSlotRule,
+      color: IColor,
+      isInverted: Boolean,
+      isCustomization: js.UndefOr[scala.Nothing],
+      overwriteCustomColor: Boolean
+    ): Unit = js.native
     def setSlot(rule: IThemeSlotRule, color: IColor, isInverted: Boolean, isCustomization: Boolean): Unit = js.native
     def setSlot(
       rule: IThemeSlotRule,

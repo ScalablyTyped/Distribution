@@ -14,10 +14,26 @@ trait CancelKeyDeletionResponse extends js.Object {
 
 object CancelKeyDeletionResponse {
   @scala.inline
-  def apply(KeyId: KeyIdType = null): CancelKeyDeletionResponse = {
+  def apply(): CancelKeyDeletionResponse = {
     val __obj = js.Dynamic.literal()
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelKeyDeletionResponse]
   }
+  @scala.inline
+  implicit class CancelKeyDeletionResponseOps[Self <: CancelKeyDeletionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+  }
+  
 }
 

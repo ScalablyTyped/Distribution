@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mapKind extends js.Object {
   def apply(kind: String): Unit = js.native
+  def apply(kind: String, viewId: js.UndefOr[scala.Nothing], moduleId: String): Unit = js.native
   def apply(kind: String, viewId: String): Unit = js.native
   def apply(kind: String, viewId: String, moduleId: String): Unit = js.native
 }

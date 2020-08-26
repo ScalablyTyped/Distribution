@@ -13,6 +13,7 @@ trait Transaction
   var name: String = js.native
   var result: String | Double = js.native
   def end(): Unit = js.native
+  def end(result: js.UndefOr[scala.Nothing], endTime: Double): Unit = js.native
   def end(result: String): Unit = js.native
   def end(result: String, endTime: Double): Unit = js.native
   def end(result: Double): Unit = js.native

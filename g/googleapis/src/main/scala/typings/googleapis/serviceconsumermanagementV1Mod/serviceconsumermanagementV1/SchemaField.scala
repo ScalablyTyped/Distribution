@@ -56,30 +56,64 @@ trait SchemaField extends js.Object {
 
 object SchemaField {
   @scala.inline
-  def apply(
-    cardinality: String = null,
-    defaultValue: String = null,
-    jsonName: String = null,
-    kind: String = null,
-    name: String = null,
-    number: js.UndefOr[Double] = js.undefined,
-    oneofIndex: js.UndefOr[Double] = js.undefined,
-    options: js.Array[SchemaOption] = null,
-    packed: js.UndefOr[Boolean] = js.undefined,
-    typeUrl: String = null
-  ): SchemaField = {
+  def apply(): SchemaField = {
     val __obj = js.Dynamic.literal()
-    if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (jsonName != null) __obj.updateDynamic("jsonName")(jsonName.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneofIndex)) __obj.updateDynamic("oneofIndex")(oneofIndex.get.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed.get.asInstanceOf[js.Any])
-    if (typeUrl != null) __obj.updateDynamic("typeUrl")(typeUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaField]
   }
+  @scala.inline
+  implicit class SchemaFieldOps[Self <: SchemaField] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCardinality(value: String): Self = this.set("cardinality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCardinality: Self = this.set("cardinality", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setJsonName(value: String): Self = this.set("jsonName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonName: Self = this.set("jsonName", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+    @scala.inline
+    def setOneofIndex(value: Double): Self = this.set("oneofIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOneofIndex: Self = this.set("oneofIndex", js.undefined)
+    @scala.inline
+    def setOptionsVarargs(value: SchemaOption*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[SchemaOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPacked(value: Boolean): Self = this.set("packed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePacked: Self = this.set("packed", js.undefined)
+    @scala.inline
+    def setTypeUrl(value: String): Self = this.set("typeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeUrl: Self = this.set("typeUrl", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ The lodash method `_.takeRightWhile` exported as a module.
 | Keywords           | lodash-modularized, takerightwhile |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1453 |
+| # downloads        | 1430 |
 | # stars            | 0 |
 
 ## Links

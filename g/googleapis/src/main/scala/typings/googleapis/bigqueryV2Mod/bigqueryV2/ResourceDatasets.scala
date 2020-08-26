@@ -85,6 +85,7 @@ class ResourceDatasets protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDatasetsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDatasetsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -165,6 +166,7 @@ class ResourceDatasets protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDataset] = js.native
   def get(callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataset] = js.native
   def get(params: ParamsResourceDatasetsGet): GaxiosPromise[SchemaDataset] = js.native
   def get(params: ParamsResourceDatasetsGet, callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
   def get(
@@ -250,6 +252,7 @@ class ResourceDatasets protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaDataset] = js.native
   def insert(callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataset] = js.native
   def insert(params: ParamsResourceDatasetsInsert): GaxiosPromise[SchemaDataset] = js.native
   def insert(params: ParamsResourceDatasetsInsert, callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
   def insert(
@@ -348,6 +351,7 @@ class ResourceDatasets protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDatasetList] = js.native
   def list(callback: BodyResponseCallback[SchemaDatasetList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatasetList] = js.native
   def list(params: ParamsResourceDatasetsList): GaxiosPromise[SchemaDatasetList] = js.native
   def list(params: ParamsResourceDatasetsList, callback: BodyResponseCallback[SchemaDatasetList]): Unit = js.native
   def list(
@@ -442,6 +446,7 @@ class ResourceDatasets protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaDataset] = js.native
   def patch(callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataset] = js.native
   def patch(params: ParamsResourceDatasetsPatch): GaxiosPromise[SchemaDataset] = js.native
   def patch(params: ParamsResourceDatasetsPatch, callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
   def patch(
@@ -535,6 +540,7 @@ class ResourceDatasets protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaDataset] = js.native
   def update(callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataset] = js.native
   def update(params: ParamsResourceDatasetsUpdate): GaxiosPromise[SchemaDataset] = js.native
   def update(params: ParamsResourceDatasetsUpdate, callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
   def update(

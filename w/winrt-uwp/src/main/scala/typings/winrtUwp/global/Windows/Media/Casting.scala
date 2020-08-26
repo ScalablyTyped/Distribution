@@ -1,12 +1,8 @@
 package typings.winrtUwp.global.Windows.Media
 
 import typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.Foundation.Uri
-import typings.winrtUwp.Windows.Media.Casting.CastingConnectionErrorStatus
 import typings.winrtUwp.Windows.Media.Casting.CastingPlaybackTypes
-import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,41 +19,12 @@ object Casting extends js.Object {
   /** Represents arguments for the ErrorOccurred event from the CastingConnection */
   @js.native
   abstract class CastingConnectionErrorOccurredEventArgs ()
-    extends typings.winrtUwp.Windows.Media.Casting.CastingConnectionErrorOccurredEventArgs {
-    /** Gets the particular error that triggered the casting error event, ErrorOccurred . */
-    /* CompleteClass */
-    override var errorStatus: CastingConnectionErrorStatus = js.native
-    /** Gets human-readable message to accompany the error status code, ErrorStatus . */
-    /* CompleteClass */
-    override var message: String = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Casting.CastingConnectionErrorOccurredEventArgs
   
   /** Represents a physical device that is capable of supporting casting connections and rendering media content sent to it. */
   @js.native
   abstract class CastingDevice ()
-    extends typings.winrtUwp.Windows.Media.Casting.CastingDevice {
-    /** A human-readable name for the device, retrieved from the device itself. */
-    /* CompleteClass */
-    override var friendlyName: String = js.native
-    /** An icon representing the device. */
-    /* CompleteClass */
-    override var icon: IRandomAccessStreamWithContentType = js.native
-    /** The device ID. This is the same ID used with Windows.Devices.Enumeration APIs. */
-    /* CompleteClass */
-    override var id: String = js.native
-    /**
-      * Creates a new CastingConnection object. This method does not establish a connection to the casting device.
-      * @return The object that represents the casting connection.
-      */
-    /* CompleteClass */
-    override def createCastingConnection(): typings.winrtUwp.Windows.Media.Casting.CastingConnection = js.native
-    /**
-      * Gets the media types supported by the device. containing
-      * @return The media types, CastingPlaybackTypes , supported by the device.
-      */
-    /* CompleteClass */
-    override def getSupportedCastingPlaybackTypesAsync(): IPromiseWithIAsyncOperation[CastingPlaybackTypes] = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Casting.CastingDevice
   
   /** Represents a device picker that contains a list of casting devices for the user to choose from. */
   @js.native
@@ -68,38 +35,17 @@ object Casting extends js.Object {
   /** Represents the filter used to determine which devices to show in a casting device picker UI. The filter parameters are OR-ed together to build the resulting filter. In other words, if SupportsAudio and SupportsVideo are both true, the picker will display Audio-only devices, video-only devices, and audio/video devices. */
   @js.native
   abstract class CastingDevicePickerFilter ()
-    extends typings.winrtUwp.Windows.Media.Casting.CastingDevicePickerFilter {
-    /** Gets the casting sources supported. */
-    /* CompleteClass */
-    override var supportedCastingSources: IVector[typings.winrtUwp.Windows.Media.Casting.CastingSource] = js.native
-    /** Gets and sets whether the devices in the device picker should support audio playback. */
-    /* CompleteClass */
-    override var supportsAudio: Boolean = js.native
-    /** Gets and sets whether the devices in the device picker should support rending still images. */
-    /* CompleteClass */
-    override var supportsPictures: Boolean = js.native
-    /** Gets and sets whether the devices in the device picker should support video playback. */
-    /* CompleteClass */
-    override var supportsVideo: Boolean = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Casting.CastingDevicePickerFilter
   
   /** Represents the event arguments for the CastingDeviceSelected event on the CastingDevicePicker object. */
   @js.native
   abstract class CastingDeviceSelectedEventArgs ()
-    extends typings.winrtUwp.Windows.Media.Casting.CastingDeviceSelectedEventArgs {
-    /** Represents the CastingDevice that has been selected by the user in a casting device picker. */
-    /* CompleteClass */
-    override var selectedCastingDevice: typings.winrtUwp.Windows.Media.Casting.CastingDevice = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Casting.CastingDeviceSelectedEventArgs
   
   /** Represents the media content that can be sent to another device. */
   @js.native
   abstract class CastingSource ()
-    extends typings.winrtUwp.Windows.Media.Casting.CastingSource {
-    /** Gets or sets an alternative URI for the content for use with DLNA ByRef. */
-    /* CompleteClass */
-    override var preferredSourceUri: Uri = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Casting.CastingSource
   
   /** Indicates the error status when starting or ending a casting connection. */
   @js.native

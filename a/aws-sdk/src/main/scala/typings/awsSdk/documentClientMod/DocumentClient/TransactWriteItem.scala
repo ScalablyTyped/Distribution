@@ -26,18 +26,38 @@ trait TransactWriteItem extends js.Object {
 
 object TransactWriteItem {
   @scala.inline
-  def apply(
-    ConditionCheck: ConditionCheck = null,
-    Delete: Delete = null,
-    Put: Put = null,
-    Update: Update = null
-  ): TransactWriteItem = {
+  def apply(): TransactWriteItem = {
     val __obj = js.Dynamic.literal()
-    if (ConditionCheck != null) __obj.updateDynamic("ConditionCheck")(ConditionCheck.asInstanceOf[js.Any])
-    if (Delete != null) __obj.updateDynamic("Delete")(Delete.asInstanceOf[js.Any])
-    if (Put != null) __obj.updateDynamic("Put")(Put.asInstanceOf[js.Any])
-    if (Update != null) __obj.updateDynamic("Update")(Update.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactWriteItem]
   }
+  @scala.inline
+  implicit class TransactWriteItemOps[Self <: TransactWriteItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionCheck(value: ConditionCheck): Self = this.set("ConditionCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionCheck: Self = this.set("ConditionCheck", js.undefined)
+    @scala.inline
+    def setDelete(value: Delete): Self = this.set("Delete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelete: Self = this.set("Delete", js.undefined)
+    @scala.inline
+    def setPut(value: Put): Self = this.set("Put", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePut: Self = this.set("Put", js.undefined)
+    @scala.inline
+    def setUpdate(value: Update): Self = this.set("Update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate: Self = this.set("Update", js.undefined)
+  }
+  
 }
 

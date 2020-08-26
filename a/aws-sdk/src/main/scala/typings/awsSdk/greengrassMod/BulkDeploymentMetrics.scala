@@ -22,16 +22,34 @@ trait BulkDeploymentMetrics extends js.Object {
 
 object BulkDeploymentMetrics {
   @scala.inline
-  def apply(
-    InvalidInputRecords: js.UndefOr[integer] = js.undefined,
-    RecordsProcessed: js.UndefOr[integer] = js.undefined,
-    RetryAttempts: js.UndefOr[integer] = js.undefined
-  ): BulkDeploymentMetrics = {
+  def apply(): BulkDeploymentMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(InvalidInputRecords)) __obj.updateDynamic("InvalidInputRecords")(InvalidInputRecords.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RecordsProcessed)) __obj.updateDynamic("RecordsProcessed")(RecordsProcessed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetryAttempts)) __obj.updateDynamic("RetryAttempts")(RetryAttempts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkDeploymentMetrics]
   }
+  @scala.inline
+  implicit class BulkDeploymentMetricsOps[Self <: BulkDeploymentMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInvalidInputRecords(value: integer): Self = this.set("InvalidInputRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidInputRecords: Self = this.set("InvalidInputRecords", js.undefined)
+    @scala.inline
+    def setRecordsProcessed(value: integer): Self = this.set("RecordsProcessed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordsProcessed: Self = this.set("RecordsProcessed", js.undefined)
+    @scala.inline
+    def setRetryAttempts(value: integer): Self = this.set("RetryAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryAttempts: Self = this.set("RetryAttempts", js.undefined)
+  }
+  
 }
 

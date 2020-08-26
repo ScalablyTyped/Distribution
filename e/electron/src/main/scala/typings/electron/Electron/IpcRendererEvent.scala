@@ -1,5 +1,6 @@
 package typings.electron.Electron
 
+import typings.std.MessagePort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IpcRendererEvent extends Event {
   // Docs: http://electronjs.org/docs/api/structures/ipc-renderer-event
+  /**
+    * A list of MessagePorts that were transferred with this message
+    */
+  var ports: js.Array[MessagePort] = js.native
   /**
     * The `IpcRenderer` instance that emitted the event originally
     */

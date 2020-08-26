@@ -34,22 +34,46 @@ trait DetectorSummary extends js.Object {
 
 object DetectorSummary {
   @scala.inline
-  def apply(
-    creationTime: Timestamp = null,
-    detectorModelName: DetectorModelName = null,
-    detectorModelVersion: DetectorModelVersion = null,
-    keyValue: KeyValue = null,
-    lastUpdateTime: Timestamp = null,
-    state: DetectorStateSummary = null
-  ): DetectorSummary = {
+  def apply(): DetectorSummary = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (detectorModelName != null) __obj.updateDynamic("detectorModelName")(detectorModelName.asInstanceOf[js.Any])
-    if (detectorModelVersion != null) __obj.updateDynamic("detectorModelVersion")(detectorModelVersion.asInstanceOf[js.Any])
-    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue.asInstanceOf[js.Any])
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorSummary]
   }
+  @scala.inline
+  implicit class DetectorSummaryOps[Self <: DetectorSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDetectorModelName(value: DetectorModelName): Self = this.set("detectorModelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelName: Self = this.set("detectorModelName", js.undefined)
+    @scala.inline
+    def setDetectorModelVersion(value: DetectorModelVersion): Self = this.set("detectorModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelVersion: Self = this.set("detectorModelVersion", js.undefined)
+    @scala.inline
+    def setKeyValue(value: KeyValue): Self = this.set("keyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyValue: Self = this.set("keyValue", js.undefined)
+    @scala.inline
+    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    @scala.inline
+    def setState(value: DetectorStateSummary): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

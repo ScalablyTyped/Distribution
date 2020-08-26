@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object template extends js.Object {
   def apply(tmpl: String): RenderFunction = js.native
+  def apply(tmpl: String, c: js.UndefOr[scala.Nothing], `def`: js.Object): RenderFunction = js.native
   def apply(tmpl: String, c: TemplateSettings_): RenderFunction = js.native
   def apply(tmpl: String, c: TemplateSettings_, `def`: js.Object): RenderFunction = js.native
 }

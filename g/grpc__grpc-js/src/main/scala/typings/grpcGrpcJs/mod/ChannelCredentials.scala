@@ -29,21 +29,11 @@ object ChannelCredentials extends js.Object {
     * @param privateKey The client certificate private key, if available.
     * @param certChain The client certificate key chain, if available.
     */
-  def createSsl(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Null, privateKey: Null, certChain: Null, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Null, privateKey: Null, certChain: Buffer): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Null, privateKey: Null, certChain: Buffer, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Null, privateKey: Buffer): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Null, privateKey: Buffer, certChain: Null, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Null, privateKey: Buffer, certChain: Buffer): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Null, privateKey: Buffer, certChain: Buffer, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Null, certChain: Null, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Null, certChain: Buffer): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Null, certChain: Buffer, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Buffer): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Null, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer, verifyOptions: VerifyOptions): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+  def createSsl(
+    rootCerts: js.UndefOr[Buffer | Null],
+    privateKey: js.UndefOr[Buffer | Null],
+    certChain: js.UndefOr[Buffer | Null],
+    verifyOptions: js.UndefOr[VerifyOptions]
+  ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
 }
 

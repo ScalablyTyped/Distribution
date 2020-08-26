@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoglevelPluginPrefixOptions extends js.Object {
   var format: js.UndefOr[
     js.Function3[
@@ -13,29 +14,53 @@ trait LoglevelPluginPrefixOptions extends js.Object {
       /* timestamp */ Date, 
       js.UndefOr[String]
     ]
-  ] = js.undefined
-  var levelFormatter: js.UndefOr[js.Function1[/* level */ String, String]] = js.undefined
-  var nameFormatter: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], String]] = js.undefined
-  var template: js.UndefOr[String] = js.undefined
-  var timestampFormatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
+  ] = js.native
+  var levelFormatter: js.UndefOr[js.Function1[/* level */ String, String]] = js.native
+  var nameFormatter: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], String]] = js.native
+  var template: js.UndefOr[String] = js.native
+  var timestampFormatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.native
 }
 
 object LoglevelPluginPrefixOptions {
   @scala.inline
-  def apply(
-    format: (/* level */ String, /* name */ js.UndefOr[String], /* timestamp */ Date) => js.UndefOr[String] = null,
-    levelFormatter: /* level */ String => String = null,
-    nameFormatter: /* name */ js.UndefOr[String] => String = null,
-    template: String = null,
-    timestampFormatter: /* date */ Date => String = null
-  ): LoglevelPluginPrefixOptions = {
+  def apply(): LoglevelPluginPrefixOptions = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3(format))
-    if (levelFormatter != null) __obj.updateDynamic("levelFormatter")(js.Any.fromFunction1(levelFormatter))
-    if (nameFormatter != null) __obj.updateDynamic("nameFormatter")(js.Any.fromFunction1(nameFormatter))
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (timestampFormatter != null) __obj.updateDynamic("timestampFormatter")(js.Any.fromFunction1(timestampFormatter))
     __obj.asInstanceOf[LoglevelPluginPrefixOptions]
   }
+  @scala.inline
+  implicit class LoglevelPluginPrefixOptionsOps[Self <: LoglevelPluginPrefixOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(
+      value: (/* level */ String, /* name */ js.UndefOr[String], /* timestamp */ Date) => js.UndefOr[String]
+    ): Self = this.set("format", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setLevelFormatter(value: /* level */ String => String): Self = this.set("levelFormatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLevelFormatter: Self = this.set("levelFormatter", js.undefined)
+    @scala.inline
+    def setNameFormatter(value: /* name */ js.UndefOr[String] => String): Self = this.set("nameFormatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNameFormatter: Self = this.set("nameFormatter", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTimestampFormatter(value: /* date */ Date => String): Self = this.set("timestampFormatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTimestampFormatter: Self = this.set("timestampFormatter", js.undefined)
+  }
+  
 }
 

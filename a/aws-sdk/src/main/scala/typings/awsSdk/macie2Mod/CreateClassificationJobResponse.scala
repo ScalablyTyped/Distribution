@@ -18,11 +18,30 @@ trait CreateClassificationJobResponse extends js.Object {
 
 object CreateClassificationJobResponse {
   @scala.inline
-  def apply(jobArn: string = null, jobId: string = null): CreateClassificationJobResponse = {
+  def apply(): CreateClassificationJobResponse = {
     val __obj = js.Dynamic.literal()
-    if (jobArn != null) __obj.updateDynamic("jobArn")(jobArn.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClassificationJobResponse]
   }
+  @scala.inline
+  implicit class CreateClassificationJobResponseOps[Self <: CreateClassificationJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobArn(value: string): Self = this.set("jobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobArn: Self = this.set("jobArn", js.undefined)
+    @scala.inline
+    def setJobId(value: string): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+  }
+  
 }
 

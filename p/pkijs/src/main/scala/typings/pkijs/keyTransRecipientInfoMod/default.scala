@@ -1,6 +1,5 @@
 package typings.pkijs.keyTransRecipientInfoMod
 
-import typings.asn1js.mod.OctetString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,28 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends KeyTransRecipientInfo {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var encryptedKey: OctetString = js.native
-  /* CompleteClass */
-  override var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
-  /**
-    * For some reasons we need to store recipient's certificate here
-    *
-    * @type {Certificate}
-    * @memberOf KeyTransRecipientInfo
-    */
-  /* CompleteClass */
-  override var recipientCertificate: typings.pkijs.certificateMod.default = js.native
-  /* CompleteClass */
-  override var rid: typings.pkijs.recipientIdentifierMod.default = js.native
-  /* CompleteClass */
-  override var version: Double = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

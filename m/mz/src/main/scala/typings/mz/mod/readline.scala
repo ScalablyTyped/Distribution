@@ -27,14 +27,22 @@ object readline extends js.Object {
   def clearScreenDown(stream: WritableStream): Boolean = js.native
   def clearScreenDown(stream: WritableStream, callback: js.Function0[Unit]): Boolean = js.native
   def createInterface(input: ReadableStream): typings.mz.readlineMod.Interface = js.native
+  def createInterface(
+    input: ReadableStream,
+    output: js.UndefOr[scala.Nothing],
+    completer: js.UndefOr[Completer],
+    terminal: Boolean
+  ): typings.mz.readlineMod.Interface = js.native
+  def createInterface(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: Completer): typings.mz.readlineMod.Interface = js.native
   def createInterface(input: ReadableStream, output: WritableStream): typings.mz.readlineMod.Interface = js.native
+  def createInterface(input: ReadableStream, output: WritableStream, completer: js.UndefOr[Completer], terminal: Boolean): typings.mz.readlineMod.Interface = js.native
   def createInterface(input: ReadableStream, output: WritableStream, completer: Completer): typings.mz.readlineMod.Interface = js.native
-  def createInterface(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean): typings.mz.readlineMod.Interface = js.native
   def createInterface(options: ReadLineOptions): typings.mz.readlineMod.Interface = js.native
   /**
     * Moves this WriteStream's cursor to the specified position.
     */
   def cursorTo(stream: WritableStream, x: Double): Boolean = js.native
+  def cursorTo(stream: WritableStream, x: Double, y: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Boolean = js.native
   def cursorTo(stream: WritableStream, x: Double, y: Double): Boolean = js.native
   def cursorTo(stream: WritableStream, x: Double, y: Double, callback: js.Function0[Unit]): Boolean = js.native
   def emitKeypressEvents(stream: ReadableStream): Unit = js.native

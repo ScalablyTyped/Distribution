@@ -8,7 +8,19 @@ import scala.scalajs.js.annotation._
 @js.native
 object typeAlias extends js.Object {
   def apply(): TypeAlias_ = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
+    typeParameters: js.UndefOr[scala.Nothing],
+    right: FlowTypeAnnotation
+  ): TypeAlias_ = js.native
+  def apply(id: js.UndefOr[scala.Nothing], typeParameters: TypeParameterDeclaration_): TypeAlias_ = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
+    typeParameters: TypeParameterDeclaration_,
+    right: FlowTypeAnnotation
+  ): TypeAlias_ = js.native
   def apply(id: Identifier_): TypeAlias_ = js.native
+  def apply(id: Identifier_, typeParameters: js.UndefOr[scala.Nothing], right: FlowTypeAnnotation): TypeAlias_ = js.native
   def apply(id: Identifier_, typeParameters: TypeParameterDeclaration_): TypeAlias_ = js.native
   def apply(id: Identifier_, typeParameters: TypeParameterDeclaration_, right: FlowTypeAnnotation): TypeAlias_ = js.native
 }

@@ -17,6 +17,7 @@ trait Friction extends js.Object {
     * @param fstatic If provided, the new static friction of the Body. The higher the value (e.g. 10), the more force it will take to initially get the Body moving when it is nearly stationary. 0 means the body will never "stick" when it is nearly stationary.
     */
   def setFriction(value: Double): GameObject = js.native
+  def setFriction(value: Double, air: js.UndefOr[scala.Nothing], fstatic: Double): GameObject = js.native
   def setFriction(value: Double, air: Double): GameObject = js.native
   def setFriction(value: Double, air: Double, fstatic: Double): GameObject = js.native
   /**

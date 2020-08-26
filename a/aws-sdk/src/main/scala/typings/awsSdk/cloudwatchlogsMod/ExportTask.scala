@@ -46,28 +46,58 @@ trait ExportTask extends js.Object {
 
 object ExportTask {
   @scala.inline
-  def apply(
-    destination: ExportDestinationBucket = null,
-    destinationPrefix: ExportDestinationPrefix = null,
-    executionInfo: ExportTaskExecutionInfo = null,
-    from: js.UndefOr[Timestamp] = js.undefined,
-    logGroupName: LogGroupName = null,
-    status: ExportTaskStatus = null,
-    taskId: ExportTaskId = null,
-    taskName: ExportTaskName = null,
-    to: js.UndefOr[Timestamp] = js.undefined
-  ): ExportTask = {
+  def apply(): ExportTask = {
     val __obj = js.Dynamic.literal()
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (destinationPrefix != null) __obj.updateDynamic("destinationPrefix")(destinationPrefix.asInstanceOf[js.Any])
-    if (executionInfo != null) __obj.updateDynamic("executionInfo")(executionInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
-    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])
-    if (taskName != null) __obj.updateDynamic("taskName")(taskName.asInstanceOf[js.Any])
-    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTask]
   }
+  @scala.inline
+  implicit class ExportTaskOps[Self <: ExportTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: ExportDestinationBucket): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setDestinationPrefix(value: ExportDestinationPrefix): Self = this.set("destinationPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPrefix: Self = this.set("destinationPrefix", js.undefined)
+    @scala.inline
+    def setExecutionInfo(value: ExportTaskExecutionInfo): Self = this.set("executionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionInfo: Self = this.set("executionInfo", js.undefined)
+    @scala.inline
+    def setFrom(value: Timestamp): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("logGroupName", js.undefined)
+    @scala.inline
+    def setStatus(value: ExportTaskStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTaskId(value: ExportTaskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskId: Self = this.set("taskId", js.undefined)
+    @scala.inline
+    def setTaskName(value: ExportTaskName): Self = this.set("taskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskName: Self = this.set("taskName", js.undefined)
+    @scala.inline
+    def setTo(value: Timestamp): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

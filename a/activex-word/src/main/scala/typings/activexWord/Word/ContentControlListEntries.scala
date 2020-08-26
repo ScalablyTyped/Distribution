@@ -17,6 +17,7 @@ trait ContentControlListEntries extends js.Object {
     * @param number [Index=0]
     */
   def Add(Text: String): ContentControlListEntry = js.native
+  def Add(Text: String, Value: js.UndefOr[scala.Nothing], Index: Double): ContentControlListEntry = js.native
   def Add(Text: String, Value: String): ContentControlListEntry = js.native
   def Add(Text: String, Value: String, Index: Double): ContentControlListEntry = js.native
   def Clear(): Unit = js.native

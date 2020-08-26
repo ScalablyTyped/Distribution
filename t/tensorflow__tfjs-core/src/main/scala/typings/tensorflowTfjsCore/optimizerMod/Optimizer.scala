@@ -67,6 +67,7 @@ abstract class Optimizer () extends Serializable {
     */
   /** @doc {heading: 'Training', subheading: 'Optimizers'} */
   def minimize(f: js.Function0[Scalar]): Scalar | Null = js.native
+  def minimize(f: js.Function0[Scalar], returnCost: js.UndefOr[scala.Nothing], varList: js.Array[Variable[Rank]]): Scalar | Null = js.native
   def minimize(f: js.Function0[Scalar], returnCost: Boolean): Scalar | Null = js.native
   def minimize(f: js.Function0[Scalar], returnCost: Boolean, varList: js.Array[Variable[Rank]]): Scalar | Null = js.native
   def saveIterations(): js.Promise[NamedTensor] = js.native

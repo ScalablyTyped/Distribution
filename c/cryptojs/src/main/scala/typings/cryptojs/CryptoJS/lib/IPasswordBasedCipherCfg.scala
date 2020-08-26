@@ -1,33 +1,37 @@
 package typings.cryptojs.CryptoJS.lib
 
-import typings.cryptojs.CryptoJS.format.IFormatter
 import typings.cryptojs.CryptoJS.kdf.IKdfImpl
-import typings.cryptojs.CryptoJS.mode.IBlockCipherModeImpl
-import typings.cryptojs.CryptoJS.pad.IPaddingImpl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPasswordBasedCipherCfg extends ISerializableCipherCfg {
-  var kdf: js.UndefOr[IKdfImpl] = js.undefined
+  var kdf: js.UndefOr[IKdfImpl] = js.native
 }
 
 object IPasswordBasedCipherCfg {
   @scala.inline
-  def apply(
-    format: IFormatter = null,
-    iv: WordArray = null,
-    kdf: IKdfImpl = null,
-    mode: IBlockCipherModeImpl = null,
-    padding: IPaddingImpl = null
-  ): IPasswordBasedCipherCfg = {
+  def apply(): IPasswordBasedCipherCfg = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
-    if (kdf != null) __obj.updateDynamic("kdf")(kdf.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPasswordBasedCipherCfg]
   }
+  @scala.inline
+  implicit class IPasswordBasedCipherCfgOps[Self <: IPasswordBasedCipherCfg] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKdf(value: IKdfImpl): Self = this.set("kdf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKdf: Self = this.set("kdf", js.undefined)
+  }
+  
 }
 

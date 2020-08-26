@@ -12,7 +12,7 @@ SpatiaLite for node
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 1973 |
+| # downloads        | 1982 |
 | # stars            | 0 |
 
 ## Links

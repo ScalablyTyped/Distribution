@@ -11,10 +11,11 @@ import scala.scalajs.js.annotation._
 class Base protected () extends js.Object {
   def this(wire: default) = this()
   var _topic: js.Any = js.native
-  val me: Identity = js.native
-  var topic: String = js.native
   var wire: default = js.native
   /* protected */ def isNodeEnvironment(): Boolean = js.native
   /* protected */ def isOpenFinEnvironment(): Boolean = js.native
+  def me: Identity = js.native
+  /* protected */ def topic: String = js.native
+  /* protected */ def topic_=(t: String): Unit = js.native
 }
 

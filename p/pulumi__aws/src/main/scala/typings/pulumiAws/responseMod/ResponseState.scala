@@ -32,20 +32,42 @@ trait ResponseState extends js.Object {
 
 object ResponseState {
   @scala.inline
-  def apply(
-    responseParameters: Input[StringDictionary[Input[String]]] = null,
-    responseTemplates: Input[StringDictionary[Input[String]]] = null,
-    responseType: Input[String] = null,
-    restApiId: Input[String] = null,
-    statusCode: Input[String] = null
-  ): ResponseState = {
+  def apply(): ResponseState = {
     val __obj = js.Dynamic.literal()
-    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
-    if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (restApiId != null) __obj.updateDynamic("restApiId")(restApiId.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseState]
   }
+  @scala.inline
+  implicit class ResponseStateOps[Self <: ResponseState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResponseParameters(value: Input[StringDictionary[Input[String]]]): Self = this.set("responseParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseParameters: Self = this.set("responseParameters", js.undefined)
+    @scala.inline
+    def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = this.set("responseTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTemplates: Self = this.set("responseTemplates", js.undefined)
+    @scala.inline
+    def setResponseType(value: Input[String]): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    @scala.inline
+    def setRestApiId(value: Input[String]): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestApiId: Self = this.set("restApiId", js.undefined)
+    @scala.inline
+    def setStatusCode(value: Input[String]): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+  }
+  
 }
 

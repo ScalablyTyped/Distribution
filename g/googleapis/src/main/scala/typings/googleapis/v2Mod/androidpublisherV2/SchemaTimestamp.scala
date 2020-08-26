@@ -12,11 +12,30 @@ trait SchemaTimestamp extends js.Object {
 
 object SchemaTimestamp {
   @scala.inline
-  def apply(nanos: js.UndefOr[Double] = js.undefined, seconds: String = null): SchemaTimestamp = {
+  def apply(): SchemaTimestamp = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(nanos)) __obj.updateDynamic("nanos")(nanos.get.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTimestamp]
   }
+  @scala.inline
+  implicit class SchemaTimestampOps[Self <: SchemaTimestamp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNanos(value: Double): Self = this.set("nanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNanos: Self = this.set("nanos", js.undefined)
+    @scala.inline
+    def setSeconds(value: String): Self = this.set("seconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeconds: Self = this.set("seconds", js.undefined)
+  }
+  
 }
 

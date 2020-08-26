@@ -12,7 +12,7 @@ Map over promises serially
 | Keywords           | promise, map, collection, iterable, iterator, fulfilled, serial, serially, async, await, promises, bluebird |
 | # releases         | 3 |
 | # dependents       | 59 |
-| # downloads        | 39310892 |
+| # downloads        | 40821962 |
 | # stars            | 0 |
 
 ## Links

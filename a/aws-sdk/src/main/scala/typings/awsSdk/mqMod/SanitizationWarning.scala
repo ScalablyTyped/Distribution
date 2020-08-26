@@ -22,12 +22,34 @@ trait SanitizationWarning extends js.Object {
 
 object SanitizationWarning {
   @scala.inline
-  def apply(AttributeName: string = null, ElementName: string = null, Reason: SanitizationWarningReason = null): SanitizationWarning = {
+  def apply(): SanitizationWarning = {
     val __obj = js.Dynamic.literal()
-    if (AttributeName != null) __obj.updateDynamic("AttributeName")(AttributeName.asInstanceOf[js.Any])
-    if (ElementName != null) __obj.updateDynamic("ElementName")(ElementName.asInstanceOf[js.Any])
-    if (Reason != null) __obj.updateDynamic("Reason")(Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SanitizationWarning]
   }
+  @scala.inline
+  implicit class SanitizationWarningOps[Self <: SanitizationWarning] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: string): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
+    @scala.inline
+    def setElementName(value: string): Self = this.set("ElementName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElementName: Self = this.set("ElementName", js.undefined)
+    @scala.inline
+    def setReason(value: SanitizationWarningReason): Self = this.set("Reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("Reason", js.undefined)
+  }
+  
 }
 

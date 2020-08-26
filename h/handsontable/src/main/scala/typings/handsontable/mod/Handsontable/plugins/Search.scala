@@ -26,6 +26,7 @@ trait Search extends Base {
   def getQueryMethod(): SearchQueryMethod = js.native
   def getSearchResultClass(): String = js.native
   def query(queryStr: String): js.Array[SearchResult] = js.native
+  def query(queryStr: String, callback: js.UndefOr[scala.Nothing], queryMethod: SearchQueryMethod): js.Array[SearchResult] = js.native
   def query(queryStr: String, callback: SearchCallback): js.Array[SearchResult] = js.native
   def query(queryStr: String, callback: SearchCallback, queryMethod: SearchQueryMethod): js.Array[SearchResult] = js.native
   def queryMethod(

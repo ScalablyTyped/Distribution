@@ -10,6 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * The funciton to handle requests once `max` is exceeded. It receives the request and response objects.
@@ -25,29 +26,29 @@ trait Options extends js.Object {
       /* next */ NextFunction, 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Enable headers for request limit (`X-RateLimit-Limit`) and current usage (`X-RateLimit-Remaining`) on all
     * responses andtime to wait before retrying (`Retry-After`) when `max` is exceeded. Defaults to `true`.
     */
-  var headers: js.UndefOr[Boolean] = js.undefined
+  var headers: js.UndefOr[Boolean] = js.native
   /**
     * Function used to generate keys. Defaults to using `req.ip`.
     * Default: `(req, res) => req.ip`
     */
   var keyGenerator: js.UndefOr[
     js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], String]
-  ] = js.undefined
+  ] = js.native
   /**
     * Max number of connections during `windowMs` before sending a 429 response. May be a `number` or
     * a function that returns a `number` or a `Promise<number>`. Defaults to `5`. Set to `0` to disable.
     */
-  var max: js.UndefOr[Double | MaxValueFn] = js.undefined
+  var max: js.UndefOr[Double | MaxValueFn] = js.native
   /**
     * Error message sent to user when `max` is exceeded. May be a `string`, JSON object, or any other value
     * that Express's `req.send()` supports. Defaults to `'Too many requests, please try again later.'`.
     */
-  var message: js.UndefOr[String | Buffer | Message] = js.undefined
+  var message: js.UndefOr[String | Buffer | Message] = js.native
   /**
     * Function that is called the first time `max` is exceeded. The `req.rateLimit` object has `limit`, `current`,
     * and `remaining` number of requests and, if the store provides it, a `resetTime` Date object. Default is
@@ -61,7 +62,7 @@ trait Options extends js.Object {
       /* optionsUsed */ this.type, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Function used to skip requests. Returning `true` from the function will skip limiting for that request. Defaults to
     * always `false` (count all requests).
@@ -69,59 +70,101 @@ trait Options extends js.Object {
     */
   var skip: js.UndefOr[
     js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Boolean]
-  ] = js.undefined
+  ] = js.native
   /**
     * When set to `true`, failed requests (status >= 400, request canceled or errored) won't be counted. Defaults to `false`.
     */
-  var skipFailedRequests: js.UndefOr[Boolean] = js.undefined
+  var skipFailedRequests: js.UndefOr[Boolean] = js.native
   /**
     * When set to `true`, successful requests (status < 400) won't be counted. Defaults to `false`.
     */
-  var skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined
+  var skipSuccessfulRequests: js.UndefOr[Boolean] = js.native
   /**
     * HTTP status code returned when `max` is exceeded. Defaults to `429`.
     */
-  var statusCode: js.UndefOr[Double] = js.undefined
+  var statusCode: js.UndefOr[Double] = js.native
   /**
     * The storage to use when persisting rate limit attempts.
     */
-  var store: js.UndefOr[Store] = js.undefined
+  var store: js.UndefOr[Store] = js.native
   /**
     * How long in milliseconds to keep records of requests in memory. Defaults to `60000` (1 minute).
     */
-  var windowMs: js.UndefOr[Double] = js.undefined
+  var windowMs: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    handler: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ NextFunction) => _ = null,
-    headers: js.UndefOr[Boolean] = js.undefined,
-    keyGenerator: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => String = null,
-    max: Double | MaxValueFn = null,
-    message: String | Buffer | Message = null,
-    onLimitReached: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Options) => Unit = null,
-    skip: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean = null,
-    skipFailedRequests: js.UndefOr[Boolean] = js.undefined,
-    skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined,
-    statusCode: js.UndefOr[Double] = js.undefined,
-    store: Store = null,
-    windowMs: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction3(handler))
-    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers.get.asInstanceOf[js.Any])
-    if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(js.Any.fromFunction2(keyGenerator))
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(js.Any.fromFunction3(onLimitReached))
-    if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
-    if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipSuccessfulRequests)) __obj.updateDynamic("skipSuccessfulRequests")(skipSuccessfulRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowMs)) __obj.updateDynamic("windowMs")(windowMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHandler(
+      value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], /* next */ NextFunction) => _
+    ): Self = this.set("handler", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteHandler: Self = this.set("handler", js.undefined)
+    @scala.inline
+    def setHeaders(value: Boolean): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setKeyGenerator(value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => String): Self = this.set("keyGenerator", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteKeyGenerator: Self = this.set("keyGenerator", js.undefined)
+    @scala.inline
+    def setMaxFunction0(value: () => Double | js.Promise[Double]): Self = this.set("max", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMax(value: Double | MaxValueFn): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMessage(value: String | Buffer | Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setOnLimitReached(
+      value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Options) => Unit
+    ): Self = this.set("onLimitReached", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnLimitReached: Self = this.set("onLimitReached", js.undefined)
+    @scala.inline
+    def setSkip(value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean): Self = this.set("skip", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSkip: Self = this.set("skip", js.undefined)
+    @scala.inline
+    def setSkipFailedRequests(value: Boolean): Self = this.set("skipFailedRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFailedRequests: Self = this.set("skipFailedRequests", js.undefined)
+    @scala.inline
+    def setSkipSuccessfulRequests(value: Boolean): Self = this.set("skipSuccessfulRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipSuccessfulRequests: Self = this.set("skipSuccessfulRequests", js.undefined)
+    @scala.inline
+    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+    @scala.inline
+    def setStore(value: Store): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+    @scala.inline
+    def setWindowMs(value: Double): Self = this.set("windowMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowMs: Self = this.set("windowMs", js.undefined)
+  }
+  
 }
 

@@ -85,6 +85,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDefaultobjectaccesscontrolsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDefaultobjectaccesscontrolsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -171,6 +172,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def get(callback: BodyResponseCallback[SchemaObjectAccessControl]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def get(params: ParamsResourceDefaultobjectaccesscontrolsGet): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def get(
     params: ParamsResourceDefaultobjectaccesscontrolsGet,
@@ -258,6 +260,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def insert(callback: BodyResponseCallback[SchemaObjectAccessControl]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def insert(params: ParamsResourceDefaultobjectaccesscontrolsInsert): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def insert(
     params: ParamsResourceDefaultobjectaccesscontrolsInsert,
@@ -342,6 +345,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaObjectAccessControls] = js.native
   def list(callback: BodyResponseCallback[SchemaObjectAccessControls]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObjectAccessControls] = js.native
   def list(params: ParamsResourceDefaultobjectaccesscontrolsList): GaxiosPromise[SchemaObjectAccessControls] = js.native
   def list(
     params: ParamsResourceDefaultobjectaccesscontrolsList,
@@ -437,6 +441,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def patch(callback: BodyResponseCallback[SchemaObjectAccessControl]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def patch(params: ParamsResourceDefaultobjectaccesscontrolsPatch): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def patch(
     params: ParamsResourceDefaultobjectaccesscontrolsPatch,
@@ -532,6 +537,7 @@ class ResourceDefaultobjectaccesscontrols protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def update(callback: BodyResponseCallback[SchemaObjectAccessControl]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def update(params: ParamsResourceDefaultobjectaccesscontrolsUpdate): GaxiosPromise[SchemaObjectAccessControl] = js.native
   def update(
     params: ParamsResourceDefaultobjectaccesscontrolsUpdate,

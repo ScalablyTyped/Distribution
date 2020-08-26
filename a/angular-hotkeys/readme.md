@@ -12,7 +12,7 @@ Automatic keyboard shortcuts for your Angular Apps
 | Keywords           | angular, angularjs, keyboard, shortcut, hotkeys |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 565687 |
+| # downloads        | 559780 |
 | # stars            | 2 |
 
 ## Links

@@ -22,16 +22,36 @@ trait ListOnPremisesInstancesInput extends js.Object {
 
 object ListOnPremisesInstancesInput {
   @scala.inline
-  def apply(
-    nextToken: NextToken = null,
-    registrationStatus: RegistrationStatus = null,
-    tagFilters: TagFilterList = null
-  ): ListOnPremisesInstancesInput = {
+  def apply(): ListOnPremisesInstancesInput = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (registrationStatus != null) __obj.updateDynamic("registrationStatus")(registrationStatus.asInstanceOf[js.Any])
-    if (tagFilters != null) __obj.updateDynamic("tagFilters")(tagFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOnPremisesInstancesInput]
   }
+  @scala.inline
+  implicit class ListOnPremisesInstancesInputOps[Self <: ListOnPremisesInstancesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRegistrationStatus(value: RegistrationStatus): Self = this.set("registrationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationStatus: Self = this.set("registrationStatus", js.undefined)
+    @scala.inline
+    def setTagFiltersVarargs(value: TagFilter*): Self = this.set("tagFilters", js.Array(value :_*))
+    @scala.inline
+    def setTagFilters(value: TagFilterList): Self = this.set("tagFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagFilters: Self = this.set("tagFilters", js.undefined)
+  }
+  
 }
 

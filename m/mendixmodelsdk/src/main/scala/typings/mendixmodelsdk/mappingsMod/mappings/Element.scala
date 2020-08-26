@@ -35,39 +35,39 @@ abstract class Element protected ()
   def containerAsEntityMessageDefinition: EntityMessageDefinition = js.native
   def containerAsJsonStructure: JsonStructure = js.native
   def elementType: ElementType = js.native
-  def elementType(newValue: ElementType): js.Any = js.native
+  def elementType_=(newValue: ElementType): Unit = js.native
   def errorMessage: String = js.native
-  def errorMessage(newValue: String): js.Any = js.native
+  def errorMessage_=(newValue: String): Unit = js.native
   /**
     * In version 7.6.0: introduced
     */
   def exposedItemName: String = js.native
-  def exposedItemName(newValue: String): js.Any = js.native
+  def exposedItemName_=(newValue: String): Unit = js.native
   def exposedName: String = js.native
-  def exposedName(newValue: String): js.Any = js.native
+  def exposedName_=(newValue: String): Unit = js.native
   def fractionDigits: Double = js.native
-  def fractionDigits(newValue: Double): js.Any = js.native
+  def fractionDigits_=(newValue: Double): Unit = js.native
   def isDefaultType: Boolean = js.native
-  def isDefaultType(newValue: Boolean): js.Any = js.native
+  def isDefaultType_=(newValue: Boolean): Unit = js.native
   def maxLength: Double = js.native
-  def maxLength(newValue: Double): js.Any = js.native
+  def maxLength_=(newValue: Double): Unit = js.native
   def maxOccurs: Double = js.native
-  def maxOccurs(newValue: Double): js.Any = js.native
+  def maxOccurs_=(newValue: Double): Unit = js.native
   def minOccurs: Double = js.native
-  def minOccurs(newValue: Double): js.Any = js.native
+  def minOccurs_=(newValue: Double): Unit = js.native
   def nillable: Boolean = js.native
-  def nillable(newValue: Boolean): js.Any = js.native
+  def nillable_=(newValue: Boolean): Unit = js.native
   /**
     * The value of this property is conceptually of type mappings.ElementPath.
     */
   def path: String = js.native
-  def path(newValue: String): js.Any = js.native
+  def path_=(newValue: String): Unit = js.native
   def primitiveType: XmlPrimitiveType = js.native
-  def primitiveType(newValue: XmlPrimitiveType): js.Any = js.native
+  def primitiveType_=(newValue: XmlPrimitiveType): Unit = js.native
   def totalDigits: Double = js.native
-  def totalDigits(newValue: Double): js.Any = js.native
+  def totalDigits_=(newValue: Double): Unit = js.native
   def warningMessage: String = js.native
-  def warningMessage(newValue: String): js.Any = js.native
+  def warningMessage_=(newValue: String): Unit = js.native
 }
 
 /* static members */

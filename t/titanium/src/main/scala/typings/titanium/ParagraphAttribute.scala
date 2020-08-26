@@ -7,94 +7,133 @@ import scala.scalajs.js.annotation._
 /**
   * An abstract datatype for specifying an Paragraph style attribute.
   */
+@js.native
 trait ParagraphAttribute extends js.Object {
   /**
     * The text alignment of the receiver.
     */
-  var alignment: js.UndefOr[Double] = js.undefined
+  var alignment: js.UndefOr[Double] = js.native
   /**
     * A Boolean value indicating whether the system may tighten inter-character spacing
     * before truncating text.
     */
-  var allowsDefaultTighteningForTruncation: js.UndefOr[Boolean] = js.undefined
+  var allowsDefaultTighteningForTruncation: js.UndefOr[Boolean] = js.native
   /**
     * The indentation of the first line of the receiver.
     */
-  var firstLineHeadIndent: js.UndefOr[Double | java.lang.String] = js.undefined
+  var firstLineHeadIndent: js.UndefOr[Double | java.lang.String] = js.native
   /**
     * The indentation of the lines of lines other than the first.
     */
-  var headIndent: js.UndefOr[Double | java.lang.String] = js.undefined
+  var headIndent: js.UndefOr[Double | java.lang.String] = js.native
   /**
     * The threshold of paragraph for hyphenation.
     */
-  var hyphenationFactor: js.UndefOr[Double] = js.undefined
+  var hyphenationFactor: js.UndefOr[Double] = js.native
   /**
     * The mode that should be used to break lines in the receiver.
     */
-  var lineBreakMode: js.UndefOr[Double] = js.undefined
+  var lineBreakMode: js.UndefOr[Double] = js.native
   /**
     * The line height multiple.
     */
-  var lineHeightMultiple: js.UndefOr[Double] = js.undefined
+  var lineHeightMultiple: js.UndefOr[Double] = js.native
   /**
     * The distance in points between the bottom of one line fragment and the top of the next.
     */
-  var lineSpacing: js.UndefOr[Double | java.lang.String] = js.undefined
+  var lineSpacing: js.UndefOr[Double | java.lang.String] = js.native
   /**
     * The maximum line height of receiver.
     */
-  var maximumLineHeight: js.UndefOr[Double | java.lang.String] = js.undefined
+  var maximumLineHeight: js.UndefOr[Double | java.lang.String] = js.native
   /**
     * The minimum height of receiver.
     */
-  var minimumLineHeight: js.UndefOr[Double | java.lang.String] = js.undefined
+  var minimumLineHeight: js.UndefOr[Double | java.lang.String] = js.native
   /**
     * The space after the end of the paragraph.
     */
-  var paragraphSpacingAfter: js.UndefOr[Double | java.lang.String] = js.undefined
+  var paragraphSpacingAfter: js.UndefOr[Double | java.lang.String] = js.native
   /**
     * The distance between the top of paragraph and the beginning of its text content.
     */
-  var paragraphSpacingBefore: js.UndefOr[Double | java.lang.String] = js.undefined
+  var paragraphSpacingBefore: js.UndefOr[Double | java.lang.String] = js.native
   /**
     * The trailing indentation of the receiver.
     */
-  var tailIndent: js.UndefOr[Double | java.lang.String] = js.undefined
+  var tailIndent: js.UndefOr[Double | java.lang.String] = js.native
 }
 
 object ParagraphAttribute {
   @scala.inline
-  def apply(
-    alignment: js.UndefOr[Double] = js.undefined,
-    allowsDefaultTighteningForTruncation: js.UndefOr[Boolean] = js.undefined,
-    firstLineHeadIndent: Double | java.lang.String = null,
-    headIndent: Double | java.lang.String = null,
-    hyphenationFactor: js.UndefOr[Double] = js.undefined,
-    lineBreakMode: js.UndefOr[Double] = js.undefined,
-    lineHeightMultiple: js.UndefOr[Double] = js.undefined,
-    lineSpacing: Double | java.lang.String = null,
-    maximumLineHeight: Double | java.lang.String = null,
-    minimumLineHeight: Double | java.lang.String = null,
-    paragraphSpacingAfter: Double | java.lang.String = null,
-    paragraphSpacingBefore: Double | java.lang.String = null,
-    tailIndent: Double | java.lang.String = null
-  ): ParagraphAttribute = {
+  def apply(): ParagraphAttribute = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignment)) __obj.updateDynamic("alignment")(alignment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowsDefaultTighteningForTruncation)) __obj.updateDynamic("allowsDefaultTighteningForTruncation")(allowsDefaultTighteningForTruncation.get.asInstanceOf[js.Any])
-    if (firstLineHeadIndent != null) __obj.updateDynamic("firstLineHeadIndent")(firstLineHeadIndent.asInstanceOf[js.Any])
-    if (headIndent != null) __obj.updateDynamic("headIndent")(headIndent.asInstanceOf[js.Any])
-    if (!js.isUndefined(hyphenationFactor)) __obj.updateDynamic("hyphenationFactor")(hyphenationFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineBreakMode)) __obj.updateDynamic("lineBreakMode")(lineBreakMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineHeightMultiple)) __obj.updateDynamic("lineHeightMultiple")(lineHeightMultiple.get.asInstanceOf[js.Any])
-    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
-    if (maximumLineHeight != null) __obj.updateDynamic("maximumLineHeight")(maximumLineHeight.asInstanceOf[js.Any])
-    if (minimumLineHeight != null) __obj.updateDynamic("minimumLineHeight")(minimumLineHeight.asInstanceOf[js.Any])
-    if (paragraphSpacingAfter != null) __obj.updateDynamic("paragraphSpacingAfter")(paragraphSpacingAfter.asInstanceOf[js.Any])
-    if (paragraphSpacingBefore != null) __obj.updateDynamic("paragraphSpacingBefore")(paragraphSpacingBefore.asInstanceOf[js.Any])
-    if (tailIndent != null) __obj.updateDynamic("tailIndent")(tailIndent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphAttribute]
   }
+  @scala.inline
+  implicit class ParagraphAttributeOps[Self <: ParagraphAttribute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: Double): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    @scala.inline
+    def setAllowsDefaultTighteningForTruncation(value: Boolean): Self = this.set("allowsDefaultTighteningForTruncation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowsDefaultTighteningForTruncation: Self = this.set("allowsDefaultTighteningForTruncation", js.undefined)
+    @scala.inline
+    def setFirstLineHeadIndent(value: Double | java.lang.String): Self = this.set("firstLineHeadIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstLineHeadIndent: Self = this.set("firstLineHeadIndent", js.undefined)
+    @scala.inline
+    def setHeadIndent(value: Double | java.lang.String): Self = this.set("headIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadIndent: Self = this.set("headIndent", js.undefined)
+    @scala.inline
+    def setHyphenationFactor(value: Double): Self = this.set("hyphenationFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyphenationFactor: Self = this.set("hyphenationFactor", js.undefined)
+    @scala.inline
+    def setLineBreakMode(value: Double): Self = this.set("lineBreakMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineBreakMode: Self = this.set("lineBreakMode", js.undefined)
+    @scala.inline
+    def setLineHeightMultiple(value: Double): Self = this.set("lineHeightMultiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineHeightMultiple: Self = this.set("lineHeightMultiple", js.undefined)
+    @scala.inline
+    def setLineSpacing(value: Double | java.lang.String): Self = this.set("lineSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineSpacing: Self = this.set("lineSpacing", js.undefined)
+    @scala.inline
+    def setMaximumLineHeight(value: Double | java.lang.String): Self = this.set("maximumLineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumLineHeight: Self = this.set("maximumLineHeight", js.undefined)
+    @scala.inline
+    def setMinimumLineHeight(value: Double | java.lang.String): Self = this.set("minimumLineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumLineHeight: Self = this.set("minimumLineHeight", js.undefined)
+    @scala.inline
+    def setParagraphSpacingAfter(value: Double | java.lang.String): Self = this.set("paragraphSpacingAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraphSpacingAfter: Self = this.set("paragraphSpacingAfter", js.undefined)
+    @scala.inline
+    def setParagraphSpacingBefore(value: Double | java.lang.String): Self = this.set("paragraphSpacingBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraphSpacingBefore: Self = this.set("paragraphSpacingBefore", js.undefined)
+    @scala.inline
+    def setTailIndent(value: Double | java.lang.String): Self = this.set("tailIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTailIndent: Self = this.set("tailIndent", js.undefined)
+  }
+  
 }
 

@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.XMLSearchResult")
 @js.native
-class XMLSearchResult () extends IXMLSearchResult {
-  /* CompleteClass */
-  override val MoreResults: Boolean = js.native
-  /* CompleteClass */
-  override val SearchResult: String = js.native
-}
+class XMLSearchResult () extends IXMLSearchResult
 
 @JSGlobal("MFiles.XMLSearchResult")
 @js.native

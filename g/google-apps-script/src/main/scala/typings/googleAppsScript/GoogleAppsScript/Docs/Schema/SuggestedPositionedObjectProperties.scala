@@ -4,21 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SuggestedPositionedObjectProperties extends js.Object {
-  var positionedObjectProperties: js.UndefOr[PositionedObjectProperties] = js.undefined
-  var positionedObjectPropertiesSuggestionState: js.UndefOr[PositionedObjectPropertiesSuggestionState] = js.undefined
+  var positionedObjectProperties: js.UndefOr[PositionedObjectProperties] = js.native
+  var positionedObjectPropertiesSuggestionState: js.UndefOr[PositionedObjectPropertiesSuggestionState] = js.native
 }
 
 object SuggestedPositionedObjectProperties {
   @scala.inline
-  def apply(
-    positionedObjectProperties: PositionedObjectProperties = null,
-    positionedObjectPropertiesSuggestionState: PositionedObjectPropertiesSuggestionState = null
-  ): SuggestedPositionedObjectProperties = {
+  def apply(): SuggestedPositionedObjectProperties = {
     val __obj = js.Dynamic.literal()
-    if (positionedObjectProperties != null) __obj.updateDynamic("positionedObjectProperties")(positionedObjectProperties.asInstanceOf[js.Any])
-    if (positionedObjectPropertiesSuggestionState != null) __obj.updateDynamic("positionedObjectPropertiesSuggestionState")(positionedObjectPropertiesSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedPositionedObjectProperties]
   }
+  @scala.inline
+  implicit class SuggestedPositionedObjectPropertiesOps[Self <: SuggestedPositionedObjectProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPositionedObjectProperties(value: PositionedObjectProperties): Self = this.set("positionedObjectProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionedObjectProperties: Self = this.set("positionedObjectProperties", js.undefined)
+    @scala.inline
+    def setPositionedObjectPropertiesSuggestionState(value: PositionedObjectPropertiesSuggestionState): Self = this.set("positionedObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionedObjectPropertiesSuggestionState: Self = this.set("positionedObjectPropertiesSuggestionState", js.undefined)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourceReportsFiles protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaFile] = js.native
   def get(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def get(params: ParamsResourceReportsFilesGet): GaxiosPromise[SchemaFile] = js.native
   def get(params: ParamsResourceReportsFilesGet, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def get(
@@ -61,6 +62,7 @@ class ResourceReportsFiles protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaFileList] = js.native
   def list(callback: BodyResponseCallback[SchemaFileList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFileList] = js.native
   def list(params: ParamsResourceReportsFilesList): GaxiosPromise[SchemaFileList] = js.native
   def list(params: ParamsResourceReportsFilesList, callback: BodyResponseCallback[SchemaFileList]): Unit = js.native
   def list(

@@ -12,11 +12,30 @@ trait IndexableText extends js.Object {
 
 object IndexableText {
   @scala.inline
-  def apply(indexableText: String = null, thumbnail: MimeType = null): IndexableText = {
+  def apply(): IndexableText = {
     val __obj = js.Dynamic.literal()
-    if (indexableText != null) __obj.updateDynamic("indexableText")(indexableText.asInstanceOf[js.Any])
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexableText]
   }
+  @scala.inline
+  implicit class IndexableTextOps[Self <: IndexableText] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexableText(value: String): Self = this.set("indexableText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexableText: Self = this.set("indexableText", js.undefined)
+    @scala.inline
+    def setThumbnail(value: MimeType): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+  }
+  
 }
 

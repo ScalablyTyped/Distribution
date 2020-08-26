@@ -17,8 +17,11 @@ class Error protected ()
     */
   def this(code: typings.chrome.chrome.cast.ErrorCode) = this()
   def this(code: typings.chrome.chrome.cast.ErrorCode, description: String) = this()
+  def this(
+    code: typings.chrome.chrome.cast.ErrorCode,
+    description: js.UndefOr[scala.Nothing],
+    details: js.Object
+  ) = this()
   def this(code: typings.chrome.chrome.cast.ErrorCode, description: String, details: js.Object) = this()
-  /* CompleteClass */
-  override var code: typings.chrome.chrome.cast.ErrorCode = js.native
 }
 

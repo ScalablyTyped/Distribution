@@ -23,36 +23,74 @@ trait CssResponseBytes extends js.Object {
 
 object CssResponseBytes {
   @scala.inline
-  def apply(
-    cssResponseBytes: String = null,
-    flashResponseBytes: String = null,
-    htmlResponseBytes: String = null,
-    imageResponseBytes: String = null,
-    javascriptResponseBytes: String = null,
-    numberCssResources: js.UndefOr[Double] = js.undefined,
-    numberHosts: js.UndefOr[Double] = js.undefined,
-    numberJsResources: js.UndefOr[Double] = js.undefined,
-    numberResources: js.UndefOr[Double] = js.undefined,
-    numberStaticResources: js.UndefOr[Double] = js.undefined,
-    otherResponseBytes: String = null,
-    textResponseBytes: String = null,
-    totalRequestBytes: String = null
-  ): CssResponseBytes = {
+  def apply(): CssResponseBytes = {
     val __obj = js.Dynamic.literal()
-    if (cssResponseBytes != null) __obj.updateDynamic("cssResponseBytes")(cssResponseBytes.asInstanceOf[js.Any])
-    if (flashResponseBytes != null) __obj.updateDynamic("flashResponseBytes")(flashResponseBytes.asInstanceOf[js.Any])
-    if (htmlResponseBytes != null) __obj.updateDynamic("htmlResponseBytes")(htmlResponseBytes.asInstanceOf[js.Any])
-    if (imageResponseBytes != null) __obj.updateDynamic("imageResponseBytes")(imageResponseBytes.asInstanceOf[js.Any])
-    if (javascriptResponseBytes != null) __obj.updateDynamic("javascriptResponseBytes")(javascriptResponseBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberCssResources)) __obj.updateDynamic("numberCssResources")(numberCssResources.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberHosts)) __obj.updateDynamic("numberHosts")(numberHosts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberJsResources)) __obj.updateDynamic("numberJsResources")(numberJsResources.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberResources)) __obj.updateDynamic("numberResources")(numberResources.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberStaticResources)) __obj.updateDynamic("numberStaticResources")(numberStaticResources.get.asInstanceOf[js.Any])
-    if (otherResponseBytes != null) __obj.updateDynamic("otherResponseBytes")(otherResponseBytes.asInstanceOf[js.Any])
-    if (textResponseBytes != null) __obj.updateDynamic("textResponseBytes")(textResponseBytes.asInstanceOf[js.Any])
-    if (totalRequestBytes != null) __obj.updateDynamic("totalRequestBytes")(totalRequestBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssResponseBytes]
   }
+  @scala.inline
+  implicit class CssResponseBytesOps[Self <: CssResponseBytes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCssResponseBytes(value: String): Self = this.set("cssResponseBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssResponseBytes: Self = this.set("cssResponseBytes", js.undefined)
+    @scala.inline
+    def setFlashResponseBytes(value: String): Self = this.set("flashResponseBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashResponseBytes: Self = this.set("flashResponseBytes", js.undefined)
+    @scala.inline
+    def setHtmlResponseBytes(value: String): Self = this.set("htmlResponseBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlResponseBytes: Self = this.set("htmlResponseBytes", js.undefined)
+    @scala.inline
+    def setImageResponseBytes(value: String): Self = this.set("imageResponseBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageResponseBytes: Self = this.set("imageResponseBytes", js.undefined)
+    @scala.inline
+    def setJavascriptResponseBytes(value: String): Self = this.set("javascriptResponseBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJavascriptResponseBytes: Self = this.set("javascriptResponseBytes", js.undefined)
+    @scala.inline
+    def setNumberCssResources(value: Double): Self = this.set("numberCssResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberCssResources: Self = this.set("numberCssResources", js.undefined)
+    @scala.inline
+    def setNumberHosts(value: Double): Self = this.set("numberHosts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberHosts: Self = this.set("numberHosts", js.undefined)
+    @scala.inline
+    def setNumberJsResources(value: Double): Self = this.set("numberJsResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberJsResources: Self = this.set("numberJsResources", js.undefined)
+    @scala.inline
+    def setNumberResources(value: Double): Self = this.set("numberResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberResources: Self = this.set("numberResources", js.undefined)
+    @scala.inline
+    def setNumberStaticResources(value: Double): Self = this.set("numberStaticResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberStaticResources: Self = this.set("numberStaticResources", js.undefined)
+    @scala.inline
+    def setOtherResponseBytes(value: String): Self = this.set("otherResponseBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherResponseBytes: Self = this.set("otherResponseBytes", js.undefined)
+    @scala.inline
+    def setTextResponseBytes(value: String): Self = this.set("textResponseBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextResponseBytes: Self = this.set("textResponseBytes", js.undefined)
+    @scala.inline
+    def setTotalRequestBytes(value: String): Self = this.set("totalRequestBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalRequestBytes: Self = this.set("totalRequestBytes", js.undefined)
+  }
+  
 }
 

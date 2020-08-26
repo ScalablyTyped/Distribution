@@ -29,6 +29,8 @@ trait CanReuse extends js.Object {
   @JSName("$routerCanReuse")
   def $routerCanReuse(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
   @JSName("$routerCanReuse")
+  def $routerCanReuse(next: js.UndefOr[scala.Nothing], prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+  @JSName("$routerCanReuse")
   def $routerCanReuse(next: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
   @JSName("$routerCanReuse")
   def $routerCanReuse(next: ComponentInstruction, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native

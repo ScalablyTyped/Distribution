@@ -15,9 +15,11 @@ import scala.scalajs.js.annotation._
 trait TypeofimportedVm extends js.Object {
   var Script: Instantiable1[/* code */ String, typings.node.vmMod.Script] = js.native
   def compileFunction(code: String): js.Function = js.native
+  def compileFunction(code: String, params: js.UndefOr[scala.Nothing], options: CompileFunctionOptions): js.Function = js.native
   def compileFunction(code: String, params: js.Array[String]): js.Function = js.native
   def compileFunction(code: String, params: js.Array[String], options: CompileFunctionOptions): js.Function = js.native
   def createContext(): Context = js.native
+  def createContext(sandbox: js.UndefOr[scala.Nothing], options: CreateContextOptions): Context = js.native
   def createContext(sandbox: Context): Context = js.native
   def createContext(sandbox: Context, options: CreateContextOptions): Context = js.native
   def isContext(sandbox: Context): Boolean = js.native
@@ -42,6 +44,8 @@ trait TypeofimportedVm extends js.Object {
   def runInContext(code: String, contextifiedSandbox: Context, options: String): js.Any = js.native
   def runInContext(code: String, contextifiedSandbox: Context, options: RunningScriptOptions): js.Any = js.native
   def runInNewContext(code: String): js.Any = js.native
+  def runInNewContext(code: String, sandbox: js.UndefOr[scala.Nothing], options: String): js.Any = js.native
+  def runInNewContext(code: String, sandbox: js.UndefOr[scala.Nothing], options: RunningScriptOptions): js.Any = js.native
   def runInNewContext(code: String, sandbox: Context): js.Any = js.native
   def runInNewContext(code: String, sandbox: Context, options: String): js.Any = js.native
   def runInNewContext(code: String, sandbox: Context, options: RunningScriptOptions): js.Any = js.native

@@ -50,6 +50,7 @@ trait SMSound extends js.Object {
   def onPosition(mescOffest: Double, callback: js.Object, has: js.Any): SMSound = js.native
   def pause(): SMSound = js.native
   def play(): SMSound = js.native
+  def play(id: js.UndefOr[scala.Nothing], options: DefaultOptions): SMSound = js.native
   def play(id: String): SMSound = js.native
   def play(id: String, options: DefaultOptions): SMSound = js.native
   def resume(): SMSound = js.native

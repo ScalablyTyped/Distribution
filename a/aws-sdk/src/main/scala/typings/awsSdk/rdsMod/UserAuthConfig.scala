@@ -30,20 +30,42 @@ trait UserAuthConfig extends js.Object {
 
 object UserAuthConfig {
   @scala.inline
-  def apply(
-    AuthScheme: AuthScheme = null,
-    Description: String = null,
-    IAMAuth: IAMAuthMode = null,
-    SecretArn: String = null,
-    UserName: String = null
-  ): UserAuthConfig = {
+  def apply(): UserAuthConfig = {
     val __obj = js.Dynamic.literal()
-    if (AuthScheme != null) __obj.updateDynamic("AuthScheme")(AuthScheme.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (IAMAuth != null) __obj.updateDynamic("IAMAuth")(IAMAuth.asInstanceOf[js.Any])
-    if (SecretArn != null) __obj.updateDynamic("SecretArn")(SecretArn.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAuthConfig]
   }
+  @scala.inline
+  implicit class UserAuthConfigOps[Self <: UserAuthConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthScheme(value: AuthScheme): Self = this.set("AuthScheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthScheme: Self = this.set("AuthScheme", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setIAMAuth(value: IAMAuthMode): Self = this.set("IAMAuth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIAMAuth: Self = this.set("IAMAuth", js.undefined)
+    @scala.inline
+    def setSecretArn(value: String): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretArn: Self = this.set("SecretArn", js.undefined)
+    @scala.inline
+    def setUserName(value: String): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("UserName", js.undefined)
+  }
+  
 }
 

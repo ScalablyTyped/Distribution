@@ -13,12 +13,34 @@ trait SchemaApiDimensionFilter extends js.Object {
 
 object SchemaApiDimensionFilter {
   @scala.inline
-  def apply(dimension: String = null, expression: String = null, operator: String = null): SchemaApiDimensionFilter = {
+  def apply(): SchemaApiDimensionFilter = {
     val __obj = js.Dynamic.literal()
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApiDimensionFilter]
   }
+  @scala.inline
+  implicit class SchemaApiDimensionFilterOps[Self <: SchemaApiDimensionFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimension(value: String): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension: Self = this.set("dimension", js.undefined)
+    @scala.inline
+    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("expression", js.undefined)
+    @scala.inline
+    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+  }
+  
 }
 

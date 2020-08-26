@@ -30,17 +30,40 @@ trait GrantPermissionsRequest extends js.Object {
 
 object GrantPermissionsRequest {
   @scala.inline
-  def apply(
-    Permissions: PermissionList,
-    Principal: DataLakePrincipal,
-    Resource: Resource,
-    CatalogId: CatalogIdString = null,
-    PermissionsWithGrantOption: PermissionList = null
-  ): GrantPermissionsRequest = {
+  def apply(Permissions: PermissionList, Principal: DataLakePrincipal, Resource: Resource): GrantPermissionsRequest = {
     val __obj = js.Dynamic.literal(Permissions = Permissions.asInstanceOf[js.Any], Principal = Principal.asInstanceOf[js.Any], Resource = Resource.asInstanceOf[js.Any])
-    if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
-    if (PermissionsWithGrantOption != null) __obj.updateDynamic("PermissionsWithGrantOption")(PermissionsWithGrantOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantPermissionsRequest]
   }
+  @scala.inline
+  implicit class GrantPermissionsRequestOps[Self <: GrantPermissionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPermissionsVarargs(value: Permission*): Self = this.set("Permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: PermissionList): Self = this.set("Permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrincipal(value: DataLakePrincipal): Self = this.set("Principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResource(value: Resource): Self = this.set("Resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    @scala.inline
+    def setPermissionsWithGrantOptionVarargs(value: Permission*): Self = this.set("PermissionsWithGrantOption", js.Array(value :_*))
+    @scala.inline
+    def setPermissionsWithGrantOption(value: PermissionList): Self = this.set("PermissionsWithGrantOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsWithGrantOption: Self = this.set("PermissionsWithGrantOption", js.undefined)
+  }
+  
 }
 

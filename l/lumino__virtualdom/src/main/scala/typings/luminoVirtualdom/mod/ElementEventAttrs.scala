@@ -19,224 +19,375 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {readonly [ T in keyof @lumino/virtualdom.@lumino/virtualdom.ElementEventMap ]:? (this : std.HTMLElement, event : @lumino/virtualdom.@lumino/virtualdom.ElementEventMap[T]): any} */
+@js.native
 trait ElementEventAttrs extends js.Object {
-  val onabort: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]] = js.undefined
-  val onauxclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val onblur: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _]] = js.undefined
-  val oncanplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val oncontextmenu: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
-  val oncopy: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]] = js.undefined
-  val oncuechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val oncut: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]] = js.undefined
-  val ondblclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val ondrag: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
-  val ondragend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
-  val ondragenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
-  val ondragexit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
-  val ondragleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
-  val ondragover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
-  val ondragstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
-  val ondrop: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.undefined
-  val ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onemptied: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onended: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, _]] = js.undefined
-  val onerror: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, _]] = js.undefined
-  val onfocus: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _]] = js.undefined
-  val oninput: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val oninvalid: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onkeydown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]] = js.undefined
-  val onkeypress: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]] = js.undefined
-  val onkeyup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]] = js.undefined
-  val onload: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onloadend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onloadstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onmousedown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val onmouseenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val onmouseleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val onmousemove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val onmouseout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val onmouseover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val onmouseup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.undefined
-  val onmousewheel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, _]] = js.undefined
-  val onpaste: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]] = js.undefined
-  val onpause: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onplaying: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onpointercancel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
-  val onpointerdown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
-  val onpointerenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
-  val onpointerleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
-  val onpointermove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
-  val onpointerout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
-  val onpointerover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
-  val onpointerup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.undefined
+  val onabort: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]] = js.native
+  val onauxclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val onblur: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _]] = js.native
+  val oncanplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val oncontextmenu: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.native
+  val oncopy: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]] = js.native
+  val oncuechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val oncut: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]] = js.native
+  val ondblclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val ondrag: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.native
+  val ondragend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.native
+  val ondragenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.native
+  val ondragexit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.native
+  val ondragleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.native
+  val ondragover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.native
+  val ondragstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.native
+  val ondrop: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]] = js.native
+  val ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onemptied: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onended: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, _]] = js.native
+  val onerror: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, _]] = js.native
+  val onfocus: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _]] = js.native
+  val oninput: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val oninvalid: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onkeydown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]] = js.native
+  val onkeypress: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]] = js.native
+  val onkeyup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]] = js.native
+  val onload: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onloadend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onloadstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onmousedown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val onmouseenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val onmouseleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val onmousemove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val onmouseout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val onmouseover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val onmouseup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]] = js.native
+  val onmousewheel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, _]] = js.native
+  val onpaste: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]] = js.native
+  val onpause: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onplaying: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onpointercancel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.native
+  val onpointerdown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.native
+  val onpointerenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.native
+  val onpointerleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.native
+  val onpointermove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.native
+  val onpointerout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.native
+  val onpointerover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.native
+  val onpointerup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]] = js.native
   val onprogress: js.UndefOr[
     js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], _]
-  ] = js.undefined
-  val onratechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onreset: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onscroll: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]] = js.undefined
-  val onseeked: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onseeking: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onselect: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]] = js.undefined
-  val onselectstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onstalled: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onsubmit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onsuspend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
-  val onwaiting: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.undefined
+  ] = js.native
+  val onratechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onreset: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onscroll: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]] = js.native
+  val onseeked: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onseeking: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onselect: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]] = js.native
+  val onselectstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onstalled: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onsubmit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onsuspend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
+  val onwaiting: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]] = js.native
 }
 
 object ElementEventAttrs {
   @scala.inline
-  def apply(
-    onabort: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _] = null,
-    onauxclick: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    onblur: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _] = null,
-    oncanplay: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    oncanplaythrough: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onchange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onclick: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    oncontextmenu: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
-    oncopy: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _] = null,
-    oncuechange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    oncut: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _] = null,
-    ondblclick: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    ondrag: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
-    ondragend: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
-    ondragenter: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
-    ondragexit: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
-    ondragleave: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
-    ondragover: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
-    ondragstart: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
-    ondrop: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _] = null,
-    ondurationchange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onemptied: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onended: js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, _] = null,
-    onerror: js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, _] = null,
-    onfocus: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _] = null,
-    oninput: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    oninvalid: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onkeydown: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _] = null,
-    onkeypress: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _] = null,
-    onkeyup: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _] = null,
-    onload: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onloadeddata: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onloadedmetadata: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onloadend: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onloadstart: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onmousedown: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    onmouseenter: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    onmouseleave: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    onmousemove: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    onmouseout: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    onmouseover: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    onmouseup: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _] = null,
-    onmousewheel: js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, _] = null,
-    onpaste: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _] = null,
-    onpause: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onplay: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onplaying: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onpointercancel: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
-    onpointerdown: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
-    onpointerenter: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
-    onpointerleave: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
-    onpointermove: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
-    onpointerout: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
-    onpointerover: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
-    onpointerup: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _] = null,
-    onprogress: js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], _] = null,
-    onratechange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onreset: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onscroll: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _] = null,
-    onseeked: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onseeking: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onselect: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _] = null,
-    onselectstart: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onstalled: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onsubmit: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onsuspend: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    ontimeupdate: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onvolumechange: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null,
-    onwaiting: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _] = null
-  ): ElementEventAttrs = {
+  def apply(): ElementEventAttrs = {
     val __obj = js.Dynamic.literal()
-    if (onabort != null) __obj.updateDynamic("onabort")(onabort.asInstanceOf[js.Any])
-    if (onauxclick != null) __obj.updateDynamic("onauxclick")(onauxclick.asInstanceOf[js.Any])
-    if (onblur != null) __obj.updateDynamic("onblur")(onblur.asInstanceOf[js.Any])
-    if (oncanplay != null) __obj.updateDynamic("oncanplay")(oncanplay.asInstanceOf[js.Any])
-    if (oncanplaythrough != null) __obj.updateDynamic("oncanplaythrough")(oncanplaythrough.asInstanceOf[js.Any])
-    if (onchange != null) __obj.updateDynamic("onchange")(onchange.asInstanceOf[js.Any])
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick.asInstanceOf[js.Any])
-    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(oncontextmenu.asInstanceOf[js.Any])
-    if (oncopy != null) __obj.updateDynamic("oncopy")(oncopy.asInstanceOf[js.Any])
-    if (oncuechange != null) __obj.updateDynamic("oncuechange")(oncuechange.asInstanceOf[js.Any])
-    if (oncut != null) __obj.updateDynamic("oncut")(oncut.asInstanceOf[js.Any])
-    if (ondblclick != null) __obj.updateDynamic("ondblclick")(ondblclick.asInstanceOf[js.Any])
-    if (ondrag != null) __obj.updateDynamic("ondrag")(ondrag.asInstanceOf[js.Any])
-    if (ondragend != null) __obj.updateDynamic("ondragend")(ondragend.asInstanceOf[js.Any])
-    if (ondragenter != null) __obj.updateDynamic("ondragenter")(ondragenter.asInstanceOf[js.Any])
-    if (ondragexit != null) __obj.updateDynamic("ondragexit")(ondragexit.asInstanceOf[js.Any])
-    if (ondragleave != null) __obj.updateDynamic("ondragleave")(ondragleave.asInstanceOf[js.Any])
-    if (ondragover != null) __obj.updateDynamic("ondragover")(ondragover.asInstanceOf[js.Any])
-    if (ondragstart != null) __obj.updateDynamic("ondragstart")(ondragstart.asInstanceOf[js.Any])
-    if (ondrop != null) __obj.updateDynamic("ondrop")(ondrop.asInstanceOf[js.Any])
-    if (ondurationchange != null) __obj.updateDynamic("ondurationchange")(ondurationchange.asInstanceOf[js.Any])
-    if (onemptied != null) __obj.updateDynamic("onemptied")(onemptied.asInstanceOf[js.Any])
-    if (onended != null) __obj.updateDynamic("onended")(onended.asInstanceOf[js.Any])
-    if (onerror != null) __obj.updateDynamic("onerror")(onerror.asInstanceOf[js.Any])
-    if (onfocus != null) __obj.updateDynamic("onfocus")(onfocus.asInstanceOf[js.Any])
-    if (oninput != null) __obj.updateDynamic("oninput")(oninput.asInstanceOf[js.Any])
-    if (oninvalid != null) __obj.updateDynamic("oninvalid")(oninvalid.asInstanceOf[js.Any])
-    if (onkeydown != null) __obj.updateDynamic("onkeydown")(onkeydown.asInstanceOf[js.Any])
-    if (onkeypress != null) __obj.updateDynamic("onkeypress")(onkeypress.asInstanceOf[js.Any])
-    if (onkeyup != null) __obj.updateDynamic("onkeyup")(onkeyup.asInstanceOf[js.Any])
-    if (onload != null) __obj.updateDynamic("onload")(onload.asInstanceOf[js.Any])
-    if (onloadeddata != null) __obj.updateDynamic("onloadeddata")(onloadeddata.asInstanceOf[js.Any])
-    if (onloadedmetadata != null) __obj.updateDynamic("onloadedmetadata")(onloadedmetadata.asInstanceOf[js.Any])
-    if (onloadend != null) __obj.updateDynamic("onloadend")(onloadend.asInstanceOf[js.Any])
-    if (onloadstart != null) __obj.updateDynamic("onloadstart")(onloadstart.asInstanceOf[js.Any])
-    if (onmousedown != null) __obj.updateDynamic("onmousedown")(onmousedown.asInstanceOf[js.Any])
-    if (onmouseenter != null) __obj.updateDynamic("onmouseenter")(onmouseenter.asInstanceOf[js.Any])
-    if (onmouseleave != null) __obj.updateDynamic("onmouseleave")(onmouseleave.asInstanceOf[js.Any])
-    if (onmousemove != null) __obj.updateDynamic("onmousemove")(onmousemove.asInstanceOf[js.Any])
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout.asInstanceOf[js.Any])
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover.asInstanceOf[js.Any])
-    if (onmouseup != null) __obj.updateDynamic("onmouseup")(onmouseup.asInstanceOf[js.Any])
-    if (onmousewheel != null) __obj.updateDynamic("onmousewheel")(onmousewheel.asInstanceOf[js.Any])
-    if (onpaste != null) __obj.updateDynamic("onpaste")(onpaste.asInstanceOf[js.Any])
-    if (onpause != null) __obj.updateDynamic("onpause")(onpause.asInstanceOf[js.Any])
-    if (onplay != null) __obj.updateDynamic("onplay")(onplay.asInstanceOf[js.Any])
-    if (onplaying != null) __obj.updateDynamic("onplaying")(onplaying.asInstanceOf[js.Any])
-    if (onpointercancel != null) __obj.updateDynamic("onpointercancel")(onpointercancel.asInstanceOf[js.Any])
-    if (onpointerdown != null) __obj.updateDynamic("onpointerdown")(onpointerdown.asInstanceOf[js.Any])
-    if (onpointerenter != null) __obj.updateDynamic("onpointerenter")(onpointerenter.asInstanceOf[js.Any])
-    if (onpointerleave != null) __obj.updateDynamic("onpointerleave")(onpointerleave.asInstanceOf[js.Any])
-    if (onpointermove != null) __obj.updateDynamic("onpointermove")(onpointermove.asInstanceOf[js.Any])
-    if (onpointerout != null) __obj.updateDynamic("onpointerout")(onpointerout.asInstanceOf[js.Any])
-    if (onpointerover != null) __obj.updateDynamic("onpointerover")(onpointerover.asInstanceOf[js.Any])
-    if (onpointerup != null) __obj.updateDynamic("onpointerup")(onpointerup.asInstanceOf[js.Any])
-    if (onprogress != null) __obj.updateDynamic("onprogress")(onprogress.asInstanceOf[js.Any])
-    if (onratechange != null) __obj.updateDynamic("onratechange")(onratechange.asInstanceOf[js.Any])
-    if (onreset != null) __obj.updateDynamic("onreset")(onreset.asInstanceOf[js.Any])
-    if (onscroll != null) __obj.updateDynamic("onscroll")(onscroll.asInstanceOf[js.Any])
-    if (onseeked != null) __obj.updateDynamic("onseeked")(onseeked.asInstanceOf[js.Any])
-    if (onseeking != null) __obj.updateDynamic("onseeking")(onseeking.asInstanceOf[js.Any])
-    if (onselect != null) __obj.updateDynamic("onselect")(onselect.asInstanceOf[js.Any])
-    if (onselectstart != null) __obj.updateDynamic("onselectstart")(onselectstart.asInstanceOf[js.Any])
-    if (onstalled != null) __obj.updateDynamic("onstalled")(onstalled.asInstanceOf[js.Any])
-    if (onsubmit != null) __obj.updateDynamic("onsubmit")(onsubmit.asInstanceOf[js.Any])
-    if (onsuspend != null) __obj.updateDynamic("onsuspend")(onsuspend.asInstanceOf[js.Any])
-    if (ontimeupdate != null) __obj.updateDynamic("ontimeupdate")(ontimeupdate.asInstanceOf[js.Any])
-    if (onvolumechange != null) __obj.updateDynamic("onvolumechange")(onvolumechange.asInstanceOf[js.Any])
-    if (onwaiting != null) __obj.updateDynamic("onwaiting")(onwaiting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementEventAttrs]
   }
+  @scala.inline
+  implicit class ElementEventAttrsOps[Self <: ElementEventAttrs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnabort(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]): Self = this.set("onabort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnabort: Self = this.set("onabort", js.undefined)
+    @scala.inline
+    def setOnauxclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("onauxclick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnauxclick: Self = this.set("onauxclick", js.undefined)
+    @scala.inline
+    def setOnblur(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _]): Self = this.set("onblur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnblur: Self = this.set("onblur", js.undefined)
+    @scala.inline
+    def setOncanplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("oncanplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOncanplay: Self = this.set("oncanplay", js.undefined)
+    @scala.inline
+    def setOncanplaythrough(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("oncanplaythrough", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOncanplaythrough: Self = this.set("oncanplaythrough", js.undefined)
+    @scala.inline
+    def setOnchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnchange: Self = this.set("onchange", js.undefined)
+    @scala.inline
+    def setOnclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("onclick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnclick: Self = this.set("onclick", js.undefined)
+    @scala.inline
+    def setOncontextmenu(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]): Self = this.set("oncontextmenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOncontextmenu: Self = this.set("oncontextmenu", js.undefined)
+    @scala.inline
+    def setOncopy(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]): Self = this.set("oncopy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOncopy: Self = this.set("oncopy", js.undefined)
+    @scala.inline
+    def setOncuechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("oncuechange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOncuechange: Self = this.set("oncuechange", js.undefined)
+    @scala.inline
+    def setOncut(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]): Self = this.set("oncut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOncut: Self = this.set("oncut", js.undefined)
+    @scala.inline
+    def setOndblclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("ondblclick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndblclick: Self = this.set("ondblclick", js.undefined)
+    @scala.inline
+    def setOndrag(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]): Self = this.set("ondrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndrag: Self = this.set("ondrag", js.undefined)
+    @scala.inline
+    def setOndragend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]): Self = this.set("ondragend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndragend: Self = this.set("ondragend", js.undefined)
+    @scala.inline
+    def setOndragenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]): Self = this.set("ondragenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndragenter: Self = this.set("ondragenter", js.undefined)
+    @scala.inline
+    def setOndragexit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]): Self = this.set("ondragexit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndragexit: Self = this.set("ondragexit", js.undefined)
+    @scala.inline
+    def setOndragleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]): Self = this.set("ondragleave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndragleave: Self = this.set("ondragleave", js.undefined)
+    @scala.inline
+    def setOndragover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]): Self = this.set("ondragover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndragover: Self = this.set("ondragover", js.undefined)
+    @scala.inline
+    def setOndragstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]): Self = this.set("ondragstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndragstart: Self = this.set("ondragstart", js.undefined)
+    @scala.inline
+    def setOndrop(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, _]): Self = this.set("ondrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndrop: Self = this.set("ondrop", js.undefined)
+    @scala.inline
+    def setOndurationchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("ondurationchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOndurationchange: Self = this.set("ondurationchange", js.undefined)
+    @scala.inline
+    def setOnemptied(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onemptied", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnemptied: Self = this.set("onemptied", js.undefined)
+    @scala.inline
+    def setOnended(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, _]): Self = this.set("onended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnended: Self = this.set("onended", js.undefined)
+    @scala.inline
+    def setOnerror(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, _]): Self = this.set("onerror", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnerror: Self = this.set("onerror", js.undefined)
+    @scala.inline
+    def setOnfocus(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, _]): Self = this.set("onfocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnfocus: Self = this.set("onfocus", js.undefined)
+    @scala.inline
+    def setOninput(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("oninput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOninput: Self = this.set("oninput", js.undefined)
+    @scala.inline
+    def setOninvalid(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("oninvalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOninvalid: Self = this.set("oninvalid", js.undefined)
+    @scala.inline
+    def setOnkeydown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]): Self = this.set("onkeydown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnkeydown: Self = this.set("onkeydown", js.undefined)
+    @scala.inline
+    def setOnkeypress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]): Self = this.set("onkeypress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnkeypress: Self = this.set("onkeypress", js.undefined)
+    @scala.inline
+    def setOnkeyup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, _]): Self = this.set("onkeyup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnkeyup: Self = this.set("onkeyup", js.undefined)
+    @scala.inline
+    def setOnload(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnload: Self = this.set("onload", js.undefined)
+    @scala.inline
+    def setOnloadeddata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onloadeddata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnloadeddata: Self = this.set("onloadeddata", js.undefined)
+    @scala.inline
+    def setOnloadedmetadata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onloadedmetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnloadedmetadata: Self = this.set("onloadedmetadata", js.undefined)
+    @scala.inline
+    def setOnloadend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onloadend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnloadend: Self = this.set("onloadend", js.undefined)
+    @scala.inline
+    def setOnloadstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onloadstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnloadstart: Self = this.set("onloadstart", js.undefined)
+    @scala.inline
+    def setOnmousedown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("onmousedown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmousedown: Self = this.set("onmousedown", js.undefined)
+    @scala.inline
+    def setOnmouseenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("onmouseenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmouseenter: Self = this.set("onmouseenter", js.undefined)
+    @scala.inline
+    def setOnmouseleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("onmouseleave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmouseleave: Self = this.set("onmouseleave", js.undefined)
+    @scala.inline
+    def setOnmousemove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("onmousemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmousemove: Self = this.set("onmousemove", js.undefined)
+    @scala.inline
+    def setOnmouseout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("onmouseout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmouseout: Self = this.set("onmouseout", js.undefined)
+    @scala.inline
+    def setOnmouseover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("onmouseover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmouseover: Self = this.set("onmouseover", js.undefined)
+    @scala.inline
+    def setOnmouseup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, _]): Self = this.set("onmouseup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmouseup: Self = this.set("onmouseup", js.undefined)
+    @scala.inline
+    def setOnmousewheel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, _]): Self = this.set("onmousewheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmousewheel: Self = this.set("onmousewheel", js.undefined)
+    @scala.inline
+    def setOnpaste(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, _]): Self = this.set("onpaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpaste: Self = this.set("onpaste", js.undefined)
+    @scala.inline
+    def setOnpause(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onpause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpause: Self = this.set("onpause", js.undefined)
+    @scala.inline
+    def setOnplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnplay: Self = this.set("onplay", js.undefined)
+    @scala.inline
+    def setOnplaying(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onplaying", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnplaying: Self = this.set("onplaying", js.undefined)
+    @scala.inline
+    def setOnpointercancel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]): Self = this.set("onpointercancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpointercancel: Self = this.set("onpointercancel", js.undefined)
+    @scala.inline
+    def setOnpointerdown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]): Self = this.set("onpointerdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpointerdown: Self = this.set("onpointerdown", js.undefined)
+    @scala.inline
+    def setOnpointerenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]): Self = this.set("onpointerenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpointerenter: Self = this.set("onpointerenter", js.undefined)
+    @scala.inline
+    def setOnpointerleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]): Self = this.set("onpointerleave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpointerleave: Self = this.set("onpointerleave", js.undefined)
+    @scala.inline
+    def setOnpointermove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]): Self = this.set("onpointermove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpointermove: Self = this.set("onpointermove", js.undefined)
+    @scala.inline
+    def setOnpointerout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]): Self = this.set("onpointerout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpointerout: Self = this.set("onpointerout", js.undefined)
+    @scala.inline
+    def setOnpointerover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]): Self = this.set("onpointerover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpointerover: Self = this.set("onpointerover", js.undefined)
+    @scala.inline
+    def setOnpointerup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, _]): Self = this.set("onpointerup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnpointerup: Self = this.set("onpointerup", js.undefined)
+    @scala.inline
+    def setOnprogress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], _]): Self = this.set("onprogress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnprogress: Self = this.set("onprogress", js.undefined)
+    @scala.inline
+    def setOnratechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onratechange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnratechange: Self = this.set("onratechange", js.undefined)
+    @scala.inline
+    def setOnreset(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onreset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnreset: Self = this.set("onreset", js.undefined)
+    @scala.inline
+    def setOnscroll(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]): Self = this.set("onscroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnscroll: Self = this.set("onscroll", js.undefined)
+    @scala.inline
+    def setOnseeked(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onseeked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnseeked: Self = this.set("onseeked", js.undefined)
+    @scala.inline
+    def setOnseeking(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onseeking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnseeking: Self = this.set("onseeking", js.undefined)
+    @scala.inline
+    def setOnselect(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, _]): Self = this.set("onselect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnselect: Self = this.set("onselect", js.undefined)
+    @scala.inline
+    def setOnselectstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onselectstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnselectstart: Self = this.set("onselectstart", js.undefined)
+    @scala.inline
+    def setOnstalled(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onstalled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnstalled: Self = this.set("onstalled", js.undefined)
+    @scala.inline
+    def setOnsubmit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onsubmit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnsubmit: Self = this.set("onsubmit", js.undefined)
+    @scala.inline
+    def setOnsuspend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onsuspend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnsuspend: Self = this.set("onsuspend", js.undefined)
+    @scala.inline
+    def setOntimeupdate(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("ontimeupdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOntimeupdate: Self = this.set("ontimeupdate", js.undefined)
+    @scala.inline
+    def setOnvolumechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onvolumechange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnvolumechange: Self = this.set("onvolumechange", js.undefined)
+    @scala.inline
+    def setOnwaiting(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, _]): Self = this.set("onwaiting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnwaiting: Self = this.set("onwaiting", js.undefined)
+  }
+  
 }
 

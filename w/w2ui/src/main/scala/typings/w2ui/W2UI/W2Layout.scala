@@ -25,6 +25,7 @@ trait W2Layout
   def hideTabs(`type`: String): Unit = js.native
   def hideToolbar(`type`: String): Unit = js.native
   def html(`type`: String): String = js.native
+  def html(`type`: String, content: js.UndefOr[scala.Nothing], transition: String): Unit = js.native
   def html(`type`: String, content: String): Unit = js.native
   def html(`type`: String, content: String, transition: String): Unit = js.native
   def html(`type`: String, content: js.Object): Unit = js.native
@@ -32,6 +33,7 @@ trait W2Layout
   @JSName("html")
   def html_Unit(`type`: String): Unit = js.native
   def load(`type`: String, url: String): Unit = js.native
+  def load(`type`: String, url: String, transition: js.UndefOr[scala.Nothing], onLoad: js.Function): Unit = js.native
   def load(`type`: String, url: String, transition: String): Unit = js.native
   def load(`type`: String, url: String, transition: String, onLoad: js.Function): Unit = js.native
   def lock(panel: String, message: String): Unit = js.native

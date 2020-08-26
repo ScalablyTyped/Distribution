@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   *
   * @property {String} identity - User identity
   * @property {String} friendlyName - User friendly name, null if not set
-  * @property {Object} attributes - Object with custom attributes for user
+  * @property {any} attributes - Object with custom attributes for user
   * @property {Boolean} online - User real-time channel connection status
   * @property {Boolean} notifiable - User push notification registration status
   *
@@ -44,11 +44,11 @@ class User_ protected () extends EventEmitter {
   def _fetch(): js.Promise[User] = js.native
   def _update(key: String, value: js.Any): Unit = js.native
   def _updateReachabilityInfo(map: js.Any, update: js.Any): js.Any = js.native
-  def attributes: js.Object = js.native
-  def entityName(name: String): js.Any = js.native
+  def attributes: js.Any = js.native
+  def entityName_=(name: String): Unit = js.native
   def friendlyName: String = js.native
   def identity: String = js.native
-  def identity(identity: String): js.Any = js.native
+  def identity_=(identity: String): Unit = js.native
   def isSubscribed: Boolean = js.native
   def notifiable: Boolean = js.native
   def online: Boolean = js.native
@@ -59,7 +59,7 @@ class User_ protected () extends EventEmitter {
   def unsubscribe(): js.Promise[Unit] = js.native
   /**
     * Updates user attributes.
-    * @param {Object} attributes - Updated attributes
+    * @param {any} attributes new attributes for User.
     * @returns {Promise<User|Error|SessionError>}
     */
   def updateAttributes(attributes: js.Any): js.Promise[this.type] = js.native

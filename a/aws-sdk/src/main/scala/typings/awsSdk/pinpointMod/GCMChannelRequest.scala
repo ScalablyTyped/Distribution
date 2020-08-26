@@ -18,10 +18,28 @@ trait GCMChannelRequest extends js.Object {
 
 object GCMChannelRequest {
   @scala.inline
-  def apply(ApiKey: string, Enabled: js.UndefOr[boolean] = js.undefined): GCMChannelRequest = {
+  def apply(ApiKey: string): GCMChannelRequest = {
     val __obj = js.Dynamic.literal(ApiKey = ApiKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GCMChannelRequest]
   }
+  @scala.inline
+  implicit class GCMChannelRequestOps[Self <: GCMChannelRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiKey(value: string): Self = this.set("ApiKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+  }
+  
 }
 

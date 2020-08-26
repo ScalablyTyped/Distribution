@@ -22,16 +22,38 @@ trait ListCollectionsResponse extends js.Object {
 
 object ListCollectionsResponse {
   @scala.inline
-  def apply(
-    CollectionIds: CollectionIdList = null,
-    FaceModelVersions: FaceModelVersionList = null,
-    NextToken: PaginationToken = null
-  ): ListCollectionsResponse = {
+  def apply(): ListCollectionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (CollectionIds != null) __obj.updateDynamic("CollectionIds")(CollectionIds.asInstanceOf[js.Any])
-    if (FaceModelVersions != null) __obj.updateDynamic("FaceModelVersions")(FaceModelVersions.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCollectionsResponse]
   }
+  @scala.inline
+  implicit class ListCollectionsResponseOps[Self <: ListCollectionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectionIdsVarargs(value: CollectionId*): Self = this.set("CollectionIds", js.Array(value :_*))
+    @scala.inline
+    def setCollectionIds(value: CollectionIdList): Self = this.set("CollectionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionIds: Self = this.set("CollectionIds", js.undefined)
+    @scala.inline
+    def setFaceModelVersionsVarargs(value: String*): Self = this.set("FaceModelVersions", js.Array(value :_*))
+    @scala.inline
+    def setFaceModelVersions(value: FaceModelVersionList): Self = this.set("FaceModelVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceModelVersions: Self = this.set("FaceModelVersions", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

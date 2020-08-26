@@ -82,46 +82,98 @@ trait ReservedInstances extends js.Object {
 
 object ReservedInstances {
   @scala.inline
-  def apply(
-    AvailabilityZone: String = null,
-    CurrencyCode: CurrencyCodeValues = null,
-    Duration: js.UndefOr[Long] = js.undefined,
-    End: DateTime = null,
-    FixedPrice: js.UndefOr[Float] = js.undefined,
-    InstanceCount: js.UndefOr[Integer] = js.undefined,
-    InstanceTenancy: Tenancy = null,
-    InstanceType: InstanceType = null,
-    OfferingClass: OfferingClassType = null,
-    OfferingType: OfferingTypeValues = null,
-    ProductDescription: RIProductDescription = null,
-    RecurringCharges: RecurringChargesList = null,
-    ReservedInstancesId: String = null,
-    Scope: scope = null,
-    Start: DateTime = null,
-    State: ReservedInstanceState = null,
-    Tags: TagList = null,
-    UsagePrice: js.UndefOr[Float] = js.undefined
-  ): ReservedInstances = {
+  def apply(): ReservedInstances = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
-    if (InstanceTenancy != null) __obj.updateDynamic("InstanceTenancy")(InstanceTenancy.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (OfferingClass != null) __obj.updateDynamic("OfferingClass")(OfferingClass.asInstanceOf[js.Any])
-    if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
-    if (ProductDescription != null) __obj.updateDynamic("ProductDescription")(ProductDescription.asInstanceOf[js.Any])
-    if (RecurringCharges != null) __obj.updateDynamic("RecurringCharges")(RecurringCharges.asInstanceOf[js.Any])
-    if (ReservedInstancesId != null) __obj.updateDynamic("ReservedInstancesId")(ReservedInstancesId.asInstanceOf[js.Any])
-    if (Scope != null) __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])
-    if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedInstances]
   }
+  @scala.inline
+  implicit class ReservedInstancesOps[Self <: ReservedInstances] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: CurrencyCodeValues): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setDuration(value: Long): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setEnd(value: DateTime): Self = this.set("End", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("End", js.undefined)
+    @scala.inline
+    def setFixedPrice(value: Float): Self = this.set("FixedPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedPrice: Self = this.set("FixedPrice", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+    @scala.inline
+    def setInstanceTenancy(value: Tenancy): Self = this.set("InstanceTenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTenancy: Self = this.set("InstanceTenancy", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setOfferingClass(value: OfferingClassType): Self = this.set("OfferingClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingClass: Self = this.set("OfferingClass", js.undefined)
+    @scala.inline
+    def setOfferingType(value: OfferingTypeValues): Self = this.set("OfferingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingType: Self = this.set("OfferingType", js.undefined)
+    @scala.inline
+    def setProductDescription(value: RIProductDescription): Self = this.set("ProductDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductDescription: Self = this.set("ProductDescription", js.undefined)
+    @scala.inline
+    def setRecurringChargesVarargs(value: RecurringCharge*): Self = this.set("RecurringCharges", js.Array(value :_*))
+    @scala.inline
+    def setRecurringCharges(value: RecurringChargesList): Self = this.set("RecurringCharges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurringCharges: Self = this.set("RecurringCharges", js.undefined)
+    @scala.inline
+    def setReservedInstancesId(value: String): Self = this.set("ReservedInstancesId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedInstancesId: Self = this.set("ReservedInstancesId", js.undefined)
+    @scala.inline
+    def setScope(value: scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("Scope", js.undefined)
+    @scala.inline
+    def setStart(value: DateTime): Self = this.set("Start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("Start", js.undefined)
+    @scala.inline
+    def setState(value: ReservedInstanceState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setUsagePrice(value: Float): Self = this.set("UsagePrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsagePrice: Self = this.set("UsagePrice", js.undefined)
+  }
+  
 }
 

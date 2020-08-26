@@ -12,7 +12,7 @@ Tiny currency string parser utility
 | Keywords           | money, currency, format, utility, finance, parse, unformat |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 23938 |
+| # downloads        | 23356 |
 | # stars            | 1 |
 
 ## Links

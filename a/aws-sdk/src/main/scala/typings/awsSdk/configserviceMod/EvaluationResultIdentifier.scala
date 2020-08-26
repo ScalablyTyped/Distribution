@@ -18,11 +18,30 @@ trait EvaluationResultIdentifier extends js.Object {
 
 object EvaluationResultIdentifier {
   @scala.inline
-  def apply(EvaluationResultQualifier: EvaluationResultQualifier = null, OrderingTimestamp: Date = null): EvaluationResultIdentifier = {
+  def apply(): EvaluationResultIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (EvaluationResultQualifier != null) __obj.updateDynamic("EvaluationResultQualifier")(EvaluationResultQualifier.asInstanceOf[js.Any])
-    if (OrderingTimestamp != null) __obj.updateDynamic("OrderingTimestamp")(OrderingTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResultIdentifier]
   }
+  @scala.inline
+  implicit class EvaluationResultIdentifierOps[Self <: EvaluationResultIdentifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvaluationResultQualifier(value: EvaluationResultQualifier): Self = this.set("EvaluationResultQualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationResultQualifier: Self = this.set("EvaluationResultQualifier", js.undefined)
+    @scala.inline
+    def setOrderingTimestamp(value: Date): Self = this.set("OrderingTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderingTimestamp: Self = this.set("OrderingTimestamp", js.undefined)
+  }
+  
 }
 

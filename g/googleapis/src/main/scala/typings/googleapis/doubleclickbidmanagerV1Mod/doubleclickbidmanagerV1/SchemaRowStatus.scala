@@ -37,22 +37,48 @@ trait SchemaRowStatus extends js.Object {
 
 object SchemaRowStatus {
   @scala.inline
-  def apply(
-    changed: js.UndefOr[Boolean] = js.undefined,
-    entityId: String = null,
-    entityName: String = null,
-    errors: js.Array[String] = null,
-    persisted: js.UndefOr[Boolean] = js.undefined,
-    rowNumber: js.UndefOr[Double] = js.undefined
-  ): SchemaRowStatus = {
+  def apply(): SchemaRowStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(changed)) __obj.updateDynamic("changed")(changed.get.asInstanceOf[js.Any])
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
-    if (entityName != null) __obj.updateDynamic("entityName")(entityName.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (!js.isUndefined(persisted)) __obj.updateDynamic("persisted")(persisted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowNumber)) __obj.updateDynamic("rowNumber")(rowNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRowStatus]
   }
+  @scala.inline
+  implicit class SchemaRowStatusOps[Self <: SchemaRowStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChanged(value: Boolean): Self = this.set("changed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChanged: Self = this.set("changed", js.undefined)
+    @scala.inline
+    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    @scala.inline
+    def setEntityName(value: String): Self = this.set("entityName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityName: Self = this.set("entityName", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: String*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: js.Array[String]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setPersisted(value: Boolean): Self = this.set("persisted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersisted: Self = this.set("persisted", js.undefined)
+    @scala.inline
+    def setRowNumber(value: Double): Self = this.set("rowNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowNumber: Self = this.set("rowNumber", js.undefined)
+  }
+  
 }
 

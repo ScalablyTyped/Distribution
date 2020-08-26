@@ -22,12 +22,34 @@ trait DocumentClassifierFilter extends js.Object {
 
 object DocumentClassifierFilter {
   @scala.inline
-  def apply(Status: ModelStatus = null, SubmitTimeAfter: Timestamp = null, SubmitTimeBefore: Timestamp = null): DocumentClassifierFilter = {
+  def apply(): DocumentClassifierFilter = {
     val __obj = js.Dynamic.literal()
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubmitTimeAfter != null) __obj.updateDynamic("SubmitTimeAfter")(SubmitTimeAfter.asInstanceOf[js.Any])
-    if (SubmitTimeBefore != null) __obj.updateDynamic("SubmitTimeBefore")(SubmitTimeBefore.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentClassifierFilter]
   }
+  @scala.inline
+  implicit class DocumentClassifierFilterOps[Self <: DocumentClassifierFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: ModelStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubmitTimeAfter(value: Timestamp): Self = this.set("SubmitTimeAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitTimeAfter: Self = this.set("SubmitTimeAfter", js.undefined)
+    @scala.inline
+    def setSubmitTimeBefore(value: Timestamp): Self = this.set("SubmitTimeBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitTimeBefore: Self = this.set("SubmitTimeBefore", js.undefined)
+  }
+  
 }
 

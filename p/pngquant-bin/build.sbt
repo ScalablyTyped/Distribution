@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "pngquant-bin"
-version := "4.0-dt-20180420Z-9bcc81"
-scalaVersion := "2.13.2"
+version := "4.0-dt-20180420Z-8099ae"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

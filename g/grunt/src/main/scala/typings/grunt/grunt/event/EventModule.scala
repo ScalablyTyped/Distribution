@@ -7,55 +7,56 @@ import scala.scalajs.js.annotation._
 /**
   * {@link https://github.com/hij1nx/EventEmitter2}
   */
+@js.native
 trait EventModule extends js.Object {
   /**
     * Adds a listener to the end of the listeners array for the specified event.
     */
-  def addListener(event: String, listener: js.Function): EventModule
+  def addListener(event: String, listener: js.Function): EventModule = js.native
   /**
     * Execute each of the listeners that may be listening for the specified event name
     * in order with the list of arguments.
     */
-  def emit(event: String, args: js.Any*): js.Any
+  def emit(event: String, args: js.Any*): js.Any = js.native
   /**
     * Returns an array of listeners for the specified event.
     * This array can be manipulated, e.g. to remove listeners.
     */
-  def listeners(event: String): js.Array[js.Function]
+  def listeners(event: String): js.Array[js.Function] = js.native
   /**
     * Returns an array of listeners that are listening for any event that is specified.
     * This array can be manipulated, e.g. to remove listeners.
     */
-  def listenersAny(): js.Array[js.Function]
+  def listenersAny(): js.Array[js.Function] = js.native
   /**
     * Adds a listener that will execute n times for the event before being removed.
     * The listener is invoked only the first time the event is fired, after which it is removed.
     */
-  def many(event: String, timesToListen: Double, listener: js.Function): EventModule
-  def off(event: String, listener: js.Function): EventModule
+  def many(event: String, timesToListen: Double, listener: js.Function): EventModule = js.native
+  def off(event: String, listener: js.Function): EventModule = js.native
   /**
     * Removes the listener that will be fired when any event is emitted.
     */
-  def offAny(listener: js.Function): EventModule
-  def on(event: String, listener: js.Function): EventModule
+  def offAny(listener: js.Function): EventModule = js.native
+  def on(event: String, listener: js.Function): EventModule = js.native
   /**
     * Adds a listener that will be fired when any event is emitted.
     */
-  def onAny(listener: js.Function): EventModule
+  def onAny(listener: js.Function): EventModule = js.native
   /**
     * Adds a one time listener for the event.
     * The listener is invoked only the first time the event is fired, after which it is removed.
     */
-  def once(event: String, listener: js.Function): EventModule
+  def once(event: String, listener: js.Function): EventModule = js.native
   /**
     * Removes all listeners, or those of the specified event.
     */
-  def removeAllListeners(event: String): EventModule
+  def removeAllListeners(event: String): EventModule = js.native
   /**
     * Remove a listener from the listener array for the specified event.
     * Caution: changes array indices in the listener array behind the listener.
     */
-  def removeListener(event: String, listener: js.Function): EventModule
+  def removeListener(event: String, listener: js.Function): EventModule = js.native
   /**
     * By default EventEmitters will print a warning if more than 10 listeners are added to it.
     * This is a useful default which helps finding memory leaks. Obviously not all Emitters
@@ -63,7 +64,7 @@ trait EventModule extends js.Object {
     *
     * Set to zero for unlimited.
     */
-  def setMaxListener(n: Double): Unit
+  def setMaxListener(n: Double): Unit = js.native
 }
 
 object EventModule {
@@ -86,5 +87,44 @@ object EventModule {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), emit = js.Any.fromFunction2(emit), listeners = js.Any.fromFunction1(listeners), listenersAny = js.Any.fromFunction0(listenersAny), many = js.Any.fromFunction3(many), off = js.Any.fromFunction2(off), offAny = js.Any.fromFunction1(offAny), on = js.Any.fromFunction2(on), onAny = js.Any.fromFunction1(onAny), once = js.Any.fromFunction2(once), removeAllListeners = js.Any.fromFunction1(removeAllListeners), removeListener = js.Any.fromFunction2(removeListener), setMaxListener = js.Any.fromFunction1(setMaxListener))
     __obj.asInstanceOf[EventModule]
   }
+  @scala.inline
+  implicit class EventModuleOps[Self <: EventModule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddListener(value: (String, js.Function) => EventModule): Self = this.set("addListener", js.Any.fromFunction2(value))
+    @scala.inline
+    def setEmit(value: (String, /* repeated */ js.Any) => js.Any): Self = this.set("emit", js.Any.fromFunction2(value))
+    @scala.inline
+    def setListeners(value: String => js.Array[js.Function]): Self = this.set("listeners", js.Any.fromFunction1(value))
+    @scala.inline
+    def setListenersAny(value: () => js.Array[js.Function]): Self = this.set("listenersAny", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMany(value: (String, Double, js.Function) => EventModule): Self = this.set("many", js.Any.fromFunction3(value))
+    @scala.inline
+    def setOff(value: (String, js.Function) => EventModule): Self = this.set("off", js.Any.fromFunction2(value))
+    @scala.inline
+    def setOffAny(value: js.Function => EventModule): Self = this.set("offAny", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOn(value: (String, js.Function) => EventModule): Self = this.set("on", js.Any.fromFunction2(value))
+    @scala.inline
+    def setOnAny(value: js.Function => EventModule): Self = this.set("onAny", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOnce(value: (String, js.Function) => EventModule): Self = this.set("once", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRemoveAllListeners(value: String => EventModule): Self = this.set("removeAllListeners", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveListener(value: (String, js.Function) => EventModule): Self = this.set("removeListener", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetMaxListener(value: Double => Unit): Self = this.set("setMaxListener", js.Any.fromFunction1(value))
+  }
+  
 }
 

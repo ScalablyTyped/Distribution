@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "express-promise-router" : "3.0.3"
+      "express-promise-router" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "express-promise-router" : "3.0.3"
+      "express-promise-router" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

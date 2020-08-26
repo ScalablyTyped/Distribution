@@ -12,7 +12,7 @@ Wrap Node-callback functions to return Promises.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 145 |
-| # downloads        | 1672042 |
+| # downloads        | 1689933 |
 | # stars            | 14 |
 
 ## Links

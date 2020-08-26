@@ -4,27 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SimpleBindingData
   extends BaseBindingData
      with BindingData {
-  var expressions: js.Array[ExpressionData]
+  var expressions: js.Array[ExpressionData] = js.native
 }
 
 object SimpleBindingData {
   @scala.inline
-  def apply(
-    expressions: js.Array[ExpressionData],
-    evaluate: /* scope */ js.Any => _ = null,
-    redundantAttribute: String = null,
-    selector: String = null,
-    `type`: BindingType = null
-  ): SimpleBindingData = {
+  def apply(expressions: js.Array[ExpressionData]): SimpleBindingData = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
-    if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1(evaluate))
-    if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleBindingData]
   }
+  @scala.inline
+  implicit class SimpleBindingDataOps[Self <: SimpleBindingData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpressionsVarargs(value: ExpressionData*): Self = this.set("expressions", js.Array(value :_*))
+    @scala.inline
+    def setExpressions(value: js.Array[ExpressionData]): Self = this.set("expressions", value.asInstanceOf[js.Any])
+  }
+  
 }
 

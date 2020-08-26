@@ -13,7 +13,7 @@ trait Legend extends Widget_ {
     */
   var activeLayerInfos: Collection[ActiveLayerInfo] = js.native
   /**
-    * Indicates whether to show the [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) layers in the Legend.
+    * Indicates whether to show the [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) layers in the Legend. If you set this property to `true` and specify [layerInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#layerInfos), the basemap layers you want included in the legend must also be specified in `layerInfos`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#basemapLegendVisible)
     *
@@ -27,7 +27,7 @@ trait Legend extends Widget_ {
     */
   var iconClass: String = js.native
   /**
-    * Specifies a subset of the layers to display in the legend. If this property is not set, all layers in the map will display in the legend. Objects in this array are defined with the properties listed below.
+    * Specifies a subset of the layers to display in the legend. This includes any [basemap layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#basemapLegendVisible) you want to be visible in the legend. If this property is not set, all layers in the map will display in the legend, including basemap layers if [basemapLegendVisible](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#basemapLegendVisible) is `true`. Objects in this array are defined with the properties listed below.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#layerInfos)
     */

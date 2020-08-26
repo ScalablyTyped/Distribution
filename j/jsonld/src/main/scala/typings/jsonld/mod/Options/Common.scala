@@ -1,30 +1,45 @@
 package typings.jsonld.mod.Options
 
 import typings.jsonld.jsonldSpecMod.Context
-import typings.jsonld.jsonldSpecMod.RemoteDocument
-import typings.jsonld.jsonldSpecMod.Url
-import typings.std.Error
+import typings.jsonld.jsonldSpecMod.JsonLdObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Common extends DocLoader {
-  var base: js.UndefOr[String] = js.undefined
-  var expandContext: js.UndefOr[Context] = js.undefined
+  var base: js.UndefOr[String] = js.native
+  var expandContext: js.UndefOr[Context] = js.native
 }
 
 object Common {
   @scala.inline
-  def apply(
-    base: String = null,
-    documentLoader: (/* url */ Url, /* callback */ js.Function2[/* err */ Error, /* remoteDoc */ RemoteDocument, Unit]) => js.Promise[RemoteDocument] = null,
-    expandContext: Context = null
-  ): Common = {
+  def apply(): Common = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (documentLoader != null) __obj.updateDynamic("documentLoader")(js.Any.fromFunction2(documentLoader))
-    if (expandContext != null) __obj.updateDynamic("expandContext")(expandContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Common]
   }
+  @scala.inline
+  implicit class CommonOps[Self <: Common] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setExpandContextVarargs(value: JsonLdObj*): Self = this.set("expandContext", js.Array(value :_*))
+    @scala.inline
+    def setExpandContext(value: Context): Self = this.set("expandContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandContext: Self = this.set("expandContext", js.undefined)
+  }
+  
 }
 

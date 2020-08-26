@@ -2,8 +2,8 @@ package typings.pulumiAws
 
 import typings.pulumiAws.memberAccountAssociationMod.MemberAccountAssociationArgs
 import typings.pulumiAws.memberAccountAssociationMod.MemberAccountAssociationState
-import typings.pulumiAws.s3BucketAssociationMod.S3BucketAssociationArgs
-import typings.pulumiAws.s3BucketAssociationMod.S3BucketAssociationState
+import typings.pulumiAws.s3bucketAssociationMod.S3BucketAssociationArgs
+import typings.pulumiAws.s3bucketAssociationMod.S3BucketAssociationState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -30,7 +30,7 @@ object macieMod extends js.Object {
   
   @js.native
   class S3BucketAssociation protected ()
-    extends typings.pulumiAws.s3BucketAssociationMod.S3BucketAssociation {
+    extends typings.pulumiAws.s3bucketAssociationMod.S3BucketAssociation {
     /**
       * Create a S3BucketAssociation resource with the given unique name, arguments, and options.
       *
@@ -52,8 +52,10 @@ object macieMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.memberAccountAssociationMod.MemberAccountAssociation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.memberAccountAssociationMod.MemberAccountAssociation = js.native
     def get(name: String, id: Input[ID], state: MemberAccountAssociationState): typings.pulumiAws.memberAccountAssociationMod.MemberAccountAssociation = js.native
     def get(name: String, id: Input[ID], state: MemberAccountAssociationState, opts: CustomResourceOptions): typings.pulumiAws.memberAccountAssociationMod.MemberAccountAssociation = js.native
     /**
@@ -73,15 +75,17 @@ object macieMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.s3BucketAssociationMod.S3BucketAssociation = js.native
-    def get(name: String, id: Input[ID], state: S3BucketAssociationState): typings.pulumiAws.s3BucketAssociationMod.S3BucketAssociation = js.native
-    def get(name: String, id: Input[ID], state: S3BucketAssociationState, opts: CustomResourceOptions): typings.pulumiAws.s3BucketAssociationMod.S3BucketAssociation = js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.s3bucketAssociationMod.S3BucketAssociation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.s3bucketAssociationMod.S3BucketAssociation = js.native
+    def get(name: String, id: Input[ID], state: S3BucketAssociationState): typings.pulumiAws.s3bucketAssociationMod.S3BucketAssociation = js.native
+    def get(name: String, id: Input[ID], state: S3BucketAssociationState, opts: CustomResourceOptions): typings.pulumiAws.s3bucketAssociationMod.S3BucketAssociation = js.native
     /**
       * Returns true if the given object is an instance of S3BucketAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/s3BucketAssociation.S3BucketAssociation */ Boolean = js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/s3bucketAssociation.S3BucketAssociation */ Boolean = js.native
   }
   
 }

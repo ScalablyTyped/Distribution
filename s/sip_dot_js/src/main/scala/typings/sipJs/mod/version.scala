@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "version")
 @js.native
 object version
-  extends TopLevel[/* "0.15.11" */ String]
+  extends TopLevel[/* "0.17.1" */ String]
 

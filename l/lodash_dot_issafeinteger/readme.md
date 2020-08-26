@@ -12,7 +12,7 @@ The lodash method `_.isSafeInteger` exported as a module.
 | Keywords           | lodash-modularized, issafeinteger |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 305174 |
+| # downloads        | 311028 |
 | # stars            | 0 |
 
 ## Links

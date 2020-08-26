@@ -10,9 +10,9 @@ A jQuery plugin for selecting a country
 | ------------------ | :-------------: |
 | Full name          | country-select-js |
 | Keywords           | country, international, jQuery |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 13526 |
+| # downloads        | 13717 |
 | # stars            | 1 |
 
 ## Links

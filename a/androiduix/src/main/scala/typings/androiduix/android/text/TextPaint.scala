@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.text.TextPaint")
 @js.native
-class TextPaint () extends Paint {
+trait TextPaint extends Paint {
   var baselineShift: Double = js.native
   var bgColor: Double = js.native
   var linkColor: Double = js.native

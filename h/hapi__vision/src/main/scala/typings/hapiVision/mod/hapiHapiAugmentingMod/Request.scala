@@ -36,6 +36,7 @@ trait Request extends js.Object {
     * @see {@link https://github.com/hapijs/vision/blob/master/API.md#requestrendertemplate-context-options-callback}
     */
   def render(template: String): js.Promise[String] = js.native
+  def render(template: String, context: js.UndefOr[scala.Nothing], options: ServerViewsConfiguration): js.Promise[String] = js.native
   def render(template: String, context: js.Any): js.Promise[String] = js.native
   def render(template: String, context: js.Any, options: ServerViewsConfiguration): js.Promise[String] = js.native
 }

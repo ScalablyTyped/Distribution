@@ -5,240 +5,403 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait eventObject extends js.Object {
-  var activeEnterModeChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var activeFilterChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var afterCommandExec: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var afterInsertHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var afterPaste: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var afterPasteFromWord: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var afterSetData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var afterUndoImage: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var ariaEditorHelpLabel: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var ariaWidget: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var autogrow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var beforeCommandExec: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var beforeDestroy: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var beforeGetData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var beforeModeUnload: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var beforeSetMode: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var beforeUndoImage: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var blur: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var change: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var configLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var contentDirChanged: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var contentDom: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var contentDomInvalidated: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var contentDomUnload: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var customConfigLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var dataFiltered: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var dataReady: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var destroy: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var dialogHide: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var dialogShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var dirChanged: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var doubleclick: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var dragend: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var dragstart: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var drop: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var elementsPathUpdate: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var fileUploadRequest: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var fileUploadResponse: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var floatingSpaceLayout: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var focus: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var getData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var getSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var insertElement: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var insertHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var insertText: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var instanceReady: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var key: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var langLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var loadSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var loaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var lockSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var maximize: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var menuShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var mode: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var notificationHide: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var notificationShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var notificationUpdate: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var paste: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var pasteFromWord: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var pluginsLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var readOnly: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var removeFormatCleanup: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var required: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var resize: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var save: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var saveSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var selectionChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var setData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var stylesSet: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var template: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var toDataFormat: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var toHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var unlockSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var updateSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var widgetDefinition: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
+  var activeEnterModeChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var activeFilterChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var afterCommandExec: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var afterInsertHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var afterPaste: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var afterPasteFromWord: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var afterSetData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var afterUndoImage: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var ariaEditorHelpLabel: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var ariaWidget: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var autogrow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var beforeCommandExec: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var beforeDestroy: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var beforeGetData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var beforeModeUnload: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var beforeSetMode: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var beforeUndoImage: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var blur: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var configLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var contentDirChanged: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var contentDom: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var contentDomInvalidated: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var contentDomUnload: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var customConfigLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var dataFiltered: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var dataReady: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var destroy: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var dialogHide: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var dialogShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var dirChanged: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var doubleclick: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var drop: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var elementsPathUpdate: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var fileUploadRequest: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var fileUploadResponse: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var floatingSpaceLayout: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var focus: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var getData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var getSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var insertElement: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var insertHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var insertText: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var instanceReady: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var key: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var langLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var loadSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var loaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var lockSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var maximize: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var menuShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var mode: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var notificationHide: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var notificationShow: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var notificationUpdate: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var paste: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var pasteFromWord: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var pluginsLoaded: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var readOnly: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var removeFormatCleanup: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var required: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var resize: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var save: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var saveSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var selectionChange: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var setData: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var stylesSet: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var template: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var toDataFormat: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var toHtml: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var unlockSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var updateSnapshot: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var widgetDefinition: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
 }
 
 object eventObject {
   @scala.inline
-  def apply(
-    activeEnterModeChange: /* evt */ eventInfo => Unit = null,
-    activeFilterChange: /* evt */ eventInfo => Unit = null,
-    afterCommandExec: /* evt */ eventInfo => Unit = null,
-    afterInsertHtml: /* evt */ eventInfo => Unit = null,
-    afterPaste: /* evt */ eventInfo => Unit = null,
-    afterPasteFromWord: /* evt */ eventInfo => Unit = null,
-    afterSetData: /* evt */ eventInfo => Unit = null,
-    afterUndoImage: /* evt */ eventInfo => Unit = null,
-    ariaEditorHelpLabel: /* evt */ eventInfo => Unit = null,
-    ariaWidget: /* evt */ eventInfo => Unit = null,
-    autogrow: /* evt */ eventInfo => Unit = null,
-    beforeCommandExec: /* evt */ eventInfo => Unit = null,
-    beforeDestroy: /* evt */ eventInfo => Unit = null,
-    beforeGetData: /* evt */ eventInfo => Unit = null,
-    beforeModeUnload: /* evt */ eventInfo => Unit = null,
-    beforeSetMode: /* evt */ eventInfo => Unit = null,
-    beforeUndoImage: /* evt */ eventInfo => Unit = null,
-    blur: /* evt */ eventInfo => Unit = null,
-    change: /* evt */ eventInfo => Unit = null,
-    configLoaded: /* evt */ eventInfo => Unit = null,
-    contentDirChanged: /* evt */ eventInfo => Unit = null,
-    contentDom: /* evt */ eventInfo => Unit = null,
-    contentDomInvalidated: /* evt */ eventInfo => Unit = null,
-    contentDomUnload: /* evt */ eventInfo => Unit = null,
-    customConfigLoaded: /* evt */ eventInfo => Unit = null,
-    dataFiltered: /* evt */ eventInfo => Unit = null,
-    dataReady: /* evt */ eventInfo => Unit = null,
-    destroy: /* evt */ eventInfo => Unit = null,
-    dialogHide: /* evt */ eventInfo => Unit = null,
-    dialogShow: /* evt */ eventInfo => Unit = null,
-    dirChanged: /* evt */ eventInfo => Unit = null,
-    doubleclick: /* evt */ eventInfo => Unit = null,
-    dragend: /* evt */ eventInfo => Unit = null,
-    dragstart: /* evt */ eventInfo => Unit = null,
-    drop: /* evt */ eventInfo => Unit = null,
-    elementsPathUpdate: /* evt */ eventInfo => Unit = null,
-    fileUploadRequest: /* evt */ eventInfo => Unit = null,
-    fileUploadResponse: /* evt */ eventInfo => Unit = null,
-    floatingSpaceLayout: /* evt */ eventInfo => Unit = null,
-    focus: /* evt */ eventInfo => Unit = null,
-    getData: /* evt */ eventInfo => Unit = null,
-    getSnapshot: /* evt */ eventInfo => Unit = null,
-    insertElement: /* evt */ eventInfo => Unit = null,
-    insertHtml: /* evt */ eventInfo => Unit = null,
-    insertText: /* evt */ eventInfo => Unit = null,
-    instanceReady: /* evt */ eventInfo => Unit = null,
-    key: /* evt */ eventInfo => Unit = null,
-    langLoaded: /* evt */ eventInfo => Unit = null,
-    loadSnapshot: /* evt */ eventInfo => Unit = null,
-    loaded: /* evt */ eventInfo => Unit = null,
-    lockSnapshot: /* evt */ eventInfo => Unit = null,
-    maximize: /* evt */ eventInfo => Unit = null,
-    menuShow: /* evt */ eventInfo => Unit = null,
-    mode: /* evt */ eventInfo => Unit = null,
-    notificationHide: /* evt */ eventInfo => Unit = null,
-    notificationShow: /* evt */ eventInfo => Unit = null,
-    notificationUpdate: /* evt */ eventInfo => Unit = null,
-    paste: /* evt */ eventInfo => Unit = null,
-    pasteFromWord: /* evt */ eventInfo => Unit = null,
-    pluginsLoaded: /* evt */ eventInfo => Unit = null,
-    readOnly: /* evt */ eventInfo => Unit = null,
-    removeFormatCleanup: /* evt */ eventInfo => Unit = null,
-    required: /* evt */ eventInfo => Unit = null,
-    resize: /* evt */ eventInfo => Unit = null,
-    save: /* evt */ eventInfo => Unit = null,
-    saveSnapshot: /* evt */ eventInfo => Unit = null,
-    selectionChange: /* evt */ eventInfo => Unit = null,
-    setData: /* evt */ eventInfo => Unit = null,
-    stylesSet: /* evt */ eventInfo => Unit = null,
-    template: /* evt */ eventInfo => Unit = null,
-    toDataFormat: /* evt */ eventInfo => Unit = null,
-    toHtml: /* evt */ eventInfo => Unit = null,
-    unlockSnapshot: /* evt */ eventInfo => Unit = null,
-    updateSnapshot: /* evt */ eventInfo => Unit = null,
-    widgetDefinition: /* evt */ eventInfo => Unit = null
-  ): eventObject = {
+  def apply(): eventObject = {
     val __obj = js.Dynamic.literal()
-    if (activeEnterModeChange != null) __obj.updateDynamic("activeEnterModeChange")(js.Any.fromFunction1(activeEnterModeChange))
-    if (activeFilterChange != null) __obj.updateDynamic("activeFilterChange")(js.Any.fromFunction1(activeFilterChange))
-    if (afterCommandExec != null) __obj.updateDynamic("afterCommandExec")(js.Any.fromFunction1(afterCommandExec))
-    if (afterInsertHtml != null) __obj.updateDynamic("afterInsertHtml")(js.Any.fromFunction1(afterInsertHtml))
-    if (afterPaste != null) __obj.updateDynamic("afterPaste")(js.Any.fromFunction1(afterPaste))
-    if (afterPasteFromWord != null) __obj.updateDynamic("afterPasteFromWord")(js.Any.fromFunction1(afterPasteFromWord))
-    if (afterSetData != null) __obj.updateDynamic("afterSetData")(js.Any.fromFunction1(afterSetData))
-    if (afterUndoImage != null) __obj.updateDynamic("afterUndoImage")(js.Any.fromFunction1(afterUndoImage))
-    if (ariaEditorHelpLabel != null) __obj.updateDynamic("ariaEditorHelpLabel")(js.Any.fromFunction1(ariaEditorHelpLabel))
-    if (ariaWidget != null) __obj.updateDynamic("ariaWidget")(js.Any.fromFunction1(ariaWidget))
-    if (autogrow != null) __obj.updateDynamic("autogrow")(js.Any.fromFunction1(autogrow))
-    if (beforeCommandExec != null) __obj.updateDynamic("beforeCommandExec")(js.Any.fromFunction1(beforeCommandExec))
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction1(beforeDestroy))
-    if (beforeGetData != null) __obj.updateDynamic("beforeGetData")(js.Any.fromFunction1(beforeGetData))
-    if (beforeModeUnload != null) __obj.updateDynamic("beforeModeUnload")(js.Any.fromFunction1(beforeModeUnload))
-    if (beforeSetMode != null) __obj.updateDynamic("beforeSetMode")(js.Any.fromFunction1(beforeSetMode))
-    if (beforeUndoImage != null) __obj.updateDynamic("beforeUndoImage")(js.Any.fromFunction1(beforeUndoImage))
-    if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction1(blur))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (configLoaded != null) __obj.updateDynamic("configLoaded")(js.Any.fromFunction1(configLoaded))
-    if (contentDirChanged != null) __obj.updateDynamic("contentDirChanged")(js.Any.fromFunction1(contentDirChanged))
-    if (contentDom != null) __obj.updateDynamic("contentDom")(js.Any.fromFunction1(contentDom))
-    if (contentDomInvalidated != null) __obj.updateDynamic("contentDomInvalidated")(js.Any.fromFunction1(contentDomInvalidated))
-    if (contentDomUnload != null) __obj.updateDynamic("contentDomUnload")(js.Any.fromFunction1(contentDomUnload))
-    if (customConfigLoaded != null) __obj.updateDynamic("customConfigLoaded")(js.Any.fromFunction1(customConfigLoaded))
-    if (dataFiltered != null) __obj.updateDynamic("dataFiltered")(js.Any.fromFunction1(dataFiltered))
-    if (dataReady != null) __obj.updateDynamic("dataReady")(js.Any.fromFunction1(dataReady))
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (dialogHide != null) __obj.updateDynamic("dialogHide")(js.Any.fromFunction1(dialogHide))
-    if (dialogShow != null) __obj.updateDynamic("dialogShow")(js.Any.fromFunction1(dialogShow))
-    if (dirChanged != null) __obj.updateDynamic("dirChanged")(js.Any.fromFunction1(dirChanged))
-    if (doubleclick != null) __obj.updateDynamic("doubleclick")(js.Any.fromFunction1(doubleclick))
-    if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
-    if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1(dragstart))
-    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
-    if (elementsPathUpdate != null) __obj.updateDynamic("elementsPathUpdate")(js.Any.fromFunction1(elementsPathUpdate))
-    if (fileUploadRequest != null) __obj.updateDynamic("fileUploadRequest")(js.Any.fromFunction1(fileUploadRequest))
-    if (fileUploadResponse != null) __obj.updateDynamic("fileUploadResponse")(js.Any.fromFunction1(fileUploadResponse))
-    if (floatingSpaceLayout != null) __obj.updateDynamic("floatingSpaceLayout")(js.Any.fromFunction1(floatingSpaceLayout))
-    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction1(focus))
-    if (getData != null) __obj.updateDynamic("getData")(js.Any.fromFunction1(getData))
-    if (getSnapshot != null) __obj.updateDynamic("getSnapshot")(js.Any.fromFunction1(getSnapshot))
-    if (insertElement != null) __obj.updateDynamic("insertElement")(js.Any.fromFunction1(insertElement))
-    if (insertHtml != null) __obj.updateDynamic("insertHtml")(js.Any.fromFunction1(insertHtml))
-    if (insertText != null) __obj.updateDynamic("insertText")(js.Any.fromFunction1(insertText))
-    if (instanceReady != null) __obj.updateDynamic("instanceReady")(js.Any.fromFunction1(instanceReady))
-    if (key != null) __obj.updateDynamic("key")(js.Any.fromFunction1(key))
-    if (langLoaded != null) __obj.updateDynamic("langLoaded")(js.Any.fromFunction1(langLoaded))
-    if (loadSnapshot != null) __obj.updateDynamic("loadSnapshot")(js.Any.fromFunction1(loadSnapshot))
-    if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
-    if (lockSnapshot != null) __obj.updateDynamic("lockSnapshot")(js.Any.fromFunction1(lockSnapshot))
-    if (maximize != null) __obj.updateDynamic("maximize")(js.Any.fromFunction1(maximize))
-    if (menuShow != null) __obj.updateDynamic("menuShow")(js.Any.fromFunction1(menuShow))
-    if (mode != null) __obj.updateDynamic("mode")(js.Any.fromFunction1(mode))
-    if (notificationHide != null) __obj.updateDynamic("notificationHide")(js.Any.fromFunction1(notificationHide))
-    if (notificationShow != null) __obj.updateDynamic("notificationShow")(js.Any.fromFunction1(notificationShow))
-    if (notificationUpdate != null) __obj.updateDynamic("notificationUpdate")(js.Any.fromFunction1(notificationUpdate))
-    if (paste != null) __obj.updateDynamic("paste")(js.Any.fromFunction1(paste))
-    if (pasteFromWord != null) __obj.updateDynamic("pasteFromWord")(js.Any.fromFunction1(pasteFromWord))
-    if (pluginsLoaded != null) __obj.updateDynamic("pluginsLoaded")(js.Any.fromFunction1(pluginsLoaded))
-    if (readOnly != null) __obj.updateDynamic("readOnly")(js.Any.fromFunction1(readOnly))
-    if (removeFormatCleanup != null) __obj.updateDynamic("removeFormatCleanup")(js.Any.fromFunction1(removeFormatCleanup))
-    if (required != null) __obj.updateDynamic("required")(js.Any.fromFunction1(required))
-    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
-    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
-    if (saveSnapshot != null) __obj.updateDynamic("saveSnapshot")(js.Any.fromFunction1(saveSnapshot))
-    if (selectionChange != null) __obj.updateDynamic("selectionChange")(js.Any.fromFunction1(selectionChange))
-    if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction1(setData))
-    if (stylesSet != null) __obj.updateDynamic("stylesSet")(js.Any.fromFunction1(stylesSet))
-    if (template != null) __obj.updateDynamic("template")(js.Any.fromFunction1(template))
-    if (toDataFormat != null) __obj.updateDynamic("toDataFormat")(js.Any.fromFunction1(toDataFormat))
-    if (toHtml != null) __obj.updateDynamic("toHtml")(js.Any.fromFunction1(toHtml))
-    if (unlockSnapshot != null) __obj.updateDynamic("unlockSnapshot")(js.Any.fromFunction1(unlockSnapshot))
-    if (updateSnapshot != null) __obj.updateDynamic("updateSnapshot")(js.Any.fromFunction1(updateSnapshot))
-    if (widgetDefinition != null) __obj.updateDynamic("widgetDefinition")(js.Any.fromFunction1(widgetDefinition))
     __obj.asInstanceOf[eventObject]
   }
+  @scala.inline
+  implicit class eventObjectOps[Self <: eventObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveEnterModeChange(value: /* evt */ eventInfo => Unit): Self = this.set("activeEnterModeChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteActiveEnterModeChange: Self = this.set("activeEnterModeChange", js.undefined)
+    @scala.inline
+    def setActiveFilterChange(value: /* evt */ eventInfo => Unit): Self = this.set("activeFilterChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteActiveFilterChange: Self = this.set("activeFilterChange", js.undefined)
+    @scala.inline
+    def setAfterCommandExec(value: /* evt */ eventInfo => Unit): Self = this.set("afterCommandExec", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterCommandExec: Self = this.set("afterCommandExec", js.undefined)
+    @scala.inline
+    def setAfterInsertHtml(value: /* evt */ eventInfo => Unit): Self = this.set("afterInsertHtml", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterInsertHtml: Self = this.set("afterInsertHtml", js.undefined)
+    @scala.inline
+    def setAfterPaste(value: /* evt */ eventInfo => Unit): Self = this.set("afterPaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterPaste: Self = this.set("afterPaste", js.undefined)
+    @scala.inline
+    def setAfterPasteFromWord(value: /* evt */ eventInfo => Unit): Self = this.set("afterPasteFromWord", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterPasteFromWord: Self = this.set("afterPasteFromWord", js.undefined)
+    @scala.inline
+    def setAfterSetData(value: /* evt */ eventInfo => Unit): Self = this.set("afterSetData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterSetData: Self = this.set("afterSetData", js.undefined)
+    @scala.inline
+    def setAfterUndoImage(value: /* evt */ eventInfo => Unit): Self = this.set("afterUndoImage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterUndoImage: Self = this.set("afterUndoImage", js.undefined)
+    @scala.inline
+    def setAriaEditorHelpLabel(value: /* evt */ eventInfo => Unit): Self = this.set("ariaEditorHelpLabel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAriaEditorHelpLabel: Self = this.set("ariaEditorHelpLabel", js.undefined)
+    @scala.inline
+    def setAriaWidget(value: /* evt */ eventInfo => Unit): Self = this.set("ariaWidget", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAriaWidget: Self = this.set("ariaWidget", js.undefined)
+    @scala.inline
+    def setAutogrow(value: /* evt */ eventInfo => Unit): Self = this.set("autogrow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAutogrow: Self = this.set("autogrow", js.undefined)
+    @scala.inline
+    def setBeforeCommandExec(value: /* evt */ eventInfo => Unit): Self = this.set("beforeCommandExec", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeCommandExec: Self = this.set("beforeCommandExec", js.undefined)
+    @scala.inline
+    def setBeforeDestroy(value: /* evt */ eventInfo => Unit): Self = this.set("beforeDestroy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeDestroy: Self = this.set("beforeDestroy", js.undefined)
+    @scala.inline
+    def setBeforeGetData(value: /* evt */ eventInfo => Unit): Self = this.set("beforeGetData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeGetData: Self = this.set("beforeGetData", js.undefined)
+    @scala.inline
+    def setBeforeModeUnload(value: /* evt */ eventInfo => Unit): Self = this.set("beforeModeUnload", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeModeUnload: Self = this.set("beforeModeUnload", js.undefined)
+    @scala.inline
+    def setBeforeSetMode(value: /* evt */ eventInfo => Unit): Self = this.set("beforeSetMode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeSetMode: Self = this.set("beforeSetMode", js.undefined)
+    @scala.inline
+    def setBeforeUndoImage(value: /* evt */ eventInfo => Unit): Self = this.set("beforeUndoImage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeUndoImage: Self = this.set("beforeUndoImage", js.undefined)
+    @scala.inline
+    def setBlur(value: /* evt */ eventInfo => Unit): Self = this.set("blur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBlur: Self = this.set("blur", js.undefined)
+    @scala.inline
+    def setChange(value: /* evt */ eventInfo => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setConfigLoaded(value: /* evt */ eventInfo => Unit): Self = this.set("configLoaded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteConfigLoaded: Self = this.set("configLoaded", js.undefined)
+    @scala.inline
+    def setContentDirChanged(value: /* evt */ eventInfo => Unit): Self = this.set("contentDirChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteContentDirChanged: Self = this.set("contentDirChanged", js.undefined)
+    @scala.inline
+    def setContentDom(value: /* evt */ eventInfo => Unit): Self = this.set("contentDom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteContentDom: Self = this.set("contentDom", js.undefined)
+    @scala.inline
+    def setContentDomInvalidated(value: /* evt */ eventInfo => Unit): Self = this.set("contentDomInvalidated", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteContentDomInvalidated: Self = this.set("contentDomInvalidated", js.undefined)
+    @scala.inline
+    def setContentDomUnload(value: /* evt */ eventInfo => Unit): Self = this.set("contentDomUnload", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteContentDomUnload: Self = this.set("contentDomUnload", js.undefined)
+    @scala.inline
+    def setCustomConfigLoaded(value: /* evt */ eventInfo => Unit): Self = this.set("customConfigLoaded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomConfigLoaded: Self = this.set("customConfigLoaded", js.undefined)
+    @scala.inline
+    def setDataFiltered(value: /* evt */ eventInfo => Unit): Self = this.set("dataFiltered", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataFiltered: Self = this.set("dataFiltered", js.undefined)
+    @scala.inline
+    def setDataReady(value: /* evt */ eventInfo => Unit): Self = this.set("dataReady", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataReady: Self = this.set("dataReady", js.undefined)
+    @scala.inline
+    def setDestroy(value: /* evt */ eventInfo => Unit): Self = this.set("destroy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setDialogHide(value: /* evt */ eventInfo => Unit): Self = this.set("dialogHide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDialogHide: Self = this.set("dialogHide", js.undefined)
+    @scala.inline
+    def setDialogShow(value: /* evt */ eventInfo => Unit): Self = this.set("dialogShow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDialogShow: Self = this.set("dialogShow", js.undefined)
+    @scala.inline
+    def setDirChanged(value: /* evt */ eventInfo => Unit): Self = this.set("dirChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDirChanged: Self = this.set("dirChanged", js.undefined)
+    @scala.inline
+    def setDoubleclick(value: /* evt */ eventInfo => Unit): Self = this.set("doubleclick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDoubleclick: Self = this.set("doubleclick", js.undefined)
+    @scala.inline
+    def setDragend(value: /* evt */ eventInfo => Unit): Self = this.set("dragend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragend: Self = this.set("dragend", js.undefined)
+    @scala.inline
+    def setDragstart(value: /* evt */ eventInfo => Unit): Self = this.set("dragstart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragstart: Self = this.set("dragstart", js.undefined)
+    @scala.inline
+    def setDrop(value: /* evt */ eventInfo => Unit): Self = this.set("drop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDrop: Self = this.set("drop", js.undefined)
+    @scala.inline
+    def setElementsPathUpdate(value: /* evt */ eventInfo => Unit): Self = this.set("elementsPathUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteElementsPathUpdate: Self = this.set("elementsPathUpdate", js.undefined)
+    @scala.inline
+    def setFileUploadRequest(value: /* evt */ eventInfo => Unit): Self = this.set("fileUploadRequest", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFileUploadRequest: Self = this.set("fileUploadRequest", js.undefined)
+    @scala.inline
+    def setFileUploadResponse(value: /* evt */ eventInfo => Unit): Self = this.set("fileUploadResponse", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFileUploadResponse: Self = this.set("fileUploadResponse", js.undefined)
+    @scala.inline
+    def setFloatingSpaceLayout(value: /* evt */ eventInfo => Unit): Self = this.set("floatingSpaceLayout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFloatingSpaceLayout: Self = this.set("floatingSpaceLayout", js.undefined)
+    @scala.inline
+    def setFocus(value: /* evt */ eventInfo => Unit): Self = this.set("focus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setGetData(value: /* evt */ eventInfo => Unit): Self = this.set("getData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetData: Self = this.set("getData", js.undefined)
+    @scala.inline
+    def setGetSnapshot(value: /* evt */ eventInfo => Unit): Self = this.set("getSnapshot", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetSnapshot: Self = this.set("getSnapshot", js.undefined)
+    @scala.inline
+    def setInsertElement(value: /* evt */ eventInfo => Unit): Self = this.set("insertElement", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertElement: Self = this.set("insertElement", js.undefined)
+    @scala.inline
+    def setInsertHtml(value: /* evt */ eventInfo => Unit): Self = this.set("insertHtml", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertHtml: Self = this.set("insertHtml", js.undefined)
+    @scala.inline
+    def setInsertText(value: /* evt */ eventInfo => Unit): Self = this.set("insertText", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertText: Self = this.set("insertText", js.undefined)
+    @scala.inline
+    def setInstanceReady(value: /* evt */ eventInfo => Unit): Self = this.set("instanceReady", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInstanceReady: Self = this.set("instanceReady", js.undefined)
+    @scala.inline
+    def setKey(value: /* evt */ eventInfo => Unit): Self = this.set("key", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLangLoaded(value: /* evt */ eventInfo => Unit): Self = this.set("langLoaded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLangLoaded: Self = this.set("langLoaded", js.undefined)
+    @scala.inline
+    def setLoadSnapshot(value: /* evt */ eventInfo => Unit): Self = this.set("loadSnapshot", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLoadSnapshot: Self = this.set("loadSnapshot", js.undefined)
+    @scala.inline
+    def setLoaded(value: /* evt */ eventInfo => Unit): Self = this.set("loaded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLoaded: Self = this.set("loaded", js.undefined)
+    @scala.inline
+    def setLockSnapshot(value: /* evt */ eventInfo => Unit): Self = this.set("lockSnapshot", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLockSnapshot: Self = this.set("lockSnapshot", js.undefined)
+    @scala.inline
+    def setMaximize(value: /* evt */ eventInfo => Unit): Self = this.set("maximize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMaximize: Self = this.set("maximize", js.undefined)
+    @scala.inline
+    def setMenuShow(value: /* evt */ eventInfo => Unit): Self = this.set("menuShow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMenuShow: Self = this.set("menuShow", js.undefined)
+    @scala.inline
+    def setMode(value: /* evt */ eventInfo => Unit): Self = this.set("mode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setNotificationHide(value: /* evt */ eventInfo => Unit): Self = this.set("notificationHide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNotificationHide: Self = this.set("notificationHide", js.undefined)
+    @scala.inline
+    def setNotificationShow(value: /* evt */ eventInfo => Unit): Self = this.set("notificationShow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNotificationShow: Self = this.set("notificationShow", js.undefined)
+    @scala.inline
+    def setNotificationUpdate(value: /* evt */ eventInfo => Unit): Self = this.set("notificationUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNotificationUpdate: Self = this.set("notificationUpdate", js.undefined)
+    @scala.inline
+    def setPaste(value: /* evt */ eventInfo => Unit): Self = this.set("paste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePaste: Self = this.set("paste", js.undefined)
+    @scala.inline
+    def setPasteFromWord(value: /* evt */ eventInfo => Unit): Self = this.set("pasteFromWord", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePasteFromWord: Self = this.set("pasteFromWord", js.undefined)
+    @scala.inline
+    def setPluginsLoaded(value: /* evt */ eventInfo => Unit): Self = this.set("pluginsLoaded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePluginsLoaded: Self = this.set("pluginsLoaded", js.undefined)
+    @scala.inline
+    def setReadOnly(value: /* evt */ eventInfo => Unit): Self = this.set("readOnly", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRemoveFormatCleanup(value: /* evt */ eventInfo => Unit): Self = this.set("removeFormatCleanup", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemoveFormatCleanup: Self = this.set("removeFormatCleanup", js.undefined)
+    @scala.inline
+    def setRequired(value: /* evt */ eventInfo => Unit): Self = this.set("required", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setResize(value: /* evt */ eventInfo => Unit): Self = this.set("resize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteResize: Self = this.set("resize", js.undefined)
+    @scala.inline
+    def setSave(value: /* evt */ eventInfo => Unit): Self = this.set("save", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSave: Self = this.set("save", js.undefined)
+    @scala.inline
+    def setSaveSnapshot(value: /* evt */ eventInfo => Unit): Self = this.set("saveSnapshot", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSaveSnapshot: Self = this.set("saveSnapshot", js.undefined)
+    @scala.inline
+    def setSelectionChange(value: /* evt */ eventInfo => Unit): Self = this.set("selectionChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSelectionChange: Self = this.set("selectionChange", js.undefined)
+    @scala.inline
+    def setSetData(value: /* evt */ eventInfo => Unit): Self = this.set("setData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetData: Self = this.set("setData", js.undefined)
+    @scala.inline
+    def setStylesSet(value: /* evt */ eventInfo => Unit): Self = this.set("stylesSet", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStylesSet: Self = this.set("stylesSet", js.undefined)
+    @scala.inline
+    def setTemplate(value: /* evt */ eventInfo => Unit): Self = this.set("template", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setToDataFormat(value: /* evt */ eventInfo => Unit): Self = this.set("toDataFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteToDataFormat: Self = this.set("toDataFormat", js.undefined)
+    @scala.inline
+    def setToHtml(value: /* evt */ eventInfo => Unit): Self = this.set("toHtml", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteToHtml: Self = this.set("toHtml", js.undefined)
+    @scala.inline
+    def setUnlockSnapshot(value: /* evt */ eventInfo => Unit): Self = this.set("unlockSnapshot", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUnlockSnapshot: Self = this.set("unlockSnapshot", js.undefined)
+    @scala.inline
+    def setUpdateSnapshot(value: /* evt */ eventInfo => Unit): Self = this.set("updateSnapshot", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUpdateSnapshot: Self = this.set("updateSnapshot", js.undefined)
+    @scala.inline
+    def setWidgetDefinition(value: /* evt */ eventInfo => Unit): Self = this.set("widgetDefinition", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteWidgetDefinition: Self = this.set("widgetDefinition", js.undefined)
+  }
+  
 }
 

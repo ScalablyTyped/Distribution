@@ -26,18 +26,38 @@ trait DescribeFileSystemsRequest extends js.Object {
 
 object DescribeFileSystemsRequest {
   @scala.inline
-  def apply(
-    CreationToken: CreationToken = null,
-    FileSystemId: FileSystemId = null,
-    Marker: Marker = null,
-    MaxItems: js.UndefOr[MaxItems] = js.undefined
-  ): DescribeFileSystemsRequest = {
+  def apply(): DescribeFileSystemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (CreationToken != null) __obj.updateDynamic("CreationToken")(CreationToken.asInstanceOf[js.Any])
-    if (FileSystemId != null) __obj.updateDynamic("FileSystemId")(FileSystemId.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFileSystemsRequest]
   }
+  @scala.inline
+  implicit class DescribeFileSystemsRequestOps[Self <: DescribeFileSystemsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationToken(value: CreationToken): Self = this.set("CreationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationToken: Self = this.set("CreationToken", js.undefined)
+    @scala.inline
+    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemId: Self = this.set("FileSystemId", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxItems(value: MaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+  }
+  
 }
 

@@ -173,6 +173,7 @@ object Types extends js.Object {
     def parentArray(): DocumentArray[MongooseDocument] = js.native
     /** Removes the subdocument from its parent array. */
     def remove(): this.type = js.native
+    def remove(options: js.UndefOr[scala.Nothing], fn: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
     def remove(options: Noop): this.type = js.native
     def remove(options: Noop, fn: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
   }

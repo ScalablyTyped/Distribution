@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "leaflet_dot_pancontrol"
-version := "1.0-dt-20200515Z-e0b8e8"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-abc1fb"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20200515Z-230004",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20200630Z-3d9742",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20200515Z-7b0d2d",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20200720Z-d0797b",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

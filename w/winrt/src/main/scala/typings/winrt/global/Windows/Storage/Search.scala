@@ -1,18 +1,8 @@
 package typings.winrt.global.Windows.Storage
 
 import typings.winrt.Windows.Foundation.Collections.IIterable
-import typings.winrt.Windows.Foundation.Collections.IIterator
-import typings.winrt.Windows.Foundation.Collections.IVector
-import typings.winrt.Windows.Foundation.IAsyncOperation
-import typings.winrt.Windows.Storage.FileProperties.PropertyPrefetchOptions
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode
-import typings.winrt.Windows.Storage.FileProperties.ThumbnailOptions
 import typings.winrt.Windows.Storage.Search.CommonFileQuery
 import typings.winrt.Windows.Storage.Search.CommonFolderQuery
-import typings.winrt.Windows.Storage.Search.DateStackOption
-import typings.winrt.Windows.Storage.Search.FolderDepth
-import typings.winrt.Windows.Storage.Search.IndexerOption
-import typings.winrt.Windows.Storage.Search.SortEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,97 +15,23 @@ object Search extends js.Object {
     extends typings.winrt.Windows.Storage.Search.QueryOptions {
     def this(query: CommonFolderQuery) = this()
     def this(query: CommonFileQuery, fileTypeFilter: IIterable[String]) = this()
-    /* CompleteClass */
-    override var applicationSearchFilter: String = js.native
-    /* CompleteClass */
-    override var dateStackOption: DateStackOption = js.native
-    /* CompleteClass */
-    override var fileTypeFilter: IVector[String] = js.native
-    /* CompleteClass */
-    override var folderDepth: FolderDepth = js.native
-    /* CompleteClass */
-    override var groupPropertyName: String = js.native
-    /* CompleteClass */
-    override var indexerOption: IndexerOption = js.native
-    /* CompleteClass */
-    override var language: String = js.native
-    /* CompleteClass */
-    override var sortOrder: IVector[SortEntry] = js.native
-    /* CompleteClass */
-    override var userSearchFilter: String = js.native
-    /* CompleteClass */
-    override def loadFromString(value: String): Unit = js.native
-    /* CompleteClass */
-    override def saveToString(): String = js.native
-    /* CompleteClass */
-    override def setPropertyPrefetch(options: PropertyPrefetchOptions, propertiesToRetrieve: IIterable[String]): Unit = js.native
-    /* CompleteClass */
-    override def setThumbnailPrefetch(mode: ThumbnailMode, requestedSize: Double, options: ThumbnailOptions): Unit = js.native
   }
   
   @js.native
   class SortEntryVector ()
-    extends typings.winrt.Windows.Storage.Search.SortEntryVector {
-    /* CompleteClass */
-    override def first(): IIterator[SortEntry] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Search.SortEntryVector
   
   @js.native
   class StorageFileQueryResult ()
-    extends typings.winrt.Windows.Storage.Search.StorageFileQueryResult {
-    /* CompleteClass */
-    override var folder: typings.winrt.Windows.Storage.StorageFolder = js.native
-    /* CompleteClass */
-    override var oncontentschanged: js.Any = js.native
-    /* CompleteClass */
-    override var onoptionschanged: js.Any = js.native
-    /* CompleteClass */
-    override def applyNewQueryOptions(newQueryOptions: typings.winrt.Windows.Storage.Search.QueryOptions): Unit = js.native
-    /* CompleteClass */
-    override def findStartIndexAsync(value: js.Any): IAsyncOperation[Double] = js.native
-    /* CompleteClass */
-    override def getCurrentQueryOptions(): typings.winrt.Windows.Storage.Search.QueryOptions = js.native
-    /* CompleteClass */
-    override def getItemCountAsync(): IAsyncOperation[Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Search.StorageFileQueryResult
   
   @js.native
   class StorageFolderQueryResult ()
-    extends typings.winrt.Windows.Storage.Search.StorageFolderQueryResult {
-    /* CompleteClass */
-    override var folder: typings.winrt.Windows.Storage.StorageFolder = js.native
-    /* CompleteClass */
-    override var oncontentschanged: js.Any = js.native
-    /* CompleteClass */
-    override var onoptionschanged: js.Any = js.native
-    /* CompleteClass */
-    override def applyNewQueryOptions(newQueryOptions: typings.winrt.Windows.Storage.Search.QueryOptions): Unit = js.native
-    /* CompleteClass */
-    override def findStartIndexAsync(value: js.Any): IAsyncOperation[Double] = js.native
-    /* CompleteClass */
-    override def getCurrentQueryOptions(): typings.winrt.Windows.Storage.Search.QueryOptions = js.native
-    /* CompleteClass */
-    override def getItemCountAsync(): IAsyncOperation[Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Search.StorageFolderQueryResult
   
   @js.native
   class StorageItemQueryResult ()
-    extends typings.winrt.Windows.Storage.Search.StorageItemQueryResult {
-    /* CompleteClass */
-    override var folder: typings.winrt.Windows.Storage.StorageFolder = js.native
-    /* CompleteClass */
-    override var oncontentschanged: js.Any = js.native
-    /* CompleteClass */
-    override var onoptionschanged: js.Any = js.native
-    /* CompleteClass */
-    override def applyNewQueryOptions(newQueryOptions: typings.winrt.Windows.Storage.Search.QueryOptions): Unit = js.native
-    /* CompleteClass */
-    override def findStartIndexAsync(value: js.Any): IAsyncOperation[Double] = js.native
-    /* CompleteClass */
-    override def getCurrentQueryOptions(): typings.winrt.Windows.Storage.Search.QueryOptions = js.native
-    /* CompleteClass */
-    override def getItemCountAsync(): IAsyncOperation[Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Search.StorageItemQueryResult
   
   @js.native
   object CommonFileQuery extends js.Object {

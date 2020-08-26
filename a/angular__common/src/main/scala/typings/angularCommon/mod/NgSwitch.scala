@@ -14,6 +14,6 @@ class NgSwitch () extends js.Object {
   var _lastCasesMatched: js.Any = js.native
   var _ngSwitch: js.Any = js.native
   var _updateDefaultCases: js.Any = js.native
-  def ngSwitch(newValue: js.Any): js.Any = js.native
+  def ngSwitch_=(newValue: js.Any): Unit = js.native
 }
 

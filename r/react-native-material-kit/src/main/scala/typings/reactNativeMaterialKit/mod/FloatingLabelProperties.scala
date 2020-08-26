@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FloatingLabelProperties extends js.Object {
-  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
-  var floatingLabelAniDuration: js.UndefOr[Double] = js.undefined
-  var floatingLabelBottomMargin: js.UndefOr[Double] = js.undefined
-  var floatingLabelEnabled: js.UndefOr[Boolean] = js.undefined
-  var floatingLabelFont: js.UndefOr[font] = js.undefined
+  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var floatingLabelAniDuration: js.UndefOr[Double] = js.native
+  var floatingLabelBottomMargin: js.UndefOr[Double] = js.native
+  var floatingLabelEnabled: js.UndefOr[Boolean] = js.native
+  var floatingLabelFont: js.UndefOr[font] = js.native
 }
 
 object FloatingLabelProperties {
   @scala.inline
-  def apply(
-    allowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    floatingLabelAniDuration: js.UndefOr[Double] = js.undefined,
-    floatingLabelBottomMargin: js.UndefOr[Double] = js.undefined,
-    floatingLabelEnabled: js.UndefOr[Boolean] = js.undefined,
-    floatingLabelFont: font = null
-  ): FloatingLabelProperties = {
+  def apply(): FloatingLabelProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatingLabelAniDuration)) __obj.updateDynamic("floatingLabelAniDuration")(floatingLabelAniDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatingLabelBottomMargin)) __obj.updateDynamic("floatingLabelBottomMargin")(floatingLabelBottomMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatingLabelEnabled)) __obj.updateDynamic("floatingLabelEnabled")(floatingLabelEnabled.get.asInstanceOf[js.Any])
-    if (floatingLabelFont != null) __obj.updateDynamic("floatingLabelFont")(floatingLabelFont.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingLabelProperties]
   }
+  @scala.inline
+  implicit class FloatingLabelPropertiesOps[Self <: FloatingLabelProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowFontScaling(value: Boolean): Self = this.set("allowFontScaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFontScaling: Self = this.set("allowFontScaling", js.undefined)
+    @scala.inline
+    def setFloatingLabelAniDuration(value: Double): Self = this.set("floatingLabelAniDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloatingLabelAniDuration: Self = this.set("floatingLabelAniDuration", js.undefined)
+    @scala.inline
+    def setFloatingLabelBottomMargin(value: Double): Self = this.set("floatingLabelBottomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloatingLabelBottomMargin: Self = this.set("floatingLabelBottomMargin", js.undefined)
+    @scala.inline
+    def setFloatingLabelEnabled(value: Boolean): Self = this.set("floatingLabelEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloatingLabelEnabled: Self = this.set("floatingLabelEnabled", js.undefined)
+    @scala.inline
+    def setFloatingLabelFont(value: font): Self = this.set("floatingLabelFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloatingLabelFont: Self = this.set("floatingLabelFont", js.undefined)
+  }
+  
 }
 

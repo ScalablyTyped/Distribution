@@ -9,17 +9,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPanel extends ITable {
   /** [Config Option] (Boolean) */
   @JSName("animate")
-  var animate_IPanel: js.UndefOr[Boolean] = js.undefined
+  var animate_IPanel: js.UndefOr[Boolean] = js.native
   /** [Method] Collapse all nodes
     * @param callback Function A function to execute when the collapse finishes.
     * @param scope Object The scope of the callback function
     */
   var collapseAll: js.UndefOr[
     js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Collapses a record that is loaded in the tree
     * @param record Ext.data.Model The record to collapse
     * @param deep Boolean True to collapse nodes all the way up the tree hierarchy.
@@ -34,16 +35,16 @@ trait IPanel extends ITable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (String) */
-  var displayField: js.UndefOr[String] = js.undefined
+  var displayField: js.UndefOr[String] = js.native
   /** [Method] Expand all nodes
     * @param callback Function A function to execute when the expand finishes.
     * @param scope Object The scope of the callback function
     */
   var expandAll: js.UndefOr[
     js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Expands a record that is loaded in the tree
     * @param record Ext.data.Model The record to expand
     * @param deep Boolean True to expand nodes all the way down the tree hierarchy.
@@ -58,7 +59,7 @@ trait IPanel extends ITable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Expand the tree to the path of a particular node
     * @param path String The path to expand. The path should include a leading separator.
     * @param field String The field to get the data from. Defaults to the model idProperty.
@@ -75,23 +76,23 @@ trait IPanel extends ITable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (Boolean) */
-  var folderSort: js.UndefOr[Boolean] = js.undefined
+  var folderSort: js.UndefOr[Boolean] = js.native
   /** [Method] Retrieve an array of checked records
     * @returns Ext.data.NodeInterface[] An array containing the checked records
     */
-  var getChecked: js.UndefOr[js.Function0[Array]] = js.undefined
+  var getChecked: js.UndefOr[js.Function0[Array]] = js.native
   /** [Method] Returns the root node for this tree
     * @returns Ext.data.NodeInterface
     */
-  var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.undefined
+  var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.native
   /** [Config Option] (Boolean) */
-  var lines: js.UndefOr[Boolean] = js.undefined
+  var lines: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Ext.data.Model/Ext.data.NodeInterface/Object) */
-  var root: js.UndefOr[js.Any] = js.undefined
+  var root: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var rootVisible: js.UndefOr[Boolean] = js.undefined
+  var rootVisible: js.UndefOr[Boolean] = js.native
   /** [Method] Expand the tree to the path of a particular node then select it
     * @param path String The path to select. The path should include a leading separator.
     * @param field String The field to get the data from. Defaults to the model idProperty.
@@ -108,65 +109,119 @@ trait IPanel extends ITable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets root node of this tree
     * @param root Ext.data.Model/Ext.data.NodeInterface/Object
     * @returns Ext.data.NodeInterface The new root
     */
-  var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.undefined
+  var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.native
   /** [Config Option] (Boolean) */
-  var singleExpand: js.UndefOr[Boolean] = js.undefined
+  var singleExpand: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Ext.data.TreeStore) */
   @JSName("store")
-  var store_IPanel: js.UndefOr[ITreeStore] = js.undefined
+  var store_IPanel: js.UndefOr[ITreeStore] = js.native
   /** [Config Option] (Boolean) */
-  var useArrows: js.UndefOr[Boolean] = js.undefined
+  var useArrows: js.UndefOr[Boolean] = js.native
 }
 
 object IPanel {
   @scala.inline
-  def apply(
-    ITable: ITable = null,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    collapseAll: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    collapseNode: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    displayField: String = null,
-    expandAll: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    expandNode: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    expandPath: (/* path */ js.UndefOr[String], /* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    folderSort: js.UndefOr[Boolean] = js.undefined,
-    getChecked: () => Array = null,
-    getRootNode: () => INodeInterface = null,
-    lines: js.UndefOr[Boolean] = js.undefined,
-    root: js.Any = null,
-    rootVisible: js.UndefOr[Boolean] = js.undefined,
-    selectPath: (/* path */ js.UndefOr[String], /* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    setRootNode: /* root */ js.UndefOr[js.Any] => INodeInterface = null,
-    singleExpand: js.UndefOr[Boolean] = js.undefined,
-    store: ITreeStore = null,
-    useArrows: js.UndefOr[Boolean] = js.undefined
-  ): IPanel = {
+  def apply(): IPanel = {
     val __obj = js.Dynamic.literal()
-    if (ITable != null) js.Dynamic.global.Object.assign(__obj, ITable)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (collapseAll != null) __obj.updateDynamic("collapseAll")(js.Any.fromFunction2(collapseAll))
-    if (collapseNode != null) __obj.updateDynamic("collapseNode")(js.Any.fromFunction4(collapseNode))
-    if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])
-    if (expandAll != null) __obj.updateDynamic("expandAll")(js.Any.fromFunction2(expandAll))
-    if (expandNode != null) __obj.updateDynamic("expandNode")(js.Any.fromFunction4(expandNode))
-    if (expandPath != null) __obj.updateDynamic("expandPath")(js.Any.fromFunction5(expandPath))
-    if (!js.isUndefined(folderSort)) __obj.updateDynamic("folderSort")(folderSort.get.asInstanceOf[js.Any])
-    if (getChecked != null) __obj.updateDynamic("getChecked")(js.Any.fromFunction0(getChecked))
-    if (getRootNode != null) __obj.updateDynamic("getRootNode")(js.Any.fromFunction0(getRootNode))
-    if (!js.isUndefined(lines)) __obj.updateDynamic("lines")(lines.get.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootVisible)) __obj.updateDynamic("rootVisible")(rootVisible.get.asInstanceOf[js.Any])
-    if (selectPath != null) __obj.updateDynamic("selectPath")(js.Any.fromFunction5(selectPath))
-    if (setRootNode != null) __obj.updateDynamic("setRootNode")(js.Any.fromFunction1(setRootNode))
-    if (!js.isUndefined(singleExpand)) __obj.updateDynamic("singleExpand")(singleExpand.get.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (!js.isUndefined(useArrows)) __obj.updateDynamic("useArrows")(useArrows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanel]
   }
+  @scala.inline
+  implicit class IPanelOps[Self <: IPanel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setCollapseAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("collapseAll", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCollapseAll: Self = this.set("collapseAll", js.undefined)
+    @scala.inline
+    def setCollapseNode(
+      value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("collapseNode", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteCollapseNode: Self = this.set("collapseNode", js.undefined)
+    @scala.inline
+    def setDisplayField(value: String): Self = this.set("displayField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayField: Self = this.set("displayField", js.undefined)
+    @scala.inline
+    def setExpandAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("expandAll", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteExpandAll: Self = this.set("expandAll", js.undefined)
+    @scala.inline
+    def setExpandNode(
+      value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("expandNode", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteExpandNode: Self = this.set("expandNode", js.undefined)
+    @scala.inline
+    def setExpandPath(
+      value: (/* path */ js.UndefOr[String], /* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("expandPath", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteExpandPath: Self = this.set("expandPath", js.undefined)
+    @scala.inline
+    def setFolderSort(value: Boolean): Self = this.set("folderSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolderSort: Self = this.set("folderSort", js.undefined)
+    @scala.inline
+    def setGetChecked(value: () => Array): Self = this.set("getChecked", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetChecked: Self = this.set("getChecked", js.undefined)
+    @scala.inline
+    def setGetRootNode(value: () => INodeInterface): Self = this.set("getRootNode", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRootNode: Self = this.set("getRootNode", js.undefined)
+    @scala.inline
+    def setLines(value: Boolean): Self = this.set("lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLines: Self = this.set("lines", js.undefined)
+    @scala.inline
+    def setRoot(value: js.Any): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setRootVisible(value: Boolean): Self = this.set("rootVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootVisible: Self = this.set("rootVisible", js.undefined)
+    @scala.inline
+    def setSelectPath(
+      value: (/* path */ js.UndefOr[String], /* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("selectPath", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteSelectPath: Self = this.set("selectPath", js.undefined)
+    @scala.inline
+    def setSetRootNode(value: /* root */ js.UndefOr[js.Any] => INodeInterface): Self = this.set("setRootNode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRootNode: Self = this.set("setRootNode", js.undefined)
+    @scala.inline
+    def setSingleExpand(value: Boolean): Self = this.set("singleExpand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleExpand: Self = this.set("singleExpand", js.undefined)
+    @scala.inline
+    def setStore(value: ITreeStore): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+    @scala.inline
+    def setUseArrows(value: Boolean): Self = this.set("useArrows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseArrows: Self = this.set("useArrows", js.undefined)
+  }
+  
 }
 

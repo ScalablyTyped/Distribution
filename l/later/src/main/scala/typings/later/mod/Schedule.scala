@@ -18,6 +18,7 @@ trait Schedule extends js.Object {
     * @param dateTo: The latest a valid instance can occur
     */
   def next(numberOfInst: Double): js.Array[Date] | Date = js.native
+  def next(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
   def next(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
   def next(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
   /**
@@ -31,6 +32,7 @@ trait Schedule extends js.Object {
     * @param dateTo: The latest a valid range can occur
     */
   def nextRange(numberOfInst: Double): js.Array[Date] | Date = js.native
+  def nextRange(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
   def nextRange(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
   def nextRange(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
   /**
@@ -44,6 +46,7 @@ trait Schedule extends js.Object {
     * @param dateTo: The latest a valid instance can occur
     */
   def prev(numberOfInst: Double): js.Array[Date] | Date = js.native
+  def prev(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
   def prev(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
   def prev(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
   /**
@@ -57,6 +60,7 @@ trait Schedule extends js.Object {
     * @param dateTo: The latest a valid range can occur
     */
   def prevRange(numberOfInst: Double): js.Array[Date] | Date = js.native
+  def prevRange(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
   def prevRange(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
   def prevRange(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
 }

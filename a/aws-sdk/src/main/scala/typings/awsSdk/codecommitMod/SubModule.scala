@@ -22,12 +22,34 @@ trait SubModule extends js.Object {
 
 object SubModule {
   @scala.inline
-  def apply(absolutePath: Path = null, commitId: ObjectId = null, relativePath: Path = null): SubModule = {
+  def apply(): SubModule = {
     val __obj = js.Dynamic.literal()
-    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
-    if (commitId != null) __obj.updateDynamic("commitId")(commitId.asInstanceOf[js.Any])
-    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubModule]
   }
+  @scala.inline
+  implicit class SubModuleOps[Self <: SubModule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbsolutePath(value: Path): Self = this.set("absolutePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbsolutePath: Self = this.set("absolutePath", js.undefined)
+    @scala.inline
+    def setCommitId(value: ObjectId): Self = this.set("commitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitId: Self = this.set("commitId", js.undefined)
+    @scala.inline
+    def setRelativePath(value: Path): Self = this.set("relativePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativePath: Self = this.set("relativePath", js.undefined)
+  }
+  
 }
 

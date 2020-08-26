@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-tools__utils
 
-Typings are for version 6.0.11
+Typings are for version 6.0.15
 
 ## Library description:
 Common package containting utils and types for GraphQL tools
@@ -10,9 +10,9 @@ Common package containting utils and types for GraphQL tools
 | ------------------ | :-------------: |
 | Full name          | @graphql-tools/utils |
 | Keywords           | - |
-| # releases         | 283 |
-| # dependents       | 56 |
-| # downloads        | 2573708 |
+| # releases         | 418 |
+| # dependents       | 81 |
+| # downloads        | 7474550 |
 | # stars            | 0 |
 
 ## Links

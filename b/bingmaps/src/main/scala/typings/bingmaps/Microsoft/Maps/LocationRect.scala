@@ -4,69 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LocationRect extends js.Object {
   /** The location that defines the center of the rectangle. */
-  var center: Location
+  var center: Location = js.native
   /** The height, in degrees, of the rectangle. */
-  var height: Double
+  var height: Double = js.native
   /** The width, in degrees, of the rectangle. */
-  var width: Double
+  var width: Double = js.native
   /**
     * Scales the size of a LocationRect by multiplying the width and height properties by a percentage.
     * @param percentage A percentage value to increase the size of the LocationRect by.
     */
-  def buffer(percentage: Double): Unit
+  def buffer(percentage: Double): Unit = js.native
   /**
     * Gets whether the specified Location is within the LocationRect.
     * @returns A boolean indicating if a location is within a LocationRect.
     */
-  def contains(location: Location): Boolean
+  def contains(location: Location): Boolean = js.native
   /**
     * Determines if the LocationRect crosses the 180th meridian.
     * @returns A boolean indicating if the LocationRect crosses the international date line (-180/180 degrees longitude).
     */
-  def crossesInternationalDateLine(): Boolean
+  def crossesInternationalDateLine(): Boolean = js.native
   /**
     * Gets the longitude that defines the eastern edge of the LocationRect.
     * @returns The eastern longitude value of the LocationRect.
     */
-  def getEast(): Double
+  def getEast(): Double = js.native
   /**
     * Gets the latitude that defines the northern edge of the LocationRect.
     * @returns The northern latitude value of the LocationRect.
     */
-  def getNorth(): Double
+  def getNorth(): Double = js.native
   /**
     * Gets the Location that defines the northwest corner of the LocationRect.
     * @returns The northwest corner location of the LocationRect.
     */
-  def getNorthwest(): Location
+  def getNorthwest(): Location = js.native
   /**
     * Gets the latitude that defines the southern edge of the LocationRect.
     * @returns The southern latitude value of the LocationRect.
     */
-  def getSouth(): Double
+  def getSouth(): Double = js.native
   /**
     * Gets the Location that defines the southeast corner of the LocationRect.
     * @returns The southeast corner location of the LocationRect.
     */
-  def getSoutheast(): Location
+  def getSoutheast(): Location = js.native
   /**
     * Gets the latitude that defines the western edge of the LocationRect.
     * @returns The western longitude value of the LocationRect.
     */
-  def getWest(): Double
+  def getWest(): Double = js.native
   /**
     * Gets whether the specified LocationRect intersects with this LocationRect.
     * @param rect A second LocationRect to test for intersection with.
     * @returns A boolean indicating if a second LocationRect interests with this LocationRect.
     */
-  def intersects(rect: LocationRect): Boolean
+  def intersects(rect: LocationRect): Boolean = js.native
   /**
     * If a LocationRect crosses the international date line, this method splits it into two LocationRect objects and returns them as an array.
     * @returns An array of LocationRects, that are split by the international date line (-180/180 degrees longitude)
     */
-  def splitByInternationalDateLine(): js.Array[LocationRect]
+  def splitByInternationalDateLine(): js.Array[LocationRect] = js.native
 }
 
 object LocationRect {
@@ -90,5 +91,46 @@ object LocationRect {
     val __obj = js.Dynamic.literal(buffer = js.Any.fromFunction1(buffer), center = center.asInstanceOf[js.Any], contains = js.Any.fromFunction1(contains), crossesInternationalDateLine = js.Any.fromFunction0(crossesInternationalDateLine), getEast = js.Any.fromFunction0(getEast), getNorth = js.Any.fromFunction0(getNorth), getNorthwest = js.Any.fromFunction0(getNorthwest), getSouth = js.Any.fromFunction0(getSouth), getSoutheast = js.Any.fromFunction0(getSoutheast), getWest = js.Any.fromFunction0(getWest), height = height.asInstanceOf[js.Any], intersects = js.Any.fromFunction1(intersects), splitByInternationalDateLine = js.Any.fromFunction0(splitByInternationalDateLine), width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRect]
   }
+  @scala.inline
+  implicit class LocationRectOps[Self <: LocationRect] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuffer(value: Double => Unit): Self = this.set("buffer", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCenter(value: Location): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContains(value: Location => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCrossesInternationalDateLine(value: () => Boolean): Self = this.set("crossesInternationalDateLine", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetEast(value: () => Double): Self = this.set("getEast", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetNorth(value: () => Double): Self = this.set("getNorth", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetNorthwest(value: () => Location): Self = this.set("getNorthwest", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSouth(value: () => Double): Self = this.set("getSouth", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSoutheast(value: () => Location): Self = this.set("getSoutheast", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetWest(value: () => Double): Self = this.set("getWest", js.Any.fromFunction0(value))
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIntersects(value: LocationRect => Boolean): Self = this.set("intersects", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSplitByInternationalDateLine(value: () => js.Array[LocationRect]): Self = this.set("splitByInternationalDateLine", js.Any.fromFunction0(value))
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -21,43 +21,6 @@ class BitmapFont protected ()
   extends typings.pixiJs.PIXI.BitmapFont {
   def this(data: typings.pixiJs.PIXI.BitmapFontData, textures: js.Array[typings.pixiJs.PIXI.Texture]) = this()
   def this(data: typings.pixiJs.PIXI.BitmapFontData, textures: StringDictionary[typings.pixiJs.PIXI.Texture]) = this()
-  /**
-    * The map of characters by character code.
-    *
-    * @member {object} PIXI.BitmapFont#chars
-    * @readonly
-    */
-  /* CompleteClass */
-  override val chars: js.Any = js.native
-  /**
-    * The name of the font face.
-    *
-    * @member {string} PIXI.BitmapFont#font
-    * @readonly
-    */
-  /* CompleteClass */
-  override val font: String = js.native
-  /**
-    * The line-height of the font face in pixels.
-    *
-    * @member {number} PIXI.BitmapFont#lineHeight
-    * @readonly
-    */
-  /* CompleteClass */
-  override val lineHeight: Double = js.native
-  /**
-    * The size of the font face in pixels.
-    *
-    * @member {number} PIXI.BitmapFont#size
-    * @readonly
-    */
-  /* CompleteClass */
-  override val size: Double = js.native
-  /**
-    * Remove references to created glyph textures.
-    */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
 }
 
 /* static members */
@@ -145,6 +108,7 @@ object BitmapFont extends js.Object {
     * const title = new PIXI.BitmapText("This is the title", { fontName: "TitleFont" });
     */
   def from(name: String): typings.pixiJs.PIXI.BitmapFont = js.native
+  def from(name: String, style: js.UndefOr[scala.Nothing], options: Chars): typings.pixiJs.PIXI.BitmapFont = js.native
   def from(name: String, style: js.Any): typings.pixiJs.PIXI.BitmapFont = js.native
   def from(name: String, style: js.Any, options: Chars): typings.pixiJs.PIXI.BitmapFont = js.native
   def from(name: String, style: typings.pixiJs.PIXI.TextStyle): typings.pixiJs.PIXI.BitmapFont = js.native

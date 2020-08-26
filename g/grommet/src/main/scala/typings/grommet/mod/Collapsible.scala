@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Collapsible")
+@JSImport("grommet/es6", "Collapsible")
 @js.native
 class Collapsible protected ()
   extends Component[
@@ -27,7 +27,7 @@ class Collapsible protected ()
   ) = this()
 }
 
-@JSImport("grommet", "Collapsible")
+@JSImport("grommet/es6", "Collapsible")
 @js.native
 object Collapsible extends TopLevel[
       ComponentClass[

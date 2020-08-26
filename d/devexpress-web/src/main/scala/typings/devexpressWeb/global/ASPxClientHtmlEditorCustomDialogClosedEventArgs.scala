@@ -18,20 +18,5 @@ class ASPxClientHtmlEditorCustomDialogClosedEventArgs protected ()
     * @param data An object that specifies the data that is returned to the parent control when the custom dialog is closed. This value is assigned to the ASPxClientHtmlEditorCustomDialogClosedEventArgs.data property.
     */
   def this(name: String, status: js.Any, data: js.Any) = this()
-  /**
-    * Gets an object associated with the closed dialog.
-    */
-  /* CompleteClass */
-  override var data: js.Any = js.native
-  /**
-    * Gets the name that uniquely identifies the processed custom dialog.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  /**
-    * Gets the status of the closed custom dialog.
-    */
-  /* CompleteClass */
-  override var status: js.Any = js.native
 }
 

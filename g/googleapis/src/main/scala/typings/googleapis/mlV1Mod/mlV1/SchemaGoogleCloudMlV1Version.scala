@@ -134,42 +134,86 @@ trait SchemaGoogleCloudMlV1Version extends js.Object {
 
 object SchemaGoogleCloudMlV1Version {
   @scala.inline
-  def apply(
-    autoScaling: SchemaGoogleCloudMlV1AutoScaling = null,
-    createTime: String = null,
-    deploymentUri: String = null,
-    description: String = null,
-    errorMessage: String = null,
-    etag: String = null,
-    framework: String = null,
-    isDefault: js.UndefOr[Boolean] = js.undefined,
-    labels: StringDictionary[String] = null,
-    lastUseTime: String = null,
-    machineType: String = null,
-    manualScaling: SchemaGoogleCloudMlV1ManualScaling = null,
-    name: String = null,
-    pythonVersion: String = null,
-    runtimeVersion: String = null,
-    state: String = null
-  ): SchemaGoogleCloudMlV1Version = {
+  def apply(): SchemaGoogleCloudMlV1Version = {
     val __obj = js.Dynamic.literal()
-    if (autoScaling != null) __obj.updateDynamic("autoScaling")(autoScaling.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (deploymentUri != null) __obj.updateDynamic("deploymentUri")(deploymentUri.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (lastUseTime != null) __obj.updateDynamic("lastUseTime")(lastUseTime.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (manualScaling != null) __obj.updateDynamic("manualScaling")(manualScaling.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pythonVersion != null) __obj.updateDynamic("pythonVersion")(pythonVersion.asInstanceOf[js.Any])
-    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1Version]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1VersionOps[Self <: SchemaGoogleCloudMlV1Version] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScaling(value: SchemaGoogleCloudMlV1AutoScaling): Self = this.set("autoScaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScaling: Self = this.set("autoScaling", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDeploymentUri(value: String): Self = this.set("deploymentUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentUri: Self = this.set("deploymentUri", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setFramework(value: String): Self = this.set("framework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramework: Self = this.set("framework", js.undefined)
+    @scala.inline
+    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLastUseTime(value: String): Self = this.set("lastUseTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUseTime: Self = this.set("lastUseTime", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setManualScaling(value: SchemaGoogleCloudMlV1ManualScaling): Self = this.set("manualScaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualScaling: Self = this.set("manualScaling", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPythonVersion(value: String): Self = this.set("pythonVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePythonVersion: Self = this.set("pythonVersion", js.undefined)
+    @scala.inline
+    def setRuntimeVersion(value: String): Self = this.set("runtimeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeVersion: Self = this.set("runtimeVersion", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

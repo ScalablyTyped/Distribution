@@ -33,20 +33,42 @@ trait SchemaActor extends js.Object {
 
 object SchemaActor {
   @scala.inline
-  def apply(
-    administrator: SchemaAdministrator = null,
-    anonymous: SchemaAnonymousUser = null,
-    impersonation: SchemaImpersonation = null,
-    system: SchemaSystemEvent = null,
-    user: SchemaUser = null
-  ): SchemaActor = {
+  def apply(): SchemaActor = {
     val __obj = js.Dynamic.literal()
-    if (administrator != null) __obj.updateDynamic("administrator")(administrator.asInstanceOf[js.Any])
-    if (anonymous != null) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
-    if (impersonation != null) __obj.updateDynamic("impersonation")(impersonation.asInstanceOf[js.Any])
-    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaActor]
   }
+  @scala.inline
+  implicit class SchemaActorOps[Self <: SchemaActor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdministrator(value: SchemaAdministrator): Self = this.set("administrator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdministrator: Self = this.set("administrator", js.undefined)
+    @scala.inline
+    def setAnonymous(value: SchemaAnonymousUser): Self = this.set("anonymous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnonymous: Self = this.set("anonymous", js.undefined)
+    @scala.inline
+    def setImpersonation(value: SchemaImpersonation): Self = this.set("impersonation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpersonation: Self = this.set("impersonation", js.undefined)
+    @scala.inline
+    def setSystem(value: SchemaSystemEvent): Self = this.set("system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystem: Self = this.set("system", js.undefined)
+    @scala.inline
+    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

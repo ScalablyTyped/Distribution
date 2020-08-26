@@ -18,14 +18,34 @@ trait CancelSpotFleetRequestsResponse extends js.Object {
 
 object CancelSpotFleetRequestsResponse {
   @scala.inline
-  def apply(
-    SuccessfulFleetRequests: CancelSpotFleetRequestsSuccessSet = null,
-    UnsuccessfulFleetRequests: CancelSpotFleetRequestsErrorSet = null
-  ): CancelSpotFleetRequestsResponse = {
+  def apply(): CancelSpotFleetRequestsResponse = {
     val __obj = js.Dynamic.literal()
-    if (SuccessfulFleetRequests != null) __obj.updateDynamic("SuccessfulFleetRequests")(SuccessfulFleetRequests.asInstanceOf[js.Any])
-    if (UnsuccessfulFleetRequests != null) __obj.updateDynamic("UnsuccessfulFleetRequests")(UnsuccessfulFleetRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelSpotFleetRequestsResponse]
   }
+  @scala.inline
+  implicit class CancelSpotFleetRequestsResponseOps[Self <: CancelSpotFleetRequestsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsSuccessItem*): Self = this.set("SuccessfulFleetRequests", js.Array(value :_*))
+    @scala.inline
+    def setSuccessfulFleetRequests(value: CancelSpotFleetRequestsSuccessSet): Self = this.set("SuccessfulFleetRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessfulFleetRequests: Self = this.set("SuccessfulFleetRequests", js.undefined)
+    @scala.inline
+    def setUnsuccessfulFleetRequestsVarargs(value: CancelSpotFleetRequestsErrorItem*): Self = this.set("UnsuccessfulFleetRequests", js.Array(value :_*))
+    @scala.inline
+    def setUnsuccessfulFleetRequests(value: CancelSpotFleetRequestsErrorSet): Self = this.set("UnsuccessfulFleetRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsuccessfulFleetRequests: Self = this.set("UnsuccessfulFleetRequests", js.undefined)
+  }
+  
 }
 

@@ -38,6 +38,7 @@ class ResourceConversion protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaConversionList] = js.native
   def get(callback: BodyResponseCallback[SchemaConversionList]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConversionList] = js.native
   def get(params: ParamsResourceConversionGet): GaxiosPromise[SchemaConversionList] = js.native
   def get(params: ParamsResourceConversionGet, callback: BodyResponseCallback[SchemaConversionList]): Unit = js.native
   def get(
@@ -65,6 +66,7 @@ class ResourceConversion protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaConversionList] = js.native
   def insert(callback: BodyResponseCallback[SchemaConversionList]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConversionList] = js.native
   def insert(params: ParamsResourceConversionInsert): GaxiosPromise[SchemaConversionList] = js.native
   def insert(params: ParamsResourceConversionInsert, callback: BodyResponseCallback[SchemaConversionList]): Unit = js.native
   def insert(
@@ -100,6 +102,7 @@ class ResourceConversion protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaConversionList] = js.native
   def patch(callback: BodyResponseCallback[SchemaConversionList]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConversionList] = js.native
   def patch(params: ParamsResourceConversionPatch): GaxiosPromise[SchemaConversionList] = js.native
   def patch(params: ParamsResourceConversionPatch, callback: BodyResponseCallback[SchemaConversionList]): Unit = js.native
   def patch(
@@ -127,6 +130,7 @@ class ResourceConversion protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaConversionList] = js.native
   def update(callback: BodyResponseCallback[SchemaConversionList]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConversionList] = js.native
   def update(params: ParamsResourceConversionUpdate): GaxiosPromise[SchemaConversionList] = js.native
   def update(params: ParamsResourceConversionUpdate, callback: BodyResponseCallback[SchemaConversionList]): Unit = js.native
   def update(
@@ -155,6 +159,7 @@ class ResourceConversion protected () extends js.Object {
     */
   def updateAvailability(): GaxiosPromise[SchemaUpdateAvailabilityResponse] = js.native
   def updateAvailability(callback: BodyResponseCallback[SchemaUpdateAvailabilityResponse]): Unit = js.native
+  def updateAvailability(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUpdateAvailabilityResponse] = js.native
   def updateAvailability(params: ParamsResourceConversionUpdateavailability): GaxiosPromise[SchemaUpdateAvailabilityResponse] = js.native
   def updateAvailability(
     params: ParamsResourceConversionUpdateavailability,

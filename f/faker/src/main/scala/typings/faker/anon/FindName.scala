@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FindName extends js.Object {
   def findName(): String = js.native
+  def findName(firstName: js.UndefOr[scala.Nothing], lastName: js.UndefOr[scala.Nothing], gender: Double): String = js.native
+  def findName(firstName: js.UndefOr[scala.Nothing], lastName: String): String = js.native
+  def findName(firstName: js.UndefOr[scala.Nothing], lastName: String, gender: Double): String = js.native
   def findName(firstName: String): String = js.native
+  def findName(firstName: String, lastName: js.UndefOr[scala.Nothing], gender: Double): String = js.native
   def findName(firstName: String, lastName: String): String = js.native
   def findName(firstName: String, lastName: String, gender: Double): String = js.native
   def firstName(): String = js.native

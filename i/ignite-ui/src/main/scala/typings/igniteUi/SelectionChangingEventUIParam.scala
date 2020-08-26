@@ -4,29 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectionChangingEventUIParam extends js.Object {
   /**
     * Used to obtain reference to array of the selected items before the new selection has happened. That can be null.
     */
-  var currentItems: js.UndefOr[js.Any] = js.undefined
+  var currentItems: js.UndefOr[js.Any] = js.native
   /**
     * Used to obtain reference to array of all items that will be selected after the selection finish. That can be null.
     */
-  var items: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[js.Any] = js.native
   /**
     * Used to obtain reference to igCombo.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[js.Any] = js.native
 }
 
 object SelectionChangingEventUIParam {
   @scala.inline
-  def apply(currentItems: js.Any = null, items: js.Any = null, owner: js.Any = null): SelectionChangingEventUIParam = {
+  def apply(): SelectionChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentItems != null) __obj.updateDynamic("currentItems")(currentItems.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionChangingEventUIParam]
   }
+  @scala.inline
+  implicit class SelectionChangingEventUIParamOps[Self <: SelectionChangingEventUIParam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentItems(value: js.Any): Self = this.set("currentItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentItems: Self = this.set("currentItems", js.undefined)
+    @scala.inline
+    def setItems(value: js.Any): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+  }
+  
 }
 

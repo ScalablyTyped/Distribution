@@ -176,8 +176,39 @@ trait RangeAreas extends ClientObject {
     * @param languageCulture Language Culture to query the service for.
     */
   def convertToLinkedDataType(serviceID: Double, languageCulture: String): Unit = js.native
+  /**
+    * Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas.
+    The destination rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must able to be created by removing full rows or columns from a rectangular range.
+    * @param copyType The type of cell data or formatting to copy over. Default is "All".
+    * @param skipBlanks True if to skip blank cells in the source range or RangeAreas. Default is false.
+    * @param transpose True if to transpose the cells in the destination RangeAreas. Default is false.
+    */
+  def copyFrom(
+    sourceRange: Range | RangeAreas | String,
+    copyType: js.UndefOr[All | Formulas | Values | Formats],
+    skipBlanks: js.UndefOr[Boolean],
+    transpose: js.UndefOr[Boolean]
+  ): Unit = js.native
   def copyFrom(sourceRange: String): Unit = js.native
+  def copyFrom(
+    sourceRange: String,
+    copyType: js.UndefOr[scala.Nothing],
+    skipBlanks: js.UndefOr[scala.Nothing],
+    transpose: Boolean
+  ): Unit = js.native
+  def copyFrom(sourceRange: String, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean): Unit = js.native
+  def copyFrom(sourceRange: String, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean, transpose: Boolean): Unit = js.native
   def copyFrom(sourceRange: String, copyType: RangeCopyType): Unit = js.native
+  def copyFrom(
+    sourceRange: String,
+    copyType: RangeCopyType,
+    skipBlanks: js.UndefOr[scala.Nothing],
+    transpose: Boolean
+  ): Unit = js.native
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Boolean): Unit = js.native
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
   /**
@@ -193,84 +224,45 @@ trait RangeAreas extends ClientObject {
     */
   def copyFrom(sourceRange: Range): Unit = js.native
   def copyFrom(sourceRange: RangeAreas): Unit = js.native
+  def copyFrom(
+    sourceRange: RangeAreas,
+    copyType: js.UndefOr[scala.Nothing],
+    skipBlanks: js.UndefOr[scala.Nothing],
+    transpose: Boolean
+  ): Unit = js.native
+  def copyFrom(sourceRange: RangeAreas, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean): Unit = js.native
+  def copyFrom(
+    sourceRange: RangeAreas,
+    copyType: js.UndefOr[scala.Nothing],
+    skipBlanks: Boolean,
+    transpose: Boolean
+  ): Unit = js.native
   def copyFrom(sourceRange: RangeAreas, copyType: RangeCopyType): Unit = js.native
+  def copyFrom(
+    sourceRange: RangeAreas,
+    copyType: RangeCopyType,
+    skipBlanks: js.UndefOr[scala.Nothing],
+    transpose: Boolean
+  ): Unit = js.native
   def copyFrom(sourceRange: RangeAreas, copyType: RangeCopyType, skipBlanks: Boolean): Unit = js.native
   def copyFrom(sourceRange: RangeAreas, copyType: RangeCopyType, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
+  def copyFrom(
+    sourceRange: Range,
+    copyType: js.UndefOr[scala.Nothing],
+    skipBlanks: js.UndefOr[scala.Nothing],
+    transpose: Boolean
+  ): Unit = js.native
+  def copyFrom(sourceRange: Range, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean): Unit = js.native
+  def copyFrom(sourceRange: Range, copyType: js.UndefOr[scala.Nothing], skipBlanks: Boolean, transpose: Boolean): Unit = js.native
   def copyFrom(sourceRange: Range, copyType: RangeCopyType): Unit = js.native
+  def copyFrom(
+    sourceRange: Range,
+    copyType: RangeCopyType,
+    skipBlanks: js.UndefOr[scala.Nothing],
+    transpose: Boolean
+  ): Unit = js.native
   def copyFrom(sourceRange: Range, copyType: RangeCopyType, skipBlanks: Boolean): Unit = js.native
   def copyFrom(sourceRange: Range, copyType: RangeCopyType, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_All(sourceRange: String, copyType: All): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_All(sourceRange: String, copyType: All, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_All(sourceRange: String, copyType: All, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_All(sourceRange: RangeAreas, copyType: All): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_All(sourceRange: RangeAreas, copyType: All, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_All(sourceRange: RangeAreas, copyType: All, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_All(sourceRange: Range, copyType: All): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_All(sourceRange: Range, copyType: All, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_All(sourceRange: Range, copyType: All, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formats(sourceRange: String, copyType: Formats): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formats(sourceRange: String, copyType: Formats, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formats(sourceRange: String, copyType: Formats, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formats(sourceRange: RangeAreas, copyType: Formats): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formats(sourceRange: RangeAreas, copyType: Formats, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formats(sourceRange: RangeAreas, copyType: Formats, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formats(sourceRange: Range, copyType: Formats): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formats(sourceRange: Range, copyType: Formats, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formats(sourceRange: Range, copyType: Formats, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formulas(sourceRange: String, copyType: Formulas): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formulas(sourceRange: String, copyType: Formulas, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formulas(sourceRange: String, copyType: Formulas, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formulas(sourceRange: RangeAreas, copyType: Formulas): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formulas(sourceRange: RangeAreas, copyType: Formulas, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formulas(sourceRange: RangeAreas, copyType: Formulas, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formulas(sourceRange: Range, copyType: Formulas): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formulas(sourceRange: Range, copyType: Formulas, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Formulas(sourceRange: Range, copyType: Formulas, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Values(sourceRange: String, copyType: Values): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Values(sourceRange: String, copyType: Values, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Values(sourceRange: String, copyType: Values, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Values(sourceRange: RangeAreas, copyType: Values): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Values(sourceRange: RangeAreas, copyType: Values, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Values(sourceRange: RangeAreas, copyType: Values, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Values(sourceRange: Range, copyType: Values): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Values(sourceRange: Range, copyType: Values, skipBlanks: Boolean): Unit = js.native
-  @JSName("copyFrom")
-  def copyFrom_Values(sourceRange: Range, copyType: Values, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
   /**
     * Returns a RangeAreas object that represents the entire columns of the RangeAreas (for example, if the current RangeAreas represents cells "B4:E11, H2", it returns a RangeAreas that represents columns "B:E, H:H").
     *
@@ -320,39 +312,35 @@ trait RangeAreas extends ClientObject {
     * @param cellType The type of cells to include.
     * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
     */
+  def getSpecialCells(
+    cellType: ConditionalFormats | DataValidations | Blanks | Constants | Formulas | SameConditionalFormat | SameDataValidation | Visible,
+    cellValueType: js.UndefOr[
+      All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
+    ]
+  ): RangeAreas = js.native
+  /**
+    * Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error if no special cells are found that match the criteria.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param cellType The type of cells to include.
+    * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+    */
   def getSpecialCells(cellType: SpecialCellType): RangeAreas = js.native
   def getSpecialCells(cellType: SpecialCellType, cellValueType: SpecialCellValueType): RangeAreas = js.native
-  def getSpecialCells(
-    cellType: Blanks,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCells(
-    cellType: ConditionalFormats,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCells(
-    cellType: Constants,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCells(
-    cellType: DataValidations,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCells(
-    cellType: Formulas,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCells(
-    cellType: SameConditionalFormat,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCells(
-    cellType: SameDataValidation,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCells(
-    cellType: Visible,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
+  /**
+    * Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null object if no special cells are found that match the criteria.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param cellType The type of cells to include.
+    * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+    */
+  def getSpecialCellsOrNullObject(
+    cellType: ConditionalFormats | DataValidations | Blanks | Constants | Formulas | SameConditionalFormat | SameDataValidation | Visible,
+    cellValueType: js.UndefOr[
+      All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
+    ]
   ): RangeAreas = js.native
   /**
     * Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null object if no special cells are found that match the criteria.
@@ -364,86 +352,6 @@ trait RangeAreas extends ClientObject {
     */
   def getSpecialCellsOrNullObject(cellType: SpecialCellType): RangeAreas = js.native
   def getSpecialCellsOrNullObject(cellType: SpecialCellType, cellValueType: SpecialCellValueType): RangeAreas = js.native
-  def getSpecialCellsOrNullObject(
-    cellType: Blanks,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCellsOrNullObject(
-    cellType: ConditionalFormats,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCellsOrNullObject(
-    cellType: Constants,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCellsOrNullObject(
-    cellType: DataValidations,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCellsOrNullObject(
-    cellType: Formulas,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCellsOrNullObject(
-    cellType: SameConditionalFormat,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCellsOrNullObject(
-    cellType: SameDataValidation,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  def getSpecialCellsOrNullObject(
-    cellType: Visible,
-    cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
-  ): RangeAreas = js.native
-  @JSName("getSpecialCellsOrNullObject")
-  def getSpecialCellsOrNullObject_Blanks(cellType: Blanks): RangeAreas = js.native
-  /**
-    * Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null object if no special cells are found that match the criteria.
-    *
-    * [Api set: ExcelApi 1.9]
-    *
-    * @param cellType The type of cells to include.
-    * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
-    */
-  @JSName("getSpecialCellsOrNullObject")
-  def getSpecialCellsOrNullObject_ConditionalFormats(cellType: ConditionalFormats): RangeAreas = js.native
-  @JSName("getSpecialCellsOrNullObject")
-  def getSpecialCellsOrNullObject_Constants(cellType: Constants): RangeAreas = js.native
-  @JSName("getSpecialCellsOrNullObject")
-  def getSpecialCellsOrNullObject_DataValidations(cellType: DataValidations): RangeAreas = js.native
-  @JSName("getSpecialCellsOrNullObject")
-  def getSpecialCellsOrNullObject_Formulas(cellType: Formulas): RangeAreas = js.native
-  @JSName("getSpecialCellsOrNullObject")
-  def getSpecialCellsOrNullObject_SameConditionalFormat(cellType: SameConditionalFormat): RangeAreas = js.native
-  @JSName("getSpecialCellsOrNullObject")
-  def getSpecialCellsOrNullObject_SameDataValidation(cellType: SameDataValidation): RangeAreas = js.native
-  @JSName("getSpecialCellsOrNullObject")
-  def getSpecialCellsOrNullObject_Visible(cellType: Visible): RangeAreas = js.native
-  @JSName("getSpecialCells")
-  def getSpecialCells_Blanks(cellType: Blanks): RangeAreas = js.native
-  /**
-    * Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error if no special cells are found that match the criteria.
-    *
-    * [Api set: ExcelApi 1.9]
-    *
-    * @param cellType The type of cells to include.
-    * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
-    */
-  @JSName("getSpecialCells")
-  def getSpecialCells_ConditionalFormats(cellType: ConditionalFormats): RangeAreas = js.native
-  @JSName("getSpecialCells")
-  def getSpecialCells_Constants(cellType: Constants): RangeAreas = js.native
-  @JSName("getSpecialCells")
-  def getSpecialCells_DataValidations(cellType: DataValidations): RangeAreas = js.native
-  @JSName("getSpecialCells")
-  def getSpecialCells_Formulas(cellType: Formulas): RangeAreas = js.native
-  @JSName("getSpecialCells")
-  def getSpecialCells_SameConditionalFormat(cellType: SameConditionalFormat): RangeAreas = js.native
-  @JSName("getSpecialCells")
-  def getSpecialCells_SameDataValidation(cellType: SameDataValidation): RangeAreas = js.native
-  @JSName("getSpecialCells")
-  def getSpecialCells_Visible(cellType: Visible): RangeAreas = js.native
   /**
     * Returns a scoped collection of tables that overlap with any range in this RangeAreas object.
     *

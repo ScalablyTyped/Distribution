@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
 class Model protected () extends js.Object {
   def this(modelData: js.Object) = this()
   def this(modelData: js.Object, fromStorage: Boolean) = this()
+  def this(modelData: js.Object, fromStorage: js.UndefOr[scala.Nothing], fromSeed: Boolean) = this()
   def this(modelData: js.Object, fromStorage: Boolean, fromSeed: Boolean) = this()
   var _calculations: ICalculations = js.native
   var _calculationsList: js.Array[String] = js.native
@@ -56,6 +57,7 @@ class Model protected () extends js.Object {
     */
   /* private */ def __initialize__(): js.Any = js.native
   def __load__(data: js.Any): this.type = js.native
+  def __load__(data: js.Any, fromStorage: js.UndefOr[scala.Nothing], fromSeed: Boolean): this.type = js.native
   def __load__(data: js.Any, fromStorage: Boolean): this.type = js.native
   def __load__(data: js.Any, fromStorage: Boolean, fromSeed: Boolean): this.type = js.native
   /**
@@ -75,7 +77,6 @@ class Model protected () extends js.Object {
     * @private
     * @param {optional Array} fieldList fields to validate
     */
-  /* private */ def __validate__(): js.Any = js.native
   /* private */ def __validate__(field: js.Any): js.Any = js.native
   /**
     * Runs all verifications before saving

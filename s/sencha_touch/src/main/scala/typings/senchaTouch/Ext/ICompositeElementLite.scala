@@ -1,11 +1,11 @@
 package typings.senchaTouch.Ext
 
-import typings.senchaTouch.Ext.mixin.IObservable
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICompositeElementLite
   extends typings.senchaTouch.Ext.dom.IElement {
   /** [Method] Adds elements to this Composite object
@@ -15,7 +15,7 @@ trait ICompositeElementLite
     */
   var add: js.UndefOr[
     js.Function2[/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Adds the given CSS class es to this Element
     * @param names String The CSS class(es) to add to this element.
     * @param prefix String Prefix to prepend to each class.
@@ -30,7 +30,7 @@ trait ICompositeElementLite
       /* suffix */ js.UndefOr[java.lang.String], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] fixes scope with flyweight
     * @param eventName Object
     * @param handler Object
@@ -47,7 +47,7 @@ trait ICompositeElementLite
       /* opt */ js.UndefOr[js.Any], 
       this.type
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Appends the passed element s to this element
     * @param element HTMLElement/Ext.dom.Element a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
@@ -55,13 +55,13 @@ trait ICompositeElementLite
   @JSName("appendChild")
   var appendChild_ICompositeElementLite: js.UndefOr[
     js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Appends this element to the passed element
     * @param el String/HTMLElement/Ext.dom.Element The new parent element. The id of the node, a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
     */
   @JSName("appendTo")
-  var appendTo_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var appendTo_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] More flexible version of setStyle for setting style properties
     * @param styles String/Object/Function A style specification string, e.g. "width:100px", or object in the form {width:"100px"}, or a function which returns such a specification.
     * @returns Ext.dom.Element this
@@ -69,9 +69,9 @@ trait ICompositeElementLite
   @JSName("applyStyles")
   var applyStyles_ICompositeElementLite: js.UndefOr[
     js.Function1[/* styles */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Removes all elements  */
-  var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var clear: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Creates the passed DomHelper config and appends it to this element or optionally inserts it before the passed child e
     * @param config Object DomHelper element config object. If no tag is specified (e.g., {tag:'input'}) then a div will be automatically generated with the specified attributes.
     * @param insertBefore HTMLElement a child element of this element.
@@ -86,7 +86,7 @@ trait ICompositeElementLite
       /* returnDom */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Calls the passed function for each element in this composite
     * @param fn Function The function to call.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Element.
@@ -94,40 +94,40 @@ trait ICompositeElementLite
     */
   var each: js.UndefOr[
     js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Property] (HTMLElement[]) */
-  var elements: js.UndefOr[Array] = js.undefined
+  var elements: js.UndefOr[Array] = js.native
   /** [Method] Clears this Composite and adds the elements passed
     * @param els HTMLElement[]/Ext.dom.CompositeElementLite Either an array of DOM elements, or another Composite from which to fill this Composite.
     * @returns Ext.dom.CompositeElementLite this
     */
-  var fill: js.UndefOr[js.Function1[/* els */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var fill: js.UndefOr[js.Function1[/* els */ js.UndefOr[js.Any], this.type]] = js.native
   /** [Method] Filters this composite to only elements that match the passed selector
     * @param selector String/Function A string CSS selector or a comparison function. The comparison function will be called with the following arguments:
     * @returns Ext.dom.CompositeElementLite this
     */
-  var filter: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var filter: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], this.type]] = js.native
   /** [Method] Returns the number of elements in this Composite
     * @returns Number
     */
-  var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getCount: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Find the index of the passed element within the composite collection
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, or an Ext.dom.Element, or an HtmlElement to find within the composite collection.
     * @returns Number The index of the passed Ext.dom.Element in the composite collection, or -1 if not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.undefined
+  var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.native
   /** [Method] Inserts this element after the passed element in the DOM
     * @param el String/HTMLElement/Ext.dom.Element The element to insert after. The id of the node, a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
     */
   @JSName("insertAfter")
-  var insertAfter_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var insertAfter_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] Inserts this element before the passed element in the DOM
     * @param el String/HTMLElement/Ext.dom.Element The element before which this element will be inserted. The id of the node, a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
     */
   @JSName("insertBefore")
-  var insertBefore_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var insertBefore_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] Inserts an element as the first child of this element
     * @param element String/HTMLElement/Ext.dom.Element The id or element to insert.
     * @returns Ext.dom.Element this
@@ -135,7 +135,7 @@ trait ICompositeElementLite
   @JSName("insertFirst")
   var insertFirst_ICompositeElementLite: js.UndefOr[
     js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Inserts or creates the passed element or DomHelper config as a sibling of this element
     * @param el String/HTMLElement/Ext.dom.Element/Object/Array The id, element to insert or a DomHelper config to create and insert or an array of any of those.
     * @param where String 'before' or 'after'.
@@ -150,14 +150,14 @@ trait ICompositeElementLite
       /* returnDom */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns a flyweight Element of the dom element object at the specified index
     * @param index Number
     * @returns Ext.dom.Element
     */
   var item: js.UndefOr[
     js.Function1[/* index */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Adds one or more CSS classes to this element and removes the same class es from all siblings
     * @param className String/String[] The CSS class to add, or an array of classes.
     * @returns Ext.dom.Element this
@@ -165,7 +165,7 @@ trait ICompositeElementLite
   @JSName("radioCls")
   var radioCls_ICompositeElementLite: js.UndefOr[
     js.Function1[/* className */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Removes the given CSS class es from this Element
     * @param names String The CSS class(es) to remove from this element.
     * @param prefix String Prefix to prepend to each class to be removed.
@@ -180,7 +180,7 @@ trait ICompositeElementLite
       /* suffix */ js.UndefOr[java.lang.String], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Removes the specified element s
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, the Element itself, the index of the element in this composite or an array of any of those.
     * @param removeDom Boolean true to also remove the element from the document
@@ -188,12 +188,12 @@ trait ICompositeElementLite
     */
   var removeElement: js.UndefOr[
     js.Function2[/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Forces the browser to repaint this element
     * @returns Ext.dom.Element this
     */
   @JSName("repaint")
-  var repaint_ICompositeElementLite: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var repaint_ICompositeElementLite: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] Replaces a CSS class on the element with another
     * @param oldName String The CSS class to replace.
     * @param newName String The replacement CSS class.
@@ -210,7 +210,7 @@ trait ICompositeElementLite
       /* suffix */ js.UndefOr[java.lang.String], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Replaces the specified element with the passed element
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, the Element itself, the index of the element in this composite to replace.
     * @param replacement String/Ext.Element The id of an element or the Element itself.
@@ -224,13 +224,13 @@ trait ICompositeElementLite
       /* domReplace */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Replaces this element with the passed element
     * @param el String/HTMLElement/Ext.dom.Element/Object The new element (id of the node, a DOM Node or an existing Element) or a DomHelper config of an element to create.
     * @returns Ext.dom.Element This element.
     */
   @JSName("replaceWith")
-  var replaceWith_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var replaceWith_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] Replaces the passed element with this element
     * @param element String/HTMLElement/Ext.dom.Element The element to replace. The id of the node, a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
@@ -238,7 +238,7 @@ trait ICompositeElementLite
   @JSName("replace")
   var replace_ICompositeElementLite: js.UndefOr[
     js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
     * @param selector String/HTMLElement[] The CSS selector or an array of elements
     * @param composite Boolean Return a CompositeElement as opposed to a CompositeElementLite. Defaults to false.
@@ -246,7 +246,7 @@ trait ICompositeElementLite
     */
   var select: js.UndefOr[
     js.Function2[/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the element s CSS bottom style
     * @param bottom String The bottom CSS property value.
     * @returns Ext.dom.Element this
@@ -254,13 +254,13 @@ trait ICompositeElementLite
   @JSName("setBottom")
   var setBottom_ICompositeElementLite: js.UndefOr[
     js.Function1[/* bottom */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the element s box
     * @param box Object The box to fill, for example: {  left: ...,  top: ...,  width: ...,  height: ... }
     * @returns Ext.dom.Element this
     */
   @JSName("setBox")
-  var setBox_ICompositeElementLite: js.UndefOr[js.Function1[/* box */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var setBox_ICompositeElementLite: js.UndefOr[js.Function1[/* box */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] Set the height of this Element
     * @param height Number/String The new height.
     * @returns Ext.dom.Element this
@@ -268,7 +268,7 @@ trait ICompositeElementLite
   @JSName("setHeight")
   var setHeight_ICompositeElementLite: js.UndefOr[
     js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the element s left position directly using CSS style instead of setX
     * @param left String The left CSS property value.
     * @returns Ext.dom.Element this
@@ -276,7 +276,7 @@ trait ICompositeElementLite
   @JSName("setLeft")
   var setLeft_ICompositeElementLite: js.UndefOr[
     js.Function1[/* left */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Set the maximum height of this Element
     * @param height Number/String The new maximum height.
     * @returns Ext.dom.Element this
@@ -284,7 +284,7 @@ trait ICompositeElementLite
   @JSName("setMaxHeight")
   var setMaxHeight_ICompositeElementLite: js.UndefOr[
     js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Set the maximum width of this Element
     * @param width Number/String The new maximum width.
     * @returns Ext.dom.Element this
@@ -292,7 +292,7 @@ trait ICompositeElementLite
   @JSName("setMaxWidth")
   var setMaxWidth_ICompositeElementLite: js.UndefOr[
     js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Set the minimum height of this Element
     * @param height Number/String The new minimum height.
     * @returns Ext.dom.Element this
@@ -300,7 +300,7 @@ trait ICompositeElementLite
   @JSName("setMinHeight")
   var setMinHeight_ICompositeElementLite: js.UndefOr[
     js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Set the minimum width of this Element
     * @param width Number/String The new minimum width.
     * @returns Ext.dom.Element this
@@ -308,7 +308,7 @@ trait ICompositeElementLite
   @JSName("setMinWidth")
   var setMinWidth_ICompositeElementLite: js.UndefOr[
     js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the element s CSS right style
     * @param right String The right CSS property value.
     * @returns Ext.dom.Element this
@@ -316,7 +316,7 @@ trait ICompositeElementLite
   @JSName("setRight")
   var setRight_ICompositeElementLite: js.UndefOr[
     js.Function1[/* right */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Set the size of this Element
     * @param width Number/String The new width. This may be one of:  A Number specifying the new width in this Element's defaultUnits (by default, pixels). A String used to set the CSS width style. Animation may not be used. A size object in the format {width: widthValue, height: heightValue}.
     * @param height Number/String The new height. This may be one of:  A Number specifying the new height in this Element's defaultUnits (by default, pixels). A String used to set the CSS height style. Animation may not be used.
@@ -329,7 +329,7 @@ trait ICompositeElementLite
       /* height */ js.UndefOr[js.Any], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Wrapper for setting style properties also takes single object parameter of multiple styles
     * @param property String/Object The style property to be set, or an object of multiple styles.
     * @param value String The value to apply to the given property, or null if an object was passed.
@@ -342,7 +342,7 @@ trait ICompositeElementLite
       /* value */ js.UndefOr[java.lang.String], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the element s top position directly using CSS style instead of setY
     * @param top String The top CSS property value.
     * @returns Ext.dom.Element this
@@ -350,7 +350,7 @@ trait ICompositeElementLite
   @JSName("setTop")
   var setTop_ICompositeElementLite: js.UndefOr[
     js.Function1[/* top */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Use this to change the visibility mode between VISIBILITY DISPLAY or OFFSETS
     * @param mode Object
     * @returns Ext.dom.Element this
@@ -358,13 +358,13 @@ trait ICompositeElementLite
   @JSName("setVisibilityMode")
   var setVisibilityMode_ICompositeElementLite: js.UndefOr[
     js.Function1[/* mode */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the visibility of the element see details
     * @param visible Boolean Whether the element is visible.
     * @returns Ext.Element this
     */
   @JSName("setVisible")
-  var setVisible_ICompositeElementLite: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], IElement]] = js.undefined
+  var setVisible_ICompositeElementLite: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], IElement]] = js.native
   /** [Method] Set the width of this Element
     * @param width Number/String The new width.
     * @returns Ext.dom.Element this
@@ -372,25 +372,25 @@ trait ICompositeElementLite
   @JSName("setWidth")
   var setWidth_ICompositeElementLite: js.UndefOr[
     js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the position of the element in page coordinates regardless of how the element is positioned
     * @param pos Number[] Contains X &amp; Y [x, y] values for new position (coordinates are page-based).
     * @returns Ext.dom.Element this
     */
   @JSName("setXY")
-  var setXY_ICompositeElementLite: js.UndefOr[js.Function1[/* pos */ js.UndefOr[Array], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var setXY_ICompositeElementLite: js.UndefOr[js.Function1[/* pos */ js.UndefOr[Array], typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] Sets the X position of the element based on page coordinates
     * @param x Number The X position of the element
     * @returns Ext.dom.Element this
     */
   @JSName("setX")
-  var setX_ICompositeElementLite: js.UndefOr[js.Function1[/* x */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var setX_ICompositeElementLite: js.UndefOr[js.Function1[/* x */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] Sets the Y position of the element based on page coordinates
     * @param y Number The Y position of the element.
     * @returns Ext.dom.Element this
     */
   @JSName("setY")
-  var setY_ICompositeElementLite: js.UndefOr[js.Function1[/* y */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var setY_ICompositeElementLite: js.UndefOr[js.Function1[/* y */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] Sets the passed attributes as attributes of this element a style attribute can be a string object or function
     * @param attributes Object The object with the attributes.
     * @param useSet Boolean false to override the default setAttribute to use expandos.
@@ -403,7 +403,7 @@ trait ICompositeElementLite
       /* useSet */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Toggles the specified CSS class on this element removes it if it already exists otherwise adds it
     * @param className String The CSS class to toggle.
     * @returns Ext.dom.Element this
@@ -411,341 +411,241 @@ trait ICompositeElementLite
   @JSName("toggleCls")
   var toggleCls_ICompositeElementLite: js.UndefOr[
     js.Function1[/* className */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  ] = js.native
 }
 
 object ICompositeElementLite {
   @scala.inline
-  def apply(
-    DISPLAY: js.UndefOr[Double] = js.undefined,
-    OFFSETS: js.UndefOr[Double] = js.undefined,
-    VISIBILITY: js.UndefOr[Double] = js.undefined,
-    add: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => ICompositeElementLite = null,
-    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addCls: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => ICompositeElementLite = null,
-    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    appendChild: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    appendTo: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    applyStyles: /* styles */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    bubbleEvents: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    child: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    clear: () => Unit = null,
-    clearListeners: () => Unit = null,
-    config: js.Any = null,
-    contains: /* element */ js.UndefOr[js.Any] => Boolean = null,
-    createChild: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement = null,
-    cssTranslate: () => Unit = null,
-    defaultUnit: java.lang.String = null,
-    destroy: () => Unit = null,
-    dom: HTMLElement = null,
-    down: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ICompositeElementLite = null,
-    elements: Array = null,
-    enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: java.lang.String = null,
-    fill: /* els */ js.UndefOr[js.Any] => ICompositeElementLite = null,
-    filter: /* selector */ js.UndefOr[js.Any] => ICompositeElementLite = null,
-    findParent: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    findParentNode: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    first: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    getAlignToXY: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => Array = null,
-    getAnchorXY: (/* anchor */ js.UndefOr[java.lang.String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array = null,
-    getAttribute: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String = null,
-    getBorderWidth: /* side */ js.UndefOr[java.lang.String] => Double = null,
-    getBottom: () => Double = null,
-    getBox: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => _ = null,
-    getBubbleEvents: () => _ = null,
-    getCount: () => Double = null,
-    getHTML: () => java.lang.String = null,
-    getHeight: /* contentHeight */ js.UndefOr[Boolean] => Double = null,
-    getHtml: () => java.lang.String = null,
-    getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getLeft: () => Double = null,
-    getListeners: () => _ = null,
-    getMargin: /* sides */ js.UndefOr[java.lang.String] => _ = null,
-    getOffsetsTo: /* element */ js.UndefOr[js.Any] => Array = null,
-    getOuterHeight: () => Unit = null,
-    getOuterWidth: () => Unit = null,
-    getPadding: /* side */ js.UndefOr[java.lang.String] => Double = null,
-    getPageBox: /* asRegion */ js.UndefOr[Boolean] => _ = null,
-    getRight: () => Double = null,
-    getScrollParent: () => Unit = null,
-    getSize: /* contentSize */ js.UndefOr[Boolean] => _ = null,
-    getStyle: /* prop */ js.UndefOr[java.lang.String] => java.lang.String = null,
-    getTop: () => Double = null,
-    getValue: /* asNumber */ js.UndefOr[Boolean] => _ = null,
-    getViewSize: () => _ = null,
-    getWidth: /* contentWidth */ js.UndefOr[Boolean] => Double = null,
-    getX: () => Double = null,
-    getXY: () => Array = null,
-    getY: () => Double = null,
-    hasCls: /* name */ js.UndefOr[java.lang.String] => Boolean = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
-    hide: () => Unit = null,
-    id: java.lang.String = null,
-    indexOf: /* el */ js.UndefOr[js.Any] => Double = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    insertAfter: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    insertBefore: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    insertFirst: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    insertHtml: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => _ = null,
-    insertSibling: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement = null,
-    is: /* selector */ js.UndefOr[java.lang.String] => Boolean = null,
-    isDescendent: () => Unit = null,
-    isStyle: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => Boolean = null,
-    isTransparent: /* prop */ js.UndefOr[java.lang.String] => Boolean = null,
-    item: /* index */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement = null,
-    last: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    listeners: js.Any = null,
-    mask: () => Unit = null,
-    mixins: js.Any = null,
-    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    next: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
-    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    parent: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    platformConfig: js.Any = null,
-    prev: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _ = null,
-    purgeAllListeners: () => Unit = null,
-    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
-    radioCls: /* className */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
-    remove: () => Unit = null,
-    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeAllListeners: () => Unit = null,
-    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeCls: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement = null,
-    removeElement: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => ICompositeElementLite = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
-    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    repaint: () => typings.senchaTouch.Ext.dom.IElement = null,
-    replace: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    replaceCls: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement = null,
-    replaceElement: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => ICompositeElementLite = null,
-    replaceWith: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    select: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean]) => ICompositeElementLite = null,
-    self: IClass = null,
-    serializeForm: /* form */ js.UndefOr[js.Any] => java.lang.String = null,
-    set: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement = null,
-    setBottom: /* bottom */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement = null,
-    setBox: /* box */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setCls: /* className */ js.UndefOr[js.Any] => Unit = null,
-    setHTML: /* html */ js.UndefOr[java.lang.String] => Unit = null,
-    setHeight: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    setHtml: /* html */ js.UndefOr[java.lang.String] => Unit = null,
-    setLeft: /* left */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement = null,
-    setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setMaxHeight: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    setMaxWidth: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    setMinHeight: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    setMinWidth: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    setRight: /* right */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement = null,
-    setSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.IElement = null,
-    setStyle: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement = null,
-    setTop: /* top */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement = null,
-    setTopLeft: () => Unit = null,
-    setVisibilityMode: /* mode */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    setVisible: /* visible */ js.UndefOr[Boolean] => IElement = null,
-    setWidth: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement = null,
-    setX: /* x */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement = null,
-    setXY: /* pos */ js.UndefOr[Array] => typings.senchaTouch.Ext.dom.IElement = null,
-    setY: /* y */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement = null,
-    show: () => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    suspendEvents: () => Unit = null,
-    toggleCls: /* className */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement = null,
-    translatePoints: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => _ = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
-    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    unmask: () => Unit = null,
-    up: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any]) => _ = null,
-    update: /* html */ js.UndefOr[java.lang.String] => Unit = null,
-    uses: Array = null,
-    wrap: (/* config */ js.UndefOr[js.Any], /* domNode */ js.UndefOr[Boolean]) => _ = null
-  ): ICompositeElementLite = {
+  def apply(): ICompositeElementLite = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DISPLAY)) __obj.updateDynamic("DISPLAY")(DISPLAY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(OFFSETS)) __obj.updateDynamic("OFFSETS")(OFFSETS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(VISIBILITY)) __obj.updateDynamic("VISIBILITY")(VISIBILITY.get.asInstanceOf[js.Any])
-    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction2(add))
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
-    if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction3(addCls))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (appendChild != null) __obj.updateDynamic("appendChild")(js.Any.fromFunction1(appendChild))
-    if (appendTo != null) __obj.updateDynamic("appendTo")(js.Any.fromFunction1(appendTo))
-    if (applyStyles != null) __obj.updateDynamic("applyStyles")(js.Any.fromFunction1(applyStyles))
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction2(child))
-    if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
-    if (createChild != null) __obj.updateDynamic("createChild")(js.Any.fromFunction3(createChild))
-    if (cssTranslate != null) __obj.updateDynamic("cssTranslate")(js.Any.fromFunction0(cssTranslate))
-    if (defaultUnit != null) __obj.updateDynamic("defaultUnit")(defaultUnit.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
-    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction2(down))
-    if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
-    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(js.Any.fromFunction1(fill))
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (findParent != null) __obj.updateDynamic("findParent")(js.Any.fromFunction3(findParent))
-    if (findParentNode != null) __obj.updateDynamic("findParentNode")(js.Any.fromFunction3(findParentNode))
-    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (first != null) __obj.updateDynamic("first")(js.Any.fromFunction2(first))
-    if (getAlignToXY != null) __obj.updateDynamic("getAlignToXY")(js.Any.fromFunction3(getAlignToXY))
-    if (getAnchorXY != null) __obj.updateDynamic("getAnchorXY")(js.Any.fromFunction3(getAnchorXY))
-    if (getAttribute != null) __obj.updateDynamic("getAttribute")(js.Any.fromFunction2(getAttribute))
-    if (getBorderWidth != null) __obj.updateDynamic("getBorderWidth")(js.Any.fromFunction1(getBorderWidth))
-    if (getBottom != null) __obj.updateDynamic("getBottom")(js.Any.fromFunction0(getBottom))
-    if (getBox != null) __obj.updateDynamic("getBox")(js.Any.fromFunction2(getBox))
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
-    if (getCount != null) __obj.updateDynamic("getCount")(js.Any.fromFunction0(getCount))
-    if (getHTML != null) __obj.updateDynamic("getHTML")(js.Any.fromFunction0(getHTML))
-    if (getHeight != null) __obj.updateDynamic("getHeight")(js.Any.fromFunction1(getHeight))
-    if (getHtml != null) __obj.updateDynamic("getHtml")(js.Any.fromFunction0(getHtml))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getLeft != null) __obj.updateDynamic("getLeft")(js.Any.fromFunction0(getLeft))
-    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
-    if (getMargin != null) __obj.updateDynamic("getMargin")(js.Any.fromFunction1(getMargin))
-    if (getOffsetsTo != null) __obj.updateDynamic("getOffsetsTo")(js.Any.fromFunction1(getOffsetsTo))
-    if (getOuterHeight != null) __obj.updateDynamic("getOuterHeight")(js.Any.fromFunction0(getOuterHeight))
-    if (getOuterWidth != null) __obj.updateDynamic("getOuterWidth")(js.Any.fromFunction0(getOuterWidth))
-    if (getPadding != null) __obj.updateDynamic("getPadding")(js.Any.fromFunction1(getPadding))
-    if (getPageBox != null) __obj.updateDynamic("getPageBox")(js.Any.fromFunction1(getPageBox))
-    if (getRight != null) __obj.updateDynamic("getRight")(js.Any.fromFunction0(getRight))
-    if (getScrollParent != null) __obj.updateDynamic("getScrollParent")(js.Any.fromFunction0(getScrollParent))
-    if (getSize != null) __obj.updateDynamic("getSize")(js.Any.fromFunction1(getSize))
-    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction1(getStyle))
-    if (getTop != null) __obj.updateDynamic("getTop")(js.Any.fromFunction0(getTop))
-    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction1(getValue))
-    if (getViewSize != null) __obj.updateDynamic("getViewSize")(js.Any.fromFunction0(getViewSize))
-    if (getWidth != null) __obj.updateDynamic("getWidth")(js.Any.fromFunction1(getWidth))
-    if (getX != null) __obj.updateDynamic("getX")(js.Any.fromFunction0(getX))
-    if (getXY != null) __obj.updateDynamic("getXY")(js.Any.fromFunction0(getXY))
-    if (getY != null) __obj.updateDynamic("getY")(js.Any.fromFunction0(getY))
-    if (hasCls != null) __obj.updateDynamic("hasCls")(js.Any.fromFunction1(hasCls))
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (insertAfter != null) __obj.updateDynamic("insertAfter")(js.Any.fromFunction1(insertAfter))
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction1(insertBefore))
-    if (insertFirst != null) __obj.updateDynamic("insertFirst")(js.Any.fromFunction1(insertFirst))
-    if (insertHtml != null) __obj.updateDynamic("insertHtml")(js.Any.fromFunction3(insertHtml))
-    if (insertSibling != null) __obj.updateDynamic("insertSibling")(js.Any.fromFunction3(insertSibling))
-    if (is != null) __obj.updateDynamic("is")(js.Any.fromFunction1(is))
-    if (isDescendent != null) __obj.updateDynamic("isDescendent")(js.Any.fromFunction0(isDescendent))
-    if (isStyle != null) __obj.updateDynamic("isStyle")(js.Any.fromFunction2(isStyle))
-    if (isTransparent != null) __obj.updateDynamic("isTransparent")(js.Any.fromFunction1(isTransparent))
-    if (item != null) __obj.updateDynamic("item")(js.Any.fromFunction1(item))
-    if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction2(last))
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(js.Any.fromFunction0(mask))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction2(next))
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
-    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
-    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (parent != null) __obj.updateDynamic("parent")(js.Any.fromFunction2(parent))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (prev != null) __obj.updateDynamic("prev")(js.Any.fromFunction2(prev))
-    if (purgeAllListeners != null) __obj.updateDynamic("purgeAllListeners")(js.Any.fromFunction0(purgeAllListeners))
-    if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
-    if (radioCls != null) __obj.updateDynamic("radioCls")(js.Any.fromFunction1(radioCls))
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction0(remove))
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
-    if (removeAllListeners != null) __obj.updateDynamic("removeAllListeners")(js.Any.fromFunction0(removeAllListeners))
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
-    if (removeCls != null) __obj.updateDynamic("removeCls")(js.Any.fromFunction3(removeCls))
-    if (removeElement != null) __obj.updateDynamic("removeElement")(js.Any.fromFunction2(removeElement))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
-    if (repaint != null) __obj.updateDynamic("repaint")(js.Any.fromFunction0(repaint))
-    if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction1(replace))
-    if (replaceCls != null) __obj.updateDynamic("replaceCls")(js.Any.fromFunction4(replaceCls))
-    if (replaceElement != null) __obj.updateDynamic("replaceElement")(js.Any.fromFunction3(replaceElement))
-    if (replaceWith != null) __obj.updateDynamic("replaceWith")(js.Any.fromFunction1(replaceWith))
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (serializeForm != null) __obj.updateDynamic("serializeForm")(js.Any.fromFunction1(serializeForm))
-    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
-    if (setBottom != null) __obj.updateDynamic("setBottom")(js.Any.fromFunction1(setBottom))
-    if (setBox != null) __obj.updateDynamic("setBox")(js.Any.fromFunction1(setBox))
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
-    if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
-    if (setHTML != null) __obj.updateDynamic("setHTML")(js.Any.fromFunction1(setHTML))
-    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction1(setHeight))
-    if (setHtml != null) __obj.updateDynamic("setHtml")(js.Any.fromFunction1(setHtml))
-    if (setLeft != null) __obj.updateDynamic("setLeft")(js.Any.fromFunction1(setLeft))
-    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (setMaxHeight != null) __obj.updateDynamic("setMaxHeight")(js.Any.fromFunction1(setMaxHeight))
-    if (setMaxWidth != null) __obj.updateDynamic("setMaxWidth")(js.Any.fromFunction1(setMaxWidth))
-    if (setMinHeight != null) __obj.updateDynamic("setMinHeight")(js.Any.fromFunction1(setMinHeight))
-    if (setMinWidth != null) __obj.updateDynamic("setMinWidth")(js.Any.fromFunction1(setMinWidth))
-    if (setRight != null) __obj.updateDynamic("setRight")(js.Any.fromFunction1(setRight))
-    if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2(setSize))
-    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
-    if (setTop != null) __obj.updateDynamic("setTop")(js.Any.fromFunction1(setTop))
-    if (setTopLeft != null) __obj.updateDynamic("setTopLeft")(js.Any.fromFunction0(setTopLeft))
-    if (setVisibilityMode != null) __obj.updateDynamic("setVisibilityMode")(js.Any.fromFunction1(setVisibilityMode))
-    if (setVisible != null) __obj.updateDynamic("setVisible")(js.Any.fromFunction1(setVisible))
-    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction1(setWidth))
-    if (setX != null) __obj.updateDynamic("setX")(js.Any.fromFunction1(setX))
-    if (setXY != null) __obj.updateDynamic("setXY")(js.Any.fromFunction1(setXY))
-    if (setY != null) __obj.updateDynamic("setY")(js.Any.fromFunction1(setY))
-    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (toggleCls != null) __obj.updateDynamic("toggleCls")(js.Any.fromFunction1(toggleCls))
-    if (translatePoints != null) __obj.updateDynamic("translatePoints")(js.Any.fromFunction2(translatePoints))
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
-    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
-    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (unmask != null) __obj.updateDynamic("unmask")(js.Any.fromFunction0(unmask))
-    if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction2(up))
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(js.Any.fromFunction2(wrap))
     __obj.asInstanceOf[ICompositeElementLite]
   }
+  @scala.inline
+  implicit class ICompositeElementLiteOps[Self <: ICompositeElementLite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => ICompositeElementLite): Self = this.set("add", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAdd: Self = this.set("add", js.undefined)
+    @scala.inline
+    def setAddCls(
+      value: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
+    ): Self = this.set("addCls", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAddCls: Self = this.set("addCls", js.undefined)
+    @scala.inline
+    def setAddListener(
+      value: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => ICompositeElementLite
+    ): Self = this.set("addListener", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteAddListener: Self = this.set("addListener", js.undefined)
+    @scala.inline
+    def setAppendChild(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("appendChild", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAppendChild: Self = this.set("appendChild", js.undefined)
+    @scala.inline
+    def setAppendTo(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("appendTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setApplyStyles(value: /* styles */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("applyStyles", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteApplyStyles: Self = this.set("applyStyles", js.undefined)
+    @scala.inline
+    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteClear: Self = this.set("clear", js.undefined)
+    @scala.inline
+    def setCreateChild(
+      value: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+    ): Self = this.set("createChild", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCreateChild: Self = this.set("createChild", js.undefined)
+    @scala.inline
+    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ICompositeElementLite): Self = this.set("each", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEach: Self = this.set("each", js.undefined)
+    @scala.inline
+    def setElements(value: Array): Self = this.set("elements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElements: Self = this.set("elements", js.undefined)
+    @scala.inline
+    def setFill(value: /* els */ js.UndefOr[js.Any] => ICompositeElementLite): Self = this.set("fill", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setFilter(value: /* selector */ js.UndefOr[js.Any] => ICompositeElementLite): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setGetCount(value: () => Double): Self = this.set("getCount", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetCount: Self = this.set("getCount", js.undefined)
+    @scala.inline
+    def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = this.set("indexOf", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIndexOf: Self = this.set("indexOf", js.undefined)
+    @scala.inline
+    def setInsertAfter(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("insertAfter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertAfter: Self = this.set("insertAfter", js.undefined)
+    @scala.inline
+    def setInsertBefore(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("insertBefore", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertBefore: Self = this.set("insertBefore", js.undefined)
+    @scala.inline
+    def setInsertFirst(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("insertFirst", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertFirst: Self = this.set("insertFirst", js.undefined)
+    @scala.inline
+    def setInsertSibling(
+      value: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+    ): Self = this.set("insertSibling", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteInsertSibling: Self = this.set("insertSibling", js.undefined)
+    @scala.inline
+    def setItem(value: /* index */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("item", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setRadioCls(value: /* className */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("radioCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRadioCls: Self = this.set("radioCls", js.undefined)
+    @scala.inline
+    def setRemoveCls(
+      value: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
+    ): Self = this.set("removeCls", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRemoveCls: Self = this.set("removeCls", js.undefined)
+    @scala.inline
+    def setRemoveElement(value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => ICompositeElementLite): Self = this.set("removeElement", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRemoveElement: Self = this.set("removeElement", js.undefined)
+    @scala.inline
+    def setRepaint(value: () => typings.senchaTouch.Ext.dom.IElement): Self = this.set("repaint", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRepaint: Self = this.set("repaint", js.undefined)
+    @scala.inline
+    def setReplace(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("replace", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReplace: Self = this.set("replace", js.undefined)
+    @scala.inline
+    def setReplaceCls(
+      value: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
+    ): Self = this.set("replaceCls", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteReplaceCls: Self = this.set("replaceCls", js.undefined)
+    @scala.inline
+    def setReplaceElement(
+      value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => ICompositeElementLite
+    ): Self = this.set("replaceElement", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteReplaceElement: Self = this.set("replaceElement", js.undefined)
+    @scala.inline
+    def setReplaceWith(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("replaceWith", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReplaceWith: Self = this.set("replaceWith", js.undefined)
+    @scala.inline
+    def setSelect(
+      value: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean]) => ICompositeElementLite
+    ): Self = this.set("select", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setSet(
+      value: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+    ): Self = this.set("set", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSet: Self = this.set("set", js.undefined)
+    @scala.inline
+    def setSetBottom(value: /* bottom */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setBottom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBottom: Self = this.set("setBottom", js.undefined)
+    @scala.inline
+    def setSetBox(value: /* box */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setBox", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBox: Self = this.set("setBox", js.undefined)
+    @scala.inline
+    def setSetHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setHeight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetHeight: Self = this.set("setHeight", js.undefined)
+    @scala.inline
+    def setSetLeft(value: /* left */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetLeft: Self = this.set("setLeft", js.undefined)
+    @scala.inline
+    def setSetMaxHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setMaxHeight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaxHeight: Self = this.set("setMaxHeight", js.undefined)
+    @scala.inline
+    def setSetMaxWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setMaxWidth", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaxWidth: Self = this.set("setMaxWidth", js.undefined)
+    @scala.inline
+    def setSetMinHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setMinHeight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinHeight: Self = this.set("setMinHeight", js.undefined)
+    @scala.inline
+    def setSetMinWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setMinWidth", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinWidth: Self = this.set("setMinWidth", js.undefined)
+    @scala.inline
+    def setSetRight(value: /* right */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRight: Self = this.set("setRight", js.undefined)
+    @scala.inline
+    def setSetSize(
+      value: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.IElement
+    ): Self = this.set("setSize", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetSize: Self = this.set("setSize", js.undefined)
+    @scala.inline
+    def setSetStyle(
+      value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
+    ): Self = this.set("setStyle", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetStyle: Self = this.set("setStyle", js.undefined)
+    @scala.inline
+    def setSetTop(value: /* top */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setTop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTop: Self = this.set("setTop", js.undefined)
+    @scala.inline
+    def setSetVisibilityMode(value: /* mode */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setVisibilityMode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetVisibilityMode: Self = this.set("setVisibilityMode", js.undefined)
+    @scala.inline
+    def setSetVisible(value: /* visible */ js.UndefOr[Boolean] => IElement): Self = this.set("setVisible", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetVisible: Self = this.set("setVisible", js.undefined)
+    @scala.inline
+    def setSetWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setWidth", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetWidth: Self = this.set("setWidth", js.undefined)
+    @scala.inline
+    def setSetX(value: /* x */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setX", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetX: Self = this.set("setX", js.undefined)
+    @scala.inline
+    def setSetXY(value: /* pos */ js.UndefOr[Array] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setXY", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetXY: Self = this.set("setXY", js.undefined)
+    @scala.inline
+    def setSetY(value: /* y */ js.UndefOr[Double] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("setY", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetY: Self = this.set("setY", js.undefined)
+    @scala.inline
+    def setToggleCls(value: /* className */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = this.set("toggleCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteToggleCls: Self = this.set("toggleCls", js.undefined)
+  }
+  
 }
 

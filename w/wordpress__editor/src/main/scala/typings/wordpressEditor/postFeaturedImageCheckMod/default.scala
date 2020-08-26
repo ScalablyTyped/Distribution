@@ -1,0 +1,13 @@
+package typings.wordpressEditor.postFeaturedImageCheckMod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ComponentType
+import typings.wordpressEditor.postFeaturedImageCheckMod.PostFeaturedImageCheck.Props
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@wordpress/editor/components/post-featured-image/check", JSImport.Default)
+@js.native
+object default extends TopLevel[ComponentType[Props]]
+

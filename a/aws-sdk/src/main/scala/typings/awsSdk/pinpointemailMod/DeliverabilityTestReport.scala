@@ -34,22 +34,46 @@ trait DeliverabilityTestReport extends js.Object {
 
 object DeliverabilityTestReport {
   @scala.inline
-  def apply(
-    CreateDate: Timestamp = null,
-    DeliverabilityTestStatus: DeliverabilityTestStatus = null,
-    FromEmailAddress: EmailAddress = null,
-    ReportId: ReportId = null,
-    ReportName: ReportName = null,
-    Subject: DeliverabilityTestSubject = null
-  ): DeliverabilityTestReport = {
+  def apply(): DeliverabilityTestReport = {
     val __obj = js.Dynamic.literal()
-    if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (DeliverabilityTestStatus != null) __obj.updateDynamic("DeliverabilityTestStatus")(DeliverabilityTestStatus.asInstanceOf[js.Any])
-    if (FromEmailAddress != null) __obj.updateDynamic("FromEmailAddress")(FromEmailAddress.asInstanceOf[js.Any])
-    if (ReportId != null) __obj.updateDynamic("ReportId")(ReportId.asInstanceOf[js.Any])
-    if (ReportName != null) __obj.updateDynamic("ReportName")(ReportName.asInstanceOf[js.Any])
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliverabilityTestReport]
   }
+  @scala.inline
+  implicit class DeliverabilityTestReportOps[Self <: DeliverabilityTestReport] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateDate(value: Timestamp): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    @scala.inline
+    def setDeliverabilityTestStatus(value: DeliverabilityTestStatus): Self = this.set("DeliverabilityTestStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliverabilityTestStatus: Self = this.set("DeliverabilityTestStatus", js.undefined)
+    @scala.inline
+    def setFromEmailAddress(value: EmailAddress): Self = this.set("FromEmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromEmailAddress: Self = this.set("FromEmailAddress", js.undefined)
+    @scala.inline
+    def setReportId(value: ReportId): Self = this.set("ReportId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportId: Self = this.set("ReportId", js.undefined)
+    @scala.inline
+    def setReportName(value: ReportName): Self = this.set("ReportName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportName: Self = this.set("ReportName", js.undefined)
+    @scala.inline
+    def setSubject(value: DeliverabilityTestSubject): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("Subject", js.undefined)
+  }
+  
 }
 

@@ -65,26 +65,54 @@ trait SchemaCryptoKey extends js.Object {
 
 object SchemaCryptoKey {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    labels: StringDictionary[String] = null,
-    name: String = null,
-    nextRotationTime: String = null,
-    primary: SchemaCryptoKeyVersion = null,
-    purpose: String = null,
-    rotationPeriod: String = null,
-    versionTemplate: SchemaCryptoKeyVersionTemplate = null
-  ): SchemaCryptoKey = {
+  def apply(): SchemaCryptoKey = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nextRotationTime != null) __obj.updateDynamic("nextRotationTime")(nextRotationTime.asInstanceOf[js.Any])
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
-    if (rotationPeriod != null) __obj.updateDynamic("rotationPeriod")(rotationPeriod.asInstanceOf[js.Any])
-    if (versionTemplate != null) __obj.updateDynamic("versionTemplate")(versionTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCryptoKey]
   }
+  @scala.inline
+  implicit class SchemaCryptoKeyOps[Self <: SchemaCryptoKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNextRotationTime(value: String): Self = this.set("nextRotationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextRotationTime: Self = this.set("nextRotationTime", js.undefined)
+    @scala.inline
+    def setPrimary(value: SchemaCryptoKeyVersion): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setPurpose(value: String): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpose: Self = this.set("purpose", js.undefined)
+    @scala.inline
+    def setRotationPeriod(value: String): Self = this.set("rotationPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationPeriod: Self = this.set("rotationPeriod", js.undefined)
+    @scala.inline
+    def setVersionTemplate(value: SchemaCryptoKeyVersionTemplate): Self = this.set("versionTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionTemplate: Self = this.set("versionTemplate", js.undefined)
+  }
+  
 }
 

@@ -23,12 +23,15 @@ object removeUsersFromRoles extends js.Object {
     *                         group will have roles removed.
     */
   def apply(user: String): Unit = js.native
+  def apply(user: String, roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
   def apply(user: String, roles: js.Array[String]): Unit = js.native
   def apply(user: String, roles: js.Array[String], group: String): Unit = js.native
   def apply(user: js.Array[js.Object | String]): Unit = js.native
+  def apply(user: js.Array[js.Object | String], roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
   def apply(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = js.native
   def apply(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = js.native
   def apply(user: js.Object): Unit = js.native
+  def apply(user: js.Object, roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
   def apply(user: js.Object, roles: js.Array[String]): Unit = js.native
   def apply(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
 }

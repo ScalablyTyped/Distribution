@@ -46,24 +46,50 @@ trait SchemaUpdateBordersRequest extends js.Object {
 
 object SchemaUpdateBordersRequest {
   @scala.inline
-  def apply(
-    bottom: SchemaBorder = null,
-    innerHorizontal: SchemaBorder = null,
-    innerVertical: SchemaBorder = null,
-    left: SchemaBorder = null,
-    range: SchemaGridRange = null,
-    right: SchemaBorder = null,
-    top: SchemaBorder = null
-  ): SchemaUpdateBordersRequest = {
+  def apply(): SchemaUpdateBordersRequest = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (innerHorizontal != null) __obj.updateDynamic("innerHorizontal")(innerHorizontal.asInstanceOf[js.Any])
-    if (innerVertical != null) __obj.updateDynamic("innerVertical")(innerVertical.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateBordersRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateBordersRequestOps[Self <: SchemaUpdateBordersRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBottom(value: SchemaBorder): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setInnerHorizontal(value: SchemaBorder): Self = this.set("innerHorizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerHorizontal: Self = this.set("innerHorizontal", js.undefined)
+    @scala.inline
+    def setInnerVertical(value: SchemaBorder): Self = this.set("innerVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerVertical: Self = this.set("innerVertical", js.undefined)
+    @scala.inline
+    def setLeft(value: SchemaBorder): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setRight(value: SchemaBorder): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setTop(value: SchemaBorder): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+  }
+  
 }
 

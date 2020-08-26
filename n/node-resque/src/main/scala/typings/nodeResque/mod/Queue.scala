@@ -19,9 +19,11 @@ class Queue protected () extends EventEmitter {
   def cleanOldWorkers(age: Double): js.Promise[StringDictionary[ErrorPayload] | js.Object] = js.native
   def connect(): js.Promise[Unit] = js.native
   def del(queue: String, jobName: String): js.Promise[Double] = js.native
+  def del(queue: String, jobName: String, args: js.UndefOr[scala.Nothing], count: Double): js.Promise[Double] = js.native
   def del(queue: String, jobName: String, args: js.Array[_]): js.Promise[Double] = js.native
   def del(queue: String, jobName: String, args: js.Array[_], count: Double): js.Promise[Double] = js.native
   def delDelayed(queue: String, jobName: String): js.Promise[js.Array[Double]] = js.native
+  def delDelayed(queue: String, jobName: String, args: js.UndefOr[scala.Nothing], count: Double): js.Promise[js.Array[Double]] = js.native
   def delDelayed(queue: String, jobName: String, args: js.Array[_]): js.Promise[js.Array[Double]] = js.native
   def delDelayed(queue: String, jobName: String, args: js.Array[_], count: Double): js.Promise[js.Array[Double]] = js.native
   def delLock(lockName: String): js.Promise[Double] = js.native

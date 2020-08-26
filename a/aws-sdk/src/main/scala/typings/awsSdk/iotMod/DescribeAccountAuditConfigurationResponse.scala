@@ -22,16 +22,34 @@ trait DescribeAccountAuditConfigurationResponse extends js.Object {
 
 object DescribeAccountAuditConfigurationResponse {
   @scala.inline
-  def apply(
-    auditCheckConfigurations: AuditCheckConfigurations = null,
-    auditNotificationTargetConfigurations: AuditNotificationTargetConfigurations = null,
-    roleArn: RoleArn = null
-  ): DescribeAccountAuditConfigurationResponse = {
+  def apply(): DescribeAccountAuditConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (auditCheckConfigurations != null) __obj.updateDynamic("auditCheckConfigurations")(auditCheckConfigurations.asInstanceOf[js.Any])
-    if (auditNotificationTargetConfigurations != null) __obj.updateDynamic("auditNotificationTargetConfigurations")(auditNotificationTargetConfigurations.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccountAuditConfigurationResponse]
   }
+  @scala.inline
+  implicit class DescribeAccountAuditConfigurationResponseOps[Self <: DescribeAccountAuditConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditCheckConfigurations(value: AuditCheckConfigurations): Self = this.set("auditCheckConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditCheckConfigurations: Self = this.set("auditCheckConfigurations", js.undefined)
+    @scala.inline
+    def setAuditNotificationTargetConfigurations(value: AuditNotificationTargetConfigurations): Self = this.set("auditNotificationTargetConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditNotificationTargetConfigurations: Self = this.set("auditNotificationTargetConfigurations", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

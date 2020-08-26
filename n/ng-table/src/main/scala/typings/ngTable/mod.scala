@@ -74,6 +74,7 @@ object mod extends js.Object {
     extends typings.ngTable.coreMod.NgTableParams[T] {
     def this(baseParameters: Boolean) = this()
     def this(baseParameters: IParamValues[T]) = this()
+    def this(baseParameters: js.UndefOr[scala.Nothing], baseSettings: ISettings[T]) = this()
     def this(baseParameters: Boolean, baseSettings: ISettings[T]) = this()
     def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
   }

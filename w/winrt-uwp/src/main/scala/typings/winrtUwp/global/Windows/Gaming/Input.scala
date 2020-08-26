@@ -21,14 +21,7 @@ object Input extends js.Object {
   /** Contains information about an audio headset attached to a gamepad. */
   @js.native
   abstract class Headset ()
-    extends typings.winrtUwp.Windows.Gaming.Input.Headset {
-    /** The XAudio endpoint ID for the headset's audio capture device. */
-    /* CompleteClass */
-    override var captureDeviceId: String = js.native
-    /** The XAudio enpoint ID for the headset's audio render device. */
-    /* CompleteClass */
-    override var renderDeviceId: String = js.native
-  }
+    extends typings.winrtUwp.Windows.Gaming.Input.Headset
   
   /* static members */
   @js.native

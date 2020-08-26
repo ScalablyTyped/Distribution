@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object classImplements extends js.Object {
   def apply(): ClassImplements_ = js.native
+  def apply(id: js.UndefOr[scala.Nothing], typeParameters: TypeParameterInstantiation_): ClassImplements_ = js.native
   def apply(id: Identifier_): ClassImplements_ = js.native
   def apply(id: Identifier_, typeParameters: TypeParameterInstantiation_): ClassImplements_ = js.native
 }

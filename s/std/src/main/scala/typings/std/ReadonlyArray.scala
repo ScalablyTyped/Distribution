@@ -284,6 +284,7 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[T] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[T] = js.native
   def slice(start: Double): js.Array[T] = js.native
   def slice(start: Double, end: Double): js.Array[T] = js.native
   /**

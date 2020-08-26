@@ -1,35 +1,10 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.ComponentElement
-import typings.devextreme.anon.ComponentT
-import typings.devextreme.anon.ElementEventJQueryEvent
-import typings.devextreme.anon.Icon
 import typings.devextreme.anon.ItemElementItemIndex
-import typings.devextreme.anon.Model
 import typings.devextreme.anon.ModelSelectedItem
-import typings.devextreme.anon.Name
 import typings.devextreme.anon.PreviousValue
-import typings.devextreme.devextremeStrings.always
-import typings.devextreme.devextremeStrings.auto
-import typings.devextreme.devextremeStrings.clear
 import typings.devextreme.devextremeStrings.contains
-import typings.devextreme.devextremeStrings.dropDown
-import typings.devextreme.devextremeStrings.email
-import typings.devextreme.devextremeStrings.filled
-import typings.devextreme.devextremeStrings.instantly
-import typings.devextreme.devextremeStrings.invalid
-import typings.devextreme.devextremeStrings.onFocus
-import typings.devextreme.devextremeStrings.outlined
-import typings.devextreme.devextremeStrings.password
-import typings.devextreme.devextremeStrings.pending
-import typings.devextreme.devextremeStrings.search
 import typings.devextreme.devextremeStrings.startswith
-import typings.devextreme.devextremeStrings.tel
-import typings.devextreme.devextremeStrings.text
-import typings.devextreme.devextremeStrings.underlined
-import typings.devextreme.devextremeStrings.url
-import typings.devextreme.devextremeStrings.useButtons
-import typings.devextreme.devextremeStrings.valid
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.data.DataSource
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
@@ -40,13 +15,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ trait dxDropDownListOptions[T] extends dxDropDownEditorOptions[T] {
+- typings.devextreme.mod.DevExpress.ui.DataExpressionMixinOptions because var conflicts: value. Inlined dataSource, displayExpr, itemTemplate, items, valueExpr */ @js.native
+trait dxDropDownListOptions[T] extends dxDropDownEditorOptions[T] {
   /** @name DataExpressionMixin.Options.dataSource */
-  var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.undefined
+  var dataSource: js.UndefOr[String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions] = js.native
   /** @name DataExpressionMixin.Options.displayExpr */
-  var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.undefined
+  var displayExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String])] = js.native
   /** @name dxDropDownList.Options.displayValue */
-  var displayValue: js.UndefOr[String] = js.undefined
+  var displayValue: js.UndefOr[String] = js.native
   /** @name dxDropDownList.Options.groupTemplate */
   var groupTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
@@ -55,9 +31,9 @@ import scala.scalajs.js.annotation._
       /* itemElement */ dxElement, 
       String | Element | JQuery
     ])
-  ] = js.undefined
+  ] = js.native
   /** @name dxDropDownList.Options.grouped */
-  var grouped: js.UndefOr[Boolean] = js.undefined
+  var grouped: js.UndefOr[Boolean] = js.native
   /** @name DataExpressionMixin.Options.itemTemplate */
   var itemTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function3[
@@ -66,216 +42,168 @@ import scala.scalajs.js.annotation._
       /* itemElement */ dxElement, 
       String | Element | JQuery
     ])
-  ] = js.undefined
+  ] = js.native
   /** @name DataExpressionMixin.Options.items */
-  var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.undefined
+  var items: js.UndefOr[js.Array[CollectionWidgetItem | _]] = js.native
   /** @name dxDropDownList.Options.minSearchLength */
-  var minSearchLength: js.UndefOr[Double] = js.undefined
+  var minSearchLength: js.UndefOr[Double] = js.native
   /** @name dxDropDownList.Options.noDataText */
-  var noDataText: js.UndefOr[String] = js.undefined
+  var noDataText: js.UndefOr[String] = js.native
   /** @name dxDropDownList.Options.onItemClick */
-  var onItemClick: js.UndefOr[js.Function1[/* e */ ItemElementItemIndex[T], _]] = js.undefined
+  var onItemClick: js.UndefOr[js.Function1[/* e */ ItemElementItemIndex[T], _]] = js.native
   /** @name dxDropDownList.Options.onSelectionChanged */
-  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ModelSelectedItem[T], _]] = js.undefined
+  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ModelSelectedItem[T], _]] = js.native
   /** @name dxDropDownList.Options.onValueChanged */
   @JSName("onValueChanged")
-  var onValueChanged_dxDropDownListOptions: js.UndefOr[js.Function1[/* e */ PreviousValue[T], _]] = js.undefined
+  var onValueChanged_dxDropDownListOptions: js.UndefOr[js.Function1[/* e */ PreviousValue[T], _]] = js.native
   /** @name dxDropDownList.Options.searchEnabled */
-  var searchEnabled: js.UndefOr[Boolean] = js.undefined
+  var searchEnabled: js.UndefOr[Boolean] = js.native
   /** @name dxDropDownList.Options.searchExpr */
-  var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
+  var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.native
   /** @name dxDropDownList.Options.searchMode */
-  var searchMode: js.UndefOr[contains | startswith] = js.undefined
+  var searchMode: js.UndefOr[contains | startswith] = js.native
   /** @name dxDropDownList.Options.searchTimeout */
-  var searchTimeout: js.UndefOr[Double] = js.undefined
+  var searchTimeout: js.UndefOr[Double] = js.native
   /** @name dxDropDownList.Options.selectedItem */
-  var selectedItem: js.UndefOr[js.Any] = js.undefined
+  var selectedItem: js.UndefOr[js.Any] = js.native
   /** @name dxDropDownList.Options.showDataBeforeSearch */
-  var showDataBeforeSearch: js.UndefOr[Boolean] = js.undefined
+  var showDataBeforeSearch: js.UndefOr[Boolean] = js.native
   /** @name DataExpressionMixin.Options.valueExpr */
-  var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.undefined
+  var valueExpr: js.UndefOr[String | (js.Function1[/* item */ js.Any, String | Double | Boolean])] = js.native
   /** @name dxDropDownList.Options.wrapItemText */
-  var wrapItemText: js.UndefOr[Boolean] = js.undefined
+  var wrapItemText: js.UndefOr[Boolean] = js.native
 }
 
 object dxDropDownListOptions {
   @scala.inline
-  def apply[T](
-    acceptCustomValue: js.UndefOr[Boolean] = js.undefined,
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    applyValueMode: instantly | useButtons = null,
-    bindingOptions: js.Any = null,
-    buttons: js.Array[clear | dropDown | dxTextEditorButton] = null,
-    dataSource: String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions = null,
-    deferRendering: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    displayExpr: String | (js.Function1[/* item */ js.Any, String]) = null,
-    displayValue: String = null,
-    dropDownButtonTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery]) = null,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    groupTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-      /* itemData */ js.Any, 
-      /* itemIndex */ Double, 
-      /* itemElement */ dxElement, 
-      String | Element | JQuery
-    ]) = null,
-    grouped: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    inputAttr: js.Any = null,
-    isValid: js.UndefOr[Boolean] = js.undefined,
-    itemTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
-      /* itemData */ js.Any, 
-      /* itemIndex */ Double, 
-      /* itemElement */ dxElement, 
-      String | Element | JQuery
-    ]) = null,
-    items: js.Array[CollectionWidgetItem | _] = null,
-    mask: String = null,
-    maskChar: String = null,
-    maskInvalidMessage: String = null,
-    maskRules: js.Any = null,
-    maxLength: String | Double = null,
-    minSearchLength: js.UndefOr[Double] = js.undefined,
-    mode: email | password | search | tel | text | url = null,
-    name: String = null,
-    noDataText: String = null,
-    onChange: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onClosed: /* e */ ComponentT[T] => _ = null,
-    onContentReady: /* e */ ComponentElement[T] => _ = null,
-    onCopy: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onCut: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onDisposing: /* e */ Model[T] => _ = null,
-    onEnterKey: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onFocusIn: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onFocusOut: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onInitialized: /* e */ typings.devextreme.anon.Element[T] => _ = null,
-    onInput: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onItemClick: /* e */ ItemElementItemIndex[T] => _ = null,
-    onKeyDown: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onKeyPress: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onKeyUp: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onOpened: /* e */ ComponentT[T] => _ = null,
-    onOptionChanged: /* e */ Name[T] => _ = null,
-    onPaste: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onSelectionChanged: /* e */ ModelSelectedItem[T] => _ = null,
-    onValueChanged: /* e */ PreviousValue[T] => _ = null,
-    openOnFieldClick: js.UndefOr[Boolean] = js.undefined,
-    opened: js.UndefOr[Boolean] = js.undefined,
-    placeholder: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    searchEnabled: js.UndefOr[Boolean] = js.undefined,
-    searchExpr: String | js.Function | (js.Array[String | js.Function]) = null,
-    searchMode: contains | startswith = null,
-    searchTimeout: js.UndefOr[Double] = js.undefined,
-    selectedItem: js.Any = null,
-    showClearButton: js.UndefOr[Boolean] = js.undefined,
-    showDataBeforeSearch: js.UndefOr[Boolean] = js.undefined,
-    showDropDownButton: js.UndefOr[Boolean] = js.undefined,
-    showMaskMode: always | onFocus = null,
-    spellcheck: js.UndefOr[Boolean] = js.undefined,
-    stylingMode: outlined | underlined | filled = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    text: String = null,
-    useMaskedValue: js.UndefOr[Boolean] = js.undefined,
-    validationError: js.Any = null,
-    validationErrors: js.Array[_] = null,
-    validationMessageMode: always | auto = null,
-    validationStatus: valid | invalid | pending = null,
-    value: String = null,
-    valueChangeEvent: String = null,
-    valueExpr: String | (js.Function1[/* item */ js.Any, String | Double | Boolean]) = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null,
-    wrapItemText: js.UndefOr[Boolean] = js.undefined
-  ): dxDropDownListOptions[T] = {
+  def apply[T](): dxDropDownListOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptCustomValue)) __obj.updateDynamic("acceptCustomValue")(acceptCustomValue.get.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
-    if (applyValueMode != null) __obj.updateDynamic("applyValueMode")(applyValueMode.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferRendering)) __obj.updateDynamic("deferRendering")(deferRendering.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (displayExpr != null) __obj.updateDynamic("displayExpr")(displayExpr.asInstanceOf[js.Any])
-    if (displayValue != null) __obj.updateDynamic("displayValue")(displayValue.asInstanceOf[js.Any])
-    if (dropDownButtonTemplate != null) __obj.updateDynamic("dropDownButtonTemplate")(dropDownButtonTemplate.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
-    if (groupTemplate != null) __obj.updateDynamic("groupTemplate")(groupTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
-    if (inputAttr != null) __obj.updateDynamic("inputAttr")(inputAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.get.asInstanceOf[js.Any])
-    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (maskChar != null) __obj.updateDynamic("maskChar")(maskChar.asInstanceOf[js.Any])
-    if (maskInvalidMessage != null) __obj.updateDynamic("maskInvalidMessage")(maskInvalidMessage.asInstanceOf[js.Any])
-    if (maskRules != null) __obj.updateDynamic("maskRules")(maskRules.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSearchLength)) __obj.updateDynamic("minSearchLength")(minSearchLength.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1(onContentReady))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onEnterKey != null) __obj.updateDynamic("onEnterKey")(js.Any.fromFunction1(onEnterKey))
-    if (onFocusIn != null) __obj.updateDynamic("onFocusIn")(js.Any.fromFunction1(onFocusIn))
-    if (onFocusOut != null) __obj.updateDynamic("onFocusOut")(js.Any.fromFunction1(onFocusOut))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction1(onItemClick))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction1(onOpened))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1(onSelectionChanged))
-    if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1(onValueChanged))
-    if (!js.isUndefined(openOnFieldClick)) __obj.updateDynamic("openOnFieldClick")(openOnFieldClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opened)) __obj.updateDynamic("opened")(opened.get.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchEnabled)) __obj.updateDynamic("searchEnabled")(searchEnabled.get.asInstanceOf[js.Any])
-    if (searchExpr != null) __obj.updateDynamic("searchExpr")(searchExpr.asInstanceOf[js.Any])
-    if (searchMode != null) __obj.updateDynamic("searchMode")(searchMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchTimeout)) __obj.updateDynamic("searchTimeout")(searchTimeout.get.asInstanceOf[js.Any])
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDataBeforeSearch)) __obj.updateDynamic("showDataBeforeSearch")(showDataBeforeSearch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDropDownButton)) __obj.updateDynamic("showDropDownButton")(showDropDownButton.get.asInstanceOf[js.Any])
-    if (showMaskMode != null) __obj.updateDynamic("showMaskMode")(showMaskMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
-    if (stylingMode != null) __obj.updateDynamic("stylingMode")(stylingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaskedValue)) __obj.updateDynamic("useMaskedValue")(useMaskedValue.get.asInstanceOf[js.Any])
-    if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
-    if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
-    if (validationMessageMode != null) __obj.updateDynamic("validationMessageMode")(validationMessageMode.asInstanceOf[js.Any])
-    if (validationStatus != null) __obj.updateDynamic("validationStatus")(validationStatus.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueChangeEvent != null) __obj.updateDynamic("valueChangeEvent")(valueChangeEvent.asInstanceOf[js.Any])
-    if (valueExpr != null) __obj.updateDynamic("valueExpr")(valueExpr.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapItemText)) __obj.updateDynamic("wrapItemText")(wrapItemText.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxDropDownListOptions[T]]
   }
+  @scala.inline
+  implicit class dxDropDownListOptionsOps[Self <: dxDropDownListOptions[_], T] (val x: Self with dxDropDownListOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceVarargs(value: (CollectionWidgetItem | js.Any)*): Self = this.set("dataSource", js.Array(value :_*))
+    @scala.inline
+    def setDataSource(value: String | (js.Array[CollectionWidgetItem | _]) | DataSource | DataSourceOptions): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDisplayExprFunction1(value: /* item */ js.Any => String): Self = this.set("displayExpr", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDisplayExpr(value: String | (js.Function1[/* item */ js.Any, String])): Self = this.set("displayExpr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayExpr: Self = this.set("displayExpr", js.undefined)
+    @scala.inline
+    def setDisplayValue(value: String): Self = this.set("displayValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayValue: Self = this.set("displayValue", js.undefined)
+    @scala.inline
+    def setGroupTemplateFunction3(
+      value: (/* itemData */ js.Any, /* itemIndex */ Double, /* itemElement */ dxElement) => String | Element | JQuery
+    ): Self = this.set("groupTemplate", js.Any.fromFunction3(value))
+    @scala.inline
+    def setGroupTemplate(
+      value: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
+          /* itemData */ js.Any, 
+          /* itemIndex */ Double, 
+          /* itemElement */ dxElement, 
+          String | Element | JQuery
+        ])
+    ): Self = this.set("groupTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupTemplate: Self = this.set("groupTemplate", js.undefined)
+    @scala.inline
+    def setGrouped(value: Boolean): Self = this.set("grouped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrouped: Self = this.set("grouped", js.undefined)
+    @scala.inline
+    def setItemTemplateFunction3(
+      value: (/* itemData */ js.Any, /* itemIndex */ Double, /* itemElement */ dxElement) => String | Element | JQuery
+    ): Self = this.set("itemTemplate", js.Any.fromFunction3(value))
+    @scala.inline
+    def setItemTemplate(
+      value: typings.devextreme.mod.DevExpress.core.template | (js.Function3[
+          /* itemData */ js.Any, 
+          /* itemIndex */ Double, 
+          /* itemElement */ dxElement, 
+          String | Element | JQuery
+        ])
+    ): Self = this.set("itemTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemTemplate: Self = this.set("itemTemplate", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: (CollectionWidgetItem | js.Any)*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[CollectionWidgetItem | _]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setMinSearchLength(value: Double): Self = this.set("minSearchLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSearchLength: Self = this.set("minSearchLength", js.undefined)
+    @scala.inline
+    def setNoDataText(value: String): Self = this.set("noDataText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoDataText: Self = this.set("noDataText", js.undefined)
+    @scala.inline
+    def setOnItemClick(value: /* e */ ItemElementItemIndex[T] => _): Self = this.set("onItemClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnItemClick: Self = this.set("onItemClick", js.undefined)
+    @scala.inline
+    def setOnSelectionChanged(value: /* e */ ModelSelectedItem[T] => _): Self = this.set("onSelectionChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelectionChanged: Self = this.set("onSelectionChanged", js.undefined)
+    @scala.inline
+    def setOnValueChanged(value: /* e */ PreviousValue[T] => _): Self = this.set("onValueChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnValueChanged: Self = this.set("onValueChanged", js.undefined)
+    @scala.inline
+    def setSearchEnabled(value: Boolean): Self = this.set("searchEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchEnabled: Self = this.set("searchEnabled", js.undefined)
+    @scala.inline
+    def setSearchExprVarargs(value: (String | js.Function)*): Self = this.set("searchExpr", js.Array(value :_*))
+    @scala.inline
+    def setSearchExpr(value: String | js.Function | (js.Array[String | js.Function])): Self = this.set("searchExpr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchExpr: Self = this.set("searchExpr", js.undefined)
+    @scala.inline
+    def setSearchMode(value: contains | startswith): Self = this.set("searchMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchMode: Self = this.set("searchMode", js.undefined)
+    @scala.inline
+    def setSearchTimeout(value: Double): Self = this.set("searchTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchTimeout: Self = this.set("searchTimeout", js.undefined)
+    @scala.inline
+    def setSelectedItem(value: js.Any): Self = this.set("selectedItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItem: Self = this.set("selectedItem", js.undefined)
+    @scala.inline
+    def setShowDataBeforeSearch(value: Boolean): Self = this.set("showDataBeforeSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDataBeforeSearch: Self = this.set("showDataBeforeSearch", js.undefined)
+    @scala.inline
+    def setValueExprFunction1(value: /* item */ js.Any => String | Double | Boolean): Self = this.set("valueExpr", js.Any.fromFunction1(value))
+    @scala.inline
+    def setValueExpr(value: String | (js.Function1[/* item */ js.Any, String | Double | Boolean])): Self = this.set("valueExpr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueExpr: Self = this.set("valueExpr", js.undefined)
+    @scala.inline
+    def setWrapItemText(value: Boolean): Self = this.set("wrapItemText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapItemText: Self = this.set("wrapItemText", js.undefined)
+  }
+  
 }
 

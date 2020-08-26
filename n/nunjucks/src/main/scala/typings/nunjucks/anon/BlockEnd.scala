@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BlockEnd extends js.Object {
-  var blockEnd: js.UndefOr[String] = js.undefined
-  var blockStart: js.UndefOr[String] = js.undefined
-  var commentEnd: js.UndefOr[String] = js.undefined
-  var commentStart: js.UndefOr[String] = js.undefined
-  var variableEnd: js.UndefOr[String] = js.undefined
-  var variableStart: js.UndefOr[String] = js.undefined
+  var blockEnd: js.UndefOr[String] = js.native
+  var blockStart: js.UndefOr[String] = js.native
+  var commentEnd: js.UndefOr[String] = js.native
+  var commentStart: js.UndefOr[String] = js.native
+  var variableEnd: js.UndefOr[String] = js.native
+  var variableStart: js.UndefOr[String] = js.native
 }
 
 object BlockEnd {
   @scala.inline
-  def apply(
-    blockEnd: String = null,
-    blockStart: String = null,
-    commentEnd: String = null,
-    commentStart: String = null,
-    variableEnd: String = null,
-    variableStart: String = null
-  ): BlockEnd = {
+  def apply(): BlockEnd = {
     val __obj = js.Dynamic.literal()
-    if (blockEnd != null) __obj.updateDynamic("blockEnd")(blockEnd.asInstanceOf[js.Any])
-    if (blockStart != null) __obj.updateDynamic("blockStart")(blockStart.asInstanceOf[js.Any])
-    if (commentEnd != null) __obj.updateDynamic("commentEnd")(commentEnd.asInstanceOf[js.Any])
-    if (commentStart != null) __obj.updateDynamic("commentStart")(commentStart.asInstanceOf[js.Any])
-    if (variableEnd != null) __obj.updateDynamic("variableEnd")(variableEnd.asInstanceOf[js.Any])
-    if (variableStart != null) __obj.updateDynamic("variableStart")(variableStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockEnd]
   }
+  @scala.inline
+  implicit class BlockEndOps[Self <: BlockEnd] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockEnd(value: String): Self = this.set("blockEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockEnd: Self = this.set("blockEnd", js.undefined)
+    @scala.inline
+    def setBlockStart(value: String): Self = this.set("blockStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockStart: Self = this.set("blockStart", js.undefined)
+    @scala.inline
+    def setCommentEnd(value: String): Self = this.set("commentEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommentEnd: Self = this.set("commentEnd", js.undefined)
+    @scala.inline
+    def setCommentStart(value: String): Self = this.set("commentStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommentStart: Self = this.set("commentStart", js.undefined)
+    @scala.inline
+    def setVariableEnd(value: String): Self = this.set("variableEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariableEnd: Self = this.set("variableEnd", js.undefined)
+    @scala.inline
+    def setVariableStart(value: String): Self = this.set("variableStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariableStart: Self = this.set("variableStart", js.undefined)
+  }
+  
 }
 

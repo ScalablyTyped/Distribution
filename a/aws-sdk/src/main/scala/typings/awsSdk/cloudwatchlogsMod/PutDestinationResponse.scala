@@ -14,10 +14,26 @@ trait PutDestinationResponse extends js.Object {
 
 object PutDestinationResponse {
   @scala.inline
-  def apply(destination: Destination = null): PutDestinationResponse = {
+  def apply(): PutDestinationResponse = {
     val __obj = js.Dynamic.literal()
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDestinationResponse]
   }
+  @scala.inline
+  implicit class PutDestinationResponseOps[Self <: PutDestinationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: Destination): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+  }
+  
 }
 

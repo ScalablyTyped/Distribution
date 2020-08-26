@@ -1,44 +1,38 @@
 package typings.hapiHapi.mod
 
-import typings.hapiCatbox.mod.GenerateFuncFlags
-import typings.hapiCatbox.mod.Id
 import typings.hapiCatbox.mod.PolicyOptions
 import typings.hapiHapi.hapiHapiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServerMethodCache
   extends PolicyOptions[js.Any] {
   @JSName("generateTimeout")
-  var generateTimeout_ServerMethodCache: Double | `false`
+  var generateTimeout_ServerMethodCache: Double | `false` = js.native
 }
 
 object ServerMethodCache {
   @scala.inline
-  def apply(
-    generateTimeout: Double | `false`,
-    dropOnError: js.UndefOr[Boolean] = js.undefined,
-    expiresAt: String = null,
-    expiresIn: js.UndefOr[Double] = js.undefined,
-    generateFunc: (/* id */ Id, /* flags */ GenerateFuncFlags) => js.Promise[js.Any] = null,
-    generateIgnoreWriteError: js.UndefOr[Boolean] = js.undefined,
-    generateOnReadError: js.UndefOr[Boolean] = js.undefined,
-    pendingGenerateTimeout: js.UndefOr[Double] = js.undefined,
-    staleIn: Double | (js.Function2[/* stored */ Double, /* ttl */ Double, Double]) = null,
-    staleTimeout: js.UndefOr[Double] = js.undefined
-  ): ServerMethodCache = {
+  def apply(generateTimeout: Double | `false`): ServerMethodCache = {
     val __obj = js.Dynamic.literal(generateTimeout = generateTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropOnError)) __obj.updateDynamic("dropOnError")(dropOnError.get.asInstanceOf[js.Any])
-    if (expiresAt != null) __obj.updateDynamic("expiresAt")(expiresAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(expiresIn)) __obj.updateDynamic("expiresIn")(expiresIn.get.asInstanceOf[js.Any])
-    if (generateFunc != null) __obj.updateDynamic("generateFunc")(js.Any.fromFunction2(generateFunc))
-    if (!js.isUndefined(generateIgnoreWriteError)) __obj.updateDynamic("generateIgnoreWriteError")(generateIgnoreWriteError.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateOnReadError)) __obj.updateDynamic("generateOnReadError")(generateOnReadError.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingGenerateTimeout)) __obj.updateDynamic("pendingGenerateTimeout")(pendingGenerateTimeout.get.asInstanceOf[js.Any])
-    if (staleIn != null) __obj.updateDynamic("staleIn")(staleIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(staleTimeout)) __obj.updateDynamic("staleTimeout")(staleTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerMethodCache]
   }
+  @scala.inline
+  implicit class ServerMethodCacheOps[Self <: ServerMethodCache] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGenerateTimeout(value: Double | `false`): Self = this.set("generateTimeout", value.asInstanceOf[js.Any])
+  }
+  
 }
 

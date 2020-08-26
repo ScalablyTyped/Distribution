@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("class-validator/container", "useContainer")
+@JSImport("class-validator/types/container", "useContainer")
 @js.native
 object useContainer extends js.Object {
   def apply(iocContainer: Get): Unit = js.native

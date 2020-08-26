@@ -30,17 +30,36 @@ trait GetExportRequest extends js.Object {
 
 object GetExportRequest {
   @scala.inline
-  def apply(
-    exportType: String,
-    restApiId: String,
-    stageName: String,
-    accepts: String = null,
-    parameters: MapOfStringToString = null
-  ): GetExportRequest = {
+  def apply(exportType: String, restApiId: String, stageName: String): GetExportRequest = {
     val __obj = js.Dynamic.literal(exportType = exportType.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
-    if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExportRequest]
   }
+  @scala.inline
+  implicit class GetExportRequestOps[Self <: GetExportRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportType(value: String): Self = this.set("exportType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccepts(value: String): Self = this.set("accepts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccepts: Self = this.set("accepts", js.undefined)
+    @scala.inline
+    def setParameters(value: MapOfStringToString): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+  }
+  
 }
 

@@ -1,13 +1,9 @@
 package typings.tensorflowTfjsLayers.embeddingsMod
 
-import typings.tensorflowTfjsCore.distTypesMod.DataType
-import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.constraintsMod.Constraint
 import typings.tensorflowTfjsLayers.constraintsMod.ConstraintIdentifier
 import typings.tensorflowTfjsLayers.initializersMod.Initializer
 import typings.tensorflowTfjsLayers.initializersMod.InitializerIdentifier
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.regularizersMod.RegularizerIdentifier
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
@@ -15,27 +11,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EmbeddingLayerArgs extends LayerArgs {
   /**
     * Regularizer function applied to the activation.
     */
-  var activityRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
+  var activityRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
   /**
     * Constraint function applied to the `embeddings` matrix.
     */
-  var embeddingsConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.undefined
+  var embeddingsConstraint: js.UndefOr[ConstraintIdentifier | Constraint] = js.native
   /**
     * Initializer for the `embeddings` matrix.
     */
-  var embeddingsInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.undefined
+  var embeddingsInitializer: js.UndefOr[InitializerIdentifier | Initializer] = js.native
   /**
     * Regularizer function applied to the `embeddings` matrix.
     */
-  var embeddingsRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.undefined
+  var embeddingsRegularizer: js.UndefOr[RegularizerIdentifier | Regularizer] = js.native
   /**
     * Integer > 0. Size of the vocabulary, i.e. maximum integer index + 1.
     */
-  var inputDim: Double
+  var inputDim: Double = js.native
   /**
     * Length of input sequences, when it is constant.
     *
@@ -43,7 +40,7 @@ trait EmbeddingLayerArgs extends LayerArgs {
     * `dense` layers upstream (without it, the shape of the dense outputs cannot
     * be computed).
     */
-  var inputLength: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var inputLength: js.UndefOr[Double | js.Array[Double]] = js.native
   /**
     * Whether the input value 0 is a special "padding" value that should be
     * masked out. This is useful when using recurrent layers which may take
@@ -54,49 +51,61 @@ trait EmbeddingLayerArgs extends LayerArgs {
     * consequence, index 0 cannot be used in the vocabulary (inputDim should
     * equal size of vocabulary + 1).
     */
-  var maskZero: js.UndefOr[Boolean] = js.undefined
+  var maskZero: js.UndefOr[Boolean] = js.native
   /**
     * Integer >= 0. Dimension of the dense embedding.
     */
-  var outputDim: Double
+  var outputDim: Double = js.native
 }
 
 object EmbeddingLayerArgs {
   @scala.inline
-  def apply(
-    inputDim: Double,
-    outputDim: Double,
-    activityRegularizer: RegularizerIdentifier | Regularizer = null,
-    batchInputShape: Shape = null,
-    batchSize: js.UndefOr[Double] = js.undefined,
-    dtype: DataType = null,
-    embeddingsConstraint: ConstraintIdentifier | Constraint = null,
-    embeddingsInitializer: InitializerIdentifier | Initializer = null,
-    embeddingsRegularizer: RegularizerIdentifier | Regularizer = null,
-    inputDType: DataType = null,
-    inputLength: Double | js.Array[Double] = null,
-    inputShape: Shape = null,
-    maskZero: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    trainable: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor[Rank]] = null
-  ): EmbeddingLayerArgs = {
+  def apply(inputDim: Double, outputDim: Double): EmbeddingLayerArgs = {
     val __obj = js.Dynamic.literal(inputDim = inputDim.asInstanceOf[js.Any], outputDim = outputDim.asInstanceOf[js.Any])
-    if (activityRegularizer != null) __obj.updateDynamic("activityRegularizer")(activityRegularizer.asInstanceOf[js.Any])
-    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (embeddingsConstraint != null) __obj.updateDynamic("embeddingsConstraint")(embeddingsConstraint.asInstanceOf[js.Any])
-    if (embeddingsInitializer != null) __obj.updateDynamic("embeddingsInitializer")(embeddingsInitializer.asInstanceOf[js.Any])
-    if (embeddingsRegularizer != null) __obj.updateDynamic("embeddingsRegularizer")(embeddingsRegularizer.asInstanceOf[js.Any])
-    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
-    if (inputLength != null) __obj.updateDynamic("inputLength")(inputLength.asInstanceOf[js.Any])
-    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskZero)) __obj.updateDynamic("maskZero")(maskZero.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
-    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddingLayerArgs]
   }
+  @scala.inline
+  implicit class EmbeddingLayerArgsOps[Self <: EmbeddingLayerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputDim(value: Double): Self = this.set("inputDim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputDim(value: Double): Self = this.set("outputDim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivityRegularizer(value: RegularizerIdentifier | Regularizer): Self = this.set("activityRegularizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityRegularizer: Self = this.set("activityRegularizer", js.undefined)
+    @scala.inline
+    def setEmbeddingsConstraint(value: ConstraintIdentifier | Constraint): Self = this.set("embeddingsConstraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbeddingsConstraint: Self = this.set("embeddingsConstraint", js.undefined)
+    @scala.inline
+    def setEmbeddingsInitializer(value: InitializerIdentifier | Initializer): Self = this.set("embeddingsInitializer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbeddingsInitializer: Self = this.set("embeddingsInitializer", js.undefined)
+    @scala.inline
+    def setEmbeddingsRegularizer(value: RegularizerIdentifier | Regularizer): Self = this.set("embeddingsRegularizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbeddingsRegularizer: Self = this.set("embeddingsRegularizer", js.undefined)
+    @scala.inline
+    def setInputLengthVarargs(value: Double*): Self = this.set("inputLength", js.Array(value :_*))
+    @scala.inline
+    def setInputLength(value: Double | js.Array[Double]): Self = this.set("inputLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputLength: Self = this.set("inputLength", js.undefined)
+    @scala.inline
+    def setMaskZero(value: Boolean): Self = this.set("maskZero", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskZero: Self = this.set("maskZero", js.undefined)
+  }
+  
 }
 

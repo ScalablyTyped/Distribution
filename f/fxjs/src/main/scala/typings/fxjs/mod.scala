@@ -28,6 +28,7 @@ object mod extends js.Object {
   def map(f: js.Function, iter: Iterable[_]): js.Any = js.native
   def map(f: js.Function, iter: Iterator[_, _, js.UndefOr[scala.Nothing]]): js.Any = js.native
   def range(start: Double): js.Any = js.native
+  def range(start: Double, stop: js.UndefOr[scala.Nothing], step: Double): js.Any = js.native
   def range(start: Double, stop: Double): js.Any = js.native
   def range(start: Double, stop: Double, step: Double): js.Any = js.native
   type EverF = js.Function1[/* _ */ js.Any, Boolean]

@@ -13,6 +13,16 @@ object ^ extends js.Object {
   	Ensure a function is only called once. When called multiple times it will return the return value from the first call.
   	@param fn - Function that should only be called once.
   	@returns A function that only calls `fn` once.
+  	@example
+  	```
+  	import onetime = require('onetime');
+  	let i = 0;
+  	const foo = onetime(() => ++i);
+  	foo(); //=> 1
+  	foo(); //=> 1
+  	foo(); //=> 1
+  	onetime.callCount(foo); //=> 3
+  	```
   	*/
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): js.Function1[/* arguments */ ArgumentsType, ReturnType] = js.native

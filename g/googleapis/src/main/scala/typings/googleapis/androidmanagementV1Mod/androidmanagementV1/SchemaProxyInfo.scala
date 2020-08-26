@@ -32,18 +32,40 @@ trait SchemaProxyInfo extends js.Object {
 
 object SchemaProxyInfo {
   @scala.inline
-  def apply(
-    excludedHosts: js.Array[String] = null,
-    host: String = null,
-    pacUri: String = null,
-    port: js.UndefOr[Double] = js.undefined
-  ): SchemaProxyInfo = {
+  def apply(): SchemaProxyInfo = {
     val __obj = js.Dynamic.literal()
-    if (excludedHosts != null) __obj.updateDynamic("excludedHosts")(excludedHosts.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (pacUri != null) __obj.updateDynamic("pacUri")(pacUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProxyInfo]
   }
+  @scala.inline
+  implicit class SchemaProxyInfoOps[Self <: SchemaProxyInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludedHostsVarargs(value: String*): Self = this.set("excludedHosts", js.Array(value :_*))
+    @scala.inline
+    def setExcludedHosts(value: js.Array[String]): Self = this.set("excludedHosts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedHosts: Self = this.set("excludedHosts", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setPacUri(value: String): Self = this.set("pacUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePacUri: Self = this.set("pacUri", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+  }
+  
 }
 

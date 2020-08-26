@@ -111,8 +111,8 @@ trait SoundSlot extends EventHandler {
   def pause(): Boolean = js.native
   /**
     * Plays a sound. If {@link pc.SoundSlot#overlap} is true the new sound
-    instance will be played independently of any other instances already playing.
-    Otherwise existing sound instances will stop before playing the new sound.
+    * instance will be played independently of any other instances already playing.
+    * Otherwise existing sound instances will stop before playing the new sound.
     * @returns The new sound instance.
     */
   def play(): SoundInstance = js.native
@@ -123,20 +123,20 @@ trait SoundSlot extends EventHandler {
   def resume(): Boolean = js.native
   /**
     * Connect external Web Audio API nodes. Any sound played by this slot will
-    automatically attach the specified nodes to the source that plays the sound. You need to pass
-    the first node of the node graph that you created externally and the last node of that graph. The first
-    node will be connected to the audio source and the last node will be connected to the destination of the AudioContext (e.g. speakers).
+    * automatically attach the specified nodes to the source that plays the sound. You need to pass
+    * the first node of the node graph that you created externally and the last node of that graph. The first
+    * node will be connected to the audio source and the last node will be connected to the destination of the AudioContext (e.g. speakers).
     * @example
     * var context = app.systems.sound.context;
-    var analyzer = context.createAnalyzer();
-    var distortion = context.createWaveShaper();
-    var filter = context.createBiquadFilter();
-    analyzer.connect(distortion);
-    distortion.connect(filter);
-    slot.setExternalNodes(analyzer, filter);
+    * var analyzer = context.createAnalyzer();
+    * var distortion = context.createWaveShaper();
+    * var filter = context.createBiquadFilter();
+    * analyzer.connect(distortion);
+    * distortion.connect(filter);
+    * slot.setExternalNodes(analyzer, filter);
     * @param firstNode - The first node that will be connected to the audio source of sound instances.
     * @param [lastNode] - The last node that will be connected to the destination of the AudioContext.
-    If unspecified then the firstNode will be connected to the destination instead.
+    * If unspecified then the firstNode will be connected to the destination instead.
     */
   def setExternalNodes(firstNode: AudioNode): Unit = js.native
   def setExternalNodes(firstNode: AudioNode, lastNode: AudioNode): Unit = js.native

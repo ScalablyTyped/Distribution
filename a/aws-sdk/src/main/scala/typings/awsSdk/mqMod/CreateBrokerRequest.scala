@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateBrokerRequest extends js.Object {
   /**
+    * The authentication strategy used to secure the broker.
+    */
+  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.native
+  /**
     * Required. Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions. The automatic upgrades occur during the maintenance window of the broker or after a manual broker reboot.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.native
@@ -43,6 +47,10 @@ trait CreateBrokerRequest extends js.Object {
     */
   var HostInstanceType: js.UndefOr[string] = js.native
   /**
+    * The metadata of the LDAP server used to authenticate and authorize connections to the broker.
+    */
+  var LdapServerMetadata: js.UndefOr[LdapServerMetadataInput] = js.native
+  /**
     * Enables Amazon CloudWatch logging for brokers.
     */
   var Logs: js.UndefOr[typings.awsSdk.mqMod.Logs] = js.native
@@ -78,44 +86,104 @@ trait CreateBrokerRequest extends js.Object {
 
 object CreateBrokerRequest {
   @scala.inline
-  def apply(
-    AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined,
-    BrokerName: string = null,
-    Configuration: ConfigurationId = null,
-    CreatorRequestId: string = null,
-    DeploymentMode: DeploymentMode = null,
-    EncryptionOptions: EncryptionOptions = null,
-    EngineType: EngineType = null,
-    EngineVersion: string = null,
-    HostInstanceType: string = null,
-    Logs: Logs = null,
-    MaintenanceWindowStartTime: WeeklyStartTime = null,
-    PubliclyAccessible: js.UndefOr[boolean] = js.undefined,
-    SecurityGroups: listOfString = null,
-    StorageType: BrokerStorageType = null,
-    SubnetIds: listOfString = null,
-    Tags: mapOfString = null,
-    Users: listOfUser = null
-  ): CreateBrokerRequest = {
+  def apply(): CreateBrokerRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
-    if (BrokerName != null) __obj.updateDynamic("BrokerName")(BrokerName.asInstanceOf[js.Any])
-    if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
-    if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
-    if (DeploymentMode != null) __obj.updateDynamic("DeploymentMode")(DeploymentMode.asInstanceOf[js.Any])
-    if (EncryptionOptions != null) __obj.updateDynamic("EncryptionOptions")(EncryptionOptions.asInstanceOf[js.Any])
-    if (EngineType != null) __obj.updateDynamic("EngineType")(EngineType.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (HostInstanceType != null) __obj.updateDynamic("HostInstanceType")(HostInstanceType.asInstanceOf[js.Any])
-    if (Logs != null) __obj.updateDynamic("Logs")(Logs.asInstanceOf[js.Any])
-    if (MaintenanceWindowStartTime != null) __obj.updateDynamic("MaintenanceWindowStartTime")(MaintenanceWindowStartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Users != null) __obj.updateDynamic("Users")(Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBrokerRequest]
   }
+  @scala.inline
+  implicit class CreateBrokerRequestOps[Self <: CreateBrokerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationStrategy(value: AuthenticationStrategy): Self = this.set("AuthenticationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationStrategy: Self = this.set("AuthenticationStrategy", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setBrokerName(value: string): Self = this.set("BrokerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerName: Self = this.set("BrokerName", js.undefined)
+    @scala.inline
+    def setConfiguration(value: ConfigurationId): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("Configuration", js.undefined)
+    @scala.inline
+    def setCreatorRequestId(value: string): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    @scala.inline
+    def setDeploymentMode(value: DeploymentMode): Self = this.set("DeploymentMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentMode: Self = this.set("DeploymentMode", js.undefined)
+    @scala.inline
+    def setEncryptionOptions(value: EncryptionOptions): Self = this.set("EncryptionOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionOptions: Self = this.set("EncryptionOptions", js.undefined)
+    @scala.inline
+    def setEngineType(value: EngineType): Self = this.set("EngineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineType: Self = this.set("EngineType", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: string): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setHostInstanceType(value: string): Self = this.set("HostInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostInstanceType: Self = this.set("HostInstanceType", js.undefined)
+    @scala.inline
+    def setLdapServerMetadata(value: LdapServerMetadataInput): Self = this.set("LdapServerMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLdapServerMetadata: Self = this.set("LdapServerMetadata", js.undefined)
+    @scala.inline
+    def setLogs(value: Logs): Self = this.set("Logs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogs: Self = this.set("Logs", js.undefined)
+    @scala.inline
+    def setMaintenanceWindowStartTime(value: WeeklyStartTime): Self = this.set("MaintenanceWindowStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceWindowStartTime: Self = this.set("MaintenanceWindowStartTime", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: boolean): Self = this.set("PubliclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("PubliclyAccessible", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: string*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: listOfString): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setStorageType(value: BrokerStorageType): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: string*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: listOfString): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: User*): Self = this.set("Users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: listOfUser): Self = this.set("Users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("Users", js.undefined)
+  }
+  
 }
 

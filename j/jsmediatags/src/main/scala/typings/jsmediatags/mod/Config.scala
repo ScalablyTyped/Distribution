@@ -7,13 +7,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Config extends js.Object {
-  def EXPERIMENTAL_avoidHeadRequests(): Unit
-  def addFileReader(fileReader: TypeofMediaFileReader): Config
-  def addTagReader(tagReader: TypeofMediaTagReader): Config
-  def removeTagReader(tagReader: TypeofMediaTagReader): Config
-  def setDisallowedXhrHeaders(disallowedXhrHeaders: js.Array[String]): Unit
-  def setXhrTimeoutInSec(timeoutInSec: Double): Unit
+  def EXPERIMENTAL_avoidHeadRequests(): Unit = js.native
+  def addFileReader(fileReader: TypeofMediaFileReader): Config = js.native
+  def addTagReader(tagReader: TypeofMediaTagReader): Config = js.native
+  def removeTagReader(tagReader: TypeofMediaTagReader): Config = js.native
+  def setDisallowedXhrHeaders(disallowedXhrHeaders: js.Array[String]): Unit = js.native
+  def setXhrTimeoutInSec(timeoutInSec: Double): Unit = js.native
 }
 
 @JSImport("jsmediatags", "Config")

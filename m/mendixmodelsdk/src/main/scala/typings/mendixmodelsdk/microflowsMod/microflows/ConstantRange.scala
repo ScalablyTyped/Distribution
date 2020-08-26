@@ -23,7 +23,7 @@ class ConstantRange protected () extends Range {
   @JSName("model")
   var model_FConstantRange: IModel = js.native
   def singleObject: Boolean = js.native
-  def singleObject(newValue: Boolean): js.Any = js.native
+  def singleObject_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

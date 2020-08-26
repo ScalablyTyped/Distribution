@@ -50,30 +50,62 @@ trait Activity extends js.Object {
 
 object Activity {
   @scala.inline
-  def apply(
-    CUSTOM: CustomMessageActivity = null,
-    ConditionalSplit: ConditionalSplitActivity = null,
-    Description: string = null,
-    EMAIL: EmailMessageActivity = null,
-    Holdout: HoldoutActivity = null,
-    MultiCondition: MultiConditionalSplitActivity = null,
-    PUSH: PushMessageActivity = null,
-    RandomSplit: RandomSplitActivity = null,
-    SMS: SMSMessageActivity = null,
-    Wait: WaitActivity = null
-  ): Activity = {
+  def apply(): Activity = {
     val __obj = js.Dynamic.literal()
-    if (CUSTOM != null) __obj.updateDynamic("CUSTOM")(CUSTOM.asInstanceOf[js.Any])
-    if (ConditionalSplit != null) __obj.updateDynamic("ConditionalSplit")(ConditionalSplit.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EMAIL != null) __obj.updateDynamic("EMAIL")(EMAIL.asInstanceOf[js.Any])
-    if (Holdout != null) __obj.updateDynamic("Holdout")(Holdout.asInstanceOf[js.Any])
-    if (MultiCondition != null) __obj.updateDynamic("MultiCondition")(MultiCondition.asInstanceOf[js.Any])
-    if (PUSH != null) __obj.updateDynamic("PUSH")(PUSH.asInstanceOf[js.Any])
-    if (RandomSplit != null) __obj.updateDynamic("RandomSplit")(RandomSplit.asInstanceOf[js.Any])
-    if (SMS != null) __obj.updateDynamic("SMS")(SMS.asInstanceOf[js.Any])
-    if (Wait != null) __obj.updateDynamic("Wait")(Wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[Activity]
   }
+  @scala.inline
+  implicit class ActivityOps[Self <: Activity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCUSTOM(value: CustomMessageActivity): Self = this.set("CUSTOM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCUSTOM: Self = this.set("CUSTOM", js.undefined)
+    @scala.inline
+    def setConditionalSplit(value: ConditionalSplitActivity): Self = this.set("ConditionalSplit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionalSplit: Self = this.set("ConditionalSplit", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEMAIL(value: EmailMessageActivity): Self = this.set("EMAIL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEMAIL: Self = this.set("EMAIL", js.undefined)
+    @scala.inline
+    def setHoldout(value: HoldoutActivity): Self = this.set("Holdout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoldout: Self = this.set("Holdout", js.undefined)
+    @scala.inline
+    def setMultiCondition(value: MultiConditionalSplitActivity): Self = this.set("MultiCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiCondition: Self = this.set("MultiCondition", js.undefined)
+    @scala.inline
+    def setPUSH(value: PushMessageActivity): Self = this.set("PUSH", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePUSH: Self = this.set("PUSH", js.undefined)
+    @scala.inline
+    def setRandomSplit(value: RandomSplitActivity): Self = this.set("RandomSplit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRandomSplit: Self = this.set("RandomSplit", js.undefined)
+    @scala.inline
+    def setSMS(value: SMSMessageActivity): Self = this.set("SMS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSMS: Self = this.set("SMS", js.undefined)
+    @scala.inline
+    def setWait(value: WaitActivity): Self = this.set("Wait", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWait: Self = this.set("Wait", js.undefined)
+  }
+  
 }
 

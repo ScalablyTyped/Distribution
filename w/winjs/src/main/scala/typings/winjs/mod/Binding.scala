@@ -26,6 +26,7 @@ object Binding extends js.Object {
   class List[T] ()
     extends typings.winjs.WinJS.Binding.List[T] {
     def this(list: js.Array[T]) = this()
+    def this(list: js.UndefOr[scala.Nothing], options: js.Any) = this()
     def this(list: js.Array[T], options: js.Any) = this()
   }
   
@@ -125,9 +126,160 @@ object Binding extends js.Object {
     * @returns A Promise that completes when every item that contains the data-win-bind attribute has been processed and the update has started.
     **/
   def processAll(): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.UndefOr[scala.Nothing],
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.Any
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(rootElement: js.UndefOr[scala.Nothing], dataContext: js.UndefOr[scala.Nothing], skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: Boolean,
+    bindingCache: js.UndefOr[scala.Nothing],
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: Boolean,
+    bindingCache: js.Any
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: Boolean,
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(rootElement: js.UndefOr[scala.Nothing], dataContext: js.Any): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.Any,
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.UndefOr[scala.Nothing],
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.Any,
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.Any
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.Any,
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(rootElement: js.UndefOr[scala.Nothing], dataContext: js.Any, skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.Any,
+    skipRoot: Boolean,
+    bindingCache: js.UndefOr[scala.Nothing],
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.Any,
+    skipRoot: Boolean,
+    bindingCache: js.Any
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: js.UndefOr[scala.Nothing],
+    dataContext: js.Any,
+    skipRoot: Boolean,
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
   def processAll(rootElement: Element): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.UndefOr[scala.Nothing],
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.Any
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(rootElement: Element, dataContext: js.UndefOr[scala.Nothing], skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: Boolean,
+    bindingCache: js.UndefOr[scala.Nothing],
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: Boolean,
+    bindingCache: js.Any
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.UndefOr[scala.Nothing],
+    skipRoot: Boolean,
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
   def processAll(rootElement: Element, dataContext: js.Any): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.Any,
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.UndefOr[scala.Nothing],
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.Any,
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.Any
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.Any,
+    skipRoot: js.UndefOr[scala.Nothing],
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
   def processAll(rootElement: Element, dataContext: js.Any, skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = js.native
+  def processAll(
+    rootElement: Element,
+    dataContext: js.Any,
+    skipRoot: Boolean,
+    bindingCache: js.UndefOr[scala.Nothing],
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = js.native
   def processAll(rootElement: Element, dataContext: js.Any, skipRoot: Boolean, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = js.native
   def processAll(
     rootElement: Element,

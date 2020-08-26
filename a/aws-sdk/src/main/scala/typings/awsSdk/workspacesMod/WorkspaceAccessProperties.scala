@@ -38,24 +38,50 @@ trait WorkspaceAccessProperties extends js.Object {
 
 object WorkspaceAccessProperties {
   @scala.inline
-  def apply(
-    DeviceTypeAndroid: AccessPropertyValue = null,
-    DeviceTypeChromeOs: AccessPropertyValue = null,
-    DeviceTypeIos: AccessPropertyValue = null,
-    DeviceTypeOsx: AccessPropertyValue = null,
-    DeviceTypeWeb: AccessPropertyValue = null,
-    DeviceTypeWindows: AccessPropertyValue = null,
-    DeviceTypeZeroClient: AccessPropertyValue = null
-  ): WorkspaceAccessProperties = {
+  def apply(): WorkspaceAccessProperties = {
     val __obj = js.Dynamic.literal()
-    if (DeviceTypeAndroid != null) __obj.updateDynamic("DeviceTypeAndroid")(DeviceTypeAndroid.asInstanceOf[js.Any])
-    if (DeviceTypeChromeOs != null) __obj.updateDynamic("DeviceTypeChromeOs")(DeviceTypeChromeOs.asInstanceOf[js.Any])
-    if (DeviceTypeIos != null) __obj.updateDynamic("DeviceTypeIos")(DeviceTypeIos.asInstanceOf[js.Any])
-    if (DeviceTypeOsx != null) __obj.updateDynamic("DeviceTypeOsx")(DeviceTypeOsx.asInstanceOf[js.Any])
-    if (DeviceTypeWeb != null) __obj.updateDynamic("DeviceTypeWeb")(DeviceTypeWeb.asInstanceOf[js.Any])
-    if (DeviceTypeWindows != null) __obj.updateDynamic("DeviceTypeWindows")(DeviceTypeWindows.asInstanceOf[js.Any])
-    if (DeviceTypeZeroClient != null) __obj.updateDynamic("DeviceTypeZeroClient")(DeviceTypeZeroClient.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceAccessProperties]
   }
+  @scala.inline
+  implicit class WorkspaceAccessPropertiesOps[Self <: WorkspaceAccessProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceTypeAndroid(value: AccessPropertyValue): Self = this.set("DeviceTypeAndroid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceTypeAndroid: Self = this.set("DeviceTypeAndroid", js.undefined)
+    @scala.inline
+    def setDeviceTypeChromeOs(value: AccessPropertyValue): Self = this.set("DeviceTypeChromeOs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceTypeChromeOs: Self = this.set("DeviceTypeChromeOs", js.undefined)
+    @scala.inline
+    def setDeviceTypeIos(value: AccessPropertyValue): Self = this.set("DeviceTypeIos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceTypeIos: Self = this.set("DeviceTypeIos", js.undefined)
+    @scala.inline
+    def setDeviceTypeOsx(value: AccessPropertyValue): Self = this.set("DeviceTypeOsx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceTypeOsx: Self = this.set("DeviceTypeOsx", js.undefined)
+    @scala.inline
+    def setDeviceTypeWeb(value: AccessPropertyValue): Self = this.set("DeviceTypeWeb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceTypeWeb: Self = this.set("DeviceTypeWeb", js.undefined)
+    @scala.inline
+    def setDeviceTypeWindows(value: AccessPropertyValue): Self = this.set("DeviceTypeWindows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceTypeWindows: Self = this.set("DeviceTypeWindows", js.undefined)
+    @scala.inline
+    def setDeviceTypeZeroClient(value: AccessPropertyValue): Self = this.set("DeviceTypeZeroClient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceTypeZeroClient: Self = this.set("DeviceTypeZeroClient", js.undefined)
+  }
+  
 }
 

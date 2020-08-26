@@ -18,11 +18,30 @@ trait Credential extends js.Object {
 
 object Credential {
   @scala.inline
-  def apply(Password: SensitiveString = null, Username: SensitiveString = null): Credential = {
+  def apply(): Credential = {
     val __obj = js.Dynamic.literal()
-    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credential]
   }
+  @scala.inline
+  implicit class CredentialOps[Self <: Credential] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPassword(value: SensitiveString): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("Password", js.undefined)
+    @scala.inline
+    def setUsername(value: SensitiveString): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

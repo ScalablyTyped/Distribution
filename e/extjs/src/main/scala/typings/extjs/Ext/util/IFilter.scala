@@ -1,105 +1,108 @@
 package typings.extjs.Ext.util
 
-import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.extjs.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IFilter extends IBase {
   /** [Config Option] (Boolean) */
-  var anyMatch: js.UndefOr[Boolean] = js.undefined
+  var anyMatch: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var caseSensitive: js.UndefOr[Boolean] = js.undefined
+  var caseSensitive: js.UndefOr[Boolean] = js.native
   /** [Property] (Boolean) */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var exactMatch: js.UndefOr[Boolean] = js.undefined
+  var exactMatch: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Function) */
-  var filterFn: js.UndefOr[js.Any] = js.undefined
+  var filterFn: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var operator: js.UndefOr[String] = js.undefined
+  var operator: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var property: js.UndefOr[String] = js.undefined
+  var property: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var root: js.UndefOr[String] = js.undefined
+  var root: js.UndefOr[String] = js.native
   /** [Method] Changes the filtering function which this Filter uses to choose items to include
     * @param filterFn Function A function which returns true or false to either include or exclude the passed object.
     */
-  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Changes the value that this filter tests its configured  link cfg property with
     * @param value Mixed The new value to compare the property with.
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Config Option] (Mixed) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object IFilter {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    anyMatch: js.UndefOr[Boolean] = js.undefined,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    caseSensitive: js.UndefOr[Boolean] = js.undefined,
-    config: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    exactMatch: js.UndefOr[Boolean] = js.undefined,
-    extend: String = null,
-    filterFn: js.Any = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    id: String = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => IFilter = null,
-    mixins: js.Any = null,
-    operator: String = null,
-    property: String = null,
-    requires: Array = null,
-    root: String = null,
-    self: IClass = null,
-    setFilterFn: /* filterFn */ js.UndefOr[js.Any] => Unit = null,
-    setValue: /* value */ js.UndefOr[js.Any] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null,
-    value: js.Any = null
-  ): IFilter = {
+  def apply(): IFilter = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(anyMatch)) __obj.updateDynamic("anyMatch")(anyMatch.get.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.get.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (filterFn != null) __obj.updateDynamic("filterFn")(filterFn.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setFilterFn != null) __obj.updateDynamic("setFilterFn")(js.Any.fromFunction1(setFilterFn))
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFilter]
   }
+  @scala.inline
+  implicit class IFilterOps[Self <: IFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnyMatch(value: Boolean): Self = this.set("anyMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnyMatch: Self = this.set("anyMatch", js.undefined)
+    @scala.inline
+    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setExactMatch(value: Boolean): Self = this.set("exactMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExactMatch: Self = this.set("exactMatch", js.undefined)
+    @scala.inline
+    def setFilterFn(value: js.Any): Self = this.set("filterFn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterFn: Self = this.set("filterFn", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+    @scala.inline
+    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSetFilterFn(value: /* filterFn */ js.UndefOr[js.Any] => Unit): Self = this.set("setFilterFn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetFilterFn: Self = this.set("setFilterFn", js.undefined)
+    @scala.inline
+    def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

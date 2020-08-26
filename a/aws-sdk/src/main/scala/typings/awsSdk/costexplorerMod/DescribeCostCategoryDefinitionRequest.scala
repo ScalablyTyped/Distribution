@@ -18,10 +18,28 @@ trait DescribeCostCategoryDefinitionRequest extends js.Object {
 
 object DescribeCostCategoryDefinitionRequest {
   @scala.inline
-  def apply(CostCategoryArn: Arn, EffectiveOn: ZonedDateTime = null): DescribeCostCategoryDefinitionRequest = {
+  def apply(CostCategoryArn: Arn): DescribeCostCategoryDefinitionRequest = {
     val __obj = js.Dynamic.literal(CostCategoryArn = CostCategoryArn.asInstanceOf[js.Any])
-    if (EffectiveOn != null) __obj.updateDynamic("EffectiveOn")(EffectiveOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCostCategoryDefinitionRequest]
   }
+  @scala.inline
+  implicit class DescribeCostCategoryDefinitionRequestOps[Self <: DescribeCostCategoryDefinitionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCostCategoryArn(value: Arn): Self = this.set("CostCategoryArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEffectiveOn(value: ZonedDateTime): Self = this.set("EffectiveOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectiveOn: Self = this.set("EffectiveOn", js.undefined)
+  }
+  
 }
 

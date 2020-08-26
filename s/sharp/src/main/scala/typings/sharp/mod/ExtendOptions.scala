@@ -4,31 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExtendOptions extends js.Object {
   /** Background colour, parsed by the color module, defaults to black without transparency. (optional, default {r:0,g:0,b:0,alpha:1}) */
-  var background: js.UndefOr[Color] = js.undefined
-  var bottom: js.UndefOr[Double] = js.undefined
-  var left: js.UndefOr[Double] = js.undefined
-  var right: js.UndefOr[Double] = js.undefined
-  var top: js.UndefOr[Double] = js.undefined
+  var background: js.UndefOr[Color] = js.native
+  var bottom: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.native
 }
 
 object ExtendOptions {
   @scala.inline
-  def apply(
-    background: Color = null,
-    bottom: js.UndefOr[Double] = js.undefined,
-    left: js.UndefOr[Double] = js.undefined,
-    right: js.UndefOr[Double] = js.undefined,
-    top: js.UndefOr[Double] = js.undefined
-  ): ExtendOptions = {
+  def apply(): ExtendOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendOptions]
   }
+  @scala.inline
+  implicit class ExtendOptionsOps[Self <: ExtendOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: Color): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBottom(value: Double): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setRight(value: Double): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+  }
+  
 }
 

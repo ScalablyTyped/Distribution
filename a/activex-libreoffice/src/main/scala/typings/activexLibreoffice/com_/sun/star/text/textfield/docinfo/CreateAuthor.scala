@@ -18,17 +18,18 @@ import scala.scalajs.js.annotation._
   * specifies service of a text field that provides information about the author who created the document.
   * @see com.sun.star.text.TextField
   */
+@js.native
 trait CreateAuthor extends TextField_ {
   /** contains the name of the author. */
-  var Author: String
+  var Author: String = js.native
   /**
     * contains the current content of the text field.
     *
     * This property is especially useful for import/export purposes.
     */
-  var CurrentPresentation: String
+  var CurrentPresentation: String = js.native
   /** If this flag is set to false the author will be overridden by the current author each time the document is saved. */
-  var IsFixed: Boolean
+  var IsFixed: Boolean = js.native
 }
 
 object CreateAuthor {
@@ -64,5 +65,24 @@ object CreateAuthor {
     val __obj = js.Dynamic.literal(Anchor = Anchor.asInstanceOf[js.Any], AnchorType = AnchorType.asInstanceOf[js.Any], AnchorTypes = AnchorTypes.asInstanceOf[js.Any], Author = Author.asInstanceOf[js.Any], CurrentPresentation = CurrentPresentation.asInstanceOf[js.Any], IsFieldDisplayed = IsFieldDisplayed.asInstanceOf[js.Any], IsFieldUsed = IsFieldUsed.asInstanceOf[js.Any], IsFixed = IsFixed.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TextWrap = TextWrap.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), attach = js.Any.fromFunction1(attach), dispose = js.Any.fromFunction0(dispose), getAnchor = js.Any.fromFunction0(getAnchor), getPresentation = js.Any.fromFunction1(getPresentation), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[CreateAuthor]
   }
+  @scala.inline
+  implicit class CreateAuthorOps[Self <: CreateAuthor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: String): Self = this.set("Author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentPresentation(value: String): Self = this.set("CurrentPresentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsFixed(value: Boolean): Self = this.set("IsFixed", value.asInstanceOf[js.Any])
+  }
+  
 }
 

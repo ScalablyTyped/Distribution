@@ -52,10 +52,6 @@ object aggregateErrorMod extends js.Object {
     val _errors: js.Any = js.native
     @JSName(js.Symbol.iterator)
     var iterator_AggregateError: js.Function0[IterableIterator[Error]] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     @JSName("name")
     val name_AggregateError: typings.ardatanAggregateError.ardatanAggregateErrorStrings.AggregateError = js.native
   }

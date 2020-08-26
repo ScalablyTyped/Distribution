@@ -34,22 +34,48 @@ trait ClassifierCsvClassifier extends js.Object {
 
 object ClassifierCsvClassifier {
   @scala.inline
-  def apply(
-    allowSingleColumn: js.UndefOr[Boolean] = js.undefined,
-    containsHeader: String = null,
-    delimiter: String = null,
-    disableValueTrimming: js.UndefOr[Boolean] = js.undefined,
-    headers: js.Array[String] = null,
-    quoteSymbol: String = null
-  ): ClassifierCsvClassifier = {
+  def apply(): ClassifierCsvClassifier = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSingleColumn)) __obj.updateDynamic("allowSingleColumn")(allowSingleColumn.get.asInstanceOf[js.Any])
-    if (containsHeader != null) __obj.updateDynamic("containsHeader")(containsHeader.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableValueTrimming)) __obj.updateDynamic("disableValueTrimming")(disableValueTrimming.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (quoteSymbol != null) __obj.updateDynamic("quoteSymbol")(quoteSymbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierCsvClassifier]
   }
+  @scala.inline
+  implicit class ClassifierCsvClassifierOps[Self <: ClassifierCsvClassifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowSingleColumn(value: Boolean): Self = this.set("allowSingleColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSingleColumn: Self = this.set("allowSingleColumn", js.undefined)
+    @scala.inline
+    def setContainsHeader(value: String): Self = this.set("containsHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsHeader: Self = this.set("containsHeader", js.undefined)
+    @scala.inline
+    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    @scala.inline
+    def setDisableValueTrimming(value: Boolean): Self = this.set("disableValueTrimming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableValueTrimming: Self = this.set("disableValueTrimming", js.undefined)
+    @scala.inline
+    def setHeadersVarargs(value: String*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: js.Array[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setQuoteSymbol(value: String): Self = this.set("quoteSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuoteSymbol: Self = this.set("quoteSymbol", js.undefined)
+  }
+  
 }
 

@@ -71,6 +71,7 @@ abstract class Container protected () extends Layer {
     * }
     */
   def getLayer(): Layer = js.native
+  def getLayer(name: js.UndefOr[scala.Nothing], index: Double): Layer = js.native
   def getLayer(name: String): Layer = js.native
   def getLayer(name: String, index: Double): Layer = js.native
   /**
@@ -114,6 +115,7 @@ abstract class Container protected () extends Layer {
     *   `!returnString`.
     */
   def toJSON(): String | PyJsonDict = js.native
+  def toJSON(unused: js.UndefOr[scala.Nothing], returnString: Boolean): String | PyJsonDict = js.native
   def toJSON(unused: js.Any): String | PyJsonDict = js.native
   def toJSON(unused: js.Any, returnString: Boolean): String | PyJsonDict = js.native
   /**
@@ -141,6 +143,12 @@ object Container extends js.Object {
     */
   /** @nocollapse */
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
+  def fromConfig[T /* <: Serializable */](
+    cls: SerializableConstructor[T],
+    config: ConfigDict,
+    customObjects: js.UndefOr[scala.Nothing],
+    fastWeightInit: Boolean
+  ): T = js.native
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
   def fromConfig[T /* <: Serializable */](
     cls: SerializableConstructor[T],

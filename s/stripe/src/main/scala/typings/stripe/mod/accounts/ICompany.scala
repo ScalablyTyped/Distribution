@@ -1,53 +1,47 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.mod.IAddress
-import typings.stripe.mod.IAddressKana
-import typings.stripe.mod.IAddressKanji
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICompany extends ICompanyShared {
   /**
     * Whether the company’s business ID number was provided.
     */
-  var tax_id_provided: js.UndefOr[Boolean] = js.undefined
+  var tax_id_provided: js.UndefOr[Boolean] = js.native
   /**
     * Whether the company’s business VAT number was provided.
     */
-  var vat_id_provided: js.UndefOr[Boolean] = js.undefined
+  var vat_id_provided: js.UndefOr[Boolean] = js.native
 }
 
 object ICompany {
   @scala.inline
-  def apply(
-    address: IAddress = null,
-    address_kana: IAddressKana = null,
-    address_kanji: IAddressKanji = null,
-    directors_provided: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    name_kana: String = null,
-    name_kanji: String = null,
-    owners_provided: js.UndefOr[Boolean] = js.undefined,
-    phone: String = null,
-    tax_id_provided: js.UndefOr[Boolean] = js.undefined,
-    tax_id_registrar: String = null,
-    vat_id_provided: js.UndefOr[Boolean] = js.undefined
-  ): ICompany = {
+  def apply(): ICompany = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (address_kana != null) __obj.updateDynamic("address_kana")(address_kana.asInstanceOf[js.Any])
-    if (address_kanji != null) __obj.updateDynamic("address_kanji")(address_kanji.asInstanceOf[js.Any])
-    if (!js.isUndefined(directors_provided)) __obj.updateDynamic("directors_provided")(directors_provided.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (name_kana != null) __obj.updateDynamic("name_kana")(name_kana.asInstanceOf[js.Any])
-    if (name_kanji != null) __obj.updateDynamic("name_kanji")(name_kanji.asInstanceOf[js.Any])
-    if (!js.isUndefined(owners_provided)) __obj.updateDynamic("owners_provided")(owners_provided.get.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (!js.isUndefined(tax_id_provided)) __obj.updateDynamic("tax_id_provided")(tax_id_provided.get.asInstanceOf[js.Any])
-    if (tax_id_registrar != null) __obj.updateDynamic("tax_id_registrar")(tax_id_registrar.asInstanceOf[js.Any])
-    if (!js.isUndefined(vat_id_provided)) __obj.updateDynamic("vat_id_provided")(vat_id_provided.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICompany]
   }
+  @scala.inline
+  implicit class ICompanyOps[Self <: ICompany] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTax_id_provided(value: Boolean): Self = this.set("tax_id_provided", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax_id_provided: Self = this.set("tax_id_provided", js.undefined)
+    @scala.inline
+    def setVat_id_provided(value: Boolean): Self = this.set("vat_id_provided", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVat_id_provided: Self = this.set("vat_id_provided", js.undefined)
+  }
+  
 }
 

@@ -30,6 +30,11 @@ object mod extends js.Object {
       filename: String,
       callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
     ): typings.sqlite3.mod.Database = js.native
+    def Database(
+      filename: String,
+      mode: js.UndefOr[scala.Nothing],
+      callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
+    ): typings.sqlite3.mod.Database = js.native
     def Database(filename: String, mode: Double): typings.sqlite3.mod.Database = js.native
     def Database(
       filename: String,

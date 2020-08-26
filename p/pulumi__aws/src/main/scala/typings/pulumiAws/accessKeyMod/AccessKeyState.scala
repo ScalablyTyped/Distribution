@@ -59,26 +59,54 @@ trait AccessKeyState extends js.Object {
 
 object AccessKeyState {
   @scala.inline
-  def apply(
-    encryptedSecret: Input[String] = null,
-    keyFingerprint: Input[String] = null,
-    pgpKey: Input[String] = null,
-    secret: Input[String] = null,
-    sesSmtpPassword: Input[String] = null,
-    sesSmtpPasswordV4: Input[String] = null,
-    status: Input[String] = null,
-    user: Input[String] = null
-  ): AccessKeyState = {
+  def apply(): AccessKeyState = {
     val __obj = js.Dynamic.literal()
-    if (encryptedSecret != null) __obj.updateDynamic("encryptedSecret")(encryptedSecret.asInstanceOf[js.Any])
-    if (keyFingerprint != null) __obj.updateDynamic("keyFingerprint")(keyFingerprint.asInstanceOf[js.Any])
-    if (pgpKey != null) __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
-    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (sesSmtpPassword != null) __obj.updateDynamic("sesSmtpPassword")(sesSmtpPassword.asInstanceOf[js.Any])
-    if (sesSmtpPasswordV4 != null) __obj.updateDynamic("sesSmtpPasswordV4")(sesSmtpPasswordV4.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessKeyState]
   }
+  @scala.inline
+  implicit class AccessKeyStateOps[Self <: AccessKeyState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptedSecret(value: Input[String]): Self = this.set("encryptedSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptedSecret: Self = this.set("encryptedSecret", js.undefined)
+    @scala.inline
+    def setKeyFingerprint(value: Input[String]): Self = this.set("keyFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyFingerprint: Self = this.set("keyFingerprint", js.undefined)
+    @scala.inline
+    def setPgpKey(value: Input[String]): Self = this.set("pgpKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePgpKey: Self = this.set("pgpKey", js.undefined)
+    @scala.inline
+    def setSecret(value: Input[String]): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecret: Self = this.set("secret", js.undefined)
+    @scala.inline
+    def setSesSmtpPassword(value: Input[String]): Self = this.set("sesSmtpPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSesSmtpPassword: Self = this.set("sesSmtpPassword", js.undefined)
+    @scala.inline
+    def setSesSmtpPasswordV4(value: Input[String]): Self = this.set("sesSmtpPasswordV4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSesSmtpPasswordV4: Self = this.set("sesSmtpPasswordV4", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUser(value: Input[String]): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

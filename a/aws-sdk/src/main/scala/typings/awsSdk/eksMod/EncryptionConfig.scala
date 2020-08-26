@@ -18,11 +18,32 @@ trait EncryptionConfig extends js.Object {
 
 object EncryptionConfig {
   @scala.inline
-  def apply(provider: Provider = null, resources: StringList = null): EncryptionConfig = {
+  def apply(): EncryptionConfig = {
     val __obj = js.Dynamic.literal()
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionConfig]
   }
+  @scala.inline
+  implicit class EncryptionConfigOps[Self <: EncryptionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvider(value: Provider): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: String*): Self = this.set("resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: StringList): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+  }
+  
 }
 

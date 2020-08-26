@@ -30,20 +30,42 @@ trait CaptionSource extends js.Object {
 
 object CaptionSource {
   @scala.inline
-  def apply(
-    Encryption: Encryption = null,
-    Key: LongKey = null,
-    Label: Name = null,
-    Language: Key = null,
-    TimeOffset: TimeOffset = null
-  ): CaptionSource = {
+  def apply(): CaptionSource = {
     val __obj = js.Dynamic.literal()
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (Label != null) __obj.updateDynamic("Label")(Label.asInstanceOf[js.Any])
-    if (Language != null) __obj.updateDynamic("Language")(Language.asInstanceOf[js.Any])
-    if (TimeOffset != null) __obj.updateDynamic("TimeOffset")(TimeOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSource]
   }
+  @scala.inline
+  implicit class CaptionSourceOps[Self <: CaptionSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setKey(value: LongKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setLabel(value: Name): Self = this.set("Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("Label", js.undefined)
+    @scala.inline
+    def setLanguage(value: Key): Self = this.set("Language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("Language", js.undefined)
+    @scala.inline
+    def setTimeOffset(value: TimeOffset): Self = this.set("TimeOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeOffset: Self = this.set("TimeOffset", js.undefined)
+  }
+  
 }
 

@@ -1,10 +1,10 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.GridColumnProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridColumnProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
   /**
     * The grid-column CSS property is a shorthand property for grid-column-start and grid-column-end specifying
@@ -13,15 +13,45 @@ trait GridColumnProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)
     */
-  var gridColumn: js.UndefOr[ResponsiveValue[GridColumnProperty, ThemeType]] = js.undefined
+  var gridColumn: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.GridColumnProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
 }
 
 object GridColumnProps {
   @scala.inline
-  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](gridColumn: js.UndefOr[Null | (ResponsiveValue[GridColumnProperty, ThemeType])] = js.undefined): GridColumnProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](): GridColumnProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gridColumn)) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnProps[ThemeType]]
   }
+  @scala.inline
+  implicit class GridColumnPropsOps[Self <: GridColumnProps[_], /* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType] (val x: Self with GridColumnProps[ThemeType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGridColumnVarargs(value: (js.Any | Null)*): Self = this.set("gridColumn", js.Array(value :_*))
+    @scala.inline
+    def setGridColumn(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.GridColumnProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("gridColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridColumn: Self = this.set("gridColumn", js.undefined)
+    @scala.inline
+    def setGridColumnNull: Self = this.set("gridColumn", null)
+  }
+  
 }
 

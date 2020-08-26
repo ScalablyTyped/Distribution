@@ -18,11 +18,30 @@ trait RecurringCharge extends js.Object {
 
 object RecurringCharge {
   @scala.inline
-  def apply(Amount: js.UndefOr[Double] = js.undefined, Frequency: RecurringChargeFrequency = null): RecurringCharge = {
+  def apply(): RecurringCharge = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Amount)) __obj.updateDynamic("Amount")(Amount.get.asInstanceOf[js.Any])
-    if (Frequency != null) __obj.updateDynamic("Frequency")(Frequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurringCharge]
   }
+  @scala.inline
+  implicit class RecurringChargeOps[Self <: RecurringCharge] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: Double): Self = this.set("Amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("Amount", js.undefined)
+    @scala.inline
+    def setFrequency(value: RecurringChargeFrequency): Self = this.set("Frequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequency: Self = this.set("Frequency", js.undefined)
+  }
+  
 }
 

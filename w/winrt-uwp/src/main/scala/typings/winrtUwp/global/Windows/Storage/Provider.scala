@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Storage
 
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.Provider.CachedFileOptions
-import typings.winrtUwp.Windows.Storage.Provider.FileUpdateStatus
 import typings.winrtUwp.Windows.Storage.Provider.ReadActivationMode
 import typings.winrtUwp.Windows.Storage.Provider.WriteActivationMode
 import scala.scalajs.js
@@ -26,50 +25,17 @@ object Provider extends js.Object {
   /** Provides information about a requested file update so that the app can complete the request. */
   @js.native
   abstract class FileUpdateRequest ()
-    extends typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequest {
-    /** Gets the unique identifier used to associate the local version of a file with the corresponding remote version. */
-    /* CompleteClass */
-    override var contentId: String = js.native
-    /** Gets a StorageFile object that represents the locally cached copy of the file to update. */
-    /* CompleteClass */
-    override var file: typings.winrtUwp.Windows.Storage.StorageFile = js.native
-    /** Gets or sets the status of the update. This property is set in response to a FileUpdateRequested event. */
-    /* CompleteClass */
-    override var status: FileUpdateStatus = js.native
-    /** Gets or sets a message to the user indicating that user input is needed to complete the FileUpdateRequest . */
-    /* CompleteClass */
-    override var userInputNeededMessage: String = js.native
-    /**
-      * Gets an object used to complete an update asynchronously.
-      * @return The object that the app uses to indicate, asynchronously, that it has finished responding to a FileUpdateRequested event and that the Request is complete.
-      */
-    /* CompleteClass */
-    override def getDeferral(): typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequestDeferral = js.native
-    /**
-      * Provide a new version of the local file to represent the remote file.
-      * @param value The new version of the local file that will represent remote file.
-      */
-    /* CompleteClass */
-    override def updateLocalFile(value: IStorageFile): Unit = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequest
   
   /** Use to complete an update asynchronously. */
   @js.native
   abstract class FileUpdateRequestDeferral ()
-    extends typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequestDeferral {
-    /** Signals that the response to a FileUpdateRequested event is finished. */
-    /* CompleteClass */
-    override def complete(): Unit = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequestDeferral
   
   /** Provides information about a FileUpdateRequested event. */
   @js.native
   abstract class FileUpdateRequestedEventArgs ()
-    extends typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequestedEventArgs {
-    /** Gets the details of the requested file update. */
-    /* CompleteClass */
-    override var request: typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequest = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequestedEventArgs
   
   /** Describes when Windows will request an update to a file. */
   @js.native

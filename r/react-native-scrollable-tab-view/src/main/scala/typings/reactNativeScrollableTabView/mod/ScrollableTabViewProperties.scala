@@ -1,9 +1,6 @@
 package typings.reactNativeScrollableTabView.mod
 
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.ScrollViewProps
 import typings.reactNative.mod.StyleProp
@@ -18,41 +15,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScrollableTabViewProperties extends Props[ScrollableTabView] {
   /**
     * props that are applied to root ScrollView/ViewPagerAndroid.
     * Note that overriding defaults set by the library may break functionality; see the source for details.
     */
-  var contentProps: js.UndefOr[ScrollViewProps] = js.undefined
+  var contentProps: js.UndefOr[ScrollViewProps] = js.native
   /**
     * the index of the initially selected tab, defaults to 0 === first tab
     */
-  var initialPage: js.UndefOr[Double] = js.undefined
+  var initialPage: js.UndefOr[Double] = js.native
   /**
     * disables horizontal dragging to scroll between tabs, default is false.
     */
-  var locked: js.UndefOr[Boolean] = js.undefined
+  var locked: js.UndefOr[Boolean] = js.native
   /**
     * function to call when tab changes, should accept 1 argument which is
     * an Object containing two keys: i: the index of the tab that is selected, ref: the ref of the
     * tab that is selected
     */
-  var onChangeTab: js.UndefOr[js.Function1[/* value */ ChangeTabProperties, Unit]] = js.undefined
+  var onChangeTab: js.UndefOr[js.Function1[/* value */ ChangeTabProperties, Unit]] = js.native
   /**
     * function to call when the pages are sliding,
     * should accept 1 argument which is an Float number representing the page position in the slide frame.
     */
-  var onScroll: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
   /**
     * set selected tab(can be buggy see
     * https://github.com/skv-headless/react-native-scrollable-tab-view/issues/126
     */
-  var page: js.UndefOr[Double] = js.undefined
+  var page: js.UndefOr[Double] = js.native
   /**
     * pre-render nearby # sibling, Infinity === render all
     * the siblings, default to 0 === render current page.
     */
-  var prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined
+  var prerenderingSiblingsNumber: js.UndefOr[Double] = js.native
   /**
     * accept 1 argument props and should return a component
     * to use as the tab bar. The component has goToPage, tabs, activeTab and ref added to the props,
@@ -61,88 +59,136 @@ trait ScrollableTabViewProperties extends Props[ScrollableTabView] {
     */
   var renderTabBar: js.UndefOr[
     (js.Function1[/* props */ typings.reactNativeScrollableTabView.anon.TabBarProps, Element]) | `false`
-  ] = js.undefined
+  ] = js.native
   /**
     * on tab press change tab without animation.
     */
-  var scrollWithoutAnimation: js.UndefOr[Boolean] = js.undefined
+  var scrollWithoutAnimation: js.UndefOr[Boolean] = js.native
   /**
     * style (View.propTypes.style)
     */
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * color of the default tab bar's text when active, defaults to navy
     */
-  var tabBarActiveTextColor: js.UndefOr[String] = js.undefined
+  var tabBarActiveTextColor: js.UndefOr[String] = js.native
   /**
     * color of the default tab bar's background, defaults to white
     */
-  var tabBarBackgroundColor: js.UndefOr[String] = js.undefined
+  var tabBarBackgroundColor: js.UndefOr[String] = js.native
   /**
     * color of the default tab bar's text when inactive, defaults to black
     */
-  var tabBarInactiveTextColor: js.UndefOr[String] = js.undefined
+  var tabBarInactiveTextColor: js.UndefOr[String] = js.native
   /**
     * Defaults to "top".
     * "bottom" to position the tab bar below content.
     * "overlayTop" or "overlayBottom" for a semitransparent tab bar that overlays content. Custom
     * tab bars must consume a style prop on their outer element to support this feature: style={this.props.style}.
     */
-  var tabBarPosition: js.UndefOr[top | bottom | overlayTop | overlayBottom] = js.undefined
+  var tabBarPosition: js.UndefOr[top | bottom | overlayTop | overlayBottom] = js.native
   /**
     * additional styles to the tab bar's text
     */
-  var tabBarTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var tabBarTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
   /**
     * style of the default tab bar's underline
     */
-  var tabBarUnderlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var tabBarUnderlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
 }
 
 object ScrollableTabViewProperties {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    contentProps: ScrollViewProps = null,
-    initialPage: js.UndefOr[Double] = js.undefined,
-    key: Key = null,
-    locked: js.UndefOr[Boolean] = js.undefined,
-    onChangeTab: /* value */ ChangeTabProperties => Unit = null,
-    onScroll: /* value */ Double => Unit = null,
-    page: js.UndefOr[Double] = js.undefined,
-    prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined,
-    ref: js.UndefOr[Null | LegacyRef[ScrollableTabView]] = js.undefined,
-    renderTabBar: (js.Function1[/* props */ typings.reactNativeScrollableTabView.anon.TabBarProps, Element]) | `false` = null,
-    scrollWithoutAnimation: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    tabBarActiveTextColor: String = null,
-    tabBarBackgroundColor: String = null,
-    tabBarInactiveTextColor: String = null,
-    tabBarPosition: top | bottom | overlayTop | overlayBottom = null,
-    tabBarTextStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    tabBarUnderlineStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
-  ): ScrollableTabViewProperties = {
+  def apply(): ScrollableTabViewProperties = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (contentProps != null) __obj.updateDynamic("contentProps")(contentProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialPage)) __obj.updateDynamic("initialPage")(initialPage.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
-    if (onChangeTab != null) __obj.updateDynamic("onChangeTab")(js.Any.fromFunction1(onChangeTab))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(prerenderingSiblingsNumber)) __obj.updateDynamic("prerenderingSiblingsNumber")(prerenderingSiblingsNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(renderTabBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollWithoutAnimation)) __obj.updateDynamic("scrollWithoutAnimation")(scrollWithoutAnimation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabBarActiveTextColor != null) __obj.updateDynamic("tabBarActiveTextColor")(tabBarActiveTextColor.asInstanceOf[js.Any])
-    if (tabBarBackgroundColor != null) __obj.updateDynamic("tabBarBackgroundColor")(tabBarBackgroundColor.asInstanceOf[js.Any])
-    if (tabBarInactiveTextColor != null) __obj.updateDynamic("tabBarInactiveTextColor")(tabBarInactiveTextColor.asInstanceOf[js.Any])
-    if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabBarTextStyle)) __obj.updateDynamic("tabBarTextStyle")(tabBarTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabBarUnderlineStyle)) __obj.updateDynamic("tabBarUnderlineStyle")(tabBarUnderlineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollableTabViewProperties]
   }
+  @scala.inline
+  implicit class ScrollableTabViewPropertiesOps[Self <: ScrollableTabViewProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentProps(value: ScrollViewProps): Self = this.set("contentProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentProps: Self = this.set("contentProps", js.undefined)
+    @scala.inline
+    def setInitialPage(value: Double): Self = this.set("initialPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPage: Self = this.set("initialPage", js.undefined)
+    @scala.inline
+    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocked: Self = this.set("locked", js.undefined)
+    @scala.inline
+    def setOnChangeTab(value: /* value */ ChangeTabProperties => Unit): Self = this.set("onChangeTab", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChangeTab: Self = this.set("onChangeTab", js.undefined)
+    @scala.inline
+    def setOnScroll(value: /* value */ Double => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setPrerenderingSiblingsNumber(value: Double): Self = this.set("prerenderingSiblingsNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrerenderingSiblingsNumber: Self = this.set("prerenderingSiblingsNumber", js.undefined)
+    @scala.inline
+    def setRenderTabBarFunction1(value: /* props */ typings.reactNativeScrollableTabView.anon.TabBarProps => Element): Self = this.set("renderTabBar", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRenderTabBar(
+      value: (js.Function1[/* props */ typings.reactNativeScrollableTabView.anon.TabBarProps, Element]) | `false`
+    ): Self = this.set("renderTabBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderTabBar: Self = this.set("renderTabBar", js.undefined)
+    @scala.inline
+    def setScrollWithoutAnimation(value: Boolean): Self = this.set("scrollWithoutAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollWithoutAnimation: Self = this.set("scrollWithoutAnimation", js.undefined)
+    @scala.inline
+    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+    @scala.inline
+    def setTabBarActiveTextColor(value: String): Self = this.set("tabBarActiveTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabBarActiveTextColor: Self = this.set("tabBarActiveTextColor", js.undefined)
+    @scala.inline
+    def setTabBarBackgroundColor(value: String): Self = this.set("tabBarBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabBarBackgroundColor: Self = this.set("tabBarBackgroundColor", js.undefined)
+    @scala.inline
+    def setTabBarInactiveTextColor(value: String): Self = this.set("tabBarInactiveTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabBarInactiveTextColor: Self = this.set("tabBarInactiveTextColor", js.undefined)
+    @scala.inline
+    def setTabBarPosition(value: top | bottom | overlayTop | overlayBottom): Self = this.set("tabBarPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabBarPosition: Self = this.set("tabBarPosition", js.undefined)
+    @scala.inline
+    def setTabBarTextStyle(value: StyleProp[TextStyle]): Self = this.set("tabBarTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabBarTextStyle: Self = this.set("tabBarTextStyle", js.undefined)
+    @scala.inline
+    def setTabBarTextStyleNull: Self = this.set("tabBarTextStyle", null)
+    @scala.inline
+    def setTabBarUnderlineStyle(value: StyleProp[ViewStyle]): Self = this.set("tabBarUnderlineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabBarUnderlineStyle: Self = this.set("tabBarUnderlineStyle", js.undefined)
+    @scala.inline
+    def setTabBarUnderlineStyleNull: Self = this.set("tabBarUnderlineStyle", null)
+  }
+  
 }
 

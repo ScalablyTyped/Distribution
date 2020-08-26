@@ -11,7 +11,7 @@ Angular service to handle facebook api
 | Keywords           | facebook, angularjs, service, ng-facebook, ngFacebook |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6263 |
+| # downloads        | 6322 |
 | # stars            | 2 |
 
 ## Links

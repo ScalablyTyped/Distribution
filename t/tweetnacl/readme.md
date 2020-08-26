@@ -10,9 +10,9 @@ Port of TweetNaCl cryptographic library to JavaScript
 | ------------------ | :-------------: |
 | Full name          | tweetnacl |
 | Keywords           | crypto, cryptography, curve25519, ed25519, encrypt, hash, key, nacl, poly1305, public, salsa20, signatures |
-| # releases         | 2 |
-| # dependents       | 488 |
-| # downloads        | 574412289 |
+| # releases         | 1 |
+| # dependents       | 491 |
+| # downloads        | 583365926 |
 | # stars            | 8 |
 
 ## Links

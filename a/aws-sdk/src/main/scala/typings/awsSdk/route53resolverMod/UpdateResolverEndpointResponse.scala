@@ -14,10 +14,26 @@ trait UpdateResolverEndpointResponse extends js.Object {
 
 object UpdateResolverEndpointResponse {
   @scala.inline
-  def apply(ResolverEndpoint: ResolverEndpoint = null): UpdateResolverEndpointResponse = {
+  def apply(): UpdateResolverEndpointResponse = {
     val __obj = js.Dynamic.literal()
-    if (ResolverEndpoint != null) __obj.updateDynamic("ResolverEndpoint")(ResolverEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResolverEndpointResponse]
   }
+  @scala.inline
+  implicit class UpdateResolverEndpointResponseOps[Self <: UpdateResolverEndpointResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResolverEndpoint(value: ResolverEndpoint): Self = this.set("ResolverEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolverEndpoint: Self = this.set("ResolverEndpoint", js.undefined)
+  }
+  
 }
 

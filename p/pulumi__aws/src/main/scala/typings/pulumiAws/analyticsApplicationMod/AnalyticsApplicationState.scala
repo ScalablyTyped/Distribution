@@ -60,9 +60,9 @@ trait AnalyticsApplicationState extends js.Object {
     */
   val status: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of tags for the Kinesis Analytics Application.
+    * Key-value map of tags for the Kinesis Analytics Application.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The Version of the application.
     */
@@ -71,36 +71,76 @@ trait AnalyticsApplicationState extends js.Object {
 
 object AnalyticsApplicationState {
   @scala.inline
-  def apply(
-    arn: Input[ARN] = null,
-    cloudwatchLoggingOptions: Input[AnalyticsApplicationCloudwatchLoggingOptions] = null,
-    code: Input[String] = null,
-    createTimestamp: Input[String] = null,
-    description: Input[String] = null,
-    inputs: Input[AnalyticsApplicationInputs] = null,
-    lastUpdateTimestamp: Input[String] = null,
-    name: Input[String] = null,
-    outputs: Input[js.Array[Input[AnalyticsApplicationOutput]]] = null,
-    referenceDataSources: Input[AnalyticsApplicationReferenceDataSources] = null,
-    status: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    version: Input[Double] = null
-  ): AnalyticsApplicationState = {
+  def apply(): AnalyticsApplicationState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (cloudwatchLoggingOptions != null) __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (createTimestamp != null) __obj.updateDynamic("createTimestamp")(createTimestamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (lastUpdateTimestamp != null) __obj.updateDynamic("lastUpdateTimestamp")(lastUpdateTimestamp.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (referenceDataSources != null) __obj.updateDynamic("referenceDataSources")(referenceDataSources.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationState]
   }
+  @scala.inline
+  implicit class AnalyticsApplicationStateOps[Self <: AnalyticsApplicationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[ARN]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCloudwatchLoggingOptions(value: Input[AnalyticsApplicationCloudwatchLoggingOptions]): Self = this.set("cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchLoggingOptions: Self = this.set("cloudwatchLoggingOptions", js.undefined)
+    @scala.inline
+    def setCode(value: Input[String]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setCreateTimestamp(value: Input[String]): Self = this.set("createTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTimestamp: Self = this.set("createTimestamp", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setInputs(value: Input[AnalyticsApplicationInputs]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("inputs", js.undefined)
+    @scala.inline
+    def setLastUpdateTimestamp(value: Input[String]): Self = this.set("lastUpdateTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTimestamp: Self = this.set("lastUpdateTimestamp", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOutputsVarargs(value: Input[AnalyticsApplicationOutput]*): Self = this.set("outputs", js.Array(value :_*))
+    @scala.inline
+    def setOutputs(value: Input[js.Array[Input[AnalyticsApplicationOutput]]]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    @scala.inline
+    def setReferenceDataSources(value: Input[AnalyticsApplicationReferenceDataSources]): Self = this.set("referenceDataSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceDataSources: Self = this.set("referenceDataSources", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersion(value: Input[Double]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

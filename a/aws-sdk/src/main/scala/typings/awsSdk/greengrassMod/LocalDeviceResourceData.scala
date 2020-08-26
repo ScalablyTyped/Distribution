@@ -18,11 +18,30 @@ trait LocalDeviceResourceData extends js.Object {
 
 object LocalDeviceResourceData {
   @scala.inline
-  def apply(GroupOwnerSetting: GroupOwnerSetting = null, SourcePath: string = null): LocalDeviceResourceData = {
+  def apply(): LocalDeviceResourceData = {
     val __obj = js.Dynamic.literal()
-    if (GroupOwnerSetting != null) __obj.updateDynamic("GroupOwnerSetting")(GroupOwnerSetting.asInstanceOf[js.Any])
-    if (SourcePath != null) __obj.updateDynamic("SourcePath")(SourcePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalDeviceResourceData]
   }
+  @scala.inline
+  implicit class LocalDeviceResourceDataOps[Self <: LocalDeviceResourceData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupOwnerSetting(value: GroupOwnerSetting): Self = this.set("GroupOwnerSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupOwnerSetting: Self = this.set("GroupOwnerSetting", js.undefined)
+    @scala.inline
+    def setSourcePath(value: string): Self = this.set("SourcePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcePath: Self = this.set("SourcePath", js.undefined)
+  }
+  
 }
 

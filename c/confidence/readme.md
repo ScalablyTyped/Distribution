@@ -11,8 +11,8 @@ Configuration API
 | Full name          | confidence |
 | Keywords           | hapi, plugin, configuration, api |
 | # releases         | 4 |
-| # dependents       | 36 |
-| # downloads        | 456127 |
+| # dependents       | 37 |
+| # downloads        | 462244 |
 | # stars            | 11 |
 
 ## Links

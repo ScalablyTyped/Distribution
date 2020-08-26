@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): Observer = js.native
+  def apply(selector: js.UndefOr[Selector], options: Option): Observer = js.native
   def apply(selector: Selector): Observer = js.native
-  def apply(selector: Selector, options: Option): Observer = js.native
 }
 

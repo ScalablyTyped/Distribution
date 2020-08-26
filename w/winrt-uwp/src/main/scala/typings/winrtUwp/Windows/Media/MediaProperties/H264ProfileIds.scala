@@ -5,5 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides properties for getting H.265 profile ids. */
+@js.native
 trait H264ProfileIds extends js.Object
 

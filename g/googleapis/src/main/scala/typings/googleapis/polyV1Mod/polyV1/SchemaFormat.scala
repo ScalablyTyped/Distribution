@@ -39,18 +39,40 @@ trait SchemaFormat extends js.Object {
 
 object SchemaFormat {
   @scala.inline
-  def apply(
-    formatComplexity: SchemaFormatComplexity = null,
-    formatType: String = null,
-    resources: js.Array[SchemaFile] = null,
-    root: SchemaFile = null
-  ): SchemaFormat = {
+  def apply(): SchemaFormat = {
     val __obj = js.Dynamic.literal()
-    if (formatComplexity != null) __obj.updateDynamic("formatComplexity")(formatComplexity.asInstanceOf[js.Any])
-    if (formatType != null) __obj.updateDynamic("formatType")(formatType.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFormat]
   }
+  @scala.inline
+  implicit class SchemaFormatOps[Self <: SchemaFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormatComplexity(value: SchemaFormatComplexity): Self = this.set("formatComplexity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatComplexity: Self = this.set("formatComplexity", js.undefined)
+    @scala.inline
+    def setFormatType(value: String): Self = this.set("formatType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatType: Self = this.set("formatType", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: SchemaFile*): Self = this.set("resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: js.Array[SchemaFile]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setRoot(value: SchemaFile): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

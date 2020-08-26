@@ -58,34 +58,70 @@ trait Assignment extends js.Object {
 
 object Assignment {
   @scala.inline
-  def apply(
-    AcceptTime: Timestamp = null,
-    Answer: String = null,
-    ApprovalTime: Timestamp = null,
-    AssignmentId: EntityId = null,
-    AssignmentStatus: AssignmentStatus = null,
-    AutoApprovalTime: Timestamp = null,
-    Deadline: Timestamp = null,
-    HITId: EntityId = null,
-    RejectionTime: Timestamp = null,
-    RequesterFeedback: String = null,
-    SubmitTime: Timestamp = null,
-    WorkerId: CustomerId = null
-  ): Assignment = {
+  def apply(): Assignment = {
     val __obj = js.Dynamic.literal()
-    if (AcceptTime != null) __obj.updateDynamic("AcceptTime")(AcceptTime.asInstanceOf[js.Any])
-    if (Answer != null) __obj.updateDynamic("Answer")(Answer.asInstanceOf[js.Any])
-    if (ApprovalTime != null) __obj.updateDynamic("ApprovalTime")(ApprovalTime.asInstanceOf[js.Any])
-    if (AssignmentId != null) __obj.updateDynamic("AssignmentId")(AssignmentId.asInstanceOf[js.Any])
-    if (AssignmentStatus != null) __obj.updateDynamic("AssignmentStatus")(AssignmentStatus.asInstanceOf[js.Any])
-    if (AutoApprovalTime != null) __obj.updateDynamic("AutoApprovalTime")(AutoApprovalTime.asInstanceOf[js.Any])
-    if (Deadline != null) __obj.updateDynamic("Deadline")(Deadline.asInstanceOf[js.Any])
-    if (HITId != null) __obj.updateDynamic("HITId")(HITId.asInstanceOf[js.Any])
-    if (RejectionTime != null) __obj.updateDynamic("RejectionTime")(RejectionTime.asInstanceOf[js.Any])
-    if (RequesterFeedback != null) __obj.updateDynamic("RequesterFeedback")(RequesterFeedback.asInstanceOf[js.Any])
-    if (SubmitTime != null) __obj.updateDynamic("SubmitTime")(SubmitTime.asInstanceOf[js.Any])
-    if (WorkerId != null) __obj.updateDynamic("WorkerId")(WorkerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Assignment]
   }
+  @scala.inline
+  implicit class AssignmentOps[Self <: Assignment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptTime(value: Timestamp): Self = this.set("AcceptTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptTime: Self = this.set("AcceptTime", js.undefined)
+    @scala.inline
+    def setAnswer(value: String): Self = this.set("Answer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnswer: Self = this.set("Answer", js.undefined)
+    @scala.inline
+    def setApprovalTime(value: Timestamp): Self = this.set("ApprovalTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalTime: Self = this.set("ApprovalTime", js.undefined)
+    @scala.inline
+    def setAssignmentId(value: EntityId): Self = this.set("AssignmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentId: Self = this.set("AssignmentId", js.undefined)
+    @scala.inline
+    def setAssignmentStatus(value: AssignmentStatus): Self = this.set("AssignmentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentStatus: Self = this.set("AssignmentStatus", js.undefined)
+    @scala.inline
+    def setAutoApprovalTime(value: Timestamp): Self = this.set("AutoApprovalTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoApprovalTime: Self = this.set("AutoApprovalTime", js.undefined)
+    @scala.inline
+    def setDeadline(value: Timestamp): Self = this.set("Deadline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeadline: Self = this.set("Deadline", js.undefined)
+    @scala.inline
+    def setHITId(value: EntityId): Self = this.set("HITId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHITId: Self = this.set("HITId", js.undefined)
+    @scala.inline
+    def setRejectionTime(value: Timestamp): Self = this.set("RejectionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectionTime: Self = this.set("RejectionTime", js.undefined)
+    @scala.inline
+    def setRequesterFeedback(value: String): Self = this.set("RequesterFeedback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterFeedback: Self = this.set("RequesterFeedback", js.undefined)
+    @scala.inline
+    def setSubmitTime(value: Timestamp): Self = this.set("SubmitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitTime: Self = this.set("SubmitTime", js.undefined)
+    @scala.inline
+    def setWorkerId(value: CustomerId): Self = this.set("WorkerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerId: Self = this.set("WorkerId", js.undefined)
+  }
+  
 }
 

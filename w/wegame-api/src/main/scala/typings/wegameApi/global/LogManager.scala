@@ -14,30 +14,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("LogManager")
 @js.native
 class LogManager ()
-  extends typings.wegameApi.LogManager {
-  /**
-    * 写debug日志
-    * @param args 要记录的日志内容
-    */
-  /* CompleteClass */
-  override def debug(args: js.Any*): Unit = js.native
-  /**
-    * 写info日志
-    * @param args 要记录的日志内容
-    */
-  /* CompleteClass */
-  override def info(args: js.Any*): Unit = js.native
-  /**
-    * 写log日志
-    * @param args 要记录的日志内容
-    */
-  /* CompleteClass */
-  override def log(args: js.Any*): Unit = js.native
-  /**
-    * 写warn日志
-    * @param args 要记录的日志内容
-    */
-  /* CompleteClass */
-  override def warn(args: js.Any*): Unit = js.native
-}
+  extends typings.wegameApi.LogManager
 

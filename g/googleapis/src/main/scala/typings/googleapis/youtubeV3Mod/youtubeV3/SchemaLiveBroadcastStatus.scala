@@ -31,18 +31,38 @@ trait SchemaLiveBroadcastStatus extends js.Object {
 
 object SchemaLiveBroadcastStatus {
   @scala.inline
-  def apply(
-    lifeCycleStatus: String = null,
-    liveBroadcastPriority: String = null,
-    privacyStatus: String = null,
-    recordingStatus: String = null
-  ): SchemaLiveBroadcastStatus = {
+  def apply(): SchemaLiveBroadcastStatus = {
     val __obj = js.Dynamic.literal()
-    if (lifeCycleStatus != null) __obj.updateDynamic("lifeCycleStatus")(lifeCycleStatus.asInstanceOf[js.Any])
-    if (liveBroadcastPriority != null) __obj.updateDynamic("liveBroadcastPriority")(liveBroadcastPriority.asInstanceOf[js.Any])
-    if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus.asInstanceOf[js.Any])
-    if (recordingStatus != null) __obj.updateDynamic("recordingStatus")(recordingStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveBroadcastStatus]
   }
+  @scala.inline
+  implicit class SchemaLiveBroadcastStatusOps[Self <: SchemaLiveBroadcastStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLifeCycleStatus(value: String): Self = this.set("lifeCycleStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifeCycleStatus: Self = this.set("lifeCycleStatus", js.undefined)
+    @scala.inline
+    def setLiveBroadcastPriority(value: String): Self = this.set("liveBroadcastPriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLiveBroadcastPriority: Self = this.set("liveBroadcastPriority", js.undefined)
+    @scala.inline
+    def setPrivacyStatus(value: String): Self = this.set("privacyStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivacyStatus: Self = this.set("privacyStatus", js.undefined)
+    @scala.inline
+    def setRecordingStatus(value: String): Self = this.set("recordingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordingStatus: Self = this.set("recordingStatus", js.undefined)
+  }
+  
 }
 

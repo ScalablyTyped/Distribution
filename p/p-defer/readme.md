@@ -11,8 +11,8 @@ Create a deferred promise
 | Full name          | p-defer |
 | Keywords           | promise, defer, deferred, resolve, reject, lazy, later, async, await, promises |
 | # releases         | 5 |
-| # dependents       | 76 |
-| # downloads        | 264277816 |
+| # dependents       | 81 |
+| # downloads        | 277564374 |
 | # stars            | 1 |
 
 ## Links

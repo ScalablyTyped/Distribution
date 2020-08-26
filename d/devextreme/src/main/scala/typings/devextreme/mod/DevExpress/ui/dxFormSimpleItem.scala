@@ -13,29 +13,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxFormSimpleItem extends js.Object {
   /** @name dxFormSimpleItem.colSpan */
-  var colSpan: js.UndefOr[Double] = js.undefined
+  var colSpan: js.UndefOr[Double] = js.native
   /** @name dxFormSimpleItem.cssClass */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** @name dxFormSimpleItem.dataField */
-  var dataField: js.UndefOr[String] = js.undefined
+  var dataField: js.UndefOr[String] = js.native
   /** @name dxFormSimpleItem.editorOptions */
-  var editorOptions: js.UndefOr[js.Any] = js.undefined
+  var editorOptions: js.UndefOr[js.Any] = js.native
   /** @name dxFormSimpleItem.editorType */
   var editorType: js.UndefOr[
     typings.devextreme.devextremeStrings.dxAutocomplete | typings.devextreme.devextremeStrings.dxCalendar | typings.devextreme.devextremeStrings.dxCheckBox | typings.devextreme.devextremeStrings.dxColorBox | typings.devextreme.devextremeStrings.dxDateBox | typings.devextreme.devextremeStrings.dxDropDownBox | typings.devextreme.devextremeStrings.dxHtmlEditor | typings.devextreme.devextremeStrings.dxLookup | typings.devextreme.devextremeStrings.dxNumberBox | typings.devextreme.devextremeStrings.dxRadioGroup | typings.devextreme.devextremeStrings.dxRangeSlider | typings.devextreme.devextremeStrings.dxSelectBox | typings.devextreme.devextremeStrings.dxSlider | typings.devextreme.devextremeStrings.dxSwitch | typings.devextreme.devextremeStrings.dxTagBox | typings.devextreme.devextremeStrings.dxTextArea | typings.devextreme.devextremeStrings.dxTextBox
-  ] = js.undefined
+  ] = js.native
   /** @name dxFormSimpleItem.helpText */
-  var helpText: js.UndefOr[String] = js.undefined
+  var helpText: js.UndefOr[String] = js.native
   /** @name dxFormSimpleItem.isRequired */
-  var isRequired: js.UndefOr[Boolean] = js.undefined
+  var isRequired: js.UndefOr[Boolean] = js.native
   /** @name dxFormSimpleItem.itemType */
-  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
+  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.native
   /** @name dxFormSimpleItem.label */
-  var label: js.UndefOr[Location] = js.undefined
+  var label: js.UndefOr[Location] = js.native
   /** @name dxFormSimpleItem.name */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** @name dxFormSimpleItem.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[
@@ -43,59 +44,113 @@ trait dxFormSimpleItem extends js.Object {
       /* itemElement */ dxElement, 
       String | Element | JQuery
     ])
-  ] = js.undefined
+  ] = js.native
   /** @name dxFormSimpleItem.validationRules */
   var validationRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
-  ] = js.undefined
+  ] = js.native
   /** @name dxFormSimpleItem.visible */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /** @name dxFormSimpleItem.visibleIndex */
-  var visibleIndex: js.UndefOr[Double] = js.undefined
+  var visibleIndex: js.UndefOr[Double] = js.native
 }
 
 object dxFormSimpleItem {
   @scala.inline
-  def apply(
-    colSpan: js.UndefOr[Double] = js.undefined,
-    cssClass: String = null,
-    dataField: String = null,
-    editorOptions: js.Any = null,
-    editorType: typings.devextreme.devextremeStrings.dxAutocomplete | typings.devextreme.devextremeStrings.dxCalendar | typings.devextreme.devextremeStrings.dxCheckBox | typings.devextreme.devextremeStrings.dxColorBox | typings.devextreme.devextremeStrings.dxDateBox | typings.devextreme.devextremeStrings.dxDropDownBox | typings.devextreme.devextremeStrings.dxHtmlEditor | typings.devextreme.devextremeStrings.dxLookup | typings.devextreme.devextremeStrings.dxNumberBox | typings.devextreme.devextremeStrings.dxRadioGroup | typings.devextreme.devextremeStrings.dxRangeSlider | typings.devextreme.devextremeStrings.dxSelectBox | typings.devextreme.devextremeStrings.dxSlider | typings.devextreme.devextremeStrings.dxSwitch | typings.devextreme.devextremeStrings.dxTagBox | typings.devextreme.devextremeStrings.dxTextArea | typings.devextreme.devextremeStrings.dxTextBox = null,
-    helpText: String = null,
-    isRequired: js.UndefOr[Boolean] = js.undefined,
-    itemType: empty | group | simple | tabbed | button = null,
-    label: Location = null,
-    name: String = null,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function2[
-      /* data */ typings.devextreme.anon.EditorOptions, 
-      /* itemElement */ dxElement, 
-      String | Element | JQuery
-    ]) = null,
-    validationRules: js.Array[
-      RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-    ] = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    visibleIndex: js.UndefOr[Double] = js.undefined
-  ): dxFormSimpleItem = {
+  def apply(): dxFormSimpleItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (dataField != null) __obj.updateDynamic("dataField")(dataField.asInstanceOf[js.Any])
-    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions.asInstanceOf[js.Any])
-    if (editorType != null) __obj.updateDynamic("editorType")(editorType.asInstanceOf[js.Any])
-    if (helpText != null) __obj.updateDynamic("helpText")(helpText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.get.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleIndex)) __obj.updateDynamic("visibleIndex")(visibleIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFormSimpleItem]
   }
+  @scala.inline
+  implicit class dxFormSimpleItemOps[Self <: dxFormSimpleItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setDataField(value: String): Self = this.set("dataField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataField: Self = this.set("dataField", js.undefined)
+    @scala.inline
+    def setEditorOptions(value: js.Any): Self = this.set("editorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorOptions: Self = this.set("editorOptions", js.undefined)
+    @scala.inline
+    def setEditorType(
+      value: typings.devextreme.devextremeStrings.dxAutocomplete | typings.devextreme.devextremeStrings.dxCalendar | typings.devextreme.devextremeStrings.dxCheckBox | typings.devextreme.devextremeStrings.dxColorBox | typings.devextreme.devextremeStrings.dxDateBox | typings.devextreme.devextremeStrings.dxDropDownBox | typings.devextreme.devextremeStrings.dxHtmlEditor | typings.devextreme.devextremeStrings.dxLookup | typings.devextreme.devextremeStrings.dxNumberBox | typings.devextreme.devextremeStrings.dxRadioGroup | typings.devextreme.devextremeStrings.dxRangeSlider | typings.devextreme.devextremeStrings.dxSelectBox | typings.devextreme.devextremeStrings.dxSlider | typings.devextreme.devextremeStrings.dxSwitch | typings.devextreme.devextremeStrings.dxTagBox | typings.devextreme.devextremeStrings.dxTextArea | typings.devextreme.devextremeStrings.dxTextBox
+    ): Self = this.set("editorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorType: Self = this.set("editorType", js.undefined)
+    @scala.inline
+    def setHelpText(value: String): Self = this.set("helpText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelpText: Self = this.set("helpText", js.undefined)
+    @scala.inline
+    def setIsRequired(value: Boolean): Self = this.set("isRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRequired: Self = this.set("isRequired", js.undefined)
+    @scala.inline
+    def setItemType(value: empty | group | simple | tabbed | button): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemType: Self = this.set("itemType", js.undefined)
+    @scala.inline
+    def setLabel(value: Location): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTemplateFunction2(
+      value: (/* data */ typings.devextreme.anon.EditorOptions, /* itemElement */ dxElement) => String | Element | JQuery
+    ): Self = this.set("template", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTemplate(
+      value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[
+          /* data */ typings.devextreme.anon.EditorOptions, 
+          /* itemElement */ dxElement, 
+          String | Element | JQuery
+        ])
+    ): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setValidationRulesVarargs(
+      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+    ): Self = this.set("validationRules", js.Array(value :_*))
+    @scala.inline
+    def setValidationRules(
+      value: js.Array[
+          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+        ]
+    ): Self = this.set("validationRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationRules: Self = this.set("validationRules", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setVisibleIndex(value: Double): Self = this.set("visibleIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleIndex: Self = this.set("visibleIndex", js.undefined)
+  }
+  
 }
 

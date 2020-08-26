@@ -92,46 +92,94 @@ trait SchemaGoal extends js.Object {
 
 object SchemaGoal {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    created: String = null,
-    eventDetails: EventConditions = null,
-    id: String = null,
-    internalWebPropertyId: String = null,
-    kind: String = null,
-    name: String = null,
-    parentLink: Href = null,
-    profileId: String = null,
-    selfLink: String = null,
-    `type`: String = null,
-    updated: String = null,
-    urlDestinationDetails: FirstStepRequired = null,
-    value: js.UndefOr[Double] = js.undefined,
-    visitNumPagesDetails: ComparisonValue = null,
-    visitTimeOnSiteDetails: ComparisonValue = null,
-    webPropertyId: String = null
-  ): SchemaGoal = {
+  def apply(): SchemaGoal = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (eventDetails != null) __obj.updateDynamic("eventDetails")(eventDetails.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentLink != null) __obj.updateDynamic("parentLink")(parentLink.asInstanceOf[js.Any])
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (urlDestinationDetails != null) __obj.updateDynamic("urlDestinationDetails")(urlDestinationDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
-    if (visitNumPagesDetails != null) __obj.updateDynamic("visitNumPagesDetails")(visitNumPagesDetails.asInstanceOf[js.Any])
-    if (visitTimeOnSiteDetails != null) __obj.updateDynamic("visitTimeOnSiteDetails")(visitTimeOnSiteDetails.asInstanceOf[js.Any])
-    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoal]
   }
+  @scala.inline
+  implicit class SchemaGoalOps[Self <: SchemaGoal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setEventDetails(value: EventConditions): Self = this.set("eventDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventDetails: Self = this.set("eventDetails", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInternalWebPropertyId(value: String): Self = this.set("internalWebPropertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalWebPropertyId: Self = this.set("internalWebPropertyId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentLink(value: Href): Self = this.set("parentLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentLink: Self = this.set("parentLink", js.undefined)
+    @scala.inline
+    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setUrlDestinationDetails(value: FirstStepRequired): Self = this.set("urlDestinationDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlDestinationDetails: Self = this.set("urlDestinationDetails", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setVisitNumPagesDetails(value: ComparisonValue): Self = this.set("visitNumPagesDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisitNumPagesDetails: Self = this.set("visitNumPagesDetails", js.undefined)
+    @scala.inline
+    def setVisitTimeOnSiteDetails(value: ComparisonValue): Self = this.set("visitTimeOnSiteDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisitTimeOnSiteDetails: Self = this.set("visitTimeOnSiteDetails", js.undefined)
+    @scala.inline
+    def setWebPropertyId(value: String): Self = this.set("webPropertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebPropertyId: Self = this.set("webPropertyId", js.undefined)
+  }
+  
 }
 

@@ -4,24 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AuthorizeOptions
   extends BaseOptions[js.Any, js.Any] {
-  var scope: Scope
+  var scope: Scope = js.native
 }
 
 object AuthorizeOptions {
   @scala.inline
-  def apply(
-    scope: Scope,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null,
-    success: js.Any => Unit = null
-  ): AuthorizeOptions = {
+  def apply(scope: Scope): AuthorizeOptions = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[AuthorizeOptions]
   }
+  @scala.inline
+  implicit class AuthorizeOptionsOps[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScope(value: Scope): Self = this.set("scope", value.asInstanceOf[js.Any])
+  }
+  
 }
 

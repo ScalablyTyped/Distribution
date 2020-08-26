@@ -34,22 +34,48 @@ trait NodeGroup extends js.Object {
 
 object NodeGroup {
   @scala.inline
-  def apply(
-    NodeGroupId: String = null,
-    NodeGroupMembers: NodeGroupMemberList = null,
-    PrimaryEndpoint: Endpoint = null,
-    ReaderEndpoint: Endpoint = null,
-    Slots: String = null,
-    Status: String = null
-  ): NodeGroup = {
+  def apply(): NodeGroup = {
     val __obj = js.Dynamic.literal()
-    if (NodeGroupId != null) __obj.updateDynamic("NodeGroupId")(NodeGroupId.asInstanceOf[js.Any])
-    if (NodeGroupMembers != null) __obj.updateDynamic("NodeGroupMembers")(NodeGroupMembers.asInstanceOf[js.Any])
-    if (PrimaryEndpoint != null) __obj.updateDynamic("PrimaryEndpoint")(PrimaryEndpoint.asInstanceOf[js.Any])
-    if (ReaderEndpoint != null) __obj.updateDynamic("ReaderEndpoint")(ReaderEndpoint.asInstanceOf[js.Any])
-    if (Slots != null) __obj.updateDynamic("Slots")(Slots.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeGroup]
   }
+  @scala.inline
+  implicit class NodeGroupOps[Self <: NodeGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNodeGroupId(value: String): Self = this.set("NodeGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeGroupId: Self = this.set("NodeGroupId", js.undefined)
+    @scala.inline
+    def setNodeGroupMembersVarargs(value: NodeGroupMember*): Self = this.set("NodeGroupMembers", js.Array(value :_*))
+    @scala.inline
+    def setNodeGroupMembers(value: NodeGroupMemberList): Self = this.set("NodeGroupMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeGroupMembers: Self = this.set("NodeGroupMembers", js.undefined)
+    @scala.inline
+    def setPrimaryEndpoint(value: Endpoint): Self = this.set("PrimaryEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryEndpoint: Self = this.set("PrimaryEndpoint", js.undefined)
+    @scala.inline
+    def setReaderEndpoint(value: Endpoint): Self = this.set("ReaderEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReaderEndpoint: Self = this.set("ReaderEndpoint", js.undefined)
+    @scala.inline
+    def setSlots(value: String): Self = this.set("Slots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlots: Self = this.set("Slots", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

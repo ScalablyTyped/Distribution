@@ -44,36 +44,46 @@ trait ParamsResourceUsersDatasourcesDatasetsPatch extends StandardParameters {
 
 object ParamsResourceUsersDatasourcesDatasetsPatch {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    currentTimeMillis: String = null,
-    dataSourceId: String = null,
-    datasetId: String = null,
-    fields: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    requestBody: SchemaDataset = null,
-    userId: String = null,
-    userIp: String = null
-  ): ParamsResourceUsersDatasourcesDatasetsPatch = {
+  def apply(): ParamsResourceUsersDatasourcesDatasetsPatch = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (currentTimeMillis != null) __obj.updateDynamic("currentTimeMillis")(currentTimeMillis.asInstanceOf[js.Any])
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceUsersDatasourcesDatasetsPatch]
   }
+  @scala.inline
+  implicit class ParamsResourceUsersDatasourcesDatasetsPatchOps[Self <: ParamsResourceUsersDatasourcesDatasetsPatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCurrentTimeMillis(value: String): Self = this.set("currentTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentTimeMillis: Self = this.set("currentTimeMillis", js.undefined)
+    @scala.inline
+    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    @scala.inline
+    def setDatasetId(value: String): Self = this.set("datasetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetId: Self = this.set("datasetId", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaDataset): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

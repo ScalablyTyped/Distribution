@@ -10,39 +10,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Amexexpresscheckout extends js.Object {
-  var amex_express_checkout: js.UndefOr[js.Any] = js.undefined
-  var apple_pay: js.UndefOr[js.Any] = js.undefined
-  var dynamic_last4: js.UndefOr[js.Any] = js.undefined
-  var google_pay: js.UndefOr[js.Any] = js.undefined
-  var masterpass: js.UndefOr[js.Any] = js.undefined
-  var samsung_pay: js.UndefOr[js.Any] = js.undefined
-  var `type`: amex_express_checkout | apple_pay | google_pay | masterpass | samsung_pay | visa_checkout
-  var visa_checkout: js.UndefOr[js.Any] = js.undefined
+  var amex_express_checkout: js.UndefOr[js.Any] = js.native
+  var apple_pay: js.UndefOr[js.Any] = js.native
+  var dynamic_last4: js.UndefOr[js.Any] = js.native
+  var google_pay: js.UndefOr[js.Any] = js.native
+  var masterpass: js.UndefOr[js.Any] = js.native
+  var samsung_pay: js.UndefOr[js.Any] = js.native
+  var `type`: amex_express_checkout | apple_pay | google_pay | masterpass | samsung_pay | visa_checkout = js.native
+  var visa_checkout: js.UndefOr[js.Any] = js.native
 }
 
 object Amexexpresscheckout {
   @scala.inline
-  def apply(
-    `type`: amex_express_checkout | apple_pay | google_pay | masterpass | samsung_pay | visa_checkout,
-    amex_express_checkout: js.Any = null,
-    apple_pay: js.Any = null,
-    dynamic_last4: js.Any = null,
-    google_pay: js.Any = null,
-    masterpass: js.Any = null,
-    samsung_pay: js.Any = null,
-    visa_checkout: js.Any = null
-  ): Amexexpresscheckout = {
+  def apply(`type`: amex_express_checkout | apple_pay | google_pay | masterpass | samsung_pay | visa_checkout): Amexexpresscheckout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (amex_express_checkout != null) __obj.updateDynamic("amex_express_checkout")(amex_express_checkout.asInstanceOf[js.Any])
-    if (apple_pay != null) __obj.updateDynamic("apple_pay")(apple_pay.asInstanceOf[js.Any])
-    if (dynamic_last4 != null) __obj.updateDynamic("dynamic_last4")(dynamic_last4.asInstanceOf[js.Any])
-    if (google_pay != null) __obj.updateDynamic("google_pay")(google_pay.asInstanceOf[js.Any])
-    if (masterpass != null) __obj.updateDynamic("masterpass")(masterpass.asInstanceOf[js.Any])
-    if (samsung_pay != null) __obj.updateDynamic("samsung_pay")(samsung_pay.asInstanceOf[js.Any])
-    if (visa_checkout != null) __obj.updateDynamic("visa_checkout")(visa_checkout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Amexexpresscheckout]
   }
+  @scala.inline
+  implicit class AmexexpresscheckoutOps[Self <: Amexexpresscheckout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: amex_express_checkout | apple_pay | google_pay | masterpass | samsung_pay | visa_checkout): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmex_express_checkout(value: js.Any): Self = this.set("amex_express_checkout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmex_express_checkout: Self = this.set("amex_express_checkout", js.undefined)
+    @scala.inline
+    def setApple_pay(value: js.Any): Self = this.set("apple_pay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApple_pay: Self = this.set("apple_pay", js.undefined)
+    @scala.inline
+    def setDynamic_last4(value: js.Any): Self = this.set("dynamic_last4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamic_last4: Self = this.set("dynamic_last4", js.undefined)
+    @scala.inline
+    def setGoogle_pay(value: js.Any): Self = this.set("google_pay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogle_pay: Self = this.set("google_pay", js.undefined)
+    @scala.inline
+    def setMasterpass(value: js.Any): Self = this.set("masterpass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterpass: Self = this.set("masterpass", js.undefined)
+    @scala.inline
+    def setSamsung_pay(value: js.Any): Self = this.set("samsung_pay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamsung_pay: Self = this.set("samsung_pay", js.undefined)
+    @scala.inline
+    def setVisa_checkout(value: js.Any): Self = this.set("visa_checkout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisa_checkout: Self = this.set("visa_checkout", js.undefined)
+  }
+  
 }
 

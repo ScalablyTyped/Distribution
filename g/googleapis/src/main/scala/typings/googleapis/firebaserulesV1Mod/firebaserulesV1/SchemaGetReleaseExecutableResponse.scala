@@ -39,22 +39,46 @@ trait SchemaGetReleaseExecutableResponse extends js.Object {
 
 object SchemaGetReleaseExecutableResponse {
   @scala.inline
-  def apply(
-    executable: String = null,
-    executableVersion: String = null,
-    language: String = null,
-    rulesetName: String = null,
-    syncTime: String = null,
-    updateTime: String = null
-  ): SchemaGetReleaseExecutableResponse = {
+  def apply(): SchemaGetReleaseExecutableResponse = {
     val __obj = js.Dynamic.literal()
-    if (executable != null) __obj.updateDynamic("executable")(executable.asInstanceOf[js.Any])
-    if (executableVersion != null) __obj.updateDynamic("executableVersion")(executableVersion.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (rulesetName != null) __obj.updateDynamic("rulesetName")(rulesetName.asInstanceOf[js.Any])
-    if (syncTime != null) __obj.updateDynamic("syncTime")(syncTime.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetReleaseExecutableResponse]
   }
+  @scala.inline
+  implicit class SchemaGetReleaseExecutableResponseOps[Self <: SchemaGetReleaseExecutableResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutable(value: String): Self = this.set("executable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutable: Self = this.set("executable", js.undefined)
+    @scala.inline
+    def setExecutableVersion(value: String): Self = this.set("executableVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutableVersion: Self = this.set("executableVersion", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setRulesetName(value: String): Self = this.set("rulesetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRulesetName: Self = this.set("rulesetName", js.undefined)
+    @scala.inline
+    def setSyncTime(value: String): Self = this.set("syncTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncTime: Self = this.set("syncTime", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,38 @@ trait SchemaRbacPolicy extends js.Object {
 
 object SchemaRbacPolicy {
   @scala.inline
-  def apply(
-    name: String = null,
-    permissions: js.Array[SchemaPermission] = null,
-    principals: js.Array[SchemaPrincipal] = null
-  ): SchemaRbacPolicy = {
+  def apply(): SchemaRbacPolicy = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (principals != null) __obj.updateDynamic("principals")(principals.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRbacPolicy]
   }
+  @scala.inline
+  implicit class SchemaRbacPolicyOps[Self <: SchemaRbacPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: SchemaPermission*): Self = this.set("permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: js.Array[SchemaPermission]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setPrincipalsVarargs(value: SchemaPrincipal*): Self = this.set("principals", js.Array(value :_*))
+    @scala.inline
+    def setPrincipals(value: js.Array[SchemaPrincipal]): Self = this.set("principals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipals: Self = this.set("principals", js.undefined)
+  }
+  
 }
 

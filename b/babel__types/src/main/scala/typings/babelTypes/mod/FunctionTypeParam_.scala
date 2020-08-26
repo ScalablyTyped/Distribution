@@ -6,33 +6,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait FunctionTypeParam_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait FunctionTypeParam_
   extends Flow
      with BaseNode {
-  var name: Identifier_ | Null
-  var optional: Boolean | Null
-  var typeAnnotation: FlowType
+  var name: Identifier_ | Null = js.native
+  var optional: Boolean | Null = js.native
+  var typeAnnotation: FlowType = js.native
   @JSName("type")
-  var type_FunctionTypeParam_ : FunctionTypeParam
+  var type_FunctionTypeParam_ : FunctionTypeParam = js.native
 }
 
 object FunctionTypeParam_ {
   @scala.inline
-  def apply(
-    `type`: FunctionTypeParam,
-    typeAnnotation: FlowType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    name: Identifier_ = null,
-    optional: Boolean = null.asInstanceOf[Boolean],
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): FunctionTypeParam_ = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def apply(`type`: FunctionTypeParam, typeAnnotation: FlowType): FunctionTypeParam_ = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionTypeParam_]
   }
+  @scala.inline
+  implicit class FunctionTypeParam_Ops[Self <: FunctionTypeParam_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: FunctionTypeParam): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeAnnotation(value: FlowType): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Identifier_): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNameNull: Self = this.set("name", null)
+    @scala.inline
+    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptionalNull: Self = this.set("optional", null)
+  }
+  
 }
 

@@ -11,10 +11,26 @@ trait CancelJobOutput extends js.Object {
 
 object CancelJobOutput {
   @scala.inline
-  def apply(Success: js.UndefOr[Success] = js.undefined): CancelJobOutput = {
+  def apply(): CancelJobOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelJobOutput]
   }
+  @scala.inline
+  implicit class CancelJobOutputOps[Self <: CancelJobOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuccess(value: Success): Self = this.set("Success", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccess: Self = this.set("Success", js.undefined)
+  }
+  
 }
 

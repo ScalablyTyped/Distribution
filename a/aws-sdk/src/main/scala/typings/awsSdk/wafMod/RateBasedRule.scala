@@ -34,18 +34,40 @@ trait RateBasedRule extends js.Object {
 
 object RateBasedRule {
   @scala.inline
-  def apply(
-    MatchPredicates: Predicates,
-    RateKey: RateKey,
-    RateLimit: RateLimit,
-    RuleId: ResourceId,
-    MetricName: MetricName = null,
-    Name: ResourceName = null
-  ): RateBasedRule = {
+  def apply(MatchPredicates: Predicates, RateKey: RateKey, RateLimit: RateLimit, RuleId: ResourceId): RateBasedRule = {
     val __obj = js.Dynamic.literal(MatchPredicates = MatchPredicates.asInstanceOf[js.Any], RateKey = RateKey.asInstanceOf[js.Any], RateLimit = RateLimit.asInstanceOf[js.Any], RuleId = RuleId.asInstanceOf[js.Any])
-    if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateBasedRule]
   }
+  @scala.inline
+  implicit class RateBasedRuleOps[Self <: RateBasedRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMatchPredicatesVarargs(value: Predicate*): Self = this.set("MatchPredicates", js.Array(value :_*))
+    @scala.inline
+    def setMatchPredicates(value: Predicates): Self = this.set("MatchPredicates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRateKey(value: RateKey): Self = this.set("RateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRateLimit(value: RateLimit): Self = this.set("RateLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleId(value: ResourceId): Self = this.set("RuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

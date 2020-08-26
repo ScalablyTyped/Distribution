@@ -19,10 +19,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartConfiguration extends js.Object {
-  var area: js.UndefOr[Zerobased] = js.undefined
-  var axis: js.UndefOr[AxesOptions] = js.undefined
-  var bar: js.UndefOr[Space] = js.undefined
+  var area: js.UndefOr[Zerobased] = js.native
+  var axis: js.UndefOr[AxesOptions] = js.native
+  var bar: js.UndefOr[Space] = js.native
   /**
     * The CSS selector or the element which the chart will be set to. D3 selection object can be specified. If other chart is set already, it will be replaced with the new one (only one chart
     * can be set in one element).
@@ -30,130 +31,209 @@ trait ChartConfiguration extends js.Object {
     * Note: When chart is not binded, c3 starts observing if chart.element is binded by MutationObserver. In this case, polyfill is required in IE9 and IE10 becuase they do not support
     * MutationObserver. On the other hand, if chart always will be binded, polyfill will not be required because MutationObserver will never be called.
     */
-  var bindto: js.UndefOr[String | HTMLElement | (Selection_[_, _, _, _]) | Null] = js.undefined
-  var color: js.UndefOr[Pattern] = js.undefined
-  var data: Data
-  var donut: js.UndefOr[Label] = js.undefined
-  var gauge: js.UndefOr[Arcs] = js.undefined
-  var grid: js.UndefOr[GridOptions] = js.undefined
-  var interaction: js.UndefOr[Brighten] = js.undefined
-  var legend: js.UndefOr[LegendOptions] = js.undefined
-  var line: js.UndefOr[LineOptions] = js.undefined
+  var bindto: js.UndefOr[String | HTMLElement | (Selection_[_, _, _, _]) | Null] = js.native
+  var color: js.UndefOr[Pattern] = js.native
+  var data: Data = js.native
+  var donut: js.UndefOr[Label] = js.native
+  var gauge: js.UndefOr[Arcs] = js.native
+  var grid: js.UndefOr[GridOptions] = js.native
+  var interaction: js.UndefOr[Brighten] = js.native
+  var legend: js.UndefOr[LegendOptions] = js.native
+  var line: js.UndefOr[LineOptions] = js.native
   /**
     * Set a callback to execute when the chart is initialized.
     */
-  var oninit: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
+  var oninit: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
   /**
     * Set a callback to execute when mouse leaves the chart.
     */
-  var onmouseout: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
+  var onmouseout: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
   /**
     * Set a callback to execute when mouse enters the chart.
     */
-  var onmouseover: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
+  var onmouseover: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
   /**
     * Set a callback which is executed when the chart is rendered. Basically, this callback will be called in each time when the chart is redrawed.
     */
-  var onrendered: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
+  var onrendered: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
   /**
     * Set a callback to execute when user resizes the screen.
     */
-  var onresize: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
+  var onresize: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
   /**
     * Set a callback to execute when screen resize finished.
     */
-  var onresized: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
-  var padding: js.UndefOr[Padding] = js.undefined
-  var pie: js.UndefOr[Expand] = js.undefined
-  var point: js.UndefOr[PointOptions] = js.undefined
+  var onresized: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
+  var padding: js.UndefOr[Padding] = js.native
+  var pie: js.UndefOr[Expand] = js.native
+  var point: js.UndefOr[PointOptions] = js.native
   /**
     * Show rectangles inside the chart.
     * This option accepts array including object that has axis, start, end and class. The keys start, end and class are optional.
     * axis must be x, y or y2. start and end should be the value where regions start and end. If not specified, the edge values will be used. If timeseries x axis, date string, Date object and
     * unixtime integer can be used. If class is set, the region element will have it as class.
     */
-  var regions: js.UndefOr[js.Array[RegionOptions]] = js.undefined
-  var resize: js.UndefOr[Auto] = js.undefined
-  var size: js.UndefOr[Height] = js.undefined
-  var spline: js.UndefOr[Interpolation] = js.undefined
-  var stanford: js.UndefOr[Colors] = js.undefined
-  var subchart: js.UndefOr[SubchartOptions] = js.undefined
-  var svg: js.UndefOr[Classname] = js.undefined
-  var title: js.UndefOr[typings.c3.anon.Padding] = js.undefined
-  var tooltip: js.UndefOr[TooltipOptions] = js.undefined
-  var transition: js.UndefOr[Duration] = js.undefined
-  var zoom: js.UndefOr[ZoomOptions] = js.undefined
+  var regions: js.UndefOr[js.Array[RegionOptions]] = js.native
+  var resize: js.UndefOr[Auto] = js.native
+  var size: js.UndefOr[Height] = js.native
+  var spline: js.UndefOr[Interpolation] = js.native
+  var stanford: js.UndefOr[Colors] = js.native
+  var subchart: js.UndefOr[SubchartOptions] = js.native
+  var svg: js.UndefOr[Classname] = js.native
+  var title: js.UndefOr[typings.c3.anon.Padding] = js.native
+  var tooltip: js.UndefOr[TooltipOptions] = js.native
+  var transition: js.UndefOr[Duration] = js.native
+  var zoom: js.UndefOr[ZoomOptions] = js.native
 }
 
 object ChartConfiguration {
   @scala.inline
-  def apply(
-    data: Data,
-    area: Zerobased = null,
-    axis: AxesOptions = null,
-    bar: Space = null,
-    bindto: js.UndefOr[Null | String | HTMLElement | (Selection_[_, _, _, _])] = js.undefined,
-    color: Pattern = null,
-    donut: Label = null,
-    gauge: Arcs = null,
-    grid: GridOptions = null,
-    interaction: Brighten = null,
-    legend: LegendOptions = null,
-    line: LineOptions = null,
-    oninit: js.ThisFunction0[/* this */ ChartInternal, Unit] = null,
-    onmouseout: js.ThisFunction0[/* this */ ChartInternal, Unit] = null,
-    onmouseover: js.ThisFunction0[/* this */ ChartInternal, Unit] = null,
-    onrendered: js.ThisFunction0[/* this */ ChartInternal, Unit] = null,
-    onresize: js.ThisFunction0[/* this */ ChartInternal, Unit] = null,
-    onresized: js.ThisFunction0[/* this */ ChartInternal, Unit] = null,
-    padding: Padding = null,
-    pie: Expand = null,
-    point: PointOptions = null,
-    regions: js.Array[RegionOptions] = null,
-    resize: Auto = null,
-    size: Height = null,
-    spline: Interpolation = null,
-    stanford: Colors = null,
-    subchart: SubchartOptions = null,
-    svg: Classname = null,
-    title: typings.c3.anon.Padding = null,
-    tooltip: TooltipOptions = null,
-    transition: Duration = null,
-    zoom: ZoomOptions = null
-  ): ChartConfiguration = {
+  def apply(data: Data): ChartConfiguration = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindto)) __obj.updateDynamic("bindto")(bindto.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (donut != null) __obj.updateDynamic("donut")(donut.asInstanceOf[js.Any])
-    if (gauge != null) __obj.updateDynamic("gauge")(gauge.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (interaction != null) __obj.updateDynamic("interaction")(interaction.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (oninit != null) __obj.updateDynamic("oninit")(oninit.asInstanceOf[js.Any])
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout.asInstanceOf[js.Any])
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover.asInstanceOf[js.Any])
-    if (onrendered != null) __obj.updateDynamic("onrendered")(onrendered.asInstanceOf[js.Any])
-    if (onresize != null) __obj.updateDynamic("onresize")(onresize.asInstanceOf[js.Any])
-    if (onresized != null) __obj.updateDynamic("onresized")(onresized.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pie != null) __obj.updateDynamic("pie")(pie.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (spline != null) __obj.updateDynamic("spline")(spline.asInstanceOf[js.Any])
-    if (stanford != null) __obj.updateDynamic("stanford")(stanford.asInstanceOf[js.Any])
-    if (subchart != null) __obj.updateDynamic("subchart")(subchart.asInstanceOf[js.Any])
-    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartConfiguration]
   }
+  @scala.inline
+  implicit class ChartConfigurationOps[Self <: ChartConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: Data): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArea(value: Zerobased): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArea: Self = this.set("area", js.undefined)
+    @scala.inline
+    def setAxis(value: AxesOptions): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setBar(value: Space): Self = this.set("bar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBar: Self = this.set("bar", js.undefined)
+    @scala.inline
+    def setBindto(value: String | HTMLElement | (Selection_[_, _, _, _])): Self = this.set("bindto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindto: Self = this.set("bindto", js.undefined)
+    @scala.inline
+    def setBindtoNull: Self = this.set("bindto", null)
+    @scala.inline
+    def setColor(value: Pattern): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDonut(value: Label): Self = this.set("donut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDonut: Self = this.set("donut", js.undefined)
+    @scala.inline
+    def setGauge(value: Arcs): Self = this.set("gauge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGauge: Self = this.set("gauge", js.undefined)
+    @scala.inline
+    def setGrid(value: GridOptions): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setInteraction(value: Brighten): Self = this.set("interaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteraction: Self = this.set("interaction", js.undefined)
+    @scala.inline
+    def setLegend(value: LegendOptions): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setLine(value: LineOptions): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setOninit(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("oninit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOninit: Self = this.set("oninit", js.undefined)
+    @scala.inline
+    def setOnmouseout(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onmouseout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmouseout: Self = this.set("onmouseout", js.undefined)
+    @scala.inline
+    def setOnmouseover(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onmouseover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnmouseover: Self = this.set("onmouseover", js.undefined)
+    @scala.inline
+    def setOnrendered(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onrendered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnrendered: Self = this.set("onrendered", js.undefined)
+    @scala.inline
+    def setOnresize(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onresize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnresize: Self = this.set("onresize", js.undefined)
+    @scala.inline
+    def setOnresized(value: js.ThisFunction0[/* this */ ChartInternal, Unit]): Self = this.set("onresized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnresized: Self = this.set("onresized", js.undefined)
+    @scala.inline
+    def setPadding(value: Padding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPie(value: Expand): Self = this.set("pie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePie: Self = this.set("pie", js.undefined)
+    @scala.inline
+    def setPoint(value: PointOptions): Self = this.set("point", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoint: Self = this.set("point", js.undefined)
+    @scala.inline
+    def setRegionsVarargs(value: RegionOptions*): Self = this.set("regions", js.Array(value :_*))
+    @scala.inline
+    def setRegions(value: js.Array[RegionOptions]): Self = this.set("regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegions: Self = this.set("regions", js.undefined)
+    @scala.inline
+    def setResize(value: Auto): Self = this.set("resize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResize: Self = this.set("resize", js.undefined)
+    @scala.inline
+    def setSize(value: Height): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSpline(value: Interpolation): Self = this.set("spline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpline: Self = this.set("spline", js.undefined)
+    @scala.inline
+    def setStanford(value: Colors): Self = this.set("stanford", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStanford: Self = this.set("stanford", js.undefined)
+    @scala.inline
+    def setSubchart(value: SubchartOptions): Self = this.set("subchart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubchart: Self = this.set("subchart", js.undefined)
+    @scala.inline
+    def setSvg(value: Classname): Self = this.set("svg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvg: Self = this.set("svg", js.undefined)
+    @scala.inline
+    def setTitle(value: typings.c3.anon.Padding): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTooltip(value: TooltipOptions): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTransition(value: Duration): Self = this.set("transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransition: Self = this.set("transition", js.undefined)
+    @scala.inline
+    def setZoom(value: ZoomOptions): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+  }
+  
 }
 

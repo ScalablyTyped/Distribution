@@ -207,6 +207,11 @@ trait Application
     */
   def render(name: String): Unit = js.native
   def render(name: String, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+  def render(
+    name: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* html */ String, Unit]
+  ): Unit = js.native
   def render(name: String, options: js.Object): Unit = js.native
   def render(name: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
   /**

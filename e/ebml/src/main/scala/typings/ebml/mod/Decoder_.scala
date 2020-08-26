@@ -28,6 +28,7 @@ class Decoder_ () extends Transform {
   ): this.type = js.native
   def end(chunk: Buffer): Unit = js.native
   def end(chunk: Buffer, cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: Buffer, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: Buffer, encoding: String): Unit = js.native
   def end(chunk: Buffer, encoding: String, cb: js.Function0[Unit]): Unit = js.native
   def on[K /* <: /* keyof ebml.ebml.Decoder.EventListenerMap */ data | close | end | readable | error */](
@@ -55,6 +56,11 @@ class Decoder_ () extends Transform {
   ): this.type = js.native
   def write(chunk: Buffer): Boolean = js.native
   def write(chunk: Buffer, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(
+    chunk: Buffer,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
   def write(chunk: Buffer, encoding: String): Boolean = js.native
   def write(chunk: Buffer, encoding: String, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }

@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Impl extends js.Object {
   /**
     * @default 'checked'
     */
-  var checked: String
+  var checked: String = js.native
   /**
     * @default 'disabled'
     */
-  var disabled: String
+  var disabled: String = js.native
   /**
     * @default 'radio'
     */
-  var radio: String
+  var radio: String = js.native
   /**
     * @default 'read-only'
     */
-  var readOnly: String
+  var readOnly: String = js.native
 }
 
 object Impl {
@@ -29,5 +30,26 @@ object Impl {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Impl]
   }
+  @scala.inline
+  implicit class ImplOps[Self <: Impl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChecked(value: String): Self = this.set("checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRadio(value: String): Self = this.set("radio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReadOnly(value: String): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -38,24 +38,50 @@ trait SchemaExtensionInfo extends js.Object {
 
 object SchemaExtensionInfo {
   @scala.inline
-  def apply(
-    Description: Description = null,
-    DirectoryId: DirectoryId = null,
-    EndDateTime: EndDateTime = null,
-    SchemaExtensionId: SchemaExtensionId = null,
-    SchemaExtensionStatus: SchemaExtensionStatus = null,
-    SchemaExtensionStatusReason: SchemaExtensionStatusReason = null,
-    StartDateTime: StartDateTime = null
-  ): SchemaExtensionInfo = {
+  def apply(): SchemaExtensionInfo = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
-    if (EndDateTime != null) __obj.updateDynamic("EndDateTime")(EndDateTime.asInstanceOf[js.Any])
-    if (SchemaExtensionId != null) __obj.updateDynamic("SchemaExtensionId")(SchemaExtensionId.asInstanceOf[js.Any])
-    if (SchemaExtensionStatus != null) __obj.updateDynamic("SchemaExtensionStatus")(SchemaExtensionStatus.asInstanceOf[js.Any])
-    if (SchemaExtensionStatusReason != null) __obj.updateDynamic("SchemaExtensionStatusReason")(SchemaExtensionStatusReason.asInstanceOf[js.Any])
-    if (StartDateTime != null) __obj.updateDynamic("StartDateTime")(StartDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtensionInfo]
   }
+  @scala.inline
+  implicit class SchemaExtensionInfoOps[Self <: SchemaExtensionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    @scala.inline
+    def setEndDateTime(value: EndDateTime): Self = this.set("EndDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDateTime: Self = this.set("EndDateTime", js.undefined)
+    @scala.inline
+    def setSchemaExtensionId(value: SchemaExtensionId): Self = this.set("SchemaExtensionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaExtensionId: Self = this.set("SchemaExtensionId", js.undefined)
+    @scala.inline
+    def setSchemaExtensionStatus(value: SchemaExtensionStatus): Self = this.set("SchemaExtensionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaExtensionStatus: Self = this.set("SchemaExtensionStatus", js.undefined)
+    @scala.inline
+    def setSchemaExtensionStatusReason(value: SchemaExtensionStatusReason): Self = this.set("SchemaExtensionStatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaExtensionStatusReason: Self = this.set("SchemaExtensionStatusReason", js.undefined)
+    @scala.inline
+    def setStartDateTime(value: StartDateTime): Self = this.set("StartDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDateTime: Self = this.set("StartDateTime", js.undefined)
+  }
+  
 }
 

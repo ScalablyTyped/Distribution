@@ -18,11 +18,32 @@ trait ListProposalsOutput extends js.Object {
 
 object ListProposalsOutput {
   @scala.inline
-  def apply(NextToken: PaginationToken = null, Proposals: ProposalSummaryList = null): ListProposalsOutput = {
+  def apply(): ListProposalsOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Proposals != null) __obj.updateDynamic("Proposals")(Proposals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProposalsOutput]
   }
+  @scala.inline
+  implicit class ListProposalsOutputOps[Self <: ListProposalsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setProposalsVarargs(value: ProposalSummary*): Self = this.set("Proposals", js.Array(value :_*))
+    @scala.inline
+    def setProposals(value: ProposalSummaryList): Self = this.set("Proposals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposals: Self = this.set("Proposals", js.undefined)
+  }
+  
 }
 

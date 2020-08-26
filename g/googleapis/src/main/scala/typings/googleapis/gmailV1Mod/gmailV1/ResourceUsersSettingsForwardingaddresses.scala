@@ -33,6 +33,7 @@ class ResourceUsersSettingsForwardingaddresses protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaForwardingAddress] = js.native
   def create(callback: BodyResponseCallback[SchemaForwardingAddress]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaForwardingAddress] = js.native
   def create(params: ParamsResourceUsersSettingsForwardingaddressesCreate): GaxiosPromise[SchemaForwardingAddress] = js.native
   def create(
     params: ParamsResourceUsersSettingsForwardingaddressesCreate,
@@ -67,6 +68,7 @@ class ResourceUsersSettingsForwardingaddresses protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsForwardingaddressesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsForwardingaddressesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -95,6 +97,7 @@ class ResourceUsersSettingsForwardingaddresses protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaForwardingAddress] = js.native
   def get(callback: BodyResponseCallback[SchemaForwardingAddress]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaForwardingAddress] = js.native
   def get(params: ParamsResourceUsersSettingsForwardingaddressesGet): GaxiosPromise[SchemaForwardingAddress] = js.native
   def get(
     params: ParamsResourceUsersSettingsForwardingaddressesGet,
@@ -125,6 +128,7 @@ class ResourceUsersSettingsForwardingaddresses protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListForwardingAddressesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListForwardingAddressesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListForwardingAddressesResponse] = js.native
   def list(params: ParamsResourceUsersSettingsForwardingaddressesList): GaxiosPromise[SchemaListForwardingAddressesResponse] = js.native
   def list(
     params: ParamsResourceUsersSettingsForwardingaddressesList,

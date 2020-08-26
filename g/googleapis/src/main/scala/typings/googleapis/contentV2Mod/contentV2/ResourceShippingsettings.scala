@@ -29,6 +29,7 @@ class ResourceShippingsettings protected () extends js.Object {
     */
   def custombatch(): GaxiosPromise[SchemaShippingsettingsCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaShippingsettingsCustomBatchResponse]): Unit = js.native
+  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaShippingsettingsCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceShippingsettingsCustombatch): GaxiosPromise[SchemaShippingsettingsCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceShippingsettingsCustombatch,
@@ -60,6 +61,7 @@ class ResourceShippingsettings protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaShippingSettings] = js.native
   def get(callback: BodyResponseCallback[SchemaShippingSettings]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaShippingSettings] = js.native
   def get(params: ParamsResourceShippingsettingsGet): GaxiosPromise[SchemaShippingSettings] = js.native
   def get(params: ParamsResourceShippingsettingsGet, callback: BodyResponseCallback[SchemaShippingSettings]): Unit = js.native
   def get(
@@ -87,6 +89,7 @@ class ResourceShippingsettings protected () extends js.Object {
     */
   def getsupportedcarriers(): GaxiosPromise[SchemaShippingsettingsGetSupportedCarriersResponse] = js.native
   def getsupportedcarriers(callback: BodyResponseCallback[SchemaShippingsettingsGetSupportedCarriersResponse]): Unit = js.native
+  def getsupportedcarriers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaShippingsettingsGetSupportedCarriersResponse] = js.native
   def getsupportedcarriers(params: ParamsResourceShippingsettingsGetsupportedcarriers): GaxiosPromise[SchemaShippingsettingsGetSupportedCarriersResponse] = js.native
   def getsupportedcarriers(
     params: ParamsResourceShippingsettingsGetsupportedcarriers,
@@ -117,6 +120,7 @@ class ResourceShippingsettings protected () extends js.Object {
     */
   def getsupportedholidays(): GaxiosPromise[SchemaShippingsettingsGetSupportedHolidaysResponse] = js.native
   def getsupportedholidays(callback: BodyResponseCallback[SchemaShippingsettingsGetSupportedHolidaysResponse]): Unit = js.native
+  def getsupportedholidays(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaShippingsettingsGetSupportedHolidaysResponse] = js.native
   def getsupportedholidays(params: ParamsResourceShippingsettingsGetsupportedholidays): GaxiosPromise[SchemaShippingsettingsGetSupportedHolidaysResponse] = js.native
   def getsupportedholidays(
     params: ParamsResourceShippingsettingsGetsupportedholidays,
@@ -150,6 +154,7 @@ class ResourceShippingsettings protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaShippingsettingsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaShippingsettingsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaShippingsettingsListResponse] = js.native
   def list(params: ParamsResourceShippingsettingsList): GaxiosPromise[SchemaShippingsettingsListResponse] = js.native
   def list(
     params: ParamsResourceShippingsettingsList,
@@ -184,6 +189,7 @@ class ResourceShippingsettings protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaShippingSettings] = js.native
   def patch(callback: BodyResponseCallback[SchemaShippingSettings]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaShippingSettings] = js.native
   def patch(params: ParamsResourceShippingsettingsPatch): GaxiosPromise[SchemaShippingSettings] = js.native
   def patch(
     params: ParamsResourceShippingsettingsPatch,
@@ -217,6 +223,7 @@ class ResourceShippingsettings protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaShippingSettings] = js.native
   def update(callback: BodyResponseCallback[SchemaShippingSettings]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaShippingSettings] = js.native
   def update(params: ParamsResourceShippingsettingsUpdate): GaxiosPromise[SchemaShippingSettings] = js.native
   def update(
     params: ParamsResourceShippingsettingsUpdate,

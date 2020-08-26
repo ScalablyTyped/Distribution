@@ -11,8 +11,8 @@ A JSON polyfill for older JavaScript platforms.
 | Full name          | json3 |
 | Keywords           | json, spec, ecma, es5, lexer, parser, stringify |
 | # releases         | 2 |
-| # dependents       | 134 |
-| # downloads        | 265618011 |
+| # dependents       | 137 |
+| # downloads        | 272249771 |
 | # stars            | 5 |
 
 ## Links

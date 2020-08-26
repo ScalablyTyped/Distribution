@@ -1,22 +1,18 @@
 package typings.graphqlTools
 
-import typings.graphqlTools.interfacesMod.Operation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object graphqlToolsStrings {
   @js.native
-  sealed trait CHILDREN extends js.Object
-  
-  @js.native
-  sealed trait Document extends js.Object
+  sealed trait FragmentDefinition extends js.Object
   
   @js.native
   sealed trait Mutation extends js.Object
   
   @js.native
-  sealed trait OWN extends js.Object
+  sealed trait OperationDefinition extends js.Object
   
   @js.native
   sealed trait Query extends js.Object
@@ -31,25 +27,17 @@ object graphqlToolsStrings {
   sealed trait interface extends js.Object
   
   @js.native
-  sealed trait mutation_ extends Operation
-  
-  @js.native
   sealed trait `object` extends js.Object
   
   @js.native
-  sealed trait query_ extends Operation
-  
-  @js.native
-  sealed trait subscription_ extends Operation
+  sealed trait output extends js.Object
   
   @scala.inline
-  def CHILDREN: CHILDREN = "CHILDREN".asInstanceOf[CHILDREN]
-  @scala.inline
-  def Document: Document = "Document".asInstanceOf[Document]
+  def FragmentDefinition: FragmentDefinition = "FragmentDefinition".asInstanceOf[FragmentDefinition]
   @scala.inline
   def Mutation: Mutation = "Mutation".asInstanceOf[Mutation]
   @scala.inline
-  def OWN: OWN = "OWN".asInstanceOf[OWN]
+  def OperationDefinition: OperationDefinition = "OperationDefinition".asInstanceOf[OperationDefinition]
   @scala.inline
   def Query: Query = "Query".asInstanceOf[Query]
   @scala.inline
@@ -59,12 +47,8 @@ object graphqlToolsStrings {
   @scala.inline
   def interface: interface = "interface".asInstanceOf[interface]
   @scala.inline
-  def mutation_ : mutation_ = "mutation".asInstanceOf[mutation_]
-  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
-  def query_ : query_ = "query".asInstanceOf[query_]
-  @scala.inline
-  def subscription_ : subscription_ = "subscription".asInstanceOf[subscription_]
+  def output: output = "output".asInstanceOf[output]
 }
 

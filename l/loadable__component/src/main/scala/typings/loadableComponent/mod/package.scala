@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type DefaultComponent[P] = typings.react.mod.ComponentType[P] | typings.loadableComponent.mod.DefaultImportedComponent[P]
-  type LoadableComponent[T] = (typings.react.mod.ComponentType[T with typings.loadableComponent.anon.Fallback]) with typings.loadableComponent.mod.LoadableComponentMethods[T]
-  type LoadableLibrary[TModule] = typings.react.mod.ComponentType[typings.loadableComponent.anon.Children[TModule]] with TModule with typings.loadableComponent.mod.LoadableComponentMethods[js.Object]
+  type ComponentResolver[Props, Module] = js.Function2[/* module */ Module, /* props */ Props, typings.react.mod.ComponentType[Props]]
+  type DefaultComponent[Props] = typings.react.mod.ComponentType[Props] | typings.loadableComponent.mod.DefaultImportedComponent[Props]
+  type LoadableComponent[Props] = (typings.react.mod.ComponentType[Props with typings.loadableComponent.anon.Fallback]) with typings.loadableComponent.mod.LoadableComponentMethods[Props]
+  type LoadableLibrary[Module] = typings.react.mod.ComponentType[typings.loadableComponent.anon.Children[Module]] with Module with typings.loadableComponent.mod.LoadableComponentMethods[js.Object]
 }

@@ -39,6 +39,7 @@ trait ChartSeriesCollection extends ClientObject {
     * @param index Optional. Index value of the series to be added. Zero-indexed.
     */
   def add(): ChartSeries = js.native
+  def add(name: js.UndefOr[scala.Nothing], index: Double): ChartSeries = js.native
   def add(name: String): ChartSeries = js.native
   def add(name: String, index: Double): ChartSeries = js.native
   /**

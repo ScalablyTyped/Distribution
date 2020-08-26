@@ -47,16 +47,45 @@ object MonitoringExecutionSummary {
     LastModifiedTime: Timestamp,
     MonitoringExecutionStatus: ExecutionStatus,
     MonitoringScheduleName: MonitoringScheduleName,
-    ScheduledTime: Timestamp,
-    EndpointName: EndpointName = null,
-    FailureReason: FailureReason = null,
-    ProcessingJobArn: ProcessingJobArn = null
+    ScheduledTime: Timestamp
   ): MonitoringExecutionSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], MonitoringExecutionStatus = MonitoringExecutionStatus.asInstanceOf[js.Any], MonitoringScheduleName = MonitoringScheduleName.asInstanceOf[js.Any], ScheduledTime = ScheduledTime.asInstanceOf[js.Any])
-    if (EndpointName != null) __obj.updateDynamic("EndpointName")(EndpointName.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (ProcessingJobArn != null) __obj.updateDynamic("ProcessingJobArn")(ProcessingJobArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringExecutionSummary]
   }
+  @scala.inline
+  implicit class MonitoringExecutionSummaryOps[Self <: MonitoringExecutionSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMonitoringExecutionStatus(value: ExecutionStatus): Self = this.set("MonitoringExecutionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMonitoringScheduleName(value: MonitoringScheduleName): Self = this.set("MonitoringScheduleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScheduledTime(value: Timestamp): Self = this.set("ScheduledTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointName(value: EndpointName): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointName: Self = this.set("EndpointName", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setProcessingJobArn(value: ProcessingJobArn): Self = this.set("ProcessingJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingJobArn: Self = this.set("ProcessingJobArn", js.undefined)
+  }
+  
 }
 

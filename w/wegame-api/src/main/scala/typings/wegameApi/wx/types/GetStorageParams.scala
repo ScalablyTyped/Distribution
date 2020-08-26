@@ -5,26 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetStorageParams extends js.Object {
-  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var key: String
-  var success: js.UndefOr[js.Function1[/* res */ DataAny, Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var key: String = js.native
+  var success: js.UndefOr[js.Function1[/* res */ DataAny, Unit]] = js.native
 }
 
 object GetStorageParams {
   @scala.inline
-  def apply(
-    key: String,
-    complete: () => Unit = null,
-    fail: () => Unit = null,
-    success: /* res */ DataAny => Unit = null
-  ): GetStorageParams = {
+  def apply(key: String): GetStorageParams = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetStorageParams]
   }
+  @scala.inline
+  implicit class GetStorageParamsOps[Self <: GetStorageParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComplete: Self = this.set("complete", js.undefined)
+    @scala.inline
+    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteFail: Self = this.set("fail", js.undefined)
+    @scala.inline
+    def setSuccess(value: /* res */ DataAny => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+  }
+  
 }
 

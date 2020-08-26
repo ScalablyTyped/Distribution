@@ -21,32 +21,70 @@ trait Dimensions extends js.Object {
 
 object Dimensions {
   @scala.inline
-  def apply(
-    dimensions: String = null,
-    `end-date`: String = null,
-    filters: String = null,
-    ids: String = null,
-    `max-results`: js.UndefOr[Double] = js.undefined,
-    metrics: js.Array[String] = null,
-    samplingLevel: String = null,
-    segment: String = null,
-    sort: js.Array[String] = null,
-    `start-date`: String = null,
-    `start-index`: js.UndefOr[Double] = js.undefined
-  ): Dimensions = {
+  def apply(): Dimensions = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (`end-date` != null) __obj.updateDynamic("end-date")(`end-date`.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(`max-results`)) __obj.updateDynamic("max-results")(`max-results`.get.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel.asInstanceOf[js.Any])
-    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (`start-date` != null) __obj.updateDynamic("start-date")(`start-date`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`start-index`)) __obj.updateDynamic("start-index")(`start-index`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimensions]
   }
+  @scala.inline
+  implicit class DimensionsOps[Self <: Dimensions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensions(value: String): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def `setEnd-date`(value: String): Self = this.set("end-date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteEnd-date`: Self = this.set("end-date", js.undefined)
+    @scala.inline
+    def setFilters(value: String): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setIds(value: String): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+    @scala.inline
+    def `setMax-results`(value: Double): Self = this.set("max-results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteMax-results`: Self = this.set("max-results", js.undefined)
+    @scala.inline
+    def setMetricsVarargs(value: String*): Self = this.set("metrics", js.Array(value :_*))
+    @scala.inline
+    def setMetrics(value: js.Array[String]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    @scala.inline
+    def setSamplingLevel(value: String): Self = this.set("samplingLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamplingLevel: Self = this.set("samplingLevel", js.undefined)
+    @scala.inline
+    def setSegment(value: String): Self = this.set("segment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegment: Self = this.set("segment", js.undefined)
+    @scala.inline
+    def setSortVarargs(value: String*): Self = this.set("sort", js.Array(value :_*))
+    @scala.inline
+    def setSort(value: js.Array[String]): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def `setStart-date`(value: String): Self = this.set("start-date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteStart-date`: Self = this.set("start-date", js.undefined)
+    @scala.inline
+    def `setStart-index`(value: Double): Self = this.set("start-index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteStart-index`: Self = this.set("start-index", js.undefined)
+  }
+  
 }
 

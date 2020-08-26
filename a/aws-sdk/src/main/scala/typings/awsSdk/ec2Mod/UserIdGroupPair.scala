@@ -38,24 +38,50 @@ trait UserIdGroupPair extends js.Object {
 
 object UserIdGroupPair {
   @scala.inline
-  def apply(
-    Description: String = null,
-    GroupId: String = null,
-    GroupName: String = null,
-    PeeringStatus: String = null,
-    UserId: String = null,
-    VpcId: String = null,
-    VpcPeeringConnectionId: String = null
-  ): UserIdGroupPair = {
+  def apply(): UserIdGroupPair = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (PeeringStatus != null) __obj.updateDynamic("PeeringStatus")(PeeringStatus.asInstanceOf[js.Any])
-    if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
-    if (VpcPeeringConnectionId != null) __obj.updateDynamic("VpcPeeringConnectionId")(VpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserIdGroupPair]
   }
+  @scala.inline
+  implicit class UserIdGroupPairOps[Self <: UserIdGroupPair] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setGroupId(value: String): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    @scala.inline
+    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setPeeringStatus(value: String): Self = this.set("PeeringStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeeringStatus: Self = this.set("PeeringStatus", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("UserId", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    @scala.inline
+    def setVpcPeeringConnectionId(value: String): Self = this.set("VpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringConnectionId: Self = this.set("VpcPeeringConnectionId", js.undefined)
+  }
+  
 }
 

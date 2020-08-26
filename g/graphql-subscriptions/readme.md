@@ -10,9 +10,9 @@ GraphQL subscriptions for node.js
 | ------------------ | :-------------: |
 | Full name          | graphql-subscriptions |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 228 |
-| # downloads        | 17894411 |
+| # releases         | 5 |
+| # dependents       | 231 |
+| # downloads        | 18803090 |
 | # stars            | 1 |
 
 ## Links

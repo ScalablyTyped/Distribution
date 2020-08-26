@@ -90,48 +90,100 @@ trait SchemaUserInfo extends js.Object {
 
 object SchemaUserInfo {
   @scala.inline
-  def apply(
-    createdAt: String = null,
-    customAttributes: String = null,
-    customAuth: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    displayName: String = null,
-    email: String = null,
-    emailVerified: js.UndefOr[Boolean] = js.undefined,
-    lastLoginAt: String = null,
-    localId: String = null,
-    passwordHash: String = null,
-    passwordUpdatedAt: js.UndefOr[Double] = js.undefined,
-    phoneNumber: String = null,
-    photoUrl: String = null,
-    providerUserInfo: js.Array[PhoneNumber] = null,
-    rawPassword: String = null,
-    salt: String = null,
-    screenName: String = null,
-    validSince: String = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): SchemaUserInfo = {
+  def apply(): SchemaUserInfo = {
     val __obj = js.Dynamic.literal()
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(customAuth)) __obj.updateDynamic("customAuth")(customAuth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
-    if (lastLoginAt != null) __obj.updateDynamic("lastLoginAt")(lastLoginAt.asInstanceOf[js.Any])
-    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
-    if (passwordHash != null) __obj.updateDynamic("passwordHash")(passwordHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordUpdatedAt)) __obj.updateDynamic("passwordUpdatedAt")(passwordUpdatedAt.get.asInstanceOf[js.Any])
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
-    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
-    if (providerUserInfo != null) __obj.updateDynamic("providerUserInfo")(providerUserInfo.asInstanceOf[js.Any])
-    if (rawPassword != null) __obj.updateDynamic("rawPassword")(rawPassword.asInstanceOf[js.Any])
-    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
-    if (screenName != null) __obj.updateDynamic("screenName")(screenName.asInstanceOf[js.Any])
-    if (validSince != null) __obj.updateDynamic("validSince")(validSince.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserInfo]
   }
+  @scala.inline
+  implicit class SchemaUserInfoOps[Self <: SchemaUserInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: String): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setCustomAttributes(value: String): Self = this.set("customAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAttributes: Self = this.set("customAttributes", js.undefined)
+    @scala.inline
+    def setCustomAuth(value: Boolean): Self = this.set("customAuth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAuth: Self = this.set("customAuth", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setEmailVerified(value: Boolean): Self = this.set("emailVerified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailVerified: Self = this.set("emailVerified", js.undefined)
+    @scala.inline
+    def setLastLoginAt(value: String): Self = this.set("lastLoginAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastLoginAt: Self = this.set("lastLoginAt", js.undefined)
+    @scala.inline
+    def setLocalId(value: String): Self = this.set("localId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalId: Self = this.set("localId", js.undefined)
+    @scala.inline
+    def setPasswordHash(value: String): Self = this.set("passwordHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordHash: Self = this.set("passwordHash", js.undefined)
+    @scala.inline
+    def setPasswordUpdatedAt(value: Double): Self = this.set("passwordUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordUpdatedAt: Self = this.set("passwordUpdatedAt", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    @scala.inline
+    def setPhotoUrl(value: String): Self = this.set("photoUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhotoUrl: Self = this.set("photoUrl", js.undefined)
+    @scala.inline
+    def setProviderUserInfoVarargs(value: PhoneNumber*): Self = this.set("providerUserInfo", js.Array(value :_*))
+    @scala.inline
+    def setProviderUserInfo(value: js.Array[PhoneNumber]): Self = this.set("providerUserInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderUserInfo: Self = this.set("providerUserInfo", js.undefined)
+    @scala.inline
+    def setRawPassword(value: String): Self = this.set("rawPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawPassword: Self = this.set("rawPassword", js.undefined)
+    @scala.inline
+    def setSalt(value: String): Self = this.set("salt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalt: Self = this.set("salt", js.undefined)
+    @scala.inline
+    def setScreenName(value: String): Self = this.set("screenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenName: Self = this.set("screenName", js.undefined)
+    @scala.inline
+    def setValidSince(value: String): Self = this.set("validSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidSince: Self = this.set("validSince", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

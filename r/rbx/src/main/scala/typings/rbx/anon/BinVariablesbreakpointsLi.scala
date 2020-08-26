@@ -7,33 +7,58 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ B in rbx.rbx/base/helpers/variables.Variables['breakpointsLimited'] ]:? rbx.rbx/base/helpers/responsive.LimitedResponsiveBreakpointProps} & {[ B in std.Exclude<rbx.rbx/base/helpers/variables.Variables['breakpoints'], rbx.rbx/base/helpers/variables.Variables['breakpointsLimited']> ]:? rbx.rbx/base/helpers/responsive.ResponsiveBreakpointProps} */
+@js.native
 trait BinVariablesbreakpointsLi extends js.Object {
-  var desktop: js.UndefOr[ResponsiveBreakpointProps] = js.undefined
-  var fullhd: js.UndefOr[LimitedResponsiveBreakpointProps] = js.undefined
-  var mobile: js.UndefOr[LimitedResponsiveBreakpointProps] = js.undefined
-  var tablet: js.UndefOr[ResponsiveBreakpointProps] = js.undefined
-  var touch: js.UndefOr[LimitedResponsiveBreakpointProps] = js.undefined
-  var widescreen: js.UndefOr[ResponsiveBreakpointProps] = js.undefined
+  var desktop: js.UndefOr[ResponsiveBreakpointProps] = js.native
+  var fullhd: js.UndefOr[LimitedResponsiveBreakpointProps] = js.native
+  var mobile: js.UndefOr[LimitedResponsiveBreakpointProps] = js.native
+  var tablet: js.UndefOr[ResponsiveBreakpointProps] = js.native
+  var touch: js.UndefOr[LimitedResponsiveBreakpointProps] = js.native
+  var widescreen: js.UndefOr[ResponsiveBreakpointProps] = js.native
 }
 
 object BinVariablesbreakpointsLi {
   @scala.inline
-  def apply(
-    desktop: ResponsiveBreakpointProps = null,
-    fullhd: LimitedResponsiveBreakpointProps = null,
-    mobile: LimitedResponsiveBreakpointProps = null,
-    tablet: ResponsiveBreakpointProps = null,
-    touch: LimitedResponsiveBreakpointProps = null,
-    widescreen: ResponsiveBreakpointProps = null
-  ): BinVariablesbreakpointsLi = {
+  def apply(): BinVariablesbreakpointsLi = {
     val __obj = js.Dynamic.literal()
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (fullhd != null) __obj.updateDynamic("fullhd")(fullhd.asInstanceOf[js.Any])
-    if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
-    if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (widescreen != null) __obj.updateDynamic("widescreen")(widescreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinVariablesbreakpointsLi]
   }
+  @scala.inline
+  implicit class BinVariablesbreakpointsLiOps[Self <: BinVariablesbreakpointsLi] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesktop(value: ResponsiveBreakpointProps): Self = this.set("desktop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktop: Self = this.set("desktop", js.undefined)
+    @scala.inline
+    def setFullhd(value: LimitedResponsiveBreakpointProps): Self = this.set("fullhd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullhd: Self = this.set("fullhd", js.undefined)
+    @scala.inline
+    def setMobile(value: LimitedResponsiveBreakpointProps): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobile: Self = this.set("mobile", js.undefined)
+    @scala.inline
+    def setTablet(value: ResponsiveBreakpointProps): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablet: Self = this.set("tablet", js.undefined)
+    @scala.inline
+    def setTouch(value: LimitedResponsiveBreakpointProps): Self = this.set("touch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouch: Self = this.set("touch", js.undefined)
+    @scala.inline
+    def setWidescreen(value: ResponsiveBreakpointProps): Self = this.set("widescreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidescreen: Self = this.set("widescreen", js.undefined)
+  }
+  
 }
 

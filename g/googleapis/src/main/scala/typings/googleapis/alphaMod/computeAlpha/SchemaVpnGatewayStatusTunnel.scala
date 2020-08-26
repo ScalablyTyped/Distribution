@@ -26,16 +26,34 @@ trait SchemaVpnGatewayStatusTunnel extends js.Object {
 
 object SchemaVpnGatewayStatusTunnel {
   @scala.inline
-  def apply(
-    localGatewayInterface: js.UndefOr[Double] = js.undefined,
-    peerGatewayInterface: js.UndefOr[Double] = js.undefined,
-    tunnelUrl: String = null
-  ): SchemaVpnGatewayStatusTunnel = {
+  def apply(): SchemaVpnGatewayStatusTunnel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(localGatewayInterface)) __obj.updateDynamic("localGatewayInterface")(localGatewayInterface.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(peerGatewayInterface)) __obj.updateDynamic("peerGatewayInterface")(peerGatewayInterface.get.asInstanceOf[js.Any])
-    if (tunnelUrl != null) __obj.updateDynamic("tunnelUrl")(tunnelUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVpnGatewayStatusTunnel]
   }
+  @scala.inline
+  implicit class SchemaVpnGatewayStatusTunnelOps[Self <: SchemaVpnGatewayStatusTunnel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocalGatewayInterface(value: Double): Self = this.set("localGatewayInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayInterface: Self = this.set("localGatewayInterface", js.undefined)
+    @scala.inline
+    def setPeerGatewayInterface(value: Double): Self = this.set("peerGatewayInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerGatewayInterface: Self = this.set("peerGatewayInterface", js.undefined)
+    @scala.inline
+    def setTunnelUrl(value: String): Self = this.set("tunnelUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTunnelUrl: Self = this.set("tunnelUrl", js.undefined)
+  }
+  
 }
 

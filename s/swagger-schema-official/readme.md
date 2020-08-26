@@ -12,7 +12,7 @@ Swagger JSON Schema
 | Keywords           | swagger, schema, api |
 | # releases         | 0 |
 | # dependents       | 48 |
-| # downloads        | 14249689 |
+| # downloads        | 14242226 |
 | # stars            | 0 |
 
 ## Links

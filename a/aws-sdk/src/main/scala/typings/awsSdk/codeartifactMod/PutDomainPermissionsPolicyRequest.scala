@@ -26,16 +26,34 @@ trait PutDomainPermissionsPolicyRequest extends js.Object {
 
 object PutDomainPermissionsPolicyRequest {
   @scala.inline
-  def apply(
-    domain: DomainName,
-    policyDocument: PolicyDocument,
-    domainOwner: AccountId = null,
-    policyRevision: PolicyRevision = null
-  ): PutDomainPermissionsPolicyRequest = {
+  def apply(domain: DomainName, policyDocument: PolicyDocument): PutDomainPermissionsPolicyRequest = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], policyDocument = policyDocument.asInstanceOf[js.Any])
-    if (domainOwner != null) __obj.updateDynamic("domainOwner")(domainOwner.asInstanceOf[js.Any])
-    if (policyRevision != null) __obj.updateDynamic("policyRevision")(policyRevision.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDomainPermissionsPolicyRequest]
   }
+  @scala.inline
+  implicit class PutDomainPermissionsPolicyRequestOps[Self <: PutDomainPermissionsPolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyDocument(value: PolicyDocument): Self = this.set("policyDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
+    @scala.inline
+    def setPolicyRevision(value: PolicyRevision): Self = this.set("policyRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyRevision: Self = this.set("policyRevision", js.undefined)
+  }
+  
 }
 

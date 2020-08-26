@@ -41,7 +41,6 @@ trait Marker extends MVCObject {
   def getVisible(): Boolean = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.getZIndex Maps JavaScript API} */
   def getZIndex(): js.UndefOr[Double | Null] = js.native
-  def setAnimation(): Unit = js.native
   /**
     * Start an animation. Any ongoing animation will be cancelled. Currently
     * supported animations are: {@link Animation.BOUNCE BOUNCE},
@@ -49,51 +48,52 @@ trait Marker extends MVCObject {
     * to stop.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setAnimation Maps JavaScript API}
     */
+  def setAnimation(): Unit = js.native
   def setAnimation(animation: Animation): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setClickable Maps JavaScript API} */
   def setClickable(flag: Boolean): Unit = js.native
-  def setCursor(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setCursor Maps JavaScript API} */
+  def setCursor(): Unit = js.native
   def setCursor(cursor: String): Unit = js.native
-  def setDraggable(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setDraggable Maps JavaScript API} */
+  def setDraggable(): Unit = js.native
   def setDraggable(flag: Boolean): Unit = js.native
-  def setIcon(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setIcon Maps JavaScript API} */
+  def setIcon(): Unit = js.native
   def setIcon(icon: String): Unit = js.native
   def setIcon(icon: ReadonlyIcon): Unit = js.native
   def setIcon(icon: ReadonlySymbol): Unit = js.native
-  def setLabel(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setLabel Maps JavaScript API} */
+  def setLabel(): Unit = js.native
   def setLabel(label: String): Unit = js.native
   def setLabel(label: ReadonlyMarkerLabel): Unit = js.native
-  def setMap(): Unit = js.native
   /**
     * Renders the marker on the specified map or panorama. If map is set to
     * `null`, the marker will be removed.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setMap Maps JavaScript API}
     */
+  def setMap(): Unit = js.native
   def setMap(map: Map[Element]): Unit = js.native
   def setMap(map: StreetViewPanorama): Unit = js.native
-  def setOpacity(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setOpacity Maps JavaScript API} */
+  def setOpacity(): Unit = js.native
   def setOpacity(opacity: Double): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setOptions Maps JavaScript API} */
   def setOptions(options: ReadonlyMarkerOptions): Unit = js.native
-  def setPosition(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setPosition Maps JavaScript API} */
+  def setPosition(): Unit = js.native
   def setPosition(latlng: LatLng): Unit = js.native
   def setPosition(latlng: ReadonlyLatLngLiteral): Unit = js.native
-  def setShape(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setShape Maps JavaScript API} */
+  def setShape(): Unit = js.native
   def setShape(shape: MarkerShape): Unit = js.native
-  def setTitle(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setTitle Maps JavaScript API} */
+  def setTitle(): Unit = js.native
   def setTitle(title: String): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setVisible Maps JavaScript API} */
   def setVisible(visible: Boolean): Unit = js.native
-  def setZIndex(): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker.setZIndex Maps JavaScript API} */
+  def setZIndex(): Unit = js.native
   def setZIndex(zIndex: Double): Unit = js.native
 }
 

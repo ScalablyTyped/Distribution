@@ -32,18 +32,40 @@ trait SchemaWindowsDetail extends js.Object {
 
 object SchemaWindowsDetail {
   @scala.inline
-  def apply(
-    cpeUri: String = null,
-    description: String = null,
-    fixingKbs: js.Array[SchemaKnowledgeBase] = null,
-    name: String = null
-  ): SchemaWindowsDetail = {
+  def apply(): SchemaWindowsDetail = {
     val __obj = js.Dynamic.literal()
-    if (cpeUri != null) __obj.updateDynamic("cpeUri")(cpeUri.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (fixingKbs != null) __obj.updateDynamic("fixingKbs")(fixingKbs.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWindowsDetail]
   }
+  @scala.inline
+  implicit class SchemaWindowsDetailOps[Self <: SchemaWindowsDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCpeUri(value: String): Self = this.set("cpeUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpeUri: Self = this.set("cpeUri", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFixingKbsVarargs(value: SchemaKnowledgeBase*): Self = this.set("fixingKbs", js.Array(value :_*))
+    @scala.inline
+    def setFixingKbs(value: js.Array[SchemaKnowledgeBase]): Self = this.set("fixingKbs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixingKbs: Self = this.set("fixingKbs", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

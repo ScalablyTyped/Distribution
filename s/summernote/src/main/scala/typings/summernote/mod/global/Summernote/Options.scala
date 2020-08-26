@@ -1,130 +1,249 @@
 package typings.summernote.mod.global.Summernote
 
+import typings.summernote.summernoteStrings.color
+import typings.summernote.summernoteStrings.font
+import typings.summernote.summernoteStrings.fontsize_
+import typings.summernote.summernoteStrings.height
+import typings.summernote.summernoteStrings.help
+import typings.summernote.summernoteStrings.insert
+import typings.summernote.summernoteStrings.misc
+import typings.summernote.summernoteStrings.para
+import typings.summernote.summernoteStrings.style
+import typings.summernote.summernoteStrings.table
+import typings.summernote.summernoteStrings.view
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var airMode: js.UndefOr[Boolean] = js.undefined
-  var callbacks: js.UndefOr[js.Any] = js.undefined
+  var airMode: js.UndefOr[Boolean] = js.native
+  var callbacks: js.UndefOr[js.Any] = js.native
    // todo
-  var codemirror: js.UndefOr[CodemirrorOptions] = js.undefined
-  var codeviewFilter: js.UndefOr[Boolean] = js.undefined
-  var codeviewFilterRegex: js.UndefOr[String] = js.undefined
-  var codeviewIframeFilter: js.UndefOr[Boolean] = js.undefined
-  var codeviewIframeWhitelistSrc: js.UndefOr[js.Array[String]] = js.undefined
-  var colors: js.UndefOr[colorsDef] = js.undefined
-  var dialogsFade: js.UndefOr[Boolean] = js.undefined
-  var dialogsInBody: js.UndefOr[Boolean] = js.undefined
-  var direction: js.UndefOr[String] = js.undefined
-  var disableDragAndDrop: js.UndefOr[Boolean] = js.undefined
-  var focus: js.UndefOr[Boolean] = js.undefined
-  var fontNames: js.UndefOr[js.Array[String]] = js.undefined
-  var fontNamesIgnoreCheck: js.UndefOr[js.Array[String]] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var hint: js.UndefOr[HintOptions] = js.undefined
-  var icons: js.UndefOr[IconsOptions] = js.undefined
-  var insertTableMaxSize: js.UndefOr[InsertTableMaxSizeOptions] = js.undefined
-  var keyMap: js.UndefOr[KeyMapOptions] = js.undefined
-  var lang: js.UndefOr[String] = js.undefined
-  var lineHeights: js.UndefOr[js.Array[String]] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maximumImageFileSize: js.UndefOr[js.Any] = js.undefined
-  var minHeight: js.UndefOr[Double] = js.undefined
-  var modules: js.UndefOr[ModuleOptions] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var popover: js.UndefOr[PopoverOptions] = js.undefined
-  var shortcuts: js.UndefOr[Boolean] = js.undefined
-  var styleTags: js.UndefOr[js.Array[styleTagsOptions]] = js.undefined
-  var styleWithSpan: js.UndefOr[Boolean] = js.undefined
-  var tabDisable: js.UndefOr[Boolean] = js.undefined
-  var tableClassName: js.UndefOr[String] = js.undefined
-  var tabsize: js.UndefOr[Double] = js.undefined
-  var textareaAutoSync: js.UndefOr[Boolean] = js.undefined
-  var toolbar: js.UndefOr[toolbarDef] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var codemirror: js.UndefOr[CodemirrorOptions] = js.native
+  var codeviewFilter: js.UndefOr[Boolean] = js.native
+  var codeviewFilterRegex: js.UndefOr[String] = js.native
+  var codeviewIframeFilter: js.UndefOr[Boolean] = js.native
+  var codeviewIframeWhitelistSrc: js.UndefOr[js.Array[String]] = js.native
+  var colors: js.UndefOr[colorsDef] = js.native
+  var dialogsFade: js.UndefOr[Boolean] = js.native
+  var dialogsInBody: js.UndefOr[Boolean] = js.native
+  var direction: js.UndefOr[String] = js.native
+  var disableDragAndDrop: js.UndefOr[Boolean] = js.native
+  var focus: js.UndefOr[Boolean] = js.native
+  var fontNames: js.UndefOr[js.Array[String]] = js.native
+  var fontNamesIgnoreCheck: js.UndefOr[js.Array[String]] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var hint: js.UndefOr[HintOptions] = js.native
+  var icons: js.UndefOr[IconsOptions] = js.native
+  var insertTableMaxSize: js.UndefOr[InsertTableMaxSizeOptions] = js.native
+  var keyMap: js.UndefOr[KeyMapOptions] = js.native
+  var lang: js.UndefOr[String] = js.native
+  var lineHeights: js.UndefOr[js.Array[String]] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maximumImageFileSize: js.UndefOr[js.Any] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var modules: js.UndefOr[ModuleOptions] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var popover: js.UndefOr[PopoverOptions] = js.native
+  var shortcuts: js.UndefOr[Boolean] = js.native
+  var styleTags: js.UndefOr[js.Array[styleTagsOptions]] = js.native
+  var styleWithSpan: js.UndefOr[Boolean] = js.native
+  var tabDisable: js.UndefOr[Boolean] = js.native
+  var tableClassName: js.UndefOr[String] = js.native
+  var tabsize: js.UndefOr[Double] = js.native
+  var textareaAutoSync: js.UndefOr[Boolean] = js.native
+  var toolbar: js.UndefOr[toolbarDef] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    airMode: js.UndefOr[Boolean] = js.undefined,
-    callbacks: js.Any = null,
-    codemirror: CodemirrorOptions = null,
-    codeviewFilter: js.UndefOr[Boolean] = js.undefined,
-    codeviewFilterRegex: String = null,
-    codeviewIframeFilter: js.UndefOr[Boolean] = js.undefined,
-    codeviewIframeWhitelistSrc: js.Array[String] = null,
-    colors: colorsDef = null,
-    dialogsFade: js.UndefOr[Boolean] = js.undefined,
-    dialogsInBody: js.UndefOr[Boolean] = js.undefined,
-    direction: String = null,
-    disableDragAndDrop: js.UndefOr[Boolean] = js.undefined,
-    focus: js.UndefOr[Boolean] = js.undefined,
-    fontNames: js.Array[String] = null,
-    fontNamesIgnoreCheck: js.Array[String] = null,
-    height: js.UndefOr[Double] = js.undefined,
-    hint: HintOptions = null,
-    icons: IconsOptions = null,
-    insertTableMaxSize: InsertTableMaxSizeOptions = null,
-    keyMap: KeyMapOptions = null,
-    lang: String = null,
-    lineHeights: js.Array[String] = null,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maximumImageFileSize: js.Any = null,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    modules: ModuleOptions = null,
-    placeholder: String = null,
-    popover: PopoverOptions = null,
-    shortcuts: js.UndefOr[Boolean] = js.undefined,
-    styleTags: js.Array[styleTagsOptions] = null,
-    styleWithSpan: js.UndefOr[Boolean] = js.undefined,
-    tabDisable: js.UndefOr[Boolean] = js.undefined,
-    tableClassName: String = null,
-    tabsize: js.UndefOr[Double] = js.undefined,
-    textareaAutoSync: js.UndefOr[Boolean] = js.undefined,
-    toolbar: toolbarDef = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(airMode)) __obj.updateDynamic("airMode")(airMode.get.asInstanceOf[js.Any])
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (codemirror != null) __obj.updateDynamic("codemirror")(codemirror.asInstanceOf[js.Any])
-    if (!js.isUndefined(codeviewFilter)) __obj.updateDynamic("codeviewFilter")(codeviewFilter.get.asInstanceOf[js.Any])
-    if (codeviewFilterRegex != null) __obj.updateDynamic("codeviewFilterRegex")(codeviewFilterRegex.asInstanceOf[js.Any])
-    if (!js.isUndefined(codeviewIframeFilter)) __obj.updateDynamic("codeviewIframeFilter")(codeviewIframeFilter.get.asInstanceOf[js.Any])
-    if (codeviewIframeWhitelistSrc != null) __obj.updateDynamic("codeviewIframeWhitelistSrc")(codeviewIframeWhitelistSrc.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(dialogsFade)) __obj.updateDynamic("dialogsFade")(dialogsFade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dialogsInBody)) __obj.updateDynamic("dialogsInBody")(dialogsInBody.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDragAndDrop)) __obj.updateDynamic("disableDragAndDrop")(disableDragAndDrop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
-    if (fontNames != null) __obj.updateDynamic("fontNames")(fontNames.asInstanceOf[js.Any])
-    if (fontNamesIgnoreCheck != null) __obj.updateDynamic("fontNamesIgnoreCheck")(fontNamesIgnoreCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (insertTableMaxSize != null) __obj.updateDynamic("insertTableMaxSize")(insertTableMaxSize.asInstanceOf[js.Any])
-    if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (lineHeights != null) __obj.updateDynamic("lineHeights")(lineHeights.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (maximumImageFileSize != null) __obj.updateDynamic("maximumImageFileSize")(maximumImageFileSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
-    if (!js.isUndefined(shortcuts)) __obj.updateDynamic("shortcuts")(shortcuts.get.asInstanceOf[js.Any])
-    if (styleTags != null) __obj.updateDynamic("styleTags")(styleTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleWithSpan)) __obj.updateDynamic("styleWithSpan")(styleWithSpan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabDisable)) __obj.updateDynamic("tabDisable")(tabDisable.get.asInstanceOf[js.Any])
-    if (tableClassName != null) __obj.updateDynamic("tableClassName")(tableClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabsize)) __obj.updateDynamic("tabsize")(tabsize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(textareaAutoSync)) __obj.updateDynamic("textareaAutoSync")(textareaAutoSync.get.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAirMode(value: Boolean): Self = this.set("airMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAirMode: Self = this.set("airMode", js.undefined)
+    @scala.inline
+    def setCallbacks(value: js.Any): Self = this.set("callbacks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbacks: Self = this.set("callbacks", js.undefined)
+    @scala.inline
+    def setCodemirror(value: CodemirrorOptions): Self = this.set("codemirror", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodemirror: Self = this.set("codemirror", js.undefined)
+    @scala.inline
+    def setCodeviewFilter(value: Boolean): Self = this.set("codeviewFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeviewFilter: Self = this.set("codeviewFilter", js.undefined)
+    @scala.inline
+    def setCodeviewFilterRegex(value: String): Self = this.set("codeviewFilterRegex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeviewFilterRegex: Self = this.set("codeviewFilterRegex", js.undefined)
+    @scala.inline
+    def setCodeviewIframeFilter(value: Boolean): Self = this.set("codeviewIframeFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeviewIframeFilter: Self = this.set("codeviewIframeFilter", js.undefined)
+    @scala.inline
+    def setCodeviewIframeWhitelistSrcVarargs(value: String*): Self = this.set("codeviewIframeWhitelistSrc", js.Array(value :_*))
+    @scala.inline
+    def setCodeviewIframeWhitelistSrc(value: js.Array[String]): Self = this.set("codeviewIframeWhitelistSrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeviewIframeWhitelistSrc: Self = this.set("codeviewIframeWhitelistSrc", js.undefined)
+    @scala.inline
+    def setColorsVarargs(value: js.Array[js.Array[String]]*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColors(value: colorsDef): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setDialogsFade(value: Boolean): Self = this.set("dialogsFade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogsFade: Self = this.set("dialogsFade", js.undefined)
+    @scala.inline
+    def setDialogsInBody(value: Boolean): Self = this.set("dialogsInBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogsInBody: Self = this.set("dialogsInBody", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDisableDragAndDrop(value: Boolean): Self = this.set("disableDragAndDrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableDragAndDrop: Self = this.set("disableDragAndDrop", js.undefined)
+    @scala.inline
+    def setFocus(value: Boolean): Self = this.set("focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setFontNamesVarargs(value: String*): Self = this.set("fontNames", js.Array(value :_*))
+    @scala.inline
+    def setFontNames(value: js.Array[String]): Self = this.set("fontNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontNames: Self = this.set("fontNames", js.undefined)
+    @scala.inline
+    def setFontNamesIgnoreCheckVarargs(value: String*): Self = this.set("fontNamesIgnoreCheck", js.Array(value :_*))
+    @scala.inline
+    def setFontNamesIgnoreCheck(value: js.Array[String]): Self = this.set("fontNamesIgnoreCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontNamesIgnoreCheck: Self = this.set("fontNamesIgnoreCheck", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHint(value: HintOptions): Self = this.set("hint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHint: Self = this.set("hint", js.undefined)
+    @scala.inline
+    def setIcons(value: IconsOptions): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setInsertTableMaxSize(value: InsertTableMaxSizeOptions): Self = this.set("insertTableMaxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertTableMaxSize: Self = this.set("insertTableMaxSize", js.undefined)
+    @scala.inline
+    def setKeyMap(value: KeyMapOptions): Self = this.set("keyMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyMap: Self = this.set("keyMap", js.undefined)
+    @scala.inline
+    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setLineHeightsVarargs(value: String*): Self = this.set("lineHeights", js.Array(value :_*))
+    @scala.inline
+    def setLineHeights(value: js.Array[String]): Self = this.set("lineHeights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineHeights: Self = this.set("lineHeights", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaximumImageFileSize(value: js.Any): Self = this.set("maximumImageFileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumImageFileSize: Self = this.set("maximumImageFileSize", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setModules(value: ModuleOptions): Self = this.set("modules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModules: Self = this.set("modules", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopover(value: PopoverOptions): Self = this.set("popover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopover: Self = this.set("popover", js.undefined)
+    @scala.inline
+    def setShortcuts(value: Boolean): Self = this.set("shortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortcuts: Self = this.set("shortcuts", js.undefined)
+    @scala.inline
+    def setStyleTagsVarargs(value: styleTagsOptions*): Self = this.set("styleTags", js.Array(value :_*))
+    @scala.inline
+    def setStyleTags(value: js.Array[styleTagsOptions]): Self = this.set("styleTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleTags: Self = this.set("styleTags", js.undefined)
+    @scala.inline
+    def setStyleWithSpan(value: Boolean): Self = this.set("styleWithSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleWithSpan: Self = this.set("styleWithSpan", js.undefined)
+    @scala.inline
+    def setTabDisable(value: Boolean): Self = this.set("tabDisable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabDisable: Self = this.set("tabDisable", js.undefined)
+    @scala.inline
+    def setTableClassName(value: String): Self = this.set("tableClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableClassName: Self = this.set("tableClassName", js.undefined)
+    @scala.inline
+    def setTabsize(value: Double): Self = this.set("tabsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabsize: Self = this.set("tabsize", js.undefined)
+    @scala.inline
+    def setTextareaAutoSync(value: Boolean): Self = this.set("textareaAutoSync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextareaAutoSync: Self = this.set("textareaAutoSync", js.undefined)
+    @scala.inline
+    def setToolbarVarargs(
+      value: (js.Tuple2[
+          style | font | fontsize_ | color | para | height | table | insert | view | help | misc, 
+          js.Array[
+            miscGroupOptions | toolbarColorGroupOptions | toolbarFontGroupOptions | toolbarFontsizeGroupOptions | toolbarHeightGroupOptions | toolbarHelpGroupOptions | toolbarInsertGroupOptions | toolbarParaGroupOptions | toolbarStyleGroupOptions | toolbarTableGroupOptions | toolbarViewGroupOptions
+          ]
+        ])*
+    ): Self = this.set("toolbar", js.Array(value :_*))
+    @scala.inline
+    def setToolbar(value: toolbarDef): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

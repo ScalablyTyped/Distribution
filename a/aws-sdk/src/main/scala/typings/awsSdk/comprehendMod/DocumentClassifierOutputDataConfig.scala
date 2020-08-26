@@ -18,11 +18,30 @@ trait DocumentClassifierOutputDataConfig extends js.Object {
 
 object DocumentClassifierOutputDataConfig {
   @scala.inline
-  def apply(KmsKeyId: KmsKeyId = null, S3Uri: S3Uri = null): DocumentClassifierOutputDataConfig = {
+  def apply(): DocumentClassifierOutputDataConfig = {
     val __obj = js.Dynamic.literal()
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (S3Uri != null) __obj.updateDynamic("S3Uri")(S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentClassifierOutputDataConfig]
   }
+  @scala.inline
+  implicit class DocumentClassifierOutputDataConfigOps[Self <: DocumentClassifierOutputDataConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Uri: Self = this.set("S3Uri", js.undefined)
+  }
+  
 }
 

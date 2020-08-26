@@ -14,10 +14,26 @@ trait DeleteEgressOnlyInternetGatewayResult extends js.Object {
 
 object DeleteEgressOnlyInternetGatewayResult {
   @scala.inline
-  def apply(ReturnCode: js.UndefOr[Boolean] = js.undefined): DeleteEgressOnlyInternetGatewayResult = {
+  def apply(): DeleteEgressOnlyInternetGatewayResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ReturnCode)) __obj.updateDynamic("ReturnCode")(ReturnCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEgressOnlyInternetGatewayResult]
   }
+  @scala.inline
+  implicit class DeleteEgressOnlyInternetGatewayResultOps[Self <: DeleteEgressOnlyInternetGatewayResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReturnCode(value: Boolean): Self = this.set("ReturnCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnCode: Self = this.set("ReturnCode", js.undefined)
+  }
+  
 }
 

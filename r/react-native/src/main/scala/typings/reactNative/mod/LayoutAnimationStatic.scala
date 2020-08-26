@@ -23,6 +23,7 @@ trait LayoutAnimationStatic extends js.Object {
   def configureNext(config: LayoutAnimationConfig, onAnimationDidEnd: js.Function0[Unit]): Unit = js.native
   /** Helper for creating a config for configureNext. */
   def create(duration: Double): LayoutAnimationConfig = js.native
+  def create(duration: Double, `type`: js.UndefOr[scala.Nothing], creationProp: String): LayoutAnimationConfig = js.native
   def create(duration: Double, `type`: String): LayoutAnimationConfig = js.native
   def create(duration: Double, `type`: String, creationProp: String): LayoutAnimationConfig = js.native
   def easeInEaseOut(): Unit = js.native

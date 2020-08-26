@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "BoundDirectivePropertyAst")
 @js.native
 class BoundDirectivePropertyAst protected ()
-  extends typings.angularCompiler.publicApiMod.BoundDirectivePropertyAst {
+  extends typings.angularCompiler.compilerMod.BoundDirectivePropertyAst {
   def this(
     directiveName: String,
     templateName: String,

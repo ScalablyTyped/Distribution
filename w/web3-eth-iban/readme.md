@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-eth-iban
 
-Typings are for version 1.2.9
+Typings are for version 1.2.11
 
 ## Library description:
 This package converts Ethereum addresses to IBAN addresses a vice versa.
@@ -10,9 +10,9 @@ This package converts Ethereum addresses to IBAN addresses a vice versa.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-iban |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 36 |
 | # dependents       | 10 |
-| # downloads        | 4441490 |
+| # downloads        | 4512134 |
 | # stars            | 0 |
 
 ## Links

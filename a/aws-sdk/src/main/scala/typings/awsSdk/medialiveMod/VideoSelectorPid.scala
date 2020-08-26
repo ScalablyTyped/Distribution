@@ -14,10 +14,26 @@ trait VideoSelectorPid extends js.Object {
 
 object VideoSelectorPid {
   @scala.inline
-  def apply(Pid: js.UndefOr[integerMin0Max8191] = js.undefined): VideoSelectorPid = {
+  def apply(): VideoSelectorPid = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Pid)) __obj.updateDynamic("Pid")(Pid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSelectorPid]
   }
+  @scala.inline
+  implicit class VideoSelectorPidOps[Self <: VideoSelectorPid] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPid(value: integerMin0Max8191): Self = this.set("Pid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePid: Self = this.set("Pid", js.undefined)
+  }
+  
 }
 

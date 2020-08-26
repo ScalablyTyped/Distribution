@@ -30,20 +30,44 @@ trait ScheduledInstanceRecurrenceRequest extends js.Object {
 
 object ScheduledInstanceRecurrenceRequest {
   @scala.inline
-  def apply(
-    Frequency: String = null,
-    Interval: js.UndefOr[Integer] = js.undefined,
-    OccurrenceDays: OccurrenceDayRequestSet = null,
-    OccurrenceRelativeToEnd: js.UndefOr[Boolean] = js.undefined,
-    OccurrenceUnit: String = null
-  ): ScheduledInstanceRecurrenceRequest = {
+  def apply(): ScheduledInstanceRecurrenceRequest = {
     val __obj = js.Dynamic.literal()
-    if (Frequency != null) __obj.updateDynamic("Frequency")(Frequency.asInstanceOf[js.Any])
-    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval.get.asInstanceOf[js.Any])
-    if (OccurrenceDays != null) __obj.updateDynamic("OccurrenceDays")(OccurrenceDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(OccurrenceRelativeToEnd)) __obj.updateDynamic("OccurrenceRelativeToEnd")(OccurrenceRelativeToEnd.get.asInstanceOf[js.Any])
-    if (OccurrenceUnit != null) __obj.updateDynamic("OccurrenceUnit")(OccurrenceUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledInstanceRecurrenceRequest]
   }
+  @scala.inline
+  implicit class ScheduledInstanceRecurrenceRequestOps[Self <: ScheduledInstanceRecurrenceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrequency(value: String): Self = this.set("Frequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequency: Self = this.set("Frequency", js.undefined)
+    @scala.inline
+    def setInterval(value: Integer): Self = this.set("Interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("Interval", js.undefined)
+    @scala.inline
+    def setOccurrenceDaysVarargs(value: Integer*): Self = this.set("OccurrenceDays", js.Array(value :_*))
+    @scala.inline
+    def setOccurrenceDays(value: OccurrenceDayRequestSet): Self = this.set("OccurrenceDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOccurrenceDays: Self = this.set("OccurrenceDays", js.undefined)
+    @scala.inline
+    def setOccurrenceRelativeToEnd(value: Boolean): Self = this.set("OccurrenceRelativeToEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOccurrenceRelativeToEnd: Self = this.set("OccurrenceRelativeToEnd", js.undefined)
+    @scala.inline
+    def setOccurrenceUnit(value: String): Self = this.set("OccurrenceUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOccurrenceUnit: Self = this.set("OccurrenceUnit", js.undefined)
+  }
+  
 }
 

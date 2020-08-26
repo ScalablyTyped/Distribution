@@ -10,9 +10,9 @@ ProseMirror's document model
 | ------------------ | :-------------: |
 | Full name          | prosemirror-model |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 119 |
-| # downloads        | 2554044 |
+| # releases         | 24 |
+| # dependents       | 124 |
+| # downloads        | 2682146 |
 | # stars            | 0 |
 
 ## Links

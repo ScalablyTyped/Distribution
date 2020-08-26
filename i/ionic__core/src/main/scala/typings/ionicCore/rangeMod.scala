@@ -39,7 +39,7 @@ object rangeMod extends js.Object {
     var el: HTMLIonRangeElement = js.native
     var emitStyle: js.Any = js.native
     var ensureValueInBounds: js.Any = js.native
-    var gesture: js.UndefOr[js.Any] = js.native
+    var gesture: js.Any = js.native
     var getValue: js.Any = js.native
     var handleKeyboard: js.Any = js.native
     var hasFocus: js.Any = js.native
@@ -84,7 +84,7 @@ object rangeMod extends js.Object {
       */
     var pin: Boolean = js.native
     var pressedKnob: js.Any = js.native
-    var rangeSlider: js.UndefOr[js.Any] = js.native
+    var rangeSlider: js.Any = js.native
     var ratioA: js.Any = js.native
     var ratioB: js.Any = js.native
     var rect: js.Any = js.native

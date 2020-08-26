@@ -26,18 +26,38 @@ trait GetParametersForImportResponse extends js.Object {
 
 object GetParametersForImportResponse {
   @scala.inline
-  def apply(
-    ImportToken: CiphertextType = null,
-    KeyId: KeyIdType = null,
-    ParametersValidTo: DateType = null,
-    PublicKey: PlaintextType = null
-  ): GetParametersForImportResponse = {
+  def apply(): GetParametersForImportResponse = {
     val __obj = js.Dynamic.literal()
-    if (ImportToken != null) __obj.updateDynamic("ImportToken")(ImportToken.asInstanceOf[js.Any])
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (ParametersValidTo != null) __obj.updateDynamic("ParametersValidTo")(ParametersValidTo.asInstanceOf[js.Any])
-    if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersForImportResponse]
   }
+  @scala.inline
+  implicit class GetParametersForImportResponseOps[Self <: GetParametersForImportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImportToken(value: CiphertextType): Self = this.set("ImportToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportToken: Self = this.set("ImportToken", js.undefined)
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    @scala.inline
+    def setParametersValidTo(value: DateType): Self = this.set("ParametersValidTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParametersValidTo: Self = this.set("ParametersValidTo", js.undefined)
+    @scala.inline
+    def setPublicKey(value: PlaintextType): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
+  }
+  
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-rate/lib", JSImport.Namespace)
+@JSImport("rc-rate", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   @js.native

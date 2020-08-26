@@ -26,6 +26,19 @@ trait QuickSight extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CancelIngestionResponse, Unit]
   ): Request[CancelIngestionResponse, AWSError] = js.native
   /**
+    * Creates a customization for the Amazon QuickSight subscription associated with your AWS account.
+    */
+  def createAccountCustomization(): Request[CreateAccountCustomizationResponse, AWSError] = js.native
+  def createAccountCustomization(callback: js.Function2[/* err */ AWSError, /* data */ CreateAccountCustomizationResponse, Unit]): Request[CreateAccountCustomizationResponse, AWSError] = js.native
+  /**
+    * Creates a customization for the Amazon QuickSight subscription associated with your AWS account.
+    */
+  def createAccountCustomization(params: CreateAccountCustomizationRequest): Request[CreateAccountCustomizationResponse, AWSError] = js.native
+  def createAccountCustomization(
+    params: CreateAccountCustomizationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAccountCustomizationResponse, Unit]
+  ): Request[CreateAccountCustomizationResponse, AWSError] = js.native
+  /**
     * Creates a dashboard from a template. To first create a template, see the CreateTemplate API operation. A dashboard is an entity in QuickSight that identifies QuickSight reports, created from analyses. You can share QuickSight dashboards. With the right permissions, you can create scheduled email reports from them. The CreateDashboard, DescribeDashboard, and ListDashboardsByUser API operations act on the dashboard entity. If you have the correct permissions, you can create a dashboard from a template that exists in a different AWS account.
     */
   def createDashboard(): Request[CreateDashboardResponse, AWSError] = js.native
@@ -117,6 +130,19 @@ trait QuickSight extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateIngestionResponse, Unit]
   ): Request[CreateIngestionResponse, AWSError] = js.native
   /**
+    * (Enterprise edition only) Creates a new namespace for you to use with Amazon QuickSight. A namespace allows you to isolate the QuickSight users and groups that are registered for that namespace. Users that access the namespace can share assets only with other users or groups in the same namespace. They can't see users and groups in other namespaces. You can create a namespace after your AWS account is subscribed to QuickSight. The namespace must be unique within the AWS account. By default, there is a limit of 100 namespaces per AWS account. To increase your limit, create a ticket with AWS Support. 
+    */
+  def createNamespace(): Request[CreateNamespaceResponse, AWSError] = js.native
+  def createNamespace(callback: js.Function2[/* err */ AWSError, /* data */ CreateNamespaceResponse, Unit]): Request[CreateNamespaceResponse, AWSError] = js.native
+  /**
+    * (Enterprise edition only) Creates a new namespace for you to use with Amazon QuickSight. A namespace allows you to isolate the QuickSight users and groups that are registered for that namespace. Users that access the namespace can share assets only with other users or groups in the same namespace. They can't see users and groups in other namespaces. You can create a namespace after your AWS account is subscribed to QuickSight. The namespace must be unique within the AWS account. By default, there is a limit of 100 namespaces per AWS account. To increase your limit, create a ticket with AWS Support. 
+    */
+  def createNamespace(params: CreateNamespaceRequest): Request[CreateNamespaceResponse, AWSError] = js.native
+  def createNamespace(
+    params: CreateNamespaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateNamespaceResponse, Unit]
+  ): Request[CreateNamespaceResponse, AWSError] = js.native
+  /**
     * Creates a template from an existing QuickSight analysis or template. You can use the resulting template to create a dashboard. A template is an entity in QuickSight that encapsulates the metadata required to create an analysis and that you can use to create s dashboard. A template adds a layer of abstraction by using placeholders to replace the dataset associated with the analysis. You can use templates to create dashboards by replacing dataset placeholders with datasets that follow the same schema that was used to create the source analysis and template.
     */
   def createTemplate(): Request[CreateTemplateResponse, AWSError] = js.native
@@ -142,6 +168,45 @@ trait QuickSight extends Service {
     params: CreateTemplateAliasRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTemplateAliasResponse, Unit]
   ): Request[CreateTemplateAliasResponse, AWSError] = js.native
+  /**
+    * Creates a theme. A theme is set of configuration options for color and layout. Themes apply to analyses and dashboards. For more information, see Using Themes in Amazon QuickSight in the Amazon QuickSight User Guide.
+    */
+  def createTheme(): Request[CreateThemeResponse, AWSError] = js.native
+  def createTheme(callback: js.Function2[/* err */ AWSError, /* data */ CreateThemeResponse, Unit]): Request[CreateThemeResponse, AWSError] = js.native
+  /**
+    * Creates a theme. A theme is set of configuration options for color and layout. Themes apply to analyses and dashboards. For more information, see Using Themes in Amazon QuickSight in the Amazon QuickSight User Guide.
+    */
+  def createTheme(params: CreateThemeRequest): Request[CreateThemeResponse, AWSError] = js.native
+  def createTheme(
+    params: CreateThemeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateThemeResponse, Unit]
+  ): Request[CreateThemeResponse, AWSError] = js.native
+  /**
+    * Creates a theme alias for a theme.
+    */
+  def createThemeAlias(): Request[CreateThemeAliasResponse, AWSError] = js.native
+  def createThemeAlias(callback: js.Function2[/* err */ AWSError, /* data */ CreateThemeAliasResponse, Unit]): Request[CreateThemeAliasResponse, AWSError] = js.native
+  /**
+    * Creates a theme alias for a theme.
+    */
+  def createThemeAlias(params: CreateThemeAliasRequest): Request[CreateThemeAliasResponse, AWSError] = js.native
+  def createThemeAlias(
+    params: CreateThemeAliasRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateThemeAliasResponse, Unit]
+  ): Request[CreateThemeAliasResponse, AWSError] = js.native
+  /**
+    * Deletes customizations for the QuickSight subscription on your AWS account.
+    */
+  def deleteAccountCustomization(): Request[DeleteAccountCustomizationResponse, AWSError] = js.native
+  def deleteAccountCustomization(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccountCustomizationResponse, Unit]): Request[DeleteAccountCustomizationResponse, AWSError] = js.native
+  /**
+    * Deletes customizations for the QuickSight subscription on your AWS account.
+    */
+  def deleteAccountCustomization(params: DeleteAccountCustomizationRequest): Request[DeleteAccountCustomizationResponse, AWSError] = js.native
+  def deleteAccountCustomization(
+    params: DeleteAccountCustomizationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccountCustomizationResponse, Unit]
+  ): Request[DeleteAccountCustomizationResponse, AWSError] = js.native
   /**
     * Deletes a dashboard.
     */
@@ -221,6 +286,19 @@ trait QuickSight extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteIAMPolicyAssignmentResponse, Unit]
   ): Request[DeleteIAMPolicyAssignmentResponse, AWSError] = js.native
   /**
+    * Deletes a namespace and the users and groups that are associated with the namespace. This is an asynchronous process. Assets including dashboards, analyses, datasets and data sources are not deleted. To delete these assets, you use the APIs for the relevant asset. 
+    */
+  def deleteNamespace(): Request[DeleteNamespaceResponse, AWSError] = js.native
+  def deleteNamespace(callback: js.Function2[/* err */ AWSError, /* data */ DeleteNamespaceResponse, Unit]): Request[DeleteNamespaceResponse, AWSError] = js.native
+  /**
+    * Deletes a namespace and the users and groups that are associated with the namespace. This is an asynchronous process. Assets including dashboards, analyses, datasets and data sources are not deleted. To delete these assets, you use the APIs for the relevant asset. 
+    */
+  def deleteNamespace(params: DeleteNamespaceRequest): Request[DeleteNamespaceResponse, AWSError] = js.native
+  def deleteNamespace(
+    params: DeleteNamespaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteNamespaceResponse, Unit]
+  ): Request[DeleteNamespaceResponse, AWSError] = js.native
+  /**
     * Deletes a template.
     */
   def deleteTemplate(): Request[DeleteTemplateResponse, AWSError] = js.native
@@ -247,6 +325,32 @@ trait QuickSight extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTemplateAliasResponse, Unit]
   ): Request[DeleteTemplateAliasResponse, AWSError] = js.native
   /**
+    * Deletes a theme.
+    */
+  def deleteTheme(): Request[DeleteThemeResponse, AWSError] = js.native
+  def deleteTheme(callback: js.Function2[/* err */ AWSError, /* data */ DeleteThemeResponse, Unit]): Request[DeleteThemeResponse, AWSError] = js.native
+  /**
+    * Deletes a theme.
+    */
+  def deleteTheme(params: DeleteThemeRequest): Request[DeleteThemeResponse, AWSError] = js.native
+  def deleteTheme(
+    params: DeleteThemeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteThemeResponse, Unit]
+  ): Request[DeleteThemeResponse, AWSError] = js.native
+  /**
+    * Deletes the version of the theme that the specified theme alias points to. If you provide a specific alias, you delete the version of the theme that the alias points to.
+    */
+  def deleteThemeAlias(): Request[DeleteThemeAliasResponse, AWSError] = js.native
+  def deleteThemeAlias(callback: js.Function2[/* err */ AWSError, /* data */ DeleteThemeAliasResponse, Unit]): Request[DeleteThemeAliasResponse, AWSError] = js.native
+  /**
+    * Deletes the version of the theme that the specified theme alias points to. If you provide a specific alias, you delete the version of the theme that the alias points to.
+    */
+  def deleteThemeAlias(params: DeleteThemeAliasRequest): Request[DeleteThemeAliasResponse, AWSError] = js.native
+  def deleteThemeAlias(
+    params: DeleteThemeAliasRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteThemeAliasResponse, Unit]
+  ): Request[DeleteThemeAliasResponse, AWSError] = js.native
+  /**
     * Deletes the Amazon QuickSight user that is associated with the identity of the AWS Identity and Access Management (IAM) user or role that's making the call. The IAM user isn't deleted as a result of this call. 
     */
   def deleteUser(): Request[DeleteUserResponse, AWSError] = js.native
@@ -272,6 +376,32 @@ trait QuickSight extends Service {
     params: DeleteUserByPrincipalIdRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserByPrincipalIdResponse, Unit]
   ): Request[DeleteUserByPrincipalIdResponse, AWSError] = js.native
+  /**
+    * Describes the customizations associated with your AWS account.
+    */
+  def describeAccountCustomization(): Request[DescribeAccountCustomizationResponse, AWSError] = js.native
+  def describeAccountCustomization(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountCustomizationResponse, Unit]): Request[DescribeAccountCustomizationResponse, AWSError] = js.native
+  /**
+    * Describes the customizations associated with your AWS account.
+    */
+  def describeAccountCustomization(params: DescribeAccountCustomizationRequest): Request[DescribeAccountCustomizationResponse, AWSError] = js.native
+  def describeAccountCustomization(
+    params: DescribeAccountCustomizationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountCustomizationResponse, Unit]
+  ): Request[DescribeAccountCustomizationResponse, AWSError] = js.native
+  /**
+    * Describes the settings that were used when your QuickSight subscription was first created in this AWS Account.
+    */
+  def describeAccountSettings(): Request[DescribeAccountSettingsResponse, AWSError] = js.native
+  def describeAccountSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountSettingsResponse, Unit]): Request[DescribeAccountSettingsResponse, AWSError] = js.native
+  /**
+    * Describes the settings that were used when your QuickSight subscription was first created in this AWS Account.
+    */
+  def describeAccountSettings(params: DescribeAccountSettingsRequest): Request[DescribeAccountSettingsResponse, AWSError] = js.native
+  def describeAccountSettings(
+    params: DescribeAccountSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountSettingsResponse, Unit]
+  ): Request[DescribeAccountSettingsResponse, AWSError] = js.native
   /**
     * Provides a summary for a dashboard.
     */
@@ -390,6 +520,19 @@ trait QuickSight extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeIngestionResponse, Unit]
   ): Request[DescribeIngestionResponse, AWSError] = js.native
   /**
+    * Describes the current namespace.
+    */
+  def describeNamespace(): Request[DescribeNamespaceResponse, AWSError] = js.native
+  def describeNamespace(callback: js.Function2[/* err */ AWSError, /* data */ DescribeNamespaceResponse, Unit]): Request[DescribeNamespaceResponse, AWSError] = js.native
+  /**
+    * Describes the current namespace.
+    */
+  def describeNamespace(params: DescribeNamespaceRequest): Request[DescribeNamespaceResponse, AWSError] = js.native
+  def describeNamespace(
+    params: DescribeNamespaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNamespaceResponse, Unit]
+  ): Request[DescribeNamespaceResponse, AWSError] = js.native
+  /**
     * Describes a template's metadata.
     */
   def describeTemplate(): Request[DescribeTemplateResponse, AWSError] = js.native
@@ -429,6 +572,45 @@ trait QuickSight extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTemplatePermissionsResponse, Unit]
   ): Request[DescribeTemplatePermissionsResponse, AWSError] = js.native
   /**
+    * Describes a theme.
+    */
+  def describeTheme(): Request[DescribeThemeResponse, AWSError] = js.native
+  def describeTheme(callback: js.Function2[/* err */ AWSError, /* data */ DescribeThemeResponse, Unit]): Request[DescribeThemeResponse, AWSError] = js.native
+  /**
+    * Describes a theme.
+    */
+  def describeTheme(params: DescribeThemeRequest): Request[DescribeThemeResponse, AWSError] = js.native
+  def describeTheme(
+    params: DescribeThemeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeThemeResponse, Unit]
+  ): Request[DescribeThemeResponse, AWSError] = js.native
+  /**
+    * Describes the alias for a theme.
+    */
+  def describeThemeAlias(): Request[DescribeThemeAliasResponse, AWSError] = js.native
+  def describeThemeAlias(callback: js.Function2[/* err */ AWSError, /* data */ DescribeThemeAliasResponse, Unit]): Request[DescribeThemeAliasResponse, AWSError] = js.native
+  /**
+    * Describes the alias for a theme.
+    */
+  def describeThemeAlias(params: DescribeThemeAliasRequest): Request[DescribeThemeAliasResponse, AWSError] = js.native
+  def describeThemeAlias(
+    params: DescribeThemeAliasRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeThemeAliasResponse, Unit]
+  ): Request[DescribeThemeAliasResponse, AWSError] = js.native
+  /**
+    * Describes the read and write permissions for a theme.
+    */
+  def describeThemePermissions(): Request[DescribeThemePermissionsResponse, AWSError] = js.native
+  def describeThemePermissions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeThemePermissionsResponse, Unit]): Request[DescribeThemePermissionsResponse, AWSError] = js.native
+  /**
+    * Describes the read and write permissions for a theme.
+    */
+  def describeThemePermissions(params: DescribeThemePermissionsRequest): Request[DescribeThemePermissionsResponse, AWSError] = js.native
+  def describeThemePermissions(
+    params: DescribeThemePermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeThemePermissionsResponse, Unit]
+  ): Request[DescribeThemePermissionsResponse, AWSError] = js.native
+  /**
     * Returns information about a user, given the user name. 
     */
   def describeUser(): Request[DescribeUserResponse, AWSError] = js.native
@@ -454,6 +636,19 @@ trait QuickSight extends Service {
     params: GetDashboardEmbedUrlRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDashboardEmbedUrlResponse, Unit]
   ): Request[GetDashboardEmbedUrlResponse, AWSError] = js.native
+  /**
+    * Generates a session URL and authorization code that you can embed in your web server code. 
+    */
+  def getSessionEmbedUrl(): Request[GetSessionEmbedUrlResponse, AWSError] = js.native
+  def getSessionEmbedUrl(callback: js.Function2[/* err */ AWSError, /* data */ GetSessionEmbedUrlResponse, Unit]): Request[GetSessionEmbedUrlResponse, AWSError] = js.native
+  /**
+    * Generates a session URL and authorization code that you can embed in your web server code. 
+    */
+  def getSessionEmbedUrl(params: GetSessionEmbedUrlRequest): Request[GetSessionEmbedUrlResponse, AWSError] = js.native
+  def getSessionEmbedUrl(
+    params: GetSessionEmbedUrlRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSessionEmbedUrlResponse, Unit]
+  ): Request[GetSessionEmbedUrlResponse, AWSError] = js.native
   /**
     * Lists all the versions of the dashboards in the QuickSight subscription.
     */
@@ -574,6 +769,19 @@ trait QuickSight extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListIngestionsResponse, Unit]
   ): Request[ListIngestionsResponse, AWSError] = js.native
   /**
+    * Lists the namespaces for the specified AWS account.
+    */
+  def listNamespaces(): Request[ListNamespacesResponse, AWSError] = js.native
+  def listNamespaces(callback: js.Function2[/* err */ AWSError, /* data */ ListNamespacesResponse, Unit]): Request[ListNamespacesResponse, AWSError] = js.native
+  /**
+    * Lists the namespaces for the specified AWS account.
+    */
+  def listNamespaces(params: ListNamespacesRequest): Request[ListNamespacesResponse, AWSError] = js.native
+  def listNamespaces(
+    params: ListNamespacesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListNamespacesResponse, Unit]
+  ): Request[ListNamespacesResponse, AWSError] = js.native
+  /**
     * Lists the tags assigned to a resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
@@ -625,6 +833,45 @@ trait QuickSight extends Service {
     params: ListTemplatesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTemplatesResponse, Unit]
   ): Request[ListTemplatesResponse, AWSError] = js.native
+  /**
+    * Lists all the aliases of a theme.
+    */
+  def listThemeAliases(): Request[ListThemeAliasesResponse, AWSError] = js.native
+  def listThemeAliases(callback: js.Function2[/* err */ AWSError, /* data */ ListThemeAliasesResponse, Unit]): Request[ListThemeAliasesResponse, AWSError] = js.native
+  /**
+    * Lists all the aliases of a theme.
+    */
+  def listThemeAliases(params: ListThemeAliasesRequest): Request[ListThemeAliasesResponse, AWSError] = js.native
+  def listThemeAliases(
+    params: ListThemeAliasesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListThemeAliasesResponse, Unit]
+  ): Request[ListThemeAliasesResponse, AWSError] = js.native
+  /**
+    * Lists all the versions of the themes in the current AWS account.
+    */
+  def listThemeVersions(): Request[ListThemeVersionsResponse, AWSError] = js.native
+  def listThemeVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListThemeVersionsResponse, Unit]): Request[ListThemeVersionsResponse, AWSError] = js.native
+  /**
+    * Lists all the versions of the themes in the current AWS account.
+    */
+  def listThemeVersions(params: ListThemeVersionsRequest): Request[ListThemeVersionsResponse, AWSError] = js.native
+  def listThemeVersions(
+    params: ListThemeVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListThemeVersionsResponse, Unit]
+  ): Request[ListThemeVersionsResponse, AWSError] = js.native
+  /**
+    * Lists all the themes in the current AWS account.
+    */
+  def listThemes(): Request[ListThemesResponse, AWSError] = js.native
+  def listThemes(callback: js.Function2[/* err */ AWSError, /* data */ ListThemesResponse, Unit]): Request[ListThemesResponse, AWSError] = js.native
+  /**
+    * Lists all the themes in the current AWS account.
+    */
+  def listThemes(params: ListThemesRequest): Request[ListThemesResponse, AWSError] = js.native
+  def listThemes(
+    params: ListThemesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListThemesResponse, Unit]
+  ): Request[ListThemesResponse, AWSError] = js.native
   /**
     * Lists the Amazon QuickSight groups that an Amazon QuickSight user is a member of.
     */
@@ -703,6 +950,32 @@ trait QuickSight extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Updates customizations associated with the QuickSight subscription on your AWS account.
+    */
+  def updateAccountCustomization(): Request[UpdateAccountCustomizationResponse, AWSError] = js.native
+  def updateAccountCustomization(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountCustomizationResponse, Unit]): Request[UpdateAccountCustomizationResponse, AWSError] = js.native
+  /**
+    * Updates customizations associated with the QuickSight subscription on your AWS account.
+    */
+  def updateAccountCustomization(params: UpdateAccountCustomizationRequest): Request[UpdateAccountCustomizationResponse, AWSError] = js.native
+  def updateAccountCustomization(
+    params: UpdateAccountCustomizationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountCustomizationResponse, Unit]
+  ): Request[UpdateAccountCustomizationResponse, AWSError] = js.native
+  /**
+    * Updates the settings for the Amazon QuickSight subscription in your AWS Account.
+    */
+  def updateAccountSettings(): Request[UpdateAccountSettingsResponse, AWSError] = js.native
+  def updateAccountSettings(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountSettingsResponse, Unit]): Request[UpdateAccountSettingsResponse, AWSError] = js.native
+  /**
+    * Updates the settings for the Amazon QuickSight subscription in your AWS Account.
+    */
+  def updateAccountSettings(params: UpdateAccountSettingsRequest): Request[UpdateAccountSettingsResponse, AWSError] = js.native
+  def updateAccountSettings(
+    params: UpdateAccountSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountSettingsResponse, Unit]
+  ): Request[UpdateAccountSettingsResponse, AWSError] = js.native
   /**
     * Updates a dashboard in an AWS account.
     */
@@ -861,6 +1134,45 @@ trait QuickSight extends Service {
     params: UpdateTemplatePermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTemplatePermissionsResponse, Unit]
   ): Request[UpdateTemplatePermissionsResponse, AWSError] = js.native
+  /**
+    * Updates a theme.
+    */
+  def updateTheme(): Request[UpdateThemeResponse, AWSError] = js.native
+  def updateTheme(callback: js.Function2[/* err */ AWSError, /* data */ UpdateThemeResponse, Unit]): Request[UpdateThemeResponse, AWSError] = js.native
+  /**
+    * Updates a theme.
+    */
+  def updateTheme(params: UpdateThemeRequest): Request[UpdateThemeResponse, AWSError] = js.native
+  def updateTheme(
+    params: UpdateThemeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateThemeResponse, Unit]
+  ): Request[UpdateThemeResponse, AWSError] = js.native
+  /**
+    * Updates an alias of a theme.
+    */
+  def updateThemeAlias(): Request[UpdateThemeAliasResponse, AWSError] = js.native
+  def updateThemeAlias(callback: js.Function2[/* err */ AWSError, /* data */ UpdateThemeAliasResponse, Unit]): Request[UpdateThemeAliasResponse, AWSError] = js.native
+  /**
+    * Updates an alias of a theme.
+    */
+  def updateThemeAlias(params: UpdateThemeAliasRequest): Request[UpdateThemeAliasResponse, AWSError] = js.native
+  def updateThemeAlias(
+    params: UpdateThemeAliasRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateThemeAliasResponse, Unit]
+  ): Request[UpdateThemeAliasResponse, AWSError] = js.native
+  /**
+    * Updates the resource permissions for a theme. Permissions apply to the action to grant or revoke permissions on, for example "quicksight:DescribeTheme". Theme permissions apply in groupings. Valid groupings include the following for the three levels of permissions, which are user, owner, or no permissions:    User    "quicksight:DescribeTheme"     "quicksight:DescribeThemeAlias"     "quicksight:ListThemeAliases"     "quicksight:ListThemeVersions"      Owner    "quicksight:DescribeTheme"     "quicksight:DescribeThemeAlias"     "quicksight:ListThemeAliases"     "quicksight:ListThemeVersions"     "quicksight:DeleteTheme"     "quicksight:UpdateTheme"     "quicksight:CreateThemeAlias"     "quicksight:DeleteThemeAlias"     "quicksight:UpdateThemeAlias"     "quicksight:UpdateThemePermissions"     "quicksight:DescribeThemePermissions"      To specify no permissions, omit the permissions list.  
+    */
+  def updateThemePermissions(): Request[UpdateThemePermissionsResponse, AWSError] = js.native
+  def updateThemePermissions(callback: js.Function2[/* err */ AWSError, /* data */ UpdateThemePermissionsResponse, Unit]): Request[UpdateThemePermissionsResponse, AWSError] = js.native
+  /**
+    * Updates the resource permissions for a theme. Permissions apply to the action to grant or revoke permissions on, for example "quicksight:DescribeTheme". Theme permissions apply in groupings. Valid groupings include the following for the three levels of permissions, which are user, owner, or no permissions:    User    "quicksight:DescribeTheme"     "quicksight:DescribeThemeAlias"     "quicksight:ListThemeAliases"     "quicksight:ListThemeVersions"      Owner    "quicksight:DescribeTheme"     "quicksight:DescribeThemeAlias"     "quicksight:ListThemeAliases"     "quicksight:ListThemeVersions"     "quicksight:DeleteTheme"     "quicksight:UpdateTheme"     "quicksight:CreateThemeAlias"     "quicksight:DeleteThemeAlias"     "quicksight:UpdateThemeAlias"     "quicksight:UpdateThemePermissions"     "quicksight:DescribeThemePermissions"      To specify no permissions, omit the permissions list.  
+    */
+  def updateThemePermissions(params: UpdateThemePermissionsRequest): Request[UpdateThemePermissionsResponse, AWSError] = js.native
+  def updateThemePermissions(
+    params: UpdateThemePermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateThemePermissionsResponse, Unit]
+  ): Request[UpdateThemePermissionsResponse, AWSError] = js.native
   /**
     * Updates an Amazon QuickSight user.
     */

@@ -36,20 +36,42 @@ trait SchemaGoogleDatastoreAdminV1CommonMetadata extends js.Object {
 
 object SchemaGoogleDatastoreAdminV1CommonMetadata {
   @scala.inline
-  def apply(
-    endTime: String = null,
-    labels: StringDictionary[String] = null,
-    operationType: String = null,
-    startTime: String = null,
-    state: String = null
-  ): SchemaGoogleDatastoreAdminV1CommonMetadata = {
+  def apply(): SchemaGoogleDatastoreAdminV1CommonMetadata = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1CommonMetadata]
   }
+  @scala.inline
+  implicit class SchemaGoogleDatastoreAdminV1CommonMetadataOps[Self <: SchemaGoogleDatastoreAdminV1CommonMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setOperationType(value: String): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

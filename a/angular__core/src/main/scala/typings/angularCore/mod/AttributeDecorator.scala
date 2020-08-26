@@ -19,11 +19,11 @@ trait AttributeDecorator extends Instantiable1[/* name */ String, Attribute] {
     * <input type="text">
     * ```
     *
-    * The following example uses the decorator to inject the string literal `text`.
+    * The following example uses the decorator to inject the string literal `text` in a directive.
     *
     * {@example core/ts/metadata/metadata.ts region='attributeMetadata'}
     *
-    * ### Example as TypeScript Decorator
+    * The following example uses the decorator in a component constructor.
     *
     * {@example core/ts/metadata/metadata.ts region='attributeFactory'}
     *

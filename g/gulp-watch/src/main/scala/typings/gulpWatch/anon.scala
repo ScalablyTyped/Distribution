@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
-  /* Inlined std.File & {  event  :'add' | 'change' | 'unlink'} */
+  /* Inlined std.File & {  event :'add' | 'change' | 'unlink'} */
   @js.native
   trait Fileeventaddchangeunlink extends js.Object {
     var event: add | change | unlink = js.native
@@ -23,7 +23,11 @@ object anon extends js.Object {
     val `type`: String = js.native
     def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
     def slice(): Blob = js.native
+    def slice(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], contentType: String): Blob = js.native
+    def slice(start: js.UndefOr[scala.Nothing], end: Double): Blob = js.native
+    def slice(start: js.UndefOr[scala.Nothing], end: Double, contentType: String): Blob = js.native
     def slice(start: Double): Blob = js.native
+    def slice(start: Double, end: js.UndefOr[scala.Nothing], contentType: String): Blob = js.native
     def slice(start: Double, end: Double): Blob = js.native
     def slice(start: Double, end: Double, contentType: String): Blob = js.native
     def stream(): ReadableStream[_] = js.native

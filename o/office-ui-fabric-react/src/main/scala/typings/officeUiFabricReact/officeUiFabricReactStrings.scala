@@ -211,6 +211,15 @@ object officeUiFabricReactStrings {
   sealed trait caption extends js.Object
   
   @js.native
+  sealed trait cardShadow extends js.Object
+  
+  @js.native
+  sealed trait cardShadowHovered extends js.Object
+  
+  @js.native
+  sealed trait cardStandoutBackground extends js.Object
+  
+  @js.native
   sealed trait center extends Alignment
   
   @js.native
@@ -1211,6 +1220,12 @@ object officeUiFabricReactStrings {
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   @scala.inline
   def caption: caption = "caption".asInstanceOf[caption]
+  @scala.inline
+  def cardShadow: cardShadow = "cardShadow".asInstanceOf[cardShadow]
+  @scala.inline
+  def cardShadowHovered: cardShadowHovered = "cardShadowHovered".asInstanceOf[cardShadowHovered]
+  @scala.inline
+  def cardStandoutBackground: cardStandoutBackground = "cardStandoutBackground".asInstanceOf[cardStandoutBackground]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline

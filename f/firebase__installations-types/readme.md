@@ -10,9 +10,9 @@ Typings are for version 0.3.4
 | ------------------ | :-------------: |
 | Full name          | @firebase/installations-types |
 | Keywords           | - |
-| # releases         | 351 |
+| # releases         | 369 |
 | # dependents       | 1 |
-| # downloads        | 7688188 |
+| # downloads        | 8307805 |
 | # stars            | 0 |
 
 ## Links

@@ -1,50 +1,67 @@
 package typings.redboxReact.mod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RedBoxProps extends Props[RedBoxError] {
-  var className: js.UndefOr[String] = js.undefined
-  var editorScheme: js.UndefOr[String] = js.undefined
-  var error: Error
-  var filename: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var useColumns: js.UndefOr[Boolean] = js.undefined
-  var useLines: js.UndefOr[Boolean] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var editorScheme: js.UndefOr[String] = js.native
+  var error: Error = js.native
+  var filename: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var useColumns: js.UndefOr[Boolean] = js.native
+  var useLines: js.UndefOr[Boolean] = js.native
 }
 
 object RedBoxProps {
   @scala.inline
-  def apply(
-    error: Error,
-    children: ReactNode = null,
-    className: String = null,
-    editorScheme: String = null,
-    filename: String = null,
-    key: Key = null,
-    ref: js.UndefOr[Null | LegacyRef[RedBoxError]] = js.undefined,
-    style: CSSProperties = null,
-    useColumns: js.UndefOr[Boolean] = js.undefined,
-    useLines: js.UndefOr[Boolean] = js.undefined
-  ): RedBoxProps = {
+  def apply(error: Error): RedBoxProps = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (editorScheme != null) __obj.updateDynamic("editorScheme")(editorScheme.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useColumns)) __obj.updateDynamic("useColumns")(useColumns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLines)) __obj.updateDynamic("useLines")(useLines.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedBoxProps]
   }
+  @scala.inline
+  implicit class RedBoxPropsOps[Self <: RedBoxProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setEditorScheme(value: String): Self = this.set("editorScheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorScheme: Self = this.set("editorScheme", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setUseColumns(value: Boolean): Self = this.set("useColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseColumns: Self = this.set("useColumns", js.undefined)
+    @scala.inline
+    def setUseLines(value: Boolean): Self = this.set("useLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseLines: Self = this.set("useLines", js.undefined)
+  }
+  
 }
 

@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypedError
   extends typings.std.Error {
-  var errorType: String
+  var errorType: String = js.native
 }
 
 @JSImport("meteor/meteor", "Meteor.TypedError")

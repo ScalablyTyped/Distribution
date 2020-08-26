@@ -11,10 +11,26 @@ trait AssetDetails extends js.Object {
 
 object AssetDetails {
   @scala.inline
-  def apply(S3SnapshotAsset: S3SnapshotAsset = null): AssetDetails = {
+  def apply(): AssetDetails = {
     val __obj = js.Dynamic.literal()
-    if (S3SnapshotAsset != null) __obj.updateDynamic("S3SnapshotAsset")(S3SnapshotAsset.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetDetails]
   }
+  @scala.inline
+  implicit class AssetDetailsOps[Self <: AssetDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3SnapshotAsset(value: S3SnapshotAsset): Self = this.set("S3SnapshotAsset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3SnapshotAsset: Self = this.set("S3SnapshotAsset", js.undefined)
+  }
+  
 }
 

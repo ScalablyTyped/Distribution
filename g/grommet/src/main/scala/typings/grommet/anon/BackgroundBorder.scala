@@ -5,20 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BackgroundBorder extends js.Object {
-  var background: js.UndefOr[BackgroundType] = js.undefined
-  var border: js.UndefOr[`1`] = js.undefined
-  var label: js.UndefOr[`1`] = js.undefined
+  var background: js.UndefOr[BackgroundType] = js.native
+  var border: js.UndefOr[`0`] = js.native
+  var label: js.UndefOr[`0`] = js.native
 }
 
 object BackgroundBorder {
   @scala.inline
-  def apply(background: BackgroundType = null, border: `1` = null, label: `1` = null): BackgroundBorder = {
+  def apply(): BackgroundBorder = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundBorder]
   }
+  @scala.inline
+  implicit class BackgroundBorderOps[Self <: BackgroundBorder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: BackgroundType): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBorder(value: `0`): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setLabel(value: `0`): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+  }
+  
 }
 

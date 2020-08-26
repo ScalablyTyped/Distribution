@@ -29,6 +29,7 @@ class ResourceProjectsScanconfigsScanrunsCrawledurls protected () extends js.Obj
     */
   def list(): GaxiosPromise[SchemaListCrawledUrlsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCrawledUrlsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCrawledUrlsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsScanrunsCrawledurlsList): GaxiosPromise[SchemaListCrawledUrlsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsScanrunsCrawledurlsList,

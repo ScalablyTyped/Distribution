@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * This service does not represent the chart document model itself, but the object in the table that contains this chart document.
   */
+@js.native
 trait TableChart
   extends XTableChart
      with XEmbeddedObjectSupplier

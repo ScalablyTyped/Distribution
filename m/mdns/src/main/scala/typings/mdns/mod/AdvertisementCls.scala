@@ -12,6 +12,12 @@ class AdvertisementCls protected () extends Advertisement {
   def this(
     serviceType: ServiceType,
     port: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
+  ) = this()
+  def this(
+    serviceType: ServiceType,
+    port: Double,
     options: AdvertisementOptions,
     callback: js.Function2[/* error */ DnsSdError, /* service */ Service, Unit]
   ) = this()

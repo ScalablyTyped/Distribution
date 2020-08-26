@@ -69,6 +69,7 @@ trait Six_ extends js.Object {
     * 渲染函数
     */
   def render(name: String): js.Promise[_] = js.native
+  def render(name: String, runtimeConf: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
   def render(name: String, runtimeConf: Null, data: js.Object): js.Promise[_] = js.native
   def render(name: String, runtimeConf: runtimeConf): js.Promise[_] = js.native
   def render(name: String, runtimeConf: runtimeConf, data: js.Object): js.Promise[_] = js.native

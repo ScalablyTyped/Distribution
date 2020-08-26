@@ -10,6 +10,7 @@ trait Container extends Parent {
   def circle(size: Double): Circle = js.native
   def clip(): ClipPath = js.native
   def ellipse(): Ellipse = js.native
+  def ellipse(width: js.UndefOr[scala.Nothing], height: Double): Ellipse = js.native
   def ellipse(width: Double): Ellipse = js.native
   def ellipse(width: Double, height: Double): Ellipse = js.native
   def gradient(`type`: String): Gradient = js.native
@@ -18,12 +19,21 @@ trait Container extends Parent {
   def image(): Image = js.native
   def image(href: String): Image = js.native
   def image(href: String, size: Double): Image = js.native
+  def image(href: String, width: js.UndefOr[scala.Nothing], height: Double): Image = js.native
   def image(href: String, width: Double, height: Double): Image = js.native
   def line(points: PointArrayAlias): Line = js.native
   def line(x1: Double, y1: Double, x2: Double, y2: Double): Line = js.native
   def link(url: String): A = js.native
   def marker(): Marker = js.native
+  def marker(
+    width: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    block: js.Function1[/* marker */ Marker, Unit]
+  ): Marker = js.native
+  def marker(width: js.UndefOr[scala.Nothing], height: Double): Marker = js.native
+  def marker(width: js.UndefOr[scala.Nothing], height: Double, block: js.Function1[/* marker */ Marker, Unit]): Marker = js.native
   def marker(width: Double): Marker = js.native
+  def marker(width: Double, height: js.UndefOr[scala.Nothing], block: js.Function1[/* marker */ Marker, Unit]): Marker = js.native
   def marker(width: Double, height: Double): Marker = js.native
   def marker(width: Double, height: Double, block: js.Function1[/* marker */ Marker, Unit]): Marker = js.native
   def mask(): Mask = js.native
@@ -31,13 +41,22 @@ trait Container extends Parent {
   def path(): Path = js.native
   def path(d: PathArrayAlias): Path = js.native
   def pattern(): Pattern = js.native
+  def pattern(
+    width: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    block: js.Function1[/* pattern */ Pattern, Unit]
+  ): Pattern = js.native
+  def pattern(width: js.UndefOr[scala.Nothing], height: Double): Pattern = js.native
+  def pattern(width: js.UndefOr[scala.Nothing], height: Double, block: js.Function1[/* pattern */ Pattern, Unit]): Pattern = js.native
   def pattern(width: Double): Pattern = js.native
+  def pattern(width: Double, height: js.UndefOr[scala.Nothing], block: js.Function1[/* pattern */ Pattern, Unit]): Pattern = js.native
   def pattern(width: Double, height: Double): Pattern = js.native
   def pattern(width: Double, height: Double, block: js.Function1[/* pattern */ Pattern, Unit]): Pattern = js.native
   def plain(text: String): Text = js.native
   def polygon(points: PointArrayAlias): Polygon = js.native
   def polyline(points: PointArrayAlias): PolyLine_ = js.native
   def rect(): Rect = js.native
+  def rect(width: js.UndefOr[scala.Nothing], height: Double): Rect = js.native
   def rect(width: Double): Rect = js.native
   def rect(width: Double, height: Double): Rect = js.native
   def set(): Set = js.native

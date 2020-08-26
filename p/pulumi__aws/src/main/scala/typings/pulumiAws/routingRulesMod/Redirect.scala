@@ -42,20 +42,42 @@ trait Redirect extends js.Object {
 
 object Redirect {
   @scala.inline
-  def apply(
-    HostName: String = null,
-    HttpRedirectCode: String = null,
-    Protocol: String = null,
-    ReplaceKeyPrefixWith: String = null,
-    ReplaceKeyWith: String = null
-  ): Redirect = {
+  def apply(): Redirect = {
     val __obj = js.Dynamic.literal()
-    if (HostName != null) __obj.updateDynamic("HostName")(HostName.asInstanceOf[js.Any])
-    if (HttpRedirectCode != null) __obj.updateDynamic("HttpRedirectCode")(HttpRedirectCode.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (ReplaceKeyPrefixWith != null) __obj.updateDynamic("ReplaceKeyPrefixWith")(ReplaceKeyPrefixWith.asInstanceOf[js.Any])
-    if (ReplaceKeyWith != null) __obj.updateDynamic("ReplaceKeyWith")(ReplaceKeyWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[Redirect]
   }
+  @scala.inline
+  implicit class RedirectOps[Self <: Redirect] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostName(value: String): Self = this.set("HostName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostName: Self = this.set("HostName", js.undefined)
+    @scala.inline
+    def setHttpRedirectCode(value: String): Self = this.set("HttpRedirectCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpRedirectCode: Self = this.set("HttpRedirectCode", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    @scala.inline
+    def setReplaceKeyPrefixWith(value: String): Self = this.set("ReplaceKeyPrefixWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceKeyPrefixWith: Self = this.set("ReplaceKeyPrefixWith", js.undefined)
+    @scala.inline
+    def setReplaceKeyWith(value: String): Self = this.set("ReplaceKeyWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceKeyWith: Self = this.set("ReplaceKeyWith", js.undefined)
+  }
+  
 }
 

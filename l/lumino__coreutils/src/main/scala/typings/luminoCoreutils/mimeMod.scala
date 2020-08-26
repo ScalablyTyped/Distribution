@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/coreutils/lib/mime", JSImport.Namespace)
+@JSImport("@lumino/coreutils/types/mime", JSImport.Namespace)
 @js.native
 object mimeMod extends js.Object {
   @js.native

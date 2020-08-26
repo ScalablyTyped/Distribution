@@ -12,9 +12,8 @@ trait AST extends js.Object
 
 object AST {
   @scala.inline
-  def LeftOnlyAST(left: Node, start: Operator = null): AST = {
+  def LeftOnlyAST(left: Node): AST = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[AST]
   }
   @scala.inline

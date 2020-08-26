@@ -55,34 +55,78 @@ trait RoleDetail extends js.Object {
 
 object RoleDetail {
   @scala.inline
-  def apply(
-    Arn: arnType = null,
-    AssumeRolePolicyDocument: policyDocumentType = null,
-    AttachedManagedPolicies: attachedPoliciesListType = null,
-    CreateDate: dateType = null,
-    InstanceProfileList: instanceProfileListType = null,
-    Path: pathType = null,
-    PermissionsBoundary: AttachedPermissionsBoundary = null,
-    RoleId: idType = null,
-    RoleLastUsed: RoleLastUsed = null,
-    RoleName: roleNameType = null,
-    RolePolicyList: policyDetailListType = null,
-    Tags: tagListType = null
-  ): RoleDetail = {
+  def apply(): RoleDetail = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (AssumeRolePolicyDocument != null) __obj.updateDynamic("AssumeRolePolicyDocument")(AssumeRolePolicyDocument.asInstanceOf[js.Any])
-    if (AttachedManagedPolicies != null) __obj.updateDynamic("AttachedManagedPolicies")(AttachedManagedPolicies.asInstanceOf[js.Any])
-    if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (InstanceProfileList != null) __obj.updateDynamic("InstanceProfileList")(InstanceProfileList.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
-    if (PermissionsBoundary != null) __obj.updateDynamic("PermissionsBoundary")(PermissionsBoundary.asInstanceOf[js.Any])
-    if (RoleId != null) __obj.updateDynamic("RoleId")(RoleId.asInstanceOf[js.Any])
-    if (RoleLastUsed != null) __obj.updateDynamic("RoleLastUsed")(RoleLastUsed.asInstanceOf[js.Any])
-    if (RoleName != null) __obj.updateDynamic("RoleName")(RoleName.asInstanceOf[js.Any])
-    if (RolePolicyList != null) __obj.updateDynamic("RolePolicyList")(RolePolicyList.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleDetail]
   }
+  @scala.inline
+  implicit class RoleDetailOps[Self <: RoleDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAssumeRolePolicyDocument(value: policyDocumentType): Self = this.set("AssumeRolePolicyDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssumeRolePolicyDocument: Self = this.set("AssumeRolePolicyDocument", js.undefined)
+    @scala.inline
+    def setAttachedManagedPoliciesVarargs(value: AttachedPolicy*): Self = this.set("AttachedManagedPolicies", js.Array(value :_*))
+    @scala.inline
+    def setAttachedManagedPolicies(value: attachedPoliciesListType): Self = this.set("AttachedManagedPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachedManagedPolicies: Self = this.set("AttachedManagedPolicies", js.undefined)
+    @scala.inline
+    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    @scala.inline
+    def setInstanceProfileListVarargs(value: InstanceProfile*): Self = this.set("InstanceProfileList", js.Array(value :_*))
+    @scala.inline
+    def setInstanceProfileList(value: instanceProfileListType): Self = this.set("InstanceProfileList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceProfileList: Self = this.set("InstanceProfileList", js.undefined)
+    @scala.inline
+    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+    @scala.inline
+    def setPermissionsBoundary(value: AttachedPermissionsBoundary): Self = this.set("PermissionsBoundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsBoundary: Self = this.set("PermissionsBoundary", js.undefined)
+    @scala.inline
+    def setRoleId(value: idType): Self = this.set("RoleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleId: Self = this.set("RoleId", js.undefined)
+    @scala.inline
+    def setRoleLastUsed(value: RoleLastUsed): Self = this.set("RoleLastUsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleLastUsed: Self = this.set("RoleLastUsed", js.undefined)
+    @scala.inline
+    def setRoleName(value: roleNameType): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleName: Self = this.set("RoleName", js.undefined)
+    @scala.inline
+    def setRolePolicyListVarargs(value: PolicyDetail*): Self = this.set("RolePolicyList", js.Array(value :_*))
+    @scala.inline
+    def setRolePolicyList(value: policyDetailListType): Self = this.set("RolePolicyList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRolePolicyList: Self = this.set("RolePolicyList", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: tagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

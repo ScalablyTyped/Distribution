@@ -26,18 +26,42 @@ trait DescribePublicIpv4PoolsRequest extends js.Object {
 
 object DescribePublicIpv4PoolsRequest {
   @scala.inline
-  def apply(
-    Filters: FilterList = null,
-    MaxResults: js.UndefOr[PoolMaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    PoolIds: PublicIpv4PoolIdStringList = null
-  ): DescribePublicIpv4PoolsRequest = {
+  def apply(): DescribePublicIpv4PoolsRequest = {
     val __obj = js.Dynamic.literal()
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PoolIds != null) __obj.updateDynamic("PoolIds")(PoolIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePublicIpv4PoolsRequest]
   }
+  @scala.inline
+  implicit class DescribePublicIpv4PoolsRequestOps[Self <: DescribePublicIpv4PoolsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: PoolMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPoolIdsVarargs(value: Ipv4PoolEc2Id*): Self = this.set("PoolIds", js.Array(value :_*))
+    @scala.inline
+    def setPoolIds(value: PublicIpv4PoolIdStringList): Self = this.set("PoolIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoolIds: Self = this.set("PoolIds", js.undefined)
+  }
+  
 }
 

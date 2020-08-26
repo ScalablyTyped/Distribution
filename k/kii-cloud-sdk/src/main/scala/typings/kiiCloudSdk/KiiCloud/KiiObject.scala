@@ -605,6 +605,7 @@ trait KiiObject extends js.Object {
     *     );
     */
   def save(): js.Promise[KiiObject] = js.native
+  def save(callbacks: js.UndefOr[scala.Nothing], overwrite: Boolean): js.Promise[KiiObject] = js.native
   def save(callbacks: `12`): js.Promise[KiiObject] = js.native
   def save(callbacks: `12`, overwrite: Boolean): js.Promise[KiiObject] = js.native
   /**
@@ -663,6 +664,7 @@ trait KiiObject extends js.Object {
     *     );
     */
   def saveAllFields(): js.Promise[KiiObject] = js.native
+  def saveAllFields(callbacks: js.UndefOr[scala.Nothing], overwrite: Boolean): js.Promise[KiiObject] = js.native
   def saveAllFields(callbacks: `12`): js.Promise[KiiObject] = js.native
   def saveAllFields(callbacks: `12`, overwrite: Boolean): js.Promise[KiiObject] = js.native
   /**

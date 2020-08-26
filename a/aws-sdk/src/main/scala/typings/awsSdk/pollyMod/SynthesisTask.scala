@@ -70,40 +70,86 @@ trait SynthesisTask extends js.Object {
 
 object SynthesisTask {
   @scala.inline
-  def apply(
-    CreationTime: DateTime = null,
-    Engine: Engine = null,
-    LanguageCode: LanguageCode = null,
-    LexiconNames: LexiconNameList = null,
-    OutputFormat: OutputFormat = null,
-    OutputUri: OutputUri = null,
-    RequestCharacters: js.UndefOr[RequestCharacters] = js.undefined,
-    SampleRate: SampleRate = null,
-    SnsTopicArn: SnsTopicArn = null,
-    SpeechMarkTypes: SpeechMarkTypeList = null,
-    TaskId: TaskId = null,
-    TaskStatus: TaskStatus = null,
-    TaskStatusReason: TaskStatusReason = null,
-    TextType: TextType = null,
-    VoiceId: VoiceId = null
-  ): SynthesisTask = {
+  def apply(): SynthesisTask = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (LexiconNames != null) __obj.updateDynamic("LexiconNames")(LexiconNames.asInstanceOf[js.Any])
-    if (OutputFormat != null) __obj.updateDynamic("OutputFormat")(OutputFormat.asInstanceOf[js.Any])
-    if (OutputUri != null) __obj.updateDynamic("OutputUri")(OutputUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequestCharacters)) __obj.updateDynamic("RequestCharacters")(RequestCharacters.get.asInstanceOf[js.Any])
-    if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
-    if (SnsTopicArn != null) __obj.updateDynamic("SnsTopicArn")(SnsTopicArn.asInstanceOf[js.Any])
-    if (SpeechMarkTypes != null) __obj.updateDynamic("SpeechMarkTypes")(SpeechMarkTypes.asInstanceOf[js.Any])
-    if (TaskId != null) __obj.updateDynamic("TaskId")(TaskId.asInstanceOf[js.Any])
-    if (TaskStatus != null) __obj.updateDynamic("TaskStatus")(TaskStatus.asInstanceOf[js.Any])
-    if (TaskStatusReason != null) __obj.updateDynamic("TaskStatusReason")(TaskStatusReason.asInstanceOf[js.Any])
-    if (TextType != null) __obj.updateDynamic("TextType")(TextType.asInstanceOf[js.Any])
-    if (VoiceId != null) __obj.updateDynamic("VoiceId")(VoiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynthesisTask]
   }
+  @scala.inline
+  implicit class SynthesisTaskOps[Self <: SynthesisTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: DateTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setEngine(value: Engine): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setLexiconNamesVarargs(value: LexiconName*): Self = this.set("LexiconNames", js.Array(value :_*))
+    @scala.inline
+    def setLexiconNames(value: LexiconNameList): Self = this.set("LexiconNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLexiconNames: Self = this.set("LexiconNames", js.undefined)
+    @scala.inline
+    def setOutputFormat(value: OutputFormat): Self = this.set("OutputFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFormat: Self = this.set("OutputFormat", js.undefined)
+    @scala.inline
+    def setOutputUri(value: OutputUri): Self = this.set("OutputUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputUri: Self = this.set("OutputUri", js.undefined)
+    @scala.inline
+    def setRequestCharacters(value: RequestCharacters): Self = this.set("RequestCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCharacters: Self = this.set("RequestCharacters", js.undefined)
+    @scala.inline
+    def setSampleRate(value: SampleRate): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    @scala.inline
+    def setSnsTopicArn(value: SnsTopicArn): Self = this.set("SnsTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnsTopicArn: Self = this.set("SnsTopicArn", js.undefined)
+    @scala.inline
+    def setSpeechMarkTypesVarargs(value: SpeechMarkType*): Self = this.set("SpeechMarkTypes", js.Array(value :_*))
+    @scala.inline
+    def setSpeechMarkTypes(value: SpeechMarkTypeList): Self = this.set("SpeechMarkTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeechMarkTypes: Self = this.set("SpeechMarkTypes", js.undefined)
+    @scala.inline
+    def setTaskId(value: TaskId): Self = this.set("TaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskId: Self = this.set("TaskId", js.undefined)
+    @scala.inline
+    def setTaskStatus(value: TaskStatus): Self = this.set("TaskStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStatus: Self = this.set("TaskStatus", js.undefined)
+    @scala.inline
+    def setTaskStatusReason(value: TaskStatusReason): Self = this.set("TaskStatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStatusReason: Self = this.set("TaskStatusReason", js.undefined)
+    @scala.inline
+    def setTextType(value: TextType): Self = this.set("TextType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextType: Self = this.set("TextType", js.undefined)
+    @scala.inline
+    def setVoiceId(value: VoiceId): Self = this.set("VoiceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoiceId: Self = this.set("VoiceId", js.undefined)
+  }
+  
 }
 

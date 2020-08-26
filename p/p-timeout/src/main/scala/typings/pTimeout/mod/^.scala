@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("p-timeout", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var TimeoutError: Instantiable1[js.UndefOr[/* message */ String], TimeoutErrorClass] = js.native
+  var TimeoutError: Instantiable1[/* message */ js.UndefOr[String], TimeoutErrorClass] = js.native
   // TODO: Remove this for the next major release
   var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTimeout */ js.Any = js.native
   /**

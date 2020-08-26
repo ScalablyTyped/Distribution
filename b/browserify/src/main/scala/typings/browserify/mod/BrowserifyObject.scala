@@ -6,9 +6,9 @@ import typings.browserify.browserifyStrings.file
 import typings.browserify.browserifyStrings.reset
 import typings.browserify.browserifyStrings.transform
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

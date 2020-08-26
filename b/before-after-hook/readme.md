@@ -12,7 +12,7 @@ asynchronous before/error/after hooks for internal functionality
 | Keywords           | hook, hooks, api |
 | # releases         | 11 |
 | # dependents       | 16 |
-| # downloads        | 38916688 |
+| # downloads        | 41627364 |
 | # stars            | 0 |
 
 ## Links

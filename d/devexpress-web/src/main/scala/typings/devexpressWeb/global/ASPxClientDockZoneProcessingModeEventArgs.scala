@@ -17,15 +17,5 @@ class ASPxClientDockZoneProcessingModeEventArgs protected ()
     * @param panel An ASPxClientDockPanel object that is a panel related to the event.
     */
   def this(processOnServer: Boolean, panel: typings.devexpressWeb.ASPxClientDockPanel) = this()
-  /**
-    * Gets the panel currently being processed.
-    */
-  /* CompleteClass */
-  override var panel: typings.devexpressWeb.ASPxClientDockPanel = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

@@ -26,18 +26,38 @@ trait CognitoOptions extends js.Object {
 
 object CognitoOptions {
   @scala.inline
-  def apply(
-    Enabled: js.UndefOr[Boolean] = js.undefined,
-    IdentityPoolId: IdentityPoolId = null,
-    RoleArn: RoleArn = null,
-    UserPoolId: UserPoolId = null
-  ): CognitoOptions = {
+  def apply(): CognitoOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoOptions]
   }
+  @scala.inline
+  implicit class CognitoOptionsOps[Self <: CognitoOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityPoolId: Self = this.set("IdentityPoolId", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setUserPoolId(value: UserPoolId): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+  }
+  
 }
 

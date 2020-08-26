@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Client extends js.Object {
   def add(docs: js.Array[js.Object]): ClientRequest = js.native
+  def add(
+    docs: js.Array[js.Object],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def add(docs: js.Array[js.Object], options: Options): ClientRequest = js.native
   def add(
     docs: js.Array[js.Object],
@@ -25,9 +30,19 @@ trait Client extends js.Object {
   def atomicUpdate(doc: js.Object, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def basicAuth(username: String, password: String): Client = js.native
   def commit(): ClientRequest = js.native
+  def commit(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def commit(options: Options): ClientRequest = js.native
   def commit(options: Options, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def delete(field: String, text: String): ClientRequest = js.native
+  def delete(
+    field: String,
+    text: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def delete(field: String, text: String, options: Options): ClientRequest = js.native
   def delete(
     field: String,
@@ -36,15 +51,34 @@ trait Client extends js.Object {
     callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
   ): ClientRequest = js.native
   def deleteAll(): ClientRequest = js.native
+  def deleteAll(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def deleteAll(options: Options): ClientRequest = js.native
   def deleteAll(options: Options, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def deleteByID(id: String): ClientRequest = js.native
+  def deleteByID(
+    id: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def deleteByID(id: String, options: Options): ClientRequest = js.native
   def deleteByID(id: String, options: Options, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def deleteByID(id: Double): ClientRequest = js.native
+  def deleteByID(
+    id: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def deleteByID(id: Double, options: Options): ClientRequest = js.native
   def deleteByID(id: Double, options: Options, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def deleteByQuery(query: String): ClientRequest = js.native
+  def deleteByQuery(
+    query: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def deleteByQuery(query: String, options: Options): ClientRequest = js.native
   def deleteByQuery(
     query: String,
@@ -52,6 +86,13 @@ trait Client extends js.Object {
     callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
   ): ClientRequest = js.native
   def deleteByRange(field: String, start: String, stop: String): ClientRequest = js.native
+  def deleteByRange(
+    field: String,
+    start: String,
+    stop: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def deleteByRange(field: String, start: String, stop: String, options: js.Object): ClientRequest = js.native
   def deleteByRange(
     field: String,
@@ -61,6 +102,13 @@ trait Client extends js.Object {
     callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
   ): ClientRequest = js.native
   def deleteByRange(field: String, start: String, stop: Date): ClientRequest = js.native
+  def deleteByRange(
+    field: String,
+    start: String,
+    stop: Date,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def deleteByRange(field: String, start: String, stop: Date, options: js.Object): ClientRequest = js.native
   def deleteByRange(
     field: String,
@@ -70,6 +118,13 @@ trait Client extends js.Object {
     callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
   ): ClientRequest = js.native
   def deleteByRange(field: String, start: Date, stop: String): ClientRequest = js.native
+  def deleteByRange(
+    field: String,
+    start: Date,
+    stop: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def deleteByRange(field: String, start: Date, stop: String, options: js.Object): ClientRequest = js.native
   def deleteByRange(
     field: String,
@@ -79,6 +134,13 @@ trait Client extends js.Object {
     callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
   ): ClientRequest = js.native
   def deleteByRange(field: String, start: Date, stop: Date): ClientRequest = js.native
+  def deleteByRange(
+    field: String,
+    start: Date,
+    stop: Date,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def deleteByRange(field: String, start: Date, stop: Date, options: js.Object): ClientRequest = js.native
   def deleteByRange(
     field: String,
@@ -128,9 +190,19 @@ trait Client extends js.Object {
   def prepareCommit(callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def query(): Query = js.native
   def realTimeGet(ids: String): ClientRequest = js.native
+  def realTimeGet(
+    ids: String,
+    query: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def realTimeGet(ids: String, query: Query): ClientRequest = js.native
   def realTimeGet(ids: String, query: Query, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def realTimeGet(ids: js.Array[String]): ClientRequest = js.native
+  def realTimeGet(
+    ids: js.Array[String],
+    query: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def realTimeGet(ids: js.Array[String], query: Query): ClientRequest = js.native
   def realTimeGet(
     ids: js.Array[String],
@@ -148,6 +220,11 @@ trait Client extends js.Object {
   def softCommit(callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def unauth(): Client = js.native
   def update(data: js.Object): ClientRequest = js.native
+  def update(
+    data: js.Object,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]
+  ): ClientRequest = js.native
   def update(data: js.Object, options: js.Object): ClientRequest = js.native
   def update(
     data: js.Object,

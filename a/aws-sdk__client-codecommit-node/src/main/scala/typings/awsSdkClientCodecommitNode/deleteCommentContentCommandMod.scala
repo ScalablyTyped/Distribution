@@ -26,16 +26,9 @@ object deleteCommentContentCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DeleteCommentContentInput) = this()
-    /* CompleteClass */
-    override val input: DeleteCommentContentInput = js.native
     val middlewareStack: MiddlewareStack[DeleteCommentContentInput, DeleteCommentContentOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[DeleteCommentContentInput, DeleteCommentContentOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[DeleteCommentContentInput, DeleteCommentContentOutput] = js.native
   }

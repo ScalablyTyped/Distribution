@@ -32,6 +32,7 @@ class ResourceBiddersAccountsFiltersetsBidresponseswithoutbids protected () exte
     */
   def list(): GaxiosPromise[SchemaListBidResponsesWithoutBidsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListBidResponsesWithoutBidsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListBidResponsesWithoutBidsResponse] = js.native
   def list(params: ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsList): GaxiosPromise[SchemaListBidResponsesWithoutBidsResponse] = js.native
   def list(
     params: ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsList,

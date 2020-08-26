@@ -15,11 +15,11 @@ trait CreateServiceRequest extends js.Object {
     */
   var Description: js.UndefOr[ResourceDescription] = js.native
   /**
-    * A complex type that contains information about the Amazon Route 53 records that you want AWS Cloud Map to create when you register an instance. 
+    * A complex type that contains information about the Amazon Route 53 records that you want AWS Cloud Map to create when you register an instance. 
     */
   var DnsConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.DnsConfig] = js.native
   /**
-    *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional Route 53 health check. If you specify settings for a health check, AWS Cloud Map associates the health check with all the Route 53 DNS records that you specify in DnsConfig.  If you specify a health check configuration, you can specify either HealthCheckCustomConfig or HealthCheckConfig but not both.  For information about the charges for health checks, see AWS Cloud Map Pricing.
+    *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional Route 53 health check. If you specify settings for a health check, AWS Cloud Map associates the health check with all the Route 53 DNS records that you specify in DnsConfig.  If you specify a health check configuration, you can specify either HealthCheckCustomConfig or HealthCheckConfig but not both.  For information about the charges for health checks, see AWS Cloud Map Pricing.
     */
   var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.native
   /**
@@ -42,25 +42,54 @@ trait CreateServiceRequest extends js.Object {
 
 object CreateServiceRequest {
   @scala.inline
-  def apply(
-    Name: ServiceName,
-    CreatorRequestId: ResourceId = null,
-    Description: ResourceDescription = null,
-    DnsConfig: DnsConfig = null,
-    HealthCheckConfig: HealthCheckConfig = null,
-    HealthCheckCustomConfig: HealthCheckCustomConfig = null,
-    NamespaceId: ResourceId = null,
-    Tags: TagList = null
-  ): CreateServiceRequest = {
+  def apply(Name: ServiceName): CreateServiceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DnsConfig != null) __obj.updateDynamic("DnsConfig")(DnsConfig.asInstanceOf[js.Any])
-    if (HealthCheckConfig != null) __obj.updateDynamic("HealthCheckConfig")(HealthCheckConfig.asInstanceOf[js.Any])
-    if (HealthCheckCustomConfig != null) __obj.updateDynamic("HealthCheckCustomConfig")(HealthCheckCustomConfig.asInstanceOf[js.Any])
-    if (NamespaceId != null) __obj.updateDynamic("NamespaceId")(NamespaceId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateServiceRequest]
   }
+  @scala.inline
+  implicit class CreateServiceRequestOps[Self <: CreateServiceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: ServiceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatorRequestId(value: ResourceId): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    @scala.inline
+    def setDescription(value: ResourceDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDnsConfig(value: DnsConfig): Self = this.set("DnsConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsConfig: Self = this.set("DnsConfig", js.undefined)
+    @scala.inline
+    def setHealthCheckConfig(value: HealthCheckConfig): Self = this.set("HealthCheckConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckConfig: Self = this.set("HealthCheckConfig", js.undefined)
+    @scala.inline
+    def setHealthCheckCustomConfig(value: HealthCheckCustomConfig): Self = this.set("HealthCheckCustomConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckCustomConfig: Self = this.set("HealthCheckCustomConfig", js.undefined)
+    @scala.inline
+    def setNamespaceId(value: ResourceId): Self = this.set("NamespaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceId: Self = this.set("NamespaceId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -9,6 +9,7 @@ trait Controls extends js.Object {
   val Count: Double = js.native
   def apply(varg: js.Any): js.Any = js.native
   def Add(bstrProgID: String): Control = js.native
+  def Add(bstrProgID: String, Name: js.UndefOr[scala.Nothing], Visible: js.Any): Control = js.native
   def Add(bstrProgID: String, Name: js.Any): Control = js.native
   def Add(bstrProgID: String, Name: js.Any, Visible: js.Any): Control = js.native
   def AlignToGrid(): Unit = js.native

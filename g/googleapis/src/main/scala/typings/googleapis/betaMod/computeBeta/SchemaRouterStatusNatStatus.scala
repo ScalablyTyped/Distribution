@@ -42,22 +42,52 @@ trait SchemaRouterStatusNatStatus extends js.Object {
 
 object SchemaRouterStatusNatStatus {
   @scala.inline
-  def apply(
-    autoAllocatedNatIps: js.Array[String] = null,
-    minExtraNatIpsNeeded: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    numVmEndpointsWithNatMappings: js.UndefOr[Double] = js.undefined,
-    userAllocatedNatIpResources: js.Array[String] = null,
-    userAllocatedNatIps: js.Array[String] = null
-  ): SchemaRouterStatusNatStatus = {
+  def apply(): SchemaRouterStatusNatStatus = {
     val __obj = js.Dynamic.literal()
-    if (autoAllocatedNatIps != null) __obj.updateDynamic("autoAllocatedNatIps")(autoAllocatedNatIps.asInstanceOf[js.Any])
-    if (!js.isUndefined(minExtraNatIpsNeeded)) __obj.updateDynamic("minExtraNatIpsNeeded")(minExtraNatIpsNeeded.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(numVmEndpointsWithNatMappings)) __obj.updateDynamic("numVmEndpointsWithNatMappings")(numVmEndpointsWithNatMappings.get.asInstanceOf[js.Any])
-    if (userAllocatedNatIpResources != null) __obj.updateDynamic("userAllocatedNatIpResources")(userAllocatedNatIpResources.asInstanceOf[js.Any])
-    if (userAllocatedNatIps != null) __obj.updateDynamic("userAllocatedNatIps")(userAllocatedNatIps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterStatusNatStatus]
   }
+  @scala.inline
+  implicit class SchemaRouterStatusNatStatusOps[Self <: SchemaRouterStatusNatStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoAllocatedNatIpsVarargs(value: String*): Self = this.set("autoAllocatedNatIps", js.Array(value :_*))
+    @scala.inline
+    def setAutoAllocatedNatIps(value: js.Array[String]): Self = this.set("autoAllocatedNatIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAllocatedNatIps: Self = this.set("autoAllocatedNatIps", js.undefined)
+    @scala.inline
+    def setMinExtraNatIpsNeeded(value: Double): Self = this.set("minExtraNatIpsNeeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinExtraNatIpsNeeded: Self = this.set("minExtraNatIpsNeeded", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNumVmEndpointsWithNatMappings(value: Double): Self = this.set("numVmEndpointsWithNatMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumVmEndpointsWithNatMappings: Self = this.set("numVmEndpointsWithNatMappings", js.undefined)
+    @scala.inline
+    def setUserAllocatedNatIpResourcesVarargs(value: String*): Self = this.set("userAllocatedNatIpResources", js.Array(value :_*))
+    @scala.inline
+    def setUserAllocatedNatIpResources(value: js.Array[String]): Self = this.set("userAllocatedNatIpResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAllocatedNatIpResources: Self = this.set("userAllocatedNatIpResources", js.undefined)
+    @scala.inline
+    def setUserAllocatedNatIpsVarargs(value: String*): Self = this.set("userAllocatedNatIps", js.Array(value :_*))
+    @scala.inline
+    def setUserAllocatedNatIps(value: js.Array[String]): Self = this.set("userAllocatedNatIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAllocatedNatIps: Self = this.set("userAllocatedNatIps", js.undefined)
+  }
+  
 }
 

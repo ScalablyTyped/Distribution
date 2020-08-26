@@ -35,20 +35,17 @@ package object frauddetectorMod {
   type DetectorVersionStatus = typings.awsSdk.frauddetectorMod._DetectorVersionStatus | java.lang.String
   type DetectorVersionSummaryList = js.Array[typings.awsSdk.frauddetectorMod.DetectorVersionSummary]
   type DetectorsMaxResults = scala.Double
-  type EventAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.attributeValue]
+  type EventVariableMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.variableValue]
   type ExternalModelEndpointDataBlobMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.ModelEndpointDataBlob]
   type ExternalModelList = js.Array[typings.awsSdk.frauddetectorMod.ExternalModel]
   type ExternalModelsMaxResults = scala.Double
-  type IsOpaque = scala.Boolean
   type JsonKeyToVariableMap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type LabelMapper = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.ListOfStrings]
+  type KmsEncryptionKeyArn = java.lang.String
   type Language = typings.awsSdk.awsSdkStrings.DETECTORPL | java.lang.String
   type ListOfModelScores = js.Array[typings.awsSdk.frauddetectorMod.ModelScores]
   type ListOfModelVersions = js.Array[typings.awsSdk.frauddetectorMod.ModelVersion]
   type ListOfRuleResults = js.Array[typings.awsSdk.frauddetectorMod.RuleResult]
   type ListOfStrings = js.Array[java.lang.String]
-  type MaxResults = scala.Double
-  type MetricsMap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ASSOCIATED
     - typings.awsSdk.awsSdkStrings.DISSOCIATED
@@ -61,7 +58,6 @@ package object frauddetectorMod {
     - java.lang.String
   */
   type ModelInputDataFormat = typings.awsSdk.frauddetectorMod._ModelInputDataFormat | java.lang.String
-  type ModelList = js.Array[typings.awsSdk.frauddetectorMod.Model]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TEXT_CSV
     - typings.awsSdk.awsSdkStrings.APPLICATION_JSONLINES
@@ -71,18 +67,9 @@ package object frauddetectorMod {
   type ModelPredictionMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.float]
   type ModelSource = typings.awsSdk.awsSdkStrings.SAGEMAKER | java.lang.String
   type ModelTypeEnum = typings.awsSdk.awsSdkStrings.ONLINE_FRAUD_INSIGHTS | java.lang.String
-  type ModelVariableIndex = scala.Double
-  type ModelVariablesList = js.Array[typings.awsSdk.frauddetectorMod.ModelVariable]
-  type ModelVersionDetailList = js.Array[typings.awsSdk.frauddetectorMod.ModelVersionDetail]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.TRAINING_IN_PROGRESS
-    - typings.awsSdk.awsSdkStrings.TRAINING_COMPLETE
-    - typings.awsSdk.awsSdkStrings.ACTIVATE_REQUESTED
-    - typings.awsSdk.awsSdkStrings.ACTIVATE_IN_PROGRESS
     - typings.awsSdk.awsSdkStrings.ACTIVE
-    - typings.awsSdk.awsSdkStrings.INACTIVATE_IN_PROGRESS
     - typings.awsSdk.awsSdkStrings.INACTIVE
-    - typings.awsSdk.awsSdkStrings.ERROR
     - java.lang.String
   */
   type ModelVersionStatus = typings.awsSdk.frauddetectorMod._ModelVersionStatus | java.lang.String
@@ -99,6 +86,9 @@ package object frauddetectorMod {
   type RuleExecutionMode = typings.awsSdk.frauddetectorMod._RuleExecutionMode | java.lang.String
   type RuleList = js.Array[typings.awsSdk.frauddetectorMod.Rule]
   type RulesMaxResults = scala.Double
+  type TagsMaxResults = scala.Double
+  type TrainingDataSourceEnum = typings.awsSdk.awsSdkStrings.EXTERNAL_EVENTS | java.lang.String
+  type UseEventVariables = scala.Boolean
   type VariableEntryList = js.Array[typings.awsSdk.frauddetectorMod.VariableEntry]
   type VariableList = js.Array[typings.awsSdk.frauddetectorMod.Variable]
   type VariablesMaxResults = scala.Double
@@ -108,17 +98,40 @@ package object frauddetectorMod {
     - java.lang.String
   */
   type apiVersion = typings.awsSdk.frauddetectorMod._apiVersion | java.lang.String
-  type attributeKey = java.lang.String
-  type attributeValue = java.lang.String
   type blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.frauddetectorMod.Blob_ | java.lang.String
   type contentType = java.lang.String
   type description = java.lang.String
+  type entityTypeList = js.Array[typings.awsSdk.frauddetectorMod.EntityType]
+  type entityTypesMaxResults = scala.Double
+  type eventTypeList = js.Array[typings.awsSdk.frauddetectorMod.EventType]
+  type eventTypesMaxResults = scala.Double
+  type fieldValidationMessageList = js.Array[typings.awsSdk.frauddetectorMod.FieldValidationMessage]
+  type fileValidationMessageList = js.Array[typings.awsSdk.frauddetectorMod.FileValidationMessage]
   type float = scala.Double
+  type floatVersionString = java.lang.String
+  type fraudDetectorArn = java.lang.String
   type iamRoleArn = java.lang.String
   type identifier = java.lang.String
   type integer = scala.Double
+  type labelList = js.Array[typings.awsSdk.frauddetectorMod.Label]
+  type labelMapper = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.frauddetectorMod.ListOfStrings]
+  type labelsMaxResults = scala.Double
+  type listOfEntities = js.Array[typings.awsSdk.frauddetectorMod.Entity]
+  type metricDataPointsList = js.Array[typings.awsSdk.frauddetectorMod.MetricDataPoint]
+  type modelIdentifier = java.lang.String
+  type modelList = js.Array[typings.awsSdk.frauddetectorMod.Model]
+  type modelVersionDetailList = js.Array[typings.awsSdk.frauddetectorMod.ModelVersionDetail]
+  type modelsMaxPageSize = scala.Double
   type nonEmptyString = java.lang.String
   type ruleExpression = java.lang.String
   type s3BucketLocation = java.lang.String
+  type sageMakerEndpointIdentifier = java.lang.String
+  type tagKey = java.lang.String
+  type tagKeyList = js.Array[typings.awsSdk.frauddetectorMod.tagKey]
+  type tagList = js.Array[typings.awsSdk.frauddetectorMod.Tag]
+  type tagValue = java.lang.String
   type time = java.lang.String
+  type variableName = java.lang.String
+  type variableValue = java.lang.String
+  type wholeNumberVersionString = java.lang.String
 }

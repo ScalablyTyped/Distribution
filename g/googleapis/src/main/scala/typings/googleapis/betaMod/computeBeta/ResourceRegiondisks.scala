@@ -33,6 +33,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def addResourcePolicies(): GaxiosPromise[SchemaOperation] = js.native
   def addResourcePolicies(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addResourcePolicies(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addResourcePolicies(params: ParamsResourceRegiondisksAddresourcepolicies): GaxiosPromise[SchemaOperation] = js.native
   def addResourcePolicies(
     params: ParamsResourceRegiondisksAddresourcepolicies,
@@ -67,6 +68,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def createSnapshot(): GaxiosPromise[SchemaOperation] = js.native
   def createSnapshot(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def createSnapshot(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def createSnapshot(params: ParamsResourceRegiondisksCreatesnapshot): GaxiosPromise[SchemaOperation] = js.native
   def createSnapshot(params: ParamsResourceRegiondisksCreatesnapshot, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def createSnapshot(
@@ -100,6 +102,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegiondisksDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegiondisksDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -129,6 +132,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDisk] = js.native
   def get(callback: BodyResponseCallback[SchemaDisk]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDisk] = js.native
   def get(params: ParamsResourceRegiondisksGet): GaxiosPromise[SchemaDisk] = js.native
   def get(params: ParamsResourceRegiondisksGet, callback: BodyResponseCallback[SchemaDisk]): Unit = js.native
   def get(
@@ -159,6 +163,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceRegiondisksGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceRegiondisksGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -191,6 +196,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegiondisksInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegiondisksInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -224,6 +230,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDiskList] = js.native
   def list(callback: BodyResponseCallback[SchemaDiskList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDiskList] = js.native
   def list(params: ParamsResourceRegiondisksList): GaxiosPromise[SchemaDiskList] = js.native
   def list(params: ParamsResourceRegiondisksList, callback: BodyResponseCallback[SchemaDiskList]): Unit = js.native
   def list(
@@ -255,6 +262,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def removeResourcePolicies(): GaxiosPromise[SchemaOperation] = js.native
   def removeResourcePolicies(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def removeResourcePolicies(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removeResourcePolicies(params: ParamsResourceRegiondisksRemoveresourcepolicies): GaxiosPromise[SchemaOperation] = js.native
   def removeResourcePolicies(
     params: ParamsResourceRegiondisksRemoveresourcepolicies,
@@ -289,6 +297,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def resize(): GaxiosPromise[SchemaOperation] = js.native
   def resize(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def resize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def resize(params: ParamsResourceRegiondisksResize): GaxiosPromise[SchemaOperation] = js.native
   def resize(params: ParamsResourceRegiondisksResize, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def resize(
@@ -320,6 +329,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceRegiondisksSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceRegiondisksSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -351,6 +361,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceRegiondisksSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceRegiondisksSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
@@ -381,6 +392,7 @@ class ResourceRegiondisks protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceRegiondisksTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceRegiondisksTestiampermissions,

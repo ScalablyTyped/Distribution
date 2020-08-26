@@ -11,8 +11,49 @@ import scala.scalajs.js.annotation._
 @js.native
 class AsyncWriter () extends js.Object {
   def this(writer: js.Any) = this()
+  def this(writer: js.UndefOr[scala.Nothing], global: StringDictionary[js.Any]) = this()
   def this(writer: js.Any, global: StringDictionary[js.Any]) = this()
+  def this(writer: js.UndefOr[scala.Nothing], global: js.UndefOr[scala.Nothing], async: Boolean) = this()
+  def this(writer: js.UndefOr[scala.Nothing], global: StringDictionary[js.Any], async: Boolean) = this()
+  def this(writer: js.Any, global: js.UndefOr[scala.Nothing], async: Boolean) = this()
   def this(writer: js.Any, global: StringDictionary[js.Any], async: Boolean) = this()
+  def this(
+    writer: js.UndefOr[scala.Nothing],
+    global: js.UndefOr[scala.Nothing],
+    async: js.UndefOr[scala.Nothing],
+    buffer: Boolean
+  ) = this()
+  def this(
+    writer: js.UndefOr[scala.Nothing],
+    global: js.UndefOr[scala.Nothing],
+    async: Boolean,
+    buffer: Boolean
+  ) = this()
+  def this(
+    writer: js.UndefOr[scala.Nothing],
+    global: StringDictionary[js.Any],
+    async: js.UndefOr[scala.Nothing],
+    buffer: Boolean
+  ) = this()
+  def this(
+    writer: js.UndefOr[scala.Nothing],
+    global: StringDictionary[js.Any],
+    async: Boolean,
+    buffer: Boolean
+  ) = this()
+  def this(
+    writer: js.Any,
+    global: js.UndefOr[scala.Nothing],
+    async: js.UndefOr[scala.Nothing],
+    buffer: Boolean
+  ) = this()
+  def this(writer: js.Any, global: js.UndefOr[scala.Nothing], async: Boolean, buffer: Boolean) = this()
+  def this(
+    writer: js.Any,
+    global: StringDictionary[js.Any],
+    async: js.UndefOr[scala.Nothing],
+    buffer: Boolean
+  ) = this()
   def this(writer: js.Any, global: StringDictionary[js.Any], async: Boolean, buffer: Boolean) = this()
   var isAsyncWriter: AsyncWriter = js.native
   def _finish(): Unit = js.native

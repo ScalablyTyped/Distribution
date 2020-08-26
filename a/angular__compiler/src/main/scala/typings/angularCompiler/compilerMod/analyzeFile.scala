@@ -1,18 +1,18 @@
 package typings.angularCompiler.compilerMod
 
-import typings.angularCompiler.metadataResolverMod.CompileMetadataResolver
-import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
+import typings.angularCompiler.aotCompilerMod.NgAnalyzeModulesHost
+import typings.angularCompiler.aotCompilerMod.NgAnalyzedFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/compiler/src/aot/compiler", "analyzeFile")
+@JSImport("@angular/compiler/compiler", "analyzeFile")
 @js.native
 object analyzeFile extends js.Object {
   def apply(
     host: NgAnalyzeModulesHost,
-    staticSymbolResolver: StaticSymbolResolver,
-    metadataResolver: CompileMetadataResolver,
+    staticSymbolResolver: typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver,
+    metadataResolver: typings.angularCompiler.metadataResolverMod.CompileMetadataResolver,
     fileName: String
   ): NgAnalyzedFile = js.native
 }

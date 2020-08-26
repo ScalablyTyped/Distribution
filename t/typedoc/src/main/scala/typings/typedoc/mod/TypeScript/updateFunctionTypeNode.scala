@@ -14,12 +14,23 @@ import scala.scalajs.js.annotation._
 object updateFunctionTypeNode extends js.Object {
   def apply(
     node: FunctionTypeNode,
-    typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
+    typeParameters: js.UndefOr[scala.Nothing],
     parameters: NodeArray[ParameterDeclaration]
   ): FunctionTypeNode = js.native
   def apply(
     node: FunctionTypeNode,
-    typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
+    typeParameters: js.UndefOr[scala.Nothing],
+    parameters: NodeArray[ParameterDeclaration],
+    `type`: TypeNode
+  ): FunctionTypeNode = js.native
+  def apply(
+    node: FunctionTypeNode,
+    typeParameters: NodeArray[TypeParameterDeclaration],
+    parameters: NodeArray[ParameterDeclaration]
+  ): FunctionTypeNode = js.native
+  def apply(
+    node: FunctionTypeNode,
+    typeParameters: NodeArray[TypeParameterDeclaration],
     parameters: NodeArray[ParameterDeclaration],
     `type`: TypeNode
   ): FunctionTypeNode = js.native

@@ -11,8 +11,8 @@ Parse HTTP X-Forwarded-For header
 | Full name          | forwarded |
 | Keywords           | x-forwarded-for, http, req |
 | # releases         | 0 |
-| # dependents       | 59 |
-| # downloads        | 377861122 |
+| # dependents       | 60 |
+| # downloads        | 388771290 |
 | # stars            | 2 |
 
 ## Links

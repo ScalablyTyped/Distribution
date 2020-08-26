@@ -177,13 +177,9 @@ class Template protected () extends Node {
   var inputs: js.Array[BoundAttribute] = js.native
   var outputs: js.Array[BoundEvent] = js.native
   var references: js.Array[Reference] = js.native
-  /* CompleteClass */
-  override var sourceSpan: ParseSourceSpan = js.native
   var startSourceSpan: ParseSourceSpan | Null = js.native
   var tagName: String = js.native
   var templateAttrs: js.Array[BoundAttribute | TextAttribute] = js.native
   var variables: js.Array[Variable] = js.native
-  /* CompleteClass */
-  override def visit[Result](visitor: Visitor[Result]): Result = js.native
 }
 

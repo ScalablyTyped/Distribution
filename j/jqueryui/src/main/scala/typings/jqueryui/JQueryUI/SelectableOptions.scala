@@ -1,57 +1,67 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQueryEventObject
-import typings.jqueryui.anon.Selected
-import typings.jqueryui.anon.Selecting
-import typings.jqueryui.anon.Unselected
-import typings.jqueryui.anon.Unselecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Selectable //////////////////////////////////////////////////
+@js.native
 trait SelectableOptions extends SelectableEvents {
-  var autoRefresh: js.UndefOr[Boolean] = js.undefined
-  var cancel: js.UndefOr[String] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var distance: js.UndefOr[Double] = js.undefined
-  var filter: js.UndefOr[String] = js.undefined
-  var tolerance: js.UndefOr[String] = js.undefined
+  var autoRefresh: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[String] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var distance: js.UndefOr[Double] = js.native
+  var filter: js.UndefOr[String] = js.native
+  var tolerance: js.UndefOr[String] = js.native
 }
 
 object SelectableOptions {
   @scala.inline
-  def apply(
-    autoRefresh: js.UndefOr[Boolean] = js.undefined,
-    cancel: String = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    distance: js.UndefOr[Double] = js.undefined,
-    filter: String = null,
-    selected: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit = null,
-    selecting: (/* event */ JQueryEventObject, /* ui */ Selecting) => Unit = null,
-    start: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
-    tolerance: String = null,
-    unselected: (/* event */ JQueryEventObject, /* ui */ Unselected) => Unit = null,
-    unselecting: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Unit = null
-  ): SelectableOptions = {
+  def apply(): SelectableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh.get.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(js.Any.fromFunction2(selected))
-    if (selecting != null) __obj.updateDynamic("selecting")(js.Any.fromFunction2(selecting))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
-    if (unselected != null) __obj.updateDynamic("unselected")(js.Any.fromFunction2(unselected))
-    if (unselecting != null) __obj.updateDynamic("unselecting")(js.Any.fromFunction2(unselecting))
     __obj.asInstanceOf[SelectableOptions]
   }
+  @scala.inline
+  implicit class SelectableOptionsOps[Self <: SelectableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRefresh(value: Boolean): Self = this.set("autoRefresh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRefresh: Self = this.set("autoRefresh", js.undefined)
+    @scala.inline
+    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistance: Self = this.set("distance", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setTolerance(value: String): Self = this.set("tolerance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTolerance: Self = this.set("tolerance", js.undefined)
+  }
+  
 }
 

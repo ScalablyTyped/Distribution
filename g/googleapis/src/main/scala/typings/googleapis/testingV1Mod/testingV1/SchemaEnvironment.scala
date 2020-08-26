@@ -21,11 +21,30 @@ trait SchemaEnvironment extends js.Object {
 
 object SchemaEnvironment {
   @scala.inline
-  def apply(androidDevice: SchemaAndroidDevice = null, iosDevice: SchemaIosDevice = null): SchemaEnvironment = {
+  def apply(): SchemaEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (androidDevice != null) __obj.updateDynamic("androidDevice")(androidDevice.asInstanceOf[js.Any])
-    if (iosDevice != null) __obj.updateDynamic("iosDevice")(iosDevice.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnvironment]
   }
+  @scala.inline
+  implicit class SchemaEnvironmentOps[Self <: SchemaEnvironment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidDevice(value: SchemaAndroidDevice): Self = this.set("androidDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidDevice: Self = this.set("androidDevice", js.undefined)
+    @scala.inline
+    def setIosDevice(value: SchemaIosDevice): Self = this.set("iosDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosDevice: Self = this.set("iosDevice", js.undefined)
+  }
+  
 }
 

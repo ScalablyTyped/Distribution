@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class NodeModel ()
   extends typings.stormReactDiagrams.nodeModelMod.NodeModel {
   def this(nodeType: String) = this()
+  def this(nodeType: js.UndefOr[scala.Nothing], id: String) = this()
   def this(nodeType: String, id: String) = this()
 }
 

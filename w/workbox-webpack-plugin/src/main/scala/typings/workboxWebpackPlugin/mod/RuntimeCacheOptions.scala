@@ -8,69 +8,102 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RuntimeCacheOptions extends js.Object {
   /**
     * Configure background sync.
     */
-  var backgroundSync: js.UndefOr[Name] = js.undefined
+  var backgroundSync: js.UndefOr[Name] = js.native
   /**
     * Configure the broadcast cache update plugin.
     */
-  var broadcastUpdate: js.UndefOr[ChannelName] = js.undefined
+  var broadcastUpdate: js.UndefOr[ChannelName] = js.native
   /**
     * A custom cache name for this route.
     */
-  var cacheName: js.UndefOr[String] = js.undefined
+  var cacheName: js.UndefOr[String] = js.native
   /**
     * Configure which responses are considered cacheable.
     */
-  var cacheableResponse: js.UndefOr[Headers] = js.undefined
+  var cacheableResponse: js.UndefOr[Headers] = js.native
   /**
     * Custom cache expiration.
     */
-  var expiration: js.UndefOr[MaxAgeSeconds] = js.undefined
+  var expiration: js.UndefOr[MaxAgeSeconds] = js.native
   /**
     * Used to configure the handler.
     */
-  var fetchOptions: js.UndefOr[js.Any] = js.undefined
+  var fetchOptions: js.UndefOr[js.Any] = js.native
   /**
     * Used to configure the handler.
     */
-  var matchOptions: js.UndefOr[js.Any] = js.undefined
+  var matchOptions: js.UndefOr[js.Any] = js.native
   /**
     * Fall back to the cache after X seconds.
     */
-  var networkTimeoutSeconds: js.UndefOr[Double] = js.undefined
+  var networkTimeoutSeconds: js.UndefOr[Double] = js.native
   /**
     * Add in any additional plugin logic you need.
     */
-  var plugins: js.UndefOr[js.Array[_]] = js.undefined
+  var plugins: js.UndefOr[js.Array[_]] = js.native
 }
 
 object RuntimeCacheOptions {
   @scala.inline
-  def apply(
-    backgroundSync: Name = null,
-    broadcastUpdate: ChannelName = null,
-    cacheName: String = null,
-    cacheableResponse: Headers = null,
-    expiration: MaxAgeSeconds = null,
-    fetchOptions: js.Any = null,
-    matchOptions: js.Any = null,
-    networkTimeoutSeconds: js.UndefOr[Double] = js.undefined,
-    plugins: js.Array[_] = null
-  ): RuntimeCacheOptions = {
+  def apply(): RuntimeCacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundSync != null) __obj.updateDynamic("backgroundSync")(backgroundSync.asInstanceOf[js.Any])
-    if (broadcastUpdate != null) __obj.updateDynamic("broadcastUpdate")(broadcastUpdate.asInstanceOf[js.Any])
-    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName.asInstanceOf[js.Any])
-    if (cacheableResponse != null) __obj.updateDynamic("cacheableResponse")(cacheableResponse.asInstanceOf[js.Any])
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
-    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions.asInstanceOf[js.Any])
-    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkTimeoutSeconds)) __obj.updateDynamic("networkTimeoutSeconds")(networkTimeoutSeconds.get.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeCacheOptions]
   }
+  @scala.inline
+  implicit class RuntimeCacheOptionsOps[Self <: RuntimeCacheOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundSync(value: Name): Self = this.set("backgroundSync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundSync: Self = this.set("backgroundSync", js.undefined)
+    @scala.inline
+    def setBroadcastUpdate(value: ChannelName): Self = this.set("broadcastUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBroadcastUpdate: Self = this.set("broadcastUpdate", js.undefined)
+    @scala.inline
+    def setCacheName(value: String): Self = this.set("cacheName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheName: Self = this.set("cacheName", js.undefined)
+    @scala.inline
+    def setCacheableResponse(value: Headers): Self = this.set("cacheableResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheableResponse: Self = this.set("cacheableResponse", js.undefined)
+    @scala.inline
+    def setExpiration(value: MaxAgeSeconds): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("expiration", js.undefined)
+    @scala.inline
+    def setFetchOptions(value: js.Any): Self = this.set("fetchOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchOptions: Self = this.set("fetchOptions", js.undefined)
+    @scala.inline
+    def setMatchOptions(value: js.Any): Self = this.set("matchOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchOptions: Self = this.set("matchOptions", js.undefined)
+    @scala.inline
+    def setNetworkTimeoutSeconds(value: Double): Self = this.set("networkTimeoutSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkTimeoutSeconds: Self = this.set("networkTimeoutSeconds", js.undefined)
+    @scala.inline
+    def setPluginsVarargs(value: js.Any*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: js.Array[_]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+  }
+  
 }
 

@@ -15,7 +15,7 @@ trait Snapshot extends js.Object {
     */
   var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.native
   /**
-    * Indicates the status of Multi-AZ with automatic failover for the source Redis replication group. Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 node types.   Redis (cluster mode enabled): T1 node types.  
+    * Indicates the status of automatic failover for the source Redis replication group.
     */
   var AutomaticFailover: js.UndefOr[AutomaticFailoverStatus] = js.native
   /**
@@ -114,62 +114,128 @@ trait Snapshot extends js.Object {
 
 object Snapshot {
   @scala.inline
-  def apply(
-    ARN: String = null,
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    AutomaticFailover: AutomaticFailoverStatus = null,
-    CacheClusterCreateTime: TStamp = null,
-    CacheClusterId: String = null,
-    CacheNodeType: String = null,
-    CacheParameterGroupName: String = null,
-    CacheSubnetGroupName: String = null,
-    Engine: String = null,
-    EngineVersion: String = null,
-    KmsKeyId: String = null,
-    NodeSnapshots: NodeSnapshotList = null,
-    NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined,
-    NumNodeGroups: js.UndefOr[IntegerOptional] = js.undefined,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
-    PreferredAvailabilityZone: String = null,
-    PreferredMaintenanceWindow: String = null,
-    ReplicationGroupDescription: String = null,
-    ReplicationGroupId: String = null,
-    SnapshotName: String = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
-    SnapshotSource: String = null,
-    SnapshotStatus: String = null,
-    SnapshotWindow: String = null,
-    TopicArn: String = null,
-    VpcId: String = null
-  ): Snapshot = {
+  def apply(): Snapshot = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
-    if (AutomaticFailover != null) __obj.updateDynamic("AutomaticFailover")(AutomaticFailover.asInstanceOf[js.Any])
-    if (CacheClusterCreateTime != null) __obj.updateDynamic("CacheClusterCreateTime")(CacheClusterCreateTime.asInstanceOf[js.Any])
-    if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
-    if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
-    if (CacheParameterGroupName != null) __obj.updateDynamic("CacheParameterGroupName")(CacheParameterGroupName.asInstanceOf[js.Any])
-    if (CacheSubnetGroupName != null) __obj.updateDynamic("CacheSubnetGroupName")(CacheSubnetGroupName.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (NodeSnapshots != null) __obj.updateDynamic("NodeSnapshots")(NodeSnapshots.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumCacheNodes)) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumNodeGroups)) __obj.updateDynamic("NumNodeGroups")(NumNodeGroups.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (PreferredAvailabilityZone != null) __obj.updateDynamic("PreferredAvailabilityZone")(PreferredAvailabilityZone.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (ReplicationGroupDescription != null) __obj.updateDynamic("ReplicationGroupDescription")(ReplicationGroupDescription.asInstanceOf[js.Any])
-    if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])
-    if (SnapshotName != null) __obj.updateDynamic("SnapshotName")(SnapshotName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.get.asInstanceOf[js.Any])
-    if (SnapshotSource != null) __obj.updateDynamic("SnapshotSource")(SnapshotSource.asInstanceOf[js.Any])
-    if (SnapshotStatus != null) __obj.updateDynamic("SnapshotStatus")(SnapshotStatus.asInstanceOf[js.Any])
-    if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow.asInstanceOf[js.Any])
-    if (TopicArn != null) __obj.updateDynamic("TopicArn")(TopicArn.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }
+  @scala.inline
+  implicit class SnapshotOps[Self <: Snapshot] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: Boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setAutomaticFailover(value: AutomaticFailoverStatus): Self = this.set("AutomaticFailover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticFailover: Self = this.set("AutomaticFailover", js.undefined)
+    @scala.inline
+    def setCacheClusterCreateTime(value: TStamp): Self = this.set("CacheClusterCreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterCreateTime: Self = this.set("CacheClusterCreateTime", js.undefined)
+    @scala.inline
+    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    @scala.inline
+    def setCacheNodeType(value: String): Self = this.set("CacheNodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodeType: Self = this.set("CacheNodeType", js.undefined)
+    @scala.inline
+    def setCacheParameterGroupName(value: String): Self = this.set("CacheParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheParameterGroupName: Self = this.set("CacheParameterGroupName", js.undefined)
+    @scala.inline
+    def setCacheSubnetGroupName(value: String): Self = this.set("CacheSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSubnetGroupName: Self = this.set("CacheSubnetGroupName", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setNodeSnapshotsVarargs(value: NodeSnapshot*): Self = this.set("NodeSnapshots", js.Array(value :_*))
+    @scala.inline
+    def setNodeSnapshots(value: NodeSnapshotList): Self = this.set("NodeSnapshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeSnapshots: Self = this.set("NodeSnapshots", js.undefined)
+    @scala.inline
+    def setNumCacheNodes(value: IntegerOptional): Self = this.set("NumCacheNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumCacheNodes: Self = this.set("NumCacheNodes", js.undefined)
+    @scala.inline
+    def setNumNodeGroups(value: IntegerOptional): Self = this.set("NumNodeGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumNodeGroups: Self = this.set("NumNodeGroups", js.undefined)
+    @scala.inline
+    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setPreferredAvailabilityZone(value: String): Self = this.set("PreferredAvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredAvailabilityZone: Self = this.set("PreferredAvailabilityZone", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setReplicationGroupDescription(value: String): Self = this.set("ReplicationGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationGroupDescription: Self = this.set("ReplicationGroupDescription", js.undefined)
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationGroupId: Self = this.set("ReplicationGroupId", js.undefined)
+    @scala.inline
+    def setSnapshotName(value: String): Self = this.set("SnapshotName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotName: Self = this.set("SnapshotName", js.undefined)
+    @scala.inline
+    def setSnapshotRetentionLimit(value: IntegerOptional): Self = this.set("SnapshotRetentionLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotRetentionLimit: Self = this.set("SnapshotRetentionLimit", js.undefined)
+    @scala.inline
+    def setSnapshotSource(value: String): Self = this.set("SnapshotSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotSource: Self = this.set("SnapshotSource", js.undefined)
+    @scala.inline
+    def setSnapshotStatus(value: String): Self = this.set("SnapshotStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotStatus: Self = this.set("SnapshotStatus", js.undefined)
+    @scala.inline
+    def setSnapshotWindow(value: String): Self = this.set("SnapshotWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotWindow: Self = this.set("SnapshotWindow", js.undefined)
+    @scala.inline
+    def setTopicArn(value: String): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

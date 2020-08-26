@@ -10,9 +10,9 @@ ES Proposal spec-compliant shim for Promise.allSettled
 | ------------------ | :-------------: |
 | Full name          | promise.allsettled |
 | Keywords           | Promise, promises, allsettled, settled, fulfilled, resolved, rejected, promise.allsettled, shim, polyfill, es-shim, API |
-| # releases         | 4 |
-| # dependents       | 20 |
-| # downloads        | 17833682 |
+| # releases         | 6 |
+| # dependents       | 22 |
+| # downloads        | 20039829 |
 | # stars            | 0 |
 
 ## Links

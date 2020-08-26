@@ -47,12 +47,34 @@ trait SchemaEntitlement extends js.Object {
 
 object SchemaEntitlement {
   @scala.inline
-  def apply(kind: String = null, productId: String = null, reason: String = null): SchemaEntitlement = {
+  def apply(): SchemaEntitlement = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEntitlement]
   }
+  @scala.inline
+  implicit class SchemaEntitlementOps[Self <: SchemaEntitlement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+  }
+  
 }
 

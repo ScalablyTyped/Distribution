@@ -11,6 +11,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object createElement extends js.Object {
   def apply(doc: Document, name: String): Element = js.native
+  def apply(doc: Document, name: String, attributes: js.UndefOr[scala.Nothing], children: String): Element = js.native
+  def apply(
+    doc: Document,
+    name: String,
+    attributes: js.UndefOr[scala.Nothing],
+    children: js.Array[Node | String]
+  ): Element = js.native
+  def apply(doc: Document, name: String, attributes: js.UndefOr[scala.Nothing], children: Node): Element = js.native
   def apply(doc: Document, name: String, attributes: js.Object): Element = js.native
   def apply(doc: Document, name: String, attributes: js.Object, children: String): Element = js.native
   def apply(doc: Document, name: String, attributes: js.Object, children: js.Array[Node | String]): Element = js.native

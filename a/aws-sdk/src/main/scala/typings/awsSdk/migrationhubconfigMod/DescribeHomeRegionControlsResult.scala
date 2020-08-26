@@ -18,11 +18,32 @@ trait DescribeHomeRegionControlsResult extends js.Object {
 
 object DescribeHomeRegionControlsResult {
   @scala.inline
-  def apply(HomeRegionControls: HomeRegionControls = null, NextToken: Token = null): DescribeHomeRegionControlsResult = {
+  def apply(): DescribeHomeRegionControlsResult = {
     val __obj = js.Dynamic.literal()
-    if (HomeRegionControls != null) __obj.updateDynamic("HomeRegionControls")(HomeRegionControls.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHomeRegionControlsResult]
   }
+  @scala.inline
+  implicit class DescribeHomeRegionControlsResultOps[Self <: DescribeHomeRegionControlsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHomeRegionControlsVarargs(value: HomeRegionControl*): Self = this.set("HomeRegionControls", js.Array(value :_*))
+    @scala.inline
+    def setHomeRegionControls(value: HomeRegionControls): Self = this.set("HomeRegionControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeRegionControls: Self = this.set("HomeRegionControls", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

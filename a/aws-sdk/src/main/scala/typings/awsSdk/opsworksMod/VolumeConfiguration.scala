@@ -38,21 +38,44 @@ trait VolumeConfiguration extends js.Object {
 
 object VolumeConfiguration {
   @scala.inline
-  def apply(
-    MountPoint: String,
-    NumberOfDisks: Integer,
-    Size: Integer,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[Integer] = js.undefined,
-    RaidLevel: js.UndefOr[Integer] = js.undefined,
-    VolumeType: String = null
-  ): VolumeConfiguration = {
+  def apply(MountPoint: String, NumberOfDisks: Integer, Size: Integer): VolumeConfiguration = {
     val __obj = js.Dynamic.literal(MountPoint = MountPoint.asInstanceOf[js.Any], NumberOfDisks = NumberOfDisks.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RaidLevel)) __obj.updateDynamic("RaidLevel")(RaidLevel.get.asInstanceOf[js.Any])
-    if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeConfiguration]
   }
+  @scala.inline
+  implicit class VolumeConfigurationOps[Self <: VolumeConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMountPoint(value: String): Self = this.set("MountPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberOfDisks(value: Integer): Self = this.set("NumberOfDisks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Integer): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    @scala.inline
+    def setIops(value: Integer): Self = this.set("Iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("Iops", js.undefined)
+    @scala.inline
+    def setRaidLevel(value: Integer): Self = this.set("RaidLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaidLevel: Self = this.set("RaidLevel", js.undefined)
+    @scala.inline
+    def setVolumeType(value: String): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+  }
+  
 }
 

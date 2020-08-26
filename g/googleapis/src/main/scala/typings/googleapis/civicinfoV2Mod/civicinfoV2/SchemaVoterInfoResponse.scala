@@ -72,34 +72,84 @@ trait SchemaVoterInfoResponse extends js.Object {
 
 object SchemaVoterInfoResponse {
   @scala.inline
-  def apply(
-    contests: js.Array[SchemaContest] = null,
-    dropOffLocations: js.Array[SchemaPollingLocation] = null,
-    earlyVoteSites: js.Array[SchemaPollingLocation] = null,
-    election: SchemaElection = null,
-    kind: String = null,
-    mailOnly: js.UndefOr[Boolean] = js.undefined,
-    normalizedInput: SchemaSimpleAddressType = null,
-    otherElections: js.Array[SchemaElection] = null,
-    pollingLocations: js.Array[SchemaPollingLocation] = null,
-    precinctId: String = null,
-    segments: js.Array[SchemaStreetSegment] = null,
-    state: js.Array[SchemaAdministrationRegion] = null
-  ): SchemaVoterInfoResponse = {
+  def apply(): SchemaVoterInfoResponse = {
     val __obj = js.Dynamic.literal()
-    if (contests != null) __obj.updateDynamic("contests")(contests.asInstanceOf[js.Any])
-    if (dropOffLocations != null) __obj.updateDynamic("dropOffLocations")(dropOffLocations.asInstanceOf[js.Any])
-    if (earlyVoteSites != null) __obj.updateDynamic("earlyVoteSites")(earlyVoteSites.asInstanceOf[js.Any])
-    if (election != null) __obj.updateDynamic("election")(election.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(mailOnly)) __obj.updateDynamic("mailOnly")(mailOnly.get.asInstanceOf[js.Any])
-    if (normalizedInput != null) __obj.updateDynamic("normalizedInput")(normalizedInput.asInstanceOf[js.Any])
-    if (otherElections != null) __obj.updateDynamic("otherElections")(otherElections.asInstanceOf[js.Any])
-    if (pollingLocations != null) __obj.updateDynamic("pollingLocations")(pollingLocations.asInstanceOf[js.Any])
-    if (precinctId != null) __obj.updateDynamic("precinctId")(precinctId.asInstanceOf[js.Any])
-    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVoterInfoResponse]
   }
+  @scala.inline
+  implicit class SchemaVoterInfoResponseOps[Self <: SchemaVoterInfoResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContestsVarargs(value: SchemaContest*): Self = this.set("contests", js.Array(value :_*))
+    @scala.inline
+    def setContests(value: js.Array[SchemaContest]): Self = this.set("contests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContests: Self = this.set("contests", js.undefined)
+    @scala.inline
+    def setDropOffLocationsVarargs(value: SchemaPollingLocation*): Self = this.set("dropOffLocations", js.Array(value :_*))
+    @scala.inline
+    def setDropOffLocations(value: js.Array[SchemaPollingLocation]): Self = this.set("dropOffLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropOffLocations: Self = this.set("dropOffLocations", js.undefined)
+    @scala.inline
+    def setEarlyVoteSitesVarargs(value: SchemaPollingLocation*): Self = this.set("earlyVoteSites", js.Array(value :_*))
+    @scala.inline
+    def setEarlyVoteSites(value: js.Array[SchemaPollingLocation]): Self = this.set("earlyVoteSites", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEarlyVoteSites: Self = this.set("earlyVoteSites", js.undefined)
+    @scala.inline
+    def setElection(value: SchemaElection): Self = this.set("election", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElection: Self = this.set("election", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMailOnly(value: Boolean): Self = this.set("mailOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMailOnly: Self = this.set("mailOnly", js.undefined)
+    @scala.inline
+    def setNormalizedInput(value: SchemaSimpleAddressType): Self = this.set("normalizedInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNormalizedInput: Self = this.set("normalizedInput", js.undefined)
+    @scala.inline
+    def setOtherElectionsVarargs(value: SchemaElection*): Self = this.set("otherElections", js.Array(value :_*))
+    @scala.inline
+    def setOtherElections(value: js.Array[SchemaElection]): Self = this.set("otherElections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherElections: Self = this.set("otherElections", js.undefined)
+    @scala.inline
+    def setPollingLocationsVarargs(value: SchemaPollingLocation*): Self = this.set("pollingLocations", js.Array(value :_*))
+    @scala.inline
+    def setPollingLocations(value: js.Array[SchemaPollingLocation]): Self = this.set("pollingLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollingLocations: Self = this.set("pollingLocations", js.undefined)
+    @scala.inline
+    def setPrecinctId(value: String): Self = this.set("precinctId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecinctId: Self = this.set("precinctId", js.undefined)
+    @scala.inline
+    def setSegmentsVarargs(value: SchemaStreetSegment*): Self = this.set("segments", js.Array(value :_*))
+    @scala.inline
+    def setSegments(value: js.Array[SchemaStreetSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegments: Self = this.set("segments", js.undefined)
+    @scala.inline
+    def setStateVarargs(value: SchemaAdministrationRegion*): Self = this.set("state", js.Array(value :_*))
+    @scala.inline
+    def setState(value: js.Array[SchemaAdministrationRegion]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

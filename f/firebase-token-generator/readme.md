@@ -12,7 +12,7 @@ A utility to generate signed Firebase Authentication Tokens
 | Keywords           | Firebase, JWT |
 | # releases         | 1 |
 | # dependents       | 40 |
-| # downloads        | 709613 |
+| # downloads        | 711213 |
 | # stars            | 2 |
 
 ## Links

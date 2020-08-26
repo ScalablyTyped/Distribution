@@ -14,10 +14,26 @@ trait DeleteDatasetResponse extends js.Object {
 
 object DeleteDatasetResponse {
   @scala.inline
-  def apply(Dataset: Dataset = null): DeleteDatasetResponse = {
+  def apply(): DeleteDatasetResponse = {
     val __obj = js.Dynamic.literal()
-    if (Dataset != null) __obj.updateDynamic("Dataset")(Dataset.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDatasetResponse]
   }
+  @scala.inline
+  implicit class DeleteDatasetResponseOps[Self <: DeleteDatasetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataset(value: Dataset): Self = this.set("Dataset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataset: Self = this.set("Dataset", js.undefined)
+  }
+  
 }
 

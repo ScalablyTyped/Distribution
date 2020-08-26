@@ -71,6 +71,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def ADOSC(Records: js.Array[Record]): js.Array[Double] = js.native
+  def ADOSC(Records: js.Array[Record], FastPeriod: js.UndefOr[scala.Nothing], SlowPeriod: Double): js.Array[Double] = js.native
   def ADOSC(Records: js.Array[Record], FastPeriod: Double): js.Array[Double] = js.native
   def ADOSC(Records: js.Array[Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = js.native
   /**
@@ -133,7 +134,26 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def APO(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  def APO(
+    Records: js.Array[Double | Record],
+    FastPeriod: js.UndefOr[scala.Nothing],
+    SlowPeriod: js.UndefOr[scala.Nothing],
+    MAType: Double
+  ): js.Array[Double] = js.native
+  def APO(Records: js.Array[Double | Record], FastPeriod: js.UndefOr[scala.Nothing], SlowPeriod: Double): js.Array[Double] = js.native
+  def APO(
+    Records: js.Array[Double | Record],
+    FastPeriod: js.UndefOr[scala.Nothing],
+    SlowPeriod: Double,
+    MAType: Double
+  ): js.Array[Double] = js.native
   def APO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = js.native
+  def APO(
+    Records: js.Array[Double | Record],
+    FastPeriod: Double,
+    SlowPeriod: js.UndefOr[scala.Nothing],
+    MAType: Double
+  ): js.Array[Double] = js.native
   def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = js.native
   def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = js.native
   /**
@@ -259,8 +279,76 @@ object talib extends js.Object {
     * @return {[number[], number[], number[]]}
     */
   def BBANDS(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Deviationsup: js.UndefOr[scala.Nothing],
+    Deviationsdown: js.UndefOr[scala.Nothing],
+    MAType: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Deviationsup: js.UndefOr[scala.Nothing],
+    Deviationsdown: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Deviationsup: js.UndefOr[scala.Nothing],
+    Deviationsdown: Double,
+    MAType: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Deviationsup: Double,
+    Deviationsdown: js.UndefOr[scala.Nothing],
+    MAType: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Deviationsup: Double,
+    Deviationsdown: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Deviationsup: Double,
+    Deviationsdown: Double,
+    MAType: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: Double,
+    Deviationsup: js.UndefOr[scala.Nothing],
+    Deviationsdown: js.UndefOr[scala.Nothing],
+    MAType: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: Double,
+    Deviationsup: js.UndefOr[scala.Nothing],
+    Deviationsdown: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: Double,
+    Deviationsup: js.UndefOr[scala.Nothing],
+    Deviationsdown: Double,
+    MAType: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double, Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def BBANDS(
+    Records: js.Array[Double | Record],
+    TimePeriod: Double,
+    Deviationsup: Double,
+    Deviationsdown: js.UndefOr[scala.Nothing],
+    MAType: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def BBANDS(
     Records: js.Array[Double | Record],
     TimePeriod: Double,
@@ -1900,6 +1988,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def MA(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  def MA(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], MAType: Double): js.Array[Double] = js.native
   def MA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
   def MA(Records: js.Array[Double | Record], TimePeriod: Double, MAType: Double): js.Array[Double] = js.native
   /**
@@ -1915,7 +2004,26 @@ object talib extends js.Object {
     * @return {[number[], number[], number[]]}
     */
   def MACD(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def MACD(
+    Records: js.Array[Double | Record],
+    FastPeriod: js.UndefOr[scala.Nothing],
+    SlowPeriod: js.UndefOr[scala.Nothing],
+    SignalPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def MACD(Records: js.Array[Double | Record], FastPeriod: js.UndefOr[scala.Nothing], SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def MACD(
+    Records: js.Array[Double | Record],
+    FastPeriod: js.UndefOr[scala.Nothing],
+    SlowPeriod: Double,
+    SignalPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Double | Record], FastPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def MACD(
+    Records: js.Array[Double | Record],
+    FastPeriod: Double,
+    SlowPeriod: js.UndefOr[scala.Nothing],
+    SignalPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   /**
@@ -1965,6 +2073,7 @@ object talib extends js.Object {
     * @return {[number[], number[]]}
     */
   def MAMA(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def MAMA(Records: js.Array[Double | Record], FastLimit: js.UndefOr[scala.Nothing], SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def MAMA(Records: js.Array[Double | Record], FastLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def MAMA(Records: js.Array[Double | Record], FastLimit: Double, SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   /**
@@ -2269,7 +2378,26 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def PPO(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  def PPO(
+    Records: js.Array[Double | Record],
+    FastPeriod: js.UndefOr[scala.Nothing],
+    SlowPeriod: js.UndefOr[scala.Nothing],
+    MAType: Double
+  ): js.Array[Double] = js.native
+  def PPO(Records: js.Array[Double | Record], FastPeriod: js.UndefOr[scala.Nothing], SlowPeriod: Double): js.Array[Double] = js.native
+  def PPO(
+    Records: js.Array[Double | Record],
+    FastPeriod: js.UndefOr[scala.Nothing],
+    SlowPeriod: Double,
+    MAType: Double
+  ): js.Array[Double] = js.native
   def PPO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = js.native
+  def PPO(
+    Records: js.Array[Double | Record],
+    FastPeriod: Double,
+    SlowPeriod: js.UndefOr[scala.Nothing],
+    MAType: Double
+  ): js.Array[Double] = js.native
   def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = js.native
   def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = js.native
   /**
@@ -2338,6 +2466,12 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def SAR(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = js.native
+  def SAR(
+    High: js.Array[Double],
+    Low: js.Array[Double],
+    AccelerationFactor: js.UndefOr[scala.Nothing],
+    AFMaximum: Double
+  ): js.Array[Double] = js.native
   def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double): js.Array[Double] = js.native
   def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = js.native
   /**
@@ -2351,6 +2485,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def SAR(Records: js.Array[Record]): js.Array[Double] = js.native
+  def SAR(Records: js.Array[Record], AccelerationFactor: js.UndefOr[scala.Nothing], AFMaximum: Double): js.Array[Double] = js.native
   def SAR(Records: js.Array[Record], AccelerationFactor: Double): js.Array[Double] = js.native
   def SAR(Records: js.Array[Record], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = js.native
   /**
@@ -2462,6 +2597,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def STDDEV(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  def STDDEV(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Deviations: Double): js.Array[Double] = js.native
   def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
   def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = js.native
   /**
@@ -2507,9 +2643,197 @@ object talib extends js.Object {
     * @return {[number[], number[]]}
     */
   def STOCH(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: js.UndefOr[scala.Nothing],
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: Double,
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: Double,
+    Slow_DPeriod: js.UndefOr[scala.Nothing],
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: Double,
+    Slow_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: Double,
+    Slow_DPeriod: Double,
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(Records: js.Array[Record], Fast_KPeriod: js.UndefOr[scala.Nothing], Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: Double,
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: js.UndefOr[scala.Nothing],
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: Double,
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: Double,
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: Double,
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: Double,
+    Slow_KMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: Double,
+    Slow_KMA: Double,
+    Slow_DPeriod: js.UndefOr[scala.Nothing],
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: Double,
+    Slow_KMA: Double,
+    Slow_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KPeriod: Double,
+    Slow_KMA: Double,
+    Slow_DPeriod: Double,
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCH(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: js.UndefOr[scala.Nothing],
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: Double,
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: Double,
+    Slow_DPeriod: js.UndefOr[scala.Nothing],
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: Double,
+    Slow_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: js.UndefOr[scala.Nothing],
+    Slow_KMA: Double,
+    Slow_DPeriod: Double,
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: Double,
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: js.UndefOr[scala.Nothing],
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: Double,
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: Double,
+    Slow_KMA: js.UndefOr[scala.Nothing],
+    Slow_DPeriod: Double,
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCH(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Slow_KPeriod: Double,
+    Slow_KMA: Double,
+    Slow_DPeriod: js.UndefOr[scala.Nothing],
+    Slow_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCH(
     Records: js.Array[Record],
     Fast_KPeriod: Double,
@@ -2560,7 +2884,26 @@ object talib extends js.Object {
     * @return {[number[], number[]]}
     */
   def STOCHF(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHF(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Fast_DPeriod: js.UndefOr[scala.Nothing],
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHF(Records: js.Array[Record], Fast_KPeriod: js.UndefOr[scala.Nothing], Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHF(
+    Records: js.Array[Record],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Fast_DPeriod: Double,
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHF(
+    Records: js.Array[Record],
+    Fast_KPeriod: Double,
+    Fast_DPeriod: js.UndefOr[scala.Nothing],
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   /**
@@ -2577,8 +2920,76 @@ object talib extends js.Object {
     * @return {[number[], number[]]}
     */
   def STOCHRSI(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Fast_DPeriod: js.UndefOr[scala.Nothing],
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Fast_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Fast_DPeriod: Double,
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Fast_KPeriod: Double,
+    Fast_DPeriod: js.UndefOr[scala.Nothing],
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Fast_KPeriod: Double,
+    Fast_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: js.UndefOr[scala.Nothing],
+    Fast_KPeriod: Double,
+    Fast_DPeriod: Double,
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: Double,
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Fast_DPeriod: js.UndefOr[scala.Nothing],
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: Double,
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Fast_DPeriod: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: Double,
+    Fast_KPeriod: js.UndefOr[scala.Nothing],
+    Fast_DPeriod: Double,
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
+  def STOCHRSI(
+    Records: js.Array[Double | Record],
+    TimePeriod: Double,
+    Fast_KPeriod: Double,
+    Fast_DPeriod: js.UndefOr[scala.Nothing],
+    Fast_DMA: Double
+  ): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def STOCHRSI(
     Records: js.Array[Double | Record],
@@ -2744,7 +3155,26 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def ULTOSC(Records: js.Array[Record]): js.Array[Double] = js.native
+  def ULTOSC(
+    Records: js.Array[Record],
+    FirstPeriod: js.UndefOr[scala.Nothing],
+    SecondPeriod: js.UndefOr[scala.Nothing],
+    ThirdPeriod: Double
+  ): js.Array[Double] = js.native
+  def ULTOSC(Records: js.Array[Record], FirstPeriod: js.UndefOr[scala.Nothing], SecondPeriod: Double): js.Array[Double] = js.native
+  def ULTOSC(
+    Records: js.Array[Record],
+    FirstPeriod: js.UndefOr[scala.Nothing],
+    SecondPeriod: Double,
+    ThirdPeriod: Double
+  ): js.Array[Double] = js.native
   def ULTOSC(Records: js.Array[Record], FirstPeriod: Double): js.Array[Double] = js.native
+  def ULTOSC(
+    Records: js.Array[Record],
+    FirstPeriod: Double,
+    SecondPeriod: js.UndefOr[scala.Nothing],
+    ThirdPeriod: Double
+  ): js.Array[Double] = js.native
   def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Array[Double] = js.native
   def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Array[Double] = js.native
   /**
@@ -2758,6 +3188,7 @@ object talib extends js.Object {
     * @return {number[]}
     */
   def VAR(Records: js.Array[Double | Record]): js.Array[Double] = js.native
+  def VAR(Records: js.Array[Double | Record], TimePeriod: js.UndefOr[scala.Nothing], Deviations: Double): js.Array[Double] = js.native
   def VAR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = js.native
   def VAR(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = js.native
   /**

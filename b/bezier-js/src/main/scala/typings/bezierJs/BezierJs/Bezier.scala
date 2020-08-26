@@ -56,7 +56,11 @@ trait Bezier extends js.Object {
   def offset(t: Double, d: Double): Offset | js.Array[Bezier] = js.native
   def on(point: Point, error: Double): Double = js.native
   def outline(d1: Double): PolyBezier = js.native
+  def outline(d1: Double, d2: js.UndefOr[scala.Nothing], d3: js.UndefOr[scala.Nothing], d4: Double): PolyBezier = js.native
+  def outline(d1: Double, d2: js.UndefOr[scala.Nothing], d3: Double): PolyBezier = js.native
+  def outline(d1: Double, d2: js.UndefOr[scala.Nothing], d3: Double, d4: Double): PolyBezier = js.native
   def outline(d1: Double, d2: Double): PolyBezier = js.native
+  def outline(d1: Double, d2: Double, d3: js.UndefOr[scala.Nothing], d4: Double): PolyBezier = js.native
   def outline(d1: Double, d2: Double, d3: Double): PolyBezier = js.native
   def outline(d1: Double, d2: Double, d3: Double, d4: Double): PolyBezier = js.native
   def outlineshapes(d1: Double, d2: Double): js.Array[Shape] = js.native

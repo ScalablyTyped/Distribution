@@ -18,11 +18,30 @@ trait SchemaReviewReplyResult extends js.Object {
 
 object SchemaReviewReplyResult {
   @scala.inline
-  def apply(lastEdited: SchemaTimestamp = null, replyText: String = null): SchemaReviewReplyResult = {
+  def apply(): SchemaReviewReplyResult = {
     val __obj = js.Dynamic.literal()
-    if (lastEdited != null) __obj.updateDynamic("lastEdited")(lastEdited.asInstanceOf[js.Any])
-    if (replyText != null) __obj.updateDynamic("replyText")(replyText.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReviewReplyResult]
   }
+  @scala.inline
+  implicit class SchemaReviewReplyResultOps[Self <: SchemaReviewReplyResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastEdited(value: SchemaTimestamp): Self = this.set("lastEdited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEdited: Self = this.set("lastEdited", js.undefined)
+    @scala.inline
+    def setReplyText(value: String): Self = this.set("replyText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyText: Self = this.set("replyText", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ThreatIntelligenceDetail extends js.Object {
 
 object ThreatIntelligenceDetail {
   @scala.inline
-  def apply(ThreatListName: String = null, ThreatNames: ThreatNames = null): ThreatIntelligenceDetail = {
+  def apply(): ThreatIntelligenceDetail = {
     val __obj = js.Dynamic.literal()
-    if (ThreatListName != null) __obj.updateDynamic("ThreatListName")(ThreatListName.asInstanceOf[js.Any])
-    if (ThreatNames != null) __obj.updateDynamic("ThreatNames")(ThreatNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreatIntelligenceDetail]
   }
+  @scala.inline
+  implicit class ThreatIntelligenceDetailOps[Self <: ThreatIntelligenceDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThreatListName(value: String): Self = this.set("ThreatListName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatListName: Self = this.set("ThreatListName", js.undefined)
+    @scala.inline
+    def setThreatNamesVarargs(value: String*): Self = this.set("ThreatNames", js.Array(value :_*))
+    @scala.inline
+    def setThreatNames(value: ThreatNames): Self = this.set("ThreatNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatNames: Self = this.set("ThreatNames", js.undefined)
+  }
+  
 }
 

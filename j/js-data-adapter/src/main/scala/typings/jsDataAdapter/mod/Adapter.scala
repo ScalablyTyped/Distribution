@@ -92,6 +92,7 @@ class Adapter () extends js.Object {
 @js.native
 object Adapter extends js.Object {
   def extend(): TypeofAdapter = js.native
+  def extend(instanceProps: js.UndefOr[scala.Nothing], classProps: IDict): TypeofAdapter = js.native
   def extend(instanceProps: IDict): TypeofAdapter = js.native
   def extend(instanceProps: IDict, classProps: IDict): TypeofAdapter = js.native
 }

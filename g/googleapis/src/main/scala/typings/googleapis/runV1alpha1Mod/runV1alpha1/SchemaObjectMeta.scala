@@ -167,42 +167,90 @@ trait SchemaObjectMeta extends js.Object {
 
 object SchemaObjectMeta {
   @scala.inline
-  def apply(
-    annotations: StringDictionary[String] = null,
-    clusterName: String = null,
-    creationTimestamp: String = null,
-    deletionGracePeriodSeconds: js.UndefOr[Double] = js.undefined,
-    deletionTimestamp: String = null,
-    finalizers: js.Array[String] = null,
-    generateName: String = null,
-    generation: js.UndefOr[Double] = js.undefined,
-    initializers: SchemaInitializers = null,
-    labels: StringDictionary[String] = null,
-    name: String = null,
-    namespace: String = null,
-    ownerReferences: js.Array[SchemaOwnerReference] = null,
-    resourceVersion: String = null,
-    selfLink: String = null,
-    uid: String = null
-  ): SchemaObjectMeta = {
+  def apply(): SchemaObjectMeta = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(deletionGracePeriodSeconds)) __obj.updateDynamic("deletionGracePeriodSeconds")(deletionGracePeriodSeconds.get.asInstanceOf[js.Any])
-    if (deletionTimestamp != null) __obj.updateDynamic("deletionTimestamp")(deletionTimestamp.asInstanceOf[js.Any])
-    if (finalizers != null) __obj.updateDynamic("finalizers")(finalizers.asInstanceOf[js.Any])
-    if (generateName != null) __obj.updateDynamic("generateName")(generateName.asInstanceOf[js.Any])
-    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
-    if (initializers != null) __obj.updateDynamic("initializers")(initializers.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (ownerReferences != null) __obj.updateDynamic("ownerReferences")(ownerReferences.asInstanceOf[js.Any])
-    if (resourceVersion != null) __obj.updateDynamic("resourceVersion")(resourceVersion.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObjectMeta]
   }
+  @scala.inline
+  implicit class SchemaObjectMetaOps[Self <: SchemaObjectMeta] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotations(value: StringDictionary[String]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDeletionGracePeriodSeconds(value: Double): Self = this.set("deletionGracePeriodSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionGracePeriodSeconds: Self = this.set("deletionGracePeriodSeconds", js.undefined)
+    @scala.inline
+    def setDeletionTimestamp(value: String): Self = this.set("deletionTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionTimestamp: Self = this.set("deletionTimestamp", js.undefined)
+    @scala.inline
+    def setFinalizersVarargs(value: String*): Self = this.set("finalizers", js.Array(value :_*))
+    @scala.inline
+    def setFinalizers(value: js.Array[String]): Self = this.set("finalizers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalizers: Self = this.set("finalizers", js.undefined)
+    @scala.inline
+    def setGenerateName(value: String): Self = this.set("generateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenerateName: Self = this.set("generateName", js.undefined)
+    @scala.inline
+    def setGeneration(value: Double): Self = this.set("generation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeneration: Self = this.set("generation", js.undefined)
+    @scala.inline
+    def setInitializers(value: SchemaInitializers): Self = this.set("initializers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitializers: Self = this.set("initializers", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setOwnerReferencesVarargs(value: SchemaOwnerReference*): Self = this.set("ownerReferences", js.Array(value :_*))
+    @scala.inline
+    def setOwnerReferences(value: js.Array[SchemaOwnerReference]): Self = this.set("ownerReferences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerReferences: Self = this.set("ownerReferences", js.undefined)
+    @scala.inline
+    def setResourceVersion(value: String): Self = this.set("resourceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceVersion: Self = this.set("resourceVersion", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("uid", js.undefined)
+  }
+  
 }
 

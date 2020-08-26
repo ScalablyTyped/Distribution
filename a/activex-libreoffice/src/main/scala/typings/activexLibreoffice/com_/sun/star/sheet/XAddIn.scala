@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** gives access to function descriptions and user-visible names. */
+@js.native
 trait XAddIn extends XLocalizable {
   /**
     * returns the description of the specified argument.
@@ -17,7 +18,7 @@ trait XAddIn extends XLocalizable {
     * @param nArgument the index of the argument (0-based).
     * @returns the description of the specified argument.
     */
-  def getArgumentDescription(aProgrammaticFunctionName: String, nArgument: Double): String
+  def getArgumentDescription(aProgrammaticFunctionName: String, nArgument: Double): String = js.native
   /**
     * returns the user-visible name of the specified argument.
     *
@@ -27,7 +28,7 @@ trait XAddIn extends XLocalizable {
     * @param nArgument the index of the argument (0-based).
     * @returns the user-visible name of the specified argument.
     */
-  def getDisplayArgumentName(aProgrammaticFunctionName: String, nArgument: Double): String
+  def getDisplayArgumentName(aProgrammaticFunctionName: String, nArgument: Double): String = js.native
   /**
     * returns the user-visible name of the category the function belongs to.
     *
@@ -35,7 +36,7 @@ trait XAddIn extends XLocalizable {
     * @param aProgrammaticFunctionName is the exact name of a method within its interface.
     * @returns the user-visible category name the specified function belongs to.
     */
-  def getDisplayCategoryName(aProgrammaticFunctionName: String): String
+  def getDisplayCategoryName(aProgrammaticFunctionName: String): String = js.native
   /**
     * returns the user-visible function name for an internal name.
     *
@@ -44,7 +45,7 @@ trait XAddIn extends XLocalizable {
     * @param aProgrammaticName is the exact name of a method within its interface.
     * @returns the user-visible name of the specified function.
     */
-  def getDisplayFunctionName(aProgrammaticName: String): String
+  def getDisplayFunctionName(aProgrammaticName: String): String = js.native
   /**
     * returns the description of a function.
     *
@@ -52,7 +53,7 @@ trait XAddIn extends XLocalizable {
     * @param aProgrammaticName is the exact name of a method within its interface.
     * @returns the description of the specified function.
     */
-  def getFunctionDescription(aProgrammaticName: String): String
+  def getFunctionDescription(aProgrammaticName: String): String = js.native
   /**
     * returns the programmatic name of the category the function belongs to.
     *
@@ -83,7 +84,7 @@ trait XAddIn extends XLocalizable {
     * @param aProgrammaticFunctionName is the exact name of a method within its interface.
     * @returns the category name the specified function belongs to.
     */
-  def getProgrammaticCategoryName(aProgrammaticFunctionName: String): String
+  def getProgrammaticCategoryName(aProgrammaticFunctionName: String): String = js.native
   /**
     * returns the internal function name for an user-visible name.
     *
@@ -94,7 +95,7 @@ trait XAddIn extends XLocalizable {
     * @param aDisplayName the user-visible name of a function.
     * @returns the exact name of the method within its interface.
     */
-  def getProgrammaticFuntionName(aDisplayName: String): String
+  def getProgrammaticFuntionName(aDisplayName: String): String = js.native
 }
 
 object XAddIn {
@@ -117,5 +118,32 @@ object XAddIn {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getArgumentDescription = js.Any.fromFunction2(getArgumentDescription), getDisplayArgumentName = js.Any.fromFunction2(getDisplayArgumentName), getDisplayCategoryName = js.Any.fromFunction1(getDisplayCategoryName), getDisplayFunctionName = js.Any.fromFunction1(getDisplayFunctionName), getFunctionDescription = js.Any.fromFunction1(getFunctionDescription), getLocale = js.Any.fromFunction0(getLocale), getProgrammaticCategoryName = js.Any.fromFunction1(getProgrammaticCategoryName), getProgrammaticFuntionName = js.Any.fromFunction1(getProgrammaticFuntionName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setLocale = js.Any.fromFunction1(setLocale))
     __obj.asInstanceOf[XAddIn]
   }
+  @scala.inline
+  implicit class XAddInOps[Self <: XAddIn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetArgumentDescription(value: (String, Double) => String): Self = this.set("getArgumentDescription", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetDisplayArgumentName(value: (String, Double) => String): Self = this.set("getDisplayArgumentName", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetDisplayCategoryName(value: String => String): Self = this.set("getDisplayCategoryName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetDisplayFunctionName(value: String => String): Self = this.set("getDisplayFunctionName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetFunctionDescription(value: String => String): Self = this.set("getFunctionDescription", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetProgrammaticCategoryName(value: String => String): Self = this.set("getProgrammaticCategoryName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetProgrammaticFuntionName(value: String => String): Self = this.set("getProgrammaticFuntionName", js.Any.fromFunction1(value))
+  }
+  
 }
 

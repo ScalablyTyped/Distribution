@@ -4,30 +4,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FilterRefType extends js.Object {
-  var filterDirection: js.UndefOr[String] = js.undefined
-  var filterExtensionType: js.UndefOr[js.Array[String]] = js.undefined
-  var filterId: js.UndefOr[js.Array[String]] = js.undefined
-  var filterRefType: js.UndefOr[String] = js.undefined
-  var filterType: js.UndefOr[js.Array[String]] = js.undefined
+  var filterDirection: js.UndefOr[String] = js.native
+  var filterExtensionType: js.UndefOr[js.Array[String]] = js.native
+  var filterId: js.UndefOr[js.Array[String]] = js.native
+  var filterRefType: js.UndefOr[String] = js.native
+  var filterType: js.UndefOr[js.Array[String]] = js.native
 }
 
 object FilterRefType {
   @scala.inline
-  def apply(
-    filterDirection: String = null,
-    filterExtensionType: js.Array[String] = null,
-    filterId: js.Array[String] = null,
-    filterRefType: String = null,
-    filterType: js.Array[String] = null
-  ): FilterRefType = {
+  def apply(): FilterRefType = {
     val __obj = js.Dynamic.literal()
-    if (filterDirection != null) __obj.updateDynamic("filterDirection")(filterDirection.asInstanceOf[js.Any])
-    if (filterExtensionType != null) __obj.updateDynamic("filterExtensionType")(filterExtensionType.asInstanceOf[js.Any])
-    if (filterId != null) __obj.updateDynamic("filterId")(filterId.asInstanceOf[js.Any])
-    if (filterRefType != null) __obj.updateDynamic("filterRefType")(filterRefType.asInstanceOf[js.Any])
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterRefType]
   }
+  @scala.inline
+  implicit class FilterRefTypeOps[Self <: FilterRefType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterDirection(value: String): Self = this.set("filterDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDirection: Self = this.set("filterDirection", js.undefined)
+    @scala.inline
+    def setFilterExtensionTypeVarargs(value: String*): Self = this.set("filterExtensionType", js.Array(value :_*))
+    @scala.inline
+    def setFilterExtensionType(value: js.Array[String]): Self = this.set("filterExtensionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterExtensionType: Self = this.set("filterExtensionType", js.undefined)
+    @scala.inline
+    def setFilterIdVarargs(value: String*): Self = this.set("filterId", js.Array(value :_*))
+    @scala.inline
+    def setFilterId(value: js.Array[String]): Self = this.set("filterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterId: Self = this.set("filterId", js.undefined)
+    @scala.inline
+    def setFilterRefType(value: String): Self = this.set("filterRefType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterRefType: Self = this.set("filterRefType", js.undefined)
+    @scala.inline
+    def setFilterTypeVarargs(value: String*): Self = this.set("filterType", js.Array(value :_*))
+    @scala.inline
+    def setFilterType(value: js.Array[String]): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterType: Self = this.set("filterType", js.undefined)
+  }
+  
 }
 

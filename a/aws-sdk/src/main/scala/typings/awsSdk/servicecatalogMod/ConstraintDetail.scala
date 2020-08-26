@@ -34,22 +34,46 @@ trait ConstraintDetail extends js.Object {
 
 object ConstraintDetail {
   @scala.inline
-  def apply(
-    ConstraintId: Id = null,
-    Description: ConstraintDescription = null,
-    Owner: AccountId = null,
-    PortfolioId: Id = null,
-    ProductId: Id = null,
-    Type: ConstraintType = null
-  ): ConstraintDetail = {
+  def apply(): ConstraintDetail = {
     val __obj = js.Dynamic.literal()
-    if (ConstraintId != null) __obj.updateDynamic("ConstraintId")(ConstraintId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (PortfolioId != null) __obj.updateDynamic("PortfolioId")(PortfolioId.asInstanceOf[js.Any])
-    if (ProductId != null) __obj.updateDynamic("ProductId")(ProductId.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstraintDetail]
   }
+  @scala.inline
+  implicit class ConstraintDetailOps[Self <: ConstraintDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstraintId(value: Id): Self = this.set("ConstraintId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraintId: Self = this.set("ConstraintId", js.undefined)
+    @scala.inline
+    def setDescription(value: ConstraintDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setOwner(value: AccountId): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setPortfolioId(value: Id): Self = this.set("PortfolioId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortfolioId: Self = this.set("PortfolioId", js.undefined)
+    @scala.inline
+    def setProductId(value: Id): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("ProductId", js.undefined)
+    @scala.inline
+    def setType(value: ConstraintType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

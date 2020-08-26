@@ -18,11 +18,32 @@ trait ListTypeVersionsOutput extends js.Object {
 
 object ListTypeVersionsOutput {
   @scala.inline
-  def apply(NextToken: NextToken = null, TypeVersionSummaries: TypeVersionSummaries = null): ListTypeVersionsOutput = {
+  def apply(): ListTypeVersionsOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TypeVersionSummaries != null) __obj.updateDynamic("TypeVersionSummaries")(TypeVersionSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTypeVersionsOutput]
   }
+  @scala.inline
+  implicit class ListTypeVersionsOutputOps[Self <: ListTypeVersionsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTypeVersionSummariesVarargs(value: TypeVersionSummary*): Self = this.set("TypeVersionSummaries", js.Array(value :_*))
+    @scala.inline
+    def setTypeVersionSummaries(value: TypeVersionSummaries): Self = this.set("TypeVersionSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeVersionSummaries: Self = this.set("TypeVersionSummaries", js.undefined)
+  }
+  
 }
 

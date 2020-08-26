@@ -18,10 +18,30 @@ trait TransactGetItemsInput extends js.Object {
 
 object TransactGetItemsInput {
   @scala.inline
-  def apply(TransactItems: TransactGetItemList, ReturnConsumedCapacity: ReturnConsumedCapacity = null): TransactGetItemsInput = {
+  def apply(TransactItems: TransactGetItemList): TransactGetItemsInput = {
     val __obj = js.Dynamic.literal(TransactItems = TransactItems.asInstanceOf[js.Any])
-    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactGetItemsInput]
   }
+  @scala.inline
+  implicit class TransactGetItemsInputOps[Self <: TransactGetItemsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTransactItemsVarargs(value: TransactGetItem*): Self = this.set("TransactItems", js.Array(value :_*))
+    @scala.inline
+    def setTransactItems(value: TransactGetItemList): Self = this.set("TransactItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = this.set("ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnConsumedCapacity: Self = this.set("ReturnConsumedCapacity", js.undefined)
+  }
+  
 }
 

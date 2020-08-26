@@ -26,18 +26,38 @@ trait DeploymentEvent extends js.Object {
 
 object DeploymentEvent {
   @scala.inline
-  def apply(
-    Description: Description = null,
-    EventType: DeploymentEventType = null,
-    OccurredAt: Iso8601DateTime = null,
-    TriggeredBy: TriggeredBy = null
-  ): DeploymentEvent = {
+  def apply(): DeploymentEvent = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EventType != null) __obj.updateDynamic("EventType")(EventType.asInstanceOf[js.Any])
-    if (OccurredAt != null) __obj.updateDynamic("OccurredAt")(OccurredAt.asInstanceOf[js.Any])
-    if (TriggeredBy != null) __obj.updateDynamic("TriggeredBy")(TriggeredBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentEvent]
   }
+  @scala.inline
+  implicit class DeploymentEventOps[Self <: DeploymentEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEventType(value: DeploymentEventType): Self = this.set("EventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("EventType", js.undefined)
+    @scala.inline
+    def setOccurredAt(value: Iso8601DateTime): Self = this.set("OccurredAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOccurredAt: Self = this.set("OccurredAt", js.undefined)
+    @scala.inline
+    def setTriggeredBy(value: TriggeredBy): Self = this.set("TriggeredBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggeredBy: Self = this.set("TriggeredBy", js.undefined)
+  }
+  
 }
 

@@ -38,24 +38,50 @@ trait ClientVpnRoute extends js.Object {
 
 object ClientVpnRoute {
   @scala.inline
-  def apply(
-    ClientVpnEndpointId: String = null,
-    Description: String = null,
-    DestinationCidr: String = null,
-    Origin: String = null,
-    Status: ClientVpnRouteStatus = null,
-    TargetSubnet: String = null,
-    Type: String = null
-  ): ClientVpnRoute = {
+  def apply(): ClientVpnRoute = {
     val __obj = js.Dynamic.literal()
-    if (ClientVpnEndpointId != null) __obj.updateDynamic("ClientVpnEndpointId")(ClientVpnEndpointId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DestinationCidr != null) __obj.updateDynamic("DestinationCidr")(DestinationCidr.asInstanceOf[js.Any])
-    if (Origin != null) __obj.updateDynamic("Origin")(Origin.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TargetSubnet != null) __obj.updateDynamic("TargetSubnet")(TargetSubnet.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientVpnRoute]
   }
+  @scala.inline
+  implicit class ClientVpnRouteOps[Self <: ClientVpnRoute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientVpnEndpointId(value: String): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientVpnEndpointId: Self = this.set("ClientVpnEndpointId", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDestinationCidr(value: String): Self = this.set("DestinationCidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCidr: Self = this.set("DestinationCidr", js.undefined)
+    @scala.inline
+    def setOrigin(value: String): Self = this.set("Origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("Origin", js.undefined)
+    @scala.inline
+    def setStatus(value: ClientVpnRouteStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTargetSubnet(value: String): Self = this.set("TargetSubnet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetSubnet: Self = this.set("TargetSubnet", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

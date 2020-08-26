@@ -4,70 +4,105 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DrawRangeEventArgs extends js.Object {
   /** returns the cancel option value
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** returns the context element
     */
-  var context: js.UndefOr[js.Any] = js.undefined
+  var context: js.UndefOr[js.Any] = js.native
   /** returns the gauge model
     */
-  var model: js.UndefOr[js.Any] = js.undefined
+  var model: js.UndefOr[js.Any] = js.native
   /** returns the object of the gauge.
     */
-  var `object`: js.UndefOr[js.Any] = js.undefined
+  var `object`: js.UndefOr[js.Any] = js.native
   /** returns the startX and startY of the range
     */
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[js.Any] = js.native
   /** returns the current range element.
     */
-  var rangeElement: js.UndefOr[js.Any] = js.undefined
+  var rangeElement: js.UndefOr[js.Any] = js.native
   /** returns the index of the range.
     */
-  var rangeIndex: js.UndefOr[Double] = js.undefined
+  var rangeIndex: js.UndefOr[Double] = js.native
   /** returns the options of the scale element.
     */
-  var scaleElement: js.UndefOr[js.Any] = js.undefined
+  var scaleElement: js.UndefOr[js.Any] = js.native
   /** returns the scaleIndex to which the range belongs.
     */
-  var scaleIndex: js.UndefOr[Double] = js.undefined
+  var scaleIndex: js.UndefOr[Double] = js.native
   /** returns the range style
     */
-  var style: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[String] = js.native
   /** returns the name of the event
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object DrawRangeEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    context: js.Any = null,
-    model: js.Any = null,
-    `object`: js.Any = null,
-    position: js.Any = null,
-    rangeElement: js.Any = null,
-    rangeIndex: js.UndefOr[Double] = js.undefined,
-    scaleElement: js.Any = null,
-    scaleIndex: js.UndefOr[Double] = js.undefined,
-    style: String = null,
-    `type`: String = null
-  ): DrawRangeEventArgs = {
+  def apply(): DrawRangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rangeElement != null) __obj.updateDynamic("rangeElement")(rangeElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeIndex)) __obj.updateDynamic("rangeIndex")(rangeIndex.get.asInstanceOf[js.Any])
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleIndex)) __obj.updateDynamic("scaleIndex")(scaleIndex.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawRangeEventArgs]
   }
+  @scala.inline
+  implicit class DrawRangeEventArgsOps[Self <: DrawRangeEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setObject(value: js.Any): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObject: Self = this.set("object", js.undefined)
+    @scala.inline
+    def setPosition(value: js.Any): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRangeElement(value: js.Any): Self = this.set("rangeElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeElement: Self = this.set("rangeElement", js.undefined)
+    @scala.inline
+    def setRangeIndex(value: Double): Self = this.set("rangeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeIndex: Self = this.set("rangeIndex", js.undefined)
+    @scala.inline
+    def setScaleElement(value: js.Any): Self = this.set("scaleElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleElement: Self = this.set("scaleElement", js.undefined)
+    @scala.inline
+    def setScaleIndex(value: Double): Self = this.set("scaleIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleIndex: Self = this.set("scaleIndex", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

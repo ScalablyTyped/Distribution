@@ -43,20 +43,42 @@ trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends j
 
 object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
   @scala.inline
-  def apply(
-    diskSizeGb: String = null,
-    diskType: String = null,
-    machineType: String = null,
-    minCpuPlatform: String = null,
-    reserved: js.UndefOr[Boolean] = js.undefined
-  ): SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig = {
+  def apply(): SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig = {
     val __obj = js.Dynamic.literal()
-    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
-    if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
-    if (!js.isUndefined(reserved)) __obj.updateDynamic("reserved")(reserved.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfigOps[Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    @scala.inline
+    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setMinCpuPlatform(value: String): Self = this.set("minCpuPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCpuPlatform: Self = this.set("minCpuPlatform", js.undefined)
+    @scala.inline
+    def setReserved(value: Boolean): Self = this.set("reserved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReserved: Self = this.set("reserved", js.undefined)
+  }
+  
 }
 

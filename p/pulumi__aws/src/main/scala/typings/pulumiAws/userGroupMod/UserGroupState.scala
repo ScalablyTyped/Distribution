@@ -31,20 +31,42 @@ trait UserGroupState extends js.Object {
 
 object UserGroupState {
   @scala.inline
-  def apply(
-    description: Input[String] = null,
-    name: Input[String] = null,
-    precedence: Input[Double] = null,
-    roleArn: Input[String] = null,
-    userPoolId: Input[String] = null
-  ): UserGroupState = {
+  def apply(): UserGroupState = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (precedence != null) __obj.updateDynamic("precedence")(precedence.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    if (userPoolId != null) __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserGroupState]
   }
+  @scala.inline
+  implicit class UserGroupStateOps[Self <: UserGroupState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPrecedence(value: Input[Double]): Self = this.set("precedence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecedence: Self = this.set("precedence", js.undefined)
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    @scala.inline
+    def setUserPoolId(value: Input[String]): Self = this.set("userPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolId: Self = this.set("userPoolId", js.undefined)
+  }
+  
 }
 

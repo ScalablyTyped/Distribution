@@ -58,34 +58,72 @@ trait Deployment extends js.Object {
 
 object Deployment {
   @scala.inline
-  def apply(
-    capacityProviderStrategy: CapacityProviderStrategy = null,
-    createdAt: Timestamp = null,
-    desiredCount: js.UndefOr[Integer] = js.undefined,
-    id: String = null,
-    launchType: LaunchType = null,
-    networkConfiguration: NetworkConfiguration = null,
-    pendingCount: js.UndefOr[Integer] = js.undefined,
-    platformVersion: String = null,
-    runningCount: js.UndefOr[Integer] = js.undefined,
-    status: String = null,
-    taskDefinition: String = null,
-    updatedAt: Timestamp = null
-  ): Deployment = {
+  def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
-    if (capacityProviderStrategy != null) __obj.updateDynamic("capacityProviderStrategy")(capacityProviderStrategy.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount.get.asInstanceOf[js.Any])
-    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(runningCount)) __obj.updateDynamic("runningCount")(runningCount.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition.asInstanceOf[js.Any])
-    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
   }
+  @scala.inline
+  implicit class DeploymentOps[Self <: Deployment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = this.set("capacityProviderStrategy", js.Array(value :_*))
+    @scala.inline
+    def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = this.set("capacityProviderStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviderStrategy: Self = this.set("capacityProviderStrategy", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDesiredCount(value: Integer): Self = this.set("desiredCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredCount: Self = this.set("desiredCount", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLaunchType(value: LaunchType): Self = this.set("launchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchType: Self = this.set("launchType", js.undefined)
+    @scala.inline
+    def setNetworkConfiguration(value: NetworkConfiguration): Self = this.set("networkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkConfiguration: Self = this.set("networkConfiguration", js.undefined)
+    @scala.inline
+    def setPendingCount(value: Integer): Self = this.set("pendingCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingCount: Self = this.set("pendingCount", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    @scala.inline
+    def setRunningCount(value: Integer): Self = this.set("runningCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningCount: Self = this.set("runningCount", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskDefinition: Self = this.set("taskDefinition", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+  }
+  
 }
 

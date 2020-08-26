@@ -12,6 +12,13 @@ object createSourceFile extends js.Object {
     fileName: java.lang.String,
     sourceText: java.lang.String,
     languageVersion: ScriptTarget,
+    setParentNodes: js.UndefOr[scala.Nothing],
+    scriptKind: ScriptKind
+  ): SourceFile = js.native
+  def apply(
+    fileName: java.lang.String,
+    sourceText: java.lang.String,
+    languageVersion: ScriptTarget,
     setParentNodes: Boolean
   ): SourceFile = js.native
   def apply(

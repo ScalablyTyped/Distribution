@@ -32,6 +32,12 @@ trait UI extends js.Object {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* result */ js.Any, Unit],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Function1[/* result */ js.Any, Unit],
     options: AsyncContextOptions
   ): Unit = js.native
   def addHandlerAsync(
@@ -161,6 +167,11 @@ trait UI extends js.Object {
     */
   def displayDialogAsync(startAddress: String): Unit = js.native
   def displayDialogAsync(startAddress: String, callback: js.Function1[/* result */ AsyncResult[Dialog], Unit]): Unit = js.native
+  def displayDialogAsync(
+    startAddress: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Dialog], Unit]
+  ): Unit = js.native
   def displayDialogAsync(startAddress: String, options: DialogOptions): Unit = js.native
   def displayDialogAsync(
     startAddress: String,

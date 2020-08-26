@@ -1,5 +1,7 @@
 package typings.uirouterCore
 
+import typings.uirouterCore.anon.TypeofParam
+import typings.uirouterCore.anon.TypeofUrlMatcher
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import typings.uirouterCore.paramsMod.Param
 import typings.uirouterCore.paramsMod.ParamType
@@ -25,11 +27,13 @@ object urlMatcherFactoryMod extends js.Object {
   
   @js.native
   class UrlMatcherFactory protected () extends js.Object {
-    def this(/** @hidden */ router: UIRouter) = this()
-    /** @internalapi Creates a new [[Param]] for a given location (DefType) */
+    def this(/** @internal */ router: UIRouter) = this()
+    var Param: TypeofParam = js.native
+    var UrlMatcher: TypeofUrlMatcher = js.native
+    /** Creates a new [[Param]] for a given location (DefType) */
     var paramFactory: ParamFactory = js.native
     var router: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     @JSName("$get")
     def $get(): this.type = js.native
     /** @deprecated use [[UrlConfig.caseInsensitive]] */
@@ -61,6 +65,11 @@ object urlMatcherFactoryMod extends js.Object {
     def strictMode(value: Boolean): Boolean = js.native
     /** @deprecated use [[UrlConfig.type]] */
     def `type`(name: String): js.Any = js.native
+    def `type`(
+      name: String,
+      definition: js.UndefOr[scala.Nothing],
+      definitionFn: js.Function0[ParamTypeDefinition]
+    ): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
   }

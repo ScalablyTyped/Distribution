@@ -22,12 +22,34 @@ trait DataProcessing extends js.Object {
 
 object DataProcessing {
   @scala.inline
-  def apply(InputFilter: JsonPath = null, JoinSource: JoinSource = null, OutputFilter: JsonPath = null): DataProcessing = {
+  def apply(): DataProcessing = {
     val __obj = js.Dynamic.literal()
-    if (InputFilter != null) __obj.updateDynamic("InputFilter")(InputFilter.asInstanceOf[js.Any])
-    if (JoinSource != null) __obj.updateDynamic("JoinSource")(JoinSource.asInstanceOf[js.Any])
-    if (OutputFilter != null) __obj.updateDynamic("OutputFilter")(OutputFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProcessing]
   }
+  @scala.inline
+  implicit class DataProcessingOps[Self <: DataProcessing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputFilter(value: JsonPath): Self = this.set("InputFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputFilter: Self = this.set("InputFilter", js.undefined)
+    @scala.inline
+    def setJoinSource(value: JoinSource): Self = this.set("JoinSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinSource: Self = this.set("JoinSource", js.undefined)
+    @scala.inline
+    def setOutputFilter(value: JsonPath): Self = this.set("OutputFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFilter: Self = this.set("OutputFilter", js.undefined)
+  }
+  
 }
 

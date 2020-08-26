@@ -6,27 +6,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProgressPropsType extends js.Object {
-  var appearTransition: js.UndefOr[Boolean] = js.undefined
-  var percent: js.UndefOr[Double] = js.undefined
-  var position: js.UndefOr[fixed | normal] = js.undefined
-  var unfilled: js.UndefOr[Boolean] = js.undefined
+  var appearTransition: js.UndefOr[Boolean] = js.native
+  var percent: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[fixed | normal] = js.native
+  var unfilled: js.UndefOr[Boolean] = js.native
 }
 
 object ProgressPropsType {
   @scala.inline
-  def apply(
-    appearTransition: js.UndefOr[Boolean] = js.undefined,
-    percent: js.UndefOr[Double] = js.undefined,
-    position: fixed | normal = null,
-    unfilled: js.UndefOr[Boolean] = js.undefined
-  ): ProgressPropsType = {
+  def apply(): ProgressPropsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appearTransition)) __obj.updateDynamic("appearTransition")(appearTransition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(unfilled)) __obj.updateDynamic("unfilled")(unfilled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressPropsType]
   }
+  @scala.inline
+  implicit class ProgressPropsTypeOps[Self <: ProgressPropsType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppearTransition(value: Boolean): Self = this.set("appearTransition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppearTransition: Self = this.set("appearTransition", js.undefined)
+    @scala.inline
+    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercent: Self = this.set("percent", js.undefined)
+    @scala.inline
+    def setPosition(value: fixed | normal): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setUnfilled(value: Boolean): Self = this.set("unfilled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnfilled: Self = this.set("unfilled", js.undefined)
+  }
+  
 }
 

@@ -38,24 +38,52 @@ trait GetSecretValueResponse extends js.Object {
 
 object GetSecretValueResponse {
   @scala.inline
-  def apply(
-    ARN: SecretARNType = null,
-    CreatedDate: CreatedDateType = null,
-    Name: SecretNameType = null,
-    SecretBinary: SecretBinaryType = null,
-    SecretString: SecretStringType = null,
-    VersionId: SecretVersionIdType = null,
-    VersionStages: SecretVersionStagesType = null
-  ): GetSecretValueResponse = {
+  def apply(): GetSecretValueResponse = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (SecretBinary != null) __obj.updateDynamic("SecretBinary")(SecretBinary.asInstanceOf[js.Any])
-    if (SecretString != null) __obj.updateDynamic("SecretString")(SecretString.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
-    if (VersionStages != null) __obj.updateDynamic("VersionStages")(VersionStages.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSecretValueResponse]
   }
+  @scala.inline
+  implicit class GetSecretValueResponseOps[Self <: GetSecretValueResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: SecretARNType): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: CreatedDateType): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setName(value: SecretNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSecretBinary(value: SecretBinaryType): Self = this.set("SecretBinary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretBinary: Self = this.set("SecretBinary", js.undefined)
+    @scala.inline
+    def setSecretString(value: SecretStringType): Self = this.set("SecretString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretString: Self = this.set("SecretString", js.undefined)
+    @scala.inline
+    def setVersionId(value: SecretVersionIdType): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    @scala.inline
+    def setVersionStagesVarargs(value: SecretVersionStageType*): Self = this.set("VersionStages", js.Array(value :_*))
+    @scala.inline
+    def setVersionStages(value: SecretVersionStagesType): Self = this.set("VersionStages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionStages: Self = this.set("VersionStages", js.undefined)
+  }
+  
 }
 

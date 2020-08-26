@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActivitySnippet extends js.Object {
-  var channelId: js.UndefOr[String] = js.undefined
-  var channelTitle: js.UndefOr[String] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var groupId: js.UndefOr[String] = js.undefined
-  var publishedAt: js.UndefOr[String] = js.undefined
-  var thumbnails: js.UndefOr[ThumbnailDetails] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var channelId: js.UndefOr[String] = js.native
+  var channelTitle: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.native
+  var publishedAt: js.UndefOr[String] = js.native
+  var thumbnails: js.UndefOr[ThumbnailDetails] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object ActivitySnippet {
   @scala.inline
-  def apply(
-    channelId: String = null,
-    channelTitle: String = null,
-    description: String = null,
-    groupId: String = null,
-    publishedAt: String = null,
-    thumbnails: ThumbnailDetails = null,
-    title: String = null,
-    `type`: String = null
-  ): ActivitySnippet = {
+  def apply(): ActivitySnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (channelTitle != null) __obj.updateDynamic("channelTitle")(channelTitle.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitySnippet]
   }
+  @scala.inline
+  implicit class ActivitySnippetOps[Self <: ActivitySnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setChannelTitle(value: String): Self = this.set("channelTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelTitle: Self = this.set("channelTitle", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    @scala.inline
+    def setPublishedAt(value: String): Self = this.set("publishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishedAt: Self = this.set("publishedAt", js.undefined)
+    @scala.inline
+    def setThumbnails(value: ThumbnailDetails): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

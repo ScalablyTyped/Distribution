@@ -32,6 +32,7 @@ class ResourceBookshelvesVolumes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVolumes] = js.native
   def list(callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceBookshelvesVolumesList): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceBookshelvesVolumesList, callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
   def list(

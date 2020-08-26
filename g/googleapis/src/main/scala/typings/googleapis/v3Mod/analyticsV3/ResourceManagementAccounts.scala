@@ -28,6 +28,7 @@ class ResourceManagementAccounts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAccounts] = js.native
   def list(callback: BodyResponseCallback[SchemaAccounts]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccounts] = js.native
   def list(params: ParamsResourceManagementAccountsList): GaxiosPromise[SchemaAccounts] = js.native
   def list(params: ParamsResourceManagementAccountsList, callback: BodyResponseCallback[SchemaAccounts]): Unit = js.native
   def list(

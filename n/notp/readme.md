@@ -12,7 +12,7 @@ Node One Time Password library, supports HOTP, TOTP and works with Google Authen
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 37 |
-| # downloads        | 946007 |
+| # downloads        | 925675 |
 | # stars            | 5 |
 
 ## Links

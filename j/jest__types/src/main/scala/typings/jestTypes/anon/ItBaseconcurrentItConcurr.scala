@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @jest/types.@jest/types/build/Global.ItBase & {  concurrent ? :@jest/types.@jest/types/build/Global.ItConcurrentBase} */
+/* Inlined @jest/types.@jest/types/build/Global.ItBase & {  concurrent :@jest/types.@jest/types/build/Global.ItConcurrentBase | undefined} */
 @js.native
 trait ItBaseconcurrentItConcurr extends js.Object {
   var concurrent: js.UndefOr[ItConcurrentBase] = js.native

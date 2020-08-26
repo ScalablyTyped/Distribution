@@ -31,12 +31,34 @@ trait SchemaWordInfo extends js.Object {
 
 object SchemaWordInfo {
   @scala.inline
-  def apply(endTime: String = null, startTime: String = null, word: String = null): SchemaWordInfo = {
+  def apply(): SchemaWordInfo = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWordInfo]
   }
+  @scala.inline
+  implicit class SchemaWordInfoOps[Self <: SchemaWordInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setWord(value: String): Self = this.set("word", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWord: Self = this.set("word", js.undefined)
+  }
+  
 }
 

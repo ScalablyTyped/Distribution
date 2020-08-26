@@ -23,11 +23,32 @@ trait SchemaSiteTranscodeSetting extends js.Object {
 
 object SchemaSiteTranscodeSetting {
   @scala.inline
-  def apply(enabledVideoFormats: js.Array[Double] = null, kind: String = null): SchemaSiteTranscodeSetting = {
+  def apply(): SchemaSiteTranscodeSetting = {
     val __obj = js.Dynamic.literal()
-    if (enabledVideoFormats != null) __obj.updateDynamic("enabledVideoFormats")(enabledVideoFormats.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSiteTranscodeSetting]
   }
+  @scala.inline
+  implicit class SchemaSiteTranscodeSettingOps[Self <: SchemaSiteTranscodeSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabledVideoFormatsVarargs(value: Double*): Self = this.set("enabledVideoFormats", js.Array(value :_*))
+    @scala.inline
+    def setEnabledVideoFormats(value: js.Array[Double]): Self = this.set("enabledVideoFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledVideoFormats: Self = this.set("enabledVideoFormats", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

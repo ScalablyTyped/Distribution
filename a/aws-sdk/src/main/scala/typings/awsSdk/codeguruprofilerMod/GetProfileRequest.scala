@@ -34,21 +34,44 @@ trait GetProfileRequest extends js.Object {
 
 object GetProfileRequest {
   @scala.inline
-  def apply(
-    profilingGroupName: ProfilingGroupName,
-    accept: String = null,
-    endTime: Timestamp = null,
-    maxDepth: js.UndefOr[MaxDepth] = js.undefined,
-    period: Period = null,
-    startTime: Timestamp = null
-  ): GetProfileRequest = {
+  def apply(profilingGroupName: ProfilingGroupName): GetProfileRequest = {
     val __obj = js.Dynamic.literal(profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProfileRequest]
   }
+  @scala.inline
+  implicit class GetProfileRequestOps[Self <: GetProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccept(value: String): Self = this.set("accept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept: Self = this.set("accept", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setMaxDepth(value: MaxDepth): Self = this.set("maxDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDepth: Self = this.set("maxDepth", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

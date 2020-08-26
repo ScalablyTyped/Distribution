@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   * The {@link PackageFolder} service represents a single folder or directory within a {@link Package} . Instances of this service can only be constructed
   * by an implementation of the {@link Package} service and not via the service manager.
   */
+@js.native
 trait PackageFolder
   extends XNameContainer
      with XNamed

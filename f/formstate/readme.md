@@ -12,7 +12,7 @@ Painless and simple MobX form management
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 5 |
-| # downloads        | 81354 |
+| # downloads        | 83472 |
 | # stars            | 1 |
 
 ## Links

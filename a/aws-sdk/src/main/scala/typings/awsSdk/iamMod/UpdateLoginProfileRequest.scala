@@ -22,15 +22,32 @@ trait UpdateLoginProfileRequest extends js.Object {
 
 object UpdateLoginProfileRequest {
   @scala.inline
-  def apply(
-    UserName: userNameType,
-    Password: passwordType = null,
-    PasswordResetRequired: js.UndefOr[booleanObjectType] = js.undefined
-  ): UpdateLoginProfileRequest = {
+  def apply(UserName: userNameType): UpdateLoginProfileRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
-    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (!js.isUndefined(PasswordResetRequired)) __obj.updateDynamic("PasswordResetRequired")(PasswordResetRequired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLoginProfileRequest]
   }
+  @scala.inline
+  implicit class UpdateLoginProfileRequestOps[Self <: UpdateLoginProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPassword(value: passwordType): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("Password", js.undefined)
+    @scala.inline
+    def setPasswordResetRequired(value: booleanObjectType): Self = this.set("PasswordResetRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordResetRequired: Self = this.set("PasswordResetRequired", js.undefined)
+  }
+  
 }
 

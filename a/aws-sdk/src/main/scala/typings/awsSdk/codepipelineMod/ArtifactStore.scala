@@ -22,11 +22,31 @@ trait ArtifactStore extends js.Object {
 
 object ArtifactStore {
   @scala.inline
-  def apply(location: ArtifactStoreLocation, `type`: ArtifactStoreType, encryptionKey: EncryptionKey = null): ArtifactStore = {
+  def apply(location: ArtifactStoreLocation, `type`: ArtifactStoreType): ArtifactStore = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactStore]
   }
+  @scala.inline
+  implicit class ArtifactStoreOps[Self <: ArtifactStore] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: ArtifactStoreLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: ArtifactStoreType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncryptionKey(value: EncryptionKey): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+  }
+  
 }
 

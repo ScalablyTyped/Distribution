@@ -36,7 +36,7 @@ object persistentConnectionMod extends js.Object {
       authOverride_ : js.Object
     ) = this()
     var applicationId_ : js.Any = js.native
-    var authOverride_ : js.UndefOr[js.Any] = js.native
+    var authOverride_ : js.Any = js.native
     var authTokenProvider_ : js.Any = js.native
     var authToken_ : js.Any = js.native
     var cancelSentTransactions_ : js.Any = js.native

@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServicesData extends js.Object {
-  var name: String
-  var pcpu: Double
-  var pids: js.Array[Double]
-  var pmem: Double
-  var running: Boolean
-  var startmode: String
+  var name: String = js.native
+  var pcpu: Double = js.native
+  var pids: js.Array[Double] = js.native
+  var pmem: Double = js.native
+  var running: Boolean = js.native
+  var startmode: String = js.native
 }
 
 object ServicesData {
@@ -26,5 +27,32 @@ object ServicesData {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pcpu = pcpu.asInstanceOf[js.Any], pids = pids.asInstanceOf[js.Any], pmem = pmem.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], startmode = startmode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServicesData]
   }
+  @scala.inline
+  implicit class ServicesDataOps[Self <: ServicesData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPcpu(value: Double): Self = this.set("pcpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPidsVarargs(value: Double*): Self = this.set("pids", js.Array(value :_*))
+    @scala.inline
+    def setPids(value: js.Array[Double]): Self = this.set("pids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPmem(value: Double): Self = this.set("pmem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRunning(value: Boolean): Self = this.set("running", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartmode(value: String): Self = this.set("startmode", value.asInstanceOf[js.Any])
+  }
+  
 }
 

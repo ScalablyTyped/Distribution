@@ -46,26 +46,56 @@ trait SchemaWebPropertySummary extends js.Object {
 
 object SchemaWebPropertySummary {
   @scala.inline
-  def apply(
-    id: String = null,
-    internalWebPropertyId: String = null,
-    kind: String = null,
-    level: String = null,
-    name: String = null,
-    profiles: js.Array[SchemaProfileSummary] = null,
-    starred: js.UndefOr[Boolean] = js.undefined,
-    websiteUrl: String = null
-  ): SchemaWebPropertySummary = {
+  def apply(): SchemaWebPropertySummary = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (profiles != null) __obj.updateDynamic("profiles")(profiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWebPropertySummary]
   }
+  @scala.inline
+  implicit class SchemaWebPropertySummaryOps[Self <: SchemaWebPropertySummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInternalWebPropertyId(value: String): Self = this.set("internalWebPropertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalWebPropertyId: Self = this.set("internalWebPropertyId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProfilesVarargs(value: SchemaProfileSummary*): Self = this.set("profiles", js.Array(value :_*))
+    @scala.inline
+    def setProfiles(value: js.Array[SchemaProfileSummary]): Self = this.set("profiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfiles: Self = this.set("profiles", js.undefined)
+    @scala.inline
+    def setStarred(value: Boolean): Self = this.set("starred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStarred: Self = this.set("starred", js.undefined)
+    @scala.inline
+    def setWebsiteUrl(value: String): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
+  }
+  
 }
 

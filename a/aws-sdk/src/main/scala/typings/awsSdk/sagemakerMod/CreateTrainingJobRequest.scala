@@ -79,34 +79,89 @@ object CreateTrainingJobRequest {
     ResourceConfig: ResourceConfig,
     RoleArn: RoleArn,
     StoppingCondition: StoppingCondition,
-    TrainingJobName: TrainingJobName,
-    CheckpointConfig: CheckpointConfig = null,
-    DebugHookConfig: DebugHookConfig = null,
-    DebugRuleConfigurations: DebugRuleConfigurations = null,
-    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
-    EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined,
-    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
-    ExperimentConfig: ExperimentConfig = null,
-    HyperParameters: HyperParameters = null,
-    InputDataConfig: InputDataConfig = null,
-    Tags: TagList = null,
-    TensorBoardOutputConfig: TensorBoardOutputConfig = null,
-    VpcConfig: VpcConfig = null
+    TrainingJobName: TrainingJobName
   ): CreateTrainingJobRequest = {
     val __obj = js.Dynamic.literal(AlgorithmSpecification = AlgorithmSpecification.asInstanceOf[js.Any], OutputDataConfig = OutputDataConfig.asInstanceOf[js.Any], ResourceConfig = ResourceConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any], TrainingJobName = TrainingJobName.asInstanceOf[js.Any])
-    if (CheckpointConfig != null) __obj.updateDynamic("CheckpointConfig")(CheckpointConfig.asInstanceOf[js.Any])
-    if (DebugHookConfig != null) __obj.updateDynamic("DebugHookConfig")(DebugHookConfig.asInstanceOf[js.Any])
-    if (DebugRuleConfigurations != null) __obj.updateDynamic("DebugRuleConfigurations")(DebugRuleConfigurations.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.get.asInstanceOf[js.Any])
-    if (ExperimentConfig != null) __obj.updateDynamic("ExperimentConfig")(ExperimentConfig.asInstanceOf[js.Any])
-    if (HyperParameters != null) __obj.updateDynamic("HyperParameters")(HyperParameters.asInstanceOf[js.Any])
-    if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TensorBoardOutputConfig != null) __obj.updateDynamic("TensorBoardOutputConfig")(TensorBoardOutputConfig.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTrainingJobRequest]
   }
+  @scala.inline
+  implicit class CreateTrainingJobRequestOps[Self <: CreateTrainingJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithmSpecification(value: AlgorithmSpecification): Self = this.set("AlgorithmSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceConfig(value: ResourceConfig): Self = this.set("ResourceConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStoppingCondition(value: StoppingCondition): Self = this.set("StoppingCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingJobName(value: TrainingJobName): Self = this.set("TrainingJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCheckpointConfig(value: CheckpointConfig): Self = this.set("CheckpointConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckpointConfig: Self = this.set("CheckpointConfig", js.undefined)
+    @scala.inline
+    def setDebugHookConfig(value: DebugHookConfig): Self = this.set("DebugHookConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugHookConfig: Self = this.set("DebugHookConfig", js.undefined)
+    @scala.inline
+    def setDebugRuleConfigurationsVarargs(value: DebugRuleConfiguration*): Self = this.set("DebugRuleConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setDebugRuleConfigurations(value: DebugRuleConfigurations): Self = this.set("DebugRuleConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugRuleConfigurations: Self = this.set("DebugRuleConfigurations", js.undefined)
+    @scala.inline
+    def setEnableInterContainerTrafficEncryption(value: Boolean): Self = this.set("EnableInterContainerTrafficEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableInterContainerTrafficEncryption: Self = this.set("EnableInterContainerTrafficEncryption", js.undefined)
+    @scala.inline
+    def setEnableManagedSpotTraining(value: Boolean): Self = this.set("EnableManagedSpotTraining", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableManagedSpotTraining: Self = this.set("EnableManagedSpotTraining", js.undefined)
+    @scala.inline
+    def setEnableNetworkIsolation(value: Boolean): Self = this.set("EnableNetworkIsolation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableNetworkIsolation: Self = this.set("EnableNetworkIsolation", js.undefined)
+    @scala.inline
+    def setExperimentConfig(value: ExperimentConfig): Self = this.set("ExperimentConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentConfig: Self = this.set("ExperimentConfig", js.undefined)
+    @scala.inline
+    def setHyperParameters(value: HyperParameters): Self = this.set("HyperParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyperParameters: Self = this.set("HyperParameters", js.undefined)
+    @scala.inline
+    def setInputDataConfigVarargs(value: Channel*): Self = this.set("InputDataConfig", js.Array(value :_*))
+    @scala.inline
+    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDataConfig: Self = this.set("InputDataConfig", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTensorBoardOutputConfig(value: TensorBoardOutputConfig): Self = this.set("TensorBoardOutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTensorBoardOutputConfig: Self = this.set("TensorBoardOutputConfig", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object zip extends js.Object {
   def apply(): typings.extjs.Ext.Array = js.native
+  def apply(arr: js.UndefOr[scala.Nothing], zipper: js.Any): typings.extjs.Ext.Array = js.native
   def apply(arr: js.Any): typings.extjs.Ext.Array = js.native
   def apply(arr: js.Any, zipper: js.Any): typings.extjs.Ext.Array = js.native
 }

@@ -33,16 +33,36 @@ trait SchemaExecuteBatchDmlRequest extends js.Object {
 
 object SchemaExecuteBatchDmlRequest {
   @scala.inline
-  def apply(
-    seqno: String = null,
-    statements: js.Array[SchemaStatement] = null,
-    transaction: SchemaTransactionSelector = null
-  ): SchemaExecuteBatchDmlRequest = {
+  def apply(): SchemaExecuteBatchDmlRequest = {
     val __obj = js.Dynamic.literal()
-    if (seqno != null) __obj.updateDynamic("seqno")(seqno.asInstanceOf[js.Any])
-    if (statements != null) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExecuteBatchDmlRequest]
   }
+  @scala.inline
+  implicit class SchemaExecuteBatchDmlRequestOps[Self <: SchemaExecuteBatchDmlRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSeqno(value: String): Self = this.set("seqno", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeqno: Self = this.set("seqno", js.undefined)
+    @scala.inline
+    def setStatementsVarargs(value: SchemaStatement*): Self = this.set("statements", js.Array(value :_*))
+    @scala.inline
+    def setStatements(value: js.Array[SchemaStatement]): Self = this.set("statements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatements: Self = this.set("statements", js.undefined)
+    @scala.inline
+    def setTransaction(value: SchemaTransactionSelector): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransaction: Self = this.set("transaction", js.undefined)
+  }
+  
 }
 

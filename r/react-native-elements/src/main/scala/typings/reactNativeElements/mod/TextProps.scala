@@ -1,165 +1,107 @@
 package typings.reactNativeElements.mod
 
-import typings.reactNative.mod.AccessibilityActionEvent
-import typings.reactNative.mod.AccessibilityActionInfo
-import typings.reactNative.mod.AccessibilityRole
-import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
-import typings.reactNative.mod.AccessibilityValue
-import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
-import typings.reactNative.reactNativeStrings.`no-hide-descendants`
-import typings.reactNative.reactNativeStrings.assertive
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.balanced
-import typings.reactNative.reactNativeStrings.button
-import typings.reactNative.reactNativeStrings.clip
-import typings.reactNative.reactNativeStrings.head
-import typings.reactNative.reactNativeStrings.highQuality
-import typings.reactNative.reactNativeStrings.middle
-import typings.reactNative.reactNativeStrings.no
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.polite
-import typings.reactNative.reactNativeStrings.radiobutton_checked
-import typings.reactNative.reactNativeStrings.radiobutton_unchecked
-import typings.reactNative.reactNativeStrings.simple
-import typings.reactNative.reactNativeStrings.tail
-import typings.reactNative.reactNativeStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextProps
   extends typings.reactNative.mod.TextProps
      with _HeaderSubComponent {
   /**
     * font size 40
     */
-  var h1: js.UndefOr[Boolean] = js.undefined
+  var h1: js.UndefOr[Boolean] = js.native
   /**
     * Styling for when `h1` is set
     */
-  var h1Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var h1Style: js.UndefOr[StyleProp[TextStyle]] = js.native
   /**
     * font size 34
     */
-  var h2: js.UndefOr[Boolean] = js.undefined
+  var h2: js.UndefOr[Boolean] = js.native
   /**
     * Styling for when `h2` is set
     */
-  var h2Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var h2Style: js.UndefOr[StyleProp[TextStyle]] = js.native
   /**
     * font size 28
     */
-  var h3: js.UndefOr[Boolean] = js.undefined
+  var h3: js.UndefOr[Boolean] = js.native
   /**
     * Styling for when `h3` is set
     */
-  var h3Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var h3Style: js.UndefOr[StyleProp[TextStyle]] = js.native
   /**
     * font size 22
     */
-  var h4: js.UndefOr[Boolean] = js.undefined
+  var h4: js.UndefOr[Boolean] = js.native
   /**
     * Styling for when `h4` is set
     */
-  var h4Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var h4Style: js.UndefOr[StyleProp[TextStyle]] = js.native
 }
 
 object TextProps {
   @scala.inline
-  def apply(
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityValue: AccessibilityValue = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined,
-    allowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    ellipsizeMode: head | middle | tail | clip = null,
-    h1: js.UndefOr[Boolean] = js.undefined,
-    h1Style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    h2: js.UndefOr[Boolean] = js.undefined,
-    h2Style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    h3: js.UndefOr[Boolean] = js.undefined,
-    h3Style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    h4: js.UndefOr[Boolean] = js.undefined,
-    h4Style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    lineBreakMode: head | middle | tail | clip = null,
-    maxFontSizeMultiplier: js.UndefOr[Null | Double] = js.undefined,
-    minimumFontScale: js.UndefOr[Double] = js.undefined,
-    nativeID: String = null,
-    numberOfLines: js.UndefOr[Double] = js.undefined,
-    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
-    onAccessibilityEscape: () => Unit = null,
-    onAccessibilityTap: () => Unit = null,
-    onLayout: /* event */ LayoutChangeEvent => Unit = null,
-    onLongPress: /* event */ GestureResponderEvent => Unit = null,
-    onMagicTap: () => Unit = null,
-    onPress: /* event */ GestureResponderEvent => Unit = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    selectionColor: String = null,
-    style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    suppressHighlighting: js.UndefOr[Boolean] = js.undefined,
-    testID: String = null,
-    textBreakStrategy: simple | highQuality | balanced = null
-  ): TextProps = {
+  def apply(): TextProps = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.get.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.get.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(adjustsFontSizeToFit)) __obj.updateDynamic("adjustsFontSizeToFit")(adjustsFontSizeToFit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.get.asInstanceOf[js.Any])
-    if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(h1)) __obj.updateDynamic("h1")(h1.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(h1Style)) __obj.updateDynamic("h1Style")(h1Style.asInstanceOf[js.Any])
-    if (!js.isUndefined(h2)) __obj.updateDynamic("h2")(h2.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(h2Style)) __obj.updateDynamic("h2Style")(h2Style.asInstanceOf[js.Any])
-    if (!js.isUndefined(h3)) __obj.updateDynamic("h3")(h3.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(h3Style)) __obj.updateDynamic("h3Style")(h3Style.asInstanceOf[js.Any])
-    if (!js.isUndefined(h4)) __obj.updateDynamic("h4")(h4.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(h4Style)) __obj.updateDynamic("h4Style")(h4Style.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (lineBreakMode != null) __obj.updateDynamic("lineBreakMode")(lineBreakMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFontSizeMultiplier)) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumFontScale)) __obj.updateDynamic("minimumFontScale")(minimumFontScale.get.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfLines)) __obj.updateDynamic("numberOfLines")(numberOfLines.get.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
-    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHighlighting)) __obj.updateDynamic("suppressHighlighting")(suppressHighlighting.get.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProps]
   }
+  @scala.inline
+  implicit class TextPropsOps[Self <: TextProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setH1(value: Boolean): Self = this.set("h1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH1: Self = this.set("h1", js.undefined)
+    @scala.inline
+    def setH1Style(value: StyleProp[TextStyle]): Self = this.set("h1Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH1Style: Self = this.set("h1Style", js.undefined)
+    @scala.inline
+    def setH1StyleNull: Self = this.set("h1Style", null)
+    @scala.inline
+    def setH2(value: Boolean): Self = this.set("h2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH2: Self = this.set("h2", js.undefined)
+    @scala.inline
+    def setH2Style(value: StyleProp[TextStyle]): Self = this.set("h2Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH2Style: Self = this.set("h2Style", js.undefined)
+    @scala.inline
+    def setH2StyleNull: Self = this.set("h2Style", null)
+    @scala.inline
+    def setH3(value: Boolean): Self = this.set("h3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH3: Self = this.set("h3", js.undefined)
+    @scala.inline
+    def setH3Style(value: StyleProp[TextStyle]): Self = this.set("h3Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH3Style: Self = this.set("h3Style", js.undefined)
+    @scala.inline
+    def setH3StyleNull: Self = this.set("h3Style", null)
+    @scala.inline
+    def setH4(value: Boolean): Self = this.set("h4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH4: Self = this.set("h4", js.undefined)
+    @scala.inline
+    def setH4Style(value: StyleProp[TextStyle]): Self = this.set("h4Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH4Style: Self = this.set("h4Style", js.undefined)
+    @scala.inline
+    def setH4StyleNull: Self = this.set("h4Style", null)
+  }
+  
 }
 

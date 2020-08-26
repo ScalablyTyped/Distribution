@@ -8,11 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 class PropertyBag () extends js.Object {
   def this(value: js.Object) = this()
+  def this(
+    value: js.UndefOr[scala.Nothing],
+    createPropertyCallback: js.Function1[/* value */ js.UndefOr[js.Any], Unit]
+  ) = this()
   def this(value: js.Object, createPropertyCallback: js.Function1[/* value */ js.UndefOr[js.Any], Unit]) = this()
   val definitionChanged: Event[js.Array[_]] = js.native
   val isConstant: Boolean = js.native
   var propertyNames: js.Array[String] = js.native
   def addProperty(propertyName: String): Unit = js.native
+  def addProperty(
+    propertyName: String,
+    value: js.UndefOr[scala.Nothing],
+    createPropertyCallback: js.Function1[/* value */ js.Any, Unit]
+  ): Unit = js.native
   def addProperty(propertyName: String, value: js.Any): Unit = js.native
   def addProperty(
     propertyName: String,

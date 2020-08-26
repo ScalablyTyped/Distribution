@@ -67,6 +67,10 @@ trait Annyang extends js.Object {
     */
   def pause(): Unit = js.native
   def removeCallback(): Unit = js.native
+  def removeCallback(
+    event: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* userSaid */ String, /* commandText */ String, /* results */ js.Array[String], Unit]
+  ): Unit = js.native
   def removeCallback(event: Events): Unit = js.native
   def removeCallback(
     event: Events,

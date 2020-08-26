@@ -26,18 +26,38 @@ trait ProductionBranch extends js.Object {
 
 object ProductionBranch {
   @scala.inline
-  def apply(
-    branchName: BranchName = null,
-    lastDeployTime: LastDeployTime = null,
-    status: Status = null,
-    thumbnailUrl: ThumbnailUrl = null
-  ): ProductionBranch = {
+  def apply(): ProductionBranch = {
     val __obj = js.Dynamic.literal()
-    if (branchName != null) __obj.updateDynamic("branchName")(branchName.asInstanceOf[js.Any])
-    if (lastDeployTime != null) __obj.updateDynamic("lastDeployTime")(lastDeployTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductionBranch]
   }
+  @scala.inline
+  implicit class ProductionBranchOps[Self <: ProductionBranch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranchName: Self = this.set("branchName", js.undefined)
+    @scala.inline
+    def setLastDeployTime(value: LastDeployTime): Self = this.set("lastDeployTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastDeployTime: Self = this.set("lastDeployTime", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setThumbnailUrl(value: ThumbnailUrl): Self = this.set("thumbnailUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailUrl: Self = this.set("thumbnailUrl", js.undefined)
+  }
+  
 }
 

@@ -90,50 +90,106 @@ trait Alarm extends js.Object {
 
 object Alarm {
   @scala.inline
-  def apply(
-    arn: NonEmptyString = null,
-    comparisonOperator: ComparisonOperator = null,
-    contactProtocols: ContactProtocolsList = null,
-    createdAt: IsoDate = null,
-    datapointsToAlarm: js.UndefOr[integer] = js.undefined,
-    evaluationPeriods: js.UndefOr[integer] = js.undefined,
-    location: ResourceLocation = null,
-    metricName: MetricName = null,
-    monitoredResourceInfo: MonitoredResourceInfo = null,
-    name: ResourceName = null,
-    notificationEnabled: js.UndefOr[Boolean] = js.undefined,
-    notificationTriggers: NotificationTriggerList = null,
-    period: js.UndefOr[MetricPeriod] = js.undefined,
-    resourceType: ResourceType = null,
-    state: AlarmState = null,
-    statistic: MetricStatistic = null,
-    supportCode: String = null,
-    threshold: js.UndefOr[double] = js.undefined,
-    treatMissingData: TreatMissingData = null,
-    unit: MetricUnit = null
-  ): Alarm = {
+  def apply(): Alarm = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (comparisonOperator != null) __obj.updateDynamic("comparisonOperator")(comparisonOperator.asInstanceOf[js.Any])
-    if (contactProtocols != null) __obj.updateDynamic("contactProtocols")(contactProtocols.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(datapointsToAlarm)) __obj.updateDynamic("datapointsToAlarm")(datapointsToAlarm.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(evaluationPeriods)) __obj.updateDynamic("evaluationPeriods")(evaluationPeriods.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    if (monitoredResourceInfo != null) __obj.updateDynamic("monitoredResourceInfo")(monitoredResourceInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(notificationEnabled)) __obj.updateDynamic("notificationEnabled")(notificationEnabled.get.asInstanceOf[js.Any])
-    if (notificationTriggers != null) __obj.updateDynamic("notificationTriggers")(notificationTriggers.asInstanceOf[js.Any])
-    if (!js.isUndefined(period)) __obj.updateDynamic("period")(period.get.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (statistic != null) __obj.updateDynamic("statistic")(statistic.asInstanceOf[js.Any])
-    if (supportCode != null) __obj.updateDynamic("supportCode")(supportCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
-    if (treatMissingData != null) __obj.updateDynamic("treatMissingData")(treatMissingData.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alarm]
   }
+  @scala.inline
+  implicit class AlarmOps[Self <: Alarm] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setComparisonOperator(value: ComparisonOperator): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparisonOperator: Self = this.set("comparisonOperator", js.undefined)
+    @scala.inline
+    def setContactProtocolsVarargs(value: ContactProtocol*): Self = this.set("contactProtocols", js.Array(value :_*))
+    @scala.inline
+    def setContactProtocols(value: ContactProtocolsList): Self = this.set("contactProtocols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactProtocols: Self = this.set("contactProtocols", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDatapointsToAlarm(value: integer): Self = this.set("datapointsToAlarm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatapointsToAlarm: Self = this.set("datapointsToAlarm", js.undefined)
+    @scala.inline
+    def setEvaluationPeriods(value: integer): Self = this.set("evaluationPeriods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationPeriods: Self = this.set("evaluationPeriods", js.undefined)
+    @scala.inline
+    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    @scala.inline
+    def setMonitoredResourceInfo(value: MonitoredResourceInfo): Self = this.set("monitoredResourceInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoredResourceInfo: Self = this.set("monitoredResourceInfo", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotificationEnabled(value: Boolean): Self = this.set("notificationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationEnabled: Self = this.set("notificationEnabled", js.undefined)
+    @scala.inline
+    def setNotificationTriggersVarargs(value: AlarmState*): Self = this.set("notificationTriggers", js.Array(value :_*))
+    @scala.inline
+    def setNotificationTriggers(value: NotificationTriggerList): Self = this.set("notificationTriggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationTriggers: Self = this.set("notificationTriggers", js.undefined)
+    @scala.inline
+    def setPeriod(value: MetricPeriod): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setState(value: AlarmState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStatistic(value: MetricStatistic): Self = this.set("statistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistic: Self = this.set("statistic", js.undefined)
+    @scala.inline
+    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
+    @scala.inline
+    def setThreshold(value: double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    @scala.inline
+    def setTreatMissingData(value: TreatMissingData): Self = this.set("treatMissingData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreatMissingData: Self = this.set("treatMissingData", js.undefined)
+    @scala.inline
+    def setUnit(value: MetricUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
+  
 }
 

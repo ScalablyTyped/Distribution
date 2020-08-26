@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OauthAuthorizationsGetGrantEndpoint extends js.Object {
-  var grant_id: Double
+  var grant_id: Double = js.native
 }
 
 object OauthAuthorizationsGetGrantEndpoint {
@@ -14,5 +15,20 @@ object OauthAuthorizationsGetGrantEndpoint {
     val __obj = js.Dynamic.literal(grant_id = grant_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthorizationsGetGrantEndpoint]
   }
+  @scala.inline
+  implicit class OauthAuthorizationsGetGrantEndpointOps[Self <: OauthAuthorizationsGetGrantEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGrant_id(value: Double): Self = this.set("grant_id", value.asInstanceOf[js.Any])
+  }
+  
 }
 

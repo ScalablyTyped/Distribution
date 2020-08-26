@@ -9,6 +9,13 @@ import scala.scalajs.js.annotation._
 object request extends js.Object {
   def apply(method: NeedleHttpVerbs, url: String, data: BodyData): ReadableStream = js.native
   def apply(method: NeedleHttpVerbs, url: String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
+  def apply(
+    method: NeedleHttpVerbs,
+    url: String,
+    data: BodyData,
+    options: js.UndefOr[scala.Nothing],
+    callback: NeedleCallback
+  ): ReadableStream = js.native
   def apply(method: NeedleHttpVerbs, url: String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
   def apply(
     method: NeedleHttpVerbs,

@@ -65,14 +65,6 @@ class WriteTree () extends js.Object {
     * @return {?Node}
     */
   def calcCompleteChild(treePath: Path, childKey: String, existingServerSnap: CacheNode): Node | Null = js.native
-  def calcCompleteEventCache(treePath: Path): Node | Null = js.native
-  def calcCompleteEventCache(treePath: Path, completeServerCache: Null, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
-  def calcCompleteEventCache(
-    treePath: Path,
-    completeServerCache: Null,
-    writeIdsToExclude: js.Array[Double],
-    includeHiddenWrites: Boolean
-  ): Node | Null = js.native
   /**
     * Given optional, underlying server data, and an optional set of constraints (exclude some sets, include hidden
     * writes), attempt to calculate a complete snapshot for the given path
@@ -83,7 +75,27 @@ class WriteTree () extends js.Object {
     * @param {boolean=} includeHiddenWrites Defaults to false, whether or not to layer on writes with visible set to false
     * @return {?Node}
     */
+  def calcCompleteEventCache(treePath: Path): Node | Null = js.native
+  def calcCompleteEventCache(
+    treePath: Path,
+    completeServerCache: Null,
+    writeIdsToExclude: js.UndefOr[scala.Nothing],
+    includeHiddenWrites: Boolean
+  ): Node | Null = js.native
+  def calcCompleteEventCache(treePath: Path, completeServerCache: Null, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
+  def calcCompleteEventCache(
+    treePath: Path,
+    completeServerCache: Null,
+    writeIdsToExclude: js.Array[Double],
+    includeHiddenWrites: Boolean
+  ): Node | Null = js.native
   def calcCompleteEventCache(treePath: Path, completeServerCache: Node): Node | Null = js.native
+  def calcCompleteEventCache(
+    treePath: Path,
+    completeServerCache: Node,
+    writeIdsToExclude: js.UndefOr[scala.Nothing],
+    includeHiddenWrites: Boolean
+  ): Node | Null = js.native
   def calcCompleteEventCache(treePath: Path, completeServerCache: Node, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
   def calcCompleteEventCache(
     treePath: Path,
@@ -91,7 +103,6 @@ class WriteTree () extends js.Object {
     writeIdsToExclude: js.Array[Double],
     includeHiddenWrites: Boolean
   ): Node | Null = js.native
-  def calcCompleteEventChildren(treePath: Path): Node = js.native
   /**
     * With optional, underlying server data, attempt to return a children node of children that we have complete data for.
     * Used when creating new views, to pre-fill their complete event children snapshot.
@@ -100,10 +111,8 @@ class WriteTree () extends js.Object {
     * @param {?ChildrenNode} completeServerChildren
     * @return {!ChildrenNode}
     */
+  def calcCompleteEventChildren(treePath: Path): Node = js.native
   def calcCompleteEventChildren(treePath: Path, completeServerChildren: ChildrenNode): Node = js.native
-  def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path): Node | Null = js.native
-  def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path, existingEventSnap: Null, existingServerSnap: Node): Node | Null = js.native
-  def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path, existingEventSnap: Node): Node | Null = js.native
   /**
     * Given that the underlying server data has updated, determine what, if anything, needs to be
     * applied to the event cache.
@@ -124,6 +133,9 @@ class WriteTree () extends js.Object {
     * @param {?Node} existingServerSnap
     * @return {?Node}
     */
+  def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path): Node | Null = js.native
+  def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path, existingEventSnap: Null, existingServerSnap: Node): Node | Null = js.native
+  def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path, existingEventSnap: Node): Node | Null = js.native
   def calcEventCacheAfterServerOverwrite(treePath: Path, childPath: Path, existingEventSnap: Node, existingServerSnap: Node): Node | Null = js.native
   def calcIndexedSlice(
     treePath: Path,

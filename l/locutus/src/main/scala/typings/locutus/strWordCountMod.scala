@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object strWordCountMod extends js.Object {
   def apply(): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], format: js.UndefOr[scala.Nothing], charlist: js.Any): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], format: js.Any): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], format: js.Any, charlist: js.Any): js.Any = js.native
   def apply(str: js.Any): js.Any = js.native
+  def apply(str: js.Any, format: js.UndefOr[scala.Nothing], charlist: js.Any): js.Any = js.native
   def apply(str: js.Any, format: js.Any): js.Any = js.native
   def apply(str: js.Any, format: js.Any, charlist: js.Any): js.Any = js.native
 }

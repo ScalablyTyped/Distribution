@@ -84,10 +84,26 @@ trait SchemaHistogramQuery extends js.Object {
 
 object SchemaHistogramQuery {
   @scala.inline
-  def apply(histogramQuery: String = null): SchemaHistogramQuery = {
+  def apply(): SchemaHistogramQuery = {
     val __obj = js.Dynamic.literal()
-    if (histogramQuery != null) __obj.updateDynamic("histogramQuery")(histogramQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHistogramQuery]
   }
+  @scala.inline
+  implicit class SchemaHistogramQueryOps[Self <: SchemaHistogramQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHistogramQuery(value: String): Self = this.set("histogramQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogramQuery: Self = this.set("histogramQuery", js.undefined)
+  }
+  
 }
 

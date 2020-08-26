@@ -22,11 +22,30 @@ trait SchemaVideoContent extends js.Object {
 
 object SchemaVideoContent {
   @scala.inline
-  def apply(videoUrl: String = null, videoVastXml: String = null): SchemaVideoContent = {
+  def apply(): SchemaVideoContent = {
     val __obj = js.Dynamic.literal()
-    if (videoUrl != null) __obj.updateDynamic("videoUrl")(videoUrl.asInstanceOf[js.Any])
-    if (videoVastXml != null) __obj.updateDynamic("videoVastXml")(videoVastXml.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoContent]
   }
+  @scala.inline
+  implicit class SchemaVideoContentOps[Self <: SchemaVideoContent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVideoUrl(value: String): Self = this.set("videoUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoUrl: Self = this.set("videoUrl", js.undefined)
+    @scala.inline
+    def setVideoVastXml(value: String): Self = this.set("videoVastXml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoVastXml: Self = this.set("videoVastXml", js.undefined)
+  }
+  
 }
 

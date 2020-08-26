@@ -14,10 +14,26 @@ trait GetOnPremisesInstanceOutput extends js.Object {
 
 object GetOnPremisesInstanceOutput {
   @scala.inline
-  def apply(instanceInfo: InstanceInfo = null): GetOnPremisesInstanceOutput = {
+  def apply(): GetOnPremisesInstanceOutput = {
     val __obj = js.Dynamic.literal()
-    if (instanceInfo != null) __obj.updateDynamic("instanceInfo")(instanceInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOnPremisesInstanceOutput]
   }
+  @scala.inline
+  implicit class GetOnPremisesInstanceOutputOps[Self <: GetOnPremisesInstanceOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceInfo(value: InstanceInfo): Self = this.set("instanceInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceInfo: Self = this.set("instanceInfo", js.undefined)
+  }
+  
 }
 

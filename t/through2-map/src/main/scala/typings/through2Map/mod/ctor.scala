@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object ctor extends js.Object {
   def apply(): Through2Constructor = js.native
   def apply(fn: MapCallback): Through2Constructor = js.native
+  def apply(options: js.UndefOr[scala.Nothing], fn: MapCallback): Through2Constructor = js.native
   def apply(options: Through2MapOptions): Through2Constructor = js.native
   def apply(options: Through2MapOptions, fn: MapCallback): Through2Constructor = js.native
 }

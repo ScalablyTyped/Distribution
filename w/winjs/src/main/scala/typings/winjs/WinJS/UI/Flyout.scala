@@ -101,7 +101,11 @@ trait Flyout extends js.Object {
     * @param alignment For "top" or "bottom" placement, the alignment of the Flyout to the anchor's edge: the string literal "center", "left", or "right".
     **/
   def show(): Unit = js.native
+  def show(anchor: js.UndefOr[scala.Nothing], placement: js.UndefOr[scala.Nothing], alignment: String): Unit = js.native
+  def show(anchor: js.UndefOr[scala.Nothing], placement: String): Unit = js.native
+  def show(anchor: js.UndefOr[scala.Nothing], placement: String, alignment: String): Unit = js.native
   def show(anchor: HTMLElement): Unit = js.native
+  def show(anchor: HTMLElement, placement: js.UndefOr[scala.Nothing], alignment: String): Unit = js.native
   def show(anchor: HTMLElement, placement: String): Unit = js.native
   def show(anchor: HTMLElement, placement: String, alignment: String): Unit = js.native
   /**

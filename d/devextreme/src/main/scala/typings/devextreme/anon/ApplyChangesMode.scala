@@ -1,49 +1,82 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeNumbers.`1`
-import typings.devextreme.devextremeNumbers.`2`
 import typings.devextreme.devextremeStrings.instantly
 import typings.devextreme.devextremeStrings.onDemand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplyChangesMode extends js.Object {
-  var allowSearch: js.UndefOr[Boolean] = js.undefined
-  var applyChangesMode: js.UndefOr[instantly | onDemand] = js.undefined
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var layout: js.UndefOr[typings.devextreme.devextremeNumbers.`0` | `1` | `2`] = js.undefined
-  var searchTimeout: js.UndefOr[Double] = js.undefined
-  var texts: js.UndefOr[AllFields] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var allowSearch: js.UndefOr[Boolean] = js.native
+  var applyChangesMode: js.UndefOr[instantly | onDemand] = js.native
+  var enabled: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var layout: js.UndefOr[
+    typings.devextreme.devextremeNumbers.`0` | typings.devextreme.devextremeNumbers.`1` | typings.devextreme.devextremeNumbers.`2`
+  ] = js.native
+  var searchTimeout: js.UndefOr[Double] = js.native
+  var texts: js.UndefOr[AllFields] = js.native
+  var title: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object ApplyChangesMode {
   @scala.inline
-  def apply(
-    allowSearch: js.UndefOr[Boolean] = js.undefined,
-    applyChangesMode: instantly | onDemand = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    layout: typings.devextreme.devextremeNumbers.`0` | `1` | `2` = null,
-    searchTimeout: js.UndefOr[Double] = js.undefined,
-    texts: AllFields = null,
-    title: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): ApplyChangesMode = {
+  def apply(): ApplyChangesMode = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSearch)) __obj.updateDynamic("allowSearch")(allowSearch.get.asInstanceOf[js.Any])
-    if (applyChangesMode != null) __obj.updateDynamic("applyChangesMode")(applyChangesMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchTimeout)) __obj.updateDynamic("searchTimeout")(searchTimeout.get.asInstanceOf[js.Any])
-    if (texts != null) __obj.updateDynamic("texts")(texts.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyChangesMode]
   }
+  @scala.inline
+  implicit class ApplyChangesModeOps[Self <: ApplyChangesMode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowSearch(value: Boolean): Self = this.set("allowSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSearch: Self = this.set("allowSearch", js.undefined)
+    @scala.inline
+    def setApplyChangesMode(value: instantly | onDemand): Self = this.set("applyChangesMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyChangesMode: Self = this.set("applyChangesMode", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLayout(
+      value: typings.devextreme.devextremeNumbers.`0` | typings.devextreme.devextremeNumbers.`1` | typings.devextreme.devextremeNumbers.`2`
+    ): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setSearchTimeout(value: Double): Self = this.set("searchTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchTimeout: Self = this.set("searchTimeout", js.undefined)
+    @scala.inline
+    def setTexts(value: AllFields): Self = this.set("texts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTexts: Self = this.set("texts", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

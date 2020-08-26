@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "is-fullwidth-code-point"
-version := "3.0.0-d0390f"
-scalaVersion := "2.13.2"
+version := "3.0.0-c3b057"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

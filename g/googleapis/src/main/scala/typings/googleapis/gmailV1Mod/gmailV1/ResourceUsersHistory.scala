@@ -33,6 +33,7 @@ class ResourceUsersHistory protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListHistoryResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListHistoryResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListHistoryResponse] = js.native
   def list(params: ParamsResourceUsersHistoryList): GaxiosPromise[SchemaListHistoryResponse] = js.native
   def list(params: ParamsResourceUsersHistoryList, callback: BodyResponseCallback[SchemaListHistoryResponse]): Unit = js.native
   def list(

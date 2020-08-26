@@ -10,30 +10,57 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<jss.jss.JssOptions> */
+@js.native
 trait PartialJssOptions extends js.Object {
-  var Renderer: js.UndefOr[Instantiable] = js.undefined
-  var createGenerateId: js.UndefOr[CreateGenerateId_] = js.undefined
-  var id: js.UndefOr[CreateGenerateIdOptions] = js.undefined
-  var insertionPoint: js.UndefOr[InsertionPoint] = js.undefined
-  var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
+  var Renderer: js.UndefOr[Instantiable | Null] = js.native
+  var createGenerateId: js.UndefOr[CreateGenerateId_] = js.native
+  var id: js.UndefOr[CreateGenerateIdOptions] = js.native
+  var insertionPoint: js.UndefOr[InsertionPoint] = js.native
+  var plugins: js.UndefOr[js.Array[Plugin]] = js.native
 }
 
 object PartialJssOptions {
   @scala.inline
-  def apply(
-    Renderer: Instantiable = null,
-    createGenerateId: /* options */ js.UndefOr[CreateGenerateIdOptions] => GenerateId = null,
-    id: CreateGenerateIdOptions = null,
-    insertionPoint: InsertionPoint = null,
-    plugins: js.Array[Plugin] = null
-  ): PartialJssOptions = {
+  def apply(): PartialJssOptions = {
     val __obj = js.Dynamic.literal()
-    if (Renderer != null) __obj.updateDynamic("Renderer")(Renderer.asInstanceOf[js.Any])
-    if (createGenerateId != null) __obj.updateDynamic("createGenerateId")(js.Any.fromFunction1(createGenerateId))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (insertionPoint != null) __obj.updateDynamic("insertionPoint")(insertionPoint.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialJssOptions]
   }
+  @scala.inline
+  implicit class PartialJssOptionsOps[Self <: PartialJssOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRenderer(value: Instantiable): Self = this.set("Renderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderer: Self = this.set("Renderer", js.undefined)
+    @scala.inline
+    def setRendererNull: Self = this.set("Renderer", null)
+    @scala.inline
+    def setCreateGenerateId(value: /* options */ js.UndefOr[CreateGenerateIdOptions] => GenerateId): Self = this.set("createGenerateId", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCreateGenerateId: Self = this.set("createGenerateId", js.undefined)
+    @scala.inline
+    def setId(value: CreateGenerateIdOptions): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInsertionPoint(value: InsertionPoint): Self = this.set("insertionPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertionPoint: Self = this.set("insertionPoint", js.undefined)
+    @scala.inline
+    def setPluginsVarargs(value: Plugin*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: js.Array[Plugin]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+  }
+  
 }
 

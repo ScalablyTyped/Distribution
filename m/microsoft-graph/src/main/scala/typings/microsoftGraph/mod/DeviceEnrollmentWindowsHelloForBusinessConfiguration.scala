@@ -4,79 +4,100 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollmentConfiguration {
   // Not yet documented. Possible values are: notConfigured, enabled, disabled.
-  var enhancedBiometricsState: js.UndefOr[Enablement] = js.undefined
+  var enhancedBiometricsState: js.UndefOr[Enablement] = js.native
   // Not yet documented
-  var pinExpirationInDays: js.UndefOr[Double] = js.undefined
+  var pinExpirationInDays: js.UndefOr[Double] = js.native
   // Not yet documented. Possible values are: allowed, required, disallowed.
-  var pinLowercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
+  var pinLowercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.native
   // Not yet documented
-  var pinMaximumLength: js.UndefOr[Double] = js.undefined
+  var pinMaximumLength: js.UndefOr[Double] = js.native
   // Not yet documented
-  var pinMinimumLength: js.UndefOr[Double] = js.undefined
+  var pinMinimumLength: js.UndefOr[Double] = js.native
   // Not yet documented
-  var pinPreviousBlockCount: js.UndefOr[Double] = js.undefined
+  var pinPreviousBlockCount: js.UndefOr[Double] = js.native
   // Not yet documented. Possible values are: allowed, required, disallowed.
-  var pinSpecialCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
+  var pinSpecialCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.native
   // Not yet documented. Possible values are: allowed, required, disallowed.
-  var pinUppercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
+  var pinUppercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.native
   // Not yet documented
-  var remotePassportEnabled: js.UndefOr[Boolean] = js.undefined
+  var remotePassportEnabled: js.UndefOr[Boolean] = js.native
   // Not yet documented
-  var securityDeviceRequired: js.UndefOr[Boolean] = js.undefined
+  var securityDeviceRequired: js.UndefOr[Boolean] = js.native
   // Not yet documented. Possible values are: notConfigured, enabled, disabled.
-  var state: js.UndefOr[Enablement] = js.undefined
+  var state: js.UndefOr[Enablement] = js.native
   // Not yet documented
-  var unlockWithBiometricsEnabled: js.UndefOr[Boolean] = js.undefined
+  var unlockWithBiometricsEnabled: js.UndefOr[Boolean] = js.native
 }
 
 object DeviceEnrollmentWindowsHelloForBusinessConfiguration {
   @scala.inline
-  def apply(
-    assignments: js.Array[EnrollmentConfigurationAssignment] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    displayName: String = null,
-    enhancedBiometricsState: Enablement = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    pinExpirationInDays: js.UndefOr[Double] = js.undefined,
-    pinLowercaseCharactersUsage: WindowsHelloForBusinessPinUsage = null,
-    pinMaximumLength: js.UndefOr[Double] = js.undefined,
-    pinMinimumLength: js.UndefOr[Double] = js.undefined,
-    pinPreviousBlockCount: js.UndefOr[Double] = js.undefined,
-    pinSpecialCharactersUsage: WindowsHelloForBusinessPinUsage = null,
-    pinUppercaseCharactersUsage: WindowsHelloForBusinessPinUsage = null,
-    priority: js.UndefOr[Double] = js.undefined,
-    remotePassportEnabled: js.UndefOr[Boolean] = js.undefined,
-    securityDeviceRequired: js.UndefOr[Boolean] = js.undefined,
-    state: Enablement = null,
-    unlockWithBiometricsEnabled: js.UndefOr[Boolean] = js.undefined,
-    version: js.UndefOr[Double] = js.undefined
-  ): DeviceEnrollmentWindowsHelloForBusinessConfiguration = {
+  def apply(): DeviceEnrollmentWindowsHelloForBusinessConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (enhancedBiometricsState != null) __obj.updateDynamic("enhancedBiometricsState")(enhancedBiometricsState.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinExpirationInDays)) __obj.updateDynamic("pinExpirationInDays")(pinExpirationInDays.get.asInstanceOf[js.Any])
-    if (pinLowercaseCharactersUsage != null) __obj.updateDynamic("pinLowercaseCharactersUsage")(pinLowercaseCharactersUsage.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinMaximumLength)) __obj.updateDynamic("pinMaximumLength")(pinMaximumLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinMinimumLength)) __obj.updateDynamic("pinMinimumLength")(pinMinimumLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinPreviousBlockCount)) __obj.updateDynamic("pinPreviousBlockCount")(pinPreviousBlockCount.get.asInstanceOf[js.Any])
-    if (pinSpecialCharactersUsage != null) __obj.updateDynamic("pinSpecialCharactersUsage")(pinSpecialCharactersUsage.asInstanceOf[js.Any])
-    if (pinUppercaseCharactersUsage != null) __obj.updateDynamic("pinUppercaseCharactersUsage")(pinUppercaseCharactersUsage.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(remotePassportEnabled)) __obj.updateDynamic("remotePassportEnabled")(remotePassportEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityDeviceRequired)) __obj.updateDynamic("securityDeviceRequired")(securityDeviceRequired.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(unlockWithBiometricsEnabled)) __obj.updateDynamic("unlockWithBiometricsEnabled")(unlockWithBiometricsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceEnrollmentWindowsHelloForBusinessConfiguration]
   }
+  @scala.inline
+  implicit class DeviceEnrollmentWindowsHelloForBusinessConfigurationOps[Self <: DeviceEnrollmentWindowsHelloForBusinessConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnhancedBiometricsState(value: Enablement): Self = this.set("enhancedBiometricsState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedBiometricsState: Self = this.set("enhancedBiometricsState", js.undefined)
+    @scala.inline
+    def setPinExpirationInDays(value: Double): Self = this.set("pinExpirationInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinExpirationInDays: Self = this.set("pinExpirationInDays", js.undefined)
+    @scala.inline
+    def setPinLowercaseCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = this.set("pinLowercaseCharactersUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinLowercaseCharactersUsage: Self = this.set("pinLowercaseCharactersUsage", js.undefined)
+    @scala.inline
+    def setPinMaximumLength(value: Double): Self = this.set("pinMaximumLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinMaximumLength: Self = this.set("pinMaximumLength", js.undefined)
+    @scala.inline
+    def setPinMinimumLength(value: Double): Self = this.set("pinMinimumLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinMinimumLength: Self = this.set("pinMinimumLength", js.undefined)
+    @scala.inline
+    def setPinPreviousBlockCount(value: Double): Self = this.set("pinPreviousBlockCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinPreviousBlockCount: Self = this.set("pinPreviousBlockCount", js.undefined)
+    @scala.inline
+    def setPinSpecialCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = this.set("pinSpecialCharactersUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinSpecialCharactersUsage: Self = this.set("pinSpecialCharactersUsage", js.undefined)
+    @scala.inline
+    def setPinUppercaseCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = this.set("pinUppercaseCharactersUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinUppercaseCharactersUsage: Self = this.set("pinUppercaseCharactersUsage", js.undefined)
+    @scala.inline
+    def setRemotePassportEnabled(value: Boolean): Self = this.set("remotePassportEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemotePassportEnabled: Self = this.set("remotePassportEnabled", js.undefined)
+    @scala.inline
+    def setSecurityDeviceRequired(value: Boolean): Self = this.set("securityDeviceRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityDeviceRequired: Self = this.set("securityDeviceRequired", js.undefined)
+    @scala.inline
+    def setState(value: Enablement): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setUnlockWithBiometricsEnabled(value: Boolean): Self = this.set("unlockWithBiometricsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnlockWithBiometricsEnabled: Self = this.set("unlockWithBiometricsEnabled", js.undefined)
+  }
+  
 }
 

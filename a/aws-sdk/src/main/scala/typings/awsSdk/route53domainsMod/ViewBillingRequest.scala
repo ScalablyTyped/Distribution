@@ -26,18 +26,38 @@ trait ViewBillingRequest extends js.Object {
 
 object ViewBillingRequest {
   @scala.inline
-  def apply(
-    End: Timestamp = null,
-    Marker: PageMarker = null,
-    MaxItems: js.UndefOr[PageMaxItems] = js.undefined,
-    Start: Timestamp = null
-  ): ViewBillingRequest = {
+  def apply(): ViewBillingRequest = {
     val __obj = js.Dynamic.literal()
-    if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
-    if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewBillingRequest]
   }
+  @scala.inline
+  implicit class ViewBillingRequestOps[Self <: ViewBillingRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnd(value: Timestamp): Self = this.set("End", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("End", js.undefined)
+    @scala.inline
+    def setMarker(value: PageMarker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    @scala.inline
+    def setStart(value: Timestamp): Self = this.set("Start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("Start", js.undefined)
+  }
+  
 }
 

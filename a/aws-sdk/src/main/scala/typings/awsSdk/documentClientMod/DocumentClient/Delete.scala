@@ -36,20 +36,42 @@ trait Delete extends js.Object {
 
 object Delete {
   @scala.inline
-  def apply(
-    Key: Key,
-    TableName: TableName,
-    ConditionExpression: ConditionExpression = null,
-    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
-    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
-    ReturnValuesOnConditionCheckFailure: ReturnValuesOnConditionCheckFailure = null
-  ): Delete = {
+  def apply(Key: Key, TableName: TableName): Delete = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression.asInstanceOf[js.Any])
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
-    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues.asInstanceOf[js.Any])
-    if (ReturnValuesOnConditionCheckFailure != null) __obj.updateDynamic("ReturnValuesOnConditionCheckFailure")(ReturnValuesOnConditionCheckFailure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delete]
   }
+  @scala.inline
+  implicit class DeleteOps[Self <: Delete] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: Key): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConditionExpression(value: ConditionExpression): Self = this.set("ConditionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionExpression: Self = this.set("ConditionExpression", js.undefined)
+    @scala.inline
+    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = this.set("ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeNames: Self = this.set("ExpressionAttributeNames", js.undefined)
+    @scala.inline
+    def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = this.set("ExpressionAttributeValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeValues: Self = this.set("ExpressionAttributeValues", js.undefined)
+    @scala.inline
+    def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = this.set("ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnValuesOnConditionCheckFailure: Self = this.set("ReturnValuesOnConditionCheckFailure", js.undefined)
+  }
+  
 }
 

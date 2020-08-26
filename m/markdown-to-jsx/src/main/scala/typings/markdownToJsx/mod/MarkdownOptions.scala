@@ -11,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MarkdownOptions extends js.Object {
   /** Custom React.createElement behavior. */
   var createElement: js.UndefOr[
@@ -20,33 +21,57 @@ trait MarkdownOptions extends js.Object {
       /* repeated */ ReactNode, 
       ReactElement
     ]
-  ] = js.undefined
+  ] = js.native
   /** Force all input strings to use block layout. */
-  var forceBlock: js.UndefOr[Boolean] = js.undefined
+  var forceBlock: js.UndefOr[Boolean] = js.native
   /** Force all input strings to use inline layout. */
-  var forceInline: js.UndefOr[Boolean] = js.undefined
+  var forceInline: js.UndefOr[Boolean] = js.native
   /** Override representation of any HTML tag or custom component. */
-  var overrides: js.UndefOr[Dictkey] = js.undefined
+  var overrides: js.UndefOr[Dictkey] = js.native
   /** Custom function to generate an HTML id from headings. */
-  var slugify: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
+  var slugify: js.UndefOr[js.Function1[/* text */ String, String]] = js.native
 }
 
 object MarkdownOptions {
   @scala.inline
-  def apply(
-    createElement: (/* type */ SFC[js.Object] | (ComponentClass[js.Object, ComponentState]) | String, /* props */ js.UndefOr[(Attributes with js.Object) | Null], /* repeated */ ReactNode) => ReactElement = null,
-    forceBlock: js.UndefOr[Boolean] = js.undefined,
-    forceInline: js.UndefOr[Boolean] = js.undefined,
-    overrides: Dictkey = null,
-    slugify: /* text */ String => String = null
-  ): MarkdownOptions = {
+  def apply(): MarkdownOptions = {
     val __obj = js.Dynamic.literal()
-    if (createElement != null) __obj.updateDynamic("createElement")(js.Any.fromFunction3(createElement))
-    if (!js.isUndefined(forceBlock)) __obj.updateDynamic("forceBlock")(forceBlock.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceInline)) __obj.updateDynamic("forceInline")(forceInline.get.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (slugify != null) __obj.updateDynamic("slugify")(js.Any.fromFunction1(slugify))
     __obj.asInstanceOf[MarkdownOptions]
   }
+  @scala.inline
+  implicit class MarkdownOptionsOps[Self <: MarkdownOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateElement(
+      value: (/* type */ SFC[js.Object] | (ComponentClass[js.Object, ComponentState]) | String, /* props */ js.UndefOr[(Attributes with js.Object) | Null], /* repeated */ ReactNode) => ReactElement
+    ): Self = this.set("createElement", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCreateElement: Self = this.set("createElement", js.undefined)
+    @scala.inline
+    def setForceBlock(value: Boolean): Self = this.set("forceBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceBlock: Self = this.set("forceBlock", js.undefined)
+    @scala.inline
+    def setForceInline(value: Boolean): Self = this.set("forceInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceInline: Self = this.set("forceInline", js.undefined)
+    @scala.inline
+    def setOverrides(value: Dictkey): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setSlugify(value: /* text */ String => String): Self = this.set("slugify", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlugify: Self = this.set("slugify", js.undefined)
+  }
+  
 }
 

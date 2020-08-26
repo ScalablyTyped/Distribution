@@ -29,18 +29,42 @@ trait SchemaListDataPointChangesResponse extends js.Object {
 
 object SchemaListDataPointChangesResponse {
   @scala.inline
-  def apply(
-    dataSourceId: String = null,
-    deletedDataPoint: js.Array[SchemaDataPoint] = null,
-    insertedDataPoint: js.Array[SchemaDataPoint] = null,
-    nextPageToken: String = null
-  ): SchemaListDataPointChangesResponse = {
+  def apply(): SchemaListDataPointChangesResponse = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
-    if (deletedDataPoint != null) __obj.updateDynamic("deletedDataPoint")(deletedDataPoint.asInstanceOf[js.Any])
-    if (insertedDataPoint != null) __obj.updateDynamic("insertedDataPoint")(insertedDataPoint.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListDataPointChangesResponse]
   }
+  @scala.inline
+  implicit class SchemaListDataPointChangesResponseOps[Self <: SchemaListDataPointChangesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    @scala.inline
+    def setDeletedDataPointVarargs(value: SchemaDataPoint*): Self = this.set("deletedDataPoint", js.Array(value :_*))
+    @scala.inline
+    def setDeletedDataPoint(value: js.Array[SchemaDataPoint]): Self = this.set("deletedDataPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletedDataPoint: Self = this.set("deletedDataPoint", js.undefined)
+    @scala.inline
+    def setInsertedDataPointVarargs(value: SchemaDataPoint*): Self = this.set("insertedDataPoint", js.Array(value :_*))
+    @scala.inline
+    def setInsertedDataPoint(value: js.Array[SchemaDataPoint]): Self = this.set("insertedDataPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertedDataPoint: Self = this.set("insertedDataPoint", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

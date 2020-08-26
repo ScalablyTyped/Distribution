@@ -39,22 +39,48 @@ trait SchemaGoogleDatastoreAdminV1Index extends js.Object {
 
 object SchemaGoogleDatastoreAdminV1Index {
   @scala.inline
-  def apply(
-    ancestor: String = null,
-    indexId: String = null,
-    kind: String = null,
-    projectId: String = null,
-    properties: js.Array[SchemaGoogleDatastoreAdminV1IndexedProperty] = null,
-    state: String = null
-  ): SchemaGoogleDatastoreAdminV1Index = {
+  def apply(): SchemaGoogleDatastoreAdminV1Index = {
     val __obj = js.Dynamic.literal()
-    if (ancestor != null) __obj.updateDynamic("ancestor")(ancestor.asInstanceOf[js.Any])
-    if (indexId != null) __obj.updateDynamic("indexId")(indexId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1Index]
   }
+  @scala.inline
+  implicit class SchemaGoogleDatastoreAdminV1IndexOps[Self <: SchemaGoogleDatastoreAdminV1Index] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAncestor(value: String): Self = this.set("ancestor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAncestor: Self = this.set("ancestor", js.undefined)
+    @scala.inline
+    def setIndexId(value: String): Self = this.set("indexId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexId: Self = this.set("indexId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setPropertiesVarargs(value: SchemaGoogleDatastoreAdminV1IndexedProperty*): Self = this.set("properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(value: js.Array[SchemaGoogleDatastoreAdminV1IndexedProperty]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

@@ -34,6 +34,7 @@ class ResourceActivities protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaActivity] = js.native
   def insert(callback: BodyResponseCallback[SchemaActivity]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaActivity] = js.native
   def insert(params: ParamsResourceActivitiesInsert): GaxiosPromise[SchemaActivity] = js.native
   def insert(params: ParamsResourceActivitiesInsert, callback: BodyResponseCallback[SchemaActivity]): Unit = js.native
   def insert(
@@ -73,6 +74,7 @@ class ResourceActivities protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaActivityListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaActivityListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaActivityListResponse] = js.native
   def list(params: ParamsResourceActivitiesList): GaxiosPromise[SchemaActivityListResponse] = js.native
   def list(params: ParamsResourceActivitiesList, callback: BodyResponseCallback[SchemaActivityListResponse]): Unit = js.native
   def list(

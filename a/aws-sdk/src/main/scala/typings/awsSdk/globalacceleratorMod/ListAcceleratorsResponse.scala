@@ -18,11 +18,32 @@ trait ListAcceleratorsResponse extends js.Object {
 
 object ListAcceleratorsResponse {
   @scala.inline
-  def apply(Accelerators: Accelerators = null, NextToken: GenericString = null): ListAcceleratorsResponse = {
+  def apply(): ListAcceleratorsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Accelerators != null) __obj.updateDynamic("Accelerators")(Accelerators.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAcceleratorsResponse]
   }
+  @scala.inline
+  implicit class ListAcceleratorsResponseOps[Self <: ListAcceleratorsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorsVarargs(value: Accelerator*): Self = this.set("Accelerators", js.Array(value :_*))
+    @scala.inline
+    def setAccelerators(value: Accelerators): Self = this.set("Accelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerators: Self = this.set("Accelerators", js.undefined)
+    @scala.inline
+    def setNextToken(value: GenericString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

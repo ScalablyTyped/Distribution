@@ -12,7 +12,7 @@ Produces a compact module exporting JSON-schema validation functions compiled by
 | Keywords           | Ajv, JSON-Schema |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 1446925 |
+| # downloads        | 1532156 |
 | # stars            | 0 |
 
 ## Links

@@ -164,7 +164,23 @@ trait PlusIo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def requestFileSystem(): Unit = js.native
+  def requestFileSystem(
+    `type`: js.UndefOr[scala.Nothing],
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def requestFileSystem(`type`: js.UndefOr[scala.Nothing], succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit]): Unit = js.native
+  def requestFileSystem(
+    `type`: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def requestFileSystem(`type`: Double): Unit = js.native
+  def requestFileSystem(
+    `type`: Double,
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def requestFileSystem(`type`: Double, succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit]): Unit = js.native
   def requestFileSystem(
     `type`: Double,
@@ -180,7 +196,19 @@ trait PlusIo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def resolveLocalFileSystemURL(): Unit = js.native
+  def resolveLocalFileSystemURL(
+    url: js.UndefOr[scala.Nothing],
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def resolveLocalFileSystemURL(url: js.UndefOr[scala.Nothing], succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
+  def resolveLocalFileSystemURL(
+    url: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def resolveLocalFileSystemURL(url: String): Unit = js.native
+  def resolveLocalFileSystemURL(url: String, succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def resolveLocalFileSystemURL(url: String, succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def resolveLocalFileSystemURL(
     url: String,

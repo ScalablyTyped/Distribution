@@ -42,26 +42,56 @@ trait IdentityProviderType extends js.Object {
 
 object IdentityProviderType {
   @scala.inline
-  def apply(
-    AttributeMapping: AttributeMappingType = null,
-    CreationDate: DateType = null,
-    IdpIdentifiers: IdpIdentifiersListType = null,
-    LastModifiedDate: DateType = null,
-    ProviderDetails: ProviderDetailsType = null,
-    ProviderName: ProviderNameType = null,
-    ProviderType: IdentityProviderTypeType = null,
-    UserPoolId: UserPoolIdType = null
-  ): IdentityProviderType = {
+  def apply(): IdentityProviderType = {
     val __obj = js.Dynamic.literal()
-    if (AttributeMapping != null) __obj.updateDynamic("AttributeMapping")(AttributeMapping.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (IdpIdentifiers != null) __obj.updateDynamic("IdpIdentifiers")(IdpIdentifiers.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (ProviderDetails != null) __obj.updateDynamic("ProviderDetails")(ProviderDetails.asInstanceOf[js.Any])
-    if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName.asInstanceOf[js.Any])
-    if (ProviderType != null) __obj.updateDynamic("ProviderType")(ProviderType.asInstanceOf[js.Any])
-    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityProviderType]
   }
+  @scala.inline
+  implicit class IdentityProviderTypeOps[Self <: IdentityProviderType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeMapping(value: AttributeMappingType): Self = this.set("AttributeMapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeMapping: Self = this.set("AttributeMapping", js.undefined)
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setIdpIdentifiersVarargs(value: IdpIdentifierType*): Self = this.set("IdpIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setIdpIdentifiers(value: IdpIdentifiersListType): Self = this.set("IdpIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdpIdentifiers: Self = this.set("IdpIdentifiers", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateType): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setProviderDetails(value: ProviderDetailsType): Self = this.set("ProviderDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderDetails: Self = this.set("ProviderDetails", js.undefined)
+    @scala.inline
+    def setProviderName(value: ProviderNameType): Self = this.set("ProviderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderName: Self = this.set("ProviderName", js.undefined)
+    @scala.inline
+    def setProviderType(value: IdentityProviderTypeType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderType: Self = this.set("ProviderType", js.undefined)
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+  }
+  
 }
 

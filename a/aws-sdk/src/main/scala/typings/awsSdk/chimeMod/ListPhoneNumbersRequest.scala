@@ -34,22 +34,46 @@ trait ListPhoneNumbersRequest extends js.Object {
 
 object ListPhoneNumbersRequest {
   @scala.inline
-  def apply(
-    FilterName: PhoneNumberAssociationName = null,
-    FilterValue: String = null,
-    MaxResults: js.UndefOr[ResultMax] = js.undefined,
-    NextToken: String = null,
-    ProductType: PhoneNumberProductType = null,
-    Status: PhoneNumberStatus = null
-  ): ListPhoneNumbersRequest = {
+  def apply(): ListPhoneNumbersRequest = {
     val __obj = js.Dynamic.literal()
-    if (FilterName != null) __obj.updateDynamic("FilterName")(FilterName.asInstanceOf[js.Any])
-    if (FilterValue != null) __obj.updateDynamic("FilterValue")(FilterValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ProductType != null) __obj.updateDynamic("ProductType")(ProductType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPhoneNumbersRequest]
   }
+  @scala.inline
+  implicit class ListPhoneNumbersRequestOps[Self <: ListPhoneNumbersRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterName(value: PhoneNumberAssociationName): Self = this.set("FilterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterName: Self = this.set("FilterName", js.undefined)
+    @scala.inline
+    def setFilterValue(value: String): Self = this.set("FilterValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterValue: Self = this.set("FilterValue", js.undefined)
+    @scala.inline
+    def setMaxResults(value: ResultMax): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setProductType(value: PhoneNumberProductType): Self = this.set("ProductType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductType: Self = this.set("ProductType", js.undefined)
+    @scala.inline
+    def setStatus(value: PhoneNumberStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

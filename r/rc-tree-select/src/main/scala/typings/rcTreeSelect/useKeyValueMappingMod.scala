@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tree-select/lib/hooks/useKeyValueMapping", JSImport.Namespace)
+@JSImport("rc-tree-select/es/hooks/useKeyValueMapping", JSImport.Namespace)
 @js.native
 object useKeyValueMappingMod extends js.Object {
   trait _SkipType extends js.Object

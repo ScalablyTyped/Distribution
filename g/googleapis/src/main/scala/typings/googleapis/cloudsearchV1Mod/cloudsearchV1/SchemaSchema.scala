@@ -24,11 +24,34 @@ trait SchemaSchema extends js.Object {
 
 object SchemaSchema {
   @scala.inline
-  def apply(objectDefinitions: js.Array[SchemaObjectDefinition] = null, operationIds: js.Array[String] = null): SchemaSchema = {
+  def apply(): SchemaSchema = {
     val __obj = js.Dynamic.literal()
-    if (objectDefinitions != null) __obj.updateDynamic("objectDefinitions")(objectDefinitions.asInstanceOf[js.Any])
-    if (operationIds != null) __obj.updateDynamic("operationIds")(operationIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSchema]
   }
+  @scala.inline
+  implicit class SchemaSchemaOps[Self <: SchemaSchema] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setObjectDefinitionsVarargs(value: SchemaObjectDefinition*): Self = this.set("objectDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setObjectDefinitions(value: js.Array[SchemaObjectDefinition]): Self = this.set("objectDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectDefinitions: Self = this.set("objectDefinitions", js.undefined)
+    @scala.inline
+    def setOperationIdsVarargs(value: String*): Self = this.set("operationIds", js.Array(value :_*))
+    @scala.inline
+    def setOperationIds(value: js.Array[String]): Self = this.set("operationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationIds: Self = this.set("operationIds", js.undefined)
+  }
+  
 }
 

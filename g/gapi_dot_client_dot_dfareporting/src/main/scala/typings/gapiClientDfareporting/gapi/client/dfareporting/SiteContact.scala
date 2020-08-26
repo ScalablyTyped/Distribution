@@ -4,47 +4,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SiteContact extends js.Object {
   /** Address of this site contact. */
-  var address: js.UndefOr[String] = js.undefined
+  var address: js.UndefOr[String] = js.native
   /** Site contact type. */
-  var contactType: js.UndefOr[String] = js.undefined
+  var contactType: js.UndefOr[String] = js.native
   /** Email address of this site contact. This is a required field. */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String] = js.native
   /** First name of this site contact. */
-  var firstName: js.UndefOr[String] = js.undefined
+  var firstName: js.UndefOr[String] = js.native
   /** ID of this site contact. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** Last name of this site contact. */
-  var lastName: js.UndefOr[String] = js.undefined
+  var lastName: js.UndefOr[String] = js.native
   /** Primary phone number of this site contact. */
-  var phone: js.UndefOr[String] = js.undefined
+  var phone: js.UndefOr[String] = js.native
   /** Title or designation of this site contact. */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
 }
 
 object SiteContact {
   @scala.inline
-  def apply(
-    address: String = null,
-    contactType: String = null,
-    email: String = null,
-    firstName: String = null,
-    id: String = null,
-    lastName: String = null,
-    phone: String = null,
-    title: String = null
-  ): SiteContact = {
+  def apply(): SiteContact = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (contactType != null) __obj.updateDynamic("contactType")(contactType.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteContact]
   }
+  @scala.inline
+  implicit class SiteContactOps[Self <: SiteContact] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setContactType(value: String): Self = this.set("contactType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactType: Self = this.set("contactType", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstName: Self = this.set("firstName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLastName(value: String): Self = this.set("lastName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastName: Self = this.set("lastName", js.undefined)
+    @scala.inline
+    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhone: Self = this.set("phone", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

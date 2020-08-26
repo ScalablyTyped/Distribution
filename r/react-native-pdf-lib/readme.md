@@ -12,7 +12,7 @@ A react native library for handling generating PDFs
 | Keywords           | react-native |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 8327 |
+| # downloads        | 8410 |
 | # stars            | 0 |
 
 ## Links

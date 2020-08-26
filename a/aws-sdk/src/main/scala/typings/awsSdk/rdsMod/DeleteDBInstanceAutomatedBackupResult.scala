@@ -11,10 +11,26 @@ trait DeleteDBInstanceAutomatedBackupResult extends js.Object {
 
 object DeleteDBInstanceAutomatedBackupResult {
   @scala.inline
-  def apply(DBInstanceAutomatedBackup: DBInstanceAutomatedBackup = null): DeleteDBInstanceAutomatedBackupResult = {
+  def apply(): DeleteDBInstanceAutomatedBackupResult = {
     val __obj = js.Dynamic.literal()
-    if (DBInstanceAutomatedBackup != null) __obj.updateDynamic("DBInstanceAutomatedBackup")(DBInstanceAutomatedBackup.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBInstanceAutomatedBackupResult]
   }
+  @scala.inline
+  implicit class DeleteDBInstanceAutomatedBackupResultOps[Self <: DeleteDBInstanceAutomatedBackupResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBInstanceAutomatedBackup(value: DBInstanceAutomatedBackup): Self = this.set("DBInstanceAutomatedBackup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceAutomatedBackup: Self = this.set("DBInstanceAutomatedBackup", js.undefined)
+  }
+  
 }
 

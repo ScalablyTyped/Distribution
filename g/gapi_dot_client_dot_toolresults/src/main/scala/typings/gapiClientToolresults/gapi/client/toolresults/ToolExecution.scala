@@ -4,20 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ToolExecution extends js.Object {
   /**
     * The full tokenized command line including the program name (equivalent to argv in a C program).
     *
     * - In response: present if set by create request - In create request: optional - In update request: never set
     */
-  var commandLineArguments: js.UndefOr[js.Array[String]] = js.undefined
+  var commandLineArguments: js.UndefOr[js.Array[String]] = js.native
   /**
     * Tool execution exit code. This field will be set once the tool has exited.
     *
     * - In response: present if set by create/update request - In create request: optional - In update request: optional, a FAILED_PRECONDITION error will be
     * returned if an exit_code is already set.
     */
-  var exitCode: js.UndefOr[ToolExitCode] = js.undefined
+  var exitCode: js.UndefOr[ToolExitCode] = js.native
   /**
     * References to any plain text logs output the tool execution.
     *
@@ -28,7 +29,7 @@ trait ToolExecution extends js.Object {
     * - In response: present if set by create/update request - In create request: optional - In update request: optional, any value provided will be appended
     * to the existing list
     */
-  var toolLogs: js.UndefOr[js.Array[FileReference]] = js.undefined
+  var toolLogs: js.UndefOr[js.Array[FileReference]] = js.native
   /**
     * References to opaque files of any format output by the tool execution.
     *
@@ -37,23 +38,49 @@ trait ToolExecution extends js.Object {
     * - In response: present if set by create/update request - In create request: optional - In update request: optional, any value provided will be appended
     * to the existing list
     */
-  var toolOutputs: js.UndefOr[js.Array[ToolOutputReference]] = js.undefined
+  var toolOutputs: js.UndefOr[js.Array[ToolOutputReference]] = js.native
 }
 
 object ToolExecution {
   @scala.inline
-  def apply(
-    commandLineArguments: js.Array[String] = null,
-    exitCode: ToolExitCode = null,
-    toolLogs: js.Array[FileReference] = null,
-    toolOutputs: js.Array[ToolOutputReference] = null
-  ): ToolExecution = {
+  def apply(): ToolExecution = {
     val __obj = js.Dynamic.literal()
-    if (commandLineArguments != null) __obj.updateDynamic("commandLineArguments")(commandLineArguments.asInstanceOf[js.Any])
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
-    if (toolLogs != null) __obj.updateDynamic("toolLogs")(toolLogs.asInstanceOf[js.Any])
-    if (toolOutputs != null) __obj.updateDynamic("toolOutputs")(toolOutputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolExecution]
   }
+  @scala.inline
+  implicit class ToolExecutionOps[Self <: ToolExecution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommandLineArgumentsVarargs(value: String*): Self = this.set("commandLineArguments", js.Array(value :_*))
+    @scala.inline
+    def setCommandLineArguments(value: js.Array[String]): Self = this.set("commandLineArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommandLineArguments: Self = this.set("commandLineArguments", js.undefined)
+    @scala.inline
+    def setExitCode(value: ToolExitCode): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    @scala.inline
+    def setToolLogsVarargs(value: FileReference*): Self = this.set("toolLogs", js.Array(value :_*))
+    @scala.inline
+    def setToolLogs(value: js.Array[FileReference]): Self = this.set("toolLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolLogs: Self = this.set("toolLogs", js.undefined)
+    @scala.inline
+    def setToolOutputsVarargs(value: ToolOutputReference*): Self = this.set("toolOutputs", js.Array(value :_*))
+    @scala.inline
+    def setToolOutputs(value: js.Array[ToolOutputReference]): Self = this.set("toolOutputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolOutputs: Self = this.set("toolOutputs", js.undefined)
+  }
+  
 }
 

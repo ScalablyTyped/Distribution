@@ -26,18 +26,40 @@ trait SecretVersionsListEntry extends js.Object {
 
 object SecretVersionsListEntry {
   @scala.inline
-  def apply(
-    CreatedDate: CreatedDateType = null,
-    LastAccessedDate: LastAccessedDateType = null,
-    VersionId: SecretVersionIdType = null,
-    VersionStages: SecretVersionStagesType = null
-  ): SecretVersionsListEntry = {
+  def apply(): SecretVersionsListEntry = {
     val __obj = js.Dynamic.literal()
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (LastAccessedDate != null) __obj.updateDynamic("LastAccessedDate")(LastAccessedDate.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
-    if (VersionStages != null) __obj.updateDynamic("VersionStages")(VersionStages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecretVersionsListEntry]
   }
+  @scala.inline
+  implicit class SecretVersionsListEntryOps[Self <: SecretVersionsListEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedDate(value: CreatedDateType): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setLastAccessedDate(value: LastAccessedDateType): Self = this.set("LastAccessedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccessedDate: Self = this.set("LastAccessedDate", js.undefined)
+    @scala.inline
+    def setVersionId(value: SecretVersionIdType): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    @scala.inline
+    def setVersionStagesVarargs(value: SecretVersionStageType*): Self = this.set("VersionStages", js.Array(value :_*))
+    @scala.inline
+    def setVersionStages(value: SecretVersionStagesType): Self = this.set("VersionStages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionStages: Self = this.set("VersionStages", js.undefined)
+  }
+  
 }
 

@@ -18,20 +18,5 @@ class ASPxClientHtmlEditorValidationEventArgs protected ()
     * @param errorText A string value representing the error description. This value is assigned to the ASPxClientHtmlEditorValidationEventArgs.errorText property.
     */
   def this(html: String, isValid: Boolean, errorText: Boolean) = this()
-  /**
-    * Gets or sets the error text to be displayed within the editor's error frame if the editor's validation fails.
-    */
-  /* CompleteClass */
-  override var errorText: String = js.native
-  /**
-    * Gets or sets the HTML markup that is the ASPxHtmlEditor's content.
-    */
-  /* CompleteClass */
-  override var html: String = js.native
-  /**
-    * Gets or sets a value specifying whether the validated value is valid.
-    */
-  /* CompleteClass */
-  override var isValid: Boolean = js.native
 }
 

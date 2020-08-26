@@ -26,16 +26,38 @@ trait ChangeTagsForResourceRequest extends js.Object {
 
 object ChangeTagsForResourceRequest {
   @scala.inline
-  def apply(
-    ResourceId: TagResourceId,
-    ResourceType: TagResourceType,
-    AddTags: TagList = null,
-    RemoveTagKeys: TagKeyList = null
-  ): ChangeTagsForResourceRequest = {
+  def apply(ResourceId: TagResourceId, ResourceType: TagResourceType): ChangeTagsForResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
-    if (AddTags != null) __obj.updateDynamic("AddTags")(AddTags.asInstanceOf[js.Any])
-    if (RemoveTagKeys != null) __obj.updateDynamic("RemoveTagKeys")(RemoveTagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeTagsForResourceRequest]
   }
+  @scala.inline
+  implicit class ChangeTagsForResourceRequestOps[Self <: ChangeTagsForResourceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceId(value: TagResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceType(value: TagResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddTagsVarargs(value: Tag*): Self = this.set("AddTags", js.Array(value :_*))
+    @scala.inline
+    def setAddTags(value: TagList): Self = this.set("AddTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddTags: Self = this.set("AddTags", js.undefined)
+    @scala.inline
+    def setRemoveTagKeysVarargs(value: TagKey*): Self = this.set("RemoveTagKeys", js.Array(value :_*))
+    @scala.inline
+    def setRemoveTagKeys(value: TagKeyList): Self = this.set("RemoveTagKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveTagKeys: Self = this.set("RemoveTagKeys", js.undefined)
+  }
+  
 }
 

@@ -56,24 +56,24 @@ class NoGeneralization protected () extends GeneralizationBase {
     * In version 8.2.0: added public
     */
   def hasChangedBy: Boolean = js.native
-  def hasChangedBy(newValue: Boolean): js.Any = js.native
+  def hasChangedBy_=(newValue: Boolean): Unit = js.native
   /**
     * In version 8.2.0: added public
     */
   def hasChangedDate: Boolean = js.native
-  def hasChangedDate(newValue: Boolean): js.Any = js.native
+  def hasChangedDate_=(newValue: Boolean): Unit = js.native
   /**
     * In version 8.2.0: added public
     */
   def hasCreatedDate: Boolean = js.native
-  def hasCreatedDate(newValue: Boolean): js.Any = js.native
+  def hasCreatedDate_=(newValue: Boolean): Unit = js.native
   /**
     * In version 8.2.0: added public
     */
   def hasOwner: Boolean = js.native
-  def hasOwner(newValue: Boolean): js.Any = js.native
+  def hasOwner_=(newValue: Boolean): Unit = js.native
   def persistable: Boolean = js.native
-  def persistable(newValue: Boolean): js.Any = js.native
+  def persistable_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

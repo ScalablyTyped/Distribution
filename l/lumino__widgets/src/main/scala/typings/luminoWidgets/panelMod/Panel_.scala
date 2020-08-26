@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/panel", "Panel")
+@JSImport("@lumino/widgets/types/panel", "Panel")
 @js.native
 /**
   * Construct a new panel.

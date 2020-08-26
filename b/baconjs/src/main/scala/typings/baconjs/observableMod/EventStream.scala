@@ -15,6 +15,12 @@ import scala.scalajs.js.annotation._
 class EventStream[V] protected () extends Observable[V] {
   def this(desc: Desc, subscribe: Subscribe[V]) = this()
   def this(desc: Desc, subscribe: Subscribe[V], handler: EventSink[V]) = this()
+  def this(
+    desc: Desc,
+    subscribe: Subscribe[V],
+    handler: js.UndefOr[scala.Nothing],
+    options: EventStreamOptions
+  ) = this()
   def this(desc: Desc, subscribe: Subscribe[V], handler: EventSink[V], options: EventStreamOptions) = this()
   /** @hidden */
   var _isEventStream: Boolean = js.native
@@ -55,6 +61,7 @@ class EventStream[V] protected () extends Observable[V] {
     * @param {number} count  maximum buffer size
     */
   def bufferWithTimeOrCount(): EventStream[js.Array[V]] = js.native
+  def bufferWithTimeOrCount(delay: js.UndefOr[scala.Nothing], count: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTimeOrCount(delay: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTimeOrCount(delay: Double, count: Double): EventStream[js.Array[V]] = js.native
   def bufferWithTimeOrCount(delay: DelayFunction): EventStream[js.Array[V]] = js.native

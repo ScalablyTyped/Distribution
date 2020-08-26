@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/domutils/lib/clipboard", JSImport.Namespace)
+@JSImport("@lumino/domutils/types/clipboard", JSImport.Namespace)
 @js.native
 object clipboardMod extends js.Object {
   @js.native

@@ -18,11 +18,30 @@ trait UserSummary extends js.Object {
 
 object UserSummary {
   @scala.inline
-  def apply(PendingChange: ChangeType = null, Username: string = null): UserSummary = {
+  def apply(): UserSummary = {
     val __obj = js.Dynamic.literal()
-    if (PendingChange != null) __obj.updateDynamic("PendingChange")(PendingChange.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserSummary]
   }
+  @scala.inline
+  implicit class UserSummaryOps[Self <: UserSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPendingChange(value: ChangeType): Self = this.set("PendingChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingChange: Self = this.set("PendingChange", js.undefined)
+    @scala.inline
+    def setUsername(value: string): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

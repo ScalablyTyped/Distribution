@@ -75,9 +75,9 @@ trait SnapshotState extends js.Object {
     */
   val storageType: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Specifies the storage type associated with DB snapshot.
     */
@@ -86,50 +86,102 @@ trait SnapshotState extends js.Object {
 
 object SnapshotState {
   @scala.inline
-  def apply(
-    allocatedStorage: Input[Double] = null,
-    availabilityZone: Input[String] = null,
-    dbInstanceIdentifier: Input[String] = null,
-    dbSnapshotArn: Input[String] = null,
-    dbSnapshotIdentifier: Input[String] = null,
-    encrypted: Input[Boolean] = null,
-    engine: Input[String] = null,
-    engineVersion: Input[String] = null,
-    iops: Input[Double] = null,
-    kmsKeyId: Input[String] = null,
-    licenseModel: Input[String] = null,
-    optionGroupName: Input[String] = null,
-    port: Input[Double] = null,
-    snapshotType: Input[String] = null,
-    sourceDbSnapshotIdentifier: Input[String] = null,
-    sourceRegion: Input[String] = null,
-    status: Input[String] = null,
-    storageType: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcId: Input[String] = null
-  ): SnapshotState = {
+  def apply(): SnapshotState = {
     val __obj = js.Dynamic.literal()
-    if (allocatedStorage != null) __obj.updateDynamic("allocatedStorage")(allocatedStorage.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (dbInstanceIdentifier != null) __obj.updateDynamic("dbInstanceIdentifier")(dbInstanceIdentifier.asInstanceOf[js.Any])
-    if (dbSnapshotArn != null) __obj.updateDynamic("dbSnapshotArn")(dbSnapshotArn.asInstanceOf[js.Any])
-    if (dbSnapshotIdentifier != null) __obj.updateDynamic("dbSnapshotIdentifier")(dbSnapshotIdentifier.asInstanceOf[js.Any])
-    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (licenseModel != null) __obj.updateDynamic("licenseModel")(licenseModel.asInstanceOf[js.Any])
-    if (optionGroupName != null) __obj.updateDynamic("optionGroupName")(optionGroupName.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (snapshotType != null) __obj.updateDynamic("snapshotType")(snapshotType.asInstanceOf[js.Any])
-    if (sourceDbSnapshotIdentifier != null) __obj.updateDynamic("sourceDbSnapshotIdentifier")(sourceDbSnapshotIdentifier.asInstanceOf[js.Any])
-    if (sourceRegion != null) __obj.updateDynamic("sourceRegion")(sourceRegion.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (storageType != null) __obj.updateDynamic("storageType")(storageType.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotState]
   }
+  @scala.inline
+  implicit class SnapshotStateOps[Self <: SnapshotState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocatedStorage(value: Input[Double]): Self = this.set("allocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedStorage: Self = this.set("allocatedStorage", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setDbInstanceIdentifier(value: Input[String]): Self = this.set("dbInstanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbInstanceIdentifier: Self = this.set("dbInstanceIdentifier", js.undefined)
+    @scala.inline
+    def setDbSnapshotArn(value: Input[String]): Self = this.set("dbSnapshotArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbSnapshotArn: Self = this.set("dbSnapshotArn", js.undefined)
+    @scala.inline
+    def setDbSnapshotIdentifier(value: Input[String]): Self = this.set("dbSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbSnapshotIdentifier: Self = this.set("dbSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Input[Boolean]): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    @scala.inline
+    def setEngine(value: Input[String]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: Input[String]): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setIops(value: Input[Double]): Self = this.set("iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("iops", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setLicenseModel(value: Input[String]): Self = this.set("licenseModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseModel: Self = this.set("licenseModel", js.undefined)
+    @scala.inline
+    def setOptionGroupName(value: Input[String]): Self = this.set("optionGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupName: Self = this.set("optionGroupName", js.undefined)
+    @scala.inline
+    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setSnapshotType(value: Input[String]): Self = this.set("snapshotType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotType: Self = this.set("snapshotType", js.undefined)
+    @scala.inline
+    def setSourceDbSnapshotIdentifier(value: Input[String]): Self = this.set("sourceDbSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDbSnapshotIdentifier: Self = this.set("sourceDbSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setSourceRegion(value: Input[String]): Self = this.set("sourceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRegion: Self = this.set("sourceRegion", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStorageType(value: Input[String]): Self = this.set("storageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("storageType", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

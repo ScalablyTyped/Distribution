@@ -1,44 +1,46 @@
 package typings.qrcode.mod
 
-import typings.qrcode.anon.Dark
 import typings.qrcode.anon.DeflateLevel
 import typings.qrcode.qrcodeStrings.png
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QRCodeToFileStreamOptions extends QRCodeRenderersOptions {
-  var rendererOpts: js.UndefOr[DeflateLevel] = js.undefined
+  var rendererOpts: js.UndefOr[DeflateLevel] = js.native
   /**
     * Output format. Only png supported for file stream
     */
-  var `type`: js.UndefOr[png] = js.undefined
+  var `type`: js.UndefOr[png] = js.native
 }
 
 object QRCodeToFileStreamOptions {
   @scala.inline
-  def apply(
-    color: Dark = null,
-    errorCorrectionLevel: QRCodeErrorCorrectionLevel = null,
-    margin: js.UndefOr[Double] = js.undefined,
-    rendererOpts: DeflateLevel = null,
-    scale: js.UndefOr[Double] = js.undefined,
-    toSJISFunc: /* codePoint */ String => Double = null,
-    `type`: png = null,
-    version: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): QRCodeToFileStreamOptions = {
+  def apply(): QRCodeToFileStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
-    if (rendererOpts != null) __obj.updateDynamic("rendererOpts")(rendererOpts.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (toSJISFunc != null) __obj.updateDynamic("toSJISFunc")(js.Any.fromFunction1(toSJISFunc))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QRCodeToFileStreamOptions]
   }
+  @scala.inline
+  implicit class QRCodeToFileStreamOptionsOps[Self <: QRCodeToFileStreamOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRendererOpts(value: DeflateLevel): Self = this.set("rendererOpts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRendererOpts: Self = this.set("rendererOpts", js.undefined)
+    @scala.inline
+    def setType(value: png): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

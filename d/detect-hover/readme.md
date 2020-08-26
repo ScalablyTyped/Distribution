@@ -12,7 +12,7 @@ JavaScript wrapper for hover and any-hover media queries
 | Keywords           | detect, hover, any-hover, media query |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 741610 |
+| # downloads        | 767762 |
 | # stars            | 0 |
 
 ## Links

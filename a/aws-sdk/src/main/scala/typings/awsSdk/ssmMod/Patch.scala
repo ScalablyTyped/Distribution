@@ -62,36 +62,74 @@ trait Patch extends js.Object {
 
 object Patch {
   @scala.inline
-  def apply(
-    Classification: PatchClassification = null,
-    ContentUrl: PatchContentUrl = null,
-    Description: PatchDescription = null,
-    Id: PatchId = null,
-    KbNumber: PatchKbNumber = null,
-    Language: PatchLanguage = null,
-    MsrcNumber: PatchMsrcNumber = null,
-    MsrcSeverity: PatchMsrcSeverity = null,
-    Product: PatchProduct = null,
-    ProductFamily: PatchProductFamily = null,
-    ReleaseDate: DateTime = null,
-    Title: PatchTitle = null,
-    Vendor: PatchVendor = null
-  ): Patch = {
+  def apply(): Patch = {
     val __obj = js.Dynamic.literal()
-    if (Classification != null) __obj.updateDynamic("Classification")(Classification.asInstanceOf[js.Any])
-    if (ContentUrl != null) __obj.updateDynamic("ContentUrl")(ContentUrl.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (KbNumber != null) __obj.updateDynamic("KbNumber")(KbNumber.asInstanceOf[js.Any])
-    if (Language != null) __obj.updateDynamic("Language")(Language.asInstanceOf[js.Any])
-    if (MsrcNumber != null) __obj.updateDynamic("MsrcNumber")(MsrcNumber.asInstanceOf[js.Any])
-    if (MsrcSeverity != null) __obj.updateDynamic("MsrcSeverity")(MsrcSeverity.asInstanceOf[js.Any])
-    if (Product != null) __obj.updateDynamic("Product")(Product.asInstanceOf[js.Any])
-    if (ProductFamily != null) __obj.updateDynamic("ProductFamily")(ProductFamily.asInstanceOf[js.Any])
-    if (ReleaseDate != null) __obj.updateDynamic("ReleaseDate")(ReleaseDate.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
-    if (Vendor != null) __obj.updateDynamic("Vendor")(Vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Patch]
   }
+  @scala.inline
+  implicit class PatchOps[Self <: Patch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassification(value: PatchClassification): Self = this.set("Classification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassification: Self = this.set("Classification", js.undefined)
+    @scala.inline
+    def setContentUrl(value: PatchContentUrl): Self = this.set("ContentUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentUrl: Self = this.set("ContentUrl", js.undefined)
+    @scala.inline
+    def setDescription(value: PatchDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setId(value: PatchId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setKbNumber(value: PatchKbNumber): Self = this.set("KbNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKbNumber: Self = this.set("KbNumber", js.undefined)
+    @scala.inline
+    def setLanguage(value: PatchLanguage): Self = this.set("Language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("Language", js.undefined)
+    @scala.inline
+    def setMsrcNumber(value: PatchMsrcNumber): Self = this.set("MsrcNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsrcNumber: Self = this.set("MsrcNumber", js.undefined)
+    @scala.inline
+    def setMsrcSeverity(value: PatchMsrcSeverity): Self = this.set("MsrcSeverity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsrcSeverity: Self = this.set("MsrcSeverity", js.undefined)
+    @scala.inline
+    def setProduct(value: PatchProduct): Self = this.set("Product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("Product", js.undefined)
+    @scala.inline
+    def setProductFamily(value: PatchProductFamily): Self = this.set("ProductFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductFamily: Self = this.set("ProductFamily", js.undefined)
+    @scala.inline
+    def setReleaseDate(value: DateTime): Self = this.set("ReleaseDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseDate: Self = this.set("ReleaseDate", js.undefined)
+    @scala.inline
+    def setTitle(value: PatchTitle): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+    @scala.inline
+    def setVendor(value: PatchVendor): Self = this.set("Vendor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVendor: Self = this.set("Vendor", js.undefined)
+  }
+  
 }
 

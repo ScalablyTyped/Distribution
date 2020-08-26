@@ -40,22 +40,56 @@ trait SchemaHistory extends js.Object {
 
 object SchemaHistory {
   @scala.inline
-  def apply(
-    id: String = null,
-    labelsAdded: js.Array[SchemaHistoryLabelAdded] = null,
-    labelsRemoved: js.Array[SchemaHistoryLabelRemoved] = null,
-    messages: js.Array[SchemaMessage] = null,
-    messagesAdded: js.Array[SchemaHistoryMessageAdded] = null,
-    messagesDeleted: js.Array[SchemaHistoryMessageDeleted] = null
-  ): SchemaHistory = {
+  def apply(): SchemaHistory = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (labelsAdded != null) __obj.updateDynamic("labelsAdded")(labelsAdded.asInstanceOf[js.Any])
-    if (labelsRemoved != null) __obj.updateDynamic("labelsRemoved")(labelsRemoved.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (messagesAdded != null) __obj.updateDynamic("messagesAdded")(messagesAdded.asInstanceOf[js.Any])
-    if (messagesDeleted != null) __obj.updateDynamic("messagesDeleted")(messagesDeleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHistory]
   }
+  @scala.inline
+  implicit class SchemaHistoryOps[Self <: SchemaHistory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLabelsAddedVarargs(value: SchemaHistoryLabelAdded*): Self = this.set("labelsAdded", js.Array(value :_*))
+    @scala.inline
+    def setLabelsAdded(value: js.Array[SchemaHistoryLabelAdded]): Self = this.set("labelsAdded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelsAdded: Self = this.set("labelsAdded", js.undefined)
+    @scala.inline
+    def setLabelsRemovedVarargs(value: SchemaHistoryLabelRemoved*): Self = this.set("labelsRemoved", js.Array(value :_*))
+    @scala.inline
+    def setLabelsRemoved(value: js.Array[SchemaHistoryLabelRemoved]): Self = this.set("labelsRemoved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelsRemoved: Self = this.set("labelsRemoved", js.undefined)
+    @scala.inline
+    def setMessagesVarargs(value: SchemaMessage*): Self = this.set("messages", js.Array(value :_*))
+    @scala.inline
+    def setMessages(value: js.Array[SchemaMessage]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setMessagesAddedVarargs(value: SchemaHistoryMessageAdded*): Self = this.set("messagesAdded", js.Array(value :_*))
+    @scala.inline
+    def setMessagesAdded(value: js.Array[SchemaHistoryMessageAdded]): Self = this.set("messagesAdded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagesAdded: Self = this.set("messagesAdded", js.undefined)
+    @scala.inline
+    def setMessagesDeletedVarargs(value: SchemaHistoryMessageDeleted*): Self = this.set("messagesDeleted", js.Array(value :_*))
+    @scala.inline
+    def setMessagesDeleted(value: js.Array[SchemaHistoryMessageDeleted]): Self = this.set("messagesDeleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagesDeleted: Self = this.set("messagesDeleted", js.undefined)
+  }
+  
 }
 

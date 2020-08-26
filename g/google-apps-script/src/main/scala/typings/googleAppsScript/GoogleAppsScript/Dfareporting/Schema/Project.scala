@@ -4,81 +4,138 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Project extends js.Object {
-  var accountId: js.UndefOr[String] = js.undefined
-  var advertiserId: js.UndefOr[String] = js.undefined
-  var audienceAgeGroup: js.UndefOr[String] = js.undefined
-  var audienceGender: js.UndefOr[String] = js.undefined
-  var budget: js.UndefOr[String] = js.undefined
-  var clientBillingCode: js.UndefOr[String] = js.undefined
-  var clientName: js.UndefOr[String] = js.undefined
-  var endDate: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var overview: js.UndefOr[String] = js.undefined
-  var startDate: js.UndefOr[String] = js.undefined
-  var subaccountId: js.UndefOr[String] = js.undefined
-  var targetClicks: js.UndefOr[String] = js.undefined
-  var targetConversions: js.UndefOr[String] = js.undefined
-  var targetCpaNanos: js.UndefOr[String] = js.undefined
-  var targetCpcNanos: js.UndefOr[String] = js.undefined
-  var targetCpmActiveViewNanos: js.UndefOr[String] = js.undefined
-  var targetCpmNanos: js.UndefOr[String] = js.undefined
-  var targetImpressions: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.native
+  var audienceAgeGroup: js.UndefOr[String] = js.native
+  var audienceGender: js.UndefOr[String] = js.native
+  var budget: js.UndefOr[String] = js.native
+  var clientBillingCode: js.UndefOr[String] = js.native
+  var clientName: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var name: js.UndefOr[String] = js.native
+  var overview: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.native
+  var targetClicks: js.UndefOr[String] = js.native
+  var targetConversions: js.UndefOr[String] = js.native
+  var targetCpaNanos: js.UndefOr[String] = js.native
+  var targetCpcNanos: js.UndefOr[String] = js.native
+  var targetCpmActiveViewNanos: js.UndefOr[String] = js.native
+  var targetCpmNanos: js.UndefOr[String] = js.native
+  var targetImpressions: js.UndefOr[String] = js.native
 }
 
 object Project {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    advertiserId: String = null,
-    audienceAgeGroup: String = null,
-    audienceGender: String = null,
-    budget: String = null,
-    clientBillingCode: String = null,
-    clientName: String = null,
-    endDate: String = null,
-    id: String = null,
-    kind: String = null,
-    lastModifiedInfo: LastModifiedInfo = null,
-    name: String = null,
-    overview: String = null,
-    startDate: String = null,
-    subaccountId: String = null,
-    targetClicks: String = null,
-    targetConversions: String = null,
-    targetCpaNanos: String = null,
-    targetCpcNanos: String = null,
-    targetCpmActiveViewNanos: String = null,
-    targetCpmNanos: String = null,
-    targetImpressions: String = null
-  ): Project = {
+  def apply(): Project = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (audienceAgeGroup != null) __obj.updateDynamic("audienceAgeGroup")(audienceAgeGroup.asInstanceOf[js.Any])
-    if (audienceGender != null) __obj.updateDynamic("audienceGender")(audienceGender.asInstanceOf[js.Any])
-    if (budget != null) __obj.updateDynamic("budget")(budget.asInstanceOf[js.Any])
-    if (clientBillingCode != null) __obj.updateDynamic("clientBillingCode")(clientBillingCode.asInstanceOf[js.Any])
-    if (clientName != null) __obj.updateDynamic("clientName")(clientName.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastModifiedInfo != null) __obj.updateDynamic("lastModifiedInfo")(lastModifiedInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (targetClicks != null) __obj.updateDynamic("targetClicks")(targetClicks.asInstanceOf[js.Any])
-    if (targetConversions != null) __obj.updateDynamic("targetConversions")(targetConversions.asInstanceOf[js.Any])
-    if (targetCpaNanos != null) __obj.updateDynamic("targetCpaNanos")(targetCpaNanos.asInstanceOf[js.Any])
-    if (targetCpcNanos != null) __obj.updateDynamic("targetCpcNanos")(targetCpcNanos.asInstanceOf[js.Any])
-    if (targetCpmActiveViewNanos != null) __obj.updateDynamic("targetCpmActiveViewNanos")(targetCpmActiveViewNanos.asInstanceOf[js.Any])
-    if (targetCpmNanos != null) __obj.updateDynamic("targetCpmNanos")(targetCpmNanos.asInstanceOf[js.Any])
-    if (targetImpressions != null) __obj.updateDynamic("targetImpressions")(targetImpressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Project]
   }
+  @scala.inline
+  implicit class ProjectOps[Self <: Project] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAudienceAgeGroup(value: String): Self = this.set("audienceAgeGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudienceAgeGroup: Self = this.set("audienceAgeGroup", js.undefined)
+    @scala.inline
+    def setAudienceGender(value: String): Self = this.set("audienceGender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudienceGender: Self = this.set("audienceGender", js.undefined)
+    @scala.inline
+    def setBudget(value: String): Self = this.set("budget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBudget: Self = this.set("budget", js.undefined)
+    @scala.inline
+    def setClientBillingCode(value: String): Self = this.set("clientBillingCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientBillingCode: Self = this.set("clientBillingCode", js.undefined)
+    @scala.inline
+    def setClientName(value: String): Self = this.set("clientName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientName: Self = this.set("clientName", js.undefined)
+    @scala.inline
+    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastModifiedInfo(value: LastModifiedInfo): Self = this.set("lastModifiedInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedInfo: Self = this.set("lastModifiedInfo", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOverview(value: String): Self = this.set("overview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverview: Self = this.set("overview", js.undefined)
+    @scala.inline
+    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setTargetClicks(value: String): Self = this.set("targetClicks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetClicks: Self = this.set("targetClicks", js.undefined)
+    @scala.inline
+    def setTargetConversions(value: String): Self = this.set("targetConversions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetConversions: Self = this.set("targetConversions", js.undefined)
+    @scala.inline
+    def setTargetCpaNanos(value: String): Self = this.set("targetCpaNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCpaNanos: Self = this.set("targetCpaNanos", js.undefined)
+    @scala.inline
+    def setTargetCpcNanos(value: String): Self = this.set("targetCpcNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCpcNanos: Self = this.set("targetCpcNanos", js.undefined)
+    @scala.inline
+    def setTargetCpmActiveViewNanos(value: String): Self = this.set("targetCpmActiveViewNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCpmActiveViewNanos: Self = this.set("targetCpmActiveViewNanos", js.undefined)
+    @scala.inline
+    def setTargetCpmNanos(value: String): Self = this.set("targetCpmNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCpmNanos: Self = this.set("targetCpmNanos", js.undefined)
+    @scala.inline
+    def setTargetImpressions(value: String): Self = this.set("targetImpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetImpressions: Self = this.set("targetImpressions", js.undefined)
+  }
+  
 }
 

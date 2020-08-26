@@ -18,11 +18,32 @@ trait ListEntityRecognizersResponse extends js.Object {
 
 object ListEntityRecognizersResponse {
   @scala.inline
-  def apply(EntityRecognizerPropertiesList: EntityRecognizerPropertiesList = null, NextToken: String = null): ListEntityRecognizersResponse = {
+  def apply(): ListEntityRecognizersResponse = {
     val __obj = js.Dynamic.literal()
-    if (EntityRecognizerPropertiesList != null) __obj.updateDynamic("EntityRecognizerPropertiesList")(EntityRecognizerPropertiesList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEntityRecognizersResponse]
   }
+  @scala.inline
+  implicit class ListEntityRecognizersResponseOps[Self <: ListEntityRecognizersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityRecognizerPropertiesListVarargs(value: EntityRecognizerProperties*): Self = this.set("EntityRecognizerPropertiesList", js.Array(value :_*))
+    @scala.inline
+    def setEntityRecognizerPropertiesList(value: EntityRecognizerPropertiesList): Self = this.set("EntityRecognizerPropertiesList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityRecognizerPropertiesList: Self = this.set("EntityRecognizerPropertiesList", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

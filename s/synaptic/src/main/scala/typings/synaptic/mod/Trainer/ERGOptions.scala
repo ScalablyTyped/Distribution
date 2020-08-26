@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ERGOptions extends js.Object {
-  var cost: js.UndefOr[CostFunction] = js.undefined
-  var error: js.UndefOr[Double] = js.undefined
-  var iterations: js.UndefOr[Double] = js.undefined
-  var log: js.UndefOr[Double] = js.undefined
-  var rate: js.UndefOr[Double] = js.undefined
+  var cost: js.UndefOr[CostFunction] = js.native
+  var error: js.UndefOr[Double] = js.native
+  var iterations: js.UndefOr[Double] = js.native
+  var log: js.UndefOr[Double] = js.native
+  var rate: js.UndefOr[Double] = js.native
 }
 
 object ERGOptions {
   @scala.inline
-  def apply(
-    cost: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double = null,
-    error: js.UndefOr[Double] = js.undefined,
-    iterations: js.UndefOr[Double] = js.undefined,
-    log: js.UndefOr[Double] = js.undefined,
-    rate: js.UndefOr[Double] = js.undefined
-  ): ERGOptions = {
+  def apply(): ERGOptions = {
     val __obj = js.Dynamic.literal()
-    if (cost != null) __obj.updateDynamic("cost")(js.Any.fromFunction2(cost))
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ERGOptions]
   }
+  @scala.inline
+  implicit class ERGOptionsOps[Self <: ERGOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = this.set("cost", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCost: Self = this.set("cost", js.undefined)
+    @scala.inline
+    def setError(value: Double): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIterations: Self = this.set("iterations", js.undefined)
+    @scala.inline
+    def setLog(value: Double): Self = this.set("log", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLog: Self = this.set("log", js.undefined)
+    @scala.inline
+    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRate: Self = this.set("rate", js.undefined)
+  }
+  
 }
 

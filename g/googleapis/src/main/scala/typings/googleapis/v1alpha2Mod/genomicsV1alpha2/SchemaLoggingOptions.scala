@@ -23,10 +23,26 @@ trait SchemaLoggingOptions extends js.Object {
 
 object SchemaLoggingOptions {
   @scala.inline
-  def apply(gcsPath: String = null): SchemaLoggingOptions = {
+  def apply(): SchemaLoggingOptions = {
     val __obj = js.Dynamic.literal()
-    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLoggingOptions]
   }
+  @scala.inline
+  implicit class SchemaLoggingOptionsOps[Self <: SchemaLoggingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGcsPath(value: String): Self = this.set("gcsPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsPath: Self = this.set("gcsPath", js.undefined)
+  }
+  
 }
 

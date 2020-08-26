@@ -14,10 +14,26 @@ trait CreateEntityRecognizerResponse extends js.Object {
 
 object CreateEntityRecognizerResponse {
   @scala.inline
-  def apply(EntityRecognizerArn: EntityRecognizerArn = null): CreateEntityRecognizerResponse = {
+  def apply(): CreateEntityRecognizerResponse = {
     val __obj = js.Dynamic.literal()
-    if (EntityRecognizerArn != null) __obj.updateDynamic("EntityRecognizerArn")(EntityRecognizerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEntityRecognizerResponse]
   }
+  @scala.inline
+  implicit class CreateEntityRecognizerResponseOps[Self <: CreateEntityRecognizerResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityRecognizerArn(value: EntityRecognizerArn): Self = this.set("EntityRecognizerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityRecognizerArn: Self = this.set("EntityRecognizerArn", js.undefined)
+  }
+  
 }
 

@@ -30,17 +30,38 @@ trait TrustedAdvisorResourceDetail extends js.Object {
 
 object TrustedAdvisorResourceDetail {
   @scala.inline
-  def apply(
-    metadata: StringList,
-    resourceId: String,
-    status: String,
-    isSuppressed: js.UndefOr[Boolean] = js.undefined,
-    region: String = null
-  ): TrustedAdvisorResourceDetail = {
+  def apply(metadata: StringList, resourceId: String, status: String): TrustedAdvisorResourceDetail = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSuppressed)) __obj.updateDynamic("isSuppressed")(isSuppressed.get.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustedAdvisorResourceDetail]
   }
+  @scala.inline
+  implicit class TrustedAdvisorResourceDetailOps[Self <: TrustedAdvisorResourceDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetadataVarargs(value: String*): Self = this.set("metadata", js.Array(value :_*))
+    @scala.inline
+    def setMetadata(value: StringList): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsSuppressed(value: Boolean): Self = this.set("isSuppressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSuppressed: Self = this.set("isSuppressed", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+  }
+  
 }
 

@@ -29,16 +29,34 @@ trait SchemaAutoFillRequest extends js.Object {
 
 object SchemaAutoFillRequest {
   @scala.inline
-  def apply(
-    range: SchemaGridRange = null,
-    sourceAndDestination: SchemaSourceAndDestination = null,
-    useAlternateSeries: js.UndefOr[Boolean] = js.undefined
-  ): SchemaAutoFillRequest = {
+  def apply(): SchemaAutoFillRequest = {
     val __obj = js.Dynamic.literal()
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (sourceAndDestination != null) __obj.updateDynamic("sourceAndDestination")(sourceAndDestination.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAlternateSeries)) __obj.updateDynamic("useAlternateSeries")(useAlternateSeries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoFillRequest]
   }
+  @scala.inline
+  implicit class SchemaAutoFillRequestOps[Self <: SchemaAutoFillRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setSourceAndDestination(value: SchemaSourceAndDestination): Self = this.set("sourceAndDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceAndDestination: Self = this.set("sourceAndDestination", js.undefined)
+    @scala.inline
+    def setUseAlternateSeries(value: Boolean): Self = this.set("useAlternateSeries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseAlternateSeries: Self = this.set("useAlternateSeries", js.undefined)
+  }
+  
 }
 

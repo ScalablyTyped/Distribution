@@ -35,6 +35,7 @@ class ResourceEntityusagereports protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaUsageReports] = js.native
   def get(callback: BodyResponseCallback[SchemaUsageReports]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUsageReports] = js.native
   def get(params: ParamsResourceEntityusagereportsGet): GaxiosPromise[SchemaUsageReports] = js.native
   def get(params: ParamsResourceEntityusagereportsGet, callback: BodyResponseCallback[SchemaUsageReports]): Unit = js.native
   def get(

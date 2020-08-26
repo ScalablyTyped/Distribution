@@ -21,11 +21,30 @@ trait SchemaSectionColumnProperties extends js.Object {
 
 object SchemaSectionColumnProperties {
   @scala.inline
-  def apply(paddingEnd: SchemaDimension = null, width: SchemaDimension = null): SchemaSectionColumnProperties = {
+  def apply(): SchemaSectionColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (paddingEnd != null) __obj.updateDynamic("paddingEnd")(paddingEnd.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSectionColumnProperties]
   }
+  @scala.inline
+  implicit class SchemaSectionColumnPropertiesOps[Self <: SchemaSectionColumnProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPaddingEnd(value: SchemaDimension): Self = this.set("paddingEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingEnd: Self = this.set("paddingEnd", js.undefined)
+    @scala.inline
+    def setWidth(value: SchemaDimension): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

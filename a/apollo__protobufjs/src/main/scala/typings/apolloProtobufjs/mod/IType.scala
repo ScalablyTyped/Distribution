@@ -6,38 +6,60 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.apolloProtobufjs.mod.AnyNestedObject because Already inherited */ trait IType extends INamespace {
+- typings.apolloProtobufjs.mod.AnyNestedObject because Already inherited */ @js.native
+trait IType extends INamespace {
   /** Extension ranges */
-  var extensions: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
+  var extensions: js.UndefOr[js.Array[js.Array[Double]]] = js.native
   /** Field descriptors */
-  var fields: StringDictionary[IField]
+  var fields: StringDictionary[IField] = js.native
   /** Whether a legacy group or not */
-  var group: js.UndefOr[Boolean] = js.undefined
+  var group: js.UndefOr[Boolean] = js.native
   /** Oneof descriptors */
-  var oneofs: js.UndefOr[StringDictionary[IOneOf]] = js.undefined
+  var oneofs: js.UndefOr[StringDictionary[IOneOf]] = js.native
   /** Reserved ranges */
-  var reserved: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
+  var reserved: js.UndefOr[js.Array[js.Array[Double]]] = js.native
 }
 
 object IType {
   @scala.inline
-  def apply(
-    fields: StringDictionary[IField],
-    extensions: js.Array[js.Array[Double]] = null,
-    group: js.UndefOr[Boolean] = js.undefined,
-    nested: StringDictionary[AnyNestedObject] = null,
-    oneofs: StringDictionary[IOneOf] = null,
-    options: StringDictionary[js.Any] = null,
-    reserved: js.Array[js.Array[Double]] = null
-  ): IType = {
+  def apply(fields: StringDictionary[IField]): IType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.get.asInstanceOf[js.Any])
-    if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
-    if (oneofs != null) __obj.updateDynamic("oneofs")(oneofs.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (reserved != null) __obj.updateDynamic("reserved")(reserved.asInstanceOf[js.Any])
     __obj.asInstanceOf[IType]
   }
+  @scala.inline
+  implicit class ITypeOps[Self <: IType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFields(value: StringDictionary[IField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExtensionsVarargs(value: js.Array[Double]*): Self = this.set("extensions", js.Array(value :_*))
+    @scala.inline
+    def setExtensions(value: js.Array[js.Array[Double]]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    @scala.inline
+    def setGroup(value: Boolean): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setOneofs(value: StringDictionary[IOneOf]): Self = this.set("oneofs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOneofs: Self = this.set("oneofs", js.undefined)
+    @scala.inline
+    def setReservedVarargs(value: js.Array[Double]*): Self = this.set("reserved", js.Array(value :_*))
+    @scala.inline
+    def setReserved(value: js.Array[js.Array[Double]]): Self = this.set("reserved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReserved: Self = this.set("reserved", js.undefined)
+  }
+  
 }
 

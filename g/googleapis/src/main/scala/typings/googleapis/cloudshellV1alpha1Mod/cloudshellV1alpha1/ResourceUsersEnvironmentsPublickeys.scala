@@ -31,6 +31,7 @@ class ResourceUsersEnvironmentsPublickeys protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaPublicKey] = js.native
   def create(callback: BodyResponseCallback[SchemaPublicKey]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPublicKey] = js.native
   def create(params: ParamsResourceUsersEnvironmentsPublickeysCreate): GaxiosPromise[SchemaPublicKey] = js.native
   def create(
     params: ParamsResourceUsersEnvironmentsPublickeysCreate,
@@ -63,6 +64,7 @@ class ResourceUsersEnvironmentsPublickeys protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceUsersEnvironmentsPublickeysDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceUsersEnvironmentsPublickeysDelete,

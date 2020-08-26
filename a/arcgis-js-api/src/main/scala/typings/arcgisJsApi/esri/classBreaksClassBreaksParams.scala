@@ -1,5 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`equal-interval`
+import typings.arcgisJsApi.arcgisJsApiStrings.`natural-breaks`
+import typings.arcgisJsApi.arcgisJsApiStrings.`standard-deviation`
+import typings.arcgisJsApi.arcgisJsApiStrings.quantile
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
@@ -7,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait classBreaksClassBreaksParams extends Object {
   /**
     * The method for classifying the data. See the table below for a list of possible values.
@@ -19,87 +24,87 @@ trait classBreaksClassBreaksParams extends Object {
     * | standard-deviation | Class breaks are placed above and below the mean value at intervals of `1`, `0.5`, or `0.25` standard deviations until all the data values are included in a class.  |
     *
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var classificationMethod: js.UndefOr[String] = js.undefined
+  var classificationMethod: js.UndefOr[`equal-interval` | `natural-breaks` | quantile | `standard-deviation`] = js.native
   /**
     * A subset of features for which to generate the class breaks.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var features: js.UndefOr[js.Array[Graphic]] = js.undefined
+  var features: js.UndefOr[js.Array[Graphic]] = js.native
   /**
     * The class breaks will be generated based on values of this field. If a field is provided, the values from the given field from all features will be queried in the service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var field: js.UndefOr[String] = js.undefined
+  var field: js.UndefOr[String] = js.native
   /**
     * The layer from which to generate class breaks.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer = js.native
   /**
     * The maximum bounding value for the class breaks definition. Use this in conjunction with `minValue` to generate class breaks between lower and upper bounds.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var maxValue: js.UndefOr[Double] = js.undefined
+  var maxValue: js.UndefOr[Double] = js.native
   /**
     * The minimum bounding value for the class breaks definition. Use this in conjunction with `maxValue` to generate class breaks between lower and upper bounds.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var minValue: js.UndefOr[Double] = js.undefined
+  var minValue: js.UndefOr[Double] = js.native
   /**
     * The field by which to normalize the values returned from the given `field`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var normalizationField: js.UndefOr[String] = js.undefined
+  var normalizationField: js.UndefOr[String] = js.native
   /**
     * Indicates the number of classes to generate for the class breaks definition.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var numClasses: js.UndefOr[Double] = js.undefined
+  var numClasses: js.UndefOr[Double] = js.native
   /**
     * Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var signal: js.UndefOr[AbortSignal] = js.undefined
+  var signal: js.UndefOr[AbortSignal] = js.native
   /**
     * A SQL expression evaluating to a number.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var sqlExpression: js.UndefOr[String] = js.undefined
+  var sqlExpression: js.UndefOr[String] = js.native
   /**
     * A SQL where clause used to filter features for the statistics query. For example, this is useful in situations where you want to avoid dividing by zero as is the case with creating a predominance visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var sqlWhere: js.UndefOr[String] = js.undefined
+  var sqlWhere: js.UndefOr[String] = js.native
   /**
     * When `classificationMethod = "standard-deviation"`, this sets the interval at which each class break should be set (e.g. `0.25`, `0.33`, `0.5`, `1`).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var standardDeviationInterval: js.UndefOr[Double] = js.undefined
+  var standardDeviationInterval: js.UndefOr[Double] = js.native
   /**
     * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number. This expression can reference field values using the `$feature` global variable. This property overrides the `field` property and therefore is used instead of an input `field` value.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var valueExpression: js.UndefOr[String] = js.undefined
+  var valueExpression: js.UndefOr[String] = js.native
   /**
     * A [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) or [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance is required when a `valueExpression` is specified.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[View] = js.undefined
+  var view: js.UndefOr[View] = js.native
 }
 
 object classBreaksClassBreaksParams {
@@ -108,36 +113,79 @@ object classBreaksClassBreaksParams {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    classificationMethod: String = null,
-    features: js.Array[Graphic] = null,
-    field: String = null,
-    maxValue: js.UndefOr[Double] = js.undefined,
-    minValue: js.UndefOr[Double] = js.undefined,
-    normalizationField: String = null,
-    numClasses: js.UndefOr[Double] = js.undefined,
-    signal: AbortSignal = null,
-    sqlExpression: String = null,
-    sqlWhere: String = null,
-    standardDeviationInterval: js.UndefOr[Double] = js.undefined,
-    valueExpression: String = null,
-    view: View = null
+    propertyIsEnumerable: PropertyKey => Boolean
   ): classBreaksClassBreaksParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
-    if (!js.isUndefined(numClasses)) __obj.updateDynamic("numClasses")(numClasses.get.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
-    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardDeviationInterval)) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.get.asInstanceOf[js.Any])
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[classBreaksClassBreaksParams]
   }
+  @scala.inline
+  implicit class classBreaksClassBreaksParamsOps[Self <: classBreaksClassBreaksParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClassificationMethod(value: `equal-interval` | `natural-breaks` | quantile | `standard-deviation`): Self = this.set("classificationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassificationMethod: Self = this.set("classificationMethod", js.undefined)
+    @scala.inline
+    def setFeaturesVarargs(value: Graphic*): Self = this.set("features", js.Array(value :_*))
+    @scala.inline
+    def setFeatures(value: js.Array[Graphic]): Self = this.set("features", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatures: Self = this.set("features", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setNormalizationField(value: String): Self = this.set("normalizationField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNormalizationField: Self = this.set("normalizationField", js.undefined)
+    @scala.inline
+    def setNumClasses(value: Double): Self = this.set("numClasses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumClasses: Self = this.set("numClasses", js.undefined)
+    @scala.inline
+    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignal: Self = this.set("signal", js.undefined)
+    @scala.inline
+    def setSqlExpression(value: String): Self = this.set("sqlExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqlExpression: Self = this.set("sqlExpression", js.undefined)
+    @scala.inline
+    def setSqlWhere(value: String): Self = this.set("sqlWhere", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqlWhere: Self = this.set("sqlWhere", js.undefined)
+    @scala.inline
+    def setStandardDeviationInterval(value: Double): Self = this.set("standardDeviationInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandardDeviationInterval: Self = this.set("standardDeviationInterval", js.undefined)
+    @scala.inline
+    def setValueExpression(value: String): Self = this.set("valueExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueExpression: Self = this.set("valueExpression", js.undefined)
+    @scala.inline
+    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

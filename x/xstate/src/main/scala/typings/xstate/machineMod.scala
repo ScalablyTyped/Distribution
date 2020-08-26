@@ -15,6 +15,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object machineMod extends js.Object {
   def Machine[TContext, TEvent /* <: EventObject */](config: MachineConfig[TContext, _, TEvent]): StateMachine[TContext, _, TEvent, _] = js.native
+  def Machine[TContext, TEvent /* <: EventObject */](
+    config: MachineConfig[TContext, _, TEvent],
+    options: js.UndefOr[scala.Nothing],
+    initialContext: TContext
+  ): StateMachine[TContext, _, TEvent, _] = js.native
   def Machine[TContext, TEvent /* <: EventObject */](config: MachineConfig[TContext, _, TEvent], options: Partial[MachineOptions[TContext, TEvent]]): StateMachine[TContext, _, TEvent, _] = js.native
   def Machine[TContext, TEvent /* <: EventObject */](
     config: MachineConfig[TContext, _, TEvent],
@@ -23,6 +28,12 @@ object machineMod extends js.Object {
   ): StateMachine[TContext, _, TEvent, _] = js.native
   @JSName("Machine")
   def Machine_TContextTStateSchema_StateSchemaWildcardTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](config: MachineConfig[TContext, TStateSchema, TEvent]): StateMachine[TContext, TStateSchema, TEvent, _] = js.native
+  @JSName("Machine")
+  def Machine_TContextTStateSchema_StateSchemaWildcardTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
+    config: MachineConfig[TContext, TStateSchema, TEvent],
+    options: js.UndefOr[scala.Nothing],
+    initialContext: TContext
+  ): StateMachine[TContext, TStateSchema, TEvent, _] = js.native
   @JSName("Machine")
   def Machine_TContextTStateSchema_StateSchemaWildcardTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
     config: MachineConfig[TContext, TStateSchema, TEvent],

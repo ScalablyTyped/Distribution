@@ -42,22 +42,46 @@ trait PutIntegrationResponseRequest extends js.Object {
 
 object PutIntegrationResponseRequest {
   @scala.inline
-  def apply(
-    httpMethod: String,
-    resourceId: String,
-    restApiId: String,
-    statusCode: StatusCode,
-    contentHandling: ContentHandlingStrategy = null,
-    responseParameters: MapOfStringToString = null,
-    responseTemplates: MapOfStringToString = null,
-    selectionPattern: String = null
-  ): PutIntegrationResponseRequest = {
+  def apply(httpMethod: String, resourceId: String, restApiId: String, statusCode: StatusCode): PutIntegrationResponseRequest = {
     val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-    if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
-    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
-    if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
-    if (selectionPattern != null) __obj.updateDynamic("selectionPattern")(selectionPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutIntegrationResponseRequest]
   }
+  @scala.inline
+  implicit class PutIntegrationResponseRequestOps[Self <: PutIntegrationResponseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatusCode(value: StatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentHandling(value: ContentHandlingStrategy): Self = this.set("contentHandling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHandling: Self = this.set("contentHandling", js.undefined)
+    @scala.inline
+    def setResponseParameters(value: MapOfStringToString): Self = this.set("responseParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseParameters: Self = this.set("responseParameters", js.undefined)
+    @scala.inline
+    def setResponseTemplates(value: MapOfStringToString): Self = this.set("responseTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTemplates: Self = this.set("responseTemplates", js.undefined)
+    @scala.inline
+    def setSelectionPattern(value: String): Self = this.set("selectionPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionPattern: Self = this.set("selectionPattern", js.undefined)
+  }
+  
 }
 

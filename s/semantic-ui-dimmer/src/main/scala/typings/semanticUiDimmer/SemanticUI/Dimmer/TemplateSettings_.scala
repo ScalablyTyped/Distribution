@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TemplateSettings_ extends js.Object {
   @JSName("dimmer")
-  var dimmer_Original: js.UndefOr[js.Function0[JQuery]] = js.native
+  var dimmer_Original: js.Function0[JQuery] with js.UndefOr[js.Function0[JQuery]] = js.native
   def dimmer(): JQuery = js.native
 }
 

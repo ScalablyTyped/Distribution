@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   *
   * The change of data directly at the control may not affect the model data. To ensure this behavior, modify the data of the model.
   */
+@js.native
 trait UnoControl
   extends XControl
      with XWindow

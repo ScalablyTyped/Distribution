@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class Boom[Data] () extends Error {
   def this(message: String) = this()
   def this(message: Error) = this()
+  def this(message: js.UndefOr[scala.Nothing], options: Options[Data]) = this()
   def this(message: String, options: Options[Data]) = this()
   def this(message: Error, options: Options[Data]) = this()
   /**
@@ -27,10 +28,6 @@ class Boom[Data] () extends Error {
     * Convenience boolean indicating status code >= 500
     */
   var isServer: Boolean = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   /**
     * The formatted response
     */

@@ -25,10 +25,10 @@ trait GetRouteTableArgs extends js.Object {
     */
   val subnetId: js.UndefOr[String] = js.native
   /**
-    * A mapping of tags, each pair of which must exactly match
+    * A map of tags, each pair of which must exactly match
     * a pair on the desired Route Table.
     */
-  val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val tags: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * The id of the VPC that the desired Route Table belongs to.
     */
@@ -37,22 +37,48 @@ trait GetRouteTableArgs extends js.Object {
 
 object GetRouteTableArgs {
   @scala.inline
-  def apply(
-    filters: js.Array[GetRouteTableFilter] = null,
-    gatewayId: String = null,
-    routeTableId: String = null,
-    subnetId: String = null,
-    tags: StringDictionary[js.Any] = null,
-    vpcId: String = null
-  ): GetRouteTableArgs = {
+  def apply(): GetRouteTableArgs = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (gatewayId != null) __obj.updateDynamic("gatewayId")(gatewayId.asInstanceOf[js.Any])
-    if (routeTableId != null) __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRouteTableArgs]
   }
+  @scala.inline
+  implicit class GetRouteTableArgsOps[Self <: GetRouteTableArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: GetRouteTableFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetRouteTableFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setGatewayId(value: String): Self = this.set("gatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayId: Self = this.set("gatewayId", js.undefined)
+    @scala.inline
+    def setRouteTableId(value: String): Self = this.set("routeTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteTableId: Self = this.set("routeTableId", js.undefined)
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

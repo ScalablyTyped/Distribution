@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IconColor extends js.Object {
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var hoverColor: js.UndefOr[String] = js.undefined
-  var iconColor: js.UndefOr[String] = js.undefined
-  var menuHoverColor: js.UndefOr[String] = js.undefined
-  var separatorColor: js.UndefOr[String] = js.undefined
-  var titleFontSize: js.UndefOr[Double] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var hoverColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.native
+  var menuHoverColor: js.UndefOr[String] = js.native
+  var separatorColor: js.UndefOr[String] = js.native
+  var titleFontSize: js.UndefOr[Double] = js.native
 }
 
 object IconColor {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    color: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    hoverColor: String = null,
-    iconColor: String = null,
-    menuHoverColor: String = null,
-    separatorColor: String = null,
-    titleFontSize: js.UndefOr[Double] = js.undefined
-  ): IconColor = {
+  def apply(): IconColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
-    if (menuHoverColor != null) __obj.updateDynamic("menuHoverColor")(menuHoverColor.asInstanceOf[js.Any])
-    if (separatorColor != null) __obj.updateDynamic("separatorColor")(separatorColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleFontSize)) __obj.updateDynamic("titleFontSize")(titleFontSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconColor]
   }
+  @scala.inline
+  implicit class IconColorOps[Self <: IconColor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHoverColor(value: String): Self = this.set("hoverColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverColor: Self = this.set("hoverColor", js.undefined)
+    @scala.inline
+    def setIconColor(value: String): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    @scala.inline
+    def setMenuHoverColor(value: String): Self = this.set("menuHoverColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuHoverColor: Self = this.set("menuHoverColor", js.undefined)
+    @scala.inline
+    def setSeparatorColor(value: String): Self = this.set("separatorColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparatorColor: Self = this.set("separatorColor", js.undefined)
+    @scala.inline
+    def setTitleFontSize(value: Double): Self = this.set("titleFontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleFontSize: Self = this.set("titleFontSize", js.undefined)
+  }
+  
 }
 

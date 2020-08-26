@@ -27,17 +27,36 @@ trait GroupArgs extends js.Object {
 
 object GroupArgs {
   @scala.inline
-  def apply(
-    groupName: Input[String],
-    awsAccountId: Input[String] = null,
-    description: Input[String] = null,
-    namespace: Input[String] = null
-  ): GroupArgs = {
+  def apply(groupName: Input[String]): GroupArgs = {
     val __obj = js.Dynamic.literal(groupName = groupName.asInstanceOf[js.Any])
-    if (awsAccountId != null) __obj.updateDynamic("awsAccountId")(awsAccountId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupArgs]
   }
+  @scala.inline
+  implicit class GroupArgsOps[Self <: GroupArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupName(value: Input[String]): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAwsAccountId(value: Input[String]): Self = this.set("awsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAccountId: Self = this.set("awsAccountId", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setNamespace(value: Input[String]): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+  }
+  
 }
 

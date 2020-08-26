@@ -148,6 +148,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * @param itemName A string that is the component name of the dashboard item to be exported.
     */
   def ExportDashboardItemToExcel(itemName: String): Unit = js.native
+  def ExportDashboardItemToExcel(itemName: String, options: js.UndefOr[scala.Nothing], fileName: String): Unit = js.native
   def ExportDashboardItemToExcel(itemName: String, options: ASPxClientDashboardExportOptions): Unit = js.native
   def ExportDashboardItemToExcel(itemName: String, options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
   def ExportDashboardItemToExcel(itemName: String, options: DashboardExcelExportOptions): Unit = js.native
@@ -157,6 +158,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * @param itemName A string that is the component name of the dashboard item to be exported.
     */
   def ExportDashboardItemToImage(itemName: String): Unit = js.native
+  def ExportDashboardItemToImage(itemName: String, options: js.UndefOr[scala.Nothing], fileName: String): Unit = js.native
   def ExportDashboardItemToImage(itemName: String, options: ASPxClientDashboardExportOptions): Unit = js.native
   def ExportDashboardItemToImage(itemName: String, options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
   def ExportDashboardItemToImage(itemName: String, options: DashboardImageExportOptions): Unit = js.native
@@ -166,6 +168,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * @param itemName A string that is the component name of the dashboard item to be exported.
     */
   def ExportDashboardItemToPdf(itemName: String): Unit = js.native
+  def ExportDashboardItemToPdf(itemName: String, options: js.UndefOr[scala.Nothing], fileName: String): Unit = js.native
   def ExportDashboardItemToPdf(itemName: String, options: ASPxClientDashboardExportOptions): Unit = js.native
   def ExportDashboardItemToPdf(itemName: String, options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
   def ExportDashboardItemToPdf(itemName: String, options: DashboardPdfExportOptions): Unit = js.native
@@ -174,12 +177,14 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * Exports dashboard data to the specified file in Excel format.
     */
   def ExportToExcel(): Unit = js.native
+  def ExportToExcel(options: js.UndefOr[scala.Nothing], fileName: String): Unit = js.native
   def ExportToExcel(options: DashboardExcelExportOptions): Unit = js.native
   def ExportToExcel(options: DashboardExcelExportOptions, fileName: String): Unit = js.native
   /**
     * Exports a dashboard to an Image file and writes it to the Response.
     */
   def ExportToImage(): Unit = js.native
+  def ExportToImage(options: js.UndefOr[scala.Nothing], fileName: String): Unit = js.native
   def ExportToImage(options: ASPxClientDashboardExportOptions): Unit = js.native
   def ExportToImage(options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
   def ExportToImage(options: DashboardImageExportOptions): Unit = js.native
@@ -188,6 +193,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
     * Exports a dashboard to a PDF file and writes it to the Response.
     */
   def ExportToPdf(): Unit = js.native
+  def ExportToPdf(options: js.UndefOr[scala.Nothing], fileName: String): Unit = js.native
   def ExportToPdf(options: ASPxClientDashboardExportOptions): Unit = js.native
   def ExportToPdf(options: ASPxClientDashboardExportOptions, fileName: String): Unit = js.native
   def ExportToPdf(options: DashboardPdfExportOptions): Unit = js.native

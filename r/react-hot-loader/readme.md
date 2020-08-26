@@ -10,9 +10,9 @@ Tweak React components in real time.
 | ------------------ | :-------------: |
 | Full name          | react-hot-loader |
 | Keywords           | react, javascript, webpack, hmr, livereload, live, edit, hot, loader, reload |
-| # releases         | 92 |
-| # dependents       | 1502 |
-| # downloads        | 51712881 |
+| # releases         | 80 |
+| # dependents       | 1521 |
+| # downloads        | 52429376 |
 | # stars            | 42 |
 
 ## Links

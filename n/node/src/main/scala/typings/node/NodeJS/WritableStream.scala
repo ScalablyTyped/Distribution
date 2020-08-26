@@ -1,6 +1,7 @@
 package typings.node.NodeJS
 
 import typings.node.BufferEncoding
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -16,12 +17,18 @@ trait WritableStream extends EventEmitter {
   def end(data: String, cb: js.Function0[Unit]): Unit = js.native
   def end(data: Uint8Array): Unit = js.native
   def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   def write(buffer: String): Boolean = js.native
   def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(buffer: Uint8Array): Boolean = js.native
   def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(
+    str: String,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }

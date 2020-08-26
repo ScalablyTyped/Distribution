@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AuthorizationCode extends js.Object {
-  var authorizationCode: js.UndefOr[Scopes] = js.undefined
-  var clientCredentials: js.UndefOr[RefreshUrl] = js.undefined
-  var `implicit`: js.UndefOr[AuthorizationUrl] = js.undefined
-  var password: js.UndefOr[RefreshUrl] = js.undefined
+  var authorizationCode: js.UndefOr[Scopes] = js.native
+  var clientCredentials: js.UndefOr[RefreshUrl] = js.native
+  var `implicit`: js.UndefOr[AuthorizationUrl] = js.native
+  var password: js.UndefOr[RefreshUrl] = js.native
 }
 
 object AuthorizationCode {
   @scala.inline
-  def apply(
-    authorizationCode: Scopes = null,
-    clientCredentials: RefreshUrl = null,
-    `implicit`: AuthorizationUrl = null,
-    password: RefreshUrl = null
-  ): AuthorizationCode = {
+  def apply(): AuthorizationCode = {
     val __obj = js.Dynamic.literal()
-    if (authorizationCode != null) __obj.updateDynamic("authorizationCode")(authorizationCode.asInstanceOf[js.Any])
-    if (clientCredentials != null) __obj.updateDynamic("clientCredentials")(clientCredentials.asInstanceOf[js.Any])
-    if (`implicit` != null) __obj.updateDynamic("implicit")(`implicit`.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationCode]
   }
+  @scala.inline
+  implicit class AuthorizationCodeOps[Self <: AuthorizationCode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizationCode(value: Scopes): Self = this.set("authorizationCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationCode: Self = this.set("authorizationCode", js.undefined)
+    @scala.inline
+    def setClientCredentials(value: RefreshUrl): Self = this.set("clientCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCredentials: Self = this.set("clientCredentials", js.undefined)
+    @scala.inline
+    def setImplicit(value: AuthorizationUrl): Self = this.set("implicit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImplicit: Self = this.set("implicit", js.undefined)
+    @scala.inline
+    def setPassword(value: RefreshUrl): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+  }
+  
 }
 

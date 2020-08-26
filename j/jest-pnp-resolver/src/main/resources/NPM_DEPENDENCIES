@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-pnp-resolver" : "1.2.1"
+      "jest-pnp-resolver" : "1.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-pnp-resolver" : "1.2.1"
+      "jest-pnp-resolver" : "1.2.2"
     }
   ],
   "compile-devDependencies" : [

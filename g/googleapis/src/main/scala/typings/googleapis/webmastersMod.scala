@@ -30,7 +30,7 @@ object webmastersMod extends js.Object {
     @js.native
     object v3
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Webmasters]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Webmasters]
             ]
     
   }

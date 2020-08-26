@@ -12,7 +12,23 @@ import scala.scalajs.js.annotation._
 @js.native
 object domMod extends js.Object {
   def createCanvasContext2D(): CanvasRenderingContext2D = js.native
+  def createCanvasContext2D(
+    opt_width: js.UndefOr[scala.Nothing],
+    opt_height: js.UndefOr[scala.Nothing],
+    opt_canvasPool: js.Array[HTMLCanvasElement]
+  ): CanvasRenderingContext2D = js.native
+  def createCanvasContext2D(opt_width: js.UndefOr[scala.Nothing], opt_height: Double): CanvasRenderingContext2D = js.native
+  def createCanvasContext2D(
+    opt_width: js.UndefOr[scala.Nothing],
+    opt_height: Double,
+    opt_canvasPool: js.Array[HTMLCanvasElement]
+  ): CanvasRenderingContext2D = js.native
   def createCanvasContext2D(opt_width: Double): CanvasRenderingContext2D = js.native
+  def createCanvasContext2D(
+    opt_width: Double,
+    opt_height: js.UndefOr[scala.Nothing],
+    opt_canvasPool: js.Array[HTMLCanvasElement]
+  ): CanvasRenderingContext2D = js.native
   def createCanvasContext2D(opt_width: Double, opt_height: Double): CanvasRenderingContext2D = js.native
   def createCanvasContext2D(opt_width: Double, opt_height: Double, opt_canvasPool: js.Array[HTMLCanvasElement]): CanvasRenderingContext2D = js.native
   def outerHeight(element: HTMLElement): Double = js.native

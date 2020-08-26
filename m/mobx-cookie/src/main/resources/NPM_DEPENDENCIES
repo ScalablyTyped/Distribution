@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mobx-cookie" : "2.0.3"
+      "mobx-cookie" : "3.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "mobx-cookie" : "2.0.3"
+      "mobx-cookie" : "3.0.4"
     }
   ],
   "compile-devDependencies" : [

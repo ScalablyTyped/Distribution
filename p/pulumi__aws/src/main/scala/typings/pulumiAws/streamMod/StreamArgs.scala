@@ -34,42 +34,73 @@ trait StreamArgs extends js.Object {
   val retentionPeriod: js.UndefOr[Input[Double]] = js.native
   /**
     * The number of shards that the stream will use.
-    * Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See [Amazon Kinesis Streams][2] for more.
+    * Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See [Amazon Kinesis Streams](https://docs.aws.amazon.com/kinesis/latest/dev/amazon-kinesis-streams.html) for more.
     */
   val shardCount: Input[Double] = js.native
   /**
-    * A list of shard-level CloudWatch metrics which can be enabled for the stream. See [Monitoring with CloudWatch][3] for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.
+    * A list of shard-level CloudWatch metrics which can be enabled for the stream. See [Monitoring with CloudWatch](https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html) for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.
     */
   val shardLevelMetrics: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object StreamArgs {
   @scala.inline
-  def apply(
-    shardCount: Input[Double],
-    arn: Input[String] = null,
-    encryptionType: Input[String] = null,
-    enforceConsumerDeletion: Input[Boolean] = null,
-    kmsKeyId: Input[String] = null,
-    name: Input[String] = null,
-    retentionPeriod: Input[Double] = null,
-    shardLevelMetrics: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): StreamArgs = {
+  def apply(shardCount: Input[Double]): StreamArgs = {
     val __obj = js.Dynamic.literal(shardCount = shardCount.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (encryptionType != null) __obj.updateDynamic("encryptionType")(encryptionType.asInstanceOf[js.Any])
-    if (enforceConsumerDeletion != null) __obj.updateDynamic("enforceConsumerDeletion")(enforceConsumerDeletion.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod.asInstanceOf[js.Any])
-    if (shardLevelMetrics != null) __obj.updateDynamic("shardLevelMetrics")(shardLevelMetrics.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamArgs]
   }
+  @scala.inline
+  implicit class StreamArgsOps[Self <: StreamArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShardCount(value: Input[Double]): Self = this.set("shardCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setEncryptionType(value: Input[String]): Self = this.set("encryptionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionType: Self = this.set("encryptionType", js.undefined)
+    @scala.inline
+    def setEnforceConsumerDeletion(value: Input[Boolean]): Self = this.set("enforceConsumerDeletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceConsumerDeletion: Self = this.set("enforceConsumerDeletion", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRetentionPeriod(value: Input[Double]): Self = this.set("retentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetentionPeriod: Self = this.set("retentionPeriod", js.undefined)
+    @scala.inline
+    def setShardLevelMetricsVarargs(value: Input[String]*): Self = this.set("shardLevelMetrics", js.Array(value :_*))
+    @scala.inline
+    def setShardLevelMetrics(value: Input[js.Array[Input[String]]]): Self = this.set("shardLevelMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShardLevelMetrics: Self = this.set("shardLevelMetrics", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

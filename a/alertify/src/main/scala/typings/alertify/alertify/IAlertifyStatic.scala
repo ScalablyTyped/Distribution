@@ -19,6 +19,7 @@ trait IAlertifyStatic extends js.Object {
     * @since 0.0.1
     */
   def alert(message: String): IAlertifyStatic = js.native
+  def alert(message: String, fn: js.UndefOr[scala.Nothing], cssClass: String): IAlertifyStatic = js.native
   def alert(message: String, fn: js.Function): IAlertifyStatic = js.native
   def alert(message: String, fn: js.Function, cssClass: String): IAlertifyStatic = js.native
   /**
@@ -30,6 +31,7 @@ trait IAlertifyStatic extends js.Object {
     * @since 0.0.1
     */
   def confirm(message: String): IAlertifyStatic = js.native
+  def confirm(message: String, fn: js.UndefOr[scala.Nothing], cssClass: String): IAlertifyStatic = js.native
   def confirm(message: String, fn: js.Function): IAlertifyStatic = js.native
   def confirm(message: String, fn: js.Function, cssClass: String): IAlertifyStatic = js.native
   /**
@@ -67,6 +69,7 @@ trait IAlertifyStatic extends js.Object {
     * @since 0.0.1
     */
   def log(message: String): IAlertifyStatic = js.native
+  def log(message: String, `type`: js.UndefOr[scala.Nothing], wait: Double): IAlertifyStatic = js.native
   def log(message: String, `type`: String): IAlertifyStatic = js.native
   def log(message: String, `type`: String, wait: Double): IAlertifyStatic = js.native
   /**
@@ -79,7 +82,16 @@ trait IAlertifyStatic extends js.Object {
     * @since 0.0.1
     */
   def prompt(message: String): IAlertifyStatic = js.native
+  def prompt(
+    message: String,
+    fn: js.UndefOr[scala.Nothing],
+    placeholder: js.UndefOr[scala.Nothing],
+    cssClass: String
+  ): IAlertifyStatic = js.native
+  def prompt(message: String, fn: js.UndefOr[scala.Nothing], placeholder: String): IAlertifyStatic = js.native
+  def prompt(message: String, fn: js.UndefOr[scala.Nothing], placeholder: String, cssClass: String): IAlertifyStatic = js.native
   def prompt(message: String, fn: js.Function): IAlertifyStatic = js.native
+  def prompt(message: String, fn: js.Function, placeholder: js.UndefOr[scala.Nothing], cssClass: String): IAlertifyStatic = js.native
   def prompt(message: String, fn: js.Function, placeholder: String): IAlertifyStatic = js.native
   def prompt(message: String, fn: js.Function, placeholder: String, cssClass: String): IAlertifyStatic = js.native
   /**

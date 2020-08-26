@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__reporters
 
-Typings are for version 24.9.0
+Typings are for version 26.2.2
 
 ## Library description:
 Jest's reporters
@@ -10,9 +10,9 @@ Jest's reporters
 | ------------------ | :-------------: |
 | Full name          | @jest/reporters |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 12 |
 | # dependents       | 6 |
-| # downloads        | 101762775 |
+| # downloads        | 105365167 |
 | # stars            | 0 |
 
 ## Links

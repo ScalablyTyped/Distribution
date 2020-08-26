@@ -4,38 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IHTMLImgElement extends js.Object {
   @JSName("MSHTML.IHTMLImgElement_typekey")
-  var MSHTMLDotIHTMLImgElement_typekey: IHTMLImgElement
-  var align: String
-  var alt: String
-  var border: js.Any
-  val complete: Boolean
-  var dynsrc: String
-  val fileCreatedDate: String
-  val fileModifiedDate: String
-  val fileSize: String
-  val fileUpdatedDate: String
-  var height: Double
-  val href: String
-  var hspace: Double
-  var isMap: Boolean
-  var loop: js.Any
-  var lowsrc: String
-  val mimeType: String
-  var name: String
-  val nameProp: String
-  var onabort: js.Any
-  var onerror: js.Any
-  var onload: js.Any
-  val protocol: String
-  val readyState: String
-  var src: String
-  var start: String
-  var useMap: String
-  var vrml: String
-  var vspace: Double
-  var width: Double
+  var MSHTMLDotIHTMLImgElement_typekey: IHTMLImgElement = js.native
+  var align: String = js.native
+  var alt: String = js.native
+  var border: js.Any = js.native
+  val complete: Boolean = js.native
+  var dynsrc: String = js.native
+  val fileCreatedDate: String = js.native
+  val fileModifiedDate: String = js.native
+  val fileSize: String = js.native
+  val fileUpdatedDate: String = js.native
+  var height: Double = js.native
+  val href: String = js.native
+  var hspace: Double = js.native
+  var isMap: Boolean = js.native
+  var loop: js.Any = js.native
+  var lowsrc: String = js.native
+  val mimeType: String = js.native
+  var name: String = js.native
+  val nameProp: String = js.native
+  var onabort: js.Any = js.native
+  var onerror: js.Any = js.native
+  var onload: js.Any = js.native
+  val protocol: String = js.native
+  val readyState: String = js.native
+  var src: String = js.native
+  var start: String = js.native
+  var useMap: String = js.native
+  var vrml: String = js.native
+  var vspace: Double = js.native
+  var width: Double = js.native
 }
 
 object IHTMLImgElement {
@@ -76,5 +77,78 @@ object IHTMLImgElement {
     __obj.updateDynamic("MSHTML.IHTMLImgElement_typekey")(MSHTMLDotIHTMLImgElement_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHTMLImgElement]
   }
+  @scala.inline
+  implicit class IHTMLImgElementOps[Self <: IHTMLImgElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMSHTMLDotIHTMLImgElement_typekey(value: IHTMLImgElement): Self = this.set("MSHTML.IHTMLImgElement_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBorder(value: js.Any): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComplete(value: Boolean): Self = this.set("complete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDynsrc(value: String): Self = this.set("dynsrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileCreatedDate(value: String): Self = this.set("fileCreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileModifiedDate(value: String): Self = this.set("fileModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileSize(value: String): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileUpdatedDate(value: String): Self = this.set("fileUpdatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHspace(value: Double): Self = this.set("hspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsMap(value: Boolean): Self = this.set("isMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoop(value: js.Any): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLowsrc(value: String): Self = this.set("lowsrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNameProp(value: String): Self = this.set("nameProp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnabort(value: js.Any): Self = this.set("onabort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnerror(value: js.Any): Self = this.set("onerror", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnload(value: js.Any): Self = this.set("onload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReadyState(value: String): Self = this.set("readyState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUseMap(value: String): Self = this.set("useMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVrml(value: String): Self = this.set("vrml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVspace(value: Double): Self = this.set("vspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+  }
+  
 }
 

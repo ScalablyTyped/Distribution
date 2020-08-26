@@ -12,7 +12,7 @@ The lodash method `_.differenceBy` exported as a module.
 | Keywords           | lodash-modularized, differenceby |
 | # releases         | 0 |
 | # dependents       | 30 |
-| # downloads        | 1056403 |
+| # downloads        | 1102525 |
 | # stars            | 0 |
 
 ## Links

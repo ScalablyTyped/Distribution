@@ -65,7 +65,7 @@ trait RouteParameters
     */
   var directionsLengthUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards = js.native
   /**
-    * Defines the amount of direction information returned.
+    * Defines the amount of direction information returned.  See the [directionsOutputType descriptions](https://developers.arcgis.com/rest/network/api-reference/route-synchronous-service.htm#GUID-AC59C317-CB41-4E1B-A660-1A31C9EB2E44) for more information about what each property value means.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsOutputType)
     */
@@ -267,11 +267,11 @@ trait RouteParameters
     */
   var stops: DataLayer | FeatureSet = js.native
   /**
-    * Travel modes define how a pedestrian, car, truck or other medium of transportation moves through the street network.
+    * A travel mode represents a means of transportation, such as driving or walking. Travel modes define the physical characteristics of a vehicle or pedestrian.  The value for the `travelMode` parameter is the JSON object containing the settings for a travel mode supported by your service. To get the supported travel modes, execute the `retrieveTravelModes` operation. You can make a request to retrieve travel modes using the following form: `https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World/retrieveTravelModes?f=json`
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#travelMode)
     */
-  var travelMode: String = js.native
+  var travelMode: js.Any = js.native
   /**
     * If `true`, the hierarchy attribute for the network should be used in analysis. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).
     *

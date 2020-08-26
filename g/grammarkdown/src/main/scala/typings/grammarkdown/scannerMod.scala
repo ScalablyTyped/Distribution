@@ -20,7 +20,7 @@ object scannerMod extends js.Object {
     def this(filename: String, text: String, diagnostics: DiagnosticMessages) = this()
     def this(filename: String, text: String, diagnostics: DiagnosticMessages, cancelable: Cancelable) = this()
     def this(filename: String, text: String, diagnostics: DiagnosticMessages, cancelable: CancellationToken) = this()
-    val cancelToken: js.UndefOr[js.Any] = js.native
+    val cancelToken: js.Any = js.native
     var currentIndentLength: js.Any = js.native
     var decimalDigitAt: js.Any = js.native
     var diagnostics: js.Any = js.native
@@ -83,6 +83,13 @@ object scannerMod extends js.Object {
   
   def scanHtmlTrivia(text: String, pos: Double, end: Double): js.UndefOr[js.Array[HtmlTrivia]] = js.native
   def skipTrivia(text: String, pos: Double, end: Double): Double = js.native
+  def skipTrivia(
+    text: String,
+    pos: Double,
+    end: Double,
+    htmlTrivia: js.UndefOr[scala.Nothing],
+    commentTrivia: js.Array[CommentTrivia]
+  ): Double = js.native
   def skipTrivia(text: String, pos: Double, end: Double, htmlTrivia: js.Array[HtmlTrivia]): Double = js.native
   def skipTrivia(
     text: String,

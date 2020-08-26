@@ -34,16 +34,10 @@ object ownerRefMod extends js.Object {
       * @param ascending Whether to sort ascending rather than descending (default false unless sorting by full_name)
       * @returns         The resulting array of repositories
       */
-    def loadOrganizationRepositoriesAsync(): js.Promise[js.Array[Repository]] = js.native
-    def loadOrganizationRepositoriesAsync(`type`: all | public | `private` | forks | sources | member): js.Promise[js.Array[Repository]] = js.native
     def loadOrganizationRepositoriesAsync(
-      `type`: all | public | `private` | forks | sources | member,
-      sort: created | updated | pushed | full_name
-    ): js.Promise[js.Array[Repository]] = js.native
-    def loadOrganizationRepositoriesAsync(
-      `type`: all | public | `private` | forks | sources | member,
-      sort: created | updated | pushed | full_name,
-      ascending: Boolean
+      `type`: js.UndefOr[all | public | `private` | forks | sources | member],
+      sort: js.UndefOr[created | updated | pushed | full_name],
+      ascending: js.UndefOr[Boolean]
     ): js.Promise[js.Array[Repository]] = js.native
     /**
       * Loads repositories accessible to this user.
@@ -53,6 +47,7 @@ object ownerRefMod extends js.Object {
       * @returns         The resulting array of repositories
       */
     def loadRepositoriesAsync(): js.Promise[js.Array[Repository]] = js.native
+    def loadRepositoriesAsync(`type`: js.UndefOr[scala.Nothing], sort: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
     def loadRepositoriesAsync(`type`: all, sort: created): js.Promise[js.Array[Repository]] = js.native
     def loadRepositoriesAsync(`type`: all, sort: created, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
     def loadRepositoriesAsync(`type`: all, sort: full_name): js.Promise[js.Array[Repository]] = js.native
@@ -80,9 +75,31 @@ object ownerRefMod extends js.Object {
     @JSName("loadRepositoriesAsync")
     def loadRepositoriesAsync_all(`type`: all): js.Promise[js.Array[Repository]] = js.native
     @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_all(`type`: all, sort: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_created(`type`: js.UndefOr[scala.Nothing], sort: created): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_created(`type`: js.UndefOr[scala.Nothing], sort: created, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_fullname(`type`: js.UndefOr[scala.Nothing], sort: full_name): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_fullname(`type`: js.UndefOr[scala.Nothing], sort: full_name, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
     def loadRepositoriesAsync_member(`type`: member): js.Promise[js.Array[Repository]] = js.native
     @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_member(`type`: member, sort: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
     def loadRepositoriesAsync_owner(`type`: owner): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_owner(`type`: owner, sort: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_pushed(`type`: js.UndefOr[scala.Nothing], sort: pushed): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_pushed(`type`: js.UndefOr[scala.Nothing], sort: pushed, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_updated(`type`: js.UndefOr[scala.Nothing], sort: updated): js.Promise[js.Array[Repository]] = js.native
+    @JSName("loadRepositoriesAsync")
+    def loadRepositoriesAsync_updated(`type`: js.UndefOr[scala.Nothing], sort: updated, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
     def loadUserAsync(): js.Promise[User | Null] = js.native
   }
   

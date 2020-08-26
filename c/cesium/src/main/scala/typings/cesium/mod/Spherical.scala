@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Spherical () extends js.Object {
   def this(clock: Double) = this()
+  def this(clock: js.UndefOr[scala.Nothing], cone: Double) = this()
   def this(clock: Double, cone: Double) = this()
+  def this(clock: js.UndefOr[scala.Nothing], cone: js.UndefOr[scala.Nothing], magnitude: Double) = this()
+  def this(clock: js.UndefOr[scala.Nothing], cone: Double, magnitude: Double) = this()
+  def this(clock: Double, cone: js.UndefOr[scala.Nothing], magnitude: Double) = this()
   def this(clock: Double, cone: Double, magnitude: Double) = this()
   var clock: Double = js.native
   var cone: Double = js.native

@@ -30,19 +30,44 @@ trait InstanceGroupModifyConfig extends js.Object {
 
 object InstanceGroupModifyConfig {
   @scala.inline
-  def apply(
-    InstanceGroupId: XmlStringMaxLen256,
-    Configurations: ConfigurationList = null,
-    EC2InstanceIdsToTerminate: EC2InstanceIdsToTerminateList = null,
-    InstanceCount: js.UndefOr[Integer] = js.undefined,
-    ShrinkPolicy: ShrinkPolicy = null
-  ): InstanceGroupModifyConfig = {
+  def apply(InstanceGroupId: XmlStringMaxLen256): InstanceGroupModifyConfig = {
     val __obj = js.Dynamic.literal(InstanceGroupId = InstanceGroupId.asInstanceOf[js.Any])
-    if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
-    if (EC2InstanceIdsToTerminate != null) __obj.updateDynamic("EC2InstanceIdsToTerminate")(EC2InstanceIdsToTerminate.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
-    if (ShrinkPolicy != null) __obj.updateDynamic("ShrinkPolicy")(ShrinkPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupModifyConfig]
   }
+  @scala.inline
+  implicit class InstanceGroupModifyConfigOps[Self <: InstanceGroupModifyConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceGroupId(value: XmlStringMaxLen256): Self = this.set("InstanceGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationsVarargs(value: Configuration*): Self = this.set("Configurations", js.Array(value :_*))
+    @scala.inline
+    def setConfigurations(value: ConfigurationList): Self = this.set("Configurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurations: Self = this.set("Configurations", js.undefined)
+    @scala.inline
+    def setEC2InstanceIdsToTerminateVarargs(value: InstanceId*): Self = this.set("EC2InstanceIdsToTerminate", js.Array(value :_*))
+    @scala.inline
+    def setEC2InstanceIdsToTerminate(value: EC2InstanceIdsToTerminateList): Self = this.set("EC2InstanceIdsToTerminate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEC2InstanceIdsToTerminate: Self = this.set("EC2InstanceIdsToTerminate", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+    @scala.inline
+    def setShrinkPolicy(value: ShrinkPolicy): Self = this.set("ShrinkPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShrinkPolicy: Self = this.set("ShrinkPolicy", js.undefined)
+  }
+  
 }
 

@@ -42,26 +42,54 @@ trait RepositoryAssociationSummary extends js.Object {
 
 object RepositoryAssociationSummary {
   @scala.inline
-  def apply(
-    AssociationArn: Arn = null,
-    AssociationId: AssociationId = null,
-    ConnectionArn: ConnectionArn = null,
-    LastUpdatedTimeStamp: TimeStamp = null,
-    Name: Name = null,
-    Owner: Owner = null,
-    ProviderType: ProviderType = null,
-    State: RepositoryAssociationState = null
-  ): RepositoryAssociationSummary = {
+  def apply(): RepositoryAssociationSummary = {
     val __obj = js.Dynamic.literal()
-    if (AssociationArn != null) __obj.updateDynamic("AssociationArn")(AssociationArn.asInstanceOf[js.Any])
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
-    if (ConnectionArn != null) __obj.updateDynamic("ConnectionArn")(ConnectionArn.asInstanceOf[js.Any])
-    if (LastUpdatedTimeStamp != null) __obj.updateDynamic("LastUpdatedTimeStamp")(LastUpdatedTimeStamp.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (ProviderType != null) __obj.updateDynamic("ProviderType")(ProviderType.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryAssociationSummary]
   }
+  @scala.inline
+  implicit class RepositoryAssociationSummaryOps[Self <: RepositoryAssociationSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationArn(value: Arn): Self = this.set("AssociationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationArn: Self = this.set("AssociationArn", js.undefined)
+    @scala.inline
+    def setAssociationId(value: AssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    @scala.inline
+    def setConnectionArn(value: ConnectionArn): Self = this.set("ConnectionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionArn: Self = this.set("ConnectionArn", js.undefined)
+    @scala.inline
+    def setLastUpdatedTimeStamp(value: TimeStamp): Self = this.set("LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTimeStamp: Self = this.set("LastUpdatedTimeStamp", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setProviderType(value: ProviderType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderType: Self = this.set("ProviderType", js.undefined)
+    @scala.inline
+    def setState(value: RepositoryAssociationState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

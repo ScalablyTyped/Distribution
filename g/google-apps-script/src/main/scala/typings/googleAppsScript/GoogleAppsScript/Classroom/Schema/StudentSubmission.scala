@@ -4,66 +4,115 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StudentSubmission extends js.Object {
-  var alternateLink: js.UndefOr[String] = js.undefined
-  var assignedGrade: js.UndefOr[Double] = js.undefined
-  var assignmentSubmission: js.UndefOr[AssignmentSubmission] = js.undefined
-  var associatedWithDeveloper: js.UndefOr[Boolean] = js.undefined
-  var courseId: js.UndefOr[String] = js.undefined
-  var courseWorkId: js.UndefOr[String] = js.undefined
-  var courseWorkType: js.UndefOr[String] = js.undefined
-  var creationTime: js.UndefOr[String] = js.undefined
-  var draftGrade: js.UndefOr[Double] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var late: js.UndefOr[Boolean] = js.undefined
-  var multipleChoiceSubmission: js.UndefOr[MultipleChoiceSubmission] = js.undefined
-  var shortAnswerSubmission: js.UndefOr[ShortAnswerSubmission] = js.undefined
-  var state: js.UndefOr[String] = js.undefined
-  var submissionHistory: js.UndefOr[js.Array[SubmissionHistory]] = js.undefined
-  var updateTime: js.UndefOr[String] = js.undefined
-  var userId: js.UndefOr[String] = js.undefined
+  var alternateLink: js.UndefOr[String] = js.native
+  var assignedGrade: js.UndefOr[Double] = js.native
+  var assignmentSubmission: js.UndefOr[AssignmentSubmission] = js.native
+  var associatedWithDeveloper: js.UndefOr[Boolean] = js.native
+  var courseId: js.UndefOr[String] = js.native
+  var courseWorkId: js.UndefOr[String] = js.native
+  var courseWorkType: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.native
+  var draftGrade: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[String] = js.native
+  var late: js.UndefOr[Boolean] = js.native
+  var multipleChoiceSubmission: js.UndefOr[MultipleChoiceSubmission] = js.native
+  var shortAnswerSubmission: js.UndefOr[ShortAnswerSubmission] = js.native
+  var state: js.UndefOr[String] = js.native
+  var submissionHistory: js.UndefOr[js.Array[SubmissionHistory]] = js.native
+  var updateTime: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.native
 }
 
 object StudentSubmission {
   @scala.inline
-  def apply(
-    alternateLink: String = null,
-    assignedGrade: js.UndefOr[Double] = js.undefined,
-    assignmentSubmission: AssignmentSubmission = null,
-    associatedWithDeveloper: js.UndefOr[Boolean] = js.undefined,
-    courseId: String = null,
-    courseWorkId: String = null,
-    courseWorkType: String = null,
-    creationTime: String = null,
-    draftGrade: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    late: js.UndefOr[Boolean] = js.undefined,
-    multipleChoiceSubmission: MultipleChoiceSubmission = null,
-    shortAnswerSubmission: ShortAnswerSubmission = null,
-    state: String = null,
-    submissionHistory: js.Array[SubmissionHistory] = null,
-    updateTime: String = null,
-    userId: String = null
-  ): StudentSubmission = {
+  def apply(): StudentSubmission = {
     val __obj = js.Dynamic.literal()
-    if (alternateLink != null) __obj.updateDynamic("alternateLink")(alternateLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(assignedGrade)) __obj.updateDynamic("assignedGrade")(assignedGrade.get.asInstanceOf[js.Any])
-    if (assignmentSubmission != null) __obj.updateDynamic("assignmentSubmission")(assignmentSubmission.asInstanceOf[js.Any])
-    if (!js.isUndefined(associatedWithDeveloper)) __obj.updateDynamic("associatedWithDeveloper")(associatedWithDeveloper.get.asInstanceOf[js.Any])
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
-    if (courseWorkId != null) __obj.updateDynamic("courseWorkId")(courseWorkId.asInstanceOf[js.Any])
-    if (courseWorkType != null) __obj.updateDynamic("courseWorkType")(courseWorkType.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(draftGrade)) __obj.updateDynamic("draftGrade")(draftGrade.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(late)) __obj.updateDynamic("late")(late.get.asInstanceOf[js.Any])
-    if (multipleChoiceSubmission != null) __obj.updateDynamic("multipleChoiceSubmission")(multipleChoiceSubmission.asInstanceOf[js.Any])
-    if (shortAnswerSubmission != null) __obj.updateDynamic("shortAnswerSubmission")(shortAnswerSubmission.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (submissionHistory != null) __obj.updateDynamic("submissionHistory")(submissionHistory.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StudentSubmission]
   }
+  @scala.inline
+  implicit class StudentSubmissionOps[Self <: StudentSubmission] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlternateLink(value: String): Self = this.set("alternateLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternateLink: Self = this.set("alternateLink", js.undefined)
+    @scala.inline
+    def setAssignedGrade(value: Double): Self = this.set("assignedGrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignedGrade: Self = this.set("assignedGrade", js.undefined)
+    @scala.inline
+    def setAssignmentSubmission(value: AssignmentSubmission): Self = this.set("assignmentSubmission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentSubmission: Self = this.set("assignmentSubmission", js.undefined)
+    @scala.inline
+    def setAssociatedWithDeveloper(value: Boolean): Self = this.set("associatedWithDeveloper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedWithDeveloper: Self = this.set("associatedWithDeveloper", js.undefined)
+    @scala.inline
+    def setCourseId(value: String): Self = this.set("courseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCourseId: Self = this.set("courseId", js.undefined)
+    @scala.inline
+    def setCourseWorkId(value: String): Self = this.set("courseWorkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCourseWorkId: Self = this.set("courseWorkId", js.undefined)
+    @scala.inline
+    def setCourseWorkType(value: String): Self = this.set("courseWorkType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCourseWorkType: Self = this.set("courseWorkType", js.undefined)
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDraftGrade(value: Double): Self = this.set("draftGrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraftGrade: Self = this.set("draftGrade", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLate(value: Boolean): Self = this.set("late", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLate: Self = this.set("late", js.undefined)
+    @scala.inline
+    def setMultipleChoiceSubmission(value: MultipleChoiceSubmission): Self = this.set("multipleChoiceSubmission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultipleChoiceSubmission: Self = this.set("multipleChoiceSubmission", js.undefined)
+    @scala.inline
+    def setShortAnswerSubmission(value: ShortAnswerSubmission): Self = this.set("shortAnswerSubmission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortAnswerSubmission: Self = this.set("shortAnswerSubmission", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setSubmissionHistoryVarargs(value: SubmissionHistory*): Self = this.set("submissionHistory", js.Array(value :_*))
+    @scala.inline
+    def setSubmissionHistory(value: js.Array[SubmissionHistory]): Self = this.set("submissionHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmissionHistory: Self = this.set("submissionHistory", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

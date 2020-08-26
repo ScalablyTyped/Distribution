@@ -38,62 +38,126 @@ trait PartialStyleRulesButtonCl extends js.Object {
 
 object PartialStyleRulesButtonCl {
   @scala.inline
-  def apply(
-    colorInherit: CSSProperties = null,
-    contained: CSSProperties = null,
-    containedPrimary: CSSProperties = null,
-    containedSecondary: CSSProperties = null,
-    disabled: CSSProperties = null,
-    extendedFab: CSSProperties = null,
-    fab: CSSProperties = null,
-    flat: CSSProperties = null,
-    flatPrimary: CSSProperties = null,
-    flatSecondary: CSSProperties = null,
-    focusVisible: CSSProperties = null,
-    fullWidth: CSSProperties = null,
-    label: CSSProperties = null,
-    mini: CSSProperties = null,
-    outlined: CSSProperties = null,
-    outlinedPrimary: CSSProperties = null,
-    outlinedSecondary: CSSProperties = null,
-    raised: CSSProperties = null,
-    raisedPrimary: CSSProperties = null,
-    raisedSecondary: CSSProperties = null,
-    root: CSSProperties = null,
-    sizeLarge: CSSProperties = null,
-    sizeSmall: CSSProperties = null,
-    text: CSSProperties = null,
-    textPrimary: CSSProperties = null,
-    textSecondary: CSSProperties = null
-  ): PartialStyleRulesButtonCl = {
+  def apply(): PartialStyleRulesButtonCl = {
     val __obj = js.Dynamic.literal()
-    if (colorInherit != null) __obj.updateDynamic("colorInherit")(colorInherit.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (containedPrimary != null) __obj.updateDynamic("containedPrimary")(containedPrimary.asInstanceOf[js.Any])
-    if (containedSecondary != null) __obj.updateDynamic("containedSecondary")(containedSecondary.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (extendedFab != null) __obj.updateDynamic("extendedFab")(extendedFab.asInstanceOf[js.Any])
-    if (fab != null) __obj.updateDynamic("fab")(fab.asInstanceOf[js.Any])
-    if (flat != null) __obj.updateDynamic("flat")(flat.asInstanceOf[js.Any])
-    if (flatPrimary != null) __obj.updateDynamic("flatPrimary")(flatPrimary.asInstanceOf[js.Any])
-    if (flatSecondary != null) __obj.updateDynamic("flatSecondary")(flatSecondary.asInstanceOf[js.Any])
-    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible.asInstanceOf[js.Any])
-    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (mini != null) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
-    if (outlined != null) __obj.updateDynamic("outlined")(outlined.asInstanceOf[js.Any])
-    if (outlinedPrimary != null) __obj.updateDynamic("outlinedPrimary")(outlinedPrimary.asInstanceOf[js.Any])
-    if (outlinedSecondary != null) __obj.updateDynamic("outlinedSecondary")(outlinedSecondary.asInstanceOf[js.Any])
-    if (raised != null) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
-    if (raisedPrimary != null) __obj.updateDynamic("raisedPrimary")(raisedPrimary.asInstanceOf[js.Any])
-    if (raisedSecondary != null) __obj.updateDynamic("raisedSecondary")(raisedSecondary.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (sizeLarge != null) __obj.updateDynamic("sizeLarge")(sizeLarge.asInstanceOf[js.Any])
-    if (sizeSmall != null) __obj.updateDynamic("sizeSmall")(sizeSmall.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textPrimary != null) __obj.updateDynamic("textPrimary")(textPrimary.asInstanceOf[js.Any])
-    if (textSecondary != null) __obj.updateDynamic("textSecondary")(textSecondary.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesButtonCl]
   }
+  @scala.inline
+  implicit class PartialStyleRulesButtonClOps[Self <: PartialStyleRulesButtonCl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorInherit(value: CSSProperties): Self = this.set("colorInherit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorInherit: Self = this.set("colorInherit", js.undefined)
+    @scala.inline
+    def setContained(value: CSSProperties): Self = this.set("contained", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContained: Self = this.set("contained", js.undefined)
+    @scala.inline
+    def setContainedPrimary(value: CSSProperties): Self = this.set("containedPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainedPrimary: Self = this.set("containedPrimary", js.undefined)
+    @scala.inline
+    def setContainedSecondary(value: CSSProperties): Self = this.set("containedSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainedSecondary: Self = this.set("containedSecondary", js.undefined)
+    @scala.inline
+    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setExtendedFab(value: CSSProperties): Self = this.set("extendedFab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedFab: Self = this.set("extendedFab", js.undefined)
+    @scala.inline
+    def setFab(value: CSSProperties): Self = this.set("fab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFab: Self = this.set("fab", js.undefined)
+    @scala.inline
+    def setFlat(value: CSSProperties): Self = this.set("flat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlat: Self = this.set("flat", js.undefined)
+    @scala.inline
+    def setFlatPrimary(value: CSSProperties): Self = this.set("flatPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatPrimary: Self = this.set("flatPrimary", js.undefined)
+    @scala.inline
+    def setFlatSecondary(value: CSSProperties): Self = this.set("flatSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatSecondary: Self = this.set("flatSecondary", js.undefined)
+    @scala.inline
+    def setFocusVisible(value: CSSProperties): Self = this.set("focusVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusVisible: Self = this.set("focusVisible", js.undefined)
+    @scala.inline
+    def setFullWidth(value: CSSProperties): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    @scala.inline
+    def setLabel(value: CSSProperties): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMini(value: CSSProperties): Self = this.set("mini", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMini: Self = this.set("mini", js.undefined)
+    @scala.inline
+    def setOutlined(value: CSSProperties): Self = this.set("outlined", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlined: Self = this.set("outlined", js.undefined)
+    @scala.inline
+    def setOutlinedPrimary(value: CSSProperties): Self = this.set("outlinedPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlinedPrimary: Self = this.set("outlinedPrimary", js.undefined)
+    @scala.inline
+    def setOutlinedSecondary(value: CSSProperties): Self = this.set("outlinedSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlinedSecondary: Self = this.set("outlinedSecondary", js.undefined)
+    @scala.inline
+    def setRaised(value: CSSProperties): Self = this.set("raised", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaised: Self = this.set("raised", js.undefined)
+    @scala.inline
+    def setRaisedPrimary(value: CSSProperties): Self = this.set("raisedPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaisedPrimary: Self = this.set("raisedPrimary", js.undefined)
+    @scala.inline
+    def setRaisedSecondary(value: CSSProperties): Self = this.set("raisedSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaisedSecondary: Self = this.set("raisedSecondary", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSizeLarge(value: CSSProperties): Self = this.set("sizeLarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeLarge: Self = this.set("sizeLarge", js.undefined)
+    @scala.inline
+    def setSizeSmall(value: CSSProperties): Self = this.set("sizeSmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeSmall: Self = this.set("sizeSmall", js.undefined)
+    @scala.inline
+    def setText(value: CSSProperties): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextPrimary(value: CSSProperties): Self = this.set("textPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextPrimary: Self = this.set("textPrimary", js.undefined)
+    @scala.inline
+    def setTextSecondary(value: CSSProperties): Self = this.set("textSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextSecondary: Self = this.set("textSecondary", js.undefined)
+  }
+  
 }
 

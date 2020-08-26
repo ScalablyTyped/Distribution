@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   * full featured components need a {@link XModel} interface too. ;  (see service {@link com.sun.star.document.OfficeDocument} for further information)
   * @see com.sun.star.document.OfficeDocument
   */
+@js.native
 trait Controller
   extends XController
      with XDispatchProvider

@@ -8,7 +8,7 @@ package object mod {
   type ArrayOrSingle[T /* <: js.Any */] = T | js.Array[T]
   type ArrayOrString = typings.c3.mod.ArrayOrSingle[java.lang.String]
   type Domain = js.Tuple2[scala.Double, scala.Double]
-  type ExpandOptions = scala.Boolean | typings.c3.anon.DurationNumber
+  type ExpandOptions = scala.Boolean | typings.c3.anon.`0`
   type FormatFunction = js.Function4[
     /* v */ scala.Double | typings.c3.anon.ValueOf, 
     /* id */ java.lang.String, 

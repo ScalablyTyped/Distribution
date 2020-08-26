@@ -53,10 +53,8 @@ abstract class MemberRef protected () extends Element {
   def containerAsStaticOrDynamicString: StaticOrDynamicString = js.native
   def containerAsVariableRefExpression: VariableRefExpression = js.native
   def containerAsWidgetValue: WidgetValue = js.native
-  def entityRef(): js.Any = js.native
-  def entityRef(newValue: IndirectEntityRef): js.Any = js.native
-  @JSName("entityRef")
-  def entityRef_Union: IndirectEntityRef | Null = js.native
+  def entityRef: IndirectEntityRef | Null = js.native
+  def entityRef_=(newValue: IndirectEntityRef | Null): Unit = js.native
 }
 
 /* static members */

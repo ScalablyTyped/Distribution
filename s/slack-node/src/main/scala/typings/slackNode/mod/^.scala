@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends Slack {
   def this(token: String) = this()
+  def this(token: js.UndefOr[scala.Nothing], domain: String) = this()
   def this(token: String, domain: String) = this()
 }
 

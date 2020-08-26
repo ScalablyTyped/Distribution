@@ -45,6 +45,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param easing A string indicating the easing for the animation, such as "ease-out", "ease-in", "ease-in-out".
     */
   def animate(options: js.Object): Unit = js.native
+  def animate(options: js.Object, duration: js.UndefOr[scala.Nothing], easing: String): Unit = js.native
   def animate(options: js.Object, duration: String): Unit = js.native
   def animate(options: js.Object, duration: String, easing: String): Unit = js.native
   def append(content: String): ChocolateChipElementArray = js.native
@@ -272,6 +273,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param callback A function to call once the animation is complete.
     */
   def hide(): ChocolateChipElementArray = js.native
+  def hide(duration: js.UndefOr[scala.Nothing], callback: js.Function): ChocolateChipElementArray = js.native
   def hide(duration: String): ChocolateChipElementArray = js.native
   def hide(duration: String, callback: js.Function): ChocolateChipElementArray = js.native
   def hide(duration: Double): ChocolateChipElementArray = js.native
@@ -351,8 +353,61 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
   def off(): ChocolateChipStatic = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    capturePhase: Boolean
+  ): ChocolateChipStatic = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ Event, _]
+  ): ChocolateChipStatic = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ Event, _],
+    capturePhase: Boolean
+  ): ChocolateChipStatic = js.native
+  def off(eventType: js.UndefOr[scala.Nothing], selector: js.Any): ChocolateChipStatic = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    selector: js.Any,
+    handler: js.UndefOr[scala.Nothing],
+    capturePhase: Boolean
+  ): ChocolateChipStatic = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    selector: js.Any,
+    handler: js.Function1[/* eventObject */ Event, _]
+  ): ChocolateChipStatic = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    selector: js.Any,
+    handler: js.Function1[/* eventObject */ Event, _],
+    capturePhase: Boolean
+  ): ChocolateChipStatic = js.native
   def off(eventType: String): ChocolateChipStatic = js.native
+  def off(
+    eventType: String,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    capturePhase: Boolean
+  ): ChocolateChipStatic = js.native
+  def off(
+    eventType: String,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ Event, _]
+  ): ChocolateChipStatic = js.native
+  def off(
+    eventType: String,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ Event, _],
+    capturePhase: Boolean
+  ): ChocolateChipStatic = js.native
   def off(eventType: String, selector: js.Any): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: js.Any, handler: js.UndefOr[scala.Nothing], capturePhase: Boolean): ChocolateChipStatic = js.native
   def off(eventType: String, selector: js.Any, handler: js.Function1[/* eventObject */ Event, _]): ChocolateChipStatic = js.native
   def off(
     eventType: String,
@@ -374,6 +429,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
   def on(eventType: String, selector: js.Any): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: js.Any, handler: js.UndefOr[scala.Nothing], capturePhase: Boolean): ChocolateChipStatic = js.native
   def on(eventType: String, selector: js.Any, handler: js.Function1[/* eventObject */ Event, _]): ChocolateChipStatic = js.native
   def on(
     eventType: String,
@@ -464,6 +520,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param callback A function to call once the animation is complete.
     */
   def show(): ChocolateChipElementArray = js.native
+  def show(duration: js.UndefOr[scala.Nothing], callback: js.Function): ChocolateChipElementArray = js.native
   def show(duration: String): ChocolateChipElementArray = js.native
   def show(duration: String, callback: js.Function): ChocolateChipElementArray = js.native
   def show(duration: Double): ChocolateChipElementArray = js.native
@@ -510,7 +567,15 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
   def unbind(): ChocolateChipStatic = js.native
+  def unbind(eventType: js.UndefOr[scala.Nothing], handler: js.UndefOr[scala.Nothing], useCapture: Boolean): ChocolateChipStatic = js.native
+  def unbind(eventType: js.UndefOr[scala.Nothing], handler: js.Function1[/* eventObject */ Event, _]): ChocolateChipStatic = js.native
+  def unbind(
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ Event, _],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
   def unbind(eventType: String): ChocolateChipStatic = js.native
+  def unbind(eventType: String, handler: js.UndefOr[scala.Nothing], useCapture: Boolean): ChocolateChipStatic = js.native
   def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, _]): ChocolateChipStatic = js.native
   def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, _], useCapture: Boolean): ChocolateChipStatic = js.native
   /**
@@ -522,8 +587,61 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
   def undelegate(): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: js.UndefOr[scala.Nothing],
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: js.UndefOr[scala.Nothing],
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ Event, _]
+  ): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: js.UndefOr[scala.Nothing],
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ Event, _],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
+  def undelegate(selector: js.UndefOr[scala.Nothing], eventType: String): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: js.UndefOr[scala.Nothing],
+    eventType: String,
+    handler: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: js.UndefOr[scala.Nothing],
+    eventType: String,
+    handler: js.Function1[/* eventObject */ Event, _]
+  ): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: js.UndefOr[scala.Nothing],
+    eventType: String,
+    handler: js.Function1[/* eventObject */ Event, _],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
   def undelegate(selector: js.Any): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: js.Any,
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: js.Any,
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ Event, _]
+  ): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: js.Any,
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ Event, _],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
   def undelegate(selector: js.Any, eventType: String): ChocolateChipStatic = js.native
+  def undelegate(selector: js.Any, eventType: String, handler: js.UndefOr[scala.Nothing], useCapture: Boolean): ChocolateChipStatic = js.native
   def undelegate(selector: js.Any, eventType: String, handler: js.Function1[/* eventObject */ Event, _]): ChocolateChipStatic = js.native
   def undelegate(
     selector: js.Any,

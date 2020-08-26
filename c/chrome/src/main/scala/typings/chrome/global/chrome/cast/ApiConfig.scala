@@ -33,16 +33,15 @@ class ApiConfig protected ()
     sessionRequest: typings.chrome.chrome.cast.SessionRequest,
     sessionListener: js.Function1[/* session */ typings.chrome.chrome.cast.Session, Unit],
     receiverListener: js.Function1[/* receiverAvailability */ typings.chrome.chrome.cast.ReceiverAvailability, Unit],
+    autoJoinPolicy: js.UndefOr[scala.Nothing],
+    defaultActionPolicy: typings.chrome.chrome.cast.DefaultActionPolicy
+  ) = this()
+  def this(
+    sessionRequest: typings.chrome.chrome.cast.SessionRequest,
+    sessionListener: js.Function1[/* session */ typings.chrome.chrome.cast.Session, Unit],
+    receiverListener: js.Function1[/* receiverAvailability */ typings.chrome.chrome.cast.ReceiverAvailability, Unit],
     autoJoinPolicy: typings.chrome.chrome.cast.AutoJoinPolicy,
     defaultActionPolicy: typings.chrome.chrome.cast.DefaultActionPolicy
   ) = this()
-  /* CompleteClass */
-  override var defaultActionPolicy: typings.chrome.chrome.cast.DefaultActionPolicy = js.native
-  /* CompleteClass */
-  override var sessionRequest: typings.chrome.chrome.cast.SessionRequest = js.native
-  /* CompleteClass */
-  override def receiverListener(receiverAvailability: typings.chrome.chrome.cast.ReceiverAvailability): Unit = js.native
-  /* CompleteClass */
-  override def sessionListener(session: typings.chrome.chrome.cast.Session): Unit = js.native
 }
 

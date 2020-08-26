@@ -8,110 +8,132 @@ import scala.scalajs.js.annotation._
   * Who, What, When for a set of resources
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Provenance extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Provenance extends DomainResource {
   /**
     * Contains extended information for property 'policy'.
     */
-  var _policy: js.UndefOr[js.Array[Element]] = js.undefined
+  var _policy: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Contains extended information for property 'recorded'.
     */
-  var _recorded: js.UndefOr[Element] = js.undefined
+  var _recorded: js.UndefOr[Element] = js.native
   /**
     * Activity that occurred
     */
-  var activity: js.UndefOr[Coding] = js.undefined
+  var activity: js.UndefOr[Coding] = js.native
   /**
     * Actor involved
     */
-  var agent: js.Array[ProvenanceAgent]
+  var agent: js.Array[ProvenanceAgent] = js.native
   /**
     * An entity used in this activity
     */
-  var entity: js.UndefOr[js.Array[ProvenanceEntity]] = js.undefined
+  var entity: js.UndefOr[js.Array[ProvenanceEntity]] = js.native
   /**
     * Where the activity occurred, if relevant
     */
-  var location: js.UndefOr[Reference] = js.undefined
+  var location: js.UndefOr[Reference] = js.native
   /**
     * When the activity occurred
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
   /**
     * Policy or plan the activity was defined by
     */
-  var policy: js.UndefOr[js.Array[uri]] = js.undefined
+  var policy: js.UndefOr[js.Array[uri]] = js.native
   /**
     * Reason the activity is occurring
     */
-  var reason: js.UndefOr[js.Array[Coding]] = js.undefined
+  var reason: js.UndefOr[js.Array[Coding]] = js.native
   /**
     * When the activity was recorded / updated
     */
-  var recorded: instant
+  var recorded: instant = js.native
   /**
     * Signature on target
     */
-  var signature: js.UndefOr[js.Array[Signature]] = js.undefined
+  var signature: js.UndefOr[js.Array[Signature]] = js.native
   /**
     * Target Reference(s) (usually version specific)
     */
-  var target: js.Array[Reference]
+  var target: js.Array[Reference] = js.native
 }
 
 object Provenance {
   @scala.inline
-  def apply(
-    agent: js.Array[ProvenanceAgent],
-    recorded: instant,
-    target: js.Array[Reference],
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _policy: js.Array[Element] = null,
-    _recorded: Element = null,
-    _resourceType: Element = null,
-    activity: Coding = null,
-    contained: js.Array[Resource] = null,
-    entity: js.Array[ProvenanceEntity] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    implicitRules: uri = null,
-    language: code = null,
-    location: Reference = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    period: Period = null,
-    policy: js.Array[uri] = null,
-    reason: js.Array[Coding] = null,
-    resourceType: code = null,
-    signature: js.Array[Signature] = null,
-    text: Narrative = null
-  ): Provenance = {
+  def apply(agent: js.Array[ProvenanceAgent], recorded: instant, target: js.Array[Reference]): Provenance = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], recorded = recorded.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_policy != null) __obj.updateDynamic("_policy")(_policy.asInstanceOf[js.Any])
-    if (_recorded != null) __obj.updateDynamic("_recorded")(_recorded.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Provenance]
   }
+  @scala.inline
+  implicit class ProvenanceOps[Self <: Provenance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentVarargs(value: ProvenanceAgent*): Self = this.set("agent", js.Array(value :_*))
+    @scala.inline
+    def setAgent(value: js.Array[ProvenanceAgent]): Self = this.set("agent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecorded(value: instant): Self = this.set("recorded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetVarargs(value: Reference*): Self = this.set("target", js.Array(value :_*))
+    @scala.inline
+    def setTarget(value: js.Array[Reference]): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_policyVarargs(value: Element*): Self = this.set("_policy", js.Array(value :_*))
+    @scala.inline
+    def set_policy(value: js.Array[Element]): Self = this.set("_policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_policy: Self = this.set("_policy", js.undefined)
+    @scala.inline
+    def set_recorded(value: Element): Self = this.set("_recorded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_recorded: Self = this.set("_recorded", js.undefined)
+    @scala.inline
+    def setActivity(value: Coding): Self = this.set("activity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivity: Self = this.set("activity", js.undefined)
+    @scala.inline
+    def setEntityVarargs(value: ProvenanceEntity*): Self = this.set("entity", js.Array(value :_*))
+    @scala.inline
+    def setEntity(value: js.Array[ProvenanceEntity]): Self = this.set("entity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntity: Self = this.set("entity", js.undefined)
+    @scala.inline
+    def setLocation(value: Reference): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setPolicyVarargs(value: uri*): Self = this.set("policy", js.Array(value :_*))
+    @scala.inline
+    def setPolicy(value: js.Array[uri]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setReasonVarargs(value: Coding*): Self = this.set("reason", js.Array(value :_*))
+    @scala.inline
+    def setReason(value: js.Array[Coding]): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    @scala.inline
+    def setSignatureVarargs(value: Signature*): Self = this.set("signature", js.Array(value :_*))
+    @scala.inline
+    def setSignature(value: js.Array[Signature]): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+  }
+  
 }
 

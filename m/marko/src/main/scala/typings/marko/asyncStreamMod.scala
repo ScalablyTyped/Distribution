@@ -13,7 +13,16 @@ object asyncStreamMod extends js.Object {
     var DEFAULT_TIMEOUT: Double = js.native
     var INCLUDE_STACK: Boolean = js.native
     def apply(global: js.Any): this.type = js.native
+    def apply(
+      global: js.Any,
+      writer: js.UndefOr[scala.Nothing],
+      parentOut: js.UndefOr[scala.Nothing],
+      shouldBuffer: Boolean
+    ): this.type = js.native
+    def apply(global: js.Any, writer: js.UndefOr[scala.Nothing], parentOut: js.Any): this.type = js.native
+    def apply(global: js.Any, writer: js.UndefOr[scala.Nothing], parentOut: js.Any, shouldBuffer: Boolean): this.type = js.native
     def apply(global: js.Any, writer: js.Any): this.type = js.native
+    def apply(global: js.Any, writer: js.Any, parentOut: js.UndefOr[scala.Nothing], shouldBuffer: Boolean): this.type = js.native
     def apply(global: js.Any, writer: js.Any, parentOut: js.Any): this.type = js.native
     def apply(global: js.Any, writer: js.Any, parentOut: js.Any, shouldBuffer: Boolean): this.type = js.native
     def beginElement(name: String, elementAttrs: js.Any): Unit = js.native

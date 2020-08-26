@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/link-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/button-widgets relevant section in reference guide}
   *
   * In version 7.3.0: deleted
   */

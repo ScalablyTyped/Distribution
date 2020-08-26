@@ -28,6 +28,7 @@ class ResourceMarketplacenotes protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaAddOrderNotesResponse] = js.native
   def insert(callback: BodyResponseCallback[SchemaAddOrderNotesResponse]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAddOrderNotesResponse] = js.native
   def insert(params: ParamsResourceMarketplacenotesInsert): GaxiosPromise[SchemaAddOrderNotesResponse] = js.native
   def insert(
     params: ParamsResourceMarketplacenotesInsert,
@@ -59,6 +60,7 @@ class ResourceMarketplacenotes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGetOrderNotesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGetOrderNotesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOrderNotesResponse] = js.native
   def list(params: ParamsResourceMarketplacenotesList): GaxiosPromise[SchemaGetOrderNotesResponse] = js.native
   def list(
     params: ParamsResourceMarketplacenotesList,

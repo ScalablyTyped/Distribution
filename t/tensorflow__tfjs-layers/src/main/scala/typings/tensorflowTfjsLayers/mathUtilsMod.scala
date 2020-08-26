@@ -11,9 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object mathUtilsMod extends js.Object {
   def arrayProd(array: js.Array[Double]): Double = js.native
+  def arrayProd(array: js.Array[Double], begin: js.UndefOr[scala.Nothing], end: Double): Double = js.native
   def arrayProd(array: js.Array[Double], begin: Double): Double = js.native
   def arrayProd(array: js.Array[Double], begin: Double, end: Double): Double = js.native
   def arrayProd(array: ArrayTypes): Double = js.native
+  def arrayProd(array: ArrayTypes, begin: js.UndefOr[scala.Nothing], end: Double): Double = js.native
   def arrayProd(array: ArrayTypes, begin: Double): Double = js.native
   def arrayProd(array: ArrayTypes, begin: Double, end: Double): Double = js.native
   def isInteger(x: Double): Boolean = js.native

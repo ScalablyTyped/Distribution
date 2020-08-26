@@ -4,34 +4,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Endpoint extends js.Object {
-  var app: String
-  var appArgs: js.UndefOr[String] = js.undefined
-  var channelId: js.UndefOr[String] = js.undefined
-  var endpoint: String
-  var formats: js.UndefOr[String] = js.undefined
-  var originator: js.UndefOr[String] = js.undefined
-  var otherChannelId: js.UndefOr[String] = js.undefined
+  var app: String = js.native
+  var appArgs: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.native
+  var endpoint: String = js.native
+  var formats: js.UndefOr[String] = js.native
+  var originator: js.UndefOr[String] = js.native
+  var otherChannelId: js.UndefOr[String] = js.native
 }
 
 object Endpoint {
   @scala.inline
-  def apply(
-    app: String,
-    endpoint: String,
-    appArgs: String = null,
-    channelId: String = null,
-    formats: String = null,
-    originator: String = null,
-    otherChannelId: String = null
-  ): Endpoint = {
+  def apply(app: String, endpoint: String): Endpoint = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any])
-    if (appArgs != null) __obj.updateDynamic("appArgs")(appArgs.asInstanceOf[js.Any])
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (originator != null) __obj.updateDynamic("originator")(originator.asInstanceOf[js.Any])
-    if (otherChannelId != null) __obj.updateDynamic("otherChannelId")(otherChannelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Endpoint]
   }
+  @scala.inline
+  implicit class EndpointOps[Self <: Endpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApp(value: String): Self = this.set("app", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAppArgs(value: String): Self = this.set("appArgs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppArgs: Self = this.set("appArgs", js.undefined)
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setFormats(value: String): Self = this.set("formats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormats: Self = this.set("formats", js.undefined)
+    @scala.inline
+    def setOriginator(value: String): Self = this.set("originator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginator: Self = this.set("originator", js.undefined)
+    @scala.inline
+    def setOtherChannelId(value: String): Self = this.set("otherChannelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherChannelId: Self = this.set("otherChannelId", js.undefined)
+  }
+  
 }
 

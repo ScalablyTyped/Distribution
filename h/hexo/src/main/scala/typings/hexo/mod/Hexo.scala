@@ -64,6 +64,11 @@ trait Hexo extends EventEmitter {
     * Any console command can be called explicitly using the call method on the Hexo instance.
     */
   def call(name: String): js.Promise[_] = js.native
+  def call(
+    name: String,
+    args: js.UndefOr[scala.Nothing],
+    fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]
+  ): js.Promise[_] = js.native
   def call(name: String, args: js.Any): js.Promise[_] = js.native
   def call(name: String, args: js.Any, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[_] = js.native
   def call(name: String, fn: js.Function2[/* err */ js.Any, /* value */ js.Any, Unit]): js.Promise[_] = js.native

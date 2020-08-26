@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "serialize-error" : "5.0.0"
+      "serialize-error" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "serialize-error" : "5.0.0"
+      "serialize-error" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

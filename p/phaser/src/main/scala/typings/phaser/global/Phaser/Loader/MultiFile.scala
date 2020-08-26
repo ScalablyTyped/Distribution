@@ -1,6 +1,5 @@
 package typings.phaser.global.Phaser.Loader
 
-import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,86 +27,5 @@ class MultiFile protected ()
     key: String,
     files: js.Array[typings.phaser.Phaser.Loader.File]
   ) = this()
-  /**
-    * A reference to the Loaders baseURL at the time this MultiFile was created.
-    * Used to populate child-files.
-    */
-  /* CompleteClass */
-  override var baseURL: String = js.native
-  /**
-    * The completion status of this MultiFile.
-    */
-  /* CompleteClass */
-  override var complete: Boolean = js.native
-  /**
-    * A storage container for transient data that the loading files need.
-    */
-  /* CompleteClass */
-  override var config: js.Any = js.native
-  /**
-    * The number of files that failed to load.
-    */
-  /* CompleteClass */
-  override var failed: integer = js.native
-  /**
-    * Array of files that make up this MultiFile.
-    */
-  /* CompleteClass */
-  override var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
-  /**
-    * Unique cache key (unique within its file type)
-    */
-  /* CompleteClass */
-  override var key: String = js.native
-  /**
-    * A reference to the Loader that is going to load this file.
-    */
-  /* CompleteClass */
-  override var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
-  /**
-    * A reference to the Loaders path at the time this MultiFile was created.
-    * Used to populate child-files.
-    */
-  /* CompleteClass */
-  override var path: String = js.native
-  /**
-    * The number of files to load.
-    */
-  /* CompleteClass */
-  override var pending: integer = js.native
-  /**
-    * A reference to the Loaders prefix at the time this MultiFile was created.
-    * Used to populate child-files.
-    */
-  /* CompleteClass */
-  override var prefix: String = js.native
-  /**
-    * The file type string for sorting within the Loader.
-    */
-  /* CompleteClass */
-  override var `type`: String = js.native
-  /**
-    * Adds another child to this MultiFile, increases the pending count and resets the completion status.
-    * @param files The File to add to this MultiFile.
-    */
-  /* CompleteClass */
-  override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
-  /**
-    * Checks if this MultiFile is ready to process its children or not.
-    */
-  /* CompleteClass */
-  override def isReadyToProcess(): Boolean = js.native
-  /**
-    * Called by each File when it finishes loading.
-    * @param file The File that has completed processing.
-    */
-  /* CompleteClass */
-  override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
-  /**
-    * Called by each File that fails to load.
-    * @param file The File that has failed to load.
-    */
-  /* CompleteClass */
-  override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
 }
 

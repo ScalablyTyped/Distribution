@@ -24,6 +24,7 @@ class CssScanner protected () extends js.Object {
   def consumeEmptyStatements(): Unit = js.native
   def consumeWhitespace(): Unit = js.native
   def error(message: String): CssToken = js.native
+  def error(message: String, errorTokenValue: js.UndefOr[scala.Nothing], doNotAdvance: Boolean): CssToken = js.native
   def error(message: String, errorTokenValue: String): CssToken = js.native
   def error(message: String, errorTokenValue: String, doNotAdvance: Boolean): CssToken = js.native
   def error(message: String, errorTokenValue: Null, doNotAdvance: Boolean): CssToken = js.native

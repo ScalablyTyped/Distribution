@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 trait BootstrapGridBase extends Control {
   def getToolbar(index: Double): BootstrapMenu | Null = js.native
   def getToolbarByName(name: String): BootstrapMenu | Null = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ this.type, js.UndefOr[EventArgs | GridToolbarItemClickEventArgs], Unit]
+  ): this.type = js.native
   @JSName("off")
   def off_toolbarItemClick(eventName: toolbarItemClick): this.type = js.native
   @JSName("off")

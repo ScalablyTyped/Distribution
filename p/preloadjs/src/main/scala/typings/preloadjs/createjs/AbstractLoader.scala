@@ -18,6 +18,7 @@ trait AbstractLoader extends EventDispatcher {
   def getItem(value: String): js.Object = js.native
   def getLoadedItems(): js.Array[js.Object] = js.native
   def getResult(): js.Object = js.native
+  def getResult(value: js.UndefOr[scala.Nothing], rawResult: Boolean): js.Object = js.native
   def getResult(value: js.Any): js.Object = js.native
   def getResult(value: js.Any, rawResult: Boolean): js.Object = js.native
   def getTag(): js.Object = js.native

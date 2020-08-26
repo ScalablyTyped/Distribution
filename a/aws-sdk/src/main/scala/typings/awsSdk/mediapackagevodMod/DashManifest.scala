@@ -27,20 +27,42 @@ trait DashManifest extends js.Object {
 
 object DashManifest {
   @scala.inline
-  def apply(
-    ManifestLayout: ManifestLayout = null,
-    ManifestName: string = null,
-    MinBufferTimeSeconds: js.UndefOr[integer] = js.undefined,
-    Profile: Profile = null,
-    StreamSelection: StreamSelection = null
-  ): DashManifest = {
+  def apply(): DashManifest = {
     val __obj = js.Dynamic.literal()
-    if (ManifestLayout != null) __obj.updateDynamic("ManifestLayout")(ManifestLayout.asInstanceOf[js.Any])
-    if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinBufferTimeSeconds)) __obj.updateDynamic("MinBufferTimeSeconds")(MinBufferTimeSeconds.get.asInstanceOf[js.Any])
-    if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])
-    if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashManifest]
   }
+  @scala.inline
+  implicit class DashManifestOps[Self <: DashManifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setManifestLayout(value: ManifestLayout): Self = this.set("ManifestLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestLayout: Self = this.set("ManifestLayout", js.undefined)
+    @scala.inline
+    def setManifestName(value: string): Self = this.set("ManifestName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestName: Self = this.set("ManifestName", js.undefined)
+    @scala.inline
+    def setMinBufferTimeSeconds(value: integer): Self = this.set("MinBufferTimeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinBufferTimeSeconds: Self = this.set("MinBufferTimeSeconds", js.undefined)
+    @scala.inline
+    def setProfile(value: Profile): Self = this.set("Profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("Profile", js.undefined)
+    @scala.inline
+    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
+  }
+  
 }
 

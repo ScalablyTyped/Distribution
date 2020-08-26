@@ -83,834 +83,1505 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridOptions extends ComponentHolder {
-  var accentedSort: js.UndefOr[Boolean] = js.undefined
-  var aggFuncs: js.UndefOr[StringDictionary[IAggFunc]] = js.undefined
-  var aggregateOnlyChangedColumns: js.UndefOr[Boolean] = js.undefined
-  var alignedGrids: js.UndefOr[js.Array[GridOptions]] = js.undefined
-  var allowContextMenuWithControlKey: js.UndefOr[Boolean] = js.undefined
-  var alwaysShowStatusBar: js.UndefOr[Boolean] = js.undefined
-  var angularCompileFilters: js.UndefOr[Boolean] = js.undefined
-  var angularCompileHeaders: js.UndefOr[Boolean] = js.undefined
-  var angularCompileRows: js.UndefOr[Boolean] = js.undefined
-  var animateRows: js.UndefOr[Boolean] = js.undefined
+  var accentedSort: js.UndefOr[Boolean] = js.native
+  var aggFuncs: js.UndefOr[StringDictionary[IAggFunc]] = js.native
+  var aggregateOnlyChangedColumns: js.UndefOr[Boolean] = js.native
+  var alignedGrids: js.UndefOr[js.Array[GridOptions]] = js.native
+  var allowContextMenuWithControlKey: js.UndefOr[Boolean] = js.native
+  var alwaysShowStatusBar: js.UndefOr[Boolean] = js.native
+  var angularCompileFilters: js.UndefOr[Boolean] = js.native
+  var angularCompileHeaders: js.UndefOr[Boolean] = js.native
+  var angularCompileRows: js.UndefOr[Boolean] = js.native
+  var animateRows: js.UndefOr[Boolean] = js.native
   /****************************************************************
     * Don't forget to update ComponentUtil if changing this class. *
     ****************************************************************/
-  var api: js.UndefOr[GridApi] = js.undefined
-  var autoGroupColumnDef: js.UndefOr[ColDef] = js.undefined
-  var autoSizePadding: js.UndefOr[Double] = js.undefined
-  var batchUpdateWaitMillis: js.UndefOr[Double] = js.undefined
-  var cacheBlockSize: js.UndefOr[Double] = js.undefined
-  var cacheOverflowSize: js.UndefOr[Double] = js.undefined
-  var cacheQuickFilter: js.UndefOr[Boolean] = js.undefined
-  var clipboardDeliminator: js.UndefOr[String] = js.undefined
-  var colResizeDefault: js.UndefOr[String] = js.undefined
-  var colWidth: js.UndefOr[Double] = js.undefined
-  var columnApi: js.UndefOr[ColumnApi] = js.undefined
-  var columnDefs: js.UndefOr[js.Array[ColDef | ColGroupDef]] = js.undefined
-  var columnTypes: js.UndefOr[StringDictionary[ColDef]] = js.undefined
-  var components: js.UndefOr[StringDictionary[AgGridRegisteredComponentInput[IComponent[_]]]] = js.undefined
+  var api: js.UndefOr[GridApi] = js.native
+  var autoGroupColumnDef: js.UndefOr[ColDef] = js.native
+  var autoSizePadding: js.UndefOr[Double] = js.native
+  var batchUpdateWaitMillis: js.UndefOr[Double] = js.native
+  var cacheBlockSize: js.UndefOr[Double] = js.native
+  var cacheOverflowSize: js.UndefOr[Double] = js.native
+  var cacheQuickFilter: js.UndefOr[Boolean] = js.native
+  var clipboardDeliminator: js.UndefOr[String] = js.native
+  var colResizeDefault: js.UndefOr[String] = js.native
+  var colWidth: js.UndefOr[Double] = js.native
+  var columnApi: js.UndefOr[ColumnApi] = js.native
+  var columnDefs: js.UndefOr[js.Array[ColDef | ColGroupDef]] = js.native
+  var columnTypes: js.UndefOr[StringDictionary[ColDef]] = js.native
+  var components: js.UndefOr[StringDictionary[AgGridRegisteredComponentInput[IComponent[_]]]] = js.native
   /****************************************************************
     * Don't forget to update ComponentUtil if changing this class. *
     ****************************************************************/
-  var context: js.UndefOr[js.Any] = js.undefined
-  var contractColumnSelection: js.UndefOr[Boolean] = js.undefined
-  var datasource: js.UndefOr[IDatasource] = js.undefined
-  var dateComponent: js.UndefOr[Instantiable] = js.undefined
-  var dateComponentFramework: js.UndefOr[js.Any] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var defaultColDef: js.UndefOr[ColDef] = js.undefined
-  var defaultColGroupDef: js.UndefOr[ColGroupDef] = js.undefined
-  var defaultExportParams: js.UndefOr[CsvExportParams] = js.undefined
-  var defaultGroupSortComparator: js.UndefOr[js.Function2[/* nodeA */ RowNode, /* nodeB */ RowNode, Double]] = js.undefined
-  var deltaRowDataMode: js.UndefOr[Boolean] = js.undefined
-  var detailCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
-  var detailCellRendererFramework: js.UndefOr[js.Any] = js.undefined
-  var detailCellRendererParams: js.UndefOr[js.Any] = js.undefined
-  var detailRowHeight: js.UndefOr[Double] = js.undefined
-  var doesDataFlower: js.UndefOr[js.Function1[/* dataItem */ js.Any, Boolean]] = js.undefined
-  var doesExternalFilterPass: js.UndefOr[js.Function1[/* node */ RowNode, Boolean]] = js.undefined
-  var domLayout: js.UndefOr[String] = js.undefined
-  var editType: js.UndefOr[String] = js.undefined
-  var embedFullWidthRows: js.UndefOr[Boolean] = js.undefined
-  var enableCellChangeFlash: js.UndefOr[Boolean] = js.undefined
-  var enableCellExpressions: js.UndefOr[Boolean] = js.undefined
-  var enableColResize: js.UndefOr[Boolean] = js.undefined
-  var enableFilter: js.UndefOr[Boolean] = js.undefined
-  var enableGroupEdit: js.UndefOr[Boolean] = js.undefined
-  var enableOldSetFilterModel: js.UndefOr[Boolean] = js.undefined
-  var enableRangeSelection: js.UndefOr[Boolean] = js.undefined
-  var enableRtl: js.UndefOr[Boolean] = js.undefined
-  var enableServerSideFilter: js.UndefOr[Boolean] = js.undefined
-  var enableServerSideSorting: js.UndefOr[Boolean] = js.undefined
-  var enableSorting: js.UndefOr[Boolean] = js.undefined
-  var enableStatusBar: js.UndefOr[Boolean] = js.undefined
-  var ensureDomOrder: js.UndefOr[Boolean] = js.undefined
-  var enterMovesDown: js.UndefOr[Boolean] = js.undefined
-  var enterMovesDownAfterEdit: js.UndefOr[Boolean] = js.undefined
-  var excelStyles: js.UndefOr[js.Array[_]] = js.undefined
-  var floatingFilter: js.UndefOr[Boolean] = js.undefined
-  var floatingFiltersHeight: js.UndefOr[Double] = js.undefined
-  var forPrint: js.UndefOr[Boolean] = js.undefined
-  var frameworkComponents: js.UndefOr[StringDictionary[InstantiableAny]] = js.undefined
-  var fullWidthCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
-  var fullWidthCellRendererFramework: js.UndefOr[js.Any] = js.undefined
-  var fullWidthCellRendererParams: js.UndefOr[js.Any] = js.undefined
-  var functionsPassive: js.UndefOr[Boolean] = js.undefined
-  var functionsReadOnly: js.UndefOr[Boolean] = js.undefined
-  var getBusinessKeyForNode: js.UndefOr[js.Function1[/* node */ RowNode, String]] = js.undefined
-  var getChildCount: js.UndefOr[js.Function1[/* dataItem */ js.Any, Double]] = js.undefined
-  var getContextMenuItems: js.UndefOr[GetContextMenuItems] = js.undefined
-  var getDataPath: js.UndefOr[GetDataPath] = js.undefined
-  var getDocument: js.UndefOr[js.Function0[Document]] = js.undefined
-  var getMainMenuItems: js.UndefOr[GetMainMenuItems] = js.undefined
-  var getNodeChildDetails: js.UndefOr[GetNodeChildDetails] = js.undefined
-  var getRowClass: js.UndefOr[js.Function1[/* params */ js.Any, String | js.Array[String]]] = js.undefined
-  var getRowHeight: js.UndefOr[js.Function] = js.undefined
-  var getRowNodeId: js.UndefOr[GetRowNodeIdFunc] = js.undefined
-  var getRowStyle: js.UndefOr[js.Function] = js.undefined
-  var gridAutoHeight: js.UndefOr[Boolean] = js.undefined
-  var groupColumnDef: js.UndefOr[ColDef] = js.undefined
-  var groupDefaultExpanded: js.UndefOr[Double] = js.undefined
-  var groupHeaderHeight: js.UndefOr[Double] = js.undefined
-  var groupHideOpenParents: js.UndefOr[Boolean] = js.undefined
-  var groupIncludeFooter: js.UndefOr[Boolean] = js.undefined
-  var groupIncludeTotalFooter: js.UndefOr[Boolean] = js.undefined
-  var groupMultiAutoColumn: js.UndefOr[Boolean] = js.undefined
-  var groupRemoveLowestSingleChildren: js.UndefOr[Boolean] = js.undefined
-  var groupRemoveSingleChildren: js.UndefOr[Boolean] = js.undefined
-  var groupRowAggNodes: js.UndefOr[js.Function1[/* nodes */ js.Array[RowNode], _]] = js.undefined
-  var groupRowInnerRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
-  var groupRowInnerRendererFramework: js.UndefOr[js.Any] = js.undefined
-  var groupRowRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
-  var groupRowRendererFramework: js.UndefOr[js.Any] = js.undefined
-  var groupRowRendererParams: js.UndefOr[js.Any] = js.undefined
-  var groupSelectsChildren: js.UndefOr[Boolean] = js.undefined
-  var groupSelectsFiltered: js.UndefOr[Boolean] = js.undefined
+  var context: js.UndefOr[js.Any] = js.native
+  var contractColumnSelection: js.UndefOr[Boolean] = js.native
+  var datasource: js.UndefOr[IDatasource] = js.native
+  var dateComponent: js.UndefOr[Instantiable] = js.native
+  var dateComponentFramework: js.UndefOr[js.Any] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var defaultColDef: js.UndefOr[ColDef] = js.native
+  var defaultColGroupDef: js.UndefOr[ColGroupDef] = js.native
+  var defaultExportParams: js.UndefOr[CsvExportParams] = js.native
+  var defaultGroupSortComparator: js.UndefOr[js.Function2[/* nodeA */ RowNode, /* nodeB */ RowNode, Double]] = js.native
+  var deltaRowDataMode: js.UndefOr[Boolean] = js.native
+  var detailCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
+  var detailCellRendererFramework: js.UndefOr[js.Any] = js.native
+  var detailCellRendererParams: js.UndefOr[js.Any] = js.native
+  var detailRowHeight: js.UndefOr[Double] = js.native
+  var doesDataFlower: js.UndefOr[js.Function1[/* dataItem */ js.Any, Boolean]] = js.native
+  var doesExternalFilterPass: js.UndefOr[js.Function1[/* node */ RowNode, Boolean]] = js.native
+  var domLayout: js.UndefOr[String] = js.native
+  var editType: js.UndefOr[String] = js.native
+  var embedFullWidthRows: js.UndefOr[Boolean] = js.native
+  var enableCellChangeFlash: js.UndefOr[Boolean] = js.native
+  var enableCellExpressions: js.UndefOr[Boolean] = js.native
+  var enableColResize: js.UndefOr[Boolean] = js.native
+  var enableFilter: js.UndefOr[Boolean] = js.native
+  var enableGroupEdit: js.UndefOr[Boolean] = js.native
+  var enableOldSetFilterModel: js.UndefOr[Boolean] = js.native
+  var enableRangeSelection: js.UndefOr[Boolean] = js.native
+  var enableRtl: js.UndefOr[Boolean] = js.native
+  var enableServerSideFilter: js.UndefOr[Boolean] = js.native
+  var enableServerSideSorting: js.UndefOr[Boolean] = js.native
+  var enableSorting: js.UndefOr[Boolean] = js.native
+  var enableStatusBar: js.UndefOr[Boolean] = js.native
+  var ensureDomOrder: js.UndefOr[Boolean] = js.native
+  var enterMovesDown: js.UndefOr[Boolean] = js.native
+  var enterMovesDownAfterEdit: js.UndefOr[Boolean] = js.native
+  var excelStyles: js.UndefOr[js.Array[_]] = js.native
+  var floatingFilter: js.UndefOr[Boolean] = js.native
+  var floatingFiltersHeight: js.UndefOr[Double] = js.native
+  var forPrint: js.UndefOr[Boolean] = js.native
+  var frameworkComponents: js.UndefOr[StringDictionary[InstantiableAny]] = js.native
+  var fullWidthCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
+  var fullWidthCellRendererFramework: js.UndefOr[js.Any] = js.native
+  var fullWidthCellRendererParams: js.UndefOr[js.Any] = js.native
+  var functionsPassive: js.UndefOr[Boolean] = js.native
+  var functionsReadOnly: js.UndefOr[Boolean] = js.native
+  var getBusinessKeyForNode: js.UndefOr[js.Function1[/* node */ RowNode, String]] = js.native
+  var getChildCount: js.UndefOr[js.Function1[/* dataItem */ js.Any, Double]] = js.native
+  var getContextMenuItems: js.UndefOr[GetContextMenuItems] = js.native
+  var getDataPath: js.UndefOr[GetDataPath] = js.native
+  var getDocument: js.UndefOr[js.Function0[Document]] = js.native
+  var getMainMenuItems: js.UndefOr[GetMainMenuItems] = js.native
+  var getNodeChildDetails: js.UndefOr[GetNodeChildDetails] = js.native
+  var getRowClass: js.UndefOr[js.Function1[/* params */ js.Any, String | js.Array[String]]] = js.native
+  var getRowHeight: js.UndefOr[js.Function] = js.native
+  var getRowNodeId: js.UndefOr[GetRowNodeIdFunc] = js.native
+  var getRowStyle: js.UndefOr[js.Function] = js.native
+  var gridAutoHeight: js.UndefOr[Boolean] = js.native
+  var groupColumnDef: js.UndefOr[ColDef] = js.native
+  var groupDefaultExpanded: js.UndefOr[Double] = js.native
+  var groupHeaderHeight: js.UndefOr[Double] = js.native
+  var groupHideOpenParents: js.UndefOr[Boolean] = js.native
+  var groupIncludeFooter: js.UndefOr[Boolean] = js.native
+  var groupIncludeTotalFooter: js.UndefOr[Boolean] = js.native
+  var groupMultiAutoColumn: js.UndefOr[Boolean] = js.native
+  var groupRemoveLowestSingleChildren: js.UndefOr[Boolean] = js.native
+  var groupRemoveSingleChildren: js.UndefOr[Boolean] = js.native
+  var groupRowAggNodes: js.UndefOr[js.Function1[/* nodes */ js.Array[RowNode], _]] = js.native
+  var groupRowInnerRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
+  var groupRowInnerRendererFramework: js.UndefOr[js.Any] = js.native
+  var groupRowRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
+  var groupRowRendererFramework: js.UndefOr[js.Any] = js.native
+  var groupRowRendererParams: js.UndefOr[js.Any] = js.native
+  var groupSelectsChildren: js.UndefOr[Boolean] = js.native
+  var groupSelectsFiltered: js.UndefOr[Boolean] = js.native
   /****************************************************************
     * Don't forget to update ComponentUtil if changing this class. *
     ****************************************************************/
-  var groupSuppressAutoColumn: js.UndefOr[Boolean] = js.undefined
-  var groupSuppressBlankHeader: js.UndefOr[Boolean] = js.undefined
-  var groupSuppressRow: js.UndefOr[Boolean] = js.undefined
-  var groupUseEntireRow: js.UndefOr[Boolean] = js.undefined
-  var headerHeight: js.UndefOr[Double] = js.undefined
-  var icons: js.UndefOr[js.Any] = js.undefined
-  var infiniteInitialRowCount: js.UndefOr[Double] = js.undefined
-  var isExternalFilterPresent: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var isFullWidthCell: js.UndefOr[js.Function1[/* rowNode */ RowNode, Boolean]] = js.undefined
-  var isRowMaster: js.UndefOr[IsRowMaster] = js.undefined
-  var isRowSelectable: js.UndefOr[IsRowSelectable] = js.undefined
-  var loadingOverlayComponent: js.UndefOr[InstantiableILoadingOverlayComp | String] = js.undefined
-  var loadingOverlayComponentFramework: js.UndefOr[js.Any] = js.undefined
+  var groupSuppressAutoColumn: js.UndefOr[Boolean] = js.native
+  var groupSuppressBlankHeader: js.UndefOr[Boolean] = js.native
+  var groupSuppressRow: js.UndefOr[Boolean] = js.native
+  var groupUseEntireRow: js.UndefOr[Boolean] = js.native
+  var headerHeight: js.UndefOr[Double] = js.native
+  var icons: js.UndefOr[js.Any] = js.native
+  var infiniteInitialRowCount: js.UndefOr[Double] = js.native
+  var isExternalFilterPresent: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isFullWidthCell: js.UndefOr[js.Function1[/* rowNode */ RowNode, Boolean]] = js.native
+  var isRowMaster: js.UndefOr[IsRowMaster] = js.native
+  var isRowSelectable: js.UndefOr[IsRowSelectable] = js.native
+  var loadingOverlayComponent: js.UndefOr[InstantiableILoadingOverlayComp | String] = js.native
+  var loadingOverlayComponentFramework: js.UndefOr[js.Any] = js.native
   /****************************************************************
     * Don't forget to update ComponentUtil if changing this class. *
     ****************************************************************/
-  var localeText: js.UndefOr[js.Any] = js.undefined
-  var localeTextFunc: js.UndefOr[js.Function] = js.undefined
-  var masterDetail: js.UndefOr[Boolean] = js.undefined
-  var maxBlocksInCache: js.UndefOr[Double] = js.undefined
-  var maxColWidth: js.UndefOr[Double] = js.undefined
-  var maxConcurrentDatasourceRequests: js.UndefOr[Double] = js.undefined
-  var minColWidth: js.UndefOr[Double] = js.undefined
-  var multiSortKey: js.UndefOr[String] = js.undefined
-  var navigateToNextCell: js.UndefOr[js.Function1[/* params */ NavigateToNextCellParams, GridCellDef]] = js.undefined
-  var noRowsOverlayComponent: js.UndefOr[InstantiableINoRowsOverlayComp | String] = js.undefined
-  var noRowsOverlayComponentFramework: js.UndefOr[js.Any] = js.undefined
-  var onBodyScroll: js.UndefOr[js.Function1[/* event */ BodyScrollEvent, Unit]] = js.undefined
-  var onCellClicked: js.UndefOr[js.Function1[/* event */ CellClickedEvent, Unit]] = js.undefined
-  var onCellContextMenu: js.UndefOr[js.Function1[/* event */ CellContextMenuEvent, Unit]] = js.undefined
-  var onCellDoubleClicked: js.UndefOr[js.Function1[/* event */ CellDoubleClickedEvent, Unit]] = js.undefined
-  var onCellEditingStarted: js.UndefOr[js.Function1[/* event */ CellEditingStartedEvent, Unit]] = js.undefined
-  var onCellEditingStopped: js.UndefOr[js.Function1[/* event */ CellEditingStoppedEvent, Unit]] = js.undefined
-  var onCellFocused: js.UndefOr[js.Function1[/* event */ CellFocusedEvent, Unit]] = js.undefined
-  var onCellMouseDown: js.UndefOr[js.Function1[/* event */ CellMouseDownEvent, Unit]] = js.undefined
-  var onCellMouseOut: js.UndefOr[js.Function1[/* event */ CellMouseOutEvent, Unit]] = js.undefined
-  var onCellMouseOver: js.UndefOr[js.Function1[/* event */ CellMouseOverEvent, Unit]] = js.undefined
-  var onCellValueChanged: js.UndefOr[js.Function1[/* event */ CellValueChangedEvent, Unit]] = js.undefined
-  var onColumnAggFuncChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnAggFuncChangeRequestEvent, Unit]] = js.undefined
+  var localeText: js.UndefOr[js.Any] = js.native
+  var localeTextFunc: js.UndefOr[js.Function] = js.native
+  var masterDetail: js.UndefOr[Boolean] = js.native
+  var maxBlocksInCache: js.UndefOr[Double] = js.native
+  var maxColWidth: js.UndefOr[Double] = js.native
+  var maxConcurrentDatasourceRequests: js.UndefOr[Double] = js.native
+  var minColWidth: js.UndefOr[Double] = js.native
+  var multiSortKey: js.UndefOr[String] = js.native
+  var navigateToNextCell: js.UndefOr[js.Function1[/* params */ NavigateToNextCellParams, GridCellDef]] = js.native
+  var noRowsOverlayComponent: js.UndefOr[InstantiableINoRowsOverlayComp | String] = js.native
+  var noRowsOverlayComponentFramework: js.UndefOr[js.Any] = js.native
+  var onBodyScroll: js.UndefOr[js.Function1[/* event */ BodyScrollEvent, Unit]] = js.native
+  var onCellClicked: js.UndefOr[js.Function1[/* event */ CellClickedEvent, Unit]] = js.native
+  var onCellContextMenu: js.UndefOr[js.Function1[/* event */ CellContextMenuEvent, Unit]] = js.native
+  var onCellDoubleClicked: js.UndefOr[js.Function1[/* event */ CellDoubleClickedEvent, Unit]] = js.native
+  var onCellEditingStarted: js.UndefOr[js.Function1[/* event */ CellEditingStartedEvent, Unit]] = js.native
+  var onCellEditingStopped: js.UndefOr[js.Function1[/* event */ CellEditingStoppedEvent, Unit]] = js.native
+  var onCellFocused: js.UndefOr[js.Function1[/* event */ CellFocusedEvent, Unit]] = js.native
+  var onCellMouseDown: js.UndefOr[js.Function1[/* event */ CellMouseDownEvent, Unit]] = js.native
+  var onCellMouseOut: js.UndefOr[js.Function1[/* event */ CellMouseOutEvent, Unit]] = js.native
+  var onCellMouseOver: js.UndefOr[js.Function1[/* event */ CellMouseOverEvent, Unit]] = js.native
+  var onCellValueChanged: js.UndefOr[js.Function1[/* event */ CellValueChangedEvent, Unit]] = js.native
+  var onColumnAggFuncChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnAggFuncChangeRequestEvent, Unit]] = js.native
   /****************************************************************
     * Don't forget to update ComponentUtil if changing this class. *
     ****************************************************************/
-  var onColumnEverythingChanged: js.UndefOr[js.Function1[/* event */ ColumnEverythingChangedEvent, Unit]] = js.undefined
-  var onColumnGroupOpened: js.UndefOr[js.Function1[/* event */ ColumnGroupOpenedEvent, Unit]] = js.undefined
-  var onColumnMoved: js.UndefOr[js.Function1[/* event */ ColumnMovedEvent, Unit]] = js.undefined
-  var onColumnPinned: js.UndefOr[js.Function1[/* event */ ColumnPinnedEvent, Unit]] = js.undefined
-  var onColumnPivotChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnPivotChangeRequestEvent, Unit]] = js.undefined
-  var onColumnPivotChanged: js.UndefOr[js.Function1[/* event */ ColumnPivotChangedEvent, Unit]] = js.undefined
-  var onColumnPivotModeChanged: js.UndefOr[js.Function1[/* event */ ColumnPivotModeChangedEvent, Unit]] = js.undefined
-  var onColumnResized: js.UndefOr[js.Function1[/* event */ ColumnResizedEvent, Unit]] = js.undefined
-  var onColumnRowGroupChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnRowGroupChangeRequestEvent, Unit]] = js.undefined
-  var onColumnRowGroupChanged: js.UndefOr[js.Function1[/* event */ ColumnRowGroupChangedEvent, Unit]] = js.undefined
-  var onColumnValueChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnValueChangeRequestEvent, Unit]] = js.undefined
-  var onColumnValueChanged: js.UndefOr[js.Function1[/* event */ ColumnValueChangedEvent, Unit]] = js.undefined
-  var onColumnVisible: js.UndefOr[js.Function1[/* event */ ColumnVisibleEvent, Unit]] = js.undefined
-  var onDisplayedColumnsChanged: js.UndefOr[js.Function1[/* event */ DisplayedColumnsChangedEvent, Unit]] = js.undefined
-  var onDragStarted: js.UndefOr[js.Function1[/* event */ DragStartedEvent, Unit]] = js.undefined
-  var onDragStopped: js.UndefOr[js.Function1[/* event */ DragStoppedEvent, Unit]] = js.undefined
-  var onFilterChanged: js.UndefOr[js.Function1[/* event */ FilterChangedEvent, Unit]] = js.undefined
-  var onFilterModified: js.UndefOr[js.Function1[/* event */ FilterModifiedEvent, Unit]] = js.undefined
-  var onGridColumnsChanged: js.UndefOr[js.Function1[/* event */ GridColumnsChangedEvent, Unit]] = js.undefined
-  var onGridReady: js.UndefOr[js.Function1[/* event */ GridReadyEvent, Unit]] = js.undefined
-  var onGridSizeChanged: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
-  var onModelUpdated: js.UndefOr[js.Function1[/* event */ ModelUpdatedEvent, Unit]] = js.undefined
-  var onNewColumnsLoaded: js.UndefOr[js.Function1[/* event */ NewColumnsLoadedEvent, Unit]] = js.undefined
-  var onPaginationChanged: js.UndefOr[js.Function1[/* event */ PaginationChangedEvent, Unit]] = js.undefined
-  var onPasteEnd: js.UndefOr[js.Function1[/* event */ PasteEndEvent, Unit]] = js.undefined
-  var onPasteStart: js.UndefOr[js.Function1[/* event */ PasteStartEvent, Unit]] = js.undefined
-  var onPinnedRowDataChanged: js.UndefOr[js.Function1[/* event */ PinnedRowDataChangedEvent, Unit]] = js.undefined
-  var onRangeSelectionChanged: js.UndefOr[js.Function1[/* event */ RangeSelectionChangedEvent, Unit]] = js.undefined
-  var onRowClicked: js.UndefOr[js.Function1[/* event */ RowClickedEvent, Unit]] = js.undefined
-  var onRowDataChanged: js.UndefOr[js.Function1[/* event */ RowDataChangedEvent, Unit]] = js.undefined
-  var onRowDataUpdated: js.UndefOr[js.Function1[/* event */ RowDataUpdatedEvent, Unit]] = js.undefined
-  var onRowDoubleClicked: js.UndefOr[js.Function1[/* event */ RowDoubleClickedEvent, Unit]] = js.undefined
-  var onRowDragEnd: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.undefined
-  var onRowDragEnter: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.undefined
-  var onRowDragLeave: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.undefined
-  var onRowDragMove: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.undefined
-  var onRowEditingStarted: js.UndefOr[js.Function1[/* event */ RowEditingStartedEvent, Unit]] = js.undefined
-  var onRowEditingStopped: js.UndefOr[js.Function1[/* event */ RowEditingStoppedEvent, Unit]] = js.undefined
-  var onRowGroupOpened: js.UndefOr[js.Function1[/* event */ RowGroupOpenedEvent, Unit]] = js.undefined
-  var onRowSelected: js.UndefOr[js.Function1[/* event */ RowSelectedEvent, Unit]] = js.undefined
-  var onRowValueChanged: js.UndefOr[js.Function1[/* event */ RowValueChangedEvent, Unit]] = js.undefined
-  var onSelectionChanged: js.UndefOr[js.Function1[/* event */ SelectionChangedEvent, Unit]] = js.undefined
-  var onSortChanged: js.UndefOr[js.Function1[/* event */ SortChangedEvent, Unit]] = js.undefined
-  var onViewportChanged: js.UndefOr[js.Function1[/* event */ ViewportChangedEvent, Unit]] = js.undefined
-  var onVirtualColumnsChanged: js.UndefOr[js.Function1[/* event */ VirtualColumnsChangedEvent, Unit]] = js.undefined
-  var onVirtualRowRemoved: js.UndefOr[js.Function1[/* event */ VirtualRowRemovedEvent, Unit]] = js.undefined
-  var overlayLoadingTemplate: js.UndefOr[String] = js.undefined
-  var overlayNoRowsTemplate: js.UndefOr[String] = js.undefined
-  var pagination: js.UndefOr[Boolean] = js.undefined
-  var paginationAutoPageSize: js.UndefOr[Boolean] = js.undefined
+  var onColumnEverythingChanged: js.UndefOr[js.Function1[/* event */ ColumnEverythingChangedEvent, Unit]] = js.native
+  var onColumnGroupOpened: js.UndefOr[js.Function1[/* event */ ColumnGroupOpenedEvent, Unit]] = js.native
+  var onColumnMoved: js.UndefOr[js.Function1[/* event */ ColumnMovedEvent, Unit]] = js.native
+  var onColumnPinned: js.UndefOr[js.Function1[/* event */ ColumnPinnedEvent, Unit]] = js.native
+  var onColumnPivotChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnPivotChangeRequestEvent, Unit]] = js.native
+  var onColumnPivotChanged: js.UndefOr[js.Function1[/* event */ ColumnPivotChangedEvent, Unit]] = js.native
+  var onColumnPivotModeChanged: js.UndefOr[js.Function1[/* event */ ColumnPivotModeChangedEvent, Unit]] = js.native
+  var onColumnResized: js.UndefOr[js.Function1[/* event */ ColumnResizedEvent, Unit]] = js.native
+  var onColumnRowGroupChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnRowGroupChangeRequestEvent, Unit]] = js.native
+  var onColumnRowGroupChanged: js.UndefOr[js.Function1[/* event */ ColumnRowGroupChangedEvent, Unit]] = js.native
+  var onColumnValueChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnValueChangeRequestEvent, Unit]] = js.native
+  var onColumnValueChanged: js.UndefOr[js.Function1[/* event */ ColumnValueChangedEvent, Unit]] = js.native
+  var onColumnVisible: js.UndefOr[js.Function1[/* event */ ColumnVisibleEvent, Unit]] = js.native
+  var onDisplayedColumnsChanged: js.UndefOr[js.Function1[/* event */ DisplayedColumnsChangedEvent, Unit]] = js.native
+  var onDragStarted: js.UndefOr[js.Function1[/* event */ DragStartedEvent, Unit]] = js.native
+  var onDragStopped: js.UndefOr[js.Function1[/* event */ DragStoppedEvent, Unit]] = js.native
+  var onFilterChanged: js.UndefOr[js.Function1[/* event */ FilterChangedEvent, Unit]] = js.native
+  var onFilterModified: js.UndefOr[js.Function1[/* event */ FilterModifiedEvent, Unit]] = js.native
+  var onGridColumnsChanged: js.UndefOr[js.Function1[/* event */ GridColumnsChangedEvent, Unit]] = js.native
+  var onGridReady: js.UndefOr[js.Function1[/* event */ GridReadyEvent, Unit]] = js.native
+  var onGridSizeChanged: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+  var onModelUpdated: js.UndefOr[js.Function1[/* event */ ModelUpdatedEvent, Unit]] = js.native
+  var onNewColumnsLoaded: js.UndefOr[js.Function1[/* event */ NewColumnsLoadedEvent, Unit]] = js.native
+  var onPaginationChanged: js.UndefOr[js.Function1[/* event */ PaginationChangedEvent, Unit]] = js.native
+  var onPasteEnd: js.UndefOr[js.Function1[/* event */ PasteEndEvent, Unit]] = js.native
+  var onPasteStart: js.UndefOr[js.Function1[/* event */ PasteStartEvent, Unit]] = js.native
+  var onPinnedRowDataChanged: js.UndefOr[js.Function1[/* event */ PinnedRowDataChangedEvent, Unit]] = js.native
+  var onRangeSelectionChanged: js.UndefOr[js.Function1[/* event */ RangeSelectionChangedEvent, Unit]] = js.native
+  var onRowClicked: js.UndefOr[js.Function1[/* event */ RowClickedEvent, Unit]] = js.native
+  var onRowDataChanged: js.UndefOr[js.Function1[/* event */ RowDataChangedEvent, Unit]] = js.native
+  var onRowDataUpdated: js.UndefOr[js.Function1[/* event */ RowDataUpdatedEvent, Unit]] = js.native
+  var onRowDoubleClicked: js.UndefOr[js.Function1[/* event */ RowDoubleClickedEvent, Unit]] = js.native
+  var onRowDragEnd: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.native
+  var onRowDragEnter: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.native
+  var onRowDragLeave: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.native
+  var onRowDragMove: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.native
+  var onRowEditingStarted: js.UndefOr[js.Function1[/* event */ RowEditingStartedEvent, Unit]] = js.native
+  var onRowEditingStopped: js.UndefOr[js.Function1[/* event */ RowEditingStoppedEvent, Unit]] = js.native
+  var onRowGroupOpened: js.UndefOr[js.Function1[/* event */ RowGroupOpenedEvent, Unit]] = js.native
+  var onRowSelected: js.UndefOr[js.Function1[/* event */ RowSelectedEvent, Unit]] = js.native
+  var onRowValueChanged: js.UndefOr[js.Function1[/* event */ RowValueChangedEvent, Unit]] = js.native
+  var onSelectionChanged: js.UndefOr[js.Function1[/* event */ SelectionChangedEvent, Unit]] = js.native
+  var onSortChanged: js.UndefOr[js.Function1[/* event */ SortChangedEvent, Unit]] = js.native
+  var onViewportChanged: js.UndefOr[js.Function1[/* event */ ViewportChangedEvent, Unit]] = js.native
+  var onVirtualColumnsChanged: js.UndefOr[js.Function1[/* event */ VirtualColumnsChangedEvent, Unit]] = js.native
+  var onVirtualRowRemoved: js.UndefOr[js.Function1[/* event */ VirtualRowRemovedEvent, Unit]] = js.native
+  var overlayLoadingTemplate: js.UndefOr[String] = js.native
+  var overlayNoRowsTemplate: js.UndefOr[String] = js.native
+  var pagination: js.UndefOr[Boolean] = js.native
+  var paginationAutoPageSize: js.UndefOr[Boolean] = js.native
   /****************************************************************
     * Don't forget to update ComponentUtil if changing this class. *
     ****************************************************************/
-  var paginationNumberFormatter: js.UndefOr[js.Function1[/* params */ PaginationNumberFormatterParams, String]] = js.undefined
-  var paginationPageSize: js.UndefOr[Double] = js.undefined
-  var paginationStartPage: js.UndefOr[Double] = js.undefined
-  var pinnedBottomRowData: js.UndefOr[js.Array[_]] = js.undefined
-  var pinnedTopRowData: js.UndefOr[js.Array[_]] = js.undefined
-  var pivotColumnGroupTotals: js.UndefOr[String] = js.undefined
-  var pivotGroupHeaderHeight: js.UndefOr[Double] = js.undefined
-  var pivotHeaderHeight: js.UndefOr[Double] = js.undefined
-  var pivotMode: js.UndefOr[Boolean] = js.undefined
-  var pivotPanelShow: js.UndefOr[String] = js.undefined
-  var pivotRowTotals: js.UndefOr[String] = js.undefined
-  var pivotTotals: js.UndefOr[Boolean] = js.undefined
-  var popupParent: js.UndefOr[HTMLElement] = js.undefined
-  var postProcessPopup: js.UndefOr[js.Function1[/* params */ PostProcessPopupParams, Unit]] = js.undefined
-  var postSort: js.UndefOr[js.Function1[/* nodes */ js.Array[RowNode], Unit]] = js.undefined
-  var processCellForClipboard: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, _]] = js.undefined
-  var processCellFromClipboard: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, _]] = js.undefined
+  var paginationNumberFormatter: js.UndefOr[js.Function1[/* params */ PaginationNumberFormatterParams, String]] = js.native
+  var paginationPageSize: js.UndefOr[Double] = js.native
+  var paginationStartPage: js.UndefOr[Double] = js.native
+  var pinnedBottomRowData: js.UndefOr[js.Array[_]] = js.native
+  var pinnedTopRowData: js.UndefOr[js.Array[_]] = js.native
+  var pivotColumnGroupTotals: js.UndefOr[String] = js.native
+  var pivotGroupHeaderHeight: js.UndefOr[Double] = js.native
+  var pivotHeaderHeight: js.UndefOr[Double] = js.native
+  var pivotMode: js.UndefOr[Boolean] = js.native
+  var pivotPanelShow: js.UndefOr[String] = js.native
+  var pivotRowTotals: js.UndefOr[String] = js.native
+  var pivotTotals: js.UndefOr[Boolean] = js.native
+  var popupParent: js.UndefOr[HTMLElement] = js.native
+  var postProcessPopup: js.UndefOr[js.Function1[/* params */ PostProcessPopupParams, Unit]] = js.native
+  var postSort: js.UndefOr[js.Function1[/* nodes */ js.Array[RowNode], Unit]] = js.native
+  var processCellForClipboard: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, _]] = js.native
+  var processCellFromClipboard: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, _]] = js.native
   var processDataFromClipboard: js.UndefOr[
     js.Function1[/* params */ ProcessDataFromClipboardParams, js.Array[js.Array[String]]]
-  ] = js.undefined
-  var processHeaderForClipboard: js.UndefOr[js.Function1[/* params */ ProcessHeaderForExportParams, _]] = js.undefined
-  var processRowPostCreate: js.UndefOr[js.Function1[/* params */ ProcessRowParams, Unit]] = js.undefined
-  var processSecondaryColDef: js.UndefOr[js.Function1[/* colDef */ ColDef, Unit]] = js.undefined
-  var processSecondaryColGroupDef: js.UndefOr[js.Function1[/* colGroupDef */ ColGroupDef, Unit]] = js.undefined
-  var purgeClosedRowNodes: js.UndefOr[Boolean] = js.undefined
-  var quickFilterText: js.UndefOr[String] = js.undefined
-  var rememberGroupStateWhenNewData: js.UndefOr[Boolean] = js.undefined
-  var rowBuffer: js.UndefOr[Double] = js.undefined
-  var rowClass: js.UndefOr[String | js.Array[String]] = js.undefined
-  var rowClassRules: js.UndefOr[StringDictionary[js.Function | String]] = js.undefined
+  ] = js.native
+  var processHeaderForClipboard: js.UndefOr[js.Function1[/* params */ ProcessHeaderForExportParams, _]] = js.native
+  var processRowPostCreate: js.UndefOr[js.Function1[/* params */ ProcessRowParams, Unit]] = js.native
+  var processSecondaryColDef: js.UndefOr[js.Function1[/* colDef */ ColDef, Unit]] = js.native
+  var processSecondaryColGroupDef: js.UndefOr[js.Function1[/* colGroupDef */ ColGroupDef, Unit]] = js.native
+  var purgeClosedRowNodes: js.UndefOr[Boolean] = js.native
+  var quickFilterText: js.UndefOr[String] = js.native
+  var rememberGroupStateWhenNewData: js.UndefOr[Boolean] = js.native
+  var rowBuffer: js.UndefOr[Double] = js.native
+  var rowClass: js.UndefOr[String | js.Array[String]] = js.native
+  var rowClassRules: js.UndefOr[StringDictionary[js.Function | String]] = js.native
   /****************************************************************
     * Don't forget to update ComponentUtil if changing this class. *
     ****************************************************************/
-  var rowData: js.UndefOr[js.Array[_]] = js.undefined
-  var rowDeselection: js.UndefOr[Boolean] = js.undefined
+  var rowData: js.UndefOr[js.Array[_]] = js.native
+  var rowDeselection: js.UndefOr[Boolean] = js.native
   /****************************************************************
     * Don't forget to update ComponentUtil if changing this class. PLEASE!*
     ****************************************************************/
-  var rowDragManaged: js.UndefOr[Boolean] = js.undefined
-  var rowGroupPanelShow: js.UndefOr[String] = js.undefined
-  var rowHeight: js.UndefOr[Double] = js.undefined
-  var rowModelType: js.UndefOr[String] = js.undefined
-  var rowMultiSelectWithClick: js.UndefOr[Boolean] = js.undefined
-  var rowSelection: js.UndefOr[String] = js.undefined
-  var rowStyle: js.UndefOr[js.Any] = js.undefined
-  var scrollbarWidth: js.UndefOr[Double] = js.undefined
-  var sendToClipboard: js.UndefOr[js.Function1[/* params */ js.Any, Unit]] = js.undefined
-  var serverSideDatasource: js.UndefOr[IServerSideDatasource] = js.undefined
-  var serverSideSortingAlwaysResets: js.UndefOr[Boolean] = js.undefined
-  var showToolPanel: js.UndefOr[Boolean] = js.undefined
-  var singleClickEdit: js.UndefOr[Boolean] = js.undefined
-  var slaveGrids: js.UndefOr[js.Array[GridOptions]] = js.undefined
-  var sortingOrder: js.UndefOr[js.Array[String]] = js.undefined
-  var stopEditingWhenGridLosesFocus: js.UndefOr[Boolean] = js.undefined
-  var suppressAggAtRootLevel: js.UndefOr[Boolean] = js.undefined
-  var suppressAggFuncInHeader: js.UndefOr[Boolean] = js.undefined
-  var suppressAnimationFrame: js.UndefOr[Boolean] = js.undefined
-  var suppressAsyncEvents: js.UndefOr[Boolean] = js.undefined
-  var suppressAutoSize: js.UndefOr[Boolean] = js.undefined
-  var suppressCellSelection: js.UndefOr[Boolean] = js.undefined
-  var suppressChangeDetection: js.UndefOr[Boolean] = js.undefined
-  var suppressClickEdit: js.UndefOr[Boolean] = js.undefined
-  var suppressClipboardPaste: js.UndefOr[Boolean] = js.undefined
-  var suppressColumnMoveAnimation: js.UndefOr[Boolean] = js.undefined
-  var suppressColumnVirtualisation: js.UndefOr[Boolean] = js.undefined
-  var suppressContextMenu: js.UndefOr[Boolean] = js.undefined
-  var suppressCopyRowsToClipboard: js.UndefOr[Boolean] = js.undefined
-  var suppressCsvExport: js.UndefOr[Boolean] = js.undefined
-  var suppressDragLeaveHidesColumns: js.UndefOr[Boolean] = js.undefined
-  var suppressEnterpriseResetOnNewColumns: js.UndefOr[Boolean] = js.undefined
-  var suppressExcelExport: js.UndefOr[Boolean] = js.undefined
-  var suppressFieldDotNotation: js.UndefOr[Boolean] = js.undefined
-  var suppressFocusAfterRefresh: js.UndefOr[Boolean] = js.undefined
-  var suppressHorizontalScroll: js.UndefOr[Boolean] = js.undefined
-  var suppressLoadingOverlay: js.UndefOr[Boolean] = js.undefined
-  var suppressMakeColumnVisibleAfterUnGroup: js.UndefOr[Boolean] = js.undefined
-  var suppressMenuHide: js.UndefOr[Boolean] = js.undefined
-  var suppressMiddleClickScrolls: js.UndefOr[Boolean] = js.undefined
-  var suppressMovableColumns: js.UndefOr[Boolean] = js.undefined
-  var suppressMultiRangeSelection: js.UndefOr[Boolean] = js.undefined
-  var suppressMultiSort: js.UndefOr[Boolean] = js.undefined
-  var suppressNoRowsOverlay: js.UndefOr[Boolean] = js.undefined
-  var suppressPaginationPanel: js.UndefOr[Boolean] = js.undefined
-  var suppressParentsInRowNodes: js.UndefOr[Boolean] = js.undefined
-  var suppressPreventDefaultOnMouseWheel: js.UndefOr[Boolean] = js.undefined
-  var suppressPropertyNamesCheck: js.UndefOr[Boolean] = js.undefined
-  var suppressRowClickSelection: js.UndefOr[Boolean] = js.undefined
-  var suppressRowDrag: js.UndefOr[Boolean] = js.undefined
-  var suppressRowHoverHighlight: js.UndefOr[Boolean] = js.undefined
-  var suppressRowTransform: js.UndefOr[Boolean] = js.undefined
-  var suppressScrollOnNewData: js.UndefOr[Boolean] = js.undefined
-  var suppressTabbing: js.UndefOr[Boolean] = js.undefined
-  var suppressTouch: js.UndefOr[Boolean] = js.undefined
-  var tabToNextCell: js.UndefOr[js.Function1[/* params */ TabToNextCellParams, GridCellDef]] = js.undefined
-  var toolPanelSuppressColumnExpandAll: js.UndefOr[Boolean] = js.undefined
-  var toolPanelSuppressColumnFilter: js.UndefOr[Boolean] = js.undefined
-  var toolPanelSuppressColumnSelectAll: js.UndefOr[Boolean] = js.undefined
-  var toolPanelSuppressPivotMode: js.UndefOr[Boolean] = js.undefined
-  var toolPanelSuppressPivots: js.UndefOr[Boolean] = js.undefined
-  var toolPanelSuppressRowGroups: js.UndefOr[Boolean] = js.undefined
-  var toolPanelSuppressSideButtons: js.UndefOr[Boolean] = js.undefined
-  var toolPanelSuppressValues: js.UndefOr[Boolean] = js.undefined
-  var treeData: js.UndefOr[Boolean] = js.undefined
-  var unSortIcon: js.UndefOr[Boolean] = js.undefined
-  var valueCache: js.UndefOr[Boolean] = js.undefined
-  var valueCacheNeverExpires: js.UndefOr[Boolean] = js.undefined
-  var viewportDatasource: js.UndefOr[IViewportDatasource] = js.undefined
-  var viewportRowModelBufferSize: js.UndefOr[Double] = js.undefined
-  var viewportRowModelPageSize: js.UndefOr[Double] = js.undefined
+  var rowDragManaged: js.UndefOr[Boolean] = js.native
+  var rowGroupPanelShow: js.UndefOr[String] = js.native
+  var rowHeight: js.UndefOr[Double] = js.native
+  var rowModelType: js.UndefOr[String] = js.native
+  var rowMultiSelectWithClick: js.UndefOr[Boolean] = js.native
+  var rowSelection: js.UndefOr[String] = js.native
+  var rowStyle: js.UndefOr[js.Any] = js.native
+  var scrollbarWidth: js.UndefOr[Double] = js.native
+  var sendToClipboard: js.UndefOr[js.Function1[/* params */ js.Any, Unit]] = js.native
+  var serverSideDatasource: js.UndefOr[IServerSideDatasource] = js.native
+  var serverSideSortingAlwaysResets: js.UndefOr[Boolean] = js.native
+  var showToolPanel: js.UndefOr[Boolean] = js.native
+  var singleClickEdit: js.UndefOr[Boolean] = js.native
+  var slaveGrids: js.UndefOr[js.Array[GridOptions]] = js.native
+  var sortingOrder: js.UndefOr[js.Array[String]] = js.native
+  var stopEditingWhenGridLosesFocus: js.UndefOr[Boolean] = js.native
+  var suppressAggAtRootLevel: js.UndefOr[Boolean] = js.native
+  var suppressAggFuncInHeader: js.UndefOr[Boolean] = js.native
+  var suppressAnimationFrame: js.UndefOr[Boolean] = js.native
+  var suppressAsyncEvents: js.UndefOr[Boolean] = js.native
+  var suppressAutoSize: js.UndefOr[Boolean] = js.native
+  var suppressCellSelection: js.UndefOr[Boolean] = js.native
+  var suppressChangeDetection: js.UndefOr[Boolean] = js.native
+  var suppressClickEdit: js.UndefOr[Boolean] = js.native
+  var suppressClipboardPaste: js.UndefOr[Boolean] = js.native
+  var suppressColumnMoveAnimation: js.UndefOr[Boolean] = js.native
+  var suppressColumnVirtualisation: js.UndefOr[Boolean] = js.native
+  var suppressContextMenu: js.UndefOr[Boolean] = js.native
+  var suppressCopyRowsToClipboard: js.UndefOr[Boolean] = js.native
+  var suppressCsvExport: js.UndefOr[Boolean] = js.native
+  var suppressDragLeaveHidesColumns: js.UndefOr[Boolean] = js.native
+  var suppressEnterpriseResetOnNewColumns: js.UndefOr[Boolean] = js.native
+  var suppressExcelExport: js.UndefOr[Boolean] = js.native
+  var suppressFieldDotNotation: js.UndefOr[Boolean] = js.native
+  var suppressFocusAfterRefresh: js.UndefOr[Boolean] = js.native
+  var suppressHorizontalScroll: js.UndefOr[Boolean] = js.native
+  var suppressLoadingOverlay: js.UndefOr[Boolean] = js.native
+  var suppressMakeColumnVisibleAfterUnGroup: js.UndefOr[Boolean] = js.native
+  var suppressMenuHide: js.UndefOr[Boolean] = js.native
+  var suppressMiddleClickScrolls: js.UndefOr[Boolean] = js.native
+  var suppressMovableColumns: js.UndefOr[Boolean] = js.native
+  var suppressMultiRangeSelection: js.UndefOr[Boolean] = js.native
+  var suppressMultiSort: js.UndefOr[Boolean] = js.native
+  var suppressNoRowsOverlay: js.UndefOr[Boolean] = js.native
+  var suppressPaginationPanel: js.UndefOr[Boolean] = js.native
+  var suppressParentsInRowNodes: js.UndefOr[Boolean] = js.native
+  var suppressPreventDefaultOnMouseWheel: js.UndefOr[Boolean] = js.native
+  var suppressPropertyNamesCheck: js.UndefOr[Boolean] = js.native
+  var suppressRowClickSelection: js.UndefOr[Boolean] = js.native
+  var suppressRowDrag: js.UndefOr[Boolean] = js.native
+  var suppressRowHoverHighlight: js.UndefOr[Boolean] = js.native
+  var suppressRowTransform: js.UndefOr[Boolean] = js.native
+  var suppressScrollOnNewData: js.UndefOr[Boolean] = js.native
+  var suppressTabbing: js.UndefOr[Boolean] = js.native
+  var suppressTouch: js.UndefOr[Boolean] = js.native
+  var tabToNextCell: js.UndefOr[js.Function1[/* params */ TabToNextCellParams, GridCellDef]] = js.native
+  var toolPanelSuppressColumnExpandAll: js.UndefOr[Boolean] = js.native
+  var toolPanelSuppressColumnFilter: js.UndefOr[Boolean] = js.native
+  var toolPanelSuppressColumnSelectAll: js.UndefOr[Boolean] = js.native
+  var toolPanelSuppressPivotMode: js.UndefOr[Boolean] = js.native
+  var toolPanelSuppressPivots: js.UndefOr[Boolean] = js.native
+  var toolPanelSuppressRowGroups: js.UndefOr[Boolean] = js.native
+  var toolPanelSuppressSideButtons: js.UndefOr[Boolean] = js.native
+  var toolPanelSuppressValues: js.UndefOr[Boolean] = js.native
+  var treeData: js.UndefOr[Boolean] = js.native
+  var unSortIcon: js.UndefOr[Boolean] = js.native
+  var valueCache: js.UndefOr[Boolean] = js.native
+  var valueCacheNeverExpires: js.UndefOr[Boolean] = js.native
+  var viewportDatasource: js.UndefOr[IViewportDatasource] = js.native
+  var viewportRowModelBufferSize: js.UndefOr[Double] = js.native
+  var viewportRowModelPageSize: js.UndefOr[Double] = js.native
 }
 
 object GridOptions {
   @scala.inline
-  def apply(
-    ComponentHolder: ComponentHolder = null,
-    accentedSort: js.UndefOr[Boolean] = js.undefined,
-    aggFuncs: StringDictionary[IAggFunc] = null,
-    aggregateOnlyChangedColumns: js.UndefOr[Boolean] = js.undefined,
-    alignedGrids: js.Array[GridOptions] = null,
-    allowContextMenuWithControlKey: js.UndefOr[Boolean] = js.undefined,
-    alwaysShowStatusBar: js.UndefOr[Boolean] = js.undefined,
-    angularCompileFilters: js.UndefOr[Boolean] = js.undefined,
-    angularCompileHeaders: js.UndefOr[Boolean] = js.undefined,
-    angularCompileRows: js.UndefOr[Boolean] = js.undefined,
-    animateRows: js.UndefOr[Boolean] = js.undefined,
-    api: GridApi = null,
-    autoGroupColumnDef: ColDef = null,
-    autoSizePadding: js.UndefOr[Double] = js.undefined,
-    batchUpdateWaitMillis: js.UndefOr[Double] = js.undefined,
-    cacheBlockSize: js.UndefOr[Double] = js.undefined,
-    cacheOverflowSize: js.UndefOr[Double] = js.undefined,
-    cacheQuickFilter: js.UndefOr[Boolean] = js.undefined,
-    clipboardDeliminator: String = null,
-    colResizeDefault: String = null,
-    colWidth: js.UndefOr[Double] = js.undefined,
-    columnApi: ColumnApi = null,
-    columnDefs: js.Array[ColDef | ColGroupDef] = null,
-    columnTypes: StringDictionary[ColDef] = null,
-    components: StringDictionary[AgGridRegisteredComponentInput[IComponent[_]]] = null,
-    context: js.Any = null,
-    contractColumnSelection: js.UndefOr[Boolean] = js.undefined,
-    datasource: IDatasource = null,
-    dateComponent: Instantiable = null,
-    dateComponentFramework: js.Any = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    defaultColDef: ColDef = null,
-    defaultColGroupDef: ColGroupDef = null,
-    defaultExportParams: CsvExportParams = null,
-    defaultGroupSortComparator: (/* nodeA */ RowNode, /* nodeB */ RowNode) => Double = null,
-    deltaRowDataMode: js.UndefOr[Boolean] = js.undefined,
-    detailCellRenderer: InstantiableICellRendererComp | ICellRendererFunc | String = null,
-    detailCellRendererFramework: js.Any = null,
-    detailCellRendererParams: js.Any = null,
-    detailRowHeight: js.UndefOr[Double] = js.undefined,
-    doesDataFlower: /* dataItem */ js.Any => Boolean = null,
-    doesExternalFilterPass: /* node */ RowNode => Boolean = null,
-    domLayout: String = null,
-    editType: String = null,
-    embedFullWidthRows: js.UndefOr[Boolean] = js.undefined,
-    enableCellChangeFlash: js.UndefOr[Boolean] = js.undefined,
-    enableCellExpressions: js.UndefOr[Boolean] = js.undefined,
-    enableColResize: js.UndefOr[Boolean] = js.undefined,
-    enableFilter: js.UndefOr[Boolean] = js.undefined,
-    enableGroupEdit: js.UndefOr[Boolean] = js.undefined,
-    enableOldSetFilterModel: js.UndefOr[Boolean] = js.undefined,
-    enableRangeSelection: js.UndefOr[Boolean] = js.undefined,
-    enableRtl: js.UndefOr[Boolean] = js.undefined,
-    enableServerSideFilter: js.UndefOr[Boolean] = js.undefined,
-    enableServerSideSorting: js.UndefOr[Boolean] = js.undefined,
-    enableSorting: js.UndefOr[Boolean] = js.undefined,
-    enableStatusBar: js.UndefOr[Boolean] = js.undefined,
-    ensureDomOrder: js.UndefOr[Boolean] = js.undefined,
-    enterMovesDown: js.UndefOr[Boolean] = js.undefined,
-    enterMovesDownAfterEdit: js.UndefOr[Boolean] = js.undefined,
-    excelStyles: js.Array[_] = null,
-    floatingFilter: js.UndefOr[Boolean] = js.undefined,
-    floatingFiltersHeight: js.UndefOr[Double] = js.undefined,
-    forPrint: js.UndefOr[Boolean] = js.undefined,
-    frameworkComponents: StringDictionary[InstantiableAny] = null,
-    fullWidthCellRenderer: InstantiableICellRendererComp | ICellRendererFunc | String = null,
-    fullWidthCellRendererFramework: js.Any = null,
-    fullWidthCellRendererParams: js.Any = null,
-    functionsPassive: js.UndefOr[Boolean] = js.undefined,
-    functionsReadOnly: js.UndefOr[Boolean] = js.undefined,
-    getBusinessKeyForNode: /* node */ RowNode => String = null,
-    getChildCount: /* dataItem */ js.Any => Double = null,
-    getContextMenuItems: /* params */ GetContextMenuItemsParams => js.Array[String | MenuItemDef] = null,
-    getDataPath: /* data */ js.Any => js.Array[String] = null,
-    getDocument: () => Document = null,
-    getMainMenuItems: /* params */ GetMainMenuItemsParams => js.Array[String | MenuItemDef] = null,
-    getNodeChildDetails: /* dataItem */ js.Any => NodeChildDetails = null,
-    getRowClass: /* params */ js.Any => String | js.Array[String] = null,
-    getRowHeight: js.Function = null,
-    getRowNodeId: /* data */ js.Any => String = null,
-    getRowStyle: js.Function = null,
-    gridAutoHeight: js.UndefOr[Boolean] = js.undefined,
-    groupColumnDef: ColDef = null,
-    groupDefaultExpanded: js.UndefOr[Double] = js.undefined,
-    groupHeaderHeight: js.UndefOr[Double] = js.undefined,
-    groupHideOpenParents: js.UndefOr[Boolean] = js.undefined,
-    groupIncludeFooter: js.UndefOr[Boolean] = js.undefined,
-    groupIncludeTotalFooter: js.UndefOr[Boolean] = js.undefined,
-    groupMultiAutoColumn: js.UndefOr[Boolean] = js.undefined,
-    groupRemoveLowestSingleChildren: js.UndefOr[Boolean] = js.undefined,
-    groupRemoveSingleChildren: js.UndefOr[Boolean] = js.undefined,
-    groupRowAggNodes: /* nodes */ js.Array[RowNode] => _ = null,
-    groupRowInnerRenderer: InstantiableICellRendererComp | ICellRendererFunc | String = null,
-    groupRowInnerRendererFramework: js.Any = null,
-    groupRowRenderer: InstantiableICellRendererComp | ICellRendererFunc | String = null,
-    groupRowRendererFramework: js.Any = null,
-    groupRowRendererParams: js.Any = null,
-    groupSelectsChildren: js.UndefOr[Boolean] = js.undefined,
-    groupSelectsFiltered: js.UndefOr[Boolean] = js.undefined,
-    groupSuppressAutoColumn: js.UndefOr[Boolean] = js.undefined,
-    groupSuppressBlankHeader: js.UndefOr[Boolean] = js.undefined,
-    groupSuppressRow: js.UndefOr[Boolean] = js.undefined,
-    groupUseEntireRow: js.UndefOr[Boolean] = js.undefined,
-    headerHeight: js.UndefOr[Double] = js.undefined,
-    icons: js.Any = null,
-    infiniteInitialRowCount: js.UndefOr[Double] = js.undefined,
-    isExternalFilterPresent: () => Boolean = null,
-    isFullWidthCell: /* rowNode */ RowNode => Boolean = null,
-    isRowMaster: /* dataItem */ js.Any => Boolean = null,
-    isRowSelectable: /* node */ RowNode => Boolean = null,
-    loadingOverlayComponent: InstantiableILoadingOverlayComp | String = null,
-    loadingOverlayComponentFramework: js.Any = null,
-    localeText: js.Any = null,
-    localeTextFunc: js.Function = null,
-    masterDetail: js.UndefOr[Boolean] = js.undefined,
-    maxBlocksInCache: js.UndefOr[Double] = js.undefined,
-    maxColWidth: js.UndefOr[Double] = js.undefined,
-    maxConcurrentDatasourceRequests: js.UndefOr[Double] = js.undefined,
-    minColWidth: js.UndefOr[Double] = js.undefined,
-    multiSortKey: String = null,
-    navigateToNextCell: /* params */ NavigateToNextCellParams => GridCellDef = null,
-    noRowsOverlayComponent: InstantiableINoRowsOverlayComp | String = null,
-    noRowsOverlayComponentFramework: js.Any = null,
-    onBodyScroll: /* event */ BodyScrollEvent => Unit = null,
-    onCellClicked: /* event */ CellClickedEvent => Unit = null,
-    onCellContextMenu: /* event */ CellContextMenuEvent => Unit = null,
-    onCellDoubleClicked: /* event */ CellDoubleClickedEvent => Unit = null,
-    onCellEditingStarted: /* event */ CellEditingStartedEvent => Unit = null,
-    onCellEditingStopped: /* event */ CellEditingStoppedEvent => Unit = null,
-    onCellFocused: /* event */ CellFocusedEvent => Unit = null,
-    onCellMouseDown: /* event */ CellMouseDownEvent => Unit = null,
-    onCellMouseOut: /* event */ CellMouseOutEvent => Unit = null,
-    onCellMouseOver: /* event */ CellMouseOverEvent => Unit = null,
-    onCellValueChanged: /* event */ CellValueChangedEvent => Unit = null,
-    onColumnAggFuncChangeRequest: /* event */ ColumnAggFuncChangeRequestEvent => Unit = null,
-    onColumnEverythingChanged: /* event */ ColumnEverythingChangedEvent => Unit = null,
-    onColumnGroupOpened: /* event */ ColumnGroupOpenedEvent => Unit = null,
-    onColumnMoved: /* event */ ColumnMovedEvent => Unit = null,
-    onColumnPinned: /* event */ ColumnPinnedEvent => Unit = null,
-    onColumnPivotChangeRequest: /* event */ ColumnPivotChangeRequestEvent => Unit = null,
-    onColumnPivotChanged: /* event */ ColumnPivotChangedEvent => Unit = null,
-    onColumnPivotModeChanged: /* event */ ColumnPivotModeChangedEvent => Unit = null,
-    onColumnResized: /* event */ ColumnResizedEvent => Unit = null,
-    onColumnRowGroupChangeRequest: /* event */ ColumnRowGroupChangeRequestEvent => Unit = null,
-    onColumnRowGroupChanged: /* event */ ColumnRowGroupChangedEvent => Unit = null,
-    onColumnValueChangeRequest: /* event */ ColumnValueChangeRequestEvent => Unit = null,
-    onColumnValueChanged: /* event */ ColumnValueChangedEvent => Unit = null,
-    onColumnVisible: /* event */ ColumnVisibleEvent => Unit = null,
-    onDisplayedColumnsChanged: /* event */ DisplayedColumnsChangedEvent => Unit = null,
-    onDragStarted: /* event */ DragStartedEvent => Unit = null,
-    onDragStopped: /* event */ DragStoppedEvent => Unit = null,
-    onFilterChanged: /* event */ FilterChangedEvent => Unit = null,
-    onFilterModified: /* event */ FilterModifiedEvent => Unit = null,
-    onGridColumnsChanged: /* event */ GridColumnsChangedEvent => Unit = null,
-    onGridReady: /* event */ GridReadyEvent => Unit = null,
-    onGridSizeChanged: /* event */ js.Any => Unit = null,
-    onModelUpdated: /* event */ ModelUpdatedEvent => Unit = null,
-    onNewColumnsLoaded: /* event */ NewColumnsLoadedEvent => Unit = null,
-    onPaginationChanged: /* event */ PaginationChangedEvent => Unit = null,
-    onPasteEnd: /* event */ PasteEndEvent => Unit = null,
-    onPasteStart: /* event */ PasteStartEvent => Unit = null,
-    onPinnedRowDataChanged: /* event */ PinnedRowDataChangedEvent => Unit = null,
-    onRangeSelectionChanged: /* event */ RangeSelectionChangedEvent => Unit = null,
-    onRowClicked: /* event */ RowClickedEvent => Unit = null,
-    onRowDataChanged: /* event */ RowDataChangedEvent => Unit = null,
-    onRowDataUpdated: /* event */ RowDataUpdatedEvent => Unit = null,
-    onRowDoubleClicked: /* event */ RowDoubleClickedEvent => Unit = null,
-    onRowDragEnd: /* event */ RowDragEvent => Unit = null,
-    onRowDragEnter: /* event */ RowDragEvent => Unit = null,
-    onRowDragLeave: /* event */ RowDragEvent => Unit = null,
-    onRowDragMove: /* event */ RowDragEvent => Unit = null,
-    onRowEditingStarted: /* event */ RowEditingStartedEvent => Unit = null,
-    onRowEditingStopped: /* event */ RowEditingStoppedEvent => Unit = null,
-    onRowGroupOpened: /* event */ RowGroupOpenedEvent => Unit = null,
-    onRowSelected: /* event */ RowSelectedEvent => Unit = null,
-    onRowValueChanged: /* event */ RowValueChangedEvent => Unit = null,
-    onSelectionChanged: /* event */ SelectionChangedEvent => Unit = null,
-    onSortChanged: /* event */ SortChangedEvent => Unit = null,
-    onViewportChanged: /* event */ ViewportChangedEvent => Unit = null,
-    onVirtualColumnsChanged: /* event */ VirtualColumnsChangedEvent => Unit = null,
-    onVirtualRowRemoved: /* event */ VirtualRowRemovedEvent => Unit = null,
-    overlayLoadingTemplate: String = null,
-    overlayNoRowsTemplate: String = null,
-    pagination: js.UndefOr[Boolean] = js.undefined,
-    paginationAutoPageSize: js.UndefOr[Boolean] = js.undefined,
-    paginationNumberFormatter: /* params */ PaginationNumberFormatterParams => String = null,
-    paginationPageSize: js.UndefOr[Double] = js.undefined,
-    paginationStartPage: js.UndefOr[Double] = js.undefined,
-    pinnedBottomRowData: js.Array[_] = null,
-    pinnedTopRowData: js.Array[_] = null,
-    pivotColumnGroupTotals: String = null,
-    pivotGroupHeaderHeight: js.UndefOr[Double] = js.undefined,
-    pivotHeaderHeight: js.UndefOr[Double] = js.undefined,
-    pivotMode: js.UndefOr[Boolean] = js.undefined,
-    pivotPanelShow: String = null,
-    pivotRowTotals: String = null,
-    pivotTotals: js.UndefOr[Boolean] = js.undefined,
-    popupParent: HTMLElement = null,
-    postProcessPopup: /* params */ PostProcessPopupParams => Unit = null,
-    postSort: /* nodes */ js.Array[RowNode] => Unit = null,
-    processCellForClipboard: /* params */ ProcessCellForExportParams => _ = null,
-    processCellFromClipboard: /* params */ ProcessCellForExportParams => _ = null,
-    processDataFromClipboard: /* params */ ProcessDataFromClipboardParams => js.Array[js.Array[String]] = null,
-    processHeaderForClipboard: /* params */ ProcessHeaderForExportParams => _ = null,
-    processRowPostCreate: /* params */ ProcessRowParams => Unit = null,
-    processSecondaryColDef: /* colDef */ ColDef => Unit = null,
-    processSecondaryColGroupDef: /* colGroupDef */ ColGroupDef => Unit = null,
-    purgeClosedRowNodes: js.UndefOr[Boolean] = js.undefined,
-    quickFilterText: String = null,
-    rememberGroupStateWhenNewData: js.UndefOr[Boolean] = js.undefined,
-    rowBuffer: js.UndefOr[Double] = js.undefined,
-    rowClass: String | js.Array[String] = null,
-    rowClassRules: StringDictionary[js.Function | String] = null,
-    rowData: js.Array[_] = null,
-    rowDeselection: js.UndefOr[Boolean] = js.undefined,
-    rowDragManaged: js.UndefOr[Boolean] = js.undefined,
-    rowGroupPanelShow: String = null,
-    rowHeight: js.UndefOr[Double] = js.undefined,
-    rowModelType: String = null,
-    rowMultiSelectWithClick: js.UndefOr[Boolean] = js.undefined,
-    rowSelection: String = null,
-    rowStyle: js.Any = null,
-    scrollbarWidth: js.UndefOr[Double] = js.undefined,
-    sendToClipboard: /* params */ js.Any => Unit = null,
-    serverSideDatasource: IServerSideDatasource = null,
-    serverSideSortingAlwaysResets: js.UndefOr[Boolean] = js.undefined,
-    showToolPanel: js.UndefOr[Boolean] = js.undefined,
-    singleClickEdit: js.UndefOr[Boolean] = js.undefined,
-    slaveGrids: js.Array[GridOptions] = null,
-    sortingOrder: js.Array[String] = null,
-    stopEditingWhenGridLosesFocus: js.UndefOr[Boolean] = js.undefined,
-    suppressAggAtRootLevel: js.UndefOr[Boolean] = js.undefined,
-    suppressAggFuncInHeader: js.UndefOr[Boolean] = js.undefined,
-    suppressAnimationFrame: js.UndefOr[Boolean] = js.undefined,
-    suppressAsyncEvents: js.UndefOr[Boolean] = js.undefined,
-    suppressAutoSize: js.UndefOr[Boolean] = js.undefined,
-    suppressCellSelection: js.UndefOr[Boolean] = js.undefined,
-    suppressChangeDetection: js.UndefOr[Boolean] = js.undefined,
-    suppressClickEdit: js.UndefOr[Boolean] = js.undefined,
-    suppressClipboardPaste: js.UndefOr[Boolean] = js.undefined,
-    suppressColumnMoveAnimation: js.UndefOr[Boolean] = js.undefined,
-    suppressColumnVirtualisation: js.UndefOr[Boolean] = js.undefined,
-    suppressContextMenu: js.UndefOr[Boolean] = js.undefined,
-    suppressCopyRowsToClipboard: js.UndefOr[Boolean] = js.undefined,
-    suppressCsvExport: js.UndefOr[Boolean] = js.undefined,
-    suppressDragLeaveHidesColumns: js.UndefOr[Boolean] = js.undefined,
-    suppressEnterpriseResetOnNewColumns: js.UndefOr[Boolean] = js.undefined,
-    suppressExcelExport: js.UndefOr[Boolean] = js.undefined,
-    suppressFieldDotNotation: js.UndefOr[Boolean] = js.undefined,
-    suppressFocusAfterRefresh: js.UndefOr[Boolean] = js.undefined,
-    suppressHorizontalScroll: js.UndefOr[Boolean] = js.undefined,
-    suppressLoadingOverlay: js.UndefOr[Boolean] = js.undefined,
-    suppressMakeColumnVisibleAfterUnGroup: js.UndefOr[Boolean] = js.undefined,
-    suppressMenuHide: js.UndefOr[Boolean] = js.undefined
-  ): GridOptions = {
+  def apply(): GridOptions = {
     val __obj = js.Dynamic.literal()
-    if (ComponentHolder != null) js.Dynamic.global.Object.assign(__obj, ComponentHolder)
-    if (!js.isUndefined(accentedSort)) __obj.updateDynamic("accentedSort")(accentedSort.get.asInstanceOf[js.Any])
-    if (aggFuncs != null) __obj.updateDynamic("aggFuncs")(aggFuncs.asInstanceOf[js.Any])
-    if (!js.isUndefined(aggregateOnlyChangedColumns)) __obj.updateDynamic("aggregateOnlyChangedColumns")(aggregateOnlyChangedColumns.get.asInstanceOf[js.Any])
-    if (alignedGrids != null) __obj.updateDynamic("alignedGrids")(alignedGrids.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowContextMenuWithControlKey)) __obj.updateDynamic("allowContextMenuWithControlKey")(allowContextMenuWithControlKey.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysShowStatusBar)) __obj.updateDynamic("alwaysShowStatusBar")(alwaysShowStatusBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angularCompileFilters)) __obj.updateDynamic("angularCompileFilters")(angularCompileFilters.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angularCompileHeaders)) __obj.updateDynamic("angularCompileHeaders")(angularCompileHeaders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angularCompileRows)) __obj.updateDynamic("angularCompileRows")(angularCompileRows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateRows)) __obj.updateDynamic("animateRows")(animateRows.get.asInstanceOf[js.Any])
-    if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
-    if (autoGroupColumnDef != null) __obj.updateDynamic("autoGroupColumnDef")(autoGroupColumnDef.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSizePadding)) __obj.updateDynamic("autoSizePadding")(autoSizePadding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchUpdateWaitMillis)) __obj.updateDynamic("batchUpdateWaitMillis")(batchUpdateWaitMillis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheBlockSize)) __obj.updateDynamic("cacheBlockSize")(cacheBlockSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheOverflowSize)) __obj.updateDynamic("cacheOverflowSize")(cacheOverflowSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheQuickFilter)) __obj.updateDynamic("cacheQuickFilter")(cacheQuickFilter.get.asInstanceOf[js.Any])
-    if (clipboardDeliminator != null) __obj.updateDynamic("clipboardDeliminator")(clipboardDeliminator.asInstanceOf[js.Any])
-    if (colResizeDefault != null) __obj.updateDynamic("colResizeDefault")(colResizeDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(colWidth)) __obj.updateDynamic("colWidth")(colWidth.get.asInstanceOf[js.Any])
-    if (columnApi != null) __obj.updateDynamic("columnApi")(columnApi.asInstanceOf[js.Any])
-    if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs.asInstanceOf[js.Any])
-    if (columnTypes != null) __obj.updateDynamic("columnTypes")(columnTypes.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(contractColumnSelection)) __obj.updateDynamic("contractColumnSelection")(contractColumnSelection.get.asInstanceOf[js.Any])
-    if (datasource != null) __obj.updateDynamic("datasource")(datasource.asInstanceOf[js.Any])
-    if (dateComponent != null) __obj.updateDynamic("dateComponent")(dateComponent.asInstanceOf[js.Any])
-    if (dateComponentFramework != null) __obj.updateDynamic("dateComponentFramework")(dateComponentFramework.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (defaultColDef != null) __obj.updateDynamic("defaultColDef")(defaultColDef.asInstanceOf[js.Any])
-    if (defaultColGroupDef != null) __obj.updateDynamic("defaultColGroupDef")(defaultColGroupDef.asInstanceOf[js.Any])
-    if (defaultExportParams != null) __obj.updateDynamic("defaultExportParams")(defaultExportParams.asInstanceOf[js.Any])
-    if (defaultGroupSortComparator != null) __obj.updateDynamic("defaultGroupSortComparator")(js.Any.fromFunction2(defaultGroupSortComparator))
-    if (!js.isUndefined(deltaRowDataMode)) __obj.updateDynamic("deltaRowDataMode")(deltaRowDataMode.get.asInstanceOf[js.Any])
-    if (detailCellRenderer != null) __obj.updateDynamic("detailCellRenderer")(detailCellRenderer.asInstanceOf[js.Any])
-    if (detailCellRendererFramework != null) __obj.updateDynamic("detailCellRendererFramework")(detailCellRendererFramework.asInstanceOf[js.Any])
-    if (detailCellRendererParams != null) __obj.updateDynamic("detailCellRendererParams")(detailCellRendererParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(detailRowHeight)) __obj.updateDynamic("detailRowHeight")(detailRowHeight.get.asInstanceOf[js.Any])
-    if (doesDataFlower != null) __obj.updateDynamic("doesDataFlower")(js.Any.fromFunction1(doesDataFlower))
-    if (doesExternalFilterPass != null) __obj.updateDynamic("doesExternalFilterPass")(js.Any.fromFunction1(doesExternalFilterPass))
-    if (domLayout != null) __obj.updateDynamic("domLayout")(domLayout.asInstanceOf[js.Any])
-    if (editType != null) __obj.updateDynamic("editType")(editType.asInstanceOf[js.Any])
-    if (!js.isUndefined(embedFullWidthRows)) __obj.updateDynamic("embedFullWidthRows")(embedFullWidthRows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellChangeFlash)) __obj.updateDynamic("enableCellChangeFlash")(enableCellChangeFlash.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellExpressions)) __obj.updateDynamic("enableCellExpressions")(enableCellExpressions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColResize)) __obj.updateDynamic("enableColResize")(enableColResize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFilter)) __obj.updateDynamic("enableFilter")(enableFilter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGroupEdit)) __obj.updateDynamic("enableGroupEdit")(enableGroupEdit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableOldSetFilterModel)) __obj.updateDynamic("enableOldSetFilterModel")(enableOldSetFilterModel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRangeSelection)) __obj.updateDynamic("enableRangeSelection")(enableRangeSelection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRtl)) __obj.updateDynamic("enableRtl")(enableRtl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableServerSideFilter)) __obj.updateDynamic("enableServerSideFilter")(enableServerSideFilter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableServerSideSorting)) __obj.updateDynamic("enableServerSideSorting")(enableServerSideSorting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableStatusBar)) __obj.updateDynamic("enableStatusBar")(enableStatusBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ensureDomOrder)) __obj.updateDynamic("ensureDomOrder")(ensureDomOrder.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterMovesDown)) __obj.updateDynamic("enterMovesDown")(enterMovesDown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterMovesDownAfterEdit)) __obj.updateDynamic("enterMovesDownAfterEdit")(enterMovesDownAfterEdit.get.asInstanceOf[js.Any])
-    if (excelStyles != null) __obj.updateDynamic("excelStyles")(excelStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatingFilter)) __obj.updateDynamic("floatingFilter")(floatingFilter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatingFiltersHeight)) __obj.updateDynamic("floatingFiltersHeight")(floatingFiltersHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forPrint)) __obj.updateDynamic("forPrint")(forPrint.get.asInstanceOf[js.Any])
-    if (frameworkComponents != null) __obj.updateDynamic("frameworkComponents")(frameworkComponents.asInstanceOf[js.Any])
-    if (fullWidthCellRenderer != null) __obj.updateDynamic("fullWidthCellRenderer")(fullWidthCellRenderer.asInstanceOf[js.Any])
-    if (fullWidthCellRendererFramework != null) __obj.updateDynamic("fullWidthCellRendererFramework")(fullWidthCellRendererFramework.asInstanceOf[js.Any])
-    if (fullWidthCellRendererParams != null) __obj.updateDynamic("fullWidthCellRendererParams")(fullWidthCellRendererParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(functionsPassive)) __obj.updateDynamic("functionsPassive")(functionsPassive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(functionsReadOnly)) __obj.updateDynamic("functionsReadOnly")(functionsReadOnly.get.asInstanceOf[js.Any])
-    if (getBusinessKeyForNode != null) __obj.updateDynamic("getBusinessKeyForNode")(js.Any.fromFunction1(getBusinessKeyForNode))
-    if (getChildCount != null) __obj.updateDynamic("getChildCount")(js.Any.fromFunction1(getChildCount))
-    if (getContextMenuItems != null) __obj.updateDynamic("getContextMenuItems")(js.Any.fromFunction1(getContextMenuItems))
-    if (getDataPath != null) __obj.updateDynamic("getDataPath")(js.Any.fromFunction1(getDataPath))
-    if (getDocument != null) __obj.updateDynamic("getDocument")(js.Any.fromFunction0(getDocument))
-    if (getMainMenuItems != null) __obj.updateDynamic("getMainMenuItems")(js.Any.fromFunction1(getMainMenuItems))
-    if (getNodeChildDetails != null) __obj.updateDynamic("getNodeChildDetails")(js.Any.fromFunction1(getNodeChildDetails))
-    if (getRowClass != null) __obj.updateDynamic("getRowClass")(js.Any.fromFunction1(getRowClass))
-    if (getRowHeight != null) __obj.updateDynamic("getRowHeight")(getRowHeight.asInstanceOf[js.Any])
-    if (getRowNodeId != null) __obj.updateDynamic("getRowNodeId")(js.Any.fromFunction1(getRowNodeId))
-    if (getRowStyle != null) __obj.updateDynamic("getRowStyle")(getRowStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(gridAutoHeight)) __obj.updateDynamic("gridAutoHeight")(gridAutoHeight.get.asInstanceOf[js.Any])
-    if (groupColumnDef != null) __obj.updateDynamic("groupColumnDef")(groupColumnDef.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupDefaultExpanded)) __obj.updateDynamic("groupDefaultExpanded")(groupDefaultExpanded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupHeaderHeight)) __obj.updateDynamic("groupHeaderHeight")(groupHeaderHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupHideOpenParents)) __obj.updateDynamic("groupHideOpenParents")(groupHideOpenParents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupIncludeFooter)) __obj.updateDynamic("groupIncludeFooter")(groupIncludeFooter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupIncludeTotalFooter)) __obj.updateDynamic("groupIncludeTotalFooter")(groupIncludeTotalFooter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupMultiAutoColumn)) __obj.updateDynamic("groupMultiAutoColumn")(groupMultiAutoColumn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupRemoveLowestSingleChildren)) __obj.updateDynamic("groupRemoveLowestSingleChildren")(groupRemoveLowestSingleChildren.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupRemoveSingleChildren)) __obj.updateDynamic("groupRemoveSingleChildren")(groupRemoveSingleChildren.get.asInstanceOf[js.Any])
-    if (groupRowAggNodes != null) __obj.updateDynamic("groupRowAggNodes")(js.Any.fromFunction1(groupRowAggNodes))
-    if (groupRowInnerRenderer != null) __obj.updateDynamic("groupRowInnerRenderer")(groupRowInnerRenderer.asInstanceOf[js.Any])
-    if (groupRowInnerRendererFramework != null) __obj.updateDynamic("groupRowInnerRendererFramework")(groupRowInnerRendererFramework.asInstanceOf[js.Any])
-    if (groupRowRenderer != null) __obj.updateDynamic("groupRowRenderer")(groupRowRenderer.asInstanceOf[js.Any])
-    if (groupRowRendererFramework != null) __obj.updateDynamic("groupRowRendererFramework")(groupRowRendererFramework.asInstanceOf[js.Any])
-    if (groupRowRendererParams != null) __obj.updateDynamic("groupRowRendererParams")(groupRowRendererParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupSelectsChildren)) __obj.updateDynamic("groupSelectsChildren")(groupSelectsChildren.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupSelectsFiltered)) __obj.updateDynamic("groupSelectsFiltered")(groupSelectsFiltered.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupSuppressAutoColumn)) __obj.updateDynamic("groupSuppressAutoColumn")(groupSuppressAutoColumn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupSuppressBlankHeader)) __obj.updateDynamic("groupSuppressBlankHeader")(groupSuppressBlankHeader.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupSuppressRow)) __obj.updateDynamic("groupSuppressRow")(groupSuppressRow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupUseEntireRow)) __obj.updateDynamic("groupUseEntireRow")(groupUseEntireRow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerHeight)) __obj.updateDynamic("headerHeight")(headerHeight.get.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (!js.isUndefined(infiniteInitialRowCount)) __obj.updateDynamic("infiniteInitialRowCount")(infiniteInitialRowCount.get.asInstanceOf[js.Any])
-    if (isExternalFilterPresent != null) __obj.updateDynamic("isExternalFilterPresent")(js.Any.fromFunction0(isExternalFilterPresent))
-    if (isFullWidthCell != null) __obj.updateDynamic("isFullWidthCell")(js.Any.fromFunction1(isFullWidthCell))
-    if (isRowMaster != null) __obj.updateDynamic("isRowMaster")(js.Any.fromFunction1(isRowMaster))
-    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction1(isRowSelectable))
-    if (loadingOverlayComponent != null) __obj.updateDynamic("loadingOverlayComponent")(loadingOverlayComponent.asInstanceOf[js.Any])
-    if (loadingOverlayComponentFramework != null) __obj.updateDynamic("loadingOverlayComponentFramework")(loadingOverlayComponentFramework.asInstanceOf[js.Any])
-    if (localeText != null) __obj.updateDynamic("localeText")(localeText.asInstanceOf[js.Any])
-    if (localeTextFunc != null) __obj.updateDynamic("localeTextFunc")(localeTextFunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(masterDetail)) __obj.updateDynamic("masterDetail")(masterDetail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBlocksInCache)) __obj.updateDynamic("maxBlocksInCache")(maxBlocksInCache.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxColWidth)) __obj.updateDynamic("maxColWidth")(maxColWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConcurrentDatasourceRequests)) __obj.updateDynamic("maxConcurrentDatasourceRequests")(maxConcurrentDatasourceRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minColWidth)) __obj.updateDynamic("minColWidth")(minColWidth.get.asInstanceOf[js.Any])
-    if (multiSortKey != null) __obj.updateDynamic("multiSortKey")(multiSortKey.asInstanceOf[js.Any])
-    if (navigateToNextCell != null) __obj.updateDynamic("navigateToNextCell")(js.Any.fromFunction1(navigateToNextCell))
-    if (noRowsOverlayComponent != null) __obj.updateDynamic("noRowsOverlayComponent")(noRowsOverlayComponent.asInstanceOf[js.Any])
-    if (noRowsOverlayComponentFramework != null) __obj.updateDynamic("noRowsOverlayComponentFramework")(noRowsOverlayComponentFramework.asInstanceOf[js.Any])
-    if (onBodyScroll != null) __obj.updateDynamic("onBodyScroll")(js.Any.fromFunction1(onBodyScroll))
-    if (onCellClicked != null) __obj.updateDynamic("onCellClicked")(js.Any.fromFunction1(onCellClicked))
-    if (onCellContextMenu != null) __obj.updateDynamic("onCellContextMenu")(js.Any.fromFunction1(onCellContextMenu))
-    if (onCellDoubleClicked != null) __obj.updateDynamic("onCellDoubleClicked")(js.Any.fromFunction1(onCellDoubleClicked))
-    if (onCellEditingStarted != null) __obj.updateDynamic("onCellEditingStarted")(js.Any.fromFunction1(onCellEditingStarted))
-    if (onCellEditingStopped != null) __obj.updateDynamic("onCellEditingStopped")(js.Any.fromFunction1(onCellEditingStopped))
-    if (onCellFocused != null) __obj.updateDynamic("onCellFocused")(js.Any.fromFunction1(onCellFocused))
-    if (onCellMouseDown != null) __obj.updateDynamic("onCellMouseDown")(js.Any.fromFunction1(onCellMouseDown))
-    if (onCellMouseOut != null) __obj.updateDynamic("onCellMouseOut")(js.Any.fromFunction1(onCellMouseOut))
-    if (onCellMouseOver != null) __obj.updateDynamic("onCellMouseOver")(js.Any.fromFunction1(onCellMouseOver))
-    if (onCellValueChanged != null) __obj.updateDynamic("onCellValueChanged")(js.Any.fromFunction1(onCellValueChanged))
-    if (onColumnAggFuncChangeRequest != null) __obj.updateDynamic("onColumnAggFuncChangeRequest")(js.Any.fromFunction1(onColumnAggFuncChangeRequest))
-    if (onColumnEverythingChanged != null) __obj.updateDynamic("onColumnEverythingChanged")(js.Any.fromFunction1(onColumnEverythingChanged))
-    if (onColumnGroupOpened != null) __obj.updateDynamic("onColumnGroupOpened")(js.Any.fromFunction1(onColumnGroupOpened))
-    if (onColumnMoved != null) __obj.updateDynamic("onColumnMoved")(js.Any.fromFunction1(onColumnMoved))
-    if (onColumnPinned != null) __obj.updateDynamic("onColumnPinned")(js.Any.fromFunction1(onColumnPinned))
-    if (onColumnPivotChangeRequest != null) __obj.updateDynamic("onColumnPivotChangeRequest")(js.Any.fromFunction1(onColumnPivotChangeRequest))
-    if (onColumnPivotChanged != null) __obj.updateDynamic("onColumnPivotChanged")(js.Any.fromFunction1(onColumnPivotChanged))
-    if (onColumnPivotModeChanged != null) __obj.updateDynamic("onColumnPivotModeChanged")(js.Any.fromFunction1(onColumnPivotModeChanged))
-    if (onColumnResized != null) __obj.updateDynamic("onColumnResized")(js.Any.fromFunction1(onColumnResized))
-    if (onColumnRowGroupChangeRequest != null) __obj.updateDynamic("onColumnRowGroupChangeRequest")(js.Any.fromFunction1(onColumnRowGroupChangeRequest))
-    if (onColumnRowGroupChanged != null) __obj.updateDynamic("onColumnRowGroupChanged")(js.Any.fromFunction1(onColumnRowGroupChanged))
-    if (onColumnValueChangeRequest != null) __obj.updateDynamic("onColumnValueChangeRequest")(js.Any.fromFunction1(onColumnValueChangeRequest))
-    if (onColumnValueChanged != null) __obj.updateDynamic("onColumnValueChanged")(js.Any.fromFunction1(onColumnValueChanged))
-    if (onColumnVisible != null) __obj.updateDynamic("onColumnVisible")(js.Any.fromFunction1(onColumnVisible))
-    if (onDisplayedColumnsChanged != null) __obj.updateDynamic("onDisplayedColumnsChanged")(js.Any.fromFunction1(onDisplayedColumnsChanged))
-    if (onDragStarted != null) __obj.updateDynamic("onDragStarted")(js.Any.fromFunction1(onDragStarted))
-    if (onDragStopped != null) __obj.updateDynamic("onDragStopped")(js.Any.fromFunction1(onDragStopped))
-    if (onFilterChanged != null) __obj.updateDynamic("onFilterChanged")(js.Any.fromFunction1(onFilterChanged))
-    if (onFilterModified != null) __obj.updateDynamic("onFilterModified")(js.Any.fromFunction1(onFilterModified))
-    if (onGridColumnsChanged != null) __obj.updateDynamic("onGridColumnsChanged")(js.Any.fromFunction1(onGridColumnsChanged))
-    if (onGridReady != null) __obj.updateDynamic("onGridReady")(js.Any.fromFunction1(onGridReady))
-    if (onGridSizeChanged != null) __obj.updateDynamic("onGridSizeChanged")(js.Any.fromFunction1(onGridSizeChanged))
-    if (onModelUpdated != null) __obj.updateDynamic("onModelUpdated")(js.Any.fromFunction1(onModelUpdated))
-    if (onNewColumnsLoaded != null) __obj.updateDynamic("onNewColumnsLoaded")(js.Any.fromFunction1(onNewColumnsLoaded))
-    if (onPaginationChanged != null) __obj.updateDynamic("onPaginationChanged")(js.Any.fromFunction1(onPaginationChanged))
-    if (onPasteEnd != null) __obj.updateDynamic("onPasteEnd")(js.Any.fromFunction1(onPasteEnd))
-    if (onPasteStart != null) __obj.updateDynamic("onPasteStart")(js.Any.fromFunction1(onPasteStart))
-    if (onPinnedRowDataChanged != null) __obj.updateDynamic("onPinnedRowDataChanged")(js.Any.fromFunction1(onPinnedRowDataChanged))
-    if (onRangeSelectionChanged != null) __obj.updateDynamic("onRangeSelectionChanged")(js.Any.fromFunction1(onRangeSelectionChanged))
-    if (onRowClicked != null) __obj.updateDynamic("onRowClicked")(js.Any.fromFunction1(onRowClicked))
-    if (onRowDataChanged != null) __obj.updateDynamic("onRowDataChanged")(js.Any.fromFunction1(onRowDataChanged))
-    if (onRowDataUpdated != null) __obj.updateDynamic("onRowDataUpdated")(js.Any.fromFunction1(onRowDataUpdated))
-    if (onRowDoubleClicked != null) __obj.updateDynamic("onRowDoubleClicked")(js.Any.fromFunction1(onRowDoubleClicked))
-    if (onRowDragEnd != null) __obj.updateDynamic("onRowDragEnd")(js.Any.fromFunction1(onRowDragEnd))
-    if (onRowDragEnter != null) __obj.updateDynamic("onRowDragEnter")(js.Any.fromFunction1(onRowDragEnter))
-    if (onRowDragLeave != null) __obj.updateDynamic("onRowDragLeave")(js.Any.fromFunction1(onRowDragLeave))
-    if (onRowDragMove != null) __obj.updateDynamic("onRowDragMove")(js.Any.fromFunction1(onRowDragMove))
-    if (onRowEditingStarted != null) __obj.updateDynamic("onRowEditingStarted")(js.Any.fromFunction1(onRowEditingStarted))
-    if (onRowEditingStopped != null) __obj.updateDynamic("onRowEditingStopped")(js.Any.fromFunction1(onRowEditingStopped))
-    if (onRowGroupOpened != null) __obj.updateDynamic("onRowGroupOpened")(js.Any.fromFunction1(onRowGroupOpened))
-    if (onRowSelected != null) __obj.updateDynamic("onRowSelected")(js.Any.fromFunction1(onRowSelected))
-    if (onRowValueChanged != null) __obj.updateDynamic("onRowValueChanged")(js.Any.fromFunction1(onRowValueChanged))
-    if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1(onSelectionChanged))
-    if (onSortChanged != null) __obj.updateDynamic("onSortChanged")(js.Any.fromFunction1(onSortChanged))
-    if (onViewportChanged != null) __obj.updateDynamic("onViewportChanged")(js.Any.fromFunction1(onViewportChanged))
-    if (onVirtualColumnsChanged != null) __obj.updateDynamic("onVirtualColumnsChanged")(js.Any.fromFunction1(onVirtualColumnsChanged))
-    if (onVirtualRowRemoved != null) __obj.updateDynamic("onVirtualRowRemoved")(js.Any.fromFunction1(onVirtualRowRemoved))
-    if (overlayLoadingTemplate != null) __obj.updateDynamic("overlayLoadingTemplate")(overlayLoadingTemplate.asInstanceOf[js.Any])
-    if (overlayNoRowsTemplate != null) __obj.updateDynamic("overlayNoRowsTemplate")(overlayNoRowsTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginationAutoPageSize)) __obj.updateDynamic("paginationAutoPageSize")(paginationAutoPageSize.get.asInstanceOf[js.Any])
-    if (paginationNumberFormatter != null) __obj.updateDynamic("paginationNumberFormatter")(js.Any.fromFunction1(paginationNumberFormatter))
-    if (!js.isUndefined(paginationPageSize)) __obj.updateDynamic("paginationPageSize")(paginationPageSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginationStartPage)) __obj.updateDynamic("paginationStartPage")(paginationStartPage.get.asInstanceOf[js.Any])
-    if (pinnedBottomRowData != null) __obj.updateDynamic("pinnedBottomRowData")(pinnedBottomRowData.asInstanceOf[js.Any])
-    if (pinnedTopRowData != null) __obj.updateDynamic("pinnedTopRowData")(pinnedTopRowData.asInstanceOf[js.Any])
-    if (pivotColumnGroupTotals != null) __obj.updateDynamic("pivotColumnGroupTotals")(pivotColumnGroupTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(pivotGroupHeaderHeight)) __obj.updateDynamic("pivotGroupHeaderHeight")(pivotGroupHeaderHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pivotHeaderHeight)) __obj.updateDynamic("pivotHeaderHeight")(pivotHeaderHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pivotMode)) __obj.updateDynamic("pivotMode")(pivotMode.get.asInstanceOf[js.Any])
-    if (pivotPanelShow != null) __obj.updateDynamic("pivotPanelShow")(pivotPanelShow.asInstanceOf[js.Any])
-    if (pivotRowTotals != null) __obj.updateDynamic("pivotRowTotals")(pivotRowTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(pivotTotals)) __obj.updateDynamic("pivotTotals")(pivotTotals.get.asInstanceOf[js.Any])
-    if (popupParent != null) __obj.updateDynamic("popupParent")(popupParent.asInstanceOf[js.Any])
-    if (postProcessPopup != null) __obj.updateDynamic("postProcessPopup")(js.Any.fromFunction1(postProcessPopup))
-    if (postSort != null) __obj.updateDynamic("postSort")(js.Any.fromFunction1(postSort))
-    if (processCellForClipboard != null) __obj.updateDynamic("processCellForClipboard")(js.Any.fromFunction1(processCellForClipboard))
-    if (processCellFromClipboard != null) __obj.updateDynamic("processCellFromClipboard")(js.Any.fromFunction1(processCellFromClipboard))
-    if (processDataFromClipboard != null) __obj.updateDynamic("processDataFromClipboard")(js.Any.fromFunction1(processDataFromClipboard))
-    if (processHeaderForClipboard != null) __obj.updateDynamic("processHeaderForClipboard")(js.Any.fromFunction1(processHeaderForClipboard))
-    if (processRowPostCreate != null) __obj.updateDynamic("processRowPostCreate")(js.Any.fromFunction1(processRowPostCreate))
-    if (processSecondaryColDef != null) __obj.updateDynamic("processSecondaryColDef")(js.Any.fromFunction1(processSecondaryColDef))
-    if (processSecondaryColGroupDef != null) __obj.updateDynamic("processSecondaryColGroupDef")(js.Any.fromFunction1(processSecondaryColGroupDef))
-    if (!js.isUndefined(purgeClosedRowNodes)) __obj.updateDynamic("purgeClosedRowNodes")(purgeClosedRowNodes.get.asInstanceOf[js.Any])
-    if (quickFilterText != null) __obj.updateDynamic("quickFilterText")(quickFilterText.asInstanceOf[js.Any])
-    if (!js.isUndefined(rememberGroupStateWhenNewData)) __obj.updateDynamic("rememberGroupStateWhenNewData")(rememberGroupStateWhenNewData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowBuffer)) __obj.updateDynamic("rowBuffer")(rowBuffer.get.asInstanceOf[js.Any])
-    if (rowClass != null) __obj.updateDynamic("rowClass")(rowClass.asInstanceOf[js.Any])
-    if (rowClassRules != null) __obj.updateDynamic("rowClassRules")(rowClassRules.asInstanceOf[js.Any])
-    if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowDeselection)) __obj.updateDynamic("rowDeselection")(rowDeselection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowDragManaged)) __obj.updateDynamic("rowDragManaged")(rowDragManaged.get.asInstanceOf[js.Any])
-    if (rowGroupPanelShow != null) __obj.updateDynamic("rowGroupPanelShow")(rowGroupPanelShow.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
-    if (rowModelType != null) __obj.updateDynamic("rowModelType")(rowModelType.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowMultiSelectWithClick)) __obj.updateDynamic("rowMultiSelectWithClick")(rowMultiSelectWithClick.get.asInstanceOf[js.Any])
-    if (rowSelection != null) __obj.updateDynamic("rowSelection")(rowSelection.asInstanceOf[js.Any])
-    if (rowStyle != null) __obj.updateDynamic("rowStyle")(rowStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollbarWidth)) __obj.updateDynamic("scrollbarWidth")(scrollbarWidth.get.asInstanceOf[js.Any])
-    if (sendToClipboard != null) __obj.updateDynamic("sendToClipboard")(js.Any.fromFunction1(sendToClipboard))
-    if (serverSideDatasource != null) __obj.updateDynamic("serverSideDatasource")(serverSideDatasource.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverSideSortingAlwaysResets)) __obj.updateDynamic("serverSideSortingAlwaysResets")(serverSideSortingAlwaysResets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolPanel)) __obj.updateDynamic("showToolPanel")(showToolPanel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleClickEdit)) __obj.updateDynamic("singleClickEdit")(singleClickEdit.get.asInstanceOf[js.Any])
-    if (slaveGrids != null) __obj.updateDynamic("slaveGrids")(slaveGrids.asInstanceOf[js.Any])
-    if (sortingOrder != null) __obj.updateDynamic("sortingOrder")(sortingOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopEditingWhenGridLosesFocus)) __obj.updateDynamic("stopEditingWhenGridLosesFocus")(stopEditingWhenGridLosesFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressAggAtRootLevel)) __obj.updateDynamic("suppressAggAtRootLevel")(suppressAggAtRootLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressAggFuncInHeader)) __obj.updateDynamic("suppressAggFuncInHeader")(suppressAggFuncInHeader.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressAnimationFrame)) __obj.updateDynamic("suppressAnimationFrame")(suppressAnimationFrame.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressAsyncEvents)) __obj.updateDynamic("suppressAsyncEvents")(suppressAsyncEvents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressAutoSize)) __obj.updateDynamic("suppressAutoSize")(suppressAutoSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressCellSelection)) __obj.updateDynamic("suppressCellSelection")(suppressCellSelection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressChangeDetection)) __obj.updateDynamic("suppressChangeDetection")(suppressChangeDetection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressClickEdit)) __obj.updateDynamic("suppressClickEdit")(suppressClickEdit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressClipboardPaste)) __obj.updateDynamic("suppressClipboardPaste")(suppressClipboardPaste.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressColumnMoveAnimation)) __obj.updateDynamic("suppressColumnMoveAnimation")(suppressColumnMoveAnimation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressColumnVirtualisation)) __obj.updateDynamic("suppressColumnVirtualisation")(suppressColumnVirtualisation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressContextMenu)) __obj.updateDynamic("suppressContextMenu")(suppressContextMenu.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressCopyRowsToClipboard)) __obj.updateDynamic("suppressCopyRowsToClipboard")(suppressCopyRowsToClipboard.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressCsvExport)) __obj.updateDynamic("suppressCsvExport")(suppressCsvExport.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressDragLeaveHidesColumns)) __obj.updateDynamic("suppressDragLeaveHidesColumns")(suppressDragLeaveHidesColumns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressEnterpriseResetOnNewColumns)) __obj.updateDynamic("suppressEnterpriseResetOnNewColumns")(suppressEnterpriseResetOnNewColumns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressExcelExport)) __obj.updateDynamic("suppressExcelExport")(suppressExcelExport.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressFieldDotNotation)) __obj.updateDynamic("suppressFieldDotNotation")(suppressFieldDotNotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressFocusAfterRefresh)) __obj.updateDynamic("suppressFocusAfterRefresh")(suppressFocusAfterRefresh.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHorizontalScroll)) __obj.updateDynamic("suppressHorizontalScroll")(suppressHorizontalScroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressLoadingOverlay)) __obj.updateDynamic("suppressLoadingOverlay")(suppressLoadingOverlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressMakeColumnVisibleAfterUnGroup)) __obj.updateDynamic("suppressMakeColumnVisibleAfterUnGroup")(suppressMakeColumnVisibleAfterUnGroup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressMenuHide)) __obj.updateDynamic("suppressMenuHide")(suppressMenuHide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridOptions]
   }
+  @scala.inline
+  implicit class GridOptionsOps[Self <: GridOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccentedSort(value: Boolean): Self = this.set("accentedSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccentedSort: Self = this.set("accentedSort", js.undefined)
+    @scala.inline
+    def setAggFuncs(value: StringDictionary[IAggFunc]): Self = this.set("aggFuncs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggFuncs: Self = this.set("aggFuncs", js.undefined)
+    @scala.inline
+    def setAggregateOnlyChangedColumns(value: Boolean): Self = this.set("aggregateOnlyChangedColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregateOnlyChangedColumns: Self = this.set("aggregateOnlyChangedColumns", js.undefined)
+    @scala.inline
+    def setAlignedGridsVarargs(value: GridOptions*): Self = this.set("alignedGrids", js.Array(value :_*))
+    @scala.inline
+    def setAlignedGrids(value: js.Array[GridOptions]): Self = this.set("alignedGrids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignedGrids: Self = this.set("alignedGrids", js.undefined)
+    @scala.inline
+    def setAllowContextMenuWithControlKey(value: Boolean): Self = this.set("allowContextMenuWithControlKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowContextMenuWithControlKey: Self = this.set("allowContextMenuWithControlKey", js.undefined)
+    @scala.inline
+    def setAlwaysShowStatusBar(value: Boolean): Self = this.set("alwaysShowStatusBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysShowStatusBar: Self = this.set("alwaysShowStatusBar", js.undefined)
+    @scala.inline
+    def setAngularCompileFilters(value: Boolean): Self = this.set("angularCompileFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngularCompileFilters: Self = this.set("angularCompileFilters", js.undefined)
+    @scala.inline
+    def setAngularCompileHeaders(value: Boolean): Self = this.set("angularCompileHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngularCompileHeaders: Self = this.set("angularCompileHeaders", js.undefined)
+    @scala.inline
+    def setAngularCompileRows(value: Boolean): Self = this.set("angularCompileRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngularCompileRows: Self = this.set("angularCompileRows", js.undefined)
+    @scala.inline
+    def setAnimateRows(value: Boolean): Self = this.set("animateRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateRows: Self = this.set("animateRows", js.undefined)
+    @scala.inline
+    def setApi(value: GridApi): Self = this.set("api", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApi: Self = this.set("api", js.undefined)
+    @scala.inline
+    def setAutoGroupColumnDef(value: ColDef): Self = this.set("autoGroupColumnDef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoGroupColumnDef: Self = this.set("autoGroupColumnDef", js.undefined)
+    @scala.inline
+    def setAutoSizePadding(value: Double): Self = this.set("autoSizePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoSizePadding: Self = this.set("autoSizePadding", js.undefined)
+    @scala.inline
+    def setBatchUpdateWaitMillis(value: Double): Self = this.set("batchUpdateWaitMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchUpdateWaitMillis: Self = this.set("batchUpdateWaitMillis", js.undefined)
+    @scala.inline
+    def setCacheBlockSize(value: Double): Self = this.set("cacheBlockSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheBlockSize: Self = this.set("cacheBlockSize", js.undefined)
+    @scala.inline
+    def setCacheOverflowSize(value: Double): Self = this.set("cacheOverflowSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheOverflowSize: Self = this.set("cacheOverflowSize", js.undefined)
+    @scala.inline
+    def setCacheQuickFilter(value: Boolean): Self = this.set("cacheQuickFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheQuickFilter: Self = this.set("cacheQuickFilter", js.undefined)
+    @scala.inline
+    def setClipboardDeliminator(value: String): Self = this.set("clipboardDeliminator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClipboardDeliminator: Self = this.set("clipboardDeliminator", js.undefined)
+    @scala.inline
+    def setColResizeDefault(value: String): Self = this.set("colResizeDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColResizeDefault: Self = this.set("colResizeDefault", js.undefined)
+    @scala.inline
+    def setColWidth(value: Double): Self = this.set("colWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColWidth: Self = this.set("colWidth", js.undefined)
+    @scala.inline
+    def setColumnApi(value: ColumnApi): Self = this.set("columnApi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnApi: Self = this.set("columnApi", js.undefined)
+    @scala.inline
+    def setColumnDefsVarargs(value: (ColDef | ColGroupDef)*): Self = this.set("columnDefs", js.Array(value :_*))
+    @scala.inline
+    def setColumnDefs(value: js.Array[ColDef | ColGroupDef]): Self = this.set("columnDefs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnDefs: Self = this.set("columnDefs", js.undefined)
+    @scala.inline
+    def setColumnTypes(value: StringDictionary[ColDef]): Self = this.set("columnTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnTypes: Self = this.set("columnTypes", js.undefined)
+    @scala.inline
+    def setComponents(value: StringDictionary[AgGridRegisteredComponentInput[IComponent[_]]]): Self = this.set("components", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponents: Self = this.set("components", js.undefined)
+    @scala.inline
+    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setContractColumnSelection(value: Boolean): Self = this.set("contractColumnSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContractColumnSelection: Self = this.set("contractColumnSelection", js.undefined)
+    @scala.inline
+    def setDatasource(value: IDatasource): Self = this.set("datasource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasource: Self = this.set("datasource", js.undefined)
+    @scala.inline
+    def setDateComponent(value: Instantiable): Self = this.set("dateComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateComponent: Self = this.set("dateComponent", js.undefined)
+    @scala.inline
+    def setDateComponentFramework(value: js.Any): Self = this.set("dateComponentFramework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateComponentFramework: Self = this.set("dateComponentFramework", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setDefaultColDef(value: ColDef): Self = this.set("defaultColDef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultColDef: Self = this.set("defaultColDef", js.undefined)
+    @scala.inline
+    def setDefaultColGroupDef(value: ColGroupDef): Self = this.set("defaultColGroupDef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultColGroupDef: Self = this.set("defaultColGroupDef", js.undefined)
+    @scala.inline
+    def setDefaultExportParams(value: CsvExportParams): Self = this.set("defaultExportParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultExportParams: Self = this.set("defaultExportParams", js.undefined)
+    @scala.inline
+    def setDefaultGroupSortComparator(value: (/* nodeA */ RowNode, /* nodeB */ RowNode) => Double): Self = this.set("defaultGroupSortComparator", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDefaultGroupSortComparator: Self = this.set("defaultGroupSortComparator", js.undefined)
+    @scala.inline
+    def setDeltaRowDataMode(value: Boolean): Self = this.set("deltaRowDataMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeltaRowDataMode: Self = this.set("deltaRowDataMode", js.undefined)
+    @scala.inline
+    def setDetailCellRendererFunction1(value: /* params */ js.Any => HTMLElement | String): Self = this.set("detailCellRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDetailCellRenderer(value: InstantiableICellRendererComp | ICellRendererFunc | String): Self = this.set("detailCellRenderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailCellRenderer: Self = this.set("detailCellRenderer", js.undefined)
+    @scala.inline
+    def setDetailCellRendererFramework(value: js.Any): Self = this.set("detailCellRendererFramework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailCellRendererFramework: Self = this.set("detailCellRendererFramework", js.undefined)
+    @scala.inline
+    def setDetailCellRendererParams(value: js.Any): Self = this.set("detailCellRendererParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailCellRendererParams: Self = this.set("detailCellRendererParams", js.undefined)
+    @scala.inline
+    def setDetailRowHeight(value: Double): Self = this.set("detailRowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailRowHeight: Self = this.set("detailRowHeight", js.undefined)
+    @scala.inline
+    def setDoesDataFlower(value: /* dataItem */ js.Any => Boolean): Self = this.set("doesDataFlower", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDoesDataFlower: Self = this.set("doesDataFlower", js.undefined)
+    @scala.inline
+    def setDoesExternalFilterPass(value: /* node */ RowNode => Boolean): Self = this.set("doesExternalFilterPass", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDoesExternalFilterPass: Self = this.set("doesExternalFilterPass", js.undefined)
+    @scala.inline
+    def setDomLayout(value: String): Self = this.set("domLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomLayout: Self = this.set("domLayout", js.undefined)
+    @scala.inline
+    def setEditType(value: String): Self = this.set("editType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditType: Self = this.set("editType", js.undefined)
+    @scala.inline
+    def setEmbedFullWidthRows(value: Boolean): Self = this.set("embedFullWidthRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbedFullWidthRows: Self = this.set("embedFullWidthRows", js.undefined)
+    @scala.inline
+    def setEnableCellChangeFlash(value: Boolean): Self = this.set("enableCellChangeFlash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableCellChangeFlash: Self = this.set("enableCellChangeFlash", js.undefined)
+    @scala.inline
+    def setEnableCellExpressions(value: Boolean): Self = this.set("enableCellExpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableCellExpressions: Self = this.set("enableCellExpressions", js.undefined)
+    @scala.inline
+    def setEnableColResize(value: Boolean): Self = this.set("enableColResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableColResize: Self = this.set("enableColResize", js.undefined)
+    @scala.inline
+    def setEnableFilter(value: Boolean): Self = this.set("enableFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableFilter: Self = this.set("enableFilter", js.undefined)
+    @scala.inline
+    def setEnableGroupEdit(value: Boolean): Self = this.set("enableGroupEdit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableGroupEdit: Self = this.set("enableGroupEdit", js.undefined)
+    @scala.inline
+    def setEnableOldSetFilterModel(value: Boolean): Self = this.set("enableOldSetFilterModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableOldSetFilterModel: Self = this.set("enableOldSetFilterModel", js.undefined)
+    @scala.inline
+    def setEnableRangeSelection(value: Boolean): Self = this.set("enableRangeSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRangeSelection: Self = this.set("enableRangeSelection", js.undefined)
+    @scala.inline
+    def setEnableRtl(value: Boolean): Self = this.set("enableRtl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRtl: Self = this.set("enableRtl", js.undefined)
+    @scala.inline
+    def setEnableServerSideFilter(value: Boolean): Self = this.set("enableServerSideFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableServerSideFilter: Self = this.set("enableServerSideFilter", js.undefined)
+    @scala.inline
+    def setEnableServerSideSorting(value: Boolean): Self = this.set("enableServerSideSorting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableServerSideSorting: Self = this.set("enableServerSideSorting", js.undefined)
+    @scala.inline
+    def setEnableSorting(value: Boolean): Self = this.set("enableSorting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSorting: Self = this.set("enableSorting", js.undefined)
+    @scala.inline
+    def setEnableStatusBar(value: Boolean): Self = this.set("enableStatusBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableStatusBar: Self = this.set("enableStatusBar", js.undefined)
+    @scala.inline
+    def setEnsureDomOrder(value: Boolean): Self = this.set("ensureDomOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnsureDomOrder: Self = this.set("ensureDomOrder", js.undefined)
+    @scala.inline
+    def setEnterMovesDown(value: Boolean): Self = this.set("enterMovesDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnterMovesDown: Self = this.set("enterMovesDown", js.undefined)
+    @scala.inline
+    def setEnterMovesDownAfterEdit(value: Boolean): Self = this.set("enterMovesDownAfterEdit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnterMovesDownAfterEdit: Self = this.set("enterMovesDownAfterEdit", js.undefined)
+    @scala.inline
+    def setExcelStylesVarargs(value: js.Any*): Self = this.set("excelStyles", js.Array(value :_*))
+    @scala.inline
+    def setExcelStyles(value: js.Array[_]): Self = this.set("excelStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcelStyles: Self = this.set("excelStyles", js.undefined)
+    @scala.inline
+    def setFloatingFilter(value: Boolean): Self = this.set("floatingFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloatingFilter: Self = this.set("floatingFilter", js.undefined)
+    @scala.inline
+    def setFloatingFiltersHeight(value: Double): Self = this.set("floatingFiltersHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloatingFiltersHeight: Self = this.set("floatingFiltersHeight", js.undefined)
+    @scala.inline
+    def setForPrint(value: Boolean): Self = this.set("forPrint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForPrint: Self = this.set("forPrint", js.undefined)
+    @scala.inline
+    def setFrameworkComponents(value: StringDictionary[InstantiableAny]): Self = this.set("frameworkComponents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameworkComponents: Self = this.set("frameworkComponents", js.undefined)
+    @scala.inline
+    def setFullWidthCellRendererFunction1(value: /* params */ js.Any => HTMLElement | String): Self = this.set("fullWidthCellRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFullWidthCellRenderer(value: InstantiableICellRendererComp | ICellRendererFunc | String): Self = this.set("fullWidthCellRenderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullWidthCellRenderer: Self = this.set("fullWidthCellRenderer", js.undefined)
+    @scala.inline
+    def setFullWidthCellRendererFramework(value: js.Any): Self = this.set("fullWidthCellRendererFramework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullWidthCellRendererFramework: Self = this.set("fullWidthCellRendererFramework", js.undefined)
+    @scala.inline
+    def setFullWidthCellRendererParams(value: js.Any): Self = this.set("fullWidthCellRendererParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullWidthCellRendererParams: Self = this.set("fullWidthCellRendererParams", js.undefined)
+    @scala.inline
+    def setFunctionsPassive(value: Boolean): Self = this.set("functionsPassive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionsPassive: Self = this.set("functionsPassive", js.undefined)
+    @scala.inline
+    def setFunctionsReadOnly(value: Boolean): Self = this.set("functionsReadOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionsReadOnly: Self = this.set("functionsReadOnly", js.undefined)
+    @scala.inline
+    def setGetBusinessKeyForNode(value: /* node */ RowNode => String): Self = this.set("getBusinessKeyForNode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetBusinessKeyForNode: Self = this.set("getBusinessKeyForNode", js.undefined)
+    @scala.inline
+    def setGetChildCount(value: /* dataItem */ js.Any => Double): Self = this.set("getChildCount", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetChildCount: Self = this.set("getChildCount", js.undefined)
+    @scala.inline
+    def setGetContextMenuItems(value: /* params */ GetContextMenuItemsParams => js.Array[String | MenuItemDef]): Self = this.set("getContextMenuItems", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetContextMenuItems: Self = this.set("getContextMenuItems", js.undefined)
+    @scala.inline
+    def setGetDataPath(value: /* data */ js.Any => js.Array[String]): Self = this.set("getDataPath", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetDataPath: Self = this.set("getDataPath", js.undefined)
+    @scala.inline
+    def setGetDocument(value: () => Document): Self = this.set("getDocument", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDocument: Self = this.set("getDocument", js.undefined)
+    @scala.inline
+    def setGetMainMenuItems(value: /* params */ GetMainMenuItemsParams => js.Array[String | MenuItemDef]): Self = this.set("getMainMenuItems", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetMainMenuItems: Self = this.set("getMainMenuItems", js.undefined)
+    @scala.inline
+    def setGetNodeChildDetails(value: /* dataItem */ js.Any => NodeChildDetails): Self = this.set("getNodeChildDetails", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetNodeChildDetails: Self = this.set("getNodeChildDetails", js.undefined)
+    @scala.inline
+    def setGetRowClass(value: /* params */ js.Any => String | js.Array[String]): Self = this.set("getRowClass", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetRowClass: Self = this.set("getRowClass", js.undefined)
+    @scala.inline
+    def setGetRowHeight(value: js.Function): Self = this.set("getRowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetRowHeight: Self = this.set("getRowHeight", js.undefined)
+    @scala.inline
+    def setGetRowNodeId(value: /* data */ js.Any => String): Self = this.set("getRowNodeId", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetRowNodeId: Self = this.set("getRowNodeId", js.undefined)
+    @scala.inline
+    def setGetRowStyle(value: js.Function): Self = this.set("getRowStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetRowStyle: Self = this.set("getRowStyle", js.undefined)
+    @scala.inline
+    def setGridAutoHeight(value: Boolean): Self = this.set("gridAutoHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridAutoHeight: Self = this.set("gridAutoHeight", js.undefined)
+    @scala.inline
+    def setGroupColumnDef(value: ColDef): Self = this.set("groupColumnDef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupColumnDef: Self = this.set("groupColumnDef", js.undefined)
+    @scala.inline
+    def setGroupDefaultExpanded(value: Double): Self = this.set("groupDefaultExpanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupDefaultExpanded: Self = this.set("groupDefaultExpanded", js.undefined)
+    @scala.inline
+    def setGroupHeaderHeight(value: Double): Self = this.set("groupHeaderHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupHeaderHeight: Self = this.set("groupHeaderHeight", js.undefined)
+    @scala.inline
+    def setGroupHideOpenParents(value: Boolean): Self = this.set("groupHideOpenParents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupHideOpenParents: Self = this.set("groupHideOpenParents", js.undefined)
+    @scala.inline
+    def setGroupIncludeFooter(value: Boolean): Self = this.set("groupIncludeFooter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupIncludeFooter: Self = this.set("groupIncludeFooter", js.undefined)
+    @scala.inline
+    def setGroupIncludeTotalFooter(value: Boolean): Self = this.set("groupIncludeTotalFooter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupIncludeTotalFooter: Self = this.set("groupIncludeTotalFooter", js.undefined)
+    @scala.inline
+    def setGroupMultiAutoColumn(value: Boolean): Self = this.set("groupMultiAutoColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupMultiAutoColumn: Self = this.set("groupMultiAutoColumn", js.undefined)
+    @scala.inline
+    def setGroupRemoveLowestSingleChildren(value: Boolean): Self = this.set("groupRemoveLowestSingleChildren", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupRemoveLowestSingleChildren: Self = this.set("groupRemoveLowestSingleChildren", js.undefined)
+    @scala.inline
+    def setGroupRemoveSingleChildren(value: Boolean): Self = this.set("groupRemoveSingleChildren", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupRemoveSingleChildren: Self = this.set("groupRemoveSingleChildren", js.undefined)
+    @scala.inline
+    def setGroupRowAggNodes(value: /* nodes */ js.Array[RowNode] => _): Self = this.set("groupRowAggNodes", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGroupRowAggNodes: Self = this.set("groupRowAggNodes", js.undefined)
+    @scala.inline
+    def setGroupRowInnerRendererFunction1(value: /* params */ js.Any => HTMLElement | String): Self = this.set("groupRowInnerRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGroupRowInnerRenderer(value: InstantiableICellRendererComp | ICellRendererFunc | String): Self = this.set("groupRowInnerRenderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupRowInnerRenderer: Self = this.set("groupRowInnerRenderer", js.undefined)
+    @scala.inline
+    def setGroupRowInnerRendererFramework(value: js.Any): Self = this.set("groupRowInnerRendererFramework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupRowInnerRendererFramework: Self = this.set("groupRowInnerRendererFramework", js.undefined)
+    @scala.inline
+    def setGroupRowRendererFunction1(value: /* params */ js.Any => HTMLElement | String): Self = this.set("groupRowRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGroupRowRenderer(value: InstantiableICellRendererComp | ICellRendererFunc | String): Self = this.set("groupRowRenderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupRowRenderer: Self = this.set("groupRowRenderer", js.undefined)
+    @scala.inline
+    def setGroupRowRendererFramework(value: js.Any): Self = this.set("groupRowRendererFramework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupRowRendererFramework: Self = this.set("groupRowRendererFramework", js.undefined)
+    @scala.inline
+    def setGroupRowRendererParams(value: js.Any): Self = this.set("groupRowRendererParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupRowRendererParams: Self = this.set("groupRowRendererParams", js.undefined)
+    @scala.inline
+    def setGroupSelectsChildren(value: Boolean): Self = this.set("groupSelectsChildren", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupSelectsChildren: Self = this.set("groupSelectsChildren", js.undefined)
+    @scala.inline
+    def setGroupSelectsFiltered(value: Boolean): Self = this.set("groupSelectsFiltered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupSelectsFiltered: Self = this.set("groupSelectsFiltered", js.undefined)
+    @scala.inline
+    def setGroupSuppressAutoColumn(value: Boolean): Self = this.set("groupSuppressAutoColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupSuppressAutoColumn: Self = this.set("groupSuppressAutoColumn", js.undefined)
+    @scala.inline
+    def setGroupSuppressBlankHeader(value: Boolean): Self = this.set("groupSuppressBlankHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupSuppressBlankHeader: Self = this.set("groupSuppressBlankHeader", js.undefined)
+    @scala.inline
+    def setGroupSuppressRow(value: Boolean): Self = this.set("groupSuppressRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupSuppressRow: Self = this.set("groupSuppressRow", js.undefined)
+    @scala.inline
+    def setGroupUseEntireRow(value: Boolean): Self = this.set("groupUseEntireRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupUseEntireRow: Self = this.set("groupUseEntireRow", js.undefined)
+    @scala.inline
+    def setHeaderHeight(value: Double): Self = this.set("headerHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderHeight: Self = this.set("headerHeight", js.undefined)
+    @scala.inline
+    def setIcons(value: js.Any): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setInfiniteInitialRowCount(value: Double): Self = this.set("infiniteInitialRowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfiniteInitialRowCount: Self = this.set("infiniteInitialRowCount", js.undefined)
+    @scala.inline
+    def setIsExternalFilterPresent(value: () => Boolean): Self = this.set("isExternalFilterPresent", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsExternalFilterPresent: Self = this.set("isExternalFilterPresent", js.undefined)
+    @scala.inline
+    def setIsFullWidthCell(value: /* rowNode */ RowNode => Boolean): Self = this.set("isFullWidthCell", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsFullWidthCell: Self = this.set("isFullWidthCell", js.undefined)
+    @scala.inline
+    def setIsRowMaster(value: /* dataItem */ js.Any => Boolean): Self = this.set("isRowMaster", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsRowMaster: Self = this.set("isRowMaster", js.undefined)
+    @scala.inline
+    def setIsRowSelectable(value: /* node */ RowNode => Boolean): Self = this.set("isRowSelectable", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsRowSelectable: Self = this.set("isRowSelectable", js.undefined)
+    @scala.inline
+    def setLoadingOverlayComponent(value: InstantiableILoadingOverlayComp | String): Self = this.set("loadingOverlayComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadingOverlayComponent: Self = this.set("loadingOverlayComponent", js.undefined)
+    @scala.inline
+    def setLoadingOverlayComponentFramework(value: js.Any): Self = this.set("loadingOverlayComponentFramework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadingOverlayComponentFramework: Self = this.set("loadingOverlayComponentFramework", js.undefined)
+    @scala.inline
+    def setLocaleText(value: js.Any): Self = this.set("localeText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocaleText: Self = this.set("localeText", js.undefined)
+    @scala.inline
+    def setLocaleTextFunc(value: js.Function): Self = this.set("localeTextFunc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocaleTextFunc: Self = this.set("localeTextFunc", js.undefined)
+    @scala.inline
+    def setMasterDetail(value: Boolean): Self = this.set("masterDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterDetail: Self = this.set("masterDetail", js.undefined)
+    @scala.inline
+    def setMaxBlocksInCache(value: Double): Self = this.set("maxBlocksInCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBlocksInCache: Self = this.set("maxBlocksInCache", js.undefined)
+    @scala.inline
+    def setMaxColWidth(value: Double): Self = this.set("maxColWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxColWidth: Self = this.set("maxColWidth", js.undefined)
+    @scala.inline
+    def setMaxConcurrentDatasourceRequests(value: Double): Self = this.set("maxConcurrentDatasourceRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrentDatasourceRequests: Self = this.set("maxConcurrentDatasourceRequests", js.undefined)
+    @scala.inline
+    def setMinColWidth(value: Double): Self = this.set("minColWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinColWidth: Self = this.set("minColWidth", js.undefined)
+    @scala.inline
+    def setMultiSortKey(value: String): Self = this.set("multiSortKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiSortKey: Self = this.set("multiSortKey", js.undefined)
+    @scala.inline
+    def setNavigateToNextCell(value: /* params */ NavigateToNextCellParams => GridCellDef): Self = this.set("navigateToNextCell", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNavigateToNextCell: Self = this.set("navigateToNextCell", js.undefined)
+    @scala.inline
+    def setNoRowsOverlayComponent(value: InstantiableINoRowsOverlayComp | String): Self = this.set("noRowsOverlayComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoRowsOverlayComponent: Self = this.set("noRowsOverlayComponent", js.undefined)
+    @scala.inline
+    def setNoRowsOverlayComponentFramework(value: js.Any): Self = this.set("noRowsOverlayComponentFramework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoRowsOverlayComponentFramework: Self = this.set("noRowsOverlayComponentFramework", js.undefined)
+    @scala.inline
+    def setOnBodyScroll(value: /* event */ BodyScrollEvent => Unit): Self = this.set("onBodyScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBodyScroll: Self = this.set("onBodyScroll", js.undefined)
+    @scala.inline
+    def setOnCellClicked(value: /* event */ CellClickedEvent => Unit): Self = this.set("onCellClicked", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellClicked: Self = this.set("onCellClicked", js.undefined)
+    @scala.inline
+    def setOnCellContextMenu(value: /* event */ CellContextMenuEvent => Unit): Self = this.set("onCellContextMenu", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellContextMenu: Self = this.set("onCellContextMenu", js.undefined)
+    @scala.inline
+    def setOnCellDoubleClicked(value: /* event */ CellDoubleClickedEvent => Unit): Self = this.set("onCellDoubleClicked", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellDoubleClicked: Self = this.set("onCellDoubleClicked", js.undefined)
+    @scala.inline
+    def setOnCellEditingStarted(value: /* event */ CellEditingStartedEvent => Unit): Self = this.set("onCellEditingStarted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellEditingStarted: Self = this.set("onCellEditingStarted", js.undefined)
+    @scala.inline
+    def setOnCellEditingStopped(value: /* event */ CellEditingStoppedEvent => Unit): Self = this.set("onCellEditingStopped", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellEditingStopped: Self = this.set("onCellEditingStopped", js.undefined)
+    @scala.inline
+    def setOnCellFocused(value: /* event */ CellFocusedEvent => Unit): Self = this.set("onCellFocused", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellFocused: Self = this.set("onCellFocused", js.undefined)
+    @scala.inline
+    def setOnCellMouseDown(value: /* event */ CellMouseDownEvent => Unit): Self = this.set("onCellMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellMouseDown: Self = this.set("onCellMouseDown", js.undefined)
+    @scala.inline
+    def setOnCellMouseOut(value: /* event */ CellMouseOutEvent => Unit): Self = this.set("onCellMouseOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellMouseOut: Self = this.set("onCellMouseOut", js.undefined)
+    @scala.inline
+    def setOnCellMouseOver(value: /* event */ CellMouseOverEvent => Unit): Self = this.set("onCellMouseOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellMouseOver: Self = this.set("onCellMouseOver", js.undefined)
+    @scala.inline
+    def setOnCellValueChanged(value: /* event */ CellValueChangedEvent => Unit): Self = this.set("onCellValueChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCellValueChanged: Self = this.set("onCellValueChanged", js.undefined)
+    @scala.inline
+    def setOnColumnAggFuncChangeRequest(value: /* event */ ColumnAggFuncChangeRequestEvent => Unit): Self = this.set("onColumnAggFuncChangeRequest", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnAggFuncChangeRequest: Self = this.set("onColumnAggFuncChangeRequest", js.undefined)
+    @scala.inline
+    def setOnColumnEverythingChanged(value: /* event */ ColumnEverythingChangedEvent => Unit): Self = this.set("onColumnEverythingChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnEverythingChanged: Self = this.set("onColumnEverythingChanged", js.undefined)
+    @scala.inline
+    def setOnColumnGroupOpened(value: /* event */ ColumnGroupOpenedEvent => Unit): Self = this.set("onColumnGroupOpened", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnGroupOpened: Self = this.set("onColumnGroupOpened", js.undefined)
+    @scala.inline
+    def setOnColumnMoved(value: /* event */ ColumnMovedEvent => Unit): Self = this.set("onColumnMoved", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnMoved: Self = this.set("onColumnMoved", js.undefined)
+    @scala.inline
+    def setOnColumnPinned(value: /* event */ ColumnPinnedEvent => Unit): Self = this.set("onColumnPinned", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnPinned: Self = this.set("onColumnPinned", js.undefined)
+    @scala.inline
+    def setOnColumnPivotChangeRequest(value: /* event */ ColumnPivotChangeRequestEvent => Unit): Self = this.set("onColumnPivotChangeRequest", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnPivotChangeRequest: Self = this.set("onColumnPivotChangeRequest", js.undefined)
+    @scala.inline
+    def setOnColumnPivotChanged(value: /* event */ ColumnPivotChangedEvent => Unit): Self = this.set("onColumnPivotChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnPivotChanged: Self = this.set("onColumnPivotChanged", js.undefined)
+    @scala.inline
+    def setOnColumnPivotModeChanged(value: /* event */ ColumnPivotModeChangedEvent => Unit): Self = this.set("onColumnPivotModeChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnPivotModeChanged: Self = this.set("onColumnPivotModeChanged", js.undefined)
+    @scala.inline
+    def setOnColumnResized(value: /* event */ ColumnResizedEvent => Unit): Self = this.set("onColumnResized", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnResized: Self = this.set("onColumnResized", js.undefined)
+    @scala.inline
+    def setOnColumnRowGroupChangeRequest(value: /* event */ ColumnRowGroupChangeRequestEvent => Unit): Self = this.set("onColumnRowGroupChangeRequest", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnRowGroupChangeRequest: Self = this.set("onColumnRowGroupChangeRequest", js.undefined)
+    @scala.inline
+    def setOnColumnRowGroupChanged(value: /* event */ ColumnRowGroupChangedEvent => Unit): Self = this.set("onColumnRowGroupChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnRowGroupChanged: Self = this.set("onColumnRowGroupChanged", js.undefined)
+    @scala.inline
+    def setOnColumnValueChangeRequest(value: /* event */ ColumnValueChangeRequestEvent => Unit): Self = this.set("onColumnValueChangeRequest", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnValueChangeRequest: Self = this.set("onColumnValueChangeRequest", js.undefined)
+    @scala.inline
+    def setOnColumnValueChanged(value: /* event */ ColumnValueChangedEvent => Unit): Self = this.set("onColumnValueChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnValueChanged: Self = this.set("onColumnValueChanged", js.undefined)
+    @scala.inline
+    def setOnColumnVisible(value: /* event */ ColumnVisibleEvent => Unit): Self = this.set("onColumnVisible", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnColumnVisible: Self = this.set("onColumnVisible", js.undefined)
+    @scala.inline
+    def setOnDisplayedColumnsChanged(value: /* event */ DisplayedColumnsChangedEvent => Unit): Self = this.set("onDisplayedColumnsChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDisplayedColumnsChanged: Self = this.set("onDisplayedColumnsChanged", js.undefined)
+    @scala.inline
+    def setOnDragStarted(value: /* event */ DragStartedEvent => Unit): Self = this.set("onDragStarted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStarted: Self = this.set("onDragStarted", js.undefined)
+    @scala.inline
+    def setOnDragStopped(value: /* event */ DragStoppedEvent => Unit): Self = this.set("onDragStopped", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStopped: Self = this.set("onDragStopped", js.undefined)
+    @scala.inline
+    def setOnFilterChanged(value: /* event */ FilterChangedEvent => Unit): Self = this.set("onFilterChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFilterChanged: Self = this.set("onFilterChanged", js.undefined)
+    @scala.inline
+    def setOnFilterModified(value: /* event */ FilterModifiedEvent => Unit): Self = this.set("onFilterModified", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFilterModified: Self = this.set("onFilterModified", js.undefined)
+    @scala.inline
+    def setOnGridColumnsChanged(value: /* event */ GridColumnsChangedEvent => Unit): Self = this.set("onGridColumnsChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnGridColumnsChanged: Self = this.set("onGridColumnsChanged", js.undefined)
+    @scala.inline
+    def setOnGridReady(value: /* event */ GridReadyEvent => Unit): Self = this.set("onGridReady", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnGridReady: Self = this.set("onGridReady", js.undefined)
+    @scala.inline
+    def setOnGridSizeChanged(value: /* event */ js.Any => Unit): Self = this.set("onGridSizeChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnGridSizeChanged: Self = this.set("onGridSizeChanged", js.undefined)
+    @scala.inline
+    def setOnModelUpdated(value: /* event */ ModelUpdatedEvent => Unit): Self = this.set("onModelUpdated", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnModelUpdated: Self = this.set("onModelUpdated", js.undefined)
+    @scala.inline
+    def setOnNewColumnsLoaded(value: /* event */ NewColumnsLoadedEvent => Unit): Self = this.set("onNewColumnsLoaded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnNewColumnsLoaded: Self = this.set("onNewColumnsLoaded", js.undefined)
+    @scala.inline
+    def setOnPaginationChanged(value: /* event */ PaginationChangedEvent => Unit): Self = this.set("onPaginationChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaginationChanged: Self = this.set("onPaginationChanged", js.undefined)
+    @scala.inline
+    def setOnPasteEnd(value: /* event */ PasteEndEvent => Unit): Self = this.set("onPasteEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPasteEnd: Self = this.set("onPasteEnd", js.undefined)
+    @scala.inline
+    def setOnPasteStart(value: /* event */ PasteStartEvent => Unit): Self = this.set("onPasteStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPasteStart: Self = this.set("onPasteStart", js.undefined)
+    @scala.inline
+    def setOnPinnedRowDataChanged(value: /* event */ PinnedRowDataChangedEvent => Unit): Self = this.set("onPinnedRowDataChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPinnedRowDataChanged: Self = this.set("onPinnedRowDataChanged", js.undefined)
+    @scala.inline
+    def setOnRangeSelectionChanged(value: /* event */ RangeSelectionChangedEvent => Unit): Self = this.set("onRangeSelectionChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRangeSelectionChanged: Self = this.set("onRangeSelectionChanged", js.undefined)
+    @scala.inline
+    def setOnRowClicked(value: /* event */ RowClickedEvent => Unit): Self = this.set("onRowClicked", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowClicked: Self = this.set("onRowClicked", js.undefined)
+    @scala.inline
+    def setOnRowDataChanged(value: /* event */ RowDataChangedEvent => Unit): Self = this.set("onRowDataChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowDataChanged: Self = this.set("onRowDataChanged", js.undefined)
+    @scala.inline
+    def setOnRowDataUpdated(value: /* event */ RowDataUpdatedEvent => Unit): Self = this.set("onRowDataUpdated", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowDataUpdated: Self = this.set("onRowDataUpdated", js.undefined)
+    @scala.inline
+    def setOnRowDoubleClicked(value: /* event */ RowDoubleClickedEvent => Unit): Self = this.set("onRowDoubleClicked", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowDoubleClicked: Self = this.set("onRowDoubleClicked", js.undefined)
+    @scala.inline
+    def setOnRowDragEnd(value: /* event */ RowDragEvent => Unit): Self = this.set("onRowDragEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowDragEnd: Self = this.set("onRowDragEnd", js.undefined)
+    @scala.inline
+    def setOnRowDragEnter(value: /* event */ RowDragEvent => Unit): Self = this.set("onRowDragEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowDragEnter: Self = this.set("onRowDragEnter", js.undefined)
+    @scala.inline
+    def setOnRowDragLeave(value: /* event */ RowDragEvent => Unit): Self = this.set("onRowDragLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowDragLeave: Self = this.set("onRowDragLeave", js.undefined)
+    @scala.inline
+    def setOnRowDragMove(value: /* event */ RowDragEvent => Unit): Self = this.set("onRowDragMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowDragMove: Self = this.set("onRowDragMove", js.undefined)
+    @scala.inline
+    def setOnRowEditingStarted(value: /* event */ RowEditingStartedEvent => Unit): Self = this.set("onRowEditingStarted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowEditingStarted: Self = this.set("onRowEditingStarted", js.undefined)
+    @scala.inline
+    def setOnRowEditingStopped(value: /* event */ RowEditingStoppedEvent => Unit): Self = this.set("onRowEditingStopped", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowEditingStopped: Self = this.set("onRowEditingStopped", js.undefined)
+    @scala.inline
+    def setOnRowGroupOpened(value: /* event */ RowGroupOpenedEvent => Unit): Self = this.set("onRowGroupOpened", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowGroupOpened: Self = this.set("onRowGroupOpened", js.undefined)
+    @scala.inline
+    def setOnRowSelected(value: /* event */ RowSelectedEvent => Unit): Self = this.set("onRowSelected", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowSelected: Self = this.set("onRowSelected", js.undefined)
+    @scala.inline
+    def setOnRowValueChanged(value: /* event */ RowValueChangedEvent => Unit): Self = this.set("onRowValueChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowValueChanged: Self = this.set("onRowValueChanged", js.undefined)
+    @scala.inline
+    def setOnSelectionChanged(value: /* event */ SelectionChangedEvent => Unit): Self = this.set("onSelectionChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelectionChanged: Self = this.set("onSelectionChanged", js.undefined)
+    @scala.inline
+    def setOnSortChanged(value: /* event */ SortChangedEvent => Unit): Self = this.set("onSortChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSortChanged: Self = this.set("onSortChanged", js.undefined)
+    @scala.inline
+    def setOnViewportChanged(value: /* event */ ViewportChangedEvent => Unit): Self = this.set("onViewportChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnViewportChanged: Self = this.set("onViewportChanged", js.undefined)
+    @scala.inline
+    def setOnVirtualColumnsChanged(value: /* event */ VirtualColumnsChangedEvent => Unit): Self = this.set("onVirtualColumnsChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnVirtualColumnsChanged: Self = this.set("onVirtualColumnsChanged", js.undefined)
+    @scala.inline
+    def setOnVirtualRowRemoved(value: /* event */ VirtualRowRemovedEvent => Unit): Self = this.set("onVirtualRowRemoved", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnVirtualRowRemoved: Self = this.set("onVirtualRowRemoved", js.undefined)
+    @scala.inline
+    def setOverlayLoadingTemplate(value: String): Self = this.set("overlayLoadingTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayLoadingTemplate: Self = this.set("overlayLoadingTemplate", js.undefined)
+    @scala.inline
+    def setOverlayNoRowsTemplate(value: String): Self = this.set("overlayNoRowsTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayNoRowsTemplate: Self = this.set("overlayNoRowsTemplate", js.undefined)
+    @scala.inline
+    def setPagination(value: Boolean): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagination: Self = this.set("pagination", js.undefined)
+    @scala.inline
+    def setPaginationAutoPageSize(value: Boolean): Self = this.set("paginationAutoPageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationAutoPageSize: Self = this.set("paginationAutoPageSize", js.undefined)
+    @scala.inline
+    def setPaginationNumberFormatter(value: /* params */ PaginationNumberFormatterParams => String): Self = this.set("paginationNumberFormatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePaginationNumberFormatter: Self = this.set("paginationNumberFormatter", js.undefined)
+    @scala.inline
+    def setPaginationPageSize(value: Double): Self = this.set("paginationPageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationPageSize: Self = this.set("paginationPageSize", js.undefined)
+    @scala.inline
+    def setPaginationStartPage(value: Double): Self = this.set("paginationStartPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationStartPage: Self = this.set("paginationStartPage", js.undefined)
+    @scala.inline
+    def setPinnedBottomRowDataVarargs(value: js.Any*): Self = this.set("pinnedBottomRowData", js.Array(value :_*))
+    @scala.inline
+    def setPinnedBottomRowData(value: js.Array[_]): Self = this.set("pinnedBottomRowData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinnedBottomRowData: Self = this.set("pinnedBottomRowData", js.undefined)
+    @scala.inline
+    def setPinnedTopRowDataVarargs(value: js.Any*): Self = this.set("pinnedTopRowData", js.Array(value :_*))
+    @scala.inline
+    def setPinnedTopRowData(value: js.Array[_]): Self = this.set("pinnedTopRowData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinnedTopRowData: Self = this.set("pinnedTopRowData", js.undefined)
+    @scala.inline
+    def setPivotColumnGroupTotals(value: String): Self = this.set("pivotColumnGroupTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivotColumnGroupTotals: Self = this.set("pivotColumnGroupTotals", js.undefined)
+    @scala.inline
+    def setPivotGroupHeaderHeight(value: Double): Self = this.set("pivotGroupHeaderHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivotGroupHeaderHeight: Self = this.set("pivotGroupHeaderHeight", js.undefined)
+    @scala.inline
+    def setPivotHeaderHeight(value: Double): Self = this.set("pivotHeaderHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivotHeaderHeight: Self = this.set("pivotHeaderHeight", js.undefined)
+    @scala.inline
+    def setPivotMode(value: Boolean): Self = this.set("pivotMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivotMode: Self = this.set("pivotMode", js.undefined)
+    @scala.inline
+    def setPivotPanelShow(value: String): Self = this.set("pivotPanelShow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivotPanelShow: Self = this.set("pivotPanelShow", js.undefined)
+    @scala.inline
+    def setPivotRowTotals(value: String): Self = this.set("pivotRowTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivotRowTotals: Self = this.set("pivotRowTotals", js.undefined)
+    @scala.inline
+    def setPivotTotals(value: Boolean): Self = this.set("pivotTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivotTotals: Self = this.set("pivotTotals", js.undefined)
+    @scala.inline
+    def setPopupParent(value: HTMLElement): Self = this.set("popupParent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupParent: Self = this.set("popupParent", js.undefined)
+    @scala.inline
+    def setPostProcessPopup(value: /* params */ PostProcessPopupParams => Unit): Self = this.set("postProcessPopup", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePostProcessPopup: Self = this.set("postProcessPopup", js.undefined)
+    @scala.inline
+    def setPostSort(value: /* nodes */ js.Array[RowNode] => Unit): Self = this.set("postSort", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePostSort: Self = this.set("postSort", js.undefined)
+    @scala.inline
+    def setProcessCellForClipboard(value: /* params */ ProcessCellForExportParams => _): Self = this.set("processCellForClipboard", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteProcessCellForClipboard: Self = this.set("processCellForClipboard", js.undefined)
+    @scala.inline
+    def setProcessCellFromClipboard(value: /* params */ ProcessCellForExportParams => _): Self = this.set("processCellFromClipboard", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteProcessCellFromClipboard: Self = this.set("processCellFromClipboard", js.undefined)
+    @scala.inline
+    def setProcessDataFromClipboard(value: /* params */ ProcessDataFromClipboardParams => js.Array[js.Array[String]]): Self = this.set("processDataFromClipboard", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteProcessDataFromClipboard: Self = this.set("processDataFromClipboard", js.undefined)
+    @scala.inline
+    def setProcessHeaderForClipboard(value: /* params */ ProcessHeaderForExportParams => _): Self = this.set("processHeaderForClipboard", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteProcessHeaderForClipboard: Self = this.set("processHeaderForClipboard", js.undefined)
+    @scala.inline
+    def setProcessRowPostCreate(value: /* params */ ProcessRowParams => Unit): Self = this.set("processRowPostCreate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteProcessRowPostCreate: Self = this.set("processRowPostCreate", js.undefined)
+    @scala.inline
+    def setProcessSecondaryColDef(value: /* colDef */ ColDef => Unit): Self = this.set("processSecondaryColDef", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteProcessSecondaryColDef: Self = this.set("processSecondaryColDef", js.undefined)
+    @scala.inline
+    def setProcessSecondaryColGroupDef(value: /* colGroupDef */ ColGroupDef => Unit): Self = this.set("processSecondaryColGroupDef", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteProcessSecondaryColGroupDef: Self = this.set("processSecondaryColGroupDef", js.undefined)
+    @scala.inline
+    def setPurgeClosedRowNodes(value: Boolean): Self = this.set("purgeClosedRowNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurgeClosedRowNodes: Self = this.set("purgeClosedRowNodes", js.undefined)
+    @scala.inline
+    def setQuickFilterText(value: String): Self = this.set("quickFilterText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuickFilterText: Self = this.set("quickFilterText", js.undefined)
+    @scala.inline
+    def setRememberGroupStateWhenNewData(value: Boolean): Self = this.set("rememberGroupStateWhenNewData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRememberGroupStateWhenNewData: Self = this.set("rememberGroupStateWhenNewData", js.undefined)
+    @scala.inline
+    def setRowBuffer(value: Double): Self = this.set("rowBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowBuffer: Self = this.set("rowBuffer", js.undefined)
+    @scala.inline
+    def setRowClassVarargs(value: String*): Self = this.set("rowClass", js.Array(value :_*))
+    @scala.inline
+    def setRowClass(value: String | js.Array[String]): Self = this.set("rowClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowClass: Self = this.set("rowClass", js.undefined)
+    @scala.inline
+    def setRowClassRules(value: StringDictionary[js.Function | String]): Self = this.set("rowClassRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowClassRules: Self = this.set("rowClassRules", js.undefined)
+    @scala.inline
+    def setRowDataVarargs(value: js.Any*): Self = this.set("rowData", js.Array(value :_*))
+    @scala.inline
+    def setRowData(value: js.Array[_]): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowData: Self = this.set("rowData", js.undefined)
+    @scala.inline
+    def setRowDeselection(value: Boolean): Self = this.set("rowDeselection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowDeselection: Self = this.set("rowDeselection", js.undefined)
+    @scala.inline
+    def setRowDragManaged(value: Boolean): Self = this.set("rowDragManaged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowDragManaged: Self = this.set("rowDragManaged", js.undefined)
+    @scala.inline
+    def setRowGroupPanelShow(value: String): Self = this.set("rowGroupPanelShow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowGroupPanelShow: Self = this.set("rowGroupPanelShow", js.undefined)
+    @scala.inline
+    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    @scala.inline
+    def setRowModelType(value: String): Self = this.set("rowModelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowModelType: Self = this.set("rowModelType", js.undefined)
+    @scala.inline
+    def setRowMultiSelectWithClick(value: Boolean): Self = this.set("rowMultiSelectWithClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowMultiSelectWithClick: Self = this.set("rowMultiSelectWithClick", js.undefined)
+    @scala.inline
+    def setRowSelection(value: String): Self = this.set("rowSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSelection: Self = this.set("rowSelection", js.undefined)
+    @scala.inline
+    def setRowStyle(value: js.Any): Self = this.set("rowStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowStyle: Self = this.set("rowStyle", js.undefined)
+    @scala.inline
+    def setScrollbarWidth(value: Double): Self = this.set("scrollbarWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollbarWidth: Self = this.set("scrollbarWidth", js.undefined)
+    @scala.inline
+    def setSendToClipboard(value: /* params */ js.Any => Unit): Self = this.set("sendToClipboard", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSendToClipboard: Self = this.set("sendToClipboard", js.undefined)
+    @scala.inline
+    def setServerSideDatasource(value: IServerSideDatasource): Self = this.set("serverSideDatasource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideDatasource: Self = this.set("serverSideDatasource", js.undefined)
+    @scala.inline
+    def setServerSideSortingAlwaysResets(value: Boolean): Self = this.set("serverSideSortingAlwaysResets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideSortingAlwaysResets: Self = this.set("serverSideSortingAlwaysResets", js.undefined)
+    @scala.inline
+    def setShowToolPanel(value: Boolean): Self = this.set("showToolPanel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowToolPanel: Self = this.set("showToolPanel", js.undefined)
+    @scala.inline
+    def setSingleClickEdit(value: Boolean): Self = this.set("singleClickEdit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleClickEdit: Self = this.set("singleClickEdit", js.undefined)
+    @scala.inline
+    def setSlaveGridsVarargs(value: GridOptions*): Self = this.set("slaveGrids", js.Array(value :_*))
+    @scala.inline
+    def setSlaveGrids(value: js.Array[GridOptions]): Self = this.set("slaveGrids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlaveGrids: Self = this.set("slaveGrids", js.undefined)
+    @scala.inline
+    def setSortingOrderVarargs(value: String*): Self = this.set("sortingOrder", js.Array(value :_*))
+    @scala.inline
+    def setSortingOrder(value: js.Array[String]): Self = this.set("sortingOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortingOrder: Self = this.set("sortingOrder", js.undefined)
+    @scala.inline
+    def setStopEditingWhenGridLosesFocus(value: Boolean): Self = this.set("stopEditingWhenGridLosesFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopEditingWhenGridLosesFocus: Self = this.set("stopEditingWhenGridLosesFocus", js.undefined)
+    @scala.inline
+    def setSuppressAggAtRootLevel(value: Boolean): Self = this.set("suppressAggAtRootLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressAggAtRootLevel: Self = this.set("suppressAggAtRootLevel", js.undefined)
+    @scala.inline
+    def setSuppressAggFuncInHeader(value: Boolean): Self = this.set("suppressAggFuncInHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressAggFuncInHeader: Self = this.set("suppressAggFuncInHeader", js.undefined)
+    @scala.inline
+    def setSuppressAnimationFrame(value: Boolean): Self = this.set("suppressAnimationFrame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressAnimationFrame: Self = this.set("suppressAnimationFrame", js.undefined)
+    @scala.inline
+    def setSuppressAsyncEvents(value: Boolean): Self = this.set("suppressAsyncEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressAsyncEvents: Self = this.set("suppressAsyncEvents", js.undefined)
+    @scala.inline
+    def setSuppressAutoSize(value: Boolean): Self = this.set("suppressAutoSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressAutoSize: Self = this.set("suppressAutoSize", js.undefined)
+    @scala.inline
+    def setSuppressCellSelection(value: Boolean): Self = this.set("suppressCellSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressCellSelection: Self = this.set("suppressCellSelection", js.undefined)
+    @scala.inline
+    def setSuppressChangeDetection(value: Boolean): Self = this.set("suppressChangeDetection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressChangeDetection: Self = this.set("suppressChangeDetection", js.undefined)
+    @scala.inline
+    def setSuppressClickEdit(value: Boolean): Self = this.set("suppressClickEdit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressClickEdit: Self = this.set("suppressClickEdit", js.undefined)
+    @scala.inline
+    def setSuppressClipboardPaste(value: Boolean): Self = this.set("suppressClipboardPaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressClipboardPaste: Self = this.set("suppressClipboardPaste", js.undefined)
+    @scala.inline
+    def setSuppressColumnMoveAnimation(value: Boolean): Self = this.set("suppressColumnMoveAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressColumnMoveAnimation: Self = this.set("suppressColumnMoveAnimation", js.undefined)
+    @scala.inline
+    def setSuppressColumnVirtualisation(value: Boolean): Self = this.set("suppressColumnVirtualisation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressColumnVirtualisation: Self = this.set("suppressColumnVirtualisation", js.undefined)
+    @scala.inline
+    def setSuppressContextMenu(value: Boolean): Self = this.set("suppressContextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressContextMenu: Self = this.set("suppressContextMenu", js.undefined)
+    @scala.inline
+    def setSuppressCopyRowsToClipboard(value: Boolean): Self = this.set("suppressCopyRowsToClipboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressCopyRowsToClipboard: Self = this.set("suppressCopyRowsToClipboard", js.undefined)
+    @scala.inline
+    def setSuppressCsvExport(value: Boolean): Self = this.set("suppressCsvExport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressCsvExport: Self = this.set("suppressCsvExport", js.undefined)
+    @scala.inline
+    def setSuppressDragLeaveHidesColumns(value: Boolean): Self = this.set("suppressDragLeaveHidesColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressDragLeaveHidesColumns: Self = this.set("suppressDragLeaveHidesColumns", js.undefined)
+    @scala.inline
+    def setSuppressEnterpriseResetOnNewColumns(value: Boolean): Self = this.set("suppressEnterpriseResetOnNewColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressEnterpriseResetOnNewColumns: Self = this.set("suppressEnterpriseResetOnNewColumns", js.undefined)
+    @scala.inline
+    def setSuppressExcelExport(value: Boolean): Self = this.set("suppressExcelExport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressExcelExport: Self = this.set("suppressExcelExport", js.undefined)
+    @scala.inline
+    def setSuppressFieldDotNotation(value: Boolean): Self = this.set("suppressFieldDotNotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressFieldDotNotation: Self = this.set("suppressFieldDotNotation", js.undefined)
+    @scala.inline
+    def setSuppressFocusAfterRefresh(value: Boolean): Self = this.set("suppressFocusAfterRefresh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressFocusAfterRefresh: Self = this.set("suppressFocusAfterRefresh", js.undefined)
+    @scala.inline
+    def setSuppressHorizontalScroll(value: Boolean): Self = this.set("suppressHorizontalScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressHorizontalScroll: Self = this.set("suppressHorizontalScroll", js.undefined)
+    @scala.inline
+    def setSuppressLoadingOverlay(value: Boolean): Self = this.set("suppressLoadingOverlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressLoadingOverlay: Self = this.set("suppressLoadingOverlay", js.undefined)
+    @scala.inline
+    def setSuppressMakeColumnVisibleAfterUnGroup(value: Boolean): Self = this.set("suppressMakeColumnVisibleAfterUnGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressMakeColumnVisibleAfterUnGroup: Self = this.set("suppressMakeColumnVisibleAfterUnGroup", js.undefined)
+    @scala.inline
+    def setSuppressMenuHide(value: Boolean): Self = this.set("suppressMenuHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressMenuHide: Self = this.set("suppressMenuHide", js.undefined)
+    @scala.inline
+    def setSuppressMiddleClickScrolls(value: Boolean): Self = this.set("suppressMiddleClickScrolls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressMiddleClickScrolls: Self = this.set("suppressMiddleClickScrolls", js.undefined)
+    @scala.inline
+    def setSuppressMovableColumns(value: Boolean): Self = this.set("suppressMovableColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressMovableColumns: Self = this.set("suppressMovableColumns", js.undefined)
+    @scala.inline
+    def setSuppressMultiRangeSelection(value: Boolean): Self = this.set("suppressMultiRangeSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressMultiRangeSelection: Self = this.set("suppressMultiRangeSelection", js.undefined)
+    @scala.inline
+    def setSuppressMultiSort(value: Boolean): Self = this.set("suppressMultiSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressMultiSort: Self = this.set("suppressMultiSort", js.undefined)
+    @scala.inline
+    def setSuppressNoRowsOverlay(value: Boolean): Self = this.set("suppressNoRowsOverlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressNoRowsOverlay: Self = this.set("suppressNoRowsOverlay", js.undefined)
+    @scala.inline
+    def setSuppressPaginationPanel(value: Boolean): Self = this.set("suppressPaginationPanel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressPaginationPanel: Self = this.set("suppressPaginationPanel", js.undefined)
+    @scala.inline
+    def setSuppressParentsInRowNodes(value: Boolean): Self = this.set("suppressParentsInRowNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressParentsInRowNodes: Self = this.set("suppressParentsInRowNodes", js.undefined)
+    @scala.inline
+    def setSuppressPreventDefaultOnMouseWheel(value: Boolean): Self = this.set("suppressPreventDefaultOnMouseWheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressPreventDefaultOnMouseWheel: Self = this.set("suppressPreventDefaultOnMouseWheel", js.undefined)
+    @scala.inline
+    def setSuppressPropertyNamesCheck(value: Boolean): Self = this.set("suppressPropertyNamesCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressPropertyNamesCheck: Self = this.set("suppressPropertyNamesCheck", js.undefined)
+    @scala.inline
+    def setSuppressRowClickSelection(value: Boolean): Self = this.set("suppressRowClickSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressRowClickSelection: Self = this.set("suppressRowClickSelection", js.undefined)
+    @scala.inline
+    def setSuppressRowDrag(value: Boolean): Self = this.set("suppressRowDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressRowDrag: Self = this.set("suppressRowDrag", js.undefined)
+    @scala.inline
+    def setSuppressRowHoverHighlight(value: Boolean): Self = this.set("suppressRowHoverHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressRowHoverHighlight: Self = this.set("suppressRowHoverHighlight", js.undefined)
+    @scala.inline
+    def setSuppressRowTransform(value: Boolean): Self = this.set("suppressRowTransform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressRowTransform: Self = this.set("suppressRowTransform", js.undefined)
+    @scala.inline
+    def setSuppressScrollOnNewData(value: Boolean): Self = this.set("suppressScrollOnNewData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressScrollOnNewData: Self = this.set("suppressScrollOnNewData", js.undefined)
+    @scala.inline
+    def setSuppressTabbing(value: Boolean): Self = this.set("suppressTabbing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressTabbing: Self = this.set("suppressTabbing", js.undefined)
+    @scala.inline
+    def setSuppressTouch(value: Boolean): Self = this.set("suppressTouch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressTouch: Self = this.set("suppressTouch", js.undefined)
+    @scala.inline
+    def setTabToNextCell(value: /* params */ TabToNextCellParams => GridCellDef): Self = this.set("tabToNextCell", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTabToNextCell: Self = this.set("tabToNextCell", js.undefined)
+    @scala.inline
+    def setToolPanelSuppressColumnExpandAll(value: Boolean): Self = this.set("toolPanelSuppressColumnExpandAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolPanelSuppressColumnExpandAll: Self = this.set("toolPanelSuppressColumnExpandAll", js.undefined)
+    @scala.inline
+    def setToolPanelSuppressColumnFilter(value: Boolean): Self = this.set("toolPanelSuppressColumnFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolPanelSuppressColumnFilter: Self = this.set("toolPanelSuppressColumnFilter", js.undefined)
+    @scala.inline
+    def setToolPanelSuppressColumnSelectAll(value: Boolean): Self = this.set("toolPanelSuppressColumnSelectAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolPanelSuppressColumnSelectAll: Self = this.set("toolPanelSuppressColumnSelectAll", js.undefined)
+    @scala.inline
+    def setToolPanelSuppressPivotMode(value: Boolean): Self = this.set("toolPanelSuppressPivotMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolPanelSuppressPivotMode: Self = this.set("toolPanelSuppressPivotMode", js.undefined)
+    @scala.inline
+    def setToolPanelSuppressPivots(value: Boolean): Self = this.set("toolPanelSuppressPivots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolPanelSuppressPivots: Self = this.set("toolPanelSuppressPivots", js.undefined)
+    @scala.inline
+    def setToolPanelSuppressRowGroups(value: Boolean): Self = this.set("toolPanelSuppressRowGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolPanelSuppressRowGroups: Self = this.set("toolPanelSuppressRowGroups", js.undefined)
+    @scala.inline
+    def setToolPanelSuppressSideButtons(value: Boolean): Self = this.set("toolPanelSuppressSideButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolPanelSuppressSideButtons: Self = this.set("toolPanelSuppressSideButtons", js.undefined)
+    @scala.inline
+    def setToolPanelSuppressValues(value: Boolean): Self = this.set("toolPanelSuppressValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolPanelSuppressValues: Self = this.set("toolPanelSuppressValues", js.undefined)
+    @scala.inline
+    def setTreeData(value: Boolean): Self = this.set("treeData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeData: Self = this.set("treeData", js.undefined)
+    @scala.inline
+    def setUnSortIcon(value: Boolean): Self = this.set("unSortIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnSortIcon: Self = this.set("unSortIcon", js.undefined)
+    @scala.inline
+    def setValueCache(value: Boolean): Self = this.set("valueCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueCache: Self = this.set("valueCache", js.undefined)
+    @scala.inline
+    def setValueCacheNeverExpires(value: Boolean): Self = this.set("valueCacheNeverExpires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueCacheNeverExpires: Self = this.set("valueCacheNeverExpires", js.undefined)
+    @scala.inline
+    def setViewportDatasource(value: IViewportDatasource): Self = this.set("viewportDatasource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewportDatasource: Self = this.set("viewportDatasource", js.undefined)
+    @scala.inline
+    def setViewportRowModelBufferSize(value: Double): Self = this.set("viewportRowModelBufferSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewportRowModelBufferSize: Self = this.set("viewportRowModelBufferSize", js.undefined)
+    @scala.inline
+    def setViewportRowModelPageSize(value: Double): Self = this.set("viewportRowModelPageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewportRowModelPageSize: Self = this.set("viewportRowModelPageSize", js.undefined)
+  }
+  
 }
 

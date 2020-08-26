@@ -38,24 +38,52 @@ trait StartImportResponse extends js.Object {
 
 object StartImportResponse {
   @scala.inline
-  def apply(
-    createdDate: Timestamp = null,
-    importId: String = null,
-    importStatus: ImportStatus = null,
-    mergeStrategy: MergeStrategy = null,
-    name: Name = null,
-    resourceType: ResourceType = null,
-    tags: TagList = null
-  ): StartImportResponse = {
+  def apply(): StartImportResponse = {
     val __obj = js.Dynamic.literal()
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
-    if (importId != null) __obj.updateDynamic("importId")(importId.asInstanceOf[js.Any])
-    if (importStatus != null) __obj.updateDynamic("importStatus")(importStatus.asInstanceOf[js.Any])
-    if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImportResponse]
   }
+  @scala.inline
+  implicit class StartImportResponseOps[Self <: StartImportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    @scala.inline
+    def setImportId(value: String): Self = this.set("importId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportId: Self = this.set("importId", js.undefined)
+    @scala.inline
+    def setImportStatus(value: ImportStatus): Self = this.set("importStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportStatus: Self = this.set("importStatus", js.undefined)
+    @scala.inline
+    def setMergeStrategy(value: MergeStrategy): Self = this.set("mergeStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeStrategy: Self = this.set("mergeStrategy", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

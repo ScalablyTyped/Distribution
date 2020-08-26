@@ -27,8 +27,6 @@ object getBucketInventoryConfigurationCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetBucketInventoryConfigurationInput) = this()
-    /* CompleteClass */
-    override val input: GetBucketInventoryConfigurationInput = js.native
     val middlewareStack: MiddlewareStack[
         GetBucketInventoryConfigurationInput, 
         GetBucketInventoryConfigurationOutput, 
@@ -37,11 +35,6 @@ object getBucketInventoryConfigurationCommandMod extends js.Object {
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[GetBucketInventoryConfigurationInput, GetBucketInventoryConfigurationOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[GetBucketInventoryConfigurationInput, GetBucketInventoryConfigurationOutput] = js.native
   }

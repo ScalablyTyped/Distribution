@@ -34,20 +34,42 @@ trait ListTrafficPolicyInstancesByPolicyRequest extends js.Object {
 
 object ListTrafficPolicyInstancesByPolicyRequest {
   @scala.inline
-  def apply(
-    TrafficPolicyId: TrafficPolicyId,
-    TrafficPolicyVersion: TrafficPolicyVersion,
-    HostedZoneIdMarker: ResourceId = null,
-    MaxItems: PageMaxItems = null,
-    TrafficPolicyInstanceNameMarker: DNSName = null,
-    TrafficPolicyInstanceTypeMarker: RRType = null
-  ): ListTrafficPolicyInstancesByPolicyRequest = {
+  def apply(TrafficPolicyId: TrafficPolicyId, TrafficPolicyVersion: TrafficPolicyVersion): ListTrafficPolicyInstancesByPolicyRequest = {
     val __obj = js.Dynamic.literal(TrafficPolicyId = TrafficPolicyId.asInstanceOf[js.Any], TrafficPolicyVersion = TrafficPolicyVersion.asInstanceOf[js.Any])
-    if (HostedZoneIdMarker != null) __obj.updateDynamic("HostedZoneIdMarker")(HostedZoneIdMarker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
-    if (TrafficPolicyInstanceNameMarker != null) __obj.updateDynamic("TrafficPolicyInstanceNameMarker")(TrafficPolicyInstanceNameMarker.asInstanceOf[js.Any])
-    if (TrafficPolicyInstanceTypeMarker != null) __obj.updateDynamic("TrafficPolicyInstanceTypeMarker")(TrafficPolicyInstanceTypeMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTrafficPolicyInstancesByPolicyRequest]
   }
+  @scala.inline
+  implicit class ListTrafficPolicyInstancesByPolicyRequestOps[Self <: ListTrafficPolicyInstancesByPolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrafficPolicyId(value: TrafficPolicyId): Self = this.set("TrafficPolicyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrafficPolicyVersion(value: TrafficPolicyVersion): Self = this.set("TrafficPolicyVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHostedZoneIdMarker(value: ResourceId): Self = this.set("HostedZoneIdMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneIdMarker: Self = this.set("HostedZoneIdMarker", js.undefined)
+    @scala.inline
+    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    @scala.inline
+    def setTrafficPolicyInstanceNameMarker(value: DNSName): Self = this.set("TrafficPolicyInstanceNameMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficPolicyInstanceNameMarker: Self = this.set("TrafficPolicyInstanceNameMarker", js.undefined)
+    @scala.inline
+    def setTrafficPolicyInstanceTypeMarker(value: RRType): Self = this.set("TrafficPolicyInstanceTypeMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficPolicyInstanceTypeMarker: Self = this.set("TrafficPolicyInstanceTypeMarker", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ trait MustacheStatic extends js.Object {
   /**
     * Represents a rendering context by wrapping a view object and maintaining a reference to the parent context.
     */
-  var Context: Instantiable2[/* view */ js.Any, js.UndefOr[/* parentContext */ MustacheContext], MustacheContext] = js.native
+  var Context: Instantiable2[/* view */ js.Any, /* parentContext */ js.UndefOr[MustacheContext], MustacheContext] = js.native
   /**
     * A simple string scanner that is used by the template parser to find tokens in template strings.
     */
@@ -94,10 +94,20 @@ trait MustacheStatic extends js.Object {
     * The tags to use.
     */
   def render(template: String, view: js.Any): String = js.native
+  def render(
+    template: String,
+    view: js.Any,
+    partials: js.UndefOr[PartialsOrLookupFn],
+    tags: OpeningAndClosingTags
+  ): String = js.native
   def render(template: String, view: js.Any, partials: PartialsOrLookupFn): String = js.native
-  def render(template: String, view: js.Any, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
   def render(template: String, view: MustacheContext): String = js.native
+  def render(
+    template: String,
+    view: MustacheContext,
+    partials: js.UndefOr[PartialsOrLookupFn],
+    tags: OpeningAndClosingTags
+  ): String = js.native
   def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn): String = js.native
-  def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
 }
 

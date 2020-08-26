@@ -18,11 +18,30 @@ trait DatasetEntry extends js.Object {
 
 object DatasetEntry {
   @scala.inline
-  def apply(dataURI: PresignedURI = null, entryName: EntryName = null): DatasetEntry = {
+  def apply(): DatasetEntry = {
     val __obj = js.Dynamic.literal()
-    if (dataURI != null) __obj.updateDynamic("dataURI")(dataURI.asInstanceOf[js.Any])
-    if (entryName != null) __obj.updateDynamic("entryName")(entryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetEntry]
   }
+  @scala.inline
+  implicit class DatasetEntryOps[Self <: DatasetEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataURI(value: PresignedURI): Self = this.set("dataURI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataURI: Self = this.set("dataURI", js.undefined)
+    @scala.inline
+    def setEntryName(value: EntryName): Self = this.set("entryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntryName: Self = this.set("entryName", js.undefined)
+  }
+  
 }
 

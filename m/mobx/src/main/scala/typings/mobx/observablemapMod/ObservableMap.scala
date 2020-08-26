@@ -1,7 +1,6 @@
 package typings.mobx.observablemapMod
 
 import typings.mobx.interceptUtilsMod.IInterceptable
-import typings.mobx.interceptUtilsMod.IInterceptor
 import typings.mobx.listenUtilsMod.IListenable
 import typings.mobx.modifiersMod.IEnhancer
 import typings.mobx.utilsMod.Lambda
@@ -17,8 +16,13 @@ class ObservableMap[K, V] ()
      with IInterceptable[IMapWillChange[K, V]]
      with IListenable {
   def this(initialData: IObservableMapInitialValues[K, V]) = this()
-  def this(initialData: IObservableMapInitialValues[K, V], enhancer: IEnhancer[V]) = this()
-  def this(initialData: IObservableMapInitialValues[K, V], enhancer: IEnhancer[V], name: String) = this()
+  def this(initialData: js.UndefOr[IObservableMapInitialValues[K, V]], enhancer: IEnhancer[V]) = this()
+  def this(
+    initialData: js.UndefOr[IObservableMapInitialValues[K, V]],
+    enhancer: js.UndefOr[scala.Nothing],
+    name: String
+  ) = this()
+  def this(initialData: js.UndefOr[IObservableMapInitialValues[K, V]], enhancer: IEnhancer[V], name: String) = this()
   var _addValue: js.Any = js.native
   var _data: js.Any = js.native
   var _has: js.Any = js.native
@@ -33,9 +37,8 @@ class ObservableMap[K, V] ()
   var name: String = js.native
   @JSName(js.Symbol.toStringTag)
   var toStringTag_ObservableMap: typings.mobx.mobxStrings.Map = js.native
-  def enhancer(newValue: V, oldValue: js.UndefOr[V], name: String): V = js.native
-  /* CompleteClass */
-  override def intercept(handler: IInterceptor[IMapWillChange[K, V]]): Lambda = js.native
+  def enhancer(newValue: V, oldValue: V, name: String): V = js.native
+  def enhancer(newValue: V, oldValue: js.UndefOr[scala.Nothing], name: String): V = js.native
   def merge(other: js.Any): ObservableMap[K, V] = js.native
   def merge(other: IKeyValueMap[V]): ObservableMap[K, V] = js.native
   /** Merge another object into this object, returns this. */

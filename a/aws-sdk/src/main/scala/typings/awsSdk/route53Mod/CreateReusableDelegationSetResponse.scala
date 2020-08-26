@@ -22,5 +22,22 @@ object CreateReusableDelegationSetResponse {
     val __obj = js.Dynamic.literal(DelegationSet = DelegationSet.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReusableDelegationSetResponse]
   }
+  @scala.inline
+  implicit class CreateReusableDelegationSetResponseOps[Self <: CreateReusableDelegationSetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelegationSet(value: DelegationSet): Self = this.set("DelegationSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocation(value: ResourceURI): Self = this.set("Location", value.asInstanceOf[js.Any])
+  }
+  
 }
 

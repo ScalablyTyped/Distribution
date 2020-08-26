@@ -27,18 +27,38 @@ trait PackageDependency extends js.Object {
 
 object PackageDependency {
   @scala.inline
-  def apply(
-    _package: PackageName = null,
-    dependencyType: String = null,
-    namespace: PackageNamespace = null,
-    versionRequirement: String = null
-  ): PackageDependency = {
+  def apply(): PackageDependency = {
     val __obj = js.Dynamic.literal()
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (dependencyType != null) __obj.updateDynamic("dependencyType")(dependencyType.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (versionRequirement != null) __obj.updateDynamic("versionRequirement")(versionRequirement.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageDependency]
   }
+  @scala.inline
+  implicit class PackageDependencyOps[Self <: PackageDependency] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_package: Self = this.set("package", js.undefined)
+    @scala.inline
+    def setDependencyType(value: String): Self = this.set("dependencyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependencyType: Self = this.set("dependencyType", js.undefined)
+    @scala.inline
+    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setVersionRequirement(value: String): Self = this.set("versionRequirement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionRequirement: Self = this.set("versionRequirement", js.undefined)
+  }
+  
 }
 

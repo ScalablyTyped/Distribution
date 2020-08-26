@@ -34,22 +34,48 @@ trait UpdateConfigurationResponse extends js.Object {
 
 object UpdateConfigurationResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    Created: timestampIso8601 = null,
-    Id: string = null,
-    LatestRevision: ConfigurationRevision = null,
-    Name: string = null,
-    Warnings: listOfSanitizationWarning = null
-  ): UpdateConfigurationResponse = {
+  def apply(): UpdateConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Created != null) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (LatestRevision != null) __obj.updateDynamic("LatestRevision")(LatestRevision.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Warnings != null) __obj.updateDynamic("Warnings")(Warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationResponse]
   }
+  @scala.inline
+  implicit class UpdateConfigurationResponseOps[Self <: UpdateConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreated(value: timestampIso8601): Self = this.set("Created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("Created", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLatestRevision(value: ConfigurationRevision): Self = this.set("LatestRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestRevision: Self = this.set("LatestRevision", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setWarningsVarargs(value: SanitizationWarning*): Self = this.set("Warnings", js.Array(value :_*))
+    @scala.inline
+    def setWarnings(value: listOfSanitizationWarning): Self = this.set("Warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnings: Self = this.set("Warnings", js.undefined)
+  }
+  
 }
 

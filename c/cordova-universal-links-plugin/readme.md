@@ -12,7 +12,7 @@ Cordova plugin to add in your application support for Universal Links (iOS 9) an
 | Keywords           | cordova, links, universal, deep links, universal links, ecosystem:cordova, cordova-ios, cordova-android, ios, android |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 30012 |
+| # downloads        | 28978 |
 | # stars            | 2 |
 
 ## Links

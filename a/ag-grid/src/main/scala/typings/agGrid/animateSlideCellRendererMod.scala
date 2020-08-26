@@ -21,10 +21,6 @@ object animateSlideCellRendererMod extends js.Object {
     def addSlideAnimation(): Unit = js.native
     @JSName("init")
     def init_MAnimateSlideCellRenderer(params: js.Any): Unit = js.native
-    /** Get the cell to refresh. Return true if successful. Return false if not (or you don't have refresh logic),
-      * then the grid will refresh the cell for you. */
-    /* CompleteClass */
-    override def refresh(params: js.Any): Boolean = js.native
   }
   
   /* static members */

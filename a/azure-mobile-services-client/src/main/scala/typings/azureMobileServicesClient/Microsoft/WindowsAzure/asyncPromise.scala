@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait asyncPromise extends js.Object {
   def done(): Unit = js.native
+  def done(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
   def done(onSuccess: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def done(
     onSuccess: js.Function1[/* result */ js.Any, Unit],

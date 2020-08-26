@@ -22,15 +22,32 @@ trait AssetPropertyValue extends js.Object {
 
 object AssetPropertyValue {
   @scala.inline
-  def apply(
-    value: AssetPropertyVariant,
-    quality: AssetPropertyQuality = null,
-    timestamp: AssetPropertyTimestamp = null
-  ): AssetPropertyValue = {
+  def apply(value: AssetPropertyVariant): AssetPropertyValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetPropertyValue]
   }
+  @scala.inline
+  implicit class AssetPropertyValueOps[Self <: AssetPropertyValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: AssetPropertyVariant): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuality(value: AssetPropertyQuality): Self = this.set("quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("quality", js.undefined)
+    @scala.inline
+    def setTimestamp(value: AssetPropertyTimestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

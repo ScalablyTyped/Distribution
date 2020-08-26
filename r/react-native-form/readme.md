@@ -12,7 +12,7 @@ A simple react-native component to wrap your form fields!
 | Keywords           | react-component, react-native, react native form, android, ios |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 21334 |
+| # downloads        | 22021 |
 | # stars            | 0 |
 
 ## Links

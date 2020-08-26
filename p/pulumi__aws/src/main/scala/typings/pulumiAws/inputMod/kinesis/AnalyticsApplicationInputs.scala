@@ -45,26 +45,58 @@ trait AnalyticsApplicationInputs extends js.Object {
 
 object AnalyticsApplicationInputs {
   @scala.inline
-  def apply(
-    namePrefix: Input[String],
-    schema: Input[AnalyticsApplicationInputsSchema],
-    id: Input[String] = null,
-    kinesisFirehose: Input[AnalyticsApplicationInputsKinesisFirehose] = null,
-    kinesisStream: Input[AnalyticsApplicationInputsKinesisStream] = null,
-    parallelism: Input[AnalyticsApplicationInputsParallelism] = null,
-    processingConfiguration: Input[AnalyticsApplicationInputsProcessingConfiguration] = null,
-    startingPositionConfigurations: Input[js.Array[Input[AnalyticsApplicationInputsStartingPositionConfiguration]]] = null,
-    streamNames: Input[js.Array[Input[String]]] = null
-  ): AnalyticsApplicationInputs = {
+  def apply(namePrefix: Input[String], schema: Input[AnalyticsApplicationInputsSchema]): AnalyticsApplicationInputs = {
     val __obj = js.Dynamic.literal(namePrefix = namePrefix.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose.asInstanceOf[js.Any])
-    if (kinesisStream != null) __obj.updateDynamic("kinesisStream")(kinesisStream.asInstanceOf[js.Any])
-    if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism.asInstanceOf[js.Any])
-    if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration.asInstanceOf[js.Any])
-    if (startingPositionConfigurations != null) __obj.updateDynamic("startingPositionConfigurations")(startingPositionConfigurations.asInstanceOf[js.Any])
-    if (streamNames != null) __obj.updateDynamic("streamNames")(streamNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationInputs]
   }
+  @scala.inline
+  implicit class AnalyticsApplicationInputsOps[Self <: AnalyticsApplicationInputs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchema(value: Input[AnalyticsApplicationInputsSchema]): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: Input[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKinesisFirehose(value: Input[AnalyticsApplicationInputsKinesisFirehose]): Self = this.set("kinesisFirehose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisFirehose: Self = this.set("kinesisFirehose", js.undefined)
+    @scala.inline
+    def setKinesisStream(value: Input[AnalyticsApplicationInputsKinesisStream]): Self = this.set("kinesisStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisStream: Self = this.set("kinesisStream", js.undefined)
+    @scala.inline
+    def setParallelism(value: Input[AnalyticsApplicationInputsParallelism]): Self = this.set("parallelism", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelism: Self = this.set("parallelism", js.undefined)
+    @scala.inline
+    def setProcessingConfiguration(value: Input[AnalyticsApplicationInputsProcessingConfiguration]): Self = this.set("processingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingConfiguration: Self = this.set("processingConfiguration", js.undefined)
+    @scala.inline
+    def setStartingPositionConfigurationsVarargs(value: Input[AnalyticsApplicationInputsStartingPositionConfiguration]*): Self = this.set("startingPositionConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setStartingPositionConfigurations(value: Input[js.Array[Input[AnalyticsApplicationInputsStartingPositionConfiguration]]]): Self = this.set("startingPositionConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartingPositionConfigurations: Self = this.set("startingPositionConfigurations", js.undefined)
+    @scala.inline
+    def setStreamNamesVarargs(value: Input[String]*): Self = this.set("streamNames", js.Array(value :_*))
+    @scala.inline
+    def setStreamNames(value: Input[js.Array[Input[String]]]): Self = this.set("streamNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamNames: Self = this.set("streamNames", js.undefined)
+  }
+  
 }
 

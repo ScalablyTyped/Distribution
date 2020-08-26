@@ -29,51 +29,49 @@ class GridColumn protected () extends Element {
   @JSName("model")
   var model_FGridColumn: IModel = js.native
   def aggregateCaption: Text = js.native
-  def aggregateCaption(newValue: Text): js.Any = js.native
+  def aggregateCaption_=(newValue: Text): Unit = js.native
   def aggregateFunction: AggregateFunction = js.native
-  def aggregateFunction(newValue: AggregateFunction): js.Any = js.native
+  def aggregateFunction_=(newValue: AggregateFunction): Unit = js.native
   /**
     * In version 8.0.0: introduced
     */
   def appearance: Appearance = js.native
-  def appearance(newValue: Appearance): js.Any = js.native
+  def appearance_=(newValue: Appearance): Unit = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
   def attributePath: String = js.native
-  def attributePath(newValue: String): js.Any = js.native
-  def attributeRef(): js.Any = js.native
-  def attributeRef(newValue: AttributeRef): js.Any = js.native
+  def attributePath_=(newValue: String): Unit = js.native
   /**
     * In version 7.11.0: introduced
     */
-  @JSName("attributeRef")
-  def attributeRef_Union: AttributeRef | Null = js.native
+  def attributeRef: AttributeRef | Null = js.native
+  def attributeRef_=(newValue: AttributeRef | Null): Unit = js.native
   def caption: Text = js.native
-  def caption(newValue: Text): js.Any = js.native
+  def caption_=(newValue: Text): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def `class`: String = js.native
-  def `class`(newValue: String): js.Any = js.native
+  def class_=(newValue: String): Unit = js.native
   def containerAsColumnGrid: ColumnGrid = js.native
   def editable: Boolean = js.native
-  def editable(newValue: Boolean): js.Any = js.native
+  def editable_=(newValue: Boolean): Unit = js.native
   def formattingInfo: FormattingInfo = js.native
-  def formattingInfo(newValue: FormattingInfo): js.Any = js.native
+  def formattingInfo_=(newValue: FormattingInfo): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def showTooltip: Boolean = js.native
-  def showTooltip(newValue: Boolean): js.Any = js.native
+  def showTooltip_=(newValue: Boolean): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def style: String = js.native
-  def style(newValue: String): js.Any = js.native
+  def style_=(newValue: String): Unit = js.native
   def width: Double = js.native
-  def width(newValue: Double): js.Any = js.native
+  def width_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

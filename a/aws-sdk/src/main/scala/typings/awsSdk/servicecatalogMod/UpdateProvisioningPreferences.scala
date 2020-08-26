@@ -38,24 +38,54 @@ trait UpdateProvisioningPreferences extends js.Object {
 
 object UpdateProvisioningPreferences {
   @scala.inline
-  def apply(
-    StackSetAccounts: StackSetAccounts = null,
-    StackSetFailureToleranceCount: js.UndefOr[StackSetFailureToleranceCount] = js.undefined,
-    StackSetFailureTolerancePercentage: js.UndefOr[StackSetFailureTolerancePercentage] = js.undefined,
-    StackSetMaxConcurrencyCount: js.UndefOr[StackSetMaxConcurrencyCount] = js.undefined,
-    StackSetMaxConcurrencyPercentage: js.UndefOr[StackSetMaxConcurrencyPercentage] = js.undefined,
-    StackSetOperationType: StackSetOperationType = null,
-    StackSetRegions: StackSetRegions = null
-  ): UpdateProvisioningPreferences = {
+  def apply(): UpdateProvisioningPreferences = {
     val __obj = js.Dynamic.literal()
-    if (StackSetAccounts != null) __obj.updateDynamic("StackSetAccounts")(StackSetAccounts.asInstanceOf[js.Any])
-    if (!js.isUndefined(StackSetFailureToleranceCount)) __obj.updateDynamic("StackSetFailureToleranceCount")(StackSetFailureToleranceCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(StackSetFailureTolerancePercentage)) __obj.updateDynamic("StackSetFailureTolerancePercentage")(StackSetFailureTolerancePercentage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(StackSetMaxConcurrencyCount)) __obj.updateDynamic("StackSetMaxConcurrencyCount")(StackSetMaxConcurrencyCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(StackSetMaxConcurrencyPercentage)) __obj.updateDynamic("StackSetMaxConcurrencyPercentage")(StackSetMaxConcurrencyPercentage.get.asInstanceOf[js.Any])
-    if (StackSetOperationType != null) __obj.updateDynamic("StackSetOperationType")(StackSetOperationType.asInstanceOf[js.Any])
-    if (StackSetRegions != null) __obj.updateDynamic("StackSetRegions")(StackSetRegions.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProvisioningPreferences]
   }
+  @scala.inline
+  implicit class UpdateProvisioningPreferencesOps[Self <: UpdateProvisioningPreferences] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackSetAccountsVarargs(value: AccountId*): Self = this.set("StackSetAccounts", js.Array(value :_*))
+    @scala.inline
+    def setStackSetAccounts(value: StackSetAccounts): Self = this.set("StackSetAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetAccounts: Self = this.set("StackSetAccounts", js.undefined)
+    @scala.inline
+    def setStackSetFailureToleranceCount(value: StackSetFailureToleranceCount): Self = this.set("StackSetFailureToleranceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetFailureToleranceCount: Self = this.set("StackSetFailureToleranceCount", js.undefined)
+    @scala.inline
+    def setStackSetFailureTolerancePercentage(value: StackSetFailureTolerancePercentage): Self = this.set("StackSetFailureTolerancePercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetFailureTolerancePercentage: Self = this.set("StackSetFailureTolerancePercentage", js.undefined)
+    @scala.inline
+    def setStackSetMaxConcurrencyCount(value: StackSetMaxConcurrencyCount): Self = this.set("StackSetMaxConcurrencyCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetMaxConcurrencyCount: Self = this.set("StackSetMaxConcurrencyCount", js.undefined)
+    @scala.inline
+    def setStackSetMaxConcurrencyPercentage(value: StackSetMaxConcurrencyPercentage): Self = this.set("StackSetMaxConcurrencyPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetMaxConcurrencyPercentage: Self = this.set("StackSetMaxConcurrencyPercentage", js.undefined)
+    @scala.inline
+    def setStackSetOperationType(value: StackSetOperationType): Self = this.set("StackSetOperationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetOperationType: Self = this.set("StackSetOperationType", js.undefined)
+    @scala.inline
+    def setStackSetRegionsVarargs(value: Region*): Self = this.set("StackSetRegions", js.Array(value :_*))
+    @scala.inline
+    def setStackSetRegions(value: StackSetRegions): Self = this.set("StackSetRegions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetRegions: Self = this.set("StackSetRegions", js.undefined)
+  }
+  
 }
 

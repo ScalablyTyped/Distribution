@@ -4,66 +4,113 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GraphvizOptions extends js.Object {
-  var convertEqualSidedPolygons: js.UndefOr[Boolean] = js.undefined
-  var engine: js.UndefOr[Engine] = js.undefined
-  var fade: js.UndefOr[Boolean] = js.undefined
-  var fit: js.UndefOr[Boolean] = js.undefined
-  var growEnteringEdges: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var keyMode: js.UndefOr[KeyMode] = js.undefined
-  var scale: js.UndefOr[Double] = js.undefined
-  var totalMemory: js.UndefOr[Double] = js.undefined
-  var tweenPaths: js.UndefOr[Boolean] = js.undefined
-  var tweenPrecision: js.UndefOr[Double | String] = js.undefined
-  var tweenShapes: js.UndefOr[Boolean] = js.undefined
-  var useWorker: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var zoom: js.UndefOr[Boolean] = js.undefined
-  var zoomScaleExtent: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-  var zoomTranslateExtent: js.UndefOr[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = js.undefined
+  var convertEqualSidedPolygons: js.UndefOr[Boolean] = js.native
+  var engine: js.UndefOr[Engine] = js.native
+  var fade: js.UndefOr[Boolean] = js.native
+  var fit: js.UndefOr[Boolean] = js.native
+  var growEnteringEdges: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var keyMode: js.UndefOr[KeyMode] = js.native
+  var scale: js.UndefOr[Double] = js.native
+  var totalMemory: js.UndefOr[Double] = js.native
+  var tweenPaths: js.UndefOr[Boolean] = js.native
+  var tweenPrecision: js.UndefOr[Double | String] = js.native
+  var tweenShapes: js.UndefOr[Boolean] = js.native
+  var useWorker: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Boolean] = js.native
+  var zoomScaleExtent: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var zoomTranslateExtent: js.UndefOr[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = js.native
 }
 
 object GraphvizOptions {
   @scala.inline
-  def apply(
-    convertEqualSidedPolygons: js.UndefOr[Boolean] = js.undefined,
-    engine: Engine = null,
-    fade: js.UndefOr[Boolean] = js.undefined,
-    fit: js.UndefOr[Boolean] = js.undefined,
-    growEnteringEdges: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    keyMode: KeyMode = null,
-    scale: js.UndefOr[Double] = js.undefined,
-    totalMemory: js.UndefOr[Double] = js.undefined,
-    tweenPaths: js.UndefOr[Boolean] = js.undefined,
-    tweenPrecision: Double | String = null,
-    tweenShapes: js.UndefOr[Boolean] = js.undefined,
-    useWorker: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    zoom: js.UndefOr[Boolean] = js.undefined,
-    zoomScaleExtent: js.Tuple2[Double, Double] = null,
-    zoomTranslateExtent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = null
-  ): GraphvizOptions = {
+  def apply(): GraphvizOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(convertEqualSidedPolygons)) __obj.updateDynamic("convertEqualSidedPolygons")(convertEqualSidedPolygons.get.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(growEnteringEdges)) __obj.updateDynamic("growEnteringEdges")(growEnteringEdges.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (keyMode != null) __obj.updateDynamic("keyMode")(keyMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalMemory)) __obj.updateDynamic("totalMemory")(totalMemory.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tweenPaths)) __obj.updateDynamic("tweenPaths")(tweenPaths.get.asInstanceOf[js.Any])
-    if (tweenPrecision != null) __obj.updateDynamic("tweenPrecision")(tweenPrecision.asInstanceOf[js.Any])
-    if (!js.isUndefined(tweenShapes)) __obj.updateDynamic("tweenShapes")(tweenShapes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
-    if (zoomScaleExtent != null) __obj.updateDynamic("zoomScaleExtent")(zoomScaleExtent.asInstanceOf[js.Any])
-    if (zoomTranslateExtent != null) __obj.updateDynamic("zoomTranslateExtent")(zoomTranslateExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphvizOptions]
   }
+  @scala.inline
+  implicit class GraphvizOptionsOps[Self <: GraphvizOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConvertEqualSidedPolygons(value: Boolean): Self = this.set("convertEqualSidedPolygons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertEqualSidedPolygons: Self = this.set("convertEqualSidedPolygons", js.undefined)
+    @scala.inline
+    def setEngine(value: Engine): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setFade(value: Boolean): Self = this.set("fade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFade: Self = this.set("fade", js.undefined)
+    @scala.inline
+    def setFit(value: Boolean): Self = this.set("fit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFit: Self = this.set("fit", js.undefined)
+    @scala.inline
+    def setGrowEnteringEdges(value: Boolean): Self = this.set("growEnteringEdges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowEnteringEdges: Self = this.set("growEnteringEdges", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setKeyMode(value: KeyMode): Self = this.set("keyMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyMode: Self = this.set("keyMode", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setTotalMemory(value: Double): Self = this.set("totalMemory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalMemory: Self = this.set("totalMemory", js.undefined)
+    @scala.inline
+    def setTweenPaths(value: Boolean): Self = this.set("tweenPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTweenPaths: Self = this.set("tweenPaths", js.undefined)
+    @scala.inline
+    def setTweenPrecision(value: Double | String): Self = this.set("tweenPrecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTweenPrecision: Self = this.set("tweenPrecision", js.undefined)
+    @scala.inline
+    def setTweenShapes(value: Boolean): Self = this.set("tweenShapes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTweenShapes: Self = this.set("tweenShapes", js.undefined)
+    @scala.inline
+    def setUseWorker(value: Boolean): Self = this.set("useWorker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseWorker: Self = this.set("useWorker", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZoom(value: Boolean): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+    @scala.inline
+    def setZoomScaleExtent(value: js.Tuple2[Double, Double]): Self = this.set("zoomScaleExtent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomScaleExtent: Self = this.set("zoomScaleExtent", js.undefined)
+    @scala.inline
+    def setZoomTranslateExtent(value: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): Self = this.set("zoomTranslateExtent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomTranslateExtent: Self = this.set("zoomTranslateExtent", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait Subnet extends js.Object {
 
 object Subnet {
   @scala.inline
-  def apply(
-    SubnetAvailabilityZone: AvailabilityZone = null,
-    SubnetIdentifier: String = null,
-    SubnetStatus: String = null
-  ): Subnet = {
+  def apply(): Subnet = {
     val __obj = js.Dynamic.literal()
-    if (SubnetAvailabilityZone != null) __obj.updateDynamic("SubnetAvailabilityZone")(SubnetAvailabilityZone.asInstanceOf[js.Any])
-    if (SubnetIdentifier != null) __obj.updateDynamic("SubnetIdentifier")(SubnetIdentifier.asInstanceOf[js.Any])
-    if (SubnetStatus != null) __obj.updateDynamic("SubnetStatus")(SubnetStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subnet]
   }
+  @scala.inline
+  implicit class SubnetOps[Self <: Subnet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubnetAvailabilityZone(value: AvailabilityZone): Self = this.set("SubnetAvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetAvailabilityZone: Self = this.set("SubnetAvailabilityZone", js.undefined)
+    @scala.inline
+    def setSubnetIdentifier(value: String): Self = this.set("SubnetIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIdentifier: Self = this.set("SubnetIdentifier", js.undefined)
+    @scala.inline
+    def setSubnetStatus(value: String): Self = this.set("SubnetStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetStatus: Self = this.set("SubnetStatus", js.undefined)
+  }
+  
 }
 

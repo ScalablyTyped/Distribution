@@ -96,6 +96,7 @@ abstract class Tool () extends js.Object {
     * @param {Point=} last Point in view coordinates, defaults to Diagram.lastInput's InputEvent.viewPoint.
     */
   def isBeyondDragSize(): Boolean = js.native
+  def isBeyondDragSize(first: js.UndefOr[scala.Nothing], last: Point): Boolean = js.native
   def isBeyondDragSize(first: Point): Boolean = js.native
   def isBeyondDragSize(first: Point, last: Point): Boolean = js.native
   /**
@@ -105,6 +106,7 @@ abstract class Tool () extends js.Object {
     * @param {function(GraphObject):boolean | null=} pred An optional custom predicate
     */
   def standardMouseClick(): Unit = js.native
+  def standardMouseClick(navig: js.UndefOr[scala.Nothing], pred: js.Function1[/* obj */ GraphObject, Boolean]): Unit = js.native
   def standardMouseClick(navig: js.Function1[/* obj */ GraphObject, GraphObject]): Unit = js.native
   def standardMouseClick(
     navig: js.Function1[/* obj */ GraphObject, GraphObject],

@@ -5,60 +5,103 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DraggableOptions extends js.Object {
-  var autoScroll: js.UndefOr[Boolean] = js.undefined
-  var axis: js.UndefOr[String] = js.undefined
-  var container: js.UndefOr[JQuery] = js.undefined
-  var cursorOffset: js.UndefOr[js.Any] = js.undefined
-  var distance: js.UndefOr[Double] = js.undefined
-  var drag: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
-  var dragcancel: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
-  var dragend: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
-  var dragstart: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
-  var filter: js.UndefOr[String] = js.undefined
-  var group: js.UndefOr[String] = js.undefined
-  var hint: js.UndefOr[js.Function | JQuery] = js.undefined
-  var hold: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.undefined
-  var holdToDrag: js.UndefOr[Boolean] = js.undefined
-  var ignore: js.UndefOr[String] = js.undefined
+  var autoScroll: js.UndefOr[Boolean] = js.native
+  var axis: js.UndefOr[String] = js.native
+  var container: js.UndefOr[JQuery] = js.native
+  var cursorOffset: js.UndefOr[js.Any] = js.native
+  var distance: js.UndefOr[Double] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var dragcancel: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var filter: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[js.Function | JQuery] = js.native
+  var hold: js.UndefOr[js.Function1[/* e */ DraggableEvent, Unit]] = js.native
+  var holdToDrag: js.UndefOr[Boolean] = js.native
+  var ignore: js.UndefOr[String] = js.native
 }
 
 object DraggableOptions {
   @scala.inline
-  def apply(
-    autoScroll: js.UndefOr[Boolean] = js.undefined,
-    axis: String = null,
-    container: JQuery = null,
-    cursorOffset: js.Any = null,
-    distance: js.UndefOr[Double] = js.undefined,
-    drag: /* e */ DraggableEvent => Unit = null,
-    dragcancel: /* e */ DraggableEvent => Unit = null,
-    dragend: /* e */ DraggableEvent => Unit = null,
-    dragstart: /* e */ DraggableEvent => Unit = null,
-    filter: String = null,
-    group: String = null,
-    hint: js.Function | JQuery = null,
-    hold: /* e */ DraggableEvent => Unit = null,
-    holdToDrag: js.UndefOr[Boolean] = js.undefined,
-    ignore: String = null
-  ): DraggableOptions = {
+  def apply(): DraggableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.get.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (cursorOffset != null) __obj.updateDynamic("cursorOffset")(cursorOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
-    if (dragcancel != null) __obj.updateDynamic("dragcancel")(js.Any.fromFunction1(dragcancel))
-    if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
-    if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1(dragstart))
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (hold != null) __obj.updateDynamic("hold")(js.Any.fromFunction1(hold))
-    if (!js.isUndefined(holdToDrag)) __obj.updateDynamic("holdToDrag")(holdToDrag.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableOptions]
   }
+  @scala.inline
+  implicit class DraggableOptionsOps[Self <: DraggableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScroll(value: Boolean): Self = this.set("autoScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScroll: Self = this.set("autoScroll", js.undefined)
+    @scala.inline
+    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setContainer(value: JQuery): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setCursorOffset(value: js.Any): Self = this.set("cursorOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursorOffset: Self = this.set("cursorOffset", js.undefined)
+    @scala.inline
+    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistance: Self = this.set("distance", js.undefined)
+    @scala.inline
+    def setDrag(value: /* e */ DraggableEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDrag: Self = this.set("drag", js.undefined)
+    @scala.inline
+    def setDragcancel(value: /* e */ DraggableEvent => Unit): Self = this.set("dragcancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragcancel: Self = this.set("dragcancel", js.undefined)
+    @scala.inline
+    def setDragend(value: /* e */ DraggableEvent => Unit): Self = this.set("dragend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragend: Self = this.set("dragend", js.undefined)
+    @scala.inline
+    def setDragstart(value: /* e */ DraggableEvent => Unit): Self = this.set("dragstart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragstart: Self = this.set("dragstart", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setHint(value: js.Function | JQuery): Self = this.set("hint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHint: Self = this.set("hint", js.undefined)
+    @scala.inline
+    def setHold(value: /* e */ DraggableEvent => Unit): Self = this.set("hold", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHold: Self = this.set("hold", js.undefined)
+    @scala.inline
+    def setHoldToDrag(value: Boolean): Self = this.set("holdToDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoldToDrag: Self = this.set("holdToDrag", js.undefined)
+    @scala.inline
+    def setIgnore(value: String): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore: Self = this.set("ignore", js.undefined)
+  }
+  
 }
 

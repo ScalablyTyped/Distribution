@@ -4,14 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IRowNumberer
   extends typings.extjs.Ext.grid.column.IColumn
 
 object IRowNumberer {
   @scala.inline
-  def apply(IColumn: typings.extjs.Ext.grid.column.IColumn = null): IRowNumberer = {
+  def apply(): IRowNumberer = {
     val __obj = js.Dynamic.literal()
-    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
     __obj.asInstanceOf[IRowNumberer]
   }
 }

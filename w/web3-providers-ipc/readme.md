@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-providers-ipc
 
-Typings are for version 1.2.9
+Typings are for version 1.2.11
 
 ## Library description:
 Module to handle web3 RPC connections over IPC sockets.
@@ -10,9 +10,9 @@ Module to handle web3 RPC connections over IPC sockets.
 | ------------------ | :-------------: |
 | Full name          | web3-providers-ipc |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 16 |
 | # dependents       | 3 |
-| # downloads        | 3415195 |
+| # downloads        | 3551129 |
 | # stars            | 0 |
 
 ## Links

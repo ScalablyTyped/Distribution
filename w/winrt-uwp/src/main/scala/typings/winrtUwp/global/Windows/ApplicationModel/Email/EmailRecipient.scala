@@ -21,11 +21,5 @@ class EmailRecipient ()
     * @param name The name of the recipient.
     */
   def this(address: String, name: String) = this()
-  /** Gets or sets the address of the email recipient. */
-  /* CompleteClass */
-  override var address: String = js.native
-  /** Gets or sets the name of the email recipient. */
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

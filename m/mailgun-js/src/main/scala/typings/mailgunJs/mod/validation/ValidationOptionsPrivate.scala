@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ValidationOptionsPrivate extends js.Object {
-  var mailbox_verification: js.UndefOr[Boolean] = js.undefined
+  var mailbox_verification: js.UndefOr[Boolean] = js.native
 }
 
 object ValidationOptionsPrivate {
   @scala.inline
-  def apply(mailbox_verification: js.UndefOr[Boolean] = js.undefined): ValidationOptionsPrivate = {
+  def apply(): ValidationOptionsPrivate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mailbox_verification)) __obj.updateDynamic("mailbox_verification")(mailbox_verification.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptionsPrivate]
   }
+  @scala.inline
+  implicit class ValidationOptionsPrivateOps[Self <: ValidationOptionsPrivate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMailbox_verification(value: Boolean): Self = this.set("mailbox_verification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMailbox_verification: Self = this.set("mailbox_verification", js.undefined)
+  }
+  
 }
 

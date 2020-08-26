@@ -10,9 +10,9 @@ Typings are for version 0.1.5
 | ------------------ | :-------------: |
 | Full name          | @firebase/auth-interop-types |
 | Keywords           | - |
-| # releases         | 42 |
+| # releases         | 59 |
 | # dependents       | 2 |
-| # downloads        | 314389 |
+| # downloads        | 783454 |
 | # stars            | 0 |
 
 ## Links

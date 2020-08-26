@@ -10,9 +10,9 @@ node's assert.deepEqual algorithm
 | ------------------ | :-------------: |
 | Full name          | deep-equal |
 | Keywords           | equality, equal, compare |
-| # releases         | 4 |
-| # dependents       | 1489 |
-| # downloads        | 324824096 |
+| # releases         | 5 |
+| # dependents       | 1502 |
+| # downloads        | 335527674 |
 | # stars            | 34 |
 
 ## Links

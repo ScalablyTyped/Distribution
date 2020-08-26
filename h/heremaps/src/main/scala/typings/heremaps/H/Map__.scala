@@ -220,9 +220,159 @@ trait Map__ extends EventTarget {
     * @returns {H.util.Request} - A handle to the created storage request
     */
   def storeContent(): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: js.UndefOr[scala.Nothing],
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: Double
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(opt_onprogress: js.UndefOr[scala.Nothing], opt_bounds: js.UndefOr[scala.Nothing], opt_min: Double): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: Double,
+    opt_max: js.UndefOr[scala.Nothing],
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: Double,
+    opt_max: Double
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: Double,
+    opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(opt_onprogress: js.UndefOr[scala.Nothing], opt_bounds: Rect): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: Rect,
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: js.UndefOr[scala.Nothing],
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: Rect,
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: Double
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: Rect,
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(opt_onprogress: js.UndefOr[scala.Nothing], opt_bounds: Rect, opt_min: Double): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: Rect,
+    opt_min: Double,
+    opt_max: js.UndefOr[scala.Nothing],
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(opt_onprogress: js.UndefOr[scala.Nothing], opt_bounds: Rect, opt_min: Double, opt_max: Double): Request = js.native
+  def storeContent(
+    opt_onprogress: js.UndefOr[scala.Nothing],
+    opt_bounds: Rect,
+    opt_min: Double,
+    opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
   def storeContent(opt_onprogress: js.Function1[/* req */ Request, Unit]): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: js.UndefOr[scala.Nothing],
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: Double
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: Double
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: Double,
+    opt_max: js.UndefOr[scala.Nothing],
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: Double,
+    opt_max: Double
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: js.UndefOr[scala.Nothing],
+    opt_min: Double,
+    opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
   def storeContent(opt_onprogress: js.Function1[/* req */ Request, Unit], opt_bounds: Rect): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Rect,
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: js.UndefOr[scala.Nothing],
+    opt_layer: BaseTileLayer
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Rect,
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: Double
+  ): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Rect,
+    opt_min: js.UndefOr[scala.Nothing],
+    opt_max: Double,
+    opt_layer: BaseTileLayer
+  ): Request = js.native
   def storeContent(opt_onprogress: js.Function1[/* req */ Request, Unit], opt_bounds: Rect, opt_min: Double): Request = js.native
+  def storeContent(
+    opt_onprogress: js.Function1[/* req */ Request, Unit],
+    opt_bounds: Rect,
+    opt_min: Double,
+    opt_max: js.UndefOr[scala.Nothing],
+    opt_layer: BaseTileLayer
+  ): Request = js.native
   def storeContent(
     opt_onprogress: js.Function1[/* req */ Request, Unit],
     opt_bounds: Rect,

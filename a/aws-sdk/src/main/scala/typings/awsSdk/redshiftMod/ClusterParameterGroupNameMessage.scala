@@ -18,11 +18,30 @@ trait ClusterParameterGroupNameMessage extends js.Object {
 
 object ClusterParameterGroupNameMessage {
   @scala.inline
-  def apply(ParameterGroupName: String = null, ParameterGroupStatus: String = null): ClusterParameterGroupNameMessage = {
+  def apply(): ClusterParameterGroupNameMessage = {
     val __obj = js.Dynamic.literal()
-    if (ParameterGroupName != null) __obj.updateDynamic("ParameterGroupName")(ParameterGroupName.asInstanceOf[js.Any])
-    if (ParameterGroupStatus != null) __obj.updateDynamic("ParameterGroupStatus")(ParameterGroupStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterParameterGroupNameMessage]
   }
+  @scala.inline
+  implicit class ClusterParameterGroupNameMessageOps[Self <: ClusterParameterGroupNameMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameterGroupName(value: String): Self = this.set("ParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterGroupName: Self = this.set("ParameterGroupName", js.undefined)
+    @scala.inline
+    def setParameterGroupStatus(value: String): Self = this.set("ParameterGroupStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterGroupStatus: Self = this.set("ParameterGroupStatus", js.undefined)
+  }
+  
 }
 

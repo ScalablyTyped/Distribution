@@ -26,18 +26,38 @@ trait Invitation extends js.Object {
 
 object Invitation {
   @scala.inline
-  def apply(
-    AccountId: AccountId = null,
-    InvitationId: NonEmptyString = null,
-    InvitedAt: Timestamp = null,
-    MemberStatus: NonEmptyString = null
-  ): Invitation = {
+  def apply(): Invitation = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (InvitationId != null) __obj.updateDynamic("InvitationId")(InvitationId.asInstanceOf[js.Any])
-    if (InvitedAt != null) __obj.updateDynamic("InvitedAt")(InvitedAt.asInstanceOf[js.Any])
-    if (MemberStatus != null) __obj.updateDynamic("MemberStatus")(MemberStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invitation]
   }
+  @scala.inline
+  implicit class InvitationOps[Self <: Invitation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setInvitationId(value: NonEmptyString): Self = this.set("InvitationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitationId: Self = this.set("InvitationId", js.undefined)
+    @scala.inline
+    def setInvitedAt(value: Timestamp): Self = this.set("InvitedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitedAt: Self = this.set("InvitedAt", js.undefined)
+    @scala.inline
+    def setMemberStatus(value: NonEmptyString): Self = this.set("MemberStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberStatus: Self = this.set("MemberStatus", js.undefined)
+  }
+  
 }
 

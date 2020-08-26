@@ -14,10 +14,28 @@ trait ExecuteSqlResponse extends js.Object {
 
 object ExecuteSqlResponse {
   @scala.inline
-  def apply(sqlStatementResults: SqlStatementResults = null): ExecuteSqlResponse = {
+  def apply(): ExecuteSqlResponse = {
     val __obj = js.Dynamic.literal()
-    if (sqlStatementResults != null) __obj.updateDynamic("sqlStatementResults")(sqlStatementResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteSqlResponse]
   }
+  @scala.inline
+  implicit class ExecuteSqlResponseOps[Self <: ExecuteSqlResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSqlStatementResultsVarargs(value: SqlStatementResult*): Self = this.set("sqlStatementResults", js.Array(value :_*))
+    @scala.inline
+    def setSqlStatementResults(value: SqlStatementResults): Self = this.set("sqlStatementResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqlStatementResults: Self = this.set("sqlStatementResults", js.undefined)
+  }
+  
 }
 

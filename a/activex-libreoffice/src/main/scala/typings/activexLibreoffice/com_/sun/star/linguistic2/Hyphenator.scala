@@ -14,6 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** offers hyphenation functionality. */
+@js.native
 trait Hyphenator
   extends XHyphenator
      with XLinguServiceEventBroadcaster

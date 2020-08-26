@@ -112,8 +112,58 @@ trait Worksheet extends Sheet {
   def CheckBoxes(): js.Any = js.native
   def CheckBoxes(Index: js.Any): js.Any = js.native
   def CheckSpelling(): Unit = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: MsoLanguageID
+  ): Unit = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: Boolean
+  ): Unit = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: Boolean,
+    SpellLang: MsoLanguageID
+  ): Unit = js.native
+  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: Boolean): Unit = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: Boolean,
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: MsoLanguageID
+  ): Unit = js.native
+  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): Unit = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: Boolean,
+    AlwaysSuggest: Boolean,
+    SpellLang: MsoLanguageID
+  ): Unit = js.native
   def CheckSpelling(CustomDictionary: String): Unit = js.native
+  def CheckSpelling(
+    CustomDictionary: String,
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: MsoLanguageID
+  ): Unit = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: js.UndefOr[scala.Nothing], AlwaysSuggest: Boolean): Unit = js.native
+  def CheckSpelling(
+    CustomDictionary: String,
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: Boolean,
+    SpellLang: MsoLanguageID
+  ): Unit = js.native
   def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean): Unit = js.native
+  def CheckSpelling(
+    CustomDictionary: String,
+    IgnoreUppercase: Boolean,
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: MsoLanguageID
+  ): Unit = js.native
   def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): Unit = js.native
   def CheckSpelling(
     CustomDictionary: String,
@@ -171,6 +221,7 @@ trait Worksheet extends Sheet {
   def ListObjects(Index: String): ListObject = js.native
   def ListObjects(Index: Double): ListObject = js.native
   def Move(): Unit = js.native
+  def Move(Before: js.UndefOr[scala.Nothing], After: Sheet): Unit = js.native
   def Move(Before: Sheet): Unit = js.native
   def Move(Before: Sheet, After: Sheet): Unit = js.native
   def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: js.UndefOr[scala.Nothing], RefersTo: String): Name = js.native
@@ -185,47 +236,98 @@ trait Worksheet extends Sheet {
   def Ovals(): js.Any = js.native
   def Ovals(Index: js.Any): js.Any = js.native
   def Paste(): Unit = js.native
+  def Paste(Destination: js.UndefOr[scala.Nothing], Link: Boolean): Unit = js.native
   def Paste(Destination: Range): Unit = js.native
   def Paste(Destination: Range, Link: Boolean): Unit = js.native
+  def PasteSpecial(): Unit = js.native
   def PasteSpecial(
-    Format: js.UndefOr[String],
-    Link: js.UndefOr[Boolean],
-    DisplayAsIcon: js.UndefOr[Boolean],
+    Format: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
     IconFileName: js.UndefOr[scala.Nothing],
     IconIndex: js.UndefOr[scala.Nothing],
     IconLabel: js.UndefOr[scala.Nothing],
-    NoHTMLFormatting: js.UndefOr[Boolean]
-  ): Unit = js.native
-  @JSName("PasteSpecial")
-  def PasteSpecial_true(Format: js.UndefOr[String], Link: js.UndefOr[Boolean], DisplayAsIcon: `true`): Unit = js.native
-  @JSName("PasteSpecial")
-  def PasteSpecial_true(Format: js.UndefOr[String], Link: js.UndefOr[Boolean], DisplayAsIcon: `true`, IconFileName: String): Unit = js.native
-  @JSName("PasteSpecial")
-  def PasteSpecial_true(
-    Format: js.UndefOr[String],
-    Link: js.UndefOr[Boolean],
-    DisplayAsIcon: `true`,
-    IconFileName: String,
-    IconIndex: Double
-  ): Unit = js.native
-  @JSName("PasteSpecial")
-  def PasteSpecial_true(
-    Format: js.UndefOr[String],
-    Link: js.UndefOr[Boolean],
-    DisplayAsIcon: `true`,
-    IconFileName: String,
-    IconIndex: Double,
-    IconLabel: String
-  ): Unit = js.native
-  @JSName("PasteSpecial")
-  def PasteSpecial_true(
-    Format: js.UndefOr[String],
-    Link: js.UndefOr[Boolean],
-    DisplayAsIcon: `true`,
-    IconFileName: String,
-    IconIndex: Double,
-    IconLabel: String,
     NoHTMLFormatting: Boolean
+  ): Unit = js.native
+  def PasteSpecial(Format: js.UndefOr[scala.Nothing], Link: js.UndefOr[scala.Nothing], DisplayAsIcon: Boolean): Unit = js.native
+  def PasteSpecial(
+    Format: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: Boolean,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    NoHTMLFormatting: Boolean
+  ): Unit = js.native
+  def PasteSpecial(Format: js.UndefOr[scala.Nothing], Link: Boolean): Unit = js.native
+  def PasteSpecial(
+    Format: js.UndefOr[scala.Nothing],
+    Link: Boolean,
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    NoHTMLFormatting: Boolean
+  ): Unit = js.native
+  def PasteSpecial(Format: js.UndefOr[scala.Nothing], Link: Boolean, DisplayAsIcon: Boolean): Unit = js.native
+  def PasteSpecial(
+    Format: js.UndefOr[scala.Nothing],
+    Link: Boolean,
+    DisplayAsIcon: Boolean,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    NoHTMLFormatting: Boolean
+  ): Unit = js.native
+  def PasteSpecial(Format: String): Unit = js.native
+  def PasteSpecial(
+    Format: String,
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    NoHTMLFormatting: Boolean
+  ): Unit = js.native
+  def PasteSpecial(Format: String, Link: js.UndefOr[scala.Nothing], DisplayAsIcon: Boolean): Unit = js.native
+  def PasteSpecial(
+    Format: String,
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: Boolean,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    NoHTMLFormatting: Boolean
+  ): Unit = js.native
+  def PasteSpecial(Format: String, Link: Boolean): Unit = js.native
+  def PasteSpecial(
+    Format: String,
+    Link: Boolean,
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    NoHTMLFormatting: Boolean
+  ): Unit = js.native
+  def PasteSpecial(Format: String, Link: Boolean, DisplayAsIcon: Boolean): Unit = js.native
+  def PasteSpecial(
+    Format: String,
+    Link: Boolean,
+    DisplayAsIcon: Boolean,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    NoHTMLFormatting: Boolean
+  ): Unit = js.native
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
+    Format: js.UndefOr[String],
+    Link: js.UndefOr[Boolean],
+    DisplayAsIcon: `true`,
+    IconFileName: js.UndefOr[String],
+    IconIndex: js.UndefOr[Double],
+    IconLabel: js.UndefOr[String],
+    NoHTMLFormatting: js.UndefOr[Boolean]
   ): Unit = js.native
   def Pictures(): js.Any = js.native
   def Pictures(Index: js.Any): js.Any = js.native
@@ -333,9 +435,11 @@ trait Worksheet extends Sheet {
   def UsedRange(RowIndex: Double, ColumnIndex: Double): Range = js.native
   def VPageBreaks(Index: Double): VPageBreak = js.native
   def XmlDataQuery(XPath: String): Range | Null = js.native
+  def XmlDataQuery(XPath: String, SelectionNamespaces: js.UndefOr[scala.Nothing], Map: XmlMap): Range | Null = js.native
   def XmlDataQuery(XPath: String, SelectionNamespaces: String): Range | Null = js.native
   def XmlDataQuery(XPath: String, SelectionNamespaces: String, Map: XmlMap): Range | Null = js.native
   def XmlMapQuery(XPath: String): Range = js.native
+  def XmlMapQuery(XPath: String, SelectionNamespaces: js.UndefOr[scala.Nothing], Map: XmlMap): Range = js.native
   def XmlMapQuery(XPath: String, SelectionNamespaces: String): Range = js.native
   def XmlMapQuery(XPath: String, SelectionNamespaces: String, Map: XmlMap): Range = js.native
   def _CheckSpelling(
@@ -366,9 +470,145 @@ trait Worksheet extends Sheet {
     PrToFileName: js.UndefOr[js.Any]
   ): Unit = js.native
   def _Protect(): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.UndefOr[scala.Nothing],
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.Any,
+    Scenarios: js.UndefOr[scala.Nothing],
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.Any,
+    Scenarios: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.Any,
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.UndefOr[scala.Nothing],
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.Any,
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.Any,
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: js.UndefOr[scala.Nothing],
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.UndefOr[scala.Nothing],
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
   def _Protect(Password: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.UndefOr[scala.Nothing],
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.Any,
+    Scenarios: js.UndefOr[scala.Nothing],
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.UndefOr[scala.Nothing],
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
   def _Protect(Password: js.Any, DrawingObjects: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.UndefOr[scala.Nothing],
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.UndefOr[scala.Nothing], Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: js.UndefOr[scala.Nothing],
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
   def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: js.UndefOr[scala.Nothing],
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
   def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
   def _Protect(
     Password: js.Any,

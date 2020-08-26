@@ -26,5 +26,24 @@ object AttachDiskRequest {
     val __obj = js.Dynamic.literal(diskName = diskName.asInstanceOf[js.Any], diskPath = diskPath.asInstanceOf[js.Any], instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachDiskRequest]
   }
+  @scala.inline
+  implicit class AttachDiskRequestOps[Self <: AttachDiskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskName(value: ResourceName): Self = this.set("diskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiskPath(value: NonEmptyString): Self = this.set("diskPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceName(value: ResourceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

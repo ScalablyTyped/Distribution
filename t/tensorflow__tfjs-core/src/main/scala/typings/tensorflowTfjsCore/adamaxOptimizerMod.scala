@@ -15,6 +15,13 @@ object adamaxOptimizerMod extends js.Object {
   class AdamaxOptimizer protected () extends Optimizer {
     def this(learningRate: Double, beta1: Double, beta2: Double) = this()
     def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double) = this()
+    def this(
+      learningRate: Double,
+      beta1: Double,
+      beta2: Double,
+      epsilon: js.UndefOr[scala.Nothing],
+      decay: Double
+    ) = this()
     def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double, decay: Double) = this()
     var accBeta1: js.Any = js.native
     var accumulatedFirstMoment: js.Any = js.native

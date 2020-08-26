@@ -53,6 +53,7 @@ class View[TModel /* <: Model[_, ModelSetOptions] */] () extends js.Object {
   def setElement(element: HTMLElement): View[TModel] = js.native
   def setElement(element: HTMLElement, delegate: Boolean): View[TModel] = js.native
   def undelegate(eventName: String): View[TModel] = js.native
+  def undelegate(eventName: String, selector: js.UndefOr[scala.Nothing], listener: js.Function): View[TModel] = js.native
   def undelegate(eventName: String, selector: String): View[TModel] = js.native
   def undelegate(eventName: String, selector: String, listener: js.Function): View[TModel] = js.native
   def undelegateEvents(): js.Any = js.native

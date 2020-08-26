@@ -59,50 +59,52 @@ trait JQuery extends js.Object {
   @JSName("transition")
   var transition_Original: Transition = js.native
   def transition(): JQuery = js.native
-  def transition(behavior: setting, name: allowRepeats): Boolean = js.native
+  def transition(behavior: setting, name: allowRepeats, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def transition(behavior: setting, name: allowRepeats, value: Boolean): JQuery = js.native
-  def transition(behavior: setting, name: animation): String = js.native
+  def transition(behavior: setting, name: animation, value: js.UndefOr[scala.Nothing]): String = js.native
   def transition(behavior: setting, name: animation, value: String): JQuery = js.native
-  def transition(behavior: setting, name: className): ClassNameSettings = js.native
-  def transition(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def transition(behavior: setting, name: debug): Boolean = js.native
+  def transition(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  def transition(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def transition(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def transition(behavior: setting, name: displayType): `false` | String = js.native
+  def transition(behavior: setting, name: displayType, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
   def transition(behavior: setting, name: displayType, value: String): JQuery = js.native
   def transition(behavior: setting, name: displayType, value: `false`): JQuery = js.native
-  def transition(behavior: setting, name: duration): Double = js.native
+  def transition(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def transition(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def transition(behavior: setting, name: error): ErrorSettings = js.native
-  def transition(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def transition(behavior: setting, name: interval): Double = js.native
+  def transition(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+  def transition(behavior: setting, name: interval, value: js.UndefOr[scala.Nothing]): Double = js.native
   def transition(behavior: setting, name: interval, value: Double): JQuery = js.native
-  def transition(behavior: setting, name: name): String = js.native
-  def transition(behavior: setting, name: namespace): String = js.native
+  def transition(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def transition(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def transition(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def transition(behavior: setting, name: name, value: String): JQuery = js.native
-  def transition(behavior: setting, name: onComplete): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def transition(behavior: setting, name: onComplete, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def transition(behavior: setting, name: onComplete, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def transition(behavior: setting, name: onHide): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def transition(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def transition(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def transition(behavior: setting, name: onShow): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def transition(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def transition(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def transition(behavior: setting, name: onStart): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def transition(behavior: setting, name: onStart, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def transition(behavior: setting, name: onStart, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def transition(behavior: setting, name: performance): Boolean = js.native
+  def transition(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def transition(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def transition(behavior: setting, name: queue): Boolean = js.native
+  def transition(behavior: setting, name: queue, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def transition(behavior: setting, name: queue, value: Boolean): JQuery = js.native
-  def transition(behavior: setting, name: reverse): auto | Boolean = js.native
+  def transition(behavior: setting, name: reverse, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
   def transition(behavior: setting, name: reverse, value: Boolean): JQuery = js.native
   def transition(behavior: setting, name: reverse, value: auto): JQuery = js.native
-  def transition(behavior: setting, name: silent): Boolean = js.native
+  def transition(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def transition(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def transition(behavior: setting, name: useFailSafe): Boolean = js.native
+  def transition(behavior: setting, name: useFailSafe, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def transition(behavior: setting, name: useFailSafe, value: Boolean): JQuery = js.native
-  def transition(behavior: setting, name: verbose): Boolean = js.native
+  def transition(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def transition(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def transition(settings: TransitionSettings): JQuery = js.native
   def transition(transition: String): JQuery = js.native
+  @JSName("transition")
+  def transition_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  @JSName("transition")
+  def transition_JQuery(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
   /**
     * Clears all queued animations
     */

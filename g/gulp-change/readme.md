@@ -12,7 +12,7 @@ allow file content manipulations
 | Keywords           | gulp, change, file, content, modify, static, analysis |
 | # releases         | 3 |
 | # dependents       | 21 |
-| # downloads        | 247815 |
+| # downloads        | 247868 |
 | # stars            | 9 |
 
 ## Links

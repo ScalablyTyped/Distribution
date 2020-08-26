@@ -1,7 +1,7 @@
 package typings.readdirp.mod
 
-import typings.node.AnonEnd
 import typings.node.NodeJS.WritableStream
+import typings.node.anon.End
 import typings.node.streamMod.Readable
 import typings.std.AsyncIterable
 import scala.scalajs.js
@@ -15,6 +15,6 @@ trait ReaddirpStream
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
 }
 

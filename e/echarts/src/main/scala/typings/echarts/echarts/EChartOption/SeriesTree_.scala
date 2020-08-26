@@ -4,7 +4,7 @@ import typings.echarts.anon.BorderRadius
 import typings.echarts.anon.BorderType
 import typings.echarts.anon.CurvenessShadowBlur
 import typings.echarts.anon.EmphasisItemStyle
-import typings.echarts.anon.LineStyleCurvenessShadowBlur
+import typings.echarts.anon.`24`
 import typings.echarts.echarts.EChartOption.SeriesTree.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-tree
   */
+@js.native
 trait SeriesTree_ extends js.Object {
   /**
     * Distance between tree component and the bottom side of the container.
@@ -44,7 +45,7 @@ trait SeriesTree_ extends js.Object {
     * 12%
     * @see https://echarts.apache.org/en/option.html#series-tree.bottom
     */
-  var bottom: js.UndefOr[Double | String] = js.undefined
+  var bottom: js.UndefOr[Double | String] = js.native
   /**
     * [series-tree.data](https://echarts.apache.org/en/option.html#series-tree.data)
     * the data format is a tree structure，for example：
@@ -54,11 +55,11 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.data
     */
-  var data: js.UndefOr[js.Array[DataObject]] = js.undefined
+  var data: js.UndefOr[js.Array[DataObject]] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-tree.emphasis
     */
-  var emphasis: js.UndefOr[LineStyleCurvenessShadowBlur] = js.undefined
+  var emphasis: js.UndefOr[`24`] = js.native
   /**
     * Subtree collapses and expands interaction, `default true`.
     * As the drawing area is limited, and usually the nodes of a tree
@@ -83,14 +84,14 @@ trait SeriesTree_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-tree.expandAndCollapse
     */
-  var expandAndCollapse: js.UndefOr[Boolean] = js.undefined
+  var expandAndCollapse: js.UndefOr[Boolean] = js.native
   /**
     * Height of tree component.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.height
     */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -99,7 +100,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * The initial level (depth) of the tree.
     * The root node is the 0th layer, then the first layer, the second
@@ -118,7 +119,7 @@ trait SeriesTree_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-tree.initialTreeDepth
     */
-  var initialTreeDepth: js.UndefOr[Double] = js.undefined
+  var initialTreeDepth: js.UndefOr[Double] = js.native
   /**
     * The style of each node in the tree, where \[itemStyle.color\]
     * (~ series-tree.itemStyle.color)
@@ -128,7 +129,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.native
   /**
     * `label` describes the style of the text corresponding to each
     * node.
@@ -136,7 +137,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.label
     */
-  var label: js.UndefOr[BorderRadius] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.native
   /**
     * The layout of the tree, which can be `orthogonal` and `radial`
     * 。Here the `orthogonal` layout is what we usually refer to the
@@ -159,7 +160,7 @@ trait SeriesTree_ extends js.Object {
     * "orthogonal"
     * @see https://echarts.apache.org/en/option.html#series-tree.layout
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[String] = js.native
   /**
     * Leaf node special configuration, such as the above tree diagram
     * example, the leaf node and non-leaf node label location is different.
@@ -167,7 +168,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.leaves
     */
-  var leaves: js.UndefOr[EmphasisItemStyle] = js.undefined
+  var leaves: js.UndefOr[EmphasisItemStyle] = js.native
   /**
     * Distance between tree component and the left side of the container.
     *
@@ -183,14 +184,14 @@ trait SeriesTree_ extends js.Object {
     * 12%
     * @see https://echarts.apache.org/en/option.html#series-tree.left
     */
-  var left: js.UndefOr[Double | String] = js.undefined
+  var left: js.UndefOr[Double | String] = js.native
   /**
     * Defines the style of the tree edge.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.lineStyle
     */
-  var lineStyle: js.UndefOr[CurvenessShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[CurvenessShadowBlur] = js.native
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -201,7 +202,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The direction of the `orthogonal` layout in the tree diagram.
     * That means this configuration takes effect only if `layout =
@@ -217,7 +218,7 @@ trait SeriesTree_ extends js.Object {
     * "LR"
     * @see https://echarts.apache.org/en/option.html#series-tree.orient
     */
-  var orient: js.UndefOr[String] = js.undefined
+  var orient: js.UndefOr[String] = js.native
   /**
     * Distance between tree component and the right side of the container.
     *
@@ -229,7 +230,7 @@ trait SeriesTree_ extends js.Object {
     * 12%
     * @see https://echarts.apache.org/en/option.html#series-tree.right
     */
-  var right: js.UndefOr[Double | String] = js.undefined
+  var right: js.UndefOr[Double | String] = js.native
   /**
     * Whether to enable mouse zooming and translating.
     * `false` by default.
@@ -240,7 +241,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.roam
     */
-  var roam: js.UndefOr[Boolean | String] = js.undefined
+  var roam: js.UndefOr[Boolean | String] = js.native
   /**
     * Symbol of .
     *
@@ -281,14 +282,14 @@ trait SeriesTree_ extends js.Object {
     * "emptyCircle"
     * @see https://echarts.apache.org/en/option.html#series-tree.symbol
     */
-  var symbol: js.UndefOr[String] = js.undefined
+  var symbol: js.UndefOr[String] = js.native
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.symbolKeepAspect
     */
-  var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
+  var symbolKeepAspect: js.UndefOr[Boolean] = js.native
   /**
     * Offset of symbol relative to original position.
     * By default, symbol will be put in the center position of data.
@@ -309,7 +310,7 @@ trait SeriesTree_ extends js.Object {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-tree.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
+  var symbolOffset: js.UndefOr[js.Array[_]] = js.native
   /**
     * Rotate degree of symbol.
     * Note that when `symbol` is set to be `'arrow'` in `markLine`,
@@ -319,7 +320,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.symbolRotate
     */
-  var symbolRotate: js.UndefOr[Double] = js.undefined
+  var symbolRotate: js.UndefOr[Double] = js.native
   /**
     * symbol size.
     * It can be set to single numbers like `10`, or use an array to
@@ -345,14 +346,14 @@ trait SeriesTree_ extends js.Object {
     * 7
     * @see https://echarts.apache.org/en/option.html#series-tree.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.native
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.tooltip
     */
-  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.native
   /**
     * Distance between tree component and the top side of the container.
     *
@@ -368,20 +369,20 @@ trait SeriesTree_ extends js.Object {
     * 12%
     * @see https://echarts.apache.org/en/option.html#series-tree.top
     */
-  var top: js.UndefOr[Double | String] = js.undefined
+  var top: js.UndefOr[Double | String] = js.native
   /**
     * @default
     * "tree"
     * @see https://echarts.apache.org/en/option.html#series-tree.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * Width of tree component.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.width
     */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.native
   /**
     * `z` value of all graghical elements in , which controls order
     * of drawing graphical components.
@@ -396,7 +397,7 @@ trait SeriesTree_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-tree.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in .
     *
@@ -414,71 +415,145 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object SeriesTree_ {
   @scala.inline
-  def apply(
-    bottom: Double | String = null,
-    data: js.Array[DataObject] = null,
-    emphasis: LineStyleCurvenessShadowBlur = null,
-    expandAndCollapse: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    id: String = null,
-    initialTreeDepth: js.UndefOr[Double] = js.undefined,
-    itemStyle: BorderType = null,
-    label: BorderRadius = null,
-    layout: String = null,
-    leaves: EmphasisItemStyle = null,
-    left: Double | String = null,
-    lineStyle: CurvenessShadowBlur = null,
-    name: String = null,
-    orient: String = null,
-    right: Double | String = null,
-    roam: Boolean | String = null,
-    symbol: String = null,
-    symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
-    symbolOffset: js.Array[_] = null,
-    symbolRotate: js.UndefOr[Double] = js.undefined,
-    symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: BaseTooltip = null,
-    top: Double | String = null,
-    `type`: String = null,
-    width: Double | String = null,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): SeriesTree_ = {
+  def apply(): SeriesTree_ = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandAndCollapse)) __obj.updateDynamic("expandAndCollapse")(expandAndCollapse.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialTreeDepth)) __obj.updateDynamic("initialTreeDepth")(initialTreeDepth.get.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (leaves != null) __obj.updateDynamic("leaves")(leaves.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (roam != null) __obj.updateDynamic("roam")(roam.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.get.asInstanceOf[js.Any])
-    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
-    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesTree_]
   }
+  @scala.inline
+  implicit class SeriesTree_Ops[Self <: SeriesTree_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBottom(value: Double | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: DataObject*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[DataObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setEmphasis(value: `24`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setExpandAndCollapse(value: Boolean): Self = this.set("expandAndCollapse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandAndCollapse: Self = this.set("expandAndCollapse", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInitialTreeDepth(value: Double): Self = this.set("initialTreeDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialTreeDepth: Self = this.set("initialTreeDepth", js.undefined)
+    @scala.inline
+    def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: BorderRadius): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setLeaves(value: EmphasisItemStyle): Self = this.set("leaves", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaves: Self = this.set("leaves", js.undefined)
+    @scala.inline
+    def setLeft(value: Double | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setLineStyle(value: CurvenessShadowBlur): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrient(value: String): Self = this.set("orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrient: Self = this.set("orient", js.undefined)
+    @scala.inline
+    def setRight(value: Double | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setRoam(value: Boolean | String): Self = this.set("roam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoam: Self = this.set("roam", js.undefined)
+    @scala.inline
+    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setSymbolKeepAspect(value: Boolean): Self = this.set("symbolKeepAspect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolKeepAspect: Self = this.set("symbolKeepAspect", js.undefined)
+    @scala.inline
+    def setSymbolOffsetVarargs(value: js.Any*): Self = this.set("symbolOffset", js.Array(value :_*))
+    @scala.inline
+    def setSymbolOffset(value: js.Array[_]): Self = this.set("symbolOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolOffset: Self = this.set("symbolOffset", js.undefined)
+    @scala.inline
+    def setSymbolRotate(value: Double): Self = this.set("symbolRotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolRotate: Self = this.set("symbolRotate", js.undefined)
+    @scala.inline
+    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    @scala.inline
+    def setSymbolSize(value: js.Array[_] | js.Function | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

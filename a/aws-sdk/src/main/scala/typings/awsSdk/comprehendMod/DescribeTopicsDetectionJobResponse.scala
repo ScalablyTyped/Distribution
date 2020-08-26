@@ -14,10 +14,26 @@ trait DescribeTopicsDetectionJobResponse extends js.Object {
 
 object DescribeTopicsDetectionJobResponse {
   @scala.inline
-  def apply(TopicsDetectionJobProperties: TopicsDetectionJobProperties = null): DescribeTopicsDetectionJobResponse = {
+  def apply(): DescribeTopicsDetectionJobResponse = {
     val __obj = js.Dynamic.literal()
-    if (TopicsDetectionJobProperties != null) __obj.updateDynamic("TopicsDetectionJobProperties")(TopicsDetectionJobProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTopicsDetectionJobResponse]
   }
+  @scala.inline
+  implicit class DescribeTopicsDetectionJobResponseOps[Self <: DescribeTopicsDetectionJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTopicsDetectionJobProperties(value: TopicsDetectionJobProperties): Self = this.set("TopicsDetectionJobProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicsDetectionJobProperties: Self = this.set("TopicsDetectionJobProperties", js.undefined)
+  }
+  
 }
 

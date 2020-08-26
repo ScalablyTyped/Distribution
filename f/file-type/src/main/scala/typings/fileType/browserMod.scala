@@ -4,6 +4,7 @@ import typings.node.Buffer
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.ReadableStream
+import typings.std.Set
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ object browserMod extends js.Object {
   /**
   	Supported file extensions.
   	*/
-  val extensions: js.Array[typings.fileType.coreMod.FileExtension] = js.native
+  val extensions: Set[typings.fileType.coreMod.FileExtension] = js.native
   /**
   	Supported MIME types.
   	*/

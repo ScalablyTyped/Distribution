@@ -1,9 +1,7 @@
 package typings.makerJs.global.MakerJs.models
 
 import typings.makerJs.MakerJs.IFindChainsOptions
-import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPathBezierSeed
-import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,22 +23,6 @@ class BezierCurve protected ()
   def this(origin: IPoint, controls: js.Array[IPoint], end: IPoint, accuracy: Double) = this()
   def this(origin: IPoint, control: IPoint, end: IPoint, accuracy: Double) = this()
   def this(origin: IPoint, control1: IPoint, control2: IPoint, end: IPoint, accuracy: Double) = this()
-  /* CompleteClass */
-  override var accuracy: Double = js.native
-  /* CompleteClass */
-  @JSName("models")
-  override var models_BezierCurve: IModelMap = js.native
-  /* CompleteClass */
-  @JSName("origin")
-  override var origin_BezierCurve: IPoint = js.native
-  /* CompleteClass */
-  @JSName("paths")
-  override var paths_BezierCurve: IPathMap = js.native
-  /* CompleteClass */
-  override var seed: IPathBezierSeed = js.native
-  /* CompleteClass */
-  @JSName("type")
-  override var type_BezierCurve: String = js.native
 }
 
 /* static members */

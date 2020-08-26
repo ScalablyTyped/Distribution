@@ -4,26 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IGetFileInfoParam extends IAPIParam[IGetFileInfoSuccessResult] {
-  var digestAlgorithm: js.UndefOr[String] = js.undefined
-  var filePath: String
+  var digestAlgorithm: js.UndefOr[String] = js.native
+  var filePath: String = js.native
 }
 
 object IGetFileInfoParam {
   @scala.inline
-  def apply(
-    filePath: String,
-    complete: /* val */ IGetFileInfoSuccessResult | IAPIError => Unit = null,
-    digestAlgorithm: String = null,
-    fail: /* err */ IAPIError => Unit = null,
-    success: IGetFileInfoSuccessResult => Unit = null
-  ): IGetFileInfoParam = {
+  def apply(filePath: String): IGetFileInfoParam = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[IGetFileInfoParam]
   }
+  @scala.inline
+  implicit class IGetFileInfoParamOps[Self <: IGetFileInfoParam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDigestAlgorithm(value: String): Self = this.set("digestAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigestAlgorithm: Self = this.set("digestAlgorithm", js.undefined)
+  }
+  
 }
 

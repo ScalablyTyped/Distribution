@@ -10,11 +10,12 @@ import scala.scalajs.js.annotation._
   *
   * Additionally, it makes it possible to register listener objects, which get notification whenever the status or content of the object changes.
   */
+@js.native
 trait XModifiable extends XModifyBroadcaster {
   /** @returns `TRUE` if the object is modified.  The modification is always in relation to a certain state (i.e., the initial, loaded, or last stored version). */
-  def isModified(): Boolean
+  def isModified(): Boolean = js.native
   /** sets the status of the **modified** -flag from outside of the object. */
-  def setModified(bModified: Boolean): Unit
+  def setModified(bModified: Boolean): Unit = js.native
 }
 
 object XModifiable {
@@ -31,5 +32,22 @@ object XModifiable {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addModifyListener = js.Any.fromFunction1(addModifyListener), isModified = js.Any.fromFunction0(isModified), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeModifyListener = js.Any.fromFunction1(removeModifyListener), setModified = js.Any.fromFunction1(setModified))
     __obj.asInstanceOf[XModifiable]
   }
+  @scala.inline
+  implicit class XModifiableOps[Self <: XModifiable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsModified(value: () => Boolean): Self = this.set("isModified", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetModified(value: Boolean => Unit): Self = this.set("setModified", js.Any.fromFunction1(value))
+  }
+  
 }
 

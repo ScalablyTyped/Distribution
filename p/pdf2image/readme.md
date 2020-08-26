@@ -10,9 +10,9 @@ Converts a given pdf to the desired images
 | ------------------ | :-------------: |
 | Full name          | pdf2image |
 | Keywords           | pdf, convert, image, imagemagick, pdf2image, pdf2img |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3052 |
+| # downloads        | 3226 |
 | # stars            | 2 |
 
 ## Links

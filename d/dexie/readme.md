@@ -1,7 +1,7 @@
 
 # Scala.js typings for dexie
 
-Typings are for version 2.0.4
+Typings are for version 3.0.2
 
 ## Library description:
 A Minimalistic Wrapper for IndexedDB
@@ -11,8 +11,8 @@ A Minimalistic Wrapper for IndexedDB
 | Full name          | dexie |
 | Keywords           | indexeddb, browser, database |
 | # releases         | 14 |
-| # dependents       | 125 |
-| # downloads        | 1355528 |
+| # dependents       | 132 |
+| # downloads        | 1403480 |
 | # stars            | 21 |
 
 ## Links

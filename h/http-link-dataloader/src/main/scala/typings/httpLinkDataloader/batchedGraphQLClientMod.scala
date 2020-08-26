@@ -19,6 +19,7 @@ object batchedGraphQLClientMod extends js.Object {
     var uri: String = js.native
     def load(keys: js.Array[String]): js.Promise[_] = js.native
     def request[T /* <: js.Any */](query: String): js.Promise[T] = js.native
+    def request[T /* <: js.Any */](query: String, variables: js.UndefOr[scala.Nothing], operationName: String): js.Promise[T] = js.native
     def request[T /* <: js.Any */](query: String, variables: Variables): js.Promise[T] = js.native
     def request[T /* <: js.Any */](query: String, variables: Variables, operationName: String): js.Promise[T] = js.native
   }

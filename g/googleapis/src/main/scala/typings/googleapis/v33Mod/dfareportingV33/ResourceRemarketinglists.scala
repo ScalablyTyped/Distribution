@@ -28,6 +28,7 @@ class ResourceRemarketinglists protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRemarketingList] = js.native
   def get(callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
   def get(params: ParamsResourceRemarketinglistsGet): GaxiosPromise[SchemaRemarketingList] = js.native
   def get(params: ParamsResourceRemarketinglistsGet, callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
   def get(
@@ -56,6 +57,7 @@ class ResourceRemarketinglists protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaRemarketingList] = js.native
   def insert(callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
   def insert(params: ParamsResourceRemarketinglistsInsert): GaxiosPromise[SchemaRemarketingList] = js.native
   def insert(
     params: ParamsResourceRemarketinglistsInsert,
@@ -95,6 +97,7 @@ class ResourceRemarketinglists protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaRemarketingListsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaRemarketingListsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingListsListResponse] = js.native
   def list(params: ParamsResourceRemarketinglistsList): GaxiosPromise[SchemaRemarketingListsListResponse] = js.native
   def list(
     params: ParamsResourceRemarketinglistsList,
@@ -128,6 +131,7 @@ class ResourceRemarketinglists protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaRemarketingList] = js.native
   def patch(callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
   def patch(params: ParamsResourceRemarketinglistsPatch): GaxiosPromise[SchemaRemarketingList] = js.native
   def patch(params: ParamsResourceRemarketinglistsPatch, callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
   def patch(
@@ -156,6 +160,7 @@ class ResourceRemarketinglists protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaRemarketingList] = js.native
   def update(callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
   def update(params: ParamsResourceRemarketinglistsUpdate): GaxiosPromise[SchemaRemarketingList] = js.native
   def update(
     params: ParamsResourceRemarketinglistsUpdate,

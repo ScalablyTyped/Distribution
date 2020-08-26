@@ -26,9 +26,8 @@ object SignatureHelpTriggerReason {
     __obj.asInstanceOf[SignatureHelpTriggerReason]
   }
   @scala.inline
-  def SignatureHelpRetriggeredReason(kind: retrigger, triggerCharacter: SignatureHelpRetriggerCharacter = null): SignatureHelpTriggerReason = {
+  def SignatureHelpRetriggeredReason(kind: retrigger): SignatureHelpTriggerReason = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpTriggerReason]
   }
 }

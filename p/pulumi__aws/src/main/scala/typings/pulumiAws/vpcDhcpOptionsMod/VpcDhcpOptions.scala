@@ -22,7 +22,12 @@ class VpcDhcpOptions protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: VpcDhcpOptionsArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: VpcDhcpOptionsArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The ARN of the DHCP Options Set.
+    */
+  val arn: Output_[String] = js.native
   /**
     * the suffix domain name to use by default when resolving non Fully Qualified Domain Names. In other words, this is what ends up being the `search` value in the `/etc/resolv.conf` file.
     */
@@ -48,9 +53,9 @@ class VpcDhcpOptions protected () extends CustomResource {
     */
   val ownerId: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -64,8 +69,10 @@ object VpcDhcpOptions extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VpcDhcpOptions = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcDhcpOptions = js.native
   def get(name: String, id: Input[ID], state: VpcDhcpOptionsState): VpcDhcpOptions = js.native
   def get(name: String, id: Input[ID], state: VpcDhcpOptionsState, opts: CustomResourceOptions): VpcDhcpOptions = js.native
   /**

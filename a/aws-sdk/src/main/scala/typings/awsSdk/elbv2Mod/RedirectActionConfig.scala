@@ -34,21 +34,44 @@ trait RedirectActionConfig extends js.Object {
 
 object RedirectActionConfig {
   @scala.inline
-  def apply(
-    StatusCode: RedirectActionStatusCodeEnum,
-    Host: RedirectActionHost = null,
-    Path: RedirectActionPath = null,
-    Port: RedirectActionPort = null,
-    Protocol: RedirectActionProtocol = null,
-    Query: RedirectActionQuery = null
-  ): RedirectActionConfig = {
+  def apply(StatusCode: RedirectActionStatusCodeEnum): RedirectActionConfig = {
     val __obj = js.Dynamic.literal(StatusCode = StatusCode.asInstanceOf[js.Any])
-    if (Host != null) __obj.updateDynamic("Host")(Host.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (Query != null) __obj.updateDynamic("Query")(Query.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectActionConfig]
   }
+  @scala.inline
+  implicit class RedirectActionConfigOps[Self <: RedirectActionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatusCode(value: RedirectActionStatusCodeEnum): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHost(value: RedirectActionHost): Self = this.set("Host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("Host", js.undefined)
+    @scala.inline
+    def setPath(value: RedirectActionPath): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+    @scala.inline
+    def setPort(value: RedirectActionPort): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setProtocol(value: RedirectActionProtocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    @scala.inline
+    def setQuery(value: RedirectActionQuery): Self = this.set("Query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("Query", js.undefined)
+  }
+  
 }
 

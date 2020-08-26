@@ -26,16 +26,34 @@ trait SchemaLaunchTemplateParameters extends js.Object {
 
 object SchemaLaunchTemplateParameters {
   @scala.inline
-  def apply(
-    environment: SchemaRuntimeEnvironment = null,
-    jobName: String = null,
-    parameters: StringDictionary[String] = null
-  ): SchemaLaunchTemplateParameters = {
+  def apply(): SchemaLaunchTemplateParameters = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLaunchTemplateParameters]
   }
+  @scala.inline
+  implicit class SchemaLaunchTemplateParametersOps[Self <: SchemaLaunchTemplateParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnvironment(value: SchemaRuntimeEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("jobName", js.undefined)
+    @scala.inline
+    def setParameters(value: StringDictionary[String]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+  }
+  
 }
 

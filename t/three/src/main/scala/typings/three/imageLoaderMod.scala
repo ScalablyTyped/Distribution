@@ -17,7 +17,30 @@ object imageLoaderMod extends js.Object {
   class ImageLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     def load(url: String): HTMLImageElement = js.native
+    def load(
+      url: String,
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): HTMLImageElement = js.native
+    def load(
+      url: String,
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
+    ): HTMLImageElement = js.native
+    def load(
+      url: String,
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): HTMLImageElement = js.native
     def load(url: String, onLoad: js.Function1[/* image */ HTMLImageElement, Unit]): HTMLImageElement = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* image */ HTMLImageElement, Unit],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): HTMLImageElement = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* image */ HTMLImageElement, Unit],

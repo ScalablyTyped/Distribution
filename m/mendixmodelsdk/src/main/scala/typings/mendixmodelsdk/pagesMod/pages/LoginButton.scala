@@ -31,7 +31,7 @@ class LoginButton protected () extends Button {
   @JSName("model")
   var model_FLoginButton: IModel = js.native
   def validationMessageWidget: String = js.native
-  def validationMessageWidget(newValue: String): js.Any = js.native
+  def validationMessageWidget_=(newValue: String): Unit = js.native
 }
 
 /* static members */

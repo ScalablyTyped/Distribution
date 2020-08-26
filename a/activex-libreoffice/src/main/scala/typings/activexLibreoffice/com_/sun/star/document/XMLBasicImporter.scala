@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * should be imported. The {@link com.sun.star.xml.sax.XDocumentHandler} interface is used to stream the XML data into the filter.
   * @since OOo 2.0
   */
+@js.native
 trait XMLBasicImporter
   extends XImporter
      with XDocumentHandler

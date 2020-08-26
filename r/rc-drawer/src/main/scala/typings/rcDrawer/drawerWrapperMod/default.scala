@@ -8,14 +8,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-drawer/lib/DrawerWrapper", JSImport.Default)
+@JSImport("rc-drawer/es/DrawerWrapper", JSImport.Default)
 @js.native
 class default protected () extends DrawerWrapper {
   def this(props: IDrawerProps) = this()
 }
 
 /* static members */
-@JSImport("rc-drawer/lib/DrawerWrapper", JSImport.Default)
+@JSImport("rc-drawer/es/DrawerWrapper", JSImport.Default)
 @js.native
 object default extends js.Object {
   var defaultProps: AfterVisibleChange = js.native

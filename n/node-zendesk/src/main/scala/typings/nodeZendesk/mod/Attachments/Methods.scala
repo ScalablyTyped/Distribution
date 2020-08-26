@@ -7,19 +7,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Methods extends js.Object {
-  def request(httpMethod: String, fields: js.Any, config: js.Any, cb: ZendeskCallback[_, _]): js.Any
-  def upload(file: PathLike, fileOptions: Filename, cb: ZendeskCallback[_, _]): Unit
-}
-
-object Methods {
-  @scala.inline
-  def apply(
-    request: (String, js.Any, js.Any, ZendeskCallback[_, _]) => js.Any,
-    upload: (PathLike, Filename, ZendeskCallback[_, _]) => Unit
-  ): Methods = {
-    val __obj = js.Dynamic.literal(request = js.Any.fromFunction4(request), upload = js.Any.fromFunction3(upload))
-    __obj.asInstanceOf[Methods]
-  }
+  def request(httpMethod: String, fields: js.Any, config: js.Any): js.Promise[_] = js.native
+  def request(httpMethod: String, fields: js.Any, config: js.Any, cb: ZendeskCallback[_, _]): js.Any = js.native
+  def upload(file: PathLike, fileOptions: Filename): js.Promise[Unit] = js.native
+  def upload(file: PathLike, fileOptions: Filename, cb: ZendeskCallback[_, _]): Unit = js.native
 }
 

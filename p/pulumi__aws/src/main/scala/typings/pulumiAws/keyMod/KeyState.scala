@@ -49,37 +49,69 @@ trait KeyState extends js.Object {
     */
   val policy: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the object.
+    * A map of tags to assign to the object.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object KeyState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    customerMasterKeySpec: Input[String] = null,
-    deletionWindowInDays: Input[Double] = null,
-    description: Input[String] = null,
-    enableKeyRotation: Input[Boolean] = null,
-    isEnabled: Input[Boolean] = null,
-    keyId: Input[String] = null,
-    keyUsage: Input[String] = null,
-    policy: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): KeyState = {
+  def apply(): KeyState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (customerMasterKeySpec != null) __obj.updateDynamic("customerMasterKeySpec")(customerMasterKeySpec.asInstanceOf[js.Any])
-    if (deletionWindowInDays != null) __obj.updateDynamic("deletionWindowInDays")(deletionWindowInDays.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (enableKeyRotation != null) __obj.updateDynamic("enableKeyRotation")(enableKeyRotation.asInstanceOf[js.Any])
-    if (isEnabled != null) __obj.updateDynamic("isEnabled")(isEnabled.asInstanceOf[js.Any])
-    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
-    if (keyUsage != null) __obj.updateDynamic("keyUsage")(keyUsage.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyState]
   }
+  @scala.inline
+  implicit class KeyStateOps[Self <: KeyState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCustomerMasterKeySpec(value: Input[String]): Self = this.set("customerMasterKeySpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerMasterKeySpec: Self = this.set("customerMasterKeySpec", js.undefined)
+    @scala.inline
+    def setDeletionWindowInDays(value: Input[Double]): Self = this.set("deletionWindowInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionWindowInDays: Self = this.set("deletionWindowInDays", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnableKeyRotation(value: Input[Boolean]): Self = this.set("enableKeyRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableKeyRotation: Self = this.set("enableKeyRotation", js.undefined)
+    @scala.inline
+    def setIsEnabled(value: Input[Boolean]): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
+    @scala.inline
+    def setKeyId(value: Input[String]): Self = this.set("keyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("keyId", js.undefined)
+    @scala.inline
+    def setKeyUsage(value: Input[String]): Self = this.set("keyUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyUsage: Self = this.set("keyUsage", js.undefined)
+    @scala.inline
+    def setPolicy(value: Input[String]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

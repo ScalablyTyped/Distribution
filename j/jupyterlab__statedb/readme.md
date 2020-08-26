@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__statedb
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 Package for managing state in Jupyterlab
@@ -10,9 +10,9 @@ Package for managing state in Jupyterlab
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/statedb |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 15 |
-| # downloads        | 5542 |
+| # releases         | 24 |
+| # dependents       | 30 |
+| # downloads        | 380952 |
 | # stars            | 0 |
 
 ## Links

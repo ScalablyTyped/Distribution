@@ -1,6 +1,5 @@
 package typings.nodeRsa.mod
 
-import typings.node.Buffer
 import typings.nodeRsa.nodeRsaStrings.pkcs1
 import typings.nodeRsa.nodeRsaStrings.pkcs1_oaep
 import scala.scalajs.js
@@ -20,13 +19,8 @@ object AdvancedEncryptionScheme {
     __obj.asInstanceOf[AdvancedEncryptionScheme]
   }
   @scala.inline
-  def AdvancedEncryptionSchemePKCS1OAEP(
-    hash: HashingAlgorithm,
-    scheme: pkcs1_oaep,
-    mgf: (/* data */ Buffer, /* length */ Double, /* hash */ HashingAlgorithm) => Buffer = null
-  ): AdvancedEncryptionScheme = {
+  def AdvancedEncryptionSchemePKCS1OAEP(hash: HashingAlgorithm, scheme: pkcs1_oaep): AdvancedEncryptionScheme = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
-    if (mgf != null) __obj.updateDynamic("mgf")(js.Any.fromFunction3(mgf))
     __obj.asInstanceOf[AdvancedEncryptionScheme]
   }
 }

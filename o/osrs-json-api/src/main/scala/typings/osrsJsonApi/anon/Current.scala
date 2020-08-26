@@ -5,20 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Current extends js.Object {
-  var current: TrendPriceObject
-  var day180: TrendPriceObject
-  var day30: TrendPriceObject
-  var day90: TrendPriceObject
-  var description: String
-  var icon: String
-  var icon_large: String
-  var id: Double
-  var members: Boolean
-  var name: String
-  var today: TrendPriceObject
-  var `type`: String
-  var typeIcon: String
+  var current: TrendPriceObject = js.native
+  var day180: TrendPriceObject = js.native
+  var day30: TrendPriceObject = js.native
+  var day90: TrendPriceObject = js.native
+  var description: String = js.native
+  var icon: String = js.native
+  var icon_large: String = js.native
+  var id: Double = js.native
+  var members: Boolean = js.native
+  var name: String = js.native
+  var today: TrendPriceObject = js.native
+  var `type`: String = js.native
+  var typeIcon: String = js.native
 }
 
 object Current {
@@ -42,5 +43,44 @@ object Current {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Current]
   }
+  @scala.inline
+  implicit class CurrentOps[Self <: Current] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrent(value: TrendPriceObject): Self = this.set("current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDay180(value: TrendPriceObject): Self = this.set("day180", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDay30(value: TrendPriceObject): Self = this.set("day30", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDay90(value: TrendPriceObject): Self = this.set("day90", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIcon_large(value: String): Self = this.set("icon_large", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMembers(value: Boolean): Self = this.set("members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToday(value: TrendPriceObject): Self = this.set("today", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeIcon(value: String): Self = this.set("typeIcon", value.asInstanceOf[js.Any])
+  }
+  
 }
 

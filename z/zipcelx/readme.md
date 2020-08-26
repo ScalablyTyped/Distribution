@@ -12,7 +12,7 @@ JSON Transformer to create .xlsx files
 | Keywords           | JSON, Excel, xlsx |
 | # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 56166 |
+| # downloads        | 59590 |
 | # stars            | 0 |
 
 ## Links

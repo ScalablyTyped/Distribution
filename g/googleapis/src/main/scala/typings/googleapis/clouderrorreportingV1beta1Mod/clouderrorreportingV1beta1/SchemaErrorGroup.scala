@@ -27,12 +27,36 @@ trait SchemaErrorGroup extends js.Object {
 
 object SchemaErrorGroup {
   @scala.inline
-  def apply(groupId: String = null, name: String = null, trackingIssues: js.Array[SchemaTrackingIssue] = null): SchemaErrorGroup = {
+  def apply(): SchemaErrorGroup = {
     val __obj = js.Dynamic.literal()
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (trackingIssues != null) __obj.updateDynamic("trackingIssues")(trackingIssues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaErrorGroup]
   }
+  @scala.inline
+  implicit class SchemaErrorGroupOps[Self <: SchemaErrorGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTrackingIssuesVarargs(value: SchemaTrackingIssue*): Self = this.set("trackingIssues", js.Array(value :_*))
+    @scala.inline
+    def setTrackingIssues(value: js.Array[SchemaTrackingIssue]): Self = this.set("trackingIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingIssues: Self = this.set("trackingIssues", js.undefined)
+  }
+  
 }
 

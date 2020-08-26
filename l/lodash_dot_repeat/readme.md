@@ -11,8 +11,8 @@ The lodash method `_.repeat` exported as a module.
 | Full name          | lodash.repeat |
 | Keywords           | lodash-modularized, repeat |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 7044942 |
+| # dependents       | 21 |
+| # downloads        | 6964021 |
 | # stars            | 0 |
 
 ## Links

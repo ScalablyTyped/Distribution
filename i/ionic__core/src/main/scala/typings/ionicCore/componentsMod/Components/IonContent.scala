@@ -56,10 +56,16 @@ trait IonContent extends js.Object {
     * @param duration The amount of time to take scrolling to that point. Defaults to `0`.
     */
   def scrollToPoint(): js.Promise[Unit] = js.native
+  def scrollToPoint(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], duration: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: js.UndefOr[scala.Nothing], y: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: js.UndefOr[scala.Nothing], y: Double, duration: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: js.UndefOr[scala.Nothing], y: Null, duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: Double, y: js.UndefOr[scala.Nothing], duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Double, y: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Double, y: Double, duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Double, y: Null, duration: Double): js.Promise[Unit] = js.native
+  def scrollToPoint(x: Null, y: js.UndefOr[scala.Nothing], duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Null, y: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Null, y: Double, duration: Double): js.Promise[Unit] = js.native
   def scrollToPoint(x: Null, y: Null, duration: Double): js.Promise[Unit] = js.native

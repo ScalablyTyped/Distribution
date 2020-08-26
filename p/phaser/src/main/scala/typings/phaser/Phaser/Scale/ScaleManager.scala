@@ -329,6 +329,7 @@ trait ScaleManager extends EventEmitter {
     * @param previousHeight The previous height of the game. Only set if the gameSize has changed.
     */
   def refresh(): this.type = js.native
+  def refresh(previousWidth: js.UndefOr[scala.Nothing], previousHeight: Double): this.type = js.native
   def refresh(previousWidth: Double): this.type = js.native
   def refresh(previousWidth: Double, previousHeight: Double): this.type = js.native
   /**

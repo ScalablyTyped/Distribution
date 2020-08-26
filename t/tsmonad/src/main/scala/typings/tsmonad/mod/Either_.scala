@@ -11,6 +11,7 @@ class Either_[L, R] protected ()
   def this(`type`: typings.tsmonad.eitherMod.EitherType) = this()
   def this(`type`: typings.tsmonad.eitherMod.EitherType, l: L) = this()
   def this(`type`: typings.tsmonad.eitherMod.EitherType, l: L, r: R) = this()
+  def this(`type`: typings.tsmonad.eitherMod.EitherType, l: js.UndefOr[scala.Nothing], r: R) = this()
 }
 
 /* static members */

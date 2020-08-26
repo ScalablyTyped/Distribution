@@ -8,11 +8,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IssuesRemoveAllLabelsRequestOptions extends js.Object {
-  var headers: RequestHeaders
-  var method: DELETE
-  var request: RequestRequestOptions
-  var url: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels
+  var headers: RequestHeaders = js.native
+  var method: DELETE = js.native
+  var request: RequestRequestOptions = js.native
+  var url: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels = js.native
 }
 
 object IssuesRemoveAllLabelsRequestOptions {
@@ -26,5 +27,26 @@ object IssuesRemoveAllLabelsRequestOptions {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesRemoveAllLabelsRequestOptions]
   }
+  @scala.inline
+  implicit class IssuesRemoveAllLabelsRequestOptionsOps[Self <: IssuesRemoveAllLabelsRequestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeaders(value: RequestHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMethod(value: DELETE): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequest(value: RequestRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels): Self = this.set("url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

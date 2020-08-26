@@ -14,9 +14,6 @@ class HttpMethod protected ()
     * @param method The HTTP method.
     */
   def this(method: String) = this()
-  /** Gets the HTTP method. */
-  /* CompleteClass */
-  override var method: String = js.native
 }
 
 /* static members */

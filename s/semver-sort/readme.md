@@ -12,7 +12,7 @@ Sort array of semver string even which is exist in a strings.
 | Keywords           | sort, semver, sort semver |
 | # releases         | 0 |
 | # dependents       | 26 |
-| # downloads        | 173433 |
+| # downloads        | 177747 |
 | # stars            | 0 |
 
 ## Links

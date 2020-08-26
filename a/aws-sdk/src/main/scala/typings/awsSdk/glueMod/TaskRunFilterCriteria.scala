@@ -26,18 +26,38 @@ trait TaskRunFilterCriteria extends js.Object {
 
 object TaskRunFilterCriteria {
   @scala.inline
-  def apply(
-    StartedAfter: Timestamp = null,
-    StartedBefore: Timestamp = null,
-    Status: TaskStatusType = null,
-    TaskRunType: TaskType = null
-  ): TaskRunFilterCriteria = {
+  def apply(): TaskRunFilterCriteria = {
     val __obj = js.Dynamic.literal()
-    if (StartedAfter != null) __obj.updateDynamic("StartedAfter")(StartedAfter.asInstanceOf[js.Any])
-    if (StartedBefore != null) __obj.updateDynamic("StartedBefore")(StartedBefore.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TaskRunType != null) __obj.updateDynamic("TaskRunType")(TaskRunType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskRunFilterCriteria]
   }
+  @scala.inline
+  implicit class TaskRunFilterCriteriaOps[Self <: TaskRunFilterCriteria] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStartedAfter(value: Timestamp): Self = this.set("StartedAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedAfter: Self = this.set("StartedAfter", js.undefined)
+    @scala.inline
+    def setStartedBefore(value: Timestamp): Self = this.set("StartedBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedBefore: Self = this.set("StartedBefore", js.undefined)
+    @scala.inline
+    def setStatus(value: TaskStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTaskRunType(value: TaskType): Self = this.set("TaskRunType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskRunType: Self = this.set("TaskRunType", js.undefined)
+  }
+  
 }
 

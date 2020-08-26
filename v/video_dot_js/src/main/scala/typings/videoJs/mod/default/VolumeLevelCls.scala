@@ -29,6 +29,11 @@ class VolumeLevelCls protected ()
     */
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: ComponentOptions) = this()
+  def this(
+    player: typings.videoJs.mod.videojs.Player,
+    options: js.UndefOr[scala.Nothing],
+    ready: ReadyCallback
+  ) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: ComponentOptions, ready: ReadyCallback) = this()
 }
 

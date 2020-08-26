@@ -10,9 +10,9 @@ REST framework
 | ------------------ | :-------------: |
 | Full name          | restify |
 | Keywords           | REST, framework, express, DTrace |
-| # releases         | 27 |
-| # dependents       | 769 |
-| # downloads        | 4539796 |
+| # releases         | 29 |
+| # dependents       | 770 |
+| # downloads        | 4610297 |
 | # stars            | 230 |
 
 ## Links

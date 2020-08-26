@@ -30,20 +30,42 @@ trait DescribeNamespaceResponse extends js.Object {
 
 object DescribeNamespaceResponse {
   @scala.inline
-  def apply(
-    namespaceArn: Arn = null,
-    namespaceName: NamespaceName = null,
-    namespaceVersion: js.UndefOr[Version] = js.undefined,
-    trackingNamespaceName: NamespaceName = null,
-    trackingNamespaceVersion: js.UndefOr[Version] = js.undefined
-  ): DescribeNamespaceResponse = {
+  def apply(): DescribeNamespaceResponse = {
     val __obj = js.Dynamic.literal()
-    if (namespaceArn != null) __obj.updateDynamic("namespaceArn")(namespaceArn.asInstanceOf[js.Any])
-    if (namespaceName != null) __obj.updateDynamic("namespaceName")(namespaceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaceVersion)) __obj.updateDynamic("namespaceVersion")(namespaceVersion.get.asInstanceOf[js.Any])
-    if (trackingNamespaceName != null) __obj.updateDynamic("trackingNamespaceName")(trackingNamespaceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackingNamespaceVersion)) __obj.updateDynamic("trackingNamespaceVersion")(trackingNamespaceVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNamespaceResponse]
   }
+  @scala.inline
+  implicit class DescribeNamespaceResponseOps[Self <: DescribeNamespaceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamespaceArn(value: Arn): Self = this.set("namespaceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceArn: Self = this.set("namespaceArn", js.undefined)
+    @scala.inline
+    def setNamespaceName(value: NamespaceName): Self = this.set("namespaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceName: Self = this.set("namespaceName", js.undefined)
+    @scala.inline
+    def setNamespaceVersion(value: Version): Self = this.set("namespaceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceVersion: Self = this.set("namespaceVersion", js.undefined)
+    @scala.inline
+    def setTrackingNamespaceName(value: NamespaceName): Self = this.set("trackingNamespaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingNamespaceName: Self = this.set("trackingNamespaceName", js.undefined)
+    @scala.inline
+    def setTrackingNamespaceVersion(value: Version): Self = this.set("trackingNamespaceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingNamespaceVersion: Self = this.set("trackingNamespaceVersion", js.undefined)
+  }
+  
 }
 

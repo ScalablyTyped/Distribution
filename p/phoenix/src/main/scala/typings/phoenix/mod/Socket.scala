@@ -16,7 +16,11 @@ class Socket protected () extends js.Object {
   def connect(params: js.Any): Unit = js.native
   def connectionState(): ConnectionState = js.native
   def disconnect(): Unit = js.native
+  def disconnect(callback: js.UndefOr[scala.Nothing], code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
+  def disconnect(callback: js.UndefOr[scala.Nothing], code: Double): Unit = js.native
+  def disconnect(callback: js.UndefOr[scala.Nothing], code: Double, reason: String): Unit = js.native
   def disconnect(callback: js.Function0[Unit]): Unit = js.native
+  def disconnect(callback: js.Function0[Unit], code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def disconnect(callback: js.Function0[Unit], code: Double): Unit = js.native
   def disconnect(callback: js.Function0[Unit], code: Double, reason: String): Unit = js.native
   def endPointURL(): String = js.native

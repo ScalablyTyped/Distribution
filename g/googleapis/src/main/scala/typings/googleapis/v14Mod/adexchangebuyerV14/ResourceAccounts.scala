@@ -27,6 +27,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAccount] = js.native
   def get(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def get(params: ParamsResourceAccountsGet): GaxiosPromise[SchemaAccount] = js.native
   def get(params: ParamsResourceAccountsGet, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def get(
@@ -53,6 +54,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAccountsList] = js.native
   def list(callback: BodyResponseCallback[SchemaAccountsList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountsList] = js.native
   def list(params: ParamsResourceAccountsList): GaxiosPromise[SchemaAccountsList] = js.native
   def list(params: ParamsResourceAccountsList, callback: BodyResponseCallback[SchemaAccountsList]): Unit = js.native
   def list(
@@ -82,6 +84,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaAccount] = js.native
   def patch(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def patch(params: ParamsResourceAccountsPatch): GaxiosPromise[SchemaAccount] = js.native
   def patch(params: ParamsResourceAccountsPatch, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def patch(
@@ -111,6 +114,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaAccount] = js.native
   def update(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def update(params: ParamsResourceAccountsUpdate): GaxiosPromise[SchemaAccount] = js.native
   def update(params: ParamsResourceAccountsUpdate, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def update(

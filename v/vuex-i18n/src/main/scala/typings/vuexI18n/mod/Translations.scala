@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Translations extends /* key */ StringDictionary[String | Translations]
 
 object Translations {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[String | Translations] = null): Translations = {
+  def apply(): Translations = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Translations]
   }
 }

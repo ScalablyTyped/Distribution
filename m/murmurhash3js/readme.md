@@ -12,7 +12,7 @@ A javascript implementation of MurmurHash3's x86 hashing algorithms.(Browser&Ser
 | Keywords           | murmurhash3, hash |
 | # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 1422349 |
+| # downloads        | 1451941 |
 | # stars            | 1 |
 
 ## Links

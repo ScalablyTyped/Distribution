@@ -181,6 +181,7 @@ trait XDate extends js.Object {
     */
   def toDateString(): String = js.native
   def toGMTString(): String = js.native
+  def toGMTString(formatString: js.UndefOr[scala.Nothing], settings: js.Object): String = js.native
   def toGMTString(formatString: String): String = js.native
   def toGMTString(formatString: String, settings: js.Object): String = js.native
   /*
@@ -196,6 +197,7 @@ trait XDate extends js.Object {
     *Same as native Date's toLocaleTimeString
     */
   def toLocaleTimeString(): String = js.native
+  def toString(formatString: js.UndefOr[scala.Nothing], settings: js.Object): String = js.native
   def toString(formatString: String): String = js.native
   def toString(formatString: String, settings: js.Object): String = js.native
   /*
@@ -207,6 +209,7 @@ trait XDate extends js.Object {
     *As a result, "Z" will be displayed as the timezone.
     */
   def toUTCString(): String = js.native
+  def toUTCString(formatString: js.UndefOr[scala.Nothing], settings: js.Object): String = js.native
   def toUTCString(formatString: String): String = js.native
   def toUTCString(formatString: String, settings: js.Object): String = js.native
   /*

@@ -253,6 +253,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
     * Returns a new wrapper with a subset of the nodes of the original wrapper, according to the rules of `Array#slice`.
     */
   def slice(): this.type = js.native
+  def slice(begin: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def slice(begin: Double): this.type = js.native
   def slice(begin: Double, end: Double): this.type = js.native
   /**

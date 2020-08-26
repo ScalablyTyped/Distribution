@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class MDCGridList () extends MDCComponent[MDCGridListAdapter, default]
+  class MDCGridList () extends MDCComponent[MDCGridListAdapter]
   
   @js.native
   class MDCGridListFoundation () extends default

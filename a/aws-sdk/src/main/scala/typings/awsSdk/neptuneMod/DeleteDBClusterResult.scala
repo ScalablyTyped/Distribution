@@ -11,10 +11,26 @@ trait DeleteDBClusterResult extends js.Object {
 
 object DeleteDBClusterResult {
   @scala.inline
-  def apply(DBCluster: DBCluster = null): DeleteDBClusterResult = {
+  def apply(): DeleteDBClusterResult = {
     val __obj = js.Dynamic.literal()
-    if (DBCluster != null) __obj.updateDynamic("DBCluster")(DBCluster.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBClusterResult]
   }
+  @scala.inline
+  implicit class DeleteDBClusterResultOps[Self <: DeleteDBClusterResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBCluster(value: DBCluster): Self = this.set("DBCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBCluster: Self = this.set("DBCluster", js.undefined)
+  }
+  
 }
 

@@ -9,49 +9,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined argon2.argon2.Options & {  raw  :true} */
+/* Inlined argon2.argon2.Options & {  raw :true} */
+@js.native
 trait Optionsrawtrue extends js.Object {
-  var associatedData: js.UndefOr[Buffer] = js.undefined
-  var hashLength: js.UndefOr[Double] = js.undefined
-  var memoryCost: js.UndefOr[Double] = js.undefined
-  var parallelism: js.UndefOr[Double] = js.undefined
-  var raw: js.UndefOr[Boolean with `true`] = js.undefined
-  var salt: js.UndefOr[Buffer] = js.undefined
-  var saltLength: js.UndefOr[Double] = js.undefined
-  var secret: js.UndefOr[Buffer] = js.undefined
-  var timeCost: js.UndefOr[Double] = js.undefined
-  var `type`: js.UndefOr[`0` | `1` | `2`] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
+  var associatedData: js.UndefOr[Buffer] = js.native
+  var hashLength: js.UndefOr[Double] = js.native
+  var memoryCost: js.UndefOr[Double] = js.native
+  var parallelism: js.UndefOr[Double] = js.native
+  var raw: js.UndefOr[Boolean] with `true` = js.native
+  var salt: js.UndefOr[Buffer] = js.native
+  var saltLength: js.UndefOr[Double] = js.native
+  var secret: js.UndefOr[Buffer] = js.native
+  var timeCost: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[`0` | `1` | `2`] = js.native
+  var version: js.UndefOr[Double] = js.native
 }
 
 object Optionsrawtrue {
   @scala.inline
-  def apply(
-    associatedData: Buffer = null,
-    hashLength: js.UndefOr[Double] = js.undefined,
-    memoryCost: js.UndefOr[Double] = js.undefined,
-    parallelism: js.UndefOr[Double] = js.undefined,
-    raw: js.UndefOr[Boolean with `true`] = js.undefined,
-    salt: Buffer = null,
-    saltLength: js.UndefOr[Double] = js.undefined,
-    secret: Buffer = null,
-    timeCost: js.UndefOr[Double] = js.undefined,
-    `type`: `0` | `1` | `2` = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): Optionsrawtrue = {
-    val __obj = js.Dynamic.literal()
-    if (associatedData != null) __obj.updateDynamic("associatedData")(associatedData.asInstanceOf[js.Any])
-    if (!js.isUndefined(hashLength)) __obj.updateDynamic("hashLength")(hashLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(memoryCost)) __obj.updateDynamic("memoryCost")(memoryCost.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(parallelism)) __obj.updateDynamic("parallelism")(parallelism.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
-    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
-    if (!js.isUndefined(saltLength)) __obj.updateDynamic("saltLength")(saltLength.get.asInstanceOf[js.Any])
-    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeCost)) __obj.updateDynamic("timeCost")(timeCost.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
+  def apply(raw: js.UndefOr[Boolean] with `true`): Optionsrawtrue = {
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Optionsrawtrue]
   }
+  @scala.inline
+  implicit class OptionsrawtrueOps[Self <: Optionsrawtrue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRaw(value: js.UndefOr[Boolean] with `true`): Self = this.set("raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssociatedData(value: Buffer): Self = this.set("associatedData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedData: Self = this.set("associatedData", js.undefined)
+    @scala.inline
+    def setHashLength(value: Double): Self = this.set("hashLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashLength: Self = this.set("hashLength", js.undefined)
+    @scala.inline
+    def setMemoryCost(value: Double): Self = this.set("memoryCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryCost: Self = this.set("memoryCost", js.undefined)
+    @scala.inline
+    def setParallelism(value: Double): Self = this.set("parallelism", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelism: Self = this.set("parallelism", js.undefined)
+    @scala.inline
+    def setSalt(value: Buffer): Self = this.set("salt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalt: Self = this.set("salt", js.undefined)
+    @scala.inline
+    def setSaltLength(value: Double): Self = this.set("saltLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaltLength: Self = this.set("saltLength", js.undefined)
+    @scala.inline
+    def setSecret(value: Buffer): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecret: Self = this.set("secret", js.undefined)
+    @scala.inline
+    def setTimeCost(value: Double): Self = this.set("timeCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeCost: Self = this.set("timeCost", js.undefined)
+    @scala.inline
+    def setType(value: `0` | `1` | `2`): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

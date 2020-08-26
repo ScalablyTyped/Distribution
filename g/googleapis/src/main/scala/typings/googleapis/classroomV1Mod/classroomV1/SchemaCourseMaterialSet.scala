@@ -23,11 +23,32 @@ trait SchemaCourseMaterialSet extends js.Object {
 
 object SchemaCourseMaterialSet {
   @scala.inline
-  def apply(materials: js.Array[SchemaCourseMaterial] = null, title: String = null): SchemaCourseMaterialSet = {
+  def apply(): SchemaCourseMaterialSet = {
     val __obj = js.Dynamic.literal()
-    if (materials != null) __obj.updateDynamic("materials")(materials.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCourseMaterialSet]
   }
+  @scala.inline
+  implicit class SchemaCourseMaterialSetOps[Self <: SchemaCourseMaterialSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaterialsVarargs(value: SchemaCourseMaterial*): Self = this.set("materials", js.Array(value :_*))
+    @scala.inline
+    def setMaterials(value: js.Array[SchemaCourseMaterial]): Self = this.set("materials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaterials: Self = this.set("materials", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

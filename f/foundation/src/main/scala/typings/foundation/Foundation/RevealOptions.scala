@@ -6,57 +6,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RevealOptions extends js.Object {
-  var animation: js.UndefOr[String] = js.undefined
-  var animation_speed: js.UndefOr[Double] = js.undefined
-  var bg: js.UndefOr[JQuery] = js.undefined
-  var bg_class: js.UndefOr[String] = js.undefined
-  var close: js.UndefOr[js.Function0[_]] = js.undefined
-  var close_on_background_click: js.UndefOr[Boolean] = js.undefined
-  var closed: js.UndefOr[js.Function0[_]] = js.undefined
-  var css: js.UndefOr[Close] = js.undefined
-  var dismiss_modal_class: js.UndefOr[String] = js.undefined
-  var multiple_opened: js.UndefOr[Boolean] = js.undefined
-  var on_ajax_error: js.UndefOr[js.Function0[_]] = js.undefined
-  var open: js.UndefOr[js.Function0[_]] = js.undefined
-  var opened: js.UndefOr[js.Function0[_]] = js.undefined
-  var root_element: js.UndefOr[String] = js.undefined
+  var animation: js.UndefOr[String] = js.native
+  var animation_speed: js.UndefOr[Double] = js.native
+  var bg: js.UndefOr[JQuery] = js.native
+  var bg_class: js.UndefOr[String] = js.native
+  var close: js.UndefOr[js.Function0[_]] = js.native
+  var close_on_background_click: js.UndefOr[Boolean] = js.native
+  var closed: js.UndefOr[js.Function0[_]] = js.native
+  var css: js.UndefOr[Close] = js.native
+  var dismiss_modal_class: js.UndefOr[String] = js.native
+  var multiple_opened: js.UndefOr[Boolean] = js.native
+  var on_ajax_error: js.UndefOr[js.Function0[_]] = js.native
+  var open: js.UndefOr[js.Function0[_]] = js.native
+  var opened: js.UndefOr[js.Function0[_]] = js.native
+  var root_element: js.UndefOr[String] = js.native
 }
 
 object RevealOptions {
   @scala.inline
-  def apply(
-    animation: String = null,
-    animation_speed: js.UndefOr[Double] = js.undefined,
-    bg: JQuery = null,
-    bg_class: String = null,
-    close: () => _ = null,
-    close_on_background_click: js.UndefOr[Boolean] = js.undefined,
-    closed: () => _ = null,
-    css: Close = null,
-    dismiss_modal_class: String = null,
-    multiple_opened: js.UndefOr[Boolean] = js.undefined,
-    on_ajax_error: () => _ = null,
-    open: () => _ = null,
-    opened: () => _ = null,
-    root_element: String = null
-  ): RevealOptions = {
+  def apply(): RevealOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(animation_speed)) __obj.updateDynamic("animation_speed")(animation_speed.get.asInstanceOf[js.Any])
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (bg_class != null) __obj.updateDynamic("bg_class")(bg_class.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (!js.isUndefined(close_on_background_click)) __obj.updateDynamic("close_on_background_click")(close_on_background_click.get.asInstanceOf[js.Any])
-    if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction0(closed))
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (dismiss_modal_class != null) __obj.updateDynamic("dismiss_modal_class")(dismiss_modal_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple_opened)) __obj.updateDynamic("multiple_opened")(multiple_opened.get.asInstanceOf[js.Any])
-    if (on_ajax_error != null) __obj.updateDynamic("on_ajax_error")(js.Any.fromFunction0(on_ajax_error))
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction0(open))
-    if (opened != null) __obj.updateDynamic("opened")(js.Any.fromFunction0(opened))
-    if (root_element != null) __obj.updateDynamic("root_element")(root_element.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevealOptions]
   }
+  @scala.inline
+  implicit class RevealOptionsOps[Self <: RevealOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimation_speed(value: Double): Self = this.set("animation_speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation_speed: Self = this.set("animation_speed", js.undefined)
+    @scala.inline
+    def setBg(value: JQuery): Self = this.set("bg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBg: Self = this.set("bg", js.undefined)
+    @scala.inline
+    def setBg_class(value: String): Self = this.set("bg_class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBg_class: Self = this.set("bg_class", js.undefined)
+    @scala.inline
+    def setClose(value: () => _): Self = this.set("close", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setClose_on_background_click(value: Boolean): Self = this.set("close_on_background_click", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClose_on_background_click: Self = this.set("close_on_background_click", js.undefined)
+    @scala.inline
+    def setClosed(value: () => _): Self = this.set("closed", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteClosed: Self = this.set("closed", js.undefined)
+    @scala.inline
+    def setCss(value: Close): Self = this.set("css", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCss: Self = this.set("css", js.undefined)
+    @scala.inline
+    def setDismiss_modal_class(value: String): Self = this.set("dismiss_modal_class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDismiss_modal_class: Self = this.set("dismiss_modal_class", js.undefined)
+    @scala.inline
+    def setMultiple_opened(value: Boolean): Self = this.set("multiple_opened", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple_opened: Self = this.set("multiple_opened", js.undefined)
+    @scala.inline
+    def setOn_ajax_error(value: () => _): Self = this.set("on_ajax_error", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOn_ajax_error: Self = this.set("on_ajax_error", js.undefined)
+    @scala.inline
+    def setOpen(value: () => _): Self = this.set("open", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setOpened(value: () => _): Self = this.set("opened", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOpened: Self = this.set("opened", js.undefined)
+    @scala.inline
+    def setRoot_element(value: String): Self = this.set("root_element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot_element: Self = this.set("root_element", js.undefined)
+  }
+  
 }
 

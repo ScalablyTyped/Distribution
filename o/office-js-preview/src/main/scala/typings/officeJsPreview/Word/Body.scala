@@ -201,10 +201,18 @@ trait Body extends ClientObject {
     * @param breakType Required. The break type to add to the body.
     * @param insertLocation Required. The value can be 'Start' or 'End'.
     */
-  def insertBreak(
-    breakType: Page | Next | SectionNext | SectionContinuous | SectionEven | SectionOdd | Line,
-    insertLocation: Before | After | Start | End | Replace
-  ): Unit = js.native
+  def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: Line, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: Next, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: After): Unit = js.native
   /**
     * Inserts a break at the specified location in the main document.
     *
@@ -213,7 +221,30 @@ trait Body extends ClientObject {
     * @param breakType Required. The break type to add to the body.
     * @param insertLocation Required. The value can be 'Start' or 'End'.
     */
-  def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: Page, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: SectionContinuous, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: SectionEven, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: SectionNext, insertLocation: Start): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: After): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: Before): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: End): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: Replace): Unit = js.native
+  def insertBreak(breakType: SectionOdd, insertLocation: Start): Unit = js.native
   /**
     * Wraps the body object with a Rich Text content control.
     *

@@ -1,28 +1,37 @@
 package typings.linkifyUrls.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.linkifyUrls.linkifyUrlsStrings.dom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeDomOptions extends Options {
   @JSName("type")
-  val type_TypeDomOptions: dom
+  val type_TypeDomOptions: dom = js.native
 }
 
 object TypeDomOptions {
   @scala.inline
-  def apply(
-    `type`: dom,
-    attributes: StringDictionary[String | Double | Boolean | js.Array[String]] = null,
-    value: String | (js.Function1[/* url */ String, String]) = null
-  ): TypeDomOptions = {
+  def apply(`type`: dom): TypeDomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDomOptions]
   }
+  @scala.inline
+  implicit class TypeDomOptionsOps[Self <: TypeDomOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: dom): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

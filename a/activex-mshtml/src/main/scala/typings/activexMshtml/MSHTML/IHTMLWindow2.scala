@@ -47,11 +47,43 @@ trait IHTMLWindow2 extends js.Object {
   val window_Original: IHTMLWindow2 = js.native
   def apply(pvarIndex: js.Any): js.Any = js.native
   def Image(): IHTMLImgElement = js.native
+  def Image(width: js.UndefOr[scala.Nothing], height: js.Any): IHTMLImgElement = js.native
   def Image(width: js.Any): IHTMLImgElement = js.native
   def Image(width: js.Any, height: js.Any): IHTMLImgElement = js.native
   def Option(): IHTMLOptionElement = js.native
+  def Option(
+    text: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    defaultSelected: js.UndefOr[scala.Nothing],
+    selected: js.Any
+  ): IHTMLOptionElement = js.native
+  def Option(text: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], defaultSelected: js.Any): IHTMLOptionElement = js.native
+  def Option(
+    text: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    defaultSelected: js.Any,
+    selected: js.Any
+  ): IHTMLOptionElement = js.native
+  def Option(text: js.UndefOr[scala.Nothing], value: js.Any): IHTMLOptionElement = js.native
+  def Option(
+    text: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    defaultSelected: js.UndefOr[scala.Nothing],
+    selected: js.Any
+  ): IHTMLOptionElement = js.native
+  def Option(text: js.UndefOr[scala.Nothing], value: js.Any, defaultSelected: js.Any): IHTMLOptionElement = js.native
+  def Option(text: js.UndefOr[scala.Nothing], value: js.Any, defaultSelected: js.Any, selected: js.Any): IHTMLOptionElement = js.native
   def Option(text: js.Any): IHTMLOptionElement = js.native
+  def Option(
+    text: js.Any,
+    value: js.UndefOr[scala.Nothing],
+    defaultSelected: js.UndefOr[scala.Nothing],
+    selected: js.Any
+  ): IHTMLOptionElement = js.native
+  def Option(text: js.Any, value: js.UndefOr[scala.Nothing], defaultSelected: js.Any): IHTMLOptionElement = js.native
+  def Option(text: js.Any, value: js.UndefOr[scala.Nothing], defaultSelected: js.Any, selected: js.Any): IHTMLOptionElement = js.native
   def Option(text: js.Any, value: js.Any): IHTMLOptionElement = js.native
+  def Option(text: js.Any, value: js.Any, defaultSelected: js.UndefOr[scala.Nothing], selected: js.Any): IHTMLOptionElement = js.native
   def Option(text: js.Any, value: js.Any, defaultSelected: js.Any): IHTMLOptionElement = js.native
   def Option(text: js.Any, value: js.Any, defaultSelected: js.Any, selected: js.Any): IHTMLOptionElement = js.native
   /** @param message [message=''] */
@@ -80,8 +112,39 @@ trait IHTMLWindow2 extends js.Object {
     * @param replace [replace=false]
     */
   def open(): IHTMLWindow2 = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    features: js.UndefOr[scala.Nothing],
+    replace: Boolean
+  ): IHTMLWindow2 = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: String): IHTMLWindow2 = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    features: String,
+    replace: Boolean
+  ): IHTMLWindow2 = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: String): IHTMLWindow2 = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: String,
+    features: js.UndefOr[scala.Nothing],
+    replace: Boolean
+  ): IHTMLWindow2 = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: String, features: String): IHTMLWindow2 = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: String, features: String, replace: Boolean): IHTMLWindow2 = js.native
   def open(url: String): IHTMLWindow2 = js.native
+  def open(
+    url: String,
+    name: js.UndefOr[scala.Nothing],
+    features: js.UndefOr[scala.Nothing],
+    replace: Boolean
+  ): IHTMLWindow2 = js.native
+  def open(url: String, name: js.UndefOr[scala.Nothing], features: String): IHTMLWindow2 = js.native
+  def open(url: String, name: js.UndefOr[scala.Nothing], features: String, replace: Boolean): IHTMLWindow2 = js.native
   def open(url: String, name: String): IHTMLWindow2 = js.native
+  def open(url: String, name: String, features: js.UndefOr[scala.Nothing], replace: Boolean): IHTMLWindow2 = js.native
   def open(url: String, name: String, features: String): IHTMLWindow2 = js.native
   def open(url: String, name: String, features: String, replace: Boolean): IHTMLWindow2 = js.native
   def parent(pvarIndex: js.Any): js.Any = js.native
@@ -90,6 +153,7 @@ trait IHTMLWindow2 extends js.Object {
     * @param defstr [defstr='undefined']
     */
   def prompt(): js.Any = js.native
+  def prompt(message: js.UndefOr[scala.Nothing], defstr: String): js.Any = js.native
   def prompt(message: String): js.Any = js.native
   def prompt(message: String, defstr: String): js.Any = js.native
   def resizeBy(x: Double, y: Double): Unit = js.native
@@ -106,6 +170,7 @@ trait IHTMLWindow2 extends js.Object {
   def showHelp(helpURL: String, helpArg: js.Any): Unit = js.native
   def showHelp(helpURL: String, helpArg: js.Any, features: String): Unit = js.native
   def showModalDialog(dialog: String): js.Any = js.native
+  def showModalDialog(dialog: String, varArgIn: js.UndefOr[scala.Nothing], varOptions: js.Any): js.Any = js.native
   def showModalDialog(dialog: String, varArgIn: js.Any): js.Any = js.native
   def showModalDialog(dialog: String, varArgIn: js.Any, varOptions: js.Any): js.Any = js.native
   def top(pvarIndex: js.Any): js.Any = js.native

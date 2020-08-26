@@ -244,6 +244,7 @@ trait ChaiJQueryStatic extends js.Object {
     * @param message The message to send out.
     */
   def error(message: js.Any): ChaiJQuery = js.native
+  def extend(deep: Boolean, target: js.Any, object1: js.UndefOr[scala.Nothing], objectN: js.Any*): js.Any = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     *
@@ -252,8 +253,8 @@ trait ChaiJQueryStatic extends js.Object {
     * @param object1 An object containing additional properties to merge in.
     * @param objectN Additional objects containing properties to merge in.
     */
-  def extend(deep: Boolean, target: js.Any): js.Any = js.native
   def extend(deep: Boolean, target: js.Any, object1: js.Any, objectN: js.Any*): js.Any = js.native
+  def extend(target: js.Any, object1: js.UndefOr[scala.Nothing], objectN: js.Any*): js.Any = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     *
@@ -261,7 +262,6 @@ trait ChaiJQueryStatic extends js.Object {
     * @param object1 An object containing additional properties to merge in.
     * @param objectN Additional objects containing properties to merge in.
     */
-  def extend(target: js.Any): js.Any = js.native
   def extend(target: js.Any, object1: js.Any, objectN: js.Any*): js.Any = js.native
   /**
     * Load data from the server using a HTTP GET request.
@@ -271,7 +271,20 @@ trait ChaiJQueryStatic extends js.Object {
     * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, or html).
     */
   def get(url: String): JQueryXHR = js.native
+  def get(url: String, data: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], dataType: String): JQueryXHR = js.native
+  def get(
+    url: String,
+    data: js.UndefOr[scala.Nothing],
+    success: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ JQueryXHR, _]
+  ): JQueryXHR = js.native
+  def get(
+    url: String,
+    data: js.UndefOr[scala.Nothing],
+    success: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ JQueryXHR, _],
+    dataType: String
+  ): JQueryXHR = js.native
   def get(url: String, data: String): JQueryXHR = js.native
+  def get(url: String, data: String, success: js.UndefOr[scala.Nothing], dataType: String): JQueryXHR = js.native
   def get(
     url: String,
     data: String,
@@ -284,6 +297,7 @@ trait ChaiJQueryStatic extends js.Object {
     dataType: String
   ): JQueryXHR = js.native
   def get(url: String, data: js.Object): JQueryXHR = js.native
+  def get(url: String, data: js.Object, success: js.UndefOr[scala.Nothing], dataType: String): JQueryXHR = js.native
   def get(
     url: String,
     data: js.Object,
@@ -295,6 +309,7 @@ trait ChaiJQueryStatic extends js.Object {
     success: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ JQueryXHR, _],
     dataType: String
   ): JQueryXHR = js.native
+  def get(url: String, success: js.UndefOr[scala.Nothing], dataType: String): JQueryXHR = js.native
   def get(
     url: String,
     success: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ JQueryXHR, _]
@@ -311,6 +326,11 @@ trait ChaiJQueryStatic extends js.Object {
     * @param success A callback function that is executed if the request succeeds.
     */
   def getJSON(url: String): JQueryXHR = js.native
+  def getJSON(
+    url: String,
+    data: js.UndefOr[scala.Nothing],
+    success: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ JQueryXHR, _]
+  ): JQueryXHR = js.native
   def getJSON(url: String, data: String): JQueryXHR = js.native
   def getJSON(
     url: String,
@@ -475,6 +495,7 @@ trait ChaiJQueryStatic extends js.Object {
     * @param keepScripts A Boolean indicating whether to include scripts passed in the HTML string
     */
   def parseHTML(data: String): js.Array[_] = js.native
+  def parseHTML(data: String, context: js.UndefOr[scala.Nothing], keepScripts: Boolean): js.Array[_] = js.native
   def parseHTML(data: String, context: Document): js.Array[_] = js.native
   def parseHTML(data: String, context: Document, keepScripts: Boolean): js.Array[_] = js.native
   def parseHTML(data: String, context: HTMLElement): js.Array[_] = js.native
@@ -499,7 +520,20 @@ trait ChaiJQueryStatic extends js.Object {
     * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
     */
   def post(url: String): JQueryXHR = js.native
+  def post(url: String, data: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], dataType: String): JQueryXHR = js.native
+  def post(
+    url: String,
+    data: js.UndefOr[scala.Nothing],
+    success: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ JQueryXHR, _]
+  ): JQueryXHR = js.native
+  def post(
+    url: String,
+    data: js.UndefOr[scala.Nothing],
+    success: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ JQueryXHR, _],
+    dataType: String
+  ): JQueryXHR = js.native
   def post(url: String, data: String): JQueryXHR = js.native
+  def post(url: String, data: String, success: js.UndefOr[scala.Nothing], dataType: String): JQueryXHR = js.native
   def post(
     url: String,
     data: String,
@@ -512,6 +546,7 @@ trait ChaiJQueryStatic extends js.Object {
     dataType: String
   ): JQueryXHR = js.native
   def post(url: String, data: js.Object): JQueryXHR = js.native
+  def post(url: String, data: js.Object, success: js.UndefOr[scala.Nothing], dataType: String): JQueryXHR = js.native
   def post(
     url: String,
     data: js.Object,
@@ -523,6 +558,7 @@ trait ChaiJQueryStatic extends js.Object {
     success: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ JQueryXHR, _],
     dataType: String
   ): JQueryXHR = js.native
+  def post(url: String, success: js.UndefOr[scala.Nothing], dataType: String): JQueryXHR = js.native
   def post(
     url: String,
     success: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ JQueryXHR, _]

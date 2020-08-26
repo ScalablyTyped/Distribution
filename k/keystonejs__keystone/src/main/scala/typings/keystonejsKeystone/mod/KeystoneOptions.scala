@@ -7,50 +7,87 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeystoneOptions extends js.Object {
-  var adapter: BaseKeystoneAdapter
-  var adapters: js.UndefOr[StringDictionary[BaseKeystoneAdapter]] = js.undefined
-  var cookieMaxAge: js.UndefOr[Double] = js.undefined
-  var cookieSecret: js.UndefOr[String] = js.undefined
-  var defaultAcces: js.UndefOr[Field] = js.undefined
-  var defaultAdapter: js.UndefOr[String] = js.undefined
-  var name: String
-  var onConnect: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var queryLimits: js.UndefOr[MaxTotalResults] = js.undefined
+  var adapter: BaseKeystoneAdapter = js.native
+  var adapters: js.UndefOr[StringDictionary[BaseKeystoneAdapter]] = js.native
+  var cookieMaxAge: js.UndefOr[Double] = js.native
+  var cookieSecret: js.UndefOr[String] = js.native
+  var defaultAcces: js.UndefOr[Field] = js.native
+  var defaultAdapter: js.UndefOr[String] = js.native
+  var name: String = js.native
+  var onConnect: js.UndefOr[js.Function0[Unit]] = js.native
+  var queryLimits: js.UndefOr[MaxTotalResults] = js.native
    // TODO: bring in express session types
-  var schemaNames: js.UndefOr[js.Array[String]] = js.undefined
-  var secureCookies: js.UndefOr[Boolean] = js.undefined
-  var sessionStore: js.UndefOr[js.Any] = js.undefined
+  var schemaNames: js.UndefOr[js.Array[String]] = js.native
+  var secureCookies: js.UndefOr[Boolean] = js.native
+  var sessionStore: js.UndefOr[js.Any] = js.native
 }
 
 object KeystoneOptions {
   @scala.inline
-  def apply(
-    adapter: BaseKeystoneAdapter,
-    name: String,
-    adapters: StringDictionary[BaseKeystoneAdapter] = null,
-    cookieMaxAge: js.UndefOr[Double] = js.undefined,
-    cookieSecret: String = null,
-    defaultAcces: Field = null,
-    defaultAdapter: String = null,
-    onConnect: () => Unit = null,
-    queryLimits: MaxTotalResults = null,
-    schemaNames: js.Array[String] = null,
-    secureCookies: js.UndefOr[Boolean] = js.undefined,
-    sessionStore: js.Any = null
-  ): KeystoneOptions = {
+  def apply(adapter: BaseKeystoneAdapter, name: String): KeystoneOptions = {
     val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (adapters != null) __obj.updateDynamic("adapters")(adapters.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookieMaxAge)) __obj.updateDynamic("cookieMaxAge")(cookieMaxAge.get.asInstanceOf[js.Any])
-    if (cookieSecret != null) __obj.updateDynamic("cookieSecret")(cookieSecret.asInstanceOf[js.Any])
-    if (defaultAcces != null) __obj.updateDynamic("defaultAcces")(defaultAcces.asInstanceOf[js.Any])
-    if (defaultAdapter != null) __obj.updateDynamic("defaultAdapter")(defaultAdapter.asInstanceOf[js.Any])
-    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction0(onConnect))
-    if (queryLimits != null) __obj.updateDynamic("queryLimits")(queryLimits.asInstanceOf[js.Any])
-    if (schemaNames != null) __obj.updateDynamic("schemaNames")(schemaNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureCookies)) __obj.updateDynamic("secureCookies")(secureCookies.get.asInstanceOf[js.Any])
-    if (sessionStore != null) __obj.updateDynamic("sessionStore")(sessionStore.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeystoneOptions]
   }
+  @scala.inline
+  implicit class KeystoneOptionsOps[Self <: KeystoneOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdapter(value: BaseKeystoneAdapter): Self = this.set("adapter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdapters(value: StringDictionary[BaseKeystoneAdapter]): Self = this.set("adapters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdapters: Self = this.set("adapters", js.undefined)
+    @scala.inline
+    def setCookieMaxAge(value: Double): Self = this.set("cookieMaxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieMaxAge: Self = this.set("cookieMaxAge", js.undefined)
+    @scala.inline
+    def setCookieSecret(value: String): Self = this.set("cookieSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieSecret: Self = this.set("cookieSecret", js.undefined)
+    @scala.inline
+    def setDefaultAcces(value: Field): Self = this.set("defaultAcces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAcces: Self = this.set("defaultAcces", js.undefined)
+    @scala.inline
+    def setDefaultAdapter(value: String): Self = this.set("defaultAdapter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAdapter: Self = this.set("defaultAdapter", js.undefined)
+    @scala.inline
+    def setOnConnect(value: () => Unit): Self = this.set("onConnect", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnConnect: Self = this.set("onConnect", js.undefined)
+    @scala.inline
+    def setQueryLimits(value: MaxTotalResults): Self = this.set("queryLimits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryLimits: Self = this.set("queryLimits", js.undefined)
+    @scala.inline
+    def setSchemaNamesVarargs(value: String*): Self = this.set("schemaNames", js.Array(value :_*))
+    @scala.inline
+    def setSchemaNames(value: js.Array[String]): Self = this.set("schemaNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaNames: Self = this.set("schemaNames", js.undefined)
+    @scala.inline
+    def setSecureCookies(value: Boolean): Self = this.set("secureCookies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecureCookies: Self = this.set("secureCookies", js.undefined)
+    @scala.inline
+    def setSessionStore(value: js.Any): Self = this.set("sessionStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionStore: Self = this.set("sessionStore", js.undefined)
+  }
+  
 }
 

@@ -1,30 +1,31 @@
 package typings.nivoAxes
 
+import typings.nivoAxes.mod.Orient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object nivoAxesStrings {
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom extends Orient
   
   @js.native
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left extends Orient
   
   @js.native
   sealed trait middle extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right extends Orient
   
   @js.native
   sealed trait start extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top extends Orient
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

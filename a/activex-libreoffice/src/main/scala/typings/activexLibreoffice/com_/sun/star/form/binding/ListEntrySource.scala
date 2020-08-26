@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** defines a component which provides a list of string entries */
+@js.native
 trait ListEntrySource
   extends XListEntrySource
      with XComponent

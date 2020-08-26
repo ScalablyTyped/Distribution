@@ -27,6 +27,7 @@ trait List[T] extends Collection[T] {
     * @returns T
     */
   def splice(index: Double): js.Array[T] = js.native
+  def splice(index: Double, count: js.UndefOr[scala.Nothing], `object`: js.Any): js.Array[T] = js.native
   def splice(index: Double, count: Double): js.Array[T] = js.native
   def splice(index: Double, count: Double, `object`: js.Any): js.Array[T] = js.native
   def unshift(`object`: T*): Double = js.native

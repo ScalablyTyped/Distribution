@@ -4,28 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JsenSettings extends js.Object {
-  var formats: js.UndefOr[JsenFormats] = js.undefined
-  var greedy: js.UndefOr[Boolean] = js.undefined
+  var formats: js.UndefOr[JsenFormats] = js.native
+  var greedy: js.UndefOr[Boolean] = js.native
   @JSName("missing$Ref")
-  var missing$Ref: js.UndefOr[Boolean] = js.undefined
-  var schemas: js.UndefOr[js.Any] = js.undefined
+  var missing$Ref: js.UndefOr[Boolean] = js.native
+  var schemas: js.UndefOr[js.Any] = js.native
 }
 
 object JsenSettings {
   @scala.inline
-  def apply(
-    formats: JsenFormats = null,
-    greedy: js.UndefOr[Boolean] = js.undefined,
-    missing$Ref: js.UndefOr[Boolean] = js.undefined,
-    schemas: js.Any = null
-  ): JsenSettings = {
+  def apply(): JsenSettings = {
     val __obj = js.Dynamic.literal()
-    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(missing$Ref)) __obj.updateDynamic("missing$Ref")(missing$Ref.get.asInstanceOf[js.Any])
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsenSettings]
   }
+  @scala.inline
+  implicit class JsenSettingsOps[Self <: JsenSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormats(value: JsenFormats): Self = this.set("formats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormats: Self = this.set("formats", js.undefined)
+    @scala.inline
+    def setGreedy(value: Boolean): Self = this.set("greedy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreedy: Self = this.set("greedy", js.undefined)
+    @scala.inline
+    def setMissing$Ref(value: Boolean): Self = this.set("missing$Ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissing$Ref: Self = this.set("missing$Ref", js.undefined)
+    @scala.inline
+    def setSchemas(value: js.Any): Self = this.set("schemas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemas: Self = this.set("schemas", js.undefined)
+  }
+  
 }
 

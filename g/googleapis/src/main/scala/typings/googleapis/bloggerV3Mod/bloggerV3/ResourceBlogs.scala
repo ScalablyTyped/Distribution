@@ -29,6 +29,7 @@ class ResourceBlogs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaBlog] = js.native
   def get(callback: BodyResponseCallback[SchemaBlog]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBlog] = js.native
   def get(params: ParamsResourceBlogsGet): GaxiosPromise[SchemaBlog] = js.native
   def get(params: ParamsResourceBlogsGet, callback: BodyResponseCallback[SchemaBlog]): Unit = js.native
   def get(
@@ -53,6 +54,7 @@ class ResourceBlogs protected () extends js.Object {
     */
   def getByUrl(): GaxiosPromise[SchemaBlog] = js.native
   def getByUrl(callback: BodyResponseCallback[SchemaBlog]): Unit = js.native
+  def getByUrl(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBlog] = js.native
   def getByUrl(params: ParamsResourceBlogsGetbyurl): GaxiosPromise[SchemaBlog] = js.native
   def getByUrl(params: ParamsResourceBlogsGetbyurl, callback: BodyResponseCallback[SchemaBlog]): Unit = js.native
   def getByUrl(
@@ -84,6 +86,7 @@ class ResourceBlogs protected () extends js.Object {
     */
   def listByUser(): GaxiosPromise[SchemaBlogList] = js.native
   def listByUser(callback: BodyResponseCallback[SchemaBlogList]): Unit = js.native
+  def listByUser(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBlogList] = js.native
   def listByUser(params: ParamsResourceBlogsListbyuser): GaxiosPromise[SchemaBlogList] = js.native
   def listByUser(params: ParamsResourceBlogsListbyuser, callback: BodyResponseCallback[SchemaBlogList]): Unit = js.native
   def listByUser(

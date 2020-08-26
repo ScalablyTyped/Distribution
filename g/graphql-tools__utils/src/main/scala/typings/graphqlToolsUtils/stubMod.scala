@@ -1,6 +1,5 @@
 package typings.graphqlToolsUtils
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.astMod.TypeNode
 import typings.graphql.definitionMod.GraphQLInputType
 import typings.graphql.definitionMod.GraphQLNamedType
@@ -25,7 +24,7 @@ object stubMod extends js.Object {
   @JSName("createNamedStub")
   def createNamedStub_interface(name: String, `type`: interface): GraphQLInterfaceType = js.native
   @JSName("createNamedStub")
-  def createNamedStub_object(name: String, `type`: `object`): GraphQLObjectType[_, _, StringDictionary[_]] = js.native
+  def createNamedStub_object(name: String, `type`: `object`): GraphQLObjectType[_, _] = js.native
   @JSName("createStub")
   def createStub_input(node: TypeNode, `type`: input): GraphQLInputType = js.native
   @JSName("createStub")

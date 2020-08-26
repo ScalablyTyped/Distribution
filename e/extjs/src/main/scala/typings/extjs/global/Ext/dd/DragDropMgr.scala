@@ -102,6 +102,7 @@ object DragDropMgr extends js.Object {
     * @returns Ext.dd.DragDrop[] the related instances
     */
   def getRelated(): Array = js.native
+  def getRelated(p_oDD: js.UndefOr[scala.Nothing], bTargetsOnly: Boolean): Array = js.native
   def getRelated(p_oDD: IDragDrop): Array = js.native
   def getRelated(p_oDD: IDragDrop, bTargetsOnly: Boolean): Array = js.native
   /** [Method] Initialize configuration for this class
@@ -128,6 +129,7 @@ object DragDropMgr extends js.Object {
     * @returns Boolean true if the target is a legal target for the dd obj
     */
   def isLegalTarget(): Boolean = js.native
+  def isLegalTarget(oDD: js.UndefOr[scala.Nothing], oTargetDD: IDragDrop): Boolean = js.native
   def isLegalTarget(oDD: IDragDrop): Boolean = js.native
   def isLegalTarget(oDD: IDragDrop, oTargetDD: IDragDrop): Boolean = js.native
   /** [Method] Is drag and drop locked
@@ -152,6 +154,7 @@ object DragDropMgr extends js.Object {
     * @param sGroup String the name of the group this element belongs to
     */
   def regDragDrop(): Unit = js.native
+  def regDragDrop(oDD: js.UndefOr[scala.Nothing], sGroup: String): Unit = js.native
   def regDragDrop(oDD: IDragDrop): Unit = js.native
   def regDragDrop(oDD: IDragDrop, sGroup: String): Unit = js.native
   /** [Method] Each DragDrop handle element must be registered
@@ -159,6 +162,7 @@ object DragDropMgr extends js.Object {
     * @param sHandleId String the id of the element that is the drag handle
     */
   def regHandle(): Unit = js.native
+  def regHandle(sDDId: js.UndefOr[scala.Nothing], sHandleId: String): Unit = js.native
   def regHandle(sDDId: String): Unit = js.native
   def regHandle(sDDId: String, sHandleId: String): Unit = js.native
   /** [Method] Fired when either the drag pixel threshold or the mousedown hold time threshold has been met
@@ -166,6 +170,7 @@ object DragDropMgr extends js.Object {
     * @param y Number the Y position of the original mousedown
     */
   def startDrag(): Unit = js.native
+  def startDrag(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def startDrag(x: Double): Unit = js.native
   def startDrag(x: Double, y: Double): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

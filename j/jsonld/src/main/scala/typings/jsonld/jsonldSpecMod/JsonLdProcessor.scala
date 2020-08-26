@@ -11,8 +11,8 @@ trait JsonLdProcessor extends js.Object {
   def expand(input: Document): js.Promise[JsonLdArray] = js.native
   def expand(input: Document, options: Options): js.Promise[JsonLdArray] = js.native
   def flatten(input: Document): js.Promise[JsonLdObj] = js.native
+  def flatten(input: Document, context: js.UndefOr[Context], options: Options): js.Promise[JsonLdObj] = js.native
   def flatten(input: Document, context: Null, options: Options): js.Promise[JsonLdObj] = js.native
   def flatten(input: Document, context: Context): js.Promise[JsonLdObj] = js.native
-  def flatten(input: Document, context: Context, options: Options): js.Promise[JsonLdObj] = js.native
 }
 

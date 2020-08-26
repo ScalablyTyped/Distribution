@@ -37,10 +37,6 @@ object errors extends js.Object {
   @js.native
   class JOSEError[T] () extends Error {
     var code: T = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native
@@ -79,7 +75,11 @@ object errors extends js.Object {
   @js.native
   class JWTClaimInvalid[T] () extends JOSEError[T] {
     def this(message: String) = this()
+    def this(message: js.UndefOr[scala.Nothing], claim: String) = this()
     def this(message: String, claim: String) = this()
+    def this(message: js.UndefOr[scala.Nothing], claim: js.UndefOr[scala.Nothing], reason: String) = this()
+    def this(message: js.UndefOr[scala.Nothing], claim: String, reason: String) = this()
+    def this(message: String, claim: js.UndefOr[scala.Nothing], reason: String) = this()
     def this(message: String, claim: String, reason: String) = this()
     var claim: String = js.native
     var reason: prohibited | missing | invalid | check_failed | unspecified = js.native

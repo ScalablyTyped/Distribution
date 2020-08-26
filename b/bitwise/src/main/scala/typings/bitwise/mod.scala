@@ -32,6 +32,7 @@ object mod extends js.Object {
     def reduceXor(bits: js.Array[Bit]): Bit = js.native
     def toBoolean(bits: js.Array[Bit]): js.Array[Boolean] = js.native
     def toString(bits: js.Array[Bit]): String = js.native
+    def toString(bits: js.Array[Bit], spacing: js.UndefOr[scala.Nothing], spacer: String): String = js.native
     def toString(bits: js.Array[Bit], spacing: Double): String = js.native
     def toString(bits: js.Array[Bit], spacing: Double, spacer: String): String = js.native
     def xnor(bits1: js.Array[Bit], bits2: js.Array[Bit]): js.Array[Bit] = js.native
@@ -53,12 +54,15 @@ object mod extends js.Object {
     def or(a: Buffer, b: Buffer): Buffer = js.native
     def or(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
     def read(buffer: Buffer): js.Array[Bit] = js.native
+    def read(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Array[Bit] = js.native
     def read(buffer: Buffer, offset: Double): js.Array[Bit] = js.native
     def read(buffer: Buffer, offset: Double, length: Double): js.Array[Bit] = js.native
     def readInt(buffer: Buffer): Double = js.native
+    def readInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
     def readInt(buffer: Buffer, offset: Double): Double = js.native
     def readInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
     def readUInt(buffer: Buffer): Double = js.native
+    def readUInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
     def readUInt(buffer: Buffer, offset: Double): Double = js.native
     def readUInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
     def xnor(a: Buffer, b: Buffer): Buffer = js.native

@@ -9,7 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object v1 extends js.Object {
   def apply(): String = js.native
+  def apply(options: js.UndefOr[scala.Nothing], buffer: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
+  def apply(options: js.UndefOr[scala.Nothing], buffer: js.Array[Double]): js.Array[Double] = js.native
+  def apply(options: js.UndefOr[scala.Nothing], buffer: js.Array[Double], offset: Double): js.Array[Double] = js.native
+  def apply(options: js.UndefOr[scala.Nothing], buffer: Buffer): Buffer = js.native
+  def apply(options: js.UndefOr[scala.Nothing], buffer: Buffer, offset: Double): Buffer = js.native
   def apply(options: UUIDOptions): String = js.native
+  def apply(options: UUIDOptions, buffer: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
   def apply(options: UUIDOptions, buffer: js.Array[Double]): js.Array[Double] = js.native
   def apply(options: UUIDOptions, buffer: js.Array[Double], offset: Double): js.Array[Double] = js.native
   def apply(options: UUIDOptions, buffer: Buffer): Buffer = js.native

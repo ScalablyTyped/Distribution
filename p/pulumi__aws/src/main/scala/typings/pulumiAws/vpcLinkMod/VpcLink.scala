@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@pulumi/aws/apigateway/vpcLink", "VpcLink")
+@JSImport("@pulumi/aws/apigatewayv2/vpcLink", "VpcLink")
 @js.native
 class VpcLink protected () extends CustomResource {
   /**
@@ -22,27 +22,30 @@ class VpcLink protected () extends CustomResource {
     */
   def this(name: String, args: VpcLinkArgs) = this()
   def this(name: String, args: VpcLinkArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The VPC Link ARN.
+    */
   val arn: Output_[String] = js.native
   /**
-    * The description of the VPC link.
-    */
-  val description: Output_[js.UndefOr[String]] = js.native
-  /**
-    * The name used to label and identify the VPC link.
+    * The name of the VPC Link.
     */
   val name: Output_[String] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Security group IDs for the VPC Link.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val securityGroupIds: Output_[js.Array[String]] = js.native
   /**
-    * The list of network load balancer arns in the VPC targeted by the VPC link. Currently AWS only supports 1 target.
+    * Subnet IDs for the VPC Link.
     */
-  val targetArn: Output_[String] = js.native
+  val subnetIds: Output_[js.Array[String]] = js.native
+  /**
+    * A map of tags to assign to the VPC Link.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
-@JSImport("@pulumi/aws/apigateway/vpcLink", "VpcLink")
+@JSImport("@pulumi/aws/apigatewayv2/vpcLink", "VpcLink")
 @js.native
 object VpcLink extends js.Object {
   /**
@@ -52,14 +55,16 @@ object VpcLink extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VpcLink = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcLink = js.native
   def get(name: String, id: Input[ID], state: VpcLinkState): VpcLink = js.native
   def get(name: String, id: Input[ID], state: VpcLinkState, opts: CustomResourceOptions): VpcLink = js.native
   /**
     * Returns true if the given object is an instance of VpcLink.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/vpcLink.VpcLink */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/vpcLink.VpcLink */ Boolean = js.native
 }
 

@@ -12,7 +12,7 @@ A tool for listing the licenses of all dependencies of a node module
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 93437 |
+| # downloads        | 91403 |
 | # stars            | 1 |
 
 ## Links

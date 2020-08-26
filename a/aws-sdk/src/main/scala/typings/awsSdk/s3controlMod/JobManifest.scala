@@ -22,5 +22,22 @@ object JobManifest {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], Spec = Spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobManifest]
   }
+  @scala.inline
+  implicit class JobManifestOps[Self <: JobManifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: JobManifestLocation): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpec(value: JobManifestSpec): Self = this.set("Spec", value.asInstanceOf[js.Any])
+  }
+  
 }
 

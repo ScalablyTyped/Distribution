@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rc-input-number" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rc-input-number" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -13,6 +13,7 @@ trait ListTemplates extends js.Object {
   @JSName("Word.ListTemplates_typekey")
   var WordDotListTemplates_typekey: ListTemplates = js.native
   def Add(): ListTemplate = js.native
+  def Add(OutlineNumbered: js.UndefOr[scala.Nothing], Name: js.Any): ListTemplate = js.native
   def Add(OutlineNumbered: js.Any): ListTemplate = js.native
   def Add(OutlineNumbered: js.Any, Name: js.Any): ListTemplate = js.native
   def Item(Index: js.Any): ListTemplate = js.native

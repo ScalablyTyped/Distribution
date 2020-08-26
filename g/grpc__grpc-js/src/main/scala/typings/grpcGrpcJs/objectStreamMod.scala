@@ -39,14 +39,16 @@ object objectStreamMod extends js.Object {
   trait IntermediateObjectWritable[T] extends Writable {
     def _write(chunk: js.Any with T, encoding: String, callback: js.Function): Unit = js.native
     def end(chunk: js.Any with T, cb: js.Function): Unit = js.native
+    def end(chunk: js.Any with T, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(chunk: js.Any with T, encoding: js.Any): Unit = js.native
     def end(chunk: js.Any with T, encoding: js.Any, cb: js.Function): Unit = js.native
     def setDefaultEncoding(encoding: String): this.type = js.native
+    def write(chunk: js.Any with T, encoding: js.UndefOr[scala.Nothing], cb: WriteCallback): Boolean = js.native
     def write(chunk: js.Any with T, encoding: js.Any): Boolean = js.native
     def write(chunk: js.Any with T, encoding: js.Any, cb: WriteCallback): Boolean = js.native
   }
   
-  /* Inlined {read (size ? : number): U, _write (chunk : T, encoding : string, callback : std.Function): void, write (chunk : T, cb ? : std.Function): boolean, write (chunk : T, encoding ? : any, cb ? : std.Function): boolean, end (): void, end (chunk : T, cb ? : std.Function): void, end (chunk : T, encoding ? : any, cb ? : std.Function): void} & node.stream.Duplex & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<T> & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectReadable<U> */
+  /* Inlined {read (size : number | undefined): U, _write (chunk : T, encoding : string, callback : std.Function): void, write (chunk : T, cb : std.Function | undefined): boolean, write (chunk : T, encoding : any | undefined, cb : std.Function | undefined): boolean, end (): void, end (chunk : T, cb : std.Function | undefined): void, end (chunk : T, encoding : any | undefined, cb : std.Function | undefined): void} & node.stream.Duplex & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<T> & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectReadable<U> */
   @js.native
   trait ObjectDuplex[T, U] extends js.Object {
     var _writev: js.UndefOr[
@@ -60,6 +62,7 @@ object objectStreamMod extends js.Object {
     var readable: Boolean = js.native
     val readableEncoding: BufferEncoding | Null = js.native
     val readableEnded: Boolean = js.native
+    val readableFlowing: Boolean | Null = js.native
     val readableHighWaterMark: Double = js.native
     val readableLength: Double = js.native
     val readableObjectMode: Boolean = js.native
@@ -148,19 +151,23 @@ object objectStreamMod extends js.Object {
     def end(cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: T): Unit = js.native
     def end(chunk: T, cb: js.Function): Unit = js.native
+    def end(chunk: T, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(chunk: T, encoding: js.Any): Unit = js.native
     def end(chunk: T, encoding: js.Any, cb: js.Function): Unit = js.native
     def end(chunk: js.Any with T, cb: js.Function): Unit = js.native
+    def end(chunk: js.Any with T, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(chunk: js.Any with T, encoding: js.Any): Unit = js.native
     def end(chunk: js.Any with T, encoding: js.Any, cb: js.Function): Unit = js.native
     def end(chunk: (js.Any with T) | js.Any): Unit = js.native
     def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     def end(data: String): Unit = js.native
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     def eventNames(): js.Array[String | js.Symbol] = js.native
@@ -337,6 +344,7 @@ object objectStreamMod extends js.Object {
     def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: T): Boolean = js.native
     def write(chunk: T, cb: js.Function): Boolean = js.native
+    def write(chunk: T, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
     def write(chunk: T, encoding: js.Any): Boolean = js.native
     def write(chunk: T, encoding: js.Any, cb: js.Function): Boolean = js.native
     def write(chunk: js.Any with T, encoding: js.Any): Boolean = js.native
@@ -346,23 +354,34 @@ object objectStreamMod extends js.Object {
       chunk: (js.Any with T) | js.Any,
       cb: (js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) | WriteCallback
     ): Boolean = js.native
+    def write(
+      chunk: (js.Any with T) | js.Any,
+      encoding: js.UndefOr[scala.Nothing],
+      cb: (js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) | WriteCallback
+    ): Boolean = js.native
     def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
     def write(
       chunk: js.Any,
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
+    def write(
+      str: String,
+      encoding: js.UndefOr[scala.Nothing],
+      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    ): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
   
-  /* Inlined {read (size ? : number): T} & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'data', T> & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.IntermediateObjectReadable<T> */
+  /* Inlined {read (size : number | undefined): T} & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'data', T> & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.IntermediateObjectReadable<T> */
   @js.native
   trait ObjectReadable[T] extends js.Object {
     var destroyed: Boolean = js.native
     var readable: Boolean = js.native
     val readableEncoding: BufferEncoding | Null = js.native
     val readableEnded: Boolean = js.native
+    val readableFlowing: Boolean | Null = js.native
     val readableHighWaterMark: Double = js.native
     val readableLength: Double = js.native
     val readableObjectMode: Boolean = js.native
@@ -548,10 +567,12 @@ object objectStreamMod extends js.Object {
     def _write(chunk: T, encoding: String, callback: js.Function): Unit = js.native
     def end(chunk: T): Unit = js.native
     def end(chunk: T, cb: js.Function): Unit = js.native
+    def end(chunk: T, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(chunk: T, encoding: js.Any): Unit = js.native
     def end(chunk: T, encoding: js.Any, cb: js.Function): Unit = js.native
     def write(chunk: T): Boolean = js.native
     def write(chunk: T, cb: js.Function): Boolean = js.native
+    def write(chunk: T, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
     def write(chunk: T, encoding: js.Any): Boolean = js.native
     def write(chunk: T, encoding: js.Any, cb: js.Function): Boolean = js.native
   }

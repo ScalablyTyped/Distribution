@@ -20,6 +20,12 @@ object audioLoaderMod extends js.Object {
     def load(
       url: String,
       onLoad: js.Function1[/* audioBuffer */ AudioBuffer, Unit],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Unit = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* audioBuffer */ AudioBuffer, Unit],
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def load(

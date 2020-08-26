@@ -12,7 +12,7 @@ package object mod {
     - typings.reactNativeElements.mod.HeaderIcon
   */
   type HeaderSubComponent = typings.reactNativeElements.mod._HeaderSubComponent | typings.react.mod.ReactElement
-  type IconNode = scala.Boolean | typings.react.mod.ReactElement | typings.reactNativeElements.mod.IconProps
+  type IconNode = scala.Boolean | typings.react.mod.ReactElement | typings.reactNativeElements.anon.PartialIconProps
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeElements.reactNativeElementsStrings.material
     - typings.reactNativeElements.reactNativeElementsStrings.`material-community`
@@ -25,6 +25,7 @@ package object mod {
     - typings.reactNativeElements.reactNativeElementsStrings.evilicon
     - typings.reactNativeElements.reactNativeElementsStrings.entypo
     - typings.reactNativeElements.reactNativeElementsStrings.antdesign
+    - typings.reactNativeElements.reactNativeElementsStrings.`font-awesome-5`
     - java.lang.String
   */
   type IconType = typings.reactNativeElements.mod._IconType | java.lang.String

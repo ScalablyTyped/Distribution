@@ -1,8 +1,5 @@
 package typings.node
 
-import typings.node.NodeJS.MultipleResolveType
-import typings.node.NodeJS.Platform
-import typings.node.NodeJS.Signals
 import typings.node.bufferMod.TranscodeEncoding
 import typings.node.childProcessMod.SerializationType
 import typings.node.childProcessMod.StdioNull
@@ -21,6 +18,9 @@ import typings.node.dgramMod.SocketType
 import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.symlink.Type
 import typings.node.perfHooksMod.EntryType
+import typings.node.processMod.global.NodeJS.MultipleResolveType
+import typings.node.processMod.global.NodeJS.Platform
+import typings.node.processMod.global.NodeJS.Signals
 import typings.node.tlsMod.SecureVersion
 import typings.node.utilMod.Style
 import typings.node.vmMod.MeasureMemoryMode
@@ -654,6 +654,9 @@ object nodeStrings {
   
   @js.native
   sealed trait ec extends KeyType
+  
+  @js.native
+  sealed trait ed25519 extends KeyType
   
   @js.native
   sealed trait end extends js.Object
@@ -1414,6 +1417,8 @@ object nodeStrings {
   def dsa: dsa = "dsa".asInstanceOf[dsa]
   @scala.inline
   def ec: ec = "ec".asInstanceOf[ec]
+  @scala.inline
+  def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline

@@ -23,11 +23,32 @@ trait LifecyclePolicyPolicyDetailsScheduleCreateRule extends js.Object {
 
 object LifecyclePolicyPolicyDetailsScheduleCreateRule {
   @scala.inline
-  def apply(interval: Input[Double], intervalUnit: Input[String] = null, times: Input[String] = null): LifecyclePolicyPolicyDetailsScheduleCreateRule = {
+  def apply(interval: Input[Double]): LifecyclePolicyPolicyDetailsScheduleCreateRule = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
-    if (intervalUnit != null) __obj.updateDynamic("intervalUnit")(intervalUnit.asInstanceOf[js.Any])
-    if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecyclePolicyPolicyDetailsScheduleCreateRule]
   }
+  @scala.inline
+  implicit class LifecyclePolicyPolicyDetailsScheduleCreateRuleOps[Self <: LifecyclePolicyPolicyDetailsScheduleCreateRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInterval(value: Input[Double]): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIntervalUnit(value: Input[String]): Self = this.set("intervalUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntervalUnit: Self = this.set("intervalUnit", js.undefined)
+    @scala.inline
+    def setTimes(value: Input[String]): Self = this.set("times", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimes: Self = this.set("times", js.undefined)
+  }
+  
 }
 

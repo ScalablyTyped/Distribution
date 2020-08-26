@@ -18,11 +18,32 @@ trait DescribeEnvironmentManagedActionHistoryResult extends js.Object {
 
 object DescribeEnvironmentManagedActionHistoryResult {
   @scala.inline
-  def apply(ManagedActionHistoryItems: ManagedActionHistoryItems = null, NextToken: String = null): DescribeEnvironmentManagedActionHistoryResult = {
+  def apply(): DescribeEnvironmentManagedActionHistoryResult = {
     val __obj = js.Dynamic.literal()
-    if (ManagedActionHistoryItems != null) __obj.updateDynamic("ManagedActionHistoryItems")(ManagedActionHistoryItems.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEnvironmentManagedActionHistoryResult]
   }
+  @scala.inline
+  implicit class DescribeEnvironmentManagedActionHistoryResultOps[Self <: DescribeEnvironmentManagedActionHistoryResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setManagedActionHistoryItemsVarargs(value: ManagedActionHistoryItem*): Self = this.set("ManagedActionHistoryItems", js.Array(value :_*))
+    @scala.inline
+    def setManagedActionHistoryItems(value: ManagedActionHistoryItems): Self = this.set("ManagedActionHistoryItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedActionHistoryItems: Self = this.set("ManagedActionHistoryItems", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait SlotMigration extends js.Object {
 
 object SlotMigration {
   @scala.inline
-  def apply(ProgressPercentage: js.UndefOr[Double] = js.undefined): SlotMigration = {
+  def apply(): SlotMigration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ProgressPercentage)) __obj.updateDynamic("ProgressPercentage")(ProgressPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlotMigration]
   }
+  @scala.inline
+  implicit class SlotMigrationOps[Self <: SlotMigration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProgressPercentage(value: Double): Self = this.set("ProgressPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressPercentage: Self = this.set("ProgressPercentage", js.undefined)
+  }
+  
 }
 

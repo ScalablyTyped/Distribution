@@ -26,17 +26,38 @@ trait GetSitesRequest extends js.Object {
 
 object GetSitesRequest {
   @scala.inline
-  def apply(
-    GlobalNetworkId: String,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: String = null,
-    SiteIds: StringList = null
-  ): GetSitesRequest = {
+  def apply(GlobalNetworkId: String): GetSitesRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SiteIds != null) __obj.updateDynamic("SiteIds")(SiteIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSitesRequest]
   }
+  @scala.inline
+  implicit class GetSitesRequestOps[Self <: GetSitesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalNetworkId(value: String): Self = this.set("GlobalNetworkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSiteIdsVarargs(value: String*): Self = this.set("SiteIds", js.Array(value :_*))
+    @scala.inline
+    def setSiteIds(value: StringList): Self = this.set("SiteIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteIds: Self = this.set("SiteIds", js.undefined)
+  }
+  
 }
 

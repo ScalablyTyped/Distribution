@@ -10,8 +10,8 @@ Typings are for version 0.19.8
 | Full name          | ui-select |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 3121213 |
+| # dependents       | 43 |
+| # downloads        | 3161357 |
 | # stars            | 3 |
 
 ## Links

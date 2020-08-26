@@ -12,7 +12,7 @@ Check if IP address is private.
 | Keywords           | ip, address, private |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 103149 |
+| # downloads        | 114296 |
 | # stars            | 1 |
 
 ## Links

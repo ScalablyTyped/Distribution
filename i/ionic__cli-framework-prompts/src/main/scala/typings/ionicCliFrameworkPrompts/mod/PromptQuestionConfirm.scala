@@ -1,48 +1,50 @@
 package typings.ionicCliFrameworkPrompts.mod
 
-import typings.inquirer.mod.Answers
-import typings.inquirer.mod.AsyncDynamicQuestionProperty
-import typings.inquirer.mod.KeyUnion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PromptQuestionConfirm
   extends PromptQuestionBase
      with PromptQuestion {
   @JSName("default")
-  var default_PromptQuestionConfirm: js.UndefOr[PromptValueConfirm] = js.undefined
+  var default_PromptQuestionConfirm: js.UndefOr[PromptValueConfirm] = js.native
   @JSName("fallback")
-  var fallback_PromptQuestionConfirm: js.UndefOr[PromptValueConfirm] = js.undefined
+  var fallback_PromptQuestionConfirm: js.UndefOr[PromptValueConfirm] = js.native
   @JSName("type")
-  var type_PromptQuestionConfirm: PromptTypeConfirm
+  var type_PromptQuestionConfirm: PromptTypeConfirm = js.native
 }
 
 object PromptQuestionConfirm {
   @scala.inline
-  def apply(
-    message: String,
-    `type`: PromptTypeConfirm,
-    default: js.UndefOr[PromptValueConfirm] = js.undefined,
-    fallback: js.UndefOr[PromptValueConfirm] = js.undefined,
-    filter: /* input */ js.Any => _ = null,
-    name: KeyUnion[Answers] = null,
-    prefix: String = null,
-    suffix: String = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[Answers]) => Boolean | String | (js.Promise[Boolean | String]) = null,
-    when: AsyncDynamicQuestionProperty[Boolean, Answers] = null
-  ): PromptQuestionConfirm = {
+  def apply(message: String, `type`: PromptTypeConfirm): PromptQuestionConfirm = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptQuestionConfirm]
   }
+  @scala.inline
+  implicit class PromptQuestionConfirmOps[Self <: PromptQuestionConfirm] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: PromptTypeConfirm): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefault(value: PromptValueConfirm): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setFallback(value: PromptValueConfirm): Self = this.set("fallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallback: Self = this.set("fallback", js.undefined)
+  }
+  
 }
 

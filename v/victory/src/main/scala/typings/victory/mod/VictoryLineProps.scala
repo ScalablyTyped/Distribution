@@ -1,9 +1,5 @@
 package typings.victory.mod
 
-import typings.react.mod.ReactElement
-import typings.victory.anon.XBoolean
-import typings.victory.anon.Y
-import typings.victory.anon.`1`
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
@@ -11,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VictoryLineProps
   extends VictorySingleLabableProps
      with VictoryCommonProps
@@ -52,28 +49,28 @@ trait VictoryLineProps
     *   }
     * ]}
     */
-  var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]] = js.undefined
+  var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]] = js.native
   /**
     * The interpolation prop determines how data points should be connected
     * when plotting a line
     */
-  var interpolation: js.UndefOr[InterpolationPropType] = js.undefined
+  var interpolation: js.UndefOr[InterpolationPropType] = js.native
   /**
     * The labels prop defines the labels that will appear above each point.
     * This prop should be given as an array or as a function of data.
     */
-  var labels: js.UndefOr[(js.Array[Double | String]) | js.Function] = js.undefined
+  var labels: js.UndefOr[(js.Array[Double | String]) | js.Function] = js.native
   /**
     * The samples prop specifies how many individual points to plot when plotting
     * y as a function of x. Samples is ignored if x props are provided instead.
     */
-  var samples: js.UndefOr[Double] = js.undefined
+  var samples: js.UndefOr[Double] = js.native
   /**
     * Use the sortKey prop to indicate how data should be sorted. This prop
     * is given directly to the lodash sortBy function to be executed on the
     * final dataset.
     */
-  var sortKey: js.UndefOr[String | js.Array[String] | js.Function] = js.undefined
+  var sortKey: js.UndefOr[String | js.Array[String] | js.Function] = js.native
   /**
     * The style prop specifies styles for your VictoryLine. Any valid inline style properties
     * will be applied. Height, width, and padding should be specified via the height,
@@ -83,73 +80,57 @@ trait VictoryLineProps
     * VictoryLabel, or any custom labelComponent.
     * @examples{data: {stroke: "red"}, labels: {fontSize: 12}}
     */
-  var style: js.UndefOr[VictoryStyleInterface] = js.undefined
+  var style: js.UndefOr[VictoryStyleInterface] = js.native
 }
 
 object VictoryLineProps {
   @scala.inline
-  def apply(
-    animate: Boolean | AnimatePropTypeInterface = null,
-    categories: CategoryPropType = null,
-    containerComponent: ReactElement = null,
-    data: js.Array[_] = null,
-    dataComponent: ReactElement = null,
-    domain: DomainPropType = null,
-    events: js.Array[EventPropTypeInterface[data | labels | parent, Double | String]] = null,
-    groupComponent: ReactElement = null,
-    height: js.UndefOr[Double] = js.undefined,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    interpolation: InterpolationPropType = null,
-    label: String | (js.Function1[/* data */ js.Any, String]) = null,
-    labelComponent: ReactElement = null,
-    labels: (js.Array[Double | String]) | js.Function = null,
-    maxDomain: Double | Y = null,
-    minDomain: Double | Y = null,
-    name: String = null,
-    padding: PaddingProps = null,
-    samples: js.UndefOr[Double] = js.undefined,
-    scale: ScalePropType | D3Scale | `1` = null,
-    singleQuadrantDomainPadding: Boolean | XBoolean = null,
-    sortKey: String | js.Array[String] | js.Function = null,
-    standalone: js.UndefOr[Boolean] = js.undefined,
-    style: VictoryStyleInterface = null,
-    theme: VictoryThemeDefinition = null,
-    width: js.UndefOr[Double] = js.undefined,
-    x: DataGetterPropType = null,
-    y: DataGetterPropType = null,
-    y0: DataGetterPropType = null
-  ): VictoryLineProps = {
+  def apply(): VictoryLineProps = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
-    if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(samples)) __obj.updateDynamic("samples")(samples.get.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
-    if (sortKey != null) __obj.updateDynamic("sortKey")(sortKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryLineProps]
   }
+  @scala.inline
+  implicit class VictoryLinePropsOps[Self <: VictoryLineProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, Double | String])*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setInterpolation(value: InterpolationPropType): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: (Double | String)*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: (js.Array[Double | String]) | js.Function): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setSamples(value: Double): Self = this.set("samples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamples: Self = this.set("samples", js.undefined)
+    @scala.inline
+    def setSortKeyVarargs(value: String*): Self = this.set("sortKey", js.Array(value :_*))
+    @scala.inline
+    def setSortKey(value: String | js.Array[String] | js.Function): Self = this.set("sortKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortKey: Self = this.set("sortKey", js.undefined)
+    @scala.inline
+    def setStyle(value: VictoryStyleInterface): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

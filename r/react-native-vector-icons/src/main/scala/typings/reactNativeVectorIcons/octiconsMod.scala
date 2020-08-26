@@ -37,6 +37,7 @@ object octiconsMod extends js.Object {
       extends Component[ToolbarAndroidProps, js.Any, js.Any]
     
     def getImageSource(name: String): js.Promise[ImageSource] = js.native
+    def getImageSource(name: String, size: js.UndefOr[scala.Nothing], color: String): js.Promise[ImageSource] = js.native
     def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
     def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native
     def getRawGlyphMap(): StringDictionary[Double] = js.native

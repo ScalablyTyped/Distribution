@@ -39,16 +39,34 @@ trait SchemaGoogleDatastoreAdminV1ExportEntitiesRequest extends js.Object {
 
 object SchemaGoogleDatastoreAdminV1ExportEntitiesRequest {
   @scala.inline
-  def apply(
-    entityFilter: SchemaGoogleDatastoreAdminV1EntityFilter = null,
-    labels: StringDictionary[String] = null,
-    outputUrlPrefix: String = null
-  ): SchemaGoogleDatastoreAdminV1ExportEntitiesRequest = {
+  def apply(): SchemaGoogleDatastoreAdminV1ExportEntitiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (entityFilter != null) __obj.updateDynamic("entityFilter")(entityFilter.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (outputUrlPrefix != null) __obj.updateDynamic("outputUrlPrefix")(outputUrlPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1ExportEntitiesRequest]
   }
+  @scala.inline
+  implicit class SchemaGoogleDatastoreAdminV1ExportEntitiesRequestOps[Self <: SchemaGoogleDatastoreAdminV1ExportEntitiesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityFilter(value: SchemaGoogleDatastoreAdminV1EntityFilter): Self = this.set("entityFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityFilter: Self = this.set("entityFilter", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setOutputUrlPrefix(value: String): Self = this.set("outputUrlPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputUrlPrefix: Self = this.set("outputUrlPrefix", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 package typings.ionicCliFramework.ipcMod
 
-import typings.node.NodeJS.Process
 import typings.node.childProcessMod.ChildProcess
+import typings.node.processMod.global.NodeJS.Process
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ class RPCProcess () extends js.Object {
       ]
     ]
   ): Unit = js.native
-  def start(proc: Process): Unit = js.native
   def start(proc: ChildProcess): Unit = js.native
+  def start(proc: Process): Unit = js.native
 }
 

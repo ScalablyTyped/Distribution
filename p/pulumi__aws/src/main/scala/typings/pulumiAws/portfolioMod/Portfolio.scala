@@ -22,6 +22,7 @@ class Portfolio protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: PortfolioArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: PortfolioArgs, opts: CustomResourceOptions) = this()
   val arn: Output_[String] = js.native
   val createdTime: Output_[String] = js.native
@@ -40,7 +41,7 @@ class Portfolio protected () extends CustomResource {
   /**
     * Tags to apply to the connection.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -54,8 +55,10 @@ object Portfolio extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Portfolio = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Portfolio = js.native
   def get(name: String, id: Input[ID], state: PortfolioState): Portfolio = js.native
   def get(name: String, id: Input[ID], state: PortfolioState, opts: CustomResourceOptions): Portfolio = js.native
   /**

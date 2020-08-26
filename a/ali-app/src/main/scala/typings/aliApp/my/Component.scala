@@ -52,6 +52,7 @@ trait Component extends js.Object {
   def setData(data: js.Any): Unit = js.native
   def setData(data: js.Any, callback: js.Function0[Unit]): Unit = js.native
   def triggerEvent(name: String): Unit = js.native
+  def triggerEvent(name: String, details: js.UndefOr[scala.Nothing], options: Partialbubblesbooleancomp): Unit = js.native
   def triggerEvent(name: String, details: js.Any): Unit = js.native
   def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
 }

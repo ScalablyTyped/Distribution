@@ -34,20 +34,42 @@ trait GetApplicationDateRangeKpiRequest extends js.Object {
 
 object GetApplicationDateRangeKpiRequest {
   @scala.inline
-  def apply(
-    ApplicationId: string,
-    KpiName: string,
-    EndTime: timestampIso8601 = null,
-    NextToken: string = null,
-    PageSize: string = null,
-    StartTime: timestampIso8601 = null
-  ): GetApplicationDateRangeKpiRequest = {
+  def apply(ApplicationId: string, KpiName: string): GetApplicationDateRangeKpiRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], KpiName = KpiName.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApplicationDateRangeKpiRequest]
   }
+  @scala.inline
+  implicit class GetApplicationDateRangeKpiRequestOps[Self <: GetApplicationDateRangeKpiRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKpiName(value: string): Self = this.set("KpiName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: timestampIso8601): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPageSize(value: string): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    @scala.inline
+    def setStartTime(value: timestampIso8601): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+  }
+  
 }
 

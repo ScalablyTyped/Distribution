@@ -1,5 +1,6 @@
 package typings.tslib
 
+import typings.std.PropertyKey
 import typings.std.TemplateStringsArray
 import typings.tslib.anon.Default
 import typings.tslib.anon.Get
@@ -27,8 +28,14 @@ object mod extends js.Object {
   def classPrivateFieldGet[T /* <: js.Object */, V](receiver: T, privateMap: Get[T, V]): V = js.native
   @JSName("__classPrivateFieldSet")
   def classPrivateFieldSet[T /* <: js.Object */, V](receiver: T, privateMap: Has[T, V], value: V): V = js.native
+  @JSName("__createBinding")
+  def createBinding(`object`: js.Object, target: js.Object, key: PropertyKey): Unit = js.native
+  @JSName("__createBinding")
+  def createBinding(`object`: js.Object, target: js.Object, key: PropertyKey, objectKey: PropertyKey): Unit = js.native
   @JSName("__decorate")
   def decorate(decorators: js.Array[js.Function], target: js.Any): js.Any = js.native
+  @JSName("__decorate")
+  def decorate(decorators: js.Array[js.Function], target: js.Any, key: js.UndefOr[scala.Nothing], desc: js.Any): js.Any = js.native
   @JSName("__decorate")
   def decorate(decorators: js.Array[js.Function], target: js.Any, key: String): js.Any = js.native
   @JSName("__decorate")

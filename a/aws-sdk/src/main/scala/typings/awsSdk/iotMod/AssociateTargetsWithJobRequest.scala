@@ -22,10 +22,32 @@ trait AssociateTargetsWithJobRequest extends js.Object {
 
 object AssociateTargetsWithJobRequest {
   @scala.inline
-  def apply(jobId: JobId, targets: JobTargets, comment: Comment = null): AssociateTargetsWithJobRequest = {
+  def apply(jobId: JobId, targets: JobTargets): AssociateTargetsWithJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateTargetsWithJobRequest]
   }
+  @scala.inline
+  implicit class AssociateTargetsWithJobRequestOps[Self <: AssociateTargetsWithJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetsVarargs(value: TargetArn*): Self = this.set("targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: JobTargets): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: Comment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+  }
+  
 }
 

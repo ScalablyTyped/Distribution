@@ -29,6 +29,7 @@ import typings.kindOf.kindOfStrings.uint16array
 import typings.kindOf.kindOfStrings.uint32array
 import typings.kindOf.kindOfStrings.uint8array
 import typings.kindOf.kindOfStrings.uint8clampedarray
+import typings.kindOf.kindOfStrings.undefined
 import typings.kindOf.kindOfStrings.weakmap
 import typings.kindOf.kindOfStrings.weakset
 import typings.node.Buffer
@@ -56,7 +57,7 @@ import scala.scalajs.js.annotation._
 @JSImport("kind-of", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def apply(): `null` = js.native
+  def apply(thing: js.UndefOr[scala.Nothing]): undefined = js.native
   def apply(thing: String): string = js.native
   def apply(thing: js.Any): String = js.native
   def apply(thing: js.Array[_]): array = js.native
@@ -65,6 +66,7 @@ object mod extends js.Object {
   def apply(thing: js.Symbol): symbol = js.native
   def apply(thing: Boolean): boolean = js.native
   def apply(thing: Double): number = js.native
+  def apply(thing: Null): `null` = js.native
   def apply(thing: Buffer): buffer = js.native
   def apply(thing: Date): date = js.native
   def apply(thing: Error): error = js.native

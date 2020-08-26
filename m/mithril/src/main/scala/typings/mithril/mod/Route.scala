@@ -21,6 +21,7 @@ trait Route extends js.Object {
   def param(name: String): String = js.native
   /** Redirects to a matching route or to the default route if no matching routes can be found. */
   def set(route: String): Unit = js.native
+  def set(route: String, data: js.UndefOr[scala.Nothing], options: RouteOptions): Unit = js.native
   def set(route: String, data: js.Any): Unit = js.native
   def set(route: String, data: js.Any, options: RouteOptions): Unit = js.native
 }

@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object open extends js.Object {
   def apply(path: String, flags: String): Unit = js.native
+  def apply(
+    path: String,
+    flags: String,
+    mode: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* fs */ Double, Unit]
+  ): Unit = js.native
   def apply(path: String, flags: String, mode: String): Unit = js.native
   def apply(
     path: String,

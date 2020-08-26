@@ -1,63 +1,65 @@
 package typings.hapi.mod
 
 import typings.hapi.anon.Artifacts
-import typings.node.Buffer
-import typings.node.streamMod.Stream
-import typings.shot.anon.Close
-import typings.shot.mod.Headers
 import typings.shot.mod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServerInjectOptions extends RequestOptions {
   /**
     * allows access to routes with config.isInternal set to true. Defaults to false.
     */
-  var allowInternals: js.UndefOr[Boolean] = js.undefined
+  var allowInternals: js.UndefOr[Boolean] = js.native
   /**
     * sets the initial value of request.app, defaults to {}.
     */
-  var app: js.UndefOr[ApplicationState] = js.undefined
+  var app: js.UndefOr[ApplicationState] = js.native
   /**
     * Authentication bypass options.
     */
-  var auth: js.UndefOr[Artifacts] = js.undefined
+  var auth: js.UndefOr[Artifacts] = js.native
   /**
     * sets the initial value of request.plugins, defaults to {}.
     */
-  var plugins: js.UndefOr[PluginsStates] = js.undefined
+  var plugins: js.UndefOr[PluginsStates] = js.native
 }
 
 object ServerInjectOptions {
   @scala.inline
-  def apply(
-    url: String,
-    allowInternals: js.UndefOr[Boolean] = js.undefined,
-    app: ApplicationState = null,
-    auth: Artifacts = null,
-    authority: String = null,
-    headers: Headers = null,
-    method: String = null,
-    payload: String | Buffer | Stream | js.Object = null,
-    plugins: PluginsStates = null,
-    remoteAddress: String = null,
-    simulate: Close = null,
-    validate: js.UndefOr[Boolean] = js.undefined
-  ): ServerInjectOptions = {
+  def apply(url: String): ServerInjectOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInternals)) __obj.updateDynamic("allowInternals")(allowInternals.get.asInstanceOf[js.Any])
-    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress.asInstanceOf[js.Any])
-    if (simulate != null) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInjectOptions]
   }
+  @scala.inline
+  implicit class ServerInjectOptionsOps[Self <: ServerInjectOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowInternals(value: Boolean): Self = this.set("allowInternals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowInternals: Self = this.set("allowInternals", js.undefined)
+    @scala.inline
+    def setApp(value: ApplicationState): Self = this.set("app", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApp: Self = this.set("app", js.undefined)
+    @scala.inline
+    def setAuth(value: Artifacts): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setPlugins(value: PluginsStates): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+  }
+  
 }
 

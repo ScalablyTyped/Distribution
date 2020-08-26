@@ -27,6 +27,7 @@ class ResourceMetros protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaMetrosListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaMetrosListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetrosListResponse] = js.native
   def list(params: ParamsResourceMetrosList): GaxiosPromise[SchemaMetrosListResponse] = js.native
   def list(params: ParamsResourceMetrosList, callback: BodyResponseCallback[SchemaMetrosListResponse]): Unit = js.native
   def list(

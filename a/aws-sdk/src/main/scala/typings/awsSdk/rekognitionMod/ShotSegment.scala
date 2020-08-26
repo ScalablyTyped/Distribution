@@ -18,11 +18,30 @@ trait ShotSegment extends js.Object {
 
 object ShotSegment {
   @scala.inline
-  def apply(Confidence: js.UndefOr[SegmentConfidence] = js.undefined, Index: js.UndefOr[ULong] = js.undefined): ShotSegment = {
+  def apply(): ShotSegment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShotSegment]
   }
+  @scala.inline
+  implicit class ShotSegmentOps[Self <: ShotSegment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfidence(value: SegmentConfidence): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setIndex(value: ULong): Self = this.set("Index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("Index", js.undefined)
+  }
+  
 }
 

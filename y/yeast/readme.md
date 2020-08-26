@@ -10,9 +10,9 @@ Tiny but linear growing unique id generator
 | ------------------ | :-------------: |
 | Full name          | yeast |
 | Keywords           | yeast, id, generator, unique |
-| # releases         | 1 |
-| # dependents       | 41 |
-| # downloads        | 123817141 |
+| # releases         | 0 |
+| # dependents       | 42 |
+| # downloads        | 125601625 |
 | # stars            | 4 |
 
 ## Links

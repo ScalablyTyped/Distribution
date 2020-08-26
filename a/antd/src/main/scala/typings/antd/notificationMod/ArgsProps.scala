@@ -7,66 +7,115 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ArgsProps extends js.Object {
-  var bottom: js.UndefOr[Double] = js.undefined
-  var btn: js.UndefOr[ReactNode] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var closeIcon: js.UndefOr[ReactNode] = js.undefined
-  var description: js.UndefOr[ReactNode] = js.undefined
-  var duration: js.UndefOr[Double | Null] = js.undefined
-  var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
-  var icon: js.UndefOr[ReactNode] = js.undefined
-  var key: js.UndefOr[String] = js.undefined
-  var message: ReactNode
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var placement: js.UndefOr[NotificationPlacement] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var top: js.UndefOr[Double] = js.undefined
-  val `type`: js.UndefOr[IconType] = js.undefined
+  var bottom: js.UndefOr[Double] = js.native
+  var btn: js.UndefOr[ReactNode] = js.native
+  var className: js.UndefOr[String] = js.native
+  var closeIcon: js.UndefOr[ReactNode] = js.native
+  var description: js.UndefOr[ReactNode] = js.native
+  var duration: js.UndefOr[Double | Null] = js.native
+  var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+  var icon: js.UndefOr[ReactNode] = js.native
+  var key: js.UndefOr[String] = js.native
+  var message: ReactNode = js.native
+  var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var placement: js.UndefOr[NotificationPlacement] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var top: js.UndefOr[Double] = js.native
+  val `type`: js.UndefOr[IconType] = js.native
 }
 
 object ArgsProps {
   @scala.inline
-  def apply(
-    bottom: js.UndefOr[Double] = js.undefined,
-    btn: ReactNode = null,
-    className: String = null,
-    closeIcon: ReactNode = null,
-    description: ReactNode = null,
-    duration: js.UndefOr[Null | Double] = js.undefined,
-    getContainer: () => HTMLElement = null,
-    icon: ReactNode = null,
-    key: String = null,
-    message: ReactNode = null,
-    onClick: () => Unit = null,
-    onClose: () => Unit = null,
-    placement: NotificationPlacement = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    top: js.UndefOr[Double] = js.undefined,
-    `type`: IconType = null
-  ): ArgsProps = {
+  def apply(): ArgsProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.get.asInstanceOf[js.Any])
-    if (btn != null) __obj.updateDynamic("btn")(btn.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgsProps]
   }
+  @scala.inline
+  implicit class ArgsPropsOps[Self <: ArgsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBottom(value: Double): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setBtn(value: ReactNode): Self = this.set("btn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBtn: Self = this.set("btn", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCloseIcon(value: ReactNode): Self = this.set("closeIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseIcon: Self = this.set("closeIcon", js.undefined)
+    @scala.inline
+    def setDescription(value: ReactNode): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setDurationNull: Self = this.set("duration", null)
+    @scala.inline
+    def setGetContainer(value: () => HTMLElement): Self = this.set("getContainer", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetContainer: Self = this.set("getContainer", js.undefined)
+    @scala.inline
+    def setIcon(value: ReactNode): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setMessage(value: ReactNode): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setOnClick(value: () => Unit): Self = this.set("onClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setPlacement(value: NotificationPlacement): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setType(value: IconType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

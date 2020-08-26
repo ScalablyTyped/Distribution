@@ -15,6 +15,12 @@ package object ecrMod {
   type BatchedOperationLayerDigestList = js.Array[typings.awsSdk.ecrMod.BatchedOperationLayerDigest]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.ecrMod.ClientApiVersions
   type CreationTimestamp = typings.std.Date
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.AES256
+    - typings.awsSdk.awsSdkStrings.KMS
+    - java.lang.String
+  */
+  type EncryptionType = typings.awsSdk.ecrMod._EncryptionType | java.lang.String
   type EvaluationTimestamp = typings.std.Date
   type ExpirationTimestamp = typings.std.Date
   type FindingDescription = java.lang.String
@@ -43,6 +49,7 @@ package object ecrMod {
     - typings.awsSdk.awsSdkStrings.ImageNotFound
     - typings.awsSdk.awsSdkStrings.MissingDigestAndTag
     - typings.awsSdk.awsSdkStrings.ImageReferencedByManifestList
+    - typings.awsSdk.awsSdkStrings.KmsError
     - java.lang.String
   */
   type ImageFailureCode = typings.awsSdk.ecrMod._ImageFailureCode | java.lang.String
@@ -61,6 +68,7 @@ package object ecrMod {
     - java.lang.String
   */
   type ImageTagMutability = typings.awsSdk.ecrMod._ImageTagMutability | java.lang.String
+  type KmsKey = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AVAILABLE
     - typings.awsSdk.awsSdkStrings.UNAVAILABLE

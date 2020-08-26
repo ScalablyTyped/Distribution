@@ -130,7 +130,16 @@ trait CoreMethods extends UtilityMethods {
     * @param caseInsen Do case-insensitive matching (default, true) or not (false).
     */
   def search(input: String): Api = js.native
+  def search(
+    input: String,
+    regex: js.UndefOr[scala.Nothing],
+    smart: js.UndefOr[scala.Nothing],
+    caseInsen: Boolean
+  ): Api = js.native
+  def search(input: String, regex: js.UndefOr[scala.Nothing], smart: Boolean): Api = js.native
+  def search(input: String, regex: js.UndefOr[scala.Nothing], smart: Boolean, caseInsen: Boolean): Api = js.native
   def search(input: String, regex: Boolean): Api = js.native
+  def search(input: String, regex: Boolean, smart: js.UndefOr[scala.Nothing], caseInsen: Boolean): Api = js.native
   def search(input: String, regex: Boolean, smart: Boolean): Api = js.native
   def search(input: String, regex: Boolean, smart: Boolean, caseInsen: Boolean): Api = js.native
   /**

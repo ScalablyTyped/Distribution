@@ -39,6 +39,7 @@ trait VectorFactory extends js.Object {
     * @return {vector} A new vector
     */
   def create(): Vector = js.native
+  def create(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
   def create(x: Double): Vector = js.native
   def create(x: Double, y: Double): Vector = js.native
   /**

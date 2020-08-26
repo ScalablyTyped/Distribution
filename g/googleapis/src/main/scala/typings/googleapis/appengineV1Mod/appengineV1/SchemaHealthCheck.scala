@@ -47,24 +47,50 @@ trait SchemaHealthCheck extends js.Object {
 
 object SchemaHealthCheck {
   @scala.inline
-  def apply(
-    checkInterval: String = null,
-    disableHealthCheck: js.UndefOr[Boolean] = js.undefined,
-    healthyThreshold: js.UndefOr[Double] = js.undefined,
-    host: String = null,
-    restartThreshold: js.UndefOr[Double] = js.undefined,
-    timeout: String = null,
-    unhealthyThreshold: js.UndefOr[Double] = js.undefined
-  ): SchemaHealthCheck = {
+  def apply(): SchemaHealthCheck = {
     val __obj = js.Dynamic.literal()
-    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHealthCheck)) __obj.updateDynamic("disableHealthCheck")(disableHealthCheck.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(healthyThreshold)) __obj.updateDynamic("healthyThreshold")(healthyThreshold.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(restartThreshold)) __obj.updateDynamic("restartThreshold")(restartThreshold.get.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(unhealthyThreshold)) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHealthCheck]
   }
+  @scala.inline
+  implicit class SchemaHealthCheckOps[Self <: SchemaHealthCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckInterval(value: String): Self = this.set("checkInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckInterval: Self = this.set("checkInterval", js.undefined)
+    @scala.inline
+    def setDisableHealthCheck(value: Boolean): Self = this.set("disableHealthCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableHealthCheck: Self = this.set("disableHealthCheck", js.undefined)
+    @scala.inline
+    def setHealthyThreshold(value: Double): Self = this.set("healthyThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthyThreshold: Self = this.set("healthyThreshold", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setRestartThreshold(value: Double): Self = this.set("restartThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestartThreshold: Self = this.set("restartThreshold", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUnhealthyThreshold(value: Double): Self = this.set("unhealthyThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnhealthyThreshold: Self = this.set("unhealthyThreshold", js.undefined)
+  }
+  
 }
 

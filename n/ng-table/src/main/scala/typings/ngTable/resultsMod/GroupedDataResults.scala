@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Array<ng-table.ng-table/src/core/data/results.IDataRowGroup<T>> & {  visibleColumnCount  :number} */
+/* Inlined std.Array<ng-table.ng-table/src/core/data/results.IDataRowGroup<T>> & {  visibleColumnCount :number} */
 @js.native
 trait GroupedDataResults[T] extends /* n */ NumberDictionary[IDataRowGroup[T]] {
   /** Iterator */
@@ -79,6 +79,7 @@ trait GroupedDataResults[T] extends /* n */ NumberDictionary[IDataRowGroup[T]] {
     * length+end.
     */
   def fill(value: IDataRowGroup[T]): this.type = js.native
+  def fill(value: IDataRowGroup[T], start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: IDataRowGroup[T], start: Double): this.type = js.native
   def fill(value: IDataRowGroup[T], start: Double, end: Double): this.type = js.native
   /**
@@ -411,6 +412,7 @@ trait GroupedDataResults[T] extends /* n */ NumberDictionary[IDataRowGroup[T]] {
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[IDataRowGroup[T]] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[IDataRowGroup[T]] = js.native
   def slice(start: Double): js.Array[IDataRowGroup[T]] = js.native
   def slice(start: Double, end: Double): js.Array[IDataRowGroup[T]] = js.native
   /**

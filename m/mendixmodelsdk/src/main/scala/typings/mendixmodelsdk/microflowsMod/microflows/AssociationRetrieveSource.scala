@@ -23,13 +23,11 @@ class AssociationRetrieveSource protected () extends RetrieveSource {
   ) = this()
   @JSName("model")
   var model_FAssociationRetrieveSource: IModel = js.native
-  def association(): js.Any = js.native
-  def association(newValue: IAssociationBase): js.Any = js.native
+  def association: IAssociationBase | Null = js.native
   def associationQualifiedName: String | Null = js.native
-  @JSName("association")
-  def association_Union: IAssociationBase | Null = js.native
+  def association_=(newValue: IAssociationBase | Null): Unit = js.native
   def startVariableName: String = js.native
-  def startVariableName(newValue: String): js.Any = js.native
+  def startVariableName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

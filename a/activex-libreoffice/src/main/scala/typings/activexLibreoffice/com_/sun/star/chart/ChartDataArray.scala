@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   *
   * It contains the data values as well as the descriptions for each row and column.
   */
+@js.native
 trait ChartDataArray extends XChartDataArray
 
 object ChartDataArray {

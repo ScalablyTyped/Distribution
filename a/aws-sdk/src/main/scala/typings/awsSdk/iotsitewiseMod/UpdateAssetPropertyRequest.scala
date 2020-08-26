@@ -30,18 +30,38 @@ trait UpdateAssetPropertyRequest extends js.Object {
 
 object UpdateAssetPropertyRequest {
   @scala.inline
-  def apply(
-    assetId: ID,
-    propertyId: ID,
-    clientToken: ClientToken = null,
-    propertyAlias: PropertyAlias = null,
-    propertyNotificationState: PropertyNotificationState = null
-  ): UpdateAssetPropertyRequest = {
+  def apply(assetId: ID, propertyId: ID): UpdateAssetPropertyRequest = {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any], propertyId = propertyId.asInstanceOf[js.Any])
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (propertyAlias != null) __obj.updateDynamic("propertyAlias")(propertyAlias.asInstanceOf[js.Any])
-    if (propertyNotificationState != null) __obj.updateDynamic("propertyNotificationState")(propertyNotificationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAssetPropertyRequest]
   }
+  @scala.inline
+  implicit class UpdateAssetPropertyRequestOps[Self <: UpdateAssetPropertyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPropertyId(value: ID): Self = this.set("propertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setPropertyAlias(value: PropertyAlias): Self = this.set("propertyAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyAlias: Self = this.set("propertyAlias", js.undefined)
+    @scala.inline
+    def setPropertyNotificationState(value: PropertyNotificationState): Self = this.set("propertyNotificationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyNotificationState: Self = this.set("propertyNotificationState", js.undefined)
+  }
+  
 }
 

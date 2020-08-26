@@ -73,14 +73,53 @@ object DescribeCompilationJobResponse {
     ModelArtifacts: ModelArtifacts,
     OutputConfig: OutputConfig,
     RoleArn: RoleArn,
-    StoppingCondition: StoppingCondition,
-    CompilationEndTime: Timestamp = null,
-    CompilationStartTime: Timestamp = null
+    StoppingCondition: StoppingCondition
   ): DescribeCompilationJobResponse = {
     val __obj = js.Dynamic.literal(CompilationJobArn = CompilationJobArn.asInstanceOf[js.Any], CompilationJobName = CompilationJobName.asInstanceOf[js.Any], CompilationJobStatus = CompilationJobStatus.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], FailureReason = FailureReason.asInstanceOf[js.Any], InputConfig = InputConfig.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], ModelArtifacts = ModelArtifacts.asInstanceOf[js.Any], OutputConfig = OutputConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any])
-    if (CompilationEndTime != null) __obj.updateDynamic("CompilationEndTime")(CompilationEndTime.asInstanceOf[js.Any])
-    if (CompilationStartTime != null) __obj.updateDynamic("CompilationStartTime")(CompilationStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCompilationJobResponse]
   }
+  @scala.inline
+  implicit class DescribeCompilationJobResponseOps[Self <: DescribeCompilationJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompilationJobArn(value: CompilationJobArn): Self = this.set("CompilationJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompilationJobName(value: EntityName): Self = this.set("CompilationJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompilationJobStatus(value: CompilationJobStatus): Self = this.set("CompilationJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputConfig(value: InputConfig): Self = this.set("InputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastModifiedTime(value: LastModifiedTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setModelArtifacts(value: ModelArtifacts): Self = this.set("ModelArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputConfig(value: OutputConfig): Self = this.set("OutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStoppingCondition(value: StoppingCondition): Self = this.set("StoppingCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompilationEndTime(value: Timestamp): Self = this.set("CompilationEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompilationEndTime: Self = this.set("CompilationEndTime", js.undefined)
+    @scala.inline
+    def setCompilationStartTime(value: Timestamp): Self = this.set("CompilationStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompilationStartTime: Self = this.set("CompilationStartTime", js.undefined)
+  }
+  
 }
 

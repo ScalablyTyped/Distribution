@@ -11,8 +11,8 @@ A simple split layout for React and modern browsers
 | Full name          | react-splitter-layout |
 | Keywords           | react, layout, split, splitter |
 | # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 411934 |
+| # dependents       | 7 |
+| # downloads        | 426106 |
 | # stars            | 1 |
 
 ## Links

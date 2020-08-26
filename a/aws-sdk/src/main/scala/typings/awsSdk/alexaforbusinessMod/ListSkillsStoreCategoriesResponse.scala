@@ -18,11 +18,32 @@ trait ListSkillsStoreCategoriesResponse extends js.Object {
 
 object ListSkillsStoreCategoriesResponse {
   @scala.inline
-  def apply(CategoryList: CategoryList = null, NextToken: NextToken = null): ListSkillsStoreCategoriesResponse = {
+  def apply(): ListSkillsStoreCategoriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (CategoryList != null) __obj.updateDynamic("CategoryList")(CategoryList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSkillsStoreCategoriesResponse]
   }
+  @scala.inline
+  implicit class ListSkillsStoreCategoriesResponseOps[Self <: ListSkillsStoreCategoriesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategoryListVarargs(value: Category*): Self = this.set("CategoryList", js.Array(value :_*))
+    @scala.inline
+    def setCategoryList(value: CategoryList): Self = this.set("CategoryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryList: Self = this.set("CategoryList", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

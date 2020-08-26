@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssetSnippet extends js.Object {
-  var customId: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var isrc: js.UndefOr[String] = js.undefined
-  var iswc: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var timeCreated: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var customId: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var isrc: js.UndefOr[String] = js.native
+  var iswc: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var timeCreated: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object AssetSnippet {
   @scala.inline
-  def apply(
-    customId: String = null,
-    id: String = null,
-    isrc: String = null,
-    iswc: String = null,
-    kind: String = null,
-    timeCreated: String = null,
-    title: String = null,
-    `type`: String = null
-  ): AssetSnippet = {
+  def apply(): AssetSnippet = {
     val __obj = js.Dynamic.literal()
-    if (customId != null) __obj.updateDynamic("customId")(customId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (isrc != null) __obj.updateDynamic("isrc")(isrc.asInstanceOf[js.Any])
-    if (iswc != null) __obj.updateDynamic("iswc")(iswc.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetSnippet]
   }
+  @scala.inline
+  implicit class AssetSnippetOps[Self <: AssetSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomId(value: String): Self = this.set("customId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomId: Self = this.set("customId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsrc(value: String): Self = this.set("isrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsrc: Self = this.set("isrc", js.undefined)
+    @scala.inline
+    def setIswc(value: String): Self = this.set("iswc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIswc: Self = this.set("iswc", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setTimeCreated(value: String): Self = this.set("timeCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeCreated: Self = this.set("timeCreated", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

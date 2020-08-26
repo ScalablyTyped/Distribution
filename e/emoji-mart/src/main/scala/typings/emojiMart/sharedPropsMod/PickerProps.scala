@@ -15,115 +15,200 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PickerProps extends js.Object {
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var backgroundImageFn: js.UndefOr[BackgroundImageFn] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var backgroundImageFn: js.UndefOr[BackgroundImageFn] = js.native
+  var color: js.UndefOr[String] = js.native
   /** NOTE: custom emoji are copied into a singleton object on every new mount */
-  var custom: js.UndefOr[js.Array[CustomEmoji]] = js.undefined
-  var defaultSkin: js.UndefOr[EmojiSkin] = js.undefined
-  var emoji: js.UndefOr[String] = js.undefined
-  var emojiSize: js.UndefOr[Double] = js.undefined
-  var emojiTooltip: js.UndefOr[Boolean] = js.undefined
-  var emojisToShowFilter: js.UndefOr[js.Function1[/* emoji */ EmojiData, Boolean]] = js.undefined
-  var enableFrequentEmojiSort: js.UndefOr[Boolean] = js.undefined
-  var exclude: js.UndefOr[js.Array[CategoryName]] = js.undefined
-  var i18n: js.UndefOr[PartialI18n] = js.undefined
-  var icons: js.UndefOr[CustomIcons] = js.undefined
-  var include: js.UndefOr[js.Array[CategoryName]] = js.undefined
-  var native: js.UndefOr[Boolean] = js.undefined
-  var notFound: js.UndefOr[js.Function0[Component[js.Object, js.Object, _]]] = js.undefined
-  var notFoundEmoji: js.UndefOr[String] = js.undefined
+  var custom: js.UndefOr[js.Array[CustomEmoji]] = js.native
+  var defaultSkin: js.UndefOr[EmojiSkin] = js.native
+  var emoji: js.UndefOr[String] = js.native
+  var emojiSize: js.UndefOr[Double] = js.native
+  var emojiTooltip: js.UndefOr[Boolean] = js.native
+  var emojisToShowFilter: js.UndefOr[js.Function1[/* emoji */ EmojiData, Boolean]] = js.native
+  var enableFrequentEmojiSort: js.UndefOr[Boolean] = js.native
+  var exclude: js.UndefOr[js.Array[CategoryName]] = js.native
+  var i18n: js.UndefOr[PartialI18n] = js.native
+  var icons: js.UndefOr[CustomIcons] = js.native
+  var include: js.UndefOr[js.Array[CategoryName]] = js.native
+  var native: js.UndefOr[Boolean] = js.native
+  var notFound: js.UndefOr[js.Function0[Component[js.Object, js.Object, _]]] = js.native
+  var notFoundEmoji: js.UndefOr[String] = js.native
   /** NOTE: default is not preventable */
   var onClick: js.UndefOr[
     js.Function2[/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-  ] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* emoji */ EmojiData, Unit]] = js.undefined
-  var onSkinChange: js.UndefOr[js.Function1[/* skin */ EmojiSkin, Unit]] = js.undefined
-  var perLine: js.UndefOr[Double] = js.undefined
-  var recent: js.UndefOr[js.Array[String]] = js.undefined
-  var set: js.UndefOr[EmojiSet] = js.undefined
-  var sheetSize: js.UndefOr[EmojiSheetSize] = js.undefined
-  var showPreview: js.UndefOr[Boolean] = js.undefined
-  var showSkinTones: js.UndefOr[Boolean] = js.undefined
-  var skin: js.UndefOr[EmojiSkin] = js.undefined
-  var skinEmoji: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var theme: js.UndefOr[auto | light | dark] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var useButton: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var onSelect: js.UndefOr[js.Function1[/* emoji */ EmojiData, Unit]] = js.native
+  var onSkinChange: js.UndefOr[js.Function1[/* skin */ EmojiSkin, Unit]] = js.native
+  var perLine: js.UndefOr[Double] = js.native
+  var recent: js.UndefOr[js.Array[String]] = js.native
+  var set: js.UndefOr[EmojiSet] = js.native
+  var sheetSize: js.UndefOr[EmojiSheetSize] = js.native
+  var showPreview: js.UndefOr[Boolean] = js.native
+  var showSkinTones: js.UndefOr[Boolean] = js.native
+  var skin: js.UndefOr[EmojiSkin] = js.native
+  var skinEmoji: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var theme: js.UndefOr[auto | light | dark] = js.native
+  var title: js.UndefOr[String] = js.native
+  var useButton: js.UndefOr[Boolean] = js.native
 }
 
 object PickerProps {
   @scala.inline
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    backgroundImageFn: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String = null,
-    color: String = null,
-    custom: js.Array[CustomEmoji] = null,
-    defaultSkin: EmojiSkin = null,
-    emoji: String = null,
-    emojiSize: js.UndefOr[Double] = js.undefined,
-    emojiTooltip: js.UndefOr[Boolean] = js.undefined,
-    emojisToShowFilter: /* emoji */ EmojiData => Boolean = null,
-    enableFrequentEmojiSort: js.UndefOr[Boolean] = js.undefined,
-    exclude: js.Array[CategoryName] = null,
-    i18n: PartialI18n = null,
-    icons: CustomIcons = null,
-    include: js.Array[CategoryName] = null,
-    native: js.UndefOr[Boolean] = js.undefined,
-    notFound: () => Component[js.Object, js.Object, _] = null,
-    notFoundEmoji: String = null,
-    onClick: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
-    onSelect: /* emoji */ EmojiData => Unit = null,
-    onSkinChange: /* skin */ EmojiSkin => Unit = null,
-    perLine: js.UndefOr[Double] = js.undefined,
-    recent: js.Array[String] = null,
-    set: EmojiSet = null,
-    sheetSize: EmojiSheetSize = null,
-    showPreview: js.UndefOr[Boolean] = js.undefined,
-    showSkinTones: js.UndefOr[Boolean] = js.undefined,
-    skin: EmojiSkin = null,
-    skinEmoji: String = null,
-    style: CSSProperties = null,
-    theme: auto | light | dark = null,
-    title: String = null,
-    useButton: js.UndefOr[Boolean] = js.undefined
-  ): PickerProps = {
+  def apply(): PickerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(js.Any.fromFunction2(backgroundImageFn))
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (defaultSkin != null) __obj.updateDynamic("defaultSkin")(defaultSkin.asInstanceOf[js.Any])
-    if (emoji != null) __obj.updateDynamic("emoji")(emoji.asInstanceOf[js.Any])
-    if (!js.isUndefined(emojiSize)) __obj.updateDynamic("emojiSize")(emojiSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(emojiTooltip)) __obj.updateDynamic("emojiTooltip")(emojiTooltip.get.asInstanceOf[js.Any])
-    if (emojisToShowFilter != null) __obj.updateDynamic("emojisToShowFilter")(js.Any.fromFunction1(emojisToShowFilter))
-    if (!js.isUndefined(enableFrequentEmojiSort)) __obj.updateDynamic("enableFrequentEmojiSort")(enableFrequentEmojiSort.get.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.get.asInstanceOf[js.Any])
-    if (notFound != null) __obj.updateDynamic("notFound")(js.Any.fromFunction0(notFound))
-    if (notFoundEmoji != null) __obj.updateDynamic("notFoundEmoji")(notFoundEmoji.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onSkinChange != null) __obj.updateDynamic("onSkinChange")(js.Any.fromFunction1(onSkinChange))
-    if (!js.isUndefined(perLine)) __obj.updateDynamic("perLine")(perLine.get.asInstanceOf[js.Any])
-    if (recent != null) __obj.updateDynamic("recent")(recent.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (sheetSize != null) __obj.updateDynamic("sheetSize")(sheetSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSkinTones)) __obj.updateDynamic("showSkinTones")(showSkinTones.get.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (skinEmoji != null) __obj.updateDynamic("skinEmoji")(skinEmoji.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(useButton)) __obj.updateDynamic("useButton")(useButton.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerProps]
   }
+  @scala.inline
+  implicit class PickerPropsOps[Self <: PickerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setBackgroundImageFn(value: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String): Self = this.set("backgroundImageFn", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBackgroundImageFn: Self = this.set("backgroundImageFn", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCustomVarargs(value: CustomEmoji*): Self = this.set("custom", js.Array(value :_*))
+    @scala.inline
+    def setCustom(value: js.Array[CustomEmoji]): Self = this.set("custom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom: Self = this.set("custom", js.undefined)
+    @scala.inline
+    def setDefaultSkin(value: EmojiSkin): Self = this.set("defaultSkin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSkin: Self = this.set("defaultSkin", js.undefined)
+    @scala.inline
+    def setEmoji(value: String): Self = this.set("emoji", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmoji: Self = this.set("emoji", js.undefined)
+    @scala.inline
+    def setEmojiSize(value: Double): Self = this.set("emojiSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmojiSize: Self = this.set("emojiSize", js.undefined)
+    @scala.inline
+    def setEmojiTooltip(value: Boolean): Self = this.set("emojiTooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmojiTooltip: Self = this.set("emojiTooltip", js.undefined)
+    @scala.inline
+    def setEmojisToShowFilter(value: /* emoji */ EmojiData => Boolean): Self = this.set("emojisToShowFilter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEmojisToShowFilter: Self = this.set("emojisToShowFilter", js.undefined)
+    @scala.inline
+    def setEnableFrequentEmojiSort(value: Boolean): Self = this.set("enableFrequentEmojiSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableFrequentEmojiSort: Self = this.set("enableFrequentEmojiSort", js.undefined)
+    @scala.inline
+    def setExcludeVarargs(value: CategoryName*): Self = this.set("exclude", js.Array(value :_*))
+    @scala.inline
+    def setExclude(value: js.Array[CategoryName]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclude: Self = this.set("exclude", js.undefined)
+    @scala.inline
+    def setI18n(value: PartialI18n): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI18n: Self = this.set("i18n", js.undefined)
+    @scala.inline
+    def setIcons(value: CustomIcons): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setIncludeVarargs(value: CategoryName*): Self = this.set("include", js.Array(value :_*))
+    @scala.inline
+    def setInclude(value: js.Array[CategoryName]): Self = this.set("include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+    @scala.inline
+    def setNative(value: Boolean): Self = this.set("native", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNative: Self = this.set("native", js.undefined)
+    @scala.inline
+    def setNotFound(value: () => Component[js.Object, js.Object, _]): Self = this.set("notFound", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteNotFound: Self = this.set("notFound", js.undefined)
+    @scala.inline
+    def setNotFoundEmoji(value: String): Self = this.set("notFoundEmoji", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotFoundEmoji: Self = this.set("notFoundEmoji", js.undefined)
+    @scala.inline
+    def setOnClick(value: (/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnSelect(value: /* emoji */ EmojiData => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnSkinChange(value: /* skin */ EmojiSkin => Unit): Self = this.set("onSkinChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSkinChange: Self = this.set("onSkinChange", js.undefined)
+    @scala.inline
+    def setPerLine(value: Double): Self = this.set("perLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerLine: Self = this.set("perLine", js.undefined)
+    @scala.inline
+    def setRecentVarargs(value: String*): Self = this.set("recent", js.Array(value :_*))
+    @scala.inline
+    def setRecent(value: js.Array[String]): Self = this.set("recent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecent: Self = this.set("recent", js.undefined)
+    @scala.inline
+    def setSet(value: EmojiSet): Self = this.set("set", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSet: Self = this.set("set", js.undefined)
+    @scala.inline
+    def setSheetSize(value: EmojiSheetSize): Self = this.set("sheetSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetSize: Self = this.set("sheetSize", js.undefined)
+    @scala.inline
+    def setShowPreview(value: Boolean): Self = this.set("showPreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPreview: Self = this.set("showPreview", js.undefined)
+    @scala.inline
+    def setShowSkinTones(value: Boolean): Self = this.set("showSkinTones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSkinTones: Self = this.set("showSkinTones", js.undefined)
+    @scala.inline
+    def setSkin(value: EmojiSkin): Self = this.set("skin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkin: Self = this.set("skin", js.undefined)
+    @scala.inline
+    def setSkinEmoji(value: String): Self = this.set("skinEmoji", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkinEmoji: Self = this.set("skinEmoji", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTheme(value: auto | light | dark): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUseButton(value: Boolean): Self = this.set("useButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseButton: Self = this.set("useButton", js.undefined)
+  }
+  
 }
 

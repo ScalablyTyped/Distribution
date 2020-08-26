@@ -39,7 +39,7 @@ class Authorizer protected () extends CustomResource {
   val authorizerType: Output_[String] = js.native
   /**
     * The authorizer's Uniform Resource Identifier (URI).
-    * For `REQUEST` authorizers this must be a well-formed Lambda function URI, such as the `invokeArn` attribute of the [`aws.lambda.Function`](https://www.terraform.io/docs/providers/aws/r/lambda_function.html) resource.
+    * For `REQUEST` authorizers this must be a well-formed Lambda function URI, such as the `invokeArn` attribute of the `aws.lambda.Function` resource.
     * Supported only for `REQUEST` authorizers.
     */
   val authorizerUri: Output_[js.UndefOr[String]] = js.native
@@ -71,8 +71,10 @@ object Authorizer extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Authorizer = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Authorizer = js.native
   def get(name: String, id: Input[ID], state: AuthorizerState): Authorizer = js.native
   def get(name: String, id: Input[ID], state: AuthorizerState, opts: CustomResourceOptions): Authorizer = js.native
   /**

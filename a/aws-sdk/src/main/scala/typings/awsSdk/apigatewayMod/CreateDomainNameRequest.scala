@@ -54,31 +54,64 @@ trait CreateDomainNameRequest extends js.Object {
 
 object CreateDomainNameRequest {
   @scala.inline
-  def apply(
-    domainName: String,
-    certificateArn: String = null,
-    certificateBody: String = null,
-    certificateChain: String = null,
-    certificateName: String = null,
-    certificatePrivateKey: String = null,
-    endpointConfiguration: EndpointConfiguration = null,
-    regionalCertificateArn: String = null,
-    regionalCertificateName: String = null,
-    securityPolicy: SecurityPolicy = null,
-    tags: MapOfStringToString = null
-  ): CreateDomainNameRequest = {
+  def apply(domainName: String): CreateDomainNameRequest = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (certificateBody != null) __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
-    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
-    if (certificateName != null) __obj.updateDynamic("certificateName")(certificateName.asInstanceOf[js.Any])
-    if (certificatePrivateKey != null) __obj.updateDynamic("certificatePrivateKey")(certificatePrivateKey.asInstanceOf[js.Any])
-    if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration.asInstanceOf[js.Any])
-    if (regionalCertificateArn != null) __obj.updateDynamic("regionalCertificateArn")(regionalCertificateArn.asInstanceOf[js.Any])
-    if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName.asInstanceOf[js.Any])
-    if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDomainNameRequest]
   }
+  @scala.inline
+  implicit class CreateDomainNameRequestOps[Self <: CreateDomainNameRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateArn(value: String): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    @scala.inline
+    def setCertificateBody(value: String): Self = this.set("certificateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateBody: Self = this.set("certificateBody", js.undefined)
+    @scala.inline
+    def setCertificateChain(value: String): Self = this.set("certificateChain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateChain: Self = this.set("certificateChain", js.undefined)
+    @scala.inline
+    def setCertificateName(value: String): Self = this.set("certificateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateName: Self = this.set("certificateName", js.undefined)
+    @scala.inline
+    def setCertificatePrivateKey(value: String): Self = this.set("certificatePrivateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatePrivateKey: Self = this.set("certificatePrivateKey", js.undefined)
+    @scala.inline
+    def setEndpointConfiguration(value: EndpointConfiguration): Self = this.set("endpointConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointConfiguration: Self = this.set("endpointConfiguration", js.undefined)
+    @scala.inline
+    def setRegionalCertificateArn(value: String): Self = this.set("regionalCertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionalCertificateArn: Self = this.set("regionalCertificateArn", js.undefined)
+    @scala.inline
+    def setRegionalCertificateName(value: String): Self = this.set("regionalCertificateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionalCertificateName: Self = this.set("regionalCertificateName", js.undefined)
+    @scala.inline
+    def setSecurityPolicy(value: SecurityPolicy): Self = this.set("securityPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityPolicy: Self = this.set("securityPolicy", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 /**
   * Lolex clock for a Node environment.
   */
-/* Inlined lolex.lolex.LolexClock<lolex.lolex.NodeTimer> & {hrtime (prevTime ? : [number, number]): [number, number], queueMicrotask (callback : (): void): void, nextTick (callback : (): void): void, runMicrotasks (): void} */
+/* Inlined lolex.lolex.LolexClock<lolex.lolex.NodeTimer> & {hrtime (prevTime : [number, number] | undefined): [number, number], queueMicrotask (callback : (): void): void, nextTick (callback : (): void): void, runMicrotasks (): void} */
 @js.native
 trait NodeClock extends Clock {
   /**

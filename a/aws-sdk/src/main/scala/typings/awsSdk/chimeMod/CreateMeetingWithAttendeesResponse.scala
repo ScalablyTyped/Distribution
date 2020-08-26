@@ -19,16 +19,38 @@ trait CreateMeetingWithAttendeesResponse extends js.Object {
 
 object CreateMeetingWithAttendeesResponse {
   @scala.inline
-  def apply(
-    Attendees: AttendeeList = null,
-    Errors: BatchCreateAttendeeErrorList = null,
-    Meeting: Meeting = null
-  ): CreateMeetingWithAttendeesResponse = {
+  def apply(): CreateMeetingWithAttendeesResponse = {
     val __obj = js.Dynamic.literal()
-    if (Attendees != null) __obj.updateDynamic("Attendees")(Attendees.asInstanceOf[js.Any])
-    if (Errors != null) __obj.updateDynamic("Errors")(Errors.asInstanceOf[js.Any])
-    if (Meeting != null) __obj.updateDynamic("Meeting")(Meeting.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMeetingWithAttendeesResponse]
   }
+  @scala.inline
+  implicit class CreateMeetingWithAttendeesResponseOps[Self <: CreateMeetingWithAttendeesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttendeesVarargs(value: Attendee*): Self = this.set("Attendees", js.Array(value :_*))
+    @scala.inline
+    def setAttendees(value: AttendeeList): Self = this.set("Attendees", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttendees: Self = this.set("Attendees", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: CreateAttendeeError*): Self = this.set("Errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: BatchCreateAttendeeErrorList): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("Errors", js.undefined)
+    @scala.inline
+    def setMeeting(value: Meeting): Self = this.set("Meeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeeting: Self = this.set("Meeting", js.undefined)
+  }
+  
 }
 

@@ -27,7 +27,16 @@ class ElementEvents protected () extends js.Object {
     * @param cancelable
     */
   def publish(eventName: String): js.Any = js.native
+  def publish(
+    eventName: String,
+    detail: js.UndefOr[scala.Nothing],
+    bubbles: js.UndefOr[scala.Nothing],
+    cancelable: Boolean
+  ): js.Any = js.native
+  def publish(eventName: String, detail: js.UndefOr[scala.Nothing], bubbles: Boolean): js.Any = js.native
+  def publish(eventName: String, detail: js.UndefOr[scala.Nothing], bubbles: Boolean, cancelable: Boolean): js.Any = js.native
   def publish(eventName: String, detail: js.Object): js.Any = js.native
+  def publish(eventName: String, detail: js.Object, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): js.Any = js.native
   def publish(eventName: String, detail: js.Object, bubbles: Boolean): js.Any = js.native
   def publish(eventName: String, detail: js.Object, bubbles: Boolean, cancelable: Boolean): js.Any = js.native
   /**

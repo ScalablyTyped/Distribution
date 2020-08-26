@@ -81,7 +81,7 @@ trait PrintTemplate extends Accessor {
     */
   var layoutOptions: PrintTemplateLayoutOptions = js.native
   /**
-    * The optional map scale of the printed map. Only applies when `preserveScale = true`. If `outScale` is less than 1, then the printed map will use the scale of the input map.
+    * The optional map scale of the printed map. Only applies when `scalePreserved = true`. If `outScale` is less than 1, then the printed map will use the scale of the input map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#outScale)
     *
@@ -96,6 +96,14 @@ trait PrintTemplate extends Accessor {
     * @default true
     */
   var preserveScale: Boolean = js.native
+  /**
+    * Define whether the printed map should preserve map scale or map extent. If `true`, the printed map will use the `outScale` property or default to the scale of the input map. If `false`, the printed map will use the same extent as the input map and thus scale might change.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#scalePreserved)
+    *
+    * @default true
+    */
+  var scalePreserved: Boolean = js.native
   /**
     * When `true`, labels will be shown on the layout.
     *

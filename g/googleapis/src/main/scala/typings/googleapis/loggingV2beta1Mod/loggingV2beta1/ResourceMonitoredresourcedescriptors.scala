@@ -92,6 +92,7 @@ class ResourceMonitoredresourcedescriptors protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListMonitoredResourceDescriptorsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMonitoredResourceDescriptorsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListMonitoredResourceDescriptorsResponse] = js.native
   def list(params: ParamsResourceMonitoredresourcedescriptorsList): GaxiosPromise[SchemaListMonitoredResourceDescriptorsResponse] = js.native
   def list(
     params: ParamsResourceMonitoredresourcedescriptorsList,

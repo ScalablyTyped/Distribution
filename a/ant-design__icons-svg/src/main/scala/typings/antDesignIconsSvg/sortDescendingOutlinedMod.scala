@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/SortDescendingOutlined", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/SortDescendingOutlined", JSImport.Namespace)
 @js.native
 object sortDescendingOutlinedMod extends js.Object {
   val default: IconDefinition = js.native

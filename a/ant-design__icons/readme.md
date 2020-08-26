@@ -4,15 +4,15 @@
 Typings are for version 4.2.1
 
 ## Library description:
-<h1 align="center"> Ant Design Icons for React </h1>
+Ant Design Icons
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @ant-design/icons |
 | Keywords           | - |
-| # releases         | 83 |
-| # dependents       | 144 |
-| # downloads        | 8918820 |
+| # releases         | 84 |
+| # dependents       | 148 |
+| # downloads        | 9198978 |
 | # stars            | 0 |
 
 ## Links

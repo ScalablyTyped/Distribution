@@ -22,15 +22,32 @@ trait DescribeDeliveryStreamInput extends js.Object {
 
 object DescribeDeliveryStreamInput {
   @scala.inline
-  def apply(
-    DeliveryStreamName: DeliveryStreamName,
-    ExclusiveStartDestinationId: DestinationId = null,
-    Limit: js.UndefOr[DescribeDeliveryStreamInputLimit] = js.undefined
-  ): DescribeDeliveryStreamInput = {
+  def apply(DeliveryStreamName: DeliveryStreamName): DescribeDeliveryStreamInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
-    if (ExclusiveStartDestinationId != null) __obj.updateDynamic("ExclusiveStartDestinationId")(ExclusiveStartDestinationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDeliveryStreamInput]
   }
+  @scala.inline
+  implicit class DescribeDeliveryStreamInputOps[Self <: DescribeDeliveryStreamInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryStreamName(value: DeliveryStreamName): Self = this.set("DeliveryStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExclusiveStartDestinationId(value: DestinationId): Self = this.set("ExclusiveStartDestinationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveStartDestinationId: Self = this.set("ExclusiveStartDestinationId", js.undefined)
+    @scala.inline
+    def setLimit(value: DescribeDeliveryStreamInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+  }
+  
 }
 

@@ -4,11 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/utils/miscUtil", JSImport.Namespace)
+@JSImport("rc-picker/es/utils/miscUtil", JSImport.Namespace)
 @js.native
 object miscUtilMod extends js.Object {
   def default(props: js.Any): js.Any = js.native
-  def getValue[T](values: js.UndefOr[(js.Array[T | Null]) | Null], index: Double): T | Null = js.native
+  def getValue[T](values: js.UndefOr[scala.Nothing], index: Double): T | Null = js.native
+  def getValue[T](values: js.Array[T | Null], index: Double): T | Null = js.native
+  def getValue[T](values: Null, index: Double): T | Null = js.native
   def leftPad(str: String, length: Double): String = js.native
   def leftPad(str: String, length: Double, fill: String): String = js.native
   def leftPad(str: Double, length: Double): String = js.native

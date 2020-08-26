@@ -1,6 +1,5 @@
 package typings.vexdb
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.vexdb.requestObjectsMod.AwardsRequestObject
 import typings.vexdb.requestObjectsMod.EventsRequestObject
 import typings.vexdb.requestObjectsMod.MatchesRequestObject
@@ -43,6 +42,5 @@ object getMod extends js.Object {
   def default_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[js.Array[SkillsResponseObject]] = js.native
   @JSName("default")
   def default_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[js.Array[TeamsResponseObject]] = js.native
-  def permute[I /* <: StringDictionary[js.Array[String]] */](permutations: I): js.Array[I] = js.native
 }
 

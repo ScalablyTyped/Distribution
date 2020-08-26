@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@octokit/rest/dist-types/version", JSImport.Namespace)
 @js.native
 object versionMod extends js.Object {
-  val VERSION: /* "17.11.2" */ String = js.native
+  val VERSION: /* "18.0.3" */ String = js.native
 }
 

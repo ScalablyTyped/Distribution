@@ -41,22 +41,46 @@ trait SchemaHttpRequestContext extends js.Object {
 
 object SchemaHttpRequestContext {
   @scala.inline
-  def apply(
-    method: String = null,
-    referrer: String = null,
-    remoteIp: String = null,
-    responseStatusCode: js.UndefOr[Double] = js.undefined,
-    url: String = null,
-    userAgent: String = null
-  ): SchemaHttpRequestContext = {
+  def apply(): SchemaHttpRequestContext = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
-    if (remoteIp != null) __obj.updateDynamic("remoteIp")(remoteIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseStatusCode)) __obj.updateDynamic("responseStatusCode")(responseStatusCode.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRequestContext]
   }
+  @scala.inline
+  implicit class SchemaHttpRequestContextOps[Self <: SchemaHttpRequestContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setReferrer(value: String): Self = this.set("referrer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferrer: Self = this.set("referrer", js.undefined)
+    @scala.inline
+    def setRemoteIp(value: String): Self = this.set("remoteIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteIp: Self = this.set("remoteIp", js.undefined)
+    @scala.inline
+    def setResponseStatusCode(value: Double): Self = this.set("responseStatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseStatusCode: Self = this.set("responseStatusCode", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+  }
+  
 }
 

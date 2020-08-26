@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Lists the values that specify how a media file should be loaded when the page loads.
   */
+@js.native
 trait ASPxClientHtmlEditorMediaPreloadMode extends js.Object
 

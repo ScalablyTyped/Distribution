@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Popup[E /* <: Popup_ */] extends js.Object {
-  var popup: E
+  var popup: E = js.native
 }
 
 object Popup {
@@ -15,5 +16,20 @@ object Popup {
     val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
     __obj.asInstanceOf[Popup[E]]
   }
+  @scala.inline
+  implicit class PopupOps[Self <: Popup[_], /* <: typings.leaflet.mod.Popup_ */ E] (val x: Self with Popup[E]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPopup(value: E): Self = this.set("popup", value.asInstanceOf[js.Any])
+  }
+  
 }
 

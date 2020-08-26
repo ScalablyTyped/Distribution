@@ -28,6 +28,7 @@ class ResourceProjectsScanconfigsScanrunsFindingtypestats protected () extends j
     */
   def list(): GaxiosPromise[SchemaListFindingTypeStatsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFindingTypeStatsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFindingTypeStatsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsScanrunsFindingtypestatsList): GaxiosPromise[SchemaListFindingTypeStatsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsScanrunsFindingtypestatsList,

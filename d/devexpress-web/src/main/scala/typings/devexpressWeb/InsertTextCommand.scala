@@ -15,6 +15,7 @@ trait InsertTextCommand extends CommandWithSimpleStateBase {
     * @param subDocumentId An integer value specifying the sub-document.
     */
   def execute(text: String): Boolean = js.native
+  def execute(text: String, interval: js.UndefOr[scala.Nothing], subDocumentId: Double): Boolean = js.native
   def execute(text: String, interval: Double): Boolean = js.native
   def execute(text: String, interval: Double, subDocumentId: Double): Boolean = js.native
   def execute(text: String, interval: Interval): Boolean = js.native

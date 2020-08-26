@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubprocessBashifyOptions extends js.Object {
   /**
     * Mask file path to first argument.
@@ -14,7 +15,7 @@ trait SubprocessBashifyOptions extends js.Object {
     *
     * The default is `true`.
     */
-  var maskArgv0: js.UndefOr[Boolean] = js.undefined
+  var maskArgv0: js.UndefOr[Boolean] = js.native
   /**
     * Mask file path to second argument.
     *
@@ -24,7 +25,7 @@ trait SubprocessBashifyOptions extends js.Object {
     *
     * The default is `false`.
     */
-  var maskArgv1: js.UndefOr[Boolean] = js.undefined
+  var maskArgv1: js.UndefOr[Boolean] = js.native
   /**
     * Remove the first argument from output.
     *
@@ -33,21 +34,39 @@ trait SubprocessBashifyOptions extends js.Object {
     *
     * The default is `false`.
     */
-  var shiftArgv0: js.UndefOr[Boolean] = js.undefined
+  var shiftArgv0: js.UndefOr[Boolean] = js.native
 }
 
 object SubprocessBashifyOptions {
   @scala.inline
-  def apply(
-    maskArgv0: js.UndefOr[Boolean] = js.undefined,
-    maskArgv1: js.UndefOr[Boolean] = js.undefined,
-    shiftArgv0: js.UndefOr[Boolean] = js.undefined
-  ): SubprocessBashifyOptions = {
+  def apply(): SubprocessBashifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maskArgv0)) __obj.updateDynamic("maskArgv0")(maskArgv0.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskArgv1)) __obj.updateDynamic("maskArgv1")(maskArgv1.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftArgv0)) __obj.updateDynamic("shiftArgv0")(shiftArgv0.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubprocessBashifyOptions]
   }
+  @scala.inline
+  implicit class SubprocessBashifyOptionsOps[Self <: SubprocessBashifyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaskArgv0(value: Boolean): Self = this.set("maskArgv0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskArgv0: Self = this.set("maskArgv0", js.undefined)
+    @scala.inline
+    def setMaskArgv1(value: Boolean): Self = this.set("maskArgv1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskArgv1: Self = this.set("maskArgv1", js.undefined)
+    @scala.inline
+    def setShiftArgv0(value: Boolean): Self = this.set("shiftArgv0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShiftArgv0: Self = this.set("shiftArgv0", js.undefined)
+  }
+  
 }
 

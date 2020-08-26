@@ -57,6 +57,7 @@ trait IgTreeGridUpdatingMethods extends js.Object {
     * @param raiseEvents Specifies whether or not updating events should be raised for this operation.
     */
   def endEdit(): Boolean = js.native
+  def endEdit(update: js.UndefOr[scala.Nothing], raiseEvents: Boolean): Boolean = js.native
   def endEdit(update: Boolean): Boolean = js.native
   def endEdit(update: Boolean, raiseEvents: Boolean): Boolean = js.native
   /**

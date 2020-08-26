@@ -1,7 +1,7 @@
 
 # Scala.js typings for rlp
 
-Typings are for version 2.2.4
+Typings are for version 2.2.6
 
 ## Library description:
 Recursive Length Prefix Encoding Module

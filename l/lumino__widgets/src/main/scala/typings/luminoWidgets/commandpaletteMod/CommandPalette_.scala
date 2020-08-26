@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/commandpalette", "CommandPalette")
+@JSImport("@lumino/widgets/types/commandpalette", "CommandPalette")
 @js.native
 class CommandPalette_ protected () extends Widget {
   /**

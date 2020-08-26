@@ -31,7 +31,7 @@ class SelectorDatabaseSource protected () extends SelectorSource {
     * In version 6.2.0: introduced
     */
   def sortBar: GridSortBar = js.native
-  def sortBar(newValue: GridSortBar): js.Any = js.native
+  def sortBar_=(newValue: GridSortBar): Unit = js.native
 }
 
 /* static members */

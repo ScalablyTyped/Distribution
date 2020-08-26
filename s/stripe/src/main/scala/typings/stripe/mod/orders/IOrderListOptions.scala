@@ -1,56 +1,65 @@
 package typings.stripe.mod.orders
 
 import typings.stripe.anon.Fulfilled
-import typings.stripe.mod.IDateFilter
 import typings.stripe.mod.IListOptionsCreated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IOrderListOptions extends IListOptionsCreated {
   /**
     * Only return orders for the given customer
     */
-  var customer: js.UndefOr[String] = js.undefined
+  var customer: js.UndefOr[String] = js.native
   /**
     * Only return orders with the given IDs
     */
-  var ids: js.UndefOr[js.Array[String]] = js.undefined
+  var ids: js.UndefOr[js.Array[String]] = js.native
   /**
     * Only return orders that have the given status. One of "created", "paid", "fulfilled", or "refunded".
     */
-  var status: OrderStatus
+  var status: OrderStatus = js.native
   /**
     * Filter orders based on when they were "paid", "fulfilled", "canceled", or "returned"
     */
-  var status_transitions: js.UndefOr[Fulfilled] = js.undefined
+  var status_transitions: js.UndefOr[Fulfilled] = js.native
 }
 
 object IOrderListOptions {
   @scala.inline
-  def apply(
-    status: OrderStatus,
-    created: String | IDateFilter = null,
-    customer: String = null,
-    ending_before: String = null,
-    expand: js.Array[String] = null,
-    ids: js.Array[String] = null,
-    include: js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    starting_after: String = null,
-    status_transitions: Fulfilled = null
-  ): IOrderListOptions = {
+  def apply(status: OrderStatus): IOrderListOptions = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
-    if (status_transitions != null) __obj.updateDynamic("status_transitions")(status_transitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrderListOptions]
   }
+  @scala.inline
+  implicit class IOrderListOptionsOps[Self <: IOrderListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: OrderStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomer(value: String): Self = this.set("customer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomer: Self = this.set("customer", js.undefined)
+    @scala.inline
+    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    @scala.inline
+    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+    @scala.inline
+    def setStatus_transitions(value: Fulfilled): Self = this.set("status_transitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus_transitions: Self = this.set("status_transitions", js.undefined)
+  }
+  
 }
 

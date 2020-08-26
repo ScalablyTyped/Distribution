@@ -12,7 +12,7 @@ Pipe log data to a stream, fuggetabout rotation
 | Keywords           | log, rotate, pipe, stream |
 | # releases         | 0 |
 | # dependents       | 22 |
-| # downloads        | 649879 |
+| # downloads        | 625913 |
 | # stars            | 4 |
 
 ## Links

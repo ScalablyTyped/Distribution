@@ -16,18 +16,38 @@ trait PartialStyleRulesFormCont extends js.Object {
 
 object PartialStyleRulesFormCont {
   @scala.inline
-  def apply(
-    fullWidth: CSSProperties = null,
-    marginDense: CSSProperties = null,
-    marginNormal: CSSProperties = null,
-    root: CSSProperties = null
-  ): PartialStyleRulesFormCont = {
+  def apply(): PartialStyleRulesFormCont = {
     val __obj = js.Dynamic.literal()
-    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
-    if (marginDense != null) __obj.updateDynamic("marginDense")(marginDense.asInstanceOf[js.Any])
-    if (marginNormal != null) __obj.updateDynamic("marginNormal")(marginNormal.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesFormCont]
   }
+  @scala.inline
+  implicit class PartialStyleRulesFormContOps[Self <: PartialStyleRulesFormCont] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFullWidth(value: CSSProperties): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    @scala.inline
+    def setMarginDense(value: CSSProperties): Self = this.set("marginDense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginDense: Self = this.set("marginDense", js.undefined)
+    @scala.inline
+    def setMarginNormal(value: CSSProperties): Self = this.set("marginNormal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginNormal: Self = this.set("marginNormal", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

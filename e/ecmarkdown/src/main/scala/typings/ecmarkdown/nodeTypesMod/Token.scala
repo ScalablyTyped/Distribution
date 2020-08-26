@@ -32,69 +32,58 @@ trait Token extends js.Object
 
 object Token {
   @scala.inline
-  def CommentToken(contents: String, name: comment, location: LocationRange = null): Token = {
+  def CommentToken(contents: String, name: comment): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def ParabreakToken(contents: String, name: parabreak, location: LocationRange = null): Token = {
+  def ParabreakToken(contents: String, name: parabreak): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def OrderedListToken(contents: String, name: ol, location: LocationRange = null): Token = {
+  def OrderedListToken(contents: String, name: ol): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def WhitespaceToken(contents: String, name: whitespace, location: LocationRange = null): Token = {
+  def WhitespaceToken(contents: String, name: whitespace): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def FormatToken(contents: String, name: Format, location: LocationRange = null): Token = {
+  def FormatToken(contents: String, name: Format): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def EOFToken(done: `true`, name: EOF, location: LocationRange = null): Token = {
+  def EOFToken(done: `true`, name: EOF): Token = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def OpaqueTagToken(contents: String, name: opaqueTag, location: LocationRange = null): Token = {
+  def OpaqueTagToken(contents: String, name: opaqueTag): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def TextToken(contents: String, name: text, location: LocationRange = null): Token = {
+  def TextToken(contents: String, name: text): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def LinebreakToken(contents: String, name: linebreak, location: LocationRange = null): Token = {
+  def LinebreakToken(contents: String, name: linebreak): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def UnorderedListToken(contents: String, name: ul, location: LocationRange = null): Token = {
+  def UnorderedListToken(contents: String, name: ul): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def TagToken(contents: String, name: tag, location: LocationRange = null): Token = {
+  def TagToken(contents: String, name: tag): Token = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
 }

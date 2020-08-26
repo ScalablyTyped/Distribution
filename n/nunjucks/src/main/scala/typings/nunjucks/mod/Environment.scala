@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 class Environment () extends js.Object {
   def this(loader: js.Array[ILoader]) = this()
   def this(loader: ILoader) = this()
+  def this(loader: js.UndefOr[scala.Nothing], opts: ConfigureOptions) = this()
   def this(loader: js.Array[ILoader], opts: ConfigureOptions) = this()
   def this(loader: Null, opts: ConfigureOptions) = this()
   def this(loader: ILoader, opts: ConfigureOptions) = this()
@@ -24,6 +25,7 @@ class Environment () extends js.Object {
   def getFilter(name: String): js.Function1[/* repeated */ js.Any, _] = js.native
   def getGlobal(name: String): js.Any = js.native
   def getTemplate(name: String): Unit = js.native
+  def getTemplate(name: String, eagerCompile: js.UndefOr[scala.Nothing], callback: Callback[Error, Template]): Unit = js.native
   def getTemplate(name: String, eagerCompile: Boolean): Unit = js.native
   def getTemplate(name: String, eagerCompile: Boolean, callback: Callback[Error, Template]): Unit = js.native
   @JSName("getTemplate")
@@ -33,6 +35,7 @@ class Environment () extends js.Object {
   def hasExtension(name: String): Boolean = js.native
   def removeExtension(name: String): Unit = js.native
   def render(name: String): String = js.native
+  def render(name: String, context: js.UndefOr[scala.Nothing], callback: TemplateCallback[String]): Unit = js.native
   def render(name: String, context: js.Object): String = js.native
   def render(name: String, context: js.Object, callback: TemplateCallback[String]): Unit = js.native
   def renderString(name: String, context: js.Object): String = js.native

@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateByExampleOptions extends js.Object {
-  var keepNull: js.UndefOr[Boolean] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var mergeObjects: js.UndefOr[Boolean] = js.undefined
-  var waitForSync: js.UndefOr[Boolean] = js.undefined
+  var keepNull: js.UndefOr[Boolean] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var mergeObjects: js.UndefOr[Boolean] = js.native
+  var waitForSync: js.UndefOr[Boolean] = js.native
 }
 
 object UpdateByExampleOptions {
   @scala.inline
-  def apply(
-    keepNull: js.UndefOr[Boolean] = js.undefined,
-    limit: js.UndefOr[Double] = js.undefined,
-    mergeObjects: js.UndefOr[Boolean] = js.undefined,
-    waitForSync: js.UndefOr[Boolean] = js.undefined
-  ): UpdateByExampleOptions = {
+  def apply(): UpdateByExampleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepNull)) __obj.updateDynamic("keepNull")(keepNull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeObjects)) __obj.updateDynamic("mergeObjects")(mergeObjects.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateByExampleOptions]
   }
+  @scala.inline
+  implicit class UpdateByExampleOptionsOps[Self <: UpdateByExampleOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeepNull(value: Boolean): Self = this.set("keepNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepNull: Self = this.set("keepNull", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMergeObjects(value: Boolean): Self = this.set("mergeObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeObjects: Self = this.set("mergeObjects", js.undefined)
+    @scala.inline
+    def setWaitForSync(value: Boolean): Self = this.set("waitForSync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForSync: Self = this.set("waitForSync", js.undefined)
+  }
+  
 }
 

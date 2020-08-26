@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply[T](`val`: T): T = js.native
+  def apply[T](`val`: T, circular: js.UndefOr[scala.Nothing], depth: Double): T = js.native
   def apply[T](`val`: T, circular: Boolean): T = js.native
   def apply[T](`val`: T, circular: Boolean, depth: Double): T = js.native
   /**

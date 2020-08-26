@@ -18,10 +18,30 @@ trait CreateAttendeeRequestItem extends js.Object {
 
 object CreateAttendeeRequestItem {
   @scala.inline
-  def apply(ExternalUserId: ExternalUserIdType, Tags: AttendeeTagList = null): CreateAttendeeRequestItem = {
+  def apply(ExternalUserId: ExternalUserIdType): CreateAttendeeRequestItem = {
     val __obj = js.Dynamic.literal(ExternalUserId = ExternalUserId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAttendeeRequestItem]
   }
+  @scala.inline
+  implicit class CreateAttendeeRequestItemOps[Self <: CreateAttendeeRequestItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalUserId(value: ExternalUserIdType): Self = this.set("ExternalUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: AttendeeTagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

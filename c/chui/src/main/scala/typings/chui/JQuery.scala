@@ -261,10 +261,20 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off(
+    events: String,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def off(events: String, selector: String): JQuery = js.native
   def off(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   def off(events: ChUIEventInterface): JQuery = js.native
   def off(events: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off(
+    events: ChUIEventInterface,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def off(events: ChUIEventInterface, selector: String): JQuery = js.native
   def off(
     events: ChUIEventInterface,
@@ -431,6 +441,10 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def unbind(): JQuery = js.native
+  def unbind(
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def unbind(eventType: String): JQuery = js.native
   /**
     * Remove a previously-attached event handler from the elements.

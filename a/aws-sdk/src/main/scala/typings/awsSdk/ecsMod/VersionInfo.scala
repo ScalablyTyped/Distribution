@@ -22,12 +22,34 @@ trait VersionInfo extends js.Object {
 
 object VersionInfo {
   @scala.inline
-  def apply(agentHash: String = null, agentVersion: String = null, dockerVersion: String = null): VersionInfo = {
+  def apply(): VersionInfo = {
     val __obj = js.Dynamic.literal()
-    if (agentHash != null) __obj.updateDynamic("agentHash")(agentHash.asInstanceOf[js.Any])
-    if (agentVersion != null) __obj.updateDynamic("agentVersion")(agentVersion.asInstanceOf[js.Any])
-    if (dockerVersion != null) __obj.updateDynamic("dockerVersion")(dockerVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionInfo]
   }
+  @scala.inline
+  implicit class VersionInfoOps[Self <: VersionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentHash(value: String): Self = this.set("agentHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentHash: Self = this.set("agentHash", js.undefined)
+    @scala.inline
+    def setAgentVersion(value: String): Self = this.set("agentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentVersion: Self = this.set("agentVersion", js.undefined)
+    @scala.inline
+    def setDockerVersion(value: String): Self = this.set("dockerVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDockerVersion: Self = this.set("dockerVersion", js.undefined)
+  }
+  
 }
 

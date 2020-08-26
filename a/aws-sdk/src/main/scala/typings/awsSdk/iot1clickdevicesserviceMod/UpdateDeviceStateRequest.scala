@@ -19,10 +19,28 @@ trait UpdateDeviceStateRequest extends js.Object {
 
 object UpdateDeviceStateRequest {
   @scala.inline
-  def apply(DeviceId: string, Enabled: js.UndefOr[boolean] = js.undefined): UpdateDeviceStateRequest = {
+  def apply(DeviceId: string): UpdateDeviceStateRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceStateRequest]
   }
+  @scala.inline
+  implicit class UpdateDeviceStateRequestOps[Self <: UpdateDeviceStateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceId(value: string): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+  }
+  
 }
 

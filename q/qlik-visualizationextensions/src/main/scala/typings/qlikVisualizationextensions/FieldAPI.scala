@@ -70,6 +70,7 @@ object FieldAPI extends js.Object {
       * @return - A promise.
       */
     def select(Array: js.Array[Double]): IPromise[_] = js.native
+    def select(Array: js.Array[Double], toggle: js.UndefOr[scala.Nothing], softlock: Boolean): IPromise[_] = js.native
     def select(Array: js.Array[Double], toggle: Boolean): IPromise[_] = js.native
     def select(Array: js.Array[Double], toggle: Boolean, softlock: Boolean): IPromise[_] = js.native
     /**
@@ -118,6 +119,7 @@ object FieldAPI extends js.Object {
       * @return - A promise.
       */
     def selectValues(array: js.Array[IQFieldValue]): IPromise[_] = js.native
+    def selectValues(array: js.Array[IQFieldValue], toggle: js.UndefOr[scala.Nothing], softlock: Boolean): IPromise[_] = js.native
     def selectValues(array: js.Array[IQFieldValue], toggle: Boolean): IPromise[_] = js.native
     def selectValues(array: js.Array[IQFieldValue], toggle: Boolean, softlock: Boolean): IPromise[_] = js.native
     /**
@@ -164,6 +166,7 @@ object FieldAPI extends js.Object {
       * @return - A promise.
       */
     def select(): IPromise[_] = js.native
+    def select(toggle: js.UndefOr[scala.Nothing], softlock: Boolean): IPromise[_] = js.native
     def select(toggle: Boolean): IPromise[_] = js.native
     def select(toggle: Boolean, softlock: Boolean): IPromise[_] = js.native
   }

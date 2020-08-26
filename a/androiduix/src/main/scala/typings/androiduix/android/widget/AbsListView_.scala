@@ -45,24 +45,19 @@ import typings.androiduix.android.widget.AdapterView.OnItemClickListener
 import typings.androiduix.android.widget.AdapterView.OnItemLongClickListener
 import typings.androiduix.android.widget.AdapterView.OnItemSelectedListener
 import typings.androiduix.androidui.attr.AttrBinder.ClassBinderMap
-import typings.androiduix.java.lang.Runnable
-import typings.androiduix.java.util.ArrayList
-import typings.androiduix.java.util.List
+import typings.androiduix.java_.lang.Runnable
+import typings.androiduix.java_.util.ArrayList
+import typings.androiduix.java_.util.List
 import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.AbsListView")
 @js.native
-abstract class AbsListView_ protected ()
+trait AbsListView_
   extends AdapterView[ListAdapter]
      with OnGlobalLayoutListener
      with OnTouchModeChangeListener {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
   var _mOverflingDistance: js.Any = js.native
   var mActivePointerId: js.Any = js.native
   var mAdapter: ListAdapter = js.native
@@ -150,8 +145,6 @@ abstract class AbsListView_ protected ()
   /* InferMemberOverrides */
   /* private */ override def _initAttrObserver(): js.Any = js.native
   /* InferMemberOverrides */
-  /* private */ override def _invalidateCache(): js.Any = js.native
-  /* InferMemberOverrides */
   /* private */ override def _invalidateCache(invalidateCache: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def _invalidateRect(l: js.Any, t: js.Any, r: js.Any, b: js.Any): js.Any = js.native
@@ -204,6 +197,8 @@ abstract class AbsListView_ protected ()
   /* InferMemberOverrides */
   override def awakenScrollBars(): Boolean = js.native
   /* InferMemberOverrides */
+  override def awakenScrollBars(startDelay: js.UndefOr[scala.Nothing], invalidate: Boolean): Boolean = js.native
+  /* InferMemberOverrides */
   override def awakenScrollBars(startDelay: Double): Boolean = js.native
   /* InferMemberOverrides */
   override def awakenScrollBars(startDelay: Double, invalidate: Boolean): Boolean = js.native
@@ -232,8 +227,6 @@ abstract class AbsListView_ protected ()
   /* private */ override def cancelTouchTarget(view: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   override def checkFocus(): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def checkForLongClick(): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def checkForLongClick(delayOffset: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -343,8 +336,6 @@ abstract class AbsListView_ protected ()
   override def dispatchWindowVisibilityChanged(visibility: Double): Unit = js.native
   /* InferMemberOverrides */
   override def draw(canvas: Canvas): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any, scalingRequired: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -706,8 +697,6 @@ abstract class AbsListView_ protected ()
   /* InferMemberOverrides */
   /* protected */ override def initBindElement(bindElement: HTMLElement): Unit = js.native
   /* InferMemberOverrides */
-  /* private */ override def initFromAttributes(context: js.Any, attrs: js.Any): js.Any = js.native
-  /* InferMemberOverrides */
   /* private */ override def initFromAttributes(context: js.Any, attrs: js.Any, defStyle: js.Any): js.Any = js.native
   /* private */ def initOrResetVelocityTracker(): js.Any = js.native
   /* InferMemberOverrides */
@@ -905,8 +894,6 @@ abstract class AbsListView_ protected ()
   override def onFocusLost(): Unit = js.native
   /* InferMemberOverrides */
   override def onGenericMotionEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onGlobalLayout(): js.Any = js.native
   /* InferMemberOverrides */
   override def onInterceptTouchEvent(ev: MotionEvent): Boolean = js.native
   /* InferMemberOverrides */
@@ -932,8 +919,6 @@ abstract class AbsListView_ protected ()
   /* private */ def onTouchDown(ev: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   override def onTouchEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onTouchModeChanged(isInTouchMode: Boolean): js.Any = js.native
   /* private */ def onTouchMove(ev: js.Any): js.Any = js.native
   /* private */ def onTouchUp(ev: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -991,9 +976,36 @@ abstract class AbsListView_ protected ()
   /* InferMemberOverrides */
   override def postInvalidate(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(
+    l: js.UndefOr[scala.Nothing],
+    t: js.UndefOr[scala.Nothing],
+    r: js.UndefOr[scala.Nothing],
+    b: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double, r: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -1001,9 +1013,78 @@ abstract class AbsListView_ protected ()
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -1011,9 +1092,36 @@ abstract class AbsListView_ protected ()
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -1039,8 +1147,6 @@ abstract class AbsListView_ protected ()
   /* private */ override def removeChildElement(childElement: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   override def removeDetachedView(child: View, animate: Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def removeFromArray(index: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def removeFromArray(index: js.Any, count: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -1074,6 +1180,8 @@ abstract class AbsListView_ protected ()
   /* private */ def reportScrollStateChange(newState: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   override def requestFocus(): Boolean = js.native
+  /* InferMemberOverrides */
+  override def requestFocus(direction: js.UndefOr[scala.Nothing], previouslyFocusedRect: js.Any): Boolean = js.native
   /* InferMemberOverrides */
   override def requestFocus(direction: Double): Boolean = js.native
   /* InferMemberOverrides */
@@ -1159,7 +1267,30 @@ abstract class AbsListView_ protected ()
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: js.UndefOr[scala.Nothing], radiusBottomRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: Double,
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: Double,
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double, radiusBottomRight: Double): Unit = js.native
   /* InferMemberOverrides */

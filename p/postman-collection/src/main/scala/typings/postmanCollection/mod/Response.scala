@@ -31,6 +31,7 @@ class Response protected () extends Property[ResponseDefinition] {
   def details(): js.UndefOr[Code] = js.native
   def encoding(): Format = js.native
   def json(): js.Any = js.native
+  def json(reviver: js.UndefOr[scala.Nothing], strict: Boolean): js.Any = js.native
   def json(reviver: js.Any): js.Any = js.native
   def json(reviver: js.Any, strict: Boolean): js.Any = js.native
   def reason(): String = js.native

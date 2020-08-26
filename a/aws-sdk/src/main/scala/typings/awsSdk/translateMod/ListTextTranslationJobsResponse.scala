@@ -18,14 +18,32 @@ trait ListTextTranslationJobsResponse extends js.Object {
 
 object ListTextTranslationJobsResponse {
   @scala.inline
-  def apply(
-    NextToken: NextToken = null,
-    TextTranslationJobPropertiesList: TextTranslationJobPropertiesList = null
-  ): ListTextTranslationJobsResponse = {
+  def apply(): ListTextTranslationJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TextTranslationJobPropertiesList != null) __obj.updateDynamic("TextTranslationJobPropertiesList")(TextTranslationJobPropertiesList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTextTranslationJobsResponse]
   }
+  @scala.inline
+  implicit class ListTextTranslationJobsResponseOps[Self <: ListTextTranslationJobsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTextTranslationJobPropertiesListVarargs(value: TextTranslationJobProperties*): Self = this.set("TextTranslationJobPropertiesList", js.Array(value :_*))
+    @scala.inline
+    def setTextTranslationJobPropertiesList(value: TextTranslationJobPropertiesList): Self = this.set("TextTranslationJobPropertiesList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextTranslationJobPropertiesList: Self = this.set("TextTranslationJobPropertiesList", js.undefined)
+  }
+  
 }
 

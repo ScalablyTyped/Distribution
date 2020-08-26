@@ -37,6 +37,7 @@ object fsMod extends js.Object {
   def mkdir(path: String): Unit = js.native
   def mkdir(path: String, mode: Double): Unit = js.native
   def open(fname: String): Double = js.native
+  def open(fname: String, flags: js.UndefOr[scala.Nothing], mode: Double): Double = js.native
   def open(fname: String, flags: String): Double = js.native
   def open(fname: String, flags: String, mode: Double): Double = js.native
   def openFile(fname: String): ClassSeekableStream = js.native
@@ -44,7 +45,29 @@ object fsMod extends js.Object {
   def openTextStream(fname: String): ClassBufferedStream = js.native
   def openTextStream(fname: String, flags: String): ClassBufferedStream = js.native
   def read(fd: Double, buffer: ClassBuffer): Double = js.native
+  def read(
+    fd: Double,
+    buffer: ClassBuffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): Double = js.native
+  def read(fd: Double, buffer: ClassBuffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
+  def read(
+    fd: Double,
+    buffer: ClassBuffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    position: Double
+  ): Double = js.native
   def read(fd: Double, buffer: ClassBuffer, offset: Double): Double = js.native
+  def read(
+    fd: Double,
+    buffer: ClassBuffer,
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): Double = js.native
   def read(fd: Double, buffer: ClassBuffer, offset: Double, length: Double): Double = js.native
   def read(fd: Double, buffer: ClassBuffer, offset: Double, length: Double, position: Double): Double = js.native
   def readFile(fname: String): js.Any = js.native

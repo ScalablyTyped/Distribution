@@ -15,10 +15,28 @@ trait CopyAction extends js.Object {
 
 object CopyAction {
   @scala.inline
-  def apply(DestinationBackupVaultArn: ARN, Lifecycle: Lifecycle = null): CopyAction = {
+  def apply(DestinationBackupVaultArn: ARN): CopyAction = {
     val __obj = js.Dynamic.literal(DestinationBackupVaultArn = DestinationBackupVaultArn.asInstanceOf[js.Any])
-    if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyAction]
   }
+  @scala.inline
+  implicit class CopyActionOps[Self <: CopyAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationBackupVaultArn(value: ARN): Self = this.set("DestinationBackupVaultArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLifecycle(value: Lifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+  }
+  
 }
 

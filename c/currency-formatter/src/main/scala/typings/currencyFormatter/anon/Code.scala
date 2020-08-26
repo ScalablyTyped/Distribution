@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Code extends js.Object {
-  var code: js.UndefOr[String] = js.undefined
-  var decimal: js.UndefOr[String] = js.undefined
-  var format: js.UndefOr[String | Neg] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var precision: js.UndefOr[Double] = js.undefined
-  var symbol: js.UndefOr[String] = js.undefined
-  var thousand: js.UndefOr[String] = js.undefined
+  var code: js.UndefOr[String] = js.native
+  var decimal: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String | Neg] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var precision: js.UndefOr[Double] = js.native
+  var symbol: js.UndefOr[String] = js.native
+  var thousand: js.UndefOr[String] = js.native
 }
 
 object Code {
   @scala.inline
-  def apply(
-    code: String = null,
-    decimal: String = null,
-    format: String | Neg = null,
-    locale: String = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    symbol: String = null,
-    thousand: String = null
-  ): Code = {
+  def apply(): Code = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (thousand != null) __obj.updateDynamic("thousand")(thousand.asInstanceOf[js.Any])
     __obj.asInstanceOf[Code]
   }
+  @scala.inline
+  implicit class CodeOps[Self <: Code] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setDecimal(value: String): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecimal: Self = this.set("decimal", js.undefined)
+    @scala.inline
+    def setFormat(value: String | Neg): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setThousand(value: String): Self = this.set("thousand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThousand: Self = this.set("thousand", js.undefined)
+  }
+  
 }
 

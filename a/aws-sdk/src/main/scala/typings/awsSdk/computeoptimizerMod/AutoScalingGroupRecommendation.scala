@@ -46,28 +46,62 @@ trait AutoScalingGroupRecommendation extends js.Object {
 
 object AutoScalingGroupRecommendation {
   @scala.inline
-  def apply(
-    accountId: AccountId = null,
-    autoScalingGroupArn: AutoScalingGroupArn = null,
-    autoScalingGroupName: AutoScalingGroupName = null,
-    currentConfiguration: AutoScalingGroupConfiguration = null,
-    finding: Finding = null,
-    lastRefreshTimestamp: LastRefreshTimestamp = null,
-    lookBackPeriodInDays: js.UndefOr[LookBackPeriodInDays] = js.undefined,
-    recommendationOptions: AutoScalingGroupRecommendationOptions = null,
-    utilizationMetrics: UtilizationMetrics = null
-  ): AutoScalingGroupRecommendation = {
+  def apply(): AutoScalingGroupRecommendation = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (autoScalingGroupArn != null) __obj.updateDynamic("autoScalingGroupArn")(autoScalingGroupArn.asInstanceOf[js.Any])
-    if (autoScalingGroupName != null) __obj.updateDynamic("autoScalingGroupName")(autoScalingGroupName.asInstanceOf[js.Any])
-    if (currentConfiguration != null) __obj.updateDynamic("currentConfiguration")(currentConfiguration.asInstanceOf[js.Any])
-    if (finding != null) __obj.updateDynamic("finding")(finding.asInstanceOf[js.Any])
-    if (lastRefreshTimestamp != null) __obj.updateDynamic("lastRefreshTimestamp")(lastRefreshTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(lookBackPeriodInDays)) __obj.updateDynamic("lookBackPeriodInDays")(lookBackPeriodInDays.get.asInstanceOf[js.Any])
-    if (recommendationOptions != null) __obj.updateDynamic("recommendationOptions")(recommendationOptions.asInstanceOf[js.Any])
-    if (utilizationMetrics != null) __obj.updateDynamic("utilizationMetrics")(utilizationMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingGroupRecommendation]
   }
+  @scala.inline
+  implicit class AutoScalingGroupRecommendationOps[Self <: AutoScalingGroupRecommendation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAutoScalingGroupArn(value: AutoScalingGroupArn): Self = this.set("autoScalingGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupArn: Self = this.set("autoScalingGroupArn", js.undefined)
+    @scala.inline
+    def setAutoScalingGroupName(value: AutoScalingGroupName): Self = this.set("autoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupName: Self = this.set("autoScalingGroupName", js.undefined)
+    @scala.inline
+    def setCurrentConfiguration(value: AutoScalingGroupConfiguration): Self = this.set("currentConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentConfiguration: Self = this.set("currentConfiguration", js.undefined)
+    @scala.inline
+    def setFinding(value: Finding): Self = this.set("finding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinding: Self = this.set("finding", js.undefined)
+    @scala.inline
+    def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = this.set("lastRefreshTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRefreshTimestamp: Self = this.set("lastRefreshTimestamp", js.undefined)
+    @scala.inline
+    def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = this.set("lookBackPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookBackPeriodInDays: Self = this.set("lookBackPeriodInDays", js.undefined)
+    @scala.inline
+    def setRecommendationOptionsVarargs(value: AutoScalingGroupRecommendationOption*): Self = this.set("recommendationOptions", js.Array(value :_*))
+    @scala.inline
+    def setRecommendationOptions(value: AutoScalingGroupRecommendationOptions): Self = this.set("recommendationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationOptions: Self = this.set("recommendationOptions", js.undefined)
+    @scala.inline
+    def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = this.set("utilizationMetrics", js.Array(value :_*))
+    @scala.inline
+    def setUtilizationMetrics(value: UtilizationMetrics): Self = this.set("utilizationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtilizationMetrics: Self = this.set("utilizationMetrics", js.undefined)
+  }
+  
 }
 

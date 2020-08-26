@@ -1,97 +1,96 @@
 package typings.senchaTouch.Ext.data
 
-import typings.senchaTouch.Ext.Array
-import typings.senchaTouch.Ext.IClass
 import typings.senchaTouch.Ext.mixin.IObservable
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IConnection extends IObservable {
   /** [Method] Aborts any outstanding request
     * @param request Object Defaults to the last request.
     */
-  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Aborts all outstanding requests  */
-  var abortAll: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var abortAll: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Object) */
-  var defaultHeaders: js.UndefOr[js.Any] = js.undefined
+  var defaultHeaders: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var defaultXhrHeader: js.UndefOr[String] = js.undefined
+  var defaultXhrHeader: js.UndefOr[String] = js.native
   /** [Config Option] (Boolean) */
-  var disableCaching: js.UndefOr[Boolean] = js.undefined
+  var disableCaching: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String) */
-  var disableCachingParam: js.UndefOr[String] = js.undefined
+  var disableCachingParam: js.UndefOr[String] = js.native
   /** [Config Option] (Object) */
-  var extraParams: js.UndefOr[js.Any] = js.undefined
+  var extraParams: js.UndefOr[js.Any] = js.native
   /** [Method] Returns the value of async
     * @returns Boolean
     */
-  var getAsync: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getAsync: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of autoAbort
     * @returns Boolean
     */
-  var getAutoAbort: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getAutoAbort: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of defaultHeaders
     * @returns Object
     */
-  var getDefaultHeaders: js.UndefOr[js.Function0[_]] = js.undefined
+  var getDefaultHeaders: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of defaultPostHeader
     * @returns String
     */
-  var getDefaultPostHeader: js.UndefOr[js.Function0[String]] = js.undefined
+  var getDefaultPostHeader: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of defaultXhrHeader
     * @returns String
     */
-  var getDefaultXhrHeader: js.UndefOr[js.Function0[String]] = js.undefined
+  var getDefaultXhrHeader: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of disableCaching
     * @returns Boolean
     */
-  var getDisableCaching: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getDisableCaching: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of disableCachingParam
     * @returns String
     */
-  var getDisableCachingParam: js.UndefOr[js.Function0[String]] = js.undefined
+  var getDisableCachingParam: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of extraParams
     * @returns Object
     */
-  var getExtraParams: js.UndefOr[js.Function0[_]] = js.undefined
+  var getExtraParams: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of method
     * @returns String
     */
-  var getMethod: js.UndefOr[js.Function0[String]] = js.undefined
+  var getMethod: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of password
     * @returns String
     */
-  var getPassword: js.UndefOr[js.Function0[String]] = js.undefined
+  var getPassword: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of timeout
     * @returns Number
     */
-  var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getTimeout: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of url
     * @returns String
     */
-  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
+  var getUrl: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of useDefaultHeader
     * @returns Boolean
     */
-  var getUseDefaultHeader: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getUseDefaultHeader: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of useDefaultXhrHeader
     * @returns Boolean
     */
-  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of username
     * @returns String
     */
-  var getUsername: js.UndefOr[js.Function0[String]] = js.undefined
+  var getUsername: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Determines whether this object has a request outstanding
     * @param request Object The request to check.
     * @returns Boolean True if there is an outstanding request.
     */
-  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.native
   /** [Config Option] (String) */
-  var method: js.UndefOr[String] = js.undefined
+  var method: js.UndefOr[String] = js.native
   /** [Method] Checks if the response status was successful
     * @param status Number The status code.
     * @param xhr XMLHttpRequest
@@ -99,7 +98,7 @@ trait IConnection extends IObservable {
     */
   var parseStatus: js.UndefOr[
     js.Function2[/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest], _]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
     * @param events String/Array/Object Array of event names to relay.
@@ -108,48 +107,48 @@ trait IConnection extends IObservable {
   @JSName("relayEvents")
   var relayEvents_IConnection: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sends an HTTP request to a remote server
     * @param options Object An object which may contain the following properties: (The options object may also contain any other property which might be needed to perform post-processing in a callback because it is passed to callback functions.)
     * @returns Object/null The request object. This may be used to cancel the request.
     */
-  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], _]] = js.undefined
+  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], _]] = js.native
   /** [Method] Sets the value of async
     * @param async Boolean The new value.
     */
-  var setAsync: js.UndefOr[js.Function1[/* async */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setAsync: js.UndefOr[js.Function1[/* async */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of autoAbort
     * @param autoAbort Boolean The new value.
     */
-  var setAutoAbort: js.UndefOr[js.Function1[/* autoAbort */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setAutoAbort: js.UndefOr[js.Function1[/* autoAbort */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of defaultHeaders
     * @param defaultHeaders Object The new value.
     */
-  var setDefaultHeaders: js.UndefOr[js.Function1[/* defaultHeaders */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDefaultHeaders: js.UndefOr[js.Function1[/* defaultHeaders */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of defaultPostHeader
     * @param defaultPostHeader String The new value.
     */
-  var setDefaultPostHeader: js.UndefOr[js.Function1[/* defaultPostHeader */ js.UndefOr[String], Unit]] = js.undefined
+  var setDefaultPostHeader: js.UndefOr[js.Function1[/* defaultPostHeader */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of defaultXhrHeader
     * @param defaultXhrHeader String The new value.
     */
-  var setDefaultXhrHeader: js.UndefOr[js.Function1[/* defaultXhrHeader */ js.UndefOr[String], Unit]] = js.undefined
+  var setDefaultXhrHeader: js.UndefOr[js.Function1[/* defaultXhrHeader */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of disableCaching
     * @param disableCaching Boolean The new value.
     */
-  var setDisableCaching: js.UndefOr[js.Function1[/* disableCaching */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setDisableCaching: js.UndefOr[js.Function1[/* disableCaching */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of disableCachingParam
     * @param disableCachingParam String The new value.
     */
-  var setDisableCachingParam: js.UndefOr[js.Function1[/* disableCachingParam */ js.UndefOr[String], Unit]] = js.undefined
+  var setDisableCachingParam: js.UndefOr[js.Function1[/* disableCachingParam */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of extraParams
     * @param extraParams Object The new value.
     */
-  var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of method
     * @param method String The new value.
     */
-  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.undefined
+  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets various options such as the url params for the request
     * @param options Object The initial options.
     * @param scope Object The scope to execute in.
@@ -157,33 +156,33 @@ trait IConnection extends IObservable {
     */
   var setOptions: js.UndefOr[
     js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], _]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the value of password
     * @param password String The new value.
     */
-  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.undefined
+  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of timeout
     * @param timeout Number The new value.
     */
-  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
+  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of url
     * @param url String The new value.
     */
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of useDefaultHeader
     * @param useDefaultHeader Boolean The new value.
     */
-  var setUseDefaultHeader: js.UndefOr[js.Function1[/* useDefaultHeader */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setUseDefaultHeader: js.UndefOr[js.Function1[/* useDefaultHeader */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of useDefaultXhrHeader
     * @param useDefaultXhrHeader Boolean The new value.
     */
-  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of username
     * @param username String The new value.
     */
-  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.undefined
+  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.native
   /** [Config Option] (Number) */
-  var timeout: js.UndefOr[Double] = js.undefined
+  var timeout: js.UndefOr[Double] = js.native
   /** [Method] Uploads a form using a hidden iframe
     * @param form String/HTMLElement/Ext.Element The form to upload.
     * @param url String The url to post to.
@@ -198,209 +197,221 @@ trait IConnection extends IObservable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (String) */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
   /** [Config Option] (Boolean) */
-  var useDefaultXhrHeader: js.UndefOr[Boolean] = js.undefined
+  var useDefaultXhrHeader: js.UndefOr[Boolean] = js.native
 }
 
 object IConnection {
   @scala.inline
-  def apply(
-    abort: /* request */ js.UndefOr[js.Any] => Unit = null,
-    abortAll: () => Unit = null,
-    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    bubbleEvents: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clearListeners: () => Unit = null,
-    config: js.Any = null,
-    defaultHeaders: js.Any = null,
-    defaultXhrHeader: String = null,
-    destroy: () => Unit = null,
-    disableCaching: js.UndefOr[Boolean] = js.undefined,
-    disableCachingParam: String = null,
-    enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: String = null,
-    extraParams: js.Any = null,
-    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
-    getAsync: () => Boolean = null,
-    getAutoAbort: () => Boolean = null,
-    getBubbleEvents: () => _ = null,
-    getDefaultHeaders: () => _ = null,
-    getDefaultPostHeader: () => String = null,
-    getDefaultXhrHeader: () => String = null,
-    getDisableCaching: () => Boolean = null,
-    getDisableCachingParam: () => String = null,
-    getExtraParams: () => _ = null,
-    getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getListeners: () => _ = null,
-    getMethod: () => String = null,
-    getPassword: () => String = null,
-    getTimeout: () => Double = null,
-    getUrl: () => String = null,
-    getUseDefaultHeader: () => Boolean = null,
-    getUseDefaultXhrHeader: () => Boolean = null,
-    getUsername: () => String = null,
-    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    isLoading: /* request */ js.UndefOr[js.Any] => Boolean = null,
-    listeners: js.Any = null,
-    method: String = null,
-    mixins: js.Any = null,
-    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    parseStatus: (/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest]) => _ = null,
-    platformConfig: js.Any = null,
-    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
-    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    request: /* options */ js.UndefOr[js.Any] => _ = null,
-    resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    self: IClass = null,
-    setAsync: /* async */ js.UndefOr[Boolean] => Unit = null,
-    setAutoAbort: /* autoAbort */ js.UndefOr[Boolean] => Unit = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setDefaultHeaders: /* defaultHeaders */ js.UndefOr[js.Any] => Unit = null,
-    setDefaultPostHeader: /* defaultPostHeader */ js.UndefOr[String] => Unit = null,
-    setDefaultXhrHeader: /* defaultXhrHeader */ js.UndefOr[String] => Unit = null,
-    setDisableCaching: /* disableCaching */ js.UndefOr[Boolean] => Unit = null,
-    setDisableCachingParam: /* disableCachingParam */ js.UndefOr[String] => Unit = null,
-    setExtraParams: /* extraParams */ js.UndefOr[js.Any] => Unit = null,
-    setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setMethod: /* method */ js.UndefOr[String] => Unit = null,
-    setOptions: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    setPassword: /* password */ js.UndefOr[String] => Unit = null,
-    setTimeout: /* timeout */ js.UndefOr[Double] => Unit = null,
-    setUrl: /* url */ js.UndefOr[String] => Unit = null,
-    setUseDefaultHeader: /* useDefaultHeader */ js.UndefOr[Boolean] => Unit = null,
-    setUseDefaultXhrHeader: /* useDefaultXhrHeader */ js.UndefOr[Boolean] => Unit = null,
-    setUsername: /* username */ js.UndefOr[String] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    suspendEvents: () => Unit = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    upload: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    url: String = null,
-    useDefaultXhrHeader: js.UndefOr[Boolean] = js.undefined,
-    uses: Array = null
-  ): IConnection = {
+  def apply(): IConnection = {
     val __obj = js.Dynamic.literal()
-    if (abort != null) __obj.updateDynamic("abort")(js.Any.fromFunction1(abort))
-    if (abortAll != null) __obj.updateDynamic("abortAll")(js.Any.fromFunction0(abortAll))
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (defaultHeaders != null) __obj.updateDynamic("defaultHeaders")(defaultHeaders.asInstanceOf[js.Any])
-    if (defaultXhrHeader != null) __obj.updateDynamic("defaultXhrHeader")(defaultXhrHeader.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(disableCaching)) __obj.updateDynamic("disableCaching")(disableCaching.get.asInstanceOf[js.Any])
-    if (disableCachingParam != null) __obj.updateDynamic("disableCachingParam")(disableCachingParam.asInstanceOf[js.Any])
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (extraParams != null) __obj.updateDynamic("extraParams")(extraParams.asInstanceOf[js.Any])
-    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (getAsync != null) __obj.updateDynamic("getAsync")(js.Any.fromFunction0(getAsync))
-    if (getAutoAbort != null) __obj.updateDynamic("getAutoAbort")(js.Any.fromFunction0(getAutoAbort))
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
-    if (getDefaultHeaders != null) __obj.updateDynamic("getDefaultHeaders")(js.Any.fromFunction0(getDefaultHeaders))
-    if (getDefaultPostHeader != null) __obj.updateDynamic("getDefaultPostHeader")(js.Any.fromFunction0(getDefaultPostHeader))
-    if (getDefaultXhrHeader != null) __obj.updateDynamic("getDefaultXhrHeader")(js.Any.fromFunction0(getDefaultXhrHeader))
-    if (getDisableCaching != null) __obj.updateDynamic("getDisableCaching")(js.Any.fromFunction0(getDisableCaching))
-    if (getDisableCachingParam != null) __obj.updateDynamic("getDisableCachingParam")(js.Any.fromFunction0(getDisableCachingParam))
-    if (getExtraParams != null) __obj.updateDynamic("getExtraParams")(js.Any.fromFunction0(getExtraParams))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
-    if (getMethod != null) __obj.updateDynamic("getMethod")(js.Any.fromFunction0(getMethod))
-    if (getPassword != null) __obj.updateDynamic("getPassword")(js.Any.fromFunction0(getPassword))
-    if (getTimeout != null) __obj.updateDynamic("getTimeout")(js.Any.fromFunction0(getTimeout))
-    if (getUrl != null) __obj.updateDynamic("getUrl")(js.Any.fromFunction0(getUrl))
-    if (getUseDefaultHeader != null) __obj.updateDynamic("getUseDefaultHeader")(js.Any.fromFunction0(getUseDefaultHeader))
-    if (getUseDefaultXhrHeader != null) __obj.updateDynamic("getUseDefaultXhrHeader")(js.Any.fromFunction0(getUseDefaultXhrHeader))
-    if (getUsername != null) __obj.updateDynamic("getUsername")(js.Any.fromFunction0(getUsername))
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (isLoading != null) __obj.updateDynamic("isLoading")(js.Any.fromFunction1(isLoading))
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
-    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
-    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (parseStatus != null) __obj.updateDynamic("parseStatus")(js.Any.fromFunction2(parseStatus))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
-    if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction1(request))
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setAsync != null) __obj.updateDynamic("setAsync")(js.Any.fromFunction1(setAsync))
-    if (setAutoAbort != null) __obj.updateDynamic("setAutoAbort")(js.Any.fromFunction1(setAutoAbort))
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
-    if (setDefaultHeaders != null) __obj.updateDynamic("setDefaultHeaders")(js.Any.fromFunction1(setDefaultHeaders))
-    if (setDefaultPostHeader != null) __obj.updateDynamic("setDefaultPostHeader")(js.Any.fromFunction1(setDefaultPostHeader))
-    if (setDefaultXhrHeader != null) __obj.updateDynamic("setDefaultXhrHeader")(js.Any.fromFunction1(setDefaultXhrHeader))
-    if (setDisableCaching != null) __obj.updateDynamic("setDisableCaching")(js.Any.fromFunction1(setDisableCaching))
-    if (setDisableCachingParam != null) __obj.updateDynamic("setDisableCachingParam")(js.Any.fromFunction1(setDisableCachingParam))
-    if (setExtraParams != null) __obj.updateDynamic("setExtraParams")(js.Any.fromFunction1(setExtraParams))
-    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (setMethod != null) __obj.updateDynamic("setMethod")(js.Any.fromFunction1(setMethod))
-    if (setOptions != null) __obj.updateDynamic("setOptions")(js.Any.fromFunction2(setOptions))
-    if (setPassword != null) __obj.updateDynamic("setPassword")(js.Any.fromFunction1(setPassword))
-    if (setTimeout != null) __obj.updateDynamic("setTimeout")(js.Any.fromFunction1(setTimeout))
-    if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
-    if (setUseDefaultHeader != null) __obj.updateDynamic("setUseDefaultHeader")(js.Any.fromFunction1(setUseDefaultHeader))
-    if (setUseDefaultXhrHeader != null) __obj.updateDynamic("setUseDefaultXhrHeader")(js.Any.fromFunction1(setUseDefaultXhrHeader))
-    if (setUsername != null) __obj.updateDynamic("setUsername")(js.Any.fromFunction1(setUsername))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
-    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
-    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (upload != null) __obj.updateDynamic("upload")(js.Any.fromFunction4(upload))
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDefaultXhrHeader)) __obj.updateDynamic("useDefaultXhrHeader")(useDefaultXhrHeader.get.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnection]
   }
+  @scala.inline
+  implicit class IConnectionOps[Self <: IConnection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbort(value: /* request */ js.UndefOr[js.Any] => Unit): Self = this.set("abort", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAbort: Self = this.set("abort", js.undefined)
+    @scala.inline
+    def setAbortAll(value: () => Unit): Self = this.set("abortAll", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteAbortAll: Self = this.set("abortAll", js.undefined)
+    @scala.inline
+    def setDefaultHeaders(value: js.Any): Self = this.set("defaultHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultHeaders: Self = this.set("defaultHeaders", js.undefined)
+    @scala.inline
+    def setDefaultXhrHeader(value: String): Self = this.set("defaultXhrHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultXhrHeader: Self = this.set("defaultXhrHeader", js.undefined)
+    @scala.inline
+    def setDisableCaching(value: Boolean): Self = this.set("disableCaching", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableCaching: Self = this.set("disableCaching", js.undefined)
+    @scala.inline
+    def setDisableCachingParam(value: String): Self = this.set("disableCachingParam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableCachingParam: Self = this.set("disableCachingParam", js.undefined)
+    @scala.inline
+    def setExtraParams(value: js.Any): Self = this.set("extraParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraParams: Self = this.set("extraParams", js.undefined)
+    @scala.inline
+    def setGetAsync(value: () => Boolean): Self = this.set("getAsync", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAsync: Self = this.set("getAsync", js.undefined)
+    @scala.inline
+    def setGetAutoAbort(value: () => Boolean): Self = this.set("getAutoAbort", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAutoAbort: Self = this.set("getAutoAbort", js.undefined)
+    @scala.inline
+    def setGetDefaultHeaders(value: () => _): Self = this.set("getDefaultHeaders", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDefaultHeaders: Self = this.set("getDefaultHeaders", js.undefined)
+    @scala.inline
+    def setGetDefaultPostHeader(value: () => String): Self = this.set("getDefaultPostHeader", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDefaultPostHeader: Self = this.set("getDefaultPostHeader", js.undefined)
+    @scala.inline
+    def setGetDefaultXhrHeader(value: () => String): Self = this.set("getDefaultXhrHeader", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDefaultXhrHeader: Self = this.set("getDefaultXhrHeader", js.undefined)
+    @scala.inline
+    def setGetDisableCaching(value: () => Boolean): Self = this.set("getDisableCaching", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDisableCaching: Self = this.set("getDisableCaching", js.undefined)
+    @scala.inline
+    def setGetDisableCachingParam(value: () => String): Self = this.set("getDisableCachingParam", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDisableCachingParam: Self = this.set("getDisableCachingParam", js.undefined)
+    @scala.inline
+    def setGetExtraParams(value: () => _): Self = this.set("getExtraParams", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetExtraParams: Self = this.set("getExtraParams", js.undefined)
+    @scala.inline
+    def setGetMethod(value: () => String): Self = this.set("getMethod", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMethod: Self = this.set("getMethod", js.undefined)
+    @scala.inline
+    def setGetPassword(value: () => String): Self = this.set("getPassword", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPassword: Self = this.set("getPassword", js.undefined)
+    @scala.inline
+    def setGetTimeout(value: () => Double): Self = this.set("getTimeout", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTimeout: Self = this.set("getTimeout", js.undefined)
+    @scala.inline
+    def setGetUrl(value: () => String): Self = this.set("getUrl", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUrl: Self = this.set("getUrl", js.undefined)
+    @scala.inline
+    def setGetUseDefaultHeader(value: () => Boolean): Self = this.set("getUseDefaultHeader", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUseDefaultHeader: Self = this.set("getUseDefaultHeader", js.undefined)
+    @scala.inline
+    def setGetUseDefaultXhrHeader(value: () => Boolean): Self = this.set("getUseDefaultXhrHeader", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUseDefaultXhrHeader: Self = this.set("getUseDefaultXhrHeader", js.undefined)
+    @scala.inline
+    def setGetUsername(value: () => String): Self = this.set("getUsername", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUsername: Self = this.set("getUsername", js.undefined)
+    @scala.inline
+    def setIsLoading(value: /* request */ js.UndefOr[js.Any] => Boolean): Self = this.set("isLoading", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsLoading: Self = this.set("isLoading", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setParseStatus(value: (/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest]) => _): Self = this.set("parseStatus", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteParseStatus: Self = this.set("parseStatus", js.undefined)
+    @scala.inline
+    def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = this.set("relayEvents", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRelayEvents: Self = this.set("relayEvents", js.undefined)
+    @scala.inline
+    def setRequest(value: /* options */ js.UndefOr[js.Any] => _): Self = this.set("request", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setSetAsync(value: /* async */ js.UndefOr[Boolean] => Unit): Self = this.set("setAsync", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAsync: Self = this.set("setAsync", js.undefined)
+    @scala.inline
+    def setSetAutoAbort(value: /* autoAbort */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoAbort", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAutoAbort: Self = this.set("setAutoAbort", js.undefined)
+    @scala.inline
+    def setSetDefaultHeaders(value: /* defaultHeaders */ js.UndefOr[js.Any] => Unit): Self = this.set("setDefaultHeaders", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDefaultHeaders: Self = this.set("setDefaultHeaders", js.undefined)
+    @scala.inline
+    def setSetDefaultPostHeader(value: /* defaultPostHeader */ js.UndefOr[String] => Unit): Self = this.set("setDefaultPostHeader", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDefaultPostHeader: Self = this.set("setDefaultPostHeader", js.undefined)
+    @scala.inline
+    def setSetDefaultXhrHeader(value: /* defaultXhrHeader */ js.UndefOr[String] => Unit): Self = this.set("setDefaultXhrHeader", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDefaultXhrHeader: Self = this.set("setDefaultXhrHeader", js.undefined)
+    @scala.inline
+    def setSetDisableCaching(value: /* disableCaching */ js.UndefOr[Boolean] => Unit): Self = this.set("setDisableCaching", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDisableCaching: Self = this.set("setDisableCaching", js.undefined)
+    @scala.inline
+    def setSetDisableCachingParam(value: /* disableCachingParam */ js.UndefOr[String] => Unit): Self = this.set("setDisableCachingParam", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDisableCachingParam: Self = this.set("setDisableCachingParam", js.undefined)
+    @scala.inline
+    def setSetExtraParams(value: /* extraParams */ js.UndefOr[js.Any] => Unit): Self = this.set("setExtraParams", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetExtraParams: Self = this.set("setExtraParams", js.undefined)
+    @scala.inline
+    def setSetMethod(value: /* method */ js.UndefOr[String] => Unit): Self = this.set("setMethod", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMethod: Self = this.set("setMethod", js.undefined)
+    @scala.inline
+    def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _): Self = this.set("setOptions", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetOptions: Self = this.set("setOptions", js.undefined)
+    @scala.inline
+    def setSetPassword(value: /* password */ js.UndefOr[String] => Unit): Self = this.set("setPassword", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPassword: Self = this.set("setPassword", js.undefined)
+    @scala.inline
+    def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = this.set("setTimeout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTimeout: Self = this.set("setTimeout", js.undefined)
+    @scala.inline
+    def setSetUrl(value: /* url */ js.UndefOr[String] => Unit): Self = this.set("setUrl", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetUrl: Self = this.set("setUrl", js.undefined)
+    @scala.inline
+    def setSetUseDefaultHeader(value: /* useDefaultHeader */ js.UndefOr[Boolean] => Unit): Self = this.set("setUseDefaultHeader", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetUseDefaultHeader: Self = this.set("setUseDefaultHeader", js.undefined)
+    @scala.inline
+    def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[Boolean] => Unit): Self = this.set("setUseDefaultXhrHeader", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetUseDefaultXhrHeader: Self = this.set("setUseDefaultXhrHeader", js.undefined)
+    @scala.inline
+    def setSetUsername(value: /* username */ js.UndefOr[String] => Unit): Self = this.set("setUsername", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetUsername: Self = this.set("setUsername", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUpload(
+      value: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("upload", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteUpload: Self = this.set("upload", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUseDefaultXhrHeader(value: Boolean): Self = this.set("useDefaultXhrHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseDefaultXhrHeader: Self = this.set("useDefaultXhrHeader", js.undefined)
+  }
+  
 }
 

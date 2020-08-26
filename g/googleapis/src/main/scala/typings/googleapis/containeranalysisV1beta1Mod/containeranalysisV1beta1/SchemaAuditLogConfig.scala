@@ -28,11 +28,32 @@ trait SchemaAuditLogConfig extends js.Object {
 
 object SchemaAuditLogConfig {
   @scala.inline
-  def apply(exemptedMembers: js.Array[String] = null, logType: String = null): SchemaAuditLogConfig = {
+  def apply(): SchemaAuditLogConfig = {
     val __obj = js.Dynamic.literal()
-    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers.asInstanceOf[js.Any])
-    if (logType != null) __obj.updateDynamic("logType")(logType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAuditLogConfig]
   }
+  @scala.inline
+  implicit class SchemaAuditLogConfigOps[Self <: SchemaAuditLogConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExemptedMembersVarargs(value: String*): Self = this.set("exemptedMembers", js.Array(value :_*))
+    @scala.inline
+    def setExemptedMembers(value: js.Array[String]): Self = this.set("exemptedMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExemptedMembers: Self = this.set("exemptedMembers", js.undefined)
+    @scala.inline
+    def setLogType(value: String): Self = this.set("logType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogType: Self = this.set("logType", js.undefined)
+  }
+  
 }
 

@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object superfineStrings {
   @js.native
-  sealed trait Props extends js.Object
-  
-  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -524,8 +521,6 @@ object superfineStrings {
   @js.native
   sealed trait wbr extends js.Object
   
-  @scala.inline
-  def Props: Props = "Props".asInstanceOf[Props]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

@@ -1,6 +1,5 @@
 package typings.webpackDevMiddleware.mod
 
-import typings.webpack.mod.Stats
 import typings.webpackDevMiddleware.webpackDevMiddlewareBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,9 +14,23 @@ trait WebpackDevMiddleware extends js.Object {
   def getFilenameFromUrl(url: String): String | `false` = js.native
   /** Instructs a webpack-dev-middleware instance to recompile the bundle. e.g. after a change to the configuration. */
   def invalidate(): Unit = js.native
-  def invalidate(callback: js.Function1[/* stats */ js.UndefOr[Stats], Unit]): Unit = js.native
+  def invalidate(
+    callback: js.Function1[
+      /* stats */ js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
   /** Executes a callback function when the compiler bundle is valid, typically after compilation */
   def waitUntilValid(): Unit = js.native
-  def waitUntilValid(callback: js.Function1[/* stats */ js.UndefOr[Stats], Unit]): Unit = js.native
+  def waitUntilValid(
+    callback: js.Function1[
+      /* stats */ js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Stats */ js.Any
+      ], 
+      Unit
+    ]
+  ): Unit = js.native
 }
 

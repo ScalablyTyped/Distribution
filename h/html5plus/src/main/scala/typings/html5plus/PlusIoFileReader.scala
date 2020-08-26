@@ -103,6 +103,7 @@ trait PlusIoFileReader extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def readAsDataURL(): Unit = js.native
+  def readAsDataURL(file: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
   def readAsDataURL(file: PlusIoFile): Unit = js.native
   def readAsDataURL(file: PlusIoFile, encoding: String): Unit = js.native
   /**
@@ -112,6 +113,7 @@ trait PlusIoFileReader extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def readAsText(): Unit = js.native
+  def readAsText(file: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
   def readAsText(file: PlusIoFile): Unit = js.native
   def readAsText(file: PlusIoFile, encoding: String): Unit = js.native
 }

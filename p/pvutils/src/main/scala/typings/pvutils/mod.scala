@@ -20,6 +20,7 @@ object mod extends js.Object {
     * @returns {string}
     */
   def bufferToHexCodes(inputBuffer: ArrayBuffer): String = js.native
+  def bufferToHexCodes(inputBuffer: ArrayBuffer, inputOffset: js.UndefOr[scala.Nothing], inputLength: Double): String = js.native
   def bufferToHexCodes(inputBuffer: ArrayBuffer, inputOffset: Double): String = js.native
   def bufferToHexCodes(inputBuffer: ArrayBuffer, inputOffset: Double, inputLength: Double): String = js.native
   /**
@@ -39,6 +40,7 @@ object mod extends js.Object {
     * @returns {string}
     */
   def fromBase64(input: String): String = js.native
+  def fromBase64(input: String, useUrlTemplate: js.UndefOr[scala.Nothing], cutTailZeros: Boolean): String = js.native
   def fromBase64(input: String, useUrlTemplate: Boolean): String = js.native
   def fromBase64(input: String, useUrlTemplate: Boolean, cutTailZeros: Boolean): String = js.native
   /**
@@ -84,6 +86,7 @@ object mod extends js.Object {
     * @returns {string}
     */
   def toBase64(input: String): String = js.native
+  def toBase64(input: String, useUrlTemplate: js.UndefOr[scala.Nothing], skipPadding: Boolean): String = js.native
   def toBase64(input: String, useUrlTemplate: Boolean): String = js.native
   def toBase64(input: String, useUrlTemplate: Boolean, skipPadding: Boolean): String = js.native
   /**

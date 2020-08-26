@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * @see XCloseable
   * @see XCloseBroadcaster
   */
+@js.native
 trait XCloseListener extends XEventListener {
   /**
     * is called when the listened object is closed really
@@ -29,7 +30,7 @@ trait XCloseListener extends XEventListener {
     * any more.
     * @param Source describes the source of the event (must be the listened object)
     */
-  def notifyClosing(Source: EventObject): Unit
+  def notifyClosing(Source: EventObject): Unit = js.native
   /**
     * is called when somewhere tries to close listened object
     *
@@ -47,7 +48,7 @@ trait XCloseListener extends XEventListener {
     * @param GetsOwnership `TRUE` pass the ownership to this listener, if it throw the veto exception (otherwise this parameter must be ignored!) ; `FALSE` fo
     * @throws CloseVetoException if listener disagree with the close request on listened object it must throw this exception
     */
-  def queryClosing(Source: EventObject, GetsOwnership: Boolean): Unit
+  def queryClosing(Source: EventObject, GetsOwnership: Boolean): Unit = js.native
 }
 
 object XCloseListener {
@@ -63,5 +64,22 @@ object XCloseListener {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), notifyClosing = js.Any.fromFunction1(notifyClosing), queryClosing = js.Any.fromFunction2(queryClosing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XCloseListener]
   }
+  @scala.inline
+  implicit class XCloseListenerOps[Self <: XCloseListener] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotifyClosing(value: EventObject => Unit): Self = this.set("notifyClosing", js.Any.fromFunction1(value))
+    @scala.inline
+    def setQueryClosing(value: (EventObject, Boolean) => Unit): Self = this.set("queryClosing", js.Any.fromFunction2(value))
+  }
+  
 }
 

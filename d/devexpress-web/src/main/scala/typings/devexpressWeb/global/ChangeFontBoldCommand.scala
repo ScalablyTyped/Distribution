@@ -10,11 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ChangeFontBoldCommand")
 @js.native
 class ChangeFontBoldCommand ()
-  extends typings.devexpressWeb.ChangeFontBoldCommand {
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.CommandState[Boolean] = js.native
-}
+  extends typings.devexpressWeb.ChangeFontBoldCommand
 

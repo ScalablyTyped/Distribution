@@ -29,20 +29,18 @@ class AppServiceCallParameterMapping protected () extends Element {
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def argument: String = js.native
-  def argument(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
   def argumentModel: Expression = js.native
-  def argumentModel(newValue: Expression): js.Any = js.native
+  def argumentModel_=(newValue: Expression): Unit = js.native
+  def argument_=(newValue: String): Unit = js.native
   def containerAsAppServiceCallAction: AppServiceCallAction = js.native
-  def parameter(): js.Any = js.native
-  def parameter(newValue: IAppServiceActionParameter): js.Any = js.native
+  def parameter: IAppServiceActionParameter | Null = js.native
   def parameterQualifiedName: String | Null = js.native
-  @JSName("parameter")
-  def parameter_Union: IAppServiceActionParameter | Null = js.native
+  def parameter_=(newValue: IAppServiceActionParameter | Null): Unit = js.native
 }
 
 /* static members */

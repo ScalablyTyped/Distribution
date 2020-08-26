@@ -4,54 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectHTMLAttributes[T] extends HTMLAttributes[T] {
-  var autoComplete: js.UndefOr[String] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var autocomplete: js.UndefOr[String] = js.undefined
-  var autofocus: js.UndefOr[Boolean | String] = js.undefined
-  var disabled: js.UndefOr[Boolean | String] = js.undefined
-  var form: js.UndefOr[String] = js.undefined
-  var multiple: js.UndefOr[Boolean | String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var autoComplete: js.UndefOr[String] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autocomplete: js.UndefOr[String] = js.native
+  var autofocus: js.UndefOr[Boolean | String] = js.native
+  var disabled: js.UndefOr[Boolean | String] = js.native
+  var form: js.UndefOr[String] = js.native
+  var multiple: js.UndefOr[Boolean | String] = js.native
+  var name: js.UndefOr[String] = js.native
   @JSName("onChange")
-  var onChange_SelectHTMLAttributes: js.UndefOr[ChangeEventHandler[T]] = js.undefined
-  var required: js.UndefOr[Boolean | String] = js.undefined
-  var size: js.UndefOr[Double | String] = js.undefined
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+  var onChange_SelectHTMLAttributes: js.UndefOr[ChangeEventHandler[T]] = js.native
+  var required: js.UndefOr[Boolean | String] = js.native
+  var size: js.UndefOr[Double | String] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
 }
 
 object SelectHTMLAttributes {
   @scala.inline
-  def apply[T](
-    HTMLAttributes: HTMLAttributes[T] = null,
-    autoComplete: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    autocomplete: String = null,
-    autofocus: Boolean | String = null,
-    disabled: Boolean | String = null,
-    form: String = null,
-    multiple: Boolean | String = null,
-    name: String = null,
-    onChange: ChangeEvent[T] => Unit = null,
-    required: Boolean | String = null,
-    size: Double | String = null,
-    value: String | js.Array[String] | Double = null
-  ): SelectHTMLAttributes[T] = {
+  def apply[T](): SelectHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (autofocus != null) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (multiple != null) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectHTMLAttributes[T]]
   }
+  @scala.inline
+  implicit class SelectHTMLAttributesOps[Self <: SelectHTMLAttributes[_], T] (val x: Self with SelectHTMLAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoComplete(value: String): Self = this.set("autoComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoComplete: Self = this.set("autoComplete", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean | String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setForm(value: String): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForm: Self = this.set("form", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean | String): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnChange(value: ChangeEvent[T] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean | String): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setSize(value: Double | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: String*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: String | js.Array[String] | Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

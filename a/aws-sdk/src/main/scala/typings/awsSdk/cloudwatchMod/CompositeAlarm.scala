@@ -62,36 +62,80 @@ trait CompositeAlarm extends js.Object {
 
 object CompositeAlarm {
   @scala.inline
-  def apply(
-    ActionsEnabled: js.UndefOr[ActionsEnabled] = js.undefined,
-    AlarmActions: ResourceList = null,
-    AlarmArn: AlarmArn = null,
-    AlarmConfigurationUpdatedTimestamp: Timestamp = null,
-    AlarmDescription: AlarmDescription = null,
-    AlarmName: AlarmName = null,
-    AlarmRule: AlarmRule = null,
-    InsufficientDataActions: ResourceList = null,
-    OKActions: ResourceList = null,
-    StateReason: StateReason = null,
-    StateReasonData: StateReasonData = null,
-    StateUpdatedTimestamp: Timestamp = null,
-    StateValue: StateValue = null
-  ): CompositeAlarm = {
+  def apply(): CompositeAlarm = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled.get.asInstanceOf[js.Any])
-    if (AlarmActions != null) __obj.updateDynamic("AlarmActions")(AlarmActions.asInstanceOf[js.Any])
-    if (AlarmArn != null) __obj.updateDynamic("AlarmArn")(AlarmArn.asInstanceOf[js.Any])
-    if (AlarmConfigurationUpdatedTimestamp != null) __obj.updateDynamic("AlarmConfigurationUpdatedTimestamp")(AlarmConfigurationUpdatedTimestamp.asInstanceOf[js.Any])
-    if (AlarmDescription != null) __obj.updateDynamic("AlarmDescription")(AlarmDescription.asInstanceOf[js.Any])
-    if (AlarmName != null) __obj.updateDynamic("AlarmName")(AlarmName.asInstanceOf[js.Any])
-    if (AlarmRule != null) __obj.updateDynamic("AlarmRule")(AlarmRule.asInstanceOf[js.Any])
-    if (InsufficientDataActions != null) __obj.updateDynamic("InsufficientDataActions")(InsufficientDataActions.asInstanceOf[js.Any])
-    if (OKActions != null) __obj.updateDynamic("OKActions")(OKActions.asInstanceOf[js.Any])
-    if (StateReason != null) __obj.updateDynamic("StateReason")(StateReason.asInstanceOf[js.Any])
-    if (StateReasonData != null) __obj.updateDynamic("StateReasonData")(StateReasonData.asInstanceOf[js.Any])
-    if (StateUpdatedTimestamp != null) __obj.updateDynamic("StateUpdatedTimestamp")(StateUpdatedTimestamp.asInstanceOf[js.Any])
-    if (StateValue != null) __obj.updateDynamic("StateValue")(StateValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositeAlarm]
   }
+  @scala.inline
+  implicit class CompositeAlarmOps[Self <: CompositeAlarm] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsEnabled(value: ActionsEnabled): Self = this.set("ActionsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionsEnabled: Self = this.set("ActionsEnabled", js.undefined)
+    @scala.inline
+    def setAlarmActionsVarargs(value: ResourceName*): Self = this.set("AlarmActions", js.Array(value :_*))
+    @scala.inline
+    def setAlarmActions(value: ResourceList): Self = this.set("AlarmActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmActions: Self = this.set("AlarmActions", js.undefined)
+    @scala.inline
+    def setAlarmArn(value: AlarmArn): Self = this.set("AlarmArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmArn: Self = this.set("AlarmArn", js.undefined)
+    @scala.inline
+    def setAlarmConfigurationUpdatedTimestamp(value: Timestamp): Self = this.set("AlarmConfigurationUpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmConfigurationUpdatedTimestamp: Self = this.set("AlarmConfigurationUpdatedTimestamp", js.undefined)
+    @scala.inline
+    def setAlarmDescription(value: AlarmDescription): Self = this.set("AlarmDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmDescription: Self = this.set("AlarmDescription", js.undefined)
+    @scala.inline
+    def setAlarmName(value: AlarmName): Self = this.set("AlarmName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmName: Self = this.set("AlarmName", js.undefined)
+    @scala.inline
+    def setAlarmRule(value: AlarmRule): Self = this.set("AlarmRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmRule: Self = this.set("AlarmRule", js.undefined)
+    @scala.inline
+    def setInsufficientDataActionsVarargs(value: ResourceName*): Self = this.set("InsufficientDataActions", js.Array(value :_*))
+    @scala.inline
+    def setInsufficientDataActions(value: ResourceList): Self = this.set("InsufficientDataActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsufficientDataActions: Self = this.set("InsufficientDataActions", js.undefined)
+    @scala.inline
+    def setOKActionsVarargs(value: ResourceName*): Self = this.set("OKActions", js.Array(value :_*))
+    @scala.inline
+    def setOKActions(value: ResourceList): Self = this.set("OKActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOKActions: Self = this.set("OKActions", js.undefined)
+    @scala.inline
+    def setStateReason(value: StateReason): Self = this.set("StateReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateReason: Self = this.set("StateReason", js.undefined)
+    @scala.inline
+    def setStateReasonData(value: StateReasonData): Self = this.set("StateReasonData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateReasonData: Self = this.set("StateReasonData", js.undefined)
+    @scala.inline
+    def setStateUpdatedTimestamp(value: Timestamp): Self = this.set("StateUpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateUpdatedTimestamp: Self = this.set("StateUpdatedTimestamp", js.undefined)
+    @scala.inline
+    def setStateValue(value: StateValue): Self = this.set("StateValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateValue: Self = this.set("StateValue", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait DescribeImportSnapshotTasksResult extends js.Object {
 
 object DescribeImportSnapshotTasksResult {
   @scala.inline
-  def apply(ImportSnapshotTasks: ImportSnapshotTaskList = null, NextToken: String = null): DescribeImportSnapshotTasksResult = {
+  def apply(): DescribeImportSnapshotTasksResult = {
     val __obj = js.Dynamic.literal()
-    if (ImportSnapshotTasks != null) __obj.updateDynamic("ImportSnapshotTasks")(ImportSnapshotTasks.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeImportSnapshotTasksResult]
   }
+  @scala.inline
+  implicit class DescribeImportSnapshotTasksResultOps[Self <: DescribeImportSnapshotTasksResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImportSnapshotTasksVarargs(value: ImportSnapshotTask*): Self = this.set("ImportSnapshotTasks", js.Array(value :_*))
+    @scala.inline
+    def setImportSnapshotTasks(value: ImportSnapshotTaskList): Self = this.set("ImportSnapshotTasks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportSnapshotTasks: Self = this.set("ImportSnapshotTasks", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -57,20 +57,42 @@ trait SchemaAuthProvider extends js.Object {
 
 object SchemaAuthProvider {
   @scala.inline
-  def apply(
-    audiences: String = null,
-    authorizationUrl: String = null,
-    id: String = null,
-    issuer: String = null,
-    jwksUri: String = null
-  ): SchemaAuthProvider = {
+  def apply(): SchemaAuthProvider = {
     val __obj = js.Dynamic.literal()
-    if (audiences != null) __obj.updateDynamic("audiences")(audiences.asInstanceOf[js.Any])
-    if (authorizationUrl != null) __obj.updateDynamic("authorizationUrl")(authorizationUrl.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (jwksUri != null) __obj.updateDynamic("jwksUri")(jwksUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAuthProvider]
   }
+  @scala.inline
+  implicit class SchemaAuthProviderOps[Self <: SchemaAuthProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudiences(value: String): Self = this.set("audiences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudiences: Self = this.set("audiences", js.undefined)
+    @scala.inline
+    def setAuthorizationUrl(value: String): Self = this.set("authorizationUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationUrl: Self = this.set("authorizationUrl", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    @scala.inline
+    def setJwksUri(value: String): Self = this.set("jwksUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwksUri: Self = this.set("jwksUri", js.undefined)
+  }
+  
 }
 

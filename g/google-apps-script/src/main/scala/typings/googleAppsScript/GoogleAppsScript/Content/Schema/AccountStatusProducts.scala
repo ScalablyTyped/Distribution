@@ -4,30 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountStatusProducts extends js.Object {
-  var channel: js.UndefOr[String] = js.undefined
-  var country: js.UndefOr[String] = js.undefined
-  var destination: js.UndefOr[String] = js.undefined
-  var itemLevelIssues: js.UndefOr[js.Array[AccountStatusItemLevelIssue]] = js.undefined
-  var statistics: js.UndefOr[AccountStatusStatistics] = js.undefined
+  var channel: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.native
+  var itemLevelIssues: js.UndefOr[js.Array[AccountStatusItemLevelIssue]] = js.native
+  var statistics: js.UndefOr[AccountStatusStatistics] = js.native
 }
 
 object AccountStatusProducts {
   @scala.inline
-  def apply(
-    channel: String = null,
-    country: String = null,
-    destination: String = null,
-    itemLevelIssues: js.Array[AccountStatusItemLevelIssue] = null,
-    statistics: AccountStatusStatistics = null
-  ): AccountStatusProducts = {
+  def apply(): AccountStatusProducts = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (itemLevelIssues != null) __obj.updateDynamic("itemLevelIssues")(itemLevelIssues.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountStatusProducts]
   }
+  @scala.inline
+  implicit class AccountStatusProductsOps[Self <: AccountStatusProducts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannel: Self = this.set("channel", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setItemLevelIssuesVarargs(value: AccountStatusItemLevelIssue*): Self = this.set("itemLevelIssues", js.Array(value :_*))
+    @scala.inline
+    def setItemLevelIssues(value: js.Array[AccountStatusItemLevelIssue]): Self = this.set("itemLevelIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemLevelIssues: Self = this.set("itemLevelIssues", js.undefined)
+    @scala.inline
+    def setStatistics(value: AccountStatusStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("statistics", js.undefined)
+  }
+  
 }
 

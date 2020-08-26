@@ -30,20 +30,44 @@ trait CreatePlacementGroupRequest extends js.Object {
 
 object CreatePlacementGroupRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    GroupName: String = null,
-    PartitionCount: js.UndefOr[Integer] = js.undefined,
-    Strategy: PlacementStrategy = null,
-    TagSpecifications: TagSpecificationList = null
-  ): CreatePlacementGroupRequest = {
+  def apply(): CreatePlacementGroupRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(PartitionCount)) __obj.updateDynamic("PartitionCount")(PartitionCount.get.asInstanceOf[js.Any])
-    if (Strategy != null) __obj.updateDynamic("Strategy")(Strategy.asInstanceOf[js.Any])
-    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlacementGroupRequest]
   }
+  @scala.inline
+  implicit class CreatePlacementGroupRequestOps[Self <: CreatePlacementGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setPartitionCount(value: Integer): Self = this.set("PartitionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionCount: Self = this.set("PartitionCount", js.undefined)
+    @scala.inline
+    def setStrategy(value: PlacementStrategy): Self = this.set("Strategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrategy: Self = this.set("Strategy", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+  }
+  
 }
 

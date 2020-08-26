@@ -21,9 +21,27 @@ object mod extends js.Object {
     def this(filename: Config) = this()
     def this(filename: String, saveOnPush: Boolean) = this()
     def this(filename: Config, saveOnPush: Boolean) = this()
+    def this(filename: String, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean) = this()
     def this(filename: String, saveOnPush: Boolean, humanReadable: Boolean) = this()
+    def this(filename: Config, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean) = this()
     def this(filename: Config, saveOnPush: Boolean, humanReadable: Boolean) = this()
+    def this(
+      filename: String,
+      saveOnPush: js.UndefOr[scala.Nothing],
+      humanReadable: js.UndefOr[scala.Nothing],
+      separator: String
+    ) = this()
+    def this(filename: String, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean, separator: String) = this()
+    def this(filename: String, saveOnPush: Boolean, humanReadable: js.UndefOr[scala.Nothing], separator: String) = this()
     def this(filename: String, saveOnPush: Boolean, humanReadable: Boolean, separator: String) = this()
+    def this(
+      filename: Config,
+      saveOnPush: js.UndefOr[scala.Nothing],
+      humanReadable: js.UndefOr[scala.Nothing],
+      separator: String
+    ) = this()
+    def this(filename: Config, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean, separator: String) = this()
+    def this(filename: Config, saveOnPush: Boolean, humanReadable: js.UndefOr[scala.Nothing], separator: String) = this()
     def this(filename: Config, saveOnPush: Boolean, humanReadable: Boolean, separator: String) = this()
     val config: js.Any = js.native
     var data: js.Any = js.native

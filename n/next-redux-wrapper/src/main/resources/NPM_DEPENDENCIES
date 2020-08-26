@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "next-redux-wrapper" : "5.0.0"
+      "next-redux-wrapper" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "next-redux-wrapper" : "5.0.0"
+      "next-redux-wrapper" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

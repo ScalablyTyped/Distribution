@@ -35,6 +35,7 @@ trait Node extends TextRange {
   def getLeadingTriviaWidth(sourceFile: SourceFile): Double = js.native
   def getSourceFile(): SourceFile = js.native
   def getStart(): Double = js.native
+  def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
   def getStart(sourceFile: SourceFile): Double = js.native
   def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
   def getText(): java.lang.String = js.native

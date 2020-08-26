@@ -30,20 +30,44 @@ trait CacheSubnetGroup extends js.Object {
 
 object CacheSubnetGroup {
   @scala.inline
-  def apply(
-    ARN: String = null,
-    CacheSubnetGroupDescription: String = null,
-    CacheSubnetGroupName: String = null,
-    Subnets: SubnetList = null,
-    VpcId: String = null
-  ): CacheSubnetGroup = {
+  def apply(): CacheSubnetGroup = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (CacheSubnetGroupDescription != null) __obj.updateDynamic("CacheSubnetGroupDescription")(CacheSubnetGroupDescription.asInstanceOf[js.Any])
-    if (CacheSubnetGroupName != null) __obj.updateDynamic("CacheSubnetGroupName")(CacheSubnetGroupName.asInstanceOf[js.Any])
-    if (Subnets != null) __obj.updateDynamic("Subnets")(Subnets.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheSubnetGroup]
   }
+  @scala.inline
+  implicit class CacheSubnetGroupOps[Self <: CacheSubnetGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setCacheSubnetGroupDescription(value: String): Self = this.set("CacheSubnetGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSubnetGroupDescription: Self = this.set("CacheSubnetGroupDescription", js.undefined)
+    @scala.inline
+    def setCacheSubnetGroupName(value: String): Self = this.set("CacheSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSubnetGroupName: Self = this.set("CacheSubnetGroupName", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: Subnet*): Self = this.set("Subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: SubnetList): Self = this.set("Subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("Subnets", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

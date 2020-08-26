@@ -4,59 +4,101 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JiraApiOptions extends js.Object {
-  var apiVersion: js.UndefOr[String] = js.undefined
-  var base: js.UndefOr[String] = js.undefined
-  var bearer: js.UndefOr[String] = js.undefined
-  var greenhopperVersion: js.UndefOr[String] = js.undefined
-  var host: String
-  var intermediatePath: js.UndefOr[String] = js.undefined
-  var oauth: js.UndefOr[OAuth] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[String] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var request: js.UndefOr[js.Any] = js.undefined
-  var strictSSL: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
-  var webhookVersion: js.UndefOr[String] = js.undefined
+  var apiVersion: js.UndefOr[String] = js.native
+  var base: js.UndefOr[String] = js.native
+  var bearer: js.UndefOr[String] = js.native
+  var greenhopperVersion: js.UndefOr[String] = js.native
+  var host: String = js.native
+  var intermediatePath: js.UndefOr[String] = js.native
+  var oauth: js.UndefOr[OAuth] = js.native
+  var password: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.native
+  var request: js.UndefOr[js.Any] = js.native
+  var strictSSL: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var username: js.UndefOr[String] = js.native
+  var webhookVersion: js.UndefOr[String] = js.native
 }
 
 object JiraApiOptions {
   @scala.inline
-  def apply(
-    host: String,
-    apiVersion: String = null,
-    base: String = null,
-    bearer: String = null,
-    greenhopperVersion: String = null,
-    intermediatePath: String = null,
-    oauth: OAuth = null,
-    password: String = null,
-    port: String = null,
-    protocol: String = null,
-    request: js.Any = null,
-    strictSSL: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    username: String = null,
-    webhookVersion: String = null
-  ): JiraApiOptions = {
+  def apply(host: String): JiraApiOptions = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (bearer != null) __obj.updateDynamic("bearer")(bearer.asInstanceOf[js.Any])
-    if (greenhopperVersion != null) __obj.updateDynamic("greenhopperVersion")(greenhopperVersion.asInstanceOf[js.Any])
-    if (intermediatePath != null) __obj.updateDynamic("intermediatePath")(intermediatePath.asInstanceOf[js.Any])
-    if (oauth != null) __obj.updateDynamic("oauth")(oauth.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (webhookVersion != null) __obj.updateDynamic("webhookVersion")(webhookVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[JiraApiOptions]
   }
+  @scala.inline
+  implicit class JiraApiOptionsOps[Self <: JiraApiOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    @scala.inline
+    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setBearer(value: String): Self = this.set("bearer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBearer: Self = this.set("bearer", js.undefined)
+    @scala.inline
+    def setGreenhopperVersion(value: String): Self = this.set("greenhopperVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreenhopperVersion: Self = this.set("greenhopperVersion", js.undefined)
+    @scala.inline
+    def setIntermediatePath(value: String): Self = this.set("intermediatePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntermediatePath: Self = this.set("intermediatePath", js.undefined)
+    @scala.inline
+    def setOauth(value: OAuth): Self = this.set("oauth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauth: Self = this.set("oauth", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setRequest(value: js.Any): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setStrictSSL(value: Boolean): Self = this.set("strictSSL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrictSSL: Self = this.set("strictSSL", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+    @scala.inline
+    def setWebhookVersion(value: String): Self = this.set("webhookVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebhookVersion: Self = this.set("webhookVersion", js.undefined)
+  }
+  
 }
 

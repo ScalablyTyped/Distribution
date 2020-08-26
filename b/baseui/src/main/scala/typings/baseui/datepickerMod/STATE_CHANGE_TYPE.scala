@@ -6,14 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait STATE_CHANGE_TYPE extends js.Object {
-  var change: change_
-  var mouseLeave: typings.baseui.baseuiStrings.mouseLeave
-  var mouseOver: typings.baseui.baseuiStrings.mouseOver
-  var moveDown: typings.baseui.baseuiStrings.moveDown
-  var moveLeft: typings.baseui.baseuiStrings.moveLeft
-  var moveRight: typings.baseui.baseuiStrings.moveRight
-  var moveUp: typings.baseui.baseuiStrings.moveUp
+  var change: change_ = js.native
+  var mouseLeave: typings.baseui.baseuiStrings.mouseLeave = js.native
+  var mouseOver: typings.baseui.baseuiStrings.mouseOver = js.native
+  var moveDown: typings.baseui.baseuiStrings.moveDown = js.native
+  var moveLeft: typings.baseui.baseuiStrings.moveLeft = js.native
+  var moveRight: typings.baseui.baseuiStrings.moveRight = js.native
+  var moveUp: typings.baseui.baseuiStrings.moveUp = js.native
 }
 
 @JSImport("baseui/datepicker", "STATE_CHANGE_TYPE")

@@ -32,7 +32,7 @@ trait XmlAttribute[Parent] extends js.Object {
   /**
     * Sets the name of this attribute.
     */
-  def name(name: String): js.Any = js.native
+  def name_=(name: String): Unit = js.native
   /**
     * Adds attribute text to this attribute and returns the new text.
     */

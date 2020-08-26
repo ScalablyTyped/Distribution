@@ -12,7 +12,7 @@ higher-order reducer to reset the redux state on certain actions
 | Keywords           | redux, flux, recycle, state, higher-order reducer, hor |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 125546 |
+| # downloads        | 129033 |
 | # stars            | 0 |
 
 ## Links

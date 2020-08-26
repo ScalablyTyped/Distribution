@@ -6,53 +6,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PropertyUpdateConfig extends js.Object {
-  var collate: js.UndefOr[String] = js.undefined
-  var custom: js.UndefOr[Fields] = js.undefined
-  var default: js.UndefOr[js.Any] = js.undefined
-  var linkedClass: js.UndefOr[String] = js.undefined
-  var linkedType: js.UndefOr[String] = js.undefined
-  var mandatory: js.UndefOr[Boolean] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var name: String
-  var notNull: js.UndefOr[Boolean] = js.undefined
-  var readonly: js.UndefOr[Boolean] = js.undefined
-  var regexp: js.UndefOr[RegExp | String] = js.undefined
-  var `type`: PropertyType
+  var collate: js.UndefOr[String] = js.native
+  var custom: js.UndefOr[Fields] = js.native
+  var default: js.UndefOr[js.Any] = js.native
+  var linkedClass: js.UndefOr[String] = js.native
+  var linkedType: js.UndefOr[String] = js.native
+  var mandatory: js.UndefOr[Boolean] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var name: String = js.native
+  var notNull: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.native
+  var regexp: js.UndefOr[RegExp | String] = js.native
+  var `type`: PropertyType = js.native
 }
 
 object PropertyUpdateConfig {
   @scala.inline
-  def apply(
-    name: String,
-    `type`: PropertyType,
-    collate: String = null,
-    custom: Fields = null,
-    default: js.Any = null,
-    linkedClass: String = null,
-    linkedType: String = null,
-    mandatory: js.UndefOr[Boolean] = js.undefined,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    notNull: js.UndefOr[Boolean] = js.undefined,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    regexp: RegExp | String = null
-  ): PropertyUpdateConfig = {
+  def apply(name: String, `type`: PropertyType): PropertyUpdateConfig = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (collate != null) __obj.updateDynamic("collate")(collate.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (linkedClass != null) __obj.updateDynamic("linkedClass")(linkedClass.asInstanceOf[js.Any])
-    if (linkedType != null) __obj.updateDynamic("linkedType")(linkedType.asInstanceOf[js.Any])
-    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
-    if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyUpdateConfig]
   }
+  @scala.inline
+  implicit class PropertyUpdateConfigOps[Self <: PropertyUpdateConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: PropertyType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCollate(value: String): Self = this.set("collate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollate: Self = this.set("collate", js.undefined)
+    @scala.inline
+    def setCustom(value: Fields): Self = this.set("custom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom: Self = this.set("custom", js.undefined)
+    @scala.inline
+    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setLinkedClass(value: String): Self = this.set("linkedClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedClass: Self = this.set("linkedClass", js.undefined)
+    @scala.inline
+    def setLinkedType(value: String): Self = this.set("linkedType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedType: Self = this.set("linkedType", js.undefined)
+    @scala.inline
+    def setMandatory(value: Boolean): Self = this.set("mandatory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMandatory: Self = this.set("mandatory", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setNotNull(value: Boolean): Self = this.set("notNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotNull: Self = this.set("notNull", js.undefined)
+    @scala.inline
+    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadonly: Self = this.set("readonly", js.undefined)
+    @scala.inline
+    def setRegexp(value: RegExp | String): Self = this.set("regexp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexp: Self = this.set("regexp", js.undefined)
+  }
+  
 }
 

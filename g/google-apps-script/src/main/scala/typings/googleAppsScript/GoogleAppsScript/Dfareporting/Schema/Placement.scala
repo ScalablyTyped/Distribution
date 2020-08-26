@@ -4,138 +4,237 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Placement extends js.Object {
-  var accountId: js.UndefOr[String] = js.undefined
-  var adBlockingOptOut: js.UndefOr[Boolean] = js.undefined
-  var additionalSizes: js.UndefOr[js.Array[Size]] = js.undefined
-  var advertiserId: js.UndefOr[String] = js.undefined
-  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  var archived: js.UndefOr[Boolean] = js.undefined
-  var campaignId: js.UndefOr[String] = js.undefined
-  var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  var comment: js.UndefOr[String] = js.undefined
-  var compatibility: js.UndefOr[String] = js.undefined
-  var contentCategoryId: js.UndefOr[String] = js.undefined
-  var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
-  var directorySiteId: js.UndefOr[String] = js.undefined
-  var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  var externalId: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  var keyName: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
-  var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var paymentApproved: js.UndefOr[Boolean] = js.undefined
-  var paymentSource: js.UndefOr[String] = js.undefined
-  var placementGroupId: js.UndefOr[String] = js.undefined
-  var placementGroupIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  var placementStrategyId: js.UndefOr[String] = js.undefined
-  var pricingSchedule: js.UndefOr[PricingSchedule] = js.undefined
-  var primary: js.UndefOr[Boolean] = js.undefined
-  var publisherUpdateInfo: js.UndefOr[LastModifiedInfo] = js.undefined
-  var siteId: js.UndefOr[String] = js.undefined
-  var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  var size: js.UndefOr[Size] = js.undefined
-  var sslRequired: js.UndefOr[Boolean] = js.undefined
-  var status: js.UndefOr[String] = js.undefined
-  var subaccountId: js.UndefOr[String] = js.undefined
-  var tagFormats: js.UndefOr[js.Array[String]] = js.undefined
-  var tagSetting: js.UndefOr[TagSetting] = js.undefined
-  var videoActiveViewOptOut: js.UndefOr[Boolean] = js.undefined
-  var videoSettings: js.UndefOr[VideoSettings] = js.undefined
-  var vpaidAdapterChoice: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
+  var adBlockingOptOut: js.UndefOr[Boolean] = js.native
+  var additionalSizes: js.UndefOr[js.Array[Size]] = js.native
+  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var archived: js.UndefOr[Boolean] = js.native
+  var campaignId: js.UndefOr[String] = js.native
+  var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var comment: js.UndefOr[String] = js.native
+  var compatibility: js.UndefOr[String] = js.native
+  var contentCategoryId: js.UndefOr[String] = js.native
+  var createInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var directorySiteId: js.UndefOr[String] = js.native
+  var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var externalId: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var keyName: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.native
+  var name: js.UndefOr[String] = js.native
+  var paymentApproved: js.UndefOr[Boolean] = js.native
+  var paymentSource: js.UndefOr[String] = js.native
+  var placementGroupId: js.UndefOr[String] = js.native
+  var placementGroupIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var placementStrategyId: js.UndefOr[String] = js.native
+  var pricingSchedule: js.UndefOr[PricingSchedule] = js.native
+  var primary: js.UndefOr[Boolean] = js.native
+  var publisherUpdateInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var siteId: js.UndefOr[String] = js.native
+  var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var size: js.UndefOr[Size] = js.native
+  var sslRequired: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.native
+  var tagFormats: js.UndefOr[js.Array[String]] = js.native
+  var tagSetting: js.UndefOr[TagSetting] = js.native
+  var videoActiveViewOptOut: js.UndefOr[Boolean] = js.native
+  var videoSettings: js.UndefOr[VideoSettings] = js.native
+  var vpaidAdapterChoice: js.UndefOr[String] = js.native
 }
 
 object Placement {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    adBlockingOptOut: js.UndefOr[Boolean] = js.undefined,
-    additionalSizes: js.Array[Size] = null,
-    advertiserId: String = null,
-    advertiserIdDimensionValue: DimensionValue = null,
-    archived: js.UndefOr[Boolean] = js.undefined,
-    campaignId: String = null,
-    campaignIdDimensionValue: DimensionValue = null,
-    comment: String = null,
-    compatibility: String = null,
-    contentCategoryId: String = null,
-    createInfo: LastModifiedInfo = null,
-    directorySiteId: String = null,
-    directorySiteIdDimensionValue: DimensionValue = null,
-    externalId: String = null,
-    id: String = null,
-    idDimensionValue: DimensionValue = null,
-    keyName: String = null,
-    kind: String = null,
-    lastModifiedInfo: LastModifiedInfo = null,
-    lookbackConfiguration: LookbackConfiguration = null,
-    name: String = null,
-    paymentApproved: js.UndefOr[Boolean] = js.undefined,
-    paymentSource: String = null,
-    placementGroupId: String = null,
-    placementGroupIdDimensionValue: DimensionValue = null,
-    placementStrategyId: String = null,
-    pricingSchedule: PricingSchedule = null,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    publisherUpdateInfo: LastModifiedInfo = null,
-    siteId: String = null,
-    siteIdDimensionValue: DimensionValue = null,
-    size: Size = null,
-    sslRequired: js.UndefOr[Boolean] = js.undefined,
-    status: String = null,
-    subaccountId: String = null,
-    tagFormats: js.Array[String] = null,
-    tagSetting: TagSetting = null,
-    videoActiveViewOptOut: js.UndefOr[Boolean] = js.undefined,
-    videoSettings: VideoSettings = null,
-    vpaidAdapterChoice: String = null
-  ): Placement = {
+  def apply(): Placement = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(adBlockingOptOut)) __obj.updateDynamic("adBlockingOptOut")(adBlockingOptOut.get.asInstanceOf[js.Any])
-    if (additionalSizes != null) __obj.updateDynamic("additionalSizes")(additionalSizes.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId.asInstanceOf[js.Any])
-    if (campaignIdDimensionValue != null) __obj.updateDynamic("campaignIdDimensionValue")(campaignIdDimensionValue.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility.asInstanceOf[js.Any])
-    if (contentCategoryId != null) __obj.updateDynamic("contentCategoryId")(contentCategoryId.asInstanceOf[js.Any])
-    if (createInfo != null) __obj.updateDynamic("createInfo")(createInfo.asInstanceOf[js.Any])
-    if (directorySiteId != null) __obj.updateDynamic("directorySiteId")(directorySiteId.asInstanceOf[js.Any])
-    if (directorySiteIdDimensionValue != null) __obj.updateDynamic("directorySiteIdDimensionValue")(directorySiteIdDimensionValue.asInstanceOf[js.Any])
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastModifiedInfo != null) __obj.updateDynamic("lastModifiedInfo")(lastModifiedInfo.asInstanceOf[js.Any])
-    if (lookbackConfiguration != null) __obj.updateDynamic("lookbackConfiguration")(lookbackConfiguration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(paymentApproved)) __obj.updateDynamic("paymentApproved")(paymentApproved.get.asInstanceOf[js.Any])
-    if (paymentSource != null) __obj.updateDynamic("paymentSource")(paymentSource.asInstanceOf[js.Any])
-    if (placementGroupId != null) __obj.updateDynamic("placementGroupId")(placementGroupId.asInstanceOf[js.Any])
-    if (placementGroupIdDimensionValue != null) __obj.updateDynamic("placementGroupIdDimensionValue")(placementGroupIdDimensionValue.asInstanceOf[js.Any])
-    if (placementStrategyId != null) __obj.updateDynamic("placementStrategyId")(placementStrategyId.asInstanceOf[js.Any])
-    if (pricingSchedule != null) __obj.updateDynamic("pricingSchedule")(pricingSchedule.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
-    if (publisherUpdateInfo != null) __obj.updateDynamic("publisherUpdateInfo")(publisherUpdateInfo.asInstanceOf[js.Any])
-    if (siteId != null) __obj.updateDynamic("siteId")(siteId.asInstanceOf[js.Any])
-    if (siteIdDimensionValue != null) __obj.updateDynamic("siteIdDimensionValue")(siteIdDimensionValue.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (tagFormats != null) __obj.updateDynamic("tagFormats")(tagFormats.asInstanceOf[js.Any])
-    if (tagSetting != null) __obj.updateDynamic("tagSetting")(tagSetting.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoActiveViewOptOut)) __obj.updateDynamic("videoActiveViewOptOut")(videoActiveViewOptOut.get.asInstanceOf[js.Any])
-    if (videoSettings != null) __obj.updateDynamic("videoSettings")(videoSettings.asInstanceOf[js.Any])
-    if (vpaidAdapterChoice != null) __obj.updateDynamic("vpaidAdapterChoice")(vpaidAdapterChoice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Placement]
   }
+  @scala.inline
+  implicit class PlacementOps[Self <: Placement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdBlockingOptOut(value: Boolean): Self = this.set("adBlockingOptOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdBlockingOptOut: Self = this.set("adBlockingOptOut", js.undefined)
+    @scala.inline
+    def setAdditionalSizesVarargs(value: Size*): Self = this.set("additionalSizes", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalSizes(value: js.Array[Size]): Self = this.set("additionalSizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalSizes: Self = this.set("additionalSizes", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    @scala.inline
+    def setCampaignIdDimensionValue(value: DimensionValue): Self = this.set("campaignIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignIdDimensionValue: Self = this.set("campaignIdDimensionValue", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setCompatibility(value: String): Self = this.set("compatibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibility: Self = this.set("compatibility", js.undefined)
+    @scala.inline
+    def setContentCategoryId(value: String): Self = this.set("contentCategoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentCategoryId: Self = this.set("contentCategoryId", js.undefined)
+    @scala.inline
+    def setCreateInfo(value: LastModifiedInfo): Self = this.set("createInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateInfo: Self = this.set("createInfo", js.undefined)
+    @scala.inline
+    def setDirectorySiteId(value: String): Self = this.set("directorySiteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteId: Self = this.set("directorySiteId", js.undefined)
+    @scala.inline
+    def setDirectorySiteIdDimensionValue(value: DimensionValue): Self = this.set("directorySiteIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteIdDimensionValue: Self = this.set("directorySiteIdDimensionValue", js.undefined)
+    @scala.inline
+    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: DimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastModifiedInfo(value: LastModifiedInfo): Self = this.set("lastModifiedInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedInfo: Self = this.set("lastModifiedInfo", js.undefined)
+    @scala.inline
+    def setLookbackConfiguration(value: LookbackConfiguration): Self = this.set("lookbackConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookbackConfiguration: Self = this.set("lookbackConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPaymentApproved(value: Boolean): Self = this.set("paymentApproved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentApproved: Self = this.set("paymentApproved", js.undefined)
+    @scala.inline
+    def setPaymentSource(value: String): Self = this.set("paymentSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentSource: Self = this.set("paymentSource", js.undefined)
+    @scala.inline
+    def setPlacementGroupId(value: String): Self = this.set("placementGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroupId: Self = this.set("placementGroupId", js.undefined)
+    @scala.inline
+    def setPlacementGroupIdDimensionValue(value: DimensionValue): Self = this.set("placementGroupIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroupIdDimensionValue: Self = this.set("placementGroupIdDimensionValue", js.undefined)
+    @scala.inline
+    def setPlacementStrategyId(value: String): Self = this.set("placementStrategyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementStrategyId: Self = this.set("placementStrategyId", js.undefined)
+    @scala.inline
+    def setPricingSchedule(value: PricingSchedule): Self = this.set("pricingSchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingSchedule: Self = this.set("pricingSchedule", js.undefined)
+    @scala.inline
+    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setPublisherUpdateInfo(value: LastModifiedInfo): Self = this.set("publisherUpdateInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisherUpdateInfo: Self = this.set("publisherUpdateInfo", js.undefined)
+    @scala.inline
+    def setSiteId(value: String): Self = this.set("siteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteId: Self = this.set("siteId", js.undefined)
+    @scala.inline
+    def setSiteIdDimensionValue(value: DimensionValue): Self = this.set("siteIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteIdDimensionValue: Self = this.set("siteIdDimensionValue", js.undefined)
+    @scala.inline
+    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSslRequired(value: Boolean): Self = this.set("sslRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslRequired: Self = this.set("sslRequired", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setTagFormatsVarargs(value: String*): Self = this.set("tagFormats", js.Array(value :_*))
+    @scala.inline
+    def setTagFormats(value: js.Array[String]): Self = this.set("tagFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagFormats: Self = this.set("tagFormats", js.undefined)
+    @scala.inline
+    def setTagSetting(value: TagSetting): Self = this.set("tagSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSetting: Self = this.set("tagSetting", js.undefined)
+    @scala.inline
+    def setVideoActiveViewOptOut(value: Boolean): Self = this.set("videoActiveViewOptOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoActiveViewOptOut: Self = this.set("videoActiveViewOptOut", js.undefined)
+    @scala.inline
+    def setVideoSettings(value: VideoSettings): Self = this.set("videoSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoSettings: Self = this.set("videoSettings", js.undefined)
+    @scala.inline
+    def setVpaidAdapterChoice(value: String): Self = this.set("vpaidAdapterChoice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpaidAdapterChoice: Self = this.set("vpaidAdapterChoice", js.undefined)
+  }
+  
 }
 

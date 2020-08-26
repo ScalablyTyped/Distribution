@@ -11,48 +11,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var inputFormat: js.UndefOr[diff | json] = js.undefined
-  var matchWordsThreshold: js.UndefOr[Double] = js.undefined
-  var matching: js.UndefOr[lines | words | none] = js.undefined
-  var matchingMaxComparisons: js.UndefOr[Double] = js.undefined
-  var maxLineLengthHighlight: js.UndefOr[Double] = js.undefined
-  var maxLineSizeInBlockForComparison: js.UndefOr[Double] = js.undefined
-  var outputFormat: js.UndefOr[`line-by-line` | `side-by-side`] = js.undefined
-  var rawTemplates: js.UndefOr[js.Object] = js.undefined
-  var renderNothingWhenEmpty: js.UndefOr[Boolean] = js.undefined
-  var showFiles: js.UndefOr[Boolean] = js.undefined
-  var templates: js.UndefOr[js.Object] = js.undefined
+  var inputFormat: js.UndefOr[diff | json] = js.native
+  var matchWordsThreshold: js.UndefOr[Double] = js.native
+  var matching: js.UndefOr[lines | words | none] = js.native
+  var matchingMaxComparisons: js.UndefOr[Double] = js.native
+  var maxLineLengthHighlight: js.UndefOr[Double] = js.native
+  var maxLineSizeInBlockForComparison: js.UndefOr[Double] = js.native
+  var outputFormat: js.UndefOr[`line-by-line` | `side-by-side`] = js.native
+  var rawTemplates: js.UndefOr[js.Object] = js.native
+  var renderNothingWhenEmpty: js.UndefOr[Boolean] = js.native
+  var showFiles: js.UndefOr[Boolean] = js.native
+  var templates: js.UndefOr[js.Object] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    inputFormat: diff | json = null,
-    matchWordsThreshold: js.UndefOr[Double] = js.undefined,
-    matching: lines | words | none = null,
-    matchingMaxComparisons: js.UndefOr[Double] = js.undefined,
-    maxLineLengthHighlight: js.UndefOr[Double] = js.undefined,
-    maxLineSizeInBlockForComparison: js.UndefOr[Double] = js.undefined,
-    outputFormat: `line-by-line` | `side-by-side` = null,
-    rawTemplates: js.Object = null,
-    renderNothingWhenEmpty: js.UndefOr[Boolean] = js.undefined,
-    showFiles: js.UndefOr[Boolean] = js.undefined,
-    templates: js.Object = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchWordsThreshold)) __obj.updateDynamic("matchWordsThreshold")(matchWordsThreshold.get.asInstanceOf[js.Any])
-    if (matching != null) __obj.updateDynamic("matching")(matching.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchingMaxComparisons)) __obj.updateDynamic("matchingMaxComparisons")(matchingMaxComparisons.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLineLengthHighlight)) __obj.updateDynamic("maxLineLengthHighlight")(maxLineLengthHighlight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLineSizeInBlockForComparison)) __obj.updateDynamic("maxLineSizeInBlockForComparison")(maxLineSizeInBlockForComparison.get.asInstanceOf[js.Any])
-    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
-    if (rawTemplates != null) __obj.updateDynamic("rawTemplates")(rawTemplates.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderNothingWhenEmpty)) __obj.updateDynamic("renderNothingWhenEmpty")(renderNothingWhenEmpty.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFiles)) __obj.updateDynamic("showFiles")(showFiles.get.asInstanceOf[js.Any])
-    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputFormat(value: diff | json): Self = this.set("inputFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputFormat: Self = this.set("inputFormat", js.undefined)
+    @scala.inline
+    def setMatchWordsThreshold(value: Double): Self = this.set("matchWordsThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchWordsThreshold: Self = this.set("matchWordsThreshold", js.undefined)
+    @scala.inline
+    def setMatching(value: lines | words | none): Self = this.set("matching", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatching: Self = this.set("matching", js.undefined)
+    @scala.inline
+    def setMatchingMaxComparisons(value: Double): Self = this.set("matchingMaxComparisons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchingMaxComparisons: Self = this.set("matchingMaxComparisons", js.undefined)
+    @scala.inline
+    def setMaxLineLengthHighlight(value: Double): Self = this.set("maxLineLengthHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLineLengthHighlight: Self = this.set("maxLineLengthHighlight", js.undefined)
+    @scala.inline
+    def setMaxLineSizeInBlockForComparison(value: Double): Self = this.set("maxLineSizeInBlockForComparison", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLineSizeInBlockForComparison: Self = this.set("maxLineSizeInBlockForComparison", js.undefined)
+    @scala.inline
+    def setOutputFormat(value: `line-by-line` | `side-by-side`): Self = this.set("outputFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFormat: Self = this.set("outputFormat", js.undefined)
+    @scala.inline
+    def setRawTemplates(value: js.Object): Self = this.set("rawTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawTemplates: Self = this.set("rawTemplates", js.undefined)
+    @scala.inline
+    def setRenderNothingWhenEmpty(value: Boolean): Self = this.set("renderNothingWhenEmpty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderNothingWhenEmpty: Self = this.set("renderNothingWhenEmpty", js.undefined)
+    @scala.inline
+    def setShowFiles(value: Boolean): Self = this.set("showFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFiles: Self = this.set("showFiles", js.undefined)
+    @scala.inline
+    def setTemplates(value: js.Object): Self = this.set("templates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplates: Self = this.set("templates", js.undefined)
+  }
+  
 }
 

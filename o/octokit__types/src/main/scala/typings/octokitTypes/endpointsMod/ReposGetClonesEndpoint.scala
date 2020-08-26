@@ -6,21 +6,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReposGetClonesEndpoint extends js.Object {
-  var owner: String
+  var owner: String = js.native
   /**
     * Must be one of: `day`, `week`.
     */
-  var per: js.UndefOr[day | week] = js.undefined
-  var repo: String
+  var per: js.UndefOr[day | week] = js.native
+  var repo: String = js.native
 }
 
 object ReposGetClonesEndpoint {
   @scala.inline
-  def apply(owner: String, repo: String, per: day | week = null): ReposGetClonesEndpoint = {
+  def apply(owner: String, repo: String): ReposGetClonesEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-    if (per != null) __obj.updateDynamic("per")(per.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetClonesEndpoint]
   }
+  @scala.inline
+  implicit class ReposGetClonesEndpointOps[Self <: ReposGetClonesEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPer(value: day | week): Self = this.set("per", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePer: Self = this.set("per", js.undefined)
+  }
+  
 }
 

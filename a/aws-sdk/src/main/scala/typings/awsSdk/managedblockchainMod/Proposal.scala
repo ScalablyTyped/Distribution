@@ -58,34 +58,70 @@ trait Proposal extends js.Object {
 
 object Proposal {
   @scala.inline
-  def apply(
-    Actions: ProposalActions = null,
-    CreationDate: Timestamp = null,
-    Description: DescriptionString = null,
-    ExpirationDate: Timestamp = null,
-    NetworkId: ResourceIdString = null,
-    NoVoteCount: js.UndefOr[VoteCount] = js.undefined,
-    OutstandingVoteCount: js.UndefOr[VoteCount] = js.undefined,
-    ProposalId: ResourceIdString = null,
-    ProposedByMemberId: ResourceIdString = null,
-    ProposedByMemberName: NetworkMemberNameString = null,
-    Status: ProposalStatus = null,
-    YesVoteCount: js.UndefOr[VoteCount] = js.undefined
-  ): Proposal = {
+  def apply(): Proposal = {
     val __obj = js.Dynamic.literal()
-    if (Actions != null) __obj.updateDynamic("Actions")(Actions.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
-    if (NetworkId != null) __obj.updateDynamic("NetworkId")(NetworkId.asInstanceOf[js.Any])
-    if (!js.isUndefined(NoVoteCount)) __obj.updateDynamic("NoVoteCount")(NoVoteCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(OutstandingVoteCount)) __obj.updateDynamic("OutstandingVoteCount")(OutstandingVoteCount.get.asInstanceOf[js.Any])
-    if (ProposalId != null) __obj.updateDynamic("ProposalId")(ProposalId.asInstanceOf[js.Any])
-    if (ProposedByMemberId != null) __obj.updateDynamic("ProposedByMemberId")(ProposedByMemberId.asInstanceOf[js.Any])
-    if (ProposedByMemberName != null) __obj.updateDynamic("ProposedByMemberName")(ProposedByMemberName.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(YesVoteCount)) __obj.updateDynamic("YesVoteCount")(YesVoteCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Proposal]
   }
+  @scala.inline
+  implicit class ProposalOps[Self <: Proposal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActions(value: ProposalActions): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("Actions", js.undefined)
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: Timestamp): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    @scala.inline
+    def setNetworkId(value: ResourceIdString): Self = this.set("NetworkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkId: Self = this.set("NetworkId", js.undefined)
+    @scala.inline
+    def setNoVoteCount(value: VoteCount): Self = this.set("NoVoteCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoVoteCount: Self = this.set("NoVoteCount", js.undefined)
+    @scala.inline
+    def setOutstandingVoteCount(value: VoteCount): Self = this.set("OutstandingVoteCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutstandingVoteCount: Self = this.set("OutstandingVoteCount", js.undefined)
+    @scala.inline
+    def setProposalId(value: ResourceIdString): Self = this.set("ProposalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposalId: Self = this.set("ProposalId", js.undefined)
+    @scala.inline
+    def setProposedByMemberId(value: ResourceIdString): Self = this.set("ProposedByMemberId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposedByMemberId: Self = this.set("ProposedByMemberId", js.undefined)
+    @scala.inline
+    def setProposedByMemberName(value: NetworkMemberNameString): Self = this.set("ProposedByMemberName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposedByMemberName: Self = this.set("ProposedByMemberName", js.undefined)
+    @scala.inline
+    def setStatus(value: ProposalStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setYesVoteCount(value: VoteCount): Self = this.set("YesVoteCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYesVoteCount: Self = this.set("YesVoteCount", js.undefined)
+  }
+  
 }
 

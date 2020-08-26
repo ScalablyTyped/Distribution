@@ -31,22 +31,46 @@ trait TextOptions extends js.Object {
 
 object TextOptions {
   @scala.inline
-  def apply(
-    AnalysisScheme: Word = null,
-    DefaultValue: FieldValue = null,
-    HighlightEnabled: js.UndefOr[Boolean] = js.undefined,
-    ReturnEnabled: js.UndefOr[Boolean] = js.undefined,
-    SortEnabled: js.UndefOr[Boolean] = js.undefined,
-    SourceField: FieldName = null
-  ): TextOptions = {
+  def apply(): TextOptions = {
     val __obj = js.Dynamic.literal()
-    if (AnalysisScheme != null) __obj.updateDynamic("AnalysisScheme")(AnalysisScheme.asInstanceOf[js.Any])
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(HighlightEnabled)) __obj.updateDynamic("HighlightEnabled")(HighlightEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SortEnabled)) __obj.updateDynamic("SortEnabled")(SortEnabled.get.asInstanceOf[js.Any])
-    if (SourceField != null) __obj.updateDynamic("SourceField")(SourceField.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextOptions]
   }
+  @scala.inline
+  implicit class TextOptionsOps[Self <: TextOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnalysisScheme(value: Word): Self = this.set("AnalysisScheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalysisScheme: Self = this.set("AnalysisScheme", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: FieldValue): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    @scala.inline
+    def setHighlightEnabled(value: Boolean): Self = this.set("HighlightEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightEnabled: Self = this.set("HighlightEnabled", js.undefined)
+    @scala.inline
+    def setReturnEnabled(value: Boolean): Self = this.set("ReturnEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnEnabled: Self = this.set("ReturnEnabled", js.undefined)
+    @scala.inline
+    def setSortEnabled(value: Boolean): Self = this.set("SortEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortEnabled: Self = this.set("SortEnabled", js.undefined)
+    @scala.inline
+    def setSourceField(value: FieldName): Self = this.set("SourceField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceField: Self = this.set("SourceField", js.undefined)
+  }
+  
 }
 

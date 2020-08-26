@@ -26,17 +26,38 @@ trait DescribeAffectedEntitiesForOrganizationRequest extends js.Object {
 
 object DescribeAffectedEntitiesForOrganizationRequest {
   @scala.inline
-  def apply(
-    organizationEntityFilters: OrganizationEntityFiltersList,
-    locale: locale = null,
-    maxResults: js.UndefOr[maxResults] = js.undefined,
-    nextToken: nextToken = null
-  ): DescribeAffectedEntitiesForOrganizationRequest = {
+  def apply(organizationEntityFilters: OrganizationEntityFiltersList): DescribeAffectedEntitiesForOrganizationRequest = {
     val __obj = js.Dynamic.literal(organizationEntityFilters = organizationEntityFilters.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAffectedEntitiesForOrganizationRequest]
   }
+  @scala.inline
+  implicit class DescribeAffectedEntitiesForOrganizationRequestOps[Self <: DescribeAffectedEntitiesForOrganizationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOrganizationEntityFiltersVarargs(value: EventAccountFilter*): Self = this.set("organizationEntityFilters", js.Array(value :_*))
+    @scala.inline
+    def setOrganizationEntityFilters(value: OrganizationEntityFiltersList): Self = this.set("organizationEntityFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocale(value: locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMaxResults(value: maxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: nextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

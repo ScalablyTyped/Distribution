@@ -24,6 +24,7 @@ object template extends js.Object {
       * @note if you don't include the mask argument, dateFormat.masks.default is used
       */
     def date(): String = js.native
+    def date(date: js.UndefOr[scala.Nothing], format: String): String = js.native
     def date(date: String): String = js.native
     def date(date: String, format: String): String = js.native
     def date(date: Double): String = js.native

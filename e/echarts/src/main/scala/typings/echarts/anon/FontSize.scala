@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FontSize extends js.Object {
   /**
     * Horizontal alignment of text, automatic by default.
@@ -23,7 +24,7 @@ trait FontSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.align
     */
-  var align: js.UndefOr[String] = js.undefined
+  var align: js.UndefOr[String] = js.native
   /**
     * Background color of the text fregment.
     *
@@ -41,7 +42,7 @@ trait FontSize extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.backgroundColor
     */
-  var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
+  var backgroundColor: js.UndefOr[js.Object | String] = js.native
   /**
     * Border color of the text fregment.
     *
@@ -50,21 +51,21 @@ trait FontSize extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.borderColor
     */
-  var borderColor: js.UndefOr[String] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
   /**
     * Border radius of the text fregment.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.borderRadius
     */
-  var borderRadius: js.UndefOr[Double] = js.undefined
+  var borderRadius: js.UndefOr[Double] = js.native
   /**
     * Border width of the text fregment.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.borderWidth
     */
-  var borderWidth: js.UndefOr[Double] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.native
   /**
     * text color.
     *
@@ -73,7 +74,7 @@ trait FontSize extends js.Object {
     * ""#fff""
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.color
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /**
     * font family
     *
@@ -84,7 +85,7 @@ trait FontSize extends js.Object {
     * "sans-serif"
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.fontFamily
     */
-  var fontFamily: js.UndefOr[String] = js.undefined
+  var fontFamily: js.UndefOr[String] = js.native
   /**
     * font size
     *
@@ -93,7 +94,7 @@ trait FontSize extends js.Object {
     * 12
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.fontSize
     */
-  var fontSize: js.UndefOr[Double] = js.undefined
+  var fontSize: js.UndefOr[Double] = js.native
   /**
     * font style
     *
@@ -108,7 +109,7 @@ trait FontSize extends js.Object {
     * "normal"
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.fontStyle
     */
-  var fontStyle: js.UndefOr[String] = js.undefined
+  var fontStyle: js.UndefOr[String] = js.native
   /**
     * font thick weight
     *
@@ -125,7 +126,7 @@ trait FontSize extends js.Object {
     * "normal"
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.fontWeight
     */
-  var fontWeight: js.UndefOr[String] = js.undefined
+  var fontWeight: js.UndefOr[String] = js.native
   /**
     * Data label formatter, which supports string template
     * and callback function.
@@ -171,7 +172,7 @@ trait FontSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.formatter
     */
-  var formatter: js.UndefOr[js.Function | String] = js.undefined
+  var formatter: js.UndefOr[js.Function | String] = js.native
   /**
     * Height of the text block.
     * It is the width of the text by default.
@@ -187,7 +188,7 @@ trait FontSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.height
     */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.native
   /**
     * Line height of the text fregment.
     *
@@ -199,7 +200,7 @@ trait FontSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.lineHeight
     */
-  var lineHeight: js.UndefOr[Double] = js.undefined
+  var lineHeight: js.UndefOr[Double] = js.native
   /**
     * Padding of the text fregment, for example:
     *
@@ -215,7 +216,7 @@ trait FontSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.padding
     */
-  var padding: js.UndefOr[js.Array[_] | Double] = js.undefined
+  var padding: js.UndefOr[js.Array[_] | Double] = js.native
   /**
     * the position of label, options:
     *
@@ -228,7 +229,7 @@ trait FontSize extends js.Object {
     * "end"
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.position
     */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /**
     * "Rich text styles" can be defined in this `rich`
     * property. For example:
@@ -247,14 +248,14 @@ trait FontSize extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align]
-  ] = js.undefined
+  ] = js.native
   /**
     * Show blur of the text block.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.shadowBlur
     */
-  var shadowBlur: js.UndefOr[Double] = js.undefined
+  var shadowBlur: js.UndefOr[Double] = js.native
   /**
     * Shadow color of the text block.
     *
@@ -263,28 +264,28 @@ trait FontSize extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.shadowColor
     */
-  var shadowColor: js.UndefOr[String] = js.undefined
+  var shadowColor: js.UndefOr[String] = js.native
   /**
     * Shadow X offset of the text block.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[Double] = js.undefined
+  var shadowOffsetX: js.UndefOr[Double] = js.native
   /**
     * Shadow Y offset of the text block.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[Double] = js.undefined
+  var shadowOffsetY: js.UndefOr[Double] = js.native
   /**
     * Whether to show label.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.show
     */
-  var show: js.UndefOr[Boolean] = js.undefined
+  var show: js.UndefOr[Boolean] = js.native
   /**
     * Storke color of the text.
     *
@@ -293,21 +294,21 @@ trait FontSize extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.textBorderColor
     */
-  var textBorderColor: js.UndefOr[String] = js.undefined
+  var textBorderColor: js.UndefOr[String] = js.native
   /**
     * Storke line width of the text.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.textBorderWidth
     */
-  var textBorderWidth: js.UndefOr[Double] = js.undefined
+  var textBorderWidth: js.UndefOr[Double] = js.native
   /**
     * Shadow blue of the text itself.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.textShadowBlur
     */
-  var textShadowBlur: js.UndefOr[Double] = js.undefined
+  var textShadowBlur: js.UndefOr[Double] = js.native
   /**
     * Shadow color of the text itself.
     *
@@ -316,21 +317,21 @@ trait FontSize extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.textShadowColor
     */
-  var textShadowColor: js.UndefOr[String] = js.undefined
+  var textShadowColor: js.UndefOr[String] = js.native
   /**
     * Shadow X offset of the text itself.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.textShadowOffsetX
     */
-  var textShadowOffsetX: js.UndefOr[Double] = js.undefined
+  var textShadowOffsetX: js.UndefOr[Double] = js.native
   /**
     * Shadow Y offset of the text itself.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.textShadowOffsetY
     */
-  var textShadowOffsetY: js.UndefOr[Double] = js.undefined
+  var textShadowOffsetY: js.UndefOr[Double] = js.native
   /**
     * Vertical alignment of text, automatic by default.
     *
@@ -348,7 +349,7 @@ trait FontSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.verticalAlign
     */
-  var verticalAlign: js.UndefOr[String] = js.undefined
+  var verticalAlign: js.UndefOr[String] = js.native
   /**
     * Width of the text block.
     * It is the width of the text by default.
@@ -374,76 +375,150 @@ trait FontSize extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.width
     */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object FontSize {
   @scala.inline
-  def apply(
-    align: String = null,
-    backgroundColor: js.Object | String = null,
-    borderColor: String = null,
-    borderRadius: js.UndefOr[Double] = js.undefined,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    color: String = null,
-    fontFamily: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    fontStyle: String = null,
-    fontWeight: String = null,
-    formatter: js.Function | String = null,
-    height: Double | String = null,
-    lineHeight: js.UndefOr[Double] = js.undefined,
-    padding: js.Array[_] | Double = null,
-    position: String = null,
-    rich: /**
-    * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
-    */
-  StringDictionary[Align] = null,
-    shadowBlur: js.UndefOr[Double] = js.undefined,
-    shadowColor: String = null,
-    shadowOffsetX: js.UndefOr[Double] = js.undefined,
-    shadowOffsetY: js.UndefOr[Double] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    textBorderColor: String = null,
-    textBorderWidth: js.UndefOr[Double] = js.undefined,
-    textShadowBlur: js.UndefOr[Double] = js.undefined,
-    textShadowColor: String = null,
-    textShadowOffsetX: js.UndefOr[Double] = js.undefined,
-    textShadowOffsetY: js.UndefOr[Double] = js.undefined,
-    verticalAlign: String = null,
-    width: Double | String = null
-  ): FontSize = {
+  def apply(): FontSize = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineHeight)) __obj.updateDynamic("lineHeight")(lineHeight.get.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rich != null) __obj.updateDynamic("rich")(rich.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowBlur)) __obj.updateDynamic("shadowBlur")(shadowBlur.get.asInstanceOf[js.Any])
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowOffsetX)) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowOffsetY)) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (textBorderColor != null) __obj.updateDynamic("textBorderColor")(textBorderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(textBorderWidth)) __obj.updateDynamic("textBorderWidth")(textBorderWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(textShadowBlur)) __obj.updateDynamic("textShadowBlur")(textShadowBlur.get.asInstanceOf[js.Any])
-    if (textShadowColor != null) __obj.updateDynamic("textShadowColor")(textShadowColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(textShadowOffsetX)) __obj.updateDynamic("textShadowOffsetX")(textShadowOffsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(textShadowOffsetY)) __obj.updateDynamic("textShadowOffsetY")(textShadowOffsetY.get.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSize]
   }
+  @scala.inline
+  implicit class FontSizeOps[Self <: FontSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: js.Object | String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderRadius(value: Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setFormatter(value: js.Function | String): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    @scala.inline
+    def setPaddingVarargs(value: js.Any*): Self = this.set("padding", js.Array(value :_*))
+    @scala.inline
+    def setPadding(value: js.Array[_] | Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRich(
+      value: /**
+      * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
+      */
+    StringDictionary[Align]
+    ): Self = this.set("rich", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRich: Self = this.set("rich", js.undefined)
+    @scala.inline
+    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    @scala.inline
+    def setShadowColor(value: String): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    @scala.inline
+    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
+    @scala.inline
+    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setTextBorderColor(value: String): Self = this.set("textBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextBorderColor: Self = this.set("textBorderColor", js.undefined)
+    @scala.inline
+    def setTextBorderWidth(value: Double): Self = this.set("textBorderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextBorderWidth: Self = this.set("textBorderWidth", js.undefined)
+    @scala.inline
+    def setTextShadowBlur(value: Double): Self = this.set("textShadowBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextShadowBlur: Self = this.set("textShadowBlur", js.undefined)
+    @scala.inline
+    def setTextShadowColor(value: String): Self = this.set("textShadowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextShadowColor: Self = this.set("textShadowColor", js.undefined)
+    @scala.inline
+    def setTextShadowOffsetX(value: Double): Self = this.set("textShadowOffsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextShadowOffsetX: Self = this.set("textShadowOffsetX", js.undefined)
+    @scala.inline
+    def setTextShadowOffsetY(value: Double): Self = this.set("textShadowOffsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextShadowOffsetY: Self = this.set("textShadowOffsetY", js.undefined)
+    @scala.inline
+    def setVerticalAlign(value: String): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

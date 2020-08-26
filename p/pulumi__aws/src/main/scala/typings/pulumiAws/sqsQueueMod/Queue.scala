@@ -26,6 +26,7 @@ class Queue protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: QueueArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: QueueArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN of the SQS queue
@@ -80,9 +81,9 @@ class Queue protected () extends CustomResource {
     */
   val redrivePolicy: Output_[js.UndefOr[String]] = js.native
   /**
-    * A mapping of tags to assign to the queue.
+    * A map of tags to assign to the queue.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The visibility timeout for the queue. An integer from 0 to 43200 (12 hours). The default for this attribute is 30. For more information about visibility timeout, see [AWS docs](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/AboutVT.html).
     */
@@ -92,6 +93,12 @@ class Queue protected () extends CustomResource {
     * with options to control the behavior of the subscription.
     */
   def onEvent(name: String, handler: QueueEventHandler): QueueEventSubscription = js.native
+  def onEvent(
+    name: String,
+    handler: QueueEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ): QueueEventSubscription = js.native
   def onEvent(name: String, handler: QueueEventHandler, args: QueueEventSubscriptionArgs): QueueEventSubscription = js.native
   def onEvent(
     name: String,
@@ -112,8 +119,10 @@ object Queue extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Queue = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Queue = js.native
   def get(name: String, id: Input[ID], state: QueueState): Queue = js.native
   def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): Queue = js.native
   /**

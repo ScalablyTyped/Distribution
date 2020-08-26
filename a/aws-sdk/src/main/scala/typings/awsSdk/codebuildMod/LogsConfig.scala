@@ -18,11 +18,30 @@ trait LogsConfig extends js.Object {
 
 object LogsConfig {
   @scala.inline
-  def apply(cloudWatchLogs: CloudWatchLogsConfig = null, s3Logs: S3LogsConfig = null): LogsConfig = {
+  def apply(): LogsConfig = {
     val __obj = js.Dynamic.literal()
-    if (cloudWatchLogs != null) __obj.updateDynamic("cloudWatchLogs")(cloudWatchLogs.asInstanceOf[js.Any])
-    if (s3Logs != null) __obj.updateDynamic("s3Logs")(s3Logs.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogsConfig]
   }
+  @scala.inline
+  implicit class LogsConfigOps[Self <: LogsConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchLogs(value: CloudWatchLogsConfig): Self = this.set("cloudWatchLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLogs: Self = this.set("cloudWatchLogs", js.undefined)
+    @scala.inline
+    def setS3Logs(value: S3LogsConfig): Self = this.set("s3Logs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Logs: Self = this.set("s3Logs", js.undefined)
+  }
+  
 }
 

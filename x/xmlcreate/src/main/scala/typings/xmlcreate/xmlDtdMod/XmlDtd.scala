@@ -52,7 +52,7 @@ trait XmlDtd[Parent] extends js.Object {
   /**
     * Sets the name of the DTD.
     */
-  def name(name: String): js.Any = js.native
+  def name_=(name: String): Unit = js.native
   /**
     * Adds a notation declaration to this document type declaration
     * and returns the new notation declaration.
@@ -69,25 +69,21 @@ trait XmlDtd[Parent] extends js.Object {
     */
   def procInst(options: IXmlProcInstOptions): typings.xmlcreate.xmlProcInstMod.default[this.type] = js.native
   /**
-    * Sets the public identifier of the DTD.
-    */
-  def pubId(): js.Any = js.native
-  def pubId(pubId: String): js.Any = js.native
-  /**
     * Gets the public identifier of the DTD.
     */
-  @JSName("pubId")
-  def pubId_Union: js.UndefOr[String] = js.native
+  def pubId: js.UndefOr[String] = js.native
   /**
-    * Sets the system identifier of the DTD.
+    * Sets the public identifier of the DTD.
     */
-  def sysId(): js.Any = js.native
-  def sysId(sysId: String): js.Any = js.native
+  def pubId_=(pubId: js.UndefOr[String]): Unit = js.native
   /**
     * Gets the system identifier of the DTD.
     */
-  @JSName("sysId")
-  def sysId_Union: js.UndefOr[String] = js.native
+  def sysId: js.UndefOr[String] = js.native
+  /**
+    * Sets the system identifier of the DTD.
+    */
+  def sysId_=(sysId: js.UndefOr[String]): Unit = js.native
   def toString(options: IStringOptions): String = js.native
   /**
     * Returns the parent of this attribute.

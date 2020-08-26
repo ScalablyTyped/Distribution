@@ -37,6 +37,7 @@ object Model extends js.Object {
     * @param origin String/Object The original method name
     */
   def createAlias(): Unit = js.native
+  def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
   def createAlias(alias: js.Any): Unit = js.native
   def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
   /** [Method] Returns an Array of Field definitions which define this Model s structure Fields are sorted upon Model class definit
@@ -64,6 +65,7 @@ object Model extends js.Object {
     * @param config Object config object containing success, failure and callback functions, plus optional scope
     */
   def load(): Unit = js.native
+  def load(id: js.UndefOr[scala.Nothing], config: js.Any): Unit = js.native
   def load(id: js.Any): Unit = js.native
   def load(id: js.Any, config: js.Any): Unit = js.native
   /** [Method] Override members of this class
@@ -78,7 +80,11 @@ object Model extends js.Object {
     * @param clientIdProperty Object
     */
   def setFields(): Unit = js.native
+  def setFields(fields: js.UndefOr[scala.Nothing], idProperty: js.UndefOr[scala.Nothing], clientIdProperty: js.Any): Unit = js.native
+  def setFields(fields: js.UndefOr[scala.Nothing], idProperty: js.Any): Unit = js.native
+  def setFields(fields: js.UndefOr[scala.Nothing], idProperty: js.Any, clientIdProperty: js.Any): Unit = js.native
   def setFields(fields: js.Any): Unit = js.native
+  def setFields(fields: js.Any, idProperty: js.UndefOr[scala.Nothing], clientIdProperty: js.Any): Unit = js.native
   def setFields(fields: js.Any, idProperty: js.Any): Unit = js.native
   def setFields(fields: js.Any, idProperty: js.Any, clientIdProperty: js.Any): Unit = js.native
   /** [Method] Sets the Proxy to use for this model

@@ -14,6 +14,13 @@ class BinaryOperatorExpr protected () extends Expression {
     operator: BinaryOperator,
     lhs: Expression,
     rhs: Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    operator: BinaryOperator,
+    lhs: Expression,
+    rhs: Expression,
     `type`: Null,
     sourceSpan: ParseSourceSpan
   ) = this()
@@ -23,6 +30,38 @@ class BinaryOperatorExpr protected () extends Expression {
     rhs: Expression,
     `type`: Type,
     sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    operator: BinaryOperator,
+    lhs: Expression,
+    rhs: Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: js.UndefOr[scala.Nothing],
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: BinaryOperator,
+    lhs: Expression,
+    rhs: Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: Null,
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: BinaryOperator,
+    lhs: Expression,
+    rhs: Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan,
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: BinaryOperator,
+    lhs: Expression,
+    rhs: Expression,
+    `type`: Null,
+    sourceSpan: js.UndefOr[scala.Nothing],
+    parens: Boolean
   ) = this()
   def this(
     operator: BinaryOperator,
@@ -38,6 +77,14 @@ class BinaryOperatorExpr protected () extends Expression {
     rhs: Expression,
     `type`: Null,
     sourceSpan: ParseSourceSpan,
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: BinaryOperator,
+    lhs: Expression,
+    rhs: Expression,
+    `type`: Type,
+    sourceSpan: js.UndefOr[scala.Nothing],
     parens: Boolean
   ) = this()
   def this(

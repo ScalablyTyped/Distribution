@@ -110,58 +110,124 @@ trait Job extends js.Object {
 
 object Job {
   @scala.inline
-  def apply(
-    Role: string,
-    Settings: JobSettings,
-    AccelerationSettings: AccelerationSettings = null,
-    AccelerationStatus: AccelerationStatus = null,
-    Arn: string = null,
-    BillingTagsSource: BillingTagsSource = null,
-    CreatedAt: timestampUnix = null,
-    CurrentPhase: JobPhase = null,
-    ErrorCode: js.UndefOr[integer] = js.undefined,
-    ErrorMessage: string = null,
-    HopDestinations: listOfHopDestination = null,
-    Id: string = null,
-    JobPercentComplete: js.UndefOr[integer] = js.undefined,
-    JobTemplate: string = null,
-    Messages: JobMessages = null,
-    OutputGroupDetails: listOfOutputGroupDetail = null,
-    Priority: js.UndefOr[integerMinNegative50Max50] = js.undefined,
-    Queue: string = null,
-    QueueTransitions: listOfQueueTransition = null,
-    RetryCount: js.UndefOr[integer] = js.undefined,
-    SimulateReservedQueue: SimulateReservedQueue = null,
-    Status: JobStatus = null,
-    StatusUpdateInterval: StatusUpdateInterval = null,
-    Timing: Timing = null,
-    UserMetadata: mapOfString = null
-  ): Job = {
+  def apply(Role: string, Settings: JobSettings): Job = {
     val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any])
-    if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings.asInstanceOf[js.Any])
-    if (AccelerationStatus != null) __obj.updateDynamic("AccelerationStatus")(AccelerationStatus.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (BillingTagsSource != null) __obj.updateDynamic("BillingTagsSource")(BillingTagsSource.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (CurrentPhase != null) __obj.updateDynamic("CurrentPhase")(CurrentPhase.asInstanceOf[js.Any])
-    if (!js.isUndefined(ErrorCode)) __obj.updateDynamic("ErrorCode")(ErrorCode.get.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(JobPercentComplete)) __obj.updateDynamic("JobPercentComplete")(JobPercentComplete.get.asInstanceOf[js.Any])
-    if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate.asInstanceOf[js.Any])
-    if (Messages != null) __obj.updateDynamic("Messages")(Messages.asInstanceOf[js.Any])
-    if (OutputGroupDetails != null) __obj.updateDynamic("OutputGroupDetails")(OutputGroupDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
-    if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
-    if (QueueTransitions != null) __obj.updateDynamic("QueueTransitions")(QueueTransitions.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetryCount)) __obj.updateDynamic("RetryCount")(RetryCount.get.asInstanceOf[js.Any])
-    if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
-    if (Timing != null) __obj.updateDynamic("Timing")(Timing.asInstanceOf[js.Any])
-    if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Job]
   }
+  @scala.inline
+  implicit class JobOps[Self <: Job] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRole(value: string): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSettings(value: JobSettings): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccelerationSettings(value: AccelerationSettings): Self = this.set("AccelerationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerationSettings: Self = this.set("AccelerationSettings", js.undefined)
+    @scala.inline
+    def setAccelerationStatus(value: AccelerationStatus): Self = this.set("AccelerationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerationStatus: Self = this.set("AccelerationStatus", js.undefined)
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setBillingTagsSource(value: BillingTagsSource): Self = this.set("BillingTagsSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingTagsSource: Self = this.set("BillingTagsSource", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: timestampUnix): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setCurrentPhase(value: JobPhase): Self = this.set("CurrentPhase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPhase: Self = this.set("CurrentPhase", js.undefined)
+    @scala.inline
+    def setErrorCode(value: integer): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: string): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setHopDestinationsVarargs(value: HopDestination*): Self = this.set("HopDestinations", js.Array(value :_*))
+    @scala.inline
+    def setHopDestinations(value: listOfHopDestination): Self = this.set("HopDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHopDestinations: Self = this.set("HopDestinations", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setJobPercentComplete(value: integer): Self = this.set("JobPercentComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobPercentComplete: Self = this.set("JobPercentComplete", js.undefined)
+    @scala.inline
+    def setJobTemplate(value: string): Self = this.set("JobTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTemplate: Self = this.set("JobTemplate", js.undefined)
+    @scala.inline
+    def setMessages(value: JobMessages): Self = this.set("Messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("Messages", js.undefined)
+    @scala.inline
+    def setOutputGroupDetailsVarargs(value: OutputGroupDetail*): Self = this.set("OutputGroupDetails", js.Array(value :_*))
+    @scala.inline
+    def setOutputGroupDetails(value: listOfOutputGroupDetail): Self = this.set("OutputGroupDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputGroupDetails: Self = this.set("OutputGroupDetails", js.undefined)
+    @scala.inline
+    def setPriority(value: integerMinNegative50Max50): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("Priority", js.undefined)
+    @scala.inline
+    def setQueue(value: string): Self = this.set("Queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueue: Self = this.set("Queue", js.undefined)
+    @scala.inline
+    def setQueueTransitionsVarargs(value: QueueTransition*): Self = this.set("QueueTransitions", js.Array(value :_*))
+    @scala.inline
+    def setQueueTransitions(value: listOfQueueTransition): Self = this.set("QueueTransitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueueTransitions: Self = this.set("QueueTransitions", js.undefined)
+    @scala.inline
+    def setRetryCount(value: integer): Self = this.set("RetryCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryCount: Self = this.set("RetryCount", js.undefined)
+    @scala.inline
+    def setSimulateReservedQueue(value: SimulateReservedQueue): Self = this.set("SimulateReservedQueue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimulateReservedQueue: Self = this.set("SimulateReservedQueue", js.undefined)
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusUpdateInterval(value: StatusUpdateInterval): Self = this.set("StatusUpdateInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusUpdateInterval: Self = this.set("StatusUpdateInterval", js.undefined)
+    @scala.inline
+    def setTiming(value: Timing): Self = this.set("Timing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTiming: Self = this.set("Timing", js.undefined)
+    @scala.inline
+    def setUserMetadata(value: mapOfString): Self = this.set("UserMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserMetadata: Self = this.set("UserMetadata", js.undefined)
+  }
+  
 }
 

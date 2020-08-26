@@ -51,6 +51,7 @@ class ResourceAssetlinks protected () extends js.Object {
     */
   def check(): GaxiosPromise[SchemaCheckResponse] = js.native
   def check(callback: BodyResponseCallback[SchemaCheckResponse]): Unit = js.native
+  def check(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckResponse] = js.native
   def check(params: ParamsResourceAssetlinksCheck): GaxiosPromise[SchemaCheckResponse] = js.native
   def check(params: ParamsResourceAssetlinksCheck, callback: BodyResponseCallback[SchemaCheckResponse]): Unit = js.native
   def check(

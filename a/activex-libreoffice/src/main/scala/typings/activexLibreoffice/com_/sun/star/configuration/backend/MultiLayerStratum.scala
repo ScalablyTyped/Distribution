@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to a singe layer of configuration data */
+@js.native
 trait MultiLayerStratum
   extends XMultiLayerStratum
      with XBackendEntities

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "delay" : "4.3.0"
+      "delay" : "4.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "delay" : "4.3.0"
+      "delay" : "4.4.0"
     }
   ],
   "compile-devDependencies" : [

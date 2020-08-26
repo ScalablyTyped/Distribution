@@ -5,122 +5,185 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IEditorProps
   extends /* index */ StringDictionary[js.Any] {
   @JSName("$blockScrolling")
-  var $blockScrolling: js.UndefOr[Double | Boolean] = js.undefined
+  var $blockScrolling: js.UndefOr[Double | Boolean] = js.native
   @JSName("$blockSelectEnabled")
-  var $blockSelectEnabled: js.UndefOr[Boolean] = js.undefined
+  var $blockSelectEnabled: js.UndefOr[Boolean] = js.native
   @JSName("$enableBlockSelect")
-  var $enableBlockSelect: js.UndefOr[Boolean] = js.undefined
+  var $enableBlockSelect: js.UndefOr[Boolean] = js.native
   @JSName("$enableMultiselect")
-  var $enableMultiselect: js.UndefOr[Boolean] = js.undefined
+  var $enableMultiselect: js.UndefOr[Boolean] = js.native
   @JSName("$highlightPending")
-  var $highlightPending: js.UndefOr[Boolean] = js.undefined
+  var $highlightPending: js.UndefOr[Boolean] = js.native
   @JSName("$highlightTagPending")
-  var $highlightTagPending: js.UndefOr[Boolean] = js.undefined
+  var $highlightTagPending: js.UndefOr[Boolean] = js.native
   @JSName("$multiselectOnSessionChange")
-  var $multiselectOnSessionChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $multiselectOnSessionChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onAddRange")
-  var $onAddRange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onAddRange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onChangeAnnotation")
-  var $onChangeAnnotation: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onChangeAnnotation: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onChangeBackMarker")
-  var $onChangeBackMarker: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onChangeBackMarker: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onChangeBreakpoint")
-  var $onChangeBreakpoint: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onChangeBreakpoint: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onChangeFold")
-  var $onChangeFold: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onChangeFold: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onChangeFrontMarker")
-  var $onChangeFrontMarker: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onChangeFrontMarker: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onChangeMode")
-  var $onChangeMode: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onChangeMode: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onChangeTabSize")
-  var $onChangeTabSize: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onChangeTabSize: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onChangeWrapLimit")
-  var $onChangeWrapLimit: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onChangeWrapLimit: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onChangeWrapMode")
-  var $onChangeWrapMode: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onChangeWrapMode: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onCursorChange")
-  var $onCursorChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onCursorChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onDocumentChange")
-  var $onDocumentChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onDocumentChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onMultiSelect")
-  var $onMultiSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onMultiSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onRemoveRange")
-  var $onRemoveRange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onRemoveRange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onScrollLeftChange")
-  var $onScrollLeftChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onScrollLeftChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onScrollTopChange")
-  var $onScrollTopChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onScrollTopChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onSelectionChange")
-  var $onSelectionChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onSelectionChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onSingleSelect")
-  var $onSingleSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onSingleSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   @JSName("$onTokenizerUpdate")
-  var $onTokenizerUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var $onTokenizerUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
 }
 
 object IEditorProps {
   @scala.inline
-  def apply(
-    $blockScrolling: Double | Boolean = null,
-    $blockSelectEnabled: js.UndefOr[Boolean] = js.undefined,
-    $enableBlockSelect: js.UndefOr[Boolean] = js.undefined,
-    $enableMultiselect: js.UndefOr[Boolean] = js.undefined,
-    $highlightPending: js.UndefOr[Boolean] = js.undefined,
-    $highlightTagPending: js.UndefOr[Boolean] = js.undefined,
-    $multiselectOnSessionChange: /* repeated */ js.Any => _ = null,
-    $onAddRange: /* repeated */ js.Any => _ = null,
-    $onChangeAnnotation: /* repeated */ js.Any => _ = null,
-    $onChangeBackMarker: /* repeated */ js.Any => _ = null,
-    $onChangeBreakpoint: /* repeated */ js.Any => _ = null,
-    $onChangeFold: /* repeated */ js.Any => _ = null,
-    $onChangeFrontMarker: /* repeated */ js.Any => _ = null,
-    $onChangeMode: /* repeated */ js.Any => _ = null,
-    $onChangeTabSize: /* repeated */ js.Any => _ = null,
-    $onChangeWrapLimit: /* repeated */ js.Any => _ = null,
-    $onChangeWrapMode: /* repeated */ js.Any => _ = null,
-    $onCursorChange: /* repeated */ js.Any => _ = null,
-    $onDocumentChange: /* repeated */ js.Any => _ = null,
-    $onMultiSelect: /* repeated */ js.Any => _ = null,
-    $onRemoveRange: /* repeated */ js.Any => _ = null,
-    $onScrollLeftChange: /* repeated */ js.Any => _ = null,
-    $onScrollTopChange: /* repeated */ js.Any => _ = null,
-    $onSelectionChange: /* repeated */ js.Any => _ = null,
-    $onSingleSelect: /* repeated */ js.Any => _ = null,
-    $onTokenizerUpdate: /* repeated */ js.Any => _ = null,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null
-  ): IEditorProps = {
+  def apply(): IEditorProps = {
     val __obj = js.Dynamic.literal()
-    if ($blockScrolling != null) __obj.updateDynamic("$blockScrolling")($blockScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined($blockSelectEnabled)) __obj.updateDynamic("$blockSelectEnabled")($blockSelectEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined($enableBlockSelect)) __obj.updateDynamic("$enableBlockSelect")($enableBlockSelect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined($enableMultiselect)) __obj.updateDynamic("$enableMultiselect")($enableMultiselect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined($highlightPending)) __obj.updateDynamic("$highlightPending")($highlightPending.get.asInstanceOf[js.Any])
-    if (!js.isUndefined($highlightTagPending)) __obj.updateDynamic("$highlightTagPending")($highlightTagPending.get.asInstanceOf[js.Any])
-    if ($multiselectOnSessionChange != null) __obj.updateDynamic("$multiselectOnSessionChange")(js.Any.fromFunction1($multiselectOnSessionChange))
-    if ($onAddRange != null) __obj.updateDynamic("$onAddRange")(js.Any.fromFunction1($onAddRange))
-    if ($onChangeAnnotation != null) __obj.updateDynamic("$onChangeAnnotation")(js.Any.fromFunction1($onChangeAnnotation))
-    if ($onChangeBackMarker != null) __obj.updateDynamic("$onChangeBackMarker")(js.Any.fromFunction1($onChangeBackMarker))
-    if ($onChangeBreakpoint != null) __obj.updateDynamic("$onChangeBreakpoint")(js.Any.fromFunction1($onChangeBreakpoint))
-    if ($onChangeFold != null) __obj.updateDynamic("$onChangeFold")(js.Any.fromFunction1($onChangeFold))
-    if ($onChangeFrontMarker != null) __obj.updateDynamic("$onChangeFrontMarker")(js.Any.fromFunction1($onChangeFrontMarker))
-    if ($onChangeMode != null) __obj.updateDynamic("$onChangeMode")(js.Any.fromFunction1($onChangeMode))
-    if ($onChangeTabSize != null) __obj.updateDynamic("$onChangeTabSize")(js.Any.fromFunction1($onChangeTabSize))
-    if ($onChangeWrapLimit != null) __obj.updateDynamic("$onChangeWrapLimit")(js.Any.fromFunction1($onChangeWrapLimit))
-    if ($onChangeWrapMode != null) __obj.updateDynamic("$onChangeWrapMode")(js.Any.fromFunction1($onChangeWrapMode))
-    if ($onCursorChange != null) __obj.updateDynamic("$onCursorChange")(js.Any.fromFunction1($onCursorChange))
-    if ($onDocumentChange != null) __obj.updateDynamic("$onDocumentChange")(js.Any.fromFunction1($onDocumentChange))
-    if ($onMultiSelect != null) __obj.updateDynamic("$onMultiSelect")(js.Any.fromFunction1($onMultiSelect))
-    if ($onRemoveRange != null) __obj.updateDynamic("$onRemoveRange")(js.Any.fromFunction1($onRemoveRange))
-    if ($onScrollLeftChange != null) __obj.updateDynamic("$onScrollLeftChange")(js.Any.fromFunction1($onScrollLeftChange))
-    if ($onScrollTopChange != null) __obj.updateDynamic("$onScrollTopChange")(js.Any.fromFunction1($onScrollTopChange))
-    if ($onSelectionChange != null) __obj.updateDynamic("$onSelectionChange")(js.Any.fromFunction1($onSelectionChange))
-    if ($onSingleSelect != null) __obj.updateDynamic("$onSingleSelect")(js.Any.fromFunction1($onSingleSelect))
-    if ($onTokenizerUpdate != null) __obj.updateDynamic("$onTokenizerUpdate")(js.Any.fromFunction1($onTokenizerUpdate))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IEditorProps]
   }
+  @scala.inline
+  implicit class IEditorPropsOps[Self <: IEditorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$blockScrolling(value: Double | Boolean): Self = this.set("$blockScrolling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$blockScrolling: Self = this.set("$blockScrolling", js.undefined)
+    @scala.inline
+    def set$blockSelectEnabled(value: Boolean): Self = this.set("$blockSelectEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$blockSelectEnabled: Self = this.set("$blockSelectEnabled", js.undefined)
+    @scala.inline
+    def set$enableBlockSelect(value: Boolean): Self = this.set("$enableBlockSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$enableBlockSelect: Self = this.set("$enableBlockSelect", js.undefined)
+    @scala.inline
+    def set$enableMultiselect(value: Boolean): Self = this.set("$enableMultiselect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$enableMultiselect: Self = this.set("$enableMultiselect", js.undefined)
+    @scala.inline
+    def set$highlightPending(value: Boolean): Self = this.set("$highlightPending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$highlightPending: Self = this.set("$highlightPending", js.undefined)
+    @scala.inline
+    def set$highlightTagPending(value: Boolean): Self = this.set("$highlightTagPending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$highlightTagPending: Self = this.set("$highlightTagPending", js.undefined)
+    @scala.inline
+    def set$multiselectOnSessionChange(value: /* repeated */ js.Any => _): Self = this.set("$multiselectOnSessionChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$multiselectOnSessionChange: Self = this.set("$multiselectOnSessionChange", js.undefined)
+    @scala.inline
+    def set$onAddRange(value: /* repeated */ js.Any => _): Self = this.set("$onAddRange", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onAddRange: Self = this.set("$onAddRange", js.undefined)
+    @scala.inline
+    def set$onChangeAnnotation(value: /* repeated */ js.Any => _): Self = this.set("$onChangeAnnotation", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onChangeAnnotation: Self = this.set("$onChangeAnnotation", js.undefined)
+    @scala.inline
+    def set$onChangeBackMarker(value: /* repeated */ js.Any => _): Self = this.set("$onChangeBackMarker", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onChangeBackMarker: Self = this.set("$onChangeBackMarker", js.undefined)
+    @scala.inline
+    def set$onChangeBreakpoint(value: /* repeated */ js.Any => _): Self = this.set("$onChangeBreakpoint", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onChangeBreakpoint: Self = this.set("$onChangeBreakpoint", js.undefined)
+    @scala.inline
+    def set$onChangeFold(value: /* repeated */ js.Any => _): Self = this.set("$onChangeFold", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onChangeFold: Self = this.set("$onChangeFold", js.undefined)
+    @scala.inline
+    def set$onChangeFrontMarker(value: /* repeated */ js.Any => _): Self = this.set("$onChangeFrontMarker", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onChangeFrontMarker: Self = this.set("$onChangeFrontMarker", js.undefined)
+    @scala.inline
+    def set$onChangeMode(value: /* repeated */ js.Any => _): Self = this.set("$onChangeMode", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onChangeMode: Self = this.set("$onChangeMode", js.undefined)
+    @scala.inline
+    def set$onChangeTabSize(value: /* repeated */ js.Any => _): Self = this.set("$onChangeTabSize", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onChangeTabSize: Self = this.set("$onChangeTabSize", js.undefined)
+    @scala.inline
+    def set$onChangeWrapLimit(value: /* repeated */ js.Any => _): Self = this.set("$onChangeWrapLimit", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onChangeWrapLimit: Self = this.set("$onChangeWrapLimit", js.undefined)
+    @scala.inline
+    def set$onChangeWrapMode(value: /* repeated */ js.Any => _): Self = this.set("$onChangeWrapMode", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onChangeWrapMode: Self = this.set("$onChangeWrapMode", js.undefined)
+    @scala.inline
+    def set$onCursorChange(value: /* repeated */ js.Any => _): Self = this.set("$onCursorChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onCursorChange: Self = this.set("$onCursorChange", js.undefined)
+    @scala.inline
+    def set$onDocumentChange(value: /* repeated */ js.Any => _): Self = this.set("$onDocumentChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onDocumentChange: Self = this.set("$onDocumentChange", js.undefined)
+    @scala.inline
+    def set$onMultiSelect(value: /* repeated */ js.Any => _): Self = this.set("$onMultiSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onMultiSelect: Self = this.set("$onMultiSelect", js.undefined)
+    @scala.inline
+    def set$onRemoveRange(value: /* repeated */ js.Any => _): Self = this.set("$onRemoveRange", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onRemoveRange: Self = this.set("$onRemoveRange", js.undefined)
+    @scala.inline
+    def set$onScrollLeftChange(value: /* repeated */ js.Any => _): Self = this.set("$onScrollLeftChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onScrollLeftChange: Self = this.set("$onScrollLeftChange", js.undefined)
+    @scala.inline
+    def set$onScrollTopChange(value: /* repeated */ js.Any => _): Self = this.set("$onScrollTopChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onScrollTopChange: Self = this.set("$onScrollTopChange", js.undefined)
+    @scala.inline
+    def set$onSelectionChange(value: /* repeated */ js.Any => _): Self = this.set("$onSelectionChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onSelectionChange: Self = this.set("$onSelectionChange", js.undefined)
+    @scala.inline
+    def set$onSingleSelect(value: /* repeated */ js.Any => _): Self = this.set("$onSingleSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onSingleSelect: Self = this.set("$onSingleSelect", js.undefined)
+    @scala.inline
+    def set$onTokenizerUpdate(value: /* repeated */ js.Any => _): Self = this.set("$onTokenizerUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete$onTokenizerUpdate: Self = this.set("$onTokenizerUpdate", js.undefined)
+  }
+  
 }
 

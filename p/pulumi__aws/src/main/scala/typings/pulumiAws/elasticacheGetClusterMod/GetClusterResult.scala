@@ -36,7 +36,7 @@ trait GetClusterResult extends js.Object {
     */
   val engineVersion: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -95,7 +95,7 @@ trait GetClusterResult extends js.Object {
   /**
     * The tags assigned to the resource
     */
-  val tags: StringDictionary[js.Any] = js.native
+  val tags: StringDictionary[String] = js.native
 }
 
 object GetClusterResult {
@@ -122,10 +122,73 @@ object GetClusterResult {
     snapshotRetentionLimit: Double,
     snapshotWindow: String,
     subnetGroupName: String,
-    tags: StringDictionary[js.Any]
+    tags: StringDictionary[String]
   ): GetClusterResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], cacheNodes = cacheNodes.asInstanceOf[js.Any], clusterAddress = clusterAddress.asInstanceOf[js.Any], clusterId = clusterId.asInstanceOf[js.Any], configurationEndpoint = configurationEndpoint.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], engineVersion = engineVersion.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maintenanceWindow = maintenanceWindow.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], notificationTopicArn = notificationTopicArn.asInstanceOf[js.Any], numCacheNodes = numCacheNodes.asInstanceOf[js.Any], parameterGroupName = parameterGroupName.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], replicationGroupId = replicationGroupId.asInstanceOf[js.Any], securityGroupIds = securityGroupIds.asInstanceOf[js.Any], securityGroupNames = securityGroupNames.asInstanceOf[js.Any], snapshotRetentionLimit = snapshotRetentionLimit.asInstanceOf[js.Any], snapshotWindow = snapshotWindow.asInstanceOf[js.Any], subnetGroupName = subnetGroupName.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClusterResult]
   }
+  @scala.inline
+  implicit class GetClusterResultOps[Self <: GetClusterResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCacheNodesVarargs(value: GetClusterCacheNode*): Self = this.set("cacheNodes", js.Array(value :_*))
+    @scala.inline
+    def setCacheNodes(value: js.Array[GetClusterCacheNode]): Self = this.set("cacheNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterAddress(value: String): Self = this.set("clusterAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationEndpoint(value: String): Self = this.set("configurationEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEngine(value: String): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaintenanceWindow(value: String): Self = this.set("maintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeType(value: String): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotificationTopicArn(value: String): Self = this.set("notificationTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumCacheNodes(value: Double): Self = this.set("numCacheNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParameterGroupName(value: String): Self = this.set("parameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("replicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: js.Array[String]): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityGroupNamesVarargs(value: String*): Self = this.set("securityGroupNames", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupNames(value: js.Array[String]): Self = this.set("securityGroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotRetentionLimit(value: Double): Self = this.set("snapshotRetentionLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotWindow(value: String): Self = this.set("snapshotWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetGroupName(value: String): Self = this.set("subnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+  }
+  
 }
 

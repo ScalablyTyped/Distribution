@@ -22,12 +22,34 @@ trait ColumnSchema extends js.Object {
 
 object ColumnSchema {
   @scala.inline
-  def apply(DataType: String = null, GeographicRole: String = null, Name: String = null): ColumnSchema = {
+  def apply(): ColumnSchema = {
     val __obj = js.Dynamic.literal()
-    if (DataType != null) __obj.updateDynamic("DataType")(DataType.asInstanceOf[js.Any])
-    if (GeographicRole != null) __obj.updateDynamic("GeographicRole")(GeographicRole.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSchema]
   }
+  @scala.inline
+  implicit class ColumnSchemaOps[Self <: ColumnSchema] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataType(value: String): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataType: Self = this.set("DataType", js.undefined)
+    @scala.inline
+    def setGeographicRole(value: String): Self = this.set("GeographicRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeographicRole: Self = this.set("GeographicRole", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object uniqueFieldDefinitionNamesMod extends js.Object {
   def UniqueFieldDefinitionNames(context: SDLValidationContext): ASTVisitor = js.native
-  def duplicateFieldDefinitionNameMessage(typeName: String, fieldName: String): String = js.native
-  def existedFieldDefinitionNameMessage(typeName: String, fieldName: String): String = js.native
 }
 

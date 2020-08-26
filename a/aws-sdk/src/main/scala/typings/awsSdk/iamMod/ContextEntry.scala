@@ -22,16 +22,36 @@ trait ContextEntry extends js.Object {
 
 object ContextEntry {
   @scala.inline
-  def apply(
-    ContextKeyName: ContextKeyNameType = null,
-    ContextKeyType: ContextKeyTypeEnum = null,
-    ContextKeyValues: ContextKeyValueListType = null
-  ): ContextEntry = {
+  def apply(): ContextEntry = {
     val __obj = js.Dynamic.literal()
-    if (ContextKeyName != null) __obj.updateDynamic("ContextKeyName")(ContextKeyName.asInstanceOf[js.Any])
-    if (ContextKeyType != null) __obj.updateDynamic("ContextKeyType")(ContextKeyType.asInstanceOf[js.Any])
-    if (ContextKeyValues != null) __obj.updateDynamic("ContextKeyValues")(ContextKeyValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextEntry]
   }
+  @scala.inline
+  implicit class ContextEntryOps[Self <: ContextEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContextKeyName(value: ContextKeyNameType): Self = this.set("ContextKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextKeyName: Self = this.set("ContextKeyName", js.undefined)
+    @scala.inline
+    def setContextKeyType(value: ContextKeyTypeEnum): Self = this.set("ContextKeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextKeyType: Self = this.set("ContextKeyType", js.undefined)
+    @scala.inline
+    def setContextKeyValuesVarargs(value: ContextKeyValueType*): Self = this.set("ContextKeyValues", js.Array(value :_*))
+    @scala.inline
+    def setContextKeyValues(value: ContextKeyValueListType): Self = this.set("ContextKeyValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextKeyValues: Self = this.set("ContextKeyValues", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This service specifies a HTML image map. */
+@js.native
 trait ImageMap
   extends XIndexContainer
      with XNamed

@@ -11,8 +11,8 @@ Get the gzipped size of a string or buffer
 | Full name          | gzip-size |
 | Keywords           | app, tool, zlib, gzip, compressed, size, string, buffer |
 | # releases         | 4 |
-| # dependents       | 624 |
-| # downloads        | 208455460 |
+| # dependents       | 630 |
+| # downloads        | 213903157 |
 | # stars            | 14 |
 
 ## Links

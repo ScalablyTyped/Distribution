@@ -6,81 +6,138 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-select.react-select/src/styles.Styles> */
+@js.native
 trait StylesConfig extends js.Object {
-  var clearIndicator: js.UndefOr[styleFn] = js.undefined
-  var container: js.UndefOr[styleFn] = js.undefined
-  var control: js.UndefOr[styleFn] = js.undefined
-  var dropdownIndicator: js.UndefOr[styleFn] = js.undefined
-  var group: js.UndefOr[styleFn] = js.undefined
-  var groupHeading: js.UndefOr[styleFn] = js.undefined
-  var indicatorSeparator: js.UndefOr[styleFn] = js.undefined
-  var indicatorsContainer: js.UndefOr[styleFn] = js.undefined
-  var input: js.UndefOr[styleFn] = js.undefined
-  var loadingIndicator: js.UndefOr[styleFn] = js.undefined
-  var loadingMessage: js.UndefOr[styleFn] = js.undefined
-  var menu: js.UndefOr[styleFn] = js.undefined
-  var menuList: js.UndefOr[styleFn] = js.undefined
-  var menuPortal: js.UndefOr[styleFn] = js.undefined
-  var multiValue: js.UndefOr[styleFn] = js.undefined
-  var multiValueLabel: js.UndefOr[styleFn] = js.undefined
-  var multiValueRemove: js.UndefOr[styleFn] = js.undefined
-  var noOptionsMessage: js.UndefOr[styleFn] = js.undefined
-  var option: js.UndefOr[styleFn] = js.undefined
-  var placeholder: js.UndefOr[styleFn] = js.undefined
-  var singleValue: js.UndefOr[styleFn] = js.undefined
-  var valueContainer: js.UndefOr[styleFn] = js.undefined
+  var clearIndicator: js.UndefOr[styleFn] = js.native
+  var container: js.UndefOr[styleFn] = js.native
+  var control: js.UndefOr[styleFn] = js.native
+  var dropdownIndicator: js.UndefOr[styleFn] = js.native
+  var group: js.UndefOr[styleFn] = js.native
+  var groupHeading: js.UndefOr[styleFn] = js.native
+  var indicatorSeparator: js.UndefOr[styleFn] = js.native
+  var indicatorsContainer: js.UndefOr[styleFn] = js.native
+  var input: js.UndefOr[styleFn] = js.native
+  var loadingIndicator: js.UndefOr[styleFn] = js.native
+  var loadingMessage: js.UndefOr[styleFn] = js.native
+  var menu: js.UndefOr[styleFn] = js.native
+  var menuList: js.UndefOr[styleFn] = js.native
+  var menuPortal: js.UndefOr[styleFn] = js.native
+  var multiValue: js.UndefOr[styleFn] = js.native
+  var multiValueLabel: js.UndefOr[styleFn] = js.native
+  var multiValueRemove: js.UndefOr[styleFn] = js.native
+  var noOptionsMessage: js.UndefOr[styleFn] = js.native
+  var option: js.UndefOr[styleFn] = js.native
+  var placeholder: js.UndefOr[styleFn] = js.native
+  var singleValue: js.UndefOr[styleFn] = js.native
+  var valueContainer: js.UndefOr[styleFn] = js.native
 }
 
 object StylesConfig {
   @scala.inline
-  def apply(
-    clearIndicator: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    container: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    control: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    dropdownIndicator: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    group: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    groupHeading: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    indicatorSeparator: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    indicatorsContainer: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    input: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    loadingIndicator: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    loadingMessage: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    menu: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    menuList: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    menuPortal: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    multiValue: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    multiValueLabel: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    multiValueRemove: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    noOptionsMessage: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    option: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    placeholder: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    singleValue: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null,
-    valueContainer: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties = null
-  ): StylesConfig = {
+  def apply(): StylesConfig = {
     val __obj = js.Dynamic.literal()
-    if (clearIndicator != null) __obj.updateDynamic("clearIndicator")(js.Any.fromFunction2(clearIndicator))
-    if (container != null) __obj.updateDynamic("container")(js.Any.fromFunction2(container))
-    if (control != null) __obj.updateDynamic("control")(js.Any.fromFunction2(control))
-    if (dropdownIndicator != null) __obj.updateDynamic("dropdownIndicator")(js.Any.fromFunction2(dropdownIndicator))
-    if (group != null) __obj.updateDynamic("group")(js.Any.fromFunction2(group))
-    if (groupHeading != null) __obj.updateDynamic("groupHeading")(js.Any.fromFunction2(groupHeading))
-    if (indicatorSeparator != null) __obj.updateDynamic("indicatorSeparator")(js.Any.fromFunction2(indicatorSeparator))
-    if (indicatorsContainer != null) __obj.updateDynamic("indicatorsContainer")(js.Any.fromFunction2(indicatorsContainer))
-    if (input != null) __obj.updateDynamic("input")(js.Any.fromFunction2(input))
-    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(js.Any.fromFunction2(loadingIndicator))
-    if (loadingMessage != null) __obj.updateDynamic("loadingMessage")(js.Any.fromFunction2(loadingMessage))
-    if (menu != null) __obj.updateDynamic("menu")(js.Any.fromFunction2(menu))
-    if (menuList != null) __obj.updateDynamic("menuList")(js.Any.fromFunction2(menuList))
-    if (menuPortal != null) __obj.updateDynamic("menuPortal")(js.Any.fromFunction2(menuPortal))
-    if (multiValue != null) __obj.updateDynamic("multiValue")(js.Any.fromFunction2(multiValue))
-    if (multiValueLabel != null) __obj.updateDynamic("multiValueLabel")(js.Any.fromFunction2(multiValueLabel))
-    if (multiValueRemove != null) __obj.updateDynamic("multiValueRemove")(js.Any.fromFunction2(multiValueRemove))
-    if (noOptionsMessage != null) __obj.updateDynamic("noOptionsMessage")(js.Any.fromFunction2(noOptionsMessage))
-    if (option != null) __obj.updateDynamic("option")(js.Any.fromFunction2(option))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(js.Any.fromFunction2(placeholder))
-    if (singleValue != null) __obj.updateDynamic("singleValue")(js.Any.fromFunction2(singleValue))
-    if (valueContainer != null) __obj.updateDynamic("valueContainer")(js.Any.fromFunction2(valueContainer))
     __obj.asInstanceOf[StylesConfig]
   }
+  @scala.inline
+  implicit class StylesConfigOps[Self <: StylesConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClearIndicator(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("clearIndicator", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteClearIndicator: Self = this.set("clearIndicator", js.undefined)
+    @scala.inline
+    def setContainer(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("container", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setControl(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("control", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteControl: Self = this.set("control", js.undefined)
+    @scala.inline
+    def setDropdownIndicator(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("dropdownIndicator", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDropdownIndicator: Self = this.set("dropdownIndicator", js.undefined)
+    @scala.inline
+    def setGroup(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("group", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setGroupHeading(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("groupHeading", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGroupHeading: Self = this.set("groupHeading", js.undefined)
+    @scala.inline
+    def setIndicatorSeparator(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("indicatorSeparator", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIndicatorSeparator: Self = this.set("indicatorSeparator", js.undefined)
+    @scala.inline
+    def setIndicatorsContainer(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("indicatorsContainer", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIndicatorsContainer: Self = this.set("indicatorsContainer", js.undefined)
+    @scala.inline
+    def setInput(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("input", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setLoadingIndicator(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("loadingIndicator", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLoadingIndicator: Self = this.set("loadingIndicator", js.undefined)
+    @scala.inline
+    def setLoadingMessage(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("loadingMessage", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLoadingMessage: Self = this.set("loadingMessage", js.undefined)
+    @scala.inline
+    def setMenu(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("menu", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMenu: Self = this.set("menu", js.undefined)
+    @scala.inline
+    def setMenuList(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("menuList", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMenuList: Self = this.set("menuList", js.undefined)
+    @scala.inline
+    def setMenuPortal(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("menuPortal", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMenuPortal: Self = this.set("menuPortal", js.undefined)
+    @scala.inline
+    def setMultiValue(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("multiValue", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMultiValue: Self = this.set("multiValue", js.undefined)
+    @scala.inline
+    def setMultiValueLabel(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("multiValueLabel", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMultiValueLabel: Self = this.set("multiValueLabel", js.undefined)
+    @scala.inline
+    def setMultiValueRemove(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("multiValueRemove", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMultiValueRemove: Self = this.set("multiValueRemove", js.undefined)
+    @scala.inline
+    def setNoOptionsMessage(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("noOptionsMessage", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteNoOptionsMessage: Self = this.set("noOptionsMessage", js.undefined)
+    @scala.inline
+    def setOption(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("option", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOption: Self = this.set("option", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("placeholder", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setSingleValue(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("singleValue", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSingleValue: Self = this.set("singleValue", js.undefined)
+    @scala.inline
+    def setValueContainer(value: (/* base */ CSSProperties, /* state */ js.Any) => CSSProperties): Self = this.set("valueContainer", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteValueContainer: Self = this.set("valueContainer", js.undefined)
+  }
+  
 }
 

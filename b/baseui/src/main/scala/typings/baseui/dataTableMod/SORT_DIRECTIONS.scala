@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SORT_DIRECTIONS extends js.Object {
-  var ASC: typings.baseui.baseuiStrings.ASC
-  var DESC: typings.baseui.baseuiStrings.DESC
+  var ASC: typings.baseui.baseuiStrings.ASC = js.native
+  var DESC: typings.baseui.baseuiStrings.DESC = js.native
 }
 
 @JSImport("baseui/data-table", "SORT_DIRECTIONS")

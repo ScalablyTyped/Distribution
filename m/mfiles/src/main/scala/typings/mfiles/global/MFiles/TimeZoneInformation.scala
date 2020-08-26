@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.TimeZoneInformation")
 @js.native
-class TimeZoneInformation () extends ITimeZoneInformation {
-  /* CompleteClass */
-  override val StandardName: String = js.native
-  /* CompleteClass */
-  override def LoadTimeZoneByName(TimeZoneName: String): Unit = js.native
-  /* CompleteClass */
-  override def LoadWithCurrentTimeZone(): Unit = js.native
-}
+class TimeZoneInformation () extends ITimeZoneInformation
 
 @JSGlobal("MFiles.TimeZoneInformation")
 @js.native

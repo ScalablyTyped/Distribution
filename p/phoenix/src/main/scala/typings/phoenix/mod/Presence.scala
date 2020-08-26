@@ -25,6 +25,12 @@ object Presence extends js.Object {
   def list[T](presences: js.Object): js.Array[T] = js.native
   def list[T](presences: js.Object, chooser: js.Function2[/* key */ String, /* presence */ js.Any, T]): js.Array[T] = js.native
   def syncDiff(currentState: js.Object, diff: Joins): js.Any = js.native
+  def syncDiff(
+    currentState: js.Object,
+    diff: Joins,
+    onJoin: js.UndefOr[scala.Nothing],
+    onLeave: PresenceOnLeaveCallback
+  ): js.Any = js.native
   def syncDiff(currentState: js.Object, diff: Joins, onJoin: PresenceOnJoinCallback): js.Any = js.native
   def syncDiff(
     currentState: js.Object,
@@ -33,6 +39,12 @@ object Presence extends js.Object {
     onLeave: PresenceOnLeaveCallback
   ): js.Any = js.native
   def syncState(currentState: js.Object, newState: js.Object): js.Any = js.native
+  def syncState(
+    currentState: js.Object,
+    newState: js.Object,
+    onJoin: js.UndefOr[scala.Nothing],
+    onLeave: PresenceOnLeaveCallback
+  ): js.Any = js.native
   def syncState(currentState: js.Object, newState: js.Object, onJoin: PresenceOnJoinCallback): js.Any = js.native
   def syncState(
     currentState: js.Object,

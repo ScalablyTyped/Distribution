@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tooltip_ () extends DivOverlay {
   def this(options: TooltipOptions) = this()
+  def this(options: js.UndefOr[scala.Nothing], source: Layer) = this()
   def this(options: TooltipOptions, source: Layer) = this()
   @JSName("options")
   var options_Tooltip_ : TooltipOptions = js.native

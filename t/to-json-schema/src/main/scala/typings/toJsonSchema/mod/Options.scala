@@ -8,9 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var arrays: js.UndefOr[Mode] = js.undefined
-  var objects: js.UndefOr[AdditionalProperties] = js.undefined
+  var arrays: js.UndefOr[Mode] = js.native
+  var objects: js.UndefOr[AdditionalProperties] = js.native
   /**
     * By providing `postProcessFnc`, you can modify or replace generated
     * schema. This function will be called recursively for all the properties
@@ -39,7 +40,7 @@ trait Options extends js.Object {
       ], 
       JSONSchema3or4
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * specify `true` to make all properties required.
     *
@@ -50,31 +51,55 @@ trait Options extends js.Object {
     * const schema = toJsonSchema(33, {required: true});
     * // { type: "integer", "required": true }
     */
-  var required: js.UndefOr[Boolean] = js.undefined
-  var strings: js.UndefOr[DetectFormat] = js.undefined
+  var required: js.UndefOr[Boolean] = js.native
+  var strings: js.UndefOr[DetectFormat] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    arrays: Mode = null,
-    objects: AdditionalProperties = null,
-    postProcessFnc: (/* type */ JSONSchema4TypeName, /* schema */ JSONSchema3or4, /* value */ js.Any, /* defaultFunc */ js.Function3[
-      /* type */ JSONSchema4TypeName, 
-      /* schema */ JSONSchema3or4, 
-      /* value */ js.Any, 
-      JSONSchema3or4
-    ]) => JSONSchema3or4 = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    strings: DetectFormat = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (arrays != null) __obj.updateDynamic("arrays")(arrays.asInstanceOf[js.Any])
-    if (objects != null) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
-    if (postProcessFnc != null) __obj.updateDynamic("postProcessFnc")(js.Any.fromFunction4(postProcessFnc))
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrays(value: Mode): Self = this.set("arrays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrays: Self = this.set("arrays", js.undefined)
+    @scala.inline
+    def setObjects(value: AdditionalProperties): Self = this.set("objects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjects: Self = this.set("objects", js.undefined)
+    @scala.inline
+    def setPostProcessFnc(
+      value: (/* type */ JSONSchema4TypeName, /* schema */ JSONSchema3or4, /* value */ js.Any, /* defaultFunc */ js.Function3[
+          /* type */ JSONSchema4TypeName, 
+          /* schema */ JSONSchema3or4, 
+          /* value */ js.Any, 
+          JSONSchema3or4
+        ]) => JSONSchema3or4
+    ): Self = this.set("postProcessFnc", js.Any.fromFunction4(value))
+    @scala.inline
+    def deletePostProcessFnc: Self = this.set("postProcessFnc", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setStrings(value: DetectFormat): Self = this.set("strings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrings: Self = this.set("strings", js.undefined)
+  }
+  
 }
 

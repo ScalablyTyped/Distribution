@@ -11,8 +11,8 @@ The lodash method `_.union` exported as a module.
 | Full name          | lodash.union |
 | Keywords           | lodash-modularized, union |
 | # releases         | 0 |
-| # dependents       | 129 |
-| # downloads        | 30573104 |
+| # dependents       | 130 |
+| # downloads        | 32262690 |
 | # stars            | 0 |
 
 ## Links

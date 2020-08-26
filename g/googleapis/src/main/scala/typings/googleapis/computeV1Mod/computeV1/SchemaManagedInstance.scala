@@ -60,22 +60,46 @@ trait SchemaManagedInstance extends js.Object {
 
 object SchemaManagedInstance {
   @scala.inline
-  def apply(
-    currentAction: String = null,
-    id: String = null,
-    instance: String = null,
-    instanceStatus: String = null,
-    lastAttempt: SchemaManagedInstanceLastAttempt = null,
-    version: SchemaManagedInstanceVersion = null
-  ): SchemaManagedInstance = {
+  def apply(): SchemaManagedInstance = {
     val __obj = js.Dynamic.literal()
-    if (currentAction != null) __obj.updateDynamic("currentAction")(currentAction.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (instanceStatus != null) __obj.updateDynamic("instanceStatus")(instanceStatus.asInstanceOf[js.Any])
-    if (lastAttempt != null) __obj.updateDynamic("lastAttempt")(lastAttempt.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedInstance]
   }
+  @scala.inline
+  implicit class SchemaManagedInstanceOps[Self <: SchemaManagedInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentAction(value: String): Self = this.set("currentAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentAction: Self = this.set("currentAction", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setInstanceStatus(value: String): Self = this.set("instanceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceStatus: Self = this.set("instanceStatus", js.undefined)
+    @scala.inline
+    def setLastAttempt(value: SchemaManagedInstanceLastAttempt): Self = this.set("lastAttempt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAttempt: Self = this.set("lastAttempt", js.undefined)
+    @scala.inline
+    def setVersion(value: SchemaManagedInstanceVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

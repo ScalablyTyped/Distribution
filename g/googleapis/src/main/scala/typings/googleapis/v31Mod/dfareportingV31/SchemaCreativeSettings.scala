@@ -23,11 +23,30 @@ trait SchemaCreativeSettings extends js.Object {
 
 object SchemaCreativeSettings {
   @scala.inline
-  def apply(iFrameFooter: String = null, iFrameHeader: String = null): SchemaCreativeSettings = {
+  def apply(): SchemaCreativeSettings = {
     val __obj = js.Dynamic.literal()
-    if (iFrameFooter != null) __obj.updateDynamic("iFrameFooter")(iFrameFooter.asInstanceOf[js.Any])
-    if (iFrameHeader != null) __obj.updateDynamic("iFrameHeader")(iFrameHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreativeSettings]
   }
+  @scala.inline
+  implicit class SchemaCreativeSettingsOps[Self <: SchemaCreativeSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIFrameFooter(value: String): Self = this.set("iFrameFooter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIFrameFooter: Self = this.set("iFrameFooter", js.undefined)
+    @scala.inline
+    def setIFrameHeader(value: String): Self = this.set("iFrameHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIFrameHeader: Self = this.set("iFrameHeader", js.undefined)
+  }
+  
 }
 

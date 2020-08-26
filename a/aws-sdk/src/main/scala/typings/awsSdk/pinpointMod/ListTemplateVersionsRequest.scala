@@ -26,11 +26,34 @@ trait ListTemplateVersionsRequest extends js.Object {
 
 object ListTemplateVersionsRequest {
   @scala.inline
-  def apply(TemplateName: string, TemplateType: string, NextToken: string = null, PageSize: string = null): ListTemplateVersionsRequest = {
+  def apply(TemplateName: string, TemplateType: string): ListTemplateVersionsRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any], TemplateType = TemplateType.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTemplateVersionsRequest]
   }
+  @scala.inline
+  implicit class ListTemplateVersionsRequestOps[Self <: ListTemplateVersionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTemplateName(value: string): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplateType(value: string): Self = this.set("TemplateType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPageSize(value: string): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+  }
+  
 }
 

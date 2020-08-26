@@ -37,6 +37,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaSendAs] = js.native
   def create(callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
   def create(params: ParamsResourceUsersSettingsSendasCreate): GaxiosPromise[SchemaSendAs] = js.native
   def create(params: ParamsResourceUsersSettingsSendasCreate, callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
   def create(
@@ -67,6 +68,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsSendasDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsSendasDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -96,6 +98,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSendAs] = js.native
   def get(callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
   def get(params: ParamsResourceUsersSettingsSendasGet): GaxiosPromise[SchemaSendAs] = js.native
   def get(params: ParamsResourceUsersSettingsSendasGet, callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
   def get(
@@ -125,6 +128,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListSendAsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSendAsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSendAsResponse] = js.native
   def list(params: ParamsResourceUsersSettingsSendasList): GaxiosPromise[SchemaListSendAsResponse] = js.native
   def list(
     params: ParamsResourceUsersSettingsSendasList,
@@ -161,6 +165,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaSendAs] = js.native
   def patch(callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
   def patch(params: ParamsResourceUsersSettingsSendasPatch): GaxiosPromise[SchemaSendAs] = js.native
   def patch(params: ParamsResourceUsersSettingsSendasPatch, callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
   def patch(
@@ -193,6 +198,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaSendAs] = js.native
   def update(callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
   def update(params: ParamsResourceUsersSettingsSendasUpdate): GaxiosPromise[SchemaSendAs] = js.native
   def update(params: ParamsResourceUsersSettingsSendasUpdate, callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
   def update(
@@ -224,6 +230,7 @@ class ResourceUsersSettingsSendas protected () extends js.Object {
     */
   def verify(): GaxiosPromise[Unit] = js.native
   def verify(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def verify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def verify(params: ParamsResourceUsersSettingsSendasVerify): GaxiosPromise[Unit] = js.native
   def verify(params: ParamsResourceUsersSettingsSendasVerify, callback: BodyResponseCallback[Unit]): Unit = js.native
   def verify(

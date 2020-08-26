@@ -4,75 +4,134 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBalloonOptions extends js.Object {
-  var autoPan: js.UndefOr[Boolean] = js.undefined
-  var autoPanCheckZoomRange: js.UndefOr[Boolean] = js.undefined
-  var autoPanDuration: js.UndefOr[Double] = js.undefined
-  var autoPanMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
-  var autoPanUseMapMargin: js.UndefOr[Boolean] = js.undefined
-  var closeButton: js.UndefOr[Boolean] = js.undefined
-  var contentLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
-  var layout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maxWidth: js.UndefOr[Double] = js.undefined
-  var minHeight: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
-  var offset: js.UndefOr[js.Array[Double]] = js.undefined
-  var pane: js.UndefOr[String] = js.undefined
-  var panelContentLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
-  var panelMaxHeightRatio: js.UndefOr[Double] = js.undefined
-  var panelMaxMapArea: js.UndefOr[Double] = js.undefined
-  var shadow: js.UndefOr[Boolean] = js.undefined
-  var shadowLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.undefined
-  var shadowOffset: js.UndefOr[js.Array[Double]] = js.undefined
+  var autoPan: js.UndefOr[Boolean] = js.native
+  var autoPanCheckZoomRange: js.UndefOr[Boolean] = js.native
+  var autoPanDuration: js.UndefOr[Double] = js.native
+  var autoPanMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.native
+  var autoPanUseMapMargin: js.UndefOr[Boolean] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.native
+  var contentLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.native
+  var layout: js.UndefOr[IClassConstructor[ILayout] | String] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[js.Array[Double]] = js.native
+  var pane: js.UndefOr[String] = js.native
+  var panelContentLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.native
+  var panelMaxHeightRatio: js.UndefOr[Double] = js.native
+  var panelMaxMapArea: js.UndefOr[Double] = js.native
+  var shadow: js.UndefOr[Boolean] = js.native
+  var shadowLayout: js.UndefOr[IClassConstructor[ILayout] | String] = js.native
+  var shadowOffset: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object IBalloonOptions {
   @scala.inline
-  def apply(
-    autoPan: js.UndefOr[Boolean] = js.undefined,
-    autoPanCheckZoomRange: js.UndefOr[Boolean] = js.undefined,
-    autoPanDuration: js.UndefOr[Double] = js.undefined,
-    autoPanMargin: (js.Array[js.Array[Double] | Double]) | Double = null,
-    autoPanUseMapMargin: js.UndefOr[Boolean] = js.undefined,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    contentLayout: IClassConstructor[ILayout] | String = null,
-    layout: IClassConstructor[ILayout] | String = null,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    offset: js.Array[Double] = null,
-    pane: String = null,
-    panelContentLayout: IClassConstructor[ILayout] | String = null,
-    panelMaxHeightRatio: js.UndefOr[Double] = js.undefined,
-    panelMaxMapArea: js.UndefOr[Double] = js.undefined,
-    shadow: js.UndefOr[Boolean] = js.undefined,
-    shadowLayout: IClassConstructor[ILayout] | String = null,
-    shadowOffset: js.Array[Double] = null
-  ): IBalloonOptions = {
+  def apply(): IBalloonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPanCheckZoomRange)) __obj.updateDynamic("autoPanCheckZoomRange")(autoPanCheckZoomRange.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPanDuration)) __obj.updateDynamic("autoPanDuration")(autoPanDuration.get.asInstanceOf[js.Any])
-    if (autoPanMargin != null) __obj.updateDynamic("autoPanMargin")(autoPanMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPanUseMapMargin)) __obj.updateDynamic("autoPanUseMapMargin")(autoPanUseMapMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
-    if (contentLayout != null) __obj.updateDynamic("contentLayout")(contentLayout.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (panelContentLayout != null) __obj.updateDynamic("panelContentLayout")(panelContentLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(panelMaxHeightRatio)) __obj.updateDynamic("panelMaxHeightRatio")(panelMaxHeightRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(panelMaxMapArea)) __obj.updateDynamic("panelMaxMapArea")(panelMaxMapArea.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
-    if (shadowLayout != null) __obj.updateDynamic("shadowLayout")(shadowLayout.asInstanceOf[js.Any])
-    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBalloonOptions]
   }
+  @scala.inline
+  implicit class IBalloonOptionsOps[Self <: IBalloonOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoPan(value: Boolean): Self = this.set("autoPan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPan: Self = this.set("autoPan", js.undefined)
+    @scala.inline
+    def setAutoPanCheckZoomRange(value: Boolean): Self = this.set("autoPanCheckZoomRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPanCheckZoomRange: Self = this.set("autoPanCheckZoomRange", js.undefined)
+    @scala.inline
+    def setAutoPanDuration(value: Double): Self = this.set("autoPanDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPanDuration: Self = this.set("autoPanDuration", js.undefined)
+    @scala.inline
+    def setAutoPanMarginVarargs(value: (js.Array[Double] | Double)*): Self = this.set("autoPanMargin", js.Array(value :_*))
+    @scala.inline
+    def setAutoPanMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = this.set("autoPanMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPanMargin: Self = this.set("autoPanMargin", js.undefined)
+    @scala.inline
+    def setAutoPanUseMapMargin(value: Boolean): Self = this.set("autoPanUseMapMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPanUseMapMargin: Self = this.set("autoPanUseMapMargin", js.undefined)
+    @scala.inline
+    def setCloseButton(value: Boolean): Self = this.set("closeButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseButton: Self = this.set("closeButton", js.undefined)
+    @scala.inline
+    def setContentLayout(value: IClassConstructor[ILayout] | String): Self = this.set("contentLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLayout: Self = this.set("contentLayout", js.undefined)
+    @scala.inline
+    def setLayout(value: IClassConstructor[ILayout] | String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setOffsetVarargs(value: Double*): Self = this.set("offset", js.Array(value :_*))
+    @scala.inline
+    def setOffset(value: js.Array[Double]): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPane(value: String): Self = this.set("pane", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePane: Self = this.set("pane", js.undefined)
+    @scala.inline
+    def setPanelContentLayout(value: IClassConstructor[ILayout] | String): Self = this.set("panelContentLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanelContentLayout: Self = this.set("panelContentLayout", js.undefined)
+    @scala.inline
+    def setPanelMaxHeightRatio(value: Double): Self = this.set("panelMaxHeightRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanelMaxHeightRatio: Self = this.set("panelMaxHeightRatio", js.undefined)
+    @scala.inline
+    def setPanelMaxMapArea(value: Double): Self = this.set("panelMaxMapArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanelMaxMapArea: Self = this.set("panelMaxMapArea", js.undefined)
+    @scala.inline
+    def setShadow(value: Boolean): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setShadowLayout(value: IClassConstructor[ILayout] | String): Self = this.set("shadowLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowLayout: Self = this.set("shadowLayout", js.undefined)
+    @scala.inline
+    def setShadowOffsetVarargs(value: Double*): Self = this.set("shadowOffset", js.Array(value :_*))
+    @scala.inline
+    def setShadowOffset(value: js.Array[Double]): Self = this.set("shadowOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOffset: Self = this.set("shadowOffset", js.undefined)
+  }
+  
 }
 

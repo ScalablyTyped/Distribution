@@ -23,16 +23,34 @@ trait BucketLifecycleRuleExpiration extends js.Object {
 
 object BucketLifecycleRuleExpiration {
   @scala.inline
-  def apply(
-    date: Input[String] = null,
-    days: Input[Double] = null,
-    expiredObjectDeleteMarker: Input[Boolean] = null
-  ): BucketLifecycleRuleExpiration = {
+  def apply(): BucketLifecycleRuleExpiration = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (expiredObjectDeleteMarker != null) __obj.updateDynamic("expiredObjectDeleteMarker")(expiredObjectDeleteMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLifecycleRuleExpiration]
   }
+  @scala.inline
+  implicit class BucketLifecycleRuleExpirationOps[Self <: BucketLifecycleRuleExpiration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: Input[String]): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDays(value: Input[Double]): Self = this.set("days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("days", js.undefined)
+    @scala.inline
+    def setExpiredObjectDeleteMarker(value: Input[Boolean]): Self = this.set("expiredObjectDeleteMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiredObjectDeleteMarker: Self = this.set("expiredObjectDeleteMarker", js.undefined)
+  }
+  
 }
 

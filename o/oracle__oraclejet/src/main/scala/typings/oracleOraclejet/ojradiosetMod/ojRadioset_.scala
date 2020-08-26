@@ -164,6 +164,8 @@ trait ojRadioset_[K, D]
   @JSName("setProperty")
   def setProperty_options(property: options, value: DataProvider[K, D]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_optionsKeys(property: optionsKeys): Unit = js.native
+  @JSName("setProperty")
   def setProperty_optionsKeys(property: optionsKeys, value: OptionsKeys): Unit = js.native
   @JSName("setProperty")
   def setProperty_required(property: required, value: Boolean): Unit = js.native

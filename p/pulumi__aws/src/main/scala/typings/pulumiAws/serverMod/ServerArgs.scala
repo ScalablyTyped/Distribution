@@ -38,9 +38,9 @@ trait ServerArgs extends js.Object {
     */
   val loggingRole: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * - URL of the service endpoint used to authenticate users with an `identityProviderType` of `API_GATEWAY`.
     */
@@ -49,28 +49,58 @@ trait ServerArgs extends js.Object {
 
 object ServerArgs {
   @scala.inline
-  def apply(
-    endpointDetails: Input[ServerEndpointDetails] = null,
-    endpointType: Input[String] = null,
-    forceDestroy: Input[Boolean] = null,
-    hostKey: Input[String] = null,
-    identityProviderType: Input[String] = null,
-    invocationRole: Input[String] = null,
-    loggingRole: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    url: Input[String] = null
-  ): ServerArgs = {
+  def apply(): ServerArgs = {
     val __obj = js.Dynamic.literal()
-    if (endpointDetails != null) __obj.updateDynamic("endpointDetails")(endpointDetails.asInstanceOf[js.Any])
-    if (endpointType != null) __obj.updateDynamic("endpointType")(endpointType.asInstanceOf[js.Any])
-    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
-    if (hostKey != null) __obj.updateDynamic("hostKey")(hostKey.asInstanceOf[js.Any])
-    if (identityProviderType != null) __obj.updateDynamic("identityProviderType")(identityProviderType.asInstanceOf[js.Any])
-    if (invocationRole != null) __obj.updateDynamic("invocationRole")(invocationRole.asInstanceOf[js.Any])
-    if (loggingRole != null) __obj.updateDynamic("loggingRole")(loggingRole.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerArgs]
   }
+  @scala.inline
+  implicit class ServerArgsOps[Self <: ServerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointDetails(value: Input[ServerEndpointDetails]): Self = this.set("endpointDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointDetails: Self = this.set("endpointDetails", js.undefined)
+    @scala.inline
+    def setEndpointType(value: Input[String]): Self = this.set("endpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("endpointType", js.undefined)
+    @scala.inline
+    def setForceDestroy(value: Input[Boolean]): Self = this.set("forceDestroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceDestroy: Self = this.set("forceDestroy", js.undefined)
+    @scala.inline
+    def setHostKey(value: Input[String]): Self = this.set("hostKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostKey: Self = this.set("hostKey", js.undefined)
+    @scala.inline
+    def setIdentityProviderType(value: Input[String]): Self = this.set("identityProviderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityProviderType: Self = this.set("identityProviderType", js.undefined)
+    @scala.inline
+    def setInvocationRole(value: Input[String]): Self = this.set("invocationRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvocationRole: Self = this.set("invocationRole", js.undefined)
+    @scala.inline
+    def setLoggingRole(value: Input[String]): Self = this.set("loggingRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingRole: Self = this.set("loggingRole", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUrl(value: Input[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

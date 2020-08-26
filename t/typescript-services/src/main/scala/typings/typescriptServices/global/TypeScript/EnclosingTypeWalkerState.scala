@@ -7,12 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TypeScript.EnclosingTypeWalkerState")
 @js.native
 class EnclosingTypeWalkerState ()
-  extends typings.typescriptServices.TypeScript.EnclosingTypeWalkerState {
-  /* CompleteClass */
-  override var _currentSymbols: js.Array[typings.typescriptServices.TypeScript.PullSymbol] = js.native
-  /* CompleteClass */
-  override var _hasSetEnclosingType: Boolean = js.native
-}
+  extends typings.typescriptServices.TypeScript.EnclosingTypeWalkerState
 
 /* static members */
 @JSGlobal("TypeScript.EnclosingTypeWalkerState")

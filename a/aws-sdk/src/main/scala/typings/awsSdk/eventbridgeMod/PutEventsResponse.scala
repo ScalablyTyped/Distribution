@@ -18,11 +18,32 @@ trait PutEventsResponse extends js.Object {
 
 object PutEventsResponse {
   @scala.inline
-  def apply(Entries: PutEventsResultEntryList = null, FailedEntryCount: js.UndefOr[Integer] = js.undefined): PutEventsResponse = {
+  def apply(): PutEventsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Entries != null) __obj.updateDynamic("Entries")(Entries.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailedEntryCount)) __obj.updateDynamic("FailedEntryCount")(FailedEntryCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventsResponse]
   }
+  @scala.inline
+  implicit class PutEventsResponseOps[Self <: PutEventsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntriesVarargs(value: PutEventsResultEntry*): Self = this.set("Entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: PutEventsResultEntryList): Self = this.set("Entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("Entries", js.undefined)
+    @scala.inline
+    def setFailedEntryCount(value: Integer): Self = this.set("FailedEntryCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedEntryCount: Self = this.set("FailedEntryCount", js.undefined)
+  }
+  
 }
 

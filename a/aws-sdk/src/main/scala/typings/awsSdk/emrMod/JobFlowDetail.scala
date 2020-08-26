@@ -74,32 +74,81 @@ object JobFlowDetail {
     ExecutionStatusDetail: JobFlowExecutionStatusDetail,
     Instances: JobFlowInstancesDetail,
     JobFlowId: XmlStringMaxLen256,
-    Name: XmlStringMaxLen256,
-    AmiVersion: XmlStringMaxLen256 = null,
-    AutoScalingRole: XmlString = null,
-    BootstrapActions: BootstrapActionDetailList = null,
-    JobFlowRole: XmlString = null,
-    LogEncryptionKmsKeyId: XmlString = null,
-    LogUri: XmlString = null,
-    ScaleDownBehavior: ScaleDownBehavior = null,
-    ServiceRole: XmlString = null,
-    Steps: StepDetailList = null,
-    SupportedProducts: SupportedProductsList = null,
-    VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
+    Name: XmlStringMaxLen256
   ): JobFlowDetail = {
     val __obj = js.Dynamic.literal(ExecutionStatusDetail = ExecutionStatusDetail.asInstanceOf[js.Any], Instances = Instances.asInstanceOf[js.Any], JobFlowId = JobFlowId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (AmiVersion != null) __obj.updateDynamic("AmiVersion")(AmiVersion.asInstanceOf[js.Any])
-    if (AutoScalingRole != null) __obj.updateDynamic("AutoScalingRole")(AutoScalingRole.asInstanceOf[js.Any])
-    if (BootstrapActions != null) __obj.updateDynamic("BootstrapActions")(BootstrapActions.asInstanceOf[js.Any])
-    if (JobFlowRole != null) __obj.updateDynamic("JobFlowRole")(JobFlowRole.asInstanceOf[js.Any])
-    if (LogEncryptionKmsKeyId != null) __obj.updateDynamic("LogEncryptionKmsKeyId")(LogEncryptionKmsKeyId.asInstanceOf[js.Any])
-    if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
-    if (ScaleDownBehavior != null) __obj.updateDynamic("ScaleDownBehavior")(ScaleDownBehavior.asInstanceOf[js.Any])
-    if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
-    if (Steps != null) __obj.updateDynamic("Steps")(Steps.asInstanceOf[js.Any])
-    if (SupportedProducts != null) __obj.updateDynamic("SupportedProducts")(SupportedProducts.asInstanceOf[js.Any])
-    if (!js.isUndefined(VisibleToAllUsers)) __obj.updateDynamic("VisibleToAllUsers")(VisibleToAllUsers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobFlowDetail]
   }
+  @scala.inline
+  implicit class JobFlowDetailOps[Self <: JobFlowDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutionStatusDetail(value: JobFlowExecutionStatusDetail): Self = this.set("ExecutionStatusDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstances(value: JobFlowInstancesDetail): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobFlowId(value: XmlStringMaxLen256): Self = this.set("JobFlowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmiVersion(value: XmlStringMaxLen256): Self = this.set("AmiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmiVersion: Self = this.set("AmiVersion", js.undefined)
+    @scala.inline
+    def setAutoScalingRole(value: XmlString): Self = this.set("AutoScalingRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingRole: Self = this.set("AutoScalingRole", js.undefined)
+    @scala.inline
+    def setBootstrapActionsVarargs(value: BootstrapActionDetail*): Self = this.set("BootstrapActions", js.Array(value :_*))
+    @scala.inline
+    def setBootstrapActions(value: BootstrapActionDetailList): Self = this.set("BootstrapActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootstrapActions: Self = this.set("BootstrapActions", js.undefined)
+    @scala.inline
+    def setJobFlowRole(value: XmlString): Self = this.set("JobFlowRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobFlowRole: Self = this.set("JobFlowRole", js.undefined)
+    @scala.inline
+    def setLogEncryptionKmsKeyId(value: XmlString): Self = this.set("LogEncryptionKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogEncryptionKmsKeyId: Self = this.set("LogEncryptionKmsKeyId", js.undefined)
+    @scala.inline
+    def setLogUri(value: XmlString): Self = this.set("LogUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUri: Self = this.set("LogUri", js.undefined)
+    @scala.inline
+    def setScaleDownBehavior(value: ScaleDownBehavior): Self = this.set("ScaleDownBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleDownBehavior: Self = this.set("ScaleDownBehavior", js.undefined)
+    @scala.inline
+    def setServiceRole(value: XmlString): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
+    @scala.inline
+    def setStepsVarargs(value: StepDetail*): Self = this.set("Steps", js.Array(value :_*))
+    @scala.inline
+    def setSteps(value: StepDetailList): Self = this.set("Steps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSteps: Self = this.set("Steps", js.undefined)
+    @scala.inline
+    def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = this.set("SupportedProducts", js.Array(value :_*))
+    @scala.inline
+    def setSupportedProducts(value: SupportedProductsList): Self = this.set("SupportedProducts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedProducts: Self = this.set("SupportedProducts", js.undefined)
+    @scala.inline
+    def setVisibleToAllUsers(value: Boolean): Self = this.set("VisibleToAllUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleToAllUsers: Self = this.set("VisibleToAllUsers", js.undefined)
+  }
+  
 }
 

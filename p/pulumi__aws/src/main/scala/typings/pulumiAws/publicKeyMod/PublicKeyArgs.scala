@@ -27,17 +27,36 @@ trait PublicKeyArgs extends js.Object {
 
 object PublicKeyArgs {
   @scala.inline
-  def apply(
-    encodedKey: Input[String],
-    comment: Input[String] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null
-  ): PublicKeyArgs = {
+  def apply(encodedKey: Input[String]): PublicKeyArgs = {
     val __obj = js.Dynamic.literal(encodedKey = encodedKey.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyArgs]
   }
+  @scala.inline
+  implicit class PublicKeyArgsOps[Self <: PublicKeyArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncodedKey(value: Input[String]): Self = this.set("encodedKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: Input[String]): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+  }
+  
 }
 

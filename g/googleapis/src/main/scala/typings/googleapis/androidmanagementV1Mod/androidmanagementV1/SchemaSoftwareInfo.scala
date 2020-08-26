@@ -57,30 +57,62 @@ trait SchemaSoftwareInfo extends js.Object {
 
 object SchemaSoftwareInfo {
   @scala.inline
-  def apply(
-    androidBuildNumber: String = null,
-    androidBuildTime: String = null,
-    androidDevicePolicyVersionCode: js.UndefOr[Double] = js.undefined,
-    androidDevicePolicyVersionName: String = null,
-    androidVersion: String = null,
-    bootloaderVersion: String = null,
-    deviceBuildSignature: String = null,
-    deviceKernelVersion: String = null,
-    primaryLanguageCode: String = null,
-    securityPatchLevel: String = null
-  ): SchemaSoftwareInfo = {
+  def apply(): SchemaSoftwareInfo = {
     val __obj = js.Dynamic.literal()
-    if (androidBuildNumber != null) __obj.updateDynamic("androidBuildNumber")(androidBuildNumber.asInstanceOf[js.Any])
-    if (androidBuildTime != null) __obj.updateDynamic("androidBuildTime")(androidBuildTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(androidDevicePolicyVersionCode)) __obj.updateDynamic("androidDevicePolicyVersionCode")(androidDevicePolicyVersionCode.get.asInstanceOf[js.Any])
-    if (androidDevicePolicyVersionName != null) __obj.updateDynamic("androidDevicePolicyVersionName")(androidDevicePolicyVersionName.asInstanceOf[js.Any])
-    if (androidVersion != null) __obj.updateDynamic("androidVersion")(androidVersion.asInstanceOf[js.Any])
-    if (bootloaderVersion != null) __obj.updateDynamic("bootloaderVersion")(bootloaderVersion.asInstanceOf[js.Any])
-    if (deviceBuildSignature != null) __obj.updateDynamic("deviceBuildSignature")(deviceBuildSignature.asInstanceOf[js.Any])
-    if (deviceKernelVersion != null) __obj.updateDynamic("deviceKernelVersion")(deviceKernelVersion.asInstanceOf[js.Any])
-    if (primaryLanguageCode != null) __obj.updateDynamic("primaryLanguageCode")(primaryLanguageCode.asInstanceOf[js.Any])
-    if (securityPatchLevel != null) __obj.updateDynamic("securityPatchLevel")(securityPatchLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSoftwareInfo]
   }
+  @scala.inline
+  implicit class SchemaSoftwareInfoOps[Self <: SchemaSoftwareInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidBuildNumber(value: String): Self = this.set("androidBuildNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidBuildNumber: Self = this.set("androidBuildNumber", js.undefined)
+    @scala.inline
+    def setAndroidBuildTime(value: String): Self = this.set("androidBuildTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidBuildTime: Self = this.set("androidBuildTime", js.undefined)
+    @scala.inline
+    def setAndroidDevicePolicyVersionCode(value: Double): Self = this.set("androidDevicePolicyVersionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidDevicePolicyVersionCode: Self = this.set("androidDevicePolicyVersionCode", js.undefined)
+    @scala.inline
+    def setAndroidDevicePolicyVersionName(value: String): Self = this.set("androidDevicePolicyVersionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidDevicePolicyVersionName: Self = this.set("androidDevicePolicyVersionName", js.undefined)
+    @scala.inline
+    def setAndroidVersion(value: String): Self = this.set("androidVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidVersion: Self = this.set("androidVersion", js.undefined)
+    @scala.inline
+    def setBootloaderVersion(value: String): Self = this.set("bootloaderVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootloaderVersion: Self = this.set("bootloaderVersion", js.undefined)
+    @scala.inline
+    def setDeviceBuildSignature(value: String): Self = this.set("deviceBuildSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceBuildSignature: Self = this.set("deviceBuildSignature", js.undefined)
+    @scala.inline
+    def setDeviceKernelVersion(value: String): Self = this.set("deviceKernelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceKernelVersion: Self = this.set("deviceKernelVersion", js.undefined)
+    @scala.inline
+    def setPrimaryLanguageCode(value: String): Self = this.set("primaryLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryLanguageCode: Self = this.set("primaryLanguageCode", js.undefined)
+    @scala.inline
+    def setSecurityPatchLevel(value: String): Self = this.set("securityPatchLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityPatchLevel: Self = this.set("securityPatchLevel", js.undefined)
+  }
+  
 }
 

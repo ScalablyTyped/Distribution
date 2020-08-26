@@ -46,22 +46,46 @@ trait NodeInfo extends js.Object {
 
 object NodeInfo {
   @scala.inline
-  def apply(
-    AddedToClusterTime: string = null,
-    BrokerNodeInfo: BrokerNodeInfo = null,
-    InstanceType: string = null,
-    NodeARN: string = null,
-    NodeType: NodeType = null,
-    ZookeeperNodeInfo: ZookeeperNodeInfo = null
-  ): NodeInfo = {
+  def apply(): NodeInfo = {
     val __obj = js.Dynamic.literal()
-    if (AddedToClusterTime != null) __obj.updateDynamic("AddedToClusterTime")(AddedToClusterTime.asInstanceOf[js.Any])
-    if (BrokerNodeInfo != null) __obj.updateDynamic("BrokerNodeInfo")(BrokerNodeInfo.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (NodeARN != null) __obj.updateDynamic("NodeARN")(NodeARN.asInstanceOf[js.Any])
-    if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
-    if (ZookeeperNodeInfo != null) __obj.updateDynamic("ZookeeperNodeInfo")(ZookeeperNodeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeInfo]
   }
+  @scala.inline
+  implicit class NodeInfoOps[Self <: NodeInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddedToClusterTime(value: string): Self = this.set("AddedToClusterTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddedToClusterTime: Self = this.set("AddedToClusterTime", js.undefined)
+    @scala.inline
+    def setBrokerNodeInfo(value: BrokerNodeInfo): Self = this.set("BrokerNodeInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerNodeInfo: Self = this.set("BrokerNodeInfo", js.undefined)
+    @scala.inline
+    def setInstanceType(value: string): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setNodeARN(value: string): Self = this.set("NodeARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeARN: Self = this.set("NodeARN", js.undefined)
+    @scala.inline
+    def setNodeType(value: NodeType): Self = this.set("NodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeType: Self = this.set("NodeType", js.undefined)
+    @scala.inline
+    def setZookeeperNodeInfo(value: ZookeeperNodeInfo): Self = this.set("ZookeeperNodeInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZookeeperNodeInfo: Self = this.set("ZookeeperNodeInfo", js.undefined)
+  }
+  
 }
 

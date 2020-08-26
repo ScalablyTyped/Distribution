@@ -41,6 +41,7 @@ import scala.scalajs.js.annotation._
   * XBridgeSupplier2.createBridge()} is called with itself as the first parameter.
   * @see com.sun.star.bridge.OleBridgeSupplier2
   */
+@js.native
 trait XBridgeSupplier2 extends XInterface {
   /** creates a bridge to provide an object of one object model with another. */
   def createBridge(
@@ -48,7 +49,7 @@ trait XBridgeSupplier2 extends XInterface {
     aProcessId: SeqEquiv[Double],
     nSourceModelType: Double,
     nDestModelType: Double
-  ): js.Any
+  ): js.Any = js.native
 }
 
 object XBridgeSupplier2 {
@@ -62,5 +63,20 @@ object XBridgeSupplier2 {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createBridge = js.Any.fromFunction4(createBridge), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XBridgeSupplier2]
   }
+  @scala.inline
+  implicit class XBridgeSupplier2Ops[Self <: XBridgeSupplier2] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateBridge(value: (js.Any, SeqEquiv[Double], Double, Double) => js.Any): Self = this.set("createBridge", js.Any.fromFunction4(value))
+  }
+  
 }
 

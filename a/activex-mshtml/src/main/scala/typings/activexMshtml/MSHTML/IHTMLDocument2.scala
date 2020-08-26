@@ -81,12 +81,15 @@ trait IHTMLDocument2 extends js.Object {
   var url: String = js.native
   var vlinkColor: js.Any = js.native
   def all(): js.Any = js.native
+  def all(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def all(name: js.Any): js.Any = js.native
   def all(name: js.Any, index: js.Any): js.Any = js.native
   def anchors(): js.Any = js.native
+  def anchors(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def anchors(name: js.Any): js.Any = js.native
   def anchors(name: js.Any, index: js.Any): js.Any = js.native
   def applets(): js.Any = js.native
+  def applets(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def applets(name: js.Any): js.Any = js.native
   def applets(name: js.Any, index: js.Any): js.Any = js.native
   def clear(): Unit = js.native
@@ -97,35 +100,58 @@ trait IHTMLDocument2 extends js.Object {
     * @param lIndex [lIndex=-1]
     */
   def createStyleSheet(): IHTMLStyleSheet = js.native
+  def createStyleSheet(bstrHref: js.UndefOr[scala.Nothing], lIndex: Double): IHTMLStyleSheet = js.native
   def createStyleSheet(bstrHref: String): IHTMLStyleSheet = js.native
   def createStyleSheet(bstrHref: String, lIndex: Double): IHTMLStyleSheet = js.native
   def elementFromPoint(x: Double, y: Double): IHTMLElement = js.native
   def embeds(): js.Any = js.native
+  def embeds(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def embeds(name: js.Any): js.Any = js.native
   def embeds(name: js.Any, index: js.Any): js.Any = js.native
   /** @param showUI [showUI=false] */
   def execCommand(cmdID: String): Boolean = js.native
+  def execCommand(cmdID: String, showUI: js.UndefOr[scala.Nothing], value: js.Any): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean, value: js.Any): Boolean = js.native
   def execCommandShowHelp(cmdID: String): Boolean = js.native
   def forms(): js.Any = js.native
+  def forms(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def forms(name: js.Any): js.Any = js.native
   def forms(name: js.Any, index: js.Any): js.Any = js.native
   def frames(pvarIndex: js.Any): js.Any = js.native
   def images(): js.Any = js.native
+  def images(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def images(name: js.Any): js.Any = js.native
   def images(name: js.Any, index: js.Any): js.Any = js.native
   def links(): js.Any = js.native
+  def links(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def links(name: js.Any): js.Any = js.native
   def links(name: js.Any, index: js.Any): js.Any = js.native
   /** @param url [url='text/html'] */
   def open(): js.Any = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    features: js.UndefOr[scala.Nothing],
+    replace: js.Any
+  ): js.Any = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: js.Any): js.Any = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: js.Any, replace: js.Any): js.Any = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: js.Any): js.Any = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: js.Any, features: js.UndefOr[scala.Nothing], replace: js.Any): js.Any = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: js.Any, features: js.Any): js.Any = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: js.Any, features: js.Any, replace: js.Any): js.Any = js.native
   def open(url: String): js.Any = js.native
+  def open(url: String, name: js.UndefOr[scala.Nothing], features: js.UndefOr[scala.Nothing], replace: js.Any): js.Any = js.native
+  def open(url: String, name: js.UndefOr[scala.Nothing], features: js.Any): js.Any = js.native
+  def open(url: String, name: js.UndefOr[scala.Nothing], features: js.Any, replace: js.Any): js.Any = js.native
   def open(url: String, name: js.Any): js.Any = js.native
+  def open(url: String, name: js.Any, features: js.UndefOr[scala.Nothing], replace: js.Any): js.Any = js.native
   def open(url: String, name: js.Any, features: js.Any): js.Any = js.native
   def open(url: String, name: js.Any, features: js.Any, replace: js.Any): js.Any = js.native
   def parentWindow(pvarIndex: js.Any): js.Any = js.native
   def plugins(): js.Any = js.native
+  def plugins(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def plugins(name: js.Any): js.Any = js.native
   def plugins(name: js.Any, index: js.Any): js.Any = js.native
   def queryCommandEnabled(cmdID: String): Boolean = js.native
@@ -135,6 +161,7 @@ trait IHTMLDocument2 extends js.Object {
   def queryCommandText(cmdID: String): String = js.native
   def queryCommandValue(cmdID: String): js.Any = js.native
   def scripts(): js.Any = js.native
+  def scripts(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def scripts(name: js.Any): js.Any = js.native
   def scripts(name: js.Any, index: js.Any): js.Any = js.native
   def styleSheets(pvarIndex: js.Any): js.Any = js.native

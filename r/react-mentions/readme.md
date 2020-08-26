@@ -12,7 +12,7 @@ React mentions input
 | Keywords           | react, mentions, react-component |
 | # releases         | 20 |
 | # dependents       | 14 |
-| # downloads        | 1273042 |
+| # downloads        | 1320683 |
 | # stars            | 1 |
 
 ## Links

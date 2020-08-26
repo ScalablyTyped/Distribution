@@ -34,22 +34,46 @@ trait SeveritySummary extends js.Object {
 
 object SeveritySummary {
   @scala.inline
-  def apply(
-    CriticalCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    HighCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    InformationalCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    LowCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    MediumCount: js.UndefOr[ComplianceSummaryCount] = js.undefined,
-    UnspecifiedCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
-  ): SeveritySummary = {
+  def apply(): SeveritySummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CriticalCount)) __obj.updateDynamic("CriticalCount")(CriticalCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HighCount)) __obj.updateDynamic("HighCount")(HighCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InformationalCount)) __obj.updateDynamic("InformationalCount")(InformationalCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(LowCount)) __obj.updateDynamic("LowCount")(LowCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MediumCount)) __obj.updateDynamic("MediumCount")(MediumCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(UnspecifiedCount)) __obj.updateDynamic("UnspecifiedCount")(UnspecifiedCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeveritySummary]
   }
+  @scala.inline
+  implicit class SeveritySummaryOps[Self <: SeveritySummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCriticalCount(value: ComplianceSummaryCount): Self = this.set("CriticalCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriticalCount: Self = this.set("CriticalCount", js.undefined)
+    @scala.inline
+    def setHighCount(value: ComplianceSummaryCount): Self = this.set("HighCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighCount: Self = this.set("HighCount", js.undefined)
+    @scala.inline
+    def setInformationalCount(value: ComplianceSummaryCount): Self = this.set("InformationalCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInformationalCount: Self = this.set("InformationalCount", js.undefined)
+    @scala.inline
+    def setLowCount(value: ComplianceSummaryCount): Self = this.set("LowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowCount: Self = this.set("LowCount", js.undefined)
+    @scala.inline
+    def setMediumCount(value: ComplianceSummaryCount): Self = this.set("MediumCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediumCount: Self = this.set("MediumCount", js.undefined)
+    @scala.inline
+    def setUnspecifiedCount(value: ComplianceSummaryCount): Self = this.set("UnspecifiedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnspecifiedCount: Self = this.set("UnspecifiedCount", js.undefined)
+  }
+  
 }
 

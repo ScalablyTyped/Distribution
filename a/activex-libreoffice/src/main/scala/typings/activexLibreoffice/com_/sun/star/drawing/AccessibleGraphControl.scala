@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   * The children of graph controls are shapes that define contours.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleGraphControl
   extends XAccessible
      with XAccessibleContext

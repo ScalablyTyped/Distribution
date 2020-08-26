@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Extension extends js.Object {
-  var incoming: js.UndefOr[Listener] = js.undefined
-  var outgoing: js.UndefOr[Listener] = js.undefined
-  var registered: js.UndefOr[js.Function2[/* name */ String, /* cometd */ CometD, Unit]] = js.undefined
-  var unregistered: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var incoming: js.UndefOr[Listener] = js.native
+  var outgoing: js.UndefOr[Listener] = js.native
+  var registered: js.UndefOr[js.Function2[/* name */ String, /* cometd */ CometD, Unit]] = js.native
+  var unregistered: js.UndefOr[js.Function0[Unit]] = js.native
 }
 
 object Extension {
   @scala.inline
-  def apply(
-    incoming: /* message */ Message => Unit = null,
-    outgoing: /* message */ Message => Unit = null,
-    registered: (/* name */ String, /* cometd */ CometD) => Unit = null,
-    unregistered: () => Unit = null
-  ): Extension = {
+  def apply(): Extension = {
     val __obj = js.Dynamic.literal()
-    if (incoming != null) __obj.updateDynamic("incoming")(js.Any.fromFunction1(incoming))
-    if (outgoing != null) __obj.updateDynamic("outgoing")(js.Any.fromFunction1(outgoing))
-    if (registered != null) __obj.updateDynamic("registered")(js.Any.fromFunction2(registered))
-    if (unregistered != null) __obj.updateDynamic("unregistered")(js.Any.fromFunction0(unregistered))
     __obj.asInstanceOf[Extension]
   }
+  @scala.inline
+  implicit class ExtensionOps[Self <: Extension] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncoming(value: /* message */ Message => Unit): Self = this.set("incoming", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIncoming: Self = this.set("incoming", js.undefined)
+    @scala.inline
+    def setOutgoing(value: /* message */ Message => Unit): Self = this.set("outgoing", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOutgoing: Self = this.set("outgoing", js.undefined)
+    @scala.inline
+    def setRegistered(value: (/* name */ String, /* cometd */ CometD) => Unit): Self = this.set("registered", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRegistered: Self = this.set("registered", js.undefined)
+    @scala.inline
+    def setUnregistered(value: () => Unit): Self = this.set("unregistered", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteUnregistered: Self = this.set("unregistered", js.undefined)
+  }
+  
 }
 

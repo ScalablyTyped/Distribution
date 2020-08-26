@@ -37,6 +37,7 @@ class Bucket protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: BucketArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: BucketArgs, opts: CustomResourceOptions) = this()
   /**
     * Sets the accelerate configuration of an existing bucket. Can be `Enabled` or `Suspended`.
@@ -95,7 +96,7 @@ class Bucket protected () extends CustomResource {
     */
   val objectLockConfiguration: Output_[js.UndefOr[BucketObjectLockConfiguration]] = js.native
   /**
-    * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document.
+    * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), the provider may view the policy as constantly changing in a `pulumi up / preview / update`. In this case, please make sure you use the verbose/specific version of the policy.
     */
   val policy: Output_[js.UndefOr[String]] = js.native
   /**
@@ -120,7 +121,7 @@ class Bucket protected () extends CustomResource {
   /**
     * A mapping of tags to assign to the bucket.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) (documented below)
     */
@@ -156,6 +157,12 @@ class Bucket protected () extends CustomResource {
     * called whenever a matching [s3.Object] is created.
     */
   def onObjectCreated(name: String, handler: BucketEventHandler): BucketEventSubscription = js.native
+  def onObjectCreated(
+    name: String,
+    handler: BucketEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ): BucketEventSubscription = js.native
   def onObjectCreated(name: String, handler: BucketEventHandler, args: ObjectCreatedSubscriptionArgs): BucketEventSubscription = js.native
   def onObjectCreated(
     name: String,
@@ -169,6 +176,12 @@ class Bucket protected () extends CustomResource {
     * called whenever an matching [s3.Object] is removed.
     */
   def onObjectRemoved(name: String, handler: BucketEventHandler): BucketEventSubscription = js.native
+  def onObjectRemoved(
+    name: String,
+    handler: BucketEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ): BucketEventSubscription = js.native
   def onObjectRemoved(name: String, handler: BucketEventHandler, args: ObjectRemovedSubscriptionArgs): BucketEventSubscription = js.native
   def onObjectRemoved(
     name: String,
@@ -189,8 +202,10 @@ object Bucket extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Bucket = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Bucket = js.native
   def get(name: String, id: Input[ID], state: BucketState): Bucket = js.native
   def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): Bucket = js.native
   /**

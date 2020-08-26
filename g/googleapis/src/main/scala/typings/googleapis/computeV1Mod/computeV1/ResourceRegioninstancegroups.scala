@@ -89,6 +89,7 @@ class ResourceRegioninstancegroups protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInstanceGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaInstanceGroup]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceGroup] = js.native
   def get(params: ParamsResourceRegioninstancegroupsGet): GaxiosPromise[SchemaInstanceGroup] = js.native
   def get(params: ParamsResourceRegioninstancegroupsGet, callback: BodyResponseCallback[SchemaInstanceGroup]): Unit = js.native
   def get(
@@ -191,6 +192,7 @@ class ResourceRegioninstancegroups protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaRegionInstanceGroupList] = js.native
   def list(callback: BodyResponseCallback[SchemaRegionInstanceGroupList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegionInstanceGroupList] = js.native
   def list(params: ParamsResourceRegioninstancegroupsList): GaxiosPromise[SchemaRegionInstanceGroupList] = js.native
   def list(
     params: ParamsResourceRegioninstancegroupsList,
@@ -308,6 +310,7 @@ class ResourceRegioninstancegroups protected () extends js.Object {
     */
   def listInstances(): GaxiosPromise[SchemaRegionInstanceGroupsListInstances] = js.native
   def listInstances(callback: BodyResponseCallback[SchemaRegionInstanceGroupsListInstances]): Unit = js.native
+  def listInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegionInstanceGroupsListInstances] = js.native
   def listInstances(params: ParamsResourceRegioninstancegroupsListinstances): GaxiosPromise[SchemaRegionInstanceGroupsListInstances] = js.native
   def listInstances(
     params: ParamsResourceRegioninstancegroupsListinstances,
@@ -404,6 +407,7 @@ class ResourceRegioninstancegroups protected () extends js.Object {
     */
   def setNamedPorts(): GaxiosPromise[SchemaOperation] = js.native
   def setNamedPorts(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setNamedPorts(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setNamedPorts(params: ParamsResourceRegioninstancegroupsSetnamedports): GaxiosPromise[SchemaOperation] = js.native
   def setNamedPorts(
     params: ParamsResourceRegioninstancegroupsSetnamedports,

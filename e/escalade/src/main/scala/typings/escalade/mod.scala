@@ -11,9 +11,7 @@ object mod extends js.Object {
   def apply(directory: String, callback: Callback): js.Promise[String | Unit] = js.native
   type Callback = js.Function2[
     /* directory */ String, 
-    /* files */ js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify stirng */ js.Any
-    ], 
+    /* files */ js.Array[String], 
     Promisable[String | `false` | Unit]
   ]
   type Promisable[T] = T | js.Promise[T]

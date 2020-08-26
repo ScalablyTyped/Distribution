@@ -10,11 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ChangeFontStrikeoutCommand")
 @js.native
 class ChangeFontStrikeoutCommand ()
-  extends typings.devexpressWeb.ChangeFontStrikeoutCommand {
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.CommandState[Boolean] = js.native
-}
+  extends typings.devexpressWeb.ChangeFontStrikeoutCommand
 

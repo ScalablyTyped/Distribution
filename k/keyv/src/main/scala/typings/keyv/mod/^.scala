@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class ^[TValue] () extends Keyv[TValue] {
   def this(opts: Options[TValue]) = this()
   def this(uri: String) = this()
+  def this(uri: js.UndefOr[scala.Nothing], opts: Options[TValue]) = this()
   def this(uri: String, opts: Options[TValue]) = this()
 }
 

@@ -27,12 +27,7 @@ object compatMod extends js.Object {
   }
   
   @js.native
-  class FluentError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+  class FluentError () extends Error
   
   @js.native
   class FluentNumber protected ()

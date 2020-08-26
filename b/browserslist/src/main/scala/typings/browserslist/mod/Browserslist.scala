@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Browserslist extends js.Object {
   def apply(): js.Array[String] = js.native
+  def apply(queries: js.UndefOr[scala.Nothing], opts: Options): js.Array[String] = js.native
   def apply(queries: String): js.Array[String] = js.native
   def apply(queries: String, opts: Options): js.Array[String] = js.native
   def apply(queries: js.Array[String]): js.Array[String] = js.native

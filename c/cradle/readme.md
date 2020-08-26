@@ -11,7 +11,7 @@ the high-level, caching, CouchDB library
 | Keywords           | couchdb, database, couch |
 | # releases         | 0 |
 | # dependents       | 108 |
-| # downloads        | 95089 |
+| # downloads        | 92263 |
 | # stars            | 18 |
 
 ## Links

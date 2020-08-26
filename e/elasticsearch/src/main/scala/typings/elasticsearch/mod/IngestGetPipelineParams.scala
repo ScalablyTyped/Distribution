@@ -4,32 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IngestGetPipelineParams extends GenericParams {
-  var id: String
-  var masterTimeout: js.UndefOr[Double] = js.undefined
+  var id: String = js.native
+  var masterTimeout: js.UndefOr[Double] = js.native
 }
 
 object IngestGetPipelineParams {
   @scala.inline
-  def apply(
-    id: String,
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    masterTimeout: js.UndefOr[Double] = js.undefined,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined
-  ): IngestGetPipelineParams = {
+  def apply(id: String): IngestGetPipelineParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(masterTimeout)) __obj.updateDynamic("masterTimeout")(masterTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestGetPipelineParams]
   }
+  @scala.inline
+  implicit class IngestGetPipelineParamsOps[Self <: IngestGetPipelineParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMasterTimeout(value: Double): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
+  }
+  
 }
 

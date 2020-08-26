@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "NodeWithI18n")
 @js.native
 abstract class NodeWithI18n protected ()
-  extends typings.angularCompiler.publicApiMod.NodeWithI18n {
+  extends typings.angularCompiler.compilerMod.NodeWithI18n {
   def this(sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
   def this(sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, i18n: Message) = this()
   def this(sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, i18n: Node) = this()

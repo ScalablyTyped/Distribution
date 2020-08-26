@@ -28,14 +28,35 @@ object NotebookInstanceLifecycleConfigSummary {
   @scala.inline
   def apply(
     NotebookInstanceLifecycleConfigArn: NotebookInstanceLifecycleConfigArn,
-    NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName,
-    CreationTime: CreationTime = null,
-    LastModifiedTime: LastModifiedTime = null
+    NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName
   ): NotebookInstanceLifecycleConfigSummary = {
     val __obj = js.Dynamic.literal(NotebookInstanceLifecycleConfigArn = NotebookInstanceLifecycleConfigArn.asInstanceOf[js.Any], NotebookInstanceLifecycleConfigName = NotebookInstanceLifecycleConfigName.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotebookInstanceLifecycleConfigSummary]
   }
+  @scala.inline
+  implicit class NotebookInstanceLifecycleConfigSummaryOps[Self <: NotebookInstanceLifecycleConfigSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotebookInstanceLifecycleConfigArn(value: NotebookInstanceLifecycleConfigArn): Self = this.set("NotebookInstanceLifecycleConfigArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = this.set("NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: LastModifiedTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+  }
+  
 }
 

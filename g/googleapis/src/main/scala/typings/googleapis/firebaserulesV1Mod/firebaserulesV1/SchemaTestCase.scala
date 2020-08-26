@@ -48,18 +48,40 @@ trait SchemaTestCase extends js.Object {
 
 object SchemaTestCase {
   @scala.inline
-  def apply(
-    expectation: String = null,
-    functionMocks: js.Array[SchemaFunctionMock] = null,
-    request: js.Any = null,
-    resource: js.Any = null
-  ): SchemaTestCase = {
+  def apply(): SchemaTestCase = {
     val __obj = js.Dynamic.literal()
-    if (expectation != null) __obj.updateDynamic("expectation")(expectation.asInstanceOf[js.Any])
-    if (functionMocks != null) __obj.updateDynamic("functionMocks")(functionMocks.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestCase]
   }
+  @scala.inline
+  implicit class SchemaTestCaseOps[Self <: SchemaTestCase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpectation(value: String): Self = this.set("expectation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectation: Self = this.set("expectation", js.undefined)
+    @scala.inline
+    def setFunctionMocksVarargs(value: SchemaFunctionMock*): Self = this.set("functionMocks", js.Array(value :_*))
+    @scala.inline
+    def setFunctionMocks(value: js.Array[SchemaFunctionMock]): Self = this.set("functionMocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionMocks: Self = this.set("functionMocks", js.undefined)
+    @scala.inline
+    def setRequest(value: js.Any): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setResource(value: js.Any): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+  }
+  
 }
 

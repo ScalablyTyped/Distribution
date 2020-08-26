@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UpdateToLatestLedgerRequest_ () extends Message {
   def addRequestedItems(): RequestItem = js.native
+  def addRequestedItems(value: js.UndefOr[scala.Nothing], index: Double): RequestItem = js.native
   def addRequestedItems(value: RequestItem): RequestItem = js.native
   def addRequestedItems(value: RequestItem, index: Double): RequestItem = js.native
   def clearRequestedItemsList(): Unit = js.native

@@ -28,14 +28,8 @@ object PhoneInfoOptions {
     __obj.asInstanceOf[PhoneInfoOptions]
   }
   @scala.inline
-  def PhoneMultiFactorSignInInfoOptions(
-    session: MultiFactorSession,
-    multiFactorHint: MultiFactorInfo = null,
-    multiFactorUid: String = null
-  ): PhoneInfoOptions = {
+  def PhoneMultiFactorSignInInfoOptions(session: MultiFactorSession): PhoneInfoOptions = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
-    if (multiFactorHint != null) __obj.updateDynamic("multiFactorHint")(multiFactorHint.asInstanceOf[js.Any])
-    if (multiFactorUid != null) __obj.updateDynamic("multiFactorUid")(multiFactorUid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneInfoOptions]
   }
 }

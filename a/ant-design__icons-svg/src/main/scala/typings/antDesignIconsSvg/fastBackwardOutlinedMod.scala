@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/FastBackwardOutlined", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/FastBackwardOutlined", JSImport.Namespace)
 @js.native
 object fastBackwardOutlinedMod extends js.Object {
   val default: IconDefinition = js.native

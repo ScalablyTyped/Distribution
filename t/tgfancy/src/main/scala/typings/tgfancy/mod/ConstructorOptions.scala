@@ -1,37 +1,37 @@
 package typings.tgfancy.mod
 
-import typings.nodeTelegramBotApi.mod.PollingOptions
-import typings.nodeTelegramBotApi.mod.WebHookOptions
-import typings.request.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConstructorOptions
   extends typings.nodeTelegramBotApi.mod.ConstructorOptions {
-  var tgfancy: js.UndefOr[TgfancyOptions] = js.undefined
+  var tgfancy: js.UndefOr[TgfancyOptions] = js.native
 }
 
 object ConstructorOptions {
   @scala.inline
-  def apply(
-    baseApiUrl: String = null,
-    filepath: js.UndefOr[Boolean] = js.undefined,
-    onlyFirstMatch: js.UndefOr[Boolean] = js.undefined,
-    polling: Boolean | PollingOptions = null,
-    request: Options = null,
-    tgfancy: TgfancyOptions = null,
-    webHook: Boolean | WebHookOptions = null
-  ): ConstructorOptions = {
+  def apply(): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseApiUrl != null) __obj.updateDynamic("baseApiUrl")(baseApiUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(filepath)) __obj.updateDynamic("filepath")(filepath.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyFirstMatch)) __obj.updateDynamic("onlyFirstMatch")(onlyFirstMatch.get.asInstanceOf[js.Any])
-    if (polling != null) __obj.updateDynamic("polling")(polling.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (tgfancy != null) __obj.updateDynamic("tgfancy")(tgfancy.asInstanceOf[js.Any])
-    if (webHook != null) __obj.updateDynamic("webHook")(webHook.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorOptions]
   }
+  @scala.inline
+  implicit class ConstructorOptionsOps[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTgfancy(value: TgfancyOptions): Self = this.set("tgfancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTgfancy: Self = this.set("tgfancy", js.undefined)
+  }
+  
 }
 

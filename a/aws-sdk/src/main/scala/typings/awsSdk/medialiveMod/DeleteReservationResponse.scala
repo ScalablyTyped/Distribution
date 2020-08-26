@@ -82,46 +82,94 @@ trait DeleteReservationResponse extends js.Object {
 
 object DeleteReservationResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    Count: js.UndefOr[integer] = js.undefined,
-    CurrencyCode: string = null,
-    Duration: js.UndefOr[integer] = js.undefined,
-    DurationUnits: OfferingDurationUnits = null,
-    End: string = null,
-    FixedPrice: js.UndefOr[double] = js.undefined,
-    Name: string = null,
-    OfferingDescription: string = null,
-    OfferingId: string = null,
-    OfferingType: OfferingType = null,
-    Region: string = null,
-    ReservationId: string = null,
-    ResourceSpecification: ReservationResourceSpecification = null,
-    Start: string = null,
-    State: ReservationState = null,
-    Tags: Tags = null,
-    UsagePrice: js.UndefOr[double] = js.undefined
-  ): DeleteReservationResponse = {
+  def apply(): DeleteReservationResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (DurationUnits != null) __obj.updateDynamic("DurationUnits")(DurationUnits.asInstanceOf[js.Any])
-    if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OfferingDescription != null) __obj.updateDynamic("OfferingDescription")(OfferingDescription.asInstanceOf[js.Any])
-    if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId.asInstanceOf[js.Any])
-    if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (ReservationId != null) __obj.updateDynamic("ReservationId")(ReservationId.asInstanceOf[js.Any])
-    if (ResourceSpecification != null) __obj.updateDynamic("ResourceSpecification")(ResourceSpecification.asInstanceOf[js.Any])
-    if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReservationResponse]
   }
+  @scala.inline
+  implicit class DeleteReservationResponseOps[Self <: DeleteReservationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCount(value: integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("Count", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: string): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setDuration(value: integer): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setDurationUnits(value: OfferingDurationUnits): Self = this.set("DurationUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationUnits: Self = this.set("DurationUnits", js.undefined)
+    @scala.inline
+    def setEnd(value: string): Self = this.set("End", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("End", js.undefined)
+    @scala.inline
+    def setFixedPrice(value: double): Self = this.set("FixedPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedPrice: Self = this.set("FixedPrice", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOfferingDescription(value: string): Self = this.set("OfferingDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingDescription: Self = this.set("OfferingDescription", js.undefined)
+    @scala.inline
+    def setOfferingId(value: string): Self = this.set("OfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingId: Self = this.set("OfferingId", js.undefined)
+    @scala.inline
+    def setOfferingType(value: OfferingType): Self = this.set("OfferingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingType: Self = this.set("OfferingType", js.undefined)
+    @scala.inline
+    def setRegion(value: string): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setReservationId(value: string): Self = this.set("ReservationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservationId: Self = this.set("ReservationId", js.undefined)
+    @scala.inline
+    def setResourceSpecification(value: ReservationResourceSpecification): Self = this.set("ResourceSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceSpecification: Self = this.set("ResourceSpecification", js.undefined)
+    @scala.inline
+    def setStart(value: string): Self = this.set("Start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("Start", js.undefined)
+    @scala.inline
+    def setState(value: ReservationState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setUsagePrice(value: double): Self = this.set("UsagePrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsagePrice: Self = this.set("UsagePrice", js.undefined)
+  }
+  
 }
 

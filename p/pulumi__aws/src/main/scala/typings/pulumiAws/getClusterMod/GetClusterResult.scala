@@ -20,7 +20,7 @@ trait GetClusterResult extends js.Object {
   val clusterId: String = js.native
   val clusterState: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -51,5 +51,34 @@ object GetClusterResult {
     val __obj = js.Dynamic.literal(clusterCertificates = clusterCertificates.asInstanceOf[js.Any], clusterId = clusterId.asInstanceOf[js.Any], clusterState = clusterState.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], securityGroupId = securityGroupId.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClusterResult]
   }
+  @scala.inline
+  implicit class GetClusterResultOps[Self <: GetClusterResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterCertificates(value: GetClusterClusterCertificates): Self = this.set("clusterCertificates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterState(value: String): Self = this.set("clusterState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityGroupId(value: String): Self = this.set("securityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetIdsVarargs(value: String*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: js.Array[String]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

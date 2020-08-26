@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** specifies a control for displaying an image. */
+@js.native
 trait UnoControlImageControl
   extends XControl
      with XWindow

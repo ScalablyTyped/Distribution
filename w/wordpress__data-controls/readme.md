@@ -12,13 +12,12 @@ A set of common controls for the @wordpress/data api.
 | Keywords           | wordpress, data, controls |
 | # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 56374 |
+| # downloads        | 65675 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/data-controls/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fdata-controls)
     
 

@@ -28,6 +28,11 @@ object platformKeys extends js.Object {
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit = js.native
+  def getKeyPairBySpki(
+    publicKeySpkiDer: ArrayBuffer,
+    parameters: js.Object,
+    callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
+  ): Unit = js.native
   def selectClientCertificates(
     details: ClientCertificateSelectDetails,
     callback: js.Function1[/* matches */ js.Array[Match], Unit]

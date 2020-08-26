@@ -5,420 +5,703 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ k in keyof std.WindowEventMap ]:? string} */
+@js.native
 trait kinkeyofWindowEventMapstr extends js.Object {
-  var MSGestureChange: js.UndefOr[String] = js.undefined
-  var MSGestureDoubleTap: js.UndefOr[String] = js.undefined
-  var MSGestureEnd: js.UndefOr[String] = js.undefined
-  var MSGestureHold: js.UndefOr[String] = js.undefined
-  var MSGestureStart: js.UndefOr[String] = js.undefined
-  var MSGestureTap: js.UndefOr[String] = js.undefined
-  var MSInertiaStart: js.UndefOr[String] = js.undefined
-  var MSPointerCancel: js.UndefOr[String] = js.undefined
-  var MSPointerDown: js.UndefOr[String] = js.undefined
-  var MSPointerEnter: js.UndefOr[String] = js.undefined
-  var MSPointerLeave: js.UndefOr[String] = js.undefined
-  var MSPointerMove: js.UndefOr[String] = js.undefined
-  var MSPointerOut: js.UndefOr[String] = js.undefined
-  var MSPointerOver: js.UndefOr[String] = js.undefined
-  var MSPointerUp: js.UndefOr[String] = js.undefined
-  var abort: js.UndefOr[String] = js.undefined
-  var afterprint: js.UndefOr[String] = js.undefined
-  var animationcancel: js.UndefOr[String] = js.undefined
-  var animationend: js.UndefOr[String] = js.undefined
-  var animationiteration: js.UndefOr[String] = js.undefined
-  var animationstart: js.UndefOr[String] = js.undefined
-  var auxclick: js.UndefOr[String] = js.undefined
-  var beforeprint: js.UndefOr[String] = js.undefined
-  var beforeunload: js.UndefOr[String] = js.undefined
-  var blur: js.UndefOr[String] = js.undefined
-  var cancel: js.UndefOr[String] = js.undefined
-  var canplay: js.UndefOr[String] = js.undefined
-  var canplaythrough: js.UndefOr[String] = js.undefined
-  var change: js.UndefOr[String] = js.undefined
-  var click: js.UndefOr[String] = js.undefined
-  var close: js.UndefOr[String] = js.undefined
-  var compassneedscalibration: js.UndefOr[String] = js.undefined
-  var contextmenu: js.UndefOr[String] = js.undefined
-  var cuechange: js.UndefOr[String] = js.undefined
-  var dblclick: js.UndefOr[String] = js.undefined
-  var devicelight: js.UndefOr[String] = js.undefined
-  var devicemotion: js.UndefOr[String] = js.undefined
-  var deviceorientation: js.UndefOr[String] = js.undefined
-  var deviceorientationabsolute: js.UndefOr[String] = js.undefined
-  var drag: js.UndefOr[String] = js.undefined
-  var dragend: js.UndefOr[String] = js.undefined
-  var dragenter: js.UndefOr[String] = js.undefined
-  var dragexit: js.UndefOr[String] = js.undefined
-  var dragleave: js.UndefOr[String] = js.undefined
-  var dragover: js.UndefOr[String] = js.undefined
-  var dragstart: js.UndefOr[String] = js.undefined
-  var drop: js.UndefOr[String] = js.undefined
-  var durationchange: js.UndefOr[String] = js.undefined
-  var emptied: js.UndefOr[String] = js.undefined
-  var ended: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[String] = js.undefined
-  var focus: js.UndefOr[String] = js.undefined
-  var focusin: js.UndefOr[String] = js.undefined
-  var focusout: js.UndefOr[String] = js.undefined
-  var gotpointercapture: js.UndefOr[String] = js.undefined
-  var hashchange: js.UndefOr[String] = js.undefined
-  var input: js.UndefOr[String] = js.undefined
-  var invalid: js.UndefOr[String] = js.undefined
-  var keydown: js.UndefOr[String] = js.undefined
-  var keypress: js.UndefOr[String] = js.undefined
-  var keyup: js.UndefOr[String] = js.undefined
-  var languagechange: js.UndefOr[String] = js.undefined
-  var load: js.UndefOr[String] = js.undefined
-  var loadeddata: js.UndefOr[String] = js.undefined
-  var loadedmetadata: js.UndefOr[String] = js.undefined
-  var loadstart: js.UndefOr[String] = js.undefined
-  var lostpointercapture: js.UndefOr[String] = js.undefined
-  var message: js.UndefOr[String] = js.undefined
-  var messageerror: js.UndefOr[String] = js.undefined
-  var mousedown: js.UndefOr[String] = js.undefined
-  var mouseenter: js.UndefOr[String] = js.undefined
-  var mouseleave: js.UndefOr[String] = js.undefined
-  var mousemove: js.UndefOr[String] = js.undefined
-  var mouseout: js.UndefOr[String] = js.undefined
-  var mouseover: js.UndefOr[String] = js.undefined
-  var mouseup: js.UndefOr[String] = js.undefined
-  var mousewheel: js.UndefOr[String] = js.undefined
-  var offline: js.UndefOr[String] = js.undefined
-  var online: js.UndefOr[String] = js.undefined
-  var orientationchange: js.UndefOr[String] = js.undefined
-  var pagehide: js.UndefOr[String] = js.undefined
-  var pageshow: js.UndefOr[String] = js.undefined
-  var pause: js.UndefOr[String] = js.undefined
-  var play: js.UndefOr[String] = js.undefined
-  var playing: js.UndefOr[String] = js.undefined
-  var pointercancel: js.UndefOr[String] = js.undefined
-  var pointerdown: js.UndefOr[String] = js.undefined
-  var pointerenter: js.UndefOr[String] = js.undefined
-  var pointerleave: js.UndefOr[String] = js.undefined
-  var pointermove: js.UndefOr[String] = js.undefined
-  var pointerout: js.UndefOr[String] = js.undefined
-  var pointerover: js.UndefOr[String] = js.undefined
-  var pointerup: js.UndefOr[String] = js.undefined
-  var popstate: js.UndefOr[String] = js.undefined
-  var progress: js.UndefOr[String] = js.undefined
-  var ratechange: js.UndefOr[String] = js.undefined
-  var readystatechange: js.UndefOr[String] = js.undefined
-  var rejectionhandled: js.UndefOr[String] = js.undefined
-  var reset: js.UndefOr[String] = js.undefined
-  var resize: js.UndefOr[String] = js.undefined
-  var scroll: js.UndefOr[String] = js.undefined
-  var securitypolicyviolation: js.UndefOr[String] = js.undefined
-  var seeked: js.UndefOr[String] = js.undefined
-  var seeking: js.UndefOr[String] = js.undefined
-  var select: js.UndefOr[String] = js.undefined
-  var selectionchange: js.UndefOr[String] = js.undefined
-  var selectstart: js.UndefOr[String] = js.undefined
-  var stalled: js.UndefOr[String] = js.undefined
-  var storage: js.UndefOr[String] = js.undefined
-  var submit: js.UndefOr[String] = js.undefined
-  var suspend: js.UndefOr[String] = js.undefined
-  var timeupdate: js.UndefOr[String] = js.undefined
-  var toggle: js.UndefOr[String] = js.undefined
-  var touchcancel: js.UndefOr[String] = js.undefined
-  var touchend: js.UndefOr[String] = js.undefined
-  var touchmove: js.UndefOr[String] = js.undefined
-  var touchstart: js.UndefOr[String] = js.undefined
-  var transitioncancel: js.UndefOr[String] = js.undefined
-  var transitionend: js.UndefOr[String] = js.undefined
-  var transitionrun: js.UndefOr[String] = js.undefined
-  var transitionstart: js.UndefOr[String] = js.undefined
-  var unhandledrejection: js.UndefOr[String] = js.undefined
-  var unload: js.UndefOr[String] = js.undefined
-  var volumechange: js.UndefOr[String] = js.undefined
-  var vrdisplayactivate: js.UndefOr[String] = js.undefined
-  var vrdisplayblur: js.UndefOr[String] = js.undefined
-  var vrdisplayconnect: js.UndefOr[String] = js.undefined
-  var vrdisplaydeactivate: js.UndefOr[String] = js.undefined
-  var vrdisplaydisconnect: js.UndefOr[String] = js.undefined
-  var vrdisplayfocus: js.UndefOr[String] = js.undefined
-  var vrdisplaypointerrestricted: js.UndefOr[String] = js.undefined
-  var vrdisplaypointerunrestricted: js.UndefOr[String] = js.undefined
-  var vrdisplaypresentchange: js.UndefOr[String] = js.undefined
-  var waiting: js.UndefOr[String] = js.undefined
-  var wheel: js.UndefOr[String] = js.undefined
+  var MSGestureChange: js.UndefOr[String] = js.native
+  var MSGestureDoubleTap: js.UndefOr[String] = js.native
+  var MSGestureEnd: js.UndefOr[String] = js.native
+  var MSGestureHold: js.UndefOr[String] = js.native
+  var MSGestureStart: js.UndefOr[String] = js.native
+  var MSGestureTap: js.UndefOr[String] = js.native
+  var MSInertiaStart: js.UndefOr[String] = js.native
+  var MSPointerCancel: js.UndefOr[String] = js.native
+  var MSPointerDown: js.UndefOr[String] = js.native
+  var MSPointerEnter: js.UndefOr[String] = js.native
+  var MSPointerLeave: js.UndefOr[String] = js.native
+  var MSPointerMove: js.UndefOr[String] = js.native
+  var MSPointerOut: js.UndefOr[String] = js.native
+  var MSPointerOver: js.UndefOr[String] = js.native
+  var MSPointerUp: js.UndefOr[String] = js.native
+  var abort: js.UndefOr[String] = js.native
+  var afterprint: js.UndefOr[String] = js.native
+  var animationcancel: js.UndefOr[String] = js.native
+  var animationend: js.UndefOr[String] = js.native
+  var animationiteration: js.UndefOr[String] = js.native
+  var animationstart: js.UndefOr[String] = js.native
+  var auxclick: js.UndefOr[String] = js.native
+  var beforeprint: js.UndefOr[String] = js.native
+  var beforeunload: js.UndefOr[String] = js.native
+  var blur: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.native
+  var canplay: js.UndefOr[String] = js.native
+  var canplaythrough: js.UndefOr[String] = js.native
+  var change: js.UndefOr[String] = js.native
+  var click: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.native
+  var compassneedscalibration: js.UndefOr[String] = js.native
+  var contextmenu: js.UndefOr[String] = js.native
+  var cuechange: js.UndefOr[String] = js.native
+  var dblclick: js.UndefOr[String] = js.native
+  var devicelight: js.UndefOr[String] = js.native
+  var devicemotion: js.UndefOr[String] = js.native
+  var deviceorientation: js.UndefOr[String] = js.native
+  var deviceorientationabsolute: js.UndefOr[String] = js.native
+  var drag: js.UndefOr[String] = js.native
+  var dragend: js.UndefOr[String] = js.native
+  var dragenter: js.UndefOr[String] = js.native
+  var dragexit: js.UndefOr[String] = js.native
+  var dragleave: js.UndefOr[String] = js.native
+  var dragover: js.UndefOr[String] = js.native
+  var dragstart: js.UndefOr[String] = js.native
+  var drop: js.UndefOr[String] = js.native
+  var durationchange: js.UndefOr[String] = js.native
+  var emptied: js.UndefOr[String] = js.native
+  var ended: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.native
+  var focus: js.UndefOr[String] = js.native
+  var focusin: js.UndefOr[String] = js.native
+  var focusout: js.UndefOr[String] = js.native
+  var gotpointercapture: js.UndefOr[String] = js.native
+  var hashchange: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.native
+  var invalid: js.UndefOr[String] = js.native
+  var keydown: js.UndefOr[String] = js.native
+  var keypress: js.UndefOr[String] = js.native
+  var keyup: js.UndefOr[String] = js.native
+  var languagechange: js.UndefOr[String] = js.native
+  var load: js.UndefOr[String] = js.native
+  var loadeddata: js.UndefOr[String] = js.native
+  var loadedmetadata: js.UndefOr[String] = js.native
+  var loadstart: js.UndefOr[String] = js.native
+  var lostpointercapture: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.native
+  var messageerror: js.UndefOr[String] = js.native
+  var mousedown: js.UndefOr[String] = js.native
+  var mouseenter: js.UndefOr[String] = js.native
+  var mouseleave: js.UndefOr[String] = js.native
+  var mousemove: js.UndefOr[String] = js.native
+  var mouseout: js.UndefOr[String] = js.native
+  var mouseover: js.UndefOr[String] = js.native
+  var mouseup: js.UndefOr[String] = js.native
+  var mousewheel: js.UndefOr[String] = js.native
+  var offline: js.UndefOr[String] = js.native
+  var online: js.UndefOr[String] = js.native
+  var orientationchange: js.UndefOr[String] = js.native
+  var pagehide: js.UndefOr[String] = js.native
+  var pageshow: js.UndefOr[String] = js.native
+  var pause: js.UndefOr[String] = js.native
+  var play: js.UndefOr[String] = js.native
+  var playing: js.UndefOr[String] = js.native
+  var pointercancel: js.UndefOr[String] = js.native
+  var pointerdown: js.UndefOr[String] = js.native
+  var pointerenter: js.UndefOr[String] = js.native
+  var pointerleave: js.UndefOr[String] = js.native
+  var pointermove: js.UndefOr[String] = js.native
+  var pointerout: js.UndefOr[String] = js.native
+  var pointerover: js.UndefOr[String] = js.native
+  var pointerup: js.UndefOr[String] = js.native
+  var popstate: js.UndefOr[String] = js.native
+  var progress: js.UndefOr[String] = js.native
+  var ratechange: js.UndefOr[String] = js.native
+  var readystatechange: js.UndefOr[String] = js.native
+  var rejectionhandled: js.UndefOr[String] = js.native
+  var reset: js.UndefOr[String] = js.native
+  var resize: js.UndefOr[String] = js.native
+  var scroll: js.UndefOr[String] = js.native
+  var securitypolicyviolation: js.UndefOr[String] = js.native
+  var seeked: js.UndefOr[String] = js.native
+  var seeking: js.UndefOr[String] = js.native
+  var select: js.UndefOr[String] = js.native
+  var selectionchange: js.UndefOr[String] = js.native
+  var selectstart: js.UndefOr[String] = js.native
+  var stalled: js.UndefOr[String] = js.native
+  var storage: js.UndefOr[String] = js.native
+  var submit: js.UndefOr[String] = js.native
+  var suspend: js.UndefOr[String] = js.native
+  var timeupdate: js.UndefOr[String] = js.native
+  var toggle: js.UndefOr[String] = js.native
+  var touchcancel: js.UndefOr[String] = js.native
+  var touchend: js.UndefOr[String] = js.native
+  var touchmove: js.UndefOr[String] = js.native
+  var touchstart: js.UndefOr[String] = js.native
+  var transitioncancel: js.UndefOr[String] = js.native
+  var transitionend: js.UndefOr[String] = js.native
+  var transitionrun: js.UndefOr[String] = js.native
+  var transitionstart: js.UndefOr[String] = js.native
+  var unhandledrejection: js.UndefOr[String] = js.native
+  var unload: js.UndefOr[String] = js.native
+  var volumechange: js.UndefOr[String] = js.native
+  var vrdisplayactivate: js.UndefOr[String] = js.native
+  var vrdisplayblur: js.UndefOr[String] = js.native
+  var vrdisplayconnect: js.UndefOr[String] = js.native
+  var vrdisplaydeactivate: js.UndefOr[String] = js.native
+  var vrdisplaydisconnect: js.UndefOr[String] = js.native
+  var vrdisplayfocus: js.UndefOr[String] = js.native
+  var vrdisplaypointerrestricted: js.UndefOr[String] = js.native
+  var vrdisplaypointerunrestricted: js.UndefOr[String] = js.native
+  var vrdisplaypresentchange: js.UndefOr[String] = js.native
+  var waiting: js.UndefOr[String] = js.native
+  var wheel: js.UndefOr[String] = js.native
 }
 
 object kinkeyofWindowEventMapstr {
   @scala.inline
-  def apply(
-    MSGestureChange: String = null,
-    MSGestureDoubleTap: String = null,
-    MSGestureEnd: String = null,
-    MSGestureHold: String = null,
-    MSGestureStart: String = null,
-    MSGestureTap: String = null,
-    MSInertiaStart: String = null,
-    MSPointerCancel: String = null,
-    MSPointerDown: String = null,
-    MSPointerEnter: String = null,
-    MSPointerLeave: String = null,
-    MSPointerMove: String = null,
-    MSPointerOut: String = null,
-    MSPointerOver: String = null,
-    MSPointerUp: String = null,
-    abort: String = null,
-    afterprint: String = null,
-    animationcancel: String = null,
-    animationend: String = null,
-    animationiteration: String = null,
-    animationstart: String = null,
-    auxclick: String = null,
-    beforeprint: String = null,
-    beforeunload: String = null,
-    blur: String = null,
-    cancel: String = null,
-    canplay: String = null,
-    canplaythrough: String = null,
-    change: String = null,
-    click: String = null,
-    close: String = null,
-    compassneedscalibration: String = null,
-    contextmenu: String = null,
-    cuechange: String = null,
-    dblclick: String = null,
-    devicelight: String = null,
-    devicemotion: String = null,
-    deviceorientation: String = null,
-    deviceorientationabsolute: String = null,
-    drag: String = null,
-    dragend: String = null,
-    dragenter: String = null,
-    dragexit: String = null,
-    dragleave: String = null,
-    dragover: String = null,
-    dragstart: String = null,
-    drop: String = null,
-    durationchange: String = null,
-    emptied: String = null,
-    ended: String = null,
-    error: String = null,
-    focus: String = null,
-    focusin: String = null,
-    focusout: String = null,
-    gotpointercapture: String = null,
-    hashchange: String = null,
-    input: String = null,
-    invalid: String = null,
-    keydown: String = null,
-    keypress: String = null,
-    keyup: String = null,
-    languagechange: String = null,
-    load: String = null,
-    loadeddata: String = null,
-    loadedmetadata: String = null,
-    loadstart: String = null,
-    lostpointercapture: String = null,
-    message: String = null,
-    messageerror: String = null,
-    mousedown: String = null,
-    mouseenter: String = null,
-    mouseleave: String = null,
-    mousemove: String = null,
-    mouseout: String = null,
-    mouseover: String = null,
-    mouseup: String = null,
-    mousewheel: String = null,
-    offline: String = null,
-    online: String = null,
-    orientationchange: String = null,
-    pagehide: String = null,
-    pageshow: String = null,
-    pause: String = null,
-    play: String = null,
-    playing: String = null,
-    pointercancel: String = null,
-    pointerdown: String = null,
-    pointerenter: String = null,
-    pointerleave: String = null,
-    pointermove: String = null,
-    pointerout: String = null,
-    pointerover: String = null,
-    pointerup: String = null,
-    popstate: String = null,
-    progress: String = null,
-    ratechange: String = null,
-    readystatechange: String = null,
-    rejectionhandled: String = null,
-    reset: String = null,
-    resize: String = null,
-    scroll: String = null,
-    securitypolicyviolation: String = null,
-    seeked: String = null,
-    seeking: String = null,
-    select: String = null,
-    selectionchange: String = null,
-    selectstart: String = null,
-    stalled: String = null,
-    storage: String = null,
-    submit: String = null,
-    suspend: String = null,
-    timeupdate: String = null,
-    toggle: String = null,
-    touchcancel: String = null,
-    touchend: String = null,
-    touchmove: String = null,
-    touchstart: String = null,
-    transitioncancel: String = null,
-    transitionend: String = null,
-    transitionrun: String = null,
-    transitionstart: String = null,
-    unhandledrejection: String = null,
-    unload: String = null,
-    volumechange: String = null,
-    vrdisplayactivate: String = null,
-    vrdisplayblur: String = null,
-    vrdisplayconnect: String = null,
-    vrdisplaydeactivate: String = null,
-    vrdisplaydisconnect: String = null,
-    vrdisplayfocus: String = null,
-    vrdisplaypointerrestricted: String = null,
-    vrdisplaypointerunrestricted: String = null,
-    vrdisplaypresentchange: String = null,
-    waiting: String = null,
-    wheel: String = null
-  ): kinkeyofWindowEventMapstr = {
+  def apply(): kinkeyofWindowEventMapstr = {
     val __obj = js.Dynamic.literal()
-    if (MSGestureChange != null) __obj.updateDynamic("MSGestureChange")(MSGestureChange.asInstanceOf[js.Any])
-    if (MSGestureDoubleTap != null) __obj.updateDynamic("MSGestureDoubleTap")(MSGestureDoubleTap.asInstanceOf[js.Any])
-    if (MSGestureEnd != null) __obj.updateDynamic("MSGestureEnd")(MSGestureEnd.asInstanceOf[js.Any])
-    if (MSGestureHold != null) __obj.updateDynamic("MSGestureHold")(MSGestureHold.asInstanceOf[js.Any])
-    if (MSGestureStart != null) __obj.updateDynamic("MSGestureStart")(MSGestureStart.asInstanceOf[js.Any])
-    if (MSGestureTap != null) __obj.updateDynamic("MSGestureTap")(MSGestureTap.asInstanceOf[js.Any])
-    if (MSInertiaStart != null) __obj.updateDynamic("MSInertiaStart")(MSInertiaStart.asInstanceOf[js.Any])
-    if (MSPointerCancel != null) __obj.updateDynamic("MSPointerCancel")(MSPointerCancel.asInstanceOf[js.Any])
-    if (MSPointerDown != null) __obj.updateDynamic("MSPointerDown")(MSPointerDown.asInstanceOf[js.Any])
-    if (MSPointerEnter != null) __obj.updateDynamic("MSPointerEnter")(MSPointerEnter.asInstanceOf[js.Any])
-    if (MSPointerLeave != null) __obj.updateDynamic("MSPointerLeave")(MSPointerLeave.asInstanceOf[js.Any])
-    if (MSPointerMove != null) __obj.updateDynamic("MSPointerMove")(MSPointerMove.asInstanceOf[js.Any])
-    if (MSPointerOut != null) __obj.updateDynamic("MSPointerOut")(MSPointerOut.asInstanceOf[js.Any])
-    if (MSPointerOver != null) __obj.updateDynamic("MSPointerOver")(MSPointerOver.asInstanceOf[js.Any])
-    if (MSPointerUp != null) __obj.updateDynamic("MSPointerUp")(MSPointerUp.asInstanceOf[js.Any])
-    if (abort != null) __obj.updateDynamic("abort")(abort.asInstanceOf[js.Any])
-    if (afterprint != null) __obj.updateDynamic("afterprint")(afterprint.asInstanceOf[js.Any])
-    if (animationcancel != null) __obj.updateDynamic("animationcancel")(animationcancel.asInstanceOf[js.Any])
-    if (animationend != null) __obj.updateDynamic("animationend")(animationend.asInstanceOf[js.Any])
-    if (animationiteration != null) __obj.updateDynamic("animationiteration")(animationiteration.asInstanceOf[js.Any])
-    if (animationstart != null) __obj.updateDynamic("animationstart")(animationstart.asInstanceOf[js.Any])
-    if (auxclick != null) __obj.updateDynamic("auxclick")(auxclick.asInstanceOf[js.Any])
-    if (beforeprint != null) __obj.updateDynamic("beforeprint")(beforeprint.asInstanceOf[js.Any])
-    if (beforeunload != null) __obj.updateDynamic("beforeunload")(beforeunload.asInstanceOf[js.Any])
-    if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (canplay != null) __obj.updateDynamic("canplay")(canplay.asInstanceOf[js.Any])
-    if (canplaythrough != null) __obj.updateDynamic("canplaythrough")(canplaythrough.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(change.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (compassneedscalibration != null) __obj.updateDynamic("compassneedscalibration")(compassneedscalibration.asInstanceOf[js.Any])
-    if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu.asInstanceOf[js.Any])
-    if (cuechange != null) __obj.updateDynamic("cuechange")(cuechange.asInstanceOf[js.Any])
-    if (dblclick != null) __obj.updateDynamic("dblclick")(dblclick.asInstanceOf[js.Any])
-    if (devicelight != null) __obj.updateDynamic("devicelight")(devicelight.asInstanceOf[js.Any])
-    if (devicemotion != null) __obj.updateDynamic("devicemotion")(devicemotion.asInstanceOf[js.Any])
-    if (deviceorientation != null) __obj.updateDynamic("deviceorientation")(deviceorientation.asInstanceOf[js.Any])
-    if (deviceorientationabsolute != null) __obj.updateDynamic("deviceorientationabsolute")(deviceorientationabsolute.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
-    if (dragend != null) __obj.updateDynamic("dragend")(dragend.asInstanceOf[js.Any])
-    if (dragenter != null) __obj.updateDynamic("dragenter")(dragenter.asInstanceOf[js.Any])
-    if (dragexit != null) __obj.updateDynamic("dragexit")(dragexit.asInstanceOf[js.Any])
-    if (dragleave != null) __obj.updateDynamic("dragleave")(dragleave.asInstanceOf[js.Any])
-    if (dragover != null) __obj.updateDynamic("dragover")(dragover.asInstanceOf[js.Any])
-    if (dragstart != null) __obj.updateDynamic("dragstart")(dragstart.asInstanceOf[js.Any])
-    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
-    if (durationchange != null) __obj.updateDynamic("durationchange")(durationchange.asInstanceOf[js.Any])
-    if (emptied != null) __obj.updateDynamic("emptied")(emptied.asInstanceOf[js.Any])
-    if (ended != null) __obj.updateDynamic("ended")(ended.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (focusin != null) __obj.updateDynamic("focusin")(focusin.asInstanceOf[js.Any])
-    if (focusout != null) __obj.updateDynamic("focusout")(focusout.asInstanceOf[js.Any])
-    if (gotpointercapture != null) __obj.updateDynamic("gotpointercapture")(gotpointercapture.asInstanceOf[js.Any])
-    if (hashchange != null) __obj.updateDynamic("hashchange")(hashchange.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (invalid != null) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
-    if (keydown != null) __obj.updateDynamic("keydown")(keydown.asInstanceOf[js.Any])
-    if (keypress != null) __obj.updateDynamic("keypress")(keypress.asInstanceOf[js.Any])
-    if (keyup != null) __obj.updateDynamic("keyup")(keyup.asInstanceOf[js.Any])
-    if (languagechange != null) __obj.updateDynamic("languagechange")(languagechange.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
-    if (loadeddata != null) __obj.updateDynamic("loadeddata")(loadeddata.asInstanceOf[js.Any])
-    if (loadedmetadata != null) __obj.updateDynamic("loadedmetadata")(loadedmetadata.asInstanceOf[js.Any])
-    if (loadstart != null) __obj.updateDynamic("loadstart")(loadstart.asInstanceOf[js.Any])
-    if (lostpointercapture != null) __obj.updateDynamic("lostpointercapture")(lostpointercapture.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (messageerror != null) __obj.updateDynamic("messageerror")(messageerror.asInstanceOf[js.Any])
-    if (mousedown != null) __obj.updateDynamic("mousedown")(mousedown.asInstanceOf[js.Any])
-    if (mouseenter != null) __obj.updateDynamic("mouseenter")(mouseenter.asInstanceOf[js.Any])
-    if (mouseleave != null) __obj.updateDynamic("mouseleave")(mouseleave.asInstanceOf[js.Any])
-    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove.asInstanceOf[js.Any])
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout.asInstanceOf[js.Any])
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover.asInstanceOf[js.Any])
-    if (mouseup != null) __obj.updateDynamic("mouseup")(mouseup.asInstanceOf[js.Any])
-    if (mousewheel != null) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
-    if (offline != null) __obj.updateDynamic("offline")(offline.asInstanceOf[js.Any])
-    if (online != null) __obj.updateDynamic("online")(online.asInstanceOf[js.Any])
-    if (orientationchange != null) __obj.updateDynamic("orientationchange")(orientationchange.asInstanceOf[js.Any])
-    if (pagehide != null) __obj.updateDynamic("pagehide")(pagehide.asInstanceOf[js.Any])
-    if (pageshow != null) __obj.updateDynamic("pageshow")(pageshow.asInstanceOf[js.Any])
-    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
-    if (play != null) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
-    if (playing != null) __obj.updateDynamic("playing")(playing.asInstanceOf[js.Any])
-    if (pointercancel != null) __obj.updateDynamic("pointercancel")(pointercancel.asInstanceOf[js.Any])
-    if (pointerdown != null) __obj.updateDynamic("pointerdown")(pointerdown.asInstanceOf[js.Any])
-    if (pointerenter != null) __obj.updateDynamic("pointerenter")(pointerenter.asInstanceOf[js.Any])
-    if (pointerleave != null) __obj.updateDynamic("pointerleave")(pointerleave.asInstanceOf[js.Any])
-    if (pointermove != null) __obj.updateDynamic("pointermove")(pointermove.asInstanceOf[js.Any])
-    if (pointerout != null) __obj.updateDynamic("pointerout")(pointerout.asInstanceOf[js.Any])
-    if (pointerover != null) __obj.updateDynamic("pointerover")(pointerover.asInstanceOf[js.Any])
-    if (pointerup != null) __obj.updateDynamic("pointerup")(pointerup.asInstanceOf[js.Any])
-    if (popstate != null) __obj.updateDynamic("popstate")(popstate.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (ratechange != null) __obj.updateDynamic("ratechange")(ratechange.asInstanceOf[js.Any])
-    if (readystatechange != null) __obj.updateDynamic("readystatechange")(readystatechange.asInstanceOf[js.Any])
-    if (rejectionhandled != null) __obj.updateDynamic("rejectionhandled")(rejectionhandled.asInstanceOf[js.Any])
-    if (reset != null) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (securitypolicyviolation != null) __obj.updateDynamic("securitypolicyviolation")(securitypolicyviolation.asInstanceOf[js.Any])
-    if (seeked != null) __obj.updateDynamic("seeked")(seeked.asInstanceOf[js.Any])
-    if (seeking != null) __obj.updateDynamic("seeking")(seeking.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (selectionchange != null) __obj.updateDynamic("selectionchange")(selectionchange.asInstanceOf[js.Any])
-    if (selectstart != null) __obj.updateDynamic("selectstart")(selectstart.asInstanceOf[js.Any])
-    if (stalled != null) __obj.updateDynamic("stalled")(stalled.asInstanceOf[js.Any])
-    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
-    if (submit != null) __obj.updateDynamic("submit")(submit.asInstanceOf[js.Any])
-    if (suspend != null) __obj.updateDynamic("suspend")(suspend.asInstanceOf[js.Any])
-    if (timeupdate != null) __obj.updateDynamic("timeupdate")(timeupdate.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
-    if (touchcancel != null) __obj.updateDynamic("touchcancel")(touchcancel.asInstanceOf[js.Any])
-    if (touchend != null) __obj.updateDynamic("touchend")(touchend.asInstanceOf[js.Any])
-    if (touchmove != null) __obj.updateDynamic("touchmove")(touchmove.asInstanceOf[js.Any])
-    if (touchstart != null) __obj.updateDynamic("touchstart")(touchstart.asInstanceOf[js.Any])
-    if (transitioncancel != null) __obj.updateDynamic("transitioncancel")(transitioncancel.asInstanceOf[js.Any])
-    if (transitionend != null) __obj.updateDynamic("transitionend")(transitionend.asInstanceOf[js.Any])
-    if (transitionrun != null) __obj.updateDynamic("transitionrun")(transitionrun.asInstanceOf[js.Any])
-    if (transitionstart != null) __obj.updateDynamic("transitionstart")(transitionstart.asInstanceOf[js.Any])
-    if (unhandledrejection != null) __obj.updateDynamic("unhandledrejection")(unhandledrejection.asInstanceOf[js.Any])
-    if (unload != null) __obj.updateDynamic("unload")(unload.asInstanceOf[js.Any])
-    if (volumechange != null) __obj.updateDynamic("volumechange")(volumechange.asInstanceOf[js.Any])
-    if (vrdisplayactivate != null) __obj.updateDynamic("vrdisplayactivate")(vrdisplayactivate.asInstanceOf[js.Any])
-    if (vrdisplayblur != null) __obj.updateDynamic("vrdisplayblur")(vrdisplayblur.asInstanceOf[js.Any])
-    if (vrdisplayconnect != null) __obj.updateDynamic("vrdisplayconnect")(vrdisplayconnect.asInstanceOf[js.Any])
-    if (vrdisplaydeactivate != null) __obj.updateDynamic("vrdisplaydeactivate")(vrdisplaydeactivate.asInstanceOf[js.Any])
-    if (vrdisplaydisconnect != null) __obj.updateDynamic("vrdisplaydisconnect")(vrdisplaydisconnect.asInstanceOf[js.Any])
-    if (vrdisplayfocus != null) __obj.updateDynamic("vrdisplayfocus")(vrdisplayfocus.asInstanceOf[js.Any])
-    if (vrdisplaypointerrestricted != null) __obj.updateDynamic("vrdisplaypointerrestricted")(vrdisplaypointerrestricted.asInstanceOf[js.Any])
-    if (vrdisplaypointerunrestricted != null) __obj.updateDynamic("vrdisplaypointerunrestricted")(vrdisplaypointerunrestricted.asInstanceOf[js.Any])
-    if (vrdisplaypresentchange != null) __obj.updateDynamic("vrdisplaypresentchange")(vrdisplaypresentchange.asInstanceOf[js.Any])
-    if (waiting != null) __obj.updateDynamic("waiting")(waiting.asInstanceOf[js.Any])
-    if (wheel != null) __obj.updateDynamic("wheel")(wheel.asInstanceOf[js.Any])
     __obj.asInstanceOf[kinkeyofWindowEventMapstr]
   }
+  @scala.inline
+  implicit class kinkeyofWindowEventMapstrOps[Self <: kinkeyofWindowEventMapstr] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMSGestureChange(value: String): Self = this.set("MSGestureChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSGestureChange: Self = this.set("MSGestureChange", js.undefined)
+    @scala.inline
+    def setMSGestureDoubleTap(value: String): Self = this.set("MSGestureDoubleTap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSGestureDoubleTap: Self = this.set("MSGestureDoubleTap", js.undefined)
+    @scala.inline
+    def setMSGestureEnd(value: String): Self = this.set("MSGestureEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSGestureEnd: Self = this.set("MSGestureEnd", js.undefined)
+    @scala.inline
+    def setMSGestureHold(value: String): Self = this.set("MSGestureHold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSGestureHold: Self = this.set("MSGestureHold", js.undefined)
+    @scala.inline
+    def setMSGestureStart(value: String): Self = this.set("MSGestureStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSGestureStart: Self = this.set("MSGestureStart", js.undefined)
+    @scala.inline
+    def setMSGestureTap(value: String): Self = this.set("MSGestureTap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSGestureTap: Self = this.set("MSGestureTap", js.undefined)
+    @scala.inline
+    def setMSInertiaStart(value: String): Self = this.set("MSInertiaStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSInertiaStart: Self = this.set("MSInertiaStart", js.undefined)
+    @scala.inline
+    def setMSPointerCancel(value: String): Self = this.set("MSPointerCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSPointerCancel: Self = this.set("MSPointerCancel", js.undefined)
+    @scala.inline
+    def setMSPointerDown(value: String): Self = this.set("MSPointerDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSPointerDown: Self = this.set("MSPointerDown", js.undefined)
+    @scala.inline
+    def setMSPointerEnter(value: String): Self = this.set("MSPointerEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSPointerEnter: Self = this.set("MSPointerEnter", js.undefined)
+    @scala.inline
+    def setMSPointerLeave(value: String): Self = this.set("MSPointerLeave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSPointerLeave: Self = this.set("MSPointerLeave", js.undefined)
+    @scala.inline
+    def setMSPointerMove(value: String): Self = this.set("MSPointerMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSPointerMove: Self = this.set("MSPointerMove", js.undefined)
+    @scala.inline
+    def setMSPointerOut(value: String): Self = this.set("MSPointerOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSPointerOut: Self = this.set("MSPointerOut", js.undefined)
+    @scala.inline
+    def setMSPointerOver(value: String): Self = this.set("MSPointerOver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSPointerOver: Self = this.set("MSPointerOver", js.undefined)
+    @scala.inline
+    def setMSPointerUp(value: String): Self = this.set("MSPointerUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMSPointerUp: Self = this.set("MSPointerUp", js.undefined)
+    @scala.inline
+    def setAbort(value: String): Self = this.set("abort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbort: Self = this.set("abort", js.undefined)
+    @scala.inline
+    def setAfterprint(value: String): Self = this.set("afterprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterprint: Self = this.set("afterprint", js.undefined)
+    @scala.inline
+    def setAnimationcancel(value: String): Self = this.set("animationcancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationcancel: Self = this.set("animationcancel", js.undefined)
+    @scala.inline
+    def setAnimationend(value: String): Self = this.set("animationend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationend: Self = this.set("animationend", js.undefined)
+    @scala.inline
+    def setAnimationiteration(value: String): Self = this.set("animationiteration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationiteration: Self = this.set("animationiteration", js.undefined)
+    @scala.inline
+    def setAnimationstart(value: String): Self = this.set("animationstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationstart: Self = this.set("animationstart", js.undefined)
+    @scala.inline
+    def setAuxclick(value: String): Self = this.set("auxclick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuxclick: Self = this.set("auxclick", js.undefined)
+    @scala.inline
+    def setBeforeprint(value: String): Self = this.set("beforeprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeprint: Self = this.set("beforeprint", js.undefined)
+    @scala.inline
+    def setBeforeunload(value: String): Self = this.set("beforeunload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeunload: Self = this.set("beforeunload", js.undefined)
+    @scala.inline
+    def setBlur(value: String): Self = this.set("blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlur: Self = this.set("blur", js.undefined)
+    @scala.inline
+    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setCanplay(value: String): Self = this.set("canplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanplay: Self = this.set("canplay", js.undefined)
+    @scala.inline
+    def setCanplaythrough(value: String): Self = this.set("canplaythrough", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanplaythrough: Self = this.set("canplaythrough", js.undefined)
+    @scala.inline
+    def setChange(value: String): Self = this.set("change", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setClick(value: String): Self = this.set("click", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setCompassneedscalibration(value: String): Self = this.set("compassneedscalibration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompassneedscalibration: Self = this.set("compassneedscalibration", js.undefined)
+    @scala.inline
+    def setContextmenu(value: String): Self = this.set("contextmenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextmenu: Self = this.set("contextmenu", js.undefined)
+    @scala.inline
+    def setCuechange(value: String): Self = this.set("cuechange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCuechange: Self = this.set("cuechange", js.undefined)
+    @scala.inline
+    def setDblclick(value: String): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDblclick: Self = this.set("dblclick", js.undefined)
+    @scala.inline
+    def setDevicelight(value: String): Self = this.set("devicelight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevicelight: Self = this.set("devicelight", js.undefined)
+    @scala.inline
+    def setDevicemotion(value: String): Self = this.set("devicemotion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevicemotion: Self = this.set("devicemotion", js.undefined)
+    @scala.inline
+    def setDeviceorientation(value: String): Self = this.set("deviceorientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceorientation: Self = this.set("deviceorientation", js.undefined)
+    @scala.inline
+    def setDeviceorientationabsolute(value: String): Self = this.set("deviceorientationabsolute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceorientationabsolute: Self = this.set("deviceorientationabsolute", js.undefined)
+    @scala.inline
+    def setDrag(value: String): Self = this.set("drag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrag: Self = this.set("drag", js.undefined)
+    @scala.inline
+    def setDragend(value: String): Self = this.set("dragend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragend: Self = this.set("dragend", js.undefined)
+    @scala.inline
+    def setDragenter(value: String): Self = this.set("dragenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragenter: Self = this.set("dragenter", js.undefined)
+    @scala.inline
+    def setDragexit(value: String): Self = this.set("dragexit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragexit: Self = this.set("dragexit", js.undefined)
+    @scala.inline
+    def setDragleave(value: String): Self = this.set("dragleave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragleave: Self = this.set("dragleave", js.undefined)
+    @scala.inline
+    def setDragover(value: String): Self = this.set("dragover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragover: Self = this.set("dragover", js.undefined)
+    @scala.inline
+    def setDragstart(value: String): Self = this.set("dragstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragstart: Self = this.set("dragstart", js.undefined)
+    @scala.inline
+    def setDrop(value: String): Self = this.set("drop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrop: Self = this.set("drop", js.undefined)
+    @scala.inline
+    def setDurationchange(value: String): Self = this.set("durationchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationchange: Self = this.set("durationchange", js.undefined)
+    @scala.inline
+    def setEmptied(value: String): Self = this.set("emptied", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptied: Self = this.set("emptied", js.undefined)
+    @scala.inline
+    def setEnded(value: String): Self = this.set("ended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnded: Self = this.set("ended", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFocus(value: String): Self = this.set("focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setFocusin(value: String): Self = this.set("focusin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusin: Self = this.set("focusin", js.undefined)
+    @scala.inline
+    def setFocusout(value: String): Self = this.set("focusout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusout: Self = this.set("focusout", js.undefined)
+    @scala.inline
+    def setGotpointercapture(value: String): Self = this.set("gotpointercapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGotpointercapture: Self = this.set("gotpointercapture", js.undefined)
+    @scala.inline
+    def setHashchange(value: String): Self = this.set("hashchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashchange: Self = this.set("hashchange", js.undefined)
+    @scala.inline
+    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setInvalid(value: String): Self = this.set("invalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalid: Self = this.set("invalid", js.undefined)
+    @scala.inline
+    def setKeydown(value: String): Self = this.set("keydown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeydown: Self = this.set("keydown", js.undefined)
+    @scala.inline
+    def setKeypress(value: String): Self = this.set("keypress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeypress: Self = this.set("keypress", js.undefined)
+    @scala.inline
+    def setKeyup(value: String): Self = this.set("keyup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyup: Self = this.set("keyup", js.undefined)
+    @scala.inline
+    def setLanguagechange(value: String): Self = this.set("languagechange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguagechange: Self = this.set("languagechange", js.undefined)
+    @scala.inline
+    def setLoad(value: String): Self = this.set("load", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setLoadeddata(value: String): Self = this.set("loadeddata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadeddata: Self = this.set("loadeddata", js.undefined)
+    @scala.inline
+    def setLoadedmetadata(value: String): Self = this.set("loadedmetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadedmetadata: Self = this.set("loadedmetadata", js.undefined)
+    @scala.inline
+    def setLoadstart(value: String): Self = this.set("loadstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadstart: Self = this.set("loadstart", js.undefined)
+    @scala.inline
+    def setLostpointercapture(value: String): Self = this.set("lostpointercapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLostpointercapture: Self = this.set("lostpointercapture", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setMessageerror(value: String): Self = this.set("messageerror", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageerror: Self = this.set("messageerror", js.undefined)
+    @scala.inline
+    def setMousedown(value: String): Self = this.set("mousedown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMousedown: Self = this.set("mousedown", js.undefined)
+    @scala.inline
+    def setMouseenter(value: String): Self = this.set("mouseenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseenter: Self = this.set("mouseenter", js.undefined)
+    @scala.inline
+    def setMouseleave(value: String): Self = this.set("mouseleave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseleave: Self = this.set("mouseleave", js.undefined)
+    @scala.inline
+    def setMousemove(value: String): Self = this.set("mousemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMousemove: Self = this.set("mousemove", js.undefined)
+    @scala.inline
+    def setMouseout(value: String): Self = this.set("mouseout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseout: Self = this.set("mouseout", js.undefined)
+    @scala.inline
+    def setMouseover(value: String): Self = this.set("mouseover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseover: Self = this.set("mouseover", js.undefined)
+    @scala.inline
+    def setMouseup(value: String): Self = this.set("mouseup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseup: Self = this.set("mouseup", js.undefined)
+    @scala.inline
+    def setMousewheel(value: String): Self = this.set("mousewheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMousewheel: Self = this.set("mousewheel", js.undefined)
+    @scala.inline
+    def setOffline(value: String): Self = this.set("offline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffline: Self = this.set("offline", js.undefined)
+    @scala.inline
+    def setOnline(value: String): Self = this.set("online", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnline: Self = this.set("online", js.undefined)
+    @scala.inline
+    def setOrientationchange(value: String): Self = this.set("orientationchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientationchange: Self = this.set("orientationchange", js.undefined)
+    @scala.inline
+    def setPagehide(value: String): Self = this.set("pagehide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagehide: Self = this.set("pagehide", js.undefined)
+    @scala.inline
+    def setPageshow(value: String): Self = this.set("pageshow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageshow: Self = this.set("pageshow", js.undefined)
+    @scala.inline
+    def setPause(value: String): Self = this.set("pause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePause: Self = this.set("pause", js.undefined)
+    @scala.inline
+    def setPlay(value: String): Self = this.set("play", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlay: Self = this.set("play", js.undefined)
+    @scala.inline
+    def setPlaying(value: String): Self = this.set("playing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaying: Self = this.set("playing", js.undefined)
+    @scala.inline
+    def setPointercancel(value: String): Self = this.set("pointercancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointercancel: Self = this.set("pointercancel", js.undefined)
+    @scala.inline
+    def setPointerdown(value: String): Self = this.set("pointerdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerdown: Self = this.set("pointerdown", js.undefined)
+    @scala.inline
+    def setPointerenter(value: String): Self = this.set("pointerenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerenter: Self = this.set("pointerenter", js.undefined)
+    @scala.inline
+    def setPointerleave(value: String): Self = this.set("pointerleave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerleave: Self = this.set("pointerleave", js.undefined)
+    @scala.inline
+    def setPointermove(value: String): Self = this.set("pointermove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointermove: Self = this.set("pointermove", js.undefined)
+    @scala.inline
+    def setPointerout(value: String): Self = this.set("pointerout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerout: Self = this.set("pointerout", js.undefined)
+    @scala.inline
+    def setPointerover(value: String): Self = this.set("pointerover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerover: Self = this.set("pointerover", js.undefined)
+    @scala.inline
+    def setPointerup(value: String): Self = this.set("pointerup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerup: Self = this.set("pointerup", js.undefined)
+    @scala.inline
+    def setPopstate(value: String): Self = this.set("popstate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopstate: Self = this.set("popstate", js.undefined)
+    @scala.inline
+    def setProgress(value: String): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("progress", js.undefined)
+    @scala.inline
+    def setRatechange(value: String): Self = this.set("ratechange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRatechange: Self = this.set("ratechange", js.undefined)
+    @scala.inline
+    def setReadystatechange(value: String): Self = this.set("readystatechange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadystatechange: Self = this.set("readystatechange", js.undefined)
+    @scala.inline
+    def setRejectionhandled(value: String): Self = this.set("rejectionhandled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectionhandled: Self = this.set("rejectionhandled", js.undefined)
+    @scala.inline
+    def setReset(value: String): Self = this.set("reset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReset: Self = this.set("reset", js.undefined)
+    @scala.inline
+    def setResize(value: String): Self = this.set("resize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResize: Self = this.set("resize", js.undefined)
+    @scala.inline
+    def setScroll(value: String): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroll: Self = this.set("scroll", js.undefined)
+    @scala.inline
+    def setSecuritypolicyviolation(value: String): Self = this.set("securitypolicyviolation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecuritypolicyviolation: Self = this.set("securitypolicyviolation", js.undefined)
+    @scala.inline
+    def setSeeked(value: String): Self = this.set("seeked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeeked: Self = this.set("seeked", js.undefined)
+    @scala.inline
+    def setSeeking(value: String): Self = this.set("seeking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeeking: Self = this.set("seeking", js.undefined)
+    @scala.inline
+    def setSelect(value: String): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setSelectionchange(value: String): Self = this.set("selectionchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionchange: Self = this.set("selectionchange", js.undefined)
+    @scala.inline
+    def setSelectstart(value: String): Self = this.set("selectstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectstart: Self = this.set("selectstart", js.undefined)
+    @scala.inline
+    def setStalled(value: String): Self = this.set("stalled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStalled: Self = this.set("stalled", js.undefined)
+    @scala.inline
+    def setStorage(value: String): Self = this.set("storage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorage: Self = this.set("storage", js.undefined)
+    @scala.inline
+    def setSubmit(value: String): Self = this.set("submit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmit: Self = this.set("submit", js.undefined)
+    @scala.inline
+    def setSuspend(value: String): Self = this.set("suspend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspend: Self = this.set("suspend", js.undefined)
+    @scala.inline
+    def setTimeupdate(value: String): Self = this.set("timeupdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeupdate: Self = this.set("timeupdate", js.undefined)
+    @scala.inline
+    def setToggle(value: String): Self = this.set("toggle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggle: Self = this.set("toggle", js.undefined)
+    @scala.inline
+    def setTouchcancel(value: String): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchcancel: Self = this.set("touchcancel", js.undefined)
+    @scala.inline
+    def setTouchend(value: String): Self = this.set("touchend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchend: Self = this.set("touchend", js.undefined)
+    @scala.inline
+    def setTouchmove(value: String): Self = this.set("touchmove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchmove: Self = this.set("touchmove", js.undefined)
+    @scala.inline
+    def setTouchstart(value: String): Self = this.set("touchstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchstart: Self = this.set("touchstart", js.undefined)
+    @scala.inline
+    def setTransitioncancel(value: String): Self = this.set("transitioncancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitioncancel: Self = this.set("transitioncancel", js.undefined)
+    @scala.inline
+    def setTransitionend(value: String): Self = this.set("transitionend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionend: Self = this.set("transitionend", js.undefined)
+    @scala.inline
+    def setTransitionrun(value: String): Self = this.set("transitionrun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionrun: Self = this.set("transitionrun", js.undefined)
+    @scala.inline
+    def setTransitionstart(value: String): Self = this.set("transitionstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionstart: Self = this.set("transitionstart", js.undefined)
+    @scala.inline
+    def setUnhandledrejection(value: String): Self = this.set("unhandledrejection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnhandledrejection: Self = this.set("unhandledrejection", js.undefined)
+    @scala.inline
+    def setUnload(value: String): Self = this.set("unload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnload: Self = this.set("unload", js.undefined)
+    @scala.inline
+    def setVolumechange(value: String): Self = this.set("volumechange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumechange: Self = this.set("volumechange", js.undefined)
+    @scala.inline
+    def setVrdisplayactivate(value: String): Self = this.set("vrdisplayactivate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVrdisplayactivate: Self = this.set("vrdisplayactivate", js.undefined)
+    @scala.inline
+    def setVrdisplayblur(value: String): Self = this.set("vrdisplayblur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVrdisplayblur: Self = this.set("vrdisplayblur", js.undefined)
+    @scala.inline
+    def setVrdisplayconnect(value: String): Self = this.set("vrdisplayconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVrdisplayconnect: Self = this.set("vrdisplayconnect", js.undefined)
+    @scala.inline
+    def setVrdisplaydeactivate(value: String): Self = this.set("vrdisplaydeactivate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVrdisplaydeactivate: Self = this.set("vrdisplaydeactivate", js.undefined)
+    @scala.inline
+    def setVrdisplaydisconnect(value: String): Self = this.set("vrdisplaydisconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVrdisplaydisconnect: Self = this.set("vrdisplaydisconnect", js.undefined)
+    @scala.inline
+    def setVrdisplayfocus(value: String): Self = this.set("vrdisplayfocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVrdisplayfocus: Self = this.set("vrdisplayfocus", js.undefined)
+    @scala.inline
+    def setVrdisplaypointerrestricted(value: String): Self = this.set("vrdisplaypointerrestricted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVrdisplaypointerrestricted: Self = this.set("vrdisplaypointerrestricted", js.undefined)
+    @scala.inline
+    def setVrdisplaypointerunrestricted(value: String): Self = this.set("vrdisplaypointerunrestricted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVrdisplaypointerunrestricted: Self = this.set("vrdisplaypointerunrestricted", js.undefined)
+    @scala.inline
+    def setVrdisplaypresentchange(value: String): Self = this.set("vrdisplaypresentchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVrdisplaypresentchange: Self = this.set("vrdisplaypresentchange", js.undefined)
+    @scala.inline
+    def setWaiting(value: String): Self = this.set("waiting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaiting: Self = this.set("waiting", js.undefined)
+    @scala.inline
+    def setWheel(value: String): Self = this.set("wheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWheel: Self = this.set("wheel", js.undefined)
+  }
+  
 }
 

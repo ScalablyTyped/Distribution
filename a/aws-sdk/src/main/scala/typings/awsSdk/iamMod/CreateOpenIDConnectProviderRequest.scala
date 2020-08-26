@@ -22,14 +22,34 @@ trait CreateOpenIDConnectProviderRequest extends js.Object {
 
 object CreateOpenIDConnectProviderRequest {
   @scala.inline
-  def apply(
-    ThumbprintList: thumbprintListType,
-    Url: OpenIDConnectProviderUrlType,
-    ClientIDList: clientIDListType = null
-  ): CreateOpenIDConnectProviderRequest = {
+  def apply(ThumbprintList: thumbprintListType, Url: OpenIDConnectProviderUrlType): CreateOpenIDConnectProviderRequest = {
     val __obj = js.Dynamic.literal(ThumbprintList = ThumbprintList.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
-    if (ClientIDList != null) __obj.updateDynamic("ClientIDList")(ClientIDList.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOpenIDConnectProviderRequest]
   }
+  @scala.inline
+  implicit class CreateOpenIDConnectProviderRequestOps[Self <: CreateOpenIDConnectProviderRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThumbprintListVarargs(value: thumbprintType*): Self = this.set("ThumbprintList", js.Array(value :_*))
+    @scala.inline
+    def setThumbprintList(value: thumbprintListType): Self = this.set("ThumbprintList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: OpenIDConnectProviderUrlType): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientIDListVarargs(value: clientIDType*): Self = this.set("ClientIDList", js.Array(value :_*))
+    @scala.inline
+    def setClientIDList(value: clientIDListType): Self = this.set("ClientIDList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientIDList: Self = this.set("ClientIDList", js.undefined)
+  }
+  
 }
 

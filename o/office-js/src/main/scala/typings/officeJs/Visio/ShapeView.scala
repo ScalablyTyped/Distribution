@@ -52,10 +52,194 @@ trait ShapeView extends ClientObject {
     * @param Height Overlay Height.
     */
   def addOverlay(
-    OverlayType: Text | Image | Html,
+    OverlayType: OverlayType,
     Content: String,
-    OverlayHorizontalAlignment: Left | Center | Right,
-    OverlayVerticalAlignment: Top | Middle | Bottom,
+    OverlayHorizontalAlignment: OverlayHorizontalAlignment,
+    OverlayVerticalAlignment: OverlayVerticalAlignment,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Html,
+    Content: String,
+    OverlayHorizontalAlignment: Center,
+    OverlayVerticalAlignment: Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Html,
+    Content: String,
+    OverlayHorizontalAlignment: Center,
+    OverlayVerticalAlignment: Middle,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Html,
+    Content: String,
+    OverlayHorizontalAlignment: Center,
+    OverlayVerticalAlignment: Top,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Html,
+    Content: String,
+    OverlayHorizontalAlignment: Left,
+    OverlayVerticalAlignment: Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Html,
+    Content: String,
+    OverlayHorizontalAlignment: Left,
+    OverlayVerticalAlignment: Middle,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Html,
+    Content: String,
+    OverlayHorizontalAlignment: Left,
+    OverlayVerticalAlignment: Top,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Html,
+    Content: String,
+    OverlayHorizontalAlignment: Right,
+    OverlayVerticalAlignment: Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Html,
+    Content: String,
+    OverlayHorizontalAlignment: Right,
+    OverlayVerticalAlignment: Middle,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Html,
+    Content: String,
+    OverlayHorizontalAlignment: Right,
+    OverlayVerticalAlignment: Top,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Image,
+    Content: String,
+    OverlayHorizontalAlignment: Center,
+    OverlayVerticalAlignment: Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Image,
+    Content: String,
+    OverlayHorizontalAlignment: Center,
+    OverlayVerticalAlignment: Middle,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Image,
+    Content: String,
+    OverlayHorizontalAlignment: Center,
+    OverlayVerticalAlignment: Top,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Image,
+    Content: String,
+    OverlayHorizontalAlignment: Left,
+    OverlayVerticalAlignment: Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Image,
+    Content: String,
+    OverlayHorizontalAlignment: Left,
+    OverlayVerticalAlignment: Middle,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Image,
+    Content: String,
+    OverlayHorizontalAlignment: Left,
+    OverlayVerticalAlignment: Top,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Image,
+    Content: String,
+    OverlayHorizontalAlignment: Right,
+    OverlayVerticalAlignment: Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Image,
+    Content: String,
+    OverlayHorizontalAlignment: Right,
+    OverlayVerticalAlignment: Middle,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Image,
+    Content: String,
+    OverlayHorizontalAlignment: Right,
+    OverlayVerticalAlignment: Top,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Text,
+    Content: String,
+    OverlayHorizontalAlignment: Center,
+    OverlayVerticalAlignment: Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Text,
+    Content: String,
+    OverlayHorizontalAlignment: Center,
+    OverlayVerticalAlignment: Middle,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Text,
+    Content: String,
+    OverlayHorizontalAlignment: Center,
+    OverlayVerticalAlignment: Top,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Text,
+    Content: String,
+    OverlayHorizontalAlignment: Left,
+    OverlayVerticalAlignment: Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Text,
+    Content: String,
+    OverlayHorizontalAlignment: Left,
+    OverlayVerticalAlignment: Middle,
     Width: Double,
     Height: Double
   ): ClientResult[Double] = js.native
@@ -73,10 +257,34 @@ trait ShapeView extends ClientObject {
     * @param Height Overlay Height.
     */
   def addOverlay(
-    OverlayType: OverlayType,
+    OverlayType: Text,
     Content: String,
-    OverlayHorizontalAlignment: OverlayHorizontalAlignment,
-    OverlayVerticalAlignment: OverlayVerticalAlignment,
+    OverlayHorizontalAlignment: Left,
+    OverlayVerticalAlignment: Top,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Text,
+    Content: String,
+    OverlayHorizontalAlignment: Right,
+    OverlayVerticalAlignment: Bottom,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Text,
+    Content: String,
+    OverlayHorizontalAlignment: Right,
+    OverlayVerticalAlignment: Middle,
+    Width: Double,
+    Height: Double
+  ): ClientResult[Double] = js.native
+  def addOverlay(
+    OverlayType: Text,
+    Content: String,
+    OverlayHorizontalAlignment: Right,
+    OverlayVerticalAlignment: Top,
     Width: Double,
     Height: Double
   ): ClientResult[Double] = js.native

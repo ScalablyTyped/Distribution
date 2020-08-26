@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CustomDataIdentifiers extends js.Object {
   /**
-    * The names of the custom data identifiers that detected the data, and the number of occurrences of the data that each identifier detected.
+    * The custom data identifiers that detected the data, and the number of occurrences of the data that each identifier detected.
     */
   var detections: js.UndefOr[CustomDetections] = js.native
   /**
@@ -18,11 +18,32 @@ trait CustomDataIdentifiers extends js.Object {
 
 object CustomDataIdentifiers {
   @scala.inline
-  def apply(detections: CustomDetections = null, totalCount: js.UndefOr[long] = js.undefined): CustomDataIdentifiers = {
+  def apply(): CustomDataIdentifiers = {
     val __obj = js.Dynamic.literal()
-    if (detections != null) __obj.updateDynamic("detections")(detections.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalCount)) __obj.updateDynamic("totalCount")(totalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDataIdentifiers]
   }
+  @scala.inline
+  implicit class CustomDataIdentifiersOps[Self <: CustomDataIdentifiers] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetectionsVarargs(value: CustomDetection*): Self = this.set("detections", js.Array(value :_*))
+    @scala.inline
+    def setDetections(value: CustomDetections): Self = this.set("detections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetections: Self = this.set("detections", js.undefined)
+    @scala.inline
+    def setTotalCount(value: long): Self = this.set("totalCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
+  }
+  
 }
 

@@ -76,48 +76,101 @@ trait LoadBalancerArgs extends js.Object {
     */
   val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object LoadBalancerArgs {
   @scala.inline
-  def apply(
-    listeners: Input[js.Array[Input[LoadBalancerListener]]],
-    accessLogs: Input[LoadBalancerAccessLogs] = null,
-    availabilityZones: Input[js.Array[Input[String]]] = null,
-    connectionDraining: Input[Boolean] = null,
-    connectionDrainingTimeout: Input[Double] = null,
-    crossZoneLoadBalancing: Input[Boolean] = null,
-    healthCheck: Input[LoadBalancerHealthCheck] = null,
-    idleTimeout: Input[Double] = null,
-    instances: Input[js.Array[Input[String]]] = null,
-    internal: Input[Boolean] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    securityGroups: Input[js.Array[Input[String]]] = null,
-    sourceSecurityGroup: Input[String] = null,
-    subnets: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): LoadBalancerArgs = {
+  def apply(listeners: Input[js.Array[Input[LoadBalancerListener]]]): LoadBalancerArgs = {
     val __obj = js.Dynamic.literal(listeners = listeners.asInstanceOf[js.Any])
-    if (accessLogs != null) __obj.updateDynamic("accessLogs")(accessLogs.asInstanceOf[js.Any])
-    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
-    if (connectionDraining != null) __obj.updateDynamic("connectionDraining")(connectionDraining.asInstanceOf[js.Any])
-    if (connectionDrainingTimeout != null) __obj.updateDynamic("connectionDrainingTimeout")(connectionDrainingTimeout.asInstanceOf[js.Any])
-    if (crossZoneLoadBalancing != null) __obj.updateDynamic("crossZoneLoadBalancing")(crossZoneLoadBalancing.asInstanceOf[js.Any])
-    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
-    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
-    if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
-    if (sourceSecurityGroup != null) __obj.updateDynamic("sourceSecurityGroup")(sourceSecurityGroup.asInstanceOf[js.Any])
-    if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerArgs]
   }
+  @scala.inline
+  implicit class LoadBalancerArgsOps[Self <: LoadBalancerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListenersVarargs(value: Input[LoadBalancerListener]*): Self = this.set("listeners", js.Array(value :_*))
+    @scala.inline
+    def setListeners(value: Input[js.Array[Input[LoadBalancerListener]]]): Self = this.set("listeners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessLogs(value: Input[LoadBalancerAccessLogs]): Self = this.set("accessLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessLogs: Self = this.set("accessLogs", js.undefined)
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: Input[String]*): Self = this.set("availabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = this.set("availabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("availabilityZones", js.undefined)
+    @scala.inline
+    def setConnectionDraining(value: Input[Boolean]): Self = this.set("connectionDraining", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionDraining: Self = this.set("connectionDraining", js.undefined)
+    @scala.inline
+    def setConnectionDrainingTimeout(value: Input[Double]): Self = this.set("connectionDrainingTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionDrainingTimeout: Self = this.set("connectionDrainingTimeout", js.undefined)
+    @scala.inline
+    def setCrossZoneLoadBalancing(value: Input[Boolean]): Self = this.set("crossZoneLoadBalancing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossZoneLoadBalancing: Self = this.set("crossZoneLoadBalancing", js.undefined)
+    @scala.inline
+    def setHealthCheck(value: Input[LoadBalancerHealthCheck]): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
+    @scala.inline
+    def setIdleTimeout(value: Input[Double]): Self = this.set("idleTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleTimeout: Self = this.set("idleTimeout", js.undefined)
+    @scala.inline
+    def setInstancesVarargs(value: Input[String]*): Self = this.set("instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: Input[js.Array[Input[String]]]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("instances", js.undefined)
+    @scala.inline
+    def setInternal(value: Input[Boolean]): Self = this.set("internal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternal: Self = this.set("internal", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: Input[String]*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
+    @scala.inline
+    def setSourceSecurityGroup(value: Input[String]): Self = this.set("sourceSecurityGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSecurityGroup: Self = this.set("sourceSecurityGroup", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: Input[String]*): Self = this.set("subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: Input[js.Array[Input[String]]]): Self = this.set("subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("subnets", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

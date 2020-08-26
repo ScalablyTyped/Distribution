@@ -4,45 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StockChartValueAxisItemTitle extends js.Object {
-  var background: js.UndefOr[String] = js.undefined
-  var border: js.UndefOr[StockChartValueAxisItemTitleBorder] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var font: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[Double | js.Any] = js.undefined
-  var padding: js.UndefOr[Double | js.Any] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var rotation: js.UndefOr[Double] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var background: js.UndefOr[String] = js.native
+  var border: js.UndefOr[StockChartValueAxisItemTitleBorder] = js.native
+  var color: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[Double | js.Any] = js.native
+  var padding: js.UndefOr[Double | js.Any] = js.native
+  var position: js.UndefOr[String] = js.native
+  var rotation: js.UndefOr[Double] = js.native
+  var text: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object StockChartValueAxisItemTitle {
   @scala.inline
-  def apply(
-    background: String = null,
-    border: StockChartValueAxisItemTitleBorder = null,
-    color: String = null,
-    font: String = null,
-    margin: Double | js.Any = null,
-    padding: Double | js.Any = null,
-    position: String = null,
-    rotation: js.UndefOr[Double] = js.undefined,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): StockChartValueAxisItemTitle = {
+  def apply(): StockChartValueAxisItemTitle = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartValueAxisItemTitle]
   }
+  @scala.inline
+  implicit class StockChartValueAxisItemTitleOps[Self <: StockChartValueAxisItemTitle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBorder(value: StockChartValueAxisItemTitleBorder): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setMargin(value: Double | js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setPadding(value: Double | js.Any): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

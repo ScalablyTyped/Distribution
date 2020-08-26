@@ -22,14 +22,30 @@ trait DeleteApplicationVersionMessage extends js.Object {
 
 object DeleteApplicationVersionMessage {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName,
-    VersionLabel: VersionLabel,
-    DeleteSourceBundle: js.UndefOr[DeleteSourceBundle] = js.undefined
-  ): DeleteApplicationVersionMessage = {
+  def apply(ApplicationName: ApplicationName, VersionLabel: VersionLabel): DeleteApplicationVersionMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], VersionLabel = VersionLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteSourceBundle)) __obj.updateDynamic("DeleteSourceBundle")(DeleteSourceBundle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationVersionMessage]
   }
+  @scala.inline
+  implicit class DeleteApplicationVersionMessageOps[Self <: DeleteApplicationVersionMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersionLabel(value: VersionLabel): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeleteSourceBundle(value: DeleteSourceBundle): Self = this.set("DeleteSourceBundle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteSourceBundle: Self = this.set("DeleteSourceBundle", js.undefined)
+  }
+  
 }
 

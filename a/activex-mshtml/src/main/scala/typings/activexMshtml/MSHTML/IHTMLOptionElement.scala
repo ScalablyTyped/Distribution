@@ -16,6 +16,7 @@ trait IHTMLOptionElement extends js.Object {
   var text: String = js.native
   var value: String = js.native
   def form(): js.Any = js.native
+  def form(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def form(name: js.Any): js.Any = js.native
   def form(name: js.Any, index: js.Any): js.Any = js.native
 }

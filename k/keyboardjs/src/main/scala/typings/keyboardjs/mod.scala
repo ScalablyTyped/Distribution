@@ -48,9 +48,6 @@ object mod extends js.Object {
     /* preventRepeatByDefault */ js.UndefOr[Boolean], 
     Unit
   ] = js.native
-  def bind(keyCombo: String): Unit = js.native
-  def bind(keyCombo: String, pressed: Null, released: Callback): Unit = js.native
-  def bind(keyCombo: String, pressed: Null, released: Callback, preventRepeatByDefault: Boolean): Unit = js.native
   // ---------- Key Binding ---------- //
   /**
     * Binds a keyCombo to specific callback functions.
@@ -59,13 +56,40 @@ object mod extends js.Object {
     * @param released Callback that gets executed when the keyComboState is 'released'
     * @param preventRepeatByDefault Whether or not to prevent repeat by default. Defaults to false.
     */
+  def bind(keyCombo: String): Unit = js.native
+  def bind(
+    keyCombo: String,
+    pressed: Null,
+    released: js.UndefOr[scala.Nothing],
+    preventRepeatByDefault: Boolean
+  ): Unit = js.native
+  def bind(keyCombo: String, pressed: Null, released: Callback): Unit = js.native
+  def bind(keyCombo: String, pressed: Null, released: Callback, preventRepeatByDefault: Boolean): Unit = js.native
   def bind(keyCombo: String, pressed: Callback): Unit = js.native
+  def bind(
+    keyCombo: String,
+    pressed: Callback,
+    released: js.UndefOr[scala.Nothing],
+    preventRepeatByDefault: Boolean
+  ): Unit = js.native
   def bind(keyCombo: String, pressed: Callback, released: Callback): Unit = js.native
   def bind(keyCombo: String, pressed: Callback, released: Callback, preventRepeatByDefault: Boolean): Unit = js.native
   def bind(keyCombo: js.Array[String]): Unit = js.native
+  def bind(
+    keyCombo: js.Array[String],
+    pressed: Null,
+    released: js.UndefOr[scala.Nothing],
+    preventRepeatByDefault: Boolean
+  ): Unit = js.native
   def bind(keyCombo: js.Array[String], pressed: Null, released: Callback): Unit = js.native
   def bind(keyCombo: js.Array[String], pressed: Null, released: Callback, preventRepeatByDefault: Boolean): Unit = js.native
   def bind(keyCombo: js.Array[String], pressed: Callback): Unit = js.native
+  def bind(
+    keyCombo: js.Array[String],
+    pressed: Callback,
+    released: js.UndefOr[scala.Nothing],
+    preventRepeatByDefault: Boolean
+  ): Unit = js.native
   def bind(keyCombo: js.Array[String], pressed: Callback, released: Callback): Unit = js.native
   def bind(keyCombo: js.Array[String], pressed: Callback, released: Callback, preventRepeatByDefault: Boolean): Unit = js.native
   /**
@@ -127,10 +151,12 @@ object mod extends js.Object {
     * @param released Callback that gets executed when the keyComboState is 'released', can be null.
     */
   def unbind(keyCombo: String): Unit = js.native
+  def unbind(keyCombo: String, pressed: js.UndefOr[scala.Nothing], released: Callback): Unit = js.native
   def unbind(keyCombo: String, pressed: Null, released: Callback): Unit = js.native
   def unbind(keyCombo: String, pressed: Callback): Unit = js.native
   def unbind(keyCombo: String, pressed: Callback, released: Callback): Unit = js.native
   def unbind(keyCombo: js.Array[String]): Unit = js.native
+  def unbind(keyCombo: js.Array[String], pressed: js.UndefOr[scala.Nothing], released: Callback): Unit = js.native
   def unbind(keyCombo: js.Array[String], pressed: Null, released: Callback): Unit = js.native
   def unbind(keyCombo: js.Array[String], pressed: Callback): Unit = js.native
   def unbind(keyCombo: js.Array[String], pressed: Callback, released: Callback): Unit = js.native
@@ -147,6 +173,8 @@ object mod extends js.Object {
     */
   def watch(myDoc: Document): Unit = js.native
   def watch(myDoc: HTMLFormElement): Unit = js.native
+  def watch(myWin: js.UndefOr[scala.Nothing], myDoc: Document): Unit = js.native
+  def watch(myWin: js.UndefOr[scala.Nothing], myDoc: HTMLFormElement): Unit = js.native
   def watch(myWin: Window): Unit = js.native
   def watch(myWin: Window, myDoc: Document): Unit = js.native
   def watch(myWin: Window, myDoc: HTMLFormElement): Unit = js.native

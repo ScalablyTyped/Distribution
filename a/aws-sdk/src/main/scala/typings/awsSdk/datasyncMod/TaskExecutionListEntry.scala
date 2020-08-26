@@ -18,11 +18,30 @@ trait TaskExecutionListEntry extends js.Object {
 
 object TaskExecutionListEntry {
   @scala.inline
-  def apply(Status: TaskExecutionStatus = null, TaskExecutionArn: TaskExecutionArn = null): TaskExecutionListEntry = {
+  def apply(): TaskExecutionListEntry = {
     val __obj = js.Dynamic.literal()
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TaskExecutionArn != null) __obj.updateDynamic("TaskExecutionArn")(TaskExecutionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskExecutionListEntry]
   }
+  @scala.inline
+  implicit class TaskExecutionListEntryOps[Self <: TaskExecutionListEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: TaskExecutionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTaskExecutionArn(value: TaskExecutionArn): Self = this.set("TaskExecutionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskExecutionArn: Self = this.set("TaskExecutionArn", js.undefined)
+  }
+  
 }
 

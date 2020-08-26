@@ -28,7 +28,9 @@ object mod extends js.Object {
     def this(cookie: Cookie) = this()
     def this(cookie: String, requestDomain: String) = this()
     def this(cookie: Cookie, requestDomain: String) = this()
+    def this(cookie: String, requestDomain: js.UndefOr[scala.Nothing], requestPath: String) = this()
     def this(cookie: String, requestDomain: String, requestPath: String) = this()
+    def this(cookie: Cookie, requestDomain: js.UndefOr[scala.Nothing], requestPath: String) = this()
     def this(cookie: Cookie, requestDomain: String, requestPath: String) = this()
      // string associated with the cookie
     var domain: String = js.native
@@ -65,6 +67,7 @@ object mod extends js.Object {
       * @param requestPath string defining the requesting path
       */
     def parse(cookie: String): Cookie = js.native
+    def parse(cookie: String, requestDomain: js.UndefOr[scala.Nothing], requestPath: String): Cookie = js.native
     def parse(cookie: String, requestDomain: String): Cookie = js.native
     def parse(cookie: String, requestDomain: String, requestPath: String): Cookie = js.native
     /**
@@ -84,7 +87,16 @@ object mod extends js.Object {
       */
     def this(domain: String) = this()
     def this(domain: String, path: String) = this()
+    def this(domain: String, path: js.UndefOr[scala.Nothing], secure: Boolean) = this()
     def this(domain: String, path: String, secure: Boolean) = this()
+    def this(
+      domain: String,
+      path: js.UndefOr[scala.Nothing],
+      secure: js.UndefOr[scala.Nothing],
+      script: Boolean
+    ) = this()
+    def this(domain: String, path: js.UndefOr[scala.Nothing], secure: Boolean, script: Boolean) = this()
+    def this(domain: String, path: String, secure: js.UndefOr[scala.Nothing], script: Boolean) = this()
     def this(domain: String, path: String, secure: Boolean, script: Boolean) = this()
     var domain: String = js.native
      // domain to match
@@ -118,9 +130,11 @@ object mod extends js.Object {
       * @param requestPath string argument is used to set the path if it is not explicit in a cookie String
       */
     def setCookie(cookie: String): Cookie | `false` = js.native
+    def setCookie(cookie: String, requestDomain: js.UndefOr[scala.Nothing], requestPath: String): Cookie | `false` = js.native
     def setCookie(cookie: String, requestDomain: String): Cookie | `false` = js.native
     def setCookie(cookie: String, requestDomain: String, requestPath: String): Cookie | `false` = js.native
     def setCookie(cookie: Cookie): Cookie | `false` = js.native
+    def setCookie(cookie: Cookie, requestDomain: js.UndefOr[scala.Nothing], requestPath: String): Cookie | `false` = js.native
     def setCookie(cookie: Cookie, requestDomain: String): Cookie | `false` = js.native
     def setCookie(cookie: Cookie, requestDomain: String, requestPath: String): Cookie | `false` = js.native
     /**
@@ -131,9 +145,11 @@ object mod extends js.Object {
       * @param requestPath string argument is used to set the path if it is not explicit in a cookie String
       */
     def setCookies(cookie: String): js.Array[Cookie] | `false` = js.native
+    def setCookies(cookie: String, requestDomain: js.UndefOr[scala.Nothing], requestPath: String): js.Array[Cookie] | `false` = js.native
     def setCookies(cookie: String, requestDomain: String): js.Array[Cookie] | `false` = js.native
     def setCookies(cookie: String, requestDomain: String, requestPath: String): js.Array[Cookie] | `false` = js.native
     def setCookies(cookie: js.Array[String]): js.Array[Cookie] | `false` = js.native
+    def setCookies(cookie: js.Array[String], requestDomain: js.UndefOr[scala.Nothing], requestPath: String): js.Array[Cookie] | `false` = js.native
     def setCookies(cookie: js.Array[String], requestDomain: String): js.Array[Cookie] | `false` = js.native
     def setCookies(cookie: js.Array[String], requestDomain: String, requestPath: String): js.Array[Cookie] | `false` = js.native
   }

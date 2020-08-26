@@ -27,7 +27,7 @@ object contextMod extends js.Object {
     def this(converter: Converter, fileNames: js.Array[String], checker: TypeChecker, program: Program) = this()
     var checker: TypeChecker = js.native
     var converter: Converter = js.native
-    var externalPattern: js.UndefOr[js.Any] = js.native
+    var externalPattern: js.Any = js.native
     var extractTypeParameters: js.Any = js.native
     var fileNames: js.Array[String] = js.native
     var inheritParent: js.UndefOr[Node] = js.native
@@ -42,6 +42,7 @@ object contextMod extends js.Object {
     var typeArguments: js.UndefOr[js.Array[Type]] = js.native
     var typeParameters: js.UndefOr[MapLike[Type]] = js.native
     var visitStack: js.Array[Node] = js.native
+    def expectSymbolAtLocation(node: Node): Symbol = js.native
     def getCompilerOptions(): CompilerOptions = js.native
     def getLogger(): Logger = js.native
     def getSymbolAtLocation(node: Node): js.UndefOr[Symbol] = js.native
@@ -59,15 +60,41 @@ object contextMod extends js.Object {
     def resolveAliasedSymbol_Symbol(symbol: Symbol): Symbol = js.native
     def trigger(name: String, reflection: Reflection): Unit = js.native
     def trigger(name: String, reflection: Reflection, node: Node): Unit = js.native
-    def withScope(scope: js.UndefOr[Reflection], callback: js.Function0[Unit]): Unit = js.native
+    def withScope(scope: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def withScope(
-      scope: js.UndefOr[Reflection],
-      parameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
+      scope: js.UndefOr[scala.Nothing],
+      parameters: js.UndefOr[scala.Nothing],
       callback: js.Function0[Unit]
     ): Unit = js.native
     def withScope(
-      scope: js.UndefOr[Reflection],
-      parameters: js.UndefOr[NodeArray[TypeParameterDeclaration]],
+      scope: js.UndefOr[scala.Nothing],
+      parameters: js.UndefOr[scala.Nothing],
+      preserve: Boolean,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
+    def withScope(
+      scope: js.UndefOr[scala.Nothing],
+      parameters: NodeArray[TypeParameterDeclaration],
+      callback: js.Function0[Unit]
+    ): Unit = js.native
+    def withScope(
+      scope: js.UndefOr[scala.Nothing],
+      parameters: NodeArray[TypeParameterDeclaration],
+      preserve: Boolean,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
+    def withScope(scope: Reflection, callback: js.Function0[Unit]): Unit = js.native
+    def withScope(scope: Reflection, parameters: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+    def withScope(
+      scope: Reflection,
+      parameters: js.UndefOr[scala.Nothing],
+      preserve: Boolean,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
+    def withScope(scope: Reflection, parameters: NodeArray[TypeParameterDeclaration], callback: js.Function0[Unit]): Unit = js.native
+    def withScope(
+      scope: Reflection,
+      parameters: NodeArray[TypeParameterDeclaration],
       preserve: Boolean,
       callback: js.Function0[Unit]
     ): Unit = js.native

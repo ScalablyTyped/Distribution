@@ -7,63 +7,64 @@ import scala.scalajs.js.annotation._
 /**
   * a Level object represents a given quality level and contains quality level related info
   */
+@js.native
 trait Level extends js.Object {
   /**
     * attribute list
     */
-  var attrs: js.Array[LevelAttr]
+  var attrs: js.Array[LevelAttr] = js.native
   /**
     * audio codec
     */
-  var audioCodec: String
+  var audioCodec: String = js.native
   /**
     * level bitrate
     */
-  var bitrate: Double
+  var bitrate: Double = js.native
   /**
     * level details
     */
-  var details: js.UndefOr[LevelDetails] = js.undefined
+  var details: js.UndefOr[LevelDetails] = js.native
   /**
     * whether there is any error on the fragment
     */
-  var fragmentError: js.UndefOr[Boolean] = js.undefined
+  var fragmentError: js.UndefOr[Boolean] = js.native
   /**
     * video height
     */
-  var height: Double
+  var height: Double = js.native
   /**
     * index of the level
     */
-  var level: js.UndefOr[Double] = js.undefined
+  var level: js.UndefOr[Double] = js.native
   /**
     * error code
     */
-  var loadError: Double
+  var loadError: Double = js.native
   /**
     * level name
     */
-  var name: String
+  var name: String = js.native
   /**
     * array of unrecognized codecs
     */
-  var unkownCodecs: js.Array[String]
+  var unkownCodecs: js.Array[String] = js.native
   /**
     * level url. might contain several items if failover/redundant streams are found in the manifest
     */
-  var url: js.Array[String]
+  var url: js.Array[String] = js.native
   /**
     * index of current url from url[] array
     */
-  var urlId: Double
+  var urlId: Double = js.native
   /**
     * video codec
     */
-  var videoCodec: String
+  var videoCodec: String = js.native
   /**
     * video width
     */
-  var width: Double
+  var width: Double = js.native
 }
 
 object Level {
@@ -79,16 +80,63 @@ object Level {
     url: js.Array[String],
     urlId: Double,
     videoCodec: String,
-    width: Double,
-    details: LevelDetails = null,
-    fragmentError: js.UndefOr[Boolean] = js.undefined,
-    level: js.UndefOr[Double] = js.undefined
+    width: Double
   ): Level = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], audioCodec = audioCodec.asInstanceOf[js.Any], bitrate = bitrate.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], loadError = loadError.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], unkownCodecs = unkownCodecs.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlId = urlId.asInstanceOf[js.Any], videoCodec = videoCodec.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragmentError)) __obj.updateDynamic("fragmentError")(fragmentError.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Level]
   }
+  @scala.inline
+  implicit class LevelOps[Self <: Level] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttrsVarargs(value: LevelAttr*): Self = this.set("attrs", js.Array(value :_*))
+    @scala.inline
+    def setAttrs(value: js.Array[LevelAttr]): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAudioCodec(value: String): Self = this.set("audioCodec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBitrate(value: Double): Self = this.set("bitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoadError(value: Double): Self = this.set("loadError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUnkownCodecsVarargs(value: String*): Self = this.set("unkownCodecs", js.Array(value :_*))
+    @scala.inline
+    def setUnkownCodecs(value: js.Array[String]): Self = this.set("unkownCodecs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrlVarargs(value: String*): Self = this.set("url", js.Array(value :_*))
+    @scala.inline
+    def setUrl(value: js.Array[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrlId(value: Double): Self = this.set("urlId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVideoCodec(value: String): Self = this.set("videoCodec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetails(value: LevelDetails): Self = this.set("details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("details", js.undefined)
+    @scala.inline
+    def setFragmentError(value: Boolean): Self = this.set("fragmentError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFragmentError: Self = this.set("fragmentError", js.undefined)
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+  }
+  
 }
 

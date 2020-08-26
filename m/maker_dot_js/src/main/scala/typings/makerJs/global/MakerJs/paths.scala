@@ -52,31 +52,6 @@ object paths extends js.Object {
       * @param clockwise Boolean flag to indicate clockwise direction.
       */
     def this(pointA: IPoint, pointB: IPoint, radius: Double, largeArc: Boolean, clockwise: Boolean) = this()
-    /**
-      * The angle (in degrees) to end drawing the arc, in polar (counter-clockwise) direction. May be less than start angle if it past 360.
-      */
-    /* CompleteClass */
-    override var endAngle: Double = js.native
-    /**
-      * The main point of reference for this path.
-      */
-    /* CompleteClass */
-    override var origin: IPoint = js.native
-    /**
-      * The radius of the circle.
-      */
-    /* CompleteClass */
-    override var radius: Double = js.native
-    /**
-      * The angle (in degrees) to begin drawing the arc, in polar (counter-clockwise) direction.
-      */
-    /* CompleteClass */
-    override var startAngle: Double = js.native
-    /**
-      * The type of the path, e.g. "line", "circle", or "arc". These strings are enumerated in pathType.
-      */
-    /* CompleteClass */
-    override var `type`: String = js.native
   }
   
   /**
@@ -88,21 +63,6 @@ object paths extends js.Object {
   class Chord protected ()
     extends typings.makerJs.MakerJs.paths.Chord {
     def this(arc: IPathArc) = this()
-    /**
-      * The end point defining the line. The start point is the origin.
-      */
-    /* CompleteClass */
-    override var end: IPoint = js.native
-    /**
-      * The main point of reference for this path.
-      */
-    /* CompleteClass */
-    override var origin: IPoint = js.native
-    /**
-      * The type of the path, e.g. "line", "circle", or "arc". These strings are enumerated in pathType.
-      */
-    /* CompleteClass */
-    override var `type`: String = js.native
   }
   
   /**
@@ -159,21 +119,6 @@ object paths extends js.Object {
       * @param pointC Third point on the circle.
       */
     def this(pointA: IPoint, pointB: IPoint, pointC: IPoint) = this()
-    /**
-      * The main point of reference for this path.
-      */
-    /* CompleteClass */
-    override var origin: IPoint = js.native
-    /**
-      * The radius of the circle.
-      */
-    /* CompleteClass */
-    override var radius: Double = js.native
-    /**
-      * The type of the path, e.g. "line", "circle", or "arc". These strings are enumerated in pathType.
-      */
-    /* CompleteClass */
-    override var `type`: String = js.native
   }
   
   /**
@@ -195,21 +140,6 @@ object paths extends js.Object {
       * @param end The end point of the line.
       */
     def this(origin: IPoint, end: IPoint) = this()
-    /**
-      * The end point defining the line. The start point is the origin.
-      */
-    /* CompleteClass */
-    override var end: IPoint = js.native
-    /**
-      * The main point of reference for this path.
-      */
-    /* CompleteClass */
-    override var origin: IPoint = js.native
-    /**
-      * The type of the path, e.g. "line", "circle", or "arc". These strings are enumerated in pathType.
-      */
-    /* CompleteClass */
-    override var `type`: String = js.native
   }
   
   /**
@@ -223,21 +153,6 @@ object paths extends js.Object {
   class Parallel protected ()
     extends typings.makerJs.MakerJs.paths.Parallel {
     def this(toLine: IPathLine, distance: Double, nearPoint: IPoint) = this()
-    /**
-      * The end point defining the line. The start point is the origin.
-      */
-    /* CompleteClass */
-    override var end: IPoint = js.native
-    /**
-      * The main point of reference for this path.
-      */
-    /* CompleteClass */
-    override var origin: IPoint = js.native
-    /**
-      * The type of the path, e.g. "line", "circle", or "arc". These strings are enumerated in pathType.
-      */
-    /* CompleteClass */
-    override var `type`: String = js.native
   }
   
 }

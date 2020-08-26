@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 class ActiveSelection () extends Group {
   def this(objects: js.Array[Object]) = this()
+  def this(objects: js.UndefOr[scala.Nothing], options: IObjectOptions) = this()
   def this(objects: js.Array[Object], options: IObjectOptions) = this()
   /**
     * Constructor

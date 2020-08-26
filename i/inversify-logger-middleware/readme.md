@@ -11,8 +11,8 @@ A basic logger middleware for InversifyJS
 | Full name          | inversify-logger-middleware |
 | Keywords           | inversifyjs, logger, inversion, of, control, dependency, inversion |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 142588 |
+| # dependents       | 10 |
+| # downloads        | 153914 |
 | # stars            | 0 |
 
 ## Links

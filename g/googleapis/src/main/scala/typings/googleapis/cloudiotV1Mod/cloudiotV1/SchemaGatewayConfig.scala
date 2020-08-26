@@ -31,18 +31,38 @@ trait SchemaGatewayConfig extends js.Object {
 
 object SchemaGatewayConfig {
   @scala.inline
-  def apply(
-    gatewayAuthMethod: String = null,
-    gatewayType: String = null,
-    lastAccessedGatewayId: String = null,
-    lastAccessedGatewayTime: String = null
-  ): SchemaGatewayConfig = {
+  def apply(): SchemaGatewayConfig = {
     val __obj = js.Dynamic.literal()
-    if (gatewayAuthMethod != null) __obj.updateDynamic("gatewayAuthMethod")(gatewayAuthMethod.asInstanceOf[js.Any])
-    if (gatewayType != null) __obj.updateDynamic("gatewayType")(gatewayType.asInstanceOf[js.Any])
-    if (lastAccessedGatewayId != null) __obj.updateDynamic("lastAccessedGatewayId")(lastAccessedGatewayId.asInstanceOf[js.Any])
-    if (lastAccessedGatewayTime != null) __obj.updateDynamic("lastAccessedGatewayTime")(lastAccessedGatewayTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGatewayConfig]
   }
+  @scala.inline
+  implicit class SchemaGatewayConfigOps[Self <: SchemaGatewayConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayAuthMethod(value: String): Self = this.set("gatewayAuthMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayAuthMethod: Self = this.set("gatewayAuthMethod", js.undefined)
+    @scala.inline
+    def setGatewayType(value: String): Self = this.set("gatewayType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayType: Self = this.set("gatewayType", js.undefined)
+    @scala.inline
+    def setLastAccessedGatewayId(value: String): Self = this.set("lastAccessedGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccessedGatewayId: Self = this.set("lastAccessedGatewayId", js.undefined)
+    @scala.inline
+    def setLastAccessedGatewayTime(value: String): Self = this.set("lastAccessedGatewayTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccessedGatewayTime: Self = this.set("lastAccessedGatewayTime", js.undefined)
+  }
+  
 }
 

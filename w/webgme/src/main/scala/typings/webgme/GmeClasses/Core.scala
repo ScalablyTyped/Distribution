@@ -400,7 +400,6 @@ trait Core extends js.Object {
     * @return the root of the inheritance chain (usually the FCO). 
     */
   def getBaseRoot(node: Node): Node = js.native
-  def getBaseType(): Node | Null = js.native
   /** 
     * Get the most specific meta node;
     * the closest META node of the node in question. 
@@ -410,6 +409,7 @@ trait Core extends js.Object {
     * It returns null if it does not find such node 
     * (ideally the only node with this result is the ROOT).
     */
+  def getBaseType(): Node | Null = js.native
   def getBaseType(node: Node): Node | Null = js.native
   /** 
     * Get the most specific meta nodes;
@@ -508,11 +508,11 @@ trait Core extends js.Object {
     * by dot and followed by the name of the node.
     */
   def getFullyQualifiedName(node: Node): Name = js.native
-  def getGuid(): GUID = js.native
   /**
     * @param node the node in question.
     * @return the globally unique identifier for the node.
     */
+  def getGuid(): GUID = js.native
   def getGuid(node: Node): GUID = js.native
   /**
     * Returns the calculated database id of the data of the node.
@@ -1453,6 +1453,7 @@ trait Core extends js.Object {
     * @return 
     */
   def setChildMeta(node: Node, child: Node): js.UndefOr[Error] = js.native
+  def setChildMeta(node: Node, child: Node, min: js.UndefOr[scala.Nothing], max: Double): js.UndefOr[Error] = js.native
   def setChildMeta(node: Node, child: Node, min: Double): js.UndefOr[Error] = js.native
   def setChildMeta(node: Node, child: Node, min: Double, max: Double): js.UndefOr[Error] = js.native
   /**
@@ -1461,6 +1462,7 @@ trait Core extends js.Object {
     * @return 
     */
   def setChildrenMetaLimits(node: Node): js.UndefOr[Error] = js.native
+  def setChildrenMetaLimits(node: Node, min: js.UndefOr[scala.Nothing], max: Double): js.UndefOr[Error] = js.native
   def setChildrenMetaLimits(node: Node, min: Double): js.UndefOr[Error] = js.native
   def setChildrenMetaLimits(node: Node, min: Double, max: Double): js.UndefOr[Error] = js.native
   /**
@@ -1501,12 +1503,12 @@ trait Core extends js.Object {
     */
   def setMemberRegistry(node: Node, setName: String, memberPath: String, regName: String): js.UndefOr[Error] = js.native
   def setMemberRegistry(node: Node, setName: String, memberPath: String, regName: String, value: InAttr): js.UndefOr[Error] = js.native
-  def setPointer(node: Node, name: Name): js.UndefOr[Error] = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
+  def setPointer(node: Node, name: Name): js.UndefOr[Error] = js.native
   def setPointer(node: Node, name: Name, target: Node): js.UndefOr[Error] = js.native
   /**
     * TODO
@@ -1514,6 +1516,7 @@ trait Core extends js.Object {
     * @return 
     */
   def setPointerMetaLimits(node: Node, memberPath: String): js.UndefOr[Error] = js.native
+  def setPointerMetaLimits(node: Node, memberPath: String, min: js.UndefOr[scala.Nothing], max: Double): js.UndefOr[Error] = js.native
   def setPointerMetaLimits(node: Node, memberPath: String, min: Double): js.UndefOr[Error] = js.native
   def setPointerMetaLimits(node: Node, memberPath: String, min: Double, max: Double): js.UndefOr[Error] = js.native
   /**
@@ -1522,6 +1525,7 @@ trait Core extends js.Object {
     * @return 
     */
   def setPointerMetaTarget(node: Node, name: Name, target: Node): js.UndefOr[Error] = js.native
+  def setPointerMetaTarget(node: Node, name: Name, target: Node, min: js.UndefOr[scala.Nothing], max: Double): js.UndefOr[Error] = js.native
   def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Double): js.UndefOr[Error] = js.native
   def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Double, max: Double): js.UndefOr[Error] = js.native
   /** 

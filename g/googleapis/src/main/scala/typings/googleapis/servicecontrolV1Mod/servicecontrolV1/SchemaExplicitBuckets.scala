@@ -27,10 +27,28 @@ trait SchemaExplicitBuckets extends js.Object {
 
 object SchemaExplicitBuckets {
   @scala.inline
-  def apply(bounds: js.Array[Double] = null): SchemaExplicitBuckets = {
+  def apply(): SchemaExplicitBuckets = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExplicitBuckets]
   }
+  @scala.inline
+  implicit class SchemaExplicitBucketsOps[Self <: SchemaExplicitBuckets] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundsVarargs(value: Double*): Self = this.set("bounds", js.Array(value :_*))
+    @scala.inline
+    def setBounds(value: js.Array[Double]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounds: Self = this.set("bounds", js.undefined)
+  }
+  
 }
 

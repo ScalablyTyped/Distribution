@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 class Description () extends DescriptionDefinition {
   def this(definition: String) = this()
   def this(definition: DescriptionDefinition) = this()
-  /* CompleteClass */
-  override var content: String = js.native
   @JSName("type")
   var type_Description: String = js.native
   def toJSON(): DescriptionDefinition = js.native

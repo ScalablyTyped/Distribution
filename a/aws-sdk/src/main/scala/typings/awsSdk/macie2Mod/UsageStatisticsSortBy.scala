@@ -18,11 +18,30 @@ trait UsageStatisticsSortBy extends js.Object {
 
 object UsageStatisticsSortBy {
   @scala.inline
-  def apply(key: UsageStatisticsSortKey = null, orderBy: OrderBy = null): UsageStatisticsSortBy = {
+  def apply(): UsageStatisticsSortBy = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageStatisticsSortBy]
   }
+  @scala.inline
+  implicit class UsageStatisticsSortByOps[Self <: UsageStatisticsSortBy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: UsageStatisticsSortKey): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setOrderBy(value: OrderBy): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+  }
+  
 }
 

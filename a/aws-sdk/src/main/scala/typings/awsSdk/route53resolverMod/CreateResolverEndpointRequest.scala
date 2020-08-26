@@ -38,14 +38,45 @@ object CreateResolverEndpointRequest {
     CreatorRequestId: CreatorRequestId,
     Direction: ResolverEndpointDirection,
     IpAddresses: IpAddressesRequest,
-    SecurityGroupIds: SecurityGroupIds,
-    Name: Name = null,
-    Tags: TagList = null
+    SecurityGroupIds: SecurityGroupIds
   ): CreateResolverEndpointRequest = {
     val __obj = js.Dynamic.literal(CreatorRequestId = CreatorRequestId.asInstanceOf[js.Any], Direction = Direction.asInstanceOf[js.Any], IpAddresses = IpAddresses.asInstanceOf[js.Any], SecurityGroupIds = SecurityGroupIds.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResolverEndpointRequest]
   }
+  @scala.inline
+  implicit class CreateResolverEndpointRequestOps[Self <: CreateResolverEndpointRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatorRequestId(value: CreatorRequestId): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirection(value: ResolverEndpointDirection): Self = this.set("Direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIpAddressesVarargs(value: IpAddressRequest*): Self = this.set("IpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setIpAddresses(value: IpAddressesRequest): Self = this.set("IpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: ResourceId*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: SecurityGroupIds): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

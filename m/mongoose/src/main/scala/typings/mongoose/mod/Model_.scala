@@ -18,12 +18,12 @@ import typings.mongoose.anon.Typeofmongoose
 import typings.mongoose.anon.leantrueOmitQueryFindBase
 import typings.mongoose.anon.leantrueOmitQueryFindOneA
 import typings.mongoose.anon.leantrueOmitQueryFindOpti
-import typings.mongoose.anon.orderedbooleanrawResultbo
+import typings.mongoose.anon.orderedbooleanundefinedra
 import typings.mongoose.anon.rawResulttrueQueryFindOne
 import typings.mongoose.anon.rawResulttrueQueryFindOneArrayFilters
 import typings.mongoose.anon.rawResulttrueupserttruene
 import typings.mongoose.anon.upserttruenewtrueQueryFin
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -120,6 +120,11 @@ Instantiable0[T]
     docs: js.Array[CreateQuery[TCreate]],
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
   ): js.Promise[js.Array[T]] = js.native
+  def create[TCreate](
+    docs: js.Array[CreateQuery[TCreate]],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
+  ): js.Promise[js.Array[T]] = js.native
   def create[TCreate](docs: js.Array[CreateQuery[TCreate]], options: SaveOptions): js.Promise[js.Array[T]] = js.native
   def create[TCreate](
     docs: js.Array[CreateQuery[TCreate]],
@@ -139,6 +144,7 @@ Instantiable0[T]
     * collection for the model until any documents are created. Use this method to create the collection explicitly.
     */
   def createCollection(): js.Promise[Unit] = js.native
+  def createCollection(options: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def createCollection(options: CollectionCreateOptions): js.Promise[Unit] = js.native
   def createCollection(options: CollectionCreateOptions, cb: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   /**
@@ -219,12 +225,47 @@ Instantiable0[T]
   def find(callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(conditions: FilterQuery[T]): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(conditions: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(
+    conditions: FilterQuery[T],
+    projection: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
+  ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(
+    conditions: FilterQuery[T],
+    projection: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
+  ): Query[js.Array[DocumentDefinition[T]]] with QueryHelpers = js.native
+  def find(
+    conditions: FilterQuery[T],
+    projection: js.UndefOr[scala.Nothing],
+    options: leantrueOmitQueryFindOpti
+  ): Query[js.Array[DocumentDefinition[T]]] with QueryHelpers = js.native
+  def find(
+    conditions: FilterQuery[T],
+    projection: js.UndefOr[scala.Nothing],
+    options: leantrueOmitQueryFindOpti,
+    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
+  ): Query[js.Array[DocumentDefinition[T]]] with QueryHelpers = js.native
+  def find(conditions: FilterQuery[T], projection: js.UndefOr[scala.Nothing], options: QueryFindOptions): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(
+    conditions: FilterQuery[T],
+    projection: js.UndefOr[scala.Nothing],
+    options: QueryFindOptions,
+    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
+  ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(conditions: FilterQuery[T], projection: js.Any): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(
     conditions: FilterQuery[T],
     projection: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
   ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(
+    conditions: FilterQuery[T],
+    projection: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
+  ): Query[js.Array[DocumentDefinition[T]]] with QueryHelpers = js.native
   def find(conditions: FilterQuery[T], projection: js.Any, options: leantrueOmitQueryFindOpti): Query[js.Array[DocumentDefinition[T]]] with QueryHelpers = js.native
   def find(
     conditions: FilterQuery[T],
@@ -244,6 +285,12 @@ Instantiable0[T]
     projection: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
   ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(
+    conditions: FilterQuery[T],
+    projection: Null,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
+  ): Query[js.Array[DocumentDefinition[T]]] with QueryHelpers = js.native
   def find(conditions: FilterQuery[T], projection: Null, options: leantrueOmitQueryFindOpti): Query[js.Array[DocumentDefinition[T]]] with QueryHelpers = js.native
   def find(
     conditions: FilterQuery[T],
@@ -554,6 +601,10 @@ Instantiable0[T]
     * @param projection optional fields to return
     */
   def findOne(): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOne(
+    conditions: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findOne(conditions: FilterQuery[T]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findOne(conditions: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findOne(conditions: FilterQuery[T], projection: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
@@ -726,10 +777,15 @@ Instantiable0[T]
   def init(callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[T] = js.native
   def insertMany(doc: js.Any): js.Promise[T] = js.native
   def insertMany(doc: js.Any, callback: js.Function2[/* error */ js.Any, /* doc */ T, Unit]): js.Promise[T] = js.native
-  def insertMany(doc: js.Any, options: orderedbooleanrawResultbo): js.Promise[T] = js.native
   def insertMany(
     doc: js.Any,
-    options: orderedbooleanrawResultbo,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ js.Any, /* doc */ T, Unit]
+  ): js.Promise[T] = js.native
+  def insertMany(doc: js.Any, options: orderedbooleanundefinedra): js.Promise[T] = js.native
+  def insertMany(
+    doc: js.Any,
+    options: orderedbooleanundefinedra,
     callback: js.Function2[/* error */ js.Any, /* doc */ T, Unit]
   ): js.Promise[T] = js.native
   /**
@@ -748,10 +804,15 @@ Instantiable0[T]
     */
   def insertMany(docs: js.Array[_]): js.Promise[js.Array[T]] = js.native
   def insertMany(docs: js.Array[_], callback: js.Function2[/* error */ js.Any, /* docs */ js.Array[T], Unit]): js.Promise[js.Array[T]] = js.native
-  def insertMany(docs: js.Array[_], options: orderedbooleanrawResultbo): js.Promise[js.Array[T]] = js.native
   def insertMany(
     docs: js.Array[_],
-    options: orderedbooleanrawResultbo,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ js.Any, /* docs */ js.Array[T], Unit]
+  ): js.Promise[js.Array[T]] = js.native
+  def insertMany(docs: js.Array[_], options: orderedbooleanundefinedra): js.Promise[js.Array[T]] = js.native
+  def insertMany(
+    docs: js.Array[_],
+    options: orderedbooleanundefinedra,
     callback: js.Function2[/* error */ js.Any, /* docs */ js.Array[T], Unit]
   ): js.Promise[js.Array[T]] = js.native
   def listIndexes(): js.Promise[Unit] = js.native
@@ -819,6 +880,8 @@ Instantiable0[T]
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Query[_] with QueryHelpers = js.native
   def syncIndexes(): js.Promise[Unit] = js.native
+  def syncIndexes(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def syncIndexes(options: js.Object): js.Promise[Unit] = js.native
   /**
     * Makes the indexes in MongoDB match the indexes defined in this model's
     * schema. This function will drop any indexes that are not defined in
@@ -828,8 +891,8 @@ Instantiable0[T]
     * @param callback optional callback
     * @return Returns `undefined` if callback is specified, returns a promise if no callback.
     */
-  def syncIndexes(options: js.UndefOr[Null | js.Object], callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-  def syncIndexes(options: js.Object): js.Promise[Unit] = js.native
+  def syncIndexes(options: js.Object, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def syncIndexes(options: Null, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   /**
     * Translate any aliases fields/conditions so the final query or document object is pure
     * @param raw fields/conditions that may contain aliased keys
@@ -886,6 +949,7 @@ Instantiable0[T]
     * @param options See https://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#watch
     */
   def watch(): ChangeStream[DefaultSchema] = js.native
+  def watch(pipeline: js.UndefOr[scala.Nothing], options: ChangeStreamOptionssessio): ChangeStream[DefaultSchema] = js.native
   def watch(pipeline: js.Array[js.Object]): ChangeStream[DefaultSchema] = js.native
   def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream[DefaultSchema] = js.native
   /** Creates a Query, applies the passed conditions, and returns the Query. */

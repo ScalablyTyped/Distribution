@@ -3,6 +3,8 @@ package typings.apolloEngineReporting.agentMod
 import typings.apolloEngineReporting.apolloEngineReportingBooleans.`false`
 import typings.apolloServerEnv.fetchMod.RequestAgent
 import typings.apolloServerTypes.mod.GraphQLRequestContext
+import typings.apolloServerTypes.mod.GraphQLRequestContextDidEncounterErrors
+import typings.apolloServerTypes.mod.GraphQLRequestContextDidResolveOperation
 import typings.apolloServerTypes.mod.Logger
 import typings.graphql.astMod.DocumentNode
 import typings.graphql.mod.GraphQLError
@@ -11,108 +13,191 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EngineReportingOptions[TContext] extends js.Object {
-  var apiKey: js.UndefOr[String] = js.undefined
-  var calculateSignature: js.UndefOr[js.Function2[/* ast */ DocumentNode, /* operationName */ String, String]] = js.undefined
-  var debugPrintReports: js.UndefOr[Boolean] = js.undefined
-  var endpointUrl: js.UndefOr[String] = js.undefined
-  var experimental_overrideReportedSchema: js.UndefOr[String] = js.undefined
-  var experimental_schemaReporting: js.UndefOr[Boolean] = js.undefined
-  var experimental_schemaReportingInitialDelayMaxMs: js.UndefOr[Double] = js.undefined
-  var generateClientInfo: js.UndefOr[GenerateClientInfo[TContext]] = js.undefined
-  var graphVariant: js.UndefOr[String] = js.undefined
-  var handleSignals: js.UndefOr[Boolean] = js.undefined
-  var logger: js.UndefOr[Logger] = js.undefined
-  var maskErrorDetails: js.UndefOr[Boolean] = js.undefined
-  var maxAttempts: js.UndefOr[Double] = js.undefined
-  var maxUncompressedReportSize: js.UndefOr[Double] = js.undefined
-  var minimumRetryDelayMs: js.UndefOr[Double] = js.undefined
-  var overrideReportedSchema: js.UndefOr[String] = js.undefined
-  var privateHeaders: js.UndefOr[js.Array[String] | Boolean] = js.undefined
-  var privateVariables: js.UndefOr[js.Array[String] | Boolean] = js.undefined
-  var reportErrorFunction: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
-  var reportIntervalMs: js.UndefOr[Double] = js.undefined
-  var reportSchema: js.UndefOr[Boolean] = js.undefined
-  var reportTiming: js.UndefOr[ReportTimingOptions[TContext]] = js.undefined
-  var requestAgent: js.UndefOr[RequestAgent | `false`] = js.undefined
-  var rewriteError: js.UndefOr[js.Function1[/* err */ GraphQLError, GraphQLError | Null]] = js.undefined
-  var schemaReportingInitialDelayMaxMs: js.UndefOr[Double] = js.undefined
-  var schemaReportingUrl: js.UndefOr[String] = js.undefined
-  var schemaTag: js.UndefOr[String] = js.undefined
-  var sendHeaders: js.UndefOr[SendValuesBaseOptions] = js.undefined
-  var sendReportsImmediately: js.UndefOr[Boolean] = js.undefined
-  var sendVariableValues: js.UndefOr[VariableValueOptions] = js.undefined
-  var tracesEndpointUrl: js.UndefOr[String] = js.undefined
+  var apiKey: js.UndefOr[String] = js.native
+  var calculateSignature: js.UndefOr[js.Function2[/* ast */ DocumentNode, /* operationName */ String, String]] = js.native
+  var debugPrintReports: js.UndefOr[Boolean] = js.native
+  var endpointUrl: js.UndefOr[String] = js.native
+  var experimental_overrideReportedSchema: js.UndefOr[String] = js.native
+  var experimental_schemaReporting: js.UndefOr[Boolean] = js.native
+  var experimental_schemaReportingInitialDelayMaxMs: js.UndefOr[Double] = js.native
+  var generateClientInfo: js.UndefOr[GenerateClientInfo[TContext]] = js.native
+  var graphVariant: js.UndefOr[String] = js.native
+  var handleSignals: js.UndefOr[Boolean] = js.native
+  var logger: js.UndefOr[Logger] = js.native
+  var maskErrorDetails: js.UndefOr[Boolean] = js.native
+  var maxAttempts: js.UndefOr[Double] = js.native
+  var maxUncompressedReportSize: js.UndefOr[Double] = js.native
+  var minimumRetryDelayMs: js.UndefOr[Double] = js.native
+  var overrideReportedSchema: js.UndefOr[String] = js.native
+  var privateHeaders: js.UndefOr[js.Array[String] | Boolean] = js.native
+  var privateVariables: js.UndefOr[js.Array[String] | Boolean] = js.native
+  var reportErrorFunction: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+  var reportIntervalMs: js.UndefOr[Double] = js.native
+  var reportSchema: js.UndefOr[Boolean] = js.native
+  var reportTiming: js.UndefOr[ReportTimingOptions[TContext]] = js.native
+  var requestAgent: js.UndefOr[RequestAgent | `false`] = js.native
+  var rewriteError: js.UndefOr[js.Function1[/* err */ GraphQLError, GraphQLError | Null]] = js.native
+  var schemaReportingInitialDelayMaxMs: js.UndefOr[Double] = js.native
+  var schemaReportingUrl: js.UndefOr[String] = js.native
+  var schemaTag: js.UndefOr[String] = js.native
+  var sendHeaders: js.UndefOr[SendValuesBaseOptions] = js.native
+  var sendReportsImmediately: js.UndefOr[Boolean] = js.native
+  var sendVariableValues: js.UndefOr[VariableValueOptions] = js.native
+  var tracesEndpointUrl: js.UndefOr[String] = js.native
 }
 
 object EngineReportingOptions {
   @scala.inline
-  def apply[TContext](
-    apiKey: String = null,
-    calculateSignature: (/* ast */ DocumentNode, /* operationName */ String) => String = null,
-    debugPrintReports: js.UndefOr[Boolean] = js.undefined,
-    endpointUrl: String = null,
-    experimental_overrideReportedSchema: String = null,
-    experimental_schemaReporting: js.UndefOr[Boolean] = js.undefined,
-    experimental_schemaReportingInitialDelayMaxMs: js.UndefOr[Double] = js.undefined,
-    generateClientInfo: /* requestContext */ GraphQLRequestContext[TContext] => ClientInfo = null,
-    graphVariant: String = null,
-    handleSignals: js.UndefOr[Boolean] = js.undefined,
-    logger: Logger = null,
-    maskErrorDetails: js.UndefOr[Boolean] = js.undefined,
-    maxAttempts: js.UndefOr[Double] = js.undefined,
-    maxUncompressedReportSize: js.UndefOr[Double] = js.undefined,
-    minimumRetryDelayMs: js.UndefOr[Double] = js.undefined,
-    overrideReportedSchema: String = null,
-    privateHeaders: js.Array[String] | Boolean = null,
-    privateVariables: js.Array[String] | Boolean = null,
-    reportErrorFunction: /* err */ Error => Unit = null,
-    reportIntervalMs: js.UndefOr[Double] = js.undefined,
-    reportSchema: js.UndefOr[Boolean] = js.undefined,
-    reportTiming: ReportTimingOptions[TContext] = null,
-    requestAgent: RequestAgent | `false` = null,
-    rewriteError: /* err */ GraphQLError => GraphQLError | Null = null,
-    schemaReportingInitialDelayMaxMs: js.UndefOr[Double] = js.undefined,
-    schemaReportingUrl: String = null,
-    schemaTag: String = null,
-    sendHeaders: SendValuesBaseOptions = null,
-    sendReportsImmediately: js.UndefOr[Boolean] = js.undefined,
-    sendVariableValues: VariableValueOptions = null,
-    tracesEndpointUrl: String = null
-  ): EngineReportingOptions[TContext] = {
+  def apply[TContext](): EngineReportingOptions[TContext] = {
     val __obj = js.Dynamic.literal()
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
-    if (calculateSignature != null) __obj.updateDynamic("calculateSignature")(js.Any.fromFunction2(calculateSignature))
-    if (!js.isUndefined(debugPrintReports)) __obj.updateDynamic("debugPrintReports")(debugPrintReports.get.asInstanceOf[js.Any])
-    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
-    if (experimental_overrideReportedSchema != null) __obj.updateDynamic("experimental_overrideReportedSchema")(experimental_overrideReportedSchema.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental_schemaReporting)) __obj.updateDynamic("experimental_schemaReporting")(experimental_schemaReporting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental_schemaReportingInitialDelayMaxMs)) __obj.updateDynamic("experimental_schemaReportingInitialDelayMaxMs")(experimental_schemaReportingInitialDelayMaxMs.get.asInstanceOf[js.Any])
-    if (generateClientInfo != null) __obj.updateDynamic("generateClientInfo")(js.Any.fromFunction1(generateClientInfo))
-    if (graphVariant != null) __obj.updateDynamic("graphVariant")(graphVariant.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleSignals)) __obj.updateDynamic("handleSignals")(handleSignals.get.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskErrorDetails)) __obj.updateDynamic("maskErrorDetails")(maskErrorDetails.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAttempts)) __obj.updateDynamic("maxAttempts")(maxAttempts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxUncompressedReportSize)) __obj.updateDynamic("maxUncompressedReportSize")(maxUncompressedReportSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumRetryDelayMs)) __obj.updateDynamic("minimumRetryDelayMs")(minimumRetryDelayMs.get.asInstanceOf[js.Any])
-    if (overrideReportedSchema != null) __obj.updateDynamic("overrideReportedSchema")(overrideReportedSchema.asInstanceOf[js.Any])
-    if (privateHeaders != null) __obj.updateDynamic("privateHeaders")(privateHeaders.asInstanceOf[js.Any])
-    if (privateVariables != null) __obj.updateDynamic("privateVariables")(privateVariables.asInstanceOf[js.Any])
-    if (reportErrorFunction != null) __obj.updateDynamic("reportErrorFunction")(js.Any.fromFunction1(reportErrorFunction))
-    if (!js.isUndefined(reportIntervalMs)) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportSchema)) __obj.updateDynamic("reportSchema")(reportSchema.get.asInstanceOf[js.Any])
-    if (reportTiming != null) __obj.updateDynamic("reportTiming")(reportTiming.asInstanceOf[js.Any])
-    if (requestAgent != null) __obj.updateDynamic("requestAgent")(requestAgent.asInstanceOf[js.Any])
-    if (rewriteError != null) __obj.updateDynamic("rewriteError")(js.Any.fromFunction1(rewriteError))
-    if (!js.isUndefined(schemaReportingInitialDelayMaxMs)) __obj.updateDynamic("schemaReportingInitialDelayMaxMs")(schemaReportingInitialDelayMaxMs.get.asInstanceOf[js.Any])
-    if (schemaReportingUrl != null) __obj.updateDynamic("schemaReportingUrl")(schemaReportingUrl.asInstanceOf[js.Any])
-    if (schemaTag != null) __obj.updateDynamic("schemaTag")(schemaTag.asInstanceOf[js.Any])
-    if (sendHeaders != null) __obj.updateDynamic("sendHeaders")(sendHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendReportsImmediately)) __obj.updateDynamic("sendReportsImmediately")(sendReportsImmediately.get.asInstanceOf[js.Any])
-    if (sendVariableValues != null) __obj.updateDynamic("sendVariableValues")(sendVariableValues.asInstanceOf[js.Any])
-    if (tracesEndpointUrl != null) __obj.updateDynamic("tracesEndpointUrl")(tracesEndpointUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[EngineReportingOptions[TContext]]
   }
+  @scala.inline
+  implicit class EngineReportingOptionsOps[Self <: EngineReportingOptions[_], TContext] (val x: Self with EngineReportingOptions[TContext]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiKey: Self = this.set("apiKey", js.undefined)
+    @scala.inline
+    def setCalculateSignature(value: (/* ast */ DocumentNode, /* operationName */ String) => String): Self = this.set("calculateSignature", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCalculateSignature: Self = this.set("calculateSignature", js.undefined)
+    @scala.inline
+    def setDebugPrintReports(value: Boolean): Self = this.set("debugPrintReports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugPrintReports: Self = this.set("debugPrintReports", js.undefined)
+    @scala.inline
+    def setEndpointUrl(value: String): Self = this.set("endpointUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointUrl: Self = this.set("endpointUrl", js.undefined)
+    @scala.inline
+    def setExperimental_overrideReportedSchema(value: String): Self = this.set("experimental_overrideReportedSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimental_overrideReportedSchema: Self = this.set("experimental_overrideReportedSchema", js.undefined)
+    @scala.inline
+    def setExperimental_schemaReporting(value: Boolean): Self = this.set("experimental_schemaReporting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimental_schemaReporting: Self = this.set("experimental_schemaReporting", js.undefined)
+    @scala.inline
+    def setExperimental_schemaReportingInitialDelayMaxMs(value: Double): Self = this.set("experimental_schemaReportingInitialDelayMaxMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimental_schemaReportingInitialDelayMaxMs: Self = this.set("experimental_schemaReportingInitialDelayMaxMs", js.undefined)
+    @scala.inline
+    def setGenerateClientInfo(value: /* requestContext */ GraphQLRequestContext[TContext] => ClientInfo): Self = this.set("generateClientInfo", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGenerateClientInfo: Self = this.set("generateClientInfo", js.undefined)
+    @scala.inline
+    def setGraphVariant(value: String): Self = this.set("graphVariant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGraphVariant: Self = this.set("graphVariant", js.undefined)
+    @scala.inline
+    def setHandleSignals(value: Boolean): Self = this.set("handleSignals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleSignals: Self = this.set("handleSignals", js.undefined)
+    @scala.inline
+    def setLogger(value: Logger): Self = this.set("logger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogger: Self = this.set("logger", js.undefined)
+    @scala.inline
+    def setMaskErrorDetails(value: Boolean): Self = this.set("maskErrorDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskErrorDetails: Self = this.set("maskErrorDetails", js.undefined)
+    @scala.inline
+    def setMaxAttempts(value: Double): Self = this.set("maxAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAttempts: Self = this.set("maxAttempts", js.undefined)
+    @scala.inline
+    def setMaxUncompressedReportSize(value: Double): Self = this.set("maxUncompressedReportSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxUncompressedReportSize: Self = this.set("maxUncompressedReportSize", js.undefined)
+    @scala.inline
+    def setMinimumRetryDelayMs(value: Double): Self = this.set("minimumRetryDelayMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumRetryDelayMs: Self = this.set("minimumRetryDelayMs", js.undefined)
+    @scala.inline
+    def setOverrideReportedSchema(value: String): Self = this.set("overrideReportedSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideReportedSchema: Self = this.set("overrideReportedSchema", js.undefined)
+    @scala.inline
+    def setPrivateHeadersVarargs(value: String*): Self = this.set("privateHeaders", js.Array(value :_*))
+    @scala.inline
+    def setPrivateHeaders(value: js.Array[String] | Boolean): Self = this.set("privateHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateHeaders: Self = this.set("privateHeaders", js.undefined)
+    @scala.inline
+    def setPrivateVariablesVarargs(value: String*): Self = this.set("privateVariables", js.Array(value :_*))
+    @scala.inline
+    def setPrivateVariables(value: js.Array[String] | Boolean): Self = this.set("privateVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateVariables: Self = this.set("privateVariables", js.undefined)
+    @scala.inline
+    def setReportErrorFunction(value: /* err */ Error => Unit): Self = this.set("reportErrorFunction", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReportErrorFunction: Self = this.set("reportErrorFunction", js.undefined)
+    @scala.inline
+    def setReportIntervalMs(value: Double): Self = this.set("reportIntervalMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportIntervalMs: Self = this.set("reportIntervalMs", js.undefined)
+    @scala.inline
+    def setReportSchema(value: Boolean): Self = this.set("reportSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportSchema: Self = this.set("reportSchema", js.undefined)
+    @scala.inline
+    def setReportTimingFunction1(
+      value: /* request */ GraphQLRequestContextDidResolveOperation[TContext] | GraphQLRequestContextDidEncounterErrors[TContext] => js.Promise[Boolean]
+    ): Self = this.set("reportTiming", js.Any.fromFunction1(value))
+    @scala.inline
+    def setReportTiming(value: ReportTimingOptions[TContext]): Self = this.set("reportTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportTiming: Self = this.set("reportTiming", js.undefined)
+    @scala.inline
+    def setRequestAgent(value: RequestAgent | `false`): Self = this.set("requestAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestAgent: Self = this.set("requestAgent", js.undefined)
+    @scala.inline
+    def setRewriteError(value: /* err */ GraphQLError => GraphQLError | Null): Self = this.set("rewriteError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRewriteError: Self = this.set("rewriteError", js.undefined)
+    @scala.inline
+    def setSchemaReportingInitialDelayMaxMs(value: Double): Self = this.set("schemaReportingInitialDelayMaxMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaReportingInitialDelayMaxMs: Self = this.set("schemaReportingInitialDelayMaxMs", js.undefined)
+    @scala.inline
+    def setSchemaReportingUrl(value: String): Self = this.set("schemaReportingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaReportingUrl: Self = this.set("schemaReportingUrl", js.undefined)
+    @scala.inline
+    def setSchemaTag(value: String): Self = this.set("schemaTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaTag: Self = this.set("schemaTag", js.undefined)
+    @scala.inline
+    def setSendHeaders(value: SendValuesBaseOptions): Self = this.set("sendHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendHeaders: Self = this.set("sendHeaders", js.undefined)
+    @scala.inline
+    def setSendReportsImmediately(value: Boolean): Self = this.set("sendReportsImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendReportsImmediately: Self = this.set("sendReportsImmediately", js.undefined)
+    @scala.inline
+    def setSendVariableValues(value: VariableValueOptions): Self = this.set("sendVariableValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendVariableValues: Self = this.set("sendVariableValues", js.undefined)
+    @scala.inline
+    def setTracesEndpointUrl(value: String): Self = this.set("tracesEndpointUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracesEndpointUrl: Self = this.set("tracesEndpointUrl", js.undefined)
+  }
+  
 }
 

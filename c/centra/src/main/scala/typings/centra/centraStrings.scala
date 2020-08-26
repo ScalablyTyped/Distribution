@@ -18,6 +18,9 @@ object centraStrings {
   sealed trait buffer extends js.Object
   
   @js.native
+  sealed trait createConnection extends js.Object
+  
+  @js.native
   sealed trait defaultPort extends js.Object
   
   @js.native
@@ -73,6 +76,8 @@ object centraStrings {
   def auth: auth = "auth".asInstanceOf[auth]
   @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
+  @scala.inline
+  def createConnection: createConnection = "createConnection".asInstanceOf[createConnection]
   @scala.inline
   def defaultPort: defaultPort = "defaultPort".asInstanceOf[defaultPort]
   @scala.inline

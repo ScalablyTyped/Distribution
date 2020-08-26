@@ -1,7 +1,7 @@
 
 # Scala.js typings for menubar
 
-Typings are for version 8.0.2
+Typings are for version 9.0.1
 
 ## Library description:
 high level way to create menubar desktop applications with electron
@@ -10,9 +10,9 @@ high level way to create menubar desktop applications with electron
 | ------------------ | :-------------: |
 | Full name          | menubar |
 | Keywords           | electron, shell, menubar, menu, taskbar, tray, traybar, mac, linux, windows, app |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 28 |
-| # downloads        | 58018 |
+| # downloads        | 57926 |
 | # stars            | 10 |
 
 ## Links

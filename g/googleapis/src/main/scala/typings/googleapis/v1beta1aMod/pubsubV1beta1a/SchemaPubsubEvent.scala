@@ -31,18 +31,38 @@ trait SchemaPubsubEvent extends js.Object {
 
 object SchemaPubsubEvent {
   @scala.inline
-  def apply(
-    deleted: js.UndefOr[Boolean] = js.undefined,
-    message: SchemaPubsubMessage = null,
-    subscription: String = null,
-    truncated: js.UndefOr[Boolean] = js.undefined
-  ): SchemaPubsubEvent = {
+  def apply(): SchemaPubsubEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPubsubEvent]
   }
+  @scala.inline
+  implicit class SchemaPubsubEventOps[Self <: SchemaPubsubEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setMessage(value: SchemaPubsubMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscription: Self = this.set("subscription", js.undefined)
+    @scala.inline
+    def setTruncated(value: Boolean): Self = this.set("truncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruncated: Self = this.set("truncated", js.undefined)
+  }
+  
 }
 

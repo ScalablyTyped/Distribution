@@ -34,19 +34,40 @@ trait CustomOriginConfig extends js.Object {
 
 object CustomOriginConfig {
   @scala.inline
-  def apply(
-    HTTPPort: integer,
-    HTTPSPort: integer,
-    OriginProtocolPolicy: OriginProtocolPolicy,
-    OriginKeepaliveTimeout: js.UndefOr[integer] = js.undefined,
-    OriginReadTimeout: js.UndefOr[integer] = js.undefined,
-    OriginSslProtocols: OriginSslProtocols = null
-  ): CustomOriginConfig = {
+  def apply(HTTPPort: integer, HTTPSPort: integer, OriginProtocolPolicy: OriginProtocolPolicy): CustomOriginConfig = {
     val __obj = js.Dynamic.literal(HTTPPort = HTTPPort.asInstanceOf[js.Any], HTTPSPort = HTTPSPort.asInstanceOf[js.Any], OriginProtocolPolicy = OriginProtocolPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(OriginKeepaliveTimeout)) __obj.updateDynamic("OriginKeepaliveTimeout")(OriginKeepaliveTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(OriginReadTimeout)) __obj.updateDynamic("OriginReadTimeout")(OriginReadTimeout.get.asInstanceOf[js.Any])
-    if (OriginSslProtocols != null) __obj.updateDynamic("OriginSslProtocols")(OriginSslProtocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomOriginConfig]
   }
+  @scala.inline
+  implicit class CustomOriginConfigOps[Self <: CustomOriginConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHTTPPort(value: integer): Self = this.set("HTTPPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHTTPSPort(value: integer): Self = this.set("HTTPSPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOriginProtocolPolicy(value: OriginProtocolPolicy): Self = this.set("OriginProtocolPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOriginKeepaliveTimeout(value: integer): Self = this.set("OriginKeepaliveTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginKeepaliveTimeout: Self = this.set("OriginKeepaliveTimeout", js.undefined)
+    @scala.inline
+    def setOriginReadTimeout(value: integer): Self = this.set("OriginReadTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginReadTimeout: Self = this.set("OriginReadTimeout", js.undefined)
+    @scala.inline
+    def setOriginSslProtocols(value: OriginSslProtocols): Self = this.set("OriginSslProtocols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginSslProtocols: Self = this.set("OriginSslProtocols", js.undefined)
+  }
+  
 }
 

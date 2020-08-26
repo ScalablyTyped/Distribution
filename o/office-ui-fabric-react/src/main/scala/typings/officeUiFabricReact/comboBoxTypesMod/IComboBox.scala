@@ -21,6 +21,7 @@ trait IComboBox extends js.Object {
     * @returns True if focus could be set, false if no operation was taken.
     */
   def focus(): Boolean = js.native
+  def focus(shouldOpenOnFocus: js.UndefOr[scala.Nothing], useFocusAsync: Boolean): Boolean = js.native
   def focus(shouldOpenOnFocus: Boolean): Boolean = js.native
   def focus(shouldOpenOnFocus: Boolean, useFocusAsync: Boolean): Boolean = js.native
 }

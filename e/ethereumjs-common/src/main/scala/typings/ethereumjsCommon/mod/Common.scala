@@ -15,6 +15,7 @@ trait Common extends js.Object {
     * @returns Hardfork chosen to be used
     */
   def _chooseHardfork(): String = js.native
+  def _chooseHardfork(hardfork: js.UndefOr[scala.Nothing], onlySupported: Boolean): String = js.native
   def _chooseHardfork(hardfork: String): String = js.native
   def _chooseHardfork(hardfork: String, onlySupported: Boolean): String = js.native
   def _chooseHardfork(hardfork: Null, onlySupported: Boolean): String = js.native
@@ -24,12 +25,12 @@ trait Common extends js.Object {
     * @returns Dictionary with hardfork params
     */
   def _getHardfork(hardfork: String): js.Any = js.native
-  def _isSupportedHardfork(): Boolean = js.native
   /**
     * Internal helper function to check if a hardfork is set to be supported by the library
     * @param hardfork Hardfork name
     * @returns True if hardfork is supported
     */
+  def _isSupportedHardfork(): Boolean = js.native
   def _isSupportedHardfork(hardfork: String): Boolean = js.native
   /**
     * Returns the latest active hardfork name for chain or block or throws if unavailable
@@ -38,6 +39,7 @@ trait Common extends js.Object {
     * @return Hardfork name
     */
   def activeHardfork(): String = js.native
+  def activeHardfork(blockNumber: js.UndefOr[scala.Nothing], opts: hardforkOptions): String = js.native
   def activeHardfork(blockNumber: Double): String = js.native
   def activeHardfork(blockNumber: Double, opts: hardforkOptions): String = js.native
   def activeHardfork(blockNumber: Null, opts: hardforkOptions): String = js.native
@@ -48,6 +50,7 @@ trait Common extends js.Object {
     * @return Array with hardfork arrays
     */
   def activeHardforks(): js.Array[_] = js.native
+  def activeHardforks(blockNumber: js.UndefOr[scala.Nothing], opts: hardforkOptions): js.Array[_] = js.native
   def activeHardforks(blockNumber: Double): js.Array[_] = js.native
   def activeHardforks(blockNumber: Double, opts: hardforkOptions): js.Array[_] = js.native
   def activeHardforks(blockNumber: Null, opts: hardforkOptions): js.Array[_] = js.native
@@ -142,6 +145,7 @@ trait Common extends js.Object {
     * @returns True if hardfork is active on the chain
     */
   def hardforkIsActiveOnChain(): Boolean = js.native
+  def hardforkIsActiveOnChain(hardfork: js.UndefOr[scala.Nothing], opts: hardforkOptions): Boolean = js.native
   def hardforkIsActiveOnChain(hardfork: String): Boolean = js.native
   def hardforkIsActiveOnChain(hardfork: String, opts: hardforkOptions): Boolean = js.native
   def hardforkIsActiveOnChain(hardfork: Null, opts: hardforkOptions): Boolean = js.native
@@ -187,11 +191,11 @@ trait Common extends js.Object {
   def setChain(chain: String): js.Any = js.native
   def setChain(chain: js.Object): js.Any = js.native
   def setChain(chain: Double): js.Any = js.native
-  def setHardfork(): Unit = js.native
   /**
     * Sets the hardfork to get params for
     * @param hardfork String identifier ('byzantium')
     */
+  def setHardfork(): Unit = js.native
   def setHardfork(hardfork: String): Unit = js.native
 }
 

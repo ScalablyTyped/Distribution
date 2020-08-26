@@ -1,11 +1,10 @@
 package typings.shelljs.mod
 
-import typings.node.NodeJS.ProcessEnv
-import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExecOptions
   extends typings.node.childProcessMod.ExecOptions {
   /**
@@ -15,7 +14,7 @@ trait ExecOptions
     *
     * @default false
     */
-  var async: js.UndefOr[Boolean] = js.undefined
+  var async: js.UndefOr[Boolean] = js.native
   /**
     * Character encoding to use.
     *
@@ -24,53 +23,55 @@ trait ExecOptions
     *
     * @default "utf8"
     */
-  var encoding: js.UndefOr[String] = js.undefined
+  var encoding: js.UndefOr[String] = js.native
   /**
     * Exit when command return code is non-zero.
     *
     * @default false
     */
-  var fatal: js.UndefOr[Boolean] = js.undefined
+  var fatal: js.UndefOr[Boolean] = js.native
   /**
     * Do not echo program output to the console.
     *
     * @default false
     */
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.native
 }
 
 object ExecOptions {
   @scala.inline
-  def apply(
-    async: js.UndefOr[Boolean] = js.undefined,
-    cwd: String = null,
-    encoding: String = null,
-    env: ProcessEnv = null,
-    fatal: js.UndefOr[Boolean] = js.undefined,
-    gid: js.UndefOr[Double] = js.undefined,
-    killSignal: Signals | Double = null,
-    maxBuffer: js.UndefOr[Double] = js.undefined,
-    shell: String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    uid: js.UndefOr[Double] = js.undefined,
-    windowsHide: js.UndefOr[Boolean] = js.undefined
-  ): ExecOptions = {
+  def apply(): ExecOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
-    if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBuffer)) __obj.updateDynamic("maxBuffer")(maxBuffer.get.asInstanceOf[js.Any])
-    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecOptions]
   }
+  @scala.inline
+  implicit class ExecOptionsOps[Self <: ExecOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsync: Self = this.set("async", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setFatal(value: Boolean): Self = this.set("fatal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFatal: Self = this.set("fatal", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+  }
+  
 }
 

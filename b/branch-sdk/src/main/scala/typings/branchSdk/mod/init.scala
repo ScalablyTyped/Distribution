@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object init extends js.Object {
   def apply(branch_key: String): Unit = js.native
+  def apply(
+    branch_key: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]
+  ): Unit = js.native
   def apply(branch_key: String, options: InitOptions): Unit = js.native
   def apply(
     branch_key: String,

@@ -7,7 +7,6 @@ import typings.dateFns.anon.FractionDigits
 import typings.dateFns.anon.Hours
 import typings.dateFns.anon.IncludeSeconds
 import typings.dateFns.anon.Inclusive
-import typings.dateFns.anon.LocaleLocale
 import typings.dateFns.anon.NearestTo
 import typings.dateFns.anon.Step
 import typings.dateFns.anon.Unit
@@ -280,17 +279,17 @@ trait dateFns extends js.Object {
   def getUnixTime(date: Double): Double = js.native
   def getUnixTime(date: Date): Double = js.native
   def getWeek(date: Double): Double = js.native
-  def getWeek(date: Double, options: LocaleLocale): Double = js.native
+  def getWeek(date: Double, options: typings.dateFns.anon.`0`): Double = js.native
   def getWeek(date: Date): Double = js.native
-  def getWeek(date: Date, options: LocaleLocale): Double = js.native
+  def getWeek(date: Date, options: typings.dateFns.anon.`0`): Double = js.native
   def getWeekOfMonth(date: Double): Double = js.native
   def getWeekOfMonth(date: Double, options: WeekStartsOn): Double = js.native
   def getWeekOfMonth(date: Date): Double = js.native
   def getWeekOfMonth(date: Date, options: WeekStartsOn): Double = js.native
   def getWeekYear(date: Double): Double = js.native
-  def getWeekYear(date: Double, options: LocaleLocale): Double = js.native
+  def getWeekYear(date: Double, options: typings.dateFns.anon.`0`): Double = js.native
   def getWeekYear(date: Date): Double = js.native
-  def getWeekYear(date: Date, options: LocaleLocale): Double = js.native
+  def getWeekYear(date: Date, options: typings.dateFns.anon.`0`): Double = js.native
   def getWeeksInMonth(date: Double): Double = js.native
   def getWeeksInMonth(date: Double, options: WeekStartsOn): Double = js.native
   def getWeeksInMonth(date: Date): Double = js.native
@@ -322,6 +321,8 @@ trait dateFns extends js.Object {
   def isLastDayOfMonth(date: Date): Boolean = js.native
   def isLeapYear(date: Double): Boolean = js.native
   def isLeapYear(date: Date): Boolean = js.native
+  def isMatch(dateString: String, formatString: String): Boolean = js.native
+  def isMatch(dateString: String, formatString: String, options: UseAdditionalWeekYearTokensWeekStartsOn): Boolean = js.native
   def isMonday(date: Double): Boolean = js.native
   def isMonday(date: Date): Boolean = js.native
   def isPast(date: Double): Boolean = js.native
@@ -483,13 +484,13 @@ trait dateFns extends js.Object {
   def setSeconds(date: Double, seconds: Double): Date = js.native
   def setSeconds(date: Date, seconds: Double): Date = js.native
   def setWeek(date: Double, week: Double): Date = js.native
-  def setWeek(date: Double, week: Double, options: LocaleLocale): Date = js.native
+  def setWeek(date: Double, week: Double, options: typings.dateFns.anon.`0`): Date = js.native
   def setWeek(date: Date, week: Double): Date = js.native
-  def setWeek(date: Date, week: Double, options: LocaleLocale): Date = js.native
+  def setWeek(date: Date, week: Double, options: typings.dateFns.anon.`0`): Date = js.native
   def setWeekYear(date: Double, weekYear: Double): Date = js.native
-  def setWeekYear(date: Double, weekYear: Double, options: LocaleLocale): Date = js.native
+  def setWeekYear(date: Double, weekYear: Double, options: typings.dateFns.anon.`0`): Date = js.native
   def setWeekYear(date: Date, weekYear: Double): Date = js.native
-  def setWeekYear(date: Date, weekYear: Double, options: LocaleLocale): Date = js.native
+  def setWeekYear(date: Date, weekYear: Double, options: typings.dateFns.anon.`0`): Date = js.native
   def setYear(date: Double, year: Double): Date = js.native
   def setYear(date: Date, year: Double): Date = js.native
   def startOfDay(date: Double): Date = js.native
@@ -517,9 +518,9 @@ trait dateFns extends js.Object {
   def startOfWeek(date: Date): Date = js.native
   def startOfWeek(date: Date, options: WeekStartsOn): Date = js.native
   def startOfWeekYear(date: Double): Date = js.native
-  def startOfWeekYear(date: Double, options: LocaleLocale): Date = js.native
+  def startOfWeekYear(date: Double, options: typings.dateFns.anon.`0`): Date = js.native
   def startOfWeekYear(date: Date): Date = js.native
-  def startOfWeekYear(date: Date, options: LocaleLocale): Date = js.native
+  def startOfWeekYear(date: Date, options: typings.dateFns.anon.`0`): Date = js.native
   def startOfYear(date: Double): Date = js.native
   def startOfYear(date: Date): Date = js.native
   def startOfYesterday(): Date = js.native

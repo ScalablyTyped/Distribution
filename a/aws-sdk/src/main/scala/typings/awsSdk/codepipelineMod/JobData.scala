@@ -42,26 +42,58 @@ trait JobData extends js.Object {
 
 object JobData {
   @scala.inline
-  def apply(
-    actionConfiguration: ActionConfiguration = null,
-    actionTypeId: ActionTypeId = null,
-    artifactCredentials: AWSSessionCredentials = null,
-    continuationToken: ContinuationToken = null,
-    encryptionKey: EncryptionKey = null,
-    inputArtifacts: ArtifactList = null,
-    outputArtifacts: ArtifactList = null,
-    pipelineContext: PipelineContext = null
-  ): JobData = {
+  def apply(): JobData = {
     val __obj = js.Dynamic.literal()
-    if (actionConfiguration != null) __obj.updateDynamic("actionConfiguration")(actionConfiguration.asInstanceOf[js.Any])
-    if (actionTypeId != null) __obj.updateDynamic("actionTypeId")(actionTypeId.asInstanceOf[js.Any])
-    if (artifactCredentials != null) __obj.updateDynamic("artifactCredentials")(artifactCredentials.asInstanceOf[js.Any])
-    if (continuationToken != null) __obj.updateDynamic("continuationToken")(continuationToken.asInstanceOf[js.Any])
-    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
-    if (inputArtifacts != null) __obj.updateDynamic("inputArtifacts")(inputArtifacts.asInstanceOf[js.Any])
-    if (outputArtifacts != null) __obj.updateDynamic("outputArtifacts")(outputArtifacts.asInstanceOf[js.Any])
-    if (pipelineContext != null) __obj.updateDynamic("pipelineContext")(pipelineContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobData]
   }
+  @scala.inline
+  implicit class JobDataOps[Self <: JobData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionConfiguration(value: ActionConfiguration): Self = this.set("actionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionConfiguration: Self = this.set("actionConfiguration", js.undefined)
+    @scala.inline
+    def setActionTypeId(value: ActionTypeId): Self = this.set("actionTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionTypeId: Self = this.set("actionTypeId", js.undefined)
+    @scala.inline
+    def setArtifactCredentials(value: AWSSessionCredentials): Self = this.set("artifactCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactCredentials: Self = this.set("artifactCredentials", js.undefined)
+    @scala.inline
+    def setContinuationToken(value: ContinuationToken): Self = this.set("continuationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuationToken: Self = this.set("continuationToken", js.undefined)
+    @scala.inline
+    def setEncryptionKey(value: EncryptionKey): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    @scala.inline
+    def setInputArtifactsVarargs(value: Artifact*): Self = this.set("inputArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setInputArtifacts(value: ArtifactList): Self = this.set("inputArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputArtifacts: Self = this.set("inputArtifacts", js.undefined)
+    @scala.inline
+    def setOutputArtifactsVarargs(value: Artifact*): Self = this.set("outputArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setOutputArtifacts(value: ArtifactList): Self = this.set("outputArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputArtifacts: Self = this.set("outputArtifacts", js.undefined)
+    @scala.inline
+    def setPipelineContext(value: PipelineContext): Self = this.set("pipelineContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineContext: Self = this.set("pipelineContext", js.undefined)
+  }
+  
 }
 

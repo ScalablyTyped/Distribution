@@ -11,12 +11,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimeoutError
   extends StdError
      with GotError {
-  var event: lookup | connect | secureConnect | socket | response | send | request
+  var event: lookup | connect | secureConnect | socket | response | send | request = js.native
   @JSName("name")
-  var name_TimeoutError: typings.got.gotStrings.TimeoutError
+  var name_TimeoutError: typings.got.gotStrings.TimeoutError = js.native
 }
 
 object TimeoutError {
@@ -24,28 +25,27 @@ object TimeoutError {
   def apply(
     event: lookup | connect | secureConnect | socket | response | send | request,
     message: String,
-    name: typings.got.gotStrings.TimeoutError,
-    code: String = null,
-    host: String = null,
-    hostname: String = null,
-    method: String = null,
-    path: String = null,
-    protocol: String = null,
-    response: js.Any = null,
-    stack: String = null,
-    url: String = null
+    name: typings.got.gotStrings.TimeoutError
   ): TimeoutError = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeoutError]
   }
+  @scala.inline
+  implicit class TimeoutErrorOps[Self <: TimeoutError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvent(value: lookup | connect | secureConnect | socket | response | send | request): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: typings.got.gotStrings.TimeoutError): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

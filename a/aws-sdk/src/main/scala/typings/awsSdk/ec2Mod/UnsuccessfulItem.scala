@@ -18,11 +18,30 @@ trait UnsuccessfulItem extends js.Object {
 
 object UnsuccessfulItem {
   @scala.inline
-  def apply(Error: UnsuccessfulItemError = null, ResourceId: String = null): UnsuccessfulItem = {
+  def apply(): UnsuccessfulItem = {
     val __obj = js.Dynamic.literal()
-    if (Error != null) __obj.updateDynamic("Error")(Error.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsuccessfulItem]
   }
+  @scala.inline
+  implicit class UnsuccessfulItemOps[Self <: UnsuccessfulItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: UnsuccessfulItemError): Self = this.set("Error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("Error", js.undefined)
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+  }
+  
 }
 

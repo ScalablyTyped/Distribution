@@ -40,7 +40,21 @@ trait TableColumnCollection extends ClientObject {
     * @param name Optional. Specifies the name of the new column. If null, the default name will be used.
     */
   def add(): TableColumn = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: js.UndefOr[scala.Nothing], name: String): TableColumn = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: String): TableColumn = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: String, name: String): TableColumn = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: js.Array[js.Array[Boolean | String | Double]]): TableColumn = js.native
+  def add(
+    index: js.UndefOr[scala.Nothing],
+    values: js.Array[js.Array[Boolean | String | Double]],
+    name: String
+  ): TableColumn = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: Boolean): TableColumn = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: Boolean, name: String): TableColumn = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: Double): TableColumn = js.native
+  def add(index: js.UndefOr[scala.Nothing], values: Double, name: String): TableColumn = js.native
   def add(index: Double): TableColumn = js.native
+  def add(index: Double, values: js.UndefOr[scala.Nothing], name: String): TableColumn = js.native
   def add(index: Double, values: String): TableColumn = js.native
   def add(index: Double, values: String, name: String): TableColumn = js.native
   def add(index: Double, values: js.Array[js.Array[Boolean | String | Double]]): TableColumn = js.native

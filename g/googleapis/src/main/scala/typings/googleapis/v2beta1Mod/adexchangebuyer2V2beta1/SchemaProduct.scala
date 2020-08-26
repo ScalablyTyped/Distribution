@@ -87,40 +87,86 @@ trait SchemaProduct extends js.Object {
 
 object SchemaProduct {
   @scala.inline
-  def apply(
-    availableEndTime: String = null,
-    availableStartTime: String = null,
-    createTime: String = null,
-    creatorContacts: js.Array[SchemaContactInformation] = null,
-    displayName: String = null,
-    hasCreatorSignedOff: js.UndefOr[Boolean] = js.undefined,
-    productId: String = null,
-    productRevision: String = null,
-    publisherProfileId: String = null,
-    seller: SchemaSeller = null,
-    syndicationProduct: String = null,
-    targetingCriterion: js.Array[SchemaTargetingCriteria] = null,
-    terms: SchemaDealTerms = null,
-    updateTime: String = null,
-    webPropertyCode: String = null
-  ): SchemaProduct = {
+  def apply(): SchemaProduct = {
     val __obj = js.Dynamic.literal()
-    if (availableEndTime != null) __obj.updateDynamic("availableEndTime")(availableEndTime.asInstanceOf[js.Any])
-    if (availableStartTime != null) __obj.updateDynamic("availableStartTime")(availableStartTime.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (creatorContacts != null) __obj.updateDynamic("creatorContacts")(creatorContacts.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCreatorSignedOff)) __obj.updateDynamic("hasCreatorSignedOff")(hasCreatorSignedOff.get.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (productRevision != null) __obj.updateDynamic("productRevision")(productRevision.asInstanceOf[js.Any])
-    if (publisherProfileId != null) __obj.updateDynamic("publisherProfileId")(publisherProfileId.asInstanceOf[js.Any])
-    if (seller != null) __obj.updateDynamic("seller")(seller.asInstanceOf[js.Any])
-    if (syndicationProduct != null) __obj.updateDynamic("syndicationProduct")(syndicationProduct.asInstanceOf[js.Any])
-    if (targetingCriterion != null) __obj.updateDynamic("targetingCriterion")(targetingCriterion.asInstanceOf[js.Any])
-    if (terms != null) __obj.updateDynamic("terms")(terms.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (webPropertyCode != null) __obj.updateDynamic("webPropertyCode")(webPropertyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProduct]
   }
+  @scala.inline
+  implicit class SchemaProductOps[Self <: SchemaProduct] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailableEndTime(value: String): Self = this.set("availableEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableEndTime: Self = this.set("availableEndTime", js.undefined)
+    @scala.inline
+    def setAvailableStartTime(value: String): Self = this.set("availableStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableStartTime: Self = this.set("availableStartTime", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setCreatorContactsVarargs(value: SchemaContactInformation*): Self = this.set("creatorContacts", js.Array(value :_*))
+    @scala.inline
+    def setCreatorContacts(value: js.Array[SchemaContactInformation]): Self = this.set("creatorContacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorContacts: Self = this.set("creatorContacts", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setHasCreatorSignedOff(value: Boolean): Self = this.set("hasCreatorSignedOff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasCreatorSignedOff: Self = this.set("hasCreatorSignedOff", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+    @scala.inline
+    def setProductRevision(value: String): Self = this.set("productRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductRevision: Self = this.set("productRevision", js.undefined)
+    @scala.inline
+    def setPublisherProfileId(value: String): Self = this.set("publisherProfileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisherProfileId: Self = this.set("publisherProfileId", js.undefined)
+    @scala.inline
+    def setSeller(value: SchemaSeller): Self = this.set("seller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeller: Self = this.set("seller", js.undefined)
+    @scala.inline
+    def setSyndicationProduct(value: String): Self = this.set("syndicationProduct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyndicationProduct: Self = this.set("syndicationProduct", js.undefined)
+    @scala.inline
+    def setTargetingCriterionVarargs(value: SchemaTargetingCriteria*): Self = this.set("targetingCriterion", js.Array(value :_*))
+    @scala.inline
+    def setTargetingCriterion(value: js.Array[SchemaTargetingCriteria]): Self = this.set("targetingCriterion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetingCriterion: Self = this.set("targetingCriterion", js.undefined)
+    @scala.inline
+    def setTerms(value: SchemaDealTerms): Self = this.set("terms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerms: Self = this.set("terms", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setWebPropertyCode(value: String): Self = this.set("webPropertyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebPropertyCode: Self = this.set("webPropertyCode", js.undefined)
+  }
+  
 }
 

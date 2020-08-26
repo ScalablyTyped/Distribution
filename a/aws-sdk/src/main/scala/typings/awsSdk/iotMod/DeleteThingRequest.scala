@@ -18,10 +18,28 @@ trait DeleteThingRequest extends js.Object {
 
 object DeleteThingRequest {
   @scala.inline
-  def apply(thingName: ThingName, expectedVersion: js.UndefOr[OptionalVersion] = js.undefined): DeleteThingRequest = {
+  def apply(thingName: ThingName): DeleteThingRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteThingRequest]
   }
+  @scala.inline
+  implicit class DeleteThingRequestOps[Self <: DeleteThingRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpectedVersion(value: OptionalVersion): Self = this.set("expectedVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedVersion: Self = this.set("expectedVersion", js.undefined)
+  }
+  
 }
 

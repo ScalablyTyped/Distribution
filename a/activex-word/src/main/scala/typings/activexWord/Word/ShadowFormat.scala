@@ -7,25 +7,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ShadowFormat extends js.Object {
-  val Application: typings.activexWord.Word.Application
-  var Blur: Double
-  val Creator: Double
-  val ForeColor: ColorFormat
-  var Obscured: MsoTriState
-  var OffsetX: Double
-  var OffsetY: Double
-  val Parent: js.Any
-  var RotateWithShape: MsoTriState
-  var Size: Double
-  var Style: MsoShadowStyle
-  var Transparency: Double
-  var Type: MsoShadowType
-  var Visible: MsoTriState
+  val Application: typings.activexWord.Word.Application = js.native
+  var Blur: Double = js.native
+  val Creator: Double = js.native
+  val ForeColor: ColorFormat = js.native
+  var Obscured: MsoTriState = js.native
+  var OffsetX: Double = js.native
+  var OffsetY: Double = js.native
+  val Parent: js.Any = js.native
+  var RotateWithShape: MsoTriState = js.native
+  var Size: Double = js.native
+  var Style: MsoShadowStyle = js.native
+  var Transparency: Double = js.native
+  var Type: MsoShadowType = js.native
+  var Visible: MsoTriState = js.native
   @JSName("Word.ShadowFormat_typekey")
-  var WordDotShadowFormat_typekey: ShadowFormat
-  def IncrementOffsetX(Increment: Double): Unit
-  def IncrementOffsetY(Increment: Double): Unit
+  var WordDotShadowFormat_typekey: ShadowFormat = js.native
+  def IncrementOffsetX(Increment: Double): Unit = js.native
+  def IncrementOffsetY(Increment: Double): Unit = js.native
 }
 
 object ShadowFormat {
@@ -53,5 +54,52 @@ object ShadowFormat {
     __obj.updateDynamic("Word.ShadowFormat_typekey")(WordDotShadowFormat_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowFormat]
   }
+  @scala.inline
+  implicit class ShadowFormatOps[Self <: ShadowFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlur(value: Double): Self = this.set("Blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForeColor(value: ColorFormat): Self = this.set("ForeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncrementOffsetX(value: Double => Unit): Self = this.set("IncrementOffsetX", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIncrementOffsetY(value: Double => Unit): Self = this.set("IncrementOffsetY", js.Any.fromFunction1(value))
+    @scala.inline
+    def setObscured(value: MsoTriState): Self = this.set("Obscured", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOffsetX(value: Double): Self = this.set("OffsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOffsetY(value: Double): Self = this.set("OffsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRotateWithShape(value: MsoTriState): Self = this.set("RotateWithShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStyle(value: MsoShadowStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransparency(value: Double): Self = this.set("Transparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: MsoShadowType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVisible(value: MsoTriState): Self = this.set("Visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordDotShadowFormat_typekey(value: ShadowFormat): Self = this.set("Word.ShadowFormat_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

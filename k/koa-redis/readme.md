@@ -10,9 +10,9 @@ Redis storage for Koa session middleware/cache with Sentinel and Cluster support
 | ------------------ | :-------------: |
 | Full name          | koa-redis |
 | Keywords           | cache, caching, client, clients, cluster, clustering, clusters, express, ioredis, koa, middleware, multiple, node, nodes, redis, scale, sentinal, sentinals, sentinel, sentinels, session, storage, store |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 38 |
-| # downloads        | 547741 |
+| # downloads        | 584435 |
 | # stars            | 11 |
 
 ## Links

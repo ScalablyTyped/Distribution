@@ -4,48 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DurationToFormatOptions
   extends typings.std.Intl.DateTimeFormatOptions {
-  var floor: js.UndefOr[Boolean] = js.undefined
-  var round: js.UndefOr[Boolean] = js.undefined
+  var floor: js.UndefOr[Boolean] = js.native
+  var round: js.UndefOr[Boolean] = js.native
 }
 
 object DurationToFormatOptions {
   @scala.inline
-  def apply(
-    day: String = null,
-    era: String = null,
-    floor: js.UndefOr[Boolean] = js.undefined,
-    formatMatcher: String = null,
-    hour: String = null,
-    hour12: js.UndefOr[Boolean] = js.undefined,
-    localeMatcher: String = null,
-    minute: String = null,
-    month: String = null,
-    round: js.UndefOr[Boolean] = js.undefined,
-    second: String = null,
-    timeZone: String = null,
-    timeZoneName: String = null,
-    weekday: String = null,
-    year: String = null
-  ): DurationToFormatOptions = {
+  def apply(): DurationToFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (era != null) __obj.updateDynamic("era")(era.asInstanceOf[js.Any])
-    if (!js.isUndefined(floor)) __obj.updateDynamic("floor")(floor.get.asInstanceOf[js.Any])
-    if (formatMatcher != null) __obj.updateDynamic("formatMatcher")(formatMatcher.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12.get.asInstanceOf[js.Any])
-    if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
-    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
-    if (timeZoneName != null) __obj.updateDynamic("timeZoneName")(timeZoneName.asInstanceOf[js.Any])
-    if (weekday != null) __obj.updateDynamic("weekday")(weekday.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationToFormatOptions]
   }
+  @scala.inline
+  implicit class DurationToFormatOptionsOps[Self <: DurationToFormatOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFloor(value: Boolean): Self = this.set("floor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloor: Self = this.set("floor", js.undefined)
+    @scala.inline
+    def setRound(value: Boolean): Self = this.set("round", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRound: Self = this.set("round", js.undefined)
+  }
+  
 }
 

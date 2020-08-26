@@ -38,24 +38,52 @@ trait ChangeSetSummaryListItem extends js.Object {
 
 object ChangeSetSummaryListItem {
   @scala.inline
-  def apply(
-    ChangeSetArn: ARN = null,
-    ChangeSetId: ResourceId = null,
-    ChangeSetName: ChangeSetName = null,
-    EndTime: DateTimeISO8601 = null,
-    EntityIdList: ResourceIdList = null,
-    StartTime: DateTimeISO8601 = null,
-    Status: ChangeStatus = null
-  ): ChangeSetSummaryListItem = {
+  def apply(): ChangeSetSummaryListItem = {
     val __obj = js.Dynamic.literal()
-    if (ChangeSetArn != null) __obj.updateDynamic("ChangeSetArn")(ChangeSetArn.asInstanceOf[js.Any])
-    if (ChangeSetId != null) __obj.updateDynamic("ChangeSetId")(ChangeSetId.asInstanceOf[js.Any])
-    if (ChangeSetName != null) __obj.updateDynamic("ChangeSetName")(ChangeSetName.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (EntityIdList != null) __obj.updateDynamic("EntityIdList")(EntityIdList.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeSetSummaryListItem]
   }
+  @scala.inline
+  implicit class ChangeSetSummaryListItemOps[Self <: ChangeSetSummaryListItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeSetArn(value: ARN): Self = this.set("ChangeSetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetArn: Self = this.set("ChangeSetArn", js.undefined)
+    @scala.inline
+    def setChangeSetId(value: ResourceId): Self = this.set("ChangeSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetId: Self = this.set("ChangeSetId", js.undefined)
+    @scala.inline
+    def setChangeSetName(value: ChangeSetName): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetName: Self = this.set("ChangeSetName", js.undefined)
+    @scala.inline
+    def setEndTime(value: DateTimeISO8601): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setEntityIdListVarargs(value: ResourceId*): Self = this.set("EntityIdList", js.Array(value :_*))
+    @scala.inline
+    def setEntityIdList(value: ResourceIdList): Self = this.set("EntityIdList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityIdList: Self = this.set("EntityIdList", js.undefined)
+    @scala.inline
+    def setStartTime(value: DateTimeISO8601): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: ChangeStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

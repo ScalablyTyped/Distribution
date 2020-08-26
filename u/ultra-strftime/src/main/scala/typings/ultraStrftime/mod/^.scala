@@ -9,9 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(fmt: String): String = js.native
+  def apply(fmt: String, d: js.UndefOr[scala.Nothing], locale: js.UndefOr[scala.Nothing], options: Options): String = js.native
+  def apply(fmt: String, d: js.UndefOr[scala.Nothing], locale: Locale): String = js.native
+  def apply(fmt: String, d: js.UndefOr[scala.Nothing], locale: Locale, options: Options): String = js.native
   def apply(fmt: String, d: Date): String = js.native
+  def apply(fmt: String, d: Date, locale: js.UndefOr[scala.Nothing], options: Options): String = js.native
   def apply(fmt: String, d: Date, locale: Locale): String = js.native
   def apply(fmt: String, d: Date, locale: Locale, options: Options): String = js.native
+  def apply(fmt: String, locale: js.UndefOr[scala.Nothing], options: Options): String = js.native
   def apply(fmt: String, locale: Locale): String = js.native
   def apply(fmt: String, locale: Locale, options: Options): String = js.native
 }

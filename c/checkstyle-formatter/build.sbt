@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "checkstyle-formatter"
-version := "1.0-dt-20200515Z-de5cab"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-4b4e24"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

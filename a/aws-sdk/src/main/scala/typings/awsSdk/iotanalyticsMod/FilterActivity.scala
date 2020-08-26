@@ -22,10 +22,30 @@ trait FilterActivity extends js.Object {
 
 object FilterActivity {
   @scala.inline
-  def apply(filter: FilterExpression, name: ActivityName, next: ActivityName = null): FilterActivity = {
+  def apply(filter: FilterExpression, name: ActivityName): FilterActivity = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterActivity]
   }
+  @scala.inline
+  implicit class FilterActivityOps[Self <: FilterActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(value: FilterExpression): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ActivityName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNext(value: ActivityName): Self = this.set("next", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNext: Self = this.set("next", js.undefined)
+  }
+  
 }
 

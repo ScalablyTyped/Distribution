@@ -63,6 +63,16 @@ trait BootstrapScheduler extends Control {
   def insertAppointment(apt: BootstrapSchedulerAppointment): Unit = js.native
   def navigateBackward(): Unit = js.native
   def navigateForward(): Unit = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        ActiveViewChangingEventArgs | AppointmentClickEventArgs | AppointmentDeletingEventArgs | AppointmentDragEventArgs | AppointmentDropEventArgs | AppointmentResizeEventArgs | AppointmentResizingEventArgs | AppointmentToolTipShowingEventArgs | AppointmentsSelectionEventArgs | BeginCallbackEventArgs | CallbackErrorEventArgs | CellClickEventArgs | EndCallbackEventArgs | EventArgs | MenuItemClickedEventArgs | MoreButtonClickedEventArgs | ShortcutEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_activeViewChanged(eventName: activeViewChanged): this.type = js.native
   @JSName("off")

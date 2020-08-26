@@ -455,6 +455,7 @@ trait DisplayObject extends EventEmitter {
     * @return {PIXI.Rectangle} The rectangular bounding area.
     */
   def getBounds(): Rectangle = js.native
+  def getBounds(skipUpdate: js.UndefOr[scala.Nothing], rect: Rectangle): Rectangle = js.native
   def getBounds(skipUpdate: Boolean): Rectangle = js.native
   def getBounds(skipUpdate: Boolean, rect: Rectangle): Rectangle = js.native
   /**
@@ -469,6 +470,7 @@ trait DisplayObject extends EventEmitter {
     * @return {PIXI.Point} The updated point.
     */
   def getGlobalPosition(): Point = js.native
+  def getGlobalPosition(point: js.UndefOr[scala.Nothing], skipUpdate: Boolean): Point = js.native
   def getGlobalPosition(point: Point): Point = js.native
   def getGlobalPosition(point: Point, skipUpdate: Boolean): Point = js.native
   /**
@@ -480,6 +482,7 @@ trait DisplayObject extends EventEmitter {
   def getLocalBounds(): Rectangle = js.native
   def getLocalBounds(rect: Rectangle): Rectangle = js.native
   def off(event: InteractionEventTypes): this.type = js.native
+  def off(event: InteractionEventTypes, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def off(event: InteractionEventTypes, fn: js.Function1[/* event */ InteractionEvent, Unit]): this.type = js.native
   def off(
     event: InteractionEventTypes,
@@ -500,6 +503,7 @@ trait DisplayObject extends EventEmitter {
   ): this.type = js.native
   def removeAllListeners(event: InteractionEventTypes): this.type = js.native
   def removeListener(event: InteractionEventTypes): this.type = js.native
+  def removeListener(event: InteractionEventTypes, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def removeListener(event: InteractionEventTypes, fn: js.Function1[/* event */ InteractionEvent, Unit]): this.type = js.native
   def removeListener(
     event: InteractionEventTypes,
@@ -548,6 +552,7 @@ trait DisplayObject extends EventEmitter {
     * @return {PIXI.Point} A point object representing the position of this object.
     */
   def toGlobal(position: IPointData): Point = js.native
+  def toGlobal(position: IPointData, point: js.UndefOr[scala.Nothing], skipUpdate: Boolean): Point = js.native
   def toGlobal(position: IPointData, point: Point): Point = js.native
   def toGlobal(position: IPointData, point: Point, skipUpdate: Boolean): Point = js.native
   /**
@@ -561,7 +566,16 @@ trait DisplayObject extends EventEmitter {
     * @return {PIXI.Point} A point object representing the position of this object
     */
   def toLocal(position: IPointData): Point = js.native
+  def toLocal(
+    position: IPointData,
+    from: js.UndefOr[scala.Nothing],
+    point: js.UndefOr[scala.Nothing],
+    skipUpdate: Boolean
+  ): Point = js.native
+  def toLocal(position: IPointData, from: js.UndefOr[scala.Nothing], point: Point): Point = js.native
+  def toLocal(position: IPointData, from: js.UndefOr[scala.Nothing], point: Point, skipUpdate: Boolean): Point = js.native
   def toLocal(position: IPointData, from: DisplayObject): Point = js.native
+  def toLocal(position: IPointData, from: DisplayObject, point: js.UndefOr[scala.Nothing], skipUpdate: Boolean): Point = js.native
   def toLocal(position: IPointData, from: DisplayObject, point: Point): Point = js.native
   def toLocal(position: IPointData, from: DisplayObject, point: Point, skipUpdate: Boolean): Point = js.native
   /**

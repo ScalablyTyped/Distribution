@@ -12,7 +12,7 @@ Node.js bindings for libxslt compatible with libxmljs
 | Keywords           | xml, xsl, xslt, libxslt, bindings |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 52795 |
+| # downloads        | 50938 |
 | # stars            | 3 |
 
 ## Links

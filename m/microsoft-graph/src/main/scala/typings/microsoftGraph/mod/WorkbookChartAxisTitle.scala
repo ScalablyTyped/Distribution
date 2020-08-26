@@ -4,29 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkbookChartAxisTitle extends Entity {
   // Represents the formatting of chart axis title. Read-only.
-  var format: js.UndefOr[WorkbookChartAxisTitleFormat] = js.undefined
+  var format: js.UndefOr[WorkbookChartAxisTitleFormat] = js.native
   // Represents the axis title.
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   // A boolean that specifies the visibility of an axis title.
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object WorkbookChartAxisTitle {
   @scala.inline
-  def apply(
-    format: WorkbookChartAxisTitleFormat = null,
-    id: String = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): WorkbookChartAxisTitle = {
+  def apply(): WorkbookChartAxisTitle = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartAxisTitle]
   }
+  @scala.inline
+  implicit class WorkbookChartAxisTitleOps[Self <: WorkbookChartAxisTitle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: WorkbookChartAxisTitleFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

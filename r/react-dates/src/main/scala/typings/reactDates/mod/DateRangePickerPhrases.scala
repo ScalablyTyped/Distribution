@@ -5,105 +5,178 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // defaultPhrases.js
+@js.native
 trait DateRangePickerPhrases extends js.Object {
-  var calendarLabel: js.UndefOr[String] = js.undefined
-  var chooseAvailableEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
-  var chooseAvailableStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
-  var clearDates: js.UndefOr[String] = js.undefined
-  var closeDatePicker: js.UndefOr[String] = js.undefined
-  var dateIsSelected: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
-  var dateIsSelectedAsEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
-  var dateIsSelectedAsStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
-  var dateIsUnavailable: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
-  var enterKey: js.UndefOr[String] = js.undefined
-  var escape: js.UndefOr[String] = js.undefined
-  var focusStartDate: js.UndefOr[String] = js.undefined
-  var hideKeyboardShortcutsPanel: js.UndefOr[String] = js.undefined
-  var homeEnd: js.UndefOr[String] = js.undefined
-  var jumpToNextMonth: js.UndefOr[String] = js.undefined
-  var jumpToPrevMonth: js.UndefOr[String] = js.undefined
-  var keyboardNavigationInstructions: js.UndefOr[String] = js.undefined
-  var keyboardShortcuts: js.UndefOr[String] = js.undefined
-  var leftArrowRightArrow: js.UndefOr[String] = js.undefined
-  var moveFocusByOneDay: js.UndefOr[String] = js.undefined
-  var moveFocusByOneMonth: js.UndefOr[String] = js.undefined
-  var moveFocusByOneWeek: js.UndefOr[String] = js.undefined
-  var moveFocustoStartAndEndOfWeek: js.UndefOr[String] = js.undefined
-  var openThisPanel: js.UndefOr[String] = js.undefined
-  var pageUpPageDown: js.UndefOr[String] = js.undefined
-  var questionMark: js.UndefOr[String] = js.undefined
-  var returnFocusToInput: js.UndefOr[String] = js.undefined
-  var selectFocusedDate: js.UndefOr[String] = js.undefined
-  var showKeyboardShortcutsPanel: js.UndefOr[String] = js.undefined
-  var upArrowDownArrow: js.UndefOr[String] = js.undefined
+  var calendarLabel: js.UndefOr[String] = js.native
+  var chooseAvailableEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var chooseAvailableStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var clearDates: js.UndefOr[String] = js.native
+  var closeDatePicker: js.UndefOr[String] = js.native
+  var dateIsSelected: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var dateIsSelectedAsEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var dateIsSelectedAsStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var dateIsUnavailable: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.native
+  var enterKey: js.UndefOr[String] = js.native
+  var escape: js.UndefOr[String] = js.native
+  var focusStartDate: js.UndefOr[String] = js.native
+  var hideKeyboardShortcutsPanel: js.UndefOr[String] = js.native
+  var homeEnd: js.UndefOr[String] = js.native
+  var jumpToNextMonth: js.UndefOr[String] = js.native
+  var jumpToPrevMonth: js.UndefOr[String] = js.native
+  var keyboardNavigationInstructions: js.UndefOr[String] = js.native
+  var keyboardShortcuts: js.UndefOr[String] = js.native
+  var leftArrowRightArrow: js.UndefOr[String] = js.native
+  var moveFocusByOneDay: js.UndefOr[String] = js.native
+  var moveFocusByOneMonth: js.UndefOr[String] = js.native
+  var moveFocusByOneWeek: js.UndefOr[String] = js.native
+  var moveFocustoStartAndEndOfWeek: js.UndefOr[String] = js.native
+  var openThisPanel: js.UndefOr[String] = js.native
+  var pageUpPageDown: js.UndefOr[String] = js.native
+  var questionMark: js.UndefOr[String] = js.native
+  var returnFocusToInput: js.UndefOr[String] = js.native
+  var selectFocusedDate: js.UndefOr[String] = js.native
+  var showKeyboardShortcutsPanel: js.UndefOr[String] = js.native
+  var upArrowDownArrow: js.UndefOr[String] = js.native
 }
 
 object DateRangePickerPhrases {
   @scala.inline
-  def apply(
-    calendarLabel: String = null,
-    chooseAvailableEndDate: /* phraseArg */ PhraseArg => String = null,
-    chooseAvailableStartDate: /* phraseArg */ PhraseArg => String = null,
-    clearDates: String = null,
-    closeDatePicker: String = null,
-    dateIsSelected: /* phraseArg */ PhraseArg => String = null,
-    dateIsSelectedAsEndDate: /* phraseArg */ PhraseArg => String = null,
-    dateIsSelectedAsStartDate: /* phraseArg */ PhraseArg => String = null,
-    dateIsUnavailable: /* phraseArg */ PhraseArg => String = null,
-    enterKey: String = null,
-    escape: String = null,
-    focusStartDate: String = null,
-    hideKeyboardShortcutsPanel: String = null,
-    homeEnd: String = null,
-    jumpToNextMonth: String = null,
-    jumpToPrevMonth: String = null,
-    keyboardNavigationInstructions: String = null,
-    keyboardShortcuts: String = null,
-    leftArrowRightArrow: String = null,
-    moveFocusByOneDay: String = null,
-    moveFocusByOneMonth: String = null,
-    moveFocusByOneWeek: String = null,
-    moveFocustoStartAndEndOfWeek: String = null,
-    openThisPanel: String = null,
-    pageUpPageDown: String = null,
-    questionMark: String = null,
-    returnFocusToInput: String = null,
-    selectFocusedDate: String = null,
-    showKeyboardShortcutsPanel: String = null,
-    upArrowDownArrow: String = null
-  ): DateRangePickerPhrases = {
+  def apply(): DateRangePickerPhrases = {
     val __obj = js.Dynamic.literal()
-    if (calendarLabel != null) __obj.updateDynamic("calendarLabel")(calendarLabel.asInstanceOf[js.Any])
-    if (chooseAvailableEndDate != null) __obj.updateDynamic("chooseAvailableEndDate")(js.Any.fromFunction1(chooseAvailableEndDate))
-    if (chooseAvailableStartDate != null) __obj.updateDynamic("chooseAvailableStartDate")(js.Any.fromFunction1(chooseAvailableStartDate))
-    if (clearDates != null) __obj.updateDynamic("clearDates")(clearDates.asInstanceOf[js.Any])
-    if (closeDatePicker != null) __obj.updateDynamic("closeDatePicker")(closeDatePicker.asInstanceOf[js.Any])
-    if (dateIsSelected != null) __obj.updateDynamic("dateIsSelected")(js.Any.fromFunction1(dateIsSelected))
-    if (dateIsSelectedAsEndDate != null) __obj.updateDynamic("dateIsSelectedAsEndDate")(js.Any.fromFunction1(dateIsSelectedAsEndDate))
-    if (dateIsSelectedAsStartDate != null) __obj.updateDynamic("dateIsSelectedAsStartDate")(js.Any.fromFunction1(dateIsSelectedAsStartDate))
-    if (dateIsUnavailable != null) __obj.updateDynamic("dateIsUnavailable")(js.Any.fromFunction1(dateIsUnavailable))
-    if (enterKey != null) __obj.updateDynamic("enterKey")(enterKey.asInstanceOf[js.Any])
-    if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
-    if (focusStartDate != null) __obj.updateDynamic("focusStartDate")(focusStartDate.asInstanceOf[js.Any])
-    if (hideKeyboardShortcutsPanel != null) __obj.updateDynamic("hideKeyboardShortcutsPanel")(hideKeyboardShortcutsPanel.asInstanceOf[js.Any])
-    if (homeEnd != null) __obj.updateDynamic("homeEnd")(homeEnd.asInstanceOf[js.Any])
-    if (jumpToNextMonth != null) __obj.updateDynamic("jumpToNextMonth")(jumpToNextMonth.asInstanceOf[js.Any])
-    if (jumpToPrevMonth != null) __obj.updateDynamic("jumpToPrevMonth")(jumpToPrevMonth.asInstanceOf[js.Any])
-    if (keyboardNavigationInstructions != null) __obj.updateDynamic("keyboardNavigationInstructions")(keyboardNavigationInstructions.asInstanceOf[js.Any])
-    if (keyboardShortcuts != null) __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts.asInstanceOf[js.Any])
-    if (leftArrowRightArrow != null) __obj.updateDynamic("leftArrowRightArrow")(leftArrowRightArrow.asInstanceOf[js.Any])
-    if (moveFocusByOneDay != null) __obj.updateDynamic("moveFocusByOneDay")(moveFocusByOneDay.asInstanceOf[js.Any])
-    if (moveFocusByOneMonth != null) __obj.updateDynamic("moveFocusByOneMonth")(moveFocusByOneMonth.asInstanceOf[js.Any])
-    if (moveFocusByOneWeek != null) __obj.updateDynamic("moveFocusByOneWeek")(moveFocusByOneWeek.asInstanceOf[js.Any])
-    if (moveFocustoStartAndEndOfWeek != null) __obj.updateDynamic("moveFocustoStartAndEndOfWeek")(moveFocustoStartAndEndOfWeek.asInstanceOf[js.Any])
-    if (openThisPanel != null) __obj.updateDynamic("openThisPanel")(openThisPanel.asInstanceOf[js.Any])
-    if (pageUpPageDown != null) __obj.updateDynamic("pageUpPageDown")(pageUpPageDown.asInstanceOf[js.Any])
-    if (questionMark != null) __obj.updateDynamic("questionMark")(questionMark.asInstanceOf[js.Any])
-    if (returnFocusToInput != null) __obj.updateDynamic("returnFocusToInput")(returnFocusToInput.asInstanceOf[js.Any])
-    if (selectFocusedDate != null) __obj.updateDynamic("selectFocusedDate")(selectFocusedDate.asInstanceOf[js.Any])
-    if (showKeyboardShortcutsPanel != null) __obj.updateDynamic("showKeyboardShortcutsPanel")(showKeyboardShortcutsPanel.asInstanceOf[js.Any])
-    if (upArrowDownArrow != null) __obj.updateDynamic("upArrowDownArrow")(upArrowDownArrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateRangePickerPhrases]
   }
+  @scala.inline
+  implicit class DateRangePickerPhrasesOps[Self <: DateRangePickerPhrases] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCalendarLabel(value: String): Self = this.set("calendarLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarLabel: Self = this.set("calendarLabel", js.undefined)
+    @scala.inline
+    def setChooseAvailableEndDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("chooseAvailableEndDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChooseAvailableEndDate: Self = this.set("chooseAvailableEndDate", js.undefined)
+    @scala.inline
+    def setChooseAvailableStartDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("chooseAvailableStartDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChooseAvailableStartDate: Self = this.set("chooseAvailableStartDate", js.undefined)
+    @scala.inline
+    def setClearDates(value: String): Self = this.set("clearDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearDates: Self = this.set("clearDates", js.undefined)
+    @scala.inline
+    def setCloseDatePicker(value: String): Self = this.set("closeDatePicker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseDatePicker: Self = this.set("closeDatePicker", js.undefined)
+    @scala.inline
+    def setDateIsSelected(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsSelected", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDateIsSelected: Self = this.set("dateIsSelected", js.undefined)
+    @scala.inline
+    def setDateIsSelectedAsEndDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsSelectedAsEndDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDateIsSelectedAsEndDate: Self = this.set("dateIsSelectedAsEndDate", js.undefined)
+    @scala.inline
+    def setDateIsSelectedAsStartDate(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsSelectedAsStartDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDateIsSelectedAsStartDate: Self = this.set("dateIsSelectedAsStartDate", js.undefined)
+    @scala.inline
+    def setDateIsUnavailable(value: /* phraseArg */ PhraseArg => String): Self = this.set("dateIsUnavailable", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDateIsUnavailable: Self = this.set("dateIsUnavailable", js.undefined)
+    @scala.inline
+    def setEnterKey(value: String): Self = this.set("enterKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnterKey: Self = this.set("enterKey", js.undefined)
+    @scala.inline
+    def setEscape(value: String): Self = this.set("escape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEscape: Self = this.set("escape", js.undefined)
+    @scala.inline
+    def setFocusStartDate(value: String): Self = this.set("focusStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusStartDate: Self = this.set("focusStartDate", js.undefined)
+    @scala.inline
+    def setHideKeyboardShortcutsPanel(value: String): Self = this.set("hideKeyboardShortcutsPanel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideKeyboardShortcutsPanel: Self = this.set("hideKeyboardShortcutsPanel", js.undefined)
+    @scala.inline
+    def setHomeEnd(value: String): Self = this.set("homeEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeEnd: Self = this.set("homeEnd", js.undefined)
+    @scala.inline
+    def setJumpToNextMonth(value: String): Self = this.set("jumpToNextMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJumpToNextMonth: Self = this.set("jumpToNextMonth", js.undefined)
+    @scala.inline
+    def setJumpToPrevMonth(value: String): Self = this.set("jumpToPrevMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJumpToPrevMonth: Self = this.set("jumpToPrevMonth", js.undefined)
+    @scala.inline
+    def setKeyboardNavigationInstructions(value: String): Self = this.set("keyboardNavigationInstructions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardNavigationInstructions: Self = this.set("keyboardNavigationInstructions", js.undefined)
+    @scala.inline
+    def setKeyboardShortcuts(value: String): Self = this.set("keyboardShortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardShortcuts: Self = this.set("keyboardShortcuts", js.undefined)
+    @scala.inline
+    def setLeftArrowRightArrow(value: String): Self = this.set("leftArrowRightArrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftArrowRightArrow: Self = this.set("leftArrowRightArrow", js.undefined)
+    @scala.inline
+    def setMoveFocusByOneDay(value: String): Self = this.set("moveFocusByOneDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveFocusByOneDay: Self = this.set("moveFocusByOneDay", js.undefined)
+    @scala.inline
+    def setMoveFocusByOneMonth(value: String): Self = this.set("moveFocusByOneMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveFocusByOneMonth: Self = this.set("moveFocusByOneMonth", js.undefined)
+    @scala.inline
+    def setMoveFocusByOneWeek(value: String): Self = this.set("moveFocusByOneWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveFocusByOneWeek: Self = this.set("moveFocusByOneWeek", js.undefined)
+    @scala.inline
+    def setMoveFocustoStartAndEndOfWeek(value: String): Self = this.set("moveFocustoStartAndEndOfWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveFocustoStartAndEndOfWeek: Self = this.set("moveFocustoStartAndEndOfWeek", js.undefined)
+    @scala.inline
+    def setOpenThisPanel(value: String): Self = this.set("openThisPanel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenThisPanel: Self = this.set("openThisPanel", js.undefined)
+    @scala.inline
+    def setPageUpPageDown(value: String): Self = this.set("pageUpPageDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageUpPageDown: Self = this.set("pageUpPageDown", js.undefined)
+    @scala.inline
+    def setQuestionMark(value: String): Self = this.set("questionMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuestionMark: Self = this.set("questionMark", js.undefined)
+    @scala.inline
+    def setReturnFocusToInput(value: String): Self = this.set("returnFocusToInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnFocusToInput: Self = this.set("returnFocusToInput", js.undefined)
+    @scala.inline
+    def setSelectFocusedDate(value: String): Self = this.set("selectFocusedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectFocusedDate: Self = this.set("selectFocusedDate", js.undefined)
+    @scala.inline
+    def setShowKeyboardShortcutsPanel(value: String): Self = this.set("showKeyboardShortcutsPanel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowKeyboardShortcutsPanel: Self = this.set("showKeyboardShortcutsPanel", js.undefined)
+    @scala.inline
+    def setUpArrowDownArrow(value: String): Self = this.set("upArrowDownArrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpArrowDownArrow: Self = this.set("upArrowDownArrow", js.undefined)
+  }
+  
 }
 

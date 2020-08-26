@@ -510,9 +510,6 @@ object styledSystemCoreStrings {
   sealed trait WebkitClipPath extends js.Object
   
   @js.native
-  sealed trait WebkitColorAdjust extends js.Object
-  
-  @js.native
   sealed trait WebkitColumnCount extends js.Object
   
   @js.native
@@ -654,6 +651,9 @@ object styledSystemCoreStrings {
   sealed trait WebkitPerspectiveOrigin extends js.Object
   
   @js.native
+  sealed trait WebkitPrintColorAdjust extends js.Object
+  
+  @js.native
   sealed trait WebkitScrollSnapPointsX extends js.Object
   
   @js.native
@@ -712,6 +712,9 @@ object styledSystemCoreStrings {
   
   @js.native
   sealed trait WebkitTextStrokeWidth extends js.Object
+  
+  @js.native
+  sealed trait WebkitTextUnderlinePosition extends js.Object
   
   @js.native
   sealed trait WebkitTouchCallout extends js.Object
@@ -2046,6 +2049,21 @@ object styledSystemCoreStrings {
   sealed trait scrollSnapDestination extends js.Object
   
   @js.native
+  sealed trait scrollSnapMargin extends js.Object
+  
+  @js.native
+  sealed trait scrollSnapMarginBottom extends js.Object
+  
+  @js.native
+  sealed trait scrollSnapMarginLeft extends js.Object
+  
+  @js.native
+  sealed trait scrollSnapMarginRight extends js.Object
+  
+  @js.native
+  sealed trait scrollSnapMarginTop extends js.Object
+  
+  @js.native
   sealed trait scrollSnapPointsX extends js.Object
   
   @js.native
@@ -2619,8 +2637,6 @@ object styledSystemCoreStrings {
   @scala.inline
   def WebkitClipPath: WebkitClipPath = "WebkitClipPath".asInstanceOf[WebkitClipPath]
   @scala.inline
-  def WebkitColorAdjust: WebkitColorAdjust = "WebkitColorAdjust".asInstanceOf[WebkitColorAdjust]
-  @scala.inline
   def WebkitColumnCount: WebkitColumnCount = "WebkitColumnCount".asInstanceOf[WebkitColumnCount]
   @scala.inline
   def WebkitColumnFill: WebkitColumnFill = "WebkitColumnFill".asInstanceOf[WebkitColumnFill]
@@ -2715,6 +2731,8 @@ object styledSystemCoreStrings {
   @scala.inline
   def WebkitPerspectiveOrigin: WebkitPerspectiveOrigin = "WebkitPerspectiveOrigin".asInstanceOf[WebkitPerspectiveOrigin]
   @scala.inline
+  def WebkitPrintColorAdjust: WebkitPrintColorAdjust = "WebkitPrintColorAdjust".asInstanceOf[WebkitPrintColorAdjust]
+  @scala.inline
   def WebkitScrollSnapPointsX: WebkitScrollSnapPointsX = "WebkitScrollSnapPointsX".asInstanceOf[WebkitScrollSnapPointsX]
   @scala.inline
   def WebkitScrollSnapPointsY: WebkitScrollSnapPointsY = "WebkitScrollSnapPointsY".asInstanceOf[WebkitScrollSnapPointsY]
@@ -2754,6 +2772,8 @@ object styledSystemCoreStrings {
   def WebkitTextStrokeColor: WebkitTextStrokeColor = "WebkitTextStrokeColor".asInstanceOf[WebkitTextStrokeColor]
   @scala.inline
   def WebkitTextStrokeWidth: WebkitTextStrokeWidth = "WebkitTextStrokeWidth".asInstanceOf[WebkitTextStrokeWidth]
+  @scala.inline
+  def WebkitTextUnderlinePosition: WebkitTextUnderlinePosition = "WebkitTextUnderlinePosition".asInstanceOf[WebkitTextUnderlinePosition]
   @scala.inline
   def WebkitTouchCallout: WebkitTouchCallout = "WebkitTouchCallout".asInstanceOf[WebkitTouchCallout]
   @scala.inline
@@ -3642,6 +3662,16 @@ object styledSystemCoreStrings {
   def scrollSnapCoordinate: scrollSnapCoordinate = "scrollSnapCoordinate".asInstanceOf[scrollSnapCoordinate]
   @scala.inline
   def scrollSnapDestination: scrollSnapDestination = "scrollSnapDestination".asInstanceOf[scrollSnapDestination]
+  @scala.inline
+  def scrollSnapMargin: scrollSnapMargin = "scrollSnapMargin".asInstanceOf[scrollSnapMargin]
+  @scala.inline
+  def scrollSnapMarginBottom: scrollSnapMarginBottom = "scrollSnapMarginBottom".asInstanceOf[scrollSnapMarginBottom]
+  @scala.inline
+  def scrollSnapMarginLeft: scrollSnapMarginLeft = "scrollSnapMarginLeft".asInstanceOf[scrollSnapMarginLeft]
+  @scala.inline
+  def scrollSnapMarginRight: scrollSnapMarginRight = "scrollSnapMarginRight".asInstanceOf[scrollSnapMarginRight]
+  @scala.inline
+  def scrollSnapMarginTop: scrollSnapMarginTop = "scrollSnapMarginTop".asInstanceOf[scrollSnapMarginTop]
   @scala.inline
   def scrollSnapPointsX: scrollSnapPointsX = "scrollSnapPointsX".asInstanceOf[scrollSnapPointsX]
   @scala.inline

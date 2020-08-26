@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   * the structure of the accessibility representation tree as simple as possible and provide as much relevant information as possible.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleChartDocumentView
   extends XAccessible
      with XAccessibleContext

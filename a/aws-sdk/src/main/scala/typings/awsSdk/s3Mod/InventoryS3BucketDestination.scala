@@ -30,18 +30,38 @@ trait InventoryS3BucketDestination extends js.Object {
 
 object InventoryS3BucketDestination {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    Format: InventoryFormat,
-    AccountId: AccountId = null,
-    Encryption: InventoryEncryption = null,
-    Prefix: Prefix = null
-  ): InventoryS3BucketDestination = {
+  def apply(Bucket: BucketName, Format: InventoryFormat): InventoryS3BucketDestination = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryS3BucketDestination]
   }
+  @scala.inline
+  implicit class InventoryS3BucketDestinationOps[Self <: InventoryS3BucketDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: InventoryFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setEncryption(value: InventoryEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ autoprefixer-core was depreacted, use autoprefixer
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 110 |
-| # downloads        | 4573388 |
+| # downloads        | 4517059 |
 | # stars            | 9 |
 
 ## Links

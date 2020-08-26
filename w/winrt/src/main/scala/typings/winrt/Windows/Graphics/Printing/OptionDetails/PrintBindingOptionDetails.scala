@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PrintBindingOptionDetails extends IPrintItemListOptionDetails
 
 object PrintBindingOptionDetails {

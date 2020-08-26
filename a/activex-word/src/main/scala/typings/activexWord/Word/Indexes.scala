@@ -24,9 +24,197 @@ trait Indexes extends js.Object {
     IndexLanguage: js.UndefOr[js.Any]
   ): Index = js.native
   def AddOld(Range: Range): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.UndefOr[scala.Nothing],
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.Any,
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.Any,
+    NumberOfColumns: js.UndefOr[scala.Nothing],
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.Any,
+    NumberOfColumns: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.Any,
+    NumberOfColumns: js.Any,
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: js.UndefOr[scala.Nothing], RightAlignPageNumbers: js.Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.Any,
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.UndefOr[scala.Nothing],
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.Any,
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.Any,
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.Any,
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.Any,
+    Type: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.Any,
+    Type: js.Any,
+    NumberOfColumns: js.UndefOr[scala.Nothing],
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.Any,
+    Type: js.Any,
+    NumberOfColumns: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.UndefOr[scala.Nothing],
+    RightAlignPageNumbers: js.Any,
+    Type: js.Any,
+    NumberOfColumns: js.Any,
+    AccentedLetters: js.Any
+  ): Index = js.native
   def AddOld(Range: Range, HeadingSeparator: js.Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.UndefOr[scala.Nothing],
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.Any,
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.Any,
+    NumberOfColumns: js.UndefOr[scala.Nothing],
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.Any,
+    NumberOfColumns: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.UndefOr[scala.Nothing],
+    Type: js.Any,
+    NumberOfColumns: js.Any,
+    AccentedLetters: js.Any
+  ): Index = js.native
   def AddOld(Range: Range, HeadingSeparator: js.Any, RightAlignPageNumbers: js.Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.Any,
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.UndefOr[scala.Nothing],
+    AccentedLetters: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.Any,
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.Any,
+    Type: js.UndefOr[scala.Nothing],
+    NumberOfColumns: js.Any,
+    AccentedLetters: js.Any
+  ): Index = js.native
   def AddOld(Range: Range, HeadingSeparator: js.Any, RightAlignPageNumbers: js.Any, Type: js.Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: js.Any,
+    RightAlignPageNumbers: js.Any,
+    Type: js.Any,
+    NumberOfColumns: js.UndefOr[scala.Nothing],
+    AccentedLetters: js.Any
+  ): Index = js.native
   def AddOld(
     Range: Range,
     HeadingSeparator: js.Any,

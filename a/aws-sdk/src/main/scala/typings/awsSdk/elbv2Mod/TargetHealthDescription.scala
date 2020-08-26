@@ -22,16 +22,34 @@ trait TargetHealthDescription extends js.Object {
 
 object TargetHealthDescription {
   @scala.inline
-  def apply(
-    HealthCheckPort: HealthCheckPort = null,
-    Target: TargetDescription = null,
-    TargetHealth: TargetHealth = null
-  ): TargetHealthDescription = {
+  def apply(): TargetHealthDescription = {
     val __obj = js.Dynamic.literal()
-    if (HealthCheckPort != null) __obj.updateDynamic("HealthCheckPort")(HealthCheckPort.asInstanceOf[js.Any])
-    if (Target != null) __obj.updateDynamic("Target")(Target.asInstanceOf[js.Any])
-    if (TargetHealth != null) __obj.updateDynamic("TargetHealth")(TargetHealth.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetHealthDescription]
   }
+  @scala.inline
+  implicit class TargetHealthDescriptionOps[Self <: TargetHealthDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHealthCheckPort(value: HealthCheckPort): Self = this.set("HealthCheckPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckPort: Self = this.set("HealthCheckPort", js.undefined)
+    @scala.inline
+    def setTarget(value: TargetDescription): Self = this.set("Target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("Target", js.undefined)
+    @scala.inline
+    def setTargetHealth(value: TargetHealth): Self = this.set("TargetHealth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetHealth: Self = this.set("TargetHealth", js.undefined)
+  }
+  
 }
 

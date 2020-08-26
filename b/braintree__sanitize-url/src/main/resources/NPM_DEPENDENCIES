@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@braintree/sanitize-url" : "4.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@braintree/sanitize-url" : "4.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

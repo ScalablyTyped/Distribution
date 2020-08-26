@@ -12,7 +12,7 @@ Externalizes the source map found inside a stream to an external `.js.map` file
 | Keywords           | source-map, source, map, external, mapfile, browserify, browserify-tool |
 | # releases         | 2 |
 | # dependents       | 81 |
-| # downloads        | 597804 |
+| # downloads        | 609212 |
 | # stars            | 19 |
 
 ## Links

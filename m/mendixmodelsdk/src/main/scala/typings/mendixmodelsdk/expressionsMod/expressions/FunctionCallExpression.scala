@@ -62,7 +62,7 @@ class FunctionCallExpression protected () extends Expression {
     */
   def arguments: IList[Expression] = js.native
   def functionName: String = js.native
-  def functionName(newValue: String): js.Any = js.native
+  def functionName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

@@ -5,84 +5,143 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<{[ option in json-schema-faker.json-schema-faker.jsfOptions ]: any}> */
+@js.native
 trait OptionInputObject extends js.Object {
-  var alwaysFakeOptionals: js.UndefOr[js.Any] = js.undefined
-  var defaultInvalidTypeProduct: js.UndefOr[js.Any] = js.undefined
-  var defaultRandExpMax: js.UndefOr[js.Any] = js.undefined
-  var failOnInvalidFormat: js.UndefOr[js.Any] = js.undefined
-  var failOnInvalidTypes: js.UndefOr[js.Any] = js.undefined
-  var fillProperties: js.UndefOr[js.Any] = js.undefined
-  var fixedProbabilities: js.UndefOr[js.Any] = js.undefined
-  var ignoreMissingRefs: js.UndefOr[js.Any] = js.undefined
-  var ignoreProperties: js.UndefOr[js.Any] = js.undefined
-  var maxItems: js.UndefOr[js.Any] = js.undefined
-  var maxLength: js.UndefOr[js.Any] = js.undefined
-  var minItems: js.UndefOr[js.Any] = js.undefined
-  var minLength: js.UndefOr[js.Any] = js.undefined
-  var optionalsProbability: js.UndefOr[js.Any] = js.undefined
-  var random: js.UndefOr[js.Any] = js.undefined
-  var refDepthMax: js.UndefOr[js.Any] = js.undefined
-  var refDepthMin: js.UndefOr[js.Any] = js.undefined
-  var replaceEmptyByRandomValue: js.UndefOr[js.Any] = js.undefined
-  var requiredOnly: js.UndefOr[js.Any] = js.undefined
-  var resolveJsonPath: js.UndefOr[js.Any] = js.undefined
-  var reuseProperties: js.UndefOr[js.Any] = js.undefined
-  var useDefaultValue: js.UndefOr[js.Any] = js.undefined
-  var useExamplesValue: js.UndefOr[js.Any] = js.undefined
+  var alwaysFakeOptionals: js.UndefOr[js.Any] = js.native
+  var defaultInvalidTypeProduct: js.UndefOr[js.Any] = js.native
+  var defaultRandExpMax: js.UndefOr[js.Any] = js.native
+  var failOnInvalidFormat: js.UndefOr[js.Any] = js.native
+  var failOnInvalidTypes: js.UndefOr[js.Any] = js.native
+  var fillProperties: js.UndefOr[js.Any] = js.native
+  var fixedProbabilities: js.UndefOr[js.Any] = js.native
+  var ignoreMissingRefs: js.UndefOr[js.Any] = js.native
+  var ignoreProperties: js.UndefOr[js.Any] = js.native
+  var maxItems: js.UndefOr[js.Any] = js.native
+  var maxLength: js.UndefOr[js.Any] = js.native
+  var minItems: js.UndefOr[js.Any] = js.native
+  var minLength: js.UndefOr[js.Any] = js.native
+  var optionalsProbability: js.UndefOr[js.Any] = js.native
+  var random: js.UndefOr[js.Any] = js.native
+  var refDepthMax: js.UndefOr[js.Any] = js.native
+  var refDepthMin: js.UndefOr[js.Any] = js.native
+  var replaceEmptyByRandomValue: js.UndefOr[js.Any] = js.native
+  var requiredOnly: js.UndefOr[js.Any] = js.native
+  var resolveJsonPath: js.UndefOr[js.Any] = js.native
+  var reuseProperties: js.UndefOr[js.Any] = js.native
+  var useDefaultValue: js.UndefOr[js.Any] = js.native
+  var useExamplesValue: js.UndefOr[js.Any] = js.native
 }
 
 object OptionInputObject {
   @scala.inline
-  def apply(
-    alwaysFakeOptionals: js.Any = null,
-    defaultInvalidTypeProduct: js.Any = null,
-    defaultRandExpMax: js.Any = null,
-    failOnInvalidFormat: js.Any = null,
-    failOnInvalidTypes: js.Any = null,
-    fillProperties: js.Any = null,
-    fixedProbabilities: js.Any = null,
-    ignoreMissingRefs: js.Any = null,
-    ignoreProperties: js.Any = null,
-    maxItems: js.Any = null,
-    maxLength: js.Any = null,
-    minItems: js.Any = null,
-    minLength: js.Any = null,
-    optionalsProbability: js.Any = null,
-    random: js.Any = null,
-    refDepthMax: js.Any = null,
-    refDepthMin: js.Any = null,
-    replaceEmptyByRandomValue: js.Any = null,
-    requiredOnly: js.Any = null,
-    resolveJsonPath: js.Any = null,
-    reuseProperties: js.Any = null,
-    useDefaultValue: js.Any = null,
-    useExamplesValue: js.Any = null
-  ): OptionInputObject = {
+  def apply(): OptionInputObject = {
     val __obj = js.Dynamic.literal()
-    if (alwaysFakeOptionals != null) __obj.updateDynamic("alwaysFakeOptionals")(alwaysFakeOptionals.asInstanceOf[js.Any])
-    if (defaultInvalidTypeProduct != null) __obj.updateDynamic("defaultInvalidTypeProduct")(defaultInvalidTypeProduct.asInstanceOf[js.Any])
-    if (defaultRandExpMax != null) __obj.updateDynamic("defaultRandExpMax")(defaultRandExpMax.asInstanceOf[js.Any])
-    if (failOnInvalidFormat != null) __obj.updateDynamic("failOnInvalidFormat")(failOnInvalidFormat.asInstanceOf[js.Any])
-    if (failOnInvalidTypes != null) __obj.updateDynamic("failOnInvalidTypes")(failOnInvalidTypes.asInstanceOf[js.Any])
-    if (fillProperties != null) __obj.updateDynamic("fillProperties")(fillProperties.asInstanceOf[js.Any])
-    if (fixedProbabilities != null) __obj.updateDynamic("fixedProbabilities")(fixedProbabilities.asInstanceOf[js.Any])
-    if (ignoreMissingRefs != null) __obj.updateDynamic("ignoreMissingRefs")(ignoreMissingRefs.asInstanceOf[js.Any])
-    if (ignoreProperties != null) __obj.updateDynamic("ignoreProperties")(ignoreProperties.asInstanceOf[js.Any])
-    if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (minItems != null) __obj.updateDynamic("minItems")(minItems.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (optionalsProbability != null) __obj.updateDynamic("optionalsProbability")(optionalsProbability.asInstanceOf[js.Any])
-    if (random != null) __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
-    if (refDepthMax != null) __obj.updateDynamic("refDepthMax")(refDepthMax.asInstanceOf[js.Any])
-    if (refDepthMin != null) __obj.updateDynamic("refDepthMin")(refDepthMin.asInstanceOf[js.Any])
-    if (replaceEmptyByRandomValue != null) __obj.updateDynamic("replaceEmptyByRandomValue")(replaceEmptyByRandomValue.asInstanceOf[js.Any])
-    if (requiredOnly != null) __obj.updateDynamic("requiredOnly")(requiredOnly.asInstanceOf[js.Any])
-    if (resolveJsonPath != null) __obj.updateDynamic("resolveJsonPath")(resolveJsonPath.asInstanceOf[js.Any])
-    if (reuseProperties != null) __obj.updateDynamic("reuseProperties")(reuseProperties.asInstanceOf[js.Any])
-    if (useDefaultValue != null) __obj.updateDynamic("useDefaultValue")(useDefaultValue.asInstanceOf[js.Any])
-    if (useExamplesValue != null) __obj.updateDynamic("useExamplesValue")(useExamplesValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionInputObject]
   }
+  @scala.inline
+  implicit class OptionInputObjectOps[Self <: OptionInputObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlwaysFakeOptionals(value: js.Any): Self = this.set("alwaysFakeOptionals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysFakeOptionals: Self = this.set("alwaysFakeOptionals", js.undefined)
+    @scala.inline
+    def setDefaultInvalidTypeProduct(value: js.Any): Self = this.set("defaultInvalidTypeProduct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultInvalidTypeProduct: Self = this.set("defaultInvalidTypeProduct", js.undefined)
+    @scala.inline
+    def setDefaultRandExpMax(value: js.Any): Self = this.set("defaultRandExpMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRandExpMax: Self = this.set("defaultRandExpMax", js.undefined)
+    @scala.inline
+    def setFailOnInvalidFormat(value: js.Any): Self = this.set("failOnInvalidFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailOnInvalidFormat: Self = this.set("failOnInvalidFormat", js.undefined)
+    @scala.inline
+    def setFailOnInvalidTypes(value: js.Any): Self = this.set("failOnInvalidTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailOnInvalidTypes: Self = this.set("failOnInvalidTypes", js.undefined)
+    @scala.inline
+    def setFillProperties(value: js.Any): Self = this.set("fillProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillProperties: Self = this.set("fillProperties", js.undefined)
+    @scala.inline
+    def setFixedProbabilities(value: js.Any): Self = this.set("fixedProbabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedProbabilities: Self = this.set("fixedProbabilities", js.undefined)
+    @scala.inline
+    def setIgnoreMissingRefs(value: js.Any): Self = this.set("ignoreMissingRefs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreMissingRefs: Self = this.set("ignoreMissingRefs", js.undefined)
+    @scala.inline
+    def setIgnoreProperties(value: js.Any): Self = this.set("ignoreProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreProperties: Self = this.set("ignoreProperties", js.undefined)
+    @scala.inline
+    def setMaxItems(value: js.Any): Self = this.set("maxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("maxItems", js.undefined)
+    @scala.inline
+    def setMaxLength(value: js.Any): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    @scala.inline
+    def setMinItems(value: js.Any): Self = this.set("minItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinItems: Self = this.set("minItems", js.undefined)
+    @scala.inline
+    def setMinLength(value: js.Any): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setOptionalsProbability(value: js.Any): Self = this.set("optionalsProbability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionalsProbability: Self = this.set("optionalsProbability", js.undefined)
+    @scala.inline
+    def setRandom(value: js.Any): Self = this.set("random", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRandom: Self = this.set("random", js.undefined)
+    @scala.inline
+    def setRefDepthMax(value: js.Any): Self = this.set("refDepthMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefDepthMax: Self = this.set("refDepthMax", js.undefined)
+    @scala.inline
+    def setRefDepthMin(value: js.Any): Self = this.set("refDepthMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefDepthMin: Self = this.set("refDepthMin", js.undefined)
+    @scala.inline
+    def setReplaceEmptyByRandomValue(value: js.Any): Self = this.set("replaceEmptyByRandomValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceEmptyByRandomValue: Self = this.set("replaceEmptyByRandomValue", js.undefined)
+    @scala.inline
+    def setRequiredOnly(value: js.Any): Self = this.set("requiredOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredOnly: Self = this.set("requiredOnly", js.undefined)
+    @scala.inline
+    def setResolveJsonPath(value: js.Any): Self = this.set("resolveJsonPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolveJsonPath: Self = this.set("resolveJsonPath", js.undefined)
+    @scala.inline
+    def setReuseProperties(value: js.Any): Self = this.set("reuseProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReuseProperties: Self = this.set("reuseProperties", js.undefined)
+    @scala.inline
+    def setUseDefaultValue(value: js.Any): Self = this.set("useDefaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseDefaultValue: Self = this.set("useDefaultValue", js.undefined)
+    @scala.inline
+    def setUseExamplesValue(value: js.Any): Self = this.set("useExamplesValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseExamplesValue: Self = this.set("useExamplesValue", js.undefined)
+  }
+  
 }
 

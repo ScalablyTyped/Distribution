@@ -11,8 +11,8 @@ compute the closest common parent for file paths
 | Full name          | commondir |
 | Keywords           | common, path, directory, file, parent, root |
 | # releases         | 0 |
-| # dependents       | 93 |
-| # downloads        | 290550970 |
+| # dependents       | 92 |
+| # downloads        | 297795467 |
 | # stars            | 4 |
 
 ## Links

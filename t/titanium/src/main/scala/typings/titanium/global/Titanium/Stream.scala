@@ -104,7 +104,34 @@ object Stream extends js.Object {
   def read(
     sourceStream: typings.titanium.Titanium.IOStream,
     buffer: typings.titanium.Titanium.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
+  ): Unit = js.native
+  def read(
+    sourceStream: typings.titanium.Titanium.IOStream,
+    buffer: typings.titanium.Titanium.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double
+  ): Unit = js.native
+  def read(
+    sourceStream: typings.titanium.Titanium.IOStream,
+    buffer: typings.titanium.Titanium.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
+  ): Unit = js.native
+  def read(
+    sourceStream: typings.titanium.Titanium.IOStream,
+    buffer: typings.titanium.Titanium.Buffer,
     offset: Double
+  ): Unit = js.native
+  def read(
+    sourceStream: typings.titanium.Titanium.IOStream,
+    buffer: typings.titanium.Titanium.Buffer,
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
   ): Unit = js.native
   def read(
     sourceStream: typings.titanium.Titanium.IOStream,
@@ -123,6 +150,11 @@ object Stream extends js.Object {
     * Reads all data from the specified [IOStream](Titanium.IOStream).
     */
   def readAll(sourceStream: typings.titanium.Titanium.IOStream): typings.titanium.Titanium.Buffer | Unit = js.native
+  def readAll(
+    sourceStream: typings.titanium.Titanium.IOStream,
+    buffer: js.UndefOr[scala.Nothing],
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
+  ): typings.titanium.Titanium.Buffer | Unit = js.native
   def readAll(sourceStream: typings.titanium.Titanium.IOStream, buffer: typings.titanium.Titanium.Buffer): typings.titanium.Titanium.Buffer | Unit = js.native
   def readAll(
     sourceStream: typings.titanium.Titanium.IOStream,
@@ -151,7 +183,34 @@ object Stream extends js.Object {
   def write(
     outputStream: typings.titanium.Titanium.IOStream,
     buffer: typings.titanium.Titanium.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, Unit]
+  ): Unit = js.native
+  def write(
+    outputStream: typings.titanium.Titanium.IOStream,
+    buffer: typings.titanium.Titanium.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double
+  ): Unit = js.native
+  def write(
+    outputStream: typings.titanium.Titanium.IOStream,
+    buffer: typings.titanium.Titanium.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, Unit]
+  ): Unit = js.native
+  def write(
+    outputStream: typings.titanium.Titanium.IOStream,
+    buffer: typings.titanium.Titanium.Buffer,
     offset: Double
+  ): Unit = js.native
+  def write(
+    outputStream: typings.titanium.Titanium.IOStream,
+    buffer: typings.titanium.Titanium.Buffer,
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, Unit]
   ): Unit = js.native
   def write(
     outputStream: typings.titanium.Titanium.IOStream,

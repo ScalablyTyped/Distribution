@@ -4,27 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var expandUsers: js.UndefOr[Boolean] = js.undefined
-  var keyOrder: js.UndefOr[js.Array[String] | CompareFn] = js.undefined
-  var tabWidth: js.UndefOr[Double] = js.undefined
-  var useTabs: js.UndefOr[Boolean] = js.undefined
+  var expandUsers: js.UndefOr[Boolean] = js.native
+  var keyOrder: js.UndefOr[js.Array[String] | CompareFn] = js.native
+  var tabWidth: js.UndefOr[Double] = js.native
+  var useTabs: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    expandUsers: js.UndefOr[Boolean] = js.undefined,
-    keyOrder: js.Array[String] | CompareFn = null,
-    tabWidth: js.UndefOr[Double] = js.undefined,
-    useTabs: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expandUsers)) __obj.updateDynamic("expandUsers")(expandUsers.get.asInstanceOf[js.Any])
-    if (keyOrder != null) __obj.updateDynamic("keyOrder")(keyOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabWidth)) __obj.updateDynamic("tabWidth")(tabWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTabs)) __obj.updateDynamic("useTabs")(useTabs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpandUsers(value: Boolean): Self = this.set("expandUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandUsers: Self = this.set("expandUsers", js.undefined)
+    @scala.inline
+    def setKeyOrderFunction2(value: (/* a */ String, /* b */ String) => Double): Self = this.set("keyOrder", js.Any.fromFunction2(value))
+    @scala.inline
+    def setKeyOrderVarargs(value: String*): Self = this.set("keyOrder", js.Array(value :_*))
+    @scala.inline
+    def setKeyOrder(value: js.Array[String] | CompareFn): Self = this.set("keyOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyOrder: Self = this.set("keyOrder", js.undefined)
+    @scala.inline
+    def setTabWidth(value: Double): Self = this.set("tabWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabWidth: Self = this.set("tabWidth", js.undefined)
+    @scala.inline
+    def setUseTabs(value: Boolean): Self = this.set("useTabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseTabs: Self = this.set("useTabs", js.undefined)
+  }
+  
 }
 

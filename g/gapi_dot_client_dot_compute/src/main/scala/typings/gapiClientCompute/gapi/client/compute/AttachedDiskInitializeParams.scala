@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AttachedDiskInitializeParams extends js.Object {
   /** Specifies the disk name. If not specified, the default is to use the name of the instance. */
-  var diskName: js.UndefOr[String] = js.undefined
+  var diskName: js.UndefOr[String] = js.native
   /** Specifies the size of the disk in base-2 GB. */
-  var diskSizeGb: js.UndefOr[String] = js.undefined
+  var diskSizeGb: js.UndefOr[String] = js.native
   /**
     * Specifies the disk type to use to create the instance. If not specified, the default is pd-standard, specified using the full URL. For example:
     *
@@ -20,7 +21,7 @@ trait AttachedDiskInitializeParams extends js.Object {
     * - projects/project/zones/zone/diskTypes/diskType
     * - zones/zone/diskTypes/diskType  Note that for InstanceTemplate, this is the name of the disk type, not URL.
     */
-  var diskType: js.UndefOr[String] = js.undefined
+  var diskType: js.UndefOr[String] = js.native
   /**
     * The source image to create this disk. When creating a new instance, one of initializeParams.sourceImage or disks.source is required.
     *
@@ -44,32 +45,54 @@ trait AttachedDiskInitializeParams extends js.Object {
     *
     * If the source image is deleted later, this field will not be set.
     */
-  var sourceImage: js.UndefOr[String] = js.undefined
+  var sourceImage: js.UndefOr[String] = js.native
   /**
     * The customer-supplied encryption key of the source image. Required if the source image is protected by a customer-supplied encryption key.
     *
     * Instance templates do not store customer-supplied encryption keys, so you cannot create disks for instances in a managed instance group if the source
     * images are encrypted with your own keys.
     */
-  var sourceImageEncryptionKey: js.UndefOr[CustomerEncryptionKey] = js.undefined
+  var sourceImageEncryptionKey: js.UndefOr[CustomerEncryptionKey] = js.native
 }
 
 object AttachedDiskInitializeParams {
   @scala.inline
-  def apply(
-    diskName: String = null,
-    diskSizeGb: String = null,
-    diskType: String = null,
-    sourceImage: String = null,
-    sourceImageEncryptionKey: CustomerEncryptionKey = null
-  ): AttachedDiskInitializeParams = {
+  def apply(): AttachedDiskInitializeParams = {
     val __obj = js.Dynamic.literal()
-    if (diskName != null) __obj.updateDynamic("diskName")(diskName.asInstanceOf[js.Any])
-    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
-    if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
-    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage.asInstanceOf[js.Any])
-    if (sourceImageEncryptionKey != null) __obj.updateDynamic("sourceImageEncryptionKey")(sourceImageEncryptionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachedDiskInitializeParams]
   }
+  @scala.inline
+  implicit class AttachedDiskInitializeParamsOps[Self <: AttachedDiskInitializeParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskName(value: String): Self = this.set("diskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskName: Self = this.set("diskName", js.undefined)
+    @scala.inline
+    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    @scala.inline
+    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    @scala.inline
+    def setSourceImage(value: String): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    @scala.inline
+    def setSourceImageEncryptionKey(value: CustomerEncryptionKey): Self = this.set("sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImageEncryptionKey: Self = this.set("sourceImageEncryptionKey", js.undefined)
+  }
+  
 }
 

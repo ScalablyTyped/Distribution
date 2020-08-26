@@ -20,5 +20,11 @@ object subscribeToResultMod extends js.Object {
     outerIndex: js.UndefOr[scala.Nothing],
     innerSubscriber: InnerSubscriber[T, R]
   ): js.UndefOr[Subscription] = js.native
+  def subscribeToResult[T, R](
+    outerSubscriber: OuterSubscriber[T, R],
+    result: js.Any,
+    outerValue: js.UndefOr[scala.Nothing],
+    outerIndex: Double
+  ): js.UndefOr[Subscription] = js.native
 }
 

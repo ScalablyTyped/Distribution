@@ -11,8 +11,8 @@ Converts a Web-API readable-stream into a Node readable-stream.
 | Full name          | readable-web-to-node-stream |
 | Keywords           | stream.readable, web, stream, coverter, readable, readablestream |
 | # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 333105 |
+| # dependents       | 4 |
+| # downloads        | 1923324 |
 | # stars            | 0 |
 
 ## Links

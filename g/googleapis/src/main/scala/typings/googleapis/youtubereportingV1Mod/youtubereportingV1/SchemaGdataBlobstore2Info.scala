@@ -33,20 +33,42 @@ trait SchemaGdataBlobstore2Info extends js.Object {
 
 object SchemaGdataBlobstore2Info {
   @scala.inline
-  def apply(
-    blobGeneration: String = null,
-    blobId: String = null,
-    downloadReadHandle: String = null,
-    readToken: String = null,
-    uploadMetadataContainer: String = null
-  ): SchemaGdataBlobstore2Info = {
+  def apply(): SchemaGdataBlobstore2Info = {
     val __obj = js.Dynamic.literal()
-    if (blobGeneration != null) __obj.updateDynamic("blobGeneration")(blobGeneration.asInstanceOf[js.Any])
-    if (blobId != null) __obj.updateDynamic("blobId")(blobId.asInstanceOf[js.Any])
-    if (downloadReadHandle != null) __obj.updateDynamic("downloadReadHandle")(downloadReadHandle.asInstanceOf[js.Any])
-    if (readToken != null) __obj.updateDynamic("readToken")(readToken.asInstanceOf[js.Any])
-    if (uploadMetadataContainer != null) __obj.updateDynamic("uploadMetadataContainer")(uploadMetadataContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGdataBlobstore2Info]
   }
+  @scala.inline
+  implicit class SchemaGdataBlobstore2InfoOps[Self <: SchemaGdataBlobstore2Info] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlobGeneration(value: String): Self = this.set("blobGeneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlobGeneration: Self = this.set("blobGeneration", js.undefined)
+    @scala.inline
+    def setBlobId(value: String): Self = this.set("blobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlobId: Self = this.set("blobId", js.undefined)
+    @scala.inline
+    def setDownloadReadHandle(value: String): Self = this.set("downloadReadHandle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadReadHandle: Self = this.set("downloadReadHandle", js.undefined)
+    @scala.inline
+    def setReadToken(value: String): Self = this.set("readToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadToken: Self = this.set("readToken", js.undefined)
+    @scala.inline
+    def setUploadMetadataContainer(value: String): Self = this.set("uploadMetadataContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadMetadataContainer: Self = this.set("uploadMetadataContainer", js.undefined)
+  }
+  
 }
 

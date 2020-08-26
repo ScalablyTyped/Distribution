@@ -1,65 +1,67 @@
 package typings.ckeditor.CKEDITOR.dialog.definition
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.ckeditor.CKEDITOR.plugins.widget
-import typings.ckeditor.CKEDITOR.style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait vbox extends uiElement {
-  var children: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.ui.dialog.uiElement]] = js.undefined
-  var expand: js.UndefOr[Boolean] = js.undefined
-  var heights: js.UndefOr[js.Array[Double]] = js.undefined
-  var padding: js.UndefOr[Double] = js.undefined
-  var styles: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[js.Array[Double]] = js.undefined
+  var children: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.ui.dialog.uiElement]] = js.native
+  var expand: js.UndefOr[Boolean] = js.native
+  var heights: js.UndefOr[js.Array[Double]] = js.native
+  var padding: js.UndefOr[Double] = js.native
+  var styles: js.UndefOr[String] = js.native
+  var width: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object vbox {
   @scala.inline
-  def apply(
-    align: String = null,
-    children: js.Array[typings.ckeditor.CKEDITOR.ui.dialog.uiElement] = null,
-    className: String = null,
-    commit: /* widget */ widget => Unit = null,
-    expand: js.UndefOr[Boolean] = js.undefined,
-    heights: js.Array[Double] = null,
-    id: String = null,
-    label: String = null,
-    onHide: /* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement => Unit = null,
-    onLoad: /* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement => Unit = null,
-    onShow: /* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement => Unit = null,
-    padding: js.UndefOr[Double] = js.undefined,
-    requiredContent: String | StringDictionary[js.Any] | style = null,
-    setup: /* widget */ widget => Unit = null,
-    style: String = null,
-    styles: String = null,
-    title: String = null,
-    `type`: String = null,
-    width: js.Array[Double] = null
-  ): vbox = {
+  def apply(): vbox = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (commit != null) __obj.updateDynamic("commit")(js.Any.fromFunction1(commit))
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.get.asInstanceOf[js.Any])
-    if (heights != null) __obj.updateDynamic("heights")(heights.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (requiredContent != null) __obj.updateDynamic("requiredContent")(requiredContent.asInstanceOf[js.Any])
-    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[vbox]
   }
+  @scala.inline
+  implicit class vboxOps[Self <: vbox] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: typings.ckeditor.CKEDITOR.ui.dialog.uiElement*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[typings.ckeditor.CKEDITOR.ui.dialog.uiElement]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setExpand(value: Boolean): Self = this.set("expand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpand: Self = this.set("expand", js.undefined)
+    @scala.inline
+    def setHeightsVarargs(value: Double*): Self = this.set("heights", js.Array(value :_*))
+    @scala.inline
+    def setHeights(value: js.Array[Double]): Self = this.set("heights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeights: Self = this.set("heights", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setStyles(value: String): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setWidthVarargs(value: Double*): Self = this.set("width", js.Array(value :_*))
+    @scala.inline
+    def setWidth(value: js.Array[Double]): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

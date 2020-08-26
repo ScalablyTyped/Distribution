@@ -26,18 +26,42 @@ trait PresetSettings extends js.Object {
 
 object PresetSettings {
   @scala.inline
-  def apply(
-    AudioDescriptions: listOfAudioDescription = null,
-    CaptionDescriptions: listOfCaptionDescriptionPreset = null,
-    ContainerSettings: ContainerSettings = null,
-    VideoDescription: VideoDescription = null
-  ): PresetSettings = {
+  def apply(): PresetSettings = {
     val __obj = js.Dynamic.literal()
-    if (AudioDescriptions != null) __obj.updateDynamic("AudioDescriptions")(AudioDescriptions.asInstanceOf[js.Any])
-    if (CaptionDescriptions != null) __obj.updateDynamic("CaptionDescriptions")(CaptionDescriptions.asInstanceOf[js.Any])
-    if (ContainerSettings != null) __obj.updateDynamic("ContainerSettings")(ContainerSettings.asInstanceOf[js.Any])
-    if (VideoDescription != null) __obj.updateDynamic("VideoDescription")(VideoDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresetSettings]
   }
+  @scala.inline
+  implicit class PresetSettingsOps[Self <: PresetSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioDescriptionsVarargs(value: AudioDescription*): Self = this.set("AudioDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setAudioDescriptions(value: listOfAudioDescription): Self = this.set("AudioDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioDescriptions: Self = this.set("AudioDescriptions", js.undefined)
+    @scala.inline
+    def setCaptionDescriptionsVarargs(value: CaptionDescriptionPreset*): Self = this.set("CaptionDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setCaptionDescriptions(value: listOfCaptionDescriptionPreset): Self = this.set("CaptionDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionDescriptions: Self = this.set("CaptionDescriptions", js.undefined)
+    @scala.inline
+    def setContainerSettings(value: ContainerSettings): Self = this.set("ContainerSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerSettings: Self = this.set("ContainerSettings", js.undefined)
+    @scala.inline
+    def setVideoDescription(value: VideoDescription): Self = this.set("VideoDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoDescription: Self = this.set("VideoDescription", js.undefined)
+  }
+  
 }
 

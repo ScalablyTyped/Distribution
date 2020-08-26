@@ -78,43 +78,92 @@ trait HealthCheckConfig extends js.Object {
 
 object HealthCheckConfig {
   @scala.inline
-  def apply(
-    Type: HealthCheckType,
-    AlarmIdentifier: AlarmIdentifier = null,
-    ChildHealthChecks: ChildHealthCheckList = null,
-    Disabled: js.UndefOr[Disabled] = js.undefined,
-    EnableSNI: js.UndefOr[EnableSNI] = js.undefined,
-    FailureThreshold: js.UndefOr[FailureThreshold] = js.undefined,
-    FullyQualifiedDomainName: FullyQualifiedDomainName = null,
-    HealthThreshold: js.UndefOr[HealthThreshold] = js.undefined,
-    IPAddress: IPAddress = null,
-    InsufficientDataHealthStatus: InsufficientDataHealthStatus = null,
-    Inverted: js.UndefOr[Inverted] = js.undefined,
-    MeasureLatency: js.UndefOr[MeasureLatency] = js.undefined,
-    Port: js.UndefOr[Port] = js.undefined,
-    Regions: HealthCheckRegionList = null,
-    RequestInterval: js.UndefOr[RequestInterval] = js.undefined,
-    ResourcePath: ResourcePath = null,
-    SearchString: SearchString = null
-  ): HealthCheckConfig = {
+  def apply(Type: HealthCheckType): HealthCheckConfig = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (AlarmIdentifier != null) __obj.updateDynamic("AlarmIdentifier")(AlarmIdentifier.asInstanceOf[js.Any])
-    if (ChildHealthChecks != null) __obj.updateDynamic("ChildHealthChecks")(ChildHealthChecks.asInstanceOf[js.Any])
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableSNI)) __obj.updateDynamic("EnableSNI")(EnableSNI.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailureThreshold)) __obj.updateDynamic("FailureThreshold")(FailureThreshold.get.asInstanceOf[js.Any])
-    if (FullyQualifiedDomainName != null) __obj.updateDynamic("FullyQualifiedDomainName")(FullyQualifiedDomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(HealthThreshold)) __obj.updateDynamic("HealthThreshold")(HealthThreshold.get.asInstanceOf[js.Any])
-    if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress.asInstanceOf[js.Any])
-    if (InsufficientDataHealthStatus != null) __obj.updateDynamic("InsufficientDataHealthStatus")(InsufficientDataHealthStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(Inverted)) __obj.updateDynamic("Inverted")(Inverted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MeasureLatency)) __obj.updateDynamic("MeasureLatency")(MeasureLatency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (Regions != null) __obj.updateDynamic("Regions")(Regions.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequestInterval)) __obj.updateDynamic("RequestInterval")(RequestInterval.get.asInstanceOf[js.Any])
-    if (ResourcePath != null) __obj.updateDynamic("ResourcePath")(ResourcePath.asInstanceOf[js.Any])
-    if (SearchString != null) __obj.updateDynamic("SearchString")(SearchString.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheckConfig]
   }
+  @scala.inline
+  implicit class HealthCheckConfigOps[Self <: HealthCheckConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: HealthCheckType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlarmIdentifier(value: AlarmIdentifier): Self = this.set("AlarmIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmIdentifier: Self = this.set("AlarmIdentifier", js.undefined)
+    @scala.inline
+    def setChildHealthChecksVarargs(value: HealthCheckId*): Self = this.set("ChildHealthChecks", js.Array(value :_*))
+    @scala.inline
+    def setChildHealthChecks(value: ChildHealthCheckList): Self = this.set("ChildHealthChecks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildHealthChecks: Self = this.set("ChildHealthChecks", js.undefined)
+    @scala.inline
+    def setDisabled(value: Disabled): Self = this.set("Disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    @scala.inline
+    def setEnableSNI(value: EnableSNI): Self = this.set("EnableSNI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSNI: Self = this.set("EnableSNI", js.undefined)
+    @scala.inline
+    def setFailureThreshold(value: FailureThreshold): Self = this.set("FailureThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureThreshold: Self = this.set("FailureThreshold", js.undefined)
+    @scala.inline
+    def setFullyQualifiedDomainName(value: FullyQualifiedDomainName): Self = this.set("FullyQualifiedDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullyQualifiedDomainName: Self = this.set("FullyQualifiedDomainName", js.undefined)
+    @scala.inline
+    def setHealthThreshold(value: HealthThreshold): Self = this.set("HealthThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthThreshold: Self = this.set("HealthThreshold", js.undefined)
+    @scala.inline
+    def setIPAddress(value: IPAddress): Self = this.set("IPAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPAddress: Self = this.set("IPAddress", js.undefined)
+    @scala.inline
+    def setInsufficientDataHealthStatus(value: InsufficientDataHealthStatus): Self = this.set("InsufficientDataHealthStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsufficientDataHealthStatus: Self = this.set("InsufficientDataHealthStatus", js.undefined)
+    @scala.inline
+    def setInverted(value: Inverted): Self = this.set("Inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("Inverted", js.undefined)
+    @scala.inline
+    def setMeasureLatency(value: MeasureLatency): Self = this.set("MeasureLatency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasureLatency: Self = this.set("MeasureLatency", js.undefined)
+    @scala.inline
+    def setPort(value: Port): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setRegionsVarargs(value: HealthCheckRegion*): Self = this.set("Regions", js.Array(value :_*))
+    @scala.inline
+    def setRegions(value: HealthCheckRegionList): Self = this.set("Regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegions: Self = this.set("Regions", js.undefined)
+    @scala.inline
+    def setRequestInterval(value: RequestInterval): Self = this.set("RequestInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestInterval: Self = this.set("RequestInterval", js.undefined)
+    @scala.inline
+    def setResourcePath(value: ResourcePath): Self = this.set("ResourcePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcePath: Self = this.set("ResourcePath", js.undefined)
+    @scala.inline
+    def setSearchString(value: SearchString): Self = this.set("SearchString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchString: Self = this.set("SearchString", js.undefined)
+  }
+  
 }
 

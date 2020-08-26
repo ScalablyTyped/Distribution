@@ -5,31 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AtImportOptions extends js.Object {
   /**
     * An array of folder names to add to Node's resolver. Values will be appended to the default resolve directories: `["node_modules", "web_modules"]`.
     *
     * This option is only for adding additional directories to default resolver. If you provide your own resolver via the `resolve` configuration option above, then this value will be ignored.
     */
-  var addModulesDirectories: js.UndefOr[js.Array[String]] = js.undefined
+  var addModulesDirectories: js.UndefOr[js.Array[String]] = js.native
   /**
     * You can overwrite the default loading way by setting this option. This function gets `(filename, importOptions)` arguments and returns content or promised content.
     */
   var load: js.UndefOr[
-    js.Function2[
-      /* filename */ String, 
-      /* importOptions */ AtImportOptions, 
-      String | js.Promise[String]
-    ]
-  ] = js.undefined
+    js.Function2[/* filename */ String, /* importOptions */ this.type, String | js.Promise[String]]
+  ] = js.native
   /**
     * A string or an array of paths in where to look for files.
     */
-  var path: js.UndefOr[String | js.Array[String]] = js.undefined
+  var path: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * An array of plugins to be applied on each imported files.
     */
-  var plugins: js.UndefOr[js.Array[AcceptedPlugin]] = js.undefined
+  var plugins: js.UndefOr[js.Array[AcceptedPlugin]] = js.native
   /**
     * You can provide a custom path resolver with this option. This function gets `(id, basedir, importOptions)` arguments and should return a path, an array of paths or a promise resolving to
     * the path(s). If you do not return an absolute path, your path will be resolved to an absolute path using the default resolver. You can use
@@ -39,10 +36,10 @@ trait AtImportOptions extends js.Object {
     js.Function3[
       /* id */ String, 
       /* basedir */ String, 
-      /* importOptions */ AtImportOptions, 
+      /* importOptions */ this.type, 
       String | js.Array[String] | (js.Thenable[String | js.Array[String]])
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Define the root where to resolve path (eg: place where `node_modules` are). Should not be used that much.
     *
@@ -50,36 +47,70 @@ trait AtImportOptions extends js.Object {
     *
     * Default: `process.cwd()` or dirname of [the postcss from](https://github.com/postcss/postcss#node-source)
     */
-  var root: js.UndefOr[String] = js.undefined
+  var root: js.UndefOr[String] = js.native
   /**
     * By default, similar files (based on the same content) are being skipped. It's to optimize output and skip similar files like `normalize.css` for example. If this behavior is not what you
     * want, just set this option to false to disable it.
     *
     * @default true
     */
-  var skipDuplicates: js.UndefOr[Boolean] = js.undefined
+  var skipDuplicates: js.UndefOr[Boolean] = js.native
 }
 
 object AtImportOptions {
   @scala.inline
-  def apply(
-    addModulesDirectories: js.Array[String] = null,
-    load: (/* filename */ String, /* importOptions */ AtImportOptions) => String | js.Promise[String] = null,
-    path: String | js.Array[String] = null,
-    plugins: js.Array[AcceptedPlugin] = null,
-    resolve: (/* id */ String, /* basedir */ String, /* importOptions */ AtImportOptions) => String | js.Array[String] | (js.Thenable[String | js.Array[String]]) = null,
-    root: String = null,
-    skipDuplicates: js.UndefOr[Boolean] = js.undefined
-  ): AtImportOptions = {
+  def apply(): AtImportOptions = {
     val __obj = js.Dynamic.literal()
-    if (addModulesDirectories != null) __obj.updateDynamic("addModulesDirectories")(addModulesDirectories.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction2(load))
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction3(resolve))
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipDuplicates)) __obj.updateDynamic("skipDuplicates")(skipDuplicates.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtImportOptions]
   }
+  @scala.inline
+  implicit class AtImportOptionsOps[Self <: AtImportOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddModulesDirectoriesVarargs(value: String*): Self = this.set("addModulesDirectories", js.Array(value :_*))
+    @scala.inline
+    def setAddModulesDirectories(value: js.Array[String]): Self = this.set("addModulesDirectories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddModulesDirectories: Self = this.set("addModulesDirectories", js.undefined)
+    @scala.inline
+    def setLoad(value: (/* filename */ String, AtImportOptions) => String | js.Promise[String]): Self = this.set("load", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setPathVarargs(value: String*): Self = this.set("path", js.Array(value :_*))
+    @scala.inline
+    def setPath(value: String | js.Array[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPluginsVarargs(value: AcceptedPlugin*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: js.Array[AcceptedPlugin]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setResolve(
+      value: (/* id */ String, /* basedir */ String, AtImportOptions) => String | js.Array[String] | (js.Thenable[String | js.Array[String]])
+    ): Self = this.set("resolve", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteResolve: Self = this.set("resolve", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSkipDuplicates(value: Boolean): Self = this.set("skipDuplicates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipDuplicates: Self = this.set("skipDuplicates", js.undefined)
+  }
+  
 }
 

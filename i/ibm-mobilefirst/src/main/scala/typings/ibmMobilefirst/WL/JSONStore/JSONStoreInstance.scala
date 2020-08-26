@@ -17,6 +17,7 @@ trait JSONStoreInstance extends js.Object {
   def clear(): JQueryDeferred[_] = js.native
   def clear(options: Options): JQueryDeferred[_] = js.native
   def count(): JQueryDeferred[_] = js.native
+  def count(query: js.UndefOr[scala.Nothing], options: Options): JQueryDeferred[_] = js.native
   def count(query: js.Any): JQueryDeferred[_] = js.native
   def count(query: js.Any, options: Options): JQueryDeferred[_] = js.native
   def countAllDirty(): JQueryDeferred[_] = js.native
@@ -78,6 +79,7 @@ trait JSONStoreInstance extends js.Object {
     */
   def store(data: js.Object): Unit = js.native
   def store(data: js.Object, options: StoreOptions): Unit = js.native
+  def toString(limit: js.UndefOr[scala.Nothing], offset: Double): JQueryDeferred[Double] = js.native
   def toString(limit: Double): JQueryDeferred[Double] = js.native
   def toString(limit: Double, offset: Double): JQueryDeferred[Double] = js.native
 }

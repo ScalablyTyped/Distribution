@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DialogflowVerification extends js.Object {
   /**
     * Custom error message as a string or a function that returns a string
@@ -12,30 +13,49 @@ trait DialogflowVerification extends js.Object {
     * The message will get sent back in the JSON top level `error` property.
     * @public
     */
-  var error: js.UndefOr[String | (js.Function1[/* error */ String, String])] = js.undefined
+  var error: js.UndefOr[String | (js.Function1[/* error */ String, String])] = js.native
   /**
     * An object representing the header key to value map to check against,
     * @public
     */
-  var headers: DialogflowVerificationHeaders
+  var headers: DialogflowVerificationHeaders = js.native
   /**
     * Custom status code to return on verification error.
     * @public
     */
-  var status: js.UndefOr[Double] = js.undefined
+  var status: js.UndefOr[Double] = js.native
 }
 
 object DialogflowVerification {
   @scala.inline
-  def apply(
-    headers: DialogflowVerificationHeaders,
-    error: String | (js.Function1[/* error */ String, String]) = null,
-    status: js.UndefOr[Double] = js.undefined
-  ): DialogflowVerification = {
+  def apply(headers: DialogflowVerificationHeaders): DialogflowVerification = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowVerification]
   }
+  @scala.inline
+  implicit class DialogflowVerificationOps[Self <: DialogflowVerification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeaders(value: DialogflowVerificationHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrorFunction1(value: /* error */ String => String): Self = this.set("error", js.Any.fromFunction1(value))
+    @scala.inline
+    def setError(value: String | (js.Function1[/* error */ String, String])): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

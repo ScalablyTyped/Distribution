@@ -4,47 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IndicesPutSettingsParams extends GenericParams {
-  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
-  var flatSettings: js.UndefOr[Boolean] = js.undefined
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
-  var index: NameList
-  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
-  var preserveExisting: js.UndefOr[Boolean] = js.undefined
+  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var flatSettings: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var index: NameList = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var preserveExisting: js.UndefOr[Boolean] = js.native
 }
 
 object IndicesPutSettingsParams {
   @scala.inline
-  def apply(
-    index: NameList,
-    allowNoIndices: js.UndefOr[Boolean] = js.undefined,
-    body: js.Any = null,
-    expandWildcards: ExpandWildcards = null,
-    filterPath: String | js.Array[String] = null,
-    flatSettings: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: TimeSpan = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    preserveExisting: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: js.UndefOr[Double] = js.undefined
-  ): IndicesPutSettingsParams = {
+  def apply(index: NameList): IndicesPutSettingsParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.get.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatSettings)) __obj.updateDynamic("flatSettings")(flatSettings.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.get.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveExisting)) __obj.updateDynamic("preserveExisting")(preserveExisting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesPutSettingsParams]
   }
+  @scala.inline
+  implicit class IndicesPutSettingsParamsOps[Self <: IndicesPutSettingsParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowNoIndices(value: Boolean): Self = this.set("allowNoIndices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowNoIndices: Self = this.set("allowNoIndices", js.undefined)
+    @scala.inline
+    def setExpandWildcards(value: ExpandWildcards): Self = this.set("expandWildcards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandWildcards: Self = this.set("expandWildcards", js.undefined)
+    @scala.inline
+    def setFlatSettings(value: Boolean): Self = this.set("flatSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatSettings: Self = this.set("flatSettings", js.undefined)
+    @scala.inline
+    def setIgnoreUnavailable(value: Boolean): Self = this.set("ignoreUnavailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUnavailable: Self = this.set("ignoreUnavailable", js.undefined)
+    @scala.inline
+    def setMasterTimeout(value: TimeSpan): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
+    @scala.inline
+    def setPreserveExisting(value: Boolean): Self = this.set("preserveExisting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveExisting: Self = this.set("preserveExisting", js.undefined)
+  }
+  
 }
 

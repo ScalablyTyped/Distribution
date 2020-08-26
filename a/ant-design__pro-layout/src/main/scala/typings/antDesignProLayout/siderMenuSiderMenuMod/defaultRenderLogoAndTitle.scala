@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object defaultRenderLogoAndTitle extends js.Object {
   def apply(props: SiderMenuProps): ReactNode = js.native
+  def apply(props: SiderMenuProps, renderKey: String): ReactNode = js.native
 }
 

@@ -14,10 +14,26 @@ trait NoncurrentVersionExpiration extends js.Object {
 
 object NoncurrentVersionExpiration {
   @scala.inline
-  def apply(NoncurrentDays: js.UndefOr[Days] = js.undefined): NoncurrentVersionExpiration = {
+  def apply(): NoncurrentVersionExpiration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(NoncurrentDays)) __obj.updateDynamic("NoncurrentDays")(NoncurrentDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoncurrentVersionExpiration]
   }
+  @scala.inline
+  implicit class NoncurrentVersionExpirationOps[Self <: NoncurrentVersionExpiration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNoncurrentDays(value: Days): Self = this.set("NoncurrentDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoncurrentDays: Self = this.set("NoncurrentDays", js.undefined)
+  }
+  
 }
 

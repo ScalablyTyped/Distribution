@@ -62,6 +62,7 @@ trait IEnumerable[T] extends Iterable[T] {
   def first(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): T = js.native
   def firstOrDefault(): T = js.native
   def firstOrDefault(defaultValue: T): T = js.native
+  def firstOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
   def firstOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): T = js.native
   def firstOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean], defaultValue: T): T = js.native
   def flatten(): IEnumerable[_] = js.native
@@ -179,6 +180,7 @@ trait IEnumerable[T] extends Iterable[T] {
   def lastIndexOf(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): Double = js.native
   def lastOrDefault(): T = js.native
   def lastOrDefault(defaultValue: T): T = js.native
+  def lastOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
   def lastOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): T = js.native
   def lastOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean], defaultValue: T): T = js.native
   def letBind[TResult](
@@ -258,6 +260,7 @@ trait IEnumerable[T] extends Iterable[T] {
   def single(): T = js.native
   def single(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): T = js.native
   def singleOrDefault(): T = js.native
+  def singleOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
   def singleOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean]): T = js.native
   def singleOrDefault(predicate: js.Function2[/* element */ T, /* index */ Double, Boolean], defaultValue: T): T = js.native
   def skip(count: Double): IEnumerable[T] = js.native

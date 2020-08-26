@@ -23,16 +23,34 @@ trait FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions extend
 
 object FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions {
   @scala.inline
-  def apply(
-    enabled: Input[Boolean] = null,
-    logGroupName: Input[String] = null,
-    logStreamName: Input[String] = null
-  ): FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions = {
+  def apply(): FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions = {
     val __obj = js.Dynamic.literal()
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
-    if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOps[Self <: FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: Input[String]): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("logGroupName", js.undefined)
+    @scala.inline
+    def setLogStreamName(value: Input[String]): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreamName: Self = this.set("logStreamName", js.undefined)
+  }
+  
 }
 

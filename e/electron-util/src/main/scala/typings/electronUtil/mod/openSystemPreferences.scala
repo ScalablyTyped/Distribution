@@ -55,19 +55,18 @@ import scala.scalajs.js.annotation._
 object openSystemPreferences extends js.Object {
   def apply(): js.Promise[Unit] = js.native
   def apply(
+    pane: js.UndefOr[scala.Nothing],
+    section: Advanced | Captioning | Dictation | FDE | Firewall | General | Hearing | Internet | Keyboard | Media_Descriptions | Mouse | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing | SpeakableItems | Switch | TTS
+  ): js.Promise[Unit] = js.native
+  def apply(
     pane: security,
     section: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
   ): js.Promise[Unit] = js.native
-  def apply(pane: sharing, section: Internet): js.Promise[Unit] = js.native
-  def apply(pane: sharing, section: Services_ARDService): js.Promise[Unit] = js.native
-  def apply(pane: sharing, section: Services_BluetoothSharing): js.Promise[Unit] = js.native
-  def apply(pane: sharing, section: Services_PersonalFileSharing): js.Promise[Unit] = js.native
-  def apply(pane: sharing, section: Services_PrinterSharing): js.Promise[Unit] = js.native
-  def apply(pane: sharing, section: Services_RemoteAppleEvent): js.Promise[Unit] = js.native
-  def apply(pane: sharing, section: Services_RemoteLogin): js.Promise[Unit] = js.native
-  def apply(pane: sharing, section: Services_ScreenSharing): js.Promise[Unit] = js.native
-  def apply(pane: speech, section: Dictation): js.Promise[Unit] = js.native
-  def apply(pane: speech, section: TTS): js.Promise[Unit] = js.native
+  def apply(
+    pane: sharing,
+    section: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing
+  ): js.Promise[Unit] = js.native
+  def apply(pane: speech, section: Dictation | TTS): js.Promise[Unit] = js.native
   def apply(
     pane: universalaccess,
     section: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch

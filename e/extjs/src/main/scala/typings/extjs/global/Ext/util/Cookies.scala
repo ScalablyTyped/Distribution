@@ -40,6 +40,7 @@ object Cookies extends js.Object {
     * @param path String The path for the cookie. This must be included if you included a path while setting the cookie.
     */
   def clear(): Unit = js.native
+  def clear(name: js.UndefOr[scala.Nothing], path: String): Unit = js.native
   def clear(name: String): Unit = js.native
   def clear(name: String, path: String): Unit = js.native
   /** [Method] Retrieves cookies that are accessible by the current page

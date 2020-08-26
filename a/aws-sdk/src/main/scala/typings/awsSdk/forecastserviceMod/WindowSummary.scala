@@ -30,20 +30,42 @@ trait WindowSummary extends js.Object {
 
 object WindowSummary {
   @scala.inline
-  def apply(
-    EvaluationType: EvaluationType = null,
-    ItemCount: js.UndefOr[Integer] = js.undefined,
-    Metrics: Metrics = null,
-    TestWindowEnd: Timestamp = null,
-    TestWindowStart: Timestamp = null
-  ): WindowSummary = {
+  def apply(): WindowSummary = {
     val __obj = js.Dynamic.literal()
-    if (EvaluationType != null) __obj.updateDynamic("EvaluationType")(EvaluationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount.get.asInstanceOf[js.Any])
-    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
-    if (TestWindowEnd != null) __obj.updateDynamic("TestWindowEnd")(TestWindowEnd.asInstanceOf[js.Any])
-    if (TestWindowStart != null) __obj.updateDynamic("TestWindowStart")(TestWindowStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowSummary]
   }
+  @scala.inline
+  implicit class WindowSummaryOps[Self <: WindowSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvaluationType(value: EvaluationType): Self = this.set("EvaluationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationType: Self = this.set("EvaluationType", js.undefined)
+    @scala.inline
+    def setItemCount(value: Integer): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    @scala.inline
+    def setMetrics(value: Metrics): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    @scala.inline
+    def setTestWindowEnd(value: Timestamp): Self = this.set("TestWindowEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestWindowEnd: Self = this.set("TestWindowEnd", js.undefined)
+    @scala.inline
+    def setTestWindowStart(value: Timestamp): Self = this.set("TestWindowStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestWindowStart: Self = this.set("TestWindowStart", js.undefined)
+  }
+  
 }
 

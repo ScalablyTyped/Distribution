@@ -60,30 +60,62 @@ trait SchemaCreativeCustomEvent extends js.Object {
 
 object SchemaCreativeCustomEvent {
   @scala.inline
-  def apply(
-    advertiserCustomEventId: String = null,
-    advertiserCustomEventName: String = null,
-    advertiserCustomEventType: String = null,
-    artworkLabel: String = null,
-    artworkType: String = null,
-    exitClickThroughUrl: SchemaCreativeClickThroughUrl = null,
-    id: String = null,
-    popupWindowProperties: SchemaPopupWindowProperties = null,
-    targetType: String = null,
-    videoReportingId: String = null
-  ): SchemaCreativeCustomEvent = {
+  def apply(): SchemaCreativeCustomEvent = {
     val __obj = js.Dynamic.literal()
-    if (advertiserCustomEventId != null) __obj.updateDynamic("advertiserCustomEventId")(advertiserCustomEventId.asInstanceOf[js.Any])
-    if (advertiserCustomEventName != null) __obj.updateDynamic("advertiserCustomEventName")(advertiserCustomEventName.asInstanceOf[js.Any])
-    if (advertiserCustomEventType != null) __obj.updateDynamic("advertiserCustomEventType")(advertiserCustomEventType.asInstanceOf[js.Any])
-    if (artworkLabel != null) __obj.updateDynamic("artworkLabel")(artworkLabel.asInstanceOf[js.Any])
-    if (artworkType != null) __obj.updateDynamic("artworkType")(artworkType.asInstanceOf[js.Any])
-    if (exitClickThroughUrl != null) __obj.updateDynamic("exitClickThroughUrl")(exitClickThroughUrl.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (popupWindowProperties != null) __obj.updateDynamic("popupWindowProperties")(popupWindowProperties.asInstanceOf[js.Any])
-    if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
-    if (videoReportingId != null) __obj.updateDynamic("videoReportingId")(videoReportingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreativeCustomEvent]
   }
+  @scala.inline
+  implicit class SchemaCreativeCustomEventOps[Self <: SchemaCreativeCustomEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertiserCustomEventId(value: String): Self = this.set("advertiserCustomEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserCustomEventId: Self = this.set("advertiserCustomEventId", js.undefined)
+    @scala.inline
+    def setAdvertiserCustomEventName(value: String): Self = this.set("advertiserCustomEventName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserCustomEventName: Self = this.set("advertiserCustomEventName", js.undefined)
+    @scala.inline
+    def setAdvertiserCustomEventType(value: String): Self = this.set("advertiserCustomEventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserCustomEventType: Self = this.set("advertiserCustomEventType", js.undefined)
+    @scala.inline
+    def setArtworkLabel(value: String): Self = this.set("artworkLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtworkLabel: Self = this.set("artworkLabel", js.undefined)
+    @scala.inline
+    def setArtworkType(value: String): Self = this.set("artworkType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtworkType: Self = this.set("artworkType", js.undefined)
+    @scala.inline
+    def setExitClickThroughUrl(value: SchemaCreativeClickThroughUrl): Self = this.set("exitClickThroughUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitClickThroughUrl: Self = this.set("exitClickThroughUrl", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setPopupWindowProperties(value: SchemaPopupWindowProperties): Self = this.set("popupWindowProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupWindowProperties: Self = this.set("popupWindowProperties", js.undefined)
+    @scala.inline
+    def setTargetType(value: String): Self = this.set("targetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetType: Self = this.set("targetType", js.undefined)
+    @scala.inline
+    def setVideoReportingId(value: String): Self = this.set("videoReportingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoReportingId: Self = this.set("videoReportingId", js.undefined)
+  }
+  
 }
 

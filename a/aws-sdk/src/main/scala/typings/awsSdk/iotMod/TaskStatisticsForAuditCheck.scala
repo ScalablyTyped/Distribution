@@ -30,20 +30,42 @@ trait TaskStatisticsForAuditCheck extends js.Object {
 
 object TaskStatisticsForAuditCheck {
   @scala.inline
-  def apply(
-    canceledFindingsCount: js.UndefOr[CanceledFindingsCount] = js.undefined,
-    failedFindingsCount: js.UndefOr[FailedFindingsCount] = js.undefined,
-    skippedFindingsCount: js.UndefOr[SkippedFindingsCount] = js.undefined,
-    succeededFindingsCount: js.UndefOr[SucceededFindingsCount] = js.undefined,
-    totalFindingsCount: js.UndefOr[TotalFindingsCount] = js.undefined
-  ): TaskStatisticsForAuditCheck = {
+  def apply(): TaskStatisticsForAuditCheck = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canceledFindingsCount)) __obj.updateDynamic("canceledFindingsCount")(canceledFindingsCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(failedFindingsCount)) __obj.updateDynamic("failedFindingsCount")(failedFindingsCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skippedFindingsCount)) __obj.updateDynamic("skippedFindingsCount")(skippedFindingsCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(succeededFindingsCount)) __obj.updateDynamic("succeededFindingsCount")(succeededFindingsCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalFindingsCount)) __obj.updateDynamic("totalFindingsCount")(totalFindingsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskStatisticsForAuditCheck]
   }
+  @scala.inline
+  implicit class TaskStatisticsForAuditCheckOps[Self <: TaskStatisticsForAuditCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanceledFindingsCount(value: CanceledFindingsCount): Self = this.set("canceledFindingsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanceledFindingsCount: Self = this.set("canceledFindingsCount", js.undefined)
+    @scala.inline
+    def setFailedFindingsCount(value: FailedFindingsCount): Self = this.set("failedFindingsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedFindingsCount: Self = this.set("failedFindingsCount", js.undefined)
+    @scala.inline
+    def setSkippedFindingsCount(value: SkippedFindingsCount): Self = this.set("skippedFindingsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkippedFindingsCount: Self = this.set("skippedFindingsCount", js.undefined)
+    @scala.inline
+    def setSucceededFindingsCount(value: SucceededFindingsCount): Self = this.set("succeededFindingsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSucceededFindingsCount: Self = this.set("succeededFindingsCount", js.undefined)
+    @scala.inline
+    def setTotalFindingsCount(value: TotalFindingsCount): Self = this.set("totalFindingsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalFindingsCount: Self = this.set("totalFindingsCount", js.undefined)
+  }
+  
 }
 

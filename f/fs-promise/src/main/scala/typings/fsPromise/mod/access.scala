@@ -21,7 +21,8 @@ object access extends js.Object {
   def apply(path: Buffer, mode: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(path: PathLike): js.Promise[Unit] = js.native
   def apply(path: PathLike, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathLike, mode: js.UndefOr[Double], callback: NoParamCallback): Unit = js.native
+  def apply(path: PathLike, mode: js.UndefOr[scala.Nothing], callback: NoParamCallback): Unit = js.native
   def apply(path: PathLike, mode: Double): js.Promise[Unit] = js.native
+  def apply(path: PathLike, mode: Double, callback: NoParamCallback): Unit = js.native
 }
 

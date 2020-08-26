@@ -28,6 +28,7 @@ class ResourceComments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaComment] = js.native
   def get(callback: BodyResponseCallback[SchemaComment]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
   def get(params: ParamsResourceCommentsGet): GaxiosPromise[SchemaComment] = js.native
   def get(params: ParamsResourceCommentsGet, callback: BodyResponseCallback[SchemaComment]): Unit = js.native
   def get(
@@ -59,6 +60,7 @@ class ResourceComments protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCommentFeed] = js.native
   def list(callback: BodyResponseCallback[SchemaCommentFeed]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentFeed] = js.native
   def list(params: ParamsResourceCommentsList): GaxiosPromise[SchemaCommentFeed] = js.native
   def list(params: ParamsResourceCommentsList, callback: BodyResponseCallback[SchemaCommentFeed]): Unit = js.native
   def list(

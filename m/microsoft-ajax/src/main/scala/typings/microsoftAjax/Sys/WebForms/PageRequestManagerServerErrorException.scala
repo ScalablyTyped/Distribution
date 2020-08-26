@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
   * For an example of how to provide custom error handling during partial-page updates, see Customizing Error Handling for ASP.NET UpdatePanel Controls.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb397466(v=vs.100).aspx}        *
   */
+@js.native
 trait PageRequestManagerServerErrorException extends js.Object
 

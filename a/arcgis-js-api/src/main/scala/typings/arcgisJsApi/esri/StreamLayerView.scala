@@ -69,6 +69,7 @@ trait StreamLayerView
     *
     */
   def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: js.UndefOr[scala.Nothing], options: StreamLayerViewQueryExtentOptions): js.Promise[_] = js.native
   def queryExtent(query: Query): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties, options: StreamLayerViewQueryExtentOptions): js.Promise[_] = js.native
@@ -91,6 +92,7 @@ trait StreamLayerView
     *
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: StreamLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: StreamLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -113,6 +115,7 @@ trait StreamLayerView
     *
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: js.UndefOr[scala.Nothing], options: StreamLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: StreamLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -135,6 +138,7 @@ trait StreamLayerView
     *
     */
   def queryLatestObservations(): js.Promise[FeatureSet] = js.native
+  def queryLatestObservations(query: js.UndefOr[scala.Nothing], options: StreamLayerViewQueryLatestObservationsOptions): js.Promise[FeatureSet] = js.native
   def queryLatestObservations(query: Query): js.Promise[FeatureSet] = js.native
   def queryLatestObservations(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryLatestObservations(query: QueryProperties, options: StreamLayerViewQueryLatestObservationsOptions): js.Promise[FeatureSet] = js.native
@@ -157,6 +161,7 @@ trait StreamLayerView
     *
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: StreamLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: StreamLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native

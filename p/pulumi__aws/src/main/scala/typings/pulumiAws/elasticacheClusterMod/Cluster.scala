@@ -23,11 +23,12 @@ class Cluster protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: ClusterArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   /**
     * Specifies whether any database modifications
     * are applied immediately, or during the next maintenance window. Default is
-    * `false`. See [Amazon ElastiCache Documentation for more information.][1]
+    * `false`. See [Amazon ElastiCache Documentation for more information.](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html)
     * (Available since v0.6.0)
     */
   val applyImmediately: Output_[Boolean] = js.native
@@ -150,9 +151,9 @@ class Cluster protected () extends CustomResource {
     */
   val subnetGroupName: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource
+    * A map of tags to assign to the resource
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -166,8 +167,10 @@ object Cluster extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Cluster = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
   def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
   def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
   /**

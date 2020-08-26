@@ -43,6 +43,11 @@ object subscriptionClientMod extends js.Object {
       */
     def this(credentials: ServiceClientCredentials) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      baseUri: js.UndefOr[scala.Nothing],
+      options: AzureServiceClientOptions
+    ) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String, options: AzureServiceClientOptions) = this()
     var acceptLanguage: String = js.native
     var apiVersion: String = js.native
@@ -84,6 +89,11 @@ object subscriptionClientMod extends js.Object {
       */
     def this(credentials: ServiceClientCredentials) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      baseUri: js.UndefOr[scala.Nothing],
+      options: AzureServiceClientOptions
+    ) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String, options: AzureServiceClientOptions) = this()
   }
   

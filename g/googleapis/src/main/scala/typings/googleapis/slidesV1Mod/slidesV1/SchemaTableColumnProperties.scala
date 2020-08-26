@@ -17,10 +17,26 @@ trait SchemaTableColumnProperties extends js.Object {
 
 object SchemaTableColumnProperties {
   @scala.inline
-  def apply(columnWidth: SchemaDimension = null): SchemaTableColumnProperties = {
+  def apply(): SchemaTableColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTableColumnProperties]
   }
+  @scala.inline
+  implicit class SchemaTableColumnPropertiesOps[Self <: SchemaTableColumnProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnWidth(value: SchemaDimension): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+  }
+  
 }
 

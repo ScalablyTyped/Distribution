@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fillMod extends js.Object {
   def apply[T](array: ArrayLike[T], value: T): Array[T] = js.native
+  def apply[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
   def apply[T](array: ArrayLike[T], value: T, start: Double): Array[T] = js.native
   def apply[T](array: ArrayLike[T], value: T, start: Double, end: Double): Array[T] = js.native
 }

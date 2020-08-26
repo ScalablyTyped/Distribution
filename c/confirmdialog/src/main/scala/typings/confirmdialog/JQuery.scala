@@ -12,6 +12,7 @@ trait JQuery extends js.Object {
     *  {any} pMessage
     */
   def alert(): js.Any = js.native
+  def alert(pMessage: js.UndefOr[scala.Nothing], title: String): js.Any = js.native
   def alert(pMessage: js.Any): js.Any = js.native
   def alert(pMessage: js.Any, title: String): js.Any = js.native
   def confirm(pOtions: String): js.Any = js.native

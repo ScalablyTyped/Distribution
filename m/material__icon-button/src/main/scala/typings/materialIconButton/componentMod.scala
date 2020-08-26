@@ -1,8 +1,8 @@
 package typings.materialIconButton
 
 import typings.materialBase.componentMod.MDCComponent
-import typings.materialBase.foundationMod.default
 import typings.materialIconButton.foundationMod.MDCIconButtonToggleFoundation
+import typings.materialRipple.componentMod.MDCRipple
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object componentMod extends js.Object {
   @js.native
-  class MDCIconButtonToggle () extends MDCComponent[MDCIconButtonToggleFoundation, default[MDCIconButtonToggleFoundation]] {
-    var on: Boolean = js.native
-    val ripple: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCRipple */ js.Any = js.native
-    var root_ : HTMLElement = js.native
+  class MDCIconButtonToggle () extends MDCComponent[MDCIconButtonToggleFoundation] {
+    def on: Boolean = js.native
+    def on_=(isOn: Boolean): Unit = js.native
+    def ripple: MDCRipple = js.native
   }
   
   /* static members */

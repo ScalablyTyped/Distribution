@@ -10,9 +10,9 @@ Simply beautiful open source icons
 | ------------------ | :-------------: |
 | Full name          | feather-icons |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 71 |
-| # downloads        | 847682 |
+| # releases         | 29 |
+| # dependents       | 73 |
+| # downloads        | 901051 |
 | # stars            | 7 |
 
 ## Links

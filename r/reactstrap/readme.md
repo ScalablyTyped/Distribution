@@ -1,7 +1,7 @@
 
 # Scala.js typings for reactstrap
 
-Typings are for version 8.4
+Typings are for version 8.5
 
 ## Library description:
 React Bootstrap 4 components
@@ -11,8 +11,8 @@ React Bootstrap 4 components
 | Full name          | reactstrap |
 | Keywords           | reactstrap, bootstrap, react, component, components, react-component, ui |
 | # releases         | 22 |
-| # dependents       | 496 |
-| # downloads        | 22772851 |
+| # dependents       | 500 |
+| # downloads        | 22975713 |
 | # stars            | 17 |
 
 ## Links

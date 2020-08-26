@@ -43,33 +43,63 @@ trait AnalyticsApplicationArgs extends js.Object {
     */
   val referenceDataSources: js.UndefOr[Input[AnalyticsApplicationReferenceDataSources]] = js.native
   /**
-    * Key-value mapping of tags for the Kinesis Analytics Application.
+    * Key-value map of tags for the Kinesis Analytics Application.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object AnalyticsApplicationArgs {
   @scala.inline
-  def apply(
-    cloudwatchLoggingOptions: Input[AnalyticsApplicationCloudwatchLoggingOptions] = null,
-    code: Input[String] = null,
-    description: Input[String] = null,
-    inputs: Input[AnalyticsApplicationInputs] = null,
-    name: Input[String] = null,
-    outputs: Input[js.Array[Input[AnalyticsApplicationOutput]]] = null,
-    referenceDataSources: Input[AnalyticsApplicationReferenceDataSources] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): AnalyticsApplicationArgs = {
+  def apply(): AnalyticsApplicationArgs = {
     val __obj = js.Dynamic.literal()
-    if (cloudwatchLoggingOptions != null) __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (referenceDataSources != null) __obj.updateDynamic("referenceDataSources")(referenceDataSources.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationArgs]
   }
+  @scala.inline
+  implicit class AnalyticsApplicationArgsOps[Self <: AnalyticsApplicationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatchLoggingOptions(value: Input[AnalyticsApplicationCloudwatchLoggingOptions]): Self = this.set("cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchLoggingOptions: Self = this.set("cloudwatchLoggingOptions", js.undefined)
+    @scala.inline
+    def setCode(value: Input[String]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setInputs(value: Input[AnalyticsApplicationInputs]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("inputs", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOutputsVarargs(value: Input[AnalyticsApplicationOutput]*): Self = this.set("outputs", js.Array(value :_*))
+    @scala.inline
+    def setOutputs(value: Input[js.Array[Input[AnalyticsApplicationOutput]]]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    @scala.inline
+    def setReferenceDataSources(value: Input[AnalyticsApplicationReferenceDataSources]): Self = this.set("referenceDataSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceDataSources: Self = this.set("referenceDataSources", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

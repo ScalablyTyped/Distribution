@@ -5,42 +5,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeaheadContext[T /* <: TypeaheadModel */] extends js.Object {
-  var activeIndex: js.UndefOr[Double] = js.undefined
-  var hintText: js.UndefOr[String] = js.undefined
-  var initialItem: js.UndefOr[T] = js.undefined
-  var isOnlyResult: js.UndefOr[Boolean] = js.undefined
-  var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.undefined
-  var onAdd: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
-  var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
-  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.undefined
-  var selectHintOnEnter: js.UndefOr[Boolean] = js.undefined
+  var activeIndex: js.UndefOr[Double] = js.native
+  var hintText: js.UndefOr[String] = js.native
+  var initialItem: js.UndefOr[T] = js.native
+  var isOnlyResult: js.UndefOr[Boolean] = js.native
+  var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.native
+  var onAdd: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.native
+  var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.native
+  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.native
+  var selectHintOnEnter: js.UndefOr[Boolean] = js.native
 }
 
 object TypeaheadContext {
   @scala.inline
-  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
-    activeIndex: js.UndefOr[Double] = js.undefined,
-    hintText: String = null,
-    initialItem: T = null,
-    isOnlyResult: js.UndefOr[Boolean] = js.undefined,
-    onActiveItemChange: /* options */ T => Unit = null,
-    onAdd: /* option */ T => Unit = null,
-    onInitialItemChange: /* option */ T => Unit = null,
-    onMenuItemClick: (/* option */ T, /* e */ Event) => Unit = null,
-    selectHintOnEnter: js.UndefOr[Boolean] = js.undefined
-  ): TypeaheadContext[T] = {
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](): TypeaheadContext[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
-    if (hintText != null) __obj.updateDynamic("hintText")(hintText.asInstanceOf[js.Any])
-    if (initialItem != null) __obj.updateDynamic("initialItem")(initialItem.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOnlyResult)) __obj.updateDynamic("isOnlyResult")(isOnlyResult.get.asInstanceOf[js.Any])
-    if (onActiveItemChange != null) __obj.updateDynamic("onActiveItemChange")(js.Any.fromFunction1(onActiveItemChange))
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
-    if (onInitialItemChange != null) __obj.updateDynamic("onInitialItemChange")(js.Any.fromFunction1(onInitialItemChange))
-    if (onMenuItemClick != null) __obj.updateDynamic("onMenuItemClick")(js.Any.fromFunction2(onMenuItemClick))
-    if (!js.isUndefined(selectHintOnEnter)) __obj.updateDynamic("selectHintOnEnter")(selectHintOnEnter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeaheadContext[T]]
   }
+  @scala.inline
+  implicit class TypeaheadContextOps[Self <: TypeaheadContext[_], /* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T] (val x: Self with TypeaheadContext[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveIndex: Self = this.set("activeIndex", js.undefined)
+    @scala.inline
+    def setHintText(value: String): Self = this.set("hintText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHintText: Self = this.set("hintText", js.undefined)
+    @scala.inline
+    def setInitialItem(value: T): Self = this.set("initialItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialItem: Self = this.set("initialItem", js.undefined)
+    @scala.inline
+    def setIsOnlyResult(value: Boolean): Self = this.set("isOnlyResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOnlyResult: Self = this.set("isOnlyResult", js.undefined)
+    @scala.inline
+    def setOnActiveItemChange(value: /* options */ T => Unit): Self = this.set("onActiveItemChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnActiveItemChange: Self = this.set("onActiveItemChange", js.undefined)
+    @scala.inline
+    def setOnAdd(value: /* option */ T => Unit): Self = this.set("onAdd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAdd: Self = this.set("onAdd", js.undefined)
+    @scala.inline
+    def setOnInitialItemChange(value: /* option */ T => Unit): Self = this.set("onInitialItemChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInitialItemChange: Self = this.set("onInitialItemChange", js.undefined)
+    @scala.inline
+    def setOnMenuItemClick(value: (/* option */ T, /* e */ Event) => Unit): Self = this.set("onMenuItemClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMenuItemClick: Self = this.set("onMenuItemClick", js.undefined)
+    @scala.inline
+    def setSelectHintOnEnter(value: Boolean): Self = this.set("selectHintOnEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectHintOnEnter: Self = this.set("selectHintOnEnter", js.undefined)
+  }
+  
 }
 

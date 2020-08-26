@@ -53,18 +53,38 @@ trait SchemaRequestMetadata extends js.Object {
 
 object SchemaRequestMetadata {
   @scala.inline
-  def apply(
-    deviceInfo: SchemaDeviceInfo = null,
-    domain: String = null,
-    sessionId: String = null,
-    userId: String = null
-  ): SchemaRequestMetadata = {
+  def apply(): SchemaRequestMetadata = {
     val __obj = js.Dynamic.literal()
-    if (deviceInfo != null) __obj.updateDynamic("deviceInfo")(deviceInfo.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRequestMetadata]
   }
+  @scala.inline
+  implicit class SchemaRequestMetadataOps[Self <: SchemaRequestMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceInfo(value: SchemaDeviceInfo): Self = this.set("deviceInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceInfo: Self = this.set("deviceInfo", js.undefined)
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

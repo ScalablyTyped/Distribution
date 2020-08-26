@@ -12,7 +12,7 @@ Create custom SMTP servers on the fly
 | Keywords           | SMTP |
 | # releases         | 7 |
 | # dependents       | 50 |
-| # downloads        | 1439526 |
+| # downloads        | 1467570 |
 | # stars            | 10 |
 
 ## Links

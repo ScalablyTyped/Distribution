@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.text.TextCursor
   * @see com.sun.star.view.XLineCursor
   */
+@js.native
 trait XViewCursor extends XInterface {
   /**
     * moves the cursor the specified number of lines down.
@@ -19,28 +20,28 @@ trait XViewCursor extends XInterface {
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` ) or the cursor will be just at the new position after the move ( `F
     * @returns `TRUE` if the cursor was moved, or `FALSE` if it was already in the bottom row.
     */
-  def goDown(nCount: Double, bExpand: Boolean): Boolean
+  def goDown(nCount: Double, bExpand: Boolean): Boolean = js.native
   /**
     * moves the cursor the specified number of characters to the left.
     * @param nCount specifies the number of characters to move.
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` )
     * @returns `TRUE` if the cursor was moved, or `FALSE` if it was already at the leftmost position.
     */
-  def goLeft(nCount: Double, bExpand: Boolean): Boolean
+  def goLeft(nCount: Double, bExpand: Boolean): Boolean = js.native
   /**
     * moves the cursor the specified number of characters to the right.
     * @param nCount specifies the number of characters to move.
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` )
     * @returns `TRUE` if the cursor was moved, or `FALSE` if it was already at the rightmost position.
     */
-  def goRight(nCount: Double, bExpand: Boolean): Boolean
+  def goRight(nCount: Double, bExpand: Boolean): Boolean = js.native
   /**
     * moves the cursor the specified number of lines up.
     * @param nCount specifies the number of lines to go up.
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` )
     * @returns `TRUE` if the cursor was moved, or `FALSE` if it was already in the top row.
     */
-  def goUp(nCount: Double, bExpand: Boolean): Boolean
+  def goUp(nCount: Double, bExpand: Boolean): Boolean = js.native
 }
 
 object XViewCursor {
@@ -57,5 +58,26 @@ object XViewCursor {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), goDown = js.Any.fromFunction2(goDown), goLeft = js.Any.fromFunction2(goLeft), goRight = js.Any.fromFunction2(goRight), goUp = js.Any.fromFunction2(goUp), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XViewCursor]
   }
+  @scala.inline
+  implicit class XViewCursorOps[Self <: XViewCursor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGoDown(value: (Double, Boolean) => Boolean): Self = this.set("goDown", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGoLeft(value: (Double, Boolean) => Boolean): Self = this.set("goLeft", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGoRight(value: (Double, Boolean) => Boolean): Self = this.set("goRight", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGoUp(value: (Double, Boolean) => Boolean): Self = this.set("goUp", js.Any.fromFunction2(value))
+  }
+  
 }
 

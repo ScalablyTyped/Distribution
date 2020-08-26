@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vexdb" : "2.2.4"
+      "vexdb" : "3.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "vexdb" : "2.2.4"
+      "vexdb" : "3.1.1"
     }
   ],
   "compile-devDependencies" : [

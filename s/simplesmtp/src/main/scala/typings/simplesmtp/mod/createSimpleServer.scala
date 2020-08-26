@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 object createSimpleServer extends js.Object {
   def apply(): SimpleServer = js.native
   def apply(callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = js.native
+  def apply(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* connection */ SimpleServerConnection, Unit]
+  ): SimpleServer = js.native
   def apply(options: SmtpServerOptions): SimpleServer = js.native
   def apply(options: SmtpServerOptions, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]): SimpleServer = js.native
 }

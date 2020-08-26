@@ -27,6 +27,7 @@ class ResourceDictionary protected () extends js.Object {
     */
   def listOfflineMetadata(): GaxiosPromise[SchemaMetadata] = js.native
   def listOfflineMetadata(callback: BodyResponseCallback[SchemaMetadata]): Unit = js.native
+  def listOfflineMetadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetadata] = js.native
   def listOfflineMetadata(params: ParamsResourceDictionaryListofflinemetadata): GaxiosPromise[SchemaMetadata] = js.native
   def listOfflineMetadata(
     params: ParamsResourceDictionaryListofflinemetadata,

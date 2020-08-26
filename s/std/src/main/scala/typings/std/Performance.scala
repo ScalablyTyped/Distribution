@@ -42,6 +42,7 @@ trait Performance extends EventTarget {
   def getEntriesByType(`type`: java.lang.String): PerformanceEntryList = js.native
   def mark(markName: java.lang.String): Unit = js.native
   def measure(measureName: java.lang.String): Unit = js.native
+  def measure(measureName: java.lang.String, startMark: js.UndefOr[scala.Nothing], endMark: java.lang.String): Unit = js.native
   def measure(measureName: java.lang.String, startMark: java.lang.String): Unit = js.native
   def measure(measureName: java.lang.String, startMark: java.lang.String, endMark: java.lang.String): Unit = js.native
   def now(): Double = js.native

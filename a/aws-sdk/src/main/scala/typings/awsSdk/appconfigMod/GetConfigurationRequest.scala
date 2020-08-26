@@ -34,12 +34,35 @@ object GetConfigurationRequest {
     Application: StringWithLengthBetween1And64,
     ClientId: StringWithLengthBetween1And64,
     Configuration: StringWithLengthBetween1And64,
-    Environment: StringWithLengthBetween1And64,
-    ClientConfigurationVersion: Version = null
+    Environment: StringWithLengthBetween1And64
   ): GetConfigurationRequest = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any], Configuration = Configuration.asInstanceOf[js.Any], Environment = Environment.asInstanceOf[js.Any])
-    if (ClientConfigurationVersion != null) __obj.updateDynamic("ClientConfigurationVersion")(ClientConfigurationVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConfigurationRequest]
   }
+  @scala.inline
+  implicit class GetConfigurationRequestOps[Self <: GetConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: StringWithLengthBetween1And64): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientId(value: StringWithLengthBetween1And64): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfiguration(value: StringWithLengthBetween1And64): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnvironment(value: StringWithLengthBetween1And64): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientConfigurationVersion(value: Version): Self = this.set("ClientConfigurationVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientConfigurationVersion: Self = this.set("ClientConfigurationVersion", js.undefined)
+  }
+  
 }
 

@@ -27,6 +27,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGroups] = js.native
   def get(callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
   def get(params: ParamsResourceGroupsGet): GaxiosPromise[SchemaGroups] = js.native
   def get(params: ParamsResourceGroupsGet, callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaGroups] = js.native
   def patch(callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
   def patch(params: ParamsResourceGroupsPatch): GaxiosPromise[SchemaGroups] = js.native
   def patch(params: ParamsResourceGroupsPatch, callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
   def patch(
@@ -83,6 +85,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaGroups] = js.native
   def update(callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
   def update(params: ParamsResourceGroupsUpdate): GaxiosPromise[SchemaGroups] = js.native
   def update(params: ParamsResourceGroupsUpdate, callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
   def update(

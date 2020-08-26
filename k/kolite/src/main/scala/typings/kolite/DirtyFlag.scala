@@ -14,7 +14,7 @@ trait DirtyFlag
      with Instantiable2[/* objectToTrack */ js.Any, /* isInitiallyDirty */ Boolean, js.Any]
      with Instantiable3[
       /* objectToTrack */ js.Any, 
-      /* isInitiallyDirty */ Boolean, 
+      js.UndefOr[/* isInitiallyDirty */ Boolean], 
       /* hashFunction */ js.Function0[js.Any], 
       js.Any
     ] {

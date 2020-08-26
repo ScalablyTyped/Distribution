@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataObject extends js.Object {
   /**
     * the time attribute of time and theme.
@@ -11,7 +12,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.data.date
     */
-  var date: js.UndefOr[String] = js.undefined
+  var date: js.UndefOr[String] = js.native
   /**
     * the name of an event or theme.
     *
@@ -43,24 +44,48 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.data.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * the value of an event or theme at a time point.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.data.value
     */
-  var value: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var value: js.UndefOr[Double | js.Array[Double]] = js.native
 }
 
 object DataObject {
   @scala.inline
-  def apply(date: String = null, name: String = null, value: Double | js.Array[Double] = null): DataObject = {
+  def apply(): DataObject = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
+  @scala.inline
+  implicit class DataObjectOps[Self <: DataObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: Double*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: Double | js.Array[Double]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

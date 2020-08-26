@@ -33,6 +33,7 @@ trait IVisualization extends js.Object {
     * @return - A promise of a QVisualization.
     */
   def create(`type`: VisualizationType): IPromise[_] = js.native
+  def create(`type`: VisualizationType, cols: js.UndefOr[scala.Nothing], options: js.Any): IPromise[_] = js.native
   def create(`type`: VisualizationType, cols: js.Array[_]): IPromise[_] = js.native
   def create(`type`: VisualizationType, cols: js.Array[_], options: js.Any): IPromise[_] = js.native
   /**

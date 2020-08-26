@@ -7,80 +7,102 @@ import scala.scalajs.js.annotation._
 /**
   * Groups and questions
   */
+@js.native
 trait QuestionnaireResponseItem extends BackboneElement {
   /**
     * Contains extended information for property 'definition'.
     */
-  var _definition: js.UndefOr[Element] = js.undefined
+  var _definition: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'linkId'.
     */
-  var _linkId: js.UndefOr[Element] = js.undefined
+  var _linkId: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'text'.
     */
-  var _text: js.UndefOr[Element] = js.undefined
+  var _text: js.UndefOr[Element] = js.native
   /**
     * The response(s) to the question
     */
-  var answer: js.UndefOr[js.Array[QuestionnaireResponseItemAnswer]] = js.undefined
+  var answer: js.UndefOr[js.Array[QuestionnaireResponseItemAnswer]] = js.native
   /**
     * ElementDefinition - details for the item
     */
-  var definition: js.UndefOr[uri] = js.undefined
+  var definition: js.UndefOr[uri] = js.native
   /**
     * Nested questionnaire response items
     */
-  var item: js.UndefOr[js.Array[QuestionnaireResponseItem]] = js.undefined
+  var item: js.UndefOr[js.Array[QuestionnaireResponseItem]] = js.native
   /**
     * Pointer to specific item from Questionnaire
     */
-  var linkId: String
+  var linkId: String = js.native
   /**
     * The subject this group's answers are about
     */
-  var subject: js.UndefOr[Reference] = js.undefined
+  var subject: js.UndefOr[Reference] = js.native
   /**
     * Name for group or question text
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
 }
 
 object QuestionnaireResponseItem {
   @scala.inline
-  def apply(
-    linkId: String,
-    _definition: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _linkId: Element = null,
-    _text: Element = null,
-    answer: js.Array[QuestionnaireResponseItemAnswer] = null,
-    definition: uri = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    item: js.Array[QuestionnaireResponseItem] = null,
-    modifierExtension: js.Array[Extension] = null,
-    subject: Reference = null,
-    text: String = null
-  ): QuestionnaireResponseItem = {
+  def apply(linkId: String): QuestionnaireResponseItem = {
     val __obj = js.Dynamic.literal(linkId = linkId.asInstanceOf[js.Any])
-    if (_definition != null) __obj.updateDynamic("_definition")(_definition.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_linkId != null) __obj.updateDynamic("_linkId")(_linkId.asInstanceOf[js.Any])
-    if (_text != null) __obj.updateDynamic("_text")(_text.asInstanceOf[js.Any])
-    if (answer != null) __obj.updateDynamic("answer")(answer.asInstanceOf[js.Any])
-    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestionnaireResponseItem]
   }
+  @scala.inline
+  implicit class QuestionnaireResponseItemOps[Self <: QuestionnaireResponseItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLinkId(value: String): Self = this.set("linkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_definition(value: Element): Self = this.set("_definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_definition: Self = this.set("_definition", js.undefined)
+    @scala.inline
+    def set_linkId(value: Element): Self = this.set("_linkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_linkId: Self = this.set("_linkId", js.undefined)
+    @scala.inline
+    def set_text(value: Element): Self = this.set("_text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_text: Self = this.set("_text", js.undefined)
+    @scala.inline
+    def setAnswerVarargs(value: QuestionnaireResponseItemAnswer*): Self = this.set("answer", js.Array(value :_*))
+    @scala.inline
+    def setAnswer(value: js.Array[QuestionnaireResponseItemAnswer]): Self = this.set("answer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnswer: Self = this.set("answer", js.undefined)
+    @scala.inline
+    def setDefinition(value: uri): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinition: Self = this.set("definition", js.undefined)
+    @scala.inline
+    def setItemVarargs(value: QuestionnaireResponseItem*): Self = this.set("item", js.Array(value :_*))
+    @scala.inline
+    def setItem(value: js.Array[QuestionnaireResponseItem]): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

@@ -54,6 +54,7 @@ object TextMeasurer extends js.Object {
     * @returns Object An object with width, height and sizes properties.
     */
   def measureText(): js.Any = js.native
+  def measureText(text: js.UndefOr[scala.Nothing], font: String): js.Any = js.native
   def measureText(text: String): js.Any = js.native
   def measureText(text: String, font: String): js.Any = js.native
   /** [Method] Measure a single line text with specific font
@@ -62,6 +63,7 @@ object TextMeasurer extends js.Object {
     * @returns Object An object with width and height properties.
     */
   def measureTextSingleLine(): js.Any = js.native
+  def measureTextSingleLine(text: js.UndefOr[scala.Nothing], font: String): js.Any = js.native
   def measureTextSingleLine(text: String): js.Any = js.native
   def measureTextSingleLine(text: String, font: String): js.Any = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

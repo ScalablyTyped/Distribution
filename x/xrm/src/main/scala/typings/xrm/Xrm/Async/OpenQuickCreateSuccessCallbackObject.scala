@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /**
   * Object passed to QuickCreateSuccessCallbackDelegate.
   */
+@js.native
 trait OpenQuickCreateSuccessCallbackObject extends js.Object {
   /**
     * A lookup value which identifies the record which has been created.
     */
-  var savedEntityReference: LookupValue
+  var savedEntityReference: LookupValue = js.native
 }
 
 object OpenQuickCreateSuccessCallbackObject {
@@ -21,5 +22,20 @@ object OpenQuickCreateSuccessCallbackObject {
     val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenQuickCreateSuccessCallbackObject]
   }
+  @scala.inline
+  implicit class OpenQuickCreateSuccessCallbackObjectOps[Self <: OpenQuickCreateSuccessCallbackObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSavedEntityReference(value: LookupValue): Self = this.set("savedEntityReference", value.asInstanceOf[js.Any])
+  }
+  
 }
 

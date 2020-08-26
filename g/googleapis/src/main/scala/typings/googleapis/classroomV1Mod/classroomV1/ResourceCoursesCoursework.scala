@@ -40,6 +40,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCourseWork] = js.native
   def create(callback: BodyResponseCallback[SchemaCourseWork]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourseWork] = js.native
   def create(params: ParamsResourceCoursesCourseworkCreate): GaxiosPromise[SchemaCourseWork] = js.native
   def create(params: ParamsResourceCoursesCourseworkCreate, callback: BodyResponseCallback[SchemaCourseWork]): Unit = js.native
   def create(
@@ -76,6 +77,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesCourseworkDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesCourseworkDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -108,6 +110,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCourseWork] = js.native
   def get(callback: BodyResponseCallback[SchemaCourseWork]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourseWork] = js.native
   def get(params: ParamsResourceCoursesCourseworkGet): GaxiosPromise[SchemaCourseWork] = js.native
   def get(params: ParamsResourceCoursesCourseworkGet, callback: BodyResponseCallback[SchemaCourseWork]): Unit = js.native
   def get(
@@ -145,6 +148,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListCourseWorkResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCourseWorkResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCourseWorkResponse] = js.native
   def list(params: ParamsResourceCoursesCourseworkList): GaxiosPromise[SchemaListCourseWorkResponse] = js.native
   def list(
     params: ParamsResourceCoursesCourseworkList,
@@ -183,6 +187,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     */
   def modifyAssignees(): GaxiosPromise[SchemaCourseWork] = js.native
   def modifyAssignees(callback: BodyResponseCallback[SchemaCourseWork]): Unit = js.native
+  def modifyAssignees(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourseWork] = js.native
   def modifyAssignees(params: ParamsResourceCoursesCourseworkModifyassignees): GaxiosPromise[SchemaCourseWork] = js.native
   def modifyAssignees(
     params: ParamsResourceCoursesCourseworkModifyassignees,
@@ -228,6 +233,7 @@ class ResourceCoursesCoursework protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaCourseWork] = js.native
   def patch(callback: BodyResponseCallback[SchemaCourseWork]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourseWork] = js.native
   def patch(params: ParamsResourceCoursesCourseworkPatch): GaxiosPromise[SchemaCourseWork] = js.native
   def patch(params: ParamsResourceCoursesCourseworkPatch, callback: BodyResponseCallback[SchemaCourseWork]): Unit = js.native
   def patch(

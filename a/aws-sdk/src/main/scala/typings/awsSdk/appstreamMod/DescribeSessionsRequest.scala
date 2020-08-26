@@ -34,20 +34,42 @@ trait DescribeSessionsRequest extends js.Object {
 
 object DescribeSessionsRequest {
   @scala.inline
-  def apply(
-    FleetName: String,
-    StackName: String,
-    AuthenticationType: AuthenticationType = null,
-    Limit: js.UndefOr[Integer] = js.undefined,
-    NextToken: String = null,
-    UserId: UserId = null
-  ): DescribeSessionsRequest = {
+  def apply(FleetName: String, StackName: String): DescribeSessionsRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
-    if (AuthenticationType != null) __obj.updateDynamic("AuthenticationType")(AuthenticationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSessionsRequest]
   }
+  @scala.inline
+  implicit class DescribeSessionsRequestOps[Self <: DescribeSessionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetName(value: String): Self = this.set("FleetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackName(value: String): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationType(value: AuthenticationType): Self = this.set("AuthenticationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationType: Self = this.set("AuthenticationType", js.undefined)
+    @scala.inline
+    def setLimit(value: Integer): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setUserId(value: UserId): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("UserId", js.undefined)
+  }
+  
 }
 

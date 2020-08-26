@@ -9,9 +9,9 @@ Typings are for version 0.14
 | ------------------ | :-------------: |
 | Full name          | react-addons-create-fragment |
 | Keywords           | react, react-addon |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 140 |
-| # downloads        | 16017536 |
+| # downloads        | 16397372 |
 | # stars            | 3 |
 
 ## Links

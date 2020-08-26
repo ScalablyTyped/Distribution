@@ -29,6 +29,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Context] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Context]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Context] = js.native
   def create(params: ParamsResourceProjectsAgentSessionsContextsCreate): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Context] = js.native
   def create(
     params: ParamsResourceProjectsAgentSessionsContextsCreate,
@@ -59,6 +60,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceProjectsAgentSessionsContextsDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsAgentSessionsContextsDelete,
@@ -89,6 +91,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Context] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Context]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Context] = js.native
   def get(params: ParamsResourceProjectsAgentSessionsContextsGet): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Context] = js.native
   def get(
     params: ParamsResourceProjectsAgentSessionsContextsGet,
@@ -121,6 +124,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListContextsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1ListContextsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListContextsResponse] = js.native
   def list(params: ParamsResourceProjectsAgentSessionsContextsList): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListContextsResponse] = js.native
   def list(
     params: ParamsResourceProjectsAgentSessionsContextsList,
@@ -153,6 +157,7 @@ class ResourceProjectsAgentSessionsContexts protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Context] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Context]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Context] = js.native
   def patch(params: ParamsResourceProjectsAgentSessionsContextsPatch): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Context] = js.native
   def patch(
     params: ParamsResourceProjectsAgentSessionsContextsPatch,

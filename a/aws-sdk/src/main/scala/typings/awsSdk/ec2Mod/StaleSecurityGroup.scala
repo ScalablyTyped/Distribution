@@ -34,22 +34,50 @@ trait StaleSecurityGroup extends js.Object {
 
 object StaleSecurityGroup {
   @scala.inline
-  def apply(
-    Description: String = null,
-    GroupId: String = null,
-    GroupName: String = null,
-    StaleIpPermissions: StaleIpPermissionSet = null,
-    StaleIpPermissionsEgress: StaleIpPermissionSet = null,
-    VpcId: String = null
-  ): StaleSecurityGroup = {
+  def apply(): StaleSecurityGroup = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (StaleIpPermissions != null) __obj.updateDynamic("StaleIpPermissions")(StaleIpPermissions.asInstanceOf[js.Any])
-    if (StaleIpPermissionsEgress != null) __obj.updateDynamic("StaleIpPermissionsEgress")(StaleIpPermissionsEgress.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaleSecurityGroup]
   }
+  @scala.inline
+  implicit class StaleSecurityGroupOps[Self <: StaleSecurityGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setGroupId(value: String): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    @scala.inline
+    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setStaleIpPermissionsVarargs(value: StaleIpPermission*): Self = this.set("StaleIpPermissions", js.Array(value :_*))
+    @scala.inline
+    def setStaleIpPermissions(value: StaleIpPermissionSet): Self = this.set("StaleIpPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaleIpPermissions: Self = this.set("StaleIpPermissions", js.undefined)
+    @scala.inline
+    def setStaleIpPermissionsEgressVarargs(value: StaleIpPermission*): Self = this.set("StaleIpPermissionsEgress", js.Array(value :_*))
+    @scala.inline
+    def setStaleIpPermissionsEgress(value: StaleIpPermissionSet): Self = this.set("StaleIpPermissionsEgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaleIpPermissionsEgress: Self = this.set("StaleIpPermissionsEgress", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

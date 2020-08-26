@@ -1,17 +1,5 @@
 package typings.coinbaseCommerceNode.mod
 
-import typings.coinbaseCommerceNode.anon.Block
-import typings.coinbaseCommerceNode.anon.Context
-import typings.coinbaseCommerceNode.anon.PartialRecordCryptoNamest
-import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.charge
-import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonconfirmed
-import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColoncreated
-import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColondelayed
-import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonfailed
-import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonpending
-import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonresolved
-import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.checkout
-import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,81 +18,7 @@ object resources extends js.Object {
   @js.native
   class Charge ()
     extends Resource[CreateCharge]
-       with ChargeResource {
-    /**
-      * Set of addresses associated with the charge.
-      */
-    /* CompleteClass */
-    override var addresses: PartialRecordCryptoNamest = js.native
-    /**
-      * User fiendly primary key.
-      */
-    /* CompleteClass */
-    override var code: String = js.native
-    /**
-      * Charge creation time.
-      */
-    /* CompleteClass */
-    override var created_at: Timestamp = js.native
-    /**
-      * More detailed description of the charge.
-      * 200 characters or less.
-      */
-    /* CompleteClass */
-    override var description: String = js.native
-    /**
-      * Charge expiration time.
-      */
-    /* CompleteClass */
-    override var expires_at: Timestamp = js.native
-    /**
-      * Hosted charge URL.
-      */
-    /* CompleteClass */
-    override var hosted_url: String = js.native
-    /**
-      * Charge UUID
-      */
-    /* CompleteClass */
-    override var id: String = js.native
-    /**
-      * Charge metadata provided by you, the developer.
-      */
-    /* CompleteClass */
-    @JSName("metadata")
-    override var metadata_ChargeResource: KeyVal = js.native
-    /**
-      * Charge name.
-      * 100 characters or less.
-      */
-    /* CompleteClass */
-    override var name: String = js.native
-    /**
-      * Array of charge payment objects.
-      */
-    /* CompleteClass */
-    override var payments: js.Array[Block] = js.native
-    /**
-      * Charge price information object.
-      */
-    /* CompleteClass */
-    override var pricing: Pricing = js.native
-    /**
-      * Charge pricing type.
-      */
-    /* CompleteClass */
-    override var pricing_type: PricingType = js.native
-    /**
-      * Resource name.
-      */
-    /* CompleteClass */
-    override var resource: charge = js.native
-    /**
-      * Array of status update objects.
-      */
-    /* CompleteClass */
-    override var timeline: js.Array[Context] = js.native
-  }
+       with ChargeResource
   
   /**
     * Merge CheckoutResource with Checkout class.
@@ -117,35 +31,7 @@ object resources extends js.Object {
   @js.native
   class Checkout ()
     extends Resource[CreateCheckout]
-       with CheckoutResource {
-    /**
-      * More detailed description.
-      * 200 characters or less.
-      */
-    /* CompleteClass */
-    override var description: String = js.native
-    /**
-      * Checkout UUID.
-      */
-    /* CompleteClass */
-    override var id: String = js.native
-    /**
-      * Checkout name.
-      * 100 characters or less.
-      */
-    /* CompleteClass */
-    override var name: String = js.native
-    /**
-      * Checkout pricing type.
-      */
-    /* CompleteClass */
-    override var pricing_type: PricingType = js.native
-    /**
-      * Resource name.
-      */
-    /* CompleteClass */
-    override var resource: checkout = js.native
-  }
+       with CheckoutResource
   
   /**
     * Merge EventResource with Event class.
@@ -158,39 +44,7 @@ object resources extends js.Object {
   @js.native
   class Event ()
     extends Resource[EventResource[ChargeResource | CheckoutResource]]
-       with EventResource[ChargeResource | CheckoutResource] {
-    /**
-      * API version of the `data` payload.
-      */
-    /* CompleteClass */
-    override var api_version: String = js.native
-    /**
-      * Event creation time.
-      */
-    /* CompleteClass */
-    override var created_at: Timestamp = js.native
-    /**
-      * Event Payload.
-      * Resource of the associated object at the time of the event.
-      */
-    /* CompleteClass */
-    override var data: ChargeResource | CheckoutResource = js.native
-    /**
-      * Event UUID.
-      */
-    /* CompleteClass */
-    override var id: String = js.native
-    /**
-      * Resource name.
-      */
-    /* CompleteClass */
-    override var resource: event = js.native
-    /**
-      * Event type.
-      */
-    /* CompleteClass */
-    override var `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved = js.native
-  }
+       with EventResource[ChargeResource | CheckoutResource]
   
   /**
     * Resource object

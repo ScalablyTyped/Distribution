@@ -58,6 +58,10 @@ trait Animation extends js.Object {
     */
   var nextAnim: String = js.native
   /**
+    * A queue of keys of the next Animations to be loaded into this Animation Controller when the current animation completes.
+    */
+  var nextAnimsQueue: js.Array[String] = js.native
+  /**
     * The time point at which the next animation frame will change.
     */
   var nextTick: Double = js.native
@@ -183,9 +187,15 @@ trait Animation extends js.Object {
     * @param startFrame Optionally start the animation playing from this frame index. Default 0.
     */
   def play(key: String): GameObject = js.native
+  def play(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): GameObject = js.native
   def play(key: String, ignoreIfPlaying: Boolean): GameObject = js.native
   def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
   def play(key: typings.phaser.Phaser.Animations.Animation): GameObject = js.native
+  def play(
+    key: typings.phaser.Phaser.Animations.Animation,
+    ignoreIfPlaying: js.UndefOr[scala.Nothing],
+    startFrame: integer
+  ): GameObject = js.native
   def play(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean): GameObject = js.native
   def play(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
   /**
@@ -195,9 +205,15 @@ trait Animation extends js.Object {
     * @param startFrame Optionally start the animation playing from this frame index. Default 0.
     */
   def playReverse(key: String): GameObject = js.native
+  def playReverse(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): GameObject = js.native
   def playReverse(key: String, ignoreIfPlaying: Boolean): GameObject = js.native
   def playReverse(key: String, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
   def playReverse(key: typings.phaser.Phaser.Animations.Animation): GameObject = js.native
+  def playReverse(
+    key: typings.phaser.Phaser.Animations.Animation,
+    ignoreIfPlaying: js.UndefOr[scala.Nothing],
+    startFrame: integer
+  ): GameObject = js.native
   def playReverse(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean): GameObject = js.native
   def playReverse(key: typings.phaser.Phaser.Animations.Animation, ignoreIfPlaying: Boolean, startFrame: integer): GameObject = js.native
   /**
@@ -214,6 +230,7 @@ trait Animation extends js.Object {
     * @param animation The removed Animation.
     */
   def remove(): Unit = js.native
+  def remove(key: js.UndefOr[scala.Nothing], animation: typings.phaser.Phaser.Animations.Animation): Unit = js.native
   def remove(key: String): Unit = js.native
   def remove(key: String, animation: typings.phaser.Phaser.Animations.Animation): Unit = js.native
   /**

@@ -18,11 +18,32 @@ trait RunPipelineActivityResponse extends js.Object {
 
 object RunPipelineActivityResponse {
   @scala.inline
-  def apply(logResult: LogResult = null, payloads: MessagePayloads = null): RunPipelineActivityResponse = {
+  def apply(): RunPipelineActivityResponse = {
     val __obj = js.Dynamic.literal()
-    if (logResult != null) __obj.updateDynamic("logResult")(logResult.asInstanceOf[js.Any])
-    if (payloads != null) __obj.updateDynamic("payloads")(payloads.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunPipelineActivityResponse]
   }
+  @scala.inline
+  implicit class RunPipelineActivityResponseOps[Self <: RunPipelineActivityResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogResult(value: LogResult): Self = this.set("logResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogResult: Self = this.set("logResult", js.undefined)
+    @scala.inline
+    def setPayloadsVarargs(value: MessagePayload*): Self = this.set("payloads", js.Array(value :_*))
+    @scala.inline
+    def setPayloads(value: MessagePayloads): Self = this.set("payloads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayloads: Self = this.set("payloads", js.undefined)
+  }
+  
 }
 

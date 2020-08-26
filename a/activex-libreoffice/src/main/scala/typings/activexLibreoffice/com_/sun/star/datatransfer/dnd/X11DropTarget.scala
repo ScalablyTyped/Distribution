@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * @see XDragSource
   * @see XDropTarget
   */
+@js.native
 trait X11DropTarget
   extends XDropTarget
      with XInitialization

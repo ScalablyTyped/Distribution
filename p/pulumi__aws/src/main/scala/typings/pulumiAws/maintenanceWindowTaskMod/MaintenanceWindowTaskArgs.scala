@@ -78,22 +78,65 @@ object MaintenanceWindowTaskArgs {
     targets: Input[js.Array[Input[MaintenanceWindowTaskTarget]]],
     taskArn: Input[String],
     taskType: Input[String],
-    windowId: Input[String],
-    description: Input[String] = null,
-    loggingInfo: Input[MaintenanceWindowTaskLoggingInfo] = null,
-    name: Input[String] = null,
-    priority: Input[Double] = null,
-    taskInvocationParameters: Input[MaintenanceWindowTaskTaskInvocationParameters] = null,
-    taskParameters: Input[js.Array[Input[MaintenanceWindowTaskTaskParameter]]] = null
+    windowId: Input[String]
   ): MaintenanceWindowTaskArgs = {
     val __obj = js.Dynamic.literal(maxConcurrency = maxConcurrency.asInstanceOf[js.Any], maxErrors = maxErrors.asInstanceOf[js.Any], serviceRoleArn = serviceRoleArn.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any], taskArn = taskArn.asInstanceOf[js.Any], taskType = taskType.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (loggingInfo != null) __obj.updateDynamic("loggingInfo")(loggingInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (taskInvocationParameters != null) __obj.updateDynamic("taskInvocationParameters")(taskInvocationParameters.asInstanceOf[js.Any])
-    if (taskParameters != null) __obj.updateDynamic("taskParameters")(taskParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowTaskArgs]
   }
+  @scala.inline
+  implicit class MaintenanceWindowTaskArgsOps[Self <: MaintenanceWindowTaskArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxConcurrency(value: Input[String]): Self = this.set("maxConcurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxErrors(value: Input[String]): Self = this.set("maxErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceRoleArn(value: Input[String]): Self = this.set("serviceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetsVarargs(value: Input[MaintenanceWindowTaskTarget]*): Self = this.set("targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Input[js.Array[Input[MaintenanceWindowTaskTarget]]]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskArn(value: Input[String]): Self = this.set("taskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskType(value: Input[String]): Self = this.set("taskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWindowId(value: Input[String]): Self = this.set("windowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLoggingInfo(value: Input[MaintenanceWindowTaskLoggingInfo]): Self = this.set("loggingInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingInfo: Self = this.set("loggingInfo", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setTaskInvocationParameters(value: Input[MaintenanceWindowTaskTaskInvocationParameters]): Self = this.set("taskInvocationParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskInvocationParameters: Self = this.set("taskInvocationParameters", js.undefined)
+    @scala.inline
+    def setTaskParametersVarargs(value: Input[MaintenanceWindowTaskTaskParameter]*): Self = this.set("taskParameters", js.Array(value :_*))
+    @scala.inline
+    def setTaskParameters(value: Input[js.Array[Input[MaintenanceWindowTaskTaskParameter]]]): Self = this.set("taskParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskParameters: Self = this.set("taskParameters", js.undefined)
+  }
+  
 }
 

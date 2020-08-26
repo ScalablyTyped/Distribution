@@ -12,7 +12,7 @@ Tarantool driver for 1.7+
 | Keywords           | tarantool, driver, db, msgpack |
 | # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 61757 |
+| # downloads        | 69471 |
 | # stars            | 2 |
 
 ## Links

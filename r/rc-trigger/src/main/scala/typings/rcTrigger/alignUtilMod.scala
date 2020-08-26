@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-trigger/lib/utils/alignUtil", JSImport.Namespace)
+@JSImport("rc-trigger/es/utils/alignUtil", JSImport.Namespace)
 @js.native
 object alignUtilMod extends js.Object {
   def getAlignFromPlacement(builtinPlacements: BuildInPlacements, placementStr: String, align: AlignType): AlignType = js.native

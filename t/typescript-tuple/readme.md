@@ -11,8 +11,8 @@ Generics to work with tuples in TypeScript
 | Full name          | typescript-tuple |
 | Keywords           | generic, tuple, typescript |
 | # releases         | 27 |
-| # dependents       | 13 |
-| # downloads        | 8339345 |
+| # dependents       | 14 |
+| # downloads        | 9041935 |
 | # stars            | 0 |
 
 ## Links

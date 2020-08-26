@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__chord
 
-Typings are for version 0.61.1
+Typings are for version 0.62.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/chord.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/chord)
@@ -10,9 +10,9 @@ Typings are for version 0.61.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/chord |
 | Keywords           | nivo, dataviz, react, d3, charts, chord-diagram |
-| # releases         | 30 |
+| # releases         | 32 |
 | # dependents       | 3 |
-| # downloads        | 14224 |
+| # downloads        | 15504 |
 | # stars            | 0 |
 
 ## Links

@@ -50,22 +50,46 @@ trait SchemaOrganization extends js.Object {
 
 object SchemaOrganization {
   @scala.inline
-  def apply(
-    creationTime: String = null,
-    displayName: String = null,
-    lifecycleState: String = null,
-    name: String = null,
-    organizationId: String = null,
-    owner: SchemaOrganizationOwner = null
-  ): SchemaOrganization = {
+  def apply(): SchemaOrganization = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (lifecycleState != null) __obj.updateDynamic("lifecycleState")(lifecycleState.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (organizationId != null) __obj.updateDynamic("organizationId")(organizationId.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrganization]
   }
+  @scala.inline
+  implicit class SchemaOrganizationOps[Self <: SchemaOrganization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setLifecycleState(value: String): Self = this.set("lifecycleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleState: Self = this.set("lifecycleState", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrganizationId(value: String): Self = this.set("organizationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationId: Self = this.set("organizationId", js.undefined)
+    @scala.inline
+    def setOwner(value: SchemaOrganizationOwner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+  }
+  
 }
 

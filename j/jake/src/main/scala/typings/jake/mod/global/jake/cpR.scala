@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object cpR extends js.Object {
   def apply(path: String, destination: String): Unit = js.native
   def apply(path: String, destination: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def apply(path: String, destination: String, opts: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def apply(path: String, destination: String, opts: UtilOptions): Unit = js.native
   def apply(path: String, destination: String, opts: UtilOptions, callback: js.Function0[Unit]): Unit = js.native
 }

@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PathStartCap extends js.Object {
-  var fill: js.UndefOr[String | PathStartCapFill] = js.undefined
-  var stroke: js.UndefOr[String | PathStartCapStroke] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var fill: js.UndefOr[String | PathStartCapFill] = js.native
+  var stroke: js.UndefOr[String | PathStartCapStroke] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object PathStartCap {
   @scala.inline
-  def apply(
-    fill: String | PathStartCapFill = null,
-    stroke: String | PathStartCapStroke = null,
-    `type`: String = null
-  ): PathStartCap = {
+  def apply(): PathStartCap = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathStartCap]
   }
+  @scala.inline
+  implicit class PathStartCapOps[Self <: PathStartCap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFill(value: String | PathStartCapFill): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setStroke(value: String | PathStartCapStroke): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -57,13 +57,3 @@ trait IPhotoView extends js.Object {
   def setZoomable(zoomable: Boolean): Unit = js.native
 }
 
-@JSGlobal("uk.co.senab.photoview.IPhotoView")
-@js.native
-object IPhotoView extends js.Object {
-  var DEFAULT_MAX_SCALE: Double = js.native
-  var DEFAULT_MID_SCALE: Double = js.native
-  var DEFAULT_MIN_SCALE: Double = js.native
-  var DEFAULT_ZOOM_DURATION: Double = js.native
-  def isImpl(obj: js.Any): Boolean = js.native
-}
-

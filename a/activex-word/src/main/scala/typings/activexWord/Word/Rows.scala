@@ -38,6 +38,7 @@ trait Rows extends js.Object {
   def Add(): Row = js.native
   def Add(BeforeRow: js.Any): Row = js.native
   def ConvertToText(): Range = js.native
+  def ConvertToText(Separator: js.UndefOr[scala.Nothing], NestedTables: js.Any): Range = js.native
   def ConvertToText(Separator: js.Any): Range = js.native
   def ConvertToText(Separator: js.Any, NestedTables: js.Any): Range = js.native
   def ConvertToTextOld(): Range = js.native

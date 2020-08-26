@@ -42,26 +42,54 @@ trait QueryExecution extends js.Object {
 
 object QueryExecution {
   @scala.inline
-  def apply(
-    Query: QueryString = null,
-    QueryExecutionContext: QueryExecutionContext = null,
-    QueryExecutionId: QueryExecutionId = null,
-    ResultConfiguration: ResultConfiguration = null,
-    StatementType: StatementType = null,
-    Statistics: QueryExecutionStatistics = null,
-    Status: QueryExecutionStatus = null,
-    WorkGroup: WorkGroupName = null
-  ): QueryExecution = {
+  def apply(): QueryExecution = {
     val __obj = js.Dynamic.literal()
-    if (Query != null) __obj.updateDynamic("Query")(Query.asInstanceOf[js.Any])
-    if (QueryExecutionContext != null) __obj.updateDynamic("QueryExecutionContext")(QueryExecutionContext.asInstanceOf[js.Any])
-    if (QueryExecutionId != null) __obj.updateDynamic("QueryExecutionId")(QueryExecutionId.asInstanceOf[js.Any])
-    if (ResultConfiguration != null) __obj.updateDynamic("ResultConfiguration")(ResultConfiguration.asInstanceOf[js.Any])
-    if (StatementType != null) __obj.updateDynamic("StatementType")(StatementType.asInstanceOf[js.Any])
-    if (Statistics != null) __obj.updateDynamic("Statistics")(Statistics.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (WorkGroup != null) __obj.updateDynamic("WorkGroup")(WorkGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecution]
   }
+  @scala.inline
+  implicit class QueryExecutionOps[Self <: QueryExecution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQuery(value: QueryString): Self = this.set("Query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("Query", js.undefined)
+    @scala.inline
+    def setQueryExecutionContext(value: QueryExecutionContext): Self = this.set("QueryExecutionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryExecutionContext: Self = this.set("QueryExecutionContext", js.undefined)
+    @scala.inline
+    def setQueryExecutionId(value: QueryExecutionId): Self = this.set("QueryExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryExecutionId: Self = this.set("QueryExecutionId", js.undefined)
+    @scala.inline
+    def setResultConfiguration(value: ResultConfiguration): Self = this.set("ResultConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultConfiguration: Self = this.set("ResultConfiguration", js.undefined)
+    @scala.inline
+    def setStatementType(value: StatementType): Self = this.set("StatementType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatementType: Self = this.set("StatementType", js.undefined)
+    @scala.inline
+    def setStatistics(value: QueryExecutionStatistics): Self = this.set("Statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("Statistics", js.undefined)
+    @scala.inline
+    def setStatus(value: QueryExecutionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setWorkGroup(value: WorkGroupName): Self = this.set("WorkGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkGroup: Self = this.set("WorkGroup", js.undefined)
+  }
+  
 }
 

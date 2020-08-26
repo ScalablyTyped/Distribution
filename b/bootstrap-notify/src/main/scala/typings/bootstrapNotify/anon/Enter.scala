@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Enter extends js.Object {
-  var enter: js.UndefOr[String] = js.undefined
-  var exit: js.UndefOr[String] = js.undefined
+  var enter: js.UndefOr[String] = js.native
+  var exit: js.UndefOr[String] = js.native
 }
 
 object Enter {
   @scala.inline
-  def apply(enter: String = null, exit: String = null): Enter = {
+  def apply(): Enter = {
     val __obj = js.Dynamic.literal()
-    if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
-    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enter]
   }
+  @scala.inline
+  implicit class EnterOps[Self <: Enter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnter(value: String): Self = this.set("enter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnter: Self = this.set("enter", js.undefined)
+    @scala.inline
+    def setExit(value: String): Self = this.set("exit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExit: Self = this.set("exit", js.undefined)
+  }
+  
 }
 

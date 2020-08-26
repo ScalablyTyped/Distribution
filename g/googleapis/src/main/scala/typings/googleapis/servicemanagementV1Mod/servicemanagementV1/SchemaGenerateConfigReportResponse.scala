@@ -31,18 +31,42 @@ trait SchemaGenerateConfigReportResponse extends js.Object {
 
 object SchemaGenerateConfigReportResponse {
   @scala.inline
-  def apply(
-    changeReports: js.Array[SchemaChangeReport] = null,
-    diagnostics: js.Array[SchemaDiagnostic] = null,
-    id: String = null,
-    serviceName: String = null
-  ): SchemaGenerateConfigReportResponse = {
+  def apply(): SchemaGenerateConfigReportResponse = {
     val __obj = js.Dynamic.literal()
-    if (changeReports != null) __obj.updateDynamic("changeReports")(changeReports.asInstanceOf[js.Any])
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGenerateConfigReportResponse]
   }
+  @scala.inline
+  implicit class SchemaGenerateConfigReportResponseOps[Self <: SchemaGenerateConfigReportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeReportsVarargs(value: SchemaChangeReport*): Self = this.set("changeReports", js.Array(value :_*))
+    @scala.inline
+    def setChangeReports(value: js.Array[SchemaChangeReport]): Self = this.set("changeReports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeReports: Self = this.set("changeReports", js.undefined)
+    @scala.inline
+    def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = this.set("diagnostics", js.Array(value :_*))
+    @scala.inline
+    def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+  }
+  
 }
 

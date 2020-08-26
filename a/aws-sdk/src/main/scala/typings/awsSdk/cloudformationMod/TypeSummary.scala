@@ -34,22 +34,46 @@ trait TypeSummary extends js.Object {
 
 object TypeSummary {
   @scala.inline
-  def apply(
-    DefaultVersionId: TypeVersionId = null,
-    Description: Description = null,
-    LastUpdated: Timestamp = null,
-    Type: RegistryType = null,
-    TypeArn: TypeArn = null,
-    TypeName: TypeName = null
-  ): TypeSummary = {
+  def apply(): TypeSummary = {
     val __obj = js.Dynamic.literal()
-    if (DefaultVersionId != null) __obj.updateDynamic("DefaultVersionId")(DefaultVersionId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (TypeArn != null) __obj.updateDynamic("TypeArn")(TypeArn.asInstanceOf[js.Any])
-    if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeSummary]
   }
+  @scala.inline
+  implicit class TypeSummaryOps[Self <: TypeSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultVersionId(value: TypeVersionId): Self = this.set("DefaultVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultVersionId: Self = this.set("DefaultVersionId", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLastUpdated(value: Timestamp): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    @scala.inline
+    def setType(value: RegistryType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setTypeArn(value: TypeArn): Self = this.set("TypeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeArn: Self = this.set("TypeArn", js.undefined)
+    @scala.inline
+    def setTypeName(value: TypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+  }
+  
 }
 

@@ -47,6 +47,7 @@ import scala.scalajs.js.annotation._
   * XGridRowSelection.addSelectionListener()} . You than will be notified for any selection change.
   * @since OOo 3.3
   */
+@js.native
 trait UnoControlGrid
   extends XControl
      with XWindow

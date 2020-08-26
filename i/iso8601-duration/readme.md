@@ -12,7 +12,7 @@ Node/Js-module for parsing and making sense of ISO8601-durations
 | Keywords           | ISO8601, duration, time |
 | # releases         | 5 |
 | # dependents       | 24 |
-| # downloads        | 6893512 |
+| # downloads        | 7689041 |
 | # stars            | 0 |
 
 ## Links

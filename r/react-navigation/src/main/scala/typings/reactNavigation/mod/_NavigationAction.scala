@@ -24,61 +24,39 @@ trait _NavigationAction extends js.Object
 
 object _NavigationAction {
   @scala.inline
-  def NavigationPushAction(
-    routeName: String,
-    `type`: NavigationSlashPUSH,
-    action: NavigationNavigateAction = null,
-    key: String = null,
-    params: NavigationParams = null
-  ): _NavigationAction = {
+  def NavigationPushAction(routeName: String, `type`: NavigationSlashPUSH): _NavigationAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationCloseDrawerAction(`type`: NavigationSlashCLOSE_DRAWER, key: String = null): _NavigationAction = {
+  def NavigationCloseDrawerAction(`type`: NavigationSlashCLOSE_DRAWER): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationDrawerOpenedAction(`type`: NavigationSlashDRAWER_OPENED, key: String = null): _NavigationAction = {
+  def NavigationDrawerOpenedAction(`type`: NavigationSlashDRAWER_OPENED): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationOpenDrawerAction(`type`: NavigationSlashOPEN_DRAWER, key: String = null): _NavigationAction = {
+  def NavigationOpenDrawerAction(`type`: NavigationSlashOPEN_DRAWER): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationNavigateAction(
-    routeName: String,
-    `type`: NavigationSlashNAVIGATE,
-    action: typings.reactNavigation.mod.NavigationNavigateAction = null,
-    key: String = null,
-    params: NavigationParams = null
-  ): _NavigationAction = {
+  def NavigationNavigateAction(routeName: String, `type`: NavigationSlashNAVIGATE): _NavigationAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationDrawerClosedAction(`type`: NavigationSlashDRAWER_CLOSED, key: String = null): _NavigationAction = {
+  def NavigationDrawerClosedAction(`type`: NavigationSlashDRAWER_CLOSED): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
@@ -88,15 +66,9 @@ object _NavigationAction {
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationBackAction(
-    `type`: NavigationSlashBACK,
-    immediate: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Null | String] = js.undefined
-  ): _NavigationAction = {
+  def NavigationBackAction(`type`: NavigationSlashBACK): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
@@ -106,79 +78,45 @@ object _NavigationAction {
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def Type(`type`: CHILD_ACTION, key: String = null): _NavigationAction = {
+  def Type(`type`: CHILD_ACTION): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationPopAction(
-    `type`: NavigationSlashPOP,
-    immediate: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    n: js.UndefOr[Double] = js.undefined,
-    prune: js.UndefOr[Boolean] = js.undefined
-  ): _NavigationAction = {
+  def NavigationPopAction(`type`: NavigationSlashPOP): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(n)) __obj.updateDynamic("n")(n.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationToggleDrawerAction(`type`: NavigationSlashTOGGLE_DRAWER, key: String = null): _NavigationAction = {
+  def NavigationToggleDrawerAction(`type`: NavigationSlashTOGGLE_DRAWER): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationInitAction(`type`: NavigationSlashINIT, key: String = null, params: NavigationParams = null): _NavigationAction = {
+  def NavigationInitAction(`type`: NavigationSlashINIT): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationPopToTopAction(
-    `type`: NavigationSlashPOP_TO_TOP,
-    immediate: js.UndefOr[Boolean] = js.undefined,
-    key: String = null
-  ): _NavigationAction = {
+  def NavigationPopToTopAction(`type`: NavigationSlashPOP_TO_TOP): _NavigationAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationResetAction(
-    actions: js.Array[NavigationNavigateAction],
-    index: Double,
-    `type`: NavigationSlashRESET,
-    key: js.UndefOr[Null | String] = js.undefined
-  ): _NavigationAction = {
+  def NavigationResetAction(actions: js.Array[NavigationNavigateAction], index: Double, `type`: NavigationSlashRESET): _NavigationAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationReplaceAction(
-    key: String,
-    routeName: String,
-    `type`: NavigationSlashREPLACE,
-    action: NavigationAction = null,
-    params: NavigationParams = null
-  ): _NavigationAction = {
+  def NavigationReplaceAction(key: String, routeName: String, `type`: NavigationSlashREPLACE): _NavigationAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
 }

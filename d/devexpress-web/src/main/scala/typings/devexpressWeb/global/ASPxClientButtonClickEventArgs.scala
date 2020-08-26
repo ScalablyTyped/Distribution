@@ -17,15 +17,5 @@ class ASPxClientButtonClickEventArgs protected ()
     * @param cancelEventAndBubble true to cancel both the event's default action and the event's bubbling upon the hierarchy of event handlers; otherwise, false. Initializes the ASPxClientButtonClickEventArgs.cancelEventAndBubble property.
     */
   def this(processOnServer: Boolean, cancelEventAndBubble: Boolean) = this()
-  /**
-    * Specifies whether both the event's default action and the event's bubbling upon the hierarchy of event handlers should be canceled.
-    */
-  /* CompleteClass */
-  override var cancelEventAndBubble: Boolean = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

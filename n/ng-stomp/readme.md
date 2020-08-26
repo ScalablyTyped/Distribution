@@ -12,7 +12,7 @@ STOMP for AngularJS
 | Keywords           | AngularJS, STOMP, websocket |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 17277 |
+| # downloads        | 17130 |
 | # stars            | 1 |
 
 ## Links

@@ -70,40 +70,88 @@ trait InstanceAttribute extends js.Object {
 
 object InstanceAttribute {
   @scala.inline
-  def apply(
-    BlockDeviceMappings: InstanceBlockDeviceMappingList = null,
-    DisableApiTermination: AttributeBooleanValue = null,
-    EbsOptimized: AttributeBooleanValue = null,
-    EnaSupport: AttributeBooleanValue = null,
-    Groups: GroupIdentifierList = null,
-    InstanceId: String = null,
-    InstanceInitiatedShutdownBehavior: AttributeValue = null,
-    InstanceType: AttributeValue = null,
-    KernelId: AttributeValue = null,
-    ProductCodes: ProductCodeList = null,
-    RamdiskId: AttributeValue = null,
-    RootDeviceName: AttributeValue = null,
-    SourceDestCheck: AttributeBooleanValue = null,
-    SriovNetSupport: AttributeValue = null,
-    UserData: AttributeValue = null
-  ): InstanceAttribute = {
+  def apply(): InstanceAttribute = {
     val __obj = js.Dynamic.literal()
-    if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
-    if (DisableApiTermination != null) __obj.updateDynamic("DisableApiTermination")(DisableApiTermination.asInstanceOf[js.Any])
-    if (EbsOptimized != null) __obj.updateDynamic("EbsOptimized")(EbsOptimized.asInstanceOf[js.Any])
-    if (EnaSupport != null) __obj.updateDynamic("EnaSupport")(EnaSupport.asInstanceOf[js.Any])
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (InstanceInitiatedShutdownBehavior != null) __obj.updateDynamic("InstanceInitiatedShutdownBehavior")(InstanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (KernelId != null) __obj.updateDynamic("KernelId")(KernelId.asInstanceOf[js.Any])
-    if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])
-    if (RamdiskId != null) __obj.updateDynamic("RamdiskId")(RamdiskId.asInstanceOf[js.Any])
-    if (RootDeviceName != null) __obj.updateDynamic("RootDeviceName")(RootDeviceName.asInstanceOf[js.Any])
-    if (SourceDestCheck != null) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.asInstanceOf[js.Any])
-    if (SriovNetSupport != null) __obj.updateDynamic("SriovNetSupport")(SriovNetSupport.asInstanceOf[js.Any])
-    if (UserData != null) __obj.updateDynamic("UserData")(UserData.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceAttribute]
   }
+  @scala.inline
+  implicit class InstanceAttributeOps[Self <: InstanceAttribute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    @scala.inline
+    def setBlockDeviceMappings(value: InstanceBlockDeviceMappingList): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    @scala.inline
+    def setDisableApiTermination(value: AttributeBooleanValue): Self = this.set("DisableApiTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableApiTermination: Self = this.set("DisableApiTermination", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: AttributeBooleanValue): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    @scala.inline
+    def setEnaSupport(value: AttributeBooleanValue): Self = this.set("EnaSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnaSupport: Self = this.set("EnaSupport", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: GroupIdentifier*): Self = this.set("Groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: GroupIdentifierList): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("Groups", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setInstanceInitiatedShutdownBehavior(value: AttributeValue): Self = this.set("InstanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceInitiatedShutdownBehavior: Self = this.set("InstanceInitiatedShutdownBehavior", js.undefined)
+    @scala.inline
+    def setInstanceType(value: AttributeValue): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setKernelId(value: AttributeValue): Self = this.set("KernelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKernelId: Self = this.set("KernelId", js.undefined)
+    @scala.inline
+    def setProductCodesVarargs(value: ProductCode*): Self = this.set("ProductCodes", js.Array(value :_*))
+    @scala.inline
+    def setProductCodes(value: ProductCodeList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
+    @scala.inline
+    def setRamdiskId(value: AttributeValue): Self = this.set("RamdiskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRamdiskId: Self = this.set("RamdiskId", js.undefined)
+    @scala.inline
+    def setRootDeviceName(value: AttributeValue): Self = this.set("RootDeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootDeviceName: Self = this.set("RootDeviceName", js.undefined)
+    @scala.inline
+    def setSourceDestCheck(value: AttributeBooleanValue): Self = this.set("SourceDestCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDestCheck: Self = this.set("SourceDestCheck", js.undefined)
+    @scala.inline
+    def setSriovNetSupport(value: AttributeValue): Self = this.set("SriovNetSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSriovNetSupport: Self = this.set("SriovNetSupport", js.undefined)
+    @scala.inline
+    def setUserData(value: AttributeValue): Self = this.set("UserData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("UserData", js.undefined)
+  }
+  
 }
 

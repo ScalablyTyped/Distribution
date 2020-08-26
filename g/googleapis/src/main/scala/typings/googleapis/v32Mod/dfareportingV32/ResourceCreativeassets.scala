@@ -32,6 +32,7 @@ class ResourceCreativeassets protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaCreativeAssetMetadata] = js.native
   def insert(callback: BodyResponseCallback[SchemaCreativeAssetMetadata]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeAssetMetadata] = js.native
   def insert(params: ParamsResourceCreativeassetsInsert): GaxiosPromise[SchemaCreativeAssetMetadata] = js.native
   def insert(
     params: ParamsResourceCreativeassetsInsert,

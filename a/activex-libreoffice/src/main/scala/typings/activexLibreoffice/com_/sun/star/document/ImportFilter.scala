@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * should be available at same implementation too.
   * @see ExportFilter
   */
+@js.native
 trait ImportFilter
   extends XImporter
      with XFilter

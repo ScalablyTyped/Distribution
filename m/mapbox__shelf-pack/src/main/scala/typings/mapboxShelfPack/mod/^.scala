@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends ShelfPack {
   def this(width: Double) = this()
+  def this(width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(width: Double, height: Double) = this()
+  def this(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], options: CreateOption) = this()
+  def this(width: js.UndefOr[scala.Nothing], height: Double, options: CreateOption) = this()
+  def this(width: Double, height: js.UndefOr[scala.Nothing], options: CreateOption) = this()
   def this(width: Double, height: Double, options: CreateOption) = this()
 }
 

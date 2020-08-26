@@ -136,72 +136,146 @@ trait Mpeg2Settings extends js.Object {
 
 object Mpeg2Settings {
   @scala.inline
-  def apply(
-    AdaptiveQuantization: Mpeg2AdaptiveQuantization = null,
-    Bitrate: js.UndefOr[integerMin1000Max288000000] = js.undefined,
-    CodecLevel: Mpeg2CodecLevel = null,
-    CodecProfile: Mpeg2CodecProfile = null,
-    DynamicSubGop: Mpeg2DynamicSubGop = null,
-    FramerateControl: Mpeg2FramerateControl = null,
-    FramerateConversionAlgorithm: Mpeg2FramerateConversionAlgorithm = null,
-    FramerateDenominator: js.UndefOr[integerMin1Max1001] = js.undefined,
-    FramerateNumerator: js.UndefOr[integerMin24Max60000] = js.undefined,
-    GopClosedCadence: js.UndefOr[integerMin0Max2147483647] = js.undefined,
-    GopSize: js.UndefOr[doubleMin0] = js.undefined,
-    GopSizeUnits: Mpeg2GopSizeUnits = null,
-    HrdBufferInitialFillPercentage: js.UndefOr[integerMin0Max100] = js.undefined,
-    HrdBufferSize: js.UndefOr[integerMin0Max47185920] = js.undefined,
-    InterlaceMode: Mpeg2InterlaceMode = null,
-    IntraDcPrecision: Mpeg2IntraDcPrecision = null,
-    MaxBitrate: js.UndefOr[integerMin1000Max300000000] = js.undefined,
-    MinIInterval: js.UndefOr[integerMin0Max30] = js.undefined,
-    NumberBFramesBetweenReferenceFrames: js.UndefOr[integerMin0Max7] = js.undefined,
-    ParControl: Mpeg2ParControl = null,
-    ParDenominator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    ParNumerator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    QualityTuningLevel: Mpeg2QualityTuningLevel = null,
-    RateControlMode: Mpeg2RateControlMode = null,
-    SceneChangeDetect: Mpeg2SceneChangeDetect = null,
-    SlowPal: Mpeg2SlowPal = null,
-    Softness: js.UndefOr[integerMin0Max128] = js.undefined,
-    SpatialAdaptiveQuantization: Mpeg2SpatialAdaptiveQuantization = null,
-    Syntax: Mpeg2Syntax = null,
-    Telecine: Mpeg2Telecine = null,
-    TemporalAdaptiveQuantization: Mpeg2TemporalAdaptiveQuantization = null
-  ): Mpeg2Settings = {
+  def apply(): Mpeg2Settings = {
     val __obj = js.Dynamic.literal()
-    if (AdaptiveQuantization != null) __obj.updateDynamic("AdaptiveQuantization")(AdaptiveQuantization.asInstanceOf[js.Any])
-    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
-    if (CodecLevel != null) __obj.updateDynamic("CodecLevel")(CodecLevel.asInstanceOf[js.Any])
-    if (CodecProfile != null) __obj.updateDynamic("CodecProfile")(CodecProfile.asInstanceOf[js.Any])
-    if (DynamicSubGop != null) __obj.updateDynamic("DynamicSubGop")(DynamicSubGop.asInstanceOf[js.Any])
-    if (FramerateControl != null) __obj.updateDynamic("FramerateControl")(FramerateControl.asInstanceOf[js.Any])
-    if (FramerateConversionAlgorithm != null) __obj.updateDynamic("FramerateConversionAlgorithm")(FramerateConversionAlgorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GopClosedCadence)) __obj.updateDynamic("GopClosedCadence")(GopClosedCadence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GopSize)) __obj.updateDynamic("GopSize")(GopSize.get.asInstanceOf[js.Any])
-    if (GopSizeUnits != null) __obj.updateDynamic("GopSizeUnits")(GopSizeUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(HrdBufferInitialFillPercentage)) __obj.updateDynamic("HrdBufferInitialFillPercentage")(HrdBufferInitialFillPercentage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HrdBufferSize)) __obj.updateDynamic("HrdBufferSize")(HrdBufferSize.get.asInstanceOf[js.Any])
-    if (InterlaceMode != null) __obj.updateDynamic("InterlaceMode")(InterlaceMode.asInstanceOf[js.Any])
-    if (IntraDcPrecision != null) __obj.updateDynamic("IntraDcPrecision")(IntraDcPrecision.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinIInterval)) __obj.updateDynamic("MinIInterval")(MinIInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberBFramesBetweenReferenceFrames)) __obj.updateDynamic("NumberBFramesBetweenReferenceFrames")(NumberBFramesBetweenReferenceFrames.get.asInstanceOf[js.Any])
-    if (ParControl != null) __obj.updateDynamic("ParControl")(ParControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParDenominator)) __obj.updateDynamic("ParDenominator")(ParDenominator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParNumerator)) __obj.updateDynamic("ParNumerator")(ParNumerator.get.asInstanceOf[js.Any])
-    if (QualityTuningLevel != null) __obj.updateDynamic("QualityTuningLevel")(QualityTuningLevel.asInstanceOf[js.Any])
-    if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
-    if (SceneChangeDetect != null) __obj.updateDynamic("SceneChangeDetect")(SceneChangeDetect.asInstanceOf[js.Any])
-    if (SlowPal != null) __obj.updateDynamic("SlowPal")(SlowPal.asInstanceOf[js.Any])
-    if (!js.isUndefined(Softness)) __obj.updateDynamic("Softness")(Softness.get.asInstanceOf[js.Any])
-    if (SpatialAdaptiveQuantization != null) __obj.updateDynamic("SpatialAdaptiveQuantization")(SpatialAdaptiveQuantization.asInstanceOf[js.Any])
-    if (Syntax != null) __obj.updateDynamic("Syntax")(Syntax.asInstanceOf[js.Any])
-    if (Telecine != null) __obj.updateDynamic("Telecine")(Telecine.asInstanceOf[js.Any])
-    if (TemporalAdaptiveQuantization != null) __obj.updateDynamic("TemporalAdaptiveQuantization")(TemporalAdaptiveQuantization.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mpeg2Settings]
   }
+  @scala.inline
+  implicit class Mpeg2SettingsOps[Self <: Mpeg2Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdaptiveQuantization(value: Mpeg2AdaptiveQuantization): Self = this.set("AdaptiveQuantization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdaptiveQuantization: Self = this.set("AdaptiveQuantization", js.undefined)
+    @scala.inline
+    def setBitrate(value: integerMin1000Max288000000): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    @scala.inline
+    def setCodecLevel(value: Mpeg2CodecLevel): Self = this.set("CodecLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecLevel: Self = this.set("CodecLevel", js.undefined)
+    @scala.inline
+    def setCodecProfile(value: Mpeg2CodecProfile): Self = this.set("CodecProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecProfile: Self = this.set("CodecProfile", js.undefined)
+    @scala.inline
+    def setDynamicSubGop(value: Mpeg2DynamicSubGop): Self = this.set("DynamicSubGop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamicSubGop: Self = this.set("DynamicSubGop", js.undefined)
+    @scala.inline
+    def setFramerateControl(value: Mpeg2FramerateControl): Self = this.set("FramerateControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateControl: Self = this.set("FramerateControl", js.undefined)
+    @scala.inline
+    def setFramerateConversionAlgorithm(value: Mpeg2FramerateConversionAlgorithm): Self = this.set("FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateConversionAlgorithm: Self = this.set("FramerateConversionAlgorithm", js.undefined)
+    @scala.inline
+    def setFramerateDenominator(value: integerMin1Max1001): Self = this.set("FramerateDenominator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateDenominator: Self = this.set("FramerateDenominator", js.undefined)
+    @scala.inline
+    def setFramerateNumerator(value: integerMin24Max60000): Self = this.set("FramerateNumerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateNumerator: Self = this.set("FramerateNumerator", js.undefined)
+    @scala.inline
+    def setGopClosedCadence(value: integerMin0Max2147483647): Self = this.set("GopClosedCadence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGopClosedCadence: Self = this.set("GopClosedCadence", js.undefined)
+    @scala.inline
+    def setGopSize(value: doubleMin0): Self = this.set("GopSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGopSize: Self = this.set("GopSize", js.undefined)
+    @scala.inline
+    def setGopSizeUnits(value: Mpeg2GopSizeUnits): Self = this.set("GopSizeUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGopSizeUnits: Self = this.set("GopSizeUnits", js.undefined)
+    @scala.inline
+    def setHrdBufferInitialFillPercentage(value: integerMin0Max100): Self = this.set("HrdBufferInitialFillPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHrdBufferInitialFillPercentage: Self = this.set("HrdBufferInitialFillPercentage", js.undefined)
+    @scala.inline
+    def setHrdBufferSize(value: integerMin0Max47185920): Self = this.set("HrdBufferSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHrdBufferSize: Self = this.set("HrdBufferSize", js.undefined)
+    @scala.inline
+    def setInterlaceMode(value: Mpeg2InterlaceMode): Self = this.set("InterlaceMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterlaceMode: Self = this.set("InterlaceMode", js.undefined)
+    @scala.inline
+    def setIntraDcPrecision(value: Mpeg2IntraDcPrecision): Self = this.set("IntraDcPrecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntraDcPrecision: Self = this.set("IntraDcPrecision", js.undefined)
+    @scala.inline
+    def setMaxBitrate(value: integerMin1000Max300000000): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+    @scala.inline
+    def setMinIInterval(value: integerMin0Max30): Self = this.set("MinIInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinIInterval: Self = this.set("MinIInterval", js.undefined)
+    @scala.inline
+    def setNumberBFramesBetweenReferenceFrames(value: integerMin0Max7): Self = this.set("NumberBFramesBetweenReferenceFrames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberBFramesBetweenReferenceFrames: Self = this.set("NumberBFramesBetweenReferenceFrames", js.undefined)
+    @scala.inline
+    def setParControl(value: Mpeg2ParControl): Self = this.set("ParControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParControl: Self = this.set("ParControl", js.undefined)
+    @scala.inline
+    def setParDenominator(value: integerMin1Max2147483647): Self = this.set("ParDenominator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParDenominator: Self = this.set("ParDenominator", js.undefined)
+    @scala.inline
+    def setParNumerator(value: integerMin1Max2147483647): Self = this.set("ParNumerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParNumerator: Self = this.set("ParNumerator", js.undefined)
+    @scala.inline
+    def setQualityTuningLevel(value: Mpeg2QualityTuningLevel): Self = this.set("QualityTuningLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualityTuningLevel: Self = this.set("QualityTuningLevel", js.undefined)
+    @scala.inline
+    def setRateControlMode(value: Mpeg2RateControlMode): Self = this.set("RateControlMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateControlMode: Self = this.set("RateControlMode", js.undefined)
+    @scala.inline
+    def setSceneChangeDetect(value: Mpeg2SceneChangeDetect): Self = this.set("SceneChangeDetect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSceneChangeDetect: Self = this.set("SceneChangeDetect", js.undefined)
+    @scala.inline
+    def setSlowPal(value: Mpeg2SlowPal): Self = this.set("SlowPal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlowPal: Self = this.set("SlowPal", js.undefined)
+    @scala.inline
+    def setSoftness(value: integerMin0Max128): Self = this.set("Softness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSoftness: Self = this.set("Softness", js.undefined)
+    @scala.inline
+    def setSpatialAdaptiveQuantization(value: Mpeg2SpatialAdaptiveQuantization): Self = this.set("SpatialAdaptiveQuantization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpatialAdaptiveQuantization: Self = this.set("SpatialAdaptiveQuantization", js.undefined)
+    @scala.inline
+    def setSyntax(value: Mpeg2Syntax): Self = this.set("Syntax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyntax: Self = this.set("Syntax", js.undefined)
+    @scala.inline
+    def setTelecine(value: Mpeg2Telecine): Self = this.set("Telecine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTelecine: Self = this.set("Telecine", js.undefined)
+    @scala.inline
+    def setTemporalAdaptiveQuantization(value: Mpeg2TemporalAdaptiveQuantization): Self = this.set("TemporalAdaptiveQuantization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemporalAdaptiveQuantization: Self = this.set("TemporalAdaptiveQuantization", js.undefined)
+  }
+  
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "TemplateBindingParseResult")
 @js.native
 class TemplateBindingParseResult protected ()
-  extends typings.angularCompiler.publicApiMod.TemplateBindingParseResult {
+  extends typings.angularCompiler.compilerMod.TemplateBindingParseResult {
   def this(
     templateBindings: js.Array[TemplateBinding],
     warnings: js.Array[String],

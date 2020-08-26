@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 class OnBeginRedoDataUpdateChange protected ()
   extends typings.sharepoint.SP.JsGrid.EventArgs.OnBeginRedoDataUpdateChange {
   def this(changeKey: IChangeKey) = this()
-  /* CompleteClass */
-  override var changeKey: IChangeKey = js.native
 }
 

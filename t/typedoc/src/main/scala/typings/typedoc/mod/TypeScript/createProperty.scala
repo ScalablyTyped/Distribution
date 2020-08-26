@@ -18,54 +18,10 @@ object createProperty extends js.Object {
   def apply(
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
-    name: String
-  ): PropertyDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken
-  ): PropertyDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode
-  ): PropertyDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    name: String,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): PropertyDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    name: PropertyName
-  ): PropertyDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken
-  ): PropertyDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode
-  ): PropertyDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    name: PropertyName,
-    questionOrExclamationToken: ExclamationToken | QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
+    name: String | PropertyName,
+    questionOrExclamationToken: js.UndefOr[QuestionToken | ExclamationToken],
+    `type`: js.UndefOr[TypeNode],
+    initializer: js.UndefOr[Expression]
   ): PropertyDeclaration = js.native
 }
 

@@ -18,11 +18,30 @@ trait DeleteBackupResponse extends js.Object {
 
 object DeleteBackupResponse {
   @scala.inline
-  def apply(BackupId: BackupId = null, Lifecycle: BackupLifecycle = null): DeleteBackupResponse = {
+  def apply(): DeleteBackupResponse = {
     val __obj = js.Dynamic.literal()
-    if (BackupId != null) __obj.updateDynamic("BackupId")(BackupId.asInstanceOf[js.Any])
-    if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBackupResponse]
   }
+  @scala.inline
+  implicit class DeleteBackupResponseOps[Self <: DeleteBackupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupId(value: BackupId): Self = this.set("BackupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupId: Self = this.set("BackupId", js.undefined)
+    @scala.inline
+    def setLifecycle(value: BackupLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+  }
+  
 }
 

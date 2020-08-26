@@ -25,6 +25,7 @@ trait CollectionEvents extends js.Object {
     * alias unbind, unlisten, removeListener
     */
   def off(events: EventNames): this.type = js.native
+  def off(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
   def off(events: EventNames, selector: String): this.type = js.native
   def off(events: EventNames, selector: String, handler: EventHandler): this.type = js.native
   def on(events: EventNames, handler: EventHandler): this.type = js.native
@@ -59,6 +60,7 @@ trait CollectionEvents extends js.Object {
   def promiseOn(events: EventNames): js.Promise[EventHandler] = js.native
   def promiseOn(events: EventNames, selector: String): js.Promise[EventHandler] = js.native
   def removeListener(events: EventNames): this.type = js.native
+  def removeListener(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
   def removeListener(events: EventNames, selector: String): this.type = js.native
   def removeListener(events: EventNames, selector: String, handler: EventHandler): this.type = js.native
   /**
@@ -68,9 +70,11 @@ trait CollectionEvents extends js.Object {
   def trigger(events: EventNames): this.type = js.native
   def trigger(events: EventNames, extra: js.Array[String]): this.type = js.native
   def unbind(events: EventNames): this.type = js.native
+  def unbind(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
   def unbind(events: EventNames, selector: String): this.type = js.native
   def unbind(events: EventNames, selector: String, handler: EventHandler): this.type = js.native
   def unlisten(events: EventNames): this.type = js.native
+  def unlisten(events: EventNames, selector: js.UndefOr[scala.Nothing], handler: EventHandler): this.type = js.native
   def unlisten(events: EventNames, selector: String): this.type = js.native
   def unlisten(events: EventNames, selector: String, handler: EventHandler): this.type = js.native
 }

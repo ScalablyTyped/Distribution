@@ -10,14 +10,15 @@ A clientside Javascript library for standardizing requests to OAuth2 web service
 | ------------------ | :-------------: |
 | Full name          | hellojs |
 | Keywords           | oauth, oauth1.0, oauth2, api, facebooks, google, windows, linkedin, twitter |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 11 |
-| # downloads        | 248276 |
+| # downloads        | 250665 |
 | # stars            | 3 |
 
 ## Links
 - [Homepage](https://adodson.com/hello.js)
 - [Bugs](https://github.com/MrSwitch/hello.js/issues)
+- [Repository](https://github.com/MrSwitch/hello.js)
 - [Npm](https://www.npmjs.com/package/hellojs)
     
 

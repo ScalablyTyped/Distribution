@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class TimeoutError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+  class TimeoutError () extends Error
   
   def timeout[T](promise: js.Promise[T], timeoutMillis: Double): js.Promise[T] = js.native
 }

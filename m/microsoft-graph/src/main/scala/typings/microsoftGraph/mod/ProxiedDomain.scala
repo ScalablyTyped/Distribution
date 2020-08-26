@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProxiedDomain extends js.Object {
   // The IP address or FQDN
-  var ipAddressOrFQDN: js.UndefOr[String] = js.undefined
+  var ipAddressOrFQDN: js.UndefOr[String] = js.native
   // Proxy IP or FQDN
-  var proxy: js.UndefOr[String] = js.undefined
+  var proxy: js.UndefOr[String] = js.native
 }
 
 object ProxiedDomain {
   @scala.inline
-  def apply(ipAddressOrFQDN: String = null, proxy: String = null): ProxiedDomain = {
+  def apply(): ProxiedDomain = {
     val __obj = js.Dynamic.literal()
-    if (ipAddressOrFQDN != null) __obj.updateDynamic("ipAddressOrFQDN")(ipAddressOrFQDN.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxiedDomain]
   }
+  @scala.inline
+  implicit class ProxiedDomainOps[Self <: ProxiedDomain] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpAddressOrFQDN(value: String): Self = this.set("ipAddressOrFQDN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressOrFQDN: Self = this.set("ipAddressOrFQDN", js.undefined)
+    @scala.inline
+    def setProxy(value: String): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+  }
+  
 }
 

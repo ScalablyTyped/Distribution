@@ -22,14 +22,30 @@ trait UpdateContributorInsightsInput extends js.Object {
 
 object UpdateContributorInsightsInput {
   @scala.inline
-  def apply(
-    ContributorInsightsAction: ContributorInsightsAction,
-    TableName: TableName,
-    IndexName: IndexName = null
-  ): UpdateContributorInsightsInput = {
+  def apply(ContributorInsightsAction: ContributorInsightsAction, TableName: TableName): UpdateContributorInsightsInput = {
     val __obj = js.Dynamic.literal(ContributorInsightsAction = ContributorInsightsAction.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateContributorInsightsInput]
   }
+  @scala.inline
+  implicit class UpdateContributorInsightsInputOps[Self <: UpdateContributorInsightsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContributorInsightsAction(value: ContributorInsightsAction): Self = this.set("ContributorInsightsAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+  }
+  
 }
 

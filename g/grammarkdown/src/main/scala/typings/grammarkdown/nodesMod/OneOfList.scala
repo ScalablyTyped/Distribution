@@ -10,10 +10,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class OneOfList protected ()
   extends Node[typings.grammarkdown.tokensMod.SyntaxKind.OneOfList] {
-  def this(oneKeyword: Token[OneKeyword], ofKeyword: js.UndefOr[Token[OfKeyword]], indented: Boolean) = this()
+  def this(oneKeyword: Token[OneKeyword], ofKeyword: js.UndefOr[scala.Nothing], indented: Boolean) = this()
+  def this(oneKeyword: Token[OneKeyword], ofKeyword: Token[OfKeyword], indented: Boolean) = this()
   def this(
     oneKeyword: Token[OneKeyword],
-    ofKeyword: js.UndefOr[Token[OfKeyword]],
+    ofKeyword: js.UndefOr[scala.Nothing],
+    indented: Boolean,
+    terminals: js.Array[Terminal]
+  ) = this()
+  def this(
+    oneKeyword: Token[OneKeyword],
+    ofKeyword: Token[OfKeyword],
     indented: Boolean,
     terminals: js.Array[Terminal]
   ) = this()

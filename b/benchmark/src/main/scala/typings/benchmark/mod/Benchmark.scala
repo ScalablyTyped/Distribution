@@ -26,10 +26,12 @@ trait Benchmark extends js.Object {
   def emit(`type`: js.Object): js.Any = js.native
   def listeners(`type`: String): js.Array[js.Function] = js.native
   def off(): Benchmark = js.native
+  def off(`type`: js.UndefOr[scala.Nothing], listener: js.Function): Benchmark = js.native
   def off(`type`: String): Benchmark = js.native
   def off(`type`: String, listener: js.Function): Benchmark = js.native
   def off(types: js.Array[String]): Benchmark = js.native
   def on(): Benchmark = js.native
+  def on(`type`: js.UndefOr[scala.Nothing], listener: js.Function): Benchmark = js.native
   def on(`type`: String): Benchmark = js.native
   def on(`type`: String, listener: js.Function): Benchmark = js.native
   def on(types: js.Array[String]): Benchmark = js.native

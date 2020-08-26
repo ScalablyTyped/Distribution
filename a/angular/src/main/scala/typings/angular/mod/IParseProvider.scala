@@ -23,6 +23,10 @@ trait IParseProvider extends js.Object {
     * @param identifierContinue The function that will decide whether the given character is a valid identifier continue character.
     **/
   def setIdentifierFns(): Unit = js.native
+  def setIdentifierFns(
+    identifierStart: js.UndefOr[scala.Nothing],
+    identifierContinue: js.Function2[/* character */ String, /* codePoint */ Double, Boolean]
+  ): Unit = js.native
   def setIdentifierFns(identifierStart: js.Function2[/* character */ String, /* codePoint */ Double, Boolean]): Unit = js.native
   def setIdentifierFns(
     identifierStart: js.Function2[/* character */ String, /* codePoint */ Double, Boolean],

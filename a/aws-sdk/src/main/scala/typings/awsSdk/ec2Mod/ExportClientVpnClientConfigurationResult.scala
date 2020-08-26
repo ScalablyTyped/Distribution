@@ -14,10 +14,26 @@ trait ExportClientVpnClientConfigurationResult extends js.Object {
 
 object ExportClientVpnClientConfigurationResult {
   @scala.inline
-  def apply(ClientConfiguration: String = null): ExportClientVpnClientConfigurationResult = {
+  def apply(): ExportClientVpnClientConfigurationResult = {
     val __obj = js.Dynamic.literal()
-    if (ClientConfiguration != null) __obj.updateDynamic("ClientConfiguration")(ClientConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportClientVpnClientConfigurationResult]
   }
+  @scala.inline
+  implicit class ExportClientVpnClientConfigurationResultOps[Self <: ExportClientVpnClientConfigurationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientConfiguration(value: String): Self = this.set("ClientConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientConfiguration: Self = this.set("ClientConfiguration", js.undefined)
+  }
+  
 }
 

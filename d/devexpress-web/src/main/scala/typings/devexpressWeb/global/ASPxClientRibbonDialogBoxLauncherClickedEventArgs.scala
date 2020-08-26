@@ -17,15 +17,5 @@ class ASPxClientRibbonDialogBoxLauncherClickedEventArgs protected ()
     * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
     */
   def this(group: typings.devexpressWeb.ASPxClientRibbonGroup, processOnServer: Boolean) = this()
-  /**
-    * Gets the client group object to which the clicked dialog box launcher belongs.
-    */
-  /* CompleteClass */
-  override var group: typings.devexpressWeb.ASPxClientRibbonGroup = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

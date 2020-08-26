@@ -12,7 +12,7 @@ react native percentage circle and also be a progress bar
 | Keywords           | percentage, circle, progress, bar |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 25246 |
+| # downloads        | 25573 |
 | # stars            | 1 |
 
 ## Links

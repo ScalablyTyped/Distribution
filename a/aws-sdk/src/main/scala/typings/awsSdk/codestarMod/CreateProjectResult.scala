@@ -26,16 +26,34 @@ trait CreateProjectResult extends js.Object {
 
 object CreateProjectResult {
   @scala.inline
-  def apply(
-    arn: ProjectArn,
-    id: ProjectId,
-    clientRequestToken: ClientRequestToken = null,
-    projectTemplateId: ProjectTemplateId = null
-  ): CreateProjectResult = {
+  def apply(arn: ProjectArn, id: ProjectId): CreateProjectResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (projectTemplateId != null) __obj.updateDynamic("projectTemplateId")(projectTemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProjectResult]
   }
+  @scala.inline
+  implicit class CreateProjectResultOps[Self <: CreateProjectResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: ProjectArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: ProjectId): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setProjectTemplateId(value: ProjectTemplateId): Self = this.set("projectTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectTemplateId: Self = this.set("projectTemplateId", js.undefined)
+  }
+  
 }
 

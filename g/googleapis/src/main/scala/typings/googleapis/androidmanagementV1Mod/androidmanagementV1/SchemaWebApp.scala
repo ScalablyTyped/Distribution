@@ -42,22 +42,48 @@ trait SchemaWebApp extends js.Object {
 
 object SchemaWebApp {
   @scala.inline
-  def apply(
-    displayMode: String = null,
-    icons: js.Array[SchemaWebAppIcon] = null,
-    name: String = null,
-    startUrl: String = null,
-    title: String = null,
-    versionCode: String = null
-  ): SchemaWebApp = {
+  def apply(): SchemaWebApp = {
     val __obj = js.Dynamic.literal()
-    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (startUrl != null) __obj.updateDynamic("startUrl")(startUrl.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWebApp]
   }
+  @scala.inline
+  implicit class SchemaWebAppOps[Self <: SchemaWebApp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayMode(value: String): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    @scala.inline
+    def setIconsVarargs(value: SchemaWebAppIcon*): Self = this.set("icons", js.Array(value :_*))
+    @scala.inline
+    def setIcons(value: js.Array[SchemaWebAppIcon]): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStartUrl(value: String): Self = this.set("startUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartUrl: Self = this.set("startUrl", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVersionCode(value: String): Self = this.set("versionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
+  }
+  
 }
 

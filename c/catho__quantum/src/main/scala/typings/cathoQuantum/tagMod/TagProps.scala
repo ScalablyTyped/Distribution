@@ -17,39 +17,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TagProps extends js.Object {
-  var bold: js.UndefOr[Boolean] = js.undefined
-  var inverted: js.UndefOr[Boolean] = js.undefined
-  var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
-  var size: js.UndefOr[small | medium | large] = js.undefined
-  var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
-  var stroked: js.UndefOr[Boolean] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var theme: js.UndefOr[ColorsComponentsSpacing] = js.undefined
+  var bold: js.UndefOr[Boolean] = js.native
+  var inverted: js.UndefOr[Boolean] = js.native
+  var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+  var size: js.UndefOr[small | medium | large] = js.native
+  var skin: js.UndefOr[neutral | primary | success | warning | error] = js.native
+  var stroked: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[ColorsComponentsSpacing] = js.native
 }
 
 object TagProps {
   @scala.inline
-  def apply(
-    bold: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    onClose: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
-    size: small | medium | large = null,
-    skin: neutral | primary | success | warning | error = null,
-    stroked: js.UndefOr[Boolean] = js.undefined,
-    text: String = null,
-    theme: ColorsComponentsSpacing = null
-  ): TagProps = {
+  def apply(): TagProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (!js.isUndefined(stroked)) __obj.updateDynamic("stroked")(stroked.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagProps]
   }
+  @scala.inline
+  implicit class TagPropsOps[Self <: TagProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBold: Self = this.set("bold", js.undefined)
+    @scala.inline
+    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("inverted", js.undefined)
+    @scala.inline
+    def setOnClose(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setSize(value: small | medium | large): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSkin(value: neutral | primary | success | warning | error): Self = this.set("skin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkin: Self = this.set("skin", js.undefined)
+    @scala.inline
+    def setStroked(value: Boolean): Self = this.set("stroked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroked: Self = this.set("stroked", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTheme(value: ColorsComponentsSpacing): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

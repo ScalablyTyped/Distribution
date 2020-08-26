@@ -39,9 +39,8 @@ trait Input
   def handleKeyDown(e: KeyboardEvent[HTMLInputElement]): Unit = js.native
   def handleReset(e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def renderComponent(hasGetPrefixClsDirectionInput: ConfigConsumerProps): Element = js.native
-  def renderInput(prefixCls: String): Element = js.native
-  def renderInput(prefixCls: String, size: SizeType): Element = js.native
-  def renderInput(prefixCls: String, size: SizeType, input: AutoComplete): Element = js.native
+  def renderInput(prefixCls: String, size: js.UndefOr[SizeType], bordered: Boolean): Element = js.native
+  def renderInput(prefixCls: String, size: js.UndefOr[SizeType], bordered: Boolean, input: js.UndefOr[AutoComplete]): Element = js.native
   def saveClearableInput(input: typings.antd.clearableLabeledInputMod.default): Unit = js.native
   def saveInput(input: HTMLInputElement): Unit = js.native
   def select(): Unit = js.native

@@ -14,6 +14,7 @@ class Script protected () extends js.Object {
   def runInContext(contextifiedSandbox: Context): js.Any = js.native
   def runInContext(contextifiedSandbox: Context, options: RunningScriptOptions): js.Any = js.native
   def runInNewContext(): js.Any = js.native
+  def runInNewContext(sandbox: js.UndefOr[scala.Nothing], options: RunningScriptOptions): js.Any = js.native
   def runInNewContext(sandbox: Context): js.Any = js.native
   def runInNewContext(sandbox: Context, options: RunningScriptOptions): js.Any = js.native
   def runInThisContext(): js.Any = js.native

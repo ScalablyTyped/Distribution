@@ -12,6 +12,8 @@ class Formatter protected () extends js.Object {
   @JSName("apply")
   def apply(name: String): Unit = js.native
   @JSName("apply")
+  def apply(name: String, vars: js.UndefOr[scala.Nothing], node: Node): Unit = js.native
+  @JSName("apply")
   def apply(name: String, vars: js.Object): Unit = js.native
   @JSName("apply")
   def apply(name: String, vars: js.Object, node: Node): Unit = js.native
@@ -21,6 +23,7 @@ class Formatter protected () extends js.Object {
   def get(name: String): js.Array[_] | js.Object = js.native
   def getCssText(format: String): String = js.native
   def `match`(name: String): Boolean = js.native
+  def `match`(name: String, vars: js.UndefOr[scala.Nothing], node: Node): Boolean = js.native
   def `match`(name: String, vars: js.Object): Boolean = js.native
   def `match`(name: String, vars: js.Object, node: Node): Boolean = js.native
   def matchAll(names: js.Array[_]): js.Array[_] = js.native
@@ -29,9 +32,11 @@ class Formatter protected () extends js.Object {
   def register(name: js.Object): Unit = js.native
   def register(name: js.Object, format: js.Object): Unit = js.native
   def remove(name: String): Unit = js.native
+  def remove(name: String, vars: js.UndefOr[scala.Nothing], node: Node): Unit = js.native
   def remove(name: String, vars: js.Object): Unit = js.native
   def remove(name: String, vars: js.Object, node: Node): Unit = js.native
   def toggle(name: String): Unit = js.native
+  def toggle(name: String, vars: js.UndefOr[scala.Nothing], node: Node): Unit = js.native
   def toggle(name: String, vars: js.Object): Unit = js.native
   def toggle(name: String, vars: js.Object, node: Node): Unit = js.native
   def unregister(name: String): Unit = js.native

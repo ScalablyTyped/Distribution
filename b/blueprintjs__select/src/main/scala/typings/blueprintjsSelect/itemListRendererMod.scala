@@ -36,11 +36,11 @@ object itemListRendererMod extends js.Object {
       * The current query string.
       */
     var query: String = js.native
-    def itemsParentRef(): Unit = js.native
     /**
       * A ref handler that should be attached to the parent HTML element of the menu items.
       * This is required for the active item to scroll into view automatically.
       */
+    def itemsParentRef(): Unit = js.native
     def itemsParentRef(ref: HTMLElement): Unit = js.native
     /**
       * Call this function to render an item.
@@ -51,8 +51,8 @@ object itemListRendererMod extends js.Object {
   }
   
   def renderFilteredItems(props: IItemListRendererProps[_]): ReactNode = js.native
+  def renderFilteredItems(props: IItemListRendererProps[_], noResults: js.UndefOr[ReactNode], initialContent: ReactNode): ReactNode = js.native
   def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode): ReactNode = js.native
-  def renderFilteredItems(props: IItemListRendererProps[_], noResults: ReactNode, initialContent: ReactNode): ReactNode = js.native
   type ItemListRenderer[T] = js.Function1[/* itemListProps */ IItemListRendererProps[T], Element | Null]
 }
 

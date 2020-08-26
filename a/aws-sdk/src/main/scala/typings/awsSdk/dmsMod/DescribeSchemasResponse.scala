@@ -18,11 +18,32 @@ trait DescribeSchemasResponse extends js.Object {
 
 object DescribeSchemasResponse {
   @scala.inline
-  def apply(Marker: String = null, Schemas: SchemaList = null): DescribeSchemasResponse = {
+  def apply(): DescribeSchemasResponse = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (Schemas != null) __obj.updateDynamic("Schemas")(Schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSchemasResponse]
   }
+  @scala.inline
+  implicit class DescribeSchemasResponseOps[Self <: DescribeSchemasResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setSchemasVarargs(value: String*): Self = this.set("Schemas", js.Array(value :_*))
+    @scala.inline
+    def setSchemas(value: SchemaList): Self = this.set("Schemas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemas: Self = this.set("Schemas", js.undefined)
+  }
+  
 }
 

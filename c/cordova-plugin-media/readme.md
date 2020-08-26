@@ -10,9 +10,9 @@ Cordova Media Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-media |
 | Keywords           | cordova, media, ecosystem:cordova, cordova-android, cordova-browser, cordova-ios, cordova-windows |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 284798 |
+| # downloads        | 286981 |
 | # stars            | 12 |
 
 ## Links

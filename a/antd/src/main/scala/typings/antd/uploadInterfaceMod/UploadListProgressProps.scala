@@ -21,68 +21,115 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Omit<antd.antd/lib/progress.ProgressProps, 'percent' | 'type'> */
+@js.native
 trait UploadListProgressProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   var format: js.UndefOr[
     js.Function2[/* percent */ js.UndefOr[Double], /* successPercent */ js.UndefOr[Double], ReactNode]
-  ] = js.undefined
-  var gapDegree: js.UndefOr[Double] = js.undefined
-  var gapPosition: js.UndefOr[top | bottom | left | right] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var showInfo: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[ProgressSize] = js.undefined
-  var status: js.UndefOr[normal | exception | active | success] = js.undefined
-  var steps: js.UndefOr[Double] = js.undefined
-  var strokeColor: js.UndefOr[String | ProgressGradient] = js.undefined
-  var strokeLinecap: js.UndefOr[butt | square | round] = js.undefined
-  var strokeWidth: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var success: js.UndefOr[SuccessProps] = js.undefined
-  var successPercent: js.UndefOr[Double] = js.undefined
-  var trailColor: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var gapDegree: js.UndefOr[Double] = js.native
+  var gapPosition: js.UndefOr[top | bottom | left | right] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var showInfo: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[ProgressSize] = js.native
+  var status: js.UndefOr[normal | exception | active | success] = js.native
+  var steps: js.UndefOr[Double] = js.native
+  var strokeColor: js.UndefOr[String | ProgressGradient] = js.native
+  var strokeLinecap: js.UndefOr[butt | square | round] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var success: js.UndefOr[SuccessProps] = js.native
+  var successPercent: js.UndefOr[Double] = js.native
+  var trailColor: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object UploadListProgressProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    format: (/* percent */ js.UndefOr[Double], /* successPercent */ js.UndefOr[Double]) => ReactNode = null,
-    gapDegree: js.UndefOr[Double] = js.undefined,
-    gapPosition: top | bottom | left | right = null,
-    prefixCls: String = null,
-    showInfo: js.UndefOr[Boolean] = js.undefined,
-    size: ProgressSize = null,
-    status: normal | exception | active | success = null,
-    steps: js.UndefOr[Double] = js.undefined,
-    strokeColor: String | ProgressGradient = null,
-    strokeLinecap: butt | square | round = null,
-    strokeWidth: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null,
-    success: SuccessProps = null,
-    successPercent: js.UndefOr[Double] = js.undefined,
-    trailColor: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): UploadListProgressProps = {
+  def apply(): UploadListProgressProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
-    if (!js.isUndefined(gapDegree)) __obj.updateDynamic("gapDegree")(gapDegree.get.asInstanceOf[js.Any])
-    if (gapPosition != null) __obj.updateDynamic("gapPosition")(gapPosition.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInfo)) __obj.updateDynamic("showInfo")(showInfo.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.get.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (!js.isUndefined(successPercent)) __obj.updateDynamic("successPercent")(successPercent.get.asInstanceOf[js.Any])
-    if (trailColor != null) __obj.updateDynamic("trailColor")(trailColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadListProgressProps]
   }
+  @scala.inline
+  implicit class UploadListProgressPropsOps[Self <: UploadListProgressProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setFormat(value: (/* percent */ js.UndefOr[Double], /* successPercent */ js.UndefOr[Double]) => ReactNode): Self = this.set("format", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGapDegree(value: Double): Self = this.set("gapDegree", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGapDegree: Self = this.set("gapDegree", js.undefined)
+    @scala.inline
+    def setGapPosition(value: top | bottom | left | right): Self = this.set("gapPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGapPosition: Self = this.set("gapPosition", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setShowInfo(value: Boolean): Self = this.set("showInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowInfo: Self = this.set("showInfo", js.undefined)
+    @scala.inline
+    def setSize(value: ProgressSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStatus(value: normal | exception | active | success): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSteps(value: Double): Self = this.set("steps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSteps: Self = this.set("steps", js.undefined)
+    @scala.inline
+    def setStrokeColor(value: String | ProgressGradient): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+    @scala.inline
+    def setStrokeLinecap(value: butt | square | round): Self = this.set("strokeLinecap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeLinecap: Self = this.set("strokeLinecap", js.undefined)
+    @scala.inline
+    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSuccess(value: SuccessProps): Self = this.set("success", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+    @scala.inline
+    def setSuccessPercent(value: Double): Self = this.set("successPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessPercent: Self = this.set("successPercent", js.undefined)
+    @scala.inline
+    def setTrailColor(value: String): Self = this.set("trailColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrailColor: Self = this.set("trailColor", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

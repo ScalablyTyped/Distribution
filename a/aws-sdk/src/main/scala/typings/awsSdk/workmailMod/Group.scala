@@ -34,22 +34,46 @@ trait Group extends js.Object {
 
 object Group {
   @scala.inline
-  def apply(
-    DisabledDate: Timestamp = null,
-    Email: EmailAddress = null,
-    EnabledDate: Timestamp = null,
-    Id: WorkMailIdentifier = null,
-    Name: GroupName = null,
-    State: EntityState = null
-  ): Group = {
+  def apply(): Group = {
     val __obj = js.Dynamic.literal()
-    if (DisabledDate != null) __obj.updateDynamic("DisabledDate")(DisabledDate.asInstanceOf[js.Any])
-    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
-    if (EnabledDate != null) __obj.updateDynamic("EnabledDate")(EnabledDate.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
+  @scala.inline
+  implicit class GroupOps[Self <: Group] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabledDate(value: Timestamp): Self = this.set("DisabledDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDate: Self = this.set("DisabledDate", js.undefined)
+    @scala.inline
+    def setEmail(value: EmailAddress): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("Email", js.undefined)
+    @scala.inline
+    def setEnabledDate(value: Timestamp): Self = this.set("EnabledDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledDate: Self = this.set("EnabledDate", js.undefined)
+    @scala.inline
+    def setId(value: WorkMailIdentifier): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: GroupName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setState(value: EntityState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

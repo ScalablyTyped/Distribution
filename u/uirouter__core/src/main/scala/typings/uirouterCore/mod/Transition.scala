@@ -14,12 +14,13 @@ class Transition protected ()
     *
     * If the target state is not valid, an error is thrown.
     *
-    * @internalapi
+    * @internal
     *
     * @param fromPath The path of [[PathNode]]s from which the transition is leaving.  The last node in the `fromPath`
     *        encapsulates the "from state".
     * @param targetState The target state and parameters being transitioned to (also, the transition options)
     * @param router The [[UIRouter]] instance
+    * @internal
     */
   def this(
     fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
@@ -32,7 +33,7 @@ class Transition protected ()
 @JSImport("@uirouter/core", "Transition")
 @js.native
 object Transition extends js.Object {
-  /** @hidden */
+  /** @internal */
   var diToken: TypeofTransition = js.native
 }
 

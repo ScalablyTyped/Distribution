@@ -22,6 +22,13 @@ class MapBrowserEvent protected () extends MapEvent {
     */
   def this(`type`: String, map: Map, browserEvent: Event) = this()
   def this(`type`: String, map: Map, browserEvent: Event, opt_dragging: Boolean) = this()
+  def this(
+    `type`: String,
+    map: Map,
+    browserEvent: Event,
+    opt_dragging: js.UndefOr[scala.Nothing],
+    opt_frameState: FrameState
+  ) = this()
   def this(`type`: String, map: Map, browserEvent: Event, opt_dragging: Boolean, opt_frameState: FrameState) = this()
   /**
     * The coordinate of the original browser event.

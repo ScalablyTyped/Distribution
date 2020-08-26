@@ -11,38 +11,39 @@ import scala.scalajs.js.annotation._
   * store a value and can have multiple subkeys.
   * @see XRegistryKey
   */
+@js.native
 trait XSimpleRegistry extends XInterface {
   /**
     * @returns the root key of the registry.
     * @throws InvalidRegistryException if no registry is open
     */
-  val RootKey: XRegistryKey
+  val RootKey: XRegistryKey = js.native
   /** returns the URL of the current data source of the registry. */
-  val URL: String
+  val URL: String = js.native
   /**
     * disconnects the registry from the data-source.
     * @throws InvalidRegistryException if the registry is not open.
     */
-  def close(): Unit
+  def close(): Unit = js.native
   /**
     * destroys the registry and the data source.
     * @throws InvalidRegistryException if the registry is not open.
     */
-  def destroy(): Unit
+  def destroy(): Unit = js.native
   /**
     * @returns the root key of the registry.
     * @throws InvalidRegistryException if no registry is open
     */
-  def getRootKey(): XRegistryKey
+  def getRootKey(): XRegistryKey = js.native
   /** returns the URL of the current data source of the registry. */
-  def getURL(): String
+  def getURL(): String = js.native
   /**
     * checks if the registry is readonly.
     * @throws InvalidRegistryException if the registry is not open.
     */
-  def isReadOnly(): Boolean
+  def isReadOnly(): Boolean = js.native
   /** checks if the registry points to a valid data-source. */
-  def isValid(): Boolean
+  def isValid(): Boolean = js.native
   /**
     * DEPRECATED: this method lacks a registry key (better than a URL).
     *
@@ -52,7 +53,7 @@ trait XSimpleRegistry extends XInterface {
     * @throws InvalidRegistryException if the registry is not open.
     * @throws MergeConflictException if any differences occur during merging
     */
-  def mergeKey(aKeyName: String, aUrl: String): Unit
+  def mergeKey(aKeyName: String, aUrl: String): Unit = js.native
   /**
     * connects the registry to a persistent data source represented by an URL.
     *
@@ -62,7 +63,7 @@ trait XSimpleRegistry extends XInterface {
     * @param bCreate specifies if the data source should be created if it does not already exist.
     * @throws InvalidRegistryException if the registry does not exist.
     */
-  def open(rURL: String, bReadOnly: Boolean, bCreate: Boolean): Unit
+  def open(rURL: String, bReadOnly: Boolean, bCreate: Boolean): Unit = js.native
 }
 
 object XSimpleRegistry {
@@ -85,5 +86,38 @@ object XSimpleRegistry {
     val __obj = js.Dynamic.literal(RootKey = RootKey.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), close = js.Any.fromFunction0(close), destroy = js.Any.fromFunction0(destroy), getRootKey = js.Any.fromFunction0(getRootKey), getURL = js.Any.fromFunction0(getURL), isReadOnly = js.Any.fromFunction0(isReadOnly), isValid = js.Any.fromFunction0(isValid), mergeKey = js.Any.fromFunction2(mergeKey), open = js.Any.fromFunction3(open), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XSimpleRegistry]
   }
+  @scala.inline
+  implicit class XSimpleRegistryOps[Self <: XSimpleRegistry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRootKey(value: XRegistryKey): Self = this.set("RootKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetRootKey(value: () => XRegistryKey): Self = this.set("getRootKey", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetURL(value: () => String): Self = this.set("getURL", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsReadOnly(value: () => Boolean): Self = this.set("isReadOnly", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMergeKey(value: (String, String) => Unit): Self = this.set("mergeKey", js.Any.fromFunction2(value))
+    @scala.inline
+    def setOpen(value: (String, Boolean, Boolean) => Unit): Self = this.set("open", js.Any.fromFunction3(value))
+  }
+  
 }
 

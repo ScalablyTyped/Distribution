@@ -65,26 +65,56 @@ trait SchemaReadRequest extends js.Object {
 
 object SchemaReadRequest {
   @scala.inline
-  def apply(
-    columns: js.Array[String] = null,
-    index: String = null,
-    keySet: SchemaKeySet = null,
-    limit: String = null,
-    partitionToken: String = null,
-    resumeToken: String = null,
-    table: String = null,
-    transaction: SchemaTransactionSelector = null
-  ): SchemaReadRequest = {
+  def apply(): SchemaReadRequest = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (keySet != null) __obj.updateDynamic("keySet")(keySet.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (partitionToken != null) __obj.updateDynamic("partitionToken")(partitionToken.asInstanceOf[js.Any])
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReadRequest]
   }
+  @scala.inline
+  implicit class SchemaReadRequestOps[Self <: SchemaReadRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnsVarargs(value: String*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[String]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setKeySet(value: SchemaKeySet): Self = this.set("keySet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeySet: Self = this.set("keySet", js.undefined)
+    @scala.inline
+    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setPartitionToken(value: String): Self = this.set("partitionToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionToken: Self = this.set("partitionToken", js.undefined)
+    @scala.inline
+    def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    @scala.inline
+    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTransaction(value: SchemaTransactionSelector): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransaction: Self = this.set("transaction", js.undefined)
+  }
+  
 }
 

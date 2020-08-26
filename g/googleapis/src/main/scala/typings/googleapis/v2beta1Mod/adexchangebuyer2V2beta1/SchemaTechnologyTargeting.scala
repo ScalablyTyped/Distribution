@@ -25,16 +25,34 @@ trait SchemaTechnologyTargeting extends js.Object {
 
 object SchemaTechnologyTargeting {
   @scala.inline
-  def apply(
-    deviceCapabilityTargeting: SchemaCriteriaTargeting = null,
-    deviceCategoryTargeting: SchemaCriteriaTargeting = null,
-    operatingSystemTargeting: SchemaOperatingSystemTargeting = null
-  ): SchemaTechnologyTargeting = {
+  def apply(): SchemaTechnologyTargeting = {
     val __obj = js.Dynamic.literal()
-    if (deviceCapabilityTargeting != null) __obj.updateDynamic("deviceCapabilityTargeting")(deviceCapabilityTargeting.asInstanceOf[js.Any])
-    if (deviceCategoryTargeting != null) __obj.updateDynamic("deviceCategoryTargeting")(deviceCategoryTargeting.asInstanceOf[js.Any])
-    if (operatingSystemTargeting != null) __obj.updateDynamic("operatingSystemTargeting")(operatingSystemTargeting.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTechnologyTargeting]
   }
+  @scala.inline
+  implicit class SchemaTechnologyTargetingOps[Self <: SchemaTechnologyTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceCapabilityTargeting(value: SchemaCriteriaTargeting): Self = this.set("deviceCapabilityTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceCapabilityTargeting: Self = this.set("deviceCapabilityTargeting", js.undefined)
+    @scala.inline
+    def setDeviceCategoryTargeting(value: SchemaCriteriaTargeting): Self = this.set("deviceCategoryTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceCategoryTargeting: Self = this.set("deviceCategoryTargeting", js.undefined)
+    @scala.inline
+    def setOperatingSystemTargeting(value: SchemaOperatingSystemTargeting): Self = this.set("operatingSystemTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystemTargeting: Self = this.set("operatingSystemTargeting", js.undefined)
+  }
+  
 }
 

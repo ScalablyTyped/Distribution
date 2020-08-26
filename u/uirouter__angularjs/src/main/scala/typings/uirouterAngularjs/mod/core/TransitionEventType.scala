@@ -29,8 +29,43 @@ class TransitionEventType protected ()
     hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
+    reverseSort: js.UndefOr[scala.Nothing],
+    getResultHandler: GetResultHandler
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
     reverseSort: Boolean,
     getResultHandler: GetResultHandler
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: js.UndefOr[scala.Nothing],
+    getResultHandler: js.UndefOr[scala.Nothing],
+    getErrorHandler: GetErrorHandler
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: js.UndefOr[scala.Nothing],
+    getResultHandler: GetResultHandler,
+    getErrorHandler: GetErrorHandler
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Boolean,
+    getResultHandler: js.UndefOr[scala.Nothing],
+    getErrorHandler: GetErrorHandler
   ) = this()
   def this(
     name: String,
@@ -40,6 +75,76 @@ class TransitionEventType protected ()
     reverseSort: Boolean,
     getResultHandler: GetResultHandler,
     getErrorHandler: GetErrorHandler
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: js.UndefOr[scala.Nothing],
+    getResultHandler: js.UndefOr[scala.Nothing],
+    getErrorHandler: js.UndefOr[scala.Nothing],
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: js.UndefOr[scala.Nothing],
+    getResultHandler: js.UndefOr[scala.Nothing],
+    getErrorHandler: GetErrorHandler,
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: js.UndefOr[scala.Nothing],
+    getResultHandler: GetResultHandler,
+    getErrorHandler: js.UndefOr[scala.Nothing],
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: js.UndefOr[scala.Nothing],
+    getResultHandler: GetResultHandler,
+    getErrorHandler: GetErrorHandler,
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Boolean,
+    getResultHandler: js.UndefOr[scala.Nothing],
+    getErrorHandler: js.UndefOr[scala.Nothing],
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Boolean,
+    getResultHandler: js.UndefOr[scala.Nothing],
+    getErrorHandler: GetErrorHandler,
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Boolean,
+    getResultHandler: GetResultHandler,
+    getErrorHandler: js.UndefOr[scala.Nothing],
+    synchronous: Boolean
   ) = this()
   def this(
     name: String,

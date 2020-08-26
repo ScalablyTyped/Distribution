@@ -8,17 +8,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Profile extends js.Object {
-  var competitive: Damage
-  var endorsement: Frame
-  var games: Competitive
-  var level: Double
-  var levelFrame: String
-  var playtime: Quickplay
-  var portrait: String
-  var `private`: Boolean
-  var star: String
-  var username: String
+  var competitive: Damage = js.native
+  var endorsement: Frame = js.native
+  var games: Competitive = js.native
+  var level: Double = js.native
+  var levelFrame: String = js.native
+  var playtime: Quickplay = js.native
+  var portrait: String = js.native
+  var `private`: Boolean = js.native
+  var star: String = js.native
+  var username: String = js.native
 }
 
 object Profile {
@@ -39,5 +40,38 @@ object Profile {
     __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
+  @scala.inline
+  implicit class ProfileOps[Self <: Profile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompetitive(value: Damage): Self = this.set("competitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndorsement(value: Frame): Self = this.set("endorsement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGames(value: Competitive): Self = this.set("games", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLevelFrame(value: String): Self = this.set("levelFrame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlaytime(value: Quickplay): Self = this.set("playtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortrait(value: String): Self = this.set("portrait", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStar(value: String): Self = this.set("star", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+  }
+  
 }
 

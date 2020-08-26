@@ -12,7 +12,7 @@ A light and progressive Wechat-Mini Program Framework
 | Keywords           | - |
 | # releases         | 22 |
 | # dependents       | 0 |
-| # downloads        | 1313 |
+| # downloads        | 1303 |
 | # stars            | 0 |
 
 ## Links

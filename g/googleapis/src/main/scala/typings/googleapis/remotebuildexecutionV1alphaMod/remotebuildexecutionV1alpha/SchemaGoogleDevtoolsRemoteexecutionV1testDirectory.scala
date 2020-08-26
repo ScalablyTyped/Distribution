@@ -43,14 +43,34 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testDirectory extends js.Object {
 
 object SchemaGoogleDevtoolsRemoteexecutionV1testDirectory {
   @scala.inline
-  def apply(
-    directories: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryNode] = null,
-    files: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testFileNode] = null
-  ): SchemaGoogleDevtoolsRemoteexecutionV1testDirectory = {
+  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testDirectory = {
     val __obj = js.Dynamic.literal()
-    if (directories != null) __obj.updateDynamic("directories")(directories.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testDirectory]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryOps[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testDirectory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoriesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryNode*): Self = this.set("directories", js.Array(value :_*))
+    @scala.inline
+    def setDirectories(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectoryNode]): Self = this.set("directories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectories: Self = this.set("directories", js.undefined)
+    @scala.inline
+    def setFilesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testFileNode*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testFileNode]): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+  }
+  
 }
 

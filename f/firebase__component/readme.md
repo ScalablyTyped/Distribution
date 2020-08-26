@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__component
 
-Typings are for version 0.1.15
+Typings are for version 0.1.17
 
 ## Library description:
 Firebase Component Platform
@@ -10,9 +10,9 @@ Firebase Component Platform
 | ------------------ | :-------------: |
 | Full name          | @firebase/component |
 | Keywords           | - |
-| # releases         | 35 |
-| # dependents       | 13 |
-| # downloads        | 762731 |
+| # releases         | 55 |
+| # dependents       | 12 |
+| # downloads        | 1422927 |
 | # stars            | 0 |
 
 ## Links

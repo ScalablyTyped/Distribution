@@ -1,6 +1,5 @@
 package typings.webgme
 
-import typings.webgme.GmeCommon.NodeId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +9,7 @@ import scala.scalajs.js.annotation._
 object commonMod extends js.Object {
   @js.native
   class Pointer ()
-    extends typings.webgme.GmeCommon.Pointer {
-    /* CompleteClass */
-    override var from: NodeId = js.native
-    /* CompleteClass */
-    override var to: NodeId = js.native
-  }
+    extends typings.webgme.GmeCommon.Pointer
   
 }
 

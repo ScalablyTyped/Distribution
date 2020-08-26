@@ -21,6 +21,7 @@ object argsMod extends js.Object {
   def listOptionSpec(): ArgSpec = js.native
   def listOptionSpec(optional: Boolean): ArgSpec = js.native
   def looseObjectSpec(): ArgSpec = js.native
+  def looseObjectSpec(validator: js.UndefOr[scala.Nothing], optional: Boolean): ArgSpec = js.native
   def looseObjectSpec(validator: js.Function1[/* p1 */ js.Any, Unit]): ArgSpec = js.native
   def looseObjectSpec(validator: js.Function1[/* p1 */ js.Any, Unit], optional: Boolean): ArgSpec = js.native
   def looseObjectSpec(validator: Null, optional: Boolean): ArgSpec = js.native
@@ -30,6 +31,7 @@ object argsMod extends js.Object {
   def nullFunctionSpec(): ArgSpec = js.native
   def nullFunctionSpec(optional: Boolean): ArgSpec = js.native
   def stringSpec(): ArgSpec = js.native
+  def stringSpec(validator: js.UndefOr[scala.Nothing], optional: Boolean): ArgSpec = js.native
   def stringSpec(validator: js.Function1[/* p1 */ js.Any, Unit | Null]): ArgSpec = js.native
   def stringSpec(validator: js.Function1[/* p1 */ js.Any, Unit | Null], optional: Boolean): ArgSpec = js.native
   def uploadDataSpec(): ArgSpec = js.native

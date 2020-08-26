@@ -12,7 +12,7 @@ Restricts screen reader virtual cursor to a single subtree in the DOM
 | Keywords           | makeup, ebay, accessibility, a11y |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 12568 |
+| # downloads        | 12583 |
 | # stars            | 0 |
 
 ## Links

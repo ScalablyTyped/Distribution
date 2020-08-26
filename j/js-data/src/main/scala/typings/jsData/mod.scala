@@ -23,6 +23,9 @@ object mod extends js.Object {
   @js.native
   class Collection () extends default {
     def this(records: js.Any) = this()
+    def this(records: js.UndefOr[scala.Nothing], opts: String) = this()
+    def this(records: js.UndefOr[scala.Nothing], opts: js.Any) = this()
+    def this(records: js.UndefOr[scala.Nothing], opts: CollectionOpts) = this()
     def this(records: js.Any, opts: String) = this()
     def this(records: js.Any, opts: js.Any) = this()
     def this(records: js.Any, opts: CollectionOpts) = this()
@@ -51,6 +54,7 @@ object mod extends js.Object {
   class Index ()
     extends typings.jsData.mindexMod.default {
     def this(fieldList: js.Array[_]) = this()
+    def this(fieldList: js.UndefOr[scala.Nothing], opts: IndexOpts) = this()
     def this(fieldList: js.Array[_], opts: IndexOpts) = this()
   }
   
@@ -76,6 +80,7 @@ object mod extends js.Object {
   class Record ()
     extends typings.jsData.recordMod.default {
     def this(props: js.Any) = this()
+    def this(props: js.UndefOr[scala.Nothing], opts: js.Any) = this()
     def this(props: js.Any, opts: js.Any) = this()
   }
   
@@ -389,9 +394,164 @@ object mod extends js.Object {
       * @since 3.0.0
       */
     def copy(from: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.UndefOr[scala.Nothing],
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.Any
+    ): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.Any,
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(from: js.Any, to: js.UndefOr[scala.Nothing], stackFrom: js.UndefOr[scala.Nothing], stackTo: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.Any,
+      blacklist: js.UndefOr[scala.Nothing],
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.Any,
+      blacklist: js.Any
+    ): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.Any,
+      blacklist: js.Any,
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(from: js.Any, to: js.UndefOr[scala.Nothing], stackFrom: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.Any,
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.UndefOr[scala.Nothing],
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.Any,
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.Any
+    ): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.Any,
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.Any,
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(from: js.Any, to: js.UndefOr[scala.Nothing], stackFrom: js.Any, stackTo: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.Any,
+      stackTo: js.Any,
+      blacklist: js.UndefOr[scala.Nothing],
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(from: js.Any, to: js.UndefOr[scala.Nothing], stackFrom: js.Any, stackTo: js.Any, blacklist: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stackFrom: js.Any,
+      stackTo: js.Any,
+      blacklist: js.Any,
+      plain: js.Any
+    ): js.Any = js.native
     def copy(from: js.Any, to: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.UndefOr[scala.Nothing],
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.Any
+    ): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.Any,
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(from: js.Any, to: js.Any, stackFrom: js.UndefOr[scala.Nothing], stackTo: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.Any,
+      blacklist: js.UndefOr[scala.Nothing],
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(from: js.Any, to: js.Any, stackFrom: js.UndefOr[scala.Nothing], stackTo: js.Any, blacklist: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: js.UndefOr[scala.Nothing],
+      stackTo: js.Any,
+      blacklist: js.Any,
+      plain: js.Any
+    ): js.Any = js.native
     def copy(from: js.Any, to: js.Any, stackFrom: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: js.Any,
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.UndefOr[scala.Nothing],
+      plain: js.Any
+    ): js.Any = js.native
+    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.UndefOr[scala.Nothing], blacklist: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: js.Any,
+      stackTo: js.UndefOr[scala.Nothing],
+      blacklist: js.Any,
+      plain: js.Any
+    ): js.Any = js.native
     def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any): js.Any = js.native
+    def copy(
+      from: js.Any,
+      to: js.Any,
+      stackFrom: js.Any,
+      stackTo: js.Any,
+      blacklist: js.UndefOr[scala.Nothing],
+      plain: js.Any
+    ): js.Any = js.native
     def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any, blacklist: js.Any): js.Any = js.native
     def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any, blacklist: js.Any, plain: js.Any): js.Any = js.native
     /**
@@ -546,6 +706,7 @@ object mod extends js.Object {
       * @since 3.0.0
       */
     def eventify(target: js.Any): Unit = js.native
+    def eventify(target: js.Any, getter: js.UndefOr[scala.Nothing], setter: js.Any): Unit = js.native
     def eventify(target: js.Any, getter: js.Any): Unit = js.native
     def eventify(target: js.Any, getter: js.Any, setter: js.Any): Unit = js.native
     /**
@@ -980,6 +1141,7 @@ object mod extends js.Object {
       * @since 3.0.0
       */
     def noDupeAdd(array: js.Any): Unit = js.native
+    def noDupeAdd(array: js.Any, record: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
     def noDupeAdd(array: js.Any, record: js.Any): Unit = js.native
     def noDupeAdd(array: js.Any, record: js.Any, fn: js.Any): Unit = js.native
     /**
@@ -1124,6 +1286,7 @@ object mod extends js.Object {
       * @param {*} [value] The value to set.
       */
     def set(`object`: js.Any, path: js.Any): Unit = js.native
+    def set(`object`: js.Any, path: js.Any, value: js.UndefOr[scala.Nothing], opts: js.Any): Unit = js.native
     def set(`object`: js.Any, path: js.Any, value: js.Any): Unit = js.native
     def set(`object`: js.Any, path: js.Any, value: js.Any, opts: js.Any): Unit = js.native
     /**
@@ -1143,7 +1306,9 @@ object mod extends js.Object {
       * @since 3.0.0
       */
     def toJson(value: js.Any): String = js.native
-    def toJson(value: js.Any, replacer: js.Array[Double | String]): String = js.native
+    def toJson(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
+    def toJson(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
+    def toJson(value: js.Any, replacer: js.Array[String | Double]): String = js.native
     def toJson(value: js.Any, replacer: js.Array[String | Double], space: String): String = js.native
     def toJson(value: js.Any, replacer: js.Array[String | Double], space: Double): String = js.native
     def toJson(

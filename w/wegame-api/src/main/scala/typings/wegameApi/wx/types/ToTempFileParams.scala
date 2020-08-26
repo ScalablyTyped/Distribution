@@ -1,46 +1,47 @@
 package typings.wegameApi.wx.types
 
 import typings.wegameApi.anon.TempFilePath
-import typings.wegameApi.wegameApiStrings.jpg
-import typings.wegameApi.wegameApiStrings.png
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ToTempFileParams extends ToTempFileSyncParams {
-  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var success: js.UndefOr[js.Function1[/* res */ TempFilePath, Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ TempFilePath, Unit]] = js.native
 }
 
 object ToTempFileParams {
   @scala.inline
-  def apply(
-    complete: () => Unit = null,
-    destHeight: js.UndefOr[Double] = js.undefined,
-    destWidth: js.UndefOr[Double] = js.undefined,
-    fail: () => Unit = null,
-    fileType: jpg | png = null,
-    height: js.UndefOr[Double] = js.undefined,
-    quality: js.UndefOr[Double] = js.undefined,
-    success: /* res */ TempFilePath => Unit = null,
-    width: js.UndefOr[Double] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): ToTempFileParams = {
+  def apply(): ToTempFileParams = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (!js.isUndefined(destHeight)) __obj.updateDynamic("destHeight")(destHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(destWidth)) __obj.updateDynamic("destWidth")(destWidth.get.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToTempFileParams]
   }
+  @scala.inline
+  implicit class ToTempFileParamsOps[Self <: ToTempFileParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComplete: Self = this.set("complete", js.undefined)
+    @scala.inline
+    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteFail: Self = this.set("fail", js.undefined)
+    @scala.inline
+    def setSuccess(value: /* res */ TempFilePath => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+  }
+  
 }
 

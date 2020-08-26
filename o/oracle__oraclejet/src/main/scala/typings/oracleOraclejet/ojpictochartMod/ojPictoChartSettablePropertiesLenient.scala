@@ -2,7 +2,7 @@ package typings.oracleOraclejet.ojpictochartMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.oracleOraclejet.anon.LabelAndValue
-import typings.oracleOraclejet.anon.`14`
+import typings.oracleOraclejet.anon.`16`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.alphaFade
@@ -27,84 +27,155 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojpictochart.ojPictoChartSettableProperties<K, D>> */
+@js.native
 trait ojPictoChartSettablePropertiesLenient[K, D]
   extends /* key */ StringDictionary[js.Any] {
-  var animationDuration: js.UndefOr[Double] = js.undefined
-  var animationOnDataChange: js.UndefOr[auto | none] = js.undefined
-  var animationOnDisplay: js.UndefOr[auto | popIn | alphaFade | zoom | none] = js.undefined
-  var as: js.UndefOr[String] = js.undefined
-  var columnCount: js.UndefOr[Double] = js.undefined
-  var columnWidth: js.UndefOr[Double] = js.undefined
-  var data: js.UndefOr[DataProvider[K, D]] = js.undefined
-  var drilling: js.UndefOr[on | off] = js.undefined
-  var hiddenCategories: js.UndefOr[js.Array[String]] = js.undefined
-  var highlightMatch: js.UndefOr[any | all] = js.undefined
-  var highlightedCategories: js.UndefOr[js.Array[String]] = js.undefined
-  var hoverBehavior: js.UndefOr[dim | none] = js.undefined
-  var hoverBehaviorDelay: js.UndefOr[Double] = js.undefined
-  var layout: js.UndefOr[vertical | horizontal] = js.undefined
-  var layoutOrigin: js.UndefOr[topEnd | bottomStart | bottomEnd | topStart] = js.undefined
-  var rowCount: js.UndefOr[Double] = js.undefined
-  var rowHeight: js.UndefOr[Double] = js.undefined
-  var selection: js.UndefOr[js.Array[K]] = js.undefined
-  var selectionMode: js.UndefOr[single | multiple | none] = js.undefined
-  var tooltip: js.UndefOr[`14`[K]] = js.undefined
-  var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[LabelAndValue] = js.undefined
+  var animationDuration: js.UndefOr[Double] = js.native
+  var animationOnDataChange: js.UndefOr[auto | none] = js.native
+  var animationOnDisplay: js.UndefOr[auto | popIn | alphaFade | zoom | none] = js.native
+  var as: js.UndefOr[String] = js.native
+  var columnCount: js.UndefOr[Double | Null] = js.native
+  var columnWidth: js.UndefOr[Double | Null] = js.native
+  var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.native
+  var drilling: js.UndefOr[on | off] = js.native
+  var hiddenCategories: js.UndefOr[js.Array[String]] = js.native
+  var highlightMatch: js.UndefOr[any | all] = js.native
+  var highlightedCategories: js.UndefOr[js.Array[String]] = js.native
+  var hoverBehavior: js.UndefOr[dim | none] = js.native
+  var hoverBehaviorDelay: js.UndefOr[Double] = js.native
+  var layout: js.UndefOr[vertical | horizontal] = js.native
+  var layoutOrigin: js.UndefOr[topEnd | bottomStart | bottomEnd | topStart] = js.native
+  var rowCount: js.UndefOr[Double | Null] = js.native
+  var rowHeight: js.UndefOr[Double | Null] = js.native
+  var selection: js.UndefOr[js.Array[K]] = js.native
+  var selectionMode: js.UndefOr[single | multiple | none] = js.native
+  var tooltip: js.UndefOr[`16`[K]] = js.native
+  var trackResize: js.UndefOr[on | off] = js.native
+  var translations: js.UndefOr[LabelAndValue] = js.native
 }
 
 object ojPictoChartSettablePropertiesLenient {
   @scala.inline
-  def apply[K, D](
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationOnDataChange: auto | none = null,
-    animationOnDisplay: auto | popIn | alphaFade | zoom | none = null,
-    as: String = null,
-    columnCount: js.UndefOr[Double] = js.undefined,
-    columnWidth: js.UndefOr[Double] = js.undefined,
-    data: DataProvider[K, D] = null,
-    drilling: on | off = null,
-    hiddenCategories: js.Array[String] = null,
-    highlightMatch: any | all = null,
-    highlightedCategories: js.Array[String] = null,
-    hoverBehavior: dim | none = null,
-    hoverBehaviorDelay: js.UndefOr[Double] = js.undefined,
-    layout: vertical | horizontal = null,
-    layoutOrigin: topEnd | bottomStart | bottomEnd | topStart = null,
-    rowCount: js.UndefOr[Double] = js.undefined,
-    rowHeight: js.UndefOr[Double] = js.undefined,
-    selection: js.Array[K] = null,
-    selectionMode: single | multiple | none = null,
-    tooltip: `14`[K] = null,
-    trackResize: on | off = null,
-    translations: LabelAndValue = null
-  ): ojPictoChartSettablePropertiesLenient[K, D] = {
+  def apply[K, D](): ojPictoChartSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (animationOnDataChange != null) __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
-    if (animationOnDisplay != null) __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
-    if (hiddenCategories != null) __obj.updateDynamic("hiddenCategories")(hiddenCategories.asInstanceOf[js.Any])
-    if (highlightMatch != null) __obj.updateDynamic("highlightMatch")(highlightMatch.asInstanceOf[js.Any])
-    if (highlightedCategories != null) __obj.updateDynamic("highlightedCategories")(highlightedCategories.asInstanceOf[js.Any])
-    if (hoverBehavior != null) __obj.updateDynamic("hoverBehavior")(hoverBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverBehaviorDelay)) __obj.updateDynamic("hoverBehaviorDelay")(hoverBehaviorDelay.get.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (layoutOrigin != null) __obj.updateDynamic("layoutOrigin")(layoutOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojPictoChartSettablePropertiesLenient[K, D]]
   }
+  @scala.inline
+  implicit class ojPictoChartSettablePropertiesLenientOps[Self <: ojPictoChartSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojPictoChartSettablePropertiesLenient[K, D])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationOnDataChange(value: auto | none): Self = this.set("animationOnDataChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationOnDataChange: Self = this.set("animationOnDataChange", js.undefined)
+    @scala.inline
+    def setAnimationOnDisplay(value: auto | popIn | alphaFade | zoom | none): Self = this.set("animationOnDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationOnDisplay: Self = this.set("animationOnDisplay", js.undefined)
+    @scala.inline
+    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    @scala.inline
+    def setColumnCountNull: Self = this.set("columnCount", null)
+    @scala.inline
+    def setColumnWidth(value: Double): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    @scala.inline
+    def setColumnWidthNull: Self = this.set("columnWidth", null)
+    @scala.inline
+    def setData(value: DataProvider[K, D]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataNull: Self = this.set("data", null)
+    @scala.inline
+    def setDrilling(value: on | off): Self = this.set("drilling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrilling: Self = this.set("drilling", js.undefined)
+    @scala.inline
+    def setHiddenCategoriesVarargs(value: String*): Self = this.set("hiddenCategories", js.Array(value :_*))
+    @scala.inline
+    def setHiddenCategories(value: js.Array[String]): Self = this.set("hiddenCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenCategories: Self = this.set("hiddenCategories", js.undefined)
+    @scala.inline
+    def setHighlightMatch(value: any | all): Self = this.set("highlightMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightMatch: Self = this.set("highlightMatch", js.undefined)
+    @scala.inline
+    def setHighlightedCategoriesVarargs(value: String*): Self = this.set("highlightedCategories", js.Array(value :_*))
+    @scala.inline
+    def setHighlightedCategories(value: js.Array[String]): Self = this.set("highlightedCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightedCategories: Self = this.set("highlightedCategories", js.undefined)
+    @scala.inline
+    def setHoverBehavior(value: dim | none): Self = this.set("hoverBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverBehavior: Self = this.set("hoverBehavior", js.undefined)
+    @scala.inline
+    def setHoverBehaviorDelay(value: Double): Self = this.set("hoverBehaviorDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverBehaviorDelay: Self = this.set("hoverBehaviorDelay", js.undefined)
+    @scala.inline
+    def setLayout(value: vertical | horizontal): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setLayoutOrigin(value: topEnd | bottomStart | bottomEnd | topStart): Self = this.set("layoutOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutOrigin: Self = this.set("layoutOrigin", js.undefined)
+    @scala.inline
+    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    @scala.inline
+    def setRowCountNull: Self = this.set("rowCount", null)
+    @scala.inline
+    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    @scala.inline
+    def setRowHeightNull: Self = this.set("rowHeight", null)
+    @scala.inline
+    def setSelectionVarargs(value: K*): Self = this.set("selection", js.Array(value :_*))
+    @scala.inline
+    def setSelection(value: js.Array[K]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: single | multiple | none): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setTooltip(value: `16`[K]): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTrackResize(value: on | off): Self = this.set("trackResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackResize: Self = this.set("trackResize", js.undefined)
+    @scala.inline
+    def setTranslations(value: LabelAndValue): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+  }
+  
 }
 

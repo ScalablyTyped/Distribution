@@ -18,74 +18,125 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Column extends js.Object {
   /**
     * Default: "center"
     */
-  var align: js.UndefOr[center | left | right] = js.undefined
-  var autocomplete: js.UndefOr[Boolean] = js.undefined
-  var decimal: js.UndefOr[String] = js.undefined
-  var editor: js.UndefOr[ColumnEditor] = js.undefined
-  var mask: js.UndefOr[String] = js.undefined
-  var multiple: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[CellValue] = js.undefined
-  var options: js.UndefOr[CalendarOptions] = js.undefined
-  var primaryKey: js.UndefOr[Boolean] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var render: js.UndefOr[String] = js.undefined
-  var source: js.UndefOr[js.Array[SourceValue]] = js.undefined
-  var title: js.UndefOr[CellValue] = js.undefined
+  var align: js.UndefOr[center | left | right] = js.native
+  var autocomplete: js.UndefOr[Boolean] = js.native
+  var decimal: js.UndefOr[String] = js.native
+  var editor: js.UndefOr[ColumnEditor] = js.native
+  var mask: js.UndefOr[String] = js.native
+  var multiple: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[CellValue] = js.native
+  var options: js.UndefOr[CalendarOptions] = js.native
+  var primaryKey: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var render: js.UndefOr[String] = js.native
+  var source: js.UndefOr[js.Array[SourceValue]] = js.native
+  var title: js.UndefOr[CellValue] = js.native
   /**
     * @see https://bossanova.uk/jexcel/v4/examples/column-types
     */
   var `type`: js.UndefOr[
     autocomplete | calendar | checkbox | color | dropdown | hidden | html | image | numeric | radio | text
-  ] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var wordWrap: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var url: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var wordWrap: js.UndefOr[Boolean] = js.native
 }
 
 object Column {
   @scala.inline
-  def apply(
-    align: center | left | right = null,
-    autocomplete: js.UndefOr[Boolean] = js.undefined,
-    decimal: String = null,
-    editor: ColumnEditor = null,
-    mask: String = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    name: CellValue = null,
-    options: CalendarOptions = null,
-    primaryKey: js.UndefOr[Boolean] = js.undefined,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    render: String = null,
-    source: js.Array[SourceValue] = null,
-    title: CellValue = null,
-    `type`: autocomplete | calendar | checkbox | color | dropdown | hidden | html | image | numeric | radio | text = null,
-    url: String = null,
-    width: js.UndefOr[Double] = js.undefined,
-    wordWrap: js.UndefOr[Boolean] = js.undefined
-  ): Column = {
+  def apply(): Column = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete.get.asInstanceOf[js.Any])
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordWrap)) __obj.updateDynamic("wordWrap")(wordWrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
+  @scala.inline
+  implicit class ColumnOps[Self <: Column] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: center | left | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setAutocomplete(value: Boolean): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutocomplete: Self = this.set("autocomplete", js.undefined)
+    @scala.inline
+    def setDecimal(value: String): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecimal: Self = this.set("decimal", js.undefined)
+    @scala.inline
+    def setEditor(value: ColumnEditor): Self = this.set("editor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditor: Self = this.set("editor", js.undefined)
+    @scala.inline
+    def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setName(value: CellValue): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptions(value: CalendarOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPrimaryKey(value: Boolean): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRender(value: String): Self = this.set("render", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+    @scala.inline
+    def setSourceVarargs(value: SourceValue*): Self = this.set("source", js.Array(value :_*))
+    @scala.inline
+    def setSource(value: js.Array[SourceValue]): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setTitle(value: CellValue): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(
+      value: autocomplete | calendar | checkbox | color | dropdown | hidden | html | image | numeric | radio | text
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWordWrap(value: Boolean): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWordWrap: Self = this.set("wordWrap", js.undefined)
+  }
+  
 }
 

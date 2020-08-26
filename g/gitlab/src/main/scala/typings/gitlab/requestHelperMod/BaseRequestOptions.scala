@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseRequestOptions
   extends Sudo
      with /* key */ StringDictionary[js.Any]
 
 object BaseRequestOptions {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, sudo: String | Double = null): BaseRequestOptions = {
+  def apply(): BaseRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (sudo != null) __obj.updateDynamic("sudo")(sudo.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseRequestOptions]
   }
 }

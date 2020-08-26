@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MemberExpression
   extends BaseNode
      with ChainElement
      with Expression
      with Pattern {
-  var computed: Boolean
-  var `object`: Expression | Super
-  var optional: Boolean
-  var property: Expression
+  var computed: Boolean = js.native
+  var `object`: Expression | Super = js.native
+  var optional: Boolean = js.native
+  var property: Expression = js.native
   @JSName("type")
-  var type_MemberExpression: typings.estree.estreeStrings.MemberExpression
+  var type_MemberExpression: typings.estree.estreeStrings.MemberExpression = js.native
 }
 
 object MemberExpression {
@@ -24,20 +25,35 @@ object MemberExpression {
     `object`: Expression | Super,
     optional: Boolean,
     property: Expression,
-    `type`: typings.estree.estreeStrings.MemberExpression,
-    leadingComments: js.Array[Comment] = null,
-    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
+    `type`: typings.estree.estreeStrings.MemberExpression
   ): MemberExpression = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberExpression]
   }
+  @scala.inline
+  implicit class MemberExpressionOps[Self <: MemberExpression] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputed(value: Boolean): Self = this.set("computed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObject(value: Expression | Super): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProperty(value: Expression): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: typings.estree.estreeStrings.MemberExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

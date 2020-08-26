@@ -74,7 +74,11 @@ trait VideoJsPlayer extends Component {
     *         if there is no tech
     */
   def addTextTrack(): Unit = js.native
+  def addTextTrack(kind: js.UndefOr[scala.Nothing], label: js.UndefOr[scala.Nothing], language: String): Unit = js.native
+  def addTextTrack(kind: js.UndefOr[scala.Nothing], label: String): Unit = js.native
+  def addTextTrack(kind: js.UndefOr[scala.Nothing], label: String, language: String): Unit = js.native
   def addTextTrack(kind: String): Unit = js.native
+  def addTextTrack(kind: String, label: js.UndefOr[scala.Nothing], language: String): Unit = js.native
   def addTextTrack(kind: String, label: String): Unit = js.native
   def addTextTrack(kind: String, label: String, language: String): Unit = js.native
   def aspectRatio(): String = js.native
@@ -298,6 +302,7 @@ trait VideoJsPlayer extends Component {
   def error(): MediaError | Null = js.native
   def error(err: String): Unit = js.native
   def error(err: Double): Unit = js.native
+  def error(err: MediaError): Unit = js.native
   /**
     * Set or get the current MediaError
     *
@@ -309,7 +314,6 @@ trait VideoJsPlayer extends Component {
     *
     * @return The current MediaError when getting (or null)
     */
-  def error(err: MediaError): Unit = js.native
   @JSName("error")
   def error_Unit(): Unit = js.native
   /**

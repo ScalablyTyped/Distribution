@@ -15,58 +15,107 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestAuthDefinition extends PropertyDefinition {
-  var apikey: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
-  var awsv4: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
-  var basic: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
-  var bearer: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
-  var digest: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
-  var edgegrid: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
-  var hawk: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
-  var ntlm: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
-  var oauth1: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
-  var oauth2: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  var apikey: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var awsv4: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var basic: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var bearer: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var digest: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var edgegrid: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var hawk: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var ntlm: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var oauth1: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var oauth2: js.UndefOr[js.Array[VariableDefinition]] = js.native
   var `type`: js.UndefOr[
     oauth2 | hawk | noauth | basic | oauth1 | apikey | digest | bearer | awsv4 | edgegrid | ntlm
-  ] = js.undefined
+  ] = js.native
 }
 
 object RequestAuthDefinition {
   @scala.inline
-  def apply(
-    apikey: js.Array[VariableDefinition] = null,
-    awsv4: js.Array[VariableDefinition] = null,
-    basic: js.Array[VariableDefinition] = null,
-    bearer: js.Array[VariableDefinition] = null,
-    description: String | DescriptionDefinition = null,
-    digest: js.Array[VariableDefinition] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    edgegrid: js.Array[VariableDefinition] = null,
-    hawk: js.Array[VariableDefinition] = null,
-    id: String = null,
-    name: String = null,
-    ntlm: js.Array[VariableDefinition] = null,
-    oauth1: js.Array[VariableDefinition] = null,
-    oauth2: js.Array[VariableDefinition] = null,
-    `type`: oauth2 | hawk | noauth | basic | oauth1 | apikey | digest | bearer | awsv4 | edgegrid | ntlm = null
-  ): RequestAuthDefinition = {
+  def apply(): RequestAuthDefinition = {
     val __obj = js.Dynamic.literal()
-    if (apikey != null) __obj.updateDynamic("apikey")(apikey.asInstanceOf[js.Any])
-    if (awsv4 != null) __obj.updateDynamic("awsv4")(awsv4.asInstanceOf[js.Any])
-    if (basic != null) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
-    if (bearer != null) __obj.updateDynamic("bearer")(bearer.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (edgegrid != null) __obj.updateDynamic("edgegrid")(edgegrid.asInstanceOf[js.Any])
-    if (hawk != null) __obj.updateDynamic("hawk")(hawk.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ntlm != null) __obj.updateDynamic("ntlm")(ntlm.asInstanceOf[js.Any])
-    if (oauth1 != null) __obj.updateDynamic("oauth1")(oauth1.asInstanceOf[js.Any])
-    if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestAuthDefinition]
   }
+  @scala.inline
+  implicit class RequestAuthDefinitionOps[Self <: RequestAuthDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApikeyVarargs(value: VariableDefinition*): Self = this.set("apikey", js.Array(value :_*))
+    @scala.inline
+    def setApikey(value: js.Array[VariableDefinition]): Self = this.set("apikey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApikey: Self = this.set("apikey", js.undefined)
+    @scala.inline
+    def setAwsv4Varargs(value: VariableDefinition*): Self = this.set("awsv4", js.Array(value :_*))
+    @scala.inline
+    def setAwsv4(value: js.Array[VariableDefinition]): Self = this.set("awsv4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsv4: Self = this.set("awsv4", js.undefined)
+    @scala.inline
+    def setBasicVarargs(value: VariableDefinition*): Self = this.set("basic", js.Array(value :_*))
+    @scala.inline
+    def setBasic(value: js.Array[VariableDefinition]): Self = this.set("basic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasic: Self = this.set("basic", js.undefined)
+    @scala.inline
+    def setBearerVarargs(value: VariableDefinition*): Self = this.set("bearer", js.Array(value :_*))
+    @scala.inline
+    def setBearer(value: js.Array[VariableDefinition]): Self = this.set("bearer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBearer: Self = this.set("bearer", js.undefined)
+    @scala.inline
+    def setDigestVarargs(value: VariableDefinition*): Self = this.set("digest", js.Array(value :_*))
+    @scala.inline
+    def setDigest(value: js.Array[VariableDefinition]): Self = this.set("digest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigest: Self = this.set("digest", js.undefined)
+    @scala.inline
+    def setEdgegridVarargs(value: VariableDefinition*): Self = this.set("edgegrid", js.Array(value :_*))
+    @scala.inline
+    def setEdgegrid(value: js.Array[VariableDefinition]): Self = this.set("edgegrid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgegrid: Self = this.set("edgegrid", js.undefined)
+    @scala.inline
+    def setHawkVarargs(value: VariableDefinition*): Self = this.set("hawk", js.Array(value :_*))
+    @scala.inline
+    def setHawk(value: js.Array[VariableDefinition]): Self = this.set("hawk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHawk: Self = this.set("hawk", js.undefined)
+    @scala.inline
+    def setNtlmVarargs(value: VariableDefinition*): Self = this.set("ntlm", js.Array(value :_*))
+    @scala.inline
+    def setNtlm(value: js.Array[VariableDefinition]): Self = this.set("ntlm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNtlm: Self = this.set("ntlm", js.undefined)
+    @scala.inline
+    def setOauth1Varargs(value: VariableDefinition*): Self = this.set("oauth1", js.Array(value :_*))
+    @scala.inline
+    def setOauth1(value: js.Array[VariableDefinition]): Self = this.set("oauth1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauth1: Self = this.set("oauth1", js.undefined)
+    @scala.inline
+    def setOauth2Varargs(value: VariableDefinition*): Self = this.set("oauth2", js.Array(value :_*))
+    @scala.inline
+    def setOauth2(value: js.Array[VariableDefinition]): Self = this.set("oauth2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauth2: Self = this.set("oauth2", js.undefined)
+    @scala.inline
+    def setType(
+      value: oauth2 | hawk | noauth | basic | oauth1 | apikey | digest | bearer | awsv4 | edgegrid | ntlm
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

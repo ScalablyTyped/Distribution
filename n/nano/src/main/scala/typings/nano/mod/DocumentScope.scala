@@ -21,6 +21,13 @@ trait DocumentScope[D] extends js.Object {
   def auth(username: String, userpass: String): js.Promise[DatabaseAuthResponse] = js.native
   def auth(username: String, userpass: String, callback: Callback[DatabaseAuthResponse]): js.Promise[DatabaseAuthResponse] = js.native
   def baseView[V](designname: String, viewname: String, meta: js.Any): js.Promise[_] = js.native
+  def baseView[V](
+    designname: String,
+    viewname: String,
+    meta: js.Any,
+    params: js.UndefOr[scala.Nothing],
+    callback: Callback[_]
+  ): js.Promise[_] = js.native
   def baseView[V](designname: String, viewname: String, meta: js.Any, params: js.Any): js.Promise[_] = js.native
   def baseView[V](designname: String, viewname: String, meta: js.Any, params: js.Any, callback: Callback[_]): js.Promise[_] = js.native
   def bulk(docs: BulkModifyDocsWrapper): js.Promise[js.Array[DocumentBulkResponse]] = js.native
@@ -83,6 +90,7 @@ trait DocumentScope[D] extends js.Object {
   // http://docs.couchdb.org/en/latest/api/document/common.html#get--db-docid
   def get(docname: String): js.Promise[DocumentGetResponse with D] = js.native
   def get(docname: String, callback: Callback[DocumentGetResponse with D]): js.Promise[DocumentGetResponse with D] = js.native
+  def get(docname: String, params: js.UndefOr[scala.Nothing], callback: Callback[DocumentGetResponse with D]): js.Promise[DocumentGetResponse with D] = js.native
   def get(docname: String, params: DocumentGetParams): js.Promise[DocumentGetResponse with D] = js.native
   def get(docname: String, params: DocumentGetParams, callback: Callback[DocumentGetResponse with D]): js.Promise[DocumentGetResponse with D] = js.native
   // http://docs.couchdb.org/en/latest/api/document/common.html#head--db-docid
@@ -109,8 +117,6 @@ trait DocumentScope[D] extends js.Object {
   def insert(document: ViewDocument[D], params: String): js.Promise[DocumentInsertResponse] = js.native
   def insert(document: ViewDocument[D], params: String, callback: Callback[DocumentInsertResponse]): js.Promise[DocumentInsertResponse] = js.native
   def insert(document: ViewDocument[D], params: Null, callback: Callback[DocumentInsertResponse]): js.Promise[DocumentInsertResponse] = js.native
-  // http://docs.couchdb.org/en/latest/api/database/common.html#post--db
-  // http://docs.couchdb.org/en/latest/api/document/common.html#put--db-docid
   def insert(document: ViewDocument[D], params: DocumentInsertParams): js.Promise[DocumentInsertResponse] = js.native
   def insert(
     document: ViewDocument[D],
@@ -134,6 +140,11 @@ trait DocumentScope[D] extends js.Object {
   def partitionedFind(partitionKey: String, query: MangoQuery, callback: Callback[MangoResponse[D]]): js.Promise[MangoResponse[D]] = js.native
   def partitionedFindAsStream(partitionKey: String, query: MangoQuery): Request = js.native
   def partitionedList(partitionKey: String): js.Promise[DocumentListResponse[D]] = js.native
+  def partitionedList(
+    partitionKey: String,
+    params: js.UndefOr[scala.Nothing],
+    callback: Callback[DocumentListResponse[D]]
+  ): js.Promise[DocumentListResponse[D]] = js.native
   def partitionedList(partitionKey: String, params: DocumentFetchParams): js.Promise[DocumentListResponse[D]] = js.native
   def partitionedList(partitionKey: String, params: DocumentFetchParams, callback: Callback[DocumentListResponse[D]]): js.Promise[DocumentListResponse[D]] = js.native
   def partitionedListAsStream(partitionKey: String): Request = js.native

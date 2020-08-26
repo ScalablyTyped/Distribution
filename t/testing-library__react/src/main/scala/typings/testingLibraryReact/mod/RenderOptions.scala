@@ -7,30 +7,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RenderOptions[Q /* <: Queries */] extends js.Object {
-  var baseElement: js.UndefOr[HTMLElement] = js.undefined
-  var container: js.UndefOr[HTMLElement] = js.undefined
-  var hydrate: js.UndefOr[Boolean] = js.undefined
-  var queries: js.UndefOr[Q] = js.undefined
-  var wrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  var baseElement: js.UndefOr[HTMLElement] = js.native
+  var container: js.UndefOr[HTMLElement] = js.native
+  var hydrate: js.UndefOr[Boolean] = js.native
+  var queries: js.UndefOr[Q] = js.native
+  var wrapper: js.UndefOr[ComponentType[js.Object]] = js.native
 }
 
 object RenderOptions {
   @scala.inline
-  def apply[/* <: typings.testingLibraryDom.getQueriesForElementMod.Queries */ Q](
-    baseElement: HTMLElement = null,
-    container: HTMLElement = null,
-    hydrate: js.UndefOr[Boolean] = js.undefined,
-    queries: Q = null,
-    wrapper: ComponentType[js.Object] = null
-  ): RenderOptions[Q] = {
+  def apply[/* <: typings.testingLibraryDom.getQueriesForElementMod.Queries */ Q](): RenderOptions[Q] = {
     val __obj = js.Dynamic.literal()
-    if (baseElement != null) __obj.updateDynamic("baseElement")(baseElement.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(hydrate)) __obj.updateDynamic("hydrate")(hydrate.get.asInstanceOf[js.Any])
-    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions[Q]]
   }
+  @scala.inline
+  implicit class RenderOptionsOps[Self <: RenderOptions[_], /* <: typings.testingLibraryDom.getQueriesForElementMod.Queries */ Q] (val x: Self with RenderOptions[Q]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseElement(value: HTMLElement): Self = this.set("baseElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseElement: Self = this.set("baseElement", js.undefined)
+    @scala.inline
+    def setContainer(value: HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setHydrate(value: Boolean): Self = this.set("hydrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHydrate: Self = this.set("hydrate", js.undefined)
+    @scala.inline
+    def setQueries(value: Q): Self = this.set("queries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueries: Self = this.set("queries", js.undefined)
+    @scala.inline
+    def setWrapper(value: ComponentType[js.Object]): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+  }
+  
 }
 

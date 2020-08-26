@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rmc-nuka-carousel/lib", JSImport.Namespace)
+@JSImport("rmc-nuka-carousel", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   @js.native

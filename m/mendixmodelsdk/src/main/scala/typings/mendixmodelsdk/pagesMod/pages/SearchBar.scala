@@ -26,9 +26,9 @@ class SearchBar protected () extends ControlBar {
   @JSName("model")
   var model_FSearchBar: IModel = js.native
   def `type`: SearchBarTypeEnum = js.native
-  def `type`(newValue: SearchBarTypeEnum): js.Any = js.native
+  def type_=(newValue: SearchBarTypeEnum): Unit = js.native
   def waitForSearch: Boolean = js.native
-  def waitForSearch(newValue: Boolean): js.Any = js.native
+  def waitForSearch_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

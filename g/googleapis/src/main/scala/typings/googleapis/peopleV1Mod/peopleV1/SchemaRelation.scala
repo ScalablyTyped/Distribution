@@ -34,18 +34,38 @@ trait SchemaRelation extends js.Object {
 
 object SchemaRelation {
   @scala.inline
-  def apply(
-    formattedType: String = null,
-    metadata: SchemaFieldMetadata = null,
-    person: String = null,
-    `type`: String = null
-  ): SchemaRelation = {
+  def apply(): SchemaRelation = {
     val __obj = js.Dynamic.literal()
-    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (person != null) __obj.updateDynamic("person")(person.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRelation]
   }
+  @scala.inline
+  implicit class SchemaRelationOps[Self <: SchemaRelation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormattedType(value: String): Self = this.set("formattedType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattedType: Self = this.set("formattedType", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaFieldMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setPerson(value: String): Self = this.set("person", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerson: Self = this.set("person", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

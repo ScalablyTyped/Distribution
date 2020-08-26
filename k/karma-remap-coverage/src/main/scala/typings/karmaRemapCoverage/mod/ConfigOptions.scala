@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigOptions extends js.Object {
   /**
     * Key-value pairs where key is report type and value - path to file/dir where to save it.
@@ -18,15 +19,31 @@ trait ConfigOptions extends js.Object {
     *
     * {@link https://github.com/sshev/karma-remap-coverage#remapcoveragereporter-format }
     */
-  var remapCoverageReporter: js.UndefOr[KarmaRemapCoverageReporter] = js.undefined
+  var remapCoverageReporter: js.UndefOr[KarmaRemapCoverageReporter] = js.native
 }
 
 object ConfigOptions {
   @scala.inline
-  def apply(remapCoverageReporter: KarmaRemapCoverageReporter = null): ConfigOptions = {
+  def apply(): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (remapCoverageReporter != null) __obj.updateDynamic("remapCoverageReporter")(remapCoverageReporter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
+  @scala.inline
+  implicit class ConfigOptionsOps[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRemapCoverageReporter(value: KarmaRemapCoverageReporter): Self = this.set("remapCoverageReporter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemapCoverageReporter: Self = this.set("remapCoverageReporter", js.undefined)
+  }
+  
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SemanticTokensMiddleware extends js.Object {
   var provideDocumentRangeSemanticTokens: js.UndefOr[
     js.ThisFunction4[
@@ -20,7 +21,7 @@ trait SemanticTokensMiddleware extends js.Object {
       /* next */ DocumentRangeSemanticTokensSignature, 
       ProviderResult[SemanticTokens]
     ]
-  ] = js.undefined
+  ] = js.native
   var provideDocumentSemanticTokens: js.UndefOr[
     js.ThisFunction3[
       /* this */ Unit, 
@@ -29,7 +30,7 @@ trait SemanticTokensMiddleware extends js.Object {
       /* next */ DocumentSemanticsTokensSignature, 
       ProviderResult[SemanticTokens]
     ]
-  ] = js.undefined
+  ] = js.native
   var provideDocumentSemanticTokensEdits: js.UndefOr[
     js.ThisFunction4[
       /* this */ Unit, 
@@ -39,41 +40,65 @@ trait SemanticTokensMiddleware extends js.Object {
       /* next */ DocumentSemanticsTokensEditsSignature, 
       ProviderResult[SemanticTokensEdits | SemanticTokens]
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object SemanticTokensMiddleware {
   @scala.inline
-  def apply(
-    provideDocumentRangeSemanticTokens: js.ThisFunction4[
-      /* this */ Unit, 
-      /* document */ TextDocument, 
-      /* range */ Range, 
-      /* token */ CancellationToken, 
-      /* next */ DocumentRangeSemanticTokensSignature, 
-      ProviderResult[SemanticTokens]
-    ] = null,
-    provideDocumentSemanticTokens: js.ThisFunction3[
-      /* this */ Unit, 
-      /* document */ TextDocument, 
-      /* token */ CancellationToken, 
-      /* next */ DocumentSemanticsTokensSignature, 
-      ProviderResult[SemanticTokens]
-    ] = null,
-    provideDocumentSemanticTokensEdits: js.ThisFunction4[
-      /* this */ Unit, 
-      /* document */ TextDocument, 
-      /* previousResultId */ String, 
-      /* token */ CancellationToken, 
-      /* next */ DocumentSemanticsTokensEditsSignature, 
-      ProviderResult[SemanticTokensEdits | SemanticTokens]
-    ] = null
-  ): SemanticTokensMiddleware = {
+  def apply(): SemanticTokensMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (provideDocumentRangeSemanticTokens != null) __obj.updateDynamic("provideDocumentRangeSemanticTokens")(provideDocumentRangeSemanticTokens.asInstanceOf[js.Any])
-    if (provideDocumentSemanticTokens != null) __obj.updateDynamic("provideDocumentSemanticTokens")(provideDocumentSemanticTokens.asInstanceOf[js.Any])
-    if (provideDocumentSemanticTokensEdits != null) __obj.updateDynamic("provideDocumentSemanticTokensEdits")(provideDocumentSemanticTokensEdits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokensMiddleware]
   }
+  @scala.inline
+  implicit class SemanticTokensMiddlewareOps[Self <: SemanticTokensMiddleware] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvideDocumentRangeSemanticTokens(
+      value: js.ThisFunction4[
+          /* this */ Unit, 
+          /* document */ TextDocument, 
+          /* range */ Range, 
+          /* token */ CancellationToken, 
+          /* next */ DocumentRangeSemanticTokensSignature, 
+          ProviderResult[SemanticTokens]
+        ]
+    ): Self = this.set("provideDocumentRangeSemanticTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvideDocumentRangeSemanticTokens: Self = this.set("provideDocumentRangeSemanticTokens", js.undefined)
+    @scala.inline
+    def setProvideDocumentSemanticTokens(
+      value: js.ThisFunction3[
+          /* this */ Unit, 
+          /* document */ TextDocument, 
+          /* token */ CancellationToken, 
+          /* next */ DocumentSemanticsTokensSignature, 
+          ProviderResult[SemanticTokens]
+        ]
+    ): Self = this.set("provideDocumentSemanticTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvideDocumentSemanticTokens: Self = this.set("provideDocumentSemanticTokens", js.undefined)
+    @scala.inline
+    def setProvideDocumentSemanticTokensEdits(
+      value: js.ThisFunction4[
+          /* this */ Unit, 
+          /* document */ TextDocument, 
+          /* previousResultId */ String, 
+          /* token */ CancellationToken, 
+          /* next */ DocumentSemanticsTokensEditsSignature, 
+          ProviderResult[SemanticTokensEdits | SemanticTokens]
+        ]
+    ): Self = this.set("provideDocumentSemanticTokensEdits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvideDocumentSemanticTokensEdits: Self = this.set("provideDocumentSemanticTokensEdits", js.undefined)
+  }
+  
 }
 

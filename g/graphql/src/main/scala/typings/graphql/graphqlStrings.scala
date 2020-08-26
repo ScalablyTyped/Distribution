@@ -55,6 +55,9 @@ object graphqlStrings {
   sealed trait DIRECTIVE_REMOVED extends js.Object
   
   @js.native
+  sealed trait DIRECTIVE_REPEATABLE_REMOVED extends js.Object
+  
+  @js.native
   sealed trait Directive extends KindEnum
   
   @js.native
@@ -130,6 +133,12 @@ object graphqlStrings {
   sealed trait FragmentSpread extends KindEnum
   
   @js.native
+  sealed trait IMPLEMENTED_INTERFACE_ADDED extends js.Object
+  
+  @js.native
+  sealed trait IMPLEMENTED_INTERFACE_REMOVED extends js.Object
+  
+  @js.native
   sealed trait INLINE_FRAGMENT extends DirectiveLocationEnum
   
   @js.native
@@ -140,12 +149,6 @@ object graphqlStrings {
   
   @js.native
   sealed trait INTERFACE extends DirectiveLocationEnum
-  
-  @js.native
-  sealed trait INTERFACE_ADDED_TO_OBJECT extends js.Object
-  
-  @js.native
-  sealed trait INTERFACE_REMOVED_FROM_OBJECT extends js.Object
   
   @js.native
   sealed trait InlineFragment extends KindEnum
@@ -441,6 +444,8 @@ object graphqlStrings {
   @scala.inline
   def DIRECTIVE_REMOVED: DIRECTIVE_REMOVED = "DIRECTIVE_REMOVED".asInstanceOf[DIRECTIVE_REMOVED]
   @scala.inline
+  def DIRECTIVE_REPEATABLE_REMOVED: DIRECTIVE_REPEATABLE_REMOVED = "DIRECTIVE_REPEATABLE_REMOVED".asInstanceOf[DIRECTIVE_REPEATABLE_REMOVED]
+  @scala.inline
   def Directive: Directive = "Directive".asInstanceOf[Directive]
   @scala.inline
   def DirectiveDefinition: DirectiveDefinition = "DirectiveDefinition".asInstanceOf[DirectiveDefinition]
@@ -491,6 +496,10 @@ object graphqlStrings {
   @scala.inline
   def FragmentSpread: FragmentSpread = "FragmentSpread".asInstanceOf[FragmentSpread]
   @scala.inline
+  def IMPLEMENTED_INTERFACE_ADDED: IMPLEMENTED_INTERFACE_ADDED = "IMPLEMENTED_INTERFACE_ADDED".asInstanceOf[IMPLEMENTED_INTERFACE_ADDED]
+  @scala.inline
+  def IMPLEMENTED_INTERFACE_REMOVED: IMPLEMENTED_INTERFACE_REMOVED = "IMPLEMENTED_INTERFACE_REMOVED".asInstanceOf[IMPLEMENTED_INTERFACE_REMOVED]
+  @scala.inline
   def INLINE_FRAGMENT: INLINE_FRAGMENT = "INLINE_FRAGMENT".asInstanceOf[INLINE_FRAGMENT]
   @scala.inline
   def INPUT_FIELD_DEFINITION: INPUT_FIELD_DEFINITION = "INPUT_FIELD_DEFINITION".asInstanceOf[INPUT_FIELD_DEFINITION]
@@ -498,10 +507,6 @@ object graphqlStrings {
   def INPUT_OBJECT: INPUT_OBJECT = "INPUT_OBJECT".asInstanceOf[INPUT_OBJECT]
   @scala.inline
   def INTERFACE: INTERFACE = "INTERFACE".asInstanceOf[INTERFACE]
-  @scala.inline
-  def INTERFACE_ADDED_TO_OBJECT: INTERFACE_ADDED_TO_OBJECT = "INTERFACE_ADDED_TO_OBJECT".asInstanceOf[INTERFACE_ADDED_TO_OBJECT]
-  @scala.inline
-  def INTERFACE_REMOVED_FROM_OBJECT: INTERFACE_REMOVED_FROM_OBJECT = "INTERFACE_REMOVED_FROM_OBJECT".asInstanceOf[INTERFACE_REMOVED_FROM_OBJECT]
   @scala.inline
   def InlineFragment: InlineFragment = "InlineFragment".asInstanceOf[InlineFragment]
   @scala.inline

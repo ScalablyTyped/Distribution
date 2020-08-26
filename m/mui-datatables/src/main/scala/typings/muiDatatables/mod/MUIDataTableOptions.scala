@@ -1,6 +1,7 @@
 package typings.muiDatatables.mod
 
 import typings.muiDatatables.anon.ColIndex
+import typings.muiDatatables.anon.Columns
 import typings.muiDatatables.anon.DataDataIndex
 import typings.muiDatatables.anon.DataLookup
 import typings.muiDatatables.anon.Lookup
@@ -8,19 +9,35 @@ import typings.muiDatatables.anon.PartialMUIDataTableTextLaBody
 import typings.muiDatatables.anon.Partialfilenamestringsepa
 import typings.muiDatatables.anon.RowIndex
 import typings.muiDatatables.anon.XAxis
+import typings.muiDatatables.muiDatatablesStrings.above
+import typings.muiDatatables.muiDatatablesStrings.asc
 import typings.muiDatatables.muiDatatablesStrings.chip
+import typings.muiDatatables.muiDatatablesStrings.desc
+import typings.muiDatatables.muiDatatablesStrings.none
+import typings.muiDatatables.muiDatatablesStrings.replace
 import typings.muiDatatables.muiDatatablesStrings.reset
 import typings.react.mod.Component
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined std.Partial<{  caseSensitive :boolean,   confirmFilters :boolean,   count :number, customFilterDialogFooter (filterList : std.Array<any>, applyNewFilters : (args : ...any): any | undefined): react.react.ReactNode, customFooter (rowCount : number, page : number, rowsPerPage : number, changeRowsPerPage : (page : string | number): void, changePage : (newPage : number): void): react.react.ReactNode, customRowRender (data : std.Array<any>, dataIndex : number, rowIndex : number): react.react.ReactNode, customSearch (searchQuery : string, currentRow : std.Array<any>, columns : std.Array<any>): boolean, customSearchRender (searchText : string, handleSearch : any, hideSearch : any, options : any): react.react.Component<{}, {}, any> | react.react.<global>.JSX.Element, customSort (data : std.Array<any>, colIndex : number, order : string): std.Array<any>, customTableBodyFooterRender (options : {  data :std.Array<any>,   selectableRows :mui-datatables.mui-datatables.SelectableRows,   columns :std.Array<any>}): any, customToolbar (): react.react.ReactNode, customToolbarSelect (selectedRows : {  data :std.Array<{  index :number,   dataIndex :number}>,   lookup :{[key: number] : boolean}}, displayData : std.Array<{  data :std.Array<any>,   dataIndex :number}>, setSelectedRows : (rows : std.Array<number>): void): react.react.ReactNode,   disableToolbarSelect :boolean,   download :boolean,   downloadOptions :std.Partial<{  filename :string,   separator :string,   filterOptions :std.Partial<{  useDisplayedColumnsOnly :boolean,   useDisplayedRowsOnly :boolean}>}>,   elevation :number,   enableNestedDataAccess :string,   expandableRows :boolean,   expandableRowsHeader :boolean,   expandableRowsOnClick :boolean,   filter :boolean,   filterType :mui-datatables.mui-datatables.FilterType,   fixedHeader :boolean,   fixedHeaderOptions :{  xAxis :boolean,   yAxis :boolean},   fixedSelectColumn :boolean, isRowExpandable (dataIndex : number, expandedRows : mui-datatables.mui-datatables.MUIDataTableIsRowCheck | undefined): boolean, isRowSelectable (dataIndex : number, selectedRows : mui-datatables.mui-datatables.MUIDataTableIsRowCheck | undefined): boolean, onCellClick (colData : any, cellMeta : {  colIndex :number,   rowIndex :number,   dataIndex :number,   event :react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>}): void, onChangePage (currentPage : number): void, onChangeRowsPerPage (numberOfRows : number): void, onColumnSortChange (changedColumn : string, direction : 'asc' | 'desc'): void,   onColumnViewChange :(changedColumn : string, action : string): void | undefined, onDownload (buildHead : (columns : any): string, buildBody : (data : any): string, columns : any, data : any): string | boolean, onFilterChange (changedColumn : string, filterList : std.Array<any>, type : mui-datatables.mui-datatables.FilterType | 'chip' | 'reset'): void, onFilterChipClose (index : number, removedFilter : string, filterList : std.Array<any>): void, onFilterConfirm (filterList : std.Array<any>): void, onFilterDialogClose (): void, onFilterDialogOpen (): void, onRowClick (rowData : std.Array<string>, rowMeta : {  dataIndex :number,   rowIndex :number}): void, onRowExpansionChange (currentRowsExpanded : std.Array<any>, allRowsExpanded : std.Array<any>, rowsExpanded : std.Array<any> | undefined): void, onRowsDelete (rowsDeleted : {  lookup :{[dataIndex: number] : boolean},   data :std.Array<{  index :number,   dataIndex :number}>}): void, onRowSelectionChange (currentRowsSelected : std.Array<any>, allRowsSelected : std.Array<any>, rowsSelected : std.Array<any> | undefined): void, onSearchChange (searchText : string): void, onSearchClose (): void, onSearchOpen (): void, onTableChange (action : string, tableState : mui-datatables.mui-datatables.MUIDataTableState): void, onTableInit (action : string, tableState : mui-datatables.mui-datatables.MUIDataTableState): void, onViewColumnsChange (changedColumn : string, action : string): void,   page :number,   pagination :boolean,   print :boolean, renderExpandableRow (rowData : std.Array<string>, rowMeta : {  dataIndex :number,   rowIndex :number}): react.react.ReactNode,   resizableColumns :boolean,   responsive :mui-datatables.mui-datatables.Responsive,   rowHover :boolean,   rowsExpanded :std.Array<any>,   rowsPerPage :number,   rowsPerPageOptions :std.Array<number>,   rowsSelected :std.Array<any>,   search :boolean,   searchOpen :boolean,   searchProps :react.react.HTMLAttributes<std.HTMLInputElement>,   searchPlaceholder :string,   searchText :string,   selectableRows :mui-datatables.mui-datatables.SelectableRows,   selectableRowsHeader :boolean,   selectableRowsHideCheckboxes :boolean,   selectableRowsOnClick :boolean,   selectToolbarPlacement :'replace' | 'above' | 'none',   serverSide :boolean, setRowProps (row : std.Array<any>, rowIndex : number): object, setTableProps (): object,   sort :boolean,   sortFilterList :boolean,   sortOrder :mui-datatables.mui-datatables.MUISortOptions,   tableBodyHeight :string,   tableBodyMaxHeight :string,   textLabels :std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabels>,   viewColumns :boolean}> */
+@js.native
 trait MUIDataTableOptions extends js.Object {
-  var caseSensitive: js.UndefOr[Boolean] = js.undefined
-  var count: js.UndefOr[Double] = js.undefined
-  var customFilterDialogFooter: js.UndefOr[js.Function1[/* filterList */ js.Array[_], ReactNode]] = js.undefined
+  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var confirmFilters: js.UndefOr[Boolean] = js.native
+  var count: js.UndefOr[Double] = js.native
+  var customFilterDialogFooter: js.UndefOr[
+    js.Function2[
+      /* filterList */ js.Array[_], 
+      /* applyNewFilters */ js.UndefOr[js.Function1[/* repeated */ js.Any, _]], 
+      ReactNode
+    ]
+  ] = js.native
   var customFooter: js.UndefOr[
     js.Function5[
       /* rowCount */ Double, 
@@ -30,10 +47,10 @@ trait MUIDataTableOptions extends js.Object {
       /* changePage */ js.Function1[/* newPage */ Double, Unit], 
       ReactNode
     ]
-  ] = js.undefined
+  ] = js.native
   var customRowRender: js.UndefOr[
     js.Function3[/* data */ js.Array[_], /* dataIndex */ Double, /* rowIndex */ Double, ReactNode]
-  ] = js.undefined
+  ] = js.native
   var customSearch: js.UndefOr[
     js.Function3[
       /* searchQuery */ String, 
@@ -41,7 +58,7 @@ trait MUIDataTableOptions extends js.Object {
       /* columns */ js.Array[_], 
       Boolean
     ]
-  ] = js.undefined
+  ] = js.native
   var customSearchRender: js.UndefOr[
     js.Function4[
       /* searchText */ String, 
@@ -50,53 +67,52 @@ trait MUIDataTableOptions extends js.Object {
       /* options */ js.Any, 
       (Component[js.Object, js.Object, _]) | Element
     ]
-  ] = js.undefined
+  ] = js.native
   var customSort: js.UndefOr[
     js.Function3[/* data */ js.Array[_], /* colIndex */ Double, /* order */ String, js.Array[_]]
-  ] = js.undefined
-  var customToolbar: js.UndefOr[js.Function0[ReactNode]] = js.undefined
+  ] = js.native
+  var customTableBodyFooterRender: js.UndefOr[js.Function1[/* options */ Columns, _]] = js.native
+  var customToolbar: js.UndefOr[js.Function0[ReactNode]] = js.native
   var customToolbarSelect: js.UndefOr[
     js.Function3[
-      /* selectedRows */ Lookup, 
+      /* selectedRows */ DataLookup, 
       /* displayData */ js.Array[DataDataIndex], 
       /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit], 
       ReactNode
     ]
-  ] = js.undefined
-  var disableToolbarSelect: js.UndefOr[Boolean] = js.undefined
-  var download: js.UndefOr[Boolean] = js.undefined
-  var downloadOptions: js.UndefOr[Partialfilenamestringsepa] = js.undefined
-  var elevation: js.UndefOr[Double] = js.undefined
-  var expandableRows: js.UndefOr[Boolean] = js.undefined
-  var expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined
-  var filter: js.UndefOr[Boolean] = js.undefined
-  var filterType: js.UndefOr[FilterType] = js.undefined
-  var fixedHeader: js.UndefOr[Boolean] = js.undefined
-  var fixedHeaderOptions: js.UndefOr[XAxis] = js.undefined
+  ] = js.native
+  var disableToolbarSelect: js.UndefOr[Boolean] = js.native
+  var download: js.UndefOr[Boolean] = js.native
+  var downloadOptions: js.UndefOr[Partialfilenamestringsepa] = js.native
+  var elevation: js.UndefOr[Double] = js.native
+  var enableNestedDataAccess: js.UndefOr[String] = js.native
+  var expandableRows: js.UndefOr[Boolean] = js.native
+  var expandableRowsHeader: js.UndefOr[Boolean] = js.native
+  var expandableRowsOnClick: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[Boolean] = js.native
+  var filterType: js.UndefOr[FilterType] = js.native
+  var fixedHeader: js.UndefOr[Boolean] = js.native
+  var fixedHeaderOptions: js.UndefOr[XAxis] = js.native
+  var fixedSelectColumn: js.UndefOr[Boolean] = js.native
   var isRowExpandable: js.UndefOr[
     js.Function2[
       /* dataIndex */ Double, 
       /* expandedRows */ js.UndefOr[MUIDataTableIsRowCheck], 
       Boolean
     ]
-  ] = js.undefined
+  ] = js.native
   var isRowSelectable: js.UndefOr[
     js.Function2[
       /* dataIndex */ Double, 
       /* selectedRows */ js.UndefOr[MUIDataTableIsRowCheck], 
       Boolean
     ]
-  ] = js.undefined
-  var onCellClick: js.UndefOr[js.Function2[/* colData */ js.Any, /* cellMeta */ ColIndex, Unit]] = js.undefined
-  var onChangePage: js.UndefOr[js.Function1[/* currentPage */ Double, Unit]] = js.undefined
-  var onChangeRowsPerPage: js.UndefOr[js.Function1[/* numberOfRows */ Double, Unit]] = js.undefined
-  var onColumnSortChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* direction */ String, Unit]] = js.undefined
-  var onColumnViewChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* action */ String, Unit]] = js.undefined
-  /**
-    * A callback function that triggers when the user downloads the CSV file.
-    * In the callback, you can control what is written to the CSV file.
-    * Return false to cancel download of file.
-    */
+  ] = js.native
+  var onCellClick: js.UndefOr[js.Function2[/* colData */ js.Any, /* cellMeta */ ColIndex, Unit]] = js.native
+  var onChangePage: js.UndefOr[js.Function1[/* currentPage */ Double, Unit]] = js.native
+  var onChangeRowsPerPage: js.UndefOr[js.Function1[/* numberOfRows */ Double, Unit]] = js.native
+  var onColumnSortChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* direction */ asc | desc, Unit]] = js.native
+  var onColumnViewChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* action */ String, Unit]] = js.native
   var onDownload: js.UndefOr[
     js.Function4[
       /* buildHead */ js.Function1[/* columns */ js.Any, String], 
@@ -105,7 +121,7 @@ trait MUIDataTableOptions extends js.Object {
       /* data */ js.Any, 
       String | Boolean
     ]
-  ] = js.undefined
+  ] = js.native
   var onFilterChange: js.UndefOr[
     js.Function3[
       /* changedColumn */ String, 
@@ -113,188 +129,428 @@ trait MUIDataTableOptions extends js.Object {
       /* type */ FilterType | chip | reset, 
       Unit
     ]
-  ] = js.undefined
-  var onFilterDialogClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onFilterDialogOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, Unit]] = js.undefined
-  var onRowsDelete: js.UndefOr[js.Function1[/* rowsDeleted */ DataLookup, Unit]] = js.undefined
-  var onRowsExpand: js.UndefOr[
-    js.Function2[/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_], Unit]
-  ] = js.undefined
-  var onRowsSelect: js.UndefOr[
-    js.Function2[/* currentRowsSelected */ js.Array[_], /* rowsSelected */ js.Array[_], Unit]
-  ] = js.undefined
-  var onSearchChange: js.UndefOr[js.Function1[/* searchText */ String, Unit]] = js.undefined
-  var onSearchClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSearchOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onTableChange: js.UndefOr[js.Function2[/* action */ String, /* tableState */ MUIDataTableState, Unit]] = js.undefined
-  var onTableInit: js.UndefOr[js.Function2[/* action */ String, /* tableState */ MUIDataTableState, Unit]] = js.undefined
-  var page: js.UndefOr[Double] = js.undefined
-  var pagination: js.UndefOr[Boolean] = js.undefined
-  var print: js.UndefOr[Boolean] = js.undefined
-  var renderExpandableRow: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, ReactNode]] = js.undefined
-  var resizableColumns: js.UndefOr[Boolean] = js.undefined
-  var responsive: js.UndefOr[Responsive] = js.undefined
-  var rowHover: js.UndefOr[Boolean] = js.undefined
-  var rowsExpanded: js.UndefOr[js.Array[_]] = js.undefined
-  var rowsPerPage: js.UndefOr[Double] = js.undefined
-  var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.undefined
-  var rowsSelected: js.UndefOr[js.Array[_]] = js.undefined
-  var search: js.UndefOr[Boolean] = js.undefined
-  var searchOpen: js.UndefOr[Boolean] = js.undefined
-  var searchPlaceholder: js.UndefOr[String] = js.undefined
-  var searchText: js.UndefOr[String] = js.undefined
-  var selectableRows: js.UndefOr[SelectableRows] = js.undefined
-  var selectableRowsHeader: js.UndefOr[Boolean] = js.undefined
-  var selectableRowsOnClick: js.UndefOr[Boolean] = js.undefined
-  var serverSide: js.UndefOr[Boolean] = js.undefined
-  var serverSideFilterList: js.UndefOr[js.Array[_]] = js.undefined
-  var setRowProps: js.UndefOr[js.Function2[/* row */ js.Array[_], /* rowIndex */ Double, js.Object]] = js.undefined
-  var setTableProps: js.UndefOr[js.Function0[js.Object]] = js.undefined
-  var sort: js.UndefOr[Boolean] = js.undefined
-  var sortFilterList: js.UndefOr[Boolean] = js.undefined
-  var textLabels: js.UndefOr[PartialMUIDataTableTextLaBody] = js.undefined
-  var viewColumns: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var onFilterChipClose: js.UndefOr[
+    js.Function3[/* index */ Double, /* removedFilter */ String, /* filterList */ js.Array[_], Unit]
+  ] = js.native
+  var onFilterConfirm: js.UndefOr[js.Function1[/* filterList */ js.Array[_], Unit]] = js.native
+  var onFilterDialogClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFilterDialogOpen: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, Unit]] = js.native
+  var onRowExpansionChange: js.UndefOr[
+    js.Function3[
+      /* currentRowsExpanded */ js.Array[_], 
+      /* allRowsExpanded */ js.Array[_], 
+      /* rowsExpanded */ js.UndefOr[js.Array[_]], 
+      Unit
+    ]
+  ] = js.native
+  var onRowSelectionChange: js.UndefOr[
+    js.Function3[
+      /* currentRowsSelected */ js.Array[_], 
+      /* allRowsSelected */ js.Array[_], 
+      /* rowsSelected */ js.UndefOr[js.Array[_]], 
+      Unit
+    ]
+  ] = js.native
+  var onRowsDelete: js.UndefOr[js.Function1[/* rowsDeleted */ Lookup, Unit]] = js.native
+  var onSearchChange: js.UndefOr[js.Function1[/* searchText */ String, Unit]] = js.native
+  var onSearchClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSearchOpen: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTableChange: js.UndefOr[js.Function2[/* action */ String, /* tableState */ MUIDataTableState, Unit]] = js.native
+  var onTableInit: js.UndefOr[js.Function2[/* action */ String, /* tableState */ MUIDataTableState, Unit]] = js.native
+  var onViewColumnsChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* action */ String, Unit]] = js.native
+  var page: js.UndefOr[Double] = js.native
+  var pagination: js.UndefOr[Boolean] = js.native
+  var print: js.UndefOr[Boolean] = js.native
+  var renderExpandableRow: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, ReactNode]] = js.native
+  var resizableColumns: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Responsive] = js.native
+  var rowHover: js.UndefOr[Boolean] = js.native
+  var rowsExpanded: js.UndefOr[js.Array[_]] = js.native
+  var rowsPerPage: js.UndefOr[Double] = js.native
+  var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.native
+  var rowsSelected: js.UndefOr[js.Array[_]] = js.native
+  var search: js.UndefOr[Boolean] = js.native
+  var searchOpen: js.UndefOr[Boolean] = js.native
+  var searchPlaceholder: js.UndefOr[String] = js.native
+  var searchProps: js.UndefOr[HTMLAttributes[HTMLInputElement]] = js.native
+  var searchText: js.UndefOr[String] = js.native
+  var selectToolbarPlacement: js.UndefOr[replace | above | none] = js.native
+  var selectableRows: js.UndefOr[SelectableRows] = js.native
+  var selectableRowsHeader: js.UndefOr[Boolean] = js.native
+  var selectableRowsHideCheckboxes: js.UndefOr[Boolean] = js.native
+  var selectableRowsOnClick: js.UndefOr[Boolean] = js.native
+  var serverSide: js.UndefOr[Boolean] = js.native
+  var setRowProps: js.UndefOr[js.Function2[/* row */ js.Array[_], /* rowIndex */ Double, js.Object]] = js.native
+  var setTableProps: js.UndefOr[js.Function0[js.Object]] = js.native
+  var sort: js.UndefOr[Boolean] = js.native
+  var sortFilterList: js.UndefOr[Boolean] = js.native
+  var sortOrder: js.UndefOr[MUISortOptions] = js.native
+  var tableBodyHeight: js.UndefOr[String] = js.native
+  var tableBodyMaxHeight: js.UndefOr[String] = js.native
+  var textLabels: js.UndefOr[PartialMUIDataTableTextLaBody] = js.native
+  var viewColumns: js.UndefOr[Boolean] = js.native
 }
 
 object MUIDataTableOptions {
   @scala.inline
-  def apply(
-    caseSensitive: js.UndefOr[Boolean] = js.undefined,
-    count: js.UndefOr[Double] = js.undefined,
-    customFilterDialogFooter: /* filterList */ js.Array[_] => ReactNode = null,
-    customFooter: (/* rowCount */ Double, /* page */ Double, /* rowsPerPage */ Double, /* changeRowsPerPage */ js.Function1[/* page */ String | Double, Unit], /* changePage */ js.Function1[/* newPage */ Double, Unit]) => ReactNode = null,
-    customRowRender: (/* data */ js.Array[_], /* dataIndex */ Double, /* rowIndex */ Double) => ReactNode = null,
-    customSearch: (/* searchQuery */ String, /* currentRow */ js.Array[_], /* columns */ js.Array[_]) => Boolean = null,
-    customSearchRender: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => (Component[js.Object, js.Object, _]) | Element = null,
-    customSort: (/* data */ js.Array[_], /* colIndex */ Double, /* order */ String) => js.Array[_] = null,
-    customToolbar: () => ReactNode = null,
-    customToolbarSelect: (/* selectedRows */ Lookup, /* displayData */ js.Array[DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
-    disableToolbarSelect: js.UndefOr[Boolean] = js.undefined,
-    download: js.UndefOr[Boolean] = js.undefined,
-    downloadOptions: Partialfilenamestringsepa = null,
-    elevation: js.UndefOr[Double] = js.undefined,
-    expandableRows: js.UndefOr[Boolean] = js.undefined,
-    expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined,
-    filter: js.UndefOr[Boolean] = js.undefined,
-    filterType: FilterType = null,
-    fixedHeader: js.UndefOr[Boolean] = js.undefined,
-    fixedHeaderOptions: XAxis = null,
-    isRowExpandable: (/* dataIndex */ Double, /* expandedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean = null,
-    isRowSelectable: (/* dataIndex */ Double, /* selectedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean = null,
-    onCellClick: (/* colData */ js.Any, /* cellMeta */ ColIndex) => Unit = null,
-    onChangePage: /* currentPage */ Double => Unit = null,
-    onChangeRowsPerPage: /* numberOfRows */ Double => Unit = null,
-    onColumnSortChange: (/* changedColumn */ String, /* direction */ String) => Unit = null,
-    onColumnViewChange: (/* changedColumn */ String, /* action */ String) => Unit = null,
-    onDownload: (/* buildHead */ js.Function1[/* columns */ js.Any, String], /* buildBody */ js.Function1[/* data */ js.Any, String], /* columns */ js.Any, /* data */ js.Any) => String | Boolean = null,
-    onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType | chip | reset) => Unit = null,
-    onFilterDialogClose: () => Unit = null,
-    onFilterDialogOpen: () => Unit = null,
-    onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit = null,
-    onRowsDelete: /* rowsDeleted */ DataLookup => Unit = null,
-    onRowsExpand: (/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_]) => Unit = null,
-    onRowsSelect: (/* currentRowsSelected */ js.Array[_], /* rowsSelected */ js.Array[_]) => Unit = null,
-    onSearchChange: /* searchText */ String => Unit = null,
-    onSearchClose: () => Unit = null,
-    onSearchOpen: () => Unit = null,
-    onTableChange: (/* action */ String, /* tableState */ MUIDataTableState) => Unit = null,
-    onTableInit: (/* action */ String, /* tableState */ MUIDataTableState) => Unit = null,
-    page: js.UndefOr[Double] = js.undefined,
-    pagination: js.UndefOr[Boolean] = js.undefined,
-    print: js.UndefOr[Boolean] = js.undefined,
-    renderExpandableRow: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => ReactNode = null,
-    resizableColumns: js.UndefOr[Boolean] = js.undefined,
-    responsive: Responsive = null,
-    rowHover: js.UndefOr[Boolean] = js.undefined,
-    rowsExpanded: js.Array[_] = null,
-    rowsPerPage: js.UndefOr[Double] = js.undefined,
-    rowsPerPageOptions: js.Array[Double] = null,
-    rowsSelected: js.Array[_] = null,
-    search: js.UndefOr[Boolean] = js.undefined,
-    searchOpen: js.UndefOr[Boolean] = js.undefined,
-    searchPlaceholder: String = null,
-    searchText: String = null,
-    selectableRows: SelectableRows = null,
-    selectableRowsHeader: js.UndefOr[Boolean] = js.undefined,
-    selectableRowsOnClick: js.UndefOr[Boolean] = js.undefined,
-    serverSide: js.UndefOr[Boolean] = js.undefined,
-    serverSideFilterList: js.Array[_] = null,
-    setRowProps: (/* row */ js.Array[_], /* rowIndex */ Double) => js.Object = null,
-    setTableProps: () => js.Object = null,
-    sort: js.UndefOr[Boolean] = js.undefined,
-    sortFilterList: js.UndefOr[Boolean] = js.undefined,
-    textLabels: PartialMUIDataTableTextLaBody = null,
-    viewColumns: js.UndefOr[Boolean] = js.undefined
-  ): MUIDataTableOptions = {
+  def apply(): MUIDataTableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (customFilterDialogFooter != null) __obj.updateDynamic("customFilterDialogFooter")(js.Any.fromFunction1(customFilterDialogFooter))
-    if (customFooter != null) __obj.updateDynamic("customFooter")(js.Any.fromFunction5(customFooter))
-    if (customRowRender != null) __obj.updateDynamic("customRowRender")(js.Any.fromFunction3(customRowRender))
-    if (customSearch != null) __obj.updateDynamic("customSearch")(js.Any.fromFunction3(customSearch))
-    if (customSearchRender != null) __obj.updateDynamic("customSearchRender")(js.Any.fromFunction4(customSearchRender))
-    if (customSort != null) __obj.updateDynamic("customSort")(js.Any.fromFunction3(customSort))
-    if (customToolbar != null) __obj.updateDynamic("customToolbar")(js.Any.fromFunction0(customToolbar))
-    if (customToolbarSelect != null) __obj.updateDynamic("customToolbarSelect")(js.Any.fromFunction3(customToolbarSelect))
-    if (!js.isUndefined(disableToolbarSelect)) __obj.updateDynamic("disableToolbarSelect")(disableToolbarSelect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.get.asInstanceOf[js.Any])
-    if (downloadOptions != null) __obj.updateDynamic("downloadOptions")(downloadOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandableRows)) __obj.updateDynamic("expandableRows")(expandableRows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandableRowsOnClick)) __obj.updateDynamic("expandableRowsOnClick")(expandableRowsOnClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.get.asInstanceOf[js.Any])
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.get.asInstanceOf[js.Any])
-    if (fixedHeaderOptions != null) __obj.updateDynamic("fixedHeaderOptions")(fixedHeaderOptions.asInstanceOf[js.Any])
-    if (isRowExpandable != null) __obj.updateDynamic("isRowExpandable")(js.Any.fromFunction2(isRowExpandable))
-    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction2(isRowSelectable))
-    if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2(onCellClick))
-    if (onChangePage != null) __obj.updateDynamic("onChangePage")(js.Any.fromFunction1(onChangePage))
-    if (onChangeRowsPerPage != null) __obj.updateDynamic("onChangeRowsPerPage")(js.Any.fromFunction1(onChangeRowsPerPage))
-    if (onColumnSortChange != null) __obj.updateDynamic("onColumnSortChange")(js.Any.fromFunction2(onColumnSortChange))
-    if (onColumnViewChange != null) __obj.updateDynamic("onColumnViewChange")(js.Any.fromFunction2(onColumnViewChange))
-    if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction4(onDownload))
-    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(js.Any.fromFunction3(onFilterChange))
-    if (onFilterDialogClose != null) __obj.updateDynamic("onFilterDialogClose")(js.Any.fromFunction0(onFilterDialogClose))
-    if (onFilterDialogOpen != null) __obj.updateDynamic("onFilterDialogOpen")(js.Any.fromFunction0(onFilterDialogOpen))
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2(onRowClick))
-    if (onRowsDelete != null) __obj.updateDynamic("onRowsDelete")(js.Any.fromFunction1(onRowsDelete))
-    if (onRowsExpand != null) __obj.updateDynamic("onRowsExpand")(js.Any.fromFunction2(onRowsExpand))
-    if (onRowsSelect != null) __obj.updateDynamic("onRowsSelect")(js.Any.fromFunction2(onRowsSelect))
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction1(onSearchChange))
-    if (onSearchClose != null) __obj.updateDynamic("onSearchClose")(js.Any.fromFunction0(onSearchClose))
-    if (onSearchOpen != null) __obj.updateDynamic("onSearchOpen")(js.Any.fromFunction0(onSearchOpen))
-    if (onTableChange != null) __obj.updateDynamic("onTableChange")(js.Any.fromFunction2(onTableChange))
-    if (onTableInit != null) __obj.updateDynamic("onTableInit")(js.Any.fromFunction2(onTableInit))
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.get.asInstanceOf[js.Any])
-    if (renderExpandableRow != null) __obj.updateDynamic("renderExpandableRow")(js.Any.fromFunction2(renderExpandableRow))
-    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.get.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover.get.asInstanceOf[js.Any])
-    if (rowsExpanded != null) __obj.updateDynamic("rowsExpanded")(rowsExpanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowsPerPage)) __obj.updateDynamic("rowsPerPage")(rowsPerPage.get.asInstanceOf[js.Any])
-    if (rowsPerPageOptions != null) __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions.asInstanceOf[js.Any])
-    if (rowsSelected != null) __obj.updateDynamic("rowsSelected")(rowsSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchOpen)) __obj.updateDynamic("searchOpen")(searchOpen.get.asInstanceOf[js.Any])
-    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder.asInstanceOf[js.Any])
-    if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
-    if (selectableRows != null) __obj.updateDynamic("selectableRows")(selectableRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectableRowsHeader)) __obj.updateDynamic("selectableRowsHeader")(selectableRowsHeader.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectableRowsOnClick)) __obj.updateDynamic("selectableRowsOnClick")(selectableRowsOnClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide.get.asInstanceOf[js.Any])
-    if (serverSideFilterList != null) __obj.updateDynamic("serverSideFilterList")(serverSideFilterList.asInstanceOf[js.Any])
-    if (setRowProps != null) __obj.updateDynamic("setRowProps")(js.Any.fromFunction2(setRowProps))
-    if (setTableProps != null) __obj.updateDynamic("setTableProps")(js.Any.fromFunction0(setTableProps))
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortFilterList)) __obj.updateDynamic("sortFilterList")(sortFilterList.get.asInstanceOf[js.Any])
-    if (textLabels != null) __obj.updateDynamic("textLabels")(textLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewColumns)) __obj.updateDynamic("viewColumns")(viewColumns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableOptions]
   }
+  @scala.inline
+  implicit class MUIDataTableOptionsOps[Self <: MUIDataTableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    @scala.inline
+    def setConfirmFilters(value: Boolean): Self = this.set("confirmFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmFilters: Self = this.set("confirmFilters", js.undefined)
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setCustomFilterDialogFooter(
+      value: (/* filterList */ js.Array[_], /* applyNewFilters */ js.UndefOr[js.Function1[/* repeated */ js.Any, _]]) => ReactNode
+    ): Self = this.set("customFilterDialogFooter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCustomFilterDialogFooter: Self = this.set("customFilterDialogFooter", js.undefined)
+    @scala.inline
+    def setCustomFooter(
+      value: (/* rowCount */ Double, /* page */ Double, /* rowsPerPage */ Double, /* changeRowsPerPage */ js.Function1[/* page */ String | Double, Unit], /* changePage */ js.Function1[/* newPage */ Double, Unit]) => ReactNode
+    ): Self = this.set("customFooter", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteCustomFooter: Self = this.set("customFooter", js.undefined)
+    @scala.inline
+    def setCustomRowRender(value: (/* data */ js.Array[_], /* dataIndex */ Double, /* rowIndex */ Double) => ReactNode): Self = this.set("customRowRender", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCustomRowRender: Self = this.set("customRowRender", js.undefined)
+    @scala.inline
+    def setCustomSearch(
+      value: (/* searchQuery */ String, /* currentRow */ js.Array[_], /* columns */ js.Array[_]) => Boolean
+    ): Self = this.set("customSearch", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCustomSearch: Self = this.set("customSearch", js.undefined)
+    @scala.inline
+    def setCustomSearchRender(
+      value: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => (Component[js.Object, js.Object, _]) | Element
+    ): Self = this.set("customSearchRender", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteCustomSearchRender: Self = this.set("customSearchRender", js.undefined)
+    @scala.inline
+    def setCustomSort(value: (/* data */ js.Array[_], /* colIndex */ Double, /* order */ String) => js.Array[_]): Self = this.set("customSort", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCustomSort: Self = this.set("customSort", js.undefined)
+    @scala.inline
+    def setCustomTableBodyFooterRender(value: /* options */ Columns => _): Self = this.set("customTableBodyFooterRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomTableBodyFooterRender: Self = this.set("customTableBodyFooterRender", js.undefined)
+    @scala.inline
+    def setCustomToolbar(value: () => ReactNode): Self = this.set("customToolbar", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCustomToolbar: Self = this.set("customToolbar", js.undefined)
+    @scala.inline
+    def setCustomToolbarSelect(
+      value: (/* selectedRows */ DataLookup, /* displayData */ js.Array[DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode
+    ): Self = this.set("customToolbarSelect", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCustomToolbarSelect: Self = this.set("customToolbarSelect", js.undefined)
+    @scala.inline
+    def setDisableToolbarSelect(value: Boolean): Self = this.set("disableToolbarSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableToolbarSelect: Self = this.set("disableToolbarSelect", js.undefined)
+    @scala.inline
+    def setDownload(value: Boolean): Self = this.set("download", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownload: Self = this.set("download", js.undefined)
+    @scala.inline
+    def setDownloadOptions(value: Partialfilenamestringsepa): Self = this.set("downloadOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadOptions: Self = this.set("downloadOptions", js.undefined)
+    @scala.inline
+    def setElevation(value: Double): Self = this.set("elevation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElevation: Self = this.set("elevation", js.undefined)
+    @scala.inline
+    def setEnableNestedDataAccess(value: String): Self = this.set("enableNestedDataAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableNestedDataAccess: Self = this.set("enableNestedDataAccess", js.undefined)
+    @scala.inline
+    def setExpandableRows(value: Boolean): Self = this.set("expandableRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandableRows: Self = this.set("expandableRows", js.undefined)
+    @scala.inline
+    def setExpandableRowsHeader(value: Boolean): Self = this.set("expandableRowsHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandableRowsHeader: Self = this.set("expandableRowsHeader", js.undefined)
+    @scala.inline
+    def setExpandableRowsOnClick(value: Boolean): Self = this.set("expandableRowsOnClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandableRowsOnClick: Self = this.set("expandableRowsOnClick", js.undefined)
+    @scala.inline
+    def setFilter(value: Boolean): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFilterType(value: FilterType): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    @scala.inline
+    def setFixedHeader(value: Boolean): Self = this.set("fixedHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedHeader: Self = this.set("fixedHeader", js.undefined)
+    @scala.inline
+    def setFixedHeaderOptions(value: XAxis): Self = this.set("fixedHeaderOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedHeaderOptions: Self = this.set("fixedHeaderOptions", js.undefined)
+    @scala.inline
+    def setFixedSelectColumn(value: Boolean): Self = this.set("fixedSelectColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedSelectColumn: Self = this.set("fixedSelectColumn", js.undefined)
+    @scala.inline
+    def setIsRowExpandable(value: (/* dataIndex */ Double, /* expandedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean): Self = this.set("isRowExpandable", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIsRowExpandable: Self = this.set("isRowExpandable", js.undefined)
+    @scala.inline
+    def setIsRowSelectable(value: (/* dataIndex */ Double, /* selectedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean): Self = this.set("isRowSelectable", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIsRowSelectable: Self = this.set("isRowSelectable", js.undefined)
+    @scala.inline
+    def setOnCellClick(value: (/* colData */ js.Any, /* cellMeta */ ColIndex) => Unit): Self = this.set("onCellClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnCellClick: Self = this.set("onCellClick", js.undefined)
+    @scala.inline
+    def setOnChangePage(value: /* currentPage */ Double => Unit): Self = this.set("onChangePage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChangePage: Self = this.set("onChangePage", js.undefined)
+    @scala.inline
+    def setOnChangeRowsPerPage(value: /* numberOfRows */ Double => Unit): Self = this.set("onChangeRowsPerPage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChangeRowsPerPage: Self = this.set("onChangeRowsPerPage", js.undefined)
+    @scala.inline
+    def setOnColumnSortChange(value: (/* changedColumn */ String, /* direction */ asc | desc) => Unit): Self = this.set("onColumnSortChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnColumnSortChange: Self = this.set("onColumnSortChange", js.undefined)
+    @scala.inline
+    def setOnColumnViewChange(value: (/* changedColumn */ String, /* action */ String) => Unit): Self = this.set("onColumnViewChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnColumnViewChange: Self = this.set("onColumnViewChange", js.undefined)
+    @scala.inline
+    def setOnDownload(
+      value: (/* buildHead */ js.Function1[/* columns */ js.Any, String], /* buildBody */ js.Function1[/* data */ js.Any, String], /* columns */ js.Any, /* data */ js.Any) => String | Boolean
+    ): Self = this.set("onDownload", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteOnDownload: Self = this.set("onDownload", js.undefined)
+    @scala.inline
+    def setOnFilterChange(
+      value: (/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType | chip | reset) => Unit
+    ): Self = this.set("onFilterChange", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnFilterChange: Self = this.set("onFilterChange", js.undefined)
+    @scala.inline
+    def setOnFilterChipClose(value: (/* index */ Double, /* removedFilter */ String, /* filterList */ js.Array[_]) => Unit): Self = this.set("onFilterChipClose", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnFilterChipClose: Self = this.set("onFilterChipClose", js.undefined)
+    @scala.inline
+    def setOnFilterConfirm(value: /* filterList */ js.Array[_] => Unit): Self = this.set("onFilterConfirm", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFilterConfirm: Self = this.set("onFilterConfirm", js.undefined)
+    @scala.inline
+    def setOnFilterDialogClose(value: () => Unit): Self = this.set("onFilterDialogClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnFilterDialogClose: Self = this.set("onFilterDialogClose", js.undefined)
+    @scala.inline
+    def setOnFilterDialogOpen(value: () => Unit): Self = this.set("onFilterDialogOpen", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnFilterDialogOpen: Self = this.set("onFilterDialogOpen", js.undefined)
+    @scala.inline
+    def setOnRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => Unit): Self = this.set("onRowClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRowClick: Self = this.set("onRowClick", js.undefined)
+    @scala.inline
+    def setOnRowExpansionChange(
+      value: (/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_], /* rowsExpanded */ js.UndefOr[js.Array[_]]) => Unit
+    ): Self = this.set("onRowExpansionChange", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnRowExpansionChange: Self = this.set("onRowExpansionChange", js.undefined)
+    @scala.inline
+    def setOnRowSelectionChange(
+      value: (/* currentRowsSelected */ js.Array[_], /* allRowsSelected */ js.Array[_], /* rowsSelected */ js.UndefOr[js.Array[_]]) => Unit
+    ): Self = this.set("onRowSelectionChange", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnRowSelectionChange: Self = this.set("onRowSelectionChange", js.undefined)
+    @scala.inline
+    def setOnRowsDelete(value: /* rowsDeleted */ Lookup => Unit): Self = this.set("onRowsDelete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowsDelete: Self = this.set("onRowsDelete", js.undefined)
+    @scala.inline
+    def setOnSearchChange(value: /* searchText */ String => Unit): Self = this.set("onSearchChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSearchChange: Self = this.set("onSearchChange", js.undefined)
+    @scala.inline
+    def setOnSearchClose(value: () => Unit): Self = this.set("onSearchClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnSearchClose: Self = this.set("onSearchClose", js.undefined)
+    @scala.inline
+    def setOnSearchOpen(value: () => Unit): Self = this.set("onSearchOpen", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnSearchOpen: Self = this.set("onSearchOpen", js.undefined)
+    @scala.inline
+    def setOnTableChange(value: (/* action */ String, /* tableState */ MUIDataTableState) => Unit): Self = this.set("onTableChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnTableChange: Self = this.set("onTableChange", js.undefined)
+    @scala.inline
+    def setOnTableInit(value: (/* action */ String, /* tableState */ MUIDataTableState) => Unit): Self = this.set("onTableInit", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnTableInit: Self = this.set("onTableInit", js.undefined)
+    @scala.inline
+    def setOnViewColumnsChange(value: (/* changedColumn */ String, /* action */ String) => Unit): Self = this.set("onViewColumnsChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnViewColumnsChange: Self = this.set("onViewColumnsChange", js.undefined)
+    @scala.inline
+    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setPagination(value: Boolean): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagination: Self = this.set("pagination", js.undefined)
+    @scala.inline
+    def setPrint(value: Boolean): Self = this.set("print", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrint: Self = this.set("print", js.undefined)
+    @scala.inline
+    def setRenderExpandableRow(value: (/* rowData */ js.Array[String], /* rowMeta */ RowIndex) => ReactNode): Self = this.set("renderExpandableRow", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRenderExpandableRow: Self = this.set("renderExpandableRow", js.undefined)
+    @scala.inline
+    def setResizableColumns(value: Boolean): Self = this.set("resizableColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizableColumns: Self = this.set("resizableColumns", js.undefined)
+    @scala.inline
+    def setResponsive(value: Responsive): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    @scala.inline
+    def setRowHover(value: Boolean): Self = this.set("rowHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowHover: Self = this.set("rowHover", js.undefined)
+    @scala.inline
+    def setRowsExpandedVarargs(value: js.Any*): Self = this.set("rowsExpanded", js.Array(value :_*))
+    @scala.inline
+    def setRowsExpanded(value: js.Array[_]): Self = this.set("rowsExpanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowsExpanded: Self = this.set("rowsExpanded", js.undefined)
+    @scala.inline
+    def setRowsPerPage(value: Double): Self = this.set("rowsPerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowsPerPage: Self = this.set("rowsPerPage", js.undefined)
+    @scala.inline
+    def setRowsPerPageOptionsVarargs(value: Double*): Self = this.set("rowsPerPageOptions", js.Array(value :_*))
+    @scala.inline
+    def setRowsPerPageOptions(value: js.Array[Double]): Self = this.set("rowsPerPageOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowsPerPageOptions: Self = this.set("rowsPerPageOptions", js.undefined)
+    @scala.inline
+    def setRowsSelectedVarargs(value: js.Any*): Self = this.set("rowsSelected", js.Array(value :_*))
+    @scala.inline
+    def setRowsSelected(value: js.Array[_]): Self = this.set("rowsSelected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowsSelected: Self = this.set("rowsSelected", js.undefined)
+    @scala.inline
+    def setSearch(value: Boolean): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+    @scala.inline
+    def setSearchOpen(value: Boolean): Self = this.set("searchOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchOpen: Self = this.set("searchOpen", js.undefined)
+    @scala.inline
+    def setSearchPlaceholder(value: String): Self = this.set("searchPlaceholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchPlaceholder: Self = this.set("searchPlaceholder", js.undefined)
+    @scala.inline
+    def setSearchProps(value: HTMLAttributes[HTMLInputElement]): Self = this.set("searchProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchProps: Self = this.set("searchProps", js.undefined)
+    @scala.inline
+    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    @scala.inline
+    def setSelectToolbarPlacement(value: replace | above | none): Self = this.set("selectToolbarPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectToolbarPlacement: Self = this.set("selectToolbarPlacement", js.undefined)
+    @scala.inline
+    def setSelectableRows(value: SelectableRows): Self = this.set("selectableRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectableRows: Self = this.set("selectableRows", js.undefined)
+    @scala.inline
+    def setSelectableRowsHeader(value: Boolean): Self = this.set("selectableRowsHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectableRowsHeader: Self = this.set("selectableRowsHeader", js.undefined)
+    @scala.inline
+    def setSelectableRowsHideCheckboxes(value: Boolean): Self = this.set("selectableRowsHideCheckboxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectableRowsHideCheckboxes: Self = this.set("selectableRowsHideCheckboxes", js.undefined)
+    @scala.inline
+    def setSelectableRowsOnClick(value: Boolean): Self = this.set("selectableRowsOnClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectableRowsOnClick: Self = this.set("selectableRowsOnClick", js.undefined)
+    @scala.inline
+    def setServerSide(value: Boolean): Self = this.set("serverSide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSide: Self = this.set("serverSide", js.undefined)
+    @scala.inline
+    def setSetRowProps(value: (/* row */ js.Array[_], /* rowIndex */ Double) => js.Object): Self = this.set("setRowProps", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetRowProps: Self = this.set("setRowProps", js.undefined)
+    @scala.inline
+    def setSetTableProps(value: () => js.Object): Self = this.set("setTableProps", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteSetTableProps: Self = this.set("setTableProps", js.undefined)
+    @scala.inline
+    def setSort(value: Boolean): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setSortFilterList(value: Boolean): Self = this.set("sortFilterList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortFilterList: Self = this.set("sortFilterList", js.undefined)
+    @scala.inline
+    def setSortOrder(value: MUISortOptions): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    @scala.inline
+    def setTableBodyHeight(value: String): Self = this.set("tableBodyHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableBodyHeight: Self = this.set("tableBodyHeight", js.undefined)
+    @scala.inline
+    def setTableBodyMaxHeight(value: String): Self = this.set("tableBodyMaxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableBodyMaxHeight: Self = this.set("tableBodyMaxHeight", js.undefined)
+    @scala.inline
+    def setTextLabels(value: PartialMUIDataTableTextLaBody): Self = this.set("textLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextLabels: Self = this.set("textLabels", js.undefined)
+    @scala.inline
+    def setViewColumns(value: Boolean): Self = this.set("viewColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewColumns: Self = this.set("viewColumns", js.undefined)
+  }
+  
 }
 

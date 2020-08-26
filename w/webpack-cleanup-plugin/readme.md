@@ -12,7 +12,7 @@ Plugin for webpack to cleanup extraneous files from the output path directory
 | Keywords           | webpack, webpack-plugin |
 | # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 986951 |
+| # downloads        | 997919 |
 | # stars            | 2 |
 
 ## Links

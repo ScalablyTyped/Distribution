@@ -12,7 +12,7 @@ Tiny library for drag-n-drop scrolling style
 | Keywords           | dragscroll, scroll, scrolling, mouse, hold, drag-n-drop, drag-and-drop, click-n-hold, click-and-hold, drag, viewport |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 480639 |
+| # downloads        | 482062 |
 | # stars            | 0 |
 
 ## Links

@@ -6,13 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dotDensityCreateRendererParamsLegendOptions extends Object {
   /**
     * Indicates the unit represented by each dot in the legend. For example, in a population density map, you might set the value of `people` to this param. The output renderer would display `1 dot = 300 people` in the Legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[String] = js.native
 }
 
 object dotDensityCreateRendererParamsLegendOptions {
@@ -20,12 +21,27 @@ object dotDensityCreateRendererParamsLegendOptions {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    unit: String = null
+    propertyIsEnumerable: PropertyKey => Boolean
   ): dotDensityCreateRendererParamsLegendOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[dotDensityCreateRendererParamsLegendOptions]
   }
+  @scala.inline
+  implicit class dotDensityCreateRendererParamsLegendOptionsOps[Self <: dotDensityCreateRendererParamsLegendOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
+  
 }
 

@@ -34,7 +34,11 @@ object optimizerConstructorsMod extends js.Object {
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def adadelta(): AdadeltaOptimizer = js.native
+    def adadelta(learningRate: js.UndefOr[scala.Nothing], rho: js.UndefOr[scala.Nothing], epsilon: Double): AdadeltaOptimizer = js.native
+    def adadelta(learningRate: js.UndefOr[scala.Nothing], rho: Double): AdadeltaOptimizer = js.native
+    def adadelta(learningRate: js.UndefOr[scala.Nothing], rho: Double, epsilon: Double): AdadeltaOptimizer = js.native
     def adadelta(learningRate: Double): AdadeltaOptimizer = js.native
+    def adadelta(learningRate: Double, rho: js.UndefOr[scala.Nothing], epsilon: Double): AdadeltaOptimizer = js.native
     def adadelta(learningRate: Double, rho: Double): AdadeltaOptimizer = js.native
     def adadelta(learningRate: Double, rho: Double, epsilon: Double): AdadeltaOptimizer = js.native
     /**
@@ -70,8 +74,39 @@ object optimizerConstructorsMod extends js.Object {
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def adam(): AdamOptimizer = js.native
+    def adam(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double
+    ): AdamOptimizer = js.native
+    def adam(learningRate: js.UndefOr[scala.Nothing], beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamOptimizer = js.native
+    def adam(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: Double,
+      epsilon: Double
+    ): AdamOptimizer = js.native
+    def adam(learningRate: js.UndefOr[scala.Nothing], beta1: Double): AdamOptimizer = js.native
+    def adam(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: Double,
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double
+    ): AdamOptimizer = js.native
+    def adam(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double): AdamOptimizer = js.native
+    def adam(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double, epsilon: Double): AdamOptimizer = js.native
     def adam(learningRate: Double): AdamOptimizer = js.native
+    def adam(
+      learningRate: Double,
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double
+    ): AdamOptimizer = js.native
+    def adam(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamOptimizer = js.native
+    def adam(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double, epsilon: Double): AdamOptimizer = js.native
     def adam(learningRate: Double, beta1: Double): AdamOptimizer = js.native
+    def adam(learningRate: Double, beta1: Double, beta2: js.UndefOr[scala.Nothing], epsilon: Double): AdamOptimizer = js.native
     def adam(learningRate: Double, beta1: Double, beta2: Double): AdamOptimizer = js.native
     def adam(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamOptimizer = js.native
     /**
@@ -89,9 +124,145 @@ object optimizerConstructorsMod extends js.Object {
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def adamax(): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: js.UndefOr[scala.Nothing],
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double,
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: Double,
+      epsilon: js.UndefOr[scala.Nothing],
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: Double,
+      epsilon: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: Double,
+      epsilon: Double,
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: Double,
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: js.UndefOr[scala.Nothing],
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: Double,
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: Double,
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double,
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: Double,
+      beta2: Double,
+      epsilon: js.UndefOr[scala.Nothing],
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: js.UndefOr[scala.Nothing],
+      beta1: Double,
+      beta2: Double,
+      epsilon: Double,
+      decay: Double
+    ): AdamaxOptimizer = js.native
     def adamax(learningRate: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: Double,
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: js.UndefOr[scala.Nothing],
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: Double,
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: Double,
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double,
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: Double,
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: Double,
+      epsilon: js.UndefOr[scala.Nothing],
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: Double,
+      beta1: js.UndefOr[scala.Nothing],
+      beta2: Double,
+      epsilon: Double,
+      decay: Double
+    ): AdamaxOptimizer = js.native
     def adamax(learningRate: Double, beta1: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: Double,
+      beta1: Double,
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: js.UndefOr[scala.Nothing],
+      decay: Double
+    ): AdamaxOptimizer = js.native
+    def adamax(learningRate: Double, beta1: Double, beta2: js.UndefOr[scala.Nothing], epsilon: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: Double,
+      beta1: Double,
+      beta2: js.UndefOr[scala.Nothing],
+      epsilon: Double,
+      decay: Double
+    ): AdamaxOptimizer = js.native
     def adamax(learningRate: Double, beta1: Double, beta2: Double): AdamaxOptimizer = js.native
+    def adamax(
+      learningRate: Double,
+      beta1: Double,
+      beta2: Double,
+      epsilon: js.UndefOr[scala.Nothing],
+      decay: Double
+    ): AdamaxOptimizer = js.native
     def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
     def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double, decay: Double): AdamaxOptimizer = js.native
     /**
@@ -134,8 +305,66 @@ object optimizerConstructorsMod extends js.Object {
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
     def rmsprop(learningRate: Double): RMSPropOptimizer = js.native
+    def rmsprop(
+      learningRate: Double,
+      decay: js.UndefOr[scala.Nothing],
+      momentum: js.UndefOr[scala.Nothing],
+      epsilon: js.UndefOr[scala.Nothing],
+      centered: Boolean
+    ): RMSPropOptimizer = js.native
+    def rmsprop(
+      learningRate: Double,
+      decay: js.UndefOr[scala.Nothing],
+      momentum: js.UndefOr[scala.Nothing],
+      epsilon: Double
+    ): RMSPropOptimizer = js.native
+    def rmsprop(
+      learningRate: Double,
+      decay: js.UndefOr[scala.Nothing],
+      momentum: js.UndefOr[scala.Nothing],
+      epsilon: Double,
+      centered: Boolean
+    ): RMSPropOptimizer = js.native
+    def rmsprop(learningRate: Double, decay: js.UndefOr[scala.Nothing], momentum: Double): RMSPropOptimizer = js.native
+    def rmsprop(
+      learningRate: Double,
+      decay: js.UndefOr[scala.Nothing],
+      momentum: Double,
+      epsilon: js.UndefOr[scala.Nothing],
+      centered: Boolean
+    ): RMSPropOptimizer = js.native
+    def rmsprop(learningRate: Double, decay: js.UndefOr[scala.Nothing], momentum: Double, epsilon: Double): RMSPropOptimizer = js.native
+    def rmsprop(
+      learningRate: Double,
+      decay: js.UndefOr[scala.Nothing],
+      momentum: Double,
+      epsilon: Double,
+      centered: Boolean
+    ): RMSPropOptimizer = js.native
     def rmsprop(learningRate: Double, decay: Double): RMSPropOptimizer = js.native
+    def rmsprop(
+      learningRate: Double,
+      decay: Double,
+      momentum: js.UndefOr[scala.Nothing],
+      epsilon: js.UndefOr[scala.Nothing],
+      centered: Boolean
+    ): RMSPropOptimizer = js.native
+    def rmsprop(learningRate: Double, decay: Double, momentum: js.UndefOr[scala.Nothing], epsilon: Double): RMSPropOptimizer = js.native
+    def rmsprop(
+      learningRate: Double,
+      decay: Double,
+      momentum: js.UndefOr[scala.Nothing],
+      epsilon: Double,
+      centered: Boolean
+    ): RMSPropOptimizer = js.native
     def rmsprop(learningRate: Double, decay: Double, momentum: Double): RMSPropOptimizer = js.native
+    def rmsprop(
+      learningRate: Double,
+      decay: Double,
+      momentum: Double,
+      epsilon: js.UndefOr[scala.Nothing],
+      centered: Boolean
+    ): RMSPropOptimizer = js.native
     def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double): RMSPropOptimizer = js.native
     def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double, centered: Boolean): RMSPropOptimizer = js.native
     /**

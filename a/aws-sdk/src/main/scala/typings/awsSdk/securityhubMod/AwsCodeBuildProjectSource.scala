@@ -26,18 +26,38 @@ trait AwsCodeBuildProjectSource extends js.Object {
 
 object AwsCodeBuildProjectSource {
   @scala.inline
-  def apply(
-    GitCloneDepth: js.UndefOr[Integer] = js.undefined,
-    InsecureSsl: js.UndefOr[Boolean] = js.undefined,
-    Location: NonEmptyString = null,
-    Type: NonEmptyString = null
-  ): AwsCodeBuildProjectSource = {
+  def apply(): AwsCodeBuildProjectSource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(GitCloneDepth)) __obj.updateDynamic("GitCloneDepth")(GitCloneDepth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InsecureSsl)) __obj.updateDynamic("InsecureSsl")(InsecureSsl.get.asInstanceOf[js.Any])
-    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsCodeBuildProjectSource]
   }
+  @scala.inline
+  implicit class AwsCodeBuildProjectSourceOps[Self <: AwsCodeBuildProjectSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGitCloneDepth(value: Integer): Self = this.set("GitCloneDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGitCloneDepth: Self = this.set("GitCloneDepth", js.undefined)
+    @scala.inline
+    def setInsecureSsl(value: Boolean): Self = this.set("InsecureSsl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsecureSsl: Self = this.set("InsecureSsl", js.undefined)
+    @scala.inline
+    def setLocation(value: NonEmptyString): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("Location", js.undefined)
+    @scala.inline
+    def setType(value: NonEmptyString): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

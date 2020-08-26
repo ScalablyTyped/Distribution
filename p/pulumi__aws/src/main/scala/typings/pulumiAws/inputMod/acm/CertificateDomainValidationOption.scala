@@ -27,18 +27,38 @@ trait CertificateDomainValidationOption extends js.Object {
 
 object CertificateDomainValidationOption {
   @scala.inline
-  def apply(
-    domainName: Input[String] = null,
-    resourceRecordName: Input[String] = null,
-    resourceRecordType: Input[String] = null,
-    resourceRecordValue: Input[String] = null
-  ): CertificateDomainValidationOption = {
+  def apply(): CertificateDomainValidationOption = {
     val __obj = js.Dynamic.literal()
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (resourceRecordName != null) __obj.updateDynamic("resourceRecordName")(resourceRecordName.asInstanceOf[js.Any])
-    if (resourceRecordType != null) __obj.updateDynamic("resourceRecordType")(resourceRecordType.asInstanceOf[js.Any])
-    if (resourceRecordValue != null) __obj.updateDynamic("resourceRecordValue")(resourceRecordValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateDomainValidationOption]
   }
+  @scala.inline
+  implicit class CertificateDomainValidationOptionOps[Self <: CertificateDomainValidationOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: Input[String]): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setResourceRecordName(value: Input[String]): Self = this.set("resourceRecordName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRecordName: Self = this.set("resourceRecordName", js.undefined)
+    @scala.inline
+    def setResourceRecordType(value: Input[String]): Self = this.set("resourceRecordType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRecordType: Self = this.set("resourceRecordType", js.undefined)
+    @scala.inline
+    def setResourceRecordValue(value: Input[String]): Self = this.set("resourceRecordValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRecordValue: Self = this.set("resourceRecordValue", js.undefined)
+  }
+  
 }
 

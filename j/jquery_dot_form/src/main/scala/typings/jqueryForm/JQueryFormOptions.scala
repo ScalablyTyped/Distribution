@@ -1,53 +1,28 @@
 package typings.jqueryForm
 
-import typings.jquery.JQuery.Ajax.CompleteCallback
-import typings.jquery.JQuery.Ajax.ErrorCallback
-import typings.jquery.JQuery.Ajax.StatusCodeCallbacks
-import typings.jquery.JQuery.Ajax.SuccessCallback
-import typings.jquery.JQuery.Ajax.XHRFields
 import typings.jquery.JQuery.AjaxSettings
-import typings.jquery.JQuery.PlainObject
-import typings.jquery.JQuery.TypeOrArray
-import typings.jquery.JQuery.jqXHR
-import typings.jquery.jqueryBooleans.`false`
-import typings.jquery.jqueryBooleans.`true`
-import typings.jquery.jqueryStrings.`applicationSlashx-www-form-urlencoded`
-import typings.jquery.jqueryStrings.`multipartSlashform-data`
-import typings.jquery.jqueryStrings.html
-import typings.jquery.jqueryStrings.json
-import typings.jquery.jqueryStrings.jsonp
-import typings.jquery.jqueryStrings.script
-import typings.jquery.jqueryStrings.text
-import typings.jquery.jqueryStrings.textSlashplain
-import typings.jquery.jqueryStrings.xml
 import typings.std.EventTarget
 import typings.std.ProgressEvent
-import typings.std.RegExp
-import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JQueryFormOptions
   extends AjaxSettings[js.Any] {
-  var beforeSerialize: js.UndefOr[js.Function2[/* $form */ JQuery, /* options */ JQueryFormOptions, Boolean]] = js.undefined
+  var beforeSerialize: js.UndefOr[js.Function2[/* $form */ JQuery, /* options */ this.type, Boolean]] = js.native
   var beforeSubmit: js.UndefOr[
-    js.Function3[
-      /* formData */ js.Array[_], 
-      /* $form */ JQuery, 
-      /* options */ JQueryFormOptions, 
-      Boolean
-    ]
-  ] = js.undefined
-  var clearForm: js.UndefOr[Boolean] = js.undefined
-  var forceSync: js.UndefOr[Boolean] = js.undefined
-  var iframe: js.UndefOr[Boolean] = js.undefined
-  var iframeSrc: js.UndefOr[String] = js.undefined
-  var iframeTarget: js.UndefOr[js.Any] = js.undefined
-  var replaceTarget: js.UndefOr[Boolean] = js.undefined
-  var resetForm: js.UndefOr[Boolean] = js.undefined
-  var semantic: js.UndefOr[Boolean] = js.undefined
-  var target: js.UndefOr[js.Any] = js.undefined
+    js.Function3[/* formData */ js.Array[_], /* $form */ JQuery, /* options */ this.type, Boolean]
+  ] = js.native
+  var clearForm: js.UndefOr[Boolean] = js.native
+  var forceSync: js.UndefOr[Boolean] = js.native
+  var iframe: js.UndefOr[Boolean] = js.native
+  var iframeSrc: js.UndefOr[String] = js.native
+  var iframeTarget: js.UndefOr[js.Any] = js.native
+  var replaceTarget: js.UndefOr[Boolean] = js.native
+  var resetForm: js.UndefOr[Boolean] = js.native
+  var semantic: js.UndefOr[Boolean] = js.native
+  var target: js.UndefOr[js.Any] = js.native
   var uploadProgress: js.UndefOr[
     js.Function4[
       /* event */ ProgressEvent[EventTarget], 
@@ -56,109 +31,77 @@ trait JQueryFormOptions
       /* percentComplete */ Double, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object JQueryFormOptions {
   @scala.inline
-  def apply(
-    accepts: PlainObject[String] = null,
-    async: js.UndefOr[Boolean] = js.undefined,
-    beforeSend: js.ThisFunction2[js.Any, /* jqXHR */ jqXHR[_], JQueryFormOptions, `false` | Unit] = null,
-    beforeSerialize: (/* $form */ JQuery, /* options */ JQueryFormOptions) => Boolean = null,
-    beforeSubmit: (/* formData */ js.Array[_], /* $form */ JQuery, /* options */ JQueryFormOptions) => Boolean = null,
-    cache: js.UndefOr[Boolean] = js.undefined,
-    clearForm: js.UndefOr[Boolean] = js.undefined,
-    complete: TypeOrArray[CompleteCallback[js.Any]] = null,
-    contentType: String | `false` = null,
-    contents: PlainObject[RegExp] = null,
-    context: js.Any = null,
-    converters: PlainObject[(js.Function1[/* value */ _, _]) | `true`] = null,
-    crossDomain: js.UndefOr[Boolean] = js.undefined,
-    data: PlainObject[_] | String = null,
-    dataFilter: (/* data */ String, /* type */ String) => _ = null,
-    dataType: xml | html | script | json | jsonp | text | String = null,
-    enctype: `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain = null,
-    error: TypeOrArray[ErrorCallback[js.Any]] = null,
-    forceSync: js.UndefOr[Boolean] = js.undefined,
-    global: js.UndefOr[Boolean] = js.undefined,
-    headers: PlainObject[js.UndefOr[String | Null]] = null,
-    ifModified: js.UndefOr[Boolean] = js.undefined,
-    iframe: js.UndefOr[Boolean] = js.undefined,
-    iframeSrc: String = null,
-    iframeTarget: js.Any = null,
-    isLocal: js.UndefOr[Boolean] = js.undefined,
-    jsonp: String | `false` = null,
-    jsonpCallback: String | (js.ThisFunction0[js.Any, String]) = null,
-    method: String = null,
-    mimeType: String = null,
-    password: String = null,
-    processData: js.UndefOr[Boolean] = js.undefined,
-    replaceTarget: js.UndefOr[Boolean] = js.undefined,
-    resetForm: js.UndefOr[Boolean] = js.undefined,
-    scriptCharset: String = null,
-    semantic: js.UndefOr[Boolean] = js.undefined,
-    statusCode: StatusCodeCallbacks[js.Any] = null,
-    success: TypeOrArray[SuccessCallback[js.Any]] = null,
-    target: js.Any = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    traditional: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    uploadProgress: (/* event */ ProgressEvent[EventTarget], /* position */ Double, /* total */ Double, /* percentComplete */ Double) => Unit = null,
-    url: String = null,
-    username: String = null,
-    xhr: () => XMLHttpRequest = null,
-    xhrFields: XHRFields = null
-  ): JQueryFormOptions = {
+  def apply(): JQueryFormOptions = {
     val __obj = js.Dynamic.literal()
-    if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend.asInstanceOf[js.Any])
-    if (beforeSerialize != null) __obj.updateDynamic("beforeSerialize")(js.Any.fromFunction2(beforeSerialize))
-    if (beforeSubmit != null) __obj.updateDynamic("beforeSubmit")(js.Any.fromFunction3(beforeSubmit))
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearForm)) __obj.updateDynamic("clearForm")(clearForm.get.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (converters != null) __obj.updateDynamic("converters")(converters.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataFilter != null) __obj.updateDynamic("dataFilter")(js.Any.fromFunction2(dataFilter))
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSync)) __obj.updateDynamic("forceSync")(forceSync.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifModified)) __obj.updateDynamic("ifModified")(ifModified.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe.get.asInstanceOf[js.Any])
-    if (iframeSrc != null) __obj.updateDynamic("iframeSrc")(iframeSrc.asInstanceOf[js.Any])
-    if (iframeTarget != null) __obj.updateDynamic("iframeTarget")(iframeTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLocal)) __obj.updateDynamic("isLocal")(isLocal.get.asInstanceOf[js.Any])
-    if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
-    if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceTarget)) __obj.updateDynamic("replaceTarget")(replaceTarget.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetForm)) __obj.updateDynamic("resetForm")(resetForm.get.asInstanceOf[js.Any])
-    if (scriptCharset != null) __obj.updateDynamic("scriptCharset")(scriptCharset.asInstanceOf[js.Any])
-    if (!js.isUndefined(semantic)) __obj.updateDynamic("semantic")(semantic.get.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uploadProgress != null) __obj.updateDynamic("uploadProgress")(js.Any.fromFunction4(uploadProgress))
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (xhr != null) __obj.updateDynamic("xhr")(js.Any.fromFunction0(xhr))
-    if (xhrFields != null) __obj.updateDynamic("xhrFields")(xhrFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryFormOptions]
   }
+  @scala.inline
+  implicit class JQueryFormOptionsOps[Self <: JQueryFormOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeforeSerialize(value: (/* $form */ JQuery, JQueryFormOptions) => Boolean): Self = this.set("beforeSerialize", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBeforeSerialize: Self = this.set("beforeSerialize", js.undefined)
+    @scala.inline
+    def setBeforeSubmit(value: (/* formData */ js.Array[_], /* $form */ JQuery, JQueryFormOptions) => Boolean): Self = this.set("beforeSubmit", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteBeforeSubmit: Self = this.set("beforeSubmit", js.undefined)
+    @scala.inline
+    def setClearForm(value: Boolean): Self = this.set("clearForm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearForm: Self = this.set("clearForm", js.undefined)
+    @scala.inline
+    def setForceSync(value: Boolean): Self = this.set("forceSync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceSync: Self = this.set("forceSync", js.undefined)
+    @scala.inline
+    def setIframe(value: Boolean): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIframe: Self = this.set("iframe", js.undefined)
+    @scala.inline
+    def setIframeSrc(value: String): Self = this.set("iframeSrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIframeSrc: Self = this.set("iframeSrc", js.undefined)
+    @scala.inline
+    def setIframeTarget(value: js.Any): Self = this.set("iframeTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIframeTarget: Self = this.set("iframeTarget", js.undefined)
+    @scala.inline
+    def setReplaceTarget(value: Boolean): Self = this.set("replaceTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceTarget: Self = this.set("replaceTarget", js.undefined)
+    @scala.inline
+    def setResetForm(value: Boolean): Self = this.set("resetForm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetForm: Self = this.set("resetForm", js.undefined)
+    @scala.inline
+    def setSemantic(value: Boolean): Self = this.set("semantic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSemantic: Self = this.set("semantic", js.undefined)
+    @scala.inline
+    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setUploadProgress(
+      value: (/* event */ ProgressEvent[EventTarget], /* position */ Double, /* total */ Double, /* percentComplete */ Double) => Unit
+    ): Self = this.set("uploadProgress", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteUploadProgress: Self = this.set("uploadProgress", js.undefined)
+  }
+  
 }
 

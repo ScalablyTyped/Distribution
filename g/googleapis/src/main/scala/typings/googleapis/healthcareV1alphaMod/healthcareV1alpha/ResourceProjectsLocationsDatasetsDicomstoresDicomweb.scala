@@ -35,6 +35,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     */
   def dicomWebDelete(): GaxiosPromise[SchemaEmpty] = js.native
   def dicomWebDelete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def dicomWebDelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def dicomWebDelete(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebdelete): GaxiosPromise[SchemaEmpty] = js.native
   def dicomWebDelete(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebdelete,
@@ -76,6 +77,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     */
   def dicomWebGet(): GaxiosPromise[SchemaHttpBody] = js.native
   def dicomWebGet(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def dicomWebGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def dicomWebGet(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebget): GaxiosPromise[SchemaHttpBody] = js.native
   def dicomWebGet(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebget,
@@ -118,6 +120,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomweb protected () extends 
     */
   def dicomWebPost(): GaxiosPromise[SchemaHttpBody] = js.native
   def dicomWebPost(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def dicomWebPost(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def dicomWebPost(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebpost): GaxiosPromise[SchemaHttpBody] = js.native
   def dicomWebPost(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebDicomwebpost,

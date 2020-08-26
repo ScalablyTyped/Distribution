@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-displace
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 displace an image.
@@ -10,9 +10,9 @@ displace an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-displace |
 | Keywords           | - |
-| # releases         | 66 |
+| # releases         | 65 |
 | # dependents       | 1 |
-| # downloads        | 14017787 |
+| # downloads        | 14392893 |
 | # stars            | 0 |
 
 ## Links

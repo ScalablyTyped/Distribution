@@ -58,9 +58,11 @@ trait Static extends js.Object {
   def priorityFn(a: Cache, b: Cache): Double = js.native
   def reset(): Unit = js.native
   def setCache(instance: js.Function0[String]): Unit = js.native
+  def setCache(instance: js.Function0[String], opts: js.UndefOr[scala.Nothing], attrs: js.Any): Unit = js.native
   def setCache(instance: js.Function0[String], opts: SetCacheOptions): Unit = js.native
   def setCache(instance: js.Function0[String], opts: SetCacheOptions, attrs: js.Any): Unit = js.native
   def setCache(instance: GetCacheKeyOptions): Unit = js.native
+  def setCache(instance: GetCacheKeyOptions, opts: js.UndefOr[scala.Nothing], attrs: js.Any): Unit = js.native
   def setCache(instance: GetCacheKeyOptions, opts: SetCacheOptions): Unit = js.native
   def setCache(instance: GetCacheKeyOptions, opts: SetCacheOptions, attrs: js.Any): Unit = js.native
   def setLocalStorage(args: js.Any*): js.Any = js.native

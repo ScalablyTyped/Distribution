@@ -38,22 +38,48 @@ trait SchemaIdpConfig extends js.Object {
 
 object SchemaIdpConfig {
   @scala.inline
-  def apply(
-    clientId: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    experimentPercent: js.UndefOr[Double] = js.undefined,
-    provider: String = null,
-    secret: String = null,
-    whitelistedAudiences: js.Array[String] = null
-  ): SchemaIdpConfig = {
+  def apply(): SchemaIdpConfig = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimentPercent)) __obj.updateDynamic("experimentPercent")(experimentPercent.get.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (whitelistedAudiences != null) __obj.updateDynamic("whitelistedAudiences")(whitelistedAudiences.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdpConfig]
   }
+  @scala.inline
+  implicit class SchemaIdpConfigOps[Self <: SchemaIdpConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setExperimentPercent(value: Double): Self = this.set("experimentPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentPercent: Self = this.set("experimentPercent", js.undefined)
+    @scala.inline
+    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setSecret(value: String): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecret: Self = this.set("secret", js.undefined)
+    @scala.inline
+    def setWhitelistedAudiencesVarargs(value: String*): Self = this.set("whitelistedAudiences", js.Array(value :_*))
+    @scala.inline
+    def setWhitelistedAudiences(value: js.Array[String]): Self = this.set("whitelistedAudiences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhitelistedAudiences: Self = this.set("whitelistedAudiences", js.undefined)
+  }
+  
 }
 

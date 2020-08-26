@@ -69,6 +69,7 @@ trait SceneLayerView extends LayerView {
     *
     */
   def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: js.UndefOr[scala.Nothing], options: SceneLayerViewQueryExtentOptions): js.Promise[_] = js.native
   def queryExtent(query: Query): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties, options: SceneLayerViewQueryExtentOptions): js.Promise[_] = js.native
@@ -92,6 +93,7 @@ trait SceneLayerView extends LayerView {
     *
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: SceneLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: SceneLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -115,6 +117,7 @@ trait SceneLayerView extends LayerView {
     *
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: js.UndefOr[scala.Nothing], options: SceneLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: SceneLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -138,6 +141,7 @@ trait SceneLayerView extends LayerView {
     *
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: SceneLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: SceneLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native

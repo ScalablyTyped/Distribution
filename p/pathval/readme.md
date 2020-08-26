@@ -12,7 +12,7 @@ Object value retrieval given a string path
 | Keywords           | pathval, value retrieval, chai util |
 | # releases         | 0 |
 | # dependents       | 35 |
-| # downloads        | 91673559 |
+| # downloads        | 94121708 |
 | # stars            | 2 |
 
 ## Links

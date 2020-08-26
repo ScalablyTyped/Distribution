@@ -33,6 +33,21 @@ package object codebuildMod {
   type AuthType = typings.awsSdk.codebuildMod._AuthType | java.lang.String
   type Boolean = scala.Boolean
   type BuildArtifactsList = js.Array[typings.awsSdk.codebuildMod.BuildArtifacts]
+  type BuildBatchIds = js.Array[typings.awsSdk.codebuildMod.NonEmptyString]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SUBMITTED
+    - typings.awsSdk.awsSdkStrings.DOWNLOAD_BATCHSPEC
+    - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+    - typings.awsSdk.awsSdkStrings.COMBINE_ARTIFACTS
+    - typings.awsSdk.awsSdkStrings.SUCCEEDED
+    - typings.awsSdk.awsSdkStrings.FAILED
+    - typings.awsSdk.awsSdkStrings.STOPPED
+    - java.lang.String
+  */
+  type BuildBatchPhaseType = typings.awsSdk.codebuildMod._BuildBatchPhaseType | java.lang.String
+  type BuildBatchPhases = js.Array[typings.awsSdk.codebuildMod.BuildBatchPhase]
+  type BuildBatches = js.Array[typings.awsSdk.codebuildMod.BuildBatch]
+  type BuildGroups = js.Array[typings.awsSdk.codebuildMod.BuildGroup]
   type BuildIds = js.Array[typings.awsSdk.codebuildMod.NonEmptyString]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SUBMITTED
@@ -51,6 +66,7 @@ package object codebuildMod {
   type BuildPhaseType = typings.awsSdk.codebuildMod._BuildPhaseType | java.lang.String
   type BuildPhases = js.Array[typings.awsSdk.codebuildMod.BuildPhase]
   type BuildReportArns = js.Array[typings.awsSdk.codebuildMod.String]
+  type BuildSummaries = js.Array[typings.awsSdk.codebuildMod.BuildSummary]
   type Builds = js.Array[typings.awsSdk.codebuildMod.Build]
   type BuildsNotDeleted = js.Array[typings.awsSdk.codebuildMod.BuildNotDeleted]
   /* Rewritten from type alias, can be one of: 
@@ -68,6 +84,7 @@ package object codebuildMod {
   */
   type CacheType = typings.awsSdk.codebuildMod._CacheType | java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.codebuildMod.ClientApiVersions
+  type CodeCoverages = js.Array[typings.awsSdk.codebuildMod.CodeCoverage]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.BUILD_GENERAL1_SMALL
     - typings.awsSdk.awsSdkStrings.BUILD_GENERAL1_MEDIUM
@@ -76,6 +93,7 @@ package object codebuildMod {
     - java.lang.String
   */
   type ComputeType = typings.awsSdk.codebuildMod._ComputeType | java.lang.String
+  type ComputeTypesAllowed = js.Array[typings.awsSdk.codebuildMod.NonEmptyString]
   type CredentialProviderType = typings.awsSdk.awsSdkStrings.SECRETS_MANAGER | java.lang.String
   type EnvironmentImages = js.Array[typings.awsSdk.codebuildMod.EnvironmentImage]
   type EnvironmentLanguages = js.Array[typings.awsSdk.codebuildMod.EnvironmentLanguage]
@@ -85,6 +103,7 @@ package object codebuildMod {
     - typings.awsSdk.awsSdkStrings.LINUX_CONTAINER
     - typings.awsSdk.awsSdkStrings.LINUX_GPU_CONTAINER
     - typings.awsSdk.awsSdkStrings.ARM_CONTAINER
+    - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_2019_CONTAINER
     - java.lang.String
   */
   type EnvironmentType = typings.awsSdk.codebuildMod._EnvironmentType | java.lang.String
@@ -101,6 +120,7 @@ package object codebuildMod {
   type FilterGroup = js.Array[typings.awsSdk.codebuildMod.WebhookFilter]
   type FilterGroups = js.Array[typings.awsSdk.codebuildMod.FilterGroup]
   type GitCloneDepth = scala.Double
+  type Identifiers = js.Array[typings.awsSdk.codebuildMod.NonEmptyString]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CODEBUILD
     - typings.awsSdk.awsSdkStrings.SERVICE_ROLE
@@ -130,7 +150,9 @@ package object codebuildMod {
   */
   type LogsConfigStatusType = typings.awsSdk.codebuildMod._LogsConfigStatusType | java.lang.String
   type NonEmptyString = java.lang.String
+  type NonNegativeInt = scala.Double
   type PageSize = scala.Double
+  type Percentage = scala.Double
   type PhaseContexts = js.Array[typings.awsSdk.codebuildMod.PhaseContext]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DEBIAN
@@ -158,6 +180,12 @@ package object codebuildMod {
   type ProjectSources = js.Array[typings.awsSdk.codebuildMod.ProjectSource]
   type Projects = js.Array[typings.awsSdk.codebuildMod.Project]
   type ReportArns = js.Array[typings.awsSdk.codebuildMod.NonEmptyString]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.LINE_COVERAGE_PERCENTAGE
+    - typings.awsSdk.awsSdkStrings.FILE_PATH
+    - java.lang.String
+  */
+  type ReportCodeCoverageSortByType = typings.awsSdk.codebuildMod._ReportCodeCoverageSortByType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.S3
     - typings.awsSdk.awsSdkStrings.NO_EXPORT
@@ -190,8 +218,20 @@ package object codebuildMod {
     - java.lang.String
   */
   type ReportStatusType = typings.awsSdk.codebuildMod._ReportStatusType | java.lang.String
-  type ReportType = typings.awsSdk.awsSdkStrings.TEST | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.TEST
+    - typings.awsSdk.awsSdkStrings.CODE_COVERAGE
+    - java.lang.String
+  */
+  type ReportType = typings.awsSdk.codebuildMod._ReportType | java.lang.String
   type Reports = js.Array[typings.awsSdk.codebuildMod.Report]
+  type ResolvedSecondaryArtifacts = js.Array[typings.awsSdk.codebuildMod.ResolvedArtifact]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.RETRY_ALL_BUILDS
+    - typings.awsSdk.awsSdkStrings.RETRY_FAILED_BUILDS
+    - java.lang.String
+  */
+  type RetryBuildBatchType = typings.awsSdk.codebuildMod._RetryBuildBatchType | java.lang.String
   type SecurityGroupIds = js.Array[typings.awsSdk.codebuildMod.NonEmptyString]
   type SensitiveNonEmptyString = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -243,6 +283,12 @@ package object codebuildMod {
   type TimeOut = scala.Double
   type Timestamp = typings.std.Date
   type ValueInput = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.BUILD
+    - typings.awsSdk.awsSdkStrings.BUILD_BATCH
+    - java.lang.String
+  */
+  type WebhookBuildType = typings.awsSdk.codebuildMod._WebhookBuildType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.EVENT
     - typings.awsSdk.awsSdkStrings.BASE_REF

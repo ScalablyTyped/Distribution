@@ -5,25 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OtherCommon
   extends ObjectCommon
      with /* propName */ StringDictionary[js.UndefOr[ObjectField]] {
   // Only states can have common.custom
-  var custom: js.UndefOr[scala.Nothing] = js.undefined
+  var custom: js.UndefOr[scala.Nothing] = js.native
 }
 
 object OtherCommon {
   @scala.inline
-  def apply(
-    name: String,
-    StringDictionary: /* propName */ StringDictionary[js.UndefOr[ObjectField]] = null,
-    icon: String = null,
-    role: String = null
-  ): OtherCommon = {
+  def apply(name: String): OtherCommon = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[OtherCommon]
   }
 }

@@ -5,20 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CollapseText extends js.Object {
-  var collapseText: js.UndefOr[ReactNode] = js.undefined
-  var expandText: js.UndefOr[ReactNode] = js.undefined
-  var selectAllText: js.UndefOr[ReactNode] = js.undefined
+  var collapseText: js.UndefOr[ReactNode] = js.native
+  var expandText: js.UndefOr[ReactNode] = js.native
+  var selectAllText: js.UndefOr[ReactNode] = js.native
 }
 
 object CollapseText {
   @scala.inline
-  def apply(collapseText: ReactNode = null, expandText: ReactNode = null, selectAllText: ReactNode = null): CollapseText = {
+  def apply(): CollapseText = {
     val __obj = js.Dynamic.literal()
-    if (collapseText != null) __obj.updateDynamic("collapseText")(collapseText.asInstanceOf[js.Any])
-    if (expandText != null) __obj.updateDynamic("expandText")(expandText.asInstanceOf[js.Any])
-    if (selectAllText != null) __obj.updateDynamic("selectAllText")(selectAllText.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapseText]
   }
+  @scala.inline
+  implicit class CollapseTextOps[Self <: CollapseText] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollapseText(value: ReactNode): Self = this.set("collapseText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapseText: Self = this.set("collapseText", js.undefined)
+    @scala.inline
+    def setExpandText(value: ReactNode): Self = this.set("expandText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandText: Self = this.set("expandText", js.undefined)
+    @scala.inline
+    def setSelectAllText(value: ReactNode): Self = this.set("selectAllText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectAllText: Self = this.set("selectAllText", js.undefined)
+  }
+  
 }
 

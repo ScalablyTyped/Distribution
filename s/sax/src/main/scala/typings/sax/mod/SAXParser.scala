@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SAXParser () extends js.Object {
   def this(strict: Boolean) = this()
+  def this(strict: js.UndefOr[scala.Nothing], opt: SAXOptions) = this()
   def this(strict: Boolean, opt: SAXOptions) = this()
   var ENTITIES: StringDictionary[String] = js.native
   var closed: Boolean = js.native

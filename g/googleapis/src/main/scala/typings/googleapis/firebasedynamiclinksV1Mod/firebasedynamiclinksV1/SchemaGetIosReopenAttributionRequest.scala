@@ -30,12 +30,34 @@ trait SchemaGetIosReopenAttributionRequest extends js.Object {
 
 object SchemaGetIosReopenAttributionRequest {
   @scala.inline
-  def apply(bundleId: String = null, requestedLink: String = null, sdkVersion: String = null): SchemaGetIosReopenAttributionRequest = {
+  def apply(): SchemaGetIosReopenAttributionRequest = {
     val __obj = js.Dynamic.literal()
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (requestedLink != null) __obj.updateDynamic("requestedLink")(requestedLink.asInstanceOf[js.Any])
-    if (sdkVersion != null) __obj.updateDynamic("sdkVersion")(sdkVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetIosReopenAttributionRequest]
   }
+  @scala.inline
+  implicit class SchemaGetIosReopenAttributionRequestOps[Self <: SchemaGetIosReopenAttributionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleId(value: String): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    @scala.inline
+    def setRequestedLink(value: String): Self = this.set("requestedLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedLink: Self = this.set("requestedLink", js.undefined)
+    @scala.inline
+    def setSdkVersion(value: String): Self = this.set("sdkVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSdkVersion: Self = this.set("sdkVersion", js.undefined)
+  }
+  
 }
 

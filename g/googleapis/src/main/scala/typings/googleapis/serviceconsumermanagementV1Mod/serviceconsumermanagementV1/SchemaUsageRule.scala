@@ -41,16 +41,34 @@ trait SchemaUsageRule extends js.Object {
 
 object SchemaUsageRule {
   @scala.inline
-  def apply(
-    allowUnregisteredCalls: js.UndefOr[Boolean] = js.undefined,
-    selector: String = null,
-    skipServiceControl: js.UndefOr[Boolean] = js.undefined
-  ): SchemaUsageRule = {
+  def apply(): SchemaUsageRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnregisteredCalls)) __obj.updateDynamic("allowUnregisteredCalls")(allowUnregisteredCalls.get.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipServiceControl)) __obj.updateDynamic("skipServiceControl")(skipServiceControl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUsageRule]
   }
+  @scala.inline
+  implicit class SchemaUsageRuleOps[Self <: SchemaUsageRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowUnregisteredCalls(value: Boolean): Self = this.set("allowUnregisteredCalls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowUnregisteredCalls: Self = this.set("allowUnregisteredCalls", js.undefined)
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setSkipServiceControl(value: Boolean): Self = this.set("skipServiceControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipServiceControl: Self = this.set("skipServiceControl", js.undefined)
+  }
+  
 }
 

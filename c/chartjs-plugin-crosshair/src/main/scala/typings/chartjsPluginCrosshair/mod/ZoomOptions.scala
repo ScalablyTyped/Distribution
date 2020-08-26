@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZoomOptions extends js.Object {
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  var zoomButtonClass: js.UndefOr[String] = js.undefined
-  var zoomButtonText: js.UndefOr[String] = js.undefined
-  var zoomboxBackgroundColor: js.UndefOr[String] = js.undefined
-  var zoomboxBorderColor: js.UndefOr[String] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
+  var zoomButtonClass: js.UndefOr[String] = js.native
+  var zoomButtonText: js.UndefOr[String] = js.native
+  var zoomboxBackgroundColor: js.UndefOr[String] = js.native
+  var zoomboxBorderColor: js.UndefOr[String] = js.native
 }
 
 object ZoomOptions {
   @scala.inline
-  def apply(
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    zoomButtonClass: String = null,
-    zoomButtonText: String = null,
-    zoomboxBackgroundColor: String = null,
-    zoomboxBorderColor: String = null
-  ): ZoomOptions = {
+  def apply(): ZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (zoomButtonClass != null) __obj.updateDynamic("zoomButtonClass")(zoomButtonClass.asInstanceOf[js.Any])
-    if (zoomButtonText != null) __obj.updateDynamic("zoomButtonText")(zoomButtonText.asInstanceOf[js.Any])
-    if (zoomboxBackgroundColor != null) __obj.updateDynamic("zoomboxBackgroundColor")(zoomboxBackgroundColor.asInstanceOf[js.Any])
-    if (zoomboxBorderColor != null) __obj.updateDynamic("zoomboxBorderColor")(zoomboxBorderColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOptions]
   }
+  @scala.inline
+  implicit class ZoomOptionsOps[Self <: ZoomOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setZoomButtonClass(value: String): Self = this.set("zoomButtonClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomButtonClass: Self = this.set("zoomButtonClass", js.undefined)
+    @scala.inline
+    def setZoomButtonText(value: String): Self = this.set("zoomButtonText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomButtonText: Self = this.set("zoomButtonText", js.undefined)
+    @scala.inline
+    def setZoomboxBackgroundColor(value: String): Self = this.set("zoomboxBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomboxBackgroundColor: Self = this.set("zoomboxBackgroundColor", js.undefined)
+    @scala.inline
+    def setZoomboxBorderColor(value: String): Self = this.set("zoomboxBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomboxBorderColor: Self = this.set("zoomboxBorderColor", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Embed data in other data and easily extract it when needed
 | Keywords           | subsume, embed, embedded, include, insert, data, string, text, content, compose, parse, extract, encode, decode |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 5506 |
+| # downloads        | 5507 |
 | # stars            | 0 |
 
 ## Links

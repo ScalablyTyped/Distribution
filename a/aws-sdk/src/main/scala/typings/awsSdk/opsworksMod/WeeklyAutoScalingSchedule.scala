@@ -38,24 +38,50 @@ trait WeeklyAutoScalingSchedule extends js.Object {
 
 object WeeklyAutoScalingSchedule {
   @scala.inline
-  def apply(
-    Friday: DailyAutoScalingSchedule = null,
-    Monday: DailyAutoScalingSchedule = null,
-    Saturday: DailyAutoScalingSchedule = null,
-    Sunday: DailyAutoScalingSchedule = null,
-    Thursday: DailyAutoScalingSchedule = null,
-    Tuesday: DailyAutoScalingSchedule = null,
-    Wednesday: DailyAutoScalingSchedule = null
-  ): WeeklyAutoScalingSchedule = {
+  def apply(): WeeklyAutoScalingSchedule = {
     val __obj = js.Dynamic.literal()
-    if (Friday != null) __obj.updateDynamic("Friday")(Friday.asInstanceOf[js.Any])
-    if (Monday != null) __obj.updateDynamic("Monday")(Monday.asInstanceOf[js.Any])
-    if (Saturday != null) __obj.updateDynamic("Saturday")(Saturday.asInstanceOf[js.Any])
-    if (Sunday != null) __obj.updateDynamic("Sunday")(Sunday.asInstanceOf[js.Any])
-    if (Thursday != null) __obj.updateDynamic("Thursday")(Thursday.asInstanceOf[js.Any])
-    if (Tuesday != null) __obj.updateDynamic("Tuesday")(Tuesday.asInstanceOf[js.Any])
-    if (Wednesday != null) __obj.updateDynamic("Wednesday")(Wednesday.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeeklyAutoScalingSchedule]
   }
+  @scala.inline
+  implicit class WeeklyAutoScalingScheduleOps[Self <: WeeklyAutoScalingSchedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFriday(value: DailyAutoScalingSchedule): Self = this.set("Friday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFriday: Self = this.set("Friday", js.undefined)
+    @scala.inline
+    def setMonday(value: DailyAutoScalingSchedule): Self = this.set("Monday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonday: Self = this.set("Monday", js.undefined)
+    @scala.inline
+    def setSaturday(value: DailyAutoScalingSchedule): Self = this.set("Saturday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaturday: Self = this.set("Saturday", js.undefined)
+    @scala.inline
+    def setSunday(value: DailyAutoScalingSchedule): Self = this.set("Sunday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSunday: Self = this.set("Sunday", js.undefined)
+    @scala.inline
+    def setThursday(value: DailyAutoScalingSchedule): Self = this.set("Thursday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThursday: Self = this.set("Thursday", js.undefined)
+    @scala.inline
+    def setTuesday(value: DailyAutoScalingSchedule): Self = this.set("Tuesday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTuesday: Self = this.set("Tuesday", js.undefined)
+    @scala.inline
+    def setWednesday(value: DailyAutoScalingSchedule): Self = this.set("Wednesday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWednesday: Self = this.set("Wednesday", js.undefined)
+  }
+  
 }
 

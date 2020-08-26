@@ -33,6 +33,13 @@ trait IAnimateService extends js.Object {
     * @returns the animation callback promise
     */
   def animate(element: JQuery, from: js.Any, to: js.Any): IAnimationPromise = js.native
+  def animate(
+    element: JQuery,
+    from: js.Any,
+    to: js.Any,
+    className: js.UndefOr[scala.Nothing],
+    options: IAnimationOptions
+  ): IAnimationPromise = js.native
   def animate(element: JQuery, from: js.Any, to: js.Any, className: String): IAnimationPromise = js.native
   def animate(element: JQuery, from: js.Any, to: js.Any, className: String, options: IAnimationOptions): IAnimationPromise = js.native
   /**
@@ -60,6 +67,12 @@ trait IAnimateService extends js.Object {
     * @returns the animation callback promise
     */
   def enter(element: JQuery, parentElement: JQuery): IAnimationPromise = js.native
+  def enter(
+    element: JQuery,
+    parentElement: JQuery,
+    afterElement: js.UndefOr[scala.Nothing],
+    options: IAnimationOptions
+  ): IAnimationPromise = js.native
   def enter(element: JQuery, parentElement: JQuery, afterElement: JQuery): IAnimationPromise = js.native
   def enter(element: JQuery, parentElement: JQuery, afterElement: JQuery, options: IAnimationOptions): IAnimationPromise = js.native
   /**
@@ -91,6 +104,11 @@ trait IAnimateService extends js.Object {
     * @param callback the callback function that was registered as the listener
     */
   def off(event: String): Unit = js.native
+  def off(
+    event: String,
+    container: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* element */ js.UndefOr[JQuery], /* phase */ js.UndefOr[String], _]
+  ): Unit = js.native
   def off(event: String, container: JQuery): Unit = js.native
   def off(
     event: String,

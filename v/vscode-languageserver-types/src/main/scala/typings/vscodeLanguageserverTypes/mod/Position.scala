@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Position extends js.Object {
   /**
     * Character offset on a line in a document (zero-based). Assuming that the line is
@@ -14,13 +15,13 @@ trait Position extends js.Object {
     * line length.
     * If a line number is negative, it defaults to 0.
     */
-  var character: Double
+  var character: Double = js.native
   /**
     * Line position in a document (zero-based).
     * If a line number is greater than the number of lines in a document, it defaults back to the number of lines in the document.
     * If a line number is negative, it defaults to 0.
     */
-  var line: Double
+  var line: Double = js.native
 }
 
 @JSImport("vscode-languageserver-types", "Position")

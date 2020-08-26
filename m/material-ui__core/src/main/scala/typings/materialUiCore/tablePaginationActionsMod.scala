@@ -1,9 +1,6 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typings.materialUiCore.anon.PartialIconButtonProps
-import typings.react.mod.Component
-import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.MouseEvent
@@ -28,15 +25,6 @@ object tablePaginationActionsMod extends js.Object {
     def onChangePage(event: MouseEvent[HTMLButtonElement, NativeMouseEvent], page: Double): Unit = js.native
   }
   
-  @js.native
-  class default protected ()
-    extends Component[TablePaginationActionsProps, ComponentState, js.Any] {
-    def this(props: TablePaginationActionsProps) = this()
-    def this(props: TablePaginationActionsProps, context: js.Any) = this()
-  }
-  
-  @js.native
-  object default extends TopLevel[ComponentType[TablePaginationActionsProps]]
-  
+  val default: ComponentType[TablePaginationActionsProps] = js.native
 }
 

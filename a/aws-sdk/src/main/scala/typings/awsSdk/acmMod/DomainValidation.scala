@@ -34,21 +34,46 @@ trait DomainValidation extends js.Object {
 
 object DomainValidation {
   @scala.inline
-  def apply(
-    DomainName: DomainNameString,
-    ResourceRecord: ResourceRecord = null,
-    ValidationDomain: DomainNameString = null,
-    ValidationEmails: ValidationEmailList = null,
-    ValidationMethod: ValidationMethod = null,
-    ValidationStatus: DomainStatus = null
-  ): DomainValidation = {
+  def apply(DomainName: DomainNameString): DomainValidation = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (ResourceRecord != null) __obj.updateDynamic("ResourceRecord")(ResourceRecord.asInstanceOf[js.Any])
-    if (ValidationDomain != null) __obj.updateDynamic("ValidationDomain")(ValidationDomain.asInstanceOf[js.Any])
-    if (ValidationEmails != null) __obj.updateDynamic("ValidationEmails")(ValidationEmails.asInstanceOf[js.Any])
-    if (ValidationMethod != null) __obj.updateDynamic("ValidationMethod")(ValidationMethod.asInstanceOf[js.Any])
-    if (ValidationStatus != null) __obj.updateDynamic("ValidationStatus")(ValidationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainValidation]
   }
+  @scala.inline
+  implicit class DomainValidationOps[Self <: DomainValidation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainNameString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceRecord(value: ResourceRecord): Self = this.set("ResourceRecord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRecord: Self = this.set("ResourceRecord", js.undefined)
+    @scala.inline
+    def setValidationDomain(value: DomainNameString): Self = this.set("ValidationDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationDomain: Self = this.set("ValidationDomain", js.undefined)
+    @scala.inline
+    def setValidationEmailsVarargs(value: String*): Self = this.set("ValidationEmails", js.Array(value :_*))
+    @scala.inline
+    def setValidationEmails(value: ValidationEmailList): Self = this.set("ValidationEmails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationEmails: Self = this.set("ValidationEmails", js.undefined)
+    @scala.inline
+    def setValidationMethod(value: ValidationMethod): Self = this.set("ValidationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationMethod: Self = this.set("ValidationMethod", js.undefined)
+    @scala.inline
+    def setValidationStatus(value: DomainStatus): Self = this.set("ValidationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationStatus: Self = this.set("ValidationStatus", js.undefined)
+  }
+  
 }
 

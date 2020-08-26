@@ -18,11 +18,30 @@ trait InputDeviceConfigurableSettings extends js.Object {
 
 object InputDeviceConfigurableSettings {
   @scala.inline
-  def apply(ConfiguredInput: InputDeviceConfiguredInput = null, MaxBitrate: js.UndefOr[integer] = js.undefined): InputDeviceConfigurableSettings = {
+  def apply(): InputDeviceConfigurableSettings = {
     val __obj = js.Dynamic.literal()
-    if (ConfiguredInput != null) __obj.updateDynamic("ConfiguredInput")(ConfiguredInput.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDeviceConfigurableSettings]
   }
+  @scala.inline
+  implicit class InputDeviceConfigurableSettingsOps[Self <: InputDeviceConfigurableSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguredInput(value: InputDeviceConfiguredInput): Self = this.set("ConfiguredInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguredInput: Self = this.set("ConfiguredInput", js.undefined)
+    @scala.inline
+    def setMaxBitrate(value: integer): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+  }
+  
 }
 

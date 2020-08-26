@@ -11,8 +11,8 @@ Typings are for version 5.0.3
 | Full name          | 7zip-bin |
 | Keywords           | 7zip, 7z, 7za |
 | # releases         | 13 |
-| # dependents       | 44 |
-| # downloads        | 4210840 |
+| # dependents       | 45 |
+| # downloads        | 4278664 |
 | # stars            | 1 |
 
 ## Links

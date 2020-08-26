@@ -50,30 +50,64 @@ trait DirectConnectGatewayAssociation extends js.Object {
 
 object DirectConnectGatewayAssociation {
   @scala.inline
-  def apply(
-    allowedPrefixesToDirectConnectGateway: RouteFilterPrefixList = null,
-    associatedGateway: AssociatedGateway = null,
-    associationId: DirectConnectGatewayAssociationId = null,
-    associationState: DirectConnectGatewayAssociationState = null,
-    directConnectGatewayId: DirectConnectGatewayId = null,
-    directConnectGatewayOwnerAccount: OwnerAccount = null,
-    stateChangeError: StateChangeError = null,
-    virtualGatewayId: VirtualGatewayId = null,
-    virtualGatewayOwnerAccount: OwnerAccount = null,
-    virtualGatewayRegion: VirtualGatewayRegion = null
-  ): DirectConnectGatewayAssociation = {
+  def apply(): DirectConnectGatewayAssociation = {
     val __obj = js.Dynamic.literal()
-    if (allowedPrefixesToDirectConnectGateway != null) __obj.updateDynamic("allowedPrefixesToDirectConnectGateway")(allowedPrefixesToDirectConnectGateway.asInstanceOf[js.Any])
-    if (associatedGateway != null) __obj.updateDynamic("associatedGateway")(associatedGateway.asInstanceOf[js.Any])
-    if (associationId != null) __obj.updateDynamic("associationId")(associationId.asInstanceOf[js.Any])
-    if (associationState != null) __obj.updateDynamic("associationState")(associationState.asInstanceOf[js.Any])
-    if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (directConnectGatewayOwnerAccount != null) __obj.updateDynamic("directConnectGatewayOwnerAccount")(directConnectGatewayOwnerAccount.asInstanceOf[js.Any])
-    if (stateChangeError != null) __obj.updateDynamic("stateChangeError")(stateChangeError.asInstanceOf[js.Any])
-    if (virtualGatewayId != null) __obj.updateDynamic("virtualGatewayId")(virtualGatewayId.asInstanceOf[js.Any])
-    if (virtualGatewayOwnerAccount != null) __obj.updateDynamic("virtualGatewayOwnerAccount")(virtualGatewayOwnerAccount.asInstanceOf[js.Any])
-    if (virtualGatewayRegion != null) __obj.updateDynamic("virtualGatewayRegion")(virtualGatewayRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectConnectGatewayAssociation]
   }
+  @scala.inline
+  implicit class DirectConnectGatewayAssociationOps[Self <: DirectConnectGatewayAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = this.set("allowedPrefixesToDirectConnectGateway", js.Array(value :_*))
+    @scala.inline
+    def setAllowedPrefixesToDirectConnectGateway(value: RouteFilterPrefixList): Self = this.set("allowedPrefixesToDirectConnectGateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedPrefixesToDirectConnectGateway: Self = this.set("allowedPrefixesToDirectConnectGateway", js.undefined)
+    @scala.inline
+    def setAssociatedGateway(value: AssociatedGateway): Self = this.set("associatedGateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedGateway: Self = this.set("associatedGateway", js.undefined)
+    @scala.inline
+    def setAssociationId(value: DirectConnectGatewayAssociationId): Self = this.set("associationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("associationId", js.undefined)
+    @scala.inline
+    def setAssociationState(value: DirectConnectGatewayAssociationState): Self = this.set("associationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationState: Self = this.set("associationState", js.undefined)
+    @scala.inline
+    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = this.set("directConnectGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectConnectGatewayId: Self = this.set("directConnectGatewayId", js.undefined)
+    @scala.inline
+    def setDirectConnectGatewayOwnerAccount(value: OwnerAccount): Self = this.set("directConnectGatewayOwnerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectConnectGatewayOwnerAccount: Self = this.set("directConnectGatewayOwnerAccount", js.undefined)
+    @scala.inline
+    def setStateChangeError(value: StateChangeError): Self = this.set("stateChangeError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateChangeError: Self = this.set("stateChangeError", js.undefined)
+    @scala.inline
+    def setVirtualGatewayId(value: VirtualGatewayId): Self = this.set("virtualGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualGatewayId: Self = this.set("virtualGatewayId", js.undefined)
+    @scala.inline
+    def setVirtualGatewayOwnerAccount(value: OwnerAccount): Self = this.set("virtualGatewayOwnerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualGatewayOwnerAccount: Self = this.set("virtualGatewayOwnerAccount", js.undefined)
+    @scala.inline
+    def setVirtualGatewayRegion(value: VirtualGatewayRegion): Self = this.set("virtualGatewayRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualGatewayRegion: Self = this.set("virtualGatewayRegion", js.undefined)
+  }
+  
 }
 

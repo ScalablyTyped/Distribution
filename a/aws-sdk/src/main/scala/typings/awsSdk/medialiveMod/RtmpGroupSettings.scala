@@ -36,22 +36,46 @@ trait RtmpGroupSettings extends js.Object {
 
 object RtmpGroupSettings {
   @scala.inline
-  def apply(
-    AuthenticationScheme: AuthenticationScheme = null,
-    CacheFullBehavior: RtmpCacheFullBehavior = null,
-    CacheLength: js.UndefOr[integerMin30] = js.undefined,
-    CaptionData: RtmpCaptionData = null,
-    InputLossAction: InputLossActionForRtmpOut = null,
-    RestartDelay: js.UndefOr[integerMin0] = js.undefined
-  ): RtmpGroupSettings = {
+  def apply(): RtmpGroupSettings = {
     val __obj = js.Dynamic.literal()
-    if (AuthenticationScheme != null) __obj.updateDynamic("AuthenticationScheme")(AuthenticationScheme.asInstanceOf[js.Any])
-    if (CacheFullBehavior != null) __obj.updateDynamic("CacheFullBehavior")(CacheFullBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(CacheLength)) __obj.updateDynamic("CacheLength")(CacheLength.get.asInstanceOf[js.Any])
-    if (CaptionData != null) __obj.updateDynamic("CaptionData")(CaptionData.asInstanceOf[js.Any])
-    if (InputLossAction != null) __obj.updateDynamic("InputLossAction")(InputLossAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(RestartDelay)) __obj.updateDynamic("RestartDelay")(RestartDelay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RtmpGroupSettings]
   }
+  @scala.inline
+  implicit class RtmpGroupSettingsOps[Self <: RtmpGroupSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationScheme(value: AuthenticationScheme): Self = this.set("AuthenticationScheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationScheme: Self = this.set("AuthenticationScheme", js.undefined)
+    @scala.inline
+    def setCacheFullBehavior(value: RtmpCacheFullBehavior): Self = this.set("CacheFullBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheFullBehavior: Self = this.set("CacheFullBehavior", js.undefined)
+    @scala.inline
+    def setCacheLength(value: integerMin30): Self = this.set("CacheLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheLength: Self = this.set("CacheLength", js.undefined)
+    @scala.inline
+    def setCaptionData(value: RtmpCaptionData): Self = this.set("CaptionData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionData: Self = this.set("CaptionData", js.undefined)
+    @scala.inline
+    def setInputLossAction(value: InputLossActionForRtmpOut): Self = this.set("InputLossAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputLossAction: Self = this.set("InputLossAction", js.undefined)
+    @scala.inline
+    def setRestartDelay(value: integerMin0): Self = this.set("RestartDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestartDelay: Self = this.set("RestartDelay", js.undefined)
+  }
+  
 }
 

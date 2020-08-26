@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.anon.ExpectationHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,15 +21,6 @@ class HttpExpectationHeaderValue protected ()
     * @param value A value for the name used in the Expect HTTP header.
     */
   def this(name: String, value: String) = this()
-  /** Gets or sets a token that represents a name for a server behavior used in the Expect HTTP header. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Gets a set of parameters for a server behavior included in the Expect HTTP header. */
-  /* CompleteClass */
-  override var parameters: IVector[typings.winrtUwp.Windows.Web.Http.Headers.HttpNameValueHeaderValue] = js.native
-  /** Gets or sets a value for a server behavior used in the Expect HTTP header. */
-  /* CompleteClass */
-  override var value: String = js.native
 }
 
 /* static members */

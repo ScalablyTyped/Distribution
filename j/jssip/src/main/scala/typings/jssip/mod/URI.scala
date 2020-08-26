@@ -16,16 +16,92 @@ class URI protected () extends js.Object {
   def this(scheme: String, user: Null, host: String, port: Double) = this()
   def this(scheme: Null, user: String, host: String, port: Double) = this()
   def this(scheme: Null, user: Null, host: String, port: Double) = this()
+  def this(
+    scheme: String,
+    user: String,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: StringDictionary[String]
+  ) = this()
   def this(scheme: String, user: String, host: String, port: Double, parameters: StringDictionary[String]) = this()
+  def this(
+    scheme: String,
+    user: Null,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: StringDictionary[String]
+  ) = this()
   def this(scheme: String, user: Null, host: String, port: Double, parameters: StringDictionary[String]) = this()
+  def this(
+    scheme: Null,
+    user: String,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: StringDictionary[String]
+  ) = this()
   def this(scheme: Null, user: String, host: String, port: Double, parameters: StringDictionary[String]) = this()
+  def this(
+    scheme: Null,
+    user: Null,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: StringDictionary[String]
+  ) = this()
   def this(scheme: Null, user: Null, host: String, port: Double, parameters: StringDictionary[String]) = this()
+  def this(
+    scheme: String,
+    user: String,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: js.UndefOr[scala.Nothing],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: String,
+    user: String,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: StringDictionary[String],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: String,
+    user: String,
+    host: String,
+    port: Double,
+    parameters: js.UndefOr[scala.Nothing],
+    headers: StringDictionary[String]
+  ) = this()
   def this(
     scheme: String,
     user: String,
     host: String,
     port: Double,
     parameters: StringDictionary[String],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: String,
+    user: Null,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: js.UndefOr[scala.Nothing],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: String,
+    user: Null,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: StringDictionary[String],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: String,
+    user: Null,
+    host: String,
+    port: Double,
+    parameters: js.UndefOr[scala.Nothing],
     headers: StringDictionary[String]
   ) = this()
   def this(
@@ -40,8 +116,56 @@ class URI protected () extends js.Object {
     scheme: Null,
     user: String,
     host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: js.UndefOr[scala.Nothing],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: Null,
+    user: String,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: StringDictionary[String],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: Null,
+    user: String,
+    host: String,
+    port: Double,
+    parameters: js.UndefOr[scala.Nothing],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: Null,
+    user: String,
+    host: String,
     port: Double,
     parameters: StringDictionary[String],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: Null,
+    user: Null,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: js.UndefOr[scala.Nothing],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: Null,
+    user: Null,
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    parameters: StringDictionary[String],
+    headers: StringDictionary[String]
+  ) = this()
+  def this(
+    scheme: Null,
+    user: Null,
+    host: String,
+    port: Double,
+    parameters: js.UndefOr[scala.Nothing],
     headers: StringDictionary[String]
   ) = this()
   def this(

@@ -6,40 +6,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientError extends Error {
-  var failCode: js.UndefOr[String] = js.undefined
-  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
-  var href: js.UndefOr[String] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
-  var provider: js.UndefOr[Providers] = js.undefined
-  var result: js.UndefOr[js.Any] = js.undefined
-  var statusCode: js.UndefOr[Double] = js.undefined
+  var failCode: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var href: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[Providers] = js.native
+  var result: js.UndefOr[js.Any] = js.native
+  var statusCode: js.UndefOr[Double] = js.native
 }
 
 object ClientError {
   @scala.inline
-  def apply(
-    message: String,
-    name: String,
-    failCode: String = null,
-    headers: StringDictionary[String] = null,
-    href: String = null,
-    method: String = null,
-    provider: Providers = null,
-    result: js.Any = null,
-    stack: String = null,
-    statusCode: js.UndefOr[Double] = js.undefined
-  ): ClientError = {
+  def apply(message: String, name: String): ClientError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (failCode != null) __obj.updateDynamic("failCode")(failCode.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientError]
   }
+  @scala.inline
+  implicit class ClientErrorOps[Self <: ClientError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailCode(value: String): Self = this.set("failCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailCode: Self = this.set("failCode", js.undefined)
+    @scala.inline
+    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHref: Self = this.set("href", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setProvider(value: Providers): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setResult(value: js.Any): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("result", js.undefined)
+    @scala.inline
+    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+  }
+  
 }
 

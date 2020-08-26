@@ -14,10 +14,26 @@ trait CheckIfPhoneNumberIsOptedOutResponse extends js.Object {
 
 object CheckIfPhoneNumberIsOptedOutResponse {
   @scala.inline
-  def apply(isOptedOut: js.UndefOr[Boolean] = js.undefined): CheckIfPhoneNumberIsOptedOutResponse = {
+  def apply(): CheckIfPhoneNumberIsOptedOutResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isOptedOut)) __obj.updateDynamic("isOptedOut")(isOptedOut.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIfPhoneNumberIsOptedOutResponse]
   }
+  @scala.inline
+  implicit class CheckIfPhoneNumberIsOptedOutResponseOps[Self <: CheckIfPhoneNumberIsOptedOutResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsOptedOut(value: Boolean): Self = this.set("isOptedOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOptedOut: Self = this.set("isOptedOut", js.undefined)
+  }
+  
 }
 

@@ -30,18 +30,38 @@ trait SchemaIdentitytoolkitRelyingpartyVerifyCustomTokenRequest extends js.Objec
 
 object SchemaIdentitytoolkitRelyingpartyVerifyCustomTokenRequest {
   @scala.inline
-  def apply(
-    delegatedProjectNumber: String = null,
-    instanceId: String = null,
-    returnSecureToken: js.UndefOr[Boolean] = js.undefined,
-    token: String = null
-  ): SchemaIdentitytoolkitRelyingpartyVerifyCustomTokenRequest = {
+  def apply(): SchemaIdentitytoolkitRelyingpartyVerifyCustomTokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken.get.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyVerifyCustomTokenRequest]
   }
+  @scala.inline
+  implicit class SchemaIdentitytoolkitRelyingpartyVerifyCustomTokenRequestOps[Self <: SchemaIdentitytoolkitRelyingpartyVerifyCustomTokenRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelegatedProjectNumber(value: String): Self = this.set("delegatedProjectNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegatedProjectNumber: Self = this.set("delegatedProjectNumber", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setReturnSecureToken(value: Boolean): Self = this.set("returnSecureToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnSecureToken: Self = this.set("returnSecureToken", js.undefined)
+    @scala.inline
+    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken: Self = this.set("token", js.undefined)
+  }
+  
 }
 

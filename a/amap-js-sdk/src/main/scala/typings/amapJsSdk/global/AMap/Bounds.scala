@@ -17,26 +17,5 @@ class Bounds protected ()
     * @param northEast 东北角经纬度坐标
     */
   def this(southWest: typings.amapJsSdk.AMap.LngLat, northEast: typings.amapJsSdk.AMap.LngLat) = this()
-  /**
-    * 判断指定点坐标是否在矩形范围内
-    * @param point 指定点
-    */
-  /* CompleteClass */
-  override def contains(point: typings.amapJsSdk.AMap.LngLat): Boolean = js.native
-  /**
-    * 获取当前Bounds的中心点经纬度坐标
-    */
-  /* CompleteClass */
-  override def getCenter(): typings.amapJsSdk.AMap.LngLat = js.native
-  /**
-    * 获取东北角坐标
-    */
-  /* CompleteClass */
-  override def getNorthEast(): typings.amapJsSdk.AMap.LngLat = js.native
-  /**
-    * 获取西南角坐标
-    */
-  /* CompleteClass */
-  override def getSouthWest(): typings.amapJsSdk.AMap.LngLat = js.native
 }
 

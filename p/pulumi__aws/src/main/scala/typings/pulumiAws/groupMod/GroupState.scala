@@ -1,14 +1,14 @@
 package typings.pulumiAws.groupMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.ec2Mod.LaunchConfiguration
+import typings.pulumiAws.ec2Mod.PlacementGroup
 import typings.pulumiAws.inputMod.autoscaling.GroupInitialLifecycleHook
 import typings.pulumiAws.inputMod.autoscaling.GroupLaunchTemplate
 import typings.pulumiAws.inputMod.autoscaling.GroupMixedInstancesPolicy
 import typings.pulumiAws.inputMod.autoscaling.GroupTag
-import typings.pulumiAws.launchConfigurationMod.LaunchConfiguration
 import typings.pulumiAws.metricsMod.Metric
 import typings.pulumiAws.metricsMod.MetricsGranularity
-import typings.pulumiAws.placementGroupMod.PlacementGroup
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,11 +36,6 @@ trait GroupState extends js.Object {
   val desiredCapacity: js.UndefOr[Input[Double]] = js.native
   /**
     * A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
-    * * `waitForCapacityTimeout` (Default: "10m") A maximum
-    * [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
-    * wait for ASG instances to be healthy before timing out.  (See also Waiting
-    * for Capacity below.) Setting this to "0" causes
-    * this provider to skip all Capacity Waiting behavior.
     */
   val enabledMetrics: js.UndefOr[Input[js.Array[Input[Metric]]]] = js.native
   /**
@@ -64,7 +59,7 @@ trait GroupState extends js.Object {
     * [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
     * to attach to the autoscaling group **before** instances are launched. The
     * syntax is exactly the same as the separate
-    * [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
+    * `aws.autoscaling.LifecycleHook`
     * resource, without the `autoscalingGroupName` attribute. Please note that this will only work when creating
     * a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
     */
@@ -125,7 +120,7 @@ trait GroupState extends js.Object {
   val placementGroup: js.UndefOr[Input[String | PlacementGroup]] = js.native
   /**
     * Allows setting instance protection. The
-    * autoscaling group will not select instances with this setting for terminination
+    * autoscaling group will not select instances with this setting for termination
     * during scale in events.
     */
   val protectFromScaleIn: js.UndefOr[Input[Boolean]] = js.native
@@ -139,13 +134,13 @@ trait GroupState extends js.Object {
     */
   val suspendedProcesses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * A list of tag blocks. Tags documented below.
+    * Configuration block(s) containing resource tags. Conflicts with `tags`. Documented below.
     */
   val tags: js.UndefOr[Input[js.Array[Input[GroupTag]]]] = js.native
   /**
-    * A list of tag blocks (maps). Tags documented below.
+    * Set of maps containing resource tags. Conflicts with `tag`. Documented below.
     */
-  val tagsCollection: js.UndefOr[Input[js.Array[Input[StringDictionary[_]]]]] = js.native
+  val tagsCollection: js.UndefOr[Input[js.Array[Input[StringDictionary[Input[String]]]]]] = js.native
   /**
     * A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
     */
@@ -158,6 +153,13 @@ trait GroupState extends js.Object {
     * A list of subnet IDs to launch resources in.
     */
   val vpcZoneIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  /**
+    * A maximum
+    * [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
+    * wait for ASG instances to be healthy before timing out.  (See also Waiting
+    * for Capacity below.) Setting this to "0" causes
+    * this provider to skip all Capacity Waiting behavior.
+    */
   val waitForCapacityTimeout: js.UndefOr[Input[String]] = js.native
   /**
     * Setting this will cause this provider to wait
@@ -171,72 +173,166 @@ trait GroupState extends js.Object {
 
 object GroupState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    availabilityZones: Input[js.Array[Input[String]]] = null,
-    defaultCooldown: Input[Double] = null,
-    desiredCapacity: Input[Double] = null,
-    enabledMetrics: Input[js.Array[Input[Metric]]] = null,
-    forceDelete: Input[Boolean] = null,
-    healthCheckGracePeriod: Input[Double] = null,
-    healthCheckType: Input[String] = null,
-    initialLifecycleHooks: Input[js.Array[Input[GroupInitialLifecycleHook]]] = null,
-    launchConfiguration: Input[String | LaunchConfiguration] = null,
-    launchTemplate: Input[GroupLaunchTemplate] = null,
-    loadBalancers: Input[js.Array[Input[String]]] = null,
-    maxInstanceLifetime: Input[Double] = null,
-    maxSize: Input[Double] = null,
-    metricsGranularity: Input[String | MetricsGranularity] = null,
-    minElbCapacity: Input[Double] = null,
-    minSize: Input[Double] = null,
-    mixedInstancesPolicy: Input[GroupMixedInstancesPolicy] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    placementGroup: Input[String | PlacementGroup] = null,
-    protectFromScaleIn: Input[Boolean] = null,
-    serviceLinkedRoleArn: Input[String] = null,
-    suspendedProcesses: Input[js.Array[Input[String]]] = null,
-    tags: Input[js.Array[Input[GroupTag]]] = null,
-    tagsCollection: Input[js.Array[Input[StringDictionary[_]]]] = null,
-    targetGroupArns: Input[js.Array[Input[String]]] = null,
-    terminationPolicies: Input[js.Array[Input[String]]] = null,
-    vpcZoneIdentifiers: Input[js.Array[Input[String]]] = null,
-    waitForCapacityTimeout: Input[String] = null,
-    waitForElbCapacity: Input[Double] = null
-  ): GroupState = {
+  def apply(): GroupState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
-    if (defaultCooldown != null) __obj.updateDynamic("defaultCooldown")(defaultCooldown.asInstanceOf[js.Any])
-    if (desiredCapacity != null) __obj.updateDynamic("desiredCapacity")(desiredCapacity.asInstanceOf[js.Any])
-    if (enabledMetrics != null) __obj.updateDynamic("enabledMetrics")(enabledMetrics.asInstanceOf[js.Any])
-    if (forceDelete != null) __obj.updateDynamic("forceDelete")(forceDelete.asInstanceOf[js.Any])
-    if (healthCheckGracePeriod != null) __obj.updateDynamic("healthCheckGracePeriod")(healthCheckGracePeriod.asInstanceOf[js.Any])
-    if (healthCheckType != null) __obj.updateDynamic("healthCheckType")(healthCheckType.asInstanceOf[js.Any])
-    if (initialLifecycleHooks != null) __obj.updateDynamic("initialLifecycleHooks")(initialLifecycleHooks.asInstanceOf[js.Any])
-    if (launchConfiguration != null) __obj.updateDynamic("launchConfiguration")(launchConfiguration.asInstanceOf[js.Any])
-    if (launchTemplate != null) __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])
-    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
-    if (maxInstanceLifetime != null) __obj.updateDynamic("maxInstanceLifetime")(maxInstanceLifetime.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (metricsGranularity != null) __obj.updateDynamic("metricsGranularity")(metricsGranularity.asInstanceOf[js.Any])
-    if (minElbCapacity != null) __obj.updateDynamic("minElbCapacity")(minElbCapacity.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (mixedInstancesPolicy != null) __obj.updateDynamic("mixedInstancesPolicy")(mixedInstancesPolicy.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (placementGroup != null) __obj.updateDynamic("placementGroup")(placementGroup.asInstanceOf[js.Any])
-    if (protectFromScaleIn != null) __obj.updateDynamic("protectFromScaleIn")(protectFromScaleIn.asInstanceOf[js.Any])
-    if (serviceLinkedRoleArn != null) __obj.updateDynamic("serviceLinkedRoleArn")(serviceLinkedRoleArn.asInstanceOf[js.Any])
-    if (suspendedProcesses != null) __obj.updateDynamic("suspendedProcesses")(suspendedProcesses.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (tagsCollection != null) __obj.updateDynamic("tagsCollection")(tagsCollection.asInstanceOf[js.Any])
-    if (targetGroupArns != null) __obj.updateDynamic("targetGroupArns")(targetGroupArns.asInstanceOf[js.Any])
-    if (terminationPolicies != null) __obj.updateDynamic("terminationPolicies")(terminationPolicies.asInstanceOf[js.Any])
-    if (vpcZoneIdentifiers != null) __obj.updateDynamic("vpcZoneIdentifiers")(vpcZoneIdentifiers.asInstanceOf[js.Any])
-    if (waitForCapacityTimeout != null) __obj.updateDynamic("waitForCapacityTimeout")(waitForCapacityTimeout.asInstanceOf[js.Any])
-    if (waitForElbCapacity != null) __obj.updateDynamic("waitForElbCapacity")(waitForElbCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupState]
   }
+  @scala.inline
+  implicit class GroupStateOps[Self <: GroupState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: Input[String]*): Self = this.set("availabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = this.set("availabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("availabilityZones", js.undefined)
+    @scala.inline
+    def setDefaultCooldown(value: Input[Double]): Self = this.set("defaultCooldown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCooldown: Self = this.set("defaultCooldown", js.undefined)
+    @scala.inline
+    def setDesiredCapacity(value: Input[Double]): Self = this.set("desiredCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredCapacity: Self = this.set("desiredCapacity", js.undefined)
+    @scala.inline
+    def setEnabledMetricsVarargs(value: Input[Metric]*): Self = this.set("enabledMetrics", js.Array(value :_*))
+    @scala.inline
+    def setEnabledMetrics(value: Input[js.Array[Input[Metric]]]): Self = this.set("enabledMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledMetrics: Self = this.set("enabledMetrics", js.undefined)
+    @scala.inline
+    def setForceDelete(value: Input[Boolean]): Self = this.set("forceDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceDelete: Self = this.set("forceDelete", js.undefined)
+    @scala.inline
+    def setHealthCheckGracePeriod(value: Input[Double]): Self = this.set("healthCheckGracePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckGracePeriod: Self = this.set("healthCheckGracePeriod", js.undefined)
+    @scala.inline
+    def setHealthCheckType(value: Input[String]): Self = this.set("healthCheckType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckType: Self = this.set("healthCheckType", js.undefined)
+    @scala.inline
+    def setInitialLifecycleHooksVarargs(value: Input[GroupInitialLifecycleHook]*): Self = this.set("initialLifecycleHooks", js.Array(value :_*))
+    @scala.inline
+    def setInitialLifecycleHooks(value: Input[js.Array[Input[GroupInitialLifecycleHook]]]): Self = this.set("initialLifecycleHooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialLifecycleHooks: Self = this.set("initialLifecycleHooks", js.undefined)
+    @scala.inline
+    def setLaunchConfiguration(value: Input[String | LaunchConfiguration]): Self = this.set("launchConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchConfiguration: Self = this.set("launchConfiguration", js.undefined)
+    @scala.inline
+    def setLaunchTemplate(value: Input[GroupLaunchTemplate]): Self = this.set("launchTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplate: Self = this.set("launchTemplate", js.undefined)
+    @scala.inline
+    def setLoadBalancersVarargs(value: Input[String]*): Self = this.set("loadBalancers", js.Array(value :_*))
+    @scala.inline
+    def setLoadBalancers(value: Input[js.Array[Input[String]]]): Self = this.set("loadBalancers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancers: Self = this.set("loadBalancers", js.undefined)
+    @scala.inline
+    def setMaxInstanceLifetime(value: Input[Double]): Self = this.set("maxInstanceLifetime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxInstanceLifetime: Self = this.set("maxInstanceLifetime", js.undefined)
+    @scala.inline
+    def setMaxSize(value: Input[Double]): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setMetricsGranularity(value: Input[String | MetricsGranularity]): Self = this.set("metricsGranularity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricsGranularity: Self = this.set("metricsGranularity", js.undefined)
+    @scala.inline
+    def setMinElbCapacity(value: Input[Double]): Self = this.set("minElbCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinElbCapacity: Self = this.set("minElbCapacity", js.undefined)
+    @scala.inline
+    def setMinSize(value: Input[Double]): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    @scala.inline
+    def setMixedInstancesPolicy(value: Input[GroupMixedInstancesPolicy]): Self = this.set("mixedInstancesPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMixedInstancesPolicy: Self = this.set("mixedInstancesPolicy", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setPlacementGroup(value: Input[String | PlacementGroup]): Self = this.set("placementGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroup: Self = this.set("placementGroup", js.undefined)
+    @scala.inline
+    def setProtectFromScaleIn(value: Input[Boolean]): Self = this.set("protectFromScaleIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtectFromScaleIn: Self = this.set("protectFromScaleIn", js.undefined)
+    @scala.inline
+    def setServiceLinkedRoleArn(value: Input[String]): Self = this.set("serviceLinkedRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceLinkedRoleArn: Self = this.set("serviceLinkedRoleArn", js.undefined)
+    @scala.inline
+    def setSuspendedProcessesVarargs(value: Input[String]*): Self = this.set("suspendedProcesses", js.Array(value :_*))
+    @scala.inline
+    def setSuspendedProcesses(value: Input[js.Array[Input[String]]]): Self = this.set("suspendedProcesses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspendedProcesses: Self = this.set("suspendedProcesses", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Input[GroupTag]*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Input[js.Array[Input[GroupTag]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTagsCollectionVarargs(value: Input[StringDictionary[Input[String]]]*): Self = this.set("tagsCollection", js.Array(value :_*))
+    @scala.inline
+    def setTagsCollection(value: Input[js.Array[Input[StringDictionary[Input[String]]]]]): Self = this.set("tagsCollection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagsCollection: Self = this.set("tagsCollection", js.undefined)
+    @scala.inline
+    def setTargetGroupArnsVarargs(value: Input[String]*): Self = this.set("targetGroupArns", js.Array(value :_*))
+    @scala.inline
+    def setTargetGroupArns(value: Input[js.Array[Input[String]]]): Self = this.set("targetGroupArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupArns: Self = this.set("targetGroupArns", js.undefined)
+    @scala.inline
+    def setTerminationPoliciesVarargs(value: Input[String]*): Self = this.set("terminationPolicies", js.Array(value :_*))
+    @scala.inline
+    def setTerminationPolicies(value: Input[js.Array[Input[String]]]): Self = this.set("terminationPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationPolicies: Self = this.set("terminationPolicies", js.undefined)
+    @scala.inline
+    def setVpcZoneIdentifiersVarargs(value: Input[String]*): Self = this.set("vpcZoneIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setVpcZoneIdentifiers(value: Input[js.Array[Input[String]]]): Self = this.set("vpcZoneIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcZoneIdentifiers: Self = this.set("vpcZoneIdentifiers", js.undefined)
+    @scala.inline
+    def setWaitForCapacityTimeout(value: Input[String]): Self = this.set("waitForCapacityTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForCapacityTimeout: Self = this.set("waitForCapacityTimeout", js.undefined)
+    @scala.inline
+    def setWaitForElbCapacity(value: Input[Double]): Self = this.set("waitForElbCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForElbCapacity: Self = this.set("waitForElbCapacity", js.undefined)
+  }
+  
 }
 

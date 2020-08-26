@@ -24,7 +24,7 @@ object queryDataMod extends js.Object {
     var getQueryResult: js.Any = js.native
     var handleErrorOrCompleted: js.Any = js.native
     var initializeObservableQuery: js.Any = js.native
-    var lazyOptions: js.UndefOr[js.Any] = js.native
+    var lazyOptions: js.Any = js.native
     var obsFetchMore: js.Any = js.native
     var obsRefetch: js.Any = js.native
     var obsStartPolling: js.Any = js.native

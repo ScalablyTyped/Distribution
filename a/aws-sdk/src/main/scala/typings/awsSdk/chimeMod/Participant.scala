@@ -18,11 +18,30 @@ trait Participant extends js.Object {
 
 object Participant {
   @scala.inline
-  def apply(PhoneNumber: E164PhoneNumber = null, ProxyPhoneNumber: E164PhoneNumber = null): Participant = {
+  def apply(): Participant = {
     val __obj = js.Dynamic.literal()
-    if (PhoneNumber != null) __obj.updateDynamic("PhoneNumber")(PhoneNumber.asInstanceOf[js.Any])
-    if (ProxyPhoneNumber != null) __obj.updateDynamic("ProxyPhoneNumber")(ProxyPhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Participant]
   }
+  @scala.inline
+  implicit class ParticipantOps[Self <: Participant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPhoneNumber(value: E164PhoneNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
+    @scala.inline
+    def setProxyPhoneNumber(value: E164PhoneNumber): Self = this.set("ProxyPhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyPhoneNumber: Self = this.set("ProxyPhoneNumber", js.undefined)
+  }
+  
 }
 

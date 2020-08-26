@@ -4,42 +4,72 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPostgresInterval extends js.Object {
-  var days: js.UndefOr[Double] = js.undefined
-  var hours: js.UndefOr[Double] = js.undefined
-  var milliseconds: js.UndefOr[Double] = js.undefined
-  var minutes: js.UndefOr[Double] = js.undefined
-  var months: js.UndefOr[Double] = js.undefined
-  var seconds: js.UndefOr[Double] = js.undefined
-  var years: js.UndefOr[Double] = js.undefined
-  def toISO(): String
-  def toISOString(): String
-  def toPostgres(): String
+  var days: js.UndefOr[Double] = js.native
+  var hours: js.UndefOr[Double] = js.native
+  var milliseconds: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.native
+  var months: js.UndefOr[Double] = js.native
+  var seconds: js.UndefOr[Double] = js.native
+  var years: js.UndefOr[Double] = js.native
+  def toISO(): String = js.native
+  def toISOString(): String = js.native
+  def toPostgres(): String = js.native
 }
 
 object IPostgresInterval {
   @scala.inline
-  def apply(
-    toISO: () => String,
-    toISOString: () => String,
-    toPostgres: () => String,
-    days: js.UndefOr[Double] = js.undefined,
-    hours: js.UndefOr[Double] = js.undefined,
-    milliseconds: js.UndefOr[Double] = js.undefined,
-    minutes: js.UndefOr[Double] = js.undefined,
-    months: js.UndefOr[Double] = js.undefined,
-    seconds: js.UndefOr[Double] = js.undefined,
-    years: js.UndefOr[Double] = js.undefined
-  ): IPostgresInterval = {
+  def apply(toISO: () => String, toISOString: () => String, toPostgres: () => String): IPostgresInterval = {
     val __obj = js.Dynamic.literal(toISO = js.Any.fromFunction0(toISO), toISOString = js.Any.fromFunction0(toISOString), toPostgres = js.Any.fromFunction0(toPostgres))
-    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hours)) __obj.updateDynamic("hours")(hours.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(milliseconds)) __obj.updateDynamic("milliseconds")(milliseconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minutes)) __obj.updateDynamic("minutes")(minutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(months)) __obj.updateDynamic("months")(months.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(years)) __obj.updateDynamic("years")(years.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPostgresInterval]
   }
+  @scala.inline
+  implicit class IPostgresIntervalOps[Self <: IPostgresInterval] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setToISO(value: () => String): Self = this.set("toISO", js.Any.fromFunction0(value))
+    @scala.inline
+    def setToISOString(value: () => String): Self = this.set("toISOString", js.Any.fromFunction0(value))
+    @scala.inline
+    def setToPostgres(value: () => String): Self = this.set("toPostgres", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDays(value: Double): Self = this.set("days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("days", js.undefined)
+    @scala.inline
+    def setHours(value: Double): Self = this.set("hours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHours: Self = this.set("hours", js.undefined)
+    @scala.inline
+    def setMilliseconds(value: Double): Self = this.set("milliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMilliseconds: Self = this.set("milliseconds", js.undefined)
+    @scala.inline
+    def setMinutes(value: Double): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    @scala.inline
+    def setMonths(value: Double): Self = this.set("months", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonths: Self = this.set("months", js.undefined)
+    @scala.inline
+    def setSeconds(value: Double): Self = this.set("seconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeconds: Self = this.set("seconds", js.undefined)
+    @scala.inline
+    def setYears(value: Double): Self = this.set("years", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYears: Self = this.set("years", js.undefined)
+  }
+  
 }
 

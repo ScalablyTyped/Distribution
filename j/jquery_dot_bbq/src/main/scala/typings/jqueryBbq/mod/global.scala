@@ -14,15 +14,24 @@ object global extends js.Object {
   @js.native
   trait JQuery extends js.Object {
     def fragment(): JQuery = js.native
+    def fragment(attr: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], merge_mode: Double): JQuery = js.native
+    def fragment(attr: js.UndefOr[scala.Nothing], params: js.Any): JQuery = js.native
+    def fragment(attr: js.UndefOr[scala.Nothing], params: js.Any, merge_mode: Double): JQuery = js.native
     def fragment(attr: js.Any): JQuery = js.native
+    def fragment(attr: js.Any, params: js.UndefOr[scala.Nothing], merge_mode: Double): JQuery = js.native
     def fragment(attr: js.Any, params: js.Any): JQuery = js.native
     def fragment(attr: js.Any, params: js.Any, merge_mode: Double): JQuery = js.native
     def hashchange(): JQuery = js.native
+    def hashchange(eventData: js.UndefOr[scala.Nothing], handler: js.Function1[/* eventObject */ EventObject, _]): JQuery = js.native
     def hashchange(eventData: js.Any): JQuery = js.native
     def hashchange(eventData: js.Any, handler: js.Function1[/* eventObject */ EventObject, _]): JQuery = js.native
     def hashchange(handler: js.Function1[/* eventObject */ EventObject, _]): JQuery = js.native
     def querystring(): JQuery = js.native
+    def querystring(attr: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], merge_mode: Double): JQuery = js.native
+    def querystring(attr: js.UndefOr[scala.Nothing], params: js.Any): JQuery = js.native
+    def querystring(attr: js.UndefOr[scala.Nothing], params: js.Any, merge_mode: Double): JQuery = js.native
     def querystring(attr: js.Any): JQuery = js.native
+    def querystring(attr: js.Any, params: js.UndefOr[scala.Nothing], merge_mode: Double): JQuery = js.native
     def querystring(attr: js.Any, params: js.Any): JQuery = js.native
     def querystring(attr: js.Any, params: js.Any, merge_mode: Double): JQuery = js.native
   }
@@ -45,7 +54,13 @@ object global extends js.Object {
       * @name merge_mode An object representing the deserialized params string.
       */
     def querystring(): String = js.native
+    def querystring(url: js.UndefOr[scala.Nothing], coerce: js.UndefOr[scala.Nothing], merge_mode: Double): String = js.native
+    def querystring(url: js.UndefOr[scala.Nothing], coerce: js.Any): String = js.native
+    def querystring(url: js.UndefOr[scala.Nothing], coerce: js.Any, merge_mode: Double): String = js.native
+    def querystring(url: js.UndefOr[scala.Nothing], coerce: Boolean): String = js.native
+    def querystring(url: js.UndefOr[scala.Nothing], coerce: Boolean, merge_mode: Double): String = js.native
     def querystring(url: String): String = js.native
+    def querystring(url: String, coerce: js.UndefOr[scala.Nothing], merge_mode: Double): String = js.native
     def querystring(url: String, coerce: js.Any): String = js.native
     def querystring(url: String, coerce: js.Any, merge_mode: Double): String = js.native
     def querystring(url: String, coerce: Boolean): String = js.native
@@ -104,6 +119,7 @@ object global extends js.Object {
       /** @deprecated */
       var keyCode: Double = js.native
       def getState(): js.Any = js.native
+      def getState(key: js.UndefOr[scala.Nothing], coerce: Boolean): js.Any = js.native
       def getState(key: String): js.Any = js.native
       def getState(key: String, coerce: Boolean): js.Any = js.native
     }
@@ -121,6 +137,7 @@ object global extends js.Object {
         */
       def getState(): js.Any = js.native
       def getState(coerce: Boolean): js.Any = js.native
+      def getState(key: js.UndefOr[scala.Nothing], coerce: Boolean): js.Any = js.native
       def getState(key: String): js.Any = js.native
       def getState(key: String, coerce: Boolean): js.Any = js.native
       /**
@@ -132,6 +149,7 @@ object global extends js.Object {
         * @name merge_mode Merge behavior defaults to 0 if merge_mode is not specified (unless a hash string beginning with # is specified, in which case merge behavior defaults to 2)
         */
       def pushState(): Unit = js.native
+      def pushState(params: js.UndefOr[scala.Nothing], merge_mode: Double): Unit = js.native
       def pushState(params: String): Unit = js.native
       def pushState(params: String, merge_mode: Double): Unit = js.native
       def pushState(params: js.Any): Unit = js.native
@@ -168,6 +186,7 @@ object global extends js.Object {
         * @name coerce If true, coerces any numbers or true, false, null, and undefined to their actual value. Defaults to false if omitted.
         */
       def fragment(): js.Any = js.native
+      def fragment(url: js.UndefOr[scala.Nothing], coerce: Boolean): js.Any = js.native
       def fragment(url: String): js.Any = js.native
       def fragment(url: String, coerce: Boolean): js.Any = js.native
       /**
@@ -179,6 +198,7 @@ object global extends js.Object {
         * @name coerce If true, coerces any numbers or true, false, null, and undefined to their actual value. Defaults to false if omitted.
         */
       def querystring(): js.Any = js.native
+      def querystring(url: js.UndefOr[scala.Nothing], coerce: Boolean): js.Any = js.native
       def querystring(url: String): js.Any = js.native
       def querystring(url: String, coerce: Boolean): js.Any = js.native
     }

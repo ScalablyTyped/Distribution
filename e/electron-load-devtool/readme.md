@@ -12,7 +12,7 @@ Easily load dev-tool for electron
 | Keywords           | electron, chrome, extention |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 18615 |
+| # downloads        | 18822 |
 | # stars            | 0 |
 
 ## Links

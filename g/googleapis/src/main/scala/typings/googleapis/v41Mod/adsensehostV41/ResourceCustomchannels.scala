@@ -28,6 +28,7 @@ class ResourceCustomchannels protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaCustomChannel] = js.native
   def delete(callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannel] = js.native
   def delete(params: ParamsResourceCustomchannelsDelete): GaxiosPromise[SchemaCustomChannel] = js.native
   def delete(params: ParamsResourceCustomchannelsDelete, callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceCustomchannels protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCustomChannel] = js.native
   def get(callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannel] = js.native
   def get(params: ParamsResourceCustomchannelsGet): GaxiosPromise[SchemaCustomChannel] = js.native
   def get(params: ParamsResourceCustomchannelsGet, callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
   def get(
@@ -84,6 +86,7 @@ class ResourceCustomchannels protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaCustomChannel] = js.native
   def insert(callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannel] = js.native
   def insert(params: ParamsResourceCustomchannelsInsert): GaxiosPromise[SchemaCustomChannel] = js.native
   def insert(params: ParamsResourceCustomchannelsInsert, callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
   def insert(
@@ -113,6 +116,7 @@ class ResourceCustomchannels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(callback: BodyResponseCallback[SchemaCustomChannels]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(params: ParamsResourceCustomchannelsList): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(params: ParamsResourceCustomchannelsList, callback: BodyResponseCallback[SchemaCustomChannels]): Unit = js.native
   def list(
@@ -143,6 +147,7 @@ class ResourceCustomchannels protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaCustomChannel] = js.native
   def patch(callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannel] = js.native
   def patch(params: ParamsResourceCustomchannelsPatch): GaxiosPromise[SchemaCustomChannel] = js.native
   def patch(params: ParamsResourceCustomchannelsPatch, callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
   def patch(
@@ -171,6 +176,7 @@ class ResourceCustomchannels protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaCustomChannel] = js.native
   def update(callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannel] = js.native
   def update(params: ParamsResourceCustomchannelsUpdate): GaxiosPromise[SchemaCustomChannel] = js.native
   def update(params: ParamsResourceCustomchannelsUpdate, callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
   def update(

@@ -19,20 +19,33 @@ import scala.scalajs.js.annotation._
 object stateRegistryMod extends js.Object {
   @js.native
   class StateRegistry protected () extends js.Object {
-    /** @internalapi */
+    /** @internal */
     def this(router: UIRouter) = this()
-    /** @hidden */
+    /** @internal */
     var _deregisterTree: js.Any = js.native
-    /** @internalapi */
+    /** @internal */
     var _registerRoot: js.Any = js.native
     var _root: js.Any = js.native
     var builder: js.Any = js.native
+    /** @internal */
     var listeners: js.Array[StateRegistryListener] = js.native
+    /** @internal */
     var matcher: StateMatcher = js.native
     var router: js.Any = js.native
+    /** @internal */
     var stateQueue: StateQueueManager = js.native
     var states: js.Any = js.native
-    def decorator(name: String, func: BuilderFunction): js.Function | BuilderFunction | js.Array[BuilderFunction] = js.native
+    /**
+      * Registers a [[BuilderFunction]] for a specific [[StateObject]] property (e.g., `parent`, `url`, or `path`).
+      * More than one BuilderFunction can be registered for a given property.
+      *
+      * The BuilderFunction(s) will be used to define the property on any subsequently built [[StateObject]] objects.
+      *
+      * @param property The name of the State property being registered for.
+      * @param builderFunction The BuilderFunction which will be used to build the State property
+      * @returns a function which deregisters the BuilderFunction
+      */
+    def decorator(property: String, builderFunction: BuilderFunction): js.Function = js.native
     /**
       * Removes a state from the registry
       *
@@ -43,7 +56,7 @@ object stateRegistryMod extends js.Object {
       * @returns {StateObject[]} a list of removed states
       */
     def deregister(stateOrName: StateOrName): js.Array[StateObject] = js.native
-    /** @internalapi */
+    /** @internal */
     def dispose(): Unit = js.native
     /**
       * Gets all registered states

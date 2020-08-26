@@ -21,6 +21,8 @@ trait CommandManager extends EventEmitter {
   def on_afterExec(name: afterExec, callback: execEventHandler): js.Function = js.native
   @JSName("on")
   def on_exec(name: exec, callback: execEventHandler): js.Function = js.native
+  def removeCommand(command: String): Unit = js.native
+  def removeCommand(command: String, keepCommand: Boolean): Unit = js.native
   def removeCommand(command: Command): Unit = js.native
   def removeCommand(command: Command, keepCommand: Boolean): Unit = js.native
   def replay(editor: Editor): Unit = js.native

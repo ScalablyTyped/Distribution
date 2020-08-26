@@ -65,76 +65,78 @@ trait JQuery extends js.Object {
   @JSName("checkbox")
   var checkbox_Original: Checkbox = js.native
   def checkbox(): JQuery = js.native
-  def checkbox(behavior: setting, name: beforeChecked): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+  def checkbox(behavior: setting, name: beforeChecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
   def checkbox(
     behavior: setting,
     name: beforeChecked,
     value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
   ): JQuery = js.native
-  def checkbox(behavior: setting, name: beforeDeterminate): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+  def checkbox(behavior: setting, name: beforeDeterminate, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
   def checkbox(
     behavior: setting,
     name: beforeDeterminate,
     value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
   ): JQuery = js.native
-  def checkbox(behavior: setting, name: beforeIndeterminate): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+  def checkbox(behavior: setting, name: beforeIndeterminate, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
   def checkbox(
     behavior: setting,
     name: beforeIndeterminate,
     value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
   ): JQuery = js.native
-  def checkbox(behavior: setting, name: beforeUnchecked): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
+  def checkbox(behavior: setting, name: beforeUnchecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`] = js.native
   def checkbox(
     behavior: setting,
     name: beforeUnchecked,
     value: js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]
   ): JQuery = js.native
-  def checkbox(behavior: setting, name: className): ClassNameSettings = js.native
   def checkbox(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def checkbox(behavior: setting, name: debug): Boolean = js.native
+  def checkbox(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def checkbox(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def checkbox(behavior: setting, name: error): ErrorSettings = js.native
+  def checkbox(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
   def checkbox(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def checkbox(behavior: setting, name: fireOnInit): Boolean = js.native
+  def checkbox(behavior: setting, name: fireOnInit, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def checkbox(behavior: setting, name: fireOnInit, value: Boolean): JQuery = js.native
-  def checkbox(behavior: setting, name: name): String = js.native
-  def checkbox(behavior: setting, name: namespace): String = js.native
+  def checkbox(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def checkbox(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def checkbox(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def checkbox(behavior: setting, name: name, value: String): JQuery = js.native
-  def checkbox(behavior: setting, name: onChange): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def checkbox(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
   def checkbox(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-  def checkbox(behavior: setting, name: onChecked): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def checkbox(behavior: setting, name: onChecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
   def checkbox(behavior: setting, name: onChecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-  def checkbox(behavior: setting, name: onDeterminate): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def checkbox(behavior: setting, name: onDeterminate, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
   def checkbox(behavior: setting, name: onDeterminate, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-  def checkbox(behavior: setting, name: onDisable): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-  def checkbox(behavior: setting, name: onDisabled): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def checkbox(behavior: setting, name: onDisabled, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
   def checkbox(behavior: setting, name: onDisabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def checkbox(behavior: setting, name: onDisable, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
   def checkbox(behavior: setting, name: onDisable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-  def checkbox(behavior: setting, name: onEnable): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
-  def checkbox(behavior: setting, name: onEnabled): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def checkbox(behavior: setting, name: onEnabled, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
   def checkbox(behavior: setting, name: onEnabled, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
+  def checkbox(behavior: setting, name: onEnable, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
   def checkbox(behavior: setting, name: onEnable, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-  def checkbox(behavior: setting, name: onIndeterminate): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def checkbox(behavior: setting, name: onIndeterminate, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
   def checkbox(
     behavior: setting,
     name: onIndeterminate,
     value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
   ): JQuery = js.native
-  def checkbox(behavior: setting, name: onUnchecked): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  def checkbox(behavior: setting, name: onUnchecked, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
   def checkbox(behavior: setting, name: onUnchecked, value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): JQuery = js.native
-  def checkbox(behavior: setting, name: performance): Boolean = js.native
+  def checkbox(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def checkbox(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def checkbox(behavior: setting, name: selector): SelectorSettings = js.native
-  def checkbox(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def checkbox(behavior: setting, name: silent): Boolean = js.native
+  def checkbox(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+  def checkbox(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def checkbox(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def checkbox(behavior: setting, name: uncheckable): auto | Boolean = js.native
+  def checkbox(behavior: setting, name: uncheckable, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
   def checkbox(behavior: setting, name: uncheckable, value: Boolean): JQuery = js.native
   def checkbox(behavior: setting, name: uncheckable, value: auto): JQuery = js.native
-  def checkbox(behavior: setting, name: verbose): Boolean = js.native
+  def checkbox(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def checkbox(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def checkbox(settings: CheckboxSettings): JQuery = js.native
+  @JSName("checkbox")
+  def checkbox_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  @JSName("checkbox")
+  def checkbox_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
   /**
     * Attach checkbox events to another element
     */

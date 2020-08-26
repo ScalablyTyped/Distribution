@@ -30,20 +30,42 @@ trait AwsApiCallAction extends js.Object {
 
 object AwsApiCallAction {
   @scala.inline
-  def apply(
-    Api: String = null,
-    CallerType: String = null,
-    DomainDetails: DomainDetails = null,
-    RemoteIpDetails: RemoteIpDetails = null,
-    ServiceName: String = null
-  ): AwsApiCallAction = {
+  def apply(): AwsApiCallAction = {
     val __obj = js.Dynamic.literal()
-    if (Api != null) __obj.updateDynamic("Api")(Api.asInstanceOf[js.Any])
-    if (CallerType != null) __obj.updateDynamic("CallerType")(CallerType.asInstanceOf[js.Any])
-    if (DomainDetails != null) __obj.updateDynamic("DomainDetails")(DomainDetails.asInstanceOf[js.Any])
-    if (RemoteIpDetails != null) __obj.updateDynamic("RemoteIpDetails")(RemoteIpDetails.asInstanceOf[js.Any])
-    if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsApiCallAction]
   }
+  @scala.inline
+  implicit class AwsApiCallActionOps[Self <: AwsApiCallAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApi(value: String): Self = this.set("Api", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApi: Self = this.set("Api", js.undefined)
+    @scala.inline
+    def setCallerType(value: String): Self = this.set("CallerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallerType: Self = this.set("CallerType", js.undefined)
+    @scala.inline
+    def setDomainDetails(value: DomainDetails): Self = this.set("DomainDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainDetails: Self = this.set("DomainDetails", js.undefined)
+    @scala.inline
+    def setRemoteIpDetails(value: RemoteIpDetails): Self = this.set("RemoteIpDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteIpDetails: Self = this.set("RemoteIpDetails", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+  }
+  
 }
 

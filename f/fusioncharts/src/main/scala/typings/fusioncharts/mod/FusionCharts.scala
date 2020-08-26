@@ -28,9 +28,11 @@ trait FusionCharts extends js.Object {
   def centerLabel(labelText: String): Unit = js.native
   def centerLabel(labelText: String, options: js.Object): Unit = js.native
   def chartType(): String = js.native
+  def chartType(value: js.UndefOr[scala.Nothing], options: js.Any): String = js.native
   def chartType(value: String): String = js.native
   def chartType(value: String, options: js.Any): String = js.native
   def clearChart(): Unit = js.native
+  def clone(overrides: js.UndefOr[scala.Nothing], argsOnly: Boolean): js.Any = js.native
   def clone(overrides: js.Object): js.Any = js.native
   def clone(overrides: js.Object, argsOnly: Boolean): js.Any = js.native
   def configure(options: js.Object): Unit = js.native
@@ -83,10 +85,19 @@ trait FusionCharts extends js.Object {
     ]
   ): Unit = js.native
   def render(): FusionCharts = js.native
+  def render(
+    containerElement: js.UndefOr[scala.Nothing],
+    insertMode: js.UndefOr[scala.Nothing],
+    callback: js.Function0[_]
+  ): FusionCharts = js.native
+  def render(containerElement: js.UndefOr[scala.Nothing], insertMode: String): FusionCharts = js.native
+  def render(containerElement: js.UndefOr[scala.Nothing], insertMode: String, callback: js.Function0[_]): FusionCharts = js.native
   def render(containerElement: String): FusionCharts = js.native
+  def render(containerElement: String, insertMode: js.UndefOr[scala.Nothing], callback: js.Function0[_]): FusionCharts = js.native
   def render(containerElement: String, insertMode: String): FusionCharts = js.native
   def render(containerElement: String, insertMode: String, callback: js.Function0[_]): FusionCharts = js.native
   def render(containerElement: Element): FusionCharts = js.native
+  def render(containerElement: Element, insertMode: js.UndefOr[scala.Nothing], callback: js.Function0[_]): FusionCharts = js.native
   def render(containerElement: Element, insertMode: String): FusionCharts = js.native
   def render(containerElement: Element, insertMode: String, callback: js.Function0[_]): FusionCharts = js.native
   def resetChart(): Unit = js.native
@@ -116,10 +127,12 @@ trait FusionCharts extends js.Object {
   def setXMLUrl(url: String): Unit = js.native
   def setZoomMode(yes: Boolean): Unit = js.native
   def showChartMessage(text: String): Unit = js.native
+  def showChartMessage(text: String, modal: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def showChartMessage(text: String, modal: Boolean): Unit = js.native
   def showChartMessage(text: String, modal: Boolean, cancelable: Boolean): Unit = js.native
   def slicePlotItem(index: Double, slice: Boolean): Unit = js.native
   def startingAngle(): Unit = js.native
+  def startingAngle(angle: js.UndefOr[scala.Nothing], relative: Boolean): Unit = js.native
   def startingAngle(angle: Double): Unit = js.native
   def startingAngle(angle: Double, relative: Boolean): Unit = js.native
   def stopUpdate(): Unit = js.native

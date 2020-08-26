@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SegmentedControl
   extends Component[SegmentControlProps, js.Any, js.Any] {
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MSegmentedControl(nextProps: SegmentControlProps): Unit = js.native
+  @JSName("UNSAFE_componentWillReceiveProps")
+  def UNSAFE_componentWillReceiveProps_MSegmentedControl(nextProps: SegmentControlProps): Unit = js.native
   def onPress(e: js.Any, index: Double, value: String): Unit = js.native
 }
 

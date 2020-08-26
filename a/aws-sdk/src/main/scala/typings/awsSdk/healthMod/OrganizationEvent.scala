@@ -47,30 +47,62 @@ trait OrganizationEvent extends js.Object {
 
 object OrganizationEvent {
   @scala.inline
-  def apply(
-    arn: eventArn = null,
-    endTime: timestamp = null,
-    eventScopeCode: eventScopeCode = null,
-    eventTypeCategory: eventTypeCategory = null,
-    eventTypeCode: eventTypeCode = null,
-    lastUpdatedTime: timestamp = null,
-    region: region = null,
-    service: service = null,
-    startTime: timestamp = null,
-    statusCode: eventStatusCode = null
-  ): OrganizationEvent = {
+  def apply(): OrganizationEvent = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (eventScopeCode != null) __obj.updateDynamic("eventScopeCode")(eventScopeCode.asInstanceOf[js.Any])
-    if (eventTypeCategory != null) __obj.updateDynamic("eventTypeCategory")(eventTypeCategory.asInstanceOf[js.Any])
-    if (eventTypeCode != null) __obj.updateDynamic("eventTypeCode")(eventTypeCode.asInstanceOf[js.Any])
-    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationEvent]
   }
+  @scala.inline
+  implicit class OrganizationEventOps[Self <: OrganizationEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: eventArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setEndTime(value: timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setEventScopeCode(value: eventScopeCode): Self = this.set("eventScopeCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventScopeCode: Self = this.set("eventScopeCode", js.undefined)
+    @scala.inline
+    def setEventTypeCategory(value: eventTypeCategory): Self = this.set("eventTypeCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeCategory: Self = this.set("eventTypeCategory", js.undefined)
+    @scala.inline
+    def setEventTypeCode(value: eventTypeCode): Self = this.set("eventTypeCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeCode: Self = this.set("eventTypeCode", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: timestamp): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setRegion(value: region): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setService(value: service): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+    @scala.inline
+    def setStartTime(value: timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatusCode(value: eventStatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+  }
+  
 }
 

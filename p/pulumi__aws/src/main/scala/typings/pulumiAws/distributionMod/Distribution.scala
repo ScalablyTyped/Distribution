@@ -35,14 +35,14 @@ class Distribution protected () extends CustomResource {
     * each trusted signer, if the distribution is set up to serve private content
     * with signed URLs.
     */
-  val activeTrustedSigners: Output_[StringDictionary[_]] = js.native
+  val activeTrustedSigners: Output_[StringDictionary[String]] = js.native
   /**
     * Extra CNAMEs (alternate domain names), if any, for
     * this distribution.
     */
   val aliases: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * The ARN (Amazon Resource Name) for the distribution. For example: arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5, where 123456789012 is your AWS account ID.
+    * The ARN (Amazon Resource Name) for the distribution. For example: `arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5`, where `123456789012` is your AWS account ID.
     */
   val arn: Output_[String] = js.native
   /**
@@ -86,7 +86,7 @@ class Distribution protected () extends CustomResource {
   val etag: Output_[String] = js.native
   /**
     * The CloudFront Route 53 zone ID that can be used to
-    * route an [Alias Resource Record Set][7] to. This attribute is simply an
+    * route an [Alias Resource Record Set](http://docs.aws.amazon.com/Route53/latest/APIReference/CreateAliasRRSAPI.html) to. This attribute is simply an
     * alias for the zone ID `Z2FDTNDATAQYW2`.
     */
   val hostedZoneId: Output_[String] = js.native
@@ -154,9 +154,9 @@ class Distribution protected () extends CustomResource {
     */
   val status: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The SSL
     * configuration for this distribution (maximum
@@ -174,7 +174,7 @@ class Distribution protected () extends CustomResource {
     * requests, the Id of the AWS WAF web ACL that is associated with the
     * distribution. The WAF Web ACL must exist in the WAF Global (CloudFront)
     * region and the credentials configuring this argument must have
-    * `waf:GetWebACL` permissions assigned.
+    * `waf:GetWebACL` permissions assigned. If using WAFv2, provide the ARN of the web ACL.
     */
   val webAclId: Output_[js.UndefOr[String]] = js.native
 }
@@ -190,8 +190,10 @@ object Distribution extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Distribution = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Distribution = js.native
   def get(name: String, id: Input[ID], state: DistributionState): Distribution = js.native
   def get(name: String, id: Input[ID], state: DistributionState, opts: CustomResourceOptions): Distribution = js.native
   /**

@@ -26,18 +26,38 @@ trait PullRequestSourceReferenceUpdatedEventMetadata extends js.Object {
 
 object PullRequestSourceReferenceUpdatedEventMetadata {
   @scala.inline
-  def apply(
-    afterCommitId: CommitId = null,
-    beforeCommitId: CommitId = null,
-    mergeBase: CommitId = null,
-    repositoryName: RepositoryName = null
-  ): PullRequestSourceReferenceUpdatedEventMetadata = {
+  def apply(): PullRequestSourceReferenceUpdatedEventMetadata = {
     val __obj = js.Dynamic.literal()
-    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId.asInstanceOf[js.Any])
-    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId.asInstanceOf[js.Any])
-    if (mergeBase != null) __obj.updateDynamic("mergeBase")(mergeBase.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequestSourceReferenceUpdatedEventMetadata]
   }
+  @scala.inline
+  implicit class PullRequestSourceReferenceUpdatedEventMetadataOps[Self <: PullRequestSourceReferenceUpdatedEventMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterCommitId(value: CommitId): Self = this.set("afterCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterCommitId: Self = this.set("afterCommitId", js.undefined)
+    @scala.inline
+    def setBeforeCommitId(value: CommitId): Self = this.set("beforeCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeCommitId: Self = this.set("beforeCommitId", js.undefined)
+    @scala.inline
+    def setMergeBase(value: CommitId): Self = this.set("mergeBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeBase: Self = this.set("mergeBase", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

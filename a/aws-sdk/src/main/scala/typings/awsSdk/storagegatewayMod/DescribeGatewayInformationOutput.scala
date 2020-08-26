@@ -11,6 +11,10 @@ trait DescribeGatewayInformationOutput extends js.Object {
     */
   var CloudWatchLogGroupARN: js.UndefOr[typings.awsSdk.storagegatewayMod.CloudWatchLogGroupARN] = js.native
   /**
+    * Date after which this gateway will not receive software updates for new features and bug fixes.
+    */
+  var DeprecationDate: js.UndefOr[typings.awsSdk.storagegatewayMod.DeprecationDate] = js.native
+  /**
     * The ID of the Amazon EC2 instance that was used to launch the gateway.
     */
   var Ec2InstanceId: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceId] = js.native
@@ -60,6 +64,10 @@ trait DescribeGatewayInformationOutput extends js.Object {
     */
   var NextUpdateAvailabilityDate: js.UndefOr[typings.awsSdk.storagegatewayMod.NextUpdateAvailabilityDate] = js.native
   /**
+    * Date after which this gateway will not receive software updates for new features.
+    */
+  var SoftwareUpdatesEndDate: js.UndefOr[typings.awsSdk.storagegatewayMod.SoftwareUpdatesEndDate] = js.native
+  /**
     * A list of up to 50 tags assigned to the gateway, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
     */
   var Tags: js.UndefOr[typings.awsSdk.storagegatewayMod.Tags] = js.native
@@ -71,42 +79,98 @@ trait DescribeGatewayInformationOutput extends js.Object {
 
 object DescribeGatewayInformationOutput {
   @scala.inline
-  def apply(
-    CloudWatchLogGroupARN: CloudWatchLogGroupARN = null,
-    Ec2InstanceId: Ec2InstanceId = null,
-    Ec2InstanceRegion: Ec2InstanceRegion = null,
-    EndpointType: EndpointType = null,
-    GatewayARN: GatewayARN = null,
-    GatewayId: GatewayId = null,
-    GatewayName: String = null,
-    GatewayNetworkInterfaces: GatewayNetworkInterfaces = null,
-    GatewayState: GatewayState = null,
-    GatewayTimezone: GatewayTimezone = null,
-    GatewayType: GatewayType = null,
-    HostEnvironment: HostEnvironment = null,
-    LastSoftwareUpdate: LastSoftwareUpdate = null,
-    NextUpdateAvailabilityDate: NextUpdateAvailabilityDate = null,
-    Tags: Tags = null,
-    VPCEndpoint: String = null
-  ): DescribeGatewayInformationOutput = {
+  def apply(): DescribeGatewayInformationOutput = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchLogGroupARN != null) __obj.updateDynamic("CloudWatchLogGroupARN")(CloudWatchLogGroupARN.asInstanceOf[js.Any])
-    if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId.asInstanceOf[js.Any])
-    if (Ec2InstanceRegion != null) __obj.updateDynamic("Ec2InstanceRegion")(Ec2InstanceRegion.asInstanceOf[js.Any])
-    if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
-    if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (GatewayId != null) __obj.updateDynamic("GatewayId")(GatewayId.asInstanceOf[js.Any])
-    if (GatewayName != null) __obj.updateDynamic("GatewayName")(GatewayName.asInstanceOf[js.Any])
-    if (GatewayNetworkInterfaces != null) __obj.updateDynamic("GatewayNetworkInterfaces")(GatewayNetworkInterfaces.asInstanceOf[js.Any])
-    if (GatewayState != null) __obj.updateDynamic("GatewayState")(GatewayState.asInstanceOf[js.Any])
-    if (GatewayTimezone != null) __obj.updateDynamic("GatewayTimezone")(GatewayTimezone.asInstanceOf[js.Any])
-    if (GatewayType != null) __obj.updateDynamic("GatewayType")(GatewayType.asInstanceOf[js.Any])
-    if (HostEnvironment != null) __obj.updateDynamic("HostEnvironment")(HostEnvironment.asInstanceOf[js.Any])
-    if (LastSoftwareUpdate != null) __obj.updateDynamic("LastSoftwareUpdate")(LastSoftwareUpdate.asInstanceOf[js.Any])
-    if (NextUpdateAvailabilityDate != null) __obj.updateDynamic("NextUpdateAvailabilityDate")(NextUpdateAvailabilityDate.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VPCEndpoint != null) __obj.updateDynamic("VPCEndpoint")(VPCEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGatewayInformationOutput]
   }
+  @scala.inline
+  implicit class DescribeGatewayInformationOutputOps[Self <: DescribeGatewayInformationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchLogGroupARN(value: CloudWatchLogGroupARN): Self = this.set("CloudWatchLogGroupARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLogGroupARN: Self = this.set("CloudWatchLogGroupARN", js.undefined)
+    @scala.inline
+    def setDeprecationDate(value: DeprecationDate): Self = this.set("DeprecationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecationDate: Self = this.set("DeprecationDate", js.undefined)
+    @scala.inline
+    def setEc2InstanceId(value: Ec2InstanceId): Self = this.set("Ec2InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2InstanceId: Self = this.set("Ec2InstanceId", js.undefined)
+    @scala.inline
+    def setEc2InstanceRegion(value: Ec2InstanceRegion): Self = this.set("Ec2InstanceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2InstanceRegion: Self = this.set("Ec2InstanceRegion", js.undefined)
+    @scala.inline
+    def setEndpointType(value: EndpointType): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    @scala.inline
+    def setGatewayId(value: GatewayId): Self = this.set("GatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayId: Self = this.set("GatewayId", js.undefined)
+    @scala.inline
+    def setGatewayName(value: String): Self = this.set("GatewayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayName: Self = this.set("GatewayName", js.undefined)
+    @scala.inline
+    def setGatewayNetworkInterfacesVarargs(value: NetworkInterface*): Self = this.set("GatewayNetworkInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setGatewayNetworkInterfaces(value: GatewayNetworkInterfaces): Self = this.set("GatewayNetworkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayNetworkInterfaces: Self = this.set("GatewayNetworkInterfaces", js.undefined)
+    @scala.inline
+    def setGatewayState(value: GatewayState): Self = this.set("GatewayState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayState: Self = this.set("GatewayState", js.undefined)
+    @scala.inline
+    def setGatewayTimezone(value: GatewayTimezone): Self = this.set("GatewayTimezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayTimezone: Self = this.set("GatewayTimezone", js.undefined)
+    @scala.inline
+    def setGatewayType(value: GatewayType): Self = this.set("GatewayType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayType: Self = this.set("GatewayType", js.undefined)
+    @scala.inline
+    def setHostEnvironment(value: HostEnvironment): Self = this.set("HostEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostEnvironment: Self = this.set("HostEnvironment", js.undefined)
+    @scala.inline
+    def setLastSoftwareUpdate(value: LastSoftwareUpdate): Self = this.set("LastSoftwareUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSoftwareUpdate: Self = this.set("LastSoftwareUpdate", js.undefined)
+    @scala.inline
+    def setNextUpdateAvailabilityDate(value: NextUpdateAvailabilityDate): Self = this.set("NextUpdateAvailabilityDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextUpdateAvailabilityDate: Self = this.set("NextUpdateAvailabilityDate", js.undefined)
+    @scala.inline
+    def setSoftwareUpdatesEndDate(value: SoftwareUpdatesEndDate): Self = this.set("SoftwareUpdatesEndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSoftwareUpdatesEndDate: Self = this.set("SoftwareUpdatesEndDate", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVPCEndpoint(value: String): Self = this.set("VPCEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVPCEndpoint: Self = this.set("VPCEndpoint", js.undefined)
+  }
+  
 }
 

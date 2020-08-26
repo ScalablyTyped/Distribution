@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object relayCompilerErrorMod extends js.Object {
   def createUserError(message: String): UserError = js.native
+  def createUserError(message: String, locations: js.UndefOr[scala.Nothing], nodes: js.Array[ASTNode]): UserError = js.native
   def createUserError(message: String, locations: js.Array[Location]): UserError = js.native
   def createUserError(message: String, locations: js.Array[Location], nodes: js.Array[ASTNode]): UserError = js.native
   type UserError = GraphQLError

@@ -46,28 +46,60 @@ trait GrantListEntry extends js.Object {
 
 object GrantListEntry {
   @scala.inline
-  def apply(
-    Constraints: GrantConstraints = null,
-    CreationDate: DateType = null,
-    GrantId: GrantIdType = null,
-    GranteePrincipal: PrincipalIdType = null,
-    IssuingAccount: PrincipalIdType = null,
-    KeyId: KeyIdType = null,
-    Name: GrantNameType = null,
-    Operations: GrantOperationList = null,
-    RetiringPrincipal: PrincipalIdType = null
-  ): GrantListEntry = {
+  def apply(): GrantListEntry = {
     val __obj = js.Dynamic.literal()
-    if (Constraints != null) __obj.updateDynamic("Constraints")(Constraints.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (GrantId != null) __obj.updateDynamic("GrantId")(GrantId.asInstanceOf[js.Any])
-    if (GranteePrincipal != null) __obj.updateDynamic("GranteePrincipal")(GranteePrincipal.asInstanceOf[js.Any])
-    if (IssuingAccount != null) __obj.updateDynamic("IssuingAccount")(IssuingAccount.asInstanceOf[js.Any])
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Operations != null) __obj.updateDynamic("Operations")(Operations.asInstanceOf[js.Any])
-    if (RetiringPrincipal != null) __obj.updateDynamic("RetiringPrincipal")(RetiringPrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantListEntry]
   }
+  @scala.inline
+  implicit class GrantListEntryOps[Self <: GrantListEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstraints(value: GrantConstraints): Self = this.set("Constraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraints: Self = this.set("Constraints", js.undefined)
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setGrantId(value: GrantIdType): Self = this.set("GrantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantId: Self = this.set("GrantId", js.undefined)
+    @scala.inline
+    def setGranteePrincipal(value: PrincipalIdType): Self = this.set("GranteePrincipal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGranteePrincipal: Self = this.set("GranteePrincipal", js.undefined)
+    @scala.inline
+    def setIssuingAccount(value: PrincipalIdType): Self = this.set("IssuingAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuingAccount: Self = this.set("IssuingAccount", js.undefined)
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    @scala.inline
+    def setName(value: GrantNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOperationsVarargs(value: GrantOperation*): Self = this.set("Operations", js.Array(value :_*))
+    @scala.inline
+    def setOperations(value: GrantOperationList): Self = this.set("Operations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperations: Self = this.set("Operations", js.undefined)
+    @scala.inline
+    def setRetiringPrincipal(value: PrincipalIdType): Self = this.set("RetiringPrincipal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetiringPrincipal: Self = this.set("RetiringPrincipal", js.undefined)
+  }
+  
 }
 

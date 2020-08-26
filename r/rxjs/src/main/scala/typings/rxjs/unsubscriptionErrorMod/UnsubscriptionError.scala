@@ -6,8 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnsubscriptionError extends Error {
-  val errors: js.Array[_]
+  val errors: js.Array[_] = js.native
 }
 
 @JSImport("rxjs/internal/util/UnsubscriptionError", "UnsubscriptionError")

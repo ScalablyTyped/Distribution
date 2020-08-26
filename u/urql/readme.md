@@ -1,7 +1,7 @@
 
 # Scala.js typings for urql
 
-Typings are for version 1.9.8
+Typings are for version 1.10.0
 
 ## Library description:
 A highly customizable and versatile GraphQL client for React
@@ -10,9 +10,9 @@ A highly customizable and versatile GraphQL client for React
 | ------------------ | :-------------: |
 | Full name          | urql |
 | Keywords           | graphql client, state management, cache, formidablelabs, exchanges, react |
-| # releases         | 38 |
-| # dependents       | 11 |
-| # downloads        | 259950 |
+| # releases         | 41 |
+| # dependents       | 12 |
+| # downloads        | 598762 |
 | # stars            | 1 |
 
 ## Links

@@ -4,206 +4,341 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Request extends js.Object {
-  var async: js.UndefOr[Boolean] = js.undefined
-  var attachHeadersAsQueryString: js.UndefOr[Boolean] = js.undefined
-  var callback: js.UndefOr[js.Function] = js.undefined
-  var close: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var connectTimeout: js.UndefOr[Double] = js.undefined
-  var contentType: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[String] = js.undefined
-  var disableDisconnect: js.UndefOr[Boolean] = js.undefined
-  var disconnect: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var dispatchUrl: js.UndefOr[String] = js.undefined
-  var dropHeaders: js.UndefOr[Boolean] = js.undefined
-  var enableProtocol: js.UndefOr[Boolean] = js.undefined
-  var enableXDR: js.UndefOr[Boolean] = js.undefined
-  var execute: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var executeCallbackBeforeReconnect: js.UndefOr[Boolean] = js.undefined
-  var fallbackMethod: js.UndefOr[String] = js.undefined
-  var fallbackTransport: js.UndefOr[String] = js.undefined
-  var getUUID: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
-  var headers: js.UndefOr[js.Any] = js.undefined
-  var lastIndex: js.UndefOr[Double] = js.undefined
-  var lastTimestamp: js.UndefOr[Double] = js.undefined
-  var logLevel: js.UndefOr[String] = js.undefined
-  var maxReconnectOnClose: js.UndefOr[Double] = js.undefined
-  var maxRequest: js.UndefOr[Double] = js.undefined
-  var maxStreamingLength: js.UndefOr[Double] = js.undefined
-  var messageDelimiter: js.UndefOr[String] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
-  var onClientTimeout: js.UndefOr[js.Function1[/* request */ js.UndefOr[Request], Unit]] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.undefined
+  var async: js.UndefOr[Boolean] = js.native
+  var attachHeadersAsQueryString: js.UndefOr[Boolean] = js.native
+  var callback: js.UndefOr[js.Function] = js.native
+  var close: js.UndefOr[js.Function0[Unit]] = js.native
+  var connectTimeout: js.UndefOr[Double] = js.native
+  var contentType: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.native
+  var disableDisconnect: js.UndefOr[Boolean] = js.native
+  var disconnect: js.UndefOr[js.Function0[Unit]] = js.native
+  var dispatchUrl: js.UndefOr[String] = js.native
+  var dropHeaders: js.UndefOr[Boolean] = js.native
+  var enableProtocol: js.UndefOr[Boolean] = js.native
+  var enableXDR: js.UndefOr[Boolean] = js.native
+  var execute: js.UndefOr[js.Function0[Unit]] = js.native
+  var executeCallbackBeforeReconnect: js.UndefOr[Boolean] = js.native
+  var fallbackMethod: js.UndefOr[String] = js.native
+  var fallbackTransport: js.UndefOr[String] = js.native
+  var getUUID: js.UndefOr[js.Function0[Unit]] = js.native
+  var getUrl: js.UndefOr[js.Function0[String]] = js.native
+  var headers: js.UndefOr[js.Any] = js.native
+  var lastIndex: js.UndefOr[Double] = js.native
+  var lastTimestamp: js.UndefOr[Double] = js.native
+  var logLevel: js.UndefOr[String] = js.native
+  var maxReconnectOnClose: js.UndefOr[Double] = js.native
+  var maxRequest: js.UndefOr[Double] = js.native
+  var maxStreamingLength: js.UndefOr[Double] = js.native
+  var messageDelimiter: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.native
+  var onClientTimeout: js.UndefOr[js.Function1[/* request */ js.UndefOr[this.type], Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.native
   var onFailureToReconnect: js.UndefOr[
-    js.Function2[/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response], Unit]
-  ] = js.undefined
-  var onLocalMessage: js.UndefOr[js.Function1[/* request */ js.UndefOr[Request], Unit]] = js.undefined
-  var onMessage: js.UndefOr[js.Function1[/* response */ Response, Unit]] = js.undefined
-  var onMessagePublished: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.undefined
-  var onOpen: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.undefined
+    js.Function2[/* request */ js.UndefOr[this.type], /* response */ js.UndefOr[Response], Unit]
+  ] = js.native
+  var onLocalMessage: js.UndefOr[js.Function1[/* request */ js.UndefOr[this.type], Unit]] = js.native
+  var onMessage: js.UndefOr[js.Function1[/* response */ Response, Unit]] = js.native
+  var onMessagePublished: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.native
+  var onOpen: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response], Unit]] = js.native
   var onReconnect: js.UndefOr[
-    js.Function2[/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response], Unit]
-  ] = js.undefined
+    js.Function2[/* request */ js.UndefOr[this.type], /* response */ js.UndefOr[Response], Unit]
+  ] = js.native
   var onReopen: js.UndefOr[
-    js.Function2[/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response], Unit]
-  ] = js.undefined
+    js.Function2[/* request */ js.UndefOr[this.type], /* response */ js.UndefOr[Response], Unit]
+  ] = js.native
   var onTransportFailure: js.UndefOr[
     js.Function2[/* reason */ js.UndefOr[String], /* response */ js.UndefOr[Response], Unit]
-  ] = js.undefined
-  var pollingInterval: js.UndefOr[Double] = js.undefined
-  var push: js.UndefOr[js.Function2[/* message */ String, /* dispatchUrl */ js.UndefOr[String], Unit]] = js.undefined
-  var pushLocal: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
-  var readResponsesHeaders: js.UndefOr[Boolean] = js.undefined
-  var readyState: js.UndefOr[Double] = js.undefined
-  var reconnect: js.UndefOr[Boolean] = js.undefined
-  var reconnectInterval: js.UndefOr[Double] = js.undefined
-  var requestCount: js.UndefOr[Double] = js.undefined
-  var rewriteURL: js.UndefOr[Boolean] = js.undefined
-  var shared: js.UndefOr[Boolean] = js.undefined
-  var subscribe: js.UndefOr[js.Function1[/* options */ Request, Unit]] = js.undefined
-  var suspend: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var trackMessageLength: js.UndefOr[Boolean] = js.undefined
-  var transport: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
-  var uuid: js.UndefOr[String] = js.undefined
-  var webSocketBinaryType: js.UndefOr[js.Any] = js.undefined
-  var webSocketImpl: js.UndefOr[js.Any] = js.undefined
-  var webSocketPathDelimiter: js.UndefOr[String] = js.undefined
-  var webSocketUrl: js.UndefOr[String] = js.undefined
-  var withCredentials: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var pollingInterval: js.UndefOr[Double] = js.native
+  var push: js.UndefOr[js.Function2[/* message */ String, /* dispatchUrl */ js.UndefOr[String], Unit]] = js.native
+  var pushLocal: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+  var readResponsesHeaders: js.UndefOr[Boolean] = js.native
+  var readyState: js.UndefOr[Double] = js.native
+  var reconnect: js.UndefOr[Boolean] = js.native
+  var reconnectInterval: js.UndefOr[Double] = js.native
+  var requestCount: js.UndefOr[Double] = js.native
+  var rewriteURL: js.UndefOr[Boolean] = js.native
+  var shared: js.UndefOr[Boolean] = js.native
+  var subscribe: js.UndefOr[js.Function1[/* options */ this.type, Unit]] = js.native
+  var suspend: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var trackMessageLength: js.UndefOr[Boolean] = js.native
+  var transport: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.native
+  var webSocketBinaryType: js.UndefOr[js.Any] = js.native
+  var webSocketImpl: js.UndefOr[js.Any] = js.native
+  var webSocketPathDelimiter: js.UndefOr[String] = js.native
+  var webSocketUrl: js.UndefOr[String] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.native
 }
 
 object Request {
   @scala.inline
-  def apply(
-    async: js.UndefOr[Boolean] = js.undefined,
-    attachHeadersAsQueryString: js.UndefOr[Boolean] = js.undefined,
-    callback: js.Function = null,
-    close: () => Unit = null,
-    connectTimeout: js.UndefOr[Double] = js.undefined,
-    contentType: String = null,
-    data: String = null,
-    disableDisconnect: js.UndefOr[Boolean] = js.undefined,
-    disconnect: () => Unit = null,
-    dispatchUrl: String = null,
-    dropHeaders: js.UndefOr[Boolean] = js.undefined,
-    enableProtocol: js.UndefOr[Boolean] = js.undefined,
-    enableXDR: js.UndefOr[Boolean] = js.undefined,
-    execute: () => Unit = null,
-    executeCallbackBeforeReconnect: js.UndefOr[Boolean] = js.undefined,
-    fallbackMethod: String = null,
-    fallbackTransport: String = null,
-    getUUID: () => Unit = null,
-    getUrl: () => String = null,
-    headers: js.Any = null,
-    lastIndex: js.UndefOr[Double] = js.undefined,
-    lastTimestamp: js.UndefOr[Double] = js.undefined,
-    logLevel: String = null,
-    maxReconnectOnClose: js.UndefOr[Double] = js.undefined,
-    maxRequest: js.UndefOr[Double] = js.undefined,
-    maxStreamingLength: js.UndefOr[Double] = js.undefined,
-    messageDelimiter: String = null,
-    method: String = null,
-    onClientTimeout: /* request */ js.UndefOr[Request] => Unit = null,
-    onClose: /* response */ js.UndefOr[Response] => Unit = null,
-    onError: /* response */ js.UndefOr[Response] => Unit = null,
-    onFailureToReconnect: (/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response]) => Unit = null,
-    onLocalMessage: /* request */ js.UndefOr[Request] => Unit = null,
-    onMessage: /* response */ Response => Unit = null,
-    onMessagePublished: /* response */ js.UndefOr[Response] => Unit = null,
-    onOpen: /* response */ js.UndefOr[Response] => Unit = null,
-    onReconnect: (/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response]) => Unit = null,
-    onReopen: (/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response]) => Unit = null,
-    onTransportFailure: (/* reason */ js.UndefOr[String], /* response */ js.UndefOr[Response]) => Unit = null,
-    pollingInterval: js.UndefOr[Double] = js.undefined,
-    push: (/* message */ String, /* dispatchUrl */ js.UndefOr[String]) => Unit = null,
-    pushLocal: /* message */ String => Unit = null,
-    readResponsesHeaders: js.UndefOr[Boolean] = js.undefined,
-    readyState: js.UndefOr[Double] = js.undefined,
-    reconnect: js.UndefOr[Boolean] = js.undefined,
-    reconnectInterval: js.UndefOr[Double] = js.undefined,
-    requestCount: js.UndefOr[Double] = js.undefined,
-    rewriteURL: js.UndefOr[Boolean] = js.undefined,
-    shared: js.UndefOr[Boolean] = js.undefined,
-    subscribe: /* options */ Request => Unit = null,
-    suspend: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    trackMessageLength: js.UndefOr[Boolean] = js.undefined,
-    transport: String = null,
-    url: String = null,
-    uuid: String = null,
-    webSocketBinaryType: js.Any = null,
-    webSocketImpl: js.Any = null,
-    webSocketPathDelimiter: String = null,
-    webSocketUrl: String = null,
-    withCredentials: js.UndefOr[Boolean] = js.undefined
-  ): Request = {
+  def apply(): Request = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(attachHeadersAsQueryString)) __obj.updateDynamic("attachHeadersAsQueryString")(attachHeadersAsQueryString.get.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (!js.isUndefined(connectTimeout)) __obj.updateDynamic("connectTimeout")(connectTimeout.get.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDisconnect)) __obj.updateDynamic("disableDisconnect")(disableDisconnect.get.asInstanceOf[js.Any])
-    if (disconnect != null) __obj.updateDynamic("disconnect")(js.Any.fromFunction0(disconnect))
-    if (dispatchUrl != null) __obj.updateDynamic("dispatchUrl")(dispatchUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropHeaders)) __obj.updateDynamic("dropHeaders")(dropHeaders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableProtocol)) __obj.updateDynamic("enableProtocol")(enableProtocol.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableXDR)) __obj.updateDynamic("enableXDR")(enableXDR.get.asInstanceOf[js.Any])
-    if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction0(execute))
-    if (!js.isUndefined(executeCallbackBeforeReconnect)) __obj.updateDynamic("executeCallbackBeforeReconnect")(executeCallbackBeforeReconnect.get.asInstanceOf[js.Any])
-    if (fallbackMethod != null) __obj.updateDynamic("fallbackMethod")(fallbackMethod.asInstanceOf[js.Any])
-    if (fallbackTransport != null) __obj.updateDynamic("fallbackTransport")(fallbackTransport.asInstanceOf[js.Any])
-    if (getUUID != null) __obj.updateDynamic("getUUID")(js.Any.fromFunction0(getUUID))
-    if (getUrl != null) __obj.updateDynamic("getUrl")(js.Any.fromFunction0(getUrl))
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastIndex)) __obj.updateDynamic("lastIndex")(lastIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastTimestamp)) __obj.updateDynamic("lastTimestamp")(lastTimestamp.get.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxReconnectOnClose)) __obj.updateDynamic("maxReconnectOnClose")(maxReconnectOnClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRequest)) __obj.updateDynamic("maxRequest")(maxRequest.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxStreamingLength)) __obj.updateDynamic("maxStreamingLength")(maxStreamingLength.get.asInstanceOf[js.Any])
-    if (messageDelimiter != null) __obj.updateDynamic("messageDelimiter")(messageDelimiter.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (onClientTimeout != null) __obj.updateDynamic("onClientTimeout")(js.Any.fromFunction1(onClientTimeout))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onFailureToReconnect != null) __obj.updateDynamic("onFailureToReconnect")(js.Any.fromFunction2(onFailureToReconnect))
-    if (onLocalMessage != null) __obj.updateDynamic("onLocalMessage")(js.Any.fromFunction1(onLocalMessage))
-    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
-    if (onMessagePublished != null) __obj.updateDynamic("onMessagePublished")(js.Any.fromFunction1(onMessagePublished))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
-    if (onReconnect != null) __obj.updateDynamic("onReconnect")(js.Any.fromFunction2(onReconnect))
-    if (onReopen != null) __obj.updateDynamic("onReopen")(js.Any.fromFunction2(onReopen))
-    if (onTransportFailure != null) __obj.updateDynamic("onTransportFailure")(js.Any.fromFunction2(onTransportFailure))
-    if (!js.isUndefined(pollingInterval)) __obj.updateDynamic("pollingInterval")(pollingInterval.get.asInstanceOf[js.Any])
-    if (push != null) __obj.updateDynamic("push")(js.Any.fromFunction2(push))
-    if (pushLocal != null) __obj.updateDynamic("pushLocal")(js.Any.fromFunction1(pushLocal))
-    if (!js.isUndefined(readResponsesHeaders)) __obj.updateDynamic("readResponsesHeaders")(readResponsesHeaders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readyState)) __obj.updateDynamic("readyState")(readyState.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectInterval)) __obj.updateDynamic("reconnectInterval")(reconnectInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestCount)) __obj.updateDynamic("requestCount")(requestCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewriteURL)) __obj.updateDynamic("rewriteURL")(rewriteURL.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.get.asInstanceOf[js.Any])
-    if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction1(subscribe))
-    if (!js.isUndefined(suspend)) __obj.updateDynamic("suspend")(suspend.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackMessageLength)) __obj.updateDynamic("trackMessageLength")(trackMessageLength.get.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
-    if (webSocketBinaryType != null) __obj.updateDynamic("webSocketBinaryType")(webSocketBinaryType.asInstanceOf[js.Any])
-    if (webSocketImpl != null) __obj.updateDynamic("webSocketImpl")(webSocketImpl.asInstanceOf[js.Any])
-    if (webSocketPathDelimiter != null) __obj.updateDynamic("webSocketPathDelimiter")(webSocketPathDelimiter.asInstanceOf[js.Any])
-    if (webSocketUrl != null) __obj.updateDynamic("webSocketUrl")(webSocketUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
+  @scala.inline
+  implicit class RequestOps[Self <: Request] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsync: Self = this.set("async", js.undefined)
+    @scala.inline
+    def setAttachHeadersAsQueryString(value: Boolean): Self = this.set("attachHeadersAsQueryString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachHeadersAsQueryString: Self = this.set("attachHeadersAsQueryString", js.undefined)
+    @scala.inline
+    def setCallback(value: js.Function): Self = this.set("callback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setConnectTimeout(value: Double): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDisableDisconnect(value: Boolean): Self = this.set("disableDisconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableDisconnect: Self = this.set("disableDisconnect", js.undefined)
+    @scala.inline
+    def setDisconnect(value: () => Unit): Self = this.set("disconnect", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDisconnect: Self = this.set("disconnect", js.undefined)
+    @scala.inline
+    def setDispatchUrl(value: String): Self = this.set("dispatchUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDispatchUrl: Self = this.set("dispatchUrl", js.undefined)
+    @scala.inline
+    def setDropHeaders(value: Boolean): Self = this.set("dropHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropHeaders: Self = this.set("dropHeaders", js.undefined)
+    @scala.inline
+    def setEnableProtocol(value: Boolean): Self = this.set("enableProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableProtocol: Self = this.set("enableProtocol", js.undefined)
+    @scala.inline
+    def setEnableXDR(value: Boolean): Self = this.set("enableXDR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableXDR: Self = this.set("enableXDR", js.undefined)
+    @scala.inline
+    def setExecute(value: () => Unit): Self = this.set("execute", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteExecute: Self = this.set("execute", js.undefined)
+    @scala.inline
+    def setExecuteCallbackBeforeReconnect(value: Boolean): Self = this.set("executeCallbackBeforeReconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecuteCallbackBeforeReconnect: Self = this.set("executeCallbackBeforeReconnect", js.undefined)
+    @scala.inline
+    def setFallbackMethod(value: String): Self = this.set("fallbackMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackMethod: Self = this.set("fallbackMethod", js.undefined)
+    @scala.inline
+    def setFallbackTransport(value: String): Self = this.set("fallbackTransport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackTransport: Self = this.set("fallbackTransport", js.undefined)
+    @scala.inline
+    def setGetUUID(value: () => Unit): Self = this.set("getUUID", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUUID: Self = this.set("getUUID", js.undefined)
+    @scala.inline
+    def setGetUrl(value: () => String): Self = this.set("getUrl", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUrl: Self = this.set("getUrl", js.undefined)
+    @scala.inline
+    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setLastIndex(value: Double): Self = this.set("lastIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastIndex: Self = this.set("lastIndex", js.undefined)
+    @scala.inline
+    def setLastTimestamp(value: Double): Self = this.set("lastTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastTimestamp: Self = this.set("lastTimestamp", js.undefined)
+    @scala.inline
+    def setLogLevel(value: String): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    @scala.inline
+    def setMaxReconnectOnClose(value: Double): Self = this.set("maxReconnectOnClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxReconnectOnClose: Self = this.set("maxReconnectOnClose", js.undefined)
+    @scala.inline
+    def setMaxRequest(value: Double): Self = this.set("maxRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRequest: Self = this.set("maxRequest", js.undefined)
+    @scala.inline
+    def setMaxStreamingLength(value: Double): Self = this.set("maxStreamingLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxStreamingLength: Self = this.set("maxStreamingLength", js.undefined)
+    @scala.inline
+    def setMessageDelimiter(value: String): Self = this.set("messageDelimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageDelimiter: Self = this.set("messageDelimiter", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setOnClientTimeout(value: /* request */ js.UndefOr[Request] => Unit): Self = this.set("onClientTimeout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClientTimeout: Self = this.set("onClientTimeout", js.undefined)
+    @scala.inline
+    def setOnClose(value: /* response */ js.UndefOr[Response] => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnError(value: /* response */ js.UndefOr[Response] => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnFailureToReconnect(value: (/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response]) => Unit): Self = this.set("onFailureToReconnect", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnFailureToReconnect: Self = this.set("onFailureToReconnect", js.undefined)
+    @scala.inline
+    def setOnLocalMessage(value: /* request */ js.UndefOr[Request] => Unit): Self = this.set("onLocalMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLocalMessage: Self = this.set("onLocalMessage", js.undefined)
+    @scala.inline
+    def setOnMessage(value: /* response */ Response => Unit): Self = this.set("onMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMessage: Self = this.set("onMessage", js.undefined)
+    @scala.inline
+    def setOnMessagePublished(value: /* response */ js.UndefOr[Response] => Unit): Self = this.set("onMessagePublished", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMessagePublished: Self = this.set("onMessagePublished", js.undefined)
+    @scala.inline
+    def setOnOpen(value: /* response */ js.UndefOr[Response] => Unit): Self = this.set("onOpen", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    @scala.inline
+    def setOnReconnect(value: (/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response]) => Unit): Self = this.set("onReconnect", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnReconnect: Self = this.set("onReconnect", js.undefined)
+    @scala.inline
+    def setOnReopen(value: (/* request */ js.UndefOr[Request], /* response */ js.UndefOr[Response]) => Unit): Self = this.set("onReopen", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnReopen: Self = this.set("onReopen", js.undefined)
+    @scala.inline
+    def setOnTransportFailure(value: (/* reason */ js.UndefOr[String], /* response */ js.UndefOr[Response]) => Unit): Self = this.set("onTransportFailure", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnTransportFailure: Self = this.set("onTransportFailure", js.undefined)
+    @scala.inline
+    def setPollingInterval(value: Double): Self = this.set("pollingInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollingInterval: Self = this.set("pollingInterval", js.undefined)
+    @scala.inline
+    def setPush(value: (/* message */ String, /* dispatchUrl */ js.UndefOr[String]) => Unit): Self = this.set("push", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePush: Self = this.set("push", js.undefined)
+    @scala.inline
+    def setPushLocal(value: /* message */ String => Unit): Self = this.set("pushLocal", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePushLocal: Self = this.set("pushLocal", js.undefined)
+    @scala.inline
+    def setReadResponsesHeaders(value: Boolean): Self = this.set("readResponsesHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadResponsesHeaders: Self = this.set("readResponsesHeaders", js.undefined)
+    @scala.inline
+    def setReadyState(value: Double): Self = this.set("readyState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadyState: Self = this.set("readyState", js.undefined)
+    @scala.inline
+    def setReconnect(value: Boolean): Self = this.set("reconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnect: Self = this.set("reconnect", js.undefined)
+    @scala.inline
+    def setReconnectInterval(value: Double): Self = this.set("reconnectInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectInterval: Self = this.set("reconnectInterval", js.undefined)
+    @scala.inline
+    def setRequestCount(value: Double): Self = this.set("requestCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCount: Self = this.set("requestCount", js.undefined)
+    @scala.inline
+    def setRewriteURL(value: Boolean): Self = this.set("rewriteURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRewriteURL: Self = this.set("rewriteURL", js.undefined)
+    @scala.inline
+    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShared: Self = this.set("shared", js.undefined)
+    @scala.inline
+    def setSubscribe(value: Request => Unit): Self = this.set("subscribe", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSubscribe: Self = this.set("subscribe", js.undefined)
+    @scala.inline
+    def setSuspend(value: Boolean): Self = this.set("suspend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspend: Self = this.set("suspend", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTrackMessageLength(value: Boolean): Self = this.set("trackMessageLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackMessageLength: Self = this.set("trackMessageLength", js.undefined)
+    @scala.inline
+    def setTransport(value: String): Self = this.set("transport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransport: Self = this.set("transport", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUuid: Self = this.set("uuid", js.undefined)
+    @scala.inline
+    def setWebSocketBinaryType(value: js.Any): Self = this.set("webSocketBinaryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebSocketBinaryType: Self = this.set("webSocketBinaryType", js.undefined)
+    @scala.inline
+    def setWebSocketImpl(value: js.Any): Self = this.set("webSocketImpl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebSocketImpl: Self = this.set("webSocketImpl", js.undefined)
+    @scala.inline
+    def setWebSocketPathDelimiter(value: String): Self = this.set("webSocketPathDelimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebSocketPathDelimiter: Self = this.set("webSocketPathDelimiter", js.undefined)
+    @scala.inline
+    def setWebSocketUrl(value: String): Self = this.set("webSocketUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebSocketUrl: Self = this.set("webSocketUrl", js.undefined)
+    @scala.inline
+    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+  }
+  
 }
 

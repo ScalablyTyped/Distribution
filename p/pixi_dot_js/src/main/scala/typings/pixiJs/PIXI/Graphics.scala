@@ -157,6 +157,7 @@ trait Graphics extends Container {
     * @param {number} [y=0]
     */
   /* protected */ def _initCurve(): Unit = js.native
+  /* protected */ def _initCurve(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   /* protected */ def _initCurve(x: Double): Unit = js.native
   /* protected */ def _initCurve(x: Double, y: Double): Unit = js.native
   /**
@@ -238,6 +239,7 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def beginFill(): Graphics = js.native
+  def beginFill(color: js.UndefOr[scala.Nothing], alpha: Double): Graphics = js.native
   def beginFill(color: Double): Graphics = js.native
   def beginFill(color: Double, alpha: Double): Graphics = js.native
   /**
@@ -415,6 +417,14 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def drawStar(x: Double, y: Double, points: Double, radius: Double): Graphics = js.native
+  def drawStar(
+    x: Double,
+    y: Double,
+    points: Double,
+    radius: Double,
+    innerRadius: js.UndefOr[scala.Nothing],
+    rotation: Double
+  ): Graphics = js.native
   def drawStar(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double): Graphics = js.native
   def drawStar(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double, rotation: Double): Graphics = js.native
   /**
@@ -467,9 +477,121 @@ trait Graphics extends Container {
     * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
     */
   def lineStyle(): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: js.UndefOr[scala.Nothing],
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: Double
+  ): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: Double,
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(width: js.UndefOr[scala.Nothing], color: js.UndefOr[scala.Nothing], alpha: Double): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    alignment: js.UndefOr[scala.Nothing],
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    alignment: Double
+  ): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    alignment: Double,
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(width: js.UndefOr[scala.Nothing], color: Double): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: js.UndefOr[scala.Nothing],
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: Double
+  ): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: Double,
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(width: js.UndefOr[scala.Nothing], color: Double, alpha: Double): Graphics = js.native
+  def lineStyle(
+    width: js.UndefOr[scala.Nothing],
+    color: Double,
+    alpha: Double,
+    alignment: js.UndefOr[scala.Nothing],
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(width: js.UndefOr[scala.Nothing], color: Double, alpha: Double, alignment: Double): Graphics = js.native
+  def lineStyle(width: js.UndefOr[scala.Nothing], color: Double, alpha: Double, alignment: Double, native: Boolean): Graphics = js.native
   def lineStyle(width: Double): Graphics = js.native
+  def lineStyle(
+    width: Double,
+    color: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: js.UndefOr[scala.Nothing],
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(
+    width: Double,
+    color: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: Double
+  ): Graphics = js.native
+  def lineStyle(
+    width: Double,
+    color: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: Double,
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(width: Double, color: js.UndefOr[scala.Nothing], alpha: Double): Graphics = js.native
+  def lineStyle(
+    width: Double,
+    color: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    alignment: js.UndefOr[scala.Nothing],
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(width: Double, color: js.UndefOr[scala.Nothing], alpha: Double, alignment: Double): Graphics = js.native
+  def lineStyle(width: Double, color: js.UndefOr[scala.Nothing], alpha: Double, alignment: Double, native: Boolean): Graphics = js.native
   def lineStyle(width: Double, color: Double): Graphics = js.native
+  def lineStyle(
+    width: Double,
+    color: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    alignment: js.UndefOr[scala.Nothing],
+    native: Boolean
+  ): Graphics = js.native
+  def lineStyle(width: Double, color: Double, alpha: js.UndefOr[scala.Nothing], alignment: Double): Graphics = js.native
+  def lineStyle(width: Double, color: Double, alpha: js.UndefOr[scala.Nothing], alignment: Double, native: Boolean): Graphics = js.native
   def lineStyle(width: Double, color: Double, alpha: Double): Graphics = js.native
+  def lineStyle(width: Double, color: Double, alpha: Double, alignment: js.UndefOr[scala.Nothing], native: Boolean): Graphics = js.native
   def lineStyle(width: Double, color: Double, alpha: Double, alignment: Double): Graphics = js.native
   def lineStyle(width: Double, color: Double, alpha: Double, alignment: Double, native: Boolean): Graphics = js.native
   /**

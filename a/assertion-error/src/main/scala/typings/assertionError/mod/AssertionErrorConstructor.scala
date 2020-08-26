@@ -13,7 +13,7 @@ trait AssertionErrorConstructor
      with Instantiable2[/* message */ String, /* props */ js.Object, AssertionError[js.Object]]
      with Instantiable3[
       /* message */ String, 
-      /* props */ js.Object, 
+      js.UndefOr[/* props */ js.Object], 
       /* ssf */ js.Function, 
       AssertionError[js.Object]
     ]

@@ -12,108 +12,183 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Config extends js.Object {
-  var apiEndpoint: js.UndefOr[String] = js.undefined
-  var batchEvents: js.UndefOr[Boolean] = js.undefined
-  var cookieExpiration: js.UndefOr[Double] = js.undefined
-  var cookieName: js.UndefOr[String] = js.undefined
-  var deviceId: js.UndefOr[String] = js.undefined
-  var deviceIdFromUrlParam: js.UndefOr[Boolean] = js.undefined
-  var domain: js.UndefOr[String] = js.undefined
-  var eventUploadPeriodMillis: js.UndefOr[Double] = js.undefined
-  var eventUploadThreshold: js.UndefOr[Double] = js.undefined
-  var forceHttps: js.UndefOr[Boolean] = js.undefined
-  var includeGclid: js.UndefOr[Boolean] = js.undefined
-  var includeReferrer: js.UndefOr[Boolean] = js.undefined
-  var includeUtm: js.UndefOr[Boolean] = js.undefined
-  var language: js.UndefOr[String] = js.undefined
-  var logLevel: js.UndefOr[DISABLE | ERROR | WARN | INFO] = js.undefined
-  var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var optOut: js.UndefOr[Boolean] = js.undefined
-  var platform: js.UndefOr[String] = js.undefined
-  var sameSiteCookie: js.UndefOr[Lax | Strict | None] = js.undefined
-  var saveEvents: js.UndefOr[Boolean] = js.undefined
-  var saveParamsReferrerOncePerSession: js.UndefOr[Boolean] = js.undefined
-  var savedMaxCount: js.UndefOr[Double] = js.undefined
-  var secureCookie: js.UndefOr[Boolean] = js.undefined
-  var sessionTimeout: js.UndefOr[Double] = js.undefined
-  var trackingOptions: js.UndefOr[Carrier] = js.undefined
-  var unsentIdentifyKey: js.UndefOr[String] = js.undefined
-  var unsentKey: js.UndefOr[String] = js.undefined
-  var unsetParamsReferrerOnNewSession: js.UndefOr[Boolean] = js.undefined
-  var uploadBatchSize: js.UndefOr[Double] = js.undefined
-  var useNativeDeviceInfo: js.UndefOr[Boolean] = js.undefined
-  var userId: js.UndefOr[String] = js.undefined
+  var apiEndpoint: js.UndefOr[String] = js.native
+  var batchEvents: js.UndefOr[Boolean] = js.native
+  var cookieExpiration: js.UndefOr[Double] = js.native
+  var cookieName: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.native
+  var deviceIdFromUrlParam: js.UndefOr[Boolean] = js.native
+  var domain: js.UndefOr[String] = js.native
+  var eventUploadPeriodMillis: js.UndefOr[Double] = js.native
+  var eventUploadThreshold: js.UndefOr[Double] = js.native
+  var forceHttps: js.UndefOr[Boolean] = js.native
+  var includeGclid: js.UndefOr[Boolean] = js.native
+  var includeReferrer: js.UndefOr[Boolean] = js.native
+  var includeUtm: js.UndefOr[Boolean] = js.native
+  var language: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[DISABLE | ERROR | WARN | INFO] = js.native
+  var onError: js.UndefOr[js.Function0[Unit]] = js.native
+  var optOut: js.UndefOr[Boolean] = js.native
+  var platform: js.UndefOr[String] = js.native
+  var sameSiteCookie: js.UndefOr[Lax | Strict | None] = js.native
+  var saveEvents: js.UndefOr[Boolean] = js.native
+  var saveParamsReferrerOncePerSession: js.UndefOr[Boolean] = js.native
+  var savedMaxCount: js.UndefOr[Double] = js.native
+  var secureCookie: js.UndefOr[Boolean] = js.native
+  var sessionTimeout: js.UndefOr[Double] = js.native
+  var trackingOptions: js.UndefOr[Carrier] = js.native
+  var unsentIdentifyKey: js.UndefOr[String] = js.native
+  var unsentKey: js.UndefOr[String] = js.native
+  var unsetParamsReferrerOnNewSession: js.UndefOr[Boolean] = js.native
+  var uploadBatchSize: js.UndefOr[Double] = js.native
+  var useNativeDeviceInfo: js.UndefOr[Boolean] = js.native
+  var userId: js.UndefOr[String] = js.native
 }
 
 object Config {
   @scala.inline
-  def apply(
-    apiEndpoint: String = null,
-    batchEvents: js.UndefOr[Boolean] = js.undefined,
-    cookieExpiration: js.UndefOr[Double] = js.undefined,
-    cookieName: String = null,
-    deviceId: String = null,
-    deviceIdFromUrlParam: js.UndefOr[Boolean] = js.undefined,
-    domain: String = null,
-    eventUploadPeriodMillis: js.UndefOr[Double] = js.undefined,
-    eventUploadThreshold: js.UndefOr[Double] = js.undefined,
-    forceHttps: js.UndefOr[Boolean] = js.undefined,
-    includeGclid: js.UndefOr[Boolean] = js.undefined,
-    includeReferrer: js.UndefOr[Boolean] = js.undefined,
-    includeUtm: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    logLevel: DISABLE | ERROR | WARN | INFO = null,
-    onError: () => Unit = null,
-    optOut: js.UndefOr[Boolean] = js.undefined,
-    platform: String = null,
-    sameSiteCookie: Lax | Strict | None = null,
-    saveEvents: js.UndefOr[Boolean] = js.undefined,
-    saveParamsReferrerOncePerSession: js.UndefOr[Boolean] = js.undefined,
-    savedMaxCount: js.UndefOr[Double] = js.undefined,
-    secureCookie: js.UndefOr[Boolean] = js.undefined,
-    sessionTimeout: js.UndefOr[Double] = js.undefined,
-    trackingOptions: Carrier = null,
-    unsentIdentifyKey: String = null,
-    unsentKey: String = null,
-    unsetParamsReferrerOnNewSession: js.UndefOr[Boolean] = js.undefined,
-    uploadBatchSize: js.UndefOr[Double] = js.undefined,
-    useNativeDeviceInfo: js.UndefOr[Boolean] = js.undefined,
-    userId: String = null
-  ): Config = {
+  def apply(): Config = {
     val __obj = js.Dynamic.literal()
-    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchEvents)) __obj.updateDynamic("batchEvents")(batchEvents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookieExpiration)) __obj.updateDynamic("cookieExpiration")(cookieExpiration.get.asInstanceOf[js.Any])
-    if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(deviceIdFromUrlParam)) __obj.updateDynamic("deviceIdFromUrlParam")(deviceIdFromUrlParam.get.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventUploadPeriodMillis)) __obj.updateDynamic("eventUploadPeriodMillis")(eventUploadPeriodMillis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventUploadThreshold)) __obj.updateDynamic("eventUploadThreshold")(eventUploadThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeGclid)) __obj.updateDynamic("includeGclid")(includeGclid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeReferrer)) __obj.updateDynamic("includeReferrer")(includeReferrer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeUtm)) __obj.updateDynamic("includeUtm")(includeUtm.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
-    if (!js.isUndefined(optOut)) __obj.updateDynamic("optOut")(optOut.get.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (sameSiteCookie != null) __obj.updateDynamic("sameSiteCookie")(sameSiteCookie.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveEvents)) __obj.updateDynamic("saveEvents")(saveEvents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveParamsReferrerOncePerSession)) __obj.updateDynamic("saveParamsReferrerOncePerSession")(saveParamsReferrerOncePerSession.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(savedMaxCount)) __obj.updateDynamic("savedMaxCount")(savedMaxCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureCookie)) __obj.updateDynamic("secureCookie")(secureCookie.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sessionTimeout)) __obj.updateDynamic("sessionTimeout")(sessionTimeout.get.asInstanceOf[js.Any])
-    if (trackingOptions != null) __obj.updateDynamic("trackingOptions")(trackingOptions.asInstanceOf[js.Any])
-    if (unsentIdentifyKey != null) __obj.updateDynamic("unsentIdentifyKey")(unsentIdentifyKey.asInstanceOf[js.Any])
-    if (unsentKey != null) __obj.updateDynamic("unsentKey")(unsentKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsetParamsReferrerOnNewSession)) __obj.updateDynamic("unsetParamsReferrerOnNewSession")(unsetParamsReferrerOnNewSession.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uploadBatchSize)) __obj.updateDynamic("uploadBatchSize")(uploadBatchSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDeviceInfo)) __obj.updateDynamic("useNativeDeviceInfo")(useNativeDeviceInfo.get.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
+  @scala.inline
+  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiEndpoint(value: String): Self = this.set("apiEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiEndpoint: Self = this.set("apiEndpoint", js.undefined)
+    @scala.inline
+    def setBatchEvents(value: Boolean): Self = this.set("batchEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchEvents: Self = this.set("batchEvents", js.undefined)
+    @scala.inline
+    def setCookieExpiration(value: Double): Self = this.set("cookieExpiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieExpiration: Self = this.set("cookieExpiration", js.undefined)
+    @scala.inline
+    def setCookieName(value: String): Self = this.set("cookieName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieName: Self = this.set("cookieName", js.undefined)
+    @scala.inline
+    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    @scala.inline
+    def setDeviceIdFromUrlParam(value: Boolean): Self = this.set("deviceIdFromUrlParam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceIdFromUrlParam: Self = this.set("deviceIdFromUrlParam", js.undefined)
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setEventUploadPeriodMillis(value: Double): Self = this.set("eventUploadPeriodMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventUploadPeriodMillis: Self = this.set("eventUploadPeriodMillis", js.undefined)
+    @scala.inline
+    def setEventUploadThreshold(value: Double): Self = this.set("eventUploadThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventUploadThreshold: Self = this.set("eventUploadThreshold", js.undefined)
+    @scala.inline
+    def setForceHttps(value: Boolean): Self = this.set("forceHttps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceHttps: Self = this.set("forceHttps", js.undefined)
+    @scala.inline
+    def setIncludeGclid(value: Boolean): Self = this.set("includeGclid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeGclid: Self = this.set("includeGclid", js.undefined)
+    @scala.inline
+    def setIncludeReferrer(value: Boolean): Self = this.set("includeReferrer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeReferrer: Self = this.set("includeReferrer", js.undefined)
+    @scala.inline
+    def setIncludeUtm(value: Boolean): Self = this.set("includeUtm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeUtm: Self = this.set("includeUtm", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLogLevel(value: DISABLE | ERROR | WARN | INFO): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    @scala.inline
+    def setOnError(value: () => Unit): Self = this.set("onError", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOptOut(value: Boolean): Self = this.set("optOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptOut: Self = this.set("optOut", js.undefined)
+    @scala.inline
+    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setSameSiteCookie(value: Lax | Strict | None): Self = this.set("sameSiteCookie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSameSiteCookie: Self = this.set("sameSiteCookie", js.undefined)
+    @scala.inline
+    def setSaveEvents(value: Boolean): Self = this.set("saveEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaveEvents: Self = this.set("saveEvents", js.undefined)
+    @scala.inline
+    def setSaveParamsReferrerOncePerSession(value: Boolean): Self = this.set("saveParamsReferrerOncePerSession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaveParamsReferrerOncePerSession: Self = this.set("saveParamsReferrerOncePerSession", js.undefined)
+    @scala.inline
+    def setSavedMaxCount(value: Double): Self = this.set("savedMaxCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavedMaxCount: Self = this.set("savedMaxCount", js.undefined)
+    @scala.inline
+    def setSecureCookie(value: Boolean): Self = this.set("secureCookie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecureCookie: Self = this.set("secureCookie", js.undefined)
+    @scala.inline
+    def setSessionTimeout(value: Double): Self = this.set("sessionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionTimeout: Self = this.set("sessionTimeout", js.undefined)
+    @scala.inline
+    def setTrackingOptions(value: Carrier): Self = this.set("trackingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingOptions: Self = this.set("trackingOptions", js.undefined)
+    @scala.inline
+    def setUnsentIdentifyKey(value: String): Self = this.set("unsentIdentifyKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsentIdentifyKey: Self = this.set("unsentIdentifyKey", js.undefined)
+    @scala.inline
+    def setUnsentKey(value: String): Self = this.set("unsentKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsentKey: Self = this.set("unsentKey", js.undefined)
+    @scala.inline
+    def setUnsetParamsReferrerOnNewSession(value: Boolean): Self = this.set("unsetParamsReferrerOnNewSession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsetParamsReferrerOnNewSession: Self = this.set("unsetParamsReferrerOnNewSession", js.undefined)
+    @scala.inline
+    def setUploadBatchSize(value: Double): Self = this.set("uploadBatchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadBatchSize: Self = this.set("uploadBatchSize", js.undefined)
+    @scala.inline
+    def setUseNativeDeviceInfo(value: Boolean): Self = this.set("useNativeDeviceInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseNativeDeviceInfo: Self = this.set("useNativeDeviceInfo", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

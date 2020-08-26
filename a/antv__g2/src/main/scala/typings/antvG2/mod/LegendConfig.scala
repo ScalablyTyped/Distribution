@@ -21,111 +21,186 @@ import typings.antvG2.antvG2Strings.multiple
 import typings.antvG2.antvG2Strings.right
 import typings.antvG2.antvG2Strings.single
 import typings.antvG2.antvG2Strings.top
-import typings.antvG2.antvG2Strings.vertica
+import typings.antvG2.antvG2Strings.vertical
 import typings.antvG2.mod.Styles.text
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LegendConfig extends js.Object {
-  var allowAllCanceled: js.UndefOr[Double] = js.undefined
-  var background: js.UndefOr[Fill] = js.undefined
-  var clickable: js.UndefOr[Boolean] = js.undefined
-  var container: js.UndefOr[String] = js.undefined
-  var containerTpl: js.UndefOr[String] = js.undefined
-  var custom: js.UndefOr[Double] = js.undefined
-  var defaultClickHandlerEnabled: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var hoverable: js.UndefOr[Boolean] = js.undefined
-  var itemFormatter: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
-  var itemGap: js.UndefOr[Double] = js.undefined
-  var itemMarginBottom: js.UndefOr[Double] = js.undefined
-  var itemTpl: js.UndefOr[String] = js.undefined
-  var itemWidth: js.UndefOr[Double] = js.undefined
-  var items: js.UndefOr[js.Array[Marker]] = js.undefined
-  var layout: js.UndefOr[vertica | horizontal] = js.undefined
-  var marker: js.UndefOr[String | js.Function] = js.undefined
-  var offsetX: js.UndefOr[Double] = js.undefined
-  var offsetY: js.UndefOr[Double] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
-  var onHover: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
+  var allowAllCanceled: js.UndefOr[Double] = js.native
+  var background: js.UndefOr[Fill] = js.native
+  var clickable: js.UndefOr[Boolean] = js.native
+  var container: js.UndefOr[String] = js.native
+  var containerTpl: js.UndefOr[String] = js.native
+  var custom: js.UndefOr[Double] = js.native
+  var defaultClickHandlerEnabled: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.native
+  var itemFormatter: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+  var itemGap: js.UndefOr[Double] = js.native
+  var itemMarginBottom: js.UndefOr[Double] = js.native
+  var itemTpl: js.UndefOr[String] = js.native
+  var itemWidth: js.UndefOr[Double] = js.native
+  var items: js.UndefOr[js.Array[Marker]] = js.native
+  var layout: js.UndefOr[vertical | horizontal] = js.native
+  var marker: js.UndefOr[String | js.Function] = js.native
+  var offsetX: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.native
+  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
+  var onHover: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
   var position: js.UndefOr[
     top | bottom | left | right | `left-top` | `left-center` | `left-bottom` | `right-top` | `right-center` | `right-bottom` | `top-left` | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right`
-  ] = js.undefined
-  var selectedMode: js.UndefOr[single | multiple] = js.undefined
-  var slidable: js.UndefOr[Boolean] = js.undefined
-  var textStyle: js.UndefOr[text] = js.undefined
-  var title: js.UndefOr[text] = js.undefined
-  var unCheckColor: js.UndefOr[String] = js.undefined
-  var useHtml: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var selectedMode: js.UndefOr[single | multiple] = js.native
+  var slidable: js.UndefOr[Boolean] = js.native
+  var textStyle: js.UndefOr[text] = js.native
+  var title: js.UndefOr[text] = js.native
+  var unCheckColor: js.UndefOr[String] = js.native
+  var useHtml: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object LegendConfig {
   @scala.inline
-  def apply(
-    allowAllCanceled: js.UndefOr[Double] = js.undefined,
-    background: Fill = null,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    container: String = null,
-    containerTpl: String = null,
-    custom: js.UndefOr[Double] = js.undefined,
-    defaultClickHandlerEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    hoverable: js.UndefOr[Boolean] = js.undefined,
-    itemFormatter: /* value */ String => String = null,
-    itemGap: js.UndefOr[Double] = js.undefined,
-    itemMarginBottom: js.UndefOr[Double] = js.undefined,
-    itemTpl: String = null,
-    itemWidth: js.UndefOr[Double] = js.undefined,
-    items: js.Array[Marker] = null,
-    layout: vertica | horizontal = null,
-    marker: String | js.Function = null,
-    offsetX: js.UndefOr[Double] = js.undefined,
-    offsetY: js.UndefOr[Double] = js.undefined,
-    onClick: /* e */ MouseEvent => Unit = null,
-    onHover: /* e */ MouseEvent => Unit = null,
-    position: top | bottom | left | right | `left-top` | `left-center` | `left-bottom` | `right-top` | `right-center` | `right-bottom` | `top-left` | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right` = null,
-    selectedMode: single | multiple = null,
-    slidable: js.UndefOr[Boolean] = js.undefined,
-    textStyle: text = null,
-    title: text = null,
-    unCheckColor: String = null,
-    useHtml: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): LegendConfig = {
+  def apply(): LegendConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAllCanceled)) __obj.updateDynamic("allowAllCanceled")(allowAllCanceled.get.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerTpl != null) __obj.updateDynamic("containerTpl")(containerTpl.asInstanceOf[js.Any])
-    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultClickHandlerEnabled)) __obj.updateDynamic("defaultClickHandlerEnabled")(defaultClickHandlerEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.get.asInstanceOf[js.Any])
-    if (itemFormatter != null) __obj.updateDynamic("itemFormatter")(js.Any.fromFunction1(itemFormatter))
-    if (!js.isUndefined(itemGap)) __obj.updateDynamic("itemGap")(itemGap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemMarginBottom)) __obj.updateDynamic("itemMarginBottom")(itemMarginBottom.get.asInstanceOf[js.Any])
-    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemWidth)) __obj.updateDynamic("itemWidth")(itemWidth.get.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (selectedMode != null) __obj.updateDynamic("selectedMode")(selectedMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(slidable)) __obj.updateDynamic("slidable")(slidable.get.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (unCheckColor != null) __obj.updateDynamic("unCheckColor")(unCheckColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHtml)) __obj.updateDynamic("useHtml")(useHtml.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendConfig]
   }
+  @scala.inline
+  implicit class LegendConfigOps[Self <: LegendConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowAllCanceled(value: Double): Self = this.set("allowAllCanceled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAllCanceled: Self = this.set("allowAllCanceled", js.undefined)
+    @scala.inline
+    def setBackground(value: Fill): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setClickable(value: Boolean): Self = this.set("clickable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickable: Self = this.set("clickable", js.undefined)
+    @scala.inline
+    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setContainerTpl(value: String): Self = this.set("containerTpl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerTpl: Self = this.set("containerTpl", js.undefined)
+    @scala.inline
+    def setCustom(value: Double): Self = this.set("custom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom: Self = this.set("custom", js.undefined)
+    @scala.inline
+    def setDefaultClickHandlerEnabled(value: Boolean): Self = this.set("defaultClickHandlerEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultClickHandlerEnabled: Self = this.set("defaultClickHandlerEnabled", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHoverable(value: Boolean): Self = this.set("hoverable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverable: Self = this.set("hoverable", js.undefined)
+    @scala.inline
+    def setItemFormatter(value: /* value */ String => String): Self = this.set("itemFormatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemFormatter: Self = this.set("itemFormatter", js.undefined)
+    @scala.inline
+    def setItemGap(value: Double): Self = this.set("itemGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemGap: Self = this.set("itemGap", js.undefined)
+    @scala.inline
+    def setItemMarginBottom(value: Double): Self = this.set("itemMarginBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemMarginBottom: Self = this.set("itemMarginBottom", js.undefined)
+    @scala.inline
+    def setItemTpl(value: String): Self = this.set("itemTpl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemTpl: Self = this.set("itemTpl", js.undefined)
+    @scala.inline
+    def setItemWidth(value: Double): Self = this.set("itemWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemWidth: Self = this.set("itemWidth", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: Marker*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[Marker]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLayout(value: vertical | horizontal): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setMarker(value: String | js.Function): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+    @scala.inline
+    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    @scala.inline
+    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* e */ MouseEvent => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnHover(value: /* e */ MouseEvent => Unit): Self = this.set("onHover", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnHover: Self = this.set("onHover", js.undefined)
+    @scala.inline
+    def setPosition(
+      value: top | bottom | left | right | `left-top` | `left-center` | `left-bottom` | `right-top` | `right-center` | `right-bottom` | `top-left` | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right`
+    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSelectedMode(value: single | multiple): Self = this.set("selectedMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedMode: Self = this.set("selectedMode", js.undefined)
+    @scala.inline
+    def setSlidable(value: Boolean): Self = this.set("slidable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlidable: Self = this.set("slidable", js.undefined)
+    @scala.inline
+    def setTextStyle(value: text): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    @scala.inline
+    def setTitle(value: text): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUnCheckColor(value: String): Self = this.set("unCheckColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnCheckColor: Self = this.set("unCheckColor", js.undefined)
+    @scala.inline
+    def setUseHtml(value: Boolean): Self = this.set("useHtml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHtml: Self = this.set("useHtml", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

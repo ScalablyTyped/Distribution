@@ -11,8 +11,8 @@ Check if something is a generator function
 | Full name          | is-generator-fn |
 | Keywords           | generator, function, func, fn, is, check, detect, yield, type |
 | # releases         | 3 |
-| # dependents       | 31 |
-| # downloads        | 184646393 |
+| # dependents       | 32 |
+| # downloads        | 192891109 |
 | # stars            | 0 |
 
 ## Links

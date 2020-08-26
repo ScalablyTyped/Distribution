@@ -18,10 +18,28 @@ trait Scte35SpliceInsertScheduleActionSettings extends js.Object {
 
 object Scte35SpliceInsertScheduleActionSettings {
   @scala.inline
-  def apply(SpliceEventId: longMin0Max4294967295, Duration: js.UndefOr[longMin0Max8589934591] = js.undefined): Scte35SpliceInsertScheduleActionSettings = {
+  def apply(SpliceEventId: longMin0Max4294967295): Scte35SpliceInsertScheduleActionSettings = {
     val __obj = js.Dynamic.literal(SpliceEventId = SpliceEventId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35SpliceInsertScheduleActionSettings]
   }
+  @scala.inline
+  implicit class Scte35SpliceInsertScheduleActionSettingsOps[Self <: Scte35SpliceInsertScheduleActionSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpliceEventId(value: longMin0Max4294967295): Self = this.set("SpliceEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDuration(value: longMin0Max8589934591): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+  }
+  
 }
 

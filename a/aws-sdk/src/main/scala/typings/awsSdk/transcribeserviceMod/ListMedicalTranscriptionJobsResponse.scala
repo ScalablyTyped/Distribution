@@ -22,16 +22,36 @@ trait ListMedicalTranscriptionJobsResponse extends js.Object {
 
 object ListMedicalTranscriptionJobsResponse {
   @scala.inline
-  def apply(
-    MedicalTranscriptionJobSummaries: MedicalTranscriptionJobSummaries = null,
-    NextToken: NextToken = null,
-    Status: TranscriptionJobStatus = null
-  ): ListMedicalTranscriptionJobsResponse = {
+  def apply(): ListMedicalTranscriptionJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (MedicalTranscriptionJobSummaries != null) __obj.updateDynamic("MedicalTranscriptionJobSummaries")(MedicalTranscriptionJobSummaries.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMedicalTranscriptionJobsResponse]
   }
+  @scala.inline
+  implicit class ListMedicalTranscriptionJobsResponseOps[Self <: ListMedicalTranscriptionJobsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMedicalTranscriptionJobSummariesVarargs(value: MedicalTranscriptionJobSummary*): Self = this.set("MedicalTranscriptionJobSummaries", js.Array(value :_*))
+    @scala.inline
+    def setMedicalTranscriptionJobSummaries(value: MedicalTranscriptionJobSummaries): Self = this.set("MedicalTranscriptionJobSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedicalTranscriptionJobSummaries: Self = this.set("MedicalTranscriptionJobSummaries", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStatus(value: TranscriptionJobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

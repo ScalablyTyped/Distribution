@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createSessionCache extends js.Object {
   def apply(): SessionCache = js.native
+  def apply(cache: js.UndefOr[scala.Nothing], capacity: Double): SessionCache = js.native
   def apply(cache: StringDictionary[Session]): SessionCache = js.native
   def apply(cache: StringDictionary[Session], capacity: Double): SessionCache = js.native
   def apply(cache: SessionCache): SessionCache = js.native

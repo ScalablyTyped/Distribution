@@ -135,44 +135,106 @@ trait SchemaReportRequest extends js.Object {
 
 object SchemaReportRequest {
   @scala.inline
-  def apply(
-    cohortGroup: SchemaCohortGroup = null,
-    dateRanges: js.Array[SchemaDateRange] = null,
-    dimensionFilterClauses: js.Array[SchemaDimensionFilterClause] = null,
-    dimensions: js.Array[SchemaDimension] = null,
-    filtersExpression: String = null,
-    hideTotals: js.UndefOr[Boolean] = js.undefined,
-    hideValueRanges: js.UndefOr[Boolean] = js.undefined,
-    includeEmptyRows: js.UndefOr[Boolean] = js.undefined,
-    metricFilterClauses: js.Array[SchemaMetricFilterClause] = null,
-    metrics: js.Array[SchemaMetric] = null,
-    orderBys: js.Array[SchemaOrderBy] = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    pivots: js.Array[SchemaPivot] = null,
-    samplingLevel: String = null,
-    segments: js.Array[SchemaSegment] = null,
-    viewId: String = null
-  ): SchemaReportRequest = {
+  def apply(): SchemaReportRequest = {
     val __obj = js.Dynamic.literal()
-    if (cohortGroup != null) __obj.updateDynamic("cohortGroup")(cohortGroup.asInstanceOf[js.Any])
-    if (dateRanges != null) __obj.updateDynamic("dateRanges")(dateRanges.asInstanceOf[js.Any])
-    if (dimensionFilterClauses != null) __obj.updateDynamic("dimensionFilterClauses")(dimensionFilterClauses.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (filtersExpression != null) __obj.updateDynamic("filtersExpression")(filtersExpression.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTotals)) __obj.updateDynamic("hideTotals")(hideTotals.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideValueRanges)) __obj.updateDynamic("hideValueRanges")(hideValueRanges.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeEmptyRows)) __obj.updateDynamic("includeEmptyRows")(includeEmptyRows.get.asInstanceOf[js.Any])
-    if (metricFilterClauses != null) __obj.updateDynamic("metricFilterClauses")(metricFilterClauses.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (orderBys != null) __obj.updateDynamic("orderBys")(orderBys.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (pivots != null) __obj.updateDynamic("pivots")(pivots.asInstanceOf[js.Any])
-    if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel.asInstanceOf[js.Any])
-    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
-    if (viewId != null) __obj.updateDynamic("viewId")(viewId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReportRequest]
   }
+  @scala.inline
+  implicit class SchemaReportRequestOps[Self <: SchemaReportRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCohortGroup(value: SchemaCohortGroup): Self = this.set("cohortGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCohortGroup: Self = this.set("cohortGroup", js.undefined)
+    @scala.inline
+    def setDateRangesVarargs(value: SchemaDateRange*): Self = this.set("dateRanges", js.Array(value :_*))
+    @scala.inline
+    def setDateRanges(value: js.Array[SchemaDateRange]): Self = this.set("dateRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateRanges: Self = this.set("dateRanges", js.undefined)
+    @scala.inline
+    def setDimensionFilterClausesVarargs(value: SchemaDimensionFilterClause*): Self = this.set("dimensionFilterClauses", js.Array(value :_*))
+    @scala.inline
+    def setDimensionFilterClauses(value: js.Array[SchemaDimensionFilterClause]): Self = this.set("dimensionFilterClauses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionFilterClauses: Self = this.set("dimensionFilterClauses", js.undefined)
+    @scala.inline
+    def setDimensionsVarargs(value: SchemaDimension*): Self = this.set("dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: js.Array[SchemaDimension]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def setFiltersExpression(value: String): Self = this.set("filtersExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiltersExpression: Self = this.set("filtersExpression", js.undefined)
+    @scala.inline
+    def setHideTotals(value: Boolean): Self = this.set("hideTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideTotals: Self = this.set("hideTotals", js.undefined)
+    @scala.inline
+    def setHideValueRanges(value: Boolean): Self = this.set("hideValueRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideValueRanges: Self = this.set("hideValueRanges", js.undefined)
+    @scala.inline
+    def setIncludeEmptyRows(value: Boolean): Self = this.set("includeEmptyRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeEmptyRows: Self = this.set("includeEmptyRows", js.undefined)
+    @scala.inline
+    def setMetricFilterClausesVarargs(value: SchemaMetricFilterClause*): Self = this.set("metricFilterClauses", js.Array(value :_*))
+    @scala.inline
+    def setMetricFilterClauses(value: js.Array[SchemaMetricFilterClause]): Self = this.set("metricFilterClauses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricFilterClauses: Self = this.set("metricFilterClauses", js.undefined)
+    @scala.inline
+    def setMetricsVarargs(value: SchemaMetric*): Self = this.set("metrics", js.Array(value :_*))
+    @scala.inline
+    def setMetrics(value: js.Array[SchemaMetric]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    @scala.inline
+    def setOrderBysVarargs(value: SchemaOrderBy*): Self = this.set("orderBys", js.Array(value :_*))
+    @scala.inline
+    def setOrderBys(value: js.Array[SchemaOrderBy]): Self = this.set("orderBys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBys: Self = this.set("orderBys", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPivotsVarargs(value: SchemaPivot*): Self = this.set("pivots", js.Array(value :_*))
+    @scala.inline
+    def setPivots(value: js.Array[SchemaPivot]): Self = this.set("pivots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivots: Self = this.set("pivots", js.undefined)
+    @scala.inline
+    def setSamplingLevel(value: String): Self = this.set("samplingLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamplingLevel: Self = this.set("samplingLevel", js.undefined)
+    @scala.inline
+    def setSegmentsVarargs(value: SchemaSegment*): Self = this.set("segments", js.Array(value :_*))
+    @scala.inline
+    def setSegments(value: js.Array[SchemaSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegments: Self = this.set("segments", js.undefined)
+    @scala.inline
+    def setViewId(value: String): Self = this.set("viewId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewId: Self = this.set("viewId", js.undefined)
+  }
+  
 }
 

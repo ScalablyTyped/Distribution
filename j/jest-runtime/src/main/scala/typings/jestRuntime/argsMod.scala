@@ -1,6 +1,5 @@
 package typings.jestRuntime
 
-import typings.yargs.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +10,11 @@ object argsMod extends js.Object {
   val usage: /* "Usage: $0 [--config=<pathToConfigFile>] <file>" */ String = js.native
   @js.native
   object options extends js.Object {
-    var cache: Options = js.native
-    var config: Options = js.native
-    var debug: Options = js.native
-    var version: Options = js.native
-    var watchman: Options = js.native
+    var cache: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any = js.native
+    var config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any = js.native
+    var debug: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any = js.native
+    var version: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any = js.native
+    var watchman: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any = js.native
   }
   
 }

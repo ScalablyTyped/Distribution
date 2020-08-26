@@ -41,6 +41,11 @@ abstract class ClientAction protected () extends Element {
   def containerAsStaticImageViewer: StaticImageViewer = js.native
   def containerAsTextBox: TextBox = js.native
   def containerAsWidgetValue: WidgetValue = js.native
+  /**
+    * In version 8.12.0: introduced
+    */
+  def disabledDuringExecution: Boolean = js.native
+  def disabledDuringExecution_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

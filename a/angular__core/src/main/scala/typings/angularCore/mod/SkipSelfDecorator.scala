@@ -21,9 +21,7 @@ trait SkipSelfDecorator extends Instantiable0[SkipSelf] {
     * <code-example path="core/di/ts/metadata_spec.ts" region="SkipSelf">
     * </code-example>
     *
-    * Learn more in the
-    * [Dependency Injection guide](guide/dependency-injection-in-action#skip).
-    *
+    * @see [Dependency Injection guide](guide/dependency-injection-in-action#skip).
     * @see `Self`
     * @see `Optional`
     *

@@ -86,48 +86,102 @@ trait Nodegroup extends js.Object {
 
 object Nodegroup {
   @scala.inline
-  def apply(
-    amiType: AMITypes = null,
-    clusterName: String = null,
-    createdAt: Timestamp = null,
-    diskSize: js.UndefOr[BoxedInteger] = js.undefined,
-    health: NodegroupHealth = null,
-    instanceTypes: StringList = null,
-    labels: labelsMap = null,
-    modifiedAt: Timestamp = null,
-    nodeRole: String = null,
-    nodegroupArn: String = null,
-    nodegroupName: String = null,
-    releaseVersion: String = null,
-    remoteAccess: RemoteAccessConfig = null,
-    resources: NodegroupResources = null,
-    scalingConfig: NodegroupScalingConfig = null,
-    status: NodegroupStatus = null,
-    subnets: StringList = null,
-    tags: TagMap = null,
-    version: String = null
-  ): Nodegroup = {
+  def apply(): Nodegroup = {
     val __obj = js.Dynamic.literal()
-    if (amiType != null) __obj.updateDynamic("amiType")(amiType.asInstanceOf[js.Any])
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(diskSize)) __obj.updateDynamic("diskSize")(diskSize.get.asInstanceOf[js.Any])
-    if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
-    if (instanceTypes != null) __obj.updateDynamic("instanceTypes")(instanceTypes.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (modifiedAt != null) __obj.updateDynamic("modifiedAt")(modifiedAt.asInstanceOf[js.Any])
-    if (nodeRole != null) __obj.updateDynamic("nodeRole")(nodeRole.asInstanceOf[js.Any])
-    if (nodegroupArn != null) __obj.updateDynamic("nodegroupArn")(nodegroupArn.asInstanceOf[js.Any])
-    if (nodegroupName != null) __obj.updateDynamic("nodegroupName")(nodegroupName.asInstanceOf[js.Any])
-    if (releaseVersion != null) __obj.updateDynamic("releaseVersion")(releaseVersion.asInstanceOf[js.Any])
-    if (remoteAccess != null) __obj.updateDynamic("remoteAccess")(remoteAccess.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (scalingConfig != null) __obj.updateDynamic("scalingConfig")(scalingConfig.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nodegroup]
   }
+  @scala.inline
+  implicit class NodegroupOps[Self <: Nodegroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmiType(value: AMITypes): Self = this.set("amiType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmiType: Self = this.set("amiType", js.undefined)
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDiskSize(value: BoxedInteger): Self = this.set("diskSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSize: Self = this.set("diskSize", js.undefined)
+    @scala.inline
+    def setHealth(value: NodegroupHealth): Self = this.set("health", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealth: Self = this.set("health", js.undefined)
+    @scala.inline
+    def setInstanceTypesVarargs(value: String*): Self = this.set("instanceTypes", js.Array(value :_*))
+    @scala.inline
+    def setInstanceTypes(value: StringList): Self = this.set("instanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTypes: Self = this.set("instanceTypes", js.undefined)
+    @scala.inline
+    def setLabels(value: labelsMap): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setModifiedAt(value: Timestamp): Self = this.set("modifiedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedAt: Self = this.set("modifiedAt", js.undefined)
+    @scala.inline
+    def setNodeRole(value: String): Self = this.set("nodeRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeRole: Self = this.set("nodeRole", js.undefined)
+    @scala.inline
+    def setNodegroupArn(value: String): Self = this.set("nodegroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodegroupArn: Self = this.set("nodegroupArn", js.undefined)
+    @scala.inline
+    def setNodegroupName(value: String): Self = this.set("nodegroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodegroupName: Self = this.set("nodegroupName", js.undefined)
+    @scala.inline
+    def setReleaseVersion(value: String): Self = this.set("releaseVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseVersion: Self = this.set("releaseVersion", js.undefined)
+    @scala.inline
+    def setRemoteAccess(value: RemoteAccessConfig): Self = this.set("remoteAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteAccess: Self = this.set("remoteAccess", js.undefined)
+    @scala.inline
+    def setResources(value: NodegroupResources): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setScalingConfig(value: NodegroupScalingConfig): Self = this.set("scalingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingConfig: Self = this.set("scalingConfig", js.undefined)
+    @scala.inline
+    def setStatus(value: NodegroupStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: String*): Self = this.set("subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: StringList): Self = this.set("subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("subnets", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

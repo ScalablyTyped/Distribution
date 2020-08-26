@@ -15,6 +15,13 @@ object matchChildrenMod extends js.Object {
     nodes: js.Array[RouteNode],
     pathSegment: String,
     currentMatch: MatchResponse,
+    options: js.UndefOr[scala.Nothing],
+    consumedBefore: String
+  ): MatchResponse | Null = js.native
+  def default(
+    nodes: js.Array[RouteNode],
+    pathSegment: String,
+    currentMatch: MatchResponse,
     options: MatchOptions
   ): MatchResponse | Null = js.native
   def default(

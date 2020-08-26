@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * Gridstack Options
   * Defines the options for a Gridstack
   */
+@js.native
 trait GridstackOptions extends js.Object {
   /**
     * accept widgets dragged from other grids or from outside (default: `false`). Can be:
@@ -19,19 +20,19 @@ trait GridstackOptions extends js.Object {
     */
   var acceptWidgets: js.UndefOr[
     Boolean | String | (js.Function2[/* i */ Double, /* element */ Element, Boolean])
-  ] = js.undefined
+  ] = js.native
   /**
     * if true the resizing handles are shown even if the user is not hovering over the widget (default?: false)
     */
-  var alwaysShowResizeHandle: js.UndefOr[Boolean] = js.undefined
+  var alwaysShowResizeHandle: js.UndefOr[Boolean] = js.native
   /**
     * turns animation on (default?: true)
     */
-  var animate: js.UndefOr[Boolean] = js.undefined
+  var animate: js.UndefOr[Boolean] = js.native
   /**
     * if false gridstack will not initialize existing items (default?: true)
     */
-  var auto: js.UndefOr[Boolean] = js.undefined
+  var auto: js.UndefOr[Boolean] = js.native
   /**
     * one cell height (default?: 60). Can be:
     *  an integer (px)
@@ -39,182 +40,266 @@ trait GridstackOptions extends js.Object {
     *  0 or null, in which case the library will not generate styles for rows. Everything must be defined in CSS files.
     *  'auto' - height will be calculated to match cell width (initial square grid).
     */
-  var cellHeight: js.UndefOr[Double | String] = js.undefined
+  var cellHeight: js.UndefOr[Double | String] = js.native
   /**
     * (internal) unit for cellHeight (default? 'px') which is set when a string cellHeight with a unit is passed (ex: '10rem')
     */
-  var cellHeightUnit: js.UndefOr[String] = js.undefined
+  var cellHeightUnit: js.UndefOr[String] = js.native
   /**
     * number of columns (default?: 12). Note: IF you change this, CSS also have to change. See https://github.com/gridstack/gridstack.js#change-grid-columns
     */
-  var column: js.UndefOr[Double] = js.undefined
+  var column: js.UndefOr[Double] = js.native
   /** class that implement drag'n'drop functionality for gridstack. If false grid will be static.
     * (default?: null - first available plugin will be used)
     */
-  var ddPlugin: js.UndefOr[Boolean | Null | js.Any] = js.undefined
+  var ddPlugin: js.UndefOr[Boolean | Null | js.Any] = js.native
   /** disallows dragging of widgets (default?: false) */
-  var disableDrag: js.UndefOr[Boolean] = js.undefined
+  var disableDrag: js.UndefOr[Boolean] = js.native
   /** disables the onColumnMode when the window width is less than minWidth (default?: false) */
-  var disableOneColumnMode: js.UndefOr[Boolean] = js.undefined
+  var disableOneColumnMode: js.UndefOr[Boolean] = js.native
   /** disallows resizing of widgets (default?: false). */
-  var disableResize: js.UndefOr[Boolean] = js.undefined
+  var disableResize: js.UndefOr[Boolean] = js.native
   /**
     * let user drag nested grid items out of a parent or not (default false)
     */
-  var dragOut: js.UndefOr[Boolean] = js.undefined
+  var dragOut: js.UndefOr[Boolean] = js.native
   /**
     * allows to override UI draggable options. (default?: { handle?: '.grid-stack-item-content', scroll?: true, appendTo?: 'body', containment: null })
     */
-  var draggable: js.UndefOr[js.Object] = js.undefined
+  var draggable: js.UndefOr[js.Object] = js.native
   /**
     * enable floating widgets (default?: false) See example (http://gridstack.github.io/gridstack.js/demo/float.html)
     */
-  var float: js.UndefOr[Boolean] = js.undefined
+  var float: js.UndefOr[Boolean] = js.native
   /**
     * draggable handle selector (default?: '.grid-stack-item-content')
     */
-  var handle: js.UndefOr[String] = js.undefined
+  var handle: js.UndefOr[String] = js.native
   /** draggable handle class (e.g. 'grid-stack-item-content'). If set 'handle' is ignored (default?: null) */
-  var handleClass: js.UndefOr[String] = js.undefined
+  var handleClass: js.UndefOr[String] = js.native
   /**
     * widget class (default?: 'grid-stack-item')
     */
-  var itemClass: js.UndefOr[String] = js.undefined
+  var itemClass: js.UndefOr[String] = js.native
   /**
     * maximum rows amount. Default? is 0 which means no maximum rows
     */
-  var maxRow: js.UndefOr[Double] = js.undefined
+  var maxRow: js.UndefOr[Double] = js.native
   /** 
     * minimum rows amount. Default is `0`. You can also do this with `min-height` CSS attribute
     * on the grid div in pixels, which will round to the closest row.
     */
-  var minRow: js.UndefOr[Double] = js.undefined
+  var minRow: js.UndefOr[Double] = js.native
   /**
     * minimal width. If window width is less, grid will be shown in one column mode (default?: 768)
     */
-  var minWidth: js.UndefOr[Double] = js.undefined
+  var minWidth: js.UndefOr[Double] = js.native
   /**
     * set to true if you want oneColumnMode to use the DOM order and ignore x,y from normal multi column 
     * layouts during sorting. This enables you to have custom 1 column layout that differ from the rest. (default?: false)
     */
-  var oneColumnModeDomSort: js.UndefOr[Boolean] = js.undefined
+  var oneColumnModeDomSort: js.UndefOr[Boolean] = js.native
   /**
     * class for placeholder (default?: 'grid-stack-placeholder')
     */
-  var placeholderClass: js.UndefOr[String] = js.undefined
+  var placeholderClass: js.UndefOr[String] = js.native
   /** placeholder default content (default?: '') */
-  var placeholderText: js.UndefOr[String] = js.undefined
+  var placeholderText: js.UndefOr[String] = js.native
   /**
     * if true widgets could be removed by dragging outside of the grid. It could also be a selector string,
     * in this case widgets will be removed by dropping them there (default?: false)
     * See example (http://gridstack.github.io/gridstack.js/demo/two.html)
     */
-  var removable: js.UndefOr[Boolean | String] = js.undefined
+  var removable: js.UndefOr[Boolean | String] = js.native
   /**
     * time in milliseconds before widget is being removed while dragging outside of the grid. (default?: 2000)
     */
-  var removeTimeout: js.UndefOr[Double] = js.undefined
+  var removeTimeout: js.UndefOr[Double] = js.native
   /**
     * allows to override UI resizable options. (default?: { autoHide?: true, handles?: 'se' })
     */
-  var resizable: js.UndefOr[js.Object] = js.undefined
+  var resizable: js.UndefOr[js.Object] = js.native
   /**
     * fix grid number of rows. This is a shortcut of writing `minRow:N, maxRow:N`.
     * (default `0` no constrain)
     */
-  var row: js.UndefOr[Double] = js.undefined
+  var row: js.UndefOr[Double] = js.native
   /**
     * if true turns grid to RTL. Possible values are true, false, 'auto' (default?: 'auto')
     * See [example](http://gridstack.github.io/gridstack.js/demo/rtl.html)
     */
-  var rtl: js.UndefOr[Boolean | auto] = js.undefined
+  var rtl: js.UndefOr[Boolean | auto] = js.native
   /**
     * removes drag&drop&resize (default `false`).
     * If `true` widgets are not movable/resizable by the user, but code can still move and oneColumnMode will still work.
     * You don't even need jQueryUI draggable/resizable.
     * A CSS class `grid-stack-static` is also added to the container.
     */
-  var staticGrid: js.UndefOr[Boolean] = js.undefined
+  var staticGrid: js.UndefOr[Boolean] = js.native
+  /** if `true` will add style element to `<head>` otherwise will add it to element's parent node (default `false`). */
+  var styleInHead: js.UndefOr[Boolean] = js.native
   /**
     * vertical gap size (default?: 20). Can be:
     *  an integer (px)
     *  a string (ex: '2em', '20px', '2rem')
     */
-  var verticalMargin: js.UndefOr[Double | String] = js.undefined
+  var verticalMargin: js.UndefOr[Double | String] = js.native
   /**
     * (internal) unit for verticalMargin (default? 'px') set when `verticalMargin` is set as string with unit (ex: 2rem')
     */
-  var verticalMarginUnit: js.UndefOr[String] = js.undefined
+  var verticalMarginUnit: js.UndefOr[String] = js.native
 }
 
 object GridstackOptions {
   @scala.inline
-  def apply(
-    acceptWidgets: Boolean | String | (js.Function2[/* i */ Double, /* element */ Element, Boolean]) = null,
-    alwaysShowResizeHandle: js.UndefOr[Boolean] = js.undefined,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    auto: js.UndefOr[Boolean] = js.undefined,
-    cellHeight: Double | String = null,
-    cellHeightUnit: String = null,
-    column: js.UndefOr[Double] = js.undefined,
-    ddPlugin: js.UndefOr[Null | Boolean | js.Any] = js.undefined,
-    disableDrag: js.UndefOr[Boolean] = js.undefined,
-    disableOneColumnMode: js.UndefOr[Boolean] = js.undefined,
-    disableResize: js.UndefOr[Boolean] = js.undefined,
-    dragOut: js.UndefOr[Boolean] = js.undefined,
-    draggable: js.Object = null,
-    float: js.UndefOr[Boolean] = js.undefined,
-    handle: String = null,
-    handleClass: String = null,
-    itemClass: String = null,
-    maxRow: js.UndefOr[Double] = js.undefined,
-    minRow: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    oneColumnModeDomSort: js.UndefOr[Boolean] = js.undefined,
-    placeholderClass: String = null,
-    placeholderText: String = null,
-    removable: Boolean | String = null,
-    removeTimeout: js.UndefOr[Double] = js.undefined,
-    resizable: js.Object = null,
-    row: js.UndefOr[Double] = js.undefined,
-    rtl: Boolean | auto = null,
-    staticGrid: js.UndefOr[Boolean] = js.undefined,
-    verticalMargin: Double | String = null,
-    verticalMarginUnit: String = null
-  ): GridstackOptions = {
+  def apply(): GridstackOptions = {
     val __obj = js.Dynamic.literal()
-    if (acceptWidgets != null) __obj.updateDynamic("acceptWidgets")(acceptWidgets.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysShowResizeHandle)) __obj.updateDynamic("alwaysShowResizeHandle")(alwaysShowResizeHandle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.get.asInstanceOf[js.Any])
-    if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])
-    if (cellHeightUnit != null) __obj.updateDynamic("cellHeightUnit")(cellHeightUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ddPlugin)) __obj.updateDynamic("ddPlugin")(ddPlugin.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDrag)) __obj.updateDynamic("disableDrag")(disableDrag.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOneColumnMode)) __obj.updateDynamic("disableOneColumnMode")(disableOneColumnMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableResize)) __obj.updateDynamic("disableResize")(disableResize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragOut)) __obj.updateDynamic("dragOut")(dragOut.get.asInstanceOf[js.Any])
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float.get.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (handleClass != null) __obj.updateDynamic("handleClass")(handleClass.asInstanceOf[js.Any])
-    if (itemClass != null) __obj.updateDynamic("itemClass")(itemClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRow)) __obj.updateDynamic("maxRow")(maxRow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minRow)) __obj.updateDynamic("minRow")(minRow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneColumnModeDomSort)) __obj.updateDynamic("oneColumnModeDomSort")(oneColumnModeDomSort.get.asInstanceOf[js.Any])
-    if (placeholderClass != null) __obj.updateDynamic("placeholderClass")(placeholderClass.asInstanceOf[js.Any])
-    if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText.asInstanceOf[js.Any])
-    if (removable != null) __obj.updateDynamic("removable")(removable.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeTimeout)) __obj.updateDynamic("removeTimeout")(removeTimeout.get.asInstanceOf[js.Any])
-    if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
-    if (rtl != null) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(staticGrid)) __obj.updateDynamic("staticGrid")(staticGrid.get.asInstanceOf[js.Any])
-    if (verticalMargin != null) __obj.updateDynamic("verticalMargin")(verticalMargin.asInstanceOf[js.Any])
-    if (verticalMarginUnit != null) __obj.updateDynamic("verticalMarginUnit")(verticalMarginUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridstackOptions]
   }
+  @scala.inline
+  implicit class GridstackOptionsOps[Self <: GridstackOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptWidgetsFunction2(value: (/* i */ Double, /* element */ Element) => Boolean): Self = this.set("acceptWidgets", js.Any.fromFunction2(value))
+    @scala.inline
+    def setAcceptWidgets(value: Boolean | String | (js.Function2[/* i */ Double, /* element */ Element, Boolean])): Self = this.set("acceptWidgets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptWidgets: Self = this.set("acceptWidgets", js.undefined)
+    @scala.inline
+    def setAlwaysShowResizeHandle(value: Boolean): Self = this.set("alwaysShowResizeHandle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysShowResizeHandle: Self = this.set("alwaysShowResizeHandle", js.undefined)
+    @scala.inline
+    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setAuto(value: Boolean): Self = this.set("auto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuto: Self = this.set("auto", js.undefined)
+    @scala.inline
+    def setCellHeight(value: Double | String): Self = this.set("cellHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellHeight: Self = this.set("cellHeight", js.undefined)
+    @scala.inline
+    def setCellHeightUnit(value: String): Self = this.set("cellHeightUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellHeightUnit: Self = this.set("cellHeightUnit", js.undefined)
+    @scala.inline
+    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumn: Self = this.set("column", js.undefined)
+    @scala.inline
+    def setDdPlugin(value: Boolean | js.Any): Self = this.set("ddPlugin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDdPlugin: Self = this.set("ddPlugin", js.undefined)
+    @scala.inline
+    def setDdPluginNull: Self = this.set("ddPlugin", null)
+    @scala.inline
+    def setDisableDrag(value: Boolean): Self = this.set("disableDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableDrag: Self = this.set("disableDrag", js.undefined)
+    @scala.inline
+    def setDisableOneColumnMode(value: Boolean): Self = this.set("disableOneColumnMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableOneColumnMode: Self = this.set("disableOneColumnMode", js.undefined)
+    @scala.inline
+    def setDisableResize(value: Boolean): Self = this.set("disableResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableResize: Self = this.set("disableResize", js.undefined)
+    @scala.inline
+    def setDragOut(value: Boolean): Self = this.set("dragOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragOut: Self = this.set("dragOut", js.undefined)
+    @scala.inline
+    def setDraggable(value: js.Object): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setFloat(value: Boolean): Self = this.set("float", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloat: Self = this.set("float", js.undefined)
+    @scala.inline
+    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandle: Self = this.set("handle", js.undefined)
+    @scala.inline
+    def setHandleClass(value: String): Self = this.set("handleClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleClass: Self = this.set("handleClass", js.undefined)
+    @scala.inline
+    def setItemClass(value: String): Self = this.set("itemClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemClass: Self = this.set("itemClass", js.undefined)
+    @scala.inline
+    def setMaxRow(value: Double): Self = this.set("maxRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRow: Self = this.set("maxRow", js.undefined)
+    @scala.inline
+    def setMinRow(value: Double): Self = this.set("minRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinRow: Self = this.set("minRow", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setOneColumnModeDomSort(value: Boolean): Self = this.set("oneColumnModeDomSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOneColumnModeDomSort: Self = this.set("oneColumnModeDomSort", js.undefined)
+    @scala.inline
+    def setPlaceholderClass(value: String): Self = this.set("placeholderClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholderClass: Self = this.set("placeholderClass", js.undefined)
+    @scala.inline
+    def setPlaceholderText(value: String): Self = this.set("placeholderText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholderText: Self = this.set("placeholderText", js.undefined)
+    @scala.inline
+    def setRemovable(value: Boolean | String): Self = this.set("removable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemovable: Self = this.set("removable", js.undefined)
+    @scala.inline
+    def setRemoveTimeout(value: Double): Self = this.set("removeTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveTimeout: Self = this.set("removeTimeout", js.undefined)
+    @scala.inline
+    def setResizable(value: js.Object): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizable: Self = this.set("resizable", js.undefined)
+    @scala.inline
+    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setRtl(value: Boolean | auto): Self = this.set("rtl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtl: Self = this.set("rtl", js.undefined)
+    @scala.inline
+    def setStaticGrid(value: Boolean): Self = this.set("staticGrid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticGrid: Self = this.set("staticGrid", js.undefined)
+    @scala.inline
+    def setStyleInHead(value: Boolean): Self = this.set("styleInHead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleInHead: Self = this.set("styleInHead", js.undefined)
+    @scala.inline
+    def setVerticalMargin(value: Double | String): Self = this.set("verticalMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalMargin: Self = this.set("verticalMargin", js.undefined)
+    @scala.inline
+    def setVerticalMarginUnit(value: String): Self = this.set("verticalMarginUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalMarginUnit: Self = this.set("verticalMarginUnit", js.undefined)
+  }
+  
 }
 

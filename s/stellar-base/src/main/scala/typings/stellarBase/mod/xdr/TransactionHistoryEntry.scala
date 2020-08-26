@@ -1,0 +1,35 @@
+package typings.stellarBase.mod.xdr
+
+import typings.node.Buffer
+import typings.stellarBase.anon.LedgerSeq
+import typings.stellarBase.stellarBaseStrings.base64
+import typings.stellarBase.stellarBaseStrings.hex
+import typings.stellarBase.stellarBaseStrings.raw
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("stellar-base", "xdr.TransactionHistoryEntry")
+@js.native
+class TransactionHistoryEntry protected ()
+  extends typings.stellarBase.xdrMod.default.TransactionHistoryEntry {
+  def this(attributes: LedgerSeq) = this()
+}
+
+/* static members */
+@JSImport("stellar-base", "xdr.TransactionHistoryEntry")
+@js.native
+object TransactionHistoryEntry extends js.Object {
+  def fromXDR(input: Buffer): typings.stellarBase.xdrMod.xdr.TransactionHistoryEntry = js.native
+  @JSName("fromXDR")
+  def fromXDR_base64(input: String, format: base64): typings.stellarBase.xdrMod.xdr.TransactionHistoryEntry = js.native
+  @JSName("fromXDR")
+  def fromXDR_hex(input: String, format: hex): typings.stellarBase.xdrMod.xdr.TransactionHistoryEntry = js.native
+  @JSName("fromXDR")
+  def fromXDR_raw(input: Buffer, format: raw): typings.stellarBase.xdrMod.xdr.TransactionHistoryEntry = js.native
+  def isValid(value: typings.stellarBase.xdrMod.xdr.TransactionHistoryEntry): Boolean = js.native
+  def read(io: Buffer): typings.stellarBase.xdrMod.xdr.TransactionHistoryEntry = js.native
+  def toXDR(value: typings.stellarBase.xdrMod.xdr.TransactionHistoryEntry): Buffer = js.native
+  def write(value: typings.stellarBase.xdrMod.xdr.TransactionHistoryEntry, io: Buffer): Unit = js.native
+}
+

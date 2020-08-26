@@ -134,54 +134,120 @@ trait SchemaJobStatistics2 extends js.Object {
 
 object SchemaJobStatistics2 {
   @scala.inline
-  def apply(
-    billingTier: js.UndefOr[Double] = js.undefined,
-    cacheHit: js.UndefOr[Boolean] = js.undefined,
-    ddlOperationPerformed: String = null,
-    ddlTargetRoutine: SchemaRoutineReference = null,
-    ddlTargetTable: SchemaTableReference = null,
-    estimatedBytesProcessed: String = null,
-    modelTraining: SchemaBigQueryModelTraining = null,
-    modelTrainingCurrentIteration: js.UndefOr[Double] = js.undefined,
-    modelTrainingExpectedTotalIteration: String = null,
-    numDmlAffectedRows: String = null,
-    queryPlan: js.Array[SchemaExplainQueryStage] = null,
-    referencedTables: js.Array[SchemaTableReference] = null,
-    reservationUsage: js.Array[NameSlotMs] = null,
-    schema: SchemaTableSchema = null,
-    statementType: String = null,
-    timeline: js.Array[SchemaQueryTimelineSample] = null,
-    totalBytesBilled: String = null,
-    totalBytesProcessed: String = null,
-    totalBytesProcessedAccuracy: String = null,
-    totalPartitionsProcessed: String = null,
-    totalSlotMs: String = null,
-    undeclaredQueryParameters: js.Array[SchemaQueryParameter] = null
-  ): SchemaJobStatistics2 = {
+  def apply(): SchemaJobStatistics2 = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(billingTier)) __obj.updateDynamic("billingTier")(billingTier.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.get.asInstanceOf[js.Any])
-    if (ddlOperationPerformed != null) __obj.updateDynamic("ddlOperationPerformed")(ddlOperationPerformed.asInstanceOf[js.Any])
-    if (ddlTargetRoutine != null) __obj.updateDynamic("ddlTargetRoutine")(ddlTargetRoutine.asInstanceOf[js.Any])
-    if (ddlTargetTable != null) __obj.updateDynamic("ddlTargetTable")(ddlTargetTable.asInstanceOf[js.Any])
-    if (estimatedBytesProcessed != null) __obj.updateDynamic("estimatedBytesProcessed")(estimatedBytesProcessed.asInstanceOf[js.Any])
-    if (modelTraining != null) __obj.updateDynamic("modelTraining")(modelTraining.asInstanceOf[js.Any])
-    if (!js.isUndefined(modelTrainingCurrentIteration)) __obj.updateDynamic("modelTrainingCurrentIteration")(modelTrainingCurrentIteration.get.asInstanceOf[js.Any])
-    if (modelTrainingExpectedTotalIteration != null) __obj.updateDynamic("modelTrainingExpectedTotalIteration")(modelTrainingExpectedTotalIteration.asInstanceOf[js.Any])
-    if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows.asInstanceOf[js.Any])
-    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan.asInstanceOf[js.Any])
-    if (referencedTables != null) __obj.updateDynamic("referencedTables")(referencedTables.asInstanceOf[js.Any])
-    if (reservationUsage != null) __obj.updateDynamic("reservationUsage")(reservationUsage.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (statementType != null) __obj.updateDynamic("statementType")(statementType.asInstanceOf[js.Any])
-    if (timeline != null) __obj.updateDynamic("timeline")(timeline.asInstanceOf[js.Any])
-    if (totalBytesBilled != null) __obj.updateDynamic("totalBytesBilled")(totalBytesBilled.asInstanceOf[js.Any])
-    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed.asInstanceOf[js.Any])
-    if (totalBytesProcessedAccuracy != null) __obj.updateDynamic("totalBytesProcessedAccuracy")(totalBytesProcessedAccuracy.asInstanceOf[js.Any])
-    if (totalPartitionsProcessed != null) __obj.updateDynamic("totalPartitionsProcessed")(totalPartitionsProcessed.asInstanceOf[js.Any])
-    if (totalSlotMs != null) __obj.updateDynamic("totalSlotMs")(totalSlotMs.asInstanceOf[js.Any])
-    if (undeclaredQueryParameters != null) __obj.updateDynamic("undeclaredQueryParameters")(undeclaredQueryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobStatistics2]
   }
+  @scala.inline
+  implicit class SchemaJobStatistics2Ops[Self <: SchemaJobStatistics2] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingTier(value: Double): Self = this.set("billingTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingTier: Self = this.set("billingTier", js.undefined)
+    @scala.inline
+    def setCacheHit(value: Boolean): Self = this.set("cacheHit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheHit: Self = this.set("cacheHit", js.undefined)
+    @scala.inline
+    def setDdlOperationPerformed(value: String): Self = this.set("ddlOperationPerformed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDdlOperationPerformed: Self = this.set("ddlOperationPerformed", js.undefined)
+    @scala.inline
+    def setDdlTargetRoutine(value: SchemaRoutineReference): Self = this.set("ddlTargetRoutine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDdlTargetRoutine: Self = this.set("ddlTargetRoutine", js.undefined)
+    @scala.inline
+    def setDdlTargetTable(value: SchemaTableReference): Self = this.set("ddlTargetTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDdlTargetTable: Self = this.set("ddlTargetTable", js.undefined)
+    @scala.inline
+    def setEstimatedBytesProcessed(value: String): Self = this.set("estimatedBytesProcessed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedBytesProcessed: Self = this.set("estimatedBytesProcessed", js.undefined)
+    @scala.inline
+    def setModelTraining(value: SchemaBigQueryModelTraining): Self = this.set("modelTraining", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelTraining: Self = this.set("modelTraining", js.undefined)
+    @scala.inline
+    def setModelTrainingCurrentIteration(value: Double): Self = this.set("modelTrainingCurrentIteration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelTrainingCurrentIteration: Self = this.set("modelTrainingCurrentIteration", js.undefined)
+    @scala.inline
+    def setModelTrainingExpectedTotalIteration(value: String): Self = this.set("modelTrainingExpectedTotalIteration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelTrainingExpectedTotalIteration: Self = this.set("modelTrainingExpectedTotalIteration", js.undefined)
+    @scala.inline
+    def setNumDmlAffectedRows(value: String): Self = this.set("numDmlAffectedRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumDmlAffectedRows: Self = this.set("numDmlAffectedRows", js.undefined)
+    @scala.inline
+    def setQueryPlanVarargs(value: SchemaExplainQueryStage*): Self = this.set("queryPlan", js.Array(value :_*))
+    @scala.inline
+    def setQueryPlan(value: js.Array[SchemaExplainQueryStage]): Self = this.set("queryPlan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryPlan: Self = this.set("queryPlan", js.undefined)
+    @scala.inline
+    def setReferencedTablesVarargs(value: SchemaTableReference*): Self = this.set("referencedTables", js.Array(value :_*))
+    @scala.inline
+    def setReferencedTables(value: js.Array[SchemaTableReference]): Self = this.set("referencedTables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferencedTables: Self = this.set("referencedTables", js.undefined)
+    @scala.inline
+    def setReservationUsageVarargs(value: NameSlotMs*): Self = this.set("reservationUsage", js.Array(value :_*))
+    @scala.inline
+    def setReservationUsage(value: js.Array[NameSlotMs]): Self = this.set("reservationUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservationUsage: Self = this.set("reservationUsage", js.undefined)
+    @scala.inline
+    def setSchema(value: SchemaTableSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setStatementType(value: String): Self = this.set("statementType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatementType: Self = this.set("statementType", js.undefined)
+    @scala.inline
+    def setTimelineVarargs(value: SchemaQueryTimelineSample*): Self = this.set("timeline", js.Array(value :_*))
+    @scala.inline
+    def setTimeline(value: js.Array[SchemaQueryTimelineSample]): Self = this.set("timeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeline: Self = this.set("timeline", js.undefined)
+    @scala.inline
+    def setTotalBytesBilled(value: String): Self = this.set("totalBytesBilled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBytesBilled: Self = this.set("totalBytesBilled", js.undefined)
+    @scala.inline
+    def setTotalBytesProcessed(value: String): Self = this.set("totalBytesProcessed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBytesProcessed: Self = this.set("totalBytesProcessed", js.undefined)
+    @scala.inline
+    def setTotalBytesProcessedAccuracy(value: String): Self = this.set("totalBytesProcessedAccuracy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBytesProcessedAccuracy: Self = this.set("totalBytesProcessedAccuracy", js.undefined)
+    @scala.inline
+    def setTotalPartitionsProcessed(value: String): Self = this.set("totalPartitionsProcessed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalPartitionsProcessed: Self = this.set("totalPartitionsProcessed", js.undefined)
+    @scala.inline
+    def setTotalSlotMs(value: String): Self = this.set("totalSlotMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSlotMs: Self = this.set("totalSlotMs", js.undefined)
+    @scala.inline
+    def setUndeclaredQueryParametersVarargs(value: SchemaQueryParameter*): Self = this.set("undeclaredQueryParameters", js.Array(value :_*))
+    @scala.inline
+    def setUndeclaredQueryParameters(value: js.Array[SchemaQueryParameter]): Self = this.set("undeclaredQueryParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUndeclaredQueryParameters: Self = this.set("undeclaredQueryParameters", js.undefined)
+  }
+  
 }
 

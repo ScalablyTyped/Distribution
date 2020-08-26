@@ -16,7 +16,7 @@ trait UserPoolDomainState extends js.Object {
     */
   val certificateArn: js.UndefOr[Input[String]] = js.native
   /**
-    * The ARN of the CloudFront distribution.
+    * The URL of the CloudFront distribution. This is required to generate the ALIAS `aws.route53.Record`
     */
   val cloudfrontDistributionArn: js.UndefOr[Input[String]] = js.native
   /**
@@ -39,24 +39,50 @@ trait UserPoolDomainState extends js.Object {
 
 object UserPoolDomainState {
   @scala.inline
-  def apply(
-    awsAccountId: Input[String] = null,
-    certificateArn: Input[String] = null,
-    cloudfrontDistributionArn: Input[String] = null,
-    domain: Input[String] = null,
-    s3Bucket: Input[String] = null,
-    userPoolId: Input[String] = null,
-    version: Input[String] = null
-  ): UserPoolDomainState = {
+  def apply(): UserPoolDomainState = {
     val __obj = js.Dynamic.literal()
-    if (awsAccountId != null) __obj.updateDynamic("awsAccountId")(awsAccountId.asInstanceOf[js.Any])
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (cloudfrontDistributionArn != null) __obj.updateDynamic("cloudfrontDistributionArn")(cloudfrontDistributionArn.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
-    if (userPoolId != null) __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolDomainState]
   }
+  @scala.inline
+  implicit class UserPoolDomainStateOps[Self <: UserPoolDomainState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountId(value: Input[String]): Self = this.set("awsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAccountId: Self = this.set("awsAccountId", js.undefined)
+    @scala.inline
+    def setCertificateArn(value: Input[String]): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    @scala.inline
+    def setCloudfrontDistributionArn(value: Input[String]): Self = this.set("cloudfrontDistributionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudfrontDistributionArn: Self = this.set("cloudfrontDistributionArn", js.undefined)
+    @scala.inline
+    def setDomain(value: Input[String]): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setS3Bucket(value: Input[String]): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("s3Bucket", js.undefined)
+    @scala.inline
+    def setUserPoolId(value: Input[String]): Self = this.set("userPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolId: Self = this.set("userPoolId", js.undefined)
+    @scala.inline
+    def setVersion(value: Input[String]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

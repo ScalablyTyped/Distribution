@@ -62,35 +62,76 @@ trait UpdateNotebookInstanceInput extends js.Object {
 
 object UpdateNotebookInstanceInput {
   @scala.inline
-  def apply(
-    NotebookInstanceName: NotebookInstanceName,
-    AcceleratorTypes: NotebookInstanceAcceleratorTypes = null,
-    AdditionalCodeRepositories: AdditionalCodeRepositoryNamesOrUrls = null,
-    DefaultCodeRepository: CodeRepositoryNameOrUrl = null,
-    DisassociateAcceleratorTypes: js.UndefOr[DisassociateNotebookInstanceAcceleratorTypes] = js.undefined,
-    DisassociateAdditionalCodeRepositories: js.UndefOr[DisassociateAdditionalCodeRepositories] = js.undefined,
-    DisassociateDefaultCodeRepository: js.UndefOr[DisassociateDefaultCodeRepository] = js.undefined,
-    DisassociateLifecycleConfig: js.UndefOr[DisassociateNotebookInstanceLifecycleConfig] = js.undefined,
-    InstanceType: InstanceType = null,
-    LifecycleConfigName: NotebookInstanceLifecycleConfigName = null,
-    RoleArn: RoleArn = null,
-    RootAccess: RootAccess = null,
-    VolumeSizeInGB: js.UndefOr[NotebookInstanceVolumeSizeInGB] = js.undefined
-  ): UpdateNotebookInstanceInput = {
+  def apply(NotebookInstanceName: NotebookInstanceName): UpdateNotebookInstanceInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
-    if (AcceleratorTypes != null) __obj.updateDynamic("AcceleratorTypes")(AcceleratorTypes.asInstanceOf[js.Any])
-    if (AdditionalCodeRepositories != null) __obj.updateDynamic("AdditionalCodeRepositories")(AdditionalCodeRepositories.asInstanceOf[js.Any])
-    if (DefaultCodeRepository != null) __obj.updateDynamic("DefaultCodeRepository")(DefaultCodeRepository.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisassociateAcceleratorTypes)) __obj.updateDynamic("DisassociateAcceleratorTypes")(DisassociateAcceleratorTypes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisassociateAdditionalCodeRepositories)) __obj.updateDynamic("DisassociateAdditionalCodeRepositories")(DisassociateAdditionalCodeRepositories.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisassociateDefaultCodeRepository)) __obj.updateDynamic("DisassociateDefaultCodeRepository")(DisassociateDefaultCodeRepository.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisassociateLifecycleConfig)) __obj.updateDynamic("DisassociateLifecycleConfig")(DisassociateLifecycleConfig.get.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (LifecycleConfigName != null) __obj.updateDynamic("LifecycleConfigName")(LifecycleConfigName.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (RootAccess != null) __obj.updateDynamic("RootAccess")(RootAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeSizeInGB)) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotebookInstanceInput]
   }
+  @scala.inline
+  implicit class UpdateNotebookInstanceInputOps[Self <: UpdateNotebookInstanceInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotebookInstanceName(value: NotebookInstanceName): Self = this.set("NotebookInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceleratorTypesVarargs(value: NotebookInstanceAcceleratorType*): Self = this.set("AcceleratorTypes", js.Array(value :_*))
+    @scala.inline
+    def setAcceleratorTypes(value: NotebookInstanceAcceleratorTypes): Self = this.set("AcceleratorTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorTypes: Self = this.set("AcceleratorTypes", js.undefined)
+    @scala.inline
+    def setAdditionalCodeRepositoriesVarargs(value: CodeRepositoryNameOrUrl*): Self = this.set("AdditionalCodeRepositories", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalCodeRepositories(value: AdditionalCodeRepositoryNamesOrUrls): Self = this.set("AdditionalCodeRepositories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalCodeRepositories: Self = this.set("AdditionalCodeRepositories", js.undefined)
+    @scala.inline
+    def setDefaultCodeRepository(value: CodeRepositoryNameOrUrl): Self = this.set("DefaultCodeRepository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCodeRepository: Self = this.set("DefaultCodeRepository", js.undefined)
+    @scala.inline
+    def setDisassociateAcceleratorTypes(value: DisassociateNotebookInstanceAcceleratorTypes): Self = this.set("DisassociateAcceleratorTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisassociateAcceleratorTypes: Self = this.set("DisassociateAcceleratorTypes", js.undefined)
+    @scala.inline
+    def setDisassociateAdditionalCodeRepositories(value: DisassociateAdditionalCodeRepositories): Self = this.set("DisassociateAdditionalCodeRepositories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisassociateAdditionalCodeRepositories: Self = this.set("DisassociateAdditionalCodeRepositories", js.undefined)
+    @scala.inline
+    def setDisassociateDefaultCodeRepository(value: DisassociateDefaultCodeRepository): Self = this.set("DisassociateDefaultCodeRepository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisassociateDefaultCodeRepository: Self = this.set("DisassociateDefaultCodeRepository", js.undefined)
+    @scala.inline
+    def setDisassociateLifecycleConfig(value: DisassociateNotebookInstanceLifecycleConfig): Self = this.set("DisassociateLifecycleConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisassociateLifecycleConfig: Self = this.set("DisassociateLifecycleConfig", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = this.set("LifecycleConfigName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleConfigName: Self = this.set("LifecycleConfigName", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setRootAccess(value: RootAccess): Self = this.set("RootAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootAccess: Self = this.set("RootAccess", js.undefined)
+    @scala.inline
+    def setVolumeSizeInGB(value: NotebookInstanceVolumeSizeInGB): Self = this.set("VolumeSizeInGB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSizeInGB: Self = this.set("VolumeSizeInGB", js.undefined)
+  }
+  
 }
 

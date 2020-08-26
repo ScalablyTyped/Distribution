@@ -6,40 +6,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CarouselItemProps
   extends AllHTMLAttributes[CarouselItem]
      with ClassAttributes[CarouselItem] {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var animateOut: js.UndefOr[Boolean] = js.undefined
-  var animtateIn: js.UndefOr[Boolean] = js.undefined
-  var direction: js.UndefOr[String] = js.undefined
-  var index: js.UndefOr[Double] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var animateOut: js.UndefOr[Boolean] = js.native
+  var animtateIn: js.UndefOr[Boolean] = js.native
+  var direction: js.UndefOr[String] = js.native
+  var index: js.UndefOr[Double] = js.native
   // TODO: Add more specific type
-  var onAnimateOutEnd: js.UndefOr[js.Function] = js.undefined
+  var onAnimateOutEnd: js.UndefOr[js.Function] = js.native
 }
 
 object CarouselItemProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[CarouselItem] = null,
-    ClassAttributes: ClassAttributes[CarouselItem] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    animateOut: js.UndefOr[Boolean] = js.undefined,
-    animtateIn: js.UndefOr[Boolean] = js.undefined,
-    direction: String = null,
-    index: js.UndefOr[Double] = js.undefined,
-    onAnimateOutEnd: js.Function = null
-  ): CarouselItemProps = {
+  def apply(): CarouselItemProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateOut)) __obj.updateDynamic("animateOut")(animateOut.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animtateIn)) __obj.updateDynamic("animtateIn")(animtateIn.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (onAnimateOutEnd != null) __obj.updateDynamic("onAnimateOutEnd")(onAnimateOutEnd.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselItemProps]
   }
+  @scala.inline
+  implicit class CarouselItemPropsOps[Self <: CarouselItemProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAnimateOut(value: Boolean): Self = this.set("animateOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateOut: Self = this.set("animateOut", js.undefined)
+    @scala.inline
+    def setAnimtateIn(value: Boolean): Self = this.set("animtateIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimtateIn: Self = this.set("animtateIn", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setOnAnimateOutEnd(value: js.Function): Self = this.set("onAnimateOutEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimateOutEnd: Self = this.set("onAnimateOutEnd", js.undefined)
+  }
+  
 }
 

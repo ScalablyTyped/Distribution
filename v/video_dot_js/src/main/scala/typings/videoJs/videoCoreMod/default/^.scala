@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(id: js.Any): typings.videoJs.mod.videojs.Player = js.native
+  def apply(id: js.Any, options: js.UndefOr[scala.Nothing], ready: js.Function0[Unit]): typings.videoJs.mod.videojs.Player = js.native
   def apply(id: js.Any, options: PlayerOptions): typings.videoJs.mod.videojs.Player = js.native
   def apply(id: js.Any, options: PlayerOptions, ready: js.Function0[Unit]): typings.videoJs.mod.videojs.Player = js.native
 }

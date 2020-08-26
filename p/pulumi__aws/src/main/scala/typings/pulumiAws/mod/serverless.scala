@@ -18,6 +18,7 @@ object serverless extends js.Object {
       */
     def this(name: String, options: FunctionOptions) = this()
     def this(name: String, options: FunctionOptions, func: Handler) = this()
+    def this(name: String, options: FunctionOptions, func: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
     def this(name: String, options: FunctionOptions, func: Handler, opts: ResourceOptions) = this()
   }
   

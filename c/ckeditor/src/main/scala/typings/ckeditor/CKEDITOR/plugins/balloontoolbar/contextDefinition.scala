@@ -8,29 +8,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait contextDefinition extends js.Object {
-  var cssSelector: js.UndefOr[String] = js.undefined
-  var priority: js.UndefOr[Double] = js.undefined
+  var cssSelector: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[Double] = js.native
   var refresh: js.UndefOr[
     js.Function3[/* editor */ editor, /* path */ elementPath, /* selection */ selection, element]
-  ] = js.undefined
-  var widgets: js.UndefOr[js.Array[String] | String] = js.undefined
+  ] = js.native
+  var widgets: js.UndefOr[js.Array[String] | String] = js.native
 }
 
 object contextDefinition {
   @scala.inline
-  def apply(
-    cssSelector: String = null,
-    priority: js.UndefOr[Double] = js.undefined,
-    refresh: (/* editor */ editor, /* path */ elementPath, /* selection */ selection) => element = null,
-    widgets: js.Array[String] | String = null
-  ): contextDefinition = {
+  def apply(): contextDefinition = {
     val __obj = js.Dynamic.literal()
-    if (cssSelector != null) __obj.updateDynamic("cssSelector")(cssSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction3(refresh))
-    if (widgets != null) __obj.updateDynamic("widgets")(widgets.asInstanceOf[js.Any])
     __obj.asInstanceOf[contextDefinition]
   }
+  @scala.inline
+  implicit class contextDefinitionOps[Self <: contextDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCssSelector(value: String): Self = this.set("cssSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssSelector: Self = this.set("cssSelector", js.undefined)
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setRefresh(value: (/* editor */ editor, /* path */ elementPath, /* selection */ selection) => element): Self = this.set("refresh", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    @scala.inline
+    def setWidgetsVarargs(value: String*): Self = this.set("widgets", js.Array(value :_*))
+    @scala.inline
+    def setWidgets(value: js.Array[String] | String): Self = this.set("widgets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidgets: Self = this.set("widgets", js.undefined)
+  }
+  
 }
 

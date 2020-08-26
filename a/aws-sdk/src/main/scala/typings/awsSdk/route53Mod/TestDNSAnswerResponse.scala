@@ -45,5 +45,32 @@ object TestDNSAnswerResponse {
     val __obj = js.Dynamic.literal(Nameserver = Nameserver.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any], RecordData = RecordData.asInstanceOf[js.Any], RecordName = RecordName.asInstanceOf[js.Any], RecordType = RecordType.asInstanceOf[js.Any], ResponseCode = ResponseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestDNSAnswerResponse]
   }
+  @scala.inline
+  implicit class TestDNSAnswerResponseOps[Self <: TestDNSAnswerResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNameserver(value: Nameserver): Self = this.set("Nameserver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtocol(value: TransportProtocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecordDataVarargs(value: RecordDataEntry*): Self = this.set("RecordData", js.Array(value :_*))
+    @scala.inline
+    def setRecordData(value: RecordData): Self = this.set("RecordData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecordName(value: DNSName): Self = this.set("RecordName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecordType(value: RRType): Self = this.set("RecordType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResponseCode(value: DNSRCode): Self = this.set("ResponseCode", value.asInstanceOf[js.Any])
+  }
+  
 }
 

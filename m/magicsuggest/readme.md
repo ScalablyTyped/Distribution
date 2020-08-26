@@ -12,7 +12,7 @@ MagicSuggest is a multiple selection auto suggest combo box for Bootstrap 3.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 32454 |
+| # downloads        | 34297 |
 | # stars            | 1 |
 
 ## Links

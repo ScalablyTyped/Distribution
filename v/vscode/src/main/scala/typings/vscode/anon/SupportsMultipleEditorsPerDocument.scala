@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SupportsMultipleEditorsPerDocument extends js.Object {
   /**
     * Only applies to `CustomReadonlyEditorProvider | CustomEditorProvider`.
@@ -20,23 +21,39 @@ trait SupportsMultipleEditorsPerDocument extends js.Object {
     * editor. In this case, the custom editor must make sure it can properly synchronize the states of all
     * editor instances for a resource so that they are consistent.
     */
-  val supportsMultipleEditorsPerDocument: js.UndefOr[Boolean] = js.undefined
+  val supportsMultipleEditorsPerDocument: js.UndefOr[Boolean] = js.native
   /**
     * Content settings for the webview panels created for this custom editor.
     */
-  val webviewOptions: js.UndefOr[WebviewPanelOptions] = js.undefined
+  val webviewOptions: js.UndefOr[WebviewPanelOptions] = js.native
 }
 
 object SupportsMultipleEditorsPerDocument {
   @scala.inline
-  def apply(
-    supportsMultipleEditorsPerDocument: js.UndefOr[Boolean] = js.undefined,
-    webviewOptions: WebviewPanelOptions = null
-  ): SupportsMultipleEditorsPerDocument = {
+  def apply(): SupportsMultipleEditorsPerDocument = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(supportsMultipleEditorsPerDocument)) __obj.updateDynamic("supportsMultipleEditorsPerDocument")(supportsMultipleEditorsPerDocument.get.asInstanceOf[js.Any])
-    if (webviewOptions != null) __obj.updateDynamic("webviewOptions")(webviewOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportsMultipleEditorsPerDocument]
   }
+  @scala.inline
+  implicit class SupportsMultipleEditorsPerDocumentOps[Self <: SupportsMultipleEditorsPerDocument] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSupportsMultipleEditorsPerDocument(value: Boolean): Self = this.set("supportsMultipleEditorsPerDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsMultipleEditorsPerDocument: Self = this.set("supportsMultipleEditorsPerDocument", js.undefined)
+    @scala.inline
+    def setWebviewOptions(value: WebviewPanelOptions): Self = this.set("webviewOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebviewOptions: Self = this.set("webviewOptions", js.undefined)
+  }
+  
 }
 

@@ -28,38 +28,36 @@ class LayoutGridRow protected () extends Element {
     * In version 8.0.0: introduced
     */
   def appearance: Appearance = js.native
-  def appearance(newValue: Appearance): js.Any = js.native
+  def appearance_=(newValue: Appearance): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def `class`: String = js.native
-  def `class`(newValue: String): js.Any = js.native
+  def class_=(newValue: String): Unit = js.native
   def columns: IList[LayoutGridColumn] = js.native
-  def conditionalVisibilitySettings(): js.Any = js.native
-  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
-  @JSName("conditionalVisibilitySettings")
-  def conditionalVisibilitySettings_Union: ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings_=(newValue: ConditionalVisibilitySettings | Null): Unit = js.native
   def containerAsLayoutGrid: LayoutGrid = js.native
   /**
     * In version 8.3.0: introduced
     */
   def horizontalAlignment: LayoutGridAlignment = js.native
-  def horizontalAlignment(newValue: LayoutGridAlignment): js.Any = js.native
+  def horizontalAlignment_=(newValue: LayoutGridAlignment): Unit = js.native
   /**
     * In version 8.3.0: introduced
     */
   def spacingBetweenColumns: Boolean = js.native
-  def spacingBetweenColumns(newValue: Boolean): js.Any = js.native
+  def spacingBetweenColumns_=(newValue: Boolean): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def style: String = js.native
-  def style(newValue: String): js.Any = js.native
+  def style_=(newValue: String): Unit = js.native
   /**
     * In version 8.3.0: introduced
     */
   def verticalAlignment: LayoutGridAlignment = js.native
-  def verticalAlignment(newValue: LayoutGridAlignment): js.Any = js.native
+  def verticalAlignment_=(newValue: LayoutGridAlignment): Unit = js.native
 }
 
 /* static members */

@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactChangedEventArgs")
 @js.native
 abstract class ContactChangedEventArgs ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangedEventArgs {
-  /**
-    * Gets the ContactChangedDeferral object to use for asynchronous operations.
-    * @return The deferral object to use for asynchronous operations.
-    */
-  /* CompleteClass */
-  override def getDeferral(): typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangedDeferral = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangedEventArgs
 

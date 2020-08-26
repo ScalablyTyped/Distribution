@@ -16,7 +16,21 @@ class Task protected () extends EventEmitter {
     */
   def this(name: String) = this()
   def this(name: String, prereqs: js.Array[String]) = this()
+  def this(name: String, prereqs: js.UndefOr[scala.Nothing], action: js.ThisFunction0[/* this */ Task, Unit]) = this()
   def this(name: String, prereqs: js.Array[String], action: js.ThisFunction0[/* this */ Task, Unit]) = this()
+  def this(
+    name: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.UndefOr[scala.Nothing],
+    opts: TaskOptions
+  ) = this()
+  def this(
+    name: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.ThisFunction0[/* this */ Task, Unit],
+    opts: TaskOptions
+  ) = this()
+  def this(name: String, prereqs: js.Array[String], action: js.UndefOr[scala.Nothing], opts: TaskOptions) = this()
   def this(
     name: String,
     prereqs: js.Array[String],

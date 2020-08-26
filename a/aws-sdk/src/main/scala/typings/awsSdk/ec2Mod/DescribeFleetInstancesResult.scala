@@ -22,12 +22,36 @@ trait DescribeFleetInstancesResult extends js.Object {
 
 object DescribeFleetInstancesResult {
   @scala.inline
-  def apply(ActiveInstances: ActiveInstanceSet = null, FleetId: FleetId = null, NextToken: String = null): DescribeFleetInstancesResult = {
+  def apply(): DescribeFleetInstancesResult = {
     val __obj = js.Dynamic.literal()
-    if (ActiveInstances != null) __obj.updateDynamic("ActiveInstances")(ActiveInstances.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFleetInstancesResult]
   }
+  @scala.inline
+  implicit class DescribeFleetInstancesResultOps[Self <: DescribeFleetInstancesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveInstancesVarargs(value: ActiveInstance*): Self = this.set("ActiveInstances", js.Array(value :_*))
+    @scala.inline
+    def setActiveInstances(value: ActiveInstanceSet): Self = this.set("ActiveInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveInstances: Self = this.set("ActiveInstances", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

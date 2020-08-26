@@ -22,7 +22,7 @@ object routeOutletMod extends js.Object {
        with NavOutlet {
     var activeComponent: js.Any = js.native
     var activeEl: js.Any = js.native
-    var ani: js.UndefOr[js.Any] = js.native
+    var ani: js.Any = js.native
     /**
       * If `true`, the router-outlet should animate the transition of components.
       */
@@ -36,7 +36,7 @@ object routeOutletMod extends js.Object {
     /** @internal */
     var delegate: js.UndefOr[FrameworkDelegate] = js.native
     var el: HTMLElement = js.native
-    var gesture: js.UndefOr[js.Any] = js.native
+    var gesture: js.Any = js.native
     /** @internal */
     var ionNavDidChange: EventEmitter[Unit] = js.native
     /** @internal */
@@ -52,9 +52,10 @@ object routeOutletMod extends js.Object {
     /** @internal */
     var swipeHandler: js.UndefOr[SwipeGestureHandler] = js.native
     var transition: js.Any = js.native
-    var waitPromise: js.UndefOr[js.Any] = js.native
+    var waitPromise: js.Any = js.native
     /** @internal */
     def commit(enteringEl: HTMLElement): js.Promise[Boolean] = js.native
+    def commit(enteringEl: HTMLElement, leavingEl: js.UndefOr[scala.Nothing], opts: RouterOutletOptions): js.Promise[Boolean] = js.native
     def commit(enteringEl: HTMLElement, leavingEl: HTMLElement): js.Promise[Boolean] = js.native
     def commit(enteringEl: HTMLElement, leavingEl: HTMLElement, opts: RouterOutletOptions): js.Promise[Boolean] = js.native
     @JSName("componentWillLoad")

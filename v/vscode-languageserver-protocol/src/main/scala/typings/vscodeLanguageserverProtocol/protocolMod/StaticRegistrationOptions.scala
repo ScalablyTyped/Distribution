@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StaticRegistrationOptions extends js.Object {
   /**
     * The id used to register the request. The id can be used to deregister
     * the request again. See also Registration#id.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
 }
 
 @JSImport("vscode-languageserver-protocol/lib/protocol", "StaticRegistrationOptions")

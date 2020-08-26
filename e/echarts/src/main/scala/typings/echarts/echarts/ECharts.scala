@@ -189,10 +189,12 @@ trait ECharts extends js.Object {
     *     immediately
     */
   def setOption(option: EChartOption[Series]): Unit = js.native
+  def setOption(option: EChartOption[Series], notMerge: js.UndefOr[scala.Nothing], lazyUpdate: Boolean): Unit = js.native
   def setOption(option: EChartOption[Series], notMerge: Boolean): Unit = js.native
   def setOption(option: EChartOption[Series], notMerge: Boolean, lazyUpdate: Boolean): Unit = js.native
   def setOption(option: EChartOption[Series], opts: EChartsOptionConfig): Unit = js.native
   def setOption(option: EChartsResponsiveOption): Unit = js.native
+  def setOption(option: EChartsResponsiveOption, notMerge: js.UndefOr[scala.Nothing], lazyUpdate: Boolean): Unit = js.native
   def setOption(option: EChartsResponsiveOption, notMerge: Boolean): Unit = js.native
   def setOption(option: EChartsResponsiveOption, notMerge: Boolean, lazyUpdate: Boolean): Unit = js.native
   /**
@@ -204,6 +206,7 @@ trait ECharts extends js.Object {
     * @param {EChartsLoadingOption} [opts]
     */
   def showLoading(): Unit = js.native
+  def showLoading(`type`: js.UndefOr[scala.Nothing], opts: EChartsLoadingOption): Unit = js.native
   def showLoading(`type`: String): Unit = js.native
   def showLoading(`type`: String, opts: EChartsLoadingOption): Unit = js.native
 }

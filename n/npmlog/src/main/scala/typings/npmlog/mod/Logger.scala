@@ -23,6 +23,7 @@ trait Logger
   var stream: js.Any = js.native
   def apply(): js.Any = js.native
   def addLevel(level: String, n: Double): Unit = js.native
+  def addLevel(level: String, n: Double, style: js.UndefOr[scala.Nothing], disp: String): Unit = js.native
   def addLevel(level: String, n: Double, style: StyleObject): Unit = js.native
   def addLevel(level: String, n: Double, style: StyleObject, disp: String): Unit = js.native
   def disableColor(): Unit = js.native

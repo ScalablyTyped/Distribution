@@ -22,16 +22,34 @@ trait LDAPSSettingInfo extends js.Object {
 
 object LDAPSSettingInfo {
   @scala.inline
-  def apply(
-    LDAPSStatus: LDAPSStatus = null,
-    LDAPSStatusReason: LDAPSStatusReason = null,
-    LastUpdatedDateTime: LastUpdatedDateTime = null
-  ): LDAPSSettingInfo = {
+  def apply(): LDAPSSettingInfo = {
     val __obj = js.Dynamic.literal()
-    if (LDAPSStatus != null) __obj.updateDynamic("LDAPSStatus")(LDAPSStatus.asInstanceOf[js.Any])
-    if (LDAPSStatusReason != null) __obj.updateDynamic("LDAPSStatusReason")(LDAPSStatusReason.asInstanceOf[js.Any])
-    if (LastUpdatedDateTime != null) __obj.updateDynamic("LastUpdatedDateTime")(LastUpdatedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDAPSSettingInfo]
   }
+  @scala.inline
+  implicit class LDAPSSettingInfoOps[Self <: LDAPSSettingInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLDAPSStatus(value: LDAPSStatus): Self = this.set("LDAPSStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLDAPSStatus: Self = this.set("LDAPSStatus", js.undefined)
+    @scala.inline
+    def setLDAPSStatusReason(value: LDAPSStatusReason): Self = this.set("LDAPSStatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLDAPSStatusReason: Self = this.set("LDAPSStatusReason", js.undefined)
+    @scala.inline
+    def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = this.set("LastUpdatedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDateTime: Self = this.set("LastUpdatedDateTime", js.undefined)
+  }
+  
 }
 

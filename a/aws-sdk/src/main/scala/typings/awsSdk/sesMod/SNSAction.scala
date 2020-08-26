@@ -18,10 +18,28 @@ trait SNSAction extends js.Object {
 
 object SNSAction {
   @scala.inline
-  def apply(TopicArn: AmazonResourceName, Encoding: SNSActionEncoding = null): SNSAction = {
+  def apply(TopicArn: AmazonResourceName): SNSAction = {
     val __obj = js.Dynamic.literal(TopicArn = TopicArn.asInstanceOf[js.Any])
-    if (Encoding != null) __obj.updateDynamic("Encoding")(Encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[SNSAction]
   }
+  @scala.inline
+  implicit class SNSActionOps[Self <: SNSAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTopicArn(value: AmazonResourceName): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncoding(value: SNSActionEncoding): Self = this.set("Encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("Encoding", js.undefined)
+  }
+  
 }
 

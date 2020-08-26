@@ -16,12 +16,13 @@ import scala.scalajs.js.annotation._
   *
   * NOTE: 'params' can be omitted.
   */
+@js.native
 trait DERObjectIdentifier extends ASN1Object {
   /**
     * set value by a hexadecimal string
     * @param newHexString hexadecimal value of OID bytes
     */
-  def setValueHex(newHexString: String): Unit
+  def setValueHex(newHexString: String): Unit = js.native
   /**
     * set value by a OID name
     * @param oidName OID name (ex. 'serverAuth')
@@ -32,7 +33,7 @@ trait DERObjectIdentifier extends ASN1Object {
     * o = new KJUR.asn1.DERObjectIdentifier();
     * o.setValueName("serverAuth");
     */
-  def setValueName(oidName: String): Unit
+  def setValueName(oidName: String): Unit = js.native
   /**
     * set value by a OID string
     * @param oidString OID string (ex. 2.5.4.13)
@@ -40,7 +41,7 @@ trait DERObjectIdentifier extends ASN1Object {
     * o = new KJUR.asn1.DERObjectIdentifier();
     * o.setValueOidString("2.5.4.13");
     */
-  def setValueOidString(oidString: String): Unit
+  def setValueOidString(oidString: String): Unit = js.native
 }
 
 object DERObjectIdentifier {
@@ -62,5 +63,24 @@ object DERObjectIdentifier {
     val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setValueHex = js.Any.fromFunction1(setValueHex), setValueName = js.Any.fromFunction1(setValueName), setValueOidString = js.Any.fromFunction1(setValueOidString))
     __obj.asInstanceOf[DERObjectIdentifier]
   }
+  @scala.inline
+  implicit class DERObjectIdentifierOps[Self <: DERObjectIdentifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSetValueHex(value: String => Unit): Self = this.set("setValueHex", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetValueName(value: String => Unit): Self = this.set("setValueName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetValueOidString(value: String => Unit): Self = this.set("setValueOidString", js.Any.fromFunction1(value))
+  }
+  
 }
 

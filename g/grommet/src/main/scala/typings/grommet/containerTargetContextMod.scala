@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/contexts/ContainerTargetContext", JSImport.Namespace)
+@JSImport("grommet/es6/contexts/ContainerTargetContext", JSImport.Namespace)
 @js.native
 object containerTargetContextMod extends js.Object {
   val ContainerTargetContext: Context[ContainerTargetValue] = js.native

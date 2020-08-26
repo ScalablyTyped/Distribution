@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__precise-date
 
-Typings are for version 1.0.3
+Typings are for version 2.0.3
 
 ## Library description:
 A simple utility for precise-dateing functions and classes.

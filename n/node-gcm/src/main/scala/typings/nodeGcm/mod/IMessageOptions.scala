@@ -5,45 +5,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IMessageOptions extends js.Object {
-  var collapseKey: js.UndefOr[String] = js.undefined
-  var contentAvailable: js.UndefOr[Boolean] = js.undefined
-  var data: js.UndefOr[StringDictionary[String]] = js.undefined
-  var delayWhileIdle: js.UndefOr[Boolean] = js.undefined
-  var dryRun: js.UndefOr[Boolean] = js.undefined
-  var mutableContent: js.UndefOr[Boolean] = js.undefined
-  var notification: js.UndefOr[INotificationOptions] = js.undefined
-  var priority: js.UndefOr[String] = js.undefined
-  var restrictedPackageName: js.UndefOr[String] = js.undefined
-  var timeToLive: js.UndefOr[Double] = js.undefined
+  var collapseKey: js.UndefOr[String] = js.native
+  var contentAvailable: js.UndefOr[Boolean] = js.native
+  var data: js.UndefOr[StringDictionary[String]] = js.native
+  var delayWhileIdle: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.native
+  var mutableContent: js.UndefOr[Boolean] = js.native
+  var notification: js.UndefOr[INotificationOptions] = js.native
+  var priority: js.UndefOr[String] = js.native
+  var restrictedPackageName: js.UndefOr[String] = js.native
+  var timeToLive: js.UndefOr[Double] = js.native
 }
 
 object IMessageOptions {
   @scala.inline
-  def apply(
-    collapseKey: String = null,
-    contentAvailable: js.UndefOr[Boolean] = js.undefined,
-    data: StringDictionary[String] = null,
-    delayWhileIdle: js.UndefOr[Boolean] = js.undefined,
-    dryRun: js.UndefOr[Boolean] = js.undefined,
-    mutableContent: js.UndefOr[Boolean] = js.undefined,
-    notification: INotificationOptions = null,
-    priority: String = null,
-    restrictedPackageName: String = null,
-    timeToLive: js.UndefOr[Double] = js.undefined
-  ): IMessageOptions = {
+  def apply(): IMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentAvailable)) __obj.updateDynamic("contentAvailable")(contentAvailable.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayWhileIdle)) __obj.updateDynamic("delayWhileIdle")(delayWhileIdle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mutableContent)) __obj.updateDynamic("mutableContent")(mutableContent.get.asInstanceOf[js.Any])
-    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (restrictedPackageName != null) __obj.updateDynamic("restrictedPackageName")(restrictedPackageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeToLive)) __obj.updateDynamic("timeToLive")(timeToLive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageOptions]
   }
+  @scala.inline
+  implicit class IMessageOptionsOps[Self <: IMessageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollapseKey(value: String): Self = this.set("collapseKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapseKey: Self = this.set("collapseKey", js.undefined)
+    @scala.inline
+    def setContentAvailable(value: Boolean): Self = this.set("contentAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentAvailable: Self = this.set("contentAvailable", js.undefined)
+    @scala.inline
+    def setData(value: StringDictionary[String]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDelayWhileIdle(value: Boolean): Self = this.set("delayWhileIdle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayWhileIdle: Self = this.set("delayWhileIdle", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    @scala.inline
+    def setMutableContent(value: Boolean): Self = this.set("mutableContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMutableContent: Self = this.set("mutableContent", js.undefined)
+    @scala.inline
+    def setNotification(value: INotificationOptions): Self = this.set("notification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotification: Self = this.set("notification", js.undefined)
+    @scala.inline
+    def setPriority(value: String): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setRestrictedPackageName(value: String): Self = this.set("restrictedPackageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictedPackageName: Self = this.set("restrictedPackageName", js.undefined)
+    @scala.inline
+    def setTimeToLive(value: Double): Self = this.set("timeToLive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeToLive: Self = this.set("timeToLive", js.undefined)
+  }
+  
 }
 

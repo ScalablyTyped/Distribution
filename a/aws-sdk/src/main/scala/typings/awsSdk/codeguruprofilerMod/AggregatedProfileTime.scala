@@ -18,11 +18,30 @@ trait AggregatedProfileTime extends js.Object {
 
 object AggregatedProfileTime {
   @scala.inline
-  def apply(period: AggregationPeriod = null, start: Timestamp = null): AggregatedProfileTime = {
+  def apply(): AggregatedProfileTime = {
     val __obj = js.Dynamic.literal()
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregatedProfileTime]
   }
+  @scala.inline
+  implicit class AggregatedProfileTimeOps[Self <: AggregatedProfileTime] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPeriod(value: AggregationPeriod): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setStart(value: Timestamp): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

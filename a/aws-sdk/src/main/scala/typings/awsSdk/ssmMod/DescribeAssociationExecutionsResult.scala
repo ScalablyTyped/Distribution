@@ -18,11 +18,32 @@ trait DescribeAssociationExecutionsResult extends js.Object {
 
 object DescribeAssociationExecutionsResult {
   @scala.inline
-  def apply(AssociationExecutions: AssociationExecutionsList = null, NextToken: NextToken = null): DescribeAssociationExecutionsResult = {
+  def apply(): DescribeAssociationExecutionsResult = {
     val __obj = js.Dynamic.literal()
-    if (AssociationExecutions != null) __obj.updateDynamic("AssociationExecutions")(AssociationExecutions.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAssociationExecutionsResult]
   }
+  @scala.inline
+  implicit class DescribeAssociationExecutionsResultOps[Self <: DescribeAssociationExecutionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationExecutionsVarargs(value: AssociationExecution*): Self = this.set("AssociationExecutions", js.Array(value :_*))
+    @scala.inline
+    def setAssociationExecutions(value: AssociationExecutionsList): Self = this.set("AssociationExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationExecutions: Self = this.set("AssociationExecutions", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

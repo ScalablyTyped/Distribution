@@ -12,7 +12,7 @@ The lodash method `_.spread` exported as a module.
 | Keywords           | lodash-modularized, spread |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 129208 |
+| # downloads        | 128585 |
 | # stars            | 0 |
 
 ## Links

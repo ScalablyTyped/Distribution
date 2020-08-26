@@ -11,8 +11,8 @@ A tool concentrating on converting csv data to JSON with customised parser suppo
 | Full name          | csvtojson |
 | Keywords           | csv, csv parser, parse csv, csvtojson, json, csv to json, csv convert, tojson, convert csv to json, csv-json |
 | # releases         | 15 |
-| # dependents       | 326 |
-| # downloads        | 6726156 |
+| # dependents       | 343 |
+| # downloads        | 6929871 |
 | # stars            | 62 |
 
 ## Links

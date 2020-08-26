@@ -15,10 +15,10 @@ import scala.scalajs.js.annotation._
 class EditTracksInfoRequest ()
   extends typings.chrome.chrome.cast.media.EditTracksInfoRequest {
   def this(activeTrackIds: js.Array[Double]) = this()
+  def this(
+    activeTrackIds: js.UndefOr[scala.Nothing],
+    textTrackStyle: typings.chrome.chrome.cast.media.TextTrackStyle
+  ) = this()
   def this(activeTrackIds: js.Array[Double], textTrackStyle: typings.chrome.chrome.cast.media.TextTrackStyle) = this()
-  /* CompleteClass */
-  override var activeTrackIds: js.Array[Double] = js.native
-  /* CompleteClass */
-  override var textTrackStyle: typings.chrome.chrome.cast.media.TextTrackStyle = js.native
 }
 

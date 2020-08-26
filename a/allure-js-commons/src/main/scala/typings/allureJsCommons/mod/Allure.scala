@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait Allure extends js.Object {
   def addAttachment(attachmentName: String, buffer: js.Any, `type`: String): Unit = js.native
   def endCase(status: Status): Unit = js.native
+  def endCase(status: Status, err: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
   def endCase(status: Status, err: js.Object): Unit = js.native
   def endCase(status: Status, err: js.Object, timestamp: Double): Unit = js.native
   def endStep(status: Status): Unit = js.native

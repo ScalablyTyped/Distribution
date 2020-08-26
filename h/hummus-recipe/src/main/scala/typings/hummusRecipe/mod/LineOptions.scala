@@ -4,27 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LineOptions extends js.Object {
-  var color: js.UndefOr[String | js.Array[Double]] = js.undefined
-  var dash: js.UndefOr[js.Array[Double]] = js.undefined
-  var lineWidth: js.UndefOr[Double] = js.undefined
-  var stroke: js.UndefOr[String | js.Array[Double]] = js.undefined
+  var color: js.UndefOr[String | js.Array[Double]] = js.native
+  var dash: js.UndefOr[js.Array[Double]] = js.native
+  var lineWidth: js.UndefOr[Double] = js.native
+  var stroke: js.UndefOr[String | js.Array[Double]] = js.native
 }
 
 object LineOptions {
   @scala.inline
-  def apply(
-    color: String | js.Array[Double] = null,
-    dash: js.Array[Double] = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    stroke: String | js.Array[Double] = null
-  ): LineOptions = {
+  def apply(): LineOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dash != null) __obj.updateDynamic("dash")(dash.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineOptions]
   }
+  @scala.inline
+  implicit class LineOptionsOps[Self <: LineOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorVarargs(value: Double*): Self = this.set("color", js.Array(value :_*))
+    @scala.inline
+    def setColor(value: String | js.Array[Double]): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDashVarargs(value: Double*): Self = this.set("dash", js.Array(value :_*))
+    @scala.inline
+    def setDash(value: js.Array[Double]): Self = this.set("dash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDash: Self = this.set("dash", js.undefined)
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    @scala.inline
+    def setStrokeVarargs(value: Double*): Self = this.set("stroke", js.Array(value :_*))
+    @scala.inline
+    def setStroke(value: String | js.Array[Double]): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+  }
+  
 }
 

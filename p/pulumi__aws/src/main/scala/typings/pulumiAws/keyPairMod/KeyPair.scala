@@ -23,6 +23,10 @@ class KeyPair protected () extends CustomResource {
   def this(name: String, args: KeyPairArgs) = this()
   def this(name: String, args: KeyPairArgs, opts: CustomResourceOptions) = this()
   /**
+    * The key pair ARN.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The MD5 public key fingerprint as specified in section 4 of RFC 4716.
     */
   val fingerprint: Output_[String] = js.native
@@ -43,9 +47,9 @@ class KeyPair protected () extends CustomResource {
     */
   val publicKey: Output_[String] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -59,8 +63,10 @@ object KeyPair extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): KeyPair = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): KeyPair = js.native
   def get(name: String, id: Input[ID], state: KeyPairState): KeyPair = js.native
   def get(name: String, id: Input[ID], state: KeyPairState, opts: CustomResourceOptions): KeyPair = js.native
   /**

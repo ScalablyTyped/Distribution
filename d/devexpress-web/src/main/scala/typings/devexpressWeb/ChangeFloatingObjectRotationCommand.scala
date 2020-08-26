@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A command to rotate a floating object.
   */
+@js.native
 trait ChangeFloatingObjectRotationCommand extends ChangeFloatingObjectPropertyCommandBase[Double]
 
 object ChangeFloatingObjectRotationCommand {

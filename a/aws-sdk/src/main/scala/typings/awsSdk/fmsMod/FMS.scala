@@ -26,6 +26,19 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Permanently deletes an AWS Firewall Manager applications list.
+    */
+  def deleteAppsList(): Request[js.Object, AWSError] = js.native
+  def deleteAppsList(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Permanently deletes an AWS Firewall Manager applications list.
+    */
+  def deleteAppsList(params: DeleteAppsListRequest): Request[js.Object, AWSError] = js.native
+  def deleteAppsList(
+    params: DeleteAppsListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Deletes an AWS Firewall Manager association with the IAM role and the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
     */
   def deleteNotificationChannel(): Request[js.Object, AWSError] = js.native
@@ -49,6 +62,19 @@ trait FMS extends Service {
   def deletePolicy(params: DeletePolicyRequest): Request[js.Object, AWSError] = js.native
   def deletePolicy(
     params: DeletePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Permanently deletes an AWS Firewall Manager protocols list.
+    */
+  def deleteProtocolsList(): Request[js.Object, AWSError] = js.native
+  def deleteProtocolsList(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Permanently deletes an AWS Firewall Manager protocols list.
+    */
+  def deleteProtocolsList(params: DeleteProtocolsListRequest): Request[js.Object, AWSError] = js.native
+  def deleteProtocolsList(
+    params: DeleteProtocolsListRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -77,6 +103,19 @@ trait FMS extends Service {
     params: GetAdminAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAdminAccountResponse, Unit]
   ): Request[GetAdminAccountResponse, AWSError] = js.native
+  /**
+    * Returns information about the specified AWS Firewall Manager applications list.
+    */
+  def getAppsList(): Request[GetAppsListResponse, AWSError] = js.native
+  def getAppsList(callback: js.Function2[/* err */ AWSError, /* data */ GetAppsListResponse, Unit]): Request[GetAppsListResponse, AWSError] = js.native
+  /**
+    * Returns information about the specified AWS Firewall Manager applications list.
+    */
+  def getAppsList(params: GetAppsListRequest): Request[GetAppsListResponse, AWSError] = js.native
+  def getAppsList(
+    params: GetAppsListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAppsListResponse, Unit]
+  ): Request[GetAppsListResponse, AWSError] = js.native
   /**
     * Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy. Resources are considered noncompliant for AWS WAF and Shield Advanced policies if the specified policy has not been applied to them. Resources are considered noncompliant for security group policies if they are in scope of the policy, they violate one or more of the policy rules, and remediation is disabled or not possible. 
     */
@@ -130,12 +169,51 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetProtectionStatusResponse, Unit]
   ): Request[GetProtectionStatusResponse, AWSError] = js.native
   /**
-    * Returns an array of PolicyComplianceStatus objects in the response. Use PolicyComplianceStatus to get a summary of which member accounts are protected by the specified policy. 
+    * Returns information about the specified AWS Firewall Manager protocols list.
+    */
+  def getProtocolsList(): Request[GetProtocolsListResponse, AWSError] = js.native
+  def getProtocolsList(callback: js.Function2[/* err */ AWSError, /* data */ GetProtocolsListResponse, Unit]): Request[GetProtocolsListResponse, AWSError] = js.native
+  /**
+    * Returns information about the specified AWS Firewall Manager protocols list.
+    */
+  def getProtocolsList(params: GetProtocolsListRequest): Request[GetProtocolsListResponse, AWSError] = js.native
+  def getProtocolsList(
+    params: GetProtocolsListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetProtocolsListResponse, Unit]
+  ): Request[GetProtocolsListResponse, AWSError] = js.native
+  /**
+    * Retrieves violations for a resource based on the specified AWS Firewall Manager policy and AWS account.
+    */
+  def getViolationDetails(): Request[GetViolationDetailsResponse, AWSError] = js.native
+  def getViolationDetails(callback: js.Function2[/* err */ AWSError, /* data */ GetViolationDetailsResponse, Unit]): Request[GetViolationDetailsResponse, AWSError] = js.native
+  /**
+    * Retrieves violations for a resource based on the specified AWS Firewall Manager policy and AWS account.
+    */
+  def getViolationDetails(params: GetViolationDetailsRequest): Request[GetViolationDetailsResponse, AWSError] = js.native
+  def getViolationDetails(
+    params: GetViolationDetailsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetViolationDetailsResponse, Unit]
+  ): Request[GetViolationDetailsResponse, AWSError] = js.native
+  /**
+    * Returns an array of AppsListDataSummary objects.
+    */
+  def listAppsLists(): Request[ListAppsListsResponse, AWSError] = js.native
+  def listAppsLists(callback: js.Function2[/* err */ AWSError, /* data */ ListAppsListsResponse, Unit]): Request[ListAppsListsResponse, AWSError] = js.native
+  /**
+    * Returns an array of AppsListDataSummary objects.
+    */
+  def listAppsLists(params: ListAppsListsRequest): Request[ListAppsListsResponse, AWSError] = js.native
+  def listAppsLists(
+    params: ListAppsListsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAppsListsResponse, Unit]
+  ): Request[ListAppsListsResponse, AWSError] = js.native
+  /**
+    * Returns an array of PolicyComplianceStatus objects. Use PolicyComplianceStatus to get a summary of which member accounts are protected by the specified policy. 
     */
   def listComplianceStatus(): Request[ListComplianceStatusResponse, AWSError] = js.native
   def listComplianceStatus(callback: js.Function2[/* err */ AWSError, /* data */ ListComplianceStatusResponse, Unit]): Request[ListComplianceStatusResponse, AWSError] = js.native
   /**
-    * Returns an array of PolicyComplianceStatus objects in the response. Use PolicyComplianceStatus to get a summary of which member accounts are protected by the specified policy. 
+    * Returns an array of PolicyComplianceStatus objects. Use PolicyComplianceStatus to get a summary of which member accounts are protected by the specified policy. 
     */
   def listComplianceStatus(params: ListComplianceStatusRequest): Request[ListComplianceStatusResponse, AWSError] = js.native
   def listComplianceStatus(
@@ -156,18 +234,31 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListMemberAccountsResponse, Unit]
   ): Request[ListMemberAccountsResponse, AWSError] = js.native
   /**
-    * Returns an array of PolicySummary objects in the response.
+    * Returns an array of PolicySummary objects.
     */
   def listPolicies(): Request[ListPoliciesResponse, AWSError] = js.native
   def listPolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListPoliciesResponse, Unit]): Request[ListPoliciesResponse, AWSError] = js.native
   /**
-    * Returns an array of PolicySummary objects in the response.
+    * Returns an array of PolicySummary objects.
     */
   def listPolicies(params: ListPoliciesRequest): Request[ListPoliciesResponse, AWSError] = js.native
   def listPolicies(
     params: ListPoliciesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPoliciesResponse, Unit]
   ): Request[ListPoliciesResponse, AWSError] = js.native
+  /**
+    * Returns an array of ProtocolsListDataSummary objects.
+    */
+  def listProtocolsLists(): Request[ListProtocolsListsResponse, AWSError] = js.native
+  def listProtocolsLists(callback: js.Function2[/* err */ AWSError, /* data */ ListProtocolsListsResponse, Unit]): Request[ListProtocolsListsResponse, AWSError] = js.native
+  /**
+    * Returns an array of ProtocolsListDataSummary objects.
+    */
+  def listProtocolsLists(params: ListProtocolsListsRequest): Request[ListProtocolsListsResponse, AWSError] = js.native
+  def listProtocolsLists(
+    params: ListProtocolsListsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListProtocolsListsResponse, Unit]
+  ): Request[ListProtocolsListsResponse, AWSError] = js.native
   /**
     * Retrieves the list of tags for the specified AWS resource. 
     */
@@ -181,6 +272,19 @@ trait FMS extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Creates an AWS Firewall Manager applications list.
+    */
+  def putAppsList(): Request[PutAppsListResponse, AWSError] = js.native
+  def putAppsList(callback: js.Function2[/* err */ AWSError, /* data */ PutAppsListResponse, Unit]): Request[PutAppsListResponse, AWSError] = js.native
+  /**
+    * Creates an AWS Firewall Manager applications list.
+    */
+  def putAppsList(params: PutAppsListRequest): Request[PutAppsListResponse, AWSError] = js.native
+  def putAppsList(
+    params: PutAppsListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAppsListResponse, Unit]
+  ): Request[PutAppsListResponse, AWSError] = js.native
   /**
     * Designates the IAM role and Amazon Simple Notification Service (SNS) topic that AWS Firewall Manager uses to record SNS logs.
     */
@@ -207,6 +311,19 @@ trait FMS extends Service {
     params: PutPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutPolicyResponse, Unit]
   ): Request[PutPolicyResponse, AWSError] = js.native
+  /**
+    * Creates an AWS Firewall Manager protocols list.
+    */
+  def putProtocolsList(): Request[PutProtocolsListResponse, AWSError] = js.native
+  def putProtocolsList(callback: js.Function2[/* err */ AWSError, /* data */ PutProtocolsListResponse, Unit]): Request[PutProtocolsListResponse, AWSError] = js.native
+  /**
+    * Creates an AWS Firewall Manager protocols list.
+    */
+  def putProtocolsList(params: PutProtocolsListRequest): Request[PutProtocolsListResponse, AWSError] = js.native
+  def putProtocolsList(
+    params: PutProtocolsListRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutProtocolsListResponse, Unit]
+  ): Request[PutProtocolsListResponse, AWSError] = js.native
   /**
     * Adds one or more tags to an AWS resource.
     */

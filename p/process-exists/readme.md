@@ -10,9 +10,9 @@ Check if a process is running
 | ------------------ | :-------------: |
 | Full name          | process-exists |
 | Keywords           | process, processes, proc, ps, pid, test, testing, exists, running, check |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 4618066 |
+| # releases         | 2 |
+| # dependents       | 19 |
+| # downloads        | 6139375 |
 | # stars            | 0 |
 
 ## Links

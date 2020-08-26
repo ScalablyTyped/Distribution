@@ -194,78 +194,72 @@ trait Progress_ extends js.Object {
     * Resets progress to zero
     */
   def apply(behavior: reset): JQuery = js.native
-  def apply(behavior: setting, name: autoSuccess): Boolean = js.native
+  def apply(behavior: setting, name: autoSuccess, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: autoSuccess, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: className): ClassNameSettings = js.native
-  def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def apply(behavior: setting, name: debug): Boolean = js.native
+  def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: error): ErrorSettings = js.native
-  def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def apply(behavior: setting, name: label): percent | ratio = js.native
+  def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+  def apply(behavior: setting, name: label, value: js.UndefOr[scala.Nothing]): percent | ratio = js.native
   def apply(behavior: setting, name: label, value: percent): JQuery = js.native
   def apply(behavior: setting, name: label, value: ratio): JQuery = js.native
-  def apply(behavior: setting, name: limitValues): Boolean = js.native
+  def apply(behavior: setting, name: limitValues, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: limitValues, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: metadata): MetadataSettings = js.native
   def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  def apply(behavior: setting, name: name): String = js.native
-  def apply(behavior: setting, name: namespace): String = js.native
+  def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: name, value: String): JQuery = js.native
-  def apply(behavior: setting, name: onActive): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+  def apply(behavior: setting, name: onActive, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
   def apply(
     behavior: setting,
     name: onActive,
     value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onChange): js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit] = js.native
+  def apply(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit] = js.native
   def apply(
     behavior: setting,
     name: onChange,
     value: js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onError): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+  def apply(behavior: setting, name: onError, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
   def apply(
     behavior: setting,
     name: onError,
     value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onSuccess): js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit] = js.native
+  def apply(behavior: setting, name: onSuccess, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit] = js.native
   def apply(
     behavior: setting,
     name: onSuccess,
     value: js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onWarning): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+  def apply(behavior: setting, name: onWarning, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
   def apply(
     behavior: setting,
     name: onWarning,
     value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: performance): Boolean = js.native
+  def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: precision): Double = js.native
+  def apply(behavior: setting, name: precision, value: js.UndefOr[scala.Nothing]): Double = js.native
   def apply(behavior: setting, name: precision, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: random): RandomSettings = js.native
   def apply(behavior: setting, name: random, value: RandomSettings): JQuery = js.native
-  def apply(behavior: setting, name: regExp): RegExpSettings = js.native
+  def apply(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
   def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-  def apply(behavior: setting, name: selector): SelectorSettings = js.native
-  def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def apply(behavior: setting, name: showActivity): Boolean = js.native
+  def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+  def apply(behavior: setting, name: showActivity, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: showActivity, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: silent): Boolean = js.native
+  def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: text): TextSettings = js.native
-  def apply(behavior: setting, name: text, value: TextSettings): JQuery = js.native
-  def apply(behavior: setting, name: total): `false` | Double = js.native
+  def apply(behavior: setting, name: text, value: js.UndefOr[scala.Nothing]): TextSettings = js.native
+  def apply(behavior: setting, name: total, value: js.UndefOr[scala.Nothing]): `false` | Double = js.native
   def apply(behavior: setting, name: total, value: Double): JQuery = js.native
   def apply(behavior: setting, name: total, value: `false`): JQuery = js.native
-  def apply(behavior: setting, name: value): `false` | Double = js.native
+  def apply(behavior: setting, name: value, value: js.UndefOr[scala.Nothing]): `false` | Double = js.native
   def apply(behavior: setting, name: value, value: Double): JQuery = js.native
   def apply(behavior: setting, name: value, value: `false`): JQuery = js.native
-  def apply(behavior: setting, name: verbose): Boolean = js.native
+  def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: ProgressSettings): JQuery = js.native
   def apply(settings: ProgressSettings): JQuery = js.native

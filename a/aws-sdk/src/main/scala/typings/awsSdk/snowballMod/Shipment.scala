@@ -18,11 +18,30 @@ trait Shipment extends js.Object {
 
 object Shipment {
   @scala.inline
-  def apply(Status: String = null, TrackingNumber: String = null): Shipment = {
+  def apply(): Shipment = {
     val __obj = js.Dynamic.literal()
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TrackingNumber != null) __obj.updateDynamic("TrackingNumber")(TrackingNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shipment]
   }
+  @scala.inline
+  implicit class ShipmentOps[Self <: Shipment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTrackingNumber(value: String): Self = this.set("TrackingNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingNumber: Self = this.set("TrackingNumber", js.undefined)
+  }
+  
 }
 

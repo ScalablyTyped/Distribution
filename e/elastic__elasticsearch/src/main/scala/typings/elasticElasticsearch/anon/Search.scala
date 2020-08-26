@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 trait Search extends js.Object {
   def search[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def search[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
+  def search[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: js.UndefOr[scala.Nothing], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def search[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: EqlSearch[TRequestBody]): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native
   def search[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: EqlSearch[TRequestBody], callback: callbackFn[TResponse, TContext]): TransportRequestCallback = js.native
   def search[TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: EqlSearch[TRequestBody], options: TransportRequestOptions): TransportRequestPromise[ApiResponse[TResponse, TContext]] = js.native

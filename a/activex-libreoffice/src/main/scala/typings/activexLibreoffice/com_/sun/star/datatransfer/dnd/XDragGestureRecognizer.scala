@@ -12,19 +12,20 @@ import scala.scalajs.js.annotation._
   * Different to Java, the association between view and interface is fixed and cannot be changed. Otherwise, the AWT messaging would have to be
   * implemented for any window supporting Drag and Drop operations, which would be a performance issue.
   */
+@js.native
 trait XDragGestureRecognizer extends XInterface {
   /**
     * Registers a new {@link XDragGestureListener} .
     * @param dgl The {@link XDragGestureListener} to register with this {@link XDragGestureRecognizer} .
     */
-  def addDragGestureListener(dgl: XDragGestureListener): Unit
+  def addDragGestureListener(dgl: XDragGestureListener): Unit = js.native
   /**
     * Unregisters the specified {@link XDragGestureListener} .
     * @param dgl The {@link XDragGestureListener} to register with this {@link XDragGestureRecognizer} .
     */
-  def removeDragGestureListener(dgl: XDragGestureListener): Unit
+  def removeDragGestureListener(dgl: XDragGestureListener): Unit = js.native
   /** Reset the recognizer. If it is currently recognizing a gesture, ignore it. */
-  def resetRecognizer(): Unit
+  def resetRecognizer(): Unit = js.native
 }
 
 object XDragGestureRecognizer {
@@ -40,5 +41,24 @@ object XDragGestureRecognizer {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addDragGestureListener = js.Any.fromFunction1(addDragGestureListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeDragGestureListener = js.Any.fromFunction1(removeDragGestureListener), resetRecognizer = js.Any.fromFunction0(resetRecognizer))
     __obj.asInstanceOf[XDragGestureRecognizer]
   }
+  @scala.inline
+  implicit class XDragGestureRecognizerOps[Self <: XDragGestureRecognizer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddDragGestureListener(value: XDragGestureListener => Unit): Self = this.set("addDragGestureListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveDragGestureListener(value: XDragGestureListener => Unit): Self = this.set("removeDragGestureListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setResetRecognizer(value: () => Unit): Self = this.set("resetRecognizer", js.Any.fromFunction0(value))
+  }
+  
 }
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.rotate")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.rotate")
 @js.native
 object rotate extends js.Object {
   /**
@@ -43,6 +43,7 @@ object rotate extends js.Object {
     * ```
     */
   def apply[T](array: MutableArrayLike[T], delta: Double): Unit = js.native
+  def apply[T](array: MutableArrayLike[T], delta: Double, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
   def apply[T](array: MutableArrayLike[T], delta: Double, start: Double): Unit = js.native
   def apply[T](array: MutableArrayLike[T], delta: Double, start: Double, stop: Double): Unit = js.native
 }

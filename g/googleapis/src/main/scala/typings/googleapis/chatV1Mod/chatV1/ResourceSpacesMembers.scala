@@ -27,6 +27,7 @@ class ResourceSpacesMembers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaMembership] = js.native
   def get(callback: BodyResponseCallback[SchemaMembership]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMembership] = js.native
   def get(params: ParamsResourceSpacesMembersGet): GaxiosPromise[SchemaMembership] = js.native
   def get(params: ParamsResourceSpacesMembersGet, callback: BodyResponseCallback[SchemaMembership]): Unit = js.native
   def get(
@@ -56,6 +57,7 @@ class ResourceSpacesMembers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListMembershipsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMembershipsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListMembershipsResponse] = js.native
   def list(params: ParamsResourceSpacesMembersList): GaxiosPromise[SchemaListMembershipsResponse] = js.native
   def list(
     params: ParamsResourceSpacesMembersList,

@@ -22,11 +22,30 @@ trait SchemaSource extends js.Object {
 
 object SchemaSource {
   @scala.inline
-  def apply(repoSource: SchemaRepoSource = null, storageSource: SchemaStorageSource = null): SchemaSource = {
+  def apply(): SchemaSource = {
     val __obj = js.Dynamic.literal()
-    if (repoSource != null) __obj.updateDynamic("repoSource")(repoSource.asInstanceOf[js.Any])
-    if (storageSource != null) __obj.updateDynamic("storageSource")(storageSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSource]
   }
+  @scala.inline
+  implicit class SchemaSourceOps[Self <: SchemaSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepoSource(value: SchemaRepoSource): Self = this.set("repoSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepoSource: Self = this.set("repoSource", js.undefined)
+    @scala.inline
+    def setStorageSource(value: SchemaStorageSource): Self = this.set("storageSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageSource: Self = this.set("storageSource", js.undefined)
+  }
+  
 }
 

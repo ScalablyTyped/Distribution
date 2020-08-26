@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IMagellanOptions extends js.Object {
-  var activeClass: js.UndefOr[String] = js.undefined
-  var animationDuration: js.UndefOr[Double] = js.undefined
-  var animationEasing: js.UndefOr[String] = js.undefined
-  var barOffset: js.UndefOr[Double] = js.undefined
-  var deepLinking: js.UndefOr[Boolean] = js.undefined
-  var threshold: js.UndefOr[Double] = js.undefined
+  var activeClass: js.UndefOr[String] = js.native
+  var animationDuration: js.UndefOr[Double] = js.native
+  var animationEasing: js.UndefOr[String] = js.native
+  var barOffset: js.UndefOr[Double] = js.native
+  var deepLinking: js.UndefOr[Boolean] = js.native
+  var threshold: js.UndefOr[Double] = js.native
 }
 
 object IMagellanOptions {
   @scala.inline
-  def apply(
-    activeClass: String = null,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationEasing: String = null,
-    barOffset: js.UndefOr[Double] = js.undefined,
-    deepLinking: js.UndefOr[Boolean] = js.undefined,
-    threshold: js.UndefOr[Double] = js.undefined
-  ): IMagellanOptions = {
+  def apply(): IMagellanOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(barOffset)) __obj.updateDynamic("barOffset")(barOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deepLinking)) __obj.updateDynamic("deepLinking")(deepLinking.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMagellanOptions]
   }
+  @scala.inline
+  implicit class IMagellanOptionsOps[Self <: IMagellanOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveClass: Self = this.set("activeClass", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setBarOffset(value: Double): Self = this.set("barOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarOffset: Self = this.set("barOffset", js.undefined)
+    @scala.inline
+    def setDeepLinking(value: Boolean): Self = this.set("deepLinking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeepLinking: Self = this.set("deepLinking", js.undefined)
+    @scala.inline
+    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("threshold", js.undefined)
+  }
+  
 }
 

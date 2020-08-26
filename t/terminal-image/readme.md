@@ -1,7 +1,7 @@
 
 # Scala.js typings for terminal-image
 
-Typings are for version 0.2.0
+Typings are for version 1.2.0
 
 ## Library description:
 Display images in the terminal
@@ -12,7 +12,7 @@ Display images in the terminal
 | Keywords           | terminal, image, term, iterm, shell, console, command-line, img, pic, picture, photo, ansi, escape, jpg, jpeg, display, show, pixels |
 | # releases         | 6 |
 | # dependents       | 133 |
-| # downloads        | 16470 |
+| # downloads        | 16401 |
 | # stars            | 0 |
 
 ## Links

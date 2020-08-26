@@ -6,17 +6,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Menu extends ItemMenuSeparator {
-  var contentScript: String | js.Array[String]
-  var contentScriptFile: String | js.Array[String]
-  var context: ItemContext
-  var image: String | URL
-  var items: js.Array[ItemMenuSeparator]
-  var label: String
-  var parentMenu: js.UndefOr[Menu] = js.undefined
-  def addItem(item: ItemMenuSeparator): Unit
-  def destroy(): Unit
-  def removeItem(item: ItemMenuSeparator): Unit
+  var contentScript: String | js.Array[String] = js.native
+  var contentScriptFile: String | js.Array[String] = js.native
+  var context: ItemContext = js.native
+  var image: String | URL = js.native
+  var items: js.Array[ItemMenuSeparator] = js.native
+  var label: String = js.native
+  var parentMenu: js.UndefOr[Menu] = js.native
+  def addItem(item: ItemMenuSeparator): Unit = js.native
+  def destroy(): Unit = js.native
+  def removeItem(item: ItemMenuSeparator): Unit = js.native
 }
 
 @JSImport("sdk/context-menu", "Menu")

@@ -84,48 +84,70 @@ trait ParamsResourceCommentthreadsList extends StandardParameters {
 
 object ParamsResourceCommentthreadsList {
   @scala.inline
-  def apply(
-    allThreadsRelatedToChannelId: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    channelId: String = null,
-    fields: String = null,
-    id: String = null,
-    key: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    moderationStatus: String = null,
-    oauth_token: String = null,
-    order: String = null,
-    pageToken: String = null,
-    part: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    searchTerms: String = null,
-    textFormat: String = null,
-    userIp: String = null,
-    videoId: String = null
-  ): ParamsResourceCommentthreadsList = {
+  def apply(): ParamsResourceCommentthreadsList = {
     val __obj = js.Dynamic.literal()
-    if (allThreadsRelatedToChannelId != null) __obj.updateDynamic("allThreadsRelatedToChannelId")(allThreadsRelatedToChannelId.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (moderationStatus != null) __obj.updateDynamic("moderationStatus")(moderationStatus.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (searchTerms != null) __obj.updateDynamic("searchTerms")(searchTerms.asInstanceOf[js.Any])
-    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceCommentthreadsList]
   }
+  @scala.inline
+  implicit class ParamsResourceCommentthreadsListOps[Self <: ParamsResourceCommentthreadsList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllThreadsRelatedToChannelId(value: String): Self = this.set("allThreadsRelatedToChannelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllThreadsRelatedToChannelId: Self = this.set("allThreadsRelatedToChannelId", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setModerationStatus(value: String): Self = this.set("moderationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModerationStatus: Self = this.set("moderationStatus", js.undefined)
+    @scala.inline
+    def setOrder(value: String): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPart(value: String): Self = this.set("part", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePart: Self = this.set("part", js.undefined)
+    @scala.inline
+    def setSearchTerms(value: String): Self = this.set("searchTerms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchTerms: Self = this.set("searchTerms", js.undefined)
+    @scala.inline
+    def setTextFormat(value: String): Self = this.set("textFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+    @scala.inline
+    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoId: Self = this.set("videoId", js.undefined)
+  }
+  
 }
 

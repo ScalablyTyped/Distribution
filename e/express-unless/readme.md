@@ -12,7 +12,7 @@ Conditionally add a middleware to express with some common patterns.
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 68 |
-| # downloads        | 7909436 |
+| # downloads        | 8075984 |
 | # stars            | 8 |
 
 ## Links

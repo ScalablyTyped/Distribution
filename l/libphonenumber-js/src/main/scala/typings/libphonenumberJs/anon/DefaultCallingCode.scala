@@ -5,18 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultCallingCode extends js.Object {
-  var defaultCallingCode: js.UndefOr[String] = js.undefined
-  var defaultCountry: js.UndefOr[CountryCode] = js.undefined
+  var defaultCallingCode: js.UndefOr[String] = js.native
+  var defaultCountry: js.UndefOr[CountryCode] = js.native
 }
 
 object DefaultCallingCode {
   @scala.inline
-  def apply(defaultCallingCode: String = null, defaultCountry: CountryCode = null): DefaultCallingCode = {
+  def apply(): DefaultCallingCode = {
     val __obj = js.Dynamic.literal()
-    if (defaultCallingCode != null) __obj.updateDynamic("defaultCallingCode")(defaultCallingCode.asInstanceOf[js.Any])
-    if (defaultCountry != null) __obj.updateDynamic("defaultCountry")(defaultCountry.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultCallingCode]
   }
+  @scala.inline
+  implicit class DefaultCallingCodeOps[Self <: DefaultCallingCode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultCallingCode(value: String): Self = this.set("defaultCallingCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCallingCode: Self = this.set("defaultCallingCode", js.undefined)
+    @scala.inline
+    def setDefaultCountry(value: CountryCode): Self = this.set("defaultCountry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCountry: Self = this.set("defaultCountry", js.undefined)
+  }
+  
 }
 

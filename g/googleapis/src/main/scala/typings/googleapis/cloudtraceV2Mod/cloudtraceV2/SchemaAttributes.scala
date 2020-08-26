@@ -30,14 +30,30 @@ trait SchemaAttributes extends js.Object {
 
 object SchemaAttributes {
   @scala.inline
-  def apply(
-    attributeMap: StringDictionary[SchemaAttributeValue] = null,
-    droppedAttributesCount: js.UndefOr[Double] = js.undefined
-  ): SchemaAttributes = {
+  def apply(): SchemaAttributes = {
     val __obj = js.Dynamic.literal()
-    if (attributeMap != null) __obj.updateDynamic("attributeMap")(attributeMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(droppedAttributesCount)) __obj.updateDynamic("droppedAttributesCount")(droppedAttributesCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttributes]
   }
+  @scala.inline
+  implicit class SchemaAttributesOps[Self <: SchemaAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeMap(value: StringDictionary[SchemaAttributeValue]): Self = this.set("attributeMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeMap: Self = this.set("attributeMap", js.undefined)
+    @scala.inline
+    def setDroppedAttributesCount(value: Double): Self = this.set("droppedAttributesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDroppedAttributesCount: Self = this.set("droppedAttributesCount", js.undefined)
+  }
+  
 }
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Function & {  prototype  :T} */
+/* Inlined std.Function & {  prototype :T} */
 @js.native
 trait AbstractConstructor[T] extends js.Object {
   // Non-standard extensions

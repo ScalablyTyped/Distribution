@@ -46,22 +46,17 @@ import typings.androiduix.android.widget.CompoundButton.OnCheckedChangeListener
 import typings.androiduix.android.widget.TextView.BufferType
 import typings.androiduix.android.widget.TextView.OnEditorActionListener
 import typings.androiduix.androidui.attr.AttrBinder.ClassBinderMap
-import typings.androiduix.java.lang.Runnable
-import typings.androiduix.java.util.ArrayList
+import typings.androiduix.java_.lang.Runnable
+import typings.androiduix.java_.util.ArrayList
 import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.CompoundButton")
 @js.native
-abstract class CompoundButton_ protected ()
-  extends Button
+trait CompoundButton_
+  extends TextView
      with Checkable {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
   var mBroadcasting: js.Any = js.native
   var mButtonDrawable: js.Any = js.native
   var mButtonResource: js.Any = js.native
@@ -74,8 +69,6 @@ abstract class CompoundButton_ protected ()
   /* private */ override def _getBinderAttrValue(key: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def _initAttrObserver(): js.Any = js.native
-  /* InferMemberOverrides */
-  /* private */ override def _invalidateCache(): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def _invalidateCache(invalidateCache: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -104,6 +97,8 @@ abstract class CompoundButton_ protected ()
   /* private */ override def assumeLayout(): js.Any = js.native
   /* InferMemberOverrides */
   override def awakenScrollBars(): Boolean = js.native
+  /* InferMemberOverrides */
+  override def awakenScrollBars(startDelay: js.UndefOr[scala.Nothing], invalidate: Boolean): Boolean = js.native
   /* InferMemberOverrides */
   override def awakenScrollBars(startDelay: Double): Boolean = js.native
   /* InferMemberOverrides */
@@ -138,8 +133,6 @@ abstract class CompoundButton_ protected ()
   override def cancelLongPress(): Unit = js.native
   /* InferMemberOverrides */
   override def cancelPendingInputEvents(): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def checkForLongClick(): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def checkForLongClick(delayOffset: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -236,8 +229,6 @@ abstract class CompoundButton_ protected ()
   /* private */ override def doKeyDown(keyCode: js.Any, event: js.Any, otherEvent: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   override def draw(canvas: Canvas): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any, scalingRequired: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -342,10 +333,6 @@ abstract class CompoundButton_ protected ()
   /* protected */ override def getDefaultEditable(): Boolean = js.native
   /* InferMemberOverrides */
   /* protected */ override def getDefaultMovementMethod(): MovementMethod = js.native
-  /* InferMemberOverrides */
-  /* private */ override def getDesiredHeight(): js.Any = js.native
-  /* InferMemberOverrides */
-  /* private */ override def getDesiredHeight(layout: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def getDesiredHeight(layout: js.Any, cap: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -736,8 +723,6 @@ abstract class CompoundButton_ protected ()
   override def isActivated(): Boolean = js.native
   /* InferMemberOverrides */
   override def isAttachedToWindow(): Boolean = js.native
-  /* CompleteClass */
-  override def isChecked(): Boolean = js.native
   /* InferMemberOverrides */
   override def isClickable(): Boolean = js.native
   /* InferMemberOverrides */
@@ -948,9 +933,36 @@ abstract class CompoundButton_ protected ()
   /* InferMemberOverrides */
   override def postInvalidate(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(
+    l: js.UndefOr[scala.Nothing],
+    t: js.UndefOr[scala.Nothing],
+    r: js.UndefOr[scala.Nothing],
+    b: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double, r: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -958,9 +970,78 @@ abstract class CompoundButton_ protected ()
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -968,9 +1049,36 @@ abstract class CompoundButton_ protected ()
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -1009,6 +1117,8 @@ abstract class CompoundButton_ protected ()
   /* protected */ override def replaceText_internal(start: Double, end: Double, text: String): Unit = js.native
   /* InferMemberOverrides */
   override def requestFocus(): Boolean = js.native
+  /* InferMemberOverrides */
+  override def requestFocus(direction: js.UndefOr[scala.Nothing], previouslyFocusedRect: js.Any): Boolean = js.native
   /* InferMemberOverrides */
   override def requestFocus(direction: Double): Boolean = js.native
   /* InferMemberOverrides */
@@ -1074,8 +1184,6 @@ abstract class CompoundButton_ protected ()
   /* InferMemberOverrides */
   override def setBottom(bottom: Double): Unit = js.native
   def setButtonDrawable(d: Drawable): Unit = js.native
-  /* CompleteClass */
-  override def setChecked(checked: Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def setClickable(clickable: Boolean): Unit = js.native
   /* InferMemberOverrides */
@@ -1093,7 +1201,30 @@ abstract class CompoundButton_ protected ()
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: js.UndefOr[scala.Nothing], radiusBottomRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: Double,
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: Double,
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double, radiusBottomRight: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -1341,7 +1472,20 @@ abstract class CompoundButton_ protected ()
   /* InferMemberOverrides */
   override def setText(text: String): Unit = js.native
   /* InferMemberOverrides */
+  override def setText(
+    text: String,
+    `type`: js.UndefOr[scala.Nothing],
+    notifyBefore: js.UndefOr[scala.Nothing],
+    oldlen: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def setText(text: String, `type`: js.UndefOr[scala.Nothing], notifyBefore: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def setText(text: String, `type`: js.UndefOr[scala.Nothing], notifyBefore: Boolean, oldlen: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def setText(text: String, `type`: BufferType): Unit = js.native
+  /* InferMemberOverrides */
+  override def setText(text: String, `type`: BufferType, notifyBefore: js.UndefOr[scala.Nothing], oldlen: Double): Unit = js.native
   /* InferMemberOverrides */
   override def setText(text: String, `type`: BufferType, notifyBefore: Boolean): Unit = js.native
   /* InferMemberOverrides */
@@ -1426,8 +1570,6 @@ abstract class CompoundButton_ protected ()
   override def tagName(): String = js.native
   /* InferMemberOverrides */
   override def textCanBeSelected(): Boolean = js.native
-  /* CompleteClass */
-  override def toggle(): Unit = js.native
   /* InferMemberOverrides */
   override def transformRect(rect: Rect): Unit = js.native
   /* InferMemberOverrides */

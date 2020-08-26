@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "scrypt-js" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "scrypt-js" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

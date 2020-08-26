@@ -30,20 +30,42 @@ trait RightsizingRecommendation extends js.Object {
 
 object RightsizingRecommendation {
   @scala.inline
-  def apply(
-    AccountId: GenericString = null,
-    CurrentInstance: CurrentInstance = null,
-    ModifyRecommendationDetail: ModifyRecommendationDetail = null,
-    RightsizingType: RightsizingType = null,
-    TerminateRecommendationDetail: TerminateRecommendationDetail = null
-  ): RightsizingRecommendation = {
+  def apply(): RightsizingRecommendation = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (CurrentInstance != null) __obj.updateDynamic("CurrentInstance")(CurrentInstance.asInstanceOf[js.Any])
-    if (ModifyRecommendationDetail != null) __obj.updateDynamic("ModifyRecommendationDetail")(ModifyRecommendationDetail.asInstanceOf[js.Any])
-    if (RightsizingType != null) __obj.updateDynamic("RightsizingType")(RightsizingType.asInstanceOf[js.Any])
-    if (TerminateRecommendationDetail != null) __obj.updateDynamic("TerminateRecommendationDetail")(TerminateRecommendationDetail.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightsizingRecommendation]
   }
+  @scala.inline
+  implicit class RightsizingRecommendationOps[Self <: RightsizingRecommendation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: GenericString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setCurrentInstance(value: CurrentInstance): Self = this.set("CurrentInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentInstance: Self = this.set("CurrentInstance", js.undefined)
+    @scala.inline
+    def setModifyRecommendationDetail(value: ModifyRecommendationDetail): Self = this.set("ModifyRecommendationDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifyRecommendationDetail: Self = this.set("ModifyRecommendationDetail", js.undefined)
+    @scala.inline
+    def setRightsizingType(value: RightsizingType): Self = this.set("RightsizingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightsizingType: Self = this.set("RightsizingType", js.undefined)
+    @scala.inline
+    def setTerminateRecommendationDetail(value: TerminateRecommendationDetail): Self = this.set("TerminateRecommendationDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminateRecommendationDetail: Self = this.set("TerminateRecommendationDetail", js.undefined)
+  }
+  
 }
 

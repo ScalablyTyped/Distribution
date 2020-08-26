@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Vocabulary
   extends typings.yadda.englishMod.Vocabulary {
-  var gdy: String
-  var jesli: String
-  var jezeli: String
-  var kiedy: String
-  var majac: String
-  var wtedy: String
-  var zakladajac: String
+  var gdy: String = js.native
+  var jesli: String = js.native
+  var jezeli: String = js.native
+  var kiedy: String = js.native
+  var majac: String = js.native
+  var wtedy: String = js.native
+  var zakladajac: String = js.native
 }
 
 object Vocabulary {
@@ -40,5 +41,32 @@ object Vocabulary {
     __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vocabulary]
   }
+  @scala.inline
+  implicit class VocabularyOps[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGdy(value: String): Self = this.set("gdy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJesli(value: String): Self = this.set("jesli", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJezeli(value: String): Self = this.set("jezeli", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKiedy(value: String): Self = this.set("kiedy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMajac(value: String): Self = this.set("majac", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWtedy(value: String): Self = this.set("wtedy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZakladajac(value: String): Self = this.set("zakladajac", value.asInstanceOf[js.Any])
+  }
+  
 }
 

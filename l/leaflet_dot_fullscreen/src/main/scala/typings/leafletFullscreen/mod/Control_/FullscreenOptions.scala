@@ -7,39 +7,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FullscreenOptions extends js.Object {
-  var content: js.UndefOr[String] = js.undefined
-  var forcePseudoFullscreen: js.UndefOr[Boolean] = js.undefined
-  var forceSeparateButton: js.UndefOr[Boolean] = js.undefined
-  var fullscreenElement: js.UndefOr[`false` | HTMLElement] = js.undefined
-  var position: js.UndefOr[ControlPosition] = js.undefined
-  var pseudoFullscreen: js.UndefOr[Boolean] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var titleCancel: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[String] = js.native
+  var forcePseudoFullscreen: js.UndefOr[Boolean] = js.native
+  var forceSeparateButton: js.UndefOr[Boolean] = js.native
+  var fullscreenElement: js.UndefOr[`false` | HTMLElement] = js.native
+  var position: js.UndefOr[ControlPosition] = js.native
+  var pseudoFullscreen: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[String] = js.native
+  var titleCancel: js.UndefOr[String] = js.native
 }
 
 object FullscreenOptions {
   @scala.inline
-  def apply(
-    content: String = null,
-    forcePseudoFullscreen: js.UndefOr[Boolean] = js.undefined,
-    forceSeparateButton: js.UndefOr[Boolean] = js.undefined,
-    fullscreenElement: `false` | HTMLElement = null,
-    position: ControlPosition = null,
-    pseudoFullscreen: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    titleCancel: String = null
-  ): FullscreenOptions = {
+  def apply(): FullscreenOptions = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(forcePseudoFullscreen)) __obj.updateDynamic("forcePseudoFullscreen")(forcePseudoFullscreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSeparateButton)) __obj.updateDynamic("forceSeparateButton")(forceSeparateButton.get.asInstanceOf[js.Any])
-    if (fullscreenElement != null) __obj.updateDynamic("fullscreenElement")(fullscreenElement.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(pseudoFullscreen)) __obj.updateDynamic("pseudoFullscreen")(pseudoFullscreen.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleCancel != null) __obj.updateDynamic("titleCancel")(titleCancel.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullscreenOptions]
   }
+  @scala.inline
+  implicit class FullscreenOptionsOps[Self <: FullscreenOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setForcePseudoFullscreen(value: Boolean): Self = this.set("forcePseudoFullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForcePseudoFullscreen: Self = this.set("forcePseudoFullscreen", js.undefined)
+    @scala.inline
+    def setForceSeparateButton(value: Boolean): Self = this.set("forceSeparateButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceSeparateButton: Self = this.set("forceSeparateButton", js.undefined)
+    @scala.inline
+    def setFullscreenElement(value: `false` | HTMLElement): Self = this.set("fullscreenElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullscreenElement: Self = this.set("fullscreenElement", js.undefined)
+    @scala.inline
+    def setPosition(value: ControlPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setPseudoFullscreen(value: Boolean): Self = this.set("pseudoFullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePseudoFullscreen: Self = this.set("pseudoFullscreen", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleCancel(value: String): Self = this.set("titleCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleCancel: Self = this.set("titleCancel", js.undefined)
+  }
+  
 }
 

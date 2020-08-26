@@ -18,11 +18,30 @@ trait WaitActivity extends js.Object {
 
 object WaitActivity {
   @scala.inline
-  def apply(NextActivity: string = null, WaitTime: WaitTime = null): WaitActivity = {
+  def apply(): WaitActivity = {
     val __obj = js.Dynamic.literal()
-    if (NextActivity != null) __obj.updateDynamic("NextActivity")(NextActivity.asInstanceOf[js.Any])
-    if (WaitTime != null) __obj.updateDynamic("WaitTime")(WaitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitActivity]
   }
+  @scala.inline
+  implicit class WaitActivityOps[Self <: WaitActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextActivity(value: string): Self = this.set("NextActivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextActivity: Self = this.set("NextActivity", js.undefined)
+    @scala.inline
+    def setWaitTime(value: WaitTime): Self = this.set("WaitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitTime: Self = this.set("WaitTime", js.undefined)
+  }
+  
 }
 

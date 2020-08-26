@@ -31,9 +31,10 @@ object mod extends js.Object {
   def observerBatchingOptOut(): Unit = js.native
   def useAsObservableSource[TSource](current: TSource): TSource = js.native
   def useForceUpdate(): js.Function0[Unit] = js.native
-  def useLocalStore[TStore /* <: Record[String, _] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore]): TStore = js.native
+  def useLocalStore[TStore /* <: Record[String, _] */](initializer: js.Function0[TStore]): TStore = js.native
   def useLocalStore[TStore /* <: Record[String, _] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore], current: TSource): TStore = js.native
   def useObserver[T](fn: js.Function0[T]): T = js.native
+  def useObserver[T](fn: js.Function0[T], baseComponentName: js.UndefOr[scala.Nothing], options: IUseObserverOptions): T = js.native
   def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = js.native
   def useObserver[T](fn: js.Function0[T], baseComponentName: String, options: IUseObserverOptions): T = js.native
   def useStaticRendering(enable: Boolean): Unit = js.native

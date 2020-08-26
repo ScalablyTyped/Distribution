@@ -18,11 +18,32 @@ trait PutEmailIdentityDkimSigningAttributesResponse extends js.Object {
 
 object PutEmailIdentityDkimSigningAttributesResponse {
   @scala.inline
-  def apply(DkimStatus: DkimStatus = null, DkimTokens: DnsTokenList = null): PutEmailIdentityDkimSigningAttributesResponse = {
+  def apply(): PutEmailIdentityDkimSigningAttributesResponse = {
     val __obj = js.Dynamic.literal()
-    if (DkimStatus != null) __obj.updateDynamic("DkimStatus")(DkimStatus.asInstanceOf[js.Any])
-    if (DkimTokens != null) __obj.updateDynamic("DkimTokens")(DkimTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEmailIdentityDkimSigningAttributesResponse]
   }
+  @scala.inline
+  implicit class PutEmailIdentityDkimSigningAttributesResponseOps[Self <: PutEmailIdentityDkimSigningAttributesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDkimStatus(value: DkimStatus): Self = this.set("DkimStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDkimStatus: Self = this.set("DkimStatus", js.undefined)
+    @scala.inline
+    def setDkimTokensVarargs(value: DnsToken*): Self = this.set("DkimTokens", js.Array(value :_*))
+    @scala.inline
+    def setDkimTokens(value: DnsTokenList): Self = this.set("DkimTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDkimTokens: Self = this.set("DkimTokens", js.undefined)
+  }
+  
 }
 

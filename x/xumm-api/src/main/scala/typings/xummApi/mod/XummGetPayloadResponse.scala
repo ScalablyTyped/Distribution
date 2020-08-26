@@ -7,12 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XummGetPayloadResponse extends js.Object {
-  var application: Description
-  var custom_meta: XummCustomMeta
-  var meta: XummPayloadMeta
-  var payload: Createdat
-  var response: Account
+  var application: Description = js.native
+  var custom_meta: XummCustomMeta = js.native
+  var meta: XummPayloadMeta = js.native
+  var payload: Createdat = js.native
+  var response: Account = js.native
 }
 
 object XummGetPayloadResponse {
@@ -27,5 +28,28 @@ object XummGetPayloadResponse {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], custom_meta = custom_meta.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[XummGetPayloadResponse]
   }
+  @scala.inline
+  implicit class XummGetPayloadResponseOps[Self <: XummGetPayloadResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Description): Self = this.set("application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustom_meta(value: XummCustomMeta): Self = this.set("custom_meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMeta(value: XummPayloadMeta): Self = this.set("meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPayload(value: Createdat): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResponse(value: Account): Self = this.set("response", value.asInstanceOf[js.Any])
+  }
+  
 }
 

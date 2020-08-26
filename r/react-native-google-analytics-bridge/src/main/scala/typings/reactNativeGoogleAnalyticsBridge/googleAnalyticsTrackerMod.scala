@@ -174,6 +174,7 @@ object googleAnalyticsTrackerMod extends js.Object {
       * @param  {HitPayload} payload (Optional) An object containing the hit payload
       */
     def trackEvent(category: String, action: String): Unit = js.native
+    def trackEvent(category: String, action: String, eventMetadata: js.UndefOr[scala.Nothing], payload: HitPayload): Unit = js.native
     def trackEvent(category: String, action: String, eventMetadata: EventMetadata): Unit = js.native
     def trackEvent(category: String, action: String, eventMetadata: EventMetadata, payload: HitPayload): Unit = js.native
     /**
@@ -189,6 +190,7 @@ object googleAnalyticsTrackerMod extends js.Object {
       * @param  {HitPayload} payload (Optional) An object containing the hit payload
       */
     def trackException(error: String): Unit = js.native
+    def trackException(error: String, fatal: js.UndefOr[scala.Nothing], payload: HitPayload): Unit = js.native
     def trackException(error: String, fatal: Boolean): Unit = js.native
     def trackException(error: String, fatal: Boolean, payload: HitPayload): Unit = js.native
     /**

@@ -25,6 +25,7 @@ abstract class CustomResource protected ()
     */
   def this(t: String, name: String) = this()
   def this(t: String, name: String, props: Inputs) = this()
+  def this(t: String, name: String, props: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(t: String, name: String, props: Inputs, opts: CustomResourceOptions) = this()
 }
 

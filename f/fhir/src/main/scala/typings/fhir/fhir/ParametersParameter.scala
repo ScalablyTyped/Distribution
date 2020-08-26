@@ -7,374 +7,492 @@ import scala.scalajs.js.annotation._
 /**
   * Operation Parameter
   */
+@js.native
 trait ParametersParameter extends BackboneElement {
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueBase64Binary'.
     */
-  var _valueBase64Binary: js.UndefOr[Element] = js.undefined
+  var _valueBase64Binary: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueBoolean'.
     */
-  var _valueBoolean: js.UndefOr[Element] = js.undefined
+  var _valueBoolean: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueCode'.
     */
-  var _valueCode: js.UndefOr[Element] = js.undefined
+  var _valueCode: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueDate'.
     */
-  var _valueDate: js.UndefOr[Element] = js.undefined
+  var _valueDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueDateTime'.
     */
-  var _valueDateTime: js.UndefOr[Element] = js.undefined
+  var _valueDateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueDecimal'.
     */
-  var _valueDecimal: js.UndefOr[Element] = js.undefined
+  var _valueDecimal: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueId'.
     */
-  var _valueId: js.UndefOr[Element] = js.undefined
+  var _valueId: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueInstant'.
     */
-  var _valueInstant: js.UndefOr[Element] = js.undefined
+  var _valueInstant: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueInteger'.
     */
-  var _valueInteger: js.UndefOr[Element] = js.undefined
+  var _valueInteger: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueMarkdown'.
     */
-  var _valueMarkdown: js.UndefOr[Element] = js.undefined
+  var _valueMarkdown: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueOid'.
     */
-  var _valueOid: js.UndefOr[Element] = js.undefined
+  var _valueOid: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valuePositiveInt'.
     */
-  var _valuePositiveInt: js.UndefOr[Element] = js.undefined
+  var _valuePositiveInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueString'.
     */
-  var _valueString: js.UndefOr[Element] = js.undefined
+  var _valueString: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueTime'.
     */
-  var _valueTime: js.UndefOr[Element] = js.undefined
+  var _valueTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueUnsignedInt'.
     */
-  var _valueUnsignedInt: js.UndefOr[Element] = js.undefined
+  var _valueUnsignedInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueUri'.
     */
-  var _valueUri: js.UndefOr[Element] = js.undefined
+  var _valueUri: js.UndefOr[Element] = js.native
   /**
     * Name from the definition
     */
-  var name: String
+  var name: String = js.native
   /**
     * Named part of a multi-part parameter
     */
-  var part: js.UndefOr[js.Array[ParametersParameter]] = js.undefined
+  var part: js.UndefOr[js.Array[ParametersParameter]] = js.native
   /**
     * If parameter is a whole resource
     */
-  var resource: js.UndefOr[Resource] = js.undefined
+  var resource: js.UndefOr[Resource] = js.native
   /**
     * If parameter is a data type
     */
-  var valueAddress: js.UndefOr[Address] = js.undefined
+  var valueAddress: js.UndefOr[Address] = js.native
   /**
     * If parameter is a data type
     */
-  var valueAge: js.UndefOr[Age] = js.undefined
+  var valueAge: js.UndefOr[Age] = js.native
   /**
     * If parameter is a data type
     */
-  var valueAnnotation: js.UndefOr[Annotation] = js.undefined
+  var valueAnnotation: js.UndefOr[Annotation] = js.native
   /**
     * If parameter is a data type
     */
-  var valueAttachment: js.UndefOr[Attachment] = js.undefined
+  var valueAttachment: js.UndefOr[Attachment] = js.native
   /**
     * If parameter is a data type
     */
-  var valueBase64Binary: js.UndefOr[base64Binary] = js.undefined
+  var valueBase64Binary: js.UndefOr[base64Binary] = js.native
   /**
     * If parameter is a data type
     */
-  var valueBoolean: js.UndefOr[Boolean] = js.undefined
+  var valueBoolean: js.UndefOr[Boolean] = js.native
   /**
     * If parameter is a data type
     */
-  var valueCode: js.UndefOr[code] = js.undefined
+  var valueCode: js.UndefOr[code] = js.native
   /**
     * If parameter is a data type
     */
-  var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.native
   /**
     * If parameter is a data type
     */
-  var valueCoding: js.UndefOr[Coding] = js.undefined
+  var valueCoding: js.UndefOr[Coding] = js.native
   /**
     * If parameter is a data type
     */
-  var valueContactPoint: js.UndefOr[ContactPoint] = js.undefined
+  var valueContactPoint: js.UndefOr[ContactPoint] = js.native
   /**
     * If parameter is a data type
     */
-  var valueCount: js.UndefOr[Count] = js.undefined
+  var valueCount: js.UndefOr[Count] = js.native
   /**
     * If parameter is a data type
     */
-  var valueDate: js.UndefOr[date] = js.undefined
+  var valueDate: js.UndefOr[date] = js.native
   /**
     * If parameter is a data type
     */
-  var valueDateTime: js.UndefOr[dateTime] = js.undefined
+  var valueDateTime: js.UndefOr[dateTime] = js.native
   /**
     * If parameter is a data type
     */
-  var valueDecimal: js.UndefOr[decimal] = js.undefined
+  var valueDecimal: js.UndefOr[decimal] = js.native
   /**
     * If parameter is a data type
     */
-  var valueDistance: js.UndefOr[Distance] = js.undefined
+  var valueDistance: js.UndefOr[Distance] = js.native
   /**
     * If parameter is a data type
     */
-  var valueDuration: js.UndefOr[Duration] = js.undefined
+  var valueDuration: js.UndefOr[Duration] = js.native
   /**
     * If parameter is a data type
     */
-  var valueHumanName: js.UndefOr[HumanName] = js.undefined
+  var valueHumanName: js.UndefOr[HumanName] = js.native
   /**
     * If parameter is a data type
     */
-  var valueId: js.UndefOr[id] = js.undefined
+  var valueId: js.UndefOr[id] = js.native
   /**
     * If parameter is a data type
     */
-  var valueIdentifier: js.UndefOr[Identifier] = js.undefined
+  var valueIdentifier: js.UndefOr[Identifier] = js.native
   /**
     * If parameter is a data type
     */
-  var valueInstant: js.UndefOr[instant] = js.undefined
+  var valueInstant: js.UndefOr[instant] = js.native
   /**
     * If parameter is a data type
     */
-  var valueInteger: js.UndefOr[integer] = js.undefined
+  var valueInteger: js.UndefOr[integer] = js.native
   /**
     * If parameter is a data type
     */
-  var valueMarkdown: js.UndefOr[markdown] = js.undefined
+  var valueMarkdown: js.UndefOr[markdown] = js.native
   /**
     * If parameter is a data type
     */
-  var valueMeta: js.UndefOr[Meta] = js.undefined
+  var valueMeta: js.UndefOr[Meta] = js.native
   /**
     * If parameter is a data type
     */
-  var valueMoney: js.UndefOr[Money] = js.undefined
+  var valueMoney: js.UndefOr[Money] = js.native
   /**
     * If parameter is a data type
     */
-  var valueOid: js.UndefOr[oid] = js.undefined
+  var valueOid: js.UndefOr[oid] = js.native
   /**
     * If parameter is a data type
     */
-  var valuePeriod: js.UndefOr[Period] = js.undefined
+  var valuePeriod: js.UndefOr[Period] = js.native
   /**
     * If parameter is a data type
     */
-  var valuePositiveInt: js.UndefOr[positiveInt] = js.undefined
+  var valuePositiveInt: js.UndefOr[positiveInt] = js.native
   /**
     * If parameter is a data type
     */
-  var valueQuantity: js.UndefOr[Quantity] = js.undefined
+  var valueQuantity: js.UndefOr[Quantity] = js.native
   /**
     * If parameter is a data type
     */
-  var valueRange: js.UndefOr[Range] = js.undefined
+  var valueRange: js.UndefOr[Range] = js.native
   /**
     * If parameter is a data type
     */
-  var valueRatio: js.UndefOr[Ratio] = js.undefined
+  var valueRatio: js.UndefOr[Ratio] = js.native
   /**
     * If parameter is a data type
     */
-  var valueReference: js.UndefOr[Reference] = js.undefined
+  var valueReference: js.UndefOr[Reference] = js.native
   /**
     * If parameter is a data type
     */
-  var valueSampledData: js.UndefOr[SampledData] = js.undefined
+  var valueSampledData: js.UndefOr[SampledData] = js.native
   /**
     * If parameter is a data type
     */
-  var valueSignature: js.UndefOr[Signature] = js.undefined
+  var valueSignature: js.UndefOr[Signature] = js.native
   /**
     * If parameter is a data type
     */
-  var valueString: js.UndefOr[String] = js.undefined
+  var valueString: js.UndefOr[String] = js.native
   /**
     * If parameter is a data type
     */
-  var valueTime: js.UndefOr[time] = js.undefined
+  var valueTime: js.UndefOr[time] = js.native
   /**
     * If parameter is a data type
     */
-  var valueTiming: js.UndefOr[Timing] = js.undefined
+  var valueTiming: js.UndefOr[Timing] = js.native
   /**
     * If parameter is a data type
     */
-  var valueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
+  var valueUnsignedInt: js.UndefOr[unsignedInt] = js.native
   /**
     * If parameter is a data type
     */
-  var valueUri: js.UndefOr[uri] = js.undefined
+  var valueUri: js.UndefOr[uri] = js.native
 }
 
 object ParametersParameter {
   @scala.inline
-  def apply(
-    name: String,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _name: Element = null,
-    _valueBase64Binary: Element = null,
-    _valueBoolean: Element = null,
-    _valueCode: Element = null,
-    _valueDate: Element = null,
-    _valueDateTime: Element = null,
-    _valueDecimal: Element = null,
-    _valueId: Element = null,
-    _valueInstant: Element = null,
-    _valueInteger: Element = null,
-    _valueMarkdown: Element = null,
-    _valueOid: Element = null,
-    _valuePositiveInt: Element = null,
-    _valueString: Element = null,
-    _valueTime: Element = null,
-    _valueUnsignedInt: Element = null,
-    _valueUri: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    part: js.Array[ParametersParameter] = null,
-    resource: Resource = null,
-    valueAddress: Address = null,
-    valueAge: Age = null,
-    valueAnnotation: Annotation = null,
-    valueAttachment: Attachment = null,
-    valueBase64Binary: base64Binary = null,
-    valueBoolean: js.UndefOr[Boolean] = js.undefined,
-    valueCode: code = null,
-    valueCodeableConcept: CodeableConcept = null,
-    valueCoding: Coding = null,
-    valueContactPoint: ContactPoint = null,
-    valueCount: Count = null,
-    valueDate: date = null,
-    valueDateTime: dateTime = null,
-    valueDecimal: js.UndefOr[decimal] = js.undefined,
-    valueDistance: Distance = null,
-    valueDuration: Duration = null,
-    valueHumanName: HumanName = null,
-    valueId: id = null,
-    valueIdentifier: Identifier = null,
-    valueInstant: instant = null,
-    valueInteger: js.UndefOr[integer] = js.undefined,
-    valueMarkdown: markdown = null,
-    valueMeta: Meta = null,
-    valueMoney: Money = null,
-    valueOid: oid = null,
-    valuePeriod: Period = null,
-    valuePositiveInt: js.UndefOr[positiveInt] = js.undefined,
-    valueQuantity: Quantity = null,
-    valueRange: Range = null,
-    valueRatio: Ratio = null,
-    valueReference: Reference = null,
-    valueSampledData: SampledData = null,
-    valueSignature: Signature = null,
-    valueString: String = null,
-    valueTime: time = null,
-    valueTiming: Timing = null,
-    valueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
-    valueUri: uri = null
-  ): ParametersParameter = {
+  def apply(name: String): ParametersParameter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_valueBase64Binary != null) __obj.updateDynamic("_valueBase64Binary")(_valueBase64Binary.asInstanceOf[js.Any])
-    if (_valueBoolean != null) __obj.updateDynamic("_valueBoolean")(_valueBoolean.asInstanceOf[js.Any])
-    if (_valueCode != null) __obj.updateDynamic("_valueCode")(_valueCode.asInstanceOf[js.Any])
-    if (_valueDate != null) __obj.updateDynamic("_valueDate")(_valueDate.asInstanceOf[js.Any])
-    if (_valueDateTime != null) __obj.updateDynamic("_valueDateTime")(_valueDateTime.asInstanceOf[js.Any])
-    if (_valueDecimal != null) __obj.updateDynamic("_valueDecimal")(_valueDecimal.asInstanceOf[js.Any])
-    if (_valueId != null) __obj.updateDynamic("_valueId")(_valueId.asInstanceOf[js.Any])
-    if (_valueInstant != null) __obj.updateDynamic("_valueInstant")(_valueInstant.asInstanceOf[js.Any])
-    if (_valueInteger != null) __obj.updateDynamic("_valueInteger")(_valueInteger.asInstanceOf[js.Any])
-    if (_valueMarkdown != null) __obj.updateDynamic("_valueMarkdown")(_valueMarkdown.asInstanceOf[js.Any])
-    if (_valueOid != null) __obj.updateDynamic("_valueOid")(_valueOid.asInstanceOf[js.Any])
-    if (_valuePositiveInt != null) __obj.updateDynamic("_valuePositiveInt")(_valuePositiveInt.asInstanceOf[js.Any])
-    if (_valueString != null) __obj.updateDynamic("_valueString")(_valueString.asInstanceOf[js.Any])
-    if (_valueTime != null) __obj.updateDynamic("_valueTime")(_valueTime.asInstanceOf[js.Any])
-    if (_valueUnsignedInt != null) __obj.updateDynamic("_valueUnsignedInt")(_valueUnsignedInt.asInstanceOf[js.Any])
-    if (_valueUri != null) __obj.updateDynamic("_valueUri")(_valueUri.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (valueAddress != null) __obj.updateDynamic("valueAddress")(valueAddress.asInstanceOf[js.Any])
-    if (valueAge != null) __obj.updateDynamic("valueAge")(valueAge.asInstanceOf[js.Any])
-    if (valueAnnotation != null) __obj.updateDynamic("valueAnnotation")(valueAnnotation.asInstanceOf[js.Any])
-    if (valueAttachment != null) __obj.updateDynamic("valueAttachment")(valueAttachment.asInstanceOf[js.Any])
-    if (valueBase64Binary != null) __obj.updateDynamic("valueBase64Binary")(valueBase64Binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean.get.asInstanceOf[js.Any])
-    if (valueCode != null) __obj.updateDynamic("valueCode")(valueCode.asInstanceOf[js.Any])
-    if (valueCodeableConcept != null) __obj.updateDynamic("valueCodeableConcept")(valueCodeableConcept.asInstanceOf[js.Any])
-    if (valueCoding != null) __obj.updateDynamic("valueCoding")(valueCoding.asInstanceOf[js.Any])
-    if (valueContactPoint != null) __obj.updateDynamic("valueContactPoint")(valueContactPoint.asInstanceOf[js.Any])
-    if (valueCount != null) __obj.updateDynamic("valueCount")(valueCount.asInstanceOf[js.Any])
-    if (valueDate != null) __obj.updateDynamic("valueDate")(valueDate.asInstanceOf[js.Any])
-    if (valueDateTime != null) __obj.updateDynamic("valueDateTime")(valueDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueDecimal)) __obj.updateDynamic("valueDecimal")(valueDecimal.get.asInstanceOf[js.Any])
-    if (valueDistance != null) __obj.updateDynamic("valueDistance")(valueDistance.asInstanceOf[js.Any])
-    if (valueDuration != null) __obj.updateDynamic("valueDuration")(valueDuration.asInstanceOf[js.Any])
-    if (valueHumanName != null) __obj.updateDynamic("valueHumanName")(valueHumanName.asInstanceOf[js.Any])
-    if (valueId != null) __obj.updateDynamic("valueId")(valueId.asInstanceOf[js.Any])
-    if (valueIdentifier != null) __obj.updateDynamic("valueIdentifier")(valueIdentifier.asInstanceOf[js.Any])
-    if (valueInstant != null) __obj.updateDynamic("valueInstant")(valueInstant.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
-    if (valueMarkdown != null) __obj.updateDynamic("valueMarkdown")(valueMarkdown.asInstanceOf[js.Any])
-    if (valueMeta != null) __obj.updateDynamic("valueMeta")(valueMeta.asInstanceOf[js.Any])
-    if (valueMoney != null) __obj.updateDynamic("valueMoney")(valueMoney.asInstanceOf[js.Any])
-    if (valueOid != null) __obj.updateDynamic("valueOid")(valueOid.asInstanceOf[js.Any])
-    if (valuePeriod != null) __obj.updateDynamic("valuePeriod")(valuePeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(valuePositiveInt)) __obj.updateDynamic("valuePositiveInt")(valuePositiveInt.get.asInstanceOf[js.Any])
-    if (valueQuantity != null) __obj.updateDynamic("valueQuantity")(valueQuantity.asInstanceOf[js.Any])
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
-    if (valueRatio != null) __obj.updateDynamic("valueRatio")(valueRatio.asInstanceOf[js.Any])
-    if (valueReference != null) __obj.updateDynamic("valueReference")(valueReference.asInstanceOf[js.Any])
-    if (valueSampledData != null) __obj.updateDynamic("valueSampledData")(valueSampledData.asInstanceOf[js.Any])
-    if (valueSignature != null) __obj.updateDynamic("valueSignature")(valueSignature.asInstanceOf[js.Any])
-    if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
-    if (valueTime != null) __obj.updateDynamic("valueTime")(valueTime.asInstanceOf[js.Any])
-    if (valueTiming != null) __obj.updateDynamic("valueTiming")(valueTiming.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueUnsignedInt)) __obj.updateDynamic("valueUnsignedInt")(valueUnsignedInt.get.asInstanceOf[js.Any])
-    if (valueUri != null) __obj.updateDynamic("valueUri")(valueUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersParameter]
   }
+  @scala.inline
+  implicit class ParametersParameterOps[Self <: ParametersParameter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_valueBase64Binary(value: Element): Self = this.set("_valueBase64Binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueBase64Binary: Self = this.set("_valueBase64Binary", js.undefined)
+    @scala.inline
+    def set_valueBoolean(value: Element): Self = this.set("_valueBoolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueBoolean: Self = this.set("_valueBoolean", js.undefined)
+    @scala.inline
+    def set_valueCode(value: Element): Self = this.set("_valueCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueCode: Self = this.set("_valueCode", js.undefined)
+    @scala.inline
+    def set_valueDate(value: Element): Self = this.set("_valueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueDate: Self = this.set("_valueDate", js.undefined)
+    @scala.inline
+    def set_valueDateTime(value: Element): Self = this.set("_valueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueDateTime: Self = this.set("_valueDateTime", js.undefined)
+    @scala.inline
+    def set_valueDecimal(value: Element): Self = this.set("_valueDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueDecimal: Self = this.set("_valueDecimal", js.undefined)
+    @scala.inline
+    def set_valueId(value: Element): Self = this.set("_valueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueId: Self = this.set("_valueId", js.undefined)
+    @scala.inline
+    def set_valueInstant(value: Element): Self = this.set("_valueInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueInstant: Self = this.set("_valueInstant", js.undefined)
+    @scala.inline
+    def set_valueInteger(value: Element): Self = this.set("_valueInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueInteger: Self = this.set("_valueInteger", js.undefined)
+    @scala.inline
+    def set_valueMarkdown(value: Element): Self = this.set("_valueMarkdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueMarkdown: Self = this.set("_valueMarkdown", js.undefined)
+    @scala.inline
+    def set_valueOid(value: Element): Self = this.set("_valueOid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueOid: Self = this.set("_valueOid", js.undefined)
+    @scala.inline
+    def set_valuePositiveInt(value: Element): Self = this.set("_valuePositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valuePositiveInt: Self = this.set("_valuePositiveInt", js.undefined)
+    @scala.inline
+    def set_valueString(value: Element): Self = this.set("_valueString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueString: Self = this.set("_valueString", js.undefined)
+    @scala.inline
+    def set_valueTime(value: Element): Self = this.set("_valueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueTime: Self = this.set("_valueTime", js.undefined)
+    @scala.inline
+    def set_valueUnsignedInt(value: Element): Self = this.set("_valueUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueUnsignedInt: Self = this.set("_valueUnsignedInt", js.undefined)
+    @scala.inline
+    def set_valueUri(value: Element): Self = this.set("_valueUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueUri: Self = this.set("_valueUri", js.undefined)
+    @scala.inline
+    def setPartVarargs(value: ParametersParameter*): Self = this.set("part", js.Array(value :_*))
+    @scala.inline
+    def setPart(value: js.Array[ParametersParameter]): Self = this.set("part", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePart: Self = this.set("part", js.undefined)
+    @scala.inline
+    def setResource(value: Resource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setValueAddress(value: Address): Self = this.set("valueAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueAddress: Self = this.set("valueAddress", js.undefined)
+    @scala.inline
+    def setValueAge(value: Age): Self = this.set("valueAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueAge: Self = this.set("valueAge", js.undefined)
+    @scala.inline
+    def setValueAnnotation(value: Annotation): Self = this.set("valueAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueAnnotation: Self = this.set("valueAnnotation", js.undefined)
+    @scala.inline
+    def setValueAttachment(value: Attachment): Self = this.set("valueAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueAttachment: Self = this.set("valueAttachment", js.undefined)
+    @scala.inline
+    def setValueBase64Binary(value: base64Binary): Self = this.set("valueBase64Binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueBase64Binary: Self = this.set("valueBase64Binary", js.undefined)
+    @scala.inline
+    def setValueBoolean(value: Boolean): Self = this.set("valueBoolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueBoolean: Self = this.set("valueBoolean", js.undefined)
+    @scala.inline
+    def setValueCode(value: code): Self = this.set("valueCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueCode: Self = this.set("valueCode", js.undefined)
+    @scala.inline
+    def setValueCodeableConcept(value: CodeableConcept): Self = this.set("valueCodeableConcept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueCodeableConcept: Self = this.set("valueCodeableConcept", js.undefined)
+    @scala.inline
+    def setValueCoding(value: Coding): Self = this.set("valueCoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueCoding: Self = this.set("valueCoding", js.undefined)
+    @scala.inline
+    def setValueContactPoint(value: ContactPoint): Self = this.set("valueContactPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueContactPoint: Self = this.set("valueContactPoint", js.undefined)
+    @scala.inline
+    def setValueCount(value: Count): Self = this.set("valueCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueCount: Self = this.set("valueCount", js.undefined)
+    @scala.inline
+    def setValueDate(value: date): Self = this.set("valueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueDate: Self = this.set("valueDate", js.undefined)
+    @scala.inline
+    def setValueDateTime(value: dateTime): Self = this.set("valueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueDateTime: Self = this.set("valueDateTime", js.undefined)
+    @scala.inline
+    def setValueDecimal(value: decimal): Self = this.set("valueDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueDecimal: Self = this.set("valueDecimal", js.undefined)
+    @scala.inline
+    def setValueDistance(value: Distance): Self = this.set("valueDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueDistance: Self = this.set("valueDistance", js.undefined)
+    @scala.inline
+    def setValueDuration(value: Duration): Self = this.set("valueDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueDuration: Self = this.set("valueDuration", js.undefined)
+    @scala.inline
+    def setValueHumanName(value: HumanName): Self = this.set("valueHumanName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueHumanName: Self = this.set("valueHumanName", js.undefined)
+    @scala.inline
+    def setValueId(value: id): Self = this.set("valueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueId: Self = this.set("valueId", js.undefined)
+    @scala.inline
+    def setValueIdentifier(value: Identifier): Self = this.set("valueIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueIdentifier: Self = this.set("valueIdentifier", js.undefined)
+    @scala.inline
+    def setValueInstant(value: instant): Self = this.set("valueInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueInstant: Self = this.set("valueInstant", js.undefined)
+    @scala.inline
+    def setValueInteger(value: integer): Self = this.set("valueInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueInteger: Self = this.set("valueInteger", js.undefined)
+    @scala.inline
+    def setValueMarkdown(value: markdown): Self = this.set("valueMarkdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueMarkdown: Self = this.set("valueMarkdown", js.undefined)
+    @scala.inline
+    def setValueMeta(value: Meta): Self = this.set("valueMeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueMeta: Self = this.set("valueMeta", js.undefined)
+    @scala.inline
+    def setValueMoney(value: Money): Self = this.set("valueMoney", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueMoney: Self = this.set("valueMoney", js.undefined)
+    @scala.inline
+    def setValueOid(value: oid): Self = this.set("valueOid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueOid: Self = this.set("valueOid", js.undefined)
+    @scala.inline
+    def setValuePeriod(value: Period): Self = this.set("valuePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuePeriod: Self = this.set("valuePeriod", js.undefined)
+    @scala.inline
+    def setValuePositiveInt(value: positiveInt): Self = this.set("valuePositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuePositiveInt: Self = this.set("valuePositiveInt", js.undefined)
+    @scala.inline
+    def setValueQuantity(value: Quantity): Self = this.set("valueQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueQuantity: Self = this.set("valueQuantity", js.undefined)
+    @scala.inline
+    def setValueRange(value: Range): Self = this.set("valueRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueRange: Self = this.set("valueRange", js.undefined)
+    @scala.inline
+    def setValueRatio(value: Ratio): Self = this.set("valueRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueRatio: Self = this.set("valueRatio", js.undefined)
+    @scala.inline
+    def setValueReference(value: Reference): Self = this.set("valueReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueReference: Self = this.set("valueReference", js.undefined)
+    @scala.inline
+    def setValueSampledData(value: SampledData): Self = this.set("valueSampledData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueSampledData: Self = this.set("valueSampledData", js.undefined)
+    @scala.inline
+    def setValueSignature(value: Signature): Self = this.set("valueSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueSignature: Self = this.set("valueSignature", js.undefined)
+    @scala.inline
+    def setValueString(value: String): Self = this.set("valueString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueString: Self = this.set("valueString", js.undefined)
+    @scala.inline
+    def setValueTime(value: time): Self = this.set("valueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueTime: Self = this.set("valueTime", js.undefined)
+    @scala.inline
+    def setValueTiming(value: Timing): Self = this.set("valueTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueTiming: Self = this.set("valueTiming", js.undefined)
+    @scala.inline
+    def setValueUnsignedInt(value: unsignedInt): Self = this.set("valueUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueUnsignedInt: Self = this.set("valueUnsignedInt", js.undefined)
+    @scala.inline
+    def setValueUri(value: uri): Self = this.set("valueUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueUri: Self = this.set("valueUri", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,38 @@ trait FilterLogEventsResponse extends js.Object {
 
 object FilterLogEventsResponse {
   @scala.inline
-  def apply(
-    events: FilteredLogEvents = null,
-    nextToken: NextToken = null,
-    searchedLogStreams: SearchedLogStreams = null
-  ): FilterLogEventsResponse = {
+  def apply(): FilterLogEventsResponse = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (searchedLogStreams != null) __obj.updateDynamic("searchedLogStreams")(searchedLogStreams.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterLogEventsResponse]
   }
+  @scala.inline
+  implicit class FilterLogEventsResponseOps[Self <: FilterLogEventsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: FilteredLogEvent*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: FilteredLogEvents): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setSearchedLogStreamsVarargs(value: SearchedLogStream*): Self = this.set("searchedLogStreams", js.Array(value :_*))
+    @scala.inline
+    def setSearchedLogStreams(value: SearchedLogStreams): Self = this.set("searchedLogStreams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchedLogStreams: Self = this.set("searchedLogStreams", js.undefined)
+  }
+  
 }
 

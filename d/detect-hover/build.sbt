@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "detect-hover"
-version := "1.0-dt-20200515Z-b1582b"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-c50434"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -23,17 +23,38 @@ trait DescribeVTLDevicesInput extends js.Object {
 
 object DescribeVTLDevicesInput {
   @scala.inline
-  def apply(
-    GatewayARN: GatewayARN,
-    Limit: js.UndefOr[PositiveIntObject] = js.undefined,
-    Marker: Marker = null,
-    VTLDeviceARNs: VTLDeviceARNs = null
-  ): DescribeVTLDevicesInput = {
+  def apply(GatewayARN: GatewayARN): DescribeVTLDevicesInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (VTLDeviceARNs != null) __obj.updateDynamic("VTLDeviceARNs")(VTLDeviceARNs.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVTLDevicesInput]
   }
+  @scala.inline
+  implicit class DescribeVTLDevicesInputOps[Self <: DescribeVTLDevicesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimit(value: PositiveIntObject): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setVTLDeviceARNsVarargs(value: VTLDeviceARN*): Self = this.set("VTLDeviceARNs", js.Array(value :_*))
+    @scala.inline
+    def setVTLDeviceARNs(value: VTLDeviceARNs): Self = this.set("VTLDeviceARNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVTLDeviceARNs: Self = this.set("VTLDeviceARNs", js.undefined)
+  }
+  
 }
 

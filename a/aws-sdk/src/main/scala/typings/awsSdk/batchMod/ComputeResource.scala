@@ -80,31 +80,82 @@ object ComputeResource {
     maxvCpus: Integer,
     minvCpus: Integer,
     subnets: StringList,
-    `type`: CRType,
-    allocationStrategy: CRAllocationStrategy = null,
-    bidPercentage: js.UndefOr[Integer] = js.undefined,
-    desiredvCpus: js.UndefOr[Integer] = js.undefined,
-    ec2KeyPair: String = null,
-    imageId: String = null,
-    launchTemplate: LaunchTemplateSpecification = null,
-    placementGroup: String = null,
-    securityGroupIds: StringList = null,
-    spotIamFleetRole: String = null,
-    tags: TagsMap = null
+    `type`: CRType
   ): ComputeResource = {
     val __obj = js.Dynamic.literal(instanceRole = instanceRole.asInstanceOf[js.Any], instanceTypes = instanceTypes.asInstanceOf[js.Any], maxvCpus = maxvCpus.asInstanceOf[js.Any], minvCpus = minvCpus.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(bidPercentage)) __obj.updateDynamic("bidPercentage")(bidPercentage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desiredvCpus)) __obj.updateDynamic("desiredvCpus")(desiredvCpus.get.asInstanceOf[js.Any])
-    if (ec2KeyPair != null) __obj.updateDynamic("ec2KeyPair")(ec2KeyPair.asInstanceOf[js.Any])
-    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
-    if (launchTemplate != null) __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])
-    if (placementGroup != null) __obj.updateDynamic("placementGroup")(placementGroup.asInstanceOf[js.Any])
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (spotIamFleetRole != null) __obj.updateDynamic("spotIamFleetRole")(spotIamFleetRole.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeResource]
   }
+  @scala.inline
+  implicit class ComputeResourceOps[Self <: ComputeResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceRole(value: String): Self = this.set("instanceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceTypesVarargs(value: String*): Self = this.set("instanceTypes", js.Array(value :_*))
+    @scala.inline
+    def setInstanceTypes(value: StringList): Self = this.set("instanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxvCpus(value: Integer): Self = this.set("maxvCpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinvCpus(value: Integer): Self = this.set("minvCpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetsVarargs(value: String*): Self = this.set("subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: StringList): Self = this.set("subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: CRType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllocationStrategy(value: CRAllocationStrategy): Self = this.set("allocationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationStrategy: Self = this.set("allocationStrategy", js.undefined)
+    @scala.inline
+    def setBidPercentage(value: Integer): Self = this.set("bidPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidPercentage: Self = this.set("bidPercentage", js.undefined)
+    @scala.inline
+    def setDesiredvCpus(value: Integer): Self = this.set("desiredvCpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredvCpus: Self = this.set("desiredvCpus", js.undefined)
+    @scala.inline
+    def setEc2KeyPair(value: String): Self = this.set("ec2KeyPair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2KeyPair: Self = this.set("ec2KeyPair", js.undefined)
+    @scala.inline
+    def setImageId(value: String): Self = this.set("imageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("imageId", js.undefined)
+    @scala.inline
+    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = this.set("launchTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplate: Self = this.set("launchTemplate", js.undefined)
+    @scala.inline
+    def setPlacementGroup(value: String): Self = this.set("placementGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroup: Self = this.set("placementGroup", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: StringList): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setSpotIamFleetRole(value: String): Self = this.set("spotIamFleetRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotIamFleetRole: Self = this.set("spotIamFleetRole", js.undefined)
+    @scala.inline
+    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

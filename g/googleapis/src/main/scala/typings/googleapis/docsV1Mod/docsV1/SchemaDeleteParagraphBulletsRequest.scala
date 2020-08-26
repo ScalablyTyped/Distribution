@@ -19,10 +19,26 @@ trait SchemaDeleteParagraphBulletsRequest extends js.Object {
 
 object SchemaDeleteParagraphBulletsRequest {
   @scala.inline
-  def apply(range: SchemaRange = null): SchemaDeleteParagraphBulletsRequest = {
+  def apply(): SchemaDeleteParagraphBulletsRequest = {
     val __obj = js.Dynamic.literal()
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteParagraphBulletsRequest]
   }
+  @scala.inline
+  implicit class SchemaDeleteParagraphBulletsRequestOps[Self <: SchemaDeleteParagraphBulletsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRange(value: SchemaRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+  }
+  
 }
 

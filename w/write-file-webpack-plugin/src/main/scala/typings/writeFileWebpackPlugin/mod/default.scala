@@ -1,13 +1,13 @@
 package typings.writeFileWebpackPlugin.mod
 
-import typings.webpack.mod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("write-file-webpack-plugin", JSImport.Default)
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("write-file-webpack-plugin", JSImport.Default)
 @js.native
-class default () extends Plugin {
+class default () extends js.Object {
   def this(userOptions: UserOptionsType) = this()
 }
 

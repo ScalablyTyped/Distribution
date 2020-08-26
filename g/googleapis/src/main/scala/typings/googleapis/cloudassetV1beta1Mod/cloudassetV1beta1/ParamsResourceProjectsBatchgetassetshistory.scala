@@ -49,44 +49,48 @@ trait ParamsResourceProjectsBatchgetassetshistory extends StandardParameters {
 
 object ParamsResourceProjectsBatchgetassetshistory {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    assetNames: js.Array[String] = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    contentType: String = null,
-    fields: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    parent: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    readTimeWindowDotendTime: String = null,
-    readTimeWindowDotstartTime: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): ParamsResourceProjectsBatchgetassetshistory = {
+  def apply(): ParamsResourceProjectsBatchgetassetshistory = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (assetNames != null) __obj.updateDynamic("assetNames")(assetNames.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (readTimeWindowDotendTime != null) __obj.updateDynamic("readTimeWindow.endTime")(readTimeWindowDotendTime.asInstanceOf[js.Any])
-    if (readTimeWindowDotstartTime != null) __obj.updateDynamic("readTimeWindow.startTime")(readTimeWindowDotstartTime.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceProjectsBatchgetassetshistory]
   }
+  @scala.inline
+  implicit class ParamsResourceProjectsBatchgetassetshistoryOps[Self <: ParamsResourceProjectsBatchgetassetshistory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetNamesVarargs(value: String*): Self = this.set("assetNames", js.Array(value :_*))
+    @scala.inline
+    def setAssetNames(value: js.Array[String]): Self = this.set("assetNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetNames: Self = this.set("assetNames", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setReadTimeWindowDotendTime(value: String): Self = this.set("readTimeWindow.endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTimeWindowDotendTime: Self = this.set("readTimeWindow.endTime", js.undefined)
+    @scala.inline
+    def setReadTimeWindowDotstartTime(value: String): Self = this.set("readTimeWindow.startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTimeWindowDotstartTime: Self = this.set("readTimeWindow.startTime", js.undefined)
+  }
+  
 }
 

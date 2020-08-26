@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BoxenOptions extends js.Object {
-  var align: js.UndefOr[String] = js.undefined
-  var borderColor: js.UndefOr[String] = js.undefined
-  var borderStyle: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[Double] = js.undefined
-  var padding: js.UndefOr[Double] = js.undefined
+  var align: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.native
+  var borderStyle: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.native
 }
 
 object BoxenOptions {
   @scala.inline
-  def apply(
-    align: String = null,
-    borderColor: String = null,
-    borderStyle: String = null,
-    margin: js.UndefOr[Double] = js.undefined,
-    padding: js.UndefOr[Double] = js.undefined
-  ): BoxenOptions = {
+  def apply(): BoxenOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxenOptions]
   }
+  @scala.inline
+  implicit class BoxenOptionsOps[Self <: BoxenOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderStyle(value: String): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderStyle: Self = this.set("borderStyle", js.undefined)
+    @scala.inline
+    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+  }
+  
 }
 

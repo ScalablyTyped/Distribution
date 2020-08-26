@@ -4,20 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColumnarOptions extends js.Object {
-  var headers: js.UndefOr[js.Array[String]] = js.undefined
-  var hsep: js.UndefOr[String] = js.undefined
-  var vsep: js.UndefOr[String] = js.undefined
+  var headers: js.UndefOr[js.Array[String]] = js.native
+  var hsep: js.UndefOr[String] = js.native
+  var vsep: js.UndefOr[String] = js.native
 }
 
 object ColumnarOptions {
   @scala.inline
-  def apply(headers: js.Array[String] = null, hsep: String = null, vsep: String = null): ColumnarOptions = {
+  def apply(): ColumnarOptions = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (hsep != null) __obj.updateDynamic("hsep")(hsep.asInstanceOf[js.Any])
-    if (vsep != null) __obj.updateDynamic("vsep")(vsep.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnarOptions]
   }
+  @scala.inline
+  implicit class ColumnarOptionsOps[Self <: ColumnarOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeadersVarargs(value: String*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: js.Array[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHsep(value: String): Self = this.set("hsep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsep: Self = this.set("hsep", js.undefined)
+    @scala.inline
+    def setVsep(value: String): Self = this.set("vsep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVsep: Self = this.set("vsep", js.undefined)
+  }
+  
 }
 

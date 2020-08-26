@@ -36,6 +36,7 @@ class Client protected () extends EventEmitter {
   def getChannel(id: String): js.Promise[Channel] = js.native
   def getChannel(id: String, timeout: Double): js.Promise[Channel] = js.native
   def getChannels(): js.Promise[js.Array[Channel]] = js.native
+  def getChannels(id: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[js.Array[Channel]] = js.native
   def getChannels(id: String): js.Promise[js.Array[Channel]] = js.native
   def getChannels(id: String, timeout: Double): js.Promise[js.Array[Channel]] = js.native
   def getGuild(id: String): js.Promise[Guild] = js.native
@@ -68,6 +69,7 @@ class Client protected () extends EventEmitter {
   def sendToLobby(lobby: String, data: js.Any): js.Promise[_] = js.native
   def sendToLobby(lobby: Id, data: js.Any): js.Promise[_] = js.native
   def setActivity(): js.Promise[_] = js.native
+  def setActivity(args: js.UndefOr[scala.Nothing], pid: Double): js.Promise[_] = js.native
   def setActivity(args: Presence): js.Promise[_] = js.native
   def setActivity(args: Presence, pid: Double): js.Promise[_] = js.native
   def setCertifiedDevices(devices: js.Array[CertifiedDevice]): js.Promise[Null] = js.native

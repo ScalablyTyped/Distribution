@@ -33,8 +33,74 @@ trait ChainableBase[RawValue] extends js.Object {
   def advance(set: js.Object): SugarDefaultChainable[typings.sugar.Date] = js.native
   def advance(set: js.Object, reset: Boolean): SugarDefaultChainable[typings.sugar.Date] = js.native
   def advance(year: Double, month: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: Double,
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
   def advance(year: Double, month: Double, day: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
   def advance(year: Double, month: Double, day: Double, hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def advance(
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
   def advance(year: Double, month: Double, day: Double, hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
   def advance(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
   def beginningOfDay(): SugarDefaultChainable[typings.sugar.Date] = js.native
@@ -56,6 +122,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def daysSince(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
   def daysSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def daysUntil(): SugarDefaultChainable[Double] = js.native
+  def daysUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def daysUntil(d: String): SugarDefaultChainable[Double] = js.native
   def daysUntil(d: String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def daysUntil(d: Double): SugarDefaultChainable[Double] = js.native
@@ -72,6 +139,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def endOfYear(): SugarDefaultChainable[typings.sugar.Date] = js.native
   def endOfYear(localeCode: String): SugarDefaultChainable[typings.sugar.Date] = js.native
   def format(): SugarDefaultChainable[String] = js.native
+  def format(f: js.UndefOr[scala.Nothing], localeCode: String): SugarDefaultChainable[String] = js.native
   def format(f: String): SugarDefaultChainable[String] = js.native
   def format(f: String, localeCode: String): SugarDefaultChainable[String] = js.native
   def full(): SugarDefaultChainable[String] = js.native
@@ -114,6 +182,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def hoursSince(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
   def hoursSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def hoursUntil(): SugarDefaultChainable[Double] = js.native
+  def hoursUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def hoursUntil(d: String): SugarDefaultChainable[Double] = js.native
   def hoursUntil(d: String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def hoursUntil(d: Double): SugarDefaultChainable[Double] = js.native
@@ -205,6 +274,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def millisecondsSince(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
   def millisecondsSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def millisecondsUntil(): SugarDefaultChainable[Double] = js.native
+  def millisecondsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def millisecondsUntil(d: String): SugarDefaultChainable[Double] = js.native
   def millisecondsUntil(d: String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def millisecondsUntil(d: Double): SugarDefaultChainable[Double] = js.native
@@ -220,6 +290,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def minutesSince(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
   def minutesSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def minutesUntil(): SugarDefaultChainable[Double] = js.native
+  def minutesUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def minutesUntil(d: String): SugarDefaultChainable[Double] = js.native
   def minutesUntil(d: String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def minutesUntil(d: Double): SugarDefaultChainable[Double] = js.native
@@ -235,6 +306,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def monthsSince(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
   def monthsSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def monthsUntil(): SugarDefaultChainable[Double] = js.native
+  def monthsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def monthsUntil(d: String): SugarDefaultChainable[Double] = js.native
   def monthsUntil(d: String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def monthsUntil(d: Double): SugarDefaultChainable[Double] = js.native
@@ -242,6 +314,16 @@ trait ChainableBase[RawValue] extends js.Object {
   def monthsUntil(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
   def monthsUntil(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def relative(): SugarDefaultChainable[String] = js.native
+  def relative(
+    localeCode: js.UndefOr[scala.Nothing],
+    relativeFn: js.Function4[
+      /* num */ Double, 
+      /* unit */ Double, 
+      /* ms */ Double, 
+      /* loc */ Locale, 
+      SugarDefaultChainable[String]
+    ]
+  ): SugarDefaultChainable[String] = js.native
   def relative(localeCode: String): SugarDefaultChainable[String] = js.native
   def relative(
     localeCode: String,
@@ -269,6 +351,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def relativeTo(d: typings.sugar.Date): SugarDefaultChainable[String] = js.native
   def relativeTo(d: typings.sugar.Date, localeCode: String): SugarDefaultChainable[String] = js.native
   def reset(): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def reset(unit: js.UndefOr[scala.Nothing], localeCode: String): SugarDefaultChainable[typings.sugar.Date] = js.native
   def reset(unit: String): SugarDefaultChainable[typings.sugar.Date] = js.native
   def reset(unit: String, localeCode: String): SugarDefaultChainable[typings.sugar.Date] = js.native
   def rewind(milliseconds: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
@@ -277,8 +360,74 @@ trait ChainableBase[RawValue] extends js.Object {
   def rewind(set: js.Object): SugarDefaultChainable[typings.sugar.Date] = js.native
   def rewind(set: js.Object, reset: Boolean): SugarDefaultChainable[typings.sugar.Date] = js.native
   def rewind(year: Double, month: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: Double,
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
   def rewind(year: Double, month: Double, day: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
   def rewind(year: Double, month: Double, day: Double, hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def rewind(
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
   def rewind(year: Double, month: Double, day: Double, hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
   def rewind(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
   def secondsAgo(): SugarDefaultChainable[Double] = js.native
@@ -290,6 +439,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def secondsSince(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
   def secondsSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def secondsUntil(): SugarDefaultChainable[Double] = js.native
+  def secondsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def secondsUntil(d: String): SugarDefaultChainable[Double] = js.native
   def secondsUntil(d: String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def secondsUntil(d: Double): SugarDefaultChainable[Double] = js.native
@@ -300,21 +450,93 @@ trait ChainableBase[RawValue] extends js.Object {
   def set(set: js.Object): SugarDefaultChainable[typings.sugar.Date] = js.native
   def set(set: js.Object, reset: Boolean): SugarDefaultChainable[typings.sugar.Date] = js.native
   def set(year: Double, month: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: Double,
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
   def set(year: Double, month: Double, day: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
   def set(year: Double, month: Double, day: Double, hour: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
+  def set(
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): SugarDefaultChainable[typings.sugar.Date] = js.native
   def set(year: Double, month: Double, day: Double, hour: Double, minute: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
   def set(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): SugarDefaultChainable[typings.sugar.Date] = js.native
   def setDate(date: Double): SugarDefaultChainable[Double] = js.native
   def setFullYear(year: Double): SugarDefaultChainable[Double] = js.native
+  def setFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): SugarDefaultChainable[Double] = js.native
   def setFullYear(year: Double, month: Double): SugarDefaultChainable[Double] = js.native
   def setFullYear(year: Double, month: Double, date: Double): SugarDefaultChainable[Double] = js.native
   def setHours(hours: Double): SugarDefaultChainable[Double] = js.native
+  def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
+  def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): SugarDefaultChainable[Double] = js.native
+  def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
   def setHours(hours: Double, min: Double): SugarDefaultChainable[Double] = js.native
+  def setHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
   def setHours(hours: Double, min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
   def setHours(hours: Double, min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
   def setISOWeek(num: Double): SugarDefaultChainable[Unit] = js.native
   def setMilliseconds(ms: Double): SugarDefaultChainable[Double] = js.native
   def setMinutes(min: Double): SugarDefaultChainable[Double] = js.native
+  def setMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
   def setMinutes(min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
   def setMinutes(min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
   def setMonth(month: Double): SugarDefaultChainable[Double] = js.native
@@ -326,14 +548,20 @@ trait ChainableBase[RawValue] extends js.Object {
   def setUTC(on: Boolean): SugarDefaultChainable[typings.sugar.Date] = js.native
   def setUTCDate(date: Double): SugarDefaultChainable[Double] = js.native
   def setUTCFullYear(year: Double): SugarDefaultChainable[Double] = js.native
+  def setUTCFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): SugarDefaultChainable[Double] = js.native
   def setUTCFullYear(year: Double, month: Double): SugarDefaultChainable[Double] = js.native
   def setUTCFullYear(year: Double, month: Double, date: Double): SugarDefaultChainable[Double] = js.native
   def setUTCHours(hours: Double): SugarDefaultChainable[Double] = js.native
+  def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
+  def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): SugarDefaultChainable[Double] = js.native
+  def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
   def setUTCHours(hours: Double, min: Double): SugarDefaultChainable[Double] = js.native
+  def setUTCHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
   def setUTCHours(hours: Double, min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
   def setUTCHours(hours: Double, min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
   def setUTCMilliseconds(ms: Double): SugarDefaultChainable[Double] = js.native
   def setUTCMinutes(min: Double): SugarDefaultChainable[Double] = js.native
+  def setUTCMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
   def setUTCMinutes(min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
   def setUTCMinutes(min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
   def setUTCMonth(month: Double): SugarDefaultChainable[Double] = js.native
@@ -348,15 +576,18 @@ trait ChainableBase[RawValue] extends js.Object {
   def toJSON(): SugarDefaultChainable[String] = js.native
   def toJSON(key: js.Any): SugarDefaultChainable[String] = js.native
   def toLocaleDateString(): SugarDefaultChainable[String] = js.native
+  def toLocaleDateString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
   def toLocaleDateString(locales: String): SugarDefaultChainable[String] = js.native
   def toLocaleDateString(locales: String, options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
   def toLocaleDateString(locales: Array[String]): SugarDefaultChainable[String] = js.native
   def toLocaleDateString(locales: Array[String], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
+  def toLocaleString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
   def toLocaleString(locales: String): SugarDefaultChainable[String] = js.native
   def toLocaleString(locales: String, options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
   def toLocaleString(locales: Array[String]): SugarDefaultChainable[String] = js.native
   def toLocaleString(locales: Array[String], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
   def toLocaleTimeString(): SugarDefaultChainable[String] = js.native
+  def toLocaleTimeString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
   def toLocaleTimeString(locales: String): SugarDefaultChainable[String] = js.native
   def toLocaleTimeString(locales: String, options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
   def toLocaleTimeString(locales: Array[String]): SugarDefaultChainable[String] = js.native
@@ -372,6 +603,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def weeksSince(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
   def weeksSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def weeksUntil(): SugarDefaultChainable[Double] = js.native
+  def weeksUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def weeksUntil(d: String): SugarDefaultChainable[Double] = js.native
   def weeksUntil(d: String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def weeksUntil(d: Double): SugarDefaultChainable[Double] = js.native
@@ -387,6 +619,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def yearsSince(d: typings.sugar.Date): SugarDefaultChainable[Double] = js.native
   def yearsSince(d: typings.sugar.Date, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def yearsUntil(): SugarDefaultChainable[Double] = js.native
+  def yearsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def yearsUntil(d: String): SugarDefaultChainable[Double] = js.native
   def yearsUntil(d: String, options: DateCreateOptions): SugarDefaultChainable[Double] = js.native
   def yearsUntil(d: Double): SugarDefaultChainable[Double] = js.native

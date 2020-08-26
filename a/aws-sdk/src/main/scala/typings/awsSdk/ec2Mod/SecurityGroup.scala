@@ -42,26 +42,60 @@ trait SecurityGroup extends js.Object {
 
 object SecurityGroup {
   @scala.inline
-  def apply(
-    Description: String = null,
-    GroupId: String = null,
-    GroupName: String = null,
-    IpPermissions: IpPermissionList = null,
-    IpPermissionsEgress: IpPermissionList = null,
-    OwnerId: String = null,
-    Tags: TagList = null,
-    VpcId: String = null
-  ): SecurityGroup = {
+  def apply(): SecurityGroup = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (IpPermissions != null) __obj.updateDynamic("IpPermissions")(IpPermissions.asInstanceOf[js.Any])
-    if (IpPermissionsEgress != null) __obj.updateDynamic("IpPermissionsEgress")(IpPermissionsEgress.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityGroup]
   }
+  @scala.inline
+  implicit class SecurityGroupOps[Self <: SecurityGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setGroupId(value: String): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    @scala.inline
+    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setIpPermissionsVarargs(value: IpPermission*): Self = this.set("IpPermissions", js.Array(value :_*))
+    @scala.inline
+    def setIpPermissions(value: IpPermissionList): Self = this.set("IpPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpPermissions: Self = this.set("IpPermissions", js.undefined)
+    @scala.inline
+    def setIpPermissionsEgressVarargs(value: IpPermission*): Self = this.set("IpPermissionsEgress", js.Array(value :_*))
+    @scala.inline
+    def setIpPermissionsEgress(value: IpPermissionList): Self = this.set("IpPermissionsEgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpPermissionsEgress: Self = this.set("IpPermissionsEgress", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

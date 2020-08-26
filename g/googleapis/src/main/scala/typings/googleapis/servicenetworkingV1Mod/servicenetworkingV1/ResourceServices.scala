@@ -38,6 +38,7 @@ class ResourceServices protected () extends js.Object {
     */
   def addSubnetwork(): GaxiosPromise[SchemaOperation] = js.native
   def addSubnetwork(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addSubnetwork(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addSubnetwork(params: ParamsResourceServicesAddsubnetwork): GaxiosPromise[SchemaOperation] = js.native
   def addSubnetwork(params: ParamsResourceServicesAddsubnetwork, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addSubnetwork(
@@ -71,6 +72,7 @@ class ResourceServices protected () extends js.Object {
     */
   def searchRange(): GaxiosPromise[SchemaOperation] = js.native
   def searchRange(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def searchRange(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def searchRange(params: ParamsResourceServicesSearchrange): GaxiosPromise[SchemaOperation] = js.native
   def searchRange(params: ParamsResourceServicesSearchrange, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def searchRange(

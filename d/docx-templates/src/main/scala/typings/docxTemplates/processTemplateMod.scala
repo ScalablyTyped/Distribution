@@ -22,14 +22,16 @@ object processTemplateMod extends js.Object {
   
   def extractQuery(template: Node, options: CreateReportOptions): js.Promise[js.UndefOr[String]] = js.native
   def getCommand(command: String, shorthands: StringDictionary[String]): String = js.native
-  def produceJsReport(data: js.UndefOr[ReportData], template: Node, options: CreateReportOptions): js.Promise[ReportOutput] = js.native
+  def produceJsReport(data: js.UndefOr[scala.Nothing], template: Node, options: CreateReportOptions): js.Promise[ReportOutput] = js.native
+  def produceJsReport(data: ReportData, template: Node, options: CreateReportOptions): js.Promise[ReportOutput] = js.native
   def splitCommand(cmd: String): CmdName = js.native
   def walkTemplate(
-    data: js.UndefOr[ReportData],
+    data: js.UndefOr[scala.Nothing],
     template: Node,
     options: CreateReportOptions,
     processor: CommandProcessor
   ): js.Promise[ReportOutput] = js.native
+  def walkTemplate(data: ReportData, template: Node, options: CreateReportOptions, processor: CommandProcessor): js.Promise[ReportOutput] = js.native
   type CommandProcessor = js.Function3[
     /* data */ js.UndefOr[ReportData], 
     /* node */ Node, 

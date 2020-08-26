@@ -251,6 +251,19 @@ trait Connect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, scala.Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
   /**
+    * When a contact is being recorded, and the recording has been suspended using SuspendContactRecording, this API resumes recording the call. Only voice recordings are supported at this time.
+    */
+  def resumeContactRecording(): Request[ResumeContactRecordingResponse, AWSError] = js.native
+  def resumeContactRecording(callback: js.Function2[/* err */ AWSError, /* data */ ResumeContactRecordingResponse, scala.Unit]): Request[ResumeContactRecordingResponse, AWSError] = js.native
+  /**
+    * When a contact is being recorded, and the recording has been suspended using SuspendContactRecording, this API resumes recording the call. Only voice recordings are supported at this time.
+    */
+  def resumeContactRecording(params: ResumeContactRecordingRequest): Request[ResumeContactRecordingResponse, AWSError] = js.native
+  def resumeContactRecording(
+    params: ResumeContactRecordingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ResumeContactRecordingResponse, scala.Unit]
+  ): Request[ResumeContactRecordingResponse, AWSError] = js.native
+  /**
     * Initiates a contact flow to start a new chat for the customer. Response of this API provides a token required to obtain credentials from the CreateParticipantConnection API in the Amazon Connect Participant Service. When a new chat contact is successfully created, clients need to subscribe to the participant’s connection for the created chat within 5 minutes. This is achieved by invoking CreateParticipantConnection with WEBSOCKET and CONNECTION_CREDENTIALS. 
     */
   def startChatContact(): Request[StartChatContactResponse, AWSError] = js.native
@@ -264,14 +277,27 @@ trait Connect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartChatContactResponse, scala.Unit]
   ): Request[StartChatContactResponse, AWSError] = js.native
   /**
-    * Initiates a contact flow to place an outbound call to a customer. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, it fails.
+    * This API starts recording the contact when the agent joins the call. StartContactRecording is a one-time action. For example, if you use StopContactRecording to stop recording an ongoing call, you can't use StartContactRecording to restart it. For scenarios where the recording has started and you want to suspend and resume it, such as when collecting sensitive information (for example, a credit card number), use SuspendContactRecording and ResumeContactRecording. You can use this API to override the recording behavior configured in the Set recording behavior block. Only voice recordings are supported at this time.
+    */
+  def startContactRecording(): Request[StartContactRecordingResponse, AWSError] = js.native
+  def startContactRecording(callback: js.Function2[/* err */ AWSError, /* data */ StartContactRecordingResponse, scala.Unit]): Request[StartContactRecordingResponse, AWSError] = js.native
+  /**
+    * This API starts recording the contact when the agent joins the call. StartContactRecording is a one-time action. For example, if you use StopContactRecording to stop recording an ongoing call, you can't use StartContactRecording to restart it. For scenarios where the recording has started and you want to suspend and resume it, such as when collecting sensitive information (for example, a credit card number), use SuspendContactRecording and ResumeContactRecording. You can use this API to override the recording behavior configured in the Set recording behavior block. Only voice recordings are supported at this time.
+    */
+  def startContactRecording(params: StartContactRecordingRequest): Request[StartContactRecordingResponse, AWSError] = js.native
+  def startContactRecording(
+    params: StartContactRecordingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartContactRecordingResponse, scala.Unit]
+  ): Request[StartContactRecordingResponse, AWSError] = js.native
+  /**
+    * This API places an outbound call to a contact, and then initiates the contact flow. It performs the actions in the contact flow that's specified (in ContactFlowId). Agents are not involved in initiating the outbound API (that is, dialing the contact). If the contact flow places an outbound call to a contact, and then puts the contact in queue, that's when the call is routed to the agent, like any other inbound case. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, it fails.
     */
   def startOutboundVoiceContact(): Request[StartOutboundVoiceContactResponse, AWSError] = js.native
   def startOutboundVoiceContact(
     callback: js.Function2[/* err */ AWSError, /* data */ StartOutboundVoiceContactResponse, scala.Unit]
   ): Request[StartOutboundVoiceContactResponse, AWSError] = js.native
   /**
-    * Initiates a contact flow to place an outbound call to a customer. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, it fails.
+    * This API places an outbound call to a contact, and then initiates the contact flow. It performs the actions in the contact flow that's specified (in ContactFlowId). Agents are not involved in initiating the outbound API (that is, dialing the contact). If the contact flow places an outbound call to a contact, and then puts the contact in queue, that's when the call is routed to the agent, like any other inbound case. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, it fails.
     */
   def startOutboundVoiceContact(params: StartOutboundVoiceContactRequest): Request[StartOutboundVoiceContactResponse, AWSError] = js.native
   def startOutboundVoiceContact(
@@ -291,6 +317,32 @@ trait Connect extends Service {
     params: StopContactRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopContactResponse, scala.Unit]
   ): Request[StopContactResponse, AWSError] = js.native
+  /**
+    * When a contact is being recorded, this API stops recording the call. StopContactRecording is a one-time action. If you use StopContactRecording to stop recording an ongoing call, you can't use StartContactRecording to restart it. For scenarios where the recording has started and you want to suspend it for sensitive information (for example, to collect a credit card number), and then restart it, use SuspendContactRecording and ResumeContactRecording. Only voice recordings are supported at this time.
+    */
+  def stopContactRecording(): Request[StopContactRecordingResponse, AWSError] = js.native
+  def stopContactRecording(callback: js.Function2[/* err */ AWSError, /* data */ StopContactRecordingResponse, scala.Unit]): Request[StopContactRecordingResponse, AWSError] = js.native
+  /**
+    * When a contact is being recorded, this API stops recording the call. StopContactRecording is a one-time action. If you use StopContactRecording to stop recording an ongoing call, you can't use StartContactRecording to restart it. For scenarios where the recording has started and you want to suspend it for sensitive information (for example, to collect a credit card number), and then restart it, use SuspendContactRecording and ResumeContactRecording. Only voice recordings are supported at this time.
+    */
+  def stopContactRecording(params: StopContactRecordingRequest): Request[StopContactRecordingResponse, AWSError] = js.native
+  def stopContactRecording(
+    params: StopContactRecordingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopContactRecordingResponse, scala.Unit]
+  ): Request[StopContactRecordingResponse, AWSError] = js.native
+  /**
+    * When a contact is being recorded, this API suspends recording the call. For example, you might suspend the call recording while collecting sensitive information, such as a credit card number. Then use ResumeContactRecording to restart recording.  The period of time that the recording is suspended is filled with silence in the final recording.  Only voice recordings are supported at this time.
+    */
+  def suspendContactRecording(): Request[SuspendContactRecordingResponse, AWSError] = js.native
+  def suspendContactRecording(callback: js.Function2[/* err */ AWSError, /* data */ SuspendContactRecordingResponse, scala.Unit]): Request[SuspendContactRecordingResponse, AWSError] = js.native
+  /**
+    * When a contact is being recorded, this API suspends recording the call. For example, you might suspend the call recording while collecting sensitive information, such as a credit card number. Then use ResumeContactRecording to restart recording.  The period of time that the recording is suspended is filled with silence in the final recording.  Only voice recordings are supported at this time.
+    */
+  def suspendContactRecording(params: SuspendContactRecordingRequest): Request[SuspendContactRecordingResponse, AWSError] = js.native
+  def suspendContactRecording(
+    params: SuspendContactRecordingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SuspendContactRecordingResponse, scala.Unit]
+  ): Request[SuspendContactRecordingResponse, AWSError] = js.native
   /**
     * Adds the specified tags to the specified resource. The supported resource type is users.
     */

@@ -64,34 +64,70 @@ trait SchemaGoogleCloudDialogflowV2IntentMessage extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2IntentMessage {
   @scala.inline
-  def apply(
-    basicCard: SchemaGoogleCloudDialogflowV2IntentMessageBasicCard = null,
-    card: SchemaGoogleCloudDialogflowV2IntentMessageCard = null,
-    carouselSelect: SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelect = null,
-    image: SchemaGoogleCloudDialogflowV2IntentMessageImage = null,
-    linkOutSuggestion: SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion = null,
-    listSelect: SchemaGoogleCloudDialogflowV2IntentMessageListSelect = null,
-    payload: StringDictionary[js.Any] = null,
-    platform: String = null,
-    quickReplies: SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies = null,
-    simpleResponses: SchemaGoogleCloudDialogflowV2IntentMessageSimpleResponses = null,
-    suggestions: SchemaGoogleCloudDialogflowV2IntentMessageSuggestions = null,
-    text: SchemaGoogleCloudDialogflowV2IntentMessageText = null
-  ): SchemaGoogleCloudDialogflowV2IntentMessage = {
+  def apply(): SchemaGoogleCloudDialogflowV2IntentMessage = {
     val __obj = js.Dynamic.literal()
-    if (basicCard != null) __obj.updateDynamic("basicCard")(basicCard.asInstanceOf[js.Any])
-    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (carouselSelect != null) __obj.updateDynamic("carouselSelect")(carouselSelect.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (linkOutSuggestion != null) __obj.updateDynamic("linkOutSuggestion")(linkOutSuggestion.asInstanceOf[js.Any])
-    if (listSelect != null) __obj.updateDynamic("listSelect")(listSelect.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (quickReplies != null) __obj.updateDynamic("quickReplies")(quickReplies.asInstanceOf[js.Any])
-    if (simpleResponses != null) __obj.updateDynamic("simpleResponses")(simpleResponses.asInstanceOf[js.Any])
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentMessage]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2IntentMessageOps[Self <: SchemaGoogleCloudDialogflowV2IntentMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasicCard(value: SchemaGoogleCloudDialogflowV2IntentMessageBasicCard): Self = this.set("basicCard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasicCard: Self = this.set("basicCard", js.undefined)
+    @scala.inline
+    def setCard(value: SchemaGoogleCloudDialogflowV2IntentMessageCard): Self = this.set("card", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCard: Self = this.set("card", js.undefined)
+    @scala.inline
+    def setCarouselSelect(value: SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelect): Self = this.set("carouselSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCarouselSelect: Self = this.set("carouselSelect", js.undefined)
+    @scala.inline
+    def setImage(value: SchemaGoogleCloudDialogflowV2IntentMessageImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setLinkOutSuggestion(value: SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion): Self = this.set("linkOutSuggestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkOutSuggestion: Self = this.set("linkOutSuggestion", js.undefined)
+    @scala.inline
+    def setListSelect(value: SchemaGoogleCloudDialogflowV2IntentMessageListSelect): Self = this.set("listSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListSelect: Self = this.set("listSelect", js.undefined)
+    @scala.inline
+    def setPayload(value: StringDictionary[js.Any]): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("payload", js.undefined)
+    @scala.inline
+    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setQuickReplies(value: SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies): Self = this.set("quickReplies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuickReplies: Self = this.set("quickReplies", js.undefined)
+    @scala.inline
+    def setSimpleResponses(value: SchemaGoogleCloudDialogflowV2IntentMessageSimpleResponses): Self = this.set("simpleResponses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimpleResponses: Self = this.set("simpleResponses", js.undefined)
+    @scala.inline
+    def setSuggestions(value: SchemaGoogleCloudDialogflowV2IntentMessageSuggestions): Self = this.set("suggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
+    @scala.inline
+    def setText(value: SchemaGoogleCloudDialogflowV2IntentMessageText): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

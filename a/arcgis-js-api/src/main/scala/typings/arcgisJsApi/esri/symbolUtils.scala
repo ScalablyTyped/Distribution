@@ -17,6 +17,7 @@ trait symbolUtils extends js.Object {
     * @param options.scale The [view scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) at which the symbol is displayed.
     * @param options.viewingMode The [viewingMode](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewingMode) of the view, if the symbol is displayed in a SceneView.
     * @param options.spatialReference The spatial reference of the view in which the symbol is displayed.
+    * @param options.renderer The renderer of the layer associated with the `graphic`.
     * @param options.resolution The [resolution](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#resolution) of the view at which the symbol is displayed.
     *
     */

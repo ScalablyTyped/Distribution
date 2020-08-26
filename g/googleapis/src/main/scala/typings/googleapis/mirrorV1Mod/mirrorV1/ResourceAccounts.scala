@@ -30,6 +30,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaAccount] = js.native
   def insert(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def insert(params: ParamsResourceAccountsInsert): GaxiosPromise[SchemaAccount] = js.native
   def insert(params: ParamsResourceAccountsInsert, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def insert(

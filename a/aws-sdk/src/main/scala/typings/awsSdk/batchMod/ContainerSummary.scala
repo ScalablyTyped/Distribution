@@ -18,11 +18,30 @@ trait ContainerSummary extends js.Object {
 
 object ContainerSummary {
   @scala.inline
-  def apply(exitCode: js.UndefOr[Integer] = js.undefined, reason: String = null): ContainerSummary = {
+  def apply(): ContainerSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerSummary]
   }
+  @scala.inline
+  implicit class ContainerSummaryOps[Self <: ContainerSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExitCode(value: Integer): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+  }
+  
 }
 

@@ -18,17 +18,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ojCheckboxsetSettableProperties[K, D]
   extends editableValueSettableProperties[js.Array[js.Any], js.Array[js.Any], js.Array[js.Any]] {
-  var labelledBy: String | Null
-  var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null] = js.undefined
-  var options: (DataProvider[K, D]) | Null
-  var optionsKeys: js.UndefOr[OptionsKeys] = js.undefined
-  var required: Boolean
+  var labelledBy: String | Null = js.native
+  var optionRenderer: js.UndefOr[(js.Function1[/* param0 */ OptionContext[D], Element]) | Null] = js.native
+  var options: (DataProvider[K, D]) | Null = js.native
+  var optionsKeys: js.UndefOr[OptionsKeys] = js.native
+  var required: Boolean = js.native
   @JSName("translations")
-  var translations_ojCheckboxsetSettableProperties: Required
+  var translations_ojCheckboxsetSettableProperties: Required = js.native
   @JSName("value")
-  var value_ojCheckboxsetSettableProperties: js.Array[_]
+  var value_ojCheckboxsetSettableProperties: js.Array[_] = js.native
 }
 
 object ojCheckboxsetSettableProperties {
@@ -43,17 +44,49 @@ object ojCheckboxsetSettableProperties {
     required: Boolean,
     translations: Required,
     valid: valid | pending | invalidHidden | invalidShown,
-    value: js.Array[_],
-    describedBy: String = null,
-    labelledBy: String = null,
-    optionRenderer: js.UndefOr[Null | (/* param0 */ OptionContext[D] => Element)] = js.undefined,
-    options: DataProvider[K, D] = null,
-    optionsKeys: OptionsKeys = null
+    value: js.Array[_]
   ): ojCheckboxsetSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], describedBy = describedBy.asInstanceOf[js.Any], labelledBy = labelledBy.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-    if (!js.isUndefined(optionRenderer)) __obj.updateDynamic("optionRenderer")(if (optionRenderer != null) js.Any.fromFunction1(optionRenderer.asInstanceOf[/* param0 */ OptionContext[D] => Element]) else null)
-    if (optionsKeys != null) __obj.updateDynamic("optionsKeys")(optionsKeys.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojCheckboxsetSettableProperties[K, D]]
   }
+  @scala.inline
+  implicit class ojCheckboxsetSettablePropertiesOps[Self <: ojCheckboxsetSettableProperties[_, _], K, D] (val x: Self with (ojCheckboxsetSettableProperties[K, D])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTranslations(value: Required): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValueVarargs(value: js.Any*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: js.Array[_]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelledBy(value: String): Self = this.set("labelledBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelledByNull: Self = this.set("labelledBy", null)
+    @scala.inline
+    def setOptionRenderer(value: /* param0 */ OptionContext[D] => Element): Self = this.set("optionRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOptionRenderer: Self = this.set("optionRenderer", js.undefined)
+    @scala.inline
+    def setOptionRendererNull: Self = this.set("optionRenderer", null)
+    @scala.inline
+    def setOptions(value: DataProvider[K, D]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptionsNull: Self = this.set("options", null)
+    @scala.inline
+    def setOptionsKeys(value: OptionsKeys): Self = this.set("optionsKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionsKeys: Self = this.set("optionsKeys", js.undefined)
+  }
+  
 }
 

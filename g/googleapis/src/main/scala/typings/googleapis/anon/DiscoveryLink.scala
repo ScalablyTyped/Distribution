@@ -22,34 +22,72 @@ trait DiscoveryLink extends js.Object {
 
 object DiscoveryLink {
   @scala.inline
-  def apply(
-    description: String = null,
-    discoveryLink: String = null,
-    discoveryRestUrl: String = null,
-    documentationLink: String = null,
-    icons: X16 = null,
-    id: String = null,
-    kind: String = null,
-    labels: js.Array[String] = null,
-    name: String = null,
-    preferred: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    version: String = null
-  ): DiscoveryLink = {
+  def apply(): DiscoveryLink = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (discoveryLink != null) __obj.updateDynamic("discoveryLink")(discoveryLink.asInstanceOf[js.Any])
-    if (discoveryRestUrl != null) __obj.updateDynamic("discoveryRestUrl")(discoveryRestUrl.asInstanceOf[js.Any])
-    if (documentationLink != null) __obj.updateDynamic("documentationLink")(documentationLink.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoveryLink]
   }
+  @scala.inline
+  implicit class DiscoveryLinkOps[Self <: DiscoveryLink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDiscoveryLink(value: String): Self = this.set("discoveryLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscoveryLink: Self = this.set("discoveryLink", js.undefined)
+    @scala.inline
+    def setDiscoveryRestUrl(value: String): Self = this.set("discoveryRestUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscoveryRestUrl: Self = this.set("discoveryRestUrl", js.undefined)
+    @scala.inline
+    def setDocumentationLink(value: String): Self = this.set("documentationLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentationLink: Self = this.set("documentationLink", js.undefined)
+    @scala.inline
+    def setIcons(value: X16): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: String*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: js.Array[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPreferred(value: Boolean): Self = this.set("preferred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferred: Self = this.set("preferred", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

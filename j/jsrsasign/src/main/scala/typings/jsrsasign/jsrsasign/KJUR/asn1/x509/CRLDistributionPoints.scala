@@ -35,10 +35,11 @@ import scala.scalajs.js.annotation._
   *      aACompromise            (8) }
   * ```
   */
+@js.native
 trait CRLDistributionPoints extends Extension {
-  def getExtnValueHex(): String
-  def setByDPArray(dpArray: js.Array[ASN1Object]): Unit
-  def setByOneURI(uri: String): Unit
+  def getExtnValueHex(): String = js.native
+  def setByDPArray(dpArray: js.Array[ASN1Object]): Unit = js.native
+  def setByOneURI(uri: String): Unit = js.native
 }
 
 object CRLDistributionPoints {
@@ -60,5 +61,24 @@ object CRLDistributionPoints {
     val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getExtnValueHex = js.Any.fromFunction0(getExtnValueHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByDPArray = js.Any.fromFunction1(setByDPArray), setByOneURI = js.Any.fromFunction1(setByOneURI))
     __obj.asInstanceOf[CRLDistributionPoints]
   }
+  @scala.inline
+  implicit class CRLDistributionPointsOps[Self <: CRLDistributionPoints] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetExtnValueHex(value: () => String): Self = this.set("getExtnValueHex", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetByDPArray(value: js.Array[ASN1Object] => Unit): Self = this.set("setByDPArray", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetByOneURI(value: String => Unit): Self = this.set("setByOneURI", js.Any.fromFunction1(value))
+  }
+  
 }
 

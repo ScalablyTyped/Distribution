@@ -12,7 +12,7 @@ Get the number of days in a month
 | Keywords           | month, days, year, date, utc, number, count |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 1636 |
+| # downloads        | 1654 |
 | # stars            | 1 |
 
 ## Links

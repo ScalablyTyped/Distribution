@@ -189,7 +189,21 @@ trait Zone extends js.Object {
     * @returns {any} Value from the `callback` function.
     */
   def run[T](callback: js.Function): T = js.native
+  def run[T](
+    callback: js.Function,
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.UndefOr[scala.Nothing],
+    source: String
+  ): T = js.native
+  def run[T](callback: js.Function, applyThis: js.UndefOr[scala.Nothing], applyArgs: js.Array[_]): T = js.native
+  def run[T](
+    callback: js.Function,
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.Array[_],
+    source: String
+  ): T = js.native
   def run[T](callback: js.Function, applyThis: js.Any): T = js.native
+  def run[T](callback: js.Function, applyThis: js.Any, applyArgs: js.UndefOr[scala.Nothing], source: String): T = js.native
   def run[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
   def run[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_], source: String): T = js.native
   /**
@@ -207,7 +221,21 @@ trait Zone extends js.Object {
     * @returns {any} Value from the `callback` function.
     */
   def runGuarded[T](callback: js.Function): T = js.native
+  def runGuarded[T](
+    callback: js.Function,
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.UndefOr[scala.Nothing],
+    source: String
+  ): T = js.native
+  def runGuarded[T](callback: js.Function, applyThis: js.UndefOr[scala.Nothing], applyArgs: js.Array[_]): T = js.native
+  def runGuarded[T](
+    callback: js.Function,
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.Array[_],
+    source: String
+  ): T = js.native
   def runGuarded[T](callback: js.Function, applyThis: js.Any): T = js.native
+  def runGuarded[T](callback: js.Function, applyThis: js.Any, applyArgs: js.UndefOr[scala.Nothing], source: String): T = js.native
   def runGuarded[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
   def runGuarded[T](callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_], source: String): T = js.native
   /**
@@ -219,6 +247,7 @@ trait Zone extends js.Object {
     * @returns {*}
     */
   def runTask(task: Task): js.Any = js.native
+  def runTask(task: Task, applyThis: js.UndefOr[scala.Nothing], applyArgs: js.Any): js.Any = js.native
   def runTask(task: Task, applyThis: js.Any): js.Any = js.native
   def runTask(task: Task, applyThis: js.Any, applyArgs: js.Any): js.Any = js.native
   /**
@@ -231,7 +260,34 @@ trait Zone extends js.Object {
     * @param customCancel
     */
   def scheduleEventTask(source: String, callback: js.Function): EventTask = js.native
+  def scheduleEventTask(
+    source: String,
+    callback: js.Function,
+    data: js.UndefOr[scala.Nothing],
+    customSchedule: js.UndefOr[scala.Nothing],
+    customCancel: js.Function1[/* task */ Task, Unit]
+  ): EventTask = js.native
+  def scheduleEventTask(
+    source: String,
+    callback: js.Function,
+    data: js.UndefOr[scala.Nothing],
+    customSchedule: js.Function1[/* task */ Task, Unit]
+  ): EventTask = js.native
+  def scheduleEventTask(
+    source: String,
+    callback: js.Function,
+    data: js.UndefOr[scala.Nothing],
+    customSchedule: js.Function1[/* task */ Task, Unit],
+    customCancel: js.Function1[/* task */ Task, Unit]
+  ): EventTask = js.native
   def scheduleEventTask(source: String, callback: js.Function, data: TaskData): EventTask = js.native
+  def scheduleEventTask(
+    source: String,
+    callback: js.Function,
+    data: TaskData,
+    customSchedule: js.UndefOr[scala.Nothing],
+    customCancel: js.Function1[/* task */ Task, Unit]
+  ): EventTask = js.native
   def scheduleEventTask(
     source: String,
     callback: js.Function,
@@ -255,7 +311,34 @@ trait Zone extends js.Object {
     * @param customCancel
     */
   def scheduleMacroTask(source: String, callback: js.Function): MacroTask = js.native
+  def scheduleMacroTask(
+    source: String,
+    callback: js.Function,
+    data: js.UndefOr[scala.Nothing],
+    customSchedule: js.UndefOr[scala.Nothing],
+    customCancel: js.Function1[/* task */ Task, Unit]
+  ): MacroTask = js.native
+  def scheduleMacroTask(
+    source: String,
+    callback: js.Function,
+    data: js.UndefOr[scala.Nothing],
+    customSchedule: js.Function1[/* task */ Task, Unit]
+  ): MacroTask = js.native
+  def scheduleMacroTask(
+    source: String,
+    callback: js.Function,
+    data: js.UndefOr[scala.Nothing],
+    customSchedule: js.Function1[/* task */ Task, Unit],
+    customCancel: js.Function1[/* task */ Task, Unit]
+  ): MacroTask = js.native
   def scheduleMacroTask(source: String, callback: js.Function, data: TaskData): MacroTask = js.native
+  def scheduleMacroTask(
+    source: String,
+    callback: js.Function,
+    data: TaskData,
+    customSchedule: js.UndefOr[scala.Nothing],
+    customCancel: js.Function1[/* task */ Task, Unit]
+  ): MacroTask = js.native
   def scheduleMacroTask(
     source: String,
     callback: js.Function,
@@ -278,6 +361,12 @@ trait Zone extends js.Object {
     * @param customSchedule
     */
   def scheduleMicroTask(source: String, callback: js.Function): MicroTask = js.native
+  def scheduleMicroTask(
+    source: String,
+    callback: js.Function,
+    data: js.UndefOr[scala.Nothing],
+    customSchedule: js.Function1[/* task */ Task, Unit]
+  ): MicroTask = js.native
   def scheduleMicroTask(source: String, callback: js.Function, data: TaskData): MicroTask = js.native
   def scheduleMicroTask(
     source: String,

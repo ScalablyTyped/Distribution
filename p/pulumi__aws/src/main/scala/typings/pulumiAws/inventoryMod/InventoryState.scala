@@ -47,26 +47,56 @@ trait InventoryState extends js.Object {
 
 object InventoryState {
   @scala.inline
-  def apply(
-    bucket: Input[String] = null,
-    destination: Input[InventoryDestination] = null,
-    enabled: Input[Boolean] = null,
-    filter: Input[InventoryFilter] = null,
-    includedObjectVersions: Input[String] = null,
-    name: Input[String] = null,
-    optionalFields: Input[js.Array[Input[String]]] = null,
-    schedule: Input[InventorySchedule] = null
-  ): InventoryState = {
+  def apply(): InventoryState = {
     val __obj = js.Dynamic.literal()
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (includedObjectVersions != null) __obj.updateDynamic("includedObjectVersions")(includedObjectVersions.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (optionalFields != null) __obj.updateDynamic("optionalFields")(optionalFields.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryState]
   }
+  @scala.inline
+  implicit class InventoryStateOps[Self <: InventoryState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: Input[String]): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("bucket", js.undefined)
+    @scala.inline
+    def setDestination(value: Input[InventoryDestination]): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setFilter(value: Input[InventoryFilter]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setIncludedObjectVersions(value: Input[String]): Self = this.set("includedObjectVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludedObjectVersions: Self = this.set("includedObjectVersions", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptionalFieldsVarargs(value: Input[String]*): Self = this.set("optionalFields", js.Array(value :_*))
+    @scala.inline
+    def setOptionalFields(value: Input[js.Array[Input[String]]]): Self = this.set("optionalFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionalFields: Self = this.set("optionalFields", js.undefined)
+    @scala.inline
+    def setSchedule(value: Input[InventorySchedule]): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+  }
+  
 }
 

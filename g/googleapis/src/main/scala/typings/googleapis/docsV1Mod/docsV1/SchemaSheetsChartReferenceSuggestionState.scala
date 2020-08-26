@@ -23,14 +23,30 @@ trait SchemaSheetsChartReferenceSuggestionState extends js.Object {
 
 object SchemaSheetsChartReferenceSuggestionState {
   @scala.inline
-  def apply(
-    chartIdSuggested: js.UndefOr[Boolean] = js.undefined,
-    spreadsheetIdSuggested: js.UndefOr[Boolean] = js.undefined
-  ): SchemaSheetsChartReferenceSuggestionState = {
+  def apply(): SchemaSheetsChartReferenceSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chartIdSuggested)) __obj.updateDynamic("chartIdSuggested")(chartIdSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spreadsheetIdSuggested)) __obj.updateDynamic("spreadsheetIdSuggested")(spreadsheetIdSuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSheetsChartReferenceSuggestionState]
   }
+  @scala.inline
+  implicit class SchemaSheetsChartReferenceSuggestionStateOps[Self <: SchemaSheetsChartReferenceSuggestionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChartIdSuggested(value: Boolean): Self = this.set("chartIdSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartIdSuggested: Self = this.set("chartIdSuggested", js.undefined)
+    @scala.inline
+    def setSpreadsheetIdSuggested(value: Boolean): Self = this.set("spreadsheetIdSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpreadsheetIdSuggested: Self = this.set("spreadsheetIdSuggested", js.undefined)
+  }
+  
 }
 

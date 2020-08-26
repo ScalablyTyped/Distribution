@@ -4,33 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RowInfo extends js.Object {
   /* --- visibility --- */
   /** if true, the column is hidden */
-  var hidden: js.UndefOr[Boolean] = js.undefined
+  var hidden: js.UndefOr[Boolean] = js.native
   /** height in points */
-  var hpt: js.UndefOr[Double] = js.undefined
+  var hpt: js.UndefOr[Double] = js.native
   /* --- row height --- */
   /** height in screen pixels */
-  var hpx: js.UndefOr[Double] = js.undefined
+  var hpx: js.UndefOr[Double] = js.native
   /** outline / group level */
-  var level: js.UndefOr[Double] = js.undefined
+  var level: js.UndefOr[Double] = js.native
 }
 
 object RowInfo {
   @scala.inline
-  def apply(
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hpt: js.UndefOr[Double] = js.undefined,
-    hpx: js.UndefOr[Double] = js.undefined,
-    level: js.UndefOr[Double] = js.undefined
-  ): RowInfo = {
+  def apply(): RowInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hpt)) __obj.updateDynamic("hpt")(hpt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hpx)) __obj.updateDynamic("hpx")(hpx.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowInfo]
   }
+  @scala.inline
+  implicit class RowInfoOps[Self <: RowInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHpt(value: Double): Self = this.set("hpt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHpt: Self = this.set("hpt", js.undefined)
+    @scala.inline
+    def setHpx(value: Double): Self = this.set("hpx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHpx: Self = this.set("hpx", js.undefined)
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+  }
+  
 }
 

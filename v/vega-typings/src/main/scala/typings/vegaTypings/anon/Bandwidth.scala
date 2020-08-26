@@ -7,39 +7,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Bandwidth extends js.Object {
-  var bandwidth: js.UndefOr[Double | SignalRef] = js.undefined
-  var cellSize: js.UndefOr[Double | SignalRef] = js.undefined
-  var signal: js.UndefOr[String] = js.undefined
-  var size: (js.Array[Double | SignalRef]) | SignalRef
-  var `type`: contour
+  var bandwidth: js.UndefOr[Double | SignalRef] = js.native
+  var cellSize: js.UndefOr[Double | SignalRef] = js.native
+  var signal: js.UndefOr[String] = js.native
+  var size: (js.Array[Double | SignalRef]) | SignalRef = js.native
+  var `type`: contour = js.native
    // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
-  var values: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
-  var x: js.UndefOr[FieldRef] = js.undefined
-  var y: js.UndefOr[FieldRef] = js.undefined
+  var values: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.native
+  var x: js.UndefOr[FieldRef] = js.native
+  var y: js.UndefOr[FieldRef] = js.native
 }
 
 object Bandwidth {
   @scala.inline
-  def apply(
-    size: (js.Array[Double | SignalRef]) | SignalRef,
-    `type`: contour,
-    bandwidth: Double | SignalRef = null,
-    cellSize: Double | SignalRef = null,
-    signal: String = null,
-    values: (js.Array[Double | SignalRef]) | SignalRef = null,
-    x: FieldRef = null,
-    y: FieldRef = null
-  ): Bandwidth = {
+  def apply(size: (js.Array[Double | SignalRef]) | SignalRef, `type`: contour): Bandwidth = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
-    if (cellSize != null) __obj.updateDynamic("cellSize")(cellSize.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bandwidth]
   }
+  @scala.inline
+  implicit class BandwidthOps[Self <: Bandwidth] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSizeVarargs(value: (Double | SignalRef)*): Self = this.set("size", js.Array(value :_*))
+    @scala.inline
+    def setSize(value: (js.Array[Double | SignalRef]) | SignalRef): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: contour): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBandwidth(value: Double | SignalRef): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    @scala.inline
+    def setCellSize(value: Double | SignalRef): Self = this.set("cellSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellSize: Self = this.set("cellSize", js.undefined)
+    @scala.inline
+    def setSignal(value: String): Self = this.set("signal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignal: Self = this.set("signal", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: (Double | SignalRef)*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: (js.Array[Double | SignalRef]) | SignalRef): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+    @scala.inline
+    def setX(value: FieldRef): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: FieldRef): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

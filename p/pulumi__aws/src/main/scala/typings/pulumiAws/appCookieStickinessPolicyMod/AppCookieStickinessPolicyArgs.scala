@@ -30,15 +30,32 @@ trait AppCookieStickinessPolicyArgs extends js.Object {
 
 object AppCookieStickinessPolicyArgs {
   @scala.inline
-  def apply(
-    cookieName: Input[String],
-    lbPort: Input[Double],
-    loadBalancer: Input[String],
-    name: Input[String] = null
-  ): AppCookieStickinessPolicyArgs = {
+  def apply(cookieName: Input[String], lbPort: Input[Double], loadBalancer: Input[String]): AppCookieStickinessPolicyArgs = {
     val __obj = js.Dynamic.literal(cookieName = cookieName.asInstanceOf[js.Any], lbPort = lbPort.asInstanceOf[js.Any], loadBalancer = loadBalancer.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppCookieStickinessPolicyArgs]
   }
+  @scala.inline
+  implicit class AppCookieStickinessPolicyArgsOps[Self <: AppCookieStickinessPolicyArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCookieName(value: Input[String]): Self = this.set("cookieName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLbPort(value: Input[Double]): Self = this.set("lbPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoadBalancer(value: Input[String]): Self = this.set("loadBalancer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

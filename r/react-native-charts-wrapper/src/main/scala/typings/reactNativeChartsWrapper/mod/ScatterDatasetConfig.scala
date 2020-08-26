@@ -9,58 +9,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScatterDatasetConfig
   extends CommonDatasetConfig
      with BarLineScatterCandleBubbleConfig
      with LineScatterCandleRadarConfig {
-  var scatterShape: js.UndefOr[SQUARE | CIRCLE | TRIANGLE | CROSS | X] = js.undefined
-  var scatterShapeHoleColor: js.UndefOr[Color] = js.undefined
-  var scatterShapeHoleRadius: js.UndefOr[Double] = js.undefined
-  var scatterShapeSize: js.UndefOr[Double] = js.undefined
+  var scatterShape: js.UndefOr[SQUARE | CIRCLE | TRIANGLE | CROSS | X] = js.native
+  var scatterShapeHoleColor: js.UndefOr[Color] = js.native
+  var scatterShapeHoleRadius: js.UndefOr[Double] = js.native
+  var scatterShapeSize: js.UndefOr[Double] = js.native
 }
 
 object ScatterDatasetConfig {
   @scala.inline
-  def apply(
-    axisDependency: AxisDependency = null,
-    color: js.UndefOr[Color] = js.undefined,
-    colors: js.Array[Color] = null,
-    drawHighlightIndicators: js.UndefOr[Boolean] = js.undefined,
-    drawHorizontalHighlightIndicator: js.UndefOr[Boolean] = js.undefined,
-    drawValues: js.UndefOr[Boolean] = js.undefined,
-    drawVerticalHighlightIndicator: js.UndefOr[Boolean] = js.undefined,
-    highlightColor: js.UndefOr[Color] = js.undefined,
-    highlightEnabled: js.UndefOr[Boolean] = js.undefined,
-    highlightLineWidth: js.UndefOr[Double] = js.undefined,
-    scatterShape: SQUARE | CIRCLE | TRIANGLE | CROSS | X = null,
-    scatterShapeHoleColor: js.UndefOr[Color] = js.undefined,
-    scatterShapeHoleRadius: js.UndefOr[Double] = js.undefined,
-    scatterShapeSize: js.UndefOr[Double] = js.undefined,
-    valueFormatter: ValueFormatter = null,
-    valueTextColor: js.UndefOr[Color] = js.undefined,
-    valueTextSize: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): ScatterDatasetConfig = {
+  def apply(): ScatterDatasetConfig = {
     val __obj = js.Dynamic.literal()
-    if (axisDependency != null) __obj.updateDynamic("axisDependency")(axisDependency.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawHighlightIndicators)) __obj.updateDynamic("drawHighlightIndicators")(drawHighlightIndicators.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawHorizontalHighlightIndicator)) __obj.updateDynamic("drawHorizontalHighlightIndicator")(drawHorizontalHighlightIndicator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawValues)) __obj.updateDynamic("drawValues")(drawValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawVerticalHighlightIndicator)) __obj.updateDynamic("drawVerticalHighlightIndicator")(drawVerticalHighlightIndicator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightColor)) __obj.updateDynamic("highlightColor")(highlightColor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightLineWidth)) __obj.updateDynamic("highlightLineWidth")(highlightLineWidth.get.asInstanceOf[js.Any])
-    if (scatterShape != null) __obj.updateDynamic("scatterShape")(scatterShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(scatterShapeHoleColor)) __obj.updateDynamic("scatterShapeHoleColor")(scatterShapeHoleColor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scatterShapeHoleRadius)) __obj.updateDynamic("scatterShapeHoleRadius")(scatterShapeHoleRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scatterShapeSize)) __obj.updateDynamic("scatterShapeSize")(scatterShapeSize.get.asInstanceOf[js.Any])
-    if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(valueFormatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueTextColor)) __obj.updateDynamic("valueTextColor")(valueTextColor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueTextSize)) __obj.updateDynamic("valueTextSize")(valueTextSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScatterDatasetConfig]
   }
+  @scala.inline
+  implicit class ScatterDatasetConfigOps[Self <: ScatterDatasetConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScatterShape(value: SQUARE | CIRCLE | TRIANGLE | CROSS | X): Self = this.set("scatterShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScatterShape: Self = this.set("scatterShape", js.undefined)
+    @scala.inline
+    def setScatterShapeHoleColor(value: Color): Self = this.set("scatterShapeHoleColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScatterShapeHoleColor: Self = this.set("scatterShapeHoleColor", js.undefined)
+    @scala.inline
+    def setScatterShapeHoleRadius(value: Double): Self = this.set("scatterShapeHoleRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScatterShapeHoleRadius: Self = this.set("scatterShapeHoleRadius", js.undefined)
+    @scala.inline
+    def setScatterShapeSize(value: Double): Self = this.set("scatterShapeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScatterShapeSize: Self = this.set("scatterShapeSize", js.undefined)
+  }
+  
 }
 

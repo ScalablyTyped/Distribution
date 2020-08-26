@@ -67,7 +67,22 @@ trait Gpio extends EventEmitter {
     * @param onSetup  callback
     */
   def setup(channel: Double): Unit = js.native
+  def setup(
+    channel: Double,
+    direction: js.UndefOr[scala.Nothing],
+    edge: js.UndefOr[scala.Nothing],
+    onSetup: ValueCallback[Boolean]
+  ): Unit = js.native
+  def setup(channel: Double, direction: js.UndefOr[scala.Nothing], edge: EDGE): Unit = js.native
+  def setup(channel: Double, direction: js.UndefOr[scala.Nothing], edge: EDGE, onSetup: ValueCallback[Boolean]): Unit = js.native
+  def setup(channel: Double, direction: js.UndefOr[scala.Nothing], onSetup: ValueCallback[Boolean]): Unit = js.native
   def setup(channel: Double, direction: PinDirection): Unit = js.native
+  def setup(
+    channel: Double,
+    direction: PinDirection,
+    edge: js.UndefOr[scala.Nothing],
+    onSetup: ValueCallback[Boolean]
+  ): Unit = js.native
   def setup(channel: Double, direction: PinDirection, edge: EDGE): Unit = js.native
   def setup(channel: Double, direction: PinDirection, edge: EDGE, onSetup: ValueCallback[Boolean]): Unit = js.native
   def setup(channel: Double, direction: PinDirection, onSetup: ValueCallback[Boolean]): Unit = js.native

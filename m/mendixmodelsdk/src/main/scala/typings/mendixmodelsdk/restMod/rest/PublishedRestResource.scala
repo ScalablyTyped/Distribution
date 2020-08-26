@@ -30,23 +30,23 @@ class PublishedRestResource protected () extends PublishedResource {
     * In version 8.0.0: introduced
     */
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   /**
     * In version 7.19.0: introduced
     */
   def exposedName: String = js.native
-  def exposedName(newValue: String): js.Any = js.native
+  def exposedName_=(newValue: String): Unit = js.native
   def pageSize: Double = js.native
-  def pageSize(newValue: Double): js.Any = js.native
+  def pageSize_=(newValue: Double): Unit = js.native
   def path: String = js.native
-  def path(newValue: String): js.Any = js.native
+  def path_=(newValue: String): Unit = js.native
   /**
     * In version 8.0.0: introduced
     */
   def summary: String = js.native
-  def summary(newValue: String): js.Any = js.native
+  def summary_=(newValue: String): Unit = js.native
   def usePaging: Boolean = js.native
-  def usePaging(newValue: Boolean): js.Any = js.native
+  def usePaging_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

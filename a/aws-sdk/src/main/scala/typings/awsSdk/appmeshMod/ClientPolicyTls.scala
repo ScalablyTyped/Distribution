@@ -23,15 +23,34 @@ trait ClientPolicyTls extends js.Object {
 
 object ClientPolicyTls {
   @scala.inline
-  def apply(
-    validation: TlsValidationContext,
-    enforce: js.UndefOr[Boolean] = js.undefined,
-    ports: PortSet = null
-  ): ClientPolicyTls = {
+  def apply(validation: TlsValidationContext): ClientPolicyTls = {
     val __obj = js.Dynamic.literal(validation = validation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce.get.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientPolicyTls]
   }
+  @scala.inline
+  implicit class ClientPolicyTlsOps[Self <: ClientPolicyTls] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValidation(value: TlsValidationContext): Self = this.set("validation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnforce(value: Boolean): Self = this.set("enforce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforce: Self = this.set("enforce", js.undefined)
+    @scala.inline
+    def setPortsVarargs(value: PortNumber*): Self = this.set("ports", js.Array(value :_*))
+    @scala.inline
+    def setPorts(value: PortSet): Self = this.set("ports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePorts: Self = this.set("ports", js.undefined)
+  }
+  
 }
 

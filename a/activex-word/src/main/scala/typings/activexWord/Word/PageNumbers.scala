@@ -21,6 +21,7 @@ trait PageNumbers extends js.Object {
   @JSName("Word.PageNumbers_typekey")
   var WordDotPageNumbers_typekey: PageNumbers = js.native
   def Add(): PageNumber = js.native
+  def Add(PageNumberAlignment: js.UndefOr[scala.Nothing], FirstPage: js.Any): PageNumber = js.native
   def Add(PageNumberAlignment: js.Any): PageNumber = js.native
   def Add(PageNumberAlignment: js.Any, FirstPage: js.Any): PageNumber = js.native
   def Item(Index: Double): PageNumber = js.native

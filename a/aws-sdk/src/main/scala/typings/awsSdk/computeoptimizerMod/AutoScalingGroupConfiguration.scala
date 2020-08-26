@@ -26,18 +26,38 @@ trait AutoScalingGroupConfiguration extends js.Object {
 
 object AutoScalingGroupConfiguration {
   @scala.inline
-  def apply(
-    desiredCapacity: js.UndefOr[DesiredCapacity] = js.undefined,
-    instanceType: InstanceType = null,
-    maxSize: js.UndefOr[MaxSize] = js.undefined,
-    minSize: js.UndefOr[MinSize] = js.undefined
-  ): AutoScalingGroupConfiguration = {
+  def apply(): AutoScalingGroupConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(desiredCapacity)) __obj.updateDynamic("desiredCapacity")(desiredCapacity.get.asInstanceOf[js.Any])
-    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingGroupConfiguration]
   }
+  @scala.inline
+  implicit class AutoScalingGroupConfigurationOps[Self <: AutoScalingGroupConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesiredCapacity(value: DesiredCapacity): Self = this.set("desiredCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredCapacity: Self = this.set("desiredCapacity", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    @scala.inline
+    def setMaxSize(value: MaxSize): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setMinSize(value: MinSize): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("minSize", js.undefined)
+  }
+  
 }
 

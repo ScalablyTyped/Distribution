@@ -30,19 +30,9 @@ class BoundElementPropertyAst protected () extends TemplateAst {
   val isAnimation: Boolean = js.native
   var name: String = js.native
   var securityContext: SecurityContext = js.native
-  /**
-    * The source span from which this node was parsed.
-    */
-  /* CompleteClass */
-  override var sourceSpan: ParseSourceSpan = js.native
   var `type`: PropertyBindingType = js.native
   var unit: String | Null = js.native
   var value: ASTWithSource = js.native
-  /**
-    * Visit this node and possibly transform it.
-    */
-  /* CompleteClass */
-  override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
 }
 
 /* static members */

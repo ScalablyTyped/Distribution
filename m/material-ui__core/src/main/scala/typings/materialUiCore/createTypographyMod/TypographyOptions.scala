@@ -1,7 +1,7 @@
 package typings.materialUiCore.createTypographyMod
 
-import typings.csstype.mod.FontFamilyProperty
-import typings.csstype.mod.FontWeightProperty
+import typings.csstype.mod.Property.FontFamily
+import typings.csstype.mod.Property.FontWeight
 import typings.materialUiCore.withStylesMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,11 +19,11 @@ trait TypographyOptions extends js.Object {
   var display2: js.UndefOr[TypographyStyleOptions] = js.native
   var display3: js.UndefOr[TypographyStyleOptions] = js.native
   var display4: js.UndefOr[TypographyStyleOptions] = js.native
-  var fontFamily: js.UndefOr[FontFamilyProperty] = js.native
+  var fontFamily: js.UndefOr[FontFamily] = js.native
   var fontSize: js.UndefOr[Double] = js.native
-  var fontWeightLight: js.UndefOr[FontWeightProperty] = js.native
-  var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.native
-  var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.native
+  var fontWeightLight: js.UndefOr[FontWeight] = js.native
+  var fontWeightMedium: js.UndefOr[FontWeight] = js.native
+  var fontWeightRegular: js.UndefOr[FontWeight] = js.native
   var h1: js.UndefOr[TypographyStyleOptions] = js.native
   var h2: js.UndefOr[TypographyStyleOptions] = js.native
   var h3: js.UndefOr[TypographyStyleOptions] = js.native
@@ -42,66 +42,134 @@ trait TypographyOptions extends js.Object {
 
 object TypographyOptions {
   @scala.inline
-  def apply(
-    allVariants: CSSProperties = null,
-    body1: TypographyStyleOptions = null,
-    body2: TypographyStyleOptions = null,
-    button: TypographyStyleOptions = null,
-    caption: TypographyStyleOptions = null,
-    display1: TypographyStyleOptions = null,
-    display2: TypographyStyleOptions = null,
-    display3: TypographyStyleOptions = null,
-    display4: TypographyStyleOptions = null,
-    fontFamily: FontFamilyProperty = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    fontWeightLight: FontWeightProperty = null,
-    fontWeightMedium: FontWeightProperty = null,
-    fontWeightRegular: FontWeightProperty = null,
-    h1: TypographyStyleOptions = null,
-    h2: TypographyStyleOptions = null,
-    h3: TypographyStyleOptions = null,
-    h4: TypographyStyleOptions = null,
-    h5: TypographyStyleOptions = null,
-    h6: TypographyStyleOptions = null,
-    headline: TypographyStyleOptions = null,
-    htmlFontSize: js.UndefOr[Double] = js.undefined,
-    overline: TypographyStyleOptions = null,
-    subheading: TypographyStyleOptions = null,
-    subtitle1: TypographyStyleOptions = null,
-    subtitle2: TypographyStyleOptions = null,
-    title: TypographyStyleOptions = null,
-    useNextVariants: js.UndefOr[Boolean] = js.undefined
-  ): TypographyOptions = {
+  def apply(): TypographyOptions = {
     val __obj = js.Dynamic.literal()
-    if (allVariants != null) __obj.updateDynamic("allVariants")(allVariants.asInstanceOf[js.Any])
-    if (body1 != null) __obj.updateDynamic("body1")(body1.asInstanceOf[js.Any])
-    if (body2 != null) __obj.updateDynamic("body2")(body2.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (display1 != null) __obj.updateDynamic("display1")(display1.asInstanceOf[js.Any])
-    if (display2 != null) __obj.updateDynamic("display2")(display2.asInstanceOf[js.Any])
-    if (display3 != null) __obj.updateDynamic("display3")(display3.asInstanceOf[js.Any])
-    if (display4 != null) __obj.updateDynamic("display4")(display4.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (fontWeightLight != null) __obj.updateDynamic("fontWeightLight")(fontWeightLight.asInstanceOf[js.Any])
-    if (fontWeightMedium != null) __obj.updateDynamic("fontWeightMedium")(fontWeightMedium.asInstanceOf[js.Any])
-    if (fontWeightRegular != null) __obj.updateDynamic("fontWeightRegular")(fontWeightRegular.asInstanceOf[js.Any])
-    if (h1 != null) __obj.updateDynamic("h1")(h1.asInstanceOf[js.Any])
-    if (h2 != null) __obj.updateDynamic("h2")(h2.asInstanceOf[js.Any])
-    if (h3 != null) __obj.updateDynamic("h3")(h3.asInstanceOf[js.Any])
-    if (h4 != null) __obj.updateDynamic("h4")(h4.asInstanceOf[js.Any])
-    if (h5 != null) __obj.updateDynamic("h5")(h5.asInstanceOf[js.Any])
-    if (h6 != null) __obj.updateDynamic("h6")(h6.asInstanceOf[js.Any])
-    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
-    if (!js.isUndefined(htmlFontSize)) __obj.updateDynamic("htmlFontSize")(htmlFontSize.get.asInstanceOf[js.Any])
-    if (overline != null) __obj.updateDynamic("overline")(overline.asInstanceOf[js.Any])
-    if (subheading != null) __obj.updateDynamic("subheading")(subheading.asInstanceOf[js.Any])
-    if (subtitle1 != null) __obj.updateDynamic("subtitle1")(subtitle1.asInstanceOf[js.Any])
-    if (subtitle2 != null) __obj.updateDynamic("subtitle2")(subtitle2.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNextVariants)) __obj.updateDynamic("useNextVariants")(useNextVariants.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypographyOptions]
   }
+  @scala.inline
+  implicit class TypographyOptionsOps[Self <: TypographyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllVariants(value: CSSProperties): Self = this.set("allVariants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllVariants: Self = this.set("allVariants", js.undefined)
+    @scala.inline
+    def setBody1(value: TypographyStyleOptions): Self = this.set("body1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody1: Self = this.set("body1", js.undefined)
+    @scala.inline
+    def setBody2(value: TypographyStyleOptions): Self = this.set("body2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody2: Self = this.set("body2", js.undefined)
+    @scala.inline
+    def setButton(value: TypographyStyleOptions): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setCaption(value: TypographyStyleOptions): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    @scala.inline
+    def setDisplay1(value: TypographyStyleOptions): Self = this.set("display1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay1: Self = this.set("display1", js.undefined)
+    @scala.inline
+    def setDisplay2(value: TypographyStyleOptions): Self = this.set("display2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay2: Self = this.set("display2", js.undefined)
+    @scala.inline
+    def setDisplay3(value: TypographyStyleOptions): Self = this.set("display3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay3: Self = this.set("display3", js.undefined)
+    @scala.inline
+    def setDisplay4(value: TypographyStyleOptions): Self = this.set("display4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay4: Self = this.set("display4", js.undefined)
+    @scala.inline
+    def setFontFamily(value: FontFamily): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontWeightLight(value: FontWeight): Self = this.set("fontWeightLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeightLight: Self = this.set("fontWeightLight", js.undefined)
+    @scala.inline
+    def setFontWeightMedium(value: FontWeight): Self = this.set("fontWeightMedium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeightMedium: Self = this.set("fontWeightMedium", js.undefined)
+    @scala.inline
+    def setFontWeightRegular(value: FontWeight): Self = this.set("fontWeightRegular", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeightRegular: Self = this.set("fontWeightRegular", js.undefined)
+    @scala.inline
+    def setH1(value: TypographyStyleOptions): Self = this.set("h1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH1: Self = this.set("h1", js.undefined)
+    @scala.inline
+    def setH2(value: TypographyStyleOptions): Self = this.set("h2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH2: Self = this.set("h2", js.undefined)
+    @scala.inline
+    def setH3(value: TypographyStyleOptions): Self = this.set("h3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH3: Self = this.set("h3", js.undefined)
+    @scala.inline
+    def setH4(value: TypographyStyleOptions): Self = this.set("h4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH4: Self = this.set("h4", js.undefined)
+    @scala.inline
+    def setH5(value: TypographyStyleOptions): Self = this.set("h5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH5: Self = this.set("h5", js.undefined)
+    @scala.inline
+    def setH6(value: TypographyStyleOptions): Self = this.set("h6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH6: Self = this.set("h6", js.undefined)
+    @scala.inline
+    def setHeadline(value: TypographyStyleOptions): Self = this.set("headline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadline: Self = this.set("headline", js.undefined)
+    @scala.inline
+    def setHtmlFontSize(value: Double): Self = this.set("htmlFontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlFontSize: Self = this.set("htmlFontSize", js.undefined)
+    @scala.inline
+    def setOverline(value: TypographyStyleOptions): Self = this.set("overline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverline: Self = this.set("overline", js.undefined)
+    @scala.inline
+    def setSubheading(value: TypographyStyleOptions): Self = this.set("subheading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubheading: Self = this.set("subheading", js.undefined)
+    @scala.inline
+    def setSubtitle1(value: TypographyStyleOptions): Self = this.set("subtitle1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle1: Self = this.set("subtitle1", js.undefined)
+    @scala.inline
+    def setSubtitle2(value: TypographyStyleOptions): Self = this.set("subtitle2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle2: Self = this.set("subtitle2", js.undefined)
+    @scala.inline
+    def setTitle(value: TypographyStyleOptions): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUseNextVariants(value: Boolean): Self = this.set("useNextVariants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseNextVariants: Self = this.set("useNextVariants", js.undefined)
+  }
+  
 }
 

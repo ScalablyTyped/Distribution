@@ -47,6 +47,7 @@ object WindowManager extends js.Object {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Component in the iteration.
     */
   def each(): Unit = js.native
+  def each(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def each(fn: js.Any): Unit = js.native
   def each(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Executes the specified function once for every Component in this ZIndexManager passing each Component as the only pa
@@ -54,6 +55,7 @@ object WindowManager extends js.Object {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Component in the iteration.
     */
   def eachBottomUp(): Unit = js.native
+  def eachBottomUp(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def eachBottomUp(fn: js.Any): Unit = js.native
   def eachBottomUp(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Executes the specified function once for every Component in this ZIndexManager passing each Component as the only pa
@@ -61,6 +63,7 @@ object WindowManager extends js.Object {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Component in the iteration.
     */
   def eachTopDown(): Unit = js.native
+  def eachTopDown(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def eachTopDown(fn: js.Any): Unit = js.native
   def eachTopDown(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Gets a registered Component by id
@@ -79,6 +82,7 @@ object WindowManager extends js.Object {
     * @returns Array An array of zero or more matching windows
     */
   def getBy(): typings.extjs.Ext.Array = js.native
+  def getBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): typings.extjs.Ext.Array = js.native
   def getBy(fn: js.Any): typings.extjs.Ext.Array = js.native
   def getBy(fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class

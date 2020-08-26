@@ -1,22 +1,15 @@
 package typings.androiduix.android.support.v4.widget
 
-import typings.androiduix.android.content.Context
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.android.support.v4.widget.DrawerLayout.DrawerListener
 import typings.androiduix.android.view.View
 import typings.androiduix.android.view.ViewGroup
-import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.support.v4.widget.DrawerLayout")
 @js.native
-class DrawerLayout_ protected () extends ViewGroup {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
+trait DrawerLayout_ extends ViewGroup {
   var mChildrenCanceledTouch: js.Any = js.native
   var mDisallowInterceptRequested: js.Any = js.native
   var mDrawerState: js.Any = js.native

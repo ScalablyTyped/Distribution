@@ -5,40 +5,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.openfin.GoldenLayout.ItemConfigType because Already inherited */ trait ReactComponentConfig extends ItemConfig {
+- typings.openfin.GoldenLayout.ItemConfigType because Already inherited */ @js.native
+trait ReactComponentConfig extends ItemConfig {
   /**
     * The name of the component as specified in layout.registerComponent. Mandatory if type is 'react-component'
     */
-  var component: String
+  var component: String = js.native
   /**
     * Properties that will be passed to the component and accessible using this.props.
     */
-  var props: js.UndefOr[js.Any] = js.undefined
+  var props: js.UndefOr[js.Any] = js.native
 }
 
 object ReactComponentConfig {
   @scala.inline
-  def apply(
-    component: String,
-    `type`: String,
-    content: js.Array[ItemConfigType] = null,
-    height: js.UndefOr[Double] = js.undefined,
-    id: String | js.Array[String] = null,
-    isClosable: js.UndefOr[Boolean] = js.undefined,
-    props: js.Any = null,
-    title: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): ReactComponentConfig = {
+  def apply(component: String, `type`: String): ReactComponentConfig = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClosable)) __obj.updateDynamic("isClosable")(isClosable.get.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactComponentConfig]
   }
+  @scala.inline
+  implicit class ReactComponentConfigOps[Self <: ReactComponentConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponent(value: String): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProps(value: js.Any): Self = this.set("props", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProps: Self = this.set("props", js.undefined)
+  }
+  
 }
 

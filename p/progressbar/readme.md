@@ -12,7 +12,7 @@ A nice wrapper around [TJ Holowaychuck's](https://github.com/visionmedia) [node-
 | Keywords           | progress, progressbar, bar, progress-bar, ticks, tick, status |
 | # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 21587 |
+| # downloads        | 22165 |
 | # stars            | 2 |
 
 ## Links

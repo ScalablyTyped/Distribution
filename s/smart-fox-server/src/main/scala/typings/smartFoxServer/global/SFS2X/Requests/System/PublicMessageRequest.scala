@@ -17,6 +17,7 @@ class PublicMessageRequest protected ()
     */
   def this(message: String) = this()
   def this(message: String, params: js.Object) = this()
+  def this(message: String, params: js.UndefOr[scala.Nothing], targetRoom: SFSRoom) = this()
   def this(message: String, params: js.Object, targetRoom: SFSRoom) = this()
 }
 

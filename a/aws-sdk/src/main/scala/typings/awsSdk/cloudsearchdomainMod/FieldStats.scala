@@ -42,26 +42,54 @@ trait FieldStats extends js.Object {
 
 object FieldStats {
   @scala.inline
-  def apply(
-    count: js.UndefOr[Long] = js.undefined,
-    max: String = null,
-    mean: String = null,
-    min: String = null,
-    missing: js.UndefOr[Long] = js.undefined,
-    stddev: js.UndefOr[Double] = js.undefined,
-    sum: js.UndefOr[Double] = js.undefined,
-    sumOfSquares: js.UndefOr[Double] = js.undefined
-  ): FieldStats = {
+  def apply(): FieldStats = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(missing)) __obj.updateDynamic("missing")(missing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stddev)) __obj.updateDynamic("stddev")(stddev.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sumOfSquares)) __obj.updateDynamic("sumOfSquares")(sumOfSquares.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldStats]
   }
+  @scala.inline
+  implicit class FieldStatsOps[Self <: FieldStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: Long): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMean(value: String): Self = this.set("mean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMean: Self = this.set("mean", js.undefined)
+    @scala.inline
+    def setMin(value: String): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMissing(value: Long): Self = this.set("missing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissing: Self = this.set("missing", js.undefined)
+    @scala.inline
+    def setStddev(value: Double): Self = this.set("stddev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStddev: Self = this.set("stddev", js.undefined)
+    @scala.inline
+    def setSum(value: Double): Self = this.set("sum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSum: Self = this.set("sum", js.undefined)
+    @scala.inline
+    def setSumOfSquares(value: Double): Self = this.set("sumOfSquares", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSumOfSquares: Self = this.set("sumOfSquares", js.undefined)
+  }
+  
 }
 

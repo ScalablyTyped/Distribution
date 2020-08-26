@@ -22,11 +22,36 @@ trait UpdateTagsForResourceMessage extends js.Object {
 
 object UpdateTagsForResourceMessage {
   @scala.inline
-  def apply(ResourceArn: ResourceArn, TagsToAdd: TagList = null, TagsToRemove: TagKeyList = null): UpdateTagsForResourceMessage = {
+  def apply(ResourceArn: ResourceArn): UpdateTagsForResourceMessage = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-    if (TagsToAdd != null) __obj.updateDynamic("TagsToAdd")(TagsToAdd.asInstanceOf[js.Any])
-    if (TagsToRemove != null) __obj.updateDynamic("TagsToRemove")(TagsToRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTagsForResourceMessage]
   }
+  @scala.inline
+  implicit class UpdateTagsForResourceMessageOps[Self <: UpdateTagsForResourceMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceArn(value: ResourceArn): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsToAddVarargs(value: Tag*): Self = this.set("TagsToAdd", js.Array(value :_*))
+    @scala.inline
+    def setTagsToAdd(value: TagList): Self = this.set("TagsToAdd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagsToAdd: Self = this.set("TagsToAdd", js.undefined)
+    @scala.inline
+    def setTagsToRemoveVarargs(value: TagKey*): Self = this.set("TagsToRemove", js.Array(value :_*))
+    @scala.inline
+    def setTagsToRemove(value: TagKeyList): Self = this.set("TagsToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagsToRemove: Self = this.set("TagsToRemove", js.undefined)
+  }
+  
 }
 

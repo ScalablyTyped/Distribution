@@ -7,8 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Perception.Spatial.SpatialStationaryFrameOfReference")
 @js.native
 abstract class SpatialStationaryFrameOfReference ()
-  extends typings.winrtUwp.Windows.Perception.Spatial.SpatialStationaryFrameOfReference {
-  /* CompleteClass */
-  override var coordinateSystem: js.Any = js.native
-}
+  extends typings.winrtUwp.Windows.Perception.Spatial.SpatialStationaryFrameOfReference
 

@@ -17,10 +17,28 @@ trait SchemaDynamicLinkStats extends js.Object {
 
 object SchemaDynamicLinkStats {
   @scala.inline
-  def apply(linkEventStats: js.Array[SchemaDynamicLinkEventStat] = null): SchemaDynamicLinkStats = {
+  def apply(): SchemaDynamicLinkStats = {
     val __obj = js.Dynamic.literal()
-    if (linkEventStats != null) __obj.updateDynamic("linkEventStats")(linkEventStats.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDynamicLinkStats]
   }
+  @scala.inline
+  implicit class SchemaDynamicLinkStatsOps[Self <: SchemaDynamicLinkStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLinkEventStatsVarargs(value: SchemaDynamicLinkEventStat*): Self = this.set("linkEventStats", js.Array(value :_*))
+    @scala.inline
+    def setLinkEventStats(value: js.Array[SchemaDynamicLinkEventStat]): Self = this.set("linkEventStats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkEventStats: Self = this.set("linkEventStats", js.undefined)
+  }
+  
 }
 

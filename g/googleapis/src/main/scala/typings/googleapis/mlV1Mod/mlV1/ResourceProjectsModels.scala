@@ -32,6 +32,7 @@ class ResourceProjectsModels protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGoogleCloudMlV1Model] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudMlV1Model]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1Model] = js.native
   def create(params: ParamsResourceProjectsModelsCreate): GaxiosPromise[SchemaGoogleCloudMlV1Model] = js.native
   def create(
     params: ParamsResourceProjectsModelsCreate,
@@ -64,6 +65,7 @@ class ResourceProjectsModels protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(params: ParamsResourceProjectsModelsDelete): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(
     params: ParamsResourceProjectsModelsDelete,
@@ -96,6 +98,7 @@ class ResourceProjectsModels protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudMlV1Model] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudMlV1Model]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1Model] = js.native
   def get(params: ParamsResourceProjectsModelsGet): GaxiosPromise[SchemaGoogleCloudMlV1Model] = js.native
   def get(
     params: ParamsResourceProjectsModelsGet,
@@ -127,6 +130,7 @@ class ResourceProjectsModels protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaGoogleIamV1Policy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsModelsGetiampolicy): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsModelsGetiampolicy,
@@ -163,6 +167,7 @@ class ResourceProjectsModels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudMlV1ListModelsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudMlV1ListModelsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1ListModelsResponse] = js.native
   def list(params: ParamsResourceProjectsModelsList): GaxiosPromise[SchemaGoogleCloudMlV1ListModelsResponse] = js.native
   def list(
     params: ParamsResourceProjectsModelsList,
@@ -196,6 +201,7 @@ class ResourceProjectsModels protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(params: ParamsResourceProjectsModelsPatch): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(
     params: ParamsResourceProjectsModelsPatch,
@@ -228,6 +234,7 @@ class ResourceProjectsModels protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaGoogleIamV1Policy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsModelsSetiampolicy): GaxiosPromise[SchemaGoogleIamV1Policy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsModelsSetiampolicy,
@@ -263,6 +270,7 @@ class ResourceProjectsModels protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaGoogleIamV1TestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaGoogleIamV1TestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleIamV1TestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsModelsTestiampermissions): GaxiosPromise[SchemaGoogleIamV1TestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsModelsTestiampermissions,

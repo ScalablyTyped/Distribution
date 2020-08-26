@@ -47,10 +47,9 @@ trait Action extends js.Object
 
 object Action {
   @scala.inline
-  def GetAction(`type`: GET, key: String = null): Action = {
+  def GetAction(`type`: GET): Action = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
   @scala.inline

@@ -52,6 +52,7 @@ class Network_ () extends js.Object {
     */
   def outputs(): Double = js.native
   def project(otherNetwork: Layer): LayerConnection = js.native
+  def project(otherNetwork: Layer, connectionType: js.UndefOr[scala.Nothing], weights: js.Any): LayerConnection = js.native
   def project(otherNetwork: Layer, connectionType: connectionType): LayerConnection = js.native
   def project(otherNetwork: Layer, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
   /**
@@ -59,6 +60,7 @@ class Network_ () extends js.Object {
     * @param [connectionType=Layer.connectionType.ALL_TO_ALL]
     */
   def project(otherNetwork: Network): LayerConnection = js.native
+  def project(otherNetwork: Network, connectionType: js.UndefOr[scala.Nothing], weights: js.Any): LayerConnection = js.native
   def project(otherNetwork: Network, connectionType: connectionType): LayerConnection = js.native
   def project(otherNetwork: Network, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
   /**
@@ -100,7 +102,11 @@ class Network_ () extends js.Object {
     * @returns Return a HTML5 WebWorker specialized on training the network stored in `memory`. Train based on the given dataSet and options. The worker returns the updated `memory` when done.
     */
   def worker(): Worker = js.native
+  def worker(memory: js.UndefOr[scala.Nothing], set: js.UndefOr[scala.Nothing], options: js.Any): Worker = js.native
+  def worker(memory: js.UndefOr[scala.Nothing], set: js.Any): Worker = js.native
+  def worker(memory: js.UndefOr[scala.Nothing], set: js.Any, options: js.Any): Worker = js.native
   def worker(memory: js.Any): Worker = js.native
+  def worker(memory: js.Any, set: js.UndefOr[scala.Nothing], options: js.Any): Worker = js.native
   def worker(memory: js.Any, set: js.Any): Worker = js.native
   def worker(memory: js.Any, set: js.Any, options: js.Any): Worker = js.native
 }

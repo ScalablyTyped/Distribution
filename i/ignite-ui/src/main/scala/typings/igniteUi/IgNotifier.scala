@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgNotifier
   extends /**
   * Option for JSONPDataSourceSettings
@@ -15,17 +16,17 @@ trait IgNotifier
     * Allows setting the respective state CSS on the target element (used to apply border color by default)
     *
     */
-  var allowCSSOnTarget: js.UndefOr[Boolean] = js.undefined
+  var allowCSSOnTarget: js.UndefOr[Boolean] = js.native
   /**
     * Gets/Sets the time in milliseconds the notification fades in and out when showing/hiding
     *
     */
-  var animationDuration: js.UndefOr[Double] = js.undefined
+  var animationDuration: js.UndefOr[Double] = js.native
   /**
     * Gets/Sets the distance in pixels a notification popover slides outwards as it's shown.
     *
     */
-  var animationSlideDistance: js.UndefOr[Double] = js.undefined
+  var animationSlideDistance: js.UndefOr[Double] = js.native
   /**
     * Controls where the popover DOM should be attached to (only applies to popovers).
     *
@@ -34,17 +35,17 @@ trait IgNotifier
     * "string" A valid jQuery selector for the element
     * "object" A reference to the parent jQuery object
     */
-  var appendTo: js.UndefOr[String | js.Object] = js.undefined
+  var appendTo: js.UndefOr[String | js.Object] = js.native
   /**
     * Controls whether the popover will close on blur or not. This option has effect only when the corresponding [showOn](ui.ignotifier#options:showOn) is set (manual by default)
     *
     */
-  var closeOnBlur: js.UndefOr[Boolean] = js.undefined
+  var closeOnBlur: js.UndefOr[Boolean] = js.native
   /**
     * Sets the containment for the popover. Accepts a jQuery object
     *
     */
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var containment: js.UndefOr[js.Any] = js.native
   /**
     * Gets/Sets the content for the popover container. Templated with parameters by default: {0} - icon container class, {1} - the icon class and {2} - message text.
     *
@@ -53,7 +54,7 @@ trait IgNotifier
     * "string" String content of the popover container
     * "function" Function which is a callback that should return the content. Use the 'this' value to access the target DOM element and passed argument for state value. Result can also include the same template parametes.
     */
-  var contentTemplate: js.UndefOr[String | js.Function] = js.undefined
+  var contentTemplate: js.UndefOr[String | js.Function] = js.native
   /**
     * controls the direction in which the control shows relative to the target element
     *
@@ -65,46 +66,46 @@ trait IgNotifier
     * "top" shows popover on the top of the target element
     * "bottom" shows popover on the bottom of the target element
     */
-  var direction: js.UndefOr[String] = js.undefined
+  var direction: js.UndefOr[String] = js.native
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  var directionPriority: js.UndefOr[js.Array[_]] = js.undefined
+  var directionPriority: js.UndefOr[js.Array[_]] = js.native
   /**
     * Sets the content for the popover header
     *
     */
-  var headerTemplate: js.UndefOr[IgNotifierHeaderTemplate] = js.undefined
+  var headerTemplate: js.UndefOr[IgNotifierHeaderTemplate] = js.native
   /**
     * defines height for the popover. leave null for auto
     *
     */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.native
   /**
     * Event fired after popover is hidden.
     */
-  var hidden: js.UndefOr[HiddenEvent] = js.undefined
+  var hidden: js.UndefOr[HiddenEvent] = js.native
   /**
     * Event fired before popover is hidden.
     */
-  var hiding: js.UndefOr[HidingEvent] = js.undefined
+  var hiding: js.UndefOr[HidingEvent] = js.native
   /**
     * defines height the popover won't exceed even if no specific one is set.
     *
     */
-  var maxHeight: js.UndefOr[Double | String] = js.undefined
+  var maxHeight: js.UndefOr[Double | String] = js.native
   /**
     * defines width the popover won't exceed even if no specific one is set.
     *
     */
-  var maxWidth: js.UndefOr[Double | String] = js.undefined
+  var maxWidth: js.UndefOr[Double | String] = js.native
   /**
     * defines width the popover won't go under the value even if no specific one is set.
     *
     */
-  var minWidth: js.UndefOr[Double | String] = js.undefined
+  var minWidth: js.UndefOr[Double | String] = js.native
   /**
     * Controls the positioning mode of messages. Setting a mode will override the default behavior which is auto.Note: Inline element uses a block container as is always placed after the target.
     *
@@ -114,7 +115,7 @@ trait IgNotifier
     * "popover" Displays messages in a configurable popover.
     * "inline" Displays messages in a simplified notification text under the target.
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[String] = js.native
   /**
     * Controls the level of notifications shown by automatic and manual messages using the [notify](ui.ignotifier#methods:notify) method. Use [show](ui.ignotifier#methods:show) to ignore the level.
     *
@@ -125,7 +126,7 @@ trait IgNotifier
     * "warning" Show everything from warning level messages up
     * "error" Show only error messages
     */
-  var notifyLevel: js.UndefOr[String] = js.undefined
+  var notifyLevel: js.UndefOr[String] = js.native
   /**
     * controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area
     *
@@ -136,16 +137,16 @@ trait IgNotifier
     * "start" the popover is positioned at the beginning of the target element
     * "end" the popover is positioned at the end of the target element
     */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /**
     * Selectors indicating which items should show popovers.
     */
-  var selectors: js.UndefOr[String] = js.undefined
+  var selectors: js.UndefOr[String] = js.native
   /**
     * Allows rendering a span with the respective state CSS to display jQuery UI framework icons
     *
     */
-  var showIcon: js.UndefOr[Boolean] = js.undefined
+  var showIcon: js.UndefOr[Boolean] = js.native
   /**
     * Sets the event on which the notification will be shown. Predefined values are "mouseenter", "click" and "focus"
     *
@@ -156,15 +157,15 @@ trait IgNotifier
     * "focus" The popover is shown on focusing the target element
     * "manual" The popover is shown manually
     */
-  var showOn: js.UndefOr[String] = js.undefined
+  var showOn: js.UndefOr[String] = js.native
   /**
     * Event fired before popover is shown.
     */
-  var showing: js.UndefOr[ShowingEvent] = js.undefined
+  var showing: js.UndefOr[ShowingEvent] = js.native
   /**
     * Event fired after popover is shown.
     */
-  var shown: js.UndefOr[ShownEvent] = js.undefined
+  var shown: js.UndefOr[ShownEvent] = js.native
   /**
     * Gets/Sets the current state of the igNotifier messages. State controls what CSS classes are applied to the messages and target and has interactions with other options as well.
     *
@@ -175,74 +176,138 @@ trait IgNotifier
     * "warning" Messages and target CSS have warning styles applied.
     * "error" Messages and target CSS have error styles applied.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String] = js.native
   /**
     * defines width for the popover. leave null for auto.
     *
     */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object IgNotifier {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    allowCSSOnTarget: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationSlideDistance: js.UndefOr[Double] = js.undefined,
-    appendTo: String | js.Object = null,
-    closeOnBlur: js.UndefOr[Boolean] = js.undefined,
-    containment: js.Any = null,
-    contentTemplate: String | js.Function = null,
-    direction: String = null,
-    directionPriority: js.Array[_] = null,
-    headerTemplate: IgNotifierHeaderTemplate = null,
-    height: Double | String = null,
-    hidden: (/* event */ Event, /* ui */ HiddenEventUIParam) => Unit = null,
-    hiding: (/* event */ Event, /* ui */ HidingEventUIParam) => Unit = null,
-    maxHeight: Double | String = null,
-    maxWidth: Double | String = null,
-    minWidth: Double | String = null,
-    mode: String = null,
-    notifyLevel: String = null,
-    position: String = null,
-    selectors: String = null,
-    showIcon: js.UndefOr[Boolean] = js.undefined,
-    showOn: String = null,
-    showing: (/* event */ Event, /* ui */ ShowingEventUIParam) => Unit = null,
-    shown: (/* event */ Event, /* ui */ ShownEventUIParam) => Unit = null,
-    state: String = null,
-    width: Double | String = null
-  ): IgNotifier = {
+  def apply(): IgNotifier = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowCSSOnTarget)) __obj.updateDynamic("allowCSSOnTarget")(allowCSSOnTarget.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationSlideDistance)) __obj.updateDynamic("animationSlideDistance")(animationSlideDistance.get.asInstanceOf[js.Any])
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur.get.asInstanceOf[js.Any])
-    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (directionPriority != null) __obj.updateDynamic("directionPriority")(directionPriority.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hidden != null) __obj.updateDynamic("hidden")(js.Any.fromFunction2(hidden))
-    if (hiding != null) __obj.updateDynamic("hiding")(js.Any.fromFunction2(hiding))
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (notifyLevel != null) __obj.updateDynamic("notifyLevel")(notifyLevel.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    if (showing != null) __obj.updateDynamic("showing")(js.Any.fromFunction2(showing))
-    if (shown != null) __obj.updateDynamic("shown")(js.Any.fromFunction2(shown))
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgNotifier]
   }
+  @scala.inline
+  implicit class IgNotifierOps[Self <: IgNotifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowCSSOnTarget(value: Boolean): Self = this.set("allowCSSOnTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCSSOnTarget: Self = this.set("allowCSSOnTarget", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationSlideDistance(value: Double): Self = this.set("animationSlideDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationSlideDistance: Self = this.set("animationSlideDistance", js.undefined)
+    @scala.inline
+    def setAppendTo(value: String | js.Object): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setCloseOnBlur(value: Boolean): Self = this.set("closeOnBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnBlur: Self = this.set("closeOnBlur", js.undefined)
+    @scala.inline
+    def setContainment(value: js.Any): Self = this.set("containment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainment: Self = this.set("containment", js.undefined)
+    @scala.inline
+    def setContentTemplate(value: String | js.Function): Self = this.set("contentTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentTemplate: Self = this.set("contentTemplate", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDirectionPriorityVarargs(value: js.Any*): Self = this.set("directionPriority", js.Array(value :_*))
+    @scala.inline
+    def setDirectionPriority(value: js.Array[_]): Self = this.set("directionPriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectionPriority: Self = this.set("directionPriority", js.undefined)
+    @scala.inline
+    def setHeaderTemplate(value: IgNotifierHeaderTemplate): Self = this.set("headerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderTemplate: Self = this.set("headerTemplate", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHidden(value: (/* event */ Event, /* ui */ HiddenEventUIParam) => Unit): Self = this.set("hidden", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHiding(value: (/* event */ Event, /* ui */ HidingEventUIParam) => Unit): Self = this.set("hiding", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHiding: Self = this.set("hiding", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double | String): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double | String): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double | String): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setNotifyLevel(value: String): Self = this.set("notifyLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifyLevel: Self = this.set("notifyLevel", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSelectors(value: String): Self = this.set("selectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectors: Self = this.set("selectors", js.undefined)
+    @scala.inline
+    def setShowIcon(value: Boolean): Self = this.set("showIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIcon: Self = this.set("showIcon", js.undefined)
+    @scala.inline
+    def setShowOn(value: String): Self = this.set("showOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOn: Self = this.set("showOn", js.undefined)
+    @scala.inline
+    def setShowing(value: (/* event */ Event, /* ui */ ShowingEventUIParam) => Unit): Self = this.set("showing", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteShowing: Self = this.set("showing", js.undefined)
+    @scala.inline
+    def setShown(value: (/* event */ Event, /* ui */ ShownEventUIParam) => Unit): Self = this.set("shown", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteShown: Self = this.set("shown", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

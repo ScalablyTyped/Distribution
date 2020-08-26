@@ -21,7 +21,7 @@ object mod extends js.Object {
     def getActions(): js.Array[_] = js.native
   }
   
-  /* Inlined redux-mock-store.redux-mock-store.MockStore<S, redux.redux.AnyAction> & {  dispatch  :DispatchExts} */
+  /* Inlined redux-mock-store.redux-mock-store.MockStore<S, redux.redux.AnyAction> & {  dispatch :DispatchExts} */
   @js.native
   trait MockStoreEnhanced[S, DispatchExts] extends js.Object {
     /**

@@ -102,56 +102,120 @@ trait ReplicationInstance extends js.Object {
 
 object ReplicationInstance {
   @scala.inline
-  def apply(
-    AllocatedStorage: js.UndefOr[Integer] = js.undefined,
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    AvailabilityZone: String = null,
-    DnsNameServers: String = null,
-    EngineVersion: String = null,
-    FreeUntil: TStamp = null,
-    InstanceCreateTime: TStamp = null,
-    KmsKeyId: String = null,
-    MultiAZ: js.UndefOr[Boolean] = js.undefined,
-    PendingModifiedValues: ReplicationPendingModifiedValues = null,
-    PreferredMaintenanceWindow: String = null,
-    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
-    ReplicationInstanceArn: String = null,
-    ReplicationInstanceClass: String = null,
-    ReplicationInstanceIdentifier: String = null,
-    ReplicationInstancePrivateIpAddress: String = null,
-    ReplicationInstancePrivateIpAddresses: ReplicationInstancePrivateIpAddressList = null,
-    ReplicationInstancePublicIpAddress: String = null,
-    ReplicationInstancePublicIpAddresses: ReplicationInstancePublicIpAddressList = null,
-    ReplicationInstanceStatus: String = null,
-    ReplicationSubnetGroup: ReplicationSubnetGroup = null,
-    SecondaryAvailabilityZone: String = null,
-    VpcSecurityGroups: VpcSecurityGroupMembershipList = null
-  ): ReplicationInstance = {
+  def apply(): ReplicationInstance = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (DnsNameServers != null) __obj.updateDynamic("DnsNameServers")(DnsNameServers.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (FreeUntil != null) __obj.updateDynamic("FreeUntil")(FreeUntil.asInstanceOf[js.Any])
-    if (InstanceCreateTime != null) __obj.updateDynamic("InstanceCreateTime")(InstanceCreateTime.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.get.asInstanceOf[js.Any])
-    if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
-    if (ReplicationInstanceArn != null) __obj.updateDynamic("ReplicationInstanceArn")(ReplicationInstanceArn.asInstanceOf[js.Any])
-    if (ReplicationInstanceClass != null) __obj.updateDynamic("ReplicationInstanceClass")(ReplicationInstanceClass.asInstanceOf[js.Any])
-    if (ReplicationInstanceIdentifier != null) __obj.updateDynamic("ReplicationInstanceIdentifier")(ReplicationInstanceIdentifier.asInstanceOf[js.Any])
-    if (ReplicationInstancePrivateIpAddress != null) __obj.updateDynamic("ReplicationInstancePrivateIpAddress")(ReplicationInstancePrivateIpAddress.asInstanceOf[js.Any])
-    if (ReplicationInstancePrivateIpAddresses != null) __obj.updateDynamic("ReplicationInstancePrivateIpAddresses")(ReplicationInstancePrivateIpAddresses.asInstanceOf[js.Any])
-    if (ReplicationInstancePublicIpAddress != null) __obj.updateDynamic("ReplicationInstancePublicIpAddress")(ReplicationInstancePublicIpAddress.asInstanceOf[js.Any])
-    if (ReplicationInstancePublicIpAddresses != null) __obj.updateDynamic("ReplicationInstancePublicIpAddresses")(ReplicationInstancePublicIpAddresses.asInstanceOf[js.Any])
-    if (ReplicationInstanceStatus != null) __obj.updateDynamic("ReplicationInstanceStatus")(ReplicationInstanceStatus.asInstanceOf[js.Any])
-    if (ReplicationSubnetGroup != null) __obj.updateDynamic("ReplicationSubnetGroup")(ReplicationSubnetGroup.asInstanceOf[js.Any])
-    if (SecondaryAvailabilityZone != null) __obj.updateDynamic("SecondaryAvailabilityZone")(SecondaryAvailabilityZone.asInstanceOf[js.Any])
-    if (VpcSecurityGroups != null) __obj.updateDynamic("VpcSecurityGroups")(VpcSecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationInstance]
   }
+  @scala.inline
+  implicit class ReplicationInstanceOps[Self <: ReplicationInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocatedStorage(value: Integer): Self = this.set("AllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedStorage: Self = this.set("AllocatedStorage", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: Boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setDnsNameServers(value: String): Self = this.set("DnsNameServers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsNameServers: Self = this.set("DnsNameServers", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setFreeUntil(value: TStamp): Self = this.set("FreeUntil", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFreeUntil: Self = this.set("FreeUntil", js.undefined)
+    @scala.inline
+    def setInstanceCreateTime(value: TStamp): Self = this.set("InstanceCreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCreateTime: Self = this.set("InstanceCreateTime", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setMultiAZ(value: Boolean): Self = this.set("MultiAZ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiAZ: Self = this.set("MultiAZ", js.undefined)
+    @scala.inline
+    def setPendingModifiedValues(value: ReplicationPendingModifiedValues): Self = this.set("PendingModifiedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingModifiedValues: Self = this.set("PendingModifiedValues", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: Boolean): Self = this.set("PubliclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("PubliclyAccessible", js.undefined)
+    @scala.inline
+    def setReplicationInstanceArn(value: String): Self = this.set("ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceArn: Self = this.set("ReplicationInstanceArn", js.undefined)
+    @scala.inline
+    def setReplicationInstanceClass(value: String): Self = this.set("ReplicationInstanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceClass: Self = this.set("ReplicationInstanceClass", js.undefined)
+    @scala.inline
+    def setReplicationInstanceIdentifier(value: String): Self = this.set("ReplicationInstanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceIdentifier: Self = this.set("ReplicationInstanceIdentifier", js.undefined)
+    @scala.inline
+    def setReplicationInstancePrivateIpAddress(value: String): Self = this.set("ReplicationInstancePrivateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstancePrivateIpAddress: Self = this.set("ReplicationInstancePrivateIpAddress", js.undefined)
+    @scala.inline
+    def setReplicationInstancePrivateIpAddressesVarargs(value: String*): Self = this.set("ReplicationInstancePrivateIpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setReplicationInstancePrivateIpAddresses(value: ReplicationInstancePrivateIpAddressList): Self = this.set("ReplicationInstancePrivateIpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstancePrivateIpAddresses: Self = this.set("ReplicationInstancePrivateIpAddresses", js.undefined)
+    @scala.inline
+    def setReplicationInstancePublicIpAddress(value: String): Self = this.set("ReplicationInstancePublicIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstancePublicIpAddress: Self = this.set("ReplicationInstancePublicIpAddress", js.undefined)
+    @scala.inline
+    def setReplicationInstancePublicIpAddressesVarargs(value: String*): Self = this.set("ReplicationInstancePublicIpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setReplicationInstancePublicIpAddresses(value: ReplicationInstancePublicIpAddressList): Self = this.set("ReplicationInstancePublicIpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstancePublicIpAddresses: Self = this.set("ReplicationInstancePublicIpAddresses", js.undefined)
+    @scala.inline
+    def setReplicationInstanceStatus(value: String): Self = this.set("ReplicationInstanceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceStatus: Self = this.set("ReplicationInstanceStatus", js.undefined)
+    @scala.inline
+    def setReplicationSubnetGroup(value: ReplicationSubnetGroup): Self = this.set("ReplicationSubnetGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationSubnetGroup: Self = this.set("ReplicationSubnetGroup", js.undefined)
+    @scala.inline
+    def setSecondaryAvailabilityZone(value: String): Self = this.set("SecondaryAvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryAvailabilityZone: Self = this.set("SecondaryAvailabilityZone", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = this.set("VpcSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroups(value: VpcSecurityGroupMembershipList): Self = this.set("VpcSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroups: Self = this.set("VpcSecurityGroups", js.undefined)
+  }
+  
 }
 

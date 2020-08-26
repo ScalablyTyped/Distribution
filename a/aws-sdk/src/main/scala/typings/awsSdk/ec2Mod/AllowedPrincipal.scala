@@ -18,11 +18,30 @@ trait AllowedPrincipal extends js.Object {
 
 object AllowedPrincipal {
   @scala.inline
-  def apply(Principal: String = null, PrincipalType: PrincipalType = null): AllowedPrincipal = {
+  def apply(): AllowedPrincipal = {
     val __obj = js.Dynamic.literal()
-    if (Principal != null) __obj.updateDynamic("Principal")(Principal.asInstanceOf[js.Any])
-    if (PrincipalType != null) __obj.updateDynamic("PrincipalType")(PrincipalType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowedPrincipal]
   }
+  @scala.inline
+  implicit class AllowedPrincipalOps[Self <: AllowedPrincipal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrincipal(value: String): Self = this.set("Principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("Principal", js.undefined)
+    @scala.inline
+    def setPrincipalType(value: PrincipalType): Self = this.set("PrincipalType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalType: Self = this.set("PrincipalType", js.undefined)
+  }
+  
 }
 

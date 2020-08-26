@@ -27,12 +27,34 @@ trait JourneySchedule extends js.Object {
 
 object JourneySchedule {
   @scala.inline
-  def apply(EndTime: timestampIso8601 = null, StartTime: timestampIso8601 = null, Timezone: string = null): JourneySchedule = {
+  def apply(): JourneySchedule = {
     val __obj = js.Dynamic.literal()
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[JourneySchedule]
   }
+  @scala.inline
+  implicit class JourneyScheduleOps[Self <: JourneySchedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: timestampIso8601): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setStartTime(value: timestampIso8601): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setTimezone(value: string): Self = this.set("Timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+  }
+  
 }
 

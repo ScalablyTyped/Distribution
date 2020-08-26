@@ -30,18 +30,40 @@ trait SchemaListFindingsResponse extends js.Object {
 
 object SchemaListFindingsResponse {
   @scala.inline
-  def apply(
-    findings: js.Array[SchemaFinding] = null,
-    nextPageToken: String = null,
-    readTime: String = null,
-    totalSize: js.UndefOr[Double] = js.undefined
-  ): SchemaListFindingsResponse = {
+  def apply(): SchemaListFindingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (findings != null) __obj.updateDynamic("findings")(findings.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalSize)) __obj.updateDynamic("totalSize")(totalSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListFindingsResponse]
   }
+  @scala.inline
+  implicit class SchemaListFindingsResponseOps[Self <: SchemaListFindingsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFindingsVarargs(value: SchemaFinding*): Self = this.set("findings", js.Array(value :_*))
+    @scala.inline
+    def setFindings(value: js.Array[SchemaFinding]): Self = this.set("findings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindings: Self = this.set("findings", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    @scala.inline
+    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+  }
+  
 }
 

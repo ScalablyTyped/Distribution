@@ -62,7 +62,23 @@ object default extends js.Object {
     * @param downloadProgressCallback An optional callback that allows tracking the progress of an update while it is being downloaded.
     */
   def sync(): js.Promise[SyncStatus] = js.native
+  def sync(
+    options: js.UndefOr[scala.Nothing],
+    syncStatusChangedCallback: js.UndefOr[scala.Nothing],
+    downloadProgressCallback: DownloadProgressCallback
+  ): js.Promise[SyncStatus] = js.native
+  def sync(options: js.UndefOr[scala.Nothing], syncStatusChangedCallback: SyncStatusChangedCallback): js.Promise[SyncStatus] = js.native
+  def sync(
+    options: js.UndefOr[scala.Nothing],
+    syncStatusChangedCallback: SyncStatusChangedCallback,
+    downloadProgressCallback: DownloadProgressCallback
+  ): js.Promise[SyncStatus] = js.native
   def sync(options: SyncOptions): js.Promise[SyncStatus] = js.native
+  def sync(
+    options: SyncOptions,
+    syncStatusChangedCallback: js.UndefOr[scala.Nothing],
+    downloadProgressCallback: DownloadProgressCallback
+  ): js.Promise[SyncStatus] = js.native
   def sync(options: SyncOptions, syncStatusChangedCallback: SyncStatusChangedCallback): js.Promise[SyncStatus] = js.native
   def sync(
     options: SyncOptions,

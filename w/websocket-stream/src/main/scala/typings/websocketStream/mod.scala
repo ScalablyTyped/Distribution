@@ -63,7 +63,7 @@ object mod extends js.Object {
     ): this.type = js.native
   }
   
-  /* Inlined node.stream.Duplex & {  socket  :ws.ws.^} */
+  /* Inlined node.stream.Duplex & {  socket :ws.ws.^} */
   @js.native
   trait WebSocketDuplex extends js.Object {
     var _writev: js.UndefOr[
@@ -77,6 +77,7 @@ object mod extends js.Object {
     var readable: Boolean = js.native
     val readableEncoding: BufferEncoding | Null = js.native
     val readableEnded: Boolean = js.native
+    val readableFlowing: Boolean | Null = js.native
     val readableHighWaterMark: Double = js.native
     val readableLength: Double = js.native
     val readableObjectMode: Boolean = js.native
@@ -162,12 +163,14 @@ object mod extends js.Object {
     def end(cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any): Unit = js.native
     def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     def end(data: String): Unit = js.native
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     def eventNames(): js.Array[String | js.Symbol] = js.native
@@ -335,11 +338,21 @@ object mod extends js.Object {
     def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: js.Any): Boolean = js.native
     def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
+    def write(
+      chunk: js.Any,
+      encoding: js.UndefOr[scala.Nothing],
+      cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Boolean = js.native
     def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
     def write(
       chunk: js.Any,
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+    ): Boolean = js.native
+    def write(
+      str: String,
+      encoding: js.UndefOr[scala.Nothing],
+      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
@@ -347,17 +360,20 @@ object mod extends js.Object {
   
   def apply(target: String): WebSocketDuplex = js.native
   def apply(target: String, options: ClientOptions): WebSocketDuplex = js.native
+  def apply(target: String, protocols: js.UndefOr[scala.Nothing], options: ClientOptions): WebSocketDuplex = js.native
   def apply(target: String, protocols: String): WebSocketDuplex = js.native
   def apply(target: String, protocols: String, options: ClientOptions): WebSocketDuplex = js.native
   def apply(target: String, protocols: js.Array[String]): WebSocketDuplex = js.native
   def apply(target: String, protocols: js.Array[String], options: ClientOptions): WebSocketDuplex = js.native
   def apply(target: ^): WebSocketDuplex = js.native
   def apply(target: ^, options: ClientOptions): WebSocketDuplex = js.native
+  def apply(target: ^, protocols: js.UndefOr[scala.Nothing], options: ClientOptions): WebSocketDuplex = js.native
   def apply(target: ^, protocols: String): WebSocketDuplex = js.native
   def apply(target: ^, protocols: String, options: ClientOptions): WebSocketDuplex = js.native
   def apply(target: ^, protocols: js.Array[String]): WebSocketDuplex = js.native
   def apply(target: ^, protocols: js.Array[String], options: ClientOptions): WebSocketDuplex = js.native
   def createServer(): Server = js.native
+  def createServer(opts: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Server = js.native
   def createServer(opts: ServerOptions): Server = js.native
   def createServer(opts: ServerOptions, callback: js.Function0[Unit]): Server = js.native
 }

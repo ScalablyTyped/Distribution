@@ -45,7 +45,26 @@ class HtmlBehaviorResource () extends js.Object {
     * @return The Controller of this behavior.
     */
   def create(container: Container): Controller = js.native
+  def create(
+    container: Container,
+    instruction: js.UndefOr[scala.Nothing],
+    element: js.UndefOr[scala.Nothing],
+    bindings: js.Array[Binding]
+  ): Controller = js.native
+  def create(container: Container, instruction: js.UndefOr[scala.Nothing], element: Element): Controller = js.native
+  def create(
+    container: Container,
+    instruction: js.UndefOr[scala.Nothing],
+    element: Element,
+    bindings: js.Array[Binding]
+  ): Controller = js.native
   def create(container: Container, instruction: BehaviorInstruction): Controller = js.native
+  def create(
+    container: Container,
+    instruction: BehaviorInstruction,
+    element: js.UndefOr[scala.Nothing],
+    bindings: js.Array[Binding]
+  ): Controller = js.native
   def create(container: Container, instruction: BehaviorInstruction, element: Element): Controller = js.native
   def create(
     container: Container,
@@ -71,7 +90,34 @@ class HtmlBehaviorResource () extends js.Object {
     * permanently tied to this component.
     */
   def load(container: Container, target: js.Function): js.Promise[HtmlBehaviorResource] = js.native
+  def load(
+    container: Container,
+    target: js.Function,
+    loadContext: js.UndefOr[scala.Nothing],
+    viewStrategy: js.UndefOr[scala.Nothing],
+    transientView: Boolean
+  ): js.Promise[HtmlBehaviorResource] = js.native
+  def load(
+    container: Container,
+    target: js.Function,
+    loadContext: js.UndefOr[scala.Nothing],
+    viewStrategy: ViewStrategy_
+  ): js.Promise[HtmlBehaviorResource] = js.native
+  def load(
+    container: Container,
+    target: js.Function,
+    loadContext: js.UndefOr[scala.Nothing],
+    viewStrategy: ViewStrategy_,
+    transientView: Boolean
+  ): js.Promise[HtmlBehaviorResource] = js.native
   def load(container: Container, target: js.Function, loadContext: ResourceLoadContext): js.Promise[HtmlBehaviorResource] = js.native
+  def load(
+    container: Container,
+    target: js.Function,
+    loadContext: ResourceLoadContext,
+    viewStrategy: js.UndefOr[scala.Nothing],
+    transientView: Boolean
+  ): js.Promise[HtmlBehaviorResource] = js.native
   def load(
     container: Container,
     target: js.Function,

@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.TableConditionalFormat
   * @see com.sun.star.sheet.TableConditionalEntry
   */
+@js.native
 trait XSheetConditionalEntries extends XIndexAccess {
   /**
     * adds a conditional entry to the format.
@@ -31,11 +32,11 @@ trait XSheetConditionalEntries extends XIndexAccess {
     * **string StyleName **: contains the name of the cell style used by this condition.
     * @see com.sun.star.sheet.TableConditionalFormat
     */
-  def addNew(aConditionalEntry: SeqEquiv[PropertyValue]): Unit
+  def addNew(aConditionalEntry: SeqEquiv[PropertyValue]): Unit = js.native
   /** clears all condition entries. */
-  def clear(): Unit
+  def clear(): Unit = js.native
   /** removes a conditional entry from the format. */
-  def removeByIndex(nIndex: Double): Unit
+  def removeByIndex(nIndex: Double): Unit = js.native
 }
 
 object XSheetConditionalEntries {
@@ -57,5 +58,24 @@ object XSheetConditionalEntries {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addNew = js.Any.fromFunction1(addNew), clear = js.Any.fromFunction0(clear), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex))
     __obj.asInstanceOf[XSheetConditionalEntries]
   }
+  @scala.inline
+  implicit class XSheetConditionalEntriesOps[Self <: XSheetConditionalEntries] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddNew(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("addNew", js.Any.fromFunction1(value))
+    @scala.inline
+    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRemoveByIndex(value: Double => Unit): Self = this.set("removeByIndex", js.Any.fromFunction1(value))
+  }
+  
 }
 

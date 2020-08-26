@@ -12,7 +12,7 @@ Format a link header object, to the original RFC 5988
 | Keywords           | format-link-header, web, links, header, links |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 67477 |
+| # downloads        | 74186 |
 | # stars            | 0 |
 
 ## Links

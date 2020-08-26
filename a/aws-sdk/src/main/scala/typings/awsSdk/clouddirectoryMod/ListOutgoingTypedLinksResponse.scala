@@ -18,11 +18,32 @@ trait ListOutgoingTypedLinksResponse extends js.Object {
 
 object ListOutgoingTypedLinksResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, TypedLinkSpecifiers: TypedLinkSpecifierList = null): ListOutgoingTypedLinksResponse = {
+  def apply(): ListOutgoingTypedLinksResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TypedLinkSpecifiers != null) __obj.updateDynamic("TypedLinkSpecifiers")(TypedLinkSpecifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOutgoingTypedLinksResponse]
   }
+  @scala.inline
+  implicit class ListOutgoingTypedLinksResponseOps[Self <: ListOutgoingTypedLinksResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTypedLinkSpecifiersVarargs(value: TypedLinkSpecifier*): Self = this.set("TypedLinkSpecifiers", js.Array(value :_*))
+    @scala.inline
+    def setTypedLinkSpecifiers(value: TypedLinkSpecifierList): Self = this.set("TypedLinkSpecifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypedLinkSpecifiers: Self = this.set("TypedLinkSpecifiers", js.undefined)
+  }
+  
 }
 

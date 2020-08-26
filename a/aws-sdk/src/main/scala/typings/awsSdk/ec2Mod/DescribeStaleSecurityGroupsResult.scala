@@ -18,11 +18,32 @@ trait DescribeStaleSecurityGroupsResult extends js.Object {
 
 object DescribeStaleSecurityGroupsResult {
   @scala.inline
-  def apply(NextToken: String = null, StaleSecurityGroupSet: StaleSecurityGroupSet = null): DescribeStaleSecurityGroupsResult = {
+  def apply(): DescribeStaleSecurityGroupsResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StaleSecurityGroupSet != null) __obj.updateDynamic("StaleSecurityGroupSet")(StaleSecurityGroupSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStaleSecurityGroupsResult]
   }
+  @scala.inline
+  implicit class DescribeStaleSecurityGroupsResultOps[Self <: DescribeStaleSecurityGroupsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStaleSecurityGroupSetVarargs(value: StaleSecurityGroup*): Self = this.set("StaleSecurityGroupSet", js.Array(value :_*))
+    @scala.inline
+    def setStaleSecurityGroupSet(value: StaleSecurityGroupSet): Self = this.set("StaleSecurityGroupSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaleSecurityGroupSet: Self = this.set("StaleSecurityGroupSet", js.undefined)
+  }
+  
 }
 

@@ -18,8 +18,8 @@ trait XrLightEstimation extends EventHandler {
     * True if estimated light information is available.
     * @example
     * if (app.xr.lightEstimation.available) {
-    entity.light.intensity = app.xr.lightEstimation.intensity;
-    }
+    *     entity.light.intensity = app.xr.lightEstimation.intensity;
+    * }
     */
   var available: Boolean = js.native
   /**
@@ -44,14 +44,14 @@ trait XrLightEstimation extends EventHandler {
   def end(): Unit = js.native
   /**
     * Start estimation of illimunation data.
-    Availability of such data will come later and an `available` event will be fired.
-    If it failed to start estimation, an `error` event will be fired.
+    * Availability of such data will come later and an `available` event will be fired.
+    * If it failed to start estimation, an `error` event will be fired.
     * @example
     * app.xr.on('start', function () {
-    if (app.xr.lightEstimation.supported) {
-    app.xr.lightEstimation.start();
-    }
-    });
+    *     if (app.xr.lightEstimation.supported) {
+    *         app.xr.lightEstimation.start();
+    *     }
+    * });
     */
   def start(): Unit = js.native
 }

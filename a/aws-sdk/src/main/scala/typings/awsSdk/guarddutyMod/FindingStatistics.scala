@@ -14,10 +14,26 @@ trait FindingStatistics extends js.Object {
 
 object FindingStatistics {
   @scala.inline
-  def apply(CountBySeverity: CountBySeverity = null): FindingStatistics = {
+  def apply(): FindingStatistics = {
     val __obj = js.Dynamic.literal()
-    if (CountBySeverity != null) __obj.updateDynamic("CountBySeverity")(CountBySeverity.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindingStatistics]
   }
+  @scala.inline
+  implicit class FindingStatisticsOps[Self <: FindingStatistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountBySeverity(value: CountBySeverity): Self = this.set("CountBySeverity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountBySeverity: Self = this.set("CountBySeverity", js.undefined)
+  }
+  
 }
 

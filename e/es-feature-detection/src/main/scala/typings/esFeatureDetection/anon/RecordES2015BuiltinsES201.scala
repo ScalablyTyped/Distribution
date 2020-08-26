@@ -4,133 +4,134 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Record<es-feature-detection.es-feature-detection.ES2015Builtins | es-feature-detection.es-feature-detection.ES2016Builtins | es-feature-detection.es-feature-detection.ES2017Builtins, boolean> & {  es2015  :std.Record<es-feature-detection.es-feature-detection.ES2015Builtins, boolean>,   es2016  :std.Record<es-feature-detection.es-feature-detection.ES2016Builtins, boolean>,   es2017  :std.Record<es-feature-detection.es-feature-detection.ES2017Builtins, boolean>} */
+/* Inlined std.Record<es-feature-detection.es-feature-detection.ES2015Builtins | es-feature-detection.es-feature-detection.ES2016Builtins | es-feature-detection.es-feature-detection.ES2017Builtins, boolean> & {  es2015 :std.Record<es-feature-detection.es-feature-detection.ES2015Builtins, boolean>,   es2016 :std.Record<es-feature-detection.es-feature-detection.ES2016Builtins, boolean>,   es2017 :std.Record<es-feature-detection.es-feature-detection.ES2017Builtins, boolean>} */
+@js.native
 trait RecordES2015BuiltinsES201 extends js.Object {
   @JSName("Array.from")
-  var ArrayDotfrom: Boolean
+  var ArrayDotfrom: Boolean = js.native
   @JSName("Array.of")
-  var ArrayDotof: Boolean
+  var ArrayDotof: Boolean = js.native
   @JSName("Array.prototype.copyWithin")
-  var ArrayDotprototypeDotcopyWithin: Boolean
+  var ArrayDotprototypeDotcopyWithin: Boolean = js.native
   @JSName("Array.prototype.entries")
-  var ArrayDotprototypeDotentries: Boolean
+  var ArrayDotprototypeDotentries: Boolean = js.native
   @JSName("Array.prototype.fill")
-  var ArrayDotprototypeDotfill: Boolean
+  var ArrayDotprototypeDotfill: Boolean = js.native
   @JSName("Array.prototype.find")
-  var ArrayDotprototypeDotfind: Boolean
+  var ArrayDotprototypeDotfind: Boolean = js.native
   @JSName("Array.prototype.findIndex")
-  var ArrayDotprototypeDotfindIndex: Boolean
+  var ArrayDotprototypeDotfindIndex: Boolean = js.native
   @JSName("Array.prototype.includes")
-  var ArrayDotprototypeDotincludes: Boolean
+  var ArrayDotprototypeDotincludes: Boolean = js.native
   @JSName("Array.prototype.keys")
-  var ArrayDotprototypeDotkeys: Boolean
-  var Atomics: Boolean
-  var Map: Boolean
+  var ArrayDotprototypeDotkeys: Boolean = js.native
+  var Atomics: Boolean = js.native
+  var Map: Boolean = js.native
   @JSName("Math.acosh")
-  var MathDotacosh: Boolean
+  var MathDotacosh: Boolean = js.native
   @JSName("Math.asinh")
-  var MathDotasinh: Boolean
+  var MathDotasinh: Boolean = js.native
   @JSName("Math.cbrt")
-  var MathDotcbrt: Boolean
+  var MathDotcbrt: Boolean = js.native
   @JSName("Math.clz32")
-  var MathDotclz32: Boolean
+  var MathDotclz32: Boolean = js.native
   @JSName("Math.cosh")
-  var MathDotcosh: Boolean
+  var MathDotcosh: Boolean = js.native
   @JSName("Math.expm1")
-  var MathDotexpm1: Boolean
+  var MathDotexpm1: Boolean = js.native
   @JSName("Math.fround")
-  var MathDotfround: Boolean
+  var MathDotfround: Boolean = js.native
   @JSName("Math.hypot")
-  var MathDothypot: Boolean
+  var MathDothypot: Boolean = js.native
   @JSName("Math.imul")
-  var MathDotimul: Boolean
+  var MathDotimul: Boolean = js.native
   @JSName("Math.log10")
-  var MathDotlog10: Boolean
+  var MathDotlog10: Boolean = js.native
   @JSName("Math.log1p")
-  var MathDotlog1p: Boolean
+  var MathDotlog1p: Boolean = js.native
   @JSName("Math.log2")
-  var MathDotlog2: Boolean
+  var MathDotlog2: Boolean = js.native
   @JSName("Math.sign")
-  var MathDotsign: Boolean
+  var MathDotsign: Boolean = js.native
   @JSName("Math.sinh")
-  var MathDotsinh: Boolean
+  var MathDotsinh: Boolean = js.native
   @JSName("Math.tanh")
-  var MathDottanh: Boolean
+  var MathDottanh: Boolean = js.native
   @JSName("Math.trunc")
-  var MathDottrunc: Boolean
+  var MathDottrunc: Boolean = js.native
   @JSName("Number.EPSILON")
-  var NumberDotEPSILON: Boolean
+  var NumberDotEPSILON: Boolean = js.native
   @JSName("Number.MAX_SAFE_INTEGER")
-  var NumberDotMAX_SAFE_INTEGER: Boolean
+  var NumberDotMAX_SAFE_INTEGER: Boolean = js.native
   @JSName("Number.MIN_SAFE_INTEGER")
-  var NumberDotMIN_SAFE_INTEGER: Boolean
+  var NumberDotMIN_SAFE_INTEGER: Boolean = js.native
   @JSName("Number.isFinite")
-  var NumberDotisFinite: Boolean
+  var NumberDotisFinite: Boolean = js.native
   @JSName("Number.isInteger")
-  var NumberDotisInteger: Boolean
+  var NumberDotisInteger: Boolean = js.native
   @JSName("Number.isNaN")
-  var NumberDotisNaN: Boolean
+  var NumberDotisNaN: Boolean = js.native
   @JSName("Number.isSafeInteger")
-  var NumberDotisSafeInteger: Boolean
+  var NumberDotisSafeInteger: Boolean = js.native
   @JSName("Number.parseFloat")
-  var NumberDotparseFloat: Boolean
+  var NumberDotparseFloat: Boolean = js.native
   @JSName("Number.parseInt")
-  var NumberDotparseInt: Boolean
+  var NumberDotparseInt: Boolean = js.native
   @JSName("Object.assign")
-  var ObjectDotassign: Boolean
+  var ObjectDotassign: Boolean = js.native
   @JSName("Object.entries")
-  var ObjectDotentries: Boolean
+  var ObjectDotentries: Boolean = js.native
   @JSName("Object.getOwnPropertyDescriptors")
-  var ObjectDotgetOwnPropertyDescriptors: Boolean
+  var ObjectDotgetOwnPropertyDescriptors: Boolean = js.native
   @JSName("Object.getOwnPropertySymbols")
-  var ObjectDotgetOwnPropertySymbols: Boolean
+  var ObjectDotgetOwnPropertySymbols: Boolean = js.native
   @JSName("Object.is")
-  var ObjectDotis: Boolean
+  var ObjectDotis: Boolean = js.native
   @JSName("Object.prototype.__proto__")
-  var ObjectDotprototypeDot__proto__ : Boolean
+  var ObjectDotprototypeDot__proto__ : Boolean = js.native
   @JSName("Object.setPrototypeOf")
-  var ObjectDotsetPrototypeOf: Boolean
+  var ObjectDotsetPrototypeOf: Boolean = js.native
   @JSName("Object.values")
-  var ObjectDotvalues: Boolean
-  var Promise: Boolean
-  var Proxy: Boolean
-  var Reflect: Boolean
-  var Set: Boolean
-  var SharedArrayBuffer: Boolean
+  var ObjectDotvalues: Boolean = js.native
+  var Promise: Boolean = js.native
+  var Proxy: Boolean = js.native
+  var Reflect: Boolean = js.native
+  var Set: Boolean = js.native
+  var SharedArrayBuffer: Boolean = js.native
   @JSName("String.fromCodePoint")
-  var StringDotfromCodePoint: Boolean
+  var StringDotfromCodePoint: Boolean = js.native
   @JSName("String.prototype.codePointAt")
-  var StringDotprototypeDotcodePointAt: Boolean
+  var StringDotprototypeDotcodePointAt: Boolean = js.native
   @JSName("String.prototype.endsWith")
-  var StringDotprototypeDotendsWith: Boolean
+  var StringDotprototypeDotendsWith: Boolean = js.native
   @JSName("String.prototype.includes")
-  var StringDotprototypeDotincludes: Boolean
+  var StringDotprototypeDotincludes: Boolean = js.native
   @JSName("String.prototype.normalize")
-  var StringDotprototypeDotnormalize: Boolean
+  var StringDotprototypeDotnormalize: Boolean = js.native
   @JSName("String.prototype.padEnd")
-  var StringDotprototypeDotpadEnd: Boolean
+  var StringDotprototypeDotpadEnd: Boolean = js.native
   @JSName("String.prototype.padStart")
-  var StringDotprototypeDotpadStart: Boolean
+  var StringDotprototypeDotpadStart: Boolean = js.native
   @JSName("String.prototype.repeat")
-  var StringDotprototypeDotrepeat: Boolean
+  var StringDotprototypeDotrepeat: Boolean = js.native
   @JSName("String.prototype.startsWith")
-  var StringDotprototypeDotstartsWith: Boolean
+  var StringDotprototypeDotstartsWith: Boolean = js.native
   @JSName("String.raw")
-  var StringDotraw: Boolean
-  var Symbol: Boolean
+  var StringDotraw: Boolean = js.native
+  var Symbol: Boolean = js.native
   @JSName("TypedArray.prototype.includes")
-  var TypedArrayDotprototypeDotincludes: Boolean
-  var TypedArrays: Boolean
-  var WeakMap: Boolean
-  var WeakSet: Boolean
-  var __all: Boolean
-  var base64: Boolean
-  var es2015: RecordES2015Builtinsboole
-  var es2016: RecordES2016Builtinsboole
-  var es2017: RecordES2017Builtinsboole
+  var TypedArrayDotprototypeDotincludes: Boolean = js.native
+  var TypedArrays: Boolean = js.native
+  var WeakMap: Boolean = js.native
+  var WeakSet: Boolean = js.native
+  var __all: Boolean = js.native
+  var base64: Boolean = js.native
+  var es2015: RecordES2015Builtinsboole = js.native
+  var es2016: RecordES2016Builtinsboole = js.native
+  var es2017: RecordES2017Builtinsboole = js.native
   @JSName("new.target")
-  var newDottarget: Boolean
-  var requestAnimationFrame: Boolean
+  var newDottarget: Boolean = js.native
+  var requestAnimationFrame: Boolean = js.native
 }
 
 object RecordES2015BuiltinsES201 {
@@ -265,5 +266,160 @@ object RecordES2015BuiltinsES201 {
     __obj.updateDynamic("new.target")(newDottarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordES2015BuiltinsES201]
   }
+  @scala.inline
+  implicit class RecordES2015BuiltinsES201Ops[Self <: RecordES2015BuiltinsES201] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrayDotfrom(value: Boolean): Self = this.set("Array.from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayDotof(value: Boolean): Self = this.set("Array.of", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayDotprototypeDotcopyWithin(value: Boolean): Self = this.set("Array.prototype.copyWithin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayDotprototypeDotentries(value: Boolean): Self = this.set("Array.prototype.entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayDotprototypeDotfill(value: Boolean): Self = this.set("Array.prototype.fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayDotprototypeDotfind(value: Boolean): Self = this.set("Array.prototype.find", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayDotprototypeDotfindIndex(value: Boolean): Self = this.set("Array.prototype.findIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayDotprototypeDotincludes(value: Boolean): Self = this.set("Array.prototype.includes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayDotprototypeDotkeys(value: Boolean): Self = this.set("Array.prototype.keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAtomics(value: Boolean): Self = this.set("Atomics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMap(value: Boolean): Self = this.set("Map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotacosh(value: Boolean): Self = this.set("Math.acosh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotasinh(value: Boolean): Self = this.set("Math.asinh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotcbrt(value: Boolean): Self = this.set("Math.cbrt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotclz32(value: Boolean): Self = this.set("Math.clz32", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotcosh(value: Boolean): Self = this.set("Math.cosh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotexpm1(value: Boolean): Self = this.set("Math.expm1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotfround(value: Boolean): Self = this.set("Math.fround", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDothypot(value: Boolean): Self = this.set("Math.hypot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotimul(value: Boolean): Self = this.set("Math.imul", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotlog10(value: Boolean): Self = this.set("Math.log10", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotlog1p(value: Boolean): Self = this.set("Math.log1p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotlog2(value: Boolean): Self = this.set("Math.log2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotsign(value: Boolean): Self = this.set("Math.sign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDotsinh(value: Boolean): Self = this.set("Math.sinh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDottanh(value: Boolean): Self = this.set("Math.tanh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMathDottrunc(value: Boolean): Self = this.set("Math.trunc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberDotEPSILON(value: Boolean): Self = this.set("Number.EPSILON", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberDotMAX_SAFE_INTEGER(value: Boolean): Self = this.set("Number.MAX_SAFE_INTEGER", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberDotMIN_SAFE_INTEGER(value: Boolean): Self = this.set("Number.MIN_SAFE_INTEGER", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberDotisFinite(value: Boolean): Self = this.set("Number.isFinite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberDotisInteger(value: Boolean): Self = this.set("Number.isInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberDotisNaN(value: Boolean): Self = this.set("Number.isNaN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberDotisSafeInteger(value: Boolean): Self = this.set("Number.isSafeInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberDotparseFloat(value: Boolean): Self = this.set("Number.parseFloat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberDotparseInt(value: Boolean): Self = this.set("Number.parseInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectDotassign(value: Boolean): Self = this.set("Object.assign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectDotentries(value: Boolean): Self = this.set("Object.entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectDotgetOwnPropertyDescriptors(value: Boolean): Self = this.set("Object.getOwnPropertyDescriptors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectDotgetOwnPropertySymbols(value: Boolean): Self = this.set("Object.getOwnPropertySymbols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectDotis(value: Boolean): Self = this.set("Object.is", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectDotprototypeDot__proto__(value: Boolean): Self = this.set("Object.prototype.__proto__", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectDotsetPrototypeOf(value: Boolean): Self = this.set("Object.setPrototypeOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectDotvalues(value: Boolean): Self = this.set("Object.values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPromise(value: Boolean): Self = this.set("Promise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProxy(value: Boolean): Self = this.set("Proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReflect(value: Boolean): Self = this.set("Reflect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSet(value: Boolean): Self = this.set("Set", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSharedArrayBuffer(value: Boolean): Self = this.set("SharedArrayBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotfromCodePoint(value: Boolean): Self = this.set("String.fromCodePoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotprototypeDotcodePointAt(value: Boolean): Self = this.set("String.prototype.codePointAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotprototypeDotendsWith(value: Boolean): Self = this.set("String.prototype.endsWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotprototypeDotincludes(value: Boolean): Self = this.set("String.prototype.includes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotprototypeDotnormalize(value: Boolean): Self = this.set("String.prototype.normalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotprototypeDotpadEnd(value: Boolean): Self = this.set("String.prototype.padEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotprototypeDotpadStart(value: Boolean): Self = this.set("String.prototype.padStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotprototypeDotrepeat(value: Boolean): Self = this.set("String.prototype.repeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotprototypeDotstartsWith(value: Boolean): Self = this.set("String.prototype.startsWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStringDotraw(value: Boolean): Self = this.set("String.raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSymbol(value: Boolean): Self = this.set("Symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypedArrayDotprototypeDotincludes(value: Boolean): Self = this.set("TypedArray.prototype.includes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypedArrays(value: Boolean): Self = this.set("TypedArrays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWeakMap(value: Boolean): Self = this.set("WeakMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWeakSet(value: Boolean): Self = this.set("WeakSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set__all(value: Boolean): Self = this.set("__all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBase64(value: Boolean): Self = this.set("base64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEs2015(value: RecordES2015Builtinsboole): Self = this.set("es2015", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEs2016(value: RecordES2016Builtinsboole): Self = this.set("es2016", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEs2017(value: RecordES2017Builtinsboole): Self = this.set("es2017", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewDottarget(value: Boolean): Self = this.set("new.target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequestAnimationFrame(value: Boolean): Self = this.set("requestAnimationFrame", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "unimodules-permissions-interface"
-version := "5.0.0-94e2e2"
-scalaVersion := "2.13.2"
+version := "5.2.1-97b407"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

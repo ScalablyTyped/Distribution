@@ -7,11 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * Global object NFC.
   */
+@js.native
 trait Window extends js.Object {
-  var ndef: Ndef
-  var nfc: Nfc
-  var util: Util
-  def fireNfcTagEvent(event: TagEvent, tagAsJson: String): Unit
+  var ndef: Ndef = js.native
+  var nfc: Nfc = js.native
+  var util: Util = js.native
+  def fireNfcTagEvent(event: TagEvent, tagAsJson: String): Unit = js.native
 }
 
 object Window {
@@ -20,5 +21,26 @@ object Window {
     val __obj = js.Dynamic.literal(fireNfcTagEvent = js.Any.fromFunction2(fireNfcTagEvent), ndef = ndef.asInstanceOf[js.Any], nfc = nfc.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
+  @scala.inline
+  implicit class WindowOps[Self <: Window] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFireNfcTagEvent(value: (TagEvent, String) => Unit): Self = this.set("fireNfcTagEvent", js.Any.fromFunction2(value))
+    @scala.inline
+    def setNdef(value: Ndef): Self = this.set("ndef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNfc(value: Nfc): Self = this.set("nfc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUtil(value: Util): Self = this.set("util", value.asInstanceOf[js.Any])
+  }
+  
 }
 

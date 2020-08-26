@@ -12,7 +12,7 @@ The lodash method `_.add` exported as a module.
 | Keywords           | lodash-modularized, add |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 101541 |
+| # downloads        | 101857 |
 | # stars            | 0 |
 
 ## Links

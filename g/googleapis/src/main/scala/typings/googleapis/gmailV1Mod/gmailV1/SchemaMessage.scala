@@ -59,28 +59,60 @@ trait SchemaMessage extends js.Object {
 
 object SchemaMessage {
   @scala.inline
-  def apply(
-    historyId: String = null,
-    id: String = null,
-    internalDate: String = null,
-    labelIds: js.Array[String] = null,
-    payload: SchemaMessagePart = null,
-    raw: String = null,
-    sizeEstimate: js.UndefOr[Double] = js.undefined,
-    snippet: String = null,
-    threadId: String = null
-  ): SchemaMessage = {
+  def apply(): SchemaMessage = {
     val __obj = js.Dynamic.literal()
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (internalDate != null) __obj.updateDynamic("internalDate")(internalDate.asInstanceOf[js.Any])
-    if (labelIds != null) __obj.updateDynamic("labelIds")(labelIds.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeEstimate)) __obj.updateDynamic("sizeEstimate")(sizeEstimate.get.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
-    if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMessage]
   }
+  @scala.inline
+  implicit class SchemaMessageOps[Self <: SchemaMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHistoryId(value: String): Self = this.set("historyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistoryId: Self = this.set("historyId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInternalDate(value: String): Self = this.set("internalDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalDate: Self = this.set("internalDate", js.undefined)
+    @scala.inline
+    def setLabelIdsVarargs(value: String*): Self = this.set("labelIds", js.Array(value :_*))
+    @scala.inline
+    def setLabelIds(value: js.Array[String]): Self = this.set("labelIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelIds: Self = this.set("labelIds", js.undefined)
+    @scala.inline
+    def setPayload(value: SchemaMessagePart): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("payload", js.undefined)
+    @scala.inline
+    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaw: Self = this.set("raw", js.undefined)
+    @scala.inline
+    def setSizeEstimate(value: Double): Self = this.set("sizeEstimate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeEstimate: Self = this.set("sizeEstimate", js.undefined)
+    @scala.inline
+    def setSnippet(value: String): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    @scala.inline
+    def setThreadId(value: String): Self = this.set("threadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreadId: Self = this.set("threadId", js.undefined)
+  }
+  
 }
 

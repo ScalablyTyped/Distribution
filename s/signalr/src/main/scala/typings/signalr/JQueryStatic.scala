@@ -23,11 +23,13 @@ trait JQueryStatic extends js.Object {
     * @param logging [Optional] A flag indicating whether connection logging is enabled to the browser console/log. Defaults to false.
     */
   def connection(url: String): Connection = js.native
+  def connection(url: String, queryString: js.UndefOr[scala.Nothing], logging: Boolean): Connection = js.native
   def connection(url: String, queryString: String): Connection = js.native
   def connection(url: String, queryString: String, logging: Boolean): Connection = js.native
   def connection(url: String, queryString: js.Object): Connection = js.native
   def connection(url: String, queryString: js.Object, logging: Boolean): Connection = js.native
   def hubConnection(): typings.signalr.SignalR.Hub.Connection = js.native
+  def hubConnection(url: js.UndefOr[scala.Nothing], options: Options): typings.signalr.SignalR.Hub.Connection = js.native
   def hubConnection(url: String): typings.signalr.SignalR.Hub.Connection = js.native
   def hubConnection(url: String, options: Options): typings.signalr.SignalR.Hub.Connection = js.native
   /**
@@ -38,6 +40,7 @@ trait JQueryStatic extends js.Object {
     * @param logging [Optional] A flag indicating whether connection logging is enabled to the browser console/log. Defaults to false.
     */
   def signalR(url: String): Connection = js.native
+  def signalR(url: String, queryString: js.UndefOr[scala.Nothing], logging: Boolean): Connection = js.native
   def signalR(url: String, queryString: String): Connection = js.native
   def signalR(url: String, queryString: String, logging: Boolean): Connection = js.native
   def signalR(url: String, queryString: js.Object): Connection = js.native

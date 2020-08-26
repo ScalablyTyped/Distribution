@@ -23,5 +23,22 @@ object VpnConnectionRouteArgs {
     val __obj = js.Dynamic.literal(destinationCidrBlock = destinationCidrBlock.asInstanceOf[js.Any], vpnConnectionId = vpnConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpnConnectionRouteArgs]
   }
+  @scala.inline
+  implicit class VpnConnectionRouteArgsOps[Self <: VpnConnectionRouteArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCidrBlock(value: Input[String]): Self = this.set("destinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpnConnectionId(value: Input[String]): Self = this.set("vpnConnectionId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

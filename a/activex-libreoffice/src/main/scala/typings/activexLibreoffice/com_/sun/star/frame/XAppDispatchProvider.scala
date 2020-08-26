@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @since LibreOffice 4.2 */
+@js.native
 trait XAppDispatchProvider
   extends XDispatchInformationProvider
      with XDispatchProvider

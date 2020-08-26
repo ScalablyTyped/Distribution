@@ -1,32 +1,42 @@
 package typings.ibmMobilefirst.WL.JSONStore
 
-import typings.ibmMobilefirst.WL.IResponse
 import typings.ibmMobilefirst.WL.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StoreOptions extends Options {
-  var additionalSearchFields: js.UndefOr[js.Object] = js.undefined
-  var push: js.UndefOr[Boolean] = js.undefined
+  var additionalSearchFields: js.UndefOr[js.Object] = js.native
+  var push: js.UndefOr[Boolean] = js.native
 }
 
 object StoreOptions {
   @scala.inline
-  def apply(
-    additionalSearchFields: js.Object = null,
-    invocationContext: js.Any = null,
-    onFailure: /* response */ IResponse => Unit = null,
-    onSuccess: /* response */ IResponse => Unit = null,
-    push: js.UndefOr[Boolean] = js.undefined
-  ): StoreOptions = {
+  def apply(): StoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (additionalSearchFields != null) __obj.updateDynamic("additionalSearchFields")(additionalSearchFields.asInstanceOf[js.Any])
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreOptions]
   }
+  @scala.inline
+  implicit class StoreOptionsOps[Self <: StoreOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalSearchFields(value: js.Object): Self = this.set("additionalSearchFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalSearchFields: Self = this.set("additionalSearchFields", js.undefined)
+    @scala.inline
+    def setPush(value: Boolean): Self = this.set("push", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePush: Self = this.set("push", js.undefined)
+  }
+  
 }
 

@@ -39,6 +39,7 @@ object mod extends js.Object {
       * `varint.encode.bytes` will now be set to the number of bytes modified.
       */
     def apply(num: Double): js.Array[Double] = js.native
+    def apply(num: Double, array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
     def apply(num: Double, array: js.Array[Double]): js.Array[Double] = js.native
     def apply(num: Double, array: js.Array[Double], offset: Double): js.Array[Double] = js.native
     /**

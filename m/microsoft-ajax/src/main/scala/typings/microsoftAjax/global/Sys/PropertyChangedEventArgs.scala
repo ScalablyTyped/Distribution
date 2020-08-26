@@ -19,19 +19,5 @@ class PropertyChangedEventArgs protected ()
     *           The name of the property that changed.
     */
   def this(propertyName: String) = this()
-  /**
-    * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
-    */
-  /* CompleteClass */
-  override var Empty: typings.microsoftAjax.Sys.EventArgs = js.native
-  //#endregion
-  //#region Methods
-  /**
-    * Gets the name of the property that changed.
-    * Use the propertyName property to determine the name of the property that changed.
-    * @return A string that contains the name of the property that changed.
-    */
-  /* CompleteClass */
-  override def propertyName(): String = js.native
 }
 

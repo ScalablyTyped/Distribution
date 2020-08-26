@@ -9,9 +9,9 @@ CoffeeScript-Object-Notation Parser. Same as JSON but for CoffeeScript objects.
 | ------------------ | :-------------: |
 | Full name          | cson |
 | Keywords           | javascript, coffeescript, json, cson, parse, stringify |
-| # releases         | 25 |
+| # releases         | 28 |
 | # dependents       | 134 |
-| # downloads        | 2598005 |
+| # downloads        | 2669602 |
 | # stars            | 15 |
 
 ## Links

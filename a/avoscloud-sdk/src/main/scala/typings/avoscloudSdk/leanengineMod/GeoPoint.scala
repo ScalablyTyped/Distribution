@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
 class GeoPoint ()
   extends typings.avoscloudSdk.mod.GeoPoint {
   def this(arg1: js.Any) = this()
+  def this(arg1: js.UndefOr[scala.Nothing], arg2: js.Any) = this()
   def this(arg1: js.Any, arg2: js.Any) = this()
 }
 

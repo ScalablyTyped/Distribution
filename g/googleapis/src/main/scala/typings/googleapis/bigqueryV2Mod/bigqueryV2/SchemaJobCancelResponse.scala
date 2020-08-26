@@ -18,11 +18,30 @@ trait SchemaJobCancelResponse extends js.Object {
 
 object SchemaJobCancelResponse {
   @scala.inline
-  def apply(job: SchemaJob = null, kind: String = null): SchemaJobCancelResponse = {
+  def apply(): SchemaJobCancelResponse = {
     val __obj = js.Dynamic.literal()
-    if (job != null) __obj.updateDynamic("job")(job.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobCancelResponse]
   }
+  @scala.inline
+  implicit class SchemaJobCancelResponseOps[Self <: SchemaJobCancelResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJob(value: SchemaJob): Self = this.set("job", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJob: Self = this.set("job", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

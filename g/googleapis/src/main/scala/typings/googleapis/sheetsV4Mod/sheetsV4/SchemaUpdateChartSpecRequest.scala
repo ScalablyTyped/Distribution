@@ -22,11 +22,30 @@ trait SchemaUpdateChartSpecRequest extends js.Object {
 
 object SchemaUpdateChartSpecRequest {
   @scala.inline
-  def apply(chartId: js.UndefOr[Double] = js.undefined, spec: SchemaChartSpec = null): SchemaUpdateChartSpecRequest = {
+  def apply(): SchemaUpdateChartSpecRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chartId)) __obj.updateDynamic("chartId")(chartId.get.asInstanceOf[js.Any])
-    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateChartSpecRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateChartSpecRequestOps[Self <: SchemaUpdateChartSpecRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChartId(value: Double): Self = this.set("chartId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartId: Self = this.set("chartId", js.undefined)
+    @scala.inline
+    def setSpec(value: SchemaChartSpec): Self = this.set("spec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpec: Self = this.set("spec", js.undefined)
+  }
+  
 }
 

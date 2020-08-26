@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("firebase", "auth.TwitterAuthProvider_Instance")
 @js.native
 class TwitterAuthProviderInstance () extends AuthProvider {
-  /* CompleteClass */
-  override var providerId: String = js.native
   /**
     * Sets the OAuth custom parameters to pass in a Twitter OAuth request for popup
     * and redirect sign-in operations.

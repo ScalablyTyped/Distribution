@@ -26,18 +26,40 @@ trait ImageScanFindings extends js.Object {
 
 object ImageScanFindings {
   @scala.inline
-  def apply(
-    findingSeverityCounts: FindingSeverityCounts = null,
-    findings: ImageScanFindingList = null,
-    imageScanCompletedAt: ScanTimestamp = null,
-    vulnerabilitySourceUpdatedAt: VulnerabilitySourceUpdateTimestamp = null
-  ): ImageScanFindings = {
+  def apply(): ImageScanFindings = {
     val __obj = js.Dynamic.literal()
-    if (findingSeverityCounts != null) __obj.updateDynamic("findingSeverityCounts")(findingSeverityCounts.asInstanceOf[js.Any])
-    if (findings != null) __obj.updateDynamic("findings")(findings.asInstanceOf[js.Any])
-    if (imageScanCompletedAt != null) __obj.updateDynamic("imageScanCompletedAt")(imageScanCompletedAt.asInstanceOf[js.Any])
-    if (vulnerabilitySourceUpdatedAt != null) __obj.updateDynamic("vulnerabilitySourceUpdatedAt")(vulnerabilitySourceUpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageScanFindings]
   }
+  @scala.inline
+  implicit class ImageScanFindingsOps[Self <: ImageScanFindings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFindingSeverityCounts(value: FindingSeverityCounts): Self = this.set("findingSeverityCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingSeverityCounts: Self = this.set("findingSeverityCounts", js.undefined)
+    @scala.inline
+    def setFindingsVarargs(value: ImageScanFinding*): Self = this.set("findings", js.Array(value :_*))
+    @scala.inline
+    def setFindings(value: ImageScanFindingList): Self = this.set("findings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindings: Self = this.set("findings", js.undefined)
+    @scala.inline
+    def setImageScanCompletedAt(value: ScanTimestamp): Self = this.set("imageScanCompletedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageScanCompletedAt: Self = this.set("imageScanCompletedAt", js.undefined)
+    @scala.inline
+    def setVulnerabilitySourceUpdatedAt(value: VulnerabilitySourceUpdateTimestamp): Self = this.set("vulnerabilitySourceUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVulnerabilitySourceUpdatedAt: Self = this.set("vulnerabilitySourceUpdatedAt", js.undefined)
+  }
+  
 }
 

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("is-promise", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def apply(obj: js.Any): /* is std.PromiseLike<any> */ Boolean = js.native
+  def default[T, S](obj: S): /* is std.PromiseLike<T> */ Boolean = js.native
+  def default[T, S](obj: js.Thenable[T]): /* is std.PromiseLike<T> */ Boolean = js.native
 }
 

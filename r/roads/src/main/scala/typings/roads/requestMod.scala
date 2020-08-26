@@ -23,6 +23,7 @@ object requestMod extends js.Object {
       * @returns {Promise} The promise will resolve with an object with three properties. The response headers, response status and the response body. If the response content-type is "application/json" the body will be an object, otherwise it will resolve to a string
       */
     def request(method: String, path: String): js.Promise[typings.roads.responseMod.default] = js.native
+    def request(method: String, path: String, body: js.UndefOr[scala.Nothing], headers: StringDictionary[js.Any]): js.Promise[typings.roads.responseMod.default] = js.native
     def request(method: String, path: String, body: String): js.Promise[typings.roads.responseMod.default] = js.native
     def request(method: String, path: String, body: String, headers: StringDictionary[js.Any]): js.Promise[typings.roads.responseMod.default] = js.native
   }

@@ -12,7 +12,7 @@ Get and set relations (one-to-one, one-to-many, many-to-one) for Backbone models
 | Keywords           | backbone, relation, nested, model |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 215597 |
+| # downloads        | 219772 |
 | # stars            | 2 |
 
 ## Links

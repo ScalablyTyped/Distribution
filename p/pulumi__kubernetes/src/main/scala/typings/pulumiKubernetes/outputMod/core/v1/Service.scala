@@ -6,41 +6,55 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Service is a named abstraction of software service (for example, mysql) consisting of local
-  * port (for example 3306) that the proxy listens on, and the selector that determines which
-  * pods will answer requests sent through the proxy.
+  * Service is a named abstraction of software service (for example, mysql) consisting of local port (for example 3306) that the proxy listens on, and the selector that determines which pods will answer requests sent through the proxy.
+  *
+  * This resource waits until its status is ready before registering success
+  * for create/update, and populating output properties from the current state of the resource.
+  * The following conditions are used to determine whether the resource creation has
+  * succeeded or failed:
+  *
+  * 1. Service object exists.
+  * 2. Related Endpoint objects are created. Each time we get an update, wait 10 seconds
+  *    for any stragglers.
+  * 3. The endpoints objects target some number of living objects (unless the Service is
+  *    an "empty headless" Service [1] or a Service with '.spec.type: ExternalName').
+  * 4. External IP address is allocated (if Service has '.spec.type: LoadBalancer').
+  *
+  * Known limitations:
+  * Services targeting ReplicaSets (and, by extension, Deployments,
+  * StatefulSets, etc.) with '.spec.replicas' set to 0 are not handled, and will time
+  * out. To work around this limitation, set 'pulumi.com/skipAwait: "true"' on
+  * '.metadata.annotations' for the Service. Work to handle this case is in progress [2].
+  *
+  * [1] https://kubernetes.io/docs/concepts/services-networking/service/#headless-services
+  * [2] https://github.com/pulumi/pulumi-kubernetes/pull/703
+  *
+  * If the Service has not reached a Ready state after 10 minutes, it will
+  * time out and mark the resource update as Failed. You can override the default timeout value
+  * by setting the 'customTimeouts' option on the resource.
   */
+@js.native
 trait Service extends js.Object {
   /**
-    * APIVersion defines the versioned schema of this representation of an object. Servers should
-    * convert recognized schemas to the latest internal value, and may reject unrecognized
-    * values. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+    * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1
+  var apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1 = js.native
   /**
-    * Kind is a string value representing the REST resource this object represents. Servers may
-    * infer this from the endpoint the client submits requests to. Cannot be updated. In
-    * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+    * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  val kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Service
+  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Service = js.native
   /**
-    * Standard object's metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
-  val metadata: ObjectMeta
+  var metadata: ObjectMeta = js.native
   /**
-    * Spec defines the behavior of a service.
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+    * Spec defines the behavior of a service. https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
-  val spec: ServiceSpec
+  var spec: ServiceSpec = js.native
   /**
-    * Most recently observed status of the service. Populated by the system. Read-only. More
-    * info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+    * Most recently observed status of the service. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
-  val status: ServiceStatus
+  var status: ServiceStatus = js.native
 }
 
 object Service {
@@ -55,5 +69,28 @@ object Service {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
+  @scala.inline
+  implicit class ServiceOps[Self <: Service] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Service): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetadata(value: ObjectMeta): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpec(value: ServiceSpec): Self = this.set("spec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: ServiceStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+  }
+  
 }
 

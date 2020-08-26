@@ -10,9 +10,9 @@ GraphQL schema builder from different data sources with middleware extensions.
 | ------------------ | :-------------: |
 | Full name          | graphql-compose |
 | Keywords           | graphql, compose |
-| # releases         | 102 |
-| # dependents       | 28 |
-| # downloads        | 6825109 |
+| # releases         | 101 |
+| # dependents       | 29 |
+| # downloads        | 7292292 |
 | # stars            | 2 |
 
 ## Links

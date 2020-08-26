@@ -20,10 +20,32 @@ trait CountdownStatic extends js.Object {
   var WEEKS: Double = js.native
   var YEARS: Double = js.native
   def apply(start: DateTime): Timespan | Double = js.native
+  def apply(
+    start: DateTime,
+    end: js.UndefOr[DateTime],
+    units: js.UndefOr[scala.Nothing],
+    max: js.UndefOr[scala.Nothing],
+    digits: Double
+  ): Timespan | Double = js.native
+  def apply(start: DateTime, end: js.UndefOr[DateTime], units: js.UndefOr[scala.Nothing], max: Double): Timespan | Double = js.native
+  def apply(
+    start: DateTime,
+    end: js.UndefOr[DateTime],
+    units: js.UndefOr[scala.Nothing],
+    max: Double,
+    digits: Double
+  ): Timespan | Double = js.native
+  def apply(start: DateTime, end: js.UndefOr[DateTime], units: Double): Timespan | Double = js.native
+  def apply(
+    start: DateTime,
+    end: js.UndefOr[DateTime],
+    units: Double,
+    max: js.UndefOr[scala.Nothing],
+    digits: Double
+  ): Timespan | Double = js.native
+  def apply(start: DateTime, end: js.UndefOr[DateTime], units: Double, max: Double): Timespan | Double = js.native
+  def apply(start: DateTime, end: js.UndefOr[DateTime], units: Double, max: Double, digits: Double): Timespan | Double = js.native
   def apply(start: DateTime, end: DateTime): Timespan | Double = js.native
-  def apply(start: DateTime, end: DateTime, units: Double): Timespan | Double = js.native
-  def apply(start: DateTime, end: DateTime, units: Double, max: Double): Timespan | Double = js.native
-  def apply(start: DateTime, end: DateTime, units: Double, max: Double, digits: Double): Timespan | Double = js.native
   def resetFormat(): Unit = js.native
   def resetLabels(): Unit = js.native
   def setFormat(format: Format): Unit = js.native

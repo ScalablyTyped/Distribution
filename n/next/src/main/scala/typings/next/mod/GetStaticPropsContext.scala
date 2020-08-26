@@ -5,20 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetStaticPropsContext[Q /* <: ParsedUrlQuery */] extends js.Object {
-  var params: js.UndefOr[Q] = js.undefined
-  var preview: js.UndefOr[Boolean] = js.undefined
-  var previewData: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Q] = js.native
+  var preview: js.UndefOr[Boolean] = js.native
+  var previewData: js.UndefOr[js.Any] = js.native
 }
 
 object GetStaticPropsContext {
   @scala.inline
-  def apply[/* <: typings.node.querystringMod.ParsedUrlQuery */ Q](params: Q = null, preview: js.UndefOr[Boolean] = js.undefined, previewData: js.Any = null): GetStaticPropsContext[Q] = {
+  def apply[/* <: typings.node.querystringMod.ParsedUrlQuery */ Q](): GetStaticPropsContext[Q] = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.get.asInstanceOf[js.Any])
-    if (previewData != null) __obj.updateDynamic("previewData")(previewData.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStaticPropsContext[Q]]
   }
+  @scala.inline
+  implicit class GetStaticPropsContextOps[Self <: GetStaticPropsContext[_], /* <: typings.node.querystringMod.ParsedUrlQuery */ Q] (val x: Self with GetStaticPropsContext[Q]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParams(value: Q): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setPreview(value: Boolean): Self = this.set("preview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreview: Self = this.set("preview", js.undefined)
+    @scala.inline
+    def setPreviewData(value: js.Any): Self = this.set("previewData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewData: Self = this.set("previewData", js.undefined)
+  }
+  
 }
 

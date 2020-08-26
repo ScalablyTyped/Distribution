@@ -26,18 +26,40 @@ trait AwsSnsTopicDetails extends js.Object {
 
 object AwsSnsTopicDetails {
   @scala.inline
-  def apply(
-    KmsMasterKeyId: NonEmptyString = null,
-    Owner: NonEmptyString = null,
-    Subscription: AwsSnsTopicSubscriptionList = null,
-    TopicName: NonEmptyString = null
-  ): AwsSnsTopicDetails = {
+  def apply(): AwsSnsTopicDetails = {
     val __obj = js.Dynamic.literal()
-    if (KmsMasterKeyId != null) __obj.updateDynamic("KmsMasterKeyId")(KmsMasterKeyId.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (Subscription != null) __obj.updateDynamic("Subscription")(Subscription.asInstanceOf[js.Any])
-    if (TopicName != null) __obj.updateDynamic("TopicName")(TopicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsSnsTopicDetails]
   }
+  @scala.inline
+  implicit class AwsSnsTopicDetailsOps[Self <: AwsSnsTopicDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKmsMasterKeyId(value: NonEmptyString): Self = this.set("KmsMasterKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsMasterKeyId: Self = this.set("KmsMasterKeyId", js.undefined)
+    @scala.inline
+    def setOwner(value: NonEmptyString): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setSubscriptionVarargs(value: AwsSnsTopicSubscription*): Self = this.set("Subscription", js.Array(value :_*))
+    @scala.inline
+    def setSubscription(value: AwsSnsTopicSubscriptionList): Self = this.set("Subscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscription: Self = this.set("Subscription", js.undefined)
+    @scala.inline
+    def setTopicName(value: NonEmptyString): Self = this.set("TopicName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicName: Self = this.set("TopicName", js.undefined)
+  }
+  
 }
 

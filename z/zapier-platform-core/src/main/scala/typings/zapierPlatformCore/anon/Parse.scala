@@ -13,6 +13,8 @@ trait Parse extends js.Object {
     */
   def parse(text: String): js.Any = js.native
   def stringify(value: js.Any): String = js.native
+  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
+  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
   def stringify(value: js.Any, replacer: js.Array[Double | String]): String = js.native
   def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String = js.native
   def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String = js.native

@@ -1,22 +1,17 @@
 package typings.sharepoint.global
 
 import typings.sharepoint.SP.ClientContext
-import typings.sharepoint.SPClientForms.ClientValidation.ValidatorSet
 import typings.sharepoint.SPClientTemplates.ChoiceFormatType
 import typings.sharepoint.SPClientTemplates.ClientControlMode
 import typings.sharepoint.SPClientTemplates.ClientLookupValue
 import typings.sharepoint.SPClientTemplates.ClientUrlValue
 import typings.sharepoint.SPClientTemplates.ClientUserValue
-import typings.sharepoint.SPClientTemplates.FieldSchemaInForm
 import typings.sharepoint.SPClientTemplates.FileSystemObjectType
 import typings.sharepoint.SPClientTemplates.RenderContext
 import typings.sharepoint.SPClientTemplates.RenderContextForm
 import typings.sharepoint.SPClientTemplates.RichTextMode
 import typings.sharepoint.SPClientTemplates.TemplateOverridesOptions
 import typings.sharepoint.SPClientTemplates.Templates
-import typings.sharepoint.anon.AllowScriptableWebParts
-import typings.sharepoint.anon.BaseType
-import typings.sharepoint.anon.ExternalListItem
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,36 +22,7 @@ import scala.scalajs.js.annotation._
 object SPClientTemplates extends js.Object {
   @js.native
   class ClientFormContext ()
-    extends typings.sharepoint.SPClientTemplates.ClientFormContext {
-    /* CompleteClass */
-    override var controlMode: Double = js.native
-    /* CompleteClass */
-    override var fieldName: String = js.native
-    /* CompleteClass */
-    override var fieldSchema: FieldSchemaInForm = js.native
-    /* CompleteClass */
-    override var fieldValue: js.Any = js.native
-    /* CompleteClass */
-    override var itemAttributes: ExternalListItem = js.native
-    /* CompleteClass */
-    override var listAttributes: BaseType = js.native
-    /* CompleteClass */
-    override var webAttributes: AllowScriptableWebParts = js.native
-    /* CompleteClass */
-    override def registerClientValidator(fieldname: String, validator: ValidatorSet): Unit = js.native
-    /* CompleteClass */
-    override def registerFocusCallback(fieldname: String, callback: js.Function0[Unit]): Unit = js.native
-    /* CompleteClass */
-    override def registerGetValueCallback(fieldname: String, callback: js.Function0[_]): Unit = js.native
-    /* CompleteClass */
-    override def registerHasValueChangedCallback(fieldname: String, callback: js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]): Unit = js.native
-    /* CompleteClass */
-    override def registerInitCallback(fieldname: String, callback: js.Function0[Unit]): Unit = js.native
-    /* CompleteClass */
-    override def registerValidationErrorCallback(fieldname: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
-    /* CompleteClass */
-    override def updateControlValue(fieldname: String, value: js.Any): Unit = js.native
-  }
+    extends typings.sharepoint.SPClientTemplates.ClientFormContext
   
   @js.native
   class TemplateManager ()

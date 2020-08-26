@@ -29,7 +29,7 @@ class SelectorXPathSource protected () extends SelectorSource {
     * In version 8.0.0: deleted
     */
   def applyContext: Boolean = js.native
-  def applyContext(newValue: Boolean): js.Any = js.native
+  def applyContext_=(newValue: Boolean): Unit = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyEntityPath.
     *
@@ -44,19 +44,19 @@ class SelectorXPathSource protected () extends SelectorSource {
     * In version 8.0.0: deleted
     */
   def removeAllFromContext: Boolean = js.native
-  def removeAllFromContext(newValue: Boolean): js.Any = js.native
+  def removeAllFromContext_=(newValue: Boolean): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def removeFromContextEntities: IList[IEntity] = js.native
   def removeFromContextEntitiesQualifiedNames: js.Array[String] = js.native
   def sortBar: GridSortBar = js.native
-  def sortBar(newValue: GridSortBar): js.Any = js.native
+  def sortBar_=(newValue: GridSortBar): Unit = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
   def xPathConstraint: String = js.native
-  def xPathConstraint(newValue: String): js.Any = js.native
+  def xPathConstraint_=(newValue: String): Unit = js.native
 }
 
 /* static members */

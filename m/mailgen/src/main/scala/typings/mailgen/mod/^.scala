@@ -11,13 +11,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends Mailgen {
   def this(opts: Option) = this()
-  /* CompleteClass */
-  override def cacheThemes(): Unit = js.native
-  /* CompleteClass */
-  override def generate(params: Content): js.Any = js.native
-  /* CompleteClass */
-  override def generatePlaintext(params: Content): js.Any = js.native
-  /* CompleteClass */
-  override def parseParams(params: js.Any): js.Any = js.native
 }
 

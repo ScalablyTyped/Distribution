@@ -24,7 +24,6 @@ object typescriptMod extends js.Object {
     - typings.typedoc.typedocStrings.removeComments
     - typings.typedoc.typedocStrings.incremental
     - typings.typedoc.typedocStrings.tsBuildInfoFile
-    - typings.typedoc.typedocStrings.configFilePath
   */
   trait IgnoredTsOptionKeys extends js.Object
   

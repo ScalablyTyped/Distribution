@@ -5,24 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapMarkerCreatedEvent extends MapEvent {
-  var layer: js.UndefOr[Marker] = js.undefined
-  var marker: js.UndefOr[Marker] = js.undefined
+  var layer: js.UndefOr[Marker] = js.native
+  var marker: js.UndefOr[Marker] = js.native
 }
 
 object MapMarkerCreatedEvent {
   @scala.inline
-  def apply(
-    isDefaultPrevented: () => Boolean,
-    preventDefault: js.Function,
-    sender: Map,
-    layer: Marker = null,
-    marker: Marker = null
-  ): MapMarkerCreatedEvent = {
+  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Map): MapMarkerCreatedEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMarkerCreatedEvent]
   }
+  @scala.inline
+  implicit class MapMarkerCreatedEventOps[Self <: MapMarkerCreatedEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayer(value: Marker): Self = this.set("layer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayer: Self = this.set("layer", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+  }
+  
 }
 

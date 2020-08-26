@@ -17,7 +17,9 @@ class default protected () extends ZipFS {
   def this(input: Buffer) = this()
   def this(input: ZipTOC, name: String) = this()
   def this(input: Buffer, name: String) = this()
+  def this(input: ZipTOC, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
   def this(input: ZipTOC, name: String, deprecateMsg: Boolean) = this()
+  def this(input: Buffer, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
   def this(input: Buffer, name: String, deprecateMsg: Boolean) = this()
 }
 

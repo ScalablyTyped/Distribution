@@ -12,7 +12,7 @@ CSON utilities
 | Keywords           | cson, json, CoffeeScript |
 | # releases         | 1 |
 | # dependents       | 56 |
-| # downloads        | 1269014 |
+| # downloads        | 1241992 |
 | # stars            | 2 |
 
 ## Links

@@ -25,6 +25,7 @@ trait MariaClient extends js.Object {
   def on_error(signal: error, cb: MariaCallBackError): MariaClient = js.native
   def prepare(query: String): MariaPreparedQuery = js.native
   def query(q: String): MariaQuery = js.native
+  def query(q: String, placeHolders: js.UndefOr[scala.Nothing], useArray: Boolean): MariaQuery = js.native
   def query(q: String, placeHolders: js.Array[_]): MariaQuery = js.native
   def query(q: String, placeHolders: js.Array[_], useArray: Boolean): MariaQuery = js.native
   def query(q: String, placeHolders: Dictionary): MariaQuery = js.native

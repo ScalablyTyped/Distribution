@@ -67,38 +67,78 @@ trait NumberValidateResponse extends js.Object {
 
 object NumberValidateResponse {
   @scala.inline
-  def apply(
-    Carrier: string = null,
-    City: string = null,
-    CleansedPhoneNumberE164: string = null,
-    CleansedPhoneNumberNational: string = null,
-    Country: string = null,
-    CountryCodeIso2: string = null,
-    CountryCodeNumeric: string = null,
-    County: string = null,
-    OriginalCountryCodeIso2: string = null,
-    OriginalPhoneNumber: string = null,
-    PhoneType: string = null,
-    PhoneTypeCode: js.UndefOr[integer] = js.undefined,
-    Timezone: string = null,
-    ZipCode: string = null
-  ): NumberValidateResponse = {
+  def apply(): NumberValidateResponse = {
     val __obj = js.Dynamic.literal()
-    if (Carrier != null) __obj.updateDynamic("Carrier")(Carrier.asInstanceOf[js.Any])
-    if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
-    if (CleansedPhoneNumberE164 != null) __obj.updateDynamic("CleansedPhoneNumberE164")(CleansedPhoneNumberE164.asInstanceOf[js.Any])
-    if (CleansedPhoneNumberNational != null) __obj.updateDynamic("CleansedPhoneNumberNational")(CleansedPhoneNumberNational.asInstanceOf[js.Any])
-    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
-    if (CountryCodeIso2 != null) __obj.updateDynamic("CountryCodeIso2")(CountryCodeIso2.asInstanceOf[js.Any])
-    if (CountryCodeNumeric != null) __obj.updateDynamic("CountryCodeNumeric")(CountryCodeNumeric.asInstanceOf[js.Any])
-    if (County != null) __obj.updateDynamic("County")(County.asInstanceOf[js.Any])
-    if (OriginalCountryCodeIso2 != null) __obj.updateDynamic("OriginalCountryCodeIso2")(OriginalCountryCodeIso2.asInstanceOf[js.Any])
-    if (OriginalPhoneNumber != null) __obj.updateDynamic("OriginalPhoneNumber")(OriginalPhoneNumber.asInstanceOf[js.Any])
-    if (PhoneType != null) __obj.updateDynamic("PhoneType")(PhoneType.asInstanceOf[js.Any])
-    if (!js.isUndefined(PhoneTypeCode)) __obj.updateDynamic("PhoneTypeCode")(PhoneTypeCode.get.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
-    if (ZipCode != null) __obj.updateDynamic("ZipCode")(ZipCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberValidateResponse]
   }
+  @scala.inline
+  implicit class NumberValidateResponseOps[Self <: NumberValidateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCarrier(value: string): Self = this.set("Carrier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCarrier: Self = this.set("Carrier", js.undefined)
+    @scala.inline
+    def setCity(value: string): Self = this.set("City", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("City", js.undefined)
+    @scala.inline
+    def setCleansedPhoneNumberE164(value: string): Self = this.set("CleansedPhoneNumberE164", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCleansedPhoneNumberE164: Self = this.set("CleansedPhoneNumberE164", js.undefined)
+    @scala.inline
+    def setCleansedPhoneNumberNational(value: string): Self = this.set("CleansedPhoneNumberNational", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCleansedPhoneNumberNational: Self = this.set("CleansedPhoneNumberNational", js.undefined)
+    @scala.inline
+    def setCountry(value: string): Self = this.set("Country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("Country", js.undefined)
+    @scala.inline
+    def setCountryCodeIso2(value: string): Self = this.set("CountryCodeIso2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCodeIso2: Self = this.set("CountryCodeIso2", js.undefined)
+    @scala.inline
+    def setCountryCodeNumeric(value: string): Self = this.set("CountryCodeNumeric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCodeNumeric: Self = this.set("CountryCodeNumeric", js.undefined)
+    @scala.inline
+    def setCounty(value: string): Self = this.set("County", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCounty: Self = this.set("County", js.undefined)
+    @scala.inline
+    def setOriginalCountryCodeIso2(value: string): Self = this.set("OriginalCountryCodeIso2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalCountryCodeIso2: Self = this.set("OriginalCountryCodeIso2", js.undefined)
+    @scala.inline
+    def setOriginalPhoneNumber(value: string): Self = this.set("OriginalPhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalPhoneNumber: Self = this.set("OriginalPhoneNumber", js.undefined)
+    @scala.inline
+    def setPhoneType(value: string): Self = this.set("PhoneType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneType: Self = this.set("PhoneType", js.undefined)
+    @scala.inline
+    def setPhoneTypeCode(value: integer): Self = this.set("PhoneTypeCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneTypeCode: Self = this.set("PhoneTypeCode", js.undefined)
+    @scala.inline
+    def setTimezone(value: string): Self = this.set("Timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+    @scala.inline
+    def setZipCode(value: string): Self = this.set("ZipCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipCode: Self = this.set("ZipCode", js.undefined)
+  }
+  
 }
 

@@ -4,45 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EditorContextSetContentsOptions extends js.Object {
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * 表示内容的delta对象
     */
-  var delta: js.UndefOr[js.Any] = js.undefined
+  var delta: js.UndefOr[js.Any] = js.native
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * 带标签的HTML内容
     */
-  var html: js.UndefOr[String] = js.undefined
+  var html: js.UndefOr[String] = js.native
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var success: js.UndefOr[js.Function0[Unit]] = js.native
 }
 
 object EditorContextSetContentsOptions {
   @scala.inline
-  def apply(
-    complete: () => Unit = null,
-    delta: js.Any = null,
-    fail: () => Unit = null,
-    html: String = null,
-    success: () => Unit = null
-  ): EditorContextSetContentsOptions = {
+  def apply(): EditorContextSetContentsOptions = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[EditorContextSetContentsOptions]
   }
+  @scala.inline
+  implicit class EditorContextSetContentsOptionsOps[Self <: EditorContextSetContentsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComplete: Self = this.set("complete", js.undefined)
+    @scala.inline
+    def setDelta(value: js.Any): Self = this.set("delta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelta: Self = this.set("delta", js.undefined)
+    @scala.inline
+    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteFail: Self = this.set("fail", js.undefined)
+    @scala.inline
+    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+  }
+  
 }
 

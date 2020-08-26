@@ -15,19 +15,5 @@ import scala.scalajs.js.annotation._
 class BatchShaderGenerator protected ()
   extends typings.pixiJs.PIXI.BatchShaderGenerator {
   def this(vertexSrc: String, fragTemplate: String) = this()
-  /**
-    * Reference to the fragement shader template. Must contain "%count%" and "%forloop%".
-    *
-    * @member {string} PIXI.BatchShaderGenerator#fragTemplate
-    */
-  /* CompleteClass */
-  override var fragTemplate: String = js.native
-  /**
-    * Reference to the vertex shader source.
-    *
-    * @member {string} PIXI.BatchShaderGenerator#vertexSrc
-    */
-  /* CompleteClass */
-  override var vertexSrc: String = js.native
 }
 

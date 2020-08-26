@@ -18,11 +18,34 @@ trait GetColumnStatisticsForTableResponse extends js.Object {
 
 object GetColumnStatisticsForTableResponse {
   @scala.inline
-  def apply(ColumnStatisticsList: ColumnStatisticsList = null, Errors: ColumnErrors = null): GetColumnStatisticsForTableResponse = {
+  def apply(): GetColumnStatisticsForTableResponse = {
     val __obj = js.Dynamic.literal()
-    if (ColumnStatisticsList != null) __obj.updateDynamic("ColumnStatisticsList")(ColumnStatisticsList.asInstanceOf[js.Any])
-    if (Errors != null) __obj.updateDynamic("Errors")(Errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetColumnStatisticsForTableResponse]
   }
+  @scala.inline
+  implicit class GetColumnStatisticsForTableResponseOps[Self <: GetColumnStatisticsForTableResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnStatisticsListVarargs(value: ColumnStatistics*): Self = this.set("ColumnStatisticsList", js.Array(value :_*))
+    @scala.inline
+    def setColumnStatisticsList(value: ColumnStatisticsList): Self = this.set("ColumnStatisticsList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnStatisticsList: Self = this.set("ColumnStatisticsList", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: ColumnError*): Self = this.set("Errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: ColumnErrors): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("Errors", js.undefined)
+  }
+  
 }
 

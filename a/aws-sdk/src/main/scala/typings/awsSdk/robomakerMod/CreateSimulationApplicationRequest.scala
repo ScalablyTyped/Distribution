@@ -38,14 +38,41 @@ object CreateSimulationApplicationRequest {
     name: Name,
     robotSoftwareSuite: RobotSoftwareSuite,
     simulationSoftwareSuite: SimulationSoftwareSuite,
-    sources: SourceConfigs,
-    renderingEngine: RenderingEngine = null,
-    tags: TagMap = null
+    sources: SourceConfigs
   ): CreateSimulationApplicationRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], robotSoftwareSuite = robotSoftwareSuite.asInstanceOf[js.Any], simulationSoftwareSuite = simulationSoftwareSuite.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
-    if (renderingEngine != null) __obj.updateDynamic("renderingEngine")(renderingEngine.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSimulationApplicationRequest]
   }
+  @scala.inline
+  implicit class CreateSimulationApplicationRequestOps[Self <: CreateSimulationApplicationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRobotSoftwareSuite(value: RobotSoftwareSuite): Self = this.set("robotSoftwareSuite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSimulationSoftwareSuite(value: SimulationSoftwareSuite): Self = this.set("simulationSoftwareSuite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourcesVarargs(value: SourceConfig*): Self = this.set("sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: SourceConfigs): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderingEngine(value: RenderingEngine): Self = this.set("renderingEngine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderingEngine: Self = this.set("renderingEngine", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

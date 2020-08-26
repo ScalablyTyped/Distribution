@@ -20,7 +20,7 @@ object webGLProgramsMod extends js.Object {
     def acquireProgram(parameters: js.Any, cacheKey: String): WebGLProgram = js.native
     def getParameters(
       material: Material,
-      lights: js.Array[js.Object],
+      lights: js.Any,
       shadows: js.Array[js.Object],
       scene: Scene,
       nClipPlanes: Double,
@@ -28,6 +28,7 @@ object webGLProgramsMod extends js.Object {
       `object`: js.Any
     ): js.Any = js.native
     def getProgramCacheKey(parameters: js.Any): String = js.native
+    def getUniforms(material: Material): js.Object = js.native
     def releaseProgram(program: WebGLProgram): Unit = js.native
   }
   

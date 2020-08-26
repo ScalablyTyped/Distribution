@@ -61,6 +61,7 @@ import scala.scalajs.js.annotation._
 class Loader ()
   extends typings.pixiJs.PIXI.Loader {
   def this(baseUrl: String) = this()
+  def this(baseUrl: js.UndefOr[scala.Nothing], concurrency: Double) = this()
   def this(baseUrl: String, concurrency: Double) = this()
 }
 

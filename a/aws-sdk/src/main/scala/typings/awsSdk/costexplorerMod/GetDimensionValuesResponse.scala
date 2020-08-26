@@ -26,15 +26,34 @@ trait GetDimensionValuesResponse extends js.Object {
 
 object GetDimensionValuesResponse {
   @scala.inline
-  def apply(
-    DimensionValues: DimensionValuesWithAttributesList,
-    ReturnSize: PageSize,
-    TotalSize: PageSize,
-    NextPageToken: NextPageToken = null
-  ): GetDimensionValuesResponse = {
+  def apply(DimensionValues: DimensionValuesWithAttributesList, ReturnSize: PageSize, TotalSize: PageSize): GetDimensionValuesResponse = {
     val __obj = js.Dynamic.literal(DimensionValues = DimensionValues.asInstanceOf[js.Any], ReturnSize = ReturnSize.asInstanceOf[js.Any], TotalSize = TotalSize.asInstanceOf[js.Any])
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDimensionValuesResponse]
   }
+  @scala.inline
+  implicit class GetDimensionValuesResponseOps[Self <: GetDimensionValuesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionValuesVarargs(value: DimensionValuesWithAttributes*): Self = this.set("DimensionValues", js.Array(value :_*))
+    @scala.inline
+    def setDimensionValues(value: DimensionValuesWithAttributesList): Self = this.set("DimensionValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReturnSize(value: PageSize): Self = this.set("ReturnSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTotalSize(value: PageSize): Self = this.set("TotalSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+  }
+  
 }
 

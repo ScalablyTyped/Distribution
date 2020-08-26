@@ -4,54 +4,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccessibleNavigateSkipItems extends js.Object {
-  var accessibleNavigateSkipItems: js.UndefOr[String] = js.undefined
-  var accessibleReorderAfterItem: js.UndefOr[String] = js.undefined
-  var accessibleReorderBeforeItem: js.UndefOr[String] = js.undefined
-  var accessibleReorderInsideItem: js.UndefOr[String] = js.undefined
-  var accessibleReorderTouchInstructionText: js.UndefOr[String] = js.undefined
-  var indexerCharacters: js.UndefOr[String] = js.undefined
-  var labelCopy: js.UndefOr[String] = js.undefined
-  var labelCut: js.UndefOr[String] = js.undefined
-  var labelPaste: js.UndefOr[String] = js.undefined
-  var labelPasteAfter: js.UndefOr[String] = js.undefined
-  var labelPasteBefore: js.UndefOr[String] = js.undefined
-  var msgFetchingData: js.UndefOr[String] = js.undefined
-  var msgNoData: js.UndefOr[String] = js.undefined
+  var accessibleNavigateSkipItems: js.UndefOr[String] = js.native
+  var accessibleReorderAfterItem: js.UndefOr[String] = js.native
+  var accessibleReorderBeforeItem: js.UndefOr[String] = js.native
+  var accessibleReorderInsideItem: js.UndefOr[String] = js.native
+  var accessibleReorderTouchInstructionText: js.UndefOr[String] = js.native
+  var indexerCharacters: js.UndefOr[String] = js.native
+  var labelCopy: js.UndefOr[String] = js.native
+  var labelCut: js.UndefOr[String] = js.native
+  var labelPaste: js.UndefOr[String] = js.native
+  var labelPasteAfter: js.UndefOr[String] = js.native
+  var labelPasteBefore: js.UndefOr[String] = js.native
+  var msgFetchingData: js.UndefOr[String] = js.native
+  var msgNoData: js.UndefOr[String] = js.native
 }
 
 object AccessibleNavigateSkipItems {
   @scala.inline
-  def apply(
-    accessibleNavigateSkipItems: String = null,
-    accessibleReorderAfterItem: String = null,
-    accessibleReorderBeforeItem: String = null,
-    accessibleReorderInsideItem: String = null,
-    accessibleReorderTouchInstructionText: String = null,
-    indexerCharacters: String = null,
-    labelCopy: String = null,
-    labelCut: String = null,
-    labelPaste: String = null,
-    labelPasteAfter: String = null,
-    labelPasteBefore: String = null,
-    msgFetchingData: String = null,
-    msgNoData: String = null
-  ): AccessibleNavigateSkipItems = {
+  def apply(): AccessibleNavigateSkipItems = {
     val __obj = js.Dynamic.literal()
-    if (accessibleNavigateSkipItems != null) __obj.updateDynamic("accessibleNavigateSkipItems")(accessibleNavigateSkipItems.asInstanceOf[js.Any])
-    if (accessibleReorderAfterItem != null) __obj.updateDynamic("accessibleReorderAfterItem")(accessibleReorderAfterItem.asInstanceOf[js.Any])
-    if (accessibleReorderBeforeItem != null) __obj.updateDynamic("accessibleReorderBeforeItem")(accessibleReorderBeforeItem.asInstanceOf[js.Any])
-    if (accessibleReorderInsideItem != null) __obj.updateDynamic("accessibleReorderInsideItem")(accessibleReorderInsideItem.asInstanceOf[js.Any])
-    if (accessibleReorderTouchInstructionText != null) __obj.updateDynamic("accessibleReorderTouchInstructionText")(accessibleReorderTouchInstructionText.asInstanceOf[js.Any])
-    if (indexerCharacters != null) __obj.updateDynamic("indexerCharacters")(indexerCharacters.asInstanceOf[js.Any])
-    if (labelCopy != null) __obj.updateDynamic("labelCopy")(labelCopy.asInstanceOf[js.Any])
-    if (labelCut != null) __obj.updateDynamic("labelCut")(labelCut.asInstanceOf[js.Any])
-    if (labelPaste != null) __obj.updateDynamic("labelPaste")(labelPaste.asInstanceOf[js.Any])
-    if (labelPasteAfter != null) __obj.updateDynamic("labelPasteAfter")(labelPasteAfter.asInstanceOf[js.Any])
-    if (labelPasteBefore != null) __obj.updateDynamic("labelPasteBefore")(labelPasteBefore.asInstanceOf[js.Any])
-    if (msgFetchingData != null) __obj.updateDynamic("msgFetchingData")(msgFetchingData.asInstanceOf[js.Any])
-    if (msgNoData != null) __obj.updateDynamic("msgNoData")(msgNoData.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibleNavigateSkipItems]
   }
+  @scala.inline
+  implicit class AccessibleNavigateSkipItemsOps[Self <: AccessibleNavigateSkipItems] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessibleNavigateSkipItems(value: String): Self = this.set("accessibleNavigateSkipItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibleNavigateSkipItems: Self = this.set("accessibleNavigateSkipItems", js.undefined)
+    @scala.inline
+    def setAccessibleReorderAfterItem(value: String): Self = this.set("accessibleReorderAfterItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibleReorderAfterItem: Self = this.set("accessibleReorderAfterItem", js.undefined)
+    @scala.inline
+    def setAccessibleReorderBeforeItem(value: String): Self = this.set("accessibleReorderBeforeItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibleReorderBeforeItem: Self = this.set("accessibleReorderBeforeItem", js.undefined)
+    @scala.inline
+    def setAccessibleReorderInsideItem(value: String): Self = this.set("accessibleReorderInsideItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibleReorderInsideItem: Self = this.set("accessibleReorderInsideItem", js.undefined)
+    @scala.inline
+    def setAccessibleReorderTouchInstructionText(value: String): Self = this.set("accessibleReorderTouchInstructionText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibleReorderTouchInstructionText: Self = this.set("accessibleReorderTouchInstructionText", js.undefined)
+    @scala.inline
+    def setIndexerCharacters(value: String): Self = this.set("indexerCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexerCharacters: Self = this.set("indexerCharacters", js.undefined)
+    @scala.inline
+    def setLabelCopy(value: String): Self = this.set("labelCopy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelCopy: Self = this.set("labelCopy", js.undefined)
+    @scala.inline
+    def setLabelCut(value: String): Self = this.set("labelCut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelCut: Self = this.set("labelCut", js.undefined)
+    @scala.inline
+    def setLabelPaste(value: String): Self = this.set("labelPaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelPaste: Self = this.set("labelPaste", js.undefined)
+    @scala.inline
+    def setLabelPasteAfter(value: String): Self = this.set("labelPasteAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelPasteAfter: Self = this.set("labelPasteAfter", js.undefined)
+    @scala.inline
+    def setLabelPasteBefore(value: String): Self = this.set("labelPasteBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelPasteBefore: Self = this.set("labelPasteBefore", js.undefined)
+    @scala.inline
+    def setMsgFetchingData(value: String): Self = this.set("msgFetchingData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFetchingData: Self = this.set("msgFetchingData", js.undefined)
+    @scala.inline
+    def setMsgNoData(value: String): Self = this.set("msgNoData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgNoData: Self = this.set("msgNoData", js.undefined)
+  }
+  
 }
 

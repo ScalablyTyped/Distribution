@@ -28,6 +28,7 @@ class ResourceEnterprisesPolicies protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceEnterprisesPoliciesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceEnterprisesPoliciesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -55,6 +56,7 @@ class ResourceEnterprisesPolicies protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPolicy] = js.native
   def get(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def get(params: ParamsResourceEnterprisesPoliciesGet): GaxiosPromise[SchemaPolicy] = js.native
   def get(params: ParamsResourceEnterprisesPoliciesGet, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def get(
@@ -84,6 +86,7 @@ class ResourceEnterprisesPolicies protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListPoliciesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListPoliciesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListPoliciesResponse] = js.native
   def list(params: ParamsResourceEnterprisesPoliciesList): GaxiosPromise[SchemaListPoliciesResponse] = js.native
   def list(
     params: ParamsResourceEnterprisesPoliciesList,
@@ -116,6 +119,7 @@ class ResourceEnterprisesPolicies protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaPolicy] = js.native
   def patch(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def patch(params: ParamsResourceEnterprisesPoliciesPatch): GaxiosPromise[SchemaPolicy] = js.native
   def patch(params: ParamsResourceEnterprisesPoliciesPatch, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def patch(

@@ -35,12 +35,22 @@ trait ModelView extends js.Object {
     * Raised when the view closed.
     */
   def onClosed(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onClosed(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onClosed(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onClosed(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * Raised when the model view's valid property changes
     */
   def onValidityChanged(listener: js.Function1[/* e */ Boolean, _]): Disposable = js.native
+  def onValidityChanged(
+    listener: js.Function1[/* e */ Boolean, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any): Disposable = js.native
   def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**

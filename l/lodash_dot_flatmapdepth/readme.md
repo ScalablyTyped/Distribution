@@ -12,7 +12,7 @@ The lodash method `_.flatMapDepth` exported as a module.
 | Keywords           | lodash-modularized, flatmapdepth |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 432 |
+| # downloads        | 439 |
 | # stars            | 0 |
 
 ## Links

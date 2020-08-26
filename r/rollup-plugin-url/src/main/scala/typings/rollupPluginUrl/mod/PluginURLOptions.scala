@@ -4,39 +4,72 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PluginURLOptions extends js.Object {
-  var destDist: js.UndefOr[String] = js.undefined
-  var emitFile: js.UndefOr[Boolean] = js.undefined
-  var exclude: js.UndefOr[js.Array[String]] = js.undefined
-  var fileName: js.UndefOr[String] = js.undefined
-  var include: js.UndefOr[js.Array[String]] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var publicPath: js.UndefOr[String] = js.undefined
-  var sourceDir: js.UndefOr[String] = js.undefined
+  var destDist: js.UndefOr[String] = js.native
+  var emitFile: js.UndefOr[Boolean] = js.native
+  var exclude: js.UndefOr[js.Array[String]] = js.native
+  var fileName: js.UndefOr[String] = js.native
+  var include: js.UndefOr[js.Array[String]] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var publicPath: js.UndefOr[String] = js.native
+  var sourceDir: js.UndefOr[String] = js.native
 }
 
 object PluginURLOptions {
   @scala.inline
-  def apply(
-    destDist: String = null,
-    emitFile: js.UndefOr[Boolean] = js.undefined,
-    exclude: js.Array[String] = null,
-    fileName: String = null,
-    include: js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    publicPath: String = null,
-    sourceDir: String = null
-  ): PluginURLOptions = {
+  def apply(): PluginURLOptions = {
     val __obj = js.Dynamic.literal()
-    if (destDist != null) __obj.updateDynamic("destDist")(destDist.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitFile)) __obj.updateDynamic("emitFile")(emitFile.get.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
-    if (sourceDir != null) __obj.updateDynamic("sourceDir")(sourceDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginURLOptions]
   }
+  @scala.inline
+  implicit class PluginURLOptionsOps[Self <: PluginURLOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestDist(value: String): Self = this.set("destDist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestDist: Self = this.set("destDist", js.undefined)
+    @scala.inline
+    def setEmitFile(value: Boolean): Self = this.set("emitFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmitFile: Self = this.set("emitFile", js.undefined)
+    @scala.inline
+    def setExcludeVarargs(value: String*): Self = this.set("exclude", js.Array(value :_*))
+    @scala.inline
+    def setExclude(value: js.Array[String]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclude: Self = this.set("exclude", js.undefined)
+    @scala.inline
+    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileName: Self = this.set("fileName", js.undefined)
+    @scala.inline
+    def setIncludeVarargs(value: String*): Self = this.set("include", js.Array(value :_*))
+    @scala.inline
+    def setInclude(value: js.Array[String]): Self = this.set("include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setPublicPath(value: String): Self = this.set("publicPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicPath: Self = this.set("publicPath", js.undefined)
+    @scala.inline
+    def setSourceDir(value: String): Self = this.set("sourceDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDir: Self = this.set("sourceDir", js.undefined)
+  }
+  
 }
 

@@ -96,6 +96,7 @@ trait ClassWebSocket extends ClassEventEmitter {
     * 
     */
   def close(): Unit = js.native
+  def close(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, reason: String): Unit = js.native
   /**

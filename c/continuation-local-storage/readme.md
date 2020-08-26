@@ -12,7 +12,7 @@ userland implementation of https://github.com/joyent/node/issues/5243
 | Keywords           | threading, shared, context, domains, tracing, logging |
 | # releases         | 1 |
 | # dependents       | 252 |
-| # downloads        | 29837865 |
+| # downloads        | 30906144 |
 | # stars            | 34 |
 
 ## Links

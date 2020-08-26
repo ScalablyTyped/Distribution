@@ -12,7 +12,7 @@ Define props of React components by ES7 decorators
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 20 |
-| # downloads        | 2126 |
+| # downloads        | 2056 |
 | # stars            | 0 |
 
 ## Links

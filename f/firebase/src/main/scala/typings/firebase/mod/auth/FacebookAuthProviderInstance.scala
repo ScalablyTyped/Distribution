@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("firebase", "auth.FacebookAuthProvider_Instance")
 @js.native
 class FacebookAuthProviderInstance () extends AuthProvider {
-  /* CompleteClass */
-  override var providerId: String = js.native
   /**
     * @param scope Facebook OAuth scope.
     * @return The provider instance itself.

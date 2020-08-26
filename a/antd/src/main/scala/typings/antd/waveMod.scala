@@ -23,10 +23,10 @@ object waveMod extends js.Object {
     var clickWaveTimeoutId: js.Any = js.native
     @JSName("context")
     var context_Wave: ConfigConsumerProps = js.native
-    var csp: js.UndefOr[js.Any] = js.native
+    var csp: js.Any = js.native
     var destroyed: js.Any = js.native
     var extraNode: js.Any = js.native
-    var instance: js.UndefOr[js.Any] = js.native
+    var instance: js.Any = js.native
     def bindAnimationEvent(node: HTMLElement): js.UndefOr[Cancel] = js.native
     @JSName("componentDidMount")
     def componentDidMount_MWave(): Unit = js.native

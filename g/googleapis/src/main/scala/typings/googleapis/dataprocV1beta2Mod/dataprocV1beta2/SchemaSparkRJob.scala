@@ -48,22 +48,52 @@ trait SchemaSparkRJob extends js.Object {
 
 object SchemaSparkRJob {
   @scala.inline
-  def apply(
-    archiveUris: js.Array[String] = null,
-    args: js.Array[String] = null,
-    fileUris: js.Array[String] = null,
-    loggingConfig: SchemaLoggingConfig = null,
-    mainRFileUri: String = null,
-    properties: StringDictionary[String] = null
-  ): SchemaSparkRJob = {
+  def apply(): SchemaSparkRJob = {
     val __obj = js.Dynamic.literal()
-    if (archiveUris != null) __obj.updateDynamic("archiveUris")(archiveUris.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris.asInstanceOf[js.Any])
-    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
-    if (mainRFileUri != null) __obj.updateDynamic("mainRFileUri")(mainRFileUri.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSparkRJob]
   }
+  @scala.inline
+  implicit class SchemaSparkRJobOps[Self <: SchemaSparkRJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveUrisVarargs(value: String*): Self = this.set("archiveUris", js.Array(value :_*))
+    @scala.inline
+    def setArchiveUris(value: js.Array[String]): Self = this.set("archiveUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveUris: Self = this.set("archiveUris", js.undefined)
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setFileUrisVarargs(value: String*): Self = this.set("fileUris", js.Array(value :_*))
+    @scala.inline
+    def setFileUris(value: js.Array[String]): Self = this.set("fileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileUris: Self = this.set("fileUris", js.undefined)
+    @scala.inline
+    def setLoggingConfig(value: SchemaLoggingConfig): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
+    @scala.inline
+    def setMainRFileUri(value: String): Self = this.set("mainRFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainRFileUri: Self = this.set("mainRFileUri", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+  }
+  
 }
 

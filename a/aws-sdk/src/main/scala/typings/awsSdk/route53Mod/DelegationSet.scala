@@ -22,11 +22,34 @@ trait DelegationSet extends js.Object {
 
 object DelegationSet {
   @scala.inline
-  def apply(NameServers: DelegationSetNameServers, CallerReference: Nonce = null, Id: ResourceId = null): DelegationSet = {
+  def apply(NameServers: DelegationSetNameServers): DelegationSet = {
     val __obj = js.Dynamic.literal(NameServers = NameServers.asInstanceOf[js.Any])
-    if (CallerReference != null) __obj.updateDynamic("CallerReference")(CallerReference.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelegationSet]
   }
+  @scala.inline
+  implicit class DelegationSetOps[Self <: DelegationSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNameServersVarargs(value: DNSName*): Self = this.set("NameServers", js.Array(value :_*))
+    @scala.inline
+    def setNameServers(value: DelegationSetNameServers): Self = this.set("NameServers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCallerReference(value: Nonce): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallerReference: Self = this.set("CallerReference", js.undefined)
+    @scala.inline
+    def setId(value: ResourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+  }
+  
 }
 

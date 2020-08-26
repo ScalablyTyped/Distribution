@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Create a new Http instance. By default, a PlayCanvas application creates an instance of this
-  object at `pc.http`.
+  * object at `pc.http`.
   */
 @JSImport("playcanvas", "Http")
 @js.native

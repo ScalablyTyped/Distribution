@@ -23,6 +23,7 @@ class Zone protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: ZoneArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ZoneArgs, opts: CustomResourceOptions) = this()
   /**
     * A comment for the hosted zone. Defaults to 'Managed by Pulumi'.
@@ -48,9 +49,9 @@ class Zone protected () extends CustomResource {
   /**
     * A mapping of tags to assign to the zone.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
-    * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegationSetId` argument in this resource and any [`aws.route53.ZoneAssociation` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
+    * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegationSetId` argument in this resource and any `aws.route53.ZoneAssociation` resource specifying the same zone ID. Detailed below.
     */
   val vpcs: Output_[js.UndefOr[js.Array[ZoneVpc]]] = js.native
   /**
@@ -70,8 +71,10 @@ object Zone extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Zone = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Zone = js.native
   def get(name: String, id: Input[ID], state: ZoneState): Zone = js.native
   def get(name: String, id: Input[ID], state: ZoneState, opts: CustomResourceOptions): Zone = js.native
   /**

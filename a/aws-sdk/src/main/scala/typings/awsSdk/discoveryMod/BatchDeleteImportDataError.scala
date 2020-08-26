@@ -22,16 +22,34 @@ trait BatchDeleteImportDataError extends js.Object {
 
 object BatchDeleteImportDataError {
   @scala.inline
-  def apply(
-    errorCode: BatchDeleteImportDataErrorCode = null,
-    errorDescription: BatchDeleteImportDataErrorDescription = null,
-    importTaskId: ImportTaskIdentifier = null
-  ): BatchDeleteImportDataError = {
+  def apply(): BatchDeleteImportDataError = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription.asInstanceOf[js.Any])
-    if (importTaskId != null) __obj.updateDynamic("importTaskId")(importTaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteImportDataError]
   }
+  @scala.inline
+  implicit class BatchDeleteImportDataErrorOps[Self <: BatchDeleteImportDataError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: BatchDeleteImportDataErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setErrorDescription(value: BatchDeleteImportDataErrorDescription): Self = this.set("errorDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorDescription: Self = this.set("errorDescription", js.undefined)
+    @scala.inline
+    def setImportTaskId(value: ImportTaskIdentifier): Self = this.set("importTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportTaskId: Self = this.set("importTaskId", js.undefined)
+  }
+  
 }
 

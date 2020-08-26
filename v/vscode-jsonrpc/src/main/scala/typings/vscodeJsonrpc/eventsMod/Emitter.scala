@@ -10,7 +10,7 @@ class Emitter[T] () extends js.Object {
   def this(_options: EmitterOptions) = this()
   var _callbacks: js.Any = js.native
   var _event: js.Any = js.native
-  var _options: js.UndefOr[js.Any] = js.native
+  var _options: js.Any = js.native
   def dispose(): Unit = js.native
   /**
     * For the public to allow to subscribe

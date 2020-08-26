@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JwtToken extends js.Object {
-  var aud: js.UndefOr[String] = js.undefined
-  var exp: js.UndefOr[Double] = js.undefined
-  var iat: js.UndefOr[Double] = js.undefined
-  var iss: js.UndefOr[String] = js.undefined
-  var jti: js.UndefOr[String] = js.undefined
-  var nbf: js.UndefOr[Double] = js.undefined
-  var sub: js.UndefOr[String] = js.undefined
-  var unique_name: js.UndefOr[String] = js.undefined
+  var aud: js.UndefOr[String] = js.native
+  var exp: js.UndefOr[Double] = js.native
+  var iat: js.UndefOr[Double] = js.native
+  var iss: js.UndefOr[String] = js.native
+  var jti: js.UndefOr[String] = js.native
+  var nbf: js.UndefOr[Double] = js.native
+  var sub: js.UndefOr[String] = js.native
+  var unique_name: js.UndefOr[String] = js.native
 }
 
 object JwtToken {
   @scala.inline
-  def apply(
-    aud: String = null,
-    exp: js.UndefOr[Double] = js.undefined,
-    iat: js.UndefOr[Double] = js.undefined,
-    iss: String = null,
-    jti: String = null,
-    nbf: js.UndefOr[Double] = js.undefined,
-    sub: String = null,
-    unique_name: String = null
-  ): JwtToken = {
+  def apply(): JwtToken = {
     val __obj = js.Dynamic.literal()
-    if (aud != null) __obj.updateDynamic("aud")(aud.asInstanceOf[js.Any])
-    if (!js.isUndefined(exp)) __obj.updateDynamic("exp")(exp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.get.asInstanceOf[js.Any])
-    if (iss != null) __obj.updateDynamic("iss")(iss.asInstanceOf[js.Any])
-    if (jti != null) __obj.updateDynamic("jti")(jti.asInstanceOf[js.Any])
-    if (!js.isUndefined(nbf)) __obj.updateDynamic("nbf")(nbf.get.asInstanceOf[js.Any])
-    if (sub != null) __obj.updateDynamic("sub")(sub.asInstanceOf[js.Any])
-    if (unique_name != null) __obj.updateDynamic("unique_name")(unique_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[JwtToken]
   }
+  @scala.inline
+  implicit class JwtTokenOps[Self <: JwtToken] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAud(value: String): Self = this.set("aud", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAud: Self = this.set("aud", js.undefined)
+    @scala.inline
+    def setExp(value: Double): Self = this.set("exp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExp: Self = this.set("exp", js.undefined)
+    @scala.inline
+    def setIat(value: Double): Self = this.set("iat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIat: Self = this.set("iat", js.undefined)
+    @scala.inline
+    def setIss(value: String): Self = this.set("iss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIss: Self = this.set("iss", js.undefined)
+    @scala.inline
+    def setJti(value: String): Self = this.set("jti", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJti: Self = this.set("jti", js.undefined)
+    @scala.inline
+    def setNbf(value: Double): Self = this.set("nbf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNbf: Self = this.set("nbf", js.undefined)
+    @scala.inline
+    def setSub(value: String): Self = this.set("sub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSub: Self = this.set("sub", js.undefined)
+    @scala.inline
+    def setUnique_name(value: String): Self = this.set("unique_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnique_name: Self = this.set("unique_name", js.undefined)
+  }
+  
 }
 

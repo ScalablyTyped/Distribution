@@ -55,7 +55,12 @@ trait View extends js.Object {
   	 */
   /* Template rendered by view */
   def tmpl(): String = js.native
+  def tmpl(data: js.UndefOr[scala.Nothing], helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
+  def tmpl(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_]): String = js.native
+  def tmpl(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
+  def tmpl(data: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def tmpl(data: js.Any): String = js.native
+  def tmpl(data: js.Any, helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def tmpl(data: js.Any, helpersOrContext: Hash[_]): String = js.native
   def tmpl(data: js.Any, helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
   def tmpl(data: js.Any, noIteration: Boolean): String = js.native

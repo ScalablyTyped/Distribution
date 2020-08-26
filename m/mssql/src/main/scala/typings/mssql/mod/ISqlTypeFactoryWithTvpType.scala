@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ISqlTypeFactoryWithTvpType extends ISqlTypeFactory {
+  def apply(): ISqlTypeWithTvpType = js.native
   def apply(tvpType: js.Any): ISqlTypeWithTvpType = js.native
 }
 

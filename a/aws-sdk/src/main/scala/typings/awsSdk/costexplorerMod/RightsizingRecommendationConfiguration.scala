@@ -22,5 +22,22 @@ object RightsizingRecommendationConfiguration {
     val __obj = js.Dynamic.literal(BenefitsConsidered = BenefitsConsidered.asInstanceOf[js.Any], RecommendationTarget = RecommendationTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightsizingRecommendationConfiguration]
   }
+  @scala.inline
+  implicit class RightsizingRecommendationConfigurationOps[Self <: RightsizingRecommendationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBenefitsConsidered(value: GenericBoolean): Self = this.set("BenefitsConsidered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecommendationTarget(value: RecommendationTarget): Self = this.set("RecommendationTarget", value.asInstanceOf[js.Any])
+  }
+  
 }
 

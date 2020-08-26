@@ -5,75 +5,128 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListViewOptions extends js.Object {
-  var appendOnRefresh: js.UndefOr[Boolean] = js.undefined
-  var autoBind: js.UndefOr[Boolean] = js.undefined
-  var click: js.UndefOr[js.Function1[/* e */ ListViewClickEvent, Unit]] = js.undefined
-  var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[DataSource | js.Any] = js.undefined
-  var endlessScroll: js.UndefOr[Boolean] = js.undefined
-  var filterable: js.UndefOr[Boolean | ListViewFilterable] = js.undefined
-  var fixedHeaders: js.UndefOr[Boolean] = js.undefined
-  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var itemChange: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
-  var loadMore: js.UndefOr[Boolean] = js.undefined
-  var messages: js.UndefOr[ListViewMessages] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var pullParameters: js.UndefOr[js.Function] = js.undefined
-  var pullToRefresh: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
-  var template: js.UndefOr[String | js.Function] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var virtualViewSize: js.UndefOr[Double] = js.undefined
+  var appendOnRefresh: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.native
+  var click: js.UndefOr[js.Function1[/* e */ ListViewClickEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var dataSource: js.UndefOr[DataSource | js.Any] = js.native
+  var endlessScroll: js.UndefOr[Boolean] = js.native
+  var filterable: js.UndefOr[Boolean | ListViewFilterable] = js.native
+  var fixedHeaders: js.UndefOr[Boolean] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var itemChange: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var loadMore: js.UndefOr[Boolean] = js.native
+  var messages: js.UndefOr[ListViewMessages] = js.native
+  var name: js.UndefOr[String] = js.native
+  var pullParameters: js.UndefOr[js.Function] = js.native
+  var pullToRefresh: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String | js.Function] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var virtualViewSize: js.UndefOr[Double] = js.native
 }
 
 object ListViewOptions {
   @scala.inline
-  def apply(
-    appendOnRefresh: js.UndefOr[Boolean] = js.undefined,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    click: /* e */ ListViewClickEvent => Unit = null,
-    dataBinding: /* e */ ListViewEvent => Unit = null,
-    dataBound: /* e */ ListViewEvent => Unit = null,
-    dataSource: DataSource | js.Any = null,
-    endlessScroll: js.UndefOr[Boolean] = js.undefined,
-    filterable: Boolean | ListViewFilterable = null,
-    fixedHeaders: js.UndefOr[Boolean] = js.undefined,
-    headerTemplate: String | js.Function = null,
-    itemChange: /* e */ ListViewEvent => Unit = null,
-    loadMore: js.UndefOr[Boolean] = js.undefined,
-    messages: ListViewMessages = null,
-    name: String = null,
-    pullParameters: js.Function = null,
-    pullToRefresh: js.UndefOr[Boolean] = js.undefined,
-    style: String = null,
-    template: String | js.Function = null,
-    `type`: String = null,
-    virtualViewSize: js.UndefOr[Double] = js.undefined
-  ): ListViewOptions = {
+  def apply(): ListViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendOnRefresh)) __obj.updateDynamic("appendOnRefresh")(appendOnRefresh.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(endlessScroll)) __obj.updateDynamic("endlessScroll")(endlessScroll.get.asInstanceOf[js.Any])
-    if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders.get.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (itemChange != null) __obj.updateDynamic("itemChange")(js.Any.fromFunction1(itemChange))
-    if (!js.isUndefined(loadMore)) __obj.updateDynamic("loadMore")(loadMore.get.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pullParameters != null) __obj.updateDynamic("pullParameters")(pullParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullToRefresh)) __obj.updateDynamic("pullToRefresh")(pullToRefresh.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtualViewSize)) __obj.updateDynamic("virtualViewSize")(virtualViewSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewOptions]
   }
+  @scala.inline
+  implicit class ListViewOptionsOps[Self <: ListViewOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendOnRefresh(value: Boolean): Self = this.set("appendOnRefresh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendOnRefresh: Self = this.set("appendOnRefresh", js.undefined)
+    @scala.inline
+    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    @scala.inline
+    def setClick(value: /* e */ ListViewClickEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setDataBinding(value: /* e */ ListViewEvent => Unit): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ ListViewEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: DataSource | js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setEndlessScroll(value: Boolean): Self = this.set("endlessScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndlessScroll: Self = this.set("endlessScroll", js.undefined)
+    @scala.inline
+    def setFilterable(value: Boolean | ListViewFilterable): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    @scala.inline
+    def setFixedHeaders(value: Boolean): Self = this.set("fixedHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedHeaders: Self = this.set("fixedHeaders", js.undefined)
+    @scala.inline
+    def setHeaderTemplate(value: String | js.Function): Self = this.set("headerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderTemplate: Self = this.set("headerTemplate", js.undefined)
+    @scala.inline
+    def setItemChange(value: /* e */ ListViewEvent => Unit): Self = this.set("itemChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemChange: Self = this.set("itemChange", js.undefined)
+    @scala.inline
+    def setLoadMore(value: Boolean): Self = this.set("loadMore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadMore: Self = this.set("loadMore", js.undefined)
+    @scala.inline
+    def setMessages(value: ListViewMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPullParameters(value: js.Function): Self = this.set("pullParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullParameters: Self = this.set("pullParameters", js.undefined)
+    @scala.inline
+    def setPullToRefresh(value: Boolean): Self = this.set("pullToRefresh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullToRefresh: Self = this.set("pullToRefresh", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVirtualViewSize(value: Double): Self = this.set("virtualViewSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualViewSize: Self = this.set("virtualViewSize", js.undefined)
+  }
+  
 }
 

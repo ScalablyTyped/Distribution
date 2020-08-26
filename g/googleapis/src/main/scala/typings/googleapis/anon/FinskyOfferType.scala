@@ -15,20 +15,42 @@ trait FinskyOfferType extends js.Object {
 
 object FinskyOfferType {
   @scala.inline
-  def apply(
-    finskyOfferType: js.UndefOr[Double] = js.undefined,
-    giftable: js.UndefOr[Boolean] = js.undefined,
-    listPrice: AmountInMicros = null,
-    rentalDuration: Unit = null,
-    retailPrice: AmountInMicros = null
-  ): FinskyOfferType = {
+  def apply(): FinskyOfferType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(finskyOfferType)) __obj.updateDynamic("finskyOfferType")(finskyOfferType.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(giftable)) __obj.updateDynamic("giftable")(giftable.get.asInstanceOf[js.Any])
-    if (listPrice != null) __obj.updateDynamic("listPrice")(listPrice.asInstanceOf[js.Any])
-    if (rentalDuration != null) __obj.updateDynamic("rentalDuration")(rentalDuration.asInstanceOf[js.Any])
-    if (retailPrice != null) __obj.updateDynamic("retailPrice")(retailPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinskyOfferType]
   }
+  @scala.inline
+  implicit class FinskyOfferTypeOps[Self <: FinskyOfferType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFinskyOfferType(value: Double): Self = this.set("finskyOfferType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinskyOfferType: Self = this.set("finskyOfferType", js.undefined)
+    @scala.inline
+    def setGiftable(value: Boolean): Self = this.set("giftable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGiftable: Self = this.set("giftable", js.undefined)
+    @scala.inline
+    def setListPrice(value: AmountInMicros): Self = this.set("listPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListPrice: Self = this.set("listPrice", js.undefined)
+    @scala.inline
+    def setRentalDuration(value: Unit): Self = this.set("rentalDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRentalDuration: Self = this.set("rentalDuration", js.undefined)
+    @scala.inline
+    def setRetailPrice(value: AmountInMicros): Self = this.set("retailPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetailPrice: Self = this.set("retailPrice", js.undefined)
+  }
+  
 }
 

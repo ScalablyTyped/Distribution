@@ -22,14 +22,30 @@ trait PutEmailIdentityDkimSigningAttributesRequest extends js.Object {
 
 object PutEmailIdentityDkimSigningAttributesRequest {
   @scala.inline
-  def apply(
-    EmailIdentity: Identity,
-    SigningAttributesOrigin: DkimSigningAttributesOrigin,
-    SigningAttributes: DkimSigningAttributes = null
-  ): PutEmailIdentityDkimSigningAttributesRequest = {
+  def apply(EmailIdentity: Identity, SigningAttributesOrigin: DkimSigningAttributesOrigin): PutEmailIdentityDkimSigningAttributesRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any], SigningAttributesOrigin = SigningAttributesOrigin.asInstanceOf[js.Any])
-    if (SigningAttributes != null) __obj.updateDynamic("SigningAttributes")(SigningAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEmailIdentityDkimSigningAttributesRequest]
   }
+  @scala.inline
+  implicit class PutEmailIdentityDkimSigningAttributesRequestOps[Self <: PutEmailIdentityDkimSigningAttributesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailIdentity(value: Identity): Self = this.set("EmailIdentity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSigningAttributesOrigin(value: DkimSigningAttributesOrigin): Self = this.set("SigningAttributesOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSigningAttributes(value: DkimSigningAttributes): Self = this.set("SigningAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningAttributes: Self = this.set("SigningAttributes", js.undefined)
+  }
+  
 }
 

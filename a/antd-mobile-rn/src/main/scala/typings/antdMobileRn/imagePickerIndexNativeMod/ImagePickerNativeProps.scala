@@ -6,31 +6,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ImagePickerNativeProps extends ImagePickerPropTypes {
   @JSName("styles")
-  var styles_ImagePickerNativeProps: js.UndefOr[IImagePickerStyle] = js.undefined
+  var styles_ImagePickerNativeProps: js.UndefOr[IImagePickerStyle] = js.native
 }
 
 object ImagePickerNativeProps {
   @scala.inline
-  def apply(
-    files: js.Array[js.Object] = null,
-    onAddImageClick: () => Unit = null,
-    onChange: (/* files */ js.Array[js.Object], /* operationType */ String, /* index */ js.UndefOr[Double]) => Unit = null,
-    onFail: /* msg */ String => Unit = null,
-    onImageClick: (/* index */ js.UndefOr[Double], /* files */ js.UndefOr[js.Array[js.Object]]) => Unit = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    styles: IImagePickerStyle = null
-  ): ImagePickerNativeProps = {
+  def apply(): ImagePickerNativeProps = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (onAddImageClick != null) __obj.updateDynamic("onAddImageClick")(js.Any.fromFunction0(onAddImageClick))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
-    if (onFail != null) __obj.updateDynamic("onFail")(js.Any.fromFunction1(onFail))
-    if (onImageClick != null) __obj.updateDynamic("onImageClick")(js.Any.fromFunction2(onImageClick))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePickerNativeProps]
   }
+  @scala.inline
+  implicit class ImagePickerNativePropsOps[Self <: ImagePickerNativeProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStyles(value: IImagePickerStyle): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+  }
+  
 }
 

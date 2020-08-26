@@ -1,17 +1,14 @@
 package typings.yaml.parseCstMod.CST
 
-import typings.yaml.anon.Errors
-import typings.yaml.anon.Handle
-import typings.yaml.anon.Verbatim
 import typings.yaml.utilMod.Type.QUOTE_SINGLE
-import typings.yaml.utilMod.YAMLSyntaxError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QuoteSingle extends QuoteValue {
   @JSName("type")
-  var type_QuoteSingle: QUOTE_SINGLE
+  var type_QuoteSingle: QUOTE_SINGLE = js.native
 }
 
 object QuoteSingle {
@@ -22,21 +19,26 @@ object QuoteSingle {
     jsonLike: Boolean,
     props: js.Array[Range],
     `type`: QUOTE_SINGLE,
-    valueRangeContainsNewline: Boolean,
-    anchor: String = null,
-    comment: String = null,
-    context: ParseContext = null,
-    error: YAMLSyntaxError = null,
-    range: Range = null,
-    rawValue: String = null,
-    strValue: String | Errors = null,
-    tag: Verbatim | Handle = null,
-    value: String = null,
-    valueRange: Range = null
+    valueRangeContainsNewline: Boolean
   ): QuoteSingle = {
-    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any], anchor = anchor.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], strValue = strValue.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueRange = valueRange.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuoteSingle]
   }
+  @scala.inline
+  implicit class QuoteSingleOps[Self <: QuoteSingle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: QUOTE_SINGLE): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

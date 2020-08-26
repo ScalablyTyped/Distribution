@@ -18,14 +18,30 @@ trait FleetResourceCreationLimitPolicy extends js.Object {
 
 object FleetResourceCreationLimitPolicy {
   @scala.inline
-  def apply(
-    newGameSessionsPerCreator: js.UndefOr[Double] = js.undefined,
-    policyPeriodInMinutes: js.UndefOr[Double] = js.undefined
-  ): FleetResourceCreationLimitPolicy = {
+  def apply(): FleetResourceCreationLimitPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(newGameSessionsPerCreator)) __obj.updateDynamic("newGameSessionsPerCreator")(newGameSessionsPerCreator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(policyPeriodInMinutes)) __obj.updateDynamic("policyPeriodInMinutes")(policyPeriodInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetResourceCreationLimitPolicy]
   }
+  @scala.inline
+  implicit class FleetResourceCreationLimitPolicyOps[Self <: FleetResourceCreationLimitPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewGameSessionsPerCreator(value: Double): Self = this.set("newGameSessionsPerCreator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewGameSessionsPerCreator: Self = this.set("newGameSessionsPerCreator", js.undefined)
+    @scala.inline
+    def setPolicyPeriodInMinutes(value: Double): Self = this.set("policyPeriodInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyPeriodInMinutes: Self = this.set("policyPeriodInMinutes", js.undefined)
+  }
+  
 }
 

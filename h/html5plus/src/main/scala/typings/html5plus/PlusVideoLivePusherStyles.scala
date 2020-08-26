@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
   */
+@js.native
 trait PlusVideoLivePusherStyles extends js.Object {
   /**
     * 宽高比
@@ -16,14 +17,14 @@ trait PlusVideoLivePusherStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var aspect: js.UndefOr[String] = js.undefined
+  var aspect: js.UndefOr[String] = js.native
   /**
     * 自动聚集
     * 默认值为true。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `auto-focus`: js.UndefOr[Boolean] = js.undefined
+  var `auto-focus`: js.UndefOr[Boolean] = js.native
   /**
     * 是否美颜
     * 可取值0、1，其中0表示不使用美颜，1表示不使用美颜。
@@ -31,14 +32,14 @@ trait PlusVideoLivePusherStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var beauty: js.UndefOr[Double] = js.undefined
+  var beauty: js.UndefOr[Double] = js.native
   /**
     * 开启摄像头
     * 默认值为true。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var `enable-camera`: js.UndefOr[Boolean] = js.undefined
+  var `enable-camera`: js.UndefOr[Boolean] = js.native
   /**
     * LivePusher控件的高度
     * 可取值：
@@ -48,7 +49,7 @@ trait PlusVideoLivePusherStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var height: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String] = js.native
   /**
     * LivePusher控件左上角的水平偏移量
     * 可取值：
@@ -59,21 +60,21 @@ trait PlusVideoLivePusherStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var left: js.UndefOr[String] = js.undefined
+  var left: js.UndefOr[String] = js.native
   /**
     * 推流视频模式
     * 可取值：SD（标清）, HD（高清）, FHD（超清）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[String] = js.native
   /**
     * 是否静音
     * 默认值为false。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var muted: js.UndefOr[Boolean] = js.undefined
+  var muted: js.UndefOr[Boolean] = js.native
   /**
     * LivePusher控件在Webview窗口的布局模式
     * 可取值：
@@ -83,7 +84,7 @@ trait PlusVideoLivePusherStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /**
     * LivePusher控件左上角的垂直偏移量
     * 可取值：
@@ -93,14 +94,14 @@ trait PlusVideoLivePusherStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var top: js.UndefOr[String] = js.undefined
+  var top: js.UndefOr[String] = js.native
   /**
     * 推流地址
     * 支持RTMP协议。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
   /**
     * 是否美白
     * 可取值0、1、2、3、4、5，其中0表示不使用美白，其余值分别表示美白的程度，值越大美白程度越大。
@@ -108,7 +109,7 @@ trait PlusVideoLivePusherStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var whiteness: js.UndefOr[Double] = js.undefined
+  var whiteness: js.UndefOr[Double] = js.native
   /**
     * LivePusher控件的宽度
     * 可取值：
@@ -118,41 +119,79 @@ trait PlusVideoLivePusherStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
-  var width: js.UndefOr[String] = js.undefined
+  var width: js.UndefOr[String] = js.native
 }
 
 object PlusVideoLivePusherStyles {
   @scala.inline
-  def apply(
-    aspect: String = null,
-    `auto-focus`: js.UndefOr[Boolean] = js.undefined,
-    beauty: js.UndefOr[Double] = js.undefined,
-    `enable-camera`: js.UndefOr[Boolean] = js.undefined,
-    height: String = null,
-    left: String = null,
-    mode: String = null,
-    muted: js.UndefOr[Boolean] = js.undefined,
-    position: String = null,
-    top: String = null,
-    url: String = null,
-    whiteness: js.UndefOr[Double] = js.undefined,
-    width: String = null
-  ): PlusVideoLivePusherStyles = {
+  def apply(): PlusVideoLivePusherStyles = {
     val __obj = js.Dynamic.literal()
-    if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
-    if (!js.isUndefined(`auto-focus`)) __obj.updateDynamic("auto-focus")(`auto-focus`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(beauty)) __obj.updateDynamic("beauty")(beauty.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`enable-camera`)) __obj.updateDynamic("enable-camera")(`enable-camera`.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(whiteness)) __obj.updateDynamic("whiteness")(whiteness.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusVideoLivePusherStyles]
   }
+  @scala.inline
+  implicit class PlusVideoLivePusherStylesOps[Self <: PlusVideoLivePusherStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspect(value: String): Self = this.set("aspect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspect: Self = this.set("aspect", js.undefined)
+    @scala.inline
+    def `setAuto-focus`(value: Boolean): Self = this.set("auto-focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAuto-focus`: Self = this.set("auto-focus", js.undefined)
+    @scala.inline
+    def setBeauty(value: Double): Self = this.set("beauty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeauty: Self = this.set("beauty", js.undefined)
+    @scala.inline
+    def `setEnable-camera`(value: Boolean): Self = this.set("enable-camera", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteEnable-camera`: Self = this.set("enable-camera", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuted: Self = this.set("muted", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setTop(value: String): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setWhiteness(value: Double): Self = this.set("whiteness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhiteness: Self = this.set("whiteness", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

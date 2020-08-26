@@ -22,16 +22,34 @@ trait Location extends js.Object {
 
 object Location {
   @scala.inline
-  def apply(
-    filePath: Path = null,
-    filePosition: js.UndefOr[Position] = js.undefined,
-    relativeFileVersion: RelativeFileVersionEnum = null
-  ): Location = {
+  def apply(): Location = {
     val __obj = js.Dynamic.literal()
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(filePosition)) __obj.updateDynamic("filePosition")(filePosition.get.asInstanceOf[js.Any])
-    if (relativeFileVersion != null) __obj.updateDynamic("relativeFileVersion")(relativeFileVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
+  @scala.inline
+  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilePath(value: Path): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    @scala.inline
+    def setFilePosition(value: Position): Self = this.set("filePosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilePosition: Self = this.set("filePosition", js.undefined)
+    @scala.inline
+    def setRelativeFileVersion(value: RelativeFileVersionEnum): Self = this.set("relativeFileVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativeFileVersion: Self = this.set("relativeFileVersion", js.undefined)
+  }
+  
 }
 

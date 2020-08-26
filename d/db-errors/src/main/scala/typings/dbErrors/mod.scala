@@ -19,10 +19,6 @@ object mod extends js.Object {
   
   @js.native
   class DBError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var nativeError: Error = js.native
   }
   

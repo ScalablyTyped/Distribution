@@ -13,6 +13,7 @@ class default[TDescriptor /* <: Descriptor */] () extends Transport[TDescriptor]
 @js.native
 object default extends js.Object {
   def create(): js.Promise[Transport[Descriptor]] = js.native
+  def create(openTimeout: js.UndefOr[scala.Nothing], listenTimeout: Double): js.Promise[Transport[Descriptor]] = js.native
   def create(openTimeout: Double): js.Promise[Transport[Descriptor]] = js.native
   def create(openTimeout: Double, listenTimeout: Double): js.Promise[Transport[Descriptor]] = js.native
   def isSupported(): js.Promise[Boolean] = js.native

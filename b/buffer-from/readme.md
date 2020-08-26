@@ -11,8 +11,8 @@ A [ponyfill](https://ponyfill.com) for `Buffer.from`, uses native implementation
 | Full name          | buffer-from |
 | Keywords           | buffer, buffer from |
 | # releases         | 5 |
-| # dependents       | 117 |
-| # downloads        | 464896641 |
+| # dependents       | 120 |
+| # downloads        | 475712094 |
 | # stars            | 0 |
 
 ## Links

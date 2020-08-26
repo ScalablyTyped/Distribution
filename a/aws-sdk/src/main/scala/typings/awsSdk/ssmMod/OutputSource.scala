@@ -18,11 +18,30 @@ trait OutputSource extends js.Object {
 
 object OutputSource {
   @scala.inline
-  def apply(OutputSourceId: OutputSourceId = null, OutputSourceType: OutputSourceType = null): OutputSource = {
+  def apply(): OutputSource = {
     val __obj = js.Dynamic.literal()
-    if (OutputSourceId != null) __obj.updateDynamic("OutputSourceId")(OutputSourceId.asInstanceOf[js.Any])
-    if (OutputSourceType != null) __obj.updateDynamic("OutputSourceType")(OutputSourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputSource]
   }
+  @scala.inline
+  implicit class OutputSourceOps[Self <: OutputSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOutputSourceId(value: OutputSourceId): Self = this.set("OutputSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputSourceId: Self = this.set("OutputSourceId", js.undefined)
+    @scala.inline
+    def setOutputSourceType(value: OutputSourceType): Self = this.set("OutputSourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputSourceType: Self = this.set("OutputSourceType", js.undefined)
+  }
+  
 }
 

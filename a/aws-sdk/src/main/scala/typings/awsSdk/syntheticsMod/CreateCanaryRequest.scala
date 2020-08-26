@@ -60,20 +60,55 @@ object CreateCanaryRequest {
     ExecutionRoleArn: Arn,
     Name: CanaryName,
     RuntimeVersion: String,
-    Schedule: CanaryScheduleInput,
-    FailureRetentionPeriodInDays: js.UndefOr[MaxSize1024] = js.undefined,
-    RunConfig: CanaryRunConfigInput = null,
-    SuccessRetentionPeriodInDays: js.UndefOr[MaxSize1024] = js.undefined,
-    Tags: TagMap = null,
-    VpcConfig: VpcConfigInput = null
+    Schedule: CanaryScheduleInput
   ): CreateCanaryRequest = {
     val __obj = js.Dynamic.literal(ArtifactS3Location = ArtifactS3Location.asInstanceOf[js.Any], Code = Code.asInstanceOf[js.Any], ExecutionRoleArn = ExecutionRoleArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RuntimeVersion = RuntimeVersion.asInstanceOf[js.Any], Schedule = Schedule.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailureRetentionPeriodInDays)) __obj.updateDynamic("FailureRetentionPeriodInDays")(FailureRetentionPeriodInDays.get.asInstanceOf[js.Any])
-    if (RunConfig != null) __obj.updateDynamic("RunConfig")(RunConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(SuccessRetentionPeriodInDays)) __obj.updateDynamic("SuccessRetentionPeriodInDays")(SuccessRetentionPeriodInDays.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCanaryRequest]
   }
+  @scala.inline
+  implicit class CreateCanaryRequestOps[Self <: CreateCanaryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifactS3Location(value: String): Self = this.set("ArtifactS3Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCode(value: CanaryCodeInput): Self = this.set("Code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExecutionRoleArn(value: Arn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: CanaryName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuntimeVersion(value: String): Self = this.set("RuntimeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchedule(value: CanaryScheduleInput): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFailureRetentionPeriodInDays(value: MaxSize1024): Self = this.set("FailureRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureRetentionPeriodInDays: Self = this.set("FailureRetentionPeriodInDays", js.undefined)
+    @scala.inline
+    def setRunConfig(value: CanaryRunConfigInput): Self = this.set("RunConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunConfig: Self = this.set("RunConfig", js.undefined)
+    @scala.inline
+    def setSuccessRetentionPeriodInDays(value: MaxSize1024): Self = this.set("SuccessRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessRetentionPeriodInDays: Self = this.set("SuccessRetentionPeriodInDays", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfigInput): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

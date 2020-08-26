@@ -26,18 +26,38 @@ trait Deployment extends js.Object {
 
 object Deployment {
   @scala.inline
-  def apply(
-    DeploymentId: js.UndefOr[NullableLong] = js.undefined,
-    DeploymentTime: DeploymentTimestamp = null,
-    Status: String = null,
-    VersionLabel: String = null
-  ): Deployment = {
+  def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeploymentId)) __obj.updateDynamic("DeploymentId")(DeploymentId.get.asInstanceOf[js.Any])
-    if (DeploymentTime != null) __obj.updateDynamic("DeploymentTime")(DeploymentTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (VersionLabel != null) __obj.updateDynamic("VersionLabel")(VersionLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
   }
+  @scala.inline
+  implicit class DeploymentOps[Self <: Deployment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentId(value: NullableLong): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    @scala.inline
+    def setDeploymentTime(value: DeploymentTimestamp): Self = this.set("DeploymentTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentTime: Self = this.set("DeploymentTime", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setVersionLabel(value: String): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionLabel: Self = this.set("VersionLabel", js.undefined)
+  }
+  
 }
 

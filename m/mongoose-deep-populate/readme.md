@@ -11,8 +11,8 @@ Mongoose plugin to enable deep population of nested models
 | Full name          | mongoose-deep-populate |
 | Keywords           | mongo, mongodb, mongoose, populate, population, deep populate, deep population, models, nested models, populate models, model population, documents, nested documents, populate documents, documents population |
 | # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 227664 |
+| # dependents       | 23 |
+| # downloads        | 228122 |
 | # stars            | 13 |
 
 ## Links

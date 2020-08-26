@@ -92,26 +92,58 @@ trait SchemaMetricThreshold extends js.Object {
 
 object SchemaMetricThreshold {
   @scala.inline
-  def apply(
-    aggregations: js.Array[SchemaAggregation] = null,
-    comparison: String = null,
-    denominatorAggregations: js.Array[SchemaAggregation] = null,
-    denominatorFilter: String = null,
-    duration: String = null,
-    filter: String = null,
-    thresholdValue: js.UndefOr[Double] = js.undefined,
-    trigger: SchemaTrigger = null
-  ): SchemaMetricThreshold = {
+  def apply(): SchemaMetricThreshold = {
     val __obj = js.Dynamic.literal()
-    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations.asInstanceOf[js.Any])
-    if (comparison != null) __obj.updateDynamic("comparison")(comparison.asInstanceOf[js.Any])
-    if (denominatorAggregations != null) __obj.updateDynamic("denominatorAggregations")(denominatorAggregations.asInstanceOf[js.Any])
-    if (denominatorFilter != null) __obj.updateDynamic("denominatorFilter")(denominatorFilter.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(thresholdValue)) __obj.updateDynamic("thresholdValue")(thresholdValue.get.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetricThreshold]
   }
+  @scala.inline
+  implicit class SchemaMetricThresholdOps[Self <: SchemaMetricThreshold] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregationsVarargs(value: SchemaAggregation*): Self = this.set("aggregations", js.Array(value :_*))
+    @scala.inline
+    def setAggregations(value: js.Array[SchemaAggregation]): Self = this.set("aggregations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregations: Self = this.set("aggregations", js.undefined)
+    @scala.inline
+    def setComparison(value: String): Self = this.set("comparison", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparison: Self = this.set("comparison", js.undefined)
+    @scala.inline
+    def setDenominatorAggregationsVarargs(value: SchemaAggregation*): Self = this.set("denominatorAggregations", js.Array(value :_*))
+    @scala.inline
+    def setDenominatorAggregations(value: js.Array[SchemaAggregation]): Self = this.set("denominatorAggregations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDenominatorAggregations: Self = this.set("denominatorAggregations", js.undefined)
+    @scala.inline
+    def setDenominatorFilter(value: String): Self = this.set("denominatorFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDenominatorFilter: Self = this.set("denominatorFilter", js.undefined)
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setThresholdValue(value: Double): Self = this.set("thresholdValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThresholdValue: Self = this.set("thresholdValue", js.undefined)
+    @scala.inline
+    def setTrigger(value: SchemaTrigger): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrigger: Self = this.set("trigger", js.undefined)
+  }
+  
 }
 

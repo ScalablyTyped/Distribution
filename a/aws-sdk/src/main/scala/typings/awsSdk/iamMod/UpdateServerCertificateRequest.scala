@@ -22,15 +22,32 @@ trait UpdateServerCertificateRequest extends js.Object {
 
 object UpdateServerCertificateRequest {
   @scala.inline
-  def apply(
-    ServerCertificateName: serverCertificateNameType,
-    NewPath: pathType = null,
-    NewServerCertificateName: serverCertificateNameType = null
-  ): UpdateServerCertificateRequest = {
+  def apply(ServerCertificateName: serverCertificateNameType): UpdateServerCertificateRequest = {
     val __obj = js.Dynamic.literal(ServerCertificateName = ServerCertificateName.asInstanceOf[js.Any])
-    if (NewPath != null) __obj.updateDynamic("NewPath")(NewPath.asInstanceOf[js.Any])
-    if (NewServerCertificateName != null) __obj.updateDynamic("NewServerCertificateName")(NewServerCertificateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServerCertificateRequest]
   }
+  @scala.inline
+  implicit class UpdateServerCertificateRequestOps[Self <: UpdateServerCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServerCertificateName(value: serverCertificateNameType): Self = this.set("ServerCertificateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewPath(value: pathType): Self = this.set("NewPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewPath: Self = this.set("NewPath", js.undefined)
+    @scala.inline
+    def setNewServerCertificateName(value: serverCertificateNameType): Self = this.set("NewServerCertificateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewServerCertificateName: Self = this.set("NewServerCertificateName", js.undefined)
+  }
+  
 }
 

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object create_textsummary extends js.Object {
   def apply(name: `text-summary`): Visitor[Node] = js.native
-  def apply(name: `text-summary`, options: Partial[Options]): Visitor[Node] = js.native
+  def apply(name: `text-summary`, options: Partial[TextSummaryOptions]): Visitor[Node] = js.native
 }
 

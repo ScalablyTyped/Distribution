@@ -18,7 +18,7 @@ object localesMod extends js.Object {
     - typings.antDesignProLayout.antDesignProLayoutStrings.`en-US`
     - typings.antDesignProLayout.antDesignProLayoutStrings.`it-IT`
   */
-  trait localeType extends js.Object
+  trait LocaleType extends js.Object
   
   def default(): StringDictionary[String] = js.native
   @JSName("default")

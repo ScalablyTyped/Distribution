@@ -24,6 +24,7 @@ object highchartsAugmentingMod extends js.Object {
       *        Chart#redraw.
       */
     def setDataGrouping(): Unit = js.native
+    def setDataGrouping(dataGrouping: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
     def setDataGrouping(dataGrouping: Boolean): Unit = js.native
     def setDataGrouping(dataGrouping: Boolean, redraw: Boolean): Unit = js.native
     def setDataGrouping(dataGrouping: DataGroupingOptionsObject): Unit = js.native

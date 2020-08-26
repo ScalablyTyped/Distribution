@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides access to the reference marks in a document. */
+@js.native
 trait ReferenceMarks
   extends XIndexAccess
      with XNameAccess

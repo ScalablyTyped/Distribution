@@ -22,12 +22,34 @@ trait ConfigIdResponse extends js.Object {
 
 object ConfigIdResponse {
   @scala.inline
-  def apply(configArn: ConfigArn = null, configId: String = null, configType: ConfigCapabilityType = null): ConfigIdResponse = {
+  def apply(): ConfigIdResponse = {
     val __obj = js.Dynamic.literal()
-    if (configArn != null) __obj.updateDynamic("configArn")(configArn.asInstanceOf[js.Any])
-    if (configId != null) __obj.updateDynamic("configId")(configId.asInstanceOf[js.Any])
-    if (configType != null) __obj.updateDynamic("configType")(configType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigIdResponse]
   }
+  @scala.inline
+  implicit class ConfigIdResponseOps[Self <: ConfigIdResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigArn(value: ConfigArn): Self = this.set("configArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigArn: Self = this.set("configArn", js.undefined)
+    @scala.inline
+    def setConfigId(value: String): Self = this.set("configId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigId: Self = this.set("configId", js.undefined)
+    @scala.inline
+    def setConfigType(value: ConfigCapabilityType): Self = this.set("configType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigType: Self = this.set("configType", js.undefined)
+  }
+  
 }
 

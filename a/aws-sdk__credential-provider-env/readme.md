@@ -12,7 +12,7 @@ AWS credential provider that sources credentials from known environment variable
 | Keywords           | aws, credentials |
 | # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 36050 |
+| # downloads        | 39508 |
 | # stars            | 0 |
 
 ## Links

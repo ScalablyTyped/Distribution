@@ -4,31 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Check extends js.Object {
-  var after: js.UndefOr[js.Function | String] = js.undefined
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  var evaluate: js.Function | String
-  var id: String
-  var matches: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[js.Any] = js.undefined
+  var after: js.UndefOr[js.Function | String] = js.native
+  var enabled: js.UndefOr[Boolean] = js.native
+  var evaluate: js.Function | String = js.native
+  var id: String = js.native
+  var matches: js.UndefOr[String] = js.native
+  var options: js.UndefOr[js.Any] = js.native
 }
 
 object Check {
   @scala.inline
-  def apply(
-    evaluate: js.Function | String,
-    id: String,
-    after: js.Function | String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    matches: String = null,
-    options: js.Any = null
-  ): Check = {
+  def apply(evaluate: js.Function | String, id: String): Check = {
     val __obj = js.Dynamic.literal(evaluate = evaluate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Check]
   }
+  @scala.inline
+  implicit class CheckOps[Self <: Check] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvaluate(value: js.Function | String): Self = this.set("evaluate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAfter(value: js.Function | String): Self = this.set("after", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfter: Self = this.set("after", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setMatches(value: String): Self = this.set("matches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatches: Self = this.set("matches", js.undefined)
+    @scala.inline
+    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+  }
+  
 }
 

@@ -18,10 +18,28 @@ trait NodeRangeProperty extends js.Object {
 
 object NodeRangeProperty {
   @scala.inline
-  def apply(targetNodes: String, container: ContainerProperties = null): NodeRangeProperty = {
+  def apply(targetNodes: String): NodeRangeProperty = {
     val __obj = js.Dynamic.literal(targetNodes = targetNodes.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeRangeProperty]
   }
+  @scala.inline
+  implicit class NodeRangePropertyOps[Self <: NodeRangeProperty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetNodes(value: String): Self = this.set("targetNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainer(value: ContainerProperties): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+  }
+  
 }
 

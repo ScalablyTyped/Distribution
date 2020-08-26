@@ -34,22 +34,48 @@ trait DBSubnetGroup extends js.Object {
 
 object DBSubnetGroup {
   @scala.inline
-  def apply(
-    DBSubnetGroupArn: String = null,
-    DBSubnetGroupDescription: String = null,
-    DBSubnetGroupName: String = null,
-    SubnetGroupStatus: String = null,
-    Subnets: SubnetList = null,
-    VpcId: String = null
-  ): DBSubnetGroup = {
+  def apply(): DBSubnetGroup = {
     val __obj = js.Dynamic.literal()
-    if (DBSubnetGroupArn != null) __obj.updateDynamic("DBSubnetGroupArn")(DBSubnetGroupArn.asInstanceOf[js.Any])
-    if (DBSubnetGroupDescription != null) __obj.updateDynamic("DBSubnetGroupDescription")(DBSubnetGroupDescription.asInstanceOf[js.Any])
-    if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName.asInstanceOf[js.Any])
-    if (SubnetGroupStatus != null) __obj.updateDynamic("SubnetGroupStatus")(SubnetGroupStatus.asInstanceOf[js.Any])
-    if (Subnets != null) __obj.updateDynamic("Subnets")(Subnets.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBSubnetGroup]
   }
+  @scala.inline
+  implicit class DBSubnetGroupOps[Self <: DBSubnetGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBSubnetGroupArn(value: String): Self = this.set("DBSubnetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBSubnetGroupArn: Self = this.set("DBSubnetGroupArn", js.undefined)
+    @scala.inline
+    def setDBSubnetGroupDescription(value: String): Self = this.set("DBSubnetGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBSubnetGroupDescription: Self = this.set("DBSubnetGroupDescription", js.undefined)
+    @scala.inline
+    def setDBSubnetGroupName(value: String): Self = this.set("DBSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBSubnetGroupName: Self = this.set("DBSubnetGroupName", js.undefined)
+    @scala.inline
+    def setSubnetGroupStatus(value: String): Self = this.set("SubnetGroupStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetGroupStatus: Self = this.set("SubnetGroupStatus", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: Subnet*): Self = this.set("Subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: SubnetList): Self = this.set("Subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("Subnets", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

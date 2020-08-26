@@ -13,12 +13,34 @@ trait BadgeUrl extends js.Object {
 
 object BadgeUrl {
   @scala.inline
-  def apply(badgeUrl: String = null, categoryId: String = null, name: String = null): BadgeUrl = {
+  def apply(): BadgeUrl = {
     val __obj = js.Dynamic.literal()
-    if (badgeUrl != null) __obj.updateDynamic("badgeUrl")(badgeUrl.asInstanceOf[js.Any])
-    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeUrl]
   }
+  @scala.inline
+  implicit class BadgeUrlOps[Self <: BadgeUrl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBadgeUrl(value: String): Self = this.set("badgeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeUrl: Self = this.set("badgeUrl", js.undefined)
+    @scala.inline
+    def setCategoryId(value: String): Self = this.set("categoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryId: Self = this.set("categoryId", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

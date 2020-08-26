@@ -50,29 +50,60 @@ trait VoiceChannelResponse extends js.Object {
 
 object VoiceChannelResponse {
   @scala.inline
-  def apply(
-    Platform: string,
-    ApplicationId: string = null,
-    CreationDate: string = null,
-    Enabled: js.UndefOr[boolean] = js.undefined,
-    HasCredential: js.UndefOr[boolean] = js.undefined,
-    Id: string = null,
-    IsArchived: js.UndefOr[boolean] = js.undefined,
-    LastModifiedBy: string = null,
-    LastModifiedDate: string = null,
-    Version: js.UndefOr[integer] = js.undefined
-  ): VoiceChannelResponse = {
+  def apply(Platform: string): VoiceChannelResponse = {
     val __obj = js.Dynamic.literal(Platform = Platform.asInstanceOf[js.Any])
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasCredential)) __obj.updateDynamic("HasCredential")(HasCredential.get.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived.get.asInstanceOf[js.Any])
-    if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceChannelResponse]
   }
+  @scala.inline
+  implicit class VoiceChannelResponseOps[Self <: VoiceChannelResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlatform(value: string): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    @scala.inline
+    def setCreationDate(value: string): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setEnabled(value: boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setHasCredential(value: boolean): Self = this.set("HasCredential", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasCredential: Self = this.set("HasCredential", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setIsArchived(value: boolean): Self = this.set("IsArchived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsArchived: Self = this.set("IsArchived", js.undefined)
+    @scala.inline
+    def setLastModifiedBy(value: string): Self = this.set("LastModifiedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedBy: Self = this.set("LastModifiedBy", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setVersion(value: integer): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

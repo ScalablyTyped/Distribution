@@ -6,27 +6,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends js.Object {
-  val client: IClient
-  val max: js.UndefOr[Double] = js.undefined
-  val state: js.UndefOr[Partial[S]] = js.undefined
-  def guard(res: APIResponseSuccess): /* is T */ Boolean
-  def reqgen(): js.Promise[Req]
+  val client: IClient = js.native
+  val max: js.UndefOr[Double] = js.native
+  val state: js.UndefOr[Partial[S]] = js.native
+  def guard(res: APIResponseSuccess): /* is T */ Boolean = js.native
+  def reqgen(): js.Promise[Req] = js.native
 }
 
 object PaginatorDeps {
   @scala.inline
-  def apply[/* <: typings.ionic.definitionsMod.Response[js.Array[js.Object]] */ T, S](
-    client: IClient,
-    guard: APIResponseSuccess => /* is T */ Boolean,
-    reqgen: () => js.Promise[Req],
-    max: js.UndefOr[Double] = js.undefined,
-    state: Partial[S] = null
-  ): PaginatorDeps[T, S] = {
+  def apply[/* <: typings.ionic.definitionsMod.Response[js.Array[js.Object]] */ T, S](client: IClient, guard: APIResponseSuccess => /* is T */ Boolean, reqgen: () => js.Promise[Req]): PaginatorDeps[T, S] = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], guard = js.Any.fromFunction1(guard), reqgen = js.Any.fromFunction0(reqgen))
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginatorDeps[T, S]]
   }
+  @scala.inline
+  implicit class PaginatorDepsOps[Self <: PaginatorDeps[_, _], /* <: typings.ionic.definitionsMod.Response[js.Array[js.Object]] */ T, S] (val x: Self with (PaginatorDeps[T, S])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClient(value: IClient): Self = this.set("client", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGuard(value: APIResponseSuccess => /* is T */ Boolean): Self = this.set("guard", js.Any.fromFunction1(value))
+    @scala.inline
+    def setReqgen(value: () => js.Promise[Req]): Self = this.set("reqgen", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setState(value: Partial[S]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

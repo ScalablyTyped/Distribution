@@ -11,41 +11,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistributionProps extends js.Object {
-  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
-  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var basis: js.UndefOr[BasisType] = js.undefined
-  var children: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var fill: js.UndefOr[Boolean] = js.undefined
-  var gap: js.UndefOr[GapType] = js.undefined
-  var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var values: js.Array[ColorValue]
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+  var alignSelf: js.UndefOr[AlignSelfType] = js.native
+  var basis: js.UndefOr[BasisType] = js.native
+  var children: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var fill: js.UndefOr[Boolean] = js.native
+  var gap: js.UndefOr[GapType] = js.native
+  var gridArea: js.UndefOr[GridAreaType] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var values: js.Array[ColorValue] = js.native
 }
 
 object DistributionProps {
   @scala.inline
-  def apply(
-    values: js.Array[ColorValue],
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    basis: BasisType = null,
-    children: /* repeated */ js.Any => _ = null,
-    fill: js.UndefOr[Boolean] = js.undefined,
-    gap: GapType = null,
-    gridArea: GridAreaType = null,
-    margin: MarginType = null
-  ): DistributionProps = {
+  def apply(values: js.Array[ColorValue]): DistributionProps = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (basis != null) __obj.updateDynamic("basis")(basis.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionProps]
   }
+  @scala.inline
+  implicit class DistributionPropsOps[Self <: DistributionProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValuesVarargs(value: ColorValue*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: js.Array[ColorValue]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setA11yTitle(value: A11yTitleType): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setAlignSelf(value: AlignSelfType): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setBasis(value: BasisType): Self = this.set("basis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasis: Self = this.set("basis", js.undefined)
+    @scala.inline
+    def setChildren(value: /* repeated */ js.Any => _): Self = this.set("children", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setGap(value: GapType): Self = this.set("gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGap: Self = this.set("gap", js.undefined)
+    @scala.inline
+    def setGridArea(value: GridAreaType): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+  }
+  
 }
 

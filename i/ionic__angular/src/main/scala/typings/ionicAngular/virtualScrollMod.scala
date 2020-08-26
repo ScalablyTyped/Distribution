@@ -54,7 +54,7 @@ object virtualScrollMod extends js.Object {
       * initial dimensions before the item has been rendered.
       */
     var approxItemHeight: Double = js.native
-    var differ: js.UndefOr[js.Any] = js.native
+    var differ: js.Any = js.native
     var el: js.Any = js.native
     /**
       * Section footers and the data used within its given

@@ -26,16 +26,38 @@ trait DecreaseReplicationFactorRequest extends js.Object {
 
 object DecreaseReplicationFactorRequest {
   @scala.inline
-  def apply(
-    ClusterName: String,
-    NewReplicationFactor: Integer,
-    AvailabilityZones: AvailabilityZoneList = null,
-    NodeIdsToRemove: NodeIdentifierList = null
-  ): DecreaseReplicationFactorRequest = {
+  def apply(ClusterName: String, NewReplicationFactor: Integer): DecreaseReplicationFactorRequest = {
     val __obj = js.Dynamic.literal(ClusterName = ClusterName.asInstanceOf[js.Any], NewReplicationFactor = NewReplicationFactor.asInstanceOf[js.Any])
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (NodeIdsToRemove != null) __obj.updateDynamic("NodeIdsToRemove")(NodeIdsToRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecreaseReplicationFactorRequest]
   }
+  @scala.inline
+  implicit class DecreaseReplicationFactorRequestOps[Self <: DecreaseReplicationFactorRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("ClusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewReplicationFactor(value: Integer): Self = this.set("NewReplicationFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: String*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: AvailabilityZoneList): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    @scala.inline
+    def setNodeIdsToRemoveVarargs(value: String*): Self = this.set("NodeIdsToRemove", js.Array(value :_*))
+    @scala.inline
+    def setNodeIdsToRemove(value: NodeIdentifierList): Self = this.set("NodeIdsToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeIdsToRemove: Self = this.set("NodeIdsToRemove", js.undefined)
+  }
+  
 }
 

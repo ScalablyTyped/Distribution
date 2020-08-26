@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "xml-escape"
-version := "1.1-dt-20190514Z-4d74db"
-scalaVersion := "2.13.2"
+version := "1.1-dt-20190514Z-0ffc9f"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

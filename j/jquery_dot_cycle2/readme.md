@@ -11,8 +11,8 @@ A wrapper for jQuery Cycle 2
 | Full name          | jquery.cycle2 |
 | Keywords           | slideshow, carousel, jquery, cycle2 |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 13517 |
+| # dependents       | 1 |
+| # downloads        | 13454 |
 | # stars            | 0 |
 
 ## Links

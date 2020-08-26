@@ -3,7 +3,6 @@ package typings.inversify
 import typings.inversify.interfacesMod.interfaces.Binding
 import typings.inversify.interfacesMod.interfaces.BindingOnSyntax
 import typings.inversify.interfacesMod.interfaces.BindingWhenSyntax
-import typings.inversify.interfacesMod.interfaces.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +18,6 @@ object bindingWhenOnSyntaxMod extends js.Object {
     var _binding: js.Any = js.native
     var _bindingOnSyntax: js.Any = js.native
     var _bindingWhenSyntax: js.Any = js.native
-    /* CompleteClass */
-    override def onActivation(fn: js.Function2[/* context */ Context, T, T]): BindingWhenSyntax[T] = js.native
   }
   
 }

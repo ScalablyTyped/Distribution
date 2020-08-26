@@ -3,7 +3,6 @@ package typings.luminoPolling.pollMod
 import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoPolling.anon.Cancel
 import typings.luminoPolling.mod.IPoll
-import typings.luminoPolling.mod.IPoll.Frequency
 import typings.luminoPolling.mod.IPoll.State
 import typings.luminoPolling.pollMod.Poll.IOptions
 import typings.luminoPolling.pollMod.Poll.Standby
@@ -13,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/polling/lib/poll", "Poll")
+@JSImport("@lumino/polling/types/poll", "Poll")
 @js.native
 class Poll_[T, U, V /* <: String */] protected ()
   extends IObservableDisposable
@@ -42,67 +41,24 @@ class Poll_[T, U, V /* <: String */] protected ()
   /* InferMemberOverrides */
   override val disposed: ISignal[this.type, Unit] = js.native
   /**
-    * The polling frequency data.
-    */
-  /* CompleteClass */
-  override val frequency: Frequency = js.native
-  /**
     * Whether the poll is disposed.
     */
   /* InferMemberOverrides */
   override val isDisposed: Boolean = js.native
   /**
-    * The name of the poll.
-    */
-  /* CompleteClass */
-  override val name: String = js.native
-  /**
     * Indicates when the poll switches to standby.
     */
   var standby: Standby | (js.Function0[Boolean | Standby]) = js.native
-  /**
-    * The poll state, which is the content of the currently-scheduled poll tick.
-    */
-  /* CompleteClass */
-  override val state: State[T, U, V] = js.native
-  /**
-    * A promise that resolves when the currently-scheduled tick completes.
-    *
-    * #### Notes
-    * Usually this will resolve after `state.interval` milliseconds from
-    * `state.timestamp`. It can resolve earlier if the user starts or refreshes the
-    * poll, etc.
-    */
-  /* CompleteClass */
-  override val tick: js.Promise[IPoll[T, U, V]] = js.native
   /**
     * A promise that resolves when the poll next ticks.
     */
   @JSName("tick")
   val tick_Poll_ : js.Promise[this.type] = js.native
   /**
-    * A signal emitted when the poll state changes, i.e., a new tick is scheduled.
-    */
-  /* CompleteClass */
-  override val ticked: ISignal[IPoll[T, U, V], State[T, U, V]] = js.native
-  /**
     * A signal emitted when the poll ticks and fires off a new request.
     */
   @JSName("ticked")
   val ticked_Poll_ : ISignal[this.type, State[T, U, V]] = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Refreshes the poll. Schedules `refreshed` tick if necessary.
     *

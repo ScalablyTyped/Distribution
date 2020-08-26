@@ -142,6 +142,7 @@ object global extends js.Object {
       * @returns The error if the event failed to log; otherwise returns null.
       */
     def logEvent(eventName: String): APIError | Null = js.native
+    def logEvent(eventName: String, valueToSum: js.UndefOr[scala.Nothing], parameters: StringDictionary[String]): APIError | Null = js.native
     def logEvent(eventName: String, valueToSum: Double): APIError | Null = js.native
     def logEvent(eventName: String, valueToSum: Double, parameters: StringDictionary[String]): APIError | Null = js.native
     /**
@@ -165,7 +166,15 @@ object global extends js.Object {
       * @throws INVALID_OPERATION
       */
     def matchPlayerAsync(): js.Promise[Unit] = js.native
+    def matchPlayerAsync(
+      matchTag: js.UndefOr[scala.Nothing],
+      switchContextWhenMatched: js.UndefOr[scala.Nothing],
+      offlineMatch: Boolean
+    ): js.Promise[Unit] = js.native
+    def matchPlayerAsync(matchTag: js.UndefOr[scala.Nothing], switchContextWhenMatched: Boolean): js.Promise[Unit] = js.native
+    def matchPlayerAsync(matchTag: js.UndefOr[scala.Nothing], switchContextWhenMatched: Boolean, offlineMatch: Boolean): js.Promise[Unit] = js.native
     def matchPlayerAsync(matchTag: String): js.Promise[Unit] = js.native
+    def matchPlayerAsync(matchTag: String, switchContextWhenMatched: js.UndefOr[scala.Nothing], offlineMatch: Boolean): js.Promise[Unit] = js.native
     def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean): js.Promise[Unit] = js.native
     def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean, offlineMatch: Boolean): js.Promise[Unit] = js.native
     /**

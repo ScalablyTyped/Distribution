@@ -34,20 +34,42 @@ trait ListAuditTasksRequest extends js.Object {
 
 object ListAuditTasksRequest {
   @scala.inline
-  def apply(
-    endTime: Timestamp,
-    startTime: Timestamp,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    taskStatus: AuditTaskStatus = null,
-    taskType: AuditTaskType = null
-  ): ListAuditTasksRequest = {
+  def apply(endTime: Timestamp, startTime: Timestamp): ListAuditTasksRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (taskStatus != null) __obj.updateDynamic("taskStatus")(taskStatus.asInstanceOf[js.Any])
-    if (taskType != null) __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuditTasksRequest]
   }
+  @scala.inline
+  implicit class ListAuditTasksRequestOps[Self <: ListAuditTasksRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setTaskStatus(value: AuditTaskStatus): Self = this.set("taskStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStatus: Self = this.set("taskStatus", js.undefined)
+    @scala.inline
+    def setTaskType(value: AuditTaskType): Self = this.set("taskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskType: Self = this.set("taskType", js.undefined)
+  }
+  
 }
 

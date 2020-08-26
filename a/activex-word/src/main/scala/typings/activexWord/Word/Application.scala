@@ -157,7 +157,11 @@ trait Application extends js.Object {
   def AddAddress(TagID: SafeArray[String], Value: SafeArray[String]): Unit = js.native
   def AutomaticChange(): Unit = js.native
   def BuildKeyCode(Arg1: WdKey): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: js.UndefOr[scala.Nothing], Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any, Arg4: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
   def COMAddIns(Index: String): COMAddIn = js.native
@@ -315,7 +319,38 @@ trait Application extends js.Object {
   ): Document = js.native
   def MillimetersToPoints(Millimeters: Double): Double = js.native
   def MountVolume(Zone: String, Server: String, Volume: String): Double = js.native
+  def MountVolume(
+    Zone: String,
+    Server: String,
+    Volume: String,
+    User: js.UndefOr[scala.Nothing],
+    UserPassword: js.UndefOr[scala.Nothing],
+    VolumePassword: js.Any
+  ): Double = js.native
+  def MountVolume(
+    Zone: String,
+    Server: String,
+    Volume: String,
+    User: js.UndefOr[scala.Nothing],
+    UserPassword: js.Any
+  ): Double = js.native
+  def MountVolume(
+    Zone: String,
+    Server: String,
+    Volume: String,
+    User: js.UndefOr[scala.Nothing],
+    UserPassword: js.Any,
+    VolumePassword: js.Any
+  ): Double = js.native
   def MountVolume(Zone: String, Server: String, Volume: String, User: js.Any): Double = js.native
+  def MountVolume(
+    Zone: String,
+    Server: String,
+    Volume: String,
+    User: js.Any,
+    UserPassword: js.UndefOr[scala.Nothing],
+    VolumePassword: js.Any
+  ): Double = js.native
   def MountVolume(Zone: String, Server: String, Volume: String, User: js.Any, UserPassword: js.Any): Double = js.native
   def MountVolume(
     Zone: String,
@@ -405,7 +440,15 @@ trait Application extends js.Object {
   def ProductCode(): String = js.native
   def PutFocusInMailHeader(): Unit = js.native
   def Quit(): Unit = js.native
+  def Quit(
+    SaveChanges: js.UndefOr[scala.Nothing],
+    OriginalFormat: js.UndefOr[scala.Nothing],
+    RouteDocument: js.Any
+  ): Unit = js.native
+  def Quit(SaveChanges: js.UndefOr[scala.Nothing], OriginalFormat: js.Any): Unit = js.native
+  def Quit(SaveChanges: js.UndefOr[scala.Nothing], OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
   def Quit(SaveChanges: js.Any): Unit = js.native
+  def Quit(SaveChanges: js.Any, OriginalFormat: js.UndefOr[scala.Nothing], RouteDocument: js.Any): Unit = js.native
   def Quit(SaveChanges: js.Any, OriginalFormat: js.Any): Unit = js.native
   def Quit(SaveChanges: js.Any, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
   def Repeat(): Boolean = js.native

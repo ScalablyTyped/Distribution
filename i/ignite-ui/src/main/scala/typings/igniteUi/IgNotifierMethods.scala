@@ -67,6 +67,7 @@ trait IgNotifierMethods extends js.Object {
     * @param content The string to set for the popover to show.
     */
   def show(): Unit = js.native
+  def show(trg: js.UndefOr[scala.Nothing], content: String): Unit = js.native
   def show(trg: Element): Unit = js.native
   def show(trg: Element, content: String): Unit = js.native
   /**

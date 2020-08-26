@@ -26,18 +26,38 @@ trait ReplicationPendingModifiedValues extends js.Object {
 
 object ReplicationPendingModifiedValues {
   @scala.inline
-  def apply(
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
-    EngineVersion: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
-    ReplicationInstanceClass: String = null
-  ): ReplicationPendingModifiedValues = {
+  def apply(): ReplicationPendingModifiedValues = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.get.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.get.asInstanceOf[js.Any])
-    if (ReplicationInstanceClass != null) __obj.updateDynamic("ReplicationInstanceClass")(ReplicationInstanceClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationPendingModifiedValues]
   }
+  @scala.inline
+  implicit class ReplicationPendingModifiedValuesOps[Self <: ReplicationPendingModifiedValues] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocatedStorage(value: IntegerOptional): Self = this.set("AllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedStorage: Self = this.set("AllocatedStorage", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setMultiAZ(value: BooleanOptional): Self = this.set("MultiAZ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiAZ: Self = this.set("MultiAZ", js.undefined)
+    @scala.inline
+    def setReplicationInstanceClass(value: String): Self = this.set("ReplicationInstanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceClass: Self = this.set("ReplicationInstanceClass", js.undefined)
+  }
+  
 }
 

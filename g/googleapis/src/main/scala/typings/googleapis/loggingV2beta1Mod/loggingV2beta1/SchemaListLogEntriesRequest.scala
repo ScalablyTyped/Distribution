@@ -59,22 +59,50 @@ trait SchemaListLogEntriesRequest extends js.Object {
 
 object SchemaListLogEntriesRequest {
   @scala.inline
-  def apply(
-    filter: String = null,
-    orderBy: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    projectIds: js.Array[String] = null,
-    resourceNames: js.Array[String] = null
-  ): SchemaListLogEntriesRequest = {
+  def apply(): SchemaListLogEntriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (projectIds != null) __obj.updateDynamic("projectIds")(projectIds.asInstanceOf[js.Any])
-    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListLogEntriesRequest]
   }
+  @scala.inline
+  implicit class SchemaListLogEntriesRequestOps[Self <: SchemaListLogEntriesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setProjectIdsVarargs(value: String*): Self = this.set("projectIds", js.Array(value :_*))
+    @scala.inline
+    def setProjectIds(value: js.Array[String]): Self = this.set("projectIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectIds: Self = this.set("projectIds", js.undefined)
+    @scala.inline
+    def setResourceNamesVarargs(value: String*): Self = this.set("resourceNames", js.Array(value :_*))
+    @scala.inline
+    def setResourceNames(value: js.Array[String]): Self = this.set("resourceNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceNames: Self = this.set("resourceNames", js.undefined)
+  }
+  
 }
 

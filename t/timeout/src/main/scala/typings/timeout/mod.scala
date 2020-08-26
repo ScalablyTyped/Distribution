@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def timeout(): String = js.native
+  def timeout(name: js.UndefOr[scala.Nothing], ms: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): String = js.native
+  def timeout(name: js.UndefOr[scala.Nothing], ms: Double): String = js.native
+  def timeout(name: js.UndefOr[scala.Nothing], ms: Double, callback: js.Function0[Unit]): String = js.native
   def timeout(name: String): String = js.native
+  def timeout(name: String, ms: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): String = js.native
   def timeout(name: String, ms: Double): String = js.native
   def timeout(name: String, ms: Double, callback: js.Function0[Unit]): String = js.native
 }

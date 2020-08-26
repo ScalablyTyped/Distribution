@@ -44,6 +44,15 @@ class SymbolicTensor protected () extends js.Object {
     sourceLayer: Layer,
     inputs: js.Array[SymbolicTensor],
     callArgs: Kwargs,
+    name: js.UndefOr[scala.Nothing],
+    outputTensorIndex: Double
+  ) = this()
+  def this(
+    dtype: DataType,
+    shape: Shape,
+    sourceLayer: Layer,
+    inputs: js.Array[SymbolicTensor],
+    callArgs: Kwargs,
     name: String,
     outputTensorIndex: Double
   ) = this()

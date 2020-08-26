@@ -61,20 +61,42 @@ trait SchemaGroup extends js.Object {
 
 object SchemaGroup {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    filter: String = null,
-    isCluster: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    parentName: String = null
-  ): SchemaGroup = {
+  def apply(): SchemaGroup = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCluster)) __obj.updateDynamic("isCluster")(isCluster.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentName != null) __obj.updateDynamic("parentName")(parentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGroup]
   }
+  @scala.inline
+  implicit class SchemaGroupOps[Self <: SchemaGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setIsCluster(value: Boolean): Self = this.set("isCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCluster: Self = this.set("isCluster", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentName(value: String): Self = this.set("parentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentName: Self = this.set("parentName", js.undefined)
+  }
+  
 }
 

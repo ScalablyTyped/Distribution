@@ -11,8 +11,8 @@ Dev-tools for MobX and React
 | Full name          | mobx-react-devtools |
 | Keywords           | mobx, mobservable, react-component, react, reactjs, reactive, devtools |
 | # releases         | 9 |
-| # dependents       | 77 |
-| # downloads        | 1776668 |
+| # dependents       | 82 |
+| # downloads        | 1748676 |
 | # stars            | 3 |
 
 ## Links

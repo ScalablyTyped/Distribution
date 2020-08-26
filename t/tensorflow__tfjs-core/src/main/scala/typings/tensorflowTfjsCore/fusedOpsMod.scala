@@ -2,6 +2,7 @@ package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.anon.A
 import typings.tensorflowTfjsCore.anon.Activation
+import typings.tensorflowTfjsCore.anon.Bias
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorMod.Tensor3D
@@ -23,7 +24,7 @@ object fusedOpsMod extends js.Object {
   @js.native
   object depthwiseConv2d extends js.Object {
     def apply[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Activation[T]
+      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Bias[T]
     ): T = js.native
   }
   

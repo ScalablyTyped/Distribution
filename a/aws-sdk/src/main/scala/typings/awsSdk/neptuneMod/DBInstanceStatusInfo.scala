@@ -26,18 +26,38 @@ trait DBInstanceStatusInfo extends js.Object {
 
 object DBInstanceStatusInfo {
   @scala.inline
-  def apply(
-    Message: String = null,
-    Normal: js.UndefOr[Boolean] = js.undefined,
-    Status: String = null,
-    StatusType: String = null
-  ): DBInstanceStatusInfo = {
+  def apply(): DBInstanceStatusInfo = {
     val __obj = js.Dynamic.literal()
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (!js.isUndefined(Normal)) __obj.updateDynamic("Normal")(Normal.get.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusType != null) __obj.updateDynamic("StatusType")(StatusType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBInstanceStatusInfo]
   }
+  @scala.inline
+  implicit class DBInstanceStatusInfoOps[Self <: DBInstanceStatusInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setNormal(value: Boolean): Self = this.set("Normal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNormal: Self = this.set("Normal", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusType(value: String): Self = this.set("StatusType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusType: Self = this.set("StatusType", js.undefined)
+  }
+  
 }
 

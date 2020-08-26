@@ -16,11 +16,30 @@ trait SchemaGooglePrivacyDlpV2QuasiIdField extends js.Object {
 
 object SchemaGooglePrivacyDlpV2QuasiIdField {
   @scala.inline
-  def apply(customTag: String = null, field: SchemaGooglePrivacyDlpV2FieldId = null): SchemaGooglePrivacyDlpV2QuasiIdField = {
+  def apply(): SchemaGooglePrivacyDlpV2QuasiIdField = {
     val __obj = js.Dynamic.literal()
-    if (customTag != null) __obj.updateDynamic("customTag")(customTag.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2QuasiIdField]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2QuasiIdFieldOps[Self <: SchemaGooglePrivacyDlpV2QuasiIdField] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomTag(value: String): Self = this.set("customTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomTag: Self = this.set("customTag", js.undefined)
+    @scala.inline
+    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+  }
+  
 }
 

@@ -22,12 +22,36 @@ trait RecommendationFeedbackSummary extends js.Object {
 
 object RecommendationFeedbackSummary {
   @scala.inline
-  def apply(Reactions: Reactions = null, RecommendationId: RecommendationId = null, UserId: UserId = null): RecommendationFeedbackSummary = {
+  def apply(): RecommendationFeedbackSummary = {
     val __obj = js.Dynamic.literal()
-    if (Reactions != null) __obj.updateDynamic("Reactions")(Reactions.asInstanceOf[js.Any])
-    if (RecommendationId != null) __obj.updateDynamic("RecommendationId")(RecommendationId.asInstanceOf[js.Any])
-    if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendationFeedbackSummary]
   }
+  @scala.inline
+  implicit class RecommendationFeedbackSummaryOps[Self <: RecommendationFeedbackSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReactionsVarargs(value: Reaction*): Self = this.set("Reactions", js.Array(value :_*))
+    @scala.inline
+    def setReactions(value: Reactions): Self = this.set("Reactions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReactions: Self = this.set("Reactions", js.undefined)
+    @scala.inline
+    def setRecommendationId(value: RecommendationId): Self = this.set("RecommendationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationId: Self = this.set("RecommendationId", js.undefined)
+    @scala.inline
+    def setUserId(value: UserId): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("UserId", js.undefined)
+  }
+  
 }
 

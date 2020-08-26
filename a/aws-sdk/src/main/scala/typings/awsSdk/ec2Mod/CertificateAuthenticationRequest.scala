@@ -14,10 +14,26 @@ trait CertificateAuthenticationRequest extends js.Object {
 
 object CertificateAuthenticationRequest {
   @scala.inline
-  def apply(ClientRootCertificateChainArn: String = null): CertificateAuthenticationRequest = {
+  def apply(): CertificateAuthenticationRequest = {
     val __obj = js.Dynamic.literal()
-    if (ClientRootCertificateChainArn != null) __obj.updateDynamic("ClientRootCertificateChainArn")(ClientRootCertificateChainArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthenticationRequest]
   }
+  @scala.inline
+  implicit class CertificateAuthenticationRequestOps[Self <: CertificateAuthenticationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientRootCertificateChainArn(value: String): Self = this.set("ClientRootCertificateChainArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRootCertificateChainArn: Self = this.set("ClientRootCertificateChainArn", js.undefined)
+  }
+  
 }
 

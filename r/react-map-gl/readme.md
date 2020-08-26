@@ -10,9 +10,9 @@ A React wrapper for MapboxGL-js and overlay API.
 | ------------------ | :-------------: |
 | Full name          | react-map-gl |
 | Keywords           | mapbox, mapbox-gl, react, react-mapbox-gl, react mapbox |
-| # releases         | 92 |
-| # dependents       | 55 |
-| # downloads        | 1998702 |
+| # releases         | 91 |
+| # dependents       | 56 |
+| # downloads        | 2021384 |
 | # stars            | 3 |
 
 ## Links

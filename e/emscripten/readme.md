@@ -12,7 +12,7 @@ Node API for Emscripten SDK
 | Keywords           | node, emscripten, emcc, sdk, wasm, webassembly |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 328 |
+| # downloads        | 361 |
 | # stars            | 0 |
 
 ## Links

@@ -8,20 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MediaError")
 @js.native
 class MediaError ()
-  extends typings.std.MediaError {
-  /* CompleteClass */
-  override val MEDIA_ERR_ABORTED: Double = js.native
-  /* CompleteClass */
-  override val MEDIA_ERR_DECODE: Double = js.native
-  /* CompleteClass */
-  override val MEDIA_ERR_NETWORK: Double = js.native
-  /* CompleteClass */
-  override val MEDIA_ERR_SRC_NOT_SUPPORTED: Double = js.native
-  /* CompleteClass */
-  override val code: Double = js.native
-  /* CompleteClass */
-  override val message: java.lang.String = js.native
-}
+  extends typings.std.MediaError
 
 @JSGlobal("MediaError")
 @js.native

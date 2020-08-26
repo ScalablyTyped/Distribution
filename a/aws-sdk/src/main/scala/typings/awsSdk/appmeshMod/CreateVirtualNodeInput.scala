@@ -40,19 +40,42 @@ trait CreateVirtualNodeInput extends js.Object {
 
 object CreateVirtualNodeInput {
   @scala.inline
-  def apply(
-    meshName: ResourceName,
-    spec: VirtualNodeSpec,
-    virtualNodeName: ResourceName,
-    clientToken: String = null,
-    meshOwner: AccountId = null,
-    tags: TagList = null
-  ): CreateVirtualNodeInput = {
+  def apply(meshName: ResourceName, spec: VirtualNodeSpec, virtualNodeName: ResourceName): CreateVirtualNodeInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], virtualNodeName = virtualNodeName.asInstanceOf[js.Any])
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (meshOwner != null) __obj.updateDynamic("meshOwner")(meshOwner.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVirtualNodeInput]
   }
+  @scala.inline
+  implicit class CreateVirtualNodeInputOps[Self <: CreateVirtualNodeInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMeshName(value: ResourceName): Self = this.set("meshName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpec(value: VirtualNodeSpec): Self = this.set("spec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualNodeName(value: ResourceName): Self = this.set("virtualNodeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setMeshOwner(value: AccountId): Self = this.set("meshOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeshOwner: Self = this.set("meshOwner", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: TagRef*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

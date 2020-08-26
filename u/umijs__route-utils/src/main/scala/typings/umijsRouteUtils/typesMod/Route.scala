@@ -1,41 +1,38 @@
 package typings.umijsRouteUtils.typesMod
 
-import typings.react.mod.ReactNode
-import typings.umijsRouteUtils.umijsRouteUtilsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Route extends MenuDataItem {
-  var routes: js.UndefOr[js.Array[Route]] = js.undefined
+  var routes: js.UndefOr[js.Array[Route]] = js.native
 }
 
 object Route {
   @scala.inline
-  def apply(
-    children: js.Array[MenuDataItem] = null,
-    hideChildrenInMenu: js.UndefOr[Boolean] = js.undefined,
-    hideInMenu: js.UndefOr[Boolean] = js.undefined,
-    icon: ReactNode = null,
-    key: String = null,
-    locale: String | `false` = null,
-    name: String = null,
-    path: String = null,
-    pro_layout_parentKeys: js.Array[String] = null,
-    routes: js.Array[Route] = null
-  ): Route = {
+  def apply(): Route = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideChildrenInMenu)) __obj.updateDynamic("hideChildrenInMenu")(hideChildrenInMenu.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideInMenu)) __obj.updateDynamic("hideInMenu")(hideInMenu.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pro_layout_parentKeys != null) __obj.updateDynamic("pro_layout_parentKeys")(pro_layout_parentKeys.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
+  @scala.inline
+  implicit class RouteOps[Self <: Route] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoutesVarargs(value: Route*): Self = this.set("routes", js.Array(value :_*))
+    @scala.inline
+    def setRoutes(value: js.Array[Route]): Self = this.set("routes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutes: Self = this.set("routes", js.undefined)
+  }
+  
 }
 

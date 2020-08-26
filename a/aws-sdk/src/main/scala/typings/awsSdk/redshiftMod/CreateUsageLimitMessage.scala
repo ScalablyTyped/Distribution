@@ -42,16 +42,45 @@ object CreateUsageLimitMessage {
     Amount: Long,
     ClusterIdentifier: String,
     FeatureType: UsageLimitFeatureType,
-    LimitType: UsageLimitLimitType,
-    BreachAction: UsageLimitBreachAction = null,
-    Period: UsageLimitPeriod = null,
-    Tags: TagList = null
+    LimitType: UsageLimitLimitType
   ): CreateUsageLimitMessage = {
     val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], FeatureType = FeatureType.asInstanceOf[js.Any], LimitType = LimitType.asInstanceOf[js.Any])
-    if (BreachAction != null) __obj.updateDynamic("BreachAction")(BreachAction.asInstanceOf[js.Any])
-    if (Period != null) __obj.updateDynamic("Period")(Period.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUsageLimitMessage]
   }
+  @scala.inline
+  implicit class CreateUsageLimitMessageOps[Self <: CreateUsageLimitMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: Long): Self = this.set("Amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeatureType(value: UsageLimitFeatureType): Self = this.set("FeatureType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimitType(value: UsageLimitLimitType): Self = this.set("LimitType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBreachAction(value: UsageLimitBreachAction): Self = this.set("BreachAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreachAction: Self = this.set("BreachAction", js.undefined)
+    @scala.inline
+    def setPeriod(value: UsageLimitPeriod): Self = this.set("Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("Period", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

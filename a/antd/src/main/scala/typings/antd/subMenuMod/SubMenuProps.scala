@@ -6,51 +6,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubMenuProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[ReactNode] = js.undefined
-  var level: js.UndefOr[Double] = js.undefined
-  var onTitleClick: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
-  var onTitleMouseEnter: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
-  var onTitleMouseLeave: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.undefined
-  var popupClassName: js.UndefOr[String] = js.undefined
-  var popupOffset: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-  var rootPrefixCls: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[ReactNode] = js.native
+  var level: js.UndefOr[Double] = js.native
+  var onTitleClick: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.native
+  var onTitleMouseEnter: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.native
+  var onTitleMouseLeave: js.UndefOr[js.Function1[/* e */ TitleEventEntity, Unit]] = js.native
+  var popupClassName: js.UndefOr[String] = js.native
+  var popupOffset: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var rootPrefixCls: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
 }
 
 object SubMenuProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    icon: ReactNode = null,
-    level: js.UndefOr[Double] = js.undefined,
-    onTitleClick: /* e */ TitleEventEntity => Unit = null,
-    onTitleMouseEnter: /* e */ TitleEventEntity => Unit = null,
-    onTitleMouseLeave: /* e */ TitleEventEntity => Unit = null,
-    popupClassName: String = null,
-    popupOffset: js.Tuple2[Double, Double] = null,
-    rootPrefixCls: String = null,
-    style: CSSProperties = null,
-    title: ReactNode = null
-  ): SubMenuProps = {
+  def apply(): SubMenuProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
-    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction1(onTitleClick))
-    if (onTitleMouseEnter != null) __obj.updateDynamic("onTitleMouseEnter")(js.Any.fromFunction1(onTitleMouseEnter))
-    if (onTitleMouseLeave != null) __obj.updateDynamic("onTitleMouseLeave")(js.Any.fromFunction1(onTitleMouseLeave))
-    if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName.asInstanceOf[js.Any])
-    if (popupOffset != null) __obj.updateDynamic("popupOffset")(popupOffset.asInstanceOf[js.Any])
-    if (rootPrefixCls != null) __obj.updateDynamic("rootPrefixCls")(rootPrefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubMenuProps]
   }
+  @scala.inline
+  implicit class SubMenuPropsOps[Self <: SubMenuProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setIcon(value: ReactNode): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setOnTitleClick(value: /* e */ TitleEventEntity => Unit): Self = this.set("onTitleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTitleClick: Self = this.set("onTitleClick", js.undefined)
+    @scala.inline
+    def setOnTitleMouseEnter(value: /* e */ TitleEventEntity => Unit): Self = this.set("onTitleMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTitleMouseEnter: Self = this.set("onTitleMouseEnter", js.undefined)
+    @scala.inline
+    def setOnTitleMouseLeave(value: /* e */ TitleEventEntity => Unit): Self = this.set("onTitleMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTitleMouseLeave: Self = this.set("onTitleMouseLeave", js.undefined)
+    @scala.inline
+    def setPopupClassName(value: String): Self = this.set("popupClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupClassName: Self = this.set("popupClassName", js.undefined)
+    @scala.inline
+    def setPopupOffset(value: js.Tuple2[Double, Double]): Self = this.set("popupOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupOffset: Self = this.set("popupOffset", js.undefined)
+    @scala.inline
+    def setRootPrefixCls(value: String): Self = this.set("rootPrefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootPrefixCls: Self = this.set("rootPrefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

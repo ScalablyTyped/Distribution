@@ -38,23 +38,48 @@ trait ListedServer extends js.Object {
 
 object ListedServer {
   @scala.inline
-  def apply(
-    Arn: Arn,
-    EndpointType: EndpointType = null,
-    IdentityProviderType: IdentityProviderType = null,
-    LoggingRole: Role = null,
-    ServerId: ServerId = null,
-    State: State = null,
-    UserCount: js.UndefOr[UserCount] = js.undefined
-  ): ListedServer = {
+  def apply(Arn: Arn): ListedServer = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-    if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
-    if (IdentityProviderType != null) __obj.updateDynamic("IdentityProviderType")(IdentityProviderType.asInstanceOf[js.Any])
-    if (LoggingRole != null) __obj.updateDynamic("LoggingRole")(LoggingRole.asInstanceOf[js.Any])
-    if (ServerId != null) __obj.updateDynamic("ServerId")(ServerId.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserCount)) __obj.updateDynamic("UserCount")(UserCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListedServer]
   }
+  @scala.inline
+  implicit class ListedServerOps[Self <: ListedServer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointType(value: EndpointType): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    @scala.inline
+    def setIdentityProviderType(value: IdentityProviderType): Self = this.set("IdentityProviderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityProviderType: Self = this.set("IdentityProviderType", js.undefined)
+    @scala.inline
+    def setLoggingRole(value: Role): Self = this.set("LoggingRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingRole: Self = this.set("LoggingRole", js.undefined)
+    @scala.inline
+    def setServerId(value: ServerId): Self = this.set("ServerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerId: Self = this.set("ServerId", js.undefined)
+    @scala.inline
+    def setState(value: State): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setUserCount(value: UserCount): Self = this.set("UserCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserCount: Self = this.set("UserCount", js.undefined)
+  }
+  
 }
 

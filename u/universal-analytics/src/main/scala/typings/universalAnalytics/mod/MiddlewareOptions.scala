@@ -1,46 +1,36 @@
 package typings.universalAnalytics.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MiddlewareOptions extends VisitorOptions {
-  var cookieName: js.UndefOr[String] = js.undefined
+  var cookieName: js.UndefOr[String] = js.native
 }
 
 object MiddlewareOptions {
   @scala.inline
-  def apply(
-    batchSize: js.UndefOr[Double] = js.undefined,
-    cid: String = null,
-    cookieName: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    enableBatching: js.UndefOr[Boolean] = js.undefined,
-    headers: StringDictionary[String] = null,
-    hostname: String = null,
-    https: js.UndefOr[Boolean] = js.undefined,
-    path: String = null,
-    requestOptions: StringDictionary[js.Any] = null,
-    strictCidFormat: js.UndefOr[Boolean] = js.undefined,
-    tid: String = null,
-    uid: String = null
-  ): MiddlewareOptions = {
+  def apply(): MiddlewareOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
-    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
-    if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBatching)) __obj.updateDynamic("enableBatching")(enableBatching.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictCidFormat)) __obj.updateDynamic("strictCidFormat")(strictCidFormat.get.asInstanceOf[js.Any])
-    if (tid != null) __obj.updateDynamic("tid")(tid.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiddlewareOptions]
   }
+  @scala.inline
+  implicit class MiddlewareOptionsOps[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCookieName(value: String): Self = this.set("cookieName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieName: Self = this.set("cookieName", js.undefined)
+  }
+  
 }
 

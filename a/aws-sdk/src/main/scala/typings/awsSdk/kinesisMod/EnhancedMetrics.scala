@@ -14,10 +14,28 @@ trait EnhancedMetrics extends js.Object {
 
 object EnhancedMetrics {
   @scala.inline
-  def apply(ShardLevelMetrics: MetricsNameList = null): EnhancedMetrics = {
+  def apply(): EnhancedMetrics = {
     val __obj = js.Dynamic.literal()
-    if (ShardLevelMetrics != null) __obj.updateDynamic("ShardLevelMetrics")(ShardLevelMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedMetrics]
   }
+  @scala.inline
+  implicit class EnhancedMetricsOps[Self <: EnhancedMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShardLevelMetricsVarargs(value: MetricsName*): Self = this.set("ShardLevelMetrics", js.Array(value :_*))
+    @scala.inline
+    def setShardLevelMetrics(value: MetricsNameList): Self = this.set("ShardLevelMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShardLevelMetrics: Self = this.set("ShardLevelMetrics", js.undefined)
+  }
+  
 }
 

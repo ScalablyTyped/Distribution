@@ -34,22 +34,46 @@ trait BackupSelectionsListMember extends js.Object {
 
 object BackupSelectionsListMember {
   @scala.inline
-  def apply(
-    BackupPlanId: String = null,
-    CreationDate: timestamp = null,
-    CreatorRequestId: String = null,
-    IamRoleArn: IAMRoleArn = null,
-    SelectionId: String = null,
-    SelectionName: BackupSelectionName = null
-  ): BackupSelectionsListMember = {
+  def apply(): BackupSelectionsListMember = {
     val __obj = js.Dynamic.literal()
-    if (BackupPlanId != null) __obj.updateDynamic("BackupPlanId")(BackupPlanId.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (SelectionId != null) __obj.updateDynamic("SelectionId")(SelectionId.asInstanceOf[js.Any])
-    if (SelectionName != null) __obj.updateDynamic("SelectionName")(SelectionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupSelectionsListMember]
   }
+  @scala.inline
+  implicit class BackupSelectionsListMemberOps[Self <: BackupSelectionsListMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupPlanId(value: String): Self = this.set("BackupPlanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanId: Self = this.set("BackupPlanId", js.undefined)
+    @scala.inline
+    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setCreatorRequestId(value: String): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: IAMRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    @scala.inline
+    def setSelectionId(value: String): Self = this.set("SelectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionId: Self = this.set("SelectionId", js.undefined)
+    @scala.inline
+    def setSelectionName(value: BackupSelectionName): Self = this.set("SelectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionName: Self = this.set("SelectionName", js.undefined)
+  }
+  
 }
 

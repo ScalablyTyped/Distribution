@@ -1,121 +1,186 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.ComponentDxFileManager
-import typings.devextreme.anon.ComponentElement
+import typings.devextreme.anon.ChunkSize
+import typings.devextreme.anon.ComponentElementEvent
 import typings.devextreme.anon.Copy
-import typings.devextreme.anon.Element
-import typings.devextreme.anon.FileItem
-import typings.devextreme.anon.MaxFileSize
-import typings.devextreme.anon.Mode
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
+import typings.devextreme.anon.CurrentDeselectedItemKeys
+import typings.devextreme.anon.Details
+import typings.devextreme.anon.Directory
+import typings.devextreme.anon.ErrorCode
+import typings.devextreme.anon.File
+import typings.devextreme.anon.ItemItemElement
 import typings.devextreme.devextremeStrings.multiple
 import typings.devextreme.devextremeStrings.single_
+import typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxFileManagerOptions extends WidgetOptions[dxFileManager] {
   /** @name dxFileManager.Options.allowedFileExtensions */
-  var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
+  var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.native
   /** @name dxFileManager.Options.contextMenu */
-  var contextMenu: js.UndefOr[dxFileManagerContextMenu] = js.undefined
+  var contextMenu: js.UndefOr[dxFileManagerContextMenu] = js.native
   /** @name dxFileManager.Options.currentPath */
-  var currentPath: js.UndefOr[String] = js.undefined
+  var currentPath: js.UndefOr[String] = js.native
+  /** @name dxFileManager.Options.currentPathKeys */
+  var currentPathKeys: js.UndefOr[js.Array[String]] = js.native
   /** @name dxFileManager.Options.customizeDetailColumns */
   var customizeDetailColumns: js.UndefOr[
-    js.Function1[/* columns */ js.Array[dxDataGridColumn], js.Array[dxDataGridColumn]]
-  ] = js.undefined
+    js.Function1[
+      /* columns */ js.Array[dxFileManagerDetailsColumn], 
+      js.Array[dxFileManagerDetailsColumn]
+    ]
+  ] = js.native
   /** @name dxFileManager.Options.customizeThumbnail */
-  var customizeThumbnail: js.UndefOr[js.Function1[/* fileItem */ js.Any, String]] = js.undefined
-  /** @name dxFileManager.Options.fileProvider */
-  var fileProvider: js.UndefOr[js.Any] = js.undefined
+  var customizeThumbnail: js.UndefOr[js.Function1[/* fileSystemItem */ FileSystemItem, String]] = js.native
+  /** @name dxFileManager.Options.fileSystemProvider */
+  var fileSystemProvider: js.UndefOr[js.Any] = js.native
+  /** @name dxFileManager.Options.focusedItemKey */
+  var focusedItemKey: js.UndefOr[String] = js.native
   /** @name dxFileManager.Options.itemView */
-  var itemView: js.UndefOr[Mode] = js.undefined
+  var itemView: js.UndefOr[Details] = js.native
+  /** @name dxFileManager.Options.onContextMenuItemClick */
+  var onContextMenuItemClick: js.UndefOr[js.Function1[/* e */ ComponentElementEvent, _]] = js.native
   /** @name dxFileManager.Options.onCurrentDirectoryChanged */
-  var onCurrentDirectoryChanged: js.UndefOr[js.Function1[/* e */ ComponentDxFileManager, _]] = js.undefined
+  var onCurrentDirectoryChanged: js.UndefOr[js.Function1[/* e */ Directory, _]] = js.native
+  /** @name dxFileManager.Options.onErrorOccurred */
+  var onErrorOccurred: js.UndefOr[js.Function1[/* e */ ErrorCode, _]] = js.native
+  /** @name dxFileManager.Options.onFocusedItemChanged */
+  var onFocusedItemChanged: js.UndefOr[js.Function1[/* e */ ItemItemElement, _]] = js.native
   /** @name dxFileManager.Options.onSelectedFileOpened */
-  var onSelectedFileOpened: js.UndefOr[js.Function1[/* e */ FileItem, _]] = js.undefined
+  var onSelectedFileOpened: js.UndefOr[js.Function1[/* e */ File, _]] = js.native
+  /** @name dxFileManager.Options.onSelectionChanged */
+  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ CurrentDeselectedItemKeys, _]] = js.native
+  /** @name dxFileManager.Options.onToolbarItemClick */
+  var onToolbarItemClick: js.UndefOr[js.Function1[/* e */ ComponentElementEvent, _]] = js.native
   /** @name dxFileManager.Options.permissions */
-  var permissions: js.UndefOr[Copy] = js.undefined
+  var permissions: js.UndefOr[Copy] = js.native
   /** @name dxFileManager.Options.rootFolderName */
-  var rootFolderName: js.UndefOr[String] = js.undefined
+  var rootFolderName: js.UndefOr[String] = js.native
+  /** @name dxFileManager.Options.selectedItemKeys */
+  var selectedItemKeys: js.UndefOr[js.Array[String]] = js.native
   /** @name dxFileManager.Options.selectionMode */
-  var selectionMode: js.UndefOr[multiple | single_] = js.undefined
+  var selectionMode: js.UndefOr[multiple | single_] = js.native
   /** @name dxFileManager.Options.toolbar */
-  var toolbar: js.UndefOr[dxFileManagerToolbar] = js.undefined
+  var toolbar: js.UndefOr[dxFileManagerToolbar] = js.native
   /** @name dxFileManager.Options.upload */
-  var upload: js.UndefOr[MaxFileSize] = js.undefined
+  var upload: js.UndefOr[ChunkSize] = js.native
 }
 
 object dxFileManagerOptions {
   @scala.inline
-  def apply(
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    allowedFileExtensions: js.Array[String] = null,
-    bindingOptions: js.Any = null,
-    contextMenu: dxFileManagerContextMenu = null,
-    currentPath: String = null,
-    customizeDetailColumns: /* columns */ js.Array[dxDataGridColumn] => js.Array[dxDataGridColumn] = null,
-    customizeThumbnail: /* fileItem */ js.Any => String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    fileProvider: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    itemView: Mode = null,
-    onContentReady: /* e */ ComponentElement[dxFileManager] => _ = null,
-    onCurrentDirectoryChanged: /* e */ ComponentDxFileManager => _ = null,
-    onDisposing: /* e */ Model[dxFileManager] => _ = null,
-    onInitialized: /* e */ Element[dxFileManager] => _ = null,
-    onOptionChanged: /* e */ Name[dxFileManager] => _ = null,
-    onSelectedFileOpened: /* e */ FileItem => _ = null,
-    permissions: Copy = null,
-    rootFolderName: String = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: multiple | single_ = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    toolbar: dxFileManagerToolbar = null,
-    upload: MaxFileSize = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxFileManagerOptions = {
+  def apply(): dxFileManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
-    if (allowedFileExtensions != null) __obj.updateDynamic("allowedFileExtensions")(allowedFileExtensions.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (currentPath != null) __obj.updateDynamic("currentPath")(currentPath.asInstanceOf[js.Any])
-    if (customizeDetailColumns != null) __obj.updateDynamic("customizeDetailColumns")(js.Any.fromFunction1(customizeDetailColumns))
-    if (customizeThumbnail != null) __obj.updateDynamic("customizeThumbnail")(js.Any.fromFunction1(customizeThumbnail))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (fileProvider != null) __obj.updateDynamic("fileProvider")(fileProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
-    if (itemView != null) __obj.updateDynamic("itemView")(itemView.asInstanceOf[js.Any])
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1(onContentReady))
-    if (onCurrentDirectoryChanged != null) __obj.updateDynamic("onCurrentDirectoryChanged")(js.Any.fromFunction1(onCurrentDirectoryChanged))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onSelectedFileOpened != null) __obj.updateDynamic("onSelectedFileOpened")(js.Any.fromFunction1(onSelectedFileOpened))
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (rootFolderName != null) __obj.updateDynamic("rootFolderName")(rootFolderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFileManagerOptions]
   }
+  @scala.inline
+  implicit class dxFileManagerOptionsOps[Self <: dxFileManagerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedFileExtensionsVarargs(value: String*): Self = this.set("allowedFileExtensions", js.Array(value :_*))
+    @scala.inline
+    def setAllowedFileExtensions(value: js.Array[String]): Self = this.set("allowedFileExtensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedFileExtensions: Self = this.set("allowedFileExtensions", js.undefined)
+    @scala.inline
+    def setContextMenu(value: dxFileManagerContextMenu): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    @scala.inline
+    def setCurrentPath(value: String): Self = this.set("currentPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPath: Self = this.set("currentPath", js.undefined)
+    @scala.inline
+    def setCurrentPathKeysVarargs(value: String*): Self = this.set("currentPathKeys", js.Array(value :_*))
+    @scala.inline
+    def setCurrentPathKeys(value: js.Array[String]): Self = this.set("currentPathKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPathKeys: Self = this.set("currentPathKeys", js.undefined)
+    @scala.inline
+    def setCustomizeDetailColumns(value: /* columns */ js.Array[dxFileManagerDetailsColumn] => js.Array[dxFileManagerDetailsColumn]): Self = this.set("customizeDetailColumns", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomizeDetailColumns: Self = this.set("customizeDetailColumns", js.undefined)
+    @scala.inline
+    def setCustomizeThumbnail(value: /* fileSystemItem */ FileSystemItem => String): Self = this.set("customizeThumbnail", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomizeThumbnail: Self = this.set("customizeThumbnail", js.undefined)
+    @scala.inline
+    def setFileSystemProvider(value: js.Any): Self = this.set("fileSystemProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemProvider: Self = this.set("fileSystemProvider", js.undefined)
+    @scala.inline
+    def setFocusedItemKey(value: String): Self = this.set("focusedItemKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusedItemKey: Self = this.set("focusedItemKey", js.undefined)
+    @scala.inline
+    def setItemView(value: Details): Self = this.set("itemView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemView: Self = this.set("itemView", js.undefined)
+    @scala.inline
+    def setOnContextMenuItemClick(value: /* e */ ComponentElementEvent => _): Self = this.set("onContextMenuItemClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContextMenuItemClick: Self = this.set("onContextMenuItemClick", js.undefined)
+    @scala.inline
+    def setOnCurrentDirectoryChanged(value: /* e */ Directory => _): Self = this.set("onCurrentDirectoryChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCurrentDirectoryChanged: Self = this.set("onCurrentDirectoryChanged", js.undefined)
+    @scala.inline
+    def setOnErrorOccurred(value: /* e */ ErrorCode => _): Self = this.set("onErrorOccurred", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnErrorOccurred: Self = this.set("onErrorOccurred", js.undefined)
+    @scala.inline
+    def setOnFocusedItemChanged(value: /* e */ ItemItemElement => _): Self = this.set("onFocusedItemChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocusedItemChanged: Self = this.set("onFocusedItemChanged", js.undefined)
+    @scala.inline
+    def setOnSelectedFileOpened(value: /* e */ File => _): Self = this.set("onSelectedFileOpened", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelectedFileOpened: Self = this.set("onSelectedFileOpened", js.undefined)
+    @scala.inline
+    def setOnSelectionChanged(value: /* e */ CurrentDeselectedItemKeys => _): Self = this.set("onSelectionChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelectionChanged: Self = this.set("onSelectionChanged", js.undefined)
+    @scala.inline
+    def setOnToolbarItemClick(value: /* e */ ComponentElementEvent => _): Self = this.set("onToolbarItemClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnToolbarItemClick: Self = this.set("onToolbarItemClick", js.undefined)
+    @scala.inline
+    def setPermissions(value: Copy): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setRootFolderName(value: String): Self = this.set("rootFolderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootFolderName: Self = this.set("rootFolderName", js.undefined)
+    @scala.inline
+    def setSelectedItemKeysVarargs(value: String*): Self = this.set("selectedItemKeys", js.Array(value :_*))
+    @scala.inline
+    def setSelectedItemKeys(value: js.Array[String]): Self = this.set("selectedItemKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItemKeys: Self = this.set("selectedItemKeys", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: multiple | single_): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setToolbar(value: dxFileManagerToolbar): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    @scala.inline
+    def setUpload(value: ChunkSize): Self = this.set("upload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpload: Self = this.set("upload", js.undefined)
+  }
+  
 }
 

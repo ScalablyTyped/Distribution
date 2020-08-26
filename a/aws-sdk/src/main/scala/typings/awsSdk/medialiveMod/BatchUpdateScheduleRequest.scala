@@ -22,15 +22,32 @@ trait BatchUpdateScheduleRequest extends js.Object {
 
 object BatchUpdateScheduleRequest {
   @scala.inline
-  def apply(
-    ChannelId: string,
-    Creates: BatchScheduleActionCreateRequest = null,
-    Deletes: BatchScheduleActionDeleteRequest = null
-  ): BatchUpdateScheduleRequest = {
+  def apply(ChannelId: string): BatchUpdateScheduleRequest = {
     val __obj = js.Dynamic.literal(ChannelId = ChannelId.asInstanceOf[js.Any])
-    if (Creates != null) __obj.updateDynamic("Creates")(Creates.asInstanceOf[js.Any])
-    if (Deletes != null) __obj.updateDynamic("Deletes")(Deletes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateScheduleRequest]
   }
+  @scala.inline
+  implicit class BatchUpdateScheduleRequestOps[Self <: BatchUpdateScheduleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelId(value: string): Self = this.set("ChannelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreates(value: BatchScheduleActionCreateRequest): Self = this.set("Creates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreates: Self = this.set("Creates", js.undefined)
+    @scala.inline
+    def setDeletes(value: BatchScheduleActionDeleteRequest): Self = this.set("Deletes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletes: Self = this.set("Deletes", js.undefined)
+  }
+  
 }
 

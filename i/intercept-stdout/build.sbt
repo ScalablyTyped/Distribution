@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "intercept-stdout"
-version := "0.1-dt-20190924Z-eab962"
-scalaVersion := "2.13.2"
+version := "0.1-dt-20190924Z-1979cb"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

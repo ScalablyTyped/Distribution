@@ -9,9 +9,9 @@ read(1) for node programs
 | ------------------ | :-------------: |
 | Full name          | read |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 552 |
-| # downloads        | 79441988 |
+| # releases         | 0 |
+| # dependents       | 561 |
+| # downloads        | 83191089 |
 | # stars            | 11 |
 
 ## Links

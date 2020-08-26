@@ -14,10 +14,26 @@ trait DBParameterGroupNameMessage extends js.Object {
 
 object DBParameterGroupNameMessage {
   @scala.inline
-  def apply(DBParameterGroupName: String = null): DBParameterGroupNameMessage = {
+  def apply(): DBParameterGroupNameMessage = {
     val __obj = js.Dynamic.literal()
-    if (DBParameterGroupName != null) __obj.updateDynamic("DBParameterGroupName")(DBParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBParameterGroupNameMessage]
   }
+  @scala.inline
+  implicit class DBParameterGroupNameMessageOps[Self <: DBParameterGroupNameMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBParameterGroupName(value: String): Self = this.set("DBParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBParameterGroupName: Self = this.set("DBParameterGroupName", js.undefined)
+  }
+  
 }
 

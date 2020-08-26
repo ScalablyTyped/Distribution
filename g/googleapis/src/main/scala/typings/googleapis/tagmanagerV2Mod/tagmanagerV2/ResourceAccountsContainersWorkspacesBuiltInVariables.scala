@@ -29,6 +29,7 @@ class ResourceAccountsContainersWorkspacesBuiltInVariables protected () extends 
     */
   def create(): GaxiosPromise[SchemaCreateBuiltInVariableResponse] = js.native
   def create(callback: BodyResponseCallback[SchemaCreateBuiltInVariableResponse]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreateBuiltInVariableResponse] = js.native
   def create(params: ParamsResourceAccountsContainersWorkspacesBuiltInVariablesCreate): GaxiosPromise[SchemaCreateBuiltInVariableResponse] = js.native
   def create(
     params: ParamsResourceAccountsContainersWorkspacesBuiltInVariablesCreate,
@@ -61,6 +62,7 @@ class ResourceAccountsContainersWorkspacesBuiltInVariables protected () extends 
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersWorkspacesBuiltInVariablesDelete): GaxiosPromise[Unit] = js.native
   def delete(
     params: ParamsResourceAccountsContainersWorkspacesBuiltInVariablesDelete,
@@ -92,6 +94,7 @@ class ResourceAccountsContainersWorkspacesBuiltInVariables protected () extends 
     */
   def list(): GaxiosPromise[SchemaListEnabledBuiltInVariablesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListEnabledBuiltInVariablesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListEnabledBuiltInVariablesResponse] = js.native
   def list(params: ParamsResourceAccountsContainersWorkspacesBuiltInVariablesList): GaxiosPromise[SchemaListEnabledBuiltInVariablesResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersWorkspacesBuiltInVariablesList,
@@ -124,6 +127,7 @@ class ResourceAccountsContainersWorkspacesBuiltInVariables protected () extends 
     */
   def revert(): GaxiosPromise[SchemaRevertBuiltInVariableResponse] = js.native
   def revert(callback: BodyResponseCallback[SchemaRevertBuiltInVariableResponse]): Unit = js.native
+  def revert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevertBuiltInVariableResponse] = js.native
   def revert(params: ParamsResourceAccountsContainersWorkspacesBuiltInVariablesRevert): GaxiosPromise[SchemaRevertBuiltInVariableResponse] = js.native
   def revert(
     params: ParamsResourceAccountsContainersWorkspacesBuiltInVariablesRevert,

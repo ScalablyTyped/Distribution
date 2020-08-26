@@ -26,7 +26,7 @@ object jsonpBackendMod extends js.Object {
     var _id: js.Any = js.native
     var _responseData: js.Any = js.native
     var _script: js.Any = js.native
-    var baseResponseOptions: js.UndefOr[js.Any] = js.native
+    var baseResponseOptions: js.Any = js.native
     /**
       * An observable that completes with the response, when the request is finished.
       */

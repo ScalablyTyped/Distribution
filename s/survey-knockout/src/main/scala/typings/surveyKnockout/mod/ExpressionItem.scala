@@ -16,12 +16,6 @@ class ExpressionItem ()
   var expression: String = js.native
   val locHtml: LocalizableString = js.native
   var locOwner: ILocalizableOwner = js.native
-  /* CompleteClass */
-  override def getLocale(): String = js.native
-  /* CompleteClass */
-  override def getMarkdownHtml(text: String): String = js.native
-  /* CompleteClass */
-  override def getProcessedText(text: String): String = js.native
   def runCondition(values: js.Any, properties: js.Any): Boolean = js.native
 }
 

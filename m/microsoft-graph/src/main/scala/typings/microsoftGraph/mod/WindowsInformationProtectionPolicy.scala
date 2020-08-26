@@ -4,156 +4,131 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WindowsInformationProtectionPolicy extends WindowsInformationProtection {
   // Offline interval before app data is wiped (days)
-  var daysWithoutContactBeforeUnenroll: js.UndefOr[Double] = js.undefined
+  var daysWithoutContactBeforeUnenroll: js.UndefOr[Double] = js.native
   // Enrollment url for the MDM
-  var mdmEnrollmentUrl: js.UndefOr[String] = js.undefined
+  var mdmEnrollmentUrl: js.UndefOr[String] = js.native
   /**
     * Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become
     * PIN or password locked. Range is an integer X where 0 &amp;lt;= X &amp;lt;= 999.
     */
-  var minutesOfInactivityBeforeDeviceLock: js.UndefOr[Double] = js.undefined
+  var minutesOfInactivityBeforeDeviceLock: js.UndefOr[Double] = js.native
   /**
     * Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused. The
     * largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy
     * setting is 0. If this policy is set to 0, then storage of previous PINs is not required. This node was added in Windows
     * 10, version 1511. Default is 0.
     */
-  var numberOfPastPinsRemembered: js.UndefOr[Double] = js.undefined
+  var numberOfPastPinsRemembered: js.UndefOr[Double] = js.native
   /**
     * The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe
     * functionality. Range is an integer X where 4 &amp;lt;= X &amp;lt;= 16 for desktop and 0 &amp;lt;= X &amp;lt;= 999 for
     * mobile devices.
     */
-  var passwordMaximumAttemptCount: js.UndefOr[Double] = js.undefined
+  var passwordMaximumAttemptCount: js.UndefOr[Double] = js.native
   /**
     * Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to
     * change it. The largest number you can configure for this policy setting is 730. The lowest number you can configure for
     * this policy setting is 0. If this policy is set to 0, then the user's PIN will never expire. This node was added in
     * Windows 10, version 1511. Default is 0.
     */
-  var pinExpirationDays: js.UndefOr[Double] = js.undefined
+  var pinExpirationDays: js.UndefOr[Double] = js.native
   /**
     * Integer value that configures the use of lowercase letters in the Windows Hello for Business PIN. Default is NotAllow.
     * Possible values are: notAllow, requireAtLeastOne, allow.
     */
-  var pinLowercaseLetters: js.UndefOr[WindowsInformationProtectionPinCharacterRequirements] = js.undefined
+  var pinLowercaseLetters: js.UndefOr[WindowsInformationProtectionPinCharacterRequirements] = js.native
   /**
     * Integer value that sets the minimum number of characters required for the PIN. Default value is 4. The lowest number
     * you can configure for this policy setting is 4. The largest number you can configure must be less than the number
     * configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
     */
-  var pinMinimumLength: js.UndefOr[Double] = js.undefined
+  var pinMinimumLength: js.UndefOr[Double] = js.native
   /**
     * Integer value that configures the use of special characters in the Windows Hello for Business PIN. Valid special
     * characters for Windows Hello for Business PIN gestures include: ! ' # $ % &amp; ' ( ) + , - . / : ; &amp;lt; = &amp;gt;
     * ? @ [ / ] ^ ` {
     */
-  var pinSpecialCharacters: js.UndefOr[WindowsInformationProtectionPinCharacterRequirements] = js.undefined
+  var pinSpecialCharacters: js.UndefOr[WindowsInformationProtectionPinCharacterRequirements] = js.native
   /**
     * Integer value that configures the use of uppercase letters in the Windows Hello for Business PIN. Default is NotAllow.
     * Possible values are: notAllow, requireAtLeastOne, allow.
     */
-  var pinUppercaseLetters: js.UndefOr[WindowsInformationProtectionPinCharacterRequirements] = js.undefined
+  var pinUppercaseLetters: js.UndefOr[WindowsInformationProtectionPinCharacterRequirements] = js.native
   // New property in RS2, pending documentation
-  var revokeOnMdmHandoffDisabled: js.UndefOr[Boolean] = js.undefined
+  var revokeOnMdmHandoffDisabled: js.UndefOr[Boolean] = js.native
   // Boolean value that sets Windows Hello for Business as a method for signing into Windows.
-  var windowsHelloForBusinessBlocked: js.UndefOr[Boolean] = js.undefined
+  var windowsHelloForBusinessBlocked: js.UndefOr[Boolean] = js.native
 }
 
 object WindowsInformationProtectionPolicy {
   @scala.inline
-  def apply(
-    assignments: js.Array[TargetedManagedAppPolicyAssignment] = null,
-    azureRightsManagementServicesAllowed: js.UndefOr[Boolean] = js.undefined,
-    createdDateTime: String = null,
-    dataRecoveryCertificate: WindowsInformationProtectionDataRecoveryCertificate = null,
-    daysWithoutContactBeforeUnenroll: js.UndefOr[Double] = js.undefined,
-    description: String = null,
-    displayName: String = null,
-    enforcementLevel: WindowsInformationProtectionEnforcementLevel = null,
-    enterpriseDomain: String = null,
-    enterpriseIPRanges: js.Array[WindowsInformationProtectionIPRangeCollection] = null,
-    enterpriseIPRangesAreAuthoritative: js.UndefOr[Boolean] = js.undefined,
-    enterpriseInternalProxyServers: js.Array[WindowsInformationProtectionResourceCollection] = null,
-    enterpriseNetworkDomainNames: js.Array[WindowsInformationProtectionResourceCollection] = null,
-    enterpriseProtectedDomainNames: js.Array[WindowsInformationProtectionResourceCollection] = null,
-    enterpriseProxiedDomains: js.Array[WindowsInformationProtectionProxiedDomainCollection] = null,
-    enterpriseProxyServers: js.Array[WindowsInformationProtectionResourceCollection] = null,
-    enterpriseProxyServersAreAuthoritative: js.UndefOr[Boolean] = js.undefined,
-    exemptAppLockerFiles: js.Array[WindowsInformationProtectionAppLockerFile] = null,
-    exemptApps: js.Array[WindowsInformationProtectionApp] = null,
-    iconsVisible: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    indexingEncryptedStoresOrItemsBlocked: js.UndefOr[Boolean] = js.undefined,
-    isAssigned: js.UndefOr[Boolean] = js.undefined,
-    lastModifiedDateTime: String = null,
-    mdmEnrollmentUrl: String = null,
-    minutesOfInactivityBeforeDeviceLock: js.UndefOr[Double] = js.undefined,
-    neutralDomainResources: js.Array[WindowsInformationProtectionResourceCollection] = null,
-    numberOfPastPinsRemembered: js.UndefOr[Double] = js.undefined,
-    passwordMaximumAttemptCount: js.UndefOr[Double] = js.undefined,
-    pinExpirationDays: js.UndefOr[Double] = js.undefined,
-    pinLowercaseLetters: WindowsInformationProtectionPinCharacterRequirements = null,
-    pinMinimumLength: js.UndefOr[Double] = js.undefined,
-    pinSpecialCharacters: WindowsInformationProtectionPinCharacterRequirements = null,
-    pinUppercaseLetters: WindowsInformationProtectionPinCharacterRequirements = null,
-    protectedAppLockerFiles: js.Array[WindowsInformationProtectionAppLockerFile] = null,
-    protectedApps: js.Array[WindowsInformationProtectionApp] = null,
-    protectionUnderLockConfigRequired: js.UndefOr[Boolean] = js.undefined,
-    revokeOnMdmHandoffDisabled: js.UndefOr[Boolean] = js.undefined,
-    revokeOnUnenrollDisabled: js.UndefOr[Boolean] = js.undefined,
-    rightsManagementServicesTemplateId: String = null,
-    smbAutoEncryptedFileExtensions: js.Array[WindowsInformationProtectionResourceCollection] = null,
-    version: String = null,
-    windowsHelloForBusinessBlocked: js.UndefOr[Boolean] = js.undefined
-  ): WindowsInformationProtectionPolicy = {
+  def apply(): WindowsInformationProtectionPolicy = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(azureRightsManagementServicesAllowed)) __obj.updateDynamic("azureRightsManagementServicesAllowed")(azureRightsManagementServicesAllowed.get.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (dataRecoveryCertificate != null) __obj.updateDynamic("dataRecoveryCertificate")(dataRecoveryCertificate.asInstanceOf[js.Any])
-    if (!js.isUndefined(daysWithoutContactBeforeUnenroll)) __obj.updateDynamic("daysWithoutContactBeforeUnenroll")(daysWithoutContactBeforeUnenroll.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (enforcementLevel != null) __obj.updateDynamic("enforcementLevel")(enforcementLevel.asInstanceOf[js.Any])
-    if (enterpriseDomain != null) __obj.updateDynamic("enterpriseDomain")(enterpriseDomain.asInstanceOf[js.Any])
-    if (enterpriseIPRanges != null) __obj.updateDynamic("enterpriseIPRanges")(enterpriseIPRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterpriseIPRangesAreAuthoritative)) __obj.updateDynamic("enterpriseIPRangesAreAuthoritative")(enterpriseIPRangesAreAuthoritative.get.asInstanceOf[js.Any])
-    if (enterpriseInternalProxyServers != null) __obj.updateDynamic("enterpriseInternalProxyServers")(enterpriseInternalProxyServers.asInstanceOf[js.Any])
-    if (enterpriseNetworkDomainNames != null) __obj.updateDynamic("enterpriseNetworkDomainNames")(enterpriseNetworkDomainNames.asInstanceOf[js.Any])
-    if (enterpriseProtectedDomainNames != null) __obj.updateDynamic("enterpriseProtectedDomainNames")(enterpriseProtectedDomainNames.asInstanceOf[js.Any])
-    if (enterpriseProxiedDomains != null) __obj.updateDynamic("enterpriseProxiedDomains")(enterpriseProxiedDomains.asInstanceOf[js.Any])
-    if (enterpriseProxyServers != null) __obj.updateDynamic("enterpriseProxyServers")(enterpriseProxyServers.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterpriseProxyServersAreAuthoritative)) __obj.updateDynamic("enterpriseProxyServersAreAuthoritative")(enterpriseProxyServersAreAuthoritative.get.asInstanceOf[js.Any])
-    if (exemptAppLockerFiles != null) __obj.updateDynamic("exemptAppLockerFiles")(exemptAppLockerFiles.asInstanceOf[js.Any])
-    if (exemptApps != null) __obj.updateDynamic("exemptApps")(exemptApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconsVisible)) __obj.updateDynamic("iconsVisible")(iconsVisible.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(indexingEncryptedStoresOrItemsBlocked)) __obj.updateDynamic("indexingEncryptedStoresOrItemsBlocked")(indexingEncryptedStoresOrItemsBlocked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAssigned)) __obj.updateDynamic("isAssigned")(isAssigned.get.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (mdmEnrollmentUrl != null) __obj.updateDynamic("mdmEnrollmentUrl")(mdmEnrollmentUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(minutesOfInactivityBeforeDeviceLock)) __obj.updateDynamic("minutesOfInactivityBeforeDeviceLock")(minutesOfInactivityBeforeDeviceLock.get.asInstanceOf[js.Any])
-    if (neutralDomainResources != null) __obj.updateDynamic("neutralDomainResources")(neutralDomainResources.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfPastPinsRemembered)) __obj.updateDynamic("numberOfPastPinsRemembered")(numberOfPastPinsRemembered.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordMaximumAttemptCount)) __obj.updateDynamic("passwordMaximumAttemptCount")(passwordMaximumAttemptCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinExpirationDays)) __obj.updateDynamic("pinExpirationDays")(pinExpirationDays.get.asInstanceOf[js.Any])
-    if (pinLowercaseLetters != null) __obj.updateDynamic("pinLowercaseLetters")(pinLowercaseLetters.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinMinimumLength)) __obj.updateDynamic("pinMinimumLength")(pinMinimumLength.get.asInstanceOf[js.Any])
-    if (pinSpecialCharacters != null) __obj.updateDynamic("pinSpecialCharacters")(pinSpecialCharacters.asInstanceOf[js.Any])
-    if (pinUppercaseLetters != null) __obj.updateDynamic("pinUppercaseLetters")(pinUppercaseLetters.asInstanceOf[js.Any])
-    if (protectedAppLockerFiles != null) __obj.updateDynamic("protectedAppLockerFiles")(protectedAppLockerFiles.asInstanceOf[js.Any])
-    if (protectedApps != null) __obj.updateDynamic("protectedApps")(protectedApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(protectionUnderLockConfigRequired)) __obj.updateDynamic("protectionUnderLockConfigRequired")(protectionUnderLockConfigRequired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(revokeOnMdmHandoffDisabled)) __obj.updateDynamic("revokeOnMdmHandoffDisabled")(revokeOnMdmHandoffDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(revokeOnUnenrollDisabled)) __obj.updateDynamic("revokeOnUnenrollDisabled")(revokeOnUnenrollDisabled.get.asInstanceOf[js.Any])
-    if (rightsManagementServicesTemplateId != null) __obj.updateDynamic("rightsManagementServicesTemplateId")(rightsManagementServicesTemplateId.asInstanceOf[js.Any])
-    if (smbAutoEncryptedFileExtensions != null) __obj.updateDynamic("smbAutoEncryptedFileExtensions")(smbAutoEncryptedFileExtensions.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHelloForBusinessBlocked)) __obj.updateDynamic("windowsHelloForBusinessBlocked")(windowsHelloForBusinessBlocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionPolicy]
   }
+  @scala.inline
+  implicit class WindowsInformationProtectionPolicyOps[Self <: WindowsInformationProtectionPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDaysWithoutContactBeforeUnenroll(value: Double): Self = this.set("daysWithoutContactBeforeUnenroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDaysWithoutContactBeforeUnenroll: Self = this.set("daysWithoutContactBeforeUnenroll", js.undefined)
+    @scala.inline
+    def setMdmEnrollmentUrl(value: String): Self = this.set("mdmEnrollmentUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMdmEnrollmentUrl: Self = this.set("mdmEnrollmentUrl", js.undefined)
+    @scala.inline
+    def setMinutesOfInactivityBeforeDeviceLock(value: Double): Self = this.set("minutesOfInactivityBeforeDeviceLock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinutesOfInactivityBeforeDeviceLock: Self = this.set("minutesOfInactivityBeforeDeviceLock", js.undefined)
+    @scala.inline
+    def setNumberOfPastPinsRemembered(value: Double): Self = this.set("numberOfPastPinsRemembered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfPastPinsRemembered: Self = this.set("numberOfPastPinsRemembered", js.undefined)
+    @scala.inline
+    def setPasswordMaximumAttemptCount(value: Double): Self = this.set("passwordMaximumAttemptCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordMaximumAttemptCount: Self = this.set("passwordMaximumAttemptCount", js.undefined)
+    @scala.inline
+    def setPinExpirationDays(value: Double): Self = this.set("pinExpirationDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinExpirationDays: Self = this.set("pinExpirationDays", js.undefined)
+    @scala.inline
+    def setPinLowercaseLetters(value: WindowsInformationProtectionPinCharacterRequirements): Self = this.set("pinLowercaseLetters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinLowercaseLetters: Self = this.set("pinLowercaseLetters", js.undefined)
+    @scala.inline
+    def setPinMinimumLength(value: Double): Self = this.set("pinMinimumLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinMinimumLength: Self = this.set("pinMinimumLength", js.undefined)
+    @scala.inline
+    def setPinSpecialCharacters(value: WindowsInformationProtectionPinCharacterRequirements): Self = this.set("pinSpecialCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinSpecialCharacters: Self = this.set("pinSpecialCharacters", js.undefined)
+    @scala.inline
+    def setPinUppercaseLetters(value: WindowsInformationProtectionPinCharacterRequirements): Self = this.set("pinUppercaseLetters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinUppercaseLetters: Self = this.set("pinUppercaseLetters", js.undefined)
+    @scala.inline
+    def setRevokeOnMdmHandoffDisabled(value: Boolean): Self = this.set("revokeOnMdmHandoffDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevokeOnMdmHandoffDisabled: Self = this.set("revokeOnMdmHandoffDisabled", js.undefined)
+    @scala.inline
+    def setWindowsHelloForBusinessBlocked(value: Boolean): Self = this.set("windowsHelloForBusinessBlocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowsHelloForBusinessBlocked: Self = this.set("windowsHelloForBusinessBlocked", js.undefined)
+  }
+  
 }
 

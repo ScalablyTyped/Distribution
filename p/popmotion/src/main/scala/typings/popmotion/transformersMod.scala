@@ -44,6 +44,7 @@ object transformersMod extends js.Object {
   def snap(points: js.Array[Double]): js.Function1[/* v */ Double, Double] = js.native
   def snap(points: Double): js.Function1[/* v */ Double, Double] = js.native
   def steps(st: Double): js.Function1[/* v */ Double, Double] = js.native
+  def steps(st: Double, min: js.UndefOr[scala.Nothing], max: Double): js.Function1[/* v */ Double, Double] = js.native
   def steps(st: Double, min: Double): js.Function1[/* v */ Double, Double] = js.native
   def steps(st: Double, min: Double, max: Double): js.Function1[/* v */ Double, Double] = js.native
   def transformMap(childTransformers: StringDictionary[js.Function]): js.Function1[/* v */ js.Any, StringDictionary[_]] = js.native

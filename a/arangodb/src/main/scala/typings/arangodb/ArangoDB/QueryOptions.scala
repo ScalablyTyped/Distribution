@@ -4,56 +4,95 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueryOptions extends js.Object {
-  var cache: js.UndefOr[Boolean] = js.undefined
-  var count: js.UndefOr[Boolean] = js.undefined
-  var failOnWarning: js.UndefOr[Boolean] = js.undefined
-  var fullCount: js.UndefOr[Boolean] = js.undefined
-  var intermediateCommitCount: js.UndefOr[Double] = js.undefined
-  var intermediateCommitSize: js.UndefOr[Double] = js.undefined
-  var maxNumberOfPlans: js.UndefOr[Double] = js.undefined
+  var cache: js.UndefOr[Boolean] = js.native
+  var count: js.UndefOr[Boolean] = js.native
+  var failOnWarning: js.UndefOr[Boolean] = js.native
+  var fullCount: js.UndefOr[Boolean] = js.native
+  var intermediateCommitCount: js.UndefOr[Double] = js.native
+  var intermediateCommitSize: js.UndefOr[Double] = js.native
+  var maxNumberOfPlans: js.UndefOr[Double] = js.native
   // RocksDB
-  var maxTransactionsSize: js.UndefOr[Double] = js.undefined
-  var maxWarningCount: js.UndefOr[Double] = js.undefined
-  var memoryLimit: js.UndefOr[Double] = js.undefined
-  var profile: js.UndefOr[Boolean] = js.undefined
+  var maxTransactionsSize: js.UndefOr[Double] = js.native
+  var maxWarningCount: js.UndefOr[Double] = js.native
+  var memoryLimit: js.UndefOr[Double] = js.native
+  var profile: js.UndefOr[Boolean] = js.native
   // enterprise
-  var skipInaccessibleCollections: js.UndefOr[Boolean] = js.undefined
-  var stream: js.UndefOr[Boolean] = js.undefined
+  var skipInaccessibleCollections: js.UndefOr[Boolean] = js.native
+  var stream: js.UndefOr[Boolean] = js.native
 }
 
 object QueryOptions {
   @scala.inline
-  def apply(
-    cache: js.UndefOr[Boolean] = js.undefined,
-    count: js.UndefOr[Boolean] = js.undefined,
-    failOnWarning: js.UndefOr[Boolean] = js.undefined,
-    fullCount: js.UndefOr[Boolean] = js.undefined,
-    intermediateCommitCount: js.UndefOr[Double] = js.undefined,
-    intermediateCommitSize: js.UndefOr[Double] = js.undefined,
-    maxNumberOfPlans: js.UndefOr[Double] = js.undefined,
-    maxTransactionsSize: js.UndefOr[Double] = js.undefined,
-    maxWarningCount: js.UndefOr[Double] = js.undefined,
-    memoryLimit: js.UndefOr[Double] = js.undefined,
-    profile: js.UndefOr[Boolean] = js.undefined,
-    skipInaccessibleCollections: js.UndefOr[Boolean] = js.undefined,
-    stream: js.UndefOr[Boolean] = js.undefined
-  ): QueryOptions = {
+  def apply(): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnWarning)) __obj.updateDynamic("failOnWarning")(failOnWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullCount)) __obj.updateDynamic("fullCount")(fullCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(intermediateCommitCount)) __obj.updateDynamic("intermediateCommitCount")(intermediateCommitCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(intermediateCommitSize)) __obj.updateDynamic("intermediateCommitSize")(intermediateCommitSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxNumberOfPlans)) __obj.updateDynamic("maxNumberOfPlans")(maxNumberOfPlans.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxTransactionsSize)) __obj.updateDynamic("maxTransactionsSize")(maxTransactionsSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWarningCount)) __obj.updateDynamic("maxWarningCount")(maxWarningCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(memoryLimit)) __obj.updateDynamic("memoryLimit")(memoryLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipInaccessibleCollections)) __obj.updateDynamic("skipInaccessibleCollections")(skipInaccessibleCollections.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
+  @scala.inline
+  implicit class QueryOptionsOps[Self <: QueryOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setCount(value: Boolean): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setFailOnWarning(value: Boolean): Self = this.set("failOnWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailOnWarning: Self = this.set("failOnWarning", js.undefined)
+    @scala.inline
+    def setFullCount(value: Boolean): Self = this.set("fullCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullCount: Self = this.set("fullCount", js.undefined)
+    @scala.inline
+    def setIntermediateCommitCount(value: Double): Self = this.set("intermediateCommitCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntermediateCommitCount: Self = this.set("intermediateCommitCount", js.undefined)
+    @scala.inline
+    def setIntermediateCommitSize(value: Double): Self = this.set("intermediateCommitSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntermediateCommitSize: Self = this.set("intermediateCommitSize", js.undefined)
+    @scala.inline
+    def setMaxNumberOfPlans(value: Double): Self = this.set("maxNumberOfPlans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxNumberOfPlans: Self = this.set("maxNumberOfPlans", js.undefined)
+    @scala.inline
+    def setMaxTransactionsSize(value: Double): Self = this.set("maxTransactionsSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTransactionsSize: Self = this.set("maxTransactionsSize", js.undefined)
+    @scala.inline
+    def setMaxWarningCount(value: Double): Self = this.set("maxWarningCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWarningCount: Self = this.set("maxWarningCount", js.undefined)
+    @scala.inline
+    def setMemoryLimit(value: Double): Self = this.set("memoryLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryLimit: Self = this.set("memoryLimit", js.undefined)
+    @scala.inline
+    def setProfile(value: Boolean): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setSkipInaccessibleCollections(value: Boolean): Self = this.set("skipInaccessibleCollections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipInaccessibleCollections: Self = this.set("skipInaccessibleCollections", js.undefined)
+    @scala.inline
+    def setStream(value: Boolean): Self = this.set("stream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStream: Self = this.set("stream", js.undefined)
+  }
+  
 }
 

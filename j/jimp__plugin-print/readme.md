@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-print
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 print an image.
@@ -10,9 +10,9 @@ print an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-print |
 | Keywords           | - |
-| # releases         | 72 |
+| # releases         | 71 |
 | # dependents       | 1 |
-| # downloads        | 14007461 |
+| # downloads        | 14383634 |
 | # stars            | 0 |
 
 ## Links

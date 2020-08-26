@@ -34,22 +34,48 @@ trait LookupEventsRequest extends js.Object {
 
 object LookupEventsRequest {
   @scala.inline
-  def apply(
-    EndTime: Date = null,
-    EventCategory: EventCategory = null,
-    LookupAttributes: LookupAttributesList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    StartTime: Date = null
-  ): LookupEventsRequest = {
+  def apply(): LookupEventsRequest = {
     val __obj = js.Dynamic.literal()
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (EventCategory != null) __obj.updateDynamic("EventCategory")(EventCategory.asInstanceOf[js.Any])
-    if (LookupAttributes != null) __obj.updateDynamic("LookupAttributes")(LookupAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupEventsRequest]
   }
+  @scala.inline
+  implicit class LookupEventsRequestOps[Self <: LookupEventsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Date): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setEventCategory(value: EventCategory): Self = this.set("EventCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventCategory: Self = this.set("EventCategory", js.undefined)
+    @scala.inline
+    def setLookupAttributesVarargs(value: LookupAttribute*): Self = this.set("LookupAttributes", js.Array(value :_*))
+    @scala.inline
+    def setLookupAttributes(value: LookupAttributesList): Self = this.set("LookupAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupAttributes: Self = this.set("LookupAttributes", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStartTime(value: Date): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+  }
+  
 }
 

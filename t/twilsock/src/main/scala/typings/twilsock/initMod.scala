@@ -23,6 +23,13 @@ object initMod extends js.Object {
       token: String,
       continuationToken: String,
       metadata: js.Object,
+      registrations: js.UndefOr[scala.Nothing],
+      tweaks: js.Object
+    ) = this()
+    def this(
+      token: String,
+      continuationToken: String,
+      metadata: js.Object,
       registrations: js.Array[InitRegistration],
       tweaks: js.Object
     ) = this()

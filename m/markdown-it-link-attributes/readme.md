@@ -11,8 +11,8 @@ A markdown-it plugin to configure the attributes for links
 | Full name          | markdown-it-link-attributes |
 | Keywords           | markdown, markdown-it, markdown-it-plugin |
 | # releases         | 2 |
-| # dependents       | 46 |
-| # downloads        | 533100 |
+| # dependents       | 49 |
+| # downloads        | 583948 |
 | # stars            | 0 |
 
 ## Links

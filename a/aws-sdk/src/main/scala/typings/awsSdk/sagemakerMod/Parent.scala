@@ -18,11 +18,30 @@ trait Parent extends js.Object {
 
 object Parent {
   @scala.inline
-  def apply(ExperimentName: ExperimentEntityName = null, TrialName: ExperimentEntityName = null): Parent = {
+  def apply(): Parent = {
     val __obj = js.Dynamic.literal()
-    if (ExperimentName != null) __obj.updateDynamic("ExperimentName")(ExperimentName.asInstanceOf[js.Any])
-    if (TrialName != null) __obj.updateDynamic("TrialName")(TrialName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }
+  @scala.inline
+  implicit class ParentOps[Self <: Parent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExperimentName(value: ExperimentEntityName): Self = this.set("ExperimentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentName: Self = this.set("ExperimentName", js.undefined)
+    @scala.inline
+    def setTrialName(value: ExperimentEntityName): Self = this.set("TrialName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialName: Self = this.set("TrialName", js.undefined)
+  }
+  
 }
 

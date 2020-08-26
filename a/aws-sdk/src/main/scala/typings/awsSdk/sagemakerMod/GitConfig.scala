@@ -22,11 +22,32 @@ trait GitConfig extends js.Object {
 
 object GitConfig {
   @scala.inline
-  def apply(RepositoryUrl: GitConfigUrl, Branch: Branch = null, SecretArn: SecretArn = null): GitConfig = {
+  def apply(RepositoryUrl: GitConfigUrl): GitConfig = {
     val __obj = js.Dynamic.literal(RepositoryUrl = RepositoryUrl.asInstanceOf[js.Any])
-    if (Branch != null) __obj.updateDynamic("Branch")(Branch.asInstanceOf[js.Any])
-    if (SecretArn != null) __obj.updateDynamic("SecretArn")(SecretArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitConfig]
   }
+  @scala.inline
+  implicit class GitConfigOps[Self <: GitConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepositoryUrl(value: GitConfigUrl): Self = this.set("RepositoryUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBranch(value: Branch): Self = this.set("Branch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranch: Self = this.set("Branch", js.undefined)
+    @scala.inline
+    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretArn: Self = this.set("SecretArn", js.undefined)
+  }
+  
 }
 

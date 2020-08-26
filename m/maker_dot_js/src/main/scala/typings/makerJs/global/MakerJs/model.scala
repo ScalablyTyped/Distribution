@@ -47,14 +47,232 @@ object model extends js.Object {
     * @param farPoint Optional point of reference which is outside the bounds of both models.
     */
   def combine(modelA: IModel, modelB: IModel): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: js.UndefOr[scala.Nothing],
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: Boolean,
+    includeBOutsideA: js.UndefOr[scala.Nothing],
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: Boolean,
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: js.UndefOr[scala.Nothing],
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: Boolean,
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: Boolean,
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean,
+    includeBOutsideA: js.UndefOr[scala.Nothing],
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: js.UndefOr[scala.Nothing],
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = js.native
   def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: js.UndefOr[scala.Nothing],
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: Boolean,
+    includeBOutsideA: js.UndefOr[scala.Nothing],
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: js.UndefOr[scala.Nothing],
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = js.native
   def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean, includeAOutsideB: Boolean): Unit = js.native
   def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
     includeAOutsideB: Boolean,
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: js.UndefOr[scala.Nothing],
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Boolean,
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Boolean,
+    includeBInsideA: js.UndefOr[scala.Nothing],
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Boolean,
     includeBInsideA: Boolean
+  ): Unit = js.native
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean,
+    includeBOutsideA: js.UndefOr[scala.Nothing],
+    options: ICombineOptions
   ): Unit = js.native
   def combine(
     modelA: IModel,
@@ -124,6 +342,12 @@ object model extends js.Object {
     * @returns Model which surrounds the paths of the original model.
     */
   def expandPaths(modelToExpand: IModel, distance: Double): IModel = js.native
+  def expandPaths(
+    modelToExpand: IModel,
+    distance: Double,
+    joints: js.UndefOr[scala.Nothing],
+    combineOptions: ICombineOptions
+  ): IModel = js.native
   def expandPaths(modelToExpand: IModel, distance: Double, joints: Double): IModel = js.native
   def expandPaths(modelToExpand: IModel, distance: Double, joints: Double, combineOptions: ICombineOptions): IModel = js.native
   /**
@@ -173,7 +397,29 @@ object model extends js.Object {
     * @returns Boolean true if the path is inside of the modelContext.
     */
   def isPathInsideModel(pathContext: IPath, modelContext: IModel): Boolean = js.native
+  def isPathInsideModel(
+    pathContext: IPath,
+    modelContext: IModel,
+    pathOffset: js.UndefOr[scala.Nothing],
+    farPoint: js.UndefOr[scala.Nothing],
+    measureAtlas: Atlas
+  ): Boolean = js.native
+  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: js.UndefOr[scala.Nothing], farPoint: IPoint): Boolean = js.native
+  def isPathInsideModel(
+    pathContext: IPath,
+    modelContext: IModel,
+    pathOffset: js.UndefOr[scala.Nothing],
+    farPoint: IPoint,
+    measureAtlas: Atlas
+  ): Boolean = js.native
   def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint): Boolean = js.native
+  def isPathInsideModel(
+    pathContext: IPath,
+    modelContext: IModel,
+    pathOffset: IPoint,
+    farPoint: js.UndefOr[scala.Nothing],
+    measureAtlas: Atlas
+  ): Boolean = js.native
   def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint, farPoint: IPoint): Boolean = js.native
   def isPathInsideModel(
     pathContext: IPath,
@@ -225,6 +471,7 @@ object model extends js.Object {
     * @returns Model which surrounds the paths outside of the original model.
     */
   def outline(modelToOutline: IModel, distance: Double): IModel = js.native
+  def outline(modelToOutline: IModel, distance: Double, joints: js.UndefOr[scala.Nothing], inside: Boolean): IModel = js.native
   def outline(modelToOutline: IModel, distance: Double, joints: Double): IModel = js.native
   def outline(modelToOutline: IModel, distance: Double, joints: Double, inside: Boolean): IModel = js.native
   /**
@@ -243,6 +490,11 @@ object model extends js.Object {
     * @returns The input model (for cascading).
     */
   def removeDeadEnds(modelContext: IModel): IModel = js.native
+  def removeDeadEnds(
+    modelContext: IModel,
+    pointMatchingDistance: js.UndefOr[scala.Nothing],
+    keep: IWalkPathBooleanCallback
+  ): IModel = js.native
   def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any): IModel = js.native
   def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any, keep: IWalkPathBooleanCallback): IModel = js.native
   /**

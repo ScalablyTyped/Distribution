@@ -12,7 +12,7 @@ A stream implementation of the bunyan cli tool's pretty printing capabilities
 | Keywords           | log, logging, console, bunyan, development, stream |
 | # releases         | 0 |
 | # dependents       | 91 |
-| # downloads        | 2730427 |
+| # downloads        | 2850337 |
 | # stars            | 5 |
 
 ## Links

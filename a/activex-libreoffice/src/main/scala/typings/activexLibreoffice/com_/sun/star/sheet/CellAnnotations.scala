@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * represents a collection of cell annotations.
   * @see com.sun.star.sheet.Spreadsheet
   */
+@js.native
 trait CellAnnotations
   extends XSheetAnnotations
      with XEnumerationAccess

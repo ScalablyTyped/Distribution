@@ -7,24 +7,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Dictkey
   extends /* key */ StringDictionary[js.Any] {
-  var android: js.UndefOr[DependencyConfigAndroid | Null] = js.undefined
-  var ios: js.UndefOr[DependencyConfigIOS | Null] = js.undefined
+  var android: js.UndefOr[DependencyConfigAndroid | Null] = js.native
+  var ios: js.UndefOr[DependencyConfigIOS | Null] = js.native
 }
 
 object Dictkey {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    android: js.UndefOr[Null | DependencyConfigAndroid] = js.undefined,
-    ios: js.UndefOr[Null | DependencyConfigIOS] = js.undefined
-  ): Dictkey = {
+  def apply(): Dictkey = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(android)) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
-    if (!js.isUndefined(ios)) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
+  @scala.inline
+  implicit class DictkeyOps[Self <: Dictkey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroid(value: DependencyConfigAndroid): Self = this.set("android", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroid: Self = this.set("android", js.undefined)
+    @scala.inline
+    def setAndroidNull: Self = this.set("android", null)
+    @scala.inline
+    def setIos(value: DependencyConfigIOS): Self = this.set("ios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIos: Self = this.set("ios", js.undefined)
+    @scala.inline
+    def setIosNull: Self = this.set("ios", null)
+  }
+  
 }
 

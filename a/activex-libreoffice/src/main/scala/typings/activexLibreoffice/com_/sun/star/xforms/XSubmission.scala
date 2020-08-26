@@ -13,6 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** specifies a submission object, associated with an {@link XModel} */
+@js.native
 trait XSubmission
   extends XPropertySet
      with XNamed

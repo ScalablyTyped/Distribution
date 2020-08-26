@@ -22,12 +22,34 @@ trait ArchiveCreationOutput extends js.Object {
 
 object ArchiveCreationOutput {
   @scala.inline
-  def apply(archiveId: String = null, checksum: String = null, location: String = null): ArchiveCreationOutput = {
+  def apply(): ArchiveCreationOutput = {
     val __obj = js.Dynamic.literal()
-    if (archiveId != null) __obj.updateDynamic("archiveId")(archiveId.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveCreationOutput]
   }
+  @scala.inline
+  implicit class ArchiveCreationOutputOps[Self <: ArchiveCreationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveId(value: String): Self = this.set("archiveId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveId: Self = this.set("archiveId", js.undefined)
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+  }
+  
 }
 

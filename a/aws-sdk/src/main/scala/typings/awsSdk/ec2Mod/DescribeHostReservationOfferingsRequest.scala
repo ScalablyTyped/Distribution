@@ -34,22 +34,48 @@ trait DescribeHostReservationOfferingsRequest extends js.Object {
 
 object DescribeHostReservationOfferingsRequest {
   @scala.inline
-  def apply(
-    Filter: FilterList = null,
-    MaxDuration: js.UndefOr[Integer] = js.undefined,
-    MaxResults: js.UndefOr[DescribeHostReservationsMaxResults] = js.undefined,
-    MinDuration: js.UndefOr[Integer] = js.undefined,
-    NextToken: String = null,
-    OfferingId: OfferingId = null
-  ): DescribeHostReservationOfferingsRequest = {
+  def apply(): DescribeHostReservationOfferingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxDuration)) __obj.updateDynamic("MaxDuration")(MaxDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinDuration)) __obj.updateDynamic("MinDuration")(MinDuration.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHostReservationOfferingsRequest]
   }
+  @scala.inline
+  implicit class DescribeHostReservationOfferingsRequestOps[Self <: DescribeHostReservationOfferingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterVarargs(value: Filter*): Self = this.set("Filter", js.Array(value :_*))
+    @scala.inline
+    def setFilter(value: FilterList): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setMaxDuration(value: Integer): Self = this.set("MaxDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDuration: Self = this.set("MaxDuration", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeHostReservationsMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setMinDuration(value: Integer): Self = this.set("MinDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDuration: Self = this.set("MinDuration", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setOfferingId(value: OfferingId): Self = this.set("OfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingId: Self = this.set("OfferingId", js.undefined)
+  }
+  
 }
 

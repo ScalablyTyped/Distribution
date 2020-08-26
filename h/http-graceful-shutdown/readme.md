@@ -12,7 +12,7 @@ gracefully shuts downs http server
 | Keywords           | http, https, koa, express, shutdown, graceful, force, graceful-shutdown |
 | # releases         | 12 |
 | # dependents       | 14 |
-| # downloads        | 627347 |
+| # downloads        | 664301 |
 | # stars            | 2 |
 
 ## Links

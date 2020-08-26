@@ -42,28 +42,58 @@ object typeMapperMod extends js.Object {
     var basicScalars: Map[String, GraphQLNamedType] = js.native
     var schemaComposer: SchemaComposer[TContext] = js.native
     def convertArgConfig(composeAC: ComposeArgumentConfig): GraphQLArgumentConfig = js.native
+    def convertArgConfig(
+      composeAC: ComposeArgumentConfig,
+      argName: js.UndefOr[scala.Nothing],
+      fieldName: js.UndefOr[scala.Nothing],
+      typeName: String
+    ): GraphQLArgumentConfig = js.native
+    def convertArgConfig(composeAC: ComposeArgumentConfig, argName: js.UndefOr[scala.Nothing], fieldName: String): GraphQLArgumentConfig = js.native
+    def convertArgConfig(
+      composeAC: ComposeArgumentConfig,
+      argName: js.UndefOr[scala.Nothing],
+      fieldName: String,
+      typeName: String
+    ): GraphQLArgumentConfig = js.native
     def convertArgConfig(composeAC: ComposeArgumentConfig, argName: String): GraphQLArgumentConfig = js.native
+    def convertArgConfig(
+      composeAC: ComposeArgumentConfig,
+      argName: String,
+      fieldName: js.UndefOr[scala.Nothing],
+      typeName: String
+    ): GraphQLArgumentConfig = js.native
     def convertArgConfig(composeAC: ComposeArgumentConfig, argName: String, fieldName: String): GraphQLArgumentConfig = js.native
     def convertArgConfig(composeAC: ComposeArgumentConfig, argName: String, fieldName: String, typeName: String): GraphQLArgumentConfig = js.native
     def convertArgConfigMap(composeArgsConfigMap: ComposeFieldConfigArgumentMap[_]): GraphQLFieldConfigArgumentMap = js.native
+    def convertArgConfigMap(
+      composeArgsConfigMap: ComposeFieldConfigArgumentMap[_],
+      fieldName: js.UndefOr[scala.Nothing],
+      typeName: String
+    ): GraphQLFieldConfigArgumentMap = js.native
     def convertArgConfigMap(composeArgsConfigMap: ComposeFieldConfigArgumentMap[_], fieldName: String): GraphQLFieldConfigArgumentMap = js.native
     def convertArgConfigMap(composeArgsConfigMap: ComposeFieldConfigArgumentMap[_], fieldName: String, typeName: String): GraphQLFieldConfigArgumentMap = js.native
     def convertInputFieldConfig(composeIFC: ComposeInputFieldConfig): GraphQLInputFieldConfig = js.native
+    def convertInputFieldConfig(composeIFC: ComposeInputFieldConfig, fieldName: js.UndefOr[scala.Nothing], typeName: String): GraphQLInputFieldConfig = js.native
     def convertInputFieldConfig(composeIFC: ComposeInputFieldConfig, fieldName: String): GraphQLInputFieldConfig = js.native
     def convertInputFieldConfig(composeIFC: ComposeInputFieldConfig, fieldName: String, typeName: String): GraphQLInputFieldConfig = js.native
     def convertInputFieldConfigMap(composeFields: ComposeInputFieldConfigMap): GraphQLInputFieldConfigMap = js.native
     def convertInputFieldConfigMap(composeFields: ComposeInputFieldConfigMap, typeName: String): GraphQLInputFieldConfigMap = js.native
     def convertOutputFieldConfig[TSource, TContext](composeFC: ComposeFieldConfig[TSource, TContext, ArgsMap]): GraphQLFieldConfig[TSource, TContext, StringDictionary[_]] = js.native
+    def convertOutputFieldConfig[TSource, TContext](
+      composeFC: ComposeFieldConfig[TSource, TContext, ArgsMap],
+      fieldName: js.UndefOr[scala.Nothing],
+      typeName: String
+    ): GraphQLFieldConfig[TSource, TContext, StringDictionary[_]] = js.native
     def convertOutputFieldConfig[TSource, TContext](composeFC: ComposeFieldConfig[TSource, TContext, ArgsMap], fieldName: String): GraphQLFieldConfig[TSource, TContext, StringDictionary[_]] = js.native
     def convertOutputFieldConfig[TSource, TContext](composeFC: ComposeFieldConfig[TSource, TContext, ArgsMap], fieldName: String, typeName: String): GraphQLFieldConfig[TSource, TContext, StringDictionary[_]] = js.native
     def convertOutputFieldConfigMap[TSource, TContext](
-      composeFields: (ComposeFieldConfigMap[TSource, TContext]) | (GraphQLFieldConfigMap[TSource, TContext, StringDictionary[_]])
-    ): GraphQLFieldConfigMap[TSource, TContext, StringDictionary[_]] = js.native
+      composeFields: (ComposeFieldConfigMap[TSource, TContext]) | (GraphQLFieldConfigMap[TSource, TContext])
+    ): GraphQLFieldConfigMap[TSource, TContext] = js.native
     def convertOutputFieldConfigMap[TSource, TContext](
-      composeFields: (ComposeFieldConfigMap[TSource, TContext]) | (GraphQLFieldConfigMap[TSource, TContext, StringDictionary[_]]),
+      composeFields: (ComposeFieldConfigMap[TSource, TContext]) | (GraphQLFieldConfigMap[TSource, TContext]),
       typeName: String
-    ): GraphQLFieldConfigMap[TSource, TContext, StringDictionary[_]] = js.native
-    def convertOutputType(composeType: ComposeObjectType): GraphQLObjectType[_, _, StringDictionary[_]] = js.native
+    ): GraphQLFieldConfigMap[TSource, TContext] = js.native
+    def convertOutputType(composeType: ComposeObjectType): GraphQLObjectType[_, _] = js.native
     def createGraphQLType(str: TypeDefinitionString): GraphQLType | Unit = js.native
     def createType(str: TypeDefinitionString): AnyComposeType[TContext] | Unit = js.native
     def get(name: String): GraphQLNamedType | Unit = js.native

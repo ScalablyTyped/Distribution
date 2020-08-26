@@ -415,9 +415,11 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def GotoPage(pageIndex: Double): Unit = js.native
   def GroupBy(column: String): Unit = js.native
+  def GroupBy(column: String, groupIndex: js.UndefOr[scala.Nothing], sortOrder: String): Unit = js.native
   def GroupBy(column: String, groupIndex: Double): Unit = js.native
   def GroupBy(column: String, groupIndex: Double, sortOrder: String): Unit = js.native
   def GroupBy(column: Double): Unit = js.native
+  def GroupBy(column: Double, groupIndex: js.UndefOr[scala.Nothing], sortOrder: String): Unit = js.native
   def GroupBy(column: Double, groupIndex: Double): Unit = js.native
   def GroupBy(column: Double, groupIndex: Double, sortOrder: String): Unit = js.native
   /**
@@ -426,6 +428,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param sortOrder A string value that specifies the column's sort order.
     */
   def GroupBy(column: ASPxClientGridViewColumn): Unit = js.native
+  def GroupBy(column: ASPxClientGridViewColumn, groupIndex: js.UndefOr[scala.Nothing], sortOrder: String): Unit = js.native
   def GroupBy(column: ASPxClientGridViewColumn, groupIndex: Double): Unit = js.native
   def GroupBy(column: ASPxClientGridViewColumn, groupIndex: Double, sortOrder: String): Unit = js.native
   /**
@@ -469,64 +472,6 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param visibleIndex An integer value that identifies a row by its visible index.
     */
   def MakeRowVisible(visibleIndex: Double): Unit = js.native
-  def MoveColumn(column: String): Unit = js.native
-  def MoveColumn(column: String, moveToColumnVisibleIndex: Double): Unit = js.native
-  def MoveColumn(column: String, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
-  def MoveColumn(column: String, moveToColumnVisibleIndex: Double, moveBefore: Boolean, moveToGroup: Boolean): Unit = js.native
-  def MoveColumn(
-    column: String,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: Boolean,
-    moveToGroup: Boolean,
-    moveFromGroup: Boolean
-  ): Unit = js.native
-  def MoveColumn(
-    column: String,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: ASPxClientGridColumnMovingTargetPosition
-  ): Unit = js.native
-  def MoveColumn(
-    column: String,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: ASPxClientGridColumnMovingTargetPosition,
-    moveToGroup: Boolean
-  ): Unit = js.native
-  def MoveColumn(
-    column: String,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: ASPxClientGridColumnMovingTargetPosition,
-    moveToGroup: Boolean,
-    moveFromGroup: Boolean
-  ): Unit = js.native
-  def MoveColumn(column: Double): Unit = js.native
-  def MoveColumn(column: Double, moveToColumnVisibleIndex: Double): Unit = js.native
-  def MoveColumn(column: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
-  def MoveColumn(column: Double, moveToColumnVisibleIndex: Double, moveBefore: Boolean, moveToGroup: Boolean): Unit = js.native
-  def MoveColumn(
-    column: Double,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: Boolean,
-    moveToGroup: Boolean,
-    moveFromGroup: Boolean
-  ): Unit = js.native
-  def MoveColumn(
-    column: Double,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: ASPxClientGridColumnMovingTargetPosition
-  ): Unit = js.native
-  def MoveColumn(
-    column: Double,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: ASPxClientGridColumnMovingTargetPosition,
-    moveToGroup: Boolean
-  ): Unit = js.native
-  def MoveColumn(
-    column: Double,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: ASPxClientGridColumnMovingTargetPosition,
-    moveToGroup: Boolean,
-    moveFromGroup: Boolean
-  ): Unit = js.native
   /**
     * Moves the specified column to the specified visual position within the grid and optionally groups or ungroups the grid's data by this column.
     * @param column An ASPxClientGridViewColumn object that represents the column to move.
@@ -535,39 +480,12 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param moveToGroup true to group the grid's data by the column; otherwise, false.
     * @param moveFromGroup true to ungroup the grid's data by the column; otherwise, false.
     */
-  def MoveColumn(column: ASPxClientGridViewColumn): Unit = js.native
-  def MoveColumn(column: ASPxClientGridViewColumn, moveToColumnVisibleIndex: Double): Unit = js.native
-  def MoveColumn(column: ASPxClientGridViewColumn, moveToColumnVisibleIndex: Double, moveBefore: Boolean): Unit = js.native
   def MoveColumn(
-    column: ASPxClientGridViewColumn,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: Boolean,
-    moveToGroup: Boolean
-  ): Unit = js.native
-  def MoveColumn(
-    column: ASPxClientGridViewColumn,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: Boolean,
-    moveToGroup: Boolean,
-    moveFromGroup: Boolean
-  ): Unit = js.native
-  def MoveColumn(
-    column: ASPxClientGridViewColumn,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: ASPxClientGridColumnMovingTargetPosition
-  ): Unit = js.native
-  def MoveColumn(
-    column: ASPxClientGridViewColumn,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: ASPxClientGridColumnMovingTargetPosition,
-    moveToGroup: Boolean
-  ): Unit = js.native
-  def MoveColumn(
-    column: ASPxClientGridViewColumn,
-    moveToColumnVisibleIndex: Double,
-    moveBefore: ASPxClientGridColumnMovingTargetPosition,
-    moveToGroup: Boolean,
-    moveFromGroup: Boolean
+    column: ASPxClientGridViewColumn | Double | String,
+    moveToColumnVisibleIndex: js.UndefOr[Double],
+    moveBefore: js.UndefOr[Boolean | ASPxClientGridColumnMovingTargetPosition],
+    moveToGroup: js.UndefOr[Boolean],
+    moveFromGroup: js.UndefOr[Boolean]
   ): Unit = js.native
   /**
     * Activates the next page.
@@ -607,6 +525,7 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param selected true to select the specified rows; false to deselect the rows.
     */
   def SelectRows(): Unit = js.native
+  def SelectRows(visibleIndices: js.UndefOr[scala.Nothing], selected: Boolean): Unit = js.native
   def SelectRows(visibleIndices: js.Array[Double]): Unit = js.native
   def SelectRows(visibleIndices: js.Array[Double], selected: Boolean): Unit = js.native
   def SelectRows(visibleIndices: Double): Unit = js.native
@@ -700,11 +619,29 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     */
   def ShowFilterControl(): Unit = js.native
   def SortBy(column: String): Unit = js.native
+  def SortBy(
+    column: String,
+    sortOrder: js.UndefOr[scala.Nothing],
+    reset: js.UndefOr[scala.Nothing],
+    sortIndex: Double
+  ): Unit = js.native
+  def SortBy(column: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
+  def SortBy(column: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean, sortIndex: Double): Unit = js.native
   def SortBy(column: String, sortOrder: String): Unit = js.native
+  def SortBy(column: String, sortOrder: String, reset: js.UndefOr[scala.Nothing], sortIndex: Double): Unit = js.native
   def SortBy(column: String, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(column: String, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   def SortBy(column: Double): Unit = js.native
+  def SortBy(
+    column: Double,
+    sortOrder: js.UndefOr[scala.Nothing],
+    reset: js.UndefOr[scala.Nothing],
+    sortIndex: Double
+  ): Unit = js.native
+  def SortBy(column: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
+  def SortBy(column: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean, sortIndex: Double): Unit = js.native
   def SortBy(column: Double, sortOrder: String): Unit = js.native
+  def SortBy(column: Double, sortOrder: String, reset: js.UndefOr[scala.Nothing], sortIndex: Double): Unit = js.native
   def SortBy(column: Double, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(column: Double, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   /**
@@ -715,7 +652,26 @@ trait ASPxClientGridView extends ASPxClientGridBase {
     * @param sortIndex An integer value that specifies the zero-based column's index among the sorted columns. &#0045;1 if data is not sorted by this column.
     */
   def SortBy(column: ASPxClientGridViewColumn): Unit = js.native
+  def SortBy(
+    column: ASPxClientGridViewColumn,
+    sortOrder: js.UndefOr[scala.Nothing],
+    reset: js.UndefOr[scala.Nothing],
+    sortIndex: Double
+  ): Unit = js.native
+  def SortBy(column: ASPxClientGridViewColumn, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
+  def SortBy(
+    column: ASPxClientGridViewColumn,
+    sortOrder: js.UndefOr[scala.Nothing],
+    reset: Boolean,
+    sortIndex: Double
+  ): Unit = js.native
   def SortBy(column: ASPxClientGridViewColumn, sortOrder: String): Unit = js.native
+  def SortBy(
+    column: ASPxClientGridViewColumn,
+    sortOrder: String,
+    reset: js.UndefOr[scala.Nothing],
+    sortIndex: Double
+  ): Unit = js.native
   def SortBy(column: ASPxClientGridViewColumn, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(column: ASPxClientGridViewColumn, sortOrder: String, reset: Boolean, sortIndex: Double): Unit = js.native
   /**

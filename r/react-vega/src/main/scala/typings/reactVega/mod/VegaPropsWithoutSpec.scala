@@ -12,54 +12,95 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VegaPropsWithoutSpec extends js.Object {
-  var background: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[Record[String, js.Array[_]]] = js.undefined
-  var enableHover: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var logLevel: js.UndefOr[Double] = js.undefined
-  var onNewView: js.UndefOr[js.Function1[/* view */ View, Unit]] = js.undefined
-  var onParseError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
-  var padding: js.UndefOr[Double | Bottom] = js.undefined
-  var renderer: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var tooltip: js.UndefOr[TooltipHandler] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var background: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var data: js.UndefOr[Record[String, js.Array[_]]] = js.native
+  var enableHover: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var logLevel: js.UndefOr[Double] = js.native
+  var onNewView: js.UndefOr[js.Function1[/* view */ View, Unit]] = js.native
+  var onParseError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+  var padding: js.UndefOr[Double | Bottom] = js.native
+  var renderer: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var tooltip: js.UndefOr[TooltipHandler] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object VegaPropsWithoutSpec {
   @scala.inline
-  def apply(
-    background: String = null,
-    className: String = null,
-    data: Record[String, js.Array[_]] = null,
-    enableHover: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    logLevel: js.UndefOr[Double] = js.undefined,
-    onNewView: /* view */ View => Unit = null,
-    onParseError: /* error */ Error => Unit = null,
-    padding: Double | Bottom = null,
-    renderer: String = null,
-    style: CSSProperties = null,
-    tooltip: (/* handler */ js.Any, /* event */ MouseEvent, /* item */ Item[js.Any], /* value */ js.Any) => Unit = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): VegaPropsWithoutSpec = {
+  def apply(): VegaPropsWithoutSpec = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHover)) __obj.updateDynamic("enableHover")(enableHover.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(logLevel)) __obj.updateDynamic("logLevel")(logLevel.get.asInstanceOf[js.Any])
-    if (onNewView != null) __obj.updateDynamic("onNewView")(js.Any.fromFunction1(onNewView))
-    if (onParseError != null) __obj.updateDynamic("onParseError")(js.Any.fromFunction1(onParseError))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(js.Any.fromFunction4(tooltip))
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VegaPropsWithoutSpec]
   }
+  @scala.inline
+  implicit class VegaPropsWithoutSpecOps[Self <: VegaPropsWithoutSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setData(value: Record[String, js.Array[_]]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setEnableHover(value: Boolean): Self = this.set("enableHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableHover: Self = this.set("enableHover", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLogLevel(value: Double): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    @scala.inline
+    def setOnNewView(value: /* view */ View => Unit): Self = this.set("onNewView", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnNewView: Self = this.set("onNewView", js.undefined)
+    @scala.inline
+    def setOnParseError(value: /* error */ Error => Unit): Self = this.set("onParseError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnParseError: Self = this.set("onParseError", js.undefined)
+    @scala.inline
+    def setPadding(value: Double | Bottom): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setRenderer(value: String): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTooltip(
+      value: (/* handler */ js.Any, /* event */ MouseEvent, /* item */ Item[js.Any], /* value */ js.Any) => Unit
+    ): Self = this.set("tooltip", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

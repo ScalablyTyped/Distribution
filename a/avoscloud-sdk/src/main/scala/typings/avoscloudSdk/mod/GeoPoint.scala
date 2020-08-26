@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeoPoint () extends BaseObject {
   def this(arg1: js.Any) = this()
+  def this(arg1: js.UndefOr[scala.Nothing], arg2: js.Any) = this()
   def this(arg1: js.Any, arg2: js.Any) = this()
   var latitude: Double = js.native
   var longitude: Double = js.native

@@ -2,8 +2,8 @@ package typings.pvtsutils
 
 import typings.pvtsutils.convertMod.BufferEncoding
 import typings.std.ArrayBuffer
+import typings.std.ArrayBufferLike
 import typings.std.BufferSource
-import typings.std.SharedArrayBuffer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ object mod extends js.Object {
     extends typings.pvtsutils.convertMod.Convert
   
   def assign(target: js.Any, sources: js.Any*): js.Any = js.native
-  def combine(buf: ArrayBuffer*): ArrayBuffer | SharedArrayBuffer = js.native
+  def combine(buf: ArrayBuffer*): ArrayBufferLike = js.native
   def isEqual(bytes1: ArrayBuffer, bytes2: ArrayBuffer): Boolean = js.native
   /* static members */
   @js.native

@@ -62,36 +62,74 @@ trait Solution extends js.Object {
 
 object Solution {
   @scala.inline
-  def apply(
-    autoMLResult: AutoMLResult = null,
-    creationDateTime: Date = null,
-    datasetGroupArn: Arn = null,
-    eventType: EventType = null,
-    lastUpdatedDateTime: Date = null,
-    latestSolutionVersion: SolutionVersionSummary = null,
-    name: Name = null,
-    performAutoML: js.UndefOr[PerformAutoML] = js.undefined,
-    performHPO: js.UndefOr[PerformHPO] = js.undefined,
-    recipeArn: Arn = null,
-    solutionArn: Arn = null,
-    solutionConfig: SolutionConfig = null,
-    status: Status = null
-  ): Solution = {
+  def apply(): Solution = {
     val __obj = js.Dynamic.literal()
-    if (autoMLResult != null) __obj.updateDynamic("autoMLResult")(autoMLResult.asInstanceOf[js.Any])
-    if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime.asInstanceOf[js.Any])
-    if (datasetGroupArn != null) __obj.updateDynamic("datasetGroupArn")(datasetGroupArn.asInstanceOf[js.Any])
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (latestSolutionVersion != null) __obj.updateDynamic("latestSolutionVersion")(latestSolutionVersion.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(performAutoML)) __obj.updateDynamic("performAutoML")(performAutoML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(performHPO)) __obj.updateDynamic("performHPO")(performHPO.get.asInstanceOf[js.Any])
-    if (recipeArn != null) __obj.updateDynamic("recipeArn")(recipeArn.asInstanceOf[js.Any])
-    if (solutionArn != null) __obj.updateDynamic("solutionArn")(solutionArn.asInstanceOf[js.Any])
-    if (solutionConfig != null) __obj.updateDynamic("solutionConfig")(solutionConfig.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Solution]
   }
+  @scala.inline
+  implicit class SolutionOps[Self <: Solution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoMLResult(value: AutoMLResult): Self = this.set("autoMLResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMLResult: Self = this.set("autoMLResult", js.undefined)
+    @scala.inline
+    def setCreationDateTime(value: Date): Self = this.set("creationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDateTime: Self = this.set("creationDateTime", js.undefined)
+    @scala.inline
+    def setDatasetGroupArn(value: Arn): Self = this.set("datasetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetGroupArn: Self = this.set("datasetGroupArn", js.undefined)
+    @scala.inline
+    def setEventType(value: EventType): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("eventType", js.undefined)
+    @scala.inline
+    def setLastUpdatedDateTime(value: Date): Self = this.set("lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDateTime: Self = this.set("lastUpdatedDateTime", js.undefined)
+    @scala.inline
+    def setLatestSolutionVersion(value: SolutionVersionSummary): Self = this.set("latestSolutionVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestSolutionVersion: Self = this.set("latestSolutionVersion", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPerformAutoML(value: PerformAutoML): Self = this.set("performAutoML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformAutoML: Self = this.set("performAutoML", js.undefined)
+    @scala.inline
+    def setPerformHPO(value: PerformHPO): Self = this.set("performHPO", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformHPO: Self = this.set("performHPO", js.undefined)
+    @scala.inline
+    def setRecipeArn(value: Arn): Self = this.set("recipeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipeArn: Self = this.set("recipeArn", js.undefined)
+    @scala.inline
+    def setSolutionArn(value: Arn): Self = this.set("solutionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionArn: Self = this.set("solutionArn", js.undefined)
+    @scala.inline
+    def setSolutionConfig(value: SolutionConfig): Self = this.set("solutionConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionConfig: Self = this.set("solutionConfig", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

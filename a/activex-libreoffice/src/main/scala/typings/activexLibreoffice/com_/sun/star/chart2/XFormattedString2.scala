@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * Provides unified interface for {@link FormattedString} service.
   * @since LibreOffice 4.1
   */
+@js.native
 trait XFormattedString2
   extends XPropertySet
      with XFormattedString

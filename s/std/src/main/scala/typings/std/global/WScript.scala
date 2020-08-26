@@ -86,6 +86,7 @@ object WScript extends js.Object {
     * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
     */
   def GetObject(strPathname: java.lang.String): js.Any = js.native
+  def GetObject(strPathname: java.lang.String, strProgID: js.UndefOr[scala.Nothing], strPrefix: java.lang.String): js.Any = js.native
   def GetObject(strPathname: java.lang.String, strProgID: java.lang.String): js.Any = js.native
   def GetObject(strPathname: java.lang.String, strProgID: java.lang.String, strPrefix: java.lang.String): js.Any = js.native
   /**

@@ -12,7 +12,7 @@ The lodash method `_.pullAll` exported as a module.
 | Keywords           | lodash-modularized, pullall |
 | # releases         | 0 |
 | # dependents       | 36 |
-| # downloads        | 407900 |
+| # downloads        | 407186 |
 | # stars            | 0 |
 
 ## Links

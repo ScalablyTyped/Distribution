@@ -18,10 +18,30 @@ trait GetPublicKeyRequest extends js.Object {
 
 object GetPublicKeyRequest {
   @scala.inline
-  def apply(KeyId: KeyIdType, GrantTokens: GrantTokenList = null): GetPublicKeyRequest = {
+  def apply(KeyId: KeyIdType): GetPublicKeyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
-    if (GrantTokens != null) __obj.updateDynamic("GrantTokens")(GrantTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPublicKeyRequest]
   }
+  @scala.inline
+  implicit class GetPublicKeyRequestOps[Self <: GetPublicKeyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGrantTokensVarargs(value: GrantTokenType*): Self = this.set("GrantTokens", js.Array(value :_*))
+    @scala.inline
+    def setGrantTokens(value: GrantTokenList): Self = this.set("GrantTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTokens: Self = this.set("GrantTokens", js.undefined)
+  }
+  
 }
 

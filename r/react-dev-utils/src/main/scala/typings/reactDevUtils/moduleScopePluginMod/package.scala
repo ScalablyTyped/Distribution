@@ -9,5 +9,5 @@ package object moduleScopePluginMod {
     * This Webpack plugin ensures that relative imports from app's source
     * directories don't reach outside of it.
     */
-  type ModuleScopePlugin = typings.webpack.mod.Plugin
+  type ModuleScopePlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
 }

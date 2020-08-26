@@ -5,45 +5,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DebugShowShadowVolume extends js.Object {
-  var allowPicking: js.UndefOr[Boolean] = js.undefined
-  var appearance: js.UndefOr[typings.cesium.mod.Appearance] = js.undefined
-  var asynchronous: js.UndefOr[Boolean] = js.undefined
-  var classificationType: js.UndefOr[typings.cesium.mod.ClassificationType] = js.undefined
-  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
-  var debugShowShadowVolume: js.UndefOr[Boolean] = js.undefined
-  var geometryInstances: js.UndefOr[js.Array[GeometryInstance] | GeometryInstance] = js.undefined
-  var interleave: js.UndefOr[Boolean] = js.undefined
-  var releaseGeometryInstances: js.UndefOr[Boolean] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
+  var allowPicking: js.UndefOr[Boolean] = js.native
+  var appearance: js.UndefOr[typings.cesium.mod.Appearance] = js.native
+  var asynchronous: js.UndefOr[Boolean] = js.native
+  var classificationType: js.UndefOr[typings.cesium.mod.ClassificationType] = js.native
+  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.native
+  var debugShowShadowVolume: js.UndefOr[Boolean] = js.native
+  var geometryInstances: js.UndefOr[js.Array[GeometryInstance] | GeometryInstance] = js.native
+  var interleave: js.UndefOr[Boolean] = js.native
+  var releaseGeometryInstances: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.native
 }
 
 object DebugShowShadowVolume {
   @scala.inline
-  def apply(
-    allowPicking: js.UndefOr[Boolean] = js.undefined,
-    appearance: typings.cesium.mod.Appearance = null,
-    asynchronous: js.UndefOr[Boolean] = js.undefined,
-    classificationType: typings.cesium.mod.ClassificationType = null,
-    debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined,
-    debugShowShadowVolume: js.UndefOr[Boolean] = js.undefined,
-    geometryInstances: js.Array[GeometryInstance] | GeometryInstance = null,
-    interleave: js.UndefOr[Boolean] = js.undefined,
-    releaseGeometryInstances: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined
-  ): DebugShowShadowVolume = {
+  def apply(): DebugShowShadowVolume = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPicking)) __obj.updateDynamic("allowPicking")(allowPicking.get.asInstanceOf[js.Any])
-    if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
-    if (!js.isUndefined(asynchronous)) __obj.updateDynamic("asynchronous")(asynchronous.get.asInstanceOf[js.Any])
-    if (classificationType != null) __obj.updateDynamic("classificationType")(classificationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowShadowVolume)) __obj.updateDynamic("debugShowShadowVolume")(debugShowShadowVolume.get.asInstanceOf[js.Any])
-    if (geometryInstances != null) __obj.updateDynamic("geometryInstances")(geometryInstances.asInstanceOf[js.Any])
-    if (!js.isUndefined(interleave)) __obj.updateDynamic("interleave")(interleave.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(releaseGeometryInstances)) __obj.updateDynamic("releaseGeometryInstances")(releaseGeometryInstances.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugShowShadowVolume]
   }
+  @scala.inline
+  implicit class DebugShowShadowVolumeOps[Self <: DebugShowShadowVolume] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowPicking(value: Boolean): Self = this.set("allowPicking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowPicking: Self = this.set("allowPicking", js.undefined)
+    @scala.inline
+    def setAppearance(value: typings.cesium.mod.Appearance): Self = this.set("appearance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppearance: Self = this.set("appearance", js.undefined)
+    @scala.inline
+    def setAsynchronous(value: Boolean): Self = this.set("asynchronous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsynchronous: Self = this.set("asynchronous", js.undefined)
+    @scala.inline
+    def setClassificationType(value: typings.cesium.mod.ClassificationType): Self = this.set("classificationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassificationType: Self = this.set("classificationType", js.undefined)
+    @scala.inline
+    def setDebugShowBoundingVolume(value: Boolean): Self = this.set("debugShowBoundingVolume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugShowBoundingVolume: Self = this.set("debugShowBoundingVolume", js.undefined)
+    @scala.inline
+    def setDebugShowShadowVolume(value: Boolean): Self = this.set("debugShowShadowVolume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugShowShadowVolume: Self = this.set("debugShowShadowVolume", js.undefined)
+    @scala.inline
+    def setGeometryInstancesVarargs(value: GeometryInstance*): Self = this.set("geometryInstances", js.Array(value :_*))
+    @scala.inline
+    def setGeometryInstances(value: js.Array[GeometryInstance] | GeometryInstance): Self = this.set("geometryInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeometryInstances: Self = this.set("geometryInstances", js.undefined)
+    @scala.inline
+    def setInterleave(value: Boolean): Self = this.set("interleave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterleave: Self = this.set("interleave", js.undefined)
+    @scala.inline
+    def setReleaseGeometryInstances(value: Boolean): Self = this.set("releaseGeometryInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseGeometryInstances: Self = this.set("releaseGeometryInstances", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+  }
+  
 }
 

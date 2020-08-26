@@ -12,13 +12,11 @@ Provides a smooth, zoomable user interface for HTML/Javascript.
 | Keywords           | image, zoom, pan, openseadragon, seadragon, deepzoom, dzi, iiif, osm, tms |
 | # releases         | 4 |
 | # dependents       | 42 |
-| # downloads        | 257655 |
+| # downloads        | 246332 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](http://openseadragon.github.io/)
-- [Bugs](https://github.com/openseadragon/openseadragon/issues)
-- [Repository](https://github.com/openseadragon/openseadragon)
 - [Npm](https://www.npmjs.com/package/openseadragon)
     
 

@@ -32,6 +32,7 @@ class ResourceDebugIdentitysourcesItems protected () extends js.Object {
     */
   def listForunmappedidentity(): GaxiosPromise[SchemaListItemNamesForUnmappedIdentityResponse] = js.native
   def listForunmappedidentity(callback: BodyResponseCallback[SchemaListItemNamesForUnmappedIdentityResponse]): Unit = js.native
+  def listForunmappedidentity(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListItemNamesForUnmappedIdentityResponse] = js.native
   def listForunmappedidentity(params: ParamsResourceDebugIdentitysourcesItemsListforunmappedidentity): GaxiosPromise[SchemaListItemNamesForUnmappedIdentityResponse] = js.native
   def listForunmappedidentity(
     params: ParamsResourceDebugIdentitysourcesItemsListforunmappedidentity,

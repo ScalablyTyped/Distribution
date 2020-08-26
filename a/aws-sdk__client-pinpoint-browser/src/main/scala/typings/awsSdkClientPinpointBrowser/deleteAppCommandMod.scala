@@ -26,16 +26,9 @@ object deleteAppCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteAppInput) = this()
-    /* CompleteClass */
-    override val input: DeleteAppInput = js.native
     val middlewareStack: MiddlewareStack[DeleteAppInput, DeleteAppOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[DeleteAppInput, DeleteAppOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteAppInput, DeleteAppOutput] = js.native
   }

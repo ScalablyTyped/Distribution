@@ -21,6 +21,7 @@ class Map protected () extends js.Object {
   def addTileSet(tiles: js.Array[TileDesc]): Unit = js.native
   def checkMatrixForCollision(buffer: js.Array[Double], matrixWidth: Double, x: Double, y: Double, behavior: Double): Boolean = js.native
   def clear(): Unit = js.native
+  def clear(tileNum: js.UndefOr[scala.Nothing], behavior: Double): Unit = js.native
   def clear(tileNum: Double): Unit = js.native
   def clear(tileNum: Double, behavior: Double): Unit = js.native
   def getTileBehaviorAtIndex(col: Double, row: Double): Double = js.native
@@ -31,6 +32,7 @@ class Map protected () extends js.Object {
   def setEasing(easing: String): Unit = js.native
   def shift(startLine: Double, height: Double): Unit = js.native
   def updateTile(col: Double, row: Double): Unit = js.native
+  def updateTile(col: Double, row: Double, tileNum: js.UndefOr[scala.Nothing], behavior: Double): Unit = js.native
   def updateTile(col: Double, row: Double, tileNum: Double): Unit = js.native
   def updateTile(col: Double, row: Double, tileNum: Double, behavior: Double): Unit = js.native
 }

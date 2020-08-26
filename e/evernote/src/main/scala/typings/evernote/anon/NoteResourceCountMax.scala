@@ -4,48 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NoteResourceCountMax extends js.Object {
-  var noteResourceCountMax: js.UndefOr[Double] = js.undefined
-  var noteSizeMax: js.UndefOr[Double] = js.undefined
-  var noteTagCountMax: js.UndefOr[Double] = js.undefined
-  var resourceSizeMax: js.UndefOr[Double] = js.undefined
-  var uploadLimit: js.UndefOr[Double] = js.undefined
-  var userLinkedNotebookMax: js.UndefOr[Double] = js.undefined
-  var userMailLimitDaily: js.UndefOr[Double] = js.undefined
-  var userNoteCountMax: js.UndefOr[Double] = js.undefined
-  var userNotebookCountMax: js.UndefOr[Double] = js.undefined
-  var userSavedSearchesMax: js.UndefOr[Double] = js.undefined
-  var userTagCountMax: js.UndefOr[Double] = js.undefined
+  var noteResourceCountMax: js.UndefOr[Double] = js.native
+  var noteSizeMax: js.UndefOr[Double] = js.native
+  var noteTagCountMax: js.UndefOr[Double] = js.native
+  var resourceSizeMax: js.UndefOr[Double] = js.native
+  var uploadLimit: js.UndefOr[Double] = js.native
+  var userLinkedNotebookMax: js.UndefOr[Double] = js.native
+  var userMailLimitDaily: js.UndefOr[Double] = js.native
+  var userNoteCountMax: js.UndefOr[Double] = js.native
+  var userNotebookCountMax: js.UndefOr[Double] = js.native
+  var userSavedSearchesMax: js.UndefOr[Double] = js.native
+  var userTagCountMax: js.UndefOr[Double] = js.native
 }
 
 object NoteResourceCountMax {
   @scala.inline
-  def apply(
-    noteResourceCountMax: js.UndefOr[Double] = js.undefined,
-    noteSizeMax: js.UndefOr[Double] = js.undefined,
-    noteTagCountMax: js.UndefOr[Double] = js.undefined,
-    resourceSizeMax: js.UndefOr[Double] = js.undefined,
-    uploadLimit: js.UndefOr[Double] = js.undefined,
-    userLinkedNotebookMax: js.UndefOr[Double] = js.undefined,
-    userMailLimitDaily: js.UndefOr[Double] = js.undefined,
-    userNoteCountMax: js.UndefOr[Double] = js.undefined,
-    userNotebookCountMax: js.UndefOr[Double] = js.undefined,
-    userSavedSearchesMax: js.UndefOr[Double] = js.undefined,
-    userTagCountMax: js.UndefOr[Double] = js.undefined
-  ): NoteResourceCountMax = {
+  def apply(): NoteResourceCountMax = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noteResourceCountMax)) __obj.updateDynamic("noteResourceCountMax")(noteResourceCountMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noteSizeMax)) __obj.updateDynamic("noteSizeMax")(noteSizeMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noteTagCountMax)) __obj.updateDynamic("noteTagCountMax")(noteTagCountMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resourceSizeMax)) __obj.updateDynamic("resourceSizeMax")(resourceSizeMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uploadLimit)) __obj.updateDynamic("uploadLimit")(uploadLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(userLinkedNotebookMax)) __obj.updateDynamic("userLinkedNotebookMax")(userLinkedNotebookMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(userMailLimitDaily)) __obj.updateDynamic("userMailLimitDaily")(userMailLimitDaily.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(userNoteCountMax)) __obj.updateDynamic("userNoteCountMax")(userNoteCountMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(userNotebookCountMax)) __obj.updateDynamic("userNotebookCountMax")(userNotebookCountMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(userSavedSearchesMax)) __obj.updateDynamic("userSavedSearchesMax")(userSavedSearchesMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(userTagCountMax)) __obj.updateDynamic("userTagCountMax")(userTagCountMax.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoteResourceCountMax]
   }
+  @scala.inline
+  implicit class NoteResourceCountMaxOps[Self <: NoteResourceCountMax] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNoteResourceCountMax(value: Double): Self = this.set("noteResourceCountMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteResourceCountMax: Self = this.set("noteResourceCountMax", js.undefined)
+    @scala.inline
+    def setNoteSizeMax(value: Double): Self = this.set("noteSizeMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteSizeMax: Self = this.set("noteSizeMax", js.undefined)
+    @scala.inline
+    def setNoteTagCountMax(value: Double): Self = this.set("noteTagCountMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteTagCountMax: Self = this.set("noteTagCountMax", js.undefined)
+    @scala.inline
+    def setResourceSizeMax(value: Double): Self = this.set("resourceSizeMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceSizeMax: Self = this.set("resourceSizeMax", js.undefined)
+    @scala.inline
+    def setUploadLimit(value: Double): Self = this.set("uploadLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadLimit: Self = this.set("uploadLimit", js.undefined)
+    @scala.inline
+    def setUserLinkedNotebookMax(value: Double): Self = this.set("userLinkedNotebookMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserLinkedNotebookMax: Self = this.set("userLinkedNotebookMax", js.undefined)
+    @scala.inline
+    def setUserMailLimitDaily(value: Double): Self = this.set("userMailLimitDaily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserMailLimitDaily: Self = this.set("userMailLimitDaily", js.undefined)
+    @scala.inline
+    def setUserNoteCountMax(value: Double): Self = this.set("userNoteCountMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserNoteCountMax: Self = this.set("userNoteCountMax", js.undefined)
+    @scala.inline
+    def setUserNotebookCountMax(value: Double): Self = this.set("userNotebookCountMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserNotebookCountMax: Self = this.set("userNotebookCountMax", js.undefined)
+    @scala.inline
+    def setUserSavedSearchesMax(value: Double): Self = this.set("userSavedSearchesMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserSavedSearchesMax: Self = this.set("userSavedSearchesMax", js.undefined)
+    @scala.inline
+    def setUserTagCountMax(value: Double): Self = this.set("userTagCountMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserTagCountMax: Self = this.set("userTagCountMax", js.undefined)
+  }
+  
 }
 

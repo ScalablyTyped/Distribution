@@ -10,7 +10,6 @@ object loadPersian extends js.Object {
   /**
     * Add persian language.
     */
-  def apply(): Unit = js.native
-  def apply(options: LoadPersianOptions): Unit = js.native
+  def apply(options: js.UndefOr[LoadPersianOptions]): Unit = js.native
 }
 

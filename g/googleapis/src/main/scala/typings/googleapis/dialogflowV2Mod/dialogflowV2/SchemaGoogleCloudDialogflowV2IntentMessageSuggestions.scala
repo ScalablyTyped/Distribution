@@ -17,10 +17,28 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageSuggestions extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2IntentMessageSuggestions {
   @scala.inline
-  def apply(suggestions: js.Array[SchemaGoogleCloudDialogflowV2IntentMessageSuggestion] = null): SchemaGoogleCloudDialogflowV2IntentMessageSuggestions = {
+  def apply(): SchemaGoogleCloudDialogflowV2IntentMessageSuggestions = {
     val __obj = js.Dynamic.literal()
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentMessageSuggestions]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2IntentMessageSuggestionsOps[Self <: SchemaGoogleCloudDialogflowV2IntentMessageSuggestions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuggestionsVarargs(value: SchemaGoogleCloudDialogflowV2IntentMessageSuggestion*): Self = this.set("suggestions", js.Array(value :_*))
+    @scala.inline
+    def setSuggestions(value: js.Array[SchemaGoogleCloudDialogflowV2IntentMessageSuggestion]): Self = this.set("suggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
+  }
+  
 }
 

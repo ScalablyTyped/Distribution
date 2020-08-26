@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Tab extends RibbonComponent {
-  def get_command(): String
-  def get_contextual(): Boolean
-  def get_contextualGroupId(): String
-  def get_currentScalingIndex(): Double
-  def get_scaling(): String
-  def get_selected(): Boolean
-  def scaleDown(): scala.Unit
-  def scaleMax(): scala.Unit
-  def scaleUp(): scala.Unit
-  def set_selected(isSelected: Boolean): scala.Unit
+  def get_command(): String = js.native
+  def get_contextual(): Boolean = js.native
+  def get_contextualGroupId(): String = js.native
+  def get_currentScalingIndex(): Double = js.native
+  def get_scaling(): String = js.native
+  def get_selected(): Boolean = js.native
+  def scaleDown(): scala.Unit = js.native
+  def scaleMax(): scala.Unit = js.native
+  def scaleUp(): scala.Unit = js.native
+  def set_selected(isSelected: Boolean): scala.Unit = js.native
 }
 
 object Tab {
@@ -76,5 +77,38 @@ object Tab {
     val __obj = js.Dynamic.literal(_lastHeightUpdate = _lastHeightUpdate.asInstanceOf[js.Any], _lastLeftUpdate = _lastLeftUpdate.asInstanceOf[js.Any], _lastTopUpdate = _lastTopUpdate.asInstanceOf[js.Any], _lastWidthUpdate = _lastWidthUpdate.asInstanceOf[js.Any], addChild = js.Any.fromFunction1(addChild), addChildAtIndex = js.Any.fromFunction2(addChildAtIndex), appendChildrenToElement = js.Any.fromFunction1(appendChildrenToElement), createChildArray = js.Any.fromFunction0(createChildArray), dispose = js.Any.fromFunction0(dispose), doDelayedInit = js.Any.fromFunction0(doDelayedInit), ensureCorrectChildType = js.Any.fromFunction0(ensureCorrectChildType), ensureDOMElementAndEmpty = js.Any.fromFunction0(ensureDOMElementAndEmpty), getChild = js.Any.fromFunction1(getChild), getChildByTitle = js.Any.fromFunction1(getChildByTitle), getTextValue = js.Any.fromFunction0(getTextValue), get_command = js.Any.fromFunction0(get_command), get_contextual = js.Any.fromFunction0(get_contextual), get_contextualGroupId = js.Any.fromFunction0(get_contextualGroupId), get_cssClass = js.Any.fromFunction0(get_cssClass), get_currentScalingIndex = js.Any.fromFunction0(get_currentScalingIndex), get_description = js.Any.fromFunction0(get_description), get_domElementTagName = js.Any.fromFunction0(get_domElementTagName), get_enabled = js.Any.fromFunction0(get_enabled), get_id = js.Any.fromFunction0(get_id), get_needsDelayIniting = js.Any.fromFunction0(get_needsDelayIniting), get_parent = js.Any.fromFunction0(get_parent), get_ribbon = js.Any.fromFunction0(get_ribbon), get_root = js.Any.fromFunction0(get_root), get_scaling = js.Any.fromFunction0(get_scaling), get_selected = js.Any.fromFunction0(get_selected), get_title = js.Any.fromFunction0(get_title), get_visible = js.Any.fromFunction0(get_visible), get_visibleInDOM = js.Any.fromFunction0(get_visibleInDOM), initRootMember = js.Any.fromFunction1(initRootMember), onEnabledChanged = js.Any.fromFunction1(onEnabledChanged), onMenuClosed = js.Any.fromFunction0(onMenuClosed), raiseCommandEvent = js.Any.fromFunction3(raiseCommandEvent), receiveFocus = js.Any.fromFunction0(receiveFocus), removeChild = js.Any.fromFunction1(removeChild), removeChildren = js.Any.fromFunction0(removeChildren), scaleDown = js.Any.fromFunction0(scaleDown), scaleMax = js.Any.fromFunction0(scaleMax), scaleUp = js.Any.fromFunction0(scaleUp), set_description = js.Any.fromFunction1(set_description), set_enabled = js.Any.fromFunction1(set_enabled), set_id = js.Any.fromFunction1(set_id), set_parent = js.Any.fromFunction1(set_parent), set_selected = js.Any.fromFunction1(set_selected), set_title = js.Any.fromFunction1(set_title), set_visible = js.Any.fromFunction1(set_visible), valueIsDirty = js.Any.fromFunction1(valueIsDirty))
     __obj.asInstanceOf[Tab]
   }
+  @scala.inline
+  implicit class TabOps[Self <: Tab] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGet_command(value: () => String): Self = this.set("get_command", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_contextual(value: () => Boolean): Self = this.set("get_contextual", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_contextualGroupId(value: () => String): Self = this.set("get_contextualGroupId", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_currentScalingIndex(value: () => Double): Self = this.set("get_currentScalingIndex", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_scaling(value: () => String): Self = this.set("get_scaling", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_selected(value: () => Boolean): Self = this.set("get_selected", js.Any.fromFunction0(value))
+    @scala.inline
+    def setScaleDown(value: () => scala.Unit): Self = this.set("scaleDown", js.Any.fromFunction0(value))
+    @scala.inline
+    def setScaleMax(value: () => scala.Unit): Self = this.set("scaleMax", js.Any.fromFunction0(value))
+    @scala.inline
+    def setScaleUp(value: () => scala.Unit): Self = this.set("scaleUp", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSet_selected(value: Boolean => scala.Unit): Self = this.set("set_selected", js.Any.fromFunction1(value))
+  }
+  
 }
 

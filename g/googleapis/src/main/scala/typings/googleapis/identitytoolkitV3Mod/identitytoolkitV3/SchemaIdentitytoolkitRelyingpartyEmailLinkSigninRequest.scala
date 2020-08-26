@@ -25,12 +25,34 @@ trait SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest extends js.Object 
 
 object SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest {
   @scala.inline
-  def apply(email: String = null, idToken: String = null, oobCode: String = null): SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest = {
+  def apply(): SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
-    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest]
   }
+  @scala.inline
+  implicit class SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequestOps[Self <: SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    @scala.inline
+    def setOobCode(value: String): Self = this.set("oobCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOobCode: Self = this.set("oobCode", js.undefined)
+  }
+  
 }
 

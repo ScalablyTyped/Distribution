@@ -6,33 +6,52 @@ import scala.scalajs.js.annotation._
 
 /**
   */
+@js.native
 trait TaskData extends js.Object {
   /**
     * Delay in milliseconds when the Task will run.
     */
-  var delay: js.UndefOr[Double] = js.undefined
+  var delay: js.UndefOr[Double] = js.native
   /**
     * identifier returned by the native setTimeout.
     */
-  var handleId: js.UndefOr[Double] = js.undefined
+  var handleId: js.UndefOr[Double] = js.native
   /**
     * A periodic [MacroTask] is such which get automatically rescheduled after it is executed.
     */
-  var isPeriodic: js.UndefOr[Boolean] = js.undefined
+  var isPeriodic: js.UndefOr[Boolean] = js.native
 }
 
 object TaskData {
   @scala.inline
-  def apply(
-    delay: js.UndefOr[Double] = js.undefined,
-    handleId: js.UndefOr[Double] = js.undefined,
-    isPeriodic: js.UndefOr[Boolean] = js.undefined
-  ): TaskData = {
+  def apply(): TaskData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleId)) __obj.updateDynamic("handleId")(handleId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPeriodic)) __obj.updateDynamic("isPeriodic")(isPeriodic.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskData]
   }
+  @scala.inline
+  implicit class TaskDataOps[Self <: TaskData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setHandleId(value: Double): Self = this.set("handleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleId: Self = this.set("handleId", js.undefined)
+    @scala.inline
+    def setIsPeriodic(value: Boolean): Self = this.set("isPeriodic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPeriodic: Self = this.set("isPeriodic", js.undefined)
+  }
+  
 }
 

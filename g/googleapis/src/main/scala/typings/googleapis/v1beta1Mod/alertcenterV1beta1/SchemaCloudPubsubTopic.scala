@@ -26,11 +26,30 @@ trait SchemaCloudPubsubTopic extends js.Object {
 
 object SchemaCloudPubsubTopic {
   @scala.inline
-  def apply(payloadFormat: String = null, topicName: String = null): SchemaCloudPubsubTopic = {
+  def apply(): SchemaCloudPubsubTopic = {
     val __obj = js.Dynamic.literal()
-    if (payloadFormat != null) __obj.updateDynamic("payloadFormat")(payloadFormat.asInstanceOf[js.Any])
-    if (topicName != null) __obj.updateDynamic("topicName")(topicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCloudPubsubTopic]
   }
+  @scala.inline
+  implicit class SchemaCloudPubsubTopicOps[Self <: SchemaCloudPubsubTopic] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPayloadFormat(value: String): Self = this.set("payloadFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayloadFormat: Self = this.set("payloadFormat", js.undefined)
+    @scala.inline
+    def setTopicName(value: String): Self = this.set("topicName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicName: Self = this.set("topicName", js.undefined)
+  }
+  
 }
 

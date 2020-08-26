@@ -32,6 +32,14 @@ trait TweenStatic extends js.Object {
     * @since 1.8
     */
   def apply[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double): Tween[TElement] = js.native
+  def apply[TElement](
+    elem: TElement,
+    options: EffectsOptions[TElement],
+    prop: String,
+    end: Double,
+    easing: js.UndefOr[scala.Nothing],
+    unit: String
+  ): Tween[TElement] = js.native
   def apply[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double, easing: String): Tween[TElement] = js.native
   def apply[TElement](
     elem: TElement,

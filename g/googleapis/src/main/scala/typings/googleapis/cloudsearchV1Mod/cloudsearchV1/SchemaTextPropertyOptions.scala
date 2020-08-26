@@ -22,14 +22,30 @@ trait SchemaTextPropertyOptions extends js.Object {
 
 object SchemaTextPropertyOptions {
   @scala.inline
-  def apply(
-    operatorOptions: SchemaTextOperatorOptions = null,
-    retrievalImportance: SchemaRetrievalImportance = null
-  ): SchemaTextPropertyOptions = {
+  def apply(): SchemaTextPropertyOptions = {
     val __obj = js.Dynamic.literal()
-    if (operatorOptions != null) __obj.updateDynamic("operatorOptions")(operatorOptions.asInstanceOf[js.Any])
-    if (retrievalImportance != null) __obj.updateDynamic("retrievalImportance")(retrievalImportance.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTextPropertyOptions]
   }
+  @scala.inline
+  implicit class SchemaTextPropertyOptionsOps[Self <: SchemaTextPropertyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOperatorOptions(value: SchemaTextOperatorOptions): Self = this.set("operatorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatorOptions: Self = this.set("operatorOptions", js.undefined)
+    @scala.inline
+    def setRetrievalImportance(value: SchemaRetrievalImportance): Self = this.set("retrievalImportance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetrievalImportance: Self = this.set("retrievalImportance", js.undefined)
+  }
+  
 }
 

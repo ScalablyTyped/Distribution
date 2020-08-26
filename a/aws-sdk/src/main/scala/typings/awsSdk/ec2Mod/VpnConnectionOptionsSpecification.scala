@@ -22,16 +22,36 @@ trait VpnConnectionOptionsSpecification extends js.Object {
 
 object VpnConnectionOptionsSpecification {
   @scala.inline
-  def apply(
-    EnableAcceleration: js.UndefOr[Boolean] = js.undefined,
-    StaticRoutesOnly: js.UndefOr[Boolean] = js.undefined,
-    TunnelOptions: VpnTunnelOptionsSpecificationsList = null
-  ): VpnConnectionOptionsSpecification = {
+  def apply(): VpnConnectionOptionsSpecification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnableAcceleration)) __obj.updateDynamic("EnableAcceleration")(EnableAcceleration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(StaticRoutesOnly)) __obj.updateDynamic("StaticRoutesOnly")(StaticRoutesOnly.get.asInstanceOf[js.Any])
-    if (TunnelOptions != null) __obj.updateDynamic("TunnelOptions")(TunnelOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpnConnectionOptionsSpecification]
   }
+  @scala.inline
+  implicit class VpnConnectionOptionsSpecificationOps[Self <: VpnConnectionOptionsSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableAcceleration(value: Boolean): Self = this.set("EnableAcceleration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAcceleration: Self = this.set("EnableAcceleration", js.undefined)
+    @scala.inline
+    def setStaticRoutesOnly(value: Boolean): Self = this.set("StaticRoutesOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticRoutesOnly: Self = this.set("StaticRoutesOnly", js.undefined)
+    @scala.inline
+    def setTunnelOptionsVarargs(value: VpnTunnelOptionsSpecification*): Self = this.set("TunnelOptions", js.Array(value :_*))
+    @scala.inline
+    def setTunnelOptions(value: VpnTunnelOptionsSpecificationsList): Self = this.set("TunnelOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTunnelOptions: Self = this.set("TunnelOptions", js.undefined)
+  }
+  
 }
 

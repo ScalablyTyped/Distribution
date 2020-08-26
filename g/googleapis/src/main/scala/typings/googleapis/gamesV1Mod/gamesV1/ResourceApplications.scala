@@ -31,6 +31,7 @@ class ResourceApplications protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaApplication] = js.native
   def get(callback: BodyResponseCallback[SchemaApplication]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApplication] = js.native
   def get(params: ParamsResourceApplicationsGet): GaxiosPromise[SchemaApplication] = js.native
   def get(params: ParamsResourceApplicationsGet, callback: BodyResponseCallback[SchemaApplication]): Unit = js.native
   def get(
@@ -59,6 +60,7 @@ class ResourceApplications protected () extends js.Object {
     */
   def played(): GaxiosPromise[Unit] = js.native
   def played(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def played(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def played(params: ParamsResourceApplicationsPlayed): GaxiosPromise[Unit] = js.native
   def played(params: ParamsResourceApplicationsPlayed, callback: BodyResponseCallback[Unit]): Unit = js.native
   def played(
@@ -88,6 +90,7 @@ class ResourceApplications protected () extends js.Object {
     */
   def verify(): GaxiosPromise[SchemaApplicationVerifyResponse] = js.native
   def verify(callback: BodyResponseCallback[SchemaApplicationVerifyResponse]): Unit = js.native
+  def verify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApplicationVerifyResponse] = js.native
   def verify(params: ParamsResourceApplicationsVerify): GaxiosPromise[SchemaApplicationVerifyResponse] = js.native
   def verify(
     params: ParamsResourceApplicationsVerify,

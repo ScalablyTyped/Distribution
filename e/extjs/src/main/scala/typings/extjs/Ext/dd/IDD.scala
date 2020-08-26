@@ -1,13 +1,11 @@
 package typings.extjs.Ext.dd
 
-import typings.extjs.Ext.Array
-import typings.extjs.Ext.IClass
-import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDD extends IDragDrop {
   /** [Method] Sets the element to the location of the mousedown or click event maintaining the cursor location relative to the loc
     * @param el HTMLElement the element to move
@@ -21,222 +19,108 @@ trait IDD extends IDragDrop {
       /* iPageY */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the pointer offset to the distance between the linked element s top left corner and the location the element was
     * @param iPageX Number the X coordinate of the click
     * @param iPageY Number the Y coordinate of the click
     */
   var autoOffset: js.UndefOr[
     js.Function2[/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Event that fires prior to the onDrag event
     * @param e Object
     */
-  var b4Drag: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var b4Drag: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Event that fires prior to the onMouseDown event
     * @param e Object
     */
-  var b4MouseDown: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var b4MouseDown: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Saves the most recent position so that we can reset the constraints and tick marks on demand
     * @param iPageX Number the current x position (this just makes it so we don't have to look it up again)
     * @param iPageY Number the current y position (this just makes it so we don't have to look it up again)
     */
   var cachePosition: js.UndefOr[
     js.Function2[/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Property] (Boolean) */
-  var scroll: js.UndefOr[Boolean] = js.undefined
+  var scroll: js.UndefOr[Boolean] = js.native
   /** [Method] Sets the pointer offset
     * @param iDeltaX Number the distance from the left
     * @param iDeltaY Number the distance from the top
     */
   var setDelta: js.UndefOr[
     js.Function2[/* iDeltaX */ js.UndefOr[Double], /* iDeltaY */ js.UndefOr[Double], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the drag element to the location of the mousedown or click event maintaining the cursor location relative to th
     * @param iPageX Number the X coordinate of the mousedown or drag event
     * @param iPageY Number the Y coordinate of the mousedown or drag event
     */
   var setDragElPos: js.UndefOr[
     js.Function2[/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] toString method
     * @returns String string representation of the dd obj
     */
   @JSName("toString")
-  var toString_FIDD: js.UndefOr[js.Function0[String]] = js.undefined
+  var toString_FIDD: js.UndefOr[js.Function0[String]] = js.native
 }
 
 object IDD {
   @scala.inline
-  def apply(
-    addInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Unit = null,
-    addInvalidHandleId: /* id */ js.UndefOr[String] => Unit = null,
-    addInvalidHandleType: /* tagName */ js.UndefOr[String] => Unit = null,
-    addToGroup: /* sGroup */ js.UndefOr[String] => Unit = null,
-    alias: Array = null,
-    alignElWithMouse: (/* el */ js.UndefOr[HTMLElement], /* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit = null,
-    alternateClassName: js.Any = null,
-    applyConfig: () => Unit = null,
-    autoOffset: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit = null,
-    available: js.UndefOr[Boolean] = js.undefined,
-    b4Drag: /* e */ js.UndefOr[js.Any] => Unit = null,
-    b4MouseDown: /* e */ js.UndefOr[js.Any] => Unit = null,
-    cachePosition: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clearConstraints: () => Unit = null,
-    clearTicks: () => Unit = null,
-    config: js.Any = null,
-    constrainTo: (/* constrainTo */ js.UndefOr[js.Any], /* pad */ js.UndefOr[js.Any], /* inContent */ js.UndefOr[Boolean]) => Unit = null,
-    defaultPadding: js.Any = null,
-    destroy: () => Unit = null,
-    endDrag: /* e */ js.UndefOr[Event] => Unit = null,
-    extend: String = null,
-    getDragEl: () => HTMLElement = null,
-    getEl: () => HTMLElement = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    groups: js.Any = null,
-    hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    ignoreSelf: js.UndefOr[Boolean] = js.undefined,
-    inheritableStatics: js.Any = null,
-    init: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => IDD = null,
-    initTarget: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Unit = null,
-    invalidHandleClasses: Array = null,
-    invalidHandleIds: js.Any = null,
-    invalidHandleTypes: js.Any = null,
-    isLocked: () => Boolean = null,
-    isTarget: js.UndefOr[Boolean] = js.undefined,
-    isValidHandleChild: /* node */ js.UndefOr[HTMLElement] => Boolean = null,
-    lock: () => Unit = null,
-    maintainOffset: js.UndefOr[Boolean] = js.undefined,
-    mixins: js.Any = null,
-    moveOnly: js.UndefOr[Boolean] = js.undefined,
-    onAvailable: () => Unit = null,
-    onDrag: /* e */ js.UndefOr[Event] => Unit = null,
-    onDragDrop: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragEnter: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOut: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOver: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
-    padding: Array = null,
-    primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,
-    removeFromGroup: /* sGroup */ js.UndefOr[String] => Unit = null,
-    removeInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Unit = null,
-    removeInvalidHandleId: /* id */ js.UndefOr[String] => Unit = null,
-    removeInvalidHandleType: /* tagName */ js.UndefOr[String] => Unit = null,
-    requires: Array = null,
-    resetConstraints: /* maintainOffset */ js.UndefOr[Boolean] => Unit = null,
-    scroll: js.UndefOr[Boolean] = js.undefined,
-    self: IClass = null,
-    setDelta: (/* iDeltaX */ js.UndefOr[Double], /* iDeltaY */ js.UndefOr[Double]) => Unit = null,
-    setDragElId: /* id */ js.UndefOr[String] => Unit = null,
-    setDragElPos: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit = null,
-    setHandleElId: /* id */ js.UndefOr[String] => Unit = null,
-    setInitPosition: (/* diffX */ js.UndefOr[Double], /* diffY */ js.UndefOr[Double]) => Unit = null,
-    setOuterHandleElId: /* id */ js.UndefOr[String] => Unit = null,
-    setPadding: (/* iTop */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iBot */ js.UndefOr[Double], /* iLeft */ js.UndefOr[Double]) => Unit = null,
-    setXConstraint: (/* iLeft */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit = null,
-    setYConstraint: (/* iUp */ js.UndefOr[Double], /* iDown */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    startDrag: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
-    statics: js.Any = null,
-    toString: () => String = null,
-    unlock: () => Unit = null,
-    unreg: () => Unit = null,
-    uses: Array = null,
-    xTicks: Array = null,
-    yTicks: Array = null
-  ): IDD = {
+  def apply(): IDD = {
     val __obj = js.Dynamic.literal()
-    if (addInvalidHandleClass != null) __obj.updateDynamic("addInvalidHandleClass")(js.Any.fromFunction1(addInvalidHandleClass))
-    if (addInvalidHandleId != null) __obj.updateDynamic("addInvalidHandleId")(js.Any.fromFunction1(addInvalidHandleId))
-    if (addInvalidHandleType != null) __obj.updateDynamic("addInvalidHandleType")(js.Any.fromFunction1(addInvalidHandleType))
-    if (addToGroup != null) __obj.updateDynamic("addToGroup")(js.Any.fromFunction1(addToGroup))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alignElWithMouse != null) __obj.updateDynamic("alignElWithMouse")(js.Any.fromFunction3(alignElWithMouse))
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (applyConfig != null) __obj.updateDynamic("applyConfig")(js.Any.fromFunction0(applyConfig))
-    if (autoOffset != null) __obj.updateDynamic("autoOffset")(js.Any.fromFunction2(autoOffset))
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.get.asInstanceOf[js.Any])
-    if (b4Drag != null) __obj.updateDynamic("b4Drag")(js.Any.fromFunction1(b4Drag))
-    if (b4MouseDown != null) __obj.updateDynamic("b4MouseDown")(js.Any.fromFunction1(b4MouseDown))
-    if (cachePosition != null) __obj.updateDynamic("cachePosition")(js.Any.fromFunction2(cachePosition))
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (clearConstraints != null) __obj.updateDynamic("clearConstraints")(js.Any.fromFunction0(clearConstraints))
-    if (clearTicks != null) __obj.updateDynamic("clearTicks")(js.Any.fromFunction0(clearTicks))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (constrainTo != null) __obj.updateDynamic("constrainTo")(js.Any.fromFunction3(constrainTo))
-    if (defaultPadding != null) __obj.updateDynamic("defaultPadding")(defaultPadding.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (endDrag != null) __obj.updateDynamic("endDrag")(js.Any.fromFunction1(endDrag))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getDragEl != null) __obj.updateDynamic("getDragEl")(js.Any.fromFunction0(getDragEl))
-    if (getEl != null) __obj.updateDynamic("getEl")(js.Any.fromFunction0(getEl))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasOuterHandles)) __obj.updateDynamic("hasOuterHandles")(hasOuterHandles.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSelf)) __obj.updateDynamic("ignoreSelf")(ignoreSelf.get.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction3(init))
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (initTarget != null) __obj.updateDynamic("initTarget")(js.Any.fromFunction3(initTarget))
-    if (invalidHandleClasses != null) __obj.updateDynamic("invalidHandleClasses")(invalidHandleClasses.asInstanceOf[js.Any])
-    if (invalidHandleIds != null) __obj.updateDynamic("invalidHandleIds")(invalidHandleIds.asInstanceOf[js.Any])
-    if (invalidHandleTypes != null) __obj.updateDynamic("invalidHandleTypes")(invalidHandleTypes.asInstanceOf[js.Any])
-    if (isLocked != null) __obj.updateDynamic("isLocked")(js.Any.fromFunction0(isLocked))
-    if (!js.isUndefined(isTarget)) __obj.updateDynamic("isTarget")(isTarget.get.asInstanceOf[js.Any])
-    if (isValidHandleChild != null) __obj.updateDynamic("isValidHandleChild")(js.Any.fromFunction1(isValidHandleChild))
-    if (lock != null) __obj.updateDynamic("lock")(js.Any.fromFunction0(lock))
-    if (!js.isUndefined(maintainOffset)) __obj.updateDynamic("maintainOffset")(maintainOffset.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveOnly)) __obj.updateDynamic("moveOnly")(moveOnly.get.asInstanceOf[js.Any])
-    if (onAvailable != null) __obj.updateDynamic("onAvailable")(js.Any.fromFunction0(onAvailable))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragDrop != null) __obj.updateDynamic("onDragDrop")(js.Any.fromFunction2(onDragDrop))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction2(onDragEnter))
-    if (onDragOut != null) __obj.updateDynamic("onDragOut")(js.Any.fromFunction2(onDragOut))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction2(onDragOver))
-    if (onInvalidDrop != null) __obj.updateDynamic("onInvalidDrop")(js.Any.fromFunction1(onInvalidDrop))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryButtonOnly)) __obj.updateDynamic("primaryButtonOnly")(primaryButtonOnly.get.asInstanceOf[js.Any])
-    if (removeFromGroup != null) __obj.updateDynamic("removeFromGroup")(js.Any.fromFunction1(removeFromGroup))
-    if (removeInvalidHandleClass != null) __obj.updateDynamic("removeInvalidHandleClass")(js.Any.fromFunction1(removeInvalidHandleClass))
-    if (removeInvalidHandleId != null) __obj.updateDynamic("removeInvalidHandleId")(js.Any.fromFunction1(removeInvalidHandleId))
-    if (removeInvalidHandleType != null) __obj.updateDynamic("removeInvalidHandleType")(js.Any.fromFunction1(removeInvalidHandleType))
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (resetConstraints != null) __obj.updateDynamic("resetConstraints")(js.Any.fromFunction1(resetConstraints))
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.get.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setDelta != null) __obj.updateDynamic("setDelta")(js.Any.fromFunction2(setDelta))
-    if (setDragElId != null) __obj.updateDynamic("setDragElId")(js.Any.fromFunction1(setDragElId))
-    if (setDragElPos != null) __obj.updateDynamic("setDragElPos")(js.Any.fromFunction2(setDragElPos))
-    if (setHandleElId != null) __obj.updateDynamic("setHandleElId")(js.Any.fromFunction1(setHandleElId))
-    if (setInitPosition != null) __obj.updateDynamic("setInitPosition")(js.Any.fromFunction2(setInitPosition))
-    if (setOuterHandleElId != null) __obj.updateDynamic("setOuterHandleElId")(js.Any.fromFunction1(setOuterHandleElId))
-    if (setPadding != null) __obj.updateDynamic("setPadding")(js.Any.fromFunction4(setPadding))
-    if (setXConstraint != null) __obj.updateDynamic("setXConstraint")(js.Any.fromFunction3(setXConstraint))
-    if (setYConstraint != null) __obj.updateDynamic("setYConstraint")(js.Any.fromFunction3(setYConstraint))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (startDrag != null) __obj.updateDynamic("startDrag")(js.Any.fromFunction2(startDrag))
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
-    if (unlock != null) __obj.updateDynamic("unlock")(js.Any.fromFunction0(unlock))
-    if (unreg != null) __obj.updateDynamic("unreg")(js.Any.fromFunction0(unreg))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (xTicks != null) __obj.updateDynamic("xTicks")(xTicks.asInstanceOf[js.Any])
-    if (yTicks != null) __obj.updateDynamic("yTicks")(yTicks.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDD]
   }
+  @scala.inline
+  implicit class IDDOps[Self <: IDD] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignElWithMouse(
+      value: (/* el */ js.UndefOr[HTMLElement], /* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit
+    ): Self = this.set("alignElWithMouse", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAlignElWithMouse: Self = this.set("alignElWithMouse", js.undefined)
+    @scala.inline
+    def setAutoOffset(value: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit): Self = this.set("autoOffset", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAutoOffset: Self = this.set("autoOffset", js.undefined)
+    @scala.inline
+    def setB4Drag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = this.set("b4Drag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteB4Drag: Self = this.set("b4Drag", js.undefined)
+    @scala.inline
+    def setB4MouseDown(value: /* e */ js.UndefOr[js.Any] => Unit): Self = this.set("b4MouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteB4MouseDown: Self = this.set("b4MouseDown", js.undefined)
+    @scala.inline
+    def setCachePosition(value: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit): Self = this.set("cachePosition", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCachePosition: Self = this.set("cachePosition", js.undefined)
+    @scala.inline
+    def setScroll(value: Boolean): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroll: Self = this.set("scroll", js.undefined)
+    @scala.inline
+    def setSetDelta(value: (/* iDeltaX */ js.UndefOr[Double], /* iDeltaY */ js.UndefOr[Double]) => Unit): Self = this.set("setDelta", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetDelta: Self = this.set("setDelta", js.undefined)
+    @scala.inline
+    def setSetDragElPos(value: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit): Self = this.set("setDragElPos", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetDragElPos: Self = this.set("setDragElPos", js.undefined)
+    @scala.inline
+    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteToString: Self = this.set("toString", js.undefined)
+  }
+  
 }
 

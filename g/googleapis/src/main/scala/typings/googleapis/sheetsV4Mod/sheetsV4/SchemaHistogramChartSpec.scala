@@ -50,20 +50,44 @@ trait SchemaHistogramChartSpec extends js.Object {
 
 object SchemaHistogramChartSpec {
   @scala.inline
-  def apply(
-    bucketSize: js.UndefOr[Double] = js.undefined,
-    legendPosition: String = null,
-    outlierPercentile: js.UndefOr[Double] = js.undefined,
-    series: js.Array[SchemaHistogramSeries] = null,
-    showItemDividers: js.UndefOr[Boolean] = js.undefined
-  ): SchemaHistogramChartSpec = {
+  def apply(): SchemaHistogramChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bucketSize)) __obj.updateDynamic("bucketSize")(bucketSize.get.asInstanceOf[js.Any])
-    if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(outlierPercentile)) __obj.updateDynamic("outlierPercentile")(outlierPercentile.get.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (!js.isUndefined(showItemDividers)) __obj.updateDynamic("showItemDividers")(showItemDividers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHistogramChartSpec]
   }
+  @scala.inline
+  implicit class SchemaHistogramChartSpecOps[Self <: SchemaHistogramChartSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketSize(value: Double): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    @scala.inline
+    def setLegendPosition(value: String): Self = this.set("legendPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegendPosition: Self = this.set("legendPosition", js.undefined)
+    @scala.inline
+    def setOutlierPercentile(value: Double): Self = this.set("outlierPercentile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlierPercentile: Self = this.set("outlierPercentile", js.undefined)
+    @scala.inline
+    def setSeriesVarargs(value: SchemaHistogramSeries*): Self = this.set("series", js.Array(value :_*))
+    @scala.inline
+    def setSeries(value: js.Array[SchemaHistogramSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setShowItemDividers(value: Boolean): Self = this.set("showItemDividers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowItemDividers: Self = this.set("showItemDividers", js.undefined)
+  }
+  
 }
 

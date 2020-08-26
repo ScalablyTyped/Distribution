@@ -13,7 +13,11 @@ trait Assertion
      with TypeComparison {
   // Basename
   def basename(): Assertion = js.native
+  def basename(path: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], msg: String): Assertion = js.native
+  def basename(path: js.UndefOr[scala.Nothing], name: String): Assertion = js.native
+  def basename(path: js.UndefOr[scala.Nothing], name: String, msg: String): Assertion = js.native
   def basename(path: String): Assertion = js.native
+  def basename(path: String, name: js.UndefOr[scala.Nothing], msg: String): Assertion = js.native
   def basename(path: String, name: String): Assertion = js.native
   def basename(path: String, name: String, msg: String): Assertion = js.native
   // file().with.content(str)
@@ -50,6 +54,7 @@ trait Assertion
   def dirname(name: String, msg: String): Assertion = js.native
   // Еxtname
   def extname(path: String): Assertion = js.native
+  def extname(path: String, name: js.UndefOr[scala.Nothing], msg: String): Assertion = js.native
   def extname(path: String, name: String): Assertion = js.native
   def extname(path: String, name: String, msg: String): Assertion = js.native
   def fileContent(path: String, data: js.Any): Assertion = js.native

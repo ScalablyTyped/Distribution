@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "xml-formatter"
-version := "1.2-dt-20200617Z-a0f030"
-scalaVersion := "2.13.2"
+version := "2.1.3-77b2ae"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

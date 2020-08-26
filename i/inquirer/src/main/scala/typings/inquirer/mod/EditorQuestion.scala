@@ -11,38 +11,36 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
+@js.native
 trait EditorQuestion[T /* <: Answers */] extends Question[T] {
   /**
     * @inheritdoc
     */
   @JSName("type")
-  var type_EditorQuestion: editor
+  var type_EditorQuestion: editor = js.native
 }
 
 object EditorQuestion {
   @scala.inline
-  def apply[/* <: typings.inquirer.mod.Answers */ T](
-    `type`: editor,
-    default: AsyncDynamicQuestionProperty[_, T] = null,
-    filter: /* input */ js.Any => _ = null,
-    message: AsyncDynamicQuestionProperty[String, T] = null,
-    name: KeyUnion[T] = null,
-    prefix: String = null,
-    suffix: String = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String]) = null,
-    when: AsyncDynamicQuestionProperty[Boolean, T] = null
-  ): EditorQuestion[T] = {
+  def apply[/* <: typings.inquirer.mod.Answers */ T](`type`: editor): EditorQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorQuestion[T]]
   }
+  @scala.inline
+  implicit class EditorQuestionOps[Self <: EditorQuestion[_], /* <: typings.inquirer.mod.Answers */ T] (val x: Self with EditorQuestion[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: editor): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

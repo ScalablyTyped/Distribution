@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Foundation
 
-import typings.winrt.Windows.Foundation.Diagnostics.ErrorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +9,7 @@ import scala.scalajs.js.annotation._
 object Diagnostics extends js.Object {
   @js.native
   class RuntimeBrokerErrorSettings ()
-    extends typings.winrt.Windows.Foundation.Diagnostics.RuntimeBrokerErrorSettings {
-    /* CompleteClass */
-    override def getErrorOptions(): ErrorOptions = js.native
-    /* CompleteClass */
-    override def setErrorOptions(value: ErrorOptions): Unit = js.native
-  }
+    extends typings.winrt.Windows.Foundation.Diagnostics.RuntimeBrokerErrorSettings
   
   @js.native
   object ErrorOptions extends js.Object {

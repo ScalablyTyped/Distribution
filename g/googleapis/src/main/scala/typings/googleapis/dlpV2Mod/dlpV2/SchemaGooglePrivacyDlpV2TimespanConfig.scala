@@ -40,18 +40,38 @@ trait SchemaGooglePrivacyDlpV2TimespanConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2TimespanConfig {
   @scala.inline
-  def apply(
-    enableAutoPopulationOfTimespanConfig: js.UndefOr[Boolean] = js.undefined,
-    endTime: String = null,
-    startTime: String = null,
-    timestampField: SchemaGooglePrivacyDlpV2FieldId = null
-  ): SchemaGooglePrivacyDlpV2TimespanConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2TimespanConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableAutoPopulationOfTimespanConfig)) __obj.updateDynamic("enableAutoPopulationOfTimespanConfig")(enableAutoPopulationOfTimespanConfig.get.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (timestampField != null) __obj.updateDynamic("timestampField")(timestampField.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TimespanConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2TimespanConfigOps[Self <: SchemaGooglePrivacyDlpV2TimespanConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableAutoPopulationOfTimespanConfig(value: Boolean): Self = this.set("enableAutoPopulationOfTimespanConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAutoPopulationOfTimespanConfig: Self = this.set("enableAutoPopulationOfTimespanConfig", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTimestampField(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("timestampField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampField: Self = this.set("timestampField", js.undefined)
+  }
+  
 }
 

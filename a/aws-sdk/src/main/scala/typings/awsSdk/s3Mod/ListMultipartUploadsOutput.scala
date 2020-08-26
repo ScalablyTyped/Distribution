@@ -58,34 +58,74 @@ trait ListMultipartUploadsOutput extends js.Object {
 
 object ListMultipartUploadsOutput {
   @scala.inline
-  def apply(
-    Bucket: BucketName = null,
-    CommonPrefixes: CommonPrefixList = null,
-    Delimiter: Delimiter = null,
-    EncodingType: EncodingType = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
-    KeyMarker: KeyMarker = null,
-    MaxUploads: js.UndefOr[MaxUploads] = js.undefined,
-    NextKeyMarker: NextKeyMarker = null,
-    NextUploadIdMarker: NextUploadIdMarker = null,
-    Prefix: Prefix = null,
-    UploadIdMarker: UploadIdMarker = null,
-    Uploads: MultipartUploadList = null
-  ): ListMultipartUploadsOutput = {
+  def apply(): ListMultipartUploadsOutput = {
     val __obj = js.Dynamic.literal()
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
-    if (CommonPrefixes != null) __obj.updateDynamic("CommonPrefixes")(CommonPrefixes.asInstanceOf[js.Any])
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
-    if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxUploads)) __obj.updateDynamic("MaxUploads")(MaxUploads.get.asInstanceOf[js.Any])
-    if (NextKeyMarker != null) __obj.updateDynamic("NextKeyMarker")(NextKeyMarker.asInstanceOf[js.Any])
-    if (NextUploadIdMarker != null) __obj.updateDynamic("NextUploadIdMarker")(NextUploadIdMarker.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (UploadIdMarker != null) __obj.updateDynamic("UploadIdMarker")(UploadIdMarker.asInstanceOf[js.Any])
-    if (Uploads != null) __obj.updateDynamic("Uploads")(Uploads.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMultipartUploadsOutput]
   }
+  @scala.inline
+  implicit class ListMultipartUploadsOutputOps[Self <: ListMultipartUploadsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    @scala.inline
+    def setCommonPrefixesVarargs(value: CommonPrefix*): Self = this.set("CommonPrefixes", js.Array(value :_*))
+    @scala.inline
+    def setCommonPrefixes(value: CommonPrefixList): Self = this.set("CommonPrefixes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommonPrefixes: Self = this.set("CommonPrefixes", js.undefined)
+    @scala.inline
+    def setDelimiter(value: Delimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    @scala.inline
+    def setEncodingType(value: EncodingType): Self = this.set("EncodingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodingType: Self = this.set("EncodingType", js.undefined)
+    @scala.inline
+    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setKeyMarker(value: KeyMarker): Self = this.set("KeyMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyMarker: Self = this.set("KeyMarker", js.undefined)
+    @scala.inline
+    def setMaxUploads(value: MaxUploads): Self = this.set("MaxUploads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxUploads: Self = this.set("MaxUploads", js.undefined)
+    @scala.inline
+    def setNextKeyMarker(value: NextKeyMarker): Self = this.set("NextKeyMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextKeyMarker: Self = this.set("NextKeyMarker", js.undefined)
+    @scala.inline
+    def setNextUploadIdMarker(value: NextUploadIdMarker): Self = this.set("NextUploadIdMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextUploadIdMarker: Self = this.set("NextUploadIdMarker", js.undefined)
+    @scala.inline
+    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    @scala.inline
+    def setUploadIdMarker(value: UploadIdMarker): Self = this.set("UploadIdMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadIdMarker: Self = this.set("UploadIdMarker", js.undefined)
+    @scala.inline
+    def setUploadsVarargs(value: MultipartUpload*): Self = this.set("Uploads", js.Array(value :_*))
+    @scala.inline
+    def setUploads(value: MultipartUploadList): Self = this.set("Uploads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploads: Self = this.set("Uploads", js.undefined)
+  }
+  
 }
 

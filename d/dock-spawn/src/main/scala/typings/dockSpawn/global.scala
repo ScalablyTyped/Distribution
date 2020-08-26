@@ -19,16 +19,6 @@ object global extends js.Object {
         panel: typings.dockSpawn.dockspawn.PanelContainer,
         dockManager: typings.dockSpawn.dockspawn.DockManager
       ) = this()
-      /* CompleteClass */
-      override def bringToFront(): Unit = js.native
-      /* CompleteClass */
-      override def resize(width: Double, height: Double): Unit = js.native
-      /* CompleteClass */
-      override def setPosition(x: Double, y: Double): Unit = js.native
-      /* CompleteClass */
-      override def setTitle(title: String): Unit = js.native
-      /* CompleteClass */
-      override def setTitleIcon(iconName: String): Unit = js.native
     }
     
     /**
@@ -40,112 +30,22 @@ object global extends js.Object {
     class DockManager protected ()
       extends typings.dockSpawn.dockspawn.DockManager {
       def this(element: HTMLDivElement) = this()
-      /* CompleteClass */
-      override var context: typings.dockSpawn.dockspawn.DockManagerContext = js.native
-      /** Dock the [dialog] below the [referenceNode] node */
-      /* CompleteClass */
-      override def dockDialogDown(referenceNode: typings.dockSpawn.dockspawn.DockNode, dialog: typings.dockSpawn.dockspawn.Dialog): typings.dockSpawn.dockspawn.DockNode = js.native
-      /** Dock the [dialog] as a tab inside the [referenceNode] node */
-      /* CompleteClass */
-      override def dockDialogFill(
-        referenceNode: typings.dockSpawn.dockspawn.DockNode,
-        container: typings.dockSpawn.dockspawn.PanelContainer
-      ): typings.dockSpawn.dockspawn.DockNode = js.native
-      /** Dock the [dialog] to the left of the [referenceNode] node */
-      /* CompleteClass */
-      override def dockDialogLeft(referenceNode: typings.dockSpawn.dockspawn.DockNode, dialog: typings.dockSpawn.dockspawn.Dialog): typings.dockSpawn.dockspawn.DockNode = js.native
-      /** Dock the [dialog] to the right of the [referenceNode] node */
-      /* CompleteClass */
-      override def dockDialogRight(referenceNode: typings.dockSpawn.dockspawn.DockNode, dialog: typings.dockSpawn.dockspawn.Dialog): typings.dockSpawn.dockspawn.DockNode = js.native
-      /** Dock the [dialog] above the [referenceNode] node */
-      /* CompleteClass */
-      override def dockDialogUp(referenceNode: typings.dockSpawn.dockspawn.DockNode, dialog: typings.dockSpawn.dockspawn.Dialog): typings.dockSpawn.dockspawn.DockNode = js.native
-      /** Dock the [container] below the [referenceNode] node */
-      /* CompleteClass */
-      override def dockDown(
-        referenceNode: typings.dockSpawn.dockspawn.DockNode,
-        container: typings.dockSpawn.dockspawn.PanelContainer,
-        ratio: Double
-      ): typings.dockSpawn.dockspawn.DockNode = js.native
-      /** Dock the [container] as a tab inside the [referenceNode] node */
-      /* CompleteClass */
-      override def dockFill(
-        referenceNode: typings.dockSpawn.dockspawn.DockNode,
-        container: typings.dockSpawn.dockspawn.PanelContainer
-      ): typings.dockSpawn.dockspawn.DockNode = js.native
-      /** Dock the [container] to the left of the [referenceNode] node */
-      /* CompleteClass */
-      override def dockLeft(
-        referenceNode: typings.dockSpawn.dockspawn.DockNode,
-        container: typings.dockSpawn.dockspawn.PanelContainer,
-        ratio: Double
-      ): typings.dockSpawn.dockspawn.DockNode = js.native
-      /** Dock the [container] to the right of the [referenceNode] node */
-      /* CompleteClass */
-      override def dockRight(
-        referenceNode: typings.dockSpawn.dockspawn.DockNode,
-        container: typings.dockSpawn.dockspawn.PanelContainer,
-        ratio: Double
-      ): typings.dockSpawn.dockspawn.DockNode = js.native
-      /** Dock the [container] above the [referenceNode] node */
-      /* CompleteClass */
-      override def dockUp(
-        referenceNode: typings.dockSpawn.dockspawn.DockNode,
-        container: typings.dockSpawn.dockspawn.PanelContainer,
-        ratio: Double
-      ): typings.dockSpawn.dockspawn.DockNode = js.native
-      /* CompleteClass */
-      override def initialize(): Unit = js.native
-      /* CompleteClass */
-      override def invalidate(): Unit = js.native
-      /* CompleteClass */
-      override def loadState(state: String): Unit = js.native
-      /* CompleteClass */
-      override def rebuildLayout(node: typings.dockSpawn.dockspawn.DockNode): Unit = js.native
-      /* CompleteClass */
-      override def resize(width: Double, height: Double): Unit = js.native
-      /* CompleteClass */
-      override def resumeLayout(): Unit = js.native
-      /* CompleteClass */
-      override def saveState(): String = js.native
-      /**
-        * Reset the dock model. This happens when state is loaded from JSON.
-        */
-      /* CompleteClass */
-      override def setModel(model: typings.dockSpawn.dockspawn.DockModel): Unit = js.native
-      /* CompleteClass */
-      override def setRootNode(node: typings.dockSpawn.dockspawn.DockNode): Unit = js.native
-      /* CompleteClass */
-      override def suspendLayout(): Unit = js.native
     }
     
     @js.native
     class DockManagerContext protected ()
       extends typings.dockSpawn.dockspawn.DockManagerContext {
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
-      /* CompleteClass */
-      override var dockManager: typings.dockSpawn.dockspawn.DockManager = js.native
-      /* CompleteClass */
-      override var documentManagerView: typings.dockSpawn.dockspawn.DocumentManagerContainer = js.native
-      /* CompleteClass */
-      override var model: typings.dockSpawn.dockspawn.DockModel = js.native
     }
     
     @js.native
     class DockModel ()
-      extends typings.dockSpawn.dockspawn.DockModel {
-      /* CompleteClass */
-      override var documentManagerNode: typings.dockSpawn.dockspawn.DockNode = js.native
-      /* CompleteClass */
-      override var rootNode: typings.dockSpawn.dockspawn.DockNode = js.native
-    }
+      extends typings.dockSpawn.dockspawn.DockModel
     
     @js.native
     class DockNode protected ()
       extends typings.dockSpawn.dockspawn.DockNode {
       def this(container: typings.dockSpawn.dockspawn.PanelContainer) = this()
-      /* CompleteClass */
-      override def detachFromParent(): Unit = js.native
     }
     
     /**
@@ -157,24 +57,6 @@ object global extends js.Object {
     class DocumentManagerContainer protected ()
       extends typings.dockSpawn.dockspawn.DocumentManagerContainer {
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
-      /* CompleteClass */
-      override var containerType: String = js.native
-      /* CompleteClass */
-      override var dockManager: typings.dockSpawn.dockspawn.DockManager = js.native
-      /* CompleteClass */
-      override var element: HTMLDivElement = js.native
-      /* CompleteClass */
-      override var minimumAllowedChildNodes: Double = js.native
-      /* CompleteClass */
-      override var name: String = js.native
-      /* CompleteClass */
-      override var selectedTab: typings.dockSpawn.dockspawn.TabPage = js.native
-      /* CompleteClass */
-      override var tabHost: typings.dockSpawn.dockspawn.TabHost = js.native
-      /* CompleteClass */
-      override var tabOrientation: TabStripDirection = js.native
-      /* CompleteClass */
-      override def saveState(state: String): Unit = js.native
     }
     
     @js.native
@@ -182,20 +64,6 @@ object global extends js.Object {
       extends typings.dockSpawn.dockspawn.FillDockContainer {
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
       def this(dockManager: typings.dockSpawn.dockspawn.DockManager, tabStripDirection: TabStripDirection) = this()
-      /* CompleteClass */
-      override var containerType: String = js.native
-      /* CompleteClass */
-      override var dockManager: typings.dockSpawn.dockspawn.DockManager = js.native
-      /* CompleteClass */
-      override var element: HTMLDivElement = js.native
-      /* CompleteClass */
-      override var minimumAllowedChildNodes: Double = js.native
-      /* CompleteClass */
-      override var name: String = js.native
-      /* CompleteClass */
-      override var tabHost: typings.dockSpawn.dockspawn.TabHost = js.native
-      /* CompleteClass */
-      override var tabOrientation: TabStripDirection = js.native
     }
     
     @js.native
@@ -203,14 +71,6 @@ object global extends js.Object {
       extends typings.dockSpawn.dockspawn.PanelContainer {
       def this(element: HTMLElement, dockManager: typings.dockSpawn.dockspawn.DockManager) = this()
       def this(element: HTMLElement, dockManager: typings.dockSpawn.dockspawn.DockManager, title: String) = this()
-      /* CompleteClass */
-      override var height: Double = js.native
-      /* CompleteClass */
-      override var width: Double = js.native
-      /* CompleteClass */
-      override def setTitle(title: String): Unit = js.native
-      /* CompleteClass */
-      override def setTitleIcon(iconName: String): Unit = js.native
     }
     
     /**
@@ -221,28 +81,8 @@ object global extends js.Object {
     class TabHost ()
       extends typings.dockSpawn.dockspawn.TabHost {
       def this(tabStripDirection: TabStripDirection) = this()
+      def this(tabStripDirection: js.UndefOr[scala.Nothing], displayCloseButton: Boolean) = this()
       def this(tabStripDirection: TabStripDirection, displayCloseButton: Boolean) = this()
-      /* CompleteClass */
-      override var contentElement: HTMLDivElement = js.native
-      /* CompleteClass */
-      override var displayCloseButton: Boolean = js.native
-      /* CompleteClass */
-      override var hostElement: HTMLDivElement = js.native
-      /* CompleteClass */
-      override var pages: js.Array[typings.dockSpawn.dockspawn.TabPage] = js.native
-      /* CompleteClass */
-      override var separatorElement: HTMLDivElement = js.native
-      /* CompleteClass */
-      override var tabListElement: HTMLDivElement = js.native
-      /* CompleteClass */
-      override var tabStripDirection: TabStripDirection = js.native
-      /** Set the selected TabPage. */
-      /* CompleteClass */
-      override def onTabPageSelected(page: typings.dockSpawn.dockspawn.TabPage): Unit = js.native
-      /* CompleteClass */
-      override def resize(width: Double, height: Double): Unit = js.native
-      /* CompleteClass */
-      override def setActiveTab(container: typings.dockSpawn.dockspawn.PanelContainer): Unit = js.native
     }
     
     @js.native

@@ -11,8 +11,8 @@ Create and parse HTTP Content-Type header
 | Full name          | content-type |
 | Keywords           | content-type, http, req, res, rfc7231 |
 | # releases         | 1 |
-| # dependents       | 472 |
-| # downloads        | 408417146 |
+| # dependents       | 487 |
+| # downloads        | 431791862 |
 | # stars            | 13 |
 
 ## Links

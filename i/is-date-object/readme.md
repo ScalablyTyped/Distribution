@@ -10,9 +10,9 @@ Is this value a JS Date object? This module works cross-realm/iframe, and despit
 | ------------------ | :-------------: |
 | Full name          | is-date-object |
 | Keywords           | Date, ES6, toStringTag, @@toStringTag, Date object |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 45 |
-| # downloads        | 360453995 |
+| # downloads        | 374883647 |
 | # stars            | 2 |
 
 ## Links

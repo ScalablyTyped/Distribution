@@ -1,7 +1,5 @@
 package typings.phaser.global.spine.webgl
 
-import typings.phaser.spine.TextureFilter
-import typings.phaser.spine.TextureWrap
 import typings.std.HTMLImageElement
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
@@ -20,17 +18,5 @@ class GLTexture protected ()
     useMipMaps: Boolean
   ) = this()
   def this(context: WebGLRenderingContext, image: HTMLImageElement, useMipMaps: Boolean) = this()
-  /* CompleteClass */
-  override var _image: HTMLImageElement = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def getImage(): HTMLImageElement = js.native
-  /* CompleteClass */
-  override def restore(): Unit = js.native
-  /* CompleteClass */
-  override def setFilters(minFilter: TextureFilter, magFilter: TextureFilter): Unit = js.native
-  /* CompleteClass */
-  override def setWraps(uWrap: TextureWrap, vWrap: TextureWrap): Unit = js.native
 }
 

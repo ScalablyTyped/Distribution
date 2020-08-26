@@ -4,29 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IMapBoundsOptions extends IMapPositionOptions {
-  var preciseZoom: js.UndefOr[Boolean] = js.undefined
-  var zoomMargin: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.undefined
+  var preciseZoom: js.UndefOr[Boolean] = js.native
+  var zoomMargin: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.native
 }
 
 object IMapBoundsOptions {
   @scala.inline
-  def apply(
-    checkZoomRange: js.UndefOr[Boolean] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    preciseZoom: js.UndefOr[Boolean] = js.undefined,
-    timingFunction: String = null,
-    useMapMargin: js.UndefOr[Boolean] = js.undefined,
-    zoomMargin: js.Array[js.Array[Double] | Double] = null
-  ): IMapBoundsOptions = {
+  def apply(): IMapBoundsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkZoomRange)) __obj.updateDynamic("checkZoomRange")(checkZoomRange.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preciseZoom)) __obj.updateDynamic("preciseZoom")(preciseZoom.get.asInstanceOf[js.Any])
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.get.asInstanceOf[js.Any])
-    if (zoomMargin != null) __obj.updateDynamic("zoomMargin")(zoomMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapBoundsOptions]
   }
+  @scala.inline
+  implicit class IMapBoundsOptionsOps[Self <: IMapBoundsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPreciseZoom(value: Boolean): Self = this.set("preciseZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreciseZoom: Self = this.set("preciseZoom", js.undefined)
+    @scala.inline
+    def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = this.set("zoomMargin", js.Array(value :_*))
+    @scala.inline
+    def setZoomMargin(value: js.Array[js.Array[Double] | Double]): Self = this.set("zoomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomMargin: Self = this.set("zoomMargin", js.undefined)
+  }
+  
 }
 

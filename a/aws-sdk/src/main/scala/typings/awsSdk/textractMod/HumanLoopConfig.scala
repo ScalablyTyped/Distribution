@@ -22,14 +22,30 @@ trait HumanLoopConfig extends js.Object {
 
 object HumanLoopConfig {
   @scala.inline
-  def apply(
-    FlowDefinitionArn: FlowDefinitionArn,
-    HumanLoopName: HumanLoopName,
-    DataAttributes: HumanLoopDataAttributes = null
-  ): HumanLoopConfig = {
+  def apply(FlowDefinitionArn: FlowDefinitionArn, HumanLoopName: HumanLoopName): HumanLoopConfig = {
     val __obj = js.Dynamic.literal(FlowDefinitionArn = FlowDefinitionArn.asInstanceOf[js.Any], HumanLoopName = HumanLoopName.asInstanceOf[js.Any])
-    if (DataAttributes != null) __obj.updateDynamic("DataAttributes")(DataAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumanLoopConfig]
   }
+  @scala.inline
+  implicit class HumanLoopConfigOps[Self <: HumanLoopConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = this.set("FlowDefinitionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHumanLoopName(value: HumanLoopName): Self = this.set("HumanLoopName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataAttributes(value: HumanLoopDataAttributes): Self = this.set("DataAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataAttributes: Self = this.set("DataAttributes", js.undefined)
+  }
+  
 }
 

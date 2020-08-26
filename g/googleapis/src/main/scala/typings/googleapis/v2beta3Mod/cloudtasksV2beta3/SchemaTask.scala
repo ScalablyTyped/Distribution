@@ -95,30 +95,62 @@ trait SchemaTask extends js.Object {
 
 object SchemaTask {
   @scala.inline
-  def apply(
-    appEngineHttpRequest: SchemaAppEngineHttpRequest = null,
-    createTime: String = null,
-    dispatchCount: js.UndefOr[Double] = js.undefined,
-    dispatchDeadline: String = null,
-    firstAttempt: SchemaAttempt = null,
-    lastAttempt: SchemaAttempt = null,
-    name: String = null,
-    responseCount: js.UndefOr[Double] = js.undefined,
-    scheduleTime: String = null,
-    view: String = null
-  ): SchemaTask = {
+  def apply(): SchemaTask = {
     val __obj = js.Dynamic.literal()
-    if (appEngineHttpRequest != null) __obj.updateDynamic("appEngineHttpRequest")(appEngineHttpRequest.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(dispatchCount)) __obj.updateDynamic("dispatchCount")(dispatchCount.get.asInstanceOf[js.Any])
-    if (dispatchDeadline != null) __obj.updateDynamic("dispatchDeadline")(dispatchDeadline.asInstanceOf[js.Any])
-    if (firstAttempt != null) __obj.updateDynamic("firstAttempt")(firstAttempt.asInstanceOf[js.Any])
-    if (lastAttempt != null) __obj.updateDynamic("lastAttempt")(lastAttempt.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseCount)) __obj.updateDynamic("responseCount")(responseCount.get.asInstanceOf[js.Any])
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTask]
   }
+  @scala.inline
+  implicit class SchemaTaskOps[Self <: SchemaTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppEngineHttpRequest(value: SchemaAppEngineHttpRequest): Self = this.set("appEngineHttpRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppEngineHttpRequest: Self = this.set("appEngineHttpRequest", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDispatchCount(value: Double): Self = this.set("dispatchCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDispatchCount: Self = this.set("dispatchCount", js.undefined)
+    @scala.inline
+    def setDispatchDeadline(value: String): Self = this.set("dispatchDeadline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDispatchDeadline: Self = this.set("dispatchDeadline", js.undefined)
+    @scala.inline
+    def setFirstAttempt(value: SchemaAttempt): Self = this.set("firstAttempt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstAttempt: Self = this.set("firstAttempt", js.undefined)
+    @scala.inline
+    def setLastAttempt(value: SchemaAttempt): Self = this.set("lastAttempt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAttempt: Self = this.set("lastAttempt", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResponseCount(value: Double): Self = this.set("responseCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseCount: Self = this.set("responseCount", js.undefined)
+    @scala.inline
+    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+    @scala.inline
+    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

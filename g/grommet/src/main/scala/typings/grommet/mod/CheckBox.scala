@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "CheckBox")
+@JSImport("grommet/es6", "CheckBox")
 @js.native
 object CheckBox extends TopLevel[
       FC[

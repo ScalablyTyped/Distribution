@@ -10,9 +10,9 @@ Lightweight React countdown timer component with color and progress animation ba
 | ------------------ | :-------------: |
 | Full name          | react-countdown-circle-timer |
 | Keywords           | React, Countdown, Timer, Circle, Clock, SVG |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 1056 |
+| # downloads        | 1701 |
 | # stars            | 0 |
 
 ## Links

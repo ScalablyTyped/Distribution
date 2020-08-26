@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "material__progress-indicator"
-version := "5.1.0-e4e9e8"
-scalaVersion := "2.13.2"
+version := "7.0.0-79aec3"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -449,9 +449,247 @@ trait INBlas
   def dzasum(n: Double, x: Float64Array, incx: Double): Double = js.native
   def dznrm2(n: Double, x: Float64Array, incx: Double): Double = js.native
   def gbmv(a: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double,
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double,
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(a: FloatArray, x: FloatArray, y: FloatArray, kl: js.UndefOr[scala.Nothing], ku: Double): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double,
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: Double,
+    alpha: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: Double,
+    alpha: Double,
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: Double,
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: js.UndefOr[scala.Nothing],
+    ku: Double,
+    alpha: Double,
+    beta: Double,
+    trans: MatrixTrans
+  ): Unit = js.native
   def gbmv(a: FloatArray, x: FloatArray, y: FloatArray, kl: Double): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double,
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double,
+    trans: MatrixTrans
+  ): Unit = js.native
   def gbmv(a: FloatArray, x: FloatArray, y: FloatArray, kl: Double, ku: Double): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double,
+    trans: MatrixTrans
+  ): Unit = js.native
   def gbmv(a: FloatArray, x: FloatArray, y: FloatArray, kl: Double, ku: Double, alpha: Double): Unit = js.native
+  def gbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    kl: Double,
+    ku: Double,
+    alpha: Double,
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
   def gbmv(a: FloatArray, x: FloatArray, y: FloatArray, kl: Double, ku: Double, alpha: Double, beta: Double): Unit = js.native
   def gbmv(
     a: FloatArray,
@@ -464,6 +702,86 @@ trait INBlas
     trans: MatrixTrans
   ): Unit = js.native
   def gemm(a: FloatArray, b: FloatArray, c: FloatArray, m: Double, n: Double, k: Double): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: js.UndefOr[scala.Nothing],
+    transb: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: js.UndefOr[scala.Nothing],
+    transb: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: js.UndefOr[scala.Nothing],
+    transb: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: js.UndefOr[scala.Nothing],
+    transb: MatrixTrans
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: js.UndefOr[scala.Nothing],
+    transb: MatrixTrans,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: js.UndefOr[scala.Nothing],
+    transb: MatrixTrans,
+    alpha: Double
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: js.UndefOr[scala.Nothing],
+    transb: MatrixTrans,
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
   def gemm(a: FloatArray, b: FloatArray, c: FloatArray, m: Double, n: Double, k: Double, transa: MatrixTrans): Unit = js.native
   def gemm(
     a: FloatArray,
@@ -473,7 +791,54 @@ trait INBlas
     n: Double,
     k: Double,
     transa: MatrixTrans,
+    transb: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: MatrixTrans,
+    transb: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: MatrixTrans,
+    transb: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: MatrixTrans,
     transb: MatrixTrans
+  ): Unit = js.native
+  def gemm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    k: Double,
+    transa: MatrixTrans,
+    transb: MatrixTrans,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
   ): Unit = js.native
   def gemm(
     a: FloatArray,
@@ -499,7 +864,32 @@ trait INBlas
     beta: Double
   ): Unit = js.native
   def gemv(a: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
+  def gemv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def gemv(a: FloatArray, x: FloatArray, y: FloatArray, alpha: js.UndefOr[scala.Nothing], beta: Double): Unit = js.native
+  def gemv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double,
+    trans: MatrixTrans
+  ): Unit = js.native
   def gemv(a: FloatArray, x: FloatArray, y: FloatArray, alpha: Double): Unit = js.native
+  def gemv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    alpha: Double,
+    beta: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
   def gemv(a: FloatArray, x: FloatArray, y: FloatArray, alpha: Double, beta: Double): Unit = js.native
   def gemv(a: FloatArray, x: FloatArray, y: FloatArray, alpha: Double, beta: Double, trans: MatrixTrans): Unit = js.native
   def ger(a: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
@@ -517,8 +907,96 @@ trait INBlas
   def sasum(n: Double, x: Float32Array, incx: Double): Double = js.native
   def saxpy(n: Double, alpha: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double): Unit = js.native
   def sbmv(a: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def sbmv(a: FloatArray, x: FloatArray, y: FloatArray, k: js.UndefOr[scala.Nothing], uplo: MatrixUpperLower): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    alpha: Double
+  ): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
   def sbmv(a: FloatArray, x: FloatArray, y: FloatArray, k: Double): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
   def sbmv(a: FloatArray, x: FloatArray, y: FloatArray, k: Double, uplo: MatrixUpperLower): Unit = js.native
+  def sbmv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    k: Double,
+    uplo: MatrixUpperLower,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
   def sbmv(a: FloatArray, x: FloatArray, y: FloatArray, k: Double, uplo: MatrixUpperLower, alpha: Double): Unit = js.native
   def sbmv(
     a: FloatArray,
@@ -590,13 +1068,40 @@ trait INBlas
   ): Unit = js.native
   def snrm2(n: Double, x: Float32Array, incx: Double): Double = js.native
   def spmv(ap: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
+  def spmv(
+    ap: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def spmv(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: js.UndefOr[scala.Nothing], alpha: Double): Unit = js.native
+  def spmv(
+    ap: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
   def spmv(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower): Unit = js.native
+  def spmv(
+    ap: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    uplo: MatrixUpperLower,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
   def spmv(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower, alpha: Double): Unit = js.native
   def spmv(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower, alpha: Double, beta: Double): Unit = js.native
   def spr(ap: FloatArray, x: FloatArray): Unit = js.native
+  def spr(ap: FloatArray, x: FloatArray, uplo: js.UndefOr[scala.Nothing], alpha: Double): Unit = js.native
   def spr(ap: FloatArray, x: FloatArray, uplo: MatrixUpperLower): Unit = js.native
   def spr(ap: FloatArray, x: FloatArray, uplo: MatrixUpperLower, alpha: Double): Unit = js.native
   def spr2(ap: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
+  def spr2(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: js.UndefOr[scala.Nothing], alpha: Double): Unit = js.native
   def spr2(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower): Unit = js.native
   def spr2(ap: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower, alpha: Double): Unit = js.native
   def srot(n: Double, x: Float32Array, incx: Double, y: Float32Array, incy: Double, c: Double, s: Double): Unit = js.native
@@ -800,6 +1305,79 @@ trait INBlas
   ): Unit = js.native
   def swap(x: FloatArray, y: FloatArray): Unit = js.native
   def symm(a: FloatArray, b: FloatArray, c: FloatArray, m: Double, n: Double): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    alpha: Double
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
   def symm(a: FloatArray, b: FloatArray, c: FloatArray, m: Double, n: Double, side: MatrixLeftRight): Unit = js.native
   def symm(
     a: FloatArray,
@@ -808,7 +1386,50 @@ trait INBlas
     m: Double,
     n: Double,
     side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
     uplo: MatrixUpperLower
+  ): Unit = js.native
+  def symm(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: MatrixUpperLower,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
   ): Unit = js.native
   def symm(
     a: FloatArray,
@@ -832,16 +1453,116 @@ trait INBlas
     beta: Double
   ): Unit = js.native
   def symv(a: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
+  def symv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def symv(a: FloatArray, x: FloatArray, y: FloatArray, uplo: js.UndefOr[scala.Nothing], alpha: Double): Unit = js.native
+  def symv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
   def symv(a: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower): Unit = js.native
+  def symv(
+    a: FloatArray,
+    x: FloatArray,
+    y: FloatArray,
+    uplo: MatrixUpperLower,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
   def symv(a: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower, alpha: Double): Unit = js.native
   def symv(a: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower, alpha: Double, beta: Double): Unit = js.native
   def syr(a: FloatArray, x: FloatArray): Unit = js.native
+  def syr(a: FloatArray, x: FloatArray, uplo: js.UndefOr[scala.Nothing], alpha: Double): Unit = js.native
   def syr(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower): Unit = js.native
   def syr(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, alpha: Double): Unit = js.native
   def syr2(a: FloatArray, x: FloatArray, y: FloatArray): Unit = js.native
+  def syr2(a: FloatArray, x: FloatArray, y: FloatArray, uplo: js.UndefOr[scala.Nothing], alpha: Double): Unit = js.native
   def syr2(a: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower): Unit = js.native
   def syr2(a: FloatArray, x: FloatArray, y: FloatArray, uplo: MatrixUpperLower, alpha: Double): Unit = js.native
   def syr2k(a: FloatArray, b: FloatArray, c: FloatArray, n: Double, k: Double): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    alpha: Double
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
   def syr2k(a: FloatArray, b: FloatArray, c: FloatArray, n: Double, k: Double, uplo: MatrixUpperLower): Unit = js.native
   def syr2k(
     a: FloatArray,
@@ -850,7 +1571,50 @@ trait INBlas
     n: Double,
     k: Double,
     uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: MatrixUpperLower,
     trans: MatrixTrans
+  ): Unit = js.native
+  def syr2k(
+    a: FloatArray,
+    b: FloatArray,
+    c: FloatArray,
+    n: Double,
+    k: Double,
+    uplo: MatrixUpperLower,
+    trans: MatrixTrans,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
   ): Unit = js.native
   def syr2k(
     a: FloatArray,
@@ -874,8 +1638,113 @@ trait INBlas
     beta: Double
   ): Unit = js.native
   def syrk(a: FloatArray, c: FloatArray, n: FloatArray, k: Double): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans
+  ): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    alpha: Double
+  ): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
   def syrk(a: FloatArray, c: FloatArray, n: FloatArray, k: Double, uplo: MatrixUpperLower): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    beta: Double
+  ): Unit = js.native
   def syrk(a: FloatArray, c: FloatArray, n: FloatArray, k: Double, uplo: MatrixUpperLower, trans: MatrixTrans): Unit = js.native
+  def syrk(
+    a: FloatArray,
+    c: FloatArray,
+    n: FloatArray,
+    k: Double,
+    uplo: MatrixUpperLower,
+    trans: MatrixTrans,
+    alpha: js.UndefOr[scala.Nothing],
+    beta: Double
+  ): Unit = js.native
   def syrk(
     a: FloatArray,
     c: FloatArray,
@@ -896,23 +1765,338 @@ trait INBlas
     beta: Double
   ): Unit = js.native
   def tbmv(a: FloatArray, x: FloatArray): Unit = js.native
+  def tbmv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def tbmv(a: FloatArray, x: FloatArray, uplo: js.UndefOr[scala.Nothing], trans: MatrixTrans): Unit = js.native
+  def tbmv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
   def tbmv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower): Unit = js.native
+  def tbmv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
   def tbmv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans): Unit = js.native
   def tbmv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans, diag: MatrixUnit): Unit = js.native
   def tbsv(a: FloatArray, x: FloatArray): Unit = js.native
+  def tbsv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def tbsv(a: FloatArray, x: FloatArray, uplo: js.UndefOr[scala.Nothing], trans: MatrixTrans): Unit = js.native
+  def tbsv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
   def tbsv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower): Unit = js.native
+  def tbsv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
   def tbsv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans): Unit = js.native
   def tbsv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans, diag: MatrixUnit): Unit = js.native
   def tpmv(ap: FloatArray, x: FloatArray): Unit = js.native
+  def tpmv(
+    ap: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def tpmv(ap: FloatArray, x: FloatArray, uplo: js.UndefOr[scala.Nothing], trans: MatrixTrans): Unit = js.native
+  def tpmv(
+    ap: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
   def tpmv(ap: FloatArray, x: FloatArray, uplo: MatrixUpperLower): Unit = js.native
+  def tpmv(
+    ap: FloatArray,
+    x: FloatArray,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
   def tpmv(ap: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans): Unit = js.native
   def tpmv(ap: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans, diag: MatrixUnit): Unit = js.native
   def tpsv(ap: FloatArray, x: FloatArray): Unit = js.native
+  def tpsv(
+    ap: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def tpsv(ap: FloatArray, x: FloatArray, uplo: js.UndefOr[scala.Nothing], trans: MatrixTrans): Unit = js.native
+  def tpsv(
+    ap: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
   def tpsv(ap: FloatArray, x: FloatArray, uplo: MatrixUpperLower): Unit = js.native
+  def tpsv(
+    ap: FloatArray,
+    x: FloatArray,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
   def tpsv(ap: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans): Unit = js.native
   def tpsv(ap: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans, diag: MatrixUnit): Unit = js.native
   def trmm(a: FloatArray, b: FloatArray, m: Double, n: Double): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans,
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans,
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
   def trmm(a: FloatArray, b: FloatArray, m: Double, n: Double, side: MatrixLeftRight): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
   def trmm(a: FloatArray, b: FloatArray, m: Double, n: Double, side: MatrixLeftRight, uplo: MatrixUpperLower): Unit = js.native
   def trmm(
     a: FloatArray,
@@ -921,7 +2105,50 @@ trait INBlas
     n: Double,
     side: MatrixLeftRight,
     uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: MatrixUpperLower,
     transa: MatrixTrans
+  ): Unit = js.native
+  def trmm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans,
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
   ): Unit = js.native
   def trmm(
     a: FloatArray,
@@ -945,11 +2172,260 @@ trait INBlas
     alpha: Double
   ): Unit = js.native
   def trmv(a: FloatArray, x: FloatArray): Unit = js.native
+  def trmv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trmv(a: FloatArray, x: FloatArray, uplo: js.UndefOr[scala.Nothing], trans: MatrixTrans): Unit = js.native
+  def trmv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
   def trmv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower): Unit = js.native
+  def trmv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
   def trmv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans): Unit = js.native
   def trmv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans, diag: MatrixUnit): Unit = js.native
   def trsm(a: FloatArray, b: FloatArray, m: Double, n: Double): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans,
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: js.UndefOr[scala.Nothing],
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans,
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
   def trsm(a: FloatArray, b: FloatArray, m: Double, n: Double, side: MatrixLeftRight): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: js.UndefOr[scala.Nothing],
+    transa: MatrixTrans,
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
   def trsm(a: FloatArray, b: FloatArray, m: Double, n: Double, side: MatrixLeftRight, uplo: MatrixUpperLower): Unit = js.native
   def trsm(
     a: FloatArray,
@@ -958,7 +2434,50 @@ trait INBlas
     n: Double,
     side: MatrixLeftRight,
     uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: MatrixUpperLower,
+    transa: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit,
+    alpha: Double
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: MatrixUpperLower,
     transa: MatrixTrans
+  ): Unit = js.native
+  def trsm(
+    a: FloatArray,
+    b: FloatArray,
+    m: Double,
+    n: Double,
+    side: MatrixLeftRight,
+    uplo: MatrixUpperLower,
+    transa: MatrixTrans,
+    diag: js.UndefOr[scala.Nothing],
+    alpha: Double
   ): Unit = js.native
   def trsm(
     a: FloatArray,
@@ -982,7 +2501,29 @@ trait INBlas
     alpha: Double
   ): Unit = js.native
   def trsv(a: FloatArray, x: FloatArray): Unit = js.native
+  def trsv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
+  def trsv(a: FloatArray, x: FloatArray, uplo: js.UndefOr[scala.Nothing], trans: MatrixTrans): Unit = js.native
+  def trsv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: js.UndefOr[scala.Nothing],
+    trans: MatrixTrans,
+    diag: MatrixUnit
+  ): Unit = js.native
   def trsv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower): Unit = js.native
+  def trsv(
+    a: FloatArray,
+    x: FloatArray,
+    uplo: MatrixUpperLower,
+    trans: js.UndefOr[scala.Nothing],
+    diag: MatrixUnit
+  ): Unit = js.native
   def trsv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans): Unit = js.native
   def trsv(a: FloatArray, x: FloatArray, uplo: MatrixUpperLower, trans: MatrixTrans, diag: MatrixUnit): Unit = js.native
   def zaxpy(n: Double, alpha: Float64Array, x: Float64Array, incx: Double, y: Float64Array, incy: Double): Unit = js.native

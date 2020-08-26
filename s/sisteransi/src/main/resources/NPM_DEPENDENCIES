@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sisteransi" : "1.0.4"
+      "sisteransi" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "sisteransi" : "1.0.4"
+      "sisteransi" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

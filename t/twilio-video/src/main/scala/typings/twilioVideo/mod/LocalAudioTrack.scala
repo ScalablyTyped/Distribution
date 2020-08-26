@@ -1,6 +1,7 @@
 package typings.twilioVideo.mod
 
 import typings.std.MediaStreamTrack
+import typings.std.MediaTrackConstraints
 import typings.twilioVideo.mod.Track.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,6 +19,8 @@ class LocalAudioTrack protected ()
   def disable(): LocalAudioTrack = js.native
   def enable(): LocalAudioTrack = js.native
   def enable(enabled: Boolean): LocalAudioTrack = js.native
+  def restart(): js.Promise[Unit] = js.native
+  def restart(constraints: MediaTrackConstraints): js.Promise[Unit] = js.native
   def stop(): LocalAudioTrack = js.native
 }
 

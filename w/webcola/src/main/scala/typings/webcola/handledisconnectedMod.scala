@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object handledisconnectedMod extends js.Object {
   def applyPacking(graphs: js.Array[_], w: js.Any, h: js.Any, node_size: js.Any): Unit = js.native
+  def applyPacking(
+    graphs: js.Array[_],
+    w: js.Any,
+    h: js.Any,
+    node_size: js.Any,
+    desired_ratio: js.UndefOr[scala.Nothing],
+    centerGraph: Boolean
+  ): Unit = js.native
   def applyPacking(graphs: js.Array[_], w: js.Any, h: js.Any, node_size: js.Any, desired_ratio: Double): Unit = js.native
   def applyPacking(
     graphs: js.Array[_],

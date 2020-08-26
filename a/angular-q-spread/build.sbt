@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "angular-q-spread"
-version := "0.0-unknown-dt-20200515Z-3c44fe"
-scalaVersion := "2.13.2"
+version := "0.0-unknown-dt-20200515Z-54f700"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

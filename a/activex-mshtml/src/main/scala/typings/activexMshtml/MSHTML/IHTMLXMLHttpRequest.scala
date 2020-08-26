@@ -19,6 +19,13 @@ trait IHTMLXMLHttpRequest extends js.Object {
   def getAllResponseHeaders(): String = js.native
   def getResponseHeader(bstrHeader: String): String = js.native
   def open(bstrMethod: String, bstrURL: String, varAsync: js.Any): Unit = js.native
+  def open(
+    bstrMethod: String,
+    bstrURL: String,
+    varAsync: js.Any,
+    varUser: js.UndefOr[scala.Nothing],
+    varPassword: js.Any
+  ): Unit = js.native
   def open(bstrMethod: String, bstrURL: String, varAsync: js.Any, varUser: js.Any): Unit = js.native
   def open(bstrMethod: String, bstrURL: String, varAsync: js.Any, varUser: js.Any, varPassword: js.Any): Unit = js.native
   def send(): Unit = js.native

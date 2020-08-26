@@ -78,44 +78,94 @@ trait Subnet extends js.Object {
 
 object Subnet {
   @scala.inline
-  def apply(
-    AssignIpv6AddressOnCreation: js.UndefOr[Boolean] = js.undefined,
-    AvailabilityZone: String = null,
-    AvailabilityZoneId: String = null,
-    AvailableIpAddressCount: js.UndefOr[Integer] = js.undefined,
-    CidrBlock: String = null,
-    CustomerOwnedIpv4Pool: CoipPoolId = null,
-    DefaultForAz: js.UndefOr[Boolean] = js.undefined,
-    Ipv6CidrBlockAssociationSet: SubnetIpv6CidrBlockAssociationSet = null,
-    MapCustomerOwnedIpOnLaunch: js.UndefOr[Boolean] = js.undefined,
-    MapPublicIpOnLaunch: js.UndefOr[Boolean] = js.undefined,
-    OutpostArn: String = null,
-    OwnerId: String = null,
-    State: SubnetState = null,
-    SubnetArn: String = null,
-    SubnetId: String = null,
-    Tags: TagList = null,
-    VpcId: String = null
-  ): Subnet = {
+  def apply(): Subnet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AssignIpv6AddressOnCreation)) __obj.updateDynamic("AssignIpv6AddressOnCreation")(AssignIpv6AddressOnCreation.get.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (AvailabilityZoneId != null) __obj.updateDynamic("AvailabilityZoneId")(AvailabilityZoneId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AvailableIpAddressCount)) __obj.updateDynamic("AvailableIpAddressCount")(AvailableIpAddressCount.get.asInstanceOf[js.Any])
-    if (CidrBlock != null) __obj.updateDynamic("CidrBlock")(CidrBlock.asInstanceOf[js.Any])
-    if (CustomerOwnedIpv4Pool != null) __obj.updateDynamic("CustomerOwnedIpv4Pool")(CustomerOwnedIpv4Pool.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultForAz)) __obj.updateDynamic("DefaultForAz")(DefaultForAz.get.asInstanceOf[js.Any])
-    if (Ipv6CidrBlockAssociationSet != null) __obj.updateDynamic("Ipv6CidrBlockAssociationSet")(Ipv6CidrBlockAssociationSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(MapCustomerOwnedIpOnLaunch)) __obj.updateDynamic("MapCustomerOwnedIpOnLaunch")(MapCustomerOwnedIpOnLaunch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MapPublicIpOnLaunch)) __obj.updateDynamic("MapPublicIpOnLaunch")(MapPublicIpOnLaunch.get.asInstanceOf[js.Any])
-    if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (SubnetArn != null) __obj.updateDynamic("SubnetArn")(SubnetArn.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subnet]
   }
+  @scala.inline
+  implicit class SubnetOps[Self <: Subnet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignIpv6AddressOnCreation(value: Boolean): Self = this.set("AssignIpv6AddressOnCreation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignIpv6AddressOnCreation: Self = this.set("AssignIpv6AddressOnCreation", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setAvailabilityZoneId(value: String): Self = this.set("AvailabilityZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZoneId: Self = this.set("AvailabilityZoneId", js.undefined)
+    @scala.inline
+    def setAvailableIpAddressCount(value: Integer): Self = this.set("AvailableIpAddressCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableIpAddressCount: Self = this.set("AvailableIpAddressCount", js.undefined)
+    @scala.inline
+    def setCidrBlock(value: String): Self = this.set("CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlock: Self = this.set("CidrBlock", js.undefined)
+    @scala.inline
+    def setCustomerOwnedIpv4Pool(value: CoipPoolId): Self = this.set("CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerOwnedIpv4Pool: Self = this.set("CustomerOwnedIpv4Pool", js.undefined)
+    @scala.inline
+    def setDefaultForAz(value: Boolean): Self = this.set("DefaultForAz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultForAz: Self = this.set("DefaultForAz", js.undefined)
+    @scala.inline
+    def setIpv6CidrBlockAssociationSetVarargs(value: SubnetIpv6CidrBlockAssociation*): Self = this.set("Ipv6CidrBlockAssociationSet", js.Array(value :_*))
+    @scala.inline
+    def setIpv6CidrBlockAssociationSet(value: SubnetIpv6CidrBlockAssociationSet): Self = this.set("Ipv6CidrBlockAssociationSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6CidrBlockAssociationSet: Self = this.set("Ipv6CidrBlockAssociationSet", js.undefined)
+    @scala.inline
+    def setMapCustomerOwnedIpOnLaunch(value: Boolean): Self = this.set("MapCustomerOwnedIpOnLaunch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapCustomerOwnedIpOnLaunch: Self = this.set("MapCustomerOwnedIpOnLaunch", js.undefined)
+    @scala.inline
+    def setMapPublicIpOnLaunch(value: Boolean): Self = this.set("MapPublicIpOnLaunch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapPublicIpOnLaunch: Self = this.set("MapPublicIpOnLaunch", js.undefined)
+    @scala.inline
+    def setOutpostArn(value: String): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setState(value: SubnetState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setSubnetArn(value: String): Self = this.set("SubnetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetArn: Self = this.set("SubnetArn", js.undefined)
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

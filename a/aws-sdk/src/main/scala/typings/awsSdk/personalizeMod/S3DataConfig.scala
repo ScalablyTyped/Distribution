@@ -18,10 +18,28 @@ trait S3DataConfig extends js.Object {
 
 object S3DataConfig {
   @scala.inline
-  def apply(path: S3Location, kmsKeyArn: KmsKeyArn = null): S3DataConfig = {
+  def apply(path: S3Location): S3DataConfig = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DataConfig]
   }
+  @scala.inline
+  implicit class S3DataConfigOps[Self <: S3DataConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: S3Location): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyArn(value: KmsKeyArn): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+  }
+  
 }
 

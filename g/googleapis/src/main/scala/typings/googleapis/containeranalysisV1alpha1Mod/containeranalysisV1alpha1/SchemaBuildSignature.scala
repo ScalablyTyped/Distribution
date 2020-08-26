@@ -42,13 +42,38 @@ trait SchemaBuildSignature extends js.Object {
 
 object SchemaBuildSignature {
   @scala.inline
-  def apply(keyId: String = null, keyType: String = null, publicKey: String = null, signature: String = null): SchemaBuildSignature = {
+  def apply(): SchemaBuildSignature = {
     val __obj = js.Dynamic.literal()
-    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
-    if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildSignature]
   }
+  @scala.inline
+  implicit class SchemaBuildSignatureOps[Self <: SchemaBuildSignature] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: String): Self = this.set("keyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("keyId", js.undefined)
+    @scala.inline
+    def setKeyType(value: String): Self = this.set("keyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyType: Self = this.set("keyType", js.undefined)
+    @scala.inline
+    def setPublicKey(value: String): Self = this.set("publicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+    @scala.inline
+    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+  }
+  
 }
 

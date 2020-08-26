@@ -24,17 +24,15 @@ class DatabaseConstraint protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FDatabaseConstraint: IModel = js.native
-  def attribute(): js.Any = js.native
-  def attribute(newValue: IAttribute): js.Any = js.native
+  def attribute: IAttribute | Null = js.native
   def attributeQualifiedName: String | Null = js.native
-  @JSName("attribute")
-  def attribute_Union: IAttribute | Null = js.native
+  def attribute_=(newValue: IAttribute | Null): Unit = js.native
   def containerAsDatabaseSourceBase: DatabaseSourceBase = js.native
   def containerAsSelectorDatabaseSource: SelectorDatabaseSource = js.native
   def operator: DatabaseConstraintOperator = js.native
-  def operator(newValue: DatabaseConstraintOperator): js.Any = js.native
+  def operator_=(newValue: DatabaseConstraintOperator): Unit = js.native
   def value: String = js.native
-  def value(newValue: String): js.Any = js.native
+  def value_=(newValue: String): Unit = js.native
 }
 
 /* static members */

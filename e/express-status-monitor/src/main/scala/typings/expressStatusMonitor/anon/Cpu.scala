@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Cpu extends js.Object {
-  var cpu: js.UndefOr[Boolean] = js.undefined
-  var load: js.UndefOr[Boolean] = js.undefined
-  var mem: js.UndefOr[Boolean] = js.undefined
-  var responseTime: js.UndefOr[Boolean] = js.undefined
-  var rps: js.UndefOr[Boolean] = js.undefined
-  var statusCodes: js.UndefOr[Boolean] = js.undefined
+  var cpu: js.UndefOr[Boolean] = js.native
+  var load: js.UndefOr[Boolean] = js.native
+  var mem: js.UndefOr[Boolean] = js.native
+  var responseTime: js.UndefOr[Boolean] = js.native
+  var rps: js.UndefOr[Boolean] = js.native
+  var statusCodes: js.UndefOr[Boolean] = js.native
 }
 
 object Cpu {
   @scala.inline
-  def apply(
-    cpu: js.UndefOr[Boolean] = js.undefined,
-    load: js.UndefOr[Boolean] = js.undefined,
-    mem: js.UndefOr[Boolean] = js.undefined,
-    responseTime: js.UndefOr[Boolean] = js.undefined,
-    rps: js.UndefOr[Boolean] = js.undefined,
-    statusCodes: js.UndefOr[Boolean] = js.undefined
-  ): Cpu = {
+  def apply(): Cpu = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mem)) __obj.updateDynamic("mem")(mem.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseTime)) __obj.updateDynamic("responseTime")(responseTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rps)) __obj.updateDynamic("rps")(rps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusCodes)) __obj.updateDynamic("statusCodes")(statusCodes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cpu]
   }
+  @scala.inline
+  implicit class CpuOps[Self <: Cpu] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCpu(value: Boolean): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setLoad(value: Boolean): Self = this.set("load", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setMem(value: Boolean): Self = this.set("mem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMem: Self = this.set("mem", js.undefined)
+    @scala.inline
+    def setResponseTime(value: Boolean): Self = this.set("responseTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTime: Self = this.set("responseTime", js.undefined)
+    @scala.inline
+    def setRps(value: Boolean): Self = this.set("rps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRps: Self = this.set("rps", js.undefined)
+    @scala.inline
+    def setStatusCodes(value: Boolean): Self = this.set("statusCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCodes: Self = this.set("statusCodes", js.undefined)
+  }
+  
 }
 

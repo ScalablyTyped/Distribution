@@ -50,30 +50,68 @@ trait UpdateSecurityProfileResponse extends js.Object {
 
 object UpdateSecurityProfileResponse {
   @scala.inline
-  def apply(
-    additionalMetricsToRetain: AdditionalMetricsToRetainList = null,
-    additionalMetricsToRetainV2: AdditionalMetricsToRetainV2List = null,
-    alertTargets: AlertTargets = null,
-    behaviors: Behaviors = null,
-    creationDate: Timestamp = null,
-    lastModifiedDate: Timestamp = null,
-    securityProfileArn: SecurityProfileArn = null,
-    securityProfileDescription: SecurityProfileDescription = null,
-    securityProfileName: SecurityProfileName = null,
-    version: js.UndefOr[Version] = js.undefined
-  ): UpdateSecurityProfileResponse = {
+  def apply(): UpdateSecurityProfileResponse = {
     val __obj = js.Dynamic.literal()
-    if (additionalMetricsToRetain != null) __obj.updateDynamic("additionalMetricsToRetain")(additionalMetricsToRetain.asInstanceOf[js.Any])
-    if (additionalMetricsToRetainV2 != null) __obj.updateDynamic("additionalMetricsToRetainV2")(additionalMetricsToRetainV2.asInstanceOf[js.Any])
-    if (alertTargets != null) __obj.updateDynamic("alertTargets")(alertTargets.asInstanceOf[js.Any])
-    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (securityProfileArn != null) __obj.updateDynamic("securityProfileArn")(securityProfileArn.asInstanceOf[js.Any])
-    if (securityProfileDescription != null) __obj.updateDynamic("securityProfileDescription")(securityProfileDescription.asInstanceOf[js.Any])
-    if (securityProfileName != null) __obj.updateDynamic("securityProfileName")(securityProfileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSecurityProfileResponse]
   }
+  @scala.inline
+  implicit class UpdateSecurityProfileResponseOps[Self <: UpdateSecurityProfileResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalMetricsToRetainVarargs(value: BehaviorMetric*): Self = this.set("additionalMetricsToRetain", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalMetricsToRetain(value: AdditionalMetricsToRetainList): Self = this.set("additionalMetricsToRetain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalMetricsToRetain: Self = this.set("additionalMetricsToRetain", js.undefined)
+    @scala.inline
+    def setAdditionalMetricsToRetainV2Varargs(value: MetricToRetain*): Self = this.set("additionalMetricsToRetainV2", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalMetricsToRetainV2(value: AdditionalMetricsToRetainV2List): Self = this.set("additionalMetricsToRetainV2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalMetricsToRetainV2: Self = this.set("additionalMetricsToRetainV2", js.undefined)
+    @scala.inline
+    def setAlertTargets(value: AlertTargets): Self = this.set("alertTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlertTargets: Self = this.set("alertTargets", js.undefined)
+    @scala.inline
+    def setBehaviorsVarargs(value: Behavior*): Self = this.set("behaviors", js.Array(value :_*))
+    @scala.inline
+    def setBehaviors(value: Behaviors): Self = this.set("behaviors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBehaviors: Self = this.set("behaviors", js.undefined)
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: Timestamp): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setSecurityProfileArn(value: SecurityProfileArn): Self = this.set("securityProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityProfileArn: Self = this.set("securityProfileArn", js.undefined)
+    @scala.inline
+    def setSecurityProfileDescription(value: SecurityProfileDescription): Self = this.set("securityProfileDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityProfileDescription: Self = this.set("securityProfileDescription", js.undefined)
+    @scala.inline
+    def setSecurityProfileName(value: SecurityProfileName): Self = this.set("securityProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityProfileName: Self = this.set("securityProfileName", js.undefined)
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

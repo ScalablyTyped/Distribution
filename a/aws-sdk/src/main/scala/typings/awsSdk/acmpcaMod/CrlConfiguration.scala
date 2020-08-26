@@ -26,17 +26,36 @@ trait CrlConfiguration extends js.Object {
 
 object CrlConfiguration {
   @scala.inline
-  def apply(
-    Enabled: Boolean,
-    CustomCname: String253 = null,
-    ExpirationInDays: js.UndefOr[Integer1To5000] = js.undefined,
-    S3BucketName: String3To255 = null
-  ): CrlConfiguration = {
+  def apply(Enabled: Boolean): CrlConfiguration = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-    if (CustomCname != null) __obj.updateDynamic("CustomCname")(CustomCname.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExpirationInDays)) __obj.updateDynamic("ExpirationInDays")(ExpirationInDays.get.asInstanceOf[js.Any])
-    if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrlConfiguration]
   }
+  @scala.inline
+  implicit class CrlConfigurationOps[Self <: CrlConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomCname(value: String253): Self = this.set("CustomCname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomCname: Self = this.set("CustomCname", js.undefined)
+    @scala.inline
+    def setExpirationInDays(value: Integer1To5000): Self = this.set("ExpirationInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationInDays: Self = this.set("ExpirationInDays", js.undefined)
+    @scala.inline
+    def setS3BucketName(value: String3To255): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+  }
+  
 }
 

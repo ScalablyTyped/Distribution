@@ -18,11 +18,30 @@ trait Position extends js.Object {
 
 object Position {
   @scala.inline
-  def apply(Column: js.UndefOr[ColumnNumber] = js.undefined, Line: js.UndefOr[LineNumber] = js.undefined): Position = {
+  def apply(): Position = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Column)) __obj.updateDynamic("Column")(Column.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Line)) __obj.updateDynamic("Line")(Line.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
+  @scala.inline
+  implicit class PositionOps[Self <: Position] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumn(value: ColumnNumber): Self = this.set("Column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumn: Self = this.set("Column", js.undefined)
+    @scala.inline
+    def setLine(value: LineNumber): Self = this.set("Line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("Line", js.undefined)
+  }
+  
 }
 

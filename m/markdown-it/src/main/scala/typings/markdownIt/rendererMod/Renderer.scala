@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Renderer extends js.Object {
   /**
     * Contains render rules for tokens. Can be updated and extended.
@@ -32,7 +33,7 @@ trait Renderer extends js.Object {
     * See [source code](https://github.com/markdown-it/markdown-it/blob/master/lib/renderer.js)
     * for more details and examples.
     */
-  var rules: RenderRuleRecord
+  var rules: RenderRuleRecord = js.native
   /**
     * Takes token stream and generates HTML. Probably, you will never need to call
     * this method directly.
@@ -41,11 +42,11 @@ trait Renderer extends js.Object {
     * @param options params of parser instance
     * @param env additional data from parsed input (references, for example)
     */
-  def render(tokens: js.Array[typings.markdownIt.tokenMod.^], options: Options, env: js.Any): String
+  def render(tokens: js.Array[typings.markdownIt.tokenMod.^], options: Options, env: js.Any): String = js.native
   /**
     * Render token attributes to string.
     */
-  def renderAttrs(token: typings.markdownIt.tokenMod.^): String
+  def renderAttrs(token: typings.markdownIt.tokenMod.^): String = js.native
   /**
     * The same as [[Renderer.render]], but for single token of `inline` type.
     *
@@ -53,7 +54,7 @@ trait Renderer extends js.Object {
     * @param options params of parser instance
     * @param env additional data from parsed input (references, for example)
     */
-  def renderInline(tokens: js.Array[typings.markdownIt.tokenMod.^], options: Options, env: js.Any): String
+  def renderInline(tokens: js.Array[typings.markdownIt.tokenMod.^], options: Options, env: js.Any): String = js.native
   /**
     * Special kludge for image `alt` attributes to conform CommonMark spec.
     * Don't try to use it! Spec requires to show `alt` content with stripped markup,
@@ -63,7 +64,7 @@ trait Renderer extends js.Object {
     * @param options params of parser instance
     * @param env additional data from parsed input (references, for example)
     */
-  def renderInlineAsText(tokens: js.Array[typings.markdownIt.tokenMod.^], options: Options, env: js.Any): String
+  def renderInlineAsText(tokens: js.Array[typings.markdownIt.tokenMod.^], options: Options, env: js.Any): String = js.native
   /**
     * Default token renderer. Can be overriden by custom function
     * in [[Renderer#rules]].
@@ -72,7 +73,7 @@ trait Renderer extends js.Object {
     * @param idx token index to render
     * @param options params of parser instance
     */
-  def renderToken(tokens: js.Array[typings.markdownIt.tokenMod.^], idx: Double, options: Options): String
+  def renderToken(tokens: js.Array[typings.markdownIt.tokenMod.^], idx: Double, options: Options): String = js.native
 }
 
 object Renderer {
@@ -88,5 +89,30 @@ object Renderer {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction3(render), renderAttrs = js.Any.fromFunction1(renderAttrs), renderInline = js.Any.fromFunction3(renderInline), renderInlineAsText = js.Any.fromFunction3(renderInlineAsText), renderToken = js.Any.fromFunction3(renderToken), rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Renderer]
   }
+  @scala.inline
+  implicit class RendererOps[Self <: Renderer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRender(value: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String): Self = this.set("render", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRenderAttrs(value: typings.markdownIt.tokenMod.^ => String): Self = this.set("renderAttrs", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRenderInline(value: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String): Self = this.set("renderInline", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRenderInlineAsText(value: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String): Self = this.set("renderInlineAsText", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRenderToken(value: (js.Array[typings.markdownIt.tokenMod.^], Double, Options) => String): Self = this.set("renderToken", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRules(value: RenderRuleRecord): Self = this.set("rules", value.asInstanceOf[js.Any])
+  }
+  
 }
 

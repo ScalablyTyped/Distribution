@@ -47,9 +47,11 @@ trait Yallist[T] extends Iterable[T] {
   def reverse(): this.type = js.native
   def shift(): js.UndefOr[T] = js.native
   def slice(): Yallist[T] = js.native
+  def slice(from: js.UndefOr[scala.Nothing], to: Double): Yallist[T] = js.native
   def slice(from: Double): Yallist[T] = js.native
   def slice(from: Double, to: Double): Yallist[T] = js.native
   def sliceReverse(): Yallist[T] = js.native
+  def sliceReverse(from: js.UndefOr[scala.Nothing], to: Double): Yallist[T] = js.native
   def sliceReverse(from: Double): Yallist[T] = js.native
   def sliceReverse(from: Double, to: Double): Yallist[T] = js.native
   def toArray(): js.Array[T] = js.native

@@ -13,11 +13,13 @@ object ^ extends js.Object {
   @JSName("top")
   var top_Original: Scroll = js.native
   def left(el: HTMLElement, to: Double): Cancel = js.native
+  def left(el: HTMLElement, to: Double, opts: js.UndefOr[scala.Nothing], cb: ScrollCallback): Cancel = js.native
   def left(el: HTMLElement, to: Double, opts: ScrollCallback): Cancel = js.native
   def left(el: HTMLElement, to: Double, opts: ScrollCallback, cb: ScrollCallback): Cancel = js.native
   def left(el: HTMLElement, to: Double, opts: ScrollOptions): Cancel = js.native
   def left(el: HTMLElement, to: Double, opts: ScrollOptions, cb: ScrollCallback): Cancel = js.native
   def top(el: HTMLElement, to: Double): Cancel = js.native
+  def top(el: HTMLElement, to: Double, opts: js.UndefOr[scala.Nothing], cb: ScrollCallback): Cancel = js.native
   def top(el: HTMLElement, to: Double, opts: ScrollCallback): Cancel = js.native
   def top(el: HTMLElement, to: Double, opts: ScrollCallback, cb: ScrollCallback): Cancel = js.native
   def top(el: HTMLElement, to: Double, opts: ScrollOptions): Cancel = js.native

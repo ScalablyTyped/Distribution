@@ -5,13 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ trait IndexAccess
+- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
+trait IndexAccess
   extends Expression
      with BaseASTNode {
-  var base: Expression
-  var index: Expression
+  var base: Expression = js.native
+  var index: Expression = js.native
   @JSName("type")
-  var type_IndexAccess: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess
+  var type_IndexAccess: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess = js.native
 }
 
 object IndexAccess {
@@ -19,15 +20,30 @@ object IndexAccess {
   def apply(
     base: Expression,
     index: Expression,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
+    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess
   ): IndexAccess = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexAccess]
   }
+  @scala.inline
+  implicit class IndexAccessOps[Self <: IndexAccess] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBase(value: Expression): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndex(value: Expression): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

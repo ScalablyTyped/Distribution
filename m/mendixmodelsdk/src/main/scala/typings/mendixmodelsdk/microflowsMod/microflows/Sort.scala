@@ -23,7 +23,7 @@ class Sort protected () extends ListOperation {
   @JSName("model")
   var model_FSort: IModel = js.native
   def sortItemList: SortItemList = js.native
-  def sortItemList(newValue: SortItemList): js.Any = js.native
+  def sortItemList_=(newValue: SortItemList): Unit = js.native
 }
 
 /* static members */

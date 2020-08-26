@@ -29,67 +29,119 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartProps extends js.Object {
-  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
-  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
-  var color: js.UndefOr[String | Color | js.Array[Value]] = js.undefined
-  var dash: js.UndefOr[Boolean] = js.undefined
-  var gap: js.UndefOr[GapType] = js.undefined
-  var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var overflow: js.UndefOr[Boolean] = js.undefined
-  var pad: js.UndefOr[EdgeSizeType | Vertical] = js.undefined
-  var round: js.UndefOr[Boolean] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+  var alignSelf: js.UndefOr[AlignSelfType] = js.native
+  var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var color: js.UndefOr[String | Color | js.Array[Value]] = js.native
+  var dash: js.UndefOr[Boolean] = js.native
+  var gap: js.UndefOr[GapType] = js.native
+  var gridArea: js.UndefOr[GridAreaType] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var overflow: js.UndefOr[Boolean] = js.native
+  var pad: js.UndefOr[EdgeSizeType | Vertical] = js.native
+  var round: js.UndefOr[Boolean] = js.native
   var size: js.UndefOr[
     xxsmall | xsmall | small | medium | large | xlarge | fill | full | Height | String
-  ] = js.undefined
-  var thickness: js.UndefOr[hair | xsmall | small | medium | large | xlarge | none | String] = js.undefined
-  var `type`: js.UndefOr[bar | line | area | point] = js.undefined
-  var values: js.Array[Double | js.Array[Double] | Label]
+  ] = js.native
+  var thickness: js.UndefOr[hair | xsmall | small | medium | large | xlarge | none | String] = js.native
+  var `type`: js.UndefOr[bar | line | area | point] = js.native
+  var values: js.Array[Double | js.Array[Double] | Label] = js.native
 }
 
 object ChartProps {
   @scala.inline
-  def apply(
-    values: js.Array[Double | js.Array[Double] | Label],
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    bounds: js.Array[js.Array[Double]] = null,
-    color: String | Color | js.Array[Value] = null,
-    dash: js.UndefOr[Boolean] = js.undefined,
-    gap: GapType = null,
-    gridArea: GridAreaType = null,
-    margin: MarginType = null,
-    onClick: /* repeated */ js.Any => _ = null,
-    onHover: /* repeated */ js.Any => _ = null,
-    overflow: js.UndefOr[Boolean] = js.undefined,
-    pad: EdgeSizeType | Vertical = null,
-    round: js.UndefOr[Boolean] = js.undefined,
-    size: xxsmall | xsmall | small | medium | large | xlarge | fill | full | Height | String = null,
-    thickness: hair | xsmall | small | medium | large | xlarge | none | String = null,
-    `type`: bar | line | area | point = null
-  ): ChartProps = {
+  def apply(values: js.Array[Double | js.Array[Double] | Label]): ChartProps = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(dash)) __obj.updateDynamic("dash")(dash.get.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
-    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow.get.asInstanceOf[js.Any])
-    if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartProps]
   }
+  @scala.inline
+  implicit class ChartPropsOps[Self <: ChartProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValuesVarargs(value: (Double | js.Array[Double] | Label)*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: js.Array[Double | js.Array[Double] | Label]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setA11yTitle(value: A11yTitleType): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setAlignSelf(value: AlignSelfType): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setBoundsVarargs(value: js.Array[Double]*): Self = this.set("bounds", js.Array(value :_*))
+    @scala.inline
+    def setBounds(value: js.Array[js.Array[Double]]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounds: Self = this.set("bounds", js.undefined)
+    @scala.inline
+    def setColorVarargs(value: Value*): Self = this.set("color", js.Array(value :_*))
+    @scala.inline
+    def setColor(value: String | Color | js.Array[Value]): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDash(value: Boolean): Self = this.set("dash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDash: Self = this.set("dash", js.undefined)
+    @scala.inline
+    def setGap(value: GapType): Self = this.set("gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGap: Self = this.set("gap", js.undefined)
+    @scala.inline
+    def setGridArea(value: GridAreaType): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* repeated */ js.Any => _): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnHover(value: /* repeated */ js.Any => _): Self = this.set("onHover", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnHover: Self = this.set("onHover", js.undefined)
+    @scala.inline
+    def setOverflow(value: Boolean): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setPad(value: EdgeSizeType | Vertical): Self = this.set("pad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePad: Self = this.set("pad", js.undefined)
+    @scala.inline
+    def setRound(value: Boolean): Self = this.set("round", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRound: Self = this.set("round", js.undefined)
+    @scala.inline
+    def setSize(value: xxsmall | xsmall | small | medium | large | xlarge | fill | full | Height | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setThickness(value: hair | xsmall | small | medium | large | xlarge | none | String): Self = this.set("thickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThickness: Self = this.set("thickness", js.undefined)
+    @scala.inline
+    def setType(value: bar | line | area | point): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

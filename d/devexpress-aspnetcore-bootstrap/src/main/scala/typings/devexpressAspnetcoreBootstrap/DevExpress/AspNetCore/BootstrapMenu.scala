@@ -17,6 +17,14 @@ trait BootstrapMenu extends Control {
   def getOrientation(): String = js.native
   def getRootItem(): BootstrapMenuItem | Null = js.native
   def getSelectedItem(): BootstrapMenuItem | Null = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[EventArgs | MenuItemClickEventArgs | MenuItemEventArgs | MenuItemMouseEventArgs], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_closeUp(eventName: closeUp): this.type = js.native
   @JSName("off")

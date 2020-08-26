@@ -23,10 +23,6 @@ object math extends js.Object {
       * @param y {number} - The point's coordinate on Y-axis.
       */
     def this(x: Double, y: Double) = this()
-    /* CompleteClass */
-    override var x: Double = js.native
-    /* CompleteClass */
-    override var y: Double = js.native
   }
   
   /**
@@ -43,35 +39,6 @@ object math extends js.Object {
       * @param bottom {number} - The rectangle's bottom edge y value
       */
     def this(left: Double, top: Double, right: Double, bottom: Double) = this()
-    /**
-      * Method checks if provided coordinates lie within rectangle.
-      * @param x {number} - x-coordinate to check
-      * @param y {number} - y-coordinate to check
-      * @returns {boolean} - returns true if coordinates lie within rectangle, if parameters are isNaN returns false
-      */
-    /* CompleteClass */
-    override def containsXY(x: Double, y: Double): Boolean = js.native
-    /**
-      * To get the rectangle's bottom-right vertex
-      * @returns {H.math.Point}
-      */
-    /* CompleteClass */
-    override def getBottomRight(): typings.heremaps.H.math.Point = js.native
-    /**
-      * To get the rectangle's top-left vertex
-      * @returns {H.math.Point}
-      */
-    /* CompleteClass */
-    override def getTopLeft(): typings.heremaps.H.math.Point = js.native
-    /**
-      * To set all values of the rectangle's edges
-      * @param left {number} - The rectangle's left edge x value
-      * @param top {number} - The rectangle's top edge y value
-      * @param right {number} - The rectangle's right edge x value
-      * @param bottom {number} - The rectangle's bottom edge y value
-      */
-    /* CompleteClass */
-    override def set(left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
   }
   
   /**
@@ -88,10 +55,6 @@ object math extends js.Object {
       * @param height {number} - Height.
       */
     def this(width: Double, height: Double) = this()
-    /* CompleteClass */
-    override var h: Double = js.native
-    /* CompleteClass */
-    override var w: Double = js.native
   }
   
   /* static members */

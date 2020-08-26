@@ -10,9 +10,9 @@ The ultimate javascript content-type utility.
 | ------------------ | :-------------: |
 | Full name          | mime-types |
 | Keywords           | mime, types |
-| # releases         | 9 |
-| # dependents       | 1674 |
-| # downloads        | 849942090 |
+| # releases         | 8 |
+| # dependents       | 1676 |
+| # downloads        | 850158332 |
 | # stars            | 64 |
 
 ## Links

@@ -19,6 +19,10 @@ trait CreateVpnConnectionRequest extends js.Object {
     */
   var Options: js.UndefOr[VpnConnectionOptionsSpecification] = js.native
   /**
+    * The tags to apply to the VPN connection.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * The ID of the transit gateway. If you specify a transit gateway, you cannot specify a virtual private gateway.
     */
   var TransitGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayId] = js.native
@@ -34,20 +38,48 @@ trait CreateVpnConnectionRequest extends js.Object {
 
 object CreateVpnConnectionRequest {
   @scala.inline
-  def apply(
-    CustomerGatewayId: CustomerGatewayId,
-    Type: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Options: VpnConnectionOptionsSpecification = null,
-    TransitGatewayId: TransitGatewayId = null,
-    VpnGatewayId: VpnGatewayId = null
-  ): CreateVpnConnectionRequest = {
+  def apply(CustomerGatewayId: CustomerGatewayId, Type: String): CreateVpnConnectionRequest = {
     val __obj = js.Dynamic.literal(CustomerGatewayId = CustomerGatewayId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (TransitGatewayId != null) __obj.updateDynamic("TransitGatewayId")(TransitGatewayId.asInstanceOf[js.Any])
-    if (VpnGatewayId != null) __obj.updateDynamic("VpnGatewayId")(VpnGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpnConnectionRequest]
   }
+  @scala.inline
+  implicit class CreateVpnConnectionRequestOps[Self <: CreateVpnConnectionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerGatewayId(value: CustomerGatewayId): Self = this.set("CustomerGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setOptions(value: VpnConnectionOptionsSpecification): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: TransitGatewayId): Self = this.set("TransitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("TransitGatewayId", js.undefined)
+    @scala.inline
+    def setVpnGatewayId(value: VpnGatewayId): Self = this.set("VpnGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnGatewayId: Self = this.set("VpnGatewayId", js.undefined)
+  }
+  
 }
 

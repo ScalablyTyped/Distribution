@@ -55,7 +55,23 @@ trait PlusPaymentPaymentChannel extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   def requestOrder(): Unit = js.native
+  def requestOrder(
+    ids: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def requestOrder(ids: js.UndefOr[scala.Nothing], successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
+  def requestOrder(
+    ids: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def requestOrder(ids: js.Array[_]): Unit = js.native
+  def requestOrder(
+    ids: js.Array[_],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def requestOrder(ids: js.Array[_], successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
   def requestOrder(
     ids: js.Array[_],
@@ -69,6 +85,10 @@ trait PlusPaymentPaymentChannel extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   def restoreComplateRequest(): Unit = js.native
+  def restoreComplateRequest(
+    options: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]
+  ): Unit = js.native
   def restoreComplateRequest(options: js.Any): Unit = js.native
   def restoreComplateRequest(options: js.Any, successCB: js.Function1[/* result */ js.Array[PlusPayment], Unit]): Unit = js.native
 }

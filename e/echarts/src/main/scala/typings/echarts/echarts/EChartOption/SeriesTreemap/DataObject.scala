@@ -8,8 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataObject extends js.Object {
-  var children: js.UndefOr[js.Array[DataObject]] = js.undefined
+  var children: js.UndefOr[js.Array[DataObject]] = js.native
   /**
     * Children will not be shown when area size of a node is smaller
     * than this value (unit: px square).
@@ -42,7 +43,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.childrenVisibleMin
     */
-  var childrenVisibleMin: js.UndefOr[Double] = js.undefined
+  var childrenVisibleMin: js.UndefOr[Double] = js.native
   /**
     * A color list for a level.
     * Each node in the level will obtain a color from the color
@@ -71,7 +72,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.color
     */
-  var color: js.UndefOr[js.Array[_]] = js.undefined
+  var color: js.UndefOr[js.Array[_]] = js.native
   /**
     * It indicates the range of tranparent rate (color alpha) for
     * nodes in a level . The range of values is 0 ~ 1.
@@ -101,7 +102,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.colorAlpha
     */
-  var colorAlpha: js.UndefOr[js.Array[_]] = js.undefined
+  var colorAlpha: js.UndefOr[js.Array[_]] = js.native
   /**
     * Specify the rule according to which each node obtain color
     * from
@@ -168,7 +169,7 @@ trait DataObject extends js.Object {
     * "index"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.colorMappingBy
     */
-  var colorMappingBy: js.UndefOr[String] = js.undefined
+  var colorMappingBy: js.UndefOr[String] = js.native
   /**
     * It indicates the range of saturation (color alpha) for nodes
     * in a level . The range of values is 0 ~ 1.
@@ -198,11 +199,11 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.colorSaturation
     */
-  var colorSaturation: js.UndefOr[Double] = js.undefined
+  var colorSaturation: js.UndefOr[Double] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis
     */
-  var emphasis: js.UndefOr[UpperLabel] = js.undefined
+  var emphasis: js.UndefOr[UpperLabel] = js.native
   /**
     * `id` is not mandatory.
     * But if using API, id is used to locate node.
@@ -210,7 +211,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     *
     * > Tps: In treemap, `itemStyle` attribute could appear in
@@ -232,7 +233,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[BorderColorSaturation] = js.native
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -255,14 +256,14 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.label
     */
-  var label: js.UndefOr[Ellipsis] = js.undefined
+  var label: js.UndefOr[Ellipsis] = js.native
   /**
     * Show the description text in rectangle.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * `upperLabel` is used to specify whether show label when the
     * node has children. When
@@ -309,7 +310,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel
     */
-  var upperLabel: js.UndefOr[TextShadowColor] = js.undefined
+  var upperLabel: js.UndefOr[TextShadowColor] = js.native
   /**
     * The value of this node, indicating the area size.
     *
@@ -322,7 +323,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.value
     */
-  var value: js.UndefOr[js.Array[_] | Double] = js.undefined
+  var value: js.UndefOr[js.Array[_] | Double] = js.native
   /**
     * A node will not be shown when its area size is smaller than
     * this value (unit: px square).
@@ -358,7 +359,7 @@ trait DataObject extends js.Object {
     * 10
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.visibleMin
     */
-  var visibleMin: js.UndefOr[Double] = js.undefined
+  var visibleMin: js.UndefOr[Double] = js.native
   /**
     * `treemap` is able to map any dimensions of data to visual.
     *
@@ -392,7 +393,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.visualDimension
     */
-  var visualDimension: js.UndefOr[Double] = js.undefined
+  var visualDimension: js.UndefOr[Double] = js.native
   /**
     * The maximal value of current level.
     * Auto-statistics by default.
@@ -405,7 +406,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.visualMax
     */
-  var visualMax: js.UndefOr[Double] = js.undefined
+  var visualMax: js.UndefOr[Double] = js.native
   /**
     * The minimal value of current level.
     * Auto-statistics by default.
@@ -418,49 +419,103 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.visualMin
     */
-  var visualMin: js.UndefOr[Double] = js.undefined
+  var visualMin: js.UndefOr[Double] = js.native
 }
 
 object DataObject {
   @scala.inline
-  def apply(
-    children: js.Array[DataObject] = null,
-    childrenVisibleMin: js.UndefOr[Double] = js.undefined,
-    color: js.Array[_] = null,
-    colorAlpha: js.Array[_] = null,
-    colorMappingBy: String = null,
-    colorSaturation: js.UndefOr[Double] = js.undefined,
-    emphasis: UpperLabel = null,
-    id: String = null,
-    itemStyle: BorderColorSaturation = null,
-    label: Ellipsis = null,
-    name: String = null,
-    upperLabel: TextShadowColor = null,
-    value: js.Array[_] | Double = null,
-    visibleMin: js.UndefOr[Double] = js.undefined,
-    visualDimension: js.UndefOr[Double] = js.undefined,
-    visualMax: js.UndefOr[Double] = js.undefined,
-    visualMin: js.UndefOr[Double] = js.undefined
-  ): DataObject = {
+  def apply(): DataObject = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(childrenVisibleMin)) __obj.updateDynamic("childrenVisibleMin")(childrenVisibleMin.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorAlpha != null) __obj.updateDynamic("colorAlpha")(colorAlpha.asInstanceOf[js.Any])
-    if (colorMappingBy != null) __obj.updateDynamic("colorMappingBy")(colorMappingBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorSaturation)) __obj.updateDynamic("colorSaturation")(colorSaturation.get.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleMin)) __obj.updateDynamic("visibleMin")(visibleMin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visualDimension)) __obj.updateDynamic("visualDimension")(visualDimension.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visualMax)) __obj.updateDynamic("visualMax")(visualMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visualMin)) __obj.updateDynamic("visualMin")(visualMin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
+  @scala.inline
+  implicit class DataObjectOps[Self <: DataObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: DataObject*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[DataObject]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setChildrenVisibleMin(value: Double): Self = this.set("childrenVisibleMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildrenVisibleMin: Self = this.set("childrenVisibleMin", js.undefined)
+    @scala.inline
+    def setColorVarargs(value: js.Any*): Self = this.set("color", js.Array(value :_*))
+    @scala.inline
+    def setColor(value: js.Array[_]): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorAlphaVarargs(value: js.Any*): Self = this.set("colorAlpha", js.Array(value :_*))
+    @scala.inline
+    def setColorAlpha(value: js.Array[_]): Self = this.set("colorAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorAlpha: Self = this.set("colorAlpha", js.undefined)
+    @scala.inline
+    def setColorMappingBy(value: String): Self = this.set("colorMappingBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorMappingBy: Self = this.set("colorMappingBy", js.undefined)
+    @scala.inline
+    def setColorSaturation(value: Double): Self = this.set("colorSaturation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSaturation: Self = this.set("colorSaturation", js.undefined)
+    @scala.inline
+    def setEmphasis(value: UpperLabel): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItemStyle(value: BorderColorSaturation): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: Ellipsis): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUpperLabel(value: TextShadowColor): Self = this.set("upperLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpperLabel: Self = this.set("upperLabel", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: js.Any*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: js.Array[_] | Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setVisibleMin(value: Double): Self = this.set("visibleMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleMin: Self = this.set("visibleMin", js.undefined)
+    @scala.inline
+    def setVisualDimension(value: Double): Self = this.set("visualDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisualDimension: Self = this.set("visualDimension", js.undefined)
+    @scala.inline
+    def setVisualMax(value: Double): Self = this.set("visualMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisualMax: Self = this.set("visualMax", js.undefined)
+    @scala.inline
+    def setVisualMin(value: Double): Self = this.set("visualMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisualMin: Self = this.set("visualMin", js.undefined)
+  }
+  
 }
 

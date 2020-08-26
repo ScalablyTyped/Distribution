@@ -11,8 +11,8 @@ Provides a way to store the contents of a stream into a Uint8Array
 | Full name          | @aws-sdk/stream-collector-browser |
 | Keywords           | - |
 | # releases         | 9 |
-| # dependents       | 185 |
-| # downloads        | 3999 |
+| # dependents       | 367 |
+| # downloads        | 5026 |
 | # stars            | 0 |
 
 ## Links

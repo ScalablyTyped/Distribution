@@ -27,16 +27,34 @@ trait SchemaGooglePrivacyDlpV2Bucket extends js.Object {
 
 object SchemaGooglePrivacyDlpV2Bucket {
   @scala.inline
-  def apply(
-    max: SchemaGooglePrivacyDlpV2Value = null,
-    min: SchemaGooglePrivacyDlpV2Value = null,
-    replacementValue: SchemaGooglePrivacyDlpV2Value = null
-  ): SchemaGooglePrivacyDlpV2Bucket = {
+  def apply(): SchemaGooglePrivacyDlpV2Bucket = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (replacementValue != null) __obj.updateDynamic("replacementValue")(replacementValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Bucket]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2BucketOps[Self <: SchemaGooglePrivacyDlpV2Bucket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMax(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setReplacementValue(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("replacementValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplacementValue: Self = this.set("replacementValue", js.undefined)
+  }
+  
 }
 

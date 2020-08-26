@@ -4,6 +4,8 @@ import typings.pulumiAws.ec2transitgatewayRouteMod.RouteArgs
 import typings.pulumiAws.ec2transitgatewayRouteMod.RouteState
 import typings.pulumiAws.getDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentArgs
 import typings.pulumiAws.getDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentResult
+import typings.pulumiAws.getPeeringAttachmentMod.GetPeeringAttachmentArgs
+import typings.pulumiAws.getPeeringAttachmentMod.GetPeeringAttachmentResult
 import typings.pulumiAws.getRouteTableMod.GetRouteTableArgs
 import typings.pulumiAws.getRouteTableMod.GetRouteTableResult
 import typings.pulumiAws.getTransitGatewayMod.GetTransitGatewayArgs
@@ -12,6 +14,8 @@ import typings.pulumiAws.getVpcAttachmentMod.GetVpcAttachmentArgs
 import typings.pulumiAws.getVpcAttachmentMod.GetVpcAttachmentResult
 import typings.pulumiAws.getVpnAttachmentMod.GetVpnAttachmentArgs
 import typings.pulumiAws.getVpnAttachmentMod.GetVpnAttachmentResult
+import typings.pulumiAws.peeringAttachmentMod.PeeringAttachmentArgs
+import typings.pulumiAws.peeringAttachmentMod.PeeringAttachmentState
 import typings.pulumiAws.routeTableAssociationMod.RouteTableAssociationArgs
 import typings.pulumiAws.routeTableAssociationMod.RouteTableAssociationState
 import typings.pulumiAws.routeTableMod.RouteTableArgs
@@ -35,6 +39,20 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws", "ec2transitgateway")
 @js.native
 object ec2transitgateway extends js.Object {
+  @js.native
+  class PeeringAttachment protected ()
+    extends typings.pulumiAws.ec2transitgatewayMod.PeeringAttachment {
+    /**
+      * Create a PeeringAttachment resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: PeeringAttachmentArgs) = this()
+    def this(name: String, args: PeeringAttachmentArgs, opts: CustomResourceOptions) = this()
+  }
+  
   @js.native
   class Route protected ()
     extends typings.pulumiAws.ec2transitgatewayMod.Route {
@@ -103,6 +121,7 @@ object ec2transitgateway extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: TransitGatewayArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: TransitGatewayArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -134,21 +153,53 @@ object ec2transitgateway extends js.Object {
     def this(name: String, args: VpcAttachmentAccepterArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getDirectConnectGatewayAttachment(): js.Promise[GetDirectConnectGatewayAttachmentResult] with GetDirectConnectGatewayAttachmentResult = js.native
-  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs): js.Promise[GetDirectConnectGatewayAttachmentResult] with GetDirectConnectGatewayAttachmentResult = js.native
-  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] with GetDirectConnectGatewayAttachmentResult = js.native
-  def getRouteTable(): js.Promise[GetRouteTableResult] with GetRouteTableResult = js.native
-  def getRouteTable(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] with GetRouteTableResult = js.native
-  def getRouteTable(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] with GetRouteTableResult = js.native
-  def getTransitGateway(): js.Promise[GetTransitGatewayResult] with GetTransitGatewayResult = js.native
-  def getTransitGateway(args: GetTransitGatewayArgs): js.Promise[GetTransitGatewayResult] with GetTransitGatewayResult = js.native
-  def getTransitGateway(args: GetTransitGatewayArgs, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] with GetTransitGatewayResult = js.native
-  def getVpcAttachment(): js.Promise[GetVpcAttachmentResult] with GetVpcAttachmentResult = js.native
-  def getVpcAttachment(args: GetVpcAttachmentArgs): js.Promise[GetVpcAttachmentResult] with GetVpcAttachmentResult = js.native
-  def getVpcAttachment(args: GetVpcAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] with GetVpcAttachmentResult = js.native
-  def getVpnAttachment(): js.Promise[GetVpnAttachmentResult] with GetVpnAttachmentResult = js.native
-  def getVpnAttachment(args: GetVpnAttachmentArgs): js.Promise[GetVpnAttachmentResult] with GetVpnAttachmentResult = js.native
-  def getVpnAttachment(args: GetVpnAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] with GetVpnAttachmentResult = js.native
+  def getDirectConnectGatewayAttachment(): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
+  def getDirectConnectGatewayAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
+  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
+  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
+  def getPeeringAttachment(): js.Promise[GetPeeringAttachmentResult] = js.native
+  def getPeeringAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = js.native
+  def getPeeringAttachment(args: GetPeeringAttachmentArgs): js.Promise[GetPeeringAttachmentResult] = js.native
+  def getPeeringAttachment(args: GetPeeringAttachmentArgs, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = js.native
+  def getRouteTable(): js.Promise[GetRouteTableResult] = js.native
+  def getRouteTable(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
+  def getRouteTable(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] = js.native
+  def getRouteTable(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
+  def getTransitGateway(): js.Promise[GetTransitGatewayResult] = js.native
+  def getTransitGateway(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = js.native
+  def getTransitGateway(args: GetTransitGatewayArgs): js.Promise[GetTransitGatewayResult] = js.native
+  def getTransitGateway(args: GetTransitGatewayArgs, opts: InvokeOptions): js.Promise[GetTransitGatewayResult] = js.native
+  def getVpcAttachment(): js.Promise[GetVpcAttachmentResult] = js.native
+  def getVpcAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = js.native
+  def getVpcAttachment(args: GetVpcAttachmentArgs): js.Promise[GetVpcAttachmentResult] = js.native
+  def getVpcAttachment(args: GetVpcAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = js.native
+  def getVpnAttachment(): js.Promise[GetVpnAttachmentResult] = js.native
+  def getVpnAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = js.native
+  def getVpnAttachment(args: GetVpnAttachmentArgs): js.Promise[GetVpnAttachmentResult] = js.native
+  def getVpnAttachment(args: GetVpnAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = js.native
+  /* static members */
+  @js.native
+  object PeeringAttachment extends js.Object {
+    /**
+      * Get an existing PeeringAttachment resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = js.native
+    def get(name: String, id: Input[ID], state: PeeringAttachmentState): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = js.native
+    def get(name: String, id: Input[ID], state: PeeringAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.peeringAttachmentMod.PeeringAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of PeeringAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/peeringAttachment.PeeringAttachment */ Boolean = js.native
+  }
+  
   /* static members */
   @js.native
   object Route extends js.Object {
@@ -159,8 +210,10 @@ object ec2transitgateway extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.ec2transitgatewayRouteMod.Route = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ec2transitgatewayRouteMod.Route = js.native
     def get(name: String, id: Input[ID], state: RouteState): typings.pulumiAws.ec2transitgatewayRouteMod.Route = js.native
     def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): typings.pulumiAws.ec2transitgatewayRouteMod.Route = js.native
     /**
@@ -180,8 +233,10 @@ object ec2transitgateway extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.routeTableMod.RouteTable = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.routeTableMod.RouteTable = js.native
     def get(name: String, id: Input[ID], state: RouteTableState): typings.pulumiAws.routeTableMod.RouteTable = js.native
     def get(name: String, id: Input[ID], state: RouteTableState, opts: CustomResourceOptions): typings.pulumiAws.routeTableMod.RouteTable = js.native
     /**
@@ -201,8 +256,10 @@ object ec2transitgateway extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = js.native
     def get(name: String, id: Input[ID], state: RouteTableAssociationState): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = js.native
     def get(name: String, id: Input[ID], state: RouteTableAssociationState, opts: CustomResourceOptions): typings.pulumiAws.routeTableAssociationMod.RouteTableAssociation = js.native
     /**
@@ -222,8 +279,10 @@ object ec2transitgateway extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = js.native
     def get(name: String, id: Input[ID], state: RouteTablePropagationState): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = js.native
     def get(name: String, id: Input[ID], state: RouteTablePropagationState, opts: CustomResourceOptions): typings.pulumiAws.routeTablePropagationMod.RouteTablePropagation = js.native
     /**
@@ -243,8 +302,10 @@ object ec2transitgateway extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.transitGatewayMod.TransitGateway = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.transitGatewayMod.TransitGateway = js.native
     def get(name: String, id: Input[ID], state: TransitGatewayState): typings.pulumiAws.transitGatewayMod.TransitGateway = js.native
     def get(name: String, id: Input[ID], state: TransitGatewayState, opts: CustomResourceOptions): typings.pulumiAws.transitGatewayMod.TransitGateway = js.native
     /**
@@ -264,8 +325,10 @@ object ec2transitgateway extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = js.native
     def get(name: String, id: Input[ID], state: VpcAttachmentState): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = js.native
     def get(name: String, id: Input[ID], state: VpcAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentMod.VpcAttachment = js.native
     /**
@@ -285,8 +348,10 @@ object ec2transitgateway extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
     def get(name: String, id: Input[ID], state: VpcAttachmentAccepterState): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
     def get(name: String, id: Input[ID], state: VpcAttachmentAccepterState, opts: CustomResourceOptions): typings.pulumiAws.vpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
     /**

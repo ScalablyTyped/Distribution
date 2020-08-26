@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@netflix/nerror" : "1.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@netflix/nerror" : "1.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

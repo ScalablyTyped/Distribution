@@ -27,16 +27,36 @@ trait GetSecretsSecret extends js.Object {
 
 object GetSecretsSecret {
   @scala.inline
-  def apply(
-    name: String,
-    payload: String,
-    context: StringDictionary[String] = null,
-    grantTokens: js.Array[String] = null
-  ): GetSecretsSecret = {
+  def apply(name: String, payload: String): GetSecretsSecret = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (grantTokens != null) __obj.updateDynamic("grantTokens")(grantTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSecretsSecret]
   }
+  @scala.inline
+  implicit class GetSecretsSecretOps[Self <: GetSecretsSecret] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPayload(value: String): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContext(value: StringDictionary[String]): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setGrantTokensVarargs(value: String*): Self = this.set("grantTokens", js.Array(value :_*))
+    @scala.inline
+    def setGrantTokens(value: js.Array[String]): Self = this.set("grantTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTokens: Self = this.set("grantTokens", js.undefined)
+  }
+  
 }
 

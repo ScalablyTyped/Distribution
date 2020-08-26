@@ -18,11 +18,32 @@ trait ListMembersOutput extends js.Object {
 
 object ListMembersOutput {
   @scala.inline
-  def apply(Members: MemberSummaryList = null, NextToken: PaginationToken = null): ListMembersOutput = {
+  def apply(): ListMembersOutput = {
     val __obj = js.Dynamic.literal()
-    if (Members != null) __obj.updateDynamic("Members")(Members.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMembersOutput]
   }
+  @scala.inline
+  implicit class ListMembersOutputOps[Self <: ListMembersOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMembersVarargs(value: MemberSummary*): Self = this.set("Members", js.Array(value :_*))
+    @scala.inline
+    def setMembers(value: MemberSummaryList): Self = this.set("Members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMembers: Self = this.set("Members", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -35,6 +35,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def export(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def export(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def export(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def export(params: ParamsResourceProjectsExport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def export(
     params: ParamsResourceProjectsExport,
@@ -70,6 +71,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def `import`(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def `import`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(params: ParamsResourceProjectsImport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(
     params: ParamsResourceProjectsImport,

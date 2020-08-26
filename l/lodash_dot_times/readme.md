@@ -12,7 +12,7 @@ The lodash method `_.times` exported as a module.
 | Keywords           | lodash-modularized, times |
 | # releases         | 0 |
 | # dependents       | 44 |
-| # downloads        | 1601005 |
+| # downloads        | 1592133 |
 | # stars            | 0 |
 
 ## Links

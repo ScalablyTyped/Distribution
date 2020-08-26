@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends vaultAuthAws {
   def this(config: Config) = this()
-  /* CompleteClass */
-  override def authenticate(): js.Promise[_] = js.native
-  /* CompleteClass */
-  override def getOptions(creds: Creds): Options = js.native
 }
 

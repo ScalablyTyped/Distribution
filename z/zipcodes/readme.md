@@ -12,7 +12,7 @@ Useful zipcode database with helper methods
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 9 |
-| # downloads        | 428661 |
+| # downloads        | 431251 |
 | # stars            | 4 |
 
 ## Links

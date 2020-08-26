@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PivotValue extends js.Object {
   /**
     * If specified, indicates that pivot values should be displayed as
@@ -13,14 +14,14 @@ trait PivotValue extends js.Object {
     * the Sheets UI, this is referred to as "Show As" in the value section of a
     * pivot table.
     */
-  var calculatedDisplayType: js.UndefOr[String] = js.undefined
+  var calculatedDisplayType: js.UndefOr[String] = js.native
   /**
     * A custom formula to calculate the value.  The formula must start
     * with an `=` character.
     */
-  var formula: js.UndefOr[String] = js.undefined
+  var formula: js.UndefOr[String] = js.native
   /** A name to use for the value. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The column offset of the source range that this value reads from.
     *
@@ -28,7 +29,7 @@ trait PivotValue extends js.Object {
     * means this value refers to column `C`, whereas the offset `1` would
     * refer to column `D`.
     */
-  var sourceColumnOffset: js.UndefOr[Double] = js.undefined
+  var sourceColumnOffset: js.UndefOr[Double] = js.native
   /**
     * A function to summarize the value.
     * If formula is set, the only supported values are
@@ -37,25 +38,47 @@ trait PivotValue extends js.Object {
     * If sourceColumnOffset is set, then `CUSTOM`
     * is not supported.
     */
-  var summarizeFunction: js.UndefOr[String] = js.undefined
+  var summarizeFunction: js.UndefOr[String] = js.native
 }
 
 object PivotValue {
   @scala.inline
-  def apply(
-    calculatedDisplayType: String = null,
-    formula: String = null,
-    name: String = null,
-    sourceColumnOffset: js.UndefOr[Double] = js.undefined,
-    summarizeFunction: String = null
-  ): PivotValue = {
+  def apply(): PivotValue = {
     val __obj = js.Dynamic.literal()
-    if (calculatedDisplayType != null) __obj.updateDynamic("calculatedDisplayType")(calculatedDisplayType.asInstanceOf[js.Any])
-    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceColumnOffset)) __obj.updateDynamic("sourceColumnOffset")(sourceColumnOffset.get.asInstanceOf[js.Any])
-    if (summarizeFunction != null) __obj.updateDynamic("summarizeFunction")(summarizeFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotValue]
   }
+  @scala.inline
+  implicit class PivotValueOps[Self <: PivotValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCalculatedDisplayType(value: String): Self = this.set("calculatedDisplayType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalculatedDisplayType: Self = this.set("calculatedDisplayType", js.undefined)
+    @scala.inline
+    def setFormula(value: String): Self = this.set("formula", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormula: Self = this.set("formula", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSourceColumnOffset(value: Double): Self = this.set("sourceColumnOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceColumnOffset: Self = this.set("sourceColumnOffset", js.undefined)
+    @scala.inline
+    def setSummarizeFunction(value: String): Self = this.set("summarizeFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummarizeFunction: Self = this.set("summarizeFunction", js.undefined)
+  }
+  
 }
 

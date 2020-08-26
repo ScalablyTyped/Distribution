@@ -48,8 +48,31 @@ class Texture protected ()
   def this(baseTexture: typings.pixiJs.PIXI.BaseTexture, frame: typings.pixiJs.PIXI.Rectangle) = this()
   def this(
     baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: typings.pixiJs.PIXI.Rectangle
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
     frame: typings.pixiJs.PIXI.Rectangle,
     orig: typings.pixiJs.PIXI.Rectangle
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: js.UndefOr[scala.Nothing],
+    trim: typings.pixiJs.PIXI.Rectangle
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: typings.pixiJs.PIXI.Rectangle
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: js.UndefOr[scala.Nothing],
+    trim: typings.pixiJs.PIXI.Rectangle
   ) = this()
   def this(
     baseTexture: typings.pixiJs.PIXI.BaseTexture,
@@ -59,10 +82,179 @@ class Texture protected ()
   ) = this()
   def this(
     baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: js.UndefOr[scala.Nothing],
+    trim: js.UndefOr[scala.Nothing],
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: js.UndefOr[scala.Nothing],
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: js.UndefOr[scala.Nothing],
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: js.UndefOr[scala.Nothing],
+    trim: js.UndefOr[scala.Nothing],
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: js.UndefOr[scala.Nothing],
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: js.UndefOr[scala.Nothing],
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
     frame: typings.pixiJs.PIXI.Rectangle,
     orig: typings.pixiJs.PIXI.Rectangle,
     trim: typings.pixiJs.PIXI.Rectangle,
     rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: js.UndefOr[scala.Nothing],
+    trim: js.UndefOr[scala.Nothing],
+    rotate: js.UndefOr[scala.Nothing],
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: js.UndefOr[scala.Nothing],
+    trim: js.UndefOr[scala.Nothing],
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: js.UndefOr[scala.Nothing],
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: js.UndefOr[scala.Nothing],
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: js.UndefOr[scala.Nothing],
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: js.UndefOr[scala.Nothing],
+    rotate: js.UndefOr[scala.Nothing],
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: js.UndefOr[scala.Nothing],
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: js.UndefOr[scala.Nothing],
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: js.UndefOr[scala.Nothing],
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: js.UndefOr[scala.Nothing],
+    trim: js.UndefOr[scala.Nothing],
+    rotate: js.UndefOr[scala.Nothing],
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: js.UndefOr[scala.Nothing],
+    trim: js.UndefOr[scala.Nothing],
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: js.UndefOr[scala.Nothing],
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: js.UndefOr[scala.Nothing],
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: js.UndefOr[scala.Nothing],
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: js.UndefOr[scala.Nothing],
+    rotate: js.UndefOr[scala.Nothing],
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: js.UndefOr[scala.Nothing],
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typings.pixiJs.PIXI.BaseTexture,
+    frame: typings.pixiJs.PIXI.Rectangle,
+    orig: typings.pixiJs.PIXI.Rectangle,
+    trim: typings.pixiJs.PIXI.Rectangle,
+    rotate: js.UndefOr[scala.Nothing],
+    anchor: IPointData
   ) = this()
   def this(
     baseTexture: typings.pixiJs.PIXI.BaseTexture,
@@ -116,18 +308,23 @@ object Texture extends js.Object {
     * @return {PIXI.Texture} The newly created texture
     */
   def from(source: String): typings.pixiJs.PIXI.Texture = js.native
+  def from(source: String, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: String, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
   def from(source: String, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: typings.pixiJs.PIXI.BaseTexture): typings.pixiJs.PIXI.Texture = js.native
+  def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
   def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLCanvasElement): typings.pixiJs.PIXI.Texture = js.native
+  def from(source: HTMLCanvasElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLCanvasElement, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLCanvasElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLImageElement): typings.pixiJs.PIXI.Texture = js.native
+  def from(source: HTMLImageElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLImageElement, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLImageElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Texture = js.native
+  def from(source: HTMLVideoElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
   def from(source: HTMLVideoElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   /**

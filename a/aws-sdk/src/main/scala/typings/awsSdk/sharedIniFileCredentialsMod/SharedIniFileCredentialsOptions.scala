@@ -24,22 +24,48 @@ trait SharedIniFileCredentialsOptions extends js.Object {
 
 object SharedIniFileCredentialsOptions {
   @scala.inline
-  def apply(
-    callback: /* err */ js.UndefOr[Error] => Unit = null,
-    disableAssumeRole: js.UndefOr[Boolean] = js.undefined,
-    filename: String = null,
-    httpOptions: HTTPOptions = null,
-    profile: String = null,
-    tokenCodeFn: (/* mfaSerial */ String, /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit]) => Unit = null
-  ): SharedIniFileCredentialsOptions = {
+  def apply(): SharedIniFileCredentialsOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (!js.isUndefined(disableAssumeRole)) __obj.updateDynamic("disableAssumeRole")(disableAssumeRole.get.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (httpOptions != null) __obj.updateDynamic("httpOptions")(httpOptions.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (tokenCodeFn != null) __obj.updateDynamic("tokenCodeFn")(js.Any.fromFunction2(tokenCodeFn))
     __obj.asInstanceOf[SharedIniFileCredentialsOptions]
   }
+  @scala.inline
+  implicit class SharedIniFileCredentialsOptionsOps[Self <: SharedIniFileCredentialsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallback(value: /* err */ js.UndefOr[Error] => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setDisableAssumeRole(value: Boolean): Self = this.set("disableAssumeRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableAssumeRole: Self = this.set("disableAssumeRole", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setHttpOptions(value: HTTPOptions): Self = this.set("httpOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpOptions: Self = this.set("httpOptions", js.undefined)
+    @scala.inline
+    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setTokenCodeFn(
+      value: (/* mfaSerial */ String, /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit]) => Unit
+    ): Self = this.set("tokenCodeFn", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteTokenCodeFn: Self = this.set("tokenCodeFn", js.undefined)
+  }
+  
 }
 

@@ -41,22 +41,46 @@ trait SchemaDistribution extends js.Object {
 
 object SchemaDistribution {
   @scala.inline
-  def apply(
-    architecture: String = null,
-    cpeUri: String = null,
-    description: String = null,
-    latestVersion: SchemaVersion = null,
-    maintainer: String = null,
-    url: String = null
-  ): SchemaDistribution = {
+  def apply(): SchemaDistribution = {
     val __obj = js.Dynamic.literal()
-    if (architecture != null) __obj.updateDynamic("architecture")(architecture.asInstanceOf[js.Any])
-    if (cpeUri != null) __obj.updateDynamic("cpeUri")(cpeUri.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (latestVersion != null) __obj.updateDynamic("latestVersion")(latestVersion.asInstanceOf[js.Any])
-    if (maintainer != null) __obj.updateDynamic("maintainer")(maintainer.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDistribution]
   }
+  @scala.inline
+  implicit class SchemaDistributionOps[Self <: SchemaDistribution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchitecture(value: String): Self = this.set("architecture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchitecture: Self = this.set("architecture", js.undefined)
+    @scala.inline
+    def setCpeUri(value: String): Self = this.set("cpeUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpeUri: Self = this.set("cpeUri", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLatestVersion(value: SchemaVersion): Self = this.set("latestVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestVersion: Self = this.set("latestVersion", js.undefined)
+    @scala.inline
+    def setMaintainer(value: String): Self = this.set("maintainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintainer: Self = this.set("maintainer", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

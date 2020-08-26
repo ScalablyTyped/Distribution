@@ -5,44 +5,75 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TinySliderProps extends js.Object {
   var onClick: js.UndefOr[
     js.Function3[/* slideClicked */ Double, /* info */ String, /* event */ Event, Unit]
-  ] = js.undefined
-  var onIndexChanged: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
-  var onTouchEnd: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
-  var onTouchMove: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
-  var onTouchStart: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
-  var onTransitionEnd: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
-  var onTransitionStart: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.undefined
-  var settings: js.UndefOr[TinySliderSettings] = js.undefined
-  var startIndex: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var onIndexChanged: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+  var onTouchEnd: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+  var onTouchMove: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+  var onTransitionEnd: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+  var onTransitionStart: js.UndefOr[js.Function1[/* info */ TinySliderInfo, Unit]] = js.native
+  var settings: js.UndefOr[TinySliderSettings] = js.native
+  var startIndex: js.UndefOr[Double] = js.native
 }
 
 object TinySliderProps {
   @scala.inline
-  def apply(
-    onClick: (/* slideClicked */ Double, /* info */ String, /* event */ Event) => Unit = null,
-    onIndexChanged: /* info */ TinySliderInfo => Unit = null,
-    onTouchEnd: /* info */ TinySliderInfo => Unit = null,
-    onTouchMove: /* info */ TinySliderInfo => Unit = null,
-    onTouchStart: /* info */ TinySliderInfo => Unit = null,
-    onTransitionEnd: /* info */ TinySliderInfo => Unit = null,
-    onTransitionStart: /* info */ TinySliderInfo => Unit = null,
-    settings: TinySliderSettings = null,
-    startIndex: js.UndefOr[Double] = js.undefined
-  ): TinySliderProps = {
+  def apply(): TinySliderProps = {
     val __obj = js.Dynamic.literal()
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction3(onClick))
-    if (onIndexChanged != null) __obj.updateDynamic("onIndexChanged")(js.Any.fromFunction1(onIndexChanged))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (onTransitionStart != null) __obj.updateDynamic("onTransitionStart")(js.Any.fromFunction1(onTransitionStart))
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TinySliderProps]
   }
+  @scala.inline
+  implicit class TinySliderPropsOps[Self <: TinySliderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnClick(value: (/* slideClicked */ Double, /* info */ String, /* event */ Event) => Unit): Self = this.set("onClick", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnIndexChanged(value: /* info */ TinySliderInfo => Unit): Self = this.set("onIndexChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIndexChanged: Self = this.set("onIndexChanged", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: /* info */ TinySliderInfo => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: /* info */ TinySliderInfo => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: /* info */ TinySliderInfo => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOnTransitionEnd(value: /* info */ TinySliderInfo => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    @scala.inline
+    def setOnTransitionStart(value: /* info */ TinySliderInfo => Unit): Self = this.set("onTransitionStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionStart: Self = this.set("onTransitionStart", js.undefined)
+    @scala.inline
+    def setSettings(value: TinySliderSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+  }
+  
 }
 

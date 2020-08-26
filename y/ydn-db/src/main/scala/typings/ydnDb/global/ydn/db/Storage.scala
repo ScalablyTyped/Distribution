@@ -11,7 +11,11 @@ import scala.scalajs.js.annotation._
 class Storage ()
   extends typings.ydnDb.ydn.db.Storage {
   def this(db_name: String) = this()
+  def this(db_name: js.UndefOr[scala.Nothing], schema: DatabaseSchemaJson) = this()
   def this(db_name: String, schema: DatabaseSchemaJson) = this()
+  def this(db_name: js.UndefOr[scala.Nothing], schema: js.UndefOr[scala.Nothing], options: StorageOptions) = this()
+  def this(db_name: js.UndefOr[scala.Nothing], schema: DatabaseSchemaJson, options: StorageOptions) = this()
+  def this(db_name: String, schema: js.UndefOr[scala.Nothing], options: StorageOptions) = this()
   def this(db_name: String, schema: DatabaseSchemaJson, options: StorageOptions) = this()
 }
 

@@ -8,7 +8,38 @@ import scala.scalajs.js.annotation._
 @js.native
 object createSqlService extends js.Object {
   def apply(serverName: String, administratorLogin: String, administratorLoginPassword: String): SqlService = js.native
+  def apply(
+    serverName: String,
+    administratorLogin: String,
+    administratorLoginPassword: String,
+    host: js.UndefOr[scala.Nothing],
+    acsHost: js.UndefOr[scala.Nothing],
+    authenticationProvider: String
+  ): SqlService = js.native
+  def apply(
+    serverName: String,
+    administratorLogin: String,
+    administratorLoginPassword: String,
+    host: js.UndefOr[scala.Nothing],
+    acsHost: String
+  ): SqlService = js.native
+  def apply(
+    serverName: String,
+    administratorLogin: String,
+    administratorLoginPassword: String,
+    host: js.UndefOr[scala.Nothing],
+    acsHost: String,
+    authenticationProvider: String
+  ): SqlService = js.native
   def apply(serverName: String, administratorLogin: String, administratorLoginPassword: String, host: String): SqlService = js.native
+  def apply(
+    serverName: String,
+    administratorLogin: String,
+    administratorLoginPassword: String,
+    host: String,
+    acsHost: js.UndefOr[scala.Nothing],
+    authenticationProvider: String
+  ): SqlService = js.native
   def apply(
     serverName: String,
     administratorLogin: String,

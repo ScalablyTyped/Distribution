@@ -18,11 +18,32 @@ trait GetIntegrationResponsesResponse extends js.Object {
 
 object GetIntegrationResponsesResponse {
   @scala.inline
-  def apply(Items: listOfIntegrationResponse = null, NextToken: NextToken = null): GetIntegrationResponsesResponse = {
+  def apply(): GetIntegrationResponsesResponse = {
     val __obj = js.Dynamic.literal()
-    if (Items != null) __obj.updateDynamic("Items")(Items.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIntegrationResponsesResponse]
   }
+  @scala.inline
+  implicit class GetIntegrationResponsesResponseOps[Self <: GetIntegrationResponsesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: IntegrationResponse*): Self = this.set("Items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: listOfIntegrationResponse): Self = this.set("Items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("Items", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

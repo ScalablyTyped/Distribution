@@ -29,62 +29,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Typeofframework extends js.Object {
   var ActiveInputStateEventData: Instantiable1[
     /* activeInputState */ ActiveInputState, 
     typings.chromecastCafSender.cast.framework.ActiveInputStateEventData
-  ]
+  ] = js.native
   var ApplicationMetadata: Instantiable1[
     /* sessionObj */ Session, 
     typings.chromecastCafSender.cast.framework.ApplicationMetadata
-  ]
+  ] = js.native
   var ApplicationMetadataEventData: Instantiable1[
     /* metadata */ ApplicationMetadata, 
     typings.chromecastCafSender.cast.framework.ApplicationMetadataEventData
-  ]
+  ] = js.native
   var ApplicationStatusEventData: Instantiable1[
     /* status */ String, 
     typings.chromecastCafSender.cast.framework.ApplicationStatusEventData
-  ]
-  var CastContext: TypeofCastContext
+  ] = js.native
+  var CastContext: TypeofCastContext = js.native
   var CastSession: Instantiable2[
     /* sessionObj */ Session, 
     /* state */ SessionState, 
     typings.chromecastCafSender.cast.framework.CastSession
-  ]
+  ] = js.native
   var CastStateEventData: Instantiable1[
     /* castState */ CastState, 
     typings.chromecastCafSender.cast.framework.CastStateEventData
-  ]
-  var EventData: Instantiable1[/* type */ String, typings.chromecastCafSender.cast.framework.EventData]
+  ] = js.native
+  var EventData: Instantiable1[/* type */ String, typings.chromecastCafSender.cast.framework.EventData] = js.native
   var MediaSessionEventData: Instantiable1[
     /* mediaSession */ Media, 
     typings.chromecastCafSender.cast.framework.MediaSessionEventData
-  ]
-  var RemotePlayer: Instantiable0[typings.chromecastCafSender.cast.framework.RemotePlayer]
+  ] = js.native
+  var RemotePlayer: Instantiable0[typings.chromecastCafSender.cast.framework.RemotePlayer] = js.native
   var RemotePlayerChangedEvent: Instantiable3[
     /* type */ RemotePlayerEventType, 
     /* field */ String, 
     /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
     typings.chromecastCafSender.cast.framework.RemotePlayerChangedEvent[js.Object]
-  ]
+  ] = js.native
   var RemotePlayerController: Instantiable1[
     /* player */ RemotePlayer, 
     typings.chromecastCafSender.cast.framework.RemotePlayerController
-  ]
+  ] = js.native
   var SessionStateEventData: Instantiable3[
     /* session */ CastSession, 
     /* sessionState */ SessionState, 
     /* opt_errorCode */ ErrorCode, 
     typings.chromecastCafSender.cast.framework.SessionStateEventData
-  ]
-  val VERSION: String
+  ] = js.native
+  val VERSION: String = js.native
   var VolumeEventData: Instantiable2[
     /* volume */ Double, 
     /* isMute */ Boolean, 
     typings.chromecastCafSender.cast.framework.VolumeEventData
-  ]
-  def setLoggerLevel(level: LoggerLevel): Unit
+  ] = js.native
+  def setLoggerLevel(level: LoggerLevel): Unit = js.native
 }
 
 object Typeofframework {
@@ -120,5 +121,64 @@ object Typeofframework {
     val __obj = js.Dynamic.literal(ActiveInputStateEventData = ActiveInputStateEventData.asInstanceOf[js.Any], ApplicationMetadata = ApplicationMetadata.asInstanceOf[js.Any], ApplicationMetadataEventData = ApplicationMetadataEventData.asInstanceOf[js.Any], ApplicationStatusEventData = ApplicationStatusEventData.asInstanceOf[js.Any], CastContext = CastContext.asInstanceOf[js.Any], CastSession = CastSession.asInstanceOf[js.Any], CastStateEventData = CastStateEventData.asInstanceOf[js.Any], EventData = EventData.asInstanceOf[js.Any], MediaSessionEventData = MediaSessionEventData.asInstanceOf[js.Any], RemotePlayer = RemotePlayer.asInstanceOf[js.Any], RemotePlayerChangedEvent = RemotePlayerChangedEvent.asInstanceOf[js.Any], RemotePlayerController = RemotePlayerController.asInstanceOf[js.Any], SessionStateEventData = SessionStateEventData.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any], VolumeEventData = VolumeEventData.asInstanceOf[js.Any], setLoggerLevel = js.Any.fromFunction1(setLoggerLevel))
     __obj.asInstanceOf[Typeofframework]
   }
+  @scala.inline
+  implicit class TypeofframeworkOps[Self <: Typeofframework] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveInputStateEventData(value: Instantiable1[/* activeInputState */ ActiveInputState, ActiveInputStateEventData]): Self = this.set("ActiveInputStateEventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationMetadata(value: Instantiable1[/* sessionObj */ Session, ApplicationMetadata]): Self = this.set("ApplicationMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationMetadataEventData(value: Instantiable1[/* metadata */ ApplicationMetadata, ApplicationMetadataEventData]): Self = this.set("ApplicationMetadataEventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationStatusEventData(value: Instantiable1[/* status */ String, ApplicationStatusEventData]): Self = this.set("ApplicationStatusEventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCastContext(value: TypeofCastContext): Self = this.set("CastContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCastSession(value: Instantiable2[/* sessionObj */ Session, /* state */ SessionState, CastSession]): Self = this.set("CastSession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCastStateEventData(value: Instantiable1[/* castState */ CastState, CastStateEventData]): Self = this.set("CastStateEventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventData(value: Instantiable1[/* type */ String, EventData]): Self = this.set("EventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMediaSessionEventData(value: Instantiable1[/* mediaSession */ Media, MediaSessionEventData]): Self = this.set("MediaSessionEventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRemotePlayer(value: Instantiable0[RemotePlayer]): Self = this.set("RemotePlayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRemotePlayerChangedEvent(
+      value: Instantiable3[
+          /* type */ RemotePlayerEventType, 
+          /* field */ String, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
+          RemotePlayerChangedEvent[js.Object]
+        ]
+    ): Self = this.set("RemotePlayerChangedEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRemotePlayerController(value: Instantiable1[/* player */ RemotePlayer, RemotePlayerController]): Self = this.set("RemotePlayerController", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSessionStateEventData(
+      value: Instantiable3[
+          /* session */ CastSession, 
+          /* sessionState */ SessionState, 
+          /* opt_errorCode */ ErrorCode, 
+          SessionStateEventData
+        ]
+    ): Self = this.set("SessionStateEventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVERSION(value: String): Self = this.set("VERSION", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumeEventData(value: Instantiable2[/* volume */ Double, /* isMute */ Boolean, VolumeEventData]): Self = this.set("VolumeEventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSetLoggerLevel(value: LoggerLevel => Unit): Self = this.set("setLoggerLevel", js.Any.fromFunction1(value))
+  }
+  
 }
 

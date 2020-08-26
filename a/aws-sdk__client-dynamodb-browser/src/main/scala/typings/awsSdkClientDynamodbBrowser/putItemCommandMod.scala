@@ -26,16 +26,9 @@ object putItemCommandMod extends js.Object {
           Blob
         ] {
     def this(input: PutItemInput) = this()
-    /* CompleteClass */
-    override val input: PutItemInput = js.native
     val middlewareStack: MiddlewareStack[PutItemInput, PutItemOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[PutItemInput, PutItemOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[PutItemInput, PutItemOutput] = js.native
   }

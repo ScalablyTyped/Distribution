@@ -28,6 +28,7 @@ class ResourceChangelogs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaChangeLog] = js.native
   def get(callback: BodyResponseCallback[SchemaChangeLog]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChangeLog] = js.native
   def get(params: ParamsResourceChangelogsGet): GaxiosPromise[SchemaChangeLog] = js.native
   def get(params: ParamsResourceChangelogsGet, callback: BodyResponseCallback[SchemaChangeLog]): Unit = js.native
   def get(
@@ -65,6 +66,7 @@ class ResourceChangelogs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaChangeLogsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaChangeLogsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChangeLogsListResponse] = js.native
   def list(params: ParamsResourceChangelogsList): GaxiosPromise[SchemaChangeLogsListResponse] = js.native
   def list(params: ParamsResourceChangelogsList, callback: BodyResponseCallback[SchemaChangeLogsListResponse]): Unit = js.native
   def list(

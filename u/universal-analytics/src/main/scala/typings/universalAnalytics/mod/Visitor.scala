@@ -17,7 +17,19 @@ class Visitor protected () extends js.Object {
   def this(
     accountID: String,
     uuid: String,
+    context: js.UndefOr[scala.Nothing],
+    persistentParams: StringDictionary[js.Any]
+  ) = this()
+  def this(
+    accountID: String,
+    uuid: String,
     context: StringDictionary[js.Any],
+    persistentParams: StringDictionary[js.Any]
+  ) = this()
+  def this(
+    accountID: String,
+    uuid: VisitorOptions,
+    context: js.UndefOr[scala.Nothing],
     persistentParams: StringDictionary[js.Any]
   ) = this()
   def this(

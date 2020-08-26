@@ -16,9 +16,11 @@ object log extends js.Object {
     * @param type The type of message (error, warning, info, etc.).
     **/
   def apply(message: String): Unit = js.native
+  def apply(message: String, tags: js.UndefOr[scala.Nothing], `type`: String): Unit = js.native
   def apply(message: String, tags: String): Unit = js.native
   def apply(message: String, tags: String, `type`: String): Unit = js.native
   def apply(message: js.Function0[String]): Unit = js.native
+  def apply(message: js.Function0[String], tags: js.UndefOr[scala.Nothing], `type`: String): Unit = js.native
   def apply(message: js.Function0[String], tags: String): Unit = js.native
   def apply(message: js.Function0[String], tags: String, `type`: String): Unit = js.native
 }

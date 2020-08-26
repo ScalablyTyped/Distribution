@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs/dist/version", JSImport.Namespace)
 @js.native
 object versionMod extends js.Object {
-  val version: /* "1.7.4" */ String = js.native
+  val version: /* "2.0.1" */ String = js.native
 }
 

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlotVectorClusterEventsOptions extends js.Object {
   /**
     * (Highcharts, Highmaps) Fires when the cluster point is clicked and
@@ -11,15 +12,31 @@ trait PlotVectorClusterEventsOptions extends js.Object {
     * function. The default action is to zoom to the cluster points range. This
     * can be prevented by calling `event.preventDefault()`.
     */
-  var drillToCluster: js.UndefOr[MarkerClusterDrillCallbackFunction] = js.undefined
+  var drillToCluster: js.UndefOr[MarkerClusterDrillCallbackFunction] = js.native
 }
 
 object PlotVectorClusterEventsOptions {
   @scala.inline
-  def apply(drillToCluster: MarkerClusterDrillCallbackFunction = null): PlotVectorClusterEventsOptions = {
+  def apply(): PlotVectorClusterEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (drillToCluster != null) __obj.updateDynamic("drillToCluster")(drillToCluster.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotVectorClusterEventsOptions]
   }
+  @scala.inline
+  implicit class PlotVectorClusterEventsOptionsOps[Self <: PlotVectorClusterEventsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDrillToCluster(value: MarkerClusterDrillCallbackFunction): Self = this.set("drillToCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrillToCluster: Self = this.set("drillToCluster", js.undefined)
+  }
+  
 }
 

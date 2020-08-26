@@ -10,15 +10,14 @@ Generate errors that contain a code frame that point to source locations.
 | ------------------ | :-------------: |
 | Full name          | @babel/code-frame |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 300 |
-| # downloads        | 448937406 |
+| # releases         | 27 |
+| # dependents       | 302 |
+| # downloads        | 455477576 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://babeljs.io/)
 - [Bugs](https://github.com/babel/babel/issues)
-- [Repository](https://github.com/babel/babel)
 - [Npm](https://www.npmjs.com/package/%40babel%2Fcode-frame)
     
 

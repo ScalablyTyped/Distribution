@@ -18,11 +18,30 @@ trait RequestUploadCredentialsOutput extends js.Object {
 
 object RequestUploadCredentialsOutput {
   @scala.inline
-  def apply(StorageLocation: S3Location = null, UploadCredentials: AwsCredentials = null): RequestUploadCredentialsOutput = {
+  def apply(): RequestUploadCredentialsOutput = {
     val __obj = js.Dynamic.literal()
-    if (StorageLocation != null) __obj.updateDynamic("StorageLocation")(StorageLocation.asInstanceOf[js.Any])
-    if (UploadCredentials != null) __obj.updateDynamic("UploadCredentials")(UploadCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestUploadCredentialsOutput]
   }
+  @scala.inline
+  implicit class RequestUploadCredentialsOutputOps[Self <: RequestUploadCredentialsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStorageLocation(value: S3Location): Self = this.set("StorageLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageLocation: Self = this.set("StorageLocation", js.undefined)
+    @scala.inline
+    def setUploadCredentials(value: AwsCredentials): Self = this.set("UploadCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadCredentials: Self = this.set("UploadCredentials", js.undefined)
+  }
+  
 }
 

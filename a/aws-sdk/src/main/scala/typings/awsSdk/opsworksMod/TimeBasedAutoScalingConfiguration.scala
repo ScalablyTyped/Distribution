@@ -18,11 +18,30 @@ trait TimeBasedAutoScalingConfiguration extends js.Object {
 
 object TimeBasedAutoScalingConfiguration {
   @scala.inline
-  def apply(AutoScalingSchedule: WeeklyAutoScalingSchedule = null, InstanceId: String = null): TimeBasedAutoScalingConfiguration = {
+  def apply(): TimeBasedAutoScalingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (AutoScalingSchedule != null) __obj.updateDynamic("AutoScalingSchedule")(AutoScalingSchedule.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeBasedAutoScalingConfiguration]
   }
+  @scala.inline
+  implicit class TimeBasedAutoScalingConfigurationOps[Self <: TimeBasedAutoScalingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingSchedule(value: WeeklyAutoScalingSchedule): Self = this.set("AutoScalingSchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingSchedule: Self = this.set("AutoScalingSchedule", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+  }
+  
 }
 

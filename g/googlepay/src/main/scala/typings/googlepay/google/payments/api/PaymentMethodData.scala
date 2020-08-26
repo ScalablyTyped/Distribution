@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Data for a payment method.
   */
+@js.native
 trait PaymentMethodData extends js.Object {
   /**
     * User-facing message to describe the payment method funding this
@@ -22,7 +23,7 @@ trait PaymentMethodData extends js.Object {
     * additional details, see
     * [[PaymentMethodData.info|`PaymentMethodData.info`]].
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * Payment method information.
     *
@@ -33,30 +34,48 @@ trait PaymentMethodData extends js.Object {
     * - For [[PaymentMethodType|`CARD`]], this field
     *   will be an object conforming to [[CardInfo|`CardInfo`]].
     */
-  var info: js.UndefOr[CardInfo] = js.undefined
+  var info: js.UndefOr[CardInfo] = js.native
   /**
     * Tokenization data for the payment method.
     */
-  var tokenizationData: PaymentMethodTokenizationData
+  var tokenizationData: PaymentMethodTokenizationData = js.native
   /**
     * Type of payment method.
     */
-  var `type`: PaymentMethodType
+  var `type`: PaymentMethodType = js.native
 }
 
 object PaymentMethodData {
   @scala.inline
-  def apply(
-    tokenizationData: PaymentMethodTokenizationData,
-    `type`: PaymentMethodType,
-    description: String = null,
-    info: CardInfo = null
-  ): PaymentMethodData = {
+  def apply(tokenizationData: PaymentMethodTokenizationData, `type`: PaymentMethodType): PaymentMethodData = {
     val __obj = js.Dynamic.literal(tokenizationData = tokenizationData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodData]
   }
+  @scala.inline
+  implicit class PaymentMethodDataOps[Self <: PaymentMethodData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTokenizationData(value: PaymentMethodTokenizationData): Self = this.set("tokenizationData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: PaymentMethodType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setInfo(value: CardInfo): Self = this.set("info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfo: Self = this.set("info", js.undefined)
+  }
+  
 }
 

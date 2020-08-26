@@ -18,11 +18,30 @@ trait S3SignedObject extends js.Object {
 
 object S3SignedObject {
   @scala.inline
-  def apply(bucketName: BucketName = null, key: key = null): S3SignedObject = {
+  def apply(): S3SignedObject = {
     val __obj = js.Dynamic.literal()
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3SignedObject]
   }
+  @scala.inline
+  implicit class S3SignedObjectOps[Self <: S3SignedObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: BucketName): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    @scala.inline
+    def setKey(value: key): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+  }
+  
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the Shape object, for use in `shape.set({ ... })`. */
+@js.native
 trait ShapeUpdateData extends js.Object {
   /**
     *
@@ -16,21 +17,21 @@ trait ShapeUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var altTextDescription: js.UndefOr[String] = js.undefined
+  var altTextDescription: js.UndefOr[String] = js.native
   /**
     *
     * Specifies the alternative title text for a Shape object.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var altTextTitle: js.UndefOr[String] = js.undefined
+  var altTextTitle: js.UndefOr[String] = js.native
   /**
     *
     * Returns the fill formatting of this shape.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var fill: js.UndefOr[ShapeFillUpdateData] = js.undefined
+  var fill: js.UndefOr[ShapeFillUpdateData] = js.native
   /**
     *
     * Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
@@ -39,7 +40,7 @@ trait ShapeUpdateData extends js.Object {
     */
   var geometricShapeType: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     *
     * Specifies the height, in points, of the shape.
@@ -47,7 +48,7 @@ trait ShapeUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     *
     * The distance, in points, from the left side of the shape to the left side of the worksheet.
@@ -55,42 +56,42 @@ trait ShapeUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var left: js.UndefOr[Double] = js.undefined
+  var left: js.UndefOr[Double] = js.native
   /**
     *
     * Returns the line formatting of this shape.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var lineFormat: js.UndefOr[ShapeLineFormatUpdateData] = js.undefined
+  var lineFormat: js.UndefOr[ShapeLineFormatUpdateData] = js.native
   /**
     *
     * Specifies if the aspect ratio of this shape is locked.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
+  var lockAspectRatio: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies the name of the shape.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     *
     * Represents how the object is attached to the cells below it.
     *
     * [Api set: ExcelApi 1.10]
     */
-  var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.undefined
+  var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.native
   /**
     *
     * Specifies the rotation, in degrees, of the shape.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rotation: js.UndefOr[Double] = js.undefined
+  var rotation: js.UndefOr[Double] = js.native
   /**
     *
     * The distance, in points, from the top edge of the shape to the top edge of the worksheet.
@@ -98,14 +99,14 @@ trait ShapeUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var top: js.UndefOr[Double] = js.undefined
+  var top: js.UndefOr[Double] = js.native
   /**
     *
     * Specifies if the shape is visible.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies the width, in points, of the shape.
@@ -113,43 +114,83 @@ trait ShapeUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object ShapeUpdateData {
   @scala.inline
-  def apply(
-    altTextDescription: String = null,
-    altTextTitle: String = null,
-    fill: ShapeFillUpdateData = null,
-    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any = null,
-    height: js.UndefOr[Double] = js.undefined,
-    left: js.UndefOr[Double] = js.undefined,
-    lineFormat: ShapeLineFormatUpdateData = null,
-    lockAspectRatio: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    placement: Placement | TwoCell | OneCell | Absolute = null,
-    rotation: js.UndefOr[Double] = js.undefined,
-    top: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): ShapeUpdateData = {
+  def apply(): ShapeUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (altTextDescription != null) __obj.updateDynamic("altTextDescription")(altTextDescription.asInstanceOf[js.Any])
-    if (altTextTitle != null) __obj.updateDynamic("altTextTitle")(altTextTitle.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (geometricShapeType != null) __obj.updateDynamic("geometricShapeType")(geometricShapeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
-    if (lineFormat != null) __obj.updateDynamic("lineFormat")(lineFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeUpdateData]
   }
+  @scala.inline
+  implicit class ShapeUpdateDataOps[Self <: ShapeUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltTextDescription(value: String): Self = this.set("altTextDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltTextDescription: Self = this.set("altTextDescription", js.undefined)
+    @scala.inline
+    def setAltTextTitle(value: String): Self = this.set("altTextTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltTextTitle: Self = this.set("altTextTitle", js.undefined)
+    @scala.inline
+    def setFill(value: ShapeFillUpdateData): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setGeometricShapeType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any): Self = this.set("geometricShapeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeometricShapeType: Self = this.set("geometricShapeType", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setLineFormat(value: ShapeLineFormatUpdateData): Self = this.set("lineFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineFormat: Self = this.set("lineFormat", js.undefined)
+    @scala.inline
+    def setLockAspectRatio(value: Boolean): Self = this.set("lockAspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockAspectRatio: Self = this.set("lockAspectRatio", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlacement(value: Placement | TwoCell | OneCell | Absolute): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

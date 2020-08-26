@@ -18,11 +18,29 @@ trait FulfillmentActivity extends js.Object {
 
 object FulfillmentActivity {
   @scala.inline
-  def apply(`type`: FulfillmentActivityType, codeHook: CodeHook = null): FulfillmentActivity = {
+  def apply(`type`: FulfillmentActivityType): FulfillmentActivity = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (codeHook != null) __obj.updateDynamic("codeHook")(codeHook.asInstanceOf[js.Any])
     __obj.asInstanceOf[FulfillmentActivity]
   }
+  @scala.inline
+  implicit class FulfillmentActivityOps[Self <: FulfillmentActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: FulfillmentActivityType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCodeHook(value: CodeHook): Self = this.set("codeHook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeHook: Self = this.set("codeHook", js.undefined)
+  }
+  
 }
 

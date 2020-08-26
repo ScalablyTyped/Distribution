@@ -14,10 +14,26 @@ trait CommitTransactionResponse extends js.Object {
 
 object CommitTransactionResponse {
   @scala.inline
-  def apply(transactionStatus: TransactionStatus = null): CommitTransactionResponse = {
+  def apply(): CommitTransactionResponse = {
     val __obj = js.Dynamic.literal()
-    if (transactionStatus != null) __obj.updateDynamic("transactionStatus")(transactionStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitTransactionResponse]
   }
+  @scala.inline
+  implicit class CommitTransactionResponseOps[Self <: CommitTransactionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTransactionStatus(value: TransactionStatus): Self = this.set("transactionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionStatus: Self = this.set("transactionStatus", js.undefined)
+  }
+  
 }
 

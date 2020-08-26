@@ -14,6 +14,11 @@ class ReferUserAgentClient protected ()
   def this(dialog: typings.sipJs.dialogsMod.SessionDialog, delegate: OutgoingRequestDelegate) = this()
   def this(
     dialog: typings.sipJs.dialogsMod.SessionDialog,
+    delegate: js.UndefOr[scala.Nothing],
+    options: RequestOptions
+  ) = this()
+  def this(
+    dialog: typings.sipJs.dialogsMod.SessionDialog,
     delegate: OutgoingRequestDelegate,
     options: RequestOptions
   ) = this()

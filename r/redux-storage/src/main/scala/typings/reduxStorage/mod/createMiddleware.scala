@@ -11,6 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object createMiddleware extends js.Object {
   def apply(engine: StorageEngine): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  def apply(
+    engine: StorageEngine,
+    actionBlacklist: js.UndefOr[scala.Nothing],
+    actionWhitelist: js.Array[String]
+  ): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  def apply(
+    engine: StorageEngine,
+    actionBlacklist: js.UndefOr[scala.Nothing],
+    actionWhitelist: ActionTypeCheckCallback
+  ): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
   def apply(engine: StorageEngine, actionBlacklist: js.Array[String]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
   def apply(engine: StorageEngine, actionBlacklist: js.Array[String], actionWhitelist: js.Array[String]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
   def apply(engine: StorageEngine, actionBlacklist: js.Array[String], actionWhitelist: ActionTypeCheckCallback): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native

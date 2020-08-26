@@ -12,7 +12,7 @@ Check if a value is an error constructor
 | Keywords           | is, error, constructor, ctor, check, detect, instanceof |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 6940 |
+| # downloads        | 6887 |
 | # stars            | 0 |
 
 ## Links

@@ -24,6 +24,7 @@ trait ValidationError extends Error {
     * @returns {string}
     */
   def formatSchema(schema: Schema): String = js.native
+  def formatSchema(schema: Schema, logic: js.UndefOr[scala.Nothing], prevSchemas: js.Array[js.Object]): String = js.native
   def formatSchema(schema: Schema, logic: Boolean): String = js.native
   def formatSchema(schema: Schema, logic: Boolean, prevSchemas: js.Array[js.Object]): String = js.native
   /**
@@ -55,12 +56,37 @@ trait ValidationError extends Error {
     * @returns {string}
     */
   def getSchemaPartText(): String = js.native
+  def getSchemaPartText(
+    schemaPart: js.UndefOr[Schema],
+    additionalPath: js.UndefOr[scala.Nothing],
+    needDot: js.UndefOr[scala.Nothing],
+    logic: Boolean
+  ): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[Schema], additionalPath: js.UndefOr[scala.Nothing], needDot: Boolean): String = js.native
+  def getSchemaPartText(
+    schemaPart: js.UndefOr[Schema],
+    additionalPath: js.UndefOr[scala.Nothing],
+    needDot: Boolean,
+    logic: Boolean
+  ): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[Schema], additionalPath: js.Array[String]): String = js.native
+  def getSchemaPartText(
+    schemaPart: js.UndefOr[Schema],
+    additionalPath: js.Array[String],
+    needDot: js.UndefOr[scala.Nothing],
+    logic: Boolean
+  ): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[Schema], additionalPath: js.Array[String], needDot: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[Schema], additionalPath: js.Array[String], needDot: Boolean, logic: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[Schema], additionalPath: Boolean): String = js.native
+  def getSchemaPartText(
+    schemaPart: js.UndefOr[Schema],
+    additionalPath: Boolean,
+    needDot: js.UndefOr[scala.Nothing],
+    logic: Boolean
+  ): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[Schema], additionalPath: Boolean, needDot: Boolean): String = js.native
+  def getSchemaPartText(schemaPart: js.UndefOr[Schema], additionalPath: Boolean, needDot: Boolean, logic: Boolean): String = js.native
   def getSchemaPartText(schemaPart: Schema): String = js.native
-  def getSchemaPartText(schemaPart: Schema, additionalPath: js.Array[String]): String = js.native
-  def getSchemaPartText(schemaPart: Schema, additionalPath: js.Array[String], needDot: Boolean): String = js.native
-  def getSchemaPartText(schemaPart: Schema, additionalPath: js.Array[String], needDot: Boolean, logic: Boolean): String = js.native
-  def getSchemaPartText(schemaPart: Schema, additionalPath: Boolean): String = js.native
-  def getSchemaPartText(schemaPart: Schema, additionalPath: Boolean, needDot: Boolean): String = js.native
-  def getSchemaPartText(schemaPart: Schema, additionalPath: Boolean, needDot: Boolean, logic: Boolean): String = js.native
 }
 

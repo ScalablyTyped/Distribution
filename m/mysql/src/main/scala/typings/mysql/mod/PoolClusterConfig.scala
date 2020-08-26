@@ -4,44 +4,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PoolClusterConfig extends js.Object {
   /**
     * If true, PoolCluster will attempt to reconnect when connection fails. (Default: true)
     */
-  var canRetry: js.UndefOr[Boolean] = js.undefined
+  var canRetry: js.UndefOr[Boolean] = js.native
   /**
     * The default selector. (Default: RR)
     * RR: Select one alternately. (Round-Robin)
     * RANDOM: Select the node by random function.
     * ORDER: Select the first node available unconditionally.
     */
-  var defaultSelector: js.UndefOr[String] = js.undefined
+  var defaultSelector: js.UndefOr[String] = js.native
   /**
     * If connection fails, node's errorCount increases. When errorCount is greater than removeNodeErrorCount,
     * remove a node in the PoolCluster. (Default: 5)
     */
-  var removeNodeErrorCount: js.UndefOr[Double] = js.undefined
+  var removeNodeErrorCount: js.UndefOr[Double] = js.native
   /**
     * If connection fails, specifies the number of milliseconds before another connection attempt will be made.
     * If set to 0, then node will be removed instead and never re-used. (Default: 0)
     */
-  var restoreNodeTimeout: js.UndefOr[Double] = js.undefined
+  var restoreNodeTimeout: js.UndefOr[Double] = js.native
 }
 
 object PoolClusterConfig {
   @scala.inline
-  def apply(
-    canRetry: js.UndefOr[Boolean] = js.undefined,
-    defaultSelector: String = null,
-    removeNodeErrorCount: js.UndefOr[Double] = js.undefined,
-    restoreNodeTimeout: js.UndefOr[Double] = js.undefined
-  ): PoolClusterConfig = {
+  def apply(): PoolClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canRetry)) __obj.updateDynamic("canRetry")(canRetry.get.asInstanceOf[js.Any])
-    if (defaultSelector != null) __obj.updateDynamic("defaultSelector")(defaultSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeNodeErrorCount)) __obj.updateDynamic("removeNodeErrorCount")(removeNodeErrorCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(restoreNodeTimeout)) __obj.updateDynamic("restoreNodeTimeout")(restoreNodeTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolClusterConfig]
   }
+  @scala.inline
+  implicit class PoolClusterConfigOps[Self <: PoolClusterConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanRetry(value: Boolean): Self = this.set("canRetry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanRetry: Self = this.set("canRetry", js.undefined)
+    @scala.inline
+    def setDefaultSelector(value: String): Self = this.set("defaultSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSelector: Self = this.set("defaultSelector", js.undefined)
+    @scala.inline
+    def setRemoveNodeErrorCount(value: Double): Self = this.set("removeNodeErrorCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveNodeErrorCount: Self = this.set("removeNodeErrorCount", js.undefined)
+    @scala.inline
+    def setRestoreNodeTimeout(value: Double): Self = this.set("restoreNodeTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestoreNodeTimeout: Self = this.set("restoreNodeTimeout", js.undefined)
+  }
+  
 }
 

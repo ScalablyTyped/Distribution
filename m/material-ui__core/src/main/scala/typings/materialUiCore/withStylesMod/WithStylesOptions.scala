@@ -14,16 +14,34 @@ trait WithStylesOptions[ClassKey /* <: String */] extends js.Object {
 
 object WithStylesOptions {
   @scala.inline
-  def apply[/* <: java.lang.String */ ClassKey](
-    flip: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    withTheme: js.UndefOr[Boolean] = js.undefined
-  ): WithStylesOptions[ClassKey] = {
+  def apply[/* <: java.lang.String */ ClassKey](): WithStylesOptions[ClassKey] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(withTheme)) __obj.updateDynamic("withTheme")(withTheme.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithStylesOptions[ClassKey]]
   }
+  @scala.inline
+  implicit class WithStylesOptionsOps[Self <: WithStylesOptions[_], /* <: java.lang.String */ ClassKey] (val x: Self with WithStylesOptions[ClassKey]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlip(value: Boolean): Self = this.set("flip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlip: Self = this.set("flip", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setWithTheme(value: Boolean): Self = this.set("withTheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithTheme: Self = this.set("withTheme", js.undefined)
+  }
+  
 }
 

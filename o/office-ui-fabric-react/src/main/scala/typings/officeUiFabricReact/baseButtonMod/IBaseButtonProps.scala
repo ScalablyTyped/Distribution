@@ -5,19 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBaseButtonProps extends IButtonProps {
-  var baseClassName: js.UndefOr[String] = js.undefined
-  var variantClassName: js.UndefOr[String] = js.undefined
+  var baseClassName: js.UndefOr[String] = js.native
+  var variantClassName: js.UndefOr[String] = js.native
 }
 
 object IBaseButtonProps {
   @scala.inline
-  def apply(IButtonProps: IButtonProps = null, baseClassName: String = null, variantClassName: String = null): IBaseButtonProps = {
+  def apply(): IBaseButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (IButtonProps != null) js.Dynamic.global.Object.assign(__obj, IButtonProps)
-    if (baseClassName != null) __obj.updateDynamic("baseClassName")(baseClassName.asInstanceOf[js.Any])
-    if (variantClassName != null) __obj.updateDynamic("variantClassName")(variantClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseButtonProps]
   }
+  @scala.inline
+  implicit class IBaseButtonPropsOps[Self <: IBaseButtonProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseClassName(value: String): Self = this.set("baseClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseClassName: Self = this.set("baseClassName", js.undefined)
+    @scala.inline
+    def setVariantClassName(value: String): Self = this.set("variantClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariantClassName: Self = this.set("variantClassName", js.undefined)
+  }
+  
 }
 

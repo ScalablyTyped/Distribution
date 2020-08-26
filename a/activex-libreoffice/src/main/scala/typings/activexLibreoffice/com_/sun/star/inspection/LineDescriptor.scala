@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * @see PropertyLineElement
   * @since OOo 2.0.3
   */
+@js.native
 trait LineDescriptor extends js.Object {
   /**
     * describes the category into which the property should be sorted by the {@link ObjectInspector} .
@@ -28,14 +29,14 @@ trait LineDescriptor extends js.Object {
     * categories.
     * @see XObjectInspectorModel.describeCategories
     */
-  var Category: String
+  var Category: String = js.native
   /**
     * denotes the control which should be used to represent the property at the UI.
     * @see XPropertyControlFactory
     */
-  var Control: XPropertyControl
+  var Control: XPropertyControl = js.native
   /** denotes the human-readable display name used to present a property to the user */
-  var DisplayName: String
+  var DisplayName: String = js.native
   /**
     * determines whether a button exists which can be used for a more complex, interactive property value input.
     *
@@ -45,7 +46,7 @@ trait LineDescriptor extends js.Object {
     * @see PrimaryButtonImageURL
     * @see PrimaryButtonImage
     */
-  var HasPrimaryButton: Boolean
+  var HasPrimaryButton: Boolean = js.native
   /**
     * determines whether a secondary button exists which can be used for a more complex, interactive property value input.
     *
@@ -53,9 +54,9 @@ trait LineDescriptor extends js.Object {
     * @see XPropertyHandler.onInteractivePropertySelection
     * @see HasSecondaryButton
     */
-  var HasSecondaryButton: Boolean
+  var HasSecondaryButton: Boolean = js.native
   /** specifies the URL to the help topic to be associated with the property */
-  var HelpURL: String
+  var HelpURL: String = js.native
   /**
     * describes the indent level for the property
     *
@@ -64,7 +65,7 @@ trait LineDescriptor extends js.Object {
     *
     * Normally, XPropertyHandlers will set this to `0` when describing the UI for a normal property.
     */
-  var IndentLevel: Double
+  var IndentLevel: Double = js.native
   /**
     * describes a unique id to associate with the primary button
     *
@@ -73,7 +74,7 @@ trait LineDescriptor extends js.Object {
     *
     * If a primary button exists for a property's UI representation ( {@link HasPrimaryButton} ), it gets the ID specified herein.
     */
-  var PrimaryButtonId: String
+  var PrimaryButtonId: String = js.native
   /**
     * describes a graphics to display at the primary button, if any.
     *
@@ -81,7 +82,7 @@ trait LineDescriptor extends js.Object {
     * @see HasPrimaryButton
     * @see PrimaryButtonImageURL
     */
-  var PrimaryButtonImage: XGraphic
+  var PrimaryButtonImage: XGraphic = js.native
   /**
     * describes the URL of an image to display on the primary button, if any.
     *
@@ -93,14 +94,14 @@ trait LineDescriptor extends js.Object {
     * `PrimaryButtonImageURL` empty, and use the {@link PrimaryButtonImage} property.
     * @see PrimaryButtonImage
     */
-  var PrimaryButtonImageURL: String
+  var PrimaryButtonImageURL: String = js.native
   /**
     * describes a unique id to associate with the primary button
     *
     * If a secondary button exists for a property's UI representation ( {@link HasSecondaryButton} ), it gets the ID specified herein.
     * @see PrimaryButtonId
     */
-  var SecondaryButtonId: String
+  var SecondaryButtonId: String = js.native
   /**
     * describes a graphics to display at the secondary button, if any.
     *
@@ -108,7 +109,7 @@ trait LineDescriptor extends js.Object {
     * @see HasSecondaryButton
     * @see SecondaryButtonImageURL
     */
-  var SecondaryButtonImage: XGraphic
+  var SecondaryButtonImage: XGraphic = js.native
   /**
     * describes the URL of an image to display on the secondary button, if any.
     *
@@ -120,7 +121,7 @@ trait LineDescriptor extends js.Object {
     * `SecondaryButtonImageURL` empty, and use the {@link SecondaryButtonImage} property.
     * @see SecondaryButtonImage
     */
-  var SecondaryButtonImageURL: String
+  var SecondaryButtonImageURL: String = js.native
 }
 
 object LineDescriptor {
@@ -143,5 +144,44 @@ object LineDescriptor {
     val __obj = js.Dynamic.literal(Category = Category.asInstanceOf[js.Any], Control = Control.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], HasPrimaryButton = HasPrimaryButton.asInstanceOf[js.Any], HasSecondaryButton = HasSecondaryButton.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], IndentLevel = IndentLevel.asInstanceOf[js.Any], PrimaryButtonId = PrimaryButtonId.asInstanceOf[js.Any], PrimaryButtonImage = PrimaryButtonImage.asInstanceOf[js.Any], PrimaryButtonImageURL = PrimaryButtonImageURL.asInstanceOf[js.Any], SecondaryButtonId = SecondaryButtonId.asInstanceOf[js.Any], SecondaryButtonImage = SecondaryButtonImage.asInstanceOf[js.Any], SecondaryButtonImageURL = SecondaryButtonImageURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineDescriptor]
   }
+  @scala.inline
+  implicit class LineDescriptorOps[Self <: LineDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: String): Self = this.set("Category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setControl(value: XPropertyControl): Self = this.set("Control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasPrimaryButton(value: Boolean): Self = this.set("HasPrimaryButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasSecondaryButton(value: Boolean): Self = this.set("HasSecondaryButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndentLevel(value: Double): Self = this.set("IndentLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrimaryButtonId(value: String): Self = this.set("PrimaryButtonId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrimaryButtonImage(value: XGraphic): Self = this.set("PrimaryButtonImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrimaryButtonImageURL(value: String): Self = this.set("PrimaryButtonImageURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecondaryButtonId(value: String): Self = this.set("SecondaryButtonId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecondaryButtonImage(value: XGraphic): Self = this.set("SecondaryButtonImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecondaryButtonImageURL(value: String): Self = this.set("SecondaryButtonImageURL", value.asInstanceOf[js.Any])
+  }
+  
 }
 

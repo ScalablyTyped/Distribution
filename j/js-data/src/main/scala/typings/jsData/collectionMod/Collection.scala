@@ -193,6 +193,7 @@ trait Collection
     * @param opts
     */
   def createIndex(name: js.Any): Unit = js.native
+  def createIndex(name: js.Any, fieldList: js.UndefOr[scala.Nothing], opts: js.Any): Unit = js.native
   def createIndex(name: js.Any, fieldList: js.Any): Unit = js.native
   def createIndex(name: js.Any, fieldList: js.Any, opts: js.Any): Unit = js.native
   /**
@@ -286,6 +287,8 @@ trait Collection
     * @returns {Array} The result.
     */
   def getAll(): js.Any = js.native
+  def getAll(keyList: js.UndefOr[scala.Nothing], args: js.Any*): js.Any = js.native
+  def getAll(keyList: js.UndefOr[scala.Nothing], opts: js.Any): js.Any = js.native
   def getAll(keyList: String): js.Any = js.native
   def getAll(keyList: String, args: js.Any*): js.Any = js.native
   def getAll(keyList: String, opts: js.Any): js.Any = js.native

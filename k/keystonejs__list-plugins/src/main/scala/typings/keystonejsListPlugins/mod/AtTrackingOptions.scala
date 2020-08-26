@@ -4,23 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AtTrackingOptions extends TrackingOptions {
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
 }
 
 object AtTrackingOptions {
   @scala.inline
-  def apply(
-    access: js.Any,
-    createdAtField: String = null,
-    format: String = null,
-    updatedAtField: String = null
-  ): AtTrackingOptions = {
+  def apply(access: js.Any): AtTrackingOptions = {
     val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any])
-    if (createdAtField != null) __obj.updateDynamic("createdAtField")(createdAtField.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (updatedAtField != null) __obj.updateDynamic("updatedAtField")(updatedAtField.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtTrackingOptions]
   }
+  @scala.inline
+  implicit class AtTrackingOptionsOps[Self <: AtTrackingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+  }
+  
 }
 

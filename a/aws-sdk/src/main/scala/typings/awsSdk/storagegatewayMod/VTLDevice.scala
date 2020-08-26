@@ -30,20 +30,42 @@ trait VTLDevice extends js.Object {
 
 object VTLDevice {
   @scala.inline
-  def apply(
-    DeviceiSCSIAttributes: DeviceiSCSIAttributes = null,
-    VTLDeviceARN: VTLDeviceARN = null,
-    VTLDeviceProductIdentifier: VTLDeviceProductIdentifier = null,
-    VTLDeviceType: VTLDeviceType = null,
-    VTLDeviceVendor: VTLDeviceVendor = null
-  ): VTLDevice = {
+  def apply(): VTLDevice = {
     val __obj = js.Dynamic.literal()
-    if (DeviceiSCSIAttributes != null) __obj.updateDynamic("DeviceiSCSIAttributes")(DeviceiSCSIAttributes.asInstanceOf[js.Any])
-    if (VTLDeviceARN != null) __obj.updateDynamic("VTLDeviceARN")(VTLDeviceARN.asInstanceOf[js.Any])
-    if (VTLDeviceProductIdentifier != null) __obj.updateDynamic("VTLDeviceProductIdentifier")(VTLDeviceProductIdentifier.asInstanceOf[js.Any])
-    if (VTLDeviceType != null) __obj.updateDynamic("VTLDeviceType")(VTLDeviceType.asInstanceOf[js.Any])
-    if (VTLDeviceVendor != null) __obj.updateDynamic("VTLDeviceVendor")(VTLDeviceVendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[VTLDevice]
   }
+  @scala.inline
+  implicit class VTLDeviceOps[Self <: VTLDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceiSCSIAttributes(value: DeviceiSCSIAttributes): Self = this.set("DeviceiSCSIAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceiSCSIAttributes: Self = this.set("DeviceiSCSIAttributes", js.undefined)
+    @scala.inline
+    def setVTLDeviceARN(value: VTLDeviceARN): Self = this.set("VTLDeviceARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVTLDeviceARN: Self = this.set("VTLDeviceARN", js.undefined)
+    @scala.inline
+    def setVTLDeviceProductIdentifier(value: VTLDeviceProductIdentifier): Self = this.set("VTLDeviceProductIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVTLDeviceProductIdentifier: Self = this.set("VTLDeviceProductIdentifier", js.undefined)
+    @scala.inline
+    def setVTLDeviceType(value: VTLDeviceType): Self = this.set("VTLDeviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVTLDeviceType: Self = this.set("VTLDeviceType", js.undefined)
+    @scala.inline
+    def setVTLDeviceVendor(value: VTLDeviceVendor): Self = this.set("VTLDeviceVendor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVTLDeviceVendor: Self = this.set("VTLDeviceVendor", js.undefined)
+  }
+  
 }
 

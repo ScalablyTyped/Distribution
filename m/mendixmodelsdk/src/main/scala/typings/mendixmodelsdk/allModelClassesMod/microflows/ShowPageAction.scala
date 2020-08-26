@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/Show+Page relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/show-page relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ShowPageAction")
 @js.native

@@ -34,22 +34,46 @@ trait ShareResult extends js.Object {
 
 object ShareResult {
   @scala.inline
-  def apply(
-    InviteePrincipalId: IdType = null,
-    PrincipalId: IdType = null,
-    Role: RoleType = null,
-    ShareId: ResourceIdType = null,
-    Status: ShareStatusType = null,
-    StatusMessage: MessageType = null
-  ): ShareResult = {
+  def apply(): ShareResult = {
     val __obj = js.Dynamic.literal()
-    if (InviteePrincipalId != null) __obj.updateDynamic("InviteePrincipalId")(InviteePrincipalId.asInstanceOf[js.Any])
-    if (PrincipalId != null) __obj.updateDynamic("PrincipalId")(PrincipalId.asInstanceOf[js.Any])
-    if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
-    if (ShareId != null) __obj.updateDynamic("ShareId")(ShareId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareResult]
   }
+  @scala.inline
+  implicit class ShareResultOps[Self <: ShareResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInviteePrincipalId(value: IdType): Self = this.set("InviteePrincipalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInviteePrincipalId: Self = this.set("InviteePrincipalId", js.undefined)
+    @scala.inline
+    def setPrincipalId(value: IdType): Self = this.set("PrincipalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalId: Self = this.set("PrincipalId", js.undefined)
+    @scala.inline
+    def setRole(value: RoleType): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("Role", js.undefined)
+    @scala.inline
+    def setShareId(value: ResourceIdType): Self = this.set("ShareId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShareId: Self = this.set("ShareId", js.undefined)
+    @scala.inline
+    def setStatus(value: ShareStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: MessageType): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ConversationLogsResponse extends js.Object {
 
 object ConversationLogsResponse {
   @scala.inline
-  def apply(iamRoleArn: IamRoleArn = null, logSettings: LogSettingsResponseList = null): ConversationLogsResponse = {
+  def apply(): ConversationLogsResponse = {
     val __obj = js.Dynamic.literal()
-    if (iamRoleArn != null) __obj.updateDynamic("iamRoleArn")(iamRoleArn.asInstanceOf[js.Any])
-    if (logSettings != null) __obj.updateDynamic("logSettings")(logSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversationLogsResponse]
   }
+  @scala.inline
+  implicit class ConversationLogsResponseOps[Self <: ConversationLogsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIamRoleArn(value: IamRoleArn): Self = this.set("iamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("iamRoleArn", js.undefined)
+    @scala.inline
+    def setLogSettingsVarargs(value: LogSettingsResponse*): Self = this.set("logSettings", js.Array(value :_*))
+    @scala.inline
+    def setLogSettings(value: LogSettingsResponseList): Self = this.set("logSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogSettings: Self = this.set("logSettings", js.undefined)
+  }
+  
 }
 

@@ -211,6 +211,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getBounceCounts(): js.Promise[BounceCounts] = js.native
+    def getBounceCounts(filter: js.UndefOr[scala.Nothing], callback: Callback[BounceCounts]): js.Promise[BounceCounts] = js.native
     def getBounceCounts(filter: StatisticsFilteringParameters): js.Promise[BounceCounts] = js.native
     def getBounceCounts(filter: StatisticsFilteringParameters, callback: Callback[BounceCounts]): js.Promise[BounceCounts] = js.native
     /**
@@ -230,6 +231,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getBounces(): js.Promise[Bounces] = js.native
+    def getBounces(filter: js.UndefOr[scala.Nothing], callback: Callback[Bounces]): js.Promise[Bounces] = js.native
     def getBounces(filter: BounceFilteringParameters): js.Promise[Bounces] = js.native
     def getBounces(filter: BounceFilteringParameters, callback: Callback[Bounces]): js.Promise[Bounces] = js.native
     /**
@@ -239,6 +241,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getClickBrowserUsage(): js.Promise[BrowserUsageCounts] = js.native
+    def getClickBrowserUsage(filter: js.UndefOr[scala.Nothing], callback: Callback[BrowserUsageCounts]): js.Promise[BrowserUsageCounts] = js.native
     def getClickBrowserUsage(filter: StatisticsFilteringParameters): js.Promise[BrowserUsageCounts] = js.native
     def getClickBrowserUsage(filter: StatisticsFilteringParameters, callback: Callback[BrowserUsageCounts]): js.Promise[BrowserUsageCounts] = js.native
     /**
@@ -249,6 +252,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getClickCounts(): js.Promise[ClickCounts] = js.native
+    def getClickCounts(filter: js.UndefOr[scala.Nothing], callback: Callback[ClickCounts]): js.Promise[ClickCounts] = js.native
     def getClickCounts(filter: StatisticsFilteringParameters): js.Promise[ClickCounts] = js.native
     def getClickCounts(filter: StatisticsFilteringParameters, callback: Callback[ClickCounts]): js.Promise[ClickCounts] = js.native
     /**
@@ -260,6 +264,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getClickLocation(): js.Promise[ClickLocationCounts] = js.native
+    def getClickLocation(filter: js.UndefOr[scala.Nothing], callback: Callback[ClickLocationCounts]): js.Promise[ClickLocationCounts] = js.native
     def getClickLocation(filter: StatisticsFilteringParameters): js.Promise[ClickLocationCounts] = js.native
     def getClickLocation(filter: StatisticsFilteringParameters, callback: Callback[ClickLocationCounts]): js.Promise[ClickLocationCounts] = js.native
     /**
@@ -270,6 +275,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getClickPlatformUsage(): js.Promise[ClickPlaformUsageCounts] = js.native
+    def getClickPlatformUsage(filter: js.UndefOr[scala.Nothing], callback: Callback[ClickPlaformUsageCounts]): js.Promise[ClickPlaformUsageCounts] = js.native
     def getClickPlatformUsage(filter: StatisticsFilteringParameters): js.Promise[ClickPlaformUsageCounts] = js.native
     def getClickPlatformUsage(filter: StatisticsFilteringParameters, callback: Callback[ClickPlaformUsageCounts]): js.Promise[ClickPlaformUsageCounts] = js.native
     /**
@@ -288,6 +294,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getEmailOpenClientUsage(): js.Promise[EmailClientUsageCounts] = js.native
+    def getEmailOpenClientUsage(filter: js.UndefOr[scala.Nothing], callback: Callback[EmailClientUsageCounts]): js.Promise[EmailClientUsageCounts] = js.native
     def getEmailOpenClientUsage(filter: StatisticsFilteringParameters): js.Promise[EmailClientUsageCounts] = js.native
     def getEmailOpenClientUsage(filter: StatisticsFilteringParameters, callback: Callback[EmailClientUsageCounts]): js.Promise[EmailClientUsageCounts] = js.native
     /**
@@ -298,6 +305,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getEmailOpenCounts(): js.Promise[OpenCounts] = js.native
+    def getEmailOpenCounts(filter: js.UndefOr[scala.Nothing], callback: Callback[OpenCounts]): js.Promise[OpenCounts] = js.native
     def getEmailOpenCounts(filter: StatisticsFilteringParameters): js.Promise[OpenCounts] = js.native
     def getEmailOpenCounts(filter: StatisticsFilteringParameters, callback: Callback[OpenCounts]): js.Promise[OpenCounts] = js.native
     /**
@@ -308,6 +316,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getEmailOpenPlatformUsage(): js.Promise[EmailPlaformUsageCounts] = js.native
+    def getEmailOpenPlatformUsage(filter: js.UndefOr[scala.Nothing], callback: Callback[EmailPlaformUsageCounts]): js.Promise[EmailPlaformUsageCounts] = js.native
     def getEmailOpenPlatformUsage(filter: StatisticsFilteringParameters): js.Promise[EmailPlaformUsageCounts] = js.native
     def getEmailOpenPlatformUsage(filter: StatisticsFilteringParameters, callback: Callback[EmailPlaformUsageCounts]): js.Promise[EmailPlaformUsageCounts] = js.native
     /**
@@ -317,6 +326,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getEmailOpenReadTimes(): js.Promise[EmailReadTimesCounts] = js.native
+    def getEmailOpenReadTimes(filter: js.UndefOr[scala.Nothing], callback: Callback[EmailReadTimesCounts]): js.Promise[EmailReadTimesCounts] = js.native
     def getEmailOpenReadTimes(filter: StatisticsFilteringParameters): js.Promise[EmailReadTimesCounts] = js.native
     def getEmailOpenReadTimes(filter: StatisticsFilteringParameters, callback: Callback[EmailReadTimesCounts]): js.Promise[EmailReadTimesCounts] = js.native
     /**
@@ -336,6 +346,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getInboundMessages(): js.Promise[InboundMessages] = js.native
+    def getInboundMessages(filter: js.UndefOr[scala.Nothing], callback: Callback[InboundMessages]): js.Promise[InboundMessages] = js.native
     def getInboundMessages(filter: InboundMessagesFilteringParameters): js.Promise[InboundMessages] = js.native
     def getInboundMessages(filter: InboundMessagesFilteringParameters, callback: Callback[InboundMessages]): js.Promise[InboundMessages] = js.native
     /**
@@ -346,6 +357,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getInboundRuleTriggers(): js.Promise[InboundRules] = js.native
+    def getInboundRuleTriggers(filter: js.UndefOr[scala.Nothing], callback: Callback[InboundRules]): js.Promise[InboundRules] = js.native
     def getInboundRuleTriggers(filter: FilteringParameters): js.Promise[InboundRules] = js.native
     def getInboundRuleTriggers(filter: FilteringParameters, callback: Callback[InboundRules]): js.Promise[InboundRules] = js.native
     /**
@@ -356,6 +368,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getMessageClicks(): js.Promise[OutboundMessageClicks] = js.native
+    def getMessageClicks(filter: js.UndefOr[scala.Nothing], callback: Callback[OutboundMessageClicks]): js.Promise[OutboundMessageClicks] = js.native
     def getMessageClicks(filter: OutboundMessageClicksFilteringParameters): js.Promise[OutboundMessageClicks] = js.native
     def getMessageClicks(filter: OutboundMessageClicksFilteringParameters, callback: Callback[OutboundMessageClicks]): js.Promise[OutboundMessageClicks] = js.native
     /**
@@ -367,6 +380,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getMessageClicksForSingleMessage(messageId: String): js.Promise[OutboundMessageClicks] = js.native
+    def getMessageClicksForSingleMessage(messageId: String, filter: js.UndefOr[scala.Nothing], callback: Callback[OutboundMessageClicks]): js.Promise[OutboundMessageClicks] = js.native
     def getMessageClicksForSingleMessage(messageId: String, filter: OutboundMessageClicksFilteringParameters): js.Promise[OutboundMessageClicks] = js.native
     def getMessageClicksForSingleMessage(
       messageId: String,
@@ -381,6 +395,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getMessageOpens(): js.Promise[OutboundMessageOpens] = js.native
+    def getMessageOpens(filter: js.UndefOr[scala.Nothing], callback: Callback[OutboundMessageOpens]): js.Promise[OutboundMessageOpens] = js.native
     def getMessageOpens(filter: OutboundMessageOpensFilteringParameters): js.Promise[OutboundMessageOpens] = js.native
     def getMessageOpens(filter: OutboundMessageOpensFilteringParameters, callback: Callback[OutboundMessageOpens]): js.Promise[OutboundMessageOpens] = js.native
     /**
@@ -391,6 +406,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getMessageOpensForSingleMessage(messageId: String): js.Promise[OutboundMessageOpens] = js.native
+    def getMessageOpensForSingleMessage(messageId: String, filter: js.UndefOr[scala.Nothing], callback: Callback[OutboundMessageOpens]): js.Promise[OutboundMessageOpens] = js.native
     def getMessageOpensForSingleMessage(messageId: String, filter: OutboundMessageOpensFilteringParameters): js.Promise[OutboundMessageOpens] = js.native
     def getMessageOpensForSingleMessage(
       messageId: String,
@@ -423,6 +439,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getOutboundMessages(): js.Promise[OutboundMessages] = js.native
+    def getOutboundMessages(filter: js.UndefOr[scala.Nothing], callback: Callback[OutboundMessages]): js.Promise[OutboundMessages] = js.native
     def getOutboundMessages(filter: OutboundMessagesFilteringParameters): js.Promise[OutboundMessages] = js.native
     def getOutboundMessages(filter: OutboundMessagesFilteringParameters, callback: Callback[OutboundMessages]): js.Promise[OutboundMessages] = js.native
     /**
@@ -433,6 +450,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getOutboundOverview(): js.Promise[OutboundStatistics] = js.native
+    def getOutboundOverview(filter: js.UndefOr[scala.Nothing], callback: Callback[OutboundStatistics]): js.Promise[OutboundStatistics] = js.native
     def getOutboundOverview(filter: StatisticsFilteringParameters): js.Promise[OutboundStatistics] = js.native
     def getOutboundOverview(filter: StatisticsFilteringParameters, callback: Callback[OutboundStatistics]): js.Promise[OutboundStatistics] = js.native
     /**
@@ -443,6 +461,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getSentCounts(): js.Promise[SentCounts] = js.native
+    def getSentCounts(filter: js.UndefOr[scala.Nothing], callback: Callback[SentCounts]): js.Promise[SentCounts] = js.native
     def getSentCounts(filter: StatisticsFilteringParameters): js.Promise[SentCounts] = js.native
     def getSentCounts(filter: StatisticsFilteringParameters, callback: Callback[SentCounts]): js.Promise[SentCounts] = js.native
     /**
@@ -461,6 +480,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getSpamComplaintsCounts(): js.Promise[SpamCounts] = js.native
+    def getSpamComplaintsCounts(filter: js.UndefOr[scala.Nothing], callback: Callback[SpamCounts]): js.Promise[SpamCounts] = js.native
     def getSpamComplaintsCounts(filter: StatisticsFilteringParameters): js.Promise[SpamCounts] = js.native
     def getSpamComplaintsCounts(filter: StatisticsFilteringParameters, callback: Callback[SpamCounts]): js.Promise[SpamCounts] = js.native
     /**
@@ -491,6 +511,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getTemplates(): js.Promise[Templates] = js.native
+    def getTemplates(filter: js.UndefOr[scala.Nothing], callback: Callback[Templates]): js.Promise[Templates] = js.native
     def getTemplates(filter: TemplateFilteringParameters): js.Promise[Templates] = js.native
     def getTemplates(filter: TemplateFilteringParameters, callback: Callback[Templates]): js.Promise[Templates] = js.native
     /**
@@ -501,6 +522,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getTrackedEmailCounts(): js.Promise[TrackedEmailCounts] = js.native
+    def getTrackedEmailCounts(filter: js.UndefOr[scala.Nothing], callback: Callback[TrackedEmailCounts]): js.Promise[TrackedEmailCounts] = js.native
     def getTrackedEmailCounts(filter: StatisticsFilteringParameters): js.Promise[TrackedEmailCounts] = js.native
     def getTrackedEmailCounts(filter: StatisticsFilteringParameters, callback: Callback[TrackedEmailCounts]): js.Promise[TrackedEmailCounts] = js.native
     /**
@@ -520,6 +542,7 @@ object serverClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getWebhooks(): js.Promise[Webhooks] = js.native
+    def getWebhooks(filter: js.UndefOr[scala.Nothing], callback: Callback[Webhooks]): js.Promise[Webhooks] = js.native
     def getWebhooks(filter: WebhookFilteringParameters): js.Promise[Webhooks] = js.native
     def getWebhooks(filter: WebhookFilteringParameters, callback: Callback[Webhooks]): js.Promise[Webhooks] = js.native
     /**

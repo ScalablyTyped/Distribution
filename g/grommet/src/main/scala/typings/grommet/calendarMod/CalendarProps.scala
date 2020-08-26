@@ -14,72 +14,129 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalendarProps extends js.Object {
-  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
-  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var animate: js.UndefOr[AnimateType] = js.undefined
-  var bounds: js.UndefOr[js.Array[String]] = js.undefined
-  var date: js.UndefOr[String] = js.undefined
-  var dates: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
-  var daysOfWeek: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
-  var firstDayOfWeek: js.UndefOr[`0` | `1`] = js.undefined
-  var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var header: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var onReference: js.UndefOr[js.Function1[/* reference */ String, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* select */ js.Array[String], _]] = js.undefined
-  var range: js.UndefOr[Boolean] = js.undefined
-  var reference: js.UndefOr[String] = js.undefined
-  var showAdjacentDays: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[small | medium | large | String] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+  var alignSelf: js.UndefOr[AlignSelfType] = js.native
+  var animate: js.UndefOr[AnimateType] = js.native
+  var bounds: js.UndefOr[js.Array[String]] = js.native
+  var date: js.UndefOr[String] = js.native
+  var dates: js.UndefOr[js.Array[String | js.Array[String]]] = js.native
+  var daysOfWeek: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[js.Array[String | js.Array[String]]] = js.native
+  var firstDayOfWeek: js.UndefOr[`0` | `1`] = js.native
+  var gridArea: js.UndefOr[GridAreaType] = js.native
+  var header: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var onReference: js.UndefOr[js.Function1[/* reference */ String, Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function1[/* select */ js.Array[String], _]] = js.native
+  var range: js.UndefOr[Boolean] = js.native
+  var reference: js.UndefOr[String] = js.native
+  var showAdjacentDays: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[small | medium | large | String] = js.native
 }
 
 object CalendarProps {
   @scala.inline
-  def apply(
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    animate: js.UndefOr[AnimateType] = js.undefined,
-    bounds: js.Array[String] = null,
-    date: String = null,
-    dates: js.Array[String | js.Array[String]] = null,
-    daysOfWeek: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.Array[String | js.Array[String]] = null,
-    firstDayOfWeek: `0` | `1` = null,
-    gridArea: GridAreaType = null,
-    header: /* repeated */ js.Any => _ = null,
-    locale: String = null,
-    margin: MarginType = null,
-    onReference: /* reference */ String => Unit = null,
-    onSelect: /* select */ js.Array[String] => _ = null,
-    range: js.UndefOr[Boolean] = js.undefined,
-    reference: String = null,
-    showAdjacentDays: js.UndefOr[Boolean] = js.undefined,
-    size: small | medium | large | String = null
-  ): CalendarProps = {
+  def apply(): CalendarProps = {
     val __obj = js.Dynamic.literal()
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (dates != null) __obj.updateDynamic("dates")(dates.asInstanceOf[js.Any])
-    if (!js.isUndefined(daysOfWeek)) __obj.updateDynamic("daysOfWeek")(daysOfWeek.get.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(js.Any.fromFunction1(header))
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onReference != null) __obj.updateDynamic("onReference")(js.Any.fromFunction1(onReference))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
-    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAdjacentDays)) __obj.updateDynamic("showAdjacentDays")(showAdjacentDays.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarProps]
   }
+  @scala.inline
+  implicit class CalendarPropsOps[Self <: CalendarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA11yTitle(value: A11yTitleType): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setAlignSelf(value: AlignSelfType): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setAnimate(value: AnimateType): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setBoundsVarargs(value: String*): Self = this.set("bounds", js.Array(value :_*))
+    @scala.inline
+    def setBounds(value: js.Array[String]): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounds: Self = this.set("bounds", js.undefined)
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDatesVarargs(value: (String | js.Array[String])*): Self = this.set("dates", js.Array(value :_*))
+    @scala.inline
+    def setDates(value: js.Array[String | js.Array[String]]): Self = this.set("dates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDates: Self = this.set("dates", js.undefined)
+    @scala.inline
+    def setDaysOfWeek(value: Boolean): Self = this.set("daysOfWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDaysOfWeek: Self = this.set("daysOfWeek", js.undefined)
+    @scala.inline
+    def setDisabledVarargs(value: (String | js.Array[String])*): Self = this.set("disabled", js.Array(value :_*))
+    @scala.inline
+    def setDisabled(value: js.Array[String | js.Array[String]]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFirstDayOfWeek(value: `0` | `1`): Self = this.set("firstDayOfWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstDayOfWeek: Self = this.set("firstDayOfWeek", js.undefined)
+    @scala.inline
+    def setGridArea(value: GridAreaType): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setHeader(value: /* repeated */ js.Any => _): Self = this.set("header", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setOnReference(value: /* reference */ String => Unit): Self = this.set("onReference", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReference: Self = this.set("onReference", js.undefined)
+    @scala.inline
+    def setOnSelect(value: /* select */ js.Array[String] => _): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setRange(value: Boolean): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setReference(value: String): Self = this.set("reference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReference: Self = this.set("reference", js.undefined)
+    @scala.inline
+    def setShowAdjacentDays(value: Boolean): Self = this.set("showAdjacentDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAdjacentDays: Self = this.set("showAdjacentDays", js.undefined)
+    @scala.inline
+    def setSize(value: small | medium | large | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

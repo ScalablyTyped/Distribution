@@ -8,137 +8,174 @@ import scala.scalajs.js.annotation._
   * Roles/organizations the practitioner is associated with
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait PractitionerRole extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait PractitionerRole extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.undefined
+  var _active: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'availabilityExceptions'.
     */
-  var _availabilityExceptions: js.UndefOr[Element] = js.undefined
+  var _availabilityExceptions: js.UndefOr[Element] = js.native
   /**
     * Whether this practitioner's record is in active use
     */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
   /**
     * Description of availability exceptions
     */
-  var availabilityExceptions: js.UndefOr[String] = js.undefined
+  var availabilityExceptions: js.UndefOr[String] = js.native
   /**
     * Times the Service Site is available
     */
-  var availableTime: js.UndefOr[js.Array[PractitionerRoleAvailableTime]] = js.undefined
+  var availableTime: js.UndefOr[js.Array[PractitionerRoleAvailableTime]] = js.native
   /**
     * Roles which this practitioner may perform
     */
-  var code: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var code: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Technical endpoints providing access to services operated for the practitioner with this role
     */
-  var endpoint: js.UndefOr[js.Array[Reference]] = js.undefined
+  var endpoint: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * The list of healthcare services that this worker provides for this role's Organization/Location(s)
     */
-  var healthcareService: js.UndefOr[js.Array[Reference]] = js.undefined
+  var healthcareService: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Business Identifiers that are specific to a role/location
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * The location(s) at which this practitioner provides care
     */
-  var location: js.UndefOr[js.Array[Reference]] = js.undefined
+  var location: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Not available during this time due to provided reason
     */
-  var notAvailable: js.UndefOr[js.Array[PractitionerRoleNotAvailable]] = js.undefined
+  var notAvailable: js.UndefOr[js.Array[PractitionerRoleNotAvailable]] = js.native
   /**
     * Organization where the roles are available
     */
-  var organization: js.UndefOr[Reference] = js.undefined
+  var organization: js.UndefOr[Reference] = js.native
   /**
     * The period during which the practitioner is authorized to perform in these role(s)
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
   /**
     * Practitioner that is able to provide the defined services for the organation
     */
-  var practitioner: js.UndefOr[Reference] = js.undefined
+  var practitioner: js.UndefOr[Reference] = js.native
   /**
     * Specific specialty of the practitioner
     */
-  var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Contact details that are specific to the role/location/service
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
 }
 
 object PractitionerRole {
   @scala.inline
-  def apply(
-    _active: Element = null,
-    _availabilityExceptions: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    availabilityExceptions: String = null,
-    availableTime: js.Array[PractitionerRoleAvailableTime] = null,
-    code: js.Array[CodeableConcept] = null,
-    contained: js.Array[Resource] = null,
-    endpoint: js.Array[Reference] = null,
-    extension: js.Array[Extension] = null,
-    healthcareService: js.Array[Reference] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    location: js.Array[Reference] = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    notAvailable: js.Array[PractitionerRoleNotAvailable] = null,
-    organization: Reference = null,
-    period: Period = null,
-    practitioner: Reference = null,
-    resourceType: code = null,
-    specialty: js.Array[CodeableConcept] = null,
-    telecom: js.Array[ContactPoint] = null,
-    text: Narrative = null
-  ): PractitionerRole = {
+  def apply(): PractitionerRole = {
     val __obj = js.Dynamic.literal()
-    if (_active != null) __obj.updateDynamic("_active")(_active.asInstanceOf[js.Any])
-    if (_availabilityExceptions != null) __obj.updateDynamic("_availabilityExceptions")(_availabilityExceptions.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (availabilityExceptions != null) __obj.updateDynamic("availabilityExceptions")(availabilityExceptions.asInstanceOf[js.Any])
-    if (availableTime != null) __obj.updateDynamic("availableTime")(availableTime.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (healthcareService != null) __obj.updateDynamic("healthcareService")(healthcareService.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (notAvailable != null) __obj.updateDynamic("notAvailable")(notAvailable.asInstanceOf[js.Any])
-    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (practitioner != null) __obj.updateDynamic("practitioner")(practitioner.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (specialty != null) __obj.updateDynamic("specialty")(specialty.asInstanceOf[js.Any])
-    if (telecom != null) __obj.updateDynamic("telecom")(telecom.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PractitionerRole]
   }
+  @scala.inline
+  implicit class PractitionerRoleOps[Self <: PractitionerRole] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_active(value: Element): Self = this.set("_active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_active: Self = this.set("_active", js.undefined)
+    @scala.inline
+    def set_availabilityExceptions(value: Element): Self = this.set("_availabilityExceptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_availabilityExceptions: Self = this.set("_availabilityExceptions", js.undefined)
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAvailabilityExceptions(value: String): Self = this.set("availabilityExceptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityExceptions: Self = this.set("availabilityExceptions", js.undefined)
+    @scala.inline
+    def setAvailableTimeVarargs(value: PractitionerRoleAvailableTime*): Self = this.set("availableTime", js.Array(value :_*))
+    @scala.inline
+    def setAvailableTime(value: js.Array[PractitionerRoleAvailableTime]): Self = this.set("availableTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableTime: Self = this.set("availableTime", js.undefined)
+    @scala.inline
+    def setCodeVarargs(value: CodeableConcept*): Self = this.set("code", js.Array(value :_*))
+    @scala.inline
+    def setCode(value: js.Array[CodeableConcept]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setEndpointVarargs(value: Reference*): Self = this.set("endpoint", js.Array(value :_*))
+    @scala.inline
+    def setEndpoint(value: js.Array[Reference]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setHealthcareServiceVarargs(value: Reference*): Self = this.set("healthcareService", js.Array(value :_*))
+    @scala.inline
+    def setHealthcareService(value: js.Array[Reference]): Self = this.set("healthcareService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthcareService: Self = this.set("healthcareService", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setLocationVarargs(value: Reference*): Self = this.set("location", js.Array(value :_*))
+    @scala.inline
+    def setLocation(value: js.Array[Reference]): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setNotAvailableVarargs(value: PractitionerRoleNotAvailable*): Self = this.set("notAvailable", js.Array(value :_*))
+    @scala.inline
+    def setNotAvailable(value: js.Array[PractitionerRoleNotAvailable]): Self = this.set("notAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotAvailable: Self = this.set("notAvailable", js.undefined)
+    @scala.inline
+    def setOrganization(value: Reference): Self = this.set("organization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganization: Self = this.set("organization", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setPractitioner(value: Reference): Self = this.set("practitioner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePractitioner: Self = this.set("practitioner", js.undefined)
+    @scala.inline
+    def setSpecialtyVarargs(value: CodeableConcept*): Self = this.set("specialty", js.Array(value :_*))
+    @scala.inline
+    def setSpecialty(value: js.Array[CodeableConcept]): Self = this.set("specialty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecialty: Self = this.set("specialty", js.undefined)
+    @scala.inline
+    def setTelecomVarargs(value: ContactPoint*): Self = this.set("telecom", js.Array(value :_*))
+    @scala.inline
+    def setTelecom(value: js.Array[ContactPoint]): Self = this.set("telecom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTelecom: Self = this.set("telecom", js.undefined)
+  }
+  
 }
 

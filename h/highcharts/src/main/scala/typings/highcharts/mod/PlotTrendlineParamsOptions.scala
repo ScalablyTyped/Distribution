@@ -4,21 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlotTrendlineParamsOptions extends js.Object {
   /**
     * (Highstock) The point index which indicator calculations will base. For
     * example using OHLC data, index=2 means the indicator will be calculated
     * using Low values.
     */
-  var index: js.UndefOr[Double | String] = js.undefined
+  var index: js.UndefOr[Double | String] = js.native
 }
 
 object PlotTrendlineParamsOptions {
   @scala.inline
-  def apply(index: Double | String = null): PlotTrendlineParamsOptions = {
+  def apply(): PlotTrendlineParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTrendlineParamsOptions]
   }
+  @scala.inline
+  implicit class PlotTrendlineParamsOptionsOps[Self <: PlotTrendlineParamsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndex(value: Double | String): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+  }
+  
 }
 

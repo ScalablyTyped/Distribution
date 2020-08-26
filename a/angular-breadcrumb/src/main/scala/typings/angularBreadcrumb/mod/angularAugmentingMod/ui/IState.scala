@@ -5,20 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IState extends js.Object {
-  var ncyBreadcrumb: js.UndefOr[Label] = js.undefined
-  var ncyBreadcrumbLabel: js.UndefOr[String] = js.undefined
-  var ncyBreadcrumbLink: js.UndefOr[String] = js.undefined
+  var ncyBreadcrumb: js.UndefOr[Label] = js.native
+  var ncyBreadcrumbLabel: js.UndefOr[String] = js.native
+  var ncyBreadcrumbLink: js.UndefOr[String] = js.native
 }
 
 object IState {
   @scala.inline
-  def apply(ncyBreadcrumb: Label = null, ncyBreadcrumbLabel: String = null, ncyBreadcrumbLink: String = null): IState = {
+  def apply(): IState = {
     val __obj = js.Dynamic.literal()
-    if (ncyBreadcrumb != null) __obj.updateDynamic("ncyBreadcrumb")(ncyBreadcrumb.asInstanceOf[js.Any])
-    if (ncyBreadcrumbLabel != null) __obj.updateDynamic("ncyBreadcrumbLabel")(ncyBreadcrumbLabel.asInstanceOf[js.Any])
-    if (ncyBreadcrumbLink != null) __obj.updateDynamic("ncyBreadcrumbLink")(ncyBreadcrumbLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[IState]
   }
+  @scala.inline
+  implicit class IStateOps[Self <: IState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNcyBreadcrumb(value: Label): Self = this.set("ncyBreadcrumb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNcyBreadcrumb: Self = this.set("ncyBreadcrumb", js.undefined)
+    @scala.inline
+    def setNcyBreadcrumbLabel(value: String): Self = this.set("ncyBreadcrumbLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNcyBreadcrumbLabel: Self = this.set("ncyBreadcrumbLabel", js.undefined)
+    @scala.inline
+    def setNcyBreadcrumbLink(value: String): Self = this.set("ncyBreadcrumbLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNcyBreadcrumbLink: Self = this.set("ncyBreadcrumbLink", js.undefined)
+  }
+  
 }
 

@@ -27,12 +27,34 @@ trait SchemaLine extends js.Object {
 
 object SchemaLine {
   @scala.inline
-  def apply(lineCategory: String = null, lineProperties: SchemaLineProperties = null, lineType: String = null): SchemaLine = {
+  def apply(): SchemaLine = {
     val __obj = js.Dynamic.literal()
-    if (lineCategory != null) __obj.updateDynamic("lineCategory")(lineCategory.asInstanceOf[js.Any])
-    if (lineProperties != null) __obj.updateDynamic("lineProperties")(lineProperties.asInstanceOf[js.Any])
-    if (lineType != null) __obj.updateDynamic("lineType")(lineType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLine]
   }
+  @scala.inline
+  implicit class SchemaLineOps[Self <: SchemaLine] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLineCategory(value: String): Self = this.set("lineCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineCategory: Self = this.set("lineCategory", js.undefined)
+    @scala.inline
+    def setLineProperties(value: SchemaLineProperties): Self = this.set("lineProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineProperties: Self = this.set("lineProperties", js.undefined)
+    @scala.inline
+    def setLineType(value: String): Self = this.set("lineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineType: Self = this.set("lineType", js.undefined)
+  }
+  
 }
 

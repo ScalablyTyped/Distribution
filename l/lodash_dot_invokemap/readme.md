@@ -12,7 +12,7 @@ The lodash method `_.invokeMap` exported as a module.
 | Keywords           | lodash-modularized, invokemap |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 157342 |
+| # downloads        | 201049 |
 | # stars            | 0 |
 
 ## Links

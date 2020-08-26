@@ -34,12 +34,35 @@ object InstanceEntry {
     availabilityZone: String,
     instanceType: NonEmptyString,
     portInfoSource: PortInfoSourceType,
-    sourceName: ResourceName,
-    userData: String = null
+    sourceName: ResourceName
   ): InstanceEntry = {
     val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], portInfoSource = portInfoSource.asInstanceOf[js.Any], sourceName = sourceName.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceEntry]
   }
+  @scala.inline
+  implicit class InstanceEntryOps[Self <: InstanceEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: NonEmptyString): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortInfoSource(value: PortInfoSourceType): Self = this.set("portInfoSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceName(value: ResourceName): Self = this.set("sourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserData(value: String): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("userData", js.undefined)
+  }
+  
 }
 

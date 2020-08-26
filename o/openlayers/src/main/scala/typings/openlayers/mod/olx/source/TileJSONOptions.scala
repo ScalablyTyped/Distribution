@@ -1,5 +1,6 @@
 package typings.openlayers.mod.olx.source
 
+import typings.openlayers.mod.Attribution
 import typings.openlayers.mod.AttributionLike
 import typings.openlayers.mod.Tile
 import typings.openlayers.mod.TileLoadFunctionType
@@ -7,41 +8,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TileJSONOptions extends js.Object {
-  var attributions: js.UndefOr[AttributionLike] = js.undefined
-  var cacheSize: js.UndefOr[Double] = js.undefined
-  var crossOrigin: js.UndefOr[String] = js.undefined
-  var jsonp: js.UndefOr[Boolean] = js.undefined
-  var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
-  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
-  var transition: js.UndefOr[Double] = js.undefined
-  var url: String
-  var wrapX: js.UndefOr[Boolean] = js.undefined
+  var attributions: js.UndefOr[AttributionLike] = js.native
+  var cacheSize: js.UndefOr[Double] = js.native
+  var crossOrigin: js.UndefOr[String] = js.native
+  var jsonp: js.UndefOr[Boolean] = js.native
+  var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+  var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.native
+  var transition: js.UndefOr[Double] = js.native
+  var url: String = js.native
+  var wrapX: js.UndefOr[Boolean] = js.native
 }
 
 object TileJSONOptions {
   @scala.inline
-  def apply(
-    url: String,
-    attributions: AttributionLike = null,
-    cacheSize: js.UndefOr[Double] = js.undefined,
-    crossOrigin: String = null,
-    jsonp: js.UndefOr[Boolean] = js.undefined,
-    reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined,
-    tileLoadFunction: (/* tile */ Tile, /* url */ String) => Unit = null,
-    transition: js.UndefOr[Double] = js.undefined,
-    wrapX: js.UndefOr[Boolean] = js.undefined
-  ): TileJSONOptions = {
+  def apply(url: String): TileJSONOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheSize)) __obj.updateDynamic("cacheSize")(cacheSize.get.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsonp)) __obj.updateDynamic("jsonp")(jsonp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reprojectionErrorThreshold)) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.get.asInstanceOf[js.Any])
-    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2(tileLoadFunction))
-    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileJSONOptions]
   }
+  @scala.inline
+  implicit class TileJSONOptionsOps[Self <: TileJSONOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributionsVarargs(value: (Attribution | String)*): Self = this.set("attributions", js.Array(value :_*))
+    @scala.inline
+    def setAttributions(value: AttributionLike): Self = this.set("attributions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributions: Self = this.set("attributions", js.undefined)
+    @scala.inline
+    def setCacheSize(value: Double): Self = this.set("cacheSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSize: Self = this.set("cacheSize", js.undefined)
+    @scala.inline
+    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    @scala.inline
+    def setJsonp(value: Boolean): Self = this.set("jsonp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonp: Self = this.set("jsonp", js.undefined)
+    @scala.inline
+    def setReprojectionErrorThreshold(value: Double): Self = this.set("reprojectionErrorThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReprojectionErrorThreshold: Self = this.set("reprojectionErrorThreshold", js.undefined)
+    @scala.inline
+    def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Unit): Self = this.set("tileLoadFunction", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteTileLoadFunction: Self = this.set("tileLoadFunction", js.undefined)
+    @scala.inline
+    def setTransition(value: Double): Self = this.set("transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransition: Self = this.set("transition", js.undefined)
+    @scala.inline
+    def setWrapX(value: Boolean): Self = this.set("wrapX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapX: Self = this.set("wrapX", js.undefined)
+  }
+  
 }
 

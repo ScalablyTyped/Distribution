@@ -12,7 +12,7 @@ Exposes a SteamID object class for easy SteamID management
 | Keywords           | steam, steamid, steam account |
 | # releases         | 4 |
 | # dependents       | 32 |
-| # downloads        | 205233 |
+| # downloads        | 177084 |
 | # stars            | 4 |
 
 ## Links

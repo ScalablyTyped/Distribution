@@ -1,44 +1,48 @@
 package typings.stripe.mod.fileLinks
 
-import typings.stripe.mod.IDateFilter
 import typings.stripe.mod.IListOptionsCreated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IFileLinksListOptions extends IListOptionsCreated {
   /**
     * Filter links by their expiration status. By default, all links are returned.
     */
-  var expired: js.UndefOr[Boolean] = js.undefined
+  var expired: js.UndefOr[Boolean] = js.native
   /**
     * Only return links for the given file.
     */
-  var file: js.UndefOr[String] = js.undefined
+  var file: js.UndefOr[String] = js.native
 }
 
 object IFileLinksListOptions {
   @scala.inline
-  def apply(
-    created: String | IDateFilter = null,
-    ending_before: String = null,
-    expand: js.Array[String] = null,
-    expired: js.UndefOr[Boolean] = js.undefined,
-    file: String = null,
-    include: js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    starting_after: String = null
-  ): IFileLinksListOptions = {
+  def apply(): IFileLinksListOptions = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(expired)) __obj.updateDynamic("expired")(expired.get.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileLinksListOptions]
   }
+  @scala.inline
+  implicit class IFileLinksListOptionsOps[Self <: IFileLinksListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpired(value: Boolean): Self = this.set("expired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpired: Self = this.set("expired", js.undefined)
+    @scala.inline
+    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+  }
+  
 }
 

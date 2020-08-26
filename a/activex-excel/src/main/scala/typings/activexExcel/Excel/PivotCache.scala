@@ -50,7 +50,26 @@ trait PivotCache extends js.Object {
   val Version: XlPivotTableVersionList = js.native
   val WorkbookConnection: typings.activexExcel.Excel.WorkbookConnection = js.native
   def CreatePivotTable(TableDestination: Range): PivotTable = js.native
+  def CreatePivotTable(
+    TableDestination: Range,
+    TableName: js.UndefOr[scala.Nothing],
+    ReadData: js.UndefOr[scala.Nothing],
+    DefaultVersion: js.Any
+  ): PivotTable = js.native
+  def CreatePivotTable(TableDestination: Range, TableName: js.UndefOr[scala.Nothing], ReadData: Boolean): PivotTable = js.native
+  def CreatePivotTable(
+    TableDestination: Range,
+    TableName: js.UndefOr[scala.Nothing],
+    ReadData: Boolean,
+    DefaultVersion: js.Any
+  ): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: String): PivotTable = js.native
+  def CreatePivotTable(
+    TableDestination: Range,
+    TableName: String,
+    ReadData: js.UndefOr[scala.Nothing],
+    DefaultVersion: js.Any
+  ): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Boolean): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Boolean, DefaultVersion: js.Any): PivotTable = js.native
   def MakeConnection(): Unit = js.native
@@ -59,6 +78,7 @@ trait PivotCache extends js.Object {
   def Refresh(): Unit = js.native
   def ResetTimer(): Unit = js.native
   def SaveAsODC(ODCFileName: String): Unit = js.native
+  def SaveAsODC(ODCFileName: String, Description: js.UndefOr[scala.Nothing], Keywords: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String, Keywords: String): Unit = js.native
 }

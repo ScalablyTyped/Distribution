@@ -64,32 +64,72 @@ trait SchemaContainer extends js.Object {
 
 object SchemaContainer {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    containerId: String = null,
-    domainName: js.Array[String] = null,
-    enabledBuiltInVariable: js.Array[String] = null,
-    fingerprint: String = null,
-    name: String = null,
-    notes: String = null,
-    publicId: String = null,
-    timeZoneCountryId: String = null,
-    timeZoneId: String = null,
-    usageContext: js.Array[String] = null
-  ): SchemaContainer = {
+  def apply(): SchemaContainer = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (enabledBuiltInVariable != null) __obj.updateDynamic("enabledBuiltInVariable")(enabledBuiltInVariable.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (publicId != null) __obj.updateDynamic("publicId")(publicId.asInstanceOf[js.Any])
-    if (timeZoneCountryId != null) __obj.updateDynamic("timeZoneCountryId")(timeZoneCountryId.asInstanceOf[js.Any])
-    if (timeZoneId != null) __obj.updateDynamic("timeZoneId")(timeZoneId.asInstanceOf[js.Any])
-    if (usageContext != null) __obj.updateDynamic("usageContext")(usageContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainer]
   }
+  @scala.inline
+  implicit class SchemaContainerOps[Self <: SchemaContainer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    @scala.inline
+    def setDomainNameVarargs(value: String*): Self = this.set("domainName", js.Array(value :_*))
+    @scala.inline
+    def setDomainName(value: js.Array[String]): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setEnabledBuiltInVariableVarargs(value: String*): Self = this.set("enabledBuiltInVariable", js.Array(value :_*))
+    @scala.inline
+    def setEnabledBuiltInVariable(value: js.Array[String]): Self = this.set("enabledBuiltInVariable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledBuiltInVariable: Self = this.set("enabledBuiltInVariable", js.undefined)
+    @scala.inline
+    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+    @scala.inline
+    def setPublicId(value: String): Self = this.set("publicId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicId: Self = this.set("publicId", js.undefined)
+    @scala.inline
+    def setTimeZoneCountryId(value: String): Self = this.set("timeZoneCountryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZoneCountryId: Self = this.set("timeZoneCountryId", js.undefined)
+    @scala.inline
+    def setTimeZoneId(value: String): Self = this.set("timeZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZoneId: Self = this.set("timeZoneId", js.undefined)
+    @scala.inline
+    def setUsageContextVarargs(value: String*): Self = this.set("usageContext", js.Array(value :_*))
+    @scala.inline
+    def setUsageContext(value: js.Array[String]): Self = this.set("usageContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageContext: Self = this.set("usageContext", js.undefined)
+  }
+  
 }
 

@@ -47,6 +47,7 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [selectionChanging](ui.igcombo#events:selectionChanging) and [selectionChanged](ui.igcombo#events:selectionChanged) events.
     */
   def clearInput(): js.Object = js.native
+  def clearInput(options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def clearInput(options: js.Object): js.Object = js.native
   def clearInput(options: js.Object, event: js.Object): js.Object = js.native
   /**
@@ -56,6 +57,7 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [dropDownClosing](ui.igcombo#events:dropDownClosing) and [dropDownClosed](ui.igcombo#events:dropDownClosed) events.
     */
   def closeDropDown(): js.Object = js.native
+  def closeDropDown(callback: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def closeDropDown(callback: js.Function): js.Object = js.native
   def closeDropDown(callback: js.Function, event: js.Object): js.Object = js.native
   /**
@@ -88,6 +90,7 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [selectionChanging](ui.igcombo#events:selectionChanging) and [selectionChanged](ui.igcombo#events:selectionChanged) events.
     */
   def deselect($items: js.Object): js.Object = js.native
+  def deselect($items: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def deselect($items: js.Object, options: js.Object): js.Object = js.native
   def deselect($items: js.Object, options: js.Object, event: js.Object): js.Object = js.native
   /**
@@ -99,6 +102,7 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [selectionChanging](ui.igcombo#events:selectionChanging) and [selectionChanged](ui.igcombo#events:selectionChanged) events.
     */
   def deselectAll(): js.Object = js.native
+  def deselectAll(options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def deselectAll(options: js.Object): js.Object = js.native
   def deselectAll(options: js.Object, event: js.Object): js.Object = js.native
   /**
@@ -111,6 +115,7 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [selectionChanging](ui.igcombo#events:selectionChanging) and [selectionChanged](ui.igcombo#events:selectionChanged) events.
     */
   def deselectByIndex(index: js.Object): js.Object = js.native
+  def deselectByIndex(index: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def deselectByIndex(index: js.Object, options: js.Object): js.Object = js.native
   def deselectByIndex(index: js.Object, options: js.Object, event: js.Object): js.Object = js.native
   /**
@@ -123,6 +128,7 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [selectionChanging](ui.igcombo#events:selectionChanging) and [selectionChanged](ui.igcombo#events:selectionChanged) events.
     */
   def deselectByValue(value: js.Object): js.Object = js.native
+  def deselectByValue(value: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def deselectByValue(value: js.Object, options: js.Object): js.Object = js.native
   def deselectByValue(value: js.Object, options: js.Object, event: js.Object): js.Object = js.native
   /**
@@ -144,6 +150,7 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [filtering](ui.igcombo#events:filtering) and [filtered](ui.igcombo#events:filtered) events.
     */
   def filter(): js.Object = js.native
+  def filter(texts: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def filter(texts: js.Object): js.Object = js.native
   def filter(texts: js.Object, event: js.Object): js.Object = js.native
   /**
@@ -174,7 +181,11 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [selectionChanging](ui.igcombo#events:selectionChanging) and [selectionChanged](ui.igcombo#events:selectionChanged) events.
     */
   def index(): js.Object = js.native
+  def index(index: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
+  def index(index: js.UndefOr[scala.Nothing], options: js.Object): js.Object = js.native
+  def index(index: js.UndefOr[scala.Nothing], options: js.Object, event: js.Object): js.Object = js.native
   def index(index: js.Object): js.Object = js.native
+  def index(index: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def index(index: js.Object, options: js.Object): js.Object = js.native
   def index(index: js.Object, options: js.Object, event: js.Object): js.Object = js.native
   /**
@@ -241,7 +252,11 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [dropDownOpening](ui.igcombo#events:dropDownOpening) and [dropDownOpened](ui.igcombo#events:dropDownOpened) events.
     */
   def openDropDown(): js.Object = js.native
+  def openDropDown(callback: js.UndefOr[scala.Nothing], focusCombo: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
+  def openDropDown(callback: js.UndefOr[scala.Nothing], focusCombo: Boolean): js.Object = js.native
+  def openDropDown(callback: js.UndefOr[scala.Nothing], focusCombo: Boolean, event: js.Object): js.Object = js.native
   def openDropDown(callback: js.Function): js.Object = js.native
+  def openDropDown(callback: js.Function, focusCombo: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def openDropDown(callback: js.Function, focusCombo: Boolean): js.Object = js.native
   def openDropDown(callback: js.Function, focusCombo: Boolean, event: js.Object): js.Object = js.native
   /**
@@ -271,6 +286,7 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [selectionChanging](ui.igcombo#events:selectionChanging) and [selectionChanged](ui.igcombo#events:selectionChanged) events.
     */
   def select($items: js.Object): js.Object = js.native
+  def select($items: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def select($items: js.Object, options: js.Object): js.Object = js.native
   def select($items: js.Object, options: js.Object, event: js.Object): js.Object = js.native
   /**
@@ -287,6 +303,7 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [selectionChanging](ui.igcombo#events:selectionChanging) and [selectionChanged](ui.igcombo#events:selectionChanged) events.
     */
   def selectAll(): js.Object = js.native
+  def selectAll(options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def selectAll(options: js.Object): js.Object = js.native
   def selectAll(options: js.Object, event: js.Object): js.Object = js.native
   /**
@@ -332,7 +349,11 @@ trait IgComboMethods extends js.Object {
     * @param event Indicates the browser event which triggered this action (not API). Calling the method with this param set to "true" will trigger [selectionChanging](ui.igcombo#events:selectionChanging) and [selectionChanged](ui.igcombo#events:selectionChanged) events.
     */
   def value(): js.Object = js.native
+  def value(value: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
+  def value(value: js.UndefOr[scala.Nothing], options: js.Object): js.Object = js.native
+  def value(value: js.UndefOr[scala.Nothing], options: js.Object, event: js.Object): js.Object = js.native
   def value(value: js.Object): js.Object = js.native
+  def value(value: js.Object, options: js.UndefOr[scala.Nothing], event: js.Object): js.Object = js.native
   def value(value: js.Object, options: js.Object): js.Object = js.native
   def value(value: js.Object, options: js.Object, event: js.Object): js.Object = js.native
   /**

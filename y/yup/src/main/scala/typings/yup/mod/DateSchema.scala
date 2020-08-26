@@ -16,19 +16,19 @@ import scala.scalajs.js.annotation._
 trait DateSchema[T /* <: js.UndefOr[Date | Null] */] extends Schema[T] {
   def defined(): DateSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
   def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): DateSchema[MaintainOptionality[T, U]] = js.native
-  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): DateSchema[MaintainOptionality[T, U]] = js.native
+  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, _]]): DateSchema[MaintainOptionality[T, U]] = js.native
   def max(limit: String): DateSchema[T] = js.native
-  def max(limit: String, message: TestOptionsMessage[`1`, _]): DateSchema[T] = js.native
+  def max(limit: String, message: js.UndefOr[TestOptionsMessage[`1`, _]]): DateSchema[T] = js.native
   def max(limit: Date): DateSchema[T] = js.native
-  def max(limit: Date, message: TestOptionsMessage[`1`, _]): DateSchema[T] = js.native
+  def max(limit: Date, message: js.UndefOr[TestOptionsMessage[`1`, _]]): DateSchema[T] = js.native
   def max(limit: Ref_): DateSchema[T] = js.native
-  def max(limit: Ref_, message: TestOptionsMessage[`1`, _]): DateSchema[T] = js.native
+  def max(limit: Ref_, message: js.UndefOr[TestOptionsMessage[`1`, _]]): DateSchema[T] = js.native
   def min(limit: String): DateSchema[T] = js.native
-  def min(limit: String, message: TestOptionsMessage[`0`, _]): DateSchema[T] = js.native
+  def min(limit: String, message: js.UndefOr[TestOptionsMessage[`0`, _]]): DateSchema[T] = js.native
   def min(limit: Date): DateSchema[T] = js.native
-  def min(limit: Date, message: TestOptionsMessage[`0`, _]): DateSchema[T] = js.native
+  def min(limit: Date, message: js.UndefOr[TestOptionsMessage[`0`, _]]): DateSchema[T] = js.native
   def min(limit: Ref_): DateSchema[T] = js.native
-  def min(limit: Ref_, message: TestOptionsMessage[`0`, _]): DateSchema[T] = js.native
+  def min(limit: Ref_, message: js.UndefOr[TestOptionsMessage[`0`, _]]): DateSchema[T] = js.native
   def notRequired(): DateSchema[js.UndefOr[T]] = js.native
   def nullable(): DateSchema[T | Null] = js.native
   def nullable(isNullable: Boolean): DateSchema[T] = js.native
@@ -37,7 +37,7 @@ trait DateSchema[T /* <: js.UndefOr[Date | Null] */] extends Schema[T] {
   @JSName("nullable")
   def nullable_true(isNullable: `true`): DateSchema[T | Null] = js.native
   def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): DateSchema[MaintainOptionality[T, U]] = js.native
-  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): DateSchema[MaintainOptionality[T, U]] = js.native
+  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, _]]): DateSchema[MaintainOptionality[T, U]] = js.native
   def optional(): DateSchema[js.UndefOr[T]] = js.native
   def required(): DateSchema[Exclude[T, js.UndefOr[Null]]] = js.native
   def required(message: TestOptionsMessage[js.Object, _]): DateSchema[Exclude[T, js.UndefOr[Null]]] = js.native

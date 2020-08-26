@@ -164,7 +164,6 @@ object plotMod extends js.Object {
       */
     /* protected */ def _getEntityStore(): IEntityStore[ILightweightPlotEntity] = js.native
     /* protected */ def _getEntityStore(datasets: js.Array[Dataset]): IEntityStore[ILightweightPlotEntity] = js.native
-    /* private */ def _includedValuesForScale[D](scale: js.Any): js.Any = js.native
     /* private */ def _includedValuesForScale[D](scale: js.Any, ignoreAttachState: js.Any): js.Any = js.native
     /* protected */ def _installScaleForKey(scale: Scale[_, _], key: String): Unit = js.native
     /* protected */ def _lightweightPlotEntityToPlotEntity(entity: ILightweightPlotEntity): IPlotEntity = js.native

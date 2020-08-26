@@ -34,6 +34,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(params: ParamsResourceProjectsModelsVersionsCreate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(
     params: ParamsResourceProjectsModelsVersionsCreate,
@@ -67,6 +68,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(params: ParamsResourceProjectsModelsVersionsDelete): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(
     params: ParamsResourceProjectsModelsVersionsDelete,
@@ -101,6 +103,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudMlV1Version] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudMlV1Version]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1Version] = js.native
   def get(params: ParamsResourceProjectsModelsVersionsGet): GaxiosPromise[SchemaGoogleCloudMlV1Version] = js.native
   def get(
     params: ParamsResourceProjectsModelsVersionsGet,
@@ -139,6 +142,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudMlV1ListVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudMlV1ListVersionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1ListVersionsResponse] = js.native
   def list(params: ParamsResourceProjectsModelsVersionsList): GaxiosPromise[SchemaGoogleCloudMlV1ListVersionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsModelsVersionsList,
@@ -172,6 +176,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(params: ParamsResourceProjectsModelsVersionsPatch): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(
     params: ParamsResourceProjectsModelsVersionsPatch,
@@ -207,6 +212,7 @@ class ResourceProjectsModelsVersions protected () extends js.Object {
     */
   def setDefault(): GaxiosPromise[SchemaGoogleCloudMlV1Version] = js.native
   def setDefault(callback: BodyResponseCallback[SchemaGoogleCloudMlV1Version]): Unit = js.native
+  def setDefault(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1Version] = js.native
   def setDefault(params: ParamsResourceProjectsModelsVersionsSetdefault): GaxiosPromise[SchemaGoogleCloudMlV1Version] = js.native
   def setDefault(
     params: ParamsResourceProjectsModelsVersionsSetdefault,

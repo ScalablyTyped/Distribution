@@ -344,6 +344,7 @@ class Text protected () extends Object {
     * @param {String} [charStyle.fontStyle] Font style (italic|normal)
     */
   def _setTextStyles(ctx: CanvasRenderingContext2D): Unit = js.native
+  def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: js.UndefOr[scala.Nothing], forMeasuring: Boolean): Unit = js.native
   def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: FontFamily): Unit = js.native
   def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: FontFamily, forMeasuring: Boolean): Unit = js.native
   /**
@@ -381,6 +382,7 @@ class Text protected () extends Object {
     * @param {Boolean} [skipWrapping] consider the location for unwrapped lines. usefull to manage styles.
     */
   def get2DCursorLocation(): CharIndex = js.native
+  def get2DCursorLocation(selectionStart: js.UndefOr[scala.Nothing], skipWrapping: Boolean): CharIndex = js.native
   def get2DCursorLocation(selectionStart: Double): CharIndex = js.native
   def get2DCursorLocation(selectionStart: Double, skipWrapping: Boolean): CharIndex = js.native
   /**
@@ -427,7 +429,11 @@ class Text protected () extends Object {
     * @return {Array} styles an array with one, zero or more Style objects
     */
   def getSelectionStyles(): js.Array[_] = js.native
+  def getSelectionStyles(startIndex: js.UndefOr[scala.Nothing], endIndex: js.UndefOr[scala.Nothing], complete: Boolean): js.Array[_] = js.native
+  def getSelectionStyles(startIndex: js.UndefOr[scala.Nothing], endIndex: Double): js.Array[_] = js.native
+  def getSelectionStyles(startIndex: js.UndefOr[scala.Nothing], endIndex: Double, complete: Boolean): js.Array[_] = js.native
   def getSelectionStyles(startIndex: Double): js.Array[_] = js.native
+  def getSelectionStyles(startIndex: Double, endIndex: js.UndefOr[scala.Nothing], complete: Boolean): js.Array[_] = js.native
   def getSelectionStyles(startIndex: Double, endIndex: Double): js.Array[_] = js.native
   def getSelectionStyles(startIndex: Double, endIndex: Double, complete: Boolean): js.Array[_] = js.native
   /**
@@ -480,6 +486,7 @@ class Text protected () extends Object {
     * @chainable
     */
   def setSelectionStyles(styles: js.Any): Text = js.native
+  def setSelectionStyles(styles: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Text = js.native
   def setSelectionStyles(styles: js.Any, startIndex: Double): Text = js.native
   def setSelectionStyles(styles: js.Any, startIndex: Double, endIndex: Double): Text = js.native
   /**
@@ -521,6 +528,7 @@ object Text extends js.Object {
     * @param {Object} [options] Options object
     */
   def fromElement(element: SVGElement): Text = js.native
+  def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: TextOptions): Text = js.native
   def fromElement(element: SVGElement, callback: js.Function): Text = js.native
   def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): Text = js.native
   /**

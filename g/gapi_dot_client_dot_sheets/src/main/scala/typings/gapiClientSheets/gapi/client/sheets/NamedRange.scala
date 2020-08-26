@@ -4,23 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NamedRange extends js.Object {
   /** The name of the named range. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** The ID of the named range. */
-  var namedRangeId: js.UndefOr[String] = js.undefined
+  var namedRangeId: js.UndefOr[String] = js.native
   /** The range this represents. */
-  var range: js.UndefOr[GridRange] = js.undefined
+  var range: js.UndefOr[GridRange] = js.native
 }
 
 object NamedRange {
   @scala.inline
-  def apply(name: String = null, namedRangeId: String = null, range: GridRange = null): NamedRange = {
+  def apply(): NamedRange = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedRange]
   }
+  @scala.inline
+  implicit class NamedRangeOps[Self <: NamedRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamedRangeId(value: String): Self = this.set("namedRangeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedRangeId: Self = this.set("namedRangeId", js.undefined)
+    @scala.inline
+    def setRange(value: GridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+  }
+  
 }
 

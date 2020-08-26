@@ -57,6 +57,7 @@ package object lakeformationMod {
     - typings.awsSdk.awsSdkStrings.DROP
     - typings.awsSdk.awsSdkStrings.DELETE
     - typings.awsSdk.awsSdkStrings.INSERT
+    - typings.awsSdk.awsSdkStrings.DESCRIBE
     - typings.awsSdk.awsSdkStrings.CREATE_DATABASE
     - typings.awsSdk.awsSdkStrings.CREATE_TABLE
     - typings.awsSdk.awsSdkStrings.DATA_LOCATION_ACCESS
@@ -71,6 +72,7 @@ package object lakeformationMod {
   type StringValue = java.lang.String
   type StringValueList = js.Array[typings.awsSdk.lakeformationMod.StringValue]
   type Token = java.lang.String
+  type TrustedResourceOwners = js.Array[typings.awsSdk.lakeformationMod.CatalogIdString]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-03-31`
     - typings.awsSdk.awsSdkStrings.latest_

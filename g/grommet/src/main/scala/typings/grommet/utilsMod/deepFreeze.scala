@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/utils", "deepFreeze")
+@JSImport("grommet/es6/utils", "deepFreeze")
 @js.native
 object deepFreeze extends TopLevel[DeepFreeze_]
 

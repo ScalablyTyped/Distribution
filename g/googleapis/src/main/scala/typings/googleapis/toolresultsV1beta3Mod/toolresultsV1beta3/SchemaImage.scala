@@ -30,18 +30,38 @@ trait SchemaImage extends js.Object {
 
 object SchemaImage {
   @scala.inline
-  def apply(
-    error: SchemaStatus = null,
-    sourceImage: SchemaToolOutputReference = null,
-    stepId: String = null,
-    thumbnail: SchemaThumbnail = null
-  ): SchemaImage = {
+  def apply(): SchemaImage = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage.asInstanceOf[js.Any])
-    if (stepId != null) __obj.updateDynamic("stepId")(stepId.asInstanceOf[js.Any])
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImage]
   }
+  @scala.inline
+  implicit class SchemaImageOps[Self <: SchemaImage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: SchemaStatus): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setSourceImage(value: SchemaToolOutputReference): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    @scala.inline
+    def setStepId(value: String): Self = this.set("stepId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepId: Self = this.set("stepId", js.undefined)
+    @scala.inline
+    def setThumbnail(value: SchemaThumbnail): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+  }
+  
 }
 

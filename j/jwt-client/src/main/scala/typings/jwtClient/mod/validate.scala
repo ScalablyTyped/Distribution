@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object validate extends js.Object {
   def apply(value: JWTObject): Boolean = js.native
+  def apply(value: JWTObject, issuer: js.UndefOr[scala.Nothing], audience: js.Any): Boolean = js.native
   def apply(value: JWTObject, issuer: js.Any): Boolean = js.native
   def apply(value: JWTObject, issuer: js.Any, audience: js.Any): Boolean = js.native
 }

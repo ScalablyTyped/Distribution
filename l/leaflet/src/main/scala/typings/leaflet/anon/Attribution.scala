@@ -19,17 +19,17 @@ trait Attribution
   extends Instantiable0[Control_]
      with Instantiable1[/* options */ ControlOptions, Control_] {
   var Attribution: Instantiable1[
-    js.UndefOr[/* options */ AttributionOptions], 
+    /* options */ js.UndefOr[AttributionOptions], 
     typings.leaflet.mod.Control_.Attribution
   ] = js.native
   var Layers: Instantiable3[
-    js.UndefOr[/* baseLayers */ LayersObject], 
-    js.UndefOr[/* overlays */ LayersObject], 
-    js.UndefOr[/* options */ LayersOptions], 
+    /* baseLayers */ js.UndefOr[LayersObject], 
+    /* overlays */ js.UndefOr[LayersObject], 
+    /* options */ js.UndefOr[LayersOptions], 
     typings.leaflet.mod.Control_.Layers
   ] = js.native
-  var Scale: Instantiable1[js.UndefOr[/* options */ ScaleOptions], typings.leaflet.mod.Control_.Scale] = js.native
-  var Zoom: Instantiable1[js.UndefOr[/* options */ ZoomOptions], typings.leaflet.mod.Control_.Zoom] = js.native
+  var Scale: Instantiable1[/* options */ js.UndefOr[ScaleOptions], typings.leaflet.mod.Control_.Scale] = js.native
+  var Zoom: Instantiable1[/* options */ js.UndefOr[ZoomOptions], typings.leaflet.mod.Control_.Zoom] = js.native
   def extend[T /* <: js.Object */](props: T): InstantiableT[T] with (/* import warning: importer.ImportType#apply Failed type conversion: typeof Control */ js.Any) = js.native
 }
 

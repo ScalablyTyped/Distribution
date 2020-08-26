@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This service contains the collection of automatic style families within the container document. */
+@js.native
 trait XAutoStyles
   extends XNameAccess
      with XIndexAccess

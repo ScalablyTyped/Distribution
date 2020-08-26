@@ -11,8 +11,8 @@ Router middleware for koa. Provides RESTful resource routing.
 | Full name          | koa-router |
 | Keywords           | koa, middleware, router, route |
 | # releases         | 3 |
-| # dependents       | 2026 |
-| # downloads        | 9575149 |
+| # dependents       | 2056 |
+| # downloads        | 9879275 |
 | # stars            | 65 |
 
 ## Links

@@ -40,11 +40,11 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: E
     machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
     options: PartialInterpreterOptions
   ) = this()
-  var _initialState: js.UndefOr[js.Any] = js.native
+  var _initialState: js.Any = js.native
   /**
     * The current state of the interpreted machine.
     */
-  var _state: js.UndefOr[js.Any] = js.native
+  var _state: js.Any = js.native
   var _status: js.Any = js.native
   var attachDev: js.Any = js.native
   var batch: js.Any = js.native
@@ -57,7 +57,7 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: E
   var contextListeners: js.Any = js.native
   var defer: js.Any = js.native
   var delayedEventsMap: js.Any = js.native
-  var devTools: js.UndefOr[js.Any] = js.native
+  var devTools: js.Any = js.native
   var doneListeners: js.Any = js.native
   var eventListeners: js.Any = js.native
   var exec: js.Any = js.native

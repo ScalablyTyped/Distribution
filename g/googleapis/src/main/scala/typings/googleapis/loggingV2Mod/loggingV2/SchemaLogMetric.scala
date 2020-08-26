@@ -115,30 +115,62 @@ trait SchemaLogMetric extends js.Object {
 
 object SchemaLogMetric {
   @scala.inline
-  def apply(
-    bucketOptions: SchemaBucketOptions = null,
-    createTime: String = null,
-    description: String = null,
-    filter: String = null,
-    labelExtractors: StringDictionary[String] = null,
-    metricDescriptor: SchemaMetricDescriptor = null,
-    name: String = null,
-    updateTime: String = null,
-    valueExtractor: String = null,
-    version: String = null
-  ): SchemaLogMetric = {
+  def apply(): SchemaLogMetric = {
     val __obj = js.Dynamic.literal()
-    if (bucketOptions != null) __obj.updateDynamic("bucketOptions")(bucketOptions.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (labelExtractors != null) __obj.updateDynamic("labelExtractors")(labelExtractors.asInstanceOf[js.Any])
-    if (metricDescriptor != null) __obj.updateDynamic("metricDescriptor")(metricDescriptor.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (valueExtractor != null) __obj.updateDynamic("valueExtractor")(valueExtractor.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLogMetric]
   }
+  @scala.inline
+  implicit class SchemaLogMetricOps[Self <: SchemaLogMetric] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketOptions(value: SchemaBucketOptions): Self = this.set("bucketOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketOptions: Self = this.set("bucketOptions", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setLabelExtractors(value: StringDictionary[String]): Self = this.set("labelExtractors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelExtractors: Self = this.set("labelExtractors", js.undefined)
+    @scala.inline
+    def setMetricDescriptor(value: SchemaMetricDescriptor): Self = this.set("metricDescriptor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricDescriptor: Self = this.set("metricDescriptor", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setValueExtractor(value: String): Self = this.set("valueExtractor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueExtractor: Self = this.set("valueExtractor", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

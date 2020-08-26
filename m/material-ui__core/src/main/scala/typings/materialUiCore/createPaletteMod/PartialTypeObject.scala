@@ -19,18 +19,38 @@ trait PartialTypeObject extends js.Object {
 
 object PartialTypeObject {
   @scala.inline
-  def apply(
-    action: PartialTypeAction = null,
-    background: PartialTypeBackground = null,
-    divider: Partial[TypeDivider] = null,
-    text: PartialTypeText = null
-  ): PartialTypeObject = {
+  def apply(): PartialTypeObject = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTypeObject]
   }
+  @scala.inline
+  implicit class PartialTypeObjectOps[Self <: PartialTypeObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: PartialTypeAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setBackground(value: PartialTypeBackground): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setDivider(value: Partial[TypeDivider]): Self = this.set("divider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDivider: Self = this.set("divider", js.undefined)
+    @scala.inline
+    def setText(value: PartialTypeText): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

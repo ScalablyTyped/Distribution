@@ -18,11 +18,32 @@ trait InstallationMediaMessage extends js.Object {
 
 object InstallationMediaMessage {
   @scala.inline
-  def apply(InstallationMedia: InstallationMediaList = null, Marker: String = null): InstallationMediaMessage = {
+  def apply(): InstallationMediaMessage = {
     val __obj = js.Dynamic.literal()
-    if (InstallationMedia != null) __obj.updateDynamic("InstallationMedia")(InstallationMedia.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallationMediaMessage]
   }
+  @scala.inline
+  implicit class InstallationMediaMessageOps[Self <: InstallationMediaMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstallationMediaVarargs(value: InstallationMedia*): Self = this.set("InstallationMedia", js.Array(value :_*))
+    @scala.inline
+    def setInstallationMedia(value: InstallationMediaList): Self = this.set("InstallationMedia", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallationMedia: Self = this.set("InstallationMedia", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

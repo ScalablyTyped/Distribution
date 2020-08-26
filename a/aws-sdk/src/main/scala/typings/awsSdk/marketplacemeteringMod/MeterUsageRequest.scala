@@ -30,17 +30,36 @@ trait MeterUsageRequest extends js.Object {
 
 object MeterUsageRequest {
   @scala.inline
-  def apply(
-    ProductCode: ProductCode,
-    Timestamp: Timestamp,
-    UsageDimension: UsageDimension,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    UsageQuantity: js.UndefOr[UsageQuantity] = js.undefined
-  ): MeterUsageRequest = {
+  def apply(ProductCode: ProductCode, Timestamp: Timestamp, UsageDimension: UsageDimension): MeterUsageRequest = {
     val __obj = js.Dynamic.literal(ProductCode = ProductCode.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any], UsageDimension = UsageDimension.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsageQuantity)) __obj.updateDynamic("UsageQuantity")(UsageQuantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeterUsageRequest]
   }
+  @scala.inline
+  implicit class MeterUsageRequestOps[Self <: MeterUsageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProductCode(value: ProductCode): Self = this.set("ProductCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsageDimension(value: UsageDimension): Self = this.set("UsageDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setUsageQuantity(value: UsageQuantity): Self = this.set("UsageQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageQuantity: Self = this.set("UsageQuantity", js.undefined)
+  }
+  
 }
 

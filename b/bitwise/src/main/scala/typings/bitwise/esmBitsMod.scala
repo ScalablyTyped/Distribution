@@ -21,6 +21,7 @@ object esmBitsMod extends js.Object {
   def reduceXor(bits: js.Array[Bit]): Bit = js.native
   def toBoolean(bits: js.Array[Bit]): js.Array[Boolean] = js.native
   def toString(bits: js.Array[Bit]): String = js.native
+  def toString(bits: js.Array[Bit], spacing: js.UndefOr[scala.Nothing], spacer: String): String = js.native
   def toString(bits: js.Array[Bit], spacing: Double): String = js.native
   def toString(bits: js.Array[Bit], spacing: Double, spacer: String): String = js.native
   def xnor(bits1: js.Array[Bit], bits2: js.Array[Bit]): js.Array[Bit] = js.native
@@ -40,6 +41,7 @@ object esmBitsMod extends js.Object {
     def reduceXor(bits: js.Array[Bit]): Bit = js.native
     def toBoolean(bits: js.Array[Bit]): js.Array[Boolean] = js.native
     def toString(bits: js.Array[Bit]): String = js.native
+    def toString(bits: js.Array[Bit], spacing: js.UndefOr[scala.Nothing], spacer: String): String = js.native
     def toString(bits: js.Array[Bit], spacing: Double): String = js.native
     def toString(bits: js.Array[Bit], spacing: Double, spacer: String): String = js.native
     def xnor(bits1: js.Array[Bit], bits2: js.Array[Bit]): js.Array[Bit] = js.native

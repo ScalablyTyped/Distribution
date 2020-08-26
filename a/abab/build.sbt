@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "abab"
-version := "2.0.3-f445f3"
-scalaVersion := "2.13.2"
+version := "2.0.4-cd1038"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

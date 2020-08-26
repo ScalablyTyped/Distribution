@@ -34,22 +34,46 @@ trait ClientCertificate extends js.Object {
 
 object ClientCertificate {
   @scala.inline
-  def apply(
-    clientCertificateId: String = null,
-    createdDate: Timestamp = null,
-    description: String = null,
-    expirationDate: Timestamp = null,
-    pemEncodedCertificate: String = null,
-    tags: MapOfStringToString = null
-  ): ClientCertificate = {
+  def apply(): ClientCertificate = {
     val __obj = js.Dynamic.literal()
-    if (clientCertificateId != null) __obj.updateDynamic("clientCertificateId")(clientCertificateId.asInstanceOf[js.Any])
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (pemEncodedCertificate != null) __obj.updateDynamic("pemEncodedCertificate")(pemEncodedCertificate.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientCertificate]
   }
+  @scala.inline
+  implicit class ClientCertificateOps[Self <: ClientCertificate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientCertificateId(value: String): Self = this.set("clientCertificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCertificateId: Self = this.set("clientCertificateId", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: Timestamp): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    @scala.inline
+    def setPemEncodedCertificate(value: String): Self = this.set("pemEncodedCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePemEncodedCertificate: Self = this.set("pemEncodedCertificate", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -13,6 +13,7 @@ trait Reference extends Query {
   def child(path: String): Reference = js.native
   def onDisconnect(): js.Any = js.native
   def push(): ThenableReference[_] = js.native
+  def push(value: js.UndefOr[scala.Nothing], onComplete: js.Function1[/* a */ RnError | Null, _]): ThenableReference[_] = js.native
   def push(value: js.Any): ThenableReference[_] = js.native
   def push(value: js.Any, onComplete: js.Function1[/* a */ RnError | Null, _]): ThenableReference[_] = js.native
   def remove(): js.Promise[_] = js.native
@@ -29,6 +30,11 @@ trait Reference extends Query {
   def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ RnError | Null, _]): js.Promise[_] = js.native
   def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ RnError | Null, _]): js.Promise[_] = js.native
   def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[_] = js.native
+  def transaction(
+    transactionUpdate: js.Function1[/* a */ js.Any, _],
+    onComplete: js.UndefOr[scala.Nothing],
+    applyLocally: Boolean
+  ): js.Promise[_] = js.native
   def transaction(
     transactionUpdate: js.Function1[/* a */ js.Any, _],
     onComplete: js.Function3[/* a */ RnError | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, _]

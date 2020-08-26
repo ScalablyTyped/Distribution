@@ -23,7 +23,7 @@ object stateParamsMod extends js.Object {
       * @param {Object} $to Internal definition of object representing state to transition to.
       */
     @JSName("$inherit")
-    def $inherit(newParams: Obj, $current: StateObject, $to: StateObject): Obj = js.native
+    def $inherit(newParams: Obj, $current: StateObject, $to: StateObject): js.Any = js.native
   }
   
 }

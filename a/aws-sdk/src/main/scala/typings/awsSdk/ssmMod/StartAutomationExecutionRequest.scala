@@ -58,33 +58,76 @@ trait StartAutomationExecutionRequest extends js.Object {
 
 object StartAutomationExecutionRequest {
   @scala.inline
-  def apply(
-    DocumentName: DocumentARN,
-    ClientToken: IdempotencyToken = null,
-    DocumentVersion: DocumentVersion = null,
-    MaxConcurrency: MaxConcurrency = null,
-    MaxErrors: MaxErrors = null,
-    Mode: ExecutionMode = null,
-    Parameters: AutomationParameterMap = null,
-    Tags: TagList = null,
-    TargetLocations: TargetLocations = null,
-    TargetMaps: TargetMaps = null,
-    TargetParameterName: AutomationParameterKey = null,
-    Targets: Targets = null
-  ): StartAutomationExecutionRequest = {
+  def apply(DocumentName: DocumentARN): StartAutomationExecutionRequest = {
     val __obj = js.Dynamic.literal(DocumentName = DocumentName.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency.asInstanceOf[js.Any])
-    if (MaxErrors != null) __obj.updateDynamic("MaxErrors")(MaxErrors.asInstanceOf[js.Any])
-    if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TargetLocations != null) __obj.updateDynamic("TargetLocations")(TargetLocations.asInstanceOf[js.Any])
-    if (TargetMaps != null) __obj.updateDynamic("TargetMaps")(TargetMaps.asInstanceOf[js.Any])
-    if (TargetParameterName != null) __obj.updateDynamic("TargetParameterName")(TargetParameterName.asInstanceOf[js.Any])
-    if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartAutomationExecutionRequest]
   }
+  @scala.inline
+  implicit class StartAutomationExecutionRequestOps[Self <: StartAutomationExecutionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentName(value: DocumentARN): Self = this.set("DocumentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: IdempotencyToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setMaxConcurrency(value: MaxConcurrency): Self = this.set("MaxConcurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrency: Self = this.set("MaxConcurrency", js.undefined)
+    @scala.inline
+    def setMaxErrors(value: MaxErrors): Self = this.set("MaxErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxErrors: Self = this.set("MaxErrors", js.undefined)
+    @scala.inline
+    def setMode(value: ExecutionMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("Mode", js.undefined)
+    @scala.inline
+    def setParameters(value: AutomationParameterMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTargetLocationsVarargs(value: TargetLocation*): Self = this.set("TargetLocations", js.Array(value :_*))
+    @scala.inline
+    def setTargetLocations(value: TargetLocations): Self = this.set("TargetLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetLocations: Self = this.set("TargetLocations", js.undefined)
+    @scala.inline
+    def setTargetMapsVarargs(value: TargetMap*): Self = this.set("TargetMaps", js.Array(value :_*))
+    @scala.inline
+    def setTargetMaps(value: TargetMaps): Self = this.set("TargetMaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetMaps: Self = this.set("TargetMaps", js.undefined)
+    @scala.inline
+    def setTargetParameterName(value: AutomationParameterKey): Self = this.set("TargetParameterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetParameterName: Self = this.set("TargetParameterName", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("Targets", js.undefined)
+  }
+  
 }
 

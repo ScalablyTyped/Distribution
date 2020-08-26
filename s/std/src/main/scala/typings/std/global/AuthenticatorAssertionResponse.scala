@@ -8,16 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AuthenticatorAssertionResponse")
 @js.native
 class AuthenticatorAssertionResponse ()
-  extends typings.std.AuthenticatorAssertionResponse {
-  /* CompleteClass */
-  override val authenticatorData: typings.std.ArrayBuffer = js.native
-  /* CompleteClass */
-  override val clientDataJSON: typings.std.ArrayBuffer = js.native
-  /* CompleteClass */
-  override val signature: typings.std.ArrayBuffer = js.native
-  /* CompleteClass */
-  override val userHandle: typings.std.ArrayBuffer | Null = js.native
-}
+  extends typings.std.AuthenticatorAssertionResponse
 
 @JSGlobal("AuthenticatorAssertionResponse")
 @js.native

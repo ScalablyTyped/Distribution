@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply[S](initialState: S, reducers: Reducer[S]*): Reducer[S] = js.native
+  def apply[S](initialState: Null, reducers: Reducer[S]*): Reducer[S] = js.native
   def apply[S](reducers: Reducer[S]*): Reducer[S] = js.native
 }
 

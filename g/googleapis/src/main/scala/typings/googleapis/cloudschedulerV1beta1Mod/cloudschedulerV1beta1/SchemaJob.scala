@@ -110,38 +110,78 @@ trait SchemaJob extends js.Object {
 
 object SchemaJob {
   @scala.inline
-  def apply(
-    appEngineHttpTarget: SchemaAppEngineHttpTarget = null,
-    attemptDeadline: String = null,
-    description: String = null,
-    httpTarget: SchemaHttpTarget = null,
-    lastAttemptTime: String = null,
-    name: String = null,
-    pubsubTarget: SchemaPubsubTarget = null,
-    retryConfig: SchemaRetryConfig = null,
-    schedule: String = null,
-    scheduleTime: String = null,
-    state: String = null,
-    status: SchemaStatus = null,
-    timeZone: String = null,
-    userUpdateTime: String = null
-  ): SchemaJob = {
+  def apply(): SchemaJob = {
     val __obj = js.Dynamic.literal()
-    if (appEngineHttpTarget != null) __obj.updateDynamic("appEngineHttpTarget")(appEngineHttpTarget.asInstanceOf[js.Any])
-    if (attemptDeadline != null) __obj.updateDynamic("attemptDeadline")(attemptDeadline.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (httpTarget != null) __obj.updateDynamic("httpTarget")(httpTarget.asInstanceOf[js.Any])
-    if (lastAttemptTime != null) __obj.updateDynamic("lastAttemptTime")(lastAttemptTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pubsubTarget != null) __obj.updateDynamic("pubsubTarget")(pubsubTarget.asInstanceOf[js.Any])
-    if (retryConfig != null) __obj.updateDynamic("retryConfig")(retryConfig.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
-    if (userUpdateTime != null) __obj.updateDynamic("userUpdateTime")(userUpdateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJob]
   }
+  @scala.inline
+  implicit class SchemaJobOps[Self <: SchemaJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppEngineHttpTarget(value: SchemaAppEngineHttpTarget): Self = this.set("appEngineHttpTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppEngineHttpTarget: Self = this.set("appEngineHttpTarget", js.undefined)
+    @scala.inline
+    def setAttemptDeadline(value: String): Self = this.set("attemptDeadline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttemptDeadline: Self = this.set("attemptDeadline", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setHttpTarget(value: SchemaHttpTarget): Self = this.set("httpTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpTarget: Self = this.set("httpTarget", js.undefined)
+    @scala.inline
+    def setLastAttemptTime(value: String): Self = this.set("lastAttemptTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAttemptTime: Self = this.set("lastAttemptTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPubsubTarget(value: SchemaPubsubTarget): Self = this.set("pubsubTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubsubTarget: Self = this.set("pubsubTarget", js.undefined)
+    @scala.inline
+    def setRetryConfig(value: SchemaRetryConfig): Self = this.set("retryConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryConfig: Self = this.set("retryConfig", js.undefined)
+    @scala.inline
+    def setSchedule(value: String): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    @scala.inline
+    def setUserUpdateTime(value: String): Self = this.set("userUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserUpdateTime: Self = this.set("userUpdateTime", js.undefined)
+  }
+  
 }
 

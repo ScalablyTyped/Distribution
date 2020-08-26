@@ -22,16 +22,34 @@ trait DeleteRepositoryPolicyResponse extends js.Object {
 
 object DeleteRepositoryPolicyResponse {
   @scala.inline
-  def apply(
-    policyText: RepositoryPolicyText = null,
-    registryId: RegistryId = null,
-    repositoryName: RepositoryName = null
-  ): DeleteRepositoryPolicyResponse = {
+  def apply(): DeleteRepositoryPolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (policyText != null) __obj.updateDynamic("policyText")(policyText.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRepositoryPolicyResponse]
   }
+  @scala.inline
+  implicit class DeleteRepositoryPolicyResponseOps[Self <: DeleteRepositoryPolicyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyText(value: RepositoryPolicyText): Self = this.set("policyText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyText: Self = this.set("policyText", js.undefined)
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

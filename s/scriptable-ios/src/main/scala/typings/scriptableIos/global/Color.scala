@@ -25,36 +25,6 @@ class Color protected ()
     * @see https://docs.scriptable.app/color/#-new-color
     */
   def this(hex: String, alpha: Double) = this()
-  /**
-    * _Alpha of the color._
-    * @see https://docs.scriptable.app/color/#alpha
-    */
-  /* CompleteClass */
-  override var alpha: Double = js.native
-  /**
-    * _Amount of blue in the color._
-    * @see https://docs.scriptable.app/color/#blue
-    */
-  /* CompleteClass */
-  override var blue: Double = js.native
-  /**
-    * _Amount of green in the color._
-    * @see https://docs.scriptable.app/color/#green
-    */
-  /* CompleteClass */
-  override var green: Double = js.native
-  /**
-    * _HEX representation._
-    * @see https://docs.scriptable.app/color/#hex
-    */
-  /* CompleteClass */
-  override var hex: String = js.native
-  /**
-    * _Amount of red in the color._
-    * @see https://docs.scriptable.app/color/#red
-    */
-  /* CompleteClass */
-  override var red: Double = js.native
 }
 
 /* static members */

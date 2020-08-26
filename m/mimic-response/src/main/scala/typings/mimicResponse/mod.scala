@@ -16,6 +16,10 @@ object mod extends js.Object {
   @param toStream - The stream to copy the properties to.
   @return The same object as `toStream`.
   */
-  def apply[T /* <: ReadableStream */](fromStream: IncomingMessage, toStream: T): IncomingMessage with T = js.native
+  def apply[T /* <: ReadableStream */](
+     // eslint-disable-line @typescript-eslint/prefer-readonly-parameter-types
+  fromStream: IncomingMessage,
+    toStream: T
+  ): T with IncomingMessage = js.native
 }
 

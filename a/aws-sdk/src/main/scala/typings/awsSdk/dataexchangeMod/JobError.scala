@@ -35,22 +35,46 @@ trait JobError extends js.Object {
 
 object JobError {
   @scala.inline
-  def apply(
-    Code: Code,
-    Message: string,
-    Details: Details = null,
-    LimitName: JobErrorLimitName = null,
-    LimitValue: js.UndefOr[double] = js.undefined,
-    ResourceId: string = null,
-    ResourceType: JobErrorResourceTypes = null
-  ): JobError = {
+  def apply(Code: Code, Message: string): JobError = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
-    if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
-    if (LimitName != null) __obj.updateDynamic("LimitName")(LimitName.asInstanceOf[js.Any])
-    if (!js.isUndefined(LimitValue)) __obj.updateDynamic("LimitValue")(LimitValue.get.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobError]
   }
+  @scala.inline
+  implicit class JobErrorOps[Self <: JobError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: Code): Self = this.set("Code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessage(value: string): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetails(value: Details): Self = this.set("Details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("Details", js.undefined)
+    @scala.inline
+    def setLimitName(value: JobErrorLimitName): Self = this.set("LimitName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitName: Self = this.set("LimitName", js.undefined)
+    @scala.inline
+    def setLimitValue(value: double): Self = this.set("LimitValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitValue: Self = this.set("LimitValue", js.undefined)
+    @scala.inline
+    def setResourceId(value: string): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setResourceType(value: JobErrorResourceTypes): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

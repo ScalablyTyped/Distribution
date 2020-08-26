@@ -55,8 +55,24 @@ object mod extends js.Object {
           endDate: js.UndefOr[String]
         ): js.Promise[js.Array[js.Object]] = js.native
         def getEntities(): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(
+          skip: js.UndefOr[scala.Nothing],
+          take: js.UndefOr[scala.Nothing],
+          ascending: js.UndefOr[scala.Nothing],
+          name: String
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: js.UndefOr[scala.Nothing], take: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: js.UndefOr[scala.Nothing], take: js.UndefOr[scala.Nothing], ascending: Boolean, name: String): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: js.UndefOr[scala.Nothing], take: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: js.UndefOr[scala.Nothing], take: Double, ascending: js.UndefOr[scala.Nothing], name: String): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: js.UndefOr[scala.Nothing], take: Double, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: js.UndefOr[scala.Nothing], take: Double, ascending: Boolean, name: String): js.Promise[js.Array[js.Object]] = js.native
         def getEntities(skip: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: Double, take: js.UndefOr[scala.Nothing], ascending: js.UndefOr[scala.Nothing], name: String): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: Double, take: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: Double, take: js.UndefOr[scala.Nothing], ascending: Boolean, name: String): js.Promise[js.Array[js.Object]] = js.native
         def getEntities(skip: Double, take: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getEntities(skip: Double, take: Double, ascending: js.UndefOr[scala.Nothing], name: String): js.Promise[js.Array[js.Object]] = js.native
         def getEntities(skip: Double, take: Double, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getEntities(skip: Double, take: Double, ascending: Boolean, name: String): js.Promise[js.Array[js.Object]] = js.native
         // Entity
@@ -66,23 +82,140 @@ object mod extends js.Object {
         def getIntent(id: String, deep: Boolean): js.Promise[js.Object] = js.native
         // Answers
         def getIntentAnswers(): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(
+          id: js.UndefOr[scala.Nothing],
+          skip: js.UndefOr[scala.Nothing],
+          take: js.UndefOr[scala.Nothing],
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: js.UndefOr[scala.Nothing], skip: js.UndefOr[scala.Nothing], take: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: js.UndefOr[scala.Nothing], skip: js.UndefOr[scala.Nothing], take: Double, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: js.UndefOr[scala.Nothing], skip: Double, take: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: js.UndefOr[scala.Nothing], skip: Double, take: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: js.UndefOr[scala.Nothing], skip: Double, take: Double, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getIntentAnswers(id: String): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: String, skip: js.UndefOr[scala.Nothing], take: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: String, skip: js.UndefOr[scala.Nothing], take: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: String, skip: js.UndefOr[scala.Nothing], take: Double, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getIntentAnswers(id: String, skip: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getIntentAnswers(id: String, skip: Double, take: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getIntentAnswers(id: String, skip: Double, take: Double): js.Promise[js.Array[js.Object]] = js.native
         def getIntentAnswers(id: String, skip: Double, take: Double, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         // Questions
         def getIntentQuestions(id: String): js.Promise[js.Array[js.Object]] = js.native
         def getIntents(): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: js.UndefOr[scala.Nothing],
+          take: js.UndefOr[scala.Nothing],
+          deep: js.UndefOr[scala.Nothing],
+          name: js.UndefOr[scala.Nothing],
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: js.UndefOr[scala.Nothing],
+          take: js.UndefOr[scala.Nothing],
+          deep: js.UndefOr[scala.Nothing],
+          name: String
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: js.UndefOr[scala.Nothing],
+          take: js.UndefOr[scala.Nothing],
+          deep: js.UndefOr[scala.Nothing],
+          name: String,
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: js.UndefOr[scala.Nothing], take: js.UndefOr[scala.Nothing], deep: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: js.UndefOr[scala.Nothing],
+          take: js.UndefOr[scala.Nothing],
+          deep: Boolean,
+          name: js.UndefOr[scala.Nothing],
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: js.UndefOr[scala.Nothing], take: js.UndefOr[scala.Nothing], deep: Boolean, name: String): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: js.UndefOr[scala.Nothing],
+          take: js.UndefOr[scala.Nothing],
+          deep: Boolean,
+          name: String,
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: js.UndefOr[scala.Nothing], take: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: js.UndefOr[scala.Nothing],
+          take: Double,
+          deep: js.UndefOr[scala.Nothing],
+          name: js.UndefOr[scala.Nothing],
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: js.UndefOr[scala.Nothing], take: Double, deep: js.UndefOr[scala.Nothing], name: String): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: js.UndefOr[scala.Nothing],
+          take: Double,
+          deep: js.UndefOr[scala.Nothing],
+          name: String,
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: js.UndefOr[scala.Nothing], take: Double, deep: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: js.UndefOr[scala.Nothing],
+          take: Double,
+          deep: Boolean,
+          name: js.UndefOr[scala.Nothing],
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: js.UndefOr[scala.Nothing], take: Double, deep: Boolean, name: String): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: js.UndefOr[scala.Nothing], take: Double, deep: Boolean, name: String, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getIntents(skip: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: Double,
+          take: js.UndefOr[scala.Nothing],
+          deep: js.UndefOr[scala.Nothing],
+          name: js.UndefOr[scala.Nothing],
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: Double, take: js.UndefOr[scala.Nothing], deep: js.UndefOr[scala.Nothing], name: String): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: Double,
+          take: js.UndefOr[scala.Nothing],
+          deep: js.UndefOr[scala.Nothing],
+          name: String,
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: Double, take: js.UndefOr[scala.Nothing], deep: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: Double,
+          take: js.UndefOr[scala.Nothing],
+          deep: Boolean,
+          name: js.UndefOr[scala.Nothing],
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: Double, take: js.UndefOr[scala.Nothing], deep: Boolean, name: String): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: Double, take: js.UndefOr[scala.Nothing], deep: Boolean, name: String, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getIntents(skip: Double, take: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(
+          skip: Double,
+          take: Double,
+          deep: js.UndefOr[scala.Nothing],
+          name: js.UndefOr[scala.Nothing],
+          ascending: Boolean
+        ): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: Double, take: Double, deep: js.UndefOr[scala.Nothing], name: String): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: Double, take: Double, deep: js.UndefOr[scala.Nothing], name: String, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getIntents(skip: Double, take: Double, deep: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getIntents(skip: Double, take: Double, deep: Boolean, name: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getIntents(skip: Double, take: Double, deep: Boolean, name: String): js.Promise[js.Array[js.Object]] = js.native
         def getIntents(skip: Double, take: Double, deep: Boolean, name: String, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         // Model
         def getModel(id: String): js.Promise[js.Object] = js.native
         def getModelSummary(): js.Promise[js.Object] = js.native
         def getModels(): js.Promise[js.Array[js.Object]] = js.native
+        def getModels(skip: js.UndefOr[scala.Nothing], take: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
+        def getModels(skip: js.UndefOr[scala.Nothing], take: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getModels(skip: js.UndefOr[scala.Nothing], take: Double, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getModels(skip: Double): js.Promise[js.Array[js.Object]] = js.native
+        def getModels(skip: Double, take: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         def getModels(skip: Double, take: Double): js.Promise[js.Array[js.Object]] = js.native
         def getModels(skip: Double, take: Double, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
         // Word Set

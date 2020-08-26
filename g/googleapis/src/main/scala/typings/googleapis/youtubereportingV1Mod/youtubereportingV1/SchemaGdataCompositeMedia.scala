@@ -57,32 +57,66 @@ trait SchemaGdataCompositeMedia extends js.Object {
 
 object SchemaGdataCompositeMedia {
   @scala.inline
-  def apply(
-    blobRef: String = null,
-    blobstore2Info: SchemaGdataBlobstore2Info = null,
-    cosmoBinaryReference: String = null,
-    crc32cHash: js.UndefOr[Double] = js.undefined,
-    `inline`: String = null,
-    length: String = null,
-    md5Hash: String = null,
-    objectId: SchemaGdataObjectId = null,
-    path: String = null,
-    referenceType: String = null,
-    sha1Hash: String = null
-  ): SchemaGdataCompositeMedia = {
+  def apply(): SchemaGdataCompositeMedia = {
     val __obj = js.Dynamic.literal()
-    if (blobRef != null) __obj.updateDynamic("blobRef")(blobRef.asInstanceOf[js.Any])
-    if (blobstore2Info != null) __obj.updateDynamic("blobstore2Info")(blobstore2Info.asInstanceOf[js.Any])
-    if (cosmoBinaryReference != null) __obj.updateDynamic("cosmoBinaryReference")(cosmoBinaryReference.asInstanceOf[js.Any])
-    if (!js.isUndefined(crc32cHash)) __obj.updateDynamic("crc32cHash")(crc32cHash.get.asInstanceOf[js.Any])
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (md5Hash != null) __obj.updateDynamic("md5Hash")(md5Hash.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (referenceType != null) __obj.updateDynamic("referenceType")(referenceType.asInstanceOf[js.Any])
-    if (sha1Hash != null) __obj.updateDynamic("sha1Hash")(sha1Hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGdataCompositeMedia]
   }
+  @scala.inline
+  implicit class SchemaGdataCompositeMediaOps[Self <: SchemaGdataCompositeMedia] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlobRef(value: String): Self = this.set("blobRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlobRef: Self = this.set("blobRef", js.undefined)
+    @scala.inline
+    def setBlobstore2Info(value: SchemaGdataBlobstore2Info): Self = this.set("blobstore2Info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlobstore2Info: Self = this.set("blobstore2Info", js.undefined)
+    @scala.inline
+    def setCosmoBinaryReference(value: String): Self = this.set("cosmoBinaryReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCosmoBinaryReference: Self = this.set("cosmoBinaryReference", js.undefined)
+    @scala.inline
+    def setCrc32cHash(value: Double): Self = this.set("crc32cHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrc32cHash: Self = this.set("crc32cHash", js.undefined)
+    @scala.inline
+    def setInline(value: String): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setLength(value: String): Self = this.set("length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    @scala.inline
+    def setMd5Hash(value: String): Self = this.set("md5Hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd5Hash: Self = this.set("md5Hash", js.undefined)
+    @scala.inline
+    def setObjectId(value: SchemaGdataObjectId): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setReferenceType(value: String): Self = this.set("referenceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceType: Self = this.set("referenceType", js.undefined)
+    @scala.inline
+    def setSha1Hash(value: String): Self = this.set("sha1Hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha1Hash: Self = this.set("sha1Hash", js.undefined)
+  }
+  
 }
 

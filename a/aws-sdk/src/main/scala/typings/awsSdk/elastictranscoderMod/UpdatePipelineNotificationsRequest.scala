@@ -22,5 +22,22 @@ object UpdatePipelineNotificationsRequest {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Notifications = Notifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePipelineNotificationsRequest]
   }
+  @scala.inline
+  implicit class UpdatePipelineNotificationsRequestOps[Self <: UpdatePipelineNotificationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotifications(value: Notifications): Self = this.set("Notifications", value.asInstanceOf[js.Any])
+  }
+  
 }
 

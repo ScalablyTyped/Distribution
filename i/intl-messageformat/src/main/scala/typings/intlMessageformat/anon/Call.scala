@@ -14,11 +14,12 @@ trait Call
   extends Instantiable0[NumberFormat]
      with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), NumberFormat]
      with Instantiable2[
-      (/* locales */ js.Array[String]) | (/* locales */ String), 
+      js.UndefOr[(/* locales */ js.Array[String]) | (/* locales */ String)], 
       /* options */ NumberFormatOptions, 
       NumberFormat
     ] {
   def apply(): NumberFormat = js.native
+  def apply(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): NumberFormat = js.native
   def apply(locales: String): NumberFormat = js.native
   def apply(locales: String, options: NumberFormatOptions): NumberFormat = js.native
   def apply(locales: js.Array[String]): NumberFormat = js.native

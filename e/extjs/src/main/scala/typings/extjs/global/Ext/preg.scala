@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object preg extends js.Object {
   def apply(): Unit = js.native
+  def apply(ptype: js.UndefOr[scala.Nothing], cls: js.Any): Unit = js.native
   def apply(ptype: java.lang.String): Unit = js.native
   def apply(ptype: java.lang.String, cls: js.Any): Unit = js.native
 }

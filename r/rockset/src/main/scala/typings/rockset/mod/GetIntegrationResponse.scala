@@ -4,17 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetIntegrationResponse extends js.Object {
   // integration object
-  var data: js.UndefOr[Integration] = js.undefined
+  var data: js.UndefOr[Integration] = js.native
 }
 
 object GetIntegrationResponse {
   @scala.inline
-  def apply(data: Integration = null): GetIntegrationResponse = {
+  def apply(): GetIntegrationResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIntegrationResponse]
   }
+  @scala.inline
+  implicit class GetIntegrationResponseOps[Self <: GetIntegrationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: Integration): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+  }
+  
 }
 

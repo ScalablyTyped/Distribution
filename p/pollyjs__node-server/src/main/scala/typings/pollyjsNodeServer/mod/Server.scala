@@ -29,6 +29,7 @@ class Server () extends js.Object {
   def app(req: IncomingMessage, res: Response[_]): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   def listen(): typings.node.httpMod.Server = js.native
+  def listen(port: js.UndefOr[scala.Nothing], host: String): typings.node.httpMod.Server = js.native
   def listen(port: Double): typings.node.httpMod.Server = js.native
   def listen(port: Double, host: String): typings.node.httpMod.Server = js.native
 }

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * This is a simple container allowing the access to OLE storages. The subcomponents are either OLE storages themselves or streams.
   */
+@js.native
 trait XOLESimpleStorage
   extends XNameContainer
      with XComponent

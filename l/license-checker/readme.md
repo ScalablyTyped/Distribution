@@ -12,7 +12,7 @@ Check license info for a package
 | Keywords           | license, cli, checker, oss |
 | # releases         | 17 |
 | # dependents       | 67 |
-| # downloads        | 3559320 |
+| # downloads        | 3735565 |
 | # stars            | 20 |
 
 ## Links

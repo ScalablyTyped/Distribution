@@ -24,11 +24,32 @@ trait SchemaDimensionFilterClause extends js.Object {
 
 object SchemaDimensionFilterClause {
   @scala.inline
-  def apply(filters: js.Array[SchemaDimensionFilter] = null, operator: String = null): SchemaDimensionFilterClause = {
+  def apply(): SchemaDimensionFilterClause = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDimensionFilterClause]
   }
+  @scala.inline
+  implicit class SchemaDimensionFilterClauseOps[Self <: SchemaDimensionFilterClause] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: SchemaDimensionFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[SchemaDimensionFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+  }
+  
 }
 

@@ -47,6 +47,7 @@ object mod extends js.Object {
     * Mocha.
     */
   def apply(parameters: js.Array[_]): Describe = js.native
+  def apply(parameters: js.Array[_], dIt: js.UndefOr[scala.Nothing], dDescribe: SuiteFunction): Describe = js.native
   def apply(parameters: js.Array[_], dIt: TestFunction): Describe = js.native
   def apply(parameters: js.Array[_], dIt: TestFunction, dDescribe: SuiteFunction): Describe = js.native
 }

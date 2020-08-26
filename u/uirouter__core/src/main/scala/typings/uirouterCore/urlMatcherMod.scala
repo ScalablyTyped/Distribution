@@ -28,17 +28,18 @@ object urlMatcherMod extends js.Object {
       paramFactory: ParamFactory,
       config: UrlMatcherCompileConfig
     ) = this()
-    /** @hidden */
+    /** @internal */
     var _cache: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _children: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _compiled: js.Any = js.native
-    /** @hidden */
+    var _getDecodedParamValue: js.Any = js.native
+    /** @internal */
     var _params: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _segments: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     val config: js.Any = js.native
     /** The pattern that was passed into the constructor */
     var pattern: String = js.native
@@ -77,7 +78,11 @@ object urlMatcherMod extends js.Object {
       * @returns The captured parameter values.
       */
     def exec(path: String): RawParams = js.native
+    def exec(path: String, search: js.UndefOr[scala.Nothing], hash: js.UndefOr[scala.Nothing], options: js.Any): RawParams = js.native
+    def exec(path: String, search: js.UndefOr[scala.Nothing], hash: String): RawParams = js.native
+    def exec(path: String, search: js.UndefOr[scala.Nothing], hash: String, options: js.Any): RawParams = js.native
     def exec(path: String, search: js.Any): RawParams = js.native
+    def exec(path: String, search: js.Any, hash: js.UndefOr[scala.Nothing], options: js.Any): RawParams = js.native
     def exec(path: String, search: js.Any, hash: String): RawParams = js.native
     def exec(path: String, search: js.Any, hash: String, options: js.Any): RawParams = js.native
     /**
@@ -97,10 +102,10 @@ object urlMatcherMod extends js.Object {
       */
     def format(): String = js.native
     def format(values: RawParams): String = js.native
-    /** @hidden */
+    /** @internal */
     def isRoot(): Boolean = js.native
     /**
-      * @hidden
+      * @internal
       * Returns a single parameter from this UrlMatcher by id
       *
       * @param id
@@ -110,7 +115,7 @@ object urlMatcherMod extends js.Object {
     def parameter(id: String): Param = js.native
     def parameter(id: String, opts: js.Any): Param = js.native
     /**
-      * @hidden
+      * @internal
       * Returns all the [[Param]] objects of all path and search parameters of this pattern in order of appearance.
       *
       * @returns {Array.<Param>}  An array of [[Param]] objects. Must be treated as read-only. If the
@@ -133,7 +138,7 @@ object urlMatcherMod extends js.Object {
   /* static members */
   @js.native
   object UrlMatcher extends js.Object {
-    /** @hidden */
+    /** @internal */
     var nameValidator: RegExp = js.native
     /**
       * Compare two UrlMatchers
@@ -145,11 +150,11 @@ object urlMatcherMod extends js.Object {
       * The comparison function sorts static segments before dynamic ones.
       */
     def compare(a: UrlMatcher, b: UrlMatcher): Double = js.native
-    /** @hidden */
+    /** @internal */
     def encodeDashes(str: String): String = js.native
-    /** @hidden Given a matcher, return an array with the matcher's path segments and path params, in order */
+    /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
     def pathSegmentsAndParams(matcher: UrlMatcher): js.Any = js.native
-    /** @hidden Given a matcher, return an array with the matcher's query params */
+    /** @internal Given a matcher, return an array with the matcher's query params */
     def queryParams(matcher: UrlMatcher): js.Array[Param] = js.native
   }
   

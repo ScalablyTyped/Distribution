@@ -14,14 +14,5 @@ class RoomExtension protected ()
     * @param {string} className The fully qualified name of the main class of the Extension.
     */
   def this(id: String, className: String) = this()
-  /** @type {string} Returns the fully qualified name of the main class of the Extension. */
-  /* CompleteClass */
-  override var className: String = js.native
-  /** @type {string} Returns the name of the Extension to be attached to the Room. */
-  /* CompleteClass */
-  override var id: String = js.native
-  /** @type {string} Sets the name of an optional properties file that should be loaded on the server-side during the Extension initialization. */
-  /* CompleteClass */
-  override var propertiesFile: String = js.native
 }
 

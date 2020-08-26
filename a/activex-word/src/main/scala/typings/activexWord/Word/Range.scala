@@ -134,9 +134,164 @@ trait Range extends js.Object {
   def Collapse(Direction: WdCollapseDirection): Unit = js.native
   def ComputeStatistics(Statistic: WdStatistic): Double = js.native
   def ConvertHangulAndHanja(): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.UndefOr[scala.Nothing],
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.Any,
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.UndefOr[scala.Nothing],
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.Any,
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: js.UndefOr[scala.Nothing], FastConversion: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.Any,
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.UndefOr[scala.Nothing],
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.Any,
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.Any,
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.Any,
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: js.UndefOr[scala.Nothing], FastConversion: js.Any, CheckHangulEnding: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.Any,
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.UndefOr[scala.Nothing],
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.Any,
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.UndefOr[scala.Nothing],
+    FastConversion: js.Any,
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.Any,
+    CustomDictionary: js.Any
+  ): Unit = js.native
   def ConvertHangulAndHanja(ConversionsMode: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.UndefOr[scala.Nothing],
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.Any,
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: js.Any, FastConversion: js.UndefOr[scala.Nothing], CheckHangulEnding: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.UndefOr[scala.Nothing],
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.UndefOr[scala.Nothing],
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.Any,
+    CustomDictionary: js.Any
+  ): Unit = js.native
   def ConvertHangulAndHanja(ConversionsMode: js.Any, FastConversion: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.Any,
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.UndefOr[scala.Nothing],
+    CustomDictionary: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.Any,
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.Any
+  ): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.Any,
+    CheckHangulEnding: js.UndefOr[scala.Nothing],
+    EnableRecentOrdering: js.Any,
+    CustomDictionary: js.Any
+  ): Unit = js.native
   def ConvertHangulAndHanja(ConversionsMode: js.Any, FastConversion: js.Any, CheckHangulEnding: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(
+    ConversionsMode: js.Any,
+    FastConversion: js.Any,
+    CheckHangulEnding: js.Any,
+    EnableRecentOrdering: js.UndefOr[scala.Nothing],
+    CustomDictionary: js.Any
+  ): Unit = js.native
   def ConvertHangulAndHanja(
     ConversionsMode: js.Any,
     FastConversion: js.Any,
@@ -187,16 +342,64 @@ trait Range extends js.Object {
   def Copy(): Unit = js.native
   def CopyAsPicture(): Unit = js.native
   def CreatePublisher(): Unit = js.native
+  def CreatePublisher(
+    Edition: js.UndefOr[scala.Nothing],
+    ContainsPICT: js.UndefOr[scala.Nothing],
+    ContainsRTF: js.UndefOr[scala.Nothing],
+    ContainsText: js.Any
+  ): Unit = js.native
+  def CreatePublisher(Edition: js.UndefOr[scala.Nothing], ContainsPICT: js.UndefOr[scala.Nothing], ContainsRTF: js.Any): Unit = js.native
+  def CreatePublisher(
+    Edition: js.UndefOr[scala.Nothing],
+    ContainsPICT: js.UndefOr[scala.Nothing],
+    ContainsRTF: js.Any,
+    ContainsText: js.Any
+  ): Unit = js.native
+  def CreatePublisher(Edition: js.UndefOr[scala.Nothing], ContainsPICT: js.Any): Unit = js.native
+  def CreatePublisher(
+    Edition: js.UndefOr[scala.Nothing],
+    ContainsPICT: js.Any,
+    ContainsRTF: js.UndefOr[scala.Nothing],
+    ContainsText: js.Any
+  ): Unit = js.native
+  def CreatePublisher(Edition: js.UndefOr[scala.Nothing], ContainsPICT: js.Any, ContainsRTF: js.Any): Unit = js.native
+  def CreatePublisher(
+    Edition: js.UndefOr[scala.Nothing],
+    ContainsPICT: js.Any,
+    ContainsRTF: js.Any,
+    ContainsText: js.Any
+  ): Unit = js.native
   def CreatePublisher(Edition: js.Any): Unit = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    ContainsPICT: js.UndefOr[scala.Nothing],
+    ContainsRTF: js.UndefOr[scala.Nothing],
+    ContainsText: js.Any
+  ): Unit = js.native
+  def CreatePublisher(Edition: js.Any, ContainsPICT: js.UndefOr[scala.Nothing], ContainsRTF: js.Any): Unit = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    ContainsPICT: js.UndefOr[scala.Nothing],
+    ContainsRTF: js.Any,
+    ContainsText: js.Any
+  ): Unit = js.native
   def CreatePublisher(Edition: js.Any, ContainsPICT: js.Any): Unit = js.native
+  def CreatePublisher(
+    Edition: js.Any,
+    ContainsPICT: js.Any,
+    ContainsRTF: js.UndefOr[scala.Nothing],
+    ContainsText: js.Any
+  ): Unit = js.native
   def CreatePublisher(Edition: js.Any, ContainsPICT: js.Any, ContainsRTF: js.Any): Unit = js.native
   def CreatePublisher(Edition: js.Any, ContainsPICT: js.Any, ContainsRTF: js.Any, ContainsText: js.Any): Unit = js.native
   def Cut(): Unit = js.native
   def Delete(): Double = js.native
+  def Delete(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def Delete(Unit: WdUnits): Double = js.native
   def Delete(Unit: WdUnits, Count: Double): Double = js.native
   def DetectLanguage(): Unit = js.native
   def EndOf(): Double = js.native
+  def EndOf(Unit: js.UndefOr[scala.Nothing], Extend: js.Any): Double = js.native
   def EndOf(Unit: js.Any): Double = js.native
   def EndOf(Unit: js.Any, Extend: js.Any): Double = js.native
   def Expand(): Double = js.native
@@ -245,8 +448,24 @@ trait Range extends js.Object {
     CustomDictionary10: js.UndefOr[js.Any]
   ): SpellingSuggestions = js.native
   def GoTo(): Range = js.native
+  def GoTo(
+    What: js.UndefOr[scala.Nothing],
+    Which: js.UndefOr[scala.Nothing],
+    Count: js.UndefOr[scala.Nothing],
+    Name: js.Any
+  ): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.UndefOr[scala.Nothing], Count: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.UndefOr[scala.Nothing], Count: js.Any, Name: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any, Count: js.UndefOr[scala.Nothing], Name: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any, Count: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any, Count: js.Any, Name: js.Any): Range = js.native
   def GoTo(What: js.Any): Range = js.native
+  def GoTo(What: js.Any, Which: js.UndefOr[scala.Nothing], Count: js.UndefOr[scala.Nothing], Name: js.Any): Range = js.native
+  def GoTo(What: js.Any, Which: js.UndefOr[scala.Nothing], Count: js.Any): Range = js.native
+  def GoTo(What: js.Any, Which: js.UndefOr[scala.Nothing], Count: js.Any, Name: js.Any): Range = js.native
   def GoTo(What: js.Any, Which: js.Any): Range = js.native
+  def GoTo(What: js.Any, Which: js.Any, Count: js.UndefOr[scala.Nothing], Name: js.Any): Range = js.native
   def GoTo(What: js.Any, Which: js.Any, Count: js.Any): Range = js.native
   def GoTo(What: js.Any, Which: js.Any, Count: js.Any, Name: js.Any): Range = js.native
   def GoToEditableRange(): Range = js.native
@@ -268,15 +487,141 @@ trait Range extends js.Object {
   def InsertBreak(): Unit = js.native
   def InsertBreak(Type: js.Any): Unit = js.native
   def InsertCaption(Label: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    ExcludeLabel: js.Any
+  ): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.Any
+  ): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.Any,
+    ExcludeLabel: js.Any
+  ): Unit = js.native
+  def InsertCaption(Label: js.Any, Title: js.UndefOr[scala.Nothing], TitleAutoText: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.Any,
+    Position: js.UndefOr[scala.Nothing],
+    ExcludeLabel: js.Any
+  ): Unit = js.native
+  def InsertCaption(Label: js.Any, Title: js.UndefOr[scala.Nothing], TitleAutoText: js.Any, Position: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.Any,
+    Position: js.Any,
+    ExcludeLabel: js.Any
+  ): Unit = js.native
   def InsertCaption(Label: js.Any, Title: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.Any,
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    ExcludeLabel: js.Any
+  ): Unit = js.native
+  def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.UndefOr[scala.Nothing], Position: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.Any,
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.Any,
+    ExcludeLabel: js.Any
+  ): Unit = js.native
   def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.Any,
+    TitleAutoText: js.Any,
+    Position: js.UndefOr[scala.Nothing],
+    ExcludeLabel: js.Any
+  ): Unit = js.native
   def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: js.Any): Unit = js.native
   def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: js.Any, ExcludeLabel: js.Any): Unit = js.native
   def InsertCaptionXP(Label: js.Any): Unit = js.native
+  def InsertCaptionXP(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.Any
+  ): Unit = js.native
+  def InsertCaptionXP(Label: js.Any, Title: js.UndefOr[scala.Nothing], TitleAutoText: js.Any): Unit = js.native
+  def InsertCaptionXP(Label: js.Any, Title: js.UndefOr[scala.Nothing], TitleAutoText: js.Any, Position: js.Any): Unit = js.native
   def InsertCaptionXP(Label: js.Any, Title: js.Any): Unit = js.native
+  def InsertCaptionXP(Label: js.Any, Title: js.Any, TitleAutoText: js.UndefOr[scala.Nothing], Position: js.Any): Unit = js.native
   def InsertCaptionXP(Label: js.Any, Title: js.Any, TitleAutoText: js.Any): Unit = js.native
   def InsertCaptionXP(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: js.Any): Unit = js.native
   def InsertCrossReference(ReferenceType: js.Any, ReferenceKind: WdReferenceKind, ReferenceItem: js.Any): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.UndefOr[scala.Nothing],
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.Any,
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any,
+    SeparateNumbers: js.UndefOr[scala.Nothing],
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any,
+    SeparateNumbers: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any,
+    SeparateNumbers: js.Any,
+    SeparatorString: js.Any
+  ): Unit = js.native
   def InsertCrossReference(
     ReferenceType: js.Any,
     ReferenceKind: WdReferenceKind,
@@ -288,7 +633,42 @@ trait Range extends js.Object {
     ReferenceKind: WdReferenceKind,
     ReferenceItem: js.Any,
     InsertAsHyperlink: js.Any,
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.UndefOr[scala.Nothing],
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.Any,
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.Any,
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.Any,
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.Any,
     IncludePosition: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.Any,
+    IncludePosition: js.Any,
+    SeparateNumbers: js.UndefOr[scala.Nothing],
+    SeparatorString: js.Any
   ): Unit = js.native
   def InsertCrossReference(
     ReferenceType: js.Any,
@@ -308,6 +688,13 @@ trait Range extends js.Object {
     SeparatorString: js.Any
   ): Unit = js.native
   def InsertCrossReference_2002(ReferenceType: js.Any, ReferenceKind: WdReferenceKind, ReferenceItem: js.Any): Unit = js.native
+  def InsertCrossReference_2002(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any
+  ): Unit = js.native
   def InsertCrossReference_2002(
     ReferenceType: js.Any,
     ReferenceKind: WdReferenceKind,
@@ -338,9 +725,164 @@ trait Range extends js.Object {
     IncludeFields: js.UndefOr[js.Any]
   ): Unit = js.native
   def InsertDateTime(): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: js.UndefOr[scala.Nothing], InsertAsField: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: js.UndefOr[scala.Nothing], InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
   def InsertDateTime(DateTimeFormat: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.UndefOr[scala.Nothing], InsertAsFullWidth: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
   def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
   def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
   def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: js.Any, DateLanguage: js.Any): Unit = js.native
   def InsertDateTime(
     DateTimeFormat: js.Any,
@@ -350,19 +892,94 @@ trait Range extends js.Object {
     CalendarType: js.Any
   ): Unit = js.native
   def InsertDateTimeOld(): Unit = js.native
+  def InsertDateTimeOld(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any
+  ): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: js.UndefOr[scala.Nothing], InsertAsField: js.Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: js.UndefOr[scala.Nothing], InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
   def InsertDateTimeOld(DateTimeFormat: js.Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: js.Any, InsertAsField: js.UndefOr[scala.Nothing], InsertAsFullWidth: js.Any): Unit = js.native
   def InsertDateTimeOld(DateTimeFormat: js.Any, InsertAsField: js.Any): Unit = js.native
   def InsertDateTimeOld(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
   def InsertFile(FileName: String): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    Attachment: js.Any
+  ): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.Any
+  ): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.Any,
+    Attachment: js.Any
+  ): Unit = js.native
+  def InsertFile(FileName: String, Range: js.UndefOr[scala.Nothing], ConfirmConversions: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.Any,
+    Link: js.UndefOr[scala.Nothing],
+    Attachment: js.Any
+  ): Unit = js.native
+  def InsertFile(FileName: String, Range: js.UndefOr[scala.Nothing], ConfirmConversions: js.Any, Link: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.Any,
+    Link: js.Any,
+    Attachment: js.Any
+  ): Unit = js.native
   def InsertFile(FileName: String, Range: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.Any,
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    Attachment: js.Any
+  ): Unit = js.native
+  def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.UndefOr[scala.Nothing], Link: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.Any,
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.Any,
+    Attachment: js.Any
+  ): Unit = js.native
   def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.Any,
+    ConfirmConversions: js.Any,
+    Link: js.UndefOr[scala.Nothing],
+    Attachment: js.Any
+  ): Unit = js.native
   def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any, Link: js.Any): Unit = js.native
   def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any, Link: js.Any, Attachment: js.Any): Unit = js.native
   def InsertParagraph(): Unit = js.native
   def InsertParagraphAfter(): Unit = js.native
   def InsertParagraphBefore(): Unit = js.native
   def InsertSymbol(CharacterNumber: Double): Unit = js.native
+  def InsertSymbol(
+    CharacterNumber: Double,
+    Font: js.UndefOr[scala.Nothing],
+    Unicode: js.UndefOr[scala.Nothing],
+    Bias: js.Any
+  ): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: js.UndefOr[scala.Nothing], Unicode: js.Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: js.UndefOr[scala.Nothing], Unicode: js.Any, Bias: js.Any): Unit = js.native
   def InsertSymbol(CharacterNumber: Double, Font: js.Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: js.Any, Unicode: js.UndefOr[scala.Nothing], Bias: js.Any): Unit = js.native
   def InsertSymbol(CharacterNumber: Double, Font: js.Any, Unicode: js.Any): Unit = js.native
   def InsertSymbol(CharacterNumber: Double, Font: js.Any, Unicode: js.Any, Bias: js.Any): Unit = js.native
   def InsertXML(XML: String): Unit = js.native
@@ -370,12 +987,15 @@ trait Range extends js.Object {
   def IsEqual(Range: Range): Boolean = js.native
   def LookupNameProperties(): Unit = js.native
   def ModifyEnclosure(Style: js.Any): Unit = js.native
+  def ModifyEnclosure(Style: js.Any, Symbol: js.UndefOr[scala.Nothing], EnclosedText: js.Any): Unit = js.native
   def ModifyEnclosure(Style: js.Any, Symbol: js.Any): Unit = js.native
   def ModifyEnclosure(Style: js.Any, Symbol: js.Any, EnclosedText: js.Any): Unit = js.native
   def Move(): Double = js.native
+  def Move(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def Move(Unit: WdUnits): Double = js.native
   def Move(Unit: WdUnits, Count: Double): Double = js.native
   def MoveEnd(): Double = js.native
+  def MoveEnd(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def MoveEnd(Unit: WdUnits): Double = js.native
   def MoveEnd(Unit: WdUnits, Count: Double): Double = js.native
   def MoveEndUntil(Cset: js.Any): Double = js.native
@@ -383,6 +1003,7 @@ trait Range extends js.Object {
   def MoveEndWhile(Cset: js.Any): Double = js.native
   def MoveEndWhile(Cset: js.Any, Count: js.Any): Double = js.native
   def MoveStart(): Double = js.native
+  def MoveStart(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def MoveStart(Unit: WdUnits): Double = js.native
   def MoveStart(Unit: WdUnits, Count: Double): Double = js.native
   def MoveStartUntil(Cset: js.Any): Double = js.native
@@ -394,6 +1015,7 @@ trait Range extends js.Object {
   def MoveWhile(Cset: js.Any): Double = js.native
   def MoveWhile(Cset: js.Any, Count: js.Any): Double = js.native
   def Next(): Range = js.native
+  def Next(Unit: js.UndefOr[scala.Nothing], Count: js.Any): Range = js.native
   def Next(Unit: js.Any): Range = js.native
   def Next(Unit: js.Any, Count: js.Any): Range = js.native
   def NextSubdocument(): Unit = js.native
@@ -418,8 +1040,71 @@ trait Range extends js.Object {
     * @param string [FontName='']
     */
   def PhoneticGuide(Text: String): Unit = js.native
+  def PhoneticGuide(
+    Text: String,
+    Alignment: js.UndefOr[scala.Nothing],
+    Raise: js.UndefOr[scala.Nothing],
+    FontSize: js.UndefOr[scala.Nothing],
+    FontName: String
+  ): Unit = js.native
+  def PhoneticGuide(
+    Text: String,
+    Alignment: js.UndefOr[scala.Nothing],
+    Raise: js.UndefOr[scala.Nothing],
+    FontSize: Double
+  ): Unit = js.native
+  def PhoneticGuide(
+    Text: String,
+    Alignment: js.UndefOr[scala.Nothing],
+    Raise: js.UndefOr[scala.Nothing],
+    FontSize: Double,
+    FontName: String
+  ): Unit = js.native
+  def PhoneticGuide(Text: String, Alignment: js.UndefOr[scala.Nothing], Raise: Double): Unit = js.native
+  def PhoneticGuide(
+    Text: String,
+    Alignment: js.UndefOr[scala.Nothing],
+    Raise: Double,
+    FontSize: js.UndefOr[scala.Nothing],
+    FontName: String
+  ): Unit = js.native
+  def PhoneticGuide(Text: String, Alignment: js.UndefOr[scala.Nothing], Raise: Double, FontSize: Double): Unit = js.native
+  def PhoneticGuide(
+    Text: String,
+    Alignment: js.UndefOr[scala.Nothing],
+    Raise: Double,
+    FontSize: Double,
+    FontName: String
+  ): Unit = js.native
   def PhoneticGuide(Text: String, Alignment: WdPhoneticGuideAlignmentType): Unit = js.native
+  def PhoneticGuide(
+    Text: String,
+    Alignment: WdPhoneticGuideAlignmentType,
+    Raise: js.UndefOr[scala.Nothing],
+    FontSize: js.UndefOr[scala.Nothing],
+    FontName: String
+  ): Unit = js.native
+  def PhoneticGuide(
+    Text: String,
+    Alignment: WdPhoneticGuideAlignmentType,
+    Raise: js.UndefOr[scala.Nothing],
+    FontSize: Double
+  ): Unit = js.native
+  def PhoneticGuide(
+    Text: String,
+    Alignment: WdPhoneticGuideAlignmentType,
+    Raise: js.UndefOr[scala.Nothing],
+    FontSize: Double,
+    FontName: String
+  ): Unit = js.native
   def PhoneticGuide(Text: String, Alignment: WdPhoneticGuideAlignmentType, Raise: Double): Unit = js.native
+  def PhoneticGuide(
+    Text: String,
+    Alignment: WdPhoneticGuideAlignmentType,
+    Raise: Double,
+    FontSize: js.UndefOr[scala.Nothing],
+    FontName: String
+  ): Unit = js.native
   def PhoneticGuide(Text: String, Alignment: WdPhoneticGuideAlignmentType, Raise: Double, FontSize: Double): Unit = js.native
   def PhoneticGuide(
     Text: String,
@@ -429,6 +1114,7 @@ trait Range extends js.Object {
     FontName: String
   ): Unit = js.native
   def Previous(): Range = js.native
+  def Previous(Unit: js.UndefOr[scala.Nothing], Count: js.Any): Range = js.native
   def Previous(Unit: js.Any): Range = js.native
   def Previous(Unit: js.Any, Count: js.Any): Range = js.native
   def PreviousSubdocument(): Unit = js.native
@@ -477,6 +1163,7 @@ trait Range extends js.Object {
     LanguageID: js.UndefOr[js.Any]
   ): Unit = js.native
   def StartOf(): Double = js.native
+  def StartOf(Unit: js.UndefOr[scala.Nothing], Extend: js.Any): Double = js.native
   def StartOf(Unit: js.Any): Double = js.native
   def StartOf(Unit: js.Any, Extend: js.Any): Double = js.native
   def SubscribeTo(Edition: String): Unit = js.native
@@ -487,7 +1174,19 @@ trait Range extends js.Object {
     * @param boolean [UseVariants=false]
     */
   def TCSCConverter(): Unit = js.native
+  def TCSCConverter(
+    WdTCSCConverterDirection: js.UndefOr[scala.Nothing],
+    CommonTerms: js.UndefOr[scala.Nothing],
+    UseVariants: Boolean
+  ): Unit = js.native
+  def TCSCConverter(WdTCSCConverterDirection: js.UndefOr[scala.Nothing], CommonTerms: Boolean): Unit = js.native
+  def TCSCConverter(WdTCSCConverterDirection: js.UndefOr[scala.Nothing], CommonTerms: Boolean, UseVariants: Boolean): Unit = js.native
   def TCSCConverter(WdTCSCConverterDirection: WdTCSCConverterDirection): Unit = js.native
+  def TCSCConverter(
+    WdTCSCConverterDirection: WdTCSCConverterDirection,
+    CommonTerms: js.UndefOr[scala.Nothing],
+    UseVariants: Boolean
+  ): Unit = js.native
   def TCSCConverter(WdTCSCConverterDirection: WdTCSCConverterDirection, CommonTerms: Boolean): Unit = js.native
   def TCSCConverter(WdTCSCConverterDirection: WdTCSCConverterDirection, CommonTerms: Boolean, UseVariants: Boolean): Unit = js.native
   def WholeStory(): Unit = js.native

@@ -50,30 +50,62 @@ trait Certificate extends js.Object {
 
 object Certificate {
   @scala.inline
-  def apply(
-    CertificateArn: String = null,
-    CertificateCreationDate: TStamp = null,
-    CertificateIdentifier: String = null,
-    CertificateOwner: String = null,
-    CertificatePem: String = null,
-    CertificateWallet: CertificateWallet = null,
-    KeyLength: js.UndefOr[IntegerOptional] = js.undefined,
-    SigningAlgorithm: String = null,
-    ValidFromDate: TStamp = null,
-    ValidToDate: TStamp = null
-  ): Certificate = {
+  def apply(): Certificate = {
     val __obj = js.Dynamic.literal()
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (CertificateCreationDate != null) __obj.updateDynamic("CertificateCreationDate")(CertificateCreationDate.asInstanceOf[js.Any])
-    if (CertificateIdentifier != null) __obj.updateDynamic("CertificateIdentifier")(CertificateIdentifier.asInstanceOf[js.Any])
-    if (CertificateOwner != null) __obj.updateDynamic("CertificateOwner")(CertificateOwner.asInstanceOf[js.Any])
-    if (CertificatePem != null) __obj.updateDynamic("CertificatePem")(CertificatePem.asInstanceOf[js.Any])
-    if (CertificateWallet != null) __obj.updateDynamic("CertificateWallet")(CertificateWallet.asInstanceOf[js.Any])
-    if (!js.isUndefined(KeyLength)) __obj.updateDynamic("KeyLength")(KeyLength.get.asInstanceOf[js.Any])
-    if (SigningAlgorithm != null) __obj.updateDynamic("SigningAlgorithm")(SigningAlgorithm.asInstanceOf[js.Any])
-    if (ValidFromDate != null) __obj.updateDynamic("ValidFromDate")(ValidFromDate.asInstanceOf[js.Any])
-    if (ValidToDate != null) __obj.updateDynamic("ValidToDate")(ValidToDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Certificate]
   }
+  @scala.inline
+  implicit class CertificateOps[Self <: Certificate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: String): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setCertificateCreationDate(value: TStamp): Self = this.set("CertificateCreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateCreationDate: Self = this.set("CertificateCreationDate", js.undefined)
+    @scala.inline
+    def setCertificateIdentifier(value: String): Self = this.set("CertificateIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateIdentifier: Self = this.set("CertificateIdentifier", js.undefined)
+    @scala.inline
+    def setCertificateOwner(value: String): Self = this.set("CertificateOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateOwner: Self = this.set("CertificateOwner", js.undefined)
+    @scala.inline
+    def setCertificatePem(value: String): Self = this.set("CertificatePem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatePem: Self = this.set("CertificatePem", js.undefined)
+    @scala.inline
+    def setCertificateWallet(value: CertificateWallet): Self = this.set("CertificateWallet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateWallet: Self = this.set("CertificateWallet", js.undefined)
+    @scala.inline
+    def setKeyLength(value: IntegerOptional): Self = this.set("KeyLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyLength: Self = this.set("KeyLength", js.undefined)
+    @scala.inline
+    def setSigningAlgorithm(value: String): Self = this.set("SigningAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningAlgorithm: Self = this.set("SigningAlgorithm", js.undefined)
+    @scala.inline
+    def setValidFromDate(value: TStamp): Self = this.set("ValidFromDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidFromDate: Self = this.set("ValidFromDate", js.undefined)
+    @scala.inline
+    def setValidToDate(value: TStamp): Self = this.set("ValidToDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidToDate: Self = this.set("ValidToDate", js.undefined)
+  }
+  
 }
 

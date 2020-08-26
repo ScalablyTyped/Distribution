@@ -22,16 +22,38 @@ trait DescribeBundleTasksRequest extends js.Object {
 
 object DescribeBundleTasksRequest {
   @scala.inline
-  def apply(
-    BundleIds: BundleIdStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null
-  ): DescribeBundleTasksRequest = {
+  def apply(): DescribeBundleTasksRequest = {
     val __obj = js.Dynamic.literal()
-    if (BundleIds != null) __obj.updateDynamic("BundleIds")(BundleIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBundleTasksRequest]
   }
+  @scala.inline
+  implicit class DescribeBundleTasksRequestOps[Self <: DescribeBundleTasksRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleIdsVarargs(value: BundleId*): Self = this.set("BundleIds", js.Array(value :_*))
+    @scala.inline
+    def setBundleIds(value: BundleIdStringList): Self = this.set("BundleIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleIds: Self = this.set("BundleIds", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+  }
+  
 }
 

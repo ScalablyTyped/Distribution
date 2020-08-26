@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/layout", "Layout.getHorizontalAlignment")
+@JSImport("@lumino/widgets/types/layout", "Layout.getHorizontalAlignment")
 @js.native
 object getHorizontalAlignment extends js.Object {
   /**

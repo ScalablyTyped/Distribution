@@ -26,18 +26,40 @@ trait StageState extends js.Object {
 
 object StageState {
   @scala.inline
-  def apply(
-    actionStates: ActionStateList = null,
-    inboundTransitionState: TransitionState = null,
-    latestExecution: StageExecution = null,
-    stageName: StageName = null
-  ): StageState = {
+  def apply(): StageState = {
     val __obj = js.Dynamic.literal()
-    if (actionStates != null) __obj.updateDynamic("actionStates")(actionStates.asInstanceOf[js.Any])
-    if (inboundTransitionState != null) __obj.updateDynamic("inboundTransitionState")(inboundTransitionState.asInstanceOf[js.Any])
-    if (latestExecution != null) __obj.updateDynamic("latestExecution")(latestExecution.asInstanceOf[js.Any])
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StageState]
   }
+  @scala.inline
+  implicit class StageStateOps[Self <: StageState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionStatesVarargs(value: ActionState*): Self = this.set("actionStates", js.Array(value :_*))
+    @scala.inline
+    def setActionStates(value: ActionStateList): Self = this.set("actionStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionStates: Self = this.set("actionStates", js.undefined)
+    @scala.inline
+    def setInboundTransitionState(value: TransitionState): Self = this.set("inboundTransitionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInboundTransitionState: Self = this.set("inboundTransitionState", js.undefined)
+    @scala.inline
+    def setLatestExecution(value: StageExecution): Self = this.set("latestExecution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestExecution: Self = this.set("latestExecution", js.undefined)
+    @scala.inline
+    def setStageName(value: StageName): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("stageName", js.undefined)
+  }
+  
 }
 

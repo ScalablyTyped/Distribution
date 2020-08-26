@@ -1,6 +1,6 @@
 package typings.webpackCleanupPlugin.mod
 
-import typings.webpack.mod.Plugin
+import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

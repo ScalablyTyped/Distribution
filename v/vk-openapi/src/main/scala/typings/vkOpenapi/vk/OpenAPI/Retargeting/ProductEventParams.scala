@@ -4,36 +4,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProductEventParams extends js.Object {
-  var business_value: js.UndefOr[Double] = js.undefined
-  var category_ids: js.UndefOr[String] = js.undefined
-  var currency_code: js.UndefOr[String] = js.undefined
-  var products: js.UndefOr[js.Array[Product]] = js.undefined
-  var products_recommended_ids: js.UndefOr[String] = js.undefined
-  var search_string: js.UndefOr[String] = js.undefined
-  var total_price: js.UndefOr[Double] = js.undefined
+  var business_value: js.UndefOr[Double] = js.native
+  var category_ids: js.UndefOr[String] = js.native
+  var currency_code: js.UndefOr[String] = js.native
+  var products: js.UndefOr[js.Array[Product]] = js.native
+  var products_recommended_ids: js.UndefOr[String] = js.native
+  var search_string: js.UndefOr[String] = js.native
+  var total_price: js.UndefOr[Double] = js.native
 }
 
 object ProductEventParams {
   @scala.inline
-  def apply(
-    business_value: js.UndefOr[Double] = js.undefined,
-    category_ids: String = null,
-    currency_code: String = null,
-    products: js.Array[Product] = null,
-    products_recommended_ids: String = null,
-    search_string: String = null,
-    total_price: js.UndefOr[Double] = js.undefined
-  ): ProductEventParams = {
+  def apply(): ProductEventParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(business_value)) __obj.updateDynamic("business_value")(business_value.get.asInstanceOf[js.Any])
-    if (category_ids != null) __obj.updateDynamic("category_ids")(category_ids.asInstanceOf[js.Any])
-    if (currency_code != null) __obj.updateDynamic("currency_code")(currency_code.asInstanceOf[js.Any])
-    if (products != null) __obj.updateDynamic("products")(products.asInstanceOf[js.Any])
-    if (products_recommended_ids != null) __obj.updateDynamic("products_recommended_ids")(products_recommended_ids.asInstanceOf[js.Any])
-    if (search_string != null) __obj.updateDynamic("search_string")(search_string.asInstanceOf[js.Any])
-    if (!js.isUndefined(total_price)) __obj.updateDynamic("total_price")(total_price.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductEventParams]
   }
+  @scala.inline
+  implicit class ProductEventParamsOps[Self <: ProductEventParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBusiness_value(value: Double): Self = this.set("business_value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBusiness_value: Self = this.set("business_value", js.undefined)
+    @scala.inline
+    def setCategory_ids(value: String): Self = this.set("category_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory_ids: Self = this.set("category_ids", js.undefined)
+    @scala.inline
+    def setCurrency_code(value: String): Self = this.set("currency_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency_code: Self = this.set("currency_code", js.undefined)
+    @scala.inline
+    def setProductsVarargs(value: Product*): Self = this.set("products", js.Array(value :_*))
+    @scala.inline
+    def setProducts(value: js.Array[Product]): Self = this.set("products", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducts: Self = this.set("products", js.undefined)
+    @scala.inline
+    def setProducts_recommended_ids(value: String): Self = this.set("products_recommended_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducts_recommended_ids: Self = this.set("products_recommended_ids", js.undefined)
+    @scala.inline
+    def setSearch_string(value: String): Self = this.set("search_string", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch_string: Self = this.set("search_string", js.undefined)
+    @scala.inline
+    def setTotal_price(value: Double): Self = this.set("total_price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal_price: Self = this.set("total_price", js.undefined)
+  }
+  
 }
 

@@ -70,44 +70,5 @@ class PlayReadyContentHeader protected ()
     customAttributes: String,
     domainServiceId: String
   ) = this()
-  /** Gets the custom data used by the content provider. */
-  /* CompleteClass */
-  override var customAttributes: String = js.native
-  /** Gets the decryptor setup value in the header if it is set. */
-  /* CompleteClass */
-  override var decryptorSetup: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyDecryptorSetup = js.native
-  /** Gets the domain service identifier in the header if it is set. */
-  /* CompleteClass */
-  override var domainServiceId: String = js.native
-  /** Gets the content encryption type in the header if it is set. */
-  /* CompleteClass */
-  override var encryptionType: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm = js.native
-  /** Gets a new content header that contains any embedded license updates that were available. */
-  /* CompleteClass */
-  override var headerWithEmbeddedUpdates: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyContentHeader = js.native
-  /** Gets the content key identifier value if it is set. */
-  /* CompleteClass */
-  override var keyId: String = js.native
-  /** Gets the content key identifier string value if it is set. */
-  /* CompleteClass */
-  override var keyIdString: String = js.native
-  /** Gets the content key identifier string values if they are set. */
-  /* CompleteClass */
-  override var keyIdStrings: String = js.native
-  /** Gets the content key identifier values if they are set. */
-  /* CompleteClass */
-  override var keyIds: String = js.native
-  /** Gets the license acquisition URL in the header if it is set. */
-  /* CompleteClass */
-  override var licenseAcquisitionUrl: Uri = js.native
-  /** Gets the license acquisition user interface URL in the header if it is set. */
-  /* CompleteClass */
-  override var licenseAcquisitionUserInterfaceUrl: Uri = js.native
-  /**
-    * Retrieves the full PlayReady object as a byte array.
-    * @return The header containing the full PlayReady object.
-    */
-  /* CompleteClass */
-  override def getSerializedHeader(): js.Array[Double] = js.native
 }
 

@@ -12,7 +12,7 @@ Comprehensive, fast, and simple image processing and manipulation
 | Keywords           | image, buffer, manipulate, process, resize, scale, rotate, jpeg, jpg, png, gif, crop, blur, sharpen, batch, flip, mirror, border, padding, hue, saturation, lightness, alpha, transparency, fade, opacity, contain, cover |
 | # releases         | 1 |
 | # dependents       | 71 |
-| # downloads        | 136521 |
+| # downloads        | 128464 |
 | # stars            | 45 |
 
 ## Links

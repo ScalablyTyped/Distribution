@@ -12,7 +12,7 @@ Node SDK for Amazon Glacier
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 518 |
+| # downloads        | 585 |
 | # stars            | 0 |
 
 ## Links

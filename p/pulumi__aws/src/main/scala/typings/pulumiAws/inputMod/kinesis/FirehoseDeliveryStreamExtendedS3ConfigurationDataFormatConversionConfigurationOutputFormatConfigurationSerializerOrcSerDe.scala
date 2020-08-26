@@ -51,30 +51,64 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe {
   @scala.inline
-  def apply(
-    blockSizeBytes: Input[Double] = null,
-    bloomFilterColumns: Input[js.Array[Input[String]]] = null,
-    bloomFilterFalsePositiveProbability: Input[Double] = null,
-    compression: Input[String] = null,
-    dictionaryKeyThreshold: Input[Double] = null,
-    enablePadding: Input[Boolean] = null,
-    formatVersion: Input[String] = null,
-    paddingTolerance: Input[Double] = null,
-    rowIndexStride: Input[Double] = null,
-    stripeSizeBytes: Input[Double] = null
-  ): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe = {
+  def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe = {
     val __obj = js.Dynamic.literal()
-    if (blockSizeBytes != null) __obj.updateDynamic("blockSizeBytes")(blockSizeBytes.asInstanceOf[js.Any])
-    if (bloomFilterColumns != null) __obj.updateDynamic("bloomFilterColumns")(bloomFilterColumns.asInstanceOf[js.Any])
-    if (bloomFilterFalsePositiveProbability != null) __obj.updateDynamic("bloomFilterFalsePositiveProbability")(bloomFilterFalsePositiveProbability.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (dictionaryKeyThreshold != null) __obj.updateDynamic("dictionaryKeyThreshold")(dictionaryKeyThreshold.asInstanceOf[js.Any])
-    if (enablePadding != null) __obj.updateDynamic("enablePadding")(enablePadding.asInstanceOf[js.Any])
-    if (formatVersion != null) __obj.updateDynamic("formatVersion")(formatVersion.asInstanceOf[js.Any])
-    if (paddingTolerance != null) __obj.updateDynamic("paddingTolerance")(paddingTolerance.asInstanceOf[js.Any])
-    if (rowIndexStride != null) __obj.updateDynamic("rowIndexStride")(rowIndexStride.asInstanceOf[js.Any])
-    if (stripeSizeBytes != null) __obj.updateDynamic("stripeSizeBytes")(stripeSizeBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOps[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockSizeBytes(value: Input[Double]): Self = this.set("blockSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockSizeBytes: Self = this.set("blockSizeBytes", js.undefined)
+    @scala.inline
+    def setBloomFilterColumnsVarargs(value: Input[String]*): Self = this.set("bloomFilterColumns", js.Array(value :_*))
+    @scala.inline
+    def setBloomFilterColumns(value: Input[js.Array[Input[String]]]): Self = this.set("bloomFilterColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBloomFilterColumns: Self = this.set("bloomFilterColumns", js.undefined)
+    @scala.inline
+    def setBloomFilterFalsePositiveProbability(value: Input[Double]): Self = this.set("bloomFilterFalsePositiveProbability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBloomFilterFalsePositiveProbability: Self = this.set("bloomFilterFalsePositiveProbability", js.undefined)
+    @scala.inline
+    def setCompression(value: Input[String]): Self = this.set("compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompression: Self = this.set("compression", js.undefined)
+    @scala.inline
+    def setDictionaryKeyThreshold(value: Input[Double]): Self = this.set("dictionaryKeyThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDictionaryKeyThreshold: Self = this.set("dictionaryKeyThreshold", js.undefined)
+    @scala.inline
+    def setEnablePadding(value: Input[Boolean]): Self = this.set("enablePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePadding: Self = this.set("enablePadding", js.undefined)
+    @scala.inline
+    def setFormatVersion(value: Input[String]): Self = this.set("formatVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatVersion: Self = this.set("formatVersion", js.undefined)
+    @scala.inline
+    def setPaddingTolerance(value: Input[Double]): Self = this.set("paddingTolerance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingTolerance: Self = this.set("paddingTolerance", js.undefined)
+    @scala.inline
+    def setRowIndexStride(value: Input[Double]): Self = this.set("rowIndexStride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndexStride: Self = this.set("rowIndexStride", js.undefined)
+    @scala.inline
+    def setStripeSizeBytes(value: Input[Double]): Self = this.set("stripeSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripeSizeBytes: Self = this.set("stripeSizeBytes", js.undefined)
+  }
+  
 }
 

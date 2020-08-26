@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Heading", "Heading")
+@JSImport("grommet/es6/components/Heading", "Heading")
 @js.native
 object Heading extends TopLevel[
       FC[

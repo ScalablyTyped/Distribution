@@ -50,30 +50,64 @@ trait InstanceAccessDetails extends js.Object {
 
 object InstanceAccessDetails {
   @scala.inline
-  def apply(
-    certKey: String = null,
-    expiresAt: IsoDate = null,
-    hostKeys: HostKeysList = null,
-    instanceName: ResourceName = null,
-    ipAddress: IpAddress = null,
-    password: String = null,
-    passwordData: PasswordData = null,
-    privateKey: String = null,
-    protocol: InstanceAccessProtocol = null,
-    username: String = null
-  ): InstanceAccessDetails = {
+  def apply(): InstanceAccessDetails = {
     val __obj = js.Dynamic.literal()
-    if (certKey != null) __obj.updateDynamic("certKey")(certKey.asInstanceOf[js.Any])
-    if (expiresAt != null) __obj.updateDynamic("expiresAt")(expiresAt.asInstanceOf[js.Any])
-    if (hostKeys != null) __obj.updateDynamic("hostKeys")(hostKeys.asInstanceOf[js.Any])
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (passwordData != null) __obj.updateDynamic("passwordData")(passwordData.asInstanceOf[js.Any])
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceAccessDetails]
   }
+  @scala.inline
+  implicit class InstanceAccessDetailsOps[Self <: InstanceAccessDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertKey(value: String): Self = this.set("certKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertKey: Self = this.set("certKey", js.undefined)
+    @scala.inline
+    def setExpiresAt(value: IsoDate): Self = this.set("expiresAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiresAt: Self = this.set("expiresAt", js.undefined)
+    @scala.inline
+    def setHostKeysVarargs(value: HostKeyAttributes*): Self = this.set("hostKeys", js.Array(value :_*))
+    @scala.inline
+    def setHostKeys(value: HostKeysList): Self = this.set("hostKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostKeys: Self = this.set("hostKeys", js.undefined)
+    @scala.inline
+    def setInstanceName(value: ResourceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    @scala.inline
+    def setIpAddress(value: IpAddress): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPasswordData(value: PasswordData): Self = this.set("passwordData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordData: Self = this.set("passwordData", js.undefined)
+    @scala.inline
+    def setPrivateKey(value: String): Self = this.set("privateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKey: Self = this.set("privateKey", js.undefined)
+    @scala.inline
+    def setProtocol(value: InstanceAccessProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

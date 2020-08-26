@@ -12,7 +12,7 @@ Remove leading, trailing, and repeated whitespace from a string
 | Keywords           | whitespace, space, condense, collapse, compact, repeated, string, trim, remove, strip |
 | # releases         | 2 |
 | # dependents       | 30 |
-| # downloads        | 677813 |
+| # downloads        | 698576 |
 | # stars            | 3 |
 
 ## Links

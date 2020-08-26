@@ -16,10 +16,5 @@ class MVCxClientQueryBuilderSaveCommandExecutedEventArgs protected ()
     * @param result An object that specifies the Save command execution result.
     */
   def this(result: String) = this()
-  /**
-    * Specifies the Save command execution result.
-    */
-  /* CompleteClass */
-  override var Result: String = js.native
 }
 

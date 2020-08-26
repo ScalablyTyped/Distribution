@@ -29,22 +29,9 @@ object CustomizationDefinition {
     __obj.asInstanceOf[CustomizationDefinition]
   }
   @scala.inline
-  def MiddlewareCustomizationDefinition(
-    expression: String,
-    priority: Double,
-    step: Step,
-    `type`: Middleware,
-    conditionExpression: String = null,
-    configuration: ConfigurationDefinition = null,
-    imports: js.Array[Import] = null,
-    tags: String = null
-  ): CustomizationDefinition = {
+  def MiddlewareCustomizationDefinition(expression: String, priority: Double, step: Step, `type`: Middleware): CustomizationDefinition = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (conditionExpression != null) __obj.updateDynamic("conditionExpression")(conditionExpression.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomizationDefinition]
   }
   @scala.inline
@@ -54,17 +41,9 @@ object CustomizationDefinition {
     __obj.asInstanceOf[CustomizationDefinition]
   }
   @scala.inline
-  def ParserDecoratorCustomizationDefinition(
-    expression: String,
-    priority: Double,
-    `type`: ParserDecorator,
-    configuration: ConfigurationDefinition = null,
-    imports: js.Array[Import] = null
-  ): CustomizationDefinition = {
+  def ParserDecoratorCustomizationDefinition(expression: String, priority: Double, `type`: ParserDecorator): CustomizationDefinition = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomizationDefinition]
   }
   @scala.inline
@@ -73,14 +52,10 @@ object CustomizationDefinition {
     location: input | output,
     name: String,
     `type`: SyntheticParameter,
-    typeExpression: String,
-    imports: js.Array[Import] = null,
-    required: js.UndefOr[Boolean] = js.undefined
+    typeExpression: String
   ): CustomizationDefinition = {
     val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], typeExpression = typeExpression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomizationDefinition]
   }
 }

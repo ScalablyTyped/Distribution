@@ -30,20 +30,44 @@ trait PipelineExecution extends js.Object {
 
 object PipelineExecution {
   @scala.inline
-  def apply(
-    artifactRevisions: ArtifactRevisionList = null,
-    pipelineExecutionId: PipelineExecutionId = null,
-    pipelineName: PipelineName = null,
-    pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined,
-    status: PipelineExecutionStatus = null
-  ): PipelineExecution = {
+  def apply(): PipelineExecution = {
     val __obj = js.Dynamic.literal()
-    if (artifactRevisions != null) __obj.updateDynamic("artifactRevisions")(artifactRevisions.asInstanceOf[js.Any])
-    if (pipelineExecutionId != null) __obj.updateDynamic("pipelineExecutionId")(pipelineExecutionId.asInstanceOf[js.Any])
-    if (pipelineName != null) __obj.updateDynamic("pipelineName")(pipelineName.asInstanceOf[js.Any])
-    if (!js.isUndefined(pipelineVersion)) __obj.updateDynamic("pipelineVersion")(pipelineVersion.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineExecution]
   }
+  @scala.inline
+  implicit class PipelineExecutionOps[Self <: PipelineExecution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifactRevisionsVarargs(value: ArtifactRevision*): Self = this.set("artifactRevisions", js.Array(value :_*))
+    @scala.inline
+    def setArtifactRevisions(value: ArtifactRevisionList): Self = this.set("artifactRevisions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactRevisions: Self = this.set("artifactRevisions", js.undefined)
+    @scala.inline
+    def setPipelineExecutionId(value: PipelineExecutionId): Self = this.set("pipelineExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineExecutionId: Self = this.set("pipelineExecutionId", js.undefined)
+    @scala.inline
+    def setPipelineName(value: PipelineName): Self = this.set("pipelineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineName: Self = this.set("pipelineName", js.undefined)
+    @scala.inline
+    def setPipelineVersion(value: PipelineVersion): Self = this.set("pipelineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineVersion: Self = this.set("pipelineVersion", js.undefined)
+    @scala.inline
+    def setStatus(value: PipelineExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

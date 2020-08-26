@@ -15,6 +15,7 @@ trait RandomUniform_ extends RandomNumberGenerationSource {
     * @param max The maximum allowed value of a returned number, defaults to 1.
     */
   def apply(): js.Function0[Double] = js.native
+  def apply(min: js.UndefOr[scala.Nothing], max: Double): js.Function0[Double] = js.native
   def apply(min: Double): js.Function0[Double] = js.native
   def apply(min: Double, max: Double): js.Function0[Double] = js.native
 }

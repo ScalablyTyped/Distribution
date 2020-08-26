@@ -16,6 +16,7 @@ trait MediaTypeStatic
   def select(availableTypes: js.Array[MediaType], acceptedTypes: js.Array[MediaType], options: SelectOptions): String = js.native
   def splitContentTypes(str: String): js.Array[String] = js.native
   def splitQuotedString(str: String): js.Array[String] = js.native
+  def splitQuotedString(str: String, delimiter: js.UndefOr[scala.Nothing], quote: String): js.Array[String] = js.native
   def splitQuotedString(str: String, delimiter: String): js.Array[String] = js.native
   def splitQuotedString(str: String, delimiter: String, quote: String): js.Array[String] = js.native
 }

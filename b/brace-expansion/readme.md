@@ -11,8 +11,8 @@ Brace expansion as known from sh/bash
 | Full name          | brace-expansion |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 143 |
-| # downloads        | 568910335 |
+| # dependents       | 145 |
+| # downloads        | 576372446 |
 | # stars            | 5 |
 
 ## Links

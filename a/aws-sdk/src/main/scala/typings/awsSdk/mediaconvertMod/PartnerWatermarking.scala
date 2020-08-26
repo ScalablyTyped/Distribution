@@ -14,10 +14,26 @@ trait PartnerWatermarking extends js.Object {
 
 object PartnerWatermarking {
   @scala.inline
-  def apply(NexguardFileMarkerSettings: NexGuardFileMarkerSettings = null): PartnerWatermarking = {
+  def apply(): PartnerWatermarking = {
     val __obj = js.Dynamic.literal()
-    if (NexguardFileMarkerSettings != null) __obj.updateDynamic("NexguardFileMarkerSettings")(NexguardFileMarkerSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartnerWatermarking]
   }
+  @scala.inline
+  implicit class PartnerWatermarkingOps[Self <: PartnerWatermarking] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNexguardFileMarkerSettings(value: NexGuardFileMarkerSettings): Self = this.set("NexguardFileMarkerSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNexguardFileMarkerSettings: Self = this.set("NexguardFileMarkerSettings", js.undefined)
+  }
+  
 }
 

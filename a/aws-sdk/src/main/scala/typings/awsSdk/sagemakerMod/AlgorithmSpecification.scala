@@ -30,19 +30,42 @@ trait AlgorithmSpecification extends js.Object {
 
 object AlgorithmSpecification {
   @scala.inline
-  def apply(
-    TrainingInputMode: TrainingInputMode,
-    AlgorithmName: ArnOrName = null,
-    EnableSageMakerMetricsTimeSeries: js.UndefOr[Boolean] = js.undefined,
-    MetricDefinitions: MetricDefinitionList = null,
-    TrainingImage: AlgorithmImage = null
-  ): AlgorithmSpecification = {
+  def apply(TrainingInputMode: TrainingInputMode): AlgorithmSpecification = {
     val __obj = js.Dynamic.literal(TrainingInputMode = TrainingInputMode.asInstanceOf[js.Any])
-    if (AlgorithmName != null) __obj.updateDynamic("AlgorithmName")(AlgorithmName.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableSageMakerMetricsTimeSeries)) __obj.updateDynamic("EnableSageMakerMetricsTimeSeries")(EnableSageMakerMetricsTimeSeries.get.asInstanceOf[js.Any])
-    if (MetricDefinitions != null) __obj.updateDynamic("MetricDefinitions")(MetricDefinitions.asInstanceOf[js.Any])
-    if (TrainingImage != null) __obj.updateDynamic("TrainingImage")(TrainingImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgorithmSpecification]
   }
+  @scala.inline
+  implicit class AlgorithmSpecificationOps[Self <: AlgorithmSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrainingInputMode(value: TrainingInputMode): Self = this.set("TrainingInputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithmName(value: ArnOrName): Self = this.set("AlgorithmName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithmName: Self = this.set("AlgorithmName", js.undefined)
+    @scala.inline
+    def setEnableSageMakerMetricsTimeSeries(value: Boolean): Self = this.set("EnableSageMakerMetricsTimeSeries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSageMakerMetricsTimeSeries: Self = this.set("EnableSageMakerMetricsTimeSeries", js.undefined)
+    @scala.inline
+    def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = this.set("MetricDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setMetricDefinitions(value: MetricDefinitionList): Self = this.set("MetricDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricDefinitions: Self = this.set("MetricDefinitions", js.undefined)
+    @scala.inline
+    def setTrainingImage(value: AlgorithmImage): Self = this.set("TrainingImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingImage: Self = this.set("TrainingImage", js.undefined)
+  }
+  
 }
 

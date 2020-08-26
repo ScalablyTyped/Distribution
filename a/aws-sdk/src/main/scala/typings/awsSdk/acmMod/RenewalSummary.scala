@@ -26,15 +26,34 @@ trait RenewalSummary extends js.Object {
 
 object RenewalSummary {
   @scala.inline
-  def apply(
-    DomainValidationOptions: DomainValidationList,
-    RenewalStatus: RenewalStatus,
-    UpdatedAt: TStamp,
-    RenewalStatusReason: FailureReason = null
-  ): RenewalSummary = {
+  def apply(DomainValidationOptions: DomainValidationList, RenewalStatus: RenewalStatus, UpdatedAt: TStamp): RenewalSummary = {
     val __obj = js.Dynamic.literal(DomainValidationOptions = DomainValidationOptions.asInstanceOf[js.Any], RenewalStatus = RenewalStatus.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
-    if (RenewalStatusReason != null) __obj.updateDynamic("RenewalStatusReason")(RenewalStatusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewalSummary]
   }
+  @scala.inline
+  implicit class RenewalSummaryOps[Self <: RenewalSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainValidationOptionsVarargs(value: DomainValidation*): Self = this.set("DomainValidationOptions", js.Array(value :_*))
+    @scala.inline
+    def setDomainValidationOptions(value: DomainValidationList): Self = this.set("DomainValidationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenewalStatus(value: RenewalStatus): Self = this.set("RenewalStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedAt(value: TStamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenewalStatusReason(value: FailureReason): Self = this.set("RenewalStatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenewalStatusReason: Self = this.set("RenewalStatusReason", js.undefined)
+  }
+  
 }
 

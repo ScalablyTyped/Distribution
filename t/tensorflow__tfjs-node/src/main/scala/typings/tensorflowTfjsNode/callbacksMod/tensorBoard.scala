@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object tensorBoard extends js.Object {
   def apply(): TensorBoardCallback = js.native
+  def apply(logdir: js.UndefOr[scala.Nothing], args: TensorBoardCallbackArgs): TensorBoardCallback = js.native
   def apply(logdir: String): TensorBoardCallback = js.native
   def apply(logdir: String, args: TensorBoardCallbackArgs): TensorBoardCallback = js.native
 }

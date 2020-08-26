@@ -12,6 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** represents a collection of scenarios. */
+@js.native
 trait Scenarios
   extends XScenarios
      with XEnumerationAccess

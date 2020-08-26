@@ -12,7 +12,7 @@ A Bonjour/Zeroconf implementation in pure JavaScript
 | Keywords           | bonjour, zeroconf, zero, configuration, mdns, dns, service, discovery, multicast, broadcast, dns-sd |
 | # releases         | 1 |
 | # dependents       | 119 |
-| # downloads        | 204993457 |
+| # downloads        | 209576567 |
 | # stars            | 3 |
 
 ## Links

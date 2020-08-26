@@ -37,22 +37,46 @@ trait SchemaX509CertificateDetails extends js.Object {
 
 object SchemaX509CertificateDetails {
   @scala.inline
-  def apply(
-    expiryTime: String = null,
-    issuer: String = null,
-    publicKeyType: String = null,
-    signatureAlgorithm: String = null,
-    startTime: String = null,
-    subject: String = null
-  ): SchemaX509CertificateDetails = {
+  def apply(): SchemaX509CertificateDetails = {
     val __obj = js.Dynamic.literal()
-    if (expiryTime != null) __obj.updateDynamic("expiryTime")(expiryTime.asInstanceOf[js.Any])
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (publicKeyType != null) __obj.updateDynamic("publicKeyType")(publicKeyType.asInstanceOf[js.Any])
-    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaX509CertificateDetails]
   }
+  @scala.inline
+  implicit class SchemaX509CertificateDetailsOps[Self <: SchemaX509CertificateDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpiryTime(value: String): Self = this.set("expiryTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiryTime: Self = this.set("expiryTime", js.undefined)
+    @scala.inline
+    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    @scala.inline
+    def setPublicKeyType(value: String): Self = this.set("publicKeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKeyType: Self = this.set("publicKeyType", js.undefined)
+    @scala.inline
+    def setSignatureAlgorithm(value: String): Self = this.set("signatureAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatureAlgorithm: Self = this.set("signatureAlgorithm", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+  }
+  
 }
 

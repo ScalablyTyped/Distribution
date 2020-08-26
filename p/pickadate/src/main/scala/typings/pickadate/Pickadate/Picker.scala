@@ -132,6 +132,7 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     * Set the properties, objects, and states to change the state of the picker.
     */
   def set(thing: String): TPickerObject = js.native
+  def set(thing: String, value: js.UndefOr[scala.Nothing], options: SetOptions): TPickerObject = js.native
   def set(thing: String, value: js.Any): TPickerObject = js.native
   def set(thing: String, value: js.Any, options: SetOptions): TPickerObject = js.native
   def set(things: TOptions): TPickerObject = js.native

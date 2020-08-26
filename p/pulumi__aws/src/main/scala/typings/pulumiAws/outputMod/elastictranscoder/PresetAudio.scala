@@ -30,20 +30,42 @@ trait PresetAudio extends js.Object {
 
 object PresetAudio {
   @scala.inline
-  def apply(
-    audioPackingMode: String = null,
-    bitRate: String = null,
-    channels: String = null,
-    codec: String = null,
-    sampleRate: String = null
-  ): PresetAudio = {
+  def apply(): PresetAudio = {
     val __obj = js.Dynamic.literal()
-    if (audioPackingMode != null) __obj.updateDynamic("audioPackingMode")(audioPackingMode.asInstanceOf[js.Any])
-    if (bitRate != null) __obj.updateDynamic("bitRate")(bitRate.asInstanceOf[js.Any])
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresetAudio]
   }
+  @scala.inline
+  implicit class PresetAudioOps[Self <: PresetAudio] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioPackingMode(value: String): Self = this.set("audioPackingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioPackingMode: Self = this.set("audioPackingMode", js.undefined)
+    @scala.inline
+    def setBitRate(value: String): Self = this.set("bitRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitRate: Self = this.set("bitRate", js.undefined)
+    @scala.inline
+    def setChannels(value: String): Self = this.set("channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("channels", js.undefined)
+    @scala.inline
+    def setCodec(value: String): Self = this.set("codec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodec: Self = this.set("codec", js.undefined)
+    @scala.inline
+    def setSampleRate(value: String): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRate: Self = this.set("sampleRate", js.undefined)
+  }
+  
 }
 

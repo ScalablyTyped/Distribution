@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IEncodedLineTokens extends js.Object {
   /**
     * The tokenization end state.
     * A pointer will be held to this and the object should not be modified by the tokenizer after the pointer is returned.
     */
-  var endState: IState
+  var endState: IState = js.native
   /**
     * The tokens on the line in a binary, encoded format. Each token occupies two array indices. For token i:
     *  - at offset 2*i => startIndex
@@ -31,7 +32,7 @@ trait IEncodedLineTokens extends js.Object {
     * e.g. colorId = 1 is stored in IStandaloneThemeData.customTokenColors[1]. Color id = 0 means no color,
     * id = 1 is for the default foreground color, id = 2 for the default background.
     */
-  var tokens: Uint32Array
+  var tokens: Uint32Array = js.native
 }
 
 object IEncodedLineTokens {
@@ -40,5 +41,22 @@ object IEncodedLineTokens {
     val __obj = js.Dynamic.literal(endState = endState.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEncodedLineTokens]
   }
+  @scala.inline
+  implicit class IEncodedLineTokensOps[Self <: IEncodedLineTokens] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndState(value: IState): Self = this.set("endState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTokens(value: Uint32Array): Self = this.set("tokens", value.asInstanceOf[js.Any])
+  }
+  
 }
 

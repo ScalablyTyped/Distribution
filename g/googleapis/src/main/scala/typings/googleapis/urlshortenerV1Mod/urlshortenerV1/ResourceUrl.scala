@@ -28,6 +28,7 @@ class ResourceUrl protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaUrl] = js.native
   def get(callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrl] = js.native
   def get(params: ParamsResourceUrlGet): GaxiosPromise[SchemaUrl] = js.native
   def get(params: ParamsResourceUrlGet, callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
   def get(
@@ -51,6 +52,7 @@ class ResourceUrl protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaUrl] = js.native
   def insert(callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrl] = js.native
   def insert(params: ParamsResourceUrlInsert): GaxiosPromise[SchemaUrl] = js.native
   def insert(params: ParamsResourceUrlInsert, callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
   def insert(
@@ -75,6 +77,7 @@ class ResourceUrl protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaUrlHistory] = js.native
   def list(callback: BodyResponseCallback[SchemaUrlHistory]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlHistory] = js.native
   def list(params: ParamsResourceUrlList): GaxiosPromise[SchemaUrlHistory] = js.native
   def list(params: ParamsResourceUrlList, callback: BodyResponseCallback[SchemaUrlHistory]): Unit = js.native
   def list(

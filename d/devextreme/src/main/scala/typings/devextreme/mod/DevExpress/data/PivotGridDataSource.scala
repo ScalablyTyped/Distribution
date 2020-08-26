@@ -46,13 +46,13 @@ trait PivotGridDataSource extends js.Object {
   def isLoading(): Boolean = js.native
   /** @name PivotGridDataSource.load() */
   def load(): Promise[_] with JQueryPromise[_] = js.native
-  /** @name EventsMixin.off(eventName) */
+  /** @name PivotGridDataSource.off(eventName) */
   def off(eventName: String): this.type = js.native
-  /** @name EventsMixin.off(eventName, eventHandler) */
+  /** @name PivotGridDataSource.off(eventName, eventHandler) */
   def off(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** @name EventsMixin.on(eventName, eventHandler) */
+  /** @name PivotGridDataSource.on(eventName, eventHandler) */
   def on(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** @name EventsMixin.on(events) */
+  /** @name PivotGridDataSource.on(events) */
   def on(events: js.Any): this.type = js.native
   /** @name PivotGridDataSource.reload() */
   def reload(): Promise[_] with JQueryPromise[_] = js.native

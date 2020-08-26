@@ -42,16 +42,43 @@ object IdentityNotificationAttributes {
     BounceTopic: NotificationTopic,
     ComplaintTopic: NotificationTopic,
     DeliveryTopic: NotificationTopic,
-    ForwardingEnabled: Enabled,
-    HeadersInBounceNotificationsEnabled: js.UndefOr[Enabled] = js.undefined,
-    HeadersInComplaintNotificationsEnabled: js.UndefOr[Enabled] = js.undefined,
-    HeadersInDeliveryNotificationsEnabled: js.UndefOr[Enabled] = js.undefined
+    ForwardingEnabled: Enabled
   ): IdentityNotificationAttributes = {
     val __obj = js.Dynamic.literal(BounceTopic = BounceTopic.asInstanceOf[js.Any], ComplaintTopic = ComplaintTopic.asInstanceOf[js.Any], DeliveryTopic = DeliveryTopic.asInstanceOf[js.Any], ForwardingEnabled = ForwardingEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(HeadersInBounceNotificationsEnabled)) __obj.updateDynamic("HeadersInBounceNotificationsEnabled")(HeadersInBounceNotificationsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HeadersInComplaintNotificationsEnabled)) __obj.updateDynamic("HeadersInComplaintNotificationsEnabled")(HeadersInComplaintNotificationsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HeadersInDeliveryNotificationsEnabled)) __obj.updateDynamic("HeadersInDeliveryNotificationsEnabled")(HeadersInDeliveryNotificationsEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityNotificationAttributes]
   }
+  @scala.inline
+  implicit class IdentityNotificationAttributesOps[Self <: IdentityNotificationAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBounceTopic(value: NotificationTopic): Self = this.set("BounceTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComplaintTopic(value: NotificationTopic): Self = this.set("ComplaintTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeliveryTopic(value: NotificationTopic): Self = this.set("DeliveryTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForwardingEnabled(value: Enabled): Self = this.set("ForwardingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeadersInBounceNotificationsEnabled(value: Enabled): Self = this.set("HeadersInBounceNotificationsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadersInBounceNotificationsEnabled: Self = this.set("HeadersInBounceNotificationsEnabled", js.undefined)
+    @scala.inline
+    def setHeadersInComplaintNotificationsEnabled(value: Enabled): Self = this.set("HeadersInComplaintNotificationsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadersInComplaintNotificationsEnabled: Self = this.set("HeadersInComplaintNotificationsEnabled", js.undefined)
+    @scala.inline
+    def setHeadersInDeliveryNotificationsEnabled(value: Enabled): Self = this.set("HeadersInDeliveryNotificationsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadersInDeliveryNotificationsEnabled: Self = this.set("HeadersInDeliveryNotificationsEnabled", js.undefined)
+  }
+  
 }
 

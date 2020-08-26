@@ -6,45 +6,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IParticleOptions extends js.Object {
-  var collisionGroup: js.UndefOr[Double] = js.undefined
-  var collisionMask: js.UndefOr[Double] = js.undefined
-  var friction: js.UndefOr[Double] = js.undefined
-  var mass: js.UndefOr[Double] = js.undefined
-  var orientation: js.UndefOr[Quaternion] = js.undefined
-  var position: js.UndefOr[Vec3] = js.undefined
-  var restitution: js.UndefOr[Double] = js.undefined
-  var restrictions: js.UndefOr[Double] = js.undefined
-  var size: js.UndefOr[js.Array[Double]] = js.undefined
-  var velocity: js.UndefOr[Double] = js.undefined
+  var collisionGroup: js.UndefOr[Double] = js.native
+  var collisionMask: js.UndefOr[Double] = js.native
+  var friction: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.native
+  var orientation: js.UndefOr[Quaternion] = js.native
+  var position: js.UndefOr[Vec3] = js.native
+  var restitution: js.UndefOr[Double] = js.native
+  var restrictions: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[js.Array[Double]] = js.native
+  var velocity: js.UndefOr[Double] = js.native
 }
 
 object IParticleOptions {
   @scala.inline
-  def apply(
-    collisionGroup: js.UndefOr[Double] = js.undefined,
-    collisionMask: js.UndefOr[Double] = js.undefined,
-    friction: js.UndefOr[Double] = js.undefined,
-    mass: js.UndefOr[Double] = js.undefined,
-    orientation: Quaternion = null,
-    position: Vec3 = null,
-    restitution: js.UndefOr[Double] = js.undefined,
-    restrictions: js.UndefOr[Double] = js.undefined,
-    size: js.Array[Double] = null,
-    velocity: js.UndefOr[Double] = js.undefined
-  ): IParticleOptions = {
+  def apply(): IParticleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collisionGroup)) __obj.updateDynamic("collisionGroup")(collisionGroup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collisionMask)) __obj.updateDynamic("collisionMask")(collisionMask.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mass)) __obj.updateDynamic("mass")(mass.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(restitution)) __obj.updateDynamic("restitution")(restitution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictions)) __obj.updateDynamic("restrictions")(restrictions.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(velocity)) __obj.updateDynamic("velocity")(velocity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParticleOptions]
   }
+  @scala.inline
+  implicit class IParticleOptionsOps[Self <: IParticleOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollisionGroup(value: Double): Self = this.set("collisionGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollisionGroup: Self = this.set("collisionGroup", js.undefined)
+    @scala.inline
+    def setCollisionMask(value: Double): Self = this.set("collisionMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollisionMask: Self = this.set("collisionMask", js.undefined)
+    @scala.inline
+    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFriction: Self = this.set("friction", js.undefined)
+    @scala.inline
+    def setMass(value: Double): Self = this.set("mass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMass: Self = this.set("mass", js.undefined)
+    @scala.inline
+    def setOrientation(value: Quaternion): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setPosition(value: Vec3): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRestitution(value: Double): Self = this.set("restitution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestitution: Self = this.set("restitution", js.undefined)
+    @scala.inline
+    def setRestrictions(value: Double): Self = this.set("restrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictions: Self = this.set("restrictions", js.undefined)
+    @scala.inline
+    def setSizeVarargs(value: Double*): Self = this.set("size", js.Array(value :_*))
+    @scala.inline
+    def setSize(value: js.Array[Double]): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setVelocity(value: Double): Self = this.set("velocity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVelocity: Self = this.set("velocity", js.undefined)
+  }
+  
 }
 

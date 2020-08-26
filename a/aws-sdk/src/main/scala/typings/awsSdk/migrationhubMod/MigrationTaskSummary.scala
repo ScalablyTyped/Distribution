@@ -34,22 +34,46 @@ trait MigrationTaskSummary extends js.Object {
 
 object MigrationTaskSummary {
   @scala.inline
-  def apply(
-    MigrationTaskName: MigrationTaskName = null,
-    ProgressPercent: js.UndefOr[ProgressPercent] = js.undefined,
-    ProgressUpdateStream: ProgressUpdateStream = null,
-    Status: Status = null,
-    StatusDetail: StatusDetail = null,
-    UpdateDateTime: UpdateDateTime = null
-  ): MigrationTaskSummary = {
+  def apply(): MigrationTaskSummary = {
     val __obj = js.Dynamic.literal()
-    if (MigrationTaskName != null) __obj.updateDynamic("MigrationTaskName")(MigrationTaskName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgressPercent)) __obj.updateDynamic("ProgressPercent")(ProgressPercent.get.asInstanceOf[js.Any])
-    if (ProgressUpdateStream != null) __obj.updateDynamic("ProgressUpdateStream")(ProgressUpdateStream.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusDetail != null) __obj.updateDynamic("StatusDetail")(StatusDetail.asInstanceOf[js.Any])
-    if (UpdateDateTime != null) __obj.updateDynamic("UpdateDateTime")(UpdateDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationTaskSummary]
   }
+  @scala.inline
+  implicit class MigrationTaskSummaryOps[Self <: MigrationTaskSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMigrationTaskName(value: MigrationTaskName): Self = this.set("MigrationTaskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMigrationTaskName: Self = this.set("MigrationTaskName", js.undefined)
+    @scala.inline
+    def setProgressPercent(value: ProgressPercent): Self = this.set("ProgressPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressPercent: Self = this.set("ProgressPercent", js.undefined)
+    @scala.inline
+    def setProgressUpdateStream(value: ProgressUpdateStream): Self = this.set("ProgressUpdateStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressUpdateStream: Self = this.set("ProgressUpdateStream", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusDetail(value: StatusDetail): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
+    @scala.inline
+    def setUpdateDateTime(value: UpdateDateTime): Self = this.set("UpdateDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateDateTime: Self = this.set("UpdateDateTime", js.undefined)
+  }
+  
 }
 

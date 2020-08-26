@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.plotlyJs.plotlyJsStrings.log
   - typings.plotlyJs.plotlyJsStrings.date
   - typings.plotlyJs.plotlyJsStrings.category
+  - typings.plotlyJs.plotlyJsStrings.multicategory
 */
 trait AxisType extends js.Object
 
@@ -25,5 +26,7 @@ object AxisType {
   def linear: typings.plotlyJs.plotlyJsStrings.linear = "linear".asInstanceOf[typings.plotlyJs.plotlyJsStrings.linear]
   @scala.inline
   def log: typings.plotlyJs.plotlyJsStrings.log = "log".asInstanceOf[typings.plotlyJs.plotlyJsStrings.log]
+  @scala.inline
+  def multicategory: typings.plotlyJs.plotlyJsStrings.multicategory = "multicategory".asInstanceOf[typings.plotlyJs.plotlyJsStrings.multicategory]
 }
 

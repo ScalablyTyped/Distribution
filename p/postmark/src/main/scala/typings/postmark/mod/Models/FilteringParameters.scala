@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class FilteringParameters ()
   extends typings.postmark.modelsMod.FilteringParameters {
   def this(count: Double) = this()
+  def this(count: js.UndefOr[scala.Nothing], offset: Double) = this()
   def this(count: Double, offset: Double) = this()
 }
 

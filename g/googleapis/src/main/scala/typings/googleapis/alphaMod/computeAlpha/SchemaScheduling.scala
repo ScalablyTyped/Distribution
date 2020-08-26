@@ -44,20 +44,44 @@ trait SchemaScheduling extends js.Object {
 
 object SchemaScheduling {
   @scala.inline
-  def apply(
-    automaticRestart: js.UndefOr[Boolean] = js.undefined,
-    minNodeCpus: js.UndefOr[Double] = js.undefined,
-    nodeAffinities: js.Array[SchemaSchedulingNodeAffinity] = null,
-    onHostMaintenance: String = null,
-    preemptible: js.UndefOr[Boolean] = js.undefined
-  ): SchemaScheduling = {
+  def apply(): SchemaScheduling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automaticRestart)) __obj.updateDynamic("automaticRestart")(automaticRestart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minNodeCpus)) __obj.updateDynamic("minNodeCpus")(minNodeCpus.get.asInstanceOf[js.Any])
-    if (nodeAffinities != null) __obj.updateDynamic("nodeAffinities")(nodeAffinities.asInstanceOf[js.Any])
-    if (onHostMaintenance != null) __obj.updateDynamic("onHostMaintenance")(onHostMaintenance.asInstanceOf[js.Any])
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScheduling]
   }
+  @scala.inline
+  implicit class SchemaSchedulingOps[Self <: SchemaScheduling] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomaticRestart(value: Boolean): Self = this.set("automaticRestart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticRestart: Self = this.set("automaticRestart", js.undefined)
+    @scala.inline
+    def setMinNodeCpus(value: Double): Self = this.set("minNodeCpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinNodeCpus: Self = this.set("minNodeCpus", js.undefined)
+    @scala.inline
+    def setNodeAffinitiesVarargs(value: SchemaSchedulingNodeAffinity*): Self = this.set("nodeAffinities", js.Array(value :_*))
+    @scala.inline
+    def setNodeAffinities(value: js.Array[SchemaSchedulingNodeAffinity]): Self = this.set("nodeAffinities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeAffinities: Self = this.set("nodeAffinities", js.undefined)
+    @scala.inline
+    def setOnHostMaintenance(value: String): Self = this.set("onHostMaintenance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnHostMaintenance: Self = this.set("onHostMaintenance", js.undefined)
+    @scala.inline
+    def setPreemptible(value: Boolean): Self = this.set("preemptible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreemptible: Self = this.set("preemptible", js.undefined)
+  }
+  
 }
 

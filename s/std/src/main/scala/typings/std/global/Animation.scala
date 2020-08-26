@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class Animation ()
   extends typings.std.Animation {
   def this(effect: typings.std.AnimationEffect) = this()
+  def this(effect: js.UndefOr[scala.Nothing], timeline: typings.std.AnimationTimeline) = this()
   def this(effect: Null, timeline: typings.std.AnimationTimeline) = this()
   def this(effect: typings.std.AnimationEffect, timeline: typings.std.AnimationTimeline) = this()
 }
@@ -22,7 +23,7 @@ object Animation
   extends Instantiable0[typings.std.Animation]
      with Instantiable1[/* effect */ typings.std.AnimationEffect, typings.std.Animation]
      with Instantiable2[
-      (/* effect */ typings.std.AnimationEffect) | (/* effect */ Null), 
+      js.UndefOr[(/* effect */ typings.std.AnimationEffect) | (/* effect */ Null)], 
       /* timeline */ typings.std.AnimationTimeline, 
       typings.std.Animation
     ]

@@ -6,96 +6,173 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServerOptions extends js.Object {
-  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
-  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
-  var certificate: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
-  var ciphers: js.UndefOr[String] = js.undefined
-  var dtrace: js.UndefOr[Boolean] = js.undefined
-  var formatters: js.UndefOr[Formatters_] = js.undefined
-  var handleUncaughtExceptions: js.UndefOr[Boolean] = js.undefined
-  var handleUpgrades: js.UndefOr[Boolean] = js.undefined
-  var http2: js.UndefOr[js.Any] = js.undefined
-  var httpsServerOptions: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.undefined
-  var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
-  var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
-  var log: js.UndefOr[^] = js.undefined
-  var maxParamLength: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var noWriteContinue: js.UndefOr[Boolean] = js.undefined
-  var onceNext: js.UndefOr[Boolean] = js.undefined
-  var passphrase: js.UndefOr[String] = js.undefined
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
-  var requestCert: js.UndefOr[Boolean] = js.undefined
-  var router: js.UndefOr[Router] = js.undefined
-  var secureOptions: js.UndefOr[Double] = js.undefined
-  var socketio: js.UndefOr[Boolean] = js.undefined
-  var spdy: js.UndefOr[typings.spdy.mod.ServerOptions] = js.undefined
-  var strictNext: js.UndefOr[Boolean] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
-  var versions: js.UndefOr[js.Array[String]] = js.undefined
+  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var certificate: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var ciphers: js.UndefOr[String] = js.native
+  var dtrace: js.UndefOr[Boolean] = js.native
+  var formatters: js.UndefOr[Formatters_] = js.native
+  var handleUncaughtExceptions: js.UndefOr[Boolean] = js.native
+  var handleUpgrades: js.UndefOr[Boolean] = js.native
+  var http2: js.UndefOr[js.Any] = js.native
+  var httpsServerOptions: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.native
+  var ignoreTrailingSlash: js.UndefOr[Boolean] = js.native
+  var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var log: js.UndefOr[^] = js.native
+  var maxParamLength: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var noWriteContinue: js.UndefOr[Boolean] = js.native
+  var onceNext: js.UndefOr[Boolean] = js.native
+  var passphrase: js.UndefOr[String] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+  var requestCert: js.UndefOr[Boolean] = js.native
+  var router: js.UndefOr[Router] = js.native
+  var secureOptions: js.UndefOr[Double] = js.native
+  var socketio: js.UndefOr[Boolean] = js.native
+  var spdy: js.UndefOr[typings.spdy.mod.ServerOptions] = js.native
+  var strictNext: js.UndefOr[Boolean] = js.native
+  var version: js.UndefOr[String] = js.native
+  var versions: js.UndefOr[js.Array[String]] = js.native
 }
 
 object ServerOptions {
   @scala.inline
-  def apply(
-    ca: String | Buffer | (js.Array[String | Buffer]) = null,
-    cert: String | Buffer | (js.Array[String | Buffer]) = null,
-    certificate: String | Buffer | (js.Array[String | Buffer]) = null,
-    ciphers: String = null,
-    dtrace: js.UndefOr[Boolean] = js.undefined,
-    formatters: Formatters_ = null,
-    handleUncaughtExceptions: js.UndefOr[Boolean] = js.undefined,
-    handleUpgrades: js.UndefOr[Boolean] = js.undefined,
-    http2: js.Any = null,
-    httpsServerOptions: typings.node.httpsMod.ServerOptions = null,
-    ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined,
-    key: String | Buffer | (js.Array[String | Buffer]) = null,
-    log: ^ = null,
-    maxParamLength: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    noWriteContinue: js.UndefOr[Boolean] = js.undefined,
-    onceNext: js.UndefOr[Boolean] = js.undefined,
-    passphrase: String = null,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    requestCert: js.UndefOr[Boolean] = js.undefined,
-    router: Router = null,
-    secureOptions: js.UndefOr[Double] = js.undefined,
-    socketio: js.UndefOr[Boolean] = js.undefined,
-    spdy: typings.spdy.mod.ServerOptions = null,
-    strictNext: js.UndefOr[Boolean] = js.undefined,
-    version: String = null,
-    versions: js.Array[String] = null
-  ): ServerOptions = {
+  def apply(): ServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (!js.isUndefined(dtrace)) __obj.updateDynamic("dtrace")(dtrace.get.asInstanceOf[js.Any])
-    if (formatters != null) __obj.updateDynamic("formatters")(formatters.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleUncaughtExceptions)) __obj.updateDynamic("handleUncaughtExceptions")(handleUncaughtExceptions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleUpgrades)) __obj.updateDynamic("handleUpgrades")(handleUpgrades.get.asInstanceOf[js.Any])
-    if (http2 != null) __obj.updateDynamic("http2")(http2.asInstanceOf[js.Any])
-    if (httpsServerOptions != null) __obj.updateDynamic("httpsServerOptions")(httpsServerOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreTrailingSlash)) __obj.updateDynamic("ignoreTrailingSlash")(ignoreTrailingSlash.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxParamLength)) __obj.updateDynamic("maxParamLength")(maxParamLength.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noWriteContinue)) __obj.updateDynamic("noWriteContinue")(noWriteContinue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(onceNext)) __obj.updateDynamic("onceNext")(onceNext.get.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.get.asInstanceOf[js.Any])
-    if (router != null) __obj.updateDynamic("router")(router.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureOptions)) __obj.updateDynamic("secureOptions")(secureOptions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(socketio)) __obj.updateDynamic("socketio")(socketio.get.asInstanceOf[js.Any])
-    if (spdy != null) __obj.updateDynamic("spdy")(spdy.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictNext)) __obj.updateDynamic("strictNext")(strictNext.get.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
+  @scala.inline
+  implicit class ServerOptionsOps[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaVarargs(value: (String | Buffer)*): Self = this.set("ca", js.Array(value :_*))
+    @scala.inline
+    def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("ca", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCa: Self = this.set("ca", js.undefined)
+    @scala.inline
+    def setCertVarargs(value: (String | Buffer)*): Self = this.set("cert", js.Array(value :_*))
+    @scala.inline
+    def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setCertificateVarargs(value: (String | Buffer)*): Self = this.set("certificate", js.Array(value :_*))
+    @scala.inline
+    def setCertificate(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    @scala.inline
+    def setCiphers(value: String): Self = this.set("ciphers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCiphers: Self = this.set("ciphers", js.undefined)
+    @scala.inline
+    def setDtrace(value: Boolean): Self = this.set("dtrace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDtrace: Self = this.set("dtrace", js.undefined)
+    @scala.inline
+    def setFormatters(value: Formatters_): Self = this.set("formatters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatters: Self = this.set("formatters", js.undefined)
+    @scala.inline
+    def setHandleUncaughtExceptions(value: Boolean): Self = this.set("handleUncaughtExceptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleUncaughtExceptions: Self = this.set("handleUncaughtExceptions", js.undefined)
+    @scala.inline
+    def setHandleUpgrades(value: Boolean): Self = this.set("handleUpgrades", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleUpgrades: Self = this.set("handleUpgrades", js.undefined)
+    @scala.inline
+    def setHttp2(value: js.Any): Self = this.set("http2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttp2: Self = this.set("http2", js.undefined)
+    @scala.inline
+    def setHttpsServerOptions(value: typings.node.httpsMod.ServerOptions): Self = this.set("httpsServerOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpsServerOptions: Self = this.set("httpsServerOptions", js.undefined)
+    @scala.inline
+    def setIgnoreTrailingSlash(value: Boolean): Self = this.set("ignoreTrailingSlash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreTrailingSlash: Self = this.set("ignoreTrailingSlash", js.undefined)
+    @scala.inline
+    def setKeyVarargs(value: (String | Buffer)*): Self = this.set("key", js.Array(value :_*))
+    @scala.inline
+    def setKey(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLog(value: ^): Self = this.set("log", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLog: Self = this.set("log", js.undefined)
+    @scala.inline
+    def setMaxParamLength(value: Double): Self = this.set("maxParamLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxParamLength: Self = this.set("maxParamLength", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoWriteContinue(value: Boolean): Self = this.set("noWriteContinue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoWriteContinue: Self = this.set("noWriteContinue", js.undefined)
+    @scala.inline
+    def setOnceNext(value: Boolean): Self = this.set("onceNext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnceNext: Self = this.set("onceNext", js.undefined)
+    @scala.inline
+    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    @scala.inline
+    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+    @scala.inline
+    def setRequestCert(value: Boolean): Self = this.set("requestCert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCert: Self = this.set("requestCert", js.undefined)
+    @scala.inline
+    def setRouter(value: Router): Self = this.set("router", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouter: Self = this.set("router", js.undefined)
+    @scala.inline
+    def setSecureOptions(value: Double): Self = this.set("secureOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecureOptions: Self = this.set("secureOptions", js.undefined)
+    @scala.inline
+    def setSocketio(value: Boolean): Self = this.set("socketio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketio: Self = this.set("socketio", js.undefined)
+    @scala.inline
+    def setSpdy(value: typings.spdy.mod.ServerOptions): Self = this.set("spdy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpdy: Self = this.set("spdy", js.undefined)
+    @scala.inline
+    def setStrictNext(value: Boolean): Self = this.set("strictNext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrictNext: Self = this.set("strictNext", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: String*): Self = this.set("versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: js.Array[String]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("versions", js.undefined)
+  }
+  
 }
 

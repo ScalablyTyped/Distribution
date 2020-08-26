@@ -18,14 +18,30 @@ trait BucketPublicAccess extends js.Object {
 
 object BucketPublicAccess {
   @scala.inline
-  def apply(
-    effectivePermission: EffectivePermission = null,
-    permissionConfiguration: BucketPermissionConfiguration = null
-  ): BucketPublicAccess = {
+  def apply(): BucketPublicAccess = {
     val __obj = js.Dynamic.literal()
-    if (effectivePermission != null) __obj.updateDynamic("effectivePermission")(effectivePermission.asInstanceOf[js.Any])
-    if (permissionConfiguration != null) __obj.updateDynamic("permissionConfiguration")(permissionConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketPublicAccess]
   }
+  @scala.inline
+  implicit class BucketPublicAccessOps[Self <: BucketPublicAccess] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEffectivePermission(value: EffectivePermission): Self = this.set("effectivePermission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectivePermission: Self = this.set("effectivePermission", js.undefined)
+    @scala.inline
+    def setPermissionConfiguration(value: BucketPermissionConfiguration): Self = this.set("permissionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionConfiguration: Self = this.set("permissionConfiguration", js.undefined)
+  }
+  
 }
 

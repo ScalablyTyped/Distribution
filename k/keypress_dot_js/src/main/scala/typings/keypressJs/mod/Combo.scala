@@ -6,53 +6,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Combo extends js.Object {
-  var is_counting: js.UndefOr[Boolean] = js.undefined
-  var is_exclusive: js.UndefOr[Boolean] = js.undefined
-  var is_sequence: js.UndefOr[Boolean] = js.undefined
-  var is_solitary: js.UndefOr[Boolean] = js.undefined
-  var is_unordered: js.UndefOr[Boolean] = js.undefined
-  var keys: js.UndefOr[String] = js.undefined
+  var is_counting: js.UndefOr[Boolean] = js.native
+  var is_exclusive: js.UndefOr[Boolean] = js.native
+  var is_sequence: js.UndefOr[Boolean] = js.native
+  var is_solitary: js.UndefOr[Boolean] = js.native
+  var is_unordered: js.UndefOr[Boolean] = js.native
+  var keys: js.UndefOr[String] = js.native
   var on_keydown: js.UndefOr[
     js.Function2[/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double], _]
-  ] = js.undefined
-  var on_keyup: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], _]] = js.undefined
-  var on_release: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], _]] = js.undefined
-  var prevent_default: js.UndefOr[Boolean] = js.undefined
-  var prevent_repeat: js.UndefOr[Boolean] = js.undefined
-  var `this`: js.UndefOr[Element] = js.undefined
+  ] = js.native
+  var on_keyup: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], _]] = js.native
+  var on_release: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], _]] = js.native
+  var prevent_default: js.UndefOr[Boolean] = js.native
+  var prevent_repeat: js.UndefOr[Boolean] = js.native
+  var `this`: js.UndefOr[Element] = js.native
 }
 
 object Combo {
   @scala.inline
-  def apply(
-    is_counting: js.UndefOr[Boolean] = js.undefined,
-    is_exclusive: js.UndefOr[Boolean] = js.undefined,
-    is_sequence: js.UndefOr[Boolean] = js.undefined,
-    is_solitary: js.UndefOr[Boolean] = js.undefined,
-    is_unordered: js.UndefOr[Boolean] = js.undefined,
-    keys: String = null,
-    on_keydown: (/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double]) => _ = null,
-    on_keyup: /* event */ js.UndefOr[KeyboardEvent] => _ = null,
-    on_release: /* event */ js.UndefOr[KeyboardEvent] => _ = null,
-    prevent_default: js.UndefOr[Boolean] = js.undefined,
-    prevent_repeat: js.UndefOr[Boolean] = js.undefined,
-    `this`: Element = null
-  ): Combo = {
+  def apply(): Combo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(is_counting)) __obj.updateDynamic("is_counting")(is_counting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_exclusive)) __obj.updateDynamic("is_exclusive")(is_exclusive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_sequence)) __obj.updateDynamic("is_sequence")(is_sequence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_solitary)) __obj.updateDynamic("is_solitary")(is_solitary.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_unordered)) __obj.updateDynamic("is_unordered")(is_unordered.get.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (on_keydown != null) __obj.updateDynamic("on_keydown")(js.Any.fromFunction2(on_keydown))
-    if (on_keyup != null) __obj.updateDynamic("on_keyup")(js.Any.fromFunction1(on_keyup))
-    if (on_release != null) __obj.updateDynamic("on_release")(js.Any.fromFunction1(on_release))
-    if (!js.isUndefined(prevent_default)) __obj.updateDynamic("prevent_default")(prevent_default.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(prevent_repeat)) __obj.updateDynamic("prevent_repeat")(prevent_repeat.get.asInstanceOf[js.Any])
-    if (`this` != null) __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Combo]
   }
+  @scala.inline
+  implicit class ComboOps[Self <: Combo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIs_counting(value: Boolean): Self = this.set("is_counting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_counting: Self = this.set("is_counting", js.undefined)
+    @scala.inline
+    def setIs_exclusive(value: Boolean): Self = this.set("is_exclusive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_exclusive: Self = this.set("is_exclusive", js.undefined)
+    @scala.inline
+    def setIs_sequence(value: Boolean): Self = this.set("is_sequence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_sequence: Self = this.set("is_sequence", js.undefined)
+    @scala.inline
+    def setIs_solitary(value: Boolean): Self = this.set("is_solitary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_solitary: Self = this.set("is_solitary", js.undefined)
+    @scala.inline
+    def setIs_unordered(value: Boolean): Self = this.set("is_unordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_unordered: Self = this.set("is_unordered", js.undefined)
+    @scala.inline
+    def setKeys(value: String): Self = this.set("keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("keys", js.undefined)
+    @scala.inline
+    def setOn_keydown(value: (/* event */ js.UndefOr[KeyboardEvent], /* count */ js.UndefOr[Double]) => _): Self = this.set("on_keydown", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOn_keydown: Self = this.set("on_keydown", js.undefined)
+    @scala.inline
+    def setOn_keyup(value: /* event */ js.UndefOr[KeyboardEvent] => _): Self = this.set("on_keyup", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOn_keyup: Self = this.set("on_keyup", js.undefined)
+    @scala.inline
+    def setOn_release(value: /* event */ js.UndefOr[KeyboardEvent] => _): Self = this.set("on_release", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOn_release: Self = this.set("on_release", js.undefined)
+    @scala.inline
+    def setPrevent_default(value: Boolean): Self = this.set("prevent_default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevent_default: Self = this.set("prevent_default", js.undefined)
+    @scala.inline
+    def setPrevent_repeat(value: Boolean): Self = this.set("prevent_repeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevent_repeat: Self = this.set("prevent_repeat", js.undefined)
+    @scala.inline
+    def setThis(value: Element): Self = this.set("this", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThis: Self = this.set("this", js.undefined)
+  }
+  
 }
 

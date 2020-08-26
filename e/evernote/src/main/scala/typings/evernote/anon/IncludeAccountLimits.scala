@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IncludeAccountLimits extends js.Object {
-  var includeAccountLimits: js.UndefOr[Boolean] = js.undefined
-  var includeContent: js.UndefOr[Boolean] = js.undefined
-  var includeNoteAppDataValues: js.UndefOr[Boolean] = js.undefined
-  var includeResourceAppDataValues: js.UndefOr[Boolean] = js.undefined
-  var includeResourcesAlternateData: js.UndefOr[Boolean] = js.undefined
-  var includeResourcesData: js.UndefOr[Boolean] = js.undefined
-  var includeResourcesRecognition: js.UndefOr[Boolean] = js.undefined
-  var includeSharedNotes: js.UndefOr[Boolean] = js.undefined
+  var includeAccountLimits: js.UndefOr[Boolean] = js.native
+  var includeContent: js.UndefOr[Boolean] = js.native
+  var includeNoteAppDataValues: js.UndefOr[Boolean] = js.native
+  var includeResourceAppDataValues: js.UndefOr[Boolean] = js.native
+  var includeResourcesAlternateData: js.UndefOr[Boolean] = js.native
+  var includeResourcesData: js.UndefOr[Boolean] = js.native
+  var includeResourcesRecognition: js.UndefOr[Boolean] = js.native
+  var includeSharedNotes: js.UndefOr[Boolean] = js.native
 }
 
 object IncludeAccountLimits {
   @scala.inline
-  def apply(
-    includeAccountLimits: js.UndefOr[Boolean] = js.undefined,
-    includeContent: js.UndefOr[Boolean] = js.undefined,
-    includeNoteAppDataValues: js.UndefOr[Boolean] = js.undefined,
-    includeResourceAppDataValues: js.UndefOr[Boolean] = js.undefined,
-    includeResourcesAlternateData: js.UndefOr[Boolean] = js.undefined,
-    includeResourcesData: js.UndefOr[Boolean] = js.undefined,
-    includeResourcesRecognition: js.UndefOr[Boolean] = js.undefined,
-    includeSharedNotes: js.UndefOr[Boolean] = js.undefined
-  ): IncludeAccountLimits = {
+  def apply(): IncludeAccountLimits = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeAccountLimits)) __obj.updateDynamic("includeAccountLimits")(includeAccountLimits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeContent)) __obj.updateDynamic("includeContent")(includeContent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeNoteAppDataValues)) __obj.updateDynamic("includeNoteAppDataValues")(includeNoteAppDataValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeResourceAppDataValues)) __obj.updateDynamic("includeResourceAppDataValues")(includeResourceAppDataValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeResourcesAlternateData)) __obj.updateDynamic("includeResourcesAlternateData")(includeResourcesAlternateData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeResourcesData)) __obj.updateDynamic("includeResourcesData")(includeResourcesData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeResourcesRecognition)) __obj.updateDynamic("includeResourcesRecognition")(includeResourcesRecognition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSharedNotes)) __obj.updateDynamic("includeSharedNotes")(includeSharedNotes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeAccountLimits]
   }
+  @scala.inline
+  implicit class IncludeAccountLimitsOps[Self <: IncludeAccountLimits] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncludeAccountLimits(value: Boolean): Self = this.set("includeAccountLimits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeAccountLimits: Self = this.set("includeAccountLimits", js.undefined)
+    @scala.inline
+    def setIncludeContent(value: Boolean): Self = this.set("includeContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeContent: Self = this.set("includeContent", js.undefined)
+    @scala.inline
+    def setIncludeNoteAppDataValues(value: Boolean): Self = this.set("includeNoteAppDataValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeNoteAppDataValues: Self = this.set("includeNoteAppDataValues", js.undefined)
+    @scala.inline
+    def setIncludeResourceAppDataValues(value: Boolean): Self = this.set("includeResourceAppDataValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeResourceAppDataValues: Self = this.set("includeResourceAppDataValues", js.undefined)
+    @scala.inline
+    def setIncludeResourcesAlternateData(value: Boolean): Self = this.set("includeResourcesAlternateData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeResourcesAlternateData: Self = this.set("includeResourcesAlternateData", js.undefined)
+    @scala.inline
+    def setIncludeResourcesData(value: Boolean): Self = this.set("includeResourcesData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeResourcesData: Self = this.set("includeResourcesData", js.undefined)
+    @scala.inline
+    def setIncludeResourcesRecognition(value: Boolean): Self = this.set("includeResourcesRecognition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeResourcesRecognition: Self = this.set("includeResourcesRecognition", js.undefined)
+    @scala.inline
+    def setIncludeSharedNotes(value: Boolean): Self = this.set("includeSharedNotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeSharedNotes: Self = this.set("includeSharedNotes", js.undefined)
+  }
+  
 }
 

@@ -127,6 +127,8 @@ import scala.scalajs.js.annotation._
   - typings.semanticUiReact.semanticUiReactStrings.algeria
   - typings.semanticUiReact.semanticUiReactStrings.ec
   - typings.semanticUiReact.semanticUiReactStrings.ecuador
+  - typings.semanticUiReact.semanticUiReactStrings.england
+  - typings.semanticUiReact.semanticUiReactStrings.`gb eng`
   - typings.semanticUiReact.semanticUiReactStrings.ee
   - typings.semanticUiReact.semanticUiReactStrings.estonia
   - typings.semanticUiReact.semanticUiReactStrings.eg
@@ -764,6 +766,8 @@ object FlagNameValues {
   @scala.inline
   def `el salvador`: typings.semanticUiReact.semanticUiReactStrings.`el salvador` = ("el salvador").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`el salvador`]
   @scala.inline
+  def england: typings.semanticUiReact.semanticUiReactStrings.england = "england".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.england]
+  @scala.inline
   def `equatorial guinea`: typings.semanticUiReact.semanticUiReactStrings.`equatorial guinea` = ("equatorial guinea").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`equatorial guinea`]
   @scala.inline
   def er: typings.semanticUiReact.semanticUiReactStrings.er = "er".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.er]
@@ -817,6 +821,8 @@ object FlagNameValues {
   def gambia: typings.semanticUiReact.semanticUiReactStrings.gambia = "gambia".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gambia]
   @scala.inline
   def gb: typings.semanticUiReact.semanticUiReactStrings.gb = "gb".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.gb]
+  @scala.inline
+  def `gb eng`: typings.semanticUiReact.semanticUiReactStrings.`gb eng` = ("gb eng").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb eng`]
   @scala.inline
   def `gb sct`: typings.semanticUiReact.semanticUiReactStrings.`gb sct` = ("gb sct").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`gb sct`]
   @scala.inline

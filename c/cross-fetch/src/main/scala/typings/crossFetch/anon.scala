@@ -22,7 +22,11 @@ object anon extends js.Object {
   trait Error
     extends Instantiable0[Response]
        with Instantiable1[/* body */ BodyInit, Response]
-       with Instantiable2[(/* body */ BodyInit) | (/* body */ Null), /* init */ ResponseInit, Response] {
+       with Instantiable2[
+          js.UndefOr[(/* body */ BodyInit) | (/* body */ Null)], 
+          /* init */ ResponseInit, 
+          Response
+        ] {
     def error(): Response = js.native
     def redirect(url: String): Response = js.native
     def redirect(url: String, status: Double): Response = js.native

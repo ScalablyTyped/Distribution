@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "lazy-brush"
-version := "1.0-dt-20200115Z-22c4e6"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200115Z-9d892d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

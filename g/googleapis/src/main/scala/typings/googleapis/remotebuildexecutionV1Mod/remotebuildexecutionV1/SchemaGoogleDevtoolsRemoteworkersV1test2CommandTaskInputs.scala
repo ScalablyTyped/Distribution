@@ -55,20 +55,50 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends js.Objec
 
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs {
   @scala.inline
-  def apply(
-    arguments: js.Array[String] = null,
-    environmentVariables: js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable] = null,
-    files: js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2Digest] = null,
-    inlineBlobs: js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2Blob] = null,
-    workingDirectory: String = null
-  ): SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs = {
+  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (inlineBlobs != null) __obj.updateDynamic("inlineBlobs")(inlineBlobs.asInstanceOf[js.Any])
-    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputsOps[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgumentsVarargs(value: String*): Self = this.set("arguments", js.Array(value :_*))
+    @scala.inline
+    def setArguments(value: js.Array[String]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("arguments", js.undefined)
+    @scala.inline
+    def setEnvironmentVariablesVarargs(value: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable*): Self = this.set("environmentVariables", js.Array(value :_*))
+    @scala.inline
+    def setEnvironmentVariables(value: js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable]): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    @scala.inline
+    def setFilesVarargs(value: SchemaGoogleDevtoolsRemoteworkersV1test2Digest*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2Digest]): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setInlineBlobsVarargs(value: SchemaGoogleDevtoolsRemoteworkersV1test2Blob*): Self = this.set("inlineBlobs", js.Array(value :_*))
+    @scala.inline
+    def setInlineBlobs(value: js.Array[SchemaGoogleDevtoolsRemoteworkersV1test2Blob]): Self = this.set("inlineBlobs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineBlobs: Self = this.set("inlineBlobs", js.undefined)
+    @scala.inline
+    def setWorkingDirectory(value: String): Self = this.set("workingDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkingDirectory: Self = this.set("workingDirectory", js.undefined)
+  }
+  
 }
 

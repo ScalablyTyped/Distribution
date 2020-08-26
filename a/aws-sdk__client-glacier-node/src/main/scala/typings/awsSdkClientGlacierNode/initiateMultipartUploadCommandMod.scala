@@ -26,16 +26,9 @@ object initiateMultipartUploadCommandMod extends js.Object {
           Readable
         ] {
     def this(input: InitiateMultipartUploadInput) = this()
-    /* CompleteClass */
-    override val input: InitiateMultipartUploadInput = js.native
     val middlewareStack: MiddlewareStack[InitiateMultipartUploadInput, InitiateMultipartUploadOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[InitiateMultipartUploadInput, InitiateMultipartUploadOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[InitiateMultipartUploadInput, InitiateMultipartUploadOutput] = js.native
   }

@@ -42,26 +42,54 @@ trait ApprovalRule extends js.Object {
 
 object ApprovalRule {
   @scala.inline
-  def apply(
-    approvalRuleContent: ApprovalRuleContent = null,
-    approvalRuleId: ApprovalRuleId = null,
-    approvalRuleName: ApprovalRuleName = null,
-    creationDate: CreationDate = null,
-    lastModifiedDate: LastModifiedDate = null,
-    lastModifiedUser: Arn = null,
-    originApprovalRuleTemplate: OriginApprovalRuleTemplate = null,
-    ruleContentSha256: RuleContentSha256 = null
-  ): ApprovalRule = {
+  def apply(): ApprovalRule = {
     val __obj = js.Dynamic.literal()
-    if (approvalRuleContent != null) __obj.updateDynamic("approvalRuleContent")(approvalRuleContent.asInstanceOf[js.Any])
-    if (approvalRuleId != null) __obj.updateDynamic("approvalRuleId")(approvalRuleId.asInstanceOf[js.Any])
-    if (approvalRuleName != null) __obj.updateDynamic("approvalRuleName")(approvalRuleName.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (lastModifiedUser != null) __obj.updateDynamic("lastModifiedUser")(lastModifiedUser.asInstanceOf[js.Any])
-    if (originApprovalRuleTemplate != null) __obj.updateDynamic("originApprovalRuleTemplate")(originApprovalRuleTemplate.asInstanceOf[js.Any])
-    if (ruleContentSha256 != null) __obj.updateDynamic("ruleContentSha256")(ruleContentSha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApprovalRule]
   }
+  @scala.inline
+  implicit class ApprovalRuleOps[Self <: ApprovalRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovalRuleContent(value: ApprovalRuleContent): Self = this.set("approvalRuleContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRuleContent: Self = this.set("approvalRuleContent", js.undefined)
+    @scala.inline
+    def setApprovalRuleId(value: ApprovalRuleId): Self = this.set("approvalRuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRuleId: Self = this.set("approvalRuleId", js.undefined)
+    @scala.inline
+    def setApprovalRuleName(value: ApprovalRuleName): Self = this.set("approvalRuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRuleName: Self = this.set("approvalRuleName", js.undefined)
+    @scala.inline
+    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: LastModifiedDate): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setLastModifiedUser(value: Arn): Self = this.set("lastModifiedUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedUser: Self = this.set("lastModifiedUser", js.undefined)
+    @scala.inline
+    def setOriginApprovalRuleTemplate(value: OriginApprovalRuleTemplate): Self = this.set("originApprovalRuleTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginApprovalRuleTemplate: Self = this.set("originApprovalRuleTemplate", js.undefined)
+    @scala.inline
+    def setRuleContentSha256(value: RuleContentSha256): Self = this.set("ruleContentSha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleContentSha256: Self = this.set("ruleContentSha256", js.undefined)
+  }
+  
 }
 

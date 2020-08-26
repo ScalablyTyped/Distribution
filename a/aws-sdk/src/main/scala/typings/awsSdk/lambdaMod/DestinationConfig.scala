@@ -18,11 +18,30 @@ trait DestinationConfig extends js.Object {
 
 object DestinationConfig {
   @scala.inline
-  def apply(OnFailure: OnFailure = null, OnSuccess: OnSuccess = null): DestinationConfig = {
+  def apply(): DestinationConfig = {
     val __obj = js.Dynamic.literal()
-    if (OnFailure != null) __obj.updateDynamic("OnFailure")(OnFailure.asInstanceOf[js.Any])
-    if (OnSuccess != null) __obj.updateDynamic("OnSuccess")(OnSuccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationConfig]
   }
+  @scala.inline
+  implicit class DestinationConfigOps[Self <: DestinationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnFailure(value: OnFailure): Self = this.set("OnFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFailure: Self = this.set("OnFailure", js.undefined)
+    @scala.inline
+    def setOnSuccess(value: OnSuccess): Self = this.set("OnSuccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSuccess: Self = this.set("OnSuccess", js.undefined)
+  }
+  
 }
 

@@ -1,33 +1,32 @@
 package typings.senchaTouch.Ext.util
 
-import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
-import typings.senchaTouch.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPoint extends IBase {
   /** [Method] Copy a new instance of this point
     * @returns Ext.util.Point The new point.
     */
   @JSName("clone")
-  var clone_FIPoint: js.UndefOr[js.Function0[this.type]] = js.undefined
+  var clone_FIPoint: js.UndefOr[js.Function0[this.type]] = js.native
   /** [Method] Clones this Point
     * @returns Ext.util.Point The new point.
     */
-  var copy: js.UndefOr[js.Function0[this.type]] = js.undefined
+  var copy: js.UndefOr[js.Function0[this.type]] = js.native
   /** [Method] Copy the x and y values of another point  object to this point itself
     * @param point Ext.util.Point/Object .
     * @returns Ext.util.Point This point.
     */
-  var copyFrom: js.UndefOr[js.Function1[/* point */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var copyFrom: js.UndefOr[js.Function1[/* point */ js.UndefOr[js.Any], this.type]] = js.native
   /** [Method] Compare this point and another point
     * @param point Ext.util.Point/Object The point to compare with, either an instance of Ext.util.Point or an object with x and y properties.
     * @returns Boolean Returns whether they are equivalent.
     */
   @JSName("equals")
-  var equals_FIPoint: js.UndefOr[js.Function1[/* point */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var equals_FIPoint: js.UndefOr[js.Function1[/* point */ js.UndefOr[js.Any], Boolean]] = js.native
   /** [Method] Whether the given point is not away from this point within the given threshold amount
     * @param point Ext.util.Point/Object The point to check with, either an instance of Ext.util.Point or an object with x and y properties.
     * @param threshold Object/Number Can be either an object with x and y properties or a number.
@@ -35,87 +34,83 @@ trait IPoint extends IBase {
     */
   var isCloseTo: js.UndefOr[
     js.Function2[/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any], Boolean]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns true if this point is close to another one
     * @returns Boolean
     */
-  var isWithin: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isWithin: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Compare this point with another point when the x and y values of both points are rounded
     * @param point Ext.util.Point/Object The point to compare with, either an instance of Ext.util.Point or an object with x and y properties.
     * @returns Boolean
     */
-  var roundedEquals: js.UndefOr[js.Function1[/* point */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var roundedEquals: js.UndefOr[js.Function1[/* point */ js.UndefOr[js.Any], Boolean]] = js.native
   /** [Method] Returns a human eye friendly string that represents this point useful for debugging
     * @returns String For example Point[12,8].
     */
   @JSName("toString")
-  var toString_FIPoint: js.UndefOr[js.Function0[String]] = js.undefined
+  var toString_FIPoint: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Translate this point by the given amounts
     * @param x Number Amount to translate in the x-axis.
     * @param y Number Amount to translate in the y-axis.
     * @returns Boolean
     */
-  var translate: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Boolean]] = js.undefined
+  var translate: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Boolean]] = js.native
 }
 
 object IPoint {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clone: () => IPoint = null,
-    config: js.Any = null,
-    copy: () => IPoint = null,
-    copyFrom: /* point */ js.UndefOr[js.Any] => IPoint = null,
-    destroy: () => Unit = null,
-    equals: /* point */ js.UndefOr[js.Any] => Boolean = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    isCloseTo: (/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean = null,
-    isWithin: () => Boolean = null,
-    mixins: js.Any = null,
-    platformConfig: js.Any = null,
-    roundedEquals: /* point */ js.UndefOr[js.Any] => Boolean = null,
-    self: IClass = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    toString: () => String = null,
-    translate: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean = null,
-    uses: Array = null
-  ): IPoint = {
+  def apply(): IPoint = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (clone != null) __obj.updateDynamic("clone")(js.Any.fromFunction0(clone))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction0(copy))
-    if (copyFrom != null) __obj.updateDynamic("copyFrom")(js.Any.fromFunction1(copyFrom))
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction1(equals))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (isCloseTo != null) __obj.updateDynamic("isCloseTo")(js.Any.fromFunction2(isCloseTo))
-    if (isWithin != null) __obj.updateDynamic("isWithin")(js.Any.fromFunction0(isWithin))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (roundedEquals != null) __obj.updateDynamic("roundedEquals")(js.Any.fromFunction1(roundedEquals))
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (toString != null) __obj.updateDynamic("toString")(js.Any.fromFunction0(toString))
-    if (translate != null) __obj.updateDynamic("translate")(js.Any.fromFunction2(translate))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPoint]
   }
+  @scala.inline
+  implicit class IPointOps[Self <: IPoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClone(value: () => IPoint): Self = this.set("clone", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteClone: Self = this.set("clone", js.undefined)
+    @scala.inline
+    def setCopy(value: () => IPoint): Self = this.set("copy", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCopy: Self = this.set("copy", js.undefined)
+    @scala.inline
+    def setCopyFrom(value: /* point */ js.UndefOr[js.Any] => IPoint): Self = this.set("copyFrom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCopyFrom: Self = this.set("copyFrom", js.undefined)
+    @scala.inline
+    def setEquals(value: /* point */ js.UndefOr[js.Any] => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEquals: Self = this.set("equals", js.undefined)
+    @scala.inline
+    def setIsCloseTo(value: (/* point */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean): Self = this.set("isCloseTo", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIsCloseTo: Self = this.set("isCloseTo", js.undefined)
+    @scala.inline
+    def setIsWithin(value: () => Boolean): Self = this.set("isWithin", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsWithin: Self = this.set("isWithin", js.undefined)
+    @scala.inline
+    def setRoundedEquals(value: /* point */ js.UndefOr[js.Any] => Boolean): Self = this.set("roundedEquals", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRoundedEquals: Self = this.set("roundedEquals", js.undefined)
+    @scala.inline
+    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteToString: Self = this.set("toString", js.undefined)
+    @scala.inline
+    def setTranslate(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean): Self = this.set("translate", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteTranslate: Self = this.set("translate", js.undefined)
+  }
+  
 }
 

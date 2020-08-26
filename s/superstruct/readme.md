@@ -1,7 +1,7 @@
 
 # Scala.js typings for superstruct
 
-Typings are for version 0.8.4
+Typings are for version 0.10.12
 
 ## Library description:
 A simple, expressive way to validate data in JavaScript.
@@ -11,8 +11,8 @@ A simple, expressive way to validate data in JavaScript.
 | Full name          | superstruct |
 | Keywords           | api, array, assert, cast, check, checker, collection, data, error, express, hapi, interface, invalid, joi, json, list, model, object, orm, scalar, schema, struct, throw, type, types, valid, validate, validation, validator |
 | # releases         | 13 |
-| # dependents       | 76 |
-| # downloads        | 813765 |
+| # dependents       | 79 |
+| # downloads        | 900727 |
 | # stars            | 0 |
 
 ## Links

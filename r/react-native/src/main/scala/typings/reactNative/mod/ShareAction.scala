@@ -14,9 +14,8 @@ trait ShareAction extends js.Object
 
 object ShareAction {
   @scala.inline
-  def ShareSharedAction(action: sharedAction, activityType: String = null): ShareAction = {
+  def ShareSharedAction(action: sharedAction): ShareAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-    if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareAction]
   }
   @scala.inline

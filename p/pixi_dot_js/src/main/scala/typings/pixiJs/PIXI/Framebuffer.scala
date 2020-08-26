@@ -54,6 +54,7 @@ trait Framebuffer extends js.Object {
     * @param {PIXI.BaseTexture} [texture] - Texture to add to the array
     */
   def addColorTexture(): Unit = js.native
+  def addColorTexture(index: js.UndefOr[scala.Nothing], texture: BaseTexture): Unit = js.native
   def addColorTexture(index: Double): Unit = js.native
   def addColorTexture(index: Double, texture: BaseTexture): Unit = js.native
   /**

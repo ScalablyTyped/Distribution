@@ -18,11 +18,30 @@ trait S3DestinationConfig extends js.Object {
 
 object S3DestinationConfig {
   @scala.inline
-  def apply(bucket: DestinationBucket = null, keyPrefix: DestinationKeyPrefix = null): S3DestinationConfig = {
+  def apply(): S3DestinationConfig = {
     val __obj = js.Dynamic.literal()
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DestinationConfig]
   }
+  @scala.inline
+  implicit class S3DestinationConfigOps[Self <: S3DestinationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: DestinationBucket): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("bucket", js.undefined)
+    @scala.inline
+    def setKeyPrefix(value: DestinationKeyPrefix): Self = this.set("keyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPrefix: Self = this.set("keyPrefix", js.undefined)
+  }
+  
 }
 

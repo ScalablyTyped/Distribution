@@ -38,7 +38,7 @@ class Plan protected () extends CustomResource {
   /**
     * Metadata that you can assign to help organize the plans you create.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
     */
@@ -56,8 +56,10 @@ object Plan extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Plan = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Plan = js.native
   def get(name: String, id: Input[ID], state: PlanState): Plan = js.native
   def get(name: String, id: Input[ID], state: PlanState, opts: CustomResourceOptions): Plan = js.native
   /**

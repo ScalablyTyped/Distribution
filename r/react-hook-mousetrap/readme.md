@@ -12,7 +12,7 @@ A react hook to trigger callbacks on specified key combo with mousetrap
 | Keywords           | ract, hook, mousetrap, keys, combo, hotkeys |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 1471 |
+| # downloads        | 1555 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ unist utility to create a new trees with a nice syntax
 | Full name          | unist-builder |
 | Keywords           | unist, unist-util, util, utility, tree, ast, build, builder, create, dsl, hyperscript, sugar, syntax |
 | # releases         | 7 |
-| # dependents       | 113 |
-| # downloads        | 19193965 |
+| # dependents       | 116 |
+| # downloads        | 24104863 |
 | # stars            | 1 |
 
 ## Links

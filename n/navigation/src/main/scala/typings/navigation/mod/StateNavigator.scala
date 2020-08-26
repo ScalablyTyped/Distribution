@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
 class StateNavigator () extends js.Object {
   def this(stateInfos: js.Array[StateInfo]) = this()
   def this(stateInfos: StateNavigator) = this()
+  def this(stateInfos: js.UndefOr[scala.Nothing], historyManager: HistoryManager) = this()
   def this(stateInfos: js.Array[StateInfo], historyManager: HistoryManager) = this()
   def this(stateInfos: StateNavigator, historyManager: HistoryManager) = this()
   /**
@@ -116,10 +117,82 @@ class StateNavigator () extends js.Object {
     * @param currentContext The current StateContext
     */
   def navigateLink(url: String): Unit = js.native
+  def navigateLink(
+    url: String,
+    historyAction: js.UndefOr[scala.Nothing],
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.UndefOr[scala.Nothing],
+    currentContext: StateContext
+  ): Unit = js.native
+  def navigateLink(
+    url: String,
+    historyAction: js.UndefOr[scala.Nothing],
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+  ): Unit = js.native
+  def navigateLink(
+    url: String,
+    historyAction: js.UndefOr[scala.Nothing],
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+    currentContext: StateContext
+  ): Unit = js.native
+  def navigateLink(url: String, historyAction: js.UndefOr[scala.Nothing], history: Boolean): Unit = js.native
+  def navigateLink(
+    url: String,
+    historyAction: js.UndefOr[scala.Nothing],
+    history: Boolean,
+    suspendNavigation: js.UndefOr[scala.Nothing],
+    currentContext: StateContext
+  ): Unit = js.native
+  def navigateLink(
+    url: String,
+    historyAction: js.UndefOr[scala.Nothing],
+    history: Boolean,
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+  ): Unit = js.native
+  def navigateLink(
+    url: String,
+    historyAction: js.UndefOr[scala.Nothing],
+    history: Boolean,
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+    currentContext: StateContext
+  ): Unit = js.native
   @JSName("navigateLink")
   def navigateLink_add(url: String, historyAction: add): Unit = js.native
   @JSName("navigateLink")
+  def navigateLink_add(
+    url: String,
+    historyAction: add,
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.UndefOr[scala.Nothing],
+    currentContext: StateContext
+  ): Unit = js.native
+  @JSName("navigateLink")
+  def navigateLink_add(
+    url: String,
+    historyAction: add,
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+  ): Unit = js.native
+  @JSName("navigateLink")
+  def navigateLink_add(
+    url: String,
+    historyAction: add,
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+    currentContext: StateContext
+  ): Unit = js.native
+  @JSName("navigateLink")
   def navigateLink_add(url: String, historyAction: add, history: Boolean): Unit = js.native
+  @JSName("navigateLink")
+  def navigateLink_add(
+    url: String,
+    historyAction: add,
+    history: Boolean,
+    suspendNavigation: js.UndefOr[scala.Nothing],
+    currentContext: StateContext
+  ): Unit = js.native
   @JSName("navigateLink")
   def navigateLink_add(
     url: String,
@@ -138,7 +211,38 @@ class StateNavigator () extends js.Object {
   @JSName("navigateLink")
   def navigateLink_none(url: String, historyAction: none): Unit = js.native
   @JSName("navigateLink")
+  def navigateLink_none(
+    url: String,
+    historyAction: none,
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.UndefOr[scala.Nothing],
+    currentContext: StateContext
+  ): Unit = js.native
+  @JSName("navigateLink")
+  def navigateLink_none(
+    url: String,
+    historyAction: none,
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+  ): Unit = js.native
+  @JSName("navigateLink")
+  def navigateLink_none(
+    url: String,
+    historyAction: none,
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+    currentContext: StateContext
+  ): Unit = js.native
+  @JSName("navigateLink")
   def navigateLink_none(url: String, historyAction: none, history: Boolean): Unit = js.native
+  @JSName("navigateLink")
+  def navigateLink_none(
+    url: String,
+    historyAction: none,
+    history: Boolean,
+    suspendNavigation: js.UndefOr[scala.Nothing],
+    currentContext: StateContext
+  ): Unit = js.native
   @JSName("navigateLink")
   def navigateLink_none(
     url: String,
@@ -157,7 +261,38 @@ class StateNavigator () extends js.Object {
   @JSName("navigateLink")
   def navigateLink_replace(url: String, historyAction: replace): Unit = js.native
   @JSName("navigateLink")
+  def navigateLink_replace(
+    url: String,
+    historyAction: replace,
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.UndefOr[scala.Nothing],
+    currentContext: StateContext
+  ): Unit = js.native
+  @JSName("navigateLink")
+  def navigateLink_replace(
+    url: String,
+    historyAction: replace,
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+  ): Unit = js.native
+  @JSName("navigateLink")
+  def navigateLink_replace(
+    url: String,
+    historyAction: replace,
+    history: js.UndefOr[scala.Nothing],
+    suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
+    currentContext: StateContext
+  ): Unit = js.native
+  @JSName("navigateLink")
   def navigateLink_replace(url: String, historyAction: replace, history: Boolean): Unit = js.native
+  @JSName("navigateLink")
+  def navigateLink_replace(
+    url: String,
+    historyAction: replace,
+    history: Boolean,
+    suspendNavigation: js.UndefOr[scala.Nothing],
+    currentContext: StateContext
+  ): Unit = js.native
   @JSName("navigateLink")
   def navigateLink_replace(
     url: String,
@@ -174,9 +309,15 @@ class StateNavigator () extends js.Object {
     currentContext: StateContext
   ): Unit = js.native
   @JSName("navigate")
+  def navigate_add(stateKey: String, navigationData: js.UndefOr[scala.Nothing], historyAction: add): Unit = js.native
+  @JSName("navigate")
   def navigate_add(stateKey: String, navigationData: js.Any, historyAction: add): Unit = js.native
   @JSName("navigate")
+  def navigate_none(stateKey: String, navigationData: js.UndefOr[scala.Nothing], historyAction: none): Unit = js.native
+  @JSName("navigate")
   def navigate_none(stateKey: String, navigationData: js.Any, historyAction: none): Unit = js.native
+  @JSName("navigate")
+  def navigate_replace(stateKey: String, navigationData: js.UndefOr[scala.Nothing], historyAction: replace): Unit = js.native
   @JSName("navigate")
   def navigate_replace(stateKey: String, navigationData: js.Any, historyAction: replace): Unit = js.native
   /**
@@ -251,9 +392,15 @@ class StateNavigator () extends js.Object {
   def refresh(): Unit = js.native
   def refresh(navigationData: js.Any): Unit = js.native
   @JSName("refresh")
+  def refresh_add(navigationData: js.UndefOr[scala.Nothing], historyAction: add): Unit = js.native
+  @JSName("refresh")
   def refresh_add(navigationData: js.Any, historyAction: add): Unit = js.native
   @JSName("refresh")
+  def refresh_none(navigationData: js.UndefOr[scala.Nothing], historyAction: none): Unit = js.native
+  @JSName("refresh")
   def refresh_none(navigationData: js.Any, historyAction: none): Unit = js.native
+  @JSName("refresh")
+  def refresh_replace(navigationData: js.UndefOr[scala.Nothing], historyAction: replace): Unit = js.native
   @JSName("refresh")
   def refresh_replace(navigationData: js.Any, historyAction: replace): Unit = js.native
   /**

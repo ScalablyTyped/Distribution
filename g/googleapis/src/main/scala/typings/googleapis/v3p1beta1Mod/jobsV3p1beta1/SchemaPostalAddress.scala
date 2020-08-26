@@ -118,32 +118,70 @@ trait SchemaPostalAddress extends js.Object {
 
 object SchemaPostalAddress {
   @scala.inline
-  def apply(
-    addressLines: js.Array[String] = null,
-    administrativeArea: String = null,
-    languageCode: String = null,
-    locality: String = null,
-    organization: String = null,
-    postalCode: String = null,
-    recipients: js.Array[String] = null,
-    regionCode: String = null,
-    revision: js.UndefOr[Double] = js.undefined,
-    sortingCode: String = null,
-    sublocality: String = null
-  ): SchemaPostalAddress = {
+  def apply(): SchemaPostalAddress = {
     val __obj = js.Dynamic.literal()
-    if (addressLines != null) __obj.updateDynamic("addressLines")(addressLines.asInstanceOf[js.Any])
-    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
-    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
-    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(revision)) __obj.updateDynamic("revision")(revision.get.asInstanceOf[js.Any])
-    if (sortingCode != null) __obj.updateDynamic("sortingCode")(sortingCode.asInstanceOf[js.Any])
-    if (sublocality != null) __obj.updateDynamic("sublocality")(sublocality.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPostalAddress]
   }
+  @scala.inline
+  implicit class SchemaPostalAddressOps[Self <: SchemaPostalAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressLinesVarargs(value: String*): Self = this.set("addressLines", js.Array(value :_*))
+    @scala.inline
+    def setAddressLines(value: js.Array[String]): Self = this.set("addressLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressLines: Self = this.set("addressLines", js.undefined)
+    @scala.inline
+    def setAdministrativeArea(value: String): Self = this.set("administrativeArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdministrativeArea: Self = this.set("administrativeArea", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocality: Self = this.set("locality", js.undefined)
+    @scala.inline
+    def setOrganization(value: String): Self = this.set("organization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganization: Self = this.set("organization", js.undefined)
+    @scala.inline
+    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalCode: Self = this.set("postalCode", js.undefined)
+    @scala.inline
+    def setRecipientsVarargs(value: String*): Self = this.set("recipients", js.Array(value :_*))
+    @scala.inline
+    def setRecipients(value: js.Array[String]): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    @scala.inline
+    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    @scala.inline
+    def setRevision(value: Double): Self = this.set("revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("revision", js.undefined)
+    @scala.inline
+    def setSortingCode(value: String): Self = this.set("sortingCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortingCode: Self = this.set("sortingCode", js.undefined)
+    @scala.inline
+    def setSublocality(value: String): Self = this.set("sublocality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSublocality: Self = this.set("sublocality", js.undefined)
+  }
+  
 }
 

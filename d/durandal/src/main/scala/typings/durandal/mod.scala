@@ -19,6 +19,7 @@ object mod extends js.Object {
   def create[T](): DurandalActivator[T] = js.native
   def create[T](initialActiveItem: T): DurandalActivator[T] = js.native
   def create[T](initialActiveItem: T, settings: DurandalActivatorSettings): DurandalActivator[T] = js.native
+  def create[T](initialActiveItem: js.UndefOr[scala.Nothing], settings: DurandalActivatorSettings): DurandalActivator[T] = js.native
   def isActivator(`object`: js.Any): Boolean = js.native
 }
 

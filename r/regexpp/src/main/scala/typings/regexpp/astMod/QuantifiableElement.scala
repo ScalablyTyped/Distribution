@@ -72,10 +72,9 @@ object QuantifiableElement {
     raw: String,
     references: js.Array[Backreference],
     start: Double,
-    `type`: typings.regexpp.regexppStrings.CapturingGroup,
-    name: String = null
+    `type`: typings.regexpp.regexppStrings.CapturingGroup
   ): QuantifiableElement = {
-    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }
@@ -102,10 +101,9 @@ object QuantifiableElement {
     parent: Alternative | Quantifier | CharacterClass,
     raw: String,
     start: Double,
-    `type`: typings.regexpp.regexppStrings.CharacterSet,
-    value: String = null
+    `type`: typings.regexpp.regexppStrings.CharacterSet
   ): QuantifiableElement = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantifiableElement]
   }

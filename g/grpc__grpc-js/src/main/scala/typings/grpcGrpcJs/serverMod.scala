@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.makeClientMod.Deserialize
 import typings.grpcGrpcJs.makeClientMod.Serialize
-import typings.grpcGrpcJs.makeClientMod.ServiceDefinition
 import typings.grpcGrpcJs.serverCallMod.HandleCall
 import typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials
 import typings.std.Error
@@ -20,13 +19,13 @@ object serverMod extends js.Object {
     def this(options: ChannelOptions) = this()
     var _setupHandlers: js.Any = js.native
     var handlers: js.Any = js.native
-    var http2Server: js.Any = js.native
+    var http2ServerList: js.Any = js.native
     var options: js.Any = js.native
     var sessions: js.Any = js.native
     var started: js.Any = js.native
     def addHttp2Port(): Unit = js.native
     def addProtoService(): Unit = js.native
-    def addService(service: ServiceDefinition, implementation: UntypedServiceImplementation): Unit = js.native
+    def addService(service: js.Object, implementation: UntypedServiceImplementation): Unit = js.native
     def bind(port: String, creds: ServerCredentials): Unit = js.native
     def bindAsync(
       port: String,

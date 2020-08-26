@@ -26,16 +26,9 @@ object mergePullRequestByFastForwardCommandMod extends js.Object {
           Readable
         ] {
     def this(input: MergePullRequestByFastForwardInput) = this()
-    /* CompleteClass */
-    override val input: MergePullRequestByFastForwardInput = js.native
     val middlewareStack: MiddlewareStack[MergePullRequestByFastForwardInput, MergePullRequestByFastForwardOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[MergePullRequestByFastForwardInput, MergePullRequestByFastForwardOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[MergePullRequestByFastForwardInput, MergePullRequestByFastForwardOutput] = js.native
   }

@@ -13,16 +13,34 @@ trait FamilyRole extends js.Object {
 
 object FamilyRole {
   @scala.inline
-  def apply(
-    familyRole: String = null,
-    isSharingAllowed: js.UndefOr[Boolean] = js.undefined,
-    isSharingDisabledByFop: js.UndefOr[Boolean] = js.undefined
-  ): FamilyRole = {
+  def apply(): FamilyRole = {
     val __obj = js.Dynamic.literal()
-    if (familyRole != null) __obj.updateDynamic("familyRole")(familyRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSharingAllowed)) __obj.updateDynamic("isSharingAllowed")(isSharingAllowed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSharingDisabledByFop)) __obj.updateDynamic("isSharingDisabledByFop")(isSharingDisabledByFop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FamilyRole]
   }
+  @scala.inline
+  implicit class FamilyRoleOps[Self <: FamilyRole] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFamilyRole(value: String): Self = this.set("familyRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamilyRole: Self = this.set("familyRole", js.undefined)
+    @scala.inline
+    def setIsSharingAllowed(value: Boolean): Self = this.set("isSharingAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSharingAllowed: Self = this.set("isSharingAllowed", js.undefined)
+    @scala.inline
+    def setIsSharingDisabledByFop(value: Boolean): Self = this.set("isSharingDisabledByFop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSharingDisabledByFop: Self = this.set("isSharingDisabledByFop", js.undefined)
+  }
+  
 }
 

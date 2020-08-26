@@ -22,12 +22,34 @@ trait NetworkAclAssociation extends js.Object {
 
 object NetworkAclAssociation {
   @scala.inline
-  def apply(NetworkAclAssociationId: String = null, NetworkAclId: String = null, SubnetId: String = null): NetworkAclAssociation = {
+  def apply(): NetworkAclAssociation = {
     val __obj = js.Dynamic.literal()
-    if (NetworkAclAssociationId != null) __obj.updateDynamic("NetworkAclAssociationId")(NetworkAclAssociationId.asInstanceOf[js.Any])
-    if (NetworkAclId != null) __obj.updateDynamic("NetworkAclId")(NetworkAclId.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkAclAssociation]
   }
+  @scala.inline
+  implicit class NetworkAclAssociationOps[Self <: NetworkAclAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkAclAssociationId(value: String): Self = this.set("NetworkAclAssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkAclAssociationId: Self = this.set("NetworkAclAssociationId", js.undefined)
+    @scala.inline
+    def setNetworkAclId(value: String): Self = this.set("NetworkAclId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkAclId: Self = this.set("NetworkAclId", js.undefined)
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+  }
+  
 }
 

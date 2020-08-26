@@ -14,6 +14,11 @@ trait FileBrowserTreeComponent extends Component {
   var onDidChange_Original: Event[_] = js.native
   var ownerUri: String = js.native
   def onDidChange(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onDidChange(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidChange(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onDidChange(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
 }

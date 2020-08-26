@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("OpenFontFormattingDialogCommand")
 @js.native
 class OpenFontFormattingDialogCommand ()
-  extends typings.devexpressWeb.OpenFontFormattingDialogCommand {
-  /**
-    * Executes the OpenFontFormattingDialogCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.OpenFontFormattingDialogCommand
 

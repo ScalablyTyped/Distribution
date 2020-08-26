@@ -74,40 +74,94 @@ trait CreateChangeSetInput extends js.Object {
 
 object CreateChangeSetInput {
   @scala.inline
-  def apply(
-    ChangeSetName: ChangeSetName,
-    StackName: StackNameOrId,
-    Capabilities: Capabilities = null,
-    ChangeSetType: ChangeSetType = null,
-    ClientToken: ClientToken = null,
-    Description: Description = null,
-    NotificationARNs: NotificationARNs = null,
-    Parameters: Parameters = null,
-    ResourceTypes: ResourceTypes = null,
-    ResourcesToImport: ResourcesToImport = null,
-    RoleARN: RoleARN_ = null,
-    RollbackConfiguration: RollbackConfiguration = null,
-    Tags: Tags = null,
-    TemplateBody: TemplateBody = null,
-    TemplateURL: TemplateURL = null,
-    UsePreviousTemplate: js.UndefOr[UsePreviousTemplate] = js.undefined
-  ): CreateChangeSetInput = {
+  def apply(ChangeSetName: ChangeSetName, StackName: StackNameOrId): CreateChangeSetInput = {
     val __obj = js.Dynamic.literal(ChangeSetName = ChangeSetName.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
-    if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
-    if (ChangeSetType != null) __obj.updateDynamic("ChangeSetType")(ChangeSetType.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (NotificationARNs != null) __obj.updateDynamic("NotificationARNs")(NotificationARNs.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (ResourceTypes != null) __obj.updateDynamic("ResourceTypes")(ResourceTypes.asInstanceOf[js.Any])
-    if (ResourcesToImport != null) __obj.updateDynamic("ResourcesToImport")(ResourcesToImport.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
-    if (RollbackConfiguration != null) __obj.updateDynamic("RollbackConfiguration")(RollbackConfiguration.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
-    if (TemplateURL != null) __obj.updateDynamic("TemplateURL")(TemplateURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsePreviousTemplate)) __obj.updateDynamic("UsePreviousTemplate")(UsePreviousTemplate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateChangeSetInput]
   }
+  @scala.inline
+  implicit class CreateChangeSetInputOps[Self <: CreateChangeSetInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeSetName(value: ChangeSetName): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackName(value: StackNameOrId): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    @scala.inline
+    def setChangeSetType(value: ChangeSetType): Self = this.set("ChangeSetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetType: Self = this.set("ChangeSetType", js.undefined)
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setNotificationARNsVarargs(value: NotificationARN*): Self = this.set("NotificationARNs", js.Array(value :_*))
+    @scala.inline
+    def setNotificationARNs(value: NotificationARNs): Self = this.set("NotificationARNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationARNs: Self = this.set("NotificationARNs", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setResourceTypesVarargs(value: ResourceType*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypes(value: ResourceTypes): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    @scala.inline
+    def setResourcesToImportVarargs(value: ResourceToImport*): Self = this.set("ResourcesToImport", js.Array(value :_*))
+    @scala.inline
+    def setResourcesToImport(value: ResourcesToImport): Self = this.set("ResourcesToImport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcesToImport: Self = this.set("ResourcesToImport", js.undefined)
+    @scala.inline
+    def setRoleARN(value: RoleARN_): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    @scala.inline
+    def setRollbackConfiguration(value: RollbackConfiguration): Self = this.set("RollbackConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRollbackConfiguration: Self = this.set("RollbackConfiguration", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+    @scala.inline
+    def setTemplateURL(value: TemplateURL): Self = this.set("TemplateURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateURL: Self = this.set("TemplateURL", js.undefined)
+    @scala.inline
+    def setUsePreviousTemplate(value: UsePreviousTemplate): Self = this.set("UsePreviousTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsePreviousTemplate: Self = this.set("UsePreviousTemplate", js.undefined)
+  }
+  
 }
 

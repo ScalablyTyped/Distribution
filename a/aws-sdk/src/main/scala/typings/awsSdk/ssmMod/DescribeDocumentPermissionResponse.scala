@@ -18,11 +18,34 @@ trait DescribeDocumentPermissionResponse extends js.Object {
 
 object DescribeDocumentPermissionResponse {
   @scala.inline
-  def apply(AccountIds: AccountIdList = null, AccountSharingInfoList: AccountSharingInfoList = null): DescribeDocumentPermissionResponse = {
+  def apply(): DescribeDocumentPermissionResponse = {
     val __obj = js.Dynamic.literal()
-    if (AccountIds != null) __obj.updateDynamic("AccountIds")(AccountIds.asInstanceOf[js.Any])
-    if (AccountSharingInfoList != null) __obj.updateDynamic("AccountSharingInfoList")(AccountSharingInfoList.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDocumentPermissionResponse]
   }
+  @scala.inline
+  implicit class DescribeDocumentPermissionResponseOps[Self <: DescribeDocumentPermissionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountIdsVarargs(value: AccountId*): Self = this.set("AccountIds", js.Array(value :_*))
+    @scala.inline
+    def setAccountIds(value: AccountIdList): Self = this.set("AccountIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountIds: Self = this.set("AccountIds", js.undefined)
+    @scala.inline
+    def setAccountSharingInfoListVarargs(value: AccountSharingInfo*): Self = this.set("AccountSharingInfoList", js.Array(value :_*))
+    @scala.inline
+    def setAccountSharingInfoList(value: AccountSharingInfoList): Self = this.set("AccountSharingInfoList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountSharingInfoList: Self = this.set("AccountSharingInfoList", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait BatchListPolicyAttachmentsResponse extends js.Object {
 
 object BatchListPolicyAttachmentsResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, ObjectIdentifiers: ObjectIdentifierList = null): BatchListPolicyAttachmentsResponse = {
+  def apply(): BatchListPolicyAttachmentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ObjectIdentifiers != null) __obj.updateDynamic("ObjectIdentifiers")(ObjectIdentifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchListPolicyAttachmentsResponse]
   }
+  @scala.inline
+  implicit class BatchListPolicyAttachmentsResponseOps[Self <: BatchListPolicyAttachmentsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setObjectIdentifiersVarargs(value: ObjectIdentifier*): Self = this.set("ObjectIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setObjectIdentifiers(value: ObjectIdentifierList): Self = this.set("ObjectIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectIdentifiers: Self = this.set("ObjectIdentifiers", js.undefined)
+  }
+  
 }
 

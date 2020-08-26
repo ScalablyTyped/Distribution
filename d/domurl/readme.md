@@ -11,7 +11,7 @@ Lightweight URL manipulation with JavaScript.
 | Keywords           | url, querystring |
 | # releases         | 6 |
 | # dependents       | 4 |
-| # downloads        | 585844 |
+| # downloads        | 626959 |
 | # stars            | 1 |
 
 ## Links

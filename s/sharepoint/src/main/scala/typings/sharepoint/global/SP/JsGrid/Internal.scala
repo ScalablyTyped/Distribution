@@ -1,7 +1,5 @@
 package typings.sharepoint.global.SP.JsGrid
 
-import typings.sharepoint.SP.JsGrid.IChangeKey
-import typings.sharepoint.anon.AnyChanges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,25 +20,12 @@ object Internal extends js.Object {
             _
           ]
     ) = this()
-    /* CompleteClass */
-    override var ExternalAPI: AnyChanges = js.native
-    /* CompleteClass */
-    override def Clear(): Unit = js.native
-    /* CompleteClass */
-    override def NotifyRollbackChange(changeKey: IChangeKey): Unit = js.native
-    /* CompleteClass */
-    override def NotifySynchronizeToChange(changeKey: IChangeKey): Unit = js.native
-    /* CompleteClass */
-    override def NotifyVacateChange(changeKey: IChangeKey): Unit = js.native
   }
   
   @js.native
   class PropertyUpdate protected ()
     extends typings.sharepoint.SP.JsGrid.Internal.PropertyUpdate {
     def this(data: js.Any, localized: String) = this()
-    /* CompleteClass */
-    @JSName("localized")
-    override var localized_PropertyUpdate: String = js.native
   }
   
 }

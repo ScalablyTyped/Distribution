@@ -70,6 +70,7 @@ class Client protected () extends EventEmitter {
     * @param callback
     */
   def connect(): Unit = js.native
+  def connect(retryCount: js.UndefOr[scala.Nothing], callback: IRaw): Unit = js.native
   def connect(retryCount: Double): Unit = js.native
   def connect(retryCount: Double, callback: IRaw): Unit = js.native
   def connect(retryCount: IRaw): Unit = js.native

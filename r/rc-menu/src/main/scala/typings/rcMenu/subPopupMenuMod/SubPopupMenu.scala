@@ -17,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-menu/lib/SubPopupMenu", "SubPopupMenu")
+@JSImport("rc-menu/es/SubPopupMenu", "SubPopupMenu")
 @js.native
 class SubPopupMenu protected ()
   extends Component[SubPopupMenuProps, js.Object, js.Any] {
@@ -50,7 +50,7 @@ class SubPopupMenu protected ()
 }
 
 /* static members */
-@JSImport("rc-menu/lib/SubPopupMenu", "SubPopupMenu")
+@JSImport("rc-menu/es/SubPopupMenu", "SubPopupMenu")
 @js.native
 object SubPopupMenu extends js.Object {
   var defaultProps: Focusable = js.native

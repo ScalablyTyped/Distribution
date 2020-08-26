@@ -28,18 +28,38 @@ trait SecurityGroupIngress extends js.Object {
 
 object SecurityGroupIngress {
   @scala.inline
-  def apply(
-    cidr: Input[String] = null,
-    securityGroupId: Input[String] = null,
-    securityGroupName: Input[String] = null,
-    securityGroupOwnerId: Input[String] = null
-  ): SecurityGroupIngress = {
+  def apply(): SecurityGroupIngress = {
     val __obj = js.Dynamic.literal()
-    if (cidr != null) __obj.updateDynamic("cidr")(cidr.asInstanceOf[js.Any])
-    if (securityGroupId != null) __obj.updateDynamic("securityGroupId")(securityGroupId.asInstanceOf[js.Any])
-    if (securityGroupName != null) __obj.updateDynamic("securityGroupName")(securityGroupName.asInstanceOf[js.Any])
-    if (securityGroupOwnerId != null) __obj.updateDynamic("securityGroupOwnerId")(securityGroupOwnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityGroupIngress]
   }
+  @scala.inline
+  implicit class SecurityGroupIngressOps[Self <: SecurityGroupIngress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidr(value: Input[String]): Self = this.set("cidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidr: Self = this.set("cidr", js.undefined)
+    @scala.inline
+    def setSecurityGroupId(value: Input[String]): Self = this.set("securityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupId: Self = this.set("securityGroupId", js.undefined)
+    @scala.inline
+    def setSecurityGroupName(value: Input[String]): Self = this.set("securityGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupName: Self = this.set("securityGroupName", js.undefined)
+    @scala.inline
+    def setSecurityGroupOwnerId(value: Input[String]): Self = this.set("securityGroupOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupOwnerId: Self = this.set("securityGroupOwnerId", js.undefined)
+  }
+  
 }
 

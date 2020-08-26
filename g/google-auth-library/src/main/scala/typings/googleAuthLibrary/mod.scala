@@ -82,7 +82,7 @@ object mod extends js.Object {
       email: js.UndefOr[String],
       keyFile: js.UndefOr[String],
       key: js.UndefOr[String],
-      scopes: js.UndefOr[js.Array[String] | String],
+      scopes: js.UndefOr[String | js.Array[String]],
       subject: js.UndefOr[String],
       keyId: js.UndefOr[String]
     ) = this()
@@ -102,10 +102,16 @@ object mod extends js.Object {
   class JWTAccess ()
     extends typings.googleAuthLibrary.jwtaccessMod.JWTAccess {
     def this(email: String) = this()
+    def this(email: js.UndefOr[scala.Nothing], key: String) = this()
     def this(email: String, key: String) = this()
     def this(email: Null, key: String) = this()
+    def this(email: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], keyId: String) = this()
+    def this(email: js.UndefOr[scala.Nothing], key: String, keyId: String) = this()
+    def this(email: js.UndefOr[scala.Nothing], key: Null, keyId: String) = this()
+    def this(email: String, key: js.UndefOr[scala.Nothing], keyId: String) = this()
     def this(email: String, key: String, keyId: String) = this()
     def this(email: String, key: Null, keyId: String) = this()
+    def this(email: Null, key: js.UndefOr[scala.Nothing], keyId: String) = this()
     def this(email: Null, key: String, keyId: String) = this()
     def this(email: Null, key: Null, keyId: String) = this()
   }
@@ -121,6 +127,7 @@ object mod extends js.Object {
   class LoginTicket ()
     extends typings.googleAuthLibrary.loginticketMod.LoginTicket {
     def this(env: String) = this()
+    def this(env: js.UndefOr[scala.Nothing], pay: TokenPayload) = this()
     def this(env: String, pay: TokenPayload) = this()
   }
   
@@ -139,7 +146,11 @@ object mod extends js.Object {
     extends typings.googleAuthLibrary.oauth2clientMod.OAuth2Client {
     def this(clientId: String) = this()
     def this(options: OAuth2ClientOptions) = this()
+    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
     def this(clientId: String, clientSecret: String) = this()
+    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
+    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, redirectUri: String) = this()
+    def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
     def this(clientId: String, clientSecret: String, redirectUri: String) = this()
   }
   
@@ -155,7 +166,11 @@ object mod extends js.Object {
     extends typings.googleAuthLibrary.refreshclientMod.UserRefreshClient {
     def this(clientId: String) = this()
     def this(options: UserRefreshClientOptions) = this()
+    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
     def this(clientId: String, clientSecret: String) = this()
+    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
+    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, refreshToken: String) = this()
+    def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
     def this(clientId: String, clientSecret: String, refreshToken: String) = this()
   }
   

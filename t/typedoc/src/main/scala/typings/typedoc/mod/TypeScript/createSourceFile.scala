@@ -13,6 +13,13 @@ object createSourceFile extends js.Object {
     fileName: String,
     sourceText: String,
     languageVersion: typings.typescript.mod.ScriptTarget,
+    setParentNodes: js.UndefOr[scala.Nothing],
+    scriptKind: typings.typescript.mod.ScriptKind
+  ): SourceFile = js.native
+  def apply(
+    fileName: String,
+    sourceText: String,
+    languageVersion: typings.typescript.mod.ScriptTarget,
     setParentNodes: Boolean
   ): SourceFile = js.native
   def apply(

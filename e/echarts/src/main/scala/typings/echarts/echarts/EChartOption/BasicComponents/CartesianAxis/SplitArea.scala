@@ -8,24 +8,43 @@ import scala.scalajs.js.annotation._
 /**
   * @todo describe
   */
+@js.native
 trait SplitArea extends js.Object {
-  var areaStyle: js.UndefOr[Color] = js.undefined
-  var interval: js.UndefOr[Double | js.Function] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
+  var areaStyle: js.UndefOr[Color] = js.native
+  var interval: js.UndefOr[Double | js.Function] = js.native
+  var show: js.UndefOr[Boolean] = js.native
 }
 
 object SplitArea {
   @scala.inline
-  def apply(
-    areaStyle: Color = null,
-    interval: Double | js.Function = null,
-    show: js.UndefOr[Boolean] = js.undefined
-  ): SplitArea = {
+  def apply(): SplitArea = {
     val __obj = js.Dynamic.literal()
-    if (areaStyle != null) __obj.updateDynamic("areaStyle")(areaStyle.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitArea]
   }
+  @scala.inline
+  implicit class SplitAreaOps[Self <: SplitArea] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAreaStyle(value: Color): Self = this.set("areaStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAreaStyle: Self = this.set("areaStyle", js.undefined)
+    @scala.inline
+    def setInterval(value: Double | js.Function): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+  }
+  
 }
 

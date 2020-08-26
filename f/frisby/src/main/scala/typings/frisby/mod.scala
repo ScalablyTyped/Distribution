@@ -57,6 +57,7 @@ object mod extends js.Object {
     def expect(expectName: String, args: js.Any*): FrisbySpec = js.native
     def expectNot(expectName: String, args: js.Any*): FrisbySpec = js.native
     def fetch(url: String): FrisbySpec = js.native
+    def fetch(url: String, params: js.UndefOr[scala.Nothing], options: js.Object): FrisbySpec = js.native
     def fetch(url: String, params: js.Object): FrisbySpec = js.native
     def fetch(url: String, params: js.Object, options: js.Object): FrisbySpec = js.native
     def fromJSON(json: js.Object): FrisbySpec = js.native
@@ -207,6 +208,7 @@ object mod extends js.Object {
     class Blob ()
       extends typings.nodeFetch.mod.Blob {
       def this(blobParts: js.Array[BlobPart]) = this()
+      def this(blobParts: js.UndefOr[scala.Nothing], options: BlobOptions) = this()
       def this(blobParts: js.Array[BlobPart], options: BlobOptions) = this()
     }
     
@@ -214,6 +216,7 @@ object mod extends js.Object {
     class Body ()
       extends typings.nodeFetch.mod.Body {
       def this(body: js.Any) = this()
+      def this(body: js.UndefOr[scala.Nothing], opts: Size) = this()
       def this(body: js.Any, opts: Size) = this()
     }
     
@@ -241,7 +244,7 @@ object mod extends js.Object {
     class Response ()
       extends typings.nodeFetch.mod.Response {
       def this(body: BodyInit) = this()
-      def this(body: BodyInit, init: ResponseInit) = this()
+      def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
     }
     
     /* static members */

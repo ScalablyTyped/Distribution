@@ -38,16 +38,34 @@ trait SchemaInstanceGroupManagerAutoHealingPolicy extends js.Object {
 
 object SchemaInstanceGroupManagerAutoHealingPolicy {
   @scala.inline
-  def apply(
-    healthCheck: String = null,
-    initialDelaySec: js.UndefOr[Double] = js.undefined,
-    maxUnavailable: SchemaFixedOrPercent = null
-  ): SchemaInstanceGroupManagerAutoHealingPolicy = {
+  def apply(): SchemaInstanceGroupManagerAutoHealingPolicy = {
     val __obj = js.Dynamic.literal()
-    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialDelaySec)) __obj.updateDynamic("initialDelaySec")(initialDelaySec.get.asInstanceOf[js.Any])
-    if (maxUnavailable != null) __obj.updateDynamic("maxUnavailable")(maxUnavailable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerAutoHealingPolicy]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupManagerAutoHealingPolicyOps[Self <: SchemaInstanceGroupManagerAutoHealingPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHealthCheck(value: String): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
+    @scala.inline
+    def setInitialDelaySec(value: Double): Self = this.set("initialDelaySec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialDelaySec: Self = this.set("initialDelaySec", js.undefined)
+    @scala.inline
+    def setMaxUnavailable(value: SchemaFixedOrPercent): Self = this.set("maxUnavailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxUnavailable: Self = this.set("maxUnavailable", js.undefined)
+  }
+  
 }
 

@@ -44,11 +44,11 @@ trait ObjectConstructor
     * @param source3 The third source object from which to copy properties.
     */
   def assign[T, U, V, W](target: T, source1: U, source2: V, source3: W): T with U with V with W = js.native
-  def create(): js.Any = js.native
   /**
     * Creates an object that has the specified prototype or that has null prototype.
     * @param o Object to use as a prototype. May be null.
     */
+  def create(): js.Any = js.native
   def create(o: js.Object): js.Any = js.native
   /**
     * Creates an object that has the specified prototype, and that optionally contains specified properties.
@@ -162,12 +162,12 @@ trait ObjectConstructor
     * @param o Object on which to lock the attributes.
     */
   def seal[T](o: T): T = js.native
-  def setPrototypeOf(o: js.Any): js.Any = js.native
   /**
     * Sets the prototype of a specified object o to  object proto or null. Returns the object o.
     * @param o The object to change its prototype.
     * @param proto The value of the new prototype or null.
     */
+  def setPrototypeOf(o: js.Any): js.Any = js.native
   def setPrototypeOf(o: js.Any, proto: js.Object): js.Any = js.native
 }
 

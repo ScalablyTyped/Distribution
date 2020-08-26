@@ -1,12 +1,12 @@
 package typings.zdog.mod
 
-import typings.std.Element
 import typings.std.HTMLCanvasElement
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IllustrationOptions
   extends AnchorOptions
      with DraggerOptions {
@@ -15,70 +15,79 @@ trait IllustrationOptions
     * @default true
     * @see {@link https://zzz.dog/api#illustration-centered Zdog API}
     */
-  val centered: js.UndefOr[Boolean] = js.undefined
+  val centered: js.UndefOr[Boolean] = js.native
   /**
     * Enables dragging to rotate on an item.
     * @default false
     * @see {@link https://zzz.dog/api#illustration-dragrotate Zdog API}
     */
-  val dragRotate: js.UndefOr[Boolean | Anchor] = js.undefined
+  val dragRotate: js.UndefOr[Boolean | Anchor] = js.native
   /**
     * The HTML element to render on, either a <canvas> or an  <svg>.
     * @see {@link https://zzz.dog/api#illustration-element Zdog API}
     */
-  val element: String | HTMLCanvasElement | SVGSVGElement
-  val onPrerender: js.UndefOr[PrerenderListener] = js.undefined
-  val onResize: js.UndefOr[ResizeListener] = js.undefined
+  val element: String | HTMLCanvasElement | SVGSVGElement = js.native
+  val onPrerender: js.UndefOr[PrerenderListener] = js.native
+  val onResize: js.UndefOr[ResizeListener] = js.native
   /**
     * Enables fluid resizing of element.
     * @default false
     * @see {@link https://zzz.dog/api#illustration-resize Zdog API}
     */
-  val resize: js.UndefOr[Boolean] = js.undefined
+  val resize: js.UndefOr[Boolean] = js.native
   /**
     * Enlarges or shrinks the displayed size of the rendering.
     * Whereas {@link Anchor#scale scale} will change the size of item geometry, `zoom` changes item geometry and {@link Shape#stroke stroke} size.
     * @default 1
     * @see {@link https://zzz.dog/api#illustration-zoom Zdog API}
     */
-  val zoom: js.UndefOr[Double] = js.undefined
+  val zoom: js.UndefOr[Double] = js.native
 }
 
 object IllustrationOptions {
   @scala.inline
-  def apply(
-    element: String | HTMLCanvasElement | SVGSVGElement,
-    addTo: Anchor = null,
-    centered: js.UndefOr[Boolean] = js.undefined,
-    dragRotate: Boolean | Anchor = null,
-    onDragEnd: DragEndListener = null,
-    onDragMove: DragMoveListener = null,
-    onDragStart: DragStartListener = null,
-    onPrerender: PrerenderListener = null,
-    onResize: ResizeListener = null,
-    resize: js.UndefOr[Boolean] = js.undefined,
-    rotate: VectorOptions = null,
-    scale: VectorOptions | Double = null,
-    startElement: String | Element = null,
-    translate: VectorOptions = null,
-    zoom: js.UndefOr[Double] = js.undefined
-  ): IllustrationOptions = {
+  def apply(element: String | HTMLCanvasElement | SVGSVGElement): IllustrationOptions = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-    if (addTo != null) __obj.updateDynamic("addTo")(addTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
-    if (dragRotate != null) __obj.updateDynamic("dragRotate")(dragRotate.asInstanceOf[js.Any])
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
-    if (onDragMove != null) __obj.updateDynamic("onDragMove")(onDragMove.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
-    if (onPrerender != null) __obj.updateDynamic("onPrerender")(onPrerender.asInstanceOf[js.Any])
-    if (onResize != null) __obj.updateDynamic("onResize")(onResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (startElement != null) __obj.updateDynamic("startElement")(startElement.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IllustrationOptions]
   }
+  @scala.inline
+  implicit class IllustrationOptionsOps[Self <: IllustrationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElement(value: String | HTMLCanvasElement | SVGSVGElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCentered(value: Boolean): Self = this.set("centered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCentered: Self = this.set("centered", js.undefined)
+    @scala.inline
+    def setDragRotate(value: Boolean | Anchor): Self = this.set("dragRotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragRotate: Self = this.set("dragRotate", js.undefined)
+    @scala.inline
+    def setOnPrerender(value: PrerenderListener): Self = this.set("onPrerender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPrerender: Self = this.set("onPrerender", js.undefined)
+    @scala.inline
+    def setOnResize(value: ResizeListener): Self = this.set("onResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnResize: Self = this.set("onResize", js.undefined)
+    @scala.inline
+    def setResize(value: Boolean): Self = this.set("resize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResize: Self = this.set("resize", js.undefined)
+    @scala.inline
+    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+  }
+  
 }
 

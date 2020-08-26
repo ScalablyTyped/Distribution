@@ -10,9 +10,9 @@ Simple in-memory cache implementation
 | ------------------ | :-------------: |
 | Full name          | fast-memory-cache |
 | Keywords           | memory, cache |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 12798 |
+| # downloads        | 12581 |
 | # stars            | 1 |
 
 ## Links

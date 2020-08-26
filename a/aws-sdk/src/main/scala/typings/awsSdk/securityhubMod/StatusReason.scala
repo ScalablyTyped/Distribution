@@ -18,10 +18,28 @@ trait StatusReason extends js.Object {
 
 object StatusReason {
   @scala.inline
-  def apply(ReasonCode: NonEmptyString, Description: NonEmptyString = null): StatusReason = {
+  def apply(ReasonCode: NonEmptyString): StatusReason = {
     val __obj = js.Dynamic.literal(ReasonCode = ReasonCode.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusReason]
   }
+  @scala.inline
+  implicit class StatusReasonOps[Self <: StatusReason] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReasonCode(value: NonEmptyString): Self = this.set("ReasonCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: NonEmptyString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

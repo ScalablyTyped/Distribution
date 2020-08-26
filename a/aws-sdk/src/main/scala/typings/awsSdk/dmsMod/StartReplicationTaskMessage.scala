@@ -30,18 +30,38 @@ trait StartReplicationTaskMessage extends js.Object {
 
 object StartReplicationTaskMessage {
   @scala.inline
-  def apply(
-    ReplicationTaskArn: String,
-    StartReplicationTaskType: StartReplicationTaskTypeValue,
-    CdcStartPosition: String = null,
-    CdcStartTime: TStamp = null,
-    CdcStopPosition: String = null
-  ): StartReplicationTaskMessage = {
+  def apply(ReplicationTaskArn: String, StartReplicationTaskType: StartReplicationTaskTypeValue): StartReplicationTaskMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskArn = ReplicationTaskArn.asInstanceOf[js.Any], StartReplicationTaskType = StartReplicationTaskType.asInstanceOf[js.Any])
-    if (CdcStartPosition != null) __obj.updateDynamic("CdcStartPosition")(CdcStartPosition.asInstanceOf[js.Any])
-    if (CdcStartTime != null) __obj.updateDynamic("CdcStartTime")(CdcStartTime.asInstanceOf[js.Any])
-    if (CdcStopPosition != null) __obj.updateDynamic("CdcStopPosition")(CdcStopPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartReplicationTaskMessage]
   }
+  @scala.inline
+  implicit class StartReplicationTaskMessageOps[Self <: StartReplicationTaskMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReplicationTaskArn(value: String): Self = this.set("ReplicationTaskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartReplicationTaskType(value: StartReplicationTaskTypeValue): Self = this.set("StartReplicationTaskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCdcStartPosition(value: String): Self = this.set("CdcStartPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdcStartPosition: Self = this.set("CdcStartPosition", js.undefined)
+    @scala.inline
+    def setCdcStartTime(value: TStamp): Self = this.set("CdcStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdcStartTime: Self = this.set("CdcStartTime", js.undefined)
+    @scala.inline
+    def setCdcStopPosition(value: String): Self = this.set("CdcStopPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdcStopPosition: Self = this.set("CdcStopPosition", js.undefined)
+  }
+  
 }
 

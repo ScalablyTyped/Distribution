@@ -12,7 +12,7 @@ PouchDB as an HTTP-only package.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 5257 |
+| # downloads        | 5088 |
 | # stars            | 1 |
 
 ## Links

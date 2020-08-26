@@ -26,15 +26,32 @@ trait CreatePartitionRequest extends js.Object {
 
 object CreatePartitionRequest {
   @scala.inline
-  def apply(
-    DatabaseName: NameString,
-    PartitionInput: PartitionInput,
-    TableName: NameString,
-    CatalogId: CatalogIdString = null
-  ): CreatePartitionRequest = {
+  def apply(DatabaseName: NameString, PartitionInput: PartitionInput, TableName: NameString): CreatePartitionRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], PartitionInput = PartitionInput.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePartitionRequest]
   }
+  @scala.inline
+  implicit class CreatePartitionRequestOps[Self <: CreatePartitionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPartitionInput(value: PartitionInput): Self = this.set("PartitionInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: NameString): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+  }
+  
 }
 

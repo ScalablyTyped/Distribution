@@ -22,6 +22,7 @@ class EllipsoidTangentPlane protected () extends js.Object {
 @JSImport("cesium", "EllipsoidTangentPlane")
 @js.native
 object EllipsoidTangentPlane extends js.Object {
-  def fromPoints(ellipsoid: Ellipsoid, cartesians: Cartesian3): EllipsoidTangentPlane = js.native
+  def fromPoints(cartesians: js.Array[Cartesian3]): EllipsoidTangentPlane = js.native
+  def fromPoints(cartesians: js.Array[Cartesian3], ellipsoid: Ellipsoid): EllipsoidTangentPlane = js.native
 }
 

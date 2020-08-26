@@ -12,7 +12,7 @@ Scroller for DataTables
 | Keywords           | virtual scrolling, DataTables, jQuery, table, DataTables |
 | # releases         | 6 |
 | # dependents       | 7 |
-| # downloads        | 400081 |
+| # downloads        | 442728 |
 | # stars            | 0 |
 
 ## Links

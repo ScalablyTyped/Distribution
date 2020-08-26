@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "CheckBoxGroup")
+@JSImport("grommet/es6", "CheckBoxGroup")
 @js.native
 class CheckBoxGroup protected ()
   extends Component[
@@ -28,7 +28,7 @@ class CheckBoxGroup protected ()
   ) = this()
 }
 
-@JSImport("grommet", "CheckBoxGroup")
+@JSImport("grommet/es6", "CheckBoxGroup")
 @js.native
 object CheckBoxGroup extends TopLevel[
       ComponentClass[

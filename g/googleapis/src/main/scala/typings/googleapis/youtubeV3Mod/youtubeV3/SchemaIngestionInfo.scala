@@ -31,12 +31,34 @@ trait SchemaIngestionInfo extends js.Object {
 
 object SchemaIngestionInfo {
   @scala.inline
-  def apply(backupIngestionAddress: String = null, ingestionAddress: String = null, streamName: String = null): SchemaIngestionInfo = {
+  def apply(): SchemaIngestionInfo = {
     val __obj = js.Dynamic.literal()
-    if (backupIngestionAddress != null) __obj.updateDynamic("backupIngestionAddress")(backupIngestionAddress.asInstanceOf[js.Any])
-    if (ingestionAddress != null) __obj.updateDynamic("ingestionAddress")(ingestionAddress.asInstanceOf[js.Any])
-    if (streamName != null) __obj.updateDynamic("streamName")(streamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIngestionInfo]
   }
+  @scala.inline
+  implicit class SchemaIngestionInfoOps[Self <: SchemaIngestionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupIngestionAddress(value: String): Self = this.set("backupIngestionAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupIngestionAddress: Self = this.set("backupIngestionAddress", js.undefined)
+    @scala.inline
+    def setIngestionAddress(value: String): Self = this.set("ingestionAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestionAddress: Self = this.set("ingestionAddress", js.undefined)
+    @scala.inline
+    def setStreamName(value: String): Self = this.set("streamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamName: Self = this.set("streamName", js.undefined)
+  }
+  
 }
 

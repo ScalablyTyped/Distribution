@@ -1,7 +1,7 @@
 package typings.pulumiAws.domainNameMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.inputMod.apigateway.DomainNameEndpointConfiguration
+import typings.pulumiAws.inputMod.apigatewayv2.DomainNameDomainNameConfiguration
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,126 +10,65 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DomainNameState extends js.Object {
   /**
-    * Amazon Resource Name (ARN)
+    * The [API mapping selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-mapping-selection-expressions) for the domain name.
+    */
+  val apiMappingSelectionExpression: js.UndefOr[Input[String]] = js.native
+  /**
+    * The ARN of the domain name.
     */
   val arn: js.UndefOr[Input[String]] = js.native
   /**
-    * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificateName`, `certificateBody`, `certificateChain`, `certificatePrivateKey`, `regionalCertificateArn`, and `regionalCertificateName`.
-    */
-  val certificateArn: js.UndefOr[Input[String]] = js.native
-  /**
-    * The certificate issued for the domain name
-    * being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`, `regionalCertificateArn`, and
-    * `regionalCertificateName`.
-    */
-  val certificateBody: js.UndefOr[Input[String]] = js.native
-  /**
-    * The certificate for the CA that issued the
-    * certificate, along with any intermediate CA certificates required to
-    * create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`,
-    * `regionalCertificateArn`, and `regionalCertificateName`.
-    */
-  val certificateChain: js.UndefOr[Input[String]] = js.native
-  /**
-    * The unique name to use when registering this
-    * certificate as an IAM server certificate. Conflicts with `certificateArn`, `regionalCertificateArn`, and
-    * `regionalCertificateName`. Required if `certificateArn` is not set.
-    */
-  val certificateName: js.UndefOr[Input[String]] = js.native
-  /**
-    * The private key associated with the
-    * domain certificate given in `certificateBody`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificateArn`, `regionalCertificateArn`, and `regionalCertificateName`.
-    */
-  val certificatePrivateKey: js.UndefOr[Input[String]] = js.native
-  /**
-    * The upload date associated with the domain certificate.
-    */
-  val certificateUploadDate: js.UndefOr[Input[String]] = js.native
-  /**
-    * The hostname created by Cloudfront to represent
-    * the distribution that implements this domain name mapping.
-    */
-  val cloudfrontDomainName: js.UndefOr[Input[String]] = js.native
-  /**
-    * For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
-    * that can be used to create a Route53 alias record for the distribution.
-    */
-  val cloudfrontZoneId: js.UndefOr[Input[String]] = js.native
-  /**
-    * The fully-qualified domain name to register
+    * The domain name.
     */
   val domainName: js.UndefOr[Input[String]] = js.native
   /**
-    * Configuration block defining API endpoint information including type. Defined below.
+    * The domain name configuration.
     */
-  val endpointConfiguration: js.UndefOr[Input[DomainNameEndpointConfiguration]] = js.native
+  val domainNameConfiguration: js.UndefOr[Input[DomainNameDomainNameConfiguration]] = js.native
   /**
-    * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and `certificatePrivateKey`.
+    * A map of tags to assign to the domain name.
     */
-  val regionalCertificateArn: js.UndefOr[Input[String]] = js.native
-  /**
-    * The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificateArn`, `certificateName`, `certificateBody`, `certificateChain`, and
-    * `certificatePrivateKey`.
-    */
-  val regionalCertificateName: js.UndefOr[Input[String]] = js.native
-  /**
-    * The hostname for the custom domain's regional endpoint.
-    */
-  val regionalDomainName: js.UndefOr[Input[String]] = js.native
-  /**
-    * The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
-    */
-  val regionalZoneId: js.UndefOr[Input[String]] = js.native
-  /**
-    * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
-    */
-  val securityPolicy: js.UndefOr[Input[String]] = js.native
-  /**
-    * Key-value mapping of resource tags
-    */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object DomainNameState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    certificateArn: Input[String] = null,
-    certificateBody: Input[String] = null,
-    certificateChain: Input[String] = null,
-    certificateName: Input[String] = null,
-    certificatePrivateKey: Input[String] = null,
-    certificateUploadDate: Input[String] = null,
-    cloudfrontDomainName: Input[String] = null,
-    cloudfrontZoneId: Input[String] = null,
-    domainName: Input[String] = null,
-    endpointConfiguration: Input[DomainNameEndpointConfiguration] = null,
-    regionalCertificateArn: Input[String] = null,
-    regionalCertificateName: Input[String] = null,
-    regionalDomainName: Input[String] = null,
-    regionalZoneId: Input[String] = null,
-    securityPolicy: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): DomainNameState = {
+  def apply(): DomainNameState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (certificateBody != null) __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
-    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
-    if (certificateName != null) __obj.updateDynamic("certificateName")(certificateName.asInstanceOf[js.Any])
-    if (certificatePrivateKey != null) __obj.updateDynamic("certificatePrivateKey")(certificatePrivateKey.asInstanceOf[js.Any])
-    if (certificateUploadDate != null) __obj.updateDynamic("certificateUploadDate")(certificateUploadDate.asInstanceOf[js.Any])
-    if (cloudfrontDomainName != null) __obj.updateDynamic("cloudfrontDomainName")(cloudfrontDomainName.asInstanceOf[js.Any])
-    if (cloudfrontZoneId != null) __obj.updateDynamic("cloudfrontZoneId")(cloudfrontZoneId.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration.asInstanceOf[js.Any])
-    if (regionalCertificateArn != null) __obj.updateDynamic("regionalCertificateArn")(regionalCertificateArn.asInstanceOf[js.Any])
-    if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName.asInstanceOf[js.Any])
-    if (regionalDomainName != null) __obj.updateDynamic("regionalDomainName")(regionalDomainName.asInstanceOf[js.Any])
-    if (regionalZoneId != null) __obj.updateDynamic("regionalZoneId")(regionalZoneId.asInstanceOf[js.Any])
-    if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainNameState]
   }
+  @scala.inline
+  implicit class DomainNameStateOps[Self <: DomainNameState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiMappingSelectionExpression(value: Input[String]): Self = this.set("apiMappingSelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiMappingSelectionExpression: Self = this.set("apiMappingSelectionExpression", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDomainName(value: Input[String]): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setDomainNameConfiguration(value: Input[DomainNameDomainNameConfiguration]): Self = this.set("domainNameConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainNameConfiguration: Self = this.set("domainNameConfiguration", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

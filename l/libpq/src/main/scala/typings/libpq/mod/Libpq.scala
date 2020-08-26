@@ -103,6 +103,7 @@ trait Libpq extends EventEmitter {
     *                                                  commandText.
     */
   def execParams(): Unit = js.native
+  def execParams(commandText: js.UndefOr[scala.Nothing], parameters: js.Array[String | Double]): Unit = js.native
   def execParams(commandText: String): Unit = js.native
   def execParams(commandText: String, parameters: js.Array[String | Double]): Unit = js.native
   /**
@@ -114,6 +115,7 @@ trait Libpq extends EventEmitter {
     *                                                  statement.
     */
   def execPrepared(): Unit = js.native
+  def execPrepared(statementName: js.UndefOr[scala.Nothing], parameters: js.Array[String | Double]): Unit = js.native
   def execPrepared(statementName: String): Unit = js.native
   def execPrepared(statementName: String, parameters: js.Array[String | Double]): Unit = js.native
   /**
@@ -290,6 +292,7 @@ trait Libpq extends EventEmitter {
     * @returns true if the command was sent succesfully or false if it failed to send.
     */
   def sendQueryParams(): Boolean = js.native
+  def sendQueryParams(commandText: js.UndefOr[scala.Nothing], parameters: js.Array[String | Double]): Boolean = js.native
   def sendQueryParams(commandText: String): Boolean = js.native
   def sendQueryParams(commandText: String, parameters: js.Array[String | Double]): Boolean = js.native
   /**
@@ -300,6 +303,7 @@ trait Libpq extends EventEmitter {
     * @returns true if the command was sent succesfully or false if it failed to send.
     */
   def sendQueryPrepared(): Boolean = js.native
+  def sendQueryPrepared(statementName: js.UndefOr[scala.Nothing], parameters: js.Array[String]): Boolean = js.native
   def sendQueryPrepared(statementName: String): Boolean = js.native
   def sendQueryPrepared(statementName: String, parameters: js.Array[String]): Boolean = js.native
   /**

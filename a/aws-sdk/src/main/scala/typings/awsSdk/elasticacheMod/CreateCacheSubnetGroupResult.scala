@@ -11,10 +11,26 @@ trait CreateCacheSubnetGroupResult extends js.Object {
 
 object CreateCacheSubnetGroupResult {
   @scala.inline
-  def apply(CacheSubnetGroup: CacheSubnetGroup = null): CreateCacheSubnetGroupResult = {
+  def apply(): CreateCacheSubnetGroupResult = {
     val __obj = js.Dynamic.literal()
-    if (CacheSubnetGroup != null) __obj.updateDynamic("CacheSubnetGroup")(CacheSubnetGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCacheSubnetGroupResult]
   }
+  @scala.inline
+  implicit class CreateCacheSubnetGroupResultOps[Self <: CreateCacheSubnetGroupResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheSubnetGroup(value: CacheSubnetGroup): Self = this.set("CacheSubnetGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSubnetGroup: Self = this.set("CacheSubnetGroup", js.undefined)
+  }
+  
 }
 

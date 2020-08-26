@@ -26,17 +26,36 @@ trait CreateThingRequest extends js.Object {
 
 object CreateThingRequest {
   @scala.inline
-  def apply(
-    thingName: ThingName,
-    attributePayload: AttributePayload = null,
-    billingGroupName: BillingGroupName = null,
-    thingTypeName: ThingTypeName = null
-  ): CreateThingRequest = {
+  def apply(thingName: ThingName): CreateThingRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
-    if (attributePayload != null) __obj.updateDynamic("attributePayload")(attributePayload.asInstanceOf[js.Any])
-    if (billingGroupName != null) __obj.updateDynamic("billingGroupName")(billingGroupName.asInstanceOf[js.Any])
-    if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateThingRequest]
   }
+  @scala.inline
+  implicit class CreateThingRequestOps[Self <: CreateThingRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributePayload(value: AttributePayload): Self = this.set("attributePayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributePayload: Self = this.set("attributePayload", js.undefined)
+    @scala.inline
+    def setBillingGroupName(value: BillingGroupName): Self = this.set("billingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingGroupName: Self = this.set("billingGroupName", js.undefined)
+    @scala.inline
+    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
+  }
+  
 }
 

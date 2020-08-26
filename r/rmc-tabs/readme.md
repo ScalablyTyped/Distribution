@@ -10,9 +10,9 @@ React Mobile Tabs Component(web & react-native)
 | ------------------ | :-------------: |
 | Full name          | rmc-tabs |
 | Keywords           | react, react-component, react-m-tabs, m-tabs |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 39 |
-| # downloads        | 635273 |
+| # downloads        | 654214 |
 | # stars            | 0 |
 
 ## Links

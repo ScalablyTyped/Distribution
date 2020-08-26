@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IExampleOptions extends js.Object {
-  var autoHeight: Boolean
-  var childrenGap: Double
-  var disableShrink: Boolean
-  var emptyChildren: js.Array[String]
-  var hideEmptyChildren: Boolean
-  var horizontalAlignment: js.UndefOr[Alignment] = js.undefined
-  var numItems: Double
-  var paddingBottom: Double
-  var paddingLeft: Double
-  var paddingRight: Double
-  var paddingTop: Double
-  var preventOverflow: Boolean
-  var showBoxShadow: Boolean
-  var stackHeight: Double
-  var verticalAlignment: js.UndefOr[Alignment] = js.undefined
-  var wrap: Boolean
+  var autoHeight: Boolean = js.native
+  var childrenGap: Double = js.native
+  var disableShrink: Boolean = js.native
+  var emptyChildren: js.Array[String] = js.native
+  var hideEmptyChildren: Boolean = js.native
+  var horizontalAlignment: js.UndefOr[Alignment] = js.native
+  var numItems: Double = js.native
+  var paddingBottom: Double = js.native
+  var paddingLeft: Double = js.native
+  var paddingRight: Double = js.native
+  var paddingTop: Double = js.native
+  var preventOverflow: Boolean = js.native
+  var showBoxShadow: Boolean = js.native
+  var stackHeight: Double = js.native
+  var verticalAlignment: js.UndefOr[Alignment] = js.native
+  var wrap: Boolean = js.native
 }
 
 object IExampleOptions {
@@ -40,14 +41,61 @@ object IExampleOptions {
     preventOverflow: Boolean,
     showBoxShadow: Boolean,
     stackHeight: Double,
-    wrap: Boolean,
-    horizontalAlignment: Alignment = null,
-    verticalAlignment: Alignment = null
+    wrap: Boolean
   ): IExampleOptions = {
     val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], childrenGap = childrenGap.asInstanceOf[js.Any], disableShrink = disableShrink.asInstanceOf[js.Any], emptyChildren = emptyChildren.asInstanceOf[js.Any], hideEmptyChildren = hideEmptyChildren.asInstanceOf[js.Any], numItems = numItems.asInstanceOf[js.Any], paddingBottom = paddingBottom.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any], paddingTop = paddingTop.asInstanceOf[js.Any], preventOverflow = preventOverflow.asInstanceOf[js.Any], showBoxShadow = showBoxShadow.asInstanceOf[js.Any], stackHeight = stackHeight.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExampleOptions]
   }
+  @scala.inline
+  implicit class IExampleOptionsOps[Self <: IExampleOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoHeight(value: Boolean): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChildrenGap(value: Double): Self = this.set("childrenGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisableShrink(value: Boolean): Self = this.set("disableShrink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmptyChildrenVarargs(value: String*): Self = this.set("emptyChildren", js.Array(value :_*))
+    @scala.inline
+    def setEmptyChildren(value: js.Array[String]): Self = this.set("emptyChildren", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHideEmptyChildren(value: Boolean): Self = this.set("hideEmptyChildren", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumItems(value: Double): Self = this.set("numItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaddingBottom(value: Double): Self = this.set("paddingBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaddingLeft(value: Double): Self = this.set("paddingLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaddingRight(value: Double): Self = this.set("paddingRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaddingTop(value: Double): Self = this.set("paddingTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreventOverflow(value: Boolean): Self = this.set("preventOverflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowBoxShadow(value: Boolean): Self = this.set("showBoxShadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackHeight(value: Double): Self = this.set("stackHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWrap(value: Boolean): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHorizontalAlignment(value: Alignment): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    @scala.inline
+    def setVerticalAlignment(value: Alignment): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+  }
+  
 }
 

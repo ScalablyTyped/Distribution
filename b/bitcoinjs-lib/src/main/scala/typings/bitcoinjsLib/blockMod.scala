@@ -23,6 +23,7 @@ object blockMod extends js.Object {
     var version: Double = js.native
     var witnessCommit: js.UndefOr[Buffer] = js.native
     def byteLength(): Double = js.native
+    def byteLength(headersOnly: js.UndefOr[scala.Nothing], allowWitness: Boolean): Double = js.native
     def byteLength(headersOnly: Boolean): Double = js.native
     def byteLength(headersOnly: Boolean, allowWitness: Boolean): Double = js.native
     def checkProofOfWork(): Boolean = js.native

@@ -13,12 +13,34 @@ trait StorageFree extends js.Object {
 
 object StorageFree {
   @scala.inline
-  def apply(storageFree: String = null, storageTotal: String = null, volumeId: String = null): StorageFree = {
+  def apply(): StorageFree = {
     val __obj = js.Dynamic.literal()
-    if (storageFree != null) __obj.updateDynamic("storageFree")(storageFree.asInstanceOf[js.Any])
-    if (storageTotal != null) __obj.updateDynamic("storageTotal")(storageTotal.asInstanceOf[js.Any])
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageFree]
   }
+  @scala.inline
+  implicit class StorageFreeOps[Self <: StorageFree] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStorageFree(value: String): Self = this.set("storageFree", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageFree: Self = this.set("storageFree", js.undefined)
+    @scala.inline
+    def setStorageTotal(value: String): Self = this.set("storageTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageTotal: Self = this.set("storageTotal", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ ES6 generator-based MongoDB ODM.
 | Keywords           | mongo, mongodb, odm |
 | # releases         | 1 |
 | # dependents       | 12 |
-| # downloads        | 62645 |
+| # downloads        | 62092 |
 | # stars            | 8 |
 
 ## Links

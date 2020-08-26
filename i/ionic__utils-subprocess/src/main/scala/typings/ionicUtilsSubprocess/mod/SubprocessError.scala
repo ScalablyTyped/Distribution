@@ -12,10 +12,6 @@ class SubprocessError protected () extends Error {
   var code: js.UndefOr[/* "ERR_SUBPROCESS_COMMAND_NOT_FOUND" */ String] = js.native
   var error: js.UndefOr[Error] = js.native
   var exitCode: js.UndefOr[Double] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var output: js.UndefOr[String] = js.native
   var signal: js.UndefOr[String] = js.native
   @JSName("stack")

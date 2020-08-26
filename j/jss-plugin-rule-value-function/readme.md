@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-rule-value-function
 
-Typings are for version 10.1.1
+Typings are for version 10.3.0
 
 ## Library description:
 JSS plugin for function value and rule syntax

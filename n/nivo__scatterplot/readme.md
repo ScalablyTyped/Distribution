@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__scatterplot
 
-Typings are for version 0.61.1
+Typings are for version 0.62.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/scatterplot.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/scatterplot)
@@ -10,9 +10,9 @@ Typings are for version 0.61.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/scatterplot |
 | Keywords           | nivo, dataviz, react, d3, charts, scatterplot |
-| # releases         | 32 |
+| # releases         | 34 |
 | # dependents       | 3 |
-| # downloads        | 70483 |
+| # downloads        | 75004 |
 | # stars            | 0 |
 
 ## Links

@@ -34,8 +34,7 @@ class Target protected () extends CustomResource {
     */
   val resourceId: Output_[String] = js.native
   /**
-    * The ARN of the IAM role that allows Application
-    * AutoScaling to modify your scalable target on your behalf.
+    * The ARN of the IAM role that allows Application AutoScaling to modify your scalable target on your behalf. This defaults to an IAM Service-Linked Role for most services and custom IAM Roles are ignored by the API for those namespaces. See the [AWS Application Auto Scaling documentation](https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-roles) for more information about how this service interacts with IAM.
     */
   val roleArn: Output_[String] = js.native
   /**
@@ -59,8 +58,10 @@ object Target extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Target = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Target = js.native
   def get(name: String, id: Input[ID], state: TargetState): Target = js.native
   def get(name: String, id: Input[ID], state: TargetState, opts: CustomResourceOptions): Target = js.native
   /**

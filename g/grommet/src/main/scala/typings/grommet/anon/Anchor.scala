@@ -13,37 +13,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anchor extends js.Object {
-  var anchor: js.UndefOr[DiagramConnectionAnchor] = js.undefined
-  var color: js.UndefOr[ColorType] = js.undefined
-  var fromTarget: String | js.Object
-  var label: js.UndefOr[String] = js.undefined
-  var offset: js.UndefOr[xsmall | small | medium | large | String] = js.undefined
-  var thickness: js.UndefOr[hair | xxsmall | xsmall | small | medium | large | String] = js.undefined
-  var toTarget: String | js.Object
-  var `type`: js.UndefOr[DiagramConnectionType] = js.undefined
+  var anchor: js.UndefOr[DiagramConnectionAnchor] = js.native
+  var color: js.UndefOr[ColorType] = js.native
+  var fromTarget: String | js.Object = js.native
+  var label: js.UndefOr[String] = js.native
+  var offset: js.UndefOr[xsmall | small | medium | large | String] = js.native
+  var thickness: js.UndefOr[hair | xxsmall | xsmall | small | medium | large | String] = js.native
+  var toTarget: String | js.Object = js.native
+  var `type`: js.UndefOr[DiagramConnectionType] = js.native
 }
 
 object Anchor {
   @scala.inline
-  def apply(
-    fromTarget: String | js.Object,
-    toTarget: String | js.Object,
-    anchor: DiagramConnectionAnchor = null,
-    color: ColorType = null,
-    label: String = null,
-    offset: xsmall | small | medium | large | String = null,
-    thickness: hair | xxsmall | xsmall | small | medium | large | String = null,
-    `type`: DiagramConnectionType = null
-  ): Anchor = {
+  def apply(fromTarget: String | js.Object, toTarget: String | js.Object): Anchor = {
     val __obj = js.Dynamic.literal(fromTarget = fromTarget.asInstanceOf[js.Any], toTarget = toTarget.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anchor]
   }
+  @scala.inline
+  implicit class AnchorOps[Self <: Anchor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFromTarget(value: String | js.Object): Self = this.set("fromTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToTarget(value: String | js.Object): Self = this.set("toTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnchor(value: DiagramConnectionAnchor): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    @scala.inline
+    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setOffset(value: xsmall | small | medium | large | String): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setThickness(value: hair | xxsmall | xsmall | small | medium | large | String): Self = this.set("thickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThickness: Self = this.set("thickness", js.undefined)
+    @scala.inline
+    def setType(value: DiagramConnectionType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

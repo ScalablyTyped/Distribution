@@ -12,7 +12,7 @@ Display express server routes in your terminal
 | Keywords           | express, routes |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 24988 |
+| # downloads        | 25796 |
 | # stars            | 1 |
 
 ## Links

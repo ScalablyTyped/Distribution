@@ -18,11 +18,30 @@ trait BranchInfo extends js.Object {
 
 object BranchInfo {
   @scala.inline
-  def apply(branchName: BranchName = null, commitId: CommitId = null): BranchInfo = {
+  def apply(): BranchInfo = {
     val __obj = js.Dynamic.literal()
-    if (branchName != null) __obj.updateDynamic("branchName")(branchName.asInstanceOf[js.Any])
-    if (commitId != null) __obj.updateDynamic("commitId")(commitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchInfo]
   }
+  @scala.inline
+  implicit class BranchInfoOps[Self <: BranchInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranchName: Self = this.set("branchName", js.undefined)
+    @scala.inline
+    def setCommitId(value: CommitId): Self = this.set("commitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitId: Self = this.set("commitId", js.undefined)
+  }
+  
 }
 

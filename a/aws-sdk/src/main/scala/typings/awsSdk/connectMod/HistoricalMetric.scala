@@ -26,18 +26,38 @@ trait HistoricalMetric extends js.Object {
 
 object HistoricalMetric {
   @scala.inline
-  def apply(
-    Name: HistoricalMetricName = null,
-    Statistic: Statistic = null,
-    Threshold: Threshold = null,
-    Unit: Unit = null
-  ): HistoricalMetric = {
+  def apply(): HistoricalMetric = {
     val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
-    if (Threshold != null) __obj.updateDynamic("Threshold")(Threshold.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoricalMetric]
   }
+  @scala.inline
+  implicit class HistoricalMetricOps[Self <: HistoricalMetric] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: HistoricalMetricName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStatistic(value: Statistic): Self = this.set("Statistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistic: Self = this.set("Statistic", js.undefined)
+    @scala.inline
+    def setThreshold(value: Threshold): Self = this.set("Threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("Threshold", js.undefined)
+    @scala.inline
+    def setUnit(value: Unit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+  }
+  
 }
 

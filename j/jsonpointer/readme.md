@@ -12,7 +12,7 @@ Simple JSON Addressing.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 78 |
-| # downloads        | 93642091 |
+| # downloads        | 92275616 |
 | # stars            | 3 |
 
 ## Links

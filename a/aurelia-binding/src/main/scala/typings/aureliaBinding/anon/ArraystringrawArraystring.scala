@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Array<string> & {  raw ? :std.Array<string>} */
+/* Inlined std.Array<string> & {  raw :std.Array<string> | undefined} */
 @js.native
 trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
   /** Iterator */
@@ -71,6 +71,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     * length+end.
     */
   def fill(value: String): this.type = js.native
+  def fill(value: String, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: String, start: Double): this.type = js.native
   def fill(value: String, start: Double, end: Double): this.type = js.native
   /**
@@ -345,6 +346,7 @@ trait ArraystringrawArraystring extends /* n */ NumberDictionary[String] {
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[String] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[String] = js.native
   def slice(start: Double): js.Array[String] = js.native
   def slice(start: Double, end: Double): js.Array[String] = js.native
   /**

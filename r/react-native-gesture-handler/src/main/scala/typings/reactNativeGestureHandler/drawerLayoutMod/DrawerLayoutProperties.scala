@@ -9,65 +9,113 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DrawerLayoutProperties extends js.Object {
-  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var drawerBackgroundColor: js.UndefOr[String] = js.undefined
-  var drawerLockMode: js.UndefOr[DrawerLockMode] = js.undefined
-  var drawerPosition: js.UndefOr[DrawerPosition] = js.undefined
-  var drawerType: js.UndefOr[DrawerType] = js.undefined
-  var drawerWidth: js.UndefOr[Double] = js.undefined
-  var edgeWidth: js.UndefOr[Double] = js.undefined
-  var hideStatusBar: js.UndefOr[Boolean] = js.undefined
-  var keyboardDismissMode: js.UndefOr[DrawerKeyboardDismissMode] = js.undefined
-  var minSwipeDistance: js.UndefOr[Double] = js.undefined
-  var onDrawerClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onDrawerOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onDrawerStateChanged: js.UndefOr[js.Function2[/* newState */ DrawerState, /* drawerWillShow */ Boolean, Unit]] = js.undefined
-  var overlayColor: js.UndefOr[String] = js.undefined
-  var statusBarAnimation: js.UndefOr[StatusBarAnimation] = js.undefined
-  var useNativeAnimations: js.UndefOr[Boolean] = js.undefined
-  def renderNavigationView(progressAnimatedValue: Value): ReactNode
+  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var drawerBackgroundColor: js.UndefOr[String] = js.native
+  var drawerLockMode: js.UndefOr[DrawerLockMode] = js.native
+  var drawerPosition: js.UndefOr[DrawerPosition] = js.native
+  var drawerType: js.UndefOr[DrawerType] = js.native
+  var drawerWidth: js.UndefOr[Double] = js.native
+  var edgeWidth: js.UndefOr[Double] = js.native
+  var hideStatusBar: js.UndefOr[Boolean] = js.native
+  var keyboardDismissMode: js.UndefOr[DrawerKeyboardDismissMode] = js.native
+  var minSwipeDistance: js.UndefOr[Double] = js.native
+  var onDrawerClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDrawerOpen: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDrawerStateChanged: js.UndefOr[js.Function2[/* newState */ DrawerState, /* drawerWillShow */ Boolean, Unit]] = js.native
+  var overlayColor: js.UndefOr[String] = js.native
+  var statusBarAnimation: js.UndefOr[StatusBarAnimation] = js.native
+  var useNativeAnimations: js.UndefOr[Boolean] = js.native
+  def renderNavigationView(progressAnimatedValue: Value): ReactNode = js.native
 }
 
 object DrawerLayoutProperties {
   @scala.inline
-  def apply(
-    renderNavigationView: Value => ReactNode,
-    contentContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    drawerBackgroundColor: String = null,
-    drawerLockMode: DrawerLockMode = null,
-    drawerPosition: DrawerPosition = null,
-    drawerType: DrawerType = null,
-    drawerWidth: js.UndefOr[Double] = js.undefined,
-    edgeWidth: js.UndefOr[Double] = js.undefined,
-    hideStatusBar: js.UndefOr[Boolean] = js.undefined,
-    keyboardDismissMode: DrawerKeyboardDismissMode = null,
-    minSwipeDistance: js.UndefOr[Double] = js.undefined,
-    onDrawerClose: () => Unit = null,
-    onDrawerOpen: () => Unit = null,
-    onDrawerStateChanged: (/* newState */ DrawerState, /* drawerWillShow */ Boolean) => Unit = null,
-    overlayColor: String = null,
-    statusBarAnimation: StatusBarAnimation = null,
-    useNativeAnimations: js.UndefOr[Boolean] = js.undefined
-  ): DrawerLayoutProperties = {
+  def apply(renderNavigationView: Value => ReactNode): DrawerLayoutProperties = {
     val __obj = js.Dynamic.literal(renderNavigationView = js.Any.fromFunction1(renderNavigationView))
-    if (!js.isUndefined(contentContainerStyle)) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
-    if (drawerBackgroundColor != null) __obj.updateDynamic("drawerBackgroundColor")(drawerBackgroundColor.asInstanceOf[js.Any])
-    if (drawerLockMode != null) __obj.updateDynamic("drawerLockMode")(drawerLockMode.asInstanceOf[js.Any])
-    if (drawerPosition != null) __obj.updateDynamic("drawerPosition")(drawerPosition.asInstanceOf[js.Any])
-    if (drawerType != null) __obj.updateDynamic("drawerType")(drawerType.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawerWidth)) __obj.updateDynamic("drawerWidth")(drawerWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeWidth)) __obj.updateDynamic("edgeWidth")(edgeWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideStatusBar)) __obj.updateDynamic("hideStatusBar")(hideStatusBar.get.asInstanceOf[js.Any])
-    if (keyboardDismissMode != null) __obj.updateDynamic("keyboardDismissMode")(keyboardDismissMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSwipeDistance)) __obj.updateDynamic("minSwipeDistance")(minSwipeDistance.get.asInstanceOf[js.Any])
-    if (onDrawerClose != null) __obj.updateDynamic("onDrawerClose")(js.Any.fromFunction0(onDrawerClose))
-    if (onDrawerOpen != null) __obj.updateDynamic("onDrawerOpen")(js.Any.fromFunction0(onDrawerOpen))
-    if (onDrawerStateChanged != null) __obj.updateDynamic("onDrawerStateChanged")(js.Any.fromFunction2(onDrawerStateChanged))
-    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor.asInstanceOf[js.Any])
-    if (statusBarAnimation != null) __obj.updateDynamic("statusBarAnimation")(statusBarAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeAnimations)) __obj.updateDynamic("useNativeAnimations")(useNativeAnimations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerLayoutProperties]
   }
+  @scala.inline
+  implicit class DrawerLayoutPropertiesOps[Self <: DrawerLayoutProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRenderNavigationView(value: Value => ReactNode): Self = this.set("renderNavigationView", js.Any.fromFunction1(value))
+    @scala.inline
+    def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("contentContainerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentContainerStyle: Self = this.set("contentContainerStyle", js.undefined)
+    @scala.inline
+    def setContentContainerStyleNull: Self = this.set("contentContainerStyle", null)
+    @scala.inline
+    def setDrawerBackgroundColor(value: String): Self = this.set("drawerBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawerBackgroundColor: Self = this.set("drawerBackgroundColor", js.undefined)
+    @scala.inline
+    def setDrawerLockMode(value: DrawerLockMode): Self = this.set("drawerLockMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawerLockMode: Self = this.set("drawerLockMode", js.undefined)
+    @scala.inline
+    def setDrawerPosition(value: DrawerPosition): Self = this.set("drawerPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawerPosition: Self = this.set("drawerPosition", js.undefined)
+    @scala.inline
+    def setDrawerType(value: DrawerType): Self = this.set("drawerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawerType: Self = this.set("drawerType", js.undefined)
+    @scala.inline
+    def setDrawerWidth(value: Double): Self = this.set("drawerWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawerWidth: Self = this.set("drawerWidth", js.undefined)
+    @scala.inline
+    def setEdgeWidth(value: Double): Self = this.set("edgeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeWidth: Self = this.set("edgeWidth", js.undefined)
+    @scala.inline
+    def setHideStatusBar(value: Boolean): Self = this.set("hideStatusBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideStatusBar: Self = this.set("hideStatusBar", js.undefined)
+    @scala.inline
+    def setKeyboardDismissMode(value: DrawerKeyboardDismissMode): Self = this.set("keyboardDismissMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardDismissMode: Self = this.set("keyboardDismissMode", js.undefined)
+    @scala.inline
+    def setMinSwipeDistance(value: Double): Self = this.set("minSwipeDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSwipeDistance: Self = this.set("minSwipeDistance", js.undefined)
+    @scala.inline
+    def setOnDrawerClose(value: () => Unit): Self = this.set("onDrawerClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDrawerClose: Self = this.set("onDrawerClose", js.undefined)
+    @scala.inline
+    def setOnDrawerOpen(value: () => Unit): Self = this.set("onDrawerOpen", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDrawerOpen: Self = this.set("onDrawerOpen", js.undefined)
+    @scala.inline
+    def setOnDrawerStateChanged(value: (/* newState */ DrawerState, /* drawerWillShow */ Boolean) => Unit): Self = this.set("onDrawerStateChanged", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnDrawerStateChanged: Self = this.set("onDrawerStateChanged", js.undefined)
+    @scala.inline
+    def setOverlayColor(value: String): Self = this.set("overlayColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayColor: Self = this.set("overlayColor", js.undefined)
+    @scala.inline
+    def setStatusBarAnimation(value: StatusBarAnimation): Self = this.set("statusBarAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusBarAnimation: Self = this.set("statusBarAnimation", js.undefined)
+    @scala.inline
+    def setUseNativeAnimations(value: Boolean): Self = this.set("useNativeAnimations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseNativeAnimations: Self = this.set("useNativeAnimations", js.undefined)
+  }
+  
 }
 

@@ -31,22 +31,46 @@ trait TrialSummary extends js.Object {
 
 object TrialSummary {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    DisplayName: ExperimentEntityName = null,
-    LastModifiedTime: Timestamp = null,
-    TrialArn: TrialArn = null,
-    TrialName: ExperimentEntityName = null,
-    TrialSource: TrialSource = null
-  ): TrialSummary = {
+  def apply(): TrialSummary = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (TrialArn != null) __obj.updateDynamic("TrialArn")(TrialArn.asInstanceOf[js.Any])
-    if (TrialName != null) __obj.updateDynamic("TrialName")(TrialName.asInstanceOf[js.Any])
-    if (TrialSource != null) __obj.updateDynamic("TrialSource")(TrialSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrialSummary]
   }
+  @scala.inline
+  implicit class TrialSummaryOps[Self <: TrialSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDisplayName(value: ExperimentEntityName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setTrialArn(value: TrialArn): Self = this.set("TrialArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialArn: Self = this.set("TrialArn", js.undefined)
+    @scala.inline
+    def setTrialName(value: ExperimentEntityName): Self = this.set("TrialName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialName: Self = this.set("TrialName", js.undefined)
+    @scala.inline
+    def setTrialSource(value: TrialSource): Self = this.set("TrialSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialSource: Self = this.set("TrialSource", js.undefined)
+  }
+  
 }
 

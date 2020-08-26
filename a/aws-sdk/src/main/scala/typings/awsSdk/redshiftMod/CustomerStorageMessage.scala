@@ -18,14 +18,30 @@ trait CustomerStorageMessage extends js.Object {
 
 object CustomerStorageMessage {
   @scala.inline
-  def apply(
-    TotalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined,
-    TotalProvisionedStorageInMegaBytes: js.UndefOr[Double] = js.undefined
-  ): CustomerStorageMessage = {
+  def apply(): CustomerStorageMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(TotalBackupSizeInMegaBytes)) __obj.updateDynamic("TotalBackupSizeInMegaBytes")(TotalBackupSizeInMegaBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalProvisionedStorageInMegaBytes)) __obj.updateDynamic("TotalProvisionedStorageInMegaBytes")(TotalProvisionedStorageInMegaBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerStorageMessage]
   }
+  @scala.inline
+  implicit class CustomerStorageMessageOps[Self <: CustomerStorageMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTotalBackupSizeInMegaBytes(value: Double): Self = this.set("TotalBackupSizeInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBackupSizeInMegaBytes: Self = this.set("TotalBackupSizeInMegaBytes", js.undefined)
+    @scala.inline
+    def setTotalProvisionedStorageInMegaBytes(value: Double): Self = this.set("TotalProvisionedStorageInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalProvisionedStorageInMegaBytes: Self = this.set("TotalProvisionedStorageInMegaBytes", js.undefined)
+  }
+  
 }
 

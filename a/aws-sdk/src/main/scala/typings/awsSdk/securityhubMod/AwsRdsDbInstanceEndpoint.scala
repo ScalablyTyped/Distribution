@@ -22,16 +22,34 @@ trait AwsRdsDbInstanceEndpoint extends js.Object {
 
 object AwsRdsDbInstanceEndpoint {
   @scala.inline
-  def apply(
-    Address: NonEmptyString = null,
-    HostedZoneId: NonEmptyString = null,
-    Port: js.UndefOr[Integer] = js.undefined
-  ): AwsRdsDbInstanceEndpoint = {
+  def apply(): AwsRdsDbInstanceEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
-    if (HostedZoneId != null) __obj.updateDynamic("HostedZoneId")(HostedZoneId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsRdsDbInstanceEndpoint]
   }
+  @scala.inline
+  implicit class AwsRdsDbInstanceEndpointOps[Self <: AwsRdsDbInstanceEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: NonEmptyString): Self = this.set("Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("Address", js.undefined)
+    @scala.inline
+    def setHostedZoneId(value: NonEmptyString): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneId: Self = this.set("HostedZoneId", js.undefined)
+    @scala.inline
+    def setPort(value: Integer): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+  }
+  
 }
 

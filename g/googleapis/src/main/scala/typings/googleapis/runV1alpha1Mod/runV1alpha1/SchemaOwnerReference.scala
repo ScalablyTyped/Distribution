@@ -46,22 +46,46 @@ trait SchemaOwnerReference extends js.Object {
 
 object SchemaOwnerReference {
   @scala.inline
-  def apply(
-    apiVersion: String = null,
-    blockOwnerDeletion: js.UndefOr[Boolean] = js.undefined,
-    controller: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    name: String = null,
-    uid: String = null
-  ): SchemaOwnerReference = {
+  def apply(): SchemaOwnerReference = {
     val __obj = js.Dynamic.literal()
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(blockOwnerDeletion)) __obj.updateDynamic("blockOwnerDeletion")(blockOwnerDeletion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(controller)) __obj.updateDynamic("controller")(controller.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOwnerReference]
   }
+  @scala.inline
+  implicit class SchemaOwnerReferenceOps[Self <: SchemaOwnerReference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    @scala.inline
+    def setBlockOwnerDeletion(value: Boolean): Self = this.set("blockOwnerDeletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockOwnerDeletion: Self = this.set("blockOwnerDeletion", js.undefined)
+    @scala.inline
+    def setController(value: Boolean): Self = this.set("controller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteController: Self = this.set("controller", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("uid", js.undefined)
+  }
+  
 }
 

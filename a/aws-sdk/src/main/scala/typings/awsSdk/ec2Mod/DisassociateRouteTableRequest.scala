@@ -18,10 +18,28 @@ trait DisassociateRouteTableRequest extends js.Object {
 
 object DisassociateRouteTableRequest {
   @scala.inline
-  def apply(AssociationId: RouteTableAssociationId, DryRun: js.UndefOr[Boolean] = js.undefined): DisassociateRouteTableRequest = {
+  def apply(AssociationId: RouteTableAssociationId): DisassociateRouteTableRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateRouteTableRequest]
   }
+  @scala.inline
+  implicit class DisassociateRouteTableRequestOps[Self <: DisassociateRouteTableRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationId(value: RouteTableAssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

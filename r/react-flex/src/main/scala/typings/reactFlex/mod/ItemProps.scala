@@ -1,9 +1,6 @@
 package typings.reactFlex.mod
 
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import typings.reactFlex.reactFlexStrings.`fit-content`
 import typings.reactFlex.reactFlexStrings.`max-content`
 import typings.reactFlex.reactFlexStrings.`min-content`
@@ -15,6 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ItemProps
   extends Props[Flex]
      with CommonFlexProps {
@@ -24,57 +22,47 @@ trait ItemProps
     */
   var flexBasis: js.UndefOr[
     Double | none | auto | content | `fit-content` | `min-content` | `max-content` | fit
-  ] = js.undefined
+  ] = js.native
   /**
     * A number/string from 0 to 24 for `flex-grow`. Most of the times, using `flex` is just enough.
     */
-  var flexGrow: js.UndefOr[Double | String | Boolean] = js.undefined
+  var flexGrow: js.UndefOr[Double | String | Boolean] = js.native
   /**
     * A value for the `flex-shrink` css property. From `0` to `24`.
     */
-  var flexShrink: js.UndefOr[Double | String] = js.undefined
+  var flexShrink: js.UndefOr[Double | String] = js.native
 }
 
 object ItemProps {
   @scala.inline
-  def apply(
-    alignContent: String = null,
-    alignItems: String = null,
-    children: ReactNode = null,
-    column: js.UndefOr[Boolean] = js.undefined,
-    display: String = null,
-    flex: Double | String | Boolean = null,
-    flexBasis: Double | none | auto | content | `fit-content` | `min-content` | `max-content` | fit = null,
-    flexGrow: Double | String | Boolean = null,
-    flexShrink: Double | String = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    justifyContent: String = null,
-    key: Key = null,
-    ref: js.UndefOr[Null | LegacyRef[Flex]] = js.undefined,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    row: js.UndefOr[Boolean] = js.undefined,
-    style: js.Any = null,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): ItemProps = {
+  def apply(): ItemProps = {
     val __obj = js.Dynamic.literal()
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (flexBasis != null) __obj.updateDynamic("flexBasis")(flexBasis.asInstanceOf[js.Any])
-    if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
-    if (flexShrink != null) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemProps]
   }
+  @scala.inline
+  implicit class ItemPropsOps[Self <: ItemProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlexBasis(value: Double | none | auto | content | `fit-content` | `min-content` | `max-content` | fit): Self = this.set("flexBasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexBasis: Self = this.set("flexBasis", js.undefined)
+    @scala.inline
+    def setFlexGrow(value: Double | String | Boolean): Self = this.set("flexGrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexGrow: Self = this.set("flexGrow", js.undefined)
+    @scala.inline
+    def setFlexShrink(value: Double | String): Self = this.set("flexShrink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexShrink: Self = this.set("flexShrink", js.undefined)
+  }
+  
 }
 

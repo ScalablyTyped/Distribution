@@ -26,6 +26,7 @@ class Pointer protected () extends js.Object {
     * Destroys the Pointer object and disconnects DOM events.
     */
   def destroy(): Unit = js.native
+  def findNearestKDPoint(series: js.Array[Series], shared: js.UndefOr[scala.Nothing], e: PointerEventObject): js.UndefOr[Point] = js.native
   /**
     * Finds the closest point to a set of coordinates, using the k-d-tree
     * algorithm.
@@ -42,7 +43,7 @@ class Pointer protected () extends js.Object {
     *
     * @return The point closest to given coordinates.
     */
-  def findNearestKDPoint(series: js.Array[Series], shared: js.UndefOr[Boolean], e: PointerEventObject): js.UndefOr[Point] = js.native
+  def findNearestKDPoint(series: js.Array[Series], shared: Boolean, e: PointerEventObject): js.UndefOr[Point] = js.native
   /**
     * Return the cached chartPosition if it is available on the Pointer,
     * otherwise find it. Running offset is quite expensive, so it should be
@@ -102,6 +103,7 @@ class Pointer protected () extends js.Object {
     *        possible.
     */
   def reset(): Unit = js.native
+  def reset(allowMove: js.UndefOr[scala.Nothing], delay: Double): Unit = js.native
   def reset(allowMove: Boolean): Unit = js.native
   def reset(allowMove: Boolean, delay: Double): Unit = js.native
 }

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object create extends js.Object {
   def apply(cacheName: String): FileEntryCache = js.native
+  def apply(cacheName: String, directory: js.UndefOr[scala.Nothing], usecheckSum: Boolean): FileEntryCache = js.native
   def apply(cacheName: String, directory: String): FileEntryCache = js.native
   def apply(cacheName: String, directory: String, usecheckSum: Boolean): FileEntryCache = js.native
 }

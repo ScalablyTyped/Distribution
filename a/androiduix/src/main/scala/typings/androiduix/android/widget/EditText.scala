@@ -1,17 +1,11 @@
 package typings.androiduix.android.widget
 
-import typings.androiduix.android.content.Context
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.EditText")
 @js.native
-class EditText protected () extends TextView {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: js.Any) = this()
+trait EditText extends TextView {
   var inputElement: js.Any = js.native
   var mForceDisableDraw: js.Any = js.native
   var mInputType: js.Any = js.native

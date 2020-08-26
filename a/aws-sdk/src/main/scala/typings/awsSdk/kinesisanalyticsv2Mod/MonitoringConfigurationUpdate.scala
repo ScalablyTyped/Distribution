@@ -22,16 +22,34 @@ trait MonitoringConfigurationUpdate extends js.Object {
 
 object MonitoringConfigurationUpdate {
   @scala.inline
-  def apply(
-    ConfigurationTypeUpdate: ConfigurationType = null,
-    LogLevelUpdate: LogLevel = null,
-    MetricsLevelUpdate: MetricsLevel = null
-  ): MonitoringConfigurationUpdate = {
+  def apply(): MonitoringConfigurationUpdate = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationTypeUpdate != null) __obj.updateDynamic("ConfigurationTypeUpdate")(ConfigurationTypeUpdate.asInstanceOf[js.Any])
-    if (LogLevelUpdate != null) __obj.updateDynamic("LogLevelUpdate")(LogLevelUpdate.asInstanceOf[js.Any])
-    if (MetricsLevelUpdate != null) __obj.updateDynamic("MetricsLevelUpdate")(MetricsLevelUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringConfigurationUpdate]
   }
+  @scala.inline
+  implicit class MonitoringConfigurationUpdateOps[Self <: MonitoringConfigurationUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationTypeUpdate(value: ConfigurationType): Self = this.set("ConfigurationTypeUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationTypeUpdate: Self = this.set("ConfigurationTypeUpdate", js.undefined)
+    @scala.inline
+    def setLogLevelUpdate(value: LogLevel): Self = this.set("LogLevelUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevelUpdate: Self = this.set("LogLevelUpdate", js.undefined)
+    @scala.inline
+    def setMetricsLevelUpdate(value: MetricsLevel): Self = this.set("MetricsLevelUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricsLevelUpdate: Self = this.set("MetricsLevelUpdate", js.undefined)
+  }
+  
 }
 

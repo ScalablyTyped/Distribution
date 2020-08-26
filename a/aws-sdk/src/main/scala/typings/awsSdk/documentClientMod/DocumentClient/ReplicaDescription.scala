@@ -38,24 +38,52 @@ trait ReplicaDescription extends js.Object {
 
 object ReplicaDescription {
   @scala.inline
-  def apply(
-    GlobalSecondaryIndexes: ReplicaGlobalSecondaryIndexDescriptionList = null,
-    KMSMasterKeyId: KMSMasterKeyId = null,
-    ProvisionedThroughputOverride: ProvisionedThroughputOverride = null,
-    RegionName: RegionName = null,
-    ReplicaStatus: ReplicaStatus = null,
-    ReplicaStatusDescription: ReplicaStatusDescription = null,
-    ReplicaStatusPercentProgress: ReplicaStatusPercentProgress = null
-  ): ReplicaDescription = {
+  def apply(): ReplicaDescription = {
     val __obj = js.Dynamic.literal()
-    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes.asInstanceOf[js.Any])
-    if (KMSMasterKeyId != null) __obj.updateDynamic("KMSMasterKeyId")(KMSMasterKeyId.asInstanceOf[js.Any])
-    if (ProvisionedThroughputOverride != null) __obj.updateDynamic("ProvisionedThroughputOverride")(ProvisionedThroughputOverride.asInstanceOf[js.Any])
-    if (RegionName != null) __obj.updateDynamic("RegionName")(RegionName.asInstanceOf[js.Any])
-    if (ReplicaStatus != null) __obj.updateDynamic("ReplicaStatus")(ReplicaStatus.asInstanceOf[js.Any])
-    if (ReplicaStatusDescription != null) __obj.updateDynamic("ReplicaStatusDescription")(ReplicaStatusDescription.asInstanceOf[js.Any])
-    if (ReplicaStatusPercentProgress != null) __obj.updateDynamic("ReplicaStatusPercentProgress")(ReplicaStatusPercentProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaDescription]
   }
+  @scala.inline
+  implicit class ReplicaDescriptionOps[Self <: ReplicaDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexDescription*): Self = this.set("GlobalSecondaryIndexes", js.Array(value :_*))
+    @scala.inline
+    def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexDescriptionList): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    @scala.inline
+    def setKMSMasterKeyId(value: KMSMasterKeyId): Self = this.set("KMSMasterKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSMasterKeyId: Self = this.set("KMSMasterKeyId", js.undefined)
+    @scala.inline
+    def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = this.set("ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedThroughputOverride: Self = this.set("ProvisionedThroughputOverride", js.undefined)
+    @scala.inline
+    def setRegionName(value: RegionName): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionName: Self = this.set("RegionName", js.undefined)
+    @scala.inline
+    def setReplicaStatus(value: ReplicaStatus): Self = this.set("ReplicaStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaStatus: Self = this.set("ReplicaStatus", js.undefined)
+    @scala.inline
+    def setReplicaStatusDescription(value: ReplicaStatusDescription): Self = this.set("ReplicaStatusDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaStatusDescription: Self = this.set("ReplicaStatusDescription", js.undefined)
+    @scala.inline
+    def setReplicaStatusPercentProgress(value: ReplicaStatusPercentProgress): Self = this.set("ReplicaStatusPercentProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaStatusPercentProgress: Self = this.set("ReplicaStatusPercentProgress", js.undefined)
+  }
+  
 }
 

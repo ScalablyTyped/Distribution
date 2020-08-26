@@ -24,7 +24,7 @@ class ListViewXPathSource protected () extends XPathSourceBase {
   @JSName("model")
   var model_FListViewXPathSource: IModel = js.native
   def search: ListViewSearch = js.native
-  def search(newValue: ListViewSearch): js.Any = js.native
+  def search_=(newValue: ListViewSearch): Unit = js.native
 }
 
 /* static members */

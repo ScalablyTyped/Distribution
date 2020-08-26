@@ -118,6 +118,11 @@ trait NativePointer
     * @param data The data to use. Defaults to `0`.
     */
   def sign(): NativePointer = js.native
+  def sign(key: js.UndefOr[scala.Nothing], data: String): NativePointer = js.native
+  def sign(key: js.UndefOr[scala.Nothing], data: Double): NativePointer = js.native
+  def sign(key: js.UndefOr[scala.Nothing], data: Int64): NativePointer = js.native
+  def sign(key: js.UndefOr[scala.Nothing], data: NativePointerValue): NativePointer = js.native
+  def sign(key: js.UndefOr[scala.Nothing], data: UInt64): NativePointer = js.native
   def sign(key: PointerAuthenticationKey): NativePointer = js.native
   def sign(key: PointerAuthenticationKey, data: String): NativePointer = js.native
   def sign(key: PointerAuthenticationKey, data: Double): NativePointer = js.native

@@ -1,6 +1,6 @@
 package typings.pulumiAws.permissionMod
 
-import typings.pulumiAws.lambdaFunctionMod.Function
+import typings.pulumiAws.lambdaMod.Function
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait PermissionState extends js.Object {
     */
   val action: js.UndefOr[Input[String]] = js.native
   /**
-    * The Event Source Token to validate.  Used with [Alexa Skills][1].
+    * The Event Source Token to validate.  Used with [Alexa Skills](https://developer.amazon.com/docs/custom-skills/host-a-custom-skill-as-an-aws-lambda-function.html#use-aws-cli).
     */
   val eventSourceToken: js.UndefOr[Input[String]] = js.native
   /**
@@ -37,12 +37,11 @@ trait PermissionState extends js.Object {
     */
   val sourceAccount: js.UndefOr[Input[String]] = js.native
   /**
-    * When granting Amazon S3 or CloudWatch Events permission to
-    * invoke your function, you should specify this field with the Amazon Resource Name (ARN)
-    * for the S3 Bucket or CloudWatch Events Rule as its value.  This ensures that only events
-    * generated from the specified bucket or rule can invoke the function.
-    * API Gateway ARNs have a unique structure described
-    * [here](http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html).
+    * When the principal is an AWS service, the ARN of the specific resource within that service to grant permission to.
+    * Without this, any resource from `principal` will be granted permission – even if that resource is from another account.
+    * For S3, this should be the ARN of the S3 Bucket.
+    * For CloudWatch Events, this should be the ARN of the CloudWatch Events Rule.
+    * For API Gateway, this should be the ARN of the API, as described [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html).
     */
   val sourceArn: js.UndefOr[Input[String]] = js.native
   /**
@@ -57,28 +56,58 @@ trait PermissionState extends js.Object {
 
 object PermissionState {
   @scala.inline
-  def apply(
-    action: Input[String] = null,
-    eventSourceToken: Input[String] = null,
-    function: Input[String | Function] = null,
-    principal: Input[String] = null,
-    qualifier: Input[String] = null,
-    sourceAccount: Input[String] = null,
-    sourceArn: Input[String] = null,
-    statementId: Input[String] = null,
-    statementIdPrefix: Input[String] = null
-  ): PermissionState = {
+  def apply(): PermissionState = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (eventSourceToken != null) __obj.updateDynamic("eventSourceToken")(eventSourceToken.asInstanceOf[js.Any])
-    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
-    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])
-    if (sourceAccount != null) __obj.updateDynamic("sourceAccount")(sourceAccount.asInstanceOf[js.Any])
-    if (sourceArn != null) __obj.updateDynamic("sourceArn")(sourceArn.asInstanceOf[js.Any])
-    if (statementId != null) __obj.updateDynamic("statementId")(statementId.asInstanceOf[js.Any])
-    if (statementIdPrefix != null) __obj.updateDynamic("statementIdPrefix")(statementIdPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionState]
   }
+  @scala.inline
+  implicit class PermissionStateOps[Self <: PermissionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: Input[String]): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setEventSourceToken(value: Input[String]): Self = this.set("eventSourceToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventSourceToken: Self = this.set("eventSourceToken", js.undefined)
+    @scala.inline
+    def setFunction(value: Input[String | Function]): Self = this.set("function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunction: Self = this.set("function", js.undefined)
+    @scala.inline
+    def setPrincipal(value: Input[String]): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("principal", js.undefined)
+    @scala.inline
+    def setQualifier(value: Input[String]): Self = this.set("qualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifier: Self = this.set("qualifier", js.undefined)
+    @scala.inline
+    def setSourceAccount(value: Input[String]): Self = this.set("sourceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceAccount: Self = this.set("sourceAccount", js.undefined)
+    @scala.inline
+    def setSourceArn(value: Input[String]): Self = this.set("sourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceArn: Self = this.set("sourceArn", js.undefined)
+    @scala.inline
+    def setStatementId(value: Input[String]): Self = this.set("statementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatementId: Self = this.set("statementId", js.undefined)
+    @scala.inline
+    def setStatementIdPrefix(value: Input[String]): Self = this.set("statementIdPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatementIdPrefix: Self = this.set("statementIdPrefix", js.undefined)
+  }
+  
 }
 

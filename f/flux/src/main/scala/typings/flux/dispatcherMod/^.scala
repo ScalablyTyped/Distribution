@@ -16,34 +16,5 @@ import scala.scalajs.js.annotation._
   *     var dispatcher = new flux.Dispatcher<any>()
   *     var typedDispatcher = new flux.Dispatcher<MyCustomActionType>()
   */
-class ^[TPayload] () extends Dispatcher[TPayload] {
-  /**
-    * Dispatches a payload to all registered callbacks
-    */
-  /* CompleteClass */
-  override def dispatch(payload: TPayload): Unit = js.native
-  /**
-    * Gets whether the dispatcher is currently dispatching
-    */
-  /* CompleteClass */
-  override def isDispatching(): Boolean = js.native
-  /**
-    * Registers a callback that will be invoked with every payload sent to the dispatcher.
-    * Returns a string token to identify the callback to be used with waitFor() or unregister.
-    */
-  /* CompleteClass */
-  override def register(callback: js.Function1[TPayload, Unit]): String = js.native
-  /**
-    * Unregisters a callback with the given ID token
-    */
-  /* CompleteClass */
-  override def unregister(id: String): Unit = js.native
-  /**
-    * Waits for the callbacks with the specified IDs to be invoked before continuing execution
-    * of the current callback. This method should only be used by a callback in response
-    * to a dispatched payload.
-    */
-  /* CompleteClass */
-  override def waitFor(IDs: js.Array[String]): Unit = js.native
-}
+class ^[TPayload] () extends Dispatcher[TPayload]
 

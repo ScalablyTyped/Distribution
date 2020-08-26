@@ -25,18 +25,12 @@ abstract class QuestionCustomModelBase protected ()
   def elementWidthChanged(el: IElement): js.Any = js.native
   @JSName("elementWidthChanged")
   def elementWidthChanged_Unit(el: IElement): Unit = js.native
-  /* CompleteClass */
-  override def geSurveyData(): ISurveyData = js.native
   /* InferMemberOverrides */
   override def getAllValues(): js.Any = js.native
   def getChildrenLayoutType(): String = js.native
   /* protected */ def getElement(): SurveyElement = js.native
   def getQuestionStartIndex(): String = js.native
   def getQuestionTitleLocation(): String = js.native
-  /* CompleteClass */
-  override def getSurvey(): ISurvey = js.native
-  /* CompleteClass */
-  override def getTextProcessor(): ITextProcessor = js.native
   /**
     * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
     */

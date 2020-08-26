@@ -8,42 +8,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Searchable extends js.Object {
-  var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.undefined
-  var autoCorrect: js.UndefOr[Boolean] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
-  var onSearchCloseRequested: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSearchClosed: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSearchPressed: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSubmitEditing: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
+  var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.native
+  var autoCorrect: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var onChangeText: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+  var onSearchCloseRequested: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSearchClosed: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSearchPressed: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSubmitEditing: js.UndefOr[js.Function0[Unit]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
 }
 
 object Searchable {
   @scala.inline
-  def apply(
-    autoCapitalize: none | sentences | words | characters = null,
-    autoCorrect: js.UndefOr[Boolean] = js.undefined,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    onChangeText: /* text */ String => Unit = null,
-    onSearchCloseRequested: () => Unit = null,
-    onSearchClosed: () => Unit = null,
-    onSearchPressed: () => Unit = null,
-    onSubmitEditing: () => Unit = null,
-    placeholder: String = null
-  ): Searchable = {
+  def apply(): Searchable = {
     val __obj = js.Dynamic.literal()
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
-    if (onSearchCloseRequested != null) __obj.updateDynamic("onSearchCloseRequested")(js.Any.fromFunction0(onSearchCloseRequested))
-    if (onSearchClosed != null) __obj.updateDynamic("onSearchClosed")(js.Any.fromFunction0(onSearchClosed))
-    if (onSearchPressed != null) __obj.updateDynamic("onSearchPressed")(js.Any.fromFunction0(onSearchPressed))
-    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction0(onSubmitEditing))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Searchable]
   }
+  @scala.inline
+  implicit class SearchableOps[Self <: Searchable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoCapitalize(value: none | sentences | words | characters): Self = this.set("autoCapitalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCapitalize: Self = this.set("autoCapitalize", js.undefined)
+    @scala.inline
+    def setAutoCorrect(value: Boolean): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setOnChangeText(value: /* text */ String => Unit): Self = this.set("onChangeText", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChangeText: Self = this.set("onChangeText", js.undefined)
+    @scala.inline
+    def setOnSearchCloseRequested(value: () => Unit): Self = this.set("onSearchCloseRequested", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnSearchCloseRequested: Self = this.set("onSearchCloseRequested", js.undefined)
+    @scala.inline
+    def setOnSearchClosed(value: () => Unit): Self = this.set("onSearchClosed", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnSearchClosed: Self = this.set("onSearchClosed", js.undefined)
+    @scala.inline
+    def setOnSearchPressed(value: () => Unit): Self = this.set("onSearchPressed", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnSearchPressed: Self = this.set("onSearchPressed", js.undefined)
+    @scala.inline
+    def setOnSubmitEditing(value: () => Unit): Self = this.set("onSubmitEditing", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnSubmitEditing: Self = this.set("onSubmitEditing", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+  }
+  
 }
 

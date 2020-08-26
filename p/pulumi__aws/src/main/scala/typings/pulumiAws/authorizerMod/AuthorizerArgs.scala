@@ -25,7 +25,7 @@ trait AuthorizerArgs extends js.Object {
   val authorizerType: Input[String] = js.native
   /**
     * The authorizer's Uniform Resource Identifier (URI).
-    * For `REQUEST` authorizers this must be a well-formed Lambda function URI, such as the `invokeArn` attribute of the [`aws.lambda.Function`](https://www.terraform.io/docs/providers/aws/r/lambda_function.html) resource.
+    * For `REQUEST` authorizers this must be a well-formed Lambda function URI, such as the `invokeArn` attribute of the `aws.lambda.Function` resource.
     * Supported only for `REQUEST` authorizers.
     */
   val authorizerUri: js.UndefOr[Input[String]] = js.native
@@ -51,18 +51,47 @@ object AuthorizerArgs {
   def apply(
     apiId: Input[String],
     authorizerType: Input[String],
-    identitySources: Input[js.Array[Input[String]]],
-    authorizerCredentialsArn: Input[String] = null,
-    authorizerUri: Input[String] = null,
-    jwtConfiguration: Input[AuthorizerJwtConfiguration] = null,
-    name: Input[String] = null
+    identitySources: Input[js.Array[Input[String]]]
   ): AuthorizerArgs = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], authorizerType = authorizerType.asInstanceOf[js.Any], identitySources = identitySources.asInstanceOf[js.Any])
-    if (authorizerCredentialsArn != null) __obj.updateDynamic("authorizerCredentialsArn")(authorizerCredentialsArn.asInstanceOf[js.Any])
-    if (authorizerUri != null) __obj.updateDynamic("authorizerUri")(authorizerUri.asInstanceOf[js.Any])
-    if (jwtConfiguration != null) __obj.updateDynamic("jwtConfiguration")(jwtConfiguration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizerArgs]
   }
+  @scala.inline
+  implicit class AuthorizerArgsOps[Self <: AuthorizerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiId(value: Input[String]): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorizerType(value: Input[String]): Self = this.set("authorizerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentitySourcesVarargs(value: Input[String]*): Self = this.set("identitySources", js.Array(value :_*))
+    @scala.inline
+    def setIdentitySources(value: Input[js.Array[Input[String]]]): Self = this.set("identitySources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorizerCredentialsArn(value: Input[String]): Self = this.set("authorizerCredentialsArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizerCredentialsArn: Self = this.set("authorizerCredentialsArn", js.undefined)
+    @scala.inline
+    def setAuthorizerUri(value: Input[String]): Self = this.set("authorizerUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizerUri: Self = this.set("authorizerUri", js.undefined)
+    @scala.inline
+    def setJwtConfiguration(value: Input[AuthorizerJwtConfiguration]): Self = this.set("jwtConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwtConfiguration: Self = this.set("jwtConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

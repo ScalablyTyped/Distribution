@@ -8,17 +8,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  manualSortBy  :boolean,   disableSortBy  :boolean,   defaultCanSort  :boolean,   disableMultiSort  :boolean, isMultiSortEvent (e : react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>): boolean,   maxMultiSortColCount  :number,   disableSortRemove  :boolean,   disabledMultiRemove  :boolean, orderByFn (rows : std.Array<react-table.react-table.Row<D>>, sortFns : std.Array<react-table.react-table.SortByFn<D>>, directions : std.Array<boolean>): std.Array<react-table.react-table.Row<D>>,   sortTypes  :std.Record<string, react-table.react-table.SortByFn<D>>,   autoResetSortBy ? :boolean}> */
+/* Inlined std.Partial<{  manualSortBy :boolean,   disableSortBy :boolean,   defaultCanSort :boolean,   disableMultiSort :boolean, isMultiSortEvent (e : react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>): boolean,   maxMultiSortColCount :number,   disableSortRemove :boolean,   disabledMultiRemove :boolean, orderByFn (rows : std.Array<react-table.react-table.Row<D>>, sortFns : std.Array<react-table.react-table.SortByFn<D>>, directions : std.Array<boolean>): std.Array<react-table.react-table.Row<D>>,   sortTypes :std.Record<string, react-table.react-table.SortByFn<D>>,   autoResetSortBy :boolean | undefined}> */
+@js.native
 trait UseSortByOptions[D /* <: js.Object */] extends js.Object {
-  var autoResetSortBy: js.UndefOr[Boolean] = js.undefined
-  var defaultCanSort: js.UndefOr[Boolean] = js.undefined
-  var disableMultiSort: js.UndefOr[Boolean] = js.undefined
-  var disableSortBy: js.UndefOr[Boolean] = js.undefined
-  var disableSortRemove: js.UndefOr[Boolean] = js.undefined
-  var disabledMultiRemove: js.UndefOr[Boolean] = js.undefined
-  var isMultiSortEvent: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Boolean]] = js.undefined
-  var manualSortBy: js.UndefOr[Boolean] = js.undefined
-  var maxMultiSortColCount: js.UndefOr[Double] = js.undefined
+  var autoResetSortBy: js.UndefOr[Boolean] = js.native
+  var defaultCanSort: js.UndefOr[Boolean] = js.native
+  var disableMultiSort: js.UndefOr[Boolean] = js.native
+  var disableSortBy: js.UndefOr[Boolean] = js.native
+  var disableSortRemove: js.UndefOr[Boolean] = js.native
+  var disabledMultiRemove: js.UndefOr[Boolean] = js.native
+  var isMultiSortEvent: js.UndefOr[js.Function1[/* e */ MouseEvent[Element, NativeMouseEvent], Boolean]] = js.native
+  var manualSortBy: js.UndefOr[Boolean] = js.native
+  var maxMultiSortColCount: js.UndefOr[Double] = js.native
   var orderByFn: js.UndefOr[
     js.Function3[
       /* rows */ js.Array[Row[D]], 
@@ -26,38 +27,74 @@ trait UseSortByOptions[D /* <: js.Object */] extends js.Object {
       /* directions */ js.Array[Boolean], 
       js.Array[Row[D]]
     ]
-  ] = js.undefined
-  var sortTypes: js.UndefOr[Record[String, SortByFn[D]]] = js.undefined
+  ] = js.native
+  var sortTypes: js.UndefOr[Record[String, SortByFn[D]]] = js.native
 }
 
 object UseSortByOptions {
   @scala.inline
-  def apply[/* <: js.Object */ D](
-    autoResetSortBy: js.UndefOr[Boolean] = js.undefined,
-    defaultCanSort: js.UndefOr[Boolean] = js.undefined,
-    disableMultiSort: js.UndefOr[Boolean] = js.undefined,
-    disableSortBy: js.UndefOr[Boolean] = js.undefined,
-    disableSortRemove: js.UndefOr[Boolean] = js.undefined,
-    disabledMultiRemove: js.UndefOr[Boolean] = js.undefined,
-    isMultiSortEvent: /* e */ MouseEvent[Element, NativeMouseEvent] => Boolean = null,
-    manualSortBy: js.UndefOr[Boolean] = js.undefined,
-    maxMultiSortColCount: js.UndefOr[Double] = js.undefined,
-    orderByFn: (/* rows */ js.Array[Row[D]], /* sortFns */ js.Array[SortByFn[D]], /* directions */ js.Array[Boolean]) => js.Array[Row[D]] = null,
-    sortTypes: Record[String, SortByFn[D]] = null
-  ): UseSortByOptions[D] = {
+  def apply[/* <: js.Object */ D](): UseSortByOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetSortBy)) __obj.updateDynamic("autoResetSortBy")(autoResetSortBy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultCanSort)) __obj.updateDynamic("defaultCanSort")(defaultCanSort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMultiSort)) __obj.updateDynamic("disableMultiSort")(disableMultiSort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSortBy)) __obj.updateDynamic("disableSortBy")(disableSortBy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSortRemove)) __obj.updateDynamic("disableSortRemove")(disableSortRemove.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabledMultiRemove)) __obj.updateDynamic("disabledMultiRemove")(disabledMultiRemove.get.asInstanceOf[js.Any])
-    if (isMultiSortEvent != null) __obj.updateDynamic("isMultiSortEvent")(js.Any.fromFunction1(isMultiSortEvent))
-    if (!js.isUndefined(manualSortBy)) __obj.updateDynamic("manualSortBy")(manualSortBy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxMultiSortColCount)) __obj.updateDynamic("maxMultiSortColCount")(maxMultiSortColCount.get.asInstanceOf[js.Any])
-    if (orderByFn != null) __obj.updateDynamic("orderByFn")(js.Any.fromFunction3(orderByFn))
-    if (sortTypes != null) __obj.updateDynamic("sortTypes")(sortTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseSortByOptions[D]]
   }
+  @scala.inline
+  implicit class UseSortByOptionsOps[Self <: UseSortByOptions[_], /* <: js.Object */ D] (val x: Self with UseSortByOptions[D]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoResetSortBy(value: Boolean): Self = this.set("autoResetSortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoResetSortBy: Self = this.set("autoResetSortBy", js.undefined)
+    @scala.inline
+    def setDefaultCanSort(value: Boolean): Self = this.set("defaultCanSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCanSort: Self = this.set("defaultCanSort", js.undefined)
+    @scala.inline
+    def setDisableMultiSort(value: Boolean): Self = this.set("disableMultiSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableMultiSort: Self = this.set("disableMultiSort", js.undefined)
+    @scala.inline
+    def setDisableSortBy(value: Boolean): Self = this.set("disableSortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableSortBy: Self = this.set("disableSortBy", js.undefined)
+    @scala.inline
+    def setDisableSortRemove(value: Boolean): Self = this.set("disableSortRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableSortRemove: Self = this.set("disableSortRemove", js.undefined)
+    @scala.inline
+    def setDisabledMultiRemove(value: Boolean): Self = this.set("disabledMultiRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledMultiRemove: Self = this.set("disabledMultiRemove", js.undefined)
+    @scala.inline
+    def setIsMultiSortEvent(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Boolean): Self = this.set("isMultiSortEvent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsMultiSortEvent: Self = this.set("isMultiSortEvent", js.undefined)
+    @scala.inline
+    def setManualSortBy(value: Boolean): Self = this.set("manualSortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualSortBy: Self = this.set("manualSortBy", js.undefined)
+    @scala.inline
+    def setMaxMultiSortColCount(value: Double): Self = this.set("maxMultiSortColCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxMultiSortColCount: Self = this.set("maxMultiSortColCount", js.undefined)
+    @scala.inline
+    def setOrderByFn(
+      value: (/* rows */ js.Array[Row[D]], /* sortFns */ js.Array[SortByFn[D]], /* directions */ js.Array[Boolean]) => js.Array[Row[D]]
+    ): Self = this.set("orderByFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOrderByFn: Self = this.set("orderByFn", js.undefined)
+    @scala.inline
+    def setSortTypes(value: Record[String, SortByFn[D]]): Self = this.set("sortTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortTypes: Self = this.set("sortTypes", js.undefined)
+  }
+  
 }
 

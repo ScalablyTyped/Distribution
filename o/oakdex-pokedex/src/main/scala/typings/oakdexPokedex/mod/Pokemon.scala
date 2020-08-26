@@ -7,42 +7,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Pokemon extends js.Object {
-  var abilities: js.Array[PokemonAbility]
-  var alola_id: Double | Null
-  var base_exp_yield: Double
-  var base_friendship: Double
-  var base_stats: StatObject
-  var catch_rate: Double
-  var categories: Translations
-  var color: String
-  var egg_groups: js.Array[String]
-  var ev_yield: StatObject
-  var evolution_from: String | Null
-  var evolutions: js.Array[PokemonEvolution]
-  var gender_ratios: Null | Female
-  var hatch_time: js.Array[Double]
-  var height_eu: String
-  var height_us: String
-  var hoenn_id: Double | Null
-  var johto_id: Double | Null
-  var kalos_id: Double | Null
-  var kanto_id: Double | Null
-  var leveling_rate: String
-  var mega_evolutions: js.Array[MegaEvolution]
-  var move_learnsets: js.Array[MoveLearnset]
-  var names: Translations
-  var national_id: Double
-  var pokeathlon_stats: js.UndefOr[Jump] = js.undefined
-  var pokedex_entries: StringDictionary[Translations]
-  var sinnoh_id: Double | Null
-  var types: js.Array[String]
-  var ultra_alola_id: Double | Null
-  var unova_id: Double | Null
-  var variation_names: js.UndefOr[Translations] = js.undefined
-  var variations: js.Array[PokemonVariation]
-  var weight_eu: String
-  var weight_us: String
+  var abilities: js.Array[PokemonAbility] = js.native
+  var alola_id: Double | Null = js.native
+  var base_exp_yield: Double = js.native
+  var base_friendship: Double = js.native
+  var base_stats: StatObject = js.native
+  var catch_rate: Double = js.native
+  var categories: Translations = js.native
+  var color: String = js.native
+  var egg_groups: js.Array[String] = js.native
+  var ev_yield: StatObject = js.native
+  var evolution_from: String | Null = js.native
+  var evolutions: js.Array[PokemonEvolution] = js.native
+  var gender_ratios: Null | Female = js.native
+  var hatch_time: js.Array[Double] = js.native
+  var height_eu: String = js.native
+  var height_us: String = js.native
+  var hoenn_id: Double | Null = js.native
+  var johto_id: Double | Null = js.native
+  var kalos_id: Double | Null = js.native
+  var kanto_id: Double | Null = js.native
+  var leveling_rate: String = js.native
+  var mega_evolutions: js.Array[MegaEvolution] = js.native
+  var move_learnsets: js.Array[MoveLearnset] = js.native
+  var names: Translations = js.native
+  var national_id: Double = js.native
+  var pokeathlon_stats: js.UndefOr[Jump] = js.native
+  var pokedex_entries: StringDictionary[Translations] = js.native
+  var sinnoh_id: Double | Null = js.native
+  var types: js.Array[String] = js.native
+  var ultra_alola_id: Double | Null = js.native
+  var unova_id: Double | Null = js.native
+  var variation_names: js.UndefOr[Translations] = js.native
+  var variations: js.Array[PokemonVariation] = js.native
+  var weight_eu: String = js.native
+  var weight_us: String = js.native
 }
 
 object Pokemon {
@@ -70,24 +71,133 @@ object Pokemon {
     types: js.Array[String],
     variations: js.Array[PokemonVariation],
     weight_eu: String,
-    weight_us: String,
-    alola_id: Double = null.asInstanceOf[Double],
-    evolution_from: String = null,
-    gender_ratios: Female = null,
-    hoenn_id: Double = null.asInstanceOf[Double],
-    johto_id: Double = null.asInstanceOf[Double],
-    kalos_id: Double = null.asInstanceOf[Double],
-    kanto_id: Double = null.asInstanceOf[Double],
-    pokeathlon_stats: Jump = null,
-    sinnoh_id: Double = null.asInstanceOf[Double],
-    ultra_alola_id: Double = null.asInstanceOf[Double],
-    unova_id: Double = null.asInstanceOf[Double],
-    variation_names: Translations = null
+    weight_us: String
   ): Pokemon = {
-    val __obj = js.Dynamic.literal(abilities = abilities.asInstanceOf[js.Any], base_exp_yield = base_exp_yield.asInstanceOf[js.Any], base_friendship = base_friendship.asInstanceOf[js.Any], base_stats = base_stats.asInstanceOf[js.Any], catch_rate = catch_rate.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], egg_groups = egg_groups.asInstanceOf[js.Any], ev_yield = ev_yield.asInstanceOf[js.Any], evolutions = evolutions.asInstanceOf[js.Any], hatch_time = hatch_time.asInstanceOf[js.Any], height_eu = height_eu.asInstanceOf[js.Any], height_us = height_us.asInstanceOf[js.Any], leveling_rate = leveling_rate.asInstanceOf[js.Any], mega_evolutions = mega_evolutions.asInstanceOf[js.Any], move_learnsets = move_learnsets.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], national_id = national_id.asInstanceOf[js.Any], pokedex_entries = pokedex_entries.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], variations = variations.asInstanceOf[js.Any], weight_eu = weight_eu.asInstanceOf[js.Any], weight_us = weight_us.asInstanceOf[js.Any], alola_id = alola_id.asInstanceOf[js.Any], evolution_from = evolution_from.asInstanceOf[js.Any], gender_ratios = gender_ratios.asInstanceOf[js.Any], hoenn_id = hoenn_id.asInstanceOf[js.Any], johto_id = johto_id.asInstanceOf[js.Any], kalos_id = kalos_id.asInstanceOf[js.Any], kanto_id = kanto_id.asInstanceOf[js.Any], sinnoh_id = sinnoh_id.asInstanceOf[js.Any], ultra_alola_id = ultra_alola_id.asInstanceOf[js.Any], unova_id = unova_id.asInstanceOf[js.Any])
-    if (pokeathlon_stats != null) __obj.updateDynamic("pokeathlon_stats")(pokeathlon_stats.asInstanceOf[js.Any])
-    if (variation_names != null) __obj.updateDynamic("variation_names")(variation_names.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(abilities = abilities.asInstanceOf[js.Any], base_exp_yield = base_exp_yield.asInstanceOf[js.Any], base_friendship = base_friendship.asInstanceOf[js.Any], base_stats = base_stats.asInstanceOf[js.Any], catch_rate = catch_rate.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], egg_groups = egg_groups.asInstanceOf[js.Any], ev_yield = ev_yield.asInstanceOf[js.Any], evolutions = evolutions.asInstanceOf[js.Any], hatch_time = hatch_time.asInstanceOf[js.Any], height_eu = height_eu.asInstanceOf[js.Any], height_us = height_us.asInstanceOf[js.Any], leveling_rate = leveling_rate.asInstanceOf[js.Any], mega_evolutions = mega_evolutions.asInstanceOf[js.Any], move_learnsets = move_learnsets.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], national_id = national_id.asInstanceOf[js.Any], pokedex_entries = pokedex_entries.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], variations = variations.asInstanceOf[js.Any], weight_eu = weight_eu.asInstanceOf[js.Any], weight_us = weight_us.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pokemon]
   }
+  @scala.inline
+  implicit class PokemonOps[Self <: Pokemon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbilitiesVarargs(value: PokemonAbility*): Self = this.set("abilities", js.Array(value :_*))
+    @scala.inline
+    def setAbilities(value: js.Array[PokemonAbility]): Self = this.set("abilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBase_exp_yield(value: Double): Self = this.set("base_exp_yield", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBase_friendship(value: Double): Self = this.set("base_friendship", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBase_stats(value: StatObject): Self = this.set("base_stats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCatch_rate(value: Double): Self = this.set("catch_rate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCategories(value: Translations): Self = this.set("categories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEgg_groupsVarargs(value: String*): Self = this.set("egg_groups", js.Array(value :_*))
+    @scala.inline
+    def setEgg_groups(value: js.Array[String]): Self = this.set("egg_groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEv_yield(value: StatObject): Self = this.set("ev_yield", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvolutionsVarargs(value: PokemonEvolution*): Self = this.set("evolutions", js.Array(value :_*))
+    @scala.inline
+    def setEvolutions(value: js.Array[PokemonEvolution]): Self = this.set("evolutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHatch_timeVarargs(value: Double*): Self = this.set("hatch_time", js.Array(value :_*))
+    @scala.inline
+    def setHatch_time(value: js.Array[Double]): Self = this.set("hatch_time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeight_eu(value: String): Self = this.set("height_eu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeight_us(value: String): Self = this.set("height_us", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLeveling_rate(value: String): Self = this.set("leveling_rate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMega_evolutionsVarargs(value: MegaEvolution*): Self = this.set("mega_evolutions", js.Array(value :_*))
+    @scala.inline
+    def setMega_evolutions(value: js.Array[MegaEvolution]): Self = this.set("mega_evolutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMove_learnsetsVarargs(value: MoveLearnset*): Self = this.set("move_learnsets", js.Array(value :_*))
+    @scala.inline
+    def setMove_learnsets(value: js.Array[MoveLearnset]): Self = this.set("move_learnsets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNames(value: Translations): Self = this.set("names", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNational_id(value: Double): Self = this.set("national_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPokedex_entries(value: StringDictionary[Translations]): Self = this.set("pokedex_entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVariationsVarargs(value: PokemonVariation*): Self = this.set("variations", js.Array(value :_*))
+    @scala.inline
+    def setVariations(value: js.Array[PokemonVariation]): Self = this.set("variations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWeight_eu(value: String): Self = this.set("weight_eu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWeight_us(value: String): Self = this.set("weight_us", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlola_id(value: Double): Self = this.set("alola_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlola_idNull: Self = this.set("alola_id", null)
+    @scala.inline
+    def setEvolution_from(value: String): Self = this.set("evolution_from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvolution_fromNull: Self = this.set("evolution_from", null)
+    @scala.inline
+    def setGender_ratios(value: Female): Self = this.set("gender_ratios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGender_ratiosNull: Self = this.set("gender_ratios", null)
+    @scala.inline
+    def setHoenn_id(value: Double): Self = this.set("hoenn_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHoenn_idNull: Self = this.set("hoenn_id", null)
+    @scala.inline
+    def setJohto_id(value: Double): Self = this.set("johto_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJohto_idNull: Self = this.set("johto_id", null)
+    @scala.inline
+    def setKalos_id(value: Double): Self = this.set("kalos_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKalos_idNull: Self = this.set("kalos_id", null)
+    @scala.inline
+    def setKanto_id(value: Double): Self = this.set("kanto_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKanto_idNull: Self = this.set("kanto_id", null)
+    @scala.inline
+    def setPokeathlon_stats(value: Jump): Self = this.set("pokeathlon_stats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePokeathlon_stats: Self = this.set("pokeathlon_stats", js.undefined)
+    @scala.inline
+    def setSinnoh_id(value: Double): Self = this.set("sinnoh_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSinnoh_idNull: Self = this.set("sinnoh_id", null)
+    @scala.inline
+    def setUltra_alola_id(value: Double): Self = this.set("ultra_alola_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUltra_alola_idNull: Self = this.set("ultra_alola_id", null)
+    @scala.inline
+    def setUnova_id(value: Double): Self = this.set("unova_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUnova_idNull: Self = this.set("unova_id", null)
+    @scala.inline
+    def setVariation_names(value: Translations): Self = this.set("variation_names", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariation_names: Self = this.set("variation_names", js.undefined)
+  }
+  
 }
 

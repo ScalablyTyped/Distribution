@@ -22,11 +22,30 @@ trait SchemaStartManualTransferRunsRequest extends js.Object {
 
 object SchemaStartManualTransferRunsRequest {
   @scala.inline
-  def apply(requestedRunTime: String = null, requestedTimeRange: SchemaTimeRange = null): SchemaStartManualTransferRunsRequest = {
+  def apply(): SchemaStartManualTransferRunsRequest = {
     val __obj = js.Dynamic.literal()
-    if (requestedRunTime != null) __obj.updateDynamic("requestedRunTime")(requestedRunTime.asInstanceOf[js.Any])
-    if (requestedTimeRange != null) __obj.updateDynamic("requestedTimeRange")(requestedTimeRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStartManualTransferRunsRequest]
   }
+  @scala.inline
+  implicit class SchemaStartManualTransferRunsRequestOps[Self <: SchemaStartManualTransferRunsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequestedRunTime(value: String): Self = this.set("requestedRunTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedRunTime: Self = this.set("requestedRunTime", js.undefined)
+    @scala.inline
+    def setRequestedTimeRange(value: SchemaTimeRange): Self = this.set("requestedTimeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedTimeRange: Self = this.set("requestedTimeRange", js.undefined)
+  }
+  
 }
 

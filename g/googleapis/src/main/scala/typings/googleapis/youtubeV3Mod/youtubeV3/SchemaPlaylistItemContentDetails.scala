@@ -40,20 +40,42 @@ trait SchemaPlaylistItemContentDetails extends js.Object {
 
 object SchemaPlaylistItemContentDetails {
   @scala.inline
-  def apply(
-    endAt: String = null,
-    note: String = null,
-    startAt: String = null,
-    videoId: String = null,
-    videoPublishedAt: String = null
-  ): SchemaPlaylistItemContentDetails = {
+  def apply(): SchemaPlaylistItemContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (endAt != null) __obj.updateDynamic("endAt")(endAt.asInstanceOf[js.Any])
-    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
-    if (videoPublishedAt != null) __obj.updateDynamic("videoPublishedAt")(videoPublishedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlaylistItemContentDetails]
   }
+  @scala.inline
+  implicit class SchemaPlaylistItemContentDetailsOps[Self <: SchemaPlaylistItemContentDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndAt(value: String): Self = this.set("endAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndAt: Self = this.set("endAt", js.undefined)
+    @scala.inline
+    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("note", js.undefined)
+    @scala.inline
+    def setStartAt(value: String): Self = this.set("startAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartAt: Self = this.set("startAt", js.undefined)
+    @scala.inline
+    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoId: Self = this.set("videoId", js.undefined)
+    @scala.inline
+    def setVideoPublishedAt(value: String): Self = this.set("videoPublishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoPublishedAt: Self = this.set("videoPublishedAt", js.undefined)
+  }
+  
 }
 

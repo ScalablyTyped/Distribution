@@ -10,9 +10,9 @@ A W3C Standard XML DOM(Level2 CORE) implementation and parser(DOMParser/XMLSeria
 | ------------------ | :-------------: |
 | Full name          | xmldom |
 | Keywords           | w3c, dom, xml, parser, javascript, DOMParser, XMLSerializer |
-| # releases         | 3 |
-| # dependents       | 1360 |
-| # downloads        | 81985170 |
+| # releases         | 6 |
+| # dependents       | 1377 |
+| # downloads        | 84431117 |
 | # stars            | 46 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__environment
 
-Typings are for version 24.9.0
+Typings are for version 26.2.0
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/environment |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 12 |
 | # dependents       | 15 |
-| # downloads        | 105700614 |
+| # downloads        | 109376050 |
 | # stars            | 0 |
 
 ## Links

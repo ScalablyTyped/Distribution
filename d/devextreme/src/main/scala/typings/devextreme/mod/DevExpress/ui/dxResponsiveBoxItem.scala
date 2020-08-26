@@ -1,35 +1,40 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.Col
-import typings.devextreme.mod.global.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxResponsiveBoxItem extends CollectionWidgetItem {
   /** @name dxResponsiveBoxItem.location */
-  var location: js.UndefOr[Col | js.Array[Col]] = js.undefined
+  var location: js.UndefOr[Col | js.Array[Col]] = js.native
 }
 
 object dxResponsiveBoxItem {
   @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    location: Col | js.Array[Col] = null,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxResponsiveBoxItem = {
+  def apply(): dxResponsiveBoxItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxResponsiveBoxItem]
   }
+  @scala.inline
+  implicit class dxResponsiveBoxItemOps[Self <: dxResponsiveBoxItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocationVarargs(value: Col*): Self = this.set("location", js.Array(value :_*))
+    @scala.inline
+    def setLocation(value: Col | js.Array[Col]): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+  }
+  
 }
 

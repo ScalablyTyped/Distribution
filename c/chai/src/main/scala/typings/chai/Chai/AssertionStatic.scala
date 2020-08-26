@@ -13,11 +13,16 @@ trait AssertionStatic
   extends AssertionPrototype
      with Instantiable1[/* target */ js.Any, Assertion]
      with Instantiable2[/* target */ js.Any, /* message */ String, Assertion]
-     with Instantiable3[/* target */ js.Any, /* message */ String, /* ssfi */ js.Function, Assertion]
+     with Instantiable3[
+      /* target */ js.Any, 
+      js.UndefOr[/* message */ String], 
+      /* ssfi */ js.Function, 
+      Assertion
+    ]
      with Instantiable4[
       /* target */ js.Any, 
-      /* message */ String, 
-      /* ssfi */ js.Function, 
+      js.UndefOr[/* message */ String], 
+      js.UndefOr[/* ssfi */ js.Function], 
       /* lockSsfi */ Boolean, 
       Assertion
     ] {

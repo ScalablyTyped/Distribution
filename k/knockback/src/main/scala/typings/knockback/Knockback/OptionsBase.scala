@@ -4,25 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionsBase extends js.Object {
                  // a store used to cache and share view models.
-  var factory: js.UndefOr[Factory] = js.undefined
+  var factory: js.UndefOr[Factory] = js.native
              // a factory used to create view models.
-  var options: js.UndefOr[js.Any] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
+  var options: js.UndefOr[js.Any] = js.native
+  var path: js.UndefOr[String] = js.native
                  // the path to the value (used to create related observables from the factory).
-  var store: js.UndefOr[Store] = js.undefined
+  var store: js.UndefOr[Store] = js.native
 }
 
 object OptionsBase {
   @scala.inline
-  def apply(factory: Factory = null, options: js.Any = null, path: String = null, store: Store = null): OptionsBase = {
+  def apply(): OptionsBase = {
     val __obj = js.Dynamic.literal()
-    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsBase]
   }
+  @scala.inline
+  implicit class OptionsBaseOps[Self <: OptionsBase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFactory(value: Factory): Self = this.set("factory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFactory: Self = this.set("factory", js.undefined)
+    @scala.inline
+    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setStore(value: Store): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+  }
+  
 }
 

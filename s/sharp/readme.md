@@ -10,9 +10,9 @@ High performance Node.js image processing, the fastest module to resize JPEG, PN
 | ------------------ | :-------------: |
 | Full name          | sharp |
 | Keywords           | jpeg, png, webp, tiff, gif, svg, dzi, image, resize, thumbnail, crop, embed, libvips, vips |
-| # releases         | 23 |
-| # dependents       | 916 |
-| # downloads        | 19478948 |
+| # releases         | 21 |
+| # dependents       | 927 |
+| # downloads        | 20121824 |
 | # stars            | 126 |
 
 ## Links

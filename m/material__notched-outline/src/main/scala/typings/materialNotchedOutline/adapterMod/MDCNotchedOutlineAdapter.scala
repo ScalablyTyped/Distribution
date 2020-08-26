@@ -4,46 +4,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MDCNotchedOutlineAdapter extends js.Object {
   /**
     * Adds a class to the root element.
     */
-  def addClass(className: String): Unit
-  /**
-    * Returns the height of the root element.
-    */
-  def getHeight(): Double
-  /**
-    * Returns the idle outline element's computed style value of the given css property `propertyName`.
-    * We achieve this via `getComputedStyle(...).getPropertyValue(propertyName)`.
-    */
-  def getIdleOutlineStyleValue(propertyName: String): String
-  /**
-    * Returns the width of the root element.
-    */
-  def getWidth(): Double
+  def addClass(className: String): Unit = js.native
   /**
     * Removes a class from the root element.
     */
-  def removeClass(className: String): Unit
+  def removeClass(className: String): Unit = js.native
   /**
-    * Sets the "d" attribute of the outline element's SVG path.
+    * Removes the width style property from the notch element.
     */
-  def setOutlinePathAttr(value: String): Unit
+  def removeNotchWidthProperty(): Unit = js.native
+  /**
+    * Sets the width style property of the notch element.
+    */
+  def setNotchWidthProperty(width: Double): Unit = js.native
 }
 
 object MDCNotchedOutlineAdapter {
   @scala.inline
   def apply(
     addClass: String => Unit,
-    getHeight: () => Double,
-    getIdleOutlineStyleValue: String => String,
-    getWidth: () => Double,
     removeClass: String => Unit,
-    setOutlinePathAttr: String => Unit
+    removeNotchWidthProperty: () => Unit,
+    setNotchWidthProperty: Double => Unit
   ): MDCNotchedOutlineAdapter = {
-    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), getHeight = js.Any.fromFunction0(getHeight), getIdleOutlineStyleValue = js.Any.fromFunction1(getIdleOutlineStyleValue), getWidth = js.Any.fromFunction0(getWidth), removeClass = js.Any.fromFunction1(removeClass), setOutlinePathAttr = js.Any.fromFunction1(setOutlinePathAttr))
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), removeClass = js.Any.fromFunction1(removeClass), removeNotchWidthProperty = js.Any.fromFunction0(removeNotchWidthProperty), setNotchWidthProperty = js.Any.fromFunction1(setNotchWidthProperty))
     __obj.asInstanceOf[MDCNotchedOutlineAdapter]
   }
+  @scala.inline
+  implicit class MDCNotchedOutlineAdapterOps[Self <: MDCNotchedOutlineAdapter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddClass(value: String => Unit): Self = this.set("addClass", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveClass(value: String => Unit): Self = this.set("removeClass", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveNotchWidthProperty(value: () => Unit): Self = this.set("removeNotchWidthProperty", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetNotchWidthProperty(value: Double => Unit): Self = this.set("setNotchWidthProperty", js.Any.fromFunction1(value))
+  }
+  
 }
 

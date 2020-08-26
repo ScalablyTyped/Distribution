@@ -10,9 +10,9 @@ Declarative routing for [React Native](https://facebook.github.io/react-native/)
 | ------------------ | :-------------: |
 | Full name          | react-router-navigation |
 | Keywords           | react-native, ios, android, router, navigation, navigator |
-| # releases         | 12 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 28689 |
+| # downloads        | 26602 |
 | # stars            | 0 |
 
 ## Links

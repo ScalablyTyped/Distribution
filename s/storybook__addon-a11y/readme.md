@@ -10,9 +10,9 @@ a11y addon for storybook
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-a11y |
 | Keywords           | a11y, accessibility, addon, storybook, valid, verify |
-| # releases         | 425 |
-| # dependents       | 41 |
-| # downloads        | 5573477 |
+| # releases         | 426 |
+| # dependents       | 43 |
+| # downloads        | 5910899 |
 | # stars            | 0 |
 
 ## Links

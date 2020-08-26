@@ -12,45 +12,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait As[T /* <: SupportedMenuLinkComponent */] extends js.Object {
-  var _ref: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-  var as: js.UndefOr[String] = js.undefined
-  var component: js.UndefOr[ResolvedMenuLinkComponent[T]] = js.undefined
-  var index: js.UndefOr[Double] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Unit]] = js.undefined
-  var setState: js.UndefOr[js.Function1[/* s */ State, PartialState]] = js.undefined
-  var state: js.UndefOr[State] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var to: js.UndefOr[String] = js.undefined
+  var _ref: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var as: js.UndefOr[String] = js.native
+  var component: js.UndefOr[ResolvedMenuLinkComponent[T]] = js.native
+  var index: js.UndefOr[Double] = js.native
+  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.native
+  var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent[HTMLElement], Unit]] = js.native
+  var setState: js.UndefOr[js.Function1[/* s */ State, PartialState]] = js.native
+  var state: js.UndefOr[State] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var to: js.UndefOr[String] = js.native
 }
 
 object As {
   @scala.inline
-  def apply[/* <: typings.reachMenuButton.mod.SupportedMenuLinkComponent */ T](
-    _ref: /* node */ HTMLElement => Unit = null,
-    as: String = null,
-    component: ResolvedMenuLinkComponent[T] = null,
-    index: js.UndefOr[Double] = js.undefined,
-    onClick: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
-    onKeyDown: /* e */ KeyboardEvent[HTMLElement] => Unit = null,
-    setState: /* s */ State => PartialState = null,
-    state: State = null,
-    style: CSSProperties = null,
-    to: String = null
-  ): As[T] = {
+  def apply[/* <: typings.reachMenuButton.mod.SupportedMenuLinkComponent */ T](): As[T] = {
     val __obj = js.Dynamic.literal()
-    if (_ref != null) __obj.updateDynamic("_ref")(js.Any.fromFunction1(_ref))
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (setState != null) __obj.updateDynamic("setState")(js.Any.fromFunction1(setState))
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[As[T]]
   }
+  @scala.inline
+  implicit class AsOps[Self <: As[_], /* <: typings.reachMenuButton.mod.SupportedMenuLinkComponent */ T] (val x: Self with As[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_ref(value: /* node */ HTMLElement => Unit): Self = this.set("_ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def delete_ref: Self = this.set("_ref", js.undefined)
+    @scala.inline
+    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setComponent(value: ResolvedMenuLinkComponent[T]): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setSetState(value: /* s */ State => PartialState): Self = this.set("setState", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetState: Self = this.set("setState", js.undefined)
+    @scala.inline
+    def setState(value: State): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

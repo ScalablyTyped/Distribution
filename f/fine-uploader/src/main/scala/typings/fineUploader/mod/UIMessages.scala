@@ -5,57 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UIMessages extends Messages {
   /**
     * Text sent to `showMessage` when `multiple` is `false` and more than one file is dropped at once
     *
     * @default `'You may only drop one file.'`
     */
-  var tooManyFilesError: js.UndefOr[String] = js.undefined
+  var tooManyFilesError: js.UndefOr[String] = js.native
   /**
     * Text displayed to users who have ancient browsers
     *
     * @default `'Unrecoverable error - the browser does not permit uploading of any kind.'`
     */
-  var unsupportedBrowser: js.UndefOr[String] = js.undefined
+  var unsupportedBrowser: js.UndefOr[String] = js.native
 }
 
 object UIMessages {
   @scala.inline
-  def apply(
-    emptyError: String = null,
-    maxHeightImageError: String = null,
-    maxWidthImageError: String = null,
-    minHeightImageError: String = null,
-    minSizeError: String = null,
-    minWidthImageError: String = null,
-    noFilesError: String = null,
-    onLeave: String = null,
-    retryFailTooManyItemsError: String = null,
-    sizeError: String = null,
-    tooManyFilesError: String = null,
-    tooManyItemsError: String = null,
-    typeError: String = null,
-    unsupportedBrowser: String = null,
-    unsupportedBrowserIos8Safari: String = null
-  ): UIMessages = {
+  def apply(): UIMessages = {
     val __obj = js.Dynamic.literal()
-    if (emptyError != null) __obj.updateDynamic("emptyError")(emptyError.asInstanceOf[js.Any])
-    if (maxHeightImageError != null) __obj.updateDynamic("maxHeightImageError")(maxHeightImageError.asInstanceOf[js.Any])
-    if (maxWidthImageError != null) __obj.updateDynamic("maxWidthImageError")(maxWidthImageError.asInstanceOf[js.Any])
-    if (minHeightImageError != null) __obj.updateDynamic("minHeightImageError")(minHeightImageError.asInstanceOf[js.Any])
-    if (minSizeError != null) __obj.updateDynamic("minSizeError")(minSizeError.asInstanceOf[js.Any])
-    if (minWidthImageError != null) __obj.updateDynamic("minWidthImageError")(minWidthImageError.asInstanceOf[js.Any])
-    if (noFilesError != null) __obj.updateDynamic("noFilesError")(noFilesError.asInstanceOf[js.Any])
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
-    if (retryFailTooManyItemsError != null) __obj.updateDynamic("retryFailTooManyItemsError")(retryFailTooManyItemsError.asInstanceOf[js.Any])
-    if (sizeError != null) __obj.updateDynamic("sizeError")(sizeError.asInstanceOf[js.Any])
-    if (tooManyFilesError != null) __obj.updateDynamic("tooManyFilesError")(tooManyFilesError.asInstanceOf[js.Any])
-    if (tooManyItemsError != null) __obj.updateDynamic("tooManyItemsError")(tooManyItemsError.asInstanceOf[js.Any])
-    if (typeError != null) __obj.updateDynamic("typeError")(typeError.asInstanceOf[js.Any])
-    if (unsupportedBrowser != null) __obj.updateDynamic("unsupportedBrowser")(unsupportedBrowser.asInstanceOf[js.Any])
-    if (unsupportedBrowserIos8Safari != null) __obj.updateDynamic("unsupportedBrowserIos8Safari")(unsupportedBrowserIos8Safari.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIMessages]
   }
+  @scala.inline
+  implicit class UIMessagesOps[Self <: UIMessages] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTooManyFilesError(value: String): Self = this.set("tooManyFilesError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooManyFilesError: Self = this.set("tooManyFilesError", js.undefined)
+    @scala.inline
+    def setUnsupportedBrowser(value: String): Self = this.set("unsupportedBrowser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsupportedBrowser: Self = this.set("unsupportedBrowser", js.undefined)
+  }
+  
 }
 

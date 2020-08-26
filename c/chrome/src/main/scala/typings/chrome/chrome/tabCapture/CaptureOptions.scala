@@ -4,31 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CaptureOptions extends js.Object {
   /** Optional. */
-  var audio: js.UndefOr[Boolean] = js.undefined
+  var audio: js.UndefOr[Boolean] = js.native
   /** Optional. */
-  var audioConstraints: js.UndefOr[MediaStreamConstraint] = js.undefined
+  var audioConstraints: js.UndefOr[MediaStreamConstraint] = js.native
   /** Optional. */
-  var video: js.UndefOr[Boolean] = js.undefined
+  var video: js.UndefOr[Boolean] = js.native
   /** Optional. */
-  var videoConstraints: js.UndefOr[MediaStreamConstraint] = js.undefined
+  var videoConstraints: js.UndefOr[MediaStreamConstraint] = js.native
 }
 
 object CaptureOptions {
   @scala.inline
-  def apply(
-    audio: js.UndefOr[Boolean] = js.undefined,
-    audioConstraints: MediaStreamConstraint = null,
-    video: js.UndefOr[Boolean] = js.undefined,
-    videoConstraints: MediaStreamConstraint = null
-  ): CaptureOptions = {
+  def apply(): CaptureOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(audio)) __obj.updateDynamic("audio")(audio.get.asInstanceOf[js.Any])
-    if (audioConstraints != null) __obj.updateDynamic("audioConstraints")(audioConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.get.asInstanceOf[js.Any])
-    if (videoConstraints != null) __obj.updateDynamic("videoConstraints")(videoConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureOptions]
   }
+  @scala.inline
+  implicit class CaptureOptionsOps[Self <: CaptureOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudio(value: Boolean): Self = this.set("audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudio: Self = this.set("audio", js.undefined)
+    @scala.inline
+    def setAudioConstraints(value: MediaStreamConstraint): Self = this.set("audioConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioConstraints: Self = this.set("audioConstraints", js.undefined)
+    @scala.inline
+    def setVideo(value: Boolean): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+    @scala.inline
+    def setVideoConstraints(value: MediaStreamConstraint): Self = this.set("videoConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoConstraints: Self = this.set("videoConstraints", js.undefined)
+  }
+  
 }
 

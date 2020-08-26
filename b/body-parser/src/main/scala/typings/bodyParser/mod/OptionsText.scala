@@ -1,37 +1,41 @@
 package typings.bodyParser.mod
 
-import typings.node.Buffer
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionsText extends Options {
   /**
     * Specify the default character set for the text content if the charset
     * is not specified in the Content-Type header of the request.
     * Defaults to `utf-8`.
     */
-  var defaultCharset: js.UndefOr[String] = js.undefined
+  var defaultCharset: js.UndefOr[String] = js.native
 }
 
 object OptionsText {
   @scala.inline
-  def apply(
-    defaultCharset: String = null,
-    inflate: js.UndefOr[Boolean] = js.undefined,
-    limit: Double | String = null,
-    `type`: String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, _]) = null,
-    verify: (/* req */ IncomingMessage, /* res */ ServerResponse, /* buf */ Buffer, /* encoding */ String) => Unit = null
-  ): OptionsText = {
+  def apply(): OptionsText = {
     val __obj = js.Dynamic.literal()
-    if (defaultCharset != null) __obj.updateDynamic("defaultCharset")(defaultCharset.asInstanceOf[js.Any])
-    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate.get.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction4(verify))
     __obj.asInstanceOf[OptionsText]
   }
+  @scala.inline
+  implicit class OptionsTextOps[Self <: OptionsText] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultCharset(value: String): Self = this.set("defaultCharset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCharset: Self = this.set("defaultCharset", js.undefined)
+  }
+  
 }
 

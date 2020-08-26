@@ -16,60 +16,108 @@ import scala.scalajs.js.annotation._
   *
   * see http://docs.angular-formly.com/docs/custom-templates#section-formlyconfig-settype-options
   */
+@js.native
 trait ITypeOptions extends js.Object {
-  var apiCheck: js.UndefOr[StringDictionary[js.Function]] = js.undefined
-  var apiCheckFunction: js.UndefOr[String] = js.undefined
+  var apiCheck: js.UndefOr[StringDictionary[js.Function]] = js.native
+  var apiCheckFunction: js.UndefOr[String] = js.native
    //'throw' or 'warn
-  var apiCheckInstance: js.UndefOr[js.Any] = js.undefined
-  var apiCheckOptions: js.UndefOr[js.Object] = js.undefined
-  var controller: js.UndefOr[js.Function | String | js.Array[_]] = js.undefined
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var defaultOptions: js.UndefOr[IFieldConfigurationObject | js.Function] = js.undefined
-  var `extends`: js.UndefOr[String] = js.undefined
-  var link: js.UndefOr[IDirectiveLinkFn[IScope, JQLite, IAttributes, IController]] = js.undefined
-  var name: String
-  var overwriteOk: js.UndefOr[Boolean] = js.undefined
-  var template: js.UndefOr[js.Function | String] = js.undefined
-  var templateUrl: js.UndefOr[js.Function | String] = js.undefined
-  var validateOptions: js.UndefOr[js.Function] = js.undefined
-  var wrapper: js.UndefOr[String | js.Array[String]] = js.undefined
+  var apiCheckInstance: js.UndefOr[js.Any] = js.native
+  var apiCheckOptions: js.UndefOr[js.Object] = js.native
+  var controller: js.UndefOr[js.Function | String | js.Array[_]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var defaultOptions: js.UndefOr[IFieldConfigurationObject | js.Function] = js.native
+  var `extends`: js.UndefOr[String] = js.native
+  var link: js.UndefOr[IDirectiveLinkFn[IScope, JQLite, IAttributes, IController]] = js.native
+  var name: String = js.native
+  var overwriteOk: js.UndefOr[Boolean] = js.native
+  var template: js.UndefOr[js.Function | String] = js.native
+  var templateUrl: js.UndefOr[js.Function | String] = js.native
+  var validateOptions: js.UndefOr[js.Function] = js.native
+  var wrapper: js.UndefOr[String | js.Array[String]] = js.native
 }
 
 object ITypeOptions {
   @scala.inline
-  def apply(
-    name: String,
-    apiCheck: StringDictionary[js.Function] = null,
-    apiCheckFunction: String = null,
-    apiCheckInstance: js.Any = null,
-    apiCheckOptions: js.Object = null,
-    controller: js.Function | String | js.Array[_] = null,
-    data: StringDictionary[js.Any] = null,
-    defaultOptions: IFieldConfigurationObject | js.Function = null,
-    `extends`: String = null,
-    link: (IScope, JQLite, IAttributes, /* controller */ js.UndefOr[IController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit = null,
-    overwriteOk: js.UndefOr[Boolean] = js.undefined,
-    template: js.Function | String = null,
-    templateUrl: js.Function | String = null,
-    validateOptions: js.Function = null,
-    wrapper: String | js.Array[String] = null
-  ): ITypeOptions = {
+  def apply(name: String): ITypeOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (apiCheck != null) __obj.updateDynamic("apiCheck")(apiCheck.asInstanceOf[js.Any])
-    if (apiCheckFunction != null) __obj.updateDynamic("apiCheckFunction")(apiCheckFunction.asInstanceOf[js.Any])
-    if (apiCheckInstance != null) __obj.updateDynamic("apiCheckInstance")(apiCheckInstance.asInstanceOf[js.Any])
-    if (apiCheckOptions != null) __obj.updateDynamic("apiCheckOptions")(apiCheckOptions.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(js.Any.fromFunction5(link))
-    if (!js.isUndefined(overwriteOk)) __obj.updateDynamic("overwriteOk")(overwriteOk.get.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITypeOptions]
   }
+  @scala.inline
+  implicit class ITypeOptionsOps[Self <: ITypeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiCheck(value: StringDictionary[js.Function]): Self = this.set("apiCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiCheck: Self = this.set("apiCheck", js.undefined)
+    @scala.inline
+    def setApiCheckFunction(value: String): Self = this.set("apiCheckFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiCheckFunction: Self = this.set("apiCheckFunction", js.undefined)
+    @scala.inline
+    def setApiCheckInstance(value: js.Any): Self = this.set("apiCheckInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiCheckInstance: Self = this.set("apiCheckInstance", js.undefined)
+    @scala.inline
+    def setApiCheckOptions(value: js.Object): Self = this.set("apiCheckOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiCheckOptions: Self = this.set("apiCheckOptions", js.undefined)
+    @scala.inline
+    def setControllerVarargs(value: js.Any*): Self = this.set("controller", js.Array(value :_*))
+    @scala.inline
+    def setController(value: js.Function | String | js.Array[_]): Self = this.set("controller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteController: Self = this.set("controller", js.undefined)
+    @scala.inline
+    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDefaultOptions(value: IFieldConfigurationObject | js.Function): Self = this.set("defaultOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOptions: Self = this.set("defaultOptions", js.undefined)
+    @scala.inline
+    def setExtends(value: String): Self = this.set("extends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtends: Self = this.set("extends", js.undefined)
+    @scala.inline
+    def setLink(
+      value: (IScope, JQLite, IAttributes, /* controller */ js.UndefOr[IController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit
+    ): Self = this.set("link", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setOverwriteOk(value: Boolean): Self = this.set("overwriteOk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverwriteOk: Self = this.set("overwriteOk", js.undefined)
+    @scala.inline
+    def setTemplate(value: js.Function | String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTemplateUrl(value: js.Function | String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+    @scala.inline
+    def setValidateOptions(value: js.Function): Self = this.set("validateOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateOptions: Self = this.set("validateOptions", js.undefined)
+    @scala.inline
+    def setWrapperVarargs(value: String*): Self = this.set("wrapper", js.Array(value :_*))
+    @scala.inline
+    def setWrapper(value: String | js.Array[String]): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+  }
+  
 }
 

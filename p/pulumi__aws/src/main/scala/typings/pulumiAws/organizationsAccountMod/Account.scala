@@ -52,7 +52,7 @@ class Account protected () extends CustomResource {
   /**
     * Key-value mapping of resource tags.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -66,8 +66,10 @@ object Account extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Account = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Account = js.native
   def get(name: String, id: Input[ID], state: AccountState): Account = js.native
   def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): Account = js.native
   /**

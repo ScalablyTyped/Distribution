@@ -8,33 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("IDBKeyRange")
 @js.native
 class IDBKeyRange ()
-  extends typings.std.IDBKeyRange {
-  /**
-    * Returns lower bound, or undefined if none.
-    */
-  /* CompleteClass */
-  override val lower: js.Any = js.native
-  /**
-    * Returns true if the lower open flag is set, and false otherwise.
-    */
-  /* CompleteClass */
-  override val lowerOpen: scala.Boolean = js.native
-  /**
-    * Returns upper bound, or undefined if none.
-    */
-  /* CompleteClass */
-  override val upper: js.Any = js.native
-  /**
-    * Returns true if the upper open flag is set, and false otherwise.
-    */
-  /* CompleteClass */
-  override val upperOpen: scala.Boolean = js.native
-  /**
-    * Returns true if key is included in the range, and false otherwise.
-    */
-  /* CompleteClass */
-  override def includes(key: js.Any): scala.Boolean = js.native
-}
+  extends typings.std.IDBKeyRange
 
 @JSGlobal("IDBKeyRange")
 @js.native
@@ -44,6 +18,7 @@ object IDBKeyRange
     * Returns a new IDBKeyRange spanning from lower to upper. If lowerOpen is true, lower is not included in the range. If upperOpen is true, upper is not included in the range.
     */
   def bound(lower: js.Any, upper: js.Any): typings.std.IDBKeyRange = js.native
+  def bound(lower: js.Any, upper: js.Any, lowerOpen: js.UndefOr[scala.Nothing], upperOpen: scala.Boolean): typings.std.IDBKeyRange = js.native
   def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean): typings.std.IDBKeyRange = js.native
   def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean, upperOpen: scala.Boolean): typings.std.IDBKeyRange = js.native
   /**

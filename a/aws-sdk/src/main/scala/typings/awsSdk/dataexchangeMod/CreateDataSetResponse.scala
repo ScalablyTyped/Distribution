@@ -54,32 +54,66 @@ trait CreateDataSetResponse extends js.Object {
 
 object CreateDataSetResponse {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    AssetType: AssetType = null,
-    CreatedAt: Timestamp = null,
-    Description: Description = null,
-    Id: Id = null,
-    Name: Name = null,
-    Origin: Origin = null,
-    OriginDetails: OriginDetails = null,
-    SourceId: Id = null,
-    Tags: MapOfString = null,
-    UpdatedAt: Timestamp = null
-  ): CreateDataSetResponse = {
+  def apply(): CreateDataSetResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (AssetType != null) __obj.updateDynamic("AssetType")(AssetType.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Origin != null) __obj.updateDynamic("Origin")(Origin.asInstanceOf[js.Any])
-    if (OriginDetails != null) __obj.updateDynamic("OriginDetails")(OriginDetails.asInstanceOf[js.Any])
-    if (SourceId != null) __obj.updateDynamic("SourceId")(SourceId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (UpdatedAt != null) __obj.updateDynamic("UpdatedAt")(UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSetResponse]
   }
+  @scala.inline
+  implicit class CreateDataSetResponseOps[Self <: CreateDataSetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAssetType(value: AssetType): Self = this.set("AssetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetType: Self = this.set("AssetType", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOrigin(value: Origin): Self = this.set("Origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("Origin", js.undefined)
+    @scala.inline
+    def setOriginDetails(value: OriginDetails): Self = this.set("OriginDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginDetails: Self = this.set("OriginDetails", js.undefined)
+    @scala.inline
+    def setSourceId(value: Id): Self = this.set("SourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceId: Self = this.set("SourceId", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+  }
+  
 }
 

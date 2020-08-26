@@ -6,24 +6,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojoption.ojOptionSettableProperties> */
+@js.native
 trait ojOptionSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object ojOptionSettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    value: js.Any = null
-  ): ojOptionSettablePropertiesLenient = {
+  def apply(): ojOptionSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojOptionSettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojOptionSettablePropertiesLenientOps[Self <: ojOptionSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

@@ -27,6 +27,7 @@ class ResourceVoices protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListVoicesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListVoicesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVoicesResponse] = js.native
   def list(params: ParamsResourceVoicesList): GaxiosPromise[SchemaListVoicesResponse] = js.native
   def list(params: ParamsResourceVoicesList, callback: BodyResponseCallback[SchemaListVoicesResponse]): Unit = js.native
   def list(

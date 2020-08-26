@@ -19,7 +19,7 @@ trait GetJobQueueResult extends js.Object {
     */
   val computeEnvironmentOrders: js.Array[GetJobQueueComputeEnvironmentOrder] = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   val name: String = js.native
@@ -58,5 +58,36 @@ object GetJobQueueResult {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], computeEnvironmentOrders = computeEnvironmentOrders.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusReason = statusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobQueueResult]
   }
+  @scala.inline
+  implicit class GetJobQueueResultOps[Self <: GetJobQueueResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComputeEnvironmentOrdersVarargs(value: GetJobQueueComputeEnvironmentOrder*): Self = this.set("computeEnvironmentOrders", js.Array(value :_*))
+    @scala.inline
+    def setComputeEnvironmentOrders(value: js.Array[GetJobQueueComputeEnvironmentOrder]): Self = this.set("computeEnvironmentOrders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+  }
+  
 }
 

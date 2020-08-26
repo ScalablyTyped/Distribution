@@ -20,7 +20,7 @@ object Quads {
     __obj.asInstanceOf[Quads]
   }
   @scala.inline
-  def GraphQuads(name: Term, triples: js.Array[Triple], `type`: graph): Quads = {
+  def GraphQuads(name: IriTerm, triples: js.Array[Triple], `type`: graph): Quads = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], triples = triples.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Quads]

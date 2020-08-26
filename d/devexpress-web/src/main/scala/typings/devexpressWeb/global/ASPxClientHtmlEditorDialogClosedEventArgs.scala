@@ -10,21 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientHtmlEditorDialogClosedEventArgs")
 @js.native
 class ASPxClientHtmlEditorDialogClosedEventArgs ()
-  extends typings.devexpressWeb.ASPxClientHtmlEditorDialogCloseEventArgs {
-  /**
-    * Gets the dialog object related to the event.
-    */
-  /* CompleteClass */
-  override var dialog: typings.devexpressWeb.ASPxClientHtmlEditorDialogBase = js.native
-  /**
-    * Gets the dialog name related to the event.
-    */
-  /* CompleteClass */
-  override var dialogName: String = js.native
-  /**
-    * Gets a string that contains specific information (if any) passed from the client side for server-side processing.
-    */
-  /* CompleteClass */
-  override var parameter: js.Any = js.native
-}
+  extends typings.devexpressWeb.ASPxClientHtmlEditorDialogCloseEventArgs
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object switchCase extends js.Object {
   def apply(): SwitchCase_ = js.native
+  def apply(test: js.UndefOr[scala.Nothing], consequent: js.Array[Statement]): SwitchCase_ = js.native
   def apply(test: Expression): SwitchCase_ = js.native
   def apply(test: Expression, consequent: js.Array[Statement]): SwitchCase_ = js.native
 }

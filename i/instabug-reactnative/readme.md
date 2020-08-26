@@ -1,7 +1,7 @@
 
 # Scala.js typings for instabug-reactnative
 
-Typings are for version 9.1.1
+Typings are for version 9.1.6
 
 ## Library description:
 React Native plugin for integrating the Instabug SDK
@@ -10,9 +10,9 @@ React Native plugin for integrating the Instabug SDK
 | ------------------ | :-------------: |
 | Full name          | instabug-reactnative |
 | Keywords           | react-native, bug, reporting, feedback, instabug, sdk |
-| # releases         | 95 |
+| # releases         | 89 |
 | # dependents       | 0 |
-| # downloads        | 340823 |
+| # downloads        | 344207 |
 | # stars            | 0 |
 
 ## Links

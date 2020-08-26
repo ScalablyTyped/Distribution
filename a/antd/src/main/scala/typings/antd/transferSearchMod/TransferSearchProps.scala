@@ -8,33 +8,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransferSearchProps extends js.Object {
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var handleClear: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ FormEvent[HTMLElement], Unit]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
+  var handleClear: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* e */ FormEvent[HTMLElement], Unit]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.native
 }
 
 object TransferSearchProps {
   @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    handleClear: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
-    onChange: /* e */ FormEvent[HTMLElement] => Unit = null,
-    placeholder: String = null,
-    prefixCls: String = null,
-    value: String = null
-  ): TransferSearchProps = {
+  def apply(): TransferSearchProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (handleClear != null) __obj.updateDynamic("handleClear")(js.Any.fromFunction1(handleClear))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferSearchProps]
   }
+  @scala.inline
+  implicit class TransferSearchPropsOps[Self <: TransferSearchProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setHandleClear(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("handleClear", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHandleClear: Self = this.set("handleClear", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* e */ FormEvent[HTMLElement] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

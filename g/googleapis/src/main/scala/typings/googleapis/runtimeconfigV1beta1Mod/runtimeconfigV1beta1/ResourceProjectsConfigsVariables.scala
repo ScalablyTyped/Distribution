@@ -34,6 +34,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaVariable] = js.native
   def create(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def create(params: ParamsResourceProjectsConfigsVariablesCreate): GaxiosPromise[SchemaVariable] = js.native
   def create(
     params: ParamsResourceProjectsConfigsVariablesCreate,
@@ -68,6 +69,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsConfigsVariablesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsConfigsVariablesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -95,6 +97,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaVariable] = js.native
   def get(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def get(params: ParamsResourceProjectsConfigsVariablesGet): GaxiosPromise[SchemaVariable] = js.native
   def get(params: ParamsResourceProjectsConfigsVariablesGet, callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
   def get(
@@ -129,6 +132,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListVariablesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListVariablesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVariablesResponse] = js.native
   def list(params: ParamsResourceProjectsConfigsVariablesList): GaxiosPromise[SchemaListVariablesResponse] = js.native
   def list(
     params: ParamsResourceProjectsConfigsVariablesList,
@@ -164,6 +168,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsConfigsVariablesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsConfigsVariablesTestiampermissions,
@@ -195,6 +200,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaVariable] = js.native
   def update(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def update(params: ParamsResourceProjectsConfigsVariablesUpdate): GaxiosPromise[SchemaVariable] = js.native
   def update(
     params: ParamsResourceProjectsConfigsVariablesUpdate,
@@ -235,6 +241,7 @@ class ResourceProjectsConfigsVariables protected () extends js.Object {
     */
   def watch(): GaxiosPromise[SchemaVariable] = js.native
   def watch(callback: BodyResponseCallback[SchemaVariable]): Unit = js.native
+  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVariable] = js.native
   def watch(params: ParamsResourceProjectsConfigsVariablesWatch): GaxiosPromise[SchemaVariable] = js.native
   def watch(
     params: ParamsResourceProjectsConfigsVariablesWatch,

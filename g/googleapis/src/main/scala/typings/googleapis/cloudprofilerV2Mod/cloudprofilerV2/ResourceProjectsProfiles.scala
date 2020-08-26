@@ -37,6 +37,7 @@ class ResourceProjectsProfiles protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaProfile] = js.native
   def create(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
   def create(params: ParamsResourceProjectsProfilesCreate): GaxiosPromise[SchemaProfile] = js.native
   def create(params: ParamsResourceProjectsProfilesCreate, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
   def create(
@@ -67,6 +68,7 @@ class ResourceProjectsProfiles protected () extends js.Object {
     */
   def createOffline(): GaxiosPromise[SchemaProfile] = js.native
   def createOffline(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
+  def createOffline(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
   def createOffline(params: ParamsResourceProjectsProfilesCreateoffline): GaxiosPromise[SchemaProfile] = js.native
   def createOffline(params: ParamsResourceProjectsProfilesCreateoffline, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
   def createOffline(
@@ -99,6 +101,7 @@ class ResourceProjectsProfiles protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaProfile] = js.native
   def patch(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
   def patch(params: ParamsResourceProjectsProfilesPatch): GaxiosPromise[SchemaProfile] = js.native
   def patch(params: ParamsResourceProjectsProfilesPatch, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
   def patch(

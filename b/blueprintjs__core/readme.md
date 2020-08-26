@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__core
 
-Typings are for version 3.29.0
+Typings are for version 3.30.1
 
 ## Library description:
 Core styles & components
@@ -10,9 +10,9 @@ Core styles & components
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/core |
 | Keywords           | palantir, blueprint, components, styles, theme, ui |
-| # releases         | 65 |
-| # dependents       | 138 |
-| # downloads        | 3508959 |
+| # releases         | 67 |
+| # dependents       | 140 |
+| # downloads        | 3660375 |
 | # stars            | 6 |
 
 ## Links

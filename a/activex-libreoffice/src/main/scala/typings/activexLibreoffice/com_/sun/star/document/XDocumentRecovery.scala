@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** is the interface to be implemented by documents who wish to participate in the document emergency-save / recovery process. */
+@js.native
 trait XDocumentRecovery extends js.Object {
   /**
     * recovers the document after a previous emergency or session save.
@@ -24,7 +25,7 @@ trait XDocumentRecovery extends js.Object {
     * @param MediaDescriptor contains additional arguments for the load process, for instance an StatusIndicator.
     * @see MediaDescriptor
     */
-  def recoverFromFile(SourceLocation: String, SalvagedFile: String, MediaDescriptor: SeqEquiv[PropertyValue]): Unit
+  def recoverFromFile(SourceLocation: String, SalvagedFile: String, MediaDescriptor: SeqEquiv[PropertyValue]): Unit = js.native
   /**
     * does an emergency save of the document
     *
@@ -33,7 +34,7 @@ trait XDocumentRecovery extends js.Object {
     * @param MediaDescriptor contains additional arguments for the save process, for instance an StatusIndicator.
     * @see MediaDescriptor
     */
-  def storeToRecoveryFile(TargetLocation: String, MediaDescriptor: SeqEquiv[PropertyValue]): Unit
+  def storeToRecoveryFile(TargetLocation: String, MediaDescriptor: SeqEquiv[PropertyValue]): Unit = js.native
   /**
     * determines whether the document has been modified since the last call to {@link storeToRecoveryFile()} .
     *
@@ -50,7 +51,7 @@ trait XDocumentRecovery extends js.Object {
     * However, in such a case, the document might be saved more often than needed. In particular during the periodic session save, this might become a
     * problem when saving is expensive, for a single document or the sum of all open documents.
     */
-  def wasModifiedSinceLastSave(): Boolean
+  def wasModifiedSinceLastSave(): Boolean = js.native
 }
 
 object XDocumentRecovery {
@@ -63,5 +64,24 @@ object XDocumentRecovery {
     val __obj = js.Dynamic.literal(recoverFromFile = js.Any.fromFunction3(recoverFromFile), storeToRecoveryFile = js.Any.fromFunction2(storeToRecoveryFile), wasModifiedSinceLastSave = js.Any.fromFunction0(wasModifiedSinceLastSave))
     __obj.asInstanceOf[XDocumentRecovery]
   }
+  @scala.inline
+  implicit class XDocumentRecoveryOps[Self <: XDocumentRecovery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecoverFromFile(value: (String, String, SeqEquiv[PropertyValue]) => Unit): Self = this.set("recoverFromFile", js.Any.fromFunction3(value))
+    @scala.inline
+    def setStoreToRecoveryFile(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = this.set("storeToRecoveryFile", js.Any.fromFunction2(value))
+    @scala.inline
+    def setWasModifiedSinceLastSave(value: () => Boolean): Self = this.set("wasModifiedSinceLastSave", js.Any.fromFunction0(value))
+  }
+  
 }
 

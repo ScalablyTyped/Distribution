@@ -6,63 +6,108 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EditorName extends js.Object {
-  var cancel: js.UndefOr[Boolean] = js.undefined
-  var component: js.UndefOr[dxFilterBuilder] = js.undefined
-  var dataField: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var editorElement: js.UndefOr[dxElement] = js.undefined
-  var editorName: js.UndefOr[String] = js.undefined
-  var editorOptions: js.UndefOr[js.Any] = js.undefined
-  var element: js.UndefOr[dxElement] = js.undefined
-  var filterOperation: js.UndefOr[String] = js.undefined
-  var model: js.UndefOr[js.Any] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var rtlEnabled: js.UndefOr[Boolean] = js.undefined
-  var setValue: js.UndefOr[js.Any] = js.undefined
-  var updateValueTimeout: js.UndefOr[Double] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
+  var component: js.UndefOr[dxFilterBuilder] = js.native
+  var dataField: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var editorElement: js.UndefOr[dxElement] = js.native
+  var editorName: js.UndefOr[String] = js.native
+  var editorOptions: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[dxElement] = js.native
+  var filterOperation: js.UndefOr[String] = js.native
+  var model: js.UndefOr[js.Any] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var rtlEnabled: js.UndefOr[Boolean] = js.native
+  var setValue: js.UndefOr[js.Any] = js.native
+  var updateValueTimeout: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object EditorName {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    component: dxFilterBuilder = null,
-    dataField: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    editorElement: dxElement = null,
-    editorName: String = null,
-    editorOptions: js.Any = null,
-    element: dxElement = null,
-    filterOperation: String = null,
-    model: js.Any = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    setValue: js.Any = null,
-    updateValueTimeout: js.UndefOr[Double] = js.undefined,
-    value: js.Any = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): EditorName = {
+  def apply(): EditorName = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (dataField != null) __obj.updateDynamic("dataField")(dataField.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (editorElement != null) __obj.updateDynamic("editorElement")(editorElement.asInstanceOf[js.Any])
-    if (editorName != null) __obj.updateDynamic("editorName")(editorName.asInstanceOf[js.Any])
-    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (filterOperation != null) __obj.updateDynamic("filterOperation")(filterOperation.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateValueTimeout)) __obj.updateDynamic("updateValueTimeout")(updateValueTimeout.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorName]
   }
+  @scala.inline
+  implicit class EditorNameOps[Self <: EditorName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setComponent(value: dxFilterBuilder): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setDataField(value: String): Self = this.set("dataField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataField: Self = this.set("dataField", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setEditorElement(value: dxElement): Self = this.set("editorElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorElement: Self = this.set("editorElement", js.undefined)
+    @scala.inline
+    def setEditorName(value: String): Self = this.set("editorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorName: Self = this.set("editorName", js.undefined)
+    @scala.inline
+    def setEditorOptions(value: js.Any): Self = this.set("editorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorOptions: Self = this.set("editorOptions", js.undefined)
+    @scala.inline
+    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setFilterOperation(value: String): Self = this.set("filterOperation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterOperation: Self = this.set("filterOperation", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRtlEnabled(value: Boolean): Self = this.set("rtlEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtlEnabled: Self = this.set("rtlEnabled", js.undefined)
+    @scala.inline
+    def setSetValue(value: js.Any): Self = this.set("setValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    @scala.inline
+    def setUpdateValueTimeout(value: Double): Self = this.set("updateValueTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateValueTimeout: Self = this.set("updateValueTimeout", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

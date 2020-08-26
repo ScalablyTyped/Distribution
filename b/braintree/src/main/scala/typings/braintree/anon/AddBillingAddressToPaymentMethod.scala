@@ -4,51 +4,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddBillingAddressToPaymentMethod extends js.Object {
-  var addBillingAddressToPaymentMethod: js.UndefOr[Boolean] = js.undefined
-  var holdInEscrow: js.UndefOr[Boolean] = js.undefined
-  var paypal: js.UndefOr[CustomField] = js.undefined
-  var skipAdvancedFraudChecking: js.UndefOr[Boolean] = js.undefined
-  var skipAvs: js.UndefOr[Boolean] = js.undefined
-  var skipCvv: js.UndefOr[Boolean] = js.undefined
-  var storeInVault: js.UndefOr[Boolean] = js.undefined
-  var storeInVaultOnSuccess: js.UndefOr[Boolean] = js.undefined
-  var storeShippingAddressInVault: js.UndefOr[Boolean] = js.undefined
-  var submitForSettlement: js.UndefOr[Boolean] = js.undefined
-  var threeDSecure: js.UndefOr[Required] = js.undefined
-  var venmo: js.UndefOr[ProfileId] = js.undefined
+  var addBillingAddressToPaymentMethod: js.UndefOr[Boolean] = js.native
+  var holdInEscrow: js.UndefOr[Boolean] = js.native
+  var paypal: js.UndefOr[CustomField] = js.native
+  var skipAdvancedFraudChecking: js.UndefOr[Boolean] = js.native
+  var skipAvs: js.UndefOr[Boolean] = js.native
+  var skipCvv: js.UndefOr[Boolean] = js.native
+  var storeInVault: js.UndefOr[Boolean] = js.native
+  var storeInVaultOnSuccess: js.UndefOr[Boolean] = js.native
+  var storeShippingAddressInVault: js.UndefOr[Boolean] = js.native
+  var submitForSettlement: js.UndefOr[Boolean] = js.native
+  var threeDSecure: js.UndefOr[Required] = js.native
+  var venmo: js.UndefOr[ProfileId] = js.native
 }
 
 object AddBillingAddressToPaymentMethod {
   @scala.inline
-  def apply(
-    addBillingAddressToPaymentMethod: js.UndefOr[Boolean] = js.undefined,
-    holdInEscrow: js.UndefOr[Boolean] = js.undefined,
-    paypal: CustomField = null,
-    skipAdvancedFraudChecking: js.UndefOr[Boolean] = js.undefined,
-    skipAvs: js.UndefOr[Boolean] = js.undefined,
-    skipCvv: js.UndefOr[Boolean] = js.undefined,
-    storeInVault: js.UndefOr[Boolean] = js.undefined,
-    storeInVaultOnSuccess: js.UndefOr[Boolean] = js.undefined,
-    storeShippingAddressInVault: js.UndefOr[Boolean] = js.undefined,
-    submitForSettlement: js.UndefOr[Boolean] = js.undefined,
-    threeDSecure: Required = null,
-    venmo: ProfileId = null
-  ): AddBillingAddressToPaymentMethod = {
+  def apply(): AddBillingAddressToPaymentMethod = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addBillingAddressToPaymentMethod)) __obj.updateDynamic("addBillingAddressToPaymentMethod")(addBillingAddressToPaymentMethod.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(holdInEscrow)) __obj.updateDynamic("holdInEscrow")(holdInEscrow.get.asInstanceOf[js.Any])
-    if (paypal != null) __obj.updateDynamic("paypal")(paypal.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAdvancedFraudChecking)) __obj.updateDynamic("skipAdvancedFraudChecking")(skipAdvancedFraudChecking.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAvs)) __obj.updateDynamic("skipAvs")(skipAvs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipCvv)) __obj.updateDynamic("skipCvv")(skipCvv.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeInVault)) __obj.updateDynamic("storeInVault")(storeInVault.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeInVaultOnSuccess)) __obj.updateDynamic("storeInVaultOnSuccess")(storeInVaultOnSuccess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeShippingAddressInVault)) __obj.updateDynamic("storeShippingAddressInVault")(storeShippingAddressInVault.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(submitForSettlement)) __obj.updateDynamic("submitForSettlement")(submitForSettlement.get.asInstanceOf[js.Any])
-    if (threeDSecure != null) __obj.updateDynamic("threeDSecure")(threeDSecure.asInstanceOf[js.Any])
-    if (venmo != null) __obj.updateDynamic("venmo")(venmo.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddBillingAddressToPaymentMethod]
   }
+  @scala.inline
+  implicit class AddBillingAddressToPaymentMethodOps[Self <: AddBillingAddressToPaymentMethod] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddBillingAddressToPaymentMethod(value: Boolean): Self = this.set("addBillingAddressToPaymentMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddBillingAddressToPaymentMethod: Self = this.set("addBillingAddressToPaymentMethod", js.undefined)
+    @scala.inline
+    def setHoldInEscrow(value: Boolean): Self = this.set("holdInEscrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoldInEscrow: Self = this.set("holdInEscrow", js.undefined)
+    @scala.inline
+    def setPaypal(value: CustomField): Self = this.set("paypal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaypal: Self = this.set("paypal", js.undefined)
+    @scala.inline
+    def setSkipAdvancedFraudChecking(value: Boolean): Self = this.set("skipAdvancedFraudChecking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipAdvancedFraudChecking: Self = this.set("skipAdvancedFraudChecking", js.undefined)
+    @scala.inline
+    def setSkipAvs(value: Boolean): Self = this.set("skipAvs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipAvs: Self = this.set("skipAvs", js.undefined)
+    @scala.inline
+    def setSkipCvv(value: Boolean): Self = this.set("skipCvv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipCvv: Self = this.set("skipCvv", js.undefined)
+    @scala.inline
+    def setStoreInVault(value: Boolean): Self = this.set("storeInVault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreInVault: Self = this.set("storeInVault", js.undefined)
+    @scala.inline
+    def setStoreInVaultOnSuccess(value: Boolean): Self = this.set("storeInVaultOnSuccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreInVaultOnSuccess: Self = this.set("storeInVaultOnSuccess", js.undefined)
+    @scala.inline
+    def setStoreShippingAddressInVault(value: Boolean): Self = this.set("storeShippingAddressInVault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreShippingAddressInVault: Self = this.set("storeShippingAddressInVault", js.undefined)
+    @scala.inline
+    def setSubmitForSettlement(value: Boolean): Self = this.set("submitForSettlement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitForSettlement: Self = this.set("submitForSettlement", js.undefined)
+    @scala.inline
+    def setThreeDSecure(value: Required): Self = this.set("threeDSecure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreeDSecure: Self = this.set("threeDSecure", js.undefined)
+    @scala.inline
+    def setVenmo(value: ProfileId): Self = this.set("venmo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVenmo: Self = this.set("venmo", js.undefined)
+  }
+  
 }
 

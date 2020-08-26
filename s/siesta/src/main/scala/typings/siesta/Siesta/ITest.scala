@@ -20,7 +20,29 @@ trait ITest
   var isReadyTimeout: Double = js.native
   def beginAsync(time: Double, errback: js.Function): js.Any = js.native
   def compareObjects(obj1: js.Any, obj2: js.Any): Boolean = js.native
+  def compareObjects(
+    obj1: js.Any,
+    obj2: js.Any,
+    strict: js.UndefOr[scala.Nothing],
+    onlyPrimitives: js.UndefOr[scala.Nothing],
+    asObjects: Boolean
+  ): Boolean = js.native
+  def compareObjects(obj1: js.Any, obj2: js.Any, strict: js.UndefOr[scala.Nothing], onlyPrimitives: Boolean): Boolean = js.native
+  def compareObjects(
+    obj1: js.Any,
+    obj2: js.Any,
+    strict: js.UndefOr[scala.Nothing],
+    onlyPrimitives: Boolean,
+    asObjects: Boolean
+  ): Boolean = js.native
   def compareObjects(obj1: js.Any, obj2: js.Any, strict: Boolean): Boolean = js.native
+  def compareObjects(
+    obj1: js.Any,
+    obj2: js.Any,
+    strict: Boolean,
+    onlyPrimitives: js.UndefOr[scala.Nothing],
+    asObjects: Boolean
+  ): Boolean = js.native
   def compareObjects(obj1: js.Any, obj2: js.Any, strict: Boolean, onlyPrimitives: Boolean): Boolean = js.native
   def compareObjects(obj1: js.Any, obj2: js.Any, strict: Boolean, onlyPrimitives: Boolean, asObjects: Boolean): Boolean = js.native
   def diag(desc: String): Unit = js.native

@@ -1,8 +1,8 @@
 package typings.apolloServerExpress.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.interfacesMod.IDelegateToSchemaOptions
+import typings.graphqlToolsDelegate.typesMod.IDelegateToSchemaOptions
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server-express", "delegateToSchema")
 @js.native
 object delegateToSchema extends js.Object {
-  def apply(options: GraphQLSchema, args: js.Any*): js.Promise[_] = js.native
-  def apply(options: IDelegateToSchemaOptions[StringDictionary[_]], args: js.Any*): js.Promise[_] = js.native
+  def apply(options: GraphQLSchema): js.Any = js.native
+  def apply(options: IDelegateToSchemaOptions[Record[String, _], Record[String, _]]): js.Any = js.native
 }
 

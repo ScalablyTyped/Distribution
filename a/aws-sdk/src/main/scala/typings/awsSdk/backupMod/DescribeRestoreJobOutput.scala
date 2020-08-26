@@ -62,36 +62,74 @@ trait DescribeRestoreJobOutput extends js.Object {
 
 object DescribeRestoreJobOutput {
   @scala.inline
-  def apply(
-    AccountId: AccountId = null,
-    BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
-    CompletionDate: timestamp = null,
-    CreatedResourceArn: ARN = null,
-    CreationDate: timestamp = null,
-    ExpectedCompletionTimeMinutes: js.UndefOr[Long_] = js.undefined,
-    IamRoleArn: IAMRoleArn = null,
-    PercentDone: String = null,
-    RecoveryPointArn: ARN = null,
-    ResourceType: ResourceType = null,
-    RestoreJobId: String = null,
-    Status: RestoreJobStatus = null,
-    StatusMessage: String = null
-  ): DescribeRestoreJobOutput = {
+  def apply(): DescribeRestoreJobOutput = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
-    if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
-    if (CreatedResourceArn != null) __obj.updateDynamic("CreatedResourceArn")(CreatedResourceArn.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExpectedCompletionTimeMinutes)) __obj.updateDynamic("ExpectedCompletionTimeMinutes")(ExpectedCompletionTimeMinutes.get.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (PercentDone != null) __obj.updateDynamic("PercentDone")(PercentDone.asInstanceOf[js.Any])
-    if (RecoveryPointArn != null) __obj.updateDynamic("RecoveryPointArn")(RecoveryPointArn.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (RestoreJobId != null) __obj.updateDynamic("RestoreJobId")(RestoreJobId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRestoreJobOutput]
   }
+  @scala.inline
+  implicit class DescribeRestoreJobOutputOps[Self <: DescribeRestoreJobOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setBackupSizeInBytes(value: Long_): Self = this.set("BackupSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupSizeInBytes: Self = this.set("BackupSizeInBytes", js.undefined)
+    @scala.inline
+    def setCompletionDate(value: timestamp): Self = this.set("CompletionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionDate: Self = this.set("CompletionDate", js.undefined)
+    @scala.inline
+    def setCreatedResourceArn(value: ARN): Self = this.set("CreatedResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedResourceArn: Self = this.set("CreatedResourceArn", js.undefined)
+    @scala.inline
+    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setExpectedCompletionTimeMinutes(value: Long_): Self = this.set("ExpectedCompletionTimeMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedCompletionTimeMinutes: Self = this.set("ExpectedCompletionTimeMinutes", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: IAMRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    @scala.inline
+    def setPercentDone(value: String): Self = this.set("PercentDone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentDone: Self = this.set("PercentDone", js.undefined)
+    @scala.inline
+    def setRecoveryPointArn(value: ARN): Self = this.set("RecoveryPointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecoveryPointArn: Self = this.set("RecoveryPointArn", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setRestoreJobId(value: String): Self = this.set("RestoreJobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestoreJobId: Self = this.set("RestoreJobId", js.undefined)
+    @scala.inline
+    def setStatus(value: RestoreJobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+  }
+  
 }
 

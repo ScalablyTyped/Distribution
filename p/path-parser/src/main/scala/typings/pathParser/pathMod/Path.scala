@@ -28,6 +28,7 @@ class Path[T /* <: Record[String, _] */] protected () extends js.Object {
   def build(): String = js.native
   def build(params: T): String = js.native
   def build(params: T, opts: PathBuildOptions): String = js.native
+  def build(params: js.UndefOr[scala.Nothing], opts: PathBuildOptions): String = js.native
   def isQueryParam(name: String): Boolean = js.native
   def isSpatParam(name: String): Boolean = js.native
   def partialTest(path: String): TestMatch[T] = js.native

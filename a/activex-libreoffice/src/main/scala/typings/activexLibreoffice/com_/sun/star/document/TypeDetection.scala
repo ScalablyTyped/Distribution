@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * ExtendedTypeDetection} services to look into the document stream. Last mode can be suppressed to perform the operation. Of course the results can't be
   * guaranteed then. (e.g. in case the extension was changed)
   */
+@js.native
 trait TypeDetection
   extends XNameContainer
      with XTypeDetection

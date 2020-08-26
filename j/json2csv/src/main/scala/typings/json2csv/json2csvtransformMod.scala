@@ -80,6 +80,7 @@ object json2csvtransformMod extends js.Object {
   // implements JSON2CSVBase<T>
   class default[T] () extends JSON2CSVTransform[T] {
     def this(opts: Options[T]) = this()
+    def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
   

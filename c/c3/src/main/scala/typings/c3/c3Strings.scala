@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 object c3Strings {
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `4` extends js.Object
   
   @js.native
   sealed trait MaxMin extends js.Object
@@ -199,7 +199,7 @@ object c3Strings {
        with YAxisName
   
   @scala.inline
-  def `2`: `2` = "2".asInstanceOf[`2`]
+  def `4`: `4` = "4".asInstanceOf[`4`]
   @scala.inline
   def MaxMin: MaxMin = "MaxMin".asInstanceOf[MaxMin]
   @scala.inline

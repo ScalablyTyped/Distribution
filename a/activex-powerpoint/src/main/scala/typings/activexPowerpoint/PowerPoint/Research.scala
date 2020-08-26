@@ -16,6 +16,13 @@ trait Research extends js.Object {
     * @param boolean [LaunchQuery=true]
     */
   def Query(ServiceID: String, QueryString: js.Any, QueryLanguage: js.Any): Unit = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: js.Any,
+    QueryLanguage: js.Any,
+    UseSelection: js.UndefOr[scala.Nothing],
+    LaunchQuery: Boolean
+  ): Unit = js.native
   def Query(ServiceID: String, QueryString: js.Any, QueryLanguage: js.Any, UseSelection: Boolean): Unit = js.native
   def Query(
     ServiceID: String,

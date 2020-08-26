@@ -15,6 +15,13 @@ class ClassMethod protected () extends AbstractClassPart {
     name: String,
     params: js.Array[FnParam],
     body: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[StmtModifier]
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    body: js.Array[Statement],
     `type`: Null,
     modifiers: js.Array[StmtModifier]
   ) = this()
@@ -23,6 +30,13 @@ class ClassMethod protected () extends AbstractClassPart {
     params: js.Array[FnParam],
     body: js.Array[Statement],
     `type`: Type,
+    modifiers: js.Array[StmtModifier]
+  ) = this()
+  def this(
+    name: Null,
+    params: js.Array[FnParam],
+    body: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
     modifiers: js.Array[StmtModifier]
   ) = this()
   def this(

@@ -82,46 +82,96 @@ trait Deployment extends js.Object {
 
 object Deployment {
   @scala.inline
-  def apply(
-    ApplicationId: Id = null,
-    CompletedAt: Iso8601DateTime = null,
-    ConfigurationLocationUri: Uri = null,
-    ConfigurationName: Name = null,
-    ConfigurationProfileId: Id = null,
-    ConfigurationVersion: Version = null,
-    DeploymentDurationInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined,
-    DeploymentNumber: js.UndefOr[Integer] = js.undefined,
-    DeploymentStrategyId: Id = null,
-    Description: Description = null,
-    EnvironmentId: Id = null,
-    EventLog: DeploymentEvents = null,
-    FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined,
-    GrowthFactor: js.UndefOr[Percentage] = js.undefined,
-    GrowthType: GrowthType = null,
-    PercentageComplete: js.UndefOr[Percentage] = js.undefined,
-    StartedAt: Iso8601DateTime = null,
-    State: DeploymentState = null
-  ): Deployment = {
+  def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (CompletedAt != null) __obj.updateDynamic("CompletedAt")(CompletedAt.asInstanceOf[js.Any])
-    if (ConfigurationLocationUri != null) __obj.updateDynamic("ConfigurationLocationUri")(ConfigurationLocationUri.asInstanceOf[js.Any])
-    if (ConfigurationName != null) __obj.updateDynamic("ConfigurationName")(ConfigurationName.asInstanceOf[js.Any])
-    if (ConfigurationProfileId != null) __obj.updateDynamic("ConfigurationProfileId")(ConfigurationProfileId.asInstanceOf[js.Any])
-    if (ConfigurationVersion != null) __obj.updateDynamic("ConfigurationVersion")(ConfigurationVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeploymentDurationInMinutes)) __obj.updateDynamic("DeploymentDurationInMinutes")(DeploymentDurationInMinutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeploymentNumber)) __obj.updateDynamic("DeploymentNumber")(DeploymentNumber.get.asInstanceOf[js.Any])
-    if (DeploymentStrategyId != null) __obj.updateDynamic("DeploymentStrategyId")(DeploymentStrategyId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EnvironmentId != null) __obj.updateDynamic("EnvironmentId")(EnvironmentId.asInstanceOf[js.Any])
-    if (EventLog != null) __obj.updateDynamic("EventLog")(EventLog.asInstanceOf[js.Any])
-    if (!js.isUndefined(FinalBakeTimeInMinutes)) __obj.updateDynamic("FinalBakeTimeInMinutes")(FinalBakeTimeInMinutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GrowthFactor)) __obj.updateDynamic("GrowthFactor")(GrowthFactor.get.asInstanceOf[js.Any])
-    if (GrowthType != null) __obj.updateDynamic("GrowthType")(GrowthType.asInstanceOf[js.Any])
-    if (!js.isUndefined(PercentageComplete)) __obj.updateDynamic("PercentageComplete")(PercentageComplete.get.asInstanceOf[js.Any])
-    if (StartedAt != null) __obj.updateDynamic("StartedAt")(StartedAt.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
   }
+  @scala.inline
+  implicit class DeploymentOps[Self <: Deployment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Id): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    @scala.inline
+    def setCompletedAt(value: Iso8601DateTime): Self = this.set("CompletedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedAt: Self = this.set("CompletedAt", js.undefined)
+    @scala.inline
+    def setConfigurationLocationUri(value: Uri): Self = this.set("ConfigurationLocationUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationLocationUri: Self = this.set("ConfigurationLocationUri", js.undefined)
+    @scala.inline
+    def setConfigurationName(value: Name): Self = this.set("ConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationName: Self = this.set("ConfigurationName", js.undefined)
+    @scala.inline
+    def setConfigurationProfileId(value: Id): Self = this.set("ConfigurationProfileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationProfileId: Self = this.set("ConfigurationProfileId", js.undefined)
+    @scala.inline
+    def setConfigurationVersion(value: Version): Self = this.set("ConfigurationVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationVersion: Self = this.set("ConfigurationVersion", js.undefined)
+    @scala.inline
+    def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = this.set("DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentDurationInMinutes: Self = this.set("DeploymentDurationInMinutes", js.undefined)
+    @scala.inline
+    def setDeploymentNumber(value: Integer): Self = this.set("DeploymentNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentNumber: Self = this.set("DeploymentNumber", js.undefined)
+    @scala.inline
+    def setDeploymentStrategyId(value: Id): Self = this.set("DeploymentStrategyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentStrategyId: Self = this.set("DeploymentStrategyId", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEnvironmentId(value: Id): Self = this.set("EnvironmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentId: Self = this.set("EnvironmentId", js.undefined)
+    @scala.inline
+    def setEventLogVarargs(value: DeploymentEvent*): Self = this.set("EventLog", js.Array(value :_*))
+    @scala.inline
+    def setEventLog(value: DeploymentEvents): Self = this.set("EventLog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventLog: Self = this.set("EventLog", js.undefined)
+    @scala.inline
+    def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = this.set("FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalBakeTimeInMinutes: Self = this.set("FinalBakeTimeInMinutes", js.undefined)
+    @scala.inline
+    def setGrowthFactor(value: Percentage): Self = this.set("GrowthFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowthFactor: Self = this.set("GrowthFactor", js.undefined)
+    @scala.inline
+    def setGrowthType(value: GrowthType): Self = this.set("GrowthType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowthType: Self = this.set("GrowthType", js.undefined)
+    @scala.inline
+    def setPercentageComplete(value: Percentage): Self = this.set("PercentageComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentageComplete: Self = this.set("PercentageComplete", js.undefined)
+    @scala.inline
+    def setStartedAt(value: Iso8601DateTime): Self = this.set("StartedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedAt: Self = this.set("StartedAt", js.undefined)
+    @scala.inline
+    def setState(value: DeploymentState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

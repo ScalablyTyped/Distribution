@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojtableMod.ojTable
 
-import typings.oracleOraclejet.anon.`20`
-import typings.oracleOraclejet.anon.`21`
+import typings.oracleOraclejet.anon.ColumnNumber
+import typings.oracleOraclejet.anon.`22`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,15 +15,13 @@ trait ColumnSelectionEnd[K] extends js.Object
 
 object ColumnSelectionEnd {
   @scala.inline
-  def EndIndex[K](endIndex: `20`, endKey: `21`[K] = null): ColumnSelectionEnd[K] = {
+  def EndIndex[K](endIndex: ColumnNumber): ColumnSelectionEnd[K] = {
     val __obj = js.Dynamic.literal(endIndex = endIndex.asInstanceOf[js.Any])
-    if (endKey != null) __obj.updateDynamic("endKey")(endKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSelectionEnd[K]]
   }
   @scala.inline
-  def EndKey[K](endKey: `21`[K], endIndex: `20` = null): ColumnSelectionEnd[K] = {
+  def EndKey[K](endKey: `22`[K]): ColumnSelectionEnd[K] = {
     val __obj = js.Dynamic.literal(endKey = endKey.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSelectionEnd[K]]
   }
 }

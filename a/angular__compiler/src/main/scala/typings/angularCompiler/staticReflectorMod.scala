@@ -26,8 +26,35 @@ object staticReflectorMod extends js.Object {
     def this(
       summaryResolver: SummaryResolver[StaticSymbol],
       symbolResolver: StaticSymbolResolver,
+      knownMetadataClasses: js.UndefOr[scala.Nothing],
+      knownMetadataFunctions: js.Array[FilePath]
+    ) = this()
+    def this(
+      summaryResolver: SummaryResolver[StaticSymbol],
+      symbolResolver: StaticSymbolResolver,
       knownMetadataClasses: js.Array[Ctor],
       knownMetadataFunctions: js.Array[FilePath]
+    ) = this()
+    def this(
+      summaryResolver: SummaryResolver[StaticSymbol],
+      symbolResolver: StaticSymbolResolver,
+      knownMetadataClasses: js.UndefOr[scala.Nothing],
+      knownMetadataFunctions: js.UndefOr[scala.Nothing],
+      errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
+    ) = this()
+    def this(
+      summaryResolver: SummaryResolver[StaticSymbol],
+      symbolResolver: StaticSymbolResolver,
+      knownMetadataClasses: js.UndefOr[scala.Nothing],
+      knownMetadataFunctions: js.Array[FilePath],
+      errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
+    ) = this()
+    def this(
+      summaryResolver: SummaryResolver[StaticSymbol],
+      symbolResolver: StaticSymbolResolver,
+      knownMetadataClasses: js.Array[Ctor],
+      knownMetadataFunctions: js.UndefOr[scala.Nothing],
+      errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
     ) = this()
     def this(
       summaryResolver: SummaryResolver[StaticSymbol],
@@ -47,7 +74,7 @@ object staticReflectorMod extends js.Object {
     var annotationForParentClassWithSummaryKind: js.Any = js.native
     var conversionMap: js.Any = js.native
     var error: js.Any = js.native
-    var errorRecorder: js.UndefOr[js.Any] = js.native
+    var errorRecorder: js.Any = js.native
     var findParentType: js.Any = js.native
     var getTypeMetadata: js.Any = js.native
     var initializeConversionMap: js.Any = js.native

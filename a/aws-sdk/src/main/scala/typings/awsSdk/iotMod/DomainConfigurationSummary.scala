@@ -22,16 +22,34 @@ trait DomainConfigurationSummary extends js.Object {
 
 object DomainConfigurationSummary {
   @scala.inline
-  def apply(
-    domainConfigurationArn: DomainConfigurationArn = null,
-    domainConfigurationName: ReservedDomainConfigurationName = null,
-    serviceType: ServiceType = null
-  ): DomainConfigurationSummary = {
+  def apply(): DomainConfigurationSummary = {
     val __obj = js.Dynamic.literal()
-    if (domainConfigurationArn != null) __obj.updateDynamic("domainConfigurationArn")(domainConfigurationArn.asInstanceOf[js.Any])
-    if (domainConfigurationName != null) __obj.updateDynamic("domainConfigurationName")(domainConfigurationName.asInstanceOf[js.Any])
-    if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainConfigurationSummary]
   }
+  @scala.inline
+  implicit class DomainConfigurationSummaryOps[Self <: DomainConfigurationSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainConfigurationArn(value: DomainConfigurationArn): Self = this.set("domainConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainConfigurationArn: Self = this.set("domainConfigurationArn", js.undefined)
+    @scala.inline
+    def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = this.set("domainConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainConfigurationName: Self = this.set("domainConfigurationName", js.undefined)
+    @scala.inline
+    def setServiceType(value: ServiceType): Self = this.set("serviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceType: Self = this.set("serviceType", js.undefined)
+  }
+  
 }
 

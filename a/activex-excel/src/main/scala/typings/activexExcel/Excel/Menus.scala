@@ -12,6 +12,7 @@ trait Menus extends js.Object {
   val Parent: js.Any = js.native
   def apply(Index: js.Any): Menu = js.native
   def Add(Caption: String): Menu = js.native
+  def Add(Caption: String, Before: js.UndefOr[scala.Nothing], Restore: js.Any): Menu = js.native
   def Add(Caption: String, Before: js.Any): Menu = js.native
   def Add(Caption: String, Before: js.Any, Restore: js.Any): Menu = js.native
   def Item(Index: js.Any): Menu = js.native

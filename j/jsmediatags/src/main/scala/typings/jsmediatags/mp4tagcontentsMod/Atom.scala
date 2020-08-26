@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Atom protected () extends js.Object {
   def this(name: String) = this()
   def this(name: String, data: ByteArray) = this()
+  def this(name: String, data: js.UndefOr[scala.Nothing], atoms: js.Array[Atom]) = this()
   def this(name: String, data: ByteArray, atoms: js.Array[Atom]) = this()
   var _atoms: js.Array[Atom] = js.native
   var _data: js.Array[Double] = js.native

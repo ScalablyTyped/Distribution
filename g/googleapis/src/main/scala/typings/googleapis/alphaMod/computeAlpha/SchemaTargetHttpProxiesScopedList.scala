@@ -20,11 +20,32 @@ trait SchemaTargetHttpProxiesScopedList extends js.Object {
 
 object SchemaTargetHttpProxiesScopedList {
   @scala.inline
-  def apply(targetHttpProxies: js.Array[SchemaTargetHttpProxy] = null, warning: Code = null): SchemaTargetHttpProxiesScopedList = {
+  def apply(): SchemaTargetHttpProxiesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (targetHttpProxies != null) __obj.updateDynamic("targetHttpProxies")(targetHttpProxies.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTargetHttpProxiesScopedList]
   }
+  @scala.inline
+  implicit class SchemaTargetHttpProxiesScopedListOps[Self <: SchemaTargetHttpProxiesScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetHttpProxiesVarargs(value: SchemaTargetHttpProxy*): Self = this.set("targetHttpProxies", js.Array(value :_*))
+    @scala.inline
+    def setTargetHttpProxies(value: js.Array[SchemaTargetHttpProxy]): Self = this.set("targetHttpProxies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetHttpProxies: Self = this.set("targetHttpProxies", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

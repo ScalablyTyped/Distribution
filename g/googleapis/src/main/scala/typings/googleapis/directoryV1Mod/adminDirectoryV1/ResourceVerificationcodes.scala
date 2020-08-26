@@ -27,6 +27,7 @@ class ResourceVerificationcodes protected () extends js.Object {
     */
   def generate(): GaxiosPromise[Unit] = js.native
   def generate(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def generate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def generate(params: ParamsResourceVerificationcodesGenerate): GaxiosPromise[Unit] = js.native
   def generate(params: ParamsResourceVerificationcodesGenerate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def generate(
@@ -54,6 +55,7 @@ class ResourceVerificationcodes protected () extends js.Object {
     */
   def invalidate(): GaxiosPromise[Unit] = js.native
   def invalidate(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def invalidate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def invalidate(params: ParamsResourceVerificationcodesInvalidate): GaxiosPromise[Unit] = js.native
   def invalidate(params: ParamsResourceVerificationcodesInvalidate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def invalidate(
@@ -82,6 +84,7 @@ class ResourceVerificationcodes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVerificationCodes] = js.native
   def list(callback: BodyResponseCallback[SchemaVerificationCodes]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVerificationCodes] = js.native
   def list(params: ParamsResourceVerificationcodesList): GaxiosPromise[SchemaVerificationCodes] = js.native
   def list(
     params: ParamsResourceVerificationcodesList,

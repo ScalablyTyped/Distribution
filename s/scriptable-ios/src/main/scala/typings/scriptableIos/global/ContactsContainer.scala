@@ -11,20 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ContactsContainer")
 @js.native
 class ContactsContainer ()
-  extends typings.scriptableIos.ContactsContainer {
-  /**
-    * _Identifier of the contacts container._
-    * @see https://docs.scriptable.app/contactscontainer/#identifier
-    */
-  /* CompleteClass */
-  override var identifier: String = js.native
-  /**
-    * _Name of the contacts container._
-    * @see https://docs.scriptable.app/contactscontainer/#name
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-}
+  extends typings.scriptableIos.ContactsContainer
 
 /* static members */
 @JSGlobal("ContactsContainer")

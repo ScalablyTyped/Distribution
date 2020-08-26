@@ -14,6 +14,7 @@ object sphereMod extends js.Object {
   @js.native
   class Sphere () extends js.Object {
     def this(center: Vector3) = this()
+    def this(center: js.UndefOr[scala.Nothing], radius: Double) = this()
     def this(center: Vector3, radius: Double) = this()
     var center: Vector3 = js.native
     var radius: Double = js.native
@@ -22,12 +23,17 @@ object sphereMod extends js.Object {
     def containsPoint(point: Vector3): Boolean = js.native
     def copy(sphere: Sphere): this.type = js.native
     def distanceToPoint(point: Vector3): Double = js.native
-    def empty(): Boolean = js.native
+    /**
+    	 * @deprecated Use {@link Sphere#isEmpty .isEmpty()} instead.
+    	 */
+    def empty(): js.Any = js.native
     def equals(sphere: Sphere): Boolean = js.native
     def getBoundingBox(target: Box3): Box3 = js.native
     def intersectsBox(box: Box3): Boolean = js.native
     def intersectsPlane(plane: Plane): Boolean = js.native
     def intersectsSphere(sphere: Sphere): Boolean = js.native
+    def isEmpty(): Boolean = js.native
+    def makeEmpty(): this.type = js.native
     def set(center: Vector3, radius: Double): Sphere = js.native
     def setFromPoints(points: js.Array[Vector3]): Sphere = js.native
     def setFromPoints(points: js.Array[Vector3], optionalCenter: Vector3): Sphere = js.native

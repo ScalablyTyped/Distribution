@@ -22,9 +22,19 @@ trait Database[Content /* <: js.Object */] extends js.Object {
     * `PouchDB.sync('mydb', 'http://localhost:5984/mydb')`;
     */
   def sync[Content](remote: String): Sync[Content] = js.native
+  def sync[Content](
+    remote: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[SyncResultComplete[Content]]
+  ): Sync[Content] = js.native
   def sync[Content](remote: String, options: SyncOptions): Sync[Content] = js.native
   def sync[Content](remote: String, options: SyncOptions, callback: Callback[SyncResultComplete[Content]]): Sync[Content] = js.native
   def sync[Content](remote: Database[Content]): Sync[Content] = js.native
+  def sync[Content](
+    remote: Database[Content],
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[SyncResultComplete[Content]]
+  ): Sync[Content] = js.native
   def sync[Content](remote: Database[Content], options: SyncOptions): Sync[Content] = js.native
   def sync[Content](remote: Database[Content], options: SyncOptions, callback: Callback[SyncResultComplete[Content]]): Sync[Content] = js.native
 }

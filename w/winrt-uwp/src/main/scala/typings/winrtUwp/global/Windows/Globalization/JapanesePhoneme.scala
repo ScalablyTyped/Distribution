@@ -8,15 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Globalization.JapanesePhoneme")
 @js.native
 abstract class JapanesePhoneme ()
-  extends typings.winrtUwp.Windows.Globalization.JapanesePhoneme {
-  /** Gets the text to display for this Japanese word. */
-  /* CompleteClass */
-  override var displayText: String = js.native
-  /** Gets a Boolean that indicates if this Japanese word is the start of a phrase. */
-  /* CompleteClass */
-  override var isPhraseStart: Boolean = js.native
-  /** Gets the "reading" (the pronunciation of DisplayText ) for this Japanese word. */
-  /* CompleteClass */
-  override var yomiText: String = js.native
-}
+  extends typings.winrtUwp.Windows.Globalization.JapanesePhoneme
 

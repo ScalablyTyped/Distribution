@@ -30,6 +30,7 @@ class ResourceOrderinvoices protected () extends js.Object {
     */
   def createchargeinvoice(): GaxiosPromise[SchemaOrderinvoicesCreateChargeInvoiceResponse] = js.native
   def createchargeinvoice(callback: BodyResponseCallback[SchemaOrderinvoicesCreateChargeInvoiceResponse]): Unit = js.native
+  def createchargeinvoice(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderinvoicesCreateChargeInvoiceResponse] = js.native
   def createchargeinvoice(params: ParamsResourceOrderinvoicesCreatechargeinvoice): GaxiosPromise[SchemaOrderinvoicesCreateChargeInvoiceResponse] = js.native
   def createchargeinvoice(
     params: ParamsResourceOrderinvoicesCreatechargeinvoice,
@@ -66,6 +67,7 @@ class ResourceOrderinvoices protected () extends js.Object {
     */
   def createrefundinvoice(): GaxiosPromise[SchemaOrderinvoicesCreateRefundInvoiceResponse] = js.native
   def createrefundinvoice(callback: BodyResponseCallback[SchemaOrderinvoicesCreateRefundInvoiceResponse]): Unit = js.native
+  def createrefundinvoice(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderinvoicesCreateRefundInvoiceResponse] = js.native
   def createrefundinvoice(params: ParamsResourceOrderinvoicesCreaterefundinvoice): GaxiosPromise[SchemaOrderinvoicesCreateRefundInvoiceResponse] = js.native
   def createrefundinvoice(
     params: ParamsResourceOrderinvoicesCreaterefundinvoice,

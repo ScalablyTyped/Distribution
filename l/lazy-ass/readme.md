@@ -12,7 +12,7 @@ Lazy assertions without performance penalty
 | Keywords           | assertion, assertions, browser, debugging, defensive, lazy, node |
 | # releases         | 0 |
 | # dependents       | 148 |
-| # downloads        | 24934063 |
+| # downloads        | 26256307 |
 | # stars            | 1 |
 
 ## Links

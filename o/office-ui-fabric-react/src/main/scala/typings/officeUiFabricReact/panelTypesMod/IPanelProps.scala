@@ -4,76 +4,13 @@ import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
 import typings.officeUiFabricReact.layerTypesMod.ILayerProps
 import typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
 import typings.officeUiFabricReact.panelBaseMod.PanelBase
-import typings.react.anon.Html
-import typings.react.mod.AnimationEvent
-import typings.react.mod.Booleanish
-import typings.react.mod.CSSProperties
-import typings.react.mod.ClipboardEvent
-import typings.react.mod.CompositionEvent
-import typings.react.mod.DragEvent
-import typings.react.mod.FocusEvent
-import typings.react.mod.FormEvent
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.KeyboardEvent
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.NativeUIEvent
-import typings.react.mod.PointerEvent
-import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
-import typings.react.mod.TouchEvent
-import typings.react.mod.TransitionEvent
-import typings.react.mod.UIEvent
-import typings.react.mod.WheelEvent
 import typings.react.mod.global.JSX.Element
-import typings.react.reactStrings.`additions text`
-import typings.react.reactStrings.`inline`
-import typings.react.reactStrings.additions
-import typings.react.reactStrings.all
-import typings.react.reactStrings.ascending
-import typings.react.reactStrings.assertive
-import typings.react.reactStrings.both
-import typings.react.reactStrings.copy
-import typings.react.reactStrings.date
-import typings.react.reactStrings.decimal
-import typings.react.reactStrings.descending
-import typings.react.reactStrings.dialog
-import typings.react.reactStrings.email
-import typings.react.reactStrings.execute
-import typings.react.reactStrings.grammar
-import typings.react.reactStrings.grid
-import typings.react.reactStrings.horizontal
-import typings.react.reactStrings.inherit
-import typings.react.reactStrings.link
-import typings.react.reactStrings.list
-import typings.react.reactStrings.listbox
-import typings.react.reactStrings.location
-import typings.react.reactStrings.menu
-import typings.react.reactStrings.mixed
-import typings.react.reactStrings.move
-import typings.react.reactStrings.no
-import typings.react.reactStrings.none
-import typings.react.reactStrings.numeric
-import typings.react.reactStrings.off
-import typings.react.reactStrings.on
-import typings.react.reactStrings.other
-import typings.react.reactStrings.page
-import typings.react.reactStrings.polite
-import typings.react.reactStrings.popup
-import typings.react.reactStrings.removals
-import typings.react.reactStrings.search
-import typings.react.reactStrings.spelling
-import typings.react.reactStrings.step
-import typings.react.reactStrings.tel
-import typings.react.reactStrings.text
-import typings.react.reactStrings.time
-import typings.react.reactStrings.tree
-import typings.react.reactStrings.url
-import typings.react.reactStrings.vertical
-import typings.react.reactStrings.yes
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
@@ -82,98 +19,99 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPanelProps extends HTMLAttributes[PanelBase] {
   /**
     * Allow body scroll on content and overlay on touch devices. Changing after mounting has no effect.
     * @defaultvalue false
     */
-  var allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined
+  var allowTouchBodyScroll: js.UndefOr[Boolean] = js.native
   /**
     * Aria label on close button
     */
-  var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
+  var closeButtonAriaLabel: js.UndefOr[String] = js.native
   /**
     * Deprecated property. Serves no function.
     * @deprecated Serves no function.
     */
-  var componentId: js.UndefOr[String] = js.undefined
+  var componentId: js.UndefOr[String] = js.native
   /**
     * Optional callback to access the IPanel interface. Use this instead of ref for accessing
     * the public methods and properties of the component.
     */
-  var componentRef: js.UndefOr[IRefObject[IPanel]] = js.undefined
+  var componentRef: js.UndefOr[IRefObject[IPanel]] = js.native
   /**
     * Custom panel width, used only when `type` is set to `PanelType.custom`.
     */
-  var customWidth: js.UndefOr[String] = js.undefined
+  var customWidth: js.UndefOr[String] = js.native
   /**
     * Sets the HTMLElement to focus on when exiting the FocusTrapZone.
     * @defaultvalue The element.target that triggered the Panel.
     */
-  var elementToFocusOnDismiss: js.UndefOr[HTMLElement] = js.undefined
+  var elementToFocusOnDismiss: js.UndefOr[HTMLElement] = js.native
   /**
     * Indicates the selector for first focusable item.
     * Deprecated, use `focusTrapZoneProps`.
     * @deprecated Use `focusTrapZoneProps`.
     */
-  var firstFocusableSelector: js.UndefOr[String] = js.undefined
+  var firstFocusableSelector: js.UndefOr[String] = js.native
   /**
     * Optional props to pass to the FocusTrapZone component to manage focus in the panel.
     */
-  var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.undefined
+  var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.native
   /**
     * Indicates whether Panel should force focus inside the focus trap zone.
     * If not explicitly specified, behavior aligns with FocusTrapZone's default behavior.
     * Deprecated, use `focusTrapZoneProps`.
     * @deprecated Use `focusTrapZoneProps`.
     */
-  var forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined
+  var forceFocusInsideTrap: js.UndefOr[Boolean] = js.native
   /**
     * Has the close button visible.
     * @defaultvalue true
     */
-  var hasCloseButton: js.UndefOr[Boolean] = js.undefined
+  var hasCloseButton: js.UndefOr[Boolean] = js.native
   /**
     * Optional parameter to provider the class name for header text
     */
-  var headerClassName: js.UndefOr[String] = js.undefined
+  var headerClassName: js.UndefOr[String] = js.native
   /**
     * Header text for the Panel.
     * @defaultvalue ""
     */
-  var headerText: js.UndefOr[String] = js.undefined
+  var headerText: js.UndefOr[String] = js.native
   /**
     * The props for header text container.
     */
-  var headerTextProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
+  var headerTextProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
   /**
     * Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone.
     * Deprecated, use `focusTrapZoneProps`.
     * @defaultvalue false
     * @deprecated Use `focusTrapZoneProps`.
     */
-  var ignoreExternalFocusing: js.UndefOr[Boolean] = js.undefined
+  var ignoreExternalFocusing: js.UndefOr[Boolean] = js.native
   /**
     * Whether the panel uses a modal overlay or not
     * @defaultvalue true
     */
-  var isBlocking: js.UndefOr[Boolean] = js.undefined
+  var isBlocking: js.UndefOr[Boolean] = js.native
   /**
     * Determines if content should stretch to fill available space putting footer at the bottom of the page
     * @defaultvalue false
     */
-  var isFooterAtBottom: js.UndefOr[Boolean] = js.undefined
+  var isFooterAtBottom: js.UndefOr[Boolean] = js.native
   /**
     * Whether the panel is hidden on dismiss, instead of destroyed in the DOM.
     * Protects the contents from being destroyed when the panel is dismissed.
     * @defaultvalue false
     */
-  var isHiddenOnDismiss: js.UndefOr[Boolean] = js.undefined
+  var isHiddenOnDismiss: js.UndefOr[Boolean] = js.native
   /**
     * Whether the panel can be light dismissed.
     * @defaultvalue false
     */
-  var isLightDismiss: js.UndefOr[Boolean] = js.undefined
+  var isLightDismiss: js.UndefOr[Boolean] = js.native
   /**
     * Whether the panel is displayed.
     * If true, will cause panel to stay open even if dismissed.
@@ -181,504 +119,256 @@ trait IPanelProps extends HTMLAttributes[PanelBase] {
     * If undefined, will allow the panel to control its own visility through open/dismiss methods.
     * @defaultvalue undefined
     */
-  var isOpen: js.UndefOr[Boolean] = js.undefined
+  var isOpen: js.UndefOr[Boolean] = js.native
   /**
     * Optional props to pass to the Layer component hosting the panel.
     */
-  var layerProps: js.UndefOr[ILayerProps] = js.undefined
+  var layerProps: js.UndefOr[ILayerProps] = js.native
   /**
     * A callback function for when the panel is closed, before the animation completes.
     * If the panel should NOT be dismissed based on some keyboard event, then simply call ev.preventDefault() on it
     */
-  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.undefined
+  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.native
   /**
     * A callback function which is called **after** the Panel is dismissed and the animation is complete.
     * (If you need to update the Panel's `isOpen` prop in response to a dismiss event, use `onDismiss` instead.)
     */
-  var onDismissed: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onDismissed: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Optional custom function to handle clicks outside the panel in lightdismiss mode
     */
-  var onLightDismissClick: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onLightDismissClick: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * A callback function for when the Panel is opened, before the animation completes.
     */
-  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * A callback function for when the Panel is opened, after the animation completes.
     */
-  var onOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onOpened: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Optional custom function to handle clicks outside this component
     */
-  var onOuterClick: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onOuterClick: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Optional custom renderer for body region. Replaces any children passed into the component.
     */
-  var onRenderBody: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
+  var onRenderBody: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
   /**
     * Optional custom renderer for footer region. Replaces sticky footer.
     */
-  var onRenderFooter: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
+  var onRenderFooter: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
   /**
     * Custom renderer for content in the sticky footer
     */
-  var onRenderFooterContent: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
+  var onRenderFooterContent: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
   /**
     * Optional custom renderer for header region. Replaces current title
     */
-  var onRenderHeader: js.UndefOr[IPanelHeaderRenderer] = js.undefined
+  var onRenderHeader: js.UndefOr[IPanelHeaderRenderer] = js.native
   /**
     * Optional custom renderer navigation region. Replaces the region that contains the close button.
     */
-  var onRenderNavigation: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
+  var onRenderNavigation: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
   /**
     * Optional custom renderer for content in the navigation region. Replaces current close button.
     */
-  var onRenderNavigationContent: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
+  var onRenderNavigationContent: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
   /**
     * Optional props to pass to the Overlay component that the panel uses.
     */
-  var overlayProps: js.UndefOr[IOverlayProps] = js.undefined
+  var overlayProps: js.UndefOr[IOverlayProps] = js.native
   /**
     * Call to provide customized styling that will layer on top of the variant rules.
     */
-  var styles: js.UndefOr[IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles]] = js.undefined
+  var styles: js.UndefOr[IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles]] = js.native
   /**
     * Theme provided by High-Order Component.
     */
-  var theme: js.UndefOr[ITheme] = js.undefined
+  var theme: js.UndefOr[ITheme] = js.native
   /**
     * Type of the panel.
     * @defaultvalue PanelType.smallFixedFar
     */
-  var `type`: js.UndefOr[PanelType] = js.undefined
+  var `type`: js.UndefOr[PanelType] = js.native
 }
 
 object IPanelProps {
   @scala.inline
-  def apply(
-    about: String = null,
-    accessKey: String = null,
-    allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: js.UndefOr[Double] = js.undefined,
-    `aria-colindex`: js.UndefOr[Double] = js.undefined,
-    `aria-colspan`: js.UndefOr[Double] = js.undefined,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: js.UndefOr[Double] = js.undefined,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: js.UndefOr[Double] = js.undefined,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
-    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
-    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: js.UndefOr[Double] = js.undefined,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
-    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
-    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
-    `aria-valuetext`: String = null,
-    autoCapitalize: String = null,
-    autoCorrect: String = null,
-    autoSave: String = null,
-    children: ReactNode = null,
-    className: String = null,
-    closeButtonAriaLabel: String = null,
-    color: String = null,
-    componentId: String = null,
-    componentRef: IRefObject[IPanel] = null,
-    contentEditable: Booleanish | inherit = null,
-    contextMenu: String = null,
-    customWidth: String = null,
-    dangerouslySetInnerHTML: Html = null,
-    datatype: String = null,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | Double | js.Array[String] = null,
-    dir: String = null,
-    draggable: js.UndefOr[Booleanish] = js.undefined,
-    elementToFocusOnDismiss: HTMLElement = null,
-    firstFocusableSelector: String = null,
-    focusTrapZoneProps: IFocusTrapZoneProps = null,
-    forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined,
-    hasCloseButton: js.UndefOr[Boolean] = js.undefined,
-    headerClassName: String = null,
-    headerText: String = null,
-    headerTextProps: HTMLAttributes[HTMLDivElement] = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    ignoreExternalFocusing: js.UndefOr[Boolean] = js.undefined,
-    inlist: js.Any = null,
-    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
-    is: String = null,
-    isBlocking: js.UndefOr[Boolean] = js.undefined,
-    isFooterAtBottom: js.UndefOr[Boolean] = js.undefined,
-    isHiddenOnDismiss: js.UndefOr[Boolean] = js.undefined,
-    isLightDismiss: js.UndefOr[Boolean] = js.undefined,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    itemID: String = null,
-    itemProp: String = null,
-    itemRef: String = null,
-    itemScope: js.UndefOr[Boolean] = js.undefined,
-    itemType: String = null,
-    lang: String = null,
-    layerProps: ILayerProps = null,
-    onAbort: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onAnimationEnd: AnimationEvent[PanelBase] => Unit = null,
-    onAnimationIteration: AnimationEvent[PanelBase] => Unit = null,
-    onAnimationStart: AnimationEvent[PanelBase] => Unit = null,
-    onAuxClick: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onBeforeInput: FormEvent[PanelBase] => Unit = null,
-    onBlur: FocusEvent[PanelBase] => Unit = null,
-    onCanPlay: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onChange: FormEvent[PanelBase] => Unit = null,
-    onClick: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onCompositionEnd: CompositionEvent[PanelBase] => Unit = null,
-    onCompositionStart: CompositionEvent[PanelBase] => Unit = null,
-    onCompositionUpdate: CompositionEvent[PanelBase] => Unit = null,
-    onContextMenu: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onCopy: ClipboardEvent[PanelBase] => Unit = null,
-    onCut: ClipboardEvent[PanelBase] => Unit = null,
-    onDismiss: /* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit = null,
-    onDismissed: () => Unit = null,
-    onDoubleClick: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onDrag: DragEvent[PanelBase] => Unit = null,
-    onDragEnd: DragEvent[PanelBase] => Unit = null,
-    onDragEnter: DragEvent[PanelBase] => Unit = null,
-    onDragExit: DragEvent[PanelBase] => Unit = null,
-    onDragLeave: DragEvent[PanelBase] => Unit = null,
-    onDragOver: DragEvent[PanelBase] => Unit = null,
-    onDragStart: DragEvent[PanelBase] => Unit = null,
-    onDrop: DragEvent[PanelBase] => Unit = null,
-    onDurationChange: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onEmptied: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onEnded: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onError: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onFocus: FocusEvent[PanelBase] => Unit = null,
-    onInput: FormEvent[PanelBase] => Unit = null,
-    onInvalid: FormEvent[PanelBase] => Unit = null,
-    onKeyDown: KeyboardEvent[PanelBase] => Unit = null,
-    onKeyPress: KeyboardEvent[PanelBase] => Unit = null,
-    onKeyUp: KeyboardEvent[PanelBase] => Unit = null,
-    onLightDismissClick: () => Unit = null,
-    onLoad: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onMouseDown: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onMouseMove: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onMouseOut: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onMouseOver: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onMouseUp: MouseEvent[PanelBase, NativeMouseEvent] => Unit = null,
-    onOpen: () => Unit = null,
-    onOpened: () => Unit = null,
-    onOuterClick: () => Unit = null,
-    onPaste: ClipboardEvent[PanelBase] => Unit = null,
-    onPause: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onPlay: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onPlaying: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onPointerCancel: PointerEvent[PanelBase] => Unit = null,
-    onPointerDown: PointerEvent[PanelBase] => Unit = null,
-    onPointerEnter: PointerEvent[PanelBase] => Unit = null,
-    onPointerLeave: PointerEvent[PanelBase] => Unit = null,
-    onPointerMove: PointerEvent[PanelBase] => Unit = null,
-    onPointerOut: PointerEvent[PanelBase] => Unit = null,
-    onPointerOver: PointerEvent[PanelBase] => Unit = null,
-    onPointerUp: PointerEvent[PanelBase] => Unit = null,
-    onProgress: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onRateChange: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onRenderBody: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
-    onRenderFooter: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
-    onRenderFooterContent: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
-    onRenderHeader: IPanelHeaderRenderer = null,
-    onRenderNavigation: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
-    onRenderNavigationContent: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null = null,
-    onReset: FormEvent[PanelBase] => Unit = null,
-    onScroll: UIEvent[PanelBase, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onSeeking: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onSelect: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onStalled: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onSubmit: FormEvent[PanelBase] => Unit = null,
-    onSuspend: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onTouchCancel: TouchEvent[PanelBase] => Unit = null,
-    onTouchEnd: TouchEvent[PanelBase] => Unit = null,
-    onTouchMove: TouchEvent[PanelBase] => Unit = null,
-    onTouchStart: TouchEvent[PanelBase] => Unit = null,
-    onTransitionEnd: TransitionEvent[PanelBase] => Unit = null,
-    onVolumeChange: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onWaiting: SyntheticEvent[PanelBase, Event] => Unit = null,
-    onWheel: WheelEvent[PanelBase] => Unit = null,
-    overlayProps: IOverlayProps = null,
-    placeholder: String = null,
-    prefix: String = null,
-    property: String = null,
-    radioGroup: String = null,
-    resource: String = null,
-    results: js.UndefOr[Double] = js.undefined,
-    role: String = null,
-    security: String = null,
-    slot: String = null,
-    spellCheck: js.UndefOr[Booleanish] = js.undefined,
-    style: CSSProperties = null,
-    styles: IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles] = null,
-    suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
-    suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    theme: ITheme = null,
-    title: String = null,
-    translate: yes | no = null,
-    `type`: PanelType = null,
-    typeof: String = null,
-    unselectable: on | off = null,
-    vocab: String = null
-  ): IPanelProps = {
+  def apply(): IPanelProps = {
     val __obj = js.Dynamic.literal()
-    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTouchBodyScroll)) __obj.updateDynamic("allowTouchBodyScroll")(allowTouchBodyScroll.get.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (componentId != null) __obj.updateDynamic("componentId")(componentId.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customWidth != null) __obj.updateDynamic("customWidth")(customWidth.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (elementToFocusOnDismiss != null) __obj.updateDynamic("elementToFocusOnDismiss")(elementToFocusOnDismiss.asInstanceOf[js.Any])
-    if (firstFocusableSelector != null) __obj.updateDynamic("firstFocusableSelector")(firstFocusableSelector.asInstanceOf[js.Any])
-    if (focusTrapZoneProps != null) __obj.updateDynamic("focusTrapZoneProps")(focusTrapZoneProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFocusInsideTrap)) __obj.updateDynamic("forceFocusInsideTrap")(forceFocusInsideTrap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton.get.asInstanceOf[js.Any])
-    if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName.asInstanceOf[js.Any])
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
-    if (headerTextProps != null) __obj.updateDynamic("headerTextProps")(headerTextProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreExternalFocusing)) __obj.updateDynamic("ignoreExternalFocusing")(ignoreExternalFocusing.get.asInstanceOf[js.Any])
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBlocking)) __obj.updateDynamic("isBlocking")(isBlocking.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFooterAtBottom)) __obj.updateDynamic("isFooterAtBottom")(isFooterAtBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHiddenOnDismiss)) __obj.updateDynamic("isHiddenOnDismiss")(isHiddenOnDismiss.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLightDismiss)) __obj.updateDynamic("isLightDismiss")(isLightDismiss.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (layerProps != null) __obj.updateDynamic("layerProps")(layerProps.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1(onCanPlayThrough))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
-    if (onDismissed != null) __obj.updateDynamic("onDismissed")(js.Any.fromFunction0(onDismissed))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1(onDragExit))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onLightDismissClick != null) __obj.updateDynamic("onLightDismissClick")(js.Any.fromFunction0(onLightDismissClick))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1(onLoadStart))
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1(onLoadedData))
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1(onLoadedMetadata))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
-    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction0(onOpened))
-    if (onOuterClick != null) __obj.updateDynamic("onOuterClick")(js.Any.fromFunction0(onOuterClick))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1(onPlaying))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1(onPointerCancel))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1(onPointerDown))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1(onPointerEnter))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1(onPointerLeave))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1(onPointerMove))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1(onPointerOut))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1(onPointerOver))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1(onPointerUp))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
-    if (onRenderBody != null) __obj.updateDynamic("onRenderBody")(js.Any.fromFunction2(onRenderBody))
-    if (onRenderFooter != null) __obj.updateDynamic("onRenderFooter")(js.Any.fromFunction2(onRenderFooter))
-    if (onRenderFooterContent != null) __obj.updateDynamic("onRenderFooterContent")(js.Any.fromFunction2(onRenderFooterContent))
-    if (onRenderHeader != null) __obj.updateDynamic("onRenderHeader")(onRenderHeader.asInstanceOf[js.Any])
-    if (onRenderNavigation != null) __obj.updateDynamic("onRenderNavigation")(js.Any.fromFunction2(onRenderNavigation))
-    if (onRenderNavigationContent != null) __obj.updateDynamic("onRenderNavigationContent")(js.Any.fromFunction2(onRenderNavigationContent))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (overlayProps != null) __obj.updateDynamic("overlayProps")(overlayProps.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
-    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
-    if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanelProps]
   }
+  @scala.inline
+  implicit class IPanelPropsOps[Self <: IPanelProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowTouchBodyScroll(value: Boolean): Self = this.set("allowTouchBodyScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowTouchBodyScroll: Self = this.set("allowTouchBodyScroll", js.undefined)
+    @scala.inline
+    def setCloseButtonAriaLabel(value: String): Self = this.set("closeButtonAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseButtonAriaLabel: Self = this.set("closeButtonAriaLabel", js.undefined)
+    @scala.inline
+    def setComponentId(value: String): Self = this.set("componentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentId: Self = this.set("componentId", js.undefined)
+    @scala.inline
+    def setComponentRefFunction1(value: /* ref */ IPanel | Null => Unit): Self = this.set("componentRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setComponentRef(value: IRefObject[IPanel]): Self = this.set("componentRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentRef: Self = this.set("componentRef", js.undefined)
+    @scala.inline
+    def setCustomWidth(value: String): Self = this.set("customWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomWidth: Self = this.set("customWidth", js.undefined)
+    @scala.inline
+    def setElementToFocusOnDismiss(value: HTMLElement): Self = this.set("elementToFocusOnDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElementToFocusOnDismiss: Self = this.set("elementToFocusOnDismiss", js.undefined)
+    @scala.inline
+    def setFirstFocusableSelector(value: String): Self = this.set("firstFocusableSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstFocusableSelector: Self = this.set("firstFocusableSelector", js.undefined)
+    @scala.inline
+    def setFocusTrapZoneProps(value: IFocusTrapZoneProps): Self = this.set("focusTrapZoneProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusTrapZoneProps: Self = this.set("focusTrapZoneProps", js.undefined)
+    @scala.inline
+    def setForceFocusInsideTrap(value: Boolean): Self = this.set("forceFocusInsideTrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceFocusInsideTrap: Self = this.set("forceFocusInsideTrap", js.undefined)
+    @scala.inline
+    def setHasCloseButton(value: Boolean): Self = this.set("hasCloseButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasCloseButton: Self = this.set("hasCloseButton", js.undefined)
+    @scala.inline
+    def setHeaderClassName(value: String): Self = this.set("headerClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderClassName: Self = this.set("headerClassName", js.undefined)
+    @scala.inline
+    def setHeaderText(value: String): Self = this.set("headerText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderText: Self = this.set("headerText", js.undefined)
+    @scala.inline
+    def setHeaderTextProps(value: HTMLAttributes[HTMLDivElement]): Self = this.set("headerTextProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderTextProps: Self = this.set("headerTextProps", js.undefined)
+    @scala.inline
+    def setIgnoreExternalFocusing(value: Boolean): Self = this.set("ignoreExternalFocusing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreExternalFocusing: Self = this.set("ignoreExternalFocusing", js.undefined)
+    @scala.inline
+    def setIsBlocking(value: Boolean): Self = this.set("isBlocking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsBlocking: Self = this.set("isBlocking", js.undefined)
+    @scala.inline
+    def setIsFooterAtBottom(value: Boolean): Self = this.set("isFooterAtBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFooterAtBottom: Self = this.set("isFooterAtBottom", js.undefined)
+    @scala.inline
+    def setIsHiddenOnDismiss(value: Boolean): Self = this.set("isHiddenOnDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsHiddenOnDismiss: Self = this.set("isHiddenOnDismiss", js.undefined)
+    @scala.inline
+    def setIsLightDismiss(value: Boolean): Self = this.set("isLightDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLightDismiss: Self = this.set("isLightDismiss", js.undefined)
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    @scala.inline
+    def setLayerProps(value: ILayerProps): Self = this.set("layerProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerProps: Self = this.set("layerProps", js.undefined)
+    @scala.inline
+    def setOnDismiss(value: /* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit): Self = this.set("onDismiss", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    @scala.inline
+    def setOnDismissed(value: () => Unit): Self = this.set("onDismissed", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDismissed: Self = this.set("onDismissed", js.undefined)
+    @scala.inline
+    def setOnLightDismissClick(value: () => Unit): Self = this.set("onLightDismissClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnLightDismissClick: Self = this.set("onLightDismissClick", js.undefined)
+    @scala.inline
+    def setOnOpen(value: () => Unit): Self = this.set("onOpen", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    @scala.inline
+    def setOnOpened(value: () => Unit): Self = this.set("onOpened", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnOpened: Self = this.set("onOpened", js.undefined)
+    @scala.inline
+    def setOnOuterClick(value: () => Unit): Self = this.set("onOuterClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnOuterClick: Self = this.set("onOuterClick", js.undefined)
+    @scala.inline
+    def setOnRenderBody(
+      value: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null
+    ): Self = this.set("onRenderBody", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRenderBody: Self = this.set("onRenderBody", js.undefined)
+    @scala.inline
+    def setOnRenderFooter(
+      value: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null
+    ): Self = this.set("onRenderFooter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRenderFooter: Self = this.set("onRenderFooter", js.undefined)
+    @scala.inline
+    def setOnRenderFooterContent(
+      value: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null
+    ): Self = this.set("onRenderFooterContent", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRenderFooterContent: Self = this.set("onRenderFooterContent", js.undefined)
+    @scala.inline
+    def setOnRenderHeader(value: IPanelHeaderRenderer): Self = this.set("onRenderHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRenderHeader: Self = this.set("onRenderHeader", js.undefined)
+    @scala.inline
+    def setOnRenderNavigation(
+      value: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null
+    ): Self = this.set("onRenderNavigation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRenderNavigation: Self = this.set("onRenderNavigation", js.undefined)
+    @scala.inline
+    def setOnRenderNavigationContent(
+      value: (/* props */ js.UndefOr[IPanelProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPanelProps], Element | Null]]) => Element | Null
+    ): Self = this.set("onRenderNavigationContent", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRenderNavigationContent: Self = this.set("onRenderNavigationContent", js.undefined)
+    @scala.inline
+    def setOverlayProps(value: IOverlayProps): Self = this.set("overlayProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayProps: Self = this.set("overlayProps", js.undefined)
+    @scala.inline
+    def setStylesFunction1(value: IPanelStyleProps => DeepPartial[IPanelStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStyles(value: IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setType(value: PanelType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

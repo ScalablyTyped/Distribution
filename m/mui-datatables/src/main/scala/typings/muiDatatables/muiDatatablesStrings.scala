@@ -4,14 +4,16 @@ import typings.muiDatatables.mod.Display
 import typings.muiDatatables.mod.FilterType
 import typings.muiDatatables.mod.Responsive
 import typings.muiDatatables.mod.SelectableRows
-import typings.muiDatatables.mod.SortDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object muiDatatablesStrings {
   @js.native
-  sealed trait asc extends SortDirection
+  sealed trait above extends js.Object
+  
+  @js.native
+  sealed trait asc extends js.Object
   
   @js.native
   sealed trait checkbox extends FilterType
@@ -23,7 +25,7 @@ object muiDatatablesStrings {
   sealed trait custom extends FilterType
   
   @js.native
-  sealed trait desc extends SortDirection
+  sealed trait desc extends js.Object
   
   @js.native
   sealed trait dropdown extends FilterType
@@ -44,19 +46,19 @@ object muiDatatablesStrings {
   sealed trait none extends SelectableRows
   
   @js.native
+  sealed trait replace extends js.Object
+  
+  @js.native
   sealed trait reset extends js.Object
   
   @js.native
-  sealed trait scrollFullHeight extends Responsive
-  
-  @js.native
-  sealed trait scrollMaxHeight extends Responsive
+  sealed trait simple extends Responsive
   
   @js.native
   sealed trait single extends SelectableRows
   
   @js.native
-  sealed trait stacked extends Responsive
+  sealed trait standard extends Responsive
   
   @js.native
   sealed trait textField extends FilterType
@@ -64,6 +66,11 @@ object muiDatatablesStrings {
   @js.native
   sealed trait `true` extends Display
   
+  @js.native
+  sealed trait vertical extends Responsive
+  
+  @scala.inline
+  def above: above = "above".asInstanceOf[above]
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline
@@ -87,18 +94,20 @@ object muiDatatablesStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
-  def scrollFullHeight: scrollFullHeight = "scrollFullHeight".asInstanceOf[scrollFullHeight]
-  @scala.inline
-  def scrollMaxHeight: scrollMaxHeight = "scrollMaxHeight".asInstanceOf[scrollMaxHeight]
+  def simple: simple = "simple".asInstanceOf[simple]
   @scala.inline
   def single: single = "single".asInstanceOf[single]
   @scala.inline
-  def stacked: stacked = "stacked".asInstanceOf[stacked]
+  def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
   def textField: textField = "textField".asInstanceOf[textField]
   @scala.inline
   def `true`: `true` = "true".asInstanceOf[`true`]
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

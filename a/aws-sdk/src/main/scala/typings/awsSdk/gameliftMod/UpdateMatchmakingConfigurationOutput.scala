@@ -14,10 +14,26 @@ trait UpdateMatchmakingConfigurationOutput extends js.Object {
 
 object UpdateMatchmakingConfigurationOutput {
   @scala.inline
-  def apply(Configuration: MatchmakingConfiguration = null): UpdateMatchmakingConfigurationOutput = {
+  def apply(): UpdateMatchmakingConfigurationOutput = {
     val __obj = js.Dynamic.literal()
-    if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMatchmakingConfigurationOutput]
   }
+  @scala.inline
+  implicit class UpdateMatchmakingConfigurationOutputOps[Self <: UpdateMatchmakingConfigurationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: MatchmakingConfiguration): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("Configuration", js.undefined)
+  }
+  
 }
 

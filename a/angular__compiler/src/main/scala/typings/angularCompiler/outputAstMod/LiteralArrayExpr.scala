@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class LiteralArrayExpr protected () extends Expression {
   def this(entries: js.Array[Expression]) = this()
   def this(entries: js.Array[Expression], `type`: Type) = this()
+  def this(entries: js.Array[Expression], `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(entries: js.Array[Expression], `type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(entries: js.Array[Expression], `type`: Type, sourceSpan: ParseSourceSpan) = this()
   var entries: js.Array[Expression] = js.native

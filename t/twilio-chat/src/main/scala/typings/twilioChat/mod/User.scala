@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   *
   * @property {String} identity - User identity
   * @property {String} friendlyName - User friendly name, null if not set
-  * @property {Object} attributes - Object with custom attributes for user
+  * @property {any} attributes - Object with custom attributes for user
   * @property {Boolean} online - User real-time channel connection status
   * @property {Boolean} notifiable - User push notification registration status
   *

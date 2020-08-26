@@ -10,9 +10,9 @@ Omit object key/values recursively with lodash as only dependency.
 | ------------------ | :-------------: |
 | Full name          | omit-deep-lodash |
 | Keywords           | deep, omit, key, keys, delete, remove, object, prop, properties, values, lodash |
-| # releases         | 7 |
+| # releases         | 3 |
 | # dependents       | 10 |
-| # downloads        | 800162 |
+| # downloads        | 774559 |
 | # stars            | 0 |
 
 ## Links

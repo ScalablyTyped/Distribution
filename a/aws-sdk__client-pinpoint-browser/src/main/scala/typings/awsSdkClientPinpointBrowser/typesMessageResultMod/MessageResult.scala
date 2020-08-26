@@ -11,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MessageResult extends js.Object {
   /**
     * The delivery status of the message. Possible values:
@@ -41,41 +42,65 @@ trait MessageResult extends js.Object {
     */
   var DeliveryStatus: js.UndefOr[
     SUCCESSFUL | THROTTLED | TEMPORARY_FAILURE | PERMANENT_FAILURE | UNKNOWN_FAILURE | OPT_OUT | DUPLICATE | String
-  ] = js.undefined
+  ] = js.native
   /**
     * Unique message identifier associated with the message that was sent.
     */
-  var MessageId: js.UndefOr[String] = js.undefined
+  var MessageId: js.UndefOr[String] = js.native
   /**
     * Downstream service status code.
     */
-  var StatusCode: js.UndefOr[Double] = js.undefined
+  var StatusCode: js.UndefOr[Double] = js.native
   /**
     * Status message for message delivery.
     */
-  var StatusMessage: js.UndefOr[String] = js.undefined
+  var StatusMessage: js.UndefOr[String] = js.native
   /**
     * If token was updated as part of delivery. (This is GCM Specific)
     */
-  var UpdatedToken: js.UndefOr[String] = js.undefined
+  var UpdatedToken: js.UndefOr[String] = js.native
 }
 
 object MessageResult {
   @scala.inline
-  def apply(
-    DeliveryStatus: SUCCESSFUL | THROTTLED | TEMPORARY_FAILURE | PERMANENT_FAILURE | UNKNOWN_FAILURE | OPT_OUT | DUPLICATE | String = null,
-    MessageId: String = null,
-    StatusCode: js.UndefOr[Double] = js.undefined,
-    StatusMessage: String = null,
-    UpdatedToken: String = null
-  ): MessageResult = {
+  def apply(): MessageResult = {
     val __obj = js.Dynamic.literal()
-    if (DeliveryStatus != null) __obj.updateDynamic("DeliveryStatus")(DeliveryStatus.asInstanceOf[js.Any])
-    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId.asInstanceOf[js.Any])
-    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode.get.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (UpdatedToken != null) __obj.updateDynamic("UpdatedToken")(UpdatedToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageResult]
   }
+  @scala.inline
+  implicit class MessageResultOps[Self <: MessageResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryStatus(
+      value: SUCCESSFUL | THROTTLED | TEMPORARY_FAILURE | PERMANENT_FAILURE | UNKNOWN_FAILURE | OPT_OUT | DUPLICATE | String
+    ): Self = this.set("DeliveryStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryStatus: Self = this.set("DeliveryStatus", js.undefined)
+    @scala.inline
+    def setMessageId(value: String): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    @scala.inline
+    def setStatusCode(value: Double): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setUpdatedToken(value: String): Self = this.set("UpdatedToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedToken: Self = this.set("UpdatedToken", js.undefined)
+  }
+  
 }
 

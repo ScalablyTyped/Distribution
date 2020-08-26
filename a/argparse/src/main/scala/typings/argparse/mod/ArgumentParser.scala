@@ -18,10 +18,14 @@ class ArgumentParser () extends ArgumentGroup {
   def formatHelp(): String = js.native
   def formatUsage(): String = js.native
   def parseArgs(): js.Any = js.native
+  def parseArgs(args: js.UndefOr[scala.Nothing], ns: js.Object): js.Any = js.native
+  def parseArgs(args: js.UndefOr[scala.Nothing], ns: Namespace): js.Any = js.native
   def parseArgs(args: js.Array[String]): js.Any = js.native
   def parseArgs(args: js.Array[String], ns: js.Object): js.Any = js.native
   def parseArgs(args: js.Array[String], ns: Namespace): js.Any = js.native
   def parseKnownArgs(): js.Array[_] = js.native
+  def parseKnownArgs(args: js.UndefOr[scala.Nothing], ns: js.Object): js.Array[_] = js.native
+  def parseKnownArgs(args: js.UndefOr[scala.Nothing], ns: Namespace): js.Array[_] = js.native
   def parseKnownArgs(args: js.Array[String]): js.Array[_] = js.native
   def parseKnownArgs(args: js.Array[String], ns: js.Object): js.Array[_] = js.native
   def parseKnownArgs(args: js.Array[String], ns: Namespace): js.Array[_] = js.native

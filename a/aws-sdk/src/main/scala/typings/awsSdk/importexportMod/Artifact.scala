@@ -12,11 +12,30 @@ trait Artifact extends js.Object {
 
 object Artifact {
   @scala.inline
-  def apply(Description: Description = null, URL: URL = null): Artifact = {
+  def apply(): Artifact = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (URL != null) __obj.updateDynamic("URL")(URL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Artifact]
   }
+  @scala.inline
+  implicit class ArtifactOps[Self <: Artifact] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setURL(value: URL): Self = this.set("URL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteURL: Self = this.set("URL", js.undefined)
+  }
+  
 }
 

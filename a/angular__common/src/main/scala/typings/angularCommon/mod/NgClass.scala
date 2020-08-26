@@ -45,19 +45,7 @@ class NgClass protected () extends DoCheck {
   var _removeClasses: js.Any = js.native
   var _renderer: js.Any = js.native
   var _toggleClass: js.Any = js.native
-  def klass(value: String): js.Any = js.native
-  def ngClass(value: String): js.Any = js.native
-  def ngClass(value: js.Array[String]): js.Any = js.native
-  def ngClass(value: StringDictionary[js.Any]): js.Any = js.native
-  def ngClass(value: Set[String]): js.Any = js.native
-  /**
-    * A callback method that performs change-detection, invoked
-    * after the default change-detector runs.
-    * See `KeyValueDiffers` and `IterableDiffers` for implementing
-    * custom change checking for collections.
-    *
-    */
-  /* CompleteClass */
-  override def ngDoCheck(): Unit = js.native
+  def klass_=(value: String): Unit = js.native
+  def ngClass_=(value: String | js.Array[String] | Set[String] | StringDictionary[js.Any]): Unit = js.native
 }
 

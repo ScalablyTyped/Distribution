@@ -57,9 +57,11 @@ trait R3Injector extends js.Object {
     */
   def destroyed: Boolean = js.native
   def get[T](token: InjectionToken[T]): T = js.native
+  def get[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: js.Any): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: js.Any, flags: InjectFlags): T = js.native
   def get[T](token: Type[T]): T = js.native
+  def get[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
   def get[T](token: Type[T], notFoundValue: js.Any): T = js.native
   def get[T](token: Type[T], notFoundValue: js.Any, flags: InjectFlags): T = js.native
 }

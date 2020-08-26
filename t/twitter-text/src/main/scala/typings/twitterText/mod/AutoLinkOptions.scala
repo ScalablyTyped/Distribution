@@ -4,72 +4,125 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutoLinkOptions extends js.Object {
-  var cashtagClass: js.UndefOr[String] = js.undefined
-  var cashtagUrlBase: js.UndefOr[String] = js.undefined
-  var hashtagClass: js.UndefOr[String] = js.undefined
-  var hashtagUrlBase: js.UndefOr[String] = js.undefined
-  var htmlAttrs: js.UndefOr[Attributes] = js.undefined
-  var htmlEscapeNonEntities: js.UndefOr[Boolean] = js.undefined
-  var invisibleTagAttrs: js.UndefOr[String] = js.undefined
-  var linkAttributeBlock: js.UndefOr[js.Function2[/* entity */ EntityWithIndices, /* attributes */ Attributes, Unit]] = js.undefined
-  var linkTextBlock: js.UndefOr[js.Function2[/* entity */ EntityWithIndices, /* text */ String, Unit]] = js.undefined
-  var listClass: js.UndefOr[String] = js.undefined
-  var listUrlBase: js.UndefOr[String] = js.undefined
-  var suppressNoFollow: js.UndefOr[Boolean] = js.undefined
-  var symbolTag: js.UndefOr[String] = js.undefined
-  var targetBlank: js.UndefOr[Boolean] = js.undefined
-  var textWithSymbolTag: js.UndefOr[String] = js.undefined
-  var urlEntities: js.UndefOr[js.Array[UrlEntity]] = js.undefined
-  var usernameClass: js.UndefOr[String] = js.undefined
-  var usernameIncludeSymbol: js.UndefOr[Boolean] = js.undefined
-  var usernameUrlBase: js.UndefOr[String] = js.undefined
+  var cashtagClass: js.UndefOr[String] = js.native
+  var cashtagUrlBase: js.UndefOr[String] = js.native
+  var hashtagClass: js.UndefOr[String] = js.native
+  var hashtagUrlBase: js.UndefOr[String] = js.native
+  var htmlAttrs: js.UndefOr[Attributes] = js.native
+  var htmlEscapeNonEntities: js.UndefOr[Boolean] = js.native
+  var invisibleTagAttrs: js.UndefOr[String] = js.native
+  var linkAttributeBlock: js.UndefOr[js.Function2[/* entity */ EntityWithIndices, /* attributes */ Attributes, Unit]] = js.native
+  var linkTextBlock: js.UndefOr[js.Function2[/* entity */ EntityWithIndices, /* text */ String, Unit]] = js.native
+  var listClass: js.UndefOr[String] = js.native
+  var listUrlBase: js.UndefOr[String] = js.native
+  var suppressNoFollow: js.UndefOr[Boolean] = js.native
+  var symbolTag: js.UndefOr[String] = js.native
+  var targetBlank: js.UndefOr[Boolean] = js.native
+  var textWithSymbolTag: js.UndefOr[String] = js.native
+  var urlEntities: js.UndefOr[js.Array[UrlEntity]] = js.native
+  var usernameClass: js.UndefOr[String] = js.native
+  var usernameIncludeSymbol: js.UndefOr[Boolean] = js.native
+  var usernameUrlBase: js.UndefOr[String] = js.native
 }
 
 object AutoLinkOptions {
   @scala.inline
-  def apply(
-    cashtagClass: String = null,
-    cashtagUrlBase: String = null,
-    hashtagClass: String = null,
-    hashtagUrlBase: String = null,
-    htmlAttrs: Attributes = null,
-    htmlEscapeNonEntities: js.UndefOr[Boolean] = js.undefined,
-    invisibleTagAttrs: String = null,
-    linkAttributeBlock: (/* entity */ EntityWithIndices, /* attributes */ Attributes) => Unit = null,
-    linkTextBlock: (/* entity */ EntityWithIndices, /* text */ String) => Unit = null,
-    listClass: String = null,
-    listUrlBase: String = null,
-    suppressNoFollow: js.UndefOr[Boolean] = js.undefined,
-    symbolTag: String = null,
-    targetBlank: js.UndefOr[Boolean] = js.undefined,
-    textWithSymbolTag: String = null,
-    urlEntities: js.Array[UrlEntity] = null,
-    usernameClass: String = null,
-    usernameIncludeSymbol: js.UndefOr[Boolean] = js.undefined,
-    usernameUrlBase: String = null
-  ): AutoLinkOptions = {
+  def apply(): AutoLinkOptions = {
     val __obj = js.Dynamic.literal()
-    if (cashtagClass != null) __obj.updateDynamic("cashtagClass")(cashtagClass.asInstanceOf[js.Any])
-    if (cashtagUrlBase != null) __obj.updateDynamic("cashtagUrlBase")(cashtagUrlBase.asInstanceOf[js.Any])
-    if (hashtagClass != null) __obj.updateDynamic("hashtagClass")(hashtagClass.asInstanceOf[js.Any])
-    if (hashtagUrlBase != null) __obj.updateDynamic("hashtagUrlBase")(hashtagUrlBase.asInstanceOf[js.Any])
-    if (htmlAttrs != null) __obj.updateDynamic("htmlAttrs")(htmlAttrs.asInstanceOf[js.Any])
-    if (!js.isUndefined(htmlEscapeNonEntities)) __obj.updateDynamic("htmlEscapeNonEntities")(htmlEscapeNonEntities.get.asInstanceOf[js.Any])
-    if (invisibleTagAttrs != null) __obj.updateDynamic("invisibleTagAttrs")(invisibleTagAttrs.asInstanceOf[js.Any])
-    if (linkAttributeBlock != null) __obj.updateDynamic("linkAttributeBlock")(js.Any.fromFunction2(linkAttributeBlock))
-    if (linkTextBlock != null) __obj.updateDynamic("linkTextBlock")(js.Any.fromFunction2(linkTextBlock))
-    if (listClass != null) __obj.updateDynamic("listClass")(listClass.asInstanceOf[js.Any])
-    if (listUrlBase != null) __obj.updateDynamic("listUrlBase")(listUrlBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressNoFollow)) __obj.updateDynamic("suppressNoFollow")(suppressNoFollow.get.asInstanceOf[js.Any])
-    if (symbolTag != null) __obj.updateDynamic("symbolTag")(symbolTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetBlank)) __obj.updateDynamic("targetBlank")(targetBlank.get.asInstanceOf[js.Any])
-    if (textWithSymbolTag != null) __obj.updateDynamic("textWithSymbolTag")(textWithSymbolTag.asInstanceOf[js.Any])
-    if (urlEntities != null) __obj.updateDynamic("urlEntities")(urlEntities.asInstanceOf[js.Any])
-    if (usernameClass != null) __obj.updateDynamic("usernameClass")(usernameClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(usernameIncludeSymbol)) __obj.updateDynamic("usernameIncludeSymbol")(usernameIncludeSymbol.get.asInstanceOf[js.Any])
-    if (usernameUrlBase != null) __obj.updateDynamic("usernameUrlBase")(usernameUrlBase.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoLinkOptions]
   }
+  @scala.inline
+  implicit class AutoLinkOptionsOps[Self <: AutoLinkOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCashtagClass(value: String): Self = this.set("cashtagClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCashtagClass: Self = this.set("cashtagClass", js.undefined)
+    @scala.inline
+    def setCashtagUrlBase(value: String): Self = this.set("cashtagUrlBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCashtagUrlBase: Self = this.set("cashtagUrlBase", js.undefined)
+    @scala.inline
+    def setHashtagClass(value: String): Self = this.set("hashtagClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashtagClass: Self = this.set("hashtagClass", js.undefined)
+    @scala.inline
+    def setHashtagUrlBase(value: String): Self = this.set("hashtagUrlBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashtagUrlBase: Self = this.set("hashtagUrlBase", js.undefined)
+    @scala.inline
+    def setHtmlAttrs(value: Attributes): Self = this.set("htmlAttrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlAttrs: Self = this.set("htmlAttrs", js.undefined)
+    @scala.inline
+    def setHtmlEscapeNonEntities(value: Boolean): Self = this.set("htmlEscapeNonEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlEscapeNonEntities: Self = this.set("htmlEscapeNonEntities", js.undefined)
+    @scala.inline
+    def setInvisibleTagAttrs(value: String): Self = this.set("invisibleTagAttrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvisibleTagAttrs: Self = this.set("invisibleTagAttrs", js.undefined)
+    @scala.inline
+    def setLinkAttributeBlock(value: (/* entity */ EntityWithIndices, /* attributes */ Attributes) => Unit): Self = this.set("linkAttributeBlock", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLinkAttributeBlock: Self = this.set("linkAttributeBlock", js.undefined)
+    @scala.inline
+    def setLinkTextBlock(value: (/* entity */ EntityWithIndices, /* text */ String) => Unit): Self = this.set("linkTextBlock", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLinkTextBlock: Self = this.set("linkTextBlock", js.undefined)
+    @scala.inline
+    def setListClass(value: String): Self = this.set("listClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListClass: Self = this.set("listClass", js.undefined)
+    @scala.inline
+    def setListUrlBase(value: String): Self = this.set("listUrlBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListUrlBase: Self = this.set("listUrlBase", js.undefined)
+    @scala.inline
+    def setSuppressNoFollow(value: Boolean): Self = this.set("suppressNoFollow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressNoFollow: Self = this.set("suppressNoFollow", js.undefined)
+    @scala.inline
+    def setSymbolTag(value: String): Self = this.set("symbolTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolTag: Self = this.set("symbolTag", js.undefined)
+    @scala.inline
+    def setTargetBlank(value: Boolean): Self = this.set("targetBlank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetBlank: Self = this.set("targetBlank", js.undefined)
+    @scala.inline
+    def setTextWithSymbolTag(value: String): Self = this.set("textWithSymbolTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextWithSymbolTag: Self = this.set("textWithSymbolTag", js.undefined)
+    @scala.inline
+    def setUrlEntitiesVarargs(value: UrlEntity*): Self = this.set("urlEntities", js.Array(value :_*))
+    @scala.inline
+    def setUrlEntities(value: js.Array[UrlEntity]): Self = this.set("urlEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlEntities: Self = this.set("urlEntities", js.undefined)
+    @scala.inline
+    def setUsernameClass(value: String): Self = this.set("usernameClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsernameClass: Self = this.set("usernameClass", js.undefined)
+    @scala.inline
+    def setUsernameIncludeSymbol(value: Boolean): Self = this.set("usernameIncludeSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsernameIncludeSymbol: Self = this.set("usernameIncludeSymbol", js.undefined)
+    @scala.inline
+    def setUsernameUrlBase(value: String): Self = this.set("usernameUrlBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsernameUrlBase: Self = this.set("usernameUrlBase", js.undefined)
+  }
+  
 }
 

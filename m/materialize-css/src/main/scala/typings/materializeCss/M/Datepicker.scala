@@ -45,6 +45,7 @@ trait Datepicker extends js.Object {
     * @param preventOnSelect Undocumented as of 5 March 2018
     */
   def setDate(): Unit = js.native
+  def setDate(date: js.UndefOr[scala.Nothing], preventOnSelect: Boolean): Unit = js.native
   def setDate(date: String): Unit = js.native
   def setDate(date: String, preventOnSelect: Boolean): Unit = js.native
   def setDate(date: Date): Unit = js.native

@@ -12,7 +12,7 @@ jsbn-based arbitrary precision operations on currency amounts "XXX.YY"; because 
 | Keywords           | money, gmp, currency, bigint, bignum, jsbn, browser, browserify, arithmetic, arbitrary, precision, format |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 92891 |
+| # downloads        | 97288 |
 | # stars            | 8 |
 
 ## Links

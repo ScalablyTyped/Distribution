@@ -22,16 +22,34 @@ trait UtilizationMetric extends js.Object {
 
 object UtilizationMetric {
   @scala.inline
-  def apply(
-    name: MetricName = null,
-    statistic: MetricStatistic = null,
-    value: js.UndefOr[MetricValue] = js.undefined
-  ): UtilizationMetric = {
+  def apply(): UtilizationMetric = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (statistic != null) __obj.updateDynamic("statistic")(statistic.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UtilizationMetric]
   }
+  @scala.inline
+  implicit class UtilizationMetricOps[Self <: UtilizationMetric] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: MetricName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatistic(value: MetricStatistic): Self = this.set("statistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistic: Self = this.set("statistic", js.undefined)
+    @scala.inline
+    def setValue(value: MetricValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

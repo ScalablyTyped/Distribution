@@ -20,7 +20,23 @@ object base extends js.Object {
   class Container ()
     extends typings.heremaps.H.ui.base.Container {
     def this(opt_elementType: String) = this()
+    def this(opt_elementType: js.UndefOr[scala.Nothing], opt_className: String) = this()
     def this(opt_elementType: String, opt_className: String) = this()
+    def this(
+      opt_elementType: js.UndefOr[scala.Nothing],
+      opt_className: js.UndefOr[scala.Nothing],
+      opt_children: js.Array[typings.heremaps.H.ui.base.Element]
+    ) = this()
+    def this(
+      opt_elementType: js.UndefOr[scala.Nothing],
+      opt_className: String,
+      opt_children: js.Array[typings.heremaps.H.ui.base.Element]
+    ) = this()
+    def this(
+      opt_elementType: String,
+      opt_className: js.UndefOr[scala.Nothing],
+      opt_children: js.Array[typings.heremaps.H.ui.base.Element]
+    ) = this()
     def this(
       opt_elementType: String,
       opt_className: String,
@@ -37,6 +53,7 @@ object base extends js.Object {
   class Element ()
     extends typings.heremaps.H.ui.base.Element {
     def this(opt_elementType: String) = this()
+    def this(opt_elementType: js.UndefOr[scala.Nothing], opt_className: String) = this()
     def this(opt_elementType: String, opt_className: String) = this()
   }
   

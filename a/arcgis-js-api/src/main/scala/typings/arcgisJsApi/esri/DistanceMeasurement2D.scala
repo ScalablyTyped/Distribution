@@ -23,7 +23,7 @@ trait DistanceMeasurement2D extends Widget_ {
     */
   var iconClass: String = js.native
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the distance values.  **Possible Values:** metric | imperial | inches | feet | us-feet | yards | miles | nautical-miles | meters | kilometers
+    * Unit system (imperial, metric) or specific unit used for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#unit)
     */

@@ -68,7 +68,7 @@ trait BucketArgs extends js.Object {
     */
   val objectLockConfiguration: js.UndefOr[Input[BucketObjectLockConfiguration]] = js.native
   /**
-    * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document.
+    * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), the provider may view the policy as constantly changing in a `pulumi up / preview / update`. In this case, please make sure you use the verbose/specific version of the policy.
     */
   val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
   /**
@@ -93,7 +93,7 @@ trait BucketArgs extends js.Object {
   /**
     * A mapping of tags to assign to the bucket.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) (documented below)
     */
@@ -114,54 +114,118 @@ trait BucketArgs extends js.Object {
 
 object BucketArgs {
   @scala.inline
-  def apply(
-    accelerationStatus: Input[String] = null,
-    acl: Input[String | CannedAcl] = null,
-    arn: Input[String] = null,
-    bucket: Input[String] = null,
-    bucketPrefix: Input[String] = null,
-    corsRules: Input[js.Array[Input[BucketCorsRule]]] = null,
-    forceDestroy: Input[Boolean] = null,
-    grants: Input[js.Array[Input[BucketGrant]]] = null,
-    hostedZoneId: Input[String] = null,
-    lifecycleRules: Input[js.Array[Input[BucketLifecycleRule]]] = null,
-    loggings: Input[js.Array[Input[BucketLogging]]] = null,
-    objectLockConfiguration: Input[BucketObjectLockConfiguration] = null,
-    policy: Input[String | PolicyDocument] = null,
-    region: Input[String] = null,
-    replicationConfiguration: Input[BucketReplicationConfiguration] = null,
-    requestPayer: Input[String] = null,
-    serverSideEncryptionConfiguration: Input[BucketServerSideEncryptionConfiguration] = null,
-    tags: Input[StringDictionary[_]] = null,
-    versioning: Input[BucketVersioning] = null,
-    website: Input[BucketWebsite] = null,
-    websiteDomain: Input[String] = null,
-    websiteEndpoint: Input[String] = null
-  ): BucketArgs = {
+  def apply(): BucketArgs = {
     val __obj = js.Dynamic.literal()
-    if (accelerationStatus != null) __obj.updateDynamic("accelerationStatus")(accelerationStatus.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (bucketPrefix != null) __obj.updateDynamic("bucketPrefix")(bucketPrefix.asInstanceOf[js.Any])
-    if (corsRules != null) __obj.updateDynamic("corsRules")(corsRules.asInstanceOf[js.Any])
-    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
-    if (grants != null) __obj.updateDynamic("grants")(grants.asInstanceOf[js.Any])
-    if (hostedZoneId != null) __obj.updateDynamic("hostedZoneId")(hostedZoneId.asInstanceOf[js.Any])
-    if (lifecycleRules != null) __obj.updateDynamic("lifecycleRules")(lifecycleRules.asInstanceOf[js.Any])
-    if (loggings != null) __obj.updateDynamic("loggings")(loggings.asInstanceOf[js.Any])
-    if (objectLockConfiguration != null) __obj.updateDynamic("objectLockConfiguration")(objectLockConfiguration.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (replicationConfiguration != null) __obj.updateDynamic("replicationConfiguration")(replicationConfiguration.asInstanceOf[js.Any])
-    if (requestPayer != null) __obj.updateDynamic("requestPayer")(requestPayer.asInstanceOf[js.Any])
-    if (serverSideEncryptionConfiguration != null) __obj.updateDynamic("serverSideEncryptionConfiguration")(serverSideEncryptionConfiguration.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (versioning != null) __obj.updateDynamic("versioning")(versioning.asInstanceOf[js.Any])
-    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
-    if (websiteDomain != null) __obj.updateDynamic("websiteDomain")(websiteDomain.asInstanceOf[js.Any])
-    if (websiteEndpoint != null) __obj.updateDynamic("websiteEndpoint")(websiteEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketArgs]
   }
+  @scala.inline
+  implicit class BucketArgsOps[Self <: BucketArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccelerationStatus(value: Input[String]): Self = this.set("accelerationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerationStatus: Self = this.set("accelerationStatus", js.undefined)
+    @scala.inline
+    def setAcl(value: Input[String | CannedAcl]): Self = this.set("acl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcl: Self = this.set("acl", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setBucket(value: Input[String]): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("bucket", js.undefined)
+    @scala.inline
+    def setBucketPrefix(value: Input[String]): Self = this.set("bucketPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketPrefix: Self = this.set("bucketPrefix", js.undefined)
+    @scala.inline
+    def setCorsRulesVarargs(value: Input[BucketCorsRule]*): Self = this.set("corsRules", js.Array(value :_*))
+    @scala.inline
+    def setCorsRules(value: Input[js.Array[Input[BucketCorsRule]]]): Self = this.set("corsRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorsRules: Self = this.set("corsRules", js.undefined)
+    @scala.inline
+    def setForceDestroy(value: Input[Boolean]): Self = this.set("forceDestroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceDestroy: Self = this.set("forceDestroy", js.undefined)
+    @scala.inline
+    def setGrantsVarargs(value: Input[BucketGrant]*): Self = this.set("grants", js.Array(value :_*))
+    @scala.inline
+    def setGrants(value: Input[js.Array[Input[BucketGrant]]]): Self = this.set("grants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrants: Self = this.set("grants", js.undefined)
+    @scala.inline
+    def setHostedZoneId(value: Input[String]): Self = this.set("hostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneId: Self = this.set("hostedZoneId", js.undefined)
+    @scala.inline
+    def setLifecycleRulesVarargs(value: Input[BucketLifecycleRule]*): Self = this.set("lifecycleRules", js.Array(value :_*))
+    @scala.inline
+    def setLifecycleRules(value: Input[js.Array[Input[BucketLifecycleRule]]]): Self = this.set("lifecycleRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleRules: Self = this.set("lifecycleRules", js.undefined)
+    @scala.inline
+    def setLoggingsVarargs(value: Input[BucketLogging]*): Self = this.set("loggings", js.Array(value :_*))
+    @scala.inline
+    def setLoggings(value: Input[js.Array[Input[BucketLogging]]]): Self = this.set("loggings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggings: Self = this.set("loggings", js.undefined)
+    @scala.inline
+    def setObjectLockConfiguration(value: Input[BucketObjectLockConfiguration]): Self = this.set("objectLockConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockConfiguration: Self = this.set("objectLockConfiguration", js.undefined)
+    @scala.inline
+    def setPolicy(value: Input[String | PolicyDocument]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setRegion(value: Input[String]): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setReplicationConfiguration(value: Input[BucketReplicationConfiguration]): Self = this.set("replicationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationConfiguration: Self = this.set("replicationConfiguration", js.undefined)
+    @scala.inline
+    def setRequestPayer(value: Input[String]): Self = this.set("requestPayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayer: Self = this.set("requestPayer", js.undefined)
+    @scala.inline
+    def setServerSideEncryptionConfiguration(value: Input[BucketServerSideEncryptionConfiguration]): Self = this.set("serverSideEncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideEncryptionConfiguration: Self = this.set("serverSideEncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersioning(value: Input[BucketVersioning]): Self = this.set("versioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersioning: Self = this.set("versioning", js.undefined)
+    @scala.inline
+    def setWebsite(value: Input[BucketWebsite]): Self = this.set("website", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsite: Self = this.set("website", js.undefined)
+    @scala.inline
+    def setWebsiteDomain(value: Input[String]): Self = this.set("websiteDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteDomain: Self = this.set("websiteDomain", js.undefined)
+    @scala.inline
+    def setWebsiteEndpoint(value: Input[String]): Self = this.set("websiteEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteEndpoint: Self = this.set("websiteEndpoint", js.undefined)
+  }
+  
 }
 

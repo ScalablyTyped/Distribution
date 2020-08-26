@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
-  /* Inlined std.Array<string> & {  primary ? :string} */
+  /* Inlined std.Array<string> & {  primary :string | undefined} */
   @js.native
-  trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
+  trait Arraystringprimarystringu extends /* n */ NumberDictionary[String] {
     /** Iterator */
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[String]] = js.native
@@ -70,6 +70,7 @@ object anon extends js.Object {
       * length+end.
       */
     def fill(value: String): this.type = js.native
+    def fill(value: String, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
     def fill(value: String, start: Double): this.type = js.native
     def fill(value: String, start: Double, end: Double): this.type = js.native
     /**
@@ -344,6 +345,7 @@ object anon extends js.Object {
       * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
       */
     def slice(): js.Array[String] = js.native
+    def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[String] = js.native
     def slice(start: Double): js.Array[String] = js.native
     def slice(start: Double, end: Double): js.Array[String] = js.native
     /**

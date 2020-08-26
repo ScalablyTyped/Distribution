@@ -16,6 +16,11 @@ object Touch extends js.Object {
   // methods
   def disable(stage: typings.easeljs.createjs.Stage): Unit = js.native
   def enable(stage: typings.easeljs.createjs.Stage): Boolean = js.native
+  def enable(
+    stage: typings.easeljs.createjs.Stage,
+    singleTouch: js.UndefOr[scala.Nothing],
+    allowDefault: Boolean
+  ): Boolean = js.native
   def enable(stage: typings.easeljs.createjs.Stage, singleTouch: Boolean): Boolean = js.native
   def enable(stage: typings.easeljs.createjs.Stage, singleTouch: Boolean, allowDefault: Boolean): Boolean = js.native
   def isSupported(): Boolean = js.native

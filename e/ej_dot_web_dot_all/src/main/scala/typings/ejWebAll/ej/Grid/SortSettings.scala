@@ -4,18 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SortSettings extends js.Object {
   /** Gets or sets a value that indicates whether to define the direction and field to sort the column.
     */
-  var sortedColumns: js.UndefOr[js.Array[SortSettingsSortedColumn]] = js.undefined
+  var sortedColumns: js.UndefOr[js.Array[SortSettingsSortedColumn]] = js.native
 }
 
 object SortSettings {
   @scala.inline
-  def apply(sortedColumns: js.Array[SortSettingsSortedColumn] = null): SortSettings = {
+  def apply(): SortSettings = {
     val __obj = js.Dynamic.literal()
-    if (sortedColumns != null) __obj.updateDynamic("sortedColumns")(sortedColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortSettings]
   }
+  @scala.inline
+  implicit class SortSettingsOps[Self <: SortSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSortedColumnsVarargs(value: SortSettingsSortedColumn*): Self = this.set("sortedColumns", js.Array(value :_*))
+    @scala.inline
+    def setSortedColumns(value: js.Array[SortSettingsSortedColumn]): Self = this.set("sortedColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortedColumns: Self = this.set("sortedColumns", js.undefined)
+  }
+  
 }
 

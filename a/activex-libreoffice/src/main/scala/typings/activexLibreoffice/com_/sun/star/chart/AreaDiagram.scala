@@ -15,6 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This is a service for area diagrams. */
+@js.native
 trait AreaDiagram
   extends Diagram
      with ChartStatistics

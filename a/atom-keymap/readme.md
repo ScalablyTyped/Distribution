@@ -12,7 +12,7 @@ Atom's DOM-aware keymap module
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 52860 |
+| # downloads        | 51811 |
 | # stars            | 1 |
 
 ## Links

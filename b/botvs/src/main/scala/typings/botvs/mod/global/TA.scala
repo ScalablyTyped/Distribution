@@ -37,7 +37,26 @@ object TA extends js.Object {
     * @return {[number[] , number[] , number[]]}
     */
   def Alligator(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def Alligator(
+    Records: js.Array[Record],
+    JawPeriod: js.UndefOr[scala.Nothing],
+    TeethPeriod: js.UndefOr[scala.Nothing],
+    LibsPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def Alligator(Records: js.Array[Record], JawPeriod: js.UndefOr[scala.Nothing], TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def Alligator(
+    Records: js.Array[Record],
+    JawPeriod: js.UndefOr[scala.Nothing],
+    TeethPeriod: Double,
+    LibsPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def Alligator(Records: js.Array[Record], JawPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def Alligator(
+    Records: js.Array[Record],
+    JawPeriod: Double,
+    TeethPeriod: js.UndefOr[scala.Nothing],
+    LibsPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   /**
@@ -74,19 +93,13 @@ object TA extends js.Object {
     * @constructor
     */
   def Highest(Records: js.Array[Record]): Double = js.native
+  def Highest(
+    Records: js.Array[Record],
+    Period: js.UndefOr[scala.Nothing],
+    Property: Time | Open | High | Low | Close | Volume
+  ): Double = js.native
   def Highest(Records: js.Array[Record], Period: Double): Double = js.native
-  @JSName("Highest")
-  def Highest_Close(Records: js.Array[Record], Period: Double, Property: Close): Double = js.native
-  @JSName("Highest")
-  def Highest_High(Records: js.Array[Record], Period: Double, Property: High): Double = js.native
-  @JSName("Highest")
-  def Highest_Low(Records: js.Array[Record], Period: Double, Property: Low): Double = js.native
-  @JSName("Highest")
-  def Highest_Open(Records: js.Array[Record], Period: Double, Property: Open): Double = js.native
-  @JSName("Highest")
-  def Highest_Time(Records: js.Array[Record], Period: Double, Property: Time): Double = js.native
-  @JSName("Highest")
-  def Highest_Volume(Records: js.Array[Record], Period: Double, Property: Volume): Double = js.native
+  def Highest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = js.native
   /**
     * 随机指标
     *
@@ -99,7 +112,26 @@ object TA extends js.Object {
     * @return {[number[] , number[] , number[]]}
     */
   def KDJ(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def KDJ(
+    Records: js.Array[Record],
+    FirstPeriod: js.UndefOr[scala.Nothing],
+    SecondPeriod: js.UndefOr[scala.Nothing],
+    ThirdPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def KDJ(Records: js.Array[Record], FirstPeriod: js.UndefOr[scala.Nothing], SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def KDJ(
+    Records: js.Array[Record],
+    FirstPeriod: js.UndefOr[scala.Nothing],
+    SecondPeriod: Double,
+    ThirdPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def KDJ(Records: js.Array[Record], FirstPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def KDJ(
+    Records: js.Array[Record],
+    FirstPeriod: Double,
+    SecondPeriod: js.UndefOr[scala.Nothing],
+    ThirdPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   /**
@@ -113,19 +145,13 @@ object TA extends js.Object {
     * @return {number}
     */
   def Lowest(Records: js.Array[Record]): Double = js.native
+  def Lowest(
+    Records: js.Array[Record],
+    Period: js.UndefOr[scala.Nothing],
+    Property: Time | Open | High | Low | Close | Volume
+  ): Double = js.native
   def Lowest(Records: js.Array[Record], Period: Double): Double = js.native
-  @JSName("Lowest")
-  def Lowest_Close(Records: js.Array[Record], Period: Double, Property: Close): Double = js.native
-  @JSName("Lowest")
-  def Lowest_High(Records: js.Array[Record], Period: Double, Property: High): Double = js.native
-  @JSName("Lowest")
-  def Lowest_Low(Records: js.Array[Record], Period: Double, Property: Low): Double = js.native
-  @JSName("Lowest")
-  def Lowest_Open(Records: js.Array[Record], Period: Double, Property: Open): Double = js.native
-  @JSName("Lowest")
-  def Lowest_Time(Records: js.Array[Record], Period: Double, Property: Time): Double = js.native
-  @JSName("Lowest")
-  def Lowest_Volume(Records: js.Array[Record], Period: Double, Property: Volume): Double = js.native
+  def Lowest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = js.native
   /**
     * 移动平均线
     *
@@ -149,7 +175,26 @@ object TA extends js.Object {
     * @return {[number[] , number[] , number[]]}
     */
   def MACD(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def MACD(
+    Records: js.Array[Record],
+    LongPeriod: js.UndefOr[scala.Nothing],
+    ShortPeriod: js.UndefOr[scala.Nothing],
+    SignalPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def MACD(Records: js.Array[Record], LongPeriod: js.UndefOr[scala.Nothing], ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def MACD(
+    Records: js.Array[Record],
+    LongPeriod: js.UndefOr[scala.Nothing],
+    ShortPeriod: Double,
+    SignalPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Record], LongPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
+  def MACD(
+    Records: js.Array[Record],
+    LongPeriod: Double,
+    ShortPeriod: js.UndefOr[scala.Nothing],
+    SignalPeriod: Double
+  ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = js.native
   /**

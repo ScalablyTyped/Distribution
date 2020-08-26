@@ -40,22 +40,46 @@ trait SchemaAccountTicket extends js.Object {
 
 object SchemaAccountTicket {
   @scala.inline
-  def apply(
-    account: SchemaAccount = null,
-    id: String = null,
-    kind: String = null,
-    profile: SchemaProfile = null,
-    redirectUri: String = null,
-    webproperty: SchemaWebproperty = null
-  ): SchemaAccountTicket = {
+  def apply(): SchemaAccountTicket = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
-    if (webproperty != null) __obj.updateDynamic("webproperty")(webproperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountTicket]
   }
+  @scala.inline
+  implicit class SchemaAccountTicketOps[Self <: SchemaAccountTicket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccount(value: SchemaAccount): Self = this.set("account", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccount: Self = this.set("account", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setProfile(value: SchemaProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setRedirectUri(value: String): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectUri: Self = this.set("redirectUri", js.undefined)
+    @scala.inline
+    def setWebproperty(value: SchemaWebproperty): Self = this.set("webproperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebproperty: Self = this.set("webproperty", js.undefined)
+  }
+  
 }
 

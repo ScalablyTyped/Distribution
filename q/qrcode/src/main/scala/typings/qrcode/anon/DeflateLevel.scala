@@ -4,29 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeflateLevel extends js.Object {
   /**
     * Compression level for deflate.
     * Default: 9
     */
-  var deflateLevel: js.UndefOr[Double] = js.undefined
+  var deflateLevel: js.UndefOr[Double] = js.native
   /**
     * Compression strategy for deflate.
     * Default: 3
     */
-  var deflateStrategy: js.UndefOr[Double] = js.undefined
+  var deflateStrategy: js.UndefOr[Double] = js.native
 }
 
 object DeflateLevel {
   @scala.inline
-  def apply(
-    deflateLevel: js.UndefOr[Double] = js.undefined,
-    deflateStrategy: js.UndefOr[Double] = js.undefined
-  ): DeflateLevel = {
+  def apply(): DeflateLevel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deflateLevel)) __obj.updateDynamic("deflateLevel")(deflateLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deflateStrategy)) __obj.updateDynamic("deflateStrategy")(deflateStrategy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeflateLevel]
   }
+  @scala.inline
+  implicit class DeflateLevelOps[Self <: DeflateLevel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeflateLevel(value: Double): Self = this.set("deflateLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeflateLevel: Self = this.set("deflateLevel", js.undefined)
+    @scala.inline
+    def setDeflateStrategy(value: Double): Self = this.set("deflateStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeflateStrategy: Self = this.set("deflateStrategy", js.undefined)
+  }
+  
 }
 

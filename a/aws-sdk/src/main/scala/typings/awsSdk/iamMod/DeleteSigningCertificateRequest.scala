@@ -18,10 +18,28 @@ trait DeleteSigningCertificateRequest extends js.Object {
 
 object DeleteSigningCertificateRequest {
   @scala.inline
-  def apply(CertificateId: certificateIdType, UserName: existingUserNameType = null): DeleteSigningCertificateRequest = {
+  def apply(CertificateId: certificateIdType): DeleteSigningCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateId = CertificateId.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSigningCertificateRequest]
   }
+  @scala.inline
+  implicit class DeleteSigningCertificateRequestOps[Self <: DeleteSigningCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateId(value: certificateIdType): Self = this.set("CertificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserName(value: existingUserNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("UserName", js.undefined)
+  }
+  
 }
 

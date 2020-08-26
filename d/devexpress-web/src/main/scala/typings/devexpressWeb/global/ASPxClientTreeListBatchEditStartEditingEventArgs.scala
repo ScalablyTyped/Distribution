@@ -18,25 +18,5 @@ class ASPxClientTreeListBatchEditStartEditingEventArgs protected ()
     * @param nodeValues An object representing a data source’s field values.
     */
   def this(nodeKey: String, focusedColumn: typings.devexpressWeb.ASPxClientTreeListColumn, nodeValues: js.Any) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the tree list column that owns a cell that is about to be edited.
-    */
-  /* CompleteClass */
-  override var focusedColumn: typings.devexpressWeb.ASPxClientTreeListColumn = js.native
-  /**
-    * Gets the node's key value.
-    */
-  /* CompleteClass */
-  override var nodeKey: String = js.native
-  /**
-    * Gets the value of the processed cell.
-    */
-  /* CompleteClass */
-  override var nodeValues: js.Any = js.native
 }
 

@@ -34,22 +34,52 @@ trait StaleIpPermission extends js.Object {
 
 object StaleIpPermission {
   @scala.inline
-  def apply(
-    FromPort: js.UndefOr[Integer] = js.undefined,
-    IpProtocol: String = null,
-    IpRanges: IpRanges = null,
-    PrefixListIds: PrefixListIdSet = null,
-    ToPort: js.UndefOr[Integer] = js.undefined,
-    UserIdGroupPairs: UserIdGroupPairSet = null
-  ): StaleIpPermission = {
+  def apply(): StaleIpPermission = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort.get.asInstanceOf[js.Any])
-    if (IpProtocol != null) __obj.updateDynamic("IpProtocol")(IpProtocol.asInstanceOf[js.Any])
-    if (IpRanges != null) __obj.updateDynamic("IpRanges")(IpRanges.asInstanceOf[js.Any])
-    if (PrefixListIds != null) __obj.updateDynamic("PrefixListIds")(PrefixListIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort.get.asInstanceOf[js.Any])
-    if (UserIdGroupPairs != null) __obj.updateDynamic("UserIdGroupPairs")(UserIdGroupPairs.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaleIpPermission]
   }
+  @scala.inline
+  implicit class StaleIpPermissionOps[Self <: StaleIpPermission] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFromPort(value: Integer): Self = this.set("FromPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromPort: Self = this.set("FromPort", js.undefined)
+    @scala.inline
+    def setIpProtocol(value: String): Self = this.set("IpProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpProtocol: Self = this.set("IpProtocol", js.undefined)
+    @scala.inline
+    def setIpRangesVarargs(value: String*): Self = this.set("IpRanges", js.Array(value :_*))
+    @scala.inline
+    def setIpRanges(value: IpRanges): Self = this.set("IpRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpRanges: Self = this.set("IpRanges", js.undefined)
+    @scala.inline
+    def setPrefixListIdsVarargs(value: String*): Self = this.set("PrefixListIds", js.Array(value :_*))
+    @scala.inline
+    def setPrefixListIds(value: PrefixListIdSet): Self = this.set("PrefixListIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixListIds: Self = this.set("PrefixListIds", js.undefined)
+    @scala.inline
+    def setToPort(value: Integer): Self = this.set("ToPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToPort: Self = this.set("ToPort", js.undefined)
+    @scala.inline
+    def setUserIdGroupPairsVarargs(value: UserIdGroupPair*): Self = this.set("UserIdGroupPairs", js.Array(value :_*))
+    @scala.inline
+    def setUserIdGroupPairs(value: UserIdGroupPairSet): Self = this.set("UserIdGroupPairs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIdGroupPairs: Self = this.set("UserIdGroupPairs", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "protobufjs" : "6.9.0"
+      "protobufjs" : "6.10.1"
     }
   ],
   "test-dependencies" : [
     {
-      "protobufjs" : "6.9.0"
+      "protobufjs" : "6.10.1"
     }
   ],
   "compile-devDependencies" : [

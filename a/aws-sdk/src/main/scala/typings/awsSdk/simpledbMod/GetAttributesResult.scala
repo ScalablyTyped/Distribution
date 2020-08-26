@@ -14,10 +14,28 @@ trait GetAttributesResult extends js.Object {
 
 object GetAttributesResult {
   @scala.inline
-  def apply(Attributes: AttributeList = null): GetAttributesResult = {
+  def apply(): GetAttributesResult = {
     val __obj = js.Dynamic.literal()
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAttributesResult]
   }
+  @scala.inline
+  implicit class GetAttributesResultOps[Self <: GetAttributesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributesVarargs(value: Attribute*): Self = this.set("Attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: AttributeList): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+  }
+  
 }
 

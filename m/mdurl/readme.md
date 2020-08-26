@@ -12,7 +12,7 @@ URL utilities for markdown-it
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 37 |
-| # downloads        | 45901516 |
+| # downloads        | 47783319 |
 | # stars            | 0 |
 
 ## Links

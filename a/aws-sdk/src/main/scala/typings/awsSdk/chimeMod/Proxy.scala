@@ -26,18 +26,40 @@ trait Proxy extends js.Object {
 
 object Proxy {
   @scala.inline
-  def apply(
-    DefaultSessionExpiryMinutes: js.UndefOr[Integer] = js.undefined,
-    Disabled: js.UndefOr[Boolean] = js.undefined,
-    FallBackPhoneNumber: E164PhoneNumber = null,
-    PhoneNumberCountries: StringList = null
-  ): Proxy = {
+  def apply(): Proxy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DefaultSessionExpiryMinutes)) __obj.updateDynamic("DefaultSessionExpiryMinutes")(DefaultSessionExpiryMinutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.get.asInstanceOf[js.Any])
-    if (FallBackPhoneNumber != null) __obj.updateDynamic("FallBackPhoneNumber")(FallBackPhoneNumber.asInstanceOf[js.Any])
-    if (PhoneNumberCountries != null) __obj.updateDynamic("PhoneNumberCountries")(PhoneNumberCountries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Proxy]
   }
+  @scala.inline
+  implicit class ProxyOps[Self <: Proxy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultSessionExpiryMinutes(value: Integer): Self = this.set("DefaultSessionExpiryMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSessionExpiryMinutes: Self = this.set("DefaultSessionExpiryMinutes", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    @scala.inline
+    def setFallBackPhoneNumber(value: E164PhoneNumber): Self = this.set("FallBackPhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallBackPhoneNumber: Self = this.set("FallBackPhoneNumber", js.undefined)
+    @scala.inline
+    def setPhoneNumberCountriesVarargs(value: String*): Self = this.set("PhoneNumberCountries", js.Array(value :_*))
+    @scala.inline
+    def setPhoneNumberCountries(value: StringList): Self = this.set("PhoneNumberCountries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumberCountries: Self = this.set("PhoneNumberCountries", js.undefined)
+  }
+  
 }
 

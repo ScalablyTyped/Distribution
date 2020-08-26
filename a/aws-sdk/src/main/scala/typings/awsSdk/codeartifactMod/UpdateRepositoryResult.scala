@@ -14,10 +14,26 @@ trait UpdateRepositoryResult extends js.Object {
 
 object UpdateRepositoryResult {
   @scala.inline
-  def apply(repository: RepositoryDescription = null): UpdateRepositoryResult = {
+  def apply(): UpdateRepositoryResult = {
     val __obj = js.Dynamic.literal()
-    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRepositoryResult]
   }
+  @scala.inline
+  implicit class UpdateRepositoryResultOps[Self <: UpdateRepositoryResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepository(value: RepositoryDescription): Self = this.set("repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepository: Self = this.set("repository", js.undefined)
+  }
+  
 }
 

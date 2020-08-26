@@ -34,21 +34,44 @@ trait ListEntitiesForPolicyRequest extends js.Object {
 
 object ListEntitiesForPolicyRequest {
   @scala.inline
-  def apply(
-    PolicyArn: arnType,
-    EntityFilter: EntityType = null,
-    Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined,
-    PathPrefix: pathType = null,
-    PolicyUsageFilter: PolicyUsageType = null
-  ): ListEntitiesForPolicyRequest = {
+  def apply(PolicyArn: arnType): ListEntitiesForPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any])
-    if (EntityFilter != null) __obj.updateDynamic("EntityFilter")(EntityFilter.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
-    if (PathPrefix != null) __obj.updateDynamic("PathPrefix")(PathPrefix.asInstanceOf[js.Any])
-    if (PolicyUsageFilter != null) __obj.updateDynamic("PolicyUsageFilter")(PolicyUsageFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEntitiesForPolicyRequest]
   }
+  @scala.inline
+  implicit class ListEntitiesForPolicyRequestOps[Self <: ListEntitiesForPolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyArn(value: arnType): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEntityFilter(value: EntityType): Self = this.set("EntityFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityFilter: Self = this.set("EntityFilter", js.undefined)
+    @scala.inline
+    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxItems(value: maxItemsType): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    @scala.inline
+    def setPathPrefix(value: pathType): Self = this.set("PathPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathPrefix: Self = this.set("PathPrefix", js.undefined)
+    @scala.inline
+    def setPolicyUsageFilter(value: PolicyUsageType): Self = this.set("PolicyUsageFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyUsageFilter: Self = this.set("PolicyUsageFilter", js.undefined)
+  }
+  
 }
 

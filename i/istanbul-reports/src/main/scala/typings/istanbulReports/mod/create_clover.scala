@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object create_clover extends js.Object {
   def apply(name: clover): Visitor[Node] = js.native
-  def apply(name: clover, options: Partial[RootedOptions]): Visitor[Node] = js.native
+  def apply(name: clover, options: Partial[CloverOptions]): Visitor[Node] = js.native
 }
 

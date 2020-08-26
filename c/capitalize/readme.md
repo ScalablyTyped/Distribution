@@ -11,8 +11,8 @@ capitalize the first letter of a string, or all words in a string
 | Full name          | capitalize |
 | Keywords           | capitalize |
 | # releases         | 3 |
-| # dependents       | 184 |
-| # downloads        | 3266929 |
+| # dependents       | 186 |
+| # downloads        | 3279631 |
 | # stars            | 3 |
 
 ## Links

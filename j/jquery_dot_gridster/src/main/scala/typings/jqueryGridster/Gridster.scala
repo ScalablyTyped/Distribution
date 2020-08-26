@@ -22,24 +22,134 @@ trait Gridster extends js.Object {
     * @return Returns the jQuery wrapped HTMLElement representing the widget that was just created.
     **/
   def add_widget(html: String): JQuery = js.native
+  def add_widget(
+    html: String,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: js.UndefOr[scala.Nothing],
+    col: js.UndefOr[scala.Nothing],
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: String, size_x: js.UndefOr[scala.Nothing], size_y: js.UndefOr[scala.Nothing], col: Double): JQuery = js.native
+  def add_widget(
+    html: String,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: js.UndefOr[scala.Nothing],
+    col: Double,
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: String, size_x: js.UndefOr[scala.Nothing], size_y: Double): JQuery = js.native
+  def add_widget(
+    html: String,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: Double,
+    col: js.UndefOr[scala.Nothing],
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: String, size_x: js.UndefOr[scala.Nothing], size_y: Double, col: Double): JQuery = js.native
+  def add_widget(html: String, size_x: js.UndefOr[scala.Nothing], size_y: Double, col: Double, row: Double): JQuery = js.native
   def add_widget(html: String, size_x: Double): JQuery = js.native
+  def add_widget(
+    html: String,
+    size_x: Double,
+    size_y: js.UndefOr[scala.Nothing],
+    col: js.UndefOr[scala.Nothing],
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: String, size_x: Double, size_y: js.UndefOr[scala.Nothing], col: Double): JQuery = js.native
+  def add_widget(html: String, size_x: Double, size_y: js.UndefOr[scala.Nothing], col: Double, row: Double): JQuery = js.native
   def add_widget(html: String, size_x: Double, size_y: Double): JQuery = js.native
+  def add_widget(html: String, size_x: Double, size_y: Double, col: js.UndefOr[scala.Nothing], row: Double): JQuery = js.native
   def add_widget(html: String, size_x: Double, size_y: Double, col: Double): JQuery = js.native
   def add_widget(html: String, size_x: Double, size_y: Double, col: Double, row: Double): JQuery = js.native
   /**
     * @see add_widget
     **/
   def add_widget(html: JQuery): JQuery = js.native
+  def add_widget(
+    html: JQuery,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: js.UndefOr[scala.Nothing],
+    col: js.UndefOr[scala.Nothing],
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: JQuery, size_x: js.UndefOr[scala.Nothing], size_y: js.UndefOr[scala.Nothing], col: Double): JQuery = js.native
+  def add_widget(
+    html: JQuery,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: js.UndefOr[scala.Nothing],
+    col: Double,
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: JQuery, size_x: js.UndefOr[scala.Nothing], size_y: Double): JQuery = js.native
+  def add_widget(
+    html: JQuery,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: Double,
+    col: js.UndefOr[scala.Nothing],
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: JQuery, size_x: js.UndefOr[scala.Nothing], size_y: Double, col: Double): JQuery = js.native
+  def add_widget(html: JQuery, size_x: js.UndefOr[scala.Nothing], size_y: Double, col: Double, row: Double): JQuery = js.native
   def add_widget(html: JQuery, size_x: Double): JQuery = js.native
+  def add_widget(
+    html: JQuery,
+    size_x: Double,
+    size_y: js.UndefOr[scala.Nothing],
+    col: js.UndefOr[scala.Nothing],
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: JQuery, size_x: Double, size_y: js.UndefOr[scala.Nothing], col: Double): JQuery = js.native
+  def add_widget(html: JQuery, size_x: Double, size_y: js.UndefOr[scala.Nothing], col: Double, row: Double): JQuery = js.native
   def add_widget(html: JQuery, size_x: Double, size_y: Double): JQuery = js.native
+  def add_widget(html: JQuery, size_x: Double, size_y: Double, col: js.UndefOr[scala.Nothing], row: Double): JQuery = js.native
   def add_widget(html: JQuery, size_x: Double, size_y: Double, col: Double): JQuery = js.native
   def add_widget(html: JQuery, size_x: Double, size_y: Double, col: Double, row: Double): JQuery = js.native
   /**
     * @see add_widget
     **/
   def add_widget(html: HTMLElement): JQuery = js.native
+  def add_widget(
+    html: HTMLElement,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: js.UndefOr[scala.Nothing],
+    col: js.UndefOr[scala.Nothing],
+    row: Double
+  ): JQuery = js.native
+  def add_widget(
+    html: HTMLElement,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: js.UndefOr[scala.Nothing],
+    col: Double
+  ): JQuery = js.native
+  def add_widget(
+    html: HTMLElement,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: js.UndefOr[scala.Nothing],
+    col: Double,
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: HTMLElement, size_x: js.UndefOr[scala.Nothing], size_y: Double): JQuery = js.native
+  def add_widget(
+    html: HTMLElement,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: Double,
+    col: js.UndefOr[scala.Nothing],
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: HTMLElement, size_x: js.UndefOr[scala.Nothing], size_y: Double, col: Double): JQuery = js.native
+  def add_widget(html: HTMLElement, size_x: js.UndefOr[scala.Nothing], size_y: Double, col: Double, row: Double): JQuery = js.native
   def add_widget(html: HTMLElement, size_x: Double): JQuery = js.native
+  def add_widget(
+    html: HTMLElement,
+    size_x: Double,
+    size_y: js.UndefOr[scala.Nothing],
+    col: js.UndefOr[scala.Nothing],
+    row: Double
+  ): JQuery = js.native
+  def add_widget(html: HTMLElement, size_x: Double, size_y: js.UndefOr[scala.Nothing], col: Double): JQuery = js.native
+  def add_widget(html: HTMLElement, size_x: Double, size_y: js.UndefOr[scala.Nothing], col: Double, row: Double): JQuery = js.native
   def add_widget(html: HTMLElement, size_x: Double, size_y: Double): JQuery = js.native
+  def add_widget(html: HTMLElement, size_x: Double, size_y: Double, col: js.UndefOr[scala.Nothing], row: Double): JQuery = js.native
   def add_widget(html: HTMLElement, size_x: Double, size_y: Double, col: Double): JQuery = js.native
   def add_widget(html: HTMLElement, size_x: Double, size_y: Double, col: Double, row: Double): JQuery = js.native
   /**
@@ -65,6 +175,7 @@ trait Gridster extends js.Object {
     * @see remove_widget
     **/
   def remove_widget(el: JQuery, callback: js.Function1[/* el */ HTMLElement, Unit]): Gridster = js.native
+  def remove_widget(el: JQuery, silent: js.UndefOr[scala.Nothing], callback: js.Function1[/* el */ HTMLElement, Unit]): Gridster = js.native
   def remove_widget(el: JQuery, silent: Boolean): Gridster = js.native
   def remove_widget(el: JQuery, silent: Boolean, callback: js.Function1[/* el */ HTMLElement, Unit]): Gridster = js.native
   /**
@@ -79,6 +190,11 @@ trait Gridster extends js.Object {
     * @see remove_widget
     **/
   def remove_widget(el: HTMLElement, callback: js.Function1[/* el */ HTMLElement, Unit]): Gridster = js.native
+  def remove_widget(
+    el: HTMLElement,
+    silent: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* el */ HTMLElement, Unit]
+  ): Gridster = js.native
   def remove_widget(el: HTMLElement, silent: Boolean): Gridster = js.native
   def remove_widget(el: HTMLElement, silent: Boolean, callback: js.Function1[/* el */ HTMLElement, Unit]): Gridster = js.native
   /**
@@ -90,7 +206,26 @@ trait Gridster extends js.Object {
     * @return Returns $widget.
     **/
   def resize_widget($widget: JQuery): JQuery = js.native
+  def resize_widget(
+    $widget: JQuery,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* size_x */ Double, /* size_y */ Double, Unit]
+  ): JQuery = js.native
+  def resize_widget($widget: JQuery, size_x: js.UndefOr[scala.Nothing], size_y: Double): JQuery = js.native
+  def resize_widget(
+    $widget: JQuery,
+    size_x: js.UndefOr[scala.Nothing],
+    size_y: Double,
+    callback: js.Function2[/* size_x */ Double, /* size_y */ Double, Unit]
+  ): JQuery = js.native
   def resize_widget($widget: JQuery, size_x: Double): JQuery = js.native
+  def resize_widget(
+    $widget: JQuery,
+    size_x: Double,
+    size_y: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* size_x */ Double, /* size_y */ Double, Unit]
+  ): JQuery = js.native
   def resize_widget($widget: JQuery, size_x: Double, size_y: Double): JQuery = js.native
   def resize_widget(
     $widget: JQuery,

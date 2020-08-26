@@ -46,28 +46,58 @@ trait WorkspaceBundle extends js.Object {
 
 object WorkspaceBundle {
   @scala.inline
-  def apply(
-    BundleId: BundleId = null,
-    ComputeType: ComputeType = null,
-    Description: Description = null,
-    ImageId: WorkspaceImageId = null,
-    LastUpdatedTime: Timestamp = null,
-    Name: NonEmptyString = null,
-    Owner: BundleOwner = null,
-    RootStorage: RootStorage = null,
-    UserStorage: UserStorage = null
-  ): WorkspaceBundle = {
+  def apply(): WorkspaceBundle = {
     val __obj = js.Dynamic.literal()
-    if (BundleId != null) __obj.updateDynamic("BundleId")(BundleId.asInstanceOf[js.Any])
-    if (ComputeType != null) __obj.updateDynamic("ComputeType")(ComputeType.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (RootStorage != null) __obj.updateDynamic("RootStorage")(RootStorage.asInstanceOf[js.Any])
-    if (UserStorage != null) __obj.updateDynamic("UserStorage")(UserStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceBundle]
   }
+  @scala.inline
+  implicit class WorkspaceBundleOps[Self <: WorkspaceBundle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleId(value: BundleId): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("BundleId", js.undefined)
+    @scala.inline
+    def setComputeType(value: ComputeType): Self = this.set("ComputeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeType: Self = this.set("ComputeType", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setImageId(value: WorkspaceImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: Timestamp): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    @scala.inline
+    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOwner(value: BundleOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setRootStorage(value: RootStorage): Self = this.set("RootStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootStorage: Self = this.set("RootStorage", js.undefined)
+    @scala.inline
+    def setUserStorage(value: UserStorage): Self = this.set("UserStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserStorage: Self = this.set("UserStorage", js.undefined)
+  }
+  
 }
 

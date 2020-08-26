@@ -19,28 +19,58 @@ trait EarlyStop extends js.Object {
 
 object EarlyStop {
   @scala.inline
-  def apply(
-    earlyStop: js.UndefOr[Boolean] = js.undefined,
-    l1Reg: js.UndefOr[Double] = js.undefined,
-    l2Reg: js.UndefOr[Double] = js.undefined,
-    learnRate: js.UndefOr[Double] = js.undefined,
-    learnRateStrategy: String = null,
-    lineSearchInitLearnRate: js.UndefOr[Double] = js.undefined,
-    maxIteration: String = null,
-    minRelProgress: js.UndefOr[Double] = js.undefined,
-    warmStart: js.UndefOr[Boolean] = js.undefined
-  ): EarlyStop = {
+  def apply(): EarlyStop = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(earlyStop)) __obj.updateDynamic("earlyStop")(earlyStop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(l1Reg)) __obj.updateDynamic("l1Reg")(l1Reg.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(l2Reg)) __obj.updateDynamic("l2Reg")(l2Reg.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(learnRate)) __obj.updateDynamic("learnRate")(learnRate.get.asInstanceOf[js.Any])
-    if (learnRateStrategy != null) __obj.updateDynamic("learnRateStrategy")(learnRateStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineSearchInitLearnRate)) __obj.updateDynamic("lineSearchInitLearnRate")(lineSearchInitLearnRate.get.asInstanceOf[js.Any])
-    if (maxIteration != null) __obj.updateDynamic("maxIteration")(maxIteration.asInstanceOf[js.Any])
-    if (!js.isUndefined(minRelProgress)) __obj.updateDynamic("minRelProgress")(minRelProgress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(warmStart)) __obj.updateDynamic("warmStart")(warmStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarlyStop]
   }
+  @scala.inline
+  implicit class EarlyStopOps[Self <: EarlyStop] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEarlyStop(value: Boolean): Self = this.set("earlyStop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEarlyStop: Self = this.set("earlyStop", js.undefined)
+    @scala.inline
+    def setL1Reg(value: Double): Self = this.set("l1Reg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteL1Reg: Self = this.set("l1Reg", js.undefined)
+    @scala.inline
+    def setL2Reg(value: Double): Self = this.set("l2Reg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteL2Reg: Self = this.set("l2Reg", js.undefined)
+    @scala.inline
+    def setLearnRate(value: Double): Self = this.set("learnRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLearnRate: Self = this.set("learnRate", js.undefined)
+    @scala.inline
+    def setLearnRateStrategy(value: String): Self = this.set("learnRateStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLearnRateStrategy: Self = this.set("learnRateStrategy", js.undefined)
+    @scala.inline
+    def setLineSearchInitLearnRate(value: Double): Self = this.set("lineSearchInitLearnRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineSearchInitLearnRate: Self = this.set("lineSearchInitLearnRate", js.undefined)
+    @scala.inline
+    def setMaxIteration(value: String): Self = this.set("maxIteration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxIteration: Self = this.set("maxIteration", js.undefined)
+    @scala.inline
+    def setMinRelProgress(value: Double): Self = this.set("minRelProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinRelProgress: Self = this.set("minRelProgress", js.undefined)
+    @scala.inline
+    def setWarmStart(value: Boolean): Self = this.set("warmStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarmStart: Self = this.set("warmStart", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
-import typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason
-import typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedReason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,11 +11,7 @@ object ExtendedExecution extends js.Object {
   /** Represents the object that is passed as a parameter to the event handler that is invoked when the system revokes background execution. */
   @js.native
   abstract class ExtendedExecutionRevokedEventArgs ()
-    extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs {
-    /** Gets the reason background execution was revoked. */
-    /* CompleteClass */
-    override var reason: ExtendedExecutionRevokedReason = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs
   
   /** Supports managing a request for background execution. */
   @js.native
@@ -65,11 +59,7 @@ object ExtendedExecution extends js.Object {
     /** Passed to the event handler that is invoked when the system revokes extended execution. */
     @js.native
     abstract class ExtendedExecutionForegroundRevokedEventArgs ()
-      extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs {
-      /** Gets the reason extended execution was revoked. */
-      /* CompleteClass */
-      override var reason: ExtendedExecutionForegroundRevokedReason = js.native
-    }
+      extends typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs
     
     /** Supports managing a request for extended foreground execution. */
     @js.native

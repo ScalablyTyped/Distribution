@@ -18,10 +18,28 @@ trait DocumentClassifierInputDataConfig extends js.Object {
 
 object DocumentClassifierInputDataConfig {
   @scala.inline
-  def apply(S3Uri: S3Uri, LabelDelimiter: LabelDelimiter = null): DocumentClassifierInputDataConfig = {
+  def apply(S3Uri: S3Uri): DocumentClassifierInputDataConfig = {
     val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
-    if (LabelDelimiter != null) __obj.updateDynamic("LabelDelimiter")(LabelDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentClassifierInputDataConfig]
   }
+  @scala.inline
+  implicit class DocumentClassifierInputDataConfigOps[Self <: DocumentClassifierInputDataConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelDelimiter(value: LabelDelimiter): Self = this.set("LabelDelimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelDelimiter: Self = this.set("LabelDelimiter", js.undefined)
+  }
+  
 }
 

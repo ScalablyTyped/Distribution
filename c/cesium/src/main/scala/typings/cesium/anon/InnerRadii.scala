@@ -6,42 +6,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InnerRadii extends js.Object {
-  var innerRadii: js.UndefOr[Cartesian3] = js.undefined
-  var maximumClock: js.UndefOr[Double] = js.undefined
-  var maximumCone: js.UndefOr[Double] = js.undefined
-  var minimumClock: js.UndefOr[Double] = js.undefined
-  var minimumCone: js.UndefOr[Double] = js.undefined
-  var radii: js.UndefOr[Cartesian3] = js.undefined
-  var slicePartitions: js.UndefOr[Double] = js.undefined
-  var stackPartitions: js.UndefOr[Double] = js.undefined
-  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
+  var innerRadii: js.UndefOr[Cartesian3] = js.native
+  var maximumClock: js.UndefOr[Double] = js.native
+  var maximumCone: js.UndefOr[Double] = js.native
+  var minimumClock: js.UndefOr[Double] = js.native
+  var minimumCone: js.UndefOr[Double] = js.native
+  var radii: js.UndefOr[Cartesian3] = js.native
+  var slicePartitions: js.UndefOr[Double] = js.native
+  var stackPartitions: js.UndefOr[Double] = js.native
+  var vertexFormat: js.UndefOr[VertexFormat] = js.native
 }
 
 object InnerRadii {
   @scala.inline
-  def apply(
-    innerRadii: Cartesian3 = null,
-    maximumClock: js.UndefOr[Double] = js.undefined,
-    maximumCone: js.UndefOr[Double] = js.undefined,
-    minimumClock: js.UndefOr[Double] = js.undefined,
-    minimumCone: js.UndefOr[Double] = js.undefined,
-    radii: Cartesian3 = null,
-    slicePartitions: js.UndefOr[Double] = js.undefined,
-    stackPartitions: js.UndefOr[Double] = js.undefined,
-    vertexFormat: VertexFormat = null
-  ): InnerRadii = {
+  def apply(): InnerRadii = {
     val __obj = js.Dynamic.literal()
-    if (innerRadii != null) __obj.updateDynamic("innerRadii")(innerRadii.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumClock)) __obj.updateDynamic("maximumClock")(maximumClock.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumCone)) __obj.updateDynamic("maximumCone")(maximumCone.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumClock)) __obj.updateDynamic("minimumClock")(minimumClock.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumCone)) __obj.updateDynamic("minimumCone")(minimumCone.get.asInstanceOf[js.Any])
-    if (radii != null) __obj.updateDynamic("radii")(radii.asInstanceOf[js.Any])
-    if (!js.isUndefined(slicePartitions)) __obj.updateDynamic("slicePartitions")(slicePartitions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackPartitions)) __obj.updateDynamic("stackPartitions")(stackPartitions.get.asInstanceOf[js.Any])
-    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[InnerRadii]
   }
+  @scala.inline
+  implicit class InnerRadiiOps[Self <: InnerRadii] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInnerRadii(value: Cartesian3): Self = this.set("innerRadii", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerRadii: Self = this.set("innerRadii", js.undefined)
+    @scala.inline
+    def setMaximumClock(value: Double): Self = this.set("maximumClock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumClock: Self = this.set("maximumClock", js.undefined)
+    @scala.inline
+    def setMaximumCone(value: Double): Self = this.set("maximumCone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumCone: Self = this.set("maximumCone", js.undefined)
+    @scala.inline
+    def setMinimumClock(value: Double): Self = this.set("minimumClock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumClock: Self = this.set("minimumClock", js.undefined)
+    @scala.inline
+    def setMinimumCone(value: Double): Self = this.set("minimumCone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumCone: Self = this.set("minimumCone", js.undefined)
+    @scala.inline
+    def setRadii(value: Cartesian3): Self = this.set("radii", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadii: Self = this.set("radii", js.undefined)
+    @scala.inline
+    def setSlicePartitions(value: Double): Self = this.set("slicePartitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlicePartitions: Self = this.set("slicePartitions", js.undefined)
+    @scala.inline
+    def setStackPartitions(value: Double): Self = this.set("stackPartitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackPartitions: Self = this.set("stackPartitions", js.undefined)
+    @scala.inline
+    def setVertexFormat(value: VertexFormat): Self = this.set("vertexFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertexFormat: Self = this.set("vertexFormat", js.undefined)
+  }
+  
 }
 

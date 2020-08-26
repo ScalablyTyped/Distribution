@@ -12,12 +12,12 @@ class EngineReportingAgent[TContext] () extends js.Object {
   def this(options: EngineReportingOptions[TContext]) = this()
   val apiKey: js.Any = js.native
   val bootId: js.Any = js.native
-  var currentSchemaReporter: js.UndefOr[js.Any] = js.native
+  var currentSchemaReporter: js.Any = js.native
   var executableSchemaIdGenerator: js.Any = js.native
   var getReportData: js.Any = js.native
   var getTraceSignature: js.Any = js.native
   val graphVariant: js.Any = js.native
-  var lastSeenExecutableSchemaToId: js.UndefOr[js.Any] = js.native
+  var lastSeenExecutableSchemaToId: js.Any = js.native
   val logger: js.Any = js.native
   val options: js.Any = js.native
   val reportDataByExecutableSchemaId: js.Any = js.native
@@ -25,7 +25,7 @@ class EngineReportingAgent[TContext] () extends js.Object {
   val schemaReport: Boolean = js.native
   var sendAllReportsAndReportErrors: js.Any = js.native
   var sendReportAndReportErrors: js.Any = js.native
-  val sendReportsImmediately: js.UndefOr[js.Any] = js.native
+  val sendReportsImmediately: js.Any = js.native
   var signalHandlers: js.Any = js.native
   var signatureCache: js.Any = js.native
   var stopped: js.Any = js.native

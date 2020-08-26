@@ -19,11 +19,30 @@ trait GroupMixedInstancesPolicyLaunchTemplateOverride extends js.Object {
 
 object GroupMixedInstancesPolicyLaunchTemplateOverride {
   @scala.inline
-  def apply(instanceType: Input[String] = null, weightedCapacity: Input[String] = null): GroupMixedInstancesPolicyLaunchTemplateOverride = {
+  def apply(): GroupMixedInstancesPolicyLaunchTemplateOverride = {
     val __obj = js.Dynamic.literal()
-    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (weightedCapacity != null) __obj.updateDynamic("weightedCapacity")(weightedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupMixedInstancesPolicyLaunchTemplateOverride]
   }
+  @scala.inline
+  implicit class GroupMixedInstancesPolicyLaunchTemplateOverrideOps[Self <: GroupMixedInstancesPolicyLaunchTemplateOverride] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceType(value: Input[String]): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    @scala.inline
+    def setWeightedCapacity(value: Input[String]): Self = this.set("weightedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedCapacity: Self = this.set("weightedCapacity", js.undefined)
+  }
+  
 }
 

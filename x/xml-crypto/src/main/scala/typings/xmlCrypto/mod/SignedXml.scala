@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignedXml () extends js.Object {
   def this(idMode: String) = this()
+  def this(idMode: js.UndefOr[scala.Nothing], options: CanonicalizationAlgorithm) = this()
   def this(idMode: String, options: CanonicalizationAlgorithm) = this()
   def this(idMode: Null, options: CanonicalizationAlgorithm) = this()
   var canonicalizationAlgorithm: String = js.native

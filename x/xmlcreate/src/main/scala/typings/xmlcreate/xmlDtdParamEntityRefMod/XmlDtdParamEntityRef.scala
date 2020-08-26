@@ -16,7 +16,7 @@ trait XmlDtdParamEntityRef[Parent] extends js.Object {
   /**
     * Sets the name of this parameter entity reference.
     */
-  def name(name: String): js.Any = js.native
+  def name_=(name: String): Unit = js.native
   /**
     * Returns the parent of this parameter entity reference.
     */

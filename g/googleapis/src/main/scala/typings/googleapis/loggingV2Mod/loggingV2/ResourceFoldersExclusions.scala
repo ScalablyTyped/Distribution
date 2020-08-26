@@ -30,6 +30,7 @@ class ResourceFoldersExclusions protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaLogExclusion] = js.native
   def create(callback: BodyResponseCallback[SchemaLogExclusion]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogExclusion] = js.native
   def create(params: ParamsResourceFoldersExclusionsCreate): GaxiosPromise[SchemaLogExclusion] = js.native
   def create(params: ParamsResourceFoldersExclusionsCreate, callback: BodyResponseCallback[SchemaLogExclusion]): Unit = js.native
   def create(
@@ -57,6 +58,7 @@ class ResourceFoldersExclusions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceFoldersExclusionsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceFoldersExclusionsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -84,6 +86,7 @@ class ResourceFoldersExclusions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLogExclusion] = js.native
   def get(callback: BodyResponseCallback[SchemaLogExclusion]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogExclusion] = js.native
   def get(params: ParamsResourceFoldersExclusionsGet): GaxiosPromise[SchemaLogExclusion] = js.native
   def get(params: ParamsResourceFoldersExclusionsGet, callback: BodyResponseCallback[SchemaLogExclusion]): Unit = js.native
   def get(
@@ -113,6 +116,7 @@ class ResourceFoldersExclusions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListExclusionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListExclusionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListExclusionsResponse] = js.native
   def list(params: ParamsResourceFoldersExclusionsList): GaxiosPromise[SchemaListExclusionsResponse] = js.native
   def list(
     params: ParamsResourceFoldersExclusionsList,
@@ -145,6 +149,7 @@ class ResourceFoldersExclusions protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaLogExclusion] = js.native
   def patch(callback: BodyResponseCallback[SchemaLogExclusion]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogExclusion] = js.native
   def patch(params: ParamsResourceFoldersExclusionsPatch): GaxiosPromise[SchemaLogExclusion] = js.native
   def patch(params: ParamsResourceFoldersExclusionsPatch, callback: BodyResponseCallback[SchemaLogExclusion]): Unit = js.native
   def patch(

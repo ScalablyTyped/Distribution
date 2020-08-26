@@ -38,23 +38,56 @@ trait CreateSecurityProfileRequest extends js.Object {
 
 object CreateSecurityProfileRequest {
   @scala.inline
-  def apply(
-    securityProfileName: SecurityProfileName,
-    additionalMetricsToRetain: AdditionalMetricsToRetainList = null,
-    additionalMetricsToRetainV2: AdditionalMetricsToRetainV2List = null,
-    alertTargets: AlertTargets = null,
-    behaviors: Behaviors = null,
-    securityProfileDescription: SecurityProfileDescription = null,
-    tags: TagList = null
-  ): CreateSecurityProfileRequest = {
+  def apply(securityProfileName: SecurityProfileName): CreateSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName.asInstanceOf[js.Any])
-    if (additionalMetricsToRetain != null) __obj.updateDynamic("additionalMetricsToRetain")(additionalMetricsToRetain.asInstanceOf[js.Any])
-    if (additionalMetricsToRetainV2 != null) __obj.updateDynamic("additionalMetricsToRetainV2")(additionalMetricsToRetainV2.asInstanceOf[js.Any])
-    if (alertTargets != null) __obj.updateDynamic("alertTargets")(alertTargets.asInstanceOf[js.Any])
-    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
-    if (securityProfileDescription != null) __obj.updateDynamic("securityProfileDescription")(securityProfileDescription.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSecurityProfileRequest]
   }
+  @scala.inline
+  implicit class CreateSecurityProfileRequestOps[Self <: CreateSecurityProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecurityProfileName(value: SecurityProfileName): Self = this.set("securityProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalMetricsToRetainVarargs(value: BehaviorMetric*): Self = this.set("additionalMetricsToRetain", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalMetricsToRetain(value: AdditionalMetricsToRetainList): Self = this.set("additionalMetricsToRetain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalMetricsToRetain: Self = this.set("additionalMetricsToRetain", js.undefined)
+    @scala.inline
+    def setAdditionalMetricsToRetainV2Varargs(value: MetricToRetain*): Self = this.set("additionalMetricsToRetainV2", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalMetricsToRetainV2(value: AdditionalMetricsToRetainV2List): Self = this.set("additionalMetricsToRetainV2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalMetricsToRetainV2: Self = this.set("additionalMetricsToRetainV2", js.undefined)
+    @scala.inline
+    def setAlertTargets(value: AlertTargets): Self = this.set("alertTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlertTargets: Self = this.set("alertTargets", js.undefined)
+    @scala.inline
+    def setBehaviorsVarargs(value: Behavior*): Self = this.set("behaviors", js.Array(value :_*))
+    @scala.inline
+    def setBehaviors(value: Behaviors): Self = this.set("behaviors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBehaviors: Self = this.set("behaviors", js.undefined)
+    @scala.inline
+    def setSecurityProfileDescription(value: SecurityProfileDescription): Self = this.set("securityProfileDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityProfileDescription: Self = this.set("securityProfileDescription", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

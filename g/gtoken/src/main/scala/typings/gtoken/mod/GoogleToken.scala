@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
   */
 class GoogleToken () extends js.Object {
   def this(options: TokenOptions) = this()
-  val accessToken: js.UndefOr[String] = js.native
   var additionalClaims: js.UndefOr[js.Object] = js.native
   /**
     * Configure the GoogleToken for re-use.
@@ -25,12 +24,10 @@ class GoogleToken () extends js.Object {
   var ensureEmail: js.Any = js.native
   var expiresAt: js.UndefOr[Double] = js.native
   var getTokenAsync: js.Any = js.native
-  val idToken: js.UndefOr[String] = js.native
   var iss: js.UndefOr[String] = js.native
   var key: js.UndefOr[String] = js.native
   var keyFile: js.UndefOr[String] = js.native
   var rawToken: js.UndefOr[TokenData] = js.native
-  val refreshToken: js.UndefOr[String] = js.native
   /**
     * Request the token from Google.
     */
@@ -39,7 +36,7 @@ class GoogleToken () extends js.Object {
   var scope: js.UndefOr[String] = js.native
   var sub: js.UndefOr[String] = js.native
   var tokenExpires: js.UndefOr[Double] = js.native
-  val tokenType: js.UndefOr[String] = js.native
+  def accessToken: js.UndefOr[String] = js.native
   /**
     * Given a keyFile, extract the key and client email if available
     * @param keyFile Path to a json, pem, or p12 file that contains the key.
@@ -61,6 +58,8 @@ class GoogleToken () extends js.Object {
     * @return true if the token has expired, false otherwise.
     */
   def hasExpired(): Boolean = js.native
+  def idToken: js.UndefOr[String] = js.native
+  def refreshToken: js.UndefOr[String] = js.native
   /**
     * Revoke the token if one is set.
     *
@@ -68,5 +67,6 @@ class GoogleToken () extends js.Object {
     */
   def revokeToken(): js.Promise[Unit] = js.native
   def revokeToken(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def tokenType: js.UndefOr[String] = js.native
 }
 

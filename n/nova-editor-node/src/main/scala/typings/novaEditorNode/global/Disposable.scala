@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Disposable")
 @js.native
 class Disposable ()
-  extends typings.novaEditorNode.Disposable {
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-}
+  extends typings.novaEditorNode.Disposable
 
 /* static members */
 @JSGlobal("Disposable")

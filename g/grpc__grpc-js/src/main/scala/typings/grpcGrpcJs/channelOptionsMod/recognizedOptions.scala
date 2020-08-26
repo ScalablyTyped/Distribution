@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 object recognizedOptions extends js.Object {
   @JSName("grpc.default_authority")
   var grpcDotdefault_authority: Boolean = js.native
+  @JSName("grpc.enable_http_proxy")
+  var grpcDotenable_http_proxy: Boolean = js.native
   @JSName("grpc.initial_reconnect_backoff_ms")
   var grpcDotinitial_reconnect_backoff_ms: Boolean = js.native
   @JSName("grpc.keepalive_time_ms")
@@ -17,8 +19,12 @@ object recognizedOptions extends js.Object {
   var grpcDotkeepalive_timeout_ms: Boolean = js.native
   @JSName("grpc.max_concurrent_streams")
   var grpcDotmax_concurrent_streams: Boolean = js.native
+  @JSName("grpc.max_receive_message_length")
+  var grpcDotmax_receive_message_length: Boolean = js.native
   @JSName("grpc.max_reconnect_backoff_ms")
   var grpcDotmax_reconnect_backoff_ms: Boolean = js.native
+  @JSName("grpc.max_send_message_length")
+  var grpcDotmax_send_message_length: Boolean = js.native
   @JSName("grpc.primary_user_agent")
   var grpcDotprimary_user_agent: Boolean = js.native
   @JSName("grpc.secondary_user_agent")

@@ -26,16 +26,9 @@ object deleteVaultNotificationsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DeleteVaultNotificationsInput) = this()
-    /* CompleteClass */
-    override val input: DeleteVaultNotificationsInput = js.native
     val middlewareStack: MiddlewareStack[DeleteVaultNotificationsInput, DeleteVaultNotificationsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[DeleteVaultNotificationsInput, DeleteVaultNotificationsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[DeleteVaultNotificationsInput, DeleteVaultNotificationsOutput] = js.native
   }

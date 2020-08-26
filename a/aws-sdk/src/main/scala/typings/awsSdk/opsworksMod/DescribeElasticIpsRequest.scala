@@ -22,12 +22,36 @@ trait DescribeElasticIpsRequest extends js.Object {
 
 object DescribeElasticIpsRequest {
   @scala.inline
-  def apply(InstanceId: String = null, Ips: Strings = null, StackId: String = null): DescribeElasticIpsRequest = {
+  def apply(): DescribeElasticIpsRequest = {
     val __obj = js.Dynamic.literal()
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (Ips != null) __obj.updateDynamic("Ips")(Ips.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeElasticIpsRequest]
   }
+  @scala.inline
+  implicit class DescribeElasticIpsRequestOps[Self <: DescribeElasticIpsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setIpsVarargs(value: String*): Self = this.set("Ips", js.Array(value :_*))
+    @scala.inline
+    def setIps(value: Strings): Self = this.set("Ips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIps: Self = this.set("Ips", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+  }
+  
 }
 

@@ -7,63 +7,114 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MenuProps extends js.Object {
-  var MenuSelectContanerPrefixCls: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Array[DataItem]] = js.undefined
-  var defaultValue: js.UndefOr[ValueType] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var level: js.UndefOr[`1` | `2`] = js.undefined
-  var multiSelect: js.UndefOr[Boolean] = js.undefined
-  var multiSelectMenuBtnsCls: js.UndefOr[String] = js.undefined
-  var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[ValueType], Unit]] = js.undefined
-  var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[ValueType], Unit]] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var radioPrefixCls: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var subMenuPrefixCls: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[ValueType] = js.undefined
+  var MenuSelectContanerPrefixCls: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var data: js.UndefOr[js.Array[DataItem]] = js.native
+  var defaultValue: js.UndefOr[ValueType] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[`1` | `2`] = js.native
+  var multiSelect: js.UndefOr[Boolean] = js.native
+  var multiSelectMenuBtnsCls: js.UndefOr[String] = js.native
+  var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[ValueType], Unit]] = js.native
+  var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[ValueType], Unit]] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var radioPrefixCls: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var subMenuPrefixCls: js.UndefOr[String] = js.native
+  var value: js.UndefOr[ValueType] = js.native
 }
 
 object MenuProps {
   @scala.inline
-  def apply(
-    MenuSelectContanerPrefixCls: String = null,
-    className: String = null,
-    data: js.Array[DataItem] = null,
-    defaultValue: ValueType = null,
-    height: js.UndefOr[Double] = js.undefined,
-    level: `1` | `2` = null,
-    multiSelect: js.UndefOr[Boolean] = js.undefined,
-    multiSelectMenuBtnsCls: String = null,
-    onCancel: () => Unit = null,
-    onChange: /* value */ js.UndefOr[ValueType] => Unit = null,
-    onOk: /* value */ js.UndefOr[ValueType] => Unit = null,
-    prefixCls: String = null,
-    radioPrefixCls: String = null,
-    style: CSSProperties = null,
-    subMenuPrefixCls: String = null,
-    value: ValueType = null
-  ): MenuProps = {
+  def apply(): MenuProps = {
     val __obj = js.Dynamic.literal()
-    if (MenuSelectContanerPrefixCls != null) __obj.updateDynamic("MenuSelectContanerPrefixCls")(MenuSelectContanerPrefixCls.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.get.asInstanceOf[js.Any])
-    if (multiSelectMenuBtnsCls != null) __obj.updateDynamic("multiSelectMenuBtnsCls")(multiSelectMenuBtnsCls.asInstanceOf[js.Any])
-    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1(onOk))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (radioPrefixCls != null) __obj.updateDynamic("radioPrefixCls")(radioPrefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subMenuPrefixCls != null) __obj.updateDynamic("subMenuPrefixCls")(subMenuPrefixCls.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
+  @scala.inline
+  implicit class MenuPropsOps[Self <: MenuProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMenuSelectContanerPrefixCls(value: String): Self = this.set("MenuSelectContanerPrefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuSelectContanerPrefixCls: Self = this.set("MenuSelectContanerPrefixCls", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: DataItem*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[DataItem]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDefaultValueVarargs(value: (String | js.Array[String])*): Self = this.set("defaultValue", js.Array(value :_*))
+    @scala.inline
+    def setDefaultValue(value: ValueType): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLevel(value: `1` | `2`): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setMultiSelect(value: Boolean): Self = this.set("multiSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiSelect: Self = this.set("multiSelect", js.undefined)
+    @scala.inline
+    def setMultiSelectMenuBtnsCls(value: String): Self = this.set("multiSelectMenuBtnsCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiSelectMenuBtnsCls: Self = this.set("multiSelectMenuBtnsCls", js.undefined)
+    @scala.inline
+    def setOnCancel(value: () => Unit): Self = this.set("onCancel", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* value */ js.UndefOr[ValueType] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnOk(value: /* value */ js.UndefOr[ValueType] => Unit): Self = this.set("onOk", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOk: Self = this.set("onOk", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setRadioPrefixCls(value: String): Self = this.set("radioPrefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadioPrefixCls: Self = this.set("radioPrefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSubMenuPrefixCls(value: String): Self = this.set("subMenuPrefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubMenuPrefixCls: Self = this.set("subMenuPrefixCls", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: (String | js.Array[String])*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: ValueType): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

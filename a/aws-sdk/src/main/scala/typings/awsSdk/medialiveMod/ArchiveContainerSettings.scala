@@ -11,10 +11,26 @@ trait ArchiveContainerSettings extends js.Object {
 
 object ArchiveContainerSettings {
   @scala.inline
-  def apply(M2tsSettings: M2tsSettings = null): ArchiveContainerSettings = {
+  def apply(): ArchiveContainerSettings = {
     val __obj = js.Dynamic.literal()
-    if (M2tsSettings != null) __obj.updateDynamic("M2tsSettings")(M2tsSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveContainerSettings]
   }
+  @scala.inline
+  implicit class ArchiveContainerSettingsOps[Self <: ArchiveContainerSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setM2tsSettings(value: M2tsSettings): Self = this.set("M2tsSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteM2tsSettings: Self = this.set("M2tsSettings", js.undefined)
+  }
+  
 }
 

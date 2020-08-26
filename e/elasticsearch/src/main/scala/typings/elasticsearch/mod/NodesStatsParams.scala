@@ -7,60 +7,97 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NodesStatsParams extends GenericParams {
-  var completionFields: js.UndefOr[NameList] = js.undefined
-  var fielddataFields: js.UndefOr[NameList] = js.undefined
-  var fields: js.UndefOr[NameList] = js.undefined
-  var groups: js.UndefOr[Boolean] = js.undefined
-  var human: js.UndefOr[Boolean] = js.undefined
-  var indexMetric: js.UndefOr[NameList] = js.undefined
-  var level: js.UndefOr[indices | node | shards] = js.undefined
-  var metric: js.UndefOr[NameList] = js.undefined
-  var nodeId: js.UndefOr[NameList] = js.undefined
-  var timeout: js.UndefOr[TimeSpan] = js.undefined
-  var types: js.UndefOr[NameList] = js.undefined
+  var completionFields: js.UndefOr[NameList] = js.native
+  var fielddataFields: js.UndefOr[NameList] = js.native
+  var fields: js.UndefOr[NameList] = js.native
+  var groups: js.UndefOr[Boolean] = js.native
+  var human: js.UndefOr[Boolean] = js.native
+  var indexMetric: js.UndefOr[NameList] = js.native
+  var level: js.UndefOr[indices | node | shards] = js.native
+  var metric: js.UndefOr[NameList] = js.native
+  var nodeId: js.UndefOr[NameList] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.native
+  var types: js.UndefOr[NameList] = js.native
 }
 
 object NodesStatsParams {
   @scala.inline
-  def apply(
-    body: js.Any = null,
-    completionFields: NameList = null,
-    fielddataFields: NameList = null,
-    fields: NameList = null,
-    filterPath: String | js.Array[String] = null,
-    groups: js.UndefOr[Boolean] = js.undefined,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    indexMetric: NameList = null,
-    level: indices | node | shards = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    metric: NameList = null,
-    nodeId: NameList = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    timeout: TimeSpan = null,
-    types: NameList = null
-  ): NodesStatsParams = {
+  def apply(): NodesStatsParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (completionFields != null) __obj.updateDynamic("completionFields")(completionFields.asInstanceOf[js.Any])
-    if (fielddataFields != null) __obj.updateDynamic("fielddataFields")(fielddataFields.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(groups)) __obj.updateDynamic("groups")(groups.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (indexMetric != null) __obj.updateDynamic("indexMetric")(indexMetric.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (nodeId != null) __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesStatsParams]
   }
+  @scala.inline
+  implicit class NodesStatsParamsOps[Self <: NodesStatsParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionFieldsVarargs(value: String*): Self = this.set("completionFields", js.Array(value :_*))
+    @scala.inline
+    def setCompletionFields(value: NameList): Self = this.set("completionFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionFields: Self = this.set("completionFields", js.undefined)
+    @scala.inline
+    def setFielddataFieldsVarargs(value: String*): Self = this.set("fielddataFields", js.Array(value :_*))
+    @scala.inline
+    def setFielddataFields(value: NameList): Self = this.set("fielddataFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFielddataFields: Self = this.set("fielddataFields", js.undefined)
+    @scala.inline
+    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: NameList): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setGroups(value: Boolean): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("groups", js.undefined)
+    @scala.inline
+    def setHuman(value: Boolean): Self = this.set("human", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHuman: Self = this.set("human", js.undefined)
+    @scala.inline
+    def setIndexMetricVarargs(value: String*): Self = this.set("indexMetric", js.Array(value :_*))
+    @scala.inline
+    def setIndexMetric(value: NameList): Self = this.set("indexMetric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexMetric: Self = this.set("indexMetric", js.undefined)
+    @scala.inline
+    def setLevel(value: indices | node | shards): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setMetricVarargs(value: String*): Self = this.set("metric", js.Array(value :_*))
+    @scala.inline
+    def setMetric(value: NameList): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+    @scala.inline
+    def setNodeIdVarargs(value: String*): Self = this.set("nodeId", js.Array(value :_*))
+    @scala.inline
+    def setNodeId(value: NameList): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeId: Self = this.set("nodeId", js.undefined)
+    @scala.inline
+    def setTimeout(value: TimeSpan): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: NameList): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+  }
+  
 }
 

@@ -19,13 +19,14 @@ class Environment protected () extends js.Object {
   var populateURLFlags: js.Any = js.native
   var urlFlags: js.Any = js.native
   def get(flagName: String): FlagValue = js.native
+  def getAsync(flagName: String): js.Promise[FlagValue] = js.native
   def getBool(flagName: String): Boolean = js.native
   def getFlags(): Flags = js.native
   def getNumber(flagName: String): Double = js.native
-  def registerFlag(flagName: String, evaluationFn: js.Function0[FlagValue]): Unit = js.native
+  def registerFlag(flagName: String, evaluationFn: FlagEvaluationFn): Unit = js.native
   def registerFlag(
     flagName: String,
-    evaluationFn: js.Function0[FlagValue],
+    evaluationFn: FlagEvaluationFn,
     setHook: js.Function1[/* value */ FlagValue, Unit]
   ): Unit = js.native
   def reset(): Unit = js.native

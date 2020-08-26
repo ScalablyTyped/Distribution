@@ -4,20 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConditionalStyle extends js.Object {
-  val Application: typings.activexWord.Word.Application
-  var Borders: typings.activexWord.Word.Borders
-  var BottomPadding: Double
-  val Creator: Double
-  var Font: typings.activexWord.Word.Font
-  var LeftPadding: Double
-  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat
-  val Parent: js.Any
-  var RightPadding: Double
-  val Shading: typings.activexWord.Word.Shading
-  var TopPadding: Double
+  val Application: typings.activexWord.Word.Application = js.native
+  var Borders: typings.activexWord.Word.Borders = js.native
+  var BottomPadding: Double = js.native
+  val Creator: Double = js.native
+  var Font: typings.activexWord.Word.Font = js.native
+  var LeftPadding: Double = js.native
+  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
+  val Parent: js.Any = js.native
+  var RightPadding: Double = js.native
+  val Shading: typings.activexWord.Word.Shading = js.native
+  var TopPadding: Double = js.native
   @JSName("Word.ConditionalStyle_typekey")
-  var WordDotConditionalStyle_typekey: ConditionalStyle
+  var WordDotConditionalStyle_typekey: ConditionalStyle = js.native
 }
 
 object ConditionalStyle {
@@ -40,5 +41,42 @@ object ConditionalStyle {
     __obj.updateDynamic("Word.ConditionalStyle_typekey")(WordDotConditionalStyle_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalStyle]
   }
+  @scala.inline
+  implicit class ConditionalStyleOps[Self <: ConditionalStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBorders(value: Borders): Self = this.set("Borders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBottomPadding(value: Double): Self = this.set("BottomPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFont(value: Font): Self = this.set("Font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLeftPadding(value: Double): Self = this.set("LeftPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParagraphFormat(value: ParagraphFormat): Self = this.set("ParagraphFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRightPadding(value: Double): Self = this.set("RightPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShading(value: Shading): Self = this.set("Shading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopPadding(value: Double): Self = this.set("TopPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordDotConditionalStyle_typekey(value: ConditionalStyle): Self = this.set("Word.ConditionalStyle_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

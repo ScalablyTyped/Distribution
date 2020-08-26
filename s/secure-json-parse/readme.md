@@ -10,9 +10,9 @@ JSON parse with prototype poisoning protection
 | ------------------ | :-------------: |
 | Full name          | secure-json-parse |
 | Keywords           | JSON, parse, safe, security, prototype, pollution |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 1073219 |
+| # downloads        | 1316764 |
 | # stars            | 0 |
 
 ## Links

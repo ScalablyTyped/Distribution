@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object promptCL extends js.Object {
   def apply(): js.Array[String] = js.native
+  def apply(commandHandler: js.UndefOr[scala.Nothing], options: BasicOptions): js.Array[String] = js.native
   def apply(commandHandler: js.Function2[/* command */ String, /* repeated */ String, Unit]): js.Array[String] = js.native
   def apply(
     commandHandler: js.Function2[/* command */ String, /* repeated */ String, Unit],

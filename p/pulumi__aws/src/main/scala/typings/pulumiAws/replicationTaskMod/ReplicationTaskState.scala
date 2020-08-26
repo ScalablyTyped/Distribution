@@ -41,9 +41,9 @@ trait ReplicationTaskState extends js.Object {
     */
   val tableMappings: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint.
     */
@@ -52,30 +52,62 @@ trait ReplicationTaskState extends js.Object {
 
 object ReplicationTaskState {
   @scala.inline
-  def apply(
-    cdcStartTime: Input[String] = null,
-    migrationType: Input[String] = null,
-    replicationInstanceArn: Input[String] = null,
-    replicationTaskArn: Input[String] = null,
-    replicationTaskId: Input[String] = null,
-    replicationTaskSettings: Input[String] = null,
-    sourceEndpointArn: Input[String] = null,
-    tableMappings: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    targetEndpointArn: Input[String] = null
-  ): ReplicationTaskState = {
+  def apply(): ReplicationTaskState = {
     val __obj = js.Dynamic.literal()
-    if (cdcStartTime != null) __obj.updateDynamic("cdcStartTime")(cdcStartTime.asInstanceOf[js.Any])
-    if (migrationType != null) __obj.updateDynamic("migrationType")(migrationType.asInstanceOf[js.Any])
-    if (replicationInstanceArn != null) __obj.updateDynamic("replicationInstanceArn")(replicationInstanceArn.asInstanceOf[js.Any])
-    if (replicationTaskArn != null) __obj.updateDynamic("replicationTaskArn")(replicationTaskArn.asInstanceOf[js.Any])
-    if (replicationTaskId != null) __obj.updateDynamic("replicationTaskId")(replicationTaskId.asInstanceOf[js.Any])
-    if (replicationTaskSettings != null) __obj.updateDynamic("replicationTaskSettings")(replicationTaskSettings.asInstanceOf[js.Any])
-    if (sourceEndpointArn != null) __obj.updateDynamic("sourceEndpointArn")(sourceEndpointArn.asInstanceOf[js.Any])
-    if (tableMappings != null) __obj.updateDynamic("tableMappings")(tableMappings.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (targetEndpointArn != null) __obj.updateDynamic("targetEndpointArn")(targetEndpointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationTaskState]
   }
+  @scala.inline
+  implicit class ReplicationTaskStateOps[Self <: ReplicationTaskState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCdcStartTime(value: Input[String]): Self = this.set("cdcStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdcStartTime: Self = this.set("cdcStartTime", js.undefined)
+    @scala.inline
+    def setMigrationType(value: Input[String]): Self = this.set("migrationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMigrationType: Self = this.set("migrationType", js.undefined)
+    @scala.inline
+    def setReplicationInstanceArn(value: Input[String]): Self = this.set("replicationInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceArn: Self = this.set("replicationInstanceArn", js.undefined)
+    @scala.inline
+    def setReplicationTaskArn(value: Input[String]): Self = this.set("replicationTaskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskArn: Self = this.set("replicationTaskArn", js.undefined)
+    @scala.inline
+    def setReplicationTaskId(value: Input[String]): Self = this.set("replicationTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskId: Self = this.set("replicationTaskId", js.undefined)
+    @scala.inline
+    def setReplicationTaskSettings(value: Input[String]): Self = this.set("replicationTaskSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskSettings: Self = this.set("replicationTaskSettings", js.undefined)
+    @scala.inline
+    def setSourceEndpointArn(value: Input[String]): Self = this.set("sourceEndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceEndpointArn: Self = this.set("sourceEndpointArn", js.undefined)
+    @scala.inline
+    def setTableMappings(value: Input[String]): Self = this.set("tableMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableMappings: Self = this.set("tableMappings", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTargetEndpointArn(value: Input[String]): Self = this.set("targetEndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetEndpointArn: Self = this.set("targetEndpointArn", js.undefined)
+  }
+  
 }
 

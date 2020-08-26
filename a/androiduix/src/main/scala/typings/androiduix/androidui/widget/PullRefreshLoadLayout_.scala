@@ -1,23 +1,16 @@
 package typings.androiduix.androidui.widget
 
-import typings.androiduix.android.content.Context
 import typings.androiduix.android.view.View
 import typings.androiduix.android.widget.FrameLayout
 import typings.androiduix.androidui.widget.PullRefreshLoadLayout.FooterView
 import typings.androiduix.androidui.widget.PullRefreshLoadLayout.HeaderView
 import typings.androiduix.androidui.widget.PullRefreshLoadLayout.RefreshLoadListener
-import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("androidui.widget.PullRefreshLoadLayout")
 @js.native
-class PullRefreshLoadLayout_ protected () extends FrameLayout {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
+trait PullRefreshLoadLayout_ extends FrameLayout {
   var autoLoadScrollAtBottom: js.Any = js.native
   var contentOverY: js.Any = js.native
   var contentView: js.Any = js.native

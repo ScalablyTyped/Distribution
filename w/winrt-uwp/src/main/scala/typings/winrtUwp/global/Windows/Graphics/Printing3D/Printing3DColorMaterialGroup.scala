@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Graphics.Printing3D
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,11 +14,5 @@ class Printing3DColorMaterialGroup protected ()
     * @param MaterialGroupId The identifier for the group of color materials used in the 3D model; a value greater than zero.
     */
   def this(MaterialGroupId: Double) = this()
-  /** Gets a group of color materials used in the 3D model. */
-  /* CompleteClass */
-  override var colors: IVector[typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DColorMaterial] = js.native
-  /** Gets the identifier (ID) for the color material group. */
-  /* CompleteClass */
-  override var materialGroupId: Double = js.native
 }
 

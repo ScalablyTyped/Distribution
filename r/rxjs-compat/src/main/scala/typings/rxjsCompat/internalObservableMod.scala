@@ -307,6 +307,11 @@ object internalObservableMod extends js.Object {
         ]
     ): js.Any = js.native
     def _do[T](next: js.Function1[/* x */ T, Unit]): js.Any = js.native
+    def _do[T](
+      next: js.Function1[/* x */ T, Unit],
+      error: js.UndefOr[scala.Nothing],
+      complete: js.Function0[Unit]
+    ): js.Any = js.native
     def _do[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ js.Any, Unit]): js.Any = js.native
     def _do[T](
       next: js.Function1[/* x */ T, Unit],
@@ -337,17 +342,36 @@ object internalObservableMod extends js.Object {
     def bufferCount[T](bufferSize: Double): js.Any = js.native
     def bufferCount[T](bufferSize: Double, startBufferEvery: Double): js.Any = js.native
     def bufferTime[T](bufferTimeSpan: Double): js.Any = js.native
-    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[Double | Null], maxBufferSize: Double): js.Any = js.native
+    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[scala.Nothing], maxBufferSize: Double): js.Any = js.native
     def bufferTime[T](
       bufferTimeSpan: Double,
-      bufferCreationInterval: js.UndefOr[Double | Null],
+      bufferCreationInterval: js.UndefOr[scala.Nothing],
       maxBufferSize: Double,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = js.native
+    def bufferTime[T](
+      bufferTimeSpan: Double,
+      bufferCreationInterval: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
     def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): js.Any = js.native
+    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): js.Any = js.native
     def bufferTime[T](
       bufferTimeSpan: Double,
       bufferCreationInterval: Double,
+      maxBufferSize: Double,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def bufferTime[T](
+      bufferTimeSpan: Double,
+      bufferCreationInterval: Double,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): js.Any = js.native
+    def bufferTime[T](
+      bufferTimeSpan: Double,
+      bufferCreationInterval: Null,
+      maxBufferSize: Double,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = js.native
     def bufferTime[T](
@@ -589,6 +613,10 @@ object internalObservableMod extends js.Object {
     ): js.Any = js.native
     def dematerialize[T](): js.Any = js.native
     def distinct[T, K](): js.Any = js.native
+    def distinct[T, K](
+      keySelector: js.UndefOr[scala.Nothing],
+      flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+    ): js.Any = js.native
     def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = js.native
     def distinct[T, K](
       keySelector: js.Function1[/* value */ T, K],
@@ -607,6 +635,11 @@ object internalObservableMod extends js.Object {
         ]
     ): js.Any = js.native
     def `do`[T](next: js.Function1[/* x */ T, Unit]): js.Any = js.native
+    def `do`[T](
+      next: js.Function1[/* x */ T, Unit],
+      error: js.UndefOr[scala.Nothing],
+      complete: js.Function0[Unit]
+    ): js.Any = js.native
     def `do`[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ js.Any, Unit]): js.Any = js.native
     def `do`[T](
       next: js.Function1[/* x */ T, Unit],
@@ -658,6 +691,15 @@ object internalObservableMod extends js.Object {
           /* index */ Double, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
         ],
+      concurrent: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def expand[T](
+      project: js.Function2[
+          /* value */ T, 
+          /* index */ Double, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
+        ],
       concurrent: Double
     ): js.Any = js.native
     def expand[T](
@@ -676,6 +718,16 @@ object internalObservableMod extends js.Object {
           /* index */ Double, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
         ]
+    ): js.Any = js.native
+    @JSName("expand")
+    def expand_TR[T, R](
+      project: js.Function2[
+          /* value */ T, 
+          /* index */ Double, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
+        ],
+      concurrent: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = js.native
     @JSName("expand")
     def expand_TR[T, R](
@@ -727,6 +779,7 @@ object internalObservableMod extends js.Object {
     @JSName("find")
     def find_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: js.Any): js.Any = js.native
     def first[T, D](): js.Any = js.native
+    def first[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): js.Any = js.native
     def first[T, S /* <: T */](
       predicate: js.Function3[
           /* value */ T, 
@@ -795,7 +848,42 @@ object internalObservableMod extends js.Object {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
         ]
     ): js.Any = js.native
+    def groupBy[T, K, R](
+      keySelector: js.Function1[/* value */ T, K],
+      elementSelector: js.UndefOr[scala.Nothing],
+      durationSelector: js.UndefOr[scala.Nothing],
+      subjectSelector: js.Function0[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ _
+        ]
+    ): js.Any = js.native
+    def groupBy[T, K, R](
+      keySelector: js.Function1[/* value */ T, K],
+      elementSelector: js.UndefOr[scala.Nothing],
+      durationSelector: js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
+        ]
+    ): js.Any = js.native
+    def groupBy[T, K, R](
+      keySelector: js.Function1[/* value */ T, K],
+      elementSelector: js.UndefOr[scala.Nothing],
+      durationSelector: js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GroupedObservable<K, R> */ /* grouped */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
+        ],
+      subjectSelector: js.Function0[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ _
+        ]
+    ): js.Any = js.native
     def groupBy[T, K, R](keySelector: js.Function1[/* value */ T, K], elementSelector: js.Function1[/* value */ T, R]): js.Any = js.native
+    def groupBy[T, K, R](
+      keySelector: js.Function1[/* value */ T, K],
+      elementSelector: js.Function1[/* value */ T, R],
+      durationSelector: js.UndefOr[scala.Nothing],
+      subjectSelector: js.Function0[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<R> */ _
+        ]
+    ): js.Any = js.native
     def groupBy[T, K, R](
       keySelector: js.Function1[/* value */ T, K],
       elementSelector: js.Function1[/* value */ T, R],
@@ -820,6 +908,7 @@ object internalObservableMod extends js.Object {
     def ignoreElements(): js.Any = js.native
     def isEmpty[T](): js.Any = js.native
     def last[T, D](): js.Any = js.native
+    def last[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): js.Any = js.native
     def last[T, S /* <: T */](
       predicate: js.Function3[
           /* value */ T, 
@@ -876,6 +965,10 @@ object internalObservableMod extends js.Object {
     def max[T](): js.Any = js.native
     def max[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): js.Any = js.native
     def merge[T](): js.Any = js.native
+    def merge[T](
+      concurrent: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
     def merge[T](concurrent: Double): js.Any = js.native
     def merge[T](
       concurrent: Double,
@@ -889,6 +982,11 @@ object internalObservableMod extends js.Object {
     ): js.Any = js.native
     def merge[T, T2](
       v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      concurrent: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def merge[T, T2](
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
       concurrent: Double
     ): js.Any = js.native
     def merge[T, T2](
@@ -903,6 +1001,12 @@ object internalObservableMod extends js.Object {
     def merge[T, T2, T3](
       v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
       v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      concurrent: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def merge[T, T2, T3](
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
       concurrent: Double
     ): js.Any = js.native
     def merge[T, T2, T3](
@@ -920,6 +1024,13 @@ object internalObservableMod extends js.Object {
       v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
       v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
       v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
+      concurrent: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def merge[T, T2, T3, T4](
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
       concurrent: Double
     ): js.Any = js.native
     def merge[T, T2, T3, T4](
@@ -940,6 +1051,14 @@ object internalObservableMod extends js.Object {
       v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
       v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
       v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
+      concurrent: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def merge[T, T2, T3, T4, T5](
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
       concurrent: Double
     ): js.Any = js.native
     def merge[T, T2, T3, T4, T5](
@@ -955,6 +1074,15 @@ object internalObservableMod extends js.Object {
       v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
       v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
       v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def merge[T, T2, T3, T4, T5, T6](
+      v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ js.Any,
+      v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ js.Any,
+      v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ js.Any,
+      v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ js.Any,
+      v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ js.Any,
+      concurrent: js.UndefOr[scala.Nothing],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = js.native
     def merge[T, T2, T3, T4, T5, T6](
@@ -1159,8 +1287,66 @@ object internalObservableMod extends js.Object {
     def publishBehavior[T](value: T): js.Any = js.native
     def publishLast[T](): js.Any = js.native
     def publishReplay[T](): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: js.UndefOr[scala.Nothing],
+      selector: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: js.UndefOr[scala.Nothing],
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: js.UndefOr[scala.Nothing],
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def publishReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: Double,
+      selector: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: Double,
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: Double,
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
     def publishReplay[T](bufferSize: Double): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: Double,
+      windowTime: js.UndefOr[scala.Nothing],
+      selector: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: Double,
+      windowTime: js.UndefOr[scala.Nothing],
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: Double,
+      windowTime: js.UndefOr[scala.Nothing],
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
     def publishReplay[T](bufferSize: Double, windowTime: Double): js.Any = js.native
+    def publishReplay[T](
+      bufferSize: Double,
+      windowTime: Double,
+      selector: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
     def publishReplay[T](
       bufferSize: Double,
       windowTime: Double,
@@ -1175,7 +1361,27 @@ object internalObservableMod extends js.Object {
     @JSName("publishReplay")
     def publishReplay_TR[T, R](): js.Any = js.native
     @JSName("publishReplay")
+    def publishReplay_TR[T, R](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: js.UndefOr[scala.Nothing],
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
+    ): js.Any = js.native
+    @JSName("publishReplay")
+    def publishReplay_TR[T, R](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double): js.Any = js.native
+    @JSName("publishReplay")
+    def publishReplay_TR[T, R](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: Double,
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
+    ): js.Any = js.native
+    @JSName("publishReplay")
     def publishReplay_TR[T, R](bufferSize: Double): js.Any = js.native
+    @JSName("publishReplay")
+    def publishReplay_TR[T, R](
+      bufferSize: Double,
+      windowTime: js.UndefOr[scala.Nothing],
+      selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
+    ): js.Any = js.native
     @JSName("publishReplay")
     def publishReplay_TR[T, R](bufferSize: Double, windowTime: Double): js.Any = js.native
     @JSName("publishReplay")
@@ -1258,7 +1464,23 @@ object internalObservableMod extends js.Object {
     ): js.Any = js.native
     def share[T](): js.Any = js.native
     def shareReplay[T](): js.Any = js.native
+    def shareReplay[T](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
+    def shareReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double): js.Any = js.native
+    def shareReplay[T](
+      bufferSize: js.UndefOr[scala.Nothing],
+      windowTime: Double,
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
     def shareReplay[T](bufferSize: Double): js.Any = js.native
+    def shareReplay[T](
+      bufferSize: Double,
+      windowTime: js.UndefOr[scala.Nothing],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+    ): js.Any = js.native
     def shareReplay[T](bufferSize: Double, windowTime: Double): js.Any = js.native
     def shareReplay[T](
       bufferSize: Double,
@@ -1385,6 +1607,11 @@ object internalObservableMod extends js.Object {
       config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
     ): js.Any = js.native
     def throttleTime[T](duration: Double): js.Any = js.native
+    def throttleTime[T](
+      duration: Double,
+      scheduler: js.UndefOr[scala.Nothing],
+      config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
+    ): js.Any = js.native
     def throttleTime[T](
       duration: Double,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any

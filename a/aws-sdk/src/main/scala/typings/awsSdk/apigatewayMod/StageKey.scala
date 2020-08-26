@@ -18,11 +18,30 @@ trait StageKey extends js.Object {
 
 object StageKey {
   @scala.inline
-  def apply(restApiId: String = null, stageName: String = null): StageKey = {
+  def apply(): StageKey = {
     val __obj = js.Dynamic.literal()
-    if (restApiId != null) __obj.updateDynamic("restApiId")(restApiId.asInstanceOf[js.Any])
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StageKey]
   }
+  @scala.inline
+  implicit class StageKeyOps[Self <: StageKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestApiId: Self = this.set("restApiId", js.undefined)
+    @scala.inline
+    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("stageName", js.undefined)
+  }
+  
 }
 

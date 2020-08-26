@@ -19,41 +19,7 @@ import scala.scalajs.js.annotation._
   * @see https://docs.scriptable.app/timer/#-new-timer
   */
 class Timer ()
-  extends typings.scriptableIos.Timer {
-  /**
-    * _Whether the timer should repeat._
-    *
-    * A repeating timer will keep firing until it is invalidated. In contrast to non-repeating timers, repeating timers are not automatically invalidated. Defaults to false.
-    * @see https://docs.scriptable.app/timer/#repeats
-    */
-  /* CompleteClass */
-  override var repeats: Boolean = js.native
-  /**
-    * _The frequency at which the timer fires, in milliseconds._
-    *
-    * Be aware that the time interval is specified in setting. Defaults to 0, causing the timer to fire instantly.
-    * @see https://docs.scriptable.app/timer/#timeinterval
-    */
-  /* CompleteClass */
-  override var timeInterval: Double = js.native
-  /**
-    * _Stops the timer from firing._
-    *
-    * Stops the timer from firing ever again. Non-repeating timers are automatically invalidated after they have fired once. Repeating timers must be manually invalidated.
-    * @see https://docs.scriptable.app/timer/#-invalidate
-    */
-  /* CompleteClass */
-  override def invalidate(): Unit = js.native
-  /**
-    * _Schedules the timer._
-    *
-    * Schedules the timer using its configuration. The supplied function is called when the timer fires. To stop the timer from firing, call the `invalidate()` function.
-    * @param callback - The callback to called when the timer fires.
-    * @see https://docs.scriptable.app/timer/#-schedule
-    */
-  /* CompleteClass */
-  override def schedule(callback: js.Function0[Unit]): Unit = js.native
-}
+  extends typings.scriptableIos.Timer
 
 /* static members */
 @JSGlobal("Timer")

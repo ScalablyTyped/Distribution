@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SlideProperties extends js.Object {
   /** The object ID of the layout that this slide is based on. */
-  var layoutObjectId: js.UndefOr[String] = js.undefined
+  var layoutObjectId: js.UndefOr[String] = js.native
   /** The object ID of the master that this slide is based on. */
-  var masterObjectId: js.UndefOr[String] = js.undefined
+  var masterObjectId: js.UndefOr[String] = js.native
   /**
     * The notes page that this slide is associated with. It defines the visual
     * appearance of a notes page when printing or exporting slides with speaker
@@ -20,17 +21,39 @@ trait SlideProperties extends js.Object {
     * The notes page is read-only except for the text content and styles of the
     * speaker notes shape.
     */
-  var notesPage: js.UndefOr[Page] = js.undefined
+  var notesPage: js.UndefOr[Page] = js.native
 }
 
 object SlideProperties {
   @scala.inline
-  def apply(layoutObjectId: String = null, masterObjectId: String = null, notesPage: Page = null): SlideProperties = {
+  def apply(): SlideProperties = {
     val __obj = js.Dynamic.literal()
-    if (layoutObjectId != null) __obj.updateDynamic("layoutObjectId")(layoutObjectId.asInstanceOf[js.Any])
-    if (masterObjectId != null) __obj.updateDynamic("masterObjectId")(masterObjectId.asInstanceOf[js.Any])
-    if (notesPage != null) __obj.updateDynamic("notesPage")(notesPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideProperties]
   }
+  @scala.inline
+  implicit class SlidePropertiesOps[Self <: SlideProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayoutObjectId(value: String): Self = this.set("layoutObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutObjectId: Self = this.set("layoutObjectId", js.undefined)
+    @scala.inline
+    def setMasterObjectId(value: String): Self = this.set("masterObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterObjectId: Self = this.set("masterObjectId", js.undefined)
+    @scala.inline
+    def setNotesPage(value: Page): Self = this.set("notesPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotesPage: Self = this.set("notesPage", js.undefined)
+  }
+  
 }
 

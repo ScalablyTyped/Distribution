@@ -18,16 +18,46 @@ trait CreateClusterRequest extends js.Object {
     * The identifiers (IDs) of the subnets where you are creating the cluster. You must specify at least one subnet. If you specify multiple subnets, they must meet the following criteria:   All subnets must be in the same virtual private cloud (VPC).   You can specify only one subnet per Availability Zone.  
     */
   var SubnetIds: typings.awsSdk.cloudhsmv2Mod.SubnetIds = js.native
+  /**
+    * Tags to apply to the CloudHSM cluster during creation.
+    */
   var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.native
 }
 
 object CreateClusterRequest {
   @scala.inline
-  def apply(HsmType: HsmType, SubnetIds: SubnetIds, SourceBackupId: BackupId = null, TagList: TagList = null): CreateClusterRequest = {
+  def apply(HsmType: HsmType, SubnetIds: SubnetIds): CreateClusterRequest = {
     val __obj = js.Dynamic.literal(HsmType = HsmType.asInstanceOf[js.Any], SubnetIds = SubnetIds.asInstanceOf[js.Any])
-    if (SourceBackupId != null) __obj.updateDynamic("SourceBackupId")(SourceBackupId.asInstanceOf[js.Any])
-    if (TagList != null) __obj.updateDynamic("TagList")(TagList.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]
   }
+  @scala.inline
+  implicit class CreateClusterRequestOps[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHsmType(value: HsmType): Self = this.set("HsmType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetIdsVarargs(value: SubnetId*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: SubnetIds): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceBackupId(value: BackupId): Self = this.set("SourceBackupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceBackupId: Self = this.set("SourceBackupId", js.undefined)
+    @scala.inline
+    def setTagListVarargs(value: Tag*): Self = this.set("TagList", js.Array(value :_*))
+    @scala.inline
+    def setTagList(value: TagList): Self = this.set("TagList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagList: Self = this.set("TagList", js.undefined)
+  }
+  
 }
 

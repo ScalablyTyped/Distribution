@@ -27,6 +27,7 @@ class ResourceRoles protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRole] = js.native
   def get(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceRolesGet): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceRolesGet, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def get(
@@ -54,6 +55,7 @@ class ResourceRoles protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListRolesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListRolesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListRolesResponse] = js.native
   def list(params: ParamsResourceRolesList): GaxiosPromise[SchemaListRolesResponse] = js.native
   def list(params: ParamsResourceRolesList, callback: BodyResponseCallback[SchemaListRolesResponse]): Unit = js.native
   def list(
@@ -83,6 +85,7 @@ class ResourceRoles protected () extends js.Object {
     */
   def queryGrantableRoles(): GaxiosPromise[SchemaQueryGrantableRolesResponse] = js.native
   def queryGrantableRoles(callback: BodyResponseCallback[SchemaQueryGrantableRolesResponse]): Unit = js.native
+  def queryGrantableRoles(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQueryGrantableRolesResponse] = js.native
   def queryGrantableRoles(params: ParamsResourceRolesQuerygrantableroles): GaxiosPromise[SchemaQueryGrantableRolesResponse] = js.native
   def queryGrantableRoles(
     params: ParamsResourceRolesQuerygrantableroles,

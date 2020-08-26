@@ -11,7 +11,7 @@ Allows making fluent OData queries from angular resources
 | Keywords           | OData, Angular, Resources |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 4781 |
+| # downloads        | 4885 |
 | # stars            | 0 |
 
 ## Links

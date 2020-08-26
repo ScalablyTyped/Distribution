@@ -4,51 +4,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdentitytoolkitRelyingpartyVerifyPasswordRequest extends js.Object {
   /** The captcha challenge. */
-  var captchaChallenge: js.UndefOr[String] = js.undefined
+  var captchaChallenge: js.UndefOr[String] = js.native
   /** Response to the captcha. */
-  var captchaResponse: js.UndefOr[String] = js.undefined
+  var captchaResponse: js.UndefOr[String] = js.native
   /** GCP project number of the requesting delegated app. Currently only intended for Firebase V1 migration. */
-  var delegatedProjectNumber: js.UndefOr[String] = js.undefined
+  var delegatedProjectNumber: js.UndefOr[String] = js.native
   /** The email of the user. */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String] = js.native
   /** The GITKit token of the authenticated user. */
-  var idToken: js.UndefOr[String] = js.undefined
+  var idToken: js.UndefOr[String] = js.native
   /** Instance id token of the app. */
-  var instanceId: js.UndefOr[String] = js.undefined
+  var instanceId: js.UndefOr[String] = js.native
   /** The password inputed by the user. */
-  var password: js.UndefOr[String] = js.undefined
+  var password: js.UndefOr[String] = js.native
   /** The GITKit token for the non-trusted IDP, which is to be confirmed by the user. */
-  var pendingIdToken: js.UndefOr[String] = js.undefined
+  var pendingIdToken: js.UndefOr[String] = js.native
   /** Whether return sts id token and refresh token instead of gitkit token. */
-  var returnSecureToken: js.UndefOr[Boolean] = js.undefined
+  var returnSecureToken: js.UndefOr[Boolean] = js.native
 }
 
 object IdentitytoolkitRelyingpartyVerifyPasswordRequest {
   @scala.inline
-  def apply(
-    captchaChallenge: String = null,
-    captchaResponse: String = null,
-    delegatedProjectNumber: String = null,
-    email: String = null,
-    idToken: String = null,
-    instanceId: String = null,
-    password: String = null,
-    pendingIdToken: String = null,
-    returnSecureToken: js.UndefOr[Boolean] = js.undefined
-  ): IdentitytoolkitRelyingpartyVerifyPasswordRequest = {
+  def apply(): IdentitytoolkitRelyingpartyVerifyPasswordRequest = {
     val __obj = js.Dynamic.literal()
-    if (captchaChallenge != null) __obj.updateDynamic("captchaChallenge")(captchaChallenge.asInstanceOf[js.Any])
-    if (captchaResponse != null) __obj.updateDynamic("captchaResponse")(captchaResponse.asInstanceOf[js.Any])
-    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (pendingIdToken != null) __obj.updateDynamic("pendingIdToken")(pendingIdToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyPasswordRequest]
   }
+  @scala.inline
+  implicit class IdentitytoolkitRelyingpartyVerifyPasswordRequestOps[Self <: IdentitytoolkitRelyingpartyVerifyPasswordRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptchaChallenge(value: String): Self = this.set("captchaChallenge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptchaChallenge: Self = this.set("captchaChallenge", js.undefined)
+    @scala.inline
+    def setCaptchaResponse(value: String): Self = this.set("captchaResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptchaResponse: Self = this.set("captchaResponse", js.undefined)
+    @scala.inline
+    def setDelegatedProjectNumber(value: String): Self = this.set("delegatedProjectNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegatedProjectNumber: Self = this.set("delegatedProjectNumber", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPendingIdToken(value: String): Self = this.set("pendingIdToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingIdToken: Self = this.set("pendingIdToken", js.undefined)
+    @scala.inline
+    def setReturnSecureToken(value: Boolean): Self = this.set("returnSecureToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnSecureToken: Self = this.set("returnSecureToken", js.undefined)
+  }
+  
 }
 

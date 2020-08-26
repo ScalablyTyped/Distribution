@@ -14,7 +14,6 @@ import typings.tensorflowTfjsCore.tensorMod.Tensor1D
 import typings.tensorflowTfjsCore.tensorMod.Tensor2D
 import typings.tensorflowTfjsCore.tensorMod.Tensor3D
 import typings.tensorflowTfjsCore.tensorMod.Tensor4D
-import typings.tensorflowTfjsNode.anon.Name
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings._empty
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.bilinear
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.cm
@@ -46,7 +45,34 @@ object nodejsKernelBackendMod extends js.Object {
     var tensorMap: js.Any = js.native
     var typeAttributeFromTensor: js.Any = js.native
     def createSummaryFileWriter(resourceHandle: Tensor[Rank], logdir: String): Unit = js.native
+    def createSummaryFileWriter(
+      resourceHandle: Tensor[Rank],
+      logdir: String,
+      maxQueue: js.UndefOr[scala.Nothing],
+      flushMillis: js.UndefOr[scala.Nothing],
+      filenameSuffix: String
+    ): Unit = js.native
+    def createSummaryFileWriter(
+      resourceHandle: Tensor[Rank],
+      logdir: String,
+      maxQueue: js.UndefOr[scala.Nothing],
+      flushMillis: Double
+    ): Unit = js.native
+    def createSummaryFileWriter(
+      resourceHandle: Tensor[Rank],
+      logdir: String,
+      maxQueue: js.UndefOr[scala.Nothing],
+      flushMillis: Double,
+      filenameSuffix: String
+    ): Unit = js.native
     def createSummaryFileWriter(resourceHandle: Tensor[Rank], logdir: String, maxQueue: Double): Unit = js.native
+    def createSummaryFileWriter(
+      resourceHandle: Tensor[Rank],
+      logdir: String,
+      maxQueue: Double,
+      flushMillis: js.UndefOr[scala.Nothing],
+      filenameSuffix: String
+    ): Unit = js.native
     def createSummaryFileWriter(resourceHandle: Tensor[Rank], logdir: String, maxQueue: Double, flushMillis: Double): Unit = js.native
     def createSummaryFileWriter(
       resourceHandle: Tensor[Rank],
@@ -191,6 +217,13 @@ object nodejsKernelBackendMod extends js.Object {
     def getNumOfSavedModels(): Double = js.native
     def loadSavedModelMetaGraph(path: String, tags: String): Double = js.native
     def nonMaxSuppression(boxes: Tensor2D, scores: Tensor1D, maxOutputSize: Double): Tensor1D = js.native
+    def nonMaxSuppression(
+      boxes: Tensor2D,
+      scores: Tensor1D,
+      maxOutputSize: Double,
+      iouThreshold: js.UndefOr[scala.Nothing],
+      scoreThreshold: Double
+    ): Tensor1D = js.native
     def runSavedModel(
       id: Double,
       inputs: js.Array[Tensor[Rank]],
@@ -201,14 +234,15 @@ object nodejsKernelBackendMod extends js.Object {
     def topKIndices(x: Tensor[Rank], k: Double): Tensor1D = js.native
     def topKValues[T /* <: Tensor[Rank] */](x: T, k: Double): Tensor1D = js.native
     def topk[T /* <: Tensor[Rank] */](x: T): js.Tuple2[T, T] = js.native
+    def topk[T /* <: Tensor[Rank] */](x: T, k: js.UndefOr[scala.Nothing], sorted: Boolean): js.Tuple2[T, T] = js.native
     def topk[T /* <: Tensor[Rank] */](x: T, k: Double): js.Tuple2[T, T] = js.native
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Double): Unit = js.native
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Scalar): Unit = js.native
   }
   
-  def createTensorsTypeOpAttr(attrName: String, tensors: js.Array[Tensor[Rank]]): Name = js.native
-  def createTensorsTypeOpAttr(attrName: String, tensors: Tensor[Rank]): Name = js.native
-  def createTypeOpAttr(attrName: String, dtype: DataType): TFEOpAttr = js.native
+  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: js.Array[Tensor[Rank]]): TFEOpAttr = js.native
+  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: DataType): TFEOpAttr = js.native
+  def createTensorsTypeOpAttr(attrName: String, tensorsOrDtype: Tensor[Rank]): TFEOpAttr = js.native
   def ensureTensorflowBackend(): Unit = js.native
   def getTFDType(dataType: DataType): Double = js.native
   def nodeBackend(): NodeJSKernelBackend = js.native

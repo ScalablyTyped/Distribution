@@ -51,28 +51,58 @@ trait SchemaSslCert extends js.Object {
 
 object SchemaSslCert {
   @scala.inline
-  def apply(
-    cert: String = null,
-    certSerialNumber: String = null,
-    commonName: String = null,
-    createTime: String = null,
-    expirationTime: String = null,
-    instance: String = null,
-    kind: String = null,
-    selfLink: String = null,
-    sha1Fingerprint: String = null
-  ): SchemaSslCert = {
+  def apply(): SchemaSslCert = {
     val __obj = js.Dynamic.literal()
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (certSerialNumber != null) __obj.updateDynamic("certSerialNumber")(certSerialNumber.asInstanceOf[js.Any])
-    if (commonName != null) __obj.updateDynamic("commonName")(commonName.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (sha1Fingerprint != null) __obj.updateDynamic("sha1Fingerprint")(sha1Fingerprint.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSslCert]
   }
+  @scala.inline
+  implicit class SchemaSslCertOps[Self <: SchemaSslCert] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCert(value: String): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setCertSerialNumber(value: String): Self = this.set("certSerialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertSerialNumber: Self = this.set("certSerialNumber", js.undefined)
+    @scala.inline
+    def setCommonName(value: String): Self = this.set("commonName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommonName: Self = this.set("commonName", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
+    @scala.inline
+    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSha1Fingerprint(value: String): Self = this.set("sha1Fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha1Fingerprint: Self = this.set("sha1Fingerprint", js.undefined)
+  }
+  
 }
 

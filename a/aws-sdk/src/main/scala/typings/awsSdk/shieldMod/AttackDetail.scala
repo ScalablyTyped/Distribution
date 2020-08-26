@@ -42,26 +42,62 @@ trait AttackDetail extends js.Object {
 
 object AttackDetail {
   @scala.inline
-  def apply(
-    AttackCounters: SummarizedCounterList = null,
-    AttackId: AttackId = null,
-    AttackProperties: AttackProperties = null,
-    EndTime: AttackTimestamp = null,
-    Mitigations: MitigationList = null,
-    ResourceArn: ResourceArn = null,
-    StartTime: AttackTimestamp = null,
-    SubResources: SubResourceSummaryList = null
-  ): AttackDetail = {
+  def apply(): AttackDetail = {
     val __obj = js.Dynamic.literal()
-    if (AttackCounters != null) __obj.updateDynamic("AttackCounters")(AttackCounters.asInstanceOf[js.Any])
-    if (AttackId != null) __obj.updateDynamic("AttackId")(AttackId.asInstanceOf[js.Any])
-    if (AttackProperties != null) __obj.updateDynamic("AttackProperties")(AttackProperties.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (Mitigations != null) __obj.updateDynamic("Mitigations")(Mitigations.asInstanceOf[js.Any])
-    if (ResourceArn != null) __obj.updateDynamic("ResourceArn")(ResourceArn.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (SubResources != null) __obj.updateDynamic("SubResources")(SubResources.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttackDetail]
   }
+  @scala.inline
+  implicit class AttackDetailOps[Self <: AttackDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttackCountersVarargs(value: SummarizedCounter*): Self = this.set("AttackCounters", js.Array(value :_*))
+    @scala.inline
+    def setAttackCounters(value: SummarizedCounterList): Self = this.set("AttackCounters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttackCounters: Self = this.set("AttackCounters", js.undefined)
+    @scala.inline
+    def setAttackId(value: AttackId): Self = this.set("AttackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttackId: Self = this.set("AttackId", js.undefined)
+    @scala.inline
+    def setAttackPropertiesVarargs(value: AttackProperty*): Self = this.set("AttackProperties", js.Array(value :_*))
+    @scala.inline
+    def setAttackProperties(value: AttackProperties): Self = this.set("AttackProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttackProperties: Self = this.set("AttackProperties", js.undefined)
+    @scala.inline
+    def setEndTime(value: AttackTimestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setMitigationsVarargs(value: Mitigation*): Self = this.set("Mitigations", js.Array(value :_*))
+    @scala.inline
+    def setMitigations(value: MitigationList): Self = this.set("Mitigations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMitigations: Self = this.set("Mitigations", js.undefined)
+    @scala.inline
+    def setResourceArn(value: ResourceArn): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    @scala.inline
+    def setStartTime(value: AttackTimestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setSubResourcesVarargs(value: SubResourceSummary*): Self = this.set("SubResources", js.Array(value :_*))
+    @scala.inline
+    def setSubResources(value: SubResourceSummaryList): Self = this.set("SubResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubResources: Self = this.set("SubResources", js.undefined)
+  }
+  
 }
 

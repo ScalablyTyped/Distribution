@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object define extends js.Object {
   def apply(): IBase = js.native
+  def apply(className: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], createdFn: js.Any): IBase = js.native
+  def apply(className: js.UndefOr[scala.Nothing], data: js.Any): IBase = js.native
+  def apply(className: js.UndefOr[scala.Nothing], data: js.Any, createdFn: js.Any): IBase = js.native
   def apply(className: java.lang.String): IBase = js.native
+  def apply(className: java.lang.String, data: js.UndefOr[scala.Nothing], createdFn: js.Any): IBase = js.native
   def apply(className: java.lang.String, data: js.Any): IBase = js.native
   def apply(className: java.lang.String, data: js.Any, createdFn: js.Any): IBase = js.native
 }

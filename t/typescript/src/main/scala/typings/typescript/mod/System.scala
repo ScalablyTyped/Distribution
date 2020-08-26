@@ -66,11 +66,79 @@ trait System extends js.Object {
   def getDirectories(path: java.lang.String): js.Array[java.lang.String] = js.native
   def getExecutingFilePath(): java.lang.String = js.native
   def readDirectory(path: java.lang.String): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.UndefOr[scala.Nothing],
+    exclude: js.UndefOr[scala.Nothing],
+    include: js.UndefOr[scala.Nothing],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.UndefOr[scala.Nothing],
+    exclude: js.UndefOr[scala.Nothing],
+    include: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.UndefOr[scala.Nothing],
+    exclude: js.UndefOr[scala.Nothing],
+    include: js.Array[java.lang.String],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(path: java.lang.String, extensions: js.UndefOr[scala.Nothing], exclude: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.UndefOr[scala.Nothing],
+    exclude: js.Array[java.lang.String],
+    include: js.UndefOr[scala.Nothing],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.UndefOr[scala.Nothing],
+    exclude: js.Array[java.lang.String],
+    include: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.UndefOr[scala.Nothing],
+    exclude: js.Array[java.lang.String],
+    include: js.Array[java.lang.String],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
   def readDirectory(path: java.lang.String, extensions: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def readDirectory(
     path: java.lang.String,
     extensions: js.Array[java.lang.String],
+    exclude: js.UndefOr[scala.Nothing],
+    include: js.UndefOr[scala.Nothing],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: js.UndefOr[scala.Nothing],
+    include: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: js.UndefOr[scala.Nothing],
+    include: js.Array[java.lang.String],
+    depth: Double
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
     exclude: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  def readDirectory(
+    path: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    exclude: js.Array[java.lang.String],
+    include: js.UndefOr[scala.Nothing],
+    depth: Double
   ): js.Array[java.lang.String] = js.native
   def readDirectory(
     path: java.lang.String,

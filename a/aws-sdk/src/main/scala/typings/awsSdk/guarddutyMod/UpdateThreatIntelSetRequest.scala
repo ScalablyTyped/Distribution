@@ -30,18 +30,38 @@ trait UpdateThreatIntelSetRequest extends js.Object {
 
 object UpdateThreatIntelSetRequest {
   @scala.inline
-  def apply(
-    DetectorId: DetectorId,
-    ThreatIntelSetId: String,
-    Activate: js.UndefOr[Boolean] = js.undefined,
-    Location: Location = null,
-    Name: Name = null
-  ): UpdateThreatIntelSetRequest = {
+  def apply(DetectorId: DetectorId, ThreatIntelSetId: String): UpdateThreatIntelSetRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], ThreatIntelSetId = ThreatIntelSetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Activate)) __obj.updateDynamic("Activate")(Activate.get.asInstanceOf[js.Any])
-    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThreatIntelSetRequest]
   }
+  @scala.inline
+  implicit class UpdateThreatIntelSetRequestOps[Self <: UpdateThreatIntelSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThreatIntelSetId(value: String): Self = this.set("ThreatIntelSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivate(value: Boolean): Self = this.set("Activate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivate: Self = this.set("Activate", js.undefined)
+    @scala.inline
+    def setLocation(value: Location): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("Location", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

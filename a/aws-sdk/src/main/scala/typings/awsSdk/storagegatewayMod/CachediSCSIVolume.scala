@@ -59,36 +59,74 @@ trait CachediSCSIVolume extends js.Object {
 
 object CachediSCSIVolume {
   @scala.inline
-  def apply(
-    CreatedDate: CreatedDate = null,
-    KMSKey: KMSKey = null,
-    SourceSnapshotId: SnapshotId = null,
-    TargetName: TargetName = null,
-    VolumeARN: VolumeARN = null,
-    VolumeAttachmentStatus: VolumeAttachmentStatus = null,
-    VolumeId: VolumeId = null,
-    VolumeProgress: js.UndefOr[DoubleObject] = js.undefined,
-    VolumeSizeInBytes: js.UndefOr[long] = js.undefined,
-    VolumeStatus: VolumeStatus = null,
-    VolumeType: VolumeType = null,
-    VolumeUsedInBytes: js.UndefOr[VolumeUsedInBytes] = js.undefined,
-    VolumeiSCSIAttributes: VolumeiSCSIAttributes = null
-  ): CachediSCSIVolume = {
+  def apply(): CachediSCSIVolume = {
     val __obj = js.Dynamic.literal()
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
-    if (SourceSnapshotId != null) __obj.updateDynamic("SourceSnapshotId")(SourceSnapshotId.asInstanceOf[js.Any])
-    if (TargetName != null) __obj.updateDynamic("TargetName")(TargetName.asInstanceOf[js.Any])
-    if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN.asInstanceOf[js.Any])
-    if (VolumeAttachmentStatus != null) __obj.updateDynamic("VolumeAttachmentStatus")(VolumeAttachmentStatus.asInstanceOf[js.Any])
-    if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeProgress)) __obj.updateDynamic("VolumeProgress")(VolumeProgress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeSizeInBytes)) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.get.asInstanceOf[js.Any])
-    if (VolumeStatus != null) __obj.updateDynamic("VolumeStatus")(VolumeStatus.asInstanceOf[js.Any])
-    if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeUsedInBytes)) __obj.updateDynamic("VolumeUsedInBytes")(VolumeUsedInBytes.get.asInstanceOf[js.Any])
-    if (VolumeiSCSIAttributes != null) __obj.updateDynamic("VolumeiSCSIAttributes")(VolumeiSCSIAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachediSCSIVolume]
   }
+  @scala.inline
+  implicit class CachediSCSIVolumeOps[Self <: CachediSCSIVolume] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedDate(value: CreatedDate): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    @scala.inline
+    def setSourceSnapshotId(value: SnapshotId): Self = this.set("SourceSnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSnapshotId: Self = this.set("SourceSnapshotId", js.undefined)
+    @scala.inline
+    def setTargetName(value: TargetName): Self = this.set("TargetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetName: Self = this.set("TargetName", js.undefined)
+    @scala.inline
+    def setVolumeARN(value: VolumeARN): Self = this.set("VolumeARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeARN: Self = this.set("VolumeARN", js.undefined)
+    @scala.inline
+    def setVolumeAttachmentStatus(value: VolumeAttachmentStatus): Self = this.set("VolumeAttachmentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeAttachmentStatus: Self = this.set("VolumeAttachmentStatus", js.undefined)
+    @scala.inline
+    def setVolumeId(value: VolumeId): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
+    @scala.inline
+    def setVolumeProgress(value: DoubleObject): Self = this.set("VolumeProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeProgress: Self = this.set("VolumeProgress", js.undefined)
+    @scala.inline
+    def setVolumeSizeInBytes(value: long): Self = this.set("VolumeSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSizeInBytes: Self = this.set("VolumeSizeInBytes", js.undefined)
+    @scala.inline
+    def setVolumeStatus(value: VolumeStatus): Self = this.set("VolumeStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeStatus: Self = this.set("VolumeStatus", js.undefined)
+    @scala.inline
+    def setVolumeType(value: VolumeType): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+    @scala.inline
+    def setVolumeUsedInBytes(value: VolumeUsedInBytes): Self = this.set("VolumeUsedInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeUsedInBytes: Self = this.set("VolumeUsedInBytes", js.undefined)
+    @scala.inline
+    def setVolumeiSCSIAttributes(value: VolumeiSCSIAttributes): Self = this.set("VolumeiSCSIAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeiSCSIAttributes: Self = this.set("VolumeiSCSIAttributes", js.undefined)
+  }
+  
 }
 

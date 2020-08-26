@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 class RecordChecked protected ()
   extends typings.sharepoint.SP.JsGrid.EventArgs.RecordChecked {
   def this(recordKeySet: Set, bChecked: Boolean) = this()
-  /* CompleteClass */
-  override var bChecked: Boolean = js.native
-  /* CompleteClass */
-  override var recordKeySet: Set = js.native
 }
 

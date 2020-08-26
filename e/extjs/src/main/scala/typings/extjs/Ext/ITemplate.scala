@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITemplate extends IBase {
   /** [Method] Applies the supplied values to the template and appends the new node s to the specified el
     * @param el String/HTMLElement/Ext.Element The context element
@@ -18,13 +19,13 @@ trait ITemplate extends IBase {
       /* returnElement */ js.UndefOr[Boolean], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns an HTML fragment of this template with the specified values applied
     * @param values Object/Array The template values. Can be an array if your params are numeric:  var tpl = new Ext.Template('Name: {0}, Age: {1}'); tpl.apply(['John', 25]); or an object:  var tpl = new Ext.Template('Name: {name}, Age: {age}'); tpl.apply({name: 'John', age: 25});
     * @returns String The HTML fragment
     */
   @JSName("apply")
-  var apply: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var apply: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String]] = js.native
   /** [Method] Appends the result of this template to the provided output array
     * @param values Object/Array The template values. See apply.
     * @param out Array The array to which output is pushed.
@@ -32,20 +33,20 @@ trait ITemplate extends IBase {
     */
   var applyOut: js.UndefOr[
     js.Function2[/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array], Array]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Alias for apply
     * @param values Object/Array The template values. Can be an array if your params are numeric:  var tpl = new Ext.Template('Name: {0}, Age: {1}'); tpl.apply(['John', 25]); or an object:  var tpl = new Ext.Template('Name: {name}, Age: {age}'); tpl.apply({name: 'John', age: 25});
     * @returns String The HTML fragment
     */
-  var applyTemplate: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+  var applyTemplate: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String]] = js.native
   /** [Method] Compiles the template into an internal function eliminating the RegEx overhead
     * @returns Ext.Template this
     */
-  var compile: js.UndefOr[js.Function0[this.type]] = js.undefined
+  var compile: js.UndefOr[js.Function0[this.type]] = js.native
   /** [Config Option] (Boolean) */
-  var compiled: js.UndefOr[Boolean] = js.undefined
+  var compiled: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var disableFormats: js.UndefOr[Boolean] = js.undefined
+  var disableFormats: js.UndefOr[Boolean] = js.native
   /** [Method] Applies the supplied values to the template and inserts the new node s after el
     * @param el String/HTMLElement/Ext.Element The context element
     * @param values Object/Array The template values. See applyTemplate for details.
@@ -59,7 +60,7 @@ trait ITemplate extends IBase {
       /* returnElement */ js.UndefOr[Boolean], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Applies the supplied values to the template and inserts the new node s before el
     * @param el String/HTMLElement/Ext.Element The context element
     * @param values Object/Array The template values. See applyTemplate for details.
@@ -73,7 +74,7 @@ trait ITemplate extends IBase {
       /* returnElement */ js.UndefOr[Boolean], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Applies the supplied values to the template and inserts the new node s as the first child of el
     * @param el String/HTMLElement/Ext.Element The context element
     * @param values Object/Array The template values. See applyTemplate for details.
@@ -87,9 +88,9 @@ trait ITemplate extends IBase {
       /* returnElement */ js.UndefOr[Boolean], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Property] (Boolean) */
-  var isTemplate: js.UndefOr[Boolean] = js.undefined
+  var isTemplate: js.UndefOr[Boolean] = js.native
   /** [Method] Applies the supplied values to the template and overwrites the content of el with the new node s
     * @param el String/HTMLElement/Ext.Element The context element
     * @param values Object/Array The template values. See applyTemplate for details.
@@ -103,7 +104,7 @@ trait ITemplate extends IBase {
       /* returnElement */ js.UndefOr[Boolean], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the HTML used as the template and optionally compiles it
     * @param html String
     * @param compile Boolean True to compile the template.
@@ -115,73 +116,89 @@ trait ITemplate extends IBase {
       /* compile */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object ITemplate {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    append: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
-    apply: /* values */ js.UndefOr[js.Any] => java.lang.String = null,
-    applyOut: (/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array]) => Array = null,
-    applyTemplate: /* values */ js.UndefOr[js.Any] => java.lang.String = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    compile: () => ITemplate = null,
-    compiled: js.UndefOr[Boolean] = js.undefined,
-    config: js.Any = null,
-    disableFormats: js.UndefOr[Boolean] = js.undefined,
-    extend: java.lang.String = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => ITemplate = null,
-    insertAfter: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
-    insertBefore: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
-    insertFirst: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
-    isTemplate: js.UndefOr[Boolean] = js.undefined,
-    mixins: js.Any = null,
-    overwrite: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _ = null,
-    requires: Array = null,
-    self: IClass = null,
-    set: (/* html */ js.UndefOr[java.lang.String], /* compile */ js.UndefOr[Boolean]) => ITemplate = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null
-  ): ITemplate = {
+  def apply(): ITemplate = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (append != null) __obj.updateDynamic("append")(js.Any.fromFunction3(append))
-    if (apply != null) __obj.updateDynamic("apply")(js.Any.fromFunction1(apply))
-    if (applyOut != null) __obj.updateDynamic("applyOut")(js.Any.fromFunction2(applyOut))
-    if (applyTemplate != null) __obj.updateDynamic("applyTemplate")(js.Any.fromFunction1(applyTemplate))
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (compile != null) __obj.updateDynamic("compile")(js.Any.fromFunction0(compile))
-    if (!js.isUndefined(compiled)) __obj.updateDynamic("compiled")(compiled.get.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFormats)) __obj.updateDynamic("disableFormats")(disableFormats.get.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (insertAfter != null) __obj.updateDynamic("insertAfter")(js.Any.fromFunction3(insertAfter))
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction3(insertBefore))
-    if (insertFirst != null) __obj.updateDynamic("insertFirst")(js.Any.fromFunction3(insertFirst))
-    if (!js.isUndefined(isTemplate)) __obj.updateDynamic("isTemplate")(isTemplate.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (overwrite != null) __obj.updateDynamic("overwrite")(js.Any.fromFunction3(overwrite))
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITemplate]
   }
+  @scala.inline
+  implicit class ITemplateOps[Self <: ITemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppend(
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+    ): Self = this.set("append", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAppend: Self = this.set("append", js.undefined)
+    @scala.inline
+    def setApply(value: /* values */ js.UndefOr[js.Any] => java.lang.String): Self = this.set("apply", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteApply: Self = this.set("apply", js.undefined)
+    @scala.inline
+    def setApplyOut(value: (/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array]) => Array): Self = this.set("applyOut", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteApplyOut: Self = this.set("applyOut", js.undefined)
+    @scala.inline
+    def setApplyTemplate(value: /* values */ js.UndefOr[js.Any] => java.lang.String): Self = this.set("applyTemplate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteApplyTemplate: Self = this.set("applyTemplate", js.undefined)
+    @scala.inline
+    def setCompile(value: () => ITemplate): Self = this.set("compile", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCompile: Self = this.set("compile", js.undefined)
+    @scala.inline
+    def setCompiled(value: Boolean): Self = this.set("compiled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompiled: Self = this.set("compiled", js.undefined)
+    @scala.inline
+    def setDisableFormats(value: Boolean): Self = this.set("disableFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableFormats: Self = this.set("disableFormats", js.undefined)
+    @scala.inline
+    def setInsertAfter(
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+    ): Self = this.set("insertAfter", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteInsertAfter: Self = this.set("insertAfter", js.undefined)
+    @scala.inline
+    def setInsertBefore(
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+    ): Self = this.set("insertBefore", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteInsertBefore: Self = this.set("insertBefore", js.undefined)
+    @scala.inline
+    def setInsertFirst(
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+    ): Self = this.set("insertFirst", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteInsertFirst: Self = this.set("insertFirst", js.undefined)
+    @scala.inline
+    def setIsTemplate(value: Boolean): Self = this.set("isTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTemplate: Self = this.set("isTemplate", js.undefined)
+    @scala.inline
+    def setOverwrite(
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+    ): Self = this.set("overwrite", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    @scala.inline
+    def setSet(value: (/* html */ js.UndefOr[java.lang.String], /* compile */ js.UndefOr[Boolean]) => ITemplate): Self = this.set("set", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSet: Self = this.set("set", js.undefined)
+  }
+  
 }
 

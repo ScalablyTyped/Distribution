@@ -12,7 +12,7 @@ grab bag of easing equations
 | Keywords           | ease, eases, robert, penner, easing, easings, linear, lerp, animation, tween, anim, animations, tweening, tweens, function, functions, expo, quint, quadratic |
 | # releases         | 1 |
 | # dependents       | 46 |
-| # downloads        | 452811 |
+| # downloads        | 462096 |
 | # stars            | 11 |
 
 ## Links

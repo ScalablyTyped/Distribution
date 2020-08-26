@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** represents common visualization functionality for embedded objects. */
+@js.native
 trait XVisualObject extends XInterface {
   /**
     * retrieves map mode the object communicates in.
@@ -16,7 +17,7 @@ trait XVisualObject extends XInterface {
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     * @throws com::sun::star::uno::Exception in case of problems
     */
-  def getMapUnit(nAspect: Double): Double
+  def getMapUnit(nAspect: Double): Double = js.native
   /**
     * retrieves visual representation of the object in preferable format.
     *
@@ -27,7 +28,7 @@ trait XVisualObject extends XInterface {
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     * @throws com::sun::star::uno::Exception in case of problems
     */
-  def getPreferredVisualRepresentation(nAspect: Double): VisualRepresentation
+  def getPreferredVisualRepresentation(nAspect: Double): VisualRepresentation = js.native
   /**
     * gets the size of object's visual area.
     *
@@ -37,7 +38,7 @@ trait XVisualObject extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException one of arguments is illegal
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     */
-  def getVisualAreaSize(nAspect: Double): Size
+  def getVisualAreaSize(nAspect: Double): Size = js.native
   /**
     * sets the size of object's visual area.
     *
@@ -50,7 +51,7 @@ trait XVisualObject extends XInterface {
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     * @throws com::sun::star::uno::Exception the object failed to resize
     */
-  def setVisualAreaSize(nAspect: Double, aSize: Size): Unit
+  def setVisualAreaSize(nAspect: Double, aSize: Size): Unit = js.native
 }
 
 object XVisualObject {
@@ -67,5 +68,26 @@ object XVisualObject {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getMapUnit = js.Any.fromFunction1(getMapUnit), getPreferredVisualRepresentation = js.Any.fromFunction1(getPreferredVisualRepresentation), getVisualAreaSize = js.Any.fromFunction1(getVisualAreaSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setVisualAreaSize = js.Any.fromFunction2(setVisualAreaSize))
     __obj.asInstanceOf[XVisualObject]
   }
+  @scala.inline
+  implicit class XVisualObjectOps[Self <: XVisualObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetMapUnit(value: Double => Double): Self = this.set("getMapUnit", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetPreferredVisualRepresentation(value: Double => VisualRepresentation): Self = this.set("getPreferredVisualRepresentation", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetVisualAreaSize(value: Double => Size): Self = this.set("getVisualAreaSize", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetVisualAreaSize(value: (Double, Size) => Unit): Self = this.set("setVisualAreaSize", js.Any.fromFunction2(value))
+  }
+  
 }
 

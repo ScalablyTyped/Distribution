@@ -1,6 +1,6 @@
 package typings.graphql.typeMod
 
-import typings.graphql.definitionMod.GraphQLScalarTypeConfig
+import typings.graphql.anon.ReadonlyGraphQLScalarType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class GraphQLScalarType protected ()
   extends typings.graphql.definitionMod.GraphQLScalarType {
-  def this(config: GraphQLScalarTypeConfig[_, _]) = this()
+  def this(config: ReadonlyGraphQLScalarType) = this()
 }
 

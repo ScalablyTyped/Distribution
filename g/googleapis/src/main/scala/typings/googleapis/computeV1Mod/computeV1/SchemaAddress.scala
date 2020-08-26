@@ -110,44 +110,92 @@ trait SchemaAddress extends js.Object {
 
 object SchemaAddress {
   @scala.inline
-  def apply(
-    address: String = null,
-    addressType: String = null,
-    creationTimestamp: String = null,
-    description: String = null,
-    id: String = null,
-    ipVersion: String = null,
-    kind: String = null,
-    name: String = null,
-    network: String = null,
-    networkTier: String = null,
-    prefixLength: js.UndefOr[Double] = js.undefined,
-    purpose: String = null,
-    region: String = null,
-    selfLink: String = null,
-    status: String = null,
-    subnetwork: String = null,
-    users: js.Array[String] = null
-  ): SchemaAddress = {
+  def apply(): SchemaAddress = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (addressType != null) __obj.updateDynamic("addressType")(addressType.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ipVersion != null) __obj.updateDynamic("ipVersion")(ipVersion.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (networkTier != null) __obj.updateDynamic("networkTier")(networkTier.asInstanceOf[js.Any])
-    if (!js.isUndefined(prefixLength)) __obj.updateDynamic("prefixLength")(prefixLength.get.asInstanceOf[js.Any])
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
-    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAddress]
   }
+  @scala.inline
+  implicit class SchemaAddressOps[Self <: SchemaAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setAddressType(value: String): Self = this.set("addressType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressType: Self = this.set("addressType", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIpVersion(value: String): Self = this.set("ipVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpVersion: Self = this.set("ipVersion", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setNetworkTier(value: String): Self = this.set("networkTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkTier: Self = this.set("networkTier", js.undefined)
+    @scala.inline
+    def setPrefixLength(value: Double): Self = this.set("prefixLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixLength: Self = this.set("prefixLength", js.undefined)
+    @scala.inline
+    def setPurpose(value: String): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpose: Self = this.set("purpose", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: String*): Self = this.set("users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: js.Array[String]): Self = this.set("users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("users", js.undefined)
+  }
+  
 }
 

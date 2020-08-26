@@ -1,7 +1,7 @@
 package typings.pulumiAws.methodResponseMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.restApiMod.RestApi
+import typings.pulumiAws.apigatewayMod.RestApi
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,22 +39,46 @@ trait MethodResponseState extends js.Object {
 
 object MethodResponseState {
   @scala.inline
-  def apply(
-    httpMethod: Input[String] = null,
-    resourceId: Input[String] = null,
-    responseModels: Input[StringDictionary[Input[String]]] = null,
-    responseParameters: Input[StringDictionary[Input[Boolean]]] = null,
-    restApi: Input[String | RestApi] = null,
-    statusCode: Input[String] = null
-  ): MethodResponseState = {
+  def apply(): MethodResponseState = {
     val __obj = js.Dynamic.literal()
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (responseModels != null) __obj.updateDynamic("responseModels")(responseModels.asInstanceOf[js.Any])
-    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
-    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodResponseState]
   }
+  @scala.inline
+  implicit class MethodResponseStateOps[Self <: MethodResponseState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpMethod(value: Input[String]): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    @scala.inline
+    def setResourceId(value: Input[String]): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setResponseModels(value: Input[StringDictionary[Input[String]]]): Self = this.set("responseModels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseModels: Self = this.set("responseModels", js.undefined)
+    @scala.inline
+    def setResponseParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = this.set("responseParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseParameters: Self = this.set("responseParameters", js.undefined)
+    @scala.inline
+    def setRestApi(value: Input[String | RestApi]): Self = this.set("restApi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestApi: Self = this.set("restApi", js.undefined)
+    @scala.inline
+    def setStatusCode(value: Input[String]): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+  }
+  
 }
 

@@ -4,63 +4,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Backgroundcolor extends js.Object {
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
     * letely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.undefined
+  var alpha: js.UndefOr[Double] = js.native
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g. "red", "blue", "yellow"), in hexadecimal notation (e.
     * g. "#FF0000", "#0000FF", "#FFFF00"), or in RGB notation (e.g. "rgb(255,0,0)", "rgb(0,0,255)", "rgb(255,255,0)"). One color will se
     * t a solid background color, two colors will, by default, create a horizontal gradient. For more complex gradients, use gradient-co
     * lors and gradient-stops. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.undefined
+  var `background-color`: js.UndefOr[String] = js.native
   /**
     * Sets the border color of the object, applicable on closed shapes. See the square points between the lines. "none" | "transparent"
     * | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.undefined
+  var `border-color`: js.UndefOr[String] = js.native
   /**
     * Sets the border width of the object, applicable on closed shapes. See the square points between the lines. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[Double] = js.undefined
+  var `border-width`: js.UndefOr[Double] = js.native
   /**
     * Sets the size of the object/shape. 4 | "6px" | ...
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
   /**
     * The type of the marker object to render. square | circle | diamond | triangle | star5 | star6 | star7 | star8 | rpoly5 | gear5 | g
     * ear6 | gear7 | gear8
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object Backgroundcolor {
   @scala.inline
-  def apply(
-    alpha: js.UndefOr[Double] = js.undefined,
-    `background-color`: String = null,
-    `border-color`: String = null,
-    `border-width`: js.UndefOr[Double] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    `type`: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): Backgroundcolor = {
+  def apply(): Backgroundcolor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
-    if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
-    if (`border-color` != null) __obj.updateDynamic("border-color")(`border-color`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`border-width`)) __obj.updateDynamic("border-width")(`border-width`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Backgroundcolor]
   }
+  @scala.inline
+  implicit class BackgroundcolorOps[Self <: Backgroundcolor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    @scala.inline
+    def `setBackground-color`(value: String): Self = this.set("background-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBackground-color`: Self = this.set("background-color", js.undefined)
+    @scala.inline
+    def `setBorder-color`(value: String): Self = this.set("border-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBorder-color`: Self = this.set("border-color", js.undefined)
+    @scala.inline
+    def `setBorder-width`(value: Double): Self = this.set("border-width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBorder-width`: Self = this.set("border-width", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

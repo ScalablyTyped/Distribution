@@ -22,15 +22,32 @@ trait DecisionTaskScheduledEventAttributes extends js.Object {
 
 object DecisionTaskScheduledEventAttributes {
   @scala.inline
-  def apply(
-    taskList: TaskList,
-    startToCloseTimeout: DurationInSecondsOptional = null,
-    taskPriority: TaskPriority = null
-  ): DecisionTaskScheduledEventAttributes = {
+  def apply(taskList: TaskList): DecisionTaskScheduledEventAttributes = {
     val __obj = js.Dynamic.literal(taskList = taskList.asInstanceOf[js.Any])
-    if (startToCloseTimeout != null) __obj.updateDynamic("startToCloseTimeout")(startToCloseTimeout.asInstanceOf[js.Any])
-    if (taskPriority != null) __obj.updateDynamic("taskPriority")(taskPriority.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecisionTaskScheduledEventAttributes]
   }
+  @scala.inline
+  implicit class DecisionTaskScheduledEventAttributesOps[Self <: DecisionTaskScheduledEventAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTaskList(value: TaskList): Self = this.set("taskList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("startToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartToCloseTimeout: Self = this.set("startToCloseTimeout", js.undefined)
+    @scala.inline
+    def setTaskPriority(value: TaskPriority): Self = this.set("taskPriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskPriority: Self = this.set("taskPriority", js.undefined)
+  }
+  
 }
 

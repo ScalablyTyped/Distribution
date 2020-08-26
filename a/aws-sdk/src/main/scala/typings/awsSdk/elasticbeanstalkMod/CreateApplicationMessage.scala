@@ -26,17 +26,38 @@ trait CreateApplicationMessage extends js.Object {
 
 object CreateApplicationMessage {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName,
-    Description: Description = null,
-    ResourceLifecycleConfig: ApplicationResourceLifecycleConfig = null,
-    Tags: Tags = null
-  ): CreateApplicationMessage = {
+  def apply(ApplicationName: ApplicationName): CreateApplicationMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ResourceLifecycleConfig != null) __obj.updateDynamic("ResourceLifecycleConfig")(ResourceLifecycleConfig.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationMessage]
   }
+  @scala.inline
+  implicit class CreateApplicationMessageOps[Self <: CreateApplicationMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = this.set("ResourceLifecycleConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceLifecycleConfig: Self = this.set("ResourceLifecycleConfig", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -34,21 +34,46 @@ trait InstanceFleetConfig extends js.Object {
 
 object InstanceFleetConfig {
   @scala.inline
-  def apply(
-    InstanceFleetType: InstanceFleetType,
-    InstanceTypeConfigs: InstanceTypeConfigList = null,
-    LaunchSpecifications: InstanceFleetProvisioningSpecifications = null,
-    Name: XmlStringMaxLen256 = null,
-    TargetOnDemandCapacity: js.UndefOr[WholeNumber] = js.undefined,
-    TargetSpotCapacity: js.UndefOr[WholeNumber] = js.undefined
-  ): InstanceFleetConfig = {
+  def apply(InstanceFleetType: InstanceFleetType): InstanceFleetConfig = {
     val __obj = js.Dynamic.literal(InstanceFleetType = InstanceFleetType.asInstanceOf[js.Any])
-    if (InstanceTypeConfigs != null) __obj.updateDynamic("InstanceTypeConfigs")(InstanceTypeConfigs.asInstanceOf[js.Any])
-    if (LaunchSpecifications != null) __obj.updateDynamic("LaunchSpecifications")(LaunchSpecifications.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(TargetOnDemandCapacity)) __obj.updateDynamic("TargetOnDemandCapacity")(TargetOnDemandCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TargetSpotCapacity)) __obj.updateDynamic("TargetSpotCapacity")(TargetSpotCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetConfig]
   }
+  @scala.inline
+  implicit class InstanceFleetConfigOps[Self <: InstanceFleetConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceFleetType(value: InstanceFleetType): Self = this.set("InstanceFleetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceTypeConfigsVarargs(value: InstanceTypeConfig*): Self = this.set("InstanceTypeConfigs", js.Array(value :_*))
+    @scala.inline
+    def setInstanceTypeConfigs(value: InstanceTypeConfigList): Self = this.set("InstanceTypeConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTypeConfigs: Self = this.set("InstanceTypeConfigs", js.undefined)
+    @scala.inline
+    def setLaunchSpecifications(value: InstanceFleetProvisioningSpecifications): Self = this.set("LaunchSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchSpecifications: Self = this.set("LaunchSpecifications", js.undefined)
+    @scala.inline
+    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setTargetOnDemandCapacity(value: WholeNumber): Self = this.set("TargetOnDemandCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetOnDemandCapacity: Self = this.set("TargetOnDemandCapacity", js.undefined)
+    @scala.inline
+    def setTargetSpotCapacity(value: WholeNumber): Self = this.set("TargetSpotCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetSpotCapacity: Self = this.set("TargetSpotCapacity", js.undefined)
+  }
+  
 }
 

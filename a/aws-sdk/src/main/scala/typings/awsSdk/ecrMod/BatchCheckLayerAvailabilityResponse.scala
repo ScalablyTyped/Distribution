@@ -18,11 +18,34 @@ trait BatchCheckLayerAvailabilityResponse extends js.Object {
 
 object BatchCheckLayerAvailabilityResponse {
   @scala.inline
-  def apply(failures: LayerFailureList = null, layers: LayerList = null): BatchCheckLayerAvailabilityResponse = {
+  def apply(): BatchCheckLayerAvailabilityResponse = {
     val __obj = js.Dynamic.literal()
-    if (failures != null) __obj.updateDynamic("failures")(failures.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchCheckLayerAvailabilityResponse]
   }
+  @scala.inline
+  implicit class BatchCheckLayerAvailabilityResponseOps[Self <: BatchCheckLayerAvailabilityResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailuresVarargs(value: LayerFailure*): Self = this.set("failures", js.Array(value :_*))
+    @scala.inline
+    def setFailures(value: LayerFailureList): Self = this.set("failures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailures: Self = this.set("failures", js.undefined)
+    @scala.inline
+    def setLayersVarargs(value: Layer*): Self = this.set("layers", js.Array(value :_*))
+    @scala.inline
+    def setLayers(value: LayerList): Self = this.set("layers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayers: Self = this.set("layers", js.undefined)
+  }
+  
 }
 

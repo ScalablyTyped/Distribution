@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#grid
   */
+@js.native
 trait Grid extends js.Object {
   /**
     * Background color of grid, which is transparent by default.
@@ -18,28 +19,28 @@ trait Grid extends js.Object {
     *
     * @default 'transparent'
     */
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
   /**
     * Border color of grid. Support the same color format as backgroundColor.
     * Attention: Works only if show: true is set.
     *
     * @default '#ccc'
     */
-  var borderColor: js.UndefOr[String] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
   /**
     * Border width of grid.
     * Attention: Works only if show: true is set.
     *
     * @default 1
     */
-  var borderWidth: js.UndefOr[Double] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.native
   /**
     * Distance between grid component and the bottom side of the container.
     * bottom value can be instant pixel value like 20; it can also be percentage value relative to container width like '20%'.
     *
     * @default 60
     */
-  var bottom: js.UndefOr[Double | String] = js.undefined
+  var bottom: js.UndefOr[Double | String] = js.native
   /**
     * Whether the grid region contains axis tick label of axis.
     * When containLabel is false:
@@ -54,18 +55,18 @@ trait Grid extends js.Object {
     *
     * @default false
     */
-  var containLabel: js.UndefOr[Boolean] = js.undefined
+  var containLabel: js.UndefOr[Boolean] = js.native
   /**
     * Height of grid component. Adaptive by default.
     *
     * @default 'auto'
     */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option or API.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Distance between grid component and the left side of the container.
     * left value can be instant pixel value like 20;
@@ -76,7 +77,7 @@ trait Grid extends js.Object {
     *
     * @default '10%'
     */
-  var left: js.UndefOr[Double | String] = js.undefined
+  var left: js.UndefOr[Double | String] = js.native
   /**
     * Distance between grid component and the right side of the container.
     * right value can be instant pixel value like 20;
@@ -84,7 +85,7 @@ trait Grid extends js.Object {
     *
     * @default '10%'
     */
-  var right: js.UndefOr[Double | String] = js.undefined
+  var right: js.UndefOr[Double | String] = js.native
   /**
     * Size of shadow blur. This attribute should be used along with
     * shadowColor,shadowOffsetX, shadowOffsetY to set shadow to component.
@@ -92,37 +93,37 @@ trait Grid extends js.Object {
     * This property works only if show: true is configured and
     * backgroundColor is defined other than transparent.
     */
-  var shadowBlur: js.UndefOr[Double] = js.undefined
+  var shadowBlur: js.UndefOr[Double] = js.native
   /**
     * Shadow color. Support same format as color.
     * Attention: This property works only if show: true configured.
     */
-  var shadowColor: js.UndefOr[String] = js.undefined
+  var shadowColor: js.UndefOr[String] = js.native
   /**
     * Offset distance on the horizontal direction of shadow.
     * Attention: This property works only if show: true configured.
     *
     * @default 0
     */
-  var shadowOffsetX: js.UndefOr[Double] = js.undefined
+  var shadowOffsetX: js.UndefOr[Double] = js.native
   /**
     * Offset distance on the vertical direction of shadow.
     * Attention: This property works only if show: true configured.
     *
     * @default 0
     */
-  var shadowOffsetY: js.UndefOr[Double] = js.undefined
+  var shadowOffsetY: js.UndefOr[Double] = js.native
   /**
     * Whether to show the grid in rectangular coordinate.
     *
     * @default false
     */
-  var show: js.UndefOr[Boolean] = js.undefined
+  var show: js.UndefOr[Boolean] = js.native
   /**
     * tooltip settings in the coordinate system component.
     * @see https://echarts.apache.org/en/option.html#grid.tooltip
     */
-  var tooltip: js.UndefOr[Tooltip] = js.undefined
+  var tooltip: js.UndefOr[Tooltip] = js.native
   /**
     * Distance between grid component and the top side of the container.
     * top value can be instant pixel value like 20;
@@ -131,13 +132,13 @@ trait Grid extends js.Object {
     *
     * @default 60
     */
-  var top: js.UndefOr[Double | String] = js.undefined
+  var top: js.UndefOr[Double | String] = js.native
   /**
     * Width of grid component. Adaptive by default.
     *
     * @default 'auto'
     */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.native
   /**
     * z value of all graphical elements in , which controls order of drawing graphical components.
     * Components with smaller z values may be overwritten by those with larger z values.
@@ -145,7 +146,7 @@ trait Grid extends js.Object {
     *
     * @default 2
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * zlevel value of all graphical elements in.
     * zlevel is used to make layers with Canvas.
@@ -157,53 +158,103 @@ trait Grid extends js.Object {
     *
     * @default 0
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object Grid {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    borderColor: String = null,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    bottom: Double | String = null,
-    containLabel: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    id: String = null,
-    left: Double | String = null,
-    right: Double | String = null,
-    shadowBlur: js.UndefOr[Double] = js.undefined,
-    shadowColor: String = null,
-    shadowOffsetX: js.UndefOr[Double] = js.undefined,
-    shadowOffsetY: js.UndefOr[Double] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    tooltip: Tooltip = null,
-    top: Double | String = null,
-    width: Double | String = null,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): Grid = {
+  def apply(): Grid = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(containLabel)) __obj.updateDynamic("containLabel")(containLabel.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowBlur)) __obj.updateDynamic("shadowBlur")(shadowBlur.get.asInstanceOf[js.Any])
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowOffsetX)) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowOffsetY)) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Grid]
   }
+  @scala.inline
+  implicit class GridOps[Self <: Grid] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setBottom(value: Double | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setContainLabel(value: Boolean): Self = this.set("containLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainLabel: Self = this.set("containLabel", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLeft(value: Double | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setRight(value: Double | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    @scala.inline
+    def setShadowColor(value: String): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    @scala.inline
+    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
+    @scala.inline
+    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setTooltip(value: Tooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

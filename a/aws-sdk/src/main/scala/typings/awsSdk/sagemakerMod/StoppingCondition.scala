@@ -18,14 +18,30 @@ trait StoppingCondition extends js.Object {
 
 object StoppingCondition {
   @scala.inline
-  def apply(
-    MaxRuntimeInSeconds: js.UndefOr[MaxRuntimeInSeconds] = js.undefined,
-    MaxWaitTimeInSeconds: js.UndefOr[MaxWaitTimeInSeconds] = js.undefined
-  ): StoppingCondition = {
+  def apply(): StoppingCondition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxRuntimeInSeconds)) __obj.updateDynamic("MaxRuntimeInSeconds")(MaxRuntimeInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxWaitTimeInSeconds)) __obj.updateDynamic("MaxWaitTimeInSeconds")(MaxWaitTimeInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoppingCondition]
   }
+  @scala.inline
+  implicit class StoppingConditionOps[Self <: StoppingCondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxRuntimeInSeconds(value: MaxRuntimeInSeconds): Self = this.set("MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRuntimeInSeconds: Self = this.set("MaxRuntimeInSeconds", js.undefined)
+    @scala.inline
+    def setMaxWaitTimeInSeconds(value: MaxWaitTimeInSeconds): Self = this.set("MaxWaitTimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWaitTimeInSeconds: Self = this.set("MaxWaitTimeInSeconds", js.undefined)
+  }
+  
 }
 

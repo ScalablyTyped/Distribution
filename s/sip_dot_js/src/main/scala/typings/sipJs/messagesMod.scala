@@ -25,8 +25,18 @@ object messagesMod extends js.Object {
       * @param password - Password.
       */
     def this(loggerFactory: LoggerFactory) = this()
-    def this(loggerFactory: LoggerFactory, username: String) = this()
-    def this(loggerFactory: LoggerFactory, username: String, password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: js.UndefOr[scala.Nothing], username: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: String, username: String) = this()
+    def this(
+      loggerFactory: LoggerFactory,
+      ha1: js.UndefOr[scala.Nothing],
+      username: js.UndefOr[scala.Nothing],
+      password: String
+    ) = this()
+    def this(loggerFactory: LoggerFactory, ha1: js.UndefOr[scala.Nothing], username: String, password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: String, username: js.UndefOr[scala.Nothing], password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: String, username: String, password: String) = this()
   }
   
   @js.native
@@ -43,7 +53,7 @@ object messagesMod extends js.Object {
   
   @js.native
   class NameAddrHeader protected ()
-    extends typings.sipJs.nameAddrHeaderMod.NameAddrHeader {
+    extends typings.sipJs.grammarMod.NameAddrHeader {
     /**
       * Constructor
       * @param uri -
@@ -58,30 +68,65 @@ object messagesMod extends js.Object {
     extends typings.sipJs.outgoingRequestMessageMod.OutgoingRequestMessage {
     def this(
       method: String,
-      ruri: typings.sipJs.uriMod.URI,
-      fromURI: typings.sipJs.uriMod.URI,
-      toURI: typings.sipJs.uriMod.URI
+      ruri: typings.sipJs.grammarMod.URI,
+      fromURI: typings.sipJs.grammarMod.URI,
+      toURI: typings.sipJs.grammarMod.URI
     ) = this()
     def this(
       method: String,
-      ruri: typings.sipJs.uriMod.URI,
-      fromURI: typings.sipJs.uriMod.URI,
-      toURI: typings.sipJs.uriMod.URI,
+      ruri: typings.sipJs.grammarMod.URI,
+      fromURI: typings.sipJs.grammarMod.URI,
+      toURI: typings.sipJs.grammarMod.URI,
       options: OutgoingRequestMessageOptions
     ) = this()
     def this(
       method: String,
-      ruri: typings.sipJs.uriMod.URI,
-      fromURI: typings.sipJs.uriMod.URI,
-      toURI: typings.sipJs.uriMod.URI,
+      ruri: typings.sipJs.grammarMod.URI,
+      fromURI: typings.sipJs.grammarMod.URI,
+      toURI: typings.sipJs.grammarMod.URI,
+      options: js.UndefOr[scala.Nothing],
+      extraHeaders: js.Array[String]
+    ) = this()
+    def this(
+      method: String,
+      ruri: typings.sipJs.grammarMod.URI,
+      fromURI: typings.sipJs.grammarMod.URI,
+      toURI: typings.sipJs.grammarMod.URI,
       options: OutgoingRequestMessageOptions,
       extraHeaders: js.Array[String]
     ) = this()
     def this(
       method: String,
-      ruri: typings.sipJs.uriMod.URI,
-      fromURI: typings.sipJs.uriMod.URI,
-      toURI: typings.sipJs.uriMod.URI,
+      ruri: typings.sipJs.grammarMod.URI,
+      fromURI: typings.sipJs.grammarMod.URI,
+      toURI: typings.sipJs.grammarMod.URI,
+      options: js.UndefOr[scala.Nothing],
+      extraHeaders: js.UndefOr[scala.Nothing],
+      body: Body
+    ) = this()
+    def this(
+      method: String,
+      ruri: typings.sipJs.grammarMod.URI,
+      fromURI: typings.sipJs.grammarMod.URI,
+      toURI: typings.sipJs.grammarMod.URI,
+      options: js.UndefOr[scala.Nothing],
+      extraHeaders: js.Array[String],
+      body: Body
+    ) = this()
+    def this(
+      method: String,
+      ruri: typings.sipJs.grammarMod.URI,
+      fromURI: typings.sipJs.grammarMod.URI,
+      toURI: typings.sipJs.grammarMod.URI,
+      options: OutgoingRequestMessageOptions,
+      extraHeaders: js.UndefOr[scala.Nothing],
+      body: Body
+    ) = this()
+    def this(
+      method: String,
+      ruri: typings.sipJs.grammarMod.URI,
+      fromURI: typings.sipJs.grammarMod.URI,
+      toURI: typings.sipJs.grammarMod.URI,
       options: OutgoingRequestMessageOptions,
       extraHeaders: js.Array[String],
       body: Body
@@ -90,13 +135,13 @@ object messagesMod extends js.Object {
   
   @js.native
   class Parameters protected ()
-    extends typings.sipJs.parametersMod.Parameters {
+    extends typings.sipJs.grammarMod.Parameters {
     def this(parameters: StringDictionary[String]) = this()
   }
   
   @js.native
   class URI protected ()
-    extends typings.sipJs.uriMod.URI {
+    extends typings.sipJs.grammarMod.URI {
     /**
       * Constructor
       * @param scheme -
@@ -108,7 +153,32 @@ object messagesMod extends js.Object {
       */
     def this(scheme: String, user: String, host: String) = this()
     def this(scheme: String, user: String, host: String, port: Double) = this()
+    def this(scheme: String, user: String, host: String, port: js.UndefOr[scala.Nothing], parameters: js.Any) = this()
     def this(scheme: String, user: String, host: String, port: Double, parameters: js.Any) = this()
+    def this(
+      scheme: String,
+      user: String,
+      host: String,
+      port: js.UndefOr[scala.Nothing],
+      parameters: js.UndefOr[scala.Nothing],
+      headers: js.Any
+    ) = this()
+    def this(
+      scheme: String,
+      user: String,
+      host: String,
+      port: js.UndefOr[scala.Nothing],
+      parameters: js.Any,
+      headers: js.Any
+    ) = this()
+    def this(
+      scheme: String,
+      user: String,
+      host: String,
+      port: Double,
+      parameters: js.UndefOr[scala.Nothing],
+      headers: js.Any
+    ) = this()
     def this(scheme: String, user: String, host: String, port: Double, parameters: js.Any, headers: js.Any) = this()
   }
   

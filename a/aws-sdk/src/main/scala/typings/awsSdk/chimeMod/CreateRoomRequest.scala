@@ -22,10 +22,30 @@ trait CreateRoomRequest extends js.Object {
 
 object CreateRoomRequest {
   @scala.inline
-  def apply(AccountId: NonEmptyString, Name: SensitiveString, ClientRequestToken: ClientRequestToken = null): CreateRoomRequest = {
+  def apply(AccountId: NonEmptyString, Name: SensitiveString): CreateRoomRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRoomRequest]
   }
+  @scala.inline
+  implicit class CreateRoomRequestOps[Self <: CreateRoomRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: SensitiveString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+  }
+  
 }
 

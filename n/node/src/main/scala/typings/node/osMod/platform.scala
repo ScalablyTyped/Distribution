@@ -1,6 +1,6 @@
 package typings.node.osMod
 
-import typings.node.NodeJS.Platform
+import typings.node.processMod.global.NodeJS.Platform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -87,36 +87,89 @@ object Finding {
     attributes: AttributeList,
     createdAt: Timestamp,
     updatedAt: Timestamp,
-    userAttributes: UserAttributeList,
-    assetAttributes: AssetAttributes = null,
-    assetType: AssetType = null,
-    confidence: js.UndefOr[IocConfidence] = js.undefined,
-    description: Text = null,
-    id: FindingId = null,
-    indicatorOfCompromise: js.UndefOr[Bool] = js.undefined,
-    numericSeverity: js.UndefOr[NumericSeverity] = js.undefined,
-    recommendation: Text = null,
-    schemaVersion: js.UndefOr[NumericVersion] = js.undefined,
-    service: ServiceName = null,
-    serviceAttributes: InspectorServiceAttributes = null,
-    severity: Severity = null,
-    title: Text = null
+    userAttributes: UserAttributeList
   ): Finding = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any], userAttributes = userAttributes.asInstanceOf[js.Any])
-    if (assetAttributes != null) __obj.updateDynamic("assetAttributes")(assetAttributes.asInstanceOf[js.Any])
-    if (assetType != null) __obj.updateDynamic("assetType")(assetType.asInstanceOf[js.Any])
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(indicatorOfCompromise)) __obj.updateDynamic("indicatorOfCompromise")(indicatorOfCompromise.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numericSeverity)) __obj.updateDynamic("numericSeverity")(numericSeverity.get.asInstanceOf[js.Any])
-    if (recommendation != null) __obj.updateDynamic("recommendation")(recommendation.asInstanceOf[js.Any])
-    if (!js.isUndefined(schemaVersion)) __obj.updateDynamic("schemaVersion")(schemaVersion.get.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (serviceAttributes != null) __obj.updateDynamic("serviceAttributes")(serviceAttributes.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Finding]
   }
+  @scala.inline
+  implicit class FindingOps[Self <: Finding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributesVarargs(value: Attribute*): Self = this.set("attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: AttributeList): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserAttributesVarargs(value: Attribute*): Self = this.set("userAttributes", js.Array(value :_*))
+    @scala.inline
+    def setUserAttributes(value: UserAttributeList): Self = this.set("userAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssetAttributes(value: AssetAttributes): Self = this.set("assetAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetAttributes: Self = this.set("assetAttributes", js.undefined)
+    @scala.inline
+    def setAssetType(value: AssetType): Self = this.set("assetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetType: Self = this.set("assetType", js.undefined)
+    @scala.inline
+    def setConfidence(value: IocConfidence): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    @scala.inline
+    def setDescription(value: Text): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: FindingId): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIndicatorOfCompromise(value: Bool): Self = this.set("indicatorOfCompromise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndicatorOfCompromise: Self = this.set("indicatorOfCompromise", js.undefined)
+    @scala.inline
+    def setNumericSeverity(value: NumericSeverity): Self = this.set("numericSeverity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumericSeverity: Self = this.set("numericSeverity", js.undefined)
+    @scala.inline
+    def setRecommendation(value: Text): Self = this.set("recommendation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendation: Self = this.set("recommendation", js.undefined)
+    @scala.inline
+    def setSchemaVersion(value: NumericVersion): Self = this.set("schemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaVersion: Self = this.set("schemaVersion", js.undefined)
+    @scala.inline
+    def setService(value: ServiceName): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+    @scala.inline
+    def setServiceAttributes(value: InspectorServiceAttributes): Self = this.set("serviceAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAttributes: Self = this.set("serviceAttributes", js.undefined)
+    @scala.inline
+    def setSeverity(value: Severity): Self = this.set("severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("severity", js.undefined)
+    @scala.inline
+    def setTitle(value: Text): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

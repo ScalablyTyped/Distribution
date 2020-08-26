@@ -16,6 +16,12 @@ class AABB () extends js.Object {
   def overlaps(aabb: AABB): Boolean = js.native
   def overlapsRay(ray: Ray): Double = js.native
   def setFromPoints(points: js.Array[js.Tuple2[Double, Double]], position: js.Tuple2[Double, Double]): Unit = js.native
+  def setFromPoints(
+    points: js.Array[js.Tuple2[Double, Double]],
+    position: js.Tuple2[Double, Double],
+    angle: js.UndefOr[scala.Nothing],
+    skinSize: Double
+  ): Unit = js.native
   def setFromPoints(points: js.Array[js.Tuple2[Double, Double]], position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
   def setFromPoints(
     points: js.Array[js.Tuple2[Double, Double]],

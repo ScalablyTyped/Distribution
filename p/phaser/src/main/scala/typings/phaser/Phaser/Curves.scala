@@ -104,6 +104,7 @@ object Curves extends js.Object {
       * @param accuracy The accuracy of the bounds calculations. Default 16.
       */
     def getBounds(): Rectangle = js.native
+    def getBounds(out: js.UndefOr[scala.Nothing], accuracy: integer): Rectangle = js.native
     def getBounds(out: Rectangle): Rectangle = js.native
     def getBounds(out: Rectangle, accuracy: integer): Rectangle = js.native
     /**
@@ -160,7 +161,11 @@ object Curves extends js.Object {
       * @param out An optional array to store the points in.
       */
     def getPoints[O /* <: js.Array[Vector2] */](): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: js.UndefOr[scala.Nothing], stepRate: js.UndefOr[scala.Nothing], out: O): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: js.UndefOr[scala.Nothing], stepRate: Double): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: js.UndefOr[scala.Nothing], stepRate: Double, out: O): O = js.native
     def getPoints[O /* <: js.Array[Vector2] */](divisions: integer): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: js.UndefOr[scala.Nothing], out: O): O = js.native
     def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Double, out: O): O = js.native
     /**
@@ -178,7 +183,15 @@ object Curves extends js.Object {
       * @param out An optional array to store the points in.
       */
     def getSpacedPoints(): js.Array[Vector2] = js.native
+    def getSpacedPoints(
+      divisions: js.UndefOr[scala.Nothing],
+      stepRate: js.UndefOr[scala.Nothing],
+      out: js.Array[_ | Vector2]
+    ): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: js.UndefOr[scala.Nothing], stepRate: Double): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: js.UndefOr[scala.Nothing], stepRate: Double, out: js.Array[_ | Vector2]): js.Array[Vector2] = js.native
     def getSpacedPoints(divisions: integer): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: integer, stepRate: js.UndefOr[scala.Nothing], out: js.Array[_ | Vector2]): js.Array[Vector2] = js.native
     def getSpacedPoints(divisions: integer, stepRate: Double): js.Array[Vector2] = js.native
     def getSpacedPoints(divisions: integer, stepRate: Double, out: js.Array[_ | Vector2]): js.Array[Vector2] = js.native
     /**
@@ -456,6 +469,7 @@ object Curves extends js.Object {
       * @param rotation The rotation of the circle in degrees. Default 0.
       */
     def circleTo(radius: Double): this.type = js.native
+    def circleTo(radius: Double, clockwise: js.UndefOr[scala.Nothing], rotation: Double): this.type = js.native
     def circleTo(radius: Double, clockwise: Boolean): this.type = js.native
     def circleTo(radius: Double, clockwise: Boolean, rotation: Double): this.type = js.native
     /**
@@ -475,44 +489,13 @@ object Curves extends js.Object {
       * @param control2X The x coordinate of the second control point. Not used if Vector2s are provided as the first 3 arguments.
       * @param control2Y The y coordinate of the second control point. Not used if Vector2s are provided as the first 3 arguments.
       */
-    def cubicBezierTo(x: Double, y: Double, control1X: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Double, control1X: Double, control1Y: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Double, control1X: Double, control1Y: Double, control2X: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Double, control1X: Double, control1Y: Double, control2X: Double, control2Y: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Double, control1X: Vector2): this.type = js.native
-    def cubicBezierTo(x: Double, y: Double, control1X: Vector2, control1Y: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Double, control1X: Vector2, control1Y: Double, control2X: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Double, control1X: Vector2, control1Y: Double, control2X: Double, control2Y: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Vector2, control1X: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Vector2, control1X: Double, control1Y: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Vector2, control1X: Double, control1Y: Double, control2X: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Vector2, control1X: Double, control1Y: Double, control2X: Double, control2Y: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Vector2, control1X: Vector2): this.type = js.native
-    def cubicBezierTo(x: Double, y: Vector2, control1X: Vector2, control1Y: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Vector2, control1X: Vector2, control1Y: Double, control2X: Double): this.type = js.native
-    def cubicBezierTo(x: Double, y: Vector2, control1X: Vector2, control1Y: Double, control2X: Double, control2Y: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Double, control1X: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Double, control1X: Double, control1Y: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Double, control1X: Double, control1Y: Double, control2X: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Double, control1X: Double, control1Y: Double, control2X: Double, control2Y: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Double, control1X: Vector2): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Double, control1X: Vector2, control1Y: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Double, control1X: Vector2, control1Y: Double, control2X: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Double, control1X: Vector2, control1Y: Double, control2X: Double, control2Y: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Vector2, control1X: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Vector2, control1X: Double, control1Y: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Vector2, control1X: Double, control1Y: Double, control2X: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Vector2, control1X: Double, control1Y: Double, control2X: Double, control2Y: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Vector2, control1X: Vector2): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Vector2, control1X: Vector2, control1Y: Double): this.type = js.native
-    def cubicBezierTo(x: Vector2, y: Vector2, control1X: Vector2, control1Y: Double, control2X: Double): this.type = js.native
     def cubicBezierTo(
-      x: Vector2,
-      y: Vector2,
-      control1X: Vector2,
-      control1Y: Double,
-      control2X: Double,
-      control2Y: Double
+      x: Double | Vector2,
+      y: Double | Vector2,
+      control1X: Double | Vector2,
+      control1Y: js.UndefOr[Double],
+      control2X: js.UndefOr[Double],
+      control2Y: js.UndefOr[Double]
     ): this.type = js.native
     /**
       * Disposes of this Path, clearing its internal references to objects so they can be garbage-collected.
@@ -557,6 +540,7 @@ object Curves extends js.Object {
     def getBounds[O /* <: Vector2 */](): O = js.native
     def getBounds[O /* <: Vector2 */](out: O): O = js.native
     def getBounds[O /* <: Vector2 */](out: O, accuracy: integer): O = js.native
+    def getBounds[O /* <: Vector2 */](out: js.UndefOr[scala.Nothing], accuracy: integer): O = js.native
     /**
       * Returns an array containing the length of the Path at the end of each Curve.
       * 
@@ -635,10 +619,21 @@ object Curves extends js.Object {
       * @param x The X coordinate of the position to move the path's end point to, or a `Vector2` containing the entire new end point.
       * @param y The Y coordinate of the position to move the path's end point to, if a number was passed as the X coordinate.
       */
+    def moveTo(x: Double): this.type = js.native
     def moveTo(x: Double, y: Double): this.type = js.native
+    def moveTo(x: Vector2): this.type = js.native
     def moveTo(x: Vector2, y: Double): this.type = js.native
     def quadraticBezierTo(x: js.Array[Vector2]): this.type = js.native
+    def quadraticBezierTo(
+      x: js.Array[Vector2],
+      y: js.UndefOr[scala.Nothing],
+      controlX: js.UndefOr[scala.Nothing],
+      controlY: Double
+    ): this.type = js.native
+    def quadraticBezierTo(x: js.Array[Vector2], y: js.UndefOr[scala.Nothing], controlX: Double): this.type = js.native
+    def quadraticBezierTo(x: js.Array[Vector2], y: js.UndefOr[scala.Nothing], controlX: Double, controlY: Double): this.type = js.native
     def quadraticBezierTo(x: js.Array[Vector2], y: Double): this.type = js.native
+    def quadraticBezierTo(x: js.Array[Vector2], y: Double, controlX: js.UndefOr[scala.Nothing], controlY: Double): this.type = js.native
     def quadraticBezierTo(x: js.Array[Vector2], y: Double, controlX: Double): this.type = js.native
     def quadraticBezierTo(x: js.Array[Vector2], y: Double, controlX: Double, controlY: Double): this.type = js.native
     /**
@@ -649,7 +644,11 @@ object Curves extends js.Object {
       * @param controlY If `x` is not a `Vector2`, the Y coordinate of the first control point.
       */
     def quadraticBezierTo(x: Double): this.type = js.native
+    def quadraticBezierTo(x: Double, y: js.UndefOr[scala.Nothing], controlX: js.UndefOr[scala.Nothing], controlY: Double): this.type = js.native
+    def quadraticBezierTo(x: Double, y: js.UndefOr[scala.Nothing], controlX: Double): this.type = js.native
+    def quadraticBezierTo(x: Double, y: js.UndefOr[scala.Nothing], controlX: Double, controlY: Double): this.type = js.native
     def quadraticBezierTo(x: Double, y: Double): this.type = js.native
+    def quadraticBezierTo(x: Double, y: Double, controlX: js.UndefOr[scala.Nothing], controlY: Double): this.type = js.native
     def quadraticBezierTo(x: Double, y: Double, controlX: Double): this.type = js.native
     def quadraticBezierTo(x: Double, y: Double, controlX: Double, controlY: Double): this.type = js.native
     /**

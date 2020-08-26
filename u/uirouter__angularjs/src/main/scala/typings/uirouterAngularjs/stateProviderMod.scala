@@ -106,7 +106,7 @@ object stateProviderMod extends js.Object {
       *
       * @return {object} $stateProvider - $stateProvider instance
       */
-    def decorator(name: String, func: BuilderFunction): js.Function | this.type | js.Array[BuilderFunction] = js.native
+    def decorator(name: String, func: BuilderFunction): js.Function | this.type = js.native
     /**
       * Registers an invalid state handler
       *

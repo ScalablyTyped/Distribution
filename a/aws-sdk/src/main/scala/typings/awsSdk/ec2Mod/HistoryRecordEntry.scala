@@ -22,16 +22,34 @@ trait HistoryRecordEntry extends js.Object {
 
 object HistoryRecordEntry {
   @scala.inline
-  def apply(
-    EventInformation: EventInformation = null,
-    EventType: FleetEventType = null,
-    Timestamp: DateTime = null
-  ): HistoryRecordEntry = {
+  def apply(): HistoryRecordEntry = {
     val __obj = js.Dynamic.literal()
-    if (EventInformation != null) __obj.updateDynamic("EventInformation")(EventInformation.asInstanceOf[js.Any])
-    if (EventType != null) __obj.updateDynamic("EventType")(EventType.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryRecordEntry]
   }
+  @scala.inline
+  implicit class HistoryRecordEntryOps[Self <: HistoryRecordEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventInformation(value: EventInformation): Self = this.set("EventInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventInformation: Self = this.set("EventInformation", js.undefined)
+    @scala.inline
+    def setEventType(value: FleetEventType): Self = this.set("EventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("EventType", js.undefined)
+    @scala.inline
+    def setTimestamp(value: DateTime): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+  }
+  
 }
 

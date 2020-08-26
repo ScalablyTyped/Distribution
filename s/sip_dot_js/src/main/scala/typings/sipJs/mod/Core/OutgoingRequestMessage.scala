@@ -12,30 +12,65 @@ class OutgoingRequestMessage protected ()
   extends typings.sipJs.coreMod.OutgoingRequestMessage {
   def this(
     method: String,
-    ruri: typings.sipJs.uriMod.URI,
-    fromURI: typings.sipJs.uriMod.URI,
-    toURI: typings.sipJs.uriMod.URI
+    ruri: typings.sipJs.grammarMod.URI,
+    fromURI: typings.sipJs.grammarMod.URI,
+    toURI: typings.sipJs.grammarMod.URI
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.uriMod.URI,
-    fromURI: typings.sipJs.uriMod.URI,
-    toURI: typings.sipJs.uriMod.URI,
+    ruri: typings.sipJs.grammarMod.URI,
+    fromURI: typings.sipJs.grammarMod.URI,
+    toURI: typings.sipJs.grammarMod.URI,
     options: OutgoingRequestMessageOptions
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.uriMod.URI,
-    fromURI: typings.sipJs.uriMod.URI,
-    toURI: typings.sipJs.uriMod.URI,
+    ruri: typings.sipJs.grammarMod.URI,
+    fromURI: typings.sipJs.grammarMod.URI,
+    toURI: typings.sipJs.grammarMod.URI,
+    options: js.UndefOr[scala.Nothing],
+    extraHeaders: js.Array[String]
+  ) = this()
+  def this(
+    method: String,
+    ruri: typings.sipJs.grammarMod.URI,
+    fromURI: typings.sipJs.grammarMod.URI,
+    toURI: typings.sipJs.grammarMod.URI,
     options: OutgoingRequestMessageOptions,
     extraHeaders: js.Array[String]
   ) = this()
   def this(
     method: String,
-    ruri: typings.sipJs.uriMod.URI,
-    fromURI: typings.sipJs.uriMod.URI,
-    toURI: typings.sipJs.uriMod.URI,
+    ruri: typings.sipJs.grammarMod.URI,
+    fromURI: typings.sipJs.grammarMod.URI,
+    toURI: typings.sipJs.grammarMod.URI,
+    options: js.UndefOr[scala.Nothing],
+    extraHeaders: js.UndefOr[scala.Nothing],
+    body: Body
+  ) = this()
+  def this(
+    method: String,
+    ruri: typings.sipJs.grammarMod.URI,
+    fromURI: typings.sipJs.grammarMod.URI,
+    toURI: typings.sipJs.grammarMod.URI,
+    options: js.UndefOr[scala.Nothing],
+    extraHeaders: js.Array[String],
+    body: Body
+  ) = this()
+  def this(
+    method: String,
+    ruri: typings.sipJs.grammarMod.URI,
+    fromURI: typings.sipJs.grammarMod.URI,
+    toURI: typings.sipJs.grammarMod.URI,
+    options: OutgoingRequestMessageOptions,
+    extraHeaders: js.UndefOr[scala.Nothing],
+    body: Body
+  ) = this()
+  def this(
+    method: String,
+    ruri: typings.sipJs.grammarMod.URI,
+    fromURI: typings.sipJs.grammarMod.URI,
+    toURI: typings.sipJs.grammarMod.URI,
     options: OutgoingRequestMessageOptions,
     extraHeaders: js.Array[String],
     body: Body

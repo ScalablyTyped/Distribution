@@ -22,10 +22,30 @@ trait EnableLoggingMessage extends js.Object {
 
 object EnableLoggingMessage {
   @scala.inline
-  def apply(BucketName: String, ClusterIdentifier: String, S3KeyPrefix: String = null): EnableLoggingMessage = {
+  def apply(BucketName: String, ClusterIdentifier: String): EnableLoggingMessage = {
     val __obj = js.Dynamic.literal(BucketName = BucketName.asInstanceOf[js.Any], ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-    if (S3KeyPrefix != null) __obj.updateDynamic("S3KeyPrefix")(S3KeyPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableLoggingMessage]
   }
+  @scala.inline
+  implicit class EnableLoggingMessageOps[Self <: EnableLoggingMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: String): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3KeyPrefix(value: String): Self = this.set("S3KeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3KeyPrefix: Self = this.set("S3KeyPrefix", js.undefined)
+  }
+  
 }
 

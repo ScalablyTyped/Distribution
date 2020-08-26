@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Main", JSImport.Namespace)
+@JSImport("grommet/es6/components/Main", JSImport.Namespace)
 @js.native
 object mainMod extends js.Object {
   val Main: FC[BoxProps] = js.native

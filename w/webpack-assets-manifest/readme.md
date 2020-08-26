@@ -11,8 +11,8 @@ This Webpack plugin will generate a JSON file that matches the original filename
 | Full name          | webpack-assets-manifest |
 | Keywords           | webpack-assets-manifest, webpack-plugin, webpack, plugin, assets, manifest, json, subresource, integrity, sri |
 | # releases         | 7 |
-| # dependents       | 52 |
-| # downloads        | 13077051 |
+| # dependents       | 53 |
+| # downloads        | 13882358 |
 | # stars            | 4 |
 
 ## Links

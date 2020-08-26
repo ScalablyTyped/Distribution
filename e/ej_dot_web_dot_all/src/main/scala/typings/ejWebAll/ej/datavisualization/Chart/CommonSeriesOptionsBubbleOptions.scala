@@ -4,33 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommonSeriesOptionsBubbleOptions extends js.Object {
   /** Used for setting the maximum radius of the bubble
     * @Default {3}
     */
-  var maxRadius: js.UndefOr[Double] = js.undefined
+  var maxRadius: js.UndefOr[Double] = js.native
   /** Used for the setting the minimum radius of the bubble
     * @Default {1}
     */
-  var minRadius: js.UndefOr[Double] = js.undefined
+  var minRadius: js.UndefOr[Double] = js.native
   /** Used for the calculation of the bubble radius based on the mode selected
     * @Default {minMax}
     */
-  var radiusMode: js.UndefOr[RadiusMode | String] = js.undefined
+  var radiusMode: js.UndefOr[RadiusMode | String] = js.native
 }
 
 object CommonSeriesOptionsBubbleOptions {
   @scala.inline
-  def apply(
-    maxRadius: js.UndefOr[Double] = js.undefined,
-    minRadius: js.UndefOr[Double] = js.undefined,
-    radiusMode: RadiusMode | String = null
-  ): CommonSeriesOptionsBubbleOptions = {
+  def apply(): CommonSeriesOptionsBubbleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxRadius)) __obj.updateDynamic("maxRadius")(maxRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minRadius)) __obj.updateDynamic("minRadius")(minRadius.get.asInstanceOf[js.Any])
-    if (radiusMode != null) __obj.updateDynamic("radiusMode")(radiusMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonSeriesOptionsBubbleOptions]
   }
+  @scala.inline
+  implicit class CommonSeriesOptionsBubbleOptionsOps[Self <: CommonSeriesOptionsBubbleOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxRadius(value: Double): Self = this.set("maxRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRadius: Self = this.set("maxRadius", js.undefined)
+    @scala.inline
+    def setMinRadius(value: Double): Self = this.set("minRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinRadius: Self = this.set("minRadius", js.undefined)
+    @scala.inline
+    def setRadiusMode(value: RadiusMode | String): Self = this.set("radiusMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadiusMode: Self = this.set("radiusMode", js.undefined)
+  }
+  
 }
 

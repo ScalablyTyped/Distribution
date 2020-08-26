@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CameraOptions extends js.Object {
   /**
     * `null` allows camera access on the default button in iOS.
@@ -13,7 +14,7 @@ trait CameraOptions extends js.Object {
     *
     * @default `null`
     */
-  var button: js.UndefOr[HTMLElement] = js.undefined
+  var button: js.UndefOr[HTMLElement] = js.native
   /**
     * Enable or disable camera access on iOS (iPod, iPhone, and iPad) devices.
     *
@@ -22,16 +23,35 @@ trait CameraOptions extends js.Object {
     *
     * @default `false`
     */
-  var ios: js.UndefOr[Boolean] = js.undefined
+  var ios: js.UndefOr[Boolean] = js.native
 }
 
 object CameraOptions {
   @scala.inline
-  def apply(button: HTMLElement = null, ios: js.UndefOr[Boolean] = js.undefined): CameraOptions = {
+  def apply(): CameraOptions = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (!js.isUndefined(ios)) __obj.updateDynamic("ios")(ios.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraOptions]
   }
+  @scala.inline
+  implicit class CameraOptionsOps[Self <: CameraOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButton(value: HTMLElement): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setIos(value: Boolean): Self = this.set("ios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIos: Self = this.set("ios", js.undefined)
+  }
+  
 }
 

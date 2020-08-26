@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * The accessible view of a spreadsheet page preview
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleSpreadsheetPageView
   extends XAccessibleContext
      with XAccessibleComponent

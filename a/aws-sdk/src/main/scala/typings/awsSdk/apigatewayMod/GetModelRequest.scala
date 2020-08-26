@@ -22,10 +22,30 @@ trait GetModelRequest extends js.Object {
 
 object GetModelRequest {
   @scala.inline
-  def apply(modelName: String, restApiId: String, flatten: js.UndefOr[Boolean] = js.undefined): GetModelRequest = {
+  def apply(modelName: String, restApiId: String): GetModelRequest = {
     val __obj = js.Dynamic.literal(modelName = modelName.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetModelRequest]
   }
+  @scala.inline
+  implicit class GetModelRequestOps[Self <: GetModelRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFlatten(value: Boolean): Self = this.set("flatten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatten: Self = this.set("flatten", js.undefined)
+  }
+  
 }
 

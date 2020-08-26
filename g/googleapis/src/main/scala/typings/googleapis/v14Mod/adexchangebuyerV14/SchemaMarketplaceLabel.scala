@@ -26,18 +26,38 @@ trait SchemaMarketplaceLabel extends js.Object {
 
 object SchemaMarketplaceLabel {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    createTimeMs: String = null,
-    deprecatedMarketplaceDealParty: SchemaMarketplaceDealParty = null,
-    label: String = null
-  ): SchemaMarketplaceLabel = {
+  def apply(): SchemaMarketplaceLabel = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (createTimeMs != null) __obj.updateDynamic("createTimeMs")(createTimeMs.asInstanceOf[js.Any])
-    if (deprecatedMarketplaceDealParty != null) __obj.updateDynamic("deprecatedMarketplaceDealParty")(deprecatedMarketplaceDealParty.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMarketplaceLabel]
   }
+  @scala.inline
+  implicit class SchemaMarketplaceLabelOps[Self <: SchemaMarketplaceLabel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setCreateTimeMs(value: String): Self = this.set("createTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTimeMs: Self = this.set("createTimeMs", js.undefined)
+    @scala.inline
+    def setDeprecatedMarketplaceDealParty(value: SchemaMarketplaceDealParty): Self = this.set("deprecatedMarketplaceDealParty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecatedMarketplaceDealParty: Self = this.set("deprecatedMarketplaceDealParty", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+  }
+  
 }
 

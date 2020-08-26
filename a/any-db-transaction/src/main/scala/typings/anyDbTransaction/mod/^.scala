@@ -20,7 +20,31 @@ object ^ extends js.Object {
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
   ): Transaction = js.native
   def apply(q: Queryable, callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]): Transaction = js.native
+  def apply(
+    q: Queryable,
+    options: js.UndefOr[scala.Nothing],
+    beginStatement: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+  ): Transaction = js.native
+  def apply(q: Queryable, options: js.UndefOr[scala.Nothing], beginStatement: String): Transaction = js.native
+  def apply(
+    q: Queryable,
+    options: js.UndefOr[scala.Nothing],
+    beginStatement: String,
+    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+  ): Transaction = js.native
+  def apply(
+    q: Queryable,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+  ): Transaction = js.native
   def apply(q: Queryable, options: TransactionOptions): Transaction = js.native
+  def apply(
+    q: Queryable,
+    options: TransactionOptions,
+    beginStatement: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+  ): Transaction = js.native
   def apply(q: Queryable, options: TransactionOptions, beginStatement: String): Transaction = js.native
   def apply(
     q: Queryable,

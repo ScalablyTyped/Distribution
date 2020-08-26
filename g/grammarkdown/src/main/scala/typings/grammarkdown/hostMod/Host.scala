@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation._
 class Host () extends HostBase {
   def this(hasReadFileReadFileSyncWriteFileWriteFileSyncBaseOptions: HostOptions) = this()
   var getSourceFilePossiblyAsync: js.Any = js.native
-  var readFileCallback: js.UndefOr[js.Any] = js.native
+  var readFileCallback: js.Any = js.native
   var readFilePossiblyAsync: js.Any = js.native
-  var readFileSyncCallback: js.UndefOr[js.Any] = js.native
-  var writeFileCallback: js.UndefOr[js.Any] = js.native
+  var readFileSyncCallback: js.Any = js.native
+  var writeFileCallback: js.Any = js.native
   var writeFilePossiblyAsync: js.Any = js.native
-  var writeFileSyncCallback: js.UndefOr[js.Any] = js.native
+  var writeFileSyncCallback: js.Any = js.native
   def getSourceFile(file: String): js.Promise[js.UndefOr[SourceFile]] = js.native
   def getSourceFile(file: String, cancelable: Cancelable): js.Promise[js.UndefOr[SourceFile]] = js.native
   def getSourceFile(file: String, cancelable: CancellationToken): js.Promise[js.UndefOr[SourceFile]] = js.native

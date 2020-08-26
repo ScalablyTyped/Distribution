@@ -12,7 +12,7 @@ Call a Node-style callback with the resolution value or rejection cause of a Pro
 | Keywords           | callback, nodeify, promise |
 | # releases         | 4 |
 | # dependents       | 8 |
-| # downloads        | 271199 |
+| # downloads        | 383649 |
 | # stars            | 0 |
 
 ## Links

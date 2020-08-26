@@ -54,7 +54,7 @@ object healthcareMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Healthcare
               ]
             ]
@@ -62,7 +62,7 @@ object healthcareMod extends js.Object {
     @js.native
     object v1alpha2
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Healthcare]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Healthcare]
             ]
     
     @js.native
@@ -70,7 +70,7 @@ object healthcareMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare
               ]
             ]

@@ -34,22 +34,48 @@ trait DeviceInstance extends js.Object {
 
 object DeviceInstance {
   @scala.inline
-  def apply(
-    arn: AmazonResourceName = null,
-    deviceArn: AmazonResourceName = null,
-    instanceProfile: InstanceProfile = null,
-    labels: InstanceLabels = null,
-    status: InstanceStatus = null,
-    udid: String = null
-  ): DeviceInstance = {
+  def apply(): DeviceInstance = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (deviceArn != null) __obj.updateDynamic("deviceArn")(deviceArn.asInstanceOf[js.Any])
-    if (instanceProfile != null) __obj.updateDynamic("instanceProfile")(instanceProfile.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (udid != null) __obj.updateDynamic("udid")(udid.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceInstance]
   }
+  @scala.inline
+  implicit class DeviceInstanceOps[Self <: DeviceInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDeviceArn(value: AmazonResourceName): Self = this.set("deviceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceArn: Self = this.set("deviceArn", js.undefined)
+    @scala.inline
+    def setInstanceProfile(value: InstanceProfile): Self = this.set("instanceProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceProfile: Self = this.set("instanceProfile", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: String*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: InstanceLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setStatus(value: InstanceStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUdid(value: String): Self = this.set("udid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUdid: Self = this.set("udid", js.undefined)
+  }
+  
 }
 

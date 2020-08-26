@@ -4,42 +4,75 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListOptions extends js.Object {
-  var i: js.UndefOr[Double] = js.undefined
-  var indexAsync: js.UndefOr[Boolean] = js.undefined
-  var item: js.UndefOr[String] = js.undefined
-  var listClass: js.UndefOr[String] = js.undefined
-  var page: js.UndefOr[Double] = js.undefined
-  var pagination: js.UndefOr[Boolean] = js.undefined
-  var searchClass: js.UndefOr[String] = js.undefined
-  var sortClass: js.UndefOr[String] = js.undefined
-  var valueNames: js.UndefOr[js.Array[String]] = js.undefined
+  var i: js.UndefOr[Double] = js.native
+  var indexAsync: js.UndefOr[Boolean] = js.native
+  var item: js.UndefOr[String] = js.native
+  var listClass: js.UndefOr[String] = js.native
+  var page: js.UndefOr[Double] = js.native
+  var pagination: js.UndefOr[Boolean] = js.native
+  var searchClass: js.UndefOr[String] = js.native
+  var sortClass: js.UndefOr[String] = js.native
+  var valueNames: js.UndefOr[js.Array[String]] = js.native
 }
 
 object ListOptions {
   @scala.inline
-  def apply(
-    i: js.UndefOr[Double] = js.undefined,
-    indexAsync: js.UndefOr[Boolean] = js.undefined,
-    item: String = null,
-    listClass: String = null,
-    page: js.UndefOr[Double] = js.undefined,
-    pagination: js.UndefOr[Boolean] = js.undefined,
-    searchClass: String = null,
-    sortClass: String = null,
-    valueNames: js.Array[String] = null
-  ): ListOptions = {
+  def apply(): ListOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(i)) __obj.updateDynamic("i")(i.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indexAsync)) __obj.updateDynamic("indexAsync")(indexAsync.get.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (listClass != null) __obj.updateDynamic("listClass")(listClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
-    if (searchClass != null) __obj.updateDynamic("searchClass")(searchClass.asInstanceOf[js.Any])
-    if (sortClass != null) __obj.updateDynamic("sortClass")(sortClass.asInstanceOf[js.Any])
-    if (valueNames != null) __obj.updateDynamic("valueNames")(valueNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOptions]
   }
+  @scala.inline
+  implicit class ListOptionsOps[Self <: ListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setI(value: Double): Self = this.set("i", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI: Self = this.set("i", js.undefined)
+    @scala.inline
+    def setIndexAsync(value: Boolean): Self = this.set("indexAsync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexAsync: Self = this.set("indexAsync", js.undefined)
+    @scala.inline
+    def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setListClass(value: String): Self = this.set("listClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListClass: Self = this.set("listClass", js.undefined)
+    @scala.inline
+    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setPagination(value: Boolean): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagination: Self = this.set("pagination", js.undefined)
+    @scala.inline
+    def setSearchClass(value: String): Self = this.set("searchClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchClass: Self = this.set("searchClass", js.undefined)
+    @scala.inline
+    def setSortClass(value: String): Self = this.set("sortClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortClass: Self = this.set("sortClass", js.undefined)
+    @scala.inline
+    def setValueNamesVarargs(value: String*): Self = this.set("valueNames", js.Array(value :_*))
+    @scala.inline
+    def setValueNames(value: js.Array[String]): Self = this.set("valueNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueNames: Self = this.set("valueNames", js.undefined)
+  }
+  
 }
 

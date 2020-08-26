@@ -52,6 +52,8 @@ trait Array[T] extends js.Object {
     * @param filter If set the function computes the average of elements that match the filter
     */
   def Average(): Double = js.native
+  def Average(selector: js.UndefOr[scala.Nothing], filter: String): Double = js.native
+  def Average(selector: js.UndefOr[scala.Nothing], filter: js.Function1[/* item */ T, Boolean]): Double = js.native
   def Average(selector: String): Double = js.native
   def Average(selector: String, filter: String): Double = js.native
   def Average(selector: String, filter: js.Function1[/* item */ T, Boolean]): Double = js.native
@@ -273,6 +275,8 @@ trait Array[T] extends js.Object {
     * @param filter If set the function computes the sum of elements that match the filter
     */
   def Sum(): Double = js.native
+  def Sum(selector: js.UndefOr[scala.Nothing], filter: String): Double = js.native
+  def Sum(selector: js.UndefOr[scala.Nothing], filter: js.Function1[/* item */ T, Boolean]): Double = js.native
   def Sum(selector: String): Double = js.native
   def Sum(selector: String, filter: String): Double = js.native
   def Sum(selector: String, filter: js.Function1[/* item */ T, Boolean]): Double = js.native
@@ -285,6 +289,12 @@ trait Array[T] extends js.Object {
     */
   def Take(count: Double): Array[T] = js.native
   def TakeWhile(condition: String): Array[T] = js.native
+  def TakeWhile(condition: String, initial: js.UndefOr[scala.Nothing], after: String): Array[T] = js.native
+  def TakeWhile(
+    condition: String,
+    initial: js.UndefOr[scala.Nothing],
+    after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]
+  ): Array[T] = js.native
   def TakeWhile(condition: String, initial: String): Array[T] = js.native
   def TakeWhile(condition: String, initial: String, after: String): Array[T] = js.native
   def TakeWhile(condition: String, initial: String, after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]): Array[T] = js.native
@@ -302,6 +312,16 @@ trait Array[T] extends js.Object {
     * @param after A function that gets executed after every element-iteration after the condition-function was evaluated
     */
   def TakeWhile(condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean]): Array[T] = js.native
+  def TakeWhile(
+    condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean],
+    initial: js.UndefOr[scala.Nothing],
+    after: String
+  ): Array[T] = js.native
+  def TakeWhile(
+    condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean],
+    initial: js.UndefOr[scala.Nothing],
+    after: js.Function2[/* item */ T, /* storage */ js.Any, Unit]
+  ): Array[T] = js.native
   def TakeWhile(condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean], initial: String): Array[T] = js.native
   def TakeWhile(
     condition: js.Function2[/* item */ T, /* storage */ js.UndefOr[js.Any], Boolean],

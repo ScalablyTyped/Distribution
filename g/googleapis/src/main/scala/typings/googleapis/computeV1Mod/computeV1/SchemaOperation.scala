@@ -1,7 +1,7 @@
 package typings.googleapis.computeV1Mod.computeV1
 
 import typings.googleapis.anon.Code
-import typings.googleapis.anon.ErrorsArray
+import typings.googleapis.anon.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +38,7 @@ trait SchemaOperation extends js.Object {
     * [Output Only] If errors are generated during processing of the operation,
     * this field will be populated.
     */
-  var error: js.UndefOr[ErrorsArray] = js.native
+  var error: js.UndefOr[`3`] = js.native
   /**
     * [Output Only] If the operation fails, this field contains the HTTP error
     * message that was returned, such as NOT FOUND.
@@ -140,56 +140,116 @@ trait SchemaOperation extends js.Object {
 
 object SchemaOperation {
   @scala.inline
-  def apply(
-    clientOperationId: String = null,
-    creationTimestamp: String = null,
-    description: String = null,
-    endTime: String = null,
-    error: ErrorsArray = null,
-    httpErrorMessage: String = null,
-    httpErrorStatusCode: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    insertTime: String = null,
-    kind: String = null,
-    name: String = null,
-    operationType: String = null,
-    progress: js.UndefOr[Double] = js.undefined,
-    region: String = null,
-    selfLink: String = null,
-    startTime: String = null,
-    status: String = null,
-    statusMessage: String = null,
-    targetId: String = null,
-    targetLink: String = null,
-    user: String = null,
-    warnings: js.Array[Code] = null,
-    zone: String = null
-  ): SchemaOperation = {
+  def apply(): SchemaOperation = {
     val __obj = js.Dynamic.literal()
-    if (clientOperationId != null) __obj.updateDynamic("clientOperationId")(clientOperationId.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (httpErrorMessage != null) __obj.updateDynamic("httpErrorMessage")(httpErrorMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpErrorStatusCode)) __obj.updateDynamic("httpErrorStatusCode")(httpErrorStatusCode.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
-    if (targetLink != null) __obj.updateDynamic("targetLink")(targetLink.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOperation]
   }
+  @scala.inline
+  implicit class SchemaOperationOps[Self <: SchemaOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientOperationId(value: String): Self = this.set("clientOperationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientOperationId: Self = this.set("clientOperationId", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setError(value: `3`): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setHttpErrorMessage(value: String): Self = this.set("httpErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpErrorMessage: Self = this.set("httpErrorMessage", js.undefined)
+    @scala.inline
+    def setHttpErrorStatusCode(value: Double): Self = this.set("httpErrorStatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpErrorStatusCode: Self = this.set("httpErrorStatusCode", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInsertTime(value: String): Self = this.set("insertTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertTime: Self = this.set("insertTime", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOperationType(value: String): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    @scala.inline
+    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("progress", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setTargetId(value: String): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetId: Self = this.set("targetId", js.undefined)
+    @scala.inline
+    def setTargetLink(value: String): Self = this.set("targetLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetLink: Self = this.set("targetLink", js.undefined)
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+    @scala.inline
+    def setWarningsVarargs(value: Code*): Self = this.set("warnings", js.Array(value :_*))
+    @scala.inline
+    def setWarnings(value: js.Array[Code]): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

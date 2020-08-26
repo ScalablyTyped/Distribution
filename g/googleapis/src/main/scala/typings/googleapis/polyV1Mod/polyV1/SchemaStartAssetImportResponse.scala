@@ -33,18 +33,40 @@ trait SchemaStartAssetImportResponse extends js.Object {
 
 object SchemaStartAssetImportResponse {
   @scala.inline
-  def apply(
-    assetId: String = null,
-    assetImportId: String = null,
-    assetImportMessages: js.Array[SchemaAssetImportMessage] = null,
-    publishUrl: String = null
-  ): SchemaStartAssetImportResponse = {
+  def apply(): SchemaStartAssetImportResponse = {
     val __obj = js.Dynamic.literal()
-    if (assetId != null) __obj.updateDynamic("assetId")(assetId.asInstanceOf[js.Any])
-    if (assetImportId != null) __obj.updateDynamic("assetImportId")(assetImportId.asInstanceOf[js.Any])
-    if (assetImportMessages != null) __obj.updateDynamic("assetImportMessages")(assetImportMessages.asInstanceOf[js.Any])
-    if (publishUrl != null) __obj.updateDynamic("publishUrl")(publishUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStartAssetImportResponse]
   }
+  @scala.inline
+  implicit class SchemaStartAssetImportResponseOps[Self <: SchemaStartAssetImportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetId(value: String): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetId: Self = this.set("assetId", js.undefined)
+    @scala.inline
+    def setAssetImportId(value: String): Self = this.set("assetImportId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetImportId: Self = this.set("assetImportId", js.undefined)
+    @scala.inline
+    def setAssetImportMessagesVarargs(value: SchemaAssetImportMessage*): Self = this.set("assetImportMessages", js.Array(value :_*))
+    @scala.inline
+    def setAssetImportMessages(value: js.Array[SchemaAssetImportMessage]): Self = this.set("assetImportMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetImportMessages: Self = this.set("assetImportMessages", js.undefined)
+    @scala.inline
+    def setPublishUrl(value: String): Self = this.set("publishUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishUrl: Self = this.set("publishUrl", js.undefined)
+  }
+  
 }
 

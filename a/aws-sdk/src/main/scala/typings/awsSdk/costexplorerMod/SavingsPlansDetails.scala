@@ -22,16 +22,34 @@ trait SavingsPlansDetails extends js.Object {
 
 object SavingsPlansDetails {
   @scala.inline
-  def apply(
-    InstanceFamily: GenericString = null,
-    OfferingId: GenericString = null,
-    Region: GenericString = null
-  ): SavingsPlansDetails = {
+  def apply(): SavingsPlansDetails = {
     val __obj = js.Dynamic.literal()
-    if (InstanceFamily != null) __obj.updateDynamic("InstanceFamily")(InstanceFamily.asInstanceOf[js.Any])
-    if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlansDetails]
   }
+  @scala.inline
+  implicit class SavingsPlansDetailsOps[Self <: SavingsPlansDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceFamily(value: GenericString): Self = this.set("InstanceFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceFamily: Self = this.set("InstanceFamily", js.undefined)
+    @scala.inline
+    def setOfferingId(value: GenericString): Self = this.set("OfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingId: Self = this.set("OfferingId", js.undefined)
+    @scala.inline
+    def setRegion(value: GenericString): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait BatchDetectSentimentItemResult extends js.Object {
 
 object BatchDetectSentimentItemResult {
   @scala.inline
-  def apply(
-    Index: js.UndefOr[Integer] = js.undefined,
-    Sentiment: SentimentType = null,
-    SentimentScore: SentimentScore = null
-  ): BatchDetectSentimentItemResult = {
+  def apply(): BatchDetectSentimentItemResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index.get.asInstanceOf[js.Any])
-    if (Sentiment != null) __obj.updateDynamic("Sentiment")(Sentiment.asInstanceOf[js.Any])
-    if (SentimentScore != null) __obj.updateDynamic("SentimentScore")(SentimentScore.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectSentimentItemResult]
   }
+  @scala.inline
+  implicit class BatchDetectSentimentItemResultOps[Self <: BatchDetectSentimentItemResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndex(value: Integer): Self = this.set("Index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("Index", js.undefined)
+    @scala.inline
+    def setSentiment(value: SentimentType): Self = this.set("Sentiment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentiment: Self = this.set("Sentiment", js.undefined)
+    @scala.inline
+    def setSentimentScore(value: SentimentScore): Self = this.set("SentimentScore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentimentScore: Self = this.set("SentimentScore", js.undefined)
+  }
+  
 }
 

@@ -28,5 +28,6 @@ trait Store[T, TO]
   def apply(name: String): T = js.native
   def apply(name: String, item: TO): T = js.native
   def apply(name: String, item: TO, parentTmpl: Template): T = js.native
+  def apply(name: String, item: js.UndefOr[scala.Nothing], parentTmpl: Template): T = js.native
 }
 

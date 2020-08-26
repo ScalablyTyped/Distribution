@@ -85,6 +85,7 @@ object TYPES extends js.Object {
   def DateTimeOffset(): ISqlTypeWithScale = js.native
   def DateTimeOffset(scale: Double): ISqlTypeWithScale = js.native
   def Decimal(): ISqlTypeWithPrecisionScale = js.native
+  def Decimal(precision: js.UndefOr[scala.Nothing], scale: Double): ISqlTypeWithPrecisionScale = js.native
   def Decimal(precision: Double): ISqlTypeWithPrecisionScale = js.native
   def Decimal(precision: Double, scale: Double): ISqlTypeWithPrecisionScale = js.native
   def Float(): ISqlTypeWithNoParams = js.native
@@ -99,12 +100,14 @@ object TYPES extends js.Object {
   def NVarChar(): ISqlTypeWithLength = js.native
   def NVarChar(length: Double): ISqlTypeWithLength = js.native
   def Numeric(): ISqlTypeWithPrecisionScale = js.native
+  def Numeric(precision: js.UndefOr[scala.Nothing], scale: Double): ISqlTypeWithPrecisionScale = js.native
   def Numeric(precision: Double): ISqlTypeWithPrecisionScale = js.native
   def Numeric(precision: Double, scale: Double): ISqlTypeWithPrecisionScale = js.native
   def Real(): ISqlTypeWithNoParams = js.native
   def SmallDateTime(): ISqlTypeWithNoParams = js.native
   def SmallInt(): ISqlTypeWithNoParams = js.native
   def SmallMoney(): ISqlTypeWithNoParams = js.native
+  def TVP(): ISqlTypeWithTvpType = js.native
   def TVP(tvpType: js.Any): ISqlTypeWithTvpType = js.native
   def Text(): ISqlTypeWithNoParams = js.native
   def Time(): ISqlTypeWithScale = js.native

@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CoverageOptions extends js.Object {
-  var branches: js.UndefOr[Double] = js.undefined
-  var functions: js.UndefOr[Double] = js.undefined
-  var lines: js.UndefOr[Double] = js.undefined
-  var statements: js.UndefOr[Double] = js.undefined
+  var branches: js.UndefOr[Double] = js.native
+  var functions: js.UndefOr[Double] = js.native
+  var lines: js.UndefOr[Double] = js.native
+  var statements: js.UndefOr[Double] = js.native
 }
 
 object CoverageOptions {
   @scala.inline
-  def apply(
-    branches: js.UndefOr[Double] = js.undefined,
-    functions: js.UndefOr[Double] = js.undefined,
-    lines: js.UndefOr[Double] = js.undefined,
-    statements: js.UndefOr[Double] = js.undefined
-  ): CoverageOptions = {
+  def apply(): CoverageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(branches)) __obj.updateDynamic("branches")(branches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(functions)) __obj.updateDynamic("functions")(functions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lines)) __obj.updateDynamic("lines")(lines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(statements)) __obj.updateDynamic("statements")(statements.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverageOptions]
   }
+  @scala.inline
+  implicit class CoverageOptionsOps[Self <: CoverageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBranches(value: Double): Self = this.set("branches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranches: Self = this.set("branches", js.undefined)
+    @scala.inline
+    def setFunctions(value: Double): Self = this.set("functions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctions: Self = this.set("functions", js.undefined)
+    @scala.inline
+    def setLines(value: Double): Self = this.set("lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLines: Self = this.set("lines", js.undefined)
+    @scala.inline
+    def setStatements(value: Double): Self = this.set("statements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatements: Self = this.set("statements", js.undefined)
+  }
+  
 }
 

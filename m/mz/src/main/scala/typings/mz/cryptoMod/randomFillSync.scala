@@ -18,33 +18,43 @@ import scala.scalajs.js.annotation._
 @js.native
 object randomFillSync extends js.Object {
   def apply(buffer: DataView): DataView = js.native
+  def apply(buffer: DataView, offset: js.UndefOr[scala.Nothing], size: Double): DataView = js.native
   def apply(buffer: DataView, offset: Double): DataView = js.native
   def apply(buffer: DataView, offset: Double, size: Double): DataView = js.native
   def apply(buffer: Float32Array): Float32Array = js.native
+  def apply(buffer: Float32Array, offset: js.UndefOr[scala.Nothing], size: Double): Float32Array = js.native
   def apply(buffer: Float32Array, offset: Double): Float32Array = js.native
   def apply(buffer: Float32Array, offset: Double, size: Double): Float32Array = js.native
   def apply(buffer: Float64Array): Float64Array = js.native
+  def apply(buffer: Float64Array, offset: js.UndefOr[scala.Nothing], size: Double): Float64Array = js.native
   def apply(buffer: Float64Array, offset: Double): Float64Array = js.native
   def apply(buffer: Float64Array, offset: Double, size: Double): Float64Array = js.native
   def apply(buffer: Int16Array): Int16Array = js.native
+  def apply(buffer: Int16Array, offset: js.UndefOr[scala.Nothing], size: Double): Int16Array = js.native
   def apply(buffer: Int16Array, offset: Double): Int16Array = js.native
   def apply(buffer: Int16Array, offset: Double, size: Double): Int16Array = js.native
   def apply(buffer: Int32Array): Int32Array = js.native
+  def apply(buffer: Int32Array, offset: js.UndefOr[scala.Nothing], size: Double): Int32Array = js.native
   def apply(buffer: Int32Array, offset: Double): Int32Array = js.native
   def apply(buffer: Int32Array, offset: Double, size: Double): Int32Array = js.native
   def apply(buffer: Int8Array): Int8Array = js.native
+  def apply(buffer: Int8Array, offset: js.UndefOr[scala.Nothing], size: Double): Int8Array = js.native
   def apply(buffer: Int8Array, offset: Double): Int8Array = js.native
   def apply(buffer: Int8Array, offset: Double, size: Double): Int8Array = js.native
   def apply(buffer: Uint16Array): Uint16Array = js.native
+  def apply(buffer: Uint16Array, offset: js.UndefOr[scala.Nothing], size: Double): Uint16Array = js.native
   def apply(buffer: Uint16Array, offset: Double): Uint16Array = js.native
   def apply(buffer: Uint16Array, offset: Double, size: Double): Uint16Array = js.native
   def apply(buffer: Uint32Array): Uint32Array = js.native
+  def apply(buffer: Uint32Array, offset: js.UndefOr[scala.Nothing], size: Double): Uint32Array = js.native
   def apply(buffer: Uint32Array, offset: Double): Uint32Array = js.native
   def apply(buffer: Uint32Array, offset: Double, size: Double): Uint32Array = js.native
   def apply(buffer: Uint8Array): Uint8Array = js.native
+  def apply(buffer: Uint8Array, offset: js.UndefOr[scala.Nothing], size: Double): Uint8Array = js.native
   def apply(buffer: Uint8Array, offset: Double): Uint8Array = js.native
   def apply(buffer: Uint8Array, offset: Double, size: Double): Uint8Array = js.native
   def apply(buffer: Uint8ClampedArray): Uint8ClampedArray = js.native
+  def apply(buffer: Uint8ClampedArray, offset: js.UndefOr[scala.Nothing], size: Double): Uint8ClampedArray = js.native
   def apply(buffer: Uint8ClampedArray, offset: Double): Uint8ClampedArray = js.native
   def apply(buffer: Uint8ClampedArray, offset: Double, size: Double): Uint8ClampedArray = js.native
 }

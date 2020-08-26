@@ -18,10 +18,26 @@ trait SchemaDeleteDeveloperMetadataRequest extends js.Object {
 
 object SchemaDeleteDeveloperMetadataRequest {
   @scala.inline
-  def apply(dataFilter: SchemaDataFilter = null): SchemaDeleteDeveloperMetadataRequest = {
+  def apply(): SchemaDeleteDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
-    if (dataFilter != null) __obj.updateDynamic("dataFilter")(dataFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteDeveloperMetadataRequest]
   }
+  @scala.inline
+  implicit class SchemaDeleteDeveloperMetadataRequestOps[Self <: SchemaDeleteDeveloperMetadataRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataFilter(value: SchemaDataFilter): Self = this.set("dataFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataFilter: Self = this.set("dataFilter", js.undefined)
+  }
+  
 }
 

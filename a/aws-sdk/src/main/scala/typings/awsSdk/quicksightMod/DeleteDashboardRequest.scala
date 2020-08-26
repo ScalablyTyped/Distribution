@@ -22,14 +22,30 @@ trait DeleteDashboardRequest extends js.Object {
 
 object DeleteDashboardRequest {
   @scala.inline
-  def apply(
-    AwsAccountId: AwsAccountId,
-    DashboardId: RestrictiveResourceId,
-    VersionNumber: js.UndefOr[VersionNumber] = js.undefined
-  ): DeleteDashboardRequest = {
+  def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId): DeleteDashboardRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any])
-    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDashboardRequest]
   }
+  @scala.inline
+  implicit class DeleteDashboardRequestOps[Self <: DeleteDashboardRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDashboardId(value: RestrictiveResourceId): Self = this.set("DashboardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersionNumber(value: VersionNumber): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionNumber: Self = this.set("VersionNumber", js.undefined)
+  }
+  
 }
 

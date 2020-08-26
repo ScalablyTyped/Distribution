@@ -32,6 +32,7 @@ object webcamIteratorMod extends js.Object {
   @js.native
   object WebcamIterator extends js.Object {
     def create(): js.Promise[WebcamIterator] = js.native
+    def create(webcamVideoElement: js.UndefOr[scala.Nothing], webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
     def create(webcamVideoElement: HTMLVideoElement): js.Promise[WebcamIterator] = js.native
     def create(webcamVideoElement: HTMLVideoElement, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
   }

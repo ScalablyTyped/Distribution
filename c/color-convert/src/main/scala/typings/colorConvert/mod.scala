@@ -240,22 +240,22 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   object ansi16 extends js.Object {
-    var ansi256: `142` = js.native
-    var apple: `150` = js.native
+    var ansi256: `143` = js.native
+    var apple: `140` = js.native
     val channels: `1` = js.native
     var cmyk: `145` = js.native
-    var gray: `148` = js.native
-    var hcg: `141` = js.native
-    var hex: `143` = js.native
-    var hsl: `146` = js.native
-    var hsv: `149` = js.native
-    var hwb: `151` = js.native
-    var keyword: `147` = js.native
+    var gray: `142` = js.native
+    var hcg: `146` = js.native
+    var hex: `150` = js.native
+    var hsl: `151` = js.native
+    var hsv: `148` = js.native
+    var hwb: `144` = js.native
+    var keyword: `141` = js.native
     var lab: `152` = js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.ansi16] = js.native
-    var lch: `144` = js.native
+    var lch: `149` = js.native
     var rgb: `139` = js.native
-    var xyz: `140` = js.native
+    var xyz: `147` = js.native
     def ansi256(from: ANSI16_): ANSI256_ = js.native
     def apple(from: ANSI16_): APPLE_ = js.native
     def cmyk(from: ANSI16_): CMYK_ = js.native
@@ -274,22 +274,22 @@ object mod extends js.Object {
   
   @js.native
   object ansi256 extends js.Object {
-    var ansi16: `156` = js.native
-    var apple: `164` = js.native
+    var ansi16: `165` = js.native
+    var apple: `154` = js.native
     val channels: `1` = js.native
-    var cmyk: `159` = js.native
-    var gray: `162` = js.native
-    var hcg: `155` = js.native
-    var hex: `157` = js.native
-    var hsl: `160` = js.native
-    var hsv: `163` = js.native
-    var hwb: `165` = js.native
-    var keyword: `161` = js.native
+    var cmyk: `158` = js.native
+    var gray: `156` = js.native
+    var hcg: `159` = js.native
+    var hex: `163` = js.native
+    var hsl: `164` = js.native
+    var hsv: `161` = js.native
+    var hwb: `157` = js.native
+    var keyword: `155` = js.native
     var lab: `166` = js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.ansi256] = js.native
-    var lch: `158` = js.native
+    var lch: `162` = js.native
     var rgb: `153` = js.native
-    var xyz: `154` = js.native
+    var xyz: `160` = js.native
     def ansi16(from: ANSI256_): ANSI16_ = js.native
     def apple(from: ANSI256_): APPLE_ = js.native
     def cmyk(from: ANSI256_): CMYK_ = js.native
@@ -308,22 +308,22 @@ object mod extends js.Object {
   
   @js.native
   object apple extends js.Object {
-    var ansi16: `185` = js.native
+    var ansi16: `193` = js.native
     var ansi256: `184` = js.native
     val channels: `3` = js.native
-    var cmyk: `188` = js.native
-    var gray: `191` = js.native
-    var hcg: `183` = js.native
-    var hex: `186` = js.native
-    var hsl: `189` = js.native
-    var hsv: `192` = js.native
-    var hwb: `193` = js.native
-    var keyword: `190` = js.native
+    var cmyk: `186` = js.native
+    var gray: `183` = js.native
+    var hcg: `187` = js.native
+    var hex: `191` = js.native
+    var hsl: `192` = js.native
+    var hsv: `189` = js.native
+    var hwb: `185` = js.native
+    var keyword: `182` = js.native
     var lab: `194` = js.native
     val labels: js.Tuple3[r16, g16, b16] = js.native
-    var lch: `187` = js.native
+    var lch: `190` = js.native
     var rgb: `181` = js.native
-    var xyz: `182` = js.native
+    var xyz: `188` = js.native
     def ansi16(from: APPLE_): ANSI16_ = js.native
     def ansi256(from: APPLE_): ANSI256_ = js.native
     def cmyk(from: APPLE_): CMYK_ = js.native
@@ -342,22 +342,22 @@ object mod extends js.Object {
   
   @js.native
   object cmyk extends js.Object {
-    var ansi16: `59` = js.native
-    var ansi256: `58` = js.native
-    var apple: `66` = js.native
+    var ansi16: `67` = js.native
+    var ansi256: `59` = js.native
+    var apple: `56` = js.native
     val channels: `4` = js.native
-    var gray: `64` = js.native
-    var hcg: `57` = js.native
-    var hex: `60` = js.native
-    var hsl: `62` = js.native
-    var hsv: `65` = js.native
-    var hwb: `67` = js.native
-    var keyword: `63` = js.native
+    var gray: `58` = js.native
+    var hcg: `61` = js.native
+    var hex: `65` = js.native
+    var hsl: `66` = js.native
+    var hsv: `63` = js.native
+    var hwb: `60` = js.native
+    var keyword: `57` = js.native
     var lab: `68` = js.native
     val labels: typings.colorConvert.colorConvertStrings.cmyk = js.native
-    var lch: `61` = js.native
+    var lch: `64` = js.native
     var rgb: `55` = js.native
-    var xyz: `56` = js.native
+    var xyz: `62` = js.native
     def ansi16(from: CMYK_): ANSI16_ = js.native
     def ansi256(from: CMYK_): ANSI256_ = js.native
     def apple(from: CMYK_): APPLE_ = js.native
@@ -376,22 +376,22 @@ object mod extends js.Object {
   
   @js.native
   object gray extends js.Object {
-    var ansi16: `199` = js.native
+    var ansi16: `207` = js.native
     var ansi256: `198` = js.native
-    var apple: `206` = js.native
+    var apple: `196` = js.native
     val channels: `1` = js.native
-    var cmyk: `202` = js.native
-    var hcg: `197` = js.native
-    var hex: `200` = js.native
-    var hsl: `203` = js.native
-    var hsv: `205` = js.native
-    var hwb: `207` = js.native
-    var keyword: `204` = js.native
+    var cmyk: `200` = js.native
+    var hcg: `201` = js.native
+    var hex: `205` = js.native
+    var hsl: `206` = js.native
+    var hsv: `203` = js.native
+    var hwb: `199` = js.native
+    var keyword: `197` = js.native
     var lab: `208` = js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.gray] = js.native
-    var lch: `201` = js.native
+    var lch: `204` = js.native
     var rgb: `195` = js.native
-    var xyz: `196` = js.native
+    var xyz: `202` = js.native
     def ansi16(from: GRAY_): ANSI16_ = js.native
     def ansi256(from: GRAY_): ANSI256_ = js.native
     def apple(from: GRAY_): APPLE_ = js.native
@@ -410,22 +410,22 @@ object mod extends js.Object {
   
   @js.native
   object hcg extends js.Object {
-    var ansi16: `170` = js.native
-    var ansi256: `169` = js.native
-    var apple: `178` = js.native
+    var ansi16: `179` = js.native
+    var ansi256: `171` = js.native
+    var apple: `168` = js.native
     val channels: `3` = js.native
     var cmyk: `173` = js.native
-    var gray: `176` = js.native
-    var hex: `171` = js.native
-    var hsl: `174` = js.native
-    var hsv: `177` = js.native
-    var hwb: `179` = js.native
-    var keyword: `175` = js.native
+    var gray: `170` = js.native
+    var hex: `177` = js.native
+    var hsl: `178` = js.native
+    var hsv: `175` = js.native
+    var hwb: `172` = js.native
+    var keyword: `169` = js.native
     var lab: `180` = js.native
     val labels: js.Tuple3[h, c, g] = js.native
-    var lch: `172` = js.native
+    var lch: `176` = js.native
     var rgb: `167` = js.native
-    var xyz: `168` = js.native
+    var xyz: `174` = js.native
     def ansi16(from: HCG_): ANSI16_ = js.native
     def ansi256(from: HCG_): ANSI256_ = js.native
     def apple(from: HCG_): APPLE_ = js.native
@@ -444,22 +444,22 @@ object mod extends js.Object {
   
   @js.native
   object hex extends js.Object {
-    var ansi16: `115` = js.native
-    var ansi256: `114` = js.native
-    var apple: `122` = js.native
+    var ansi16: `123` = js.native
+    var ansi256: `115` = js.native
+    var apple: `112` = js.native
     val channels: `1` = js.native
     var cmyk: `117` = js.native
-    var gray: `120` = js.native
-    var hcg: `113` = js.native
-    var hsl: `118` = js.native
-    var hsv: `121` = js.native
-    var hwb: `123` = js.native
-    var keyword: `119` = js.native
+    var gray: `114` = js.native
+    var hcg: `118` = js.native
+    var hsl: `122` = js.native
+    var hsv: `120` = js.native
+    var hwb: `116` = js.native
+    var keyword: `113` = js.native
     var lab: `124` = js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.hex] = js.native
-    var lch: `116` = js.native
+    var lch: `121` = js.native
     var rgb: `111` = js.native
-    var xyz: `112` = js.native
+    var xyz: `119` = js.native
     def ansi16(from: HEX_): ANSI16_ = js.native
     def ansi256(from: HEX_): ANSI256_ = js.native
     def apple(from: HEX_): APPLE_ = js.native
@@ -478,22 +478,22 @@ object mod extends js.Object {
   
   @js.native
   object hsl extends js.Object {
-    var ansi16: `17` = js.native
-    var ansi256: `16` = js.native
-    var apple: `24` = js.native
+    var ansi16: `25` = js.native
+    var ansi256: `17` = js.native
+    var apple: `14` = js.native
     val channels: `3` = js.native
-    var cmyk: `20` = js.native
-    var gray: `22` = js.native
-    var hcg: `15` = js.native
-    var hex: `18` = js.native
-    var hsv: `23` = js.native
-    var hwb: `25` = js.native
-    var keyword: `21` = js.native
+    var cmyk: `19` = js.native
+    var gray: `16` = js.native
+    var hcg: `20` = js.native
+    var hex: `24` = js.native
+    var hsv: `22` = js.native
+    var hwb: `18` = js.native
+    var keyword: `15` = js.native
     var lab: `26` = js.native
     val labels: typings.colorConvert.colorConvertStrings.hsl = js.native
-    var lch: `19` = js.native
+    var lch: `23` = js.native
     var rgb: `13` = js.native
-    var xyz: `14` = js.native
+    var xyz: `21` = js.native
     def ansi16(from: HSL_): ANSI16_ = js.native
     def ansi256(from: HSL_): ANSI256_ = js.native
     def apple(from: HSL_): APPLE_ = js.native
@@ -512,22 +512,22 @@ object mod extends js.Object {
   
   @js.native
   object hsv extends js.Object {
-    var ansi16: `31` = js.native
-    var ansi256: `30` = js.native
-    var apple: `38` = js.native
+    var ansi16: `39` = js.native
+    var ansi256: `31` = js.native
+    var apple: `28` = js.native
     val channels: `3` = js.native
-    var cmyk: `34` = js.native
-    var gray: `37` = js.native
-    var hcg: `29` = js.native
-    var hex: `32` = js.native
-    var hsl: `35` = js.native
-    var hwb: `39` = js.native
-    var keyword: `36` = js.native
+    var cmyk: `33` = js.native
+    var gray: `30` = js.native
+    var hcg: `34` = js.native
+    var hex: `37` = js.native
+    var hsl: `38` = js.native
+    var hwb: `32` = js.native
+    var keyword: `29` = js.native
     var lab: `40` = js.native
     val labels: typings.colorConvert.colorConvertStrings.hsv = js.native
-    var lch: `33` = js.native
+    var lch: `36` = js.native
     var rgb: `27` = js.native
-    var xyz: `28` = js.native
+    var xyz: `35` = js.native
     def ansi16(hsv: HSV_): ANSI16_ = js.native
     def ansi256(from: HSV_): ANSI256_ = js.native
     def apple(from: HSV_): APPLE_ = js.native
@@ -546,22 +546,22 @@ object mod extends js.Object {
   
   @js.native
   object hwb extends js.Object {
-    var ansi16: `45` = js.native
-    var ansi256: `44` = js.native
-    var apple: `53` = js.native
+    var ansi16: `53` = js.native
+    var ansi256: `45` = js.native
+    var apple: `42` = js.native
     val channels: `3` = js.native
-    var cmyk: `48` = js.native
-    var gray: `51` = js.native
-    var hcg: `43` = js.native
-    var hex: `46` = js.native
-    var hsl: `49` = js.native
-    var hsv: `52` = js.native
-    var keyword: `50` = js.native
+    var cmyk: `46` = js.native
+    var gray: `44` = js.native
+    var hcg: `47` = js.native
+    var hex: `51` = js.native
+    var hsl: `52` = js.native
+    var hsv: `49` = js.native
+    var keyword: `43` = js.native
     var lab: `54` = js.native
     val labels: typings.colorConvert.colorConvertStrings.hwb = js.native
-    var lch: `47` = js.native
+    var lch: `50` = js.native
     var rgb: `41` = js.native
-    var xyz: `42` = js.native
+    var xyz: `48` = js.native
     def ansi16(from: HWB_): ANSI16_ = js.native
     def ansi256(from: HWB_): ANSI256_ = js.native
     def apple(from: HWB_): APPLE_ = js.native
@@ -580,22 +580,22 @@ object mod extends js.Object {
   
   @js.native
   object keyword extends js.Object {
-    var ansi16: `129` = js.native
+    var ansi16: `137` = js.native
     var ansi256: `128` = js.native
-    var apple: `136` = js.native
+    var apple: `126` = js.native
     val channels: `1` = js.native
-    var cmyk: `132` = js.native
-    var gray: `134` = js.native
-    var hcg: `127` = js.native
-    var hex: `130` = js.native
-    var hsl: `133` = js.native
-    var hsv: `135` = js.native
-    var hwb: `137` = js.native
+    var cmyk: `130` = js.native
+    var gray: `127` = js.native
+    var hcg: `131` = js.native
+    var hex: `135` = js.native
+    var hsl: `136` = js.native
+    var hsv: `133` = js.native
+    var hwb: `129` = js.native
     var lab: `138` = js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.keyword] = js.native
-    var lch: `131` = js.native
+    var lch: `134` = js.native
     var rgb: `125` = js.native
-    var xyz: `126` = js.native
+    var xyz: `132` = js.native
     def ansi16(from: KEYWORD_): ANSI16_ = js.native
     def ansi256(from: KEYWORD_): ANSI256_ = js.native
     def apple(from: KEYWORD_): APPLE_ = js.native
@@ -614,22 +614,22 @@ object mod extends js.Object {
   
   @js.native
   object lab extends js.Object {
-    var ansi16: `87` = js.native
-    var ansi256: `86` = js.native
-    var apple: `95` = js.native
+    var ansi16: `96` = js.native
+    var ansi256: `87` = js.native
+    var apple: `84` = js.native
     val channels: `3` = js.native
-    var cmyk: `90` = js.native
-    var gray: `93` = js.native
-    var hcg: `85` = js.native
-    var hex: `88` = js.native
-    var hsl: `91` = js.native
-    var hsv: `94` = js.native
-    var hwb: `96` = js.native
-    var keyword: `92` = js.native
+    var cmyk: `89` = js.native
+    var gray: `86` = js.native
+    var hcg: `90` = js.native
+    var hex: `94` = js.native
+    var hsl: `95` = js.native
+    var hsv: `92` = js.native
+    var hwb: `88` = js.native
+    var keyword: `85` = js.native
     val labels: typings.colorConvert.colorConvertStrings.lab = js.native
-    var lch: `89` = js.native
+    var lch: `93` = js.native
     var rgb: `83` = js.native
-    var xyz: `84` = js.native
+    var xyz: `91` = js.native
     def ansi16(from: LAB_): ANSI16_ = js.native
     def ansi256(from: LAB_): ANSI256_ = js.native
     def apple(from: LAB_): APPLE_ = js.native
@@ -648,22 +648,22 @@ object mod extends js.Object {
   
   @js.native
   object lch extends js.Object {
-    var ansi16: `101` = js.native
-    var ansi256: `100` = js.native
-    var apple: `108` = js.native
+    var ansi16: `109` = js.native
+    var ansi256: `101` = js.native
+    var apple: `98` = js.native
     val channels: `3` = js.native
     var cmyk: `103` = js.native
-    var gray: `106` = js.native
-    var hcg: `99` = js.native
-    var hex: `102` = js.native
-    var hsl: `104` = js.native
-    var hsv: `107` = js.native
-    var hwb: `109` = js.native
-    var keyword: `105` = js.native
+    var gray: `100` = js.native
+    var hcg: `104` = js.native
+    var hex: `107` = js.native
+    var hsl: `108` = js.native
+    var hsv: `106` = js.native
+    var hwb: `102` = js.native
+    var keyword: `99` = js.native
     var lab: `110` = js.native
     val labels: typings.colorConvert.colorConvertStrings.lch = js.native
     var rgb: `97` = js.native
-    var xyz: `98` = js.native
+    var xyz: `105` = js.native
     def ansi16(from: LCH_): ANSI16_ = js.native
     def ansi256(from: LCH_): ANSI256_ = js.native
     def apple(from: LCH_): APPLE_ = js.native
@@ -682,22 +682,22 @@ object mod extends js.Object {
   
   @js.native
   object rgb extends js.Object {
-    var ansi16: `2` = js.native
-    var ansi256: typings.colorConvert.anon.`1` = js.native
-    var apple: `10` = js.native
+    var ansi16: `11` = js.native
+    var ansi256: `2` = js.native
+    var apple: Raw = js.native
     val channels: `3` = js.native
-    var cmyk: `5` = js.native
-    var gray: `8` = js.native
-    var hcg: `0` = js.native
-    var hex: typings.colorConvert.anon.`3` = js.native
-    var hsl: `6` = js.native
-    var hsv: `9` = js.native
-    var hwb: `11` = js.native
-    var keyword: `7` = js.native
+    var cmyk: typings.colorConvert.anon.`4` = js.native
+    var gray: typings.colorConvert.anon.`1` = js.native
+    var hcg: `5` = js.native
+    var hex: `9` = js.native
+    var hsl: `10` = js.native
+    var hsv: `7` = js.native
+    var hwb: typings.colorConvert.anon.`3` = js.native
+    var keyword: `0` = js.native
     var lab: `12` = js.native
     val labels: typings.colorConvert.colorConvertStrings.rgb = js.native
-    var lch: typings.colorConvert.anon.`4` = js.native
-    var xyz: Raw = js.native
+    var lch: `8` = js.native
+    var xyz: `6` = js.native
     def ansi16(rgb: RGB_): ANSI16_ = js.native
     def ansi256(rgb: RGB_): ANSI256_ = js.native
     def apple(rgb: RGB_): APPLE_ = js.native
@@ -716,21 +716,21 @@ object mod extends js.Object {
   
   @js.native
   object xyz extends js.Object {
-    var ansi16: `72` = js.native
-    var ansi256: `71` = js.native
-    var apple: `80` = js.native
+    var ansi16: `81` = js.native
+    var ansi256: `73` = js.native
+    var apple: `70` = js.native
     val channels: `3` = js.native
     var cmyk: `75` = js.native
-    var gray: `78` = js.native
-    var hcg: `70` = js.native
-    var hex: `73` = js.native
-    var hsl: `76` = js.native
-    var hsv: `79` = js.native
-    var hwb: `81` = js.native
-    var keyword: `77` = js.native
+    var gray: `72` = js.native
+    var hcg: `76` = js.native
+    var hex: `79` = js.native
+    var hsl: `80` = js.native
+    var hsv: `77` = js.native
+    var hwb: `74` = js.native
+    var keyword: `71` = js.native
     var lab: `82` = js.native
     val labels: typings.colorConvert.colorConvertStrings.xyz = js.native
-    var lch: `74` = js.native
+    var lch: `78` = js.native
     var rgb: `69` = js.native
     def ansi16(from: XYZ_): ANSI16_ = js.native
     def ansi256(from: XYZ_): ANSI256_ = js.native

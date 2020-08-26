@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ParserError")
 @js.native
 class ParserError protected ()
-  extends typings.angularCompiler.publicApiMod.ParserError {
+  extends typings.angularCompiler.compilerMod.ParserError {
   def this(message: String, input: String, errLocation: String) = this()
   def this(message: String, input: String, errLocation: String, ctxLocation: js.Any) = this()
 }

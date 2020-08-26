@@ -11,7 +11,7 @@ trait GetBucketStatisticsResponse extends js.Object {
     */
   var bucketCount: js.UndefOr[long] = js.native
   /**
-    * The total number of buckets that are publicly accessible, based on a combination of permissions settings for each bucket.
+    * The total number of buckets that are publicly accessible based on a combination of permissions settings for each bucket.
     */
   var bucketCountByEffectivePermission: js.UndefOr[BucketCountByEffectivePermission] = js.native
   /**
@@ -19,11 +19,11 @@ trait GetBucketStatisticsResponse extends js.Object {
     */
   var bucketCountByEncryptionType: js.UndefOr[BucketCountByEncryptionType] = js.native
   /**
-    * The total number of buckets that are shared with another AWS account or configured to support cross-origin resource sharing (CORS).
+    * The total number of buckets that are shared with another AWS account.
     */
   var bucketCountBySharedAccessType: js.UndefOr[BucketCountBySharedAccessType] = js.native
   /**
-    * The total number of objects that Amazon Macie can monitor and analyze in all the buckets. These objects use a file format, file extension, or content type that Amazon Macie supports.
+    * The total number of objects that Amazon Macie can analyze in all the buckets. These objects use a file format, file extension, or content type that Amazon Macie supports.
     */
   var classifiableObjectCount: js.UndefOr[long] = js.native
   /**
@@ -46,28 +46,58 @@ trait GetBucketStatisticsResponse extends js.Object {
 
 object GetBucketStatisticsResponse {
   @scala.inline
-  def apply(
-    bucketCount: js.UndefOr[long] = js.undefined,
-    bucketCountByEffectivePermission: BucketCountByEffectivePermission = null,
-    bucketCountByEncryptionType: BucketCountByEncryptionType = null,
-    bucketCountBySharedAccessType: BucketCountBySharedAccessType = null,
-    classifiableObjectCount: js.UndefOr[long] = js.undefined,
-    lastUpdated: timestampIso8601 = null,
-    objectCount: js.UndefOr[long] = js.undefined,
-    sizeInBytes: js.UndefOr[long] = js.undefined,
-    sizeInBytesCompressed: js.UndefOr[long] = js.undefined
-  ): GetBucketStatisticsResponse = {
+  def apply(): GetBucketStatisticsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bucketCount)) __obj.updateDynamic("bucketCount")(bucketCount.get.asInstanceOf[js.Any])
-    if (bucketCountByEffectivePermission != null) __obj.updateDynamic("bucketCountByEffectivePermission")(bucketCountByEffectivePermission.asInstanceOf[js.Any])
-    if (bucketCountByEncryptionType != null) __obj.updateDynamic("bucketCountByEncryptionType")(bucketCountByEncryptionType.asInstanceOf[js.Any])
-    if (bucketCountBySharedAccessType != null) __obj.updateDynamic("bucketCountBySharedAccessType")(bucketCountBySharedAccessType.asInstanceOf[js.Any])
-    if (!js.isUndefined(classifiableObjectCount)) __obj.updateDynamic("classifiableObjectCount")(classifiableObjectCount.get.asInstanceOf[js.Any])
-    if (lastUpdated != null) __obj.updateDynamic("lastUpdated")(lastUpdated.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectCount)) __obj.updateDynamic("objectCount")(objectCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeInBytes)) __obj.updateDynamic("sizeInBytes")(sizeInBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeInBytesCompressed)) __obj.updateDynamic("sizeInBytesCompressed")(sizeInBytesCompressed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketStatisticsResponse]
   }
+  @scala.inline
+  implicit class GetBucketStatisticsResponseOps[Self <: GetBucketStatisticsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketCount(value: long): Self = this.set("bucketCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketCount: Self = this.set("bucketCount", js.undefined)
+    @scala.inline
+    def setBucketCountByEffectivePermission(value: BucketCountByEffectivePermission): Self = this.set("bucketCountByEffectivePermission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketCountByEffectivePermission: Self = this.set("bucketCountByEffectivePermission", js.undefined)
+    @scala.inline
+    def setBucketCountByEncryptionType(value: BucketCountByEncryptionType): Self = this.set("bucketCountByEncryptionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketCountByEncryptionType: Self = this.set("bucketCountByEncryptionType", js.undefined)
+    @scala.inline
+    def setBucketCountBySharedAccessType(value: BucketCountBySharedAccessType): Self = this.set("bucketCountBySharedAccessType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketCountBySharedAccessType: Self = this.set("bucketCountBySharedAccessType", js.undefined)
+    @scala.inline
+    def setClassifiableObjectCount(value: long): Self = this.set("classifiableObjectCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassifiableObjectCount: Self = this.set("classifiableObjectCount", js.undefined)
+    @scala.inline
+    def setLastUpdated(value: timestampIso8601): Self = this.set("lastUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdated: Self = this.set("lastUpdated", js.undefined)
+    @scala.inline
+    def setObjectCount(value: long): Self = this.set("objectCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectCount: Self = this.set("objectCount", js.undefined)
+    @scala.inline
+    def setSizeInBytes(value: long): Self = this.set("sizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeInBytes: Self = this.set("sizeInBytes", js.undefined)
+    @scala.inline
+    def setSizeInBytesCompressed(value: long): Self = this.set("sizeInBytesCompressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeInBytesCompressed: Self = this.set("sizeInBytesCompressed", js.undefined)
+  }
+  
 }
 

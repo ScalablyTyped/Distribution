@@ -27,6 +27,7 @@ class ResourceAccountsContainersVersionHeaders protected () extends js.Object {
     */
   def latest(): GaxiosPromise[SchemaContainerVersionHeader] = js.native
   def latest(callback: BodyResponseCallback[SchemaContainerVersionHeader]): Unit = js.native
+  def latest(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContainerVersionHeader] = js.native
   def latest(params: ParamsResourceAccountsContainersVersionHeadersLatest): GaxiosPromise[SchemaContainerVersionHeader] = js.native
   def latest(
     params: ParamsResourceAccountsContainersVersionHeadersLatest,
@@ -59,6 +60,7 @@ class ResourceAccountsContainersVersionHeaders protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListContainerVersionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
   def list(params: ParamsResourceAccountsContainersVersionHeadersList): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersVersionHeadersList,

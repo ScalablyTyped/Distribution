@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
+@js.native
 trait PlusWebviewWebviewOverrideResourceOptions extends js.Object {
   /**
     * 重定向的资源数据编码
@@ -16,7 +17,7 @@ trait PlusWebviewWebviewOverrideResourceOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var encoding: js.UndefOr[String] = js.undefined
+  var encoding: js.UndefOr[String] = js.native
   /**
     * 设置重定向资源数据的http头数据
     * 可设置标注http头数据（如Content-type）,也可设置自定义数据。
@@ -24,14 +25,14 @@ trait PlusWebviewWebviewOverrideResourceOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[js.Any] = js.native
   /**
     * 区配需要拦截请求资源的URL地址
     * 支持正则表达式，默认值为空字符串（即不拦截）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `match`: js.UndefOr[String] = js.undefined
+  var `match`: js.UndefOr[String] = js.native
   /**
     * 重定向的资源数据类型
     * RFC2045/RFC2046/RFC2047/RFC2048/RFC2049规范中定义的数据类型。
@@ -40,32 +41,54 @@ trait PlusWebviewWebviewOverrideResourceOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var mime: js.UndefOr[String] = js.undefined
+  var mime: js.UndefOr[String] = js.native
   /**
     * 拦截重定向的资源地址
     * 仅支持本地资源地址，如"_www"、"_doc"、"_downloads"、"_documents"等开头的路径。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var redirect: js.UndefOr[String] = js.undefined
+  var redirect: js.UndefOr[String] = js.native
 }
 
 object PlusWebviewWebviewOverrideResourceOptions {
   @scala.inline
-  def apply(
-    encoding: String = null,
-    header: js.Any = null,
-    `match`: String = null,
-    mime: String = null,
-    redirect: String = null
-  ): PlusWebviewWebviewOverrideResourceOptions = {
+  def apply(): PlusWebviewWebviewOverrideResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewOverrideResourceOptions]
   }
+  @scala.inline
+  implicit class PlusWebviewWebviewOverrideResourceOptionsOps[Self <: PlusWebviewWebviewOverrideResourceOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setHeader(value: js.Any): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setMatch(value: String): Self = this.set("match", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatch: Self = this.set("match", js.undefined)
+    @scala.inline
+    def setMime(value: String): Self = this.set("mime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMime: Self = this.set("mime", js.undefined)
+    @scala.inline
+    def setRedirect(value: String): Self = this.set("redirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirect: Self = this.set("redirect", js.undefined)
+  }
+  
 }
 

@@ -27,26 +27,56 @@ trait ProjectDetails extends js.Object {
 
 object ProjectDetails {
   @scala.inline
-  def apply(
-    consoleUrl: ConsoleUrl = null,
-    createdDate: Date = null,
-    lastUpdatedDate: Date = null,
-    name: ProjectName = null,
-    projectId: ProjectId = null,
-    region: ProjectRegion = null,
-    resources: Resources = null,
-    state: ProjectState = null
-  ): ProjectDetails = {
+  def apply(): ProjectDetails = {
     val __obj = js.Dynamic.literal()
-    if (consoleUrl != null) __obj.updateDynamic("consoleUrl")(consoleUrl.asInstanceOf[js.Any])
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
-    if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectDetails]
   }
+  @scala.inline
+  implicit class ProjectDetailsOps[Self <: ProjectDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsoleUrl(value: ConsoleUrl): Self = this.set("consoleUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsoleUrl: Self = this.set("consoleUrl", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: Date): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    @scala.inline
+    def setLastUpdatedDate(value: Date): Self = this.set("lastUpdatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDate: Self = this.set("lastUpdatedDate", js.undefined)
+    @scala.inline
+    def setName(value: ProjectName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProjectId(value: ProjectId): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setRegion(value: ProjectRegion): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: Resource*): Self = this.set("resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: Resources): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setState(value: ProjectState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

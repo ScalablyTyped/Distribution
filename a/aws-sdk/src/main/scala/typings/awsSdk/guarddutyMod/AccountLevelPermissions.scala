@@ -14,10 +14,26 @@ trait AccountLevelPermissions extends js.Object {
 
 object AccountLevelPermissions {
   @scala.inline
-  def apply(BlockPublicAccess: BlockPublicAccess = null): AccountLevelPermissions = {
+  def apply(): AccountLevelPermissions = {
     val __obj = js.Dynamic.literal()
-    if (BlockPublicAccess != null) __obj.updateDynamic("BlockPublicAccess")(BlockPublicAccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountLevelPermissions]
   }
+  @scala.inline
+  implicit class AccountLevelPermissionsOps[Self <: AccountLevelPermissions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockPublicAccess(value: BlockPublicAccess): Self = this.set("BlockPublicAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockPublicAccess: Self = this.set("BlockPublicAccess", js.undefined)
+  }
+  
 }
 

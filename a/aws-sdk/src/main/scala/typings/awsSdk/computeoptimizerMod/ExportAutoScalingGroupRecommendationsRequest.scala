@@ -34,21 +34,50 @@ trait ExportAutoScalingGroupRecommendationsRequest extends js.Object {
 
 object ExportAutoScalingGroupRecommendationsRequest {
   @scala.inline
-  def apply(
-    s3DestinationConfig: S3DestinationConfig,
-    accountIds: AccountIds = null,
-    fieldsToExport: ExportableAutoScalingGroupFields = null,
-    fileFormat: FileFormat = null,
-    filters: Filters = null,
-    includeMemberAccounts: js.UndefOr[IncludeMemberAccounts] = js.undefined
-  ): ExportAutoScalingGroupRecommendationsRequest = {
+  def apply(s3DestinationConfig: S3DestinationConfig): ExportAutoScalingGroupRecommendationsRequest = {
     val __obj = js.Dynamic.literal(s3DestinationConfig = s3DestinationConfig.asInstanceOf[js.Any])
-    if (accountIds != null) __obj.updateDynamic("accountIds")(accountIds.asInstanceOf[js.Any])
-    if (fieldsToExport != null) __obj.updateDynamic("fieldsToExport")(fieldsToExport.asInstanceOf[js.Any])
-    if (fileFormat != null) __obj.updateDynamic("fileFormat")(fileFormat.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeMemberAccounts)) __obj.updateDynamic("includeMemberAccounts")(includeMemberAccounts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportAutoScalingGroupRecommendationsRequest]
   }
+  @scala.inline
+  implicit class ExportAutoScalingGroupRecommendationsRequestOps[Self <: ExportAutoScalingGroupRecommendationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3DestinationConfig(value: S3DestinationConfig): Self = this.set("s3DestinationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccountIdsVarargs(value: AccountId*): Self = this.set("accountIds", js.Array(value :_*))
+    @scala.inline
+    def setAccountIds(value: AccountIds): Self = this.set("accountIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountIds: Self = this.set("accountIds", js.undefined)
+    @scala.inline
+    def setFieldsToExportVarargs(value: ExportableAutoScalingGroupField*): Self = this.set("fieldsToExport", js.Array(value :_*))
+    @scala.inline
+    def setFieldsToExport(value: ExportableAutoScalingGroupFields): Self = this.set("fieldsToExport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldsToExport: Self = this.set("fieldsToExport", js.undefined)
+    @scala.inline
+    def setFileFormat(value: FileFormat): Self = this.set("fileFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileFormat: Self = this.set("fileFormat", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: Filters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setIncludeMemberAccounts(value: IncludeMemberAccounts): Self = this.set("includeMemberAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeMemberAccounts: Self = this.set("includeMemberAccounts", js.undefined)
+  }
+  
 }
 

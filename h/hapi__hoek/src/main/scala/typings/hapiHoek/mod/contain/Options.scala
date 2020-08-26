@@ -4,55 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * Perform a deep comparison.
     *
     * @default false
     */
-  val deep: js.UndefOr[Boolean] = js.undefined
+  val deep: js.UndefOr[Boolean] = js.native
   /**
     * Allow only one occurrence of each value.
     *
     * @default false
     */
-  val once: js.UndefOr[Boolean] = js.undefined
+  val once: js.UndefOr[Boolean] = js.native
   /**
     * Allow only values explicitly listed.
     *
     * @default false
     */
-  val only: js.UndefOr[Boolean] = js.undefined
+  val only: js.UndefOr[Boolean] = js.native
   /**
     * Allow partial match.
     *
     * @default false
     */
-  val part: js.UndefOr[Boolean] = js.undefined
+  val part: js.UndefOr[Boolean] = js.native
   /**
     * Include symbol properties.
     *
     * @default true
     */
-  val symbols: js.UndefOr[Boolean] = js.undefined
+  val symbols: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    deep: js.UndefOr[Boolean] = js.undefined,
-    once: js.UndefOr[Boolean] = js.undefined,
-    only: js.UndefOr[Boolean] = js.undefined,
-    part: js.UndefOr[Boolean] = js.undefined,
-    symbols: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(part)) __obj.updateDynamic("part")(part.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeep(value: Boolean): Self = this.set("deep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeep: Self = this.set("deep", js.undefined)
+    @scala.inline
+    def setOnce(value: Boolean): Self = this.set("once", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnce: Self = this.set("once", js.undefined)
+    @scala.inline
+    def setOnly(value: Boolean): Self = this.set("only", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnly: Self = this.set("only", js.undefined)
+    @scala.inline
+    def setPart(value: Boolean): Self = this.set("part", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePart: Self = this.set("part", js.undefined)
+    @scala.inline
+    def setSymbols(value: Boolean): Self = this.set("symbols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbols: Self = this.set("symbols", js.undefined)
+  }
+  
 }
 

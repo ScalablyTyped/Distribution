@@ -104,48 +104,100 @@ trait SchemaTaskRunnerSettings extends js.Object {
 
 object SchemaTaskRunnerSettings {
   @scala.inline
-  def apply(
-    alsologtostderr: js.UndefOr[Boolean] = js.undefined,
-    baseTaskDir: String = null,
-    baseUrl: String = null,
-    commandlinesFileName: String = null,
-    continueOnException: js.UndefOr[Boolean] = js.undefined,
-    dataflowApiVersion: String = null,
-    harnessCommand: String = null,
-    languageHint: String = null,
-    logDir: String = null,
-    logToSerialconsole: js.UndefOr[Boolean] = js.undefined,
-    logUploadLocation: String = null,
-    oauthScopes: js.Array[String] = null,
-    parallelWorkerSettings: SchemaWorkerSettings = null,
-    streamingWorkerMainClass: String = null,
-    taskGroup: String = null,
-    taskUser: String = null,
-    tempStoragePrefix: String = null,
-    vmId: String = null,
-    workflowFileName: String = null
-  ): SchemaTaskRunnerSettings = {
+  def apply(): SchemaTaskRunnerSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alsologtostderr)) __obj.updateDynamic("alsologtostderr")(alsologtostderr.get.asInstanceOf[js.Any])
-    if (baseTaskDir != null) __obj.updateDynamic("baseTaskDir")(baseTaskDir.asInstanceOf[js.Any])
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (commandlinesFileName != null) __obj.updateDynamic("commandlinesFileName")(commandlinesFileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(continueOnException)) __obj.updateDynamic("continueOnException")(continueOnException.get.asInstanceOf[js.Any])
-    if (dataflowApiVersion != null) __obj.updateDynamic("dataflowApiVersion")(dataflowApiVersion.asInstanceOf[js.Any])
-    if (harnessCommand != null) __obj.updateDynamic("harnessCommand")(harnessCommand.asInstanceOf[js.Any])
-    if (languageHint != null) __obj.updateDynamic("languageHint")(languageHint.asInstanceOf[js.Any])
-    if (logDir != null) __obj.updateDynamic("logDir")(logDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(logToSerialconsole)) __obj.updateDynamic("logToSerialconsole")(logToSerialconsole.get.asInstanceOf[js.Any])
-    if (logUploadLocation != null) __obj.updateDynamic("logUploadLocation")(logUploadLocation.asInstanceOf[js.Any])
-    if (oauthScopes != null) __obj.updateDynamic("oauthScopes")(oauthScopes.asInstanceOf[js.Any])
-    if (parallelWorkerSettings != null) __obj.updateDynamic("parallelWorkerSettings")(parallelWorkerSettings.asInstanceOf[js.Any])
-    if (streamingWorkerMainClass != null) __obj.updateDynamic("streamingWorkerMainClass")(streamingWorkerMainClass.asInstanceOf[js.Any])
-    if (taskGroup != null) __obj.updateDynamic("taskGroup")(taskGroup.asInstanceOf[js.Any])
-    if (taskUser != null) __obj.updateDynamic("taskUser")(taskUser.asInstanceOf[js.Any])
-    if (tempStoragePrefix != null) __obj.updateDynamic("tempStoragePrefix")(tempStoragePrefix.asInstanceOf[js.Any])
-    if (vmId != null) __obj.updateDynamic("vmId")(vmId.asInstanceOf[js.Any])
-    if (workflowFileName != null) __obj.updateDynamic("workflowFileName")(workflowFileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTaskRunnerSettings]
   }
+  @scala.inline
+  implicit class SchemaTaskRunnerSettingsOps[Self <: SchemaTaskRunnerSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlsologtostderr(value: Boolean): Self = this.set("alsologtostderr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlsologtostderr: Self = this.set("alsologtostderr", js.undefined)
+    @scala.inline
+    def setBaseTaskDir(value: String): Self = this.set("baseTaskDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseTaskDir: Self = this.set("baseTaskDir", js.undefined)
+    @scala.inline
+    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    @scala.inline
+    def setCommandlinesFileName(value: String): Self = this.set("commandlinesFileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommandlinesFileName: Self = this.set("commandlinesFileName", js.undefined)
+    @scala.inline
+    def setContinueOnException(value: Boolean): Self = this.set("continueOnException", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinueOnException: Self = this.set("continueOnException", js.undefined)
+    @scala.inline
+    def setDataflowApiVersion(value: String): Self = this.set("dataflowApiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataflowApiVersion: Self = this.set("dataflowApiVersion", js.undefined)
+    @scala.inline
+    def setHarnessCommand(value: String): Self = this.set("harnessCommand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHarnessCommand: Self = this.set("harnessCommand", js.undefined)
+    @scala.inline
+    def setLanguageHint(value: String): Self = this.set("languageHint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageHint: Self = this.set("languageHint", js.undefined)
+    @scala.inline
+    def setLogDir(value: String): Self = this.set("logDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogDir: Self = this.set("logDir", js.undefined)
+    @scala.inline
+    def setLogToSerialconsole(value: Boolean): Self = this.set("logToSerialconsole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogToSerialconsole: Self = this.set("logToSerialconsole", js.undefined)
+    @scala.inline
+    def setLogUploadLocation(value: String): Self = this.set("logUploadLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUploadLocation: Self = this.set("logUploadLocation", js.undefined)
+    @scala.inline
+    def setOauthScopesVarargs(value: String*): Self = this.set("oauthScopes", js.Array(value :_*))
+    @scala.inline
+    def setOauthScopes(value: js.Array[String]): Self = this.set("oauthScopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthScopes: Self = this.set("oauthScopes", js.undefined)
+    @scala.inline
+    def setParallelWorkerSettings(value: SchemaWorkerSettings): Self = this.set("parallelWorkerSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelWorkerSettings: Self = this.set("parallelWorkerSettings", js.undefined)
+    @scala.inline
+    def setStreamingWorkerMainClass(value: String): Self = this.set("streamingWorkerMainClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingWorkerMainClass: Self = this.set("streamingWorkerMainClass", js.undefined)
+    @scala.inline
+    def setTaskGroup(value: String): Self = this.set("taskGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskGroup: Self = this.set("taskGroup", js.undefined)
+    @scala.inline
+    def setTaskUser(value: String): Self = this.set("taskUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskUser: Self = this.set("taskUser", js.undefined)
+    @scala.inline
+    def setTempStoragePrefix(value: String): Self = this.set("tempStoragePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTempStoragePrefix: Self = this.set("tempStoragePrefix", js.undefined)
+    @scala.inline
+    def setVmId(value: String): Self = this.set("vmId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmId: Self = this.set("vmId", js.undefined)
+    @scala.inline
+    def setWorkflowFileName(value: String): Self = this.set("workflowFileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowFileName: Self = this.set("workflowFileName", js.undefined)
+  }
+  
 }
 

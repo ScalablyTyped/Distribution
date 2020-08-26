@@ -1,12 +1,7 @@
 package typings.angularOdataResources
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import typings.angularOdataResources.OData.IExecutable
 import typings.angularOdataResources.OData.ProviderCallback
-import typings.angularOdataResources.anon.Add
-import typings.angularOdataResources.anon.TypeofPredicate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +16,7 @@ object global extends js.Object {
       extends typings.angularOdataResources.OData.BinaryOperation {
       def this(propertyOrPredicate: js.Any) = this()
       def this(propertyOrPredicate: js.Any, valueOrOperator: js.Any) = this()
+      def this(propertyOrPredicate: js.Any, valueOrOperator: js.UndefOr[scala.Nothing], value: js.Any) = this()
       def this(propertyOrPredicate: js.Any, valueOrOperator: js.Any, value: js.Any) = this()
     }
     
@@ -36,37 +32,6 @@ object global extends js.Object {
         ODataPredicate: js.Any,
         ODataOrderByStatement: js.Any
       ) = this()
-      /* CompleteClass */
-      override var BinaryOperation: Instantiable3[
-            /* propertyOrPredicate */ js.Any, 
-            js.UndefOr[/* valueOrOperator */ js.Any], 
-            js.UndefOr[/* value */ js.Any], 
-            typings.angularOdataResources.OData.BinaryOperation
-          ] = js.native
-      /* CompleteClass */
-      override var Func: Instantiable2[
-            /* methodName */ String, 
-            /* args (repeated) */ js.Any, 
-            typings.angularOdataResources.OData.MethodCall
-          ] = js.native
-      /* CompleteClass */
-      override var OrderBy: Instantiable2[
-            /* propertyName */ String, 
-            js.UndefOr[/* sortOrder */ String], 
-            typings.angularOdataResources.OData.OrderByStatement
-          ] = js.native
-      /* CompleteClass */
-      override var Predicate: TypeofPredicate = js.native
-      /* CompleteClass */
-      override var Property: Instantiable1[/* value */ String, typings.angularOdataResources.OData.Property] = js.native
-      /* CompleteClass */
-      override var Provider: typings.angularOdataResources.OData.Provider[_] = js.native
-      /* CompleteClass */
-      override var Value: Instantiable2[
-            /* value */ js.Any, 
-            js.UndefOr[/* type */ String], 
-            typings.angularOdataResources.OData.Value
-          ] = js.native
     }
     
     @js.native
@@ -77,16 +42,7 @@ object global extends js.Object {
     
     @js.native
     class Operators ()
-      extends typings.angularOdataResources.OData.Operators {
-      /* CompleteClass */
-      override var operators: Add = js.native
-      /* CompleteClass */
-      override var rtrim: js.Any = js.native
-      /* CompleteClass */
-      override def convert(from: String): js.Any = js.native
-      /* CompleteClass */
-      /* private */ override def trim(value: js.Any): js.Any = js.native
-    }
+      extends typings.angularOdataResources.OData.Operators
     
     @js.native
     class OrderByStatement protected ()
@@ -100,6 +56,7 @@ object global extends js.Object {
       extends typings.angularOdataResources.OData.BinaryOperation {
       def this(propertyOrValueOrPredicate: js.Any) = this()
       def this(propertyOrValueOrPredicate: js.Any, valueOrOperator: js.Any) = this()
+      def this(propertyOrValueOrPredicate: js.Any, valueOrOperator: js.UndefOr[scala.Nothing], value: js.Any) = this()
       def this(propertyOrValueOrPredicate: js.Any, valueOrOperator: js.Any, value: js.Any) = this()
     }
     
@@ -120,22 +77,6 @@ object global extends js.Object {
       extends typings.angularOdataResources.OData.Value {
       def this(value: js.Any) = this()
       def this(value: js.Any, `type`: String) = this()
-      /* CompleteClass */
-      override var illegalChars: js.Any = js.native
-      /* CompleteClass */
-      override var `type`: js.Any = js.native
-      /* CompleteClass */
-      override var value: js.Any = js.native
-      /* CompleteClass */
-      /* private */ override def escapeIllegalChars(haystack: js.Any): js.Any = js.native
-      /* CompleteClass */
-      override def execute(): String = js.native
-      /* CompleteClass */
-      override def executeWithType(): js.Any = js.native
-      /* CompleteClass */
-      override def executeWithUndefinedType(): js.Any = js.native
-      /* CompleteClass */
-      /* private */ override def generateDate(date: js.Any): js.Any = js.native
     }
     
     @js.native
@@ -154,6 +95,7 @@ object global extends js.Object {
     object Predicate extends js.Object {
       def and(andStatements: js.Any): IExecutable = js.native
       def create(propertyOrPredicate: js.Any): IExecutable = js.native
+      def create(propertyOrPredicate: js.Any, operatorOrValue: js.UndefOr[scala.Nothing], value: js.Any): IExecutable = js.native
       def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any): IExecutable = js.native
       def create(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): IExecutable = js.native
       def or(orStatements: js.Array[_]): IExecutable = js.native

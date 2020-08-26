@@ -58,6 +58,7 @@ object mod extends js.Object {
     f4: Func3[T1, T2, T3, A]
   ): Func3[T1, T2, T3, R] = js.native
   def getDataFromTree(rootElement: js.Any): js.Promise[Unit] = js.native
+  def getDataFromTree(rootElement: js.Any, rootContext: js.UndefOr[scala.Nothing], fetchRoot: Boolean): js.Promise[Unit] = js.native
   def getDataFromTree(rootElement: js.Any, rootContext: js.Any): js.Promise[Unit] = js.native
   def getDataFromTree(rootElement: js.Any, rootContext: js.Any, fetchRoot: Boolean): js.Promise[Unit] = js.native
   def graphql(document: Document): js.Function1[/* WrappedComponent */ js.Any, _] = js.native

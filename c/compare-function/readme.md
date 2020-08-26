@@ -10,9 +10,9 @@ Effortlessly compose compare functions for Array.prototype.sort
 | ------------------ | :-------------: |
 | Full name          | compare-function |
 | Keywords           | array, sort, compare, compose |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 267 |
+| # downloads        | 252 |
 | # stars            | 0 |
 
 ## Links

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object initializeIcons extends js.Object {
   def apply(): Unit = js.native
+  def apply(baseUrl: js.UndefOr[scala.Nothing], options: IIconOptions): Unit = js.native
   def apply(baseUrl: String): Unit = js.native
   def apply(baseUrl: String, options: IIconOptions): Unit = js.native
 }

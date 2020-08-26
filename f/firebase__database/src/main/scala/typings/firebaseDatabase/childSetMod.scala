@@ -13,6 +13,12 @@ object childSetMod extends js.Object {
   def buildChildSet[K, V](
     childList: js.Array[NamedNode],
     cmp: js.Function2[/* a */ NamedNode, /* b */ NamedNode, Double],
+    keyFn: js.UndefOr[scala.Nothing],
+    mapSortFn: js.Function2[/* a */ K, /* b */ K, Double]
+  ): SortedMap[K, V] = js.native
+  def buildChildSet[K, V](
+    childList: js.Array[NamedNode],
+    cmp: js.Function2[/* a */ NamedNode, /* b */ NamedNode, Double],
     keyFn: js.Function1[/* a */ NamedNode, K]
   ): SortedMap[K, V] = js.native
   def buildChildSet[K, V](

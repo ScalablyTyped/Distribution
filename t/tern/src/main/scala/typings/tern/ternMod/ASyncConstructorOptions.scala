@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ASyncConstructorOptions extends js.Object {
   /** Indicates whether `getFile` is asynchronous. Default is `false`. */
-  var async: `true`
+  var async: `true` = js.native
   /**
     * Provides a way for the server to try and fetch the content of files.
     * Depending on the `async` option, this is either a function that takes a filename and returns a string (when not `async`), or
@@ -21,18 +22,35 @@ trait ASyncConstructorOptions extends js.Object {
       /* callback */ js.Function2[/* error */ js.UndefOr[Error], /* content */ js.UndefOr[String], Unit], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object ASyncConstructorOptions {
   @scala.inline
-  def apply(
-    async: `true`,
-    getFile: (/* filename */ String, /* callback */ js.Function2[/* error */ js.UndefOr[Error], /* content */ js.UndefOr[String], Unit]) => Unit = null
-  ): ASyncConstructorOptions = {
+  def apply(async: `true`): ASyncConstructorOptions = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
-    if (getFile != null) __obj.updateDynamic("getFile")(js.Any.fromFunction2(getFile))
     __obj.asInstanceOf[ASyncConstructorOptions]
   }
+  @scala.inline
+  implicit class ASyncConstructorOptionsOps[Self <: ASyncConstructorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsync(value: `true`): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetFile(
+      value: (/* filename */ String, /* callback */ js.Function2[/* error */ js.UndefOr[Error], /* content */ js.UndefOr[String], Unit]) => Unit
+    ): Self = this.set("getFile", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetFile: Self = this.set("getFile", js.undefined)
+  }
+  
 }
 

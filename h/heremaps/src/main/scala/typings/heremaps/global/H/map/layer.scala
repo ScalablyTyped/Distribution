@@ -1,14 +1,10 @@
 package typings.heremaps.global.H.map
 
 import typings.heremaps.H.clustering.Provider
-import typings.heremaps.H.map.layer.IMarkerLayer.Response
-import typings.heremaps.H.map.layer.IMarkerLayer.TiledResponse
 import typings.heremaps.H.map.layer.ITileLayer.Options
 import typings.heremaps.H.map.provider.MarkerTileProvider
 import typings.heremaps.H.map.provider.ObjectProvider
-import typings.heremaps.H.map.provider.Tile
 import typings.heremaps.H.map.provider.TileProvider
-import typings.heremaps.H.math.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,36 +55,6 @@ object layer extends js.Object {
       */
     def this(provider: MarkerTileProvider) = this()
     def this(provider: MarkerTileProvider, opt_options: Options) = this()
-    /**
-      * This method requests dom marker objects for provided bounding rectangle.
-      * @param boundingRect {H.geo.Rect} - the bounding rectangle for which marker are to be returned
-      * @param zoomLevel {number} - The zoom level for which the objects are requested
-      * @param cacheOnly {boolean} - Indicates whether only cached objects are to be considered
-      * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
-      * @returns {(H.map.layer.IMarkerLayer.Response | H.map.layer.IMarkerLayer.TiledResponse)} - a response object containing the number of markers and the markers themselves
-      */
-    /* CompleteClass */
-    override def requestDomMarkers(
-      boundingRect: typings.heremaps.H.geo.Rect,
-      zoomLevel: Double,
-      cacheOnly: Boolean,
-      prioCenter: Point
-    ): Response | TiledResponse = js.native
-    /**
-      * This method requests marker objects for provided bounding rectangle.
-      * @param boundingRect {H.geo.Rect} - the bounding rectangle for which marker are to be returned
-      * @param zoomLevel {number} - The zoom level for which the objects are requested
-      * @param cacheOnly {boolean} - Indicates whether only cached objects are to be considered
-      * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
-      * @returns {(H.map.layer.IMarkerLayer.Response | H.map.layer.IMarkerLayer.TiledResponse)} - a response object containing the number of markers and the markers themselves
-      */
-    /* CompleteClass */
-    override def requestMarkers(
-      boundingRect: typings.heremaps.H.geo.Rect,
-      zoomLevel: Double,
-      cacheOnly: Boolean,
-      prioCenter: Point
-    ): Response | TiledResponse = js.native
   }
   
   /**
@@ -107,39 +73,6 @@ object layer extends js.Object {
     def this(provider: ObjectProvider) = this()
     def this(provider: Provider, opt_options: typings.heremaps.H.map.layer.ObjectLayer.Options) = this()
     def this(provider: ObjectProvider, opt_options: typings.heremaps.H.map.layer.ObjectLayer.Options) = this()
-    /**
-      * This method cancels a previously requested tile.
-      * @param x {number} - tile row position
-      * @param y {number} - tile column position
-      * @param z {number} - zoom level
-      */
-    /* CompleteClass */
-    override def cancelTile(x: Double, y: Double, z: Double): Unit = js.native
-    /**
-      * This method requests a single tile according to tile coordinates. It returns either a Tile object if it is already loaded or undefined and starts loading the tile
-      * @param x {number} - tile row position
-      * @param y {number} - tile column position
-      * @param z {number} - The zoom level for which the tile is requested
-      * @param cacheOnly {boolean} - indicates whether only cached tiles are to be considered
-      * @returns {(H.map.provider.Tile | undefined)} - tile object corresponding to requested coordinates
-      */
-    /* CompleteClass */
-    override def requestTile(x: Double, y: Double, z: Double, cacheOnly: Boolean): Tile | Unit = js.native
-    /**
-      * This method requests tiles for the current bounding rectangle at the given zoom level (z-value).
-      * @param boundingRect {H.geo.Rect} - the bounding rectangle for which tiles are to be returned
-      * @param zoomLevel {number} - The zoom level for which the tiles are requested
-      * @param cacheOnly {boolean} - Indicates whether only cached tiles are to be considered
-      * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
-      * @returns {H.map.layer.ITileLayer.Response} - a response object containing the total number of tiles requested and the tile objects that could be immediately returned
-      */
-    /* CompleteClass */
-    override def requestTiles(
-      boundingRect: typings.heremaps.H.geo.Rect,
-      zoomLevel: Double,
-      cacheOnly: Boolean,
-      prioCenter: Point
-    ): typings.heremaps.H.map.layer.ITileLayer.Response = js.native
   }
   
   /**
@@ -156,39 +89,6 @@ object layer extends js.Object {
       */
     def this(provider: TileProvider) = this()
     def this(provider: TileProvider, opt_options: Options) = this()
-    /**
-      * This method cancels a previously requested tile.
-      * @param x {number} - tile row position
-      * @param y {number} - tile column position
-      * @param z {number} - zoom level
-      */
-    /* CompleteClass */
-    override def cancelTile(x: Double, y: Double, z: Double): Unit = js.native
-    /**
-      * This method requests a single tile according to tile coordinates. It returns either a Tile object if it is already loaded or undefined and starts loading the tile
-      * @param x {number} - tile row position
-      * @param y {number} - tile column position
-      * @param z {number} - The zoom level for which the tile is requested
-      * @param cacheOnly {boolean} - indicates whether only cached tiles are to be considered
-      * @returns {(H.map.provider.Tile | undefined)} - tile object corresponding to requested coordinates
-      */
-    /* CompleteClass */
-    override def requestTile(x: Double, y: Double, z: Double, cacheOnly: Boolean): Tile | Unit = js.native
-    /**
-      * This method requests tiles for the current bounding rectangle at the given zoom level (z-value).
-      * @param boundingRect {H.geo.Rect} - the bounding rectangle for which tiles are to be returned
-      * @param zoomLevel {number} - The zoom level for which the tiles are requested
-      * @param cacheOnly {boolean} - Indicates whether only cached tiles are to be considered
-      * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
-      * @returns {H.map.layer.ITileLayer.Response} - a response object containing the total number of tiles requested and the tile objects that could be immediately returned
-      */
-    /* CompleteClass */
-    override def requestTiles(
-      boundingRect: typings.heremaps.H.geo.Rect,
-      zoomLevel: Double,
-      cacheOnly: Boolean,
-      prioCenter: Point
-    ): typings.heremaps.H.map.layer.ITileLayer.Response = js.native
   }
   
 }

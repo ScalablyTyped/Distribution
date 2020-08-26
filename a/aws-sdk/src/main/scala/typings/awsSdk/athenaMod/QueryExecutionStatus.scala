@@ -26,18 +26,38 @@ trait QueryExecutionStatus extends js.Object {
 
 object QueryExecutionStatus {
   @scala.inline
-  def apply(
-    CompletionDateTime: Date = null,
-    State: QueryExecutionState = null,
-    StateChangeReason: String = null,
-    SubmissionDateTime: Date = null
-  ): QueryExecutionStatus = {
+  def apply(): QueryExecutionStatus = {
     val __obj = js.Dynamic.literal()
-    if (CompletionDateTime != null) __obj.updateDynamic("CompletionDateTime")(CompletionDateTime.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StateChangeReason != null) __obj.updateDynamic("StateChangeReason")(StateChangeReason.asInstanceOf[js.Any])
-    if (SubmissionDateTime != null) __obj.updateDynamic("SubmissionDateTime")(SubmissionDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecutionStatus]
   }
+  @scala.inline
+  implicit class QueryExecutionStatusOps[Self <: QueryExecutionStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionDateTime(value: Date): Self = this.set("CompletionDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionDateTime: Self = this.set("CompletionDateTime", js.undefined)
+    @scala.inline
+    def setState(value: QueryExecutionState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStateChangeReason(value: String): Self = this.set("StateChangeReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateChangeReason: Self = this.set("StateChangeReason", js.undefined)
+    @scala.inline
+    def setSubmissionDateTime(value: Date): Self = this.set("SubmissionDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmissionDateTime: Self = this.set("SubmissionDateTime", js.undefined)
+  }
+  
 }
 

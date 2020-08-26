@@ -11,8 +11,8 @@ The Lodash method `_.isFunction` exported as a module.
 | Full name          | lodash.isfunction |
 | Keywords           | lodash-modularized, isfunction |
 | # releases         | 2 |
-| # dependents       | 501 |
-| # downloads        | 52848010 |
+| # dependents       | 504 |
+| # downloads        | 53021196 |
 | # stars            | 0 |
 
 ## Links

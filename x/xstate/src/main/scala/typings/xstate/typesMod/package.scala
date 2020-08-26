@@ -19,7 +19,7 @@ package object typesMod {
     /* context */ TContext, 
     /* event */ TEvent, 
     /* meta */ typings.xstate.typesMod.ActionMeta[TContext, TEvent], 
-    js.Any | scala.Unit
+    scala.Unit
   ]
   type ActionFunctionMap[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = typings.std.Record[
     java.lang.String, 
@@ -66,7 +66,7 @@ package object typesMod {
   type DisposeActivityFunction = js.Function0[scala.Unit]
   type DoneEvent = typings.xstate.typesMod.DoneEventObject with java.lang.String
   type Event[TEvent /* <: typings.xstate.typesMod.EventObject */] = (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | TEvent
-  type EventData = (typings.std.Record[java.lang.String, _]) with js.Object
+  type EventData = (typings.std.Record[java.lang.String, _]) with typings.xstate.anon.`0`
   type EventType = java.lang.String
   type Expr[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */, T] = js.Function2[/* context */ TContext, /* event */ TEvent, T]
   type ExprWithMeta[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */, T] = js.Function3[
@@ -76,7 +76,7 @@ package object typesMod {
     T
   ]
   type ExtractStateValue[TS /* <: typings.xstate.typesMod.StateSchema[_] */, TSS] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof TSS ]:? TSS[K] extends {  states  :any}? keyof TSS[K]['states'] : never | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias xstate.xstate/lib/types.ExtractStateValue<TSS[K], TSS[K]['states']> * / object}
+  {[ K in keyof TSS ]:? TSS[K] extends {  states :any}? keyof TSS[K]['states'] : never | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias xstate.xstate/lib/types.ExtractStateValue<TSS[K], TSS[K]['states']> * / object}
     */ typings.xstate.xstateStrings.ExtractStateValue with org.scalablytyped.runtime.TopLevel[TSS]
   type Guard[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = (typings.xstate.typesMod.GuardPredicate[TContext, TEvent]) | ((typings.std.Record[java.lang.String, _]) with typings.xstate.anon.TypeString)
   type InvokeCallback = js.Function2[
@@ -84,20 +84,23 @@ package object typesMod {
     /* onReceive */ typings.xstate.typesMod.Receiver[typings.xstate.typesMod.EventObject], 
     js.Any
   ]
-  type InvokeConfig[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = (typings.xstate.anon.Data[TContext, TEvent]) | (typings.xstate.typesMod.StateMachine[js.Any, js.Any, js.Any, js.Any])
-  type InvokeCreator[TContext, TEvent, TFinalContext] = js.Function2[
+  type InvokeCreator[TContext, TEvent, TFinalContext] = js.Function3[
     /* context */ TContext, 
     /* event */ TEvent, 
+    /* meta */ typings.xstate.typesMod.InvokeMeta, 
     js.Thenable[TFinalContext] | (typings.xstate.typesMod.StateMachine[TFinalContext, js.Any, js.Any, js.Any]) | typings.xstate.typesMod.Subscribable[js.Any] | typings.xstate.typesMod.InvokeCallback
   ]
   type LogExpr[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = typings.xstate.typesMod.ExprWithMeta[TContext, TEvent, js.Any]
-  type Mapper[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = js.Function2[/* context */ TContext, /* event */ TEvent, js.Any]
+  type Mapper[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */, TParams /* <: js.Object */] = js.Function2[/* context */ TContext, /* event */ TEvent, TParams]
   type MetaObject = typings.std.Record[java.lang.String, js.Any]
   type PathMap[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = org.scalablytyped.runtime.StringDictionary[typings.xstate.typesMod.PathItem[TContext, TEvent]]
   type PathsMap[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = org.scalablytyped.runtime.StringDictionary[typings.xstate.typesMod.PathsItem[TContext, TEvent]]
   type PropertyAssigner[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TContext ]:? (context : TContext, event : TEvent, meta : xstate.xstate/lib/types.AssignMeta<TContext, TEvent>): TContext[K] | TContext[K]}
     */ typings.xstate.xstateStrings.PropertyAssigner with org.scalablytyped.runtime.TopLevel[js.Any]
+  type PropertyMapper[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */, TParams /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof TParams ]:? (context : TContext, event : TEvent): TParams[K] | TParams[K]}
+    */ typings.xstate.xstateStrings.PropertyMapper with org.scalablytyped.runtime.TopLevel[js.Any]
   type Receiver[TEvent /* <: typings.xstate.typesMod.EventObject */] = js.Function1[/* listener */ js.Function1[/* event */ TEvent, scala.Unit], scala.Unit]
   type SendExpr[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */, TSentEvent /* <: typings.xstate.typesMod.EventObject */] = typings.xstate.typesMod.ExprWithMeta[TContext, TEvent, TSentEvent]
   type Sender[TEvent /* <: typings.xstate.typesMod.EventObject */] = js.Function1[/* event */ typings.xstate.typesMod.Event[TEvent], scala.Unit]
@@ -136,7 +139,7 @@ package object typesMod {
     java.lang.String | (typings.xstate.stateNodeMod.StateNode[TContext, js.Any, TEvent, js.Any])
   ]
   type TransitionDefinitionMap[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in TEvent['type'] | xstate.xstate/lib/types.ActionTypes.NullEvent | '*' ]: std.Array<xstate.xstate/lib/types.TransitionDefinition<TContext, K extends TEvent['type']? std.Extract<TEvent, {  type  :K}> : xstate.xstate/lib/types.EventObject>>}
+  {[ K in TEvent['type'] | xstate.xstate/lib/types.ActionTypes.NullEvent | '*' ]: std.Array<xstate.xstate/lib/types.TransitionDefinition<TContext, K extends TEvent['type']? std.Extract<TEvent, {  type :K}> : xstate.xstate/lib/types.EventObject>>}
     */ typings.xstate.xstateStrings.TransitionDefinitionMap with org.scalablytyped.runtime.TopLevel[TEvent]
   type TransitionTarget[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = typings.xstate.typesMod.SingleOrArray[
     java.lang.String | (typings.xstate.stateNodeMod.StateNode[TContext, js.Any, TEvent, js.Any])
@@ -146,7 +149,7 @@ package object typesMod {
   ]
   type TransitionsConfig[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = (typings.xstate.typesMod.TransitionsConfigMap[TContext, TEvent]) | (typings.xstate.typesMod.TransitionsConfigArray[TContext, TEvent])
   type TransitionsConfigArray[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = js.Array[
-    (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in TEvent['type'] ]: xstate.xstate/lib/types.TransitionConfig<TContext, TEvent extends {  type  :K}? TEvent : never> & {  event  :K}}[TEvent['type']] */ js.Any) | ((typings.xstate.typesMod.TransitionConfig[TContext, TEvent]) with typings.xstate.anon.Event) | ((typings.xstate.typesMod.TransitionConfig[TContext, TEvent]) with typings.xstate.anon.`1`)
+    (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in TEvent['type'] ]: xstate.xstate/lib/types.TransitionConfig<TContext, TEvent extends {  type :K}? TEvent : never> & {  event :K}}[TEvent['type']] */ js.Any) | ((typings.xstate.typesMod.TransitionConfig[TContext, TEvent]) with typings.xstate.anon.Event) | ((typings.xstate.typesMod.TransitionConfig[TContext, TEvent]) with typings.xstate.anon.`2`)
   ]
   type ValueAdjacencyMap[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = org.scalablytyped.runtime.StringDictionary[
     typings.std.Record[

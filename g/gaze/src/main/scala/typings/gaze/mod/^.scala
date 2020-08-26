@@ -11,6 +11,11 @@ object ^ extends js.Object {
   def apply(patterns: String): Unit = js.native
   def apply(
     patterns: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+  ): Unit = js.native
+  def apply(
+    patterns: String,
     options: Null,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = js.native
@@ -21,6 +26,11 @@ object ^ extends js.Object {
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ): Unit = js.native
   def apply(patterns: js.Array[String]): Unit = js.native
+  def apply(
+    patterns: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+  ): Unit = js.native
   def apply(
     patterns: js.Array[String],
     options: Null,

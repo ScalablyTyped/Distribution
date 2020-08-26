@@ -43,24 +43,52 @@ trait SchemaOrderLegacyPromotion extends js.Object {
 
 object SchemaOrderLegacyPromotion {
   @scala.inline
-  def apply(
-    benefits: js.Array[SchemaOrderLegacyPromotionBenefit] = null,
-    effectiveDates: String = null,
-    genericRedemptionCode: String = null,
-    id: String = null,
-    longTitle: String = null,
-    productApplicability: String = null,
-    redemptionChannel: String = null
-  ): SchemaOrderLegacyPromotion = {
+  def apply(): SchemaOrderLegacyPromotion = {
     val __obj = js.Dynamic.literal()
-    if (benefits != null) __obj.updateDynamic("benefits")(benefits.asInstanceOf[js.Any])
-    if (effectiveDates != null) __obj.updateDynamic("effectiveDates")(effectiveDates.asInstanceOf[js.Any])
-    if (genericRedemptionCode != null) __obj.updateDynamic("genericRedemptionCode")(genericRedemptionCode.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (longTitle != null) __obj.updateDynamic("longTitle")(longTitle.asInstanceOf[js.Any])
-    if (productApplicability != null) __obj.updateDynamic("productApplicability")(productApplicability.asInstanceOf[js.Any])
-    if (redemptionChannel != null) __obj.updateDynamic("redemptionChannel")(redemptionChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrderLegacyPromotion]
   }
+  @scala.inline
+  implicit class SchemaOrderLegacyPromotionOps[Self <: SchemaOrderLegacyPromotion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBenefitsVarargs(value: SchemaOrderLegacyPromotionBenefit*): Self = this.set("benefits", js.Array(value :_*))
+    @scala.inline
+    def setBenefits(value: js.Array[SchemaOrderLegacyPromotionBenefit]): Self = this.set("benefits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBenefits: Self = this.set("benefits", js.undefined)
+    @scala.inline
+    def setEffectiveDates(value: String): Self = this.set("effectiveDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectiveDates: Self = this.set("effectiveDates", js.undefined)
+    @scala.inline
+    def setGenericRedemptionCode(value: String): Self = this.set("genericRedemptionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenericRedemptionCode: Self = this.set("genericRedemptionCode", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLongTitle(value: String): Self = this.set("longTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongTitle: Self = this.set("longTitle", js.undefined)
+    @scala.inline
+    def setProductApplicability(value: String): Self = this.set("productApplicability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductApplicability: Self = this.set("productApplicability", js.undefined)
+    @scala.inline
+    def setRedemptionChannel(value: String): Self = this.set("redemptionChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedemptionChannel: Self = this.set("redemptionChannel", js.undefined)
+  }
+  
 }
 

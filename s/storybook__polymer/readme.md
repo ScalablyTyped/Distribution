@@ -10,14 +10,15 @@ Storybook for Polymer: Develop Polymer components in isolation with Hot Reloadin
 | ------------------ | :-------------: |
 | Full name          | @storybook/polymer |
 | Keywords           | storybook |
-| # releases         | 396 |
+| # releases         | 406 |
 | # dependents       | 2 |
-| # downloads        | 131852 |
+| # downloads        | 139487 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/master/app/polymer)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
+- [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Fpolymer)
     
 

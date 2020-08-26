@@ -10,23 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientHintWindow")
 @js.native
 class ASPxClientHintWindow ()
-  extends typings.devexpressWeb.ASPxClientHintWindow {
-  /**
-    * Sets the hint's content.
-    * @param html An object that specifies the hint content.
-    * @param options An  object that specifies the hint's options.
-    */
-  /* CompleteClass */
-  override def SetContent(html: js.Any, options: typings.devexpressWeb.ASPxClientHintOptions): Unit = js.native
-  /**
-    * Set the hint's loading animation
-    */
-  /* CompleteClass */
-  override def SetContentLoading(): Unit = js.native
-  /**
-    * Forces the ASPxClientHint's window to recalculate its position.
-    */
-  /* CompleteClass */
-  override def UpdatePosition(): Unit = js.native
-}
+  extends typings.devexpressWeb.ASPxClientHintWindow
 

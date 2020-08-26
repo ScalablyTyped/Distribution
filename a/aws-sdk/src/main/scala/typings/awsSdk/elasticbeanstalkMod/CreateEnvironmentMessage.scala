@@ -66,37 +66,82 @@ trait CreateEnvironmentMessage extends js.Object {
 
 object CreateEnvironmentMessage {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName,
-    CNAMEPrefix: DNSCnamePrefix = null,
-    Description: Description = null,
-    EnvironmentName: EnvironmentName = null,
-    GroupName: GroupName = null,
-    OperationsRole: OperationsRole = null,
-    OptionSettings: ConfigurationOptionSettingsList = null,
-    OptionsToRemove: OptionsSpecifierList = null,
-    PlatformArn: PlatformArn = null,
-    SolutionStackName: SolutionStackName = null,
-    Tags: Tags = null,
-    TemplateName: ConfigurationTemplateName = null,
-    Tier: EnvironmentTier = null,
-    VersionLabel: VersionLabel = null
-  ): CreateEnvironmentMessage = {
+  def apply(ApplicationName: ApplicationName): CreateEnvironmentMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
-    if (CNAMEPrefix != null) __obj.updateDynamic("CNAMEPrefix")(CNAMEPrefix.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (OperationsRole != null) __obj.updateDynamic("OperationsRole")(OperationsRole.asInstanceOf[js.Any])
-    if (OptionSettings != null) __obj.updateDynamic("OptionSettings")(OptionSettings.asInstanceOf[js.Any])
-    if (OptionsToRemove != null) __obj.updateDynamic("OptionsToRemove")(OptionsToRemove.asInstanceOf[js.Any])
-    if (PlatformArn != null) __obj.updateDynamic("PlatformArn")(PlatformArn.asInstanceOf[js.Any])
-    if (SolutionStackName != null) __obj.updateDynamic("SolutionStackName")(SolutionStackName.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TemplateName != null) __obj.updateDynamic("TemplateName")(TemplateName.asInstanceOf[js.Any])
-    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
-    if (VersionLabel != null) __obj.updateDynamic("VersionLabel")(VersionLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEnvironmentMessage]
   }
+  @scala.inline
+  implicit class CreateEnvironmentMessageOps[Self <: CreateEnvironmentMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCNAMEPrefix(value: DNSCnamePrefix): Self = this.set("CNAMEPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCNAMEPrefix: Self = this.set("CNAMEPrefix", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    @scala.inline
+    def setGroupName(value: GroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setOperationsRole(value: OperationsRole): Self = this.set("OperationsRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationsRole: Self = this.set("OperationsRole", js.undefined)
+    @scala.inline
+    def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = this.set("OptionSettings", js.Array(value :_*))
+    @scala.inline
+    def setOptionSettings(value: ConfigurationOptionSettingsList): Self = this.set("OptionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionSettings: Self = this.set("OptionSettings", js.undefined)
+    @scala.inline
+    def setOptionsToRemoveVarargs(value: OptionSpecification*): Self = this.set("OptionsToRemove", js.Array(value :_*))
+    @scala.inline
+    def setOptionsToRemove(value: OptionsSpecifierList): Self = this.set("OptionsToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionsToRemove: Self = this.set("OptionsToRemove", js.undefined)
+    @scala.inline
+    def setPlatformArn(value: PlatformArn): Self = this.set("PlatformArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformArn: Self = this.set("PlatformArn", js.undefined)
+    @scala.inline
+    def setSolutionStackName(value: SolutionStackName): Self = this.set("SolutionStackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionStackName: Self = this.set("SolutionStackName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTemplateName(value: ConfigurationTemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
+    @scala.inline
+    def setTier(value: EnvironmentTier): Self = this.set("Tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("Tier", js.undefined)
+    @scala.inline
+    def setVersionLabel(value: VersionLabel): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionLabel: Self = this.set("VersionLabel", js.undefined)
+  }
+  
 }
 

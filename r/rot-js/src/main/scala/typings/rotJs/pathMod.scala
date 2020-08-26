@@ -33,7 +33,7 @@ object pathMod extends js.Object {
                 /* toX */ Double, 
                 /* toY */ Double, 
                 /* passableCallback */ PassableCallback, 
-                js.UndefOr[/* options */ PartialOptions], 
+                /* options */ js.UndefOr[PartialOptions], 
                 typings.rotJs.astarMod.default
               ]
             ]

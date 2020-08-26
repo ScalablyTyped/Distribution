@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__globals
 
-Typings are for version 25.5.2
+Typings are for version 26.2.0
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 25.5.2
 | ------------------ | :-------------: |
 | Full name          | @jest/globals |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 1300386 |
+| # releases         | 12 |
+| # dependents       | 10 |
+| # downloads        | 26487114 |
 | # stars            | 0 |
 
 ## Links

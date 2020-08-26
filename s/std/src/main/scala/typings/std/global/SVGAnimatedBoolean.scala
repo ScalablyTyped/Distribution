@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SVGAnimatedBoolean")
 @js.native
 class SVGAnimatedBoolean ()
-  extends typings.std.SVGAnimatedBoolean {
-  /* CompleteClass */
-  override val animVal: scala.Boolean = js.native
-  /* CompleteClass */
-  override var baseVal: scala.Boolean = js.native
-}
+  extends typings.std.SVGAnimatedBoolean
 
 @JSGlobal("SVGAnimatedBoolean")
 @js.native

@@ -62,36 +62,78 @@ trait GlobalReplicationGroup extends js.Object {
 
 object GlobalReplicationGroup {
   @scala.inline
-  def apply(
-    ARN: String = null,
-    AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    CacheNodeType: String = null,
-    ClusterEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    Engine: String = null,
-    EngineVersion: String = null,
-    GlobalNodeGroups: GlobalNodeGroupList = null,
-    GlobalReplicationGroupDescription: String = null,
-    GlobalReplicationGroupId: String = null,
-    Members: GlobalReplicationGroupMemberList = null,
-    Status: String = null,
-    TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
-  ): GlobalReplicationGroup = {
+  def apply(): GlobalReplicationGroup = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AuthTokenEnabled)) __obj.updateDynamic("AuthTokenEnabled")(AuthTokenEnabled.get.asInstanceOf[js.Any])
-    if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ClusterEnabled)) __obj.updateDynamic("ClusterEnabled")(ClusterEnabled.get.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (GlobalNodeGroups != null) __obj.updateDynamic("GlobalNodeGroups")(GlobalNodeGroups.asInstanceOf[js.Any])
-    if (GlobalReplicationGroupDescription != null) __obj.updateDynamic("GlobalReplicationGroupDescription")(GlobalReplicationGroupDescription.asInstanceOf[js.Any])
-    if (GlobalReplicationGroupId != null) __obj.updateDynamic("GlobalReplicationGroupId")(GlobalReplicationGroupId.asInstanceOf[js.Any])
-    if (Members != null) __obj.updateDynamic("Members")(Members.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalReplicationGroup]
   }
+  @scala.inline
+  implicit class GlobalReplicationGroupOps[Self <: GlobalReplicationGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setAtRestEncryptionEnabled(value: BooleanOptional): Self = this.set("AtRestEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtRestEncryptionEnabled: Self = this.set("AtRestEncryptionEnabled", js.undefined)
+    @scala.inline
+    def setAuthTokenEnabled(value: BooleanOptional): Self = this.set("AuthTokenEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthTokenEnabled: Self = this.set("AuthTokenEnabled", js.undefined)
+    @scala.inline
+    def setCacheNodeType(value: String): Self = this.set("CacheNodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodeType: Self = this.set("CacheNodeType", js.undefined)
+    @scala.inline
+    def setClusterEnabled(value: BooleanOptional): Self = this.set("ClusterEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterEnabled: Self = this.set("ClusterEnabled", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setGlobalNodeGroupsVarargs(value: GlobalNodeGroup*): Self = this.set("GlobalNodeGroups", js.Array(value :_*))
+    @scala.inline
+    def setGlobalNodeGroups(value: GlobalNodeGroupList): Self = this.set("GlobalNodeGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalNodeGroups: Self = this.set("GlobalNodeGroups", js.undefined)
+    @scala.inline
+    def setGlobalReplicationGroupDescription(value: String): Self = this.set("GlobalReplicationGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalReplicationGroupDescription: Self = this.set("GlobalReplicationGroupDescription", js.undefined)
+    @scala.inline
+    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalReplicationGroupId: Self = this.set("GlobalReplicationGroupId", js.undefined)
+    @scala.inline
+    def setMembersVarargs(value: GlobalReplicationGroupMember*): Self = this.set("Members", js.Array(value :_*))
+    @scala.inline
+    def setMembers(value: GlobalReplicationGroupMemberList): Self = this.set("Members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMembers: Self = this.set("Members", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTransitEncryptionEnabled(value: BooleanOptional): Self = this.set("TransitEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitEncryptionEnabled: Self = this.set("TransitEncryptionEnabled", js.undefined)
+  }
+  
 }
 

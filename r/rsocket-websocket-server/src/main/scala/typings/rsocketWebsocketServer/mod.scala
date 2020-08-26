@@ -17,6 +17,11 @@ object mod extends js.Object {
     def this(options: ServerOptions, encoders: Encoders[_]) = this()
     def this(
       options: ServerOptions,
+      encoders: js.UndefOr[scala.Nothing],
+      factory: js.Function1[/* options */ ServerOptions, Server]
+    ) = this()
+    def this(
+      options: ServerOptions,
       encoders: Encoders[_],
       factory: js.Function1[/* options */ ServerOptions, Server]
     ) = this()

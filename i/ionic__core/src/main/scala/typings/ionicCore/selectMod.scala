@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 object selectMod extends js.Object {
   @js.native
   class Select () extends ComponentInterface {
-    var buttonEl: js.UndefOr[js.Any] = js.native
+    var buttonEl: js.Any = js.native
     /**
       * The text to display on the cancel button.
       */
@@ -70,7 +70,7 @@ object selectMod extends js.Object {
     /**
       * Emitted when the value has changed.
       */
-    var ionChange: EventEmitter[SelectChangeEventDetail] = js.native
+    var ionChange: EventEmitter[SelectChangeEventDetail[_]] = js.native
     /**
       * Emitted when the select has focus.
       */
@@ -85,7 +85,7 @@ object selectMod extends js.Object {
       * If `true`, the select can accept multiple values.
       */
     var multiple: Boolean = js.native
-    var mutationO: js.UndefOr[js.Any] = js.native
+    var mutationO: js.Any = js.native
     /**
       * The name of the control, which is submitted with the form data.
       */
@@ -100,7 +100,7 @@ object selectMod extends js.Object {
     var openActionSheet: js.Any = js.native
     var openAlert: js.Any = js.native
     var openPopover: js.Any = js.native
-    var overlay: js.UndefOr[js.Any] = js.native
+    var overlay: js.Any = js.native
     /**
       * The text to display when the select is empty.
       */

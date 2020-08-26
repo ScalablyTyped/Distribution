@@ -10,9 +10,9 @@ Lightweight and simple carousel with no dependencies
 | ------------------ | :-------------: |
 | Full name          | siema |
 | Keywords           | slider, carousel, lightweight |
-| # releases         | 8 |
+| # releases         | 5 |
 | # dependents       | 18 |
-| # downloads        | 611883 |
+| # downloads        | 637388 |
 | # stars            | 0 |
 
 ## Links

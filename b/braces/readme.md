@@ -11,8 +11,8 @@ Bash-like brace expansion, implemented in JavaScript. Safer than other brace exp
 | Full name          | braces |
 | Keywords           | alpha, alphabetical, bash, brace, braces, expand, expansion, filepath, fill, fs, glob, globbing, letter, match, matches, matching, number, numerical, path, range, ranges, sh |
 | # releases         | 6 |
-| # dependents       | 130 |
-| # downloads        | 790030943 |
+| # dependents       | 133 |
+| # downloads        | 807743305 |
 | # stars            | 3 |
 
 ## Links

@@ -19,17 +19,5 @@ class Point protected ()
     * @see https://docs.scriptable.app/point/#-new-point
     */
   def this(x: Double, y: Double) = this()
-  /**
-    * _X value._
-    * @see https://docs.scriptable.app/point/#x
-    */
-  /* CompleteClass */
-  override var x: Double = js.native
-  /**
-    * _Y value._
-    * @see https://docs.scriptable.app/point/#y
-    */
-  /* CompleteClass */
-  override var y: Double = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Immersive VR - session that provides exclusive access to VR device with best available tracking
-  features.
+  * features.
   */
 @JSImport("playcanvas", "XRTYPE_VR")
 @js.native

@@ -30,18 +30,38 @@ trait SchemaQuota extends js.Object {
 
 object SchemaQuota {
   @scala.inline
-  def apply(
-    limit: js.UndefOr[Double] = js.undefined,
-    metric: String = null,
-    owner: String = null,
-    usage: js.UndefOr[Double] = js.undefined
-  ): SchemaQuota = {
+  def apply(): SchemaQuota = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(usage)) __obj.updateDynamic("usage")(usage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuota]
   }
+  @scala.inline
+  implicit class SchemaQuotaOps[Self <: SchemaQuota] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMetric(value: String): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+    @scala.inline
+    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setUsage(value: Double): Self = this.set("usage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsage: Self = this.set("usage", js.undefined)
+  }
+  
 }
 

@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AllowFieldDragging extends js.Object {
-  var allowFieldDragging: js.UndefOr[Boolean] = js.undefined
-  var showColumnFields: js.UndefOr[Boolean] = js.undefined
-  var showDataFields: js.UndefOr[Boolean] = js.undefined
-  var showFilterFields: js.UndefOr[Boolean] = js.undefined
-  var showRowFields: js.UndefOr[Boolean] = js.undefined
-  var texts: js.UndefOr[ColumnFieldArea] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var allowFieldDragging: js.UndefOr[Boolean] = js.native
+  var showColumnFields: js.UndefOr[Boolean] = js.native
+  var showDataFields: js.UndefOr[Boolean] = js.native
+  var showFilterFields: js.UndefOr[Boolean] = js.native
+  var showRowFields: js.UndefOr[Boolean] = js.native
+  var texts: js.UndefOr[ColumnFieldArea] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object AllowFieldDragging {
   @scala.inline
-  def apply(
-    allowFieldDragging: js.UndefOr[Boolean] = js.undefined,
-    showColumnFields: js.UndefOr[Boolean] = js.undefined,
-    showDataFields: js.UndefOr[Boolean] = js.undefined,
-    showFilterFields: js.UndefOr[Boolean] = js.undefined,
-    showRowFields: js.UndefOr[Boolean] = js.undefined,
-    texts: ColumnFieldArea = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): AllowFieldDragging = {
+  def apply(): AllowFieldDragging = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFieldDragging)) __obj.updateDynamic("allowFieldDragging")(allowFieldDragging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnFields)) __obj.updateDynamic("showColumnFields")(showColumnFields.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDataFields)) __obj.updateDynamic("showDataFields")(showDataFields.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFilterFields)) __obj.updateDynamic("showFilterFields")(showFilterFields.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowFields)) __obj.updateDynamic("showRowFields")(showRowFields.get.asInstanceOf[js.Any])
-    if (texts != null) __obj.updateDynamic("texts")(texts.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowFieldDragging]
   }
+  @scala.inline
+  implicit class AllowFieldDraggingOps[Self <: AllowFieldDragging] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowFieldDragging(value: Boolean): Self = this.set("allowFieldDragging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFieldDragging: Self = this.set("allowFieldDragging", js.undefined)
+    @scala.inline
+    def setShowColumnFields(value: Boolean): Self = this.set("showColumnFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowColumnFields: Self = this.set("showColumnFields", js.undefined)
+    @scala.inline
+    def setShowDataFields(value: Boolean): Self = this.set("showDataFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDataFields: Self = this.set("showDataFields", js.undefined)
+    @scala.inline
+    def setShowFilterFields(value: Boolean): Self = this.set("showFilterFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFilterFields: Self = this.set("showFilterFields", js.undefined)
+    @scala.inline
+    def setShowRowFields(value: Boolean): Self = this.set("showRowFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowRowFields: Self = this.set("showRowFields", js.undefined)
+    @scala.inline
+    def setTexts(value: ColumnFieldArea): Self = this.set("texts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTexts: Self = this.set("texts", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

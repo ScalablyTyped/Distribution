@@ -22,14 +22,30 @@ trait UpdateThingGroupRequest extends js.Object {
 
 object UpdateThingGroupRequest {
   @scala.inline
-  def apply(
-    thingGroupName: ThingGroupName,
-    thingGroupProperties: ThingGroupProperties,
-    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
-  ): UpdateThingGroupRequest = {
+  def apply(thingGroupName: ThingGroupName, thingGroupProperties: ThingGroupProperties): UpdateThingGroupRequest = {
     val __obj = js.Dynamic.literal(thingGroupName = thingGroupName.asInstanceOf[js.Any], thingGroupProperties = thingGroupProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThingGroupRequest]
   }
+  @scala.inline
+  implicit class UpdateThingGroupRequestOps[Self <: UpdateThingGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingGroupName(value: ThingGroupName): Self = this.set("thingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThingGroupProperties(value: ThingGroupProperties): Self = this.set("thingGroupProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpectedVersion(value: OptionalVersion): Self = this.set("expectedVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedVersion: Self = this.set("expectedVersion", js.undefined)
+  }
+  
 }
 

@@ -27,22 +27,18 @@ class WidgetObject protected () extends Element {
   var model_FWidgetObject: IModel = js.native
   def containerAsCustomWidget: CustomWidget = js.native
   def containerAsWidgetValue: WidgetValue = js.native
-  def labelTemplate(): js.Any = js.native
-  def labelTemplate(newValue: ClientTemplate): js.Any = js.native
   /**
     * In version 8.1.0: deleted
     * In version 7.23.0: introduced
     */
-  @JSName("labelTemplate")
-  def labelTemplate_Union: ClientTemplate | Null = js.native
+  def labelTemplate: ClientTemplate | Null = js.native
+  def labelTemplate_=(newValue: ClientTemplate | Null): Unit = js.native
   def properties: IList[WidgetProperty] = js.native
-  def `type`(): js.Any = js.native
-  def `type`(newValue: WidgetObjectType): js.Any = js.native
   /**
     * In version 7.13.0: added optional
     */
-  @JSName("type")
-  def type_Union: WidgetObjectType | Null = js.native
+  def `type`: WidgetObjectType | Null = js.native
+  def type_=(newValue: WidgetObjectType | Null): Unit = js.native
 }
 
 /* static members */

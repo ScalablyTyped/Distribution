@@ -33,6 +33,7 @@ object tensor6d extends js.Object {
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
   def apply(values: TensorLike6D): Tensor6D = js.native
+  def apply(values: TensorLike6D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor6D = js.native
   def apply(values: TensorLike6D, shape: js.Tuple6[Double, Double, Double, Double, Double, Double]): Tensor6D = js.native
   def apply(
     values: TensorLike6D,

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CryptoHashSha256Wrap extends js.Object {
   /**
     * Finalize the instance.
@@ -13,13 +14,13 @@ trait CryptoHashSha256Wrap extends js.Object {
     *
     * The generated hash is stored in `output`.
     */
-  def `final`(output: Buffer): Unit
+  def `final`(output: Buffer): Unit = js.native
   /**
     * Update the instance with a new piece of data.
     *
     * * `input` should be a buffer of any size.
     */
-  def update(input: Buffer): Unit
+  def update(input: Buffer): Unit = js.native
 }
 
 object CryptoHashSha256Wrap {
@@ -29,5 +30,22 @@ object CryptoHashSha256Wrap {
     __obj.updateDynamic("final")(js.Any.fromFunction1(`final`))
     __obj.asInstanceOf[CryptoHashSha256Wrap]
   }
+  @scala.inline
+  implicit class CryptoHashSha256WrapOps[Self <: CryptoHashSha256Wrap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFinal(value: Buffer => Unit): Self = this.set("final", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUpdate(value: Buffer => Unit): Self = this.set("update", js.Any.fromFunction1(value))
+  }
+  
 }
 

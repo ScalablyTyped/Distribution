@@ -18,11 +18,32 @@ trait DescribeConversionTasksRequest extends js.Object {
 
 object DescribeConversionTasksRequest {
   @scala.inline
-  def apply(ConversionTaskIds: ConversionIdStringList = null, DryRun: js.UndefOr[Boolean] = js.undefined): DescribeConversionTasksRequest = {
+  def apply(): DescribeConversionTasksRequest = {
     val __obj = js.Dynamic.literal()
-    if (ConversionTaskIds != null) __obj.updateDynamic("ConversionTaskIds")(ConversionTaskIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConversionTasksRequest]
   }
+  @scala.inline
+  implicit class DescribeConversionTasksRequestOps[Self <: DescribeConversionTasksRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConversionTaskIdsVarargs(value: ConversionTaskId*): Self = this.set("ConversionTaskIds", js.Array(value :_*))
+    @scala.inline
+    def setConversionTaskIds(value: ConversionIdStringList): Self = this.set("ConversionTaskIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionTaskIds: Self = this.set("ConversionTaskIds", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

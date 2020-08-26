@@ -12,7 +12,7 @@ Do you use tags to organize content on your site? This plugin will turn your bor
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 93650 |
+| # downloads        | 97756 |
 | # stars            | 1 |
 
 ## Links

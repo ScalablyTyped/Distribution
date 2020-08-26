@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface describing the data returned by calling `workbookRangeAreas.toJSON()`. */
+@js.native
 trait WorkbookRangeAreasData extends js.Object {
   /**
     *
@@ -13,7 +14,7 @@ trait WorkbookRangeAreasData extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var addresses: js.UndefOr[js.Array[String]] = js.undefined
+  var addresses: js.UndefOr[js.Array[String]] = js.native
   /**
     *
     * Returns the RangeAreasCollection object, each RangeAreas in the collection represent one or more rectangle ranges in one worksheet.
@@ -21,7 +22,7 @@ trait WorkbookRangeAreasData extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var areas: js.UndefOr[js.Array[RangeAreasData]] = js.undefined
+  var areas: js.UndefOr[js.Array[RangeAreasData]] = js.native
   /**
     *
     * Returns a collection of ranges that comprises this object.
@@ -29,21 +30,45 @@ trait WorkbookRangeAreasData extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var ranges: js.UndefOr[js.Array[RangeData]] = js.undefined
+  var ranges: js.UndefOr[js.Array[RangeData]] = js.native
 }
 
 object WorkbookRangeAreasData {
   @scala.inline
-  def apply(
-    addresses: js.Array[String] = null,
-    areas: js.Array[RangeAreasData] = null,
-    ranges: js.Array[RangeData] = null
-  ): WorkbookRangeAreasData = {
+  def apply(): WorkbookRangeAreasData = {
     val __obj = js.Dynamic.literal()
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
-    if (areas != null) __obj.updateDynamic("areas")(areas.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookRangeAreasData]
   }
+  @scala.inline
+  implicit class WorkbookRangeAreasDataOps[Self <: WorkbookRangeAreasData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressesVarargs(value: String*): Self = this.set("addresses", js.Array(value :_*))
+    @scala.inline
+    def setAddresses(value: js.Array[String]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    @scala.inline
+    def setAreasVarargs(value: RangeAreasData*): Self = this.set("areas", js.Array(value :_*))
+    @scala.inline
+    def setAreas(value: js.Array[RangeAreasData]): Self = this.set("areas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAreas: Self = this.set("areas", js.undefined)
+    @scala.inline
+    def setRangesVarargs(value: RangeData*): Self = this.set("ranges", js.Array(value :_*))
+    @scala.inline
+    def setRanges(value: js.Array[RangeData]): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRanges: Self = this.set("ranges", js.undefined)
+  }
+  
 }
 

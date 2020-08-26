@@ -54,32 +54,66 @@ trait DescribeUserProfileResponse extends js.Object {
 
 object DescribeUserProfileResponse {
   @scala.inline
-  def apply(
-    CreationTime: CreationTime = null,
-    DomainId: DomainId = null,
-    FailureReason: FailureReason = null,
-    HomeEfsFileSystemUid: EfsUid = null,
-    LastModifiedTime: LastModifiedTime = null,
-    SingleSignOnUserIdentifier: SingleSignOnUserIdentifier = null,
-    SingleSignOnUserValue: String256 = null,
-    Status: UserProfileStatus = null,
-    UserProfileArn: UserProfileArn = null,
-    UserProfileName: UserProfileName = null,
-    UserSettings: UserSettings = null
-  ): DescribeUserProfileResponse = {
+  def apply(): DescribeUserProfileResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DomainId != null) __obj.updateDynamic("DomainId")(DomainId.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (HomeEfsFileSystemUid != null) __obj.updateDynamic("HomeEfsFileSystemUid")(HomeEfsFileSystemUid.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (SingleSignOnUserIdentifier != null) __obj.updateDynamic("SingleSignOnUserIdentifier")(SingleSignOnUserIdentifier.asInstanceOf[js.Any])
-    if (SingleSignOnUserValue != null) __obj.updateDynamic("SingleSignOnUserValue")(SingleSignOnUserValue.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UserProfileArn != null) __obj.updateDynamic("UserProfileArn")(UserProfileArn.asInstanceOf[js.Any])
-    if (UserProfileName != null) __obj.updateDynamic("UserProfileName")(UserProfileName.asInstanceOf[js.Any])
-    if (UserSettings != null) __obj.updateDynamic("UserSettings")(UserSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUserProfileResponse]
   }
+  @scala.inline
+  implicit class DescribeUserProfileResponseOps[Self <: DescribeUserProfileResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDomainId(value: DomainId): Self = this.set("DomainId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainId: Self = this.set("DomainId", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setHomeEfsFileSystemUid(value: EfsUid): Self = this.set("HomeEfsFileSystemUid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeEfsFileSystemUid: Self = this.set("HomeEfsFileSystemUid", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: LastModifiedTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setSingleSignOnUserIdentifier(value: SingleSignOnUserIdentifier): Self = this.set("SingleSignOnUserIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleSignOnUserIdentifier: Self = this.set("SingleSignOnUserIdentifier", js.undefined)
+    @scala.inline
+    def setSingleSignOnUserValue(value: String256): Self = this.set("SingleSignOnUserValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleSignOnUserValue: Self = this.set("SingleSignOnUserValue", js.undefined)
+    @scala.inline
+    def setStatus(value: UserProfileStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUserProfileArn(value: UserProfileArn): Self = this.set("UserProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProfileArn: Self = this.set("UserProfileArn", js.undefined)
+    @scala.inline
+    def setUserProfileName(value: UserProfileName): Self = this.set("UserProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProfileName: Self = this.set("UserProfileName", js.undefined)
+    @scala.inline
+    def setUserSettings(value: UserSettings): Self = this.set("UserSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserSettings: Self = this.set("UserSettings", js.undefined)
+  }
+  
 }
 

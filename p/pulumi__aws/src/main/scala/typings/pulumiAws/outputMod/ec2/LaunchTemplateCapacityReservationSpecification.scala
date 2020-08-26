@@ -18,14 +18,30 @@ trait LaunchTemplateCapacityReservationSpecification extends js.Object {
 
 object LaunchTemplateCapacityReservationSpecification {
   @scala.inline
-  def apply(
-    capacityReservationPreference: String = null,
-    capacityReservationTarget: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget = null
-  ): LaunchTemplateCapacityReservationSpecification = {
+  def apply(): LaunchTemplateCapacityReservationSpecification = {
     val __obj = js.Dynamic.literal()
-    if (capacityReservationPreference != null) __obj.updateDynamic("capacityReservationPreference")(capacityReservationPreference.asInstanceOf[js.Any])
-    if (capacityReservationTarget != null) __obj.updateDynamic("capacityReservationTarget")(capacityReservationTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateCapacityReservationSpecification]
   }
+  @scala.inline
+  implicit class LaunchTemplateCapacityReservationSpecificationOps[Self <: LaunchTemplateCapacityReservationSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityReservationPreference(value: String): Self = this.set("capacityReservationPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityReservationPreference: Self = this.set("capacityReservationPreference", js.undefined)
+    @scala.inline
+    def setCapacityReservationTarget(value: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget): Self = this.set("capacityReservationTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityReservationTarget: Self = this.set("capacityReservationTarget", js.undefined)
+  }
+  
 }
 

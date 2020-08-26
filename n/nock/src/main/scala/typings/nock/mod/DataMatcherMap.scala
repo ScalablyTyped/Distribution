@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataMatcherMap
   extends /* key */ StringDictionary[DataMatcher]
      with _DataMatcher
@@ -12,9 +13,8 @@ trait DataMatcherMap
 
 object DataMatcherMap {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[DataMatcher] = null): DataMatcherMap = {
+  def apply(): DataMatcherMap = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DataMatcherMap]
   }
 }

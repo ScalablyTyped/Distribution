@@ -5,16 +5,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<named-routes.named-routes.RouterOptions> */
+@js.native
 trait PartialRouterOptions extends js.Object {
-  var caseSensitive: js.UndefOr[Boolean] = js.undefined
+  var caseSensitive: js.UndefOr[Boolean] = js.native
 }
 
 object PartialRouterOptions {
   @scala.inline
-  def apply(caseSensitive: js.UndefOr[Boolean] = js.undefined): PartialRouterOptions = {
+  def apply(): PartialRouterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialRouterOptions]
   }
+  @scala.inline
+  implicit class PartialRouterOptionsOps[Self <: PartialRouterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+  }
+  
 }
 

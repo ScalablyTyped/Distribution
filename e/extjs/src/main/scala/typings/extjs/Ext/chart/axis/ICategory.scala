@@ -1,93 +1,43 @@
 package typings.extjs.Ext.chart.axis
 
-import typings.extjs.Ext.Array
-import typings.extjs.Ext.IClass
-import typings.extjs.Ext.chart.ILabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICategory extends IAxis {
   /** [Config Option] (Boolean) */
-  var calculateCategoryCount: js.UndefOr[Boolean] = js.undefined
+  var calculateCategoryCount: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String) */
-  var categoryNames: js.UndefOr[String] = js.undefined
+  var categoryNames: js.UndefOr[String] = js.native
 }
 
 object ICategory {
   @scala.inline
-  def apply(
-    adjustEnd: js.UndefOr[Boolean] = js.undefined,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    calculateCategoryCount: js.UndefOr[Boolean] = js.undefined,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    categoryNames: String = null,
-    config: js.Any = null,
-    dashSize: js.UndefOr[Double] = js.undefined,
-    drawAxis: /* init */ js.UndefOr[js.Any] => Unit = null,
-    drawGrid: () => Unit = null,
-    drawLabel: () => Unit = null,
-    extend: String = null,
-    fields: Array = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    grid: js.Any = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => ICategory = null,
-    label: ILabel = null,
-    length: js.UndefOr[Double] = js.undefined,
-    majorTickSteps: js.UndefOr[Double] = js.undefined,
-    minorTickSteps: js.UndefOr[Double] = js.undefined,
-    mixins: js.Any = null,
-    position: String = null,
-    requires: Array = null,
-    self: IClass = null,
-    setTitle: /* title */ js.UndefOr[String] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    title: String = null,
-    uses: Array = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): ICategory = {
+  def apply(): ICategory = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adjustEnd)) __obj.updateDynamic("adjustEnd")(adjustEnd.get.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculateCategoryCount)) __obj.updateDynamic("calculateCategoryCount")(calculateCategoryCount.get.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (categoryNames != null) __obj.updateDynamic("categoryNames")(categoryNames.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(dashSize)) __obj.updateDynamic("dashSize")(dashSize.get.asInstanceOf[js.Any])
-    if (drawAxis != null) __obj.updateDynamic("drawAxis")(js.Any.fromFunction1(drawAxis))
-    if (drawGrid != null) __obj.updateDynamic("drawGrid")(js.Any.fromFunction0(drawGrid))
-    if (drawLabel != null) __obj.updateDynamic("drawLabel")(js.Any.fromFunction0(drawLabel))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(majorTickSteps)) __obj.updateDynamic("majorTickSteps")(majorTickSteps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minorTickSteps)) __obj.updateDynamic("minorTickSteps")(minorTickSteps.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICategory]
   }
+  @scala.inline
+  implicit class ICategoryOps[Self <: ICategory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCalculateCategoryCount(value: Boolean): Self = this.set("calculateCategoryCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalculateCategoryCount: Self = this.set("calculateCategoryCount", js.undefined)
+    @scala.inline
+    def setCategoryNames(value: String): Self = this.set("categoryNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryNames: Self = this.set("categoryNames", js.undefined)
+  }
+  
 }
 

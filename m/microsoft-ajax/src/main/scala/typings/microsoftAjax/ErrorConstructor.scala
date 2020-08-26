@@ -16,39 +16,97 @@ trait ErrorConstructor extends js.Object {
     * Creates an Error object that represents the Sys.ArgumentException exception.
     */
   def argument(): Error = js.native
+  def argument(paramName: js.UndefOr[scala.Nothing], message: java.lang.String): Error = js.native
   def argument(paramName: js.Any): Error = js.native
   def argument(paramName: js.Any, message: java.lang.String): Error = js.native
   /**
     * Creates an Error object that represents the Sys.ArgumentNullException exception.
     */
   def argumentNull(): Error = js.native
+  def argumentNull(paramName: js.UndefOr[scala.Nothing], message: java.lang.String): Error = js.native
   def argumentNull(paramName: js.Any): Error = js.native
   def argumentNull(paramName: js.Any, message: java.lang.String): Error = js.native
   /**
     * Creates an Error object that represents the Sys.ArgumentOutOfRangeException exception.
     */
   def argumentOutOfRange(): Error = js.native
+  def argumentOutOfRange(
+    paramName: js.UndefOr[scala.Nothing],
+    actualValue: js.UndefOr[scala.Nothing],
+    message: java.lang.String
+  ): Error = js.native
+  def argumentOutOfRange(paramName: js.UndefOr[scala.Nothing], actualValue: js.Any): Error = js.native
+  def argumentOutOfRange(paramName: js.UndefOr[scala.Nothing], actualValue: js.Any, message: java.lang.String): Error = js.native
   def argumentOutOfRange(paramName: java.lang.String): Error = js.native
+  def argumentOutOfRange(paramName: java.lang.String, actualValue: js.UndefOr[scala.Nothing], message: java.lang.String): Error = js.native
   def argumentOutOfRange(paramName: java.lang.String, actualValue: js.Any): Error = js.native
   def argumentOutOfRange(paramName: java.lang.String, actualValue: js.Any, message: java.lang.String): Error = js.native
   /**
     * Creates an Error object that represents the Sys.ArgumentTypeException exception.
     */
   def argumentType(): Error = js.native
+  def argumentType(
+    paramName: js.UndefOr[scala.Nothing],
+    actualType: js.UndefOr[scala.Nothing],
+    expectedType: js.UndefOr[scala.Nothing],
+    message: java.lang.String
+  ): Error = js.native
+  def argumentType(paramName: js.UndefOr[scala.Nothing], actualType: js.UndefOr[scala.Nothing], expectedType: js.Any): Error = js.native
+  def argumentType(
+    paramName: js.UndefOr[scala.Nothing],
+    actualType: js.UndefOr[scala.Nothing],
+    expectedType: js.Any,
+    message: java.lang.String
+  ): Error = js.native
+  def argumentType(paramName: js.UndefOr[scala.Nothing], actualType: js.Any): Error = js.native
+  def argumentType(
+    paramName: js.UndefOr[scala.Nothing],
+    actualType: js.Any,
+    expectedType: js.UndefOr[scala.Nothing],
+    message: java.lang.String
+  ): Error = js.native
+  def argumentType(paramName: js.UndefOr[scala.Nothing], actualType: js.Any, expectedType: js.Any): Error = js.native
+  def argumentType(
+    paramName: js.UndefOr[scala.Nothing],
+    actualType: js.Any,
+    expectedType: js.Any,
+    message: java.lang.String
+  ): Error = js.native
   def argumentType(paramName: java.lang.String): Error = js.native
+  def argumentType(
+    paramName: java.lang.String,
+    actualType: js.UndefOr[scala.Nothing],
+    expectedType: js.UndefOr[scala.Nothing],
+    message: java.lang.String
+  ): Error = js.native
+  def argumentType(paramName: java.lang.String, actualType: js.UndefOr[scala.Nothing], expectedType: js.Any): Error = js.native
+  def argumentType(
+    paramName: java.lang.String,
+    actualType: js.UndefOr[scala.Nothing],
+    expectedType: js.Any,
+    message: java.lang.String
+  ): Error = js.native
   def argumentType(paramName: java.lang.String, actualType: js.Any): Error = js.native
+  def argumentType(
+    paramName: java.lang.String,
+    actualType: js.Any,
+    expectedType: js.UndefOr[scala.Nothing],
+    message: java.lang.String
+  ): Error = js.native
   def argumentType(paramName: java.lang.String, actualType: js.Any, expectedType: js.Any): Error = js.native
   def argumentType(paramName: java.lang.String, actualType: js.Any, expectedType: js.Any, message: java.lang.String): Error = js.native
   /**
     * Creates an Error object that represents the Sys.ArgumentUndefinedException exception.
     */
   def argumentUndefined(): Error = js.native
+  def argumentUndefined(paramName: js.UndefOr[scala.Nothing], message: java.lang.String): Error = js.native
   def argumentUndefined(paramName: java.lang.String): Error = js.native
   def argumentUndefined(paramName: java.lang.String, message: java.lang.String): Error = js.native
   /**
     * Creates an Error object that can contain additional error information.
     */
   def create(): Error = js.native
+  def create(message: js.UndefOr[scala.Nothing], errorInfo: js.Object): Error = js.native
   def create(message: java.lang.String): Error = js.native
   def create(message: java.lang.String, errorInfo: js.Object): Error = js.native
   /**

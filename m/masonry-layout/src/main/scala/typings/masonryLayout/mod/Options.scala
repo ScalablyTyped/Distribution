@@ -4,56 +4,95 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var columnWidth: js.UndefOr[js.Any] = js.undefined
+  var columnWidth: js.UndefOr[js.Any] = js.native
   // setup
-  var containerStyle: js.UndefOr[js.Object] = js.undefined
-  var fitWidth: js.UndefOr[Boolean] = js.undefined
-  var gutter: js.UndefOr[js.Any] = js.undefined
-  var horizontalOrder: js.UndefOr[Boolean] = js.undefined
-  var initLayout: js.UndefOr[Boolean] = js.undefined
+  var containerStyle: js.UndefOr[js.Object] = js.native
+  var fitWidth: js.UndefOr[Boolean] = js.native
+  var gutter: js.UndefOr[js.Any] = js.native
+  var horizontalOrder: js.UndefOr[Boolean] = js.native
+  var initLayout: js.UndefOr[Boolean] = js.native
   // layout
-  var itemSelector: js.UndefOr[String] = js.undefined
-  var originLeft: js.UndefOr[Boolean] = js.undefined
-  var originTop: js.UndefOr[Boolean] = js.undefined
-  var percentPosition: js.UndefOr[Boolean] = js.undefined
-  var resize: js.UndefOr[Boolean] = js.undefined
-  var stamp: js.UndefOr[String] = js.undefined
-  var transitionDuration: js.UndefOr[js.Any] = js.undefined
+  var itemSelector: js.UndefOr[String] = js.native
+  var originLeft: js.UndefOr[Boolean] = js.native
+  var originTop: js.UndefOr[Boolean] = js.native
+  var percentPosition: js.UndefOr[Boolean] = js.native
+  var resize: js.UndefOr[Boolean] = js.native
+  var stamp: js.UndefOr[String] = js.native
+  var transitionDuration: js.UndefOr[js.Any] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    columnWidth: js.Any = null,
-    containerStyle: js.Object = null,
-    fitWidth: js.UndefOr[Boolean] = js.undefined,
-    gutter: js.Any = null,
-    horizontalOrder: js.UndefOr[Boolean] = js.undefined,
-    initLayout: js.UndefOr[Boolean] = js.undefined,
-    itemSelector: String = null,
-    originLeft: js.UndefOr[Boolean] = js.undefined,
-    originTop: js.UndefOr[Boolean] = js.undefined,
-    percentPosition: js.UndefOr[Boolean] = js.undefined,
-    resize: js.UndefOr[Boolean] = js.undefined,
-    stamp: String = null,
-    transitionDuration: js.Any = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitWidth)) __obj.updateDynamic("fitWidth")(fitWidth.get.asInstanceOf[js.Any])
-    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalOrder)) __obj.updateDynamic("horizontalOrder")(horizontalOrder.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(initLayout)) __obj.updateDynamic("initLayout")(initLayout.get.asInstanceOf[js.Any])
-    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(originLeft)) __obj.updateDynamic("originLeft")(originLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(originTop)) __obj.updateDynamic("originTop")(originTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
-    if (stamp != null) __obj.updateDynamic("stamp")(stamp.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnWidth(value: js.Any): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    @scala.inline
+    def setContainerStyle(value: js.Object): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    @scala.inline
+    def setFitWidth(value: Boolean): Self = this.set("fitWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFitWidth: Self = this.set("fitWidth", js.undefined)
+    @scala.inline
+    def setGutter(value: js.Any): Self = this.set("gutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGutter: Self = this.set("gutter", js.undefined)
+    @scala.inline
+    def setHorizontalOrder(value: Boolean): Self = this.set("horizontalOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalOrder: Self = this.set("horizontalOrder", js.undefined)
+    @scala.inline
+    def setInitLayout(value: Boolean): Self = this.set("initLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitLayout: Self = this.set("initLayout", js.undefined)
+    @scala.inline
+    def setItemSelector(value: String): Self = this.set("itemSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemSelector: Self = this.set("itemSelector", js.undefined)
+    @scala.inline
+    def setOriginLeft(value: Boolean): Self = this.set("originLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginLeft: Self = this.set("originLeft", js.undefined)
+    @scala.inline
+    def setOriginTop(value: Boolean): Self = this.set("originTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginTop: Self = this.set("originTop", js.undefined)
+    @scala.inline
+    def setPercentPosition(value: Boolean): Self = this.set("percentPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentPosition: Self = this.set("percentPosition", js.undefined)
+    @scala.inline
+    def setResize(value: Boolean): Self = this.set("resize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResize: Self = this.set("resize", js.undefined)
+    @scala.inline
+    def setStamp(value: String): Self = this.set("stamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStamp: Self = this.set("stamp", js.undefined)
+    @scala.inline
+    def setTransitionDuration(value: js.Any): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+  }
+  
 }
 

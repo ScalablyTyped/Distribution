@@ -49,16 +49,49 @@ object DescribeEndpointOutput {
     EndpointConfigName: EndpointConfigName,
     EndpointName: EndpointName,
     EndpointStatus: EndpointStatus,
-    LastModifiedTime: Timestamp,
-    DataCaptureConfig: DataCaptureConfigSummary = null,
-    FailureReason: FailureReason = null,
-    ProductionVariants: ProductionVariantSummaryList = null
+    LastModifiedTime: Timestamp
   ): DescribeEndpointOutput = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], EndpointArn = EndpointArn.asInstanceOf[js.Any], EndpointConfigName = EndpointConfigName.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any], EndpointStatus = EndpointStatus.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
-    if (DataCaptureConfig != null) __obj.updateDynamic("DataCaptureConfig")(DataCaptureConfig.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (ProductionVariants != null) __obj.updateDynamic("ProductionVariants")(ProductionVariants.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointOutput]
   }
+  @scala.inline
+  implicit class DescribeEndpointOutputOps[Self <: DescribeEndpointOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointArn(value: EndpointArn): Self = this.set("EndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointConfigName(value: EndpointConfigName): Self = this.set("EndpointConfigName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointName(value: EndpointName): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointStatus(value: EndpointStatus): Self = this.set("EndpointStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataCaptureConfig(value: DataCaptureConfigSummary): Self = this.set("DataCaptureConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataCaptureConfig: Self = this.set("DataCaptureConfig", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setProductionVariantsVarargs(value: ProductionVariantSummary*): Self = this.set("ProductionVariants", js.Array(value :_*))
+    @scala.inline
+    def setProductionVariants(value: ProductionVariantSummaryList): Self = this.set("ProductionVariants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductionVariants: Self = this.set("ProductionVariants", js.undefined)
+  }
+  
 }
 

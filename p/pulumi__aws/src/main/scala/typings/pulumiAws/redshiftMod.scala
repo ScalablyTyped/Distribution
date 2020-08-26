@@ -143,11 +143,12 @@ object redshiftMod extends js.Object {
     def this(name: String, args: SubnetGroupArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] with GetClusterResult = js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] with GetClusterResult = js.native
-  def getServiceAccount(): js.Promise[GetServiceAccountResult] with GetServiceAccountResult = js.native
-  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] with GetServiceAccountResult = js.native
-  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] with GetServiceAccountResult = js.native
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  def getServiceAccount(): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
   /* static members */
   @js.native
   object Cluster extends js.Object {
@@ -158,8 +159,10 @@ object redshiftMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.redshiftClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.redshiftClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.redshiftClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.redshiftClusterMod.Cluster = js.native
     /**
@@ -179,8 +182,10 @@ object redshiftMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.redshiftEventSubscriptionMod.EventSubscription = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.redshiftEventSubscriptionMod.EventSubscription = js.native
     def get(name: String, id: Input[ID], state: EventSubscriptionState): typings.pulumiAws.redshiftEventSubscriptionMod.EventSubscription = js.native
     def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): typings.pulumiAws.redshiftEventSubscriptionMod.EventSubscription = js.native
     /**
@@ -200,8 +205,10 @@ object redshiftMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.redshiftParameterGroupMod.ParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.redshiftParameterGroupMod.ParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState): typings.pulumiAws.redshiftParameterGroupMod.ParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.redshiftParameterGroupMod.ParameterGroup = js.native
     /**
@@ -221,8 +228,10 @@ object redshiftMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.redshiftSecurityGroupMod.SecurityGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.redshiftSecurityGroupMod.SecurityGroup = js.native
     def get(name: String, id: Input[ID], state: SecurityGroupState): typings.pulumiAws.redshiftSecurityGroupMod.SecurityGroup = js.native
     def get(name: String, id: Input[ID], state: SecurityGroupState, opts: CustomResourceOptions): typings.pulumiAws.redshiftSecurityGroupMod.SecurityGroup = js.native
     /**
@@ -242,8 +251,10 @@ object redshiftMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.snapshotCopyGrantMod.SnapshotCopyGrant = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.snapshotCopyGrantMod.SnapshotCopyGrant = js.native
     def get(name: String, id: Input[ID], state: SnapshotCopyGrantState): typings.pulumiAws.snapshotCopyGrantMod.SnapshotCopyGrant = js.native
     def get(name: String, id: Input[ID], state: SnapshotCopyGrantState, opts: CustomResourceOptions): typings.pulumiAws.snapshotCopyGrantMod.SnapshotCopyGrant = js.native
     /**
@@ -263,8 +274,10 @@ object redshiftMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.snapshotScheduleMod.SnapshotSchedule = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.snapshotScheduleMod.SnapshotSchedule = js.native
     def get(name: String, id: Input[ID], state: SnapshotScheduleState): typings.pulumiAws.snapshotScheduleMod.SnapshotSchedule = js.native
     def get(name: String, id: Input[ID], state: SnapshotScheduleState, opts: CustomResourceOptions): typings.pulumiAws.snapshotScheduleMod.SnapshotSchedule = js.native
     /**
@@ -284,8 +297,10 @@ object redshiftMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.snapshotScheduleAssociationMod.SnapshotScheduleAssociation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.snapshotScheduleAssociationMod.SnapshotScheduleAssociation = js.native
     def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState): typings.pulumiAws.snapshotScheduleAssociationMod.SnapshotScheduleAssociation = js.native
     def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState, opts: CustomResourceOptions): typings.pulumiAws.snapshotScheduleAssociationMod.SnapshotScheduleAssociation = js.native
     /**
@@ -305,8 +320,10 @@ object redshiftMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.redshiftSubnetGroupMod.SubnetGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.redshiftSubnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState): typings.pulumiAws.redshiftSubnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState, opts: CustomResourceOptions): typings.pulumiAws.redshiftSubnetGroupMod.SubnetGroup = js.native
     /**

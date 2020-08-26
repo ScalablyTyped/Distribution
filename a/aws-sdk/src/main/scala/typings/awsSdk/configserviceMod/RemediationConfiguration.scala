@@ -27,7 +27,7 @@ trait RemediationConfiguration extends js.Object {
     */
   var ExecutionControls: js.UndefOr[typings.awsSdk.configserviceMod.ExecutionControls] = js.native
   /**
-    * The maximum number of failed attempts for auto-remediation. If you do not select a number, the default is 5. For example, if you specify MaximumAutomaticAttempts as 5 with RetryAttemptsSeconds as 50 seconds, AWS Config throws an exception after the 5th failed attempt within 50 seconds.
+    * The maximum number of failed attempts for auto-remediation. If you do not select a number, the default is 5. For example, if you specify MaximumAutomaticAttempts as 5 with RetryAttemptsSeconds as 50 seconds, AWS Config will put a RemediationException on your behalf for the failing resource after the 5th failed attempt within 50 seconds.
     */
   var MaximumAutomaticAttempts: js.UndefOr[AutoRemediationAttempts] = js.native
   /**
@@ -39,7 +39,7 @@ trait RemediationConfiguration extends js.Object {
     */
   var ResourceType: js.UndefOr[String] = js.native
   /**
-    * Maximum time in seconds that AWS Config runs auto-remediation. If you do not select a number, the default is 60 seconds.  For example, if you specify RetryAttemptsSeconds as 50 seconds and MaximumAutomaticAttempts as 5, AWS Config will run auto-remediations 5 times within 50 seconds before throwing an exception. 
+    * Maximum time in seconds that AWS Config runs auto-remediation. If you do not select a number, the default is 60 seconds.  For example, if you specify RetryAttemptsSeconds as 50 seconds and MaximumAutomaticAttempts as 5, AWS Config will run auto-remediations 5 times within 50 seconds before throwing an exception.
     */
   var RetryAttemptSeconds: js.UndefOr[AutoRemediationAttemptSeconds] = js.native
   /**
@@ -51,7 +51,7 @@ trait RemediationConfiguration extends js.Object {
     */
   var TargetType: RemediationTargetType = js.native
   /**
-    * Version of the target. For example, version of the SSM document.
+    * Version of the target. For example, version of the SSM document.  If you make backward incompatible changes to the SSM document, you must call PutRemediationConfiguration API again to ensure the remediations can run. 
     */
   var TargetVersion: js.UndefOr[String] = js.native
 }
@@ -61,28 +61,65 @@ object RemediationConfiguration {
   def apply(
     ConfigRuleName: ConfigRuleName,
     TargetId: StringWithCharLimit256,
-    TargetType: RemediationTargetType,
-    Arn: StringWithCharLimit1024 = null,
-    Automatic: js.UndefOr[Boolean] = js.undefined,
-    CreatedByService: StringWithCharLimit1024 = null,
-    ExecutionControls: ExecutionControls = null,
-    MaximumAutomaticAttempts: js.UndefOr[AutoRemediationAttempts] = js.undefined,
-    Parameters: RemediationParameters = null,
-    ResourceType: String = null,
-    RetryAttemptSeconds: js.UndefOr[AutoRemediationAttemptSeconds] = js.undefined,
-    TargetVersion: String = null
+    TargetType: RemediationTargetType
   ): RemediationConfiguration = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any], TargetId = TargetId.asInstanceOf[js.Any], TargetType = TargetType.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Automatic)) __obj.updateDynamic("Automatic")(Automatic.get.asInstanceOf[js.Any])
-    if (CreatedByService != null) __obj.updateDynamic("CreatedByService")(CreatedByService.asInstanceOf[js.Any])
-    if (ExecutionControls != null) __obj.updateDynamic("ExecutionControls")(ExecutionControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumAutomaticAttempts)) __obj.updateDynamic("MaximumAutomaticAttempts")(MaximumAutomaticAttempts.get.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetryAttemptSeconds)) __obj.updateDynamic("RetryAttemptSeconds")(RetryAttemptSeconds.get.asInstanceOf[js.Any])
-    if (TargetVersion != null) __obj.updateDynamic("TargetVersion")(TargetVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemediationConfiguration]
   }
+  @scala.inline
+  implicit class RemediationConfigurationOps[Self <: RemediationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetId(value: StringWithCharLimit256): Self = this.set("TargetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetType(value: RemediationTargetType): Self = this.set("TargetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: StringWithCharLimit1024): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAutomatic(value: Boolean): Self = this.set("Automatic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomatic: Self = this.set("Automatic", js.undefined)
+    @scala.inline
+    def setCreatedByService(value: StringWithCharLimit1024): Self = this.set("CreatedByService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedByService: Self = this.set("CreatedByService", js.undefined)
+    @scala.inline
+    def setExecutionControls(value: ExecutionControls): Self = this.set("ExecutionControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionControls: Self = this.set("ExecutionControls", js.undefined)
+    @scala.inline
+    def setMaximumAutomaticAttempts(value: AutoRemediationAttempts): Self = this.set("MaximumAutomaticAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumAutomaticAttempts: Self = this.set("MaximumAutomaticAttempts", js.undefined)
+    @scala.inline
+    def setParameters(value: RemediationParameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setResourceType(value: String): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setRetryAttemptSeconds(value: AutoRemediationAttemptSeconds): Self = this.set("RetryAttemptSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryAttemptSeconds: Self = this.set("RetryAttemptSeconds", js.undefined)
+    @scala.inline
+    def setTargetVersion(value: String): Self = this.set("TargetVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetVersion: Self = this.set("TargetVersion", js.undefined)
+  }
+  
 }
 

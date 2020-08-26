@@ -68,6 +68,7 @@ object fSMod extends js.Object {
     def appendFile(filename: String, data: js.Any, cb: BFSOneArgCallback): Unit = js.native
     def appendFile(filename: String, data: js.Any, encoding: String): Unit = js.native
     def appendFile(filename: String, data: js.Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(filename: String, data: js.Any, options: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
     def appendFile(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
     def appendFile(filename: String, data: js.Any, options: EncodingFlag, cb: BFSOneArgCallback): Unit = js.native
     /**
@@ -238,6 +239,7 @@ object fSMod extends js.Object {
       */
     def ftruncate(fd: Double): Unit = js.native
     def ftruncate(fd: Double, cb: BFSOneArgCallback): Unit = js.native
+    def ftruncate(fd: Double, len: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
     def ftruncate(fd: Double, len: Double): Unit = js.native
     def ftruncate(fd: Double, len: Double, cb: BFSOneArgCallback): Unit = js.native
     /**
@@ -353,6 +355,7 @@ object fSMod extends js.Object {
       * @param callback
       */
     def mkdir(path: String): Unit = js.native
+    def mkdir(path: String, mode: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
     def mkdir(path: String, mode: js.Any): Unit = js.native
     def mkdir(path: String, mode: js.Any, cb: BFSOneArgCallback): Unit = js.native
     /**
@@ -603,6 +606,7 @@ object fSMod extends js.Object {
       */
     def symlink(srcpath: String, dstpath: String): Unit = js.native
     def symlink(srcpath: String, dstpath: String, cb: BFSOneArgCallback): Unit = js.native
+    def symlink(srcpath: String, dstpath: String, `type`: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
     def symlink(srcpath: String, dstpath: String, `type`: String): Unit = js.native
     def symlink(srcpath: String, dstpath: String, `type`: String, cb: BFSOneArgCallback): Unit = js.native
     /**
@@ -786,6 +790,7 @@ object fSMod extends js.Object {
       */
     def writeFile(filename: String, data: js.Any): Unit = js.native
     def writeFile(filename: String, data: js.Any, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(filename: String, data: js.Any, encoding: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
     def writeFile(filename: String, data: js.Any, encoding: String): Unit = js.native
     def writeFile(filename: String, data: js.Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
     def writeFile(filename: String, data: js.Any, options: Mode): Unit = js.native
@@ -821,6 +826,7 @@ object fSMod extends js.Object {
     def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double): Double = js.native
     def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
     def writeSync(fd: Double, data: String): Double = js.native
+    def writeSync(fd: Double, data: String, position: js.UndefOr[scala.Nothing], encoding: String): Double = js.native
     def writeSync(fd: Double, data: String, position: Double): Double = js.native
     def writeSync(fd: Double, data: String, position: Double, encoding: String): Double = js.native
     def writeSync(fd: Double, data: String, position: Null, encoding: String): Double = js.native

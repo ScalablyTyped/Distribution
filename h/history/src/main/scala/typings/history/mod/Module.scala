@@ -36,8 +36,27 @@ trait Module extends js.Object {
   def createHashHistory[S](options: HashHistoryBuildOptions): History[S] = js.native
   def createLocation[S](path: LocationDescriptor[S]): Location[S] = js.native
   def createLocation[S](path: LocationDescriptor[S], state: S): Location[S] = js.native
+  def createLocation[S](
+    path: LocationDescriptor[S],
+    state: S,
+    key: js.UndefOr[scala.Nothing],
+    currentLocation: Location[S]
+  ): Location[S] = js.native
   def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S] = js.native
   def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S] = js.native
+  def createLocation[S](
+    path: LocationDescriptor[S],
+    state: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    currentLocation: Location[S]
+  ): Location[S] = js.native
+  def createLocation[S](path: LocationDescriptor[S], state: js.UndefOr[scala.Nothing], key: LocationKey): Location[S] = js.native
+  def createLocation[S](
+    path: LocationDescriptor[S],
+    state: js.UndefOr[scala.Nothing],
+    key: LocationKey,
+    currentLocation: Location[S]
+  ): Location[S] = js.native
   def createMemoryHistory[S](): MemoryHistory[S] = js.native
   def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = js.native
   def createPath[S](location: LocationDescriptorObject[S]): Path = js.native

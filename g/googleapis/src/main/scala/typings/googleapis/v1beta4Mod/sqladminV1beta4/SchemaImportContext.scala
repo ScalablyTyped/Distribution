@@ -45,22 +45,46 @@ trait SchemaImportContext extends js.Object {
 
 object SchemaImportContext {
   @scala.inline
-  def apply(
-    csvImportOptions: Columns = null,
-    database: String = null,
-    fileType: String = null,
-    importUser: String = null,
-    kind: String = null,
-    uri: String = null
-  ): SchemaImportContext = {
+  def apply(): SchemaImportContext = {
     val __obj = js.Dynamic.literal()
-    if (csvImportOptions != null) __obj.updateDynamic("csvImportOptions")(csvImportOptions.asInstanceOf[js.Any])
-    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (importUser != null) __obj.updateDynamic("importUser")(importUser.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImportContext]
   }
+  @scala.inline
+  implicit class SchemaImportContextOps[Self <: SchemaImportContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCsvImportOptions(value: Columns): Self = this.set("csvImportOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvImportOptions: Self = this.set("csvImportOptions", js.undefined)
+    @scala.inline
+    def setDatabase(value: String): Self = this.set("database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabase: Self = this.set("database", js.undefined)
+    @scala.inline
+    def setFileType(value: String): Self = this.set("fileType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileType: Self = this.set("fileType", js.undefined)
+    @scala.inline
+    def setImportUser(value: String): Self = this.set("importUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportUser: Self = this.set("importUser", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

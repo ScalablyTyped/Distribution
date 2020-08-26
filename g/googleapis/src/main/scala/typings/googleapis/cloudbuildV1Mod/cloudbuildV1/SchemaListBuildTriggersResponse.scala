@@ -21,11 +21,32 @@ trait SchemaListBuildTriggersResponse extends js.Object {
 
 object SchemaListBuildTriggersResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, triggers: js.Array[SchemaBuildTrigger] = null): SchemaListBuildTriggersResponse = {
+  def apply(): SchemaListBuildTriggersResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListBuildTriggersResponse]
   }
+  @scala.inline
+  implicit class SchemaListBuildTriggersResponseOps[Self <: SchemaListBuildTriggersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setTriggersVarargs(value: SchemaBuildTrigger*): Self = this.set("triggers", js.Array(value :_*))
+    @scala.inline
+    def setTriggers(value: js.Array[SchemaBuildTrigger]): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggers: Self = this.set("triggers", js.undefined)
+  }
+  
 }
 

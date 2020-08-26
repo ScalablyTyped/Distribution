@@ -26,14 +26,73 @@ trait Scroller_ extends js.Object {
   def scrollBy(leftOffset: Double, topOffset: Double): Unit = js.native
   def scrollBy(leftOffset: Double, topOffset: Double, animate: Boolean): Unit = js.native
   def scrollTo(left: Double, top: Double): Unit = js.native
+  def scrollTo(left: Double, top: Double, animate: js.UndefOr[scala.Nothing], zoom: Double): Unit = js.native
   def scrollTo(left: Double, top: Double, animate: Boolean): Unit = js.native
   def scrollTo(left: Double, top: Double, animate: Boolean, zoom: Double): Unit = js.native
   def setDimensions(clientWidth: Double, clientHeight: Double, contentWidth: Double, contentHeight: Double): Unit = js.native
   def setPosition(clientLeft: Double, clientTop: Double): Unit = js.native
   def setSnapSize(width: Double, height: Double): Unit = js.native
   def zoomBy(factor: Double): Unit = js.native
+  def zoomBy(
+    factor: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def zoomBy(
+    factor: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: Double
+  ): Unit = js.native
+  def zoomBy(
+    factor: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: Double,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def zoomBy(factor: Double, animate: js.UndefOr[scala.Nothing], originLeft: Double): Unit = js.native
+  def zoomBy(
+    factor: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: Double,
+    originTop: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def zoomBy(factor: Double, animate: js.UndefOr[scala.Nothing], originLeft: Double, originTop: Double): Unit = js.native
+  def zoomBy(
+    factor: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: Double,
+    originTop: Double,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def zoomBy(factor: Double, animate: Boolean): Unit = js.native
+  def zoomBy(
+    factor: Double,
+    animate: Boolean,
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def zoomBy(factor: Double, animate: Boolean, originLeft: js.UndefOr[scala.Nothing], originTop: Double): Unit = js.native
+  def zoomBy(
+    factor: Double,
+    animate: Boolean,
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: Double,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def zoomBy(factor: Double, animate: Boolean, originLeft: Double): Unit = js.native
+  def zoomBy(
+    factor: Double,
+    animate: Boolean,
+    originLeft: Double,
+    originTop: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def zoomBy(factor: Double, animate: Boolean, originLeft: Double, originTop: Double): Unit = js.native
   def zoomBy(
     factor: Double,
@@ -43,8 +102,66 @@ trait Scroller_ extends js.Object {
     callback: js.Function0[Unit]
   ): Unit = js.native
   def zoomTo(level: Double): Unit = js.native
+  def zoomTo(
+    level: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def zoomTo(
+    level: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: Double
+  ): Unit = js.native
+  def zoomTo(
+    level: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: Double,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def zoomTo(level: Double, animate: js.UndefOr[scala.Nothing], originLeft: Double): Unit = js.native
+  def zoomTo(
+    level: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: Double,
+    originTop: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def zoomTo(level: Double, animate: js.UndefOr[scala.Nothing], originLeft: Double, originTop: Double): Unit = js.native
+  def zoomTo(
+    level: Double,
+    animate: js.UndefOr[scala.Nothing],
+    originLeft: Double,
+    originTop: Double,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def zoomTo(level: Double, animate: Boolean): Unit = js.native
+  def zoomTo(
+    level: Double,
+    animate: Boolean,
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def zoomTo(level: Double, animate: Boolean, originLeft: js.UndefOr[scala.Nothing], originTop: Double): Unit = js.native
+  def zoomTo(
+    level: Double,
+    animate: Boolean,
+    originLeft: js.UndefOr[scala.Nothing],
+    originTop: Double,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def zoomTo(level: Double, animate: Boolean, originLeft: Double): Unit = js.native
+  def zoomTo(
+    level: Double,
+    animate: Boolean,
+    originLeft: Double,
+    originTop: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def zoomTo(level: Double, animate: Boolean, originLeft: Double, originTop: Double): Unit = js.native
   def zoomTo(
     level: Double,

@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputScanRegion extends js.Object {
-  var `x-dimension`: js.UndefOr[String] = js.undefined
-  var `x-origin`: js.UndefOr[String] = js.undefined
-  var `y-dimension`: js.UndefOr[String] = js.undefined
-  var `y-origin`: js.UndefOr[String] = js.undefined
+  var `x-dimension`: js.UndefOr[String] = js.native
+  var `x-origin`: js.UndefOr[String] = js.native
+  var `y-dimension`: js.UndefOr[String] = js.native
+  var `y-origin`: js.UndefOr[String] = js.native
 }
 
 object InputScanRegion {
   @scala.inline
-  def apply(
-    `x-dimension`: String = null,
-    `x-origin`: String = null,
-    `y-dimension`: String = null,
-    `y-origin`: String = null
-  ): InputScanRegion = {
+  def apply(): InputScanRegion = {
     val __obj = js.Dynamic.literal()
-    if (`x-dimension` != null) __obj.updateDynamic("x-dimension")(`x-dimension`.asInstanceOf[js.Any])
-    if (`x-origin` != null) __obj.updateDynamic("x-origin")(`x-origin`.asInstanceOf[js.Any])
-    if (`y-dimension` != null) __obj.updateDynamic("y-dimension")(`y-dimension`.asInstanceOf[js.Any])
-    if (`y-origin` != null) __obj.updateDynamic("y-origin")(`y-origin`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputScanRegion]
   }
+  @scala.inline
+  implicit class InputScanRegionOps[Self <: InputScanRegion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setX-dimension`(value: String): Self = this.set("x-dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteX-dimension`: Self = this.set("x-dimension", js.undefined)
+    @scala.inline
+    def `setX-origin`(value: String): Self = this.set("x-origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteX-origin`: Self = this.set("x-origin", js.undefined)
+    @scala.inline
+    def `setY-dimension`(value: String): Self = this.set("y-dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteY-dimension`: Self = this.set("y-dimension", js.undefined)
+    @scala.inline
+    def `setY-origin`(value: String): Self = this.set("y-origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteY-origin`: Self = this.set("y-origin", js.undefined)
+  }
+  
 }
 

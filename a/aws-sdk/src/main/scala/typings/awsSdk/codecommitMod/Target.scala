@@ -22,14 +22,30 @@ trait Target extends js.Object {
 
 object Target {
   @scala.inline
-  def apply(
-    repositoryName: RepositoryName,
-    sourceReference: ReferenceName,
-    destinationReference: ReferenceName = null
-  ): Target = {
+  def apply(repositoryName: RepositoryName, sourceReference: ReferenceName): Target = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any], sourceReference = sourceReference.asInstanceOf[js.Any])
-    if (destinationReference != null) __obj.updateDynamic("destinationReference")(destinationReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target]
   }
+  @scala.inline
+  implicit class TargetOps[Self <: Target] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceReference(value: ReferenceName): Self = this.set("sourceReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationReference(value: ReferenceName): Self = this.set("destinationReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationReference: Self = this.set("destinationReference", js.undefined)
+  }
+  
 }
 

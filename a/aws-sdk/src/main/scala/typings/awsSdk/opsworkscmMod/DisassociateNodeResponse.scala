@@ -14,10 +14,26 @@ trait DisassociateNodeResponse extends js.Object {
 
 object DisassociateNodeResponse {
   @scala.inline
-  def apply(NodeAssociationStatusToken: NodeAssociationStatusToken = null): DisassociateNodeResponse = {
+  def apply(): DisassociateNodeResponse = {
     val __obj = js.Dynamic.literal()
-    if (NodeAssociationStatusToken != null) __obj.updateDynamic("NodeAssociationStatusToken")(NodeAssociationStatusToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateNodeResponse]
   }
+  @scala.inline
+  implicit class DisassociateNodeResponseOps[Self <: DisassociateNodeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNodeAssociationStatusToken(value: NodeAssociationStatusToken): Self = this.set("NodeAssociationStatusToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeAssociationStatusToken: Self = this.set("NodeAssociationStatusToken", js.undefined)
+  }
+  
 }
 

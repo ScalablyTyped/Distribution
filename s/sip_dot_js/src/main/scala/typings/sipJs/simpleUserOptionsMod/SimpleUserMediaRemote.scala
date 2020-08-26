@@ -6,20 +6,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SimpleUserMediaRemote extends js.Object {
   /** The remote audio media stream is attached to this element. */
-  var audio: js.UndefOr[HTMLAudioElement] = js.undefined
+  var audio: js.UndefOr[HTMLAudioElement] = js.native
   /** The remote video media stream is attached to this element. */
-  var video: js.UndefOr[HTMLVideoElement] = js.undefined
+  var video: js.UndefOr[HTMLVideoElement] = js.native
 }
 
 object SimpleUserMediaRemote {
   @scala.inline
-  def apply(audio: HTMLAudioElement = null, video: HTMLVideoElement = null): SimpleUserMediaRemote = {
+  def apply(): SimpleUserMediaRemote = {
     val __obj = js.Dynamic.literal()
-    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleUserMediaRemote]
   }
+  @scala.inline
+  implicit class SimpleUserMediaRemoteOps[Self <: SimpleUserMediaRemote] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudio(value: HTMLAudioElement): Self = this.set("audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudio: Self = this.set("audio", js.undefined)
+    @scala.inline
+    def setVideo(value: HTMLVideoElement): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+  }
+  
 }
 

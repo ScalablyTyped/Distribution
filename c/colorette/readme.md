@@ -1,7 +1,7 @@
 
 # Scala.js typings for colorette
 
-Typings are for version 1.1.0
+Typings are for version 1.2.1
 
 ## Library description:
 Color your terminal using pure idiomatic JavaScript.
@@ -11,8 +11,8 @@ Color your terminal using pure idiomatic JavaScript.
 | Full name          | colorette |
 | Keywords           | colorette, terminal, styles, color, ansi |
 | # releases         | 13 |
-| # dependents       | 130 |
-| # downloads        | 10714719 |
+| # dependents       | 133 |
+| # downloads        | 11965594 |
 | # stars            | 1 |
 
 ## Links

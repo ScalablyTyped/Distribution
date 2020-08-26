@@ -17,6 +17,7 @@ class RelationshipPath protected () extends js.Object {
   def joinName(): String = js.native
   def joinName(reverse: Boolean): String = js.native
   def joins(): js.Array[IJoin] = js.native
+  def joins(alias: js.UndefOr[scala.Nothing], firstTable: String): js.Array[IJoin] = js.native
   def joins(alias: String): js.Array[IJoin] = js.native
   def joins(alias: String, firstTable: String): js.Array[IJoin] = js.native
   def joins(alias: Null, firstTable: String): js.Array[IJoin] = js.native

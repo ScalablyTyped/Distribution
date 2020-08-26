@@ -103,7 +103,6 @@ object viewProcessorMod extends js.Object {
       * @private
       */
     var revertUserWrite_ : js.Any = js.native
-    def applyOperation(oldViewCache: ViewCache, operation: Operation, writesCache: WriteTreeRef): ProcessorResult = js.native
     /**
       * @param {!ViewCache} oldViewCache
       * @param {!Operation} operation
@@ -111,6 +110,7 @@ object viewProcessorMod extends js.Object {
       * @param {?Node} completeCache
       * @return {!ProcessorResult}
       */
+    def applyOperation(oldViewCache: ViewCache, operation: Operation, writesCache: WriteTreeRef): ProcessorResult = js.native
     def applyOperation(oldViewCache: ViewCache, operation: Operation, writesCache: WriteTreeRef, completeCache: Node): ProcessorResult = js.native
     def applyServerOverwrite_(
       oldViewCache: ViewCache,

@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * represents a collection of items in a data pilot field.
   * @see DataPilotItem
   */
+@js.native
 trait DataPilotItems
   extends XIndexAccess
      with XEnumerationAccess

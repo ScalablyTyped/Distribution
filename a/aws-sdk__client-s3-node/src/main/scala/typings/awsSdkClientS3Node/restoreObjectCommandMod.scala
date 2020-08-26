@@ -27,17 +27,10 @@ object restoreObjectCommandMod extends js.Object {
           Readable
         ] {
     def this(input: RestoreObjectInput) = this()
-    /* CompleteClass */
-    override val input: RestoreObjectInput = js.native
     val middlewareStack: MiddlewareStack[RestoreObjectInput, RestoreObjectOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[RestoreObjectInput, RestoreObjectOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[RestoreObjectInput, RestoreObjectOutput] = js.native
   }

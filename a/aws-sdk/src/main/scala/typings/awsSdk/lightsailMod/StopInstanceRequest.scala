@@ -18,10 +18,28 @@ trait StopInstanceRequest extends js.Object {
 
 object StopInstanceRequest {
   @scala.inline
-  def apply(instanceName: ResourceName, force: js.UndefOr[Boolean] = js.undefined): StopInstanceRequest = {
+  def apply(instanceName: ResourceName): StopInstanceRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopInstanceRequest]
   }
+  @scala.inline
+  implicit class StopInstanceRequestOps[Self <: StopInstanceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceName(value: ResourceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+  }
+  
 }
 

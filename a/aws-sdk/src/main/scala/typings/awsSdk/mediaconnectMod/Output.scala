@@ -54,30 +54,62 @@ trait Output extends js.Object {
 
 object Output {
   @scala.inline
-  def apply(
-    Name: string,
-    OutputArn: string,
-    DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.undefined,
-    Description: string = null,
-    Destination: string = null,
-    Encryption: Encryption = null,
-    EntitlementArn: string = null,
-    MediaLiveInputArn: string = null,
-    Port: js.UndefOr[integer] = js.undefined,
-    Transport: Transport = null,
-    VpcInterfaceAttachment: VpcInterfaceAttachment = null
-  ): Output = {
+  def apply(Name: string, OutputArn: string): Output = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], OutputArn = OutputArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Destination != null) __obj.updateDynamic("Destination")(Destination.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (EntitlementArn != null) __obj.updateDynamic("EntitlementArn")(EntitlementArn.asInstanceOf[js.Any])
-    if (MediaLiveInputArn != null) __obj.updateDynamic("MediaLiveInputArn")(MediaLiveInputArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (Transport != null) __obj.updateDynamic("Transport")(Transport.asInstanceOf[js.Any])
-    if (VpcInterfaceAttachment != null) __obj.updateDynamic("VpcInterfaceAttachment")(VpcInterfaceAttachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
+  @scala.inline
+  implicit class OutputOps[Self <: Output] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputArn(value: string): Self = this.set("OutputArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataTransferSubscriberFeePercent(value: integer): Self = this.set("DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTransferSubscriberFeePercent: Self = this.set("DataTransferSubscriberFeePercent", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDestination(value: string): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("Destination", js.undefined)
+    @scala.inline
+    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setEntitlementArn(value: string): Self = this.set("EntitlementArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntitlementArn: Self = this.set("EntitlementArn", js.undefined)
+    @scala.inline
+    def setMediaLiveInputArn(value: string): Self = this.set("MediaLiveInputArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaLiveInputArn: Self = this.set("MediaLiveInputArn", js.undefined)
+    @scala.inline
+    def setPort(value: integer): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setTransport(value: Transport): Self = this.set("Transport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransport: Self = this.set("Transport", js.undefined)
+    @scala.inline
+    def setVpcInterfaceAttachment(value: VpcInterfaceAttachment): Self = this.set("VpcInterfaceAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcInterfaceAttachment: Self = this.set("VpcInterfaceAttachment", js.undefined)
+  }
+  
 }
 

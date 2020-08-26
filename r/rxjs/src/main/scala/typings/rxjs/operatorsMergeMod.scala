@@ -12,19 +12,32 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorsMergeMod extends js.Object {
   def merge[T](): MonoTypeOperatorFunction[T] = js.native
+  def merge[T](concurrent: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def merge[T](concurrent: Double): MonoTypeOperatorFunction[T] = js.native
   def merge[T](concurrent: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def merge[T](observables: (ObservableInput[T] | SchedulerLike | Double)*): MonoTypeOperatorFunction[T] = js.native
   def merge[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def merge[T, T2](v2: ObservableInput[T2]): OperatorFunction[T, T | T2] = js.native
+  def merge[T, T2](v2: ObservableInput[T2], concurrent: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): OperatorFunction[T, T | T2] = js.native
   def merge[T, T2](v2: ObservableInput[T2], concurrent: Double): OperatorFunction[T, T | T2] = js.native
   def merge[T, T2](v2: ObservableInput[T2], concurrent: Double, scheduler: SchedulerLike): OperatorFunction[T, T | T2] = js.native
-  def merge[T, T2](v2: ObservableInput[T2], scheduler: SchedulerLike): OperatorFunction[T, T | T2] = js.native
   def merge[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3]): OperatorFunction[T, T | T2 | T3] = js.native
+  def merge[T, T2, T3](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    concurrent: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3] = js.native
   def merge[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3], concurrent: Double): OperatorFunction[T, T | T2 | T3] = js.native
   def merge[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3], concurrent: Double, scheduler: SchedulerLike): OperatorFunction[T, T | T2 | T3] = js.native
-  def merge[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3], scheduler: SchedulerLike): OperatorFunction[T, T | T2 | T3] = js.native
   def merge[T, T2, T3, T4](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): OperatorFunction[T, T | T2 | T3 | T4] = js.native
+  def merge[T, T2, T3, T4](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    concurrent: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3 | T4] = js.native
   def merge[T, T2, T3, T4](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], concurrent: Double): OperatorFunction[T, T | T2 | T3 | T4] = js.native
   def merge[T, T2, T3, T4](
     v2: ObservableInput[T2],
@@ -33,13 +46,15 @@ object operatorsMergeMod extends js.Object {
     concurrent: Double,
     scheduler: SchedulerLike
   ): OperatorFunction[T, T | T2 | T3 | T4] = js.native
-  def merge[T, T2, T3, T4](
+  def merge[T, T2, T3, T4, T5](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], v5: ObservableInput[T5]): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
+  def merge[T, T2, T3, T4, T5](
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    concurrent: js.UndefOr[scala.Nothing],
     scheduler: SchedulerLike
-  ): OperatorFunction[T, T | T2 | T3 | T4] = js.native
-  def merge[T, T2, T3, T4, T5](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], v5: ObservableInput[T5]): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
+  ): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
   def merge[T, T2, T3, T4, T5](
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
@@ -53,13 +68,6 @@ object operatorsMergeMod extends js.Object {
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     concurrent: Double,
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
-  def merge[T, T2, T3, T4, T5](
-    v2: ObservableInput[T2],
-    v3: ObservableInput[T3],
-    v4: ObservableInput[T4],
-    v5: ObservableInput[T5],
     scheduler: SchedulerLike
   ): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
   def merge[T, T2, T3, T4, T5, T6](
@@ -75,6 +83,15 @@ object operatorsMergeMod extends js.Object {
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     v6: ObservableInput[T6],
+    concurrent: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
+  def merge[T, T2, T3, T4, T5, T6](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    v6: ObservableInput[T6],
     concurrent: Double
   ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
   def merge[T, T2, T3, T4, T5, T6](
@@ -86,7 +103,27 @@ object operatorsMergeMod extends js.Object {
     concurrent: Double,
     scheduler: SchedulerLike
   ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
-  def merge[T, T2, T3, T4, T5, T6](
+  @JSName("merge")
+  def merge_TR_OperatorFunction[T, R](observables: (ObservableInput[_] | SchedulerLike | Double)*): OperatorFunction[T, R] = js.native
+  @JSName("merge")
+  def merge_TT2T3[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3], scheduler: SchedulerLike): OperatorFunction[T, T | T2 | T3] = js.native
+  @JSName("merge")
+  def merge_TT2T3T4[T, T2, T3, T4](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3 | T4] = js.native
+  @JSName("merge")
+  def merge_TT2T3T4T5[T, T2, T3, T4, T5](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
+  @JSName("merge")
+  def merge_TT2T3T4T5T6[T, T2, T3, T4, T5, T6](
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     v4: ObservableInput[T4],
@@ -95,6 +132,6 @@ object operatorsMergeMod extends js.Object {
     scheduler: SchedulerLike
   ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
   @JSName("merge")
-  def merge_TR_OperatorFunction[T, R](observables: (ObservableInput[_] | SchedulerLike | Double)*): OperatorFunction[T, R] = js.native
+  def merge_TT2_OperatorFunction[T, T2](v2: ObservableInput[T2], scheduler: SchedulerLike): OperatorFunction[T, T | T2] = js.native
 }
 

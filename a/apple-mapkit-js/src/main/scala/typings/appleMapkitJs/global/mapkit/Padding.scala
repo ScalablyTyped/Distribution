@@ -26,28 +26,24 @@ class Padding ()
   extends typings.appleMapkitJs.mapkit.Padding {
   def this(options: PaddingConstructorOptions) = this()
   def this(top: Double) = this()
+  def this(top: js.UndefOr[scala.Nothing], right: Double) = this()
   def this(top: Double, right: Double) = this()
+  def this(top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double) = this()
+  def this(top: js.UndefOr[scala.Nothing], right: Double, bottom: Double) = this()
+  def this(top: Double, right: js.UndefOr[scala.Nothing], bottom: Double) = this()
   def this(top: Double, right: Double, bottom: Double) = this()
+  def this(
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: js.UndefOr[scala.Nothing],
+    left: Double
+  ) = this()
+  def this(top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double, left: Double) = this()
+  def this(top: js.UndefOr[scala.Nothing], right: Double, bottom: js.UndefOr[scala.Nothing], left: Double) = this()
+  def this(top: js.UndefOr[scala.Nothing], right: Double, bottom: Double, left: Double) = this()
+  def this(top: Double, right: js.UndefOr[scala.Nothing], bottom: js.UndefOr[scala.Nothing], left: Double) = this()
+  def this(top: Double, right: js.UndefOr[scala.Nothing], bottom: Double, left: Double) = this()
+  def this(top: Double, right: Double, bottom: js.UndefOr[scala.Nothing], left: Double) = this()
   def this(top: Double, right: Double, bottom: Double, left: Double) = this()
-  /**
-    * The amount of padding, in CSS pixels, to inset the map from the bottom edge.
-    */
-  /* CompleteClass */
-  override var bottom: Double = js.native
-  /**
-    * The amount of padding, in CSS pixels, to inset the map from the left edge.
-    */
-  /* CompleteClass */
-  override var left: Double = js.native
-  /**
-    * The amount of padding, in CSS pixels, to inset the map from the right edge.
-    */
-  /* CompleteClass */
-  override var right: Double = js.native
-  /**
-    * The amount of padding, in CSS pixels, to inset the map from the top edge.
-    */
-  /* CompleteClass */
-  override var top: Double = js.native
 }
 

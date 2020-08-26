@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-search"
-version := "2.2-dt-20200515Z-a61ce9"
-scalaVersion := "2.13.2"
+version := "2.2-dt-20200515Z-0e1ccc"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20200621Z-33c88a",
-  "org.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20200515Z-c714d2",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20200515Z-775559",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20200621Z-02ea23",
+  "org.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20200515Z-15c405",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20200515Z-078440",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

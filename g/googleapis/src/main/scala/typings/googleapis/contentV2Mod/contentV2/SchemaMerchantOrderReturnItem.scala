@@ -16,22 +16,48 @@ trait SchemaMerchantOrderReturnItem extends js.Object {
 
 object SchemaMerchantOrderReturnItem {
   @scala.inline
-  def apply(
-    customerReturnReason: SchemaCustomerReturnReason = null,
-    itemId: String = null,
-    merchantReturnReason: SchemaRefundReason = null,
-    product: SchemaOrderLineItemProduct = null,
-    returnShipmentIds: js.Array[String] = null,
-    state: String = null
-  ): SchemaMerchantOrderReturnItem = {
+  def apply(): SchemaMerchantOrderReturnItem = {
     val __obj = js.Dynamic.literal()
-    if (customerReturnReason != null) __obj.updateDynamic("customerReturnReason")(customerReturnReason.asInstanceOf[js.Any])
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (merchantReturnReason != null) __obj.updateDynamic("merchantReturnReason")(merchantReturnReason.asInstanceOf[js.Any])
-    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (returnShipmentIds != null) __obj.updateDynamic("returnShipmentIds")(returnShipmentIds.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMerchantOrderReturnItem]
   }
+  @scala.inline
+  implicit class SchemaMerchantOrderReturnItemOps[Self <: SchemaMerchantOrderReturnItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerReturnReason(value: SchemaCustomerReturnReason): Self = this.set("customerReturnReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerReturnReason: Self = this.set("customerReturnReason", js.undefined)
+    @scala.inline
+    def setItemId(value: String): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemId: Self = this.set("itemId", js.undefined)
+    @scala.inline
+    def setMerchantReturnReason(value: SchemaRefundReason): Self = this.set("merchantReturnReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantReturnReason: Self = this.set("merchantReturnReason", js.undefined)
+    @scala.inline
+    def setProduct(value: SchemaOrderLineItemProduct): Self = this.set("product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("product", js.undefined)
+    @scala.inline
+    def setReturnShipmentIdsVarargs(value: String*): Self = this.set("returnShipmentIds", js.Array(value :_*))
+    @scala.inline
+    def setReturnShipmentIds(value: js.Array[String]): Self = this.set("returnShipmentIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnShipmentIds: Self = this.set("returnShipmentIds", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

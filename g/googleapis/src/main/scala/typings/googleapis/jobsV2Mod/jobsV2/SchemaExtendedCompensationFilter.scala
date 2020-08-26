@@ -38,20 +38,44 @@ trait SchemaExtendedCompensationFilter extends js.Object {
 
 object SchemaExtendedCompensationFilter {
   @scala.inline
-  def apply(
-    compensationRange: SchemaExtendedCompensationInfoCompensationRange = null,
-    compensationUnits: js.Array[String] = null,
-    currency: String = null,
-    includeJobWithUnspecifiedCompensationRange: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null
-  ): SchemaExtendedCompensationFilter = {
+  def apply(): SchemaExtendedCompensationFilter = {
     val __obj = js.Dynamic.literal()
-    if (compensationRange != null) __obj.updateDynamic("compensationRange")(compensationRange.asInstanceOf[js.Any])
-    if (compensationUnits != null) __obj.updateDynamic("compensationUnits")(compensationUnits.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeJobWithUnspecifiedCompensationRange)) __obj.updateDynamic("includeJobWithUnspecifiedCompensationRange")(includeJobWithUnspecifiedCompensationRange.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtendedCompensationFilter]
   }
+  @scala.inline
+  implicit class SchemaExtendedCompensationFilterOps[Self <: SchemaExtendedCompensationFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompensationRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = this.set("compensationRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompensationRange: Self = this.set("compensationRange", js.undefined)
+    @scala.inline
+    def setCompensationUnitsVarargs(value: String*): Self = this.set("compensationUnits", js.Array(value :_*))
+    @scala.inline
+    def setCompensationUnits(value: js.Array[String]): Self = this.set("compensationUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompensationUnits: Self = this.set("compensationUnits", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setIncludeJobWithUnspecifiedCompensationRange(value: Boolean): Self = this.set("includeJobWithUnspecifiedCompensationRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeJobWithUnspecifiedCompensationRange: Self = this.set("includeJobWithUnspecifiedCompensationRange", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

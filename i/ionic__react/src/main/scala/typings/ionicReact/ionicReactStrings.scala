@@ -1,6 +1,7 @@
 package typings.ionicReact
 
-import typings.ionicReact.hrefpropsMod.RouterDirection
+import typings.ionicReact.routeActionMod.RouteAction
+import typings.ionicReact.routerDirectionMod.RouterDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -613,7 +614,7 @@ object ionicReactStrings {
   sealed trait polyline extends js.Object
   
   @js.native
-  sealed trait pop extends js.Object
+  sealed trait pop extends RouteAction
   
   @js.native
   sealed trait popup extends js.Object
@@ -628,7 +629,7 @@ object ionicReactStrings {
   sealed trait progress extends js.Object
   
   @js.native
-  sealed trait push extends js.Object
+  sealed trait push extends RouteAction
   
   @js.native
   sealed trait pwa extends js.Object
@@ -646,7 +647,7 @@ object ionicReactStrings {
   sealed trait removals extends js.Object
   
   @js.native
-  sealed trait replace extends js.Object
+  sealed trait replace extends RouteAction
   
   @js.native
   sealed trait reset extends js.Object

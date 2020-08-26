@@ -20,10 +20,28 @@ trait SchemaTestSuite extends js.Object {
 
 object SchemaTestSuite {
   @scala.inline
-  def apply(testCases: js.Array[SchemaTestCase] = null): SchemaTestSuite = {
+  def apply(): SchemaTestSuite = {
     val __obj = js.Dynamic.literal()
-    if (testCases != null) __obj.updateDynamic("testCases")(testCases.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestSuite]
   }
+  @scala.inline
+  implicit class SchemaTestSuiteOps[Self <: SchemaTestSuite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTestCasesVarargs(value: SchemaTestCase*): Self = this.set("testCases", js.Array(value :_*))
+    @scala.inline
+    def setTestCases(value: js.Array[SchemaTestCase]): Self = this.set("testCases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestCases: Self = this.set("testCases", js.undefined)
+  }
+  
 }
 

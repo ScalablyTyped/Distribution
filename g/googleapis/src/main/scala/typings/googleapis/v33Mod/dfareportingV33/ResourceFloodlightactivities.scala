@@ -28,6 +28,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceFloodlightactivitiesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceFloodlightactivitiesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     */
   def generatetag(): GaxiosPromise[SchemaFloodlightActivitiesGenerateTagResponse] = js.native
   def generatetag(callback: BodyResponseCallback[SchemaFloodlightActivitiesGenerateTagResponse]): Unit = js.native
+  def generatetag(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivitiesGenerateTagResponse] = js.native
   def generatetag(params: ParamsResourceFloodlightactivitiesGeneratetag): GaxiosPromise[SchemaFloodlightActivitiesGenerateTagResponse] = js.native
   def generatetag(
     params: ParamsResourceFloodlightactivitiesGeneratetag,
@@ -87,6 +89,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def get(callback: BodyResponseCallback[SchemaFloodlightActivity]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def get(params: ParamsResourceFloodlightactivitiesGet): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def get(
     params: ParamsResourceFloodlightactivitiesGet,
@@ -118,6 +121,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def insert(callback: BodyResponseCallback[SchemaFloodlightActivity]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def insert(params: ParamsResourceFloodlightactivitiesInsert): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def insert(
     params: ParamsResourceFloodlightactivitiesInsert,
@@ -162,6 +166,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaFloodlightActivitiesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaFloodlightActivitiesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivitiesListResponse] = js.native
   def list(params: ParamsResourceFloodlightactivitiesList): GaxiosPromise[SchemaFloodlightActivitiesListResponse] = js.native
   def list(
     params: ParamsResourceFloodlightactivitiesList,
@@ -195,6 +200,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def patch(callback: BodyResponseCallback[SchemaFloodlightActivity]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def patch(params: ParamsResourceFloodlightactivitiesPatch): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def patch(
     params: ParamsResourceFloodlightactivitiesPatch,
@@ -226,6 +232,7 @@ class ResourceFloodlightactivities protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def update(callback: BodyResponseCallback[SchemaFloodlightActivity]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def update(params: ParamsResourceFloodlightactivitiesUpdate): GaxiosPromise[SchemaFloodlightActivity] = js.native
   def update(
     params: ParamsResourceFloodlightactivitiesUpdate,

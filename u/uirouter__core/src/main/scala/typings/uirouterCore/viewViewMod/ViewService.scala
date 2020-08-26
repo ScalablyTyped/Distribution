@@ -15,19 +15,19 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core/lib/view/view", "ViewService")
 @js.native
 class ViewService protected () extends js.Object {
-  /** @hidden */
-  def this(/** @hidden */ router: UIRouter) = this()
-  /** @hidden */ var _listeners: js.Any = js.native
-  /** @internalapi */
+  /** @internal */
+  def this(/** @internal */ router: UIRouter) = this()
+  /** @internal */ var _listeners: js.Any = js.native
+  /** @internal */
   var _pluginapi: ViewServicePluginAPI = js.native
-  /** @hidden */ var _rootContext: js.Any = js.native
-  /** @hidden */
+  /** @internal */ var _rootContext: js.Any = js.native
+  /** @internal */
   var _rootViewContext: js.Any = js.native
-  /** @hidden */ var _uiViews: js.Any = js.native
-  /** @hidden */ var _viewConfigFactories: js.Any = js.native
-  /** @hidden */
+  /** @internal */ var _uiViews: js.Any = js.native
+  /** @internal */ var _viewConfigFactories: js.Any = js.native
+  /** @internal */
   var _viewConfigFactory: js.Any = js.native
-  /** @hidden */ var _viewConfigs: js.Any = js.native
+  /** @internal */ var _viewConfigs: js.Any = js.native
   var router: js.Any = js.native
   def activateViewConfig(viewConfig: ViewConfig): Unit = js.native
   /**
@@ -130,7 +130,7 @@ object ViewService extends js.Object {
     * - And the remaining segments [ "$default", "bar" ].join("."_ of the ViewConfig's target name match
     *   the tail of the ui-view's fqn "default.bar"
     *
-    * @internalapi
+    * @internal
     */
   def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = js.native
   /**

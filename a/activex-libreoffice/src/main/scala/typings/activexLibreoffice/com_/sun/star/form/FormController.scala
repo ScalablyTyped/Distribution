@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   * is superseded by {@link com.sun.star.form.runtime.FormController} .
   * @deprecated Deprecated
   */
+@js.native
 trait FormController
   extends XFormController
      with XDispatchProvider

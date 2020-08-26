@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ngstorage"
-version := "0.3-dt-20200515Z-8f0c66"
-scalaVersion := "2.13.2"
+version := "0.3-dt-20200515Z-df6b8e"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -13,17 +13,18 @@ import scala.scalajs.js.annotation._
   * (borders and background color).
   * @see com.sun.star.sheet.SheetCellCursor
   */
+@js.native
 trait XUsedAreaCursor extends XInterface {
   /**
     * points the cursor to the end of the used area.
     * @param bExpand `TRUE` = expands the current cursor range, `FALSE` = sets size of the cursor to a single cell.
     */
-  def gotoEndOfUsedArea(bExpand: Boolean): Unit
+  def gotoEndOfUsedArea(bExpand: Boolean): Unit = js.native
   /**
     * points the cursor to the start of the used area.
     * @param bExpand `TRUE` = expands the current cursor range, `FALSE` = sets size of the cursor to a single cell.
     */
-  def gotoStartOfUsedArea(bExpand: Boolean): Unit
+  def gotoStartOfUsedArea(bExpand: Boolean): Unit = js.native
 }
 
 object XUsedAreaCursor {
@@ -38,5 +39,22 @@ object XUsedAreaCursor {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), gotoEndOfUsedArea = js.Any.fromFunction1(gotoEndOfUsedArea), gotoStartOfUsedArea = js.Any.fromFunction1(gotoStartOfUsedArea), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XUsedAreaCursor]
   }
+  @scala.inline
+  implicit class XUsedAreaCursorOps[Self <: XUsedAreaCursor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGotoEndOfUsedArea(value: Boolean => Unit): Self = this.set("gotoEndOfUsedArea", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGotoStartOfUsedArea(value: Boolean => Unit): Self = this.set("gotoStartOfUsedArea", js.Any.fromFunction1(value))
+  }
+  
 }
 

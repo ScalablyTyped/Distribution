@@ -55,15 +55,13 @@ class LayoutCall protected () extends Element {
   def containerAsPage: Page = js.native
   def containerAsPageTemplate: PageTemplate = js.native
   def containerAsWebLayoutContent: WebLayoutContent = js.native
-  def layout(): js.Any = js.native
-  def layout(newValue: ILayout): js.Any = js.native
-  def layoutQualifiedName: String | Null = js.native
   /**
     * In version 8.0.0: removed optional
     * In version 7.17.0: added public
     */
-  @JSName("layout")
-  def layout_Union: ILayout | Null = js.native
+  def layout: ILayout | Null = js.native
+  def layoutQualifiedName: String | Null = js.native
+  def layout_=(newValue: ILayout | Null): Unit = js.native
 }
 
 /* static members */

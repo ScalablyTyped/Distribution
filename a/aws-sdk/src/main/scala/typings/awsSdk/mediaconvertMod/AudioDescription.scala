@@ -50,30 +50,62 @@ trait AudioDescription extends js.Object {
 
 object AudioDescription {
   @scala.inline
-  def apply(
-    AudioNormalizationSettings: AudioNormalizationSettings = null,
-    AudioSourceName: string = null,
-    AudioType: js.UndefOr[integerMin0Max255] = js.undefined,
-    AudioTypeControl: AudioTypeControl = null,
-    CodecSettings: AudioCodecSettings = null,
-    CustomLanguageCode: stringPatternAZaZ23AZaZ = null,
-    LanguageCode: LanguageCode = null,
-    LanguageCodeControl: AudioLanguageCodeControl = null,
-    RemixSettings: RemixSettings = null,
-    StreamName: stringPatternWS = null
-  ): AudioDescription = {
+  def apply(): AudioDescription = {
     val __obj = js.Dynamic.literal()
-    if (AudioNormalizationSettings != null) __obj.updateDynamic("AudioNormalizationSettings")(AudioNormalizationSettings.asInstanceOf[js.Any])
-    if (AudioSourceName != null) __obj.updateDynamic("AudioSourceName")(AudioSourceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AudioType)) __obj.updateDynamic("AudioType")(AudioType.get.asInstanceOf[js.Any])
-    if (AudioTypeControl != null) __obj.updateDynamic("AudioTypeControl")(AudioTypeControl.asInstanceOf[js.Any])
-    if (CodecSettings != null) __obj.updateDynamic("CodecSettings")(CodecSettings.asInstanceOf[js.Any])
-    if (CustomLanguageCode != null) __obj.updateDynamic("CustomLanguageCode")(CustomLanguageCode.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (LanguageCodeControl != null) __obj.updateDynamic("LanguageCodeControl")(LanguageCodeControl.asInstanceOf[js.Any])
-    if (RemixSettings != null) __obj.updateDynamic("RemixSettings")(RemixSettings.asInstanceOf[js.Any])
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioDescription]
   }
+  @scala.inline
+  implicit class AudioDescriptionOps[Self <: AudioDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioNormalizationSettings(value: AudioNormalizationSettings): Self = this.set("AudioNormalizationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioNormalizationSettings: Self = this.set("AudioNormalizationSettings", js.undefined)
+    @scala.inline
+    def setAudioSourceName(value: string): Self = this.set("AudioSourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioSourceName: Self = this.set("AudioSourceName", js.undefined)
+    @scala.inline
+    def setAudioType(value: integerMin0Max255): Self = this.set("AudioType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioType: Self = this.set("AudioType", js.undefined)
+    @scala.inline
+    def setAudioTypeControl(value: AudioTypeControl): Self = this.set("AudioTypeControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioTypeControl: Self = this.set("AudioTypeControl", js.undefined)
+    @scala.inline
+    def setCodecSettings(value: AudioCodecSettings): Self = this.set("CodecSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecSettings: Self = this.set("CodecSettings", js.undefined)
+    @scala.inline
+    def setCustomLanguageCode(value: stringPatternAZaZ23AZaZ): Self = this.set("CustomLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLanguageCode: Self = this.set("CustomLanguageCode", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setLanguageCodeControl(value: AudioLanguageCodeControl): Self = this.set("LanguageCodeControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCodeControl: Self = this.set("LanguageCodeControl", js.undefined)
+    @scala.inline
+    def setRemixSettings(value: RemixSettings): Self = this.set("RemixSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemixSettings: Self = this.set("RemixSettings", js.undefined)
+    @scala.inline
+    def setStreamName(value: stringPatternWS): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+  }
+  
 }
 

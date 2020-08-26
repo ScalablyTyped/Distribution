@@ -4,197 +4,280 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Model extends js.Object {
   /** Fires, on clicking the map.
     */
-  var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
+  var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
   /** Specifies the background color for map
     * @Default {transparent}
     */
-  var background: js.UndefOr[String] = js.undefined
+  var background: js.UndefOr[String] = js.native
   /** Specifies the index of the map to determine the shape layer to be displayed
     * @Default {0}
     */
-  var baseMapIndex: js.UndefOr[Double] = js.undefined
+  var baseMapIndex: js.UndefOr[Double] = js.native
   /** Triggered while rendering the each bubbles in maps.
     */
-  var bubbleRendering: js.UndefOr[js.Function1[/* e */ BubbleRenderingEventArgs, Unit]] = js.undefined
+  var bubbleRendering: js.UndefOr[js.Function1[/* e */ BubbleRenderingEventArgs, Unit]] = js.native
   /** Specify the center position where map should be displayed
     * @Default {[0,0]}
     */
-  var centerPosition: js.UndefOr[js.Any] = js.undefined
+  var centerPosition: js.UndefOr[js.Any] = js.native
   /** Fires before rendering the data labels. This event is triggered for each data label in the layers. You can use this event to add custom text in data labels.
     */
-  var displayTextRendering: js.UndefOr[js.Function1[/* e */ DisplayTextRenderingEventArgs, Unit]] = js.undefined
+  var displayTextRendering: js.UndefOr[js.Function1[/* e */ DisplayTextRenderingEventArgs, Unit]] = js.native
   /** Fires, on double clicking the map.
     */
-  var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
+  var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
   /** Controls the selection through dragging
     * @Default {false}
     */
-  var draggingOnSelection: js.UndefOr[Boolean] = js.undefined
+  var draggingOnSelection: js.UndefOr[Boolean] = js.native
   /** Enables or Disables the map animation
     * @Default {false}
     */
-  var enableAnimation: js.UndefOr[Boolean] = js.undefined
+  var enableAnimation: js.UndefOr[Boolean] = js.native
   /** Enables or Disables the animation for layer change in map
     * @Default {false}
     */
-  var enableLayerChangeAnimation: js.UndefOr[Boolean] = js.undefined
+  var enableLayerChangeAnimation: js.UndefOr[Boolean] = js.native
   /** Enables or Disables the map panning
     * @Default {true}
     */
-  var enablePan: js.UndefOr[Boolean] = js.undefined
+  var enablePan: js.UndefOr[Boolean] = js.native
   /** Enables or Disables right to left(RTL) support for maps.
     * @Default {false}
     */
-  var enableRTL: js.UndefOr[Boolean] = js.undefined
+  var enableRTL: js.UndefOr[Boolean] = js.native
   /** Determines whether map need to resize when container is resized
     * @Default {true}
     */
-  var enableResize: js.UndefOr[Boolean] = js.undefined
+  var enableResize: js.UndefOr[Boolean] = js.native
   /** Determines whether map need to resize when container is resized
     * @Default {true}
     */
-  var isResponsive: js.UndefOr[Boolean] = js.undefined
+  var isResponsive: js.UndefOr[Boolean] = js.native
   /** Layer for holding the map shapes
     */
-  var layers: js.UndefOr[js.Array[Layer]] = js.undefined
+  var layers: js.UndefOr[js.Array[Layer]] = js.native
   /** Fires on clicking the legend item.
     */
-  var legendItemClick: js.UndefOr[js.Function1[/* e */ LegendItemClickEventArgs, Unit]] = js.undefined
+  var legendItemClick: js.UndefOr[js.Function1[/* e */ LegendItemClickEventArgs, Unit]] = js.native
   /** Triggered while rendering the each legend in maps.
     */
-  var legendItemRendering: js.UndefOr[js.Function1[/* e */ LegendItemRenderingEventArgs, Unit]] = js.undefined
+  var legendItemRendering: js.UndefOr[js.Function1[/* e */ LegendItemRenderingEventArgs, Unit]] = js.native
   /** Name of the culture based on which map should be localized. Labels are localized with respect to the culture name.String type properties like template text are not localized
     * automatically. Provide localized text as value to string type properties.
     * @Default {en-US}
     */
-  var locale: js.UndefOr[String] = js.undefined
+  var locale: js.UndefOr[String] = js.native
   /** Triggers while entering the hovered marker shape.
     */
-  var markerEnter: js.UndefOr[js.Function1[/* e */ MarkerEnterEventArgs, Unit]] = js.undefined
+  var markerEnter: js.UndefOr[js.Function1[/* e */ MarkerEnterEventArgs, Unit]] = js.native
   /** Triggers while leaving the hovered marker shape.
     */
-  var markerLeave: js.UndefOr[js.Function1[/* e */ MarkerLeaveEventArgs, Unit]] = js.undefined
+  var markerLeave: js.UndefOr[js.Function1[/* e */ MarkerLeaveEventArgs, Unit]] = js.native
   /** Triggered on selecting the map markers.
     */
-  var markerSelected: js.UndefOr[js.Function1[/* e */ MarkerSelectedEventArgs, Unit]] = js.undefined
+  var markerSelected: js.UndefOr[js.Function1[/* e */ MarkerSelectedEventArgs, Unit]] = js.native
   /** Triggers while leaving the hovered map shape
     */
-  var mouseleave: js.UndefOr[js.Function1[/* e */ MouseleaveEventArgs, Unit]] = js.undefined
+  var mouseleave: js.UndefOr[js.Function1[/* e */ MouseleaveEventArgs, Unit]] = js.native
   /** Triggers while hovering the map shape.
     */
-  var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
+  var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.native
   /** Enables or Disables the navigation control for map to perform zooming and panning on map shapes.
     */
-  var navigationControl: js.UndefOr[NavigationControl] = js.undefined
+  var navigationControl: js.UndefOr[NavigationControl] = js.native
   /** Fires before loading the map.
     */
-  var onLoad: js.UndefOr[js.Function1[/* e */ OnLoadEventArgs, Unit]] = js.undefined
+  var onLoad: js.UndefOr[js.Function1[/* e */ OnLoadEventArgs, Unit]] = js.native
   /** Triggers once map render completed.
     */
-  var onRenderComplete: js.UndefOr[js.Function1[/* e */ OnRenderCompleteEventArgs, Unit]] = js.undefined
+  var onRenderComplete: js.UndefOr[js.Function1[/* e */ OnRenderCompleteEventArgs, Unit]] = js.native
   /** Triggers when map panning ends.
     */
-  var panned: js.UndefOr[js.Function1[/* e */ PannedEventArgs, Unit]] = js.undefined
+  var panned: js.UndefOr[js.Function1[/* e */ PannedEventArgs, Unit]] = js.native
   /** Triggers after refreshing the map items.
     */
-  var refreshed: js.UndefOr[js.Function1[/* e */ RefreshedEventArgs, Unit]] = js.undefined
+  var refreshed: js.UndefOr[js.Function1[/* e */ RefreshedEventArgs, Unit]] = js.native
   /** Fires, on right clicking the map.
     */
-  var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
+  var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
   /** Triggered while rendering the each shapes in maps.
     */
-  var shapeRendering: js.UndefOr[js.Function1[/* e */ ShapeRenderingEventArgs, Unit]] = js.undefined
+  var shapeRendering: js.UndefOr[js.Function1[/* e */ ShapeRenderingEventArgs, Unit]] = js.native
   /** Triggered on selecting the map shapes.
     */
-  var shapeSelected: js.UndefOr[js.Function1[/* e */ ShapeSelectedEventArgs, Unit]] = js.undefined
+  var shapeSelected: js.UndefOr[js.Function1[/* e */ ShapeSelectedEventArgs, Unit]] = js.native
   /** Enables or Disables the Zooming for map.
     */
-  var zoomSettings: js.UndefOr[ZoomSettings] = js.undefined
+  var zoomSettings: js.UndefOr[ZoomSettings] = js.native
   /** Triggered when map is zoomed-in.
     */
-  var zoomedIn: js.UndefOr[js.Function1[/* e */ ZoomedInEventArgs, Unit]] = js.undefined
+  var zoomedIn: js.UndefOr[js.Function1[/* e */ ZoomedInEventArgs, Unit]] = js.native
   /** Triggers when map is zoomed out.
     */
-  var zoomedOut: js.UndefOr[js.Function1[/* e */ ZoomedOutEventArgs, Unit]] = js.undefined
+  var zoomedOut: js.UndefOr[js.Function1[/* e */ ZoomedOutEventArgs, Unit]] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    Click: /* e */ ClickEventArgs => Unit = null,
-    background: String = null,
-    baseMapIndex: js.UndefOr[Double] = js.undefined,
-    bubbleRendering: /* e */ BubbleRenderingEventArgs => Unit = null,
-    centerPosition: js.Any = null,
-    displayTextRendering: /* e */ DisplayTextRenderingEventArgs => Unit = null,
-    doubleClick: /* e */ DoubleClickEventArgs => Unit = null,
-    draggingOnSelection: js.UndefOr[Boolean] = js.undefined,
-    enableAnimation: js.UndefOr[Boolean] = js.undefined,
-    enableLayerChangeAnimation: js.UndefOr[Boolean] = js.undefined,
-    enablePan: js.UndefOr[Boolean] = js.undefined,
-    enableRTL: js.UndefOr[Boolean] = js.undefined,
-    enableResize: js.UndefOr[Boolean] = js.undefined,
-    isResponsive: js.UndefOr[Boolean] = js.undefined,
-    layers: js.Array[Layer] = null,
-    legendItemClick: /* e */ LegendItemClickEventArgs => Unit = null,
-    legendItemRendering: /* e */ LegendItemRenderingEventArgs => Unit = null,
-    locale: String = null,
-    markerEnter: /* e */ MarkerEnterEventArgs => Unit = null,
-    markerLeave: /* e */ MarkerLeaveEventArgs => Unit = null,
-    markerSelected: /* e */ MarkerSelectedEventArgs => Unit = null,
-    mouseleave: /* e */ MouseleaveEventArgs => Unit = null,
-    mouseover: /* e */ MouseoverEventArgs => Unit = null,
-    navigationControl: NavigationControl = null,
-    onLoad: /* e */ OnLoadEventArgs => Unit = null,
-    onRenderComplete: /* e */ OnRenderCompleteEventArgs => Unit = null,
-    panned: /* e */ PannedEventArgs => Unit = null,
-    refreshed: /* e */ RefreshedEventArgs => Unit = null,
-    rightClick: /* e */ RightClickEventArgs => Unit = null,
-    shapeRendering: /* e */ ShapeRenderingEventArgs => Unit = null,
-    shapeSelected: /* e */ ShapeSelectedEventArgs => Unit = null,
-    zoomSettings: ZoomSettings = null,
-    zoomedIn: /* e */ ZoomedInEventArgs => Unit = null,
-    zoomedOut: /* e */ ZoomedOutEventArgs => Unit = null
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(baseMapIndex)) __obj.updateDynamic("baseMapIndex")(baseMapIndex.get.asInstanceOf[js.Any])
-    if (bubbleRendering != null) __obj.updateDynamic("bubbleRendering")(js.Any.fromFunction1(bubbleRendering))
-    if (centerPosition != null) __obj.updateDynamic("centerPosition")(centerPosition.asInstanceOf[js.Any])
-    if (displayTextRendering != null) __obj.updateDynamic("displayTextRendering")(js.Any.fromFunction1(displayTextRendering))
-    if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
-    if (!js.isUndefined(draggingOnSelection)) __obj.updateDynamic("draggingOnSelection")(draggingOnSelection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLayerChangeAnimation)) __obj.updateDynamic("enableLayerChangeAnimation")(enableLayerChangeAnimation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePan)) __obj.updateDynamic("enablePan")(enablePan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(js.Any.fromFunction1(legendItemClick))
-    if (legendItemRendering != null) __obj.updateDynamic("legendItemRendering")(js.Any.fromFunction1(legendItemRendering))
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (markerEnter != null) __obj.updateDynamic("markerEnter")(js.Any.fromFunction1(markerEnter))
-    if (markerLeave != null) __obj.updateDynamic("markerLeave")(js.Any.fromFunction1(markerLeave))
-    if (markerSelected != null) __obj.updateDynamic("markerSelected")(js.Any.fromFunction1(markerSelected))
-    if (mouseleave != null) __obj.updateDynamic("mouseleave")(js.Any.fromFunction1(mouseleave))
-    if (mouseover != null) __obj.updateDynamic("mouseover")(js.Any.fromFunction1(mouseover))
-    if (navigationControl != null) __obj.updateDynamic("navigationControl")(navigationControl.asInstanceOf[js.Any])
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onRenderComplete != null) __obj.updateDynamic("onRenderComplete")(js.Any.fromFunction1(onRenderComplete))
-    if (panned != null) __obj.updateDynamic("panned")(js.Any.fromFunction1(panned))
-    if (refreshed != null) __obj.updateDynamic("refreshed")(js.Any.fromFunction1(refreshed))
-    if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
-    if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(js.Any.fromFunction1(shapeRendering))
-    if (shapeSelected != null) __obj.updateDynamic("shapeSelected")(js.Any.fromFunction1(shapeSelected))
-    if (zoomSettings != null) __obj.updateDynamic("zoomSettings")(zoomSettings.asInstanceOf[js.Any])
-    if (zoomedIn != null) __obj.updateDynamic("zoomedIn")(js.Any.fromFunction1(zoomedIn))
-    if (zoomedOut != null) __obj.updateDynamic("zoomedOut")(js.Any.fromFunction1(zoomedOut))
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClick(value: /* e */ ClickEventArgs => Unit): Self = this.set("Click", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClick: Self = this.set("Click", js.undefined)
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBaseMapIndex(value: Double): Self = this.set("baseMapIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseMapIndex: Self = this.set("baseMapIndex", js.undefined)
+    @scala.inline
+    def setBubbleRendering(value: /* e */ BubbleRenderingEventArgs => Unit): Self = this.set("bubbleRendering", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBubbleRendering: Self = this.set("bubbleRendering", js.undefined)
+    @scala.inline
+    def setCenterPosition(value: js.Any): Self = this.set("centerPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenterPosition: Self = this.set("centerPosition", js.undefined)
+    @scala.inline
+    def setDisplayTextRendering(value: /* e */ DisplayTextRenderingEventArgs => Unit): Self = this.set("displayTextRendering", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDisplayTextRendering: Self = this.set("displayTextRendering", js.undefined)
+    @scala.inline
+    def setDoubleClick(value: /* e */ DoubleClickEventArgs => Unit): Self = this.set("doubleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDoubleClick: Self = this.set("doubleClick", js.undefined)
+    @scala.inline
+    def setDraggingOnSelection(value: Boolean): Self = this.set("draggingOnSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggingOnSelection: Self = this.set("draggingOnSelection", js.undefined)
+    @scala.inline
+    def setEnableAnimation(value: Boolean): Self = this.set("enableAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAnimation: Self = this.set("enableAnimation", js.undefined)
+    @scala.inline
+    def setEnableLayerChangeAnimation(value: Boolean): Self = this.set("enableLayerChangeAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLayerChangeAnimation: Self = this.set("enableLayerChangeAnimation", js.undefined)
+    @scala.inline
+    def setEnablePan(value: Boolean): Self = this.set("enablePan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePan: Self = this.set("enablePan", js.undefined)
+    @scala.inline
+    def setEnableRTL(value: Boolean): Self = this.set("enableRTL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRTL: Self = this.set("enableRTL", js.undefined)
+    @scala.inline
+    def setEnableResize(value: Boolean): Self = this.set("enableResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableResize: Self = this.set("enableResize", js.undefined)
+    @scala.inline
+    def setIsResponsive(value: Boolean): Self = this.set("isResponsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsResponsive: Self = this.set("isResponsive", js.undefined)
+    @scala.inline
+    def setLayersVarargs(value: Layer*): Self = this.set("layers", js.Array(value :_*))
+    @scala.inline
+    def setLayers(value: js.Array[Layer]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayers: Self = this.set("layers", js.undefined)
+    @scala.inline
+    def setLegendItemClick(value: /* e */ LegendItemClickEventArgs => Unit): Self = this.set("legendItemClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLegendItemClick: Self = this.set("legendItemClick", js.undefined)
+    @scala.inline
+    def setLegendItemRendering(value: /* e */ LegendItemRenderingEventArgs => Unit): Self = this.set("legendItemRendering", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLegendItemRendering: Self = this.set("legendItemRendering", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMarkerEnter(value: /* e */ MarkerEnterEventArgs => Unit): Self = this.set("markerEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMarkerEnter: Self = this.set("markerEnter", js.undefined)
+    @scala.inline
+    def setMarkerLeave(value: /* e */ MarkerLeaveEventArgs => Unit): Self = this.set("markerLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMarkerLeave: Self = this.set("markerLeave", js.undefined)
+    @scala.inline
+    def setMarkerSelected(value: /* e */ MarkerSelectedEventArgs => Unit): Self = this.set("markerSelected", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMarkerSelected: Self = this.set("markerSelected", js.undefined)
+    @scala.inline
+    def setMouseleave(value: /* e */ MouseleaveEventArgs => Unit): Self = this.set("mouseleave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMouseleave: Self = this.set("mouseleave", js.undefined)
+    @scala.inline
+    def setMouseover(value: /* e */ MouseoverEventArgs => Unit): Self = this.set("mouseover", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMouseover: Self = this.set("mouseover", js.undefined)
+    @scala.inline
+    def setNavigationControl(value: NavigationControl): Self = this.set("navigationControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigationControl: Self = this.set("navigationControl", js.undefined)
+    @scala.inline
+    def setOnLoad(value: /* e */ OnLoadEventArgs => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnRenderComplete(value: /* e */ OnRenderCompleteEventArgs => Unit): Self = this.set("onRenderComplete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRenderComplete: Self = this.set("onRenderComplete", js.undefined)
+    @scala.inline
+    def setPanned(value: /* e */ PannedEventArgs => Unit): Self = this.set("panned", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePanned: Self = this.set("panned", js.undefined)
+    @scala.inline
+    def setRefreshed(value: /* e */ RefreshedEventArgs => Unit): Self = this.set("refreshed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRefreshed: Self = this.set("refreshed", js.undefined)
+    @scala.inline
+    def setRightClick(value: /* e */ RightClickEventArgs => Unit): Self = this.set("rightClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRightClick: Self = this.set("rightClick", js.undefined)
+    @scala.inline
+    def setShapeRendering(value: /* e */ ShapeRenderingEventArgs => Unit): Self = this.set("shapeRendering", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShapeRendering: Self = this.set("shapeRendering", js.undefined)
+    @scala.inline
+    def setShapeSelected(value: /* e */ ShapeSelectedEventArgs => Unit): Self = this.set("shapeSelected", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShapeSelected: Self = this.set("shapeSelected", js.undefined)
+    @scala.inline
+    def setZoomSettings(value: ZoomSettings): Self = this.set("zoomSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomSettings: Self = this.set("zoomSettings", js.undefined)
+    @scala.inline
+    def setZoomedIn(value: /* e */ ZoomedInEventArgs => Unit): Self = this.set("zoomedIn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomedIn: Self = this.set("zoomedIn", js.undefined)
+    @scala.inline
+    def setZoomedOut(value: /* e */ ZoomedOutEventArgs => Unit): Self = this.set("zoomedOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomedOut: Self = this.set("zoomedOut", js.undefined)
+  }
+  
 }
 

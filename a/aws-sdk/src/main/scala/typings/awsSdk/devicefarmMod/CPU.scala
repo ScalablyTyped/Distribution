@@ -22,12 +22,34 @@ trait CPU extends js.Object {
 
 object CPU {
   @scala.inline
-  def apply(architecture: String = null, clock: js.UndefOr[Double] = js.undefined, frequency: String = null): CPU = {
+  def apply(): CPU = {
     val __obj = js.Dynamic.literal()
-    if (architecture != null) __obj.updateDynamic("architecture")(architecture.asInstanceOf[js.Any])
-    if (!js.isUndefined(clock)) __obj.updateDynamic("clock")(clock.get.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPU]
   }
+  @scala.inline
+  implicit class CPUOps[Self <: CPU] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchitecture(value: String): Self = this.set("architecture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchitecture: Self = this.set("architecture", js.undefined)
+    @scala.inline
+    def setClock(value: Double): Self = this.set("clock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClock: Self = this.set("clock", js.undefined)
+    @scala.inline
+    def setFrequency(value: String): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequency: Self = this.set("frequency", js.undefined)
+  }
+  
 }
 

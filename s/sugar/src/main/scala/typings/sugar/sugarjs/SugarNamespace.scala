@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SugarNamespace extends js.Object {
-  def alias(toName: java.lang.String): this.type = js.native
+  def alias(toName: java.lang.String, fn: js.UndefOr[scala.Nothing]): this.type = js.native
   def alias(toName: java.lang.String, from: java.lang.String): this.type = js.native
   def alias(toName: java.lang.String, from: typings.sugar.Function): this.type = js.native
   def defineInstance(methodName: java.lang.String, methodFn: typings.sugar.Function): this.type = js.native

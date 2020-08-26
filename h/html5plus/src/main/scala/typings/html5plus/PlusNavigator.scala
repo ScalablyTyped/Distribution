@@ -53,6 +53,7 @@ trait PlusNavigator extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def createShortcut(): Unit = js.native
+  def createShortcut(options: js.UndefOr[scala.Nothing], successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def createShortcut(options: PlusNavigatorShortcutOptions): Unit = js.native
   def createShortcut(options: PlusNavigatorShortcutOptions, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   /**
@@ -102,6 +103,7 @@ trait PlusNavigator extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def hasShortcut(): Unit = js.native
+  def hasShortcut(options: js.UndefOr[scala.Nothing], successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def hasShortcut(options: PlusNavigatorShortcutOptions): Unit = js.native
   def hasShortcut(options: PlusNavigatorShortcutOptions, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   /**
@@ -167,6 +169,7 @@ trait PlusNavigator extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def setCookie(): Unit = js.native
+  def setCookie(url: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def setCookie(url: String): Unit = js.native
   def setCookie(url: String, value: String): Unit = js.native
   /**
@@ -213,6 +216,7 @@ trait PlusNavigator extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   def setUserAgent(): Unit = js.native
+  def setUserAgent(useragent: js.UndefOr[scala.Nothing], checkplus: Boolean): Unit = js.native
   def setUserAgent(useragent: String): Unit = js.native
   def setUserAgent(useragent: String, checkplus: Boolean): Unit = js.native
   /**

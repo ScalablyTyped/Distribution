@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-select.react-select/src/types.CommonProps<OptionType> & {  children  :react.react.ReactElement, getPortalPlacement (state : react-select.react-select/src/components/Menu.MenuState): void,   innerProps  :object,   maxMenuHeight  :number,   menuPlacement  :react-select.react-select/src/types.MenuPlacement,   menuPosition  :react-select.react-select/src/types.MenuPosition,   minMenuHeight  :number,   menuShouldScrollIntoView  :boolean} */
+/* Inlined react-select.react-select/src/types.CommonProps<OptionType> & {  children :react.react.ReactElement, getPortalPlacement (state : react-select.react-select/src/components/Menu.MenuState): void,   innerProps :object,   maxMenuHeight :number,   menuPlacement :react-select.react-select/src/types.MenuPlacement,   menuPosition :react-select.react-select/src/types.MenuPosition,   minMenuHeight :number,   menuShouldScrollIntoView :boolean} */
 @js.native
 trait MenuProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   /** The children to be rendered. */
@@ -36,12 +36,9 @@ trait MenuProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   var options: OptionsType[OptionType] = js.native
   var selectProps: Props[OptionType] = js.native
   def clearValue(): Unit = js.native
-  def cx(): String | Unit = js.native
-  def cx(a: String): String | Unit = js.native
-  def cx(a: String, b: ClassNamesState): String | Unit = js.native
-  def cx(a: String, b: ClassNamesState, c: String): String | Unit = js.native
-  def cx(a: Null, b: ClassNamesState): String | Unit = js.native
-  def cx(a: Null, b: ClassNamesState, c: String): String | Unit = js.native
+  def cx(): String = js.native
+  def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
+  def cx(state: ClassNamesState): String = js.native
   /** Callback to update the portal after possible flip. */
   def getPortalPlacement(state: MenuState): Unit = js.native
   /*

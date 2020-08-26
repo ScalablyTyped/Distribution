@@ -51,6 +51,7 @@ trait HopscotchStatic extends js.Object {
     * will remain). If eventName is null or undefined, callbacks for all events will be removed.
     */
   def removeCallbacks(): Unit = js.native
+  def removeCallbacks(eventName: js.UndefOr[scala.Nothing], tourOnly: Boolean): Unit = js.native
   def removeCallbacks(eventName: String): Unit = js.native
   def removeCallbacks(eventName: String, tourOnly: Boolean): Unit = js.native
   /**

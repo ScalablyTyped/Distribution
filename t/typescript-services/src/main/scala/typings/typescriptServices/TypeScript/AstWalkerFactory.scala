@@ -10,6 +10,12 @@ trait AstWalkerFactory extends js.Object {
   def simpleWalk(
     ast: AST,
     pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit],
+    post: js.UndefOr[scala.Nothing],
+    state: js.Any
+  ): Unit = js.native
+  def simpleWalk(
+    ast: AST,
+    pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit],
     post: js.Function2[/* ast */ AST, /* state */ js.Any, Unit]
   ): Unit = js.native
   def simpleWalk(
@@ -19,6 +25,12 @@ trait AstWalkerFactory extends js.Object {
     state: js.Any
   ): Unit = js.native
   def walk(ast: AST, pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit]): Unit = js.native
+  def walk(
+    ast: AST,
+    pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit],
+    post: js.UndefOr[scala.Nothing],
+    state: js.Any
+  ): Unit = js.native
   def walk(
     ast: AST,
     pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit],

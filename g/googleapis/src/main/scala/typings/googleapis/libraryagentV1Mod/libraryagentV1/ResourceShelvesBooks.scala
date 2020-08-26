@@ -30,6 +30,7 @@ class ResourceShelvesBooks protected () extends js.Object {
     */
   def borrow(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
   def borrow(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]): Unit = js.native
+  def borrow(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
   def borrow(params: ParamsResourceShelvesBooksBorrow): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
   def borrow(
     params: ParamsResourceShelvesBooksBorrow,
@@ -60,6 +61,7 @@ class ResourceShelvesBooks protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
   def get(params: ParamsResourceShelvesBooksGet): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
   def get(
     params: ParamsResourceShelvesBooksGet,
@@ -94,6 +96,7 @@ class ResourceShelvesBooks protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListBooksResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListBooksResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListBooksResponse] = js.native
   def list(params: ParamsResourceShelvesBooksList): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListBooksResponse] = js.native
   def list(
     params: ParamsResourceShelvesBooksList,
@@ -126,6 +129,7 @@ class ResourceShelvesBooks protected () extends js.Object {
     */
   def `return`(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
   def `return`(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Book]): Unit = js.native
+  def `return`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
   def `return`(params: ParamsResourceShelvesBooksReturn): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Book] = js.native
   def `return`(
     params: ParamsResourceShelvesBooksReturn,

@@ -62,34 +62,72 @@ trait UpdateFlowOutputRequest extends js.Object {
 
 object UpdateFlowOutputRequest {
   @scala.inline
-  def apply(
-    FlowArn: string,
-    OutputArn: string,
-    CidrAllowList: listOfString = null,
-    Description: string = null,
-    Destination: string = null,
-    Encryption: UpdateEncryption = null,
-    MaxLatency: js.UndefOr[integer] = js.undefined,
-    Port: js.UndefOr[integer] = js.undefined,
-    Protocol: Protocol = null,
-    RemoteId: string = null,
-    SmoothingLatency: js.UndefOr[integer] = js.undefined,
-    StreamId: string = null,
-    VpcInterfaceAttachment: VpcInterfaceAttachment = null
-  ): UpdateFlowOutputRequest = {
+  def apply(FlowArn: string, OutputArn: string): UpdateFlowOutputRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any], OutputArn = OutputArn.asInstanceOf[js.Any])
-    if (CidrAllowList != null) __obj.updateDynamic("CidrAllowList")(CidrAllowList.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Destination != null) __obj.updateDynamic("Destination")(Destination.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxLatency)) __obj.updateDynamic("MaxLatency")(MaxLatency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (RemoteId != null) __obj.updateDynamic("RemoteId")(RemoteId.asInstanceOf[js.Any])
-    if (!js.isUndefined(SmoothingLatency)) __obj.updateDynamic("SmoothingLatency")(SmoothingLatency.get.asInstanceOf[js.Any])
-    if (StreamId != null) __obj.updateDynamic("StreamId")(StreamId.asInstanceOf[js.Any])
-    if (VpcInterfaceAttachment != null) __obj.updateDynamic("VpcInterfaceAttachment")(VpcInterfaceAttachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFlowOutputRequest]
   }
+  @scala.inline
+  implicit class UpdateFlowOutputRequestOps[Self <: UpdateFlowOutputRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlowArn(value: string): Self = this.set("FlowArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputArn(value: string): Self = this.set("OutputArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCidrAllowListVarargs(value: string*): Self = this.set("CidrAllowList", js.Array(value :_*))
+    @scala.inline
+    def setCidrAllowList(value: listOfString): Self = this.set("CidrAllowList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrAllowList: Self = this.set("CidrAllowList", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDestination(value: string): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("Destination", js.undefined)
+    @scala.inline
+    def setEncryption(value: UpdateEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setMaxLatency(value: integer): Self = this.set("MaxLatency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLatency: Self = this.set("MaxLatency", js.undefined)
+    @scala.inline
+    def setPort(value: integer): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setProtocol(value: Protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    @scala.inline
+    def setRemoteId(value: string): Self = this.set("RemoteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteId: Self = this.set("RemoteId", js.undefined)
+    @scala.inline
+    def setSmoothingLatency(value: integer): Self = this.set("SmoothingLatency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmoothingLatency: Self = this.set("SmoothingLatency", js.undefined)
+    @scala.inline
+    def setStreamId(value: string): Self = this.set("StreamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamId: Self = this.set("StreamId", js.undefined)
+    @scala.inline
+    def setVpcInterfaceAttachment(value: VpcInterfaceAttachment): Self = this.set("VpcInterfaceAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcInterfaceAttachment: Self = this.set("VpcInterfaceAttachment", js.undefined)
+  }
+  
 }
 

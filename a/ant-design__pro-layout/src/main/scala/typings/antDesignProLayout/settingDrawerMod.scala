@@ -31,6 +31,8 @@ object settingDrawerMod extends js.Object {
     var appDotsettingDothideheaderDothint: String = js.native
     @JSName("app.setting.loading")
     var appDotsettingDotloading: String = js.native
+    @JSName("app.setting.mixmenu")
+    var appDotsettingDotmixmenu: String = js.native
     @JSName("app.setting.navigationmode")
     var appDotsettingDotnavigationmode: String = js.native
     @JSName("app.setting.othersettings")
@@ -43,8 +45,20 @@ object settingDrawerMod extends js.Object {
     var appDotsettingDotpagestyleDotlight: String = js.native
     @JSName("app.setting.production.hint")
     var appDotsettingDotproductionDothint: String = js.native
+    @JSName("app.setting.regionalsettings")
+    var appDotsettingDotregionalsettings: String = js.native
+    @JSName("app.setting.regionalsettings.footer")
+    var appDotsettingDotregionalsettingsDotfooter: String = js.native
+    @JSName("app.setting.regionalsettings.header")
+    var appDotsettingDotregionalsettingsDotheader: String = js.native
+    @JSName("app.setting.regionalsettings.menu")
+    var appDotsettingDotregionalsettingsDotmenu: String = js.native
+    @JSName("app.setting.regionalsettings.menuHeader")
+    var appDotsettingDotregionalsettingsDotmenuHeader: String = js.native
     @JSName("app.setting.sidemenu")
     var appDotsettingDotsidemenu: String = js.native
+    @JSName("app.setting.splitMenus")
+    var appDotsettingDotsplitMenus: String = js.native
     @JSName("app.setting.themecolor")
     var appDotsettingDotthemecolor: String = js.native
     @JSName("app.setting.themecolor.cyan")

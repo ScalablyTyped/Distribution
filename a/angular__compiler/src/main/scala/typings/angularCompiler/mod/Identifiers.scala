@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Identifiers")
 @js.native
 class Identifiers ()
-  extends typings.angularCompiler.publicApiMod.Identifiers
+  extends typings.angularCompiler.compilerMod.Identifiers
 
 /* static members */
 @JSImport("@angular/compiler", "Identifiers")

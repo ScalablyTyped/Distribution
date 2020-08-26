@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 /**
   * Interface to a texture parser. Implementations of this interface handle the loading
-  and opening of texture assets.
+  * and opening of texture assets.
   */
 @js.native
 trait TextureParser extends js.Object {
   /**
     * Load the texture from the remote URL. When loaded (or failed),
-    use the callback to return an the raw resource data (or error).
+    * use the callback to return an the raw resource data (or error).
     * @param url - The URL of the resource to load.
     * @param url.load - The URL to use for loading the resource
     * @param url.original - The original URL useful for identifying the resource type

@@ -4,57 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectionConfigOptions extends js.Object {
-  var authSecret: js.UndefOr[String] = js.undefined
-  var clientId: js.UndefOr[String] = js.undefined
-  var deflate: js.UndefOr[Boolean] = js.undefined
-  var deflateLevel: js.UndefOr[Double] = js.undefined
-  var heartbeatInterval: js.UndefOr[Double] = js.undefined
-  var maxInFlight: js.UndefOr[Double] = js.undefined
-  var messageTimeout: js.UndefOr[Double] = js.undefined
-  var outputBufferSize: js.UndefOr[Double] = js.undefined
-  var outputBufferTimeout: js.UndefOr[Double] = js.undefined
-  var requeueDelay: js.UndefOr[Double] = js.undefined
-  var sampleRate: js.UndefOr[Double] = js.undefined
-  var snappy: js.UndefOr[Boolean] = js.undefined
-  var tls: js.UndefOr[Boolean] = js.undefined
-  var tlsVerification: js.UndefOr[Boolean] = js.undefined
+  var authSecret: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.native
+  var deflate: js.UndefOr[Boolean] = js.native
+  var deflateLevel: js.UndefOr[Double] = js.native
+  var heartbeatInterval: js.UndefOr[Double] = js.native
+  var maxInFlight: js.UndefOr[Double] = js.native
+  var messageTimeout: js.UndefOr[Double] = js.native
+  var outputBufferSize: js.UndefOr[Double] = js.native
+  var outputBufferTimeout: js.UndefOr[Double] = js.native
+  var requeueDelay: js.UndefOr[Double] = js.native
+  var sampleRate: js.UndefOr[Double] = js.native
+  var snappy: js.UndefOr[Boolean] = js.native
+  var tls: js.UndefOr[Boolean] = js.native
+  var tlsVerification: js.UndefOr[Boolean] = js.native
 }
 
 object ConnectionConfigOptions {
   @scala.inline
-  def apply(
-    authSecret: String = null,
-    clientId: String = null,
-    deflate: js.UndefOr[Boolean] = js.undefined,
-    deflateLevel: js.UndefOr[Double] = js.undefined,
-    heartbeatInterval: js.UndefOr[Double] = js.undefined,
-    maxInFlight: js.UndefOr[Double] = js.undefined,
-    messageTimeout: js.UndefOr[Double] = js.undefined,
-    outputBufferSize: js.UndefOr[Double] = js.undefined,
-    outputBufferTimeout: js.UndefOr[Double] = js.undefined,
-    requeueDelay: js.UndefOr[Double] = js.undefined,
-    sampleRate: js.UndefOr[Double] = js.undefined,
-    snappy: js.UndefOr[Boolean] = js.undefined,
-    tls: js.UndefOr[Boolean] = js.undefined,
-    tlsVerification: js.UndefOr[Boolean] = js.undefined
-  ): ConnectionConfigOptions = {
+  def apply(): ConnectionConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (authSecret != null) __obj.updateDynamic("authSecret")(authSecret.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(deflate)) __obj.updateDynamic("deflate")(deflate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deflateLevel)) __obj.updateDynamic("deflateLevel")(deflateLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(heartbeatInterval)) __obj.updateDynamic("heartbeatInterval")(heartbeatInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxInFlight)) __obj.updateDynamic("maxInFlight")(maxInFlight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageTimeout)) __obj.updateDynamic("messageTimeout")(messageTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputBufferSize)) __obj.updateDynamic("outputBufferSize")(outputBufferSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputBufferTimeout)) __obj.updateDynamic("outputBufferTimeout")(outputBufferTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requeueDelay)) __obj.updateDynamic("requeueDelay")(requeueDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snappy)) __obj.updateDynamic("snappy")(snappy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tlsVerification)) __obj.updateDynamic("tlsVerification")(tlsVerification.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionConfigOptions]
   }
+  @scala.inline
+  implicit class ConnectionConfigOptionsOps[Self <: ConnectionConfigOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthSecret(value: String): Self = this.set("authSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthSecret: Self = this.set("authSecret", js.undefined)
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setDeflate(value: Boolean): Self = this.set("deflate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeflate: Self = this.set("deflate", js.undefined)
+    @scala.inline
+    def setDeflateLevel(value: Double): Self = this.set("deflateLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeflateLevel: Self = this.set("deflateLevel", js.undefined)
+    @scala.inline
+    def setHeartbeatInterval(value: Double): Self = this.set("heartbeatInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeartbeatInterval: Self = this.set("heartbeatInterval", js.undefined)
+    @scala.inline
+    def setMaxInFlight(value: Double): Self = this.set("maxInFlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxInFlight: Self = this.set("maxInFlight", js.undefined)
+    @scala.inline
+    def setMessageTimeout(value: Double): Self = this.set("messageTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageTimeout: Self = this.set("messageTimeout", js.undefined)
+    @scala.inline
+    def setOutputBufferSize(value: Double): Self = this.set("outputBufferSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputBufferSize: Self = this.set("outputBufferSize", js.undefined)
+    @scala.inline
+    def setOutputBufferTimeout(value: Double): Self = this.set("outputBufferTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputBufferTimeout: Self = this.set("outputBufferTimeout", js.undefined)
+    @scala.inline
+    def setRequeueDelay(value: Double): Self = this.set("requeueDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequeueDelay: Self = this.set("requeueDelay", js.undefined)
+    @scala.inline
+    def setSampleRate(value: Double): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRate: Self = this.set("sampleRate", js.undefined)
+    @scala.inline
+    def setSnappy(value: Boolean): Self = this.set("snappy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnappy: Self = this.set("snappy", js.undefined)
+    @scala.inline
+    def setTls(value: Boolean): Self = this.set("tls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTls: Self = this.set("tls", js.undefined)
+    @scala.inline
+    def setTlsVerification(value: Boolean): Self = this.set("tlsVerification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTlsVerification: Self = this.set("tlsVerification", js.undefined)
+  }
+  
 }
 

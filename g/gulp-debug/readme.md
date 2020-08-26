@@ -10,9 +10,9 @@ Debug Vinyl file streams to see what files are run through your Gulp pipeline
 | ------------------ | :-------------: |
 | Full name          | gulp-debug |
 | Keywords           | gulpplugin, debug, debugging, inspect, log, logger, vinyl, file, fs |
-| # releases         | 3 |
-| # dependents       | 250 |
-| # downloads        | 6396132 |
+| # releases         | 2 |
+| # dependents       | 253 |
+| # downloads        | 6350041 |
 | # stars            | 45 |
 
 ## Links

@@ -12,7 +12,7 @@ Simple star rating component for your React projects
 | Keywords           | star, rating, react, star, rating, component, raty |
 | # releases         | 1 |
 | # dependents       | 6 |
-| # downloads        | 309892 |
+| # downloads        | 314795 |
 | # stars            | 3 |
 
 ## Links

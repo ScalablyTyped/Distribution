@@ -35,5 +35,26 @@ object TrustedAdvisorResourcesSummary {
     val __obj = js.Dynamic.literal(resourcesFlagged = resourcesFlagged.asInstanceOf[js.Any], resourcesIgnored = resourcesIgnored.asInstanceOf[js.Any], resourcesProcessed = resourcesProcessed.asInstanceOf[js.Any], resourcesSuppressed = resourcesSuppressed.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustedAdvisorResourcesSummary]
   }
+  @scala.inline
+  implicit class TrustedAdvisorResourcesSummaryOps[Self <: TrustedAdvisorResourcesSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourcesFlagged(value: Long): Self = this.set("resourcesFlagged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourcesIgnored(value: Long): Self = this.set("resourcesIgnored", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourcesProcessed(value: Long): Self = this.set("resourcesProcessed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourcesSuppressed(value: Long): Self = this.set("resourcesSuppressed", value.asInstanceOf[js.Any])
+  }
+  
 }
 

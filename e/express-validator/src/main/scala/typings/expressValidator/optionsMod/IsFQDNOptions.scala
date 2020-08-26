@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IsFQDNOptions extends js.Object {
-  var allow_trailing_dot: js.UndefOr[Boolean] = js.undefined
-  var allow_underscores: js.UndefOr[Boolean] = js.undefined
-  var require_tld: js.UndefOr[Boolean] = js.undefined
+  var allow_trailing_dot: js.UndefOr[Boolean] = js.native
+  var allow_underscores: js.UndefOr[Boolean] = js.native
+  var require_tld: js.UndefOr[Boolean] = js.native
 }
 
 object IsFQDNOptions {
   @scala.inline
-  def apply(
-    allow_trailing_dot: js.UndefOr[Boolean] = js.undefined,
-    allow_underscores: js.UndefOr[Boolean] = js.undefined,
-    require_tld: js.UndefOr[Boolean] = js.undefined
-  ): IsFQDNOptions = {
+  def apply(): IsFQDNOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_trailing_dot)) __obj.updateDynamic("allow_trailing_dot")(allow_trailing_dot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_underscores)) __obj.updateDynamic("allow_underscores")(allow_underscores.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(require_tld)) __obj.updateDynamic("require_tld")(require_tld.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsFQDNOptions]
   }
+  @scala.inline
+  implicit class IsFQDNOptionsOps[Self <: IsFQDNOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllow_trailing_dot(value: Boolean): Self = this.set("allow_trailing_dot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllow_trailing_dot: Self = this.set("allow_trailing_dot", js.undefined)
+    @scala.inline
+    def setAllow_underscores(value: Boolean): Self = this.set("allow_underscores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllow_underscores: Self = this.set("allow_underscores", js.undefined)
+    @scala.inline
+    def setRequire_tld(value: Boolean): Self = this.set("require_tld", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequire_tld: Self = this.set("require_tld", js.undefined)
+  }
+  
 }
 

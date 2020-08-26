@@ -47,30 +47,64 @@ trait SchemaLiveChatMessageListResponse extends js.Object {
 
 object SchemaLiveChatMessageListResponse {
   @scala.inline
-  def apply(
-    etag: String = null,
-    eventId: String = null,
-    items: js.Array[SchemaLiveChatMessage] = null,
-    kind: String = null,
-    nextPageToken: String = null,
-    offlineAt: String = null,
-    pageInfo: SchemaPageInfo = null,
-    pollingIntervalMillis: js.UndefOr[Double] = js.undefined,
-    tokenPagination: SchemaTokenPagination = null,
-    visitorId: String = null
-  ): SchemaLiveChatMessageListResponse = {
+  def apply(): SchemaLiveChatMessageListResponse = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (offlineAt != null) __obj.updateDynamic("offlineAt")(offlineAt.asInstanceOf[js.Any])
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(pollingIntervalMillis)) __obj.updateDynamic("pollingIntervalMillis")(pollingIntervalMillis.get.asInstanceOf[js.Any])
-    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination.asInstanceOf[js.Any])
-    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveChatMessageListResponse]
   }
+  @scala.inline
+  implicit class SchemaLiveChatMessageListResponseOps[Self <: SchemaLiveChatMessageListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("eventId", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: SchemaLiveChatMessage*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[SchemaLiveChatMessage]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setOfflineAt(value: String): Self = this.set("offlineAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfflineAt: Self = this.set("offlineAt", js.undefined)
+    @scala.inline
+    def setPageInfo(value: SchemaPageInfo): Self = this.set("pageInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageInfo: Self = this.set("pageInfo", js.undefined)
+    @scala.inline
+    def setPollingIntervalMillis(value: Double): Self = this.set("pollingIntervalMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollingIntervalMillis: Self = this.set("pollingIntervalMillis", js.undefined)
+    @scala.inline
+    def setTokenPagination(value: SchemaTokenPagination): Self = this.set("tokenPagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenPagination: Self = this.set("tokenPagination", js.undefined)
+    @scala.inline
+    def setVisitorId(value: String): Self = this.set("visitorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisitorId: Self = this.set("visitorId", js.undefined)
+  }
+  
 }
 

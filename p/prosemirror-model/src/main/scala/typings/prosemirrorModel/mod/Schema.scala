@@ -59,7 +59,40 @@ class Schema[N /* <: String */, M /* <: String */] protected () extends js.Objec
     * `null`, a `Node`, or an array of nodes.
     */
   def node(`type`: String): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: String,
+    attrs: js.UndefOr[scala.Nothing],
+    content: js.UndefOr[scala.Nothing],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: String, attrs: js.UndefOr[scala.Nothing], content: js.Array[ProsemirrorNode[Schema[N, M]]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: String,
+    attrs: js.UndefOr[scala.Nothing],
+    content: js.Array[ProsemirrorNode[Schema[N, M]]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: String, attrs: js.UndefOr[scala.Nothing], content: Fragment[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: String,
+    attrs: js.UndefOr[scala.Nothing],
+    content: Fragment[Schema[N, M]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: String, attrs: js.UndefOr[scala.Nothing], content: ProsemirrorNode[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: String,
+    attrs: js.UndefOr[scala.Nothing],
+    content: ProsemirrorNode[Schema[N, M]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(`type`: String, attrs: StringDictionary[js.Any]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: String,
+    attrs: StringDictionary[js.Any],
+    content: js.UndefOr[scala.Nothing],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(`type`: String, attrs: StringDictionary[js.Any], content: js.Array[ProsemirrorNode[Schema[N, M]]]): ProsemirrorNode[Schema[N, M]] = js.native
   def node(
     `type`: String,
@@ -82,7 +115,48 @@ class Schema[N /* <: String */, M /* <: String */] protected () extends js.Objec
     marks: js.Array[Mark[Schema[N, M]]]
   ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(`type`: NodeType[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: js.UndefOr[scala.Nothing],
+    content: js.UndefOr[scala.Nothing],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: js.UndefOr[scala.Nothing],
+    content: js.Array[ProsemirrorNode[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: js.UndefOr[scala.Nothing],
+    content: js.Array[ProsemirrorNode[Schema[N, M]]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(`type`: NodeType[Schema[N, M]], attrs: js.UndefOr[scala.Nothing], content: Fragment[Schema[N, M]]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: js.UndefOr[scala.Nothing],
+    content: Fragment[Schema[N, M]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: js.UndefOr[scala.Nothing],
+    content: ProsemirrorNode[Schema[N, M]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: js.UndefOr[scala.Nothing],
+    content: ProsemirrorNode[Schema[N, M]],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(`type`: NodeType[Schema[N, M]], attrs: StringDictionary[js.Any]): ProsemirrorNode[Schema[N, M]] = js.native
+  def node(
+    `type`: NodeType[Schema[N, M]],
+    attrs: StringDictionary[js.Any],
+    content: js.UndefOr[scala.Nothing],
+    marks: js.Array[Mark[Schema[N, M]]]
+  ): ProsemirrorNode[Schema[N, M]] = js.native
   def node(
     `type`: NodeType[Schema[N, M]],
     attrs: StringDictionary[js.Any],

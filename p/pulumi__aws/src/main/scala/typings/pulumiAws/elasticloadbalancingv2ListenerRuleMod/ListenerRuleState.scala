@@ -14,7 +14,7 @@ trait ListenerRuleState extends js.Object {
     */
   val actions: js.UndefOr[Input[js.Array[Input[ListenerRuleAction]]]] = js.native
   /**
-    * The ARN of the rule (matches `id`)
+    * The Amazon Resource Name (ARN) of the target group.
     */
   val arn: js.UndefOr[Input[String]] = js.native
   /**
@@ -33,20 +33,46 @@ trait ListenerRuleState extends js.Object {
 
 object ListenerRuleState {
   @scala.inline
-  def apply(
-    actions: Input[js.Array[Input[ListenerRuleAction]]] = null,
-    arn: Input[String] = null,
-    conditions: Input[js.Array[Input[ListenerRuleCondition]]] = null,
-    listenerArn: Input[String] = null,
-    priority: Input[Double] = null
-  ): ListenerRuleState = {
+  def apply(): ListenerRuleState = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (listenerArn != null) __obj.updateDynamic("listenerArn")(listenerArn.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleState]
   }
+  @scala.inline
+  implicit class ListenerRuleStateOps[Self <: ListenerRuleState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: Input[ListenerRuleAction]*): Self = this.set("actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: Input[js.Array[Input[ListenerRuleAction]]]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setConditionsVarargs(value: Input[ListenerRuleCondition]*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: Input[js.Array[Input[ListenerRuleCondition]]]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+    @scala.inline
+    def setListenerArn(value: Input[String]): Self = this.set("listenerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListenerArn: Self = this.set("listenerArn", js.undefined)
+    @scala.inline
+    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+  }
+  
 }
 

@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TYPE extends js.Object {
-  var `inline`: typings.baseui.baseuiStrings.`inline`
-  var toast: typings.baseui.baseuiStrings.toast
+  var `inline`: typings.baseui.baseuiStrings.`inline` = js.native
+  var toast: typings.baseui.baseuiStrings.toast = js.native
 }
 
 @JSImport("baseui/toast", "TYPE")

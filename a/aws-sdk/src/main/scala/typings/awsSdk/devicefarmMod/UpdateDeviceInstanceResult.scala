@@ -14,10 +14,26 @@ trait UpdateDeviceInstanceResult extends js.Object {
 
 object UpdateDeviceInstanceResult {
   @scala.inline
-  def apply(deviceInstance: DeviceInstance = null): UpdateDeviceInstanceResult = {
+  def apply(): UpdateDeviceInstanceResult = {
     val __obj = js.Dynamic.literal()
-    if (deviceInstance != null) __obj.updateDynamic("deviceInstance")(deviceInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceInstanceResult]
   }
+  @scala.inline
+  implicit class UpdateDeviceInstanceResultOps[Self <: UpdateDeviceInstanceResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceInstance(value: DeviceInstance): Self = this.set("deviceInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceInstance: Self = this.set("deviceInstance", js.undefined)
+  }
+  
 }
 

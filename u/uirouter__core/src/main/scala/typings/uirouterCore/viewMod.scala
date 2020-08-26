@@ -16,8 +16,8 @@ object viewMod extends js.Object {
   @js.native
   class ViewService protected ()
     extends typings.uirouterCore.viewViewMod.ViewService {
-    /** @hidden */
-    def this(/** @hidden */ router: UIRouter) = this()
+    /** @internal */
+    def this(/** @internal */ router: UIRouter) = this()
   }
   
   /* static members */
@@ -78,7 +78,7 @@ object viewMod extends js.Object {
       * - And the remaining segments [ "$default", "bar" ].join("."_ of the ViewConfig's target name match
       *   the tail of the ui-view's fqn "default.bar"
       *
-      * @internalapi
+      * @internal
       */
     def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = js.native
     /**

@@ -45,7 +45,7 @@ class ClusterInstance protected () extends CustomResource {
     */
   val caCertIdentifier: Output_[String] = js.native
   /**
-    * The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+    * The identifier of the `aws.rds.Cluster` in which to launch this instance.
     */
   val clusterIdentifier: Output_[String] = js.native
   /**
@@ -57,7 +57,7 @@ class ClusterInstance protected () extends CustomResource {
     */
   val dbParameterGroupName: Output_[String] = js.native
   /**
-    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` of the attached `aws.rds.Cluster`.
     */
   val dbSubnetGroupName: Output_[String] = js.native
   /**
@@ -89,7 +89,7 @@ class ClusterInstance protected () extends CustomResource {
   val identifierPrefix: Output_[String] = js.native
   /**
     * The instance class to use. For details on CPU
-    * and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
+    * and memory, see [Scaling Aurora DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Aurora.Managing.html). Aurora uses `db.*` instance classes/types. Please see [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html) for currently available instance classes and complete details.
     */
   val instanceClass: Output_[String] = js.native
   /**
@@ -134,7 +134,7 @@ class ClusterInstance protected () extends CustomResource {
   val promotionTier: Output_[js.UndefOr[Double]] = js.native
   /**
     * Bool to control if instance is publicly accessible.
-    * Default `false`. See the documentation on [Creating DB Instances][6] for more
+    * Default `false`. See the documentation on [Creating DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) for more
     * details on controlling this property.
     */
   val publiclyAccessible: Output_[js.UndefOr[Boolean]] = js.native
@@ -143,9 +143,9 @@ class ClusterInstance protected () extends CustomResource {
     */
   val storageEncrypted: Output_[Boolean] = js.native
   /**
-    * A mapping of tags to assign to the instance.
+    * A map of tags to assign to the instance.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
     */
@@ -163,8 +163,10 @@ object ClusterInstance extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ClusterInstance = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ClusterInstance = js.native
   def get(name: String, id: Input[ID], state: ClusterInstanceState): ClusterInstance = js.native
   def get(name: String, id: Input[ID], state: ClusterInstanceState, opts: CustomResourceOptions): ClusterInstance = js.native
   /**

@@ -38,6 +38,7 @@ class ResourcePhoto protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaPhoto] = js.native
   def create(callback: BodyResponseCallback[SchemaPhoto]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPhoto] = js.native
   def create(params: ParamsResourcePhotoCreate): GaxiosPromise[SchemaPhoto] = js.native
   def create(params: ParamsResourcePhotoCreate, callback: BodyResponseCallback[SchemaPhoto]): Unit = js.native
   def create(
@@ -68,6 +69,7 @@ class ResourcePhoto protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourcePhotoDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourcePhotoDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -102,6 +104,7 @@ class ResourcePhoto protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPhoto] = js.native
   def get(callback: BodyResponseCallback[SchemaPhoto]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPhoto] = js.native
   def get(params: ParamsResourcePhotoGet): GaxiosPromise[SchemaPhoto] = js.native
   def get(params: ParamsResourcePhotoGet, callback: BodyResponseCallback[SchemaPhoto]): Unit = js.native
   def get(
@@ -141,6 +144,7 @@ class ResourcePhoto protected () extends js.Object {
     */
   def startUpload(): GaxiosPromise[SchemaUploadRef] = js.native
   def startUpload(callback: BodyResponseCallback[SchemaUploadRef]): Unit = js.native
+  def startUpload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUploadRef] = js.native
   def startUpload(params: ParamsResourcePhotoStartupload): GaxiosPromise[SchemaUploadRef] = js.native
   def startUpload(params: ParamsResourcePhotoStartupload, callback: BodyResponseCallback[SchemaUploadRef]): Unit = js.native
   def startUpload(
@@ -179,6 +183,7 @@ class ResourcePhoto protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaPhoto] = js.native
   def update(callback: BodyResponseCallback[SchemaPhoto]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPhoto] = js.native
   def update(params: ParamsResourcePhotoUpdate): GaxiosPromise[SchemaPhoto] = js.native
   def update(params: ParamsResourcePhotoUpdate, callback: BodyResponseCallback[SchemaPhoto]): Unit = js.native
   def update(

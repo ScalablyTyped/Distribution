@@ -12,7 +12,7 @@ Document loading states as Promises
 | Keywords           | document, dom, content, ready, loaded, interactive, state, parsed, promise, ponyfill, polyfill |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 1595 |
+| # downloads        | 1605 |
 | # stars            | 0 |
 
 ## Links

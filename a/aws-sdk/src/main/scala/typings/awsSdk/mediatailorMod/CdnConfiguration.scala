@@ -18,11 +18,30 @@ trait CdnConfiguration extends js.Object {
 
 object CdnConfiguration {
   @scala.inline
-  def apply(AdSegmentUrlPrefix: string = null, ContentSegmentUrlPrefix: string = null): CdnConfiguration = {
+  def apply(): CdnConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (AdSegmentUrlPrefix != null) __obj.updateDynamic("AdSegmentUrlPrefix")(AdSegmentUrlPrefix.asInstanceOf[js.Any])
-    if (ContentSegmentUrlPrefix != null) __obj.updateDynamic("ContentSegmentUrlPrefix")(ContentSegmentUrlPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[CdnConfiguration]
   }
+  @scala.inline
+  implicit class CdnConfigurationOps[Self <: CdnConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdSegmentUrlPrefix(value: string): Self = this.set("AdSegmentUrlPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdSegmentUrlPrefix: Self = this.set("AdSegmentUrlPrefix", js.undefined)
+    @scala.inline
+    def setContentSegmentUrlPrefix(value: string): Self = this.set("ContentSegmentUrlPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentSegmentUrlPrefix: Self = this.set("ContentSegmentUrlPrefix", js.undefined)
+  }
+  
 }
 

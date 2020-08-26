@@ -47,28 +47,58 @@ trait PutItemInput extends js.Object {
 
 object PutItemInput {
   @scala.inline
-  def apply(
-    Item: PutItemInputAttributeMap,
-    TableName: TableName,
-    ConditionExpression: ConditionExpression = null,
-    ConditionalOperator: ConditionalOperator = null,
-    Expected: ExpectedAttributeMap = null,
-    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
-    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = null,
-    ReturnValues: ReturnValue = null
-  ): PutItemInput = {
+  def apply(Item: PutItemInputAttributeMap, TableName: TableName): PutItemInput = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression.asInstanceOf[js.Any])
-    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
-    if (Expected != null) __obj.updateDynamic("Expected")(Expected.asInstanceOf[js.Any])
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
-    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues.asInstanceOf[js.Any])
-    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
-    if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])
-    if (ReturnValues != null) __obj.updateDynamic("ReturnValues")(ReturnValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutItemInput]
   }
+  @scala.inline
+  implicit class PutItemInputOps[Self <: PutItemInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItem(value: PutItemInputAttributeMap): Self = this.set("Item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConditionExpression(value: ConditionExpression): Self = this.set("ConditionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionExpression: Self = this.set("ConditionExpression", js.undefined)
+    @scala.inline
+    def setConditionalOperator(value: ConditionalOperator): Self = this.set("ConditionalOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionalOperator: Self = this.set("ConditionalOperator", js.undefined)
+    @scala.inline
+    def setExpected(value: ExpectedAttributeMap): Self = this.set("Expected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpected: Self = this.set("Expected", js.undefined)
+    @scala.inline
+    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = this.set("ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeNames: Self = this.set("ExpressionAttributeNames", js.undefined)
+    @scala.inline
+    def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = this.set("ExpressionAttributeValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeValues: Self = this.set("ExpressionAttributeValues", js.undefined)
+    @scala.inline
+    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = this.set("ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnConsumedCapacity: Self = this.set("ReturnConsumedCapacity", js.undefined)
+    @scala.inline
+    def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = this.set("ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnItemCollectionMetrics: Self = this.set("ReturnItemCollectionMetrics", js.undefined)
+    @scala.inline
+    def setReturnValues(value: ReturnValue): Self = this.set("ReturnValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnValues: Self = this.set("ReturnValues", js.undefined)
+  }
+  
 }
 

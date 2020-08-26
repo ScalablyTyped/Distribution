@@ -4,29 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OutputHTMLAttributes[T] extends HTMLAttributes[T] {
-  var `for`: js.UndefOr[String] = js.undefined
-  var form: js.UndefOr[String] = js.undefined
-  var htmlFor: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var `for`: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.native
+  var htmlFor: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
 }
 
 object OutputHTMLAttributes {
   @scala.inline
-  def apply[T](
-    HTMLAttributes: HTMLAttributes[T] = null,
-    `for`: String = null,
-    form: String = null,
-    htmlFor: String = null,
-    name: String = null
-  ): OutputHTMLAttributes[T] = {
+  def apply[T](): OutputHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (`for` != null) __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputHTMLAttributes[T]]
   }
+  @scala.inline
+  implicit class OutputHTMLAttributesOps[Self <: OutputHTMLAttributes[_], T] (val x: Self with OutputHTMLAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFor(value: String): Self = this.set("for", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFor: Self = this.set("for", js.undefined)
+    @scala.inline
+    def setForm(value: String): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForm: Self = this.set("form", js.undefined)
+    @scala.inline
+    def setHtmlFor(value: String): Self = this.set("htmlFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlFor: Self = this.set("htmlFor", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

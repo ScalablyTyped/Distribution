@@ -24,6 +24,7 @@ trait Tooltip_ extends Widget_ {
     * @returns {void}
     */
   def hide(): Unit = js.native
+  def hide(effect: js.UndefOr[scala.Nothing], func: js.Function0[Unit]): Unit = js.native
   def hide(effect: String): Unit = js.native
   def hide(effect: String, func: js.Function0[Unit]): Unit = js.native
   /** Shows the Tooltip popup for the given target element with the specified effect.
@@ -33,7 +34,11 @@ trait Tooltip_ extends Widget_ {
     * @returns {void}
     */
   def show(): Unit = js.native
+  def show(effect: js.UndefOr[scala.Nothing], func: js.UndefOr[scala.Nothing], target: JQuery): Unit = js.native
+  def show(effect: js.UndefOr[scala.Nothing], func: js.Function0[Unit]): Unit = js.native
+  def show(effect: js.UndefOr[scala.Nothing], func: js.Function0[Unit], target: JQuery): Unit = js.native
   def show(effect: String): Unit = js.native
+  def show(effect: String, func: js.UndefOr[scala.Nothing], target: JQuery): Unit = js.native
   def show(effect: String, func: js.Function0[Unit]): Unit = js.native
   def show(effect: String, func: js.Function0[Unit], target: JQuery): Unit = js.native
 }

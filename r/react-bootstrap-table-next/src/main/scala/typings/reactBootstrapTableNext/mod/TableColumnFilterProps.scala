@@ -5,40 +5,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  id  :string,   placeholder  :string,   className  :string,   defaultValue  :any,   style  :react.react.CSSProperties,   delay  :number, getFilter (filter : FT): void, onFilter (filterValue : FT): void | std.Array<T>}> */
+/* Inlined std.Partial<{  id :string,   placeholder :string,   className :string,   defaultValue :any,   style :react.react.CSSProperties,   delay :number, getFilter (filter : FT): void, onFilter (filterValue : FT): void | std.Array<T>}> */
+@js.native
 trait TableColumnFilterProps[FT, T /* <: js.Object */] extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var getFilter: js.UndefOr[js.Function1[/* filter */ FT, Unit]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var onFilter: js.UndefOr[js.Function1[/* filterValue */ FT, Unit | js.Array[T]]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var getFilter: js.UndefOr[js.Function1[/* filter */ FT, Unit]] = js.native
+  var id: js.UndefOr[String] = js.native
+  var onFilter: js.UndefOr[js.Function1[/* filterValue */ FT, Unit | js.Array[T]]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object TableColumnFilterProps {
   @scala.inline
-  def apply[FT, /* <: js.Object */ T](
-    className: String = null,
-    defaultValue: js.Any = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    getFilter: /* filter */ FT => Unit = null,
-    id: String = null,
-    onFilter: /* filterValue */ FT => Unit | js.Array[T] = null,
-    placeholder: String = null,
-    style: CSSProperties = null
-  ): TableColumnFilterProps[FT, T] = {
+  def apply[FT, /* <: js.Object */ T](): TableColumnFilterProps[FT, T] = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (getFilter != null) __obj.updateDynamic("getFilter")(js.Any.fromFunction1(getFilter))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1(onFilter))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumnFilterProps[FT, T]]
   }
+  @scala.inline
+  implicit class TableColumnFilterPropsOps[Self <: TableColumnFilterProps[_, _], FT, /* <: js.Object */ T] (val x: Self with (TableColumnFilterProps[FT, T])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setGetFilter(value: /* filter */ FT => Unit): Self = this.set("getFilter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetFilter: Self = this.set("getFilter", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setOnFilter(value: /* filterValue */ FT => Unit | js.Array[T]): Self = this.set("onFilter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFilter: Self = this.set("onFilter", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

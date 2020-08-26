@@ -5,39 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GraphQLRequestMetrics extends js.Object {
-  var captureTraces: js.UndefOr[Boolean] = js.undefined
-  var forbiddenOperation: js.UndefOr[Boolean] = js.undefined
-  var persistedQueryHit: js.UndefOr[Boolean] = js.undefined
-  var persistedQueryRegister: js.UndefOr[Boolean] = js.undefined
-  var queryPlanTrace: js.UndefOr[QueryPlanNode] = js.undefined
-  var registeredOperation: js.UndefOr[Boolean] = js.undefined
-  var responseCacheHit: js.UndefOr[Boolean] = js.undefined
-  var startHrTime: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  var captureTraces: js.UndefOr[Boolean] = js.native
+  var forbiddenOperation: js.UndefOr[Boolean] = js.native
+  var persistedQueryHit: js.UndefOr[Boolean] = js.native
+  var persistedQueryRegister: js.UndefOr[Boolean] = js.native
+  var queryPlanTrace: js.UndefOr[QueryPlanNode] = js.native
+  var registeredOperation: js.UndefOr[Boolean] = js.native
+  var responseCacheHit: js.UndefOr[Boolean] = js.native
+  var startHrTime: js.UndefOr[js.Tuple2[Double, Double]] = js.native
 }
 
 object GraphQLRequestMetrics {
   @scala.inline
-  def apply(
-    captureTraces: js.UndefOr[Boolean] = js.undefined,
-    forbiddenOperation: js.UndefOr[Boolean] = js.undefined,
-    persistedQueryHit: js.UndefOr[Boolean] = js.undefined,
-    persistedQueryRegister: js.UndefOr[Boolean] = js.undefined,
-    queryPlanTrace: QueryPlanNode = null,
-    registeredOperation: js.UndefOr[Boolean] = js.undefined,
-    responseCacheHit: js.UndefOr[Boolean] = js.undefined,
-    startHrTime: js.Tuple2[Double, Double] = null
-  ): GraphQLRequestMetrics = {
+  def apply(): GraphQLRequestMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureTraces)) __obj.updateDynamic("captureTraces")(captureTraces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forbiddenOperation)) __obj.updateDynamic("forbiddenOperation")(forbiddenOperation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistedQueryHit)) __obj.updateDynamic("persistedQueryHit")(persistedQueryHit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistedQueryRegister)) __obj.updateDynamic("persistedQueryRegister")(persistedQueryRegister.get.asInstanceOf[js.Any])
-    if (queryPlanTrace != null) __obj.updateDynamic("queryPlanTrace")(queryPlanTrace.asInstanceOf[js.Any])
-    if (!js.isUndefined(registeredOperation)) __obj.updateDynamic("registeredOperation")(registeredOperation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseCacheHit)) __obj.updateDynamic("responseCacheHit")(responseCacheHit.get.asInstanceOf[js.Any])
-    if (startHrTime != null) __obj.updateDynamic("startHrTime")(startHrTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLRequestMetrics]
   }
+  @scala.inline
+  implicit class GraphQLRequestMetricsOps[Self <: GraphQLRequestMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptureTraces(value: Boolean): Self = this.set("captureTraces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureTraces: Self = this.set("captureTraces", js.undefined)
+    @scala.inline
+    def setForbiddenOperation(value: Boolean): Self = this.set("forbiddenOperation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForbiddenOperation: Self = this.set("forbiddenOperation", js.undefined)
+    @scala.inline
+    def setPersistedQueryHit(value: Boolean): Self = this.set("persistedQueryHit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersistedQueryHit: Self = this.set("persistedQueryHit", js.undefined)
+    @scala.inline
+    def setPersistedQueryRegister(value: Boolean): Self = this.set("persistedQueryRegister", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersistedQueryRegister: Self = this.set("persistedQueryRegister", js.undefined)
+    @scala.inline
+    def setQueryPlanTrace(value: QueryPlanNode): Self = this.set("queryPlanTrace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryPlanTrace: Self = this.set("queryPlanTrace", js.undefined)
+    @scala.inline
+    def setRegisteredOperation(value: Boolean): Self = this.set("registeredOperation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredOperation: Self = this.set("registeredOperation", js.undefined)
+    @scala.inline
+    def setResponseCacheHit(value: Boolean): Self = this.set("responseCacheHit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseCacheHit: Self = this.set("responseCacheHit", js.undefined)
+    @scala.inline
+    def setStartHrTime(value: js.Tuple2[Double, Double]): Self = this.set("startHrTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartHrTime: Self = this.set("startHrTime", js.undefined)
+  }
+  
 }
 

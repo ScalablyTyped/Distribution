@@ -186,12 +186,12 @@ trait ServiceCatalog extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioOutput, Unit]
   ): Request[CreatePortfolioOutput, AWSError] = js.native
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource. This includes portfolios that contain a shared product.
     */
   def createPortfolioShare(): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioShareOutput, Unit]): Request[CreatePortfolioShareOutput, AWSError] = js.native
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource. This includes portfolios that contain a shared product.
     */
   def createPortfolioShare(params: CreatePortfolioShareInput): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(

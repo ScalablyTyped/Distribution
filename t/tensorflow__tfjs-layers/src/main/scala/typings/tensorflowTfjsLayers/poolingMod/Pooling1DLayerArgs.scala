@@ -1,58 +1,61 @@
 package typings.tensorflowTfjsLayers.poolingMod
 
-import typings.tensorflowTfjsCore.distTypesMod.DataType
-import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Pooling1DLayerArgs extends LayerArgs {
   /** How to fill in data that's not an integer multiple of poolSize. */
-  var padding: js.UndefOr[PaddingMode] = js.undefined
+  var padding: js.UndefOr[PaddingMode] = js.native
   /**
     * Size of the window to pool over, should be an integer.
     */
-  var poolSize: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var poolSize: js.UndefOr[Double | js.Array[Double]] = js.native
   /**
     * Period at which to sample the pooled values.
     *
     * If `null`, defaults to `poolSize`.
     */
-  var strides: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var strides: js.UndefOr[Double | js.Array[Double]] = js.native
 }
 
 object Pooling1DLayerArgs {
   @scala.inline
-  def apply(
-    batchInputShape: Shape = null,
-    batchSize: js.UndefOr[Double] = js.undefined,
-    dtype: DataType = null,
-    inputDType: DataType = null,
-    inputShape: Shape = null,
-    name: String = null,
-    padding: PaddingMode = null,
-    poolSize: Double | js.Array[Double] = null,
-    strides: Double | js.Array[Double] = null,
-    trainable: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor[Rank]] = null
-  ): Pooling1DLayerArgs = {
+  def apply(): Pooling1DLayerArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
-    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
-    if (strides != null) __obj.updateDynamic("strides")(strides.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
-    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pooling1DLayerArgs]
   }
+  @scala.inline
+  implicit class Pooling1DLayerArgsOps[Self <: Pooling1DLayerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPadding(value: PaddingMode): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPoolSizeVarargs(value: Double*): Self = this.set("poolSize", js.Array(value :_*))
+    @scala.inline
+    def setPoolSize(value: Double | js.Array[Double]): Self = this.set("poolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoolSize: Self = this.set("poolSize", js.undefined)
+    @scala.inline
+    def setStridesVarargs(value: Double*): Self = this.set("strides", js.Array(value :_*))
+    @scala.inline
+    def setStrides(value: Double | js.Array[Double]): Self = this.set("strides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrides: Self = this.set("strides", js.undefined)
+  }
+  
 }
 

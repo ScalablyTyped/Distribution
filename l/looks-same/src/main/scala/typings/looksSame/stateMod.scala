@@ -11,9 +11,9 @@ object stateMod extends js.Object {
   trait State extends js.Object {
     var _ctx: js.Any = js.native
     def caretBottomRight: js.Any = js.native
-    def caretBottomRight(point: js.Any): js.Any = js.native
+    def caretBottomRight_=(point: js.Any): Unit = js.native
     def caretTopLeft: js.Any = js.native
-    def caretTopLeft(point: js.Any): js.Any = js.native
+    def caretTopLeft_=(point: js.Any): Unit = js.native
     def pixelRatio: js.Any = js.native
     def switchState(state: js.Any): Unit = js.native
     def validate(point: js.Any): Boolean = js.native

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Pool extends EscapeFunctions {
-  var config: PoolConfig = js.native
+  var config: PoolActualConfig = js.native
   @JSName("query")
   var query_Original: QueryFunction = js.native
   def acquireConnection(

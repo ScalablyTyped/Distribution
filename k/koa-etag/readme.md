@@ -11,8 +11,8 @@ ETag support for koa
 | Full name          | koa-etag |
 | Keywords           | koa, middleware, cache, caching, etag, file, static, sendfile |
 | # releases         | 0 |
-| # dependents       | 125 |
-| # downloads        | 1032061 |
+| # dependents       | 127 |
+| # downloads        | 1075519 |
 | # stars            | 3 |
 
 ## Links

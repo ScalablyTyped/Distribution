@@ -41,7 +41,38 @@ object utilsMod extends js.Object {
   def translate(element: Element, x: Double, y: Double): Unit = js.native
   def translateThumbs(elements: js.Array[Element], offsets: TThumbOffsets, rtl: Boolean): Unit = js.native
   def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: Null,
+    values: js.Array[Double],
+    index: Double,
+    step: js.UndefOr[scala.Nothing],
+    separator: js.UndefOr[scala.Nothing],
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: Null,
+    values: js.Array[Double],
+    index: Double,
+    step: js.UndefOr[scala.Nothing],
+    separator: String
+  ): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: Null,
+    values: js.Array[Double],
+    index: Double,
+    step: js.UndefOr[scala.Nothing],
+    separator: String,
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: Null,
+    values: js.Array[Double],
+    index: Double,
+    step: Double,
+    separator: js.UndefOr[scala.Nothing],
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(
     rangeRef: Null,
@@ -52,7 +83,38 @@ object utilsMod extends js.Object {
     valueToLabel: js.Function1[/* value */ String, String]
   ): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: default,
+    values: js.Array[Double],
+    index: Double,
+    step: js.UndefOr[scala.Nothing],
+    separator: js.UndefOr[scala.Nothing],
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: default,
+    values: js.Array[Double],
+    index: Double,
+    step: js.UndefOr[scala.Nothing],
+    separator: String
+  ): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: default,
+    values: js.Array[Double],
+    index: Double,
+    step: js.UndefOr[scala.Nothing],
+    separator: String,
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = js.native
+  def useThumbOverlap(
+    rangeRef: default,
+    values: js.Array[Double],
+    index: Double,
+    step: Double,
+    separator: js.UndefOr[scala.Nothing],
+    valueToLabel: js.Function1[/* value */ String, String]
+  ): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = js.native
   def useThumbOverlap(
     rangeRef: default,

@@ -18,11 +18,32 @@ trait ListSuppressedDestinationsResponse extends js.Object {
 
 object ListSuppressedDestinationsResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, SuppressedDestinationSummaries: SuppressedDestinationSummaries = null): ListSuppressedDestinationsResponse = {
+  def apply(): ListSuppressedDestinationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SuppressedDestinationSummaries != null) __obj.updateDynamic("SuppressedDestinationSummaries")(SuppressedDestinationSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSuppressedDestinationsResponse]
   }
+  @scala.inline
+  implicit class ListSuppressedDestinationsResponseOps[Self <: ListSuppressedDestinationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSuppressedDestinationSummariesVarargs(value: SuppressedDestinationSummary*): Self = this.set("SuppressedDestinationSummaries", js.Array(value :_*))
+    @scala.inline
+    def setSuppressedDestinationSummaries(value: SuppressedDestinationSummaries): Self = this.set("SuppressedDestinationSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressedDestinationSummaries: Self = this.set("SuppressedDestinationSummaries", js.undefined)
+  }
+  
 }
 

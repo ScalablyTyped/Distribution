@@ -6,60 +6,121 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  root ? :string,   key ? :string,   messages ? :{  wrapArrays ? :boolean}, [key: string] : react-native-joi.react-native-joi.LanguageOptions} & std.Partial<std.Record<react-native-joi.react-native-joi.Types, react-native-joi.react-native-joi.LanguageOptions>> */
+/* Inlined {  root :string | undefined,   key :string | undefined,   messages :{  wrapArrays :boolean | undefined} | undefined, [key: string] : react-native-joi.react-native-joi.LanguageOptions} & std.Partial<std.Record<react-native-joi.react-native-joi.Types, react-native-joi.react-native-joi.LanguageOptions>> */
+@js.native
 trait LanguageRootOptions extends /* key */ StringDictionary[LanguageOptions] {
-  var alternatives: js.UndefOr[LanguageOptions] = js.undefined
-  var any: js.UndefOr[LanguageOptions] = js.undefined
-  var array: js.UndefOr[LanguageOptions] = js.undefined
-  var binary: js.UndefOr[LanguageOptions] = js.undefined
-  var boolean: js.UndefOr[LanguageOptions] = js.undefined
-  var date: js.UndefOr[LanguageOptions] = js.undefined
-  var function: js.UndefOr[LanguageOptions] = js.undefined
-  var key: js.UndefOr[String] = js.undefined
-  var `lazy`: js.UndefOr[LanguageOptions] = js.undefined
-  var messages: js.UndefOr[WrapArrays] = js.undefined
-  var number: js.UndefOr[LanguageOptions] = js.undefined
-  var `object`: js.UndefOr[LanguageOptions] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var string: js.UndefOr[LanguageOptions] = js.undefined
+  var alternatives: js.UndefOr[LanguageOptions] = js.native
+  var any: js.UndefOr[LanguageOptions] = js.native
+  var array: js.UndefOr[LanguageOptions] = js.native
+  var binary: js.UndefOr[LanguageOptions] = js.native
+  var boolean: js.UndefOr[LanguageOptions] = js.native
+  var date: js.UndefOr[LanguageOptions] = js.native
+  var function: js.UndefOr[LanguageOptions] = js.native
+  var key: js.UndefOr[String] = js.native
+  var `lazy`: js.UndefOr[LanguageOptions] = js.native
+  var messages: js.UndefOr[WrapArrays] = js.native
+  var number: js.UndefOr[LanguageOptions] = js.native
+  var `object`: js.UndefOr[LanguageOptions] = js.native
+  var root: js.UndefOr[String] = js.native
+  var string: js.UndefOr[LanguageOptions] = js.native
 }
 
 object LanguageRootOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[LanguageOptions] = null,
-    alternatives: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    any: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    array: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    binary: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    boolean: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    date: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    function: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    key: String = null,
-    `lazy`: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    messages: WrapArrays = null,
-    number: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    `object`: js.UndefOr[Null | LanguageOptions] = js.undefined,
-    root: String = null,
-    string: js.UndefOr[Null | LanguageOptions] = js.undefined
-  ): LanguageRootOptions = {
+  def apply(): LanguageRootOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(alternatives)) __obj.updateDynamic("alternatives")(alternatives.asInstanceOf[js.Any])
-    if (!js.isUndefined(any)) __obj.updateDynamic("any")(any.asInstanceOf[js.Any])
-    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
-    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(function)) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (!js.isUndefined(`object`)) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageRootOptions]
   }
+  @scala.inline
+  implicit class LanguageRootOptionsOps[Self <: LanguageRootOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlternatives(value: LanguageOptions): Self = this.set("alternatives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternatives: Self = this.set("alternatives", js.undefined)
+    @scala.inline
+    def setAlternativesNull: Self = this.set("alternatives", null)
+    @scala.inline
+    def setAny(value: LanguageOptions): Self = this.set("any", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAny: Self = this.set("any", js.undefined)
+    @scala.inline
+    def setAnyNull: Self = this.set("any", null)
+    @scala.inline
+    def setArray(value: LanguageOptions): Self = this.set("array", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArray: Self = this.set("array", js.undefined)
+    @scala.inline
+    def setArrayNull: Self = this.set("array", null)
+    @scala.inline
+    def setBinary(value: LanguageOptions): Self = this.set("binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinary: Self = this.set("binary", js.undefined)
+    @scala.inline
+    def setBinaryNull: Self = this.set("binary", null)
+    @scala.inline
+    def setBoolean(value: LanguageOptions): Self = this.set("boolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoolean: Self = this.set("boolean", js.undefined)
+    @scala.inline
+    def setBooleanNull: Self = this.set("boolean", null)
+    @scala.inline
+    def setDate(value: LanguageOptions): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDateNull: Self = this.set("date", null)
+    @scala.inline
+    def setFunction(value: LanguageOptions): Self = this.set("function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunction: Self = this.set("function", js.undefined)
+    @scala.inline
+    def setFunctionNull: Self = this.set("function", null)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLazy(value: LanguageOptions): Self = this.set("lazy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazy: Self = this.set("lazy", js.undefined)
+    @scala.inline
+    def setLazyNull: Self = this.set("lazy", null)
+    @scala.inline
+    def setMessages(value: WrapArrays): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setNumber(value: LanguageOptions): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+    @scala.inline
+    def setNumberNull: Self = this.set("number", null)
+    @scala.inline
+    def setObject(value: LanguageOptions): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObject: Self = this.set("object", js.undefined)
+    @scala.inline
+    def setObjectNull: Self = this.set("object", null)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setString(value: LanguageOptions): Self = this.set("string", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteString: Self = this.set("string", js.undefined)
+    @scala.inline
+    def setStringNull: Self = this.set("string", null)
+  }
+  
 }
 

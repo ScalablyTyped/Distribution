@@ -5,27 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Color extends js.Object {
-  var background: js.UndefOr[String] = js.undefined
-  var border: js.UndefOr[String] = js.undefined
-  var highlight: js.UndefOr[String | Background] = js.undefined
-  var hover: js.UndefOr[String | Background] = js.undefined
+  var background: js.UndefOr[String] = js.native
+  var border: js.UndefOr[String] = js.native
+  var highlight: js.UndefOr[String | Background] = js.native
+  var hover: js.UndefOr[String | Background] = js.native
 }
 
 object Color {
   @scala.inline
-  def apply(
-    background: String = null,
-    border: String = null,
-    highlight: String | Background = null,
-    hover: String | Background = null
-  ): Color = {
+  def apply(): Color = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
+  @scala.inline
+  implicit class ColorOps[Self <: Color] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBorder(value: String): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setHighlight(value: String | Background): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setHover(value: String | Background): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ StreamSaver writes stream to the filesystem directly - asynchronous
 | Full name          | streamsaver |
 | Keywords           | saving, streams, stream, html5, file, blob |
 | # releases         | 7 |
-| # dependents       | 5 |
-| # downloads        | 196700 |
+| # dependents       | 7 |
+| # downloads        | 293630 |
 | # stars            | 2 |
 
 ## Links

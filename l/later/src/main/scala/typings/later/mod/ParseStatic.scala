@@ -13,6 +13,7 @@ trait ParseStatic extends js.Object {
     * @param [hasSeconds] - Whether the cron expression has second part.
     */
   def cron(): ScheduleData = js.native
+  def cron(input: js.UndefOr[scala.Nothing], hasSeconds: Boolean): ScheduleData = js.native
   def cron(input: String): ScheduleData = js.native
   def cron(input: String, hasSeconds: Boolean): ScheduleData = js.native
   /**

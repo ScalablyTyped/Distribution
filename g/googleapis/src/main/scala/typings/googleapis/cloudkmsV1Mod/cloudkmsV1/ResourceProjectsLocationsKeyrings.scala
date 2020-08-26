@@ -31,6 +31,7 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaKeyRing] = js.native
   def create(callback: BodyResponseCallback[SchemaKeyRing]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaKeyRing] = js.native
   def create(params: ParamsResourceProjectsLocationsKeyringsCreate): GaxiosPromise[SchemaKeyRing] = js.native
   def create(
     params: ParamsResourceProjectsLocationsKeyringsCreate,
@@ -61,6 +62,7 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaKeyRing] = js.native
   def get(callback: BodyResponseCallback[SchemaKeyRing]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaKeyRing] = js.native
   def get(params: ParamsResourceProjectsLocationsKeyringsGet): GaxiosPromise[SchemaKeyRing] = js.native
   def get(params: ParamsResourceProjectsLocationsKeyringsGet, callback: BodyResponseCallback[SchemaKeyRing]): Unit = js.native
   def get(
@@ -89,6 +91,7 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsKeyringsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsKeyringsGetiampolicy,
@@ -121,6 +124,7 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListKeyRingsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListKeyRingsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListKeyRingsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsKeyringsList): GaxiosPromise[SchemaListKeyRingsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsKeyringsList,
@@ -153,6 +157,7 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsKeyringsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsKeyringsSetiampolicy,
@@ -188,6 +193,7 @@ class ResourceProjectsLocationsKeyrings protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsKeyringsTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsKeyringsTestiampermissions,

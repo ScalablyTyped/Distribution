@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createClock extends js.Object {
   def apply(): Clock = js.native
+  def apply(now: js.UndefOr[scala.Nothing], loopLimit: Double): Clock = js.native
   def apply(now: Double): Clock = js.native
   def apply(now: Double, loopLimit: Double): Clock = js.native
   def apply(now: Date): Clock = js.native

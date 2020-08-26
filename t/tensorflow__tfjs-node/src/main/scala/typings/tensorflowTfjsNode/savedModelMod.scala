@@ -68,6 +68,7 @@ object savedModelMod extends js.Object {
   def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = js.native
   def getNumOfSavedModels(): Double = js.native
   def loadSavedModel(path: String): js.Promise[TFSavedModel] = js.native
+  def loadSavedModel(path: String, tags: js.UndefOr[scala.Nothing], signature: String): js.Promise[TFSavedModel] = js.native
   def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = js.native
   def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = js.native
   def readSavedModelProto(path: String): js.Promise[_] = js.native

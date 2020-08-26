@@ -30,20 +30,44 @@ trait ResourceDataSyncSourceWithState extends js.Object {
 
 object ResourceDataSyncSourceWithState {
   @scala.inline
-  def apply(
-    AwsOrganizationsSource: ResourceDataSyncAwsOrganizationsSource = null,
-    IncludeFutureRegions: js.UndefOr[ResourceDataSyncIncludeFutureRegions] = js.undefined,
-    SourceRegions: ResourceDataSyncSourceRegionList = null,
-    SourceType: ResourceDataSyncSourceType = null,
-    State: ResourceDataSyncState = null
-  ): ResourceDataSyncSourceWithState = {
+  def apply(): ResourceDataSyncSourceWithState = {
     val __obj = js.Dynamic.literal()
-    if (AwsOrganizationsSource != null) __obj.updateDynamic("AwsOrganizationsSource")(AwsOrganizationsSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeFutureRegions)) __obj.updateDynamic("IncludeFutureRegions")(IncludeFutureRegions.get.asInstanceOf[js.Any])
-    if (SourceRegions != null) __obj.updateDynamic("SourceRegions")(SourceRegions.asInstanceOf[js.Any])
-    if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataSyncSourceWithState]
   }
+  @scala.inline
+  implicit class ResourceDataSyncSourceWithStateOps[Self <: ResourceDataSyncSourceWithState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsOrganizationsSource(value: ResourceDataSyncAwsOrganizationsSource): Self = this.set("AwsOrganizationsSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsOrganizationsSource: Self = this.set("AwsOrganizationsSource", js.undefined)
+    @scala.inline
+    def setIncludeFutureRegions(value: ResourceDataSyncIncludeFutureRegions): Self = this.set("IncludeFutureRegions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeFutureRegions: Self = this.set("IncludeFutureRegions", js.undefined)
+    @scala.inline
+    def setSourceRegionsVarargs(value: ResourceDataSyncSourceRegion*): Self = this.set("SourceRegions", js.Array(value :_*))
+    @scala.inline
+    def setSourceRegions(value: ResourceDataSyncSourceRegionList): Self = this.set("SourceRegions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRegions: Self = this.set("SourceRegions", js.undefined)
+    @scala.inline
+    def setSourceType(value: ResourceDataSyncSourceType): Self = this.set("SourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    @scala.inline
+    def setState(value: ResourceDataSyncState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

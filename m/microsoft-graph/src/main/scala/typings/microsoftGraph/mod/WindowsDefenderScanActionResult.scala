@@ -4,27 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WindowsDefenderScanActionResult extends DeviceActionResult {
   // Scan type either full scan or quick scan
-  var scanType: js.UndefOr[String] = js.undefined
+  var scanType: js.UndefOr[String] = js.native
 }
 
 object WindowsDefenderScanActionResult {
   @scala.inline
-  def apply(
-    actionName: String = null,
-    actionState: ActionState = null,
-    lastUpdatedDateTime: String = null,
-    scanType: String = null,
-    startDateTime: String = null
-  ): WindowsDefenderScanActionResult = {
+  def apply(): WindowsDefenderScanActionResult = {
     val __obj = js.Dynamic.literal()
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
-    if (actionState != null) __obj.updateDynamic("actionState")(actionState.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (scanType != null) __obj.updateDynamic("scanType")(scanType.asInstanceOf[js.Any])
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsDefenderScanActionResult]
   }
+  @scala.inline
+  implicit class WindowsDefenderScanActionResultOps[Self <: WindowsDefenderScanActionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScanType(value: String): Self = this.set("scanType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanType: Self = this.set("scanType", js.undefined)
+  }
+  
 }
 

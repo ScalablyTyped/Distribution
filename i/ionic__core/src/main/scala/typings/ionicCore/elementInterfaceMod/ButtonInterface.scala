@@ -7,9 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ButtonInterface extends js.Object {
-  var disabled: Boolean
-  var `type`: submit | reset | button
+  var disabled: Boolean = js.native
+  var `type`: submit | reset | button = js.native
 }
 
 object ButtonInterface {
@@ -19,5 +20,22 @@ object ButtonInterface {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonInterface]
   }
+  @scala.inline
+  implicit class ButtonInterfaceOps[Self <: ButtonInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: submit | reset | button): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

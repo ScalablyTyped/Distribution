@@ -26,16 +26,9 @@ object encryptCommandMod extends js.Object {
           Blob
         ] {
     def this(input: EncryptInput) = this()
-    /* CompleteClass */
-    override val input: EncryptInput = js.native
     val middlewareStack: MiddlewareStack[EncryptInput, EncryptOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KMSResolvedConfiguration
-    ): Handler[EncryptInput, EncryptOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KMSResolvedConfiguration
     ): Handler[EncryptInput, EncryptOutput] = js.native
   }

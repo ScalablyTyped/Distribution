@@ -25,8 +25,16 @@ import scala.scalajs.js.annotation._
   - typings.pulumiAws.pulumiAwsStrings.c5Dot2xlarge
   - typings.pulumiAws.pulumiAwsStrings.c5Dotlarge
   - typings.pulumiAws.pulumiAwsStrings.c5Dot9xlarge
-  - typings.pulumiAws.pulumiAwsStrings.c5dDot18xlarge
   - typings.pulumiAws.pulumiAwsStrings.c5Dotxlarge
+  - typings.pulumiAws.pulumiAwsStrings.c5aDot12xlarge
+  - typings.pulumiAws.pulumiAwsStrings.c5aDot16xlarge
+  - typings.pulumiAws.pulumiAwsStrings.c5aDot2xlarge
+  - typings.pulumiAws.pulumiAwsStrings.c5aDot24xlarge
+  - typings.pulumiAws.pulumiAwsStrings.c5aDot4xlarge
+  - typings.pulumiAws.pulumiAwsStrings.c5aDot8xlarge
+  - typings.pulumiAws.pulumiAwsStrings.c5aDotlarge
+  - typings.pulumiAws.pulumiAwsStrings.c5aDotxlarge
+  - typings.pulumiAws.pulumiAwsStrings.c5dDot18xlarge
   - typings.pulumiAws.pulumiAwsStrings.c5dDot4xlarge
   - typings.pulumiAws.pulumiAwsStrings.c5dDot2xlarge
   - typings.pulumiAws.pulumiAwsStrings.c5dDotlarge
@@ -210,6 +218,22 @@ object InstanceType {
   def c5Dotlarge: typings.pulumiAws.pulumiAwsStrings.c5Dotlarge = "c5.large".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5Dotlarge]
   @scala.inline
   def c5Dotxlarge: typings.pulumiAws.pulumiAwsStrings.c5Dotxlarge = "c5.xlarge".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5Dotxlarge]
+  @scala.inline
+  def c5aDot12xlarge: typings.pulumiAws.pulumiAwsStrings.c5aDot12xlarge = "c5a.12xlarge".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5aDot12xlarge]
+  @scala.inline
+  def c5aDot16xlarge: typings.pulumiAws.pulumiAwsStrings.c5aDot16xlarge = "c5a.16xlarge".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5aDot16xlarge]
+  @scala.inline
+  def c5aDot24xlarge: typings.pulumiAws.pulumiAwsStrings.c5aDot24xlarge = "c5a.24xlarge".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5aDot24xlarge]
+  @scala.inline
+  def c5aDot2xlarge: typings.pulumiAws.pulumiAwsStrings.c5aDot2xlarge = "c5a.2xlarge".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5aDot2xlarge]
+  @scala.inline
+  def c5aDot4xlarge: typings.pulumiAws.pulumiAwsStrings.c5aDot4xlarge = "c5a.4xlarge".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5aDot4xlarge]
+  @scala.inline
+  def c5aDot8xlarge: typings.pulumiAws.pulumiAwsStrings.c5aDot8xlarge = "c5a.8xlarge".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5aDot8xlarge]
+  @scala.inline
+  def c5aDotlarge: typings.pulumiAws.pulumiAwsStrings.c5aDotlarge = "c5a.large".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5aDotlarge]
+  @scala.inline
+  def c5aDotxlarge: typings.pulumiAws.pulumiAwsStrings.c5aDotxlarge = "c5a.xlarge".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5aDotxlarge]
   @scala.inline
   def c5dDot18xlarge: typings.pulumiAws.pulumiAwsStrings.c5dDot18xlarge = "c5d.18xlarge".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.c5dDot18xlarge]
   @scala.inline

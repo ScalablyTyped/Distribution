@@ -1,7 +1,7 @@
 package typings.reactDnd.monitorsMod
 
 import typings.dndCore.interfacesMod.Identifier
-import typings.reactDnd.anon.ShallowBoolean
+import typings.reactDnd.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,6 +65,6 @@ trait DropTargetMonitor
     * to a nested target.
     */
   def isOver(): Boolean = js.native
-  def isOver(options: ShallowBoolean): Boolean = js.native
+  def isOver(options: `0`): Boolean = js.native
 }
 

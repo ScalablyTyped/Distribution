@@ -26,18 +26,38 @@ trait AssetPropertyVariant extends js.Object {
 
 object AssetPropertyVariant {
   @scala.inline
-  def apply(
-    booleanValue: AssetPropertyBooleanValue = null,
-    doubleValue: AssetPropertyDoubleValue = null,
-    integerValue: AssetPropertyIntegerValue = null,
-    stringValue: AssetPropertyStringValue = null
-  ): AssetPropertyVariant = {
+  def apply(): AssetPropertyVariant = {
     val __obj = js.Dynamic.literal()
-    if (booleanValue != null) __obj.updateDynamic("booleanValue")(booleanValue.asInstanceOf[js.Any])
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetPropertyVariant]
   }
+  @scala.inline
+  implicit class AssetPropertyVariantOps[Self <: AssetPropertyVariant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBooleanValue(value: AssetPropertyBooleanValue): Self = this.set("booleanValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooleanValue: Self = this.set("booleanValue", js.undefined)
+    @scala.inline
+    def setDoubleValue(value: AssetPropertyDoubleValue): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    @scala.inline
+    def setIntegerValue(value: AssetPropertyIntegerValue): Self = this.set("integerValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerValue: Self = this.set("integerValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: AssetPropertyStringValue): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+  }
+  
 }
 

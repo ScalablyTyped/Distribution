@@ -18,10 +18,28 @@ trait SmsConfigurationType extends js.Object {
 
 object SmsConfigurationType {
   @scala.inline
-  def apply(SnsCallerArn: ArnType, ExternalId: StringType = null): SmsConfigurationType = {
+  def apply(SnsCallerArn: ArnType): SmsConfigurationType = {
     val __obj = js.Dynamic.literal(SnsCallerArn = SnsCallerArn.asInstanceOf[js.Any])
-    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmsConfigurationType]
   }
+  @scala.inline
+  implicit class SmsConfigurationTypeOps[Self <: SmsConfigurationType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnsCallerArn(value: ArnType): Self = this.set("SnsCallerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExternalId(value: StringType): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("ExternalId", js.undefined)
+  }
+  
 }
 

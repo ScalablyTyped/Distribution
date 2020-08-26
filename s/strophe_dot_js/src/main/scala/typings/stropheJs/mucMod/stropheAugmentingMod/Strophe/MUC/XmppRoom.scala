@@ -26,7 +26,26 @@ trait XmppRoom extends js.Object {
   @JSName("addHandler")
   def addHandler_roster(handler_type: roster, handler: js.Function1[/* stanza */ Element, _]): Double = js.native
   def admin(jid: String): String = js.native
+  def admin(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def admin(jid: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def admin(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def admin(jid: String, reason: String): String = js.native
+  def admin(
+    jid: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def admin(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def admin(
     jid: String,
@@ -35,7 +54,26 @@ trait XmppRoom extends js.Object {
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
   def ban(jid: String): String = js.native
+  def ban(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def ban(jid: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def ban(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def ban(jid: String, reason: String): String = js.native
+  def ban(
+    jid: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def ban(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def ban(
     jid: String,
@@ -47,7 +85,26 @@ trait XmppRoom extends js.Object {
   def changeNick(nick: String): String = js.native
   def configure(handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def deop(nick: String): String = js.native
+  def deop(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def deop(nick: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def deop(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def deop(nick: String, reason: String): String = js.native
+  def deop(
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def deop(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def deop(
     nick: String,
@@ -67,7 +124,26 @@ trait XmppRoom extends js.Object {
     roster_cb: js.Function1[/* stanza */ Element, _]
   ): Unit = js.native
   def kick(nick: String): String = js.native
+  def kick(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def kick(nick: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def kick(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def kick(nick: String, reason: String): String = js.native
+  def kick(
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def kick(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def kick(
     nick: String,
@@ -76,10 +152,30 @@ trait XmppRoom extends js.Object {
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
   def leave(): Unit = js.native
+  def leave(handler_cb: js.UndefOr[scala.Nothing], exit_msg: String): Unit = js.native
   def leave(handler_cb: js.Function1[/* stanza */ Element, _]): Unit = js.native
   def leave(handler_cb: js.Function1[/* stanza */ Element, _], exit_msg: String): Unit = js.native
   def member(jid: String): String = js.native
+  def member(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def member(jid: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def member(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def member(jid: String, reason: String): String = js.native
+  def member(
+    jid: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def member(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def member(
     jid: String,
@@ -92,7 +188,34 @@ trait XmppRoom extends js.Object {
   @JSName("message")
   def message_groupchat(message: String, html_message: String, `type`: groupchat): String = js.native
   def modifyAffiliation(jid: String, affiliation: String): String = js.native
+  def modifyAffiliation(
+    jid: String,
+    affiliation: String,
+    reason: js.UndefOr[scala.Nothing],
+    success_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def modifyAffiliation(
+    jid: String,
+    affiliation: String,
+    reason: js.UndefOr[scala.Nothing],
+    success_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def modifyAffiliation(
+    jid: String,
+    affiliation: String,
+    reason: js.UndefOr[scala.Nothing],
+    success_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def modifyAffiliation(jid: String, affiliation: String, reason: String): String = js.native
+  def modifyAffiliation(
+    jid: String,
+    affiliation: String,
+    reason: String,
+    success_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def modifyAffiliation(
     jid: String,
     affiliation: String,
@@ -107,7 +230,34 @@ trait XmppRoom extends js.Object {
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
   def modifyRole(nick: String, role: String): String = js.native
+  def modifyRole(
+    nick: String,
+    role: String,
+    reason: js.UndefOr[scala.Nothing],
+    success_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def modifyRole(
+    nick: String,
+    role: String,
+    reason: js.UndefOr[scala.Nothing],
+    success_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def modifyRole(
+    nick: String,
+    role: String,
+    reason: js.UndefOr[scala.Nothing],
+    success_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def modifyRole(nick: String, role: String, reason: String): String = js.native
+  def modifyRole(
+    nick: String,
+    role: String,
+    reason: String,
+    success_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def modifyRole(nick: String, role: String, reason: String, success_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def modifyRole(
     nick: String,
@@ -119,7 +269,26 @@ trait XmppRoom extends js.Object {
   def multipleInvites(receivers: js.Array[String]): String = js.native
   def multipleInvites(receivers: js.Array[String], reason: String): String = js.native
   def mute(nick: String): String = js.native
+  def mute(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def mute(nick: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def mute(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def mute(nick: String, reason: String): String = js.native
+  def mute(
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def mute(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def mute(
     nick: String,
@@ -128,7 +297,26 @@ trait XmppRoom extends js.Object {
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
   def op(nick: String): String = js.native
+  def op(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def op(nick: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def op(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def op(nick: String, reason: String): String = js.native
+  def op(
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def op(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def op(
     nick: String,
@@ -137,7 +325,26 @@ trait XmppRoom extends js.Object {
     error_cb: js.Function1[/* stanza */ Element, _]
   ): String = js.native
   def owner(jid: String): String = js.native
+  def owner(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def owner(jid: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def owner(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def owner(jid: String, reason: String): String = js.native
+  def owner(
+    jid: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def owner(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def owner(
     jid: String,
@@ -156,7 +363,26 @@ trait XmppRoom extends js.Object {
     */
   def removeHandler(id: Double): Unit = js.native
   def revoke(jid: String): String = js.native
+  def revoke(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def revoke(jid: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def revoke(
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def revoke(jid: String, reason: String): String = js.native
+  def revoke(
+    jid: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def revoke(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def revoke(
     jid: String,
@@ -168,7 +394,26 @@ trait XmppRoom extends js.Object {
   def setStatus(show: String, status: String): String = js.native
   def setTopic(topic: String): String = js.native
   def voice(nick: String): String = js.native
+  def voice(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def voice(nick: String, reason: js.UndefOr[scala.Nothing], handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
+  def voice(
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def voice(nick: String, reason: String): String = js.native
+  def voice(
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def voice(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def voice(
     nick: String,

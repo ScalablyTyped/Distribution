@@ -8,125 +8,154 @@ import scala.scalajs.js.annotation._
   * Planned participants in the coordination and delivery of care for a patient or group
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait CareTeam extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait CareTeam extends DomainResource {
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Type of team
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Encounter or episode associated with CareTeam
     */
-  var context: js.UndefOr[Reference] = js.undefined
+  var context: js.UndefOr[Reference] = js.native
   /**
     * External Ids for this team
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Organization responsible for the care team
     */
-  var managingOrganization: js.UndefOr[js.Array[Reference]] = js.undefined
+  var managingOrganization: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Name of the team, such as crisis assessment team
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Comments made about the CareTeam
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
+  var note: js.UndefOr[js.Array[Annotation]] = js.native
   /**
     * Members of the team
     */
-  var participant: js.UndefOr[js.Array[CareTeamParticipant]] = js.undefined
+  var participant: js.UndefOr[js.Array[CareTeamParticipant]] = js.native
   /**
     * Time period team covers
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
   /**
     * Why the care team exists
     */
-  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Why the care team exists
     */
-  var reasonReference: js.UndefOr[js.Array[Reference]] = js.undefined
+  var reasonReference: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * proposed | active | suspended | inactive | entered-in-error
     */
-  var status: js.UndefOr[code] = js.undefined
+  var status: js.UndefOr[code] = js.native
   /**
     * Who care team is for
     */
-  var subject: js.UndefOr[Reference] = js.undefined
+  var subject: js.UndefOr[Reference] = js.native
 }
 
 object CareTeam {
   @scala.inline
-  def apply(
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _name: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    category: js.Array[CodeableConcept] = null,
-    contained: js.Array[Resource] = null,
-    context: Reference = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    managingOrganization: js.Array[Reference] = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    name: String = null,
-    note: js.Array[Annotation] = null,
-    participant: js.Array[CareTeamParticipant] = null,
-    period: Period = null,
-    reasonCode: js.Array[CodeableConcept] = null,
-    reasonReference: js.Array[Reference] = null,
-    resourceType: code = null,
-    status: code = null,
-    subject: Reference = null,
-    text: Narrative = null
-  ): CareTeam = {
+  def apply(): CareTeam = {
     val __obj = js.Dynamic.literal()
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (managingOrganization != null) __obj.updateDynamic("managingOrganization")(managingOrganization.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (participant != null) __obj.updateDynamic("participant")(participant.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
-    if (reasonReference != null) __obj.updateDynamic("reasonReference")(reasonReference.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CareTeam]
   }
+  @scala.inline
+  implicit class CareTeamOps[Self <: CareTeam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setCategoryVarargs(value: CodeableConcept*): Self = this.set("category", js.Array(value :_*))
+    @scala.inline
+    def setCategory(value: js.Array[CodeableConcept]): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setContext(value: Reference): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setManagingOrganizationVarargs(value: Reference*): Self = this.set("managingOrganization", js.Array(value :_*))
+    @scala.inline
+    def setManagingOrganization(value: js.Array[Reference]): Self = this.set("managingOrganization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagingOrganization: Self = this.set("managingOrganization", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    @scala.inline
+    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("note", js.undefined)
+    @scala.inline
+    def setParticipantVarargs(value: CareTeamParticipant*): Self = this.set("participant", js.Array(value :_*))
+    @scala.inline
+    def setParticipant(value: js.Array[CareTeamParticipant]): Self = this.set("participant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipant: Self = this.set("participant", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setReasonCodeVarargs(value: CodeableConcept*): Self = this.set("reasonCode", js.Array(value :_*))
+    @scala.inline
+    def setReasonCode(value: js.Array[CodeableConcept]): Self = this.set("reasonCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonCode: Self = this.set("reasonCode", js.undefined)
+    @scala.inline
+    def setReasonReferenceVarargs(value: Reference*): Self = this.set("reasonReference", js.Array(value :_*))
+    @scala.inline
+    def setReasonReference(value: js.Array[Reference]): Self = this.set("reasonReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonReference: Self = this.set("reasonReference", js.undefined)
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+  }
+  
 }
 

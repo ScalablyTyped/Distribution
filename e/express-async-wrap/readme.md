@@ -12,7 +12,7 @@ Allows the use of ES2016 async functions as Express route handlers
 | Keywords           | express, async-await, routes |
 | # releases         | 1 |
 | # dependents       | 6 |
-| # downloads        | 116144 |
+| # downloads        | 129777 |
 | # stars            | 2 |
 
 ## Links

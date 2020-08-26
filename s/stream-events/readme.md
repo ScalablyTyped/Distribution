@@ -12,7 +12,7 @@ Get an event when you're being sent data or asked for it.
 | Keywords           | stream, events, read, write, duplexify, lazy-stream |
 | # releases         | 4 |
 | # dependents       | 19 |
-| # downloads        | 48229526 |
+| # downloads        | 51702846 |
 | # stars            | 1 |
 
 ## Links

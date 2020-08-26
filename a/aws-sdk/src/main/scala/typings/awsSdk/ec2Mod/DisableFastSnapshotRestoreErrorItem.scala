@@ -18,14 +18,32 @@ trait DisableFastSnapshotRestoreErrorItem extends js.Object {
 
 object DisableFastSnapshotRestoreErrorItem {
   @scala.inline
-  def apply(
-    FastSnapshotRestoreStateErrors: DisableFastSnapshotRestoreStateErrorSet = null,
-    SnapshotId: String = null
-  ): DisableFastSnapshotRestoreErrorItem = {
+  def apply(): DisableFastSnapshotRestoreErrorItem = {
     val __obj = js.Dynamic.literal()
-    if (FastSnapshotRestoreStateErrors != null) __obj.updateDynamic("FastSnapshotRestoreStateErrors")(FastSnapshotRestoreStateErrors.asInstanceOf[js.Any])
-    if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableFastSnapshotRestoreErrorItem]
   }
+  @scala.inline
+  implicit class DisableFastSnapshotRestoreErrorItemOps[Self <: DisableFastSnapshotRestoreErrorItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFastSnapshotRestoreStateErrorsVarargs(value: DisableFastSnapshotRestoreStateErrorItem*): Self = this.set("FastSnapshotRestoreStateErrors", js.Array(value :_*))
+    @scala.inline
+    def setFastSnapshotRestoreStateErrors(value: DisableFastSnapshotRestoreStateErrorSet): Self = this.set("FastSnapshotRestoreStateErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFastSnapshotRestoreStateErrors: Self = this.set("FastSnapshotRestoreStateErrors", js.undefined)
+    @scala.inline
+    def setSnapshotId(value: String): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+  }
+  
 }
 

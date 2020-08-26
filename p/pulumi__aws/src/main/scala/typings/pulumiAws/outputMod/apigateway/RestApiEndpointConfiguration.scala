@@ -18,10 +18,30 @@ trait RestApiEndpointConfiguration extends js.Object {
 
 object RestApiEndpointConfiguration {
   @scala.inline
-  def apply(types: String, vpcEndpointIds: js.Array[String] = null): RestApiEndpointConfiguration = {
+  def apply(types: String): RestApiEndpointConfiguration = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    if (vpcEndpointIds != null) __obj.updateDynamic("vpcEndpointIds")(vpcEndpointIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestApiEndpointConfiguration]
   }
+  @scala.inline
+  implicit class RestApiEndpointConfigurationOps[Self <: RestApiEndpointConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTypes(value: String): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcEndpointIdsVarargs(value: String*): Self = this.set("vpcEndpointIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcEndpointIds(value: js.Array[String]): Self = this.set("vpcEndpointIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcEndpointIds: Self = this.set("vpcEndpointIds", js.undefined)
+  }
+  
 }
 

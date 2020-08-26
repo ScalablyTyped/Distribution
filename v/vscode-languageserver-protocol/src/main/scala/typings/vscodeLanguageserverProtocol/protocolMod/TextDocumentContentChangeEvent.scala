@@ -12,13 +12,8 @@ trait TextDocumentContentChangeEvent extends js.Object
 
 object TextDocumentContentChangeEvent {
   @scala.inline
-  def Range(
-    range: typings.vscodeLanguageserverTypes.mod.Range,
-    text: String,
-    rangeLength: js.UndefOr[Double] = js.undefined
-  ): TextDocumentContentChangeEvent = {
+  def Range(range: typings.vscodeLanguageserverTypes.mod.Range, text: String): TextDocumentContentChangeEvent = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeLength)) __obj.updateDynamic("rangeLength")(rangeLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDocumentContentChangeEvent]
   }
   @scala.inline

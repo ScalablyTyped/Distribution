@@ -2,7 +2,7 @@ package typings.oracleOraclejet.ojgaugeMod
 
 import typings.oracleOraclejet.anon.Text
 import typings.oracleOraclejet.anon.TextType
-import typings.oracleOraclejet.anon.`8`
+import typings.oracleOraclejet.anon.`10`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojgaugeMod.ojLedGauge.Threshold
 import typings.oracleOraclejet.oracleOraclejetNumbers.`0`
@@ -78,7 +78,7 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
     _
   ]) | Null = js.native
   var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`8`], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`10`], _]) | Null = js.native
   var onTypeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[arrow | diamond | square | rectangle | triangle | star | human | circle], 
     _
@@ -90,7 +90,7 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   var svgClassName: String = js.native
   var svgStyle: js.Object = js.native
   var thresholds: js.Array[Threshold] = js.native
-  var tooltip: `8` = js.native
+  var tooltip: `10` = js.native
   var `type`: arrow | diamond | square | rectangle | triangle | star | human | circle = js.native
   var value: Double | Null = js.native
   var visualEffects: none | auto = js.native
@@ -260,12 +260,12 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`8`], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`10`], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`8`], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`10`], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -303,7 +303,7 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("getProperty")
   def getProperty_thresholds(property: thresholds): js.Array[Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): `8` = js.native
+  def getProperty_tooltip(property: tooltip): `10` = js.native
   @JSName("getProperty")
   def getProperty_type(property: `type`): arrow | diamond | square | rectangle | triangle | star | human | circle = js.native
   @JSName("getProperty")
@@ -346,7 +346,7 @@ trait ojLedGauge_ extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("setProperty")
   def setProperty_thresholds(property: thresholds, value: js.Array[Threshold]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: `8`): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: `10`): Unit = js.native
   @JSName("setProperty")
   def setProperty_value(property: value): Unit = js.native
   @JSName("setProperty")

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * defines the interface for a single control in an {@link ObjectInspector}
   * @since OOo 2.0.3
   */
+@js.native
 trait XPropertyControl extends js.Object {
   /**
     * specifies the context of the control within the {@link ObjectInspector} .
@@ -17,9 +18,9 @@ trait XPropertyControl extends js.Object {
     * The property control should actively notify its state changes to the context. In particular, changes in the focus and the value of the control must be
     * notified.
     */
-  var ControlContext: XPropertyControlContext
+  var ControlContext: XPropertyControlContext = js.native
   /** denotes the type of the control, as one of the {@link PropertyControlType} constants */
-  var ControlType: Double
+  var ControlType: Double = js.native
   /**
     * denotes the window which is the real UI representation of the property control.
     *
@@ -27,19 +28,19 @@ trait XPropertyControl extends js.Object {
     *
     * This Window must not be `NULL` , else the whole control is not usable.
     */
-  var ControlWindow: XWindow
+  var ControlWindow: XWindow = js.native
   /**
     * denotes the current content of the control.
     *
     * At every point in time, this value is either `VOID` , or of the type described by {@link ValueType} .
     * @throws com::sun::star::beans::IllegalTypeException if an attempt is made to set a value which is not `VOID` and whose type does not equal {@link ValueType} .
     */
-  var Value: js.Any
+  var Value: js.Any = js.native
   /**
     * denotes the value type of the control.
     * @see Value
     */
-  var ValueType: `type`
+  var ValueType: `type` = js.native
   /**
     * determines whether the control content is currently modified
     *
@@ -50,14 +51,14 @@ trait XPropertyControl extends js.Object {
     * @see ControlContext
     * @see XPropertyControlContext.valueChanged
     */
-  def isModified(): Boolean
+  def isModified(): Boolean = js.native
   /**
     * notifies the context in which the control lives of the current control value, if this value is currently modified
     * @see isModified
     * @see ControlContext
     * @see XPropertyControlListener.valueChanged
     */
-  def notifyModifiedValue(): Unit
+  def notifyModifiedValue(): Unit = js.native
 }
 
 object XPropertyControl {
@@ -74,5 +75,32 @@ object XPropertyControl {
     val __obj = js.Dynamic.literal(ControlContext = ControlContext.asInstanceOf[js.Any], ControlType = ControlType.asInstanceOf[js.Any], ControlWindow = ControlWindow.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any], isModified = js.Any.fromFunction0(isModified), notifyModifiedValue = js.Any.fromFunction0(notifyModifiedValue))
     __obj.asInstanceOf[XPropertyControl]
   }
+  @scala.inline
+  implicit class XPropertyControlOps[Self <: XPropertyControl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setControlContext(value: XPropertyControlContext): Self = this.set("ControlContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setControlType(value: Double): Self = this.set("ControlType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setControlWindow(value: XWindow): Self = this.set("ControlWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValueType(value: `type`): Self = this.set("ValueType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsModified(value: () => Boolean): Self = this.set("isModified", js.Any.fromFunction0(value))
+    @scala.inline
+    def setNotifyModifiedValue(value: () => Unit): Self = this.set("notifyModifiedValue", js.Any.fromFunction0(value))
+  }
+  
 }
 

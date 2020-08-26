@@ -2,6 +2,8 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`trigger-action`
+import typings.arcgisJsApi.arcgisJsApiStrings.disabled
+import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,19 +23,31 @@ trait LayerListViewModel extends Accessor {
     */
   val operationalItems: Collection[ListItem] = js.native
   /**
-    * The view model's state.  **Possible Values:** loading | disabled
+    * The view model's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#state)
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: loading | disabled = js.native
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#view)
     */
   var view: MapView | SceneView = js.native
+  /**
+    * Moves a list item from one position to another in the LayerList widget. This allows the user to reorder the operational layers in a map or even reorganize sublayers of [GroupLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html). You cannot move a GroupLayer as a sublayer to another GroupLayer. You also cannot move MapImageLayer sublayers outside of a MapImageLayer.  For the purposes of the documentation below, an item (or list item) refers to a layer in a map. A parent item refers to a GroupLayer or MapImageLayer, and a child item refers to a sublayer of a GroupLayer or MapImageLayer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#moveListItem)
+    *
+    * @param targetItem The list item (or layer) to move.
+    * @param fromParentItem If the `targetItem` is a child of a parent list item and you want to move it out of the parentItem, then use this parameter to indicate the parent item to move from.
+    * @param toParentItem The parent list item to move the `targetItem` to if moving it as a child to another parent item.
+    * @param newIndex The new index to move the `targetItem` to. If moving the item as a child to a parent item, then specify the index of the item within that parent.
+    *
+    */
+  def moveListItem(targetItem: ListItem, fromParentItem: ListItem, toParentItem: ListItem, newIndex: Double): Unit = js.native
   @JSName("on")
   def on_triggeraction(name: `trigger-action`, eventHandler: LayerListViewModelTriggerActionEventHandler): IHandle = js.native
   /**

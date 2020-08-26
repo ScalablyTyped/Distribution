@@ -18,10 +18,20 @@ class Session protected () extends js.Object {
   var registrations: js.Array[IRegistration] = js.native
   var subscriptions: js.Array[js.Array[ISubscription]] = js.native
   def call[TResult](procedure: String): Promise[TResult] = js.native
+  def call[TResult](
+    procedure: String,
+    args: js.UndefOr[scala.Nothing],
+    kwargs: js.UndefOr[scala.Nothing],
+    options: ICallOptions
+  ): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any, options: ICallOptions): Promise[TResult] = js.native
   def call[TResult](procedure: String, args: js.Any): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: js.Any, kwargs: js.UndefOr[scala.Nothing], options: ICallOptions): Promise[TResult] = js.native
   def call[TResult](procedure: String, args: js.Any, kwargs: js.Any): Promise[TResult] = js.native
   def call[TResult](procedure: String, args: js.Any, kwargs: js.Any, options: ICallOptions): Promise[TResult] = js.native
   def call[TResult](procedure: String, args: js.Array[_]): Promise[TResult] = js.native
+  def call[TResult](procedure: String, args: js.Array[_], kwargs: js.UndefOr[scala.Nothing], options: ICallOptions): Promise[TResult] = js.native
   def call[TResult](procedure: String, args: js.Array[_], kwargs: js.Any): Promise[TResult] = js.native
   def call[TResult](procedure: String, args: js.Array[_], kwargs: js.Any, options: ICallOptions): Promise[TResult] = js.native
   def join(realm: String, authmethods: js.Array[String], authid: String): Unit = js.native
@@ -30,7 +40,16 @@ class Session protected () extends js.Object {
   def onleave(reason: String, details: js.Any): Unit = js.native
   def prefix(prefix: String, uri: String): Unit = js.native
   def publish(topic: String): Promise[IPublication] = js.native
+  def publish(
+    topic: String,
+    args: js.UndefOr[scala.Nothing],
+    kwargs: js.UndefOr[scala.Nothing],
+    options: IPublishOptions
+  ): Promise[IPublication] = js.native
+  def publish(topic: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any): Promise[IPublication] = js.native
+  def publish(topic: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any, options: IPublishOptions): Promise[IPublication] = js.native
   def publish(topic: String, args: js.Array[_]): Promise[IPublication] = js.native
+  def publish(topic: String, args: js.Array[_], kwargs: js.UndefOr[scala.Nothing], options: IPublishOptions): Promise[IPublication] = js.native
   def publish(topic: String, args: js.Array[_], kwargs: js.Any): Promise[IPublication] = js.native
   def publish(topic: String, args: js.Array[_], kwargs: js.Any, options: IPublishOptions): Promise[IPublication] = js.native
   def register(procedure: String, endpoint: RegisterEndpoint): Promise[IRegistration] = js.native

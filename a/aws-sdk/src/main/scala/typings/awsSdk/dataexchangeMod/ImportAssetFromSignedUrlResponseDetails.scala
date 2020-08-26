@@ -34,19 +34,40 @@ trait ImportAssetFromSignedUrlResponseDetails extends js.Object {
 
 object ImportAssetFromSignedUrlResponseDetails {
   @scala.inline
-  def apply(
-    AssetName: AssetName,
-    DataSetId: Id,
-    RevisionId: Id,
-    Md5Hash: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093 = null,
-    SignedUrl: string = null,
-    SignedUrlExpiresAt: Timestamp = null
-  ): ImportAssetFromSignedUrlResponseDetails = {
+  def apply(AssetName: AssetName, DataSetId: Id, RevisionId: Id): ImportAssetFromSignedUrlResponseDetails = {
     val __obj = js.Dynamic.literal(AssetName = AssetName.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-    if (Md5Hash != null) __obj.updateDynamic("Md5Hash")(Md5Hash.asInstanceOf[js.Any])
-    if (SignedUrl != null) __obj.updateDynamic("SignedUrl")(SignedUrl.asInstanceOf[js.Any])
-    if (SignedUrlExpiresAt != null) __obj.updateDynamic("SignedUrlExpiresAt")(SignedUrlExpiresAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportAssetFromSignedUrlResponseDetails]
   }
+  @scala.inline
+  implicit class ImportAssetFromSignedUrlResponseDetailsOps[Self <: ImportAssetFromSignedUrlResponseDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetName(value: AssetName): Self = this.set("AssetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataSetId(value: Id): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevisionId(value: Id): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMd5Hash(value: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093): Self = this.set("Md5Hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd5Hash: Self = this.set("Md5Hash", js.undefined)
+    @scala.inline
+    def setSignedUrl(value: string): Self = this.set("SignedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignedUrl: Self = this.set("SignedUrl", js.undefined)
+    @scala.inline
+    def setSignedUrlExpiresAt(value: Timestamp): Self = this.set("SignedUrlExpiresAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignedUrlExpiresAt: Self = this.set("SignedUrlExpiresAt", js.undefined)
+  }
+  
 }
 

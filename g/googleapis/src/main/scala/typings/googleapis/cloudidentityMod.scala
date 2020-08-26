@@ -43,7 +43,7 @@ object cloudidentityMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Cloudidentity
               ]
             ]
@@ -53,7 +53,7 @@ object cloudidentityMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity
               ]
             ]

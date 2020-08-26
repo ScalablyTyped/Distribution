@@ -12,13 +12,12 @@ The lodash method `_.xorWith` exported as a module.
 | Keywords           | lodash-modularized, xorwith |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 21461 |
+| # downloads        | 21167 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.xorwith)
     
 

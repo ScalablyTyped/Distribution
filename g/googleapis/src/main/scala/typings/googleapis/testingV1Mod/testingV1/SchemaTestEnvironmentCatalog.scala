@@ -29,18 +29,38 @@ trait SchemaTestEnvironmentCatalog extends js.Object {
 
 object SchemaTestEnvironmentCatalog {
   @scala.inline
-  def apply(
-    androidDeviceCatalog: SchemaAndroidDeviceCatalog = null,
-    iosDeviceCatalog: SchemaIosDeviceCatalog = null,
-    networkConfigurationCatalog: SchemaNetworkConfigurationCatalog = null,
-    softwareCatalog: SchemaProvidedSoftwareCatalog = null
-  ): SchemaTestEnvironmentCatalog = {
+  def apply(): SchemaTestEnvironmentCatalog = {
     val __obj = js.Dynamic.literal()
-    if (androidDeviceCatalog != null) __obj.updateDynamic("androidDeviceCatalog")(androidDeviceCatalog.asInstanceOf[js.Any])
-    if (iosDeviceCatalog != null) __obj.updateDynamic("iosDeviceCatalog")(iosDeviceCatalog.asInstanceOf[js.Any])
-    if (networkConfigurationCatalog != null) __obj.updateDynamic("networkConfigurationCatalog")(networkConfigurationCatalog.asInstanceOf[js.Any])
-    if (softwareCatalog != null) __obj.updateDynamic("softwareCatalog")(softwareCatalog.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestEnvironmentCatalog]
   }
+  @scala.inline
+  implicit class SchemaTestEnvironmentCatalogOps[Self <: SchemaTestEnvironmentCatalog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidDeviceCatalog(value: SchemaAndroidDeviceCatalog): Self = this.set("androidDeviceCatalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidDeviceCatalog: Self = this.set("androidDeviceCatalog", js.undefined)
+    @scala.inline
+    def setIosDeviceCatalog(value: SchemaIosDeviceCatalog): Self = this.set("iosDeviceCatalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosDeviceCatalog: Self = this.set("iosDeviceCatalog", js.undefined)
+    @scala.inline
+    def setNetworkConfigurationCatalog(value: SchemaNetworkConfigurationCatalog): Self = this.set("networkConfigurationCatalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkConfigurationCatalog: Self = this.set("networkConfigurationCatalog", js.undefined)
+    @scala.inline
+    def setSoftwareCatalog(value: SchemaProvidedSoftwareCatalog): Self = this.set("softwareCatalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSoftwareCatalog: Self = this.set("softwareCatalog", js.undefined)
+  }
+  
 }
 

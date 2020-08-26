@@ -35,6 +35,7 @@ class SmoothieChart () extends js.Object {
     */
   def removeTimeSeries(series: TimeSeries): Unit = js.native
   def render(): Unit = js.native
+  def render(canvas: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
   def render(canvas: HTMLCanvasElement): Unit = js.native
   def render(canvas: HTMLCanvasElement, time: Double): Unit = js.native
   /**

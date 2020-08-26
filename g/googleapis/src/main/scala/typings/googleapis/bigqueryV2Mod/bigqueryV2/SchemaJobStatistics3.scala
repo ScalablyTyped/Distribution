@@ -35,20 +35,42 @@ trait SchemaJobStatistics3 extends js.Object {
 
 object SchemaJobStatistics3 {
   @scala.inline
-  def apply(
-    badRecords: String = null,
-    inputFileBytes: String = null,
-    inputFiles: String = null,
-    outputBytes: String = null,
-    outputRows: String = null
-  ): SchemaJobStatistics3 = {
+  def apply(): SchemaJobStatistics3 = {
     val __obj = js.Dynamic.literal()
-    if (badRecords != null) __obj.updateDynamic("badRecords")(badRecords.asInstanceOf[js.Any])
-    if (inputFileBytes != null) __obj.updateDynamic("inputFileBytes")(inputFileBytes.asInstanceOf[js.Any])
-    if (inputFiles != null) __obj.updateDynamic("inputFiles")(inputFiles.asInstanceOf[js.Any])
-    if (outputBytes != null) __obj.updateDynamic("outputBytes")(outputBytes.asInstanceOf[js.Any])
-    if (outputRows != null) __obj.updateDynamic("outputRows")(outputRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobStatistics3]
   }
+  @scala.inline
+  implicit class SchemaJobStatistics3Ops[Self <: SchemaJobStatistics3] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBadRecords(value: String): Self = this.set("badRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadRecords: Self = this.set("badRecords", js.undefined)
+    @scala.inline
+    def setInputFileBytes(value: String): Self = this.set("inputFileBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputFileBytes: Self = this.set("inputFileBytes", js.undefined)
+    @scala.inline
+    def setInputFiles(value: String): Self = this.set("inputFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputFiles: Self = this.set("inputFiles", js.undefined)
+    @scala.inline
+    def setOutputBytes(value: String): Self = this.set("outputBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputBytes: Self = this.set("outputBytes", js.undefined)
+    @scala.inline
+    def setOutputRows(value: String): Self = this.set("outputRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputRows: Self = this.set("outputRows", js.undefined)
+  }
+  
 }
 

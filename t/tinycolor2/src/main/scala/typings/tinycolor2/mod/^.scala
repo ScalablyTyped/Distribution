@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends Instance {
   def this(color: ColorInput) = this()
-  def this(color: ColorInput, opts: ConstructorOptions) = this()
+  def this(color: js.UndefOr[ColorInput], opts: ConstructorOptions) = this()
 }
 
 @JSImport("tinycolor2", JSImport.Namespace)

@@ -26,16 +26,9 @@ object disableKeyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DisableKeyInput) = this()
-    /* CompleteClass */
-    override val input: DisableKeyInput = js.native
     val middlewareStack: MiddlewareStack[DisableKeyInput, DisableKeyOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[DisableKeyInput, DisableKeyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[DisableKeyInput, DisableKeyOutput] = js.native
   }

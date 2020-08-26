@@ -34,22 +34,48 @@ trait Resource extends js.Object {
 
 object Resource {
   @scala.inline
-  def apply(
-    doubleValue: js.UndefOr[Double] = js.undefined,
-    integerValue: js.UndefOr[Integer] = js.undefined,
-    longValue: js.UndefOr[Long] = js.undefined,
-    name: String = null,
-    stringSetValue: StringList = null,
-    `type`: String = null
-  ): Resource = {
+  def apply(): Resource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(integerValue)) __obj.updateDynamic("integerValue")(integerValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longValue)) __obj.updateDynamic("longValue")(longValue.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (stringSetValue != null) __obj.updateDynamic("stringSetValue")(stringSetValue.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
+  @scala.inline
+  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDoubleValue(value: Double): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    @scala.inline
+    def setIntegerValue(value: Integer): Self = this.set("integerValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerValue: Self = this.set("integerValue", js.undefined)
+    @scala.inline
+    def setLongValue(value: Long): Self = this.set("longValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongValue: Self = this.set("longValue", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStringSetValueVarargs(value: String*): Self = this.set("stringSetValue", js.Array(value :_*))
+    @scala.inline
+    def setStringSetValue(value: StringList): Self = this.set("stringSetValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringSetValue: Self = this.set("stringSetValue", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

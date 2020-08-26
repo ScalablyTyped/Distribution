@@ -17,6 +17,7 @@ trait OutgoingRequest extends js.Object {
     * @param options - Request options bucket.
     */
   def cancel(): Unit = js.native
+  def cancel(reason: js.UndefOr[scala.Nothing], options: RequestOptions): Unit = js.native
   def cancel(reason: String): Unit = js.native
   def cancel(reason: String, options: RequestOptions): Unit = js.native
   /**

@@ -22,16 +22,34 @@ trait GetCredentialReportResponse extends js.Object {
 
 object GetCredentialReportResponse {
   @scala.inline
-  def apply(
-    Content: ReportContentType = null,
-    GeneratedTime: dateType = null,
-    ReportFormat: ReportFormatType = null
-  ): GetCredentialReportResponse = {
+  def apply(): GetCredentialReportResponse = {
     val __obj = js.Dynamic.literal()
-    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
-    if (GeneratedTime != null) __obj.updateDynamic("GeneratedTime")(GeneratedTime.asInstanceOf[js.Any])
-    if (ReportFormat != null) __obj.updateDynamic("ReportFormat")(ReportFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCredentialReportResponse]
   }
+  @scala.inline
+  implicit class GetCredentialReportResponseOps[Self <: GetCredentialReportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: ReportContentType): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("Content", js.undefined)
+    @scala.inline
+    def setGeneratedTime(value: dateType): Self = this.set("GeneratedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeneratedTime: Self = this.set("GeneratedTime", js.undefined)
+    @scala.inline
+    def setReportFormat(value: ReportFormatType): Self = this.set("ReportFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportFormat: Self = this.set("ReportFormat", js.undefined)
+  }
+  
 }
 

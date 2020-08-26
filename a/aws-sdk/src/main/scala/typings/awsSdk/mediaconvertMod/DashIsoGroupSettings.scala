@@ -58,34 +58,72 @@ trait DashIsoGroupSettings extends js.Object {
 
 object DashIsoGroupSettings {
   @scala.inline
-  def apply(
-    AdditionalManifests: listOfDashAdditionalManifest = null,
-    BaseUrl: string = null,
-    Destination: stringPatternS3 = null,
-    DestinationSettings: DestinationSettings = null,
-    Encryption: DashIsoEncryptionSettings = null,
-    FragmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    HbbtvCompliance: DashIsoHbbtvCompliance = null,
-    MinBufferTime: js.UndefOr[integerMin0Max2147483647] = js.undefined,
-    MpdProfile: DashIsoMpdProfile = null,
-    SegmentControl: DashIsoSegmentControl = null,
-    SegmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    WriteSegmentTimelineInRepresentation: DashIsoWriteSegmentTimelineInRepresentation = null
-  ): DashIsoGroupSettings = {
+  def apply(): DashIsoGroupSettings = {
     val __obj = js.Dynamic.literal()
-    if (AdditionalManifests != null) __obj.updateDynamic("AdditionalManifests")(AdditionalManifests.asInstanceOf[js.Any])
-    if (BaseUrl != null) __obj.updateDynamic("BaseUrl")(BaseUrl.asInstanceOf[js.Any])
-    if (Destination != null) __obj.updateDynamic("Destination")(Destination.asInstanceOf[js.Any])
-    if (DestinationSettings != null) __obj.updateDynamic("DestinationSettings")(DestinationSettings.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(FragmentLength)) __obj.updateDynamic("FragmentLength")(FragmentLength.get.asInstanceOf[js.Any])
-    if (HbbtvCompliance != null) __obj.updateDynamic("HbbtvCompliance")(HbbtvCompliance.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinBufferTime)) __obj.updateDynamic("MinBufferTime")(MinBufferTime.get.asInstanceOf[js.Any])
-    if (MpdProfile != null) __obj.updateDynamic("MpdProfile")(MpdProfile.asInstanceOf[js.Any])
-    if (SegmentControl != null) __obj.updateDynamic("SegmentControl")(SegmentControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentLength)) __obj.updateDynamic("SegmentLength")(SegmentLength.get.asInstanceOf[js.Any])
-    if (WriteSegmentTimelineInRepresentation != null) __obj.updateDynamic("WriteSegmentTimelineInRepresentation")(WriteSegmentTimelineInRepresentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashIsoGroupSettings]
   }
+  @scala.inline
+  implicit class DashIsoGroupSettingsOps[Self <: DashIsoGroupSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalManifestsVarargs(value: DashAdditionalManifest*): Self = this.set("AdditionalManifests", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalManifests(value: listOfDashAdditionalManifest): Self = this.set("AdditionalManifests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalManifests: Self = this.set("AdditionalManifests", js.undefined)
+    @scala.inline
+    def setBaseUrl(value: string): Self = this.set("BaseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseUrl: Self = this.set("BaseUrl", js.undefined)
+    @scala.inline
+    def setDestination(value: stringPatternS3): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("Destination", js.undefined)
+    @scala.inline
+    def setDestinationSettings(value: DestinationSettings): Self = this.set("DestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationSettings: Self = this.set("DestinationSettings", js.undefined)
+    @scala.inline
+    def setEncryption(value: DashIsoEncryptionSettings): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setFragmentLength(value: integerMin1Max2147483647): Self = this.set("FragmentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFragmentLength: Self = this.set("FragmentLength", js.undefined)
+    @scala.inline
+    def setHbbtvCompliance(value: DashIsoHbbtvCompliance): Self = this.set("HbbtvCompliance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHbbtvCompliance: Self = this.set("HbbtvCompliance", js.undefined)
+    @scala.inline
+    def setMinBufferTime(value: integerMin0Max2147483647): Self = this.set("MinBufferTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinBufferTime: Self = this.set("MinBufferTime", js.undefined)
+    @scala.inline
+    def setMpdProfile(value: DashIsoMpdProfile): Self = this.set("MpdProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMpdProfile: Self = this.set("MpdProfile", js.undefined)
+    @scala.inline
+    def setSegmentControl(value: DashIsoSegmentControl): Self = this.set("SegmentControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentControl: Self = this.set("SegmentControl", js.undefined)
+    @scala.inline
+    def setSegmentLength(value: integerMin1Max2147483647): Self = this.set("SegmentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentLength: Self = this.set("SegmentLength", js.undefined)
+    @scala.inline
+    def setWriteSegmentTimelineInRepresentation(value: DashIsoWriteSegmentTimelineInRepresentation): Self = this.set("WriteSegmentTimelineInRepresentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteSegmentTimelineInRepresentation: Self = this.set("WriteSegmentTimelineInRepresentation", js.undefined)
+  }
+  
 }
 

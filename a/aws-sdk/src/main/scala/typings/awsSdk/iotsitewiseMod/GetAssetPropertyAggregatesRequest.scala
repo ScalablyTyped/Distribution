@@ -54,28 +54,62 @@ trait GetAssetPropertyAggregatesRequest extends js.Object {
 
 object GetAssetPropertyAggregatesRequest {
   @scala.inline
-  def apply(
-    aggregateTypes: AggregateTypes,
-    endDate: Timestamp,
-    resolution: Resolution,
-    startDate: Timestamp,
-    assetId: ID = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    propertyAlias: AssetPropertyAlias = null,
-    propertyId: ID = null,
-    qualities: Qualities = null,
-    timeOrdering: TimeOrdering = null
-  ): GetAssetPropertyAggregatesRequest = {
+  def apply(aggregateTypes: AggregateTypes, endDate: Timestamp, resolution: Resolution, startDate: Timestamp): GetAssetPropertyAggregatesRequest = {
     val __obj = js.Dynamic.literal(aggregateTypes = aggregateTypes.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
-    if (assetId != null) __obj.updateDynamic("assetId")(assetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (propertyAlias != null) __obj.updateDynamic("propertyAlias")(propertyAlias.asInstanceOf[js.Any])
-    if (propertyId != null) __obj.updateDynamic("propertyId")(propertyId.asInstanceOf[js.Any])
-    if (qualities != null) __obj.updateDynamic("qualities")(qualities.asInstanceOf[js.Any])
-    if (timeOrdering != null) __obj.updateDynamic("timeOrdering")(timeOrdering.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssetPropertyAggregatesRequest]
   }
+  @scala.inline
+  implicit class GetAssetPropertyAggregatesRequestOps[Self <: GetAssetPropertyAggregatesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregateTypesVarargs(value: AggregateType*): Self = this.set("aggregateTypes", js.Array(value :_*))
+    @scala.inline
+    def setAggregateTypes(value: AggregateTypes): Self = this.set("aggregateTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndDate(value: Timestamp): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResolution(value: Resolution): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartDate(value: Timestamp): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetId: Self = this.set("assetId", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setPropertyAlias(value: AssetPropertyAlias): Self = this.set("propertyAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyAlias: Self = this.set("propertyAlias", js.undefined)
+    @scala.inline
+    def setPropertyId(value: ID): Self = this.set("propertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyId: Self = this.set("propertyId", js.undefined)
+    @scala.inline
+    def setQualitiesVarargs(value: Quality*): Self = this.set("qualities", js.Array(value :_*))
+    @scala.inline
+    def setQualities(value: Qualities): Self = this.set("qualities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualities: Self = this.set("qualities", js.undefined)
+    @scala.inline
+    def setTimeOrdering(value: TimeOrdering): Self = this.set("timeOrdering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeOrdering: Self = this.set("timeOrdering", js.undefined)
+  }
+  
 }
 

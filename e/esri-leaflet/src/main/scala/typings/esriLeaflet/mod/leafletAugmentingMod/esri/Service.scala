@@ -21,7 +21,16 @@ abstract class Service () extends Evented {
     * parameters will be serialized to a query string. Accepts an optional function context for the callback.
     */
   def get(url: String): this.type = js.native
+  def get(
+    url: String,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def get(url: String, params: js.UndefOr[scala.Nothing], callback: CallbackHandler): this.type = js.native
+  def get(url: String, params: js.UndefOr[scala.Nothing], callback: CallbackHandler, context: js.Any): this.type = js.native
   def get(url: String, params: js.Any): this.type = js.native
+  def get(url: String, params: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def get(url: String, params: js.Any, callback: CallbackHandler): this.type = js.native
   def get(url: String, params: js.Any, callback: CallbackHandler, context: js.Any): this.type = js.native
   /**
@@ -34,7 +43,16 @@ abstract class Service () extends Evented {
     * parameters will be serialized. Accepts an optional function context for the callback.
     */
   def post(url: String): this.type = js.native
+  def post(
+    url: String,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def post(url: String, params: js.UndefOr[scala.Nothing], callback: CallbackHandler): this.type = js.native
+  def post(url: String, params: js.UndefOr[scala.Nothing], callback: CallbackHandler, context: js.Any): this.type = js.native
   def post(url: String, params: js.Any): this.type = js.native
+  def post(url: String, params: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def post(url: String, params: js.Any, callback: CallbackHandler): this.type = js.native
   def post(url: String, params: js.Any, callback: CallbackHandler, context: js.Any): this.type = js.native
 }

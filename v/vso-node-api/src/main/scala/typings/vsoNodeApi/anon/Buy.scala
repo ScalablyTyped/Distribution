@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Buy extends js.Object {
-  var buy: scala.Double
-  var get: scala.Double
-  var install: scala.Double
-  var none: scala.Double
-  var purchaseRequest: scala.Double
-  var request: scala.Double
-  var `try`: scala.Double
+  var buy: scala.Double = js.native
+  var get: scala.Double = js.native
+  var install: scala.Double = js.native
+  var none: scala.Double = js.native
+  var purchaseRequest: scala.Double = js.native
+  var request: scala.Double = js.native
+  var `try`: scala.Double = js.native
 }
 
 object Buy {
@@ -29,5 +30,32 @@ object Buy {
     __obj.updateDynamic("try")(`try`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buy]
   }
+  @scala.inline
+  implicit class BuyOps[Self <: Buy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuy(value: scala.Double): Self = this.set("buy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGet(value: scala.Double): Self = this.set("get", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstall(value: scala.Double): Self = this.set("install", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPurchaseRequest(value: scala.Double): Self = this.set("purchaseRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequest(value: scala.Double): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTry(value: scala.Double): Self = this.set("try", value.asInstanceOf[js.Any])
+  }
+  
 }
 

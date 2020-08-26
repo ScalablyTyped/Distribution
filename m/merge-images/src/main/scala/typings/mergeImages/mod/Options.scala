@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var Canvas: js.UndefOr[js.Any] = js.undefined
-  var Images: js.UndefOr[js.Any] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var quality: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var Canvas: js.UndefOr[js.Any] = js.native
+  var Image: js.UndefOr[js.Any] = js.native
+  var format: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    Canvas: js.Any = null,
-    Images: js.Any = null,
-    format: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    quality: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (Canvas != null) __obj.updateDynamic("Canvas")(Canvas.asInstanceOf[js.Any])
-    if (Images != null) __obj.updateDynamic("Images")(Images.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanvas(value: js.Any): Self = this.set("Canvas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanvas: Self = this.set("Canvas", js.undefined)
+    @scala.inline
+    def setImage(value: js.Any): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("Image", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("quality", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

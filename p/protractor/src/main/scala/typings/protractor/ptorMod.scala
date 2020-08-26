@@ -75,7 +75,26 @@ object ptorMod extends js.Object {
     def DollarDollar(search: String): ElementArrayFinder = js.native
     def element(locator: Locator): ElementFinder = js.native
     def wrapDriver(webdriver: WebDriver): ProtractorBrowser = js.native
+    def wrapDriver(
+      webdriver: WebDriver,
+      baseUrl: js.UndefOr[scala.Nothing],
+      rootElement: js.UndefOr[scala.Nothing],
+      untrackOutstandingTimeouts: Boolean
+    ): ProtractorBrowser = js.native
+    def wrapDriver(webdriver: WebDriver, baseUrl: js.UndefOr[scala.Nothing], rootElement: String): ProtractorBrowser = js.native
+    def wrapDriver(
+      webdriver: WebDriver,
+      baseUrl: js.UndefOr[scala.Nothing],
+      rootElement: String,
+      untrackOutstandingTimeouts: Boolean
+    ): ProtractorBrowser = js.native
     def wrapDriver(webdriver: WebDriver, baseUrl: String): ProtractorBrowser = js.native
+    def wrapDriver(
+      webdriver: WebDriver,
+      baseUrl: String,
+      rootElement: js.UndefOr[scala.Nothing],
+      untrackOutstandingTimeouts: Boolean
+    ): ProtractorBrowser = js.native
     def wrapDriver(webdriver: WebDriver, baseUrl: String, rootElement: String): ProtractorBrowser = js.native
     def wrapDriver(webdriver: WebDriver, baseUrl: String, rootElement: String, untrackOutstandingTimeouts: Boolean): ProtractorBrowser = js.native
   }

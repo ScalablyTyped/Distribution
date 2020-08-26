@@ -9,85 +9,75 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Event is a report of an event somewhere in the cluster. It generally denotes some state
-  * change in the system.
+  * Event is a report of an event somewhere in the cluster. It generally denotes some state change in the system.
   */
+@js.native
 trait Event extends js.Object {
   /**
     * What action was taken/failed regarding to the regarding object.
     */
-  val action: String
+  var action: String = js.native
   /**
-    * APIVersion defines the versioned schema of this representation of an object. Servers should
-    * convert recognized schemas to the latest internal value, and may reject unrecognized
-    * values. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+    * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: eventsDotk8sDotioSlashv1beta1
+  var apiVersion: eventsDotk8sDotioSlashv1beta1 = js.native
   /**
     * Deprecated field assuring backward compatibility with core.v1 Event type
     */
-  val deprecatedCount: Double
+  var deprecatedCount: Double = js.native
   /**
     * Deprecated field assuring backward compatibility with core.v1 Event type
     */
-  val deprecatedFirstTimestamp: String
+  var deprecatedFirstTimestamp: String = js.native
   /**
     * Deprecated field assuring backward compatibility with core.v1 Event type
     */
-  val deprecatedLastTimestamp: String
+  var deprecatedLastTimestamp: String = js.native
   /**
     * Deprecated field assuring backward compatibility with core.v1 Event type
     */
-  val deprecatedSource: EventSource
+  var deprecatedSource: EventSource = js.native
   /**
     * Required. Time when this Event was first observed.
     */
-  val eventTime: String
+  var eventTime: String = js.native
   /**
-    * Kind is a string value representing the REST resource this object represents. Servers may
-    * infer this from the endpoint the client submits requests to. Cannot be updated. In
-    * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+    * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  val kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Event
-  val metadata: ObjectMeta
+  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Event = js.native
+  var metadata: ObjectMeta = js.native
   /**
-    * Optional. A human-readable description of the status of this operation. Maximal length of
-    * the note is 1kB, but libraries should be prepared to handle values up to 64kB.
+    * Optional. A human-readable description of the status of this operation. Maximal length of the note is 1kB, but libraries should be prepared to handle values up to 64kB.
     */
-  val note: String
+  var note: String = js.native
   /**
     * Why the action was taken.
     */
-  val reason: String
+  var reason: String = js.native
   /**
-    * The object this Event is about. In most cases it's an Object reporting controller
-    * implements. E.g. ReplicaSetController implements ReplicaSets and this event is emitted
-    * because it acts on some changes in a ReplicaSet object.
+    * The object this Event is about. In most cases it's an Object reporting controller implements. E.g. ReplicaSetController implements ReplicaSets and this event is emitted because it acts on some changes in a ReplicaSet object.
     */
-  val regarding: ObjectReference
+  var regarding: ObjectReference = js.native
   /**
-    * Optional secondary object for more complex actions. E.g. when regarding object triggers a
-    * creation or deletion of related object.
+    * Optional secondary object for more complex actions. E.g. when regarding object triggers a creation or deletion of related object.
     */
-  val related: ObjectReference
+  var related: ObjectReference = js.native
   /**
     * Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
     */
-  val reportingController: String
+  var reportingController: String = js.native
   /**
     * ID of the controller instance, e.g. `kubelet-xyzf`.
     */
-  val reportingInstance: String
+  var reportingInstance: String = js.native
   /**
     * Data about the Event series this event represents or nil if it's a singleton Event.
     */
-  val series: EventSeries
+  var series: EventSeries = js.native
   /**
     * Type of this event (Normal, Warning), new types could be added in the future.
     */
-  val `type`: String
+  var `type`: String = js.native
 }
 
 object Event {
@@ -115,5 +105,52 @@ object Event {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
+  @scala.inline
+  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiVersion(value: eventsDotk8sDotioSlashv1beta1): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeprecatedCount(value: Double): Self = this.set("deprecatedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeprecatedFirstTimestamp(value: String): Self = this.set("deprecatedFirstTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeprecatedLastTimestamp(value: String): Self = this.set("deprecatedLastTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeprecatedSource(value: EventSource): Self = this.set("deprecatedSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventTime(value: String): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Event): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetadata(value: ObjectMeta): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegarding(value: ObjectReference): Self = this.set("regarding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelated(value: ObjectReference): Self = this.set("related", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReportingController(value: String): Self = this.set("reportingController", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReportingInstance(value: String): Self = this.set("reportingInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSeries(value: EventSeries): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

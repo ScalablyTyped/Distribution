@@ -15,14 +15,63 @@ object rectAreaLightMod extends js.Object {
     def this(color: String) = this()
     def this(color: Double) = this()
     def this(color: Color) = this()
+    def this(color: js.UndefOr[scala.Nothing], intensity: Double) = this()
     def this(color: String, intensity: Double) = this()
     def this(color: Double, intensity: Double) = this()
     def this(color: Color, intensity: Double) = this()
+    def this(color: js.UndefOr[scala.Nothing], intensity: js.UndefOr[scala.Nothing], width: Double) = this()
+    def this(color: js.UndefOr[scala.Nothing], intensity: Double, width: Double) = this()
+    def this(color: String, intensity: js.UndefOr[scala.Nothing], width: Double) = this()
     def this(color: String, intensity: Double, width: Double) = this()
+    def this(color: Double, intensity: js.UndefOr[scala.Nothing], width: Double) = this()
     def this(color: Double, intensity: Double, width: Double) = this()
+    def this(color: Color, intensity: js.UndefOr[scala.Nothing], width: Double) = this()
     def this(color: Color, intensity: Double, width: Double) = this()
+    def this(
+      color: js.UndefOr[scala.Nothing],
+      intensity: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: Double
+    ) = this()
+    def this(
+      color: js.UndefOr[scala.Nothing],
+      intensity: js.UndefOr[scala.Nothing],
+      width: Double,
+      height: Double
+    ) = this()
+    def this(
+      color: js.UndefOr[scala.Nothing],
+      intensity: Double,
+      width: js.UndefOr[scala.Nothing],
+      height: Double
+    ) = this()
+    def this(color: js.UndefOr[scala.Nothing], intensity: Double, width: Double, height: Double) = this()
+    def this(
+      color: String,
+      intensity: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: Double
+    ) = this()
+    def this(color: String, intensity: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+    def this(color: String, intensity: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(color: String, intensity: Double, width: Double, height: Double) = this()
+    def this(
+      color: Double,
+      intensity: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: Double
+    ) = this()
+    def this(color: Double, intensity: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+    def this(color: Double, intensity: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(color: Double, intensity: Double, width: Double, height: Double) = this()
+    def this(
+      color: Color,
+      intensity: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: Double
+    ) = this()
+    def this(color: Color, intensity: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+    def this(color: Color, intensity: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(color: Color, intensity: Double, width: Double, height: Double) = this()
     var height: Double = js.native
     val isRectAreaLight: `true` = js.native

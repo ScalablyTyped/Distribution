@@ -38,20 +38,46 @@ trait CreateRuleGroupRequest extends js.Object {
 
 object CreateRuleGroupRequest {
   @scala.inline
-  def apply(
-    Capacity: CapacityUnit,
-    Name: EntityName,
-    Scope: Scope,
-    VisibilityConfig: VisibilityConfig,
-    Description: EntityDescription = null,
-    Rules: Rules = null,
-    Tags: TagList = null
-  ): CreateRuleGroupRequest = {
+  def apply(Capacity: CapacityUnit, Name: EntityName, Scope: Scope, VisibilityConfig: VisibilityConfig): CreateRuleGroupRequest = {
     val __obj = js.Dynamic.literal(Capacity = Capacity.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any], VisibilityConfig = VisibilityConfig.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRuleGroupRequest]
   }
+  @scala.inline
+  implicit class CreateRuleGroupRequestOps[Self <: CreateRuleGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacity(value: CapacityUnit): Self = this.set("Capacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVisibilityConfig(value: VisibilityConfig): Self = this.set("VisibilityConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: EntityDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: Rule*): Self = this.set("Rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: Rules): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("Rules", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

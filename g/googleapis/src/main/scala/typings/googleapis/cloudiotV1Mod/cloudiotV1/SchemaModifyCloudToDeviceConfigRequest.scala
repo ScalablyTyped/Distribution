@@ -25,11 +25,30 @@ trait SchemaModifyCloudToDeviceConfigRequest extends js.Object {
 
 object SchemaModifyCloudToDeviceConfigRequest {
   @scala.inline
-  def apply(binaryData: String = null, versionToUpdate: String = null): SchemaModifyCloudToDeviceConfigRequest = {
+  def apply(): SchemaModifyCloudToDeviceConfigRequest = {
     val __obj = js.Dynamic.literal()
-    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData.asInstanceOf[js.Any])
-    if (versionToUpdate != null) __obj.updateDynamic("versionToUpdate")(versionToUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaModifyCloudToDeviceConfigRequest]
   }
+  @scala.inline
+  implicit class SchemaModifyCloudToDeviceConfigRequestOps[Self <: SchemaModifyCloudToDeviceConfigRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinaryData(value: String): Self = this.set("binaryData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinaryData: Self = this.set("binaryData", js.undefined)
+    @scala.inline
+    def setVersionToUpdate(value: String): Self = this.set("versionToUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionToUpdate: Self = this.set("versionToUpdate", js.undefined)
+  }
+  
 }
 

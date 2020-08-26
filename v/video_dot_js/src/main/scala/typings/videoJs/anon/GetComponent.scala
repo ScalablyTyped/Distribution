@@ -54,7 +54,7 @@ Instantiable1[/* player */ Player, Component]
      with Instantiable2[/* player */ Player, /* options */ ComponentOptions, Component]
      with Instantiable3[
       /* player */ Player, 
-      /* options */ ComponentOptions, 
+      js.UndefOr[/* options */ ComponentOptions], 
       /* ready */ ReadyCallback, 
       Component
     ] {

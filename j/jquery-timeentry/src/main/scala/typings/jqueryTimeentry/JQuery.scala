@@ -15,10 +15,15 @@ trait JQuery extends js.Object {
     * initialize TimeEntry plugin
     */
   def timeEntry(): js.Any = js.native
+  def timeEntry(configOrFnName: js.UndefOr[scala.Nothing], nameOrOption: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
+  def timeEntry(configOrFnName: js.UndefOr[scala.Nothing], nameOrOption: js.Any): js.Any = js.native
+  def timeEntry(configOrFnName: js.UndefOr[scala.Nothing], nameOrOption: js.Any, value: js.Any): js.Any = js.native
   def timeEntry(configOrFnName: String): js.Any = js.native
+  def timeEntry(configOrFnName: String, nameOrOption: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
   def timeEntry(configOrFnName: String, nameOrOption: js.Any): js.Any = js.native
   def timeEntry(configOrFnName: String, nameOrOption: js.Any, value: js.Any): js.Any = js.native
   def timeEntry(configOrFnName: ITimeEntryOptions): js.Any = js.native
+  def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
   def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: js.Any): js.Any = js.native
   def timeEntry(configOrFnName: ITimeEntryOptions, nameOrOption: js.Any, value: js.Any): js.Any = js.native
 }

@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Create a new animation node.
   */
+@js.native
 trait Node extends js.Object
 

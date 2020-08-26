@@ -16,6 +16,7 @@ trait SubAPI extends js.Object {
   def jumpToComponent(direction: Direction): Unit = js.native
   def jumpToStory(direction: Direction): Unit = js.native
   def selectStory(kindOrId: String): Unit = js.native
+  def selectStory(kindOrId: String, story: js.UndefOr[scala.Nothing], obj: js.Any): Unit = js.native
   def selectStory(kindOrId: String, story: String): Unit = js.native
   def selectStory(kindOrId: String, story: String, obj: js.Any): Unit = js.native
   def setStories(stories: StoriesRaw): Unit = js.native

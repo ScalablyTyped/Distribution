@@ -12,7 +12,7 @@ A set of React UI components which enforce Pinterest’s design language
 | Keywords           | - |
 | # releases         | 77 |
 | # dependents       | 2 |
-| # downloads        | 50720 |
+| # downloads        | 50428 |
 | # stars            | 0 |
 
 ## Links

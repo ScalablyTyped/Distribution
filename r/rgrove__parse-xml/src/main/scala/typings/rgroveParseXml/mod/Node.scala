@@ -19,39 +19,27 @@ trait Node extends js.Object
 
 object Node {
   @scala.inline
-  def CData(text: String, `type`: cdata, parent: NodeBase = null): Node = {
+  def CData(text: String, `type`: cdata): Node = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def Comment(content: String, `type`: comment, parent: NodeBase = null): Node = {
+  def Comment(content: String, `type`: comment): Node = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def Element(
-    attributes: StringDictionary[String],
-    children: js.Array[NodeBase],
-    name: String,
-    `type`: element,
-    parent: NodeBase = null,
-    preserveWhitespace: String = null
-  ): Node = {
+  def Element(attributes: StringDictionary[String], children: js.Array[NodeBase], name: String, `type`: element): Node = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def Text(text: String, `type`: text, parent: NodeBase = null): Node = {
+  def Text(text: String, `type`: text): Node = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

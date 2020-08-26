@@ -12,7 +12,7 @@ Read from and write to a JSON file, minimizing diffs and preserving formatting.
 | Keywords           | json, json file, formatting, read, write, promise, promiseback |
 | # releases         | 2 |
 | # dependents       | 27 |
-| # downloads        | 401457 |
+| # downloads        | 398307 |
 | # stars            | 5 |
 
 ## Links

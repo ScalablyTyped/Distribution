@@ -26,16 +26,9 @@ object testRepositoryTriggersCommandMod extends js.Object {
           Readable
         ] {
     def this(input: TestRepositoryTriggersInput) = this()
-    /* CompleteClass */
-    override val input: TestRepositoryTriggersInput = js.native
     val middlewareStack: MiddlewareStack[TestRepositoryTriggersInput, TestRepositoryTriggersOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[TestRepositoryTriggersInput, TestRepositoryTriggersOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[TestRepositoryTriggersInput, TestRepositoryTriggersOutput] = js.native
   }

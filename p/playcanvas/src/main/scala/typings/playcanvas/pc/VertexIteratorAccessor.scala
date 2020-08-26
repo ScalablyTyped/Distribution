@@ -87,7 +87,11 @@ trait VertexIteratorAccessor extends js.Object {
     * @param [d] - The fourth component value (if applicable).
     */
   def set(a: Double): Unit = js.native
+  def set(a: Double, b: js.UndefOr[scala.Nothing], c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
+  def set(a: Double, b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
+  def set(a: Double, b: js.UndefOr[scala.Nothing], c: Double, d: Double): Unit = js.native
   def set(a: Double, b: Double): Unit = js.native
+  def set(a: Double, b: Double, c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
   def set(a: Double, b: Double, c: Double): Unit = js.native
   def set(a: Double, b: Double, c: Double, d: Double): Unit = js.native
   /**

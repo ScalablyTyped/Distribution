@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceMapMapViewIterator extends IIterator[IKeyValuePair[String, ResourceMap]]
 
 object ResourceMapMapViewIterator {

@@ -2,15 +2,13 @@ package typings.androiduix.android.view
 
 import typings.androiduix.android.content.Context
 import typings.androiduix.android.view.Menu_.Callback
-import typings.androiduix.java.util.ArrayList
+import typings.androiduix.java_.util.ArrayList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.Menu")
 @js.native
-class Menu__ protected () extends js.Object {
-  def this(context: Context) = this()
+trait Menu__ extends js.Object {
   var mCallback: js.Any = js.native
   var mContext: js.Any = js.native
   var mItems: js.Any = js.native

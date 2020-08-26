@@ -4,27 +4,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RTCPeerConnectionIceEventInit extends EventInit {
-  var candidate: js.UndefOr[RTCIceCandidate | Null] = js.undefined
-  var url: js.UndefOr[java.lang.String | Null] = js.undefined
+  var candidate: js.UndefOr[RTCIceCandidate | Null] = js.native
+  var url: js.UndefOr[java.lang.String | Null] = js.native
 }
 
 object RTCPeerConnectionIceEventInit {
   @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    candidate: js.UndefOr[Null | RTCIceCandidate] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    url: js.UndefOr[Null | java.lang.String] = js.undefined
-  ): RTCPeerConnectionIceEventInit = {
+  def apply(): RTCPeerConnectionIceEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(candidate)) __obj.updateDynamic("candidate")(candidate.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCPeerConnectionIceEventInit]
   }
+  @scala.inline
+  implicit class RTCPeerConnectionIceEventInitOps[Self <: RTCPeerConnectionIceEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCandidate(value: RTCIceCandidate): Self = this.set("candidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCandidate: Self = this.set("candidate", js.undefined)
+    @scala.inline
+    def setCandidateNull: Self = this.set("candidate", null)
+    @scala.inline
+    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUrlNull: Self = this.set("url", null)
+  }
+  
 }
 

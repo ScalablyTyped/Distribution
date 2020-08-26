@@ -49,26 +49,58 @@ trait SchemaGoogleApiServiceusageV1ServiceConfig extends js.Object {
 
 object SchemaGoogleApiServiceusageV1ServiceConfig {
   @scala.inline
-  def apply(
-    apis: js.Array[SchemaApi] = null,
-    authentication: SchemaAuthentication = null,
-    documentation: SchemaDocumentation = null,
-    endpoints: js.Array[SchemaEndpoint] = null,
-    name: String = null,
-    quota: SchemaQuota = null,
-    title: String = null,
-    usage: SchemaUsage = null
-  ): SchemaGoogleApiServiceusageV1ServiceConfig = {
+  def apply(): SchemaGoogleApiServiceusageV1ServiceConfig = {
     val __obj = js.Dynamic.literal()
-    if (apis != null) __obj.updateDynamic("apis")(apis.asInstanceOf[js.Any])
-    if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (quota != null) __obj.updateDynamic("quota")(quota.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleApiServiceusageV1ServiceConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleApiServiceusageV1ServiceConfigOps[Self <: SchemaGoogleApiServiceusageV1ServiceConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApisVarargs(value: SchemaApi*): Self = this.set("apis", js.Array(value :_*))
+    @scala.inline
+    def setApis(value: js.Array[SchemaApi]): Self = this.set("apis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApis: Self = this.set("apis", js.undefined)
+    @scala.inline
+    def setAuthentication(value: SchemaAuthentication): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthentication: Self = this.set("authentication", js.undefined)
+    @scala.inline
+    def setDocumentation(value: SchemaDocumentation): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    @scala.inline
+    def setEndpointsVarargs(value: SchemaEndpoint*): Self = this.set("endpoints", js.Array(value :_*))
+    @scala.inline
+    def setEndpoints(value: js.Array[SchemaEndpoint]): Self = this.set("endpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoints: Self = this.set("endpoints", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setQuota(value: SchemaQuota): Self = this.set("quota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuota: Self = this.set("quota", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUsage(value: SchemaUsage): Self = this.set("usage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsage: Self = this.set("usage", js.undefined)
+  }
+  
 }
 

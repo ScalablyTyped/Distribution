@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TabBar[T /* <: Route */]
   extends Component[Props[T], State, js.Any] {
+  var cancelNextFrameCb: js.Any = js.native
   var getComputedTabWidth: js.Any = js.native
   var getFlattenedTabWidth: js.Any = js.native
   var getMaxScrollDistance: js.Any = js.native
@@ -24,5 +25,7 @@ trait TabBar[T /* <: Route */]
   var scrollView: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MTabBar(prevProps: Props[T], prevState: State): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MTabBar(): Unit = js.native
 }
 

@@ -4,51 +4,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PopupWindowProperties extends js.Object {
   /** Popup dimension for a creative. This is a read-only field. Applicable to the following creative types: all RICH_MEDIA and all VPAID */
-  var dimension: js.UndefOr[Size] = js.undefined
+  var dimension: js.UndefOr[Size] = js.native
   /** Upper-left corner coordinates of the popup window. Applicable if positionType is COORDINATES. */
-  var offset: js.UndefOr[OffsetPosition] = js.undefined
+  var offset: js.UndefOr[OffsetPosition] = js.native
   /** Popup window position either centered or at specific coordinate. */
-  var positionType: js.UndefOr[String] = js.undefined
+  var positionType: js.UndefOr[String] = js.native
   /** Whether to display the browser address bar. */
-  var showAddressBar: js.UndefOr[Boolean] = js.undefined
+  var showAddressBar: js.UndefOr[Boolean] = js.native
   /** Whether to display the browser menu bar. */
-  var showMenuBar: js.UndefOr[Boolean] = js.undefined
+  var showMenuBar: js.UndefOr[Boolean] = js.native
   /** Whether to display the browser scroll bar. */
-  var showScrollBar: js.UndefOr[Boolean] = js.undefined
+  var showScrollBar: js.UndefOr[Boolean] = js.native
   /** Whether to display the browser status bar. */
-  var showStatusBar: js.UndefOr[Boolean] = js.undefined
+  var showStatusBar: js.UndefOr[Boolean] = js.native
   /** Whether to display the browser tool bar. */
-  var showToolBar: js.UndefOr[Boolean] = js.undefined
+  var showToolBar: js.UndefOr[Boolean] = js.native
   /** Title of popup window. */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
 }
 
 object PopupWindowProperties {
   @scala.inline
-  def apply(
-    dimension: Size = null,
-    offset: OffsetPosition = null,
-    positionType: String = null,
-    showAddressBar: js.UndefOr[Boolean] = js.undefined,
-    showMenuBar: js.UndefOr[Boolean] = js.undefined,
-    showScrollBar: js.UndefOr[Boolean] = js.undefined,
-    showStatusBar: js.UndefOr[Boolean] = js.undefined,
-    showToolBar: js.UndefOr[Boolean] = js.undefined,
-    title: String = null
-  ): PopupWindowProperties = {
+  def apply(): PopupWindowProperties = {
     val __obj = js.Dynamic.literal()
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (positionType != null) __obj.updateDynamic("positionType")(positionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAddressBar)) __obj.updateDynamic("showAddressBar")(showAddressBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMenuBar)) __obj.updateDynamic("showMenuBar")(showMenuBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showScrollBar)) __obj.updateDynamic("showScrollBar")(showScrollBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showStatusBar)) __obj.updateDynamic("showStatusBar")(showStatusBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolBar)) __obj.updateDynamic("showToolBar")(showToolBar.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupWindowProperties]
   }
+  @scala.inline
+  implicit class PopupWindowPropertiesOps[Self <: PopupWindowProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimension(value: Size): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension: Self = this.set("dimension", js.undefined)
+    @scala.inline
+    def setOffset(value: OffsetPosition): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPositionType(value: String): Self = this.set("positionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionType: Self = this.set("positionType", js.undefined)
+    @scala.inline
+    def setShowAddressBar(value: Boolean): Self = this.set("showAddressBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAddressBar: Self = this.set("showAddressBar", js.undefined)
+    @scala.inline
+    def setShowMenuBar(value: Boolean): Self = this.set("showMenuBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMenuBar: Self = this.set("showMenuBar", js.undefined)
+    @scala.inline
+    def setShowScrollBar(value: Boolean): Self = this.set("showScrollBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowScrollBar: Self = this.set("showScrollBar", js.undefined)
+    @scala.inline
+    def setShowStatusBar(value: Boolean): Self = this.set("showStatusBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowStatusBar: Self = this.set("showStatusBar", js.undefined)
+    @scala.inline
+    def setShowToolBar(value: Boolean): Self = this.set("showToolBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowToolBar: Self = this.set("showToolBar", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

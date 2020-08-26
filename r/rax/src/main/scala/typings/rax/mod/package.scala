@@ -17,7 +17,7 @@ package object mod {
     * a single argument, which is useful for many top-level API defs.
     * See https://github.com/Microsoft/TypeScript/issues/7234 for more info.
     */
-  type ClassType[P, T /* <: typings.rax.mod.Component[P, typings.rax.mod.ComponentState, _] */, C /* <: typings.rax.mod.ComponentClass[P, typings.rax.mod.ComponentState] */] = C with (org.scalablytyped.runtime.Instantiable2[/* props */ P, js.UndefOr[/* context */ js.Any], T])
+  type ClassType[P, T /* <: typings.rax.mod.Component[P, typings.rax.mod.ComponentState, _] */, C /* <: typings.rax.mod.ComponentClass[P, typings.rax.mod.ComponentState] */] = C with (org.scalablytyped.runtime.Instantiable2[/* props */ P, /* context */ js.UndefOr[js.Any], T])
   type ClassicElement[P] = typings.rax.mod.CElement[P, typings.rax.mod.ClassicComponent[P, typings.rax.mod.ComponentState]]
   type ClassicFactory[P] = typings.rax.mod.CFactory[P, typings.rax.mod.ClassicComponent[P, typings.rax.mod.ComponentState]]
   type ClipboardEventHandler[T] = typings.rax.mod.EventHandler[typings.rax.mod.ClipboardEvent[T]]
@@ -211,7 +211,7 @@ package object mod {
   type PointerEventHandler[T] = typings.rax.mod.EventHandler[typings.rax.mod.PointerEvent[T]]
   type PropsWithChildren[P] = P with typings.rax.anon.Children
   /** Ensures that the props do not include string ref, which cannot be forwarded */
-  type PropsWithRef[P] = P | (typings.rax.mod.PropsWithoutRef[P] with typings.rax.anon.RefExclude)
+  type PropsWithRef[P] = P | (typings.rax.mod.PropsWithoutRef[P] with typings.rax.anon.`0`)
   /** Ensures that the props do not include ref at all */
   type PropsWithoutRef[P] = P | (typings.std.Pick[P, typings.std.Exclude[/* keyof P */ java.lang.String, typings.rax.raxStrings.ref]])
   type Provider[T] = typings.rax.mod.ProviderExoticComponent[typings.rax.mod.ProviderProps[T]]

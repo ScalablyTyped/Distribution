@@ -11,8 +11,8 @@ jQuery 1.8.2 deferred lib for nodeJS.
 | Full name          | jquery-deferred |
 | Keywords           | deferred |
 | # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 3167311 |
+| # dependents       | 52 |
+| # downloads        | 3304109 |
 | # stars            | 0 |
 
 ## Links

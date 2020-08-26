@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.istanbulReports.istanbulReportsStrings.clover
   - typings.istanbulReports.istanbulReportsStrings.cobertura
+  - typings.istanbulReports.istanbulReportsStrings.`html-spa`
   - typings.istanbulReports.istanbulReportsStrings.html
   - typings.istanbulReports.istanbulReportsStrings.json
   - typings.istanbulReports.istanbulReportsStrings.`json-summary`

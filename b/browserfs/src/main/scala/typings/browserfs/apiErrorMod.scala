@@ -26,19 +26,12 @@ object apiErrorMod extends js.Object {
       */
     def this(`type`: ErrorCode) = this()
     def this(`type`: ErrorCode, message: String) = this()
+    def this(`type`: ErrorCode, message: js.UndefOr[scala.Nothing], path: String) = this()
     def this(`type`: ErrorCode, message: String, path: String) = this()
     @JSName("code")
     var code_ApiError: String = js.native
     @JSName("errno")
     var errno_ApiError: ErrorCode = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    @JSName("path")
-    var path_ApiError: js.UndefOr[String] = js.native
-    @JSName("stack")
-    var stack_ApiError: js.UndefOr[String] = js.native
     @JSName("syscall")
     var syscall_ApiError: String = js.native
     /**
@@ -50,6 +43,7 @@ object apiErrorMod extends js.Object {
       * Writes the API error into a buffer.
       */
     def writeToBuffer(): Buffer = js.native
+    def writeToBuffer(buffer: js.UndefOr[scala.Nothing], i: Double): Buffer = js.native
     def writeToBuffer(buffer: Buffer): Buffer = js.native
     def writeToBuffer(buffer: Buffer, i: Double): Buffer = js.native
   }

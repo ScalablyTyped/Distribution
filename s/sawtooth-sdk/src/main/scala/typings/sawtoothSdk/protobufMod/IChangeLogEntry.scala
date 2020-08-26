@@ -6,27 +6,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IChangeLogEntry extends js.Object {
   /** ChangeLogEntry additions */
-  var additions: js.UndefOr[js.Array[Uint8Array] | Null] = js.undefined
+  var additions: js.UndefOr[js.Array[Uint8Array] | Null] = js.native
   /** ChangeLogEntry parent */
-  var parent: js.UndefOr[Uint8Array | Null] = js.undefined
+  var parent: js.UndefOr[Uint8Array | Null] = js.native
   /** ChangeLogEntry successors */
-  var successors: js.UndefOr[js.Array[ISuccessor] | Null] = js.undefined
+  var successors: js.UndefOr[js.Array[ISuccessor] | Null] = js.native
 }
 
 object IChangeLogEntry {
   @scala.inline
-  def apply(
-    additions: js.UndefOr[Null | js.Array[Uint8Array]] = js.undefined,
-    parent: js.UndefOr[Null | Uint8Array] = js.undefined,
-    successors: js.UndefOr[Null | js.Array[ISuccessor]] = js.undefined
-  ): IChangeLogEntry = {
+  def apply(): IChangeLogEntry = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(additions)) __obj.updateDynamic("additions")(additions.asInstanceOf[js.Any])
-    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(successors)) __obj.updateDynamic("successors")(successors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangeLogEntry]
   }
+  @scala.inline
+  implicit class IChangeLogEntryOps[Self <: IChangeLogEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionsVarargs(value: Uint8Array*): Self = this.set("additions", js.Array(value :_*))
+    @scala.inline
+    def setAdditions(value: js.Array[Uint8Array]): Self = this.set("additions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditions: Self = this.set("additions", js.undefined)
+    @scala.inline
+    def setAdditionsNull: Self = this.set("additions", null)
+    @scala.inline
+    def setParent(value: Uint8Array): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setParentNull: Self = this.set("parent", null)
+    @scala.inline
+    def setSuccessorsVarargs(value: ISuccessor*): Self = this.set("successors", js.Array(value :_*))
+    @scala.inline
+    def setSuccessors(value: js.Array[ISuccessor]): Self = this.set("successors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessors: Self = this.set("successors", js.undefined)
+    @scala.inline
+    def setSuccessorsNull: Self = this.set("successors", null)
+  }
+  
 }
 

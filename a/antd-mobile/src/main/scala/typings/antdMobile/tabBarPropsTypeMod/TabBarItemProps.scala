@@ -5,41 +5,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabBarItemProps extends js.Object {
-  var badge: js.UndefOr[String | Double] = js.undefined
-  var dot: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[TabIcon] = js.undefined
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var selected: js.UndefOr[Boolean] = js.undefined
-  var selectedIcon: js.UndefOr[TabIcon] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var title: String
+  var badge: js.UndefOr[String | Double] = js.native
+  var dot: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[TabIcon] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[Boolean] = js.native
+  var selectedIcon: js.UndefOr[TabIcon] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var title: String = js.native
 }
 
 object TabBarItemProps {
   @scala.inline
-  def apply(
-    title: String,
-    badge: String | Double = null,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    icon: TabIcon = null,
-    onPress: () => Unit = null,
-    prefixCls: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    selectedIcon: TabIcon = null,
-    style: CSSProperties = null
-  ): TabBarItemProps = {
+  def apply(title: String): TabBarItemProps = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarItemProps]
   }
+  @scala.inline
+  implicit class TabBarItemPropsOps[Self <: TabBarItemProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBadge(value: String | Double): Self = this.set("badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("badge", js.undefined)
+    @scala.inline
+    def setDot(value: Boolean): Self = this.set("dot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDot: Self = this.set("dot", js.undefined)
+    @scala.inline
+    def setIcon(value: TabIcon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setSelectedIcon(value: TabIcon): Self = this.set("selectedIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedIcon: Self = this.set("selectedIcon", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

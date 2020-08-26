@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SuspendingOperation extends ISuspendingOperation
 
 object SuspendingOperation {

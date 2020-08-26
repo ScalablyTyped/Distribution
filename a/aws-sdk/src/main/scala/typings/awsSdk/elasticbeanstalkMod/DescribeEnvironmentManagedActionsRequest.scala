@@ -22,12 +22,34 @@ trait DescribeEnvironmentManagedActionsRequest extends js.Object {
 
 object DescribeEnvironmentManagedActionsRequest {
   @scala.inline
-  def apply(EnvironmentId: String = null, EnvironmentName: String = null, Status: ActionStatus = null): DescribeEnvironmentManagedActionsRequest = {
+  def apply(): DescribeEnvironmentManagedActionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (EnvironmentId != null) __obj.updateDynamic("EnvironmentId")(EnvironmentId.asInstanceOf[js.Any])
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEnvironmentManagedActionsRequest]
   }
+  @scala.inline
+  implicit class DescribeEnvironmentManagedActionsRequestOps[Self <: DescribeEnvironmentManagedActionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnvironmentId(value: String): Self = this.set("EnvironmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentId: Self = this.set("EnvironmentId", js.undefined)
+    @scala.inline
+    def setEnvironmentName(value: String): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    @scala.inline
+    def setStatus(value: ActionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

@@ -23,34 +23,72 @@ trait HiddenJsProps extends js.Object {
 
 object HiddenJsProps {
   @scala.inline
-  def apply(
-    initialWidth: Breakpoint = null,
-    lgDown: js.UndefOr[Boolean] = js.undefined,
-    lgUp: js.UndefOr[Boolean] = js.undefined,
-    mdDown: js.UndefOr[Boolean] = js.undefined,
-    mdUp: js.UndefOr[Boolean] = js.undefined,
-    only: Breakpoint | js.Array[Breakpoint] = null,
-    smDown: js.UndefOr[Boolean] = js.undefined,
-    smUp: js.UndefOr[Boolean] = js.undefined,
-    xlDown: js.UndefOr[Boolean] = js.undefined,
-    xlUp: js.UndefOr[Boolean] = js.undefined,
-    xsDown: js.UndefOr[Boolean] = js.undefined,
-    xsUp: js.UndefOr[Boolean] = js.undefined
-  ): HiddenJsProps = {
+  def apply(): HiddenJsProps = {
     val __obj = js.Dynamic.literal()
-    if (initialWidth != null) __obj.updateDynamic("initialWidth")(initialWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgDown)) __obj.updateDynamic("lgDown")(lgDown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgUp)) __obj.updateDynamic("lgUp")(lgUp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdDown)) __obj.updateDynamic("mdDown")(mdDown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdUp)) __obj.updateDynamic("mdUp")(mdUp.get.asInstanceOf[js.Any])
-    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (!js.isUndefined(smDown)) __obj.updateDynamic("smDown")(smDown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smUp)) __obj.updateDynamic("smUp")(smUp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xlDown)) __obj.updateDynamic("xlDown")(xlDown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xlUp)) __obj.updateDynamic("xlUp")(xlUp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsDown)) __obj.updateDynamic("xsDown")(xsDown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsUp)) __obj.updateDynamic("xsUp")(xsUp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HiddenJsProps]
   }
+  @scala.inline
+  implicit class HiddenJsPropsOps[Self <: HiddenJsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitialWidth(value: Breakpoint): Self = this.set("initialWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialWidth: Self = this.set("initialWidth", js.undefined)
+    @scala.inline
+    def setLgDown(value: Boolean): Self = this.set("lgDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLgDown: Self = this.set("lgDown", js.undefined)
+    @scala.inline
+    def setLgUp(value: Boolean): Self = this.set("lgUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLgUp: Self = this.set("lgUp", js.undefined)
+    @scala.inline
+    def setMdDown(value: Boolean): Self = this.set("mdDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMdDown: Self = this.set("mdDown", js.undefined)
+    @scala.inline
+    def setMdUp(value: Boolean): Self = this.set("mdUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMdUp: Self = this.set("mdUp", js.undefined)
+    @scala.inline
+    def setOnlyVarargs(value: Breakpoint*): Self = this.set("only", js.Array(value :_*))
+    @scala.inline
+    def setOnly(value: Breakpoint | js.Array[Breakpoint]): Self = this.set("only", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnly: Self = this.set("only", js.undefined)
+    @scala.inline
+    def setSmDown(value: Boolean): Self = this.set("smDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmDown: Self = this.set("smDown", js.undefined)
+    @scala.inline
+    def setSmUp(value: Boolean): Self = this.set("smUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmUp: Self = this.set("smUp", js.undefined)
+    @scala.inline
+    def setXlDown(value: Boolean): Self = this.set("xlDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXlDown: Self = this.set("xlDown", js.undefined)
+    @scala.inline
+    def setXlUp(value: Boolean): Self = this.set("xlUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXlUp: Self = this.set("xlUp", js.undefined)
+    @scala.inline
+    def setXsDown(value: Boolean): Self = this.set("xsDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsDown: Self = this.set("xsDown", js.undefined)
+    @scala.inline
+    def setXsUp(value: Boolean): Self = this.set("xsUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsUp: Self = this.set("xsUp", js.undefined)
+  }
+  
 }
 

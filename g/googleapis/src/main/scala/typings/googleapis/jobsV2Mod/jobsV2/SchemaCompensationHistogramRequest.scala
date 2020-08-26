@@ -24,11 +24,30 @@ trait SchemaCompensationHistogramRequest extends js.Object {
 
 object SchemaCompensationHistogramRequest {
   @scala.inline
-  def apply(bucketingOption: SchemaNumericBucketingOption = null, `type`: String = null): SchemaCompensationHistogramRequest = {
+  def apply(): SchemaCompensationHistogramRequest = {
     val __obj = js.Dynamic.literal()
-    if (bucketingOption != null) __obj.updateDynamic("bucketingOption")(bucketingOption.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompensationHistogramRequest]
   }
+  @scala.inline
+  implicit class SchemaCompensationHistogramRequestOps[Self <: SchemaCompensationHistogramRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketingOption(value: SchemaNumericBucketingOption): Self = this.set("bucketingOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketingOption: Self = this.set("bucketingOption", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

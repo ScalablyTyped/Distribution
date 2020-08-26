@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * indicating incompleteness.Interactive: When activating a {@link RoadmapItem} (see {@link RoadmapItem} ) the information about which Item has been
   * selected is passed over when an itemlistener has been registered at the control.
   */
+@js.native
 trait UnoControlRoadmap
   extends XControl
      with XWindow

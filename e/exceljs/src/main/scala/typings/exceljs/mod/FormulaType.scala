@@ -1,25 +1,35 @@
 package typings.exceljs.mod
 
-import typings.exceljs.exceljsNumbers.`0`
-import typings.exceljs.exceljsNumbers.`1`
-import typings.exceljs.exceljsNumbers.`2`
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Rewritten from type alias, can be one of: 
-  - typings.exceljs.exceljsNumbers.`0`
-  - typings.exceljs.exceljsNumbers.`1`
-  - typings.exceljs.exceljsNumbers.`2`
-*/
-trait FormulaType extends js.Object
+@js.native
+sealed trait FormulaType extends js.Object
 
-object FormulaType {
-  @scala.inline
-  def Master: `1` = 1.asInstanceOf[`1`]
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
-  @scala.inline
-  def Shared: `2` = 2.asInstanceOf[`2`]
+@JSImport("exceljs", "FormulaType")
+@js.native
+object FormulaType extends js.Object {
+  @js.native
+  sealed trait Master extends FormulaType
+  
+  @js.native
+  sealed trait None extends FormulaType
+  
+  @js.native
+  sealed trait Shared extends FormulaType
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[FormulaType with Double] = js.native
+  /* 1 */ @js.native
+  object Master extends TopLevel[Master with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object Shared extends TopLevel[Shared with Double]
+  
 }
 

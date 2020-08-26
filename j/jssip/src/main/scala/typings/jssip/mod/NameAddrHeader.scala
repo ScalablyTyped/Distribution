@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class NameAddrHeader protected () extends js.Object {
   def this(uri: URI) = this()
   def this(uri: URI, display_name: String) = this()
+  def this(uri: URI, display_name: js.UndefOr[scala.Nothing], parameters: StringDictionary[String]) = this()
   def this(uri: URI, display_name: String, parameters: StringDictionary[String]) = this()
   var display_name: String = js.native
   var uri: URI = js.native

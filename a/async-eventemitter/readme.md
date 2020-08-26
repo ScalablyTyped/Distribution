@@ -11,8 +11,8 @@ Just like EventEmitter, but with support for callbacks and interuption of the li
 | Full name          | async-eventemitter |
 | Keywords           | event, async, eventemitter, callback |
 | # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 1145696 |
+| # dependents       | 35 |
+| # downloads        | 1168721 |
 | # stars            | 1 |
 
 ## Links

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
+@js.native
 trait PlusNativeUIPickDateOption extends js.Object {
   /**
     * 日期选择对话框默认显示的日期
@@ -17,7 +18,7 @@ trait PlusNativeUIPickDateOption extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[Date] = js.native
   /**
     * 日期选择对话框可选择的最大日期
     * Date类型对象，如果未设置可选择的最大日期，则使用系统默认可选择的最大日期值。
@@ -25,14 +26,14 @@ trait PlusNativeUIPickDateOption extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var maxDate: js.UndefOr[Date] = js.undefined
+  var maxDate: js.UndefOr[Date] = js.native
   /**
     * 日期选择对话框可选择的最小日期
     * Date类型对象，如果未设置可选择的最小日期，则使用系统默认可选择的最小日期值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var minDate: js.UndefOr[Date] = js.undefined
+  var minDate: js.UndefOr[Date] = js.native
   /**
     * 时间选择对话框弹出指示区域
     * JSON类型对象，格式如{top:10;left:10;width:200;height:200;}，所有值为像素值，其值为相对于容器Webview的位置。
@@ -40,32 +41,54 @@ trait PlusNativeUIPickDateOption extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var popover: js.UndefOr[js.Any] = js.undefined
+  var popover: js.UndefOr[js.Any] = js.native
   /**
     * 日期选择对话框显示的标题
     * 如果未设置标题，则默认显示标题为当前选择的日期。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
 }
 
 object PlusNativeUIPickDateOption {
   @scala.inline
-  def apply(
-    date: Date = null,
-    maxDate: Date = null,
-    minDate: Date = null,
-    popover: js.Any = null,
-    title: String = null
-  ): PlusNativeUIPickDateOption = {
+  def apply(): PlusNativeUIPickDateOption = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIPickDateOption]
   }
+  @scala.inline
+  implicit class PlusNativeUIPickDateOptionOps[Self <: PlusNativeUIPickDateOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setMaxDate(value: Date): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    @scala.inline
+    def setMinDate(value: Date): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    @scala.inline
+    def setPopover(value: js.Any): Self = this.set("popover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopover: Self = this.set("popover", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

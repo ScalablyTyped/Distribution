@@ -22,9 +22,14 @@ class Media protected () extends js.Object {
   def filename: String = js.native
   /**
     * Returns direct content URL for the media.
+    *
+    * This URL is impermanent, it will expire in several minutes and cannot be cached.
+    * If the URL becomes expired, you need to request a new one.
+    * Each call to this function produces a new temporary URL.
+    *
     * @returns {Promise<String>}
     */
-  def getContentUrl(): js.Promise[String] = js.native
+  def getContentTemporaryUrl(): js.Promise[String] = js.native
   def sid: String = js.native
   def size: Double = js.native
 }

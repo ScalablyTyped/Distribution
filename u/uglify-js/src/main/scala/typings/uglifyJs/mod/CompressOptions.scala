@@ -5,100 +5,101 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CompressOptions extends js.Object {
   /**
     * Replace `arguments[index]` with function parameter name whenever possible.
     * @default true
     */
-  var arguments: js.UndefOr[Boolean] = js.undefined
+  var arguments: js.UndefOr[Boolean] = js.native
   /**
     * Apply optimizations to assignment expressions
     * @default ture
     */
-  var assignments: js.UndefOr[Boolean] = js.undefined
+  var assignments: js.UndefOr[Boolean] = js.native
   /**
     * Various optimizations for boolean context, for example `!!a ? b : c → a ? b : c`
     * @default true
     */
-  var booleans: js.UndefOr[Boolean] = js.undefined
+  var booleans: js.UndefOr[Boolean] = js.native
   /**
     * Collapse single-use non-constant variables, side effects permitting.
     * @default true
     */
-  var collapse_vars: js.UndefOr[Boolean] = js.undefined
+  var collapse_vars: js.UndefOr[Boolean] = js.native
   /**
     * Apply certain optimizations to binary nodes, e.g. `!(a <= b) → a > b,` attempts to negate binary nodes, e.g. `a = !b && !c && !d && !e → a=!(b||c||d||e)` etc
     * @default true
     */
-  var comparisons: js.UndefOr[Boolean] = js.undefined
+  var comparisons: js.UndefOr[Boolean] = js.native
   /**
     * Apply optimizations for `if-s` and conditional expressions.
     * @default true
     */
-  var conditionals: js.UndefOr[Boolean] = js.undefined
+  var conditionals: js.UndefOr[Boolean] = js.native
   /**
     * Remove unreachable code
     * @default true
     */
-  var dead_code: js.UndefOr[Boolean] = js.undefined
+  var dead_code: js.UndefOr[Boolean] = js.native
   /**
     * remove redundant or non-standard directives
     * @default true
     */
-  var directives: js.UndefOr[Boolean] = js.undefined
+  var directives: js.UndefOr[Boolean] = js.native
   /**
     * Pass `true` to discard calls to console.* functions.
     * If you wish to drop a specific function call such as `console.info` and/or retain side effects from function
     * arguments after dropping the function call then use `pure_funcs` instead.
     * @default true
     */
-  var drop_console: js.UndefOr[Boolean] = js.undefined
+  var drop_console: js.UndefOr[Boolean] = js.native
   /**
     * Remove `debugger;` statements
     * @default true
     */
-  var drop_debugger: js.UndefOr[Boolean] = js.undefined
+  var drop_debugger: js.UndefOr[Boolean] = js.native
   /**
     * Attempt to evaluate constant expressions
     * @default true
     */
-  var evaluate: js.UndefOr[Boolean] = js.undefined
+  var evaluate: js.UndefOr[Boolean] = js.native
   /**
     * Pass `true` to preserve completion values from terminal statements without `return`, e.g. in bookmarklets.
     * @default false
     */
-  var expression: js.UndefOr[Boolean] = js.undefined
+  var expression: js.UndefOr[Boolean] = js.native
   /**
     * convert declarations from varto function whenever possible
     * @default true
     */
-  var functions: js.UndefOr[Boolean] = js.undefined
+  var functions: js.UndefOr[Boolean] = js.native
   /**
     * @default {}
     */
-  var global_defs: js.UndefOr[js.Object] = js.undefined
+  var global_defs: js.UndefOr[js.Object] = js.native
   /**
     * hoist function declarations
     * @default false
     */
-  var hoist_funs: js.UndefOr[Boolean] = js.undefined
+  var hoist_funs: js.UndefOr[Boolean] = js.native
   /**
     * Hoist properties from constant object and array literals into regular variables subject to a set of constraints.
     * For example: `var o={p:1, q:2}; f(o.p, o.q);` is converted to `f(1, 2);`. Note: `hoist_props` works best with mangle enabled,
     * the compress option passes set to 2 or higher, and the compress option toplevel enabled.
     * @default true
     */
-  var hoist_props: js.UndefOr[Boolean] = js.undefined
+  var hoist_props: js.UndefOr[Boolean] = js.native
   /**
     * Hoist var declarations (this is `false` by default because it seems to increase the size of the output in general)
     * @default false
     */
-  var hoist_vars: js.UndefOr[Boolean] = js.undefined
+  var hoist_vars: js.UndefOr[Boolean] = js.native
   /**
     * Optimizations for if/return and if/continue
     * @default true
     */
-  var if_return: js.UndefOr[Boolean] = js.undefined
+  var if_return: js.UndefOr[Boolean] = js.native
   /**
     * Inline calls to function with simple/return statement
     * - false -- same as `Disabled`
@@ -109,57 +110,57 @@ trait CompressOptions extends js.Object {
     * - true -- same as `WithArgumentsAndVariables`
     * @default true
     */
-  var `inline`: js.UndefOr[Boolean | InlineFunctions] = js.undefined
+  var `inline`: js.UndefOr[Boolean | InlineFunctions] = js.native
   /**
     * join consecutive `var` statements
     * @default true
     */
-  var join_vars: js.UndefOr[Boolean] = js.undefined
+  var join_vars: js.UndefOr[Boolean] = js.native
   /**
     * Prevents the compressor from discarding unused function arguments.
     * You need this for code which relies on `Function.length`
     * @default 'strict'
     */
-  var keep_fargs: js.UndefOr[strict | Boolean] = js.undefined
+  var keep_fargs: js.UndefOr[strict | Boolean] = js.native
   /**
     * Pass true to prevent the compressor from discarding function names.
     * Useful for code relying on `Function.prototype.name`.
     * @default false
     */
-  var keep_fnames: js.UndefOr[Boolean] = js.undefined
+  var keep_fnames: js.UndefOr[Boolean] = js.native
   /**
     * Pass true to prevent Infinity from being compressed into `1/0`, which may cause performance issues on `Chrome`
     * @default false
     */
-  var keep_infinity: js.UndefOr[Boolean] = js.undefined
+  var keep_infinity: js.UndefOr[Boolean] = js.native
   /**
     * Optimizations for `do`, `while` and `for` loops when we can statically determine the condition.
     * @default true
     */
-  var loops: js.UndefOr[Boolean] = js.undefined
+  var loops: js.UndefOr[Boolean] = js.native
   /**
     * negate `Immediately-Called Function Expressions` where the return value is discarded,
     * to avoid the parens that the code generator would insert.
     * @default true
     */
-  var negate_iife: js.UndefOr[Boolean] = js.undefined
+  var negate_iife: js.UndefOr[Boolean] = js.native
   /**
     * compact duplicate keys in object literals
     * @default true
     */
-  var objects: js.UndefOr[Boolean] = js.undefined
+  var objects: js.UndefOr[Boolean] = js.native
   /**
     * The maximum number of times to run compress.
     * In some cases more than one pass leads to further compressed code.
     * Keep in mind more passes will take more time.
     * @default 1
     */
-  var passes: js.UndefOr[Double] = js.undefined
+  var passes: js.UndefOr[Double] = js.native
   /**
     * Rewrite property access using the dot notation, for example `foo["bar"]` to `foo.bar`
     * @default true
     */
-  var properties: js.UndefOr[Boolean] = js.undefined
+  var properties: js.UndefOr[Boolean] = js.native
   /**
     * An array of names and UglifyJS will assume that those functions do not produce side effects.
     * DANGER: will not check if the name is redefined in scope.
@@ -170,7 +171,7 @@ trait CompressOptions extends js.Object {
     * implementation adds some overhead (compression will be slower).
     * @default null
     */
-  var pure_funcs: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var pure_funcs: js.UndefOr[js.Array[String] | Null] = js.native
   /**
     * If you pass true for this, UglifyJS will assume that object property access
     * (e.g. foo.bar or foo["bar"]) doesn't have any side effects.
@@ -178,19 +179,19 @@ trait CompressOptions extends js.Object {
     * i.e. not null or undefine
     * @default 'strict'
     */
-  var pure_getters: js.UndefOr[Boolean | strict] = js.undefined
+  var pure_getters: js.UndefOr[Boolean | strict] = js.native
   /**
     * Allows single-use functions to be inlined as function expressions when permissible allowing further optimization.
     * Enabled by default. Option depends on reduce_vars being enabled. Some code runs faster in the Chrome V8 engine if
     * this option is disabled. Does not negatively impact other major browsers.
     * @default true
     */
-  var reduce_funcs: js.UndefOr[Boolean] = js.undefined
+  var reduce_funcs: js.UndefOr[Boolean] = js.native
   /**
     * Improve optimization on variables assigned with and used as constant values.
     * @default true
     */
-  var reduce_vars: js.UndefOr[Boolean] = js.undefined
+  var reduce_vars: js.UndefOr[Boolean] = js.native
   /**
     * join consecutive simple statements using the comma operator.
     * May be set to a positive integer to specify the maximum number of
@@ -202,185 +203,297 @@ trait CompressOptions extends js.Object {
     * a value of 20 or less is recommended
     * @default true
     */
-  var sequences: js.UndefOr[Boolean] = js.undefined
+  var sequences: js.UndefOr[Boolean] = js.native
   /**
     * Pass false to disable potentially dropping functions marked as "pure".
     * @default true
     */
-  var side_effects: js.UndefOr[Boolean] = js.undefined
+  var side_effects: js.UndefOr[Boolean] = js.native
   /**
     * compact string concatenations
     * @default true
     */
-  var strings: js.UndefOr[Boolean] = js.undefined
+  var strings: js.UndefOr[Boolean] = js.native
   /**
     * De-duplicate and remove unreachable `switch` branches.
     * @default true
     */
-  var switches: js.UndefOr[Boolean] = js.undefined
+  var switches: js.UndefOr[Boolean] = js.native
   /**
     * Prevent specific toplevel functions and variables from unused removal
     * (can be array, comma-separated, RegExp or function. Implies toplevel)
     * @default null
     */
-  var top_retain: js.UndefOr[Boolean | Null] = js.undefined
+  var top_retain: js.UndefOr[Boolean | Null] = js.native
   /**
     * Drop unreferenced functions ("funcs") and/or variables ("vars") in the top level scope (false by default,
     * true to drop both unreferenced functions and variables)
     * @default false
     */
-  var toplevel: js.UndefOr[Boolean] = js.undefined
+  var toplevel: js.UndefOr[Boolean] = js.native
   /**
     * Transforms typeof foo == "undefined" into foo === void 0.
     * Note: recommend to set this value to false for IE10 and earlier versions due to known issues
     * @default true
     */
-  var typeofs: js.UndefOr[Boolean] = js.undefined
+  var typeofs: js.UndefOr[Boolean] = js.native
   /**
     * apply "unsafe" transformations (discussion below)
     * @default false
     */
-  var unsafe: js.UndefOr[Boolean] = js.undefined
+  var unsafe: js.UndefOr[Boolean] = js.native
   /**
     * Compress and mangle `Function(args, code)` when both args and code are string literals.
     * @default false
     */
-  var unsafe_Function: js.UndefOr[Boolean] = js.undefined
+  var unsafe_Function: js.UndefOr[Boolean] = js.native
   /**
     * Compress expressions like a `<= b` assuming none of the operands can be (coerced to) `NaN`.
     * @default false
     */
-  var unsafe_comps: js.UndefOr[Boolean] = js.undefined
+  var unsafe_comps: js.UndefOr[Boolean] = js.native
   /**
     * Optimize numerical expressions like `2 * x * 3` into `6 * x`,
     * which may give imprecise floating point results.
     * @default false
     */
-  var unsafe_math: js.UndefOr[Boolean] = js.undefined
+  var unsafe_math: js.UndefOr[Boolean] = js.native
   /**
     * Optimize expressions like `Array.prototype.slice.call(a)` into `[].slice.call(a)`
     * @default false
     */
-  var unsafe_proto: js.UndefOr[Boolean] = js.undefined
+  var unsafe_proto: js.UndefOr[Boolean] = js.native
   /**
     * Enable substitutions of variables with `RegExp` values the same way as if they are constants.
     * @default false
     */
-  var unsafe_regexp: js.UndefOr[Boolean] = js.undefined
+  var unsafe_regexp: js.UndefOr[Boolean] = js.native
   /**
     * substitute void 0 if there is a variable named undefined in scope
     * (variable name will be mangled, typically reduced to a single character)
     * @default false
     */
-  var unsafe_undefined: js.UndefOr[Boolean] = js.undefined
+  var unsafe_undefined: js.UndefOr[Boolean] = js.native
   /**
     * drop unreferenced functions and variables
     * (simple direct variable assignments do not count as references unless set to "keep_assign")
     * @default true
     */
-  var unused: js.UndefOr[Boolean] = js.undefined
+  var unused: js.UndefOr[Boolean] = js.native
 }
 
 object CompressOptions {
   @scala.inline
-  def apply(
-    arguments: js.UndefOr[Boolean] = js.undefined,
-    assignments: js.UndefOr[Boolean] = js.undefined,
-    booleans: js.UndefOr[Boolean] = js.undefined,
-    collapse_vars: js.UndefOr[Boolean] = js.undefined,
-    comparisons: js.UndefOr[Boolean] = js.undefined,
-    conditionals: js.UndefOr[Boolean] = js.undefined,
-    dead_code: js.UndefOr[Boolean] = js.undefined,
-    directives: js.UndefOr[Boolean] = js.undefined,
-    drop_console: js.UndefOr[Boolean] = js.undefined,
-    drop_debugger: js.UndefOr[Boolean] = js.undefined,
-    evaluate: js.UndefOr[Boolean] = js.undefined,
-    expression: js.UndefOr[Boolean] = js.undefined,
-    functions: js.UndefOr[Boolean] = js.undefined,
-    global_defs: js.Object = null,
-    hoist_funs: js.UndefOr[Boolean] = js.undefined,
-    hoist_props: js.UndefOr[Boolean] = js.undefined,
-    hoist_vars: js.UndefOr[Boolean] = js.undefined,
-    if_return: js.UndefOr[Boolean] = js.undefined,
-    `inline`: Boolean | InlineFunctions = null,
-    join_vars: js.UndefOr[Boolean] = js.undefined,
-    keep_fargs: strict | Boolean = null,
-    keep_fnames: js.UndefOr[Boolean] = js.undefined,
-    keep_infinity: js.UndefOr[Boolean] = js.undefined,
-    loops: js.UndefOr[Boolean] = js.undefined,
-    negate_iife: js.UndefOr[Boolean] = js.undefined,
-    objects: js.UndefOr[Boolean] = js.undefined,
-    passes: js.UndefOr[Double] = js.undefined,
-    properties: js.UndefOr[Boolean] = js.undefined,
-    pure_funcs: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    pure_getters: Boolean | strict = null,
-    reduce_funcs: js.UndefOr[Boolean] = js.undefined,
-    reduce_vars: js.UndefOr[Boolean] = js.undefined,
-    sequences: js.UndefOr[Boolean] = js.undefined,
-    side_effects: js.UndefOr[Boolean] = js.undefined,
-    strings: js.UndefOr[Boolean] = js.undefined,
-    switches: js.UndefOr[Boolean] = js.undefined,
-    top_retain: js.UndefOr[Null | Boolean] = js.undefined,
-    toplevel: js.UndefOr[Boolean] = js.undefined,
-    typeofs: js.UndefOr[Boolean] = js.undefined,
-    unsafe: js.UndefOr[Boolean] = js.undefined,
-    unsafe_Function: js.UndefOr[Boolean] = js.undefined,
-    unsafe_comps: js.UndefOr[Boolean] = js.undefined,
-    unsafe_math: js.UndefOr[Boolean] = js.undefined,
-    unsafe_proto: js.UndefOr[Boolean] = js.undefined,
-    unsafe_regexp: js.UndefOr[Boolean] = js.undefined,
-    unsafe_undefined: js.UndefOr[Boolean] = js.undefined,
-    unused: js.UndefOr[Boolean] = js.undefined
-  ): CompressOptions = {
+  def apply(): CompressOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arguments)) __obj.updateDynamic("arguments")(arguments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(assignments)) __obj.updateDynamic("assignments")(assignments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(booleans)) __obj.updateDynamic("booleans")(booleans.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapse_vars)) __obj.updateDynamic("collapse_vars")(collapse_vars.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(comparisons)) __obj.updateDynamic("comparisons")(comparisons.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(conditionals)) __obj.updateDynamic("conditionals")(conditionals.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dead_code)) __obj.updateDynamic("dead_code")(dead_code.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(directives)) __obj.updateDynamic("directives")(directives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drop_console)) __obj.updateDynamic("drop_console")(drop_console.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drop_debugger)) __obj.updateDynamic("drop_debugger")(drop_debugger.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(evaluate)) __obj.updateDynamic("evaluate")(evaluate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(functions)) __obj.updateDynamic("functions")(functions.get.asInstanceOf[js.Any])
-    if (global_defs != null) __obj.updateDynamic("global_defs")(global_defs.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoist_funs)) __obj.updateDynamic("hoist_funs")(hoist_funs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoist_props)) __obj.updateDynamic("hoist_props")(hoist_props.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoist_vars)) __obj.updateDynamic("hoist_vars")(hoist_vars.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(if_return)) __obj.updateDynamic("if_return")(if_return.get.asInstanceOf[js.Any])
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(join_vars)) __obj.updateDynamic("join_vars")(join_vars.get.asInstanceOf[js.Any])
-    if (keep_fargs != null) __obj.updateDynamic("keep_fargs")(keep_fargs.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_infinity)) __obj.updateDynamic("keep_infinity")(keep_infinity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loops)) __obj.updateDynamic("loops")(loops.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(negate_iife)) __obj.updateDynamic("negate_iife")(negate_iife.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(passes)) __obj.updateDynamic("passes")(passes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(properties)) __obj.updateDynamic("properties")(properties.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pure_funcs)) __obj.updateDynamic("pure_funcs")(pure_funcs.asInstanceOf[js.Any])
-    if (pure_getters != null) __obj.updateDynamic("pure_getters")(pure_getters.asInstanceOf[js.Any])
-    if (!js.isUndefined(reduce_funcs)) __obj.updateDynamic("reduce_funcs")(reduce_funcs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reduce_vars)) __obj.updateDynamic("reduce_vars")(reduce_vars.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sequences)) __obj.updateDynamic("sequences")(sequences.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(side_effects)) __obj.updateDynamic("side_effects")(side_effects.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strings)) __obj.updateDynamic("strings")(strings.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(switches)) __obj.updateDynamic("switches")(switches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(top_retain)) __obj.updateDynamic("top_retain")(top_retain.asInstanceOf[js.Any])
-    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeofs)) __obj.updateDynamic("typeofs")(typeofs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_Function)) __obj.updateDynamic("unsafe_Function")(unsafe_Function.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_comps)) __obj.updateDynamic("unsafe_comps")(unsafe_comps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_math)) __obj.updateDynamic("unsafe_math")(unsafe_math.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_proto)) __obj.updateDynamic("unsafe_proto")(unsafe_proto.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_regexp)) __obj.updateDynamic("unsafe_regexp")(unsafe_regexp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafe_undefined)) __obj.updateDynamic("unsafe_undefined")(unsafe_undefined.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unused)) __obj.updateDynamic("unused")(unused.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressOptions]
   }
+  @scala.inline
+  implicit class CompressOptionsOps[Self <: CompressOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArguments(value: Boolean): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("arguments", js.undefined)
+    @scala.inline
+    def setAssignments(value: Boolean): Self = this.set("assignments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignments: Self = this.set("assignments", js.undefined)
+    @scala.inline
+    def setBooleans(value: Boolean): Self = this.set("booleans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooleans: Self = this.set("booleans", js.undefined)
+    @scala.inline
+    def setCollapse_vars(value: Boolean): Self = this.set("collapse_vars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapse_vars: Self = this.set("collapse_vars", js.undefined)
+    @scala.inline
+    def setComparisons(value: Boolean): Self = this.set("comparisons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparisons: Self = this.set("comparisons", js.undefined)
+    @scala.inline
+    def setConditionals(value: Boolean): Self = this.set("conditionals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionals: Self = this.set("conditionals", js.undefined)
+    @scala.inline
+    def setDead_code(value: Boolean): Self = this.set("dead_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDead_code: Self = this.set("dead_code", js.undefined)
+    @scala.inline
+    def setDirectives(value: Boolean): Self = this.set("directives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectives: Self = this.set("directives", js.undefined)
+    @scala.inline
+    def setDrop_console(value: Boolean): Self = this.set("drop_console", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrop_console: Self = this.set("drop_console", js.undefined)
+    @scala.inline
+    def setDrop_debugger(value: Boolean): Self = this.set("drop_debugger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrop_debugger: Self = this.set("drop_debugger", js.undefined)
+    @scala.inline
+    def setEvaluate(value: Boolean): Self = this.set("evaluate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluate: Self = this.set("evaluate", js.undefined)
+    @scala.inline
+    def setExpression(value: Boolean): Self = this.set("expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("expression", js.undefined)
+    @scala.inline
+    def setFunctions(value: Boolean): Self = this.set("functions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctions: Self = this.set("functions", js.undefined)
+    @scala.inline
+    def setGlobal_defs(value: js.Object): Self = this.set("global_defs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobal_defs: Self = this.set("global_defs", js.undefined)
+    @scala.inline
+    def setHoist_funs(value: Boolean): Self = this.set("hoist_funs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoist_funs: Self = this.set("hoist_funs", js.undefined)
+    @scala.inline
+    def setHoist_props(value: Boolean): Self = this.set("hoist_props", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoist_props: Self = this.set("hoist_props", js.undefined)
+    @scala.inline
+    def setHoist_vars(value: Boolean): Self = this.set("hoist_vars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoist_vars: Self = this.set("hoist_vars", js.undefined)
+    @scala.inline
+    def setIf_return(value: Boolean): Self = this.set("if_return", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIf_return: Self = this.set("if_return", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean | InlineFunctions): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setJoin_vars(value: Boolean): Self = this.set("join_vars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoin_vars: Self = this.set("join_vars", js.undefined)
+    @scala.inline
+    def setKeep_fargs(value: strict | Boolean): Self = this.set("keep_fargs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeep_fargs: Self = this.set("keep_fargs", js.undefined)
+    @scala.inline
+    def setKeep_fnames(value: Boolean): Self = this.set("keep_fnames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeep_fnames: Self = this.set("keep_fnames", js.undefined)
+    @scala.inline
+    def setKeep_infinity(value: Boolean): Self = this.set("keep_infinity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeep_infinity: Self = this.set("keep_infinity", js.undefined)
+    @scala.inline
+    def setLoops(value: Boolean): Self = this.set("loops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoops: Self = this.set("loops", js.undefined)
+    @scala.inline
+    def setNegate_iife(value: Boolean): Self = this.set("negate_iife", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegate_iife: Self = this.set("negate_iife", js.undefined)
+    @scala.inline
+    def setObjects(value: Boolean): Self = this.set("objects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjects: Self = this.set("objects", js.undefined)
+    @scala.inline
+    def setPasses(value: Double): Self = this.set("passes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasses: Self = this.set("passes", js.undefined)
+    @scala.inline
+    def setProperties(value: Boolean): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setPure_funcsVarargs(value: String*): Self = this.set("pure_funcs", js.Array(value :_*))
+    @scala.inline
+    def setPure_funcs(value: js.Array[String]): Self = this.set("pure_funcs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePure_funcs: Self = this.set("pure_funcs", js.undefined)
+    @scala.inline
+    def setPure_funcsNull: Self = this.set("pure_funcs", null)
+    @scala.inline
+    def setPure_getters(value: Boolean | strict): Self = this.set("pure_getters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePure_getters: Self = this.set("pure_getters", js.undefined)
+    @scala.inline
+    def setReduce_funcs(value: Boolean): Self = this.set("reduce_funcs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReduce_funcs: Self = this.set("reduce_funcs", js.undefined)
+    @scala.inline
+    def setReduce_vars(value: Boolean): Self = this.set("reduce_vars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReduce_vars: Self = this.set("reduce_vars", js.undefined)
+    @scala.inline
+    def setSequences(value: Boolean): Self = this.set("sequences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequences: Self = this.set("sequences", js.undefined)
+    @scala.inline
+    def setSide_effects(value: Boolean): Self = this.set("side_effects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSide_effects: Self = this.set("side_effects", js.undefined)
+    @scala.inline
+    def setStrings(value: Boolean): Self = this.set("strings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrings: Self = this.set("strings", js.undefined)
+    @scala.inline
+    def setSwitches(value: Boolean): Self = this.set("switches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwitches: Self = this.set("switches", js.undefined)
+    @scala.inline
+    def setTop_retain(value: Boolean): Self = this.set("top_retain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop_retain: Self = this.set("top_retain", js.undefined)
+    @scala.inline
+    def setTop_retainNull: Self = this.set("top_retain", null)
+    @scala.inline
+    def setToplevel(value: Boolean): Self = this.set("toplevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToplevel: Self = this.set("toplevel", js.undefined)
+    @scala.inline
+    def setTypeofs(value: Boolean): Self = this.set("typeofs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeofs: Self = this.set("typeofs", js.undefined)
+    @scala.inline
+    def setUnsafe(value: Boolean): Self = this.set("unsafe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsafe: Self = this.set("unsafe", js.undefined)
+    @scala.inline
+    def setUnsafe_Function(value: Boolean): Self = this.set("unsafe_Function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsafe_Function: Self = this.set("unsafe_Function", js.undefined)
+    @scala.inline
+    def setUnsafe_comps(value: Boolean): Self = this.set("unsafe_comps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsafe_comps: Self = this.set("unsafe_comps", js.undefined)
+    @scala.inline
+    def setUnsafe_math(value: Boolean): Self = this.set("unsafe_math", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsafe_math: Self = this.set("unsafe_math", js.undefined)
+    @scala.inline
+    def setUnsafe_proto(value: Boolean): Self = this.set("unsafe_proto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsafe_proto: Self = this.set("unsafe_proto", js.undefined)
+    @scala.inline
+    def setUnsafe_regexp(value: Boolean): Self = this.set("unsafe_regexp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsafe_regexp: Self = this.set("unsafe_regexp", js.undefined)
+    @scala.inline
+    def setUnsafe_undefined(value: Boolean): Self = this.set("unsafe_undefined", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsafe_undefined: Self = this.set("unsafe_undefined", js.undefined)
+    @scala.inline
+    def setUnused(value: Boolean): Self = this.set("unused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnused: Self = this.set("unused", js.undefined)
+  }
+  
 }
 

@@ -104,6 +104,7 @@ class connection protected () extends EventEmitter {
     * before terminating the underlying socket connection.
     */
   def close(): Unit = js.native
+  def close(reasonCode: js.UndefOr[scala.Nothing], description: String): Unit = js.native
   def close(reasonCode: Double): Unit = js.native
   def close(reasonCode: Double, description: String): Unit = js.native
   /**
@@ -111,7 +112,15 @@ class connection protected () extends EventEmitter {
     * waiting for a response. This should generally be used only in error conditions.
     */
   def drop(): Unit = js.native
+  def drop(
+    reasonCode: js.UndefOr[scala.Nothing],
+    description: js.UndefOr[scala.Nothing],
+    skipCloseFrame: Boolean
+  ): Unit = js.native
+  def drop(reasonCode: js.UndefOr[scala.Nothing], description: String): Unit = js.native
+  def drop(reasonCode: js.UndefOr[scala.Nothing], description: String, skipCloseFrame: Boolean): Unit = js.native
   def drop(reasonCode: Double): Unit = js.native
+  def drop(reasonCode: Double, description: js.UndefOr[scala.Nothing], skipCloseFrame: Boolean): Unit = js.native
   def drop(reasonCode: Double, description: String): Unit = js.native
   def drop(reasonCode: Double, description: String, skipCloseFrame: Boolean): Unit = js.native
   def fragmentAndSend(frame: frame): Unit = js.native
@@ -174,7 +183,23 @@ class connection protected () extends EventEmitter {
   def sendBytes(buffer: Buffer): Unit = js.native
   def sendBytes(buffer: Buffer, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   def sendCloseFrame(): Unit = js.native
+  def sendCloseFrame(
+    reasonCode: js.UndefOr[scala.Nothing],
+    reasonText: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
+  ): Unit = js.native
+  def sendCloseFrame(reasonCode: js.UndefOr[scala.Nothing], reasonText: String): Unit = js.native
+  def sendCloseFrame(
+    reasonCode: js.UndefOr[scala.Nothing],
+    reasonText: String,
+    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
+  ): Unit = js.native
   def sendCloseFrame(reasonCode: Double): Unit = js.native
+  def sendCloseFrame(
+    reasonCode: Double,
+    reasonText: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
+  ): Unit = js.native
   def sendCloseFrame(reasonCode: Double, reasonText: String): Unit = js.native
   def sendCloseFrame(reasonCode: Double, reasonText: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   /**

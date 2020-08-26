@@ -47,6 +47,11 @@ object servicesS3Mod extends js.Object {
       */
     def upload(params: PutObjectRequest): ManagedUpload = js.native
     def upload(params: PutObjectRequest, callback: js.Function2[/* err */ Error, /* data */ SendData, Unit]): ManagedUpload = js.native
+    def upload(
+      params: PutObjectRequest,
+      options: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* err */ Error, /* data */ SendData, Unit]
+    ): ManagedUpload = js.native
     def upload(params: PutObjectRequest, options: ManagedUploadOptions): ManagedUpload = js.native
     def upload(
       params: PutObjectRequest,

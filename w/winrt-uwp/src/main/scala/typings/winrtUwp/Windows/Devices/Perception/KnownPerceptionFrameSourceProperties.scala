@@ -5,5 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides static properties that are applicable to all types of frame sources. */
+@js.native
 trait KnownPerceptionFrameSourceProperties extends js.Object
 

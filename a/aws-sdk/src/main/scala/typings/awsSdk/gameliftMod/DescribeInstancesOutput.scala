@@ -18,11 +18,32 @@ trait DescribeInstancesOutput extends js.Object {
 
 object DescribeInstancesOutput {
   @scala.inline
-  def apply(Instances: InstanceList = null, NextToken: NonZeroAndMaxString = null): DescribeInstancesOutput = {
+  def apply(): DescribeInstancesOutput = {
     val __obj = js.Dynamic.literal()
-    if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstancesOutput]
   }
+  @scala.inline
+  implicit class DescribeInstancesOutputOps[Self <: DescribeInstancesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstancesVarargs(value: Instance*): Self = this.set("Instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: InstanceList): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("Instances", js.undefined)
+    @scala.inline
+    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -8,14 +8,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VariableDeclaration_
   extends Node
      with Declaration
      with Statement {
-  var declarations: js.Array[VariableDeclarator_]
-  var kind: `var` | let | const
+  var declarations: js.Array[VariableDeclarator_] = js.native
+  var kind: `var` | let | const = js.native
   @JSName("type")
-  var type_VariableDeclaration_ : VariableDeclaration
+  var type_VariableDeclaration_ : VariableDeclaration = js.native
 }
 
 object VariableDeclaration_ {
@@ -26,17 +27,32 @@ object VariableDeclaration_ {
     kind: `var` | let | const,
     loc: SourceLocation,
     start: Double,
-    `type`: VariableDeclaration,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
+    `type`: VariableDeclaration
   ): VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableDeclaration_]
   }
+  @scala.inline
+  implicit class VariableDeclaration_Ops[Self <: VariableDeclaration_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeclarationsVarargs(value: VariableDeclarator_ *): Self = this.set("declarations", js.Array(value :_*))
+    @scala.inline
+    def setDeclarations(value: js.Array[VariableDeclarator_]): Self = this.set("declarations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKind(value: `var` | let | const): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: VariableDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

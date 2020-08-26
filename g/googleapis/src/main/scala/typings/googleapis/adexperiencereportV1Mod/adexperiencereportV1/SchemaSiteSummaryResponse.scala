@@ -25,16 +25,34 @@ trait SchemaSiteSummaryResponse extends js.Object {
 
 object SchemaSiteSummaryResponse {
   @scala.inline
-  def apply(
-    desktopSummary: SchemaPlatformSummary = null,
-    mobileSummary: SchemaPlatformSummary = null,
-    reviewedSite: String = null
-  ): SchemaSiteSummaryResponse = {
+  def apply(): SchemaSiteSummaryResponse = {
     val __obj = js.Dynamic.literal()
-    if (desktopSummary != null) __obj.updateDynamic("desktopSummary")(desktopSummary.asInstanceOf[js.Any])
-    if (mobileSummary != null) __obj.updateDynamic("mobileSummary")(mobileSummary.asInstanceOf[js.Any])
-    if (reviewedSite != null) __obj.updateDynamic("reviewedSite")(reviewedSite.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSiteSummaryResponse]
   }
+  @scala.inline
+  implicit class SchemaSiteSummaryResponseOps[Self <: SchemaSiteSummaryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesktopSummary(value: SchemaPlatformSummary): Self = this.set("desktopSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopSummary: Self = this.set("desktopSummary", js.undefined)
+    @scala.inline
+    def setMobileSummary(value: SchemaPlatformSummary): Self = this.set("mobileSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobileSummary: Self = this.set("mobileSummary", js.undefined)
+    @scala.inline
+    def setReviewedSite(value: String): Self = this.set("reviewedSite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReviewedSite: Self = this.set("reviewedSite", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait DescribeTrailsRequest extends js.Object {
 
 object DescribeTrailsRequest {
   @scala.inline
-  def apply(includeShadowTrails: js.UndefOr[Boolean] = js.undefined, trailNameList: TrailNameList = null): DescribeTrailsRequest = {
+  def apply(): DescribeTrailsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeShadowTrails)) __obj.updateDynamic("includeShadowTrails")(includeShadowTrails.get.asInstanceOf[js.Any])
-    if (trailNameList != null) __obj.updateDynamic("trailNameList")(trailNameList.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTrailsRequest]
   }
+  @scala.inline
+  implicit class DescribeTrailsRequestOps[Self <: DescribeTrailsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncludeShadowTrails(value: Boolean): Self = this.set("includeShadowTrails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeShadowTrails: Self = this.set("includeShadowTrails", js.undefined)
+    @scala.inline
+    def setTrailNameListVarargs(value: String*): Self = this.set("trailNameList", js.Array(value :_*))
+    @scala.inline
+    def setTrailNameList(value: TrailNameList): Self = this.set("trailNameList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrailNameList: Self = this.set("trailNameList", js.undefined)
+  }
+  
 }
 

@@ -52,7 +52,7 @@ object pubsubMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Pubsub]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Pubsub]
             ]
     
     @js.native
@@ -60,7 +60,7 @@ object pubsubMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v1beta1aMod.pubsubV1beta1a.Pubsub
               ]
             ]
@@ -70,7 +70,7 @@ object pubsubMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub
               ]
             ]

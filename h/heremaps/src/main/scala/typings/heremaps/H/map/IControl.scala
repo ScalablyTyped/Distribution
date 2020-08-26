@@ -50,6 +50,10 @@ trait IControl extends js.Object {
     * should return a modified H.map.ViewModel.CameraData which will be set as the final view
     */
   def endControl(): Unit = js.native
+  def endControl(
+    opt_preventKinetics: js.UndefOr[scala.Nothing],
+    opt_adjustView: js.Function1[/* data */ ILookAtData, Unit]
+  ): Unit = js.native
   def endControl(opt_preventKinetics: Boolean): Unit = js.native
   def endControl(opt_preventKinetics: Boolean, opt_adjustView: js.Function1[/* data */ ILookAtData, Unit]): Unit = js.native
   /**
@@ -59,7 +63,11 @@ trait IControl extends js.Object {
     * @param opt_atY {number=} - control starts at y screen coordinate
     */
   def startControl(): Unit = js.native
+  def startControl(opt_kinetics: js.UndefOr[scala.Nothing], opt_atX: js.UndefOr[scala.Nothing], opt_atY: Double): Unit = js.native
+  def startControl(opt_kinetics: js.UndefOr[scala.Nothing], opt_atX: Double): Unit = js.native
+  def startControl(opt_kinetics: js.UndefOr[scala.Nothing], opt_atX: Double, opt_atY: Double): Unit = js.native
   def startControl(opt_kinetics: IKinetics): Unit = js.native
+  def startControl(opt_kinetics: IKinetics, opt_atX: js.UndefOr[scala.Nothing], opt_atY: Double): Unit = js.native
   def startControl(opt_kinetics: IKinetics, opt_atX: Double): Unit = js.native
   def startControl(opt_kinetics: IKinetics, opt_atX: Double, opt_atY: Double): Unit = js.native
 }

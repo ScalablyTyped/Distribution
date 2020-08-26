@@ -30,19 +30,40 @@ trait GetDevicePoolCompatibilityRequest extends js.Object {
 
 object GetDevicePoolCompatibilityRequest {
   @scala.inline
-  def apply(
-    devicePoolArn: AmazonResourceName,
-    appArn: AmazonResourceName = null,
-    configuration: ScheduleRunConfiguration = null,
-    test: ScheduleRunTest = null,
-    testType: TestType = null
-  ): GetDevicePoolCompatibilityRequest = {
+  def apply(devicePoolArn: AmazonResourceName): GetDevicePoolCompatibilityRequest = {
     val __obj = js.Dynamic.literal(devicePoolArn = devicePoolArn.asInstanceOf[js.Any])
-    if (appArn != null) __obj.updateDynamic("appArn")(appArn.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (testType != null) __obj.updateDynamic("testType")(testType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDevicePoolCompatibilityRequest]
   }
+  @scala.inline
+  implicit class GetDevicePoolCompatibilityRequestOps[Self <: GetDevicePoolCompatibilityRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDevicePoolArn(value: AmazonResourceName): Self = this.set("devicePoolArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAppArn(value: AmazonResourceName): Self = this.set("appArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppArn: Self = this.set("appArn", js.undefined)
+    @scala.inline
+    def setConfiguration(value: ScheduleRunConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setTest(value: ScheduleRunTest): Self = this.set("test", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTest: Self = this.set("test", js.undefined)
+    @scala.inline
+    def setTestType(value: TestType): Self = this.set("testType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestType: Self = this.set("testType", js.undefined)
+  }
+  
 }
 

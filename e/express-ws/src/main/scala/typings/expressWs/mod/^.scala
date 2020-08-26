@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(app: Application_): Instance = js.native
+  def apply(app: Application_, server: js.UndefOr[scala.Nothing], options: Options): Instance = js.native
   def apply(app: Application_, server: Server): Instance = js.native
   def apply(app: Application_, server: Server, options: Options): Instance = js.native
   def apply(app: Application_, server: typings.node.httpsMod.Server): Instance = js.native

@@ -30,13 +30,38 @@ trait SchemaImageConfiguration extends js.Object {
 
 object SchemaImageConfiguration {
   @scala.inline
-  def apply(imageType: String = null, kind: String = null, resourceId: String = null, url: String = null): SchemaImageConfiguration = {
+  def apply(): SchemaImageConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (imageType != null) __obj.updateDynamic("imageType")(imageType.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImageConfiguration]
   }
+  @scala.inline
+  implicit class SchemaImageConfigurationOps[Self <: SchemaImageConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageType(value: String): Self = this.set("imageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageType: Self = this.set("imageType", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

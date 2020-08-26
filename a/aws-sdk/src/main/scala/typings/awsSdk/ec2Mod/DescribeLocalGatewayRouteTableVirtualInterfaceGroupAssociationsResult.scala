@@ -18,14 +18,32 @@ trait DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult exte
 
 object DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult {
   @scala.inline
-  def apply(
-    LocalGatewayRouteTableVirtualInterfaceGroupAssociations: LocalGatewayRouteTableVirtualInterfaceGroupAssociationSet = null,
-    NextToken: String = null
-  ): DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult = {
+  def apply(): DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult = {
     val __obj = js.Dynamic.literal()
-    if (LocalGatewayRouteTableVirtualInterfaceGroupAssociations != null) __obj.updateDynamic("LocalGatewayRouteTableVirtualInterfaceGroupAssociations")(LocalGatewayRouteTableVirtualInterfaceGroupAssociations.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult]
   }
+  @scala.inline
+  implicit class DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultOps[Self <: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocalGatewayRouteTableVirtualInterfaceGroupAssociationsVarargs(value: LocalGatewayRouteTableVirtualInterfaceGroupAssociation*): Self = this.set("LocalGatewayRouteTableVirtualInterfaceGroupAssociations", js.Array(value :_*))
+    @scala.inline
+    def setLocalGatewayRouteTableVirtualInterfaceGroupAssociations(value: LocalGatewayRouteTableVirtualInterfaceGroupAssociationSet): Self = this.set("LocalGatewayRouteTableVirtualInterfaceGroupAssociations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociations: Self = this.set("LocalGatewayRouteTableVirtualInterfaceGroupAssociations", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

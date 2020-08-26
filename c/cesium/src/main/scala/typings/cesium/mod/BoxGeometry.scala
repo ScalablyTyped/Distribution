@@ -18,6 +18,7 @@ object BoxGeometry extends js.Object {
   def createGeometry(boxGeometry: BoxGeometry): Geometry = js.native
   def fromDimensions(): Unit = js.native
   def unpack(array: js.Array[Double]): BoxGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: BoxGeometry): BoxGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): BoxGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: BoxGeometry): BoxGeometry = js.native
 }

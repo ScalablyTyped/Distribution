@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "portfinder" : "1.0.25"
+      "portfinder" : "1.0.28"
     }
   ],
   "test-dependencies" : [
     {
-      "portfinder" : "1.0.25"
+      "portfinder" : "1.0.28"
     }
   ],
   "compile-devDependencies" : [

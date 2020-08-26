@@ -57,9 +57,11 @@ trait ASPxClientListBox extends ASPxClientListEdit {
     * @param imageUrl A string value specifying the path to the image displayed by the item.
     */
   def AddItem(text: String): Double = js.native
+  def AddItem(text: String, value: js.UndefOr[scala.Nothing], imageUrl: String): Double = js.native
   def AddItem(text: String, value: js.Any): Double = js.native
   def AddItem(text: String, value: js.Any, imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String]): Double = js.native
+  def AddItem(text: js.Array[String], value: js.UndefOr[scala.Nothing], imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String], value: js.Any): Double = js.native
   def AddItem(text: js.Array[String], value: js.Any, imageUrl: String): Double = js.native
   /**
@@ -130,9 +132,11 @@ trait ASPxClientListBox extends ASPxClientListEdit {
     * @param imageUrl A String value specifying the path to the image displayed by the item.
     */
   def InsertItem(index: Double, text: String): Unit = js.native
+  def InsertItem(index: Double, text: String, value: js.UndefOr[scala.Nothing], imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: String, value: js.Any): Unit = js.native
   def InsertItem(index: Double, text: String, value: js.Any, imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String]): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String], value: js.UndefOr[scala.Nothing], imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String], value: js.Any): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String], value: js.Any, imageUrl: String): Unit = js.native
   /**

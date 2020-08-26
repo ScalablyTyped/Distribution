@@ -8,90 +8,155 @@ import scala.scalajs.js.annotation._
 // See:
 // 1) https://github.com/brianc/node-postgres/blob/master/packages/pg/lib/defaults.js
 // 2) https://github.com/brianc/node-pg-pool
+@js.native
 trait IConnectionParameters[C /* <: IClient */] extends js.Object {
-  var Client: js.UndefOr[Instantiable1[/* config */ String | IConnectionParameters[IClient], C]] = js.undefined
-  var application_name: js.UndefOr[String] = js.undefined
-  var binary: js.UndefOr[Boolean] = js.undefined
-  var client_encoding: js.UndefOr[String] = js.undefined
-  var connectionString: js.UndefOr[String] = js.undefined
-  var connectionTimeoutMillis: js.UndefOr[Double] = js.undefined
-  var database: js.UndefOr[String] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
-  var fallback_application_name: js.UndefOr[String] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
-  var isDomainSocket: js.UndefOr[Boolean] = js.undefined
-  var keepAlive: js.UndefOr[Boolean] = js.undefined
-  var keepAliveInitialDelayMillis: js.UndefOr[Double] = js.undefined
-  var keepalives: js.UndefOr[Double] = js.undefined
-  var keepalives_idle: js.UndefOr[Double] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined
-  var password: js.UndefOr[DynamicPassword] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var query_timeout: js.UndefOr[Boolean | Double] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
-  var ssl: js.UndefOr[Boolean | ISSLConfig] = js.undefined
-  var statement_timeout: js.UndefOr[Boolean | Double] = js.undefined
-  var user: js.UndefOr[String] = js.undefined
+  var Client: js.UndefOr[Instantiable1[/* config */ String | IConnectionParameters[IClient], C]] = js.native
+  var application_name: js.UndefOr[String] = js.native
+  var binary: js.UndefOr[Boolean] = js.native
+  var client_encoding: js.UndefOr[String] = js.native
+  var connectionString: js.UndefOr[String] = js.native
+  var connectionTimeoutMillis: js.UndefOr[Double] = js.native
+  var database: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.native
+  var fallback_application_name: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.native
+  var idleTimeoutMillis: js.UndefOr[Double] = js.native
+  var isDomainSocket: js.UndefOr[Boolean] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.native
+  var keepAliveInitialDelayMillis: js.UndefOr[Double] = js.native
+  var keepalives: js.UndefOr[Double] = js.native
+  var keepalives_idle: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.native
+  var password: js.UndefOr[DynamicPassword] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var query_timeout: js.UndefOr[Boolean | Double] = js.native
+  var rows: js.UndefOr[Double] = js.native
+  var ssl: js.UndefOr[Boolean | ISSLConfig] = js.native
+  var statement_timeout: js.UndefOr[Boolean | Double] = js.native
+  var user: js.UndefOr[String] = js.native
 }
 
 object IConnectionParameters {
   @scala.inline
-  def apply[/* <: typings.pgPromise.pgSubsetMod.IClient */ C](
-    Client: Instantiable1[/* config */ String | IConnectionParameters[IClient], C] = null,
-    application_name: String = null,
-    binary: js.UndefOr[Boolean] = js.undefined,
-    client_encoding: String = null,
-    connectionString: String = null,
-    connectionTimeoutMillis: js.UndefOr[Double] = js.undefined,
-    database: String = null,
-    encoding: String = null,
-    fallback_application_name: String = null,
-    host: String = null,
-    idleTimeoutMillis: js.UndefOr[Double] = js.undefined,
-    isDomainSocket: js.UndefOr[Boolean] = js.undefined,
-    keepAlive: js.UndefOr[Boolean] = js.undefined,
-    keepAliveInitialDelayMillis: js.UndefOr[Double] = js.undefined,
-    keepalives: js.UndefOr[Double] = js.undefined,
-    keepalives_idle: js.UndefOr[Double] = js.undefined,
-    max: js.UndefOr[Double] = js.undefined,
-    parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined,
-    password: DynamicPassword = null,
-    port: js.UndefOr[Double] = js.undefined,
-    query_timeout: Boolean | Double = null,
-    rows: js.UndefOr[Double] = js.undefined,
-    ssl: Boolean | ISSLConfig = null,
-    statement_timeout: Boolean | Double = null,
-    user: String = null
-  ): IConnectionParameters[C] = {
+  def apply[/* <: typings.pgPromise.pgSubsetMod.IClient */ C](): IConnectionParameters[C] = {
     val __obj = js.Dynamic.literal()
-    if (Client != null) __obj.updateDynamic("Client")(Client.asInstanceOf[js.Any])
-    if (application_name != null) __obj.updateDynamic("application_name")(application_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
-    if (client_encoding != null) __obj.updateDynamic("client_encoding")(client_encoding.asInstanceOf[js.Any])
-    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectionTimeoutMillis)) __obj.updateDynamic("connectionTimeoutMillis")(connectionTimeoutMillis.get.asInstanceOf[js.Any])
-    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (fallback_application_name != null) __obj.updateDynamic("fallback_application_name")(fallback_application_name.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(idleTimeoutMillis)) __obj.updateDynamic("idleTimeoutMillis")(idleTimeoutMillis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDomainSocket)) __obj.updateDynamic("isDomainSocket")(isDomainSocket.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAliveInitialDelayMillis)) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalives)) __obj.updateDynamic("keepalives")(keepalives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalives_idle)) __obj.updateDynamic("keepalives_idle")(keepalives_idle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseInputDatesAsUTC)) __obj.updateDynamic("parseInputDatesAsUTC")(parseInputDatesAsUTC.get.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (query_timeout != null) __obj.updateDynamic("query_timeout")(query_timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (statement_timeout != null) __obj.updateDynamic("statement_timeout")(statement_timeout.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnectionParameters[C]]
   }
+  @scala.inline
+  implicit class IConnectionParametersOps[Self <: IConnectionParameters[_], /* <: typings.pgPromise.pgSubsetMod.IClient */ C] (val x: Self with IConnectionParameters[C]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClient(value: Instantiable1[/* config */ String | IConnectionParameters[IClient], C]): Self = this.set("Client", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient: Self = this.set("Client", js.undefined)
+    @scala.inline
+    def setApplication_name(value: String): Self = this.set("application_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplication_name: Self = this.set("application_name", js.undefined)
+    @scala.inline
+    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinary: Self = this.set("binary", js.undefined)
+    @scala.inline
+    def setClient_encoding(value: String): Self = this.set("client_encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient_encoding: Self = this.set("client_encoding", js.undefined)
+    @scala.inline
+    def setConnectionString(value: String): Self = this.set("connectionString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionString: Self = this.set("connectionString", js.undefined)
+    @scala.inline
+    def setConnectionTimeoutMillis(value: Double): Self = this.set("connectionTimeoutMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionTimeoutMillis: Self = this.set("connectionTimeoutMillis", js.undefined)
+    @scala.inline
+    def setDatabase(value: String): Self = this.set("database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabase: Self = this.set("database", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setFallback_application_name(value: String): Self = this.set("fallback_application_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallback_application_name: Self = this.set("fallback_application_name", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setIdleTimeoutMillis(value: Double): Self = this.set("idleTimeoutMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleTimeoutMillis: Self = this.set("idleTimeoutMillis", js.undefined)
+    @scala.inline
+    def setIsDomainSocket(value: Boolean): Self = this.set("isDomainSocket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDomainSocket: Self = this.set("isDomainSocket", js.undefined)
+    @scala.inline
+    def setKeepAlive(value: Boolean): Self = this.set("keepAlive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepAlive: Self = this.set("keepAlive", js.undefined)
+    @scala.inline
+    def setKeepAliveInitialDelayMillis(value: Double): Self = this.set("keepAliveInitialDelayMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepAliveInitialDelayMillis: Self = this.set("keepAliveInitialDelayMillis", js.undefined)
+    @scala.inline
+    def setKeepalives(value: Double): Self = this.set("keepalives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepalives: Self = this.set("keepalives", js.undefined)
+    @scala.inline
+    def setKeepalives_idle(value: Double): Self = this.set("keepalives_idle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepalives_idle: Self = this.set("keepalives_idle", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setParseInputDatesAsUTC(value: Boolean): Self = this.set("parseInputDatesAsUTC", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParseInputDatesAsUTC: Self = this.set("parseInputDatesAsUTC", js.undefined)
+    @scala.inline
+    def setPasswordFunction0(value: () => js.Promise[String] | String): Self = this.set("password", js.Any.fromFunction0(value))
+    @scala.inline
+    def setPassword(value: DynamicPassword): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setQuery_timeout(value: Boolean | Double): Self = this.set("query_timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery_timeout: Self = this.set("query_timeout", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setSsl(value: Boolean | ISSLConfig): Self = this.set("ssl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsl: Self = this.set("ssl", js.undefined)
+    @scala.inline
+    def setStatement_timeout(value: Boolean | Double): Self = this.set("statement_timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatement_timeout: Self = this.set("statement_timeout", js.undefined)
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

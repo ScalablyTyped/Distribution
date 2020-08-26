@@ -12,8 +12,8 @@ object dayjsAugmentingMod extends js.Object {
   @js.native
   trait Dayjs extends js.Object {
     def calendar(): String = js.native
+    def calendar(referenceTime: js.UndefOr[ConfigType], formats: js.Object): String = js.native
     def calendar(referenceTime: ConfigType): String = js.native
-    def calendar(referenceTime: ConfigType, formats: js.Object): String = js.native
   }
   
 }

@@ -11,10 +11,26 @@ trait SelectQuery extends js.Object {
 
 object SelectQuery {
   @scala.inline
-  def apply(selectQuery: String = null): SelectQuery = {
+  def apply(): SelectQuery = {
     val __obj = js.Dynamic.literal()
-    if (selectQuery != null) __obj.updateDynamic("selectQuery")(selectQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectQuery]
   }
+  @scala.inline
+  implicit class SelectQueryOps[Self <: SelectQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSelectQuery(value: String): Self = this.set("selectQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectQuery: Self = this.set("selectQuery", js.undefined)
+  }
+  
 }
 

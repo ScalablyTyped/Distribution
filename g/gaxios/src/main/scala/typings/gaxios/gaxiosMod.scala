@@ -16,6 +16,7 @@ object gaxiosMod extends js.Object {
     */
   class Gaxios () extends js.Object {
     def this(defaults: GaxiosOptions) = this()
+    var _defaultAdapter: js.Any = js.native
     /**
       * Internal, retryable version of the `request` method.
       * @param opts Set of HTTP options that will be used for this HTTP request.

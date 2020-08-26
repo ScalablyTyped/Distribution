@@ -32,6 +32,7 @@ class ResourceFoldersSinks protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaLogSink] = js.native
   def create(callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogSink] = js.native
   def create(params: ParamsResourceFoldersSinksCreate): GaxiosPromise[SchemaLogSink] = js.native
   def create(params: ParamsResourceFoldersSinksCreate, callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
   def create(
@@ -60,6 +61,7 @@ class ResourceFoldersSinks protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceFoldersSinksDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceFoldersSinksDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -87,6 +89,7 @@ class ResourceFoldersSinks protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLogSink] = js.native
   def get(callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogSink] = js.native
   def get(params: ParamsResourceFoldersSinksGet): GaxiosPromise[SchemaLogSink] = js.native
   def get(params: ParamsResourceFoldersSinksGet, callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
   def get(
@@ -116,6 +119,7 @@ class ResourceFoldersSinks protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListSinksResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSinksResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSinksResponse] = js.native
   def list(params: ParamsResourceFoldersSinksList): GaxiosPromise[SchemaListSinksResponse] = js.native
   def list(params: ParamsResourceFoldersSinksList, callback: BodyResponseCallback[SchemaListSinksResponse]): Unit = js.native
   def list(
@@ -149,6 +153,7 @@ class ResourceFoldersSinks protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaLogSink] = js.native
   def patch(callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogSink] = js.native
   def patch(params: ParamsResourceFoldersSinksPatch): GaxiosPromise[SchemaLogSink] = js.native
   def patch(params: ParamsResourceFoldersSinksPatch, callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
   def patch(
@@ -182,6 +187,7 @@ class ResourceFoldersSinks protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaLogSink] = js.native
   def update(callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogSink] = js.native
   def update(params: ParamsResourceFoldersSinksUpdate): GaxiosPromise[SchemaLogSink] = js.native
   def update(params: ParamsResourceFoldersSinksUpdate, callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
   def update(

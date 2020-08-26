@@ -7,10 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.Canvas")
 @js.native
-class Canvas protected () extends js.Object {
-  def this(width: Double, height: Double) = this()
+trait Canvas extends js.Object {
   var _mCanvasContent: js.Any = js.native
   var _saveCount: js.Any = js.native
   var mCanvasElement: HTMLCanvasElement = js.native
@@ -78,6 +76,7 @@ class Canvas protected () extends js.Object {
   def drawArc(oval: RectF, startAngle: Double, sweepAngle: Double, useCenter: Boolean, paint: Paint): Unit = js.native
   /* protected */ def drawArcImpl(oval: RectF, startAngle: Double, sweepAngle: Double, useCenter: Boolean, style: Style): Unit = js.native
   def drawCanvas(canvas: Canvas): Unit = js.native
+  def drawCanvas(canvas: Canvas, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): Unit = js.native
   def drawCanvas(canvas: Canvas, offsetX: Double): Unit = js.native
   def drawCanvas(canvas: Canvas, offsetX: Double, offsetY: Double): Unit = js.native
   /* protected */ def drawCanvasImpl(canvas: Canvas, offsetX: Double, offsetY: Double): Unit = js.native
@@ -85,10 +84,20 @@ class Canvas protected () extends js.Object {
   /* protected */ def drawCircleImpl(cx: Double, cy: Double, radius: Double, style: Style): Unit = js.native
   def drawColor(color: Double): Unit = js.native
   def drawImage(image: NetImage): Unit = js.native
+  def drawImage(
+    image: NetImage,
+    srcRect: js.UndefOr[scala.Nothing],
+    dstRect: js.UndefOr[scala.Nothing],
+    paint: Paint
+  ): Unit = js.native
+  def drawImage(image: NetImage, srcRect: js.UndefOr[scala.Nothing], dstRect: Rect): Unit = js.native
+  def drawImage(image: NetImage, srcRect: js.UndefOr[scala.Nothing], dstRect: Rect, paint: Paint): Unit = js.native
   def drawImage(image: NetImage, srcRect: Rect): Unit = js.native
+  def drawImage(image: NetImage, srcRect: Rect, dstRect: js.UndefOr[scala.Nothing], paint: Paint): Unit = js.native
   def drawImage(image: NetImage, srcRect: Rect, dstRect: Rect): Unit = js.native
   def drawImage(image: NetImage, srcRect: Rect, dstRect: Rect, paint: Paint): Unit = js.native
   /* protected */ def drawImageImpl(image: NetImage): Unit = js.native
+  /* protected */ def drawImageImpl(image: NetImage, srcRect: js.UndefOr[scala.Nothing], dstRect: Rect): Unit = js.native
   /* protected */ def drawImageImpl(image: NetImage, srcRect: Rect): Unit = js.native
   /* protected */ def drawImageImpl(image: NetImage, srcRect: Rect, dstRect: Rect): Unit = js.native
   def drawOval(oval: RectF, paint: Paint): Unit = js.native
@@ -159,12 +168,14 @@ class Canvas protected () extends js.Object {
   /* protected */ def restoreImpl(): Unit = js.native
   def restoreToCount(saveCount: Double): Unit = js.native
   def rotate(degrees: Double): Unit = js.native
+  def rotate(degrees: Double, px: js.UndefOr[scala.Nothing], py: Double): Unit = js.native
   def rotate(degrees: Double, px: Double): Unit = js.native
   def rotate(degrees: Double, px: Double, py: Double): Unit = js.native
   /* protected */ def rotateImpl(degrees: Double): Unit = js.native
   def save(): Double = js.native
   /* protected */ def saveImpl(): Unit = js.native
   def scale(sx: Double, sy: Double): Unit = js.native
+  def scale(sx: Double, sy: Double, px: js.UndefOr[scala.Nothing], py: Double): Unit = js.native
   def scale(sx: Double, sy: Double, px: Double): Unit = js.native
   def scale(sx: Double, sy: Double, px: Double, py: Double): Unit = js.native
   /* protected */ def scaleImpl(sx: Double, sy: Double): Unit = js.native
@@ -192,25 +203,5 @@ class Canvas protected () extends js.Object {
   /* protected */ def setTextAlignImpl(align: String): Unit = js.native
   def translate(dx: Double, dy: Double): Unit = js.native
   /* protected */ def translateImpl(dx: Double, dy: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("android.graphics.Canvas")
-@js.native
-object Canvas extends js.Object {
-  var DIRECTION_LTR: Double = js.native
-  var DIRECTION_RTL: Double = js.native
-  var TempMatrixValue: js.Array[Double] = js.native
-  var _measureCacheMap: js.Any = js.native
-  var _measureCacheTextSize: js.Any = js.native
-  var _measureTextContext: js.Any = js.native
-  var _static: js.Any = js.native
-  var sRectPool: js.Any = js.native
-  /* protected */ def getMeasureTextFontFamily(): String = js.native
-  def measureText(text: String, textSize: Double): Double = js.native
-  /* protected */ def measureTextImpl(text: String, textSize: Double): Double = js.native
-  /* private */ def obtainRect(): js.Any = js.native
-  /* private */ def obtainRect(copy: js.Any): js.Any = js.native
-  /* private */ def recycleRect(rect: js.Any): js.Any = js.native
 }
 

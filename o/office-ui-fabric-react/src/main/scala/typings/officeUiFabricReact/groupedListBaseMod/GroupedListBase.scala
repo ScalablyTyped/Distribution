@@ -24,6 +24,7 @@ class GroupedListBase protected ()
   var _getGroupNestingDepth: js.Any = js.native
   var _getPageHeight: js.Any = js.native
   var _getPageSpecification: js.Any = js.native
+  var _isInnerZoneKeystroke: js.Any = js.native
   var _isSomeGroupExpanded: js.Any = js.native
   var _list: js.Any = js.native
   var _onToggleCollapse: js.Any = js.native

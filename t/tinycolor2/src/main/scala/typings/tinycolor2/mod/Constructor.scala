@@ -18,7 +18,7 @@ trait Constructor
   */
 Instantiable0[Instance]
      with Instantiable1[/* color */ ColorInput, Instance]
-     with Instantiable2[/* color */ ColorInput, /* opts */ ConstructorOptions, Instance] {
+     with Instantiable2[js.UndefOr[/* color */ ColorInput], /* opts */ ConstructorOptions, Instance] {
   /**
     * key: hex value
     * value: string name ex. hexnames["f00"] --> "red"
@@ -30,14 +30,14 @@ Instantiable0[Instance]
     */
   var names: Aliceblue = js.native
   def apply(): Instance = js.native
+  def apply(color: js.UndefOr[ColorInput], opts: ConstructorOptions): Instance = js.native
   def apply(color: ColorInput): Instance = js.native
-  def apply(color: ColorInput, opts: ConstructorOptions): Instance = js.native
   /**
     * Compares two colors. Each colors can be any color inputs.
     */
   def equals(): Boolean = js.native
+  def equals(color1: js.UndefOr[ColorInput], color2: ColorInput): Boolean = js.native
   def equals(color1: ColorInput): Boolean = js.native
-  def equals(color1: ColorInput, color2: ColorInput): Boolean = js.native
   /**
     * Create a tinycolor instance based off the relative values.
     * Works with any color formats

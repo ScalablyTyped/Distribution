@@ -12,9 +12,11 @@ trait Matchers[T] extends js.Object {
   def toBe(expected: js.Any): js.Promise[Unit] = js.native
   def toBe(expected: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
   def toBeCloseTo(expected: js.Promise[Double]): js.Promise[Unit] = js.native
+  def toBeCloseTo(expected: js.Promise[Double], precision: js.UndefOr[scala.Nothing], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
   def toBeCloseTo(expected: js.Promise[Double], precision: js.Any): js.Promise[Unit] = js.native
   def toBeCloseTo(expected: js.Promise[Double], precision: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
   def toBeCloseTo(expected: Double): js.Promise[Unit] = js.native
+  def toBeCloseTo(expected: Double, precision: js.UndefOr[scala.Nothing], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
   def toBeCloseTo(expected: Double, precision: js.Any): js.Promise[Unit] = js.native
   def toBeCloseTo(expected: Double, precision: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
   def toBeDefined(): js.Promise[Unit] = js.native
@@ -61,6 +63,9 @@ trait Matchers[T] extends js.Object {
   def toThrow(): js.Promise[Unit] = js.native
   def toThrow(expected: js.Any): js.Promise[Unit] = js.native
   def toThrowError(): js.Promise[Unit] = js.native
+  def toThrowError(expected: js.UndefOr[scala.Nothing], message: String): js.Promise[Unit] = js.native
+  def toThrowError(expected: js.UndefOr[scala.Nothing], message: js.Promise[String | RegExp]): js.Promise[Unit] = js.native
+  def toThrowError(expected: js.UndefOr[scala.Nothing], message: RegExp): js.Promise[Unit] = js.native
   def toThrowError(
     expected: Instantiable1[
       /* args (repeated) */ js.Any, 

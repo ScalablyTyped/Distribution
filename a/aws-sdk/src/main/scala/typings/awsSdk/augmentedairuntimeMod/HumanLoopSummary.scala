@@ -30,20 +30,42 @@ trait HumanLoopSummary extends js.Object {
 
 object HumanLoopSummary {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    FailureReason: FailureReason = null,
-    FlowDefinitionArn: FlowDefinitionArn = null,
-    HumanLoopName: HumanLoopName = null,
-    HumanLoopStatus: HumanLoopStatus = null
-  ): HumanLoopSummary = {
+  def apply(): HumanLoopSummary = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (FlowDefinitionArn != null) __obj.updateDynamic("FlowDefinitionArn")(FlowDefinitionArn.asInstanceOf[js.Any])
-    if (HumanLoopName != null) __obj.updateDynamic("HumanLoopName")(HumanLoopName.asInstanceOf[js.Any])
-    if (HumanLoopStatus != null) __obj.updateDynamic("HumanLoopStatus")(HumanLoopStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumanLoopSummary]
   }
+  @scala.inline
+  implicit class HumanLoopSummaryOps[Self <: HumanLoopSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = this.set("FlowDefinitionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowDefinitionArn: Self = this.set("FlowDefinitionArn", js.undefined)
+    @scala.inline
+    def setHumanLoopName(value: HumanLoopName): Self = this.set("HumanLoopName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHumanLoopName: Self = this.set("HumanLoopName", js.undefined)
+    @scala.inline
+    def setHumanLoopStatus(value: HumanLoopStatus): Self = this.set("HumanLoopStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHumanLoopStatus: Self = this.set("HumanLoopStatus", js.undefined)
+  }
+  
 }
 

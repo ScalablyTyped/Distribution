@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * An options object for the `open` method on a menu.
   */
+@js.native
 trait IOpenOptions extends js.Object {
   /**
     * Whether to force the X position of the menu.
@@ -16,7 +17,7 @@ trait IOpenOptions extends js.Object {
     *
     * The default is `false`.
     */
-  var forceX: js.UndefOr[Boolean] = js.undefined
+  var forceX: js.UndefOr[Boolean] = js.native
   /**
     * Whether to force the Y position of the menu.
     *
@@ -25,16 +26,35 @@ trait IOpenOptions extends js.Object {
     *
     * The default is `false`.
     */
-  var forceY: js.UndefOr[Boolean] = js.undefined
+  var forceY: js.UndefOr[Boolean] = js.native
 }
 
 object IOpenOptions {
   @scala.inline
-  def apply(forceX: js.UndefOr[Boolean] = js.undefined, forceY: js.UndefOr[Boolean] = js.undefined): IOpenOptions = {
+  def apply(): IOpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceX)) __obj.updateDynamic("forceX")(forceX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceY)) __obj.updateDynamic("forceY")(forceY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenOptions]
   }
+  @scala.inline
+  implicit class IOpenOptionsOps[Self <: IOpenOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForceX(value: Boolean): Self = this.set("forceX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceX: Self = this.set("forceX", js.undefined)
+    @scala.inline
+    def setForceY(value: Boolean): Self = this.set("forceY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceY: Self = this.set("forceY", js.undefined)
+  }
+  
 }
 

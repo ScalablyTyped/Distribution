@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class Relation ()
   extends typings.avoscloudSdk.mod.Relation {
   def this(parent: typings.avoscloudSdk.mod.Object) = this()
+  def this(parent: js.UndefOr[scala.Nothing], key: String) = this()
   def this(parent: typings.avoscloudSdk.mod.Object, key: String) = this()
 }
 

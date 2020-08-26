@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "websocket-stream" : "5.5.0"
+      "websocket-stream" : "5.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "websocket-stream" : "5.5.0"
+      "websocket-stream" : "5.5.2"
     }
   ],
   "compile-devDependencies" : [

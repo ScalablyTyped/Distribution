@@ -14,10 +14,26 @@ trait RequestSpotFleetResponse extends js.Object {
 
 object RequestSpotFleetResponse {
   @scala.inline
-  def apply(SpotFleetRequestId: String = null): RequestSpotFleetResponse = {
+  def apply(): RequestSpotFleetResponse = {
     val __obj = js.Dynamic.literal()
-    if (SpotFleetRequestId != null) __obj.updateDynamic("SpotFleetRequestId")(SpotFleetRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSpotFleetResponse]
   }
+  @scala.inline
+  implicit class RequestSpotFleetResponseOps[Self <: RequestSpotFleetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpotFleetRequestId(value: String): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotFleetRequestId: Self = this.set("SpotFleetRequestId", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Keep an eye on your memory usage, and discover and isolate leaks.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 51 |
-| # downloads        | 550457 |
+| # downloads        | 535798 |
 | # stars            | 38 |
 
 ## Links

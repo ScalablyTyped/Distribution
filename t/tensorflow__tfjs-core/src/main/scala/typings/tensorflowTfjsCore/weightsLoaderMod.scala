@@ -13,7 +13,30 @@ import scala.scalajs.js.annotation._
 @js.native
 object weightsLoaderMod extends js.Object {
   def loadWeights(manifest: WeightsManifestConfig): js.Promise[NamedTensorMap] = js.native
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: js.UndefOr[scala.Nothing],
+    weightNames: js.UndefOr[scala.Nothing],
+    requestInit: RequestInit
+  ): js.Promise[NamedTensorMap] = js.native
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: js.UndefOr[scala.Nothing],
+    weightNames: js.Array[String]
+  ): js.Promise[NamedTensorMap] = js.native
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: js.UndefOr[scala.Nothing],
+    weightNames: js.Array[String],
+    requestInit: RequestInit
+  ): js.Promise[NamedTensorMap] = js.native
   def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: String): js.Promise[NamedTensorMap] = js.native
+  def loadWeights(
+    manifest: WeightsManifestConfig,
+    filePathPrefix: String,
+    weightNames: js.UndefOr[scala.Nothing],
+    requestInit: RequestInit
+  ): js.Promise[NamedTensorMap] = js.native
   def loadWeights(manifest: WeightsManifestConfig, filePathPrefix: String, weightNames: js.Array[String]): js.Promise[NamedTensorMap] = js.native
   def loadWeights(
     manifest: WeightsManifestConfig,

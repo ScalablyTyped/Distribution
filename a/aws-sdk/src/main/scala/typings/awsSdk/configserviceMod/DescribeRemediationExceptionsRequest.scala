@@ -26,17 +26,38 @@ trait DescribeRemediationExceptionsRequest extends js.Object {
 
 object DescribeRemediationExceptionsRequest {
   @scala.inline
-  def apply(
-    ConfigRuleName: ConfigRuleName,
-    Limit: js.UndefOr[Limit] = js.undefined,
-    NextToken: String = null,
-    ResourceKeys: RemediationExceptionResourceKeys = null
-  ): DescribeRemediationExceptionsRequest = {
+  def apply(ConfigRuleName: ConfigRuleName): DescribeRemediationExceptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ResourceKeys != null) __obj.updateDynamic("ResourceKeys")(ResourceKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRemediationExceptionsRequest]
   }
+  @scala.inline
+  implicit class DescribeRemediationExceptionsRequestOps[Self <: DescribeRemediationExceptionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = this.set("ResourceKeys", js.Array(value :_*))
+    @scala.inline
+    def setResourceKeys(value: RemediationExceptionResourceKeys): Self = this.set("ResourceKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceKeys: Self = this.set("ResourceKeys", js.undefined)
+  }
+  
 }
 

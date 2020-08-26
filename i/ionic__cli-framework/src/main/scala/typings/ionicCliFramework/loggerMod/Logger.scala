@@ -16,9 +16,11 @@ class Logger () extends js.Object {
   var level: LoggerLevelWeight = js.native
   def clone(opts: PartialLoggerOptions): Logger = js.native
   def createRecord(msg: String): LogRecord = js.native
+  def createRecord(msg: String, level: js.UndefOr[scala.Nothing], format: Boolean): LogRecord = js.native
   def createRecord(msg: String, level: LoggerLevelWeight): LogRecord = js.native
   def createRecord(msg: String, level: LoggerLevelWeight, format: Boolean): LogRecord = js.native
   def createWriteStream(): WritableStream = js.native
+  def createWriteStream(level: js.UndefOr[scala.Nothing], format: Boolean): WritableStream = js.native
   def createWriteStream(level: LoggerLevelWeight): WritableStream = js.native
   def createWriteStream(level: LoggerLevelWeight, format: Boolean): WritableStream = js.native
   /**
@@ -56,6 +58,7 @@ class Logger () extends js.Object {
     * @param level The logger level. If omitted, the default output is used.
     */
   def nl(): Unit = js.native
+  def nl(num: js.UndefOr[scala.Nothing], level: LoggerLevelWeight): Unit = js.native
   def nl(num: Double): Unit = js.native
   def nl(num: Double, level: LoggerLevelWeight): Unit = js.native
   /**

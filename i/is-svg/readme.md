@@ -10,9 +10,9 @@ Check if a string or buffer is SVG
 | ------------------ | :-------------: |
 | Full name          | is-svg |
 | Keywords           | svg, vector, graphics, image, img, pic, picture, type, detect, check, is, string, str, buffer |
-| # releases         | 5 |
-| # dependents       | 54 |
-| # downloads        | 201609820 |
+| # releases         | 4 |
+| # dependents       | 57 |
+| # downloads        | 211386802 |
 | # stars            | 5 |
 
 ## Links

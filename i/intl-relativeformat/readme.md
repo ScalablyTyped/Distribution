@@ -11,8 +11,8 @@ Formats JavaScript dates to relative time strings.
 | Full name          | intl-relativeformat |
 | Keywords           | intl, i18n, relative, moment, format, date |
 | # releases         | 19 |
-| # dependents       | 66 |
-| # downloads        | 18742398 |
+| # dependents       | 67 |
+| # downloads        | 18901970 |
 | # stars            | 2 |
 
 ## Links

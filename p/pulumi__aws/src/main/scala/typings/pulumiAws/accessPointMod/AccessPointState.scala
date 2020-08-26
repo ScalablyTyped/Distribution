@@ -1,7 +1,8 @@
 package typings.pulumiAws.accessPointMod
 
-import typings.pulumiAws.inputMod.s3.AccessPointPublicAccessBlockConfiguration
-import typings.pulumiAws.inputMod.s3.AccessPointVpcConfiguration
+import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.inputMod.efs.AccessPointPosixUser
+import typings.pulumiAws.inputMod.efs.AccessPointRootDirectory
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,74 +11,78 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AccessPointState extends js.Object {
   /**
-    * The AWS account ID for the owner of the bucket for which you want to create an access point. Defaults to automatically determined account ID of the provider.
-    */
-  val accountId: js.UndefOr[Input[String]] = js.native
-  /**
-    * Amazon Resource Name (ARN) of the S3 Access Point.
+    * Amazon Resource Name of the access point.
     */
   val arn: js.UndefOr[Input[String]] = js.native
   /**
-    * The name of the bucket that you want to associate this access point with.
+    * Amazon Resource Name of the file system.
     */
-  val bucket: js.UndefOr[Input[String]] = js.native
+  val fileSystemArn: js.UndefOr[Input[String]] = js.native
   /**
-    * The DNS domain name of the S3 Access Point in the format _`name`_-_`accountId`_.s3-accesspoint._region_.amazonaws.com.
-    * Note: S3 access points only support secure access by HTTPS. HTTP isn't supported.
+    * The ID of the file system for which the access point is intended.
     */
-  val domainName: js.UndefOr[Input[String]] = js.native
+  val fileSystemId: js.UndefOr[Input[String]] = js.native
+  val ownerId: js.UndefOr[Input[String]] = js.native
   /**
-    * Indicates whether this access point currently has a policy that allows public access.
+    * The operating system user and group applied to all file system requests made using the access point. See Posix User below.
     */
-  val hasPublicAccessPolicy: js.UndefOr[Input[Boolean]] = js.native
+  val posixUser: js.UndefOr[Input[AccessPointPosixUser]] = js.native
   /**
-    * The name you want to assign to this access point.
+    * Specifies the directory on the Amazon EFS file system that the access point provides access to. See Root Directory below.
     */
-  val name: js.UndefOr[Input[String]] = js.native
+  val rootDirectory: js.UndefOr[Input[AccessPointRootDirectory]] = js.native
   /**
-    * Indicates whether this access point allows access from the public Internet. Values are `VPC` (the access point doesn't allow access from the public Internet) and `Internet` (the access point allows access from the public Internet, subject to the access point and bucket access policies).
+    * Key-value mapping of resource tags.
     */
-  val networkOrigin: js.UndefOr[Input[String]] = js.native
-  /**
-    * A valid JSON document that specifies the policy that you want to apply to this access point.
-    */
-  val policy: js.UndefOr[Input[String]] = js.native
-  /**
-    * Configuration block to manage the `PublicAccessBlock` configuration that you want to apply to this Amazon S3 bucket. You can enable the configuration options in any combination. Detailed below.
-    */
-  val publicAccessBlockConfiguration: js.UndefOr[Input[AccessPointPublicAccessBlockConfiguration]] = js.native
-  /**
-    * Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Detailed below.
-    */
-  val vpcConfiguration: js.UndefOr[Input[AccessPointVpcConfiguration]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object AccessPointState {
   @scala.inline
-  def apply(
-    accountId: Input[String] = null,
-    arn: Input[String] = null,
-    bucket: Input[String] = null,
-    domainName: Input[String] = null,
-    hasPublicAccessPolicy: Input[Boolean] = null,
-    name: Input[String] = null,
-    networkOrigin: Input[String] = null,
-    policy: Input[String] = null,
-    publicAccessBlockConfiguration: Input[AccessPointPublicAccessBlockConfiguration] = null,
-    vpcConfiguration: Input[AccessPointVpcConfiguration] = null
-  ): AccessPointState = {
+  def apply(): AccessPointState = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (hasPublicAccessPolicy != null) __obj.updateDynamic("hasPublicAccessPolicy")(hasPublicAccessPolicy.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (networkOrigin != null) __obj.updateDynamic("networkOrigin")(networkOrigin.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (publicAccessBlockConfiguration != null) __obj.updateDynamic("publicAccessBlockConfiguration")(publicAccessBlockConfiguration.asInstanceOf[js.Any])
-    if (vpcConfiguration != null) __obj.updateDynamic("vpcConfiguration")(vpcConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessPointState]
   }
+  @scala.inline
+  implicit class AccessPointStateOps[Self <: AccessPointState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setFileSystemArn(value: Input[String]): Self = this.set("fileSystemArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemArn: Self = this.set("fileSystemArn", js.undefined)
+    @scala.inline
+    def setFileSystemId(value: Input[String]): Self = this.set("fileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemId: Self = this.set("fileSystemId", js.undefined)
+    @scala.inline
+    def setOwnerId(value: Input[String]): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+    @scala.inline
+    def setPosixUser(value: Input[AccessPointPosixUser]): Self = this.set("posixUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosixUser: Self = this.set("posixUser", js.undefined)
+    @scala.inline
+    def setRootDirectory(value: Input[AccessPointRootDirectory]): Self = this.set("rootDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootDirectory: Self = this.set("rootDirectory", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

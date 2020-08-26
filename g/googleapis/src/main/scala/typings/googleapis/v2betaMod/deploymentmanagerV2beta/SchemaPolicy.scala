@@ -65,22 +65,52 @@ trait SchemaPolicy extends js.Object {
 
 object SchemaPolicy {
   @scala.inline
-  def apply(
-    auditConfigs: js.Array[SchemaAuditConfig] = null,
-    bindings: js.Array[SchemaBinding] = null,
-    etag: String = null,
-    iamOwned: js.UndefOr[Boolean] = js.undefined,
-    rules: js.Array[SchemaRule] = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): SchemaPolicy = {
+  def apply(): SchemaPolicy = {
     val __obj = js.Dynamic.literal()
-    if (auditConfigs != null) __obj.updateDynamic("auditConfigs")(auditConfigs.asInstanceOf[js.Any])
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (!js.isUndefined(iamOwned)) __obj.updateDynamic("iamOwned")(iamOwned.get.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPolicy]
   }
+  @scala.inline
+  implicit class SchemaPolicyOps[Self <: SchemaPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditConfigsVarargs(value: SchemaAuditConfig*): Self = this.set("auditConfigs", js.Array(value :_*))
+    @scala.inline
+    def setAuditConfigs(value: js.Array[SchemaAuditConfig]): Self = this.set("auditConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditConfigs: Self = this.set("auditConfigs", js.undefined)
+    @scala.inline
+    def setBindingsVarargs(value: SchemaBinding*): Self = this.set("bindings", js.Array(value :_*))
+    @scala.inline
+    def setBindings(value: js.Array[SchemaBinding]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindings: Self = this.set("bindings", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setIamOwned(value: Boolean): Self = this.set("iamOwned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamOwned: Self = this.set("iamOwned", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: SchemaRule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: js.Array[SchemaRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -4,31 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MoneyParams extends _FormatterParams {
   // Money
-  var decimal: js.UndefOr[String] = js.undefined
-  var precision: js.UndefOr[Boolean | Double] = js.undefined
-  var symbol: js.UndefOr[String] = js.undefined
-  var symbolAfter: js.UndefOr[Boolean] = js.undefined
-  var thousand: js.UndefOr[String] = js.undefined
+  var decimal: js.UndefOr[String] = js.native
+  var precision: js.UndefOr[Boolean | Double] = js.native
+  var symbol: js.UndefOr[String] = js.native
+  var symbolAfter: js.UndefOr[Boolean] = js.native
+  var thousand: js.UndefOr[String] = js.native
 }
 
 object MoneyParams {
   @scala.inline
-  def apply(
-    decimal: String = null,
-    precision: Boolean | Double = null,
-    symbol: String = null,
-    symbolAfter: js.UndefOr[Boolean] = js.undefined,
-    thousand: String = null
-  ): MoneyParams = {
+  def apply(): MoneyParams = {
     val __obj = js.Dynamic.literal()
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolAfter)) __obj.updateDynamic("symbolAfter")(symbolAfter.get.asInstanceOf[js.Any])
-    if (thousand != null) __obj.updateDynamic("thousand")(thousand.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoneyParams]
   }
+  @scala.inline
+  implicit class MoneyParamsOps[Self <: MoneyParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDecimal(value: String): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecimal: Self = this.set("decimal", js.undefined)
+    @scala.inline
+    def setPrecision(value: Boolean | Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setSymbolAfter(value: Boolean): Self = this.set("symbolAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolAfter: Self = this.set("symbolAfter", js.undefined)
+    @scala.inline
+    def setThousand(value: String): Self = this.set("thousand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThousand: Self = this.set("thousand", js.undefined)
+  }
+  
 }
 

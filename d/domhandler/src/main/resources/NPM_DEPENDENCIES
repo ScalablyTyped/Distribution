@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "domhandler" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "domhandler" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -16,11 +16,21 @@ object skin extends js.Object {
   @JSName("ua_editor")
   var uaEditor: String = js.native
   def addIcon(name: String, path: String): Unit = js.native
+  def addIcon(name: String, path: String, offset: js.UndefOr[scala.Nothing], bgsize: String): Unit = js.native
   def addIcon(name: String, path: String, offset: Double): Unit = js.native
   def addIcon(name: String, path: String, offset: Double, bgsize: String): Unit = js.native
   def chameleon(editor: String, part: String): Unit = js.native
   def getIconStyle(name: String): js.Any = js.native
+  def getIconStyle(
+    name: String,
+    rtl: js.UndefOr[scala.Nothing],
+    overridePath: js.UndefOr[scala.Nothing],
+    overrideBgsize: String
+  ): js.Any = js.native
+  def getIconStyle(name: String, rtl: js.UndefOr[scala.Nothing], overridePath: Double): js.Any = js.native
+  def getIconStyle(name: String, rtl: js.UndefOr[scala.Nothing], overridePath: Double, overrideBgsize: String): js.Any = js.native
   def getIconStyle(name: String, rtl: Boolean): js.Any = js.native
+  def getIconStyle(name: String, rtl: Boolean, overridePath: js.UndefOr[scala.Nothing], overrideBgsize: String): js.Any = js.native
   def getIconStyle(name: String, rtl: Boolean, overridePath: Double): js.Any = js.native
   def getIconStyle(name: String, rtl: Boolean, overridePath: Double, overrideBgsize: String): js.Any = js.native
   def getPath(part: String): js.Any = js.native

@@ -20,6 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScanInput extends InputTypesUnion {
   /**
     * An object that may be queried to determine if the underlying operation has been aborted.
@@ -27,126 +28,177 @@ trait ScanInput extends InputTypesUnion {
     * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
     */
   @JSName("$abortSignal")
-  var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
+  var $abortSignal: js.UndefOr[AbortSignal] = js.native
   /**
     * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
     */
   @JSName("$httpOptions")
-  var $httpOptions: js.UndefOr[NodeHttpOptions] = js.undefined
+  var $httpOptions: js.UndefOr[NodeHttpOptions] = js.native
   /**
     * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
     */
   @JSName("$maxRetries")
-  var $maxRetries: js.UndefOr[Double] = js.undefined
+  var $maxRetries: js.UndefOr[Double] = js.native
   /**
     * <p>This is a legacy parameter. Use <code>ProjectionExpression</code> instead. For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.AttributesToGet.html">AttributesToGet</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
     */
-  var AttributesToGet: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+  var AttributesToGet: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
   /**
     * <p>This is a legacy parameter. Use <code>FilterExpression</code> instead. For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.ConditionalOperator.html">ConditionalOperator</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
     */
-  var ConditionalOperator: js.UndefOr[AND | OR | String] = js.undefined
+  var ConditionalOperator: js.UndefOr[AND | OR | String] = js.native
   /**
     * <p>A Boolean value that determines the read consistency model during the scan:</p> <ul> <li> <p>If <code>ConsistentRead</code> is <code>false</code>, then the data returned from <code>Scan</code> might not contain the results from other recently completed write operations (PutItem, UpdateItem or DeleteItem).</p> </li> <li> <p>If <code>ConsistentRead</code> is <code>true</code>, then all of the write operations that completed before the <code>Scan</code> began are guaranteed to be contained in the <code>Scan</code> response.</p> </li> </ul> <p>The default setting for <code>ConsistentRead</code> is <code>false</code>.</p> <p>The <code>ConsistentRead</code> parameter is not supported on global secondary indexes. If you scan a global secondary index with <code>ConsistentRead</code> set to true, you will receive a <code>ValidationException</code>.</p>
     */
-  var ConsistentRead: js.UndefOr[Boolean] = js.undefined
+  var ConsistentRead: js.UndefOr[Boolean] = js.native
   /**
     * <p>The primary key of the first item that this operation will evaluate. Use the value that was returned for <code>LastEvaluatedKey</code> in the previous operation.</p> <p>The data type for <code>ExclusiveStartKey</code> must be String, Number or Binary. No set data types are allowed.</p> <p>In a parallel scan, a <code>Scan</code> request that includes <code>ExclusiveStartKey</code> must specify the same segment whose previous <code>Scan</code> returned the corresponding value of <code>LastEvaluatedKey</code>.</p>
     */
-  var ExclusiveStartKey: js.UndefOr[StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])] = js.undefined
+  var ExclusiveStartKey: js.UndefOr[StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])] = js.native
   /**
     * <p>One or more substitution tokens for attribute names in an expression. The following are some use cases for using <code>ExpressionAttributeNames</code>:</p> <ul> <li> <p>To access an attribute whose name conflicts with a DynamoDB reserved word.</p> </li> <li> <p>To create a placeholder for repeating occurrences of an attribute name in an expression.</p> </li> <li> <p>To prevent special characters in an attribute name from being misinterpreted in an expression.</p> </li> </ul> <p>Use the <b>#</b> character in an expression to dereference an attribute name. For example, consider the following attribute name:</p> <ul> <li> <p> <code>Percentile</code> </p> </li> </ul> <p>The name of this attribute conflicts with a reserved word, so it cannot be used directly in an expression. (For the complete list of reserved words, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ReservedWords.html">Reserved Words</a> in the <i>Amazon DynamoDB Developer Guide</i>). To work around this, you could specify the following for <code>ExpressionAttributeNames</code>:</p> <ul> <li> <p> <code>{"#P":"Percentile"}</code> </p> </li> </ul> <p>You could then use this substitution in an expression, as in this example:</p> <ul> <li> <p> <code>#P = :val</code> </p> </li> </ul> <note> <p>Tokens that begin with the <b>:</b> character are <i>expression attribute values</i>, which are placeholders for the actual value at runtime.</p> </note> <p>For more information on expression attribute names, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.AccessingItemAttributes.html">Accessing Item Attributes</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
     */
-  var ExpressionAttributeNames: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+  var ExpressionAttributeNames: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.native
   /**
     * <p>One or more values that can be substituted in an expression.</p> <p>Use the <b>:</b> (colon) character in an expression to dereference an attribute value. For example, suppose that you wanted to check whether the value of the <i>ProductStatus</i> attribute was one of the following: </p> <p> <code>Available | Backordered | Discontinued</code> </p> <p>You would first need to specify <code>ExpressionAttributeValues</code> as follows:</p> <p> <code>{ ":avail":{"S":"Available"}, ":back":{"S":"Backordered"}, ":disc":{"S":"Discontinued"} }</code> </p> <p>You could then use these values in an expression, such as this:</p> <p> <code>ProductStatus IN (:avail, :back, :disc)</code> </p> <p>For more information on expression attribute values, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.SpecifyingConditions.html">Specifying Conditions</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
     */
-  var ExpressionAttributeValues: js.UndefOr[StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])] = js.undefined
+  var ExpressionAttributeValues: js.UndefOr[StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])] = js.native
   /**
     * <p>A string that contains conditions that DynamoDB applies after the <code>Scan</code> operation, but before the data is returned to you. Items that do not satisfy the <code>FilterExpression</code> criteria are not returned.</p> <note> <p>A <code>FilterExpression</code> is applied after the items have already been read; the process of filtering does not consume any additional read capacity units.</p> </note> <p>For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/QueryAndScan.html#FilteringResults">Filter Expressions</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
     */
-  var FilterExpression: js.UndefOr[String] = js.undefined
+  var FilterExpression: js.UndefOr[String] = js.native
   /**
     * <p>The name of a secondary index to scan. This index can be any local secondary index or global secondary index. Note that if you use the <code>IndexName</code> parameter, you must also provide <code>TableName</code>.</p>
     */
-  var IndexName: js.UndefOr[String] = js.undefined
+  var IndexName: js.UndefOr[String] = js.native
   /**
     * <p>The maximum number of items to evaluate (not necessarily the number of matching items). If DynamoDB processes the number of items up to the limit while processing the results, it stops the operation and returns the matching values up to that point, and a key in <code>LastEvaluatedKey</code> to apply in a subsequent operation, so that you can pick up where you left off. Also, if the processed data set size exceeds 1 MB before DynamoDB reaches this limit, it stops the operation and returns the matching values up to the limit, and a key in <code>LastEvaluatedKey</code> to apply in a subsequent operation to continue the operation. For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/QueryAndScan.html">Query and Scan</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
     */
-  var Limit: js.UndefOr[Double] = js.undefined
+  var Limit: js.UndefOr[Double] = js.native
   /**
     * <p>A string that identifies one or more attributes to retrieve from the specified table or index. These attributes can include scalars, sets, or elements of a JSON document. The attributes in the expression must be separated by commas.</p> <p>If no attribute names are specified, then all attributes will be returned. If any of the requested attributes are not found, they will not appear in the result.</p> <p>For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.AccessingItemAttributes.html">Accessing Item Attributes</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
     */
-  var ProjectionExpression: js.UndefOr[String] = js.undefined
+  var ProjectionExpression: js.UndefOr[String] = js.native
   /**
     * <p>Determines the level of detail about provisioned throughput consumption that is returned in the response:</p> <ul> <li> <p> <code>INDEXES</code> - The response includes the aggregate <code>ConsumedCapacity</code> for the operation, together with <code>ConsumedCapacity</code> for each table and secondary index that was accessed.</p> <p>Note that some operations, such as <code>GetItem</code> and <code>BatchGetItem</code>, do not access any indexes at all. In these cases, specifying <code>INDEXES</code> will only return <code>ConsumedCapacity</code> information for table(s).</p> </li> <li> <p> <code>TOTAL</code> - The response includes only the aggregate <code>ConsumedCapacity</code> for the operation.</p> </li> <li> <p> <code>NONE</code> - No <code>ConsumedCapacity</code> details are included in the response.</p> </li> </ul>
     */
-  var ReturnConsumedCapacity: js.UndefOr[INDEXES | TOTAL | NONE | String] = js.undefined
+  var ReturnConsumedCapacity: js.UndefOr[INDEXES | TOTAL | NONE | String] = js.native
   /**
     * <p>This is a legacy parameter. Use <code>FilterExpression</code> instead. For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.ScanFilter.html">ScanFilter</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
     */
-  var ScanFilter: js.UndefOr[StringDictionary[Condition] | (Iterable[js.Tuple2[String, Condition]])] = js.undefined
+  var ScanFilter: js.UndefOr[StringDictionary[Condition] | (Iterable[js.Tuple2[String, Condition]])] = js.native
   /**
     * <p>For a parallel <code>Scan</code> request, <code>Segment</code> identifies an individual segment to be scanned by an application worker.</p> <p>Segment IDs are zero-based, so the first segment is always 0. For example, if you want to use four application threads to scan a table or an index, then the first thread specifies a <code>Segment</code> value of 0, the second thread specifies 1, and so on.</p> <p>The value of <code>LastEvaluatedKey</code> returned from a parallel <code>Scan</code> request must be used as <code>ExclusiveStartKey</code> with the same segment ID in a subsequent <code>Scan</code> operation.</p> <p>The value for <code>Segment</code> must be greater than or equal to 0, and less than the value provided for <code>TotalSegments</code>.</p> <p>If you provide <code>Segment</code>, you must also provide <code>TotalSegments</code>.</p>
     */
-  var Segment: js.UndefOr[Double] = js.undefined
+  var Segment: js.UndefOr[Double] = js.native
   /**
     * <p>The attributes to be returned in the result. You can retrieve all item attributes, specific item attributes, the count of matching items, or in the case of an index, some or all of the attributes projected into the index.</p> <ul> <li> <p> <code>ALL_ATTRIBUTES</code> - Returns all of the item attributes from the specified table or index. If you query a local secondary index, then for each matching item in the index DynamoDB will fetch the entire item from the parent table. If the index is configured to project all item attributes, then all of the data can be obtained from the local secondary index, and no fetching is required.</p> </li> <li> <p> <code>ALL_PROJECTED_ATTRIBUTES</code> - Allowed only when querying an index. Retrieves all attributes that have been projected into the index. If the index is configured to project all attributes, this return value is equivalent to specifying <code>ALL_ATTRIBUTES</code>.</p> </li> <li> <p> <code>COUNT</code> - Returns the number of matching items, rather than the matching items themselves.</p> </li> <li> <p> <code>SPECIFIC_ATTRIBUTES</code> - Returns only the attributes listed in <code>AttributesToGet</code>. This return value is equivalent to specifying <code>AttributesToGet</code> without specifying any value for <code>Select</code>.</p> <p>If you query or scan a local secondary index and request only attributes that are projected into that index, the operation will read only the index and not the table. If any of the requested attributes are not projected into the local secondary index, DynamoDB will fetch each of these attributes from the parent table. This extra fetching incurs additional throughput cost and latency.</p> <p>If you query or scan a global secondary index, you can only request attributes that are projected into the index. Global secondary index queries cannot fetch attributes from the parent table.</p> </li> </ul> <p>If neither <code>Select</code> nor <code>AttributesToGet</code> are specified, DynamoDB defaults to <code>ALL_ATTRIBUTES</code> when accessing a table, and <code>ALL_PROJECTED_ATTRIBUTES</code> when accessing an index. You cannot use both <code>Select</code> and <code>AttributesToGet</code> together in a single request, unless the value for <code>Select</code> is <code>SPECIFIC_ATTRIBUTES</code>. (This usage is equivalent to specifying <code>AttributesToGet</code> without any value for <code>Select</code>.)</p> <note> <p>If you use the <code>ProjectionExpression</code> parameter, then the value for <code>Select</code> can only be <code>SPECIFIC_ATTRIBUTES</code>. Any other value for <code>Select</code> will return an error.</p> </note>
     */
-  var Select: js.UndefOr[ALL_ATTRIBUTES | ALL_PROJECTED_ATTRIBUTES | SPECIFIC_ATTRIBUTES | COUNT | String] = js.undefined
+  var Select: js.UndefOr[ALL_ATTRIBUTES | ALL_PROJECTED_ATTRIBUTES | SPECIFIC_ATTRIBUTES | COUNT | String] = js.native
   /**
     * <p>The name of the table containing the requested items; or, if you provide <code>IndexName</code>, the name of the table to which that index belongs.</p>
     */
-  var TableName: String
+  var TableName: String = js.native
   /**
     * <p>For a parallel <code>Scan</code> request, <code>TotalSegments</code> represents the total number of segments into which the <code>Scan</code> operation will be divided. The value of <code>TotalSegments</code> corresponds to the number of application workers that will perform the parallel scan. For example, if you want to use four application threads to scan a table or an index, specify a <code>TotalSegments</code> value of 4.</p> <p>The value for <code>TotalSegments</code> must be greater than or equal to 1, and less than or equal to 1000000. If you specify a <code>TotalSegments</code> value of 1, the <code>Scan</code> operation will be sequential rather than parallel.</p> <p>If you specify <code>TotalSegments</code>, you must also specify <code>Segment</code>.</p>
     */
-  var TotalSegments: js.UndefOr[Double] = js.undefined
+  var TotalSegments: js.UndefOr[Double] = js.native
 }
 
 object ScanInput {
   @scala.inline
-  def apply(
-    TableName: String,
-    $abortSignal: AbortSignal = null,
-    $httpOptions: NodeHttpOptions = null,
-    $maxRetries: js.UndefOr[Double] = js.undefined,
-    AttributesToGet: js.Array[String] | Iterable[String] = null,
-    ConditionalOperator: AND | OR | String = null,
-    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
-    ExclusiveStartKey: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]) = null,
-    ExpressionAttributeNames: StringDictionary[String] | (Iterable[js.Tuple2[String, String]]) = null,
-    ExpressionAttributeValues: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]) = null,
-    FilterExpression: String = null,
-    IndexName: String = null,
-    Limit: js.UndefOr[Double] = js.undefined,
-    ProjectionExpression: String = null,
-    ReturnConsumedCapacity: INDEXES | TOTAL | NONE | String = null,
-    ScanFilter: StringDictionary[Condition] | (Iterable[js.Tuple2[String, Condition]]) = null,
-    Segment: js.UndefOr[Double] = js.undefined,
-    Select: ALL_ATTRIBUTES | ALL_PROJECTED_ATTRIBUTES | SPECIFIC_ATTRIBUTES | COUNT | String = null,
-    TotalSegments: js.UndefOr[Double] = js.undefined
-  ): ScanInput = {
+  def apply(TableName: String): ScanInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
-    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet.asInstanceOf[js.Any])
-    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.get.asInstanceOf[js.Any])
-    if (ExclusiveStartKey != null) __obj.updateDynamic("ExclusiveStartKey")(ExclusiveStartKey.asInstanceOf[js.Any])
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
-    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues.asInstanceOf[js.Any])
-    if (FilterExpression != null) __obj.updateDynamic("FilterExpression")(FilterExpression.asInstanceOf[js.Any])
-    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression.asInstanceOf[js.Any])
-    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
-    if (ScanFilter != null) __obj.updateDynamic("ScanFilter")(ScanFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(Segment)) __obj.updateDynamic("Segment")(Segment.get.asInstanceOf[js.Any])
-    if (Select != null) __obj.updateDynamic("Select")(Select.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalSegments)) __obj.updateDynamic("TotalSegments")(TotalSegments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanInput]
   }
+  @scala.inline
+  implicit class ScanInputOps[Self <: ScanInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTableName(value: String): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set$abortSignal(value: AbortSignal): Self = this.set("$abortSignal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$abortSignal: Self = this.set("$abortSignal", js.undefined)
+    @scala.inline
+    def set$httpOptions(value: NodeHttpOptions): Self = this.set("$httpOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$httpOptions: Self = this.set("$httpOptions", js.undefined)
+    @scala.inline
+    def set$maxRetries(value: Double): Self = this.set("$maxRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$maxRetries: Self = this.set("$maxRetries", js.undefined)
+    @scala.inline
+    def setAttributesToGetVarargs(value: String*): Self = this.set("AttributesToGet", js.Array(value :_*))
+    @scala.inline
+    def setAttributesToGet(value: js.Array[String] | Iterable[String]): Self = this.set("AttributesToGet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributesToGet: Self = this.set("AttributesToGet", js.undefined)
+    @scala.inline
+    def setConditionalOperator(value: AND | OR | String): Self = this.set("ConditionalOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionalOperator: Self = this.set("ConditionalOperator", js.undefined)
+    @scala.inline
+    def setConsistentRead(value: Boolean): Self = this.set("ConsistentRead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsistentRead: Self = this.set("ConsistentRead", js.undefined)
+    @scala.inline
+    def setExclusiveStartKey(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = this.set("ExclusiveStartKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveStartKey: Self = this.set("ExclusiveStartKey", js.undefined)
+    @scala.inline
+    def setExpressionAttributeNames(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = this.set("ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeNames: Self = this.set("ExpressionAttributeNames", js.undefined)
+    @scala.inline
+    def setExpressionAttributeValues(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = this.set("ExpressionAttributeValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeValues: Self = this.set("ExpressionAttributeValues", js.undefined)
+    @scala.inline
+    def setFilterExpression(value: String): Self = this.set("FilterExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterExpression: Self = this.set("FilterExpression", js.undefined)
+    @scala.inline
+    def setIndexName(value: String): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setProjectionExpression(value: String): Self = this.set("ProjectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectionExpression: Self = this.set("ProjectionExpression", js.undefined)
+    @scala.inline
+    def setReturnConsumedCapacity(value: INDEXES | TOTAL | NONE | String): Self = this.set("ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnConsumedCapacity: Self = this.set("ReturnConsumedCapacity", js.undefined)
+    @scala.inline
+    def setScanFilter(value: StringDictionary[Condition] | (Iterable[js.Tuple2[String, Condition]])): Self = this.set("ScanFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanFilter: Self = this.set("ScanFilter", js.undefined)
+    @scala.inline
+    def setSegment(value: Double): Self = this.set("Segment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegment: Self = this.set("Segment", js.undefined)
+    @scala.inline
+    def setSelect(value: ALL_ATTRIBUTES | ALL_PROJECTED_ATTRIBUTES | SPECIFIC_ATTRIBUTES | COUNT | String): Self = this.set("Select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("Select", js.undefined)
+    @scala.inline
+    def setTotalSegments(value: Double): Self = this.set("TotalSegments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSegments: Self = this.set("TotalSegments", js.undefined)
+  }
+  
 }
 

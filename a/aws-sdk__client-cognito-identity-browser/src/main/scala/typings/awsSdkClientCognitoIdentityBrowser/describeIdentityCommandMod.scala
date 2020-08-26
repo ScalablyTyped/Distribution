@@ -26,16 +26,9 @@ object describeIdentityCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DescribeIdentityInput) = this()
-    /* CompleteClass */
-    override val input: DescribeIdentityInput = js.native
     val middlewareStack: MiddlewareStack[DescribeIdentityInput, DescribeIdentityOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: CognitoIdentityResolvedConfiguration
-    ): Handler[DescribeIdentityInput, DescribeIdentityOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[DescribeIdentityInput, DescribeIdentityOutput] = js.native
   }

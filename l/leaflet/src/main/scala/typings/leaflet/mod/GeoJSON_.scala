@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeoJSON_[P] () extends FeatureGroup_[P] {
   def this(geojson: GeoJsonObject) = this()
+  def this(geojson: js.UndefOr[scala.Nothing], options: GeoJSONOptions[P]) = this()
   def this(geojson: GeoJsonObject, options: GeoJSONOptions[P]) = this()
   var options: GeoJSONOptions[P] = js.native
   /**
@@ -21,6 +22,7 @@ class GeoJSON_[P] () extends FeatureGroup_[P] {
     * Resets the given vector layer's style to the original GeoJSON style,
     * useful for resetting style after hover events.
     */
+  def resetStyle(): Layer = js.native
   def resetStyle(layer: Layer): Layer = js.native
   def setStyle(style: StyleFunction[P]): this.type = js.native
 }
@@ -48,6 +50,14 @@ object GeoJSON_ extends js.Object {
     * Can use a custom coordsToLatLng function.
     */
   def coordsToLatLngs(coords: js.Array[_]): js.Array[_] = js.native
+  def coordsToLatLngs(
+    coords: js.Array[_],
+    levelsDeep: js.UndefOr[scala.Nothing],
+    coordsToLatLng: js.Function1[
+      /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]), 
+      LatLng_
+    ]
+  ): js.Array[_] = js.native
   def coordsToLatLngs(coords: js.Array[_], levelsDeep: Double): js.Array[_] = js.native
   def coordsToLatLngs(
     coords: js.Array[_],
@@ -74,6 +84,7 @@ object GeoJSON_ extends js.Object {
     * False by default.
     */
   def latLngsToCoords(latlngs: js.Array[_]): js.Array[_] = js.native
+  def latLngsToCoords(latlngs: js.Array[_], levelsDeep: js.UndefOr[scala.Nothing], closed: Boolean): js.Array[_] = js.native
   def latLngsToCoords(latlngs: js.Array[_], levelsDeep: Double): js.Array[_] = js.native
   def latLngsToCoords(latlngs: js.Array[_], levelsDeep: Double, closed: Boolean): js.Array[_] = js.native
 }

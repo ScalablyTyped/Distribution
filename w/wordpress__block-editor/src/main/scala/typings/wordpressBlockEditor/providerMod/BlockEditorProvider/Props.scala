@@ -8,11 +8,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Props extends js.Object {
   /**
     * Children elements for which the BlockEditorProvider context should apply.
     */
-  var children: ReactNode
+  var children: ReactNode = js.native
   /**
     * A callback invoked when the blocks have been modified in a persistent manner. Contrasted
     * with `onInput`, a "persistent" change is one which is not an extension of a composed
@@ -31,40 +32,66 @@ trait Props extends js.Object {
     * be reflected immediately (`onInput`), you may only want history entries to reflect change
     * milestones (`onChange`).
     */
-  var onChange: js.UndefOr[js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[_]]], Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[_]]], Unit]] = js.native
   /**
     * A callback invoked when the blocks have been modified in a non-persistent manner.
     * Contrasted with `onChange`, a "non-persistent" change is one which is part of a composed
     * input. Any sequence of updates to the same block attribute are treated as non-persistent,
     * except for the first.
     */
-  var onInput: js.UndefOr[js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[_]]], Unit]] = js.undefined
-  var settings: js.UndefOr[PartialEditorSettingsEdit] = js.undefined
-  var useSubRegistry: js.UndefOr[Boolean] = js.undefined
+  var onInput: js.UndefOr[js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[_]]], Unit]] = js.native
+  var settings: js.UndefOr[PartialEditorSettingsEdit] = js.native
+  var useSubRegistry: js.UndefOr[Boolean] = js.native
   /**
     * The current array of blocks.
     */
-  var value: js.UndefOr[js.Array[BlockInstance[StringDictionary[_]]]] = js.undefined
+  var value: js.UndefOr[js.Array[BlockInstance[StringDictionary[_]]]] = js.native
 }
 
 object Props {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    onChange: /* blocks */ js.Array[BlockInstance[StringDictionary[_]]] => Unit = null,
-    onInput: /* blocks */ js.Array[BlockInstance[StringDictionary[_]]] => Unit = null,
-    settings: PartialEditorSettingsEdit = null,
-    useSubRegistry: js.UndefOr[Boolean] = js.undefined,
-    value: js.Array[BlockInstance[StringDictionary[_]]] = null
-  ): Props = {
+  def apply(): Props = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSubRegistry)) __obj.updateDynamic("useSubRegistry")(useSubRegistry.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  @scala.inline
+  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* blocks */ js.Array[BlockInstance[StringDictionary[_]]] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnInput(value: /* blocks */ js.Array[BlockInstance[StringDictionary[_]]] => Unit): Self = this.set("onInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setSettings(value: PartialEditorSettingsEdit): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setUseSubRegistry(value: Boolean): Self = this.set("useSubRegistry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseSubRegistry: Self = this.set("useSubRegistry", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: js.Array[BlockInstance[StringDictionary[_]]]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

@@ -56,24 +56,50 @@ trait SchemaPushItem extends js.Object {
 
 object SchemaPushItem {
   @scala.inline
-  def apply(
-    contentHash: String = null,
-    metadataHash: String = null,
-    payload: String = null,
-    queue: String = null,
-    repositoryError: SchemaRepositoryError = null,
-    structuredDataHash: String = null,
-    `type`: String = null
-  ): SchemaPushItem = {
+  def apply(): SchemaPushItem = {
     val __obj = js.Dynamic.literal()
-    if (contentHash != null) __obj.updateDynamic("contentHash")(contentHash.asInstanceOf[js.Any])
-    if (metadataHash != null) __obj.updateDynamic("metadataHash")(metadataHash.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (repositoryError != null) __obj.updateDynamic("repositoryError")(repositoryError.asInstanceOf[js.Any])
-    if (structuredDataHash != null) __obj.updateDynamic("structuredDataHash")(structuredDataHash.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPushItem]
   }
+  @scala.inline
+  implicit class SchemaPushItemOps[Self <: SchemaPushItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentHash(value: String): Self = this.set("contentHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHash: Self = this.set("contentHash", js.undefined)
+    @scala.inline
+    def setMetadataHash(value: String): Self = this.set("metadataHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataHash: Self = this.set("metadataHash", js.undefined)
+    @scala.inline
+    def setPayload(value: String): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("payload", js.undefined)
+    @scala.inline
+    def setQueue(value: String): Self = this.set("queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueue: Self = this.set("queue", js.undefined)
+    @scala.inline
+    def setRepositoryError(value: SchemaRepositoryError): Self = this.set("repositoryError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryError: Self = this.set("repositoryError", js.undefined)
+    @scala.inline
+    def setStructuredDataHash(value: String): Self = this.set("structuredDataHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStructuredDataHash: Self = this.set("structuredDataHash", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

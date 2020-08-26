@@ -10,9 +10,9 @@ Get namespaced config from the closest package.json
 | ------------------ | :-------------: |
 | Full name          | pkg-conf |
 | Keywords           | json, read, parse, file, fs, graceful, load, pkg, package, config, conf, configuration, object, namespace, namespaced |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 121 |
-| # downloads        | 28338934 |
+| # downloads        | 29215999 |
 | # stars            | 0 |
 
 ## Links

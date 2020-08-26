@@ -8,47 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "TileProviderError")
 @js.native
 class TileProviderError protected () extends js.Object {
-  def this(provider: ImageryProvider, message: String) = this()
-  def this(provider: TerrainProvider, message: String) = this()
-  def this(provider: ImageryProvider, message: String, x: Double) = this()
-  def this(provider: TerrainProvider, message: String, x: Double) = this()
-  def this(provider: ImageryProvider, message: String, x: Double, y: Double) = this()
-  def this(provider: TerrainProvider, message: String, x: Double, y: Double) = this()
-  def this(provider: ImageryProvider, message: String, x: Double, y: Double, level: Double) = this()
-  def this(provider: TerrainProvider, message: String, x: Double, y: Double, level: Double) = this()
   def this(
-    provider: ImageryProvider,
+    provider: ImageryProvider | TerrainProvider,
     message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    timesRetried: Double
-  ) = this()
-  def this(
-    provider: TerrainProvider,
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    timesRetried: Double
-  ) = this()
-  def this(
-    provider: ImageryProvider,
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    timesRetried: Double,
-    error: Error
-  ) = this()
-  def this(
-    provider: TerrainProvider,
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    timesRetried: Double,
-    error: Error
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    level: js.UndefOr[Double],
+    timesRetried: js.UndefOr[Double],
+    error: js.UndefOr[Error]
   ) = this()
   var error: Error = js.native
   var level: Double = js.native

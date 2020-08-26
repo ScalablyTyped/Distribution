@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object hubConnection extends js.Object {
   def apply(): Connection = js.native
+  def apply(url: js.UndefOr[scala.Nothing], options: Options): Connection = js.native
   def apply(url: String): Connection = js.native
   def apply(url: String, options: Options): Connection = js.native
 }

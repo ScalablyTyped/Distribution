@@ -1,30 +1,53 @@
 package typings.recharts.anon
 
+import typings.recharts.mod.ChartOffset
+import typings.recharts.mod.YAxisProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Height extends js.Object {
-  var height: js.UndefOr[Double] = js.undefined
-  var offset: js.UndefOr[js.Object] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var yAxis: js.UndefOr[js.Object] = js.undefined
+  var height: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[ChartOffset] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var yAxis: js.UndefOr[YAxisProps] = js.native
 }
 
 object Height {
   @scala.inline
-  def apply(
-    height: js.UndefOr[Double] = js.undefined,
-    offset: js.Object = null,
-    width: js.UndefOr[Double] = js.undefined,
-    yAxis: js.Object = null
-  ): Height = {
+  def apply(): Height = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[Height]
   }
+  @scala.inline
+  implicit class HeightOps[Self <: Height] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOffset(value: ChartOffset): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setYAxis(value: YAxisProps): Self = this.set("yAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxis: Self = this.set("yAxis", js.undefined)
+  }
+  
 }
 

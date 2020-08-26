@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeoJSONOptions[P] extends LayerOptions {
   /**
     * A Function that will be used for converting GeoJSON coordinates to LatLngs.
@@ -17,7 +18,7 @@ trait GeoJSONOptions[P] extends LayerOptions {
       /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]), 
       LatLng_
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * A Function that will be used to decide whether to show a feature or not.
     *
@@ -29,7 +30,7 @@ trait GeoJSONOptions[P] extends LayerOptions {
     * }
     * ```
     */
-  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, P], Boolean]] = js.undefined
+  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, P], Boolean]] = js.native
   /**
     * A Function that will be called once for each created Feature, after it
     * has been created and styled. Useful for attaching events and popups to features.
@@ -40,7 +41,7 @@ trait GeoJSONOptions[P] extends LayerOptions {
     * function (feature, layer) {}
     * ```
     */
-  var onEachFeature: js.UndefOr[js.Function2[/* feature */ Feature[GeometryObject, P], /* layer */ Layer, Unit]] = js.undefined
+  var onEachFeature: js.UndefOr[js.Function2[/* feature */ Feature[GeometryObject, P], /* layer */ Layer, Unit]] = js.native
   /**
     * A Function defining how GeoJSON points spawn Leaflet layers.
     * It is internally called when data is added, passing the GeoJSON point
@@ -54,7 +55,7 @@ trait GeoJSONOptions[P] extends LayerOptions {
     * }
     * ```
     */
-  var pointToLayer: js.UndefOr[js.Function2[/* geoJsonPoint */ Feature[Point, P], /* latlng */ LatLng_, Layer]] = js.undefined
+  var pointToLayer: js.UndefOr[js.Function2[/* geoJsonPoint */ Feature[Point, P], /* latlng */ LatLng_, Layer]] = js.native
    // should import GeoJSON typings
   /**
     * PathOptions or a Function defining the Path options for styling GeoJSON lines and polygons,
@@ -68,29 +69,49 @@ trait GeoJSONOptions[P] extends LayerOptions {
     * }
     * ```
     */
-  var style: js.UndefOr[PathOptions | StyleFunction[P]] = js.undefined
+  var style: js.UndefOr[PathOptions | StyleFunction[P]] = js.native
 }
 
 object GeoJSONOptions {
   @scala.inline
-  def apply[P](
-    attribution: String = null,
-    coordsToLatLng: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_ = null,
-    filter: /* geoJsonFeature */ Feature[GeometryObject, P] => Boolean = null,
-    onEachFeature: (/* feature */ Feature[GeometryObject, P], /* layer */ Layer) => Unit = null,
-    pane: String = null,
-    pointToLayer: (/* geoJsonPoint */ Feature[Point, P], /* latlng */ LatLng_) => Layer = null,
-    style: PathOptions | StyleFunction[P] = null
-  ): GeoJSONOptions[P] = {
+  def apply[P](): GeoJSONOptions[P] = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (coordsToLatLng != null) __obj.updateDynamic("coordsToLatLng")(js.Any.fromFunction1(coordsToLatLng))
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (onEachFeature != null) __obj.updateDynamic("onEachFeature")(js.Any.fromFunction2(onEachFeature))
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (pointToLayer != null) __obj.updateDynamic("pointToLayer")(js.Any.fromFunction2(pointToLayer))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONOptions[P]]
   }
+  @scala.inline
+  implicit class GeoJSONOptionsOps[Self <: GeoJSONOptions[_], P] (val x: Self with GeoJSONOptions[P]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = this.set("coordsToLatLng", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCoordsToLatLng: Self = this.set("coordsToLatLng", js.undefined)
+    @scala.inline
+    def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, P] => Boolean): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, P], /* layer */ Layer) => Unit): Self = this.set("onEachFeature", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnEachFeature: Self = this.set("onEachFeature", js.undefined)
+    @scala.inline
+    def setPointToLayer(value: (/* geoJsonPoint */ Feature[Point, P], /* latlng */ LatLng_) => Layer): Self = this.set("pointToLayer", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePointToLayer: Self = this.set("pointToLayer", js.undefined)
+    @scala.inline
+    def setStyleFunction1(value: /* feature */ js.UndefOr[Feature[GeometryObject, P]] => PathOptions): Self = this.set("style", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStyle(value: PathOptions | StyleFunction[P]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

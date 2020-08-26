@@ -37,33 +37,61 @@ trait RepositoryState extends js.Object {
     */
   val repositoryName: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object RepositoryState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    cloneUrlHttp: Input[String] = null,
-    cloneUrlSsh: Input[String] = null,
-    defaultBranch: Input[String] = null,
-    description: Input[String] = null,
-    repositoryId: Input[String] = null,
-    repositoryName: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): RepositoryState = {
+  def apply(): RepositoryState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (cloneUrlHttp != null) __obj.updateDynamic("cloneUrlHttp")(cloneUrlHttp.asInstanceOf[js.Any])
-    if (cloneUrlSsh != null) __obj.updateDynamic("cloneUrlSsh")(cloneUrlSsh.asInstanceOf[js.Any])
-    if (defaultBranch != null) __obj.updateDynamic("defaultBranch")(defaultBranch.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (repositoryId != null) __obj.updateDynamic("repositoryId")(repositoryId.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryState]
   }
+  @scala.inline
+  implicit class RepositoryStateOps[Self <: RepositoryState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCloneUrlHttp(value: Input[String]): Self = this.set("cloneUrlHttp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloneUrlHttp: Self = this.set("cloneUrlHttp", js.undefined)
+    @scala.inline
+    def setCloneUrlSsh(value: Input[String]): Self = this.set("cloneUrlSsh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloneUrlSsh: Self = this.set("cloneUrlSsh", js.undefined)
+    @scala.inline
+    def setDefaultBranch(value: Input[String]): Self = this.set("defaultBranch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultBranch: Self = this.set("defaultBranch", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setRepositoryId(value: Input[String]): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryId: Self = this.set("repositoryId", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: Input[String]): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

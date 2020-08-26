@@ -1,6 +1,6 @@
 package typings.jsdevtoolsReaddirEnhanced
 
-import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatsfalse
+import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatsfalseundefine
 import typings.jsdevtoolsReaddirEnhanced.anon.Optionsstatstrue
 import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.Stats
 import typings.std.AsyncIterableIterator
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object iteratorMod extends js.Object {
   def readdirIterator(dir: String): AsyncIterableIterator[String] = js.native
-  def readdirIterator(dir: String, options: Optionsstatsfalse): AsyncIterableIterator[String] = js.native
+  def readdirIterator(dir: String, options: Optionsstatsfalseundefine): AsyncIterableIterator[String] = js.native
   def readdirIterator(dir: String, options: Optionsstatstrue): AsyncIterableIterator[Stats] = js.native
 }
 

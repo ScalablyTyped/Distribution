@@ -48,14 +48,6 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustUrl(value: String): SafeUrl = js.native
-  /**
-    * Sanitizes a value for use in the given SecurityContext.
-    *
-    * If value is trusted for the context, this method will unwrap the contained safe value and use
-    * it directly. Otherwise, value will be sanitized to be safe in the given context, for example
-    * by replacing URLs that have an unsafe protocol part (such as `javascript:`). The implementation
-    * is responsible to make sure that the value can definitely be safely used in the given context.
-    */
   def sanitize(context: SecurityContext, value: SafeValue): String | Null = js.native
 }
 

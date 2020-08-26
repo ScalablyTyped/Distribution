@@ -30,19 +30,19 @@ abstract class DataMember protected () extends Element {
   def containerAsPublishedParameter: PublishedParameter = js.native
   def containerAsPublishedResource: PublishedResource = js.native
   def exposedName: String = js.native
-  def exposedName(newValue: String): js.Any = js.native
+  def exposedName_=(newValue: String): Unit = js.native
   def isKey: Boolean = js.native
-  def isKey(newValue: Boolean): js.Any = js.native
+  def isKey_=(newValue: Boolean): Unit = js.native
   def isLockedByContract: Boolean = js.native
-  def isLockedByContract(newValue: Boolean): js.Any = js.native
+  def isLockedByContract_=(newValue: Boolean): Unit = js.native
   def isNillable: Boolean = js.native
-  def isNillable(newValue: Boolean): js.Any = js.native
   def isNillableByContract: Boolean = js.native
-  def isNillableByContract(newValue: Boolean): js.Any = js.native
+  def isNillableByContract_=(newValue: Boolean): Unit = js.native
+  def isNillable_=(newValue: Boolean): Unit = js.native
   def isOptional: Boolean = js.native
-  def isOptional(newValue: Boolean): js.Any = js.native
   def isOptionalByContract: Boolean = js.native
-  def isOptionalByContract(newValue: Boolean): js.Any = js.native
+  def isOptionalByContract_=(newValue: Boolean): Unit = js.native
+  def isOptional_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

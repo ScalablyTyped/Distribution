@@ -8,53 +8,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IDayGridOptions extends IRestrictedDatesOptions {
-  /**
-    * The date range type indicating how  many days should be selected as the user
-    * selects days
-    */
-  var dateRangeType: DateRangeType
-  /**
-    * The number of days to select while dateRangeType === DateRangeType.Day. Used in order to have multi-day
-    * views.
-    * @defaultValue 1
-    */
-  var daysToSelectInDayView: js.UndefOr[Double] = js.undefined
-  /**
-    * The first day of the week for your locale.
-    */
-  var firstDayOfWeek: DayOfWeek
-  /**
-    * Defines when the first week of the year should start, FirstWeekOfYear.FirstDay,
-    * FirstWeekOfYear.FirstFullWeek or FirstWeekOfYear.FirstFourDayWeek are the possible values
-    */
-  var firstWeekOfYear: FirstWeekOfYear
+@js.native
+trait IDayGridOptions extends IDatepickerOptions {
   /**
     * The currently navigated date
     */
-  var navigatedDate: Date
+  var navigatedDate: Date = js.native
   /**
     * The currently selected date
     */
-  var selectedDate: Date
-  /**
-    * Whether the calendar should show the week number (weeks 1 to 53) before each week row
-    */
-  var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Value of today. If null, current time in client machine will be used.
-    */
-  var today: js.UndefOr[Date] = js.undefined
+  var selectedDate: Date = js.native
   /**
     * How many weeks to show by default. If not provided, will show enough weeks to display the current
     * month, between 4 and 6 depending
     */
-  var weeksToShow: js.UndefOr[Double] = js.undefined
-  /**
-    * The days that are selectable when `dateRangeType` is WorkWeek.
-    * If `dateRangeType` is not WorkWeek this property does nothing.
-    */
-  var workWeekDays: js.UndefOr[js.Array[DayOfWeek]] = js.undefined
+  var weeksToShow: js.UndefOr[Double] = js.native
 }
 
 object IDayGridOptions {
@@ -64,26 +32,31 @@ object IDayGridOptions {
     firstDayOfWeek: DayOfWeek,
     firstWeekOfYear: FirstWeekOfYear,
     navigatedDate: Date,
-    selectedDate: Date,
-    daysToSelectInDayView: js.UndefOr[Double] = js.undefined,
-    maxDate: Date = null,
-    minDate: Date = null,
-    restrictedDates: js.Array[Date] = null,
-    showWeekNumbers: js.UndefOr[Boolean] = js.undefined,
-    today: Date = null,
-    weeksToShow: js.UndefOr[Double] = js.undefined,
-    workWeekDays: js.Array[DayOfWeek] = null
+    selectedDate: Date
   ): IDayGridOptions = {
     val __obj = js.Dynamic.literal(dateRangeType = dateRangeType.asInstanceOf[js.Any], firstDayOfWeek = firstDayOfWeek.asInstanceOf[js.Any], firstWeekOfYear = firstWeekOfYear.asInstanceOf[js.Any], navigatedDate = navigatedDate.asInstanceOf[js.Any], selectedDate = selectedDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(daysToSelectInDayView)) __obj.updateDynamic("daysToSelectInDayView")(daysToSelectInDayView.get.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (restrictedDates != null) __obj.updateDynamic("restrictedDates")(restrictedDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.get.asInstanceOf[js.Any])
-    if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
-    if (!js.isUndefined(weeksToShow)) __obj.updateDynamic("weeksToShow")(weeksToShow.get.asInstanceOf[js.Any])
-    if (workWeekDays != null) __obj.updateDynamic("workWeekDays")(workWeekDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDayGridOptions]
   }
+  @scala.inline
+  implicit class IDayGridOptionsOps[Self <: IDayGridOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNavigatedDate(value: Date): Self = this.set("navigatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelectedDate(value: Date): Self = this.set("selectedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWeeksToShow(value: Double): Self = this.set("weeksToShow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeeksToShow: Self = this.set("weeksToShow", js.undefined)
+  }
+  
 }
 

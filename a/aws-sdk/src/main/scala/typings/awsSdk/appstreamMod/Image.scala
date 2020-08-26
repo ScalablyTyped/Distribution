@@ -74,41 +74,86 @@ trait Image extends js.Object {
 
 object Image {
   @scala.inline
-  def apply(
-    Name: String,
-    Applications: Applications = null,
-    AppstreamAgentVersion: AppstreamAgentVersion = null,
-    Arn: Arn = null,
-    BaseImageArn: Arn = null,
-    CreatedTime: Timestamp = null,
-    Description: String = null,
-    DisplayName: String = null,
-    ImageBuilderName: String = null,
-    ImageBuilderSupported: js.UndefOr[Boolean] = js.undefined,
-    ImagePermissions: ImagePermissions = null,
-    Platform: PlatformType = null,
-    PublicBaseImageReleasedDate: Timestamp = null,
-    State: ImageState = null,
-    StateChangeReason: ImageStateChangeReason = null,
-    Visibility: VisibilityType = null
-  ): Image = {
+  def apply(Name: String): Image = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (Applications != null) __obj.updateDynamic("Applications")(Applications.asInstanceOf[js.Any])
-    if (AppstreamAgentVersion != null) __obj.updateDynamic("AppstreamAgentVersion")(AppstreamAgentVersion.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (BaseImageArn != null) __obj.updateDynamic("BaseImageArn")(BaseImageArn.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (ImageBuilderName != null) __obj.updateDynamic("ImageBuilderName")(ImageBuilderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ImageBuilderSupported)) __obj.updateDynamic("ImageBuilderSupported")(ImageBuilderSupported.get.asInstanceOf[js.Any])
-    if (ImagePermissions != null) __obj.updateDynamic("ImagePermissions")(ImagePermissions.asInstanceOf[js.Any])
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
-    if (PublicBaseImageReleasedDate != null) __obj.updateDynamic("PublicBaseImageReleasedDate")(PublicBaseImageReleasedDate.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StateChangeReason != null) __obj.updateDynamic("StateChangeReason")(StateChangeReason.asInstanceOf[js.Any])
-    if (Visibility != null) __obj.updateDynamic("Visibility")(Visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
+  @scala.inline
+  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationsVarargs(value: Application*): Self = this.set("Applications", js.Array(value :_*))
+    @scala.inline
+    def setApplications(value: Applications): Self = this.set("Applications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplications: Self = this.set("Applications", js.undefined)
+    @scala.inline
+    def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = this.set("AppstreamAgentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppstreamAgentVersion: Self = this.set("AppstreamAgentVersion", js.undefined)
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setBaseImageArn(value: Arn): Self = this.set("BaseImageArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseImageArn: Self = this.set("BaseImageArn", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: Timestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setImageBuilderName(value: String): Self = this.set("ImageBuilderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageBuilderName: Self = this.set("ImageBuilderName", js.undefined)
+    @scala.inline
+    def setImageBuilderSupported(value: Boolean): Self = this.set("ImageBuilderSupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageBuilderSupported: Self = this.set("ImageBuilderSupported", js.undefined)
+    @scala.inline
+    def setImagePermissions(value: ImagePermissions): Self = this.set("ImagePermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePermissions: Self = this.set("ImagePermissions", js.undefined)
+    @scala.inline
+    def setPlatform(value: PlatformType): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("Platform", js.undefined)
+    @scala.inline
+    def setPublicBaseImageReleasedDate(value: Timestamp): Self = this.set("PublicBaseImageReleasedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicBaseImageReleasedDate: Self = this.set("PublicBaseImageReleasedDate", js.undefined)
+    @scala.inline
+    def setState(value: ImageState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStateChangeReason(value: ImageStateChangeReason): Self = this.set("StateChangeReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateChangeReason: Self = this.set("StateChangeReason", js.undefined)
+    @scala.inline
+    def setVisibility(value: VisibilityType): Self = this.set("Visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("Visibility", js.undefined)
+  }
+  
 }
 

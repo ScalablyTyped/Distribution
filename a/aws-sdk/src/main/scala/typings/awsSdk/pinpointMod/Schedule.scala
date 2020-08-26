@@ -41,23 +41,48 @@ trait Schedule extends js.Object {
 
 object Schedule {
   @scala.inline
-  def apply(
-    StartTime: string,
-    EndTime: string = null,
-    EventFilter: CampaignEventFilter = null,
-    Frequency: Frequency = null,
-    IsLocalTime: js.UndefOr[boolean] = js.undefined,
-    QuietTime: QuietTime = null,
-    Timezone: string = null
-  ): Schedule = {
+  def apply(StartTime: string): Schedule = {
     val __obj = js.Dynamic.literal(StartTime = StartTime.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (EventFilter != null) __obj.updateDynamic("EventFilter")(EventFilter.asInstanceOf[js.Any])
-    if (Frequency != null) __obj.updateDynamic("Frequency")(Frequency.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsLocalTime)) __obj.updateDynamic("IsLocalTime")(IsLocalTime.get.asInstanceOf[js.Any])
-    if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]
   }
+  @scala.inline
+  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStartTime(value: string): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: string): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setEventFilter(value: CampaignEventFilter): Self = this.set("EventFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventFilter: Self = this.set("EventFilter", js.undefined)
+    @scala.inline
+    def setFrequency(value: Frequency): Self = this.set("Frequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequency: Self = this.set("Frequency", js.undefined)
+    @scala.inline
+    def setIsLocalTime(value: boolean): Self = this.set("IsLocalTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLocalTime: Self = this.set("IsLocalTime", js.undefined)
+    @scala.inline
+    def setQuietTime(value: QuietTime): Self = this.set("QuietTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuietTime: Self = this.set("QuietTime", js.undefined)
+    @scala.inline
+    def setTimezone(value: string): Self = this.set("Timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+  }
+  
 }
 

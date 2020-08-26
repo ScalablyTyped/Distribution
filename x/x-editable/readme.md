@@ -12,7 +12,7 @@ In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 558978 |
+| # downloads        | 548867 |
 | # stars            | 4 |
 
 ## Links

@@ -4,34 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputBinding
   extends BaseBinding
      with Binding {
-  var autocomplete: js.UndefOr[String] = js.undefined
-  var input: js.UndefOr[String] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
+  var autocomplete: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.native
 }
 
 object InputBinding {
   @scala.inline
-  def apply(
-    autocomplete: String = null,
-    debounce: js.UndefOr[Double] = js.undefined,
-    element: Element = null,
-    input: String = null,
-    name: String = null,
-    placeholder: String = null,
-    `type`: String = null
-  ): InputBinding = {
+  def apply(): InputBinding = {
     val __obj = js.Dynamic.literal()
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(debounce)) __obj.updateDynamic("debounce")(debounce.get.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputBinding]
   }
+  @scala.inline
+  implicit class InputBindingOps[Self <: InputBinding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutocomplete(value: String): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutocomplete: Self = this.set("autocomplete", js.undefined)
+    @scala.inline
+    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+  }
+  
 }
 

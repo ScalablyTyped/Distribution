@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   * represents a procedure call. The service differs only in the access of the columns and parameters to the service {@link
   * com.sun.star.sdbc.CallableStatement} .
   */
+@js.native
 trait CallableStatement
   extends typings.activexLibreoffice.com_.sun.star.sdbc.PreparedStatement
      with XRow

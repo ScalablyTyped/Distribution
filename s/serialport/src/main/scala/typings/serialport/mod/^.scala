@@ -10,6 +10,7 @@ class ^ protected () extends SerialPort {
   def this(path: String) = this()
   def this(path: String, callback: ErrorCallback) = this()
   def this(path: String, options: OpenOptions) = this()
+  def this(path: String, options: js.UndefOr[scala.Nothing], callback: ErrorCallback) = this()
   def this(path: String, options: OpenOptions, callback: ErrorCallback) = this()
 }
 

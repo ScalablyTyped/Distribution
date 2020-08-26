@@ -22,15 +22,34 @@ trait StorageConnector extends js.Object {
 
 object StorageConnector {
   @scala.inline
-  def apply(
-    ConnectorType: StorageConnectorType,
-    Domains: DomainList = null,
-    ResourceIdentifier: ResourceIdentifier = null
-  ): StorageConnector = {
+  def apply(ConnectorType: StorageConnectorType): StorageConnector = {
     val __obj = js.Dynamic.literal(ConnectorType = ConnectorType.asInstanceOf[js.Any])
-    if (Domains != null) __obj.updateDynamic("Domains")(Domains.asInstanceOf[js.Any])
-    if (ResourceIdentifier != null) __obj.updateDynamic("ResourceIdentifier")(ResourceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageConnector]
   }
+  @scala.inline
+  implicit class StorageConnectorOps[Self <: StorageConnector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectorType(value: StorageConnectorType): Self = this.set("ConnectorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainsVarargs(value: Domain*): Self = this.set("Domains", js.Array(value :_*))
+    @scala.inline
+    def setDomains(value: DomainList): Self = this.set("Domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomains: Self = this.set("Domains", js.undefined)
+    @scala.inline
+    def setResourceIdentifier(value: ResourceIdentifier): Self = this.set("ResourceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIdentifier: Self = this.set("ResourceIdentifier", js.undefined)
+  }
+  
 }
 

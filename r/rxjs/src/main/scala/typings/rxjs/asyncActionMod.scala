@@ -32,6 +32,7 @@ object asyncActionMod extends js.Object {
     /* protected */ def recycleAsyncId(scheduler: AsyncScheduler, id: js.Any): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: AsyncScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler): js.Any = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.Any): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsyncScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def work(): Unit = js.native

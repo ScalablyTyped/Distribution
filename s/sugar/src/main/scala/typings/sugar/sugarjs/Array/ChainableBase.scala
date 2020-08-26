@@ -41,12 +41,13 @@ trait ChainableBase[T, RawValue] extends js.Object {
     search: (js.Function3[/* value */ T, /* index */ Double, /* array */ typings.sugar.Array[T], Boolean]) | searchFn[T],
     context: js.Any
   ): SugarDefaultChainable[Boolean] = js.native
-  def everyFromIndex(startIndex: Double): SugarDefaultChainable[T] = js.native
   def everyFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
+  def everyFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
   def everyFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
   def exclude(search: T): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def exclude(search: searchFn[T]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def fill(value: T): SugarDefaultChainable[this.type] = js.native
+  def fill(value: T, start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[this.type] = js.native
   def fill(value: T, start: Double): SugarDefaultChainable[this.type] = js.native
   def fill(value: T, start: Double, end: Double): SugarDefaultChainable[this.type] = js.native
   def filter(search: T): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
@@ -58,8 +59,8 @@ trait ChainableBase[T, RawValue] extends js.Object {
     search: (js.Function3[/* value */ T, /* index */ Double, /* array */ typings.sugar.Array[T], _]) | searchFn[T],
     context: js.Any
   ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
-  def filterFromIndex(startIndex: Double): SugarDefaultChainable[T] = js.native
   def filterFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
+  def filterFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
   def filterFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
   def find(search: T): SugarDefaultChainable[T] = js.native
   def find(search: T, context: js.Any): SugarDefaultChainable[T] = js.native
@@ -70,8 +71,8 @@ trait ChainableBase[T, RawValue] extends js.Object {
     search: (js.Function3[/* value */ T, /* index */ Double, /* obj */ typings.sugar.Array[T], Boolean]) | searchFn[T],
     context: js.Any
   ): SugarDefaultChainable[T] = js.native
-  def findFromIndex(startIndex: Double): SugarDefaultChainable[T] = js.native
   def findFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
+  def findFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
   def findFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
   def findIndex(search: T): SugarDefaultChainable[Double] = js.native
   def findIndex(search: T, context: js.Any): SugarDefaultChainable[Double] = js.native
@@ -82,8 +83,8 @@ trait ChainableBase[T, RawValue] extends js.Object {
     search: (js.Function3[/* value */ T, /* index */ Double, /* obj */ typings.sugar.Array[T], Boolean]) | searchFn[T],
     context: js.Any
   ): SugarDefaultChainable[Double] = js.native
-  def findIndexFromIndex(startIndex: Double): SugarDefaultChainable[T] = js.native
   def findIndexFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
+  def findIndexFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
   def findIndexFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
   def first(): SugarDefaultChainable[T] = js.native
   def first(num: Double): SugarDefaultChainable[T] = js.native
@@ -96,8 +97,8 @@ trait ChainableBase[T, RawValue] extends js.Object {
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ typings.sugar.Array[T], Unit],
     thisArg: js.Any
   ): SugarDefaultChainable[Unit] = js.native
-  def forEachFromIndex(startIndex: Double): SugarDefaultChainable[T] = js.native
   def forEachFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
+  def forEachFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
   def forEachFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
   def from(index: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def groupBy[U](map: String): SugarDefaultChainable[js.Object] = js.native
@@ -140,6 +141,8 @@ trait ChainableBase[T, RawValue] extends js.Object {
   def lastIndexOf(searchElement: T): SugarDefaultChainable[Double] = js.native
   def lastIndexOf(searchElement: T, fromIndex: Double): SugarDefaultChainable[Double] = js.native
   def least[U](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+  def least[U](all: js.UndefOr[scala.Nothing], map: String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+  def least[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def least[U](all: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def least[U](all: Boolean, map: String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def least[U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
@@ -154,10 +157,12 @@ trait ChainableBase[T, RawValue] extends js.Object {
   ): SugarDefaultChainable[typings.sugar.Array[U]] = js.native
   def map[U](map: String): SugarDefaultChainable[typings.sugar.Array[U]] = js.native
   def map[U](map: String, context: js.Any): SugarDefaultChainable[typings.sugar.Array[U]] = js.native
-  def mapFromIndex(startIndex: Double): SugarDefaultChainable[T] = js.native
   def mapFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
+  def mapFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
   def mapFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
   def max[U](): SugarDefaultChainable[T] = js.native
+  def max[U](all: js.UndefOr[scala.Nothing], map: String): SugarDefaultChainable[T] = js.native
+  def max[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def max[U](all: Boolean): SugarDefaultChainable[T] = js.native
   def max[U](all: Boolean, map: String): SugarDefaultChainable[T] = js.native
   def max[U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
@@ -167,12 +172,16 @@ trait ChainableBase[T, RawValue] extends js.Object {
   def median[U](map: String): SugarDefaultChainable[Double] = js.native
   def median[U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
   def min[U](): SugarDefaultChainable[T] = js.native
+  def min[U](all: js.UndefOr[scala.Nothing], map: String): SugarDefaultChainable[T] = js.native
+  def min[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def min[U](all: Boolean): SugarDefaultChainable[T] = js.native
   def min[U](all: Boolean, map: String): SugarDefaultChainable[T] = js.native
   def min[U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def min[U](map: String): SugarDefaultChainable[T] = js.native
   def min[U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def most[U](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+  def most[U](all: js.UndefOr[scala.Nothing], map: String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+  def most[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def most[U](all: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def most[U](all: Boolean, map: String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def most[U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
@@ -203,8 +212,8 @@ trait ChainableBase[T, RawValue] extends js.Object {
     ],
     initialValue: T
   ): SugarDefaultChainable[T] = js.native
-  def reduceFromIndex(startIndex: Double): SugarDefaultChainable[T] = js.native
   def reduceFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
+  def reduceFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
   def reduceFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
   def reduceRight(
     callbackfn: js.Function4[
@@ -225,8 +234,8 @@ trait ChainableBase[T, RawValue] extends js.Object {
     ],
     initialValue: T
   ): SugarDefaultChainable[T] = js.native
-  def reduceRightFromIndex(startIndex: Double): SugarDefaultChainable[T] = js.native
   def reduceRightFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
+  def reduceRightFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
   def reduceRightFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
   @JSName("reduceRight")
   def reduceRight_U[U](
@@ -256,11 +265,13 @@ trait ChainableBase[T, RawValue] extends js.Object {
   def removeAt(start: Double, end: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def reverse(): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def sample(): SugarDefaultChainable[T] = js.native
+  def sample(num: js.UndefOr[scala.Nothing], remove: Boolean): SugarDefaultChainable[T] = js.native
   def sample(num: Double): SugarDefaultChainable[T] = js.native
   def sample(num: Double, remove: Boolean): SugarDefaultChainable[T] = js.native
   def shift(): SugarDefaultChainable[js.UndefOr[T]] = js.native
   def shuffle(): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def slice(): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def slice(start: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def slice(start: Double, end: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def some(search: T): SugarDefaultChainable[Boolean] = js.native
@@ -272,12 +283,13 @@ trait ChainableBase[T, RawValue] extends js.Object {
     search: (js.Function3[/* value */ T, /* index */ Double, /* array */ typings.sugar.Array[T], Boolean]) | searchFn[T],
     context: js.Any
   ): SugarDefaultChainable[Boolean] = js.native
-  def someFromIndex(startIndex: Double): SugarDefaultChainable[T] = js.native
   def someFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
+  def someFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
   def someFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
   def sort(): SugarDefaultChainable[this.type] = js.native
   def sort(compareFn: js.Function2[/* a */ T, /* b */ T, Double]): SugarDefaultChainable[this.type] = js.native
   def sortBy[U](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+  def sortBy[U](map: js.UndefOr[scala.Nothing], desc: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def sortBy[U](map: String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def sortBy[U](map: String, desc: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
   def sortBy[U](map: sortMapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native

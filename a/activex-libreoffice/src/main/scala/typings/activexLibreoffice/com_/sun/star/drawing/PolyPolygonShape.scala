@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
   *
   * A poly-polygon has 2 or more straight lines, with the first and last point connected by a straight line.
   */
+@js.native
 trait PolyPolygonShape
   extends Shape
      with LineProperties

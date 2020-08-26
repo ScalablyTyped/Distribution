@@ -58,34 +58,76 @@ trait StorageDescriptor extends js.Object {
 
 object StorageDescriptor {
   @scala.inline
-  def apply(
-    BucketColumns: NameStringList = null,
-    Columns: ColumnList = null,
-    Compressed: js.UndefOr[Boolean] = js.undefined,
-    InputFormat: FormatString = null,
-    Location: LocationString = null,
-    NumberOfBuckets: js.UndefOr[Integer] = js.undefined,
-    OutputFormat: FormatString = null,
-    Parameters: ParametersMap = null,
-    SerdeInfo: SerDeInfo = null,
-    SkewedInfo: SkewedInfo = null,
-    SortColumns: OrderList = null,
-    StoredAsSubDirectories: js.UndefOr[Boolean] = js.undefined
-  ): StorageDescriptor = {
+  def apply(): StorageDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (BucketColumns != null) __obj.updateDynamic("BucketColumns")(BucketColumns.asInstanceOf[js.Any])
-    if (Columns != null) __obj.updateDynamic("Columns")(Columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(Compressed)) __obj.updateDynamic("Compressed")(Compressed.get.asInstanceOf[js.Any])
-    if (InputFormat != null) __obj.updateDynamic("InputFormat")(InputFormat.asInstanceOf[js.Any])
-    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfBuckets)) __obj.updateDynamic("NumberOfBuckets")(NumberOfBuckets.get.asInstanceOf[js.Any])
-    if (OutputFormat != null) __obj.updateDynamic("OutputFormat")(OutputFormat.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (SerdeInfo != null) __obj.updateDynamic("SerdeInfo")(SerdeInfo.asInstanceOf[js.Any])
-    if (SkewedInfo != null) __obj.updateDynamic("SkewedInfo")(SkewedInfo.asInstanceOf[js.Any])
-    if (SortColumns != null) __obj.updateDynamic("SortColumns")(SortColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(StoredAsSubDirectories)) __obj.updateDynamic("StoredAsSubDirectories")(StoredAsSubDirectories.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageDescriptor]
   }
+  @scala.inline
+  implicit class StorageDescriptorOps[Self <: StorageDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketColumnsVarargs(value: NameString*): Self = this.set("BucketColumns", js.Array(value :_*))
+    @scala.inline
+    def setBucketColumns(value: NameStringList): Self = this.set("BucketColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketColumns: Self = this.set("BucketColumns", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: Column*): Self = this.set("Columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: ColumnList): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("Columns", js.undefined)
+    @scala.inline
+    def setCompressed(value: Boolean): Self = this.set("Compressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompressed: Self = this.set("Compressed", js.undefined)
+    @scala.inline
+    def setInputFormat(value: FormatString): Self = this.set("InputFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputFormat: Self = this.set("InputFormat", js.undefined)
+    @scala.inline
+    def setLocation(value: LocationString): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("Location", js.undefined)
+    @scala.inline
+    def setNumberOfBuckets(value: Integer): Self = this.set("NumberOfBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfBuckets: Self = this.set("NumberOfBuckets", js.undefined)
+    @scala.inline
+    def setOutputFormat(value: FormatString): Self = this.set("OutputFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFormat: Self = this.set("OutputFormat", js.undefined)
+    @scala.inline
+    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setSerdeInfo(value: SerDeInfo): Self = this.set("SerdeInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerdeInfo: Self = this.set("SerdeInfo", js.undefined)
+    @scala.inline
+    def setSkewedInfo(value: SkewedInfo): Self = this.set("SkewedInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkewedInfo: Self = this.set("SkewedInfo", js.undefined)
+    @scala.inline
+    def setSortColumnsVarargs(value: Order*): Self = this.set("SortColumns", js.Array(value :_*))
+    @scala.inline
+    def setSortColumns(value: OrderList): Self = this.set("SortColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortColumns: Self = this.set("SortColumns", js.undefined)
+    @scala.inline
+    def setStoredAsSubDirectories(value: Boolean): Self = this.set("StoredAsSubDirectories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoredAsSubDirectories: Self = this.set("StoredAsSubDirectories", js.undefined)
+  }
+  
 }
 

@@ -17,32 +17,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** specifies the standard model of an {@link UnoControlContainer} . */
+@js.native
 trait UnoControlContainerModel extends UnoControlModel {
   /** specifies the background color (RGB) of the control. */
-  var BackgroundColor: Color
+  var BackgroundColor: Color = js.native
   /**
     * specifies the border style of the control.
     *
     * `; 0: No border; 1: 3D border; 2: simple border; `
     */
-  var Border: Double
+  var Border: Double = js.native
   /**
     * specifies the color of the border, if present
     *
     * Not every border style (see {@link Border} ) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
     * @since OOo 2.0
     */
-  var BorderColor: Double
+  var BorderColor: Double = js.native
   /** determines whether a control is enabled or disabled. */
-  var Enabled: Boolean
+  var Enabled: Boolean = js.native
   /** specifies the help text of the control. */
-  var HelpText: String
+  var HelpText: String = js.native
   /** specifies the help URL of the control. */
-  var HelpURL: String
+  var HelpURL: String = js.native
   /** specifies whether the control will be printed with the document. */
-  var Printable: Boolean
+  var Printable: Boolean = js.native
   /** specifies the text displayed in the control. */
-  var Text: String
+  var Text: String = js.native
 }
 
 object UnoControlContainerModel {
@@ -93,5 +94,34 @@ object UnoControlContainerModel {
     val __obj = js.Dynamic.literal(BackgroundColor = BackgroundColor.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], BorderColor = BorderColor.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], HelpText = HelpText.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], Printable = Printable.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
     __obj.asInstanceOf[UnoControlContainerModel]
   }
+  @scala.inline
+  implicit class UnoControlContainerModelOps[Self <: UnoControlContainerModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: Color): Self = this.set("BackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBorder(value: Double): Self = this.set("Border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBorderColor(value: Double): Self = this.set("BorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrintable(value: Boolean): Self = this.set("Printable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+  }
+  
 }
 

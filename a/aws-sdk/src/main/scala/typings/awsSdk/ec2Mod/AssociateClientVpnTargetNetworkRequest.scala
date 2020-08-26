@@ -26,16 +26,34 @@ trait AssociateClientVpnTargetNetworkRequest extends js.Object {
 
 object AssociateClientVpnTargetNetworkRequest {
   @scala.inline
-  def apply(
-    ClientVpnEndpointId: ClientVpnEndpointId,
-    SubnetId: SubnetId,
-    ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): AssociateClientVpnTargetNetworkRequest = {
+  def apply(ClientVpnEndpointId: ClientVpnEndpointId, SubnetId: SubnetId): AssociateClientVpnTargetNetworkRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateClientVpnTargetNetworkRequest]
   }
+  @scala.inline
+  implicit class AssociateClientVpnTargetNetworkRequestOps[Self <: AssociateClientVpnTargetNetworkRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

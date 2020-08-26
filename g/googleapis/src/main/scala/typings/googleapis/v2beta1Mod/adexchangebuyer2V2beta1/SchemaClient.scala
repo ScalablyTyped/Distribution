@@ -78,28 +78,58 @@ trait SchemaClient extends js.Object {
 
 object SchemaClient {
   @scala.inline
-  def apply(
-    clientAccountId: String = null,
-    clientName: String = null,
-    entityId: String = null,
-    entityName: String = null,
-    entityType: String = null,
-    partnerClientId: String = null,
-    role: String = null,
-    status: String = null,
-    visibleToSeller: js.UndefOr[Boolean] = js.undefined
-  ): SchemaClient = {
+  def apply(): SchemaClient = {
     val __obj = js.Dynamic.literal()
-    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId.asInstanceOf[js.Any])
-    if (clientName != null) __obj.updateDynamic("clientName")(clientName.asInstanceOf[js.Any])
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
-    if (entityName != null) __obj.updateDynamic("entityName")(entityName.asInstanceOf[js.Any])
-    if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
-    if (partnerClientId != null) __obj.updateDynamic("partnerClientId")(partnerClientId.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleToSeller)) __obj.updateDynamic("visibleToSeller")(visibleToSeller.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClient]
   }
+  @scala.inline
+  implicit class SchemaClientOps[Self <: SchemaClient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientAccountId(value: String): Self = this.set("clientAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientAccountId: Self = this.set("clientAccountId", js.undefined)
+    @scala.inline
+    def setClientName(value: String): Self = this.set("clientName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientName: Self = this.set("clientName", js.undefined)
+    @scala.inline
+    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    @scala.inline
+    def setEntityName(value: String): Self = this.set("entityName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityName: Self = this.set("entityName", js.undefined)
+    @scala.inline
+    def setEntityType(value: String): Self = this.set("entityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityType: Self = this.set("entityType", js.undefined)
+    @scala.inline
+    def setPartnerClientId(value: String): Self = this.set("partnerClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartnerClientId: Self = this.set("partnerClientId", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setVisibleToSeller(value: Boolean): Self = this.set("visibleToSeller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleToSeller: Self = this.set("visibleToSeller", js.undefined)
+  }
+  
 }
 

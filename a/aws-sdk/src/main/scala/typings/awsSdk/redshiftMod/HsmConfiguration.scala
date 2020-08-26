@@ -30,20 +30,44 @@ trait HsmConfiguration extends js.Object {
 
 object HsmConfiguration {
   @scala.inline
-  def apply(
-    Description: String = null,
-    HsmConfigurationIdentifier: String = null,
-    HsmIpAddress: String = null,
-    HsmPartitionName: String = null,
-    Tags: TagList = null
-  ): HsmConfiguration = {
+  def apply(): HsmConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (HsmConfigurationIdentifier != null) __obj.updateDynamic("HsmConfigurationIdentifier")(HsmConfigurationIdentifier.asInstanceOf[js.Any])
-    if (HsmIpAddress != null) __obj.updateDynamic("HsmIpAddress")(HsmIpAddress.asInstanceOf[js.Any])
-    if (HsmPartitionName != null) __obj.updateDynamic("HsmPartitionName")(HsmPartitionName.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[HsmConfiguration]
   }
+  @scala.inline
+  implicit class HsmConfigurationOps[Self <: HsmConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setHsmConfigurationIdentifier(value: String): Self = this.set("HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmConfigurationIdentifier: Self = this.set("HsmConfigurationIdentifier", js.undefined)
+    @scala.inline
+    def setHsmIpAddress(value: String): Self = this.set("HsmIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmIpAddress: Self = this.set("HsmIpAddress", js.undefined)
+    @scala.inline
+    def setHsmPartitionName(value: String): Self = this.set("HsmPartitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmPartitionName: Self = this.set("HsmPartitionName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ Matrix Client-Server SDK for Javascript
 | ------------------ | :-------------: |
 | Full name          | matrix-js-sdk |
 | Keywords           | matrix-org |
-| # releases         | 93 |
+| # releases         | 91 |
 | # dependents       | 34 |
-| # downloads        | 112072 |
+| # downloads        | 109495 |
 | # stars            | 0 |
 
 ## Links

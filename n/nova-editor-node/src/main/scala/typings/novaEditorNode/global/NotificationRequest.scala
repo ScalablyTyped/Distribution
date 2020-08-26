@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 class NotificationRequest protected ()
   extends typings.novaEditorNode.NotificationRequest {
   def this(identifier: String) = this()
-  /* CompleteClass */
-  override val identifier: String = js.native
 }
 

@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RangeSelectionChangedEvent extends AgGridEvent {
-  var finished: Boolean
-  var started: Boolean
+  var finished: Boolean = js.native
+  var started: Boolean = js.native
 }
 
 object RangeSelectionChangedEvent {
@@ -18,5 +19,22 @@ object RangeSelectionChangedEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectionChangedEvent]
   }
+  @scala.inline
+  implicit class RangeSelectionChangedEventOps[Self <: RangeSelectionChangedEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFinished(value: Boolean): Self = this.set("finished", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStarted(value: Boolean): Self = this.set("started", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -31,7 +31,46 @@ trait Module extends js.Object {
     StartColumn: Double,
     EndLine: Double,
     EndColumn: Double,
+    WholeWord: js.UndefOr[scala.Nothing],
+    MatchCase: js.UndefOr[scala.Nothing],
+    PatternSearch: Boolean
+  ): Boolean = js.native
+  def Find(
+    Target: String,
+    StartLine: Double,
+    StartColumn: Double,
+    EndLine: Double,
+    EndColumn: Double,
+    WholeWord: js.UndefOr[scala.Nothing],
+    MatchCase: Boolean
+  ): Boolean = js.native
+  def Find(
+    Target: String,
+    StartLine: Double,
+    StartColumn: Double,
+    EndLine: Double,
+    EndColumn: Double,
+    WholeWord: js.UndefOr[scala.Nothing],
+    MatchCase: Boolean,
+    PatternSearch: Boolean
+  ): Boolean = js.native
+  def Find(
+    Target: String,
+    StartLine: Double,
+    StartColumn: Double,
+    EndLine: Double,
+    EndColumn: Double,
     WholeWord: Boolean
+  ): Boolean = js.native
+  def Find(
+    Target: String,
+    StartLine: Double,
+    StartColumn: Double,
+    EndLine: Double,
+    EndColumn: Double,
+    WholeWord: Boolean,
+    MatchCase: js.UndefOr[scala.Nothing],
+    PatternSearch: Boolean
   ): Boolean = js.native
   def Find(
     Target: String,

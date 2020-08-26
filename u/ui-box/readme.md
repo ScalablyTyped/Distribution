@@ -1,7 +1,7 @@
 
 # Scala.js typings for ui-box
 
-Typings are for version 2.1.3
+Typings are for version 4.0.0
 
 ## Library description:
 Blazing Fast React UI Primitive
@@ -10,9 +10,9 @@ Blazing Fast React UI Primitive
 | ------------------ | :-------------: |
 | Full name          | ui-box |
 | Keywords           | react |
-| # releases         | 23 |
-| # dependents       | 10 |
-| # downloads        | 187042 |
+| # releases         | 22 |
+| # dependents       | 11 |
+| # downloads        | 190565 |
 | # stars            | 0 |
 
 ## Links

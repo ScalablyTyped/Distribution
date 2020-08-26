@@ -15,21 +15,8 @@ import scala.scalajs.js.annotation._
 class Shader ()
   extends typings.pixiJs.PIXI.Shader {
   def this(program: typings.pixiJs.PIXI.Program) = this()
+  def this(program: js.UndefOr[scala.Nothing], uniforms: js.Any) = this()
   def this(program: typings.pixiJs.PIXI.Program, uniforms: js.Any) = this()
-  /**
-    * Program that the shader uses
-    *
-    * @member {PIXI.Program} PIXI.Shader#program
-    */
-  /* CompleteClass */
-  override var program: typings.pixiJs.PIXI.Program = js.native
-  /**
-    * Shader uniform values, shortcut for `uniformGroup.uniforms`
-    * @readonly
-    * @member {object}
-    */
-  /* CompleteClass */
-  override val uniforms: js.Any = js.native
 }
 
 /* static members */
@@ -46,7 +33,11 @@ object Shader extends js.Object {
     * @returns {PIXI.Shader} an shiny new Pixi shader!
     */
   def from(): typings.pixiJs.PIXI.Shader = js.native
+  def from(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: js.UndefOr[scala.Nothing], uniforms: js.Any): typings.pixiJs.PIXI.Shader = js.native
+  def from(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String): typings.pixiJs.PIXI.Shader = js.native
+  def from(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String, uniforms: js.Any): typings.pixiJs.PIXI.Shader = js.native
   def from(vertexSrc: String): typings.pixiJs.PIXI.Shader = js.native
+  def from(vertexSrc: String, fragmentSrc: js.UndefOr[scala.Nothing], uniforms: js.Any): typings.pixiJs.PIXI.Shader = js.native
   def from(vertexSrc: String, fragmentSrc: String): typings.pixiJs.PIXI.Shader = js.native
   def from(vertexSrc: String, fragmentSrc: String, uniforms: js.Any): typings.pixiJs.PIXI.Shader = js.native
 }

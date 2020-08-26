@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object encodeWords extends js.Object {
   def apply(value: String): String = js.native
+  def apply(value: String, mimeWordEncoding: js.UndefOr[scala.Nothing], maxLength: Double): String = js.native
 }
 

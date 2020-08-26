@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.anon.EnableAutofillOnKeyPress
 import typings.officeUiFabricReact.autofillTypesMod.IAutofill
 import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
 import typings.react.mod.Component
-import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,55 +54,12 @@ class Autofill protected ()
     */
   var _updateValue: js.Any = js.native
   var _value: js.Any = js.native
-  /**
-    * The current index of the cursor in the input area. Returns -1 if the input element
-    * is not ready.
-    */
-  /* CompleteClass */
-  override var cursorLocation: Double | Null = js.native
-  /**
-    * The current input element.
-    */
-  /* CompleteClass */
-  override var inputElement: HTMLInputElement | Null = js.native
-  /**
-    * A boolean for whether or not there is a value selected in the input area.
-    */
-  /* CompleteClass */
-  override var isValueSelected: Boolean = js.native
-  /**
-    * the current index of where the selection ends. Returns -1 if the input element
-    * is not ready.
-    */
-  /* CompleteClass */
-  override var selectionEnd: Double | Null = js.native
-  /**
-    * The current index of where the selection starts. Returns -1 if the input element
-    * is not ready.
-    */
-  /* CompleteClass */
-  override var selectionStart: Double | Null = js.native
-  /**
-    * The current text value that the user has entered.
-    */
-  /* CompleteClass */
-  override var value: String = js.native
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MAutofill(nextProps: IAutofillProps): Unit = js.native
-  /**
-    * Clear all text in the input. Sets value to '';
-    */
-  /* CompleteClass */
-  override def clear(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MAutofill(): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MAutofill(): Unit = js.native
-  /**
-    * Focus the input element.
-    */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
 }
 
 /* static members */

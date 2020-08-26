@@ -10,11 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("InsertRtfCommand")
 @js.native
 class InsertRtfCommand ()
-  extends typings.devexpressWeb.InsertRtfCommand {
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.InsertRtfCommand
 

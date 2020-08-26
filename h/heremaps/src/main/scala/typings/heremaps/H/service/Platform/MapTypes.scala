@@ -9,27 +9,44 @@ import scala.scalajs.js.annotation._
 /**
   * pre-configured set of HERE tile layers for convenient use with the map.
   */
+@js.native
 trait MapTypes
   extends /* key */ StringDictionary[js.UndefOr[MapType]] {
-  var normal: js.UndefOr[MapType] = js.undefined
-  var satellite: js.UndefOr[MapType] = js.undefined
-  var terrain: js.UndefOr[MapType] = js.undefined
+  var normal: js.UndefOr[MapType] = js.native
+  var satellite: js.UndefOr[MapType] = js.native
+  var terrain: js.UndefOr[MapType] = js.native
 }
 
 object MapTypes {
   @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.UndefOr[MapType]] = null,
-    normal: MapType = null,
-    satellite: MapType = null,
-    terrain: MapType = null
-  ): MapTypes = {
+  def apply(): MapTypes = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
-    if (satellite != null) __obj.updateDynamic("satellite")(satellite.asInstanceOf[js.Any])
-    if (terrain != null) __obj.updateDynamic("terrain")(terrain.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTypes]
   }
+  @scala.inline
+  implicit class MapTypesOps[Self <: MapTypes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNormal(value: MapType): Self = this.set("normal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNormal: Self = this.set("normal", js.undefined)
+    @scala.inline
+    def setSatellite(value: MapType): Self = this.set("satellite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSatellite: Self = this.set("satellite", js.undefined)
+    @scala.inline
+    def setTerrain(value: MapType): Self = this.set("terrain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerrain: Self = this.set("terrain", js.undefined)
+  }
+  
 }
 

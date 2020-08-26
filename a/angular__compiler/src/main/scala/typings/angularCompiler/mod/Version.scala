@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Version")
 @js.native
 class Version protected ()
-  extends typings.angularCompiler.publicApiMod.Version {
+  extends typings.angularCompiler.compilerMod.Version {
   def this(full: String) = this()
 }
 

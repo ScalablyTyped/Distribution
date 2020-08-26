@@ -5,23 +5,44 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Properties of an OpDeprecation. */
+@js.native
 trait IOpDeprecation extends js.Object {
   /** OpDeprecation explanation */
-  var explanation: js.UndefOr[String | Null] = js.undefined
+  var explanation: js.UndefOr[String | Null] = js.native
   /** OpDeprecation version */
-  var version: js.UndefOr[Double | Null] = js.undefined
+  var version: js.UndefOr[Double | Null] = js.native
 }
 
 object IOpDeprecation {
   @scala.inline
-  def apply(
-    explanation: js.UndefOr[Null | String] = js.undefined,
-    version: js.UndefOr[Null | Double] = js.undefined
-  ): IOpDeprecation = {
+  def apply(): IOpDeprecation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(explanation)) __obj.updateDynamic("explanation")(explanation.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpDeprecation]
   }
+  @scala.inline
+  implicit class IOpDeprecationOps[Self <: IOpDeprecation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExplanation(value: String): Self = this.set("explanation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplanation: Self = this.set("explanation", js.undefined)
+    @scala.inline
+    def setExplanationNull: Self = this.set("explanation", null)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVersionNull: Self = this.set("version", null)
+  }
+  
 }
 

@@ -19,11 +19,30 @@ trait MultiplexProgramChannelDestinationSettings extends js.Object {
 
 object MultiplexProgramChannelDestinationSettings {
   @scala.inline
-  def apply(MultiplexId: stringMin1 = null, ProgramName: stringMin1 = null): MultiplexProgramChannelDestinationSettings = {
+  def apply(): MultiplexProgramChannelDestinationSettings = {
     val __obj = js.Dynamic.literal()
-    if (MultiplexId != null) __obj.updateDynamic("MultiplexId")(MultiplexId.asInstanceOf[js.Any])
-    if (ProgramName != null) __obj.updateDynamic("ProgramName")(ProgramName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiplexProgramChannelDestinationSettings]
   }
+  @scala.inline
+  implicit class MultiplexProgramChannelDestinationSettingsOps[Self <: MultiplexProgramChannelDestinationSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMultiplexId(value: stringMin1): Self = this.set("MultiplexId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiplexId: Self = this.set("MultiplexId", js.undefined)
+    @scala.inline
+    def setProgramName(value: stringMin1): Self = this.set("ProgramName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramName: Self = this.set("ProgramName", js.undefined)
+  }
+  
 }
 

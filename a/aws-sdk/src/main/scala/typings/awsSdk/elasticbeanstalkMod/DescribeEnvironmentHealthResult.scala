@@ -42,26 +42,56 @@ trait DescribeEnvironmentHealthResult extends js.Object {
 
 object DescribeEnvironmentHealthResult {
   @scala.inline
-  def apply(
-    ApplicationMetrics: ApplicationMetrics = null,
-    Causes: Causes = null,
-    Color: String = null,
-    EnvironmentName: EnvironmentName = null,
-    HealthStatus: String = null,
-    InstancesHealth: InstanceHealthSummary = null,
-    RefreshedAt: RefreshedAt = null,
-    Status: EnvironmentHealth = null
-  ): DescribeEnvironmentHealthResult = {
+  def apply(): DescribeEnvironmentHealthResult = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationMetrics != null) __obj.updateDynamic("ApplicationMetrics")(ApplicationMetrics.asInstanceOf[js.Any])
-    if (Causes != null) __obj.updateDynamic("Causes")(Causes.asInstanceOf[js.Any])
-    if (Color != null) __obj.updateDynamic("Color")(Color.asInstanceOf[js.Any])
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (HealthStatus != null) __obj.updateDynamic("HealthStatus")(HealthStatus.asInstanceOf[js.Any])
-    if (InstancesHealth != null) __obj.updateDynamic("InstancesHealth")(InstancesHealth.asInstanceOf[js.Any])
-    if (RefreshedAt != null) __obj.updateDynamic("RefreshedAt")(RefreshedAt.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEnvironmentHealthResult]
   }
+  @scala.inline
+  implicit class DescribeEnvironmentHealthResultOps[Self <: DescribeEnvironmentHealthResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationMetrics(value: ApplicationMetrics): Self = this.set("ApplicationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationMetrics: Self = this.set("ApplicationMetrics", js.undefined)
+    @scala.inline
+    def setCausesVarargs(value: Cause*): Self = this.set("Causes", js.Array(value :_*))
+    @scala.inline
+    def setCauses(value: Causes): Self = this.set("Causes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCauses: Self = this.set("Causes", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("Color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("Color", js.undefined)
+    @scala.inline
+    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    @scala.inline
+    def setHealthStatus(value: String): Self = this.set("HealthStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthStatus: Self = this.set("HealthStatus", js.undefined)
+    @scala.inline
+    def setInstancesHealth(value: InstanceHealthSummary): Self = this.set("InstancesHealth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesHealth: Self = this.set("InstancesHealth", js.undefined)
+    @scala.inline
+    def setRefreshedAt(value: RefreshedAt): Self = this.set("RefreshedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshedAt: Self = this.set("RefreshedAt", js.undefined)
+    @scala.inline
+    def setStatus(value: EnvironmentHealth): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

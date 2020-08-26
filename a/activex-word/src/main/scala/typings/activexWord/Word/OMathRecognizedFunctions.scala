@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OMathRecognizedFunctions extends js.Object {
-  val Application: typings.activexWord.Word.Application
-  val Count: Double
-  val Creator: Double
-  val Parent: js.Any
+  val Application: typings.activexWord.Word.Application = js.native
+  val Count: Double = js.native
+  val Creator: Double = js.native
+  val Parent: js.Any = js.native
   @JSName("Word.OMathRecognizedFunctions_typekey")
-  var WordDotOMathRecognizedFunctions_typekey: OMathRecognizedFunctions
-  def Add(Name: String): OMathRecognizedFunction
-  def Item(Index: js.Any): OMathRecognizedFunction
+  var WordDotOMathRecognizedFunctions_typekey: OMathRecognizedFunctions = js.native
+  def Add(Name: String): OMathRecognizedFunction = js.native
+  def Item(Index: js.Any): OMathRecognizedFunction = js.native
 }
 
 object OMathRecognizedFunctions {
@@ -30,5 +31,32 @@ object OMathRecognizedFunctions {
     __obj.updateDynamic("Word.OMathRecognizedFunctions_typekey")(WordDotOMathRecognizedFunctions_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OMathRecognizedFunctions]
   }
+  @scala.inline
+  implicit class OMathRecognizedFunctionsOps[Self <: OMathRecognizedFunctions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: String => OMathRecognizedFunction): Self = this.set("Add", js.Any.fromFunction1(value))
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItem(value: js.Any => OMathRecognizedFunction): Self = this.set("Item", js.Any.fromFunction1(value))
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordDotOMathRecognizedFunctions_typekey(value: OMathRecognizedFunctions): Self = this.set("Word.OMathRecognizedFunctions_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

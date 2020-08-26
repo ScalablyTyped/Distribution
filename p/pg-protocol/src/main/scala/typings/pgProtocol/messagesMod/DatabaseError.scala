@@ -21,10 +21,6 @@ class DatabaseError protected () extends Error {
   var internalQuery: js.UndefOr[String] = js.native
   val length: Double = js.native
   var line: js.UndefOr[String] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   @JSName("name")
   val name_DatabaseError: MessageName = js.native
   var position: js.UndefOr[String] = js.native

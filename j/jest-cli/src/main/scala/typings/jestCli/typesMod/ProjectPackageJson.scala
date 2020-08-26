@@ -8,24 +8,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProjectPackageJson extends js.Object {
-  var jest: js.UndefOr[PartialInitialOptions] = js.undefined
-  var scripts: js.UndefOr[Record[String, String]] = js.undefined
-  var `type`: js.UndefOr[commonjs | module] = js.undefined
+  var jest: js.UndefOr[PartialInitialOptions] = js.native
+  var scripts: js.UndefOr[Record[String, String]] = js.native
+  var `type`: js.UndefOr[commonjs | module] = js.native
 }
 
 object ProjectPackageJson {
   @scala.inline
-  def apply(
-    jest: PartialInitialOptions = null,
-    scripts: Record[String, String] = null,
-    `type`: commonjs | module = null
-  ): ProjectPackageJson = {
+  def apply(): ProjectPackageJson = {
     val __obj = js.Dynamic.literal()
-    if (jest != null) __obj.updateDynamic("jest")(jest.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectPackageJson]
   }
+  @scala.inline
+  implicit class ProjectPackageJsonOps[Self <: ProjectPackageJson] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJest(value: PartialInitialOptions): Self = this.set("jest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJest: Self = this.set("jest", js.undefined)
+    @scala.inline
+    def setScripts(value: Record[String, String]): Self = this.set("scripts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScripts: Self = this.set("scripts", js.undefined)
+    @scala.inline
+    def setType(value: commonjs | module): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

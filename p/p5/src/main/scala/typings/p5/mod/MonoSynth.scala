@@ -51,11 +51,29 @@ trait MonoSynth extends js.Object {
     *   releasing the envelope
     */
   def play(note: String): Unit = js.native
+  def play(
+    note: String,
+    velocity: js.UndefOr[scala.Nothing],
+    secondsFromNow: js.UndefOr[scala.Nothing],
+    sustainTime: Double
+  ): Unit = js.native
+  def play(note: String, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
+  def play(note: String, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double, sustainTime: Double): Unit = js.native
   def play(note: String, velocity: Double): Unit = js.native
+  def play(note: String, velocity: Double, secondsFromNow: js.UndefOr[scala.Nothing], sustainTime: Double): Unit = js.native
   def play(note: String, velocity: Double, secondsFromNow: Double): Unit = js.native
   def play(note: String, velocity: Double, secondsFromNow: Double, sustainTime: Double): Unit = js.native
   def play(note: Double): Unit = js.native
+  def play(
+    note: Double,
+    velocity: js.UndefOr[scala.Nothing],
+    secondsFromNow: js.UndefOr[scala.Nothing],
+    sustainTime: Double
+  ): Unit = js.native
+  def play(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
+  def play(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double, sustainTime: Double): Unit = js.native
   def play(note: Double, velocity: Double): Unit = js.native
+  def play(note: Double, velocity: Double, secondsFromNow: js.UndefOr[scala.Nothing], sustainTime: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double, sustainTime: Double): Unit = js.native
   /**
@@ -78,7 +96,16 @@ trait MonoSynth extends js.Object {
     *   (defaults to 0)
     */
   def setADSR(attackTime: Double): Unit = js.native
+  def setADSR(
+    attackTime: Double,
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double, releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Double, susRatio: js.UndefOr[scala.Nothing], releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
   /**
@@ -96,9 +123,11 @@ trait MonoSynth extends js.Object {
     *   at which to play
     */
   def triggerAttack(note: String): Unit = js.native
+  def triggerAttack(note: String, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
   def triggerAttack(note: String, velocity: Double): Unit = js.native
   def triggerAttack(note: String, velocity: Double, secondsFromNow: Double): Unit = js.native
   def triggerAttack(note: Double): Unit = js.native
+  def triggerAttack(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
   def triggerAttack(note: Double, velocity: Double): Unit = js.native
   def triggerAttack(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
   /**

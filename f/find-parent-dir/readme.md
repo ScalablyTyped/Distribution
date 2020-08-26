@@ -12,7 +12,7 @@ Finds the first parent directory that contains a given file or directory.
 | Keywords           | find, parent, dir, root, resolve, walk |
 | # releases         | 0 |
 | # dependents       | 114 |
-| # downloads        | 49985597 |
+| # downloads        | 49923419 |
 | # stars            | 4 |
 
 ## Links

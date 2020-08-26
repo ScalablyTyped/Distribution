@@ -45,12 +45,6 @@ class ScrollablePaneBase protected ()
   def componentDidUpdate_MScrollablePaneBase(prevProps: IScrollablePaneProps, prevState: IScrollablePaneState): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MScrollablePaneBase(): Unit = js.native
-  /** Triggers a layout update for the pane. */
-  /* CompleteClass */
-  override def forceLayoutUpdate(): Unit = js.native
-  /** Gets the current scroll position of the scrollable pane */
-  /* CompleteClass */
-  override def getScrollPosition(): Double = js.native
   def notifySubscribers(): Unit = js.native
   def removeSticky(sticky: Sticky): Unit = js.native
   def setStickiesDistanceFromTop(): Unit = js.native

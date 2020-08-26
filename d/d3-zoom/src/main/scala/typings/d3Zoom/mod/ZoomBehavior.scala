@@ -156,6 +156,16 @@ trait ZoomBehavior[ZoomRefElement /* <: ZoomedElementBaseType */, Datum]
     */
   def interpolate[InterpolationFactory /* <: js.Function2[/* a */ ZoomView, /* b */ ZoomView, js.Function1[/* t */ Double, ZoomView]] */](): InterpolationFactory = js.native
   /**
+    * Return the first currently-assigned listener matching the specified typenames, if any.
+    *
+    * @param typenames The typenames is a string containing one or more typename separated by whitespace.
+    * Each typename is a type, optionally followed by a period (.) and a name, such as "drag.foo"" and "drag.bar";
+    * the name allows multiple listeners to be registered for the same type. The type must be one of the following:
+    * start (after zooming begins [such as mousedown]), zoom (after a change to the zoom  transform [such as mousemove], or
+    * end (after an active pointer becomes inactive [such as on mouseup].)
+    */
+  def on(typenames: String): js.UndefOr[ValueFn[ZoomRefElement, Datum, Unit]] = js.native
+  /**
     * Remove the current event listeners for the specified typenames, if any, return the drag behavior.
     *
     * @param typenames The typenames is a string containing one or more typename separated by whitespace.
@@ -165,7 +175,7 @@ trait ZoomBehavior[ZoomRefElement /* <: ZoomedElementBaseType */, Datum]
     * end (after an active pointer becomes inactive [such as on mouseup].)
     * @param listener Use null to remove the listener.
     */
-  def on(typenames: String): this.type = js.native
+  def on(typenames: String, listener: Null): this.type = js.native
   /**
     * Set the event listener for the specified typenames and return the zoom behavior.
     * If an event listener was already registered for the same type and name,
@@ -183,17 +193,6 @@ trait ZoomBehavior[ZoomRefElement /* <: ZoomedElementBaseType */, Datum]
     * with this as the current DOM element.
     */
   def on(typenames: String, listener: ValueFn[ZoomRefElement, Datum, Unit]): this.type = js.native
-  /**
-    * Return the first currently-assigned listener matching the specified typenames, if any.
-    *
-    * @param typenames The typenames is a string containing one or more typename separated by whitespace.
-    * Each typename is a type, optionally followed by a period (.) and a name, such as "drag.foo"" and "drag.bar";
-    * the name allows multiple listeners to be registered for the same type. The type must be one of the following:
-    * start (after zooming begins [such as mousedown]), zoom (after a change to the zoom  transform [such as mousemove], or
-    * end (after an active pointer becomes inactive [such as on mouseup].)
-    */
-  @JSName("on")
-  def on_Union(typenames: String): js.UndefOr[ValueFn[ZoomRefElement, Datum, Unit]] = js.native
   /**
     * Scales the current zoom transform of the selected elements by k, such that the new k(1) = k(0)k.
     *

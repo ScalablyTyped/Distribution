@@ -105,874 +105,1489 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined @ionic/core.@ionic/core.JSX.IonSearchbar & std.Pick<react.react.HTMLAttributes<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonSearchbarElement>, 'hidden' | 'dir' | 'slot' | 'title' | 'color' | 'children' | 'className' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'contentEditable' | 'contextMenu' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'spellCheck' | 'tabIndex' | 'translate' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture'> & @ionic/react.@ionic/react/dist/types/components/IonicReactProps.IonicReactProps & react.react.RefAttributes<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonSearchbarElement> */
+@js.native
 trait IonSearchbarPickHTMLAttri extends js.Object {
-  var about: js.UndefOr[String] = js.undefined
-  var accessKey: js.UndefOr[String] = js.undefined
+  var about: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.native
   /**
     * If `true`, enable searchbar animation.
     */
-  var animated: js.UndefOr[Boolean] = js.undefined
-  var `aria-activedescendant`: js.UndefOr[String] = js.undefined
-  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
-  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
-  var `aria-colcount`: js.UndefOr[Double] = js.undefined
-  var `aria-colindex`: js.UndefOr[Double] = js.undefined
-  var `aria-colspan`: js.UndefOr[Double] = js.undefined
-  var `aria-controls`: js.UndefOr[String] = js.undefined
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
-  var `aria-describedby`: js.UndefOr[String] = js.undefined
-  var `aria-details`: js.UndefOr[String] = js.undefined
-  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
-  var `aria-errormessage`: js.UndefOr[String] = js.undefined
-  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
-  var `aria-flowto`: js.UndefOr[String] = js.undefined
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
-  var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
-  var `aria-label`: js.UndefOr[String] = js.undefined
-  var `aria-labelledby`: js.UndefOr[String] = js.undefined
-  var `aria-level`: js.UndefOr[Double] = js.undefined
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
-  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
-  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
-  var `aria-owns`: js.UndefOr[String] = js.undefined
-  var `aria-placeholder`: js.UndefOr[String] = js.undefined
-  var `aria-posinset`: js.UndefOr[Double] = js.undefined
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
-  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
-  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.undefined
-  var `aria-required`: js.UndefOr[Boolean] = js.undefined
-  var `aria-roledescription`: js.UndefOr[String] = js.undefined
-  var `aria-rowcount`: js.UndefOr[Double] = js.undefined
-  var `aria-rowindex`: js.UndefOr[Double] = js.undefined
-  var `aria-rowspan`: js.UndefOr[Double] = js.undefined
-  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
-  var `aria-setsize`: js.UndefOr[Double] = js.undefined
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
-  var `aria-valuemax`: js.UndefOr[Double] = js.undefined
-  var `aria-valuemin`: js.UndefOr[Double] = js.undefined
-  var `aria-valuenow`: js.UndefOr[Double] = js.undefined
-  var `aria-valuetext`: js.UndefOr[String] = js.undefined
-  var autoCapitalize: js.UndefOr[String] = js.undefined
-  var autoCorrect: js.UndefOr[String] = js.undefined
-  var autoSave: js.UndefOr[String] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.native
+  var `aria-activedescendant`: js.UndefOr[String] = js.native
+  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-colcount`: js.UndefOr[Double] = js.native
+  var `aria-colindex`: js.UndefOr[Double] = js.native
+  var `aria-colspan`: js.UndefOr[Double] = js.native
+  var `aria-controls`: js.UndefOr[String] = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-details`: js.UndefOr[String] = js.native
+  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-flowto`: js.UndefOr[String] = js.native
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-level`: js.UndefOr[Double] = js.native
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  var `aria-owns`: js.UndefOr[String] = js.native
+  var `aria-placeholder`: js.UndefOr[String] = js.native
+  var `aria-posinset`: js.UndefOr[Double] = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.native
+  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-roledescription`: js.UndefOr[String] = js.native
+  var `aria-rowcount`: js.UndefOr[Double] = js.native
+  var `aria-rowindex`: js.UndefOr[Double] = js.native
+  var `aria-rowspan`: js.UndefOr[Double] = js.native
+  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-setsize`: js.UndefOr[Double] = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  var `aria-valuemax`: js.UndefOr[Double] = js.native
+  var `aria-valuemin`: js.UndefOr[Double] = js.native
+  var `aria-valuenow`: js.UndefOr[Double] = js.native
+  var `aria-valuetext`: js.UndefOr[String] = js.native
+  var autoCapitalize: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.native
+  var autoSave: js.UndefOr[String] = js.native
   /**
     * Set the input's autocomplete property.
     */
-  var autocomplete: js.UndefOr[AutocompleteTypes] = js.undefined
+  var autocomplete: js.UndefOr[AutocompleteTypes] = js.native
   /**
     * Set the input's autocorrect property.
     */
-  var autocorrect: js.UndefOr[on | off] = js.undefined
+  var autocorrect: js.UndefOr[on | off] = js.native
   /**
     * Set the cancel button icon. Only applies to `md` mode. Defaults to `"arrow-back-sharp"`.
     */
-  var cancelButtonIcon: js.UndefOr[String] = js.undefined
+  var cancelButtonIcon: js.UndefOr[String] = js.native
   /**
     * Set the the cancel button text. Only applies to `ios` mode.
     */
-  var cancelButtonText: js.UndefOr[String] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var `class`: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
+  var cancelButtonText: js.UndefOr[String] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var `class`: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
   /**
     * Set the clear icon. Defaults to `"close-circle"` for `ios` and `"close-sharp"` for `md`.
     */
-  var clearIcon: js.UndefOr[String] = js.undefined
+  var clearIcon: js.UndefOr[String] = js.native
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color with String] = js.undefined
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
-  var contextMenu: js.UndefOr[String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
-  var datatype: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[Color] with js.UndefOr[String] = js.native
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  var contextMenu: js.UndefOr[String] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+  var datatype: js.UndefOr[String] = js.native
   /**
     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke.
     */
-  var debounce: js.UndefOr[Double] = js.undefined
-  var defaultChecked: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
+  var debounce: js.UndefOr[Double] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+  var dir: js.UndefOr[String] = js.native
   /**
     * If `true`, the user cannot interact with the input.
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var draggable: js.UndefOr[Booleanish] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Booleanish] = js.native
   /**
     * A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.
     */
-  var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var inlist: js.UndefOr[js.Any] = js.undefined
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[String] = js.native
+  var inlist: js.UndefOr[js.Any] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
   /**
     * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
-  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
-  var is: js.UndefOr[String] = js.undefined
-  var itemID: js.UndefOr[String] = js.undefined
-  var itemProp: js.UndefOr[String] = js.undefined
-  var itemRef: js.UndefOr[String] = js.undefined
-  var itemScope: js.UndefOr[Boolean] = js.undefined
-  var itemType: js.UndefOr[String] = js.undefined
-  var key: js.UndefOr[Key] = js.undefined
-  var lang: js.UndefOr[String] = js.undefined
+  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var is: js.UndefOr[String] = js.native
+  var itemID: js.UndefOr[String] = js.native
+  var itemProp: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemType: js.UndefOr[String] = js.native
+  var key: js.UndefOr[Key] = js.native
+  var lang: js.UndefOr[String] = js.native
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.undefined
-  var onAbort: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onAbortCapture: js.UndefOr[js.Any] = js.undefined
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onAnimationEndCapture: js.UndefOr[js.Any] = js.undefined
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.undefined
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onAnimationStartCapture: js.UndefOr[js.Any] = js.undefined
-  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onAuxClickCapture: js.UndefOr[js.Any] = js.undefined
-  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onBeforeInputCapture: js.UndefOr[js.Any] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onBlurCapture: js.UndefOr[js.Any] = js.undefined
-  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onCanPlayCapture: js.UndefOr[js.Any] = js.undefined
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.undefined
-  var onChange: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onChangeCapture: js.UndefOr[js.Any] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onClickCapture: js.UndefOr[js.Any] = js.undefined
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onCompositionEndCapture: js.UndefOr[js.Any] = js.undefined
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onCompositionStartCapture: js.UndefOr[js.Any] = js.undefined
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.undefined
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onContextMenuCapture: js.UndefOr[js.Any] = js.undefined
-  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onCopyCapture: js.UndefOr[js.Any] = js.undefined
-  var onCut: js.UndefOr[ClipboardEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onCutCapture: js.UndefOr[js.Any] = js.undefined
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDoubleClickCapture: js.UndefOr[js.Any] = js.undefined
-  var onDrag: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDragCapture: js.UndefOr[js.Any] = js.undefined
-  var onDragEnd: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDragEndCapture: js.UndefOr[js.Any] = js.undefined
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDragEnterCapture: js.UndefOr[js.Any] = js.undefined
-  var onDragExit: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDragExitCapture: js.UndefOr[js.Any] = js.undefined
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDragLeaveCapture: js.UndefOr[js.Any] = js.undefined
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDragOverCapture: js.UndefOr[js.Any] = js.undefined
-  var onDragStart: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDragStartCapture: js.UndefOr[js.Any] = js.undefined
-  var onDrop: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDropCapture: js.UndefOr[js.Any] = js.undefined
-  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onDurationChangeCapture: js.UndefOr[js.Any] = js.undefined
-  var onEmptied: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onEmptiedCapture: js.UndefOr[js.Any] = js.undefined
-  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onEncryptedCapture: js.UndefOr[js.Any] = js.undefined
-  var onEnded: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onEndedCapture: js.UndefOr[js.Any] = js.undefined
-  var onError: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onErrorCapture: js.UndefOr[js.Any] = js.undefined
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onFocusCapture: js.UndefOr[js.Any] = js.undefined
-  var onGotPointerCapture: js.UndefOr[js.Any] = js.undefined
-  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
-  var onInput: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onInputCapture: js.UndefOr[js.Any] = js.undefined
-  var onInvalid: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onInvalidCapture: js.UndefOr[js.Any] = js.undefined
+  var mode: js.UndefOr[ios | md] = js.native
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onAbortCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onAnimationEndCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onAnimationStartCapture: js.UndefOr[js.Any] = js.native
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onAuxClickCapture: js.UndefOr[js.Any] = js.native
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onBeforeInputCapture: js.UndefOr[js.Any] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onBlurCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onCanPlayCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.native
+  var onChange: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onChangeCapture: js.UndefOr[js.Any] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onClickCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onCompositionEndCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onCompositionStartCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onContextMenuCapture: js.UndefOr[js.Any] = js.native
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onCopyCapture: js.UndefOr[js.Any] = js.native
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onCutCapture: js.UndefOr[js.Any] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDoubleClickCapture: js.UndefOr[js.Any] = js.native
+  var onDrag: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDragCapture: js.UndefOr[js.Any] = js.native
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDragEndCapture: js.UndefOr[js.Any] = js.native
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDragEnterCapture: js.UndefOr[js.Any] = js.native
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDragExitCapture: js.UndefOr[js.Any] = js.native
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDragLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDragOverCapture: js.UndefOr[js.Any] = js.native
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDragStartCapture: js.UndefOr[js.Any] = js.native
+  var onDrop: js.UndefOr[DragEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDropCapture: js.UndefOr[js.Any] = js.native
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onDurationChangeCapture: js.UndefOr[js.Any] = js.native
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onEmptiedCapture: js.UndefOr[js.Any] = js.native
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onEncryptedCapture: js.UndefOr[js.Any] = js.native
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onEndedCapture: js.UndefOr[js.Any] = js.native
+  var onError: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onErrorCapture: js.UndefOr[js.Any] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onFocusCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onInput: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onInputCapture: js.UndefOr[js.Any] = js.native
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onInvalidCapture: js.UndefOr[js.Any] = js.native
   /**
     * Emitted when the input loses focus.
     */
-  var onIonBlur: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonBlur: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the cancel button is clicked.
     */
-  var onIonCancel: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonCancel: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the value has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SearchbarChangeEventDetail], Unit]] = js.undefined
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SearchbarChangeEventDetail], Unit]] = js.native
   /**
     * Emitted when the clear input button is clicked.
     */
-  var onIonClear: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonClear: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the input has focus.
     */
-  var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when a keyboard input occurred.
     */
-  var onIonInput: js.UndefOr[js.Function1[/* event */ CustomEvent[KeyboardEvent], Unit]] = js.undefined
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onKeyDownCapture: js.UndefOr[js.Any] = js.undefined
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onKeyPressCapture: js.UndefOr[js.Any] = js.undefined
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onKeyUpCapture: js.UndefOr[js.Any] = js.undefined
-  var onLoad: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onLoadCapture: js.UndefOr[js.Any] = js.undefined
-  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onLoadStartCapture: js.UndefOr[js.Any] = js.undefined
-  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onLoadedDataCapture: js.UndefOr[js.Any] = js.undefined
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.undefined
-  var onLostPointerCapture: js.UndefOr[js.Any] = js.undefined
-  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onMouseDownCapture: js.UndefOr[js.Any] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onMouseMoveCapture: js.UndefOr[js.Any] = js.undefined
-  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onMouseOutCapture: js.UndefOr[js.Any] = js.undefined
-  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onMouseOverCapture: js.UndefOr[js.Any] = js.undefined
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onMouseUpCapture: js.UndefOr[js.Any] = js.undefined
-  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPasteCapture: js.UndefOr[js.Any] = js.undefined
-  var onPause: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPauseCapture: js.UndefOr[js.Any] = js.undefined
-  var onPlay: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPlayCapture: js.UndefOr[js.Any] = js.undefined
-  var onPlaying: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPlayingCapture: js.UndefOr[js.Any] = js.undefined
-  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPointerCancelCapture: js.UndefOr[js.Any] = js.undefined
-  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPointerDownCapture: js.UndefOr[js.Any] = js.undefined
-  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPointerEnterCapture: js.UndefOr[js.Any] = js.undefined
-  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.undefined
-  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPointerMoveCapture: js.UndefOr[js.Any] = js.undefined
-  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPointerOutCapture: js.UndefOr[js.Any] = js.undefined
-  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPointerOverCapture: js.UndefOr[js.Any] = js.undefined
-  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onPointerUpCapture: js.UndefOr[js.Any] = js.undefined
-  var onProgress: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onProgressCapture: js.UndefOr[js.Any] = js.undefined
-  var onRateChange: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onRateChangeCapture: js.UndefOr[js.Any] = js.undefined
-  var onReset: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onResetCapture: js.UndefOr[js.Any] = js.undefined
-  var onScroll: js.UndefOr[UIEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onScrollCapture: js.UndefOr[js.Any] = js.undefined
-  var onSeeked: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onSeekedCapture: js.UndefOr[js.Any] = js.undefined
-  var onSeeking: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onSeekingCapture: js.UndefOr[js.Any] = js.undefined
-  var onSelect: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onSelectCapture: js.UndefOr[js.Any] = js.undefined
-  var onStalled: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onStalledCapture: js.UndefOr[js.Any] = js.undefined
-  var onSubmit: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onSubmitCapture: js.UndefOr[js.Any] = js.undefined
-  var onSuspend: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onSuspendCapture: js.UndefOr[js.Any] = js.undefined
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.undefined
-  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onTouchCancelCapture: js.UndefOr[js.Any] = js.undefined
-  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onTouchEndCapture: js.UndefOr[js.Any] = js.undefined
-  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onTouchMoveCapture: js.UndefOr[js.Any] = js.undefined
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onTouchStartCapture: js.UndefOr[js.Any] = js.undefined
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onTransitionEndCapture: js.UndefOr[js.Any] = js.undefined
-  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.undefined
-  var onWaiting: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onWaitingCapture: js.UndefOr[js.Any] = js.undefined
-  var onWheel: js.UndefOr[WheelEventHandler[HTMLIonSearchbarElement]] = js.undefined
-  var onWheelCapture: js.UndefOr[js.Any] = js.undefined
+  var onIonInput: js.UndefOr[js.Function1[/* event */ CustomEvent[KeyboardEvent], Unit]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onKeyDownCapture: js.UndefOr[js.Any] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onKeyPressCapture: js.UndefOr[js.Any] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onKeyUpCapture: js.UndefOr[js.Any] = js.native
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onLoadCapture: js.UndefOr[js.Any] = js.native
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onLoadStartCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onLoadedDataCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onMouseDownCapture: js.UndefOr[js.Any] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onMouseMoveCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onMouseOutCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onMouseOverCapture: js.UndefOr[js.Any] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onMouseUpCapture: js.UndefOr[js.Any] = js.native
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPasteCapture: js.UndefOr[js.Any] = js.native
+  var onPause: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPauseCapture: js.UndefOr[js.Any] = js.native
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPlayCapture: js.UndefOr[js.Any] = js.native
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPlayingCapture: js.UndefOr[js.Any] = js.native
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPointerCancelCapture: js.UndefOr[js.Any] = js.native
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPointerDownCapture: js.UndefOr[js.Any] = js.native
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPointerEnterCapture: js.UndefOr[js.Any] = js.native
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPointerMoveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPointerOutCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPointerOverCapture: js.UndefOr[js.Any] = js.native
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onPointerUpCapture: js.UndefOr[js.Any] = js.native
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onProgressCapture: js.UndefOr[js.Any] = js.native
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onRateChangeCapture: js.UndefOr[js.Any] = js.native
+  var onReset: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onResetCapture: js.UndefOr[js.Any] = js.native
+  var onScroll: js.UndefOr[UIEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onScrollCapture: js.UndefOr[js.Any] = js.native
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onSeekedCapture: js.UndefOr[js.Any] = js.native
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onSeekingCapture: js.UndefOr[js.Any] = js.native
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onSelectCapture: js.UndefOr[js.Any] = js.native
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onStalledCapture: js.UndefOr[js.Any] = js.native
+  var onSubmit: js.UndefOr[FormEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onSubmitCapture: js.UndefOr[js.Any] = js.native
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onSuspendCapture: js.UndefOr[js.Any] = js.native
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onTouchCancelCapture: js.UndefOr[js.Any] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Any] = js.native
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onTouchMoveCapture: js.UndefOr[js.Any] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onTouchStartCapture: js.UndefOr[js.Any] = js.native
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onTransitionEndCapture: js.UndefOr[js.Any] = js.native
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.native
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onWaitingCapture: js.UndefOr[js.Any] = js.native
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLIonSearchbarElement]] = js.native
+  var onWheelCapture: js.UndefOr[js.Any] = js.native
   /**
     * Set the input's placeholder. `placeholder` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
     */
-  var placeholder: js.UndefOr[String] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
-  var property: js.UndefOr[String] = js.undefined
-  var radioGroup: js.UndefOr[String] = js.undefined
-  var ref: js.UndefOr[Ref[HTMLIonSearchbarElement]] = js.undefined
-  var resource: js.UndefOr[String] = js.undefined
-  var results: js.UndefOr[Double] = js.undefined
-  var role: js.UndefOr[String] = js.undefined
+  var placeholder: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[Ref[HTMLIonSearchbarElement]] = js.native
+  var resource: js.UndefOr[String] = js.native
+  var results: js.UndefOr[Double] = js.native
+  var role: js.UndefOr[String] = js.native
   /**
     * The icon to use as the search icon. Defaults to `"search-outline"` in `ios` mode and `"search-sharp"` in `md` mode.
     */
-  var searchIcon: js.UndefOr[String] = js.undefined
-  var security: js.UndefOr[String] = js.undefined
+  var searchIcon: js.UndefOr[String] = js.native
+  var security: js.UndefOr[String] = js.native
   /**
     * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
     */
-  var showCancelButton: js.UndefOr[never | focus | always] = js.undefined
-  var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Booleanish] = js.undefined
+  var showCancelButton: js.UndefOr[never | focus | always] = js.native
+  var slot: js.UndefOr[String] = js.native
+  var spellCheck: js.UndefOr[Booleanish] = js.native
   /**
     * If `true`, enable spellcheck on the input.
     */
-  var spellcheck: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
-  var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var translate: js.UndefOr[yes | no] = js.undefined
+  var spellcheck: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
+  var title: js.UndefOr[String] = js.native
+  var translate: js.UndefOr[yes | no] = js.native
   /**
     * Set the type of the input.
     */
-  var `type`: js.UndefOr[text | password | email | number | search | tel | url] = js.undefined
-  var typeof: js.UndefOr[String] = js.undefined
-  var unselectable: js.UndefOr[on | off] = js.undefined
+  var `type`: js.UndefOr[text | password | email | number | search | tel | url] = js.native
+  var typeof: js.UndefOr[String] = js.native
+  var unselectable: js.UndefOr[on | off] = js.native
   /**
     * the value of the searchbar.
     */
-  var value: js.UndefOr[String | Null] = js.undefined
-  var vocab: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.native
+  var vocab: js.UndefOr[String] = js.native
 }
 
 object IonSearchbarPickHTMLAttri {
   @scala.inline
-  def apply(
-    about: String = null,
-    accessKey: String = null,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: js.UndefOr[Double] = js.undefined,
-    `aria-colindex`: js.UndefOr[Double] = js.undefined,
-    `aria-colspan`: js.UndefOr[Double] = js.undefined,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: js.UndefOr[Double] = js.undefined,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: js.UndefOr[Double] = js.undefined,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
-    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
-    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: js.UndefOr[Double] = js.undefined,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
-    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
-    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
-    `aria-valuetext`: String = null,
-    autoCapitalize: String = null,
-    autoCorrect: String = null,
-    autoSave: String = null,
-    autocomplete: AutocompleteTypes = null,
-    autocorrect: on | off = null,
-    cancelButtonIcon: String = null,
-    cancelButtonText: String = null,
-    children: ReactNode = null,
-    `class`: String = null,
-    className: String = null,
-    clearIcon: String = null,
-    color: Color with String = null,
-    contentEditable: Booleanish | inherit = null,
-    contextMenu: String = null,
-    dangerouslySetInnerHTML: Html = null,
-    datatype: String = null,
-    debounce: js.UndefOr[Double] = js.undefined,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | Double | js.Array[String] = null,
-    dir: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    draggable: js.UndefOr[Booleanish] = js.undefined,
-    enterkeyhint: enter | done | go | next | previous | search | send = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    inlist: js.Any = null,
-    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
-    inputmode: none | text | tel | url | email | numeric | decimal | search = null,
-    is: String = null,
-    itemID: String = null,
-    itemProp: String = null,
-    itemRef: String = null,
-    itemScope: js.UndefOr[Boolean] = js.undefined,
-    itemType: String = null,
-    key: Key = null,
-    lang: String = null,
-    mode: ios | md = null,
-    onAbort: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onAbortCapture: js.Any = null,
-    onAnimationEnd: AnimationEvent[HTMLIonSearchbarElement] => Unit = null,
-    onAnimationEndCapture: js.Any = null,
-    onAnimationIteration: AnimationEvent[HTMLIonSearchbarElement] => Unit = null,
-    onAnimationIterationCapture: js.Any = null,
-    onAnimationStart: AnimationEvent[HTMLIonSearchbarElement] => Unit = null,
-    onAnimationStartCapture: js.Any = null,
-    onAuxClick: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onAuxClickCapture: js.Any = null,
-    onBeforeInput: FormEvent[HTMLIonSearchbarElement] => Unit = null,
-    onBeforeInputCapture: js.Any = null,
-    onBlur: FocusEvent[HTMLIonSearchbarElement] => Unit = null,
-    onBlurCapture: js.Any = null,
-    onCanPlay: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onCanPlayCapture: js.Any = null,
-    onCanPlayThrough: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onCanPlayThroughCapture: js.Any = null,
-    onChange: FormEvent[HTMLIonSearchbarElement] => Unit = null,
-    onChangeCapture: js.Any = null,
-    onClick: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onClickCapture: js.Any = null,
-    onCompositionEnd: CompositionEvent[HTMLIonSearchbarElement] => Unit = null,
-    onCompositionEndCapture: js.Any = null,
-    onCompositionStart: CompositionEvent[HTMLIonSearchbarElement] => Unit = null,
-    onCompositionStartCapture: js.Any = null,
-    onCompositionUpdate: CompositionEvent[HTMLIonSearchbarElement] => Unit = null,
-    onCompositionUpdateCapture: js.Any = null,
-    onContextMenu: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onContextMenuCapture: js.Any = null,
-    onCopy: ClipboardEvent[HTMLIonSearchbarElement] => Unit = null,
-    onCopyCapture: js.Any = null,
-    onCut: ClipboardEvent[HTMLIonSearchbarElement] => Unit = null,
-    onCutCapture: js.Any = null,
-    onDoubleClick: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onDoubleClickCapture: js.Any = null,
-    onDrag: DragEvent[HTMLIonSearchbarElement] => Unit = null,
-    onDragCapture: js.Any = null,
-    onDragEnd: DragEvent[HTMLIonSearchbarElement] => Unit = null,
-    onDragEndCapture: js.Any = null,
-    onDragEnter: DragEvent[HTMLIonSearchbarElement] => Unit = null,
-    onDragEnterCapture: js.Any = null,
-    onDragExit: DragEvent[HTMLIonSearchbarElement] => Unit = null,
-    onDragExitCapture: js.Any = null,
-    onDragLeave: DragEvent[HTMLIonSearchbarElement] => Unit = null,
-    onDragLeaveCapture: js.Any = null,
-    onDragOver: DragEvent[HTMLIonSearchbarElement] => Unit = null,
-    onDragOverCapture: js.Any = null,
-    onDragStart: DragEvent[HTMLIonSearchbarElement] => Unit = null,
-    onDragStartCapture: js.Any = null,
-    onDrop: DragEvent[HTMLIonSearchbarElement] => Unit = null,
-    onDropCapture: js.Any = null,
-    onDurationChange: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onDurationChangeCapture: js.Any = null,
-    onEmptied: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onEmptiedCapture: js.Any = null,
-    onEncrypted: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onEncryptedCapture: js.Any = null,
-    onEnded: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onEndedCapture: js.Any = null,
-    onError: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onErrorCapture: js.Any = null,
-    onFocus: FocusEvent[HTMLIonSearchbarElement] => Unit = null,
-    onFocusCapture: js.Any = null,
-    onGotPointerCapture: js.Any = null,
-    onGotPointerCaptureCapture: js.Any = null,
-    onInput: FormEvent[HTMLIonSearchbarElement] => Unit = null,
-    onInputCapture: js.Any = null,
-    onInvalid: FormEvent[HTMLIonSearchbarElement] => Unit = null,
-    onInvalidCapture: js.Any = null,
-    onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonCancel: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[SearchbarChangeEventDetail] => Unit = null,
-    onIonClear: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonInput: /* event */ CustomEvent[KeyboardEvent] => Unit = null,
-    onKeyDown: typings.react.mod.KeyboardEvent[HTMLIonSearchbarElement] => Unit = null,
-    onKeyDownCapture: js.Any = null,
-    onKeyPress: typings.react.mod.KeyboardEvent[HTMLIonSearchbarElement] => Unit = null,
-    onKeyPressCapture: js.Any = null,
-    onKeyUp: typings.react.mod.KeyboardEvent[HTMLIonSearchbarElement] => Unit = null,
-    onKeyUpCapture: js.Any = null,
-    onLoad: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onLoadCapture: js.Any = null,
-    onLoadStart: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onLoadStartCapture: js.Any = null,
-    onLoadedData: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onLoadedDataCapture: js.Any = null,
-    onLoadedMetadata: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onLoadedMetadataCapture: js.Any = null,
-    onLostPointerCapture: js.Any = null,
-    onLostPointerCaptureCapture: js.Any = null,
-    onMouseDown: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onMouseDownCapture: js.Any = null,
-    onMouseEnter: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onMouseMove: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onMouseMoveCapture: js.Any = null,
-    onMouseOut: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onMouseOutCapture: js.Any = null,
-    onMouseOver: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onMouseOverCapture: js.Any = null,
-    onMouseUp: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit = null,
-    onMouseUpCapture: js.Any = null,
-    onPaste: ClipboardEvent[HTMLIonSearchbarElement] => Unit = null,
-    onPasteCapture: js.Any = null,
-    onPause: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onPauseCapture: js.Any = null,
-    onPlay: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onPlayCapture: js.Any = null,
-    onPlaying: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onPlayingCapture: js.Any = null,
-    onPointerCancel: PointerEvent[HTMLIonSearchbarElement] => Unit = null,
-    onPointerCancelCapture: js.Any = null,
-    onPointerDown: PointerEvent[HTMLIonSearchbarElement] => Unit = null,
-    onPointerDownCapture: js.Any = null,
-    onPointerEnter: PointerEvent[HTMLIonSearchbarElement] => Unit = null,
-    onPointerEnterCapture: js.Any = null,
-    onPointerLeave: PointerEvent[HTMLIonSearchbarElement] => Unit = null,
-    onPointerLeaveCapture: js.Any = null,
-    onPointerMove: PointerEvent[HTMLIonSearchbarElement] => Unit = null,
-    onPointerMoveCapture: js.Any = null,
-    onPointerOut: PointerEvent[HTMLIonSearchbarElement] => Unit = null,
-    onPointerOutCapture: js.Any = null,
-    onPointerOver: PointerEvent[HTMLIonSearchbarElement] => Unit = null,
-    onPointerOverCapture: js.Any = null,
-    onPointerUp: PointerEvent[HTMLIonSearchbarElement] => Unit = null,
-    onPointerUpCapture: js.Any = null,
-    onProgress: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onProgressCapture: js.Any = null,
-    onRateChange: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onRateChangeCapture: js.Any = null,
-    onReset: FormEvent[HTMLIonSearchbarElement] => Unit = null,
-    onResetCapture: js.Any = null,
-    onScroll: UIEvent[HTMLIonSearchbarElement, NativeUIEvent] => Unit = null,
-    onScrollCapture: js.Any = null,
-    onSeeked: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onSeekedCapture: js.Any = null,
-    onSeeking: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onSeekingCapture: js.Any = null,
-    onSelect: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onSelectCapture: js.Any = null,
-    onStalled: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onStalledCapture: js.Any = null,
-    onSubmit: FormEvent[HTMLIonSearchbarElement] => Unit = null,
-    onSubmitCapture: js.Any = null,
-    onSuspend: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onSuspendCapture: js.Any = null,
-    onTimeUpdate: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onTimeUpdateCapture: js.Any = null,
-    onTouchCancel: TouchEvent[HTMLIonSearchbarElement] => Unit = null,
-    onTouchCancelCapture: js.Any = null,
-    onTouchEnd: TouchEvent[HTMLIonSearchbarElement] => Unit = null,
-    onTouchEndCapture: js.Any = null,
-    onTouchMove: TouchEvent[HTMLIonSearchbarElement] => Unit = null,
-    onTouchMoveCapture: js.Any = null,
-    onTouchStart: TouchEvent[HTMLIonSearchbarElement] => Unit = null,
-    onTouchStartCapture: js.Any = null,
-    onTransitionEnd: TransitionEvent[HTMLIonSearchbarElement] => Unit = null,
-    onTransitionEndCapture: js.Any = null,
-    onVolumeChange: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onVolumeChangeCapture: js.Any = null,
-    onWaiting: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit = null,
-    onWaitingCapture: js.Any = null,
-    onWheel: WheelEvent[HTMLIonSearchbarElement] => Unit = null,
-    onWheelCapture: js.Any = null
-  ): IonSearchbarPickHTMLAttri = {
-    val __obj = js.Dynamic.literal()
-    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (autocorrect != null) __obj.updateDynamic("autocorrect")(autocorrect.asInstanceOf[js.Any])
-    if (cancelButtonIcon != null) __obj.updateDynamic("cancelButtonIcon")(cancelButtonIcon.asInstanceOf[js.Any])
-    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(debounce)) __obj.updateDynamic("debounce")(debounce.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (enterkeyhint != null) __obj.updateDynamic("enterkeyhint")(enterkeyhint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
-    if (onAbortCapture != null) __obj.updateDynamic("onAbortCapture")(onAbortCapture.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onAnimationEndCapture != null) __obj.updateDynamic("onAnimationEndCapture")(onAnimationEndCapture.asInstanceOf[js.Any])
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
-    if (onAnimationIterationCapture != null) __obj.updateDynamic("onAnimationIterationCapture")(onAnimationIterationCapture.asInstanceOf[js.Any])
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
-    if (onAnimationStartCapture != null) __obj.updateDynamic("onAnimationStartCapture")(onAnimationStartCapture.asInstanceOf[js.Any])
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
-    if (onAuxClickCapture != null) __obj.updateDynamic("onAuxClickCapture")(onAuxClickCapture.asInstanceOf[js.Any])
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
-    if (onBeforeInputCapture != null) __obj.updateDynamic("onBeforeInputCapture")(onBeforeInputCapture.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onBlurCapture != null) __obj.updateDynamic("onBlurCapture")(onBlurCapture.asInstanceOf[js.Any])
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
-    if (onCanPlayCapture != null) __obj.updateDynamic("onCanPlayCapture")(onCanPlayCapture.asInstanceOf[js.Any])
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1(onCanPlayThrough))
-    if (onCanPlayThroughCapture != null) __obj.updateDynamic("onCanPlayThroughCapture")(onCanPlayThroughCapture.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onChangeCapture != null) __obj.updateDynamic("onChangeCapture")(onChangeCapture.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onClickCapture != null) __obj.updateDynamic("onClickCapture")(onClickCapture.asInstanceOf[js.Any])
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
-    if (onCompositionEndCapture != null) __obj.updateDynamic("onCompositionEndCapture")(onCompositionEndCapture.asInstanceOf[js.Any])
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
-    if (onCompositionStartCapture != null) __obj.updateDynamic("onCompositionStartCapture")(onCompositionStartCapture.asInstanceOf[js.Any])
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))
-    if (onCompositionUpdateCapture != null) __obj.updateDynamic("onCompositionUpdateCapture")(onCompositionUpdateCapture.asInstanceOf[js.Any])
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
-    if (onContextMenuCapture != null) __obj.updateDynamic("onContextMenuCapture")(onContextMenuCapture.asInstanceOf[js.Any])
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCopyCapture != null) __obj.updateDynamic("onCopyCapture")(onCopyCapture.asInstanceOf[js.Any])
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onCutCapture != null) __obj.updateDynamic("onCutCapture")(onCutCapture.asInstanceOf[js.Any])
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
-    if (onDoubleClickCapture != null) __obj.updateDynamic("onDoubleClickCapture")(onDoubleClickCapture.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragCapture != null) __obj.updateDynamic("onDragCapture")(onDragCapture.asInstanceOf[js.Any])
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
-    if (onDragEndCapture != null) __obj.updateDynamic("onDragEndCapture")(onDragEndCapture.asInstanceOf[js.Any])
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
-    if (onDragEnterCapture != null) __obj.updateDynamic("onDragEnterCapture")(onDragEnterCapture.asInstanceOf[js.Any])
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1(onDragExit))
-    if (onDragExitCapture != null) __obj.updateDynamic("onDragExitCapture")(onDragExitCapture.asInstanceOf[js.Any])
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
-    if (onDragLeaveCapture != null) __obj.updateDynamic("onDragLeaveCapture")(onDragLeaveCapture.asInstanceOf[js.Any])
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
-    if (onDragOverCapture != null) __obj.updateDynamic("onDragOverCapture")(onDragOverCapture.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (onDragStartCapture != null) __obj.updateDynamic("onDragStartCapture")(onDragStartCapture.asInstanceOf[js.Any])
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (onDropCapture != null) __obj.updateDynamic("onDropCapture")(onDropCapture.asInstanceOf[js.Any])
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
-    if (onDurationChangeCapture != null) __obj.updateDynamic("onDurationChangeCapture")(onDurationChangeCapture.asInstanceOf[js.Any])
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
-    if (onEmptiedCapture != null) __obj.updateDynamic("onEmptiedCapture")(onEmptiedCapture.asInstanceOf[js.Any])
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
-    if (onEncryptedCapture != null) __obj.updateDynamic("onEncryptedCapture")(onEncryptedCapture.asInstanceOf[js.Any])
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onEndedCapture != null) __obj.updateDynamic("onEndedCapture")(onEndedCapture.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onErrorCapture != null) __obj.updateDynamic("onErrorCapture")(onErrorCapture.asInstanceOf[js.Any])
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onFocusCapture != null) __obj.updateDynamic("onFocusCapture")(onFocusCapture.asInstanceOf[js.Any])
-    if (onGotPointerCapture != null) __obj.updateDynamic("onGotPointerCapture")(onGotPointerCapture.asInstanceOf[js.Any])
-    if (onGotPointerCaptureCapture != null) __obj.updateDynamic("onGotPointerCaptureCapture")(onGotPointerCaptureCapture.asInstanceOf[js.Any])
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInputCapture != null) __obj.updateDynamic("onInputCapture")(onInputCapture.asInstanceOf[js.Any])
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
-    if (onInvalidCapture != null) __obj.updateDynamic("onInvalidCapture")(onInvalidCapture.asInstanceOf[js.Any])
-    if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
-    if (onIonCancel != null) __obj.updateDynamic("onIonCancel")(js.Any.fromFunction1(onIonCancel))
-    if (onIonChange != null) __obj.updateDynamic("onIonChange")(js.Any.fromFunction1(onIonChange))
-    if (onIonClear != null) __obj.updateDynamic("onIonClear")(js.Any.fromFunction1(onIonClear))
-    if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
-    if (onIonInput != null) __obj.updateDynamic("onIonInput")(js.Any.fromFunction1(onIonInput))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyDownCapture != null) __obj.updateDynamic("onKeyDownCapture")(onKeyDownCapture.asInstanceOf[js.Any])
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyPressCapture != null) __obj.updateDynamic("onKeyPressCapture")(onKeyPressCapture.asInstanceOf[js.Any])
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onKeyUpCapture != null) __obj.updateDynamic("onKeyUpCapture")(onKeyUpCapture.asInstanceOf[js.Any])
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onLoadCapture != null) __obj.updateDynamic("onLoadCapture")(onLoadCapture.asInstanceOf[js.Any])
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1(onLoadStart))
-    if (onLoadStartCapture != null) __obj.updateDynamic("onLoadStartCapture")(onLoadStartCapture.asInstanceOf[js.Any])
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1(onLoadedData))
-    if (onLoadedDataCapture != null) __obj.updateDynamic("onLoadedDataCapture")(onLoadedDataCapture.asInstanceOf[js.Any])
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1(onLoadedMetadata))
-    if (onLoadedMetadataCapture != null) __obj.updateDynamic("onLoadedMetadataCapture")(onLoadedMetadataCapture.asInstanceOf[js.Any])
-    if (onLostPointerCapture != null) __obj.updateDynamic("onLostPointerCapture")(onLostPointerCapture.asInstanceOf[js.Any])
-    if (onLostPointerCaptureCapture != null) __obj.updateDynamic("onLostPointerCaptureCapture")(onLostPointerCaptureCapture.asInstanceOf[js.Any])
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseDownCapture != null) __obj.updateDynamic("onMouseDownCapture")(onMouseDownCapture.asInstanceOf[js.Any])
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseMoveCapture != null) __obj.updateDynamic("onMouseMoveCapture")(onMouseMoveCapture.asInstanceOf[js.Any])
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOutCapture != null) __obj.updateDynamic("onMouseOutCapture")(onMouseOutCapture.asInstanceOf[js.Any])
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseOverCapture != null) __obj.updateDynamic("onMouseOverCapture")(onMouseOverCapture.asInstanceOf[js.Any])
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onMouseUpCapture != null) __obj.updateDynamic("onMouseUpCapture")(onMouseUpCapture.asInstanceOf[js.Any])
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onPasteCapture != null) __obj.updateDynamic("onPasteCapture")(onPasteCapture.asInstanceOf[js.Any])
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
-    if (onPauseCapture != null) __obj.updateDynamic("onPauseCapture")(onPauseCapture.asInstanceOf[js.Any])
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
-    if (onPlayCapture != null) __obj.updateDynamic("onPlayCapture")(onPlayCapture.asInstanceOf[js.Any])
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1(onPlaying))
-    if (onPlayingCapture != null) __obj.updateDynamic("onPlayingCapture")(onPlayingCapture.asInstanceOf[js.Any])
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1(onPointerCancel))
-    if (onPointerCancelCapture != null) __obj.updateDynamic("onPointerCancelCapture")(onPointerCancelCapture.asInstanceOf[js.Any])
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1(onPointerDown))
-    if (onPointerDownCapture != null) __obj.updateDynamic("onPointerDownCapture")(onPointerDownCapture.asInstanceOf[js.Any])
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1(onPointerEnter))
-    if (onPointerEnterCapture != null) __obj.updateDynamic("onPointerEnterCapture")(onPointerEnterCapture.asInstanceOf[js.Any])
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1(onPointerLeave))
-    if (onPointerLeaveCapture != null) __obj.updateDynamic("onPointerLeaveCapture")(onPointerLeaveCapture.asInstanceOf[js.Any])
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1(onPointerMove))
-    if (onPointerMoveCapture != null) __obj.updateDynamic("onPointerMoveCapture")(onPointerMoveCapture.asInstanceOf[js.Any])
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1(onPointerOut))
-    if (onPointerOutCapture != null) __obj.updateDynamic("onPointerOutCapture")(onPointerOutCapture.asInstanceOf[js.Any])
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1(onPointerOver))
-    if (onPointerOverCapture != null) __obj.updateDynamic("onPointerOverCapture")(onPointerOverCapture.asInstanceOf[js.Any])
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1(onPointerUp))
-    if (onPointerUpCapture != null) __obj.updateDynamic("onPointerUpCapture")(onPointerUpCapture.asInstanceOf[js.Any])
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onProgressCapture != null) __obj.updateDynamic("onProgressCapture")(onProgressCapture.asInstanceOf[js.Any])
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
-    if (onRateChangeCapture != null) __obj.updateDynamic("onRateChangeCapture")(onRateChangeCapture.asInstanceOf[js.Any])
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
-    if (onResetCapture != null) __obj.updateDynamic("onResetCapture")(onResetCapture.asInstanceOf[js.Any])
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onScrollCapture != null) __obj.updateDynamic("onScrollCapture")(onScrollCapture.asInstanceOf[js.Any])
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
-    if (onSeekedCapture != null) __obj.updateDynamic("onSeekedCapture")(onSeekedCapture.asInstanceOf[js.Any])
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))
-    if (onSeekingCapture != null) __obj.updateDynamic("onSeekingCapture")(onSeekingCapture.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onSelectCapture != null) __obj.updateDynamic("onSelectCapture")(onSelectCapture.asInstanceOf[js.Any])
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
-    if (onStalledCapture != null) __obj.updateDynamic("onStalledCapture")(onStalledCapture.asInstanceOf[js.Any])
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (onSubmitCapture != null) __obj.updateDynamic("onSubmitCapture")(onSubmitCapture.asInstanceOf[js.Any])
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
-    if (onSuspendCapture != null) __obj.updateDynamic("onSuspendCapture")(onSuspendCapture.asInstanceOf[js.Any])
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
-    if (onTimeUpdateCapture != null) __obj.updateDynamic("onTimeUpdateCapture")(onTimeUpdateCapture.asInstanceOf[js.Any])
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchCancelCapture != null) __obj.updateDynamic("onTouchCancelCapture")(onTouchCancelCapture.asInstanceOf[js.Any])
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture.asInstanceOf[js.Any])
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchMoveCapture != null) __obj.updateDynamic("onTouchMoveCapture")(onTouchMoveCapture.asInstanceOf[js.Any])
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onTouchStartCapture != null) __obj.updateDynamic("onTouchStartCapture")(onTouchStartCapture.asInstanceOf[js.Any])
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (onTransitionEndCapture != null) __obj.updateDynamic("onTransitionEndCapture")(onTransitionEndCapture.asInstanceOf[js.Any])
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
-    if (onVolumeChangeCapture != null) __obj.updateDynamic("onVolumeChangeCapture")(onVolumeChangeCapture.asInstanceOf[js.Any])
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
-    if (onWaitingCapture != null) __obj.updateDynamic("onWaitingCapture")(onWaitingCapture.asInstanceOf[js.Any])
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(onWheelCapture.asInstanceOf[js.Any])
+  def apply(color: js.UndefOr[Color] with js.UndefOr[String]): IonSearchbarPickHTMLAttri = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSearchbarPickHTMLAttri]
   }
+  @scala.inline
+  implicit class IonSearchbarPickHTMLAttriOps[Self <: IonSearchbarPickHTMLAttri] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: js.UndefOr[Color] with js.UndefOr[String]): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbout(value: String): Self = this.set("about", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbout: Self = this.set("about", js.undefined)
+    @scala.inline
+    def setAccessKey(value: String): Self = this.set("accessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKey: Self = this.set("accessKey", js.undefined)
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def `setAria-activedescendant`(value: String): Self = this.set("aria-activedescendant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-activedescendant`: Self = this.set("aria-activedescendant", js.undefined)
+    @scala.inline
+    def `setAria-atomic`(value: Boolean): Self = this.set("aria-atomic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-atomic`: Self = this.set("aria-atomic", js.undefined)
+    @scala.inline
+    def `setAria-autocomplete`(value: none | `inline` | list | both): Self = this.set("aria-autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-autocomplete`: Self = this.set("aria-autocomplete", js.undefined)
+    @scala.inline
+    def `setAria-busy`(value: Boolean): Self = this.set("aria-busy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-busy`: Self = this.set("aria-busy", js.undefined)
+    @scala.inline
+    def `setAria-checked`(value: Boolean | mixed): Self = this.set("aria-checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-checked`: Self = this.set("aria-checked", js.undefined)
+    @scala.inline
+    def `setAria-colcount`(value: Double): Self = this.set("aria-colcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colcount`: Self = this.set("aria-colcount", js.undefined)
+    @scala.inline
+    def `setAria-colindex`(value: Double): Self = this.set("aria-colindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colindex`: Self = this.set("aria-colindex", js.undefined)
+    @scala.inline
+    def `setAria-colspan`(value: Double): Self = this.set("aria-colspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colspan`: Self = this.set("aria-colspan", js.undefined)
+    @scala.inline
+    def `setAria-controls`(value: String): Self = this.set("aria-controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-controls`: Self = this.set("aria-controls", js.undefined)
+    @scala.inline
+    def `setAria-current`(value: Boolean | page | step | location | date | time): Self = this.set("aria-current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-current`: Self = this.set("aria-current", js.undefined)
+    @scala.inline
+    def `setAria-describedby`(value: String): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-describedby`: Self = this.set("aria-describedby", js.undefined)
+    @scala.inline
+    def `setAria-details`(value: String): Self = this.set("aria-details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-details`: Self = this.set("aria-details", js.undefined)
+    @scala.inline
+    def `setAria-disabled`(value: Boolean): Self = this.set("aria-disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-disabled`: Self = this.set("aria-disabled", js.undefined)
+    @scala.inline
+    def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = this.set("aria-dropeffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-dropeffect`: Self = this.set("aria-dropeffect", js.undefined)
+    @scala.inline
+    def `setAria-errormessage`(value: String): Self = this.set("aria-errormessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-errormessage`: Self = this.set("aria-errormessage", js.undefined)
+    @scala.inline
+    def `setAria-expanded`(value: Boolean): Self = this.set("aria-expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-expanded`: Self = this.set("aria-expanded", js.undefined)
+    @scala.inline
+    def `setAria-flowto`(value: String): Self = this.set("aria-flowto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-flowto`: Self = this.set("aria-flowto", js.undefined)
+    @scala.inline
+    def `setAria-grabbed`(value: Boolean): Self = this.set("aria-grabbed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-grabbed`: Self = this.set("aria-grabbed", js.undefined)
+    @scala.inline
+    def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = this.set("aria-haspopup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-haspopup`: Self = this.set("aria-haspopup", js.undefined)
+    @scala.inline
+    def `setAria-hidden`(value: Boolean): Self = this.set("aria-hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-hidden`: Self = this.set("aria-hidden", js.undefined)
+    @scala.inline
+    def `setAria-invalid`(value: Boolean | grammar | spelling): Self = this.set("aria-invalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-invalid`: Self = this.set("aria-invalid", js.undefined)
+    @scala.inline
+    def `setAria-keyshortcuts`(value: String): Self = this.set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-keyshortcuts`: Self = this.set("aria-keyshortcuts", js.undefined)
+    @scala.inline
+    def `setAria-label`(value: String): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def `setAria-labelledby`(value: String): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    @scala.inline
+    def `setAria-level`(value: Double): Self = this.set("aria-level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-level`: Self = this.set("aria-level", js.undefined)
+    @scala.inline
+    def `setAria-live`(value: off | assertive | polite): Self = this.set("aria-live", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-live`: Self = this.set("aria-live", js.undefined)
+    @scala.inline
+    def `setAria-modal`(value: Boolean): Self = this.set("aria-modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-modal`: Self = this.set("aria-modal", js.undefined)
+    @scala.inline
+    def `setAria-multiline`(value: Boolean): Self = this.set("aria-multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiline`: Self = this.set("aria-multiline", js.undefined)
+    @scala.inline
+    def `setAria-multiselectable`(value: Boolean): Self = this.set("aria-multiselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiselectable`: Self = this.set("aria-multiselectable", js.undefined)
+    @scala.inline
+    def `setAria-orientation`(value: horizontal | vertical): Self = this.set("aria-orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-orientation`: Self = this.set("aria-orientation", js.undefined)
+    @scala.inline
+    def `setAria-owns`(value: String): Self = this.set("aria-owns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-owns`: Self = this.set("aria-owns", js.undefined)
+    @scala.inline
+    def `setAria-placeholder`(value: String): Self = this.set("aria-placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-placeholder`: Self = this.set("aria-placeholder", js.undefined)
+    @scala.inline
+    def `setAria-posinset`(value: Double): Self = this.set("aria-posinset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-posinset`: Self = this.set("aria-posinset", js.undefined)
+    @scala.inline
+    def `setAria-pressed`(value: Boolean | mixed): Self = this.set("aria-pressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-pressed`: Self = this.set("aria-pressed", js.undefined)
+    @scala.inline
+    def `setAria-readonly`(value: Boolean): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    @scala.inline
+    def `setAria-relevant`(value: additions | (`additions text`) | all | removals | text): Self = this.set("aria-relevant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-relevant`: Self = this.set("aria-relevant", js.undefined)
+    @scala.inline
+    def `setAria-required`(value: Boolean): Self = this.set("aria-required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-required`: Self = this.set("aria-required", js.undefined)
+    @scala.inline
+    def `setAria-roledescription`(value: String): Self = this.set("aria-roledescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-roledescription`: Self = this.set("aria-roledescription", js.undefined)
+    @scala.inline
+    def `setAria-rowcount`(value: Double): Self = this.set("aria-rowcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowcount`: Self = this.set("aria-rowcount", js.undefined)
+    @scala.inline
+    def `setAria-rowindex`(value: Double): Self = this.set("aria-rowindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowindex`: Self = this.set("aria-rowindex", js.undefined)
+    @scala.inline
+    def `setAria-rowspan`(value: Double): Self = this.set("aria-rowspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowspan`: Self = this.set("aria-rowspan", js.undefined)
+    @scala.inline
+    def `setAria-selected`(value: Boolean): Self = this.set("aria-selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-selected`: Self = this.set("aria-selected", js.undefined)
+    @scala.inline
+    def `setAria-setsize`(value: Double): Self = this.set("aria-setsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-setsize`: Self = this.set("aria-setsize", js.undefined)
+    @scala.inline
+    def `setAria-sort`(value: none | ascending | descending | other): Self = this.set("aria-sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-sort`: Self = this.set("aria-sort", js.undefined)
+    @scala.inline
+    def `setAria-valuemax`(value: Double): Self = this.set("aria-valuemax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemax`: Self = this.set("aria-valuemax", js.undefined)
+    @scala.inline
+    def `setAria-valuemin`(value: Double): Self = this.set("aria-valuemin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemin`: Self = this.set("aria-valuemin", js.undefined)
+    @scala.inline
+    def `setAria-valuenow`(value: Double): Self = this.set("aria-valuenow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuenow`: Self = this.set("aria-valuenow", js.undefined)
+    @scala.inline
+    def `setAria-valuetext`(value: String): Self = this.set("aria-valuetext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuetext`: Self = this.set("aria-valuetext", js.undefined)
+    @scala.inline
+    def setAutoCapitalize(value: String): Self = this.set("autoCapitalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCapitalize: Self = this.set("autoCapitalize", js.undefined)
+    @scala.inline
+    def setAutoCorrect(value: String): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    @scala.inline
+    def setAutoSave(value: String): Self = this.set("autoSave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoSave: Self = this.set("autoSave", js.undefined)
+    @scala.inline
+    def setAutocomplete(value: AutocompleteTypes): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutocomplete: Self = this.set("autocomplete", js.undefined)
+    @scala.inline
+    def setCancelButtonIcon(value: String): Self = this.set("cancelButtonIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelButtonIcon: Self = this.set("cancelButtonIcon", js.undefined)
+    @scala.inline
+    def setCancelButtonText(value: String): Self = this.set("cancelButtonText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelButtonText: Self = this.set("cancelButtonText", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClearIcon(value: String): Self = this.set("clearIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearIcon: Self = this.set("clearIcon", js.undefined)
+    @scala.inline
+    def setContentEditable(value: Booleanish | inherit): Self = this.set("contentEditable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEditable: Self = this.set("contentEditable", js.undefined)
+    @scala.inline
+    def setContextMenu(value: String): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    @scala.inline
+    def setDangerouslySetInnerHTML(value: Html): Self = this.set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDangerouslySetInnerHTML: Self = this.set("dangerouslySetInnerHTML", js.undefined)
+    @scala.inline
+    def setDatatype(value: String): Self = this.set("datatype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatatype: Self = this.set("datatype", js.undefined)
+    @scala.inline
+    def setDebounce(value: Double): Self = this.set("debounce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebounce: Self = this.set("debounce", js.undefined)
+    @scala.inline
+    def setDefaultChecked(value: Boolean): Self = this.set("defaultChecked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultChecked: Self = this.set("defaultChecked", js.undefined)
+    @scala.inline
+    def setDefaultValueVarargs(value: String*): Self = this.set("defaultValue", js.Array(value :_*))
+    @scala.inline
+    def setDefaultValue(value: String | Double | js.Array[String]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDraggable(value: Booleanish): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setEnterkeyhint(value: enter | done | go | next | previous | search | send): Self = this.set("enterkeyhint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnterkeyhint: Self = this.set("enterkeyhint", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInlist(value: js.Any): Self = this.set("inlist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlist: Self = this.set("inlist", js.undefined)
+    @scala.inline
+    def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = this.set("inputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMode: Self = this.set("inputMode", js.undefined)
+    @scala.inline
+    def setIs(value: String): Self = this.set("is", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs: Self = this.set("is", js.undefined)
+    @scala.inline
+    def setItemID(value: String): Self = this.set("itemID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemID: Self = this.set("itemID", js.undefined)
+    @scala.inline
+    def setItemProp(value: String): Self = this.set("itemProp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemProp: Self = this.set("itemProp", js.undefined)
+    @scala.inline
+    def setItemRef(value: String): Self = this.set("itemRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemRef: Self = this.set("itemRef", js.undefined)
+    @scala.inline
+    def setItemScope(value: Boolean): Self = this.set("itemScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemScope: Self = this.set("itemScope", js.undefined)
+    @scala.inline
+    def setItemType(value: String): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemType: Self = this.set("itemType", js.undefined)
+    @scala.inline
+    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setMode(value: ios | md): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setOnAbort(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onAbort", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAbort: Self = this.set("onAbort", js.undefined)
+    @scala.inline
+    def setOnAbortCapture(value: js.Any): Self = this.set("onAbortCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAbortCapture: Self = this.set("onAbortCapture", js.undefined)
+    @scala.inline
+    def setOnAnimationEnd(value: AnimationEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onAnimationEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
+    @scala.inline
+    def setOnAnimationEndCapture(value: js.Any): Self = this.set("onAnimationEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationEndCapture: Self = this.set("onAnimationEndCapture", js.undefined)
+    @scala.inline
+    def setOnAnimationIteration(value: AnimationEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onAnimationIteration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationIteration: Self = this.set("onAnimationIteration", js.undefined)
+    @scala.inline
+    def setOnAnimationIterationCapture(value: js.Any): Self = this.set("onAnimationIterationCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationIterationCapture: Self = this.set("onAnimationIterationCapture", js.undefined)
+    @scala.inline
+    def setOnAnimationStart(value: AnimationEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onAnimationStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationStart: Self = this.set("onAnimationStart", js.undefined)
+    @scala.inline
+    def setOnAnimationStartCapture(value: js.Any): Self = this.set("onAnimationStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationStartCapture: Self = this.set("onAnimationStartCapture", js.undefined)
+    @scala.inline
+    def setOnAuxClick(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onAuxClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAuxClick: Self = this.set("onAuxClick", js.undefined)
+    @scala.inline
+    def setOnAuxClickCapture(value: js.Any): Self = this.set("onAuxClickCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAuxClickCapture: Self = this.set("onAuxClickCapture", js.undefined)
+    @scala.inline
+    def setOnBeforeInput(value: FormEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onBeforeInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBeforeInput: Self = this.set("onBeforeInput", js.undefined)
+    @scala.inline
+    def setOnBeforeInputCapture(value: js.Any): Self = this.set("onBeforeInputCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBeforeInputCapture: Self = this.set("onBeforeInputCapture", js.undefined)
+    @scala.inline
+    def setOnBlur(value: FocusEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnBlurCapture(value: js.Any): Self = this.set("onBlurCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBlurCapture: Self = this.set("onBlurCapture", js.undefined)
+    @scala.inline
+    def setOnCanPlay(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onCanPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCanPlay: Self = this.set("onCanPlay", js.undefined)
+    @scala.inline
+    def setOnCanPlayCapture(value: js.Any): Self = this.set("onCanPlayCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCanPlayCapture: Self = this.set("onCanPlayCapture", js.undefined)
+    @scala.inline
+    def setOnCanPlayThrough(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onCanPlayThrough", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCanPlayThrough: Self = this.set("onCanPlayThrough", js.undefined)
+    @scala.inline
+    def setOnCanPlayThroughCapture(value: js.Any): Self = this.set("onCanPlayThroughCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCanPlayThroughCapture: Self = this.set("onCanPlayThroughCapture", js.undefined)
+    @scala.inline
+    def setOnChange(value: FormEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnChangeCapture(value: js.Any): Self = this.set("onChangeCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnChangeCapture: Self = this.set("onChangeCapture", js.undefined)
+    @scala.inline
+    def setOnClick(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnClickCapture(value: js.Any): Self = this.set("onClickCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnClickCapture: Self = this.set("onClickCapture", js.undefined)
+    @scala.inline
+    def setOnCompositionEnd(value: CompositionEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onCompositionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionEnd: Self = this.set("onCompositionEnd", js.undefined)
+    @scala.inline
+    def setOnCompositionEndCapture(value: js.Any): Self = this.set("onCompositionEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionEndCapture: Self = this.set("onCompositionEndCapture", js.undefined)
+    @scala.inline
+    def setOnCompositionStart(value: CompositionEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onCompositionStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionStart: Self = this.set("onCompositionStart", js.undefined)
+    @scala.inline
+    def setOnCompositionStartCapture(value: js.Any): Self = this.set("onCompositionStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionStartCapture: Self = this.set("onCompositionStartCapture", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdate(value: CompositionEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onCompositionUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionUpdate: Self = this.set("onCompositionUpdate", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdateCapture(value: js.Any): Self = this.set("onCompositionUpdateCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionUpdateCapture: Self = this.set("onCompositionUpdateCapture", js.undefined)
+    @scala.inline
+    def setOnContextMenu(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onContextMenu", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    @scala.inline
+    def setOnContextMenuCapture(value: js.Any): Self = this.set("onContextMenuCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnContextMenuCapture: Self = this.set("onContextMenuCapture", js.undefined)
+    @scala.inline
+    def setOnCopy(value: ClipboardEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onCopy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    @scala.inline
+    def setOnCopyCapture(value: js.Any): Self = this.set("onCopyCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCopyCapture: Self = this.set("onCopyCapture", js.undefined)
+    @scala.inline
+    def setOnCut(value: ClipboardEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onCut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCut: Self = this.set("onCut", js.undefined)
+    @scala.inline
+    def setOnCutCapture(value: js.Any): Self = this.set("onCutCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCutCapture: Self = this.set("onCutCapture", js.undefined)
+    @scala.inline
+    def setOnDoubleClick(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onDoubleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    @scala.inline
+    def setOnDoubleClickCapture(value: js.Any): Self = this.set("onDoubleClickCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDoubleClickCapture: Self = this.set("onDoubleClickCapture", js.undefined)
+    @scala.inline
+    def setOnDrag(value: DragEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    @scala.inline
+    def setOnDragCapture(value: js.Any): Self = this.set("onDragCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragCapture: Self = this.set("onDragCapture", js.undefined)
+    @scala.inline
+    def setOnDragEnd(value: DragEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    @scala.inline
+    def setOnDragEndCapture(value: js.Any): Self = this.set("onDragEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragEndCapture: Self = this.set("onDragEndCapture", js.undefined)
+    @scala.inline
+    def setOnDragEnter(value: DragEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onDragEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    @scala.inline
+    def setOnDragEnterCapture(value: js.Any): Self = this.set("onDragEnterCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragEnterCapture: Self = this.set("onDragEnterCapture", js.undefined)
+    @scala.inline
+    def setOnDragExit(value: DragEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onDragExit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragExit: Self = this.set("onDragExit", js.undefined)
+    @scala.inline
+    def setOnDragExitCapture(value: js.Any): Self = this.set("onDragExitCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragExitCapture: Self = this.set("onDragExitCapture", js.undefined)
+    @scala.inline
+    def setOnDragLeave(value: DragEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onDragLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragLeave: Self = this.set("onDragLeave", js.undefined)
+    @scala.inline
+    def setOnDragLeaveCapture(value: js.Any): Self = this.set("onDragLeaveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragLeaveCapture: Self = this.set("onDragLeaveCapture", js.undefined)
+    @scala.inline
+    def setOnDragOver(value: DragEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onDragOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    @scala.inline
+    def setOnDragOverCapture(value: js.Any): Self = this.set("onDragOverCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragOverCapture: Self = this.set("onDragOverCapture", js.undefined)
+    @scala.inline
+    def setOnDragStart(value: DragEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    @scala.inline
+    def setOnDragStartCapture(value: js.Any): Self = this.set("onDragStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragStartCapture: Self = this.set("onDragStartCapture", js.undefined)
+    @scala.inline
+    def setOnDrop(value: DragEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onDrop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrop: Self = this.set("onDrop", js.undefined)
+    @scala.inline
+    def setOnDropCapture(value: js.Any): Self = this.set("onDropCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDropCapture: Self = this.set("onDropCapture", js.undefined)
+    @scala.inline
+    def setOnDurationChange(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onDurationChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDurationChange: Self = this.set("onDurationChange", js.undefined)
+    @scala.inline
+    def setOnDurationChangeCapture(value: js.Any): Self = this.set("onDurationChangeCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDurationChangeCapture: Self = this.set("onDurationChangeCapture", js.undefined)
+    @scala.inline
+    def setOnEmptied(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onEmptied", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEmptied: Self = this.set("onEmptied", js.undefined)
+    @scala.inline
+    def setOnEmptiedCapture(value: js.Any): Self = this.set("onEmptiedCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEmptiedCapture: Self = this.set("onEmptiedCapture", js.undefined)
+    @scala.inline
+    def setOnEncrypted(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onEncrypted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEncrypted: Self = this.set("onEncrypted", js.undefined)
+    @scala.inline
+    def setOnEncryptedCapture(value: js.Any): Self = this.set("onEncryptedCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEncryptedCapture: Self = this.set("onEncryptedCapture", js.undefined)
+    @scala.inline
+    def setOnEnded(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onEnded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    @scala.inline
+    def setOnEndedCapture(value: js.Any): Self = this.set("onEndedCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEndedCapture: Self = this.set("onEndedCapture", js.undefined)
+    @scala.inline
+    def setOnError(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnErrorCapture(value: js.Any): Self = this.set("onErrorCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnErrorCapture: Self = this.set("onErrorCapture", js.undefined)
+    @scala.inline
+    def setOnFocus(value: FocusEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnFocusCapture(value: js.Any): Self = this.set("onFocusCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFocusCapture: Self = this.set("onFocusCapture", js.undefined)
+    @scala.inline
+    def setOnGotPointerCapture(value: js.Any): Self = this.set("onGotPointerCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnGotPointerCapture: Self = this.set("onGotPointerCapture", js.undefined)
+    @scala.inline
+    def setOnGotPointerCaptureCapture(value: js.Any): Self = this.set("onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnGotPointerCaptureCapture: Self = this.set("onGotPointerCaptureCapture", js.undefined)
+    @scala.inline
+    def setOnInput(value: FormEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnInputCapture(value: js.Any): Self = this.set("onInputCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInputCapture: Self = this.set("onInputCapture", js.undefined)
+    @scala.inline
+    def setOnInvalid(value: FormEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onInvalid", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInvalid: Self = this.set("onInvalid", js.undefined)
+    @scala.inline
+    def setOnInvalidCapture(value: js.Any): Self = this.set("onInvalidCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInvalidCapture: Self = this.set("onInvalidCapture", js.undefined)
+    @scala.inline
+    def setOnIonBlur(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonBlur: Self = this.set("onIonBlur", js.undefined)
+    @scala.inline
+    def setOnIonCancel(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonCancel: Self = this.set("onIonCancel", js.undefined)
+    @scala.inline
+    def setOnIonChange(value: /* event */ CustomEvent[SearchbarChangeEventDetail] => Unit): Self = this.set("onIonChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonChange: Self = this.set("onIonChange", js.undefined)
+    @scala.inline
+    def setOnIonClear(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonClear", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonClear: Self = this.set("onIonClear", js.undefined)
+    @scala.inline
+    def setOnIonFocus(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonFocus: Self = this.set("onIonFocus", js.undefined)
+    @scala.inline
+    def setOnIonInput(value: /* event */ CustomEvent[KeyboardEvent] => Unit): Self = this.set("onIonInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonInput: Self = this.set("onIonInput", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: typings.react.mod.KeyboardEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyDownCapture(value: js.Any): Self = this.set("onKeyDownCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyDownCapture: Self = this.set("onKeyDownCapture", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: typings.react.mod.KeyboardEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnKeyPressCapture(value: js.Any): Self = this.set("onKeyPressCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyPressCapture: Self = this.set("onKeyPressCapture", js.undefined)
+    @scala.inline
+    def setOnKeyUp(value: typings.react.mod.KeyboardEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onKeyUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyUp: Self = this.set("onKeyUp", js.undefined)
+    @scala.inline
+    def setOnKeyUpCapture(value: js.Any): Self = this.set("onKeyUpCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyUpCapture: Self = this.set("onKeyUpCapture", js.undefined)
+    @scala.inline
+    def setOnLoad(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnLoadCapture(value: js.Any): Self = this.set("onLoadCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadCapture: Self = this.set("onLoadCapture", js.undefined)
+    @scala.inline
+    def setOnLoadStart(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onLoadStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadStart: Self = this.set("onLoadStart", js.undefined)
+    @scala.inline
+    def setOnLoadStartCapture(value: js.Any): Self = this.set("onLoadStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadStartCapture: Self = this.set("onLoadStartCapture", js.undefined)
+    @scala.inline
+    def setOnLoadedData(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onLoadedData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedData: Self = this.set("onLoadedData", js.undefined)
+    @scala.inline
+    def setOnLoadedDataCapture(value: js.Any): Self = this.set("onLoadedDataCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadedDataCapture: Self = this.set("onLoadedDataCapture", js.undefined)
+    @scala.inline
+    def setOnLoadedMetadata(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onLoadedMetadata", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedMetadata: Self = this.set("onLoadedMetadata", js.undefined)
+    @scala.inline
+    def setOnLoadedMetadataCapture(value: js.Any): Self = this.set("onLoadedMetadataCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadedMetadataCapture: Self = this.set("onLoadedMetadataCapture", js.undefined)
+    @scala.inline
+    def setOnLostPointerCapture(value: js.Any): Self = this.set("onLostPointerCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLostPointerCapture: Self = this.set("onLostPointerCapture", js.undefined)
+    @scala.inline
+    def setOnLostPointerCaptureCapture(value: js.Any): Self = this.set("onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLostPointerCaptureCapture: Self = this.set("onLostPointerCaptureCapture", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseDownCapture(value: js.Any): Self = this.set("onMouseDownCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseDownCapture: Self = this.set("onMouseDownCapture", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseMoveCapture(value: js.Any): Self = this.set("onMouseMoveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseMoveCapture: Self = this.set("onMouseMoveCapture", js.undefined)
+    @scala.inline
+    def setOnMouseOut(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onMouseOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    @scala.inline
+    def setOnMouseOutCapture(value: js.Any): Self = this.set("onMouseOutCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseOutCapture: Self = this.set("onMouseOutCapture", js.undefined)
+    @scala.inline
+    def setOnMouseOver(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onMouseOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    @scala.inline
+    def setOnMouseOverCapture(value: js.Any): Self = this.set("onMouseOverCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseOverCapture: Self = this.set("onMouseOverCapture", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: MouseEvent[HTMLIonSearchbarElement, NativeMouseEvent] => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnMouseUpCapture(value: js.Any): Self = this.set("onMouseUpCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseUpCapture: Self = this.set("onMouseUpCapture", js.undefined)
+    @scala.inline
+    def setOnPaste(value: ClipboardEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onPaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setOnPasteCapture(value: js.Any): Self = this.set("onPasteCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPasteCapture: Self = this.set("onPasteCapture", js.undefined)
+    @scala.inline
+    def setOnPause(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    @scala.inline
+    def setOnPauseCapture(value: js.Any): Self = this.set("onPauseCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPauseCapture: Self = this.set("onPauseCapture", js.undefined)
+    @scala.inline
+    def setOnPlay(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    @scala.inline
+    def setOnPlayCapture(value: js.Any): Self = this.set("onPlayCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPlayCapture: Self = this.set("onPlayCapture", js.undefined)
+    @scala.inline
+    def setOnPlaying(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onPlaying", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlaying: Self = this.set("onPlaying", js.undefined)
+    @scala.inline
+    def setOnPlayingCapture(value: js.Any): Self = this.set("onPlayingCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPlayingCapture: Self = this.set("onPlayingCapture", js.undefined)
+    @scala.inline
+    def setOnPointerCancel(value: PointerEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onPointerCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerCancel: Self = this.set("onPointerCancel", js.undefined)
+    @scala.inline
+    def setOnPointerCancelCapture(value: js.Any): Self = this.set("onPointerCancelCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerCancelCapture: Self = this.set("onPointerCancelCapture", js.undefined)
+    @scala.inline
+    def setOnPointerDown(value: PointerEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onPointerDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerDown: Self = this.set("onPointerDown", js.undefined)
+    @scala.inline
+    def setOnPointerDownCapture(value: js.Any): Self = this.set("onPointerDownCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerDownCapture: Self = this.set("onPointerDownCapture", js.undefined)
+    @scala.inline
+    def setOnPointerEnter(value: PointerEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onPointerEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerEnter: Self = this.set("onPointerEnter", js.undefined)
+    @scala.inline
+    def setOnPointerEnterCapture(value: js.Any): Self = this.set("onPointerEnterCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerEnterCapture: Self = this.set("onPointerEnterCapture", js.undefined)
+    @scala.inline
+    def setOnPointerLeave(value: PointerEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onPointerLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerLeave: Self = this.set("onPointerLeave", js.undefined)
+    @scala.inline
+    def setOnPointerLeaveCapture(value: js.Any): Self = this.set("onPointerLeaveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerLeaveCapture: Self = this.set("onPointerLeaveCapture", js.undefined)
+    @scala.inline
+    def setOnPointerMove(value: PointerEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onPointerMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerMove: Self = this.set("onPointerMove", js.undefined)
+    @scala.inline
+    def setOnPointerMoveCapture(value: js.Any): Self = this.set("onPointerMoveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerMoveCapture: Self = this.set("onPointerMoveCapture", js.undefined)
+    @scala.inline
+    def setOnPointerOut(value: PointerEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onPointerOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOut: Self = this.set("onPointerOut", js.undefined)
+    @scala.inline
+    def setOnPointerOutCapture(value: js.Any): Self = this.set("onPointerOutCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerOutCapture: Self = this.set("onPointerOutCapture", js.undefined)
+    @scala.inline
+    def setOnPointerOver(value: PointerEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onPointerOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOver: Self = this.set("onPointerOver", js.undefined)
+    @scala.inline
+    def setOnPointerOverCapture(value: js.Any): Self = this.set("onPointerOverCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerOverCapture: Self = this.set("onPointerOverCapture", js.undefined)
+    @scala.inline
+    def setOnPointerUp(value: PointerEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onPointerUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerUp: Self = this.set("onPointerUp", js.undefined)
+    @scala.inline
+    def setOnPointerUpCapture(value: js.Any): Self = this.set("onPointerUpCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerUpCapture: Self = this.set("onPointerUpCapture", js.undefined)
+    @scala.inline
+    def setOnProgress(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onProgress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    @scala.inline
+    def setOnProgressCapture(value: js.Any): Self = this.set("onProgressCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnProgressCapture: Self = this.set("onProgressCapture", js.undefined)
+    @scala.inline
+    def setOnRateChange(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onRateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRateChange: Self = this.set("onRateChange", js.undefined)
+    @scala.inline
+    def setOnRateChangeCapture(value: js.Any): Self = this.set("onRateChangeCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRateChangeCapture: Self = this.set("onRateChangeCapture", js.undefined)
+    @scala.inline
+    def setOnReset(value: FormEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onReset", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    @scala.inline
+    def setOnResetCapture(value: js.Any): Self = this.set("onResetCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnResetCapture: Self = this.set("onResetCapture", js.undefined)
+    @scala.inline
+    def setOnScroll(value: UIEvent[HTMLIonSearchbarElement, NativeUIEvent] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnScrollCapture(value: js.Any): Self = this.set("onScrollCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnScrollCapture: Self = this.set("onScrollCapture", js.undefined)
+    @scala.inline
+    def setOnSeeked(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onSeeked", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeeked: Self = this.set("onSeeked", js.undefined)
+    @scala.inline
+    def setOnSeekedCapture(value: js.Any): Self = this.set("onSeekedCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSeekedCapture: Self = this.set("onSeekedCapture", js.undefined)
+    @scala.inline
+    def setOnSeeking(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onSeeking", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeeking: Self = this.set("onSeeking", js.undefined)
+    @scala.inline
+    def setOnSeekingCapture(value: js.Any): Self = this.set("onSeekingCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSeekingCapture: Self = this.set("onSeekingCapture", js.undefined)
+    @scala.inline
+    def setOnSelect(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnSelectCapture(value: js.Any): Self = this.set("onSelectCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelectCapture: Self = this.set("onSelectCapture", js.undefined)
+    @scala.inline
+    def setOnStalled(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onStalled", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStalled: Self = this.set("onStalled", js.undefined)
+    @scala.inline
+    def setOnStalledCapture(value: js.Any): Self = this.set("onStalledCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStalledCapture: Self = this.set("onStalledCapture", js.undefined)
+    @scala.inline
+    def setOnSubmit(value: FormEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onSubmit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    @scala.inline
+    def setOnSubmitCapture(value: js.Any): Self = this.set("onSubmitCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSubmitCapture: Self = this.set("onSubmitCapture", js.undefined)
+    @scala.inline
+    def setOnSuspend(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onSuspend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSuspend: Self = this.set("onSuspend", js.undefined)
+    @scala.inline
+    def setOnSuspendCapture(value: js.Any): Self = this.set("onSuspendCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSuspendCapture: Self = this.set("onSuspendCapture", js.undefined)
+    @scala.inline
+    def setOnTimeUpdate(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onTimeUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTimeUpdate: Self = this.set("onTimeUpdate", js.undefined)
+    @scala.inline
+    def setOnTimeUpdateCapture(value: js.Any): Self = this.set("onTimeUpdateCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTimeUpdateCapture: Self = this.set("onTimeUpdateCapture", js.undefined)
+    @scala.inline
+    def setOnTouchCancel(value: TouchEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onTouchCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    @scala.inline
+    def setOnTouchCancelCapture(value: js.Any): Self = this.set("onTouchCancelCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchCancelCapture: Self = this.set("onTouchCancelCapture", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: TouchEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchEndCapture(value: js.Any): Self = this.set("onTouchEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchEndCapture: Self = this.set("onTouchEndCapture", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: TouchEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchMoveCapture(value: js.Any): Self = this.set("onTouchMoveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchMoveCapture: Self = this.set("onTouchMoveCapture", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: TouchEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOnTouchStartCapture(value: js.Any): Self = this.set("onTouchStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchStartCapture: Self = this.set("onTouchStartCapture", js.undefined)
+    @scala.inline
+    def setOnTransitionEnd(value: TransitionEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    @scala.inline
+    def setOnTransitionEndCapture(value: js.Any): Self = this.set("onTransitionEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTransitionEndCapture: Self = this.set("onTransitionEndCapture", js.undefined)
+    @scala.inline
+    def setOnVolumeChange(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onVolumeChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnVolumeChange: Self = this.set("onVolumeChange", js.undefined)
+    @scala.inline
+    def setOnVolumeChangeCapture(value: js.Any): Self = this.set("onVolumeChangeCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnVolumeChangeCapture: Self = this.set("onVolumeChangeCapture", js.undefined)
+    @scala.inline
+    def setOnWaiting(value: SyntheticEvent[HTMLIonSearchbarElement, Event] => Unit): Self = this.set("onWaiting", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWaiting: Self = this.set("onWaiting", js.undefined)
+    @scala.inline
+    def setOnWaitingCapture(value: js.Any): Self = this.set("onWaitingCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnWaitingCapture: Self = this.set("onWaitingCapture", js.undefined)
+    @scala.inline
+    def setOnWheel(value: WheelEvent[HTMLIonSearchbarElement] => Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    @scala.inline
+    def setOnWheelCapture(value: js.Any): Self = this.set("onWheelCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnWheelCapture: Self = this.set("onWheelCapture", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setRadioGroup(value: String): Self = this.set("radioGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadioGroup: Self = this.set("radioGroup", js.undefined)
+    @scala.inline
+    def setRefFunction1(value: /* instance */ HTMLIonSearchbarElement | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRef(value: Ref[HTMLIonSearchbarElement]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setRefNull: Self = this.set("ref", null)
+    @scala.inline
+    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setResults(value: Double): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setSearchIcon(value: String): Self = this.set("searchIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchIcon: Self = this.set("searchIcon", js.undefined)
+    @scala.inline
+    def setSecurity(value: String): Self = this.set("security", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurity: Self = this.set("security", js.undefined)
+    @scala.inline
+    def setShowCancelButton(value: never | focus | always): Self = this.set("showCancelButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCancelButton: Self = this.set("showCancelButton", js.undefined)
+    @scala.inline
+    def setSlot(value: String): Self = this.set("slot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlot: Self = this.set("slot", js.undefined)
+    @scala.inline
+    def setSpellCheck(value: Booleanish): Self = this.set("spellCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellCheck: Self = this.set("spellCheck", js.undefined)
+    @scala.inline
+    def setStyle(value: StringDictionary[js.Any]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSuppressContentEditableWarning(value: Boolean): Self = this.set("suppressContentEditableWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressContentEditableWarning: Self = this.set("suppressContentEditableWarning", js.undefined)
+    @scala.inline
+    def setSuppressHydrationWarning(value: Boolean): Self = this.set("suppressHydrationWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressHydrationWarning: Self = this.set("suppressHydrationWarning", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTranslate(value: yes | no): Self = this.set("translate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslate: Self = this.set("translate", js.undefined)
+    @scala.inline
+    def setType(value: text | password | email | number | search | tel | url): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTypeof(value: String): Self = this.set("typeof", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeof: Self = this.set("typeof", js.undefined)
+    @scala.inline
+    def setUnselectable(value: on | off): Self = this.set("unselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnselectable: Self = this.set("unselectable", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueNull: Self = this.set("value", null)
+    @scala.inline
+    def setVocab(value: String): Self = this.set("vocab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocab: Self = this.set("vocab", js.undefined)
+  }
+  
 }
 

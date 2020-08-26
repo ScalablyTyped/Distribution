@@ -13,5 +13,10 @@ object ionicCoreDistTypesComponentsAugmentingMod extends js.Object {
     type IonIcon = typings.ionicons.componentsMod.Components.IonIcon
   }
   
+  @js.native
+  object JSX extends js.Object {
+    type IonIcon = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IoniconsJSX.IonIcon */ js.Any
+  }
+  
 }
 

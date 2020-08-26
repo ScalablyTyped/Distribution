@@ -7,73 +7,88 @@ import scala.scalajs.js.annotation._
 /**
   * Named instance provided when invoking the map
   */
+@js.native
 trait StructureMapGroupInput extends BackboneElement {
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.undefined
+  var _documentation: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[Element] = js.undefined
+  var _mode: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.undefined
+  var _type: js.UndefOr[Element] = js.native
   /**
     * Documentation for this instance of data
     */
-  var documentation: js.UndefOr[String] = js.undefined
+  var documentation: js.UndefOr[String] = js.native
   /**
     * source | target
     */
-  var mode: code
+  var mode: code = js.native
   /**
     * Name for this instance of data
     */
-  var name: id
+  var name: id = js.native
   /**
     * Type for this instance of data
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object StructureMapGroupInput {
   @scala.inline
-  def apply(
-    mode: code,
-    name: id,
-    _documentation: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _mode: Element = null,
-    _name: Element = null,
-    _type: Element = null,
-    documentation: String = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    `type`: String = null
-  ): StructureMapGroupInput = {
+  def apply(mode: code, name: id): StructureMapGroupInput = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_mode != null) __obj.updateDynamic("_mode")(_mode.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructureMapGroupInput]
   }
+  @scala.inline
+  implicit class StructureMapGroupInputOps[Self <: StructureMapGroupInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMode(value: code): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: id): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    @scala.inline
+    def set_mode(value: Element): Self = this.set("_mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_mode: Self = this.set("_mode", js.undefined)
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_type: Self = this.set("_type", js.undefined)
+    @scala.inline
+    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

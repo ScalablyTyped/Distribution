@@ -58,34 +58,70 @@ trait StackSetOperation extends js.Object {
 
 object StackSetOperation {
   @scala.inline
-  def apply(
-    Action: StackSetOperationAction = null,
-    AdministrationRoleARN: RoleARN_ = null,
-    CreationTimestamp: Timestamp = null,
-    DeploymentTargets: DeploymentTargets = null,
-    EndTimestamp: Timestamp = null,
-    ExecutionRoleName: ExecutionRoleName = null,
-    OperationId: ClientRequestToken = null,
-    OperationPreferences: StackSetOperationPreferences = null,
-    RetainStacks: js.UndefOr[RetainStacksNullable] = js.undefined,
-    StackSetDriftDetectionDetails: StackSetDriftDetectionDetails = null,
-    StackSetId: StackSetId = null,
-    Status: StackSetOperationStatus = null
-  ): StackSetOperation = {
+  def apply(): StackSetOperation = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (AdministrationRoleARN != null) __obj.updateDynamic("AdministrationRoleARN")(AdministrationRoleARN.asInstanceOf[js.Any])
-    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
-    if (DeploymentTargets != null) __obj.updateDynamic("DeploymentTargets")(DeploymentTargets.asInstanceOf[js.Any])
-    if (EndTimestamp != null) __obj.updateDynamic("EndTimestamp")(EndTimestamp.asInstanceOf[js.Any])
-    if (ExecutionRoleName != null) __obj.updateDynamic("ExecutionRoleName")(ExecutionRoleName.asInstanceOf[js.Any])
-    if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
-    if (OperationPreferences != null) __obj.updateDynamic("OperationPreferences")(OperationPreferences.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetainStacks)) __obj.updateDynamic("RetainStacks")(RetainStacks.get.asInstanceOf[js.Any])
-    if (StackSetDriftDetectionDetails != null) __obj.updateDynamic("StackSetDriftDetectionDetails")(StackSetDriftDetectionDetails.asInstanceOf[js.Any])
-    if (StackSetId != null) __obj.updateDynamic("StackSetId")(StackSetId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSetOperation]
   }
+  @scala.inline
+  implicit class StackSetOperationOps[Self <: StackSetOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: StackSetOperationAction): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setAdministrationRoleARN(value: RoleARN_): Self = this.set("AdministrationRoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdministrationRoleARN: Self = this.set("AdministrationRoleARN", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: Timestamp): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    @scala.inline
+    def setDeploymentTargets(value: DeploymentTargets): Self = this.set("DeploymentTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentTargets: Self = this.set("DeploymentTargets", js.undefined)
+    @scala.inline
+    def setEndTimestamp(value: Timestamp): Self = this.set("EndTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimestamp: Self = this.set("EndTimestamp", js.undefined)
+    @scala.inline
+    def setExecutionRoleName(value: ExecutionRoleName): Self = this.set("ExecutionRoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRoleName: Self = this.set("ExecutionRoleName", js.undefined)
+    @scala.inline
+    def setOperationId(value: ClientRequestToken): Self = this.set("OperationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("OperationId", js.undefined)
+    @scala.inline
+    def setOperationPreferences(value: StackSetOperationPreferences): Self = this.set("OperationPreferences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationPreferences: Self = this.set("OperationPreferences", js.undefined)
+    @scala.inline
+    def setRetainStacks(value: RetainStacksNullable): Self = this.set("RetainStacks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetainStacks: Self = this.set("RetainStacks", js.undefined)
+    @scala.inline
+    def setStackSetDriftDetectionDetails(value: StackSetDriftDetectionDetails): Self = this.set("StackSetDriftDetectionDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetDriftDetectionDetails: Self = this.set("StackSetDriftDetectionDetails", js.undefined)
+    @scala.inline
+    def setStackSetId(value: StackSetId): Self = this.set("StackSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetId: Self = this.set("StackSetId", js.undefined)
+    @scala.inline
+    def setStatus(value: StackSetOperationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

@@ -5,42 +5,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Tag
   extends Identification
      with Metadata
      with GhostData {
-  var count: js.UndefOr[Posts] = js.undefined
-  var description: js.UndefOr[Nullable[String]] = js.undefined
-  var feature_image: js.UndefOr[Nullable[String]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
-  var visibility: js.UndefOr[TagVisibility] = js.undefined
+  var count: js.UndefOr[Posts] = js.native
+  var description: js.UndefOr[Nullable[String]] = js.native
+  var feature_image: js.UndefOr[Nullable[String]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[TagVisibility] = js.native
 }
 
 object Tag {
   @scala.inline
-  def apply(
-    id: String,
-    slug: String,
-    count: Posts = null,
-    description: js.UndefOr[Null | Nullable[String]] = js.undefined,
-    feature_image: js.UndefOr[Null | Nullable[String]] = js.undefined,
-    meta_description: js.UndefOr[Null | Nullable[String]] = js.undefined,
-    meta_title: js.UndefOr[Null | Nullable[String]] = js.undefined,
-    name: String = null,
-    url: String = null,
-    visibility: TagVisibility = null
-  ): Tag = {
+  def apply(id: String, slug: String): Tag = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(feature_image)) __obj.updateDynamic("feature_image")(feature_image.asInstanceOf[js.Any])
-    if (!js.isUndefined(meta_description)) __obj.updateDynamic("meta_description")(meta_description.asInstanceOf[js.Any])
-    if (!js.isUndefined(meta_title)) __obj.updateDynamic("meta_title")(meta_title.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
+  @scala.inline
+  implicit class TagOps[Self <: Tag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: Posts): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setDescription(value: Nullable[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDescriptionNull: Self = this.set("description", null)
+    @scala.inline
+    def setFeature_image(value: Nullable[String]): Self = this.set("feature_image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeature_image: Self = this.set("feature_image", js.undefined)
+    @scala.inline
+    def setFeature_imageNull: Self = this.set("feature_image", null)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setVisibility(value: TagVisibility): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("visibility", js.undefined)
+  }
+  
 }
 

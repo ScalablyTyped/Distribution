@@ -46,28 +46,58 @@ trait DescribeDeviceResponse extends js.Object {
 
 object DescribeDeviceResponse {
   @scala.inline
-  def apply(
-    FirstAccessedTime: DateTime = null,
-    LastAccessedTime: DateTime = null,
-    Manufacturer: DeviceManufacturer = null,
-    Model: DeviceModel = null,
-    OperatingSystem: DeviceOperatingSystemName = null,
-    OperatingSystemVersion: DeviceOperatingSystemVersion = null,
-    PatchLevel: DevicePatchLevel = null,
-    Status: DeviceStatus = null,
-    Username: Username = null
-  ): DescribeDeviceResponse = {
+  def apply(): DescribeDeviceResponse = {
     val __obj = js.Dynamic.literal()
-    if (FirstAccessedTime != null) __obj.updateDynamic("FirstAccessedTime")(FirstAccessedTime.asInstanceOf[js.Any])
-    if (LastAccessedTime != null) __obj.updateDynamic("LastAccessedTime")(LastAccessedTime.asInstanceOf[js.Any])
-    if (Manufacturer != null) __obj.updateDynamic("Manufacturer")(Manufacturer.asInstanceOf[js.Any])
-    if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
-    if (OperatingSystem != null) __obj.updateDynamic("OperatingSystem")(OperatingSystem.asInstanceOf[js.Any])
-    if (OperatingSystemVersion != null) __obj.updateDynamic("OperatingSystemVersion")(OperatingSystemVersion.asInstanceOf[js.Any])
-    if (PatchLevel != null) __obj.updateDynamic("PatchLevel")(PatchLevel.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDeviceResponse]
   }
+  @scala.inline
+  implicit class DescribeDeviceResponseOps[Self <: DescribeDeviceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFirstAccessedTime(value: DateTime): Self = this.set("FirstAccessedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstAccessedTime: Self = this.set("FirstAccessedTime", js.undefined)
+    @scala.inline
+    def setLastAccessedTime(value: DateTime): Self = this.set("LastAccessedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccessedTime: Self = this.set("LastAccessedTime", js.undefined)
+    @scala.inline
+    def setManufacturer(value: DeviceManufacturer): Self = this.set("Manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("Manufacturer", js.undefined)
+    @scala.inline
+    def setModel(value: DeviceModel): Self = this.set("Model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("Model", js.undefined)
+    @scala.inline
+    def setOperatingSystem(value: DeviceOperatingSystemName): Self = this.set("OperatingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystem: Self = this.set("OperatingSystem", js.undefined)
+    @scala.inline
+    def setOperatingSystemVersion(value: DeviceOperatingSystemVersion): Self = this.set("OperatingSystemVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystemVersion: Self = this.set("OperatingSystemVersion", js.undefined)
+    @scala.inline
+    def setPatchLevel(value: DevicePatchLevel): Self = this.set("PatchLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatchLevel: Self = this.set("PatchLevel", js.undefined)
+    @scala.inline
+    def setStatus(value: DeviceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUsername(value: Username): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

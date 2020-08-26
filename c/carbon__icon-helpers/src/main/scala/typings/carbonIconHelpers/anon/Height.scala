@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Height extends js.Object {
-  var height: js.UndefOr[Double] = js.undefined
-  var role: js.UndefOr[String] = js.undefined
-  var tabindex: js.UndefOr[Double | String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var viewBox: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
+  var role: js.UndefOr[String] = js.native
+  var tabindex: js.UndefOr[Double | String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var viewBox: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Height {
   @scala.inline
-  def apply(
-    height: js.UndefOr[Double] = js.undefined,
-    role: String = null,
-    tabindex: Double | String = null,
-    title: String = null,
-    viewBox: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): Height = {
+  def apply(): Height = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Height]
   }
+  @scala.inline
+  implicit class HeightOps[Self <: Height] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setTabindex(value: Double | String): Self = this.set("tabindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabindex: Self = this.set("tabindex", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setViewBox(value: String): Self = this.set("viewBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewBox: Self = this.set("viewBox", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait GetSolutionMetricsResponse extends js.Object {
 
 object GetSolutionMetricsResponse {
   @scala.inline
-  def apply(metrics: Metrics = null, solutionVersionArn: Arn = null): GetSolutionMetricsResponse = {
+  def apply(): GetSolutionMetricsResponse = {
     val __obj = js.Dynamic.literal()
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSolutionMetricsResponse]
   }
+  @scala.inline
+  implicit class GetSolutionMetricsResponseOps[Self <: GetSolutionMetricsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetrics(value: Metrics): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    @scala.inline
+    def setSolutionVersionArn(value: Arn): Self = this.set("solutionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionVersionArn: Self = this.set("solutionVersionArn", js.undefined)
+  }
+  
 }
 

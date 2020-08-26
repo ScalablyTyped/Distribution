@@ -12,7 +12,7 @@ Gapless, draggable grid layouts
 | Keywords           | DOM, browser, layout, bin, binpacking, packing, masonry, gapless, draggable |
 | # releases         | 2 |
 | # dependents       | 23 |
-| # downloads        | 400238 |
+| # downloads        | 416014 |
 | # stars            | 2 |
 
 ## Links

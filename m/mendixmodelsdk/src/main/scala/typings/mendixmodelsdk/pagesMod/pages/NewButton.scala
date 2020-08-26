@@ -28,8 +28,10 @@ class NewButton protected () extends Button {
   ) = this()
   @JSName("model")
   var model_FNewButton: IModel = js.native
-  def entity(): js.Any = js.native
-  def entity(newValue: IEntity): js.Any = js.native
+  /**
+    * In version 6.3.0: deleted
+    */
+  def entity: IEntity | Null = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyEntityPath.
     *
@@ -37,22 +39,16 @@ class NewButton protected () extends Button {
     * In version 6.3.0: introduced
     */
   def entityPath: String = js.native
-  def entityPath(newValue: String): js.Any = js.native
+  def entityPath_=(newValue: String): Unit = js.native
   def entityQualifiedName: String | Null = js.native
-  def entityRef(): js.Any = js.native
-  def entityRef(newValue: EntityRef): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  @JSName("entityRef")
-  def entityRef_Union: EntityRef | Null = js.native
-  /**
-    * In version 6.3.0: deleted
-    */
-  @JSName("entity")
-  def entity_Union: IEntity | Null = js.native
+  def entityRef: EntityRef | Null = js.native
+  def entityRef_=(newValue: EntityRef | Null): Unit = js.native
+  def entity_=(newValue: IEntity | Null): Unit = js.native
   def pageSettings: PageSettings = js.native
-  def pageSettings(newValue: PageSettings): js.Any = js.native
+  def pageSettings_=(newValue: PageSettings): Unit = js.native
 }
 
 /* static members */

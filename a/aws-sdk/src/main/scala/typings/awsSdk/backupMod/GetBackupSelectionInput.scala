@@ -22,5 +22,22 @@ object GetBackupSelectionInput {
     val __obj = js.Dynamic.literal(BackupPlanId = BackupPlanId.asInstanceOf[js.Any], SelectionId = SelectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBackupSelectionInput]
   }
+  @scala.inline
+  implicit class GetBackupSelectionInputOps[Self <: GetBackupSelectionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupPlanId(value: String): Self = this.set("BackupPlanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelectionId(value: String): Self = this.set("SelectionId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

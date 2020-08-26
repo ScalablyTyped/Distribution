@@ -26,16 +26,9 @@ object listJobsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ListJobsInput) = this()
-    /* CompleteClass */
-    override val input: ListJobsInput = js.native
     val middlewareStack: MiddlewareStack[ListJobsInput, ListJobsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[ListJobsInput, ListJobsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[ListJobsInput, ListJobsOutput] = js.native
   }

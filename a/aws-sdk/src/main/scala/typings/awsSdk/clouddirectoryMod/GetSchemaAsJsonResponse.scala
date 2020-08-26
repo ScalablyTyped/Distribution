@@ -18,11 +18,30 @@ trait GetSchemaAsJsonResponse extends js.Object {
 
 object GetSchemaAsJsonResponse {
   @scala.inline
-  def apply(Document: SchemaJsonDocument = null, Name: SchemaName = null): GetSchemaAsJsonResponse = {
+  def apply(): GetSchemaAsJsonResponse = {
     val __obj = js.Dynamic.literal()
-    if (Document != null) __obj.updateDynamic("Document")(Document.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSchemaAsJsonResponse]
   }
+  @scala.inline
+  implicit class GetSchemaAsJsonResponseOps[Self <: GetSchemaAsJsonResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocument(value: SchemaJsonDocument): Self = this.set("Document", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocument: Self = this.set("Document", js.undefined)
+    @scala.inline
+    def setName(value: SchemaName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

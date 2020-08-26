@@ -18,11 +18,32 @@ trait GetTemplateOutput extends js.Object {
 
 object GetTemplateOutput {
   @scala.inline
-  def apply(StagesAvailable: StageList = null, TemplateBody: TemplateBody = null): GetTemplateOutput = {
+  def apply(): GetTemplateOutput = {
     val __obj = js.Dynamic.literal()
-    if (StagesAvailable != null) __obj.updateDynamic("StagesAvailable")(StagesAvailable.asInstanceOf[js.Any])
-    if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTemplateOutput]
   }
+  @scala.inline
+  implicit class GetTemplateOutputOps[Self <: GetTemplateOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStagesAvailableVarargs(value: TemplateStage*): Self = this.set("StagesAvailable", js.Array(value :_*))
+    @scala.inline
+    def setStagesAvailable(value: StageList): Self = this.set("StagesAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStagesAvailable: Self = this.set("StagesAvailable", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+  }
+  
 }
 

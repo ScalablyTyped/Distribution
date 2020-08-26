@@ -33,13 +33,10 @@ object abstractModelMod extends js.Object {
     @JSName("id")
     def id_MAbstractModel: String = js.native
     def loadUnitById[T /* <: IAbstractUnit */](id: String): js.Promise[T] = js.native
-    /**
-      * Fetches a complete unit. The result might be returned from the cache.
-      */
-    def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: js.UndefOr[Boolean], callback: ICallback[T]): Unit = js.native
+    def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: js.UndefOr[scala.Nothing], callback: ICallback[T]): Unit = js.native
     def loadUnitById[T /* <: IAbstractUnit */](
       id: String,
-      forceRefresh: js.UndefOr[Boolean],
+      forceRefresh: js.UndefOr[scala.Nothing],
       callback: ICallback[T],
       errorCallback: IErrorCallback
     ): Unit = js.native

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StartSpanFn extends js.Object {
   def startSpan(): Span | Null = js.native
+  def startSpan(name: js.UndefOr[scala.Nothing], options: SpanOptions): Span | Null = js.native
   def startSpan(name: String): Span | Null = js.native
   def startSpan(name: String, options: SpanOptions): Span | Null = js.native
   def startSpan(name: String, `type`: String): Span | Null = js.native

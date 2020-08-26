@@ -34,21 +34,46 @@ trait UpdateFleetAttributesInput extends js.Object {
 
 object UpdateFleetAttributesInput {
   @scala.inline
-  def apply(
-    FleetId: FleetIdOrArn,
-    Description: NonZeroAndMaxString = null,
-    MetricGroups: MetricGroupList = null,
-    Name: NonZeroAndMaxString = null,
-    NewGameSessionProtectionPolicy: ProtectionPolicy = null,
-    ResourceCreationLimitPolicy: ResourceCreationLimitPolicy = null
-  ): UpdateFleetAttributesInput = {
+  def apply(FleetId: FleetIdOrArn): UpdateFleetAttributesInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (MetricGroups != null) __obj.updateDynamic("MetricGroups")(MetricGroups.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NewGameSessionProtectionPolicy != null) __obj.updateDynamic("NewGameSessionProtectionPolicy")(NewGameSessionProtectionPolicy.asInstanceOf[js.Any])
-    if (ResourceCreationLimitPolicy != null) __obj.updateDynamic("ResourceCreationLimitPolicy")(ResourceCreationLimitPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFleetAttributesInput]
   }
+  @scala.inline
+  implicit class UpdateFleetAttributesInputOps[Self <: UpdateFleetAttributesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetId(value: FleetIdOrArn): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: NonZeroAndMaxString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setMetricGroupsVarargs(value: MetricGroup*): Self = this.set("MetricGroups", js.Array(value :_*))
+    @scala.inline
+    def setMetricGroups(value: MetricGroupList): Self = this.set("MetricGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricGroups: Self = this.set("MetricGroups", js.undefined)
+    @scala.inline
+    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNewGameSessionProtectionPolicy(value: ProtectionPolicy): Self = this.set("NewGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewGameSessionProtectionPolicy: Self = this.set("NewGameSessionProtectionPolicy", js.undefined)
+    @scala.inline
+    def setResourceCreationLimitPolicy(value: ResourceCreationLimitPolicy): Self = this.set("ResourceCreationLimitPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceCreationLimitPolicy: Self = this.set("ResourceCreationLimitPolicy", js.undefined)
+  }
+  
 }
 

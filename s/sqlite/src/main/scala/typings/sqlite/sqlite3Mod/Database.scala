@@ -18,6 +18,11 @@ class Database protected () extends EventEmitter {
   def this(filename: String) = this()
   def this(filename: String, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
   def this(filename: String, mode: Double) = this()
+  def this(
+    filename: String,
+    mode: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ) = this()
   def this(filename: String, mode: Double, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
   def all(sql: String): this.type = js.native
   def all(
@@ -38,6 +43,11 @@ class Database protected () extends EventEmitter {
   def each(sql: String): this.type = js.native
   def each(
     sql: String,
+    callback: js.UndefOr[scala.Nothing],
+    complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+  ): this.type = js.native
+  def each(
+    sql: String,
     callback: js.ThisFunction2[/* this */ Statement, /* err */ Error | Null, /* row */ js.Any, Unit]
   ): this.type = js.native
   def each(
@@ -47,6 +57,12 @@ class Database protected () extends EventEmitter {
   ): this.type = js.native
   def each(sql: String, params: js.Any*): this.type = js.native
   def each(sql: String, params: js.Any): this.type = js.native
+  def each(
+    sql: String,
+    params: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    complete: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]
+  ): this.type = js.native
   def each(
     sql: String,
     params: js.Any,

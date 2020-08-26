@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object appendTo extends js.Object {
   def apply(element: String): typings.ckeditor.CKEDITOR.editor = js.native
+  def apply(element: String, config: js.UndefOr[scala.Nothing], data: String): typings.ckeditor.CKEDITOR.editor = js.native
   def apply(element: String, config: typings.ckeditor.CKEDITOR.config): typings.ckeditor.CKEDITOR.editor = js.native
   def apply(element: String, config: typings.ckeditor.CKEDITOR.config, data: String): typings.ckeditor.CKEDITOR.editor = js.native
   def apply(element: HTMLElement): typings.ckeditor.CKEDITOR.editor = js.native
+  def apply(element: HTMLElement, config: js.UndefOr[scala.Nothing], data: String): typings.ckeditor.CKEDITOR.editor = js.native
   def apply(element: HTMLElement, config: typings.ckeditor.CKEDITOR.config): typings.ckeditor.CKEDITOR.editor = js.native
   def apply(element: HTMLElement, config: typings.ckeditor.CKEDITOR.config, data: String): typings.ckeditor.CKEDITOR.editor = js.native
 }

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProjectSettings extends js.Object {
   /**
     * The name of the Google Cloud Storage bucket to which results are written.
@@ -12,7 +13,7 @@ trait ProjectSettings extends js.Object {
     *
     * In update request: optional In response: optional
     */
-  var defaultBucket: js.UndefOr[String] = js.undefined
+  var defaultBucket: js.UndefOr[String] = js.native
   /**
     * The name of the project's settings.
     *
@@ -20,16 +21,35 @@ trait ProjectSettings extends js.Object {
     *
     * In update request: never set In response: always set
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
 }
 
 object ProjectSettings {
   @scala.inline
-  def apply(defaultBucket: String = null, name: String = null): ProjectSettings = {
+  def apply(): ProjectSettings = {
     val __obj = js.Dynamic.literal()
-    if (defaultBucket != null) __obj.updateDynamic("defaultBucket")(defaultBucket.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSettings]
   }
+  @scala.inline
+  implicit class ProjectSettingsOps[Self <: ProjectSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultBucket(value: String): Self = this.set("defaultBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultBucket: Self = this.set("defaultBucket", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

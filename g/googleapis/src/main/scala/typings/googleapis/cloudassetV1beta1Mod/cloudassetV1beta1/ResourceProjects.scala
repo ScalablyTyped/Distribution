@@ -37,6 +37,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def batchGetAssetsHistory(): GaxiosPromise[SchemaBatchGetAssetsHistoryResponse] = js.native
   def batchGetAssetsHistory(callback: BodyResponseCallback[SchemaBatchGetAssetsHistoryResponse]): Unit = js.native
+  def batchGetAssetsHistory(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchGetAssetsHistoryResponse] = js.native
   def batchGetAssetsHistory(params: ParamsResourceProjectsBatchgetassetshistory): GaxiosPromise[SchemaBatchGetAssetsHistoryResponse] = js.native
   def batchGetAssetsHistory(
     params: ParamsResourceProjectsBatchgetassetshistory,
@@ -71,6 +72,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def exportAssets(): GaxiosPromise[SchemaOperation] = js.native
   def exportAssets(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def exportAssets(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def exportAssets(params: ParamsResourceProjectsExportassets): GaxiosPromise[SchemaOperation] = js.native
   def exportAssets(params: ParamsResourceProjectsExportassets, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def exportAssets(

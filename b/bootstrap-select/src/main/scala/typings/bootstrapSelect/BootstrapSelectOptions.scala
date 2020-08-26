@@ -5,117 +5,202 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BootstrapSelectOptions extends js.Object {
-  var actionsBox: js.UndefOr[Boolean] = js.undefined
-  var container: js.UndefOr[String | Boolean] = js.undefined
-  var countSelectedText: js.UndefOr[String | js.Function] = js.undefined
-  var deselectAllText: js.UndefOr[String] = js.undefined
-  var dropdownAlignRight: js.UndefOr[String | Boolean] = js.undefined
-  var dropupAuto: js.UndefOr[Boolean] = js.undefined
-  var header: js.UndefOr[String] = js.undefined
-  var hideDisabled: js.UndefOr[Boolean] = js.undefined
-  var iconBase: js.UndefOr[String] = js.undefined
-  var liveSearch: js.UndefOr[Boolean] = js.undefined
-  var liveSearchNormalize: js.UndefOr[Boolean] = js.undefined
-  var liveSearchPlaceholder: js.UndefOr[String] = js.undefined
-  var liveSearchStyle: js.UndefOr[String] = js.undefined
-  var maxOptions: js.UndefOr[Double | Boolean] = js.undefined
-  var maxOptionsText: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  var mobile: js.UndefOr[Boolean] = js.undefined
-  var multipleSeparator: js.UndefOr[String] = js.undefined
-  var noneResultsText: js.UndefOr[String] = js.undefined
-  var noneSelectedText: js.UndefOr[String] = js.undefined
-  var selectAllText: js.UndefOr[String] = js.undefined
-  var selectOnTab: js.UndefOr[Boolean] = js.undefined
-  var selectedTextFormat: js.UndefOr[String] = js.undefined
-  var showContent: js.UndefOr[Boolean] = js.undefined
-  var showIcon: js.UndefOr[Boolean] = js.undefined
-  var showSubtext: js.UndefOr[Boolean] = js.undefined
-  var showTick: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[auto | Double | Boolean] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
-  var styleBase: js.UndefOr[String] = js.undefined
-  var tickIcon: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var virtualScroll: js.UndefOr[Boolean | Double] = js.undefined
-  var width: js.UndefOr[String | Boolean] = js.undefined
-  var windowPadding: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var actionsBox: js.UndefOr[Boolean] = js.native
+  var container: js.UndefOr[String | Boolean] = js.native
+  var countSelectedText: js.UndefOr[String | js.Function] = js.native
+  var deselectAllText: js.UndefOr[String] = js.native
+  var dropdownAlignRight: js.UndefOr[String | Boolean] = js.native
+  var dropupAuto: js.UndefOr[Boolean] = js.native
+  var header: js.UndefOr[String] = js.native
+  var hideDisabled: js.UndefOr[Boolean] = js.native
+  var iconBase: js.UndefOr[String] = js.native
+  var liveSearch: js.UndefOr[Boolean] = js.native
+  var liveSearchNormalize: js.UndefOr[Boolean] = js.native
+  var liveSearchPlaceholder: js.UndefOr[String] = js.native
+  var liveSearchStyle: js.UndefOr[String] = js.native
+  var maxOptions: js.UndefOr[Double | Boolean] = js.native
+  var maxOptionsText: js.UndefOr[String | js.Array[_] | js.Function] = js.native
+  var mobile: js.UndefOr[Boolean] = js.native
+  var multipleSeparator: js.UndefOr[String] = js.native
+  var noneResultsText: js.UndefOr[String] = js.native
+  var noneSelectedText: js.UndefOr[String] = js.native
+  var selectAllText: js.UndefOr[String] = js.native
+  var selectOnTab: js.UndefOr[Boolean] = js.native
+  var selectedTextFormat: js.UndefOr[String] = js.native
+  var showContent: js.UndefOr[Boolean] = js.native
+  var showIcon: js.UndefOr[Boolean] = js.native
+  var showSubtext: js.UndefOr[Boolean] = js.native
+  var showTick: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[auto | Double | Boolean] = js.native
+  var style: js.UndefOr[String] = js.native
+  var styleBase: js.UndefOr[String] = js.native
+  var tickIcon: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var virtualScroll: js.UndefOr[Boolean | Double] = js.native
+  var width: js.UndefOr[String | Boolean] = js.native
+  var windowPadding: js.UndefOr[Double | js.Array[Double]] = js.native
 }
 
 object BootstrapSelectOptions {
   @scala.inline
-  def apply(
-    actionsBox: js.UndefOr[Boolean] = js.undefined,
-    container: String | Boolean = null,
-    countSelectedText: String | js.Function = null,
-    deselectAllText: String = null,
-    dropdownAlignRight: String | Boolean = null,
-    dropupAuto: js.UndefOr[Boolean] = js.undefined,
-    header: String = null,
-    hideDisabled: js.UndefOr[Boolean] = js.undefined,
-    iconBase: String = null,
-    liveSearch: js.UndefOr[Boolean] = js.undefined,
-    liveSearchNormalize: js.UndefOr[Boolean] = js.undefined,
-    liveSearchPlaceholder: String = null,
-    liveSearchStyle: String = null,
-    maxOptions: Double | Boolean = null,
-    maxOptionsText: String | js.Array[_] | js.Function = null,
-    mobile: js.UndefOr[Boolean] = js.undefined,
-    multipleSeparator: String = null,
-    noneResultsText: String = null,
-    noneSelectedText: String = null,
-    selectAllText: String = null,
-    selectOnTab: js.UndefOr[Boolean] = js.undefined,
-    selectedTextFormat: String = null,
-    showContent: js.UndefOr[Boolean] = js.undefined,
-    showIcon: js.UndefOr[Boolean] = js.undefined,
-    showSubtext: js.UndefOr[Boolean] = js.undefined,
-    showTick: js.UndefOr[Boolean] = js.undefined,
-    size: auto | Double | Boolean = null,
-    style: String = null,
-    styleBase: String = null,
-    tickIcon: String = null,
-    title: String = null,
-    virtualScroll: Boolean | Double = null,
-    width: String | Boolean = null,
-    windowPadding: Double | js.Array[Double] = null
-  ): BootstrapSelectOptions = {
+  def apply(): BootstrapSelectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(actionsBox)) __obj.updateDynamic("actionsBox")(actionsBox.get.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (countSelectedText != null) __obj.updateDynamic("countSelectedText")(countSelectedText.asInstanceOf[js.Any])
-    if (deselectAllText != null) __obj.updateDynamic("deselectAllText")(deselectAllText.asInstanceOf[js.Any])
-    if (dropdownAlignRight != null) __obj.updateDynamic("dropdownAlignRight")(dropdownAlignRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropupAuto)) __obj.updateDynamic("dropupAuto")(dropupAuto.get.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDisabled)) __obj.updateDynamic("hideDisabled")(hideDisabled.get.asInstanceOf[js.Any])
-    if (iconBase != null) __obj.updateDynamic("iconBase")(iconBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveSearch)) __obj.updateDynamic("liveSearch")(liveSearch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveSearchNormalize)) __obj.updateDynamic("liveSearchNormalize")(liveSearchNormalize.get.asInstanceOf[js.Any])
-    if (liveSearchPlaceholder != null) __obj.updateDynamic("liveSearchPlaceholder")(liveSearchPlaceholder.asInstanceOf[js.Any])
-    if (liveSearchStyle != null) __obj.updateDynamic("liveSearchStyle")(liveSearchStyle.asInstanceOf[js.Any])
-    if (maxOptions != null) __obj.updateDynamic("maxOptions")(maxOptions.asInstanceOf[js.Any])
-    if (maxOptionsText != null) __obj.updateDynamic("maxOptionsText")(maxOptionsText.asInstanceOf[js.Any])
-    if (!js.isUndefined(mobile)) __obj.updateDynamic("mobile")(mobile.get.asInstanceOf[js.Any])
-    if (multipleSeparator != null) __obj.updateDynamic("multipleSeparator")(multipleSeparator.asInstanceOf[js.Any])
-    if (noneResultsText != null) __obj.updateDynamic("noneResultsText")(noneResultsText.asInstanceOf[js.Any])
-    if (noneSelectedText != null) __obj.updateDynamic("noneSelectedText")(noneSelectedText.asInstanceOf[js.Any])
-    if (selectAllText != null) __obj.updateDynamic("selectAllText")(selectAllText.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnTab)) __obj.updateDynamic("selectOnTab")(selectOnTab.get.asInstanceOf[js.Any])
-    if (selectedTextFormat != null) __obj.updateDynamic("selectedTextFormat")(selectedTextFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(showContent)) __obj.updateDynamic("showContent")(showContent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSubtext)) __obj.updateDynamic("showSubtext")(showSubtext.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTick)) __obj.updateDynamic("showTick")(showTick.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styleBase != null) __obj.updateDynamic("styleBase")(styleBase.asInstanceOf[js.Any])
-    if (tickIcon != null) __obj.updateDynamic("tickIcon")(tickIcon.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (virtualScroll != null) __obj.updateDynamic("virtualScroll")(virtualScroll.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (windowPadding != null) __obj.updateDynamic("windowPadding")(windowPadding.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapSelectOptions]
   }
+  @scala.inline
+  implicit class BootstrapSelectOptionsOps[Self <: BootstrapSelectOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsBox(value: Boolean): Self = this.set("actionsBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionsBox: Self = this.set("actionsBox", js.undefined)
+    @scala.inline
+    def setContainer(value: String | Boolean): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setCountSelectedText(value: String | js.Function): Self = this.set("countSelectedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountSelectedText: Self = this.set("countSelectedText", js.undefined)
+    @scala.inline
+    def setDeselectAllText(value: String): Self = this.set("deselectAllText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeselectAllText: Self = this.set("deselectAllText", js.undefined)
+    @scala.inline
+    def setDropdownAlignRight(value: String | Boolean): Self = this.set("dropdownAlignRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropdownAlignRight: Self = this.set("dropdownAlignRight", js.undefined)
+    @scala.inline
+    def setDropupAuto(value: Boolean): Self = this.set("dropupAuto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropupAuto: Self = this.set("dropupAuto", js.undefined)
+    @scala.inline
+    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setHideDisabled(value: Boolean): Self = this.set("hideDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideDisabled: Self = this.set("hideDisabled", js.undefined)
+    @scala.inline
+    def setIconBase(value: String): Self = this.set("iconBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconBase: Self = this.set("iconBase", js.undefined)
+    @scala.inline
+    def setLiveSearch(value: Boolean): Self = this.set("liveSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLiveSearch: Self = this.set("liveSearch", js.undefined)
+    @scala.inline
+    def setLiveSearchNormalize(value: Boolean): Self = this.set("liveSearchNormalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLiveSearchNormalize: Self = this.set("liveSearchNormalize", js.undefined)
+    @scala.inline
+    def setLiveSearchPlaceholder(value: String): Self = this.set("liveSearchPlaceholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLiveSearchPlaceholder: Self = this.set("liveSearchPlaceholder", js.undefined)
+    @scala.inline
+    def setLiveSearchStyle(value: String): Self = this.set("liveSearchStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLiveSearchStyle: Self = this.set("liveSearchStyle", js.undefined)
+    @scala.inline
+    def setMaxOptions(value: Double | Boolean): Self = this.set("maxOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxOptions: Self = this.set("maxOptions", js.undefined)
+    @scala.inline
+    def setMaxOptionsTextVarargs(value: js.Any*): Self = this.set("maxOptionsText", js.Array(value :_*))
+    @scala.inline
+    def setMaxOptionsText(value: String | js.Array[_] | js.Function): Self = this.set("maxOptionsText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxOptionsText: Self = this.set("maxOptionsText", js.undefined)
+    @scala.inline
+    def setMobile(value: Boolean): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobile: Self = this.set("mobile", js.undefined)
+    @scala.inline
+    def setMultipleSeparator(value: String): Self = this.set("multipleSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultipleSeparator: Self = this.set("multipleSeparator", js.undefined)
+    @scala.inline
+    def setNoneResultsText(value: String): Self = this.set("noneResultsText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoneResultsText: Self = this.set("noneResultsText", js.undefined)
+    @scala.inline
+    def setNoneSelectedText(value: String): Self = this.set("noneSelectedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoneSelectedText: Self = this.set("noneSelectedText", js.undefined)
+    @scala.inline
+    def setSelectAllText(value: String): Self = this.set("selectAllText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectAllText: Self = this.set("selectAllText", js.undefined)
+    @scala.inline
+    def setSelectOnTab(value: Boolean): Self = this.set("selectOnTab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectOnTab: Self = this.set("selectOnTab", js.undefined)
+    @scala.inline
+    def setSelectedTextFormat(value: String): Self = this.set("selectedTextFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedTextFormat: Self = this.set("selectedTextFormat", js.undefined)
+    @scala.inline
+    def setShowContent(value: Boolean): Self = this.set("showContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowContent: Self = this.set("showContent", js.undefined)
+    @scala.inline
+    def setShowIcon(value: Boolean): Self = this.set("showIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIcon: Self = this.set("showIcon", js.undefined)
+    @scala.inline
+    def setShowSubtext(value: Boolean): Self = this.set("showSubtext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSubtext: Self = this.set("showSubtext", js.undefined)
+    @scala.inline
+    def setShowTick(value: Boolean): Self = this.set("showTick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTick: Self = this.set("showTick", js.undefined)
+    @scala.inline
+    def setSize(value: auto | Double | Boolean): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleBase(value: String): Self = this.set("styleBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleBase: Self = this.set("styleBase", js.undefined)
+    @scala.inline
+    def setTickIcon(value: String): Self = this.set("tickIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickIcon: Self = this.set("tickIcon", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVirtualScroll(value: Boolean | Double): Self = this.set("virtualScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualScroll: Self = this.set("virtualScroll", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWindowPaddingVarargs(value: Double*): Self = this.set("windowPadding", js.Array(value :_*))
+    @scala.inline
+    def setWindowPadding(value: Double | js.Array[Double]): Self = this.set("windowPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowPadding: Self = this.set("windowPadding", js.undefined)
+  }
+  
 }
 

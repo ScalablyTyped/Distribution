@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/contextmenu", "ContextMenu")
+@JSImport("@lumino/widgets/types/contextmenu", "ContextMenu")
 @js.native
 class ContextMenu_ protected () extends js.Object {
   /**

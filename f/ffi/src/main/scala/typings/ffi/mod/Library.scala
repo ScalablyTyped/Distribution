@@ -20,7 +20,7 @@ Instantiable1[/* libFile */ String, js.Any]
      with Instantiable2[/* libFile */ String, /* funcs */ StringDictionary[js.Array[js.Any]], js.Any]
      with Instantiable3[
       /* libFile */ String, 
-      /* funcs */ StringDictionary[js.Array[js.Any]], 
+      js.UndefOr[/* funcs */ StringDictionary[js.Array[js.Any]]], 
       /* lib */ js.Object, 
       js.Any
     ] {
@@ -32,6 +32,7 @@ Instantiable1[/* libFile */ String, js.Any]
     * @param lib hash that will be extended
     */
   def apply(libFile: String): js.Any = js.native
+  def apply(libFile: String, funcs: js.UndefOr[scala.Nothing], lib: js.Object): js.Any = js.native
   def apply(libFile: String, funcs: StringDictionary[js.Array[_]]): js.Any = js.native
   def apply(libFile: String, funcs: StringDictionary[js.Array[_]], lib: js.Object): js.Any = js.native
 }

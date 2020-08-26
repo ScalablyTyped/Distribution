@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapOptions extends js.Object {
-  var drawControl: js.UndefOr[Boolean] = js.undefined
-  var drawControlTooltips: js.UndefOr[Boolean] = js.undefined
-  var touchExtend: js.UndefOr[Boolean] = js.undefined
+  var drawControl: js.UndefOr[Boolean] = js.native
+  var drawControlTooltips: js.UndefOr[Boolean] = js.native
+  var touchExtend: js.UndefOr[Boolean] = js.native
 }
 
 object MapOptions {
   @scala.inline
-  def apply(
-    drawControl: js.UndefOr[Boolean] = js.undefined,
-    drawControlTooltips: js.UndefOr[Boolean] = js.undefined,
-    touchExtend: js.UndefOr[Boolean] = js.undefined
-  ): MapOptions = {
+  def apply(): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drawControl)) __obj.updateDynamic("drawControl")(drawControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawControlTooltips)) __obj.updateDynamic("drawControlTooltips")(drawControlTooltips.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchExtend)) __obj.updateDynamic("touchExtend")(touchExtend.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
+  @scala.inline
+  implicit class MapOptionsOps[Self <: MapOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDrawControl(value: Boolean): Self = this.set("drawControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawControl: Self = this.set("drawControl", js.undefined)
+    @scala.inline
+    def setDrawControlTooltips(value: Boolean): Self = this.set("drawControlTooltips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawControlTooltips: Self = this.set("drawControlTooltips", js.undefined)
+    @scala.inline
+    def setTouchExtend(value: Boolean): Self = this.set("touchExtend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchExtend: Self = this.set("touchExtend", js.undefined)
+  }
+  
 }
 

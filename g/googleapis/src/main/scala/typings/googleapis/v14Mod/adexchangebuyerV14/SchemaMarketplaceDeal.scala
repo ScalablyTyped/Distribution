@@ -124,60 +124,126 @@ trait SchemaMarketplaceDeal extends js.Object {
 
 object SchemaMarketplaceDeal {
   @scala.inline
-  def apply(
-    buyerPrivateData: SchemaPrivateData = null,
-    creationTimeMs: String = null,
-    creativePreApprovalPolicy: String = null,
-    creativeSafeFrameCompatibility: String = null,
-    dealId: String = null,
-    dealServingMetadata: SchemaDealServingMetadata = null,
-    deliveryControl: SchemaDeliveryControl = null,
-    externalDealId: String = null,
-    flightEndTimeMs: String = null,
-    flightStartTimeMs: String = null,
-    inventoryDescription: String = null,
-    isRfpTemplate: js.UndefOr[Boolean] = js.undefined,
-    isSetupComplete: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    lastUpdateTimeMs: String = null,
-    name: String = null,
-    productId: String = null,
-    productRevisionNumber: String = null,
-    programmaticCreativeSource: String = null,
-    proposalId: String = null,
-    sellerContacts: js.Array[SchemaContactInformation] = null,
-    sharedTargetings: js.Array[SchemaSharedTargeting] = null,
-    syndicationProduct: String = null,
-    terms: SchemaDealTerms = null,
-    webPropertyCode: String = null
-  ): SchemaMarketplaceDeal = {
+  def apply(): SchemaMarketplaceDeal = {
     val __obj = js.Dynamic.literal()
-    if (buyerPrivateData != null) __obj.updateDynamic("buyerPrivateData")(buyerPrivateData.asInstanceOf[js.Any])
-    if (creationTimeMs != null) __obj.updateDynamic("creationTimeMs")(creationTimeMs.asInstanceOf[js.Any])
-    if (creativePreApprovalPolicy != null) __obj.updateDynamic("creativePreApprovalPolicy")(creativePreApprovalPolicy.asInstanceOf[js.Any])
-    if (creativeSafeFrameCompatibility != null) __obj.updateDynamic("creativeSafeFrameCompatibility")(creativeSafeFrameCompatibility.asInstanceOf[js.Any])
-    if (dealId != null) __obj.updateDynamic("dealId")(dealId.asInstanceOf[js.Any])
-    if (dealServingMetadata != null) __obj.updateDynamic("dealServingMetadata")(dealServingMetadata.asInstanceOf[js.Any])
-    if (deliveryControl != null) __obj.updateDynamic("deliveryControl")(deliveryControl.asInstanceOf[js.Any])
-    if (externalDealId != null) __obj.updateDynamic("externalDealId")(externalDealId.asInstanceOf[js.Any])
-    if (flightEndTimeMs != null) __obj.updateDynamic("flightEndTimeMs")(flightEndTimeMs.asInstanceOf[js.Any])
-    if (flightStartTimeMs != null) __obj.updateDynamic("flightStartTimeMs")(flightStartTimeMs.asInstanceOf[js.Any])
-    if (inventoryDescription != null) __obj.updateDynamic("inventoryDescription")(inventoryDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRfpTemplate)) __obj.updateDynamic("isRfpTemplate")(isRfpTemplate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSetupComplete)) __obj.updateDynamic("isSetupComplete")(isSetupComplete.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastUpdateTimeMs != null) __obj.updateDynamic("lastUpdateTimeMs")(lastUpdateTimeMs.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (productRevisionNumber != null) __obj.updateDynamic("productRevisionNumber")(productRevisionNumber.asInstanceOf[js.Any])
-    if (programmaticCreativeSource != null) __obj.updateDynamic("programmaticCreativeSource")(programmaticCreativeSource.asInstanceOf[js.Any])
-    if (proposalId != null) __obj.updateDynamic("proposalId")(proposalId.asInstanceOf[js.Any])
-    if (sellerContacts != null) __obj.updateDynamic("sellerContacts")(sellerContacts.asInstanceOf[js.Any])
-    if (sharedTargetings != null) __obj.updateDynamic("sharedTargetings")(sharedTargetings.asInstanceOf[js.Any])
-    if (syndicationProduct != null) __obj.updateDynamic("syndicationProduct")(syndicationProduct.asInstanceOf[js.Any])
-    if (terms != null) __obj.updateDynamic("terms")(terms.asInstanceOf[js.Any])
-    if (webPropertyCode != null) __obj.updateDynamic("webPropertyCode")(webPropertyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMarketplaceDeal]
   }
+  @scala.inline
+  implicit class SchemaMarketplaceDealOps[Self <: SchemaMarketplaceDeal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuyerPrivateData(value: SchemaPrivateData): Self = this.set("buyerPrivateData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuyerPrivateData: Self = this.set("buyerPrivateData", js.undefined)
+    @scala.inline
+    def setCreationTimeMs(value: String): Self = this.set("creationTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimeMs: Self = this.set("creationTimeMs", js.undefined)
+    @scala.inline
+    def setCreativePreApprovalPolicy(value: String): Self = this.set("creativePreApprovalPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativePreApprovalPolicy: Self = this.set("creativePreApprovalPolicy", js.undefined)
+    @scala.inline
+    def setCreativeSafeFrameCompatibility(value: String): Self = this.set("creativeSafeFrameCompatibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeSafeFrameCompatibility: Self = this.set("creativeSafeFrameCompatibility", js.undefined)
+    @scala.inline
+    def setDealId(value: String): Self = this.set("dealId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDealId: Self = this.set("dealId", js.undefined)
+    @scala.inline
+    def setDealServingMetadata(value: SchemaDealServingMetadata): Self = this.set("dealServingMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDealServingMetadata: Self = this.set("dealServingMetadata", js.undefined)
+    @scala.inline
+    def setDeliveryControl(value: SchemaDeliveryControl): Self = this.set("deliveryControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryControl: Self = this.set("deliveryControl", js.undefined)
+    @scala.inline
+    def setExternalDealId(value: String): Self = this.set("externalDealId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalDealId: Self = this.set("externalDealId", js.undefined)
+    @scala.inline
+    def setFlightEndTimeMs(value: String): Self = this.set("flightEndTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlightEndTimeMs: Self = this.set("flightEndTimeMs", js.undefined)
+    @scala.inline
+    def setFlightStartTimeMs(value: String): Self = this.set("flightStartTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlightStartTimeMs: Self = this.set("flightStartTimeMs", js.undefined)
+    @scala.inline
+    def setInventoryDescription(value: String): Self = this.set("inventoryDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventoryDescription: Self = this.set("inventoryDescription", js.undefined)
+    @scala.inline
+    def setIsRfpTemplate(value: Boolean): Self = this.set("isRfpTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRfpTemplate: Self = this.set("isRfpTemplate", js.undefined)
+    @scala.inline
+    def setIsSetupComplete(value: Boolean): Self = this.set("isSetupComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSetupComplete: Self = this.set("isSetupComplete", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastUpdateTimeMs(value: String): Self = this.set("lastUpdateTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTimeMs: Self = this.set("lastUpdateTimeMs", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+    @scala.inline
+    def setProductRevisionNumber(value: String): Self = this.set("productRevisionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductRevisionNumber: Self = this.set("productRevisionNumber", js.undefined)
+    @scala.inline
+    def setProgrammaticCreativeSource(value: String): Self = this.set("programmaticCreativeSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgrammaticCreativeSource: Self = this.set("programmaticCreativeSource", js.undefined)
+    @scala.inline
+    def setProposalId(value: String): Self = this.set("proposalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposalId: Self = this.set("proposalId", js.undefined)
+    @scala.inline
+    def setSellerContactsVarargs(value: SchemaContactInformation*): Self = this.set("sellerContacts", js.Array(value :_*))
+    @scala.inline
+    def setSellerContacts(value: js.Array[SchemaContactInformation]): Self = this.set("sellerContacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSellerContacts: Self = this.set("sellerContacts", js.undefined)
+    @scala.inline
+    def setSharedTargetingsVarargs(value: SchemaSharedTargeting*): Self = this.set("sharedTargetings", js.Array(value :_*))
+    @scala.inline
+    def setSharedTargetings(value: js.Array[SchemaSharedTargeting]): Self = this.set("sharedTargetings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedTargetings: Self = this.set("sharedTargetings", js.undefined)
+    @scala.inline
+    def setSyndicationProduct(value: String): Self = this.set("syndicationProduct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyndicationProduct: Self = this.set("syndicationProduct", js.undefined)
+    @scala.inline
+    def setTerms(value: SchemaDealTerms): Self = this.set("terms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerms: Self = this.set("terms", js.undefined)
+    @scala.inline
+    def setWebPropertyCode(value: String): Self = this.set("webPropertyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebPropertyCode: Self = this.set("webPropertyCode", js.undefined)
+  }
+  
 }
 

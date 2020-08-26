@@ -6,34 +6,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapContextProps extends js.Object {
-  var eventManager: js.UndefOr[EventManager] = js.undefined
-  var isDragging: Boolean
-  var map: js.UndefOr[Map] = js.undefined
-  var mapContainer: HTMLElement | Null
-  var onViewStateChange: js.UndefOr[ContextViewStateChangeHandler] = js.undefined
-  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.undefined
-  var viewport: js.UndefOr[typings.viewportMercatorProject.mod.default] = js.undefined
+  var eventManager: js.UndefOr[EventManager] = js.native
+  var isDragging: Boolean = js.native
+  var map: js.UndefOr[Map] = js.native
+  var mapContainer: HTMLElement | Null = js.native
+  var onViewStateChange: js.UndefOr[ContextViewStateChangeHandler] = js.native
+  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.native
+  var viewport: js.UndefOr[typings.viewportMercatorProject.mod.default] = js.native
 }
 
 object MapContextProps {
   @scala.inline
-  def apply(
-    isDragging: Boolean,
-    eventManager: EventManager = null,
-    map: Map = null,
-    mapContainer: HTMLElement = null,
-    onViewStateChange: /* info */ ContextViewStateChangeInfo => Unit = null,
-    onViewportChange: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit = null,
-    viewport: typings.viewportMercatorProject.mod.default = null
-  ): MapContextProps = {
-    val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any], mapContainer = mapContainer.asInstanceOf[js.Any])
-    if (eventManager != null) __obj.updateDynamic("eventManager")(eventManager.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3(onViewportChange))
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
+  def apply(isDragging: Boolean): MapContextProps = {
+    val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapContextProps]
   }
+  @scala.inline
+  implicit class MapContextPropsOps[Self <: MapContextProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsDragging(value: Boolean): Self = this.set("isDragging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventManager: Self = this.set("eventManager", js.undefined)
+    @scala.inline
+    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setMapContainer(value: HTMLElement): Self = this.set("mapContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMapContainerNull: Self = this.set("mapContainer", null)
+    @scala.inline
+    def setOnViewStateChange(value: /* info */ ContextViewStateChangeInfo => Unit): Self = this.set("onViewStateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnViewStateChange: Self = this.set("onViewStateChange", js.undefined)
+    @scala.inline
+    def setOnViewportChange(
+      value: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit
+    ): Self = this.set("onViewportChange", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnViewportChange: Self = this.set("onViewportChange", js.undefined)
+    @scala.inline
+    def setViewport(value: typings.viewportMercatorProject.mod.default): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewport: Self = this.set("viewport", js.undefined)
+  }
+  
 }
 

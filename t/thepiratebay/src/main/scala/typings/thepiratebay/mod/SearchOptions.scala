@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchOptions extends js.Object {
-  var category: js.UndefOr[String | Double] = js.undefined
-  var filter: js.UndefOr[Verified] = js.undefined
-  var orderBy: js.UndefOr[String] = js.undefined
-  var page: js.UndefOr[Double] = js.undefined
-  var sortBy: js.UndefOr[String] = js.undefined
+  var category: js.UndefOr[String | Double] = js.native
+  var filter: js.UndefOr[Verified] = js.native
+  var orderBy: js.UndefOr[String] = js.native
+  var page: js.UndefOr[Double] = js.native
+  var sortBy: js.UndefOr[String] = js.native
 }
 
 object SearchOptions {
   @scala.inline
-  def apply(
-    category: String | Double = null,
-    filter: Verified = null,
-    orderBy: String = null,
-    page: js.UndefOr[Double] = js.undefined,
-    sortBy: String = null
-  ): SearchOptions = {
+  def apply(): SearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }
+  @scala.inline
+  implicit class SearchOptionsOps[Self <: SearchOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: String | Double): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setFilter(value: Verified): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setSortBy(value: String): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+  }
+  
 }
 

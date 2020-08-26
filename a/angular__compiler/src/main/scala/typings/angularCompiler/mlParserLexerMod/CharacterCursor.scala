@@ -22,6 +22,7 @@ trait CharacterCursor extends js.Object {
   def getChars(start: this.type): String = js.native
   /** Get a span from the marked start point to the current point. */
   def getSpan(): ParseSourceSpan = js.native
+  def getSpan(start: js.UndefOr[scala.Nothing], leadingTriviaCodePoints: js.Array[Double]): ParseSourceSpan = js.native
   def getSpan(start: this.type): ParseSourceSpan = js.native
   def getSpan(start: this.type, leadingTriviaCodePoints: js.Array[Double]): ParseSourceSpan = js.native
   /** Initialize the cursor. */

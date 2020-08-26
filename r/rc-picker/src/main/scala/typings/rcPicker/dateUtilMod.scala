@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/utils/dateUtil", JSImport.Namespace)
+@JSImport("rc-picker/es/utils/dateUtil", JSImport.Namespace)
 @js.native
 object dateUtilMod extends js.Object {
   val WEEK_DAY_COUNT: /* 7 */ Double = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "CompileDirectiveMetadata")
 @js.native
 class CompileDirectiveMetadata protected ()
-  extends typings.angularCompiler.publicApiMod.CompileDirectiveMetadata {
+  extends typings.angularCompiler.compilerMod.CompileDirectiveMetadata {
   def this(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostListenersHostPropertiesHostAttributesProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: ComponentFactory) = this()
 }
 

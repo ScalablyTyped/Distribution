@@ -1,6 +1,6 @@
 package typings.gitlab.pipelinesMod
 
-import typings.gitlab.anon.scopeJobScopeSudoScope
+import typings.gitlab.anon.scopeJobScopeSudo
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
@@ -42,8 +42,8 @@ class Pipelines () extends BaseService {
   def show(projectId: Double, pipelineId: Double): js.Promise[GetResponse] = js.native
   def show(projectId: Double, pipelineId: Double, options: Sudo): js.Promise[GetResponse] = js.native
   def showJobs(projectId: String, pipelineId: Double): js.Promise[GetResponse] = js.native
-  def showJobs(projectId: String, pipelineId: Double, options: scopeJobScopeSudoScope): js.Promise[GetResponse] = js.native
+  def showJobs(projectId: String, pipelineId: Double, options: scopeJobScopeSudo): js.Promise[GetResponse] = js.native
   def showJobs(projectId: Double, pipelineId: Double): js.Promise[GetResponse] = js.native
-  def showJobs(projectId: Double, pipelineId: Double, options: scopeJobScopeSudoScope): js.Promise[GetResponse] = js.native
+  def showJobs(projectId: Double, pipelineId: Double, options: scopeJobScopeSudo): js.Promise[GetResponse] = js.native
 }
 

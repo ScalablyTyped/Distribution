@@ -12,7 +12,7 @@ HTTP Accept-* headers parsing
 | Keywords           | HTTP, header, accept, accept-encoding |
 | # releases         | 4 |
 | # dependents       | 20 |
-| # downloads        | 10524953 |
+| # downloads        | 10346866 |
 | # stars            | 0 |
 
 ## Links

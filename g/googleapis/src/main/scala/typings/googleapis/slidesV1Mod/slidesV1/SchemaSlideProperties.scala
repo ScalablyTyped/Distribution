@@ -35,12 +35,34 @@ trait SchemaSlideProperties extends js.Object {
 
 object SchemaSlideProperties {
   @scala.inline
-  def apply(layoutObjectId: String = null, masterObjectId: String = null, notesPage: SchemaPage = null): SchemaSlideProperties = {
+  def apply(): SchemaSlideProperties = {
     val __obj = js.Dynamic.literal()
-    if (layoutObjectId != null) __obj.updateDynamic("layoutObjectId")(layoutObjectId.asInstanceOf[js.Any])
-    if (masterObjectId != null) __obj.updateDynamic("masterObjectId")(masterObjectId.asInstanceOf[js.Any])
-    if (notesPage != null) __obj.updateDynamic("notesPage")(notesPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSlideProperties]
   }
+  @scala.inline
+  implicit class SchemaSlidePropertiesOps[Self <: SchemaSlideProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayoutObjectId(value: String): Self = this.set("layoutObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutObjectId: Self = this.set("layoutObjectId", js.undefined)
+    @scala.inline
+    def setMasterObjectId(value: String): Self = this.set("masterObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterObjectId: Self = this.set("masterObjectId", js.undefined)
+    @scala.inline
+    def setNotesPage(value: SchemaPage): Self = this.set("notesPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotesPage: Self = this.set("notesPage", js.undefined)
+  }
+  
 }
 

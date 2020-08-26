@@ -25,6 +25,7 @@ object EditorValue extends js.Object {
   def createEmpty(decorator: js.Any): EditorValue = js.native
   def createFromState(editorState: EditorState): EditorValue = js.native
   def createFromString(markup: String, format: String): EditorValue = js.native
+  def createFromString(markup: String, format: String, decorator: js.UndefOr[scala.Nothing], options: ImportOptions): EditorValue = js.native
   def createFromString(markup: String, format: String, decorator: js.Any): EditorValue = js.native
   def createFromString(markup: String, format: String, decorator: js.Any, options: ImportOptions): EditorValue = js.native
 }

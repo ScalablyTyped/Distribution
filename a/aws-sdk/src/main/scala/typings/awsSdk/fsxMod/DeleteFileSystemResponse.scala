@@ -20,18 +20,38 @@ trait DeleteFileSystemResponse extends js.Object {
 
 object DeleteFileSystemResponse {
   @scala.inline
-  def apply(
-    FileSystemId: FileSystemId = null,
-    Lifecycle: FileSystemLifecycle = null,
-    LustreResponse: DeleteFileSystemLustreResponse = null,
-    WindowsResponse: DeleteFileSystemWindowsResponse = null
-  ): DeleteFileSystemResponse = {
+  def apply(): DeleteFileSystemResponse = {
     val __obj = js.Dynamic.literal()
-    if (FileSystemId != null) __obj.updateDynamic("FileSystemId")(FileSystemId.asInstanceOf[js.Any])
-    if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
-    if (LustreResponse != null) __obj.updateDynamic("LustreResponse")(LustreResponse.asInstanceOf[js.Any])
-    if (WindowsResponse != null) __obj.updateDynamic("WindowsResponse")(WindowsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFileSystemResponse]
   }
+  @scala.inline
+  implicit class DeleteFileSystemResponseOps[Self <: DeleteFileSystemResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemId: Self = this.set("FileSystemId", js.undefined)
+    @scala.inline
+    def setLifecycle(value: FileSystemLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+    @scala.inline
+    def setLustreResponse(value: DeleteFileSystemLustreResponse): Self = this.set("LustreResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLustreResponse: Self = this.set("LustreResponse", js.undefined)
+    @scala.inline
+    def setWindowsResponse(value: DeleteFileSystemWindowsResponse): Self = this.set("WindowsResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowsResponse: Self = this.set("WindowsResponse", js.undefined)
+  }
+  
 }
 

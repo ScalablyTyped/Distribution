@@ -16,8 +16,58 @@ trait Windows extends js.Object {
   def apply(Index: Double): Window = js.native
   /** @param ArrangeStyle [ArrangeStyle=1] */
   def Arrange(): js.Any = js.native
+  def Arrange(
+    ArrangeStyle: js.UndefOr[scala.Nothing],
+    ActiveWorkbook: js.UndefOr[scala.Nothing],
+    SyncHorizontal: js.UndefOr[scala.Nothing],
+    SyncVertical: Boolean
+  ): js.Any = js.native
+  def Arrange(
+    ArrangeStyle: js.UndefOr[scala.Nothing],
+    ActiveWorkbook: js.UndefOr[scala.Nothing],
+    SyncHorizontal: Boolean
+  ): js.Any = js.native
+  def Arrange(
+    ArrangeStyle: js.UndefOr[scala.Nothing],
+    ActiveWorkbook: js.UndefOr[scala.Nothing],
+    SyncHorizontal: Boolean,
+    SyncVertical: Boolean
+  ): js.Any = js.native
+  def Arrange(ArrangeStyle: js.UndefOr[scala.Nothing], ActiveWorkbook: Boolean): js.Any = js.native
+  def Arrange(
+    ArrangeStyle: js.UndefOr[scala.Nothing],
+    ActiveWorkbook: Boolean,
+    SyncHorizontal: js.UndefOr[scala.Nothing],
+    SyncVertical: Boolean
+  ): js.Any = js.native
+  def Arrange(ArrangeStyle: js.UndefOr[scala.Nothing], ActiveWorkbook: Boolean, SyncHorizontal: Boolean): js.Any = js.native
+  def Arrange(
+    ArrangeStyle: js.UndefOr[scala.Nothing],
+    ActiveWorkbook: Boolean,
+    SyncHorizontal: Boolean,
+    SyncVertical: Boolean
+  ): js.Any = js.native
   def Arrange(ArrangeStyle: XlArrangeStyle): js.Any = js.native
+  def Arrange(
+    ArrangeStyle: XlArrangeStyle,
+    ActiveWorkbook: js.UndefOr[scala.Nothing],
+    SyncHorizontal: js.UndefOr[scala.Nothing],
+    SyncVertical: Boolean
+  ): js.Any = js.native
+  def Arrange(ArrangeStyle: XlArrangeStyle, ActiveWorkbook: js.UndefOr[scala.Nothing], SyncHorizontal: Boolean): js.Any = js.native
+  def Arrange(
+    ArrangeStyle: XlArrangeStyle,
+    ActiveWorkbook: js.UndefOr[scala.Nothing],
+    SyncHorizontal: Boolean,
+    SyncVertical: Boolean
+  ): js.Any = js.native
   def Arrange(ArrangeStyle: XlArrangeStyle, ActiveWorkbook: Boolean): js.Any = js.native
+  def Arrange(
+    ArrangeStyle: XlArrangeStyle,
+    ActiveWorkbook: Boolean,
+    SyncHorizontal: js.UndefOr[scala.Nothing],
+    SyncVertical: Boolean
+  ): js.Any = js.native
   def Arrange(ArrangeStyle: XlArrangeStyle, ActiveWorkbook: Boolean, SyncHorizontal: Boolean): js.Any = js.native
   def Arrange(
     ArrangeStyle: XlArrangeStyle,
@@ -27,6 +77,13 @@ trait Windows extends js.Object {
   ): js.Any = js.native
   @JSName("Arrange")
   def Arrange_true(ArrangeStyle: XlArrangeStyle, ActiveWorkbook: `true`): js.Any = js.native
+  @JSName("Arrange")
+  def Arrange_true(
+    ArrangeStyle: XlArrangeStyle,
+    ActiveWorkbook: `true`,
+    SyncHorizontal: js.UndefOr[scala.Nothing],
+    SyncVertical: Boolean
+  ): js.Any = js.native
   @JSName("Arrange")
   def Arrange_true(ArrangeStyle: XlArrangeStyle, ActiveWorkbook: `true`, SyncHorizontal: Boolean): js.Any = js.native
   @JSName("Arrange")

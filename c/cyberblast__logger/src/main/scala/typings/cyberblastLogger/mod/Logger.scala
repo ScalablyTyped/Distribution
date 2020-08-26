@@ -14,13 +14,13 @@ class Logger () extends js.Object {
   def defineCategory(name: String): Unit = js.native
   def init(): js.Promise[Unit] = js.native
   def log(logData: LogData): Unit = js.native
-  def logError(message: String): Unit = js.native
+  def logError(message: String, category: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
   def logError(message: String, category: String, data: js.Any*): Unit = js.native
-  def logInfo(message: String): Unit = js.native
+  def logInfo(message: String, category: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
   def logInfo(message: String, category: String, data: js.Any*): Unit = js.native
-  def logVerbose(message: String): Unit = js.native
+  def logVerbose(message: String, category: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
   def logVerbose(message: String, category: String, data: js.Any*): Unit = js.native
-  def logWarning(message: String): Unit = js.native
+  def logWarning(message: String, category: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
   def logWarning(message: String, category: String, data: js.Any*): Unit = js.native
   def on(ruleName: String, callback: js.Function1[/* logData */ LogData, Unit]): Unit = js.native
   def onError(callback: js.Function1[/* logData */ LogData, Unit]): Unit = js.native

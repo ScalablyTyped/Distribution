@@ -142,76 +142,160 @@ trait Snapshot extends js.Object {
 
 object Snapshot {
   @scala.inline
-  def apply(
-    AccountsWithRestoreAccess: AccountsWithRestoreAccessList = null,
-    ActualIncrementalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined,
-    AvailabilityZone: String = null,
-    BackupProgressInMegaBytes: js.UndefOr[Double] = js.undefined,
-    ClusterCreateTime: TStamp = null,
-    ClusterIdentifier: String = null,
-    ClusterVersion: String = null,
-    CurrentBackupRateInMegaBytesPerSecond: js.UndefOr[Double] = js.undefined,
-    DBName: String = null,
-    ElapsedTimeInSeconds: js.UndefOr[Long] = js.undefined,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    EncryptedWithHSM: js.UndefOr[Boolean] = js.undefined,
-    EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined,
-    EstimatedSecondsToCompletion: js.UndefOr[Long] = js.undefined,
-    KmsKeyId: String = null,
-    MaintenanceTrackName: String = null,
-    ManualSnapshotRemainingDays: js.UndefOr[IntegerOptional] = js.undefined,
-    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    MasterUsername: String = null,
-    NodeType: String = null,
-    NumberOfNodes: js.UndefOr[Integer] = js.undefined,
-    OwnerAccount: String = null,
-    Port: js.UndefOr[Integer] = js.undefined,
-    RestorableNodeTypes: RestorableNodeTypeList = null,
-    SnapshotCreateTime: TStamp = null,
-    SnapshotIdentifier: String = null,
-    SnapshotRetentionStartTime: TStamp = null,
-    SnapshotType: String = null,
-    SourceRegion: String = null,
-    Status: String = null,
-    Tags: TagList = null,
-    TotalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined,
-    VpcId: String = null
-  ): Snapshot = {
+  def apply(): Snapshot = {
     val __obj = js.Dynamic.literal()
-    if (AccountsWithRestoreAccess != null) __obj.updateDynamic("AccountsWithRestoreAccess")(AccountsWithRestoreAccess.asInstanceOf[js.Any])
-    if (!js.isUndefined(ActualIncrementalBackupSizeInMegaBytes)) __obj.updateDynamic("ActualIncrementalBackupSizeInMegaBytes")(ActualIncrementalBackupSizeInMegaBytes.get.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(BackupProgressInMegaBytes)) __obj.updateDynamic("BackupProgressInMegaBytes")(BackupProgressInMegaBytes.get.asInstanceOf[js.Any])
-    if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime.asInstanceOf[js.Any])
-    if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
-    if (ClusterVersion != null) __obj.updateDynamic("ClusterVersion")(ClusterVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(CurrentBackupRateInMegaBytesPerSecond)) __obj.updateDynamic("CurrentBackupRateInMegaBytesPerSecond")(CurrentBackupRateInMegaBytesPerSecond.get.asInstanceOf[js.Any])
-    if (DBName != null) __obj.updateDynamic("DBName")(DBName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ElapsedTimeInSeconds)) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EncryptedWithHSM)) __obj.updateDynamic("EncryptedWithHSM")(EncryptedWithHSM.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnhancedVpcRouting)) __obj.updateDynamic("EnhancedVpcRouting")(EnhancedVpcRouting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EstimatedSecondsToCompletion)) __obj.updateDynamic("EstimatedSecondsToCompletion")(EstimatedSecondsToCompletion.get.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManualSnapshotRemainingDays)) __obj.updateDynamic("ManualSnapshotRemainingDays")(ManualSnapshotRemainingDays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
-    if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername.asInstanceOf[js.Any])
-    if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
-    if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (RestorableNodeTypes != null) __obj.updateDynamic("RestorableNodeTypes")(RestorableNodeTypes.asInstanceOf[js.Any])
-    if (SnapshotCreateTime != null) __obj.updateDynamic("SnapshotCreateTime")(SnapshotCreateTime.asInstanceOf[js.Any])
-    if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier.asInstanceOf[js.Any])
-    if (SnapshotRetentionStartTime != null) __obj.updateDynamic("SnapshotRetentionStartTime")(SnapshotRetentionStartTime.asInstanceOf[js.Any])
-    if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType.asInstanceOf[js.Any])
-    if (SourceRegion != null) __obj.updateDynamic("SourceRegion")(SourceRegion.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalBackupSizeInMegaBytes)) __obj.updateDynamic("TotalBackupSizeInMegaBytes")(TotalBackupSizeInMegaBytes.get.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }
+  @scala.inline
+  implicit class SnapshotOps[Self <: Snapshot] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountsWithRestoreAccessVarargs(value: AccountWithRestoreAccess*): Self = this.set("AccountsWithRestoreAccess", js.Array(value :_*))
+    @scala.inline
+    def setAccountsWithRestoreAccess(value: AccountsWithRestoreAccessList): Self = this.set("AccountsWithRestoreAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountsWithRestoreAccess: Self = this.set("AccountsWithRestoreAccess", js.undefined)
+    @scala.inline
+    def setActualIncrementalBackupSizeInMegaBytes(value: Double): Self = this.set("ActualIncrementalBackupSizeInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActualIncrementalBackupSizeInMegaBytes: Self = this.set("ActualIncrementalBackupSizeInMegaBytes", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setBackupProgressInMegaBytes(value: Double): Self = this.set("BackupProgressInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupProgressInMegaBytes: Self = this.set("BackupProgressInMegaBytes", js.undefined)
+    @scala.inline
+    def setClusterCreateTime(value: TStamp): Self = this.set("ClusterCreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterCreateTime: Self = this.set("ClusterCreateTime", js.undefined)
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    @scala.inline
+    def setClusterVersion(value: String): Self = this.set("ClusterVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterVersion: Self = this.set("ClusterVersion", js.undefined)
+    @scala.inline
+    def setCurrentBackupRateInMegaBytesPerSecond(value: Double): Self = this.set("CurrentBackupRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentBackupRateInMegaBytesPerSecond: Self = this.set("CurrentBackupRateInMegaBytesPerSecond", js.undefined)
+    @scala.inline
+    def setDBName(value: String): Self = this.set("DBName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBName: Self = this.set("DBName", js.undefined)
+    @scala.inline
+    def setElapsedTimeInSeconds(value: Long): Self = this.set("ElapsedTimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElapsedTimeInSeconds: Self = this.set("ElapsedTimeInSeconds", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    @scala.inline
+    def setEncryptedWithHSM(value: Boolean): Self = this.set("EncryptedWithHSM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptedWithHSM: Self = this.set("EncryptedWithHSM", js.undefined)
+    @scala.inline
+    def setEnhancedVpcRouting(value: Boolean): Self = this.set("EnhancedVpcRouting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedVpcRouting: Self = this.set("EnhancedVpcRouting", js.undefined)
+    @scala.inline
+    def setEstimatedSecondsToCompletion(value: Long): Self = this.set("EstimatedSecondsToCompletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedSecondsToCompletion: Self = this.set("EstimatedSecondsToCompletion", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setMaintenanceTrackName(value: String): Self = this.set("MaintenanceTrackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceTrackName: Self = this.set("MaintenanceTrackName", js.undefined)
+    @scala.inline
+    def setManualSnapshotRemainingDays(value: IntegerOptional): Self = this.set("ManualSnapshotRemainingDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualSnapshotRemainingDays: Self = this.set("ManualSnapshotRemainingDays", js.undefined)
+    @scala.inline
+    def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = this.set("ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualSnapshotRetentionPeriod: Self = this.set("ManualSnapshotRetentionPeriod", js.undefined)
+    @scala.inline
+    def setMasterUsername(value: String): Self = this.set("MasterUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUsername: Self = this.set("MasterUsername", js.undefined)
+    @scala.inline
+    def setNodeType(value: String): Self = this.set("NodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeType: Self = this.set("NodeType", js.undefined)
+    @scala.inline
+    def setNumberOfNodes(value: Integer): Self = this.set("NumberOfNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfNodes: Self = this.set("NumberOfNodes", js.undefined)
+    @scala.inline
+    def setOwnerAccount(value: String): Self = this.set("OwnerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccount: Self = this.set("OwnerAccount", js.undefined)
+    @scala.inline
+    def setPort(value: Integer): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setRestorableNodeTypesVarargs(value: String*): Self = this.set("RestorableNodeTypes", js.Array(value :_*))
+    @scala.inline
+    def setRestorableNodeTypes(value: RestorableNodeTypeList): Self = this.set("RestorableNodeTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestorableNodeTypes: Self = this.set("RestorableNodeTypes", js.undefined)
+    @scala.inline
+    def setSnapshotCreateTime(value: TStamp): Self = this.set("SnapshotCreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotCreateTime: Self = this.set("SnapshotCreateTime", js.undefined)
+    @scala.inline
+    def setSnapshotIdentifier(value: String): Self = this.set("SnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIdentifier: Self = this.set("SnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setSnapshotRetentionStartTime(value: TStamp): Self = this.set("SnapshotRetentionStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotRetentionStartTime: Self = this.set("SnapshotRetentionStartTime", js.undefined)
+    @scala.inline
+    def setSnapshotType(value: String): Self = this.set("SnapshotType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotType: Self = this.set("SnapshotType", js.undefined)
+    @scala.inline
+    def setSourceRegion(value: String): Self = this.set("SourceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRegion: Self = this.set("SourceRegion", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTotalBackupSizeInMegaBytes(value: Double): Self = this.set("TotalBackupSizeInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBackupSizeInMegaBytes: Self = this.set("TotalBackupSizeInMegaBytes", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

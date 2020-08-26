@@ -38,24 +38,50 @@ trait GetJobOutputOutput extends js.Object {
 
 object GetJobOutputOutput {
   @scala.inline
-  def apply(
-    acceptRanges: String = null,
-    archiveDescription: String = null,
-    body: Stream = null,
-    checksum: String = null,
-    contentRange: String = null,
-    contentType: String = null,
-    status: js.UndefOr[httpstatus] = js.undefined
-  ): GetJobOutputOutput = {
+  def apply(): GetJobOutputOutput = {
     val __obj = js.Dynamic.literal()
-    if (acceptRanges != null) __obj.updateDynamic("acceptRanges")(acceptRanges.asInstanceOf[js.Any])
-    if (archiveDescription != null) __obj.updateDynamic("archiveDescription")(archiveDescription.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (contentRange != null) __obj.updateDynamic("contentRange")(contentRange.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobOutputOutput]
   }
+  @scala.inline
+  implicit class GetJobOutputOutputOps[Self <: GetJobOutputOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptRanges(value: String): Self = this.set("acceptRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptRanges: Self = this.set("acceptRanges", js.undefined)
+    @scala.inline
+    def setArchiveDescription(value: String): Self = this.set("archiveDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveDescription: Self = this.set("archiveDescription", js.undefined)
+    @scala.inline
+    def setBody(value: Stream): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    @scala.inline
+    def setContentRange(value: String): Self = this.set("contentRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentRange: Self = this.set("contentRange", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setStatus(value: httpstatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

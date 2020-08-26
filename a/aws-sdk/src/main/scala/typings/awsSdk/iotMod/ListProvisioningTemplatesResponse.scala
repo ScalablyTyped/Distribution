@@ -18,11 +18,32 @@ trait ListProvisioningTemplatesResponse extends js.Object {
 
 object ListProvisioningTemplatesResponse {
   @scala.inline
-  def apply(nextToken: NextToken = null, templates: ProvisioningTemplateListing = null): ListProvisioningTemplatesResponse = {
+  def apply(): ListProvisioningTemplatesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisioningTemplatesResponse]
   }
+  @scala.inline
+  implicit class ListProvisioningTemplatesResponseOps[Self <: ListProvisioningTemplatesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setTemplatesVarargs(value: ProvisioningTemplateSummary*): Self = this.set("templates", js.Array(value :_*))
+    @scala.inline
+    def setTemplates(value: ProvisioningTemplateListing): Self = this.set("templates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplates: Self = this.set("templates", js.undefined)
+  }
+  
 }
 

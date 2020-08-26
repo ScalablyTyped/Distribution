@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "protractor" : "5.4.4"
+      "protractor" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "protractor" : "5.4.4"
+      "protractor" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

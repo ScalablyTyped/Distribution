@@ -12,7 +12,7 @@ Abstract logger TypeScript interface with a dummy logger that does nothing, usef
 | Keywords           | typescript, abstract, logger, console, dummy |
 | # releases         | 13 |
 | # dependents       | 18 |
-| # downloads        | 5570886 |
+| # downloads        | 6159129 |
 | # stars            | 0 |
 
 ## Links

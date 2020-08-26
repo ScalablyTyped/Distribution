@@ -56,22 +56,46 @@ trait SchemaHttpCheck extends js.Object {
 
 object SchemaHttpCheck {
   @scala.inline
-  def apply(
-    authInfo: SchemaBasicAuthentication = null,
-    headers: StringDictionary[String] = null,
-    maskHeaders: js.UndefOr[Boolean] = js.undefined,
-    path: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    useSsl: js.UndefOr[Boolean] = js.undefined
-  ): SchemaHttpCheck = {
+  def apply(): SchemaHttpCheck = {
     val __obj = js.Dynamic.literal()
-    if (authInfo != null) __obj.updateDynamic("authInfo")(authInfo.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskHeaders)) __obj.updateDynamic("maskHeaders")(maskHeaders.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSsl)) __obj.updateDynamic("useSsl")(useSsl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpCheck]
   }
+  @scala.inline
+  implicit class SchemaHttpCheckOps[Self <: SchemaHttpCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthInfo(value: SchemaBasicAuthentication): Self = this.set("authInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthInfo: Self = this.set("authInfo", js.undefined)
+    @scala.inline
+    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setMaskHeaders(value: Boolean): Self = this.set("maskHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskHeaders: Self = this.set("maskHeaders", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setUseSsl(value: Boolean): Self = this.set("useSsl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseSsl: Self = this.set("useSsl", js.undefined)
+  }
+  
 }
 

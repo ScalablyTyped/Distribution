@@ -32,6 +32,7 @@ class ResourceSslcertificates protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaSslCertificateAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaSslCertificateAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSslCertificateAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceSslcertificatesAggregatedlist): GaxiosPromise[SchemaSslCertificateAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceSslcertificatesAggregatedlist,
@@ -64,6 +65,7 @@ class ResourceSslcertificates protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceSslcertificatesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceSslcertificatesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -93,6 +95,7 @@ class ResourceSslcertificates protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSslCertificate] = js.native
   def get(callback: BodyResponseCallback[SchemaSslCertificate]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSslCertificate] = js.native
   def get(params: ParamsResourceSslcertificatesGet): GaxiosPromise[SchemaSslCertificate] = js.native
   def get(params: ParamsResourceSslcertificatesGet, callback: BodyResponseCallback[SchemaSslCertificate]): Unit = js.native
   def get(
@@ -123,6 +126,7 @@ class ResourceSslcertificates protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceSslcertificatesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceSslcertificatesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -155,6 +159,7 @@ class ResourceSslcertificates protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSslCertificateList] = js.native
   def list(callback: BodyResponseCallback[SchemaSslCertificateList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSslCertificateList] = js.native
   def list(params: ParamsResourceSslcertificatesList): GaxiosPromise[SchemaSslCertificateList] = js.native
   def list(
     params: ParamsResourceSslcertificatesList,
@@ -187,6 +192,7 @@ class ResourceSslcertificates protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceSslcertificatesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceSslcertificatesTestiampermissions,

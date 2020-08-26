@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AbstractIterator[K, V] extends AbstractOptions {
-  var db: AbstractLevelDOWN[K, V]
-  def end(cb: ErrorCallback): Unit
-  def next(cb: ErrorKeyValueCallback[K, V]): this.type
+  var db: AbstractLevelDOWN[K, V] = js.native
+  def end(cb: ErrorCallback): Unit = js.native
+  def next(cb: ErrorKeyValueCallback[K, V]): this.type = js.native
 }
 
 @JSImport("abstract-leveldown", "AbstractIterator")

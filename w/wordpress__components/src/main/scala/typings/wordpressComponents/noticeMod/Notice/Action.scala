@@ -15,27 +15,13 @@ trait Action extends js.Object
 
 object Action {
   @scala.inline
-  def ButtonAction(
-    label: String,
-    onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit,
-    className: String = null,
-    noDefaultClasses: js.UndefOr[Boolean] = js.undefined
-  ): Action = {
+  def ButtonAction(label: String, onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Action = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDefaultClasses)) __obj.updateDynamic("noDefaultClasses")(noDefaultClasses.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
   @scala.inline
-  def URLAction(
-    label: String,
-    url: String,
-    className: String = null,
-    noDefaultClasses: js.UndefOr[Boolean] = js.undefined
-  ): Action = {
+  def URLAction(label: String, url: String): Action = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDefaultClasses)) __obj.updateDynamic("noDefaultClasses")(noDefaultClasses.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
 }

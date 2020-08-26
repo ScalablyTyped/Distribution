@@ -21,7 +21,7 @@ trait TypeofZipFS
      with Instantiable2[(/* input */ Buffer) | (/* input */ ZipTOC), /* name */ String, default]
      with Instantiable3[
       (/* input */ Buffer) | (/* input */ ZipTOC), 
-      /* name */ String, 
+      js.UndefOr[/* name */ String], 
       /* deprecateMsg */ Boolean, 
       default
     ] {

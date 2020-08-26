@@ -4,75 +4,128 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoaderOptions extends js.Object {
-  var color: js.UndefOr[String] = js.undefined
-  var corners: js.UndefOr[Double] = js.undefined
-  var direction: js.UndefOr[Double] = js.undefined
-  var fps: js.UndefOr[Double] = js.undefined
-  var hwaccel: js.UndefOr[Boolean] = js.undefined
-  var left: js.UndefOr[String] = js.undefined
-  var length: js.UndefOr[Double] = js.undefined
-  var lines: js.UndefOr[Double] = js.undefined
-  var loadedClassName: js.UndefOr[String] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var radius: js.UndefOr[Double] = js.undefined
-  var rotate: js.UndefOr[Double] = js.undefined
-  var scale: js.UndefOr[Double] = js.undefined
-  var shadow: js.UndefOr[Boolean] = js.undefined
-  var speed: js.UndefOr[Double] = js.undefined
-  var top: js.UndefOr[String] = js.undefined
-  var trail: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var color: js.UndefOr[String] = js.native
+  var corners: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[Double] = js.native
+  var fps: js.UndefOr[Double] = js.native
+  var hwaccel: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[String] = js.native
+  var length: js.UndefOr[Double] = js.native
+  var lines: js.UndefOr[Double] = js.native
+  var loadedClassName: js.UndefOr[String] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[String] = js.native
+  var radius: js.UndefOr[Double] = js.native
+  var rotate: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.native
+  var shadow: js.UndefOr[Boolean] = js.native
+  var speed: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[String] = js.native
+  var trail: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object LoaderOptions {
   @scala.inline
-  def apply(
-    color: String = null,
-    corners: js.UndefOr[Double] = js.undefined,
-    direction: js.UndefOr[Double] = js.undefined,
-    fps: js.UndefOr[Double] = js.undefined,
-    hwaccel: js.UndefOr[Boolean] = js.undefined,
-    left: String = null,
-    length: js.UndefOr[Double] = js.undefined,
-    lines: js.UndefOr[Double] = js.undefined,
-    loadedClassName: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    position: String = null,
-    radius: js.UndefOr[Double] = js.undefined,
-    rotate: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Double] = js.undefined,
-    shadow: js.UndefOr[Boolean] = js.undefined,
-    speed: js.UndefOr[Double] = js.undefined,
-    top: String = null,
-    trail: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): LoaderOptions = {
+  def apply(): LoaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fps)) __obj.updateDynamic("fps")(fps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hwaccel)) __obj.updateDynamic("hwaccel")(hwaccel.get.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lines)) __obj.updateDynamic("lines")(lines.get.asInstanceOf[js.Any])
-    if (loadedClassName != null) __obj.updateDynamic("loadedClassName")(loadedClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(trail)) __obj.updateDynamic("trail")(trail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderOptions]
   }
+  @scala.inline
+  implicit class LoaderOptionsOps[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCorners(value: Double): Self = this.set("corners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorners: Self = this.set("corners", js.undefined)
+    @scala.inline
+    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setFps(value: Double): Self = this.set("fps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFps: Self = this.set("fps", js.undefined)
+    @scala.inline
+    def setHwaccel(value: Boolean): Self = this.set("hwaccel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHwaccel: Self = this.set("hwaccel", js.undefined)
+    @scala.inline
+    def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    @scala.inline
+    def setLines(value: Double): Self = this.set("lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLines: Self = this.set("lines", js.undefined)
+    @scala.inline
+    def setLoadedClassName(value: String): Self = this.set("loadedClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadedClassName: Self = this.set("loadedClassName", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    @scala.inline
+    def setRotate(value: Double): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotate: Self = this.set("rotate", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setShadow(value: Boolean): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeed: Self = this.set("speed", js.undefined)
+    @scala.inline
+    def setTop(value: String): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setTrail(value: Double): Self = this.set("trail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrail: Self = this.set("trail", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

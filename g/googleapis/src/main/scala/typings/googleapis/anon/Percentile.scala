@@ -13,16 +13,36 @@ trait Percentile extends js.Object {
 
 object Percentile {
   @scala.inline
-  def apply(
-    category: String = null,
-    distributions: js.Array[Max] = null,
-    percentile: js.UndefOr[Double] = js.undefined
-  ): Percentile = {
+  def apply(): Percentile = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (distributions != null) __obj.updateDynamic("distributions")(distributions.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentile)) __obj.updateDynamic("percentile")(percentile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Percentile]
   }
+  @scala.inline
+  implicit class PercentileOps[Self <: Percentile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setDistributionsVarargs(value: Max*): Self = this.set("distributions", js.Array(value :_*))
+    @scala.inline
+    def setDistributions(value: js.Array[Max]): Self = this.set("distributions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributions: Self = this.set("distributions", js.undefined)
+    @scala.inline
+    def setPercentile(value: Double): Self = this.set("percentile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentile: Self = this.set("percentile", js.undefined)
+  }
+  
 }
 

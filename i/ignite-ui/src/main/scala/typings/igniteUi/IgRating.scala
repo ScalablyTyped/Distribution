@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgRating
   extends /**
   * Option for JSONPDataSourceSettings
@@ -25,29 +26,29 @@ trait IgRating
     * will customize selected and hover states for first 3 votes with classes h# and s#.
     *
     */
-  var cssVotes: js.UndefOr[js.Any] = js.undefined
+  var cssVotes: js.UndefOr[js.Any] = js.native
   /**
     * Gets if igRating can have focus. Change of that option is not supported after igRating was created.
     * Value true: can get focus and process key events.
     * Value false: cannot get focus.
     *
     */
-  var focusable: js.UndefOr[Boolean] = js.undefined
+  var focusable: js.UndefOr[Boolean] = js.native
   /**
     * Fired before hover value is changed.
     * If the application returns false, then the action is canceled and the value remains unchanged.
     */
-  var hoverChange: js.UndefOr[HoverChangeEvent] = js.undefined
+  var hoverChange: js.UndefOr[HoverChangeEvent] = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String] = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[js.Any] = js.native
   /**
     * Gets/Sets precision. Precision of value and valueHover.
     *
@@ -57,7 +58,7 @@ trait IgRating
     * "half" Value is rounded to the half of vote.
     * "whole" Value is rounded to the number of votes.
     */
-  var precision: js.UndefOr[String] = js.undefined
+  var precision: js.UndefOr[String] = js.native
   /**
     * Gets/Sets part of vote-size, which is considered as zero value.
     * It has effect only when precision is set to "half" or "whole".
@@ -65,12 +66,12 @@ trait IgRating
     * Same is applied for mouseover as well.
     *
     */
-  var precisionZeroVote: js.UndefOr[Double] = js.undefined
+  var precisionZeroVote: js.UndefOr[Double] = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.undefined
+  var regional: js.UndefOr[String | js.Object] = js.native
   /**
     * Gets/Sets number of decimal places used to round value and value-hover.
     * Negative value will disable that option and value will not be rounded.
@@ -80,120 +81,170 @@ trait IgRating
     * If it is larger than 15, then 15 is used.
     *
     */
-  var roundedDecimalPlaces: js.UndefOr[Double] = js.undefined
+  var roundedDecimalPlaces: js.UndefOr[Double] = js.native
   /**
     * Gets the direction of selected and hovered votes. Change of that option is not supported after igRating was created.
     * Value true: from left to right or from top to bottom.
     * Value false: from right to left or from bottom to left.
     *
     */
-  var swapDirection: js.UndefOr[Boolean] = js.undefined
+  var swapDirection: js.UndefOr[Boolean] = js.native
   /**
     * Gets/Sets selector for css classes.
     * That option allows replacing all default css styles by custom values.
     * Application should provide css classes for all members defined in the css options with "theme" selector.
     *
     */
-  var theme: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[String] = js.native
   /**
     * Gets/Sets object which contains options supported by igValidator.
     * Note that for onblur validation depends on the [focusable](ui.igrating#options:focusable) option.
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.undefined
+  var validatorOptions: js.UndefOr[js.Any] = js.native
   /**
     * Gets/Sets value (selected votes or percent). If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the value is used as number of selected votes or as a percent of the votes.
     *
     */
-  var value: js.UndefOr[Double | String] = js.undefined
+  var value: js.UndefOr[Double | String] = js.native
   /**
     * Gets/Sets percent or vote number to measure value and value-hover.
     * Value true: value is measured as percent (from 0 to 1).
     * Value false: value is measured in number of voted (from 0 to voteCount)
     *
     */
-  var valueAsPercent: js.UndefOr[Boolean] = js.undefined
+  var valueAsPercent: js.UndefOr[Boolean] = js.native
   /**
     * Fired before (selected) value is changed.
     * If the application returns false, then the action is canceled and the value remains unchanged.
     */
-  var valueChange: js.UndefOr[ValueChangeEvent] = js.undefined
+  var valueChange: js.UndefOr[ValueChangeEvent] = js.native
   /**
     * Gets/Sets value-hover (hovered votes or percent of hovered votes). The default is same as value. If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the valueHover is used as number of hovered votes or as a percent of the hovered votes.
     *
     */
-  var valueHover: js.UndefOr[Double | String] = js.undefined
+  var valueHover: js.UndefOr[Double | String] = js.native
   /**
     * Gets a vertical or horizontal orientation for the votes.
     * Change of that option is not supported after igRating was created.
     *
     */
-  var vertical: js.UndefOr[Boolean] = js.undefined
+  var vertical: js.UndefOr[Boolean] = js.native
   /**
     * Gets/Sets number of votes.
     *
     */
-  var voteCount: js.UndefOr[Double] = js.undefined
+  var voteCount: js.UndefOr[Double] = js.native
   /**
     * Gets/Sets custom height of a vote in pixels. In case of 0 the run time style value is used.
     *
     */
-  var voteHeight: js.UndefOr[Double] = js.undefined
+  var voteHeight: js.UndefOr[Double] = js.native
   /**
     * Gets/Sets custom width of a vote in pixels. In case of 0 the run time style value is used.
     *
     */
-  var voteWidth: js.UndefOr[Double] = js.undefined
+  var voteWidth: js.UndefOr[Double] = js.native
 }
 
 object IgRating {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    cssVotes: js.Any = null,
-    focusable: js.UndefOr[Boolean] = js.undefined,
-    hoverChange: (/* event */ Event, /* ui */ HoverChangeEventUIParam) => Unit = null,
-    language: String = null,
-    locale: js.Any = null,
-    precision: String = null,
-    precisionZeroVote: js.UndefOr[Double] = js.undefined,
-    regional: String | js.Object = null,
-    roundedDecimalPlaces: js.UndefOr[Double] = js.undefined,
-    swapDirection: js.UndefOr[Boolean] = js.undefined,
-    theme: String = null,
-    validatorOptions: js.Any = null,
-    value: Double | String = null,
-    valueAsPercent: js.UndefOr[Boolean] = js.undefined,
-    valueChange: (/* event */ Event, /* ui */ ValueChangeEventUIParam) => Unit = null,
-    valueHover: Double | String = null,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    voteCount: js.UndefOr[Double] = js.undefined,
-    voteHeight: js.UndefOr[Double] = js.undefined,
-    voteWidth: js.UndefOr[Double] = js.undefined
-  ): IgRating = {
+  def apply(): IgRating = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cssVotes != null) __obj.updateDynamic("cssVotes")(cssVotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
-    if (hoverChange != null) __obj.updateDynamic("hoverChange")(js.Any.fromFunction2(hoverChange))
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(precisionZeroVote)) __obj.updateDynamic("precisionZeroVote")(precisionZeroVote.get.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundedDecimalPlaces)) __obj.updateDynamic("roundedDecimalPlaces")(roundedDecimalPlaces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(swapDirection)) __obj.updateDynamic("swapDirection")(swapDirection.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueAsPercent)) __obj.updateDynamic("valueAsPercent")(valueAsPercent.get.asInstanceOf[js.Any])
-    if (valueChange != null) __obj.updateDynamic("valueChange")(js.Any.fromFunction2(valueChange))
-    if (valueHover != null) __obj.updateDynamic("valueHover")(valueHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(voteCount)) __obj.updateDynamic("voteCount")(voteCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(voteHeight)) __obj.updateDynamic("voteHeight")(voteHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(voteWidth)) __obj.updateDynamic("voteWidth")(voteWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgRating]
   }
+  @scala.inline
+  implicit class IgRatingOps[Self <: IgRating] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCssVotes(value: js.Any): Self = this.set("cssVotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssVotes: Self = this.set("cssVotes", js.undefined)
+    @scala.inline
+    def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusable: Self = this.set("focusable", js.undefined)
+    @scala.inline
+    def setHoverChange(value: (/* event */ Event, /* ui */ HoverChangeEventUIParam) => Unit): Self = this.set("hoverChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHoverChange: Self = this.set("hoverChange", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setPrecision(value: String): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setPrecisionZeroVote(value: Double): Self = this.set("precisionZeroVote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecisionZeroVote: Self = this.set("precisionZeroVote", js.undefined)
+    @scala.inline
+    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegional: Self = this.set("regional", js.undefined)
+    @scala.inline
+    def setRoundedDecimalPlaces(value: Double): Self = this.set("roundedDecimalPlaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoundedDecimalPlaces: Self = this.set("roundedDecimalPlaces", js.undefined)
+    @scala.inline
+    def setSwapDirection(value: Boolean): Self = this.set("swapDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwapDirection: Self = this.set("swapDirection", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setValidatorOptions(value: js.Any): Self = this.set("validatorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidatorOptions: Self = this.set("validatorOptions", js.undefined)
+    @scala.inline
+    def setValue(value: Double | String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueAsPercent(value: Boolean): Self = this.set("valueAsPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueAsPercent: Self = this.set("valueAsPercent", js.undefined)
+    @scala.inline
+    def setValueChange(value: (/* event */ Event, /* ui */ ValueChangeEventUIParam) => Unit): Self = this.set("valueChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteValueChange: Self = this.set("valueChange", js.undefined)
+    @scala.inline
+    def setValueHover(value: Double | String): Self = this.set("valueHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueHover: Self = this.set("valueHover", js.undefined)
+    @scala.inline
+    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+    @scala.inline
+    def setVoteCount(value: Double): Self = this.set("voteCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoteCount: Self = this.set("voteCount", js.undefined)
+    @scala.inline
+    def setVoteHeight(value: Double): Self = this.set("voteHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoteHeight: Self = this.set("voteHeight", js.undefined)
+    @scala.inline
+    def setVoteWidth(value: Double): Self = this.set("voteWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoteWidth: Self = this.set("voteWidth", js.undefined)
+  }
+  
 }
 

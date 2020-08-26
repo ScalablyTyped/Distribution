@@ -46,28 +46,58 @@ trait ProfileData extends js.Object {
 
 object ProfileData {
   @scala.inline
-  def apply(
-    Address: Address = null,
-    DistanceUnit: DistanceUnit = null,
-    IsDefault: js.UndefOr[Boolean] = js.undefined,
-    Locale: DeviceLocale = null,
-    ProfileArn: Arn = null,
-    ProfileName: ProfileName = null,
-    TemperatureUnit: TemperatureUnit = null,
-    Timezone: Timezone = null,
-    WakeWord: WakeWord = null
-  ): ProfileData = {
+  def apply(): ProfileData = {
     val __obj = js.Dynamic.literal()
-    if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
-    if (DistanceUnit != null) __obj.updateDynamic("DistanceUnit")(DistanceUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
-    if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
-    if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn.asInstanceOf[js.Any])
-    if (ProfileName != null) __obj.updateDynamic("ProfileName")(ProfileName.asInstanceOf[js.Any])
-    if (TemperatureUnit != null) __obj.updateDynamic("TemperatureUnit")(TemperatureUnit.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
-    if (WakeWord != null) __obj.updateDynamic("WakeWord")(WakeWord.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileData]
   }
+  @scala.inline
+  implicit class ProfileDataOps[Self <: ProfileData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: Address): Self = this.set("Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("Address", js.undefined)
+    @scala.inline
+    def setDistanceUnit(value: DistanceUnit): Self = this.set("DistanceUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistanceUnit: Self = this.set("DistanceUnit", js.undefined)
+    @scala.inline
+    def setIsDefault(value: Boolean): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    @scala.inline
+    def setLocale(value: DeviceLocale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("Locale", js.undefined)
+    @scala.inline
+    def setProfileArn(value: Arn): Self = this.set("ProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileArn: Self = this.set("ProfileArn", js.undefined)
+    @scala.inline
+    def setProfileName(value: ProfileName): Self = this.set("ProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileName: Self = this.set("ProfileName", js.undefined)
+    @scala.inline
+    def setTemperatureUnit(value: TemperatureUnit): Self = this.set("TemperatureUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemperatureUnit: Self = this.set("TemperatureUnit", js.undefined)
+    @scala.inline
+    def setTimezone(value: Timezone): Self = this.set("Timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+    @scala.inline
+    def setWakeWord(value: WakeWord): Self = this.set("WakeWord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWakeWord: Self = this.set("WakeWord", js.undefined)
+  }
+  
 }
 

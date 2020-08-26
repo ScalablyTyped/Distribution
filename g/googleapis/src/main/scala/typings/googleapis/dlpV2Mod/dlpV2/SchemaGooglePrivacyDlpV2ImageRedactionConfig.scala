@@ -30,16 +30,34 @@ trait SchemaGooglePrivacyDlpV2ImageRedactionConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2ImageRedactionConfig {
   @scala.inline
-  def apply(
-    infoType: SchemaGooglePrivacyDlpV2InfoType = null,
-    redactAllText: js.UndefOr[Boolean] = js.undefined,
-    redactionColor: SchemaGooglePrivacyDlpV2Color = null
-  ): SchemaGooglePrivacyDlpV2ImageRedactionConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2ImageRedactionConfig = {
     val __obj = js.Dynamic.literal()
-    if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
-    if (!js.isUndefined(redactAllText)) __obj.updateDynamic("redactAllText")(redactAllText.get.asInstanceOf[js.Any])
-    if (redactionColor != null) __obj.updateDynamic("redactionColor")(redactionColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ImageRedactionConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2ImageRedactionConfigOps[Self <: SchemaGooglePrivacyDlpV2ImageRedactionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = this.set("infoType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoType: Self = this.set("infoType", js.undefined)
+    @scala.inline
+    def setRedactAllText(value: Boolean): Self = this.set("redactAllText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedactAllText: Self = this.set("redactAllText", js.undefined)
+    @scala.inline
+    def setRedactionColor(value: SchemaGooglePrivacyDlpV2Color): Self = this.set("redactionColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedactionColor: Self = this.set("redactionColor", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,9 @@ object _EventResponse {
     count: String,
     image: String,
     message: String,
-    sound: String,
-    title: String = null
+    sound: String
   ): _EventResponse = {
     val __obj = js.Dynamic.literal(additionalData = additionalData.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EventResponse]
   }
 }

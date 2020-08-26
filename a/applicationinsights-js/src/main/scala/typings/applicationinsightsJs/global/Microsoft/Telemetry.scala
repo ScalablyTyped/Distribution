@@ -9,19 +9,11 @@ import scala.scalajs.js.annotation._
 object Telemetry extends js.Object {
   @js.native
   class Base ()
-    extends typings.applicationinsightsJs.Microsoft.Telemetry.Base {
-    /* CompleteClass */
-    override var baseType: String = js.native
-  }
+    extends typings.applicationinsightsJs.Microsoft.Telemetry.Base
   
   @js.native
   class Data[TDomain] ()
-    extends typings.applicationinsightsJs.Microsoft.Telemetry.Data[TDomain] {
-    /* CompleteClass */
-    override var baseData: TDomain = js.native
-    /* CompleteClass */
-    override var baseType: String = js.native
-  }
+    extends typings.applicationinsightsJs.Microsoft.Telemetry.Data[TDomain]
   
   @js.native
   class Domain ()

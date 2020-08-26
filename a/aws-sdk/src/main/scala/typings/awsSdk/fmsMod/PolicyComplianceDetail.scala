@@ -38,24 +38,52 @@ trait PolicyComplianceDetail extends js.Object {
 
 object PolicyComplianceDetail {
   @scala.inline
-  def apply(
-    EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined,
-    ExpiredAt: TimeStamp = null,
-    IssueInfoMap: IssueInfoMap = null,
-    MemberAccount: AWSAccountId = null,
-    PolicyId: PolicyId = null,
-    PolicyOwner: AWSAccountId = null,
-    Violators: ComplianceViolators = null
-  ): PolicyComplianceDetail = {
+  def apply(): PolicyComplianceDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EvaluationLimitExceeded)) __obj.updateDynamic("EvaluationLimitExceeded")(EvaluationLimitExceeded.get.asInstanceOf[js.Any])
-    if (ExpiredAt != null) __obj.updateDynamic("ExpiredAt")(ExpiredAt.asInstanceOf[js.Any])
-    if (IssueInfoMap != null) __obj.updateDynamic("IssueInfoMap")(IssueInfoMap.asInstanceOf[js.Any])
-    if (MemberAccount != null) __obj.updateDynamic("MemberAccount")(MemberAccount.asInstanceOf[js.Any])
-    if (PolicyId != null) __obj.updateDynamic("PolicyId")(PolicyId.asInstanceOf[js.Any])
-    if (PolicyOwner != null) __obj.updateDynamic("PolicyOwner")(PolicyOwner.asInstanceOf[js.Any])
-    if (Violators != null) __obj.updateDynamic("Violators")(Violators.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyComplianceDetail]
   }
+  @scala.inline
+  implicit class PolicyComplianceDetailOps[Self <: PolicyComplianceDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvaluationLimitExceeded(value: Boolean): Self = this.set("EvaluationLimitExceeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationLimitExceeded: Self = this.set("EvaluationLimitExceeded", js.undefined)
+    @scala.inline
+    def setExpiredAt(value: TimeStamp): Self = this.set("ExpiredAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiredAt: Self = this.set("ExpiredAt", js.undefined)
+    @scala.inline
+    def setIssueInfoMap(value: IssueInfoMap): Self = this.set("IssueInfoMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssueInfoMap: Self = this.set("IssueInfoMap", js.undefined)
+    @scala.inline
+    def setMemberAccount(value: AWSAccountId): Self = this.set("MemberAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberAccount: Self = this.set("MemberAccount", js.undefined)
+    @scala.inline
+    def setPolicyId(value: PolicyId): Self = this.set("PolicyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyId: Self = this.set("PolicyId", js.undefined)
+    @scala.inline
+    def setPolicyOwner(value: AWSAccountId): Self = this.set("PolicyOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyOwner: Self = this.set("PolicyOwner", js.undefined)
+    @scala.inline
+    def setViolatorsVarargs(value: ComplianceViolator*): Self = this.set("Violators", js.Array(value :_*))
+    @scala.inline
+    def setViolators(value: ComplianceViolators): Self = this.set("Violators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViolators: Self = this.set("Violators", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ A library to evaluate 3, 5 or 7 card poker hands
 | Keywords           | poker, games |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 3907 |
+| # downloads        | 3668 |
 | # stars            | 2 |
 
 ## Links

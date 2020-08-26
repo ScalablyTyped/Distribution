@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends MultiRootTree {
   def this(rootIds: js.Array[String]) = this()
+  def this(rootIds: js.UndefOr[scala.Nothing], nodes: StringDictionary[js.Array[String]]) = this()
   def this(rootIds: js.Array[String], nodes: StringDictionary[js.Array[String]]) = this()
 }
 

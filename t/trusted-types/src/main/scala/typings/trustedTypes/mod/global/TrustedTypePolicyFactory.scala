@@ -14,9 +14,24 @@ import scala.scalajs.js.annotation._
 trait TrustedTypePolicyFactory extends js.Object {
   var defaultPolicy: js.UndefOr[TrustedTypePolicy] = js.native
   var emptyHTML: TrustedHTML = js.native
-  def createPolicy[Keys /* <: /* keyof trusted-types.trusted-types.<global>.TrustedTypePolicyOptions */ createHTML | createScript | createScriptURL | createURL */](name: String, policyOptions: Pick[TrustedTypePolicyOptions, Keys]): Pick[TrustedTypePolicy, name | Keys] = js.native
-  def createPolicy[Keys /* <: /* keyof trusted-types.trusted-types.<global>.TrustedTypePolicyOptions */ createHTML | createScript | createScriptURL | createURL */](name: String, policyOptions: Pick[TrustedTypePolicyOptions, Keys], expose: Boolean): Pick[TrustedTypePolicy, name | Keys] = js.native
+  @JSName("createPolicy")
+  def createPolicy_createHTML(name: String, policyOptions: Pick[TrustedTypePolicyOptions, createHTML]): Pick[TrustedTypePolicy, name | createHTML] = js.native
+  @JSName("createPolicy")
+  def createPolicy_createHTML(name: String, policyOptions: Pick[TrustedTypePolicyOptions, createHTML], expose: Boolean): Pick[TrustedTypePolicy, name | createHTML] = js.native
+  @JSName("createPolicy")
+  def createPolicy_createScript(name: String, policyOptions: Pick[TrustedTypePolicyOptions, createScript]): Pick[TrustedTypePolicy, name | createScript] = js.native
+  @JSName("createPolicy")
+  def createPolicy_createScript(name: String, policyOptions: Pick[TrustedTypePolicyOptions, createScript], expose: Boolean): Pick[TrustedTypePolicy, name | createScript] = js.native
+  @JSName("createPolicy")
+  def createPolicy_createScriptURL(name: String, policyOptions: Pick[TrustedTypePolicyOptions, createScriptURL]): Pick[TrustedTypePolicy, name | createScriptURL] = js.native
+  @JSName("createPolicy")
+  def createPolicy_createScriptURL(name: String, policyOptions: Pick[TrustedTypePolicyOptions, createScriptURL], expose: Boolean): Pick[TrustedTypePolicy, name | createScriptURL] = js.native
+  @JSName("createPolicy")
+  def createPolicy_createURL(name: String, policyOptions: Pick[TrustedTypePolicyOptions, createURL]): Pick[TrustedTypePolicy, name | createURL] = js.native
+  @JSName("createPolicy")
+  def createPolicy_createURL(name: String, policyOptions: Pick[TrustedTypePolicyOptions, createURL], expose: Boolean): Pick[TrustedTypePolicy, name | createURL] = js.native
   def getAttributeType(tagName: String, attrName: String): js.UndefOr[String] = js.native
+  def getAttributeType(tagName: String, attrName: String, elemNs: js.UndefOr[scala.Nothing], attrNs: String): js.UndefOr[String] = js.native
   def getAttributeType(tagName: String, attrName: String, elemNs: String): js.UndefOr[String] = js.native
   def getAttributeType(tagName: String, attrName: String, elemNs: String, attrNs: String): js.UndefOr[String] = js.native
   def getPolicyNames(): js.Array[String] = js.native

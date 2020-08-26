@@ -31,6 +31,7 @@ class ResourceProjectsLocations protected () extends js.Object {
     */
   def getServerConfig(): GaxiosPromise[SchemaServerConfig] = js.native
   def getServerConfig(callback: BodyResponseCallback[SchemaServerConfig]): Unit = js.native
+  def getServerConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServerConfig] = js.native
   def getServerConfig(params: ParamsResourceProjectsLocationsGetserverconfig): GaxiosPromise[SchemaServerConfig] = js.native
   def getServerConfig(
     params: ParamsResourceProjectsLocationsGetserverconfig,

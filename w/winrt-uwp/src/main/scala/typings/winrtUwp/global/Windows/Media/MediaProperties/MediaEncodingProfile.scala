@@ -12,17 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Creates a new instance of the MediaEncodingProfile class. */
 class MediaEncodingProfile ()
-  extends typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile {
-  /** Gets or sets the encoding properties for the audio stream. */
-  /* CompleteClass */
-  override var audio: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = js.native
-  /** Gets or sets the properties of the media container. */
-  /* CompleteClass */
-  override var container: typings.winrtUwp.Windows.Media.MediaProperties.ContainerEncodingProperties = js.native
-  /** Gets or sets the encoding properties for the video stream. */
-  /* CompleteClass */
-  override var video: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties = js.native
-}
+  extends typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile
 
 /* static members */
 @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile")

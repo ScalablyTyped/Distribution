@@ -23,6 +23,14 @@ package object appsyncMod {
     - typings.awsSdk.awsSdkStrings.R4_2XLARGE
     - typings.awsSdk.awsSdkStrings.R4_4XLARGE
     - typings.awsSdk.awsSdkStrings.R4_8XLARGE
+    - typings.awsSdk.awsSdkStrings.SMALL
+    - typings.awsSdk.awsSdkStrings.MEDIUM
+    - typings.awsSdk.awsSdkStrings.LARGE
+    - typings.awsSdk.awsSdkStrings.XLARGE
+    - typings.awsSdk.awsSdkStrings.LARGE_2X
+    - typings.awsSdk.awsSdkStrings.LARGE_4X
+    - typings.awsSdk.awsSdkStrings.LARGE_8X
+    - typings.awsSdk.awsSdkStrings.LARGE_12X
     - java.lang.String
   */
   type ApiCacheType = typings.awsSdk.appsyncMod._ApiCacheType | java.lang.String

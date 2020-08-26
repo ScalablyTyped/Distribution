@@ -25,10 +25,10 @@ class ReportChartSeries protected () extends Element {
   @JSName("model")
   var model_FReportChartSeries: IModel = js.native
   def caption: Text = js.native
-  def caption(newValue: Text): js.Any = js.native
+  def caption_=(newValue: Text): Unit = js.native
   def containerAsReportChart: ReportChart = js.native
   def dataSetColumn: String = js.native
-  def dataSetColumn(newValue: String): js.Any = js.native
+  def dataSetColumn_=(newValue: String): Unit = js.native
 }
 
 /* static members */

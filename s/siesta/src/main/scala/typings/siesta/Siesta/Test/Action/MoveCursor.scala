@@ -9,31 +9,40 @@ import scala.scalajs.js.annotation._
 /**
   * @class
   */
+@js.native
 trait MoveCursor
   extends IAction
      with IHasTarget {
-  var by: js.UndefOr[js.Any] = js.undefined
-  var to: js.UndefOr[js.Any] = js.undefined
+  var by: js.UndefOr[js.Any] = js.native
+  var to: js.UndefOr[js.Any] = js.native
 }
 
 object MoveCursor {
   @scala.inline
-  def apply(
-    by: js.Any = null,
-    desc: String = null,
-    el: js.Any = null,
-    passTargetToNext: js.UndefOr[Boolean] = js.undefined,
-    target: js.Any = null,
-    to: js.Any = null
-  ): MoveCursor = {
+  def apply(): MoveCursor = {
     val __obj = js.Dynamic.literal()
-    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext.get.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveCursor]
   }
+  @scala.inline
+  implicit class MoveCursorOps[Self <: MoveCursor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBy(value: js.Any): Self = this.set("by", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBy: Self = this.set("by", js.undefined)
+    @scala.inline
+    def setTo(value: js.Any): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

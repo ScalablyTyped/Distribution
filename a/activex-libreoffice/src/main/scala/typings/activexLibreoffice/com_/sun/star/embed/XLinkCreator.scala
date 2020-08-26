@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   *
   * Methods of this interface does not require specification of the object type, it will be detected.
   */
+@js.native
 trait XLinkCreator extends XInterface {
   /**
     * creates a new object based on {@link com.sun.star.document.MediaDescriptor} and initializes it as a link.
@@ -31,7 +32,7 @@ trait XLinkCreator extends XInterface {
     sEntryName: String,
     aArgs: SeqEquiv[PropertyValue],
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): XInterface
+  ): XInterface = js.native
 }
 
 object XLinkCreator {
@@ -45,5 +46,20 @@ object XLinkCreator {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceLink = js.Any.fromFunction4(createInstanceLink), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XLinkCreator]
   }
+  @scala.inline
+  implicit class XLinkCreatorOps[Self <: XLinkCreator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateInstanceLink(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface): Self = this.set("createInstanceLink", js.Any.fromFunction4(value))
+  }
+  
 }
 

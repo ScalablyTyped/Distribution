@@ -16,11 +16,32 @@ trait SchemaSeries extends js.Object {
 
 object SchemaSeries {
   @scala.inline
-  def apply(kind: String = null, series: js.Array[BannerImageUrl] = null): SchemaSeries = {
+  def apply(): SchemaSeries = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSeries]
   }
+  @scala.inline
+  implicit class SchemaSeriesOps[Self <: SchemaSeries] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSeriesVarargs(value: BannerImageUrl*): Self = this.set("series", js.Array(value :_*))
+    @scala.inline
+    def setSeries(value: js.Array[BannerImageUrl]): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+  }
+  
 }
 

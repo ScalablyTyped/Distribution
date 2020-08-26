@@ -18,11 +18,32 @@ trait ResultFrame extends js.Object {
 
 object ResultFrame {
   @scala.inline
-  def apply(records: Records = null, resultSetMetadata: ResultSetMetadata = null): ResultFrame = {
+  def apply(): ResultFrame = {
     val __obj = js.Dynamic.literal()
-    if (records != null) __obj.updateDynamic("records")(records.asInstanceOf[js.Any])
-    if (resultSetMetadata != null) __obj.updateDynamic("resultSetMetadata")(resultSetMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultFrame]
   }
+  @scala.inline
+  implicit class ResultFrameOps[Self <: ResultFrame] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecordsVarargs(value: Record*): Self = this.set("records", js.Array(value :_*))
+    @scala.inline
+    def setRecords(value: Records): Self = this.set("records", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecords: Self = this.set("records", js.undefined)
+    @scala.inline
+    def setResultSetMetadata(value: ResultSetMetadata): Self = this.set("resultSetMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultSetMetadata: Self = this.set("resultSetMetadata", js.undefined)
+  }
+  
 }
 

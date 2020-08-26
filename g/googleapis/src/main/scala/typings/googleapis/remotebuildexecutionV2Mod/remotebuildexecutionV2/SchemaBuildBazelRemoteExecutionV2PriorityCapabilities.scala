@@ -15,10 +15,28 @@ trait SchemaBuildBazelRemoteExecutionV2PriorityCapabilities extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2PriorityCapabilities {
   @scala.inline
-  def apply(priorities: js.Array[SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange] = null): SchemaBuildBazelRemoteExecutionV2PriorityCapabilities = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2PriorityCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (priorities != null) __obj.updateDynamic("priorities")(priorities.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2PriorityCapabilities]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesOps[Self <: SchemaBuildBazelRemoteExecutionV2PriorityCapabilities] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrioritiesVarargs(value: SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange*): Self = this.set("priorities", js.Array(value :_*))
+    @scala.inline
+    def setPriorities(value: js.Array[SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]): Self = this.set("priorities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriorities: Self = this.set("priorities", js.undefined)
+  }
+  
 }
 

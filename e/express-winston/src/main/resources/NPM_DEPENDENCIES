@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "express-winston" : "4.0.3"
+      "express-winston" : "4.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "express-winston" : "4.0.3"
+      "express-winston" : "4.0.5"
     }
   ],
   "compile-devDependencies" : [

@@ -27,23 +27,23 @@ class LogMessageAction protected () extends MicroflowAction {
   @JSName("model")
   var model_FLogMessageAction: IModel = js.native
   def includeLatestStackTrace: Boolean = js.native
-  def includeLatestStackTrace(newValue: Boolean): js.Any = js.native
+  def includeLatestStackTrace_=(newValue: Boolean): Unit = js.native
   def level: LogLevel = js.native
-  def level(newValue: LogLevel): js.Any = js.native
+  def level_=(newValue: LogLevel): Unit = js.native
   def messageTemplate: StringTemplate = js.native
-  def messageTemplate(newValue: StringTemplate): js.Any = js.native
+  def messageTemplate_=(newValue: StringTemplate): Unit = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def node: String = js.native
-  def node(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
   def nodeModel: Expression = js.native
-  def nodeModel(newValue: Expression): js.Any = js.native
+  def nodeModel_=(newValue: Expression): Unit = js.native
+  def node_=(newValue: String): Unit = js.native
 }
 
 /* static members */

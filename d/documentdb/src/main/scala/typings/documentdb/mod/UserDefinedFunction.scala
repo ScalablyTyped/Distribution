@@ -4,24 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserDefinedFunction extends UserScriptable {
   /** Type of function */
-  var userDefinedFunctionType: js.UndefOr[UserDefinedFunctionType] = js.undefined
+  var userDefinedFunctionType: js.UndefOr[UserDefinedFunctionType] = js.native
 }
 
 object UserDefinedFunction {
   @scala.inline
-  def apply(
-    id: String,
-    body: UserFunction = null,
-    serverScript: UserFunction = null,
-    userDefinedFunctionType: UserDefinedFunctionType = null
-  ): UserDefinedFunction = {
+  def apply(id: String): UserDefinedFunction = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (serverScript != null) __obj.updateDynamic("serverScript")(serverScript.asInstanceOf[js.Any])
-    if (userDefinedFunctionType != null) __obj.updateDynamic("userDefinedFunctionType")(userDefinedFunctionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefinedFunction]
   }
+  @scala.inline
+  implicit class UserDefinedFunctionOps[Self <: UserDefinedFunction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserDefinedFunctionType(value: UserDefinedFunctionType): Self = this.set("userDefinedFunctionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDefinedFunctionType: Self = this.set("userDefinedFunctionType", js.undefined)
+  }
+  
 }
 

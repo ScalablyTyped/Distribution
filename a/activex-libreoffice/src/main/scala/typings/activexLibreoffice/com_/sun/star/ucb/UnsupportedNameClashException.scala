@@ -22,9 +22,10 @@ import scala.scalajs.js.annotation._
   * @see Content
   * @version 1.0
   */
+@js.native
 trait UnsupportedNameClashException extends Exception {
   /** contains the {@link NameClash} that is not supported. */
-  var NameClash: Double
+  var NameClash: Double = js.native
 }
 
 object UnsupportedNameClashException {
@@ -33,5 +34,20 @@ object UnsupportedNameClashException {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], NameClash = NameClash.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsupportedNameClashException]
   }
+  @scala.inline
+  implicit class UnsupportedNameClashExceptionOps[Self <: UnsupportedNameClashException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNameClash(value: Double): Self = this.set("NameClash", value.asInstanceOf[js.Any])
+  }
+  
 }
 

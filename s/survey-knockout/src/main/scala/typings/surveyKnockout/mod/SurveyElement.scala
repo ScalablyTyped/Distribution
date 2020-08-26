@@ -11,8 +11,6 @@ class SurveyElement protected ()
      with ISurveyElement {
   def this(name: String) = this()
   val areInvisibleElementsShowing: Boolean = js.native
-  /* CompleteClass */
-  override var containsErrors: Boolean = js.native
   val data: ISurveyData = js.native
   var disableDesignActions: Boolean = js.native
   /**
@@ -25,16 +23,6 @@ class SurveyElement protected ()
     * Returns true if the question in design mode right now.
     */
   val isDesignMode: Boolean = js.native
-  /* CompleteClass */
-  override var isPage: Boolean = js.native
-  /* CompleteClass */
-  override var isPanel: Boolean = js.native
-  /* CompleteClass */
-  override var isReadOnly: Boolean = js.native
-  /* CompleteClass */
-  override var isVisible: Boolean = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   /**
     * Set it to true to make an element question/panel/page readonly.
     * Please note, this property is hidden for question without input, for example html question.
@@ -49,8 +37,6 @@ class SurveyElement protected ()
   val survey: ISurvey = js.native
   val surveyImpl: ISurveyImpl = js.native
   val textProcessor: ITextProcessor = js.native
-  /* CompleteClass */
-  override def delete(): js.Any = js.native
   /* protected */ def getContainsErrors(): Boolean = js.native
   def getElementsInDesign(): js.Array[IElement] = js.native
   def getElementsInDesign(includeHidden: Boolean): js.Array[IElement] = js.native
@@ -65,20 +51,12 @@ class SurveyElement protected ()
   override def locStrsChanged(): Unit with js.Any = js.native
   /* protected */ def moveToBase(parent: IPanel, container: IPanel): Boolean = js.native
   /* protected */ def moveToBase(parent: IPanel, container: IPanel, insertBefore: js.Any): Boolean = js.native
-  /* CompleteClass */
-  override def onFirstRendering(): js.Any = js.native
   /* protected */ def onNameChanged(oldValue: String): Unit = js.native
   /* protected */ def onReadOnlyChanged(): Unit = js.native
   /* protected */ def onSetData(): Unit = js.native
-  /* CompleteClass */
-  override def onSurveyLoad(): js.Any = js.native
   def readOnlyChangedCallback(): Unit = js.native
   /* protected */ def removeSelfFromList(list: js.Array[_]): Unit = js.native
   /* protected */ def setPage(parent: IPanel, `val`: IPage): Unit = js.native
-  /* CompleteClass */
-  override def setSurveyImpl(value: ISurveyImpl): js.Any = js.native
-  /* CompleteClass */
-  override def setVisibleIndex(value: Double): Double = js.native
   def updateContainsErrors(): Unit = js.native
   def updateCustomWidgets(): Unit = js.native
   def updateElementCss(): Unit = js.native

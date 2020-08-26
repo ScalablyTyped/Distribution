@@ -16,8 +16,43 @@ class SpineGameObject protected ()
     pluginManager: typings.phaser.SpinePlugin,
     x: Double,
     y: Double,
+    key: js.UndefOr[scala.Nothing],
+    animationName: String
+  ) = this()
+  def this(
+    scene: Scene,
+    pluginManager: typings.phaser.SpinePlugin,
+    x: Double,
+    y: Double,
     key: String,
     animationName: String
+  ) = this()
+  def this(
+    scene: Scene,
+    pluginManager: typings.phaser.SpinePlugin,
+    x: Double,
+    y: Double,
+    key: js.UndefOr[scala.Nothing],
+    animationName: js.UndefOr[scala.Nothing],
+    loop: Boolean
+  ) = this()
+  def this(
+    scene: Scene,
+    pluginManager: typings.phaser.SpinePlugin,
+    x: Double,
+    y: Double,
+    key: js.UndefOr[scala.Nothing],
+    animationName: String,
+    loop: Boolean
+  ) = this()
+  def this(
+    scene: Scene,
+    pluginManager: typings.phaser.SpinePlugin,
+    x: Double,
+    y: Double,
+    key: String,
+    animationName: js.UndefOr[scala.Nothing],
+    loop: Boolean
   ) = this()
   def this(
     scene: Scene,

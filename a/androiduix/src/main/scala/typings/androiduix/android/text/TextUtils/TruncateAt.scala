@@ -1,6 +1,5 @@
 package typings.androiduix.android.text.TextUtils
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,23 +24,6 @@ object TruncateAt extends js.Object {
   
   @js.native
   sealed trait START extends TruncateAt
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TruncateAt with Double] = js.native
-  /* 2 */ @js.native
-  object END extends TopLevel[END with Double]
-  
-  /* 4 */ @js.native
-  object END_SMALL extends TopLevel[END_SMALL with Double]
-  
-  /* 3 */ @js.native
-  object MARQUEE extends TopLevel[MARQUEE with Double]
-  
-  /* 1 */ @js.native
-  object MIDDLE extends TopLevel[MIDDLE with Double]
-  
-  /* 0 */ @js.native
-  object START extends TopLevel[START with Double]
   
 }
 

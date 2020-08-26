@@ -46,12 +46,41 @@ object ScalableTarget {
     ResourceId: ResourceIdMaxLen1600,
     RoleARN: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
-    ServiceNamespace: ServiceNamespace,
-    SuspendedState: SuspendedState = null
+    ServiceNamespace: ServiceNamespace
   ): ScalableTarget = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], MaxCapacity = MaxCapacity.asInstanceOf[js.Any], MinCapacity = MinCapacity.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-    if (SuspendedState != null) __obj.updateDynamic("SuspendedState")(SuspendedState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalableTarget]
   }
+  @scala.inline
+  implicit class ScalableTargetOps[Self <: ScalableTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: TimestampType): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxCapacity(value: ResourceCapacity): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinCapacity(value: ResourceCapacity): Self = this.set("MinCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceId(value: ResourceIdMaxLen1600): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleARN(value: ResourceIdMaxLen1600): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuspendedState(value: SuspendedState): Self = this.set("SuspendedState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspendedState: Self = this.set("SuspendedState", js.undefined)
+  }
+  
 }
 

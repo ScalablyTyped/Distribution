@@ -26,18 +26,38 @@ trait RequestValidator extends js.Object {
 
 object RequestValidator {
   @scala.inline
-  def apply(
-    id: String = null,
-    name: String = null,
-    validateRequestBody: js.UndefOr[Boolean] = js.undefined,
-    validateRequestParameters: js.UndefOr[Boolean] = js.undefined
-  ): RequestValidator = {
+  def apply(): RequestValidator = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateRequestBody)) __obj.updateDynamic("validateRequestBody")(validateRequestBody.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateRequestParameters)) __obj.updateDynamic("validateRequestParameters")(validateRequestParameters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestValidator]
   }
+  @scala.inline
+  implicit class RequestValidatorOps[Self <: RequestValidator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setValidateRequestBody(value: Boolean): Self = this.set("validateRequestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateRequestBody: Self = this.set("validateRequestBody", js.undefined)
+    @scala.inline
+    def setValidateRequestParameters(value: Boolean): Self = this.set("validateRequestParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateRequestParameters: Self = this.set("validateRequestParameters", js.undefined)
+  }
+  
 }
 

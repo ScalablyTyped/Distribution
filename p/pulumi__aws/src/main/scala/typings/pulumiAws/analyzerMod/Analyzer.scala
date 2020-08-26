@@ -28,9 +28,9 @@ class Analyzer protected () extends CustomResource {
   val analyzerName: Output_[String] = js.native
   val arn: Output_[String] = js.native
   /**
-    * Key-value mapping of resource tags.
+    * Key-value map of resource tags.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Type of Analyzer. Valid value is currently only `ACCOUNT`. Defaults to `ACCOUNT`.
     */
@@ -48,8 +48,10 @@ object Analyzer extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Analyzer = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Analyzer = js.native
   def get(name: String, id: Input[ID], state: AnalyzerState): Analyzer = js.native
   def get(name: String, id: Input[ID], state: AnalyzerState, opts: CustomResourceOptions): Analyzer = js.native
   /**

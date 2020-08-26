@@ -346,6 +346,7 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.items
 import typings.pulumiKubernetes.pulumiKubernetesStrings.kind
 import typings.pulumiKubernetes.pulumiKubernetesStrings.lastTimestamp
 import typings.pulumiKubernetes.pulumiKubernetesStrings.message
+import typings.pulumiKubernetes.pulumiKubernetesStrings.metaSlashv1SlashStatus
 import typings.pulumiKubernetes.pulumiKubernetesStrings.metadata
 import typings.pulumiKubernetes.pulumiKubernetesStrings.mountOptions
 import typings.pulumiKubernetes.pulumiKubernetesStrings.networkingDotk8sDotioSlashv1
@@ -488,7 +489,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.v1SlashService
 import typings.pulumiKubernetes.pulumiKubernetesStrings.v1SlashServiceAccount
 import typings.pulumiKubernetes.pulumiKubernetesStrings.v1SlashServiceAccountList
 import typings.pulumiKubernetes.pulumiKubernetesStrings.v1SlashServiceList
-import typings.pulumiKubernetes.pulumiKubernetesStrings.v1SlashStatus
 import typings.pulumiKubernetes.pulumiKubernetesStrings.value
 import typings.pulumiKubernetes.pulumiKubernetesStrings.volumeBindingMode
 import typings.pulumiKubernetes.pulumiKubernetesStrings.webhooks
@@ -504,8 +504,8 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CollectionComponentResource protected ()
   extends ComponentResource[js.Any] {
-  def this(resourceType: String, name: String, config: js.Any) = this()
-  def this(resourceType: String, name: String, config: js.Any, opts: ComponentResourceOptions) = this()
+  protected def this(resourceType: String, name: String, config: js.Any) = this()
+  protected def this(resourceType: String, name: String, config: js.Any, opts: ComponentResourceOptions) = this()
   var getResourceImpl: js.Any = js.native
   var resources: Output_[StringDictionary[CustomResource]] = js.native
   /**
@@ -1335,7 +1335,7 @@ abstract class CollectionComponentResource protected ()
     property: metadata
   ): Output_[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: apiVersion): Output_[appsSlashv1] = js.native
-  def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: data): Output_[js.Object] = js.native
+  def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: data): Output_[_] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevision] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: metadata): Output_[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: revision): Output_[Double] = js.native
@@ -1350,7 +1350,7 @@ abstract class CollectionComponentResource protected ()
     namespace: String,
     name: String,
     property: data
-  ): Output_[js.Object] = js.native
+  ): Output_[_] = js.native
   def getResourceProperty(
     groupVersionKind: appsSlashv1SlashControllerRevision,
     namespace: String,
@@ -1530,7 +1530,7 @@ abstract class CollectionComponentResource protected ()
     property: metadata
   ): Output_[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: apiVersion): Output_[appsSlashv1beta1] = js.native
-  def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: data): Output_[js.Object] = js.native
+  def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: data): Output_[_] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevision] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: metadata): Output_[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: revision): Output_[Double] = js.native
@@ -1545,7 +1545,7 @@ abstract class CollectionComponentResource protected ()
     namespace: String,
     name: String,
     property: data
-  ): Output_[js.Object] = js.native
+  ): Output_[_] = js.native
   def getResourceProperty(
     groupVersionKind: appsSlashv1beta1SlashControllerRevision,
     namespace: String,
@@ -1709,7 +1709,7 @@ abstract class CollectionComponentResource protected ()
     property: metadata
   ): Output_[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: apiVersion): Output_[appsSlashv1beta2] = js.native
-  def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: data): Output_[js.Object] = js.native
+  def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: data): Output_[_] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevision] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: metadata): Output_[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: revision): Output_[Double] = js.native
@@ -1724,7 +1724,7 @@ abstract class CollectionComponentResource protected ()
     namespace: String,
     name: String,
     property: data
-  ): Output_[js.Object] = js.native
+  ): Output_[_] = js.native
   def getResourceProperty(
     groupVersionKind: appsSlashv1beta2SlashControllerRevision,
     namespace: String,
@@ -4157,6 +4157,22 @@ abstract class CollectionComponentResource protected ()
     name: String,
     property: status_
   ): Output_[PriorityLevelConfigurationStatus] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, name: String, property: apiVersion): Output_[v1] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, name: String, property: code): Output_[Double] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, name: String, property: details): Output_[StatusDetails] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, name: String, property: kind): Output_[Status] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, name: String, property: message): Output_[String] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, name: String, property: metadata): Output_[ListMeta] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, name: String, property: reason): Output_[String] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, name: String, property: status_): Output_[String] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, namespace: String, name: String, property: apiVersion): Output_[v1] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, namespace: String, name: String, property: code): Output_[Double] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, namespace: String, name: String, property: details): Output_[StatusDetails] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, namespace: String, name: String, property: kind): Output_[Status] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, namespace: String, name: String, property: message): Output_[String] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, namespace: String, name: String, property: metadata): Output_[ListMeta] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, namespace: String, name: String, property: reason): Output_[String] = js.native
+  def getResourceProperty(groupVersionKind: metaSlashv1SlashStatus, namespace: String, name: String, property: status_): Output_[String] = js.native
   def getResourceProperty(
     groupVersionKind: networkingDotk8sDotioSlashv1SlashNetworkPolicyList,
     name: String,
@@ -6377,7 +6393,7 @@ abstract class CollectionComponentResource protected ()
   def getResourceProperty(groupVersionKind: storageDotk8sDotioSlashv1SlashStorageClass, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.StorageClass] = js.native
   def getResourceProperty(groupVersionKind: storageDotk8sDotioSlashv1SlashStorageClass, name: String, property: metadata): Output_[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: storageDotk8sDotioSlashv1SlashStorageClass, name: String, property: mountOptions): Output_[js.Array[String]] = js.native
-  def getResourceProperty(groupVersionKind: storageDotk8sDotioSlashv1SlashStorageClass, name: String, property: parameters): Output_[StringDictionary[Output_[String]]] = js.native
+  def getResourceProperty(groupVersionKind: storageDotk8sDotioSlashv1SlashStorageClass, name: String, property: parameters): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(groupVersionKind: storageDotk8sDotioSlashv1SlashStorageClass, name: String, property: provisioner): Output_[String] = js.native
   def getResourceProperty(
     groupVersionKind: storageDotk8sDotioSlashv1SlashStorageClass,
@@ -6430,7 +6446,7 @@ abstract class CollectionComponentResource protected ()
     namespace: String,
     name: String,
     property: parameters
-  ): Output_[StringDictionary[Output_[String]]] = js.native
+  ): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(
     groupVersionKind: storageDotk8sDotioSlashv1SlashStorageClass,
     namespace: String,
@@ -6825,7 +6841,7 @@ abstract class CollectionComponentResource protected ()
     groupVersionKind: storageDotk8sDotioSlashv1beta1SlashStorageClass,
     name: String,
     property: parameters
-  ): Output_[StringDictionary[Output_[String]]] = js.native
+  ): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(
     groupVersionKind: storageDotk8sDotioSlashv1beta1SlashStorageClass,
     name: String,
@@ -6882,7 +6898,7 @@ abstract class CollectionComponentResource protected ()
     namespace: String,
     name: String,
     property: parameters
-  ): Output_[StringDictionary[Output_[String]]] = js.native
+  ): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(
     groupVersionKind: storageDotk8sDotioSlashv1beta1SlashStorageClass,
     namespace: String,
@@ -7038,14 +7054,14 @@ abstract class CollectionComponentResource protected ()
   def getResourceProperty(groupVersionKind: v1SlashConfigMapList, namespace: String, name: String, property: kind): Output_[ConfigMapList] = js.native
   def getResourceProperty(groupVersionKind: v1SlashConfigMapList, namespace: String, name: String, property: metadata): Output_[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: v1SlashConfigMap, name: String, property: apiVersion): Output_[v1] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashConfigMap, name: String, property: binaryData): Output_[js.Object] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashConfigMap, name: String, property: data): Output_[StringDictionary[Output_[String]]] = js.native
+  def getResourceProperty(groupVersionKind: v1SlashConfigMap, name: String, property: binaryData): Output_[StringDictionary[String]] = js.native
+  def getResourceProperty(groupVersionKind: v1SlashConfigMap, name: String, property: data): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(groupVersionKind: v1SlashConfigMap, name: String, property: immutable): Output_[Boolean] = js.native
   def getResourceProperty(groupVersionKind: v1SlashConfigMap, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.ConfigMap] = js.native
   def getResourceProperty(groupVersionKind: v1SlashConfigMap, name: String, property: metadata): Output_[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: v1SlashConfigMap, namespace: String, name: String, property: apiVersion): Output_[v1] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashConfigMap, namespace: String, name: String, property: binaryData): Output_[js.Object] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashConfigMap, namespace: String, name: String, property: data): Output_[StringDictionary[Output_[String]]] = js.native
+  def getResourceProperty(groupVersionKind: v1SlashConfigMap, namespace: String, name: String, property: binaryData): Output_[StringDictionary[String]] = js.native
+  def getResourceProperty(groupVersionKind: v1SlashConfigMap, namespace: String, name: String, property: data): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(groupVersionKind: v1SlashConfigMap, namespace: String, name: String, property: immutable): Output_[Boolean] = js.native
   def getResourceProperty(groupVersionKind: v1SlashConfigMap, namespace: String, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.ConfigMap] = js.native
   def getResourceProperty(groupVersionKind: v1SlashConfigMap, namespace: String, name: String, property: metadata): Output_[ObjectMeta] = js.native
@@ -7340,18 +7356,18 @@ abstract class CollectionComponentResource protected ()
   def getResourceProperty(groupVersionKind: v1SlashSecretList, namespace: String, name: String, property: metadata): Output_[ListMeta] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, name: String, property: `type`): Output_[String] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, name: String, property: apiVersion): Output_[v1] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashSecret, name: String, property: data): Output_[js.Object] = js.native
+  def getResourceProperty(groupVersionKind: v1SlashSecret, name: String, property: data): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, name: String, property: immutable): Output_[Boolean] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.Secret] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, name: String, property: metadata): Output_[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashSecret, name: String, property: stringData): Output_[StringDictionary[Output_[String]]] = js.native
+  def getResourceProperty(groupVersionKind: v1SlashSecret, name: String, property: stringData): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, namespace: String, name: String, property: `type`): Output_[String] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, namespace: String, name: String, property: apiVersion): Output_[v1] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashSecret, namespace: String, name: String, property: data): Output_[js.Object] = js.native
+  def getResourceProperty(groupVersionKind: v1SlashSecret, namespace: String, name: String, property: data): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, namespace: String, name: String, property: immutable): Output_[Boolean] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, namespace: String, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.Secret] = js.native
   def getResourceProperty(groupVersionKind: v1SlashSecret, namespace: String, name: String, property: metadata): Output_[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashSecret, namespace: String, name: String, property: stringData): Output_[StringDictionary[Output_[String]]] = js.native
+  def getResourceProperty(groupVersionKind: v1SlashSecret, namespace: String, name: String, property: stringData): Output_[StringDictionary[String]] = js.native
   def getResourceProperty(groupVersionKind: v1SlashServiceAccountList, name: String, property: apiVersion): Output_[v1] = js.native
   def getResourceProperty(groupVersionKind: v1SlashServiceAccountList, name: String, property: items): Output_[js.Array[ServiceAccount]] = js.native
   def getResourceProperty(groupVersionKind: v1SlashServiceAccountList, name: String, property: kind): Output_[ServiceAccountList] = js.native
@@ -7400,22 +7416,6 @@ abstract class CollectionComponentResource protected ()
   def getResourceProperty(groupVersionKind: v1SlashService, namespace: String, name: String, property: metadata): Output_[ObjectMeta] = js.native
   def getResourceProperty(groupVersionKind: v1SlashService, namespace: String, name: String, property: spec): Output_[ServiceSpec] = js.native
   def getResourceProperty(groupVersionKind: v1SlashService, namespace: String, name: String, property: status_): Output_[ServiceStatus] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, name: String, property: apiVersion): Output_[v1] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, name: String, property: code): Output_[Double] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, name: String, property: details): Output_[StatusDetails] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, name: String, property: kind): Output_[Status] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, name: String, property: message): Output_[String] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, name: String, property: metadata): Output_[ListMeta] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, name: String, property: reason): Output_[String] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, name: String, property: status_): Output_[String] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, namespace: String, name: String, property: apiVersion): Output_[v1] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, namespace: String, name: String, property: code): Output_[Double] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, namespace: String, name: String, property: details): Output_[StatusDetails] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, namespace: String, name: String, property: kind): Output_[Status] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, namespace: String, name: String, property: message): Output_[String] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, namespace: String, name: String, property: metadata): Output_[ListMeta] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, namespace: String, name: String, property: reason): Output_[String] = js.native
-  def getResourceProperty(groupVersionKind: v1SlashStatus, namespace: String, name: String, property: status_): Output_[String] = js.native
   /**
     * getResource returns a resource defined by a built-in Kubernetes group/version/kind and name.
     *
@@ -8039,6 +8039,10 @@ abstract class CollectionComponentResource protected ()
     name: String
   ): Output_[typings.pulumiKubernetes.mod.flowcontrol.v1alpha1.PriorityLevelConfigurationList] = js.native
   @JSName("getResource")
+  def getResource_metav1Status(groupVersionKind: metaSlashv1SlashStatus, name: String): Output_[typings.pulumiKubernetes.mod.meta.v1.Status] = js.native
+  @JSName("getResource")
+  def getResource_metav1Status(groupVersionKind: metaSlashv1SlashStatus, namespace: String, name: String): Output_[typings.pulumiKubernetes.mod.meta.v1.Status] = js.native
+  @JSName("getResource")
   def getResource_networkingk8siov1NetworkPolicy(groupVersionKind: networkingDotk8sDotioSlashv1SlashNetworkPolicy, name: String): Output_[typings.pulumiKubernetes.mod.networking.v1.NetworkPolicy] = js.native
   @JSName("getResource")
   def getResource_networkingk8siov1NetworkPolicy(groupVersionKind: networkingDotk8sDotioSlashv1SlashNetworkPolicy, namespace: String, name: String): Output_[typings.pulumiKubernetes.mod.networking.v1.NetworkPolicy] = js.native
@@ -8603,9 +8607,5 @@ abstract class CollectionComponentResource protected ()
   def getResource_v1ServiceList(groupVersionKind: v1SlashServiceList, name: String): Output_[typings.pulumiKubernetes.mod.core.v1.ServiceList] = js.native
   @JSName("getResource")
   def getResource_v1ServiceList(groupVersionKind: v1SlashServiceList, namespace: String, name: String): Output_[typings.pulumiKubernetes.mod.core.v1.ServiceList] = js.native
-  @JSName("getResource")
-  def getResource_v1Status(groupVersionKind: v1SlashStatus, name: String): Output_[typings.pulumiKubernetes.mod.meta.v1.Status] = js.native
-  @JSName("getResource")
-  def getResource_v1Status(groupVersionKind: v1SlashStatus, namespace: String, name: String): Output_[typings.pulumiKubernetes.mod.meta.v1.Status] = js.native
 }
 

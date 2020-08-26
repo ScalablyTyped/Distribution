@@ -30,20 +30,42 @@ trait SMSTemplateRequest extends js.Object {
 
 object SMSTemplateRequest {
   @scala.inline
-  def apply(
-    Body: string = null,
-    DefaultSubstitutions: string = null,
-    RecommenderId: string = null,
-    TemplateDescription: string = null,
-    tags: MapOfString = null
-  ): SMSTemplateRequest = {
+  def apply(): SMSTemplateRequest = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (DefaultSubstitutions != null) __obj.updateDynamic("DefaultSubstitutions")(DefaultSubstitutions.asInstanceOf[js.Any])
-    if (RecommenderId != null) __obj.updateDynamic("RecommenderId")(RecommenderId.asInstanceOf[js.Any])
-    if (TemplateDescription != null) __obj.updateDynamic("TemplateDescription")(TemplateDescription.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SMSTemplateRequest]
   }
+  @scala.inline
+  implicit class SMSTemplateRequestOps[Self <: SMSTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setDefaultSubstitutions(value: string): Self = this.set("DefaultSubstitutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSubstitutions: Self = this.set("DefaultSubstitutions", js.undefined)
+    @scala.inline
+    def setRecommenderId(value: string): Self = this.set("RecommenderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommenderId: Self = this.set("RecommenderId", js.undefined)
+    @scala.inline
+    def setTemplateDescription(value: string): Self = this.set("TemplateDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateDescription: Self = this.set("TemplateDescription", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

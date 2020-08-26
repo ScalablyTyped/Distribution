@@ -18,10 +18,6 @@ object Controls extends js.Object {
       grid: typings.slickgrid.Slick.Grid[T],
       options: SlickColumnPickerOptions
     ) = this()
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
-    /* CompleteClass */
-    override def getAllColumns(): js.Array[Column[T]] = js.native
   }
   
 }

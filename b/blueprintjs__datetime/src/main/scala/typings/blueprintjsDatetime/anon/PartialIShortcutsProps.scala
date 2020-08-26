@@ -9,39 +9,70 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@blueprintjs/datetime.@blueprintjs/datetime/lib/esm/shortcuts.IShortcutsProps> */
+@js.native
 trait PartialIShortcutsProps extends js.Object {
-  var allowSingleDayRange: js.UndefOr[Boolean] = js.undefined
-  var maxDate: js.UndefOr[Date] = js.undefined
-  var minDate: js.UndefOr[Date] = js.undefined
-  var onShortcutClick: js.UndefOr[js.Function2[/* shortcut */ IDateRangeShortcut, /* index */ Double, Unit]] = js.undefined
-  var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
-  var shortcuts: js.UndefOr[js.Array[IDateRangeShortcut] | `true`] = js.undefined
-  var timePrecision: js.UndefOr[TimePrecision] = js.undefined
-  var useSingleDateShortcuts: js.UndefOr[Boolean] = js.undefined
+  var allowSingleDayRange: js.UndefOr[Boolean] = js.native
+  var maxDate: js.UndefOr[Date] = js.native
+  var minDate: js.UndefOr[Date] = js.native
+  var onShortcutClick: js.UndefOr[js.Function2[/* shortcut */ IDateRangeShortcut, /* index */ Double, Unit]] = js.native
+  var selectedShortcutIndex: js.UndefOr[Double] = js.native
+  var shortcuts: js.UndefOr[js.Array[IDateRangeShortcut] | `true`] = js.native
+  var timePrecision: js.UndefOr[TimePrecision] = js.native
+  var useSingleDateShortcuts: js.UndefOr[Boolean] = js.native
 }
 
 object PartialIShortcutsProps {
   @scala.inline
-  def apply(
-    allowSingleDayRange: js.UndefOr[Boolean] = js.undefined,
-    maxDate: Date = null,
-    minDate: Date = null,
-    onShortcutClick: (/* shortcut */ IDateRangeShortcut, /* index */ Double) => Unit = null,
-    selectedShortcutIndex: js.UndefOr[Double] = js.undefined,
-    shortcuts: js.Array[IDateRangeShortcut] | `true` = null,
-    timePrecision: TimePrecision = null,
-    useSingleDateShortcuts: js.UndefOr[Boolean] = js.undefined
-  ): PartialIShortcutsProps = {
+  def apply(): PartialIShortcutsProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSingleDayRange)) __obj.updateDynamic("allowSingleDayRange")(allowSingleDayRange.get.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (onShortcutClick != null) __obj.updateDynamic("onShortcutClick")(js.Any.fromFunction2(onShortcutClick))
-    if (!js.isUndefined(selectedShortcutIndex)) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.get.asInstanceOf[js.Any])
-    if (shortcuts != null) __obj.updateDynamic("shortcuts")(shortcuts.asInstanceOf[js.Any])
-    if (timePrecision != null) __obj.updateDynamic("timePrecision")(timePrecision.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSingleDateShortcuts)) __obj.updateDynamic("useSingleDateShortcuts")(useSingleDateShortcuts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialIShortcutsProps]
   }
+  @scala.inline
+  implicit class PartialIShortcutsPropsOps[Self <: PartialIShortcutsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowSingleDayRange(value: Boolean): Self = this.set("allowSingleDayRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSingleDayRange: Self = this.set("allowSingleDayRange", js.undefined)
+    @scala.inline
+    def setMaxDate(value: Date): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    @scala.inline
+    def setMinDate(value: Date): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    @scala.inline
+    def setOnShortcutClick(value: (/* shortcut */ IDateRangeShortcut, /* index */ Double) => Unit): Self = this.set("onShortcutClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnShortcutClick: Self = this.set("onShortcutClick", js.undefined)
+    @scala.inline
+    def setSelectedShortcutIndex(value: Double): Self = this.set("selectedShortcutIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedShortcutIndex: Self = this.set("selectedShortcutIndex", js.undefined)
+    @scala.inline
+    def setShortcutsVarargs(value: IDateRangeShortcut*): Self = this.set("shortcuts", js.Array(value :_*))
+    @scala.inline
+    def setShortcuts(value: js.Array[IDateRangeShortcut] | `true`): Self = this.set("shortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortcuts: Self = this.set("shortcuts", js.undefined)
+    @scala.inline
+    def setTimePrecision(value: TimePrecision): Self = this.set("timePrecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePrecision: Self = this.set("timePrecision", js.undefined)
+    @scala.inline
+    def setUseSingleDateShortcuts(value: Boolean): Self = this.set("useSingleDateShortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseSingleDateShortcuts: Self = this.set("useSingleDateShortcuts", js.undefined)
+  }
+  
 }
 

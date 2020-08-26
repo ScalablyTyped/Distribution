@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 /** Construct a Range object. */
 class Range () extends js.Object {
   def this(pointA: PointCompatible) = this()
-  def this(pointA: PointCompatible, pointB: PointCompatible) = this()
+  def this(pointA: js.UndefOr[PointCompatible], pointB: PointCompatible) = this()
   /** A Point representing the end of the Range. */
   var end: Point = js.native
   // Properties

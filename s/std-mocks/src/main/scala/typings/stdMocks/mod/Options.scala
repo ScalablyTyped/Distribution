@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var stderr: js.UndefOr[Boolean] = js.undefined
-  var stdout: js.UndefOr[Boolean] = js.undefined
+  var stderr: js.UndefOr[Boolean] = js.native
+  var stdout: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(stderr: js.UndefOr[Boolean] = js.undefined, stdout: js.UndefOr[Boolean] = js.undefined): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStderr(value: Boolean): Self = this.set("stderr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStderr: Self = this.set("stderr", js.undefined)
+    @scala.inline
+    def setStdout(value: Boolean): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdout: Self = this.set("stdout", js.undefined)
+  }
+  
 }
 

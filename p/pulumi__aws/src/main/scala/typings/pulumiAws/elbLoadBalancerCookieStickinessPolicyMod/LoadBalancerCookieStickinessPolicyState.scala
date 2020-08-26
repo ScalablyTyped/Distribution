@@ -31,18 +31,38 @@ trait LoadBalancerCookieStickinessPolicyState extends js.Object {
 
 object LoadBalancerCookieStickinessPolicyState {
   @scala.inline
-  def apply(
-    cookieExpirationPeriod: Input[Double] = null,
-    lbPort: Input[Double] = null,
-    loadBalancer: Input[String] = null,
-    name: Input[String] = null
-  ): LoadBalancerCookieStickinessPolicyState = {
+  def apply(): LoadBalancerCookieStickinessPolicyState = {
     val __obj = js.Dynamic.literal()
-    if (cookieExpirationPeriod != null) __obj.updateDynamic("cookieExpirationPeriod")(cookieExpirationPeriod.asInstanceOf[js.Any])
-    if (lbPort != null) __obj.updateDynamic("lbPort")(lbPort.asInstanceOf[js.Any])
-    if (loadBalancer != null) __obj.updateDynamic("loadBalancer")(loadBalancer.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerCookieStickinessPolicyState]
   }
+  @scala.inline
+  implicit class LoadBalancerCookieStickinessPolicyStateOps[Self <: LoadBalancerCookieStickinessPolicyState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCookieExpirationPeriod(value: Input[Double]): Self = this.set("cookieExpirationPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieExpirationPeriod: Self = this.set("cookieExpirationPeriod", js.undefined)
+    @scala.inline
+    def setLbPort(value: Input[Double]): Self = this.set("lbPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLbPort: Self = this.set("lbPort", js.undefined)
+    @scala.inline
+    def setLoadBalancer(value: Input[String]): Self = this.set("loadBalancer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancer: Self = this.set("loadBalancer", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

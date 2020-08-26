@@ -34,22 +34,48 @@ trait DescribeWorkspacesRequest extends js.Object {
 
 object DescribeWorkspacesRequest {
   @scala.inline
-  def apply(
-    BundleId: BundleId = null,
-    DirectoryId: DirectoryId = null,
-    Limit: js.UndefOr[Limit] = js.undefined,
-    NextToken: PaginationToken = null,
-    UserName: UserName = null,
-    WorkspaceIds: WorkspaceIdList = null
-  ): DescribeWorkspacesRequest = {
+  def apply(): DescribeWorkspacesRequest = {
     val __obj = js.Dynamic.literal()
-    if (BundleId != null) __obj.updateDynamic("BundleId")(BundleId.asInstanceOf[js.Any])
-    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
-    if (WorkspaceIds != null) __obj.updateDynamic("WorkspaceIds")(WorkspaceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkspacesRequest]
   }
+  @scala.inline
+  implicit class DescribeWorkspacesRequestOps[Self <: DescribeWorkspacesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleId(value: BundleId): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("BundleId", js.undefined)
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    @scala.inline
+    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setUserName(value: UserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("UserName", js.undefined)
+    @scala.inline
+    def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = this.set("WorkspaceIds", js.Array(value :_*))
+    @scala.inline
+    def setWorkspaceIds(value: WorkspaceIdList): Self = this.set("WorkspaceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceIds: Self = this.set("WorkspaceIds", js.undefined)
+  }
+  
 }
 

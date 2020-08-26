@@ -12,7 +12,7 @@ Checks whether provided parameter looks like a number
 | Keywords           | is-number, typeof, number-like |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 19814944 |
+| # downloads        | 20042482 |
 | # stars            | 1 |
 
 ## Links

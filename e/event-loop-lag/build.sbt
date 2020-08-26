@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "event-loop-lag"
-version := "1.0.3-dt-20200515Z-eb7450"
-scalaVersion := "2.13.2"
+version := "1.0.3-dt-20200515Z-df71a3"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

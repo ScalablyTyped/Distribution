@@ -5,51 +5,86 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FfprobeFormat
   extends /* key */ StringDictionary[js.Any] {
-  var bit_rate: js.UndefOr[Double] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var filename: js.UndefOr[String] = js.undefined
-  var format_long_name: js.UndefOr[String] = js.undefined
-  var format_name: js.UndefOr[String] = js.undefined
-  var nb_programs: js.UndefOr[Double] = js.undefined
-  var nb_streams: js.UndefOr[Double] = js.undefined
-  var probe_score: js.UndefOr[Double] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var start_time: js.UndefOr[Double] = js.undefined
-  var tags: js.UndefOr[js.Array[_]] = js.undefined
+  var bit_rate: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var filename: js.UndefOr[String] = js.native
+  var format_long_name: js.UndefOr[String] = js.native
+  var format_name: js.UndefOr[String] = js.native
+  var nb_programs: js.UndefOr[Double] = js.native
+  var nb_streams: js.UndefOr[Double] = js.native
+  var probe_score: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.native
+  var start_time: js.UndefOr[Double] = js.native
+  var tags: js.UndefOr[js.Array[_]] = js.native
 }
 
 object FfprobeFormat {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    bit_rate: js.UndefOr[Double] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    filename: String = null,
-    format_long_name: String = null,
-    format_name: String = null,
-    nb_programs: js.UndefOr[Double] = js.undefined,
-    nb_streams: js.UndefOr[Double] = js.undefined,
-    probe_score: js.UndefOr[Double] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    start_time: js.UndefOr[Double] = js.undefined,
-    tags: js.Array[_] = null
-  ): FfprobeFormat = {
+  def apply(): FfprobeFormat = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(bit_rate)) __obj.updateDynamic("bit_rate")(bit_rate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (format_long_name != null) __obj.updateDynamic("format_long_name")(format_long_name.asInstanceOf[js.Any])
-    if (format_name != null) __obj.updateDynamic("format_name")(format_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(nb_programs)) __obj.updateDynamic("nb_programs")(nb_programs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nb_streams)) __obj.updateDynamic("nb_streams")(nb_streams.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(probe_score)) __obj.updateDynamic("probe_score")(probe_score.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(start_time)) __obj.updateDynamic("start_time")(start_time.get.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FfprobeFormat]
   }
+  @scala.inline
+  implicit class FfprobeFormatOps[Self <: FfprobeFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBit_rate(value: Double): Self = this.set("bit_rate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBit_rate: Self = this.set("bit_rate", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setFormat_long_name(value: String): Self = this.set("format_long_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat_long_name: Self = this.set("format_long_name", js.undefined)
+    @scala.inline
+    def setFormat_name(value: String): Self = this.set("format_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat_name: Self = this.set("format_name", js.undefined)
+    @scala.inline
+    def setNb_programs(value: Double): Self = this.set("nb_programs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNb_programs: Self = this.set("nb_programs", js.undefined)
+    @scala.inline
+    def setNb_streams(value: Double): Self = this.set("nb_streams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNb_streams: Self = this.set("nb_streams", js.undefined)
+    @scala.inline
+    def setProbe_score(value: Double): Self = this.set("probe_score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProbe_score: Self = this.set("probe_score", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStart_time(value: Double): Self = this.set("start_time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart_time: Self = this.set("start_time", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: js.Any*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[_]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

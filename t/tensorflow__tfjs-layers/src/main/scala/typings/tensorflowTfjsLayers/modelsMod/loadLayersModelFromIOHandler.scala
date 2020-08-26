@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object loadLayersModelFromIOHandler extends js.Object {
   def apply(handler: IOHandler): js.Promise[LayersModel] = js.native
+  def apply(handler: IOHandler, customObjects: js.UndefOr[scala.Nothing], options: LoadOptions): js.Promise[LayersModel] = js.native
   def apply(handler: IOHandler, customObjects: ConfigDict): js.Promise[LayersModel] = js.native
   def apply(handler: IOHandler, customObjects: ConfigDict, options: LoadOptions): js.Promise[LayersModel] = js.native
 }

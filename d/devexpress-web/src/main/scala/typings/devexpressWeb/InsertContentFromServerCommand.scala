@@ -16,6 +16,7 @@ trait InsertContentFromServerCommand extends CommandBase {
     * @param subDocumentId An integer value identifying the target sub-document.
     */
   def execute(requestId: String): Boolean = js.native
+  def execute(requestId: String, position: js.UndefOr[scala.Nothing], subDocumentId: Double): Boolean = js.native
   def execute(requestId: String, position: Double): Boolean = js.native
   def execute(requestId: String, position: Double, subDocumentId: Double): Boolean = js.native
   /**

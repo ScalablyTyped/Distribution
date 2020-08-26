@@ -25,68 +25,121 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BarGroupPadding extends js.Object {
-  var barGroupPadding: js.UndefOr[Double] = js.undefined
-  var barGroupWidth: js.UndefOr[Double] = js.undefined
-  var barWidth: js.UndefOr[Double] = js.undefined
-  var bottomIndent: js.UndefOr[Double] = js.undefined
-  var commonSeriesSettings: js.UndefOr[dxChartCommonSeriesSettings] = js.undefined
-  var dataPrepareSettings: js.UndefOr[ConvertToAxisDataType] = js.undefined
-  var equalBarWidth: js.UndefOr[Boolean] = js.undefined
-  var maxBubbleSize: js.UndefOr[Double] = js.undefined
-  var minBubbleSize: js.UndefOr[Double] = js.undefined
-  var negativesAsZeroes: js.UndefOr[Boolean] = js.undefined
+  var barGroupPadding: js.UndefOr[Double] = js.native
+  var barGroupWidth: js.UndefOr[Double] = js.native
+  var barWidth: js.UndefOr[Double] = js.native
+  var bottomIndent: js.UndefOr[Double] = js.native
+  var commonSeriesSettings: js.UndefOr[dxChartCommonSeriesSettings] = js.native
+  var dataPrepareSettings: js.UndefOr[ConvertToAxisDataType] = js.native
+  var equalBarWidth: js.UndefOr[Boolean] = js.native
+  var maxBubbleSize: js.UndefOr[Double] = js.native
+  var minBubbleSize: js.UndefOr[Double] = js.native
+  var negativesAsZeroes: js.UndefOr[Boolean] = js.native
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.undefined
-  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
-  var series: js.UndefOr[ChartSeries | js.Array[ChartSeries]] = js.undefined
-  var seriesTemplate: js.UndefOr[CustomizeSeries] = js.undefined
-  var topIndent: js.UndefOr[Double] = js.undefined
-  var useAggregation: js.UndefOr[Boolean] = js.undefined
-  var valueAxis: js.UndefOr[Inverted] = js.undefined
+  ] = js.native
+  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
+  var series: js.UndefOr[ChartSeries | js.Array[ChartSeries]] = js.native
+  var seriesTemplate: js.UndefOr[CustomizeSeries] = js.native
+  var topIndent: js.UndefOr[Double] = js.native
+  var useAggregation: js.UndefOr[Boolean] = js.native
+  var valueAxis: js.UndefOr[Inverted] = js.native
 }
 
 object BarGroupPadding {
   @scala.inline
-  def apply(
-    barGroupPadding: js.UndefOr[Double] = js.undefined,
-    barGroupWidth: js.UndefOr[Double] = js.undefined,
-    barWidth: js.UndefOr[Double] = js.undefined,
-    bottomIndent: js.UndefOr[Double] = js.undefined,
-    commonSeriesSettings: dxChartCommonSeriesSettings = null,
-    dataPrepareSettings: ConvertToAxisDataType = null,
-    equalBarWidth: js.UndefOr[Boolean] = js.undefined,
-    maxBubbleSize: js.UndefOr[Double] = js.undefined,
-    minBubbleSize: js.UndefOr[Double] = js.undefined,
-    negativesAsZeroes: js.UndefOr[Boolean] = js.undefined,
-    palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
-    paletteExtensionMode: alternate | blend | extrapolate = null,
-    series: ChartSeries | js.Array[ChartSeries] = null,
-    seriesTemplate: CustomizeSeries = null,
-    topIndent: js.UndefOr[Double] = js.undefined,
-    useAggregation: js.UndefOr[Boolean] = js.undefined,
-    valueAxis: Inverted = null
-  ): BarGroupPadding = {
+  def apply(): BarGroupPadding = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(barGroupPadding)) __obj.updateDynamic("barGroupPadding")(barGroupPadding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(barGroupWidth)) __obj.updateDynamic("barGroupWidth")(barGroupWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(barWidth)) __obj.updateDynamic("barWidth")(barWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomIndent)) __obj.updateDynamic("bottomIndent")(bottomIndent.get.asInstanceOf[js.Any])
-    if (commonSeriesSettings != null) __obj.updateDynamic("commonSeriesSettings")(commonSeriesSettings.asInstanceOf[js.Any])
-    if (dataPrepareSettings != null) __obj.updateDynamic("dataPrepareSettings")(dataPrepareSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(equalBarWidth)) __obj.updateDynamic("equalBarWidth")(equalBarWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBubbleSize)) __obj.updateDynamic("maxBubbleSize")(maxBubbleSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minBubbleSize)) __obj.updateDynamic("minBubbleSize")(minBubbleSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(negativesAsZeroes)) __obj.updateDynamic("negativesAsZeroes")(negativesAsZeroes.get.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (seriesTemplate != null) __obj.updateDynamic("seriesTemplate")(seriesTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(topIndent)) __obj.updateDynamic("topIndent")(topIndent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAggregation)) __obj.updateDynamic("useAggregation")(useAggregation.get.asInstanceOf[js.Any])
-    if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarGroupPadding]
   }
+  @scala.inline
+  implicit class BarGroupPaddingOps[Self <: BarGroupPadding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBarGroupPadding(value: Double): Self = this.set("barGroupPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarGroupPadding: Self = this.set("barGroupPadding", js.undefined)
+    @scala.inline
+    def setBarGroupWidth(value: Double): Self = this.set("barGroupWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarGroupWidth: Self = this.set("barGroupWidth", js.undefined)
+    @scala.inline
+    def setBarWidth(value: Double): Self = this.set("barWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarWidth: Self = this.set("barWidth", js.undefined)
+    @scala.inline
+    def setBottomIndent(value: Double): Self = this.set("bottomIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomIndent: Self = this.set("bottomIndent", js.undefined)
+    @scala.inline
+    def setCommonSeriesSettings(value: dxChartCommonSeriesSettings): Self = this.set("commonSeriesSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommonSeriesSettings: Self = this.set("commonSeriesSettings", js.undefined)
+    @scala.inline
+    def setDataPrepareSettings(value: ConvertToAxisDataType): Self = this.set("dataPrepareSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataPrepareSettings: Self = this.set("dataPrepareSettings", js.undefined)
+    @scala.inline
+    def setEqualBarWidth(value: Boolean): Self = this.set("equalBarWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEqualBarWidth: Self = this.set("equalBarWidth", js.undefined)
+    @scala.inline
+    def setMaxBubbleSize(value: Double): Self = this.set("maxBubbleSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBubbleSize: Self = this.set("maxBubbleSize", js.undefined)
+    @scala.inline
+    def setMinBubbleSize(value: Double): Self = this.set("minBubbleSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinBubbleSize: Self = this.set("minBubbleSize", js.undefined)
+    @scala.inline
+    def setNegativesAsZeroes(value: Boolean): Self = this.set("negativesAsZeroes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegativesAsZeroes: Self = this.set("negativesAsZeroes", js.undefined)
+    @scala.inline
+    def setPaletteVarargs(value: String*): Self = this.set("palette", js.Array(value :_*))
+    @scala.inline
+    def setPalette(
+      value: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
+    ): Self = this.set("palette", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePalette: Self = this.set("palette", js.undefined)
+    @scala.inline
+    def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = this.set("paletteExtensionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaletteExtensionMode: Self = this.set("paletteExtensionMode", js.undefined)
+    @scala.inline
+    def setSeriesVarargs(value: ChartSeries*): Self = this.set("series", js.Array(value :_*))
+    @scala.inline
+    def setSeries(value: ChartSeries | js.Array[ChartSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setSeriesTemplate(value: CustomizeSeries): Self = this.set("seriesTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesTemplate: Self = this.set("seriesTemplate", js.undefined)
+    @scala.inline
+    def setTopIndent(value: Double): Self = this.set("topIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopIndent: Self = this.set("topIndent", js.undefined)
+    @scala.inline
+    def setUseAggregation(value: Boolean): Self = this.set("useAggregation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseAggregation: Self = this.set("useAggregation", js.undefined)
+    @scala.inline
+    def setValueAxis(value: Inverted): Self = this.set("valueAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueAxis: Self = this.set("valueAxis", js.undefined)
+  }
+  
 }
 

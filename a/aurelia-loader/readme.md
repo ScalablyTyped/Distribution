@@ -12,7 +12,7 @@ An abstract module which specifies an interface for loading modules and view tem
 | Keywords           | aurelia, loader, modules |
 | # releases         | 3 |
 | # dependents       | 30 |
-| # downloads        | 522935 |
+| # downloads        | 533907 |
 | # stars            | 0 |
 
 ## Links

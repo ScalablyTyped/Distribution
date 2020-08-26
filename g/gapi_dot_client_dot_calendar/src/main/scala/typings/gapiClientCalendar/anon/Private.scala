@@ -5,35 +5,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Private extends js.Object {
   /** Properties that are private to the copy of the event that appears on this calendar. */
   var `private`: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
     */ typings.gapiClientCalendar.gapiClientCalendarStrings.Private with TopLevel[js.Any]
-  ] = js.undefined
+  ] = js.native
   /** Properties that are shared between copies of the event on other attendees' calendars. */
   var shared: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
     */ typings.gapiClientCalendar.gapiClientCalendarStrings.Private with TopLevel[js.Any]
-  ] = js.undefined
+  ] = js.native
 }
 
 object Private {
   @scala.inline
-  def apply(
-    `private`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.gapiClientCalendar.gapiClientCalendarStrings.Private with TopLevel[js.Any] = null,
-    shared: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.gapiClientCalendar.gapiClientCalendarStrings.Private with TopLevel[js.Any] = null
-  ): Private = {
+  def apply(): Private = {
     val __obj = js.Dynamic.literal()
-    if (`private` != null) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
-    if (shared != null) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
     __obj.asInstanceOf[Private]
   }
+  @scala.inline
+  implicit class PrivateOps[Self <: Private] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrivate(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ typings.gapiClientCalendar.gapiClientCalendarStrings.Private with TopLevel[js.Any]
+    ): Self = this.set("private", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivate: Self = this.set("private", js.undefined)
+    @scala.inline
+    def setShared(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ typings.gapiClientCalendar.gapiClientCalendarStrings.Private with TopLevel[js.Any]
+    ): Self = this.set("shared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShared: Self = this.set("shared", js.undefined)
+  }
+  
 }
 

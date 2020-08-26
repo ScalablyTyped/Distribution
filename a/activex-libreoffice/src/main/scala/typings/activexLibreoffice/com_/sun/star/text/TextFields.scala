@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This is a collection of {@link TextField} instances. */
+@js.native
 trait TextFields
   extends XEnumerationAccess
      with XRefreshable

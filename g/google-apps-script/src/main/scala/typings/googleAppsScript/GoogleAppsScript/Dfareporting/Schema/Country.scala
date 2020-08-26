@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Country extends js.Object {
-  var countryCode: js.UndefOr[String] = js.undefined
-  var dartId: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var sslEnabled: js.UndefOr[Boolean] = js.undefined
+  var countryCode: js.UndefOr[String] = js.native
+  var dartId: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var sslEnabled: js.UndefOr[Boolean] = js.native
 }
 
 object Country {
   @scala.inline
-  def apply(
-    countryCode: String = null,
-    dartId: String = null,
-    kind: String = null,
-    name: String = null,
-    sslEnabled: js.UndefOr[Boolean] = js.undefined
-  ): Country = {
+  def apply(): Country = {
     val __obj = js.Dynamic.literal()
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (dartId != null) __obj.updateDynamic("dartId")(dartId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslEnabled)) __obj.updateDynamic("sslEnabled")(sslEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Country]
   }
+  @scala.inline
+  implicit class CountryOps[Self <: Country] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    @scala.inline
+    def setDartId(value: String): Self = this.set("dartId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDartId: Self = this.set("dartId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSslEnabled(value: Boolean): Self = this.set("sslEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslEnabled: Self = this.set("sslEnabled", js.undefined)
+  }
+  
 }
 

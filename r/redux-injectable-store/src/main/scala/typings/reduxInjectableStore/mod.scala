@@ -22,9 +22,11 @@ object mod extends js.Object {
   @js.native
   trait InjectableStoreCreator extends js.Object {
     def apply[S](): InjectableStore[S] = js.native
+    def apply[S](enhancer: js.UndefOr[scala.Nothing], wrapReducer: WrapReducer[S]): InjectableStore[S] = js.native
     def apply[S](enhancer: StoreEnhancer[S, js.Object]): InjectableStore[S] = js.native
     def apply[S](enhancer: StoreEnhancer[S, js.Object], wrapReducer: WrapReducer[S]): InjectableStore[S] = js.native
     def apply[S](preloadedState: S): InjectableStore[S] = js.native
+    def apply[S](preloadedState: S, enhancer: js.UndefOr[scala.Nothing], wrapReducer: WrapReducer[S]): InjectableStore[S] = js.native
     def apply[S](preloadedState: S, enhancer: StoreEnhancer[S, js.Object]): InjectableStore[S] = js.native
     def apply[S](preloadedState: S, enhancer: StoreEnhancer[S, js.Object], wrapReducer: WrapReducer[S]): InjectableStore[S] = js.native
   }

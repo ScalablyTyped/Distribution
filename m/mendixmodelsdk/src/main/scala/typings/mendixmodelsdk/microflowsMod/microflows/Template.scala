@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.pagesMod.pages.PageSettings
 import typings.mendixmodelsdk.workflowsMod.workflows.UserTask
 import typings.mendixmodelsdk.workflowsMod.workflows.Workflow
 import scala.scalajs.js
@@ -30,6 +31,7 @@ abstract class Template protected () extends Element {
   def containerAsCustomRequestHandling: CustomRequestHandling = js.native
   def containerAsHttpConfiguration: HttpConfiguration = js.native
   def containerAsLogMessageAction: LogMessageAction = js.native
+  def containerAsPageSettings: PageSettings = js.native
   def containerAsShowMessageAction: ShowMessageAction = js.native
   def containerAsStringTemplateParameterValue: StringTemplateParameterValue = js.native
   def containerAsUserTask: UserTask = js.native

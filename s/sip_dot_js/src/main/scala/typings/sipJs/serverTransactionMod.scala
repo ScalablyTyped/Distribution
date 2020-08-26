@@ -22,8 +22,6 @@ object serverTransactionMod extends js.Object {
       loggerCategory: String
     ) = this()
     var _request: js.Any = js.native
-    /** The incoming request the transaction handling. */
-    val request: IncomingRequestMessage = js.native
     var user: ServerTransactionUser = js.native
     /**
       * Receive incoming requests from the transport which match this transaction.
@@ -37,6 +35,8 @@ object serverTransactionMod extends js.Object {
       * @param response - Response.
       */
     def receiveResponse(statusCode: Double, response: String): Unit = js.native
+    /** The incoming request the transaction handling. */
+    def request: IncomingRequestMessage = js.native
   }
   
 }

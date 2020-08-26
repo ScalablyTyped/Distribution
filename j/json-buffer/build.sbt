@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "json-buffer"
-version := "3.0-dt-20190726Z-aac234"
-scalaVersion := "2.13.2"
+version := "3.0-dt-20190726Z-2fba6c"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

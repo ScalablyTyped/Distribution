@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("RemoveSpacingAfterParagraphCommand")
 @js.native
 class RemoveSpacingAfterParagraphCommand ()
-  extends typings.devexpressWeb.RemoveSpacingAfterParagraphCommand {
-  /**
-    * Executes the RemoveSpacingAfterParagraphCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.RemoveSpacingAfterParagraphCommand
 

@@ -1,60 +1,57 @@
 package typings.reactImageMagnifiers.mod
 
-import typings.react.mod.CSSProperties
-import typings.react.mod.ReactNode
-import typings.react.mod.SyntheticEvent
 import typings.reactImageMagnifiers.anon.ClickMoveLimit
-import typings.std.Element
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MagnifierProps extends CommonProps {
-  var cursorStyleActive: js.UndefOr[String] = js.undefined
-  var dragToMove: js.UndefOr[Boolean] = js.undefined
-  var interactionSettings: js.UndefOr[ClickMoveLimit] = js.undefined
-  var mouseActivation: js.UndefOr[MouseActivation] = js.undefined
-  var touchActivation: js.UndefOr[TouchActivation] = js.undefined
+  var cursorStyleActive: js.UndefOr[String] = js.native
+  var dragToMove: js.UndefOr[Boolean] = js.native
+  var interactionSettings: js.UndefOr[ClickMoveLimit] = js.native
+  var mouseActivation: js.UndefOr[MouseActivation] = js.native
+  var touchActivation: js.UndefOr[TouchActivation] = js.native
 }
 
 object MagnifierProps {
   @scala.inline
-  def apply(
-    imageSrc: String,
-    className: String = null,
-    cursorStyle: String = null,
-    cursorStyleActive: String = null,
-    dragToMove: js.UndefOr[Boolean] = js.undefined,
-    imageAlt: String = null,
-    interactionSettings: ClickMoveLimit = null,
-    largeImageSrc: String = null,
-    mouseActivation: MouseActivation = null,
-    onImageLoad: /* ev */ SyntheticEvent[Element, Event] => Unit = null,
-    onLargeImageLoad: /* ev */ SyntheticEvent[Element, Event] => Unit = null,
-    onZoomEnd: () => Unit = null,
-    onZoomStart: () => Unit = null,
-    renderOverlay: /* state */ Boolean => ReactNode = null,
-    style: CSSProperties = null,
-    touchActivation: TouchActivation = null
-  ): MagnifierProps = {
+  def apply(imageSrc: String): MagnifierProps = {
     val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
-    if (cursorStyleActive != null) __obj.updateDynamic("cursorStyleActive")(cursorStyleActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragToMove)) __obj.updateDynamic("dragToMove")(dragToMove.get.asInstanceOf[js.Any])
-    if (imageAlt != null) __obj.updateDynamic("imageAlt")(imageAlt.asInstanceOf[js.Any])
-    if (interactionSettings != null) __obj.updateDynamic("interactionSettings")(interactionSettings.asInstanceOf[js.Any])
-    if (largeImageSrc != null) __obj.updateDynamic("largeImageSrc")(largeImageSrc.asInstanceOf[js.Any])
-    if (mouseActivation != null) __obj.updateDynamic("mouseActivation")(mouseActivation.asInstanceOf[js.Any])
-    if (onImageLoad != null) __obj.updateDynamic("onImageLoad")(js.Any.fromFunction1(onImageLoad))
-    if (onLargeImageLoad != null) __obj.updateDynamic("onLargeImageLoad")(js.Any.fromFunction1(onLargeImageLoad))
-    if (onZoomEnd != null) __obj.updateDynamic("onZoomEnd")(js.Any.fromFunction0(onZoomEnd))
-    if (onZoomStart != null) __obj.updateDynamic("onZoomStart")(js.Any.fromFunction0(onZoomStart))
-    if (renderOverlay != null) __obj.updateDynamic("renderOverlay")(js.Any.fromFunction1(renderOverlay))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (touchActivation != null) __obj.updateDynamic("touchActivation")(touchActivation.asInstanceOf[js.Any])
     __obj.asInstanceOf[MagnifierProps]
   }
+  @scala.inline
+  implicit class MagnifierPropsOps[Self <: MagnifierProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCursorStyleActive(value: String): Self = this.set("cursorStyleActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursorStyleActive: Self = this.set("cursorStyleActive", js.undefined)
+    @scala.inline
+    def setDragToMove(value: Boolean): Self = this.set("dragToMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragToMove: Self = this.set("dragToMove", js.undefined)
+    @scala.inline
+    def setInteractionSettings(value: ClickMoveLimit): Self = this.set("interactionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractionSettings: Self = this.set("interactionSettings", js.undefined)
+    @scala.inline
+    def setMouseActivation(value: MouseActivation): Self = this.set("mouseActivation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseActivation: Self = this.set("mouseActivation", js.undefined)
+    @scala.inline
+    def setTouchActivation(value: TouchActivation): Self = this.set("touchActivation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchActivation: Self = this.set("touchActivation", js.undefined)
+  }
+  
 }
 

@@ -5,24 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledAutoScalingPolicyDescription extends AutoScalingPolicyDescription {
   /**
     * <p>Represents a target tracking scaling policy configuration.</p>
     */
   @JSName("TargetTrackingScalingPolicyConfiguration")
-  var TargetTrackingScalingPolicyConfiguration_UnmarshalledAutoScalingPolicyDescription: js.UndefOr[UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription] = js.undefined
+  var TargetTrackingScalingPolicyConfiguration_UnmarshalledAutoScalingPolicyDescription: js.UndefOr[UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription] = js.native
 }
 
 object UnmarshalledAutoScalingPolicyDescription {
   @scala.inline
-  def apply(
-    PolicyName: String = null,
-    TargetTrackingScalingPolicyConfiguration: UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription = null
-  ): UnmarshalledAutoScalingPolicyDescription = {
+  def apply(): UnmarshalledAutoScalingPolicyDescription = {
     val __obj = js.Dynamic.literal()
-    if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName.asInstanceOf[js.Any])
-    if (TargetTrackingScalingPolicyConfiguration != null) __obj.updateDynamic("TargetTrackingScalingPolicyConfiguration")(TargetTrackingScalingPolicyConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledAutoScalingPolicyDescription]
   }
+  @scala.inline
+  implicit class UnmarshalledAutoScalingPolicyDescriptionOps[Self <: UnmarshalledAutoScalingPolicyDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetTrackingScalingPolicyConfiguration(value: UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription): Self = this.set("TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetTrackingScalingPolicyConfiguration: Self = this.set("TargetTrackingScalingPolicyConfiguration", js.undefined)
+  }
+  
 }
 

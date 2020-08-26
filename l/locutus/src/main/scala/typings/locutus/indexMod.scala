@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object indexMod extends js.Object {
   def apply(): js.Any = js.native
+  def apply(s: js.UndefOr[scala.Nothing], sep: js.Any): js.Any = js.native
   def apply(s: js.Any): js.Any = js.native
   def apply(s: js.Any, sep: js.Any): js.Any = js.native
 }

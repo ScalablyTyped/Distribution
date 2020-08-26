@@ -26,17 +26,36 @@ trait CustomErrorResponse extends js.Object {
 
 object CustomErrorResponse {
   @scala.inline
-  def apply(
-    ErrorCode: integer,
-    ErrorCachingMinTTL: js.UndefOr[long] = js.undefined,
-    ResponseCode: String = null,
-    ResponsePagePath: String = null
-  ): CustomErrorResponse = {
+  def apply(ErrorCode: integer): CustomErrorResponse = {
     val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ErrorCachingMinTTL)) __obj.updateDynamic("ErrorCachingMinTTL")(ErrorCachingMinTTL.get.asInstanceOf[js.Any])
-    if (ResponseCode != null) __obj.updateDynamic("ResponseCode")(ResponseCode.asInstanceOf[js.Any])
-    if (ResponsePagePath != null) __obj.updateDynamic("ResponsePagePath")(ResponsePagePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomErrorResponse]
   }
+  @scala.inline
+  implicit class CustomErrorResponseOps[Self <: CustomErrorResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: integer): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrorCachingMinTTL(value: long): Self = this.set("ErrorCachingMinTTL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCachingMinTTL: Self = this.set("ErrorCachingMinTTL", js.undefined)
+    @scala.inline
+    def setResponseCode(value: String): Self = this.set("ResponseCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseCode: Self = this.set("ResponseCode", js.undefined)
+    @scala.inline
+    def setResponsePagePath(value: String): Self = this.set("ResponsePagePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsePagePath: Self = this.set("ResponsePagePath", js.undefined)
+  }
+  
 }
 

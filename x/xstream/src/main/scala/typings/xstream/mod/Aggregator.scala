@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Aggregator[T, U]
   extends InternalProducer[U]
      with OutSender[U] {
-  var insArr: js.Array[Stream[T]]
-  var `type`: String
-  def _start(out: Stream[U]): Unit
+  var insArr: js.Array[Stream[T]] = js.native
+  var `type`: String = js.native
+  def _start(out: Stream[U]): Unit = js.native
 }
 
 object Aggregator {
@@ -25,5 +26,26 @@ object Aggregator {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aggregator[T, U]]
   }
+  @scala.inline
+  implicit class AggregatorOps[Self <: Aggregator[_, _], T, U] (val x: Self with (Aggregator[T, U])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_start(value: Stream[U] => Unit): Self = this.set("_start", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInsArrVarargs(value: Stream[T]*): Self = this.set("insArr", js.Array(value :_*))
+    @scala.inline
+    def setInsArr(value: js.Array[Stream[T]]): Self = this.set("insArr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

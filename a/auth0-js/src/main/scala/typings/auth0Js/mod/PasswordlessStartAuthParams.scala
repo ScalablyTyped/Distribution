@@ -4,36 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PasswordlessStartAuthParams extends BaseAuthOptions {
-  var responseMode: js.UndefOr[String] = js.undefined
+  var responseMode: js.UndefOr[String] = js.native
 }
 
 object PasswordlessStartAuthParams {
   @scala.inline
-  def apply(
-    __instate: String = null,
-    _csrf: String = null,
-    audience: String = null,
-    clientID: String = null,
-    nonce: String = null,
-    redirectUri: String = null,
-    responseMode: String = null,
-    responseType: String = null,
-    scope: String = null,
-    state: String = null
-  ): PasswordlessStartAuthParams = {
+  def apply(): PasswordlessStartAuthParams = {
     val __obj = js.Dynamic.literal()
-    if (__instate != null) __obj.updateDynamic("__instate")(__instate.asInstanceOf[js.Any])
-    if (_csrf != null) __obj.updateDynamic("_csrf")(_csrf.asInstanceOf[js.Any])
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (clientID != null) __obj.updateDynamic("clientID")(clientID.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
-    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordlessStartAuthParams]
   }
+  @scala.inline
+  implicit class PasswordlessStartAuthParamsOps[Self <: PasswordlessStartAuthParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResponseMode(value: String): Self = this.set("responseMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseMode: Self = this.set("responseMode", js.undefined)
+  }
+  
 }
 

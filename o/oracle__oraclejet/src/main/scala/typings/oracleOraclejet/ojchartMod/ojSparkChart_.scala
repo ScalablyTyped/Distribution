@@ -570,10 +570,15 @@ trait ojSparkChart_[K, D] extends dvtBaseComponent[ojSparkChartSettablePropertie
   def setProperty(property: lineType, value: segmented): Unit = js.native
   def setProperty(property: lineType, value: stepped): Unit = js.native
   def setProperty(property: lineType, value: straight): Unit = js.native
-  def setProperty(
-    property: markerShape,
-    value: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
-  ): Unit = js.native
+  def setProperty(property: markerShape, value: auto): Unit = js.native
+  def setProperty(property: markerShape, value: circle): Unit = js.native
+  def setProperty(property: markerShape, value: diamond): Unit = js.native
+  def setProperty(property: markerShape, value: human): Unit = js.native
+  def setProperty(property: markerShape, value: plus): Unit = js.native
+  def setProperty(property: markerShape, value: square): Unit = js.native
+  def setProperty(property: markerShape, value: star): Unit = js.native
+  def setProperty(property: markerShape, value: triangleDown): Unit = js.native
+  def setProperty(property: markerShape, value: triangleUp): Unit = js.native
   def setProperty(property: visualEffects, value: auto): Unit = js.native
   def setProperty(property: visualEffects, value: none): Unit = js.native
   @JSName("setProperty")
@@ -606,6 +611,8 @@ trait ojSparkChart_[K, D] extends dvtBaseComponent[ojSparkChartSettablePropertie
   def setProperty_lineWidth(property: lineWidth, value: Double): Unit = js.native
   @JSName("setProperty")
   def setProperty_lowColor(property: lowColor, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_markerShape(property: markerShape, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_markerSize(property: markerSize, value: Double): Unit = js.native
   @JSName("setProperty")

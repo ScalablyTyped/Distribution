@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "\u0275\u0275templateRefExtractor")
 @js.native
 object ɵɵtemplateRefExtractor extends js.Object {
-  def apply(tNode: TNode, currentView: ɵangularPackagesCoreCoreBo): TemplateRef[_] | Null = js.native
+  def apply(tNode: TNode, currentView: ɵangularPackagesCoreCoreBp): TemplateRef[_] | Null = js.native
 }
 

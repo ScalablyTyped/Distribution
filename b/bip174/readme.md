@@ -11,8 +11,8 @@ Typings are for version 1.0.1
 | Full name          | bip174 |
 | Keywords           | - |
 | # releases         | 17 |
-| # dependents       | 1 |
-| # downloads        | 134199 |
+| # dependents       | 2 |
+| # downloads        | 163008 |
 | # stars            | 0 |
 
 ## Links

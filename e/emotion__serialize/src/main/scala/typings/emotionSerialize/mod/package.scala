@@ -20,7 +20,7 @@ package object mod {
   type CSSInterpolation = js.UndefOr[
     typings.emotionSerialize.mod._CSSInterpolation | scala.Null | scala.Boolean | scala.Double | java.lang.String | typings.emotionSerialize.mod.Keyframes | typings.emotionUtils.mod.SerializedStyles
   ]
-  type CSSProperties = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String]
+  type CSSProperties = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String, java.lang.String with js.Object]
   /* Rewritten from type alias, can be one of: 
     - scala.Null
     - js.UndefOr[scala.Nothing]

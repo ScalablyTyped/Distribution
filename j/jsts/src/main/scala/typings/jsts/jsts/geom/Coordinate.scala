@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Coordinate extends js.Object {
   /**
     * Gets or sets the x value.
     */
-  var x: Double
+  var x: Double = js.native
   /**
     * Gets or sets the y value.
     */
-  var y: Double
+  var y: Double = js.native
   /**
     * Gets or sets the z value.
     */
-  var z: Double
+  var z: Double = js.native
   /**
     * Compares this {@link Coordinate} with the specified {@link Coordinate} for
     * order. This method ignores the z value when making the comparison. Returns:
@@ -34,7 +35,7 @@ trait Coordinate extends js.Object {
     *          <code>Coordinate</code> is being compared.
     * @return {number} -1, zero, or 1 as explained above.
     */
-  def compareTo(other: Coordinate): Double
+  def compareTo(other: Coordinate): Double = js.native
   /**
     * Computes the 2-dimensional Euclidean distance to another location. The
     * Z-ordinate is ignored.
@@ -44,7 +45,7 @@ trait Coordinate extends js.Object {
     * @return {number} the 2-dimensional Euclidean distance between the
     *         locations.
     */
-  def distance(p: Coordinate): Double
+  def distance(p: Coordinate): Double = js.native
   /**
     * Returns <code>true</code> if <code>other</code> has the same values for
     * the x and y ordinates. Since Coordinates are 2.5D, this routine ignores the
@@ -56,7 +57,7 @@ trait Coordinate extends js.Object {
     *         <code>Coordinate</code> with the same values for the x and y
     *         ordinates.
     */
-  def equals(other: Coordinate): Boolean
+  def equals(other: Coordinate): Boolean = js.native
   /**
     * Returns whether the planar projections of the two <code>Coordinate</code>s
     * are equal.
@@ -67,7 +68,7 @@ trait Coordinate extends js.Object {
     * @return {boolean} <code>true</code> if the x- and y-coordinates are
     *         equal; the z-coordinates do not have to be equal.
     */
-  def equals2D(other: Coordinate): Boolean
+  def equals2D(other: Coordinate): Boolean = js.native
   /**
     * Sets this <code>Coordinate</code>s (x,y,z) values to that of
     * <code>other</code>.
@@ -75,7 +76,7 @@ trait Coordinate extends js.Object {
     * @param {Coordinate}
     *          other the <code>Coordinate</code> to copy.
     */
-  def setCoordinate(other: Coordinate): Unit
+  def setCoordinate(other: Coordinate): Unit = js.native
 }
 
 object Coordinate {
@@ -93,5 +94,34 @@ object Coordinate {
     val __obj = js.Dynamic.literal(compareTo = js.Any.fromFunction1(compareTo), distance = js.Any.fromFunction1(distance), equals = js.Any.fromFunction1(equals), equals2D = js.Any.fromFunction1(equals2D), setCoordinate = js.Any.fromFunction1(setCoordinate), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coordinate]
   }
+  @scala.inline
+  implicit class CoordinateOps[Self <: Coordinate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompareTo(value: Coordinate => Double): Self = this.set("compareTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDistance(value: Coordinate => Double): Self = this.set("distance", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEquals(value: Coordinate => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEquals2D(value: Coordinate => Boolean): Self = this.set("equals2D", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetCoordinate(value: Coordinate => Unit): Self = this.set("setCoordinate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+  }
+  
 }
 

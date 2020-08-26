@@ -17,10 +17,26 @@ trait SchemaHeldDriveQuery extends js.Object {
 
 object SchemaHeldDriveQuery {
   @scala.inline
-  def apply(includeTeamDriveFiles: js.UndefOr[Boolean] = js.undefined): SchemaHeldDriveQuery = {
+  def apply(): SchemaHeldDriveQuery = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeTeamDriveFiles)) __obj.updateDynamic("includeTeamDriveFiles")(includeTeamDriveFiles.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHeldDriveQuery]
   }
+  @scala.inline
+  implicit class SchemaHeldDriveQueryOps[Self <: SchemaHeldDriveQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncludeTeamDriveFiles(value: Boolean): Self = this.set("includeTeamDriveFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeTeamDriveFiles: Self = this.set("includeTeamDriveFiles", js.undefined)
+  }
+  
 }
 

@@ -47,6 +47,7 @@ class ObservableQuery[TData, TVariables] protected () extends Observable[ApolloQ
   def result(): js.Promise[ApolloQueryResult[TData]] = js.native
   def setOptions(opts: WatchQueryOptions[OperationVariables]): js.Promise[ApolloQueryResult[TData] | Unit] = js.native
   def setVariables(variables: TVariables): js.Promise[ApolloQueryResult[TData] | Unit] = js.native
+  def setVariables(variables: TVariables, tryFetch: js.UndefOr[scala.Nothing], fetchResults: Boolean): js.Promise[ApolloQueryResult[TData] | Unit] = js.native
   def setVariables(variables: TVariables, tryFetch: Boolean): js.Promise[ApolloQueryResult[TData] | Unit] = js.native
   def setVariables(variables: TVariables, tryFetch: Boolean, fetchResults: Boolean): js.Promise[ApolloQueryResult[TData] | Unit] = js.native
   def startPolling(pollInterval: Double): Unit = js.native

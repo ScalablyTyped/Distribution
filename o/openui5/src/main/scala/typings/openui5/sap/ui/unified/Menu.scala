@@ -128,6 +128,15 @@ trait Menu extends Control {
     */
   def insertItem(oItem: MenuItemBase, iIndex: Double): Menu = js.native
   def open(bWithKeyboard: Boolean, oOpenerRef: js.Any, sMy: js.Any, sAt: js.Any, oOf: js.Any): Unit = js.native
+  def open(
+    bWithKeyboard: Boolean,
+    oOpenerRef: js.Any,
+    sMy: js.Any,
+    sAt: js.Any,
+    oOf: js.Any,
+    sOffset: js.UndefOr[scala.Nothing],
+    sCollision: js.Any
+  ): Unit = js.native
   def open(bWithKeyboard: Boolean, oOpenerRef: js.Any, sMy: js.Any, sAt: js.Any, oOf: js.Any, sOffset: String): Unit = js.native
   def open(
     bWithKeyboard: Boolean,
@@ -139,6 +148,15 @@ trait Menu extends Control {
     sCollision: js.Any
   ): Unit = js.native
   def open(bWithKeyboard: Boolean, oOpenerRef: js.Any, sMy: js.Any, sAt: js.Any, oOf: Element): Unit = js.native
+  def open(
+    bWithKeyboard: Boolean,
+    oOpenerRef: js.Any,
+    sMy: js.Any,
+    sAt: js.Any,
+    oOf: Element,
+    sOffset: js.UndefOr[scala.Nothing],
+    sCollision: js.Any
+  ): Unit = js.native
   def open(
     bWithKeyboard: Boolean,
     oOpenerRef: js.Any,
@@ -157,6 +175,15 @@ trait Menu extends Control {
     sCollision: js.Any
   ): Unit = js.native
   def open(bWithKeyboard: Boolean, oOpenerRef: Element, sMy: js.Any, sAt: js.Any, oOf: js.Any): Unit = js.native
+  def open(
+    bWithKeyboard: Boolean,
+    oOpenerRef: Element,
+    sMy: js.Any,
+    sAt: js.Any,
+    oOf: js.Any,
+    sOffset: js.UndefOr[scala.Nothing],
+    sCollision: js.Any
+  ): Unit = js.native
   def open(
     bWithKeyboard: Boolean,
     oOpenerRef: Element,
@@ -190,6 +217,15 @@ trait Menu extends Control {
     * overflows the window in some direction
     */
   def open(bWithKeyboard: Boolean, oOpenerRef: Element, sMy: js.Any, sAt: js.Any, oOf: Element): Unit = js.native
+  def open(
+    bWithKeyboard: Boolean,
+    oOpenerRef: Element,
+    sMy: js.Any,
+    sAt: js.Any,
+    oOf: Element,
+    sOffset: js.UndefOr[scala.Nothing],
+    sCollision: js.Any
+  ): Unit = js.native
   def open(
     bWithKeyboard: Boolean,
     oOpenerRef: Element,

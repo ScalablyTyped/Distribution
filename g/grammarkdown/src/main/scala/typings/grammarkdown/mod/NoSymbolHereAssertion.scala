@@ -25,8 +25,35 @@ class NoSymbolHereAssertion protected ()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
+    symbols: js.UndefOr[scala.Nothing],
+    hereKeyword: typings.grammarkdown.nodesMod.Token[HereKeyword]
+  ) = this()
+  def this(
+    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
+    noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
     symbols: js.Array[PrimarySymbol],
     hereKeyword: typings.grammarkdown.nodesMod.Token[HereKeyword]
+  ) = this()
+  def this(
+    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
+    noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
+    symbols: js.UndefOr[scala.Nothing],
+    hereKeyword: js.UndefOr[scala.Nothing],
+    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
+  ) = this()
+  def this(
+    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
+    noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
+    symbols: js.UndefOr[scala.Nothing],
+    hereKeyword: typings.grammarkdown.nodesMod.Token[HereKeyword],
+    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
+  ) = this()
+  def this(
+    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
+    noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
+    symbols: js.Array[PrimarySymbol],
+    hereKeyword: js.UndefOr[scala.Nothing],
+    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],

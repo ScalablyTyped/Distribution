@@ -11,8 +11,8 @@ Get a random temporary file path
 | Full name          | tempfile |
 | Keywords           | temp, temporary, tempfile, file, path, random, uuid |
 | # releases         | 2 |
-| # dependents       | 156 |
-| # downloads        | 60116820 |
+| # dependents       | 159 |
+| # downloads        | 60531991 |
 | # stars            | 4 |
 
 ## Links

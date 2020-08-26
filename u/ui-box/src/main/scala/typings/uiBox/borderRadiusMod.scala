@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/enhancers/border-radius", JSImport.Namespace)
+@JSImport("ui-box/dist/src/enhancers/border-radius", JSImport.Namespace)
 @js.native
 object borderRadiusMod extends js.Object {
   val propEnhancers: PropEnhancers = js.native

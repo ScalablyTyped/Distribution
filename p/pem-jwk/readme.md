@@ -11,8 +11,8 @@ convert between PEM and JWK formats
 | Full name          | pem-jwk |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 42 |
-| # downloads        | 1208400 |
+| # dependents       | 46 |
+| # downloads        | 1319779 |
 | # stars            | 0 |
 
 ## Links

@@ -5,39 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FeathersAuthClientConfig extends js.Object {
-  var cookie: js.UndefOr[String] = js.undefined
-  var entity: js.UndefOr[String] = js.undefined
-  var header: js.UndefOr[String] = js.undefined
-  var jwtStrategy: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var service: js.UndefOr[String] = js.undefined
-  var storage: js.UndefOr[Storage] = js.undefined
-  var storageKey: js.UndefOr[String] = js.undefined
+  var cookie: js.UndefOr[String] = js.native
+  var entity: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.native
+  var jwtStrategy: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.native
+  var storage: js.UndefOr[Storage] = js.native
+  var storageKey: js.UndefOr[String] = js.native
 }
 
 object FeathersAuthClientConfig {
   @scala.inline
-  def apply(
-    cookie: String = null,
-    entity: String = null,
-    header: String = null,
-    jwtStrategy: String = null,
-    path: String = null,
-    service: String = null,
-    storage: Storage = null,
-    storageKey: String = null
-  ): FeathersAuthClientConfig = {
+  def apply(): FeathersAuthClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
-    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (jwtStrategy != null) __obj.updateDynamic("jwtStrategy")(jwtStrategy.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeathersAuthClientConfig]
   }
+  @scala.inline
+  implicit class FeathersAuthClientConfigOps[Self <: FeathersAuthClientConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCookie(value: String): Self = this.set("cookie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookie: Self = this.set("cookie", js.undefined)
+    @scala.inline
+    def setEntity(value: String): Self = this.set("entity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntity: Self = this.set("entity", js.undefined)
+    @scala.inline
+    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setJwtStrategy(value: String): Self = this.set("jwtStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwtStrategy: Self = this.set("jwtStrategy", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+    @scala.inline
+    def setStorage(value: Storage): Self = this.set("storage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorage: Self = this.set("storage", js.undefined)
+    @scala.inline
+    def setStorageKey(value: String): Self = this.set("storageKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageKey: Self = this.set("storageKey", js.undefined)
+  }
+  
 }
 

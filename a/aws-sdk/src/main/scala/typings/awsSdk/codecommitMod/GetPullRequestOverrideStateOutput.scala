@@ -18,11 +18,30 @@ trait GetPullRequestOverrideStateOutput extends js.Object {
 
 object GetPullRequestOverrideStateOutput {
   @scala.inline
-  def apply(overridden: js.UndefOr[Overridden] = js.undefined, overrider: Arn = null): GetPullRequestOverrideStateOutput = {
+  def apply(): GetPullRequestOverrideStateOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overridden)) __obj.updateDynamic("overridden")(overridden.get.asInstanceOf[js.Any])
-    if (overrider != null) __obj.updateDynamic("overrider")(overrider.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPullRequestOverrideStateOutput]
   }
+  @scala.inline
+  implicit class GetPullRequestOverrideStateOutputOps[Self <: GetPullRequestOverrideStateOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOverridden(value: Overridden): Self = this.set("overridden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverridden: Self = this.set("overridden", js.undefined)
+    @scala.inline
+    def setOverrider(value: Arn): Self = this.set("overrider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrider: Self = this.set("overrider", js.undefined)
+  }
+  
 }
 

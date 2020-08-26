@@ -38,7 +38,7 @@ trait ContentChildrenDecorator
     *
     * * **selector** - The directive type or the name used for querying.
     * * **descendants** - True to include all descendants, otherwise include only direct children.
-    * * **read** - True to read a different token from the queried elements.
+    * * **read** - Used to read a different token from the queried elements.
     *
     * @usageNotes
     *

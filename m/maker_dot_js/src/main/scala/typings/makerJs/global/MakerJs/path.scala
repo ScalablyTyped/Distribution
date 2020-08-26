@@ -47,6 +47,7 @@ object path extends js.Object {
     * @param useOriginB Optional flag to converge the origin point of lineB instead of the end point.
     */
   def converge(lineA: IPathLine, lineB: IPathLine): IPoint = js.native
+  def converge(lineA: IPathLine, lineB: IPathLine, useOriginA: js.UndefOr[scala.Nothing], useOriginB: Boolean): IPoint = js.native
   def converge(lineA: IPathLine, lineB: IPathLine, useOriginA: Boolean): IPoint = js.native
   def converge(lineA: IPathLine, lineB: IPathLine, useOriginA: Boolean, useOriginB: Boolean): IPoint = js.native
   /**
@@ -161,7 +162,11 @@ object path extends js.Object {
     * @returns Model of straight lines with same endpoints as the arc.
     */
   def straighten(arc: IPathArc): IModel = js.native
+  def straighten(arc: IPathArc, bevel: js.UndefOr[scala.Nothing], prefix: js.UndefOr[scala.Nothing], close: Boolean): IModel = js.native
+  def straighten(arc: IPathArc, bevel: js.UndefOr[scala.Nothing], prefix: String): IModel = js.native
+  def straighten(arc: IPathArc, bevel: js.UndefOr[scala.Nothing], prefix: String, close: Boolean): IModel = js.native
   def straighten(arc: IPathArc, bevel: Boolean): IModel = js.native
+  def straighten(arc: IPathArc, bevel: Boolean, prefix: js.UndefOr[scala.Nothing], close: Boolean): IModel = js.native
   def straighten(arc: IPathArc, bevel: Boolean, prefix: String): IModel = js.native
   def straighten(arc: IPathArc, bevel: Boolean, prefix: String, close: Boolean): IModel = js.native
   /**

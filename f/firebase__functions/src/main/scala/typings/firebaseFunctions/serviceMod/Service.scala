@@ -34,8 +34,6 @@ class Service protected ()
   ) = this()
   @JSName("INTERNAL")
   var INTERNAL_Service: Delete = js.native
-  /* CompleteClass */
-  override var app: typings.firebaseAppTypes.mod.FirebaseApp = js.native
   var app_ : js.Any = js.native
   /**
     * Calls a callable function asynchronously and returns the result.

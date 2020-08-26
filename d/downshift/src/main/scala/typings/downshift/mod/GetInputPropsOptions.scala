@@ -7,19 +7,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetInputPropsOptions
   extends AllHTMLAttributes[HTMLInputElement]
      with ClassAttributes[HTMLInputElement]
 
 object GetInputPropsOptions {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLInputElement] = null,
-    ClassAttributes: ClassAttributes[HTMLInputElement] = null
-  ): GetInputPropsOptions = {
+  def apply(): GetInputPropsOptions = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[GetInputPropsOptions]
   }
 }

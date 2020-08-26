@@ -14,55 +14,80 @@ import scala.scalajs.js.annotation._
 /**
   * log-process-errors constructor options.
   */
+@js.native
 trait Options extends js.Object {
   /**
     * Whether or not to colorize messages.
     *
     * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#colors
     */
-  var colors: js.UndefOr[Boolean] = js.undefined
+  var colors: js.UndefOr[Boolean] = js.native
   /**
     * Which process should trigger `process.exit(1)`
     *
     * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#exiton
     */
-  var exitOn: js.UndefOr[js.Array[ExceptionType]] = js.undefined
+  var exitOn: js.UndefOr[js.Array[ExceptionType]] = js.native
   /**
     * Which log level to use for different exceptions.
     *
     * https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#log
     */
-  var level: js.UndefOr[PartialRecordExceptionTyp] = js.undefined
+  var level: js.UndefOr[PartialRecordExceptionTyp] = js.native
   /**
     * Override logger
     *
     * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#log
     */
-  var log: js.UndefOr[js.Function2[/* error */ Error, /* level */ LogLevel, js.Promise[Unit] | Unit]] = js.undefined
+  var log: js.UndefOr[js.Function2[/* error */ Error, /* level */ LogLevel, js.Promise[Unit] | Unit]] = js.native
   /**
     * When running tests, makes them fail if there are any process errors.
     *
     * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#testing
     */
-  var testing: js.UndefOr[ava | mocha | jasmine | tape | `node-tap`] = js.undefined
+  var testing: js.UndefOr[ava | mocha | jasmine | tape | `node-tap`] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    colors: js.UndefOr[Boolean] = js.undefined,
-    exitOn: js.Array[ExceptionType] = null,
-    level: PartialRecordExceptionTyp = null,
-    log: (/* error */ Error, /* level */ LogLevel) => js.Promise[Unit] | Unit = null,
-    testing: ava | mocha | jasmine | tape | `node-tap` = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
-    if (exitOn != null) __obj.updateDynamic("exitOn")(exitOn.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
-    if (testing != null) __obj.updateDynamic("testing")(testing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColors(value: Boolean): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setExitOnVarargs(value: ExceptionType*): Self = this.set("exitOn", js.Array(value :_*))
+    @scala.inline
+    def setExitOn(value: js.Array[ExceptionType]): Self = this.set("exitOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitOn: Self = this.set("exitOn", js.undefined)
+    @scala.inline
+    def setLevel(value: PartialRecordExceptionTyp): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setLog(value: (/* error */ Error, /* level */ LogLevel) => js.Promise[Unit] | Unit): Self = this.set("log", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLog: Self = this.set("log", js.undefined)
+    @scala.inline
+    def setTesting(value: ava | mocha | jasmine | tape | `node-tap`): Self = this.set("testing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTesting: Self = this.set("testing", js.undefined)
+  }
+  
 }
 

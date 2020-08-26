@@ -128,72 +128,140 @@ trait ParamsResourcePlacementsList extends StandardParameters {
 
 object ParamsResourcePlacementsList {
   @scala.inline
-  def apply(
-    advertiserIds: js.Array[String] = null,
-    alt: String = null,
-    archived: js.UndefOr[Boolean] = js.undefined,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    campaignIds: js.Array[String] = null,
-    compatibilities: js.Array[String] = null,
-    contentCategoryIds: js.Array[String] = null,
-    directorySiteIds: js.Array[String] = null,
-    fields: String = null,
-    groupIds: js.Array[String] = null,
-    ids: js.Array[String] = null,
-    key: String = null,
-    maxEndDate: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    maxStartDate: String = null,
-    minEndDate: String = null,
-    minStartDate: String = null,
-    oauth_token: String = null,
-    pageToken: String = null,
-    paymentSource: String = null,
-    placementStrategyIds: js.Array[String] = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    pricingTypes: js.Array[String] = null,
-    profileId: String = null,
-    quotaUser: String = null,
-    searchString: String = null,
-    siteIds: js.Array[String] = null,
-    sizeIds: js.Array[String] = null,
-    sortField: String = null,
-    sortOrder: String = null,
-    userIp: String = null
-  ): ParamsResourcePlacementsList = {
+  def apply(): ParamsResourcePlacementsList = {
     val __obj = js.Dynamic.literal()
-    if (advertiserIds != null) __obj.updateDynamic("advertiserIds")(advertiserIds.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (campaignIds != null) __obj.updateDynamic("campaignIds")(campaignIds.asInstanceOf[js.Any])
-    if (compatibilities != null) __obj.updateDynamic("compatibilities")(compatibilities.asInstanceOf[js.Any])
-    if (contentCategoryIds != null) __obj.updateDynamic("contentCategoryIds")(contentCategoryIds.asInstanceOf[js.Any])
-    if (directorySiteIds != null) __obj.updateDynamic("directorySiteIds")(directorySiteIds.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (groupIds != null) __obj.updateDynamic("groupIds")(groupIds.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxEndDate != null) __obj.updateDynamic("maxEndDate")(maxEndDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (maxStartDate != null) __obj.updateDynamic("maxStartDate")(maxStartDate.asInstanceOf[js.Any])
-    if (minEndDate != null) __obj.updateDynamic("minEndDate")(minEndDate.asInstanceOf[js.Any])
-    if (minStartDate != null) __obj.updateDynamic("minStartDate")(minStartDate.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (paymentSource != null) __obj.updateDynamic("paymentSource")(paymentSource.asInstanceOf[js.Any])
-    if (placementStrategyIds != null) __obj.updateDynamic("placementStrategyIds")(placementStrategyIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (pricingTypes != null) __obj.updateDynamic("pricingTypes")(pricingTypes.asInstanceOf[js.Any])
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (searchString != null) __obj.updateDynamic("searchString")(searchString.asInstanceOf[js.Any])
-    if (siteIds != null) __obj.updateDynamic("siteIds")(siteIds.asInstanceOf[js.Any])
-    if (sizeIds != null) __obj.updateDynamic("sizeIds")(sizeIds.asInstanceOf[js.Any])
-    if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourcePlacementsList]
   }
+  @scala.inline
+  implicit class ParamsResourcePlacementsListOps[Self <: ParamsResourcePlacementsList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertiserIdsVarargs(value: String*): Self = this.set("advertiserIds", js.Array(value :_*))
+    @scala.inline
+    def setAdvertiserIds(value: js.Array[String]): Self = this.set("advertiserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIds: Self = this.set("advertiserIds", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCampaignIdsVarargs(value: String*): Self = this.set("campaignIds", js.Array(value :_*))
+    @scala.inline
+    def setCampaignIds(value: js.Array[String]): Self = this.set("campaignIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignIds: Self = this.set("campaignIds", js.undefined)
+    @scala.inline
+    def setCompatibilitiesVarargs(value: String*): Self = this.set("compatibilities", js.Array(value :_*))
+    @scala.inline
+    def setCompatibilities(value: js.Array[String]): Self = this.set("compatibilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibilities: Self = this.set("compatibilities", js.undefined)
+    @scala.inline
+    def setContentCategoryIdsVarargs(value: String*): Self = this.set("contentCategoryIds", js.Array(value :_*))
+    @scala.inline
+    def setContentCategoryIds(value: js.Array[String]): Self = this.set("contentCategoryIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentCategoryIds: Self = this.set("contentCategoryIds", js.undefined)
+    @scala.inline
+    def setDirectorySiteIdsVarargs(value: String*): Self = this.set("directorySiteIds", js.Array(value :_*))
+    @scala.inline
+    def setDirectorySiteIds(value: js.Array[String]): Self = this.set("directorySiteIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteIds: Self = this.set("directorySiteIds", js.undefined)
+    @scala.inline
+    def setGroupIdsVarargs(value: String*): Self = this.set("groupIds", js.Array(value :_*))
+    @scala.inline
+    def setGroupIds(value: js.Array[String]): Self = this.set("groupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupIds: Self = this.set("groupIds", js.undefined)
+    @scala.inline
+    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    @scala.inline
+    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+    @scala.inline
+    def setMaxEndDate(value: String): Self = this.set("maxEndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxEndDate: Self = this.set("maxEndDate", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setMaxStartDate(value: String): Self = this.set("maxStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxStartDate: Self = this.set("maxStartDate", js.undefined)
+    @scala.inline
+    def setMinEndDate(value: String): Self = this.set("minEndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinEndDate: Self = this.set("minEndDate", js.undefined)
+    @scala.inline
+    def setMinStartDate(value: String): Self = this.set("minStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinStartDate: Self = this.set("minStartDate", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPaymentSource(value: String): Self = this.set("paymentSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentSource: Self = this.set("paymentSource", js.undefined)
+    @scala.inline
+    def setPlacementStrategyIdsVarargs(value: String*): Self = this.set("placementStrategyIds", js.Array(value :_*))
+    @scala.inline
+    def setPlacementStrategyIds(value: js.Array[String]): Self = this.set("placementStrategyIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementStrategyIds: Self = this.set("placementStrategyIds", js.undefined)
+    @scala.inline
+    def setPricingTypesVarargs(value: String*): Self = this.set("pricingTypes", js.Array(value :_*))
+    @scala.inline
+    def setPricingTypes(value: js.Array[String]): Self = this.set("pricingTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingTypes: Self = this.set("pricingTypes", js.undefined)
+    @scala.inline
+    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    @scala.inline
+    def setSearchString(value: String): Self = this.set("searchString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchString: Self = this.set("searchString", js.undefined)
+    @scala.inline
+    def setSiteIdsVarargs(value: String*): Self = this.set("siteIds", js.Array(value :_*))
+    @scala.inline
+    def setSiteIds(value: js.Array[String]): Self = this.set("siteIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteIds: Self = this.set("siteIds", js.undefined)
+    @scala.inline
+    def setSizeIdsVarargs(value: String*): Self = this.set("sizeIds", js.Array(value :_*))
+    @scala.inline
+    def setSizeIds(value: js.Array[String]): Self = this.set("sizeIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeIds: Self = this.set("sizeIds", js.undefined)
+    @scala.inline
+    def setSortField(value: String): Self = this.set("sortField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortField: Self = this.set("sortField", js.undefined)
+    @scala.inline
+    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+  }
+  
 }
 

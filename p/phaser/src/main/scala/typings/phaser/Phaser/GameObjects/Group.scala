@@ -23,8 +23,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Group extends _ArcadeColliderType {
   /**
-    * Whether this group runs its {@link Phaser.GameObjects.Group#preUpdate} method
-    * (which may update any members).
+    * Whether this group runs its {@link Phaser.GameObjects.Group#preUpdate} method (which may update any members).
     */
   var active: Boolean = js.native
   /**
@@ -120,6 +119,7 @@ trait Group extends _ArcadeColliderType {
     * @param destroyChild Optionally call destroy on the removed Group members. Default false.
     */
   def clear(): this.type = js.native
+  def clear(removeFromScene: js.UndefOr[scala.Nothing], destroyChild: Boolean): this.type = js.native
   def clear(removeFromScene: Boolean): this.type = js.native
   def clear(removeFromScene: Boolean, destroyChild: Boolean): this.type = js.native
   /**
@@ -197,9 +197,149 @@ trait Group extends _ArcadeColliderType {
     * @param visible The {@link Phaser.GameObjects.Components.Visible#visible} state of a new Game Object (if one is created). Default true.
     */
   def get(): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    frame: js.UndefOr[scala.Nothing],
+    visible: Boolean
+  ): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    frame: String
+  ): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    frame: String,
+    visible: Boolean
+  ): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    frame: integer
+  ): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    frame: integer,
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], key: String): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    key: String,
+    frame: js.UndefOr[scala.Nothing],
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], key: String, frame: String): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    key: String,
+    frame: String,
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], key: String, frame: integer): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    key: String,
+    frame: integer,
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: Double): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    key: js.UndefOr[scala.Nothing],
+    frame: js.UndefOr[scala.Nothing],
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: Double, key: js.UndefOr[scala.Nothing], frame: String): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    key: js.UndefOr[scala.Nothing],
+    frame: String,
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: Double, key: js.UndefOr[scala.Nothing], frame: integer): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    key: js.UndefOr[scala.Nothing],
+    frame: integer,
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: Double, key: String): js.Any = js.native
+  def get(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    key: String,
+    frame: js.UndefOr[scala.Nothing],
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: Double, key: String, frame: String): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: Double, key: String, frame: String, visible: Boolean): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: Double, key: String, frame: integer): js.Any = js.native
+  def get(x: js.UndefOr[scala.Nothing], y: Double, key: String, frame: integer, visible: Boolean): js.Any = js.native
   def get(x: Double): js.Any = js.native
+  def get(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    frame: js.UndefOr[scala.Nothing],
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: Double, y: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], frame: String): js.Any = js.native
+  def get(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    frame: String,
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: Double, y: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], frame: integer): js.Any = js.native
+  def get(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    frame: integer,
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: Double, y: js.UndefOr[scala.Nothing], key: String): js.Any = js.native
+  def get(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    key: String,
+    frame: js.UndefOr[scala.Nothing],
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: Double, y: js.UndefOr[scala.Nothing], key: String, frame: String): js.Any = js.native
+  def get(x: Double, y: js.UndefOr[scala.Nothing], key: String, frame: String, visible: Boolean): js.Any = js.native
+  def get(x: Double, y: js.UndefOr[scala.Nothing], key: String, frame: integer): js.Any = js.native
+  def get(x: Double, y: js.UndefOr[scala.Nothing], key: String, frame: integer, visible: Boolean): js.Any = js.native
   def get(x: Double, y: Double): js.Any = js.native
+  def get(
+    x: Double,
+    y: Double,
+    key: js.UndefOr[scala.Nothing],
+    frame: js.UndefOr[scala.Nothing],
+    visible: Boolean
+  ): js.Any = js.native
+  def get(x: Double, y: Double, key: js.UndefOr[scala.Nothing], frame: String): js.Any = js.native
+  def get(x: Double, y: Double, key: js.UndefOr[scala.Nothing], frame: String, visible: Boolean): js.Any = js.native
+  def get(x: Double, y: Double, key: js.UndefOr[scala.Nothing], frame: integer): js.Any = js.native
+  def get(x: Double, y: Double, key: js.UndefOr[scala.Nothing], frame: integer, visible: Boolean): js.Any = js.native
   def get(x: Double, y: Double, key: String): js.Any = js.native
+  def get(x: Double, y: Double, key: String, frame: js.UndefOr[scala.Nothing], visible: Boolean): js.Any = js.native
   def get(x: Double, y: Double, key: String, frame: String): js.Any = js.native
   def get(x: Double, y: Double, key: String, frame: String, visible: Boolean): js.Any = js.native
   def get(x: Double, y: Double, key: String, frame: integer): js.Any = js.native
@@ -376,7 +516,11 @@ trait Group extends _ArcadeColliderType {
     * @param stepY This is added to the `y` amount, multiplied by the iteration counter. Default 0.
     */
   def incXY(x: Double): this.type = js.native
+  def incXY(x: Double, y: js.UndefOr[scala.Nothing], stepX: js.UndefOr[scala.Nothing], stepY: Double): this.type = js.native
+  def incXY(x: Double, y: js.UndefOr[scala.Nothing], stepX: Double): this.type = js.native
+  def incXY(x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): this.type = js.native
   def incXY(x: Double, y: Double): this.type = js.native
+  def incXY(x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): this.type = js.native
   def incXY(x: Double, y: Double, stepX: Double): this.type = js.native
   def incXY(x: Double, y: Double, stepX: Double, stepY: Double): this.type = js.native
   /**
@@ -422,7 +566,17 @@ trait Group extends _ArcadeColliderType {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def propertyValueInc(key: String, value: Double): this.type = js.native
+  def propertyValueInc(
+    key: String,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): this.type = js.native
+  def propertyValueInc(key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer): this.type = js.native
+  def propertyValueInc(key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): this.type = js.native
   def propertyValueInc(key: String, value: Double, step: Double): this.type = js.native
+  def propertyValueInc(key: String, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): this.type = js.native
   def propertyValueInc(key: String, value: Double, step: Double, index: integer): this.type = js.native
   def propertyValueInc(key: String, value: Double, step: Double, index: integer, direction: integer): this.type = js.native
   /**
@@ -434,7 +588,17 @@ trait Group extends _ArcadeColliderType {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def propertyValueSet(key: String, value: Double): this.type = js.native
+  def propertyValueSet(
+    key: String,
+    value: Double,
+    step: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    direction: integer
+  ): this.type = js.native
+  def propertyValueSet(key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer): this.type = js.native
+  def propertyValueSet(key: String, value: Double, step: js.UndefOr[scala.Nothing], index: integer, direction: integer): this.type = js.native
   def propertyValueSet(key: String, value: Double, step: Double): this.type = js.native
+  def propertyValueSet(key: String, value: Double, step: Double, index: js.UndefOr[scala.Nothing], direction: integer): this.type = js.native
   def propertyValueSet(key: String, value: Double, step: Double, index: integer): this.type = js.native
   def propertyValueSet(key: String, value: Double, step: Double, index: integer, direction: integer): this.type = js.native
   /**
@@ -446,6 +610,7 @@ trait Group extends _ArcadeColliderType {
     * @param destroyChild Optionally call destroy on the removed Group member. Default false.
     */
   def remove(child: GameObject): this.type = js.native
+  def remove(child: GameObject, removeFromScene: js.UndefOr[scala.Nothing], destroyChild: Boolean): this.type = js.native
   def remove(child: GameObject, removeFromScene: Boolean): this.type = js.native
   def remove(child: GameObject, removeFromScene: Boolean, destroyChild: Boolean): this.type = js.native
   /**
@@ -487,7 +652,11 @@ trait Group extends _ArcadeColliderType {
     * @param stepY This is added to the `scaleY` amount, multiplied by the iteration counter. Default 0.
     */
   def scaleXY(scaleX: Double): this.type = js.native
+  def scaleXY(scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: js.UndefOr[scala.Nothing], stepY: Double): this.type = js.native
+  def scaleXY(scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double): this.type = js.native
+  def scaleXY(scaleX: Double, scaleY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): this.type = js.native
   def scaleXY(scaleX: Double, scaleY: Double): this.type = js.native
+  def scaleXY(scaleX: Double, scaleY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): this.type = js.native
   def scaleXY(scaleX: Double, scaleY: Double, stepX: Double): this.type = js.native
   def scaleXY(scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): this.type = js.native
   /**
@@ -497,6 +666,12 @@ trait Group extends _ArcadeColliderType {
     */
   def scaleY(value: Double): this.type = js.native
   def scaleY(value: Double, step: Double): this.type = js.native
+  /**
+    * Sets the `active` property of this Group.
+    * When active, this Group runs its `preUpdate` method.
+    * @param value True if this Group should be set as active, false if not.
+    */
+  def setActive(value: Boolean): this.type = js.native
   /**
     * Sets the alpha of each group member.
     * @param value The amount to set the alpha to.
@@ -523,6 +698,12 @@ trait Group extends _ArcadeColliderType {
     */
   def setHitArea(hitArea: js.Any, hitAreaCallback: HitAreaCallback): this.type = js.native
   /**
+    * Sets the `name` property of this Group.
+    * The `name` property is not populated by Phaser and is presented for your own use.
+    * @param value The name to be given to this Group.
+    */
+  def setName(value: String): this.type = js.native
+  /**
     * Sets the originX, originY of each group member.
     * @param originX The amount to set the `originX` property to.
     * @param originY The amount to set the `originY` property to. If `undefined` or `null` it uses the `originX` value.
@@ -530,7 +711,16 @@ trait Group extends _ArcadeColliderType {
     * @param stepY This is added to the `originY` amount, multiplied by the iteration counter. Default 0.
     */
   def setOrigin(originX: Double): this.type = js.native
+  def setOrigin(
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    stepX: js.UndefOr[scala.Nothing],
+    stepY: Double
+  ): this.type = js.native
+  def setOrigin(originX: Double, originY: js.UndefOr[scala.Nothing], stepX: Double): this.type = js.native
+  def setOrigin(originX: Double, originY: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): this.type = js.native
   def setOrigin(originX: Double, originY: Double): this.type = js.native
+  def setOrigin(originX: Double, originY: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): this.type = js.native
   def setOrigin(originX: Double, originY: Double, stepX: Double): this.type = js.native
   def setOrigin(originX: Double, originY: Double, stepX: Double, stepY: Double): this.type = js.native
   /**
@@ -541,7 +731,16 @@ trait Group extends _ArcadeColliderType {
     * @param bottomRight The tint to be applied to the bottom-right corner of item.
     */
   def setTint(topLeft: Double): this.type = js.native
+  def setTint(
+    topLeft: Double,
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: Double
+  ): this.type = js.native
+  def setTint(topLeft: Double, topRight: js.UndefOr[scala.Nothing], bottomLeft: Double): this.type = js.native
+  def setTint(topLeft: Double, topRight: js.UndefOr[scala.Nothing], bottomLeft: Double, bottomRight: Double): this.type = js.native
   def setTint(topLeft: Double, topRight: Double): this.type = js.native
+  def setTint(topLeft: Double, topRight: Double, bottomLeft: js.UndefOr[scala.Nothing], bottomRight: Double): this.type = js.native
   def setTint(topLeft: Double, topRight: Double, bottomLeft: Double): this.type = js.native
   def setTint(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
   /**
@@ -551,6 +750,7 @@ trait Group extends _ArcadeColliderType {
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
   def setVisible(value: Boolean): this.type = js.native
+  def setVisible(value: Boolean, index: js.UndefOr[scala.Nothing], direction: integer): this.type = js.native
   def setVisible(value: Boolean, index: integer): this.type = js.native
   def setVisible(value: Boolean, index: integer, direction: integer): this.type = js.native
   /**
@@ -568,7 +768,11 @@ trait Group extends _ArcadeColliderType {
     * @param stepY This is added to the `y` amount, multiplied by the iteration counter. Default 0.
     */
   def setXY(x: Double): this.type = js.native
+  def setXY(x: Double, y: js.UndefOr[scala.Nothing], stepX: js.UndefOr[scala.Nothing], stepY: Double): this.type = js.native
+  def setXY(x: Double, y: js.UndefOr[scala.Nothing], stepX: Double): this.type = js.native
+  def setXY(x: Double, y: js.UndefOr[scala.Nothing], stepX: Double, stepY: Double): this.type = js.native
   def setXY(x: Double, y: Double): this.type = js.native
+  def setXY(x: Double, y: Double, stepX: js.UndefOr[scala.Nothing], stepY: Double): this.type = js.native
   def setXY(x: Double, y: Double, stepX: Double): this.type = js.native
   def setXY(x: Double, y: Double, stepX: Double, stepY: Double): this.type = js.native
   /**

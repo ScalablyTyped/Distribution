@@ -22,10 +22,30 @@ trait ImportApiKeysRequest extends js.Object {
 
 object ImportApiKeysRequest {
   @scala.inline
-  def apply(body: _Blob, format: ApiKeysFormat, failOnWarnings: js.UndefOr[Boolean] = js.undefined): ImportApiKeysRequest = {
+  def apply(body: _Blob, format: ApiKeysFormat): ImportApiKeysRequest = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnWarnings)) __obj.updateDynamic("failOnWarnings")(failOnWarnings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportApiKeysRequest]
   }
+  @scala.inline
+  implicit class ImportApiKeysRequestOps[Self <: ImportApiKeysRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: _Blob): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: ApiKeysFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFailOnWarnings(value: Boolean): Self = this.set("failOnWarnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailOnWarnings: Self = this.set("failOnWarnings", js.undefined)
+  }
+  
 }
 

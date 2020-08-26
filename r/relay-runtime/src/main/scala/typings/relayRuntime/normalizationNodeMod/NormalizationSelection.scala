@@ -2,6 +2,7 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.relayRuntime.anon.FragmentName
+import typings.relayRuntime.relayRuntimeStrings.Defer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +10,13 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.relayRuntime.normalizationNodeMod.NormalizationCondition
   - typings.relayRuntime.normalizationNodeMod.NormalizationClientExtension
+  - typings.relayRuntime.normalizationNodeMod.NormalizationDefer
   - typings.relayRuntime.normalizationNodeMod.NormalizationField
   - typings.relayRuntime.normalizationNodeMod.NormalizationHandle
   - typings.relayRuntime.normalizationNodeMod.NormalizationInlineFragment
-  - typings.relayRuntime.normalizationNodeMod.NormalizationMatchField
+  - typings.relayRuntime.normalizationNodeMod.NormalizationModuleImport
+  - typings.relayRuntime.normalizationNodeMod.NormalizationStream
+  - typings.relayRuntime.normalizationNodeMod.NormalizationTypeDiscriminator
 */
 trait NormalizationSelection extends js.Object
 
@@ -33,15 +37,9 @@ object NormalizationSelection {
     kind: String,
     name: String,
     plural: Boolean,
-    selections: js.Array[NormalizationSelection],
-    alias: js.UndefOr[Null | String] = js.undefined,
-    concreteType: js.UndefOr[Null | String] = js.undefined,
-    storageKey: js.UndefOr[Null | String] = js.undefined
+    selections: js.Array[NormalizationSelection]
   ): NormalizationSelection = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
-    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(concreteType)) __obj.updateDynamic("concreteType")(concreteType.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageKey)) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationSelection]
   }
   @scala.inline
@@ -51,19 +49,13 @@ object NormalizationSelection {
     __obj.asInstanceOf[NormalizationSelection]
   }
   @scala.inline
-  def NormalizationLinkedHandle(
-    handle: String,
-    key: String,
-    kind: String,
-    name: String,
-    alias: js.UndefOr[Null | String] = js.undefined,
-    args: js.UndefOr[Null | js.Array[NormalizationArgument]] = js.undefined,
-    filters: js.UndefOr[Null | js.Array[String]] = js.undefined
-  ): NormalizationSelection = {
+  def NormalizationStream(kind: String, label: String, selections: js.Array[NormalizationSelection]): NormalizationSelection = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NormalizationSelection]
+  }
+  @scala.inline
+  def NormalizationLinkedHandle(handle: String, key: String, kind: String, name: String): NormalizationSelection = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(args)) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(filters)) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationSelection]
   }
   @scala.inline
@@ -72,17 +64,8 @@ object NormalizationSelection {
     __obj.asInstanceOf[NormalizationSelection]
   }
   @scala.inline
-  def NormalizationScalarField(
-    kind: String,
-    name: String,
-    alias: js.UndefOr[Null | String] = js.undefined,
-    args: js.UndefOr[Null | js.Array[NormalizationArgument]] = js.undefined,
-    storageKey: js.UndefOr[Null | String] = js.undefined
-  ): NormalizationSelection = {
+  def NormalizationScalarField(kind: String, name: String): NormalizationSelection = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(args)) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageKey)) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationSelection]
   }
   @scala.inline
@@ -90,29 +73,29 @@ object NormalizationSelection {
     args: js.Array[NormalizationArgument],
     kind: String,
     matchesByType: StringDictionary[FragmentName],
-    name: String,
-    alias: js.UndefOr[Null | String] = js.undefined,
-    storageKey: js.UndefOr[Null | String] = js.undefined
+    name: String
   ): NormalizationSelection = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], matchesByType = matchesByType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageKey)) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationSelection]
   }
   @scala.inline
-  def NormalizationScalarHandle(
-    handle: String,
-    key: String,
-    kind: String,
-    name: String,
-    alias: js.UndefOr[Null | String] = js.undefined,
-    args: js.UndefOr[Null | js.Array[NormalizationArgument]] = js.undefined,
-    filters: js.UndefOr[Null | js.Array[String]] = js.undefined
-  ): NormalizationSelection = {
+  def NormalizationModuleImport(documentName: String, fragmentName: String, fragmentPropName: String, kind: String): NormalizationSelection = {
+    val __obj = js.Dynamic.literal(documentName = documentName.asInstanceOf[js.Any], fragmentName = fragmentName.asInstanceOf[js.Any], fragmentPropName = fragmentPropName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NormalizationSelection]
+  }
+  @scala.inline
+  def NormalizationDefer(kind: Defer, label: String, selections: js.Array[NormalizationSelection]): NormalizationSelection = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NormalizationSelection]
+  }
+  @scala.inline
+  def NormalizationScalarHandle(handle: String, key: String, kind: String, name: String): NormalizationSelection = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(args)) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(filters)) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NormalizationSelection]
+  }
+  @scala.inline
+  def NormalizationTypeDiscriminator(abstractKey: String, kind: String): NormalizationSelection = {
+    val __obj = js.Dynamic.literal(abstractKey = abstractKey.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationSelection]
   }
 }

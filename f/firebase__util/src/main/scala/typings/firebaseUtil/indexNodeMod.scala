@@ -39,6 +39,7 @@ object indexNodeMod extends js.Object {
     extends typings.firebaseUtil.sha1Mod.Sha1
   
   val base64: Base64_ = js.native
+  def areCookiesEnabled(): Boolean = js.native
   def assert(assertion: js.Any, message: String): Unit = js.native
   def assertionError(message: String): Error = js.native
   def async(fn: js.Function): js.Function = js.native
@@ -59,6 +60,7 @@ object indexNodeMod extends js.Object {
   def isElectron(): Boolean = js.native
   def isEmpty(obj: js.Object): Boolean = js.native
   def isIE(): Boolean = js.native
+  def isIndexedDBAvailable(): Boolean = js.native
   def isMobileCordova(): Boolean = js.native
   def isNode(): Boolean = js.native
   def isNodeSdk(): Boolean = js.native
@@ -111,6 +113,7 @@ object indexNodeMod extends js.Object {
   def validateArgCount(fnName: String, minCount: Double, maxCount: Double, argCount: Double): Unit = js.native
   def validateCallback(fnName: String, argumentNumber: Double, callback: js.Function, optional: Boolean): Unit = js.native
   def validateContextObject(fnName: String, argumentNumber: Double, context: js.Any, optional: Boolean): Unit = js.native
+  def validateIndexedDBOpenable(): js.Promise[Boolean] = js.native
   def validateNamespace(fnName: String, argumentNumber: Double, namespace: String, optional: Boolean): Unit = js.native
   @js.native
   object CONSTANTS extends js.Object {

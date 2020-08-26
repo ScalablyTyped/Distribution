@@ -33,6 +33,7 @@ object cloudformation extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: StackArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: StackArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -64,10 +65,10 @@ object cloudformation extends js.Object {
     def this(name: String, args: StackSetInstanceArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getExport(args: GetExportArgs): js.Promise[GetExportResult] with GetExportResult = js.native
-  def getExport(args: GetExportArgs, opts: InvokeOptions): js.Promise[GetExportResult] with GetExportResult = js.native
-  def getStack(args: GetStackArgs): js.Promise[GetStackResult] with GetStackResult = js.native
-  def getStack(args: GetStackArgs, opts: InvokeOptions): js.Promise[GetStackResult] with GetStackResult = js.native
+  def getExport(args: GetExportArgs): js.Promise[GetExportResult] = js.native
+  def getExport(args: GetExportArgs, opts: InvokeOptions): js.Promise[GetExportResult] = js.native
+  def getStack(args: GetStackArgs): js.Promise[GetStackResult] = js.native
+  def getStack(args: GetStackArgs, opts: InvokeOptions): js.Promise[GetStackResult] = js.native
   /* static members */
   @js.native
   object Stack extends js.Object {
@@ -78,8 +79,10 @@ object cloudformation extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.stackMod.Stack = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.stackMod.Stack = js.native
     def get(name: String, id: Input[ID], state: StackState): typings.pulumiAws.stackMod.Stack = js.native
     def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): typings.pulumiAws.stackMod.Stack = js.native
     /**
@@ -99,8 +102,10 @@ object cloudformation extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.stackSetMod.StackSet = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.stackSetMod.StackSet = js.native
     def get(name: String, id: Input[ID], state: StackSetState): typings.pulumiAws.stackSetMod.StackSet = js.native
     def get(name: String, id: Input[ID], state: StackSetState, opts: CustomResourceOptions): typings.pulumiAws.stackSetMod.StackSet = js.native
     /**
@@ -120,8 +125,10 @@ object cloudformation extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.stackSetInstanceMod.StackSetInstance = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.stackSetInstanceMod.StackSetInstance = js.native
     def get(name: String, id: Input[ID], state: StackSetInstanceState): typings.pulumiAws.stackSetInstanceMod.StackSetInstance = js.native
     def get(name: String, id: Input[ID], state: StackSetInstanceState, opts: CustomResourceOptions): typings.pulumiAws.stackSetInstanceMod.StackSetInstance = js.native
     /**

@@ -5,48 +5,83 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Readonly<minimatch.minimatch.IOptions> */
+@js.native
 trait Options extends js.Object {
-  val debug: js.UndefOr[Boolean] = js.undefined
-  val dot: js.UndefOr[Boolean] = js.undefined
-  val flipNegate: js.UndefOr[Boolean] = js.undefined
-  val matchBase: js.UndefOr[Boolean] = js.undefined
-  val nobrace: js.UndefOr[Boolean] = js.undefined
-  val nocase: js.UndefOr[Boolean] = js.undefined
-  val nocomment: js.UndefOr[Boolean] = js.undefined
-  val noext: js.UndefOr[Boolean] = js.undefined
-  val noglobstar: js.UndefOr[Boolean] = js.undefined
-  val nonegate: js.UndefOr[Boolean] = js.undefined
-  val nonull: js.UndefOr[Boolean] = js.undefined
+  val debug: js.UndefOr[Boolean] = js.native
+  val dot: js.UndefOr[Boolean] = js.native
+  val flipNegate: js.UndefOr[Boolean] = js.native
+  val matchBase: js.UndefOr[Boolean] = js.native
+  val nobrace: js.UndefOr[Boolean] = js.native
+  val nocase: js.UndefOr[Boolean] = js.native
+  val nocomment: js.UndefOr[Boolean] = js.native
+  val noext: js.UndefOr[Boolean] = js.native
+  val noglobstar: js.UndefOr[Boolean] = js.native
+  val nonegate: js.UndefOr[Boolean] = js.native
+  val nonull: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    debug: js.UndefOr[Boolean] = js.undefined,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    flipNegate: js.UndefOr[Boolean] = js.undefined,
-    matchBase: js.UndefOr[Boolean] = js.undefined,
-    nobrace: js.UndefOr[Boolean] = js.undefined,
-    nocase: js.UndefOr[Boolean] = js.undefined,
-    nocomment: js.UndefOr[Boolean] = js.undefined,
-    noext: js.UndefOr[Boolean] = js.undefined,
-    noglobstar: js.UndefOr[Boolean] = js.undefined,
-    nonegate: js.UndefOr[Boolean] = js.undefined,
-    nonull: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipNegate)) __obj.updateDynamic("flipNegate")(flipNegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchBase)) __obj.updateDynamic("matchBase")(matchBase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nobrace)) __obj.updateDynamic("nobrace")(nobrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocomment)) __obj.updateDynamic("nocomment")(nocomment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noext)) __obj.updateDynamic("noext")(noext.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noglobstar)) __obj.updateDynamic("noglobstar")(noglobstar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonegate)) __obj.updateDynamic("nonegate")(nonegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonull)) __obj.updateDynamic("nonull")(nonull.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setDot(value: Boolean): Self = this.set("dot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDot: Self = this.set("dot", js.undefined)
+    @scala.inline
+    def setFlipNegate(value: Boolean): Self = this.set("flipNegate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlipNegate: Self = this.set("flipNegate", js.undefined)
+    @scala.inline
+    def setMatchBase(value: Boolean): Self = this.set("matchBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchBase: Self = this.set("matchBase", js.undefined)
+    @scala.inline
+    def setNobrace(value: Boolean): Self = this.set("nobrace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNobrace: Self = this.set("nobrace", js.undefined)
+    @scala.inline
+    def setNocase(value: Boolean): Self = this.set("nocase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNocase: Self = this.set("nocase", js.undefined)
+    @scala.inline
+    def setNocomment(value: Boolean): Self = this.set("nocomment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNocomment: Self = this.set("nocomment", js.undefined)
+    @scala.inline
+    def setNoext(value: Boolean): Self = this.set("noext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoext: Self = this.set("noext", js.undefined)
+    @scala.inline
+    def setNoglobstar(value: Boolean): Self = this.set("noglobstar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoglobstar: Self = this.set("noglobstar", js.undefined)
+    @scala.inline
+    def setNonegate(value: Boolean): Self = this.set("nonegate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonegate: Self = this.set("nonegate", js.undefined)
+    @scala.inline
+    def setNonull(value: Boolean): Self = this.set("nonull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonull: Self = this.set("nonull", js.undefined)
+  }
+  
 }
 

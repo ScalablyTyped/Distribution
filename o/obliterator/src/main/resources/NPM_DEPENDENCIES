@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "obliterator" : "1.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "obliterator" : "1.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

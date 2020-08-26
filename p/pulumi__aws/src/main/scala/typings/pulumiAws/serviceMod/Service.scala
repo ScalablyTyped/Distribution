@@ -27,7 +27,9 @@ class Service protected () extends CustomResource {
     * @param args The arguments to use to populate this resource's properties.
     * @param opts A bag of options that control this resource's behavior.
     */
+  def this(name: String) = this()
   def this(name: String, args: ServiceArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ServiceArgs, opts: CustomResourceOptions) = this()
   /**
     * The capacity provider strategy to use for the service. Can be one or more.  Defined below.
@@ -58,6 +60,10 @@ class Service protected () extends CustomResource {
     */
   val enableEcsManagedTags: Output_[js.UndefOr[Boolean]] = js.native
   /**
+    * Enable to force a new task deployment of the service. This can be used to update tasks to use a newer Docker image with same image/tag combination (e.g. `myimage:latest`), roll Fargate tasks onto a newer platform version, or immediately deploy `orderedPlacementStrategy` and `placementConstraints` updates.
+    */
+  val forceNewDeployment: Output_[js.UndefOr[Boolean]] = js.native
+  /**
     * Seconds to ignore failing load balancer health checks on newly instantiated tasks to prevent premature shutdown, up to 2147483647. Only valid for services configured to use load balancers.
     */
   val healthCheckGracePeriodSeconds: Output_[js.UndefOr[Double]] = js.native
@@ -82,12 +88,11 @@ class Service protected () extends CustomResource {
     */
   val networkConfiguration: Output_[js.UndefOr[ServiceNetworkConfiguration]] = js.native
   /**
-    * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `orderedPlacementStrategy` blocks is `5`. Defined below.
+    * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. Updates to this configuration will take effect next task deployment unless `forceNewDeployment` is enabled. The maximum number of `orderedPlacementStrategy` blocks is `5`. Defined below.
     */
   val orderedPlacementStrategies: Output_[js.UndefOr[js.Array[ServiceOrderedPlacementStrategy]]] = js.native
   /**
-    * rules that are taken into consideration during task placement. Maximum number of
-    * `placementConstraints` is `10`. Defined below.
+    * rules that are taken into consideration during task placement. Updates to this configuration will take effect next task deployment unless `forceNewDeployment` is enabled. Maximum number of `placementConstraints` is `10`. Defined below.
     */
   val placementConstraints: Output_[js.UndefOr[js.Array[ServicePlacementConstraint]]] = js.native
   /**
@@ -99,7 +104,7 @@ class Service protected () extends CustomResource {
     */
   val propagateTags: Output_[js.UndefOr[String]] = js.native
   /**
-    * The scheduling strategy to use for the service. The valid values are `REPLICA` and `DAEMON`. Defaults to `REPLICA`. Note that [*Fargate tasks do not support the `DAEMON` scheduling strategy*](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/scheduling_tasks.html).
+    * The scheduling strategy to use for the service. The valid values are `REPLICA` and `DAEMON`. Defaults to `REPLICA`. Note that [*Tasks using the Fargate launch type or the `CODE_DEPLOY` or `EXTERNAL` deployment controller types don't support the `DAEMON` scheduling strategy*](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html).
     */
   val schedulingStrategy: Output_[js.UndefOr[String]] = js.native
   /**
@@ -107,16 +112,13 @@ class Service protected () extends CustomResource {
     */
   val serviceRegistries: Output_[js.UndefOr[ServiceServiceRegistries]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
-    * The family and revision (`family:revision`) or full ARN of the task definition that you want to run in your service.
+    * The family and revision (`family:revision`) or full ARN of the task definition that you want to run in your service. Required unless using the `EXTERNAL` deployment controller. If a revision is not specified, the latest `ACTIVE` revision is used.
     */
-  val taskDefinition: Output_[String] = js.native
-  /**
-    * If `true`, this provider will wait for the service to reach a steady state (like [`aws ecs wait services-stable`](https://docs.aws.amazon.com/cli/latest/reference/ecs/wait/services-stable.html)) before continuing. Default `false`.
-    */
+  val taskDefinition: Output_[js.UndefOr[String]] = js.native
   val waitForSteadyState: Output_[js.UndefOr[Boolean]] = js.native
 }
 
@@ -131,8 +133,10 @@ object Service extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Service = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Service = js.native
   def get(name: String, id: Input[ID], state: ServiceState): Service = js.native
   def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = js.native
   /**

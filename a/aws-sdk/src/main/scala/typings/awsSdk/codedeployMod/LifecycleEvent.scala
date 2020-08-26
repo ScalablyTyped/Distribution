@@ -30,20 +30,42 @@ trait LifecycleEvent extends js.Object {
 
 object LifecycleEvent {
   @scala.inline
-  def apply(
-    diagnostics: Diagnostics = null,
-    endTime: Timestamp = null,
-    lifecycleEventName: LifecycleEventName = null,
-    startTime: Timestamp = null,
-    status: LifecycleEventStatus = null
-  ): LifecycleEvent = {
+  def apply(): LifecycleEvent = {
     val __obj = js.Dynamic.literal()
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (lifecycleEventName != null) __obj.updateDynamic("lifecycleEventName")(lifecycleEventName.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleEvent]
   }
+  @scala.inline
+  implicit class LifecycleEventOps[Self <: LifecycleEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiagnostics(value: Diagnostics): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setLifecycleEventName(value: LifecycleEventName): Self = this.set("lifecycleEventName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleEventName: Self = this.set("lifecycleEventName", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: LifecycleEventStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

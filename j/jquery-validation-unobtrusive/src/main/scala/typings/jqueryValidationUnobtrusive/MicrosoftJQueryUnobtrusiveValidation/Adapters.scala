@@ -22,6 +22,14 @@ trait Adapters extends Array[Adapter] {
     minRuleName: String,
     maxRuleName: String,
     minMaxRuleName: String,
+    minAttribute: js.UndefOr[scala.Nothing],
+    maxAttribute: String
+  ): Adapters = js.native
+  def addMinMax(
+    adapterName: String,
+    minRuleName: String,
+    maxRuleName: String,
+    minMaxRuleName: String,
     minAttribute: String
   ): Adapters = js.native
   def addMinMax(

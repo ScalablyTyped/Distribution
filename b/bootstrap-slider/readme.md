@@ -11,8 +11,8 @@ Slider view component for Twitter Bootstrap.
 | Full name          | bootstrap-slider |
 | Keywords           | slider, bootstrap, twitter, slide |
 | # releases         | 20 |
-| # dependents       | 46 |
-| # downloads        | 2636832 |
+| # dependents       | 47 |
+| # downloads        | 2667322 |
 | # stars            | 3 |
 
 ## Links

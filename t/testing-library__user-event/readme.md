@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__user-event
 
-Typings are for version 12.0.11
+Typings are for version 12.1.0
 
 ## Library description:
 Simulate user events for react-testing-library

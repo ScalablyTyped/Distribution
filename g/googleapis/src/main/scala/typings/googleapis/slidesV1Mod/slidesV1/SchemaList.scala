@@ -26,11 +26,30 @@ trait SchemaList extends js.Object {
 
 object SchemaList {
   @scala.inline
-  def apply(listId: String = null, nestingLevel: StringDictionary[SchemaNestingLevel] = null): SchemaList = {
+  def apply(): SchemaList = {
     val __obj = js.Dynamic.literal()
-    if (listId != null) __obj.updateDynamic("listId")(listId.asInstanceOf[js.Any])
-    if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaList]
   }
+  @scala.inline
+  implicit class SchemaListOps[Self <: SchemaList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListId(value: String): Self = this.set("listId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListId: Self = this.set("listId", js.undefined)
+    @scala.inline
+    def setNestingLevel(value: StringDictionary[SchemaNestingLevel]): Self = this.set("nestingLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNestingLevel: Self = this.set("nestingLevel", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ An opentracing implementation for zipkin
 | Keywords           | zipkin, opentracing, tracing, tracking, performance, benchmarking |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 101824 |
+| # downloads        | 104219 |
 | # stars            | 0 |
 
 ## Links

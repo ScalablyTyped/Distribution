@@ -23,16 +23,34 @@ trait GetSessionTokenRequest extends TemporaryCredentialsOptions {
 
 object GetSessionTokenRequest {
   @scala.inline
-  def apply(
-    DurationSeconds: js.UndefOr[durationSecondsType] = js.undefined,
-    SerialNumber: serialNumberType = null,
-    TokenCode: tokenCodeType = null
-  ): GetSessionTokenRequest = {
+  def apply(): GetSessionTokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
-    if (SerialNumber != null) __obj.updateDynamic("SerialNumber")(SerialNumber.asInstanceOf[js.Any])
-    if (TokenCode != null) __obj.updateDynamic("TokenCode")(TokenCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSessionTokenRequest]
   }
+  @scala.inline
+  implicit class GetSessionTokenRequestOps[Self <: GetSessionTokenRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDurationSeconds(value: durationSecondsType): Self = this.set("DurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationSeconds: Self = this.set("DurationSeconds", js.undefined)
+    @scala.inline
+    def setSerialNumber(value: serialNumberType): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialNumber: Self = this.set("SerialNumber", js.undefined)
+    @scala.inline
+    def setTokenCode(value: tokenCodeType): Self = this.set("TokenCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenCode: Self = this.set("TokenCode", js.undefined)
+  }
+  
 }
 

@@ -18,31 +18,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PopupProps extends js.Object {
-  var align: js.UndefOr[AlignType] = js.undefined
-  var animation: AnimationType
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
-  var getClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.undefined
-  var getRootDomNode: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
-  var mask: js.UndefOr[Boolean] = js.undefined
-  var maskAnimation: AnimationType
-  var maskMotion: MotionType
-  var maskTransitionName: TransitionNameType
-  var motion: MotionType
-  var onAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
-  var point: js.UndefOr[Point] = js.undefined
-  var prefixCls: String
-  var stretch: js.UndefOr[StretchType] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var transitionName: TransitionNameType
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var align: js.UndefOr[AlignType] = js.native
+  var animation: AnimationType = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var className: js.UndefOr[String] = js.native
+  var destroyPopupOnHide: js.UndefOr[Boolean] = js.native
+  var getClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.native
+  var getRootDomNode: js.UndefOr[js.Function0[HTMLElement]] = js.native
+  var mask: js.UndefOr[Boolean] = js.native
+  var maskAnimation: AnimationType = js.native
+  var maskMotion: MotionType = js.native
+  var maskTransitionName: TransitionNameType = js.native
+  var motion: MotionType = js.native
+  var onAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+  var point: js.UndefOr[Point] = js.native
+  var prefixCls: String = js.native
+  var stretch: js.UndefOr[StretchType] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var transitionName: TransitionNameType = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object PopupProps {
@@ -54,44 +55,105 @@ object PopupProps {
     maskTransitionName: TransitionNameType,
     motion: MotionType,
     prefixCls: String,
-    transitionName: TransitionNameType,
-    align: AlignType = null,
-    children: ReactNode = null,
-    className: String = null,
-    destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined,
-    getClassNameFromAlign: /* align */ AlignType => String = null,
-    getRootDomNode: () => HTMLElement = null,
-    mask: js.UndefOr[Boolean] = js.undefined,
-    onAlign: (/* element */ HTMLElement, /* align */ AlignType) => Unit = null,
-    onMouseDown: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
-    onTouchStart: TouchEvent[HTMLElement] => Unit = null,
-    point: Point = null,
-    stretch: StretchType = null,
-    style: CSSProperties = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
+    transitionName: TransitionNameType
   ): PopupProps = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], maskAnimation = maskAnimation.asInstanceOf[js.Any], maskMotion = maskMotion.asInstanceOf[js.Any], maskTransitionName = maskTransitionName.asInstanceOf[js.Any], motion = motion.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyPopupOnHide)) __obj.updateDynamic("destroyPopupOnHide")(destroyPopupOnHide.asInstanceOf[js.Any])
-    if (getClassNameFromAlign != null) __obj.updateDynamic("getClassNameFromAlign")(js.Any.fromFunction1(getClassNameFromAlign))
-    if (getRootDomNode != null) __obj.updateDynamic("getRootDomNode")(js.Any.fromFunction0(getRootDomNode))
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (onAlign != null) __obj.updateDynamic("onAlign")(js.Any.fromFunction2(onAlign))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (stretch != null) __obj.updateDynamic("stretch")(stretch.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupProps]
   }
+  @scala.inline
+  implicit class PopupPropsOps[Self <: PopupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: AnimationType): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaskAnimation(value: AnimationType): Self = this.set("maskAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaskMotion(value: MotionType): Self = this.set("maskMotion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaskTransitionName(value: TransitionNameType): Self = this.set("maskTransitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMotion(value: MotionType): Self = this.set("motion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransitionName(value: TransitionNameType): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlign(value: AlignType): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDestroyPopupOnHide(value: Boolean): Self = this.set("destroyPopupOnHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestroyPopupOnHide: Self = this.set("destroyPopupOnHide", js.undefined)
+    @scala.inline
+    def setGetClassNameFromAlign(value: /* align */ AlignType => String): Self = this.set("getClassNameFromAlign", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetClassNameFromAlign: Self = this.set("getClassNameFromAlign", js.undefined)
+    @scala.inline
+    def setGetRootDomNode(value: () => HTMLElement): Self = this.set("getRootDomNode", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRootDomNode: Self = this.set("getRootDomNode", js.undefined)
+    @scala.inline
+    def setMask(value: Boolean): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setOnAlign(value: (/* element */ HTMLElement, /* align */ AlignType) => Unit): Self = this.set("onAlign", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnAlign: Self = this.set("onAlign", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setPoint(value: Point): Self = this.set("point", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoint: Self = this.set("point", js.undefined)
+    @scala.inline
+    def setStretch(value: StretchType): Self = this.set("stretch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStretch: Self = this.set("stretch", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

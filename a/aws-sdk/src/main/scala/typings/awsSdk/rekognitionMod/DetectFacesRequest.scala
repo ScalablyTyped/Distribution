@@ -18,10 +18,30 @@ trait DetectFacesRequest extends js.Object {
 
 object DetectFacesRequest {
   @scala.inline
-  def apply(Image: Image, Attributes: Attributes = null): DetectFacesRequest = {
+  def apply(Image: Image): DetectFacesRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectFacesRequest]
   }
+  @scala.inline
+  implicit class DetectFacesRequestOps[Self <: DetectFacesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImage(value: Image): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributesVarargs(value: Attribute*): Self = this.set("Attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: Attributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+  }
+  
 }
 

@@ -11,11 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@graphql-tools/utils/fields", JSImport.Namespace)
 @js.native
 object fieldsMod extends js.Object {
-  def appendObjectFields(
-    schema: GraphQLSchema,
-    typeName: String,
-    additionalFields: GraphQLFieldConfigMap[_, _, StringDictionary[_]]
-  ): GraphQLSchema = js.native
+  def appendObjectFields(schema: GraphQLSchema, typeName: String, additionalFields: GraphQLFieldConfigMap[_, _]): GraphQLSchema = js.native
   def modifyObjectFields(
     schema: GraphQLSchema,
     typeName: String,
@@ -24,8 +20,8 @@ object fieldsMod extends js.Object {
       /* field */ GraphQLFieldConfig[_, _, StringDictionary[_]], 
       Boolean
     ],
-    newFields: GraphQLFieldConfigMap[_, _, StringDictionary[_]]
-  ): js.Tuple2[GraphQLSchema, GraphQLFieldConfigMap[_, _, StringDictionary[_]]] = js.native
+    newFields: GraphQLFieldConfigMap[_, _]
+  ): js.Tuple2[GraphQLSchema, GraphQLFieldConfigMap[_, _]] = js.native
   def removeObjectFields(
     schema: GraphQLSchema,
     typeName: String,
@@ -34,7 +30,7 @@ object fieldsMod extends js.Object {
       /* field */ GraphQLFieldConfig[_, _, StringDictionary[_]], 
       Boolean
     ]
-  ): js.Tuple2[GraphQLSchema, GraphQLFieldConfigMap[_, _, StringDictionary[_]]] = js.native
+  ): js.Tuple2[GraphQLSchema, GraphQLFieldConfigMap[_, _]] = js.native
   def selectObjectFields(
     schema: GraphQLSchema,
     typeName: String,
@@ -43,6 +39,6 @@ object fieldsMod extends js.Object {
       /* field */ GraphQLFieldConfig[_, _, StringDictionary[_]], 
       Boolean
     ]
-  ): GraphQLFieldConfigMap[_, _, StringDictionary[_]] = js.native
+  ): GraphQLFieldConfigMap[_, _] = js.native
 }
 

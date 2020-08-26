@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReferenceOptions extends js.Object {
-  var contextPrefix: js.UndefOr[String] = js.undefined
-  var default: js.UndefOr[js.Any] = js.undefined
-  var functions: js.UndefOr[Boolean] = js.undefined
-  var separator: js.UndefOr[String] = js.undefined
-  var strict: js.UndefOr[Boolean] = js.undefined
+  var contextPrefix: js.UndefOr[String] = js.native
+  var default: js.UndefOr[js.Any] = js.native
+  var functions: js.UndefOr[Boolean] = js.native
+  var separator: js.UndefOr[String] = js.native
+  var strict: js.UndefOr[Boolean] = js.native
 }
 
 object ReferenceOptions {
   @scala.inline
-  def apply(
-    contextPrefix: String = null,
-    default: js.Any = null,
-    functions: js.UndefOr[Boolean] = js.undefined,
-    separator: String = null,
-    strict: js.UndefOr[Boolean] = js.undefined
-  ): ReferenceOptions = {
+  def apply(): ReferenceOptions = {
     val __obj = js.Dynamic.literal()
-    if (contextPrefix != null) __obj.updateDynamic("contextPrefix")(contextPrefix.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(functions)) __obj.updateDynamic("functions")(functions.get.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceOptions]
   }
+  @scala.inline
+  implicit class ReferenceOptionsOps[Self <: ReferenceOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContextPrefix(value: String): Self = this.set("contextPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextPrefix: Self = this.set("contextPrefix", js.undefined)
+    @scala.inline
+    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setFunctions(value: Boolean): Self = this.set("functions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctions: Self = this.set("functions", js.undefined)
+    @scala.inline
+    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    @scala.inline
+    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrict: Self = this.set("strict", js.undefined)
+  }
+  
 }
 

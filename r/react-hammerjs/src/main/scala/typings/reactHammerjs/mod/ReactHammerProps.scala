@@ -16,92 +16,157 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactHammerProps extends js.Object {
-  var action: js.UndefOr[HammerListener] = js.undefined
+  var action: js.UndefOr[HammerListener] = js.native
   var direction: js.UndefOr[
     DIRECTION_NONE | DIRECTION_LEFT | DIRECTION_RIGHT | DIRECTION_UP | DIRECTION_DOWN | DIRECTION_HORIZONTAL | DIRECTION_VERTICAL | DIRECTION_ALL
-  ] = js.undefined
-  var onDoubleTap: js.UndefOr[HammerListener] = js.undefined
-  var onPan: js.UndefOr[HammerListener] = js.undefined
-  var onPanCancel: js.UndefOr[HammerListener] = js.undefined
-  var onPanEnd: js.UndefOr[HammerListener] = js.undefined
-  var onPanStart: js.UndefOr[HammerListener] = js.undefined
-  var onPinch: js.UndefOr[HammerListener] = js.undefined
-  var onPinchCancel: js.UndefOr[HammerListener] = js.undefined
-  var onPinchEnd: js.UndefOr[HammerListener] = js.undefined
-  var onPinchIn: js.UndefOr[HammerListener] = js.undefined
-  var onPinchOut: js.UndefOr[HammerListener] = js.undefined
-  var onPinchStart: js.UndefOr[HammerListener] = js.undefined
-  var onPress: js.UndefOr[HammerListener] = js.undefined
-  var onPressUp: js.UndefOr[HammerListener] = js.undefined
-  var onRotate: js.UndefOr[HammerListener] = js.undefined
-  var onRotateCancel: js.UndefOr[HammerListener] = js.undefined
-  var onRotateEnd: js.UndefOr[HammerListener] = js.undefined
-  var onRotateMove: js.UndefOr[HammerListener] = js.undefined
-  var onRotateStart: js.UndefOr[HammerListener] = js.undefined
-  var onSwipe: js.UndefOr[HammerListener] = js.undefined
-  var onTap: js.UndefOr[HammerListener] = js.undefined
-  var options: js.UndefOr[HammerOptionsWithRecognizers] = js.undefined
-  var recognizeWith: js.UndefOr[StringDictionary[Recognizer | String]] = js.undefined
-  var vertical: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var onDoubleTap: js.UndefOr[HammerListener] = js.native
+  var onPan: js.UndefOr[HammerListener] = js.native
+  var onPanCancel: js.UndefOr[HammerListener] = js.native
+  var onPanEnd: js.UndefOr[HammerListener] = js.native
+  var onPanStart: js.UndefOr[HammerListener] = js.native
+  var onPinch: js.UndefOr[HammerListener] = js.native
+  var onPinchCancel: js.UndefOr[HammerListener] = js.native
+  var onPinchEnd: js.UndefOr[HammerListener] = js.native
+  var onPinchIn: js.UndefOr[HammerListener] = js.native
+  var onPinchOut: js.UndefOr[HammerListener] = js.native
+  var onPinchStart: js.UndefOr[HammerListener] = js.native
+  var onPress: js.UndefOr[HammerListener] = js.native
+  var onPressUp: js.UndefOr[HammerListener] = js.native
+  var onRotate: js.UndefOr[HammerListener] = js.native
+  var onRotateCancel: js.UndefOr[HammerListener] = js.native
+  var onRotateEnd: js.UndefOr[HammerListener] = js.native
+  var onRotateMove: js.UndefOr[HammerListener] = js.native
+  var onRotateStart: js.UndefOr[HammerListener] = js.native
+  var onSwipe: js.UndefOr[HammerListener] = js.native
+  var onTap: js.UndefOr[HammerListener] = js.native
+  var options: js.UndefOr[HammerOptionsWithRecognizers] = js.native
+  var recognizeWith: js.UndefOr[StringDictionary[Recognizer | String]] = js.native
+  var vertical: js.UndefOr[Boolean] = js.native
 }
 
 object ReactHammerProps {
   @scala.inline
-  def apply(
-    action: /* event */ HammerInput => Unit = null,
-    direction: DIRECTION_NONE | DIRECTION_LEFT | DIRECTION_RIGHT | DIRECTION_UP | DIRECTION_DOWN | DIRECTION_HORIZONTAL | DIRECTION_VERTICAL | DIRECTION_ALL = null,
-    onDoubleTap: /* event */ HammerInput => Unit = null,
-    onPan: /* event */ HammerInput => Unit = null,
-    onPanCancel: /* event */ HammerInput => Unit = null,
-    onPanEnd: /* event */ HammerInput => Unit = null,
-    onPanStart: /* event */ HammerInput => Unit = null,
-    onPinch: /* event */ HammerInput => Unit = null,
-    onPinchCancel: /* event */ HammerInput => Unit = null,
-    onPinchEnd: /* event */ HammerInput => Unit = null,
-    onPinchIn: /* event */ HammerInput => Unit = null,
-    onPinchOut: /* event */ HammerInput => Unit = null,
-    onPinchStart: /* event */ HammerInput => Unit = null,
-    onPress: /* event */ HammerInput => Unit = null,
-    onPressUp: /* event */ HammerInput => Unit = null,
-    onRotate: /* event */ HammerInput => Unit = null,
-    onRotateCancel: /* event */ HammerInput => Unit = null,
-    onRotateEnd: /* event */ HammerInput => Unit = null,
-    onRotateMove: /* event */ HammerInput => Unit = null,
-    onRotateStart: /* event */ HammerInput => Unit = null,
-    onSwipe: /* event */ HammerInput => Unit = null,
-    onTap: /* event */ HammerInput => Unit = null,
-    options: HammerOptionsWithRecognizers = null,
-    recognizeWith: StringDictionary[Recognizer | String] = null,
-    vertical: js.UndefOr[Boolean] = js.undefined
-  ): ReactHammerProps = {
+  def apply(): ReactHammerProps = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (onDoubleTap != null) __obj.updateDynamic("onDoubleTap")(js.Any.fromFunction1(onDoubleTap))
-    if (onPan != null) __obj.updateDynamic("onPan")(js.Any.fromFunction1(onPan))
-    if (onPanCancel != null) __obj.updateDynamic("onPanCancel")(js.Any.fromFunction1(onPanCancel))
-    if (onPanEnd != null) __obj.updateDynamic("onPanEnd")(js.Any.fromFunction1(onPanEnd))
-    if (onPanStart != null) __obj.updateDynamic("onPanStart")(js.Any.fromFunction1(onPanStart))
-    if (onPinch != null) __obj.updateDynamic("onPinch")(js.Any.fromFunction1(onPinch))
-    if (onPinchCancel != null) __obj.updateDynamic("onPinchCancel")(js.Any.fromFunction1(onPinchCancel))
-    if (onPinchEnd != null) __obj.updateDynamic("onPinchEnd")(js.Any.fromFunction1(onPinchEnd))
-    if (onPinchIn != null) __obj.updateDynamic("onPinchIn")(js.Any.fromFunction1(onPinchIn))
-    if (onPinchOut != null) __obj.updateDynamic("onPinchOut")(js.Any.fromFunction1(onPinchOut))
-    if (onPinchStart != null) __obj.updateDynamic("onPinchStart")(js.Any.fromFunction1(onPinchStart))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
-    if (onPressUp != null) __obj.updateDynamic("onPressUp")(js.Any.fromFunction1(onPressUp))
-    if (onRotate != null) __obj.updateDynamic("onRotate")(js.Any.fromFunction1(onRotate))
-    if (onRotateCancel != null) __obj.updateDynamic("onRotateCancel")(js.Any.fromFunction1(onRotateCancel))
-    if (onRotateEnd != null) __obj.updateDynamic("onRotateEnd")(js.Any.fromFunction1(onRotateEnd))
-    if (onRotateMove != null) __obj.updateDynamic("onRotateMove")(js.Any.fromFunction1(onRotateMove))
-    if (onRotateStart != null) __obj.updateDynamic("onRotateStart")(js.Any.fromFunction1(onRotateStart))
-    if (onSwipe != null) __obj.updateDynamic("onSwipe")(js.Any.fromFunction1(onSwipe))
-    if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (recognizeWith != null) __obj.updateDynamic("recognizeWith")(recognizeWith.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactHammerProps]
   }
+  @scala.inline
+  implicit class ReactHammerPropsOps[Self <: ReactHammerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: /* event */ HammerInput => Unit): Self = this.set("action", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setDirection(
+      value: DIRECTION_NONE | DIRECTION_LEFT | DIRECTION_RIGHT | DIRECTION_UP | DIRECTION_DOWN | DIRECTION_HORIZONTAL | DIRECTION_VERTICAL | DIRECTION_ALL
+    ): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setOnDoubleTap(value: /* event */ HammerInput => Unit): Self = this.set("onDoubleTap", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDoubleTap: Self = this.set("onDoubleTap", js.undefined)
+    @scala.inline
+    def setOnPan(value: /* event */ HammerInput => Unit): Self = this.set("onPan", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPan: Self = this.set("onPan", js.undefined)
+    @scala.inline
+    def setOnPanCancel(value: /* event */ HammerInput => Unit): Self = this.set("onPanCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPanCancel: Self = this.set("onPanCancel", js.undefined)
+    @scala.inline
+    def setOnPanEnd(value: /* event */ HammerInput => Unit): Self = this.set("onPanEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPanEnd: Self = this.set("onPanEnd", js.undefined)
+    @scala.inline
+    def setOnPanStart(value: /* event */ HammerInput => Unit): Self = this.set("onPanStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPanStart: Self = this.set("onPanStart", js.undefined)
+    @scala.inline
+    def setOnPinch(value: /* event */ HammerInput => Unit): Self = this.set("onPinch", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPinch: Self = this.set("onPinch", js.undefined)
+    @scala.inline
+    def setOnPinchCancel(value: /* event */ HammerInput => Unit): Self = this.set("onPinchCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPinchCancel: Self = this.set("onPinchCancel", js.undefined)
+    @scala.inline
+    def setOnPinchEnd(value: /* event */ HammerInput => Unit): Self = this.set("onPinchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPinchEnd: Self = this.set("onPinchEnd", js.undefined)
+    @scala.inline
+    def setOnPinchIn(value: /* event */ HammerInput => Unit): Self = this.set("onPinchIn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPinchIn: Self = this.set("onPinchIn", js.undefined)
+    @scala.inline
+    def setOnPinchOut(value: /* event */ HammerInput => Unit): Self = this.set("onPinchOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPinchOut: Self = this.set("onPinchOut", js.undefined)
+    @scala.inline
+    def setOnPinchStart(value: /* event */ HammerInput => Unit): Self = this.set("onPinchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPinchStart: Self = this.set("onPinchStart", js.undefined)
+    @scala.inline
+    def setOnPress(value: /* event */ HammerInput => Unit): Self = this.set("onPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    @scala.inline
+    def setOnPressUp(value: /* event */ HammerInput => Unit): Self = this.set("onPressUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPressUp: Self = this.set("onPressUp", js.undefined)
+    @scala.inline
+    def setOnRotate(value: /* event */ HammerInput => Unit): Self = this.set("onRotate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRotate: Self = this.set("onRotate", js.undefined)
+    @scala.inline
+    def setOnRotateCancel(value: /* event */ HammerInput => Unit): Self = this.set("onRotateCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRotateCancel: Self = this.set("onRotateCancel", js.undefined)
+    @scala.inline
+    def setOnRotateEnd(value: /* event */ HammerInput => Unit): Self = this.set("onRotateEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRotateEnd: Self = this.set("onRotateEnd", js.undefined)
+    @scala.inline
+    def setOnRotateMove(value: /* event */ HammerInput => Unit): Self = this.set("onRotateMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRotateMove: Self = this.set("onRotateMove", js.undefined)
+    @scala.inline
+    def setOnRotateStart(value: /* event */ HammerInput => Unit): Self = this.set("onRotateStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRotateStart: Self = this.set("onRotateStart", js.undefined)
+    @scala.inline
+    def setOnSwipe(value: /* event */ HammerInput => Unit): Self = this.set("onSwipe", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSwipe: Self = this.set("onSwipe", js.undefined)
+    @scala.inline
+    def setOnTap(value: /* event */ HammerInput => Unit): Self = this.set("onTap", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTap: Self = this.set("onTap", js.undefined)
+    @scala.inline
+    def setOptions(value: HammerOptionsWithRecognizers): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setRecognizeWith(value: StringDictionary[Recognizer | String]): Self = this.set("recognizeWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecognizeWith: Self = this.set("recognizeWith", js.undefined)
+    @scala.inline
+    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+  }
+  
 }
 

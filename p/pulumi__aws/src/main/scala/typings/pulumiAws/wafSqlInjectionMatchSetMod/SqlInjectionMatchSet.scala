@@ -22,6 +22,7 @@ class SqlInjectionMatchSet protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: SqlInjectionMatchSetArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: SqlInjectionMatchSetArgs, opts: CustomResourceOptions) = this()
   /**
     * The name or description of the SQL Injection Match Set.
@@ -44,8 +45,10 @@ object SqlInjectionMatchSet extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): SqlInjectionMatchSet = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SqlInjectionMatchSet = js.native
   def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState): SqlInjectionMatchSet = js.native
   def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState, opts: CustomResourceOptions): SqlInjectionMatchSet = js.native
   /**

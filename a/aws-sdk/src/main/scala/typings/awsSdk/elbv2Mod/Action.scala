@@ -42,25 +42,52 @@ trait Action extends js.Object {
 
 object Action {
   @scala.inline
-  def apply(
-    Type: ActionTypeEnum,
-    AuthenticateCognitoConfig: AuthenticateCognitoActionConfig = null,
-    AuthenticateOidcConfig: AuthenticateOidcActionConfig = null,
-    FixedResponseConfig: FixedResponseActionConfig = null,
-    ForwardConfig: ForwardActionConfig = null,
-    Order: js.UndefOr[ActionOrder] = js.undefined,
-    RedirectConfig: RedirectActionConfig = null,
-    TargetGroupArn: TargetGroupArn = null
-  ): Action = {
+  def apply(Type: ActionTypeEnum): Action = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (AuthenticateCognitoConfig != null) __obj.updateDynamic("AuthenticateCognitoConfig")(AuthenticateCognitoConfig.asInstanceOf[js.Any])
-    if (AuthenticateOidcConfig != null) __obj.updateDynamic("AuthenticateOidcConfig")(AuthenticateOidcConfig.asInstanceOf[js.Any])
-    if (FixedResponseConfig != null) __obj.updateDynamic("FixedResponseConfig")(FixedResponseConfig.asInstanceOf[js.Any])
-    if (ForwardConfig != null) __obj.updateDynamic("ForwardConfig")(ForwardConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(Order)) __obj.updateDynamic("Order")(Order.get.asInstanceOf[js.Any])
-    if (RedirectConfig != null) __obj.updateDynamic("RedirectConfig")(RedirectConfig.asInstanceOf[js.Any])
-    if (TargetGroupArn != null) __obj.updateDynamic("TargetGroupArn")(TargetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
+  @scala.inline
+  implicit class ActionOps[Self <: Action] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: ActionTypeEnum): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticateCognitoConfig(value: AuthenticateCognitoActionConfig): Self = this.set("AuthenticateCognitoConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticateCognitoConfig: Self = this.set("AuthenticateCognitoConfig", js.undefined)
+    @scala.inline
+    def setAuthenticateOidcConfig(value: AuthenticateOidcActionConfig): Self = this.set("AuthenticateOidcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticateOidcConfig: Self = this.set("AuthenticateOidcConfig", js.undefined)
+    @scala.inline
+    def setFixedResponseConfig(value: FixedResponseActionConfig): Self = this.set("FixedResponseConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedResponseConfig: Self = this.set("FixedResponseConfig", js.undefined)
+    @scala.inline
+    def setForwardConfig(value: ForwardActionConfig): Self = this.set("ForwardConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForwardConfig: Self = this.set("ForwardConfig", js.undefined)
+    @scala.inline
+    def setOrder(value: ActionOrder): Self = this.set("Order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("Order", js.undefined)
+    @scala.inline
+    def setRedirectConfig(value: RedirectActionConfig): Self = this.set("RedirectConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectConfig: Self = this.set("RedirectConfig", js.undefined)
+    @scala.inline
+    def setTargetGroupArn(value: TargetGroupArn): Self = this.set("TargetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupArn: Self = this.set("TargetGroupArn", js.undefined)
+  }
+  
 }
 

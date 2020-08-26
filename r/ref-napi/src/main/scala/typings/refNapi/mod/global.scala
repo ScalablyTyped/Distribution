@@ -70,6 +70,7 @@ object global extends js.Object {
     def readObject(buffer: this.type): js.Object = js.native
     def readObject(buffer: this.type, offset: Double): js.Object = js.native
     def readPointer(buffer: this.type): this.type = js.native
+    def readPointer(buffer: this.type, offset: js.UndefOr[scala.Nothing], length: Double): this.type = js.native
     def readPointer(buffer: this.type, offset: Double): this.type = js.native
     def readPointer(buffer: this.type, offset: Double, length: Double): this.type = js.native
     def readUInt64BE(buffer: this.type): js.Any = js.native

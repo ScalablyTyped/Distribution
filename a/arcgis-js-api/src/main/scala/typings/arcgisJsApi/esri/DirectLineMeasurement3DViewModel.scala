@@ -65,6 +65,14 @@ trait DirectLineMeasurement3DViewModel extends Accessor {
   /**
     * Clears the current measurement.
     *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#clear)
+    *
+    *
+    */
+  def clear(): Unit = js.native
+  /**
+    * Clears the current measurement.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#clearMeasurement)
     *
     *
@@ -78,5 +86,13 @@ trait DirectLineMeasurement3DViewModel extends Accessor {
     *
     */
   def newMeasurement(): Unit = js.native
+  /**
+    * Starts a new measurement.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#start)
+    *
+    *
+    */
+  def start(): Unit = js.native
 }
 

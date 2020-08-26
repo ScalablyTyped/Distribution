@@ -26,22 +26,17 @@ import typings.androiduix.android.view.ViewGroup.OnHierarchyChangeListener
 import typings.androiduix.android.view.animation.Animation
 import typings.androiduix.android.view.animation.Transformation
 import typings.androiduix.androidui.attr.AttrBinder.ClassBinderMap
-import typings.androiduix.java.lang.Runnable
-import typings.androiduix.java.util.ArrayList
+import typings.androiduix.java_.lang.Runnable
+import typings.androiduix.java_.util.ArrayList
 import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.ViewGroup")
 @js.native
-abstract class ViewGroup_ protected ()
+trait ViewGroup_
   extends View
      with ViewParent {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
   var mChildCountWithTransientState: js.Any = js.native
   var mChildTransformation: js.Any = js.native
   var mChildren: js.Array[View] = js.native
@@ -66,8 +61,6 @@ abstract class ViewGroup_ protected ()
   /* private */ override def _getBinderAttrValue(key: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def _initAttrObserver(): js.Any = js.native
-  /* InferMemberOverrides */
-  /* private */ override def _invalidateCache(): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def _invalidateCache(invalidateCache: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -106,11 +99,11 @@ abstract class ViewGroup_ protected ()
   /* InferMemberOverrides */
   override def awakenScrollBars(): Boolean = js.native
   /* InferMemberOverrides */
+  override def awakenScrollBars(startDelay: js.UndefOr[scala.Nothing], invalidate: Boolean): Boolean = js.native
+  /* InferMemberOverrides */
   override def awakenScrollBars(startDelay: Double): Boolean = js.native
   /* InferMemberOverrides */
   override def awakenScrollBars(startDelay: Double, invalidate: Boolean): Boolean = js.native
-  /* CompleteClass */
-  override def bringChildToFront(child: View): js.Any = js.native
   /* InferMemberOverrides */
   override def bringToFront(): Unit = js.native
   /* InferMemberOverrides */
@@ -131,22 +124,14 @@ abstract class ViewGroup_ protected ()
   override def cancelPendingInputEvents(): Unit = js.native
   /* private */ def cancelTouchTarget(view: js.Any): js.Any = js.native
   /* InferMemberOverrides */
-  /* private */ override def checkForLongClick(): js.Any = js.native
-  /* InferMemberOverrides */
   /* private */ override def checkForLongClick(delayOffset: js.Any): js.Any = js.native
   /* protected */ def checkLayoutParams(p: LayoutParams): Boolean = js.native
-  /* CompleteClass */
-  override def childDrawableStateChanged(child: View): js.Any = js.native
-  /* CompleteClass */
-  override def childHasTransientStateChanged(child: View, hasTransientState: Boolean): js.Any = js.native
   /* InferMemberOverrides */
   override def cleanupDraw(): Unit = js.native
   def cleanupLayoutState(child: View): Unit = js.native
   /* InferMemberOverrides */
   override def clearAnimation(): Unit = js.native
   def clearCachedLayoutMode(): Unit = js.native
-  /* CompleteClass */
-  override def clearChildFocus(child: View): js.Any = js.native
   def clearDisappearingChildren(): Unit = js.native
   /* InferMemberOverrides */
   override def clearFocus(): Unit = js.native
@@ -227,8 +212,6 @@ abstract class ViewGroup_ protected ()
   /* InferMemberOverrides */
   override def draw(canvas: Canvas): Unit = js.native
   /* InferMemberOverrides */
-  /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any): js.Any = js.native
-  /* InferMemberOverrides */
   /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any, scalingRequired: js.Any): js.Any = js.native
   /* protected */ def drawChild(canvas: Canvas, child: View, drawingTime: Double): Boolean = js.native
   /* InferMemberOverrides */
@@ -265,10 +248,6 @@ abstract class ViewGroup_ protected ()
   def finishAnimatingView(view: View, animation: Animation): Unit = js.native
   /* InferMemberOverrides */
   override def focusSearch(direction: Double): View = js.native
-  /* CompleteClass */
-  override def focusSearch(v: View, direction: Double): View = js.native
-  /* CompleteClass */
-  override def focusableViewAvailable(v: View): js.Any = js.native
   /* InferMemberOverrides */
   override def forceLayout(): Unit = js.native
   /* protected */ def generateDefaultLayoutParams(): LayoutParams = js.native
@@ -291,8 +270,6 @@ abstract class ViewGroup_ protected ()
   def getChildDrawingOrder(childCount: Double, i: Double): Double = js.native
   /* protected */ def getChildStaticTransformation(child: View, t: Transformation): Boolean = js.native
   def getChildTransformation(): Transformation = js.native
-  /* CompleteClass */
-  override def getChildVisibleRect(child: View, r: Rect, offset: Point): Boolean = js.native
   /* InferMemberOverrides */
   override def getClipBounds(): Rect = js.native
   def getClipChildren(): Boolean = js.native
@@ -514,7 +491,6 @@ abstract class ViewGroup_ protected ()
   /* protected */ override def initBindElement(): Unit = js.native
   /* InferMemberOverrides */
   /* protected */ override def initBindElement(bindElement: HTMLElement): Unit = js.native
-  /* private */ def initFromAttributes(context: js.Any, attrs: js.Any): js.Any = js.native
   /* private */ def initFromAttributes(context: js.Any, attrs: js.Any, defStyle: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   override def initScrollCache(): Unit = js.native
@@ -533,11 +509,7 @@ abstract class ViewGroup_ protected ()
   override def invalidate(invalidateCache: Boolean): js.Any = js.native
   /* InferMemberOverrides */
   override def invalidate(l: Double, t: Double, r: Double, b: Double): js.Any = js.native
-  /* CompleteClass */
-  override def invalidateChild(child: View, r: Rect): js.Any = js.native
   def invalidateChildFast(child: View, dirty: Rect): Unit = js.native
-  /* CompleteClass */
-  override def invalidateChildInParent(location: js.Array[Double], r: Rect): ViewParent = js.native
   def invalidateChildInParentFast(left: Double, top: Double, dirty: Rect): ViewParent = js.native
   /* InferMemberOverrides */
   override def invalidateParentCaches(): Unit = js.native
@@ -737,9 +709,36 @@ abstract class ViewGroup_ protected ()
   /* InferMemberOverrides */
   override def postInvalidate(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(
+    l: js.UndefOr[scala.Nothing],
+    t: js.UndefOr[scala.Nothing],
+    r: js.UndefOr[scala.Nothing],
+    b: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double, r: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -747,9 +746,78 @@ abstract class ViewGroup_ protected ()
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -757,9 +825,36 @@ abstract class ViewGroup_ protected ()
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -776,7 +871,6 @@ abstract class ViewGroup_ protected ()
   override def removeCallbacks(action: Runnable): Boolean = js.native
   /* private */ def removeChildElement(childElement: js.Any): js.Any = js.native
   def removeDetachedView(child: View, animate: Boolean): Unit = js.native
-  /* private */ def removeFromArray(index: js.Any): js.Any = js.native
   /* private */ def removeFromArray(index: js.Any, count: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def removeLongPressCallback(): js.Any = js.native
@@ -798,14 +892,10 @@ abstract class ViewGroup_ protected ()
   def removeViews(start: Double, count: Double): Unit = js.native
   def removeViewsInLayout(start: Double, count: Double): Unit = js.native
   /* private */ def removeViewsInternal(start: js.Any, count: js.Any): js.Any = js.native
-  /* CompleteClass */
-  override def requestChildFocus(child: View, focused: View): js.Any = js.native
-  /* CompleteClass */
-  override def requestChildRectangleOnScreen(child: View, rectangle: Rect, immediate: Boolean): Boolean = js.native
-  /* CompleteClass */
-  override def requestDisallowInterceptTouchEvent(disallowIntercept: Boolean): js.Any = js.native
   /* InferMemberOverrides */
   override def requestFocus(): Boolean = js.native
+  /* InferMemberOverrides */
+  override def requestFocus(direction: js.UndefOr[scala.Nothing], previouslyFocusedRect: js.Any): Boolean = js.native
   /* InferMemberOverrides */
   override def requestFocus(direction: Double): Boolean = js.native
   /* InferMemberOverrides */
@@ -869,7 +959,30 @@ abstract class ViewGroup_ protected ()
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: js.UndefOr[scala.Nothing], radiusBottomRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: Double,
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: Double,
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double, radiusBottomRight: Double): Unit = js.native
   /* InferMemberOverrides */

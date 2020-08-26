@@ -40,16 +40,34 @@ trait SchemaStatement extends js.Object {
 
 object SchemaStatement {
   @scala.inline
-  def apply(
-    paramTypes: StringDictionary[SchemaType] = null,
-    params: StringDictionary[js.Any] = null,
-    sql: String = null
-  ): SchemaStatement = {
+  def apply(): SchemaStatement = {
     val __obj = js.Dynamic.literal()
-    if (paramTypes != null) __obj.updateDynamic("paramTypes")(paramTypes.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStatement]
   }
+  @scala.inline
+  implicit class SchemaStatementOps[Self <: SchemaStatement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParamTypes(value: StringDictionary[SchemaType]): Self = this.set("paramTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParamTypes: Self = this.set("paramTypes", js.undefined)
+    @scala.inline
+    def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSql: Self = this.set("sql", js.undefined)
+  }
+  
 }
 

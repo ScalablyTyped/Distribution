@@ -57,26 +57,58 @@ trait SchemaStructuredQuery extends js.Object {
 
 object SchemaStructuredQuery {
   @scala.inline
-  def apply(
-    endAt: SchemaCursor = null,
-    from: js.Array[SchemaCollectionSelector] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    offset: js.UndefOr[Double] = js.undefined,
-    orderBy: js.Array[SchemaOrder] = null,
-    select: SchemaProjection = null,
-    startAt: SchemaCursor = null,
-    where: SchemaFilter = null
-  ): SchemaStructuredQuery = {
+  def apply(): SchemaStructuredQuery = {
     val __obj = js.Dynamic.literal()
-    if (endAt != null) __obj.updateDynamic("endAt")(endAt.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStructuredQuery]
   }
+  @scala.inline
+  implicit class SchemaStructuredQueryOps[Self <: SchemaStructuredQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndAt(value: SchemaCursor): Self = this.set("endAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndAt: Self = this.set("endAt", js.undefined)
+    @scala.inline
+    def setFromVarargs(value: SchemaCollectionSelector*): Self = this.set("from", js.Array(value :_*))
+    @scala.inline
+    def setFrom(value: js.Array[SchemaCollectionSelector]): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOrderByVarargs(value: SchemaOrder*): Self = this.set("orderBy", js.Array(value :_*))
+    @scala.inline
+    def setOrderBy(value: js.Array[SchemaOrder]): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setSelect(value: SchemaProjection): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setStartAt(value: SchemaCursor): Self = this.set("startAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartAt: Self = this.set("startAt", js.undefined)
+    @scala.inline
+    def setWhere(value: SchemaFilter): Self = this.set("where", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhere: Self = this.set("where", js.undefined)
+  }
+  
 }
 

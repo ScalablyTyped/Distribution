@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait ArrayConstructor extends _NativeConstructor {
   def construct[T](n: Double, indexMapFn: js.Function1[/* i */ Double, T]): Array[T] = js.native
   def create[T](): Array[T] = js.native
+  def create[T](obj: js.UndefOr[scala.Nothing], clone: Boolean): Array[T] = js.native
   def create[T](obj: Double): Array[T] = js.native
   def create[T](obj: Double, clone: Boolean): Array[T] = js.native
   def create[T](obj: ArrayLike[T]): Array[T] = js.native

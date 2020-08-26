@@ -30,17 +30,38 @@ trait BucketNotificationQueue extends js.Object {
 
 object BucketNotificationQueue {
   @scala.inline
-  def apply(
-    events: js.Array[String],
-    id: String,
-    queueArn: String,
-    filterPrefix: String = null,
-    filterSuffix: String = null
-  ): BucketNotificationQueue = {
+  def apply(events: js.Array[String], id: String, queueArn: String): BucketNotificationQueue = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], queueArn = queueArn.asInstanceOf[js.Any])
-    if (filterPrefix != null) __obj.updateDynamic("filterPrefix")(filterPrefix.asInstanceOf[js.Any])
-    if (filterSuffix != null) __obj.updateDynamic("filterSuffix")(filterSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketNotificationQueue]
   }
+  @scala.inline
+  implicit class BucketNotificationQueueOps[Self <: BucketNotificationQueue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQueueArn(value: String): Self = this.set("queueArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilterPrefix(value: String): Self = this.set("filterPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterPrefix: Self = this.set("filterPrefix", js.undefined)
+    @scala.inline
+    def setFilterSuffix(value: String): Self = this.set("filterSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterSuffix: Self = this.set("filterSuffix", js.undefined)
+  }
+  
 }
 

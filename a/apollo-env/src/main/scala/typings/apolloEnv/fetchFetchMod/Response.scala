@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class Response ()
   extends typings.nodeFetch.mod.Response {
   def this(body: BodyInit) = this()
-  def this(body: BodyInit, init: ResponseInit) = this()
+  def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
 }
 
 /* static members */

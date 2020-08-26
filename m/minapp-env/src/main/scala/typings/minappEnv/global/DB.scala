@@ -1,13 +1,8 @@
 package typings.minappEnv.global
 
-import typings.minappEnv.DB.DatabaseCommand
-import typings.minappEnv.DB.IQueryCondition
 import typings.minappEnv.DB.IServerDateOptions
-import typings.minappEnv.DB.LOGIC_COMMANDS_LITERAL
-import typings.minappEnv.DB.QUERY_COMMANDS_LITERAL
 import typings.minappEnv.DB.UPDATE_COMMANDS_LITERAL
 import typings.minappEnv.IAPIParam
-import typings.minappEnv.ICloudConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,19 +13,7 @@ import scala.scalajs.js.annotation._
 object DB extends js.Object {
   @js.native
   class APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM /* <: IAPIParam[_] */, CONTEXT] ()
-    extends typings.minappEnv.DB.APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT] {
-    /**
-      * In case of callback-style invocation, this function will be called
-      */
-    /* CompleteClass */
-    override def getCallbackReturn(param: PARAM, context: CONTEXT): CALLBACK_RETURN = js.native
-    /* CompleteClass */
-    override def getContext(param: PARAM): CONTEXT = js.native
-    /* CompleteClass */
-    override def getFinalParam[T /* <: PARAM */](param: PARAM, context: CONTEXT): T = js.native
-    /* CompleteClass */
-    override def run[T /* <: PARAM */](param: T): typings.minappEnv.Promise[PROMISE_RETURN] = js.native
-  }
+    extends typings.minappEnv.DB.APIBaseContract[PROMISE_RETURN, CALLBACK_RETURN, PARAM, CONTEXT]
   
   @js.native
   class Batch ()
@@ -44,71 +27,15 @@ object DB extends js.Object {
   
   @js.native
   class Database protected ()
-    extends typings.minappEnv.DB.Database {
-    /* CompleteClass */
-    override val Geo: typings.minappEnv.DB.Geo = js.native
-    /* CompleteClass */
-    override val command: DatabaseCommand = js.native
-    /* CompleteClass */
-    override val config: ICloudConfig = js.native
-    /* CompleteClass */
-    override def collection(collectionName: java.lang.String): typings.minappEnv.DB.CollectionReference = js.native
-    /* CompleteClass */
-    override def serverDate(): typings.minappEnv.DB.ServerDate = js.native
-  }
+    extends typings.minappEnv.DB.Database
   
   @js.native
   class DatabaseLogicCommand ()
-    extends typings.minappEnv.DB.DatabaseLogicCommand {
-    /* CompleteClass */
-    override var fieldName: java.lang.String | typings.minappEnv.InternalSymbol = js.native
-    /* CompleteClass */
-    override var operands: typings.minappEnv.Array[_] = js.native
-    /* CompleteClass */
-    override var operator: LOGIC_COMMANDS_LITERAL | java.lang.String = js.native
-    /* CompleteClass */
-    override def _setFieldName(fieldName: java.lang.String): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def and(expressions: (typings.minappEnv.DB.DatabaseLogicCommand | IQueryCondition)*): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def or(expressions: (typings.minappEnv.DB.DatabaseLogicCommand | IQueryCondition)*): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-  }
+    extends typings.minappEnv.DB.DatabaseLogicCommand
   
   @js.native
   class DatabaseQueryCommand ()
-    extends typings.minappEnv.DB.DatabaseQueryCommand {
-    /* CompleteClass */
-    override var fieldName: java.lang.String | typings.minappEnv.InternalSymbol = js.native
-    /* CompleteClass */
-    override var operands: typings.minappEnv.Array[_] = js.native
-    /* CompleteClass */
-    override var operator: LOGIC_COMMANDS_LITERAL | java.lang.String = js.native
-    /* CompleteClass */
-    @JSName("operator")
-    override var operator_DatabaseQueryCommand: QUERY_COMMANDS_LITERAL | java.lang.String = js.native
-    /* CompleteClass */
-    override def _setFieldName(fieldName: java.lang.String): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def and(expressions: (typings.minappEnv.DB.DatabaseLogicCommand | IQueryCondition)*): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def eq(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def gt(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def gte(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def in(`val`: typings.minappEnv.Array[_]): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def lt(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def lte(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def neq(`val`: js.Any): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def nin(`val`: typings.minappEnv.Array[_]): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-    /* CompleteClass */
-    override def or(expressions: (typings.minappEnv.DB.DatabaseLogicCommand | IQueryCondition)*): typings.minappEnv.DB.DatabaseLogicCommand = js.native
-  }
+    extends typings.minappEnv.DB.DatabaseQueryCommand
   
   @js.native
   class DatabaseUpdateCommand protected ()
@@ -124,14 +51,6 @@ object DB extends js.Object {
       operands: typings.minappEnv.Array[_],
       fieldName: typings.minappEnv.InternalSymbol
     ) = this()
-    /* CompleteClass */
-    override var fieldName: java.lang.String | typings.minappEnv.InternalSymbol = js.native
-    /* CompleteClass */
-    override var operands: typings.minappEnv.Array[_] = js.native
-    /* CompleteClass */
-    override var operator: UPDATE_COMMANDS_LITERAL = js.native
-    /* CompleteClass */
-    override def _setFieldName(fieldName: java.lang.String): typings.minappEnv.DB.DatabaseUpdateCommand = js.native
   }
   
   @js.native
@@ -145,12 +64,6 @@ object DB extends js.Object {
   abstract class GeoPoint protected ()
     extends typings.minappEnv.DB.GeoPoint {
     def this(longitude: Double, latitude: Double) = this()
-    /* CompleteClass */
-    override var latitude: Double = js.native
-    /* CompleteClass */
-    override var longitude: Double = js.native
-    /* CompleteClass */
-    override def toJSON(): js.Object = js.native
   }
   
   @js.native
@@ -161,8 +74,6 @@ object DB extends js.Object {
   abstract class ServerDate ()
     extends typings.minappEnv.DB.ServerDate {
     def this(options: IServerDateOptions) = this()
-    /* CompleteClass */
-    override val options: IServerDateOptions = js.native
   }
   
   @js.native

@@ -27,6 +27,7 @@ class ResourceMetadataMetrics protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaMetadata] = js.native
   def list(callback: BodyResponseCallback[SchemaMetadata]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetadata] = js.native
   def list(params: ParamsResourceMetadataMetricsList): GaxiosPromise[SchemaMetadata] = js.native
   def list(params: ParamsResourceMetadataMetricsList, callback: BodyResponseCallback[SchemaMetadata]): Unit = js.native
   def list(

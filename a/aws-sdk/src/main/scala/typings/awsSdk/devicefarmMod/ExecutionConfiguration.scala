@@ -30,20 +30,42 @@ trait ExecutionConfiguration extends js.Object {
 
 object ExecutionConfiguration {
   @scala.inline
-  def apply(
-    accountsCleanup: js.UndefOr[AccountsCleanup] = js.undefined,
-    appPackagesCleanup: js.UndefOr[AppPackagesCleanup] = js.undefined,
-    jobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined,
-    skipAppResign: js.UndefOr[SkipAppResign] = js.undefined,
-    videoCapture: js.UndefOr[VideoCapture] = js.undefined
-  ): ExecutionConfiguration = {
+  def apply(): ExecutionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accountsCleanup)) __obj.updateDynamic("accountsCleanup")(accountsCleanup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(appPackagesCleanup)) __obj.updateDynamic("appPackagesCleanup")(appPackagesCleanup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(jobTimeoutMinutes)) __obj.updateDynamic("jobTimeoutMinutes")(jobTimeoutMinutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoCapture)) __obj.updateDynamic("videoCapture")(videoCapture.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionConfiguration]
   }
+  @scala.inline
+  implicit class ExecutionConfigurationOps[Self <: ExecutionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountsCleanup(value: AccountsCleanup): Self = this.set("accountsCleanup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountsCleanup: Self = this.set("accountsCleanup", js.undefined)
+    @scala.inline
+    def setAppPackagesCleanup(value: AppPackagesCleanup): Self = this.set("appPackagesCleanup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppPackagesCleanup: Self = this.set("appPackagesCleanup", js.undefined)
+    @scala.inline
+    def setJobTimeoutMinutes(value: JobTimeoutMinutes): Self = this.set("jobTimeoutMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTimeoutMinutes: Self = this.set("jobTimeoutMinutes", js.undefined)
+    @scala.inline
+    def setSkipAppResign(value: SkipAppResign): Self = this.set("skipAppResign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipAppResign: Self = this.set("skipAppResign", js.undefined)
+    @scala.inline
+    def setVideoCapture(value: VideoCapture): Self = this.set("videoCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoCapture: Self = this.set("videoCapture", js.undefined)
+  }
+  
 }
 

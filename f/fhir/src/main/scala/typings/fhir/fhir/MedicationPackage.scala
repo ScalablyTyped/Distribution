@@ -7,45 +7,56 @@ import scala.scalajs.js.annotation._
 /**
   * Details about packaged medications
   */
+@js.native
 trait MedicationPackage extends BackboneElement {
   /**
     * Identifies a single production run
     */
-  var batch: js.UndefOr[js.Array[MedicationPackageBatch]] = js.undefined
+  var batch: js.UndefOr[js.Array[MedicationPackageBatch]] = js.native
   /**
     * E.g. box, vial, blister-pack
     */
-  var container: js.UndefOr[CodeableConcept] = js.undefined
+  var container: js.UndefOr[CodeableConcept] = js.native
   /**
     * What is  in the package
     */
-  var content: js.UndefOr[js.Array[MedicationPackageContent]] = js.undefined
+  var content: js.UndefOr[js.Array[MedicationPackageContent]] = js.native
 }
 
 object MedicationPackage {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    batch: js.Array[MedicationPackageBatch] = null,
-    container: CodeableConcept = null,
-    content: js.Array[MedicationPackageContent] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null
-  ): MedicationPackage = {
+  def apply(): MedicationPackage = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (batch != null) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicationPackage]
   }
+  @scala.inline
+  implicit class MedicationPackageOps[Self <: MedicationPackage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchVarargs(value: MedicationPackageBatch*): Self = this.set("batch", js.Array(value :_*))
+    @scala.inline
+    def setBatch(value: js.Array[MedicationPackageBatch]): Self = this.set("batch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatch: Self = this.set("batch", js.undefined)
+    @scala.inline
+    def setContainer(value: CodeableConcept): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setContentVarargs(value: MedicationPackageContent*): Self = this.set("content", js.Array(value :_*))
+    @scala.inline
+    def setContent(value: js.Array[MedicationPackageContent]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+  }
+  
 }
 

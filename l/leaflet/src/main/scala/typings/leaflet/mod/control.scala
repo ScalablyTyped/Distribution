@@ -17,7 +17,11 @@ object control extends js.Object {
   def attribution(): Attribution = js.native
   def attribution(options: AttributionOptions): Attribution = js.native
   def layers(): Layers = js.native
+  def layers(baseLayers: js.UndefOr[scala.Nothing], overlays: js.UndefOr[scala.Nothing], options: LayersOptions): Layers = js.native
+  def layers(baseLayers: js.UndefOr[scala.Nothing], overlays: LayersObject): Layers = js.native
+  def layers(baseLayers: js.UndefOr[scala.Nothing], overlays: LayersObject, options: LayersOptions): Layers = js.native
   def layers(baseLayers: LayersObject): Layers = js.native
+  def layers(baseLayers: LayersObject, overlays: js.UndefOr[scala.Nothing], options: LayersOptions): Layers = js.native
   def layers(baseLayers: LayersObject, overlays: LayersObject): Layers = js.native
   def layers(baseLayers: LayersObject, overlays: LayersObject, options: LayersOptions): Layers = js.native
   def scale(): Scale = js.native

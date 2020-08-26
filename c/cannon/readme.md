@@ -12,7 +12,7 @@ A lightweight 3D physics engine written in JavaScript.
 | Keywords           | cannon.js, cannon, physics, engine, 3d |
 | # releases         | 0 |
 | # dependents       | 30 |
-| # downloads        | 55564 |
+| # downloads        | 54584 |
 | # stars            | 2 |
 
 ## Links

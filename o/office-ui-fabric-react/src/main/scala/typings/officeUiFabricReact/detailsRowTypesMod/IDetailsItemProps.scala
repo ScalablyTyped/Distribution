@@ -10,73 +10,106 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDetailsItemProps extends js.Object {
   /**
     * Rules for rendering column cells.
     */
-  var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
+  var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
   /**
     * Checkbox visibility
     */
-  var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.undefined
+  var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.native
   /**
     * Column metadata
     */
-  var columns: js.UndefOr[js.Array[IColumn]] = js.undefined
+  var columns: js.UndefOr[js.Array[IColumn]] = js.native
   /**
     * Nesting depth of a grouping
     */
-  var groupNestingDepth: js.UndefOr[Double] = js.undefined
+  var groupNestingDepth: js.UndefOr[Double] = js.native
   /**
     * How much to indent
     */
-  var indentWidth: js.UndefOr[Double] = js.undefined
+  var indentWidth: js.UndefOr[Double] = js.native
   /**
     * Minimum width of the row.
     *
     * @defaultvalue 0
     */
-  var rowWidth: js.UndefOr[Double] = js.undefined
+  var rowWidth: js.UndefOr[Double] = js.native
   /**
     * Selection from utilities
     */
-  var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.undefined
+  var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.native
   /**
     * Selection mode
     */
-  var selectionMode: js.UndefOr[SelectionMode] = js.undefined
+  var selectionMode: js.UndefOr[SelectionMode] = js.native
   /**
     * View port of the virtualized list
     *
     * @deprecated use rowWidth instead
     */
-  var viewport: js.UndefOr[IViewport] = js.undefined
+  var viewport: js.UndefOr[IViewport] = js.native
 }
 
 object IDetailsItemProps {
   @scala.inline
-  def apply(
-    cellStyleProps: ICellStyleProps = null,
-    checkboxVisibility: CheckboxVisibility = null,
-    columns: js.Array[IColumn] = null,
-    groupNestingDepth: js.UndefOr[Double] = js.undefined,
-    indentWidth: js.UndefOr[Double] = js.undefined,
-    rowWidth: js.UndefOr[Double] = js.undefined,
-    selection: ISelection[IObjectWithKey] = null,
-    selectionMode: SelectionMode = null,
-    viewport: IViewport = null
-  ): IDetailsItemProps = {
+  def apply(): IDetailsItemProps = {
     val __obj = js.Dynamic.literal()
-    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
-    if (checkboxVisibility != null) __obj.updateDynamic("checkboxVisibility")(checkboxVisibility.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupNestingDepth)) __obj.updateDynamic("groupNestingDepth")(groupNestingDepth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentWidth)) __obj.updateDynamic("indentWidth")(indentWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowWidth)) __obj.updateDynamic("rowWidth")(rowWidth.get.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsItemProps]
   }
+  @scala.inline
+  implicit class IDetailsItemPropsOps[Self <: IDetailsItemProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellStyleProps(value: ICellStyleProps): Self = this.set("cellStyleProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellStyleProps: Self = this.set("cellStyleProps", js.undefined)
+    @scala.inline
+    def setCheckboxVisibility(value: CheckboxVisibility): Self = this.set("checkboxVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckboxVisibility: Self = this.set("checkboxVisibility", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: IColumn*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[IColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setGroupNestingDepth(value: Double): Self = this.set("groupNestingDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupNestingDepth: Self = this.set("groupNestingDepth", js.undefined)
+    @scala.inline
+    def setIndentWidth(value: Double): Self = this.set("indentWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentWidth: Self = this.set("indentWidth", js.undefined)
+    @scala.inline
+    def setRowWidth(value: Double): Self = this.set("rowWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowWidth: Self = this.set("rowWidth", js.undefined)
+    @scala.inline
+    def setSelection(value: ISelection[IObjectWithKey]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: SelectionMode): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setViewport(value: IViewport): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewport: Self = this.set("viewport", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,6 @@
 package typings.grpcGrpcJs.mod
 
-import typings.grpcGrpcJs.callStreamMod.Deadline
+import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,12 @@ import scala.scalajs.js.annotation._
 object waitForClientReady extends js.Object {
   def apply(
     client: typings.grpcGrpcJs.clientMod.Client,
-    deadline: Deadline,
+    deadline: Double,
+    callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+  ): Unit = js.native
+  def apply(
+    client: typings.grpcGrpcJs.clientMod.Client,
+    deadline: Date,
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
   ): Unit = js.native
 }

@@ -328,86 +328,188 @@ trait SchemaJob extends js.Object {
 
 object SchemaJob {
   @scala.inline
-  def apply(
-    applicationEmailList: js.Array[String] = null,
-    applicationInstruction: String = null,
-    applicationUrls: js.Array[String] = null,
-    benefits: js.Array[String] = null,
-    companyDisplayName: String = null,
-    companyName: String = null,
-    companyTitle: String = null,
-    compensationInfo: SchemaCompensationInfo = null,
-    createTime: String = null,
-    customAttributes: StringDictionary[SchemaCustomAttribute] = null,
-    department: String = null,
-    description: String = null,
-    distributorCompanyId: String = null,
-    educationLevels: js.Array[String] = null,
-    employmentTypes: js.Array[String] = null,
-    endDate: SchemaDate = null,
-    expireTime: String = null,
-    expiryDate: SchemaDate = null,
-    extendedCompensationInfo: SchemaExtendedCompensationInfo = null,
-    filterableCustomFields: StringDictionary[SchemaCustomField] = null,
-    incentives: String = null,
-    jobLocations: js.Array[SchemaJobLocation] = null,
-    jobTitle: String = null,
-    languageCode: String = null,
-    level: String = null,
-    locations: js.Array[String] = null,
-    name: String = null,
-    promotionValue: js.UndefOr[Double] = js.undefined,
-    publishDate: SchemaDate = null,
-    qualifications: String = null,
-    referenceUrl: String = null,
-    region: String = null,
-    requisitionId: String = null,
-    responsibilities: String = null,
-    startDate: SchemaDate = null,
-    unindexedCustomFields: StringDictionary[SchemaCustomField] = null,
-    updateTime: String = null,
-    visibility: String = null
-  ): SchemaJob = {
+  def apply(): SchemaJob = {
     val __obj = js.Dynamic.literal()
-    if (applicationEmailList != null) __obj.updateDynamic("applicationEmailList")(applicationEmailList.asInstanceOf[js.Any])
-    if (applicationInstruction != null) __obj.updateDynamic("applicationInstruction")(applicationInstruction.asInstanceOf[js.Any])
-    if (applicationUrls != null) __obj.updateDynamic("applicationUrls")(applicationUrls.asInstanceOf[js.Any])
-    if (benefits != null) __obj.updateDynamic("benefits")(benefits.asInstanceOf[js.Any])
-    if (companyDisplayName != null) __obj.updateDynamic("companyDisplayName")(companyDisplayName.asInstanceOf[js.Any])
-    if (companyName != null) __obj.updateDynamic("companyName")(companyName.asInstanceOf[js.Any])
-    if (companyTitle != null) __obj.updateDynamic("companyTitle")(companyTitle.asInstanceOf[js.Any])
-    if (compensationInfo != null) __obj.updateDynamic("compensationInfo")(compensationInfo.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes.asInstanceOf[js.Any])
-    if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (distributorCompanyId != null) __obj.updateDynamic("distributorCompanyId")(distributorCompanyId.asInstanceOf[js.Any])
-    if (educationLevels != null) __obj.updateDynamic("educationLevels")(educationLevels.asInstanceOf[js.Any])
-    if (employmentTypes != null) __obj.updateDynamic("employmentTypes")(employmentTypes.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
-    if (expiryDate != null) __obj.updateDynamic("expiryDate")(expiryDate.asInstanceOf[js.Any])
-    if (extendedCompensationInfo != null) __obj.updateDynamic("extendedCompensationInfo")(extendedCompensationInfo.asInstanceOf[js.Any])
-    if (filterableCustomFields != null) __obj.updateDynamic("filterableCustomFields")(filterableCustomFields.asInstanceOf[js.Any])
-    if (incentives != null) __obj.updateDynamic("incentives")(incentives.asInstanceOf[js.Any])
-    if (jobLocations != null) __obj.updateDynamic("jobLocations")(jobLocations.asInstanceOf[js.Any])
-    if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(promotionValue)) __obj.updateDynamic("promotionValue")(promotionValue.get.asInstanceOf[js.Any])
-    if (publishDate != null) __obj.updateDynamic("publishDate")(publishDate.asInstanceOf[js.Any])
-    if (qualifications != null) __obj.updateDynamic("qualifications")(qualifications.asInstanceOf[js.Any])
-    if (referenceUrl != null) __obj.updateDynamic("referenceUrl")(referenceUrl.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (requisitionId != null) __obj.updateDynamic("requisitionId")(requisitionId.asInstanceOf[js.Any])
-    if (responsibilities != null) __obj.updateDynamic("responsibilities")(responsibilities.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (unindexedCustomFields != null) __obj.updateDynamic("unindexedCustomFields")(unindexedCustomFields.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJob]
   }
+  @scala.inline
+  implicit class SchemaJobOps[Self <: SchemaJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationEmailListVarargs(value: String*): Self = this.set("applicationEmailList", js.Array(value :_*))
+    @scala.inline
+    def setApplicationEmailList(value: js.Array[String]): Self = this.set("applicationEmailList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationEmailList: Self = this.set("applicationEmailList", js.undefined)
+    @scala.inline
+    def setApplicationInstruction(value: String): Self = this.set("applicationInstruction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationInstruction: Self = this.set("applicationInstruction", js.undefined)
+    @scala.inline
+    def setApplicationUrlsVarargs(value: String*): Self = this.set("applicationUrls", js.Array(value :_*))
+    @scala.inline
+    def setApplicationUrls(value: js.Array[String]): Self = this.set("applicationUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationUrls: Self = this.set("applicationUrls", js.undefined)
+    @scala.inline
+    def setBenefitsVarargs(value: String*): Self = this.set("benefits", js.Array(value :_*))
+    @scala.inline
+    def setBenefits(value: js.Array[String]): Self = this.set("benefits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBenefits: Self = this.set("benefits", js.undefined)
+    @scala.inline
+    def setCompanyDisplayName(value: String): Self = this.set("companyDisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyDisplayName: Self = this.set("companyDisplayName", js.undefined)
+    @scala.inline
+    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    @scala.inline
+    def setCompanyTitle(value: String): Self = this.set("companyTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyTitle: Self = this.set("companyTitle", js.undefined)
+    @scala.inline
+    def setCompensationInfo(value: SchemaCompensationInfo): Self = this.set("compensationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompensationInfo: Self = this.set("compensationInfo", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setCustomAttributes(value: StringDictionary[SchemaCustomAttribute]): Self = this.set("customAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAttributes: Self = this.set("customAttributes", js.undefined)
+    @scala.inline
+    def setDepartment(value: String): Self = this.set("department", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepartment: Self = this.set("department", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDistributorCompanyId(value: String): Self = this.set("distributorCompanyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributorCompanyId: Self = this.set("distributorCompanyId", js.undefined)
+    @scala.inline
+    def setEducationLevelsVarargs(value: String*): Self = this.set("educationLevels", js.Array(value :_*))
+    @scala.inline
+    def setEducationLevels(value: js.Array[String]): Self = this.set("educationLevels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEducationLevels: Self = this.set("educationLevels", js.undefined)
+    @scala.inline
+    def setEmploymentTypesVarargs(value: String*): Self = this.set("employmentTypes", js.Array(value :_*))
+    @scala.inline
+    def setEmploymentTypes(value: js.Array[String]): Self = this.set("employmentTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmploymentTypes: Self = this.set("employmentTypes", js.undefined)
+    @scala.inline
+    def setEndDate(value: SchemaDate): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
+    @scala.inline
+    def setExpiryDate(value: SchemaDate): Self = this.set("expiryDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiryDate: Self = this.set("expiryDate", js.undefined)
+    @scala.inline
+    def setExtendedCompensationInfo(value: SchemaExtendedCompensationInfo): Self = this.set("extendedCompensationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedCompensationInfo: Self = this.set("extendedCompensationInfo", js.undefined)
+    @scala.inline
+    def setFilterableCustomFields(value: StringDictionary[SchemaCustomField]): Self = this.set("filterableCustomFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterableCustomFields: Self = this.set("filterableCustomFields", js.undefined)
+    @scala.inline
+    def setIncentives(value: String): Self = this.set("incentives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncentives: Self = this.set("incentives", js.undefined)
+    @scala.inline
+    def setJobLocationsVarargs(value: SchemaJobLocation*): Self = this.set("jobLocations", js.Array(value :_*))
+    @scala.inline
+    def setJobLocations(value: js.Array[SchemaJobLocation]): Self = this.set("jobLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobLocations: Self = this.set("jobLocations", js.undefined)
+    @scala.inline
+    def setJobTitle(value: String): Self = this.set("jobTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTitle: Self = this.set("jobTitle", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setLocationsVarargs(value: String*): Self = this.set("locations", js.Array(value :_*))
+    @scala.inline
+    def setLocations(value: js.Array[String]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocations: Self = this.set("locations", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPromotionValue(value: Double): Self = this.set("promotionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotionValue: Self = this.set("promotionValue", js.undefined)
+    @scala.inline
+    def setPublishDate(value: SchemaDate): Self = this.set("publishDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishDate: Self = this.set("publishDate", js.undefined)
+    @scala.inline
+    def setQualifications(value: String): Self = this.set("qualifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifications: Self = this.set("qualifications", js.undefined)
+    @scala.inline
+    def setReferenceUrl(value: String): Self = this.set("referenceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceUrl: Self = this.set("referenceUrl", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setRequisitionId(value: String): Self = this.set("requisitionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequisitionId: Self = this.set("requisitionId", js.undefined)
+    @scala.inline
+    def setResponsibilities(value: String): Self = this.set("responsibilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsibilities: Self = this.set("responsibilities", js.undefined)
+    @scala.inline
+    def setStartDate(value: SchemaDate): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    @scala.inline
+    def setUnindexedCustomFields(value: StringDictionary[SchemaCustomField]): Self = this.set("unindexedCustomFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnindexedCustomFields: Self = this.set("unindexedCustomFields", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("visibility", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object put extends js.Object {
   def apply(url: String): HTTPResponse = js.native
+  def apply(url: String, callOptions: js.UndefOr[scala.Nothing], asyncCallback: js.Function): HTTPResponse = js.native
   def apply(url: String, callOptions: HTTPRequest): HTTPResponse = js.native
   def apply(url: String, callOptions: HTTPRequest, asyncCallback: js.Function): HTTPResponse = js.native
 }

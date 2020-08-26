@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LineColor () extends AbstractColor {
   def this(border: Double) = this()
+  def this(border: js.UndefOr[scala.Nothing], inner: Double) = this()
   def this(border: Double, inner: Double) = this()
 }
 

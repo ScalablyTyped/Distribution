@@ -38,23 +38,52 @@ trait CreateDomainConfigurationRequest extends js.Object {
 
 object CreateDomainConfigurationRequest {
   @scala.inline
-  def apply(
-    domainConfigurationName: DomainConfigurationName,
-    authorizerConfig: AuthorizerConfig = null,
-    domainName: DomainName = null,
-    serverCertificateArns: ServerCertificateArns = null,
-    serviceType: ServiceType = null,
-    tags: TagList = null,
-    validationCertificateArn: AcmCertificateArn = null
-  ): CreateDomainConfigurationRequest = {
+  def apply(domainConfigurationName: DomainConfigurationName): CreateDomainConfigurationRequest = {
     val __obj = js.Dynamic.literal(domainConfigurationName = domainConfigurationName.asInstanceOf[js.Any])
-    if (authorizerConfig != null) __obj.updateDynamic("authorizerConfig")(authorizerConfig.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (serverCertificateArns != null) __obj.updateDynamic("serverCertificateArns")(serverCertificateArns.asInstanceOf[js.Any])
-    if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (validationCertificateArn != null) __obj.updateDynamic("validationCertificateArn")(validationCertificateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDomainConfigurationRequest]
   }
+  @scala.inline
+  implicit class CreateDomainConfigurationRequestOps[Self <: CreateDomainConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainConfigurationName(value: DomainConfigurationName): Self = this.set("domainConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorizerConfig(value: AuthorizerConfig): Self = this.set("authorizerConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizerConfig: Self = this.set("authorizerConfig", js.undefined)
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setServerCertificateArnsVarargs(value: AcmCertificateArn*): Self = this.set("serverCertificateArns", js.Array(value :_*))
+    @scala.inline
+    def setServerCertificateArns(value: ServerCertificateArns): Self = this.set("serverCertificateArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerCertificateArns: Self = this.set("serverCertificateArns", js.undefined)
+    @scala.inline
+    def setServiceType(value: ServiceType): Self = this.set("serviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceType: Self = this.set("serviceType", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setValidationCertificateArn(value: AcmCertificateArn): Self = this.set("validationCertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationCertificateArn: Self = this.set("validationCertificateArn", js.undefined)
+  }
+  
 }
 

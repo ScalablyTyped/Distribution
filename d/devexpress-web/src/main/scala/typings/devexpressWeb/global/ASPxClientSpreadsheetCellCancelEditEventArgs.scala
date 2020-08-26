@@ -20,30 +20,5 @@ class ASPxClientSpreadsheetCellCancelEditEventArgs protected ()
     * @param sheetName Gets the current worksheet's name.
     */
   def this(columnIndex: Double, rowIndex: Double, formula: String, value: String, sheetName: String) = this()
-  /**
-    * Gets the active cell's column index.
-    */
-  /* CompleteClass */
-  override var columnIndex: Double = js.native
-  /**
-    * Gets the active cell's formula.
-    */
-  /* CompleteClass */
-  override var formula: String = js.native
-  /**
-    * Gets the active cell's row index.
-    */
-  /* CompleteClass */
-  override var rowIndex: Double = js.native
-  /**
-    * Gets the current worksheet's name.
-    */
-  /* CompleteClass */
-  override var sheetName: String = js.native
-  /**
-    * Gets the active cell's current value.
-    */
-  /* CompleteClass */
-  override var value: String = js.native
 }
 

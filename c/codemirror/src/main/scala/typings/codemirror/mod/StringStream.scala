@@ -73,6 +73,7 @@ trait StringStream extends js.Object {
     * expression, the returned value will be the array returned by match, in case you need to extract matched groups.
     */
   def `match`(pattern: String): Boolean = js.native
+  def `match`(pattern: String, consume: js.UndefOr[scala.Nothing], caseFold: Boolean): Boolean = js.native
   def `match`(pattern: String, consume: Boolean): Boolean = js.native
   def `match`(pattern: String, consume: Boolean, caseFold: Boolean): Boolean = js.native
   def `match`(pattern: RegExp): js.Array[String] = js.native

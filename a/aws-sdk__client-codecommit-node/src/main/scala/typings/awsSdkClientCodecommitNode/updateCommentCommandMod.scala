@@ -26,16 +26,9 @@ object updateCommentCommandMod extends js.Object {
           Readable
         ] {
     def this(input: UpdateCommentInput) = this()
-    /* CompleteClass */
-    override val input: UpdateCommentInput = js.native
     val middlewareStack: MiddlewareStack[UpdateCommentInput, UpdateCommentOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[UpdateCommentInput, UpdateCommentOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[UpdateCommentInput, UpdateCommentOutput] = js.native
   }

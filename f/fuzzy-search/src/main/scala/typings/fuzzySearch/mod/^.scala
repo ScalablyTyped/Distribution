@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class ^[T /* <: js.Object | String */] protected () extends FuzzySearch[T] {
   def this(haystack: js.Array[T]) = this()
   def this(haystack: js.Array[T], keys: js.Array[String]) = this()
+  def this(haystack: js.Array[T], keys: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(haystack: js.Array[T], keys: js.Array[String], options: Options) = this()
 }
 

@@ -14,10 +14,26 @@ trait SchemaResetSearchApplicationRequest extends js.Object {
 
 object SchemaResetSearchApplicationRequest {
   @scala.inline
-  def apply(debugOptions: SchemaDebugOptions = null): SchemaResetSearchApplicationRequest = {
+  def apply(): SchemaResetSearchApplicationRequest = {
     val __obj = js.Dynamic.literal()
-    if (debugOptions != null) __obj.updateDynamic("debugOptions")(debugOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResetSearchApplicationRequest]
   }
+  @scala.inline
+  implicit class SchemaResetSearchApplicationRequestOps[Self <: SchemaResetSearchApplicationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebugOptions(value: SchemaDebugOptions): Self = this.set("debugOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugOptions: Self = this.set("debugOptions", js.undefined)
+  }
+  
 }
 

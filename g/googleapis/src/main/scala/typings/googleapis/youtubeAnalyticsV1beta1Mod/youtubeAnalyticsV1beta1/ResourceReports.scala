@@ -37,6 +37,7 @@ class ResourceReports protected () extends js.Object {
     */
   def query(): GaxiosPromise[SchemaResultTable] = js.native
   def query(callback: BodyResponseCallback[SchemaResultTable]): Unit = js.native
+  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResultTable] = js.native
   def query(params: ParamsResourceReportsQuery): GaxiosPromise[SchemaResultTable] = js.native
   def query(params: ParamsResourceReportsQuery, callback: BodyResponseCallback[SchemaResultTable]): Unit = js.native
   def query(

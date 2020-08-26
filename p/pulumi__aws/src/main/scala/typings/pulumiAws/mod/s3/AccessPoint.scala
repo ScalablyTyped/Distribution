@@ -1,7 +1,7 @@
 package typings.pulumiAws.mod.s3
 
-import typings.pulumiAws.accessPointMod.AccessPointArgs
-import typings.pulumiAws.accessPointMod.AccessPointState
+import typings.pulumiAws.s3AccessPointMod.AccessPointArgs
+import typings.pulumiAws.s3AccessPointMod.AccessPointState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -35,10 +35,12 @@ object AccessPoint extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  def get(name: String, id: Input[ID]): typings.pulumiAws.accessPointMod.AccessPoint = js.native
-  def get(name: String, id: Input[ID], state: AccessPointState): typings.pulumiAws.accessPointMod.AccessPoint = js.native
-  def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): typings.pulumiAws.accessPointMod.AccessPoint = js.native
+  def get(name: String, id: Input[ID]): typings.pulumiAws.s3AccessPointMod.AccessPoint = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.s3AccessPointMod.AccessPoint = js.native
+  def get(name: String, id: Input[ID], state: AccessPointState): typings.pulumiAws.s3AccessPointMod.AccessPoint = js.native
+  def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): typings.pulumiAws.s3AccessPointMod.AccessPoint = js.native
   /**
     * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.

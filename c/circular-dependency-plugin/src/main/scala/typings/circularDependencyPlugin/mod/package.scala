@@ -8,5 +8,5 @@ package object mod {
   /**
     * Detect modules with circular dependencies when bundling with webpack.
     */
-  type CircularDependencyPlugin = typings.webpack.mod.Plugin
+  type CircularDependencyPlugin = typings.std.Plugin
 }

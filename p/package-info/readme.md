@@ -12,7 +12,7 @@ Get the information of a npm package
 | Keywords           | info, npm, package, package.json, current, module, npm, information, version, author |
 | # releases         | 2 |
 | # dependents       | 22 |
-| # downloads        | 27093 |
+| # downloads        | 26617 |
 | # stars            | 4 |
 
 ## Links

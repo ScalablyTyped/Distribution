@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EnumValuesCodeChange extends js.Object {
-  var enumValues: CodeChange
+  var enumValues: CodeChange = js.native
 }
 
 object EnumValuesCodeChange {
@@ -14,5 +15,20 @@ object EnumValuesCodeChange {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCodeChange]
   }
+  @scala.inline
+  implicit class EnumValuesCodeChangeOps[Self <: EnumValuesCodeChange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnumValues(value: CodeChange): Self = this.set("enumValues", value.asInstanceOf[js.Any])
+  }
+  
 }
 

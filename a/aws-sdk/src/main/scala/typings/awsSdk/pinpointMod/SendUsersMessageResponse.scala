@@ -22,11 +22,32 @@ trait SendUsersMessageResponse extends js.Object {
 
 object SendUsersMessageResponse {
   @scala.inline
-  def apply(ApplicationId: string, RequestId: string = null, Result: MapOfMapOfEndpointMessageResult = null): SendUsersMessageResponse = {
+  def apply(ApplicationId: string): SendUsersMessageResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Result != null) __obj.updateDynamic("Result")(Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendUsersMessageResponse]
   }
+  @scala.inline
+  implicit class SendUsersMessageResponseOps[Self <: SendUsersMessageResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequestId(value: string): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setResult(value: MapOfMapOfEndpointMessageResult): Self = this.set("Result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("Result", js.undefined)
+  }
+  
 }
 

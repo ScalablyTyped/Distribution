@@ -39,12 +39,39 @@ object IPSet {
     Addresses: IPAddresses,
     IPAddressVersion: IPAddressVersion,
     Id: EntityId,
-    Name: EntityName,
-    Description: EntityDescription = null
+    Name: EntityName
   ): IPSet = {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], Addresses = Addresses.asInstanceOf[js.Any], IPAddressVersion = IPAddressVersion.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPSet]
   }
+  @scala.inline
+  implicit class IPSetOps[Self <: IPSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: ResourceArn): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddressesVarargs(value: IPAddress*): Self = this.set("Addresses", js.Array(value :_*))
+    @scala.inline
+    def setAddresses(value: IPAddresses): Self = this.set("Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIPAddressVersion(value: IPAddressVersion): Self = this.set("IPAddressVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: EntityId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: EntityDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

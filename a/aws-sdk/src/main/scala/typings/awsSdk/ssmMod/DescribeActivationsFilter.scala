@@ -18,11 +18,32 @@ trait DescribeActivationsFilter extends js.Object {
 
 object DescribeActivationsFilter {
   @scala.inline
-  def apply(FilterKey: DescribeActivationsFilterKeys = null, FilterValues: StringList = null): DescribeActivationsFilter = {
+  def apply(): DescribeActivationsFilter = {
     val __obj = js.Dynamic.literal()
-    if (FilterKey != null) __obj.updateDynamic("FilterKey")(FilterKey.asInstanceOf[js.Any])
-    if (FilterValues != null) __obj.updateDynamic("FilterValues")(FilterValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeActivationsFilter]
   }
+  @scala.inline
+  implicit class DescribeActivationsFilterOps[Self <: DescribeActivationsFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterKey(value: DescribeActivationsFilterKeys): Self = this.set("FilterKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterKey: Self = this.set("FilterKey", js.undefined)
+    @scala.inline
+    def setFilterValuesVarargs(value: String*): Self = this.set("FilterValues", js.Array(value :_*))
+    @scala.inline
+    def setFilterValues(value: StringList): Self = this.set("FilterValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterValues: Self = this.set("FilterValues", js.undefined)
+  }
+  
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react.react.ForwardRefExoticComponent<rc-tabs.rc-tabs/lib/Tabs.TabsProps & react.react.RefAttributes<std.HTMLDivElement>> & {  TabPane  :(hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren : rc-tabs.rc-tabs/lib/TabPanelList/TabPane.TabPaneProps): react.react.<global>.JSX.Element} */
+/* Inlined react.react.ForwardRefExoticComponent<rc-tabs.rc-tabs/es/Tabs.TabsProps & react.react.RefAttributes<std.HTMLDivElement>> & {  TabPane :(hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren : rc-tabs.rc-tabs/es/TabPanelList/TabPane.TabPaneProps): react.react.<global>.JSX.Element} */
 @js.native
 trait ForwardTabsType extends js.Object {
   @JSName("$$typeof")

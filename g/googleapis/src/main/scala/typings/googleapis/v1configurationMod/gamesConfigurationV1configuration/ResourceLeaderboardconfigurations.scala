@@ -27,6 +27,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLeaderboardconfigurationsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLeaderboardconfigurationsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -55,6 +56,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def get(callback: BodyResponseCallback[SchemaLeaderboardConfiguration]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def get(params: ParamsResourceLeaderboardconfigurationsGet): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def get(
     params: ParamsResourceLeaderboardconfigurationsGet,
@@ -86,6 +88,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def insert(callback: BodyResponseCallback[SchemaLeaderboardConfiguration]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def insert(params: ParamsResourceLeaderboardconfigurationsInsert): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def insert(
     params: ParamsResourceLeaderboardconfigurationsInsert,
@@ -119,6 +122,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaLeaderboardConfigurationListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaLeaderboardConfigurationListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardConfigurationListResponse] = js.native
   def list(params: ParamsResourceLeaderboardconfigurationsList): GaxiosPromise[SchemaLeaderboardConfigurationListResponse] = js.native
   def list(
     params: ParamsResourceLeaderboardconfigurationsList,
@@ -151,6 +155,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def patch(callback: BodyResponseCallback[SchemaLeaderboardConfiguration]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def patch(params: ParamsResourceLeaderboardconfigurationsPatch): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def patch(
     params: ParamsResourceLeaderboardconfigurationsPatch,
@@ -183,6 +188,7 @@ class ResourceLeaderboardconfigurations protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def update(callback: BodyResponseCallback[SchemaLeaderboardConfiguration]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def update(params: ParamsResourceLeaderboardconfigurationsUpdate): GaxiosPromise[SchemaLeaderboardConfiguration] = js.native
   def update(
     params: ParamsResourceLeaderboardconfigurationsUpdate,

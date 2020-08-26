@@ -26,18 +26,38 @@ trait CancelIngestionResponse extends js.Object {
 
 object CancelIngestionResponse {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    IngestionId: IngestionId = null,
-    RequestId: java.lang.String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined
-  ): CancelIngestionResponse = {
+  def apply(): CancelIngestionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (IngestionId != null) __obj.updateDynamic("IngestionId")(IngestionId.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelIngestionResponse]
   }
+  @scala.inline
+  implicit class CancelIngestionResponseOps[Self <: CancelIngestionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setIngestionId(value: IngestionId): Self = this.set("IngestionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestionId: Self = this.set("IngestionId", js.undefined)
+    @scala.inline
+    def setRequestId(value: java.lang.String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

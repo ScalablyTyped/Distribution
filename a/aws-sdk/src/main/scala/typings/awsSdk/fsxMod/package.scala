@@ -15,6 +15,13 @@ package object fsxMod {
   type AdministrativeActionType = typings.awsSdk.fsxMod._AdministrativeActionType | java.lang.String
   type AdministrativeActions = js.Array[typings.awsSdk.fsxMod.AdministrativeAction]
   type ArchivePath = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NONE
+    - typings.awsSdk.awsSdkStrings.NEW
+    - typings.awsSdk.awsSdkStrings.NEW_CHANGED
+    - java.lang.String
+  */
+  type AutoImportPolicyType = typings.awsSdk.fsxMod._AutoImportPolicyType | java.lang.String
   type AutomaticBackupRetentionDays = scala.Double
   type BackupId = java.lang.String
   type BackupIds = js.Array[typings.awsSdk.fsxMod.BackupId]
@@ -38,6 +45,15 @@ package object fsxMod {
   type CreationTime = typings.std.Date
   type DNSName = java.lang.String
   type DailyTime = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.CREATING
+    - typings.awsSdk.awsSdkStrings.AVAILABLE
+    - typings.awsSdk.awsSdkStrings.MISCONFIGURED
+    - typings.awsSdk.awsSdkStrings.UPDATING
+    - typings.awsSdk.awsSdkStrings.DELETING
+    - java.lang.String
+  */
+  type DataRepositoryLifecycle = typings.awsSdk.fsxMod._DataRepositoryLifecycle | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`file-system-id`
     - typings.awsSdk.awsSdkStrings.`task-lifecycle`

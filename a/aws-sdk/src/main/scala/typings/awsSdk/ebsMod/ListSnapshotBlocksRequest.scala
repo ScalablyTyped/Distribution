@@ -26,17 +26,36 @@ trait ListSnapshotBlocksRequest extends js.Object {
 
 object ListSnapshotBlocksRequest {
   @scala.inline
-  def apply(
-    SnapshotId: SnapshotId,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: PageToken = null,
-    StartingBlockIndex: js.UndefOr[BlockIndex] = js.undefined
-  ): ListSnapshotBlocksRequest = {
+  def apply(SnapshotId: SnapshotId): ListSnapshotBlocksRequest = {
     val __obj = js.Dynamic.literal(SnapshotId = SnapshotId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(StartingBlockIndex)) __obj.updateDynamic("StartingBlockIndex")(StartingBlockIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSnapshotBlocksRequest]
   }
+  @scala.inline
+  implicit class ListSnapshotBlocksRequestOps[Self <: ListSnapshotBlocksRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshotId(value: SnapshotId): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: PageToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStartingBlockIndex(value: BlockIndex): Self = this.set("StartingBlockIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartingBlockIndex: Self = this.set("StartingBlockIndex", js.undefined)
+  }
+  
 }
 

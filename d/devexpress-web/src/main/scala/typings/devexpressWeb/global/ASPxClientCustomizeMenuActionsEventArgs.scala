@@ -16,16 +16,5 @@ class ASPxClientCustomizeMenuActionsEventArgs protected ()
     * @param actions An array of IAction objects. This array is assigned to the ASPxClientCustomizeMenuActionsEventArgs.Actions property.
     */
   def this(actions: js.Array[typings.devexpressWeb.ASPxClientMenuAction]) = this()
-  /**
-    * Provides access to the collection of actions available in the toolbar and menu.
-    */
-  /* CompleteClass */
-  override var Actions: js.Array[typings.devexpressWeb.ASPxClientMenuAction] = js.native
-  /**
-    * Returns a menu action with the specified ID. An IAction object.
-    * @param actionId A String value that specifies the action ID.
-    */
-  /* CompleteClass */
-  override def GetById(actionId: String): typings.devexpressWeb.ASPxClientMenuAction = js.native
 }
 

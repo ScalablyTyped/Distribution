@@ -8,10 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("androidui.AndroidUI")
 @js.native
-class AndroidUI_ protected () extends js.Object {
-  def this(androidUIElement: AndroidUIElement) = this()
+trait AndroidUI_ extends js.Object {
   var _canvas: js.Any = js.native
   var _viewRootImpl: js.Any = js.native
   var _windowBound: js.Any = js.native

@@ -4,57 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var attrKey: js.UndefOr[String] = js.undefined
-  var attrsAsObject: js.UndefOr[Boolean] = js.undefined
-  var cdataKey: js.UndefOr[String] = js.undefined
-  var childrenAsArray: js.UndefOr[Boolean] = js.undefined
-  var grokAttr: js.UndefOr[Boolean] = js.undefined
-  var grokText: js.UndefOr[Boolean] = js.undefined
-  var mergeCDATA: js.UndefOr[Boolean] = js.undefined
-  var namespaceKey: js.UndefOr[String] = js.undefined
-  var normalize: js.UndefOr[Boolean] = js.undefined
-  var stripAttrPrefix: js.UndefOr[Boolean] = js.undefined
-  var stripElemPrefix: js.UndefOr[Boolean] = js.undefined
-  var textKey: js.UndefOr[String] = js.undefined
-  var valueKey: js.UndefOr[String] = js.undefined
-  var xmlns: js.UndefOr[Boolean] = js.undefined
+  var attrKey: js.UndefOr[String] = js.native
+  var attrsAsObject: js.UndefOr[Boolean] = js.native
+  var cdataKey: js.UndefOr[String] = js.native
+  var childrenAsArray: js.UndefOr[Boolean] = js.native
+  var grokAttr: js.UndefOr[Boolean] = js.native
+  var grokText: js.UndefOr[Boolean] = js.native
+  var mergeCDATA: js.UndefOr[Boolean] = js.native
+  var namespaceKey: js.UndefOr[String] = js.native
+  var normalize: js.UndefOr[Boolean] = js.native
+  var stripAttrPrefix: js.UndefOr[Boolean] = js.native
+  var stripElemPrefix: js.UndefOr[Boolean] = js.native
+  var textKey: js.UndefOr[String] = js.native
+  var valueKey: js.UndefOr[String] = js.native
+  var xmlns: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    attrKey: String = null,
-    attrsAsObject: js.UndefOr[Boolean] = js.undefined,
-    cdataKey: String = null,
-    childrenAsArray: js.UndefOr[Boolean] = js.undefined,
-    grokAttr: js.UndefOr[Boolean] = js.undefined,
-    grokText: js.UndefOr[Boolean] = js.undefined,
-    mergeCDATA: js.UndefOr[Boolean] = js.undefined,
-    namespaceKey: String = null,
-    normalize: js.UndefOr[Boolean] = js.undefined,
-    stripAttrPrefix: js.UndefOr[Boolean] = js.undefined,
-    stripElemPrefix: js.UndefOr[Boolean] = js.undefined,
-    textKey: String = null,
-    valueKey: String = null,
-    xmlns: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (attrKey != null) __obj.updateDynamic("attrKey")(attrKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(attrsAsObject)) __obj.updateDynamic("attrsAsObject")(attrsAsObject.get.asInstanceOf[js.Any])
-    if (cdataKey != null) __obj.updateDynamic("cdataKey")(cdataKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(childrenAsArray)) __obj.updateDynamic("childrenAsArray")(childrenAsArray.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(grokAttr)) __obj.updateDynamic("grokAttr")(grokAttr.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(grokText)) __obj.updateDynamic("grokText")(grokText.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeCDATA)) __obj.updateDynamic("mergeCDATA")(mergeCDATA.get.asInstanceOf[js.Any])
-    if (namespaceKey != null) __obj.updateDynamic("namespaceKey")(namespaceKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripAttrPrefix)) __obj.updateDynamic("stripAttrPrefix")(stripAttrPrefix.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripElemPrefix)) __obj.updateDynamic("stripElemPrefix")(stripElemPrefix.get.asInstanceOf[js.Any])
-    if (textKey != null) __obj.updateDynamic("textKey")(textKey.asInstanceOf[js.Any])
-    if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(xmlns)) __obj.updateDynamic("xmlns")(xmlns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttrKey(value: String): Self = this.set("attrKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttrKey: Self = this.set("attrKey", js.undefined)
+    @scala.inline
+    def setAttrsAsObject(value: Boolean): Self = this.set("attrsAsObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttrsAsObject: Self = this.set("attrsAsObject", js.undefined)
+    @scala.inline
+    def setCdataKey(value: String): Self = this.set("cdataKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdataKey: Self = this.set("cdataKey", js.undefined)
+    @scala.inline
+    def setChildrenAsArray(value: Boolean): Self = this.set("childrenAsArray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildrenAsArray: Self = this.set("childrenAsArray", js.undefined)
+    @scala.inline
+    def setGrokAttr(value: Boolean): Self = this.set("grokAttr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrokAttr: Self = this.set("grokAttr", js.undefined)
+    @scala.inline
+    def setGrokText(value: Boolean): Self = this.set("grokText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrokText: Self = this.set("grokText", js.undefined)
+    @scala.inline
+    def setMergeCDATA(value: Boolean): Self = this.set("mergeCDATA", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeCDATA: Self = this.set("mergeCDATA", js.undefined)
+    @scala.inline
+    def setNamespaceKey(value: String): Self = this.set("namespaceKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceKey: Self = this.set("namespaceKey", js.undefined)
+    @scala.inline
+    def setNormalize(value: Boolean): Self = this.set("normalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNormalize: Self = this.set("normalize", js.undefined)
+    @scala.inline
+    def setStripAttrPrefix(value: Boolean): Self = this.set("stripAttrPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripAttrPrefix: Self = this.set("stripAttrPrefix", js.undefined)
+    @scala.inline
+    def setStripElemPrefix(value: Boolean): Self = this.set("stripElemPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripElemPrefix: Self = this.set("stripElemPrefix", js.undefined)
+    @scala.inline
+    def setTextKey(value: String): Self = this.set("textKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextKey: Self = this.set("textKey", js.undefined)
+    @scala.inline
+    def setValueKey(value: String): Self = this.set("valueKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueKey: Self = this.set("valueKey", js.undefined)
+    @scala.inline
+    def setXmlns(value: Boolean): Self = this.set("xmlns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXmlns: Self = this.set("xmlns", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ Sorts CSS declarations fast and automatically in a certain order.
 | ------------------ | :-------------: |
 | Full name          | css-declaration-sorter |
 | Keywords           | postcss, postcss-plugin, css, declaration, sorter, property, order |
-| # releases         | 7 |
-| # dependents       | 18 |
-| # downloads        | 173338733 |
+| # releases         | 5 |
+| # dependents       | 20 |
+| # downloads        | 203194142 |
 | # stars            | 1 |
 
 ## Links

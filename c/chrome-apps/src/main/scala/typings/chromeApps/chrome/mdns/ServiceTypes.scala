@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
   * [key in ValidServiceTypes]: string
   */
 /* Inlined std.Record<chrome-apps.chrome.mdns.ValidServiceTypes, string> */
+@js.native
 trait ServiceTypes extends js.Object {
-  var serviceType: String
+  var serviceType: String = js.native
 }
 
 object ServiceTypes {
@@ -19,5 +20,20 @@ object ServiceTypes {
     val __obj = js.Dynamic.literal(serviceType = serviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceTypes]
   }
+  @scala.inline
+  implicit class ServiceTypesOps[Self <: ServiceTypes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceType(value: String): Self = this.set("serviceType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

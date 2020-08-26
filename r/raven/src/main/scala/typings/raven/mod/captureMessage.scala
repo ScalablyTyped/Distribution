@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 object captureMessage extends js.Object {
   def apply(message: String): String = js.native
   def apply(message: String, cb: CaptureCallback): String = js.native
+  def apply(message: String, options: js.UndefOr[scala.Nothing], cb: CaptureCallback): String = js.native
   def apply(message: String, options: CaptureOptions): String = js.native
   def apply(message: String, options: CaptureOptions, cb: CaptureCallback): String = js.native
 }

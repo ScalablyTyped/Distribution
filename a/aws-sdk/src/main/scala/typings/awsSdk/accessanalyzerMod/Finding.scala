@@ -74,22 +74,67 @@ object Finding {
     resourceOwnerAccount: String,
     resourceType: ResourceType,
     status: FindingStatus,
-    updatedAt: Timestamp,
-    action: ActionList = null,
-    error: String = null,
-    isPublic: js.UndefOr[Boolean] = js.undefined,
-    principal: PrincipalMap = null,
-    resource: String = null,
-    sources: FindingSourceList = null
+    updatedAt: Timestamp
   ): Finding = {
     val __obj = js.Dynamic.literal(analyzedAt = analyzedAt.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceOwnerAccount = resourceOwnerAccount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.get.asInstanceOf[js.Any])
-    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[Finding]
   }
+  @scala.inline
+  implicit class FindingOps[Self <: Finding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnalyzedAt(value: Timestamp): Self = this.set("analyzedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCondition(value: ConditionKeyMap): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: FindingId): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceOwnerAccount(value: String): Self = this.set("resourceOwnerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: FindingStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActionVarargs(value: String*): Self = this.set("action", js.Array(value :_*))
+    @scala.inline
+    def setAction(value: ActionList): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setIsPublic(value: Boolean): Self = this.set("isPublic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPublic: Self = this.set("isPublic", js.undefined)
+    @scala.inline
+    def setPrincipal(value: PrincipalMap): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("principal", js.undefined)
+    @scala.inline
+    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: FindingSource*): Self = this.set("sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: FindingSourceList): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("sources", js.undefined)
+  }
+  
 }
 

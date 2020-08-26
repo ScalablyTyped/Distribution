@@ -12,11 +12,12 @@ import scala.scalajs.js.annotation._
   * This interface allows to set a password for an object.
   * @since OOo 3.4
   */
+@js.native
 trait XEncryptionProtectedStorage extends XEncryptionProtectedSource2 {
   /** allows to get the encryption algorithms of the object. */
-  var EncryptionAlgorithms: SafeArray[NamedValue]
+  var EncryptionAlgorithms: SafeArray[NamedValue] = js.native
   /** allows to get the encryption algorithms of the object. */
-  def getEncryptionAlgorithms(): SafeArray[NamedValue]
+  def getEncryptionAlgorithms(): SafeArray[NamedValue] = js.native
   /**
     * allows to set the encryption algorithms for the object.
     *
@@ -37,7 +38,7 @@ trait XEncryptionProtectedStorage extends XEncryptionProtectedSource2 {
     * decrypted, the algorithm might be already known by the object; if a different one is set an exception should be thrown to indicate the error; it
     * should take values from {@link com.sun.star.xml} :crypto::DigestID.
     */
-  def setEncryptionAlgorithms(aAlgorithms: SeqEquiv[NamedValue]): Unit
+  def setEncryptionAlgorithms(aAlgorithms: SeqEquiv[NamedValue]): Unit = js.native
 }
 
 object XEncryptionProtectedStorage {
@@ -57,5 +58,24 @@ object XEncryptionProtectedStorage {
     val __obj = js.Dynamic.literal(EncryptionAlgorithms = EncryptionAlgorithms.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getEncryptionAlgorithms = js.Any.fromFunction0(getEncryptionAlgorithms), hasEncryptionData = js.Any.fromFunction0(hasEncryptionData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEncryption = js.Any.fromFunction0(removeEncryption), setEncryptionAlgorithms = js.Any.fromFunction1(setEncryptionAlgorithms), setEncryptionData = js.Any.fromFunction1(setEncryptionData), setEncryptionPassword = js.Any.fromFunction1(setEncryptionPassword))
     __obj.asInstanceOf[XEncryptionProtectedStorage]
   }
+  @scala.inline
+  implicit class XEncryptionProtectedStorageOps[Self <: XEncryptionProtectedStorage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionAlgorithms(value: SafeArray[NamedValue]): Self = this.set("EncryptionAlgorithms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetEncryptionAlgorithms(value: () => SafeArray[NamedValue]): Self = this.set("getEncryptionAlgorithms", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetEncryptionAlgorithms(value: SeqEquiv[NamedValue] => Unit): Self = this.set("setEncryptionAlgorithms", js.Any.fromFunction1(value))
+  }
+  
 }
 

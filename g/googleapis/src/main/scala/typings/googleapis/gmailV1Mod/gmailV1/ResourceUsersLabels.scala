@@ -28,6 +28,7 @@ class ResourceUsersLabels protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaLabel] = js.native
   def create(callback: BodyResponseCallback[SchemaLabel]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLabel] = js.native
   def create(params: ParamsResourceUsersLabelsCreate): GaxiosPromise[SchemaLabel] = js.native
   def create(params: ParamsResourceUsersLabelsCreate, callback: BodyResponseCallback[SchemaLabel]): Unit = js.native
   def create(
@@ -57,6 +58,7 @@ class ResourceUsersLabels protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersLabelsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersLabelsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -85,6 +87,7 @@ class ResourceUsersLabels protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLabel] = js.native
   def get(callback: BodyResponseCallback[SchemaLabel]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLabel] = js.native
   def get(params: ParamsResourceUsersLabelsGet): GaxiosPromise[SchemaLabel] = js.native
   def get(params: ParamsResourceUsersLabelsGet, callback: BodyResponseCallback[SchemaLabel]): Unit = js.native
   def get(
@@ -112,6 +115,7 @@ class ResourceUsersLabels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListLabelsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLabelsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLabelsResponse] = js.native
   def list(params: ParamsResourceUsersLabelsList): GaxiosPromise[SchemaListLabelsResponse] = js.native
   def list(params: ParamsResourceUsersLabelsList, callback: BodyResponseCallback[SchemaListLabelsResponse]): Unit = js.native
   def list(
@@ -141,6 +145,7 @@ class ResourceUsersLabels protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaLabel] = js.native
   def patch(callback: BodyResponseCallback[SchemaLabel]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLabel] = js.native
   def patch(params: ParamsResourceUsersLabelsPatch): GaxiosPromise[SchemaLabel] = js.native
   def patch(params: ParamsResourceUsersLabelsPatch, callback: BodyResponseCallback[SchemaLabel]): Unit = js.native
   def patch(
@@ -170,6 +175,7 @@ class ResourceUsersLabels protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaLabel] = js.native
   def update(callback: BodyResponseCallback[SchemaLabel]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLabel] = js.native
   def update(params: ParamsResourceUsersLabelsUpdate): GaxiosPromise[SchemaLabel] = js.native
   def update(params: ParamsResourceUsersLabelsUpdate, callback: BodyResponseCallback[SchemaLabel]): Unit = js.native
   def update(

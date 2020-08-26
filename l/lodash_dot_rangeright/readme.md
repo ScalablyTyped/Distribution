@@ -12,7 +12,7 @@ The lodash method `_.rangeRight` exported as a module.
 | Keywords           | lodash-modularized, rangeright |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 5906 |
+| # downloads        | 5931 |
 | # stars            | 0 |
 
 ## Links

@@ -1,56 +1,50 @@
 package typings.stripe.mod.accounts
 
-import typings.stripe.mod.IAddress
-import typings.stripe.mod.IAddressKana
-import typings.stripe.mod.IAddressKanji
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICompanyCreateUpdateOptions extends ICompanyShared {
   /**
     * The business ID number of the company, as appropriate for the company’s country.
     * (Examples are an Employer ID Number in the U.S., a Business Number in Canada, or a
     * Company Number in the UK.) This can be unset by updating the value to null and then saving.
     */
-  var tax_id: js.UndefOr[String] = js.undefined
+  var tax_id: js.UndefOr[String] = js.native
   /**
     * The VAT number of the company.
     * This can be unset by updating the value to null and then saving.
     */
-  var vat_id: js.UndefOr[String] = js.undefined
+  var vat_id: js.UndefOr[String] = js.native
 }
 
 object ICompanyCreateUpdateOptions {
   @scala.inline
-  def apply(
-    address: IAddress = null,
-    address_kana: IAddressKana = null,
-    address_kanji: IAddressKanji = null,
-    directors_provided: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    name_kana: String = null,
-    name_kanji: String = null,
-    owners_provided: js.UndefOr[Boolean] = js.undefined,
-    phone: String = null,
-    tax_id: String = null,
-    tax_id_registrar: String = null,
-    vat_id: String = null
-  ): ICompanyCreateUpdateOptions = {
+  def apply(): ICompanyCreateUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (address_kana != null) __obj.updateDynamic("address_kana")(address_kana.asInstanceOf[js.Any])
-    if (address_kanji != null) __obj.updateDynamic("address_kanji")(address_kanji.asInstanceOf[js.Any])
-    if (!js.isUndefined(directors_provided)) __obj.updateDynamic("directors_provided")(directors_provided.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (name_kana != null) __obj.updateDynamic("name_kana")(name_kana.asInstanceOf[js.Any])
-    if (name_kanji != null) __obj.updateDynamic("name_kanji")(name_kanji.asInstanceOf[js.Any])
-    if (!js.isUndefined(owners_provided)) __obj.updateDynamic("owners_provided")(owners_provided.get.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (tax_id != null) __obj.updateDynamic("tax_id")(tax_id.asInstanceOf[js.Any])
-    if (tax_id_registrar != null) __obj.updateDynamic("tax_id_registrar")(tax_id_registrar.asInstanceOf[js.Any])
-    if (vat_id != null) __obj.updateDynamic("vat_id")(vat_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICompanyCreateUpdateOptions]
   }
+  @scala.inline
+  implicit class ICompanyCreateUpdateOptionsOps[Self <: ICompanyCreateUpdateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTax_id(value: String): Self = this.set("tax_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax_id: Self = this.set("tax_id", js.undefined)
+    @scala.inline
+    def setVat_id(value: String): Self = this.set("vat_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVat_id: Self = this.set("vat_id", js.undefined)
+  }
+  
 }
 

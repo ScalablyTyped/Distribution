@@ -30,20 +30,42 @@ trait UserProfileDetails extends js.Object {
 
 object UserProfileDetails {
   @scala.inline
-  def apply(
-    CreationTime: CreationTime = null,
-    DomainId: DomainId = null,
-    LastModifiedTime: LastModifiedTime = null,
-    Status: UserProfileStatus = null,
-    UserProfileName: UserProfileName = null
-  ): UserProfileDetails = {
+  def apply(): UserProfileDetails = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DomainId != null) __obj.updateDynamic("DomainId")(DomainId.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UserProfileName != null) __obj.updateDynamic("UserProfileName")(UserProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfileDetails]
   }
+  @scala.inline
+  implicit class UserProfileDetailsOps[Self <: UserProfileDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDomainId(value: DomainId): Self = this.set("DomainId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainId: Self = this.set("DomainId", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: LastModifiedTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setStatus(value: UserProfileStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUserProfileName(value: UserProfileName): Self = this.set("UserProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProfileName: Self = this.set("UserProfileName", js.undefined)
+  }
+  
 }
 

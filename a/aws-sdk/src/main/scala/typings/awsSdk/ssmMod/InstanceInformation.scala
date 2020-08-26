@@ -31,7 +31,7 @@ trait InstanceInformation extends js.Object {
     */
   var IPAddress: js.UndefOr[typings.awsSdk.ssmMod.IPAddress] = js.native
   /**
-    * The Amazon Identity and Access Management (IAM) role assigned to the on-premises Systems Manager managed instances. This call does not return the IAM role for EC2 instances. 
+    * The Amazon Identity and Access Management (IAM) role assigned to the on-premises Systems Manager managed instance. This call does not return the IAM role for EC2 instances. To retrieve the IAM role for an EC2 instance, use the Amazon EC2 DescribeInstances action. For information, see DescribeInstances in the Amazon EC2 API Reference or describe-instances in the AWS CLI Command Reference.
     */
   var IamRole: js.UndefOr[typings.awsSdk.ssmMod.IamRole] = js.native
   /**
@@ -55,7 +55,7 @@ trait InstanceInformation extends js.Object {
     */
   var LastSuccessfulAssociationExecutionDate: js.UndefOr[DateTime] = js.native
   /**
-    * The name of the managed instance.
+    * The name assigned to an on-premises server or virtual machine (VM) when it is activated as a Systems Manager managed instance. The name is specified as the DefaultInstanceName property using the CreateActivation command. It is applied to the managed instance by specifying the Activation Code and Activation ID when you install SSM Agent on the instance, as explained in Install SSM Agent for a hybrid environment (Linux) and Install SSM Agent for a hybrid environment (Windows). To retrieve the Name tag of an EC2 instance, use the Amazon EC2 DescribeInstances action. For information, see DescribeInstances in the Amazon EC2 API Reference or describe-instances in the AWS CLI Command Reference.
     */
   var Name: js.UndefOr[String] = js.native
   /**
@@ -86,48 +86,98 @@ trait InstanceInformation extends js.Object {
 
 object InstanceInformation {
   @scala.inline
-  def apply(
-    ActivationId: ActivationId = null,
-    AgentVersion: Version = null,
-    AssociationOverview: InstanceAggregatedAssociationOverview = null,
-    AssociationStatus: StatusName = null,
-    ComputerName: ComputerName = null,
-    IPAddress: IPAddress = null,
-    IamRole: IamRole = null,
-    InstanceId: InstanceId = null,
-    IsLatestVersion: js.UndefOr[Boolean] = js.undefined,
-    LastAssociationExecutionDate: DateTime = null,
-    LastPingDateTime: DateTime = null,
-    LastSuccessfulAssociationExecutionDate: DateTime = null,
-    Name: String = null,
-    PingStatus: PingStatus = null,
-    PlatformName: String = null,
-    PlatformType: PlatformType = null,
-    PlatformVersion: String = null,
-    RegistrationDate: DateTime = null,
-    ResourceType: ResourceType = null
-  ): InstanceInformation = {
+  def apply(): InstanceInformation = {
     val __obj = js.Dynamic.literal()
-    if (ActivationId != null) __obj.updateDynamic("ActivationId")(ActivationId.asInstanceOf[js.Any])
-    if (AgentVersion != null) __obj.updateDynamic("AgentVersion")(AgentVersion.asInstanceOf[js.Any])
-    if (AssociationOverview != null) __obj.updateDynamic("AssociationOverview")(AssociationOverview.asInstanceOf[js.Any])
-    if (AssociationStatus != null) __obj.updateDynamic("AssociationStatus")(AssociationStatus.asInstanceOf[js.Any])
-    if (ComputerName != null) __obj.updateDynamic("ComputerName")(ComputerName.asInstanceOf[js.Any])
-    if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress.asInstanceOf[js.Any])
-    if (IamRole != null) __obj.updateDynamic("IamRole")(IamRole.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsLatestVersion)) __obj.updateDynamic("IsLatestVersion")(IsLatestVersion.get.asInstanceOf[js.Any])
-    if (LastAssociationExecutionDate != null) __obj.updateDynamic("LastAssociationExecutionDate")(LastAssociationExecutionDate.asInstanceOf[js.Any])
-    if (LastPingDateTime != null) __obj.updateDynamic("LastPingDateTime")(LastPingDateTime.asInstanceOf[js.Any])
-    if (LastSuccessfulAssociationExecutionDate != null) __obj.updateDynamic("LastSuccessfulAssociationExecutionDate")(LastSuccessfulAssociationExecutionDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PingStatus != null) __obj.updateDynamic("PingStatus")(PingStatus.asInstanceOf[js.Any])
-    if (PlatformName != null) __obj.updateDynamic("PlatformName")(PlatformName.asInstanceOf[js.Any])
-    if (PlatformType != null) __obj.updateDynamic("PlatformType")(PlatformType.asInstanceOf[js.Any])
-    if (PlatformVersion != null) __obj.updateDynamic("PlatformVersion")(PlatformVersion.asInstanceOf[js.Any])
-    if (RegistrationDate != null) __obj.updateDynamic("RegistrationDate")(RegistrationDate.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceInformation]
   }
+  @scala.inline
+  implicit class InstanceInformationOps[Self <: InstanceInformation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivationId(value: ActivationId): Self = this.set("ActivationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivationId: Self = this.set("ActivationId", js.undefined)
+    @scala.inline
+    def setAgentVersion(value: Version): Self = this.set("AgentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentVersion: Self = this.set("AgentVersion", js.undefined)
+    @scala.inline
+    def setAssociationOverview(value: InstanceAggregatedAssociationOverview): Self = this.set("AssociationOverview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationOverview: Self = this.set("AssociationOverview", js.undefined)
+    @scala.inline
+    def setAssociationStatus(value: StatusName): Self = this.set("AssociationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationStatus: Self = this.set("AssociationStatus", js.undefined)
+    @scala.inline
+    def setComputerName(value: ComputerName): Self = this.set("ComputerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputerName: Self = this.set("ComputerName", js.undefined)
+    @scala.inline
+    def setIPAddress(value: IPAddress): Self = this.set("IPAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPAddress: Self = this.set("IPAddress", js.undefined)
+    @scala.inline
+    def setIamRole(value: IamRole): Self = this.set("IamRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRole: Self = this.set("IamRole", js.undefined)
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setIsLatestVersion(value: Boolean): Self = this.set("IsLatestVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLatestVersion: Self = this.set("IsLatestVersion", js.undefined)
+    @scala.inline
+    def setLastAssociationExecutionDate(value: DateTime): Self = this.set("LastAssociationExecutionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAssociationExecutionDate: Self = this.set("LastAssociationExecutionDate", js.undefined)
+    @scala.inline
+    def setLastPingDateTime(value: DateTime): Self = this.set("LastPingDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPingDateTime: Self = this.set("LastPingDateTime", js.undefined)
+    @scala.inline
+    def setLastSuccessfulAssociationExecutionDate(value: DateTime): Self = this.set("LastSuccessfulAssociationExecutionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSuccessfulAssociationExecutionDate: Self = this.set("LastSuccessfulAssociationExecutionDate", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPingStatus(value: PingStatus): Self = this.set("PingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePingStatus: Self = this.set("PingStatus", js.undefined)
+    @scala.inline
+    def setPlatformName(value: String): Self = this.set("PlatformName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformName: Self = this.set("PlatformName", js.undefined)
+    @scala.inline
+    def setPlatformType(value: PlatformType): Self = this.set("PlatformType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformType: Self = this.set("PlatformType", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: String): Self = this.set("PlatformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("PlatformVersion", js.undefined)
+    @scala.inline
+    def setRegistrationDate(value: DateTime): Self = this.set("RegistrationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationDate: Self = this.set("RegistrationDate", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

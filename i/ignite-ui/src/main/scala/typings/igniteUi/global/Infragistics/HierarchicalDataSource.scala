@@ -10,11 +10,5 @@ import scala.scalajs.js.annotation._
 class HierarchicalDataSource protected ()
   extends typings.igniteUi.Infragistics.HierarchicalDataSource {
   def this(settings: HierarchicalDataSourceSettings) = this()
-  /* CompleteClass */
-  override def dataAt(path: js.Object, keyspath: js.Object): Unit = js.native
-  /* CompleteClass */
-  override def dataBind(callback: js.Object, callee: js.Object): Unit = js.native
-  /* CompleteClass */
-  override def root(): Unit = js.native
 }
 

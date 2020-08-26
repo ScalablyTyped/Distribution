@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "use-set-timeout"
-version := "1.0-dt-20190208Z-8c9e93"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20190208Z-26391d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

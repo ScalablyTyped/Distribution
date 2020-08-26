@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ParserError () extends Error {
   var buffer: Buffer = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var offset: Double = js.native
 }
 

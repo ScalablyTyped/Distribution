@@ -15,7 +15,12 @@ object mod extends js.Object {
   val ok: AssertOK = js.native
   val strictEqual: AssertEqual = js.native
   def apply(value: js.Any): Unit = js.native
+  def apply(value: js.Any, status: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
+  def apply(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
+  def apply(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String, opts: js.Object): Unit = js.native
+  def apply(value: js.Any, status: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
   def apply(value: js.Any, status: Double): Unit = js.native
+  def apply(value: js.Any, status: Double, msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
   def apply(value: js.Any, status: Double, msg: String): Unit = js.native
   def apply(value: js.Any, status: Double, msg: String, opts: js.Object): Unit = js.native
   def apply(value: js.Any, status: Double, opts: js.Object): Unit = js.native

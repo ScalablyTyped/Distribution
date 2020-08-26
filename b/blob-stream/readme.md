@@ -12,7 +12,7 @@ A Node-style writable stream for HTML5 Blobs
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 1195471 |
+| # downloads        | 1282988 |
 | # stars            | 4 |
 
 ## Links

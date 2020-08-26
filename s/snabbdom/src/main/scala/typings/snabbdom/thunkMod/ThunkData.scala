@@ -1,58 +1,43 @@
 package typings.snabbdom.thunkMod
 
-import typings.snabbdom.attachtoMod.AttachData
-import typings.snabbdom.attributesMod.Attrs
-import typings.snabbdom.classMod.Classes
-import typings.snabbdom.datasetMod.Dataset
-import typings.snabbdom.eventlistenersMod.On
-import typings.snabbdom.heroMod.Hero
-import typings.snabbdom.hooksMod.Hooks
-import typings.snabbdom.propsMod.Props
-import typings.snabbdom.styleMod.VNodeStyle
-import typings.snabbdom.vnodeMod.Key
 import typings.snabbdom.vnodeMod.VNodeData
 import typings.snabbdom.vnodeMod.VNode_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThunkData extends VNodeData {
   @JSName("args")
-  var args_ThunkData: js.Array[_]
+  var args_ThunkData: js.Array[_] = js.native
   @JSName("fn")
-  def fn_MThunkData(): VNode_
+  def fn_MThunkData(): VNode_ = js.native
 }
 
 object ThunkData {
   @scala.inline
-  def apply(
-    args: js.Array[_],
-    fn: () => VNode_,
-    attachData: AttachData = null,
-    attrs: Attrs = null,
-    `class`: Classes = null,
-    dataset: Dataset = null,
-    hero: Hero = null,
-    hook: Hooks = null,
-    key: Key = null,
-    ns: String = null,
-    on: On = null,
-    props: Props = null,
-    style: VNodeStyle = null
-  ): ThunkData = {
+  def apply(args: js.Array[_], fn: () => VNode_): ThunkData = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], fn = js.Any.fromFunction0(fn))
-    if (attachData != null) __obj.updateDynamic("attachData")(attachData.asInstanceOf[js.Any])
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (hero != null) __obj.updateDynamic("hero")(hero.asInstanceOf[js.Any])
-    if (hook != null) __obj.updateDynamic("hook")(hook.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThunkData]
   }
+  @scala.inline
+  implicit class ThunkDataOps[Self <: ThunkData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: js.Any*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[_]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFn(value: () => VNode_): Self = this.set("fn", js.Any.fromFunction0(value))
+  }
+  
 }
 

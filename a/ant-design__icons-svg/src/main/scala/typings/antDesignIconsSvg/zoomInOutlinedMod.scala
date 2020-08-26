@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/ZoomInOutlined", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/ZoomInOutlined", JSImport.Namespace)
 @js.native
 object zoomInOutlinedMod extends js.Object {
   val default: IconDefinition = js.native

@@ -18,11 +18,32 @@ trait AdditionalLimit extends js.Object {
 
 object AdditionalLimit {
   @scala.inline
-  def apply(LimitName: LimitName = null, LimitValues: LimitValueList = null): AdditionalLimit = {
+  def apply(): AdditionalLimit = {
     val __obj = js.Dynamic.literal()
-    if (LimitName != null) __obj.updateDynamic("LimitName")(LimitName.asInstanceOf[js.Any])
-    if (LimitValues != null) __obj.updateDynamic("LimitValues")(LimitValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalLimit]
   }
+  @scala.inline
+  implicit class AdditionalLimitOps[Self <: AdditionalLimit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimitName(value: LimitName): Self = this.set("LimitName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitName: Self = this.set("LimitName", js.undefined)
+    @scala.inline
+    def setLimitValuesVarargs(value: LimitValue*): Self = this.set("LimitValues", js.Array(value :_*))
+    @scala.inline
+    def setLimitValues(value: LimitValueList): Self = this.set("LimitValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitValues: Self = this.set("LimitValues", js.undefined)
+  }
+  
 }
 

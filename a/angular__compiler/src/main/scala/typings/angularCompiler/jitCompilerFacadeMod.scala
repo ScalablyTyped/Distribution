@@ -1,17 +1,7 @@
 package typings.angularCompiler
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.angularCompiler.anon.InstantiableResourceLoader
 import typings.angularCompiler.compilerFacadeInterfaceMod.CompilerFacade
-import typings.angularCompiler.compilerFacadeInterfaceMod.CoreEnvironment
-import typings.angularCompiler.compilerFacadeInterfaceMod.ParseSourceSpan
-import typings.angularCompiler.compilerFacadeInterfaceMod.R3ComponentMetadataFacade
-import typings.angularCompiler.compilerFacadeInterfaceMod.R3DirectiveMetadataFacade
-import typings.angularCompiler.compilerFacadeInterfaceMod.R3FactoryDefMetadataFacade
-import typings.angularCompiler.compilerFacadeInterfaceMod.R3InjectableMetadataFacade
-import typings.angularCompiler.compilerFacadeInterfaceMod.R3InjectorMetadataFacade
-import typings.angularCompiler.compilerFacadeInterfaceMod.R3NgModuleMetadataFacade
-import typings.angularCompiler.compilerFacadeInterfaceMod.R3PipeMetadataFacade
 import typings.angularCompiler.outputJitMod.JitEvaluator
 import typings.angularCompiler.resourceLoaderMod.ResourceLoader
 import scala.scalajs.js
@@ -24,12 +14,6 @@ object jitCompilerFacadeMod extends js.Object {
   @js.native
   class CompilerFacadeImpl () extends CompilerFacade {
     def this(jitEvaluator: JitEvaluator) = this()
-    /* CompleteClass */
-    override var R3FactoryTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3FactoryTarget */ js.Any = js.native
-    /* CompleteClass */
-    override var R3ResolvedDependencyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3ResolvedDependencyType */ js.Any = js.native
-    /* CompleteClass */
-    override var ResourceLoader: InstantiableResourceLoader = js.native
     @JSName("ResourceLoader")
     var ResourceLoader_CompilerFacadeImpl: Instantiable0[ResourceLoader] = js.native
     var elementSchemaRegistry: js.Any = js.native
@@ -44,22 +28,6 @@ object jitCompilerFacadeMod extends js.Object {
       * @param preStatements a collection of statements that should be evaluated before the expression.
       */
     var jitExpression: js.Any = js.native
-    /* CompleteClass */
-    override def compileComponent(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3ComponentMetadataFacade): js.Any = js.native
-    /* CompleteClass */
-    override def compileDirective(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3DirectiveMetadataFacade): js.Any = js.native
-    /* CompleteClass */
-    override def compileFactory(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3FactoryDefMetadataFacade): js.Any = js.native
-    /* CompleteClass */
-    override def compileInjectable(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3InjectableMetadataFacade): js.Any = js.native
-    /* CompleteClass */
-    override def compileInjector(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3InjectorMetadataFacade): js.Any = js.native
-    /* CompleteClass */
-    override def compileNgModule(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3NgModuleMetadataFacade): js.Any = js.native
-    /* CompleteClass */
-    override def compilePipe(angularCoreEnv: CoreEnvironment, sourceMapUrl: String, meta: R3PipeMetadataFacade): js.Any = js.native
-    /* CompleteClass */
-    override def createParseSourceSpan(kind: String, typeName: String, sourceUrl: String): ParseSourceSpan = js.native
   }
   
   def publishFacade(global: js.Any): Unit = js.native

@@ -12,7 +12,7 @@ Parity's native order entry protocol
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 461 |
+| # downloads        | 465 |
 | # stars            | 0 |
 
 ## Links

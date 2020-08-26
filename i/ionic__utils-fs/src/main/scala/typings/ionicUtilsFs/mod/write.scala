@@ -11,7 +11,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object write extends js.Object {
   def apply(fd: Double, buffer: Buffer): js.Promise[WriteResult] = js.native
+  def apply(
+    fd: Double,
+    buffer: Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[WriteResult] = js.native
+  def apply(fd: Double, buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[WriteResult] = js.native
+  def apply(fd: Double, buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): js.Promise[WriteResult] = js.native
   def apply(fd: Double, buffer: Buffer, offset: Double): js.Promise[WriteResult] = js.native
+  def apply(fd: Double, buffer: Buffer, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): js.Promise[WriteResult] = js.native
   def apply(fd: Double, buffer: Buffer, offset: Double, length: Double): js.Promise[WriteResult] = js.native
   def apply(
     fd: Double,
@@ -43,6 +53,7 @@ object write extends js.Object {
     data: js.Any,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* str */ String, Unit]
   ): Unit = js.native
+  def apply(fd: Double, data: js.Any, offset: js.UndefOr[scala.Nothing], encoding: String): js.Promise[WriteResult] = js.native
   def apply(fd: Double, data: js.Any, offset: Double): js.Promise[WriteResult] = js.native
   def apply(
     fd: Double,

@@ -26,5 +26,26 @@ object ImportAssetsFromS3RequestDetails {
     val __obj = js.Dynamic.literal(AssetSources = AssetSources.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportAssetsFromS3RequestDetails]
   }
+  @scala.inline
+  implicit class ImportAssetsFromS3RequestDetailsOps[Self <: ImportAssetsFromS3RequestDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetSourcesVarargs(value: AssetSourceEntry*): Self = this.set("AssetSources", js.Array(value :_*))
+    @scala.inline
+    def setAssetSources(value: ListOfAssetSourceEntry): Self = this.set("AssetSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataSetId(value: Id): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevisionId(value: Id): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

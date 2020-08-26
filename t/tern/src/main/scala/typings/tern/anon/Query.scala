@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Query[Q /* <: typings.tern.ternMod.Query */] extends js.Object {
-  var query: js.UndefOr[Q] = js.undefined
+  var query: js.UndefOr[Q] = js.native
 }
 
 object Query {
   @scala.inline
-  def apply[/* <: typings.tern.ternMod.Query */ Q](query: Q = null): Query[Q] = {
+  def apply[/* <: typings.tern.ternMod.Query */ Q](): Query[Q] = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query[Q]]
   }
+  @scala.inline
+  implicit class QueryOps[Self <: Query[_], /* <: typings.tern.ternMod.Query */ Q] (val x: Self with Query[Q]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQuery(value: Q): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+  }
+  
 }
 

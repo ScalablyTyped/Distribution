@@ -1,7 +1,7 @@
 package typings.pulumiAws.identityPoolRoleAttachmentMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.cognito.IdentityPoolRoleAttachmentRoleMapping
-import typings.pulumiAws.outputMod.cognito.IdentityPoolRoleAttachmentRoles
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -34,7 +34,7 @@ class IdentityPoolRoleAttachment protected () extends CustomResource {
   /**
     * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
     */
-  val roles: Output_[IdentityPoolRoleAttachmentRoles] = js.native
+  val roles: Output_[StringDictionary[String]] = js.native
 }
 
 /* static members */
@@ -48,8 +48,10 @@ object IdentityPoolRoleAttachment extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): IdentityPoolRoleAttachment = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IdentityPoolRoleAttachment = js.native
   def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState): IdentityPoolRoleAttachment = js.native
   def get(name: String, id: Input[ID], state: IdentityPoolRoleAttachmentState, opts: CustomResourceOptions): IdentityPoolRoleAttachment = js.native
   /**

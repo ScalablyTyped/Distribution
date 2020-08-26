@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-react/lib", JSImport.Namespace)
+@JSImport("@ant-design/icons-react/es", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   @js.native
@@ -26,6 +26,9 @@ object mod extends js.Object {
     ): Unit = js.native
     def clear(): Unit = js.native
     def get(): js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+      ] = js.native
+    def get(key: js.UndefOr[scala.Nothing], colors: TwoToneColorPalette): js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
       ] = js.native
     def get(key: String): js.UndefOr[

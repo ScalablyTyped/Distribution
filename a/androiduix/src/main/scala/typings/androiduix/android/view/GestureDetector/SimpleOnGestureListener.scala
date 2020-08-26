@@ -5,28 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.GestureDetector.SimpleOnGestureListener")
 @js.native
-class SimpleOnGestureListener ()
+trait SimpleOnGestureListener
   extends OnGestureListener
-     with OnDoubleTapListener {
-  /* CompleteClass */
-  override def onDoubleTap(e: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onDoubleTapEvent(e: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onDown(e: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onFling(e1: MotionEvent, e2: MotionEvent, velocityX: Double, velocityY: Double): Boolean = js.native
-  /* CompleteClass */
-  override def onLongPress(e: MotionEvent): Unit = js.native
-  /* CompleteClass */
-  override def onScroll(e1: MotionEvent, e2: MotionEvent, distanceX: Double, distanceY: Double): Boolean = js.native
-  /* CompleteClass */
-  override def onShowPress(e: MotionEvent): Unit = js.native
-  /* CompleteClass */
-  override def onSingleTapConfirmed(e: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onSingleTapUp(e: MotionEvent): Boolean = js.native
+     with OnDoubleTapListener
+
+object SimpleOnGestureListener {
+  @scala.inline
+  def apply(
+    onDoubleTap: MotionEvent => Boolean,
+    onDoubleTapEvent: MotionEvent => Boolean,
+    onDown: MotionEvent => Boolean,
+    onFling: (MotionEvent, MotionEvent, Double, Double) => Boolean,
+    onLongPress: MotionEvent => Unit,
+    onScroll: (MotionEvent, MotionEvent, Double, Double) => Boolean,
+    onShowPress: MotionEvent => Unit,
+    onSingleTapConfirmed: MotionEvent => Boolean,
+    onSingleTapUp: MotionEvent => Boolean
+  ): SimpleOnGestureListener = {
+    val __obj = js.Dynamic.literal(onDoubleTap = js.Any.fromFunction1(onDoubleTap), onDoubleTapEvent = js.Any.fromFunction1(onDoubleTapEvent), onDown = js.Any.fromFunction1(onDown), onFling = js.Any.fromFunction4(onFling), onLongPress = js.Any.fromFunction1(onLongPress), onScroll = js.Any.fromFunction4(onScroll), onShowPress = js.Any.fromFunction1(onShowPress), onSingleTapConfirmed = js.Any.fromFunction1(onSingleTapConfirmed), onSingleTapUp = js.Any.fromFunction1(onSingleTapUp))
+    __obj.asInstanceOf[SimpleOnGestureListener]
+  }
 }
 

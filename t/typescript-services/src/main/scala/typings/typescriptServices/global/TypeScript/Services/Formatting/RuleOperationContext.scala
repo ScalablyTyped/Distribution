@@ -12,12 +12,6 @@ class RuleOperationContext protected ()
         /* context */ typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext, 
         Boolean
       ])*) = this()
-  /* CompleteClass */
-  override var customContextChecks: js.Any = js.native
-  /* CompleteClass */
-  override def InContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = js.native
-  /* CompleteClass */
-  override def IsAny(): Boolean = js.native
 }
 
 /* static members */

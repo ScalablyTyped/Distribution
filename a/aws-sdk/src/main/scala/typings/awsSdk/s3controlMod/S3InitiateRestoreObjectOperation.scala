@@ -18,14 +18,30 @@ trait S3InitiateRestoreObjectOperation extends js.Object {
 
 object S3InitiateRestoreObjectOperation {
   @scala.inline
-  def apply(
-    ExpirationInDays: js.UndefOr[S3ExpirationInDays] = js.undefined,
-    GlacierJobTier: S3GlacierJobTier = null
-  ): S3InitiateRestoreObjectOperation = {
+  def apply(): S3InitiateRestoreObjectOperation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ExpirationInDays)) __obj.updateDynamic("ExpirationInDays")(ExpirationInDays.get.asInstanceOf[js.Any])
-    if (GlacierJobTier != null) __obj.updateDynamic("GlacierJobTier")(GlacierJobTier.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3InitiateRestoreObjectOperation]
   }
+  @scala.inline
+  implicit class S3InitiateRestoreObjectOperationOps[Self <: S3InitiateRestoreObjectOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpirationInDays(value: S3ExpirationInDays): Self = this.set("ExpirationInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationInDays: Self = this.set("ExpirationInDays", js.undefined)
+    @scala.inline
+    def setGlacierJobTier(value: S3GlacierJobTier): Self = this.set("GlacierJobTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlacierJobTier: Self = this.set("GlacierJobTier", js.undefined)
+  }
+  
 }
 

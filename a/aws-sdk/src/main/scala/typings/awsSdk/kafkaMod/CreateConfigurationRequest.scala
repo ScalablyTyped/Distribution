@@ -35,16 +35,36 @@ trait CreateConfigurationRequest extends js.Object {
 
 object CreateConfigurationRequest {
   @scala.inline
-  def apply(
-    Name: string,
-    ServerProperties: _Blob,
-    Description: string = null,
-    KafkaVersions: listOfString = null
-  ): CreateConfigurationRequest = {
+  def apply(Name: string, ServerProperties: _Blob): CreateConfigurationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ServerProperties = ServerProperties.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (KafkaVersions != null) __obj.updateDynamic("KafkaVersions")(KafkaVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigurationRequest]
   }
+  @scala.inline
+  implicit class CreateConfigurationRequestOps[Self <: CreateConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerProperties(value: _Blob): Self = this.set("ServerProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setKafkaVersionsVarargs(value: string*): Self = this.set("KafkaVersions", js.Array(value :_*))
+    @scala.inline
+    def setKafkaVersions(value: listOfString): Self = this.set("KafkaVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKafkaVersions: Self = this.set("KafkaVersions", js.undefined)
+  }
+  
 }
 

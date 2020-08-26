@@ -25,6 +25,7 @@ trait Socket extends EventEmitter {
   def getTransportSocket(): Duplex = js.native
   def hasFinishedOutput(): Boolean = js.native
   def sendFrame(command: String): Writable = js.native
+  def sendFrame(command: String, headers: js.UndefOr[scala.Nothing], streamOptions: WritableOptions): Writable = js.native
   def sendFrame(command: String, headers: js.Any): Writable = js.native
   def sendFrame(command: String, headers: js.Any, streamOptions: WritableOptions): Writable = js.native
   def setCommandHandler(command: String, handler: commandHandler): Unit = js.native

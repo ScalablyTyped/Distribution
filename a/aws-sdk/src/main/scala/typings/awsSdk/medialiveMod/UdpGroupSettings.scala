@@ -22,16 +22,34 @@ trait UdpGroupSettings extends js.Object {
 
 object UdpGroupSettings {
   @scala.inline
-  def apply(
-    InputLossAction: InputLossActionForUdpOut = null,
-    TimedMetadataId3Frame: UdpTimedMetadataId3Frame = null,
-    TimedMetadataId3Period: js.UndefOr[integerMin0] = js.undefined
-  ): UdpGroupSettings = {
+  def apply(): UdpGroupSettings = {
     val __obj = js.Dynamic.literal()
-    if (InputLossAction != null) __obj.updateDynamic("InputLossAction")(InputLossAction.asInstanceOf[js.Any])
-    if (TimedMetadataId3Frame != null) __obj.updateDynamic("TimedMetadataId3Frame")(TimedMetadataId3Frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimedMetadataId3Period)) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UdpGroupSettings]
   }
+  @scala.inline
+  implicit class UdpGroupSettingsOps[Self <: UdpGroupSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputLossAction(value: InputLossActionForUdpOut): Self = this.set("InputLossAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputLossAction: Self = this.set("InputLossAction", js.undefined)
+    @scala.inline
+    def setTimedMetadataId3Frame(value: UdpTimedMetadataId3Frame): Self = this.set("TimedMetadataId3Frame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedMetadataId3Frame: Self = this.set("TimedMetadataId3Frame", js.undefined)
+    @scala.inline
+    def setTimedMetadataId3Period(value: integerMin0): Self = this.set("TimedMetadataId3Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedMetadataId3Period: Self = this.set("TimedMetadataId3Period", js.undefined)
+  }
+  
 }
 

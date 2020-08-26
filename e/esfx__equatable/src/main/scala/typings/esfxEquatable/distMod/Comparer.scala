@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Comparer[T] extends js.Object {
   /**
     * Compares two values:
@@ -11,7 +12,7 @@ trait Comparer[T] extends js.Object {
     * - A positive value indicates `x` is greater than `y`.
     * - A zero value indicates `x` and `y` are equivalent.
     */
-  def compare(x: T, y: T): Double
+  def compare(x: T, y: T): Double = js.native
 }
 
 @JSImport("@esfx/equatable/dist", "Comparer")

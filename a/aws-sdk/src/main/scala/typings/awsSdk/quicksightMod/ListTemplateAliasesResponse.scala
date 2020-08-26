@@ -26,18 +26,40 @@ trait ListTemplateAliasesResponse extends js.Object {
 
 object ListTemplateAliasesResponse {
   @scala.inline
-  def apply(
-    NextToken: String = null,
-    RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined,
-    TemplateAliasList: TemplateAliasList = null
-  ): ListTemplateAliasesResponse = {
+  def apply(): ListTemplateAliasesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
-    if (TemplateAliasList != null) __obj.updateDynamic("TemplateAliasList")(TemplateAliasList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTemplateAliasesResponse]
   }
+  @scala.inline
+  implicit class ListTemplateAliasesResponseOps[Self <: ListTemplateAliasesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTemplateAliasListVarargs(value: TemplateAlias*): Self = this.set("TemplateAliasList", js.Array(value :_*))
+    @scala.inline
+    def setTemplateAliasList(value: TemplateAliasList): Self = this.set("TemplateAliasList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateAliasList: Self = this.set("TemplateAliasList", js.undefined)
+  }
+  
 }
 

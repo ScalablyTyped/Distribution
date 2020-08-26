@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object searchBlob extends js.Object {
   def apply(search_field: String, qs: String): Fragment | `false` = js.native
+  def apply(search_field: String, qs: String, main_field: js.UndefOr[scala.Nothing], LIKE: String): Fragment | `false` = js.native
   def apply(search_field: String, qs: String, main_field: String): Fragment | `false` = js.native
   def apply(search_field: String, qs: String, main_field: String, LIKE: String): Fragment | `false` = js.native
 }

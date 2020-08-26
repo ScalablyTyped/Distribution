@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__address
 
-Typings are for version 4.0.1
+Typings are for version 4.1.0
 
 ## Library description:
 Email address and domain validation
@@ -10,9 +10,9 @@ Email address and domain validation
 | ------------------ | :-------------: |
 | Full name          | @hapi/address |
 | Keywords           | email, domain, address, validation |
-| # releases         | 13 |
+| # releases         | 14 |
 | # dependents       | 5 |
-| # downloads        | 72451337 |
+| # downloads        | 94610932 |
 | # stars            | 0 |
 
 ## Links

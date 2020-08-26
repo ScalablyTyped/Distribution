@@ -19,11 +19,30 @@ trait QueryLogState extends js.Object {
 
 object QueryLogState {
   @scala.inline
-  def apply(cloudwatchLogGroupArn: Input[String] = null, zoneId: Input[String] = null): QueryLogState = {
+  def apply(): QueryLogState = {
     val __obj = js.Dynamic.literal()
-    if (cloudwatchLogGroupArn != null) __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])
-    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryLogState]
   }
+  @scala.inline
+  implicit class QueryLogStateOps[Self <: QueryLogState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatchLogGroupArn(value: Input[String]): Self = this.set("cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchLogGroupArn: Self = this.set("cloudwatchLogGroupArn", js.undefined)
+    @scala.inline
+    def setZoneId(value: Input[String]): Self = this.set("zoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneId: Self = this.set("zoneId", js.undefined)
+  }
+  
 }
 

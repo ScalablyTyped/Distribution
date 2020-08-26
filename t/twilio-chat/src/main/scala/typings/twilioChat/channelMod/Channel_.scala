@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @classdesc A Channel represents a remote channel of communication between multiple Programmable Chat Clients
-  * @property {Object} attributes - The Channel's custom attributes
+  * @property {any} attributes - The Channel's custom attributes
   * @property {String} createdBy - The identity of the User that created this Channel
   * @property {Date} dateCreated - The Date this Channel was created
   * @property {Date} dateUpdated - The Date this Channel was last updated
@@ -61,9 +61,9 @@ class Channel_ protected () extends EventEmitter {
     */
   /**
     * The status of the Channel, relative to the Client: whether the Channel
-    * is <code>known</code> to local Client, Client is <code>invited</code> to or
+    * is <code>notParticipating</code> to local Client, Client is <code>invited</code> to or
     * is <code>joined</code> to this Channel
-    * @typedef {('unknown' | 'known' | 'invited' | 'joined')} Channel#Status
+    * @typedef {('unknown' | 'notParticipating' | 'invited' | 'joined')} Channel#Status
     */
   /**
     * The type of Channel (<code>public</code> or <code>private</code>).
@@ -111,7 +111,7 @@ class Channel_ protected () extends EventEmitter {
     * The Channel's last message's information.
     * @typedef {Object} Channel#LastMessage
     * @property {Number} index - Message's index
-    * @property {Date} timestamp - Message's creation timestamp
+    * @property {Date} dateCreated - Message's creation date
     */
   /**
     * Load and Subscribe to this Channel and do not subscribe to its Members and Messages.
@@ -213,7 +213,11 @@ class Channel_ protected () extends EventEmitter {
     * @returns {Promise<Paginator<Message>>} page of messages
     */
   def getMessages(): js.Promise[Paginator[Message]] = js.native
+  def getMessages(pageSize: js.UndefOr[scala.Nothing], anchor: js.UndefOr[scala.Nothing], direction: String): js.Promise[Paginator[Message]] = js.native
+  def getMessages(pageSize: js.UndefOr[scala.Nothing], anchor: Double): js.Promise[Paginator[Message]] = js.native
+  def getMessages(pageSize: js.UndefOr[scala.Nothing], anchor: Double, direction: String): js.Promise[Paginator[Message]] = js.native
   def getMessages(pageSize: Double): js.Promise[Paginator[Message]] = js.native
+  def getMessages(pageSize: Double, anchor: js.UndefOr[scala.Nothing], direction: String): js.Promise[Paginator[Message]] = js.native
   def getMessages(pageSize: Double, anchor: Double): js.Promise[Paginator[Message]] = js.native
   def getMessages(pageSize: Double, anchor: Double, direction: String): js.Promise[Paginator[Message]] = js.native
   /**
@@ -276,15 +280,15 @@ class Channel_ protected () extends EventEmitter {
     * Send a Message in the Channel.
     * @param {String | FormData | Channel#SendMediaOptions} message - The message body for text message,
     * FormData or MediaOptions for media content. Sending FormData supported only with browser engine
-    * @param {Object} messageAttributes - attributes for the message
+    * @param {any} messageAttributes - attributes for the message
     * @returns {Promise<number|Error|SessionError>} new Message's index in the Channel's messages list
     */
   def sendMessage(message: String): js.Promise[Double] = js.native
-  def sendMessage(message: String, messageAttributes: js.Object): js.Promise[Double] = js.native
+  def sendMessage(message: String, messageAttributes: js.Any): js.Promise[Double] = js.native
   def sendMessage(message: FormData): js.Promise[Double] = js.native
-  def sendMessage(message: FormData, messageAttributes: js.Object): js.Promise[Double] = js.native
+  def sendMessage(message: FormData, messageAttributes: js.Any): js.Promise[Double] = js.native
   def sendMessage(message: SendMediaOptions): js.Promise[Double] = js.native
-  def sendMessage(message: SendMediaOptions, messageAttributes: js.Object): js.Promise[Double] = js.native
+  def sendMessage(message: SendMediaOptions, messageAttributes: js.Any): js.Promise[Double] = js.native
   /**
     * Set last consumed Channel's Message index to last known Message's index in this Channel.
     * @returns {Promise<number|SessionError>} resulting unread messages count in the channel
@@ -313,10 +317,10 @@ class Channel_ protected () extends EventEmitter {
   def uniqueName: String = js.native
   /**
     * Update the Channel's attributes.
-    * @param {Object} attributes - The new attributes object
+    * @param {any} attributes new attributes for Channel.
     * @returns {Promise<Channel|Error|SessionError>}
     */
-  def updateAttributes(attributes: js.Object): js.Promise[this.type] = js.native
+  def updateAttributes(attributes: js.Any): js.Promise[this.type] = js.native
   /**
     * Update the Channel's friendlyName.
     * @param {String} name - The new Channel friendlyName

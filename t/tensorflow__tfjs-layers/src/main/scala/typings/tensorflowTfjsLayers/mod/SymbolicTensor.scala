@@ -46,6 +46,15 @@ class SymbolicTensor protected ()
     sourceLayer: Layer,
     inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
     callArgs: Kwargs,
+    name: js.UndefOr[scala.Nothing],
+    outputTensorIndex: Double
+  ) = this()
+  def this(
+    dtype: DataType,
+    shape: Shape,
+    sourceLayer: Layer,
+    inputs: js.Array[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+    callArgs: Kwargs,
     name: String,
     outputTensorIndex: Double
   ) = this()

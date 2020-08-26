@@ -4,30 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProgressEventInit extends EventInit {
-  var lengthComputable: js.UndefOr[scala.Boolean] = js.undefined
-  var loaded: js.UndefOr[Double] = js.undefined
-  var total: js.UndefOr[Double] = js.undefined
+  var lengthComputable: js.UndefOr[scala.Boolean] = js.native
+  var loaded: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.native
 }
 
 object ProgressEventInit {
   @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    lengthComputable: js.UndefOr[scala.Boolean] = js.undefined,
-    loaded: js.UndefOr[Double] = js.undefined,
-    total: js.UndefOr[Double] = js.undefined
-  ): ProgressEventInit = {
+  def apply(): ProgressEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lengthComputable)) __obj.updateDynamic("lengthComputable")(lengthComputable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressEventInit]
   }
+  @scala.inline
+  implicit class ProgressEventInitOps[Self <: ProgressEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLengthComputable(value: scala.Boolean): Self = this.set("lengthComputable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLengthComputable: Self = this.set("lengthComputable", js.undefined)
+    @scala.inline
+    def setLoaded(value: Double): Self = this.set("loaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoaded: Self = this.set("loaded", js.undefined)
+    @scala.inline
+    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("total", js.undefined)
+  }
+  
 }
 

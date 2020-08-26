@@ -36,16 +36,36 @@ trait SchemaGenericSignedAttestation extends js.Object {
 
 object SchemaGenericSignedAttestation {
   @scala.inline
-  def apply(
-    contentType: String = null,
-    serializedPayload: String = null,
-    signatures: js.Array[SchemaSignature] = null
-  ): SchemaGenericSignedAttestation = {
+  def apply(): SchemaGenericSignedAttestation = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (serializedPayload != null) __obj.updateDynamic("serializedPayload")(serializedPayload.asInstanceOf[js.Any])
-    if (signatures != null) __obj.updateDynamic("signatures")(signatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGenericSignedAttestation]
   }
+  @scala.inline
+  implicit class SchemaGenericSignedAttestationOps[Self <: SchemaGenericSignedAttestation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setSerializedPayload(value: String): Self = this.set("serializedPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerializedPayload: Self = this.set("serializedPayload", js.undefined)
+    @scala.inline
+    def setSignaturesVarargs(value: SchemaSignature*): Self = this.set("signatures", js.Array(value :_*))
+    @scala.inline
+    def setSignatures(value: js.Array[SchemaSignature]): Self = this.set("signatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatures: Self = this.set("signatures", js.undefined)
+  }
+  
 }
 

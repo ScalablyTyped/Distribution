@@ -26,18 +26,38 @@ trait Output extends js.Object {
 
 object Output {
   @scala.inline
-  def apply(
-    Description: Description = null,
-    ExportName: ExportName = null,
-    OutputKey: OutputKey = null,
-    OutputValue: OutputValue = null
-  ): Output = {
+  def apply(): Output = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExportName != null) __obj.updateDynamic("ExportName")(ExportName.asInstanceOf[js.Any])
-    if (OutputKey != null) __obj.updateDynamic("OutputKey")(OutputKey.asInstanceOf[js.Any])
-    if (OutputValue != null) __obj.updateDynamic("OutputValue")(OutputValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
+  @scala.inline
+  implicit class OutputOps[Self <: Output] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExportName(value: ExportName): Self = this.set("ExportName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportName: Self = this.set("ExportName", js.undefined)
+    @scala.inline
+    def setOutputKey(value: OutputKey): Self = this.set("OutputKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputKey: Self = this.set("OutputKey", js.undefined)
+    @scala.inline
+    def setOutputValue(value: OutputValue): Self = this.set("OutputValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputValue: Self = this.set("OutputValue", js.undefined)
+  }
+  
 }
 

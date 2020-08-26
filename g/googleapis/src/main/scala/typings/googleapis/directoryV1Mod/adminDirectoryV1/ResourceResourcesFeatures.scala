@@ -28,6 +28,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceResourcesFeaturesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceResourcesFeaturesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaFeature] = js.native
   def get(callback: BodyResponseCallback[SchemaFeature]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFeature] = js.native
   def get(params: ParamsResourceResourcesFeaturesGet): GaxiosPromise[SchemaFeature] = js.native
   def get(params: ParamsResourceResourcesFeaturesGet, callback: BodyResponseCallback[SchemaFeature]): Unit = js.native
   def get(
@@ -84,6 +86,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaFeature] = js.native
   def insert(callback: BodyResponseCallback[SchemaFeature]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFeature] = js.native
   def insert(params: ParamsResourceResourcesFeaturesInsert): GaxiosPromise[SchemaFeature] = js.native
   def insert(params: ParamsResourceResourcesFeaturesInsert, callback: BodyResponseCallback[SchemaFeature]): Unit = js.native
   def insert(
@@ -113,6 +116,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaFeatures] = js.native
   def list(callback: BodyResponseCallback[SchemaFeatures]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFeatures] = js.native
   def list(params: ParamsResourceResourcesFeaturesList): GaxiosPromise[SchemaFeatures] = js.native
   def list(params: ParamsResourceResourcesFeaturesList, callback: BodyResponseCallback[SchemaFeatures]): Unit = js.native
   def list(
@@ -142,6 +146,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaFeature] = js.native
   def patch(callback: BodyResponseCallback[SchemaFeature]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFeature] = js.native
   def patch(params: ParamsResourceResourcesFeaturesPatch): GaxiosPromise[SchemaFeature] = js.native
   def patch(params: ParamsResourceResourcesFeaturesPatch, callback: BodyResponseCallback[SchemaFeature]): Unit = js.native
   def patch(
@@ -171,6 +176,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     */
   def rename(): GaxiosPromise[Unit] = js.native
   def rename(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def rename(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def rename(params: ParamsResourceResourcesFeaturesRename): GaxiosPromise[Unit] = js.native
   def rename(params: ParamsResourceResourcesFeaturesRename, callback: BodyResponseCallback[Unit]): Unit = js.native
   def rename(
@@ -200,6 +206,7 @@ class ResourceResourcesFeatures protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaFeature] = js.native
   def update(callback: BodyResponseCallback[SchemaFeature]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFeature] = js.native
   def update(params: ParamsResourceResourcesFeaturesUpdate): GaxiosPromise[SchemaFeature] = js.native
   def update(params: ParamsResourceResourcesFeaturesUpdate, callback: BodyResponseCallback[SchemaFeature]): Unit = js.native
   def update(

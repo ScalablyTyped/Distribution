@@ -12,7 +12,7 @@ A very fast streaming multipart parser for node.js
 | Keywords           | parser, parse, parsing, multipart, form-data, streaming |
 | # releases         | 2 |
 | # dependents       | 18 |
-| # downloads        | 58488126 |
+| # downloads        | 61738179 |
 | # stars            | 4 |
 
 ## Links

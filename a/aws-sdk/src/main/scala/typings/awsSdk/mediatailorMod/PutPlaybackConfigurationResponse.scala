@@ -74,42 +74,86 @@ trait PutPlaybackConfigurationResponse extends js.Object {
 
 object PutPlaybackConfigurationResponse {
   @scala.inline
-  def apply(
-    AdDecisionServerUrl: string = null,
-    AvailSuppression: AvailSuppression = null,
-    Bumper: Bumper = null,
-    CdnConfiguration: CdnConfiguration = null,
-    DashConfiguration: DashConfiguration = null,
-    HlsConfiguration: HlsConfiguration = null,
-    LivePreRollConfiguration: LivePreRollConfiguration = null,
-    Name: string = null,
-    PersonalizationThresholdSeconds: js.UndefOr[integerMin1] = js.undefined,
-    PlaybackConfigurationArn: string = null,
-    PlaybackEndpointPrefix: string = null,
-    SessionInitializationEndpointPrefix: string = null,
-    SlateAdUrl: string = null,
-    Tags: mapOfString = null,
-    TranscodeProfileName: string = null,
-    VideoContentSourceUrl: string = null
-  ): PutPlaybackConfigurationResponse = {
+  def apply(): PutPlaybackConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (AdDecisionServerUrl != null) __obj.updateDynamic("AdDecisionServerUrl")(AdDecisionServerUrl.asInstanceOf[js.Any])
-    if (AvailSuppression != null) __obj.updateDynamic("AvailSuppression")(AvailSuppression.asInstanceOf[js.Any])
-    if (Bumper != null) __obj.updateDynamic("Bumper")(Bumper.asInstanceOf[js.Any])
-    if (CdnConfiguration != null) __obj.updateDynamic("CdnConfiguration")(CdnConfiguration.asInstanceOf[js.Any])
-    if (DashConfiguration != null) __obj.updateDynamic("DashConfiguration")(DashConfiguration.asInstanceOf[js.Any])
-    if (HlsConfiguration != null) __obj.updateDynamic("HlsConfiguration")(HlsConfiguration.asInstanceOf[js.Any])
-    if (LivePreRollConfiguration != null) __obj.updateDynamic("LivePreRollConfiguration")(LivePreRollConfiguration.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(PersonalizationThresholdSeconds)) __obj.updateDynamic("PersonalizationThresholdSeconds")(PersonalizationThresholdSeconds.get.asInstanceOf[js.Any])
-    if (PlaybackConfigurationArn != null) __obj.updateDynamic("PlaybackConfigurationArn")(PlaybackConfigurationArn.asInstanceOf[js.Any])
-    if (PlaybackEndpointPrefix != null) __obj.updateDynamic("PlaybackEndpointPrefix")(PlaybackEndpointPrefix.asInstanceOf[js.Any])
-    if (SessionInitializationEndpointPrefix != null) __obj.updateDynamic("SessionInitializationEndpointPrefix")(SessionInitializationEndpointPrefix.asInstanceOf[js.Any])
-    if (SlateAdUrl != null) __obj.updateDynamic("SlateAdUrl")(SlateAdUrl.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TranscodeProfileName != null) __obj.updateDynamic("TranscodeProfileName")(TranscodeProfileName.asInstanceOf[js.Any])
-    if (VideoContentSourceUrl != null) __obj.updateDynamic("VideoContentSourceUrl")(VideoContentSourceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutPlaybackConfigurationResponse]
   }
+  @scala.inline
+  implicit class PutPlaybackConfigurationResponseOps[Self <: PutPlaybackConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdDecisionServerUrl(value: string): Self = this.set("AdDecisionServerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdDecisionServerUrl: Self = this.set("AdDecisionServerUrl", js.undefined)
+    @scala.inline
+    def setAvailSuppression(value: AvailSuppression): Self = this.set("AvailSuppression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailSuppression: Self = this.set("AvailSuppression", js.undefined)
+    @scala.inline
+    def setBumper(value: Bumper): Self = this.set("Bumper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBumper: Self = this.set("Bumper", js.undefined)
+    @scala.inline
+    def setCdnConfiguration(value: CdnConfiguration): Self = this.set("CdnConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdnConfiguration: Self = this.set("CdnConfiguration", js.undefined)
+    @scala.inline
+    def setDashConfiguration(value: DashConfiguration): Self = this.set("DashConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashConfiguration: Self = this.set("DashConfiguration", js.undefined)
+    @scala.inline
+    def setHlsConfiguration(value: HlsConfiguration): Self = this.set("HlsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsConfiguration: Self = this.set("HlsConfiguration", js.undefined)
+    @scala.inline
+    def setLivePreRollConfiguration(value: LivePreRollConfiguration): Self = this.set("LivePreRollConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLivePreRollConfiguration: Self = this.set("LivePreRollConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPersonalizationThresholdSeconds(value: integerMin1): Self = this.set("PersonalizationThresholdSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersonalizationThresholdSeconds: Self = this.set("PersonalizationThresholdSeconds", js.undefined)
+    @scala.inline
+    def setPlaybackConfigurationArn(value: string): Self = this.set("PlaybackConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaybackConfigurationArn: Self = this.set("PlaybackConfigurationArn", js.undefined)
+    @scala.inline
+    def setPlaybackEndpointPrefix(value: string): Self = this.set("PlaybackEndpointPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaybackEndpointPrefix: Self = this.set("PlaybackEndpointPrefix", js.undefined)
+    @scala.inline
+    def setSessionInitializationEndpointPrefix(value: string): Self = this.set("SessionInitializationEndpointPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionInitializationEndpointPrefix: Self = this.set("SessionInitializationEndpointPrefix", js.undefined)
+    @scala.inline
+    def setSlateAdUrl(value: string): Self = this.set("SlateAdUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlateAdUrl: Self = this.set("SlateAdUrl", js.undefined)
+    @scala.inline
+    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTranscodeProfileName(value: string): Self = this.set("TranscodeProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscodeProfileName: Self = this.set("TranscodeProfileName", js.undefined)
+    @scala.inline
+    def setVideoContentSourceUrl(value: string): Self = this.set("VideoContentSourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoContentSourceUrl: Self = this.set("VideoContentSourceUrl", js.undefined)
+  }
+  
 }
 

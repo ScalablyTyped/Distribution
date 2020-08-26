@@ -4,46 +4,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReindexParams extends GenericParams {
   @JSName("body")
-  var body_ReindexParams: typings.elasticsearch.anon.Conflicts
-  var refresh: js.UndefOr[Boolean] = js.undefined
-  var requestsPerSecond: js.UndefOr[Double] = js.undefined
-  var slices: js.UndefOr[Double] = js.undefined
-  var timeout: js.UndefOr[TimeSpan] = js.undefined
-  var waitForActiveShards: js.UndefOr[String] = js.undefined
-  var waitForCompletion: js.UndefOr[Boolean] = js.undefined
+  var body_ReindexParams: typings.elasticsearch.anon.Conflicts = js.native
+  var refresh: js.UndefOr[Boolean] = js.native
+  var requestsPerSecond: js.UndefOr[Double] = js.native
+  var slices: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.native
+  var waitForActiveShards: js.UndefOr[String] = js.native
+  var waitForCompletion: js.UndefOr[Boolean] = js.native
 }
 
 object ReindexParams {
   @scala.inline
-  def apply(
-    body: typings.elasticsearch.anon.Conflicts,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    refresh: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    requestsPerSecond: js.UndefOr[Double] = js.undefined,
-    slices: js.UndefOr[Double] = js.undefined,
-    timeout: TimeSpan = null,
-    waitForActiveShards: String = null,
-    waitForCompletion: js.UndefOr[Boolean] = js.undefined
-  ): ReindexParams = {
+  def apply(body: typings.elasticsearch.anon.Conflicts): ReindexParams = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestsPerSecond)) __obj.updateDynamic("requestsPerSecond")(requestsPerSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slices)) __obj.updateDynamic("slices")(slices.get.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (waitForActiveShards != null) __obj.updateDynamic("waitForActiveShards")(waitForActiveShards.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForCompletion)) __obj.updateDynamic("waitForCompletion")(waitForCompletion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReindexParams]
   }
+  @scala.inline
+  implicit class ReindexParamsOps[Self <: ReindexParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: typings.elasticsearch.anon.Conflicts): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRefresh(value: Boolean): Self = this.set("refresh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    @scala.inline
+    def setRequestsPerSecond(value: Double): Self = this.set("requestsPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestsPerSecond: Self = this.set("requestsPerSecond", js.undefined)
+    @scala.inline
+    def setSlices(value: Double): Self = this.set("slices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlices: Self = this.set("slices", js.undefined)
+    @scala.inline
+    def setTimeout(value: TimeSpan): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setWaitForActiveShards(value: String): Self = this.set("waitForActiveShards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForActiveShards: Self = this.set("waitForActiveShards", js.undefined)
+    @scala.inline
+    def setWaitForCompletion(value: Boolean): Self = this.set("waitForCompletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForCompletion: Self = this.set("waitForCompletion", js.undefined)
+  }
+  
 }
 

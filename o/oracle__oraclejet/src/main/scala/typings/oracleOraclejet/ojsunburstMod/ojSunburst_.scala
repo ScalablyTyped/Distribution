@@ -2,8 +2,8 @@ package typings.oracleOraclejet.ojsunburstMod
 
 import typings.oracleOraclejet.anon.HoverColor
 import typings.oracleOraclejet.anon.LabelColor
-import typings.oracleOraclejet.anon.`16`
-import typings.oracleOraclejet.anon.`17`
+import typings.oracleOraclejet.anon.`18`
+import typings.oracleOraclejet.anon.`19`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
@@ -133,24 +133,24 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
     ], 
     _
   ]) | Null = js.native
-  var onRootNodeContentChanged: (js.Function1[/* event */ JetElementCustomEvent[`16`[K, D]], _]) | Null = js.native
+  var onRootNodeContentChanged: (js.Function1[/* event */ JetElementCustomEvent[`18`[K, D]], _]) | Null = js.native
   var onRotationChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[_]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
   var onSizeLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onSortingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], _]) | Null = js.native
   var onStartAngleChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`17`[K, D]], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`19`[K, D]], _]) | Null = js.native
   var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
   var rootNode: js.Any = js.native
-  var rootNodeContent: `16`[K, D] = js.native
+  var rootNodeContent: `18`[K, D] = js.native
   var rotation: off | on = js.native
   var selection: js.Array[_] = js.native
   var selectionMode: none | single | multiple = js.native
   var sizeLabel: String = js.native
   var sorting: on | off = js.native
   var startAngle: Double = js.native
-  var tooltip: `17`[K, D] = js.native
+  var tooltip: `19`[K, D] = js.native
   var touchResponse: touchStart | auto = js.native
   @JSName("translations")
   var translations_ojSunburst_ : LabelColor = js.native
@@ -465,12 +465,12 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   @JSName("addEventListener")
   def addEventListener_rootNodeContentChanged(
     `type`: rootNodeContentChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`16`[K, D]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`18`[K, D]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_rootNodeContentChanged(
     `type`: rootNodeContentChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`16`[K, D]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`18`[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -509,12 +509,12 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`17`[K, D]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`19`[K, D]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`17`[K, D]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`19`[K, D]], _],
     useCapture: Boolean
   ): Unit = js.native
   def getContextByNode(node: Element): NodeContext | Null = js.native
@@ -554,7 +554,7 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   @JSName("getProperty")
   def getProperty_rootNode(property: rootNode): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any = js.native
   @JSName("getProperty")
-  def getProperty_rootNodeContent(property: rootNodeContent): `16`[K, D] = js.native
+  def getProperty_rootNodeContent(property: rootNodeContent): `18`[K, D] = js.native
   @JSName("getProperty")
   def getProperty_rotation(property: rotation): off | on = js.native
   @JSName("getProperty")
@@ -568,7 +568,7 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   @JSName("getProperty")
   def getProperty_startAngle(property: startAngle): Double = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): `17`[K, D] = js.native
+  def getProperty_tooltip(property: tooltip): `19`[K, D] = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
   def setProperties(properties: ojSunburstSettablePropertiesLenient[K, D]): Unit = js.native
@@ -618,7 +618,7 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   @JSName("setProperty")
   def setProperty_rootNode(property: rootNode, value: js.Any): Unit = js.native
   @JSName("setProperty")
-  def setProperty_rootNodeContent(property: rootNodeContent, value: `16`[K, D]): Unit = js.native
+  def setProperty_rootNodeContent(property: rootNodeContent, value: `18`[K, D]): Unit = js.native
   @JSName("setProperty")
   def setProperty_selection(property: selection, value: js.Array[_]): Unit = js.native
   @JSName("setProperty")
@@ -626,7 +626,7 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   @JSName("setProperty")
   def setProperty_startAngle(property: startAngle, value: Double): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: `17`[K, D]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: `19`[K, D]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelColor): Unit = js.native
 }

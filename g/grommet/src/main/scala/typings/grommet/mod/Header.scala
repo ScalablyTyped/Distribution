@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Header")
+@JSImport("grommet/es6", "Header")
 @js.native
 object Header extends TopLevel[FC[BoxTypes]]
 

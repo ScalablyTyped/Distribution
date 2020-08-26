@@ -7,7 +7,6 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.SchedulerLike
-import typings.rxjs.typesMod.TeardownLogic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +17,7 @@ object combineLatestMod extends js.Object {
   @js.native
   class CombineLatestOperator[T, R] () extends Operator[T, R] {
     def this(resultSelector: js.Function1[/* repeated */ js.Any, R]) = this()
-    var resultSelector: js.UndefOr[js.Any] = js.native
-    /* CompleteClass */
-    override def call(subscriber: Subscriber[R], source: js.Any): TeardownLogic = js.native
+    var resultSelector: js.Any = js.native
   }
   
   @js.native
@@ -30,11 +27,12 @@ object combineLatestMod extends js.Object {
     var _tryResultSelector: js.Any = js.native
     var active: js.Any = js.native
     var observables: js.Any = js.native
-    var resultSelector: js.UndefOr[js.Any] = js.native
+    var resultSelector: js.Any = js.native
     var toRespond: js.Any = js.native
     var values: js.Any = js.native
     /* protected */ def _next(observable: js.Any): Unit = js.native
     def notifyComplete(unused: Subscriber[R]): Unit = js.native
+    def notifyNext(_outerValue: T, innerValue: R, outerIndex: Double): Unit = js.native
   }
   
   def combineLatest[R](observables: (ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]) | SchedulerLike)*): Observable[R] = js.native

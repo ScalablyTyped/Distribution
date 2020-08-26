@@ -8,21 +8,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CaptionSelectorPlugin extends PluginBase {
   /**
     * Not available in phone.
     **/
-  var alignment: String
+  var alignment: String = js.native
   /**
     * Not available in phone.
     **/
-  var anchor: HTMLElement
+  var anchor: HTMLElement = js.native
   /**
     * Not available in phone.
     **/
-  var placement: String
-  def hide(): Unit
-  def show(): Unit
+  var placement: String = js.native
+  def hide(): Unit = js.native
+  def show(): Unit = js.native
 }
 
 object CaptionSelectorPlugin {
@@ -45,5 +46,28 @@ object CaptionSelectorPlugin {
     val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], anchor = anchor.asInstanceOf[js.Any], currentMediaSource = currentMediaSource.asInstanceOf[js.Any], hide = js.Any.fromFunction0(hide), isActive = isActive.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isLoaded = isLoaded.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), mediaPlayer = mediaPlayer.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], show = js.Any.fromFunction0(show), unload = js.Any.fromFunction0(unload), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[CaptionSelectorPlugin]
   }
+  @scala.inline
+  implicit class CaptionSelectorPluginOps[Self <: CaptionSelectorPlugin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnchor(value: HTMLElement): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    @scala.inline
+    def setPlacement(value: String): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+  }
+  
 }
 

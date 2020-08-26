@@ -14,10 +14,26 @@ trait CreateLinkResponse extends js.Object {
 
 object CreateLinkResponse {
   @scala.inline
-  def apply(Link: Link = null): CreateLinkResponse = {
+  def apply(): CreateLinkResponse = {
     val __obj = js.Dynamic.literal()
-    if (Link != null) __obj.updateDynamic("Link")(Link.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLinkResponse]
   }
+  @scala.inline
+  implicit class CreateLinkResponseOps[Self <: CreateLinkResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLink(value: Link): Self = this.set("Link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("Link", js.undefined)
+  }
+  
 }
 

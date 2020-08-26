@@ -12,6 +12,7 @@ class ^ protected () extends HashRing {
   def this(servers: Servers) = this()
   def this(servers: Servers, algorithm: String) = this()
   def this(servers: Servers, algorithm: js.Function1[/* key */ String, String | Buffer]) = this()
+  def this(servers: Servers, algorithm: js.UndefOr[scala.Nothing], options: PartialHashRingOptions) = this()
   def this(servers: Servers, algorithm: String, options: PartialHashRingOptions) = this()
   def this(
     servers: Servers,

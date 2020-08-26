@@ -23,7 +23,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined node.http.ServerResponse & {  send  :next-server.next-server/dist/lib/utils.Send<T>,   json  :next-server.next-server/dist/lib/utils.Send<T>, status (statusCode : number): next-server.next-server/dist/lib/utils.NextApiResponse<T>} */
+/* Inlined node.http.ServerResponse & {  send :next-server.next-server/dist/lib/utils.Send<T>,   json :next-server.next-server/dist/lib/utils.Send<T>, status (statusCode : number): next-server.next-server/dist/lib/utils.NextApiResponse<T>} */
 @js.native
 trait NextApiResponse[T] extends js.Object {
   var _writev: js.UndefOr[
@@ -129,6 +129,7 @@ trait NextApiResponse[T] extends js.Object {
   def end(data: String, cb: js.Function0[Unit]): Unit = js.native
   def end(data: Uint8Array): Unit = js.native
   def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   def eventNames(): js.Array[String | js.Symbol] = js.native
@@ -243,6 +244,11 @@ trait NextApiResponse[T] extends js.Object {
     encoding: BufferEncoding,
     cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
   ): Boolean = js.native
+  def write(
+    str: String,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   // https://github.com/nodejs/node/blob/master/test/parallel/test-http-write-callbacks.js#L53
@@ -251,6 +257,7 @@ trait NextApiResponse[T] extends js.Object {
   def writeContinue(callback: js.Function0[Unit]): Unit = js.native
   def writeHead(statusCode: Double): this.type = js.native
   def writeHead(statusCode: Double, headers: OutgoingHttpHeaders): this.type = js.native
+  def writeHead(statusCode: Double, reasonPhrase: js.UndefOr[scala.Nothing], headers: OutgoingHttpHeaders): this.type = js.native
   def writeHead(statusCode: Double, reasonPhrase: String): this.type = js.native
   def writeHead(statusCode: Double, reasonPhrase: String, headers: OutgoingHttpHeaders): this.type = js.native
   def writeProcessing(): Unit = js.native

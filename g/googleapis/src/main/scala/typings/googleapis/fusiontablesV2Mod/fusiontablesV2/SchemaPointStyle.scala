@@ -22,11 +22,30 @@ trait SchemaPointStyle extends js.Object {
 
 object SchemaPointStyle {
   @scala.inline
-  def apply(iconName: String = null, iconStyler: SchemaStyleFunction = null): SchemaPointStyle = {
+  def apply(): SchemaPointStyle = {
     val __obj = js.Dynamic.literal()
-    if (iconName != null) __obj.updateDynamic("iconName")(iconName.asInstanceOf[js.Any])
-    if (iconStyler != null) __obj.updateDynamic("iconStyler")(iconStyler.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPointStyle]
   }
+  @scala.inline
+  implicit class SchemaPointStyleOps[Self <: SchemaPointStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIconName(value: String): Self = this.set("iconName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconName: Self = this.set("iconName", js.undefined)
+    @scala.inline
+    def setIconStyler(value: SchemaStyleFunction): Self = this.set("iconStyler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconStyler: Self = this.set("iconStyler", js.undefined)
+  }
+  
 }
 

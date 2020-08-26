@@ -85,7 +85,7 @@ trait GetInstanceResult extends js.Object {
     */
   val hostedZoneId: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -152,7 +152,7 @@ trait GetInstanceResult extends js.Object {
     * Specifies the storage type associated with DB instance.
     */
   val storageType: String = js.native
-  val tags: StringDictionary[js.Any] = js.native
+  val tags: StringDictionary[String] = js.native
   /**
     * The time zone of the DB instance.
     */
@@ -203,12 +203,115 @@ object GetInstanceResult {
     resourceId: String,
     storageEncrypted: Boolean,
     storageType: String,
-    tags: StringDictionary[js.Any],
+    tags: StringDictionary[String],
     timezone: String,
     vpcSecurityGroups: js.Array[String]
   ): GetInstanceResult = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], allocatedStorage = allocatedStorage.asInstanceOf[js.Any], autoMinorVersionUpgrade = autoMinorVersionUpgrade.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], backupRetentionPeriod = backupRetentionPeriod.asInstanceOf[js.Any], caCertIdentifier = caCertIdentifier.asInstanceOf[js.Any], dbClusterIdentifier = dbClusterIdentifier.asInstanceOf[js.Any], dbInstanceArn = dbInstanceArn.asInstanceOf[js.Any], dbInstanceClass = dbInstanceClass.asInstanceOf[js.Any], dbInstanceIdentifier = dbInstanceIdentifier.asInstanceOf[js.Any], dbInstancePort = dbInstancePort.asInstanceOf[js.Any], dbName = dbName.asInstanceOf[js.Any], dbParameterGroups = dbParameterGroups.asInstanceOf[js.Any], dbSecurityGroups = dbSecurityGroups.asInstanceOf[js.Any], dbSubnetGroup = dbSubnetGroup.asInstanceOf[js.Any], enabledCloudwatchLogsExports = enabledCloudwatchLogsExports.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], engineVersion = engineVersion.asInstanceOf[js.Any], hostedZoneId = hostedZoneId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], iops = iops.asInstanceOf[js.Any], kmsKeyId = kmsKeyId.asInstanceOf[js.Any], licenseModel = licenseModel.asInstanceOf[js.Any], masterUsername = masterUsername.asInstanceOf[js.Any], monitoringInterval = monitoringInterval.asInstanceOf[js.Any], monitoringRoleArn = monitoringRoleArn.asInstanceOf[js.Any], multiAz = multiAz.asInstanceOf[js.Any], optionGroupMemberships = optionGroupMemberships.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], preferredBackupWindow = preferredBackupWindow.asInstanceOf[js.Any], preferredMaintenanceWindow = preferredMaintenanceWindow.asInstanceOf[js.Any], publiclyAccessible = publiclyAccessible.asInstanceOf[js.Any], replicateSourceDb = replicateSourceDb.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], storageEncrypted = storageEncrypted.asInstanceOf[js.Any], storageType = storageType.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], vpcSecurityGroups = vpcSecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceResult]
   }
+  @scala.inline
+  implicit class GetInstanceResultOps[Self <: GetInstanceResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllocatedStorage(value: Double): Self = this.set("allocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: Boolean): Self = this.set("autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBackupRetentionPeriod(value: Double): Self = this.set("backupRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCaCertIdentifier(value: String): Self = this.set("caCertIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbClusterIdentifier(value: String): Self = this.set("dbClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbInstanceArn(value: String): Self = this.set("dbInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbInstanceClass(value: String): Self = this.set("dbInstanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbInstanceIdentifier(value: String): Self = this.set("dbInstanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbInstancePort(value: Double): Self = this.set("dbInstancePort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbName(value: String): Self = this.set("dbName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbParameterGroupsVarargs(value: String*): Self = this.set("dbParameterGroups", js.Array(value :_*))
+    @scala.inline
+    def setDbParameterGroups(value: js.Array[String]): Self = this.set("dbParameterGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbSecurityGroupsVarargs(value: String*): Self = this.set("dbSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setDbSecurityGroups(value: js.Array[String]): Self = this.set("dbSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbSubnetGroup(value: String): Self = this.set("dbSubnetGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = this.set("enabledCloudwatchLogsExports", js.Array(value :_*))
+    @scala.inline
+    def setEnabledCloudwatchLogsExports(value: js.Array[String]): Self = this.set("enabledCloudwatchLogsExports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEngine(value: String): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHostedZoneId(value: String): Self = this.set("hostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIops(value: Double): Self = this.set("iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLicenseModel(value: String): Self = this.set("licenseModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMasterUsername(value: String): Self = this.set("masterUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMonitoringInterval(value: Double): Self = this.set("monitoringInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMonitoringRoleArn(value: String): Self = this.set("monitoringRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiAz(value: Boolean): Self = this.set("multiAz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptionGroupMembershipsVarargs(value: String*): Self = this.set("optionGroupMemberships", js.Array(value :_*))
+    @scala.inline
+    def setOptionGroupMemberships(value: js.Array[String]): Self = this.set("optionGroupMemberships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreferredBackupWindow(value: String): Self = this.set("preferredBackupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPubliclyAccessible(value: Boolean): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicateSourceDb(value: String): Self = this.set("replicateSourceDb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStorageEncrypted(value: Boolean): Self = this.set("storageEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStorageType(value: String): Self = this.set("storageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcSecurityGroupsVarargs(value: String*): Self = this.set("vpcSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroups(value: js.Array[String]): Self = this.set("vpcSecurityGroups", value.asInstanceOf[js.Any])
+  }
+  
 }
 

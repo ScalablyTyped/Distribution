@@ -42,26 +42,54 @@ trait DBProxyTargetGroup extends js.Object {
 
 object DBProxyTargetGroup {
   @scala.inline
-  def apply(
-    ConnectionPoolConfig: ConnectionPoolConfigurationInfo = null,
-    CreatedDate: TStamp = null,
-    DBProxyName: String = null,
-    IsDefault: js.UndefOr[Boolean] = js.undefined,
-    Status: String = null,
-    TargetGroupArn: String = null,
-    TargetGroupName: String = null,
-    UpdatedDate: TStamp = null
-  ): DBProxyTargetGroup = {
+  def apply(): DBProxyTargetGroup = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionPoolConfig != null) __obj.updateDynamic("ConnectionPoolConfig")(ConnectionPoolConfig.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (DBProxyName != null) __obj.updateDynamic("DBProxyName")(DBProxyName.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TargetGroupArn != null) __obj.updateDynamic("TargetGroupArn")(TargetGroupArn.asInstanceOf[js.Any])
-    if (TargetGroupName != null) __obj.updateDynamic("TargetGroupName")(TargetGroupName.asInstanceOf[js.Any])
-    if (UpdatedDate != null) __obj.updateDynamic("UpdatedDate")(UpdatedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBProxyTargetGroup]
   }
+  @scala.inline
+  implicit class DBProxyTargetGroupOps[Self <: DBProxyTargetGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionPoolConfig(value: ConnectionPoolConfigurationInfo): Self = this.set("ConnectionPoolConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionPoolConfig: Self = this.set("ConnectionPoolConfig", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: TStamp): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBProxyName: Self = this.set("DBProxyName", js.undefined)
+    @scala.inline
+    def setIsDefault(value: Boolean): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTargetGroupArn(value: String): Self = this.set("TargetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupArn: Self = this.set("TargetGroupArn", js.undefined)
+    @scala.inline
+    def setTargetGroupName(value: String): Self = this.set("TargetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupName: Self = this.set("TargetGroupName", js.undefined)
+    @scala.inline
+    def setUpdatedDate(value: TStamp): Self = this.set("UpdatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedDate: Self = this.set("UpdatedDate", js.undefined)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourceInventoryitems protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInventoryItem] = js.native
   def get(callback: BodyResponseCallback[SchemaInventoryItem]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInventoryItem] = js.native
   def get(params: ParamsResourceInventoryitemsGet): GaxiosPromise[SchemaInventoryItem] = js.native
   def get(params: ParamsResourceInventoryitemsGet, callback: BodyResponseCallback[SchemaInventoryItem]): Unit = js.native
   def get(
@@ -67,6 +68,7 @@ class ResourceInventoryitems protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaInventoryItemsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaInventoryItemsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInventoryItemsListResponse] = js.native
   def list(params: ParamsResourceInventoryitemsList): GaxiosPromise[SchemaInventoryItemsListResponse] = js.native
   def list(
     params: ParamsResourceInventoryitemsList,

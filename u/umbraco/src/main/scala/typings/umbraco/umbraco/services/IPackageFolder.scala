@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Package Folder
   */
+@js.native
 trait IPackageFolder extends js.Object
 

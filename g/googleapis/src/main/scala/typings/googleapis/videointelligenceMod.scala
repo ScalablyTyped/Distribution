@@ -76,7 +76,7 @@ object videointelligenceMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.videointelligenceV1Mod.videointelligenceV1.Videointelligence
               ]
             ]
@@ -86,7 +86,7 @@ object videointelligenceMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2.Videointelligence
               ]
             ]
@@ -96,7 +96,7 @@ object videointelligenceMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1.Videointelligence
               ]
             ]
@@ -106,7 +106,7 @@ object videointelligenceMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Videointelligence
               ]
             ]
@@ -116,7 +116,7 @@ object videointelligenceMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Videointelligence
               ]
             ]

@@ -27,20 +27,42 @@ trait BonusPayment extends js.Object {
 
 object BonusPayment {
   @scala.inline
-  def apply(
-    AssignmentId: EntityId = null,
-    BonusAmount: CurrencyAmount = null,
-    GrantTime: Timestamp = null,
-    Reason: String = null,
-    WorkerId: CustomerId = null
-  ): BonusPayment = {
+  def apply(): BonusPayment = {
     val __obj = js.Dynamic.literal()
-    if (AssignmentId != null) __obj.updateDynamic("AssignmentId")(AssignmentId.asInstanceOf[js.Any])
-    if (BonusAmount != null) __obj.updateDynamic("BonusAmount")(BonusAmount.asInstanceOf[js.Any])
-    if (GrantTime != null) __obj.updateDynamic("GrantTime")(GrantTime.asInstanceOf[js.Any])
-    if (Reason != null) __obj.updateDynamic("Reason")(Reason.asInstanceOf[js.Any])
-    if (WorkerId != null) __obj.updateDynamic("WorkerId")(WorkerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BonusPayment]
   }
+  @scala.inline
+  implicit class BonusPaymentOps[Self <: BonusPayment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignmentId(value: EntityId): Self = this.set("AssignmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentId: Self = this.set("AssignmentId", js.undefined)
+    @scala.inline
+    def setBonusAmount(value: CurrencyAmount): Self = this.set("BonusAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBonusAmount: Self = this.set("BonusAmount", js.undefined)
+    @scala.inline
+    def setGrantTime(value: Timestamp): Self = this.set("GrantTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTime: Self = this.set("GrantTime", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("Reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("Reason", js.undefined)
+    @scala.inline
+    def setWorkerId(value: CustomerId): Self = this.set("WorkerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerId: Self = this.set("WorkerId", js.undefined)
+  }
+  
 }
 

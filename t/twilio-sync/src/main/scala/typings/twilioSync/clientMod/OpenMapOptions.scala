@@ -4,24 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OpenMapOptions extends OpenOptions {
-  var includeItems: js.UndefOr[Boolean] = js.undefined
+  var includeItems: js.UndefOr[Boolean] = js.native
 }
 
 object OpenMapOptions {
   @scala.inline
-  def apply(
-    id: String = null,
-    includeItems: js.UndefOr[Boolean] = js.undefined,
-    mode: OpenMode = null,
-    ttl: js.UndefOr[Double] = js.undefined
-  ): OpenMapOptions = {
+  def apply(): OpenMapOptions = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeItems)) __obj.updateDynamic("includeItems")(includeItems.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenMapOptions]
   }
+  @scala.inline
+  implicit class OpenMapOptionsOps[Self <: OpenMapOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncludeItems(value: Boolean): Self = this.set("includeItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeItems: Self = this.set("includeItems", js.undefined)
+  }
+  
 }
 

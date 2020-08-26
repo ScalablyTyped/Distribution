@@ -333,8 +333,76 @@ trait ElementCommands extends js.Object {
     * @since v0.4.0
     */
   def waitForElementNotPresent(selector: String): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
+  def waitForElementNotPresent(selector: String, time: js.UndefOr[scala.Nothing], abortOnFailure: Boolean): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
   def waitForElementNotPresent(selector: String, time: Double): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
   def waitForElementNotPresent(selector: String, time: Double, abortOnFailure: Boolean): this.type = js.native
+  def waitForElementNotPresent(
+    selector: String,
+    time: Double,
+    abortOnFailure: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
   def waitForElementNotPresent(
     selector: String,
     time: Double,
@@ -367,8 +435,76 @@ trait ElementCommands extends js.Object {
     * @see waitForElementVisible
     */
   def waitForElementNotVisible(selector: String): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
+  def waitForElementNotVisible(selector: String, time: js.UndefOr[scala.Nothing], abortOnFailure: Boolean): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
   def waitForElementNotVisible(selector: String, time: Double): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
   def waitForElementNotVisible(selector: String, time: Double, abortOnFailure: Boolean): this.type = js.native
+  def waitForElementNotVisible(
+    selector: String,
+    time: Double,
+    abortOnFailure: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
   def waitForElementNotVisible(
     selector: String,
     time: Double,
@@ -407,8 +543,76 @@ trait ElementCommands extends js.Object {
     * };
     */
   def waitForElementPresent(selector: String): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
+  def waitForElementPresent(selector: String, time: js.UndefOr[scala.Nothing], abortOnFailure: Boolean): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
   def waitForElementPresent(selector: String, time: Double): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
   def waitForElementPresent(selector: String, time: Double, abortOnFailure: Boolean): this.type = js.native
+  def waitForElementPresent(
+    selector: String,
+    time: Double,
+    abortOnFailure: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
   def waitForElementPresent(
     selector: String,
     time: Double,
@@ -447,8 +651,76 @@ trait ElementCommands extends js.Object {
     * };
     */
   def waitForElementVisible(selector: String): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
+  def waitForElementVisible(selector: String, time: js.UndefOr[scala.Nothing], abortOnFailure: Boolean): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: js.UndefOr[scala.Nothing],
+    abortOnFailure: Boolean,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
   def waitForElementVisible(selector: String, time: Double): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: Double,
+    abortOnFailure: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit],
+    message: String
+  ): this.type = js.native
   def waitForElementVisible(selector: String, time: Double, abortOnFailure: Boolean): this.type = js.native
+  def waitForElementVisible(
+    selector: String,
+    time: Double,
+    abortOnFailure: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    message: String
+  ): this.type = js.native
   def waitForElementVisible(
     selector: String,
     time: Double,

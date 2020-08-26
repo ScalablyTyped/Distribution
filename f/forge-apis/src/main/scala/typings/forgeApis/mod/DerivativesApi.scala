@@ -1,10 +1,10 @@
 package typings.forgeApis.mod
 
 import typings.forgeApis.anon.AcceptEncoding
-import typings.forgeApis.anon.AcceptEncodingString
 import typings.forgeApis.anon.Height
 import typings.forgeApis.anon.Range
 import typings.forgeApis.anon.XAdsForce
+import typings.forgeApis.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ class DerivativesApi () extends js.Object {
     * When translating a source file a second time, the previously created manifest is not deleted; it appends the information
     * (only new translations) to the manifest.
     */
-  def getManifest(urn: String, opts: AcceptEncodingString, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getManifest(urn: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns a list of model view (metadata) IDs for a design model. The metadata ID enables end users to select an object tree
     * and properties for a specific model view. Although most design apps (e.g., Fusion and Inventor) only allow a single model
@@ -45,7 +45,7 @@ class DerivativesApi () extends js.Object {
     * (e.g., HVAC, architecture, perspective). Note that you can only retrieve metadata from an input file that has been
     * translated into an SVF file.
     */
-  def getMetadata(urn: String, opts: AcceptEncodingString, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getMetadata(urn: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns an object tree, i.e., a hierarchical list of objects for a model view. To call this endpoint you first need to
     * call the GET {urn}/metadata endpoint, to determine which model view (object tree and set of properties) to use. Although
@@ -53,13 +53,7 @@ class DerivativesApi () extends js.Object {
     * models with multiple model views (e.g., HVAC, architecture, perspective). Note that you can only retrieve metadata from an
     * input file that has been translated into an SVF file.
     */
-  def getModelviewMetadata(
-    urn: String,
-    guid: String,
-    opts: AcceptEncodingString,
-    oauth2Client: AuthClient,
-    credentials: AuthToken
-  ): js.Promise[ApiResponse] = js.native
+  def getModelviewMetadata(urn: String, guid: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns a list of properties for each object in an object tree. Properties are returned according to object ID and do not
     * follow a hierarchical structure. The following image displays a typical list of properties for a Revit object: To call
@@ -67,13 +61,7 @@ class DerivativesApi () extends js.Object {
     * for a design input model. Select a model view (metadata) ID to use when calling the Get Properties endpoint. Note that
     * you can only get properties from a design input file that was previously translated into an SVF file.
     */
-  def getModelviewProperties(
-    urn: String,
-    guid: String,
-    opts: AcceptEncodingString,
-    oauth2Client: AuthClient,
-    credentials: AuthToken
-  ): js.Promise[ApiResponse] = js.native
+  def getModelviewProperties(urn: String, guid: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   /**
     * Returns the thumbnail for the source file.
     */

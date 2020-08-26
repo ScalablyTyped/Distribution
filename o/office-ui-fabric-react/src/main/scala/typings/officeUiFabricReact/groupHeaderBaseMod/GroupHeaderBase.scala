@@ -15,9 +15,11 @@ class GroupHeaderBase protected ()
   var _defaultCheckboxRender: js.Any = js.native
   var _fastDefaultCheckboxRender: js.Any = js.native
   var _onHeaderClick: js.Any = js.native
+  var _onKeyUp: js.Any = js.native
   var _onRenderTitle: js.Any = js.native
-  var _onToggleCollapse: js.Any = js.native
+  var _onToggleClick: js.Any = js.native
   var _onToggleSelectGroupClick: js.Any = js.native
+  var _toggleCollapse: js.Any = js.native
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MGroupHeaderBase(newProps: IGroupHeaderProps): Unit = js.native
 }

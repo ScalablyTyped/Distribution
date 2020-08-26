@@ -12,7 +12,7 @@ Curve fitting method in javascript
 | Keywords           | machine, learning, data, mining, datamining, levenberg, marquardt |
 | # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 9924 |
+| # downloads        | 10494 |
 | # stars            | 1 |
 
 ## Links

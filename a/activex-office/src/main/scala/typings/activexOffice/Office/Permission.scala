@@ -21,6 +21,7 @@ trait Permission extends js.Object {
   var StoreLicenses: Boolean = js.native
   def apply(Index: js.Any): UserPermission = js.native
   def Add(UserId: String): UserPermission = js.native
+  def Add(UserId: String, Permission: js.UndefOr[scala.Nothing], ExpirationDate: VarDate): UserPermission = js.native
   def Add(UserId: String, Permission: MsoPermission): UserPermission = js.native
   def Add(UserId: String, Permission: MsoPermission, ExpirationDate: VarDate): UserPermission = js.native
   def ApplyPolicy(FileName: String): Unit = js.native

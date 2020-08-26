@@ -14,6 +14,7 @@ object abstractComponentMod extends js.Object {
     extends Component[P, S, js.Any] {
     def this(props: P) = this()
     def this(props: P, context: js.Any) = this()
+    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
     var timeoutIds: js.Any = js.native
     /**
       * Clear all known timeouts.

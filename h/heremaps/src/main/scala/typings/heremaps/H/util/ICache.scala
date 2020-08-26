@@ -31,6 +31,11 @@ trait ICache extends js.Object {
     * @param opt_matcher {(function(string, ?, number): boolean)=} - an optional match predicate to customize on which entries the callback will be called
     */
   def forEach(callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit]): Unit = js.native
+  def forEach(
+    callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit],
+    opt_ctx: js.UndefOr[scala.Nothing],
+    opt_matcher: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Boolean]
+  ): Unit = js.native
   def forEach(callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit], opt_ctx: js.Object): Unit = js.native
   def forEach(
     callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit],

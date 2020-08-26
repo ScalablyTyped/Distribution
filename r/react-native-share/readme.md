@@ -12,7 +12,7 @@ Social share, sending simple data to other apps.
 | Keywords           | react-native, android, ios, windows, bridge, react, share |
 | # releases         | 12 |
 | # dependents       | 16 |
-| # downloads        | 1139243 |
+| # downloads        | 1177828 |
 | # stars            | 4 |
 
 ## Links

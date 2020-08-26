@@ -5,17 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxAccount Class */
+@js.native
 trait FaxAccount extends js.Object {
   /** Name of the fax account */
-  val AccountName: String
+  val AccountName: String = js.native
   @JSName("FAXCOMEXLib.FaxAccount_typekey")
-  var FAXCOMEXLibDotFaxAccount_typekey: FaxAccount
+  var FAXCOMEXLibDotFaxAccount_typekey: FaxAccount = js.native
   /** Folders belonging to the account */
-  val Folders: FaxAccountFolders
+  val Folders: FaxAccountFolders = js.native
   /** Events the fax account is listening to */
-  val RegisteredEvents: FAX_ACCOUNT_EVENTS_TYPE_ENUM
+  val RegisteredEvents: FAX_ACCOUNT_EVENTS_TYPE_ENUM = js.native
   /** Set bit-wise combination of events the fax account listens to */
-  def ListenToAccountEvents(EventTypes: FAX_ACCOUNT_EVENTS_TYPE_ENUM): Unit
+  def ListenToAccountEvents(EventTypes: FAX_ACCOUNT_EVENTS_TYPE_ENUM): Unit = js.native
 }
 
 object FaxAccount {
@@ -31,5 +32,28 @@ object FaxAccount {
     __obj.updateDynamic("FAXCOMEXLib.FaxAccount_typekey")(FAXCOMEXLibDotFaxAccount_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaxAccount]
   }
+  @scala.inline
+  implicit class FaxAccountOps[Self <: FaxAccount] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountName(value: String): Self = this.set("AccountName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFAXCOMEXLibDotFaxAccount_typekey(value: FaxAccount): Self = this.set("FAXCOMEXLib.FaxAccount_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFolders(value: FaxAccountFolders): Self = this.set("Folders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setListenToAccountEvents(value: FAX_ACCOUNT_EVENTS_TYPE_ENUM => Unit): Self = this.set("ListenToAccountEvents", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRegisteredEvents(value: FAX_ACCOUNT_EVENTS_TYPE_ENUM): Self = this.set("RegisteredEvents", value.asInstanceOf[js.Any])
+  }
+  
 }
 

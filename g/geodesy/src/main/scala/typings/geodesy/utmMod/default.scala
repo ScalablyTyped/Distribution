@@ -15,8 +15,43 @@ class default protected () extends Utm {
     hemisphere: Hemisphere,
     easting: Double,
     northing: Double,
+    datum: js.UndefOr[scala.Nothing],
+    convergence: Double
+  ) = this()
+  def this(
+    zone: Double,
+    hemisphere: Hemisphere,
+    easting: Double,
+    northing: Double,
     datum: Datum,
     convergence: Double
+  ) = this()
+  def this(
+    zone: Double,
+    hemisphere: Hemisphere,
+    easting: Double,
+    northing: Double,
+    datum: js.UndefOr[scala.Nothing],
+    convergence: js.UndefOr[scala.Nothing],
+    scale: Double
+  ) = this()
+  def this(
+    zone: Double,
+    hemisphere: Hemisphere,
+    easting: Double,
+    northing: Double,
+    datum: js.UndefOr[scala.Nothing],
+    convergence: Double,
+    scale: Double
+  ) = this()
+  def this(
+    zone: Double,
+    hemisphere: Hemisphere,
+    easting: Double,
+    northing: Double,
+    datum: Datum,
+    convergence: js.UndefOr[scala.Nothing],
+    scale: Double
   ) = this()
   def this(
     zone: Double,

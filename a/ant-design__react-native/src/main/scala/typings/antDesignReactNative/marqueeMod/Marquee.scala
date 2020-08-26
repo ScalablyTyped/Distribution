@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Marquee
   extends Component[MarqueeProps, js.Any, js.Any] {
+  var left: js.Any = js.native
   var texts: js.Any = js.native
-  var twidth: Double = js.native
-  var width: Double = js.native
   def moveToHeader(): Unit = js.native
   def onLayout(e: LayoutChangeEvent): Unit = js.native
   def onLayoutContainer(e: LayoutChangeEvent): Unit = js.native

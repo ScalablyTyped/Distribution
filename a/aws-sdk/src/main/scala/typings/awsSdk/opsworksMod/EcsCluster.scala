@@ -26,18 +26,38 @@ trait EcsCluster extends js.Object {
 
 object EcsCluster {
   @scala.inline
-  def apply(
-    EcsClusterArn: String = null,
-    EcsClusterName: String = null,
-    RegisteredAt: DateTime = null,
-    StackId: String = null
-  ): EcsCluster = {
+  def apply(): EcsCluster = {
     val __obj = js.Dynamic.literal()
-    if (EcsClusterArn != null) __obj.updateDynamic("EcsClusterArn")(EcsClusterArn.asInstanceOf[js.Any])
-    if (EcsClusterName != null) __obj.updateDynamic("EcsClusterName")(EcsClusterName.asInstanceOf[js.Any])
-    if (RegisteredAt != null) __obj.updateDynamic("RegisteredAt")(RegisteredAt.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EcsCluster]
   }
+  @scala.inline
+  implicit class EcsClusterOps[Self <: EcsCluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEcsClusterArn(value: String): Self = this.set("EcsClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsClusterArn: Self = this.set("EcsClusterArn", js.undefined)
+    @scala.inline
+    def setEcsClusterName(value: String): Self = this.set("EcsClusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsClusterName: Self = this.set("EcsClusterName", js.undefined)
+    @scala.inline
+    def setRegisteredAt(value: DateTime): Self = this.set("RegisteredAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredAt: Self = this.set("RegisteredAt", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+  }
+  
 }
 

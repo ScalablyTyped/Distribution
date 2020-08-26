@@ -31,5 +31,28 @@ object OpenIdConnectProviderArgs {
     val __obj = js.Dynamic.literal(clientIdLists = clientIdLists.asInstanceOf[js.Any], thumbprintLists = thumbprintLists.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenIdConnectProviderArgs]
   }
+  @scala.inline
+  implicit class OpenIdConnectProviderArgsOps[Self <: OpenIdConnectProviderArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientIdListsVarargs(value: Input[String]*): Self = this.set("clientIdLists", js.Array(value :_*))
+    @scala.inline
+    def setClientIdLists(value: Input[js.Array[Input[String]]]): Self = this.set("clientIdLists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThumbprintListsVarargs(value: Input[String]*): Self = this.set("thumbprintLists", js.Array(value :_*))
+    @scala.inline
+    def setThumbprintLists(value: Input[js.Array[Input[String]]]): Self = this.set("thumbprintLists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: Input[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

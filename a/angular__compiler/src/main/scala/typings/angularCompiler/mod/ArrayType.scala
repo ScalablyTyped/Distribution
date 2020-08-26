@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ArrayType")
 @js.native
 class ArrayType protected ()
-  extends typings.angularCompiler.publicApiMod.ArrayType {
+  extends typings.angularCompiler.compilerMod.ArrayType {
   def this(of: typings.angularCompiler.outputAstMod.Type) = this()
   def this(of: typings.angularCompiler.outputAstMod.Type, modifiers: js.Array[TypeModifier]) = this()
 }

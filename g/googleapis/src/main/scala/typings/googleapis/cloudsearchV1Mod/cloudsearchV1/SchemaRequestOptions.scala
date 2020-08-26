@@ -36,18 +36,38 @@ trait SchemaRequestOptions extends js.Object {
 
 object SchemaRequestOptions {
   @scala.inline
-  def apply(
-    debugOptions: SchemaDebugOptions = null,
-    languageCode: String = null,
-    searchApplicationId: String = null,
-    timeZone: String = null
-  ): SchemaRequestOptions = {
+  def apply(): SchemaRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (debugOptions != null) __obj.updateDynamic("debugOptions")(debugOptions.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (searchApplicationId != null) __obj.updateDynamic("searchApplicationId")(searchApplicationId.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRequestOptions]
   }
+  @scala.inline
+  implicit class SchemaRequestOptionsOps[Self <: SchemaRequestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebugOptions(value: SchemaDebugOptions): Self = this.set("debugOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugOptions: Self = this.set("debugOptions", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setSearchApplicationId(value: String): Self = this.set("searchApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchApplicationId: Self = this.set("searchApplicationId", js.undefined)
+    @scala.inline
+    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+  }
+  
 }
 

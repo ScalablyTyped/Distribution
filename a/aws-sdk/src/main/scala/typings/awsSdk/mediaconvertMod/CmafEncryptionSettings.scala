@@ -34,22 +34,46 @@ trait CmafEncryptionSettings extends js.Object {
 
 object CmafEncryptionSettings {
   @scala.inline
-  def apply(
-    ConstantInitializationVector: stringMin32Max32Pattern09aFAF32 = null,
-    EncryptionMethod: CmafEncryptionType = null,
-    InitializationVectorInManifest: CmafInitializationVectorInManifest = null,
-    SpekeKeyProvider: SpekeKeyProviderCmaf = null,
-    StaticKeyProvider: StaticKeyProvider = null,
-    Type: CmafKeyProviderType = null
-  ): CmafEncryptionSettings = {
+  def apply(): CmafEncryptionSettings = {
     val __obj = js.Dynamic.literal()
-    if (ConstantInitializationVector != null) __obj.updateDynamic("ConstantInitializationVector")(ConstantInitializationVector.asInstanceOf[js.Any])
-    if (EncryptionMethod != null) __obj.updateDynamic("EncryptionMethod")(EncryptionMethod.asInstanceOf[js.Any])
-    if (InitializationVectorInManifest != null) __obj.updateDynamic("InitializationVectorInManifest")(InitializationVectorInManifest.asInstanceOf[js.Any])
-    if (SpekeKeyProvider != null) __obj.updateDynamic("SpekeKeyProvider")(SpekeKeyProvider.asInstanceOf[js.Any])
-    if (StaticKeyProvider != null) __obj.updateDynamic("StaticKeyProvider")(StaticKeyProvider.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmafEncryptionSettings]
   }
+  @scala.inline
+  implicit class CmafEncryptionSettingsOps[Self <: CmafEncryptionSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = this.set("ConstantInitializationVector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstantInitializationVector: Self = this.set("ConstantInitializationVector", js.undefined)
+    @scala.inline
+    def setEncryptionMethod(value: CmafEncryptionType): Self = this.set("EncryptionMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionMethod: Self = this.set("EncryptionMethod", js.undefined)
+    @scala.inline
+    def setInitializationVectorInManifest(value: CmafInitializationVectorInManifest): Self = this.set("InitializationVectorInManifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitializationVectorInManifest: Self = this.set("InitializationVectorInManifest", js.undefined)
+    @scala.inline
+    def setSpekeKeyProvider(value: SpekeKeyProviderCmaf): Self = this.set("SpekeKeyProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpekeKeyProvider: Self = this.set("SpekeKeyProvider", js.undefined)
+    @scala.inline
+    def setStaticKeyProvider(value: StaticKeyProvider): Self = this.set("StaticKeyProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticKeyProvider: Self = this.set("StaticKeyProvider", js.undefined)
+    @scala.inline
+    def setType(value: CmafKeyProviderType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

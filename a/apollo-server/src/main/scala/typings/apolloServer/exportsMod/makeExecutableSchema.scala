@@ -1,7 +1,7 @@
 package typings.apolloServer.exportsMod
 
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.interfacesMod.IExecutableSchemaDefinition
+import typings.graphqlToolsSchema.typesMod.IExecutableSchemaDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object makeExecutableSchema extends js.Object {
   def apply[TContext](
-    hasTypeDefsResolversConnectorsLoggerAllowUndefinedInResolveResolverValidationOptionsDirectiveResolversSchemaDirectivesParseOptionsInheritResolversFromInterfaces: IExecutableSchemaDefinition[TContext]
+    hasTypeDefsResolversLoggerAllowUndefinedInResolveResolverValidationOptionsDirectiveResolversSchemaDirectivesSchemaTransformsParseOptionsInheritResolversFromInterfacesPruningOptions: IExecutableSchemaDefinition[TContext]
   ): GraphQLSchema = js.native
 }
 

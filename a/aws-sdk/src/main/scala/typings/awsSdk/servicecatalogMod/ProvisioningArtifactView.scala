@@ -18,11 +18,30 @@ trait ProvisioningArtifactView extends js.Object {
 
 object ProvisioningArtifactView {
   @scala.inline
-  def apply(ProductViewSummary: ProductViewSummary = null, ProvisioningArtifact: ProvisioningArtifact = null): ProvisioningArtifactView = {
+  def apply(): ProvisioningArtifactView = {
     val __obj = js.Dynamic.literal()
-    if (ProductViewSummary != null) __obj.updateDynamic("ProductViewSummary")(ProductViewSummary.asInstanceOf[js.Any])
-    if (ProvisioningArtifact != null) __obj.updateDynamic("ProvisioningArtifact")(ProvisioningArtifact.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningArtifactView]
   }
+  @scala.inline
+  implicit class ProvisioningArtifactViewOps[Self <: ProvisioningArtifactView] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProductViewSummary(value: ProductViewSummary): Self = this.set("ProductViewSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductViewSummary: Self = this.set("ProductViewSummary", js.undefined)
+    @scala.inline
+    def setProvisioningArtifact(value: ProvisioningArtifact): Self = this.set("ProvisioningArtifact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisioningArtifact: Self = this.set("ProvisioningArtifact", js.undefined)
+  }
+  
 }
 

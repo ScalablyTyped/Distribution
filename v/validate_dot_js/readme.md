@@ -11,8 +11,8 @@ Declarative validations for JavaScript
 | Full name          | validate.js |
 | Keywords           | validation, validate, server, client |
 | # releases         | 3 |
-| # dependents       | 303 |
-| # downloads        | 6892358 |
+| # dependents       | 310 |
+| # downloads        | 7027560 |
 | # stars            | 14 |
 
 ## Links

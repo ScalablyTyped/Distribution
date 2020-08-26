@@ -30,20 +30,42 @@ trait HierarchyGroup extends js.Object {
 
 object HierarchyGroup {
   @scala.inline
-  def apply(
-    Arn: ARN = null,
-    HierarchyPath: HierarchyPath = null,
-    Id: HierarchyGroupId = null,
-    LevelId: HierarchyLevelId = null,
-    Name: HierarchyGroupName = null
-  ): HierarchyGroup = {
+  def apply(): HierarchyGroup = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (HierarchyPath != null) __obj.updateDynamic("HierarchyPath")(HierarchyPath.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (LevelId != null) __obj.updateDynamic("LevelId")(LevelId.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[HierarchyGroup]
   }
+  @scala.inline
+  implicit class HierarchyGroupOps[Self <: HierarchyGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: ARN): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setHierarchyPath(value: HierarchyPath): Self = this.set("HierarchyPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHierarchyPath: Self = this.set("HierarchyPath", js.undefined)
+    @scala.inline
+    def setId(value: HierarchyGroupId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLevelId(value: HierarchyLevelId): Self = this.set("LevelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevelId: Self = this.set("LevelId", js.undefined)
+    @scala.inline
+    def setName(value: HierarchyGroupName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

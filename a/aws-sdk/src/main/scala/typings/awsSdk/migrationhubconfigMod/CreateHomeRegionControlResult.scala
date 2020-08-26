@@ -14,10 +14,26 @@ trait CreateHomeRegionControlResult extends js.Object {
 
 object CreateHomeRegionControlResult {
   @scala.inline
-  def apply(HomeRegionControl: HomeRegionControl = null): CreateHomeRegionControlResult = {
+  def apply(): CreateHomeRegionControlResult = {
     val __obj = js.Dynamic.literal()
-    if (HomeRegionControl != null) __obj.updateDynamic("HomeRegionControl")(HomeRegionControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHomeRegionControlResult]
   }
+  @scala.inline
+  implicit class CreateHomeRegionControlResultOps[Self <: CreateHomeRegionControlResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHomeRegionControl(value: HomeRegionControl): Self = this.set("HomeRegionControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeRegionControl: Self = this.set("HomeRegionControl", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait S3ReferenceDataSource extends js.Object {
 
 object S3ReferenceDataSource {
   @scala.inline
-  def apply(BucketARN: BucketARN = null, FileKey: FileKey = null): S3ReferenceDataSource = {
+  def apply(): S3ReferenceDataSource = {
     val __obj = js.Dynamic.literal()
-    if (BucketARN != null) __obj.updateDynamic("BucketARN")(BucketARN.asInstanceOf[js.Any])
-    if (FileKey != null) __obj.updateDynamic("FileKey")(FileKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3ReferenceDataSource]
   }
+  @scala.inline
+  implicit class S3ReferenceDataSourceOps[Self <: S3ReferenceDataSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketARN(value: BucketARN): Self = this.set("BucketARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketARN: Self = this.set("BucketARN", js.undefined)
+    @scala.inline
+    def setFileKey(value: FileKey): Self = this.set("FileKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileKey: Self = this.set("FileKey", js.undefined)
+  }
+  
 }
 

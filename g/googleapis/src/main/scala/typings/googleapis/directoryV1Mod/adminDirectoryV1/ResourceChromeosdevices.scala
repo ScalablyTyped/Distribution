@@ -29,6 +29,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     */
   def action(): GaxiosPromise[Unit] = js.native
   def action(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def action(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def action(params: ParamsResourceChromeosdevicesAction): GaxiosPromise[Unit] = js.native
   def action(params: ParamsResourceChromeosdevicesAction, callback: BodyResponseCallback[Unit]): Unit = js.native
   def action(
@@ -58,6 +59,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaChromeOsDevice] = js.native
   def get(callback: BodyResponseCallback[SchemaChromeOsDevice]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChromeOsDevice] = js.native
   def get(params: ParamsResourceChromeosdevicesGet): GaxiosPromise[SchemaChromeOsDevice] = js.native
   def get(params: ParamsResourceChromeosdevicesGet, callback: BodyResponseCallback[SchemaChromeOsDevice]): Unit = js.native
   def get(
@@ -92,6 +94,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaChromeOsDevices] = js.native
   def list(callback: BodyResponseCallback[SchemaChromeOsDevices]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChromeOsDevices] = js.native
   def list(params: ParamsResourceChromeosdevicesList): GaxiosPromise[SchemaChromeOsDevices] = js.native
   def list(params: ParamsResourceChromeosdevicesList, callback: BodyResponseCallback[SchemaChromeOsDevices]): Unit = js.native
   def list(
@@ -121,6 +124,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     */
   def moveDevicesToOu(): GaxiosPromise[Unit] = js.native
   def moveDevicesToOu(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def moveDevicesToOu(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def moveDevicesToOu(params: ParamsResourceChromeosdevicesMovedevicestoou): GaxiosPromise[Unit] = js.native
   def moveDevicesToOu(params: ParamsResourceChromeosdevicesMovedevicestoou, callback: BodyResponseCallback[Unit]): Unit = js.native
   def moveDevicesToOu(
@@ -151,6 +155,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaChromeOsDevice] = js.native
   def patch(callback: BodyResponseCallback[SchemaChromeOsDevice]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChromeOsDevice] = js.native
   def patch(params: ParamsResourceChromeosdevicesPatch): GaxiosPromise[SchemaChromeOsDevice] = js.native
   def patch(params: ParamsResourceChromeosdevicesPatch, callback: BodyResponseCallback[SchemaChromeOsDevice]): Unit = js.native
   def patch(
@@ -181,6 +186,7 @@ class ResourceChromeosdevices protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaChromeOsDevice] = js.native
   def update(callback: BodyResponseCallback[SchemaChromeOsDevice]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChromeOsDevice] = js.native
   def update(params: ParamsResourceChromeosdevicesUpdate): GaxiosPromise[SchemaChromeOsDevice] = js.native
   def update(params: ParamsResourceChromeosdevicesUpdate, callback: BodyResponseCallback[SchemaChromeOsDevice]): Unit = js.native
   def update(

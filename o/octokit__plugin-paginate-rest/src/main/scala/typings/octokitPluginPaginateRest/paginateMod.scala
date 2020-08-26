@@ -14,6 +14,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object paginateMod extends js.Object {
   def paginate(octokit: Octokit, route: RequestInterface[js.Object]): js.Promise[PaginationResults[_]] = js.native
+  def paginate(
+    octokit: Octokit,
+    route: RequestInterface[js.Object],
+    parameters: js.UndefOr[scala.Nothing],
+    mapFn: MapFunction[_, _]
+  ): js.Promise[PaginationResults[_]] = js.native
   def paginate(octokit: Octokit, route: RequestInterface[js.Object], parameters: RequestParameters): js.Promise[PaginationResults[_]] = js.native
   def paginate(
     octokit: Octokit,
@@ -22,6 +28,7 @@ object paginateMod extends js.Object {
     mapFn: MapFunction[_, _]
   ): js.Promise[PaginationResults[_]] = js.native
   def paginate(octokit: Octokit, route: Route): js.Promise[PaginationResults[_]] = js.native
+  def paginate(octokit: Octokit, route: Route, parameters: js.UndefOr[scala.Nothing], mapFn: MapFunction[_, _]): js.Promise[PaginationResults[_]] = js.native
   def paginate(octokit: Octokit, route: Route, parameters: RequestParameters): js.Promise[PaginationResults[_]] = js.native
   def paginate(octokit: Octokit, route: Route, parameters: RequestParameters, mapFn: MapFunction[_, _]): js.Promise[PaginationResults[_]] = js.native
 }

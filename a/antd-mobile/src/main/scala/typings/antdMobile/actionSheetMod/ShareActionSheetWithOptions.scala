@@ -1,40 +1,43 @@
 package typings.antdMobile.actionSheetMod
 
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ShareActionSheetWithOptions extends ActionSheetOptions {
-  var badges: js.UndefOr[js.Array[BadgesOption]] = js.undefined
-  var options: js.Array[js.Array[ShareOption] | ShareOption]
+  var badges: js.UndefOr[js.Array[BadgesOption]] = js.native
+  var options: js.Array[js.Array[ShareOption] | ShareOption] = js.native
 }
 
 object ShareActionSheetWithOptions {
   @scala.inline
-  def apply(
-    options: js.Array[js.Array[ShareOption] | ShareOption],
-    badges: js.Array[BadgesOption] = null,
-    cancelButtonIndex: js.UndefOr[Double] = js.undefined,
-    className: String = null,
-    destructiveButtonIndex: js.UndefOr[Double] = js.undefined,
-    maskClosable: js.UndefOr[Boolean] = js.undefined,
-    maskTransitionName: String = null,
-    message: ReactNode = null,
-    title: ReactNode = null,
-    transitionName: String = null
-  ): ShareActionSheetWithOptions = {
+  def apply(options: js.Array[js.Array[ShareOption] | ShareOption]): ShareActionSheetWithOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-    if (badges != null) __obj.updateDynamic("badges")(badges.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelButtonIndex)) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(destructiveButtonIndex)) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.get.asInstanceOf[js.Any])
-    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareActionSheetWithOptions]
   }
+  @scala.inline
+  implicit class ShareActionSheetWithOptionsOps[Self <: ShareActionSheetWithOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOptionsVarargs(value: (js.Array[ShareOption] | ShareOption)*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[js.Array[ShareOption] | ShareOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBadgesVarargs(value: BadgesOption*): Self = this.set("badges", js.Array(value :_*))
+    @scala.inline
+    def setBadges(value: js.Array[BadgesOption]): Self = this.set("badges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadges: Self = this.set("badges", js.undefined)
+  }
+  
 }
 

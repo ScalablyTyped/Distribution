@@ -11,39 +11,64 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<fast-glob.fast-glob/out/types.FileSystemAdapter> */
+@js.native
 trait PartialFileSystemAdapter extends js.Object {
-  var lstat: js.UndefOr[Typeoflstat] = js.undefined
-  var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
-  var readdir: js.UndefOr[Typeofreaddir] = js.undefined
+  var lstat: js.UndefOr[Typeoflstat] = js.native
+  var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.native
+  var readdir: js.UndefOr[Typeofreaddir] = js.native
   var readdirSync: js.UndefOr[
     js.Function2[
       /* path */ PathLike, 
       /* options */ BaseEncodingOptionswithFiEncoding, 
       js.Array[Dirent]
     ]
-  ] = js.undefined
-  var stat: js.UndefOr[typings.nodelibFsScandir.anon.Typeofstat] = js.undefined
-  var statSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
+  ] = js.native
+  var stat: js.UndefOr[typings.nodelibFsScandir.anon.Typeofstat] = js.native
+  var statSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.native
 }
 
 object PartialFileSystemAdapter {
   @scala.inline
-  def apply(
-    lstat: Typeoflstat = null,
-    lstatSync: /* path */ PathLike => Stats = null,
-    readdir: Typeofreaddir = null,
-    readdirSync: (/* path */ PathLike, /* options */ BaseEncodingOptionswithFiEncoding) => js.Array[Dirent] = null,
-    stat: typings.nodelibFsScandir.anon.Typeofstat = null,
-    statSync: /* path */ PathLike => Stats = null
-  ): PartialFileSystemAdapter = {
+  def apply(): PartialFileSystemAdapter = {
     val __obj = js.Dynamic.literal()
-    if (lstat != null) __obj.updateDynamic("lstat")(lstat.asInstanceOf[js.Any])
-    if (lstatSync != null) __obj.updateDynamic("lstatSync")(js.Any.fromFunction1(lstatSync))
-    if (readdir != null) __obj.updateDynamic("readdir")(readdir.asInstanceOf[js.Any])
-    if (readdirSync != null) __obj.updateDynamic("readdirSync")(js.Any.fromFunction2(readdirSync))
-    if (stat != null) __obj.updateDynamic("stat")(stat.asInstanceOf[js.Any])
-    if (statSync != null) __obj.updateDynamic("statSync")(js.Any.fromFunction1(statSync))
     __obj.asInstanceOf[PartialFileSystemAdapter]
   }
+  @scala.inline
+  implicit class PartialFileSystemAdapterOps[Self <: PartialFileSystemAdapter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLstat(value: Typeoflstat): Self = this.set("lstat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLstat: Self = this.set("lstat", js.undefined)
+    @scala.inline
+    def setLstatSync(value: /* path */ PathLike => Stats): Self = this.set("lstatSync", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLstatSync: Self = this.set("lstatSync", js.undefined)
+    @scala.inline
+    def setReaddir(value: Typeofreaddir): Self = this.set("readdir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReaddir: Self = this.set("readdir", js.undefined)
+    @scala.inline
+    def setReaddirSync(value: (/* path */ PathLike, /* options */ BaseEncodingOptionswithFiEncoding) => js.Array[Dirent]): Self = this.set("readdirSync", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteReaddirSync: Self = this.set("readdirSync", js.undefined)
+    @scala.inline
+    def setStat(value: typings.nodelibFsScandir.anon.Typeofstat): Self = this.set("stat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStat: Self = this.set("stat", js.undefined)
+    @scala.inline
+    def setStatSync(value: /* path */ PathLike => Stats): Self = this.set("statSync", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStatSync: Self = this.set("statSync", js.undefined)
+  }
+  
 }
 

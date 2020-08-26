@@ -11,8 +11,8 @@ Typings are for version 1.1.0
 | Full name          | unstated-next |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 13 |
-| # downloads        | 110357 |
+| # dependents       | 15 |
+| # downloads        | 153291 |
 | # stars            | 0 |
 
 ## Links

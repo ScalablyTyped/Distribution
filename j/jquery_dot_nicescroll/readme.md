@@ -12,7 +12,7 @@ Nicescroll is a jquery plugin, for nice customizabled scrollbars with a very sim
 | Keywords           | nicescroll, jquery, jquery-plugin, ecosystem:jquery, interface, window, dom, div, scroll, ios, mobile, desktop, scrollbar, touch, android, chrome, firefox, safari, surface, edge |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 108401 |
+| # downloads        | 110433 |
 | # stars            | 2 |
 
 ## Links

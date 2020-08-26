@@ -106,58 +106,122 @@ trait Command extends js.Object {
 
 object Command {
   @scala.inline
-  def apply(
-    CloudWatchOutputConfig: CloudWatchOutputConfig = null,
-    CommandId: CommandId = null,
-    Comment: Comment = null,
-    CompletedCount: js.UndefOr[CompletedCount] = js.undefined,
-    DeliveryTimedOutCount: js.UndefOr[DeliveryTimedOutCount] = js.undefined,
-    DocumentName: DocumentName = null,
-    DocumentVersion: DocumentVersion = null,
-    ErrorCount: js.UndefOr[ErrorCount] = js.undefined,
-    ExpiresAfter: DateTime = null,
-    InstanceIds: InstanceIdList = null,
-    MaxConcurrency: MaxConcurrency = null,
-    MaxErrors: MaxErrors = null,
-    NotificationConfig: NotificationConfig = null,
-    OutputS3BucketName: S3BucketName = null,
-    OutputS3KeyPrefix: S3KeyPrefix = null,
-    OutputS3Region: S3Region = null,
-    Parameters: Parameters = null,
-    RequestedDateTime: DateTime = null,
-    ServiceRole: ServiceRole = null,
-    Status: CommandStatus = null,
-    StatusDetails: StatusDetails = null,
-    TargetCount: js.UndefOr[TargetCount] = js.undefined,
-    Targets: Targets = null,
-    TimeoutSeconds: js.UndefOr[TimeoutSeconds] = js.undefined
-  ): Command = {
+  def apply(): Command = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchOutputConfig != null) __obj.updateDynamic("CloudWatchOutputConfig")(CloudWatchOutputConfig.asInstanceOf[js.Any])
-    if (CommandId != null) __obj.updateDynamic("CommandId")(CommandId.asInstanceOf[js.Any])
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(CompletedCount)) __obj.updateDynamic("CompletedCount")(CompletedCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeliveryTimedOutCount)) __obj.updateDynamic("DeliveryTimedOutCount")(DeliveryTimedOutCount.get.asInstanceOf[js.Any])
-    if (DocumentName != null) __obj.updateDynamic("DocumentName")(DocumentName.asInstanceOf[js.Any])
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(ErrorCount)) __obj.updateDynamic("ErrorCount")(ErrorCount.get.asInstanceOf[js.Any])
-    if (ExpiresAfter != null) __obj.updateDynamic("ExpiresAfter")(ExpiresAfter.asInstanceOf[js.Any])
-    if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
-    if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency.asInstanceOf[js.Any])
-    if (MaxErrors != null) __obj.updateDynamic("MaxErrors")(MaxErrors.asInstanceOf[js.Any])
-    if (NotificationConfig != null) __obj.updateDynamic("NotificationConfig")(NotificationConfig.asInstanceOf[js.Any])
-    if (OutputS3BucketName != null) __obj.updateDynamic("OutputS3BucketName")(OutputS3BucketName.asInstanceOf[js.Any])
-    if (OutputS3KeyPrefix != null) __obj.updateDynamic("OutputS3KeyPrefix")(OutputS3KeyPrefix.asInstanceOf[js.Any])
-    if (OutputS3Region != null) __obj.updateDynamic("OutputS3Region")(OutputS3Region.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (RequestedDateTime != null) __obj.updateDynamic("RequestedDateTime")(RequestedDateTime.asInstanceOf[js.Any])
-    if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusDetails != null) __obj.updateDynamic("StatusDetails")(StatusDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(TargetCount)) __obj.updateDynamic("TargetCount")(TargetCount.get.asInstanceOf[js.Any])
-    if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeoutSeconds)) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
+  @scala.inline
+  implicit class CommandOps[Self <: Command] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchOutputConfig(value: CloudWatchOutputConfig): Self = this.set("CloudWatchOutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchOutputConfig: Self = this.set("CloudWatchOutputConfig", js.undefined)
+    @scala.inline
+    def setCommandId(value: CommandId): Self = this.set("CommandId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommandId: Self = this.set("CommandId", js.undefined)
+    @scala.inline
+    def setComment(value: Comment): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("Comment", js.undefined)
+    @scala.inline
+    def setCompletedCount(value: CompletedCount): Self = this.set("CompletedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedCount: Self = this.set("CompletedCount", js.undefined)
+    @scala.inline
+    def setDeliveryTimedOutCount(value: DeliveryTimedOutCount): Self = this.set("DeliveryTimedOutCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryTimedOutCount: Self = this.set("DeliveryTimedOutCount", js.undefined)
+    @scala.inline
+    def setDocumentName(value: DocumentName): Self = this.set("DocumentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentName: Self = this.set("DocumentName", js.undefined)
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setErrorCount(value: ErrorCount): Self = this.set("ErrorCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCount: Self = this.set("ErrorCount", js.undefined)
+    @scala.inline
+    def setExpiresAfter(value: DateTime): Self = this.set("ExpiresAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiresAfter: Self = this.set("ExpiresAfter", js.undefined)
+    @scala.inline
+    def setInstanceIdsVarargs(value: InstanceId*): Self = this.set("InstanceIds", js.Array(value :_*))
+    @scala.inline
+    def setInstanceIds(value: InstanceIdList): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+    @scala.inline
+    def setMaxConcurrency(value: MaxConcurrency): Self = this.set("MaxConcurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrency: Self = this.set("MaxConcurrency", js.undefined)
+    @scala.inline
+    def setMaxErrors(value: MaxErrors): Self = this.set("MaxErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxErrors: Self = this.set("MaxErrors", js.undefined)
+    @scala.inline
+    def setNotificationConfig(value: NotificationConfig): Self = this.set("NotificationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationConfig: Self = this.set("NotificationConfig", js.undefined)
+    @scala.inline
+    def setOutputS3BucketName(value: S3BucketName): Self = this.set("OutputS3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputS3BucketName: Self = this.set("OutputS3BucketName", js.undefined)
+    @scala.inline
+    def setOutputS3KeyPrefix(value: S3KeyPrefix): Self = this.set("OutputS3KeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputS3KeyPrefix: Self = this.set("OutputS3KeyPrefix", js.undefined)
+    @scala.inline
+    def setOutputS3Region(value: S3Region): Self = this.set("OutputS3Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputS3Region: Self = this.set("OutputS3Region", js.undefined)
+    @scala.inline
+    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setRequestedDateTime(value: DateTime): Self = this.set("RequestedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedDateTime: Self = this.set("RequestedDateTime", js.undefined)
+    @scala.inline
+    def setServiceRole(value: ServiceRole): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
+    @scala.inline
+    def setStatus(value: CommandStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusDetails(value: StatusDetails): Self = this.set("StatusDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetails: Self = this.set("StatusDetails", js.undefined)
+    @scala.inline
+    def setTargetCount(value: TargetCount): Self = this.set("TargetCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCount: Self = this.set("TargetCount", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("Targets", js.undefined)
+    @scala.inline
+    def setTimeoutSeconds(value: TimeoutSeconds): Self = this.set("TimeoutSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutSeconds: Self = this.set("TimeoutSeconds", js.undefined)
+  }
+  
 }
 

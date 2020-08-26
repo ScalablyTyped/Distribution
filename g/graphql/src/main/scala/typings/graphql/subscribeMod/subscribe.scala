@@ -14,8 +14,10 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/subscription/subscribe", "subscribe")
 @js.native
 object subscribe extends js.Object {
-  def apply[TData](args: SubscriptionArgs): js.Promise[AsyncIterableIterator[ExecutionResult[TData]] | ExecutionResult[TData]] = js.native
-  def apply[TData](
+  def apply(args: SubscriptionArgs): js.Promise[
+    (AsyncIterableIterator[ExecutionResult[StringDictionary[_], StringDictionary[_]]]) | (ExecutionResult[StringDictionary[_], StringDictionary[_]])
+  ] = js.native
+  def apply(
     schema: GraphQLSchema,
     document: DocumentNode,
     rootValue: js.UndefOr[js.Any],
@@ -24,6 +26,8 @@ object subscribe extends js.Object {
     operationName: js.UndefOr[Maybe[String]],
     fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
     subscribeFieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]]
-  ): js.Promise[AsyncIterableIterator[ExecutionResult[TData]] | ExecutionResult[TData]] = js.native
+  ): js.Promise[
+    (AsyncIterableIterator[ExecutionResult[StringDictionary[_], StringDictionary[_]]]) | (ExecutionResult[StringDictionary[_], StringDictionary[_]])
+  ] = js.native
 }
 

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "cypress-axe"
-version := "0.8-dt-20200515Z-3448fc"
-scalaVersion := "2.13.2"
+version := "0.8-dt-20200515Z-91e981"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "axe-core" % "3.5.5-ae1574",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "axe-core" % "3.5.5-9370f4",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

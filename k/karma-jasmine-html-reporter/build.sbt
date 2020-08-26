@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "karma-jasmine-html-reporter"
-version := "1.5-dt-20200327Z-742a00"
-scalaVersion := "2.13.2"
+version := "1.5-dt-20200327Z-216d98"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

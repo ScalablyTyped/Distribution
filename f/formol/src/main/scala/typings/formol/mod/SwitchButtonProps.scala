@@ -6,30 +6,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SwitchButtonProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var i18n: js.UndefOr[Dictk] = js.undefined
-  var leftLabel: js.UndefOr[ReactNode] = js.undefined
-  var rightLabel: js.UndefOr[ReactNode] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var i18n: js.UndefOr[Dictk] = js.native
+  var leftLabel: js.UndefOr[ReactNode] = js.native
+  var rightLabel: js.UndefOr[ReactNode] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object SwitchButtonProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    i18n: Dictk = null,
-    leftLabel: ReactNode = null,
-    rightLabel: ReactNode = null,
-    `type`: String = null
-  ): SwitchButtonProps = {
+  def apply(): SwitchButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (leftLabel != null) __obj.updateDynamic("leftLabel")(leftLabel.asInstanceOf[js.Any])
-    if (rightLabel != null) __obj.updateDynamic("rightLabel")(rightLabel.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchButtonProps]
   }
+  @scala.inline
+  implicit class SwitchButtonPropsOps[Self <: SwitchButtonProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setI18n(value: Dictk): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI18n: Self = this.set("i18n", js.undefined)
+    @scala.inline
+    def setLeftLabel(value: ReactNode): Self = this.set("leftLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftLabel: Self = this.set("leftLabel", js.undefined)
+    @scala.inline
+    def setRightLabel(value: ReactNode): Self = this.set("rightLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightLabel: Self = this.set("rightLabel", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

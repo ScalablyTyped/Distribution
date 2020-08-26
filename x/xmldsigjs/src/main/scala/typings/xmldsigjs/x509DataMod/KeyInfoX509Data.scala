@@ -49,13 +49,11 @@ class KeyInfoX509Data () extends KeyInfoClause {
     * @returns void
     */
   def AddSubjectName(subjectName: String): Unit = js.native
-  def CRL(): js.Any = js.native
-  def CRL(value: Uint8Array): js.Any = js.native
   /**
     * Gets or sets the Certificate Revocation List (CRL) contained within the KeyInfoX509Data object.
     */
-  @JSName("CRL")
-  def CRL_Union: Uint8Array | Null = js.native
+  def CRL: Uint8Array | Null = js.native
+  def CRL_=(value: Uint8Array | Null): Unit = js.native
   /**
     * Gets a list of the X.509v3 certificates contained in the KeyInfoX509Data object.
     */

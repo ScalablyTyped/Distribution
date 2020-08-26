@@ -30,20 +30,42 @@ trait S3Location extends js.Object {
 
 object S3Location {
   @scala.inline
-  def apply(
-    bucket: S3Bucket = null,
-    bundleType: BundleType = null,
-    eTag: ETag = null,
-    key: S3Key = null,
-    version: VersionId = null
-  ): S3Location = {
+  def apply(): S3Location = {
     val __obj = js.Dynamic.literal()
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (bundleType != null) __obj.updateDynamic("bundleType")(bundleType.asInstanceOf[js.Any])
-    if (eTag != null) __obj.updateDynamic("eTag")(eTag.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Location]
   }
+  @scala.inline
+  implicit class S3LocationOps[Self <: S3Location] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: S3Bucket): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("bucket", js.undefined)
+    @scala.inline
+    def setBundleType(value: BundleType): Self = this.set("bundleType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleType: Self = this.set("bundleType", js.undefined)
+    @scala.inline
+    def setETag(value: ETag): Self = this.set("eTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("eTag", js.undefined)
+    @scala.inline
+    def setKey(value: S3Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setVersion(value: VersionId): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

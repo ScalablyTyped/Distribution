@@ -66,22 +66,46 @@ trait SchemaReadOnly extends js.Object {
 
 object SchemaReadOnly {
   @scala.inline
-  def apply(
-    exactStaleness: String = null,
-    maxStaleness: String = null,
-    minReadTimestamp: String = null,
-    readTimestamp: String = null,
-    returnReadTimestamp: js.UndefOr[Boolean] = js.undefined,
-    strong: js.UndefOr[Boolean] = js.undefined
-  ): SchemaReadOnly = {
+  def apply(): SchemaReadOnly = {
     val __obj = js.Dynamic.literal()
-    if (exactStaleness != null) __obj.updateDynamic("exactStaleness")(exactStaleness.asInstanceOf[js.Any])
-    if (maxStaleness != null) __obj.updateDynamic("maxStaleness")(maxStaleness.asInstanceOf[js.Any])
-    if (minReadTimestamp != null) __obj.updateDynamic("minReadTimestamp")(minReadTimestamp.asInstanceOf[js.Any])
-    if (readTimestamp != null) __obj.updateDynamic("readTimestamp")(readTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnReadTimestamp)) __obj.updateDynamic("returnReadTimestamp")(returnReadTimestamp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReadOnly]
   }
+  @scala.inline
+  implicit class SchemaReadOnlyOps[Self <: SchemaReadOnly] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExactStaleness(value: String): Self = this.set("exactStaleness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExactStaleness: Self = this.set("exactStaleness", js.undefined)
+    @scala.inline
+    def setMaxStaleness(value: String): Self = this.set("maxStaleness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxStaleness: Self = this.set("maxStaleness", js.undefined)
+    @scala.inline
+    def setMinReadTimestamp(value: String): Self = this.set("minReadTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinReadTimestamp: Self = this.set("minReadTimestamp", js.undefined)
+    @scala.inline
+    def setReadTimestamp(value: String): Self = this.set("readTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTimestamp: Self = this.set("readTimestamp", js.undefined)
+    @scala.inline
+    def setReturnReadTimestamp(value: Boolean): Self = this.set("returnReadTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnReadTimestamp: Self = this.set("returnReadTimestamp", js.undefined)
+    @scala.inline
+    def setStrong(value: Boolean): Self = this.set("strong", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrong: Self = this.set("strong", js.undefined)
+  }
+  
 }
 

@@ -39,6 +39,7 @@ trait ProgressBar extends js.Object {
     * "tick" the progress bar with optional `len` and optional `tokens`.
     */
   def tick(): Unit = js.native
+  def tick(count: js.UndefOr[scala.Nothing], tokens: js.Any): Unit = js.native
   def tick(count: Double): Unit = js.native
   def tick(count: Double, tokens: js.Any): Unit = js.native
   def tick(tokens: js.Any): Unit = js.native

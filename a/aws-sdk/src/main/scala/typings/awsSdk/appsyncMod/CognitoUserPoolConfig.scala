@@ -22,10 +22,30 @@ trait CognitoUserPoolConfig extends js.Object {
 
 object CognitoUserPoolConfig {
   @scala.inline
-  def apply(awsRegion: String, userPoolId: String, appIdClientRegex: String = null): CognitoUserPoolConfig = {
+  def apply(awsRegion: String, userPoolId: String): CognitoUserPoolConfig = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
-    if (appIdClientRegex != null) __obj.updateDynamic("appIdClientRegex")(appIdClientRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoUserPoolConfig]
   }
+  @scala.inline
+  implicit class CognitoUserPoolConfigOps[Self <: CognitoUserPoolConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsRegion(value: String): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolId(value: String): Self = this.set("userPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAppIdClientRegex(value: String): Self = this.set("appIdClientRegex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppIdClientRegex: Self = this.set("appIdClientRegex", js.undefined)
+  }
+  
 }
 

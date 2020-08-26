@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/grammar/dist/grammar", "SyntaxError")
+@JSImport("sip.js/lib/grammar/pegjs/dist/grammar", "SyntaxError")
 @js.native
 class SyntaxError protected () extends Error {
   def this(message: String, expected: js.Array[Expectation], found: String, location: IFileRange) = this()
@@ -13,14 +13,10 @@ class SyntaxError protected () extends Error {
   var expected: js.Array[Expectation] = js.native
   var found: String | Null = js.native
   var location: IFileRange = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 
 /* static members */
-@JSImport("sip.js/lib/grammar/dist/grammar", "SyntaxError")
+@JSImport("sip.js/lib/grammar/pegjs/dist/grammar", "SyntaxError")
 @js.native
 object SyntaxError extends js.Object {
   def buildMessage(expected: js.Array[Expectation]): String = js.native

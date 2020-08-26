@@ -30,17 +30,36 @@ trait GetShardIteratorInput extends js.Object {
 
 object GetShardIteratorInput {
   @scala.inline
-  def apply(
-    ShardId: ShardId,
-    ShardIteratorType: ShardIteratorType,
-    StreamName: StreamName,
-    StartingSequenceNumber: SequenceNumber = null,
-    Timestamp: Timestamp = null
-  ): GetShardIteratorInput = {
+  def apply(ShardId: ShardId, ShardIteratorType: ShardIteratorType, StreamName: StreamName): GetShardIteratorInput = {
     val __obj = js.Dynamic.literal(ShardId = ShardId.asInstanceOf[js.Any], ShardIteratorType = ShardIteratorType.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
-    if (StartingSequenceNumber != null) __obj.updateDynamic("StartingSequenceNumber")(StartingSequenceNumber.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetShardIteratorInput]
   }
+  @scala.inline
+  implicit class GetShardIteratorInputOps[Self <: GetShardIteratorInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShardId(value: ShardId): Self = this.set("ShardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShardIteratorType(value: ShardIteratorType): Self = this.set("ShardIteratorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartingSequenceNumber(value: SequenceNumber): Self = this.set("StartingSequenceNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartingSequenceNumber: Self = this.set("StartingSequenceNumber", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+  }
+  
 }
 

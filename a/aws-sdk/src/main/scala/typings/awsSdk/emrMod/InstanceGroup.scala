@@ -78,44 +78,96 @@ trait InstanceGroup extends js.Object {
 
 object InstanceGroup {
   @scala.inline
-  def apply(
-    AutoScalingPolicy: AutoScalingPolicyDescription = null,
-    BidPrice: String = null,
-    Configurations: ConfigurationList = null,
-    ConfigurationsVersion: js.UndefOr[Long] = js.undefined,
-    EbsBlockDevices: EbsBlockDeviceList = null,
-    EbsOptimized: js.UndefOr[BooleanObject] = js.undefined,
-    Id: InstanceGroupId = null,
-    InstanceGroupType: InstanceGroupType = null,
-    InstanceType: InstanceType = null,
-    LastSuccessfullyAppliedConfigurations: ConfigurationList = null,
-    LastSuccessfullyAppliedConfigurationsVersion: js.UndefOr[Long] = js.undefined,
-    Market: MarketType = null,
-    Name: String = null,
-    RequestedInstanceCount: js.UndefOr[Integer] = js.undefined,
-    RunningInstanceCount: js.UndefOr[Integer] = js.undefined,
-    ShrinkPolicy: ShrinkPolicy = null,
-    Status: InstanceGroupStatus = null
-  ): InstanceGroup = {
+  def apply(): InstanceGroup = {
     val __obj = js.Dynamic.literal()
-    if (AutoScalingPolicy != null) __obj.updateDynamic("AutoScalingPolicy")(AutoScalingPolicy.asInstanceOf[js.Any])
-    if (BidPrice != null) __obj.updateDynamic("BidPrice")(BidPrice.asInstanceOf[js.Any])
-    if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConfigurationsVersion)) __obj.updateDynamic("ConfigurationsVersion")(ConfigurationsVersion.get.asInstanceOf[js.Any])
-    if (EbsBlockDevices != null) __obj.updateDynamic("EbsBlockDevices")(EbsBlockDevices.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (InstanceGroupType != null) __obj.updateDynamic("InstanceGroupType")(InstanceGroupType.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (LastSuccessfullyAppliedConfigurations != null) __obj.updateDynamic("LastSuccessfullyAppliedConfigurations")(LastSuccessfullyAppliedConfigurations.asInstanceOf[js.Any])
-    if (!js.isUndefined(LastSuccessfullyAppliedConfigurationsVersion)) __obj.updateDynamic("LastSuccessfullyAppliedConfigurationsVersion")(LastSuccessfullyAppliedConfigurationsVersion.get.asInstanceOf[js.Any])
-    if (Market != null) __obj.updateDynamic("Market")(Market.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequestedInstanceCount)) __obj.updateDynamic("RequestedInstanceCount")(RequestedInstanceCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RunningInstanceCount)) __obj.updateDynamic("RunningInstanceCount")(RunningInstanceCount.get.asInstanceOf[js.Any])
-    if (ShrinkPolicy != null) __obj.updateDynamic("ShrinkPolicy")(ShrinkPolicy.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroup]
   }
+  @scala.inline
+  implicit class InstanceGroupOps[Self <: InstanceGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingPolicy(value: AutoScalingPolicyDescription): Self = this.set("AutoScalingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingPolicy: Self = this.set("AutoScalingPolicy", js.undefined)
+    @scala.inline
+    def setBidPrice(value: String): Self = this.set("BidPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidPrice: Self = this.set("BidPrice", js.undefined)
+    @scala.inline
+    def setConfigurationsVarargs(value: Configuration*): Self = this.set("Configurations", js.Array(value :_*))
+    @scala.inline
+    def setConfigurations(value: ConfigurationList): Self = this.set("Configurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurations: Self = this.set("Configurations", js.undefined)
+    @scala.inline
+    def setConfigurationsVersion(value: Long): Self = this.set("ConfigurationsVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationsVersion: Self = this.set("ConfigurationsVersion", js.undefined)
+    @scala.inline
+    def setEbsBlockDevicesVarargs(value: EbsBlockDevice*): Self = this.set("EbsBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setEbsBlockDevices(value: EbsBlockDeviceList): Self = this.set("EbsBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsBlockDevices: Self = this.set("EbsBlockDevices", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: BooleanObject): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    @scala.inline
+    def setId(value: InstanceGroupId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setInstanceGroupType(value: InstanceGroupType): Self = this.set("InstanceGroupType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroupType: Self = this.set("InstanceGroupType", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setLastSuccessfullyAppliedConfigurationsVarargs(value: Configuration*): Self = this.set("LastSuccessfullyAppliedConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setLastSuccessfullyAppliedConfigurations(value: ConfigurationList): Self = this.set("LastSuccessfullyAppliedConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSuccessfullyAppliedConfigurations: Self = this.set("LastSuccessfullyAppliedConfigurations", js.undefined)
+    @scala.inline
+    def setLastSuccessfullyAppliedConfigurationsVersion(value: Long): Self = this.set("LastSuccessfullyAppliedConfigurationsVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSuccessfullyAppliedConfigurationsVersion: Self = this.set("LastSuccessfullyAppliedConfigurationsVersion", js.undefined)
+    @scala.inline
+    def setMarket(value: MarketType): Self = this.set("Market", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarket: Self = this.set("Market", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRequestedInstanceCount(value: Integer): Self = this.set("RequestedInstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedInstanceCount: Self = this.set("RequestedInstanceCount", js.undefined)
+    @scala.inline
+    def setRunningInstanceCount(value: Integer): Self = this.set("RunningInstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningInstanceCount: Self = this.set("RunningInstanceCount", js.undefined)
+    @scala.inline
+    def setShrinkPolicy(value: ShrinkPolicy): Self = this.set("ShrinkPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShrinkPolicy: Self = this.set("ShrinkPolicy", js.undefined)
+    @scala.inline
+    def setStatus(value: InstanceGroupStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

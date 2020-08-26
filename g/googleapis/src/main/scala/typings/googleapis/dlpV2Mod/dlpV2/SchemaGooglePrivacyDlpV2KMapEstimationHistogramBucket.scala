@@ -39,20 +39,44 @@ trait SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket extends js.Object {
 
 object SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket {
   @scala.inline
-  def apply(
-    bucketSize: String = null,
-    bucketValueCount: String = null,
-    bucketValues: js.Array[SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues] = null,
-    maxAnonymity: String = null,
-    minAnonymity: String = null
-  ): SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket = {
+  def apply(): SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket = {
     val __obj = js.Dynamic.literal()
-    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
-    if (bucketValueCount != null) __obj.updateDynamic("bucketValueCount")(bucketValueCount.asInstanceOf[js.Any])
-    if (bucketValues != null) __obj.updateDynamic("bucketValues")(bucketValues.asInstanceOf[js.Any])
-    if (maxAnonymity != null) __obj.updateDynamic("maxAnonymity")(maxAnonymity.asInstanceOf[js.Any])
-    if (minAnonymity != null) __obj.updateDynamic("minAnonymity")(minAnonymity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucketOps[Self <: SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketSize(value: String): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    @scala.inline
+    def setBucketValueCount(value: String): Self = this.set("bucketValueCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketValueCount: Self = this.set("bucketValueCount", js.undefined)
+    @scala.inline
+    def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues*): Self = this.set("bucketValues", js.Array(value :_*))
+    @scala.inline
+    def setBucketValues(value: js.Array[SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues]): Self = this.set("bucketValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketValues: Self = this.set("bucketValues", js.undefined)
+    @scala.inline
+    def setMaxAnonymity(value: String): Self = this.set("maxAnonymity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAnonymity: Self = this.set("maxAnonymity", js.undefined)
+    @scala.inline
+    def setMinAnonymity(value: String): Self = this.set("minAnonymity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinAnonymity: Self = this.set("minAnonymity", js.undefined)
+  }
+  
 }
 

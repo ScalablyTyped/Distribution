@@ -7,6 +7,7 @@ import typings.cordovaPluginsDiagnostic.anon.ARMv6
 import typings.cordovaPluginsDiagnostic.anon.BATTERYSAVING
 import typings.cordovaPluginsDiagnostic.anon.CALENDAR
 import typings.cordovaPluginsDiagnostic.anon.DENIEDALWAYS
+import typings.cordovaPluginsDiagnostic.anon.FULL
 import typings.cordovaPluginsDiagnostic.anon.GRANTED
 import typings.cordovaPluginsDiagnostic.anon.POWEREDOFF
 import typings.cordovaPluginsDiagnostic.anon.POWEREDON
@@ -156,6 +157,19 @@ trait Diagnostic extends js.Object {
     * @param errorCallback
     */
   var getExternalStorageAuthorizationStatus: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function1[/* status */ String, Unit], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  /**
+    * iOS ONLY
+    * Returns the location accuracy authorization for the application.
+    * @param successCallback
+    * @param errorCallback
+    */
+  var getLocationAccuracyAuthorization: js.UndefOr[
     js.Function2[
       /* successCallback */ js.Function1[/* status */ String, Unit], 
       /* errorCallback */ js.Function1[/* error */ String, Unit], 
@@ -688,6 +702,12 @@ trait Diagnostic extends js.Object {
     ]
   ] = js.native
   /**
+    * iOS ONLY
+    * Location accuracy authorization
+    * @type {Object}
+    */
+  var locationAccuracyAuthorization: FULL = js.native
+  /**
     * ANDROID and iOS ONLY
     * Location authorization mode
     * @type {Object}
@@ -731,6 +751,12 @@ trait Diagnostic extends js.Object {
     * @param successCallback
     */
   var registerBluetoothStateChangeHandler: js.UndefOr[js.Function1[/* successCallback */ js.Function1[/* state */ String, Unit], Unit]] = js.native
+  /**
+    * iOS ONLY
+    * Registers a function to be called when a change in location accuracy authorization occurs.
+    * @param successCallback
+    */
+  var registerLocationAccuracyAuthorizationChangeHandler: js.UndefOr[js.Function1[/* successCallback */ js.Function1[/* state */ String, Unit], Unit]] = js.native
   /**
     * ANDROID and iOS ONLY
     * Registers a function to be called when a change in Location state occurs. Pass in a falsey value to de-register the currently registered function.
@@ -942,6 +968,21 @@ trait Diagnostic extends js.Object {
     ]
   ] = js.native
   /**
+    * iOS ONLY
+    * Requests temporary access to full location accuracy for the application.
+    * @param purpose
+    * @param successCallback
+    * @param errorCallback
+    */
+  var requestTemporaryFullAccuracyAuthorization: js.UndefOr[
+    js.Function3[
+      /* purpose */ String, 
+      /* successCallback */ js.UndefOr[js.Function1[/* status */ String, Unit]], 
+      /* errorCallback */ js.UndefOr[js.Function1[/* error */ String, Unit]], 
+      Unit
+    ]
+  ] = js.native
+  /**
     * ANDROID ONLY
     * Restarts the application.
     * By default, a "warm" restart will be performed in which the main Cordova activity is immediately restarted, causing the Webview instance to be recreated.
@@ -1004,7 +1045,7 @@ trait Diagnostic extends js.Object {
     * ANDROID and iOS ONLY
     * Opens settings page for this app.
     * On Android, this opens the "App Info" page in the Settings app.
-    * On iOS, this opens the app settings page in the Settings app. This works only on iOS 8+ - iOS 7 and below will invoke the errorCallback.
+    * On iOS, this opens the app settings page in the Settings app.
     */
   var switchToSettings: js.UndefOr[
     js.Function2[
@@ -1037,7 +1078,41 @@ trait Diagnostic extends js.Object {
     * @param externalStorageOrParams
     */
   def isCameraAvailable(): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: js.UndefOr[scala.Nothing],
+    errorCallback: js.UndefOr[scala.Nothing],
+    externalStorageOrParams: js.Object
+  ): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: js.UndefOr[scala.Nothing],
+    errorCallback: js.UndefOr[scala.Nothing],
+    externalStorageOrParams: Boolean
+  ): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ String, Unit],
+    externalStorageOrParams: js.Object
+  ): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ String, Unit],
+    externalStorageOrParams: Boolean
+  ): Unit = js.native
   def isCameraAvailable(successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object]): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object],
+    errorCallback: js.UndefOr[scala.Nothing],
+    externalStorageOrParams: js.Object
+  ): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object],
+    errorCallback: js.UndefOr[scala.Nothing],
+    externalStorageOrParams: Boolean
+  ): Unit = js.native
   def isCameraAvailable(
     successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object],
     errorCallback: js.Function1[/* error */ String, Unit]

@@ -22,10 +22,44 @@ object face3Mod extends js.Object {
     def this(a: Double, b: Double, c: Double) = this()
     def this(a: Double, b: Double, c: Double, normal: Vector3) = this()
     def this(a: Double, b: Double, c: Double, vertexNormals: js.Array[Vector3]) = this()
+    def this(a: Double, b: Double, c: Double, normal: js.UndefOr[scala.Nothing], color: Color) = this()
+    def this(a: Double, b: Double, c: Double, normal: js.UndefOr[scala.Nothing], vertexColors: js.Array[Color]) = this()
     def this(a: Double, b: Double, c: Double, normal: Vector3, color: Color) = this()
     def this(a: Double, b: Double, c: Double, normal: Vector3, vertexColors: js.Array[Color]) = this()
     def this(a: Double, b: Double, c: Double, vertexNormals: js.Array[Vector3], color: Color) = this()
     def this(a: Double, b: Double, c: Double, vertexNormals: js.Array[Vector3], vertexColors: js.Array[Color]) = this()
+    def this(
+      a: Double,
+      b: Double,
+      c: Double,
+      normal: js.UndefOr[scala.Nothing],
+      color: js.UndefOr[scala.Nothing],
+      materialIndex: Double
+    ) = this()
+    def this(
+      a: Double,
+      b: Double,
+      c: Double,
+      normal: js.UndefOr[scala.Nothing],
+      color: Color,
+      materialIndex: Double
+    ) = this()
+    def this(
+      a: Double,
+      b: Double,
+      c: Double,
+      normal: js.UndefOr[scala.Nothing],
+      vertexColors: js.Array[Color],
+      materialIndex: Double
+    ) = this()
+    def this(
+      a: Double,
+      b: Double,
+      c: Double,
+      normal: Vector3,
+      color: js.UndefOr[scala.Nothing],
+      materialIndex: Double
+    ) = this()
     def this(a: Double, b: Double, c: Double, normal: Vector3, color: Color, materialIndex: Double) = this()
     def this(
       a: Double,
@@ -33,6 +67,14 @@ object face3Mod extends js.Object {
       c: Double,
       normal: Vector3,
       vertexColors: js.Array[Color],
+      materialIndex: Double
+    ) = this()
+    def this(
+      a: Double,
+      b: Double,
+      c: Double,
+      vertexNormals: js.Array[Vector3],
+      color: js.UndefOr[scala.Nothing],
       materialIndex: Double
     ) = this()
     def this(
@@ -76,11 +118,11 @@ object face3Mod extends js.Object {
     	 */
     var normal: Vector3 = js.native
     /**
-    	 * Array of 4 vertex normals.
+    	 * Array of 3 vertex colors.
     	 */
     var vertexColors: js.Array[Color] = js.native
     /**
-    	 * Array of 4 vertex normals.
+    	 * Array of 3 vertex normals.
     	 */
     var vertexNormals: js.Array[Vector3] = js.native
     def copy(source: Face3): this.type = js.native

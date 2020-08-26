@@ -25,12 +25,34 @@ trait SchemaBundle extends js.Object {
 
 object SchemaBundle {
   @scala.inline
-  def apply(sha1: String = null, sha256: String = null, versionCode: js.UndefOr[Double] = js.undefined): SchemaBundle = {
+  def apply(): SchemaBundle = {
     val __obj = js.Dynamic.literal()
-    if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
-    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBundle]
   }
+  @scala.inline
+  implicit class SchemaBundleOps[Self <: SchemaBundle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSha1(value: String): Self = this.set("sha1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha1: Self = this.set("sha1", js.undefined)
+    @scala.inline
+    def setSha256(value: String): Self = this.set("sha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha256: Self = this.set("sha256", js.undefined)
+    @scala.inline
+    def setVersionCode(value: Double): Self = this.set("versionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
+  }
+  
 }
 

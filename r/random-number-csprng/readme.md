@@ -11,14 +11,11 @@ A cryptographically secure generator for random numbers in a range.
 | Full name          | random-number-csprng |
 | Keywords           | csprng, random, number, crypto |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 305494 |
+| # dependents       | 16 |
+| # downloads        | 280418 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/joepie91/node-random-number-csprng#readme)
-- [Bugs](https://github.com/joepie91/node-random-number-csprng/issues)
-- [Repository](https://github.com/joepie91/node-random-number-csprng)
 - [Npm](https://www.npmjs.com/package/random-number-csprng)
     
 

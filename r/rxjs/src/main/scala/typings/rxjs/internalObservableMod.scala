@@ -177,12 +177,12 @@ object internalObservableMod extends js.Object {
       * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
       */
     def `if`[T, F](condition: js.Function0[Boolean]): Observable[T | F] = js.native
-    def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
     def `if`[T, F](
       condition: js.Function0[Boolean],
-      trueResult: SubscribableOrPromise[T],
+      trueResult: js.UndefOr[SubscribableOrPromise[T]],
       falseResult: SubscribableOrPromise[F]
     ): Observable[T | F] = js.native
+    def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
     /**
       * @nocollapse
       * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';

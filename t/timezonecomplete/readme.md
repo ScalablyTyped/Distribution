@@ -1,7 +1,7 @@
 
 # Scala.js typings for timezonecomplete
 
-Typings are for version 5.11.1
+Typings are for version 5.11.2
 
 ## Library description:
 DateTime, TimeZone, Duration and Period library aimed at providing a consistent and complete date-time interface, away from the original JavaScript Date class.

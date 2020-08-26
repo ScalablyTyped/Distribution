@@ -30,19 +30,40 @@ trait PatchRule extends js.Object {
 
 object PatchRule {
   @scala.inline
-  def apply(
-    PatchFilterGroup: PatchFilterGroup,
-    ApproveAfterDays: js.UndefOr[ApproveAfterDays] = js.undefined,
-    ApproveUntilDate: PatchStringDateTime = null,
-    ComplianceLevel: PatchComplianceLevel = null,
-    EnableNonSecurity: js.UndefOr[Boolean] = js.undefined
-  ): PatchRule = {
+  def apply(PatchFilterGroup: PatchFilterGroup): PatchRule = {
     val __obj = js.Dynamic.literal(PatchFilterGroup = PatchFilterGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApproveAfterDays)) __obj.updateDynamic("ApproveAfterDays")(ApproveAfterDays.get.asInstanceOf[js.Any])
-    if (ApproveUntilDate != null) __obj.updateDynamic("ApproveUntilDate")(ApproveUntilDate.asInstanceOf[js.Any])
-    if (ComplianceLevel != null) __obj.updateDynamic("ComplianceLevel")(ComplianceLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNonSecurity)) __obj.updateDynamic("EnableNonSecurity")(EnableNonSecurity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchRule]
   }
+  @scala.inline
+  implicit class PatchRuleOps[Self <: PatchRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPatchFilterGroup(value: PatchFilterGroup): Self = this.set("PatchFilterGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApproveAfterDays(value: ApproveAfterDays): Self = this.set("ApproveAfterDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproveAfterDays: Self = this.set("ApproveAfterDays", js.undefined)
+    @scala.inline
+    def setApproveUntilDate(value: PatchStringDateTime): Self = this.set("ApproveUntilDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproveUntilDate: Self = this.set("ApproveUntilDate", js.undefined)
+    @scala.inline
+    def setComplianceLevel(value: PatchComplianceLevel): Self = this.set("ComplianceLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceLevel: Self = this.set("ComplianceLevel", js.undefined)
+    @scala.inline
+    def setEnableNonSecurity(value: Boolean): Self = this.set("EnableNonSecurity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableNonSecurity: Self = this.set("EnableNonSecurity", js.undefined)
+  }
+  
 }
 

@@ -34,9 +34,6 @@ object openapiTypesStrings {
   sealed trait integer extends NonArraySchemaObjectType
   
   @js.native
-  sealed trait `null` extends NonArraySchemaObjectType
-  
-  @js.native
   sealed trait number extends NonArraySchemaObjectType
   
   @js.native
@@ -72,8 +69,6 @@ object openapiTypesStrings {
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline

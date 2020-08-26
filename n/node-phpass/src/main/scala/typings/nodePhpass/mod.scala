@@ -10,7 +10,11 @@ object mod extends js.Object {
   @js.native
   class PasswordHash () extends js.Object {
     def this(length: Double) = this()
+    def this(length: js.UndefOr[scala.Nothing], portable: Boolean) = this()
     def this(length: Double, portable: Boolean) = this()
+    def this(length: js.UndefOr[scala.Nothing], portable: js.UndefOr[scala.Nothing], phpVersion: Double) = this()
+    def this(length: js.UndefOr[scala.Nothing], portable: Boolean, phpVersion: Double) = this()
+    def this(length: Double, portable: js.UndefOr[scala.Nothing], phpVersion: Double) = this()
     def this(length: Double, portable: Boolean, phpVersion: Double) = this()
     def CheckPassword(password: String, hash: String): Boolean = js.native
     def HashPassword(password: String): js.Promise[String] = js.native

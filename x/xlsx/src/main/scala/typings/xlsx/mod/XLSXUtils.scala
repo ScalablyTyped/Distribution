@@ -56,6 +56,7 @@ trait XLSXUtils extends js.Object {
   def encode_row(row: Double): String = js.native
   /** Format cell */
   def format_cell(cell: CellObject): String = js.native
+  def format_cell(cell: CellObject, v: js.UndefOr[scala.Nothing], opts: js.Any): String = js.native
   def format_cell(cell: CellObject, v: js.Any): String = js.native
   def format_cell(cell: CellObject, v: js.Any, opts: js.Any): String = js.native
   def json_to_sheet(data: js.Array[_]): WorkSheet = js.native
@@ -72,6 +73,8 @@ trait XLSXUtils extends js.Object {
   def sheet_add_aoa_T[T](ws: WorkSheet, data: js.Array[js.Array[T]]): WorkSheet = js.native
   @JSName("sheet_add_aoa")
   def sheet_add_aoa_T[T](ws: WorkSheet, data: js.Array[js.Array[T]], opts: SheetAOAOpts): WorkSheet = js.native
+  def sheet_add_dom(ws: WorkSheet, data: js.Any): WorkSheet = js.native
+  def sheet_add_dom(ws: WorkSheet, data: js.Any, opts: Table2SheetOpts): WorkSheet = js.native
   /** Add an array of JS objects to a worksheet */
   def sheet_add_json(ws: WorkSheet, data: js.Array[_]): WorkSheet = js.native
   def sheet_add_json(ws: WorkSheet, data: js.Array[_], opts: SheetJSONOpts): WorkSheet = js.native

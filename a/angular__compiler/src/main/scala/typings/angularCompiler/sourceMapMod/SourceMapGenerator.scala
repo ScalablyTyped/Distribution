@@ -15,7 +15,16 @@ class SourceMapGenerator () extends js.Object {
   var sourcesContent: js.Any = js.native
   def addLine(): this.type = js.native
   def addMapping(col0: Double): this.type = js.native
+  def addMapping(
+    col0: Double,
+    sourceUrl: js.UndefOr[scala.Nothing],
+    sourceLine0: js.UndefOr[scala.Nothing],
+    sourceCol0: Double
+  ): this.type = js.native
+  def addMapping(col0: Double, sourceUrl: js.UndefOr[scala.Nothing], sourceLine0: Double): this.type = js.native
+  def addMapping(col0: Double, sourceUrl: js.UndefOr[scala.Nothing], sourceLine0: Double, sourceCol0: Double): this.type = js.native
   def addMapping(col0: Double, sourceUrl: String): this.type = js.native
+  def addMapping(col0: Double, sourceUrl: String, sourceLine0: js.UndefOr[scala.Nothing], sourceCol0: Double): this.type = js.native
   def addMapping(col0: Double, sourceUrl: String, sourceLine0: Double): this.type = js.native
   def addMapping(col0: Double, sourceUrl: String, sourceLine0: Double, sourceCol0: Double): this.type = js.native
   def addSource(url: String): this.type = js.native

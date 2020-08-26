@@ -37,20 +37,42 @@ trait SchemaCreateJobFromTemplateRequest extends js.Object {
 
 object SchemaCreateJobFromTemplateRequest {
   @scala.inline
-  def apply(
-    environment: SchemaRuntimeEnvironment = null,
-    gcsPath: String = null,
-    jobName: String = null,
-    location: String = null,
-    parameters: StringDictionary[String] = null
-  ): SchemaCreateJobFromTemplateRequest = {
+  def apply(): SchemaCreateJobFromTemplateRequest = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath.asInstanceOf[js.Any])
-    if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateJobFromTemplateRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateJobFromTemplateRequestOps[Self <: SchemaCreateJobFromTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnvironment(value: SchemaRuntimeEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setGcsPath(value: String): Self = this.set("gcsPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsPath: Self = this.set("gcsPath", js.undefined)
+    @scala.inline
+    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("jobName", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setParameters(value: StringDictionary[String]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+  }
+  
 }
 

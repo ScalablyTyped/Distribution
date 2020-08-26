@@ -26,16 +26,9 @@ object describeLimitsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DescribeLimitsInput) = this()
-    /* CompleteClass */
-    override val input: DescribeLimitsInput = js.native
     val middlewareStack: MiddlewareStack[DescribeLimitsInput, DescribeLimitsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[DescribeLimitsInput, DescribeLimitsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DescribeLimitsInput, DescribeLimitsOutput] = js.native
   }

@@ -42,11 +42,46 @@ trait RemoteTileProvider extends TileProvider {
     x: Double,
     y: Double,
     z: Double,
+    onResponse: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    opt_priority: Priority
+  ): ICancelable = js.native
+  def requestInternal(
+    x: Double,
+    y: Double,
+    z: Double,
+    onResponse: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* s */ String, Unit]
+  ): ICancelable = js.native
+  def requestInternal(
+    x: Double,
+    y: Double,
+    z: Double,
+    onResponse: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* s */ String, Unit],
+    opt_priority: Priority
+  ): ICancelable = js.native
+  def requestInternal(
+    x: Double,
+    y: Double,
+    z: Double,
     onResponse: js.Function2[
       /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | ArrayBuffer, 
       /* response */ js.Any, 
       Unit
     ]
+  ): ICancelable = js.native
+  def requestInternal(
+    x: Double,
+    y: Double,
+    z: Double,
+    onResponse: js.Function2[
+      /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | ArrayBuffer, 
+      /* response */ js.Any, 
+      Unit
+    ],
+    onError: js.UndefOr[scala.Nothing],
+    opt_priority: Priority
   ): ICancelable = js.native
   def requestInternal(
     x: Double,

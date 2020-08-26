@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 class BusyIndicator ()
   extends typings.ibmMobilefirst.WL.BusyIndicator {
   def this(containerId: String) = this()
+  def this(containerId: js.UndefOr[scala.Nothing], options: typings.ibmMobilefirst.WL.BusyIndicator) = this()
   def this(containerId: String, options: typings.ibmMobilefirst.WL.BusyIndicator) = this()
-  /* CompleteClass */
-  override def hide(): Unit = js.native
-  /* CompleteClass */
-  override def show(): Unit = js.native
 }
 

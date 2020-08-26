@@ -31,28 +31,28 @@ class CreateVariableAction protected () extends MicroflowAction {
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def initialValue: String = js.native
-  def initialValue(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
   def initialValueModel: Expression = js.native
-  def initialValueModel(newValue: Expression): js.Any = js.native
+  def initialValueModel_=(newValue: Expression): Unit = js.native
+  def initialValue_=(newValue: String): Unit = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
   def variableDataType: String = js.native
-  def variableDataType(newValue: String): js.Any = js.native
+  def variableDataType_=(newValue: String): Unit = js.native
   def variableName: String = js.native
-  def variableName(newValue: String): js.Any = js.native
+  def variableName_=(newValue: String): Unit = js.native
   /**
     * In version 7.9.0: introduced
     */
   def variableType: DataType = js.native
-  def variableType(newValue: DataType): js.Any = js.native
+  def variableType_=(newValue: DataType): Unit = js.native
 }
 
 /* static members */

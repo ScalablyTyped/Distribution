@@ -15,9 +15,13 @@ trait WorkflowRun extends js.Object {
     */
   var Graph: js.UndefOr[WorkflowGraph] = js.native
   /**
-    * Name of the workflow which was executed.
+    * Name of the workflow that was executed.
     */
   var Name: js.UndefOr[NameString] = js.native
+  /**
+    * The ID of the previous workflow run.
+    */
+  var PreviousRunId: js.UndefOr[IdString] = js.native
   /**
     * The date and time when the workflow run was started.
     */
@@ -42,26 +46,58 @@ trait WorkflowRun extends js.Object {
 
 object WorkflowRun {
   @scala.inline
-  def apply(
-    CompletedOn: TimestampValue = null,
-    Graph: WorkflowGraph = null,
-    Name: NameString = null,
-    StartedOn: TimestampValue = null,
-    Statistics: WorkflowRunStatistics = null,
-    Status: WorkflowRunStatus = null,
-    WorkflowRunId: IdString = null,
-    WorkflowRunProperties: WorkflowRunProperties = null
-  ): WorkflowRun = {
+  def apply(): WorkflowRun = {
     val __obj = js.Dynamic.literal()
-    if (CompletedOn != null) __obj.updateDynamic("CompletedOn")(CompletedOn.asInstanceOf[js.Any])
-    if (Graph != null) __obj.updateDynamic("Graph")(Graph.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (StartedOn != null) __obj.updateDynamic("StartedOn")(StartedOn.asInstanceOf[js.Any])
-    if (Statistics != null) __obj.updateDynamic("Statistics")(Statistics.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (WorkflowRunId != null) __obj.updateDynamic("WorkflowRunId")(WorkflowRunId.asInstanceOf[js.Any])
-    if (WorkflowRunProperties != null) __obj.updateDynamic("WorkflowRunProperties")(WorkflowRunProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowRun]
   }
+  @scala.inline
+  implicit class WorkflowRunOps[Self <: WorkflowRun] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletedOn(value: TimestampValue): Self = this.set("CompletedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedOn: Self = this.set("CompletedOn", js.undefined)
+    @scala.inline
+    def setGraph(value: WorkflowGraph): Self = this.set("Graph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGraph: Self = this.set("Graph", js.undefined)
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPreviousRunId(value: IdString): Self = this.set("PreviousRunId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousRunId: Self = this.set("PreviousRunId", js.undefined)
+    @scala.inline
+    def setStartedOn(value: TimestampValue): Self = this.set("StartedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedOn: Self = this.set("StartedOn", js.undefined)
+    @scala.inline
+    def setStatistics(value: WorkflowRunStatistics): Self = this.set("Statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("Statistics", js.undefined)
+    @scala.inline
+    def setStatus(value: WorkflowRunStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setWorkflowRunId(value: IdString): Self = this.set("WorkflowRunId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowRunId: Self = this.set("WorkflowRunId", js.undefined)
+    @scala.inline
+    def setWorkflowRunProperties(value: WorkflowRunProperties): Self = this.set("WorkflowRunProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowRunProperties: Self = this.set("WorkflowRunProperties", js.undefined)
+  }
+  
 }
 

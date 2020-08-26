@@ -82,6 +82,7 @@ class ResourceFolders protected () extends js.Object {
     */
   def clearOrgPolicy(): GaxiosPromise[SchemaEmpty] = js.native
   def clearOrgPolicy(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def clearOrgPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def clearOrgPolicy(params: ParamsResourceFoldersClearorgpolicy): GaxiosPromise[SchemaEmpty] = js.native
   def clearOrgPolicy(params: ParamsResourceFoldersClearorgpolicy, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def clearOrgPolicy(
@@ -170,6 +171,7 @@ class ResourceFolders protected () extends js.Object {
     */
   def getEffectiveOrgPolicy(): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getEffectiveOrgPolicy(callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
+  def getEffectiveOrgPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getEffectiveOrgPolicy(params: ParamsResourceFoldersGeteffectiveorgpolicy): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getEffectiveOrgPolicy(
     params: ParamsResourceFoldersGeteffectiveorgpolicy,
@@ -260,6 +262,7 @@ class ResourceFolders protected () extends js.Object {
     */
   def getOrgPolicy(): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getOrgPolicy(callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
+  def getOrgPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getOrgPolicy(params: ParamsResourceFoldersGetorgpolicy): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getOrgPolicy(params: ParamsResourceFoldersGetorgpolicy, callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
   def getOrgPolicy(
@@ -362,6 +365,7 @@ class ResourceFolders protected () extends js.Object {
     */
   def listAvailableOrgPolicyConstraints(): GaxiosPromise[SchemaListAvailableOrgPolicyConstraintsResponse] = js.native
   def listAvailableOrgPolicyConstraints(callback: BodyResponseCallback[SchemaListAvailableOrgPolicyConstraintsResponse]): Unit = js.native
+  def listAvailableOrgPolicyConstraints(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAvailableOrgPolicyConstraintsResponse] = js.native
   def listAvailableOrgPolicyConstraints(params: ParamsResourceFoldersListavailableorgpolicyconstraints): GaxiosPromise[SchemaListAvailableOrgPolicyConstraintsResponse] = js.native
   def listAvailableOrgPolicyConstraints(
     params: ParamsResourceFoldersListavailableorgpolicyconstraints,
@@ -463,6 +467,7 @@ class ResourceFolders protected () extends js.Object {
     */
   def listOrgPolicies(): GaxiosPromise[SchemaListOrgPoliciesResponse] = js.native
   def listOrgPolicies(callback: BodyResponseCallback[SchemaListOrgPoliciesResponse]): Unit = js.native
+  def listOrgPolicies(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListOrgPoliciesResponse] = js.native
   def listOrgPolicies(params: ParamsResourceFoldersListorgpolicies): GaxiosPromise[SchemaListOrgPoliciesResponse] = js.native
   def listOrgPolicies(
     params: ParamsResourceFoldersListorgpolicies,
@@ -552,6 +557,7 @@ class ResourceFolders protected () extends js.Object {
     */
   def setOrgPolicy(): GaxiosPromise[SchemaOrgPolicy] = js.native
   def setOrgPolicy(callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
+  def setOrgPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgPolicy] = js.native
   def setOrgPolicy(params: ParamsResourceFoldersSetorgpolicy): GaxiosPromise[SchemaOrgPolicy] = js.native
   def setOrgPolicy(params: ParamsResourceFoldersSetorgpolicy, callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
   def setOrgPolicy(

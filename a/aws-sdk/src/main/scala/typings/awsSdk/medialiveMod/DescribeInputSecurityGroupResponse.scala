@@ -34,22 +34,50 @@ trait DescribeInputSecurityGroupResponse extends js.Object {
 
 object DescribeInputSecurityGroupResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    Id: string = null,
-    Inputs: listOfString = null,
-    State: InputSecurityGroupState = null,
-    Tags: Tags = null,
-    WhitelistRules: listOfInputWhitelistRule = null
-  ): DescribeInputSecurityGroupResponse = {
+  def apply(): DescribeInputSecurityGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Inputs != null) __obj.updateDynamic("Inputs")(Inputs.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (WhitelistRules != null) __obj.updateDynamic("WhitelistRules")(WhitelistRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInputSecurityGroupResponse]
   }
+  @scala.inline
+  implicit class DescribeInputSecurityGroupResponseOps[Self <: DescribeInputSecurityGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setInputsVarargs(value: string*): Self = this.set("Inputs", js.Array(value :_*))
+    @scala.inline
+    def setInputs(value: listOfString): Self = this.set("Inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("Inputs", js.undefined)
+    @scala.inline
+    def setState(value: InputSecurityGroupState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setWhitelistRulesVarargs(value: InputWhitelistRule*): Self = this.set("WhitelistRules", js.Array(value :_*))
+    @scala.inline
+    def setWhitelistRules(value: listOfInputWhitelistRule): Self = this.set("WhitelistRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhitelistRules: Self = this.set("WhitelistRules", js.undefined)
+  }
+  
 }
 

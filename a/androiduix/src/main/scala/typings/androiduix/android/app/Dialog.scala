@@ -21,15 +21,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.app.Dialog")
 @js.native
-class Dialog protected ()
+trait Dialog
   extends DialogInterface
      with Callback
      with typings.androiduix.android.view.KeyEvent.Callback {
-  def this(context: Context) = this()
-  def this(context: Context, cancelable: Boolean) = this()
-  def this(context: Context, cancelable: Boolean, cancelListener: OnCancelListener) = this()
   var mCancelAndDismissTaken: js.Any = js.native
   var mCancelMessage: js.Any = js.native
   var mCancelable: Boolean = js.native
@@ -52,13 +48,7 @@ class Dialog protected ()
   /* InferMemberOverrides */
   override def dismiss(): Unit = js.native
   def dismissDialog(): Unit = js.native
-  /* CompleteClass */
-  override def dispatchGenericMotionEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def dispatchKeyEvent(event: KeyEvent): Boolean = js.native
   def dispatchOnCreate(savedInstanceState: Bundle): Unit = js.native
-  /* CompleteClass */
-  override def dispatchTouchEvent(event: MotionEvent): Boolean = js.native
   def findViewById(id: String): View = js.native
   def getContext(): Context = js.native
   def getCurrentFocus(): View = js.native
@@ -66,30 +56,14 @@ class Dialog protected ()
   def getWindow(): Window = js.native
   def hide(): Unit = js.native
   def isShowing(): Boolean = js.native
-  /* CompleteClass */
-  override def onAttachedToWindow(): Unit = js.native
   def onBackPressed(): Unit = js.native
-  /* CompleteClass */
-  override def onContentChanged(): Unit = js.native
   /* protected */ def onCreate(savedInstanceState: Bundle): Unit = js.native
-  /* CompleteClass */
-  override def onDetachedFromWindow(): Unit = js.native
   def onGenericMotionEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onKeyDown(keyCode: Double, event: KeyEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onKeyLongPress(keyCode: Double, event: KeyEvent): Boolean = js.native
   def onKeyMultiple(keyCode: Double, repeatCount: Double, event: KeyEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onKeyUp(keyCode: Double, event: KeyEvent): Boolean = js.native
   /* protected */ def onStart(): Unit = js.native
   /* protected */ def onStop(): Unit = js.native
   def onTouchEvent(event: MotionEvent): Boolean = js.native
   def onTrackballEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onWindowAttributesChanged(attrs: typings.androiduix.android.view.WindowManager.LayoutParams): Unit = js.native
-  /* CompleteClass */
-  override def onWindowFocusChanged(hasFocus: Boolean): Unit = js.native
   /* private */ def sendDismissMessage(): js.Any = js.native
   /* private */ def sendShowMessage(): js.Any = js.native
   def setCancelMessage(msg: Message): Unit = js.native
@@ -108,21 +82,13 @@ class Dialog protected ()
   def takeKeyEvents(get: Boolean): Unit = js.native
 }
 
-/* static members */
 @JSGlobal("android.app.Dialog")
 @js.native
 object Dialog extends js.Object {
   @js.native
-  class ListenersHandler protected () extends Handler {
-    def this(dialog: Dialog) = this()
+  trait ListenersHandler extends Handler {
     var mDialog: js.Any = js.native
   }
   
-  var CANCEL: js.Any = js.native
-  var DIALOG_HIERARCHY_TAG: js.Any = js.native
-  var DIALOG_SHOWING_TAG: js.Any = js.native
-  var DISMISS: js.Any = js.native
-  var SHOW: js.Any = js.native
-  var TAG: js.Any = js.native
 }
 

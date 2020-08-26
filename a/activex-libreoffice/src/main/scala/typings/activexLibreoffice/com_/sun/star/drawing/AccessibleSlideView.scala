@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   * An accessible slide view gives access to all visible slides of a slide view.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleSlideView
   extends XAccessible
      with XAccessibleContext

@@ -1,7 +1,6 @@
 package typings.easyXHeaders.stringDecoderMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class StringDecoder protected () extends NodeStringDecoder {
   def this(encoding: String) = this()
-  /* CompleteClass */
-  override def detectIncompleteChar(buffer: Buffer): Double = js.native
-  /* CompleteClass */
-  override def write(buffer: Buffer): String = js.native
 }
 
 @JSImport("string_decoder", "StringDecoder")

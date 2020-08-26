@@ -7,66 +7,67 @@ import scala.scalajs.js.annotation._
 /**
   * Fired when the device detects a pinch gesture.
   */
+@js.native
 trait TabbedBarPinchEvent extends TabbedBarBaseEvent {
   /**
     * The average distance between each of the pointers forming the gesture in progress through
     * the focal point.
     */
-  var currentSpan: Double
+  var currentSpan: Double = js.native
   /**
     * The average X distance between each of the pointers forming the gesture in progress through
     * the focal point.
     */
-  var currentSpanX: Double
+  var currentSpanX: Double = js.native
   /**
     * The average Y distance between each of the pointers forming the gesture in progress through
     * the focal point.
     */
-  var currentSpanY: Double
+  var currentSpanY: Double = js.native
   /**
     * The X coordinate of the current gesture's focal point.
     */
-  var focusX: Double
+  var focusX: Double = js.native
   /**
     * The Y coordinate of the current gesture's focal point.
     */
-  var focusY: Double
+  var focusY: Double = js.native
   /**
     * Returns `true` if a scale gesture is in progress, `false` otherwise.
     */
-  var inProgress: Boolean
+  var inProgress: Boolean = js.native
   /**
     * The previous average distance between each of the pointers forming the gesture in progress through
     * the focal point.
     */
-  var previousSpan: Double
+  var previousSpan: Double = js.native
   /**
     * The previous average X distance between each of the pointers forming the gesture in progress through
     * the focal point.
     */
-  var previousSpanX: Double
+  var previousSpanX: Double = js.native
   /**
     * The previous average Y distance between each of the pointers forming the gesture in progress through
     * the focal point.
     */
-  var previousSpanY: Double
+  var previousSpanY: Double = js.native
   /**
     * The scale factor relative to the points of the two touches in screen coordinates.
     */
-  var scale: Double
+  var scale: Double = js.native
   /**
     * The event time of the current event being processed.
     */
-  var time: Double
+  var time: Double = js.native
   /**
     * The time difference in milliseconds between the previous accepted scaling event and the
     * current scaling event.
     */
-  var timeDelta: Double
+  var timeDelta: Double = js.native
   /**
     * The velocity of the pinch in scale factor per second.
     */
-  var velocity: Double
+  var velocity: Double = js.native
 }
 
 object TabbedBarPinchEvent {
@@ -90,5 +91,44 @@ object TabbedBarPinchEvent {
     val __obj = js.Dynamic.literal(currentSpan = currentSpan.asInstanceOf[js.Any], currentSpanX = currentSpanX.asInstanceOf[js.Any], currentSpanY = currentSpanY.asInstanceOf[js.Any], focusX = focusX.asInstanceOf[js.Any], focusY = focusY.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], previousSpan = previousSpan.asInstanceOf[js.Any], previousSpanX = previousSpanX.asInstanceOf[js.Any], previousSpanY = previousSpanY.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timeDelta = timeDelta.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabbedBarPinchEvent]
   }
+  @scala.inline
+  implicit class TabbedBarPinchEventOps[Self <: TabbedBarPinchEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentSpan(value: Double): Self = this.set("currentSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentSpanX(value: Double): Self = this.set("currentSpanX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentSpanY(value: Double): Self = this.set("currentSpanY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFocusX(value: Double): Self = this.set("focusX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFocusY(value: Double): Self = this.set("focusY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInProgress(value: Boolean): Self = this.set("inProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreviousSpan(value: Double): Self = this.set("previousSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreviousSpanX(value: Double): Self = this.set("previousSpanX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreviousSpanY(value: Double): Self = this.set("previousSpanY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeDelta(value: Double): Self = this.set("timeDelta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVelocity(value: Double): Self = this.set("velocity", value.asInstanceOf[js.Any])
+  }
+  
 }
 

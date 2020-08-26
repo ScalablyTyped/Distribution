@@ -30,19 +30,40 @@ trait UpdateGameSessionInput extends js.Object {
 
 object UpdateGameSessionInput {
   @scala.inline
-  def apply(
-    GameSessionId: ArnStringModel,
-    MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
-    Name: NonZeroAndMaxString = null,
-    PlayerSessionCreationPolicy: PlayerSessionCreationPolicy = null,
-    ProtectionPolicy: ProtectionPolicy = null
-  ): UpdateGameSessionInput = {
+  def apply(GameSessionId: ArnStringModel): UpdateGameSessionInput = {
     val __obj = js.Dynamic.literal(GameSessionId = GameSessionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumPlayerSessionCount)) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PlayerSessionCreationPolicy != null) __obj.updateDynamic("PlayerSessionCreationPolicy")(PlayerSessionCreationPolicy.asInstanceOf[js.Any])
-    if (ProtectionPolicy != null) __obj.updateDynamic("ProtectionPolicy")(ProtectionPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGameSessionInput]
   }
+  @scala.inline
+  implicit class UpdateGameSessionInputOps[Self <: UpdateGameSessionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGameSessionId(value: ArnStringModel): Self = this.set("GameSessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaximumPlayerSessionCount(value: WholeNumber): Self = this.set("MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumPlayerSessionCount: Self = this.set("MaximumPlayerSessionCount", js.undefined)
+    @scala.inline
+    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPlayerSessionCreationPolicy(value: PlayerSessionCreationPolicy): Self = this.set("PlayerSessionCreationPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayerSessionCreationPolicy: Self = this.set("PlayerSessionCreationPolicy", js.undefined)
+    @scala.inline
+    def setProtectionPolicy(value: ProtectionPolicy): Self = this.set("ProtectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtectionPolicy: Self = this.set("ProtectionPolicy", js.undefined)
+  }
+  
 }
 

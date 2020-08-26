@@ -37,29 +37,55 @@ trait TaskState extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Task.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object TaskState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    cloudwatchLogGroupArn: Input[ARN] = null,
-    destinationLocationArn: Input[ARN] = null,
-    name: Input[String] = null,
-    options: Input[TaskOptions] = null,
-    sourceLocationArn: Input[ARN] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): TaskState = {
+  def apply(): TaskState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (cloudwatchLogGroupArn != null) __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])
-    if (destinationLocationArn != null) __obj.updateDynamic("destinationLocationArn")(destinationLocationArn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (sourceLocationArn != null) __obj.updateDynamic("sourceLocationArn")(sourceLocationArn.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskState]
   }
+  @scala.inline
+  implicit class TaskStateOps[Self <: TaskState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCloudwatchLogGroupArn(value: Input[ARN]): Self = this.set("cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchLogGroupArn: Self = this.set("cloudwatchLogGroupArn", js.undefined)
+    @scala.inline
+    def setDestinationLocationArn(value: Input[ARN]): Self = this.set("destinationLocationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationLocationArn: Self = this.set("destinationLocationArn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptions(value: Input[TaskOptions]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setSourceLocationArn(value: Input[ARN]): Self = this.set("sourceLocationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLocationArn: Self = this.set("sourceLocationArn", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

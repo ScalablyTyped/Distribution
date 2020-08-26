@@ -28,7 +28,34 @@ object componentRegistryMod extends js.Object {
     def registerComponent(
       componentName: String,
       componentProvider: ComponentProvider,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.UndefOr[scala.Nothing],
+      reduxStore: js.Any
+    ): ComponentProvider = js.native
+    def registerComponent(
+      componentName: String,
+      componentProvider: ComponentProvider,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.Any
+    ): ComponentProvider = js.native
+    def registerComponent(
+      componentName: String,
+      componentProvider: ComponentProvider,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.Any,
+      reduxStore: js.Any
+    ): ComponentProvider = js.native
+    def registerComponent(
+      componentName: String,
+      componentProvider: ComponentProvider,
       concreteComponentProvider: ComponentProvider
+    ): ComponentProvider = js.native
+    def registerComponent(
+      componentName: String,
+      componentProvider: ComponentProvider,
+      concreteComponentProvider: ComponentProvider,
+      ReduxProvider: js.UndefOr[scala.Nothing],
+      reduxStore: js.Any
     ): ComponentProvider = js.native
     def registerComponent(
       componentName: String,
@@ -47,7 +74,34 @@ object componentRegistryMod extends js.Object {
     def registerComponent(
       componentName: Double,
       componentProvider: ComponentProvider,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.UndefOr[scala.Nothing],
+      reduxStore: js.Any
+    ): ComponentProvider = js.native
+    def registerComponent(
+      componentName: Double,
+      componentProvider: ComponentProvider,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.Any
+    ): ComponentProvider = js.native
+    def registerComponent(
+      componentName: Double,
+      componentProvider: ComponentProvider,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.Any,
+      reduxStore: js.Any
+    ): ComponentProvider = js.native
+    def registerComponent(
+      componentName: Double,
+      componentProvider: ComponentProvider,
       concreteComponentProvider: ComponentProvider
+    ): ComponentProvider = js.native
+    def registerComponent(
+      componentName: Double,
+      componentProvider: ComponentProvider,
+      concreteComponentProvider: ComponentProvider,
+      ReduxProvider: js.UndefOr[scala.Nothing],
+      reduxStore: js.Any
     ): ComponentProvider = js.native
     def registerComponent(
       componentName: Double,

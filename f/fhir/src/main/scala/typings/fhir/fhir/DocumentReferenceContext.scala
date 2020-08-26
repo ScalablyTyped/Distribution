@@ -7,69 +7,88 @@ import scala.scalajs.js.annotation._
 /**
   * Clinical context of document
   */
+@js.native
 trait DocumentReferenceContext extends BackboneElement {
   /**
     * Context of the document  content
     */
-  var encounter: js.UndefOr[Reference] = js.undefined
+  var encounter: js.UndefOr[Reference] = js.native
   /**
     * Main clinical acts documented
     */
-  var event: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var event: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Kind of facility where patient was seen
     */
-  var facilityType: js.UndefOr[CodeableConcept] = js.undefined
+  var facilityType: js.UndefOr[CodeableConcept] = js.native
   /**
     * Time of service that is being documented
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
   /**
     * Additional details about where the content was created (e.g. clinical specialty)
     */
-  var practiceSetting: js.UndefOr[CodeableConcept] = js.undefined
+  var practiceSetting: js.UndefOr[CodeableConcept] = js.native
   /**
     * Related identifiers or resources
     */
-  var related: js.UndefOr[js.Array[DocumentReferenceContextRelated]] = js.undefined
+  var related: js.UndefOr[js.Array[DocumentReferenceContextRelated]] = js.native
   /**
     * Patient demographics from source
     */
-  var sourcePatientInfo: js.UndefOr[Reference] = js.undefined
+  var sourcePatientInfo: js.UndefOr[Reference] = js.native
 }
 
 object DocumentReferenceContext {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    encounter: Reference = null,
-    event: js.Array[CodeableConcept] = null,
-    extension: js.Array[Extension] = null,
-    facilityType: CodeableConcept = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    period: Period = null,
-    practiceSetting: CodeableConcept = null,
-    related: js.Array[DocumentReferenceContextRelated] = null,
-    sourcePatientInfo: Reference = null
-  ): DocumentReferenceContext = {
+  def apply(): DocumentReferenceContext = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (encounter != null) __obj.updateDynamic("encounter")(encounter.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (facilityType != null) __obj.updateDynamic("facilityType")(facilityType.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (practiceSetting != null) __obj.updateDynamic("practiceSetting")(practiceSetting.asInstanceOf[js.Any])
-    if (related != null) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
-    if (sourcePatientInfo != null) __obj.updateDynamic("sourcePatientInfo")(sourcePatientInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentReferenceContext]
   }
+  @scala.inline
+  implicit class DocumentReferenceContextOps[Self <: DocumentReferenceContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncounter(value: Reference): Self = this.set("encounter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncounter: Self = this.set("encounter", js.undefined)
+    @scala.inline
+    def setEventVarargs(value: CodeableConcept*): Self = this.set("event", js.Array(value :_*))
+    @scala.inline
+    def setEvent(value: js.Array[CodeableConcept]): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+    @scala.inline
+    def setFacilityType(value: CodeableConcept): Self = this.set("facilityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFacilityType: Self = this.set("facilityType", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setPracticeSetting(value: CodeableConcept): Self = this.set("practiceSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePracticeSetting: Self = this.set("practiceSetting", js.undefined)
+    @scala.inline
+    def setRelatedVarargs(value: DocumentReferenceContextRelated*): Self = this.set("related", js.Array(value :_*))
+    @scala.inline
+    def setRelated(value: js.Array[DocumentReferenceContextRelated]): Self = this.set("related", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelated: Self = this.set("related", js.undefined)
+    @scala.inline
+    def setSourcePatientInfo(value: Reference): Self = this.set("sourcePatientInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcePatientInfo: Self = this.set("sourcePatientInfo", js.undefined)
+  }
+  
 }
 

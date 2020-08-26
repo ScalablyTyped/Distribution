@@ -40,20 +40,44 @@ trait SchemaGoogleCloudVisionV1p4beta1Block extends js.Object {
 
 object SchemaGoogleCloudVisionV1p4beta1Block {
   @scala.inline
-  def apply(
-    blockType: String = null,
-    boundingBox: SchemaGoogleCloudVisionV1p4beta1BoundingPoly = null,
-    confidence: js.UndefOr[Double] = js.undefined,
-    paragraphs: js.Array[SchemaGoogleCloudVisionV1p4beta1Paragraph] = null,
-    property: SchemaGoogleCloudVisionV1p4beta1TextAnnotationTextProperty = null
-  ): SchemaGoogleCloudVisionV1p4beta1Block = {
+  def apply(): SchemaGoogleCloudVisionV1p4beta1Block = {
     val __obj = js.Dynamic.literal()
-    if (blockType != null) __obj.updateDynamic("blockType")(blockType.asInstanceOf[js.Any])
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p4beta1Block]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p4beta1BlockOps[Self <: SchemaGoogleCloudVisionV1p4beta1Block] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockType(value: String): Self = this.set("blockType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockType: Self = this.set("blockType", js.undefined)
+    @scala.inline
+    def setBoundingBox(value: SchemaGoogleCloudVisionV1p4beta1BoundingPoly): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingBox: Self = this.set("boundingBox", js.undefined)
+    @scala.inline
+    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    @scala.inline
+    def setParagraphsVarargs(value: SchemaGoogleCloudVisionV1p4beta1Paragraph*): Self = this.set("paragraphs", js.Array(value :_*))
+    @scala.inline
+    def setParagraphs(value: js.Array[SchemaGoogleCloudVisionV1p4beta1Paragraph]): Self = this.set("paragraphs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraphs: Self = this.set("paragraphs", js.undefined)
+    @scala.inline
+    def setProperty(value: SchemaGoogleCloudVisionV1p4beta1TextAnnotationTextProperty): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+  }
+  
 }
 

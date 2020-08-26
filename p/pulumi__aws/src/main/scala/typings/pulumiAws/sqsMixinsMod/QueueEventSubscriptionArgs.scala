@@ -18,10 +18,26 @@ trait QueueEventSubscriptionArgs extends js.Object {
 
 object QueueEventSubscriptionArgs {
   @scala.inline
-  def apply(batchSize: js.UndefOr[Double] = js.undefined): QueueEventSubscriptionArgs = {
+  def apply(): QueueEventSubscriptionArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueEventSubscriptionArgs]
   }
+  @scala.inline
+  implicit class QueueEventSubscriptionArgsOps[Self <: QueueEventSubscriptionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+  }
+  
 }
 

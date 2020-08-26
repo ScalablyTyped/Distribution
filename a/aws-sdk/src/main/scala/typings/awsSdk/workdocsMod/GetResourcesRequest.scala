@@ -30,20 +30,42 @@ trait GetResourcesRequest extends js.Object {
 
 object GetResourcesRequest {
   @scala.inline
-  def apply(
-    AuthenticationToken: AuthenticationHeaderType = null,
-    CollectionType: ResourceCollectionType = null,
-    Limit: js.UndefOr[LimitType] = js.undefined,
-    Marker: PageMarkerType = null,
-    UserId: IdType = null
-  ): GetResourcesRequest = {
+  def apply(): GetResourcesRequest = {
     val __obj = js.Dynamic.literal()
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (CollectionType != null) __obj.updateDynamic("CollectionType")(CollectionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcesRequest]
   }
+  @scala.inline
+  implicit class GetResourcesRequestOps[Self <: GetResourcesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+    @scala.inline
+    def setCollectionType(value: ResourceCollectionType): Self = this.set("CollectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionType: Self = this.set("CollectionType", js.undefined)
+    @scala.inline
+    def setLimit(value: LimitType): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setMarker(value: PageMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setUserId(value: IdType): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("UserId", js.undefined)
+  }
+  
 }
 

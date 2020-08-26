@@ -1,6 +1,6 @@
 package typings.connect.mod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,7 +48,17 @@ trait Server extends EventEmitter {
     * @api public
     */
   def listen(port: Double): typings.node.httpMod.Server = js.native
+  def listen(
+    port: Double,
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): typings.node.httpMod.Server = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): typings.node.httpMod.Server = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double, callback: js.Function): typings.node.httpMod.Server = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], callback: js.Function): typings.node.httpMod.Server = js.native
   def listen(port: Double, hostname: String): typings.node.httpMod.Server = js.native
+  def listen(port: Double, hostname: String, backlog: js.UndefOr[scala.Nothing], callback: js.Function): typings.node.httpMod.Server = js.native
   def listen(port: Double, hostname: String, backlog: Double): typings.node.httpMod.Server = js.native
   def listen(port: Double, hostname: String, backlog: Double, callback: js.Function): typings.node.httpMod.Server = js.native
   def listen(port: Double, hostname: String, callback: js.Function): typings.node.httpMod.Server = js.native

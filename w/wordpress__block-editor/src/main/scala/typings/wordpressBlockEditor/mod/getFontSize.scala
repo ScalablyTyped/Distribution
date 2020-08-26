@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 object getFontSize extends js.Object {
   def apply(
     fontSizes: js.Array[EditorFontSize],
-    fontSizeAttribute: js.UndefOr[String],
+    fontSizeAttribute: js.UndefOr[scala.Nothing],
     customFontSizeAttribute: Double
   ): PartialEditorFontSizePick = js.native
+  def apply(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: String, customFontSizeAttribute: Double): PartialEditorFontSizePick = js.native
 }
 

@@ -1,5 +1,9 @@
 package typings.vexdb.responseObjectsMod
 
+import typings.vexdb.requestObjectsMod.Grades
+import typings.vexdb.requestObjectsMod.Programs
+import typings.vexdb.requestObjectsMod.Seasons
+import typings.vexdb.requestObjectsMod.SkillsType
 import typings.vexdb.vexdbNumbers.`0`
 import typings.vexdb.vexdbNumbers.`16`
 import typings.vexdb.vexdbNumbers.`1`
@@ -28,11 +32,11 @@ object ResponseObject {
   def TeamsResponseObject(
     city: String,
     country: String,
-    grade: String,
+    grade: Grades,
     is_registered: `0` | `1`,
     number: String,
     organisation: String,
-    program: String,
+    program: Programs,
     region: String,
     robot_name: String,
     team_name: String
@@ -41,7 +45,7 @@ object ResponseObject {
     __obj.asInstanceOf[ResponseObject]
   }
   @scala.inline
-  def SeasonRankingsResponseObject(program: String, season: String, team: String, vrating: Double, vrating_rank: Double): ResponseObject = {
+  def SeasonRankingsResponseObject(program: Programs, season: Seasons, team: String, vrating: Double, vrating_rank: Double): ResponseObject = {
     val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], vrating = vrating.asInstanceOf[js.Any], vrating_rank = vrating_rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
@@ -58,8 +62,8 @@ object ResponseObject {
     loc_region: String,
     loc_venue: String,
     name: String,
-    program: String,
-    season: String,
+    program: Programs,
+    season: Seasons,
     sku: String,
     start: String
   ): ResponseObject = {
@@ -90,12 +94,12 @@ object ResponseObject {
   @scala.inline
   def SkillsResponseObject(
     attempts: Double,
-    program: String,
+    program: Programs,
     rank: Double,
     score: Double,
     sku: String,
     team: String,
-    `type`: Double
+    `type`: SkillsType
   ): ResponseObject = {
     val __obj = js.Dynamic.literal(attempts = attempts.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

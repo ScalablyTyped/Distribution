@@ -12,7 +12,7 @@ High quality image resize in browser.
 | Keywords           | resize, scale, image, lanczos, canvas |
 | # releases         | 8 |
 | # dependents       | 30 |
-| # downloads        | 709725 |
+| # downloads        | 709296 |
 | # stars            | 5 |
 
 ## Links

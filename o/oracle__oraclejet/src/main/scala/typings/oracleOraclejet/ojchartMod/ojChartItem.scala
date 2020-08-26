@@ -1678,58 +1678,122 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
   def setProperty(property: drilling, value: inherit): Unit = js.native
   def setProperty(property: drilling, value: off): Unit = js.native
   def setProperty(property: drilling, value: on): Unit = js.native
-  def setProperty(
-    property: labelPosition,
-    value: center | outsideSlice | aboveMarker | belowMarker | beforeMarker | afterMarker | insideBarEdge | outsideBarEdge | none | auto
-  ): Unit = js.native
+  def setProperty(property: labelPosition, value: aboveMarker): Unit = js.native
+  def setProperty(property: labelPosition, value: afterMarker): Unit = js.native
+  def setProperty(property: labelPosition, value: auto): Unit = js.native
+  def setProperty(property: labelPosition, value: beforeMarker): Unit = js.native
+  def setProperty(property: labelPosition, value: belowMarker): Unit = js.native
+  def setProperty(property: labelPosition, value: center): Unit = js.native
+  def setProperty(property: labelPosition, value: insideBarEdge): Unit = js.native
+  def setProperty(property: labelPosition, value: none): Unit = js.native
+  def setProperty(property: labelPosition, value: outsideBarEdge): Unit = js.native
+  def setProperty(property: labelPosition, value: outsideSlice): Unit = js.native
   def setProperty(property: markerDisplayed, value: auto): Unit = js.native
   def setProperty(property: markerDisplayed, value: off): Unit = js.native
   def setProperty(property: markerDisplayed, value: on): Unit = js.native
-  def setProperty(
-    property: markerShape,
-    value: circle | diamond | human | plus | square | star | triangleDown | triangleUp | auto | String
-  ): Unit = js.native
-  def setProperty(
-    property: pattern,
-    value: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | auto
-  ): Unit = js.native
+  def setProperty(property: markerShape, value: auto): Unit = js.native
+  def setProperty(property: markerShape, value: circle): Unit = js.native
+  def setProperty(property: markerShape, value: diamond): Unit = js.native
+  def setProperty(property: markerShape, value: human): Unit = js.native
+  def setProperty(property: markerShape, value: plus): Unit = js.native
+  def setProperty(property: markerShape, value: square): Unit = js.native
+  def setProperty(property: markerShape, value: star): Unit = js.native
+  def setProperty(property: markerShape, value: triangleDown): Unit = js.native
+  def setProperty(property: markerShape, value: triangleUp): Unit = js.native
+  def setProperty(property: pattern, value: auto): Unit = js.native
+  def setProperty(property: pattern, value: largeChecker): Unit = js.native
+  def setProperty(property: pattern, value: largeCrosshatch): Unit = js.native
+  def setProperty(property: pattern, value: largeDiagonalLeft): Unit = js.native
+  def setProperty(property: pattern, value: largeDiagonalRight): Unit = js.native
+  def setProperty(property: pattern, value: largeDiamond): Unit = js.native
+  def setProperty(property: pattern, value: largeTriangle): Unit = js.native
+  def setProperty(property: pattern, value: smallChecker): Unit = js.native
+  def setProperty(property: pattern, value: smallCrosshatch): Unit = js.native
+  def setProperty(property: pattern, value: smallDiagonalLeft): Unit = js.native
+  def setProperty(property: pattern, value: smallDiagonalRight): Unit = js.native
+  def setProperty(property: pattern, value: smallDiamond): Unit = js.native
+  def setProperty(property: pattern, value: smallTriangle): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojChartItemSettableProperties]): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_borderColor(property: borderColor): Unit = js.native
   @JSName("setProperty")
   def setProperty_borderColor(property: borderColor, value: String): Unit = js.native
   @JSName("setProperty")
+  def setProperty_borderWidth(property: borderWidth): Unit = js.native
+  @JSName("setProperty")
   def setProperty_borderWidth(property: borderWidth, value: Double): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_boxPlot(property: boxPlot): Unit = js.native
   @JSName("setProperty")
   def setProperty_boxPlot(property: boxPlot, value: MedianSvgStyle): Unit = js.native
   @JSName("setProperty")
+  def setProperty_categories(property: categories): Unit = js.native
+  @JSName("setProperty")
   def setProperty_categories(property: categories, value: js.Array[String]): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_close(property: close): Unit = js.native
   @JSName("setProperty")
   def setProperty_close(property: close, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_color(property: color): Unit = js.native
+  @JSName("setProperty")
   def setProperty_color(property: color, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_drilling(property: drilling): Unit = js.native
   @JSName("setProperty")
   def setProperty_groupId(property: groupId, value: js.Array[String | Double]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_high(property: high): Unit = js.native
+  @JSName("setProperty")
   def setProperty_high(property: high, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_items(property: items): Unit = js.native
+  @JSName("setProperty")
   def setProperty_items(property: items, value: js.Array[Double | js.Object]): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_label(property: label): Unit = js.native
   @JSName("setProperty")
   def setProperty_label(property: label, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_label(property: label, value: js.Array[String]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_labelPosition(property: labelPosition): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_labelStyle(property: labelStyle): Unit = js.native
+  @JSName("setProperty")
   def setProperty_labelStyle(property: labelStyle, value: js.Array[js.Object]): Unit = js.native
   @JSName("setProperty")
   def setProperty_labelStyle(property: labelStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
+  def setProperty_low(property: low): Unit = js.native
+  @JSName("setProperty")
   def setProperty_low(property: low, value: Double): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_markerDisplayed(property: markerDisplayed): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_markerShape(property: markerShape): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_markerShape(property: markerShape, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_markerSize(property: markerSize): Unit = js.native
   @JSName("setProperty")
   def setProperty_markerSize(property: markerSize, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_open(property: open): Unit = js.native
+  @JSName("setProperty")
   def setProperty_open(property: open, value: Double): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_pattern(property: pattern): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_q1(property: q1): Unit = js.native
   @JSName("setProperty")
   def setProperty_q1(property: q1, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_q2(property: q2): Unit = js.native
+  @JSName("setProperty")
   def setProperty_q2(property: q2, value: Double): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_q3(property: q3): Unit = js.native
   @JSName("setProperty")
   def setProperty_q3(property: q3, value: Double): Unit = js.native
   @JSName("setProperty")
@@ -1737,31 +1801,57 @@ trait ojChartItem extends JetElement[ojChartItemSettableProperties] {
   @JSName("setProperty")
   def setProperty_seriesId(property: seriesId, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_shortDesc(property: shortDesc): Unit = js.native
+  @JSName("setProperty")
   def setProperty_shortDesc(property: shortDesc, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_source(property: source): Unit = js.native
   @JSName("setProperty")
   def setProperty_source(property: source, value: String): Unit = js.native
   @JSName("setProperty")
+  def setProperty_sourceHover(property: sourceHover): Unit = js.native
+  @JSName("setProperty")
   def setProperty_sourceHover(property: sourceHover, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_sourceHoverSelected(property: sourceHoverSelected): Unit = js.native
   @JSName("setProperty")
   def setProperty_sourceHoverSelected(property: sourceHoverSelected, value: String): Unit = js.native
   @JSName("setProperty")
+  def setProperty_sourceSelected(property: sourceSelected): Unit = js.native
+  @JSName("setProperty")
   def setProperty_sourceSelected(property: sourceSelected, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_svgClassName(property: svgClassName): Unit = js.native
   @JSName("setProperty")
   def setProperty_svgClassName(property: svgClassName, value: String): Unit = js.native
   @JSName("setProperty")
+  def setProperty_svgStyle(property: svgStyle): Unit = js.native
+  @JSName("setProperty")
   def setProperty_svgStyle(property: svgStyle, value: js.Object): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_targetValue(property: targetValue): Unit = js.native
   @JSName("setProperty")
   def setProperty_targetValue(property: targetValue, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_value(property: value): Unit = js.native
+  @JSName("setProperty")
   def setProperty_value(property: value, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_volume(property: volume): Unit = js.native
+  @JSName("setProperty")
   def setProperty_volume(property: volume, value: Double): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_x(property: x): Unit = js.native
   @JSName("setProperty")
   def setProperty_x(property: x, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_x(property: x, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_y(property: y): Unit = js.native
+  @JSName("setProperty")
   def setProperty_y(property: y, value: Double): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_z(property: z): Unit = js.native
   @JSName("setProperty")
   def setProperty_z(property: z, value: Double): Unit = js.native
 }

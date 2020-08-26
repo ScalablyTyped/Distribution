@@ -12,7 +12,7 @@ Extendable Error Class
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 29065 |
+| # downloads        | 26679 |
 | # stars            | 0 |
 
 ## Links

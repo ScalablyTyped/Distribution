@@ -21,23 +21,45 @@ trait VpcEndpointServiceArgs extends js.Object {
     */
   val networkLoadBalancerArns: Input[js.Array[Input[String]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object VpcEndpointServiceArgs {
   @scala.inline
-  def apply(
-    acceptanceRequired: Input[Boolean],
-    networkLoadBalancerArns: Input[js.Array[Input[String]]],
-    allowedPrincipals: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): VpcEndpointServiceArgs = {
+  def apply(acceptanceRequired: Input[Boolean], networkLoadBalancerArns: Input[js.Array[Input[String]]]): VpcEndpointServiceArgs = {
     val __obj = js.Dynamic.literal(acceptanceRequired = acceptanceRequired.asInstanceOf[js.Any], networkLoadBalancerArns = networkLoadBalancerArns.asInstanceOf[js.Any])
-    if (allowedPrincipals != null) __obj.updateDynamic("allowedPrincipals")(allowedPrincipals.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpointServiceArgs]
   }
+  @scala.inline
+  implicit class VpcEndpointServiceArgsOps[Self <: VpcEndpointServiceArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptanceRequired(value: Input[Boolean]): Self = this.set("acceptanceRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNetworkLoadBalancerArnsVarargs(value: Input[String]*): Self = this.set("networkLoadBalancerArns", js.Array(value :_*))
+    @scala.inline
+    def setNetworkLoadBalancerArns(value: Input[js.Array[Input[String]]]): Self = this.set("networkLoadBalancerArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowedPrincipalsVarargs(value: Input[String]*): Self = this.set("allowedPrincipals", js.Array(value :_*))
+    @scala.inline
+    def setAllowedPrincipals(value: Input[js.Array[Input[String]]]): Self = this.set("allowedPrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedPrincipals: Self = this.set("allowedPrincipals", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

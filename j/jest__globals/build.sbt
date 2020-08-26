@@ -1,18 +1,20 @@
 organization := "org.scalablytyped"
 name := "jest__globals"
-version := "25.5.2-275da2"
-scalaVersion := "2.13.2"
+version := "26.2.0-4de52e"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chalk" % "3.0.0-08eee5",
-  "org.scalablytyped" %%% "expect" % "25.5.0-7af423",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200609Z-62a062",
-  "org.scalablytyped" %%% "jest-diff" % "25.5.0-bc836b",
-  "org.scalablytyped" %%% "jest-matcher-utils" % "25.5.0-97653b",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-aea877",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "chalk" % "4.1.0-f17808",
+  "org.scalablytyped" %%% "expect" % "26.2.0-52fb08",
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200609Z-73ff2c",
+  "org.scalablytyped" %%% "jest-diff" % "26.2.0-577337",
+  "org.scalablytyped" %%% "jest-matcher-utils" % "26.2.0-2bf616",
+  "org.scalablytyped" %%% "jest-mock" % "24.9.0-039104",
+  "org.scalablytyped" %%% "jest__environment" % "26.2.0-b36189",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-dd389b",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -18,6 +18,7 @@ class DistanceDisplayCondition protected () extends Packable {
 @JSImport("cesium", "DistanceDisplayCondition")
 @js.native
 object DistanceDisplayCondition extends js.Object {
+  def clone(value: js.UndefOr[scala.Nothing], result: DistanceDisplayCondition): DistanceDisplayCondition = js.native
   def clone(value: DistanceDisplayCondition): DistanceDisplayCondition = js.native
   def clone(value: DistanceDisplayCondition, result: DistanceDisplayCondition): DistanceDisplayCondition = js.native
   def equals(left: DistanceDisplayCondition, right: DistanceDisplayCondition): Boolean = js.native

@@ -26,12 +26,34 @@ trait SchemaGoogleCloudVideointelligenceV1p1beta1Entity extends js.Object {
 
 object SchemaGoogleCloudVideointelligenceV1p1beta1Entity {
   @scala.inline
-  def apply(description: String = null, entityId: String = null, languageCode: String = null): SchemaGoogleCloudVideointelligenceV1p1beta1Entity = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1p1beta1Entity = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p1beta1Entity]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1EntityOps[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1Entity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+  }
+  
 }
 

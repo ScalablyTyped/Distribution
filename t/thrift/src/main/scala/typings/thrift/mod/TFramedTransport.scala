@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TFramedTransport () extends TTransport {
   def this(buffer: Buffer) = this()
+  def this(buffer: js.UndefOr[scala.Nothing], callback: TTransportCallback) = this()
   def this(buffer: Buffer, callback: TTransportCallback) = this()
 }
 

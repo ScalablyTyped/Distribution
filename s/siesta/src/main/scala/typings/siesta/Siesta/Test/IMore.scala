@@ -41,11 +41,55 @@ trait IMore extends js.Object {
   def verifyGlobals(names: String*): Unit = js.native
   def waitFor(config: IWaitForConfig): IWaitForReturn = js.native
   def waitFor(method: js.Function, callback: js.Function): IWaitForReturn = js.native
+  def waitFor(
+    method: js.Function,
+    callback: js.Function,
+    scope: js.UndefOr[scala.Nothing],
+    timeout: js.UndefOr[scala.Nothing],
+    interval: Double
+  ): IWaitForReturn = js.native
+  def waitFor(method: js.Function, callback: js.Function, scope: js.UndefOr[scala.Nothing], timeout: Double): IWaitForReturn = js.native
+  def waitFor(
+    method: js.Function,
+    callback: js.Function,
+    scope: js.UndefOr[scala.Nothing],
+    timeout: Double,
+    interval: Double
+  ): IWaitForReturn = js.native
   def waitFor(method: js.Function, callback: js.Function, scope: js.Any): IWaitForReturn = js.native
+  def waitFor(
+    method: js.Function,
+    callback: js.Function,
+    scope: js.Any,
+    timeout: js.UndefOr[scala.Nothing],
+    interval: Double
+  ): IWaitForReturn = js.native
   def waitFor(method: js.Function, callback: js.Function, scope: js.Any, timeout: Double): IWaitForReturn = js.native
   def waitFor(method: js.Function, callback: js.Function, scope: js.Any, timeout: Double, interval: Double): IWaitForReturn = js.native
   def waitFor(wait: Double, callback: js.Function): IWaitForReturn = js.native
+  def waitFor(
+    wait: Double,
+    callback: js.Function,
+    scope: js.UndefOr[scala.Nothing],
+    timeout: js.UndefOr[scala.Nothing],
+    interval: Double
+  ): IWaitForReturn = js.native
+  def waitFor(wait: Double, callback: js.Function, scope: js.UndefOr[scala.Nothing], timeout: Double): IWaitForReturn = js.native
+  def waitFor(
+    wait: Double,
+    callback: js.Function,
+    scope: js.UndefOr[scala.Nothing],
+    timeout: Double,
+    interval: Double
+  ): IWaitForReturn = js.native
   def waitFor(wait: Double, callback: js.Function, scope: js.Any): IWaitForReturn = js.native
+  def waitFor(
+    wait: Double,
+    callback: js.Function,
+    scope: js.Any,
+    timeout: js.UndefOr[scala.Nothing],
+    interval: Double
+  ): IWaitForReturn = js.native
   def waitFor(wait: Double, callback: js.Function, scope: js.Any, timeout: Double): IWaitForReturn = js.native
   def waitFor(wait: Double, callback: js.Function, scope: js.Any, timeout: Double, interval: Double): IWaitForReturn = js.native
 }

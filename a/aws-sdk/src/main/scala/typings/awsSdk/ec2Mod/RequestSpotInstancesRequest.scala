@@ -43,6 +43,10 @@ trait RequestSpotInstancesRequest extends js.Object {
     */
   var SpotPrice: js.UndefOr[String] = js.native
   /**
+    * The key-value pair for tagging the Spot Instance request on creation. The value for ResourceType must be spot-instances-request, otherwise the Spot Instance request fails. To tag the Spot Instance request after it has been created, see CreateTags. 
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * The Spot Instance request type. Default: one-time 
     */
   var Type: js.UndefOr[SpotInstanceType] = js.native
@@ -58,34 +62,76 @@ trait RequestSpotInstancesRequest extends js.Object {
 
 object RequestSpotInstancesRequest {
   @scala.inline
-  def apply(
-    AvailabilityZoneGroup: String = null,
-    BlockDurationMinutes: js.UndefOr[Integer] = js.undefined,
-    ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    InstanceCount: js.UndefOr[Integer] = js.undefined,
-    InstanceInterruptionBehavior: InstanceInterruptionBehavior = null,
-    LaunchGroup: String = null,
-    LaunchSpecification: RequestSpotLaunchSpecification = null,
-    SpotPrice: String = null,
-    Type: SpotInstanceType = null,
-    ValidFrom: DateTime = null,
-    ValidUntil: DateTime = null
-  ): RequestSpotInstancesRequest = {
+  def apply(): RequestSpotInstancesRequest = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZoneGroup != null) __obj.updateDynamic("AvailabilityZoneGroup")(AvailabilityZoneGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(BlockDurationMinutes)) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.get.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
-    if (InstanceInterruptionBehavior != null) __obj.updateDynamic("InstanceInterruptionBehavior")(InstanceInterruptionBehavior.asInstanceOf[js.Any])
-    if (LaunchGroup != null) __obj.updateDynamic("LaunchGroup")(LaunchGroup.asInstanceOf[js.Any])
-    if (LaunchSpecification != null) __obj.updateDynamic("LaunchSpecification")(LaunchSpecification.asInstanceOf[js.Any])
-    if (SpotPrice != null) __obj.updateDynamic("SpotPrice")(SpotPrice.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (ValidFrom != null) __obj.updateDynamic("ValidFrom")(ValidFrom.asInstanceOf[js.Any])
-    if (ValidUntil != null) __obj.updateDynamic("ValidUntil")(ValidUntil.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSpotInstancesRequest]
   }
+  @scala.inline
+  implicit class RequestSpotInstancesRequestOps[Self <: RequestSpotInstancesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZoneGroup(value: String): Self = this.set("AvailabilityZoneGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZoneGroup: Self = this.set("AvailabilityZoneGroup", js.undefined)
+    @scala.inline
+    def setBlockDurationMinutes(value: Integer): Self = this.set("BlockDurationMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockDurationMinutes: Self = this.set("BlockDurationMinutes", js.undefined)
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+    @scala.inline
+    def setInstanceInterruptionBehavior(value: InstanceInterruptionBehavior): Self = this.set("InstanceInterruptionBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceInterruptionBehavior: Self = this.set("InstanceInterruptionBehavior", js.undefined)
+    @scala.inline
+    def setLaunchGroup(value: String): Self = this.set("LaunchGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchGroup: Self = this.set("LaunchGroup", js.undefined)
+    @scala.inline
+    def setLaunchSpecification(value: RequestSpotLaunchSpecification): Self = this.set("LaunchSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchSpecification: Self = this.set("LaunchSpecification", js.undefined)
+    @scala.inline
+    def setSpotPrice(value: String): Self = this.set("SpotPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotPrice: Self = this.set("SpotPrice", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+    @scala.inline
+    def setType(value: SpotInstanceType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setValidFrom(value: DateTime): Self = this.set("ValidFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidFrom: Self = this.set("ValidFrom", js.undefined)
+    @scala.inline
+    def setValidUntil(value: DateTime): Self = this.set("ValidUntil", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidUntil: Self = this.set("ValidUntil", js.undefined)
+  }
+  
 }
 

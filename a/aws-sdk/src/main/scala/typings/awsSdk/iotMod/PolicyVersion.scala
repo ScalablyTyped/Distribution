@@ -22,16 +22,34 @@ trait PolicyVersion extends js.Object {
 
 object PolicyVersion {
   @scala.inline
-  def apply(
-    createDate: DateType = null,
-    isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
-    versionId: PolicyVersionId = null
-  ): PolicyVersion = {
+  def apply(): PolicyVersion = {
     val __obj = js.Dynamic.literal()
-    if (createDate != null) __obj.updateDynamic("createDate")(createDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefaultVersion)) __obj.updateDynamic("isDefaultVersion")(isDefaultVersion.get.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyVersion]
   }
+  @scala.inline
+  implicit class PolicyVersionOps[Self <: PolicyVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateDate(value: DateType): Self = this.set("createDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("createDate", js.undefined)
+    @scala.inline
+    def setIsDefaultVersion(value: IsDefaultVersion): Self = this.set("isDefaultVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefaultVersion: Self = this.set("isDefaultVersion", js.undefined)
+    @scala.inline
+    def setVersionId(value: PolicyVersionId): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("versionId", js.undefined)
+  }
+  
 }
 

@@ -10,15 +10,14 @@ Shortcode module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/shortcode |
 | Keywords           | wordpress, shortcode |
-| # releases         | 17 |
+| # releases         | 16 |
 | # dependents       | 2 |
-| # downloads        | 125122 |
+| # downloads        | 128165 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/shortcode/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fshortcode)
     
 

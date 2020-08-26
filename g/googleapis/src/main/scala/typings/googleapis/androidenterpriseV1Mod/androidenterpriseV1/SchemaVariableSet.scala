@@ -29,12 +29,34 @@ trait SchemaVariableSet extends js.Object {
 
 object SchemaVariableSet {
   @scala.inline
-  def apply(kind: String = null, placeholder: String = null, userValue: String = null): SchemaVariableSet = {
+  def apply(): SchemaVariableSet = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (userValue != null) __obj.updateDynamic("userValue")(userValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVariableSet]
   }
+  @scala.inline
+  implicit class SchemaVariableSetOps[Self <: SchemaVariableSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setUserValue(value: String): Self = this.set("userValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserValue: Self = this.set("userValue", js.undefined)
+  }
+  
 }
 

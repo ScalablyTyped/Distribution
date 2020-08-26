@@ -10,9 +10,9 @@ JavaScript Client Library for the Ghost [Content API](https://ghost.org/docs/api
 | ------------------ | :-------------: |
 | Full name          | @tryghost/content-api |
 | Keywords           | - |
-| # releases         | 33 |
-| # dependents       | 7 |
-| # downloads        | 122775 |
+| # releases         | 34 |
+| # dependents       | 8 |
+| # downloads        | 143866 |
 | # stars            | 0 |
 
 ## Links

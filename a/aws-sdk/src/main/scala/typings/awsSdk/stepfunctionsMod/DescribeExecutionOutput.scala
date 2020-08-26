@@ -47,16 +47,45 @@ object DescribeExecutionOutput {
     input: SensitiveData,
     startDate: Timestamp,
     stateMachineArn: Arn,
-    status: ExecutionStatus,
-    name: Name = null,
-    output: SensitiveData = null,
-    stopDate: Timestamp = null
+    status: ExecutionStatus
   ): DescribeExecutionOutput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], stateMachineArn = stateMachineArn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (stopDate != null) __obj.updateDynamic("stopDate")(stopDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeExecutionOutput]
   }
+  @scala.inline
+  implicit class DescribeExecutionOutputOps[Self <: DescribeExecutionOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutionArn(value: Arn): Self = this.set("executionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInput(value: SensitiveData): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartDate(value: Timestamp): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStateMachineArn(value: Arn): Self = this.set("stateMachineArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: ExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOutput(value: SensitiveData): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+    @scala.inline
+    def setStopDate(value: Timestamp): Self = this.set("stopDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopDate: Self = this.set("stopDate", js.undefined)
+  }
+  
 }
 

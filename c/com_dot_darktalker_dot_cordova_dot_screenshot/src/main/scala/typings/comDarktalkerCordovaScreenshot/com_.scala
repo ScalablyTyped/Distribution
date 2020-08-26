@@ -48,7 +48,30 @@ object com_ extends js.Object {
           def save(saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit]): Unit = js.native
           def save(
             saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
+            format: js.UndefOr[scala.Nothing],
+            quality: js.UndefOr[scala.Nothing],
+            filename: String
+          ): Unit = js.native
+          def save(
+            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
+            format: js.UndefOr[scala.Nothing],
+            quality: Double
+          ): Unit = js.native
+          def save(
+            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
+            format: js.UndefOr[scala.Nothing],
+            quality: Double,
+            filename: String
+          ): Unit = js.native
+          def save(
+            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
             format: String
+          ): Unit = js.native
+          def save(
+            saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],
+            format: String,
+            quality: js.UndefOr[scala.Nothing],
+            filename: String
           ): Unit = js.native
           def save(
             saveCallback: js.Function2[/* errorMessage */ String, /* successObject */ FilePath, Unit],

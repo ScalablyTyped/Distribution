@@ -9,55 +9,54 @@ import scala.scalajs.js.annotation._
   * http://js.cytoscape.org/#layouts/circle
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.cytoscape.mod.LayoutOptions because Already inherited */ trait CircleLayoutOptions extends ShapedLayoutOptions {
+- typings.cytoscape.mod.LayoutOptions because Already inherited */ @js.native
+trait CircleLayoutOptions extends ShapedLayoutOptions {
   // whether the layout should go clockwise (true) or counterclockwise/anticlockwise (false)
-  var clockwise: js.UndefOr[Boolean] = js.undefined
+  var clockwise: js.UndefOr[Boolean] = js.native
   @JSName("name")
-  var name_CircleLayoutOptions: circle
+  var name_CircleLayoutOptions: circle = js.native
   // the radius of the circle
-  var radius: js.UndefOr[Double] = js.undefined
+  var radius: js.UndefOr[Double] = js.native
   // where nodes start in radians, e.g. 3 / 2 * Math.PI,
-  var startAngle: Double
+  var startAngle: Double = js.native
   // how many radians should be between the first and last node (defaults to full circle)
-  var sweep: js.UndefOr[Double] = js.undefined
+  var sweep: js.UndefOr[Double] = js.native
 }
 
 object CircleLayoutOptions {
   @scala.inline
-  def apply(
-    fit: Boolean,
-    name: circle,
-    nodeDimensionsIncludeLabels: Boolean,
-    startAngle: Double,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationEasing: js.UndefOr[Boolean] = js.undefined,
-    avoidOverlap: js.UndefOr[Boolean] = js.undefined,
-    boundingBox: BoundingBox12 | BoundingBoxWH = null,
-    clockwise: js.UndefOr[Boolean] = js.undefined,
-    padding: js.UndefOr[Double] = js.undefined,
-    radius: js.UndefOr[Double] = js.undefined,
-    ready: /* e */ LayoutEventObject => Unit = null,
-    sort: (/* a */ SortableNode, /* b */ SortableNode) => Double = null,
-    spacingFactor: js.UndefOr[Double] = js.undefined,
-    stop: /* e */ LayoutEventObject => Unit = null,
-    sweep: js.UndefOr[Double] = js.undefined
-  ): CircleLayoutOptions = {
+  def apply(fit: Boolean, name: circle, nodeDimensionsIncludeLabels: Boolean, startAngle: Double): CircleLayoutOptions = {
     val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.get.asInstanceOf[js.Any])
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (!js.isUndefined(spacingFactor)) __obj.updateDynamic("spacingFactor")(spacingFactor.get.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    if (!js.isUndefined(sweep)) __obj.updateDynamic("sweep")(sweep.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleLayoutOptions]
   }
+  @scala.inline
+  implicit class CircleLayoutOptionsOps[Self <: CircleLayoutOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: circle): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClockwise(value: Boolean): Self = this.set("clockwise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClockwise: Self = this.set("clockwise", js.undefined)
+    @scala.inline
+    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    @scala.inline
+    def setSweep(value: Double): Self = this.set("sweep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSweep: Self = this.set("sweep", js.undefined)
+  }
+  
 }
 

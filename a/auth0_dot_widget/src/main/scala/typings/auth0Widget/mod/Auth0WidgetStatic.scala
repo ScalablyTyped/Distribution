@@ -17,6 +17,7 @@ trait Auth0WidgetStatic extends Instantiable1[/* params */ Auth0Constructor, Aut
   def reset(options: Auth0Options): Auth0WidgetStatic = js.native
   def reset(options: Auth0Options, callback: js.Function): Auth0WidgetStatic = js.native
   def signin(options: Auth0Options): Auth0WidgetStatic = js.native
+  def signin(options: Auth0Options, widgetLoadedCallback: js.UndefOr[scala.Nothing], popupCallback: js.Function): Auth0WidgetStatic = js.native
   def signin(options: Auth0Options, widgetLoadedCallback: js.Function): Auth0WidgetStatic = js.native
   def signin(options: Auth0Options, widgetLoadedCallback: js.Function, popupCallback: js.Function): Auth0WidgetStatic = js.native
   def signup(

@@ -16,10 +16,5 @@ class ASPxClientRibbonTabEventArgs protected ()
     * @param tab An ASPxClientRibbonTab object that is a tab related to the event.
     */
   def this(tab: typings.devexpressWeb.ASPxClientRibbonTab) = this()
-  /**
-    * Gets the tab object related to the event.
-    */
-  /* CompleteClass */
-  override var tab: typings.devexpressWeb.ASPxClientRibbonTab = js.native
 }
 

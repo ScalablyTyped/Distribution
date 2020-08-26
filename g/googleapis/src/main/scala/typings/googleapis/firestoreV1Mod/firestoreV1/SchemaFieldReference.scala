@@ -14,10 +14,26 @@ trait SchemaFieldReference extends js.Object {
 
 object SchemaFieldReference {
   @scala.inline
-  def apply(fieldPath: String = null): SchemaFieldReference = {
+  def apply(): SchemaFieldReference = {
     val __obj = js.Dynamic.literal()
-    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldReference]
   }
+  @scala.inline
+  implicit class SchemaFieldReferenceOps[Self <: SchemaFieldReference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFieldPath(value: String): Self = this.set("fieldPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldPath: Self = this.set("fieldPath", js.undefined)
+  }
+  
 }
 

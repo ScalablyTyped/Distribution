@@ -14,10 +14,28 @@ trait SchemaParsedData extends js.Object {
 
 object SchemaParsedData {
   @scala.inline
-  def apply(segments: js.Array[SchemaSegment] = null): SchemaParsedData = {
+  def apply(): SchemaParsedData = {
     val __obj = js.Dynamic.literal()
-    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaParsedData]
   }
+  @scala.inline
+  implicit class SchemaParsedDataOps[Self <: SchemaParsedData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSegmentsVarargs(value: SchemaSegment*): Self = this.set("segments", js.Array(value :_*))
+    @scala.inline
+    def setSegments(value: js.Array[SchemaSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegments: Self = this.set("segments", js.undefined)
+  }
+  
 }
 

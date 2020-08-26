@@ -12,7 +12,7 @@ A fast lightweight pure JavaScript script for lazy loading and multi-serving ima
 | Keywords           | blazy, blazyjs, blazy.js, lazy, lazyload, lazyloading, image, images, picture, srcset, iframe, video, unity, retina, responsive, performance |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 861136 |
+| # downloads        | 879398 |
 | # stars            | 6 |
 
 ## Links

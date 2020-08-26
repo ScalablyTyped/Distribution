@@ -111,6 +111,7 @@ trait SqlBricksFn extends js.Object {
   def gteSome(column: SelectStatement, value: js.Any): WhereBinary = js.native
   def in(column: String, stmt: SelectStatement): WhereExpression = js.native
   def in(column: String, values: js.Any*): WhereExpression = js.native
+  def insert(tbl: js.UndefOr[scala.Nothing], values: js.Any*): InsertStatement = js.native
   /**
     * Returns a new INSERT statement. It can be used with or without the new operator.
     * @alias insertInto
@@ -121,8 +122,8 @@ trait SqlBricksFn extends js.Object {
     * insert('person', {'first_name': 'Fred', 'last_name': 'Flintstone'});
     * // INSERT INTO person (first_name, last_name) VALUES ('Fred', 'Flintstone')
     */
-  def insert(): InsertStatement = js.native
   def insert(tbl: String, values: js.Any*): InsertStatement = js.native
+  def insertInto(tbl: js.UndefOr[scala.Nothing], values: js.Any*): InsertStatement = js.native
   /**
     * Returns a new INSERT statement. It can be used with or without the new operator.
     * @alias insert
@@ -133,7 +134,6 @@ trait SqlBricksFn extends js.Object {
     * insert('person', {'first_name': 'Fred', 'last_name': 'Flintstone'});
     * // INSERT INTO person (first_name, last_name) VALUES ('Fred', 'Flintstone')
     */
-  def insertInto(): InsertStatement = js.native
   def insertInto(tbl: String, values: js.Any*): InsertStatement = js.native
   def isNotNull(column: String): WhereExpression = js.native
   def isNull(column: String): WhereExpression = js.native

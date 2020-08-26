@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   val DEFAULT_EXTENSIONS: js.Array[String] = js.native
   def default(): Unit = js.native
+  def default(extensions: js.UndefOr[scala.Nothing], handler: Handler): Unit = js.native
   def default(extensions: js.Array[String]): Unit = js.native
   def default(extensions: js.Array[String], handler: Handler): Unit = js.native
   def noOp(): Unit = js.native

@@ -12,7 +12,7 @@ Randomize the order of the elements in a given array.
 | Keywords           | random, shuffle, array |
 | # releases         | 1 |
 | # dependents       | 60 |
-| # downloads        | 618954 |
+| # downloads        | 645458 |
 | # stars            | 8 |
 
 ## Links

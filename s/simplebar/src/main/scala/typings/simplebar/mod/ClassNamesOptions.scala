@@ -6,62 +6,103 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined simplebar.simplebar.KnownClassNamesOptions & {[className: string] : string} */
+@js.native
 trait ClassNamesOptions extends /* className */ StringDictionary[String] {
-  var contentEl: js.UndefOr[String] = js.undefined
-  var contentWrapper: js.UndefOr[String] = js.undefined
-  var dragging: js.UndefOr[String] = js.undefined
-  var heightAutoObserverEl: js.UndefOr[String] = js.undefined
-  var heightAutoObserverWrapperEl: js.UndefOr[String] = js.undefined
-  var horizontal: js.UndefOr[String] = js.undefined
-  var hover: js.UndefOr[String] = js.undefined
-  var mask: js.UndefOr[String] = js.undefined
-  var offset: js.UndefOr[String] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var scrollbar: js.UndefOr[String] = js.undefined
-  var track: js.UndefOr[String] = js.undefined
-  var vertical: js.UndefOr[String] = js.undefined
-  var visible: js.UndefOr[String] = js.undefined
-  var wrapper: js.UndefOr[String] = js.undefined
+  var contentEl: js.UndefOr[String] = js.native
+  var contentWrapper: js.UndefOr[String] = js.native
+  var dragging: js.UndefOr[String] = js.native
+  var heightAutoObserverEl: js.UndefOr[String] = js.native
+  var heightAutoObserverWrapperEl: js.UndefOr[String] = js.native
+  var horizontal: js.UndefOr[String] = js.native
+  var hover: js.UndefOr[String] = js.native
+  var mask: js.UndefOr[String] = js.native
+  var offset: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var scrollbar: js.UndefOr[String] = js.native
+  var track: js.UndefOr[String] = js.native
+  var vertical: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[String] = js.native
+  var wrapper: js.UndefOr[String] = js.native
 }
 
 object ClassNamesOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[String] = null,
-    contentEl: String = null,
-    contentWrapper: String = null,
-    dragging: String = null,
-    heightAutoObserverEl: String = null,
-    heightAutoObserverWrapperEl: String = null,
-    horizontal: String = null,
-    hover: String = null,
-    mask: String = null,
-    offset: String = null,
-    placeholder: String = null,
-    scrollbar: String = null,
-    track: String = null,
-    vertical: String = null,
-    visible: String = null,
-    wrapper: String = null
-  ): ClassNamesOptions = {
+  def apply(): ClassNamesOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (contentEl != null) __obj.updateDynamic("contentEl")(contentEl.asInstanceOf[js.Any])
-    if (contentWrapper != null) __obj.updateDynamic("contentWrapper")(contentWrapper.asInstanceOf[js.Any])
-    if (dragging != null) __obj.updateDynamic("dragging")(dragging.asInstanceOf[js.Any])
-    if (heightAutoObserverEl != null) __obj.updateDynamic("heightAutoObserverEl")(heightAutoObserverEl.asInstanceOf[js.Any])
-    if (heightAutoObserverWrapperEl != null) __obj.updateDynamic("heightAutoObserverWrapperEl")(heightAutoObserverWrapperEl.asInstanceOf[js.Any])
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (scrollbar != null) __obj.updateDynamic("scrollbar")(scrollbar.asInstanceOf[js.Any])
-    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassNamesOptions]
   }
+  @scala.inline
+  implicit class ClassNamesOptionsOps[Self <: ClassNamesOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentEl(value: String): Self = this.set("contentEl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEl: Self = this.set("contentEl", js.undefined)
+    @scala.inline
+    def setContentWrapper(value: String): Self = this.set("contentWrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentWrapper: Self = this.set("contentWrapper", js.undefined)
+    @scala.inline
+    def setDragging(value: String): Self = this.set("dragging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragging: Self = this.set("dragging", js.undefined)
+    @scala.inline
+    def setHeightAutoObserverEl(value: String): Self = this.set("heightAutoObserverEl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightAutoObserverEl: Self = this.set("heightAutoObserverEl", js.undefined)
+    @scala.inline
+    def setHeightAutoObserverWrapperEl(value: String): Self = this.set("heightAutoObserverWrapperEl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightAutoObserverWrapperEl: Self = this.set("heightAutoObserverWrapperEl", js.undefined)
+    @scala.inline
+    def setHorizontal(value: String): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setHover(value: String): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+    @scala.inline
+    def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setOffset(value: String): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setScrollbar(value: String): Self = this.set("scrollbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollbar: Self = this.set("scrollbar", js.undefined)
+    @scala.inline
+    def setTrack(value: String): Self = this.set("track", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrack: Self = this.set("track", js.undefined)
+    @scala.inline
+    def setVertical(value: String): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+    @scala.inline
+    def setVisible(value: String): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWrapper(value: String): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+  }
+  
 }
 

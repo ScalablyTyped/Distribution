@@ -24,12 +24,28 @@ trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult extends js.Object {
 
 object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult {
   @scala.inline
-  def apply(
-    deltaPresenceEstimationHistogram: js.Array[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket] = null
-  ): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult = {
+  def apply(): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult = {
     val __obj = js.Dynamic.literal()
-    if (deltaPresenceEstimationHistogram != null) __obj.updateDynamic("deltaPresenceEstimationHistogram")(deltaPresenceEstimationHistogram.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResultOps[Self <: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeltaPresenceEstimationHistogramVarargs(value: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket*): Self = this.set("deltaPresenceEstimationHistogram", js.Array(value :_*))
+    @scala.inline
+    def setDeltaPresenceEstimationHistogram(value: js.Array[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]): Self = this.set("deltaPresenceEstimationHistogram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeltaPresenceEstimationHistogram: Self = this.set("deltaPresenceEstimationHistogram", js.undefined)
+  }
+  
 }
 

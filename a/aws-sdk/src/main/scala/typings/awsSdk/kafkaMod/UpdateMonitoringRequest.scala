@@ -35,18 +35,38 @@ trait UpdateMonitoringRequest extends js.Object {
 
 object UpdateMonitoringRequest {
   @scala.inline
-  def apply(
-    ClusterArn: string,
-    CurrentVersion: string,
-    EnhancedMonitoring: EnhancedMonitoring = null,
-    LoggingInfo: LoggingInfo = null,
-    OpenMonitoring: OpenMonitoringInfo = null
-  ): UpdateMonitoringRequest = {
+  def apply(ClusterArn: string, CurrentVersion: string): UpdateMonitoringRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any], CurrentVersion = CurrentVersion.asInstanceOf[js.Any])
-    if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
-    if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
-    if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMonitoringRequest]
   }
+  @scala.inline
+  implicit class UpdateMonitoringRequestOps[Self <: UpdateMonitoringRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentVersion(value: string): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = this.set("EnhancedMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedMonitoring: Self = this.set("EnhancedMonitoring", js.undefined)
+    @scala.inline
+    def setLoggingInfo(value: LoggingInfo): Self = this.set("LoggingInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingInfo: Self = this.set("LoggingInfo", js.undefined)
+    @scala.inline
+    def setOpenMonitoring(value: OpenMonitoringInfo): Self = this.set("OpenMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenMonitoring: Self = this.set("OpenMonitoring", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Predefined color schemes for Chart.js
 | Keywords           | chart.js, plugin, color, scheme, palette, brewer, office, tableau |
 | # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 156472 |
+| # downloads        | 132024 |
 | # stars            | 0 |
 
 ## Links

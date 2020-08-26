@@ -42,26 +42,56 @@ trait SubmitContainerStateChangeRequest extends js.Object {
 
 object SubmitContainerStateChangeRequest {
   @scala.inline
-  def apply(
-    cluster: String = null,
-    containerName: String = null,
-    exitCode: js.UndefOr[BoxedInteger] = js.undefined,
-    networkBindings: NetworkBindings = null,
-    reason: String = null,
-    runtimeId: String = null,
-    status: String = null,
-    task: String = null
-  ): SubmitContainerStateChangeRequest = {
+  def apply(): SubmitContainerStateChangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
-    if (networkBindings != null) __obj.updateDynamic("networkBindings")(networkBindings.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (runtimeId != null) __obj.updateDynamic("runtimeId")(runtimeId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitContainerStateChangeRequest]
   }
+  @scala.inline
+  implicit class SubmitContainerStateChangeRequestOps[Self <: SubmitContainerStateChangeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCluster: Self = this.set("cluster", js.undefined)
+    @scala.inline
+    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    @scala.inline
+    def setExitCode(value: BoxedInteger): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    @scala.inline
+    def setNetworkBindingsVarargs(value: NetworkBinding*): Self = this.set("networkBindings", js.Array(value :_*))
+    @scala.inline
+    def setNetworkBindings(value: NetworkBindings): Self = this.set("networkBindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkBindings: Self = this.set("networkBindings", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    @scala.inline
+    def setRuntimeId(value: String): Self = this.set("runtimeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeId: Self = this.set("runtimeId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTask(value: String): Self = this.set("task", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTask: Self = this.set("task", js.undefined)
+  }
+  
 }
 

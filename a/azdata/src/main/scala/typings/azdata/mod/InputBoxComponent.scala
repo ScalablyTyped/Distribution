@@ -36,9 +36,19 @@ trait InputBoxComponent extends Component {
     * Event that's fired whenever enter is pressed within the input box
     */
   def onEnterKeyPressed(listener: js.Function1[/* e */ String, _]): Disposable = js.native
+  def onEnterKeyPressed(
+    listener: js.Function1[/* e */ String, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onEnterKeyPressed(listener: js.Function1[/* e */ String, _], thisArgs: js.Any): Disposable = js.native
   def onEnterKeyPressed(listener: js.Function1[/* e */ String, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   def onTextChanged(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onTextChanged(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onTextChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onTextChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
 }

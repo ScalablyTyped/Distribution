@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SchemaFieldSpecNumericIndexingSpec extends js.Object {
-  var maxValue: js.UndefOr[Double] = js.undefined
-  var minValue: js.UndefOr[Double] = js.undefined
+  var maxValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.native
 }
 
 object SchemaFieldSpecNumericIndexingSpec {
   @scala.inline
-  def apply(maxValue: js.UndefOr[Double] = js.undefined, minValue: js.UndefOr[Double] = js.undefined): SchemaFieldSpecNumericIndexingSpec = {
+  def apply(): SchemaFieldSpecNumericIndexingSpec = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldSpecNumericIndexingSpec]
   }
+  @scala.inline
+  implicit class SchemaFieldSpecNumericIndexingSpecOps[Self <: SchemaFieldSpecNumericIndexingSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+  }
+  
 }
 

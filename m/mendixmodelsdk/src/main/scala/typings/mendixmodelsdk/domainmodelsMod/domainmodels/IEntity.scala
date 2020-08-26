@@ -16,6 +16,12 @@ trait IEntity
   extends IElement
      with IByNameReferrable {
   val attributes: IList[IAttribute] = js.native
+  /**
+    * This property is required and cannot be set to null.
+    *
+    * In version 8.12.0: introduced
+    */
+  val capabilities: IEntityCapabilities = js.native
   val containerAsDomainModel: IDomainModel = js.native
   /**
     * This property is required and cannot be set to null.

@@ -18,6 +18,7 @@ trait IGridCoreApi[TEntity] extends js.Object {
     * @param {boolean} stopColumnBuild Prevents the buildColumn callback from being triggered. This is useful to improve performance of the grid during initial load.
     */
   def addRowHeaderColumn(column: IColumnDefOf[TEntity]): Unit = js.native
+  def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: js.UndefOr[scala.Nothing], stopColumnBuild: Boolean): Unit = js.native
   def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: Double): Unit = js.native
   def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: Double, stopColumnBuild: Boolean): Unit = js.native
   /**
@@ -41,7 +42,15 @@ trait IGridCoreApi[TEntity] extends js.Object {
     * @returns {ng.IPromise<any>} If `refreshRows` is true, returns a promise of the rows refreshing.
     */
   def clearAllFilters(): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
+  def clearAllFilters(
+    refreshRows: js.UndefOr[scala.Nothing],
+    clearConditions: js.UndefOr[scala.Nothing],
+    clearFlags: Boolean
+  ): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
+  def clearAllFilters(refreshRows: js.UndefOr[scala.Nothing], clearConditions: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
+  def clearAllFilters(refreshRows: js.UndefOr[scala.Nothing], clearConditions: Boolean, clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   def clearAllFilters(refreshRows: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
+  def clearAllFilters(refreshRows: Boolean, clearConditions: js.UndefOr[scala.Nothing], clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   def clearAllFilters(refreshRows: Boolean, clearConditions: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   def clearAllFilters(refreshRows: Boolean, clearConditions: Boolean, clearFlags: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   /**

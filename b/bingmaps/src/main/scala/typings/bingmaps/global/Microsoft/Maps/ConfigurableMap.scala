@@ -29,7 +29,38 @@ object ConfigurableMap extends js.Object {
     element: String,
     configFileUrl: String,
     withCredentials: Boolean,
+    requestHeaders: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* errorMsg */ String, Unit]
+  ): Unit = js.native
+  def createFromConfig(
+    element: String,
+    configFileUrl: String,
+    withCredentials: Boolean,
+    requestHeaders: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
+  ): Unit = js.native
+  def createFromConfig(
+    element: String,
+    configFileUrl: String,
+    withCredentials: Boolean,
+    requestHeaders: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit],
+    errorCallback: js.Function1[/* errorMsg */ String, Unit]
+  ): Unit = js.native
+  def createFromConfig(
+    element: String,
+    configFileUrl: String,
+    withCredentials: Boolean,
     requestHeaders: IDictionary[String]
+  ): Unit = js.native
+  def createFromConfig(
+    element: String,
+    configFileUrl: String,
+    withCredentials: Boolean,
+    requestHeaders: IDictionary[String],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* errorMsg */ String, Unit]
   ): Unit = js.native
   def createFromConfig(
     element: String,
@@ -51,7 +82,38 @@ object ConfigurableMap extends js.Object {
     element: HTMLElement,
     configFileUrl: String,
     withCredentials: Boolean,
+    requestHeaders: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* errorMsg */ String, Unit]
+  ): Unit = js.native
+  def createFromConfig(
+    element: HTMLElement,
+    configFileUrl: String,
+    withCredentials: Boolean,
+    requestHeaders: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit]
+  ): Unit = js.native
+  def createFromConfig(
+    element: HTMLElement,
+    configFileUrl: String,
+    withCredentials: Boolean,
+    requestHeaders: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* map */ typings.bingmaps.Microsoft.Maps.Map, Unit],
+    errorCallback: js.Function1[/* errorMsg */ String, Unit]
+  ): Unit = js.native
+  def createFromConfig(
+    element: HTMLElement,
+    configFileUrl: String,
+    withCredentials: Boolean,
     requestHeaders: IDictionary[String]
+  ): Unit = js.native
+  def createFromConfig(
+    element: HTMLElement,
+    configFileUrl: String,
+    withCredentials: Boolean,
+    requestHeaders: IDictionary[String],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* errorMsg */ String, Unit]
   ): Unit = js.native
   def createFromConfig(
     element: HTMLElement,

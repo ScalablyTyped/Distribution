@@ -9,57 +9,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BuildDefinition32 extends BuildDefinitionReference32 {
   /**
     * Indicates whether badges are enabled for this definition
     */
-  var badgeEnabled: Boolean
-  var build: js.Array[BuildDefinitionStep]
+  var badgeEnabled: Boolean = js.native
+  var build: js.Array[BuildDefinitionStep] = js.native
   /**
     * The build number format
     */
-  var buildNumberFormat: String
+  var buildNumberFormat: String = js.native
   /**
     * The comment entered when saving the definition
     */
-  var comment: String
-  var demands: js.Array[_]
+  var comment: String = js.native
+  var demands: js.Array[_] = js.native
   /**
     * The description
     */
-  var description: String
+  var description: String = js.native
   /**
     * The drop location for the definition
     */
-  var dropLocation: String
+  var dropLocation: String = js.native
   /**
     * The job authorization scope for builds which are queued against this definition
     */
-  var jobAuthorizationScope: BuildAuthorizationScope
+  var jobAuthorizationScope: BuildAuthorizationScope = js.native
   /**
     * The job cancel timeout in minutes for builds which are cancelled by user for this definition
     */
-  var jobCancelTimeoutInMinutes: Double
+  var jobCancelTimeoutInMinutes: Double = js.native
   /**
     * The job execution timeout in minutes for builds which are queued against this definition
     */
-  var jobTimeoutInMinutes: Double
-  var latestBuild: Build
-  var latestCompletedBuild: Build
-  var options: js.Array[BuildOption]
+  var jobTimeoutInMinutes: Double = js.native
+  var latestBuild: Build = js.native
+  var latestCompletedBuild: Build = js.native
+  var options: js.Array[BuildOption] = js.native
   /**
     * Process Parameters
     */
-  var processParameters: ProcessParameters
-  var properties: js.Any
+  var processParameters: ProcessParameters = js.native
+  var properties: js.Any = js.native
   /**
     * The repository
     */
-  var repository: BuildRepository
-  var retentionRules: js.Array[RetentionPolicy]
-  var tags: js.Array[String]
-  var triggers: js.Array[BuildTrigger]
-  var variables: StringDictionary[BuildDefinitionVariable]
+  var repository: BuildRepository = js.native
+  var retentionRules: js.Array[RetentionPolicy] = js.native
+  var tags: js.Array[String] = js.native
+  var triggers: js.Array[BuildTrigger] = js.native
+  var variables: StringDictionary[BuildDefinitionVariable] = js.native
 }
 
 object BuildDefinition32 {
@@ -107,5 +108,70 @@ object BuildDefinition32 {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildDefinition32]
   }
+  @scala.inline
+  implicit class BuildDefinition32Ops[Self <: BuildDefinition32] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBadgeEnabled(value: Boolean): Self = this.set("badgeEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBuildVarargs(value: BuildDefinitionStep*): Self = this.set("build", js.Array(value :_*))
+    @scala.inline
+    def setBuild(value: js.Array[BuildDefinitionStep]): Self = this.set("build", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBuildNumberFormat(value: String): Self = this.set("buildNumberFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDemandsVarargs(value: js.Any*): Self = this.set("demands", js.Array(value :_*))
+    @scala.inline
+    def setDemands(value: js.Array[_]): Self = this.set("demands", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDropLocation(value: String): Self = this.set("dropLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobAuthorizationScope(value: BuildAuthorizationScope): Self = this.set("jobAuthorizationScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobCancelTimeoutInMinutes(value: Double): Self = this.set("jobCancelTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobTimeoutInMinutes(value: Double): Self = this.set("jobTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLatestBuild(value: Build): Self = this.set("latestBuild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLatestCompletedBuild(value: Build): Self = this.set("latestCompletedBuild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptionsVarargs(value: BuildOption*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[BuildOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProcessParameters(value: ProcessParameters): Self = this.set("processParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepository(value: BuildRepository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRetentionRulesVarargs(value: RetentionPolicy*): Self = this.set("retentionRules", js.Array(value :_*))
+    @scala.inline
+    def setRetentionRules(value: js.Array[RetentionPolicy]): Self = this.set("retentionRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTriggersVarargs(value: BuildTrigger*): Self = this.set("triggers", js.Array(value :_*))
+    @scala.inline
+    def setTriggers(value: js.Array[BuildTrigger]): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVariables(value: StringDictionary[BuildDefinitionVariable]): Self = this.set("variables", value.asInstanceOf[js.Any])
+  }
+  
 }
 

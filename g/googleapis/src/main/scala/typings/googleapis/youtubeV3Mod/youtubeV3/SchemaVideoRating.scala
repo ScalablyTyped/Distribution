@@ -12,11 +12,30 @@ trait SchemaVideoRating extends js.Object {
 
 object SchemaVideoRating {
   @scala.inline
-  def apply(rating: String = null, videoId: String = null): SchemaVideoRating = {
+  def apply(): SchemaVideoRating = {
     val __obj = js.Dynamic.literal()
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoRating]
   }
+  @scala.inline
+  implicit class SchemaVideoRatingOps[Self <: SchemaVideoRating] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRating(value: String): Self = this.set("rating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRating: Self = this.set("rating", js.undefined)
+    @scala.inline
+    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoId: Self = this.set("videoId", js.undefined)
+  }
+  
 }
 

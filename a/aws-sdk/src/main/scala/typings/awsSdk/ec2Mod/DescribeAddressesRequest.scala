@@ -26,18 +26,44 @@ trait DescribeAddressesRequest extends js.Object {
 
 object DescribeAddressesRequest {
   @scala.inline
-  def apply(
-    AllocationIds: AllocationIdList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    PublicIps: PublicIpStringList = null
-  ): DescribeAddressesRequest = {
+  def apply(): DescribeAddressesRequest = {
     val __obj = js.Dynamic.literal()
-    if (AllocationIds != null) __obj.updateDynamic("AllocationIds")(AllocationIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (PublicIps != null) __obj.updateDynamic("PublicIps")(PublicIps.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAddressesRequest]
   }
+  @scala.inline
+  implicit class DescribeAddressesRequestOps[Self <: DescribeAddressesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationIdsVarargs(value: AllocationId*): Self = this.set("AllocationIds", js.Array(value :_*))
+    @scala.inline
+    def setAllocationIds(value: AllocationIdList): Self = this.set("AllocationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationIds: Self = this.set("AllocationIds", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setPublicIpsVarargs(value: String*): Self = this.set("PublicIps", js.Array(value :_*))
+    @scala.inline
+    def setPublicIps(value: PublicIpStringList): Self = this.set("PublicIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIps: Self = this.set("PublicIps", js.undefined)
+  }
+  
 }
 

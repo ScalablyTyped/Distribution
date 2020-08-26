@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * structures
   * @see PropertyInfo
   */
+@js.native
 trait XLayerContentDescriber extends XInterface {
   /**
     * describes the contents of the layer to an {@link XLayerHandler} .
@@ -20,7 +21,7 @@ trait XLayerContentDescriber extends XInterface {
     * @throws com::sun::star::lang::NullPointerException if a `NULL` handler is passed.
     * @throws com::sun::star::configuration::backend::MalformedDataException if the data read from the layer is rejected as invalid by the {@link XLayerHandler} .
     */
-  def describeLayer(aHandler: XLayerHandler, aPropertyInfos: SeqEquiv[PropertyInfo]): Unit
+  def describeLayer(aHandler: XLayerHandler, aPropertyInfos: SeqEquiv[PropertyInfo]): Unit = js.native
 }
 
 object XLayerContentDescriber {
@@ -34,5 +35,20 @@ object XLayerContentDescriber {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), describeLayer = js.Any.fromFunction2(describeLayer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XLayerContentDescriber]
   }
+  @scala.inline
+  implicit class XLayerContentDescriberOps[Self <: XLayerContentDescriber] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescribeLayer(value: (XLayerHandler, SeqEquiv[PropertyInfo]) => Unit): Self = this.set("describeLayer", js.Any.fromFunction2(value))
+  }
+  
 }
 

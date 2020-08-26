@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeType extends js.Object {
-  def checkbox(obj: js.Any, common: js.Any): String
-  def folder(obj: js.Any, common: js.Any): String
-  def icon(obj: js.Any, common: js.Any): String
-  def space(obj: js.Any, common: js.Any): String
+  def checkbox(obj: js.Any, common: js.Any): String = js.native
+  def folder(obj: js.Any, common: js.Any): String = js.native
+  def icon(obj: js.Any, common: js.Any): String = js.native
+  def space(obj: js.Any, common: js.Any): String = js.native
 }
 
 @JSImport("webix", "TreeType")

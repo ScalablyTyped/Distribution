@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConversationHeader extends js.Object {
-  val Application: typings.activexOutlook.Outlook.Application
-  val Class: OlObjectClass
-  val ConversationID: String
-  val ConversationTopic: String
+  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Class: OlObjectClass = js.native
+  val ConversationID: String = js.native
+  val ConversationTopic: String = js.native
   @JSName("Outlook.ConversationHeader_typekey")
-  var OutlookDotConversationHeader_typekey: ConversationHeader
-  val Parent: js.Any
-  val Session: NameSpace
-  def GetConversation(): Conversation
-  def GetItems(): SimpleItems
+  var OutlookDotConversationHeader_typekey: ConversationHeader = js.native
+  val Parent: js.Any = js.native
+  val Session: NameSpace = js.native
+  def GetConversation(): Conversation = js.native
+  def GetItems(): SimpleItems = js.native
 }
 
 object ConversationHeader {
@@ -34,5 +35,36 @@ object ConversationHeader {
     __obj.updateDynamic("Outlook.ConversationHeader_typekey")(OutlookDotConversationHeader_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversationHeader]
   }
+  @scala.inline
+  implicit class ConversationHeaderOps[Self <: ConversationHeader] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConversationID(value: String): Self = this.set("ConversationID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConversationTopic(value: String): Self = this.set("ConversationTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetConversation(value: () => Conversation): Self = this.set("GetConversation", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetItems(value: () => SimpleItems): Self = this.set("GetItems", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOutlookDotConversationHeader_typekey(value: ConversationHeader): Self = this.set("Outlook.ConversationHeader_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+  }
+  
 }
 

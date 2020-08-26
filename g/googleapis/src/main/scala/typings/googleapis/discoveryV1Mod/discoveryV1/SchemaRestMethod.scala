@@ -3,7 +3,7 @@ package typings.googleapis.discoveryV1Mod.discoveryV1
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.anon.Accept
 import typings.googleapis.anon.ParameterName
-import typings.googleapis.anon.RefString
+import typings.googleapis.anon.`5`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ trait SchemaRestMethod extends js.Object {
   /**
     * The schema for the response.
     */
-  var response: js.UndefOr[RefString] = js.native
+  var response: js.UndefOr[`5`] = js.native
   /**
     * OAuth 2.0 scopes applicable to this method.
     */
@@ -81,40 +81,86 @@ trait SchemaRestMethod extends js.Object {
 
 object SchemaRestMethod {
   @scala.inline
-  def apply(
-    description: String = null,
-    etagRequired: js.UndefOr[Boolean] = js.undefined,
-    httpMethod: String = null,
-    id: String = null,
-    mediaUpload: Accept = null,
-    parameterOrder: js.Array[String] = null,
-    parameters: StringDictionary[SchemaJsonSchema] = null,
-    path: String = null,
-    request: ParameterName = null,
-    response: RefString = null,
-    scopes: js.Array[String] = null,
-    supportsMediaDownload: js.UndefOr[Boolean] = js.undefined,
-    supportsMediaUpload: js.UndefOr[Boolean] = js.undefined,
-    supportsSubscription: js.UndefOr[Boolean] = js.undefined,
-    useMediaDownloadService: js.UndefOr[Boolean] = js.undefined
-  ): SchemaRestMethod = {
+  def apply(): SchemaRestMethod = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(etagRequired)) __obj.updateDynamic("etagRequired")(etagRequired.get.asInstanceOf[js.Any])
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (mediaUpload != null) __obj.updateDynamic("mediaUpload")(mediaUpload.asInstanceOf[js.Any])
-    if (parameterOrder != null) __obj.updateDynamic("parameterOrder")(parameterOrder.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsMediaDownload)) __obj.updateDynamic("supportsMediaDownload")(supportsMediaDownload.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsMediaUpload)) __obj.updateDynamic("supportsMediaUpload")(supportsMediaUpload.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsSubscription)) __obj.updateDynamic("supportsSubscription")(supportsSubscription.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMediaDownloadService)) __obj.updateDynamic("useMediaDownloadService")(useMediaDownloadService.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRestMethod]
   }
+  @scala.inline
+  implicit class SchemaRestMethodOps[Self <: SchemaRestMethod] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEtagRequired(value: Boolean): Self = this.set("etagRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtagRequired: Self = this.set("etagRequired", js.undefined)
+    @scala.inline
+    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMediaUpload(value: Accept): Self = this.set("mediaUpload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaUpload: Self = this.set("mediaUpload", js.undefined)
+    @scala.inline
+    def setParameterOrderVarargs(value: String*): Self = this.set("parameterOrder", js.Array(value :_*))
+    @scala.inline
+    def setParameterOrder(value: js.Array[String]): Self = this.set("parameterOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterOrder: Self = this.set("parameterOrder", js.undefined)
+    @scala.inline
+    def setParameters(value: StringDictionary[SchemaJsonSchema]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setRequest(value: ParameterName): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setResponse(value: `5`): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+    @scala.inline
+    def setScopesVarargs(value: String*): Self = this.set("scopes", js.Array(value :_*))
+    @scala.inline
+    def setScopes(value: js.Array[String]): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScopes: Self = this.set("scopes", js.undefined)
+    @scala.inline
+    def setSupportsMediaDownload(value: Boolean): Self = this.set("supportsMediaDownload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsMediaDownload: Self = this.set("supportsMediaDownload", js.undefined)
+    @scala.inline
+    def setSupportsMediaUpload(value: Boolean): Self = this.set("supportsMediaUpload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsMediaUpload: Self = this.set("supportsMediaUpload", js.undefined)
+    @scala.inline
+    def setSupportsSubscription(value: Boolean): Self = this.set("supportsSubscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsSubscription: Self = this.set("supportsSubscription", js.undefined)
+    @scala.inline
+    def setUseMediaDownloadService(value: Boolean): Self = this.set("useMediaDownloadService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseMediaDownloadService: Self = this.set("useMediaDownloadService", js.undefined)
+  }
+  
 }
 

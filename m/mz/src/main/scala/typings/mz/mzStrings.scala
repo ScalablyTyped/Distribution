@@ -57,6 +57,9 @@ object mzStrings {
   sealed trait ec extends js.Object
   
   @js.native
+  sealed trait ed25519 extends js.Object
+  
+  @js.native
   sealed trait hex extends js.Object
   
   @js.native
@@ -108,6 +111,8 @@ object mzStrings {
   def dsa: dsa = "dsa".asInstanceOf[dsa]
   @scala.inline
   def ec: ec = "ec".asInstanceOf[ec]
+  @scala.inline
+  def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline

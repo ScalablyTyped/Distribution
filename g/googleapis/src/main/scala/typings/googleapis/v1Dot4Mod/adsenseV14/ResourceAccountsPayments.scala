@@ -27,6 +27,7 @@ class ResourceAccountsPayments protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPayments] = js.native
   def list(callback: BodyResponseCallback[SchemaPayments]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPayments] = js.native
   def list(params: ParamsResourceAccountsPaymentsList): GaxiosPromise[SchemaPayments] = js.native
   def list(params: ParamsResourceAccountsPaymentsList, callback: BodyResponseCallback[SchemaPayments]): Unit = js.native
   def list(

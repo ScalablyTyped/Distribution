@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/page-template relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/page-templates relevant section in reference guide}
   *
   * In version 7.7.0: introduced
   */
@@ -53,29 +53,29 @@ class PageTemplate protected () extends TemplateFormBase {
     * In version 8.0.0: introduced
     */
   def appearance: Appearance = js.native
-  def appearance(newValue: Appearance): js.Any = js.native
+  def appearance_=(newValue: Appearance): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def `class`: String = js.native
-  def `class`(newValue: String): js.Any = js.native
+  def class_=(newValue: String): Unit = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MPageTemplate: FolderBase = js.native
   /**
     * In version 7.17.0: added public
     */
   def layoutCall: LayoutCall = js.native
-  def layoutCall(newValue: LayoutCall): js.Any = js.native
+  def layoutCall_=(newValue: LayoutCall): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def style: String = js.native
-  def style(newValue: String): js.Any = js.native
+  def style_=(newValue: String): Unit = js.native
   /**
     * In version 7.17.0: added public
     */
   def `type`: PageTemplateType = js.native
-  def `type`(newValue: PageTemplateType): js.Any = js.native
+  def type_=(newValue: PageTemplateType): Unit = js.native
 }
 
 /* static members */

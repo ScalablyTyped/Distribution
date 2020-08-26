@@ -27,18 +27,38 @@ trait BucketWebsite extends js.Object {
 
 object BucketWebsite {
   @scala.inline
-  def apply(
-    errorDocument: String = null,
-    indexDocument: String = null,
-    redirectAllRequestsTo: String = null,
-    routingRules: String = null
-  ): BucketWebsite = {
+  def apply(): BucketWebsite = {
     val __obj = js.Dynamic.literal()
-    if (errorDocument != null) __obj.updateDynamic("errorDocument")(errorDocument.asInstanceOf[js.Any])
-    if (indexDocument != null) __obj.updateDynamic("indexDocument")(indexDocument.asInstanceOf[js.Any])
-    if (redirectAllRequestsTo != null) __obj.updateDynamic("redirectAllRequestsTo")(redirectAllRequestsTo.asInstanceOf[js.Any])
-    if (routingRules != null) __obj.updateDynamic("routingRules")(routingRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketWebsite]
   }
+  @scala.inline
+  implicit class BucketWebsiteOps[Self <: BucketWebsite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorDocument(value: String): Self = this.set("errorDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorDocument: Self = this.set("errorDocument", js.undefined)
+    @scala.inline
+    def setIndexDocument(value: String): Self = this.set("indexDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexDocument: Self = this.set("indexDocument", js.undefined)
+    @scala.inline
+    def setRedirectAllRequestsTo(value: String): Self = this.set("redirectAllRequestsTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectAllRequestsTo: Self = this.set("redirectAllRequestsTo", js.undefined)
+    @scala.inline
+    def setRoutingRules(value: String): Self = this.set("routingRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutingRules: Self = this.set("routingRules", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListImportsOutput extends js.Object {
 
 object ListImportsOutput {
   @scala.inline
-  def apply(Imports: Imports = null, NextToken: NextToken = null): ListImportsOutput = {
+  def apply(): ListImportsOutput = {
     val __obj = js.Dynamic.literal()
-    if (Imports != null) __obj.updateDynamic("Imports")(Imports.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListImportsOutput]
   }
+  @scala.inline
+  implicit class ListImportsOutputOps[Self <: ListImportsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImportsVarargs(value: StackName*): Self = this.set("Imports", js.Array(value :_*))
+    @scala.inline
+    def setImports(value: Imports): Self = this.set("Imports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImports: Self = this.set("Imports", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

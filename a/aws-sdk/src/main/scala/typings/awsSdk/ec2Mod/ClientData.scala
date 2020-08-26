@@ -26,18 +26,38 @@ trait ClientData extends js.Object {
 
 object ClientData {
   @scala.inline
-  def apply(
-    Comment: String = null,
-    UploadEnd: DateTime = null,
-    UploadSize: js.UndefOr[Double] = js.undefined,
-    UploadStart: DateTime = null
-  ): ClientData = {
+  def apply(): ClientData = {
     val __obj = js.Dynamic.literal()
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (UploadEnd != null) __obj.updateDynamic("UploadEnd")(UploadEnd.asInstanceOf[js.Any])
-    if (!js.isUndefined(UploadSize)) __obj.updateDynamic("UploadSize")(UploadSize.get.asInstanceOf[js.Any])
-    if (UploadStart != null) __obj.updateDynamic("UploadStart")(UploadStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientData]
   }
+  @scala.inline
+  implicit class ClientDataOps[Self <: ClientData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("Comment", js.undefined)
+    @scala.inline
+    def setUploadEnd(value: DateTime): Self = this.set("UploadEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadEnd: Self = this.set("UploadEnd", js.undefined)
+    @scala.inline
+    def setUploadSize(value: Double): Self = this.set("UploadSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadSize: Self = this.set("UploadSize", js.undefined)
+    @scala.inline
+    def setUploadStart(value: DateTime): Self = this.set("UploadStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadStart: Self = this.set("UploadStart", js.undefined)
+  }
+  
 }
 

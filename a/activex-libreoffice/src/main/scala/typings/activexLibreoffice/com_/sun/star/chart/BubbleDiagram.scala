@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * a service for bubble diagrams.
   * @since OOo 3.2
   */
+@js.native
 trait BubbleDiagram
   extends Diagram
      with ChartAxisXSupplier

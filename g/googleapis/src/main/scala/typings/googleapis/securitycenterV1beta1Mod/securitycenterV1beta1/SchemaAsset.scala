@@ -48,22 +48,46 @@ trait SchemaAsset extends js.Object {
 
 object SchemaAsset {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    name: String = null,
-    resourceProperties: StringDictionary[js.Any] = null,
-    securityCenterProperties: SchemaSecurityCenterProperties = null,
-    securityMarks: SchemaSecurityMarks = null,
-    updateTime: String = null
-  ): SchemaAsset = {
+  def apply(): SchemaAsset = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceProperties != null) __obj.updateDynamic("resourceProperties")(resourceProperties.asInstanceOf[js.Any])
-    if (securityCenterProperties != null) __obj.updateDynamic("securityCenterProperties")(securityCenterProperties.asInstanceOf[js.Any])
-    if (securityMarks != null) __obj.updateDynamic("securityMarks")(securityMarks.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAsset]
   }
+  @scala.inline
+  implicit class SchemaAssetOps[Self <: SchemaAsset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceProperties(value: StringDictionary[js.Any]): Self = this.set("resourceProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceProperties: Self = this.set("resourceProperties", js.undefined)
+    @scala.inline
+    def setSecurityCenterProperties(value: SchemaSecurityCenterProperties): Self = this.set("securityCenterProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityCenterProperties: Self = this.set("securityCenterProperties", js.undefined)
+    @scala.inline
+    def setSecurityMarks(value: SchemaSecurityMarks): Self = this.set("securityMarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityMarks: Self = this.set("securityMarks", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

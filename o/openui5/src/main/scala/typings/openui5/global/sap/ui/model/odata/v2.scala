@@ -33,7 +33,38 @@ object v2 extends js.Object {
     extends typings.openui5.sap.ui.model.odata.v2.ODataListBinding {
     def this(oModel: Model, sPath: String, oContext: Context) = this()
     def this(oModel: Model, sPath: String, oContext: Context, aSorters: js.Array[_]) = this()
+    def this(
+      oModel: Model,
+      sPath: String,
+      oContext: Context,
+      aSorters: js.UndefOr[scala.Nothing],
+      aFilters: js.Array[_]
+    ) = this()
     def this(oModel: Model, sPath: String, oContext: Context, aSorters: js.Array[_], aFilters: js.Array[_]) = this()
+    def this(
+      oModel: Model,
+      sPath: String,
+      oContext: Context,
+      aSorters: js.UndefOr[scala.Nothing],
+      aFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: Model,
+      sPath: String,
+      oContext: Context,
+      aSorters: js.UndefOr[scala.Nothing],
+      aFilters: js.Array[_],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: Model,
+      sPath: String,
+      oContext: Context,
+      aSorters: js.Array[_],
+      aFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
+    ) = this()
     def this(
       oModel: Model,
       sPath: String,
@@ -72,8 +103,39 @@ object v2 extends js.Object {
       oModel: Model,
       sPath: String,
       oContext: Context,
+      aApplicationFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: Model,
+      sPath: String,
+      oContext: Context,
       aApplicationFilters: js.Array[typings.openui5.sap.ui.model.Filter],
       mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: Model,
+      sPath: String,
+      oContext: Context,
+      aApplicationFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.UndefOr[scala.Nothing],
+      aSorters: js.Array[Sorter]
+    ) = this()
+    def this(
+      oModel: Model,
+      sPath: String,
+      oContext: Context,
+      aApplicationFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.Any,
+      aSorters: js.Array[Sorter]
+    ) = this()
+    def this(
+      oModel: Model,
+      sPath: String,
+      oContext: Context,
+      aApplicationFilters: js.Array[typings.openui5.sap.ui.model.Filter],
+      mParameters: js.UndefOr[scala.Nothing],
+      aSorters: js.Array[Sorter]
     ) = this()
     def this(
       oModel: Model,

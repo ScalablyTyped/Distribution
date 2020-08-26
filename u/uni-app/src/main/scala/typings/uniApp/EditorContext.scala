@@ -15,6 +15,7 @@ trait EditorContext extends js.Object {
     * 修改样式
     */
   def format(): Unit = js.native
+  def format(name: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def format(name: String): Unit = js.native
   def format(name: String, value: String): Unit = js.native
   /**

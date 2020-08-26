@@ -1,7 +1,6 @@
 package typings.mobx
 
 import typings.mobx.interceptUtilsMod.IInterceptable
-import typings.mobx.interceptUtilsMod.IInterceptor
 import typings.mobx.listenUtilsMod.IListenable
 import typings.mobx.modifiersMod.IEnhancer
 import typings.mobx.utilsMod.Lambda
@@ -31,8 +30,13 @@ object observablesetMod extends js.Object {
        with IInterceptable[ISetWillChange[js.Any]]
        with IListenable {
     def this(initialData: IObservableSetInitialValues[T]) = this()
-    def this(initialData: IObservableSetInitialValues[T], enhancer: IEnhancer[T]) = this()
-    def this(initialData: IObservableSetInitialValues[T], enhancer: IEnhancer[T], name: String) = this()
+    def this(initialData: js.UndefOr[IObservableSetInitialValues[T]], enhancer: IEnhancer[T]) = this()
+    def this(
+      initialData: js.UndefOr[IObservableSetInitialValues[T]],
+      enhancer: js.UndefOr[scala.Nothing],
+      name: String
+    ) = this()
+    def this(initialData: js.UndefOr[IObservableSetInitialValues[T]], enhancer: IEnhancer[T], name: String) = this()
     var _atom: js.Any = js.native
     var _data: js.Any = js.native
     var dehanceValue: js.Any = js.native
@@ -44,8 +48,6 @@ object observablesetMod extends js.Object {
     def enhancer(newV: js.Any): js.Any = js.native
     def enhancer(newV: js.Any, oldV: js.Any): js.Any = js.native
     def has(value: js.Any): Boolean = js.native
-    /* CompleteClass */
-    override def intercept(handler: IInterceptor[ISetWillChange[js.Any]]): Lambda = js.native
     def observe(listener: js.Function1[/* changes */ ISetDidChange[T], Unit]): Lambda = js.native
     def observe(listener: js.Function1[/* changes */ ISetDidChange[T], Unit], fireImmediately: Boolean): Lambda = js.native
     def replace(other: IObservableSetInitialValues[T]): ObservableSet[T] = js.native

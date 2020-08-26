@@ -12,7 +12,7 @@ A cross browser microtask library
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 30 |
-| # downloads        | 86908408 |
+| # downloads        | 90380524 |
 | # stars            | 2 |
 
 ## Links

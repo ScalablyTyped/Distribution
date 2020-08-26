@@ -32,16 +32,34 @@ trait SchemaImportResourcesRequest extends js.Object {
 
 object SchemaImportResourcesRequest {
   @scala.inline
-  def apply(
-    contentStructure: String = null,
-    gcsErrorLocation: SchemaGcsDataLocation = null,
-    gcsSourceLocation: SchemaGcsDataLocation = null
-  ): SchemaImportResourcesRequest = {
+  def apply(): SchemaImportResourcesRequest = {
     val __obj = js.Dynamic.literal()
-    if (contentStructure != null) __obj.updateDynamic("contentStructure")(contentStructure.asInstanceOf[js.Any])
-    if (gcsErrorLocation != null) __obj.updateDynamic("gcsErrorLocation")(gcsErrorLocation.asInstanceOf[js.Any])
-    if (gcsSourceLocation != null) __obj.updateDynamic("gcsSourceLocation")(gcsSourceLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImportResourcesRequest]
   }
+  @scala.inline
+  implicit class SchemaImportResourcesRequestOps[Self <: SchemaImportResourcesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentStructure(value: String): Self = this.set("contentStructure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentStructure: Self = this.set("contentStructure", js.undefined)
+    @scala.inline
+    def setGcsErrorLocation(value: SchemaGcsDataLocation): Self = this.set("gcsErrorLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsErrorLocation: Self = this.set("gcsErrorLocation", js.undefined)
+    @scala.inline
+    def setGcsSourceLocation(value: SchemaGcsDataLocation): Self = this.set("gcsSourceLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsSourceLocation: Self = this.set("gcsSourceLocation", js.undefined)
+  }
+  
 }
 

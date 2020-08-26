@@ -11,8 +11,8 @@ A simple spinner
 | Full name          | cli-spinner |
 | Keywords           | cli |
 | # releases         | 3 |
-| # dependents       | 659 |
-| # downloads        | 4073205 |
+| # dependents       | 677 |
+| # downloads        | 4987560 |
 | # stars            | 27 |
 
 ## Links

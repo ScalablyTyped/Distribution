@@ -78,43 +78,98 @@ trait UpdateStackSetInput extends js.Object {
 
 object UpdateStackSetInput {
   @scala.inline
-  def apply(
-    StackSetName: StackSetName,
-    Accounts: AccountList = null,
-    AdministrationRoleARN: RoleARN_ = null,
-    AutoDeployment: AutoDeployment = null,
-    Capabilities: Capabilities = null,
-    DeploymentTargets: DeploymentTargets = null,
-    Description: Description = null,
-    ExecutionRoleName: ExecutionRoleName = null,
-    OperationId: ClientRequestToken = null,
-    OperationPreferences: StackSetOperationPreferences = null,
-    Parameters: Parameters = null,
-    PermissionModel: PermissionModels = null,
-    Regions: RegionList = null,
-    Tags: Tags = null,
-    TemplateBody: TemplateBody = null,
-    TemplateURL: TemplateURL = null,
-    UsePreviousTemplate: js.UndefOr[UsePreviousTemplate] = js.undefined
-  ): UpdateStackSetInput = {
+  def apply(StackSetName: StackSetName): UpdateStackSetInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName.asInstanceOf[js.Any])
-    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts.asInstanceOf[js.Any])
-    if (AdministrationRoleARN != null) __obj.updateDynamic("AdministrationRoleARN")(AdministrationRoleARN.asInstanceOf[js.Any])
-    if (AutoDeployment != null) __obj.updateDynamic("AutoDeployment")(AutoDeployment.asInstanceOf[js.Any])
-    if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
-    if (DeploymentTargets != null) __obj.updateDynamic("DeploymentTargets")(DeploymentTargets.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExecutionRoleName != null) __obj.updateDynamic("ExecutionRoleName")(ExecutionRoleName.asInstanceOf[js.Any])
-    if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
-    if (OperationPreferences != null) __obj.updateDynamic("OperationPreferences")(OperationPreferences.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (PermissionModel != null) __obj.updateDynamic("PermissionModel")(PermissionModel.asInstanceOf[js.Any])
-    if (Regions != null) __obj.updateDynamic("Regions")(Regions.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
-    if (TemplateURL != null) __obj.updateDynamic("TemplateURL")(TemplateURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsePreviousTemplate)) __obj.updateDynamic("UsePreviousTemplate")(UsePreviousTemplate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStackSetInput]
   }
+  @scala.inline
+  implicit class UpdateStackSetInputOps[Self <: UpdateStackSetInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackSetName(value: StackSetName): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccountsVarargs(value: Account*): Self = this.set("Accounts", js.Array(value :_*))
+    @scala.inline
+    def setAccounts(value: AccountList): Self = this.set("Accounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccounts: Self = this.set("Accounts", js.undefined)
+    @scala.inline
+    def setAdministrationRoleARN(value: RoleARN_): Self = this.set("AdministrationRoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdministrationRoleARN: Self = this.set("AdministrationRoleARN", js.undefined)
+    @scala.inline
+    def setAutoDeployment(value: AutoDeployment): Self = this.set("AutoDeployment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDeployment: Self = this.set("AutoDeployment", js.undefined)
+    @scala.inline
+    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    @scala.inline
+    def setDeploymentTargets(value: DeploymentTargets): Self = this.set("DeploymentTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentTargets: Self = this.set("DeploymentTargets", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExecutionRoleName(value: ExecutionRoleName): Self = this.set("ExecutionRoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRoleName: Self = this.set("ExecutionRoleName", js.undefined)
+    @scala.inline
+    def setOperationId(value: ClientRequestToken): Self = this.set("OperationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("OperationId", js.undefined)
+    @scala.inline
+    def setOperationPreferences(value: StackSetOperationPreferences): Self = this.set("OperationPreferences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationPreferences: Self = this.set("OperationPreferences", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setPermissionModel(value: PermissionModels): Self = this.set("PermissionModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionModel: Self = this.set("PermissionModel", js.undefined)
+    @scala.inline
+    def setRegionsVarargs(value: Region*): Self = this.set("Regions", js.Array(value :_*))
+    @scala.inline
+    def setRegions(value: RegionList): Self = this.set("Regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegions: Self = this.set("Regions", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+    @scala.inline
+    def setTemplateURL(value: TemplateURL): Self = this.set("TemplateURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateURL: Self = this.set("TemplateURL", js.undefined)
+    @scala.inline
+    def setUsePreviousTemplate(value: UsePreviousTemplate): Self = this.set("UsePreviousTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsePreviousTemplate: Self = this.set("UsePreviousTemplate", js.undefined)
+  }
+  
 }
 

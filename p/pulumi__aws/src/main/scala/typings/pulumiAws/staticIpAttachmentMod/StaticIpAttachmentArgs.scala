@@ -23,5 +23,22 @@ object StaticIpAttachmentArgs {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], staticIpName = staticIpName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticIpAttachmentArgs]
   }
+  @scala.inline
+  implicit class StaticIpAttachmentArgsOps[Self <: StaticIpAttachmentArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceName(value: Input[String]): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStaticIpName(value: Input[String]): Self = this.set("staticIpName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -12,9 +12,22 @@ object useControllableValueMod extends js.Object {
   def useControllableValue[TValue, TElement /* <: HTMLElement */](): js.Tuple2[js.UndefOr[TValue], js.Function1[/* newValue */ js.UndefOr[TValue], Unit]] = js.native
   def useControllableValue[TValue, TElement /* <: HTMLElement */](controlledValue: TValue): js.Tuple2[js.UndefOr[TValue], js.Function1[/* newValue */ js.UndefOr[TValue], Unit]] = js.native
   def useControllableValue[TValue, TElement /* <: HTMLElement */](controlledValue: TValue, defaultUncontrolledValue: TValue): js.Tuple2[js.UndefOr[TValue], js.Function1[/* newValue */ js.UndefOr[TValue], Unit]] = js.native
+  def useControllableValue[TValue, TElement /* <: HTMLElement */](controlledValue: js.UndefOr[scala.Nothing], defaultUncontrolledValue: TValue): js.Tuple2[js.UndefOr[TValue], js.Function1[/* newValue */ js.UndefOr[TValue], Unit]] = js.native
+  def useControllableValue[TValue, TElement /* <: HTMLElement */, TCallback /* <: js.UndefOr[ChangeCallback[TElement, TValue]] */](controlledValue: TValue, defaultUncontrolledValue: TValue, onChange: TCallback): js.Tuple2[
+    js.UndefOr[TValue], 
+    js.Function2[/* newValue */ js.UndefOr[TValue], /* ev */ js.UndefOr[FormEvent[TElement]], Unit]
+  ] = js.native
+  def useControllableValue[TValue, TElement /* <: HTMLElement */, TCallback /* <: js.UndefOr[ChangeCallback[TElement, TValue]] */](controlledValue: TValue, defaultUncontrolledValue: js.UndefOr[scala.Nothing], onChange: TCallback): js.Tuple2[
+    js.UndefOr[TValue], 
+    js.Function2[/* newValue */ js.UndefOr[TValue], /* ev */ js.UndefOr[FormEvent[TElement]], Unit]
+  ] = js.native
+  def useControllableValue[TValue, TElement /* <: HTMLElement */, TCallback /* <: js.UndefOr[ChangeCallback[TElement, TValue]] */](controlledValue: js.UndefOr[scala.Nothing], defaultUncontrolledValue: TValue, onChange: TCallback): js.Tuple2[
+    js.UndefOr[TValue], 
+    js.Function2[/* newValue */ js.UndefOr[TValue], /* ev */ js.UndefOr[FormEvent[TElement]], Unit]
+  ] = js.native
   def useControllableValue[TValue, TElement /* <: HTMLElement */, TCallback /* <: js.UndefOr[ChangeCallback[TElement, TValue]] */](
-    controlledValue: js.UndefOr[TValue],
-    defaultUncontrolledValue: js.UndefOr[TValue],
+    controlledValue: js.UndefOr[scala.Nothing],
+    defaultUncontrolledValue: js.UndefOr[scala.Nothing],
     onChange: TCallback
   ): js.Tuple2[
     js.UndefOr[TValue], 

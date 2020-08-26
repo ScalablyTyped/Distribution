@@ -43,6 +43,7 @@ import scala.scalajs.js.annotation._
   *
   * A polyline has one or more straight lines.
   */
+@js.native
 trait PolyLineShape
   extends Shape
      with LineProperties

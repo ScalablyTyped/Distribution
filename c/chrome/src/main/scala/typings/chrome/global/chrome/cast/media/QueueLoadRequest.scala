@@ -14,13 +14,5 @@ class QueueLoadRequest protected ()
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueLoadRequest
     */
   def this(items: js.Array[typings.chrome.chrome.cast.media.QueueItem]) = this()
-  /* CompleteClass */
-  override var customData: js.Object = js.native
-  /* CompleteClass */
-  override var items: js.Array[typings.chrome.chrome.cast.media.QueueItem] = js.native
-  /* CompleteClass */
-  override var repeatMode: typings.chrome.chrome.cast.media.RepeatMode = js.native
-  /* CompleteClass */
-  override var startIndex: Double = js.native
 }
 

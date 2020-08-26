@@ -11,8 +11,8 @@ HTTP server cookie parsing and serialization
 | Full name          | cookie |
 | Keywords           | cookie, cookies |
 | # releases         | 2 |
-| # dependents       | 1268 |
-| # downloads        | 513453748 |
+| # dependents       | 1286 |
+| # downloads        | 535166212 |
 | # stars            | 71 |
 
 ## Links

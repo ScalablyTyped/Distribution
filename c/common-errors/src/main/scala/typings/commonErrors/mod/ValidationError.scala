@@ -15,6 +15,7 @@ class ValidationError protected () extends js.Object {
     */
   def this(message: String) = this()
   def this(message: String, code: String) = this()
+  def this(message: String, code: js.UndefOr[scala.Nothing], field: String) = this()
   def this(message: String, code: String, field: String) = this()
   /**
     * add an error object to the errors array

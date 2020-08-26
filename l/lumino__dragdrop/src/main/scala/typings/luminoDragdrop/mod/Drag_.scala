@@ -55,12 +55,6 @@ class Drag_ protected () extends IDisposable {
     */
   var _finalize: js.Any = js.native
   /**
-    * Move the drag image element to the specified location.
-    *
-    * This is a no-op if there is no drag image element.
-    */
-  var _moveDragImage: js.Any = js.native
-  /**
     * The scroll loop handler function.
     */
   var _onScrollFrame: js.Any = js.native
@@ -89,14 +83,6 @@ class Drag_ protected () extends IDisposable {
     */
   val dragImage: HTMLElement | Null = js.native
   /**
-    * Test whether the object has been disposed.
-    *
-    * #### Notes
-    * This property is always safe to access.
-    */
-  /* CompleteClass */
-  override val isDisposed: Boolean = js.native
-  /**
     * The mime data for the drag object.
     */
   val mimeData: MimeData = js.native
@@ -113,19 +99,6 @@ class Drag_ protected () extends IDisposable {
     */
   val supportedActions: SupportedActions = js.native
   /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  /**
     * Handle the DOM events for the drag operation.
     *
     * @param event - The DOM event sent to the drag object.
@@ -136,6 +109,12 @@ class Drag_ protected () extends IDisposable {
     * called directly by user code.
     */
   def handleEvent(event: Event): Unit = js.native
+  /**
+    * Move the drag image element to the specified location.
+    *
+    * This is a no-op if there is no drag image element.
+    */
+  /* protected */ def moveDragImage(clientX: Double, clientY: Double): Unit = js.native
   /**
     * Start the drag operation at the specified client position.
     *

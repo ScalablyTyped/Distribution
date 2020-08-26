@@ -37,6 +37,13 @@ class Client_ () extends js.Object {
     login: String,
     passcode: String,
     connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
+    errorCallback: js.UndefOr[scala.Nothing],
+    host: String
+  ): js.Any = js.native
+  def connect(
+    login: String,
+    passcode: String,
+    connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
     errorCallback: js.Function1[/* error */ Frame | String, _]
   ): js.Any = js.native
   def connect(
@@ -52,9 +59,11 @@ class Client_ () extends js.Object {
   def nack(messageID: String, subscription: String): js.Any = js.native
   def nack(messageID: String, subscription: String, headers: js.Object): js.Any = js.native
   def send(destination: String): js.Any = js.native
+  def send(destination: String, headers: js.UndefOr[scala.Nothing], body: String): js.Any = js.native
   def send(destination: String, headers: js.Object): js.Any = js.native
   def send(destination: String, headers: js.Object, body: String): js.Any = js.native
   def subscribe(destination: String): Subscription = js.native
+  def subscribe(destination: String, callback: js.UndefOr[scala.Nothing], headers: js.Object): Subscription = js.native
   def subscribe(destination: String, callback: js.Function1[/* message */ Message, _]): Subscription = js.native
   def subscribe(destination: String, callback: js.Function1[/* message */ Message, _], headers: js.Object): Subscription = js.native
   def unsubscribe(id: String): Unit = js.native

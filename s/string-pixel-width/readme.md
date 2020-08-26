@@ -12,7 +12,7 @@ String pixel width measurement on the backend in Javascript
 | Keywords           | string, pixel width |
 | # releases         | 7 |
 | # dependents       | 13 |
-| # downloads        | 147556 |
+| # downloads        | 153190 |
 | # stars            | 0 |
 
 ## Links

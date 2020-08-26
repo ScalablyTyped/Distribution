@@ -34,21 +34,44 @@ trait ReplicaGlobalSecondaryIndexSettingsDescription extends js.Object {
 
 object ReplicaGlobalSecondaryIndexSettingsDescription {
   @scala.inline
-  def apply(
-    IndexName: IndexName,
-    IndexStatus: IndexStatus = null,
-    ProvisionedReadCapacityAutoScalingSettings: AutoScalingSettingsDescription = null,
-    ProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined,
-    ProvisionedWriteCapacityAutoScalingSettings: AutoScalingSettingsDescription = null,
-    ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
-  ): ReplicaGlobalSecondaryIndexSettingsDescription = {
+  def apply(IndexName: IndexName): ReplicaGlobalSecondaryIndexSettingsDescription = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
-    if (IndexStatus != null) __obj.updateDynamic("IndexStatus")(IndexStatus.asInstanceOf[js.Any])
-    if (ProvisionedReadCapacityAutoScalingSettings != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingSettings")(ProvisionedReadCapacityAutoScalingSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProvisionedReadCapacityUnits)) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits.get.asInstanceOf[js.Any])
-    if (ProvisionedWriteCapacityAutoScalingSettings != null) __obj.updateDynamic("ProvisionedWriteCapacityAutoScalingSettings")(ProvisionedWriteCapacityAutoScalingSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProvisionedWriteCapacityUnits)) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsDescription]
   }
+  @scala.inline
+  implicit class ReplicaGlobalSecondaryIndexSettingsDescriptionOps[Self <: ReplicaGlobalSecondaryIndexSettingsDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndexStatus(value: IndexStatus): Self = this.set("IndexStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexStatus: Self = this.set("IndexStatus", js.undefined)
+    @scala.inline
+    def setProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = this.set("ProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedReadCapacityAutoScalingSettings: Self = this.set("ProvisionedReadCapacityAutoScalingSettings", js.undefined)
+    @scala.inline
+    def setProvisionedReadCapacityUnits(value: PositiveLongObject): Self = this.set("ProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedReadCapacityUnits: Self = this.set("ProvisionedReadCapacityUnits", js.undefined)
+    @scala.inline
+    def setProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = this.set("ProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedWriteCapacityAutoScalingSettings: Self = this.set("ProvisionedWriteCapacityAutoScalingSettings", js.undefined)
+    @scala.inline
+    def setProvisionedWriteCapacityUnits(value: PositiveLongObject): Self = this.set("ProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedWriteCapacityUnits: Self = this.set("ProvisionedWriteCapacityUnits", js.undefined)
+  }
+  
 }
 

@@ -26,15 +26,34 @@ trait CreateJobQueueRequest extends js.Object {
 
 object CreateJobQueueRequest {
   @scala.inline
-  def apply(
-    computeEnvironmentOrder: ComputeEnvironmentOrders,
-    jobQueueName: String,
-    priority: Integer,
-    state: JQState = null
-  ): CreateJobQueueRequest = {
+  def apply(computeEnvironmentOrder: ComputeEnvironmentOrders, jobQueueName: String, priority: Integer): CreateJobQueueRequest = {
     val __obj = js.Dynamic.literal(computeEnvironmentOrder = computeEnvironmentOrder.asInstanceOf[js.Any], jobQueueName = jobQueueName.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobQueueRequest]
   }
+  @scala.inline
+  implicit class CreateJobQueueRequestOps[Self <: CreateJobQueueRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeEnvironmentOrderVarargs(value: ComputeEnvironmentOrder*): Self = this.set("computeEnvironmentOrder", js.Array(value :_*))
+    @scala.inline
+    def setComputeEnvironmentOrder(value: ComputeEnvironmentOrders): Self = this.set("computeEnvironmentOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobQueueName(value: String): Self = this.set("jobQueueName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: Integer): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: JQState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

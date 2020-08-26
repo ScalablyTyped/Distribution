@@ -9,53 +9,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ARTRenderableMixin extends ARTNodeMixin {
-  var fill: js.UndefOr[String] = js.undefined
-  var stroke: js.UndefOr[String] = js.undefined
-  var strokeCap: js.UndefOr[butt | square | round] = js.undefined
-  var strokeDash: js.UndefOr[js.Array[Double]] = js.undefined
-  var strokeJoin: js.UndefOr[bevel | miter | round] = js.undefined
-  var strokeWidth: js.UndefOr[Double] = js.undefined
+  var fill: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.native
+  var strokeCap: js.UndefOr[butt | square | round] = js.native
+  var strokeDash: js.UndefOr[js.Array[Double]] = js.native
+  var strokeJoin: js.UndefOr[bevel | miter | round] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.native
 }
 
 object ARTRenderableMixin {
   @scala.inline
-  def apply(
-    fill: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    originX: js.UndefOr[Double] = js.undefined,
-    originY: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Double] = js.undefined,
-    scaleX: js.UndefOr[Double] = js.undefined,
-    scaleY: js.UndefOr[Double] = js.undefined,
-    stroke: String = null,
-    strokeCap: butt | square | round = null,
-    strokeDash: js.Array[Double] = null,
-    strokeJoin: bevel | miter | round = null,
-    strokeWidth: js.UndefOr[Double] = js.undefined,
-    title: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): ARTRenderableMixin = {
+  def apply(): ARTRenderableMixin = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(originX)) __obj.updateDynamic("originX")(originX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(originY)) __obj.updateDynamic("originY")(originY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleX)) __obj.updateDynamic("scaleX")(scaleX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleY)) __obj.updateDynamic("scaleY")(scaleY.get.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap.asInstanceOf[js.Any])
-    if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash.asInstanceOf[js.Any])
-    if (strokeJoin != null) __obj.updateDynamic("strokeJoin")(strokeJoin.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARTRenderableMixin]
   }
+  @scala.inline
+  implicit class ARTRenderableMixinOps[Self <: ARTRenderableMixin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setStrokeCap(value: butt | square | round): Self = this.set("strokeCap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeCap: Self = this.set("strokeCap", js.undefined)
+    @scala.inline
+    def setStrokeDashVarargs(value: Double*): Self = this.set("strokeDash", js.Array(value :_*))
+    @scala.inline
+    def setStrokeDash(value: js.Array[Double]): Self = this.set("strokeDash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeDash: Self = this.set("strokeDash", js.undefined)
+    @scala.inline
+    def setStrokeJoin(value: bevel | miter | round): Self = this.set("strokeJoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeJoin: Self = this.set("strokeJoin", js.undefined)
+    @scala.inline
+    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+  }
+  
 }
 

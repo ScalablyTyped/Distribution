@@ -35,5 +35,26 @@ object EnableMFADeviceRequest {
     val __obj = js.Dynamic.literal(AuthenticationCode1 = AuthenticationCode1.asInstanceOf[js.Any], AuthenticationCode2 = AuthenticationCode2.asInstanceOf[js.Any], SerialNumber = SerialNumber.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableMFADeviceRequest]
   }
+  @scala.inline
+  implicit class EnableMFADeviceRequestOps[Self <: EnableMFADeviceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationCode1(value: authenticationCodeType): Self = this.set("AuthenticationCode1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationCode2(value: authenticationCodeType): Self = this.set("AuthenticationCode2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSerialNumber(value: serialNumberType): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserName(value: existingUserNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

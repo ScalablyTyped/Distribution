@@ -10,9 +10,9 @@ Is this JS value callable? Works with Functions and GeneratorFunctions, despite 
 | ------------------ | :-------------: |
 | Full name          | is-callable |
 | Keywords           | Function, function, callable, generator, generator function, arrow, arrow function, ES6, toStringTag, @@toStringTag |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 60 |
-| # downloads        | 372348224 |
+| # downloads        | 389044504 |
 | # stars            | 1 |
 
 ## Links

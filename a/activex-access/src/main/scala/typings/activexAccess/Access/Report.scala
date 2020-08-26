@@ -202,7 +202,11 @@ trait Report extends js.Object {
   def GroupLevel(Index: Double): typings.activexAccess.Access.GroupLevel = js.native
   def Line(flags: Double, x1: Double, y1: Double, x2: Double, y2: Double, color: Double): Unit = js.native
   def Move(Left: Double): Unit = js.native
+  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: js.UndefOr[scala.Nothing], Height: Double): Unit = js.native
+  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Unit = js.native
+  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Unit = js.native
   def Move(Left: Double, Top: Double): Unit = js.native
+  def Move(Left: Double, Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Unit = js.native
   def Move(Left: Double, Top: Double, Width: Double): Unit = js.native
   def Move(Left: Double, Top: Double, Width: Double, Height: Double): Unit = js.native
   def PSet(flags: Double, X: Double, Y: Double, color: Double): Unit = js.native

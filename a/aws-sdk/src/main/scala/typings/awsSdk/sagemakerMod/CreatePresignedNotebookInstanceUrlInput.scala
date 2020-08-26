@@ -18,13 +18,28 @@ trait CreatePresignedNotebookInstanceUrlInput extends js.Object {
 
 object CreatePresignedNotebookInstanceUrlInput {
   @scala.inline
-  def apply(
-    NotebookInstanceName: NotebookInstanceName,
-    SessionExpirationDurationInSeconds: js.UndefOr[SessionExpirationDurationInSeconds] = js.undefined
-  ): CreatePresignedNotebookInstanceUrlInput = {
+  def apply(NotebookInstanceName: NotebookInstanceName): CreatePresignedNotebookInstanceUrlInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SessionExpirationDurationInSeconds)) __obj.updateDynamic("SessionExpirationDurationInSeconds")(SessionExpirationDurationInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePresignedNotebookInstanceUrlInput]
   }
+  @scala.inline
+  implicit class CreatePresignedNotebookInstanceUrlInputOps[Self <: CreatePresignedNotebookInstanceUrlInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotebookInstanceName(value: NotebookInstanceName): Self = this.set("NotebookInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSessionExpirationDurationInSeconds(value: SessionExpirationDurationInSeconds): Self = this.set("SessionExpirationDurationInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionExpirationDurationInSeconds: Self = this.set("SessionExpirationDurationInSeconds", js.undefined)
+  }
+  
 }
 

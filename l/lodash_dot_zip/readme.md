@@ -12,7 +12,7 @@ The lodash method `_.zip` exported as a module.
 | Keywords           | lodash-modularized, zip |
 | # releases         | 0 |
 | # dependents       | 55 |
-| # downloads        | 11594133 |
+| # downloads        | 12617889 |
 | # stars            | 0 |
 
 ## Links

@@ -31,6 +31,7 @@ class ResourceServices protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaSearchTenancyUnitsResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchTenancyUnitsResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchTenancyUnitsResponse] = js.native
   def search(params: ParamsResourceServicesSearch): GaxiosPromise[SchemaSearchTenancyUnitsResponse] = js.native
   def search(
     params: ParamsResourceServicesSearch,

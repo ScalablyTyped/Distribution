@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
   * @deprecated Deprecated
   * @see com.sun.star.bridge.OleBridgeSupplier
   */
+@js.native
 trait XBridgeSupplier extends XInterface {
   /** creates a bridge to provide an object of one object model with another. */
   def createBridge(
@@ -41,7 +42,7 @@ trait XBridgeSupplier extends XInterface {
     ProcessId: Double,
     sourceModelType: Double,
     destModelType: Double
-  ): js.Any
+  ): js.Any = js.native
 }
 
 object XBridgeSupplier {
@@ -55,5 +56,20 @@ object XBridgeSupplier {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createBridge = js.Any.fromFunction5(createBridge), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XBridgeSupplier]
   }
+  @scala.inline
+  implicit class XBridgeSupplierOps[Self <: XBridgeSupplier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateBridge(value: (js.Any, Uik, Double, Double, Double) => js.Any): Self = this.set("createBridge", js.Any.fromFunction5(value))
+  }
+  
 }
 

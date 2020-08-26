@@ -1,6 +1,7 @@
 package typings.ddTrace
 
 import typings.ddTrace.ddTraceStrings._dd1DotsrDoteausr
+import typings.ddTrace.ddTraceStrings._ddDotmeasured
 import typings.ddTrace.ddTraceStrings.error
 import typings.ddTrace.ddTraceStrings.httpDotmethod
 import typings.ddTrace.ddTraceStrings.httpDotrequestDotheaders
@@ -32,6 +33,7 @@ object tagsMod extends js.Object {
   var HTTP_URL: httpDoturl = js.native
   var MANUAL_DROP: manualDotdrop = js.native
   var MANUAL_KEEP: manualDotkeep = js.native
+  var MEASURED: _ddDotmeasured = js.native
   var RESOURCE_NAME: resourceDotname = js.native
   var SAMPLING_PRIORITY: samplingDotpriority = js.native
   var SERVICE_NAME: serviceDotname = js.native

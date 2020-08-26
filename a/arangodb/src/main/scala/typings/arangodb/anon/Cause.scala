@@ -5,18 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Cause extends js.Object {
-  var cause: js.UndefOr[Error] = js.undefined
-  var extra: js.UndefOr[js.Any] = js.undefined
+  var cause: js.UndefOr[Error] = js.native
+  var extra: js.UndefOr[js.Any] = js.native
 }
 
 object Cause {
   @scala.inline
-  def apply(cause: Error = null, extra: js.Any = null): Cause = {
+  def apply(): Cause = {
     val __obj = js.Dynamic.literal()
-    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cause]
   }
+  @scala.inline
+  implicit class CauseOps[Self <: Cause] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCause(value: Error): Self = this.set("cause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCause: Self = this.set("cause", js.undefined)
+    @scala.inline
+    def setExtra(value: js.Any): Self = this.set("extra", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtra: Self = this.set("extra", js.undefined)
+  }
+  
 }
 

@@ -11,32 +11,59 @@ trait ModelInputConfiguration extends js.Object {
     */
   var csvInputTemplate: js.UndefOr[String] = js.native
   /**
+    * The event type name.
+    */
+  var eventTypeName: js.UndefOr[identifier] = js.native
+  /**
     *  The format of the model input configuration. The format differs depending on if it is passed through to SageMaker or constructed by Amazon Fraud Detector.
     */
   var format: js.UndefOr[ModelInputDataFormat] = js.native
   /**
-    *  For an opaque-model, the input to the model will be a ByteBuffer blob provided in the getPrediction request, and will be passed to SageMaker as-is. For non-opaque models, the input will be constructed by Amazon Fraud Detector based on the model-configuration. 
-    */
-  var isOpaque: IsOpaque = js.native
-  /**
     *  Template for constructing the JSON input-data sent to SageMaker. At event-evaluation, the placeholders for variable names in the template will be replaced with the variable values before being sent to SageMaker. 
     */
   var jsonInputTemplate: js.UndefOr[String] = js.native
+  /**
+    * The event variables.
+    */
+  var useEventVariables: UseEventVariables = js.native
 }
 
 object ModelInputConfiguration {
   @scala.inline
-  def apply(
-    isOpaque: IsOpaque,
-    csvInputTemplate: String = null,
-    format: ModelInputDataFormat = null,
-    jsonInputTemplate: String = null
-  ): ModelInputConfiguration = {
-    val __obj = js.Dynamic.literal(isOpaque = isOpaque.asInstanceOf[js.Any])
-    if (csvInputTemplate != null) __obj.updateDynamic("csvInputTemplate")(csvInputTemplate.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (jsonInputTemplate != null) __obj.updateDynamic("jsonInputTemplate")(jsonInputTemplate.asInstanceOf[js.Any])
+  def apply(useEventVariables: UseEventVariables): ModelInputConfiguration = {
+    val __obj = js.Dynamic.literal(useEventVariables = useEventVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelInputConfiguration]
   }
+  @scala.inline
+  implicit class ModelInputConfigurationOps[Self <: ModelInputConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUseEventVariables(value: UseEventVariables): Self = this.set("useEventVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCsvInputTemplate(value: String): Self = this.set("csvInputTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvInputTemplate: Self = this.set("csvInputTemplate", js.undefined)
+    @scala.inline
+    def setEventTypeName(value: identifier): Self = this.set("eventTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeName: Self = this.set("eventTypeName", js.undefined)
+    @scala.inline
+    def setFormat(value: ModelInputDataFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setJsonInputTemplate(value: String): Self = this.set("jsonInputTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonInputTemplate: Self = this.set("jsonInputTemplate", js.undefined)
+  }
+  
 }
 

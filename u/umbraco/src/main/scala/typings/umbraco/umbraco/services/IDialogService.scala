@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
   * injects the passed template url into a div to body of the document And renders it,
   * but does also support rendering items in an iframe, incase serverside processing is needed, or its a non-angular page
   */
+@js.native
 trait IDialogService extends js.Object {
-  var dialogs: js.UndefOr[js.Array[_]] = js.undefined
+  var dialogs: js.UndefOr[js.Array[_]] = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#close
@@ -21,7 +22,7 @@ trait IDialogService extends js.Object {
     * @param {Object} dialog the dialog object to close
     * @param {Object} args if specified this object will be sent to any callbacks registered on the dialogs.
     */
-  def close(dialog: IDialog, args: js.Any*): Unit
+  def close(dialog: IDialog, args: js.Any*): Unit = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#closeAll
@@ -31,9 +32,9 @@ trait IDialogService extends js.Object {
     * Closes all dialogs
     * @param {Object} args if specified this object will be sent to any callbacks registered on the dialogs.
     */
-  def closeAll(args: js.Any*): Unit
+  def closeAll(args: js.Any*): Unit = js.native
   /** Internal method that closes the dialog properly and cleans up resources */
-  def closeDialog(dialog: IDialog): Unit
+  def closeDialog(dialog: IDialog): Unit = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#contentPicker
@@ -46,7 +47,7 @@ trait IDialogService extends js.Object {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def contentPicker(options: IContentPickerOptions): IModal
+  def contentPicker(options: IContentPickerOptions): IModal = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#ysodDialog
@@ -54,7 +55,7 @@ trait IDialogService extends js.Object {
     * @description
     * Opens a dialog to an embed dialog
     */
-  def embedDialog(options: js.Any): Unit
+  def embedDialog(options: js.Any): Unit = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#iconPicker
@@ -66,7 +67,7 @@ trait IDialogService extends js.Object {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def iconPicker(options: IIconPickerOptions): IModal
+  def iconPicker(options: IIconPickerOptions): IModal = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#linkPicker
@@ -78,7 +79,7 @@ trait IDialogService extends js.Object {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def linkPicker(options: ILinkPickerOptions): IModal
+  def linkPicker(options: ILinkPickerOptions): IModal = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#macroPicker
@@ -90,7 +91,7 @@ trait IDialogService extends js.Object {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def macroPicker(options: IMacroPickerOptions): IModal
+  def macroPicker(options: IMacroPickerOptions): IModal = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#mediaPicker
@@ -103,7 +104,7 @@ trait IDialogService extends js.Object {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def mediaPicker(options: IMediaPickerOptions): IModal
+  def mediaPicker(options: IMediaPickerOptions): IModal = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#memberGroupPicker
@@ -116,7 +117,7 @@ trait IDialogService extends js.Object {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def memberGroupPicker(options: IMemberGroupPickerOptions): IModal
+  def memberGroupPicker(options: IMemberGroupPickerOptions): IModal = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#memberPicker
@@ -129,7 +130,7 @@ trait IDialogService extends js.Object {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def memberPicker(options: IMemberPickerOptions): IModal
+  def memberPicker(options: IMemberPickerOptions): IModal = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#open
@@ -150,9 +151,9 @@ trait IDialogService extends js.Object {
     * @param {Bool} options.inline strips the modal from any animation and wrappers, used when you want to inject a dialog into an existing container
     * @returns {Object} modal object
     */
-  def open(options: IDialogRenderingOptions): IModal
+  def open(options: IDialogRenderingOptions): IModal = js.native
   /** Internal method that handles opening all dialogs */
-  def openDialog(options: IDialogRenderingOptions): IModal
+  def openDialog(options: IDialogRenderingOptions): IModal = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#propertyDialog
@@ -166,9 +167,9 @@ trait IDialogService extends js.Object {
     * @param {Object} value value sent to the property editor
     * @returns {Object} modal object
     */
-  def propertyDialog(options: IPropertyDialogOptions): IModal
+  def propertyDialog(options: IPropertyDialogOptions): IModal = js.native
   /** Internal method that removes all dialogs */
-  def removeAllDialogs(args: js.Any*): Unit
+  def removeAllDialogs(args: js.Any*): Unit = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#treePicker
@@ -183,7 +184,7 @@ trait IDialogService extends js.Object {
     * @param {Function} options.callback callback function
     * @returns {Object} modal object
     */
-  def treePicker(options: ITreePickerOptions): IModal
+  def treePicker(options: ITreePickerOptions): IModal = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#ysodDialog
@@ -192,7 +193,7 @@ trait IDialogService extends js.Object {
     * @description
     * Opens a dialog to show a custom YSOD
     */
-  def ysodDialog(ysodError: js.Any): Unit
+  def ysodDialog(ysodError: js.Any): Unit = js.native
 }
 
 object IDialogService {
@@ -214,12 +215,63 @@ object IDialogService {
     propertyDialog: IPropertyDialogOptions => IModal,
     removeAllDialogs: /* repeated */ js.Any => Unit,
     treePicker: ITreePickerOptions => IModal,
-    ysodDialog: js.Any => Unit,
-    dialogs: js.Array[_] = null
+    ysodDialog: js.Any => Unit
   ): IDialogService = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction2(close), closeAll = js.Any.fromFunction1(closeAll), closeDialog = js.Any.fromFunction1(closeDialog), contentPicker = js.Any.fromFunction1(contentPicker), embedDialog = js.Any.fromFunction1(embedDialog), iconPicker = js.Any.fromFunction1(iconPicker), linkPicker = js.Any.fromFunction1(linkPicker), macroPicker = js.Any.fromFunction1(macroPicker), mediaPicker = js.Any.fromFunction1(mediaPicker), memberGroupPicker = js.Any.fromFunction1(memberGroupPicker), memberPicker = js.Any.fromFunction1(memberPicker), open = js.Any.fromFunction1(open), openDialog = js.Any.fromFunction1(openDialog), propertyDialog = js.Any.fromFunction1(propertyDialog), removeAllDialogs = js.Any.fromFunction1(removeAllDialogs), treePicker = js.Any.fromFunction1(treePicker), ysodDialog = js.Any.fromFunction1(ysodDialog))
-    if (dialogs != null) __obj.updateDynamic("dialogs")(dialogs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogService]
   }
+  @scala.inline
+  implicit class IDialogServiceOps[Self <: IDialogService] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClose(value: (IDialog, /* repeated */ js.Any) => Unit): Self = this.set("close", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCloseAll(value: /* repeated */ js.Any => Unit): Self = this.set("closeAll", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCloseDialog(value: IDialog => Unit): Self = this.set("closeDialog", js.Any.fromFunction1(value))
+    @scala.inline
+    def setContentPicker(value: IContentPickerOptions => IModal): Self = this.set("contentPicker", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEmbedDialog(value: js.Any => Unit): Self = this.set("embedDialog", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIconPicker(value: IIconPickerOptions => IModal): Self = this.set("iconPicker", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLinkPicker(value: ILinkPickerOptions => IModal): Self = this.set("linkPicker", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMacroPicker(value: IMacroPickerOptions => IModal): Self = this.set("macroPicker", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMediaPicker(value: IMediaPickerOptions => IModal): Self = this.set("mediaPicker", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMemberGroupPicker(value: IMemberGroupPickerOptions => IModal): Self = this.set("memberGroupPicker", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMemberPicker(value: IMemberPickerOptions => IModal): Self = this.set("memberPicker", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOpen(value: IDialogRenderingOptions => IModal): Self = this.set("open", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOpenDialog(value: IDialogRenderingOptions => IModal): Self = this.set("openDialog", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPropertyDialog(value: IPropertyDialogOptions => IModal): Self = this.set("propertyDialog", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveAllDialogs(value: /* repeated */ js.Any => Unit): Self = this.set("removeAllDialogs", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTreePicker(value: ITreePickerOptions => IModal): Self = this.set("treePicker", js.Any.fromFunction1(value))
+    @scala.inline
+    def setYsodDialog(value: js.Any => Unit): Self = this.set("ysodDialog", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDialogsVarargs(value: js.Any*): Self = this.set("dialogs", js.Array(value :_*))
+    @scala.inline
+    def setDialogs(value: js.Array[_]): Self = this.set("dialogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogs: Self = this.set("dialogs", js.undefined)
+  }
+  
 }
 

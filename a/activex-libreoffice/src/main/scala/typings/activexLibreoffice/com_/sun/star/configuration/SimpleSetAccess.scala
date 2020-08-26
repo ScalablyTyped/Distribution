@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   *
   * The number and names of contained elements is not fixed in advance, but all elements have to be of one predetermined type.
   */
+@js.native
 trait SimpleSetAccess
   extends XNameAccess
      with XTemplateContainer

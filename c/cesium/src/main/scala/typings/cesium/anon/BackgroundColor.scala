@@ -8,78 +8,133 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BackgroundColor extends js.Object {
-  var backgroundColor: js.UndefOr[Property] = js.undefined
-  var backgroundPadding: js.UndefOr[Property] = js.undefined
-  var disableDepthTestDistance: js.UndefOr[Property | Double] = js.undefined
-  var distanceDisplayCondition: js.UndefOr[typings.cesium.mod.DistanceDisplayCondition | Property] = js.undefined
-  var eyeOffset: js.UndefOr[Property] = js.undefined
-  var fillColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
-  var font: js.UndefOr[String] = js.undefined
-  var heightReference: js.UndefOr[Property] = js.undefined
-  var horizontalOrigin: js.UndefOr[Property] = js.undefined
-  var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
-  var outlineWidth: js.UndefOr[Double] = js.undefined
-  var pixelOffset: js.UndefOr[Cartesian2 | Property] = js.undefined
-  var pixelOffsetScaleByDistance: js.UndefOr[Property] = js.undefined
-  var scale: js.UndefOr[Property] = js.undefined
-  var scaleByDistance: js.UndefOr[Property] = js.undefined
-  var show: js.UndefOr[Property] = js.undefined
-  var showBackground: js.UndefOr[Property] = js.undefined
-  var style: js.UndefOr[LabelStyle | Property] = js.undefined
-  var text: js.UndefOr[Property | String] = js.undefined
-  var translucencyByDistance: js.UndefOr[Property] = js.undefined
-  var verticalOrigin: js.UndefOr[VerticalOrigin | Property] = js.undefined
+  var backgroundColor: js.UndefOr[Property] = js.native
+  var backgroundPadding: js.UndefOr[Property] = js.native
+  var disableDepthTestDistance: js.UndefOr[Property | Double] = js.native
+  var distanceDisplayCondition: js.UndefOr[typings.cesium.mod.DistanceDisplayCondition | Property] = js.native
+  var eyeOffset: js.UndefOr[Property] = js.native
+  var fillColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var font: js.UndefOr[String] = js.native
+  var heightReference: js.UndefOr[Property] = js.native
+  var horizontalOrigin: js.UndefOr[Property] = js.native
+  var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var outlineWidth: js.UndefOr[Double] = js.native
+  var pixelOffset: js.UndefOr[Cartesian2 | Property] = js.native
+  var pixelOffsetScaleByDistance: js.UndefOr[Property] = js.native
+  var scale: js.UndefOr[Property] = js.native
+  var scaleByDistance: js.UndefOr[Property] = js.native
+  var show: js.UndefOr[Property] = js.native
+  var showBackground: js.UndefOr[Property] = js.native
+  var style: js.UndefOr[LabelStyle | Property] = js.native
+  var text: js.UndefOr[Property | String] = js.native
+  var translucencyByDistance: js.UndefOr[Property] = js.native
+  var verticalOrigin: js.UndefOr[VerticalOrigin | Property] = js.native
 }
 
 object BackgroundColor {
   @scala.inline
-  def apply(
-    backgroundColor: Property = null,
-    backgroundPadding: Property = null,
-    disableDepthTestDistance: Property | Double = null,
-    distanceDisplayCondition: typings.cesium.mod.DistanceDisplayCondition | Property = null,
-    eyeOffset: Property = null,
-    fillColor: typings.cesium.mod.Color = null,
-    font: String = null,
-    heightReference: Property = null,
-    horizontalOrigin: Property = null,
-    outlineColor: typings.cesium.mod.Color = null,
-    outlineWidth: js.UndefOr[Double] = js.undefined,
-    pixelOffset: Cartesian2 | Property = null,
-    pixelOffsetScaleByDistance: Property = null,
-    scale: Property = null,
-    scaleByDistance: Property = null,
-    show: Property = null,
-    showBackground: Property = null,
-    style: LabelStyle | Property = null,
-    text: Property | String = null,
-    translucencyByDistance: Property = null,
-    verticalOrigin: VerticalOrigin | Property = null
-  ): BackgroundColor = {
+  def apply(): BackgroundColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundPadding != null) __obj.updateDynamic("backgroundPadding")(backgroundPadding.asInstanceOf[js.Any])
-    if (disableDepthTestDistance != null) __obj.updateDynamic("disableDepthTestDistance")(disableDepthTestDistance.asInstanceOf[js.Any])
-    if (distanceDisplayCondition != null) __obj.updateDynamic("distanceDisplayCondition")(distanceDisplayCondition.asInstanceOf[js.Any])
-    if (eyeOffset != null) __obj.updateDynamic("eyeOffset")(eyeOffset.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (heightReference != null) __obj.updateDynamic("heightReference")(heightReference.asInstanceOf[js.Any])
-    if (horizontalOrigin != null) __obj.updateDynamic("horizontalOrigin")(horizontalOrigin.asInstanceOf[js.Any])
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(outlineWidth)) __obj.updateDynamic("outlineWidth")(outlineWidth.get.asInstanceOf[js.Any])
-    if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset.asInstanceOf[js.Any])
-    if (pixelOffsetScaleByDistance != null) __obj.updateDynamic("pixelOffsetScaleByDistance")(pixelOffsetScaleByDistance.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (scaleByDistance != null) __obj.updateDynamic("scaleByDistance")(scaleByDistance.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (showBackground != null) __obj.updateDynamic("showBackground")(showBackground.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (translucencyByDistance != null) __obj.updateDynamic("translucencyByDistance")(translucencyByDistance.asInstanceOf[js.Any])
-    if (verticalOrigin != null) __obj.updateDynamic("verticalOrigin")(verticalOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundColor]
   }
+  @scala.inline
+  implicit class BackgroundColorOps[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: Property): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBackgroundPadding(value: Property): Self = this.set("backgroundPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundPadding: Self = this.set("backgroundPadding", js.undefined)
+    @scala.inline
+    def setDisableDepthTestDistance(value: Property | Double): Self = this.set("disableDepthTestDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableDepthTestDistance: Self = this.set("disableDepthTestDistance", js.undefined)
+    @scala.inline
+    def setDistanceDisplayCondition(value: typings.cesium.mod.DistanceDisplayCondition | Property): Self = this.set("distanceDisplayCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistanceDisplayCondition: Self = this.set("distanceDisplayCondition", js.undefined)
+    @scala.inline
+    def setEyeOffset(value: Property): Self = this.set("eyeOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEyeOffset: Self = this.set("eyeOffset", js.undefined)
+    @scala.inline
+    def setFillColor(value: typings.cesium.mod.Color): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setHeightReference(value: Property): Self = this.set("heightReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightReference: Self = this.set("heightReference", js.undefined)
+    @scala.inline
+    def setHorizontalOrigin(value: Property): Self = this.set("horizontalOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalOrigin: Self = this.set("horizontalOrigin", js.undefined)
+    @scala.inline
+    def setOutlineColor(value: typings.cesium.mod.Color): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    @scala.inline
+    def setOutlineWidth(value: Double): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    @scala.inline
+    def setPixelOffset(value: Cartesian2 | Property): Self = this.set("pixelOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelOffset: Self = this.set("pixelOffset", js.undefined)
+    @scala.inline
+    def setPixelOffsetScaleByDistance(value: Property): Self = this.set("pixelOffsetScaleByDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelOffsetScaleByDistance: Self = this.set("pixelOffsetScaleByDistance", js.undefined)
+    @scala.inline
+    def setScale(value: Property): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setScaleByDistance(value: Property): Self = this.set("scaleByDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleByDistance: Self = this.set("scaleByDistance", js.undefined)
+    @scala.inline
+    def setShow(value: Property): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setShowBackground(value: Property): Self = this.set("showBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowBackground: Self = this.set("showBackground", js.undefined)
+    @scala.inline
+    def setStyle(value: LabelStyle | Property): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setText(value: Property | String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTranslucencyByDistance(value: Property): Self = this.set("translucencyByDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslucencyByDistance: Self = this.set("translucencyByDistance", js.undefined)
+    @scala.inline
+    def setVerticalOrigin(value: VerticalOrigin | Property): Self = this.set("verticalOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalOrigin: Self = this.set("verticalOrigin", js.undefined)
+  }
+  
 }
 

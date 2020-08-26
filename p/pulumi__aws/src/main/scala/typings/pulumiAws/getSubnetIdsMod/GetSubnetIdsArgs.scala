@@ -13,10 +13,10 @@ trait GetSubnetIdsArgs extends js.Object {
     */
   val filters: js.UndefOr[js.Array[GetSubnetIdsFilter]] = js.native
   /**
-    * A mapping of tags, each pair of which must exactly match
+    * A map of tags, each pair of which must exactly match
     * a pair on the desired subnets.
     */
-  val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val tags: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * The VPC ID that you want to filter from.
     */
@@ -25,11 +25,34 @@ trait GetSubnetIdsArgs extends js.Object {
 
 object GetSubnetIdsArgs {
   @scala.inline
-  def apply(vpcId: String, filters: js.Array[GetSubnetIdsFilter] = null, tags: StringDictionary[js.Any] = null): GetSubnetIdsArgs = {
+  def apply(vpcId: String): GetSubnetIdsArgs = {
     val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSubnetIdsArgs]
   }
+  @scala.inline
+  implicit class GetSubnetIdsArgsOps[Self <: GetSubnetIdsArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFiltersVarargs(value: GetSubnetIdsFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetSubnetIdsFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

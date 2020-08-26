@@ -12,7 +12,7 @@ Add a 'Read More' and optionally a 'Read Less' button to text that exceeds a giv
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 165407 |
+| # downloads        | 189440 |
 | # stars            | 0 |
 
 ## Links

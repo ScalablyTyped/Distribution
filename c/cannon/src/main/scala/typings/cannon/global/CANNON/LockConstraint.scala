@@ -15,21 +15,5 @@ class LockConstraint protected ()
     bodyB: typings.cannon.CANNON.Body,
     options: ILockConstraintOptions
   ) = this()
-  /* CompleteClass */
-  override var bodyA: typings.cannon.CANNON.Body = js.native
-  /* CompleteClass */
-  override var bodyB: typings.cannon.CANNON.Body = js.native
-  /* CompleteClass */
-  override var collideConnected: Boolean = js.native
-  /* CompleteClass */
-  override var equations: js.Array[_] = js.native
-  /* CompleteClass */
-  override var id: Double = js.native
-  /* CompleteClass */
-  override def disable(): Unit = js.native
-  /* CompleteClass */
-  override def enable(): Unit = js.native
-  /* CompleteClass */
-  override def update(): Unit = js.native
 }
 

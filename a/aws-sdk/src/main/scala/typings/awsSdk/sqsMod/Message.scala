@@ -38,24 +38,50 @@ trait Message extends js.Object {
 
 object Message {
   @scala.inline
-  def apply(
-    Attributes: MessageSystemAttributeMap = null,
-    Body: String = null,
-    MD5OfBody: String = null,
-    MD5OfMessageAttributes: String = null,
-    MessageAttributes: MessageBodyAttributeMap = null,
-    MessageId: String = null,
-    ReceiptHandle: String = null
-  ): Message = {
+  def apply(): Message = {
     val __obj = js.Dynamic.literal()
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (MD5OfBody != null) __obj.updateDynamic("MD5OfBody")(MD5OfBody.asInstanceOf[js.Any])
-    if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes.asInstanceOf[js.Any])
-    if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes.asInstanceOf[js.Any])
-    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId.asInstanceOf[js.Any])
-    if (ReceiptHandle != null) __obj.updateDynamic("ReceiptHandle")(ReceiptHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
+  @scala.inline
+  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: MessageSystemAttributeMap): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setBody(value: String): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setMD5OfBody(value: String): Self = this.set("MD5OfBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMD5OfBody: Self = this.set("MD5OfBody", js.undefined)
+    @scala.inline
+    def setMD5OfMessageAttributes(value: String): Self = this.set("MD5OfMessageAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMD5OfMessageAttributes: Self = this.set("MD5OfMessageAttributes", js.undefined)
+    @scala.inline
+    def setMessageAttributes(value: MessageBodyAttributeMap): Self = this.set("MessageAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageAttributes: Self = this.set("MessageAttributes", js.undefined)
+    @scala.inline
+    def setMessageId(value: String): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    @scala.inline
+    def setReceiptHandle(value: String): Self = this.set("ReceiptHandle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceiptHandle: Self = this.set("ReceiptHandle", js.undefined)
+  }
+  
 }
 

@@ -5,129 +5,218 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MultiSelectOptions extends js.Object {
-  var animation: js.UndefOr[Boolean | MultiSelectAnimation] = js.undefined
-  var autoBind: js.UndefOr[Boolean] = js.undefined
-  var autoClose: js.UndefOr[Boolean] = js.undefined
-  var autoWidth: js.UndefOr[Boolean] = js.undefined
-  var change: js.UndefOr[js.Function1[/* e */ MultiSelectChangeEvent, Unit]] = js.undefined
-  var clearButton: js.UndefOr[Boolean] = js.undefined
-  var close: js.UndefOr[js.Function1[/* e */ MultiSelectCloseEvent, Unit]] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ MultiSelectDataBoundEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
-  var dataTextField: js.UndefOr[String] = js.undefined
-  var dataValueField: js.UndefOr[String] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var deselect: js.UndefOr[js.Function1[/* e */ MultiSelectDeselectEvent, Unit]] = js.undefined
-  var enable: js.UndefOr[Boolean] = js.undefined
-  var enforceMinLength: js.UndefOr[Boolean] = js.undefined
-  var filter: js.UndefOr[String] = js.undefined
-  var filtering: js.UndefOr[js.Function1[/* e */ MultiSelectFilteringEvent, Unit]] = js.undefined
-  var fixedGroupTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var groupTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var highlightFirst: js.UndefOr[Boolean] = js.undefined
-  var ignoreCase: js.UndefOr[Boolean] = js.undefined
-  var itemTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var maxSelectedItems: js.UndefOr[Double] = js.undefined
-  var minLength: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.undefined
-  var open: js.UndefOr[js.Function1[/* e */ MultiSelectOpenEvent, Unit]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var popup: js.UndefOr[MultiSelectPopup] = js.undefined
-  var select: js.UndefOr[js.Function1[/* e */ MultiSelectSelectEvent, Unit]] = js.undefined
-  var tagMode: js.UndefOr[String] = js.undefined
-  var tagTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
-  var valuePrimitive: js.UndefOr[Boolean] = js.undefined
-  var virtual: js.UndefOr[Boolean | MultiSelectVirtual] = js.undefined
+  var animation: js.UndefOr[Boolean | MultiSelectAnimation] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ MultiSelectChangeEvent, Unit]] = js.native
+  var clearButton: js.UndefOr[Boolean] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ MultiSelectCloseEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ MultiSelectDataBoundEvent, Unit]] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataTextField: js.UndefOr[String] = js.native
+  var dataValueField: js.UndefOr[String] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var deselect: js.UndefOr[js.Function1[/* e */ MultiSelectDeselectEvent, Unit]] = js.native
+  var enable: js.UndefOr[Boolean] = js.native
+  var enforceMinLength: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[String] = js.native
+  var filtering: js.UndefOr[js.Function1[/* e */ MultiSelectFilteringEvent, Unit]] = js.native
+  var fixedGroupTemplate: js.UndefOr[String | js.Function] = js.native
+  var footerTemplate: js.UndefOr[String | js.Function] = js.native
+  var groupTemplate: js.UndefOr[String | js.Function] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var highlightFirst: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var itemTemplate: js.UndefOr[String | js.Function] = js.native
+  var maxSelectedItems: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ MultiSelectOpenEvent, Unit]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var popup: js.UndefOr[MultiSelectPopup] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ MultiSelectSelectEvent, Unit]] = js.native
+  var tagMode: js.UndefOr[String] = js.native
+  var tagTemplate: js.UndefOr[String | js.Function] = js.native
+  var value: js.UndefOr[js.Any] = js.native
+  var valuePrimitive: js.UndefOr[Boolean] = js.native
+  var virtual: js.UndefOr[Boolean | MultiSelectVirtual] = js.native
 }
 
 object MultiSelectOptions {
   @scala.inline
-  def apply(
-    animation: Boolean | MultiSelectAnimation = null,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    autoClose: js.UndefOr[Boolean] = js.undefined,
-    autoWidth: js.UndefOr[Boolean] = js.undefined,
-    change: /* e */ MultiSelectChangeEvent => Unit = null,
-    clearButton: js.UndefOr[Boolean] = js.undefined,
-    close: /* e */ MultiSelectCloseEvent => Unit = null,
-    dataBound: /* e */ MultiSelectDataBoundEvent => Unit = null,
-    dataSource: js.Any | DataSource = null,
-    dataTextField: String = null,
-    dataValueField: String = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    deselect: /* e */ MultiSelectDeselectEvent => Unit = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    enforceMinLength: js.UndefOr[Boolean] = js.undefined,
-    filter: String = null,
-    filtering: /* e */ MultiSelectFilteringEvent => Unit = null,
-    fixedGroupTemplate: String | js.Function = null,
-    footerTemplate: String | js.Function = null,
-    groupTemplate: String | js.Function = null,
-    headerTemplate: String | js.Function = null,
-    height: js.UndefOr[Double] = js.undefined,
-    highlightFirst: js.UndefOr[Boolean] = js.undefined,
-    ignoreCase: js.UndefOr[Boolean] = js.undefined,
-    itemTemplate: String | js.Function = null,
-    maxSelectedItems: js.UndefOr[Double] = js.undefined,
-    minLength: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    noDataTemplate: String | js.Function | Boolean = null,
-    open: /* e */ MultiSelectOpenEvent => Unit = null,
-    placeholder: String = null,
-    popup: MultiSelectPopup = null,
-    select: /* e */ MultiSelectSelectEvent => Unit = null,
-    tagMode: String = null,
-    tagTemplate: String | js.Function = null,
-    value: js.Any = null,
-    valuePrimitive: js.UndefOr[Boolean] = js.undefined,
-    virtual: Boolean | MultiSelectVirtual = null
-  ): MultiSelectOptions = {
+  def apply(): MultiSelectOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (!js.isUndefined(clearButton)) __obj.updateDynamic("clearButton")(clearButton.get.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
-    if (dataValueField != null) __obj.updateDynamic("dataValueField")(dataValueField.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (deselect != null) __obj.updateDynamic("deselect")(js.Any.fromFunction1(deselect))
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceMinLength)) __obj.updateDynamic("enforceMinLength")(enforceMinLength.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (filtering != null) __obj.updateDynamic("filtering")(js.Any.fromFunction1(filtering))
-    if (fixedGroupTemplate != null) __obj.updateDynamic("fixedGroupTemplate")(fixedGroupTemplate.asInstanceOf[js.Any])
-    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate.asInstanceOf[js.Any])
-    if (groupTemplate != null) __obj.updateDynamic("groupTemplate")(groupTemplate.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightFirst)) __obj.updateDynamic("highlightFirst")(highlightFirst.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
-    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSelectedItems)) __obj.updateDynamic("maxSelectedItems")(maxSelectedItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (noDataTemplate != null) __obj.updateDynamic("noDataTemplate")(noDataTemplate.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (tagMode != null) __obj.updateDynamic("tagMode")(tagMode.asInstanceOf[js.Any])
-    if (tagTemplate != null) __obj.updateDynamic("tagTemplate")(tagTemplate.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(valuePrimitive)) __obj.updateDynamic("valuePrimitive")(valuePrimitive.get.asInstanceOf[js.Any])
-    if (virtual != null) __obj.updateDynamic("virtual")(virtual.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelectOptions]
   }
+  @scala.inline
+  implicit class MultiSelectOptionsOps[Self <: MultiSelectOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean | MultiSelectAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    @scala.inline
+    def setAutoClose(value: Boolean): Self = this.set("autoClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoClose: Self = this.set("autoClose", js.undefined)
+    @scala.inline
+    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoWidth: Self = this.set("autoWidth", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ MultiSelectChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setClearButton(value: Boolean): Self = this.set("clearButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearButton: Self = this.set("clearButton", js.undefined)
+    @scala.inline
+    def setClose(value: /* e */ MultiSelectCloseEvent => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ MultiSelectDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDataTextField(value: String): Self = this.set("dataTextField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTextField: Self = this.set("dataTextField", js.undefined)
+    @scala.inline
+    def setDataValueField(value: String): Self = this.set("dataValueField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataValueField: Self = this.set("dataValueField", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDeselect(value: /* e */ MultiSelectDeselectEvent => Unit): Self = this.set("deselect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDeselect: Self = this.set("deselect", js.undefined)
+    @scala.inline
+    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setEnforceMinLength(value: Boolean): Self = this.set("enforceMinLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceMinLength: Self = this.set("enforceMinLength", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFiltering(value: /* e */ MultiSelectFilteringEvent => Unit): Self = this.set("filtering", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFiltering: Self = this.set("filtering", js.undefined)
+    @scala.inline
+    def setFixedGroupTemplate(value: String | js.Function): Self = this.set("fixedGroupTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedGroupTemplate: Self = this.set("fixedGroupTemplate", js.undefined)
+    @scala.inline
+    def setFooterTemplate(value: String | js.Function): Self = this.set("footerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterTemplate: Self = this.set("footerTemplate", js.undefined)
+    @scala.inline
+    def setGroupTemplate(value: String | js.Function): Self = this.set("groupTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupTemplate: Self = this.set("groupTemplate", js.undefined)
+    @scala.inline
+    def setHeaderTemplate(value: String | js.Function): Self = this.set("headerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderTemplate: Self = this.set("headerTemplate", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHighlightFirst(value: Boolean): Self = this.set("highlightFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightFirst: Self = this.set("highlightFirst", js.undefined)
+    @scala.inline
+    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    @scala.inline
+    def setItemTemplate(value: String | js.Function): Self = this.set("itemTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemTemplate: Self = this.set("itemTemplate", js.undefined)
+    @scala.inline
+    def setMaxSelectedItems(value: Double): Self = this.set("maxSelectedItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSelectedItems: Self = this.set("maxSelectedItems", js.undefined)
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoDataTemplate(value: String | js.Function | Boolean): Self = this.set("noDataTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoDataTemplate: Self = this.set("noDataTemplate", js.undefined)
+    @scala.inline
+    def setOpen(value: /* e */ MultiSelectOpenEvent => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopup(value: MultiSelectPopup): Self = this.set("popup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopup: Self = this.set("popup", js.undefined)
+    @scala.inline
+    def setSelect(value: /* e */ MultiSelectSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setTagMode(value: String): Self = this.set("tagMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagMode: Self = this.set("tagMode", js.undefined)
+    @scala.inline
+    def setTagTemplate(value: String | js.Function): Self = this.set("tagTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagTemplate: Self = this.set("tagTemplate", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValuePrimitive(value: Boolean): Self = this.set("valuePrimitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuePrimitive: Self = this.set("valuePrimitive", js.undefined)
+    @scala.inline
+    def setVirtual(value: Boolean | MultiSelectVirtual): Self = this.set("virtual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtual: Self = this.set("virtual", js.undefined)
+  }
+  
 }
 

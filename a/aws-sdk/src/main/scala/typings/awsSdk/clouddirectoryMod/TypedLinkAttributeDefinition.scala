@@ -34,19 +34,40 @@ trait TypedLinkAttributeDefinition extends js.Object {
 
 object TypedLinkAttributeDefinition {
   @scala.inline
-  def apply(
-    Name: AttributeName,
-    RequiredBehavior: RequiredAttributeBehavior,
-    Type: FacetAttributeType,
-    DefaultValue: TypedAttributeValue = null,
-    IsImmutable: js.UndefOr[Bool] = js.undefined,
-    Rules: RuleMap = null
-  ): TypedLinkAttributeDefinition = {
+  def apply(Name: AttributeName, RequiredBehavior: RequiredAttributeBehavior, Type: FacetAttributeType): TypedLinkAttributeDefinition = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RequiredBehavior = RequiredBehavior.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsImmutable)) __obj.updateDynamic("IsImmutable")(IsImmutable.get.asInstanceOf[js.Any])
-    if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedLinkAttributeDefinition]
   }
+  @scala.inline
+  implicit class TypedLinkAttributeDefinitionOps[Self <: TypedLinkAttributeDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: AttributeName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequiredBehavior(value: RequiredAttributeBehavior): Self = this.set("RequiredBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: FacetAttributeType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultValue(value: TypedAttributeValue): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    @scala.inline
+    def setIsImmutable(value: Bool): Self = this.set("IsImmutable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsImmutable: Self = this.set("IsImmutable", js.undefined)
+    @scala.inline
+    def setRules(value: RuleMap): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("Rules", js.undefined)
+  }
+  
 }
 

@@ -12,10 +12,5 @@ import scala.scalajs.js.annotation._
 /**
   * Create a new instance of the CertAuthenticator class.
   */
-class CertAuthenticator () extends Authenticator {
-  /* CompleteClass */
-  override var password: String = js.native
-  /* CompleteClass */
-  override var username: String = js.native
-}
+class CertAuthenticator () extends Authenticator
 

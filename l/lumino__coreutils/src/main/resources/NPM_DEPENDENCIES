@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/coreutils" : "1.4.3"
+      "@lumino/coreutils" : "1.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/coreutils" : "1.4.3"
+      "@lumino/coreutils" : "1.5.3"
     }
   ],
   "compile-devDependencies" : [

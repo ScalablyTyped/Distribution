@@ -18,11 +18,32 @@ trait ListStackResourcesOutput extends js.Object {
 
 object ListStackResourcesOutput {
   @scala.inline
-  def apply(NextToken: NextToken = null, StackResourceSummaries: StackResourceSummaries = null): ListStackResourcesOutput = {
+  def apply(): ListStackResourcesOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StackResourceSummaries != null) __obj.updateDynamic("StackResourceSummaries")(StackResourceSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStackResourcesOutput]
   }
+  @scala.inline
+  implicit class ListStackResourcesOutputOps[Self <: ListStackResourcesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStackResourceSummariesVarargs(value: StackResourceSummary*): Self = this.set("StackResourceSummaries", js.Array(value :_*))
+    @scala.inline
+    def setStackResourceSummaries(value: StackResourceSummaries): Self = this.set("StackResourceSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackResourceSummaries: Self = this.set("StackResourceSummaries", js.undefined)
+  }
+  
 }
 

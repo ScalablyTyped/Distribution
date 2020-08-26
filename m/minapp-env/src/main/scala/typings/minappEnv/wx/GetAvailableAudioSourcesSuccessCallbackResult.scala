@@ -12,6 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetAvailableAudioSourcesSuccessCallbackResult extends js.Object {
   /** 支持的音频输入源列表，可在 [RecorderManager.start()](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.start.html) 接口中使用。返回值定义参考 https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource
     *
@@ -25,7 +26,7 @@ trait GetAvailableAudioSourcesSuccessCallbackResult extends js.Object {
     * - 'voice_recognition': 同 mic，适用于语音识别，仅限 Android; */
   var audioSources: Array[
     auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition
-  ]
+  ] = js.native
 }
 
 object GetAvailableAudioSourcesSuccessCallbackResult {
@@ -38,5 +39,24 @@ object GetAvailableAudioSourcesSuccessCallbackResult {
     val __obj = js.Dynamic.literal(audioSources = audioSources.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAvailableAudioSourcesSuccessCallbackResult]
   }
+  @scala.inline
+  implicit class GetAvailableAudioSourcesSuccessCallbackResultOps[Self <: GetAvailableAudioSourcesSuccessCallbackResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioSources(
+      value: Array[
+          auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition
+        ]
+    ): Self = this.set("audioSources", value.asInstanceOf[js.Any])
+  }
+  
 }
 

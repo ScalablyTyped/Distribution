@@ -54,6 +54,7 @@ trait LokiEventEmitter extends js.Object {
     * @param data - optional object passed with the event
     */
   def emit(eventName: String): Unit = js.native
+  def emit(eventName: String, data: js.UndefOr[scala.Nothing], arg: js.Any): Unit = js.native
   def emit(eventName: String, data: js.Any): Unit = js.native
   def emit(eventName: String, data: js.Any, arg: js.Any): Unit = js.native
   /**

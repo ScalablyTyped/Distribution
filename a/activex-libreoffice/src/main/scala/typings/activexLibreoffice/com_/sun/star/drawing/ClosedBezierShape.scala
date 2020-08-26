@@ -29,6 +29,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This service is for a closed Bezier shape. */
+@js.native
 trait ClosedBezierShape
   extends Shape
      with LineProperties

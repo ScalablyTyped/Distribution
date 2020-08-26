@@ -24,7 +24,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined node.http.ServerResponse & {  send  :next.next/dist/next-server/lib/utils.Send<T>,   json  :next.next/dist/next-server/lib/utils.Send<T>, status (statusCode : number): next.next/dist/next-server/lib/utils.NextApiResponse<T>, setPreviewData (data : object | string, options ? : {  maxAge ? :number}): next.next/dist/next-server/lib/utils.NextApiResponse<T>, clearPreviewData (): next.next/dist/next-server/lib/utils.NextApiResponse<T>} */
+/* Inlined node.http.ServerResponse & {  send :next.next/dist/next-server/lib/utils.Send<T>,   json :next.next/dist/next-server/lib/utils.Send<T>, status (statusCode : number): next.next/dist/next-server/lib/utils.NextApiResponse<T>, redirect (url : string): next.next/dist/next-server/lib/utils.NextApiResponse<T>, redirect (status : number, url : string): next.next/dist/next-server/lib/utils.NextApiResponse<T>, setPreviewData (data : object | string, options : {  maxAge :number | undefined} | undefined): next.next/dist/next-server/lib/utils.NextApiResponse<T>, clearPreviewData (): next.next/dist/next-server/lib/utils.NextApiResponse<T>} */
 @js.native
 trait NextApiResponse[T] extends js.Object {
   var _writev: js.UndefOr[
@@ -131,6 +131,7 @@ trait NextApiResponse[T] extends js.Object {
   def end(data: String, cb: js.Function0[Unit]): Unit = js.native
   def end(data: Uint8Array): Unit = js.native
   def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   def eventNames(): js.Array[String | js.Symbol] = js.native
@@ -206,6 +207,8 @@ trait NextApiResponse[T] extends js.Object {
   def prependOnceListener_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
   def rawListeners(event: String): js.Array[js.Function] = js.native
   def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+  def redirect(status: Double, url: String): NextApiResponse[T] = js.native
+  def redirect(url: String): NextApiResponse[T] = js.native
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(event: String): this.type = js.native
   def removeAllListeners(event: js.Symbol): this.type = js.native
@@ -252,6 +255,11 @@ trait NextApiResponse[T] extends js.Object {
     encoding: BufferEncoding,
     cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
   ): Boolean = js.native
+  def write(
+    str: String,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   // https://github.com/nodejs/node/blob/master/test/parallel/test-http-write-callbacks.js#L53
@@ -260,6 +268,7 @@ trait NextApiResponse[T] extends js.Object {
   def writeContinue(callback: js.Function0[Unit]): Unit = js.native
   def writeHead(statusCode: Double): this.type = js.native
   def writeHead(statusCode: Double, headers: OutgoingHttpHeaders): this.type = js.native
+  def writeHead(statusCode: Double, reasonPhrase: js.UndefOr[scala.Nothing], headers: OutgoingHttpHeaders): this.type = js.native
   def writeHead(statusCode: Double, reasonPhrase: String): this.type = js.native
   def writeHead(statusCode: Double, reasonPhrase: String, headers: OutgoingHttpHeaders): this.type = js.native
   def writeProcessing(): Unit = js.native

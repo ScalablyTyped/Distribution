@@ -132,6 +132,7 @@ object accountClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getDomains(): js.Promise[Domains] = js.native
+    def getDomains(filter: js.UndefOr[scala.Nothing], callback: Callback[Domains]): js.Promise[Domains] = js.native
     def getDomains(filter: FilteringParameters): js.Promise[Domains] = js.native
     def getDomains(filter: FilteringParameters, callback: Callback[Domains]): js.Promise[Domains] = js.native
     /**
@@ -151,6 +152,7 @@ object accountClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getSenderSignatures(): js.Promise[Signatures] = js.native
+    def getSenderSignatures(filter: js.UndefOr[scala.Nothing], callback: Callback[Signatures]): js.Promise[Signatures] = js.native
     def getSenderSignatures(filter: FilteringParameters): js.Promise[Signatures] = js.native
     def getSenderSignatures(filter: FilteringParameters, callback: Callback[Signatures]): js.Promise[Signatures] = js.native
     /**
@@ -170,6 +172,7 @@ object accountClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     def getServers(): js.Promise[Servers] = js.native
+    def getServers(filter: js.UndefOr[scala.Nothing], callback: Callback[Servers]): js.Promise[Servers] = js.native
     def getServers(filter: ServerFilteringParameters): js.Promise[Servers] = js.native
     def getServers(filter: ServerFilteringParameters, callback: Callback[Servers]): js.Promise[Servers] = js.native
     /**

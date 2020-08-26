@@ -62,6 +62,7 @@ trait BigInt64Array extends /* index */ NumberDictionary[BigInt] {
     * length+end.
     */
   def fill(value: BigInt): this.type = js.native
+  def fill(value: BigInt, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: BigInt, start: Double): this.type = js.native
   def fill(value: BigInt, start: Double, end: Double): this.type = js.native
   /**
@@ -258,6 +259,7 @@ trait BigInt64Array extends /* index */ NumberDictionary[BigInt] {
     * @param end The end of the specified portion of the array.
     */
   def slice(): BigInt64Array = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): BigInt64Array = js.native
   def slice(start: Double): BigInt64Array = js.native
   def slice(start: Double, end: Double): BigInt64Array = js.native
   /**
@@ -288,6 +290,7 @@ trait BigInt64Array extends /* index */ NumberDictionary[BigInt] {
     * @param end The index of the end of the array.
     */
   def subarray(): BigInt64Array = js.native
+  def subarray(begin: js.UndefOr[scala.Nothing], end: Double): BigInt64Array = js.native
   def subarray(begin: Double): BigInt64Array = js.native
   def subarray(begin: Double, end: Double): BigInt64Array = js.native
   /** Yields each value in the array. */

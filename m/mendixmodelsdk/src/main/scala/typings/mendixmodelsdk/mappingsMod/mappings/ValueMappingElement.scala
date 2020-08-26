@@ -26,50 +26,46 @@ abstract class ValueMappingElement protected () extends MappingElement {
   ) = this()
   @JSName("model")
   var model_FValueMappingElement: IModel = js.native
-  def attribute(): js.Any = js.native
-  def attribute(newValue: IAttribute): js.Any = js.native
+  def attribute: IAttribute | Null = js.native
   def attributeQualifiedName: String | Null = js.native
-  @JSName("attribute")
-  def attribute_Union: IAttribute | Null = js.native
-  def converter(): js.Any = js.native
-  def converter(newValue: IMicroflow): js.Any = js.native
+  def attribute_=(newValue: IAttribute | Null): Unit = js.native
+  def converter: IMicroflow | Null = js.native
   def converterQualifiedName: String | Null = js.native
-  @JSName("converter")
-  def converter_Union: IMicroflow | Null = js.native
+  def converter_=(newValue: IMicroflow | Null): Unit = js.native
   /**
     * In version 6.4.1: deleted
     */
   def expectedContentTypes: String = js.native
-  def expectedContentTypes(newValue: String): js.Any = js.native
+  def expectedContentTypes_=(newValue: String): Unit = js.native
   def fractionDigits: Double = js.native
-  def fractionDigits(newValue: Double): js.Any = js.native
+  def fractionDigits_=(newValue: Double): Unit = js.native
   def isContent: Boolean = js.native
-  def isContent(newValue: Boolean): js.Any = js.native
+  def isContent_=(newValue: Boolean): Unit = js.native
   def isKey: Boolean = js.native
-  def isKey(newValue: Boolean): js.Any = js.native
+  def isKey_=(newValue: Boolean): Unit = js.native
   def isXmlAttribute: Boolean = js.native
-  def isXmlAttribute(newValue: Boolean): js.Any = js.native
+  def isXmlAttribute_=(newValue: Boolean): Unit = js.native
   def maxLength: Double = js.native
-  def maxLength(newValue: Double): js.Any = js.native
+  def maxLength_=(newValue: Double): Unit = js.native
   def totalDigits: Double = js.native
-  def totalDigits(newValue: Double): js.Any = js.native
+  def totalDigits_=(newValue: Double): Unit = js.native
   /**
     * In version 7.9.0: introduced
     */
   def `type`: DataType = js.native
-  def `type`(newValue: DataType): js.Any = js.native
+  def type_=(newValue: DataType): Unit = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
   def xmlDataType: String = js.native
-  def xmlDataType(newValue: String): js.Any = js.native
+  def xmlDataType_=(newValue: String): Unit = js.native
   /**
     * In version 6.1.0: introduced
     */
   def xmlPrimitiveType: XmlPrimitiveType = js.native
-  def xmlPrimitiveType(newValue: XmlPrimitiveType): js.Any = js.native
+  def xmlPrimitiveType_=(newValue: XmlPrimitiveType): Unit = js.native
 }
 
 /* static members */

@@ -22,14 +22,30 @@ trait ListedEntitlement extends js.Object {
 
 object ListedEntitlement {
   @scala.inline
-  def apply(
-    EntitlementArn: string,
-    EntitlementName: string,
-    DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.undefined
-  ): ListedEntitlement = {
+  def apply(EntitlementArn: string, EntitlementName: string): ListedEntitlement = {
     val __obj = js.Dynamic.literal(EntitlementArn = EntitlementArn.asInstanceOf[js.Any], EntitlementName = EntitlementName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListedEntitlement]
   }
+  @scala.inline
+  implicit class ListedEntitlementOps[Self <: ListedEntitlement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntitlementArn(value: string): Self = this.set("EntitlementArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEntitlementName(value: string): Self = this.set("EntitlementName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataTransferSubscriberFeePercent(value: integer): Self = this.set("DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTransferSubscriberFeePercent: Self = this.set("DataTransferSubscriberFeePercent", js.undefined)
+  }
+  
 }
 

@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.System.UserChangedEventArgs")
 @js.native
 abstract class UserChangedEventArgs ()
-  extends typings.winrtUwp.Windows.System.UserChangedEventArgs {
-  /** Gets the user. */
-  /* CompleteClass */
-  override var user: typings.winrtUwp.Windows.System.User = js.native
-}
+  extends typings.winrtUwp.Windows.System.UserChangedEventArgs
 

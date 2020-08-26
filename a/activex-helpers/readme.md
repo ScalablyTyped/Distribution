@@ -12,7 +12,7 @@ Event handler management, and parameterized property setters, for ActiveX object
 | Keywords           | activex, events |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 8096 |
+| # downloads        | 8678 |
 | # stars            | 0 |
 
 ## Links

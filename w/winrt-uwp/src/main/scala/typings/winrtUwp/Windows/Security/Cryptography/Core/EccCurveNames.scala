@@ -5,5 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains static properties that enable you to retrieve supported elliptic curve cryptography (ECC) algorithm names. */
+@js.native
 trait EccCurveNames extends js.Object
 

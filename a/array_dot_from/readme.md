@@ -12,7 +12,7 @@ A robust & optimized `Array.from` polyfill, based on the ECMAScript 6 specificat
 | Keywords           | array, es6, ecmascript, polyfill |
 | # releases         | 1 |
 | # dependents       | 23 |
-| # downloads        | 428647 |
+| # downloads        | 422949 |
 | # stars            | 1 |
 
 ## Links

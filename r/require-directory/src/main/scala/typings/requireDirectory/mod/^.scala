@@ -16,6 +16,7 @@ object ^ extends js.Object {
     * @returns hash of modules in specified directory
     */
   def apply[T, U](m: NodeModule): RequireDirectoryResult[U] = js.native
+  def apply[T, U](m: NodeModule, path: js.UndefOr[scala.Nothing], options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = js.native
   def apply[T, U](m: NodeModule, path: String): RequireDirectoryResult[U] = js.native
   def apply[T, U](m: NodeModule, path: String, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = js.native
   def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = js.native

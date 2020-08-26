@@ -37,6 +37,7 @@ class ResourceUsersDatasourcesDatasets protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDatasourcesDatasetsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDatasourcesDatasetsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -72,6 +73,7 @@ class ResourceUsersDatasourcesDatasets protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDataset] = js.native
   def get(callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataset] = js.native
   def get(params: ParamsResourceUsersDatasourcesDatasetsGet): GaxiosPromise[SchemaDataset] = js.native
   def get(params: ParamsResourceUsersDatasourcesDatasetsGet, callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
   def get(
@@ -106,6 +108,7 @@ class ResourceUsersDatasourcesDatasets protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaDataset] = js.native
   def patch(callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataset] = js.native
   def patch(params: ParamsResourceUsersDatasourcesDatasetsPatch): GaxiosPromise[SchemaDataset] = js.native
   def patch(params: ParamsResourceUsersDatasourcesDatasetsPatch, callback: BodyResponseCallback[SchemaDataset]): Unit = js.native
   def patch(

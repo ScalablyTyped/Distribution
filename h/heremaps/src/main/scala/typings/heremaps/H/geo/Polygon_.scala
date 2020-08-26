@@ -42,14 +42,19 @@ trait Polygon_ extends AbstractGeometry {
     * @param direction - The direction to set.
     */
   def setPoleCovering(direction: Direction): Polygon = js.native
+  def spliceInteriors(
+    opt_index: js.UndefOr[scala.Nothing],
+    opt_deleteCount: js.UndefOr[scala.Nothing],
+    var_args: LineString*
+  ): js.Array[LineString] = js.native
+  def spliceInteriors(opt_index: js.UndefOr[scala.Nothing], opt_deleteCount: Double, var_args: LineString*): js.Array[LineString] = js.native
+  def spliceInteriors(opt_index: Double, opt_deleteCount: js.UndefOr[scala.Nothing], var_args: LineString*): js.Array[LineString] = js.native
   /**
     * Applies a splice-operation on the list of interior rings of the polygon.
     * @param opt_index - The index at which to start changing the list, defaults to 0.
     * @param opt_deleteCount - The number of interior rings to remove, defaults to Infinity.
     * @param var_args - repeatable, The interior rings to insert.
     */
-  def spliceInteriors(): js.Array[LineString] = js.native
-  def spliceInteriors(opt_index: Double): js.Array[LineString] = js.native
   def spliceInteriors(opt_index: Double, opt_deleteCount: Double, var_args: LineString*): js.Array[LineString] = js.native
 }
 

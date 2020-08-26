@@ -42,6 +42,15 @@ trait CanvasShapes extends js.Object {
     SaveWithDocument: MsoTriState,
     Left: Double,
     Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddPicture(
+    FileName: String,
+    LinkToFile: MsoTriState,
+    SaveWithDocument: MsoTriState,
+    Left: Double,
+    Top: Double,
     Width: Double
   ): Shape = js.native
   def AddPicture(

@@ -26,18 +26,38 @@ trait DiskImageDescription extends js.Object {
 
 object DiskImageDescription {
   @scala.inline
-  def apply(
-    Checksum: String = null,
-    Format: DiskImageFormat = null,
-    ImportManifestUrl: String = null,
-    Size: js.UndefOr[Long] = js.undefined
-  ): DiskImageDescription = {
+  def apply(): DiskImageDescription = {
     val __obj = js.Dynamic.literal()
-    if (Checksum != null) __obj.updateDynamic("Checksum")(Checksum.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (ImportManifestUrl != null) __obj.updateDynamic("ImportManifestUrl")(ImportManifestUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskImageDescription]
   }
+  @scala.inline
+  implicit class DiskImageDescriptionOps[Self <: DiskImageDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("Checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("Checksum", js.undefined)
+    @scala.inline
+    def setFormat(value: DiskImageFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("Format", js.undefined)
+    @scala.inline
+    def setImportManifestUrl(value: String): Self = this.set("ImportManifestUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportManifestUrl: Self = this.set("ImportManifestUrl", js.undefined)
+    @scala.inline
+    def setSize(value: Long): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("Size", js.undefined)
+  }
+  
 }
 

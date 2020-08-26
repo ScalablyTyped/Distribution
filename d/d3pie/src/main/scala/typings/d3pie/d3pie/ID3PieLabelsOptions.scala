@@ -11,23 +11,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ID3PieLabelsOptions extends js.Object {
   var format: js.UndefOr[
     label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2`
-  ] = js.undefined
-  var hideWhenLessThanPercentage: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var hideWhenLessThanPercentage: js.UndefOr[Double] = js.native
 }
 
 object ID3PieLabelsOptions {
   @scala.inline
-  def apply(
-    format: label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2` = null,
-    hideWhenLessThanPercentage: js.UndefOr[Double] = js.undefined
-  ): ID3PieLabelsOptions = {
+  def apply(): ID3PieLabelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideWhenLessThanPercentage)) __obj.updateDynamic("hideWhenLessThanPercentage")(hideWhenLessThanPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ID3PieLabelsOptions]
   }
+  @scala.inline
+  implicit class ID3PieLabelsOptionsOps[Self <: ID3PieLabelsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(
+      value: label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2`
+    ): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHideWhenLessThanPercentage(value: Double): Self = this.set("hideWhenLessThanPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideWhenLessThanPercentage: Self = this.set("hideWhenLessThanPercentage", js.undefined)
+  }
+  
 }
 

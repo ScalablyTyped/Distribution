@@ -4,48 +4,87 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GaDataQuery extends js.Object {
-  var dimensions: js.UndefOr[String] = js.undefined
-  var end_date: js.UndefOr[String] = js.undefined
-  var filters: js.UndefOr[String] = js.undefined
-  var ids: js.UndefOr[String] = js.undefined
-  var max_results: js.UndefOr[Double] = js.undefined
-  var metrics: js.UndefOr[js.Array[String]] = js.undefined
-  var samplingLevel: js.UndefOr[String] = js.undefined
-  var segment: js.UndefOr[String] = js.undefined
-  var sort: js.UndefOr[js.Array[String]] = js.undefined
-  var start_date: js.UndefOr[String] = js.undefined
-  var start_index: js.UndefOr[Double] = js.undefined
+  var dimensions: js.UndefOr[String] = js.native
+  var end_date: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.native
+  var ids: js.UndefOr[String] = js.native
+  var max_results: js.UndefOr[Double] = js.native
+  var metrics: js.UndefOr[js.Array[String]] = js.native
+  var samplingLevel: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[js.Array[String]] = js.native
+  var start_date: js.UndefOr[String] = js.native
+  var start_index: js.UndefOr[Double] = js.native
 }
 
 object GaDataQuery {
   @scala.inline
-  def apply(
-    dimensions: String = null,
-    end_date: String = null,
-    filters: String = null,
-    ids: String = null,
-    max_results: js.UndefOr[Double] = js.undefined,
-    metrics: js.Array[String] = null,
-    samplingLevel: String = null,
-    segment: String = null,
-    sort: js.Array[String] = null,
-    start_date: String = null,
-    start_index: js.UndefOr[Double] = js.undefined
-  ): GaDataQuery = {
+  def apply(): GaDataQuery = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (end_date != null) __obj.updateDynamic("end_date")(end_date.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_results)) __obj.updateDynamic("max_results")(max_results.get.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel.asInstanceOf[js.Any])
-    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (start_date != null) __obj.updateDynamic("start_date")(start_date.asInstanceOf[js.Any])
-    if (!js.isUndefined(start_index)) __obj.updateDynamic("start_index")(start_index.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GaDataQuery]
   }
+  @scala.inline
+  implicit class GaDataQueryOps[Self <: GaDataQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensions(value: String): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def setEnd_date(value: String): Self = this.set("end_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd_date: Self = this.set("end_date", js.undefined)
+    @scala.inline
+    def setFilters(value: String): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setIds(value: String): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+    @scala.inline
+    def setMax_results(value: Double): Self = this.set("max_results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax_results: Self = this.set("max_results", js.undefined)
+    @scala.inline
+    def setMetricsVarargs(value: String*): Self = this.set("metrics", js.Array(value :_*))
+    @scala.inline
+    def setMetrics(value: js.Array[String]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    @scala.inline
+    def setSamplingLevel(value: String): Self = this.set("samplingLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamplingLevel: Self = this.set("samplingLevel", js.undefined)
+    @scala.inline
+    def setSegment(value: String): Self = this.set("segment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegment: Self = this.set("segment", js.undefined)
+    @scala.inline
+    def setSortVarargs(value: String*): Self = this.set("sort", js.Array(value :_*))
+    @scala.inline
+    def setSort(value: js.Array[String]): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setStart_date(value: String): Self = this.set("start_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart_date: Self = this.set("start_date", js.undefined)
+    @scala.inline
+    def setStart_index(value: Double): Self = this.set("start_index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart_index: Self = this.set("start_index", js.undefined)
+  }
+  
 }
 

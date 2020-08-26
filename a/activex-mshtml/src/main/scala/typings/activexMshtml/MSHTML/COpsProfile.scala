@@ -15,15 +15,325 @@ trait COpsProfile extends js.Object {
   def clearRequest(): Unit = js.native
   def commitChanges(): Boolean = js.native
   def doReadRequest(usage: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any
+  ): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(usage: js.Any, fname: js.UndefOr[scala.Nothing], domain: js.UndefOr[scala.Nothing], path: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.Any
+  ): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(usage: js.Any, fname: js.UndefOr[scala.Nothing], domain: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any
+  ): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(usage: js.Any, fname: js.UndefOr[scala.Nothing], domain: js.Any, path: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.Any,
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(usage: js.Any, fname: js.UndefOr[scala.Nothing], domain: js.Any, path: js.Any, expire: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.Any,
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
   def doReadRequest(usage: js.Any, fname: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any
+  ): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(usage: js.Any, fname: js.Any, domain: js.UndefOr[scala.Nothing], path: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(usage: js.Any, fname: js.Any, domain: js.UndefOr[scala.Nothing], path: js.Any, expire: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
   def doReadRequest(usage: js.Any, fname: js.Any, domain: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doReadRequest(usage: js.Any, fname: js.Any, domain: js.Any, path: js.UndefOr[scala.Nothing], expire: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
   def doReadRequest(usage: js.Any, fname: js.Any, domain: js.Any, path: js.Any): Unit = js.native
+  def doReadRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.Any,
+    path: js.Any,
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
   def doReadRequest(usage: js.Any, fname: js.Any, domain: js.Any, path: js.Any, expire: js.Any): Unit = js.native
   def doReadRequest(usage: js.Any, fname: js.Any, domain: js.Any, path: js.Any, expire: js.Any, reserved: js.Any): Unit = js.native
   def doRequest(usage: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any
+  ): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(usage: js.Any, fname: js.UndefOr[scala.Nothing], domain: js.UndefOr[scala.Nothing], path: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.Any
+  ): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(usage: js.Any, fname: js.UndefOr[scala.Nothing], domain: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any
+  ): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(usage: js.Any, fname: js.UndefOr[scala.Nothing], domain: js.Any, path: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.Any,
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(usage: js.Any, fname: js.UndefOr[scala.Nothing], domain: js.Any, path: js.Any, expire: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.UndefOr[scala.Nothing],
+    domain: js.Any,
+    path: js.Any,
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
   def doRequest(usage: js.Any, fname: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any
+  ): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(usage: js.Any, fname: js.Any, domain: js.UndefOr[scala.Nothing], path: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(usage: js.Any, fname: js.Any, domain: js.UndefOr[scala.Nothing], path: js.Any, expire: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.UndefOr[scala.Nothing],
+    path: js.Any,
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
   def doRequest(usage: js.Any, fname: js.Any, domain: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
+  def doRequest(usage: js.Any, fname: js.Any, domain: js.Any, path: js.UndefOr[scala.Nothing], expire: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.Any,
+    path: js.UndefOr[scala.Nothing],
+    expire: js.Any,
+    reserved: js.Any
+  ): Unit = js.native
   def doRequest(usage: js.Any, fname: js.Any, domain: js.Any, path: js.Any): Unit = js.native
+  def doRequest(
+    usage: js.Any,
+    fname: js.Any,
+    domain: js.Any,
+    path: js.Any,
+    expire: js.UndefOr[scala.Nothing],
+    reserved: js.Any
+  ): Unit = js.native
   def doRequest(usage: js.Any, fname: js.Any, domain: js.Any, path: js.Any, expire: js.Any): Unit = js.native
   def doRequest(usage: js.Any, fname: js.Any, domain: js.Any, path: js.Any, expire: js.Any, reserved: js.Any): Unit = js.native
   def doWriteRequest(): Boolean = js.native

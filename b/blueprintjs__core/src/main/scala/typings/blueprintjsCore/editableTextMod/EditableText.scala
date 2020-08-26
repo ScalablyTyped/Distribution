@@ -10,11 +10,12 @@ import scala.scalajs.js.annotation._
 class EditableText ()
   extends AbstractPureComponent2[IEditableTextProps, IEditableTextState, js.Object] {
   def this(props: IEditableTextProps) = this()
+  def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
   def this(props: IEditableTextProps, context: js.Any) = this()
   var handleFocus: js.Any = js.native
   var handleKeyEvent: js.Any = js.native
   var handleTextChange: js.Any = js.native
-  var inputElement: js.UndefOr[js.Any] = js.native
+  var inputElement: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderInput: js.Any = js.native
   var updateInputDimensions: js.Any = js.native

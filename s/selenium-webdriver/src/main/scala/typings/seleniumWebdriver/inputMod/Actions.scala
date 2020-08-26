@@ -43,6 +43,7 @@ class Actions protected () extends js.Object {
     * @return {!Actions} A self reference.
     */
   def click(): Actions = js.native
+  def click(opt_elementOrButton: js.UndefOr[scala.Nothing], opt_button: String): Actions = js.native
   def click(opt_elementOrButton: String): Actions = js.native
   def click(opt_elementOrButton: String, opt_button: String): Actions = js.native
   def click(opt_elementOrButton: WebElement): Actions = js.native
@@ -79,6 +80,7 @@ class Actions protected () extends js.Object {
     * @return {!Actions} A self reference.
     */
   def doubleClick(): Actions = js.native
+  def doubleClick(opt_elementOrButton: js.UndefOr[scala.Nothing], opt_button: String): Actions = js.native
   def doubleClick(opt_elementOrButton: String): Actions = js.native
   def doubleClick(opt_elementOrButton: String, opt_button: String): Actions = js.native
   def doubleClick(opt_elementOrButton: WebElement): Actions = js.native
@@ -138,6 +140,7 @@ class Actions protected () extends js.Object {
     * @return {!Actions} A self reference.
     */
   def mouseDown(): Actions = js.native
+  def mouseDown(opt_elementOrButton: js.UndefOr[scala.Nothing], opt_button: String): Actions = js.native
   def mouseDown(opt_elementOrButton: String): Actions = js.native
   def mouseDown(opt_elementOrButton: String, opt_button: String): Actions = js.native
   def mouseDown(opt_elementOrButton: WebElement): Actions = js.native
@@ -183,6 +186,7 @@ class Actions protected () extends js.Object {
     * @return {!Actions} A self reference.
     */
   def mouseUp(): Actions = js.native
+  def mouseUp(opt_elementOrButton: js.UndefOr[scala.Nothing], opt_button: String): Actions = js.native
   def mouseUp(opt_elementOrButton: String): Actions = js.native
   def mouseUp(opt_elementOrButton: String, opt_button: String): Actions = js.native
   def mouseUp(opt_elementOrButton: WebElement): Actions = js.native
@@ -203,7 +207,7 @@ class Actions protected () extends js.Object {
     *     corner of the viewport over 100ms.
     */
   def move(direction: IDirection): Actions = js.native
-  def pause(): Actions = js.native
+  def pause(duration: js.UndefOr[scala.Nothing], devices: Device*): Actions = js.native
   def pause(duration: Double, devices: Device*): Actions = js.native
   def pause(duration: Device, devices: Device*): Actions = js.native
   /**

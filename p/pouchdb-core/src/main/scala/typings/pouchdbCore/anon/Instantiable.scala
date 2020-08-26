@@ -13,5 +13,9 @@ import scala.scalajs.js.annotation._
 trait Instantiable
   extends Instantiable0[Database[js.Object]]
      with Instantiable1[/* name */ String, Database[js.Object]]
-     with Instantiable2[/* name */ String, /* options */ DatabaseConfiguration, Database[js.Object]]
+     with Instantiable2[
+      js.UndefOr[/* name */ String], 
+      /* options */ DatabaseConfiguration, 
+      Database[js.Object]
+    ]
 

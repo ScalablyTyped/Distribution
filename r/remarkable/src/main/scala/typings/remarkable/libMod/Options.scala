@@ -4,71 +4,102 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * Convert "\n" in paragraphs into <br>.
     */
-  var breaks: js.UndefOr[Boolean] = js.undefined
+  var breaks: js.UndefOr[Boolean] = js.native
   /**
     * Highlighter function. Should return escaped HTML, or "" if the source
     * string is not changed.
     */
-  var highlight: js.UndefOr[js.Function2[/* str */ String, /* lang */ String, String]] = js.undefined
+  var highlight: js.UndefOr[js.Function2[/* str */ String, /* lang */ String, String]] = js.native
   /**
     * Enable HTML tags in source.
     */
-  var html: js.UndefOr[Boolean] = js.undefined
+  var html: js.UndefOr[Boolean] = js.native
   /**
     * CSS language prefix for fenced blocks.
     */
-  var langPrefix: js.UndefOr[String] = js.undefined
+  var langPrefix: js.UndefOr[String] = js.native
   /**
     * Set target to open link in
     */
-  var linkTarget: js.UndefOr[String] = js.undefined
+  var linkTarget: js.UndefOr[String] = js.native
   /**
     * Autoconvert URL-like text to links.
     */
-  var linkify: js.UndefOr[Boolean] = js.undefined
+  var linkify: js.UndefOr[Boolean] = js.native
   /**
     * Double + single quotes replacement pairs, when typographer enabled,
     * and smartquotes on. Set doubles to "«»" for Russian, "„“" for German.
     */
-  var quotes: js.UndefOr[String] = js.undefined
+  var quotes: js.UndefOr[String] = js.native
   /**
     * Enable some language-neutral replacement + quotes beautification.
     */
-  var typographer: js.UndefOr[Boolean] = js.undefined
+  var typographer: js.UndefOr[Boolean] = js.native
   /**
     * Use "/" to close single tags (<br />).
     */
-  var xhtmlOut: js.UndefOr[Boolean] = js.undefined
+  var xhtmlOut: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    breaks: js.UndefOr[Boolean] = js.undefined,
-    highlight: (/* str */ String, /* lang */ String) => String = null,
-    html: js.UndefOr[Boolean] = js.undefined,
-    langPrefix: String = null,
-    linkTarget: String = null,
-    linkify: js.UndefOr[Boolean] = js.undefined,
-    quotes: String = null,
-    typographer: js.UndefOr[Boolean] = js.undefined,
-    xhtmlOut: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks.get.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction2(highlight))
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
-    if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix.asInstanceOf[js.Any])
-    if (linkTarget != null) __obj.updateDynamic("linkTarget")(linkTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkify)) __obj.updateDynamic("linkify")(linkify.get.asInstanceOf[js.Any])
-    if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(typographer)) __obj.updateDynamic("typographer")(typographer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhtmlOut)) __obj.updateDynamic("xhtmlOut")(xhtmlOut.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBreaks(value: Boolean): Self = this.set("breaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreaks: Self = this.set("breaks", js.undefined)
+    @scala.inline
+    def setHighlight(value: (/* str */ String, /* lang */ String) => String): Self = this.set("highlight", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setHtml(value: Boolean): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setLangPrefix(value: String): Self = this.set("langPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLangPrefix: Self = this.set("langPrefix", js.undefined)
+    @scala.inline
+    def setLinkTarget(value: String): Self = this.set("linkTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkTarget: Self = this.set("linkTarget", js.undefined)
+    @scala.inline
+    def setLinkify(value: Boolean): Self = this.set("linkify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkify: Self = this.set("linkify", js.undefined)
+    @scala.inline
+    def setQuotes(value: String): Self = this.set("quotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotes: Self = this.set("quotes", js.undefined)
+    @scala.inline
+    def setTypographer(value: Boolean): Self = this.set("typographer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypographer: Self = this.set("typographer", js.undefined)
+    @scala.inline
+    def setXhtmlOut(value: Boolean): Self = this.set("xhtmlOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXhtmlOut: Self = this.set("xhtmlOut", js.undefined)
+  }
+  
 }
 

@@ -18,10 +18,30 @@ trait ResultRow extends js.Object {
 
 object ResultRow {
   @scala.inline
-  def apply(dataItems: DataItems, rowId: RowId = null): ResultRow = {
+  def apply(dataItems: DataItems): ResultRow = {
     val __obj = js.Dynamic.literal(dataItems = dataItems.asInstanceOf[js.Any])
-    if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultRow]
   }
+  @scala.inline
+  implicit class ResultRowOps[Self <: ResultRow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataItemsVarargs(value: DataItem*): Self = this.set("dataItems", js.Array(value :_*))
+    @scala.inline
+    def setDataItems(value: DataItems): Self = this.set("dataItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRowId(value: RowId): Self = this.set("rowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowId: Self = this.set("rowId", js.undefined)
+  }
+  
 }
 

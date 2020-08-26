@@ -26,16 +26,9 @@ object updateDefaultBranchCommandMod extends js.Object {
           Readable
         ] {
     def this(input: UpdateDefaultBranchInput) = this()
-    /* CompleteClass */
-    override val input: UpdateDefaultBranchInput = js.native
     val middlewareStack: MiddlewareStack[UpdateDefaultBranchInput, UpdateDefaultBranchOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[UpdateDefaultBranchInput, UpdateDefaultBranchOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[UpdateDefaultBranchInput, UpdateDefaultBranchOutput] = js.native
   }

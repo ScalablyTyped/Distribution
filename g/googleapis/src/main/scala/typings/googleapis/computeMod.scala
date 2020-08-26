@@ -52,7 +52,7 @@ object computeMod extends js.Object {
     @js.native
     object alpha
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Compute]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Compute]
             ]
     
     @js.native
@@ -60,7 +60,7 @@ object computeMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.betaMod.computeBeta.Compute
               ]
             ]
@@ -70,7 +70,7 @@ object computeMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.computeV1Mod.computeV1.Compute
               ]
             ]

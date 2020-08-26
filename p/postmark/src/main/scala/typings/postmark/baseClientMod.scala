@@ -100,6 +100,12 @@ object baseClientMod extends js.Object {
       * @see processRequest for more details.
       */
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String): js.Promise[T] = js.native
+    /* protected */ def processRequestWithoutBody[T](
+      method: HttpMethod,
+      path: String,
+      queryParameters: js.UndefOr[scala.Nothing],
+      callback: Callback[T]
+    ): js.Promise[T] = js.native
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String, queryParameters: js.Object): js.Promise[T] = js.native
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String, queryParameters: js.Object, callback: Callback[T]): js.Promise[T] = js.native
     def setClientOptions(configOptions: Configuration): Unit = js.native

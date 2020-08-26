@@ -8,45 +8,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Animated extends js.Object {
      // or true
-  var animated: js.UndefOr[Boolean] = js.undefined
-  var event: js.UndefOr[js.Any] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.native
+  var event: js.UndefOr[js.Any] = js.native
+  var max: js.UndefOr[Double] = js.native
    // or vertical,
-  var min: js.UndefOr[Double] = js.undefined
+  var min: js.UndefOr[Double] = js.native
          // simple or flat
-  var orient: js.UndefOr[horizontal | vertical] = js.undefined
-  var striped: js.UndefOr[Boolean] = js.undefined
-  var tpl: js.UndefOr[js.Any] = js.undefined
-  var `type`: js.UndefOr[simple | flat] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var orient: js.UndefOr[horizontal | vertical] = js.native
+  var striped: js.UndefOr[Boolean] = js.native
+  var tpl: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[simple | flat] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object Animated {
   @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    event: js.Any = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    orient: horizontal | vertical = null,
-    striped: js.UndefOr[Boolean] = js.undefined,
-    tpl: js.Any = null,
-    `type`: simple | flat = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): Animated = {
+  def apply(): Animated = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.get.asInstanceOf[js.Any])
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animated]
   }
+  @scala.inline
+  implicit class AnimatedOps[Self <: Animated] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOrient(value: horizontal | vertical): Self = this.set("orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrient: Self = this.set("orient", js.undefined)
+    @scala.inline
+    def setStriped(value: Boolean): Self = this.set("striped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStriped: Self = this.set("striped", js.undefined)
+    @scala.inline
+    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTpl: Self = this.set("tpl", js.undefined)
+    @scala.inline
+    def setType(value: simple | flat): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("firebase", "auth.GoogleAuthProvider_Instance")
 @js.native
 class GoogleAuthProviderInstance () extends AuthProvider {
-  /* CompleteClass */
-  override var providerId: String = js.native
   /**
     * @param scope Google OAuth scope.
     * @return The provider instance itself.

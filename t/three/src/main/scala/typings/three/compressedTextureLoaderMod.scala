@@ -20,6 +20,12 @@ object compressedTextureLoaderMod extends js.Object {
     def load(
       url: String,
       onLoad: js.Function1[/* texture */ CompressedTexture, Unit],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Unit = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* texture */ CompressedTexture, Unit],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def load(

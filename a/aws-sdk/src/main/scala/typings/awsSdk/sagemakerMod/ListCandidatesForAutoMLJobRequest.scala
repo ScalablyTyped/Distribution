@@ -38,23 +38,48 @@ trait ListCandidatesForAutoMLJobRequest extends js.Object {
 
 object ListCandidatesForAutoMLJobRequest {
   @scala.inline
-  def apply(
-    AutoMLJobName: AutoMLJobName,
-    CandidateNameEquals: CandidateName = null,
-    MaxResults: js.UndefOr[AutoMLMaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    SortBy: CandidateSortBy = null,
-    SortOrder: AutoMLSortOrder = null,
-    StatusEquals: CandidateStatus = null
-  ): ListCandidatesForAutoMLJobRequest = {
+  def apply(AutoMLJobName: AutoMLJobName): ListCandidatesForAutoMLJobRequest = {
     val __obj = js.Dynamic.literal(AutoMLJobName = AutoMLJobName.asInstanceOf[js.Any])
-    if (CandidateNameEquals != null) __obj.updateDynamic("CandidateNameEquals")(CandidateNameEquals.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])
-    if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])
-    if (StatusEquals != null) __obj.updateDynamic("StatusEquals")(StatusEquals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCandidatesForAutoMLJobRequest]
   }
+  @scala.inline
+  implicit class ListCandidatesForAutoMLJobRequestOps[Self <: ListCandidatesForAutoMLJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoMLJobName(value: AutoMLJobName): Self = this.set("AutoMLJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCandidateNameEquals(value: CandidateName): Self = this.set("CandidateNameEquals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCandidateNameEquals: Self = this.set("CandidateNameEquals", js.undefined)
+    @scala.inline
+    def setMaxResults(value: AutoMLMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSortBy(value: CandidateSortBy): Self = this.set("SortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBy: Self = this.set("SortBy", js.undefined)
+    @scala.inline
+    def setSortOrder(value: AutoMLSortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+    @scala.inline
+    def setStatusEquals(value: CandidateStatus): Self = this.set("StatusEquals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusEquals: Self = this.set("StatusEquals", js.undefined)
+  }
+  
 }
 

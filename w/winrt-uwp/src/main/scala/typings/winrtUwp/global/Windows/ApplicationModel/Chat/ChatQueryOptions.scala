@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Initializes a new instance of the ChatQueryOptions class. */
 class ChatQueryOptions ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Chat.ChatQueryOptions {
-  /** Gets or sets the string to search for the in ChatMessageStore . */
-  /* CompleteClass */
-  override var searchString: String = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Chat.ChatQueryOptions
 

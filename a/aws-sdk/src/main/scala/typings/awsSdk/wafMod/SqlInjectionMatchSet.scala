@@ -22,14 +22,32 @@ trait SqlInjectionMatchSet extends js.Object {
 
 object SqlInjectionMatchSet {
   @scala.inline
-  def apply(
-    SqlInjectionMatchSetId: ResourceId,
-    SqlInjectionMatchTuples: SqlInjectionMatchTuples,
-    Name: ResourceName = null
-  ): SqlInjectionMatchSet = {
+  def apply(SqlInjectionMatchSetId: ResourceId, SqlInjectionMatchTuples: SqlInjectionMatchTuples): SqlInjectionMatchSet = {
     val __obj = js.Dynamic.literal(SqlInjectionMatchSetId = SqlInjectionMatchSetId.asInstanceOf[js.Any], SqlInjectionMatchTuples = SqlInjectionMatchTuples.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlInjectionMatchSet]
   }
+  @scala.inline
+  implicit class SqlInjectionMatchSetOps[Self <: SqlInjectionMatchSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSqlInjectionMatchSetId(value: ResourceId): Self = this.set("SqlInjectionMatchSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSqlInjectionMatchTuplesVarargs(value: SqlInjectionMatchTuple*): Self = this.set("SqlInjectionMatchTuples", js.Array(value :_*))
+    @scala.inline
+    def setSqlInjectionMatchTuples(value: SqlInjectionMatchTuples): Self = this.set("SqlInjectionMatchTuples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

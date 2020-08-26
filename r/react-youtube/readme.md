@@ -12,7 +12,7 @@ react.js powered YouTube player component
 | Keywords           | react, youtube, player, react-component |
 | # releases         | 5 |
 | # dependents       | 56 |
-| # downloads        | 2768304 |
+| # downloads        | 2846301 |
 | # stars            | 7 |
 
 ## Links

@@ -1,6 +1,5 @@
 package typings.openui5.global.sap.m
 
-import typings.openui5.sap.ui.base.Metadata
 import typings.openui5.sap.ui.core.UIComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,31 +18,6 @@ object routing extends js.Object {
       * true. If set to false it will just navigate without closing dialogs.
       */
     def this(router: typings.openui5.sap.m.routing.Router, closeDialogs: Boolean) = this()
-    /**
-      * Removes the routeMatchedHandler from the Router
-      * @returns for chaining
-      */
-    /* CompleteClass */
-    override def destroy(): typings.openui5.sap.m.routing.RouteMatchedHandler = js.native
-    /**
-      * Gets if a navigation should close dialogs
-      * @returns a flag indication if dialogs will be closed
-      */
-    /* CompleteClass */
-    override def getCloseDialogs(): Boolean = js.native
-    /**
-      * Returns a metadata object for class sap.m.routing.RouteMatchedHandler.
-      * @returns Metadata object describing this class
-      */
-    /* CompleteClass */
-    override def getMetadata(): Metadata = js.native
-    /**
-      * Sets if a navigation should close dialogs
-      * @param bCloseDialogs close dialogs if true
-      * @returns for chaining
-      */
-    /* CompleteClass */
-    override def setCloseDialogs(bCloseDialogs: Boolean): typings.openui5.sap.m.routing.RouteMatchedHandler = js.native
   }
   
   @js.native
@@ -94,9 +68,32 @@ object routing extends js.Object {
     def this(oRoutes: js.Array[_]) = this()
     def this(oRoutes: js.Any, oConfig: js.Any) = this()
     def this(oRoutes: js.Array[_], oConfig: js.Any) = this()
+    def this(oRoutes: js.Any, oConfig: js.UndefOr[scala.Nothing], oOwner: UIComponent) = this()
     def this(oRoutes: js.Any, oConfig: js.Any, oOwner: UIComponent) = this()
+    def this(oRoutes: js.Array[_], oConfig: js.UndefOr[scala.Nothing], oOwner: UIComponent) = this()
     def this(oRoutes: js.Array[_], oConfig: js.Any, oOwner: UIComponent) = this()
+    def this(
+      oRoutes: js.Any,
+      oConfig: js.UndefOr[scala.Nothing],
+      oOwner: js.UndefOr[scala.Nothing],
+      oTargetsConfig: js.Any
+    ) = this()
+    def this(oRoutes: js.Any, oConfig: js.UndefOr[scala.Nothing], oOwner: UIComponent, oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Any, oConfig: js.Any, oOwner: js.UndefOr[scala.Nothing], oTargetsConfig: js.Any) = this()
     def this(oRoutes: js.Any, oConfig: js.Any, oOwner: UIComponent, oTargetsConfig: js.Any) = this()
+    def this(
+      oRoutes: js.Array[_],
+      oConfig: js.UndefOr[scala.Nothing],
+      oOwner: js.UndefOr[scala.Nothing],
+      oTargetsConfig: js.Any
+    ) = this()
+    def this(
+      oRoutes: js.Array[_],
+      oConfig: js.UndefOr[scala.Nothing],
+      oOwner: UIComponent,
+      oTargetsConfig: js.Any
+    ) = this()
+    def this(oRoutes: js.Array[_], oConfig: js.Any, oOwner: js.UndefOr[scala.Nothing], oTargetsConfig: js.Any) = this()
     def this(oRoutes: js.Array[_], oConfig: js.Any, oOwner: UIComponent, oTargetsConfig: js.Any) = this()
   }
   
@@ -113,25 +110,6 @@ object routing extends js.Object {
       * true. If set to false it will just navigate without closing dialogs.
       */
     def this(closeDialogs: Boolean) = this()
-    /**
-      * Gets if a navigation should close dialogs
-      * @returns a flag indication if dialogs will be closed
-      */
-    /* CompleteClass */
-    override def getCloseDialogs(): Boolean = js.native
-    /**
-      * Returns a metadata object for class sap.m.routing.TargetHandler.
-      * @returns Metadata object describing this class
-      */
-    /* CompleteClass */
-    override def getMetadata(): Metadata = js.native
-    /**
-      * Sets if a navigation should close dialogs
-      * @param bCloseDialogs close dialogs if true
-      * @returns for chaining
-      */
-    /* CompleteClass */
-    override def setCloseDialogs(bCloseDialogs: Boolean): typings.openui5.sap.m.routing.TargetHandler = js.native
   }
   
   @js.native

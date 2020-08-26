@@ -5,104 +5,149 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait INavStyleProps extends js.Object {
   /**
     * Accept custom classNames
     */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /**
     * Inherited from INavProps
     * A collection of link groups to display in the navigation bar
     */
-  var groups: js.Array[INavLinkGroup] | Null
+  var groups: js.Array[INavLinkGroup] | Null = js.native
   /**
     * is button
     */
-  var isButtonEntry: js.UndefOr[Boolean] = js.undefined
+  var isButtonEntry: js.UndefOr[Boolean] = js.native
   /**
     * is element disabled
     */
-  var isDisabled: js.UndefOr[Boolean] = js.undefined
+  var isDisabled: js.UndefOr[Boolean] = js.native
   /**
     * is element expanded boolean
     */
-  var isExpanded: js.UndefOr[Boolean] = js.undefined
+  var isExpanded: js.UndefOr[Boolean] = js.native
   /**
     * is element a group boolean
     */
-  var isGroup: js.UndefOr[Boolean] = js.undefined
+  var isGroup: js.UndefOr[Boolean] = js.native
   /**
     * is element a link boolean
     */
-  var isLink: js.UndefOr[Boolean] = js.undefined
+  var isLink: js.UndefOr[Boolean] = js.native
   /**
     * is element on top boolean
     */
-  var isOnTop: js.UndefOr[Boolean] = js.undefined
+  var isOnTop: js.UndefOr[Boolean] = js.native
   /**
     * is element selected boolean
     */
-  var isSelected: js.UndefOr[Boolean] = js.undefined
+  var isSelected: js.UndefOr[Boolean] = js.native
   /**
     * left padding value
     */
-  var leftPadding: js.UndefOr[Double] = js.undefined
+  var leftPadding: js.UndefOr[Double] = js.native
   /**
     * left padding when expanded value
     */
-  var leftPaddingExpanded: js.UndefOr[Double] = js.undefined
+  var leftPaddingExpanded: js.UndefOr[Double] = js.native
   /**
     * Nav height value
     */
-  var navHeight: js.UndefOr[Double] = js.undefined
+  var navHeight: js.UndefOr[Double] = js.native
   /**
     * position value
     */
-  var position: js.UndefOr[Double] = js.undefined
+  var position: js.UndefOr[Double] = js.native
   /**
     * right padding value
     */
-  var rightPadding: js.UndefOr[Double] = js.undefined
+  var rightPadding: js.UndefOr[Double] = js.native
   /**
     * Accept theme prop.
     */
-  var theme: ITheme
+  var theme: ITheme = js.native
 }
 
 object INavStyleProps {
   @scala.inline
-  def apply(
-    theme: ITheme,
-    className: String = null,
-    groups: js.Array[INavLinkGroup] = null,
-    isButtonEntry: js.UndefOr[Boolean] = js.undefined,
-    isDisabled: js.UndefOr[Boolean] = js.undefined,
-    isExpanded: js.UndefOr[Boolean] = js.undefined,
-    isGroup: js.UndefOr[Boolean] = js.undefined,
-    isLink: js.UndefOr[Boolean] = js.undefined,
-    isOnTop: js.UndefOr[Boolean] = js.undefined,
-    isSelected: js.UndefOr[Boolean] = js.undefined,
-    leftPadding: js.UndefOr[Double] = js.undefined,
-    leftPaddingExpanded: js.UndefOr[Double] = js.undefined,
-    navHeight: js.UndefOr[Double] = js.undefined,
-    position: js.UndefOr[Double] = js.undefined,
-    rightPadding: js.UndefOr[Double] = js.undefined
-  ): INavStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(isButtonEntry)) __obj.updateDynamic("isButtonEntry")(isButtonEntry.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isGroup)) __obj.updateDynamic("isGroup")(isGroup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLink)) __obj.updateDynamic("isLink")(isLink.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOnTop)) __obj.updateDynamic("isOnTop")(isOnTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftPadding)) __obj.updateDynamic("leftPadding")(leftPadding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftPaddingExpanded)) __obj.updateDynamic("leftPaddingExpanded")(leftPaddingExpanded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(navHeight)) __obj.updateDynamic("navHeight")(navHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightPadding)) __obj.updateDynamic("rightPadding")(rightPadding.get.asInstanceOf[js.Any])
+  def apply(theme: ITheme): INavStyleProps = {
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavStyleProps]
   }
+  @scala.inline
+  implicit class INavStylePropsOps[Self <: INavStyleProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: INavLinkGroup*): Self = this.set("groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: js.Array[INavLinkGroup]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupsNull: Self = this.set("groups", null)
+    @scala.inline
+    def setIsButtonEntry(value: Boolean): Self = this.set("isButtonEntry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsButtonEntry: Self = this.set("isButtonEntry", js.undefined)
+    @scala.inline
+    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDisabled: Self = this.set("isDisabled", js.undefined)
+    @scala.inline
+    def setIsExpanded(value: Boolean): Self = this.set("isExpanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsExpanded: Self = this.set("isExpanded", js.undefined)
+    @scala.inline
+    def setIsGroup(value: Boolean): Self = this.set("isGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsGroup: Self = this.set("isGroup", js.undefined)
+    @scala.inline
+    def setIsLink(value: Boolean): Self = this.set("isLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLink: Self = this.set("isLink", js.undefined)
+    @scala.inline
+    def setIsOnTop(value: Boolean): Self = this.set("isOnTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOnTop: Self = this.set("isOnTop", js.undefined)
+    @scala.inline
+    def setIsSelected(value: Boolean): Self = this.set("isSelected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSelected: Self = this.set("isSelected", js.undefined)
+    @scala.inline
+    def setLeftPadding(value: Double): Self = this.set("leftPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftPadding: Self = this.set("leftPadding", js.undefined)
+    @scala.inline
+    def setLeftPaddingExpanded(value: Double): Self = this.set("leftPaddingExpanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftPaddingExpanded: Self = this.set("leftPaddingExpanded", js.undefined)
+    @scala.inline
+    def setNavHeight(value: Double): Self = this.set("navHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavHeight: Self = this.set("navHeight", js.undefined)
+    @scala.inline
+    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRightPadding(value: Double): Self = this.set("rightPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightPadding: Self = this.set("rightPadding", js.undefined)
+  }
+  
 }
 

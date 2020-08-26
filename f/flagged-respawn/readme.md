@@ -10,9 +10,9 @@ A tool for respawning node binaries when special flags are present.
 | ------------------ | :-------------: |
 | Full name          | flagged-respawn |
 | Keywords           | respawn, flags |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 13 |
-| # downloads        | 83869848 |
+| # downloads        | 83832355 |
 | # stars            | 0 |
 
 ## Links

@@ -25,6 +25,10 @@ class VpnConnection protected () extends CustomResource {
   def this(name: String, args: VpnConnectionArgs) = this()
   def this(name: String, args: VpnConnectionArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN) of the VPN Connection.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The configuration information for the VPN connection's customer gateway (in the native XML format).
     */
   val customerGatewayConfiguration: Output_[String] = js.native
@@ -40,7 +44,7 @@ class VpnConnection protected () extends CustomResource {
   /**
     * Tags to apply to the connection.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * When associated with an EC2 Transit Gateway (`transitGatewayId` argument), the attachment ID.
     */
@@ -127,8 +131,10 @@ object VpnConnection extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VpnConnection = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpnConnection = js.native
   def get(name: String, id: Input[ID], state: VpnConnectionState): VpnConnection = js.native
   def get(name: String, id: Input[ID], state: VpnConnectionState, opts: CustomResourceOptions): VpnConnection = js.native
   /**

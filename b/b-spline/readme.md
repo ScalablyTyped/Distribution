@@ -12,7 +12,7 @@ B-spline interpolation
 | Keywords           | b-spline, interpolation, non-uniform, rational, nurbs, curve |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 10763 |
+| # downloads        | 11580 |
 | # stars            | 0 |
 
 ## Links

@@ -29,18 +29,12 @@ object originalColumnGroupMod extends js.Object {
     /* private */ def addLeafColumns(leafColumns: js.Any): js.Any = js.native
     def getChildren(): js.Array[OriginalColumnGroupChild] = js.native
     def getColGroupDef(): ColGroupDef = js.native
-    /* CompleteClass */
-    override def getColumnGroupShow(): String = js.native
     def getGroupId(): String = js.native
-    /* CompleteClass */
-    override def getId(): String = js.native
     def getLeafColumns(): js.Array[Column] = js.native
     def getLevel(): Double = js.native
     def isExpandable(): Boolean = js.native
     def isExpanded(): Boolean = js.native
     def isPadding(): Boolean = js.native
-    /* CompleteClass */
-    override def isVisible(): Boolean = js.native
     /* private */ def onColumnVisibilityChanged(): js.Any = js.native
     def setChildren(children: js.Array[OriginalColumnGroupChild]): Unit = js.native
     def setExpandable(): Unit = js.native

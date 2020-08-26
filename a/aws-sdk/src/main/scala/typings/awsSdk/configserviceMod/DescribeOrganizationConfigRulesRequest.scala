@@ -22,16 +22,36 @@ trait DescribeOrganizationConfigRulesRequest extends js.Object {
 
 object DescribeOrganizationConfigRulesRequest {
   @scala.inline
-  def apply(
-    Limit: js.UndefOr[CosmosPageLimit] = js.undefined,
-    NextToken: String = null,
-    OrganizationConfigRuleNames: OrganizationConfigRuleNames = null
-  ): DescribeOrganizationConfigRulesRequest = {
+  def apply(): DescribeOrganizationConfigRulesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (OrganizationConfigRuleNames != null) __obj.updateDynamic("OrganizationConfigRuleNames")(OrganizationConfigRuleNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrganizationConfigRulesRequest]
   }
+  @scala.inline
+  implicit class DescribeOrganizationConfigRulesRequestOps[Self <: DescribeOrganizationConfigRulesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimit(value: CosmosPageLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setOrganizationConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = this.set("OrganizationConfigRuleNames", js.Array(value :_*))
+    @scala.inline
+    def setOrganizationConfigRuleNames(value: OrganizationConfigRuleNames): Self = this.set("OrganizationConfigRuleNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationConfigRuleNames: Self = this.set("OrganizationConfigRuleNames", js.undefined)
+  }
+  
 }
 

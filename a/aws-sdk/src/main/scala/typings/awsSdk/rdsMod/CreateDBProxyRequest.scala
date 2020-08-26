@@ -55,20 +55,61 @@ object CreateDBProxyRequest {
     DBProxyName: String,
     EngineFamily: EngineFamily,
     RoleArn: String,
-    VpcSubnetIds: StringList,
-    DebugLogging: js.UndefOr[Boolean] = js.undefined,
-    IdleClientTimeout: js.UndefOr[IntegerOptional] = js.undefined,
-    RequireTLS: js.UndefOr[Boolean] = js.undefined,
-    Tags: TagList = null,
-    VpcSecurityGroupIds: StringList = null
+    VpcSubnetIds: StringList
   ): CreateDBProxyRequest = {
     val __obj = js.Dynamic.literal(Auth = Auth.asInstanceOf[js.Any], DBProxyName = DBProxyName.asInstanceOf[js.Any], EngineFamily = EngineFamily.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], VpcSubnetIds = VpcSubnetIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DebugLogging)) __obj.updateDynamic("DebugLogging")(DebugLogging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IdleClientTimeout)) __obj.updateDynamic("IdleClientTimeout")(IdleClientTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireTLS)) __obj.updateDynamic("RequireTLS")(RequireTLS.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDBProxyRequest]
   }
+  @scala.inline
+  implicit class CreateDBProxyRequestOps[Self <: CreateDBProxyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthVarargs(value: UserAuthConfig*): Self = this.set("Auth", js.Array(value :_*))
+    @scala.inline
+    def setAuth(value: UserAuthConfigList): Self = this.set("Auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEngineFamily(value: EngineFamily): Self = this.set("EngineFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcSubnetIdsVarargs(value: String*): Self = this.set("VpcSubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSubnetIds(value: StringList): Self = this.set("VpcSubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDebugLogging(value: Boolean): Self = this.set("DebugLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugLogging: Self = this.set("DebugLogging", js.undefined)
+    @scala.inline
+    def setIdleClientTimeout(value: IntegerOptional): Self = this.set("IdleClientTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleClientTimeout: Self = this.set("IdleClientTimeout", js.undefined)
+    @scala.inline
+    def setRequireTLS(value: Boolean): Self = this.set("RequireTLS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireTLS: Self = this.set("RequireTLS", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupIdsVarargs(value: String*): Self = this.set("VpcSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroupIds(value: StringList): Self = this.set("VpcSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroupIds: Self = this.set("VpcSecurityGroupIds", js.undefined)
+  }
+  
 }
 

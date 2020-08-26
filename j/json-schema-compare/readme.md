@@ -12,7 +12,7 @@ Compare json schemas smarter.
 | Keywords           | json, schema, jsonschema, json-schema, comparison |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 208103 |
+| # downloads        | 217409 |
 | # stars            | 0 |
 
 ## Links

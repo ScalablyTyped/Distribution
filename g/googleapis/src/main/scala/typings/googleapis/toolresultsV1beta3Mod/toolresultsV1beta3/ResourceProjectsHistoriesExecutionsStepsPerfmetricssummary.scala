@@ -34,6 +34,7 @@ class ResourceProjectsHistoriesExecutionsStepsPerfmetricssummary protected () ex
     */
   def create(): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
   def create(callback: BodyResponseCallback[SchemaPerfMetricsSummary]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
   def create(params: ParamsResourceProjectsHistoriesExecutionsStepsPerfmetricssummaryCreate): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
   def create(
     params: ParamsResourceProjectsHistoriesExecutionsStepsPerfmetricssummaryCreate,

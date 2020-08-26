@@ -1,13 +1,11 @@
 package typings.reactWindow.mod
 
-import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
-import typings.react.mod.Key
-import typings.react.mod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VariableSizeListProps extends ListProps {
   /**
     * Estimated size of a item in the direction being windowed. For vertical lists, this is the row height. For horizontal lists, this is the column width.
@@ -15,11 +13,11 @@ trait VariableSizeListProps extends ListProps {
     * This value is used to calculated the estimated total size of a list before its items have all been measured. The total size impacts user scrolling behavior.
     * It is updated whenever new items are measured.
     */
-  var estimatedItemSize: js.UndefOr[Double] = js.undefined
+  var estimatedItemSize: js.UndefOr[Double] = js.native
   /**
     * Returns the size of a item in the direction being windowed. For vertical lists, this is the row height. For horizontal lists, this is the column width.
     */
-  def itemSize(index: Double): Double
+  def itemSize(index: Double): Double = js.native
 }
 
 object VariableSizeListProps {
@@ -29,46 +27,29 @@ object VariableSizeListProps {
     height: Double | String,
     itemCount: Double,
     itemSize: Double => Double,
-    width: Double | String,
-    className: String = null,
-    direction: CSSDirection | Direction = null,
-    estimatedItemSize: js.UndefOr[Double] = js.undefined,
-    initialScrollOffset: js.UndefOr[Double] = js.undefined,
-    innerElementType: ReactElementType = null,
-    innerRef: js.UndefOr[Null | Ref[_]] = js.undefined,
-    innerTagName: String = null,
-    itemData: js.Any = null,
-    itemKey: (/* index */ Double, /* data */ js.Any) => Key = null,
-    layout: Layout = null,
-    onItemsRendered: /* props */ ListOnItemsRenderedProps => _ = null,
-    onScroll: /* props */ ListOnScrollProps => _ = null,
-    outerElementType: ReactElementType = null,
-    outerRef: js.UndefOr[Null | Ref[_]] = js.undefined,
-    outerTagName: String = null,
-    overscanCount: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null,
-    useIsScrolling: js.UndefOr[Boolean] = js.undefined
+    width: Double | String
   ): VariableSizeListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount.asInstanceOf[js.Any], itemSize = js.Any.fromFunction1(itemSize), width = width.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(estimatedItemSize)) __obj.updateDynamic("estimatedItemSize")(estimatedItemSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialScrollOffset)) __obj.updateDynamic("initialScrollOffset")(initialScrollOffset.get.asInstanceOf[js.Any])
-    if (innerElementType != null) __obj.updateDynamic("innerElementType")(innerElementType.asInstanceOf[js.Any])
-    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName.asInstanceOf[js.Any])
-    if (itemData != null) __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    if (itemKey != null) __obj.updateDynamic("itemKey")(js.Any.fromFunction2(itemKey))
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(js.Any.fromFunction1(onItemsRendered))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
-    if (!js.isUndefined(outerRef)) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
-    if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName.asInstanceOf[js.Any])
-    if (!js.isUndefined(overscanCount)) __obj.updateDynamic("overscanCount")(overscanCount.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIsScrolling)) __obj.updateDynamic("useIsScrolling")(useIsScrolling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableSizeListProps]
   }
+  @scala.inline
+  implicit class VariableSizeListPropsOps[Self <: VariableSizeListProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemSize(value: Double => Double): Self = this.set("itemSize", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEstimatedItemSize(value: Double): Self = this.set("estimatedItemSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedItemSize: Self = this.set("estimatedItemSize", js.undefined)
+  }
+  
 }
 

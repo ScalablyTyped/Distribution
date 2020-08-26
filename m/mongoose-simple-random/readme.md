@@ -12,7 +12,7 @@ Simple and easy-to-use NodeJS Mongoose Schema plugin to pull random documents
 | Keywords           | mongoose, random |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 25809 |
+| # downloads        | 25712 |
 | # stars            | 7 |
 
 ## Links

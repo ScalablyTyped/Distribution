@@ -12,7 +12,7 @@ Table + AngularJS ================= [![Build Status](https://travis-ci.org/esvit
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 602365 |
+| # downloads        | 601103 |
 | # stars            | 0 |
 
 ## Links

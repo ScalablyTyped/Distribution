@@ -32,6 +32,7 @@ class ResourceV1beta1 protected () extends js.Object {
     */
   def getEidparams(): GaxiosPromise[SchemaEphemeralIdRegistrationParams] = js.native
   def getEidparams(callback: BodyResponseCallback[SchemaEphemeralIdRegistrationParams]): Unit = js.native
+  def getEidparams(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEphemeralIdRegistrationParams] = js.native
   def getEidparams(params: ParamsResourceV1beta1Geteidparams): GaxiosPromise[SchemaEphemeralIdRegistrationParams] = js.native
   def getEidparams(
     params: ParamsResourceV1beta1Geteidparams,

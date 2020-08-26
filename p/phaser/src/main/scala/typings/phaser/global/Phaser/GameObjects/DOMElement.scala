@@ -1,7 +1,6 @@
 package typings.phaser.global.Phaser.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,6 +53,9 @@ import scala.scalajs.js.annotation._
   * 
   * Also, all DOM Elements are inserted into the same DOM Container, regardless of which Scene they are created in.
   * 
+  * Note that you should only have DOM Elements in a Scene with a _single_ Camera. If you require multiple cameras,
+  * use parallel scenes to achieve this.
+  * 
   * DOM Elements are a powerful way to align native HTML with your Phaser Game Objects. For example, you can insert
   * a login form for a multiplayer game directly into your title screen. Or a text input box for a highscore table.
   * Or a banner ad from a 3rd party service. Or perhaps you'd like to use them for high resolution text display and
@@ -73,60 +75,13 @@ class DOMElement protected ()
     * @param style If a string, will be set directly as the elements `style` property value. If a plain object, will be iterated and the values transferred. In both cases the values replacing whatever CSS styles may have been previously set.
     * @param innerText If given, will be set directly as the elements `innerText` property value, replacing whatever was there before.
     */
-  def this(scene: Scene) = this()
-  def this(scene: Scene, x: Double) = this()
-  def this(scene: Scene, x: Double, y: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: js.Any) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: js.Any) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: String, innerText: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: js.Any, innerText: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: String, innerText: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: js.Any, innerText: String) = this()
-  /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    */
-  /* CompleteClass */
-  override var depth: Double = js.native
-  /**
-    * The visible state of the Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    */
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-  /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
-  /**
-    * Sets the visibility of this Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    * @param value The visible state of the Game Object.
-    */
-  /* CompleteClass */
-  override def setVisible(value: Boolean): this.type = js.native
+  def this(
+    scene: Scene,
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    element: js.UndefOr[Element | String],
+    style: js.UndefOr[String | js.Any],
+    innerText: js.UndefOr[String]
+  ) = this()
 }
 

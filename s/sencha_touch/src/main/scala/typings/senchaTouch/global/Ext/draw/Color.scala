@@ -39,8 +39,24 @@ object Color extends js.Object {
     * @returns Ext.draw.Color
     */
   def create(): IColor = js.native
+  def create(
+    red: js.UndefOr[scala.Nothing],
+    green: js.UndefOr[scala.Nothing],
+    blue: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): IColor = js.native
+  def create(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double): IColor = js.native
+  def create(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): IColor = js.native
+  def create(red: js.UndefOr[scala.Nothing], green: Double): IColor = js.native
+  def create(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
+  def create(red: js.UndefOr[scala.Nothing], green: Double, blue: Double): IColor = js.native
+  def create(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double): IColor = js.native
   def create(red: js.Any): IColor = js.native
+  def create(red: js.Any, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
+  def create(red: js.Any, green: js.UndefOr[scala.Nothing], blue: Double): IColor = js.native
+  def create(red: js.Any, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): IColor = js.native
   def create(red: js.Any, green: Double): IColor = js.native
+  def create(red: js.Any, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
   def create(red: js.Any, green: Double, blue: Double): IColor = js.native
   def create(red: js.Any, green: Double, blue: Double, alpha: Double): IColor = js.native
   /** [Method] Create aliases for existing prototype methods
@@ -48,6 +64,7 @@ object Color extends js.Object {
     * @param origin String/Object The original method name
     */
   def createAlias(): Unit = js.native
+  def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
   def createAlias(alias: js.Any): Unit = js.native
   def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
   /** [Method] Returns a flyweight instance of Ext draw Color
@@ -58,8 +75,24 @@ object Color extends js.Object {
     * @returns Ext.draw.Color
     */
   def fly(): IColor = js.native
+  def fly(
+    red: js.UndefOr[scala.Nothing],
+    green: js.UndefOr[scala.Nothing],
+    blue: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): IColor = js.native
+  def fly(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double): IColor = js.native
+  def fly(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): IColor = js.native
+  def fly(red: js.UndefOr[scala.Nothing], green: Double): IColor = js.native
+  def fly(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
+  def fly(red: js.UndefOr[scala.Nothing], green: Double, blue: Double): IColor = js.native
+  def fly(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double): IColor = js.native
   def fly(red: js.Any): IColor = js.native
+  def fly(red: js.Any, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
+  def fly(red: js.Any, green: js.UndefOr[scala.Nothing], blue: Double): IColor = js.native
+  def fly(red: js.Any, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): IColor = js.native
   def fly(red: js.Any, green: Double): IColor = js.native
+  def fly(red: js.Any, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): IColor = js.native
   def fly(red: js.Any, green: Double, blue: Double): IColor = js.native
   def fly(red: js.Any, green: Double, blue: Double, alpha: Double): IColor = js.native
   /** [Method] Create a new color based on the specified HSL values
@@ -69,7 +102,11 @@ object Color extends js.Object {
     * @returns Ext.draw.Color
     */
   def fromHSL(): IColor = js.native
+  def fromHSL(h: js.UndefOr[scala.Nothing], s: js.UndefOr[scala.Nothing], l: Double): IColor = js.native
+  def fromHSL(h: js.UndefOr[scala.Nothing], s: Double): IColor = js.native
+  def fromHSL(h: js.UndefOr[scala.Nothing], s: Double, l: Double): IColor = js.native
   def fromHSL(h: Double): IColor = js.native
+  def fromHSL(h: Double, s: js.UndefOr[scala.Nothing], l: Double): IColor = js.native
   def fromHSL(h: Double, s: Double): IColor = js.native
   def fromHSL(h: Double, s: Double, l: Double): IColor = js.native
   /** [Method] Parse the string and create a new color

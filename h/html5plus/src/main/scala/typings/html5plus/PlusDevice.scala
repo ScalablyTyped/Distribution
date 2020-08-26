@@ -67,6 +67,7 @@ trait PlusDevice extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   def dial(): Unit = js.native
+  def dial(number: js.UndefOr[scala.Nothing], confirm: Boolean): Unit = js.native
   def dial(number: String): Unit = js.native
   def dial(number: String, confirm: Boolean): Unit = js.native
   /**

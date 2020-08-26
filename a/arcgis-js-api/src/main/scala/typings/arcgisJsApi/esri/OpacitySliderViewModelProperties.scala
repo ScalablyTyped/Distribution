@@ -1,51 +1,43 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.average
-import typings.arcgisJsApi.arcgisJsApiStrings.max
-import typings.arcgisJsApi.arcgisJsApiStrings.min
-import typings.arcgisJsApi.arcgisJsApiStrings.tick
-import typings.arcgisJsApi.arcgisJsApiStrings.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OpacitySliderViewModelProperties extends SmartMappingSliderViewModelProperties {
   /**
     * The opacity stops from the [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) to link to the slider. The opacity values in these stops will be used to render the gradient on the slider. They should match the opacity rendered in the associated layer's opacity visual variable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html#stops)
     */
-  var stops: js.UndefOr[js.Array[OpacityStopProperties]] = js.undefined
+  var stops: js.UndefOr[js.Array[OpacityStopProperties]] = js.native
 }
 
 object OpacitySliderViewModelProperties {
   @scala.inline
-  def apply(
-    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
-    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => Double = null,
-    labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    precision: js.UndefOr[Double] = js.undefined,
-    stops: js.Array[OpacityStopProperties] = null,
-    thumbsConstrained: js.UndefOr[Boolean] = js.undefined,
-    values: js.Array[Double] = null,
-    zoomOptions: SmartMappingSliderViewModelZoomOptions = null,
-    zoomingEnabled: js.UndefOr[Boolean] = js.undefined
-  ): OpacitySliderViewModelProperties = {
+  def apply(): OpacitySliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (inputFormatFunction != null) __obj.updateDynamic("inputFormatFunction")(js.Any.fromFunction3(inputFormatFunction))
-    if (inputParseFunction != null) __obj.updateDynamic("inputParseFunction")(js.Any.fromFunction3(inputParseFunction))
-    if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained.get.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomingEnabled)) __obj.updateDynamic("zoomingEnabled")(zoomingEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpacitySliderViewModelProperties]
   }
+  @scala.inline
+  implicit class OpacitySliderViewModelPropertiesOps[Self <: OpacitySliderViewModelProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStopsVarargs(value: OpacityStopProperties*): Self = this.set("stops", js.Array(value :_*))
+    @scala.inline
+    def setStops(value: js.Array[OpacityStopProperties]): Self = this.set("stops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStops: Self = this.set("stops", js.undefined)
+  }
+  
 }
 

@@ -14,14 +14,14 @@ trait SjclPointJacobianStatic
      with Instantiable2[/* curve */ SjclEllipticalCurve, /* x */ BigNumber, SjclPointJacobian]
      with Instantiable3[
       /* curve */ SjclEllipticalCurve, 
-      /* x */ BigNumber, 
+      js.UndefOr[/* x */ BigNumber], 
       /* y */ BigNumber, 
       SjclPointJacobian
     ]
      with Instantiable4[
       /* curve */ SjclEllipticalCurve, 
-      /* x */ BigNumber, 
-      /* y */ BigNumber, 
+      js.UndefOr[/* x */ BigNumber], 
+      js.UndefOr[/* y */ BigNumber], 
       /* z */ BigNumber, 
       SjclPointJacobian
     ] {

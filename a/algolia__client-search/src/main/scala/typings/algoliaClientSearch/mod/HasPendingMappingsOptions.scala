@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HasPendingMappingsOptions extends js.Object {
   /**
     * If the clusters pending mapping state should be on the response.
@@ -12,25 +13,41 @@ trait HasPendingMappingsOptions extends js.Object {
     *
     * @internal
     */
-  val getClusters: js.UndefOr[Boolean] = js.undefined
+  val getClusters: js.UndefOr[Boolean] = js.native
   /**
     * If the clusters pending mapping state should be on the response.
     *
     * @defaultValue false
     */
-  val retrieveMappings: js.UndefOr[Boolean] = js.undefined
+  val retrieveMappings: js.UndefOr[Boolean] = js.native
 }
 
 object HasPendingMappingsOptions {
   @scala.inline
-  def apply(
-    getClusters: js.UndefOr[Boolean] = js.undefined,
-    retrieveMappings: js.UndefOr[Boolean] = js.undefined
-  ): HasPendingMappingsOptions = {
+  def apply(): HasPendingMappingsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(getClusters)) __obj.updateDynamic("getClusters")(getClusters.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(retrieveMappings)) __obj.updateDynamic("retrieveMappings")(retrieveMappings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasPendingMappingsOptions]
   }
+  @scala.inline
+  implicit class HasPendingMappingsOptionsOps[Self <: HasPendingMappingsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetClusters(value: Boolean): Self = this.set("getClusters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetClusters: Self = this.set("getClusters", js.undefined)
+    @scala.inline
+    def setRetrieveMappings(value: Boolean): Self = this.set("retrieveMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetrieveMappings: Self = this.set("retrieveMappings", js.undefined)
+  }
+  
 }
 

@@ -62,36 +62,78 @@ trait TextTranslationJobProperties extends js.Object {
 
 object TextTranslationJobProperties {
   @scala.inline
-  def apply(
-    DataAccessRoleArn: IamRoleArn = null,
-    EndTime: Timestamp = null,
-    InputDataConfig: InputDataConfig = null,
-    JobDetails: JobDetails = null,
-    JobId: JobId = null,
-    JobName: JobName = null,
-    JobStatus: JobStatus = null,
-    Message: UnboundedLengthString = null,
-    OutputDataConfig: OutputDataConfig = null,
-    SourceLanguageCode: LanguageCodeString = null,
-    SubmittedTime: Timestamp = null,
-    TargetLanguageCodes: TargetLanguageCodeStringList = null,
-    TerminologyNames: ResourceNameList = null
-  ): TextTranslationJobProperties = {
+  def apply(): TextTranslationJobProperties = {
     val __obj = js.Dynamic.literal()
-    if (DataAccessRoleArn != null) __obj.updateDynamic("DataAccessRoleArn")(DataAccessRoleArn.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])
-    if (JobDetails != null) __obj.updateDynamic("JobDetails")(JobDetails.asInstanceOf[js.Any])
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
-    if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
-    if (JobStatus != null) __obj.updateDynamic("JobStatus")(JobStatus.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (OutputDataConfig != null) __obj.updateDynamic("OutputDataConfig")(OutputDataConfig.asInstanceOf[js.Any])
-    if (SourceLanguageCode != null) __obj.updateDynamic("SourceLanguageCode")(SourceLanguageCode.asInstanceOf[js.Any])
-    if (SubmittedTime != null) __obj.updateDynamic("SubmittedTime")(SubmittedTime.asInstanceOf[js.Any])
-    if (TargetLanguageCodes != null) __obj.updateDynamic("TargetLanguageCodes")(TargetLanguageCodes.asInstanceOf[js.Any])
-    if (TerminologyNames != null) __obj.updateDynamic("TerminologyNames")(TerminologyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTranslationJobProperties]
   }
+  @scala.inline
+  implicit class TextTranslationJobPropertiesOps[Self <: TextTranslationJobProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataAccessRoleArn(value: IamRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataAccessRoleArn: Self = this.set("DataAccessRoleArn", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDataConfig: Self = this.set("InputDataConfig", js.undefined)
+    @scala.inline
+    def setJobDetails(value: JobDetails): Self = this.set("JobDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobDetails: Self = this.set("JobDetails", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("JobId", js.undefined)
+    @scala.inline
+    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("JobName", js.undefined)
+    @scala.inline
+    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    @scala.inline
+    def setMessage(value: UnboundedLengthString): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDataConfig: Self = this.set("OutputDataConfig", js.undefined)
+    @scala.inline
+    def setSourceLanguageCode(value: LanguageCodeString): Self = this.set("SourceLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLanguageCode: Self = this.set("SourceLanguageCode", js.undefined)
+    @scala.inline
+    def setSubmittedTime(value: Timestamp): Self = this.set("SubmittedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmittedTime: Self = this.set("SubmittedTime", js.undefined)
+    @scala.inline
+    def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = this.set("TargetLanguageCodes", js.Array(value :_*))
+    @scala.inline
+    def setTargetLanguageCodes(value: TargetLanguageCodeStringList): Self = this.set("TargetLanguageCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetLanguageCodes: Self = this.set("TargetLanguageCodes", js.undefined)
+    @scala.inline
+    def setTerminologyNamesVarargs(value: ResourceName*): Self = this.set("TerminologyNames", js.Array(value :_*))
+    @scala.inline
+    def setTerminologyNames(value: ResourceNameList): Self = this.set("TerminologyNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminologyNames: Self = this.set("TerminologyNames", js.undefined)
+  }
+  
 }
 

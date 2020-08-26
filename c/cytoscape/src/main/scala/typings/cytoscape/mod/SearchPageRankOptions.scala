@@ -11,27 +11,46 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#eles.pageRank
   */
+@js.native
 trait SearchPageRankOptions extends js.Object {
   /** Numeric parameter for the algorithm. */
-  var dampingFactor: js.UndefOr[Double] = js.undefined
+  var dampingFactor: js.UndefOr[Double] = js.native
   /** Maximum number of iterations to perform. */
-  var iterations: js.UndefOr[Double] = js.undefined
+  var iterations: js.UndefOr[Double] = js.native
   /** Numeric parameter that represents the required precision. */
-  var precision: js.UndefOr[Double] = js.undefined
+  var precision: js.UndefOr[Double] = js.native
 }
 
 object SearchPageRankOptions {
   @scala.inline
-  def apply(
-    dampingFactor: js.UndefOr[Double] = js.undefined,
-    iterations: js.UndefOr[Double] = js.undefined,
-    precision: js.UndefOr[Double] = js.undefined
-  ): SearchPageRankOptions = {
+  def apply(): SearchPageRankOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dampingFactor)) __obj.updateDynamic("dampingFactor")(dampingFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iterations)) __obj.updateDynamic("iterations")(iterations.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPageRankOptions]
   }
+  @scala.inline
+  implicit class SearchPageRankOptionsOps[Self <: SearchPageRankOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDampingFactor(value: Double): Self = this.set("dampingFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDampingFactor: Self = this.set("dampingFactor", js.undefined)
+    @scala.inline
+    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIterations: Self = this.set("iterations", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+  }
+  
 }
 

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the YearlyRecurrenceControl.
   */
+@js.native
 trait ASPxClientYearlyRecurrenceControl extends ASPxClientRecurrenceControlBase
 
 object ASPxClientYearlyRecurrenceControl {

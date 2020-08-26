@@ -34,12 +34,35 @@ object Evaluation {
     ComplianceResourceId: BaseResourceId,
     ComplianceResourceType: StringWithCharLimit256,
     ComplianceType: ComplianceType,
-    OrderingTimestamp: OrderingTimestamp,
-    Annotation: StringWithCharLimit256 = null
+    OrderingTimestamp: OrderingTimestamp
   ): Evaluation = {
     val __obj = js.Dynamic.literal(ComplianceResourceId = ComplianceResourceId.asInstanceOf[js.Any], ComplianceResourceType = ComplianceResourceType.asInstanceOf[js.Any], ComplianceType = ComplianceType.asInstanceOf[js.Any], OrderingTimestamp = OrderingTimestamp.asInstanceOf[js.Any])
-    if (Annotation != null) __obj.updateDynamic("Annotation")(Annotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Evaluation]
   }
+  @scala.inline
+  implicit class EvaluationOps[Self <: Evaluation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplianceResourceId(value: BaseResourceId): Self = this.set("ComplianceResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComplianceResourceType(value: StringWithCharLimit256): Self = this.set("ComplianceResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComplianceType(value: ComplianceType): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrderingTimestamp(value: OrderingTimestamp): Self = this.set("OrderingTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnnotation(value: StringWithCharLimit256): Self = this.set("Annotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotation: Self = this.set("Annotation", js.undefined)
+  }
+  
 }
 

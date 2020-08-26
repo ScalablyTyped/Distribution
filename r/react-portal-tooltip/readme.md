@@ -11,8 +11,8 @@ Awesome React tooltips
 | Full name          | react-portal-tooltip |
 | Keywords           | react, reactjs, component, tooltip, portal |
 | # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 361005 |
+| # dependents       | 15 |
+| # downloads        | 374853 |
 | # stars            | 0 |
 
 ## Links

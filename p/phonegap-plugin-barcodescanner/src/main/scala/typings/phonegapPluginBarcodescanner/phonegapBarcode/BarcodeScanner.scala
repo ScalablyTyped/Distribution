@@ -17,6 +17,11 @@ trait BarcodeScanner extends js.Object {
   def scan(success: js.Function1[/* result */ BarcodeScanResult, _]): Unit = js.native
   def scan(
     success: js.Function1[/* result */ BarcodeScanResult, _],
+    failure: js.UndefOr[scala.Nothing],
+    opts: BarcodeScanOptions
+  ): Unit = js.native
+  def scan(
+    success: js.Function1[/* result */ BarcodeScanResult, _],
     failure: js.Function1[/* err */ js.Any, _]
   ): Unit = js.native
   def scan(

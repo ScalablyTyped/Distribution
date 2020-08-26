@@ -22,5 +22,22 @@ object DescribeCertificateAuthorityAuditReportRequest {
     val __obj = js.Dynamic.literal(AuditReportId = AuditReportId.asInstanceOf[js.Any], CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCertificateAuthorityAuditReportRequest]
   }
+  @scala.inline
+  implicit class DescribeCertificateAuthorityAuditReportRequestOps[Self <: DescribeCertificateAuthorityAuditReportRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditReportId(value: AuditReportId): Self = this.set("AuditReportId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+  }
+  
 }
 

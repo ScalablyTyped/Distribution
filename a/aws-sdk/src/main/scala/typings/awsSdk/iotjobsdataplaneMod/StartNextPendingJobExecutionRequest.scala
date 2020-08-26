@@ -22,15 +22,32 @@ trait StartNextPendingJobExecutionRequest extends js.Object {
 
 object StartNextPendingJobExecutionRequest {
   @scala.inline
-  def apply(
-    thingName: ThingName,
-    statusDetails: DetailsMap = null,
-    stepTimeoutInMinutes: js.UndefOr[StepTimeoutInMinutes] = js.undefined
-  ): StartNextPendingJobExecutionRequest = {
+  def apply(thingName: ThingName): StartNextPendingJobExecutionRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
-    if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepTimeoutInMinutes)) __obj.updateDynamic("stepTimeoutInMinutes")(stepTimeoutInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartNextPendingJobExecutionRequest]
   }
+  @scala.inline
+  implicit class StartNextPendingJobExecutionRequestOps[Self <: StartNextPendingJobExecutionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatusDetails(value: DetailsMap): Self = this.set("statusDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetails: Self = this.set("statusDetails", js.undefined)
+    @scala.inline
+    def setStepTimeoutInMinutes(value: StepTimeoutInMinutes): Self = this.set("stepTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepTimeoutInMinutes: Self = this.set("stepTimeoutInMinutes", js.undefined)
+  }
+  
 }
 

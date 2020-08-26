@@ -26,13 +26,38 @@ trait Hit extends js.Object {
 
 object Hit {
   @scala.inline
-  def apply(exprs: Exprs = null, fields: Fields = null, highlights: Highlights = null, id: String = null): Hit = {
+  def apply(): Hit = {
     val __obj = js.Dynamic.literal()
-    if (exprs != null) __obj.updateDynamic("exprs")(exprs.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (highlights != null) __obj.updateDynamic("highlights")(highlights.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hit]
   }
+  @scala.inline
+  implicit class HitOps[Self <: Hit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExprs(value: Exprs): Self = this.set("exprs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExprs: Self = this.set("exprs", js.undefined)
+    @scala.inline
+    def setFields(value: Fields): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setHighlights(value: Highlights): Self = this.set("highlights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlights: Self = this.set("highlights", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+  }
+  
 }
 

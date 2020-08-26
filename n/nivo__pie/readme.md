@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__pie
 
-Typings are for version 0.61.1
+Typings are for version 0.62.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/pie.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/pie)
@@ -10,9 +10,9 @@ Typings are for version 0.61.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/pie |
 | Keywords           | nivo, dataviz, react, d3, charts, pie-chart |
-| # releases         | 29 |
+| # releases         | 31 |
 | # dependents       | 15 |
-| # downloads        | 477154 |
+| # downloads        | 512816 |
 | # stars            | 0 |
 
 ## Links

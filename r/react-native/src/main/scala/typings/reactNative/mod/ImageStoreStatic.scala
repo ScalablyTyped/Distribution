@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ImageStoreStatic extends js.Object {
   /**
     * Stores a base64-encoded image in the ImageStore, and returns a URI that
@@ -20,7 +21,7 @@ trait ImageStoreStatic extends js.Object {
     base64ImageData: String,
     success: js.Function1[/* uri */ String, Unit],
     failure: js.Function1[/* error */ js.Any, Unit]
-  ): Unit
+  ): Unit = js.native
   /**
     * Retrieves the base64-encoded data for an image in the ImageStore. If the
     * specified URI does not match an image in the store, the failure callback
@@ -36,12 +37,12 @@ trait ImageStoreStatic extends js.Object {
     uri: String,
     success: js.Function1[/* base64ImageData */ String, Unit],
     failure: js.Function1[/* error */ js.Any, Unit]
-  ): Unit
+  ): Unit = js.native
   /**
     * Check if the ImageStore contains image data for the specified URI.
     * @platform ios
     */
-  def hasImageForTag(uri: String, callback: js.Function1[/* hasImage */ Boolean, Unit]): Unit
+  def hasImageForTag(uri: String, callback: js.Function1[/* hasImage */ Boolean, Unit]): Unit = js.native
   /**
     * Delete an image from the ImageStore. Images are stored in memory and
     * must be manually removed when you are finished with them, otherwise they
@@ -50,7 +51,7 @@ trait ImageStoreStatic extends js.Object {
     * will simply fail silently.
     * @platform ios
     */
-  def removeImageForTag(uri: String): Unit
+  def removeImageForTag(uri: String): Unit = js.native
 }
 
 object ImageStoreStatic {
@@ -64,5 +65,30 @@ object ImageStoreStatic {
     val __obj = js.Dynamic.literal(addImageFromBase64 = js.Any.fromFunction3(addImageFromBase64), getBase64ForTag = js.Any.fromFunction3(getBase64ForTag), hasImageForTag = js.Any.fromFunction2(hasImageForTag), removeImageForTag = js.Any.fromFunction1(removeImageForTag))
     __obj.asInstanceOf[ImageStoreStatic]
   }
+  @scala.inline
+  implicit class ImageStoreStaticOps[Self <: ImageStoreStatic] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddImageFromBase64(
+      value: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit
+    ): Self = this.set("addImageFromBase64", js.Any.fromFunction3(value))
+    @scala.inline
+    def setGetBase64ForTag(
+      value: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit
+    ): Self = this.set("getBase64ForTag", js.Any.fromFunction3(value))
+    @scala.inline
+    def setHasImageForTag(value: (String, js.Function1[/* hasImage */ Boolean, Unit]) => Unit): Self = this.set("hasImageForTag", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRemoveImageForTag(value: String => Unit): Self = this.set("removeImageForTag", js.Any.fromFunction1(value))
+  }
+  
 }
 

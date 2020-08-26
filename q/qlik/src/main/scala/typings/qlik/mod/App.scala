@@ -17,6 +17,7 @@ trait App extends js.Object {
   def addAlternateState(qStateName: String): js.Promise[_] = js.native
   def back(): js.Promise[_] = js.native
   def clearrAll(): js.Promise[_] = js.native
+  def clearrAll(lockedAlso: js.UndefOr[scala.Nothing], state: String): js.Promise[_] = js.native
   def clearrAll(lockedAlso: Boolean): js.Promise[_] = js.native
   def clearrAll(lockedAlso: Boolean, state: String): js.Promise[_] = js.native
   def close(): Unit = js.native
@@ -28,8 +29,13 @@ trait App extends js.Object {
   // TODO: createTable(dimensions: Array<string | NxDimension>, measures: Array<string | NxMeasure>, options?: object): QTable;
   def destroySession(id: String): js.Promise[_] = js.native
   def doReload(): js.Promise[_] = js.native
+  def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): js.Promise[_] = js.native
+  def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean): js.Promise[_] = js.native
+  def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean, qDebug: Boolean): js.Promise[_] = js.native
   @JSName("doReload")
   def doReload_0(qMode: `0`): js.Promise[_] = js.native
+  @JSName("doReload")
+  def doReload_0(qMode: `0`, qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): js.Promise[_] = js.native
   @JSName("doReload")
   def doReload_0(qMode: `0`, qPartial: Boolean): js.Promise[_] = js.native
   @JSName("doReload")
@@ -37,11 +43,15 @@ trait App extends js.Object {
   @JSName("doReload")
   def doReload_1(qMode: `1`): js.Promise[_] = js.native
   @JSName("doReload")
+  def doReload_1(qMode: `1`, qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): js.Promise[_] = js.native
+  @JSName("doReload")
   def doReload_1(qMode: `1`, qPartial: Boolean): js.Promise[_] = js.native
   @JSName("doReload")
   def doReload_1(qMode: `1`, qPartial: Boolean, qDebug: Boolean): js.Promise[_] = js.native
   @JSName("doReload")
   def doReload_2(qMode: `2`): js.Promise[_] = js.native
+  @JSName("doReload")
+  def doReload_2(qMode: `2`, qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): js.Promise[_] = js.native
   @JSName("doReload")
   def doReload_2(qMode: `2`, qPartial: Boolean): js.Promise[_] = js.native
   @JSName("doReload")
@@ -55,19 +65,29 @@ trait App extends js.Object {
   // getAppobjectList(type: 'sheet' | 'masterobject', callback: (list: ))
   def getFullPropertyTree(id: String): js.Promise[_] = js.native
   def getSnapshot(): js.Promise[_] = js.native
+  def getSnapshot(elem: js.UndefOr[scala.Nothing], id: String): js.Promise[_] = js.native
   def getSnapshot(elem: String): js.Promise[_] = js.native
   def getSnapshot(elem: String, id: String): js.Promise[_] = js.native
   def getSnapshot(elem: HTMLElement): js.Promise[_] = js.native
   def getSnapshot(elem: HTMLElement, id: String): js.Promise[_] = js.native
   // getList(type: ListTypes, callback): Promise<any>;
   def getobject(): js.Promise[_] = js.native
+  def getobject(elem: js.UndefOr[scala.Nothing], id: js.UndefOr[scala.Nothing], options: NoInteraction): js.Promise[_] = js.native
+  def getobject(elem: js.UndefOr[scala.Nothing], id: String): js.Promise[_] = js.native
+  def getobject(elem: js.UndefOr[scala.Nothing], id: String, options: NoInteraction): js.Promise[_] = js.native
   def getobject(elem: String): js.Promise[_] = js.native
+  def getobject(elem: String, id: js.UndefOr[scala.Nothing], options: NoInteraction): js.Promise[_] = js.native
   def getobject(elem: String, id: String): js.Promise[_] = js.native
   def getobject(elem: String, id: String, options: NoInteraction): js.Promise[_] = js.native
   def getobject(elem: HTMLElement): js.Promise[_] = js.native
+  def getobject(elem: HTMLElement, id: js.UndefOr[scala.Nothing], options: NoInteraction): js.Promise[_] = js.native
   def getobject(elem: HTMLElement, id: String): js.Promise[_] = js.native
   def getobject(elem: HTMLElement, id: String, options: NoInteraction): js.Promise[_] = js.native
   def getobjectProperties(id: String): js.Promise[_] = js.native
+  @JSName("getobject")
+  def getobject_CurrentSelections(elem: js.UndefOr[scala.Nothing], id: CurrentSelections): js.Promise[_] = js.native
+  @JSName("getobject")
+  def getobject_CurrentSelections(elem: js.UndefOr[scala.Nothing], id: CurrentSelections, options: NoInteraction): js.Promise[_] = js.native
   @JSName("getobject")
   def getobject_CurrentSelections(elem: String, id: CurrentSelections): js.Promise[_] = js.native
   @JSName("getobject")

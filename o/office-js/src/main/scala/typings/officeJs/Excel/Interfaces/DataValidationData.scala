@@ -19,6 +19,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
+@js.native
 trait DataValidationData extends js.Object {
   /**
     *
@@ -26,28 +27,28 @@ trait DataValidationData extends js.Object {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var errorAlert: js.UndefOr[DataValidationErrorAlert] = js.undefined
+  var errorAlert: js.UndefOr[DataValidationErrorAlert] = js.native
   /**
     *
     * Specifies if data validation will be performed on blank cells, it defaults to true.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var ignoreBlanks: js.UndefOr[Boolean] = js.undefined
+  var ignoreBlanks: js.UndefOr[Boolean] = js.native
   /**
     *
     * Prompt when users select a cell.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var prompt: js.UndefOr[DataValidationPrompt] = js.undefined
+  var prompt: js.UndefOr[DataValidationPrompt] = js.native
   /**
     *
     * Data validation rule that contains different type of data validation criteria.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var rule: js.UndefOr[DataValidationRule] = js.undefined
+  var rule: js.UndefOr[DataValidationRule] = js.native
   /**
     *
     * Type of the data validation, see Excel.DataValidationType for details.
@@ -56,7 +57,7 @@ trait DataValidationData extends js.Object {
     */
   var `type`: js.UndefOr[
     DataValidationType | None | WholeNumber | Decimal | List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria
-  ] = js.undefined
+  ] = js.native
   /**
     *
     * Represents if all cell values are valid according to the data validation rules.
@@ -65,27 +66,53 @@ trait DataValidationData extends js.Object {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var valid: js.UndefOr[Boolean] = js.undefined
+  var valid: js.UndefOr[Boolean] = js.native
 }
 
 object DataValidationData {
   @scala.inline
-  def apply(
-    errorAlert: DataValidationErrorAlert = null,
-    ignoreBlanks: js.UndefOr[Boolean] = js.undefined,
-    prompt: DataValidationPrompt = null,
-    rule: DataValidationRule = null,
-    `type`: DataValidationType | None | WholeNumber | Decimal | List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria = null,
-    valid: js.UndefOr[Boolean] = js.undefined
-  ): DataValidationData = {
+  def apply(): DataValidationData = {
     val __obj = js.Dynamic.literal()
-    if (errorAlert != null) __obj.updateDynamic("errorAlert")(errorAlert.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks.get.asInstanceOf[js.Any])
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidationData]
   }
+  @scala.inline
+  implicit class DataValidationDataOps[Self <: DataValidationData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorAlert(value: DataValidationErrorAlert): Self = this.set("errorAlert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorAlert: Self = this.set("errorAlert", js.undefined)
+    @scala.inline
+    def setIgnoreBlanks(value: Boolean): Self = this.set("ignoreBlanks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreBlanks: Self = this.set("ignoreBlanks", js.undefined)
+    @scala.inline
+    def setPrompt(value: DataValidationPrompt): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrompt: Self = this.set("prompt", js.undefined)
+    @scala.inline
+    def setRule(value: DataValidationRule): Self = this.set("rule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRule: Self = this.set("rule", js.undefined)
+    @scala.inline
+    def setType(
+      value: DataValidationType | None | WholeNumber | Decimal | List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValid(value: Boolean): Self = this.set("valid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValid: Self = this.set("valid", js.undefined)
+  }
+  
 }
 

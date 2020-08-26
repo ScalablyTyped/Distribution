@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object unparseArgs extends js.Object {
   def apply(parsedArgs: ParsedArgs): js.Array[String] = js.native
+  def apply(
+    parsedArgs: ParsedArgs,
+    hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: js.UndefOr[scala.Nothing],
+    parseArgsOptions: Opts
+  ): js.Array[String] = js.native
   def apply(parsedArgs: ParsedArgs, hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: UnparseArgsOptions): js.Array[String] = js.native
   def apply(
     parsedArgs: ParsedArgs,

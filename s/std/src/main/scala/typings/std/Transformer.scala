@@ -4,26 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Transformer[I, O] extends js.Object {
-  var flush: js.UndefOr[TransformStreamDefaultControllerCallback[O]] = js.undefined
-  var readableType: js.UndefOr[scala.Nothing] = js.undefined
-  var start: js.UndefOr[TransformStreamDefaultControllerCallback[O]] = js.undefined
-  var transform: js.UndefOr[TransformStreamDefaultControllerTransformCallback[I, O]] = js.undefined
-  var writableType: js.UndefOr[scala.Nothing] = js.undefined
+  var flush: js.UndefOr[TransformStreamDefaultControllerCallback[O]] = js.native
+  var readableType: js.UndefOr[scala.Nothing] = js.native
+  var start: js.UndefOr[TransformStreamDefaultControllerCallback[O]] = js.native
+  var transform: js.UndefOr[TransformStreamDefaultControllerTransformCallback[I, O]] = js.native
+  var writableType: js.UndefOr[scala.Nothing] = js.native
 }
 
 object Transformer {
   @scala.inline
-  def apply[I, O](
-    flush: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit] = null,
-    start: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit] = null,
-    transform: (I, /* controller */ TransformStreamDefaultController[O]) => Unit | js.Thenable[Unit] = null
-  ): Transformer[I, O] = {
+  def apply[I, O](): Transformer[I, O] = {
     val __obj = js.Dynamic.literal()
-    if (flush != null) __obj.updateDynamic("flush")(js.Any.fromFunction1(flush))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     __obj.asInstanceOf[Transformer[I, O]]
   }
+  @scala.inline
+  implicit class TransformerOps[Self <: Transformer[_, _], I, O] (val x: Self with (Transformer[I, O])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlush(value: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit]): Self = this.set("flush", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFlush: Self = this.set("flush", js.undefined)
+    @scala.inline
+    def setStart(value: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit]): Self = this.set("start", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setTransform(value: (I, /* controller */ TransformStreamDefaultController[O]) => Unit | js.Thenable[Unit]): Self = this.set("transform", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

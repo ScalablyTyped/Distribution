@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object create extends js.Object {
   def apply(name: String): GraphkeystringCollectiona = js.native
+  def apply(name: String, edgeDefinitions: js.UndefOr[scala.Nothing], orphanCollections: js.Array[String]): GraphkeystringCollectiona = js.native
   def apply(name: String, edgeDefinitions: js.Array[EdgeDefinition]): GraphkeystringCollectiona = js.native
   def apply(name: String, edgeDefinitions: js.Array[EdgeDefinition], orphanCollections: js.Array[String]): GraphkeystringCollectiona = js.native
 }

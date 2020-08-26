@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "r-script"
-version := "0.0-dt-20200515Z-352853"
-scalaVersion := "2.13.2"
+version := "0.0-dt-20200515Z-e2af78"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

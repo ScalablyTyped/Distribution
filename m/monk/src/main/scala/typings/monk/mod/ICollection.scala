@@ -1,317 +1,275 @@
 package typings.monk.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.monk.anon.AvgObjSize
-import typings.monk.anon.DeletedCount
-import typings.monk.anon.Each
-import typings.monk.anon.Msg
-import typings.monk.anon.NIndexesWas
-import typings.monk.anon.NModified
-import typings.monk.anon.`0`
-import typings.monk.monkBooleans.`true`
-import typings.monk.monkNumbers.`-1`
-import typings.monk.monkNumbers.`1`
-import typings.monk.monkStrings.`ns not found`
-import typings.std.Error
+import typings.mongodb.mod.BulkWriteOpResultObject
+import typings.mongodb.mod.BulkWriteOperation
+import typings.mongodb.mod.CollStats
+import typings.mongodb.mod.CollectionAggregationOptions
+import typings.mongodb.mod.CollectionBulkWriteOptions
+import typings.mongodb.mod.CollectionMapFunction
+import typings.mongodb.mod.CollectionReduceFunction
+import typings.mongodb.mod.DeleteWriteOpResultObject
+import typings.mongodb.mod.FilterQuery
+import typings.mongodb.mod.FindOneAndDeleteOption
+import typings.mongodb.mod.FindOneOptions
+import typings.mongodb.mod.GeoHaystackSearchOptions
+import typings.mongodb.mod.IndexOptions
+import typings.mongodb.mod.MapReduceOptions
+import typings.mongodb.mod.MongoCountPreferences
+import typings.mongodb.mod.MongoDistinctPreferences
+import typings.mongodb.mod.UpdateOneOptions
+import typings.mongodb.mod.UpdateQuery
+import typings.mongodb.mod.UpdateWriteOpResult
+import typings.monk.anon.FindOneAndReplaceOptionre
+import typings.monk.anon.FindOneAndUpdateOptionrep
+import typings.monk.anon.FindOneOptionsrawCursortr
+import typings.monk.anon.FindOptionsrawCursortrue
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("monk", "ICollection")
 @js.native
-class ICollection[T] () extends js.Object {
+class ICollection[T /* <: StringDictionary[js.Any] */] () extends js.Object {
   val manager: IMonkManager = js.native
   val middlewares: js.Array[TMiddleware] = js.native
   val name: String = js.native
   var options: js.Object = js.native
-  def aggregate[U](stages: js.Array[_]): js.Promise[U] = js.native
-  def aggregate[U](stages: js.Array[_], options: js.Object): js.Promise[U] = js.native
-  def aggregate[U](
-    stages: js.Array[_],
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
+  def aggregate[U](pipeline: js.Array[js.Object]): js.Promise[U] = js.native
+  def aggregate[U](pipeline: js.Array[js.Object], options: CollectionAggregationOptions): js.Promise[U] = js.native
+  def aggregate[U](stages: js.Array[js.Object], options: CollectionAggregationOptions, callback: Callback[U]): Unit = js.native
+  def bulkWrite(operations: js.Array[BulkWriteOperation[T]]): js.Promise[BulkWriteOpResultObject] = js.native
+  def bulkWrite(operations: js.Array[BulkWriteOperation[T]], options: CollectionBulkWriteOptions): js.Promise[BulkWriteOpResultObject] = js.native
+  def bulkWrite(
+    operations: js.Array[BulkWriteOperation[T]],
+    options: CollectionBulkWriteOptions,
+    callback: Callback[BulkWriteOpResultObject]
   ): Unit = js.native
-  @JSName("aggregate")
-  def aggregate_U_Unit[U](stages: js.Array[_]): Unit = js.native
-  @JSName("aggregate")
-  def aggregate_U_Unit[U](stages: js.Array[_], options: js.Object): Unit = js.native
-  def bulkWrite[U](operations: js.Array[_]): js.Promise[U] = js.native
-  def bulkWrite[U](operations: js.Array[_], options: js.Object): js.Promise[U] = js.native
-  def bulkWrite[U](
-    operations: js.Array[_],
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
-  ): Unit = js.native
-  @JSName("bulkWrite")
-  def bulkWrite_U_Unit[U](operations: js.Array[_]): Unit = js.native
-  @JSName("bulkWrite")
-  def bulkWrite_U_Unit[U](operations: js.Array[_], options: js.Object): Unit = js.native
-  def count(): Unit = js.native
-  def count(query: TQuery): Unit = js.native
-  def count(query: TQuery, options: js.Object): Unit = js.native
-  def count(
-    query: TQuery,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ Double, Unit]
-  ): Unit = js.native
+  /**
+    * http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#count
+    * @deprecated Use countDocuments or estimatedDocumentCount
+    */
+  def count(): js.Promise[Double] = js.native
+  def count(query: js.UndefOr[scala.Nothing], options: MongoCountPreferences): js.Promise[Double] = js.native
+  def count(query: FilterQuery[T]): js.Promise[Double] = js.native
+  def count(query: FilterQuery[T], options: MongoCountPreferences): Unit = js.native
+  def count(query: FilterQuery[T], options: MongoCountPreferences, callback: Callback[Double]): Unit = js.native
   @JSName("count")
-  def count_Promise(): js.Promise[Double] = js.native
-  @JSName("count")
-  def count_Promise(query: TQuery): js.Promise[Double] = js.native
-  @JSName("count")
-  def count_Promise(query: TQuery, options: js.Object): js.Promise[Double] = js.native
-  def createIndex(): Unit = js.native
-  def createIndex(fields: StringDictionary[`1` | `-1`]): Unit = js.native
-  def createIndex(fields: StringDictionary[`1` | `-1`], options: js.Object): Unit = js.native
-  def createIndex(
-    fields: StringDictionary[`1` | `-1`],
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ String, Unit]
-  ): Unit = js.native
-  def createIndex(fields: TFields): Unit = js.native
-  def createIndex(fields: TFields, options: js.Object): Unit = js.native
-  def createIndex(
-    fields: TFields,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ String, Unit]
-  ): Unit = js.native
-  @JSName("createIndex")
-  def createIndex_Promise(): js.Promise[String] = js.native
-  @JSName("createIndex")
-  def createIndex_Promise(fields: StringDictionary[`1` | `-1`]): js.Promise[String] = js.native
-  @JSName("createIndex")
-  def createIndex_Promise(fields: StringDictionary[`1` | `-1`], options: js.Object): js.Promise[String] = js.native
-  @JSName("createIndex")
-  def createIndex_Promise(fields: TFields): js.Promise[String] = js.native
-  @JSName("createIndex")
-  def createIndex_Promise(fields: TFields, options: js.Object): js.Promise[String] = js.native
-  def distinct[U](field: String): js.Promise[js.Array[U]] = js.native
-  def distinct[U](field: String, query: TQuery): js.Promise[js.Array[U]] = js.native
-  def distinct[U](field: String, query: TQuery, options: js.Object): js.Promise[js.Array[U]] = js.native
-  def distinct[U](
+  def count_Promise(query: FilterQuery[T], options: MongoCountPreferences): js.Promise[Double] = js.native
+  def createIndex(fields: CreateIndexInput[T]): js.Promise[String] = js.native
+  def createIndex(fields: CreateIndexInput[T], options: IndexOptions): js.Promise[String] = js.native
+  def createIndex(fields: CreateIndexInput[T], options: IndexOptions, callback: Callback[String]): Unit = js.native
+  def distinct(field: String): js.Promise[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
+    ]
+  ] = js.native
+  def distinct(field: String, query: js.UndefOr[scala.Nothing], options: MongoDistinctPreferences): js.Promise[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
+    ]
+  ] = js.native
+  def distinct(field: String, query: FilterQuery[T]): js.Promise[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
+    ]
+  ] = js.native
+  def distinct(field: String, query: FilterQuery[T], options: MongoDistinctPreferences): js.Promise[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
+    ]
+  ] = js.native
+  def distinct(
     field: String,
-    query: TQuery,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ js.Array[U], Unit]
-  ): Unit = js.native
-  @JSName("distinct")
-  def distinct_U_Unit[U](field: String): Unit = js.native
-  @JSName("distinct")
-  def distinct_U_Unit[U](field: String, query: TQuery): Unit = js.native
-  @JSName("distinct")
-  def distinct_U_Unit[U](field: String, query: TQuery, options: js.Object): Unit = js.native
-  def drop(): Unit = js.native
-  def drop(callback: js.Function2[/* err */ Error | Null, /* data */ (`ns not found`) | `true`, Unit]): Unit = js.native
-  def dropIndex(): Unit = js.native
-  def dropIndex(fields: TFields): Unit = js.native
-  def dropIndex(fields: TFields, options: js.Object): Unit = js.native
-  def dropIndex(
-    fields: TFields,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ NIndexesWas, Unit]
-  ): Unit = js.native
-  @JSName("dropIndex")
-  def dropIndex_Promise(): js.Promise[NIndexesWas] = js.native
-  @JSName("dropIndex")
-  def dropIndex_Promise(fields: TFields): js.Promise[NIndexesWas] = js.native
-  @JSName("dropIndex")
-  def dropIndex_Promise(fields: TFields, options: js.Object): js.Promise[NIndexesWas] = js.native
-  def dropIndexes(): Unit = js.native
-  def dropIndexes(callback: js.Function2[/* err */ Error | Null, /* data */ Msg, Unit]): Unit = js.native
-  @JSName("dropIndexes")
-  def dropIndexes_Promise(): js.Promise[Msg] = js.native
-  @JSName("drop")
-  def drop_Promise(): js.Promise[(`ns not found`) | `true`] = js.native
-  def find[U](): Unit = js.native
-  def find[U](query: TQuery): Unit = js.native
-  def find[U](query: TQuery, options: js.Object): Unit = js.native
-  def find[U](
-    query: TQuery,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ js.Array[U] with `0`[U], Unit]
-  ): Unit = js.native
-  def findOne[U](): js.Promise[js.UndefOr[U]] = js.native
-  def findOne[U](query: TQuery): js.Promise[js.UndefOr[U]] = js.native
-  def findOne[U](query: TQuery, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
-  def findOne[U](
-    query: TQuery,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[U], Unit]
-  ): Unit = js.native
-  def findOneAndDelete[U](): js.Promise[js.UndefOr[U]] = js.native
-  def findOneAndDelete[U](query: TQuery): js.Promise[js.UndefOr[U]] = js.native
-  def findOneAndDelete[U](query: TQuery, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
-  def findOneAndDelete[U](
-    query: TQuery,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[U], Unit]
-  ): Unit = js.native
-  @JSName("findOneAndDelete")
-  def findOneAndDelete_U_Unit[U](): Unit = js.native
-  @JSName("findOneAndDelete")
-  def findOneAndDelete_U_Unit[U](query: TQuery): Unit = js.native
-  @JSName("findOneAndDelete")
-  def findOneAndDelete_U_Unit[U](query: TQuery, options: js.Object): Unit = js.native
-  def findOneAndUpdate[U](query: TQuery, update: js.Object): js.Promise[js.UndefOr[U]] = js.native
-  def findOneAndUpdate[U](query: TQuery, update: js.Object, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
-  def findOneAndUpdate[U](
-    query: TQuery,
-    update: js.Object,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
-  ): Unit = js.native
-  @JSName("findOneAndUpdate")
-  def findOneAndUpdate_U_Unit[U](query: TQuery, update: js.Object): Unit = js.native
-  @JSName("findOneAndUpdate")
-  def findOneAndUpdate_U_Unit[U](query: TQuery, update: js.Object, options: js.Object): Unit = js.native
-  @JSName("findOne")
-  def findOne_U_Unit[U](): Unit = js.native
-  @JSName("findOne")
-  def findOne_U_Unit[U](query: TQuery): Unit = js.native
-  @JSName("findOne")
-  def findOne_U_Unit[U](query: TQuery, options: js.Object): Unit = js.native
-  @JSName("find")
-  def find_U_Intersection[U](): js.Promise[js.Array[U]] with Each[U] = js.native
-  @JSName("find")
-  def find_U_Intersection[U](query: TQuery): js.Promise[js.Array[U]] with Each[U] = js.native
-  @JSName("find")
-  def find_U_Intersection[U](query: TQuery, options: js.Object): js.Promise[js.Array[U]] with Each[U] = js.native
-  def geoHaystackSearch[U](x: Double, y: Double, options: js.Object): js.Promise[js.Array[U]] = js.native
-  def geoHaystackSearch[U](
-    x: Double,
-    y: Double,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ js.Array[U], Unit]
-  ): Unit = js.native
-  @JSName("geoHaystackSearch")
-  def geoHaystackSearch_U_Unit[U](x: Double, y: Double, options: js.Object): Unit = js.native
-  def group[U](
-    keys: js.Any,
-    condition: js.Any,
-    initial: js.Any,
-    reduce: js.Any,
-    finalize: js.Any,
-    command: js.Any
-  ): js.Promise[_] = js.native
-  def group[U](
-    keys: js.Any,
-    condition: js.Any,
-    initial: js.Any,
-    reduce: js.Any,
-    finalize: js.Any,
-    command: js.Any,
-    options: js.Object
-  ): js.Promise[_] = js.native
-  def group[U](
-    keys: js.Any,
-    condition: js.Any,
-    initial: js.Any,
-    reduce: js.Any,
-    finalize: js.Any,
-    command: js.Any,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
-  ): Unit = js.native
-  @JSName("group")
-  def group_U_Unit[U](
-    keys: js.Any,
-    condition: js.Any,
-    initial: js.Any,
-    reduce: js.Any,
-    finalize: js.Any,
-    command: js.Any
-  ): Unit = js.native
-  @JSName("group")
-  def group_U_Unit[U](
-    keys: js.Any,
-    condition: js.Any,
-    initial: js.Any,
-    reduce: js.Any,
-    finalize: js.Any,
-    command: js.Any,
-    options: js.Object
-  ): Unit = js.native
-  def indexes(): Unit = js.native
-  def indexes(
-    callback: js.Function2[
-      /* err */ Error | Null, 
-      /* data */ js.Array[StringDictionary[js.Array[js.Tuple2[String, `1` | `-1`]]]], 
-      Unit
+    query: FilterQuery[T],
+    options: MongoDistinctPreferences,
+    callback: Callback[
+      js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
+      ]
     ]
   ): Unit = js.native
-  @JSName("indexes")
-  def indexes_Promise(): js.Promise[js.Array[StringDictionary[js.Array[js.Tuple2[String, `1` | `-1`]]]]] = js.native
-  def insert[U](data: js.Array[js.Object]): js.Promise[U] = js.native
-  def insert[U](data: js.Array[js.Object], options: js.Object): js.Promise[U] = js.native
-  def insert[U](
-    data: js.Array[js.Object],
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
+  def drop(): js.Promise[DropResult] = js.native
+  def drop(callback: Callback[DropResult]): Unit = js.native
+  def dropIndex(fields: DropIndexInput[T]): js.Promise[DropIndexResult] = js.native
+  def dropIndex(fields: DropIndexInput[T], options: DropIndexOptions): js.Promise[DropIndexResult] = js.native
+  def dropIndex(fields: DropIndexInput[T], options: DropIndexOptions, callback: Callback[DropIndexResult]): Unit = js.native
+  def dropIndexes(): Unit = js.native
+  def dropIndexes(callback: Callback[DropIndexesResult]): Unit = js.native
+  @JSName("dropIndexes")
+  def dropIndexes_Promise(): js.Promise[DropIndexesResult] = js.native
+  // Normal
+  def find(): js.Promise[FindResult[T]] = js.native
+  def find(query: js.UndefOr[scala.Nothing], options: FindOptions): js.Promise[FindResult[T]] = js.native
+  // Raw
+  def find(query: FilterQuery[T]): js.Promise[FindRawResult[T]] = js.native
+  def find(query: FilterQuery[T], options: FindOneOptions, callback: Callback[FindResult[T]]): Unit = js.native
+  def find(query: FilterQuery[T], options: FindOneOptionsrawCursortr, callback: Callback[FindRawResult[T]]): Unit = js.native
+  def find(query: FilterQuery[T], options: FindOptionsrawCursortrue): js.Promise[FindRawResult[T]] = js.native
+  def find(query: FilterQuery[T], options: FindOptions): js.Promise[FindResult[T]] = js.native
+  def findOne(): js.Promise[FindOneResult[T]] = js.native
+  def findOne(query: js.UndefOr[scala.Nothing], options: FindOneOptions): js.Promise[FindOneResult[T]] = js.native
+  def findOne(query: FilterQuery[T]): js.Promise[FindOneResult[T]] = js.native
+  def findOne(query: FilterQuery[T], options: FindOneOptions): js.Promise[FindOneResult[T]] = js.native
+  def findOne(query: FilterQuery[T], options: FindOneOptions, callback: Callback[FindOneResult[T]]): Unit = js.native
+  def findOneAndDelete(query: FilterQuery[T]): js.Promise[FindOneResult[T]] = js.native
+  def findOneAndDelete(query: FilterQuery[T], options: FindOneAndDeleteOption): js.Promise[FindOneResult[T]] = js.native
+  def findOneAndDelete(query: FilterQuery[T], options: FindOneAndDeleteOption, callback: Callback[FindOneResult[T]]): Unit = js.native
+  // Replace
+  def findOneAndUpdate(query: FilterQuery[T], update: T): js.Promise[FindOneResult[T]] = js.native
+  def findOneAndUpdate(query: FilterQuery[T], update: T, options: FindOneAndReplaceOptionre): js.Promise[FindOneResult[T]] = js.native
+  def findOneAndUpdate(
+    query: FilterQuery[T],
+    update: T,
+    options: FindOneAndReplaceOptionre,
+    callback: Callback[FindOneResult[T]]
   ): Unit = js.native
-  def insert[U](data: js.Object): js.Promise[U] = js.native
-  def insert[U](data: js.Object, options: js.Object): js.Promise[U] = js.native
-  def insert[U](
-    data: js.Object,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ U, Unit]
+  def findOneAndUpdate(query: FilterQuery[T], update: UpdateQuery[T]): Unit = js.native
+  def findOneAndUpdate(
+    query: FilterQuery[T],
+    update: UpdateQuery[T],
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[FindOneResult[T]]
   ): Unit = js.native
-  @JSName("insert")
-  def insert_U_Unit[U](data: js.Array[js.Object]): Unit = js.native
-  @JSName("insert")
-  def insert_U_Unit[U](data: js.Array[js.Object], options: js.Object): Unit = js.native
-  @JSName("insert")
-  def insert_U_Unit[U](data: js.Object): Unit = js.native
-  @JSName("insert")
-  def insert_U_Unit[U](data: js.Object, options: js.Object): Unit = js.native
-  def mapReduce(
-    map: js.Function0[_],
-    reduce: js.Function2[/* key */ String, /* values */ js.Array[_], _],
+  def findOneAndUpdate(query: FilterQuery[T], update: UpdateQuery[T], options: FindOneAndUpdateOptionrep): Unit = js.native
+  def findOneAndUpdate(
+    query: FilterQuery[T],
+    update: UpdateQuery[T],
+    options: FindOneAndUpdateOptionrep,
+    callback: Callback[FindOneResult[T]]
+  ): Unit = js.native
+  def findOneAndUpdate(query: FilterQuery[T], update: Partial[T]): Unit = js.native
+  def findOneAndUpdate(
+    query: FilterQuery[T],
+    update: Partial[T],
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[FindOneResult[T]]
+  ): Unit = js.native
+  def findOneAndUpdate(query: FilterQuery[T], update: Partial[T], options: FindOneAndUpdateOptionrep): Unit = js.native
+  def findOneAndUpdate(
+    query: FilterQuery[T],
+    update: Partial[T],
+    options: FindOneAndUpdateOptionrep,
+    callback: Callback[FindOneResult[T]]
+  ): Unit = js.native
+  // Update
+  @JSName("findOneAndUpdate")
+  def findOneAndUpdate_Promise(query: FilterQuery[T], update: UpdateQuery[T]): js.Promise[FindOneResult[T]] = js.native
+  @JSName("findOneAndUpdate")
+  def findOneAndUpdate_Promise(query: FilterQuery[T], update: UpdateQuery[T], options: FindOneAndUpdateOptionrep): js.Promise[FindOneResult[T]] = js.native
+  @JSName("findOneAndUpdate")
+  def findOneAndUpdate_Promise(query: FilterQuery[T], update: Partial[T]): js.Promise[FindOneResult[T]] = js.native
+  @JSName("findOneAndUpdate")
+  def findOneAndUpdate_Promise(query: FilterQuery[T], update: Partial[T], options: FindOneAndUpdateOptionrep): js.Promise[FindOneResult[T]] = js.native
+  def geoHaystackSearch(x: Double, y: Double): js.Promise[GeoHaystackSearchResult[T]] = js.native
+  def geoHaystackSearch(x: Double, y: Double, options: GeoHaystackSearchOptions): js.Promise[GeoHaystackSearchResult[T]] = js.native
+  def geoHaystackSearch(
+    x: Double,
+    y: Double,
+    options: GeoHaystackSearchOptions,
+    callback: Callback[GeoHaystackSearchResult[T]]
+  ): Unit = js.native
+  /** @deprecated MongoDB 3.6 or higher no longer supports the group command. We recommend rewriting using the aggregation framework. */
+  def group[U](
+    keys: js.Any,
+    condition: js.Object,
+    initial: js.Object,
+    reduce: js.Function,
+    finalize: js.Function,
+    command: Boolean
+  ): js.Promise[U] = js.native
+  def group[U](
+    keys: js.Any,
+    condition: js.Object,
+    initial: js.Object,
+    reduce: js.Function,
+    finalize: js.Function,
+    command: Boolean,
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[U]
+  ): Unit = js.native
+  def group[U](
+    keys: js.Any,
+    condition: js.Object,
+    initial: js.Object,
+    reduce: js.Function,
+    finalize: js.Function,
+    command: Boolean,
+    options: js.Object
+  ): js.Promise[U] = js.native
+  def group[U](
+    keys: js.Any,
+    condition: js.Object,
+    initial: js.Object,
+    reduce: js.Function,
+    finalize: js.Function,
+    command: Boolean,
+    options: js.Object,
+    callback: Callback[U]
+  ): Unit = js.native
+  @JSName("group")
+  def group_U_Unit[U](
+    keys: js.Any,
+    condition: js.Object,
+    initial: js.Object,
+    reduce: js.Function,
+    finalize: js.Function,
+    command: Boolean
+  ): Unit = js.native
+  @JSName("group")
+  def group_U_Unit[U](
+    keys: js.Any,
+    condition: js.Object,
+    initial: js.Object,
+    reduce: js.Function,
+    finalize: js.Function,
+    command: Boolean,
     options: js.Object
   ): Unit = js.native
-  def mapReduce(
-    map: js.Function0[_],
-    reduce: js.Function2[/* key */ String, /* values */ js.Array[_], _],
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
+  def indexes(): js.Promise[IndexesResult[T]] = js.native
+  def indexes(callback: Callback[IndexesResult[T]]): Unit = js.native
+  def insert(data: SingleOrArray[T]): js.Promise[InsertResult[T]] = js.native
+  def insert(data: SingleOrArray[T], options: CollectionInsertOneOptionsMonk): js.Promise[InsertResult[T]] = js.native
+  def insert(
+    data: SingleOrArray[T],
+    options: CollectionInsertOneOptionsMonk,
+    callback: Callback[InsertResult[T]]
   ): Unit = js.native
-  @JSName("mapReduce")
-  def mapReduce_Promise(
-    map: js.Function0[_],
-    reduce: js.Function2[/* key */ String, /* values */ js.Array[_], _],
-    options: js.Object
+  def mapReduce[TKey, TValue](
+    map: CollectionMapFunction[T],
+    reduce: CollectionReduceFunction[TKey, TValue],
+    options: MapReduceOptions
   ): js.Promise[_] = js.native
-  def remove(): Unit = js.native
-  def remove(query: TQuery): Unit = js.native
-  def remove(query: TQuery, options: js.Object): Unit = js.native
-  def remove(
-    query: TQuery,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ DeletedCount, Unit]
+  def mapReduce[TKey, TValue](
+    map: CollectionMapFunction[T],
+    reduce: CollectionReduceFunction[TKey, TValue],
+    options: MapReduceOptions,
+    callback: Callback[_]
   ): Unit = js.native
-  @JSName("remove")
-  def remove_Promise(): js.Promise[DeletedCount] = js.native
-  @JSName("remove")
-  def remove_Promise(query: TQuery): js.Promise[DeletedCount] = js.native
-  @JSName("remove")
-  def remove_Promise(query: TQuery, options: js.Object): js.Promise[DeletedCount] = js.native
-  def stats(): Unit = js.native
-  def stats(options: js.Object): Unit = js.native
-  def stats(options: js.Object, callback: js.Function2[/* err */ Error | Null, /* data */ AvgObjSize, Unit]): Unit = js.native
-  @JSName("stats")
-  def stats_Promise(): js.Promise[AvgObjSize] = js.native
-  @JSName("stats")
-  def stats_Promise(options: js.Object): js.Promise[AvgObjSize] = js.native
-  def update(query: TQuery, update: js.Object): Unit = js.native
-  def update(query: TQuery, update: js.Object, options: js.Object): Unit = js.native
+  def remove(): js.Promise[DeleteWriteOpResultObject] = js.native
+  def remove(query: js.UndefOr[scala.Nothing], options: RemoveOptions): js.Promise[DeleteWriteOpResultObject] = js.native
+  def remove(query: FilterQuery[T]): js.Promise[DeleteWriteOpResultObject] = js.native
+  def remove(query: FilterQuery[T], options: RemoveOptions): js.Promise[DeleteWriteOpResultObject] = js.native
+  def remove(query: FilterQuery[T], options: RemoveOptions, callback: Callback[DeleteWriteOpResultObject]): Unit = js.native
+  def stats(): js.Promise[CollStats] = js.native
+  def stats(options: StatsOptions): js.Promise[CollStats] = js.native
+  def stats(options: StatsOptions, callback: Callback[CollStats]): Unit = js.native
+  def update(query: FilterQuery[T], update: UpdateQuery[T]): js.Promise[UpdateWriteOpResult] = js.native
+  def update(query: FilterQuery[T], update: UpdateQuery[T], options: UpdateOneOptions): js.Promise[UpdateWriteOpResult] = js.native
   def update(
-    query: TQuery,
-    update: js.Object,
-    options: js.Object,
-    callback: js.Function2[/* err */ Error | Null, /* data */ NModified, Unit]
+    query: FilterQuery[T],
+    update: UpdateQuery[T],
+    options: UpdateOneOptions,
+    callback: Callback[UpdateWriteOpResult]
   ): Unit = js.native
-  @JSName("update")
-  def update_Promise(query: TQuery, update: js.Object): js.Promise[NModified] = js.native
-  @JSName("update")
-  def update_Promise(query: TQuery, update: js.Object, options: js.Object): js.Promise[NModified] = js.native
+  def update(query: FilterQuery[T], update: Partial[T]): js.Promise[UpdateWriteOpResult] = js.native
+  def update(query: FilterQuery[T], update: Partial[T], options: UpdateOneOptions): js.Promise[UpdateWriteOpResult] = js.native
+  def update(
+    query: FilterQuery[T],
+    update: Partial[T],
+    options: UpdateOneOptions,
+    callback: Callback[UpdateWriteOpResult]
+  ): Unit = js.native
 }
 

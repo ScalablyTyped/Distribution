@@ -18,10 +18,30 @@ trait ListDeadLetterSourceQueuesResult extends js.Object {
 
 object ListDeadLetterSourceQueuesResult {
   @scala.inline
-  def apply(queueUrls: QueueUrlList, NextToken: Token = null): ListDeadLetterSourceQueuesResult = {
+  def apply(queueUrls: QueueUrlList): ListDeadLetterSourceQueuesResult = {
     val __obj = js.Dynamic.literal(queueUrls = queueUrls.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeadLetterSourceQueuesResult]
   }
+  @scala.inline
+  implicit class ListDeadLetterSourceQueuesResultOps[Self <: ListDeadLetterSourceQueuesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueueUrlsVarargs(value: String*): Self = this.set("queueUrls", js.Array(value :_*))
+    @scala.inline
+    def setQueueUrls(value: QueueUrlList): Self = this.set("queueUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

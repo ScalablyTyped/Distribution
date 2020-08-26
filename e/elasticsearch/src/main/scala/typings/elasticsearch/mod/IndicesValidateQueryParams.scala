@@ -4,72 +4,106 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IndicesValidateQueryParams extends GenericParams {
-  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
-  var analyzeWildcard: js.UndefOr[Boolean] = js.undefined
-  var analyzer: js.UndefOr[String] = js.undefined
-  var defaultOperator: js.UndefOr[DefaultOperator] = js.undefined
-  var df: js.UndefOr[String] = js.undefined
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
-  var explain: js.UndefOr[Boolean] = js.undefined
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
-  var index: NameList
-  var lenient: js.UndefOr[Boolean] = js.undefined
-  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined
-  var operationThreading: js.UndefOr[js.Any] = js.undefined
+  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var analyzeWildcard: js.UndefOr[Boolean] = js.native
+  var analyzer: js.UndefOr[String] = js.native
+  var defaultOperator: js.UndefOr[DefaultOperator] = js.native
+  var df: js.UndefOr[String] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var explain: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var index: NameList = js.native
+  var lenient: js.UndefOr[Boolean] = js.native
+  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.native
+  var operationThreading: js.UndefOr[js.Any] = js.native
      // even the docs don't know what this does
-  var q: js.UndefOr[String] = js.undefined
-  var rewrite: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[NameList] = js.undefined
+  var q: js.UndefOr[String] = js.native
+  var rewrite: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[NameList] = js.native
 }
 
 object IndicesValidateQueryParams {
   @scala.inline
-  def apply(
-    index: NameList,
-    allowNoIndices: js.UndefOr[Boolean] = js.undefined,
-    analyzeWildcard: js.UndefOr[Boolean] = js.undefined,
-    analyzer: String = null,
-    body: js.Any = null,
-    defaultOperator: DefaultOperator = null,
-    df: String = null,
-    expandWildcards: ExpandWildcards = null,
-    explain: js.UndefOr[Boolean] = js.undefined,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
-    lenient: js.UndefOr[Boolean] = js.undefined,
-    lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    operationThreading: js.Any = null,
-    q: String = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    rewrite: js.UndefOr[Boolean] = js.undefined,
-    `type`: NameList = null
-  ): IndicesValidateQueryParams = {
+  def apply(index: NameList): IndicesValidateQueryParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(analyzeWildcard)) __obj.updateDynamic("analyzeWildcard")(analyzeWildcard.get.asInstanceOf[js.Any])
-    if (analyzer != null) __obj.updateDynamic("analyzer")(analyzer.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (defaultOperator != null) __obj.updateDynamic("defaultOperator")(defaultOperator.asInstanceOf[js.Any])
-    if (df != null) __obj.updateDynamic("df")(df.asInstanceOf[js.Any])
-    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.get.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lenient)) __obj.updateDynamic("lenient")(lenient.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowercaseExpandedTerms)) __obj.updateDynamic("lowercaseExpandedTerms")(lowercaseExpandedTerms.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (operationThreading != null) __obj.updateDynamic("operationThreading")(operationThreading.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewrite)) __obj.updateDynamic("rewrite")(rewrite.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesValidateQueryParams]
   }
+  @scala.inline
+  implicit class IndicesValidateQueryParamsOps[Self <: IndicesValidateQueryParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowNoIndices(value: Boolean): Self = this.set("allowNoIndices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowNoIndices: Self = this.set("allowNoIndices", js.undefined)
+    @scala.inline
+    def setAnalyzeWildcard(value: Boolean): Self = this.set("analyzeWildcard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalyzeWildcard: Self = this.set("analyzeWildcard", js.undefined)
+    @scala.inline
+    def setAnalyzer(value: String): Self = this.set("analyzer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalyzer: Self = this.set("analyzer", js.undefined)
+    @scala.inline
+    def setDefaultOperator(value: DefaultOperator): Self = this.set("defaultOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOperator: Self = this.set("defaultOperator", js.undefined)
+    @scala.inline
+    def setDf(value: String): Self = this.set("df", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDf: Self = this.set("df", js.undefined)
+    @scala.inline
+    def setExpandWildcards(value: ExpandWildcards): Self = this.set("expandWildcards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandWildcards: Self = this.set("expandWildcards", js.undefined)
+    @scala.inline
+    def setExplain(value: Boolean): Self = this.set("explain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplain: Self = this.set("explain", js.undefined)
+    @scala.inline
+    def setIgnoreUnavailable(value: Boolean): Self = this.set("ignoreUnavailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUnavailable: Self = this.set("ignoreUnavailable", js.undefined)
+    @scala.inline
+    def setLenient(value: Boolean): Self = this.set("lenient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLenient: Self = this.set("lenient", js.undefined)
+    @scala.inline
+    def setLowercaseExpandedTerms(value: Boolean): Self = this.set("lowercaseExpandedTerms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowercaseExpandedTerms: Self = this.set("lowercaseExpandedTerms", js.undefined)
+    @scala.inline
+    def setOperationThreading(value: js.Any): Self = this.set("operationThreading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationThreading: Self = this.set("operationThreading", js.undefined)
+    @scala.inline
+    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setRewrite(value: Boolean): Self = this.set("rewrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRewrite: Self = this.set("rewrite", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: NameList): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

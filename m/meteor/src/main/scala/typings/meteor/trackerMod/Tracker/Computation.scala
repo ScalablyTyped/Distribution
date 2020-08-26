@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Computation extends js.Object {
-  var firstRun: Boolean
-  var invalidated: Boolean
-  var stopped: Boolean
-  def invalidate(): Unit
-  def onInvalidate(callback: js.Function): Unit
-  def onStop(callback: js.Function): Unit
-  def stop(): Unit
+  var firstRun: Boolean = js.native
+  var invalidated: Boolean = js.native
+  var stopped: Boolean = js.native
+  def invalidate(): Unit = js.native
+  def onInvalidate(callback: js.Function): Unit = js.native
+  def onStop(callback: js.Function): Unit = js.native
+  def stop(): Unit = js.native
 }
 
 @JSImport("meteor/tracker", "Tracker.Computation")

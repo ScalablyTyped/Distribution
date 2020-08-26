@@ -8,189 +8,246 @@ import scala.scalajs.js.annotation._
   * Administration of medication to a patient
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait MedicationAdministration extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait MedicationAdministration extends DomainResource {
   /**
     * Contains extended information for property 'effectiveDateTime'.
     */
-  var _effectiveDateTime: js.UndefOr[Element] = js.undefined
+  var _effectiveDateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'notGiven'.
     */
-  var _notGiven: js.UndefOr[Element] = js.undefined
+  var _notGiven: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Type of medication usage
     */
-  var category: js.UndefOr[CodeableConcept] = js.undefined
+  var category: js.UndefOr[CodeableConcept] = js.native
   /**
     * Encounter or Episode of Care administered as part of
     */
-  var context: js.UndefOr[Reference] = js.undefined
+  var context: js.UndefOr[Reference] = js.native
   /**
     * Instantiates protocol or definition
     */
-  var definition: js.UndefOr[js.Array[Reference]] = js.undefined
+  var definition: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Device used to administer
     */
-  var device: js.UndefOr[js.Array[Reference]] = js.undefined
+  var device: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Details of how medication was taken
     */
-  var dosage: js.UndefOr[MedicationAdministrationDosage] = js.undefined
+  var dosage: js.UndefOr[MedicationAdministrationDosage] = js.native
   /**
     * Start and end time of administration
     */
-  var effectiveDateTime: js.UndefOr[dateTime] = js.undefined
+  var effectiveDateTime: js.UndefOr[dateTime] = js.native
   /**
     * Start and end time of administration
     */
-  var effectivePeriod: js.UndefOr[Period] = js.undefined
+  var effectivePeriod: js.UndefOr[Period] = js.native
   /**
     * A list of events of interest in the lifecycle
     */
-  var eventHistory: js.UndefOr[js.Array[Reference]] = js.undefined
+  var eventHistory: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * External identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * What was administered
     */
-  var medicationCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var medicationCodeableConcept: js.UndefOr[CodeableConcept] = js.native
   /**
     * What was administered
     */
-  var medicationReference: js.UndefOr[Reference] = js.undefined
+  var medicationReference: js.UndefOr[Reference] = js.native
   /**
     * True if medication not administered
     */
-  var notGiven: js.UndefOr[Boolean] = js.undefined
+  var notGiven: js.UndefOr[Boolean] = js.native
   /**
     * Information about the administration
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
+  var note: js.UndefOr[js.Array[Annotation]] = js.native
   /**
     * Part of referenced event
     */
-  var partOf: js.UndefOr[js.Array[Reference]] = js.undefined
+  var partOf: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Who administered substance
     */
-  var performer: js.UndefOr[js.Array[MedicationAdministrationPerformer]] = js.undefined
+  var performer: js.UndefOr[js.Array[MedicationAdministrationPerformer]] = js.native
   /**
     * Request administration performed against
     */
-  var prescription: js.UndefOr[Reference] = js.undefined
+  var prescription: js.UndefOr[Reference] = js.native
   /**
     * Reason administration performed
     */
-  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Reason administration not performed
     */
-  var reasonNotGiven: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var reasonNotGiven: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Condition or Observation that supports why the medication was administered
     */
-  var reasonReference: js.UndefOr[js.Array[Reference]] = js.undefined
+  var reasonReference: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * in-progress | on-hold | completed | entered-in-error | stopped | unknown
     */
-  var status: code
+  var status: code = js.native
   /**
     * Who received medication
     */
-  var subject: Reference
+  var subject: Reference = js.native
   /**
     * Additional information to support administration
     */
-  var supportingInformation: js.UndefOr[js.Array[Reference]] = js.undefined
+  var supportingInformation: js.UndefOr[js.Array[Reference]] = js.native
 }
 
 object MedicationAdministration {
   @scala.inline
-  def apply(
-    status: code,
-    subject: Reference,
-    _effectiveDateTime: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _notGiven: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    category: CodeableConcept = null,
-    contained: js.Array[Resource] = null,
-    context: Reference = null,
-    definition: js.Array[Reference] = null,
-    device: js.Array[Reference] = null,
-    dosage: MedicationAdministrationDosage = null,
-    effectiveDateTime: dateTime = null,
-    effectivePeriod: Period = null,
-    eventHistory: js.Array[Reference] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    medicationCodeableConcept: CodeableConcept = null,
-    medicationReference: Reference = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    notGiven: js.UndefOr[Boolean] = js.undefined,
-    note: js.Array[Annotation] = null,
-    partOf: js.Array[Reference] = null,
-    performer: js.Array[MedicationAdministrationPerformer] = null,
-    prescription: Reference = null,
-    reasonCode: js.Array[CodeableConcept] = null,
-    reasonNotGiven: js.Array[CodeableConcept] = null,
-    reasonReference: js.Array[Reference] = null,
-    resourceType: code = null,
-    supportingInformation: js.Array[Reference] = null,
-    text: Narrative = null
-  ): MedicationAdministration = {
+  def apply(status: code, subject: Reference): MedicationAdministration = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
-    if (_effectiveDateTime != null) __obj.updateDynamic("_effectiveDateTime")(_effectiveDateTime.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_notGiven != null) __obj.updateDynamic("_notGiven")(_notGiven.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (dosage != null) __obj.updateDynamic("dosage")(dosage.asInstanceOf[js.Any])
-    if (effectiveDateTime != null) __obj.updateDynamic("effectiveDateTime")(effectiveDateTime.asInstanceOf[js.Any])
-    if (effectivePeriod != null) __obj.updateDynamic("effectivePeriod")(effectivePeriod.asInstanceOf[js.Any])
-    if (eventHistory != null) __obj.updateDynamic("eventHistory")(eventHistory.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (medicationCodeableConcept != null) __obj.updateDynamic("medicationCodeableConcept")(medicationCodeableConcept.asInstanceOf[js.Any])
-    if (medicationReference != null) __obj.updateDynamic("medicationReference")(medicationReference.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(notGiven)) __obj.updateDynamic("notGiven")(notGiven.get.asInstanceOf[js.Any])
-    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (partOf != null) __obj.updateDynamic("partOf")(partOf.asInstanceOf[js.Any])
-    if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])
-    if (prescription != null) __obj.updateDynamic("prescription")(prescription.asInstanceOf[js.Any])
-    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
-    if (reasonNotGiven != null) __obj.updateDynamic("reasonNotGiven")(reasonNotGiven.asInstanceOf[js.Any])
-    if (reasonReference != null) __obj.updateDynamic("reasonReference")(reasonReference.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (supportingInformation != null) __obj.updateDynamic("supportingInformation")(supportingInformation.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicationAdministration]
   }
+  @scala.inline
+  implicit class MedicationAdministrationOps[Self <: MedicationAdministration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_effectiveDateTime(value: Element): Self = this.set("_effectiveDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_effectiveDateTime: Self = this.set("_effectiveDateTime", js.undefined)
+    @scala.inline
+    def set_notGiven(value: Element): Self = this.set("_notGiven", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_notGiven: Self = this.set("_notGiven", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setContext(value: Reference): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setDefinitionVarargs(value: Reference*): Self = this.set("definition", js.Array(value :_*))
+    @scala.inline
+    def setDefinition(value: js.Array[Reference]): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinition: Self = this.set("definition", js.undefined)
+    @scala.inline
+    def setDeviceVarargs(value: Reference*): Self = this.set("device", js.Array(value :_*))
+    @scala.inline
+    def setDevice(value: js.Array[Reference]): Self = this.set("device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("device", js.undefined)
+    @scala.inline
+    def setDosage(value: MedicationAdministrationDosage): Self = this.set("dosage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDosage: Self = this.set("dosage", js.undefined)
+    @scala.inline
+    def setEffectiveDateTime(value: dateTime): Self = this.set("effectiveDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectiveDateTime: Self = this.set("effectiveDateTime", js.undefined)
+    @scala.inline
+    def setEffectivePeriod(value: Period): Self = this.set("effectivePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectivePeriod: Self = this.set("effectivePeriod", js.undefined)
+    @scala.inline
+    def setEventHistoryVarargs(value: Reference*): Self = this.set("eventHistory", js.Array(value :_*))
+    @scala.inline
+    def setEventHistory(value: js.Array[Reference]): Self = this.set("eventHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventHistory: Self = this.set("eventHistory", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setMedicationCodeableConcept(value: CodeableConcept): Self = this.set("medicationCodeableConcept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedicationCodeableConcept: Self = this.set("medicationCodeableConcept", js.undefined)
+    @scala.inline
+    def setMedicationReference(value: Reference): Self = this.set("medicationReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedicationReference: Self = this.set("medicationReference", js.undefined)
+    @scala.inline
+    def setNotGiven(value: Boolean): Self = this.set("notGiven", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotGiven: Self = this.set("notGiven", js.undefined)
+    @scala.inline
+    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    @scala.inline
+    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("note", js.undefined)
+    @scala.inline
+    def setPartOfVarargs(value: Reference*): Self = this.set("partOf", js.Array(value :_*))
+    @scala.inline
+    def setPartOf(value: js.Array[Reference]): Self = this.set("partOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartOf: Self = this.set("partOf", js.undefined)
+    @scala.inline
+    def setPerformerVarargs(value: MedicationAdministrationPerformer*): Self = this.set("performer", js.Array(value :_*))
+    @scala.inline
+    def setPerformer(value: js.Array[MedicationAdministrationPerformer]): Self = this.set("performer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformer: Self = this.set("performer", js.undefined)
+    @scala.inline
+    def setPrescription(value: Reference): Self = this.set("prescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrescription: Self = this.set("prescription", js.undefined)
+    @scala.inline
+    def setReasonCodeVarargs(value: CodeableConcept*): Self = this.set("reasonCode", js.Array(value :_*))
+    @scala.inline
+    def setReasonCode(value: js.Array[CodeableConcept]): Self = this.set("reasonCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonCode: Self = this.set("reasonCode", js.undefined)
+    @scala.inline
+    def setReasonNotGivenVarargs(value: CodeableConcept*): Self = this.set("reasonNotGiven", js.Array(value :_*))
+    @scala.inline
+    def setReasonNotGiven(value: js.Array[CodeableConcept]): Self = this.set("reasonNotGiven", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonNotGiven: Self = this.set("reasonNotGiven", js.undefined)
+    @scala.inline
+    def setReasonReferenceVarargs(value: Reference*): Self = this.set("reasonReference", js.Array(value :_*))
+    @scala.inline
+    def setReasonReference(value: js.Array[Reference]): Self = this.set("reasonReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonReference: Self = this.set("reasonReference", js.undefined)
+    @scala.inline
+    def setSupportingInformationVarargs(value: Reference*): Self = this.set("supportingInformation", js.Array(value :_*))
+    @scala.inline
+    def setSupportingInformation(value: js.Array[Reference]): Self = this.set("supportingInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportingInformation: Self = this.set("supportingInformation", js.undefined)
+  }
+  
 }
 

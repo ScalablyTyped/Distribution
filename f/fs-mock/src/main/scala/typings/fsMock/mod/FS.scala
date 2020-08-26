@@ -220,6 +220,12 @@ trait FS extends js.Object {
   def stat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, _]): Unit = js.native
   def statSync(path: String): Stats = js.native
   def symlink(srcpath: String, dstpath: String): Unit = js.native
+  def symlink(
+    srcpath: String,
+    dstpath: String,
+    `type`: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
+  ): Unit = js.native
   def symlink(srcpath: String, dstpath: String, `type`: String): Unit = js.native
   def symlink(
     srcpath: String,

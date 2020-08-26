@@ -13,6 +13,7 @@ trait ListRows extends js.Object {
   def apply(Index: String): ListRow = js.native
   def apply(Index: Double): ListRow = js.native
   def Add(): ListRow = js.native
+  def Add(Position: js.UndefOr[scala.Nothing], AlwaysInsert: Boolean): ListRow = js.native
   def Add(Position: Double): ListRow = js.native
   def Add(Position: Double, AlwaysInsert: Boolean): ListRow = js.native
   def Item(Index: String): ListRow = js.native

@@ -54,24 +54,52 @@ trait SchemaErrorProto extends js.Object {
 
 object SchemaErrorProto {
   @scala.inline
-  def apply(
-    argument: js.Array[String] = null,
-    code: String = null,
-    debugInfo: String = null,
-    domain: String = null,
-    externalErrorMessage: String = null,
-    location: String = null,
-    locationType: String = null
-  ): SchemaErrorProto = {
+  def apply(): SchemaErrorProto = {
     val __obj = js.Dynamic.literal()
-    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (externalErrorMessage != null) __obj.updateDynamic("externalErrorMessage")(externalErrorMessage.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaErrorProto]
   }
+  @scala.inline
+  implicit class SchemaErrorProtoOps[Self <: SchemaErrorProto] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgumentVarargs(value: String*): Self = this.set("argument", js.Array(value :_*))
+    @scala.inline
+    def setArgument(value: js.Array[String]): Self = this.set("argument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgument: Self = this.set("argument", js.undefined)
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setDebugInfo(value: String): Self = this.set("debugInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugInfo: Self = this.set("debugInfo", js.undefined)
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setExternalErrorMessage(value: String): Self = this.set("externalErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalErrorMessage: Self = this.set("externalErrorMessage", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationType: Self = this.set("locationType", js.undefined)
+  }
+  
 }
 

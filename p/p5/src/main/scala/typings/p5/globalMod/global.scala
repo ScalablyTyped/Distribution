@@ -680,7 +680,11 @@ object global extends js.Object {
     *   @chainable
     */
   def ambientMaterial(v1: Double): ^ = js.native
+  def ambientMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
+  def ambientMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double): ^ = js.native
+  def ambientMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double, a: Double): ^ = js.native
   def ambientMaterial(v1: Double, v2: Double): ^ = js.native
+  def ambientMaterial(v1: Double, v2: Double, v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
   def ambientMaterial(v1: Double, v2: Double, v3: Double): ^ = js.native
   def ambientMaterial(v1: Double, v2: Double, v3: Double, a: Double): ^ = js.native
   /**
@@ -755,7 +759,6 @@ object global extends js.Object {
     *   @chainable
     */
   def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double): ^ = js.native
-  def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double, mode: ARC_MODE): ^ = js.native
   def arc(
     x: Double,
     y: Double,
@@ -763,9 +766,10 @@ object global extends js.Object {
     h: Double,
     start: Double,
     stop: Double,
-    mode: ARC_MODE,
+    mode: js.UndefOr[ARC_MODE],
     detail: Double
   ): ^ = js.native
+  def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double, mode: ARC_MODE): ^ = js.native
   /**
     *   Copies an array (or part of an array) to another
     *   array. The src array is copied to the dst array,
@@ -1460,9 +1464,121 @@ object global extends js.Object {
     *   @chainable
     */
   def box(): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: js.UndefOr[scala.Nothing],
+    depth: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: js.UndefOr[scala.Nothing],
+    depth: js.UndefOr[scala.Nothing],
+    detailX: Double
+  ): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: js.UndefOr[scala.Nothing],
+    depth: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def box(width: js.UndefOr[scala.Nothing], Height: js.UndefOr[scala.Nothing], depth: Double): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: js.UndefOr[scala.Nothing],
+    depth: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: js.UndefOr[scala.Nothing],
+    depth: Double,
+    detailX: Double
+  ): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: js.UndefOr[scala.Nothing],
+    depth: Double,
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def box(width: js.UndefOr[scala.Nothing], Height: Double): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: Double,
+    depth: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: Double,
+    depth: js.UndefOr[scala.Nothing],
+    detailX: Double
+  ): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: Double,
+    depth: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def box(width: js.UndefOr[scala.Nothing], Height: Double, depth: Double): ^ = js.native
+  def box(
+    width: js.UndefOr[scala.Nothing],
+    Height: Double,
+    depth: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def box(width: js.UndefOr[scala.Nothing], Height: Double, depth: Double, detailX: Double): ^ = js.native
+  def box(width: js.UndefOr[scala.Nothing], Height: Double, depth: Double, detailX: Double, detailY: Double): ^ = js.native
   def box(width: Double): ^ = js.native
+  def box(
+    width: Double,
+    Height: js.UndefOr[scala.Nothing],
+    depth: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def box(
+    width: Double,
+    Height: js.UndefOr[scala.Nothing],
+    depth: js.UndefOr[scala.Nothing],
+    detailX: Double
+  ): ^ = js.native
+  def box(
+    width: Double,
+    Height: js.UndefOr[scala.Nothing],
+    depth: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def box(width: Double, Height: js.UndefOr[scala.Nothing], depth: Double): ^ = js.native
+  def box(
+    width: Double,
+    Height: js.UndefOr[scala.Nothing],
+    depth: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def box(width: Double, Height: js.UndefOr[scala.Nothing], depth: Double, detailX: Double): ^ = js.native
+  def box(width: Double, Height: js.UndefOr[scala.Nothing], depth: Double, detailX: Double, detailY: Double): ^ = js.native
   def box(width: Double, Height: Double): ^ = js.native
+  def box(
+    width: Double,
+    Height: Double,
+    depth: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def box(width: Double, Height: Double, depth: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
+  def box(width: Double, Height: Double, depth: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
   def box(width: Double, Height: Double, depth: Double): ^ = js.native
+  def box(width: Double, Height: Double, depth: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
   def box(width: Double, Height: Double, depth: Double, detailX: Double): ^ = js.native
   def box(width: Double, Height: Double, depth: Double, detailX: Double, detailY: Double): ^ = js.native
   def brightness(color: String): Double = js.native
@@ -1824,9 +1940,121 @@ object global extends js.Object {
     *   @chainable
     */
   def cone(): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: js.UndefOr[scala.Nothing],
+    cap: Boolean
+  ): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double,
+    cap: Boolean
+  ): ^ = js.native
+  def cone(radius: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: js.UndefOr[scala.Nothing],
+    cap: Boolean
+  ): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double,
+    cap: Boolean
+  ): ^ = js.native
+  def cone(radius: js.UndefOr[scala.Nothing], height: Double): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: js.UndefOr[scala.Nothing],
+    cap: Boolean
+  ): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double,
+    cap: Boolean
+  ): ^ = js.native
+  def cone(radius: js.UndefOr[scala.Nothing], height: Double, detailX: Double): ^ = js.native
+  def cone(
+    radius: js.UndefOr[scala.Nothing],
+    height: Double,
+    detailX: Double,
+    detailY: js.UndefOr[scala.Nothing],
+    cap: Boolean
+  ): ^ = js.native
+  def cone(radius: js.UndefOr[scala.Nothing], height: Double, detailX: Double, detailY: Double): ^ = js.native
+  def cone(radius: js.UndefOr[scala.Nothing], height: Double, detailX: Double, detailY: Double, cap: Boolean): ^ = js.native
   def cone(radius: Double): ^ = js.native
+  def cone(
+    radius: Double,
+    height: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: js.UndefOr[scala.Nothing],
+    cap: Boolean
+  ): ^ = js.native
+  def cone(
+    radius: Double,
+    height: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def cone(
+    radius: Double,
+    height: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double,
+    cap: Boolean
+  ): ^ = js.native
+  def cone(radius: Double, height: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
+  def cone(
+    radius: Double,
+    height: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: js.UndefOr[scala.Nothing],
+    cap: Boolean
+  ): ^ = js.native
+  def cone(radius: Double, height: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
+  def cone(radius: Double, height: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double, cap: Boolean): ^ = js.native
   def cone(radius: Double, height: Double): ^ = js.native
+  def cone(
+    radius: Double,
+    height: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: js.UndefOr[scala.Nothing],
+    cap: Boolean
+  ): ^ = js.native
+  def cone(radius: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
+  def cone(radius: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double, cap: Boolean): ^ = js.native
   def cone(radius: Double, height: Double, detailX: Double): ^ = js.native
+  def cone(radius: Double, height: Double, detailX: Double, detailY: js.UndefOr[scala.Nothing], cap: Boolean): ^ = js.native
   def cone(radius: Double, height: Double, detailX: Double, detailY: Double): ^ = js.native
   def cone(radius: Double, height: Double, detailX: Double, detailY: Double, cap: Boolean): ^ = js.native
   /**
@@ -1947,6 +2175,7 @@ object global extends js.Object {
     *   @return pointer to audio p5.Element
     */
   def createAudio(): MediaElement = js.native
+  def createAudio(src: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
   def createAudio(src: String): MediaElement = js.native
   def createAudio(src: String, callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
   def createAudio(src: js.Array[String]): MediaElement = js.native
@@ -2033,6 +2262,7 @@ object global extends js.Object {
     *   @return pointer to p5.Element holding created node
     */
   def createCheckbox(): Element = js.native
+  def createCheckbox(label: js.UndefOr[scala.Nothing], value: Boolean): Element = js.native
   def createCheckbox(label: String): Element = js.native
   def createCheckbox(label: String, value: Boolean): Element = js.native
   /**
@@ -2079,6 +2309,7 @@ object global extends js.Object {
     *   element
     */
   def createFileInput(): Element = js.native
+  def createFileInput(callback: js.UndefOr[scala.Nothing], multiple: String): Element = js.native
   def createFileInput(callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   def createFileInput(callback: js.Function1[/* repeated */ js.Any, _], multiple: String): Element = js.native
   /**
@@ -2132,6 +2363,11 @@ object global extends js.Object {
     *   @return pointer to p5.Element holding created node
     */
   def createImg(src: String): Element = js.native
+  def createImg(
+    src: String,
+    alt: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* repeated */ js.Any, _]
+  ): Element = js.native
   def createImg(src: String, alt: String): Element = js.native
   def createImg(src: String, alt: String, successCallback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
   /**
@@ -2154,6 +2390,7 @@ object global extends js.Object {
     *   @return pointer to p5.Element holding created node
     */
   def createInput(): Element = js.native
+  def createInput(value: js.UndefOr[scala.Nothing], `type`: String): Element = js.native
   def createInput(value: String): Element = js.native
   def createInput(value: String, `type`: String): Element = js.native
   /**
@@ -2223,6 +2460,7 @@ object global extends js.Object {
     *   @return pointer to p5.Element holding created node
     */
   def createSlider(min: Double, max: Double): Element = js.native
+  def createSlider(min: Double, max: Double, value: js.UndefOr[scala.Nothing], step: Double): Element = js.native
   def createSlider(min: Double, max: Double, value: Double): Element = js.native
   def createSlider(min: Double, max: Double, value: Double, step: Double): Element = js.native
   /**
@@ -2256,7 +2494,11 @@ object global extends js.Object {
     *   @param [z] z component of the vector
     */
   def createVector(): Vector = js.native
+  def createVector(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
+  def createVector(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
+  def createVector(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Vector = js.native
   def createVector(x: Double): Vector = js.native
+  def createVector(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def createVector(x: Double, y: Double): Vector = js.native
   def createVector(x: Double, y: Double, z: Double): Vector = js.native
   /**
@@ -2308,9 +2550,11 @@ object global extends js.Object {
     *   (must be less than 32)
     */
   def cursor(`type`: String): Unit = js.native
+  def cursor(`type`: String, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def cursor(`type`: String, x: Double): Unit = js.native
   def cursor(`type`: String, x: Double, y: Double): Unit = js.native
   def cursor(`type`: CURSOR_TYPE): Unit = js.native
+  def cursor(`type`: CURSOR_TYPE, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def cursor(`type`: CURSOR_TYPE, x: Double): Unit = js.native
   def cursor(`type`: CURSOR_TYPE, x: Double, y: Double): Unit = js.native
   /**
@@ -2661,9 +2905,197 @@ object global extends js.Object {
     *   @param [zOff] Z axis offset from origin (0,0,0)
     */
   def debugMode(mode: UNKNOWN_P5_CONSTANT): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: js.UndefOr[scala.Nothing],
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: Double,
+    yOff: js.UndefOr[scala.Nothing],
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: Double,
+    yOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: Double,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: js.UndefOr[scala.Nothing], gridDivisions: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: Double,
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: js.UndefOr[scala.Nothing],
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: Double,
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: Double,
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: Double,
+    xOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: Double,
+    xOff: Double,
+    yOff: js.UndefOr[scala.Nothing],
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: Double,
+    xOff: Double,
+    yOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: js.UndefOr[scala.Nothing],
+    gridDivisions: Double,
+    xOff: Double,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
   def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: js.UndefOr[scala.Nothing],
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: Double,
+    yOff: js.UndefOr[scala.Nothing],
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: Double,
+    yOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: js.UndefOr[scala.Nothing],
+    xOff: Double,
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
   def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Double,
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: js.UndefOr[scala.Nothing],
+    zOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Double,
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: Double
+  ): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Double,
+    xOff: js.UndefOr[scala.Nothing],
+    yOff: Double,
+    zOff: Double
+  ): Unit = js.native
   def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Double): Unit = js.native
+  def debugMode(
+    mode: UNKNOWN_P5_CONSTANT,
+    gridSize: Double,
+    gridDivisions: Double,
+    xOff: Double,
+    yOff: js.UndefOr[scala.Nothing],
+    zOff: Double
+  ): Unit = js.native
   def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Double, yOff: Double): Unit = js.native
   def debugMode(
     mode: UNKNOWN_P5_CONSTANT,
@@ -2891,9 +3323,145 @@ object global extends js.Object {
     *   @chainable
     */
   def ellipsoid(): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: Double
+  ): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: js.UndefOr[scala.Nothing], radiusz: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: Double,
+    detailX: Double
+  ): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: Double,
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: Double,
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: Double,
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: Double
+  ): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: Double,
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: Double, radiusz: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: Double,
+    radiusz: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: Double, radiusz: Double, detailX: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: js.UndefOr[scala.Nothing],
+    radiusy: Double,
+    radiusz: Double,
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
   def ellipsoid(radiusx: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: Double,
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(
+    radiusx: Double,
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: Double
+  ): ^ = js.native
+  def ellipsoid(
+    radiusx: Double,
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(radiusx: Double, radiusy: js.UndefOr[scala.Nothing], radiusz: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: Double,
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(radiusx: Double, radiusy: js.UndefOr[scala.Nothing], radiusz: Double, detailX: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: Double,
+    radiusy: js.UndefOr[scala.Nothing],
+    radiusz: Double,
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
   def ellipsoid(radiusx: Double, radiusy: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: Double,
+    radiusy: Double,
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def ellipsoid(radiusx: Double, radiusy: Double, radiusz: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: Double,
+    radiusy: Double,
+    radiusz: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
   def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double): ^ = js.native
+  def ellipsoid(
+    radiusx: Double,
+    radiusy: Double,
+    radiusz: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
   def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double): ^ = js.native
   def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double, detailY: Double): ^ = js.native
   /**
@@ -3427,9 +3995,187 @@ object global extends js.Object {
     *   with the error after one occurs.
     */
   def httpDo(path: String): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(path: String, method: js.UndefOr[scala.Nothing], datatype: String): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(path: String, method: js.UndefOr[scala.Nothing], datatype: String, data: js.Object): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: String,
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: String,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: js.UndefOr[scala.Nothing],
+    datatype: String,
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpDo(path: String, method: String): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(path: String, method: String, datatype: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpDo(path: String, method: String, datatype: String): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpDo(path: String, method: String, datatype: String, data: js.Object): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    method: String,
+    datatype: String,
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpDo(
     path: String,
     method: String,
@@ -3466,6 +4212,12 @@ object global extends js.Object {
     *   argument
     */
   def httpDo(path: String, options: js.Object): js.Promise[_] = js.native
+  def httpDo(
+    path: String,
+    options: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpDo(path: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def httpDo(
     path: String,
@@ -3539,6 +4291,12 @@ object global extends js.Object {
     *   argument
     */
   def httpGet(path: String, data: js.Object): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpGet(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def httpGet(
     path: String,
@@ -3547,6 +4305,12 @@ object global extends js.Object {
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Promise[_] = js.native
   def httpGet(path: String, data: Boolean): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    data: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpGet(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def httpGet(
     path: String,
@@ -3554,8 +4318,97 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(path: String, datatype: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(path: String, datatype: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: Boolean,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: Boolean,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpGet(path: String, datatype: String): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpGet(path: String, datatype: String, data: js.Object): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: String,
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpGet(path: String, datatype: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def httpGet(
     path: String,
@@ -3565,6 +4418,13 @@ object global extends js.Object {
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Promise[_] = js.native
   def httpGet(path: String, datatype: String, data: Boolean): js.Promise[_] = js.native
+  def httpGet(
+    path: String,
+    datatype: String,
+    data: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpGet(path: String, datatype: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def httpGet(
     path: String,
@@ -3627,6 +4487,12 @@ object global extends js.Object {
     *   argument
     */
   def httpPost(path: String, data: js.Object): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpPost(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def httpPost(
     path: String,
@@ -3635,6 +4501,12 @@ object global extends js.Object {
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Promise[_] = js.native
   def httpPost(path: String, data: Boolean): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    data: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpPost(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def httpPost(
     path: String,
@@ -3642,8 +4514,97 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(path: String, datatype: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: js.Object,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(path: String, datatype: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: Boolean,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: js.UndefOr[scala.Nothing],
+    data: Boolean,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpPost(path: String, datatype: String): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpPost(path: String, datatype: String, data: js.Object): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: String,
+    data: js.Object,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpPost(path: String, datatype: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def httpPost(
     path: String,
@@ -3653,6 +4614,13 @@ object global extends js.Object {
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Promise[_] = js.native
   def httpPost(path: String, datatype: String, data: Boolean): js.Promise[_] = js.native
+  def httpPost(
+    path: String,
+    datatype: String,
+    data: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Promise[_] = js.native
   def httpPost(path: String, datatype: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def httpPost(
     path: String,
@@ -3687,6 +4655,17 @@ object global extends js.Object {
     dHeight: Double,
     sx: Double,
     sy: Double,
+    sWidth: js.UndefOr[scala.Nothing],
+    sHeight: Double
+  ): Unit = js.native
+  def image(
+    img: Element,
+    dx: Double,
+    dy: Double,
+    dWidth: Double,
+    dHeight: Double,
+    sx: Double,
+    sy: Double,
     sWidth: Double
   ): Unit = js.native
   def image(
@@ -3701,6 +4680,7 @@ object global extends js.Object {
     sHeight: Double
   ): Unit = js.native
   def image(img: Element, x: Double, y: Double): Unit = js.native
+  def image(img: Element, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def image(img: Element, x: Double, y: Double, width: Double): Unit = js.native
   def image(img: Element, x: Double, y: Double, width: Double, height: Double): Unit = js.native
   /**
@@ -3752,6 +4732,17 @@ object global extends js.Object {
     dHeight: Double,
     sx: Double,
     sy: Double,
+    sWidth: js.UndefOr[scala.Nothing],
+    sHeight: Double
+  ): Unit = js.native
+  def image(
+    img: Image,
+    dx: Double,
+    dy: Double,
+    dWidth: Double,
+    dHeight: Double,
+    sx: Double,
+    sy: Double,
     sWidth: Double
   ): Unit = js.native
   def image(
@@ -3792,6 +4783,7 @@ object global extends js.Object {
     *   @param [height] the height to draw the image
     */
   def image(img: Image, x: Double, y: Double): Unit = js.native
+  def image(img: Image, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def image(img: Image, x: Double, y: Double, width: Double): Unit = js.native
   def image(img: Image, x: Double, y: Double, width: Double, height: Double): Unit = js.native
   /**
@@ -4067,6 +5059,11 @@ object global extends js.Object {
     *   the loaded buffer
     */
   def loadBytes(file: String): js.Object = js.native
+  def loadBytes(
+    file: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object = js.native
   def loadBytes(file: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
   def loadBytes(
     file: String,
@@ -4090,6 +5087,7 @@ object global extends js.Object {
     *   @return p5.Font object
     */
   def loadFont(path: String): Font = js.native
+  def loadFont(path: String, callback: js.UndefOr[scala.Nothing], onError: js.Function1[/* repeated */ js.Any, _]): Font = js.native
   def loadFont(path: String, callback: js.Function1[/* repeated */ js.Any, _]): Font = js.native
   def loadFont(
     path: String,
@@ -4119,6 +5117,11 @@ object global extends js.Object {
     *   @return the p5.Image object
     */
   def loadImage(path: String): Image = js.native
+  def loadImage(
+    path: String,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* p1 */ Event, _]
+  ): Image = js.native
   def loadImage(path: String, successCallback: js.Function1[/* p1 */ Image, _]): Image = js.native
   def loadImage(
     path: String,
@@ -4204,6 +5207,12 @@ object global extends js.Object {
     *   argument
     */
   def loadJSON(path: String, datatype: String): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    datatype: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
   def loadJSON(path: String, datatype: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object | js.Array[_] = js.native
   def loadJSON(
     path: String,
@@ -4211,8 +5220,76 @@ object global extends js.Object {
     callback: js.Function1[/* repeated */ js.Any, _],
     errorCallback: js.Function1[/* repeated */ js.Any, _]
   ): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.UndefOr[scala.Nothing],
+    datatype: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
+  def loadJSON(path: String, jsonpOptions: js.UndefOr[scala.Nothing], datatype: String): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.UndefOr[scala.Nothing],
+    datatype: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.UndefOr[scala.Nothing],
+    datatype: String,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.UndefOr[scala.Nothing],
+    datatype: String,
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
   def loadJSON(path: String, jsonpOptions: js.Object): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
   def loadJSON(path: String, jsonpOptions: js.Object, datatype: String): js.Object | js.Array[_] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object | js.Array[_] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: js.Object,
@@ -4276,11 +5353,22 @@ object global extends js.Object {
     *   @return the p5.Geometry object
     */
   def loadModel(path: String, normalize: Boolean): Geometry = js.native
+  def loadModel(
+    path: String,
+    normalize: Boolean,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* p1 */ Event, _]
+  ): Geometry = js.native
   def loadModel(path: String, normalize: Boolean, successCallback: js.Function1[/* p1 */ Geometry, _]): Geometry = js.native
   def loadModel(
     path: String,
     normalize: Boolean,
     successCallback: js.Function1[/* p1 */ Geometry, _],
+    failureCallback: js.Function1[/* p1 */ Event, _]
+  ): Geometry = js.native
+  def loadModel(
+    path: String,
+    successCallback: js.UndefOr[scala.Nothing],
     failureCallback: js.Function1[/* p1 */ Event, _]
   ): Geometry = js.native
   def loadModel(path: String, successCallback: js.Function1[/* p1 */ Geometry, _]): Geometry = js.native
@@ -4320,6 +5408,12 @@ object global extends js.Object {
     *   vertex and fragment shader files.
     */
   def loadShader(vertFilename: String, fragFilename: String): Shader = js.native
+  def loadShader(
+    vertFilename: String,
+    fragFilename: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): Shader = js.native
   def loadShader(vertFilename: String, fragFilename: String, callback: js.Function1[/* repeated */ js.Any, _]): Shader = js.native
   def loadShader(
     vertFilename: String,
@@ -4356,6 +5450,11 @@ object global extends js.Object {
     *   @return Array of Strings
     */
   def loadStrings(filename: String): js.Array[String] = js.native
+  def loadStrings(
+    filename: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Array[String] = js.native
   def loadStrings(filename: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Array[String] = js.native
   def loadStrings(
     filename: String,
@@ -4410,6 +5509,11 @@ object global extends js.Object {
     *   argument
     */
   def loadTable(filename: String): js.Object = js.native
+  def loadTable(
+    filename: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object = js.native
   def loadTable(filename: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
   def loadTable(
     filename: String,
@@ -4466,6 +5570,12 @@ object global extends js.Object {
     *   @return Table object containing data
     */
   def loadTable(filename: String, options: String): js.Object = js.native
+  def loadTable(
+    filename: String,
+    options: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object = js.native
   def loadTable(filename: String, options: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
   def loadTable(
     filename: String,
@@ -4506,6 +5616,11 @@ object global extends js.Object {
     *   @return XML object containing data
     */
   def loadXML(filename: String): js.Object = js.native
+  def loadXML(
+    filename: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Object = js.native
   def loadXML(filename: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
   def loadXML(
     filename: String,
@@ -4796,6 +5911,8 @@ object global extends js.Object {
   def mouseWheel(): Unit = js.native
   def mouseWheel(event: js.Object): Unit = js.native
   def nf(num: String): String = js.native
+  def nf(num: String, left: js.UndefOr[scala.Nothing], right: String): String = js.native
+  def nf(num: String, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
   def nf(num: String, left: String): String = js.native
   def nf(num: String, left: String, right: String): String = js.native
   def nf(num: String, left: String, right: Double): String = js.native
@@ -4824,6 +5941,8 @@ object global extends js.Object {
     *   @return formatted String
     */
   def nf(num: Double): String = js.native
+  def nf(num: Double, left: js.UndefOr[scala.Nothing], right: String): String = js.native
+  def nf(num: Double, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
   def nf(num: Double, left: String): String = js.native
   def nf(num: Double, left: String, right: String): String = js.native
   def nf(num: Double, left: String, right: Double): String = js.native
@@ -4852,6 +5971,8 @@ object global extends js.Object {
     *   @return formatted Strings
     */
   def nf(nums: js.Array[_]): js.Array[String] = js.native
+  def nf(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: String): js.Array[String] = js.native
+  def nf(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
   def nf(nums: js.Array[_], left: String): js.Array[String] = js.native
   def nf(nums: js.Array[_], left: String, right: String): js.Array[String] = js.native
   def nf(nums: js.Array[_], left: String, right: Double): js.Array[String] = js.native
@@ -4907,6 +6028,7 @@ object global extends js.Object {
     *   @return formatted String
     */
   def nfp(num: Double): String = js.native
+  def nfp(num: Double, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
   def nfp(num: Double, left: Double): String = js.native
   def nfp(num: Double, left: Double, right: Double): String = js.native
   /**
@@ -4925,6 +6047,7 @@ object global extends js.Object {
     *   @return formatted Strings
     */
   def nfp(nums: js.Array[Double]): js.Array[String] = js.native
+  def nfp(nums: js.Array[Double], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
   def nfp(nums: js.Array[Double], left: Double): js.Array[String] = js.native
   def nfp(nums: js.Array[Double], left: Double, right: Double): js.Array[String] = js.native
   /**
@@ -4958,6 +6081,7 @@ object global extends js.Object {
     *   @return formatted String
     */
   def nfs(num: Double): String = js.native
+  def nfs(num: Double, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
   def nfs(num: Double, left: Double): String = js.native
   def nfs(num: Double, left: Double, right: Double): String = js.native
   /**
@@ -4991,6 +6115,7 @@ object global extends js.Object {
     *   @return formatted Strings
     */
   def nfs(nums: js.Array[_]): js.Array[String] = js.native
+  def nfs(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
   def nfs(nums: js.Array[_], left: Double): js.Array[String] = js.native
   def nfs(nums: js.Array[_], left: Double, right: Double): js.Array[String] = js.native
   /**
@@ -5107,6 +6232,7 @@ object global extends js.Object {
     *   specified coordinates
     */
   def noise(x: Double): Double = js.native
+  def noise(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Double = js.native
   def noise(x: Double, y: Double): Double = js.native
   def noise(x: Double, y: Double, z: Double): Double = js.native
   /**
@@ -5190,6 +6316,7 @@ object global extends js.Object {
     *   @chainable
     */
   def orbitControl(): ^ = js.native
+  def orbitControl(sensitivityX: js.UndefOr[scala.Nothing], sensitivityY: Double): ^ = js.native
   def orbitControl(sensitivityX: Double): ^ = js.native
   def orbitControl(sensitivityX: Double, sensitivityY: Double): ^ = js.native
   /**
@@ -5246,8 +6373,24 @@ object global extends js.Object {
     *   @chainable
     */
   def perspective(): ^ = js.native
+  def perspective(
+    fovy: js.UndefOr[scala.Nothing],
+    aspect: js.UndefOr[scala.Nothing],
+    near: js.UndefOr[scala.Nothing],
+    far: Double
+  ): ^ = js.native
+  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double): ^ = js.native
+  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double, far: Double): ^ = js.native
+  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double): ^ = js.native
+  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double, near: js.UndefOr[scala.Nothing], far: Double): ^ = js.native
+  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double, near: Double): ^ = js.native
+  def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double, near: Double, far: Double): ^ = js.native
   def perspective(fovy: Double): ^ = js.native
+  def perspective(fovy: Double, aspect: js.UndefOr[scala.Nothing], near: js.UndefOr[scala.Nothing], far: Double): ^ = js.native
+  def perspective(fovy: Double, aspect: js.UndefOr[scala.Nothing], near: Double): ^ = js.native
+  def perspective(fovy: Double, aspect: js.UndefOr[scala.Nothing], near: Double, far: Double): ^ = js.native
   def perspective(fovy: Double, aspect: Double): ^ = js.native
+  def perspective(fovy: Double, aspect: Double, near: js.UndefOr[scala.Nothing], far: Double): ^ = js.native
   def perspective(fovy: Double, aspect: Double, near: Double): ^ = js.native
   def perspective(fovy: Double, aspect: Double, near: Double, far: Double): ^ = js.native
   /**
@@ -5281,8 +6424,39 @@ object global extends js.Object {
     *   @chainable
     */
   def plane(): ^ = js.native
+  def plane(
+    width: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def plane(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
+  def plane(
+    width: js.UndefOr[scala.Nothing],
+    height: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def plane(width: js.UndefOr[scala.Nothing], height: Double): ^ = js.native
+  def plane(
+    width: js.UndefOr[scala.Nothing],
+    height: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def plane(width: js.UndefOr[scala.Nothing], height: Double, detailX: Double): ^ = js.native
+  def plane(width: js.UndefOr[scala.Nothing], height: Double, detailX: Double, detailY: Double): ^ = js.native
   def plane(width: Double): ^ = js.native
+  def plane(
+    width: Double,
+    height: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def plane(width: Double, height: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
+  def plane(width: Double, height: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
   def plane(width: Double, height: Double): ^ = js.native
+  def plane(width: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
   def plane(width: Double, height: Double, detailX: Double): ^ = js.native
   def plane(width: Double, height: Double, detailX: Double, detailY: Double): ^ = js.native
   /**
@@ -5594,6 +6768,7 @@ object global extends js.Object {
     *   @return the random element from the array
     */
   def random(choices: js.Array[_]): js.Any = js.native
+  def random(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def random(min: Double): Double = js.native
   def random(min: Double, max: Double): Double = js.native
   /**
@@ -5678,8 +6853,90 @@ object global extends js.Object {
     *   @chainable
     */
   def rect(x: Double, y: Double, w: Double, h: Double): ^ = js.native
+  def rect(
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    tl: js.UndefOr[scala.Nothing],
+    tr: js.UndefOr[scala.Nothing],
+    br: js.UndefOr[scala.Nothing],
+    bl: Double
+  ): ^ = js.native
+  def rect(
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    tl: js.UndefOr[scala.Nothing],
+    tr: js.UndefOr[scala.Nothing],
+    br: Double
+  ): ^ = js.native
+  def rect(
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    tl: js.UndefOr[scala.Nothing],
+    tr: js.UndefOr[scala.Nothing],
+    br: Double,
+    bl: Double
+  ): ^ = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: js.UndefOr[scala.Nothing], tr: Double): ^ = js.native
+  def rect(
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    tl: js.UndefOr[scala.Nothing],
+    tr: Double,
+    br: js.UndefOr[scala.Nothing],
+    bl: Double
+  ): ^ = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: js.UndefOr[scala.Nothing], tr: Double, br: Double): ^ = js.native
+  def rect(
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    tl: js.UndefOr[scala.Nothing],
+    tr: Double,
+    br: Double,
+    bl: Double
+  ): ^ = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double): ^ = js.native
+  def rect(
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    tl: Double,
+    tr: js.UndefOr[scala.Nothing],
+    br: js.UndefOr[scala.Nothing],
+    bl: Double
+  ): ^ = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: js.UndefOr[scala.Nothing], br: Double): ^ = js.native
+  def rect(
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    tl: Double,
+    tr: js.UndefOr[scala.Nothing],
+    br: Double,
+    bl: Double
+  ): ^ = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double): ^ = js.native
+  def rect(
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    tl: Double,
+    tr: Double,
+    br: js.UndefOr[scala.Nothing],
+    bl: Double
+  ): ^ = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double): ^ = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double, bl: Double): ^ = js.native
   /**
@@ -5934,11 +7191,20 @@ object global extends js.Object {
     *   filesize, rather than readability.
     */
   def save(): Unit = js.native
+  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: js.UndefOr[scala.Nothing], options: String): Unit = js.native
+  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
+  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: String): Unit = js.native
+  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: String, options: String): Unit = js.native
+  def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: String, options: Boolean): Unit = js.native
   def save(objectOrFilename: String): Unit = js.native
+  def save(objectOrFilename: String, filename: js.UndefOr[scala.Nothing], options: String): Unit = js.native
+  def save(objectOrFilename: String, filename: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
   def save(objectOrFilename: String, filename: String): Unit = js.native
   def save(objectOrFilename: String, filename: String, options: String): Unit = js.native
   def save(objectOrFilename: String, filename: String, options: Boolean): Unit = js.native
   def save(objectOrFilename: js.Object): Unit = js.native
+  def save(objectOrFilename: js.Object, filename: js.UndefOr[scala.Nothing], options: String): Unit = js.native
+  def save(objectOrFilename: js.Object, filename: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
   def save(objectOrFilename: js.Object, filename: String): Unit = js.native
   def save(objectOrFilename: js.Object, filename: String, options: String): Unit = js.native
   def save(objectOrFilename: js.Object, filename: String, options: Boolean): Unit = js.native
@@ -5949,6 +7215,7 @@ object global extends js.Object {
     *   @param [extension] 'jpg' or 'png'
     */
   def saveCanvas(): Unit = js.native
+  def saveCanvas(filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
   def saveCanvas(filename: String): Unit = js.native
   def saveCanvas(filename: String, extension: String): Unit = js.native
   /**
@@ -5960,9 +7227,11 @@ object global extends js.Object {
     *   @param [extension] 'jpg' or 'png'
     */
   def saveCanvas(selectedCanvas: Element): Unit = js.native
+  def saveCanvas(selectedCanvas: Element, filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
   def saveCanvas(selectedCanvas: Element, filename: String): Unit = js.native
   def saveCanvas(selectedCanvas: Element, filename: String, extension: String): Unit = js.native
   def saveCanvas(selectedCanvas: HTMLCanvasElement): Unit = js.native
+  def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
   def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String): Unit = js.native
   def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String, extension: String): Unit = js.native
   /**
@@ -6050,6 +7319,7 @@ object global extends js.Object {
   def saveTable(Table: Table, filename: String): Unit = js.native
   def saveTable(Table: Table, filename: String, options: String): Unit = js.native
   def scale(s: js.Array[Double]): ^ = js.native
+  def scale(s: js.Array[Double], y: js.UndefOr[scala.Nothing], z: Double): ^ = js.native
   def scale(s: js.Array[Double], y: Double): ^ = js.native
   def scale(s: js.Array[Double], y: Double, z: Double): ^ = js.native
   /**
@@ -6081,6 +7351,7 @@ object global extends js.Object {
     *   @chainable
     */
   def scale(s: Double): ^ = js.native
+  def scale(s: Double, y: js.UndefOr[scala.Nothing], z: Double): ^ = js.native
   def scale(s: Double, y: Double): ^ = js.native
   def scale(s: Double, y: Double, z: Double): ^ = js.native
   /**
@@ -6107,6 +7378,7 @@ object global extends js.Object {
     *   @chainable
     */
   def scale(s: Vector): ^ = js.native
+  def scale(s: Vector, y: js.UndefOr[scala.Nothing], z: Double): ^ = js.native
   def scale(s: Vector, y: Double): ^ = js.native
   def scale(s: Vector, y: Double, z: Double): ^ = js.native
   /**
@@ -6461,7 +7733,11 @@ object global extends js.Object {
     *   @chainable
     */
   def specularMaterial(v1: Double): ^ = js.native
+  def specularMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
+  def specularMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double): ^ = js.native
+  def specularMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double, a: Double): ^ = js.native
   def specularMaterial(v1: Double, v2: Double): ^ = js.native
+  def specularMaterial(v1: Double, v2: Double, v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
   def specularMaterial(v1: Double, v2: Double, v3: Double): ^ = js.native
   def specularMaterial(v1: Double, v2: Double, v3: Double, a: Double): ^ = js.native
   /**
@@ -6474,7 +7750,11 @@ object global extends js.Object {
     *   @chainable
     */
   def sphere(): ^ = js.native
+  def sphere(radius: js.UndefOr[scala.Nothing], detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
+  def sphere(radius: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
+  def sphere(radius: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
   def sphere(radius: Double): ^ = js.native
+  def sphere(radius: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
   def sphere(radius: Double, detailX: Double): ^ = js.native
   def sphere(radius: Double, detailX: Double, detailY: Double): ^ = js.native
   /**
@@ -6574,8 +7854,58 @@ object global extends js.Object {
     *   @chainable
     */
   def square(x: Double, y: Double, s: Double): ^ = js.native
+  def square(
+    x: Double,
+    y: Double,
+    s: Double,
+    tl: js.UndefOr[scala.Nothing],
+    tr: js.UndefOr[scala.Nothing],
+    br: js.UndefOr[scala.Nothing],
+    bl: Double
+  ): ^ = js.native
+  def square(
+    x: Double,
+    y: Double,
+    s: Double,
+    tl: js.UndefOr[scala.Nothing],
+    tr: js.UndefOr[scala.Nothing],
+    br: Double
+  ): ^ = js.native
+  def square(
+    x: Double,
+    y: Double,
+    s: Double,
+    tl: js.UndefOr[scala.Nothing],
+    tr: js.UndefOr[scala.Nothing],
+    br: Double,
+    bl: Double
+  ): ^ = js.native
+  def square(x: Double, y: Double, s: Double, tl: js.UndefOr[scala.Nothing], tr: Double): ^ = js.native
+  def square(
+    x: Double,
+    y: Double,
+    s: Double,
+    tl: js.UndefOr[scala.Nothing],
+    tr: Double,
+    br: js.UndefOr[scala.Nothing],
+    bl: Double
+  ): ^ = js.native
+  def square(x: Double, y: Double, s: Double, tl: js.UndefOr[scala.Nothing], tr: Double, br: Double): ^ = js.native
+  def square(x: Double, y: Double, s: Double, tl: js.UndefOr[scala.Nothing], tr: Double, br: Double, bl: Double): ^ = js.native
   def square(x: Double, y: Double, s: Double, tl: Double): ^ = js.native
+  def square(
+    x: Double,
+    y: Double,
+    s: Double,
+    tl: Double,
+    tr: js.UndefOr[scala.Nothing],
+    br: js.UndefOr[scala.Nothing],
+    bl: Double
+  ): ^ = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: js.UndefOr[scala.Nothing], br: Double): ^ = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: js.UndefOr[scala.Nothing], br: Double, bl: Double): ^ = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double): ^ = js.native
+  def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: js.UndefOr[scala.Nothing], bl: Double): ^ = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double): ^ = js.native
   def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double, bl: Double): ^ = js.native
   /**
@@ -6808,18 +8138,23 @@ object global extends js.Object {
     *   @chainable
     */
   def text(str: String, x: Double, y: Double): ^ = js.native
+  def text(str: String, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
   def text(str: String, x: Double, y: Double, x2: Double): ^ = js.native
   def text(str: String, x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
   def text(str: js.Array[_], x: Double, y: Double): ^ = js.native
+  def text(str: js.Array[_], x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
   def text(str: js.Array[_], x: Double, y: Double, x2: Double): ^ = js.native
   def text(str: js.Array[_], x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
   def text(str: js.Object, x: Double, y: Double): ^ = js.native
+  def text(str: js.Object, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
   def text(str: js.Object, x: Double, y: Double, x2: Double): ^ = js.native
   def text(str: js.Object, x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
   def text(str: Boolean, x: Double, y: Double): ^ = js.native
+  def text(str: Boolean, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
   def text(str: Boolean, x: Double, y: Double, x2: Double): ^ = js.native
   def text(str: Boolean, x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
   def text(str: Double, x: Double, y: Double): ^ = js.native
+  def text(str: Double, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
   def text(str: Double, x: Double, y: Double, x2: Double): ^ = js.native
   def text(str: Double, x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
   /**
@@ -7113,8 +8448,39 @@ object global extends js.Object {
     *   @chainable
     */
   def torus(): ^ = js.native
+  def torus(
+    radius: js.UndefOr[scala.Nothing],
+    tubeRadius: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
+  def torus(
+    radius: js.UndefOr[scala.Nothing],
+    tubeRadius: js.UndefOr[scala.Nothing],
+    detailX: Double,
+    detailY: Double
+  ): ^ = js.native
+  def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: Double): ^ = js.native
+  def torus(
+    radius: js.UndefOr[scala.Nothing],
+    tubeRadius: Double,
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: Double, detailX: Double): ^ = js.native
+  def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: Double, detailX: Double, detailY: Double): ^ = js.native
   def torus(radius: Double): ^ = js.native
+  def torus(
+    radius: Double,
+    tubeRadius: js.UndefOr[scala.Nothing],
+    detailX: js.UndefOr[scala.Nothing],
+    detailY: Double
+  ): ^ = js.native
+  def torus(radius: Double, tubeRadius: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
+  def torus(radius: Double, tubeRadius: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
   def torus(radius: Double, tubeRadius: Double): ^ = js.native
+  def torus(radius: Double, tubeRadius: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
   def torus(radius: Double, tubeRadius: Double, detailX: Double): ^ = js.native
   def torus(radius: Double, tubeRadius: Double, detailX: Double, detailY: Double): ^ = js.native
   /**
@@ -7292,8 +8658,24 @@ object global extends js.Object {
     *   @param [h] height of region to update
     */
   def updatePixels(): Unit = js.native
+  def updatePixels(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    w: js.UndefOr[scala.Nothing],
+    h: Double
+  ): Unit = js.native
+  def updatePixels(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
+  def updatePixels(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double, h: Double): Unit = js.native
+  def updatePixels(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def updatePixels(x: js.UndefOr[scala.Nothing], y: Double, w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
+  def updatePixels(x: js.UndefOr[scala.Nothing], y: Double, w: Double): Unit = js.native
+  def updatePixels(x: js.UndefOr[scala.Nothing], y: Double, w: Double, h: Double): Unit = js.native
   def updatePixels(x: Double): Unit = js.native
+  def updatePixels(x: Double, y: js.UndefOr[scala.Nothing], w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
+  def updatePixels(x: Double, y: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
+  def updatePixels(x: Double, y: js.UndefOr[scala.Nothing], w: Double, h: Double): Unit = js.native
   def updatePixels(x: Double, y: Double): Unit = js.native
+  def updatePixels(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
   def updatePixels(x: Double, y: Double, w: Double): Unit = js.native
   def updatePixels(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   /**
@@ -7321,6 +8703,7 @@ object global extends js.Object {
     *   @chainable
     */
   def vertex(x: Double, y: Double, z: Double): ^ = js.native
+  def vertex(x: Double, y: Double, z: Double, u: js.UndefOr[scala.Nothing], v: Double): ^ = js.native
   def vertex(x: Double, y: Double, z: Double, u: Double): ^ = js.native
   def vertex(x: Double, y: Double, z: Double, u: Double, v: Double): ^ = js.native
   /**

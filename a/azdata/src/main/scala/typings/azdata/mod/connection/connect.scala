@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object connect extends js.Object {
   def apply(connectionProfile: IConnectionProfile): Thenable[ConnectionResult] = js.native
+  def apply(
+    connectionProfile: IConnectionProfile,
+    saveConnection: js.UndefOr[scala.Nothing],
+    showDashboard: Boolean
+  ): Thenable[ConnectionResult] = js.native
   def apply(connectionProfile: IConnectionProfile, saveConnection: Boolean): Thenable[ConnectionResult] = js.native
   def apply(connectionProfile: IConnectionProfile, saveConnection: Boolean, showDashboard: Boolean): Thenable[ConnectionResult] = js.native
 }

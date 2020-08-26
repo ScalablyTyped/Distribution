@@ -18,11 +18,32 @@ trait GetCelebrityInfoResponse extends js.Object {
 
 object GetCelebrityInfoResponse {
   @scala.inline
-  def apply(Name: String = null, Urls: Urls = null): GetCelebrityInfoResponse = {
+  def apply(): GetCelebrityInfoResponse = {
     val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Urls != null) __obj.updateDynamic("Urls")(Urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCelebrityInfoResponse]
   }
+  @scala.inline
+  implicit class GetCelebrityInfoResponseOps[Self <: GetCelebrityInfoResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setUrlsVarargs(value: Url*): Self = this.set("Urls", js.Array(value :_*))
+    @scala.inline
+    def setUrls(value: Urls): Self = this.set("Urls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrls: Self = this.set("Urls", js.undefined)
+  }
+  
 }
 

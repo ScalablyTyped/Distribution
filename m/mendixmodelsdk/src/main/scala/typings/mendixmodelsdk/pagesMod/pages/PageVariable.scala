@@ -32,12 +32,10 @@ class PageVariable protected () extends Element {
   def containerAsNanoflowParameterMapping: NanoflowParameterMapping = js.native
   def containerAsWidgetValue: WidgetValue = js.native
   def useAllPages: Boolean = js.native
-  def useAllPages(newValue: Boolean): js.Any = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
+  def useAllPages_=(newValue: Boolean): Unit = js.native
+  def widget: Widget | Null = js.native
   def widgetLocalName: String | Null = js.native
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
 }
 
 /* static members */

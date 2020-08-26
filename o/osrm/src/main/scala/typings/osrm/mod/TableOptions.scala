@@ -9,37 +9,48 @@ import scala.scalajs.js.annotation._
   *
   * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#table
   */
+@js.native
 trait TableOptions extends Options {
   /**
     * to use location with given index as destination. Default is to use all.
     */
-  var destinations: js.UndefOr[js.Array[Double]] = js.undefined
+  var destinations: js.UndefOr[js.Array[Double]] = js.native
   /**
     * to use location with given index as source. Default is to use all.
     */
-  var sources: js.UndefOr[js.Array[Double]] = js.undefined
+  var sources: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object TableOptions {
   @scala.inline
-  def apply(
-    bearings: js.UndefOr[Null | js.Array[Bearing]] = js.undefined,
-    coordinates: js.Array[Coordinate] = null,
-    destinations: js.Array[Double] = null,
-    generate_hints: js.UndefOr[Boolean] = js.undefined,
-    hints: js.Array[Hint] = null,
-    radiuses: js.UndefOr[Null | js.Array[Radius]] = js.undefined,
-    sources: js.Array[Double] = null
-  ): TableOptions = {
+  def apply(): TableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bearings)) __obj.updateDynamic("bearings")(bearings.asInstanceOf[js.Any])
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
-    if (destinations != null) __obj.updateDynamic("destinations")(destinations.asInstanceOf[js.Any])
-    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints.get.asInstanceOf[js.Any])
-    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (!js.isUndefined(radiuses)) __obj.updateDynamic("radiuses")(radiuses.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOptions]
   }
+  @scala.inline
+  implicit class TableOptionsOps[Self <: TableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationsVarargs(value: Double*): Self = this.set("destinations", js.Array(value :_*))
+    @scala.inline
+    def setDestinations(value: js.Array[Double]): Self = this.set("destinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinations: Self = this.set("destinations", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: Double*): Self = this.set("sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: js.Array[Double]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("sources", js.undefined)
+  }
+  
 }
 

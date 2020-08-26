@@ -25,12 +25,34 @@ trait SchemaDynamicLinkWarning extends js.Object {
 
 object SchemaDynamicLinkWarning {
   @scala.inline
-  def apply(warningCode: String = null, warningDocumentLink: String = null, warningMessage: String = null): SchemaDynamicLinkWarning = {
+  def apply(): SchemaDynamicLinkWarning = {
     val __obj = js.Dynamic.literal()
-    if (warningCode != null) __obj.updateDynamic("warningCode")(warningCode.asInstanceOf[js.Any])
-    if (warningDocumentLink != null) __obj.updateDynamic("warningDocumentLink")(warningDocumentLink.asInstanceOf[js.Any])
-    if (warningMessage != null) __obj.updateDynamic("warningMessage")(warningMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDynamicLinkWarning]
   }
+  @scala.inline
+  implicit class SchemaDynamicLinkWarningOps[Self <: SchemaDynamicLinkWarning] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWarningCode(value: String): Self = this.set("warningCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarningCode: Self = this.set("warningCode", js.undefined)
+    @scala.inline
+    def setWarningDocumentLink(value: String): Self = this.set("warningDocumentLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarningDocumentLink: Self = this.set("warningDocumentLink", js.undefined)
+    @scala.inline
+    def setWarningMessage(value: String): Self = this.set("warningMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarningMessage: Self = this.set("warningMessage", js.undefined)
+  }
+  
 }
 

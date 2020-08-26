@@ -47,11 +47,6 @@ class Group protected () extends CustomResource {
   val desiredCapacity: Output_[Double] = js.native
   /**
     * A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
-    * * `waitForCapacityTimeout` (Default: "10m") A maximum
-    * [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
-    * wait for ASG instances to be healthy before timing out.  (See also Waiting
-    * for Capacity below.) Setting this to "0" causes
-    * this provider to skip all Capacity Waiting behavior.
     */
   val enabledMetrics: Output_[js.UndefOr[js.Array[Metric]]] = js.native
   /**
@@ -75,7 +70,7 @@ class Group protected () extends CustomResource {
     * [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
     * to attach to the autoscaling group **before** instances are launched. The
     * syntax is exactly the same as the separate
-    * [`aws.autoscaling.LifecycleHook`](https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html)
+    * `aws.autoscaling.LifecycleHook`
     * resource, without the `autoscalingGroupName` attribute. Please note that this will only work when creating
     * a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
     */
@@ -136,7 +131,7 @@ class Group protected () extends CustomResource {
   val placementGroup: Output_[js.UndefOr[String]] = js.native
   /**
     * Allows setting instance protection. The
-    * autoscaling group will not select instances with this setting for terminination
+    * autoscaling group will not select instances with this setting for termination
     * during scale in events.
     */
   val protectFromScaleIn: Output_[js.UndefOr[Boolean]] = js.native
@@ -150,13 +145,13 @@ class Group protected () extends CustomResource {
     */
   val suspendedProcesses: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * A list of tag blocks. Tags documented below.
+    * Configuration block(s) containing resource tags. Conflicts with `tags`. Documented below.
     */
   val tags: Output_[js.UndefOr[js.Array[GroupTag]]] = js.native
   /**
-    * A list of tag blocks (maps). Tags documented below.
+    * Set of maps containing resource tags. Conflicts with `tag`. Documented below.
     */
-  val tagsCollection: Output_[js.UndefOr[js.Array[StringDictionary[_]]]] = js.native
+  val tagsCollection: Output_[js.UndefOr[js.Array[StringDictionary[String]]]] = js.native
   /**
     * A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
     */
@@ -169,6 +164,13 @@ class Group protected () extends CustomResource {
     * A list of subnet IDs to launch resources in.
     */
   val vpcZoneIdentifiers: Output_[js.Array[String]] = js.native
+  /**
+    * A maximum
+    * [duration](https://golang.org/pkg/time/#ParseDuration) that this provider should
+    * wait for ASG instances to be healthy before timing out.  (See also Waiting
+    * for Capacity below.) Setting this to "0" causes
+    * this provider to skip all Capacity Waiting behavior.
+    */
   val waitForCapacityTimeout: Output_[js.UndefOr[String]] = js.native
   /**
     * Setting this will cause this provider to wait
@@ -191,8 +193,10 @@ object Group extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Group = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Group = js.native
   def get(name: String, id: Input[ID], state: GroupState): Group = js.native
   def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): Group = js.native
   /**

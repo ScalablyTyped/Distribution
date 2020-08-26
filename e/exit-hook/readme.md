@@ -11,8 +11,8 @@ Run some code when the process exits
 | Full name          | exit-hook |
 | Keywords           | exit, quit, process, hook, graceful, handler, shutdown, sigterm, sigint, terminate, kill, stop, event, signal |
 | # releases         | 4 |
-| # dependents       | 110 |
-| # downloads        | 113915002 |
+| # dependents       | 113 |
+| # downloads        | 114517936 |
 | # stars            | 3 |
 
 ## Links

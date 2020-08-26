@@ -26,18 +26,38 @@ trait Invite extends js.Object {
 
 object Invite {
   @scala.inline
-  def apply(
-    EmailAddress: EmailAddress = null,
-    EmailStatus: EmailStatus = null,
-    InviteId: String = null,
-    Status: InviteStatus = null
-  ): Invite = {
+  def apply(): Invite = {
     val __obj = js.Dynamic.literal()
-    if (EmailAddress != null) __obj.updateDynamic("EmailAddress")(EmailAddress.asInstanceOf[js.Any])
-    if (EmailStatus != null) __obj.updateDynamic("EmailStatus")(EmailStatus.asInstanceOf[js.Any])
-    if (InviteId != null) __obj.updateDynamic("InviteId")(InviteId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invite]
   }
+  @scala.inline
+  implicit class InviteOps[Self <: Invite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailAddress(value: EmailAddress): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddress: Self = this.set("EmailAddress", js.undefined)
+    @scala.inline
+    def setEmailStatus(value: EmailStatus): Self = this.set("EmailStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailStatus: Self = this.set("EmailStatus", js.undefined)
+    @scala.inline
+    def setInviteId(value: String): Self = this.set("InviteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInviteId: Self = this.set("InviteId", js.undefined)
+    @scala.inline
+    def setStatus(value: InviteStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

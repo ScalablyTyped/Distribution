@@ -25,36 +25,74 @@ trait PartialStyleRulesInputBas extends js.Object {
 
 object PartialStyleRulesInputBas {
   @scala.inline
-  def apply(
-    disabled: CSSProperties = null,
-    error: CSSProperties = null,
-    focused: CSSProperties = null,
-    formControl: CSSProperties = null,
-    fullWidth: CSSProperties = null,
-    input: CSSProperties = null,
-    inputDisabled: CSSProperties = null,
-    inputMarginDense: CSSProperties = null,
-    inputMultiline: CSSProperties = null,
-    inputType: CSSProperties = null,
-    inputTypeSearch: CSSProperties = null,
-    multiline: CSSProperties = null,
-    root: CSSProperties = null
-  ): PartialStyleRulesInputBas = {
+  def apply(): PartialStyleRulesInputBas = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (formControl != null) __obj.updateDynamic("formControl")(formControl.asInstanceOf[js.Any])
-    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (inputDisabled != null) __obj.updateDynamic("inputDisabled")(inputDisabled.asInstanceOf[js.Any])
-    if (inputMarginDense != null) __obj.updateDynamic("inputMarginDense")(inputMarginDense.asInstanceOf[js.Any])
-    if (inputMultiline != null) __obj.updateDynamic("inputMultiline")(inputMultiline.asInstanceOf[js.Any])
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    if (inputTypeSearch != null) __obj.updateDynamic("inputTypeSearch")(inputTypeSearch.asInstanceOf[js.Any])
-    if (multiline != null) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesInputBas]
   }
+  @scala.inline
+  implicit class PartialStyleRulesInputBasOps[Self <: PartialStyleRulesInputBas] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: CSSProperties): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFocused(value: CSSProperties): Self = this.set("focused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocused: Self = this.set("focused", js.undefined)
+    @scala.inline
+    def setFormControl(value: CSSProperties): Self = this.set("formControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormControl: Self = this.set("formControl", js.undefined)
+    @scala.inline
+    def setFullWidth(value: CSSProperties): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    @scala.inline
+    def setInput(value: CSSProperties): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setInputDisabled(value: CSSProperties): Self = this.set("inputDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDisabled: Self = this.set("inputDisabled", js.undefined)
+    @scala.inline
+    def setInputMarginDense(value: CSSProperties): Self = this.set("inputMarginDense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMarginDense: Self = this.set("inputMarginDense", js.undefined)
+    @scala.inline
+    def setInputMultiline(value: CSSProperties): Self = this.set("inputMultiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMultiline: Self = this.set("inputMultiline", js.undefined)
+    @scala.inline
+    def setInputType(value: CSSProperties): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputType: Self = this.set("inputType", js.undefined)
+    @scala.inline
+    def setInputTypeSearch(value: CSSProperties): Self = this.set("inputTypeSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputTypeSearch: Self = this.set("inputTypeSearch", js.undefined)
+    @scala.inline
+    def setMultiline(value: CSSProperties): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

@@ -30,6 +30,7 @@ class ResourceProjectsHistoriesExecutionsClusters protected () extends js.Object
     */
   def get(): GaxiosPromise[SchemaScreenshotCluster] = js.native
   def get(callback: BodyResponseCallback[SchemaScreenshotCluster]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScreenshotCluster] = js.native
   def get(params: ParamsResourceProjectsHistoriesExecutionsClustersGet): GaxiosPromise[SchemaScreenshotCluster] = js.native
   def get(
     params: ParamsResourceProjectsHistoriesExecutionsClustersGet,
@@ -68,6 +69,7 @@ class ResourceProjectsHistoriesExecutionsClusters protected () extends js.Object
     */
   def list(): GaxiosPromise[SchemaListScreenshotClustersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListScreenshotClustersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListScreenshotClustersResponse] = js.native
   def list(params: ParamsResourceProjectsHistoriesExecutionsClustersList): GaxiosPromise[SchemaListScreenshotClustersResponse] = js.native
   def list(
     params: ParamsResourceProjectsHistoriesExecutionsClustersList,

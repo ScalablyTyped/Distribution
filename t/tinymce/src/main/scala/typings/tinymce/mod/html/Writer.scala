@@ -13,6 +13,7 @@ trait Writer extends js.Object {
   def pi(name: String, text: String): Unit = js.native
   def reset(): Unit = js.native
   def start(name: String): Unit = js.native
+  def start(name: String, attrs: js.UndefOr[scala.Nothing], empty: Boolean): Unit = js.native
   def start(name: String, attrs: js.Array[_]): Unit = js.native
   def start(name: String, attrs: js.Array[_], empty: Boolean): Unit = js.native
   def text(text: String, raw: Boolean): Unit = js.native

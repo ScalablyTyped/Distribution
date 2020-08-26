@@ -4,31 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MessagingConfiguration extends CommonMessagingProperties {
-  var password: String
-  var userName: String
+  var password: String = js.native
+  var userName: String = js.native
 }
 
 object MessagingConfiguration {
   @scala.inline
-  def apply(
-    password: String,
-    userName: String,
-    cleanSession: js.UndefOr[Boolean] = js.undefined,
-    hosts: String = null,
-    onFailure: js.Function = null,
-    onSuccess: js.Function = null,
-    ports: String = null,
-    useSSL: js.UndefOr[Boolean] = js.undefined
-  ): MessagingConfiguration = {
+  def apply(password: String, userName: String): MessagingConfiguration = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession.get.asInstanceOf[js.Any])
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingConfiguration]
   }
+  @scala.inline
+  implicit class MessagingConfigurationOps[Self <: MessagingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

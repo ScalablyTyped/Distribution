@@ -119,6 +119,7 @@ object Cloud extends js.Object {
   def job(name: String): HttpResponse = js.native
   def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = js.native
   def run(name: String): js.Promise[_] = js.native
+  def run(name: String, data: js.UndefOr[scala.Nothing], options: RunOptions): js.Promise[_] = js.native
   def run(name: String, data: Params): js.Promise[_] = js.native
   def run(name: String, data: Params, options: RunOptions): js.Promise[_] = js.native
   def run[T /* <: js.Function0[_] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = js.native
@@ -145,6 +146,8 @@ object Cloud extends js.Object {
   ): js.Promise[ReturnType[T]] = js.native
   @JSName("run")
   def run_T_Function0Wildcard[T /* <: js.Function0[_] */](name: String): js.Promise[ReturnType[T]] = js.native
+  @JSName("run")
+  def run_T_Function0Wildcard[T /* <: js.Function0[_] */](name: String, data: js.UndefOr[scala.Nothing], options: RunOptions): js.Promise[ReturnType[T]] = js.native
   /**
     * Starts a given cloud job, which will process asynchronously.
     * @param jobName The function name.

@@ -9,33 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("M.Sidenav")
 @js.native
 class Sidenav ()
-  extends typings.materializeCss.M.Sidenav {
-  /**
-    * Describes if Sidenav is being dragged
-    */
-  /* CompleteClass */
-  override var isDragged: Boolean = js.native
-  /**
-    * Describes if sidenav is fixed
-    */
-  /* CompleteClass */
-  override var isFixed: Boolean = js.native
-  /**
-    * Describes open/close state of Sidenav
-    */
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /**
-    * Closes Sidenav
-    */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Opens Sidenav
-    */
-  /* CompleteClass */
-  override def open(): Unit = js.native
-}
+  extends typings.materializeCss.M.Sidenav
 
 /* static members */
 @JSGlobal("M.Sidenav")

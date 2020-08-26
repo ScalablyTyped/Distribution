@@ -24,6 +24,7 @@ class Accelerator protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: AcceleratorArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AcceleratorArgs, opts: CustomResourceOptions) = this()
   /**
     * The attributes of the accelerator. Fields documented below.
@@ -32,7 +33,7 @@ class Accelerator protected () extends CustomResource {
   /**
     * The DNS name of the accelerator. For example, `a5d53ff5ee6bca4ce.awsglobalaccelerator.com`.
     * * `hostedZoneId` --  The Global Accelerator Route 53 zone ID that can be used to
-    * route an [Alias Resource Record Set][1] to the Global Accelerator. This attribute
+    * route an [Alias Resource Record Set](https://docs.aws.amazon.com/Route53/latest/APIReference/API_AliasTarget.html) to the Global Accelerator. This attribute
     * is simply an alias for the zone ID `Z2BJ6XQ5FK7U4H`.
     */
   val dnsName: Output_[String] = js.native
@@ -54,9 +55,9 @@ class Accelerator protected () extends CustomResource {
     */
   val name: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -70,8 +71,10 @@ object Accelerator extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Accelerator = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Accelerator = js.native
   def get(name: String, id: Input[ID], state: AcceleratorState): Accelerator = js.native
   def get(name: String, id: Input[ID], state: AcceleratorState, opts: CustomResourceOptions): Accelerator = js.native
   /**

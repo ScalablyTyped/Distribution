@@ -10,6 +10,7 @@ trait BLAKE2s extends js.Object {
   def digest(): Uint8Array = js.native
   def hexDigest(): String = js.native
   def update(p: ByteArray): this.type = js.native
+  def update(p: ByteArray, offset: js.UndefOr[scala.Nothing], length: Double): this.type = js.native
   def update(p: ByteArray, offset: Double): this.type = js.native
   def update(p: ByteArray, offset: Double, length: Double): this.type = js.native
 }

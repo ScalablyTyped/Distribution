@@ -38,24 +38,50 @@ trait UICustomizationType extends js.Object {
 
 object UICustomizationType {
   @scala.inline
-  def apply(
-    CSS: CSSType = null,
-    CSSVersion: CSSVersionType = null,
-    ClientId: ClientIdType = null,
-    CreationDate: DateType = null,
-    ImageUrl: ImageUrlType = null,
-    LastModifiedDate: DateType = null,
-    UserPoolId: UserPoolIdType = null
-  ): UICustomizationType = {
+  def apply(): UICustomizationType = {
     val __obj = js.Dynamic.literal()
-    if (CSS != null) __obj.updateDynamic("CSS")(CSS.asInstanceOf[js.Any])
-    if (CSSVersion != null) __obj.updateDynamic("CSSVersion")(CSSVersion.asInstanceOf[js.Any])
-    if (ClientId != null) __obj.updateDynamic("ClientId")(ClientId.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (ImageUrl != null) __obj.updateDynamic("ImageUrl")(ImageUrl.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UICustomizationType]
   }
+  @scala.inline
+  implicit class UICustomizationTypeOps[Self <: UICustomizationType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCSS(value: CSSType): Self = this.set("CSS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCSS: Self = this.set("CSS", js.undefined)
+    @scala.inline
+    def setCSSVersion(value: CSSVersionType): Self = this.set("CSSVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCSSVersion: Self = this.set("CSSVersion", js.undefined)
+    @scala.inline
+    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setImageUrl(value: ImageUrlType): Self = this.set("ImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("ImageUrl", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateType): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+  }
+  
 }
 

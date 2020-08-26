@@ -31,12 +31,34 @@ trait SchemaRoboDirective extends js.Object {
 
 object SchemaRoboDirective {
   @scala.inline
-  def apply(actionType: String = null, inputText: String = null, resourceName: String = null): SchemaRoboDirective = {
+  def apply(): SchemaRoboDirective = {
     val __obj = js.Dynamic.literal()
-    if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
-    if (inputText != null) __obj.updateDynamic("inputText")(inputText.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRoboDirective]
   }
+  @scala.inline
+  implicit class SchemaRoboDirectiveOps[Self <: SchemaRoboDirective] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionType(value: String): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionType: Self = this.set("actionType", js.undefined)
+    @scala.inline
+    def setInputText(value: String): Self = this.set("inputText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputText: Self = this.set("inputText", js.undefined)
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+  }
+  
 }
 

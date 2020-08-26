@@ -22,16 +22,34 @@ trait DefaultRetention extends js.Object {
 
 object DefaultRetention {
   @scala.inline
-  def apply(
-    Days: js.UndefOr[Days] = js.undefined,
-    Mode: ObjectLockRetentionMode = null,
-    Years: js.UndefOr[Years] = js.undefined
-  ): DefaultRetention = {
+  def apply(): DefaultRetention = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
-    if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Years)) __obj.updateDynamic("Years")(Years.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultRetention]
   }
+  @scala.inline
+  implicit class DefaultRetentionOps[Self <: DefaultRetention] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDays(value: Days): Self = this.set("Days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("Days", js.undefined)
+    @scala.inline
+    def setMode(value: ObjectLockRetentionMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("Mode", js.undefined)
+    @scala.inline
+    def setYears(value: Years): Self = this.set("Years", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYears: Self = this.set("Years", js.undefined)
+  }
+  
 }
 

@@ -345,6 +345,7 @@ trait PathItem extends Item {
     * @return a reference to the item itself, reoriented
     */
   def reorient(): PathItem = js.native
+  def reorient(nonZero: js.UndefOr[scala.Nothing], clockwise: Boolean): PathItem = js.native
   def reorient(nonZero: Boolean): PathItem = js.native
   def reorient(nonZero: Boolean, clockwise: Boolean): PathItem = js.native
   /** 

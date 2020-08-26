@@ -12,7 +12,7 @@ React component to wrap non SSR components.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 704812 |
+| # downloads        | 709630 |
 | # stars            | 0 |
 
 ## Links

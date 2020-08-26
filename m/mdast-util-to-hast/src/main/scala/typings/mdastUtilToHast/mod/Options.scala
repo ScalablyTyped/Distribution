@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * Whether to allow [`html`](https://github.com/syntax-tree/mdast#html) nodes and inject them as raw HTML
@@ -17,7 +18,7 @@ trait Options extends js.Object {
     *
     * @default false
     */
-  var allowDangerousHtml: js.UndefOr[Boolean] = js.undefined
+  var allowDangerousHtml: js.UndefOr[Boolean] = js.native
   /**
     * Set to `true` to prefer the first when duplicate definitions are found.
     *
@@ -25,7 +26,7 @@ trait Options extends js.Object {
     *
     * @default false
     */
-  var commonmark: js.UndefOr[Boolean] = js.undefined
+  var commonmark: js.UndefOr[Boolean] = js.native
   /**
     * Object mapping [mdast](https://github.com/syntax-tree/mdast)
     * [nodes](https://github.com/syntax-tree/mdast#nodes) to functions handling them.
@@ -33,7 +34,7 @@ trait Options extends js.Object {
     * [`lib/handlers/`](https://github.com/syntax-tree/mdast-util-to-hast/blob/master/lib/handlers)
     * for examples.
     */
-  var handlers: js.UndefOr[Handlers] = js.undefined
+  var handlers: js.UndefOr[Handlers] = js.native
   /**
     * Handler for all unknown nodes.
     *
@@ -42,23 +43,43 @@ trait Options extends js.Object {
     * * Unknown nodes with [`children`][child] are transformed to `div` elements
     * * Unknown nodes with `value` are transformed to [`text`][hast-text] nodes
     */
-  var unknownHandler: js.UndefOr[Handler] = js.undefined
+  var unknownHandler: js.UndefOr[Handler] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    allowDangerousHtml: js.UndefOr[Boolean] = js.undefined,
-    commonmark: js.UndefOr[Boolean] = js.undefined,
-    handlers: Handlers = null,
-    unknownHandler: (/* h */ H, /* node */ Node) => js.Any = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDangerousHtml)) __obj.updateDynamic("allowDangerousHtml")(allowDangerousHtml.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(commonmark)) __obj.updateDynamic("commonmark")(commonmark.get.asInstanceOf[js.Any])
-    if (handlers != null) __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
-    if (unknownHandler != null) __obj.updateDynamic("unknownHandler")(js.Any.fromFunction2(unknownHandler))
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowDangerousHtml(value: Boolean): Self = this.set("allowDangerousHtml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDangerousHtml: Self = this.set("allowDangerousHtml", js.undefined)
+    @scala.inline
+    def setCommonmark(value: Boolean): Self = this.set("commonmark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommonmark: Self = this.set("commonmark", js.undefined)
+    @scala.inline
+    def setHandlers(value: Handlers): Self = this.set("handlers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandlers: Self = this.set("handlers", js.undefined)
+    @scala.inline
+    def setUnknownHandler(value: (/* h */ H, /* node */ Node) => js.Any): Self = this.set("unknownHandler", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUnknownHandler: Self = this.set("unknownHandler", js.undefined)
+  }
+  
 }
 

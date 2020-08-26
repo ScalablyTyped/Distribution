@@ -121,7 +121,17 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends js.Object {
     * replacement fragment.
     */
   def canReplace(from: Double, to: Double): Boolean = js.native
+  def canReplace(
+    from: Double,
+    to: Double,
+    replacement: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    end: Double
+  ): Boolean = js.native
+  def canReplace(from: Double, to: Double, replacement: js.UndefOr[scala.Nothing], start: Double): Boolean = js.native
+  def canReplace(from: Double, to: Double, replacement: js.UndefOr[scala.Nothing], start: Double, end: Double): Boolean = js.native
   def canReplace(from: Double, to: Double, replacement: Fragment[S]): Boolean = js.native
+  def canReplace(from: Double, to: Double, replacement: Fragment[S], start: js.UndefOr[scala.Nothing], end: Double): Boolean = js.native
   def canReplace(from: Double, to: Double, replacement: Fragment[S], start: Double): Boolean = js.native
   def canReplace(from: Double, to: Double, replacement: Fragment[S], start: Double, end: Double): Boolean = js.native
   /**
@@ -195,6 +205,7 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends js.Object {
     * attributes, and marks.
     */
   def hasMarkup(`type`: NodeType[S]): Boolean = js.native
+  def hasMarkup(`type`: NodeType[S], attrs: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): Boolean = js.native
   def hasMarkup(`type`: NodeType[S], attrs: StringDictionary[js.Any]): Boolean = js.native
   def hasMarkup(`type`: NodeType[S], attrs: StringDictionary[js.Any], marks: js.Array[Mark[S]]): Boolean = js.native
   /**
@@ -278,6 +289,7 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends js.Object {
     * inserted for every non-text leaf node encountered.
     */
   def textBetween(from: Double, to: Double): String = js.native
+  def textBetween(from: Double, to: Double, blockSeparator: js.UndefOr[scala.Nothing], leafText: String): String = js.native
   def textBetween(from: Double, to: Double, blockSeparator: String): String = js.native
   def textBetween(from: Double, to: Double, blockSeparator: String, leafText: String): String = js.native
   /**

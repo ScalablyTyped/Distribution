@@ -11,7 +11,7 @@ A node.js library for git
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 63 |
-| # downloads        | 339232 |
+| # downloads        | 345701 |
 | # stars            | 9 |
 
 ## Links

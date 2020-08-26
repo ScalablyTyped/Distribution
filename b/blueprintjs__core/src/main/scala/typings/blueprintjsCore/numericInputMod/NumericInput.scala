@@ -16,7 +16,6 @@ class NumericInput ()
   var didPasteEventJustOccur: js.Any = js.native
   var getButtonEventHandlers: js.Any = js.native
   var getIncrementDelta: js.Any = js.native
-  var getSanitizedValue: js.Any = js.native
   var handleButtonClick: js.Any = js.native
   var handleCompositionEnd: js.Any = js.native
   var handleCompositionUpdate: js.Any = js.native
@@ -27,6 +26,7 @@ class NumericInput ()
   var handleInputKeyDown: js.Any = js.native
   var handleInputKeyPress: js.Any = js.native
   var handleInputPaste: js.Any = js.native
+  var handleNextValue: js.Any = js.native
   var incrementButtonHandlers: js.Any = js.native
   var incrementValue: js.Any = js.native
   var inputElement: js.Any = js.native
@@ -34,6 +34,7 @@ class NumericInput ()
   var intervalId: js.Any = js.native
   var renderButtons: js.Any = js.native
   var renderInput: js.Any = js.native
+  var roundAndClampValue: js.Any = js.native
   var startContinuousChange: js.Any = js.native
   var stopContinuousChange: js.Any = js.native
   var updateDelta: js.Any = js.native
@@ -51,8 +52,8 @@ object NumericInput extends js.Object {
   var VALUE_ZERO: String = js.native
   var defaultProps: INumericInputProps = js.native
   var displayName: String = js.native
-  var getSanitizedValue: js.Any = js.native
   var getStepMaxPrecision: js.Any = js.native
+  var roundAndClampValue: js.Any = js.native
   def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = js.native
 }
 

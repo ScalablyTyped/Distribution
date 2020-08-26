@@ -19,6 +19,7 @@ object Array extends js.Object {
       thisArg: js.Any
     ): SugarDefaultChainable[Boolean] = js.native
     def fill(value: T): SugarDefaultChainable[this.type] = js.native
+    def fill(value: T, start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[this.type] = js.native
     def fill(value: T, start: Double): SugarDefaultChainable[this.type] = js.native
     def fill(value: T, start: Double, end: Double): SugarDefaultChainable[this.type] = js.native
     def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): SugarDefaultChainable[js.Array[T]] = js.native
@@ -117,6 +118,7 @@ object Array extends js.Object {
     def reverse(): SugarDefaultChainable[js.Array[T]] = js.native
     def shift(): SugarDefaultChainable[js.UndefOr[T]] = js.native
     def slice(): SugarDefaultChainable[js.Array[T]] = js.native
+    def slice(start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[js.Array[T]] = js.native
     def slice(start: Double): SugarDefaultChainable[js.Array[T]] = js.native
     def slice(start: Double, end: Double): SugarDefaultChainable[js.Array[T]] = js.native
     def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): SugarDefaultChainable[Boolean] = js.native

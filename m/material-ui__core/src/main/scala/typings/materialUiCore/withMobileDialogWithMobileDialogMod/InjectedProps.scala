@@ -11,10 +11,26 @@ trait InjectedProps extends js.Object {
 
 object InjectedProps {
   @scala.inline
-  def apply(fullScreen: js.UndefOr[Boolean] = js.undefined): InjectedProps = {
+  def apply(): InjectedProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectedProps]
   }
+  @scala.inline
+  implicit class InjectedPropsOps[Self <: InjectedProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFullScreen(value: Boolean): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullScreen: Self = this.set("fullScreen", js.undefined)
+  }
+  
 }
 

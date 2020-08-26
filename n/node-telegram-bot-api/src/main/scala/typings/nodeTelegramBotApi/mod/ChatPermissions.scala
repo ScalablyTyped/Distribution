@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChatPermissions extends js.Object {
-  var can_add_web_page_previews: js.UndefOr[Boolean] = js.undefined
-  var can_change_info: js.UndefOr[Boolean] = js.undefined
-  var can_invite_users: js.UndefOr[Boolean] = js.undefined
-  var can_pin_messages: js.UndefOr[Boolean] = js.undefined
-  var can_send_media_messages: js.UndefOr[Boolean] = js.undefined
-  var can_send_messages: js.UndefOr[Boolean] = js.undefined
-  var can_send_other_messages: js.UndefOr[Boolean] = js.undefined
-  var can_send_polls: js.UndefOr[Boolean] = js.undefined
+  var can_add_web_page_previews: js.UndefOr[Boolean] = js.native
+  var can_change_info: js.UndefOr[Boolean] = js.native
+  var can_invite_users: js.UndefOr[Boolean] = js.native
+  var can_pin_messages: js.UndefOr[Boolean] = js.native
+  var can_send_media_messages: js.UndefOr[Boolean] = js.native
+  var can_send_messages: js.UndefOr[Boolean] = js.native
+  var can_send_other_messages: js.UndefOr[Boolean] = js.native
+  var can_send_polls: js.UndefOr[Boolean] = js.native
 }
 
 object ChatPermissions {
   @scala.inline
-  def apply(
-    can_add_web_page_previews: js.UndefOr[Boolean] = js.undefined,
-    can_change_info: js.UndefOr[Boolean] = js.undefined,
-    can_invite_users: js.UndefOr[Boolean] = js.undefined,
-    can_pin_messages: js.UndefOr[Boolean] = js.undefined,
-    can_send_media_messages: js.UndefOr[Boolean] = js.undefined,
-    can_send_messages: js.UndefOr[Boolean] = js.undefined,
-    can_send_other_messages: js.UndefOr[Boolean] = js.undefined,
-    can_send_polls: js.UndefOr[Boolean] = js.undefined
-  ): ChatPermissions = {
+  def apply(): ChatPermissions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(can_add_web_page_previews)) __obj.updateDynamic("can_add_web_page_previews")(can_add_web_page_previews.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_change_info)) __obj.updateDynamic("can_change_info")(can_change_info.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_invite_users)) __obj.updateDynamic("can_invite_users")(can_invite_users.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_pin_messages)) __obj.updateDynamic("can_pin_messages")(can_pin_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_media_messages)) __obj.updateDynamic("can_send_media_messages")(can_send_media_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_messages)) __obj.updateDynamic("can_send_messages")(can_send_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_other_messages)) __obj.updateDynamic("can_send_other_messages")(can_send_other_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_polls)) __obj.updateDynamic("can_send_polls")(can_send_polls.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatPermissions]
   }
+  @scala.inline
+  implicit class ChatPermissionsOps[Self <: ChatPermissions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCan_add_web_page_previews(value: Boolean): Self = this.set("can_add_web_page_previews", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_add_web_page_previews: Self = this.set("can_add_web_page_previews", js.undefined)
+    @scala.inline
+    def setCan_change_info(value: Boolean): Self = this.set("can_change_info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_change_info: Self = this.set("can_change_info", js.undefined)
+    @scala.inline
+    def setCan_invite_users(value: Boolean): Self = this.set("can_invite_users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_invite_users: Self = this.set("can_invite_users", js.undefined)
+    @scala.inline
+    def setCan_pin_messages(value: Boolean): Self = this.set("can_pin_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_pin_messages: Self = this.set("can_pin_messages", js.undefined)
+    @scala.inline
+    def setCan_send_media_messages(value: Boolean): Self = this.set("can_send_media_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_send_media_messages: Self = this.set("can_send_media_messages", js.undefined)
+    @scala.inline
+    def setCan_send_messages(value: Boolean): Self = this.set("can_send_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_send_messages: Self = this.set("can_send_messages", js.undefined)
+    @scala.inline
+    def setCan_send_other_messages(value: Boolean): Self = this.set("can_send_other_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_send_other_messages: Self = this.set("can_send_other_messages", js.undefined)
+    @scala.inline
+    def setCan_send_polls(value: Boolean): Self = this.set("can_send_polls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_send_polls: Self = this.set("can_send_polls", js.undefined)
+  }
+  
 }
 

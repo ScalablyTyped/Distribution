@@ -76,6 +76,7 @@ trait FakeXMLHttpRequest extends js.Object {
     * Calls the above three methods.
     */
   def respond(status: Double): Unit = js.native
+  def respond(status: Double, headers: js.UndefOr[scala.Nothing], body: String): Unit = js.native
   def respond(status: Double, headers: js.Any): Unit = js.native
   def respond(status: Double, headers: js.Any, body: String): Unit = js.native
   /**

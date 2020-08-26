@@ -17,10 +17,10 @@ object graphQLErrorMod extends js.Object {
   class GraphQLError protected () extends Error {
     def this(
       message: String,
-      nodes: js.UndefOr[ASTNode | js.Array[ASTNode]],
+      nodes: js.UndefOr[Maybe[js.Array[ASTNode] | ASTNode]],
       source: js.UndefOr[Maybe[Source]],
       positions: js.UndefOr[Maybe[js.Array[Double]]],
-      path: js.UndefOr[Maybe[js.Array[Double | String]]],
+      path: js.UndefOr[Maybe[js.Array[String | Double]]],
       originalError: js.UndefOr[Maybe[Error]],
       extensions: js.UndefOr[Maybe[StringDictionary[_]]]
     ) = this()
@@ -39,10 +39,6 @@ object graphQLErrorMod extends js.Object {
       * Enumerable, and appears in the result of JSON.stringify().
       */
     val locations: js.UndefOr[js.Array[SourceLocation]] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     /**
       * An array of GraphQL AST Nodes corresponding to this error.
       */

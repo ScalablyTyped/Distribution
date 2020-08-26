@@ -1,72 +1,59 @@
 package typings.amapJsApi.AMap.Polygon
 
 import typings.amapJsApi.AMap.LocationValue
-import typings.amapJsApi.AMap.Map
-import typings.amapJsApi.AMap.StrokeLineCap
-import typings.amapJsApi.AMap.StrokeLineJoin
-import typings.amapJsApi.AMap.StrokeStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options[ExtraData]
   extends typings.amapJsApi.AMap.PathOverlay.Options[ExtraData] {
   /**
     * 多边形填充颜色
     */
-  var fillColor: js.UndefOr[String] = js.undefined
+  var fillColor: js.UndefOr[String] = js.native
   /**
     * 边形填充透明度
     */
-  var fillOpacity: js.UndefOr[Double] = js.undefined
+  var fillOpacity: js.UndefOr[Double] = js.native
   /**
     * 多边形轮廓线的节点坐标数组
     */
-  var path: js.UndefOr[js.Array[js.Array[LocationValue] | LocationValue]] = js.undefined
+  var path: js.UndefOr[js.Array[js.Array[LocationValue] | LocationValue]] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply[ExtraData](
-    bubble: js.UndefOr[Boolean] = js.undefined,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    cursor: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    extData: ExtraData = null,
-    fillColor: String = null,
-    fillOpacity: js.UndefOr[Double] = js.undefined,
-    lineCap: StrokeLineCap = null,
-    lineJoin: StrokeLineJoin = null,
-    map: Map = null,
-    path: js.Array[js.Array[LocationValue] | LocationValue] = null,
-    strokeColor: String = null,
-    strokeDasharray: js.Array[Double] = null,
-    strokeOpacity: js.UndefOr[Double] = js.undefined,
-    strokeStyle: StrokeStyle = null,
-    strokeWeight: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): Options[ExtraData] = {
+  def apply[ExtraData](): Options[ExtraData] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubble)) __obj.updateDynamic("bubble")(bubble.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeOpacity)) __obj.updateDynamic("strokeOpacity")(strokeOpacity.get.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeWeight)) __obj.updateDynamic("strokeWeight")(strokeWeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[ExtraData]]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFillColor(value: String): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    @scala.inline
+    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    @scala.inline
+    def setPathVarargs(value: (js.Array[LocationValue] | LocationValue)*): Self = this.set("path", js.Array(value :_*))
+    @scala.inline
+    def setPath(value: js.Array[js.Array[LocationValue] | LocationValue]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+  }
+  
 }
 

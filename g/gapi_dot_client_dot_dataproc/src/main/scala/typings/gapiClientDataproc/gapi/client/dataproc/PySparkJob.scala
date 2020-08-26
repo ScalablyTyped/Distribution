@@ -5,53 +5,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PySparkJob extends js.Object {
   /** Optional. HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip. */
-  var archiveUris: js.UndefOr[js.Array[String]] = js.undefined
+  var archiveUris: js.UndefOr[js.Array[String]] = js.native
   /**
     * Optional. The arguments to pass to the driver. Do not include arguments, such as --conf, that can be set as job properties, since a collision may occur
     * that causes an incorrect job submission.
     */
-  var args: js.UndefOr[js.Array[String]] = js.undefined
+  var args: js.UndefOr[js.Array[String]] = js.native
   /** Optional. HCFS URIs of files to be copied to the working directory of Python drivers and distributed tasks. Useful for naively parallel tasks. */
-  var fileUris: js.UndefOr[js.Array[String]] = js.undefined
+  var fileUris: js.UndefOr[js.Array[String]] = js.native
   /** Optional. HCFS URIs of jar files to add to the CLASSPATHs of the Python driver and tasks. */
-  var jarFileUris: js.UndefOr[js.Array[String]] = js.undefined
+  var jarFileUris: js.UndefOr[js.Array[String]] = js.native
   /** Optional. The runtime log config for job execution. */
-  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.native
   /** Required. The HCFS URI of the main Python file to use as the driver. Must be a .py file. */
-  var mainPythonFileUri: js.UndefOr[String] = js.undefined
+  var mainPythonFileUri: js.UndefOr[String] = js.native
   /**
     * Optional. A mapping of property names to values, used to configure PySpark. Properties that conflict with values set by the Cloud Dataproc API may be
     * overwritten. Can include properties set in /etc/spark/conf/spark-defaults.conf and classes in user code.
     */
-  var properties: js.UndefOr[Record[String, String]] = js.undefined
+  var properties: js.UndefOr[Record[String, String]] = js.native
   /** Optional. HCFS file URIs of Python files to pass to the PySpark framework. Supported file types: .py, .egg, and .zip. */
-  var pythonFileUris: js.UndefOr[js.Array[String]] = js.undefined
+  var pythonFileUris: js.UndefOr[js.Array[String]] = js.native
 }
 
 object PySparkJob {
   @scala.inline
-  def apply(
-    archiveUris: js.Array[String] = null,
-    args: js.Array[String] = null,
-    fileUris: js.Array[String] = null,
-    jarFileUris: js.Array[String] = null,
-    loggingConfig: LoggingConfig = null,
-    mainPythonFileUri: String = null,
-    properties: Record[String, String] = null,
-    pythonFileUris: js.Array[String] = null
-  ): PySparkJob = {
+  def apply(): PySparkJob = {
     val __obj = js.Dynamic.literal()
-    if (archiveUris != null) __obj.updateDynamic("archiveUris")(archiveUris.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris.asInstanceOf[js.Any])
-    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris.asInstanceOf[js.Any])
-    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
-    if (mainPythonFileUri != null) __obj.updateDynamic("mainPythonFileUri")(mainPythonFileUri.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (pythonFileUris != null) __obj.updateDynamic("pythonFileUris")(pythonFileUris.asInstanceOf[js.Any])
     __obj.asInstanceOf[PySparkJob]
   }
+  @scala.inline
+  implicit class PySparkJobOps[Self <: PySparkJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveUrisVarargs(value: String*): Self = this.set("archiveUris", js.Array(value :_*))
+    @scala.inline
+    def setArchiveUris(value: js.Array[String]): Self = this.set("archiveUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveUris: Self = this.set("archiveUris", js.undefined)
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setFileUrisVarargs(value: String*): Self = this.set("fileUris", js.Array(value :_*))
+    @scala.inline
+    def setFileUris(value: js.Array[String]): Self = this.set("fileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileUris: Self = this.set("fileUris", js.undefined)
+    @scala.inline
+    def setJarFileUrisVarargs(value: String*): Self = this.set("jarFileUris", js.Array(value :_*))
+    @scala.inline
+    def setJarFileUris(value: js.Array[String]): Self = this.set("jarFileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJarFileUris: Self = this.set("jarFileUris", js.undefined)
+    @scala.inline
+    def setLoggingConfig(value: LoggingConfig): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
+    @scala.inline
+    def setMainPythonFileUri(value: String): Self = this.set("mainPythonFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainPythonFileUri: Self = this.set("mainPythonFileUri", js.undefined)
+    @scala.inline
+    def setProperties(value: Record[String, String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setPythonFileUrisVarargs(value: String*): Self = this.set("pythonFileUris", js.Array(value :_*))
+    @scala.inline
+    def setPythonFileUris(value: js.Array[String]): Self = this.set("pythonFileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePythonFileUris: Self = this.set("pythonFileUris", js.undefined)
+  }
+  
 }
 

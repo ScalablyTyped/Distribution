@@ -11,57 +11,104 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VectorTileOptions extends js.Object {
-  var extent: js.UndefOr[Extent_] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
-  var maxResolution: js.UndefOr[Double] = js.undefined
-  var minResolution: js.UndefOr[Double] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var renderBuffer: js.UndefOr[Double] = js.undefined
-  var renderMode: js.UndefOr[VectorTileRenderType | String] = js.undefined
-  var renderOrder: js.UndefOr[js.Function2[/* feature1 */ Feature, /* feature2 */ Feature, Double]] = js.undefined
-  var source: js.UndefOr[VectorTile] = js.undefined
-  var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
-  var updateWhileAnimating: js.UndefOr[Boolean] = js.undefined
-  var updateWhileInteracting: js.UndefOr[Boolean] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var extent: js.UndefOr[Extent_] = js.native
+  var map: js.UndefOr[Map] = js.native
+  var maxResolution: js.UndefOr[Double] = js.native
+  var minResolution: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var renderBuffer: js.UndefOr[Double] = js.native
+  var renderMode: js.UndefOr[VectorTileRenderType | String] = js.native
+  var renderOrder: js.UndefOr[js.Function2[/* feature1 */ Feature, /* feature2 */ Feature, Double]] = js.native
+  var source: js.UndefOr[VectorTile] = js.native
+  var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.native
+  var updateWhileAnimating: js.UndefOr[Boolean] = js.native
+  var updateWhileInteracting: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object VectorTileOptions {
   @scala.inline
-  def apply(
-    extent: Extent_ = null,
-    map: Map = null,
-    maxResolution: js.UndefOr[Double] = js.undefined,
-    minResolution: js.UndefOr[Double] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    renderBuffer: js.UndefOr[Double] = js.undefined,
-    renderMode: VectorTileRenderType | String = null,
-    renderOrder: (/* feature1 */ Feature, /* feature2 */ Feature) => Double = null,
-    source: VectorTile = null,
-    style: Style | js.Array[Style] | StyleFunction = null,
-    updateWhileAnimating: js.UndefOr[Boolean] = js.undefined,
-    updateWhileInteracting: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): VectorTileOptions = {
+  def apply(): VectorTileOptions = {
     val __obj = js.Dynamic.literal()
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResolution)) __obj.updateDynamic("maxResolution")(maxResolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minResolution)) __obj.updateDynamic("minResolution")(minResolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderBuffer)) __obj.updateDynamic("renderBuffer")(renderBuffer.get.asInstanceOf[js.Any])
-    if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    if (renderOrder != null) __obj.updateDynamic("renderOrder")(js.Any.fromFunction2(renderOrder))
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateWhileAnimating)) __obj.updateDynamic("updateWhileAnimating")(updateWhileAnimating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateWhileInteracting)) __obj.updateDynamic("updateWhileInteracting")(updateWhileInteracting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorTileOptions]
   }
+  @scala.inline
+  implicit class VectorTileOptionsOps[Self <: VectorTileOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExtent(value: Extent_): Self = this.set("extent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtent: Self = this.set("extent", js.undefined)
+    @scala.inline
+    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setMaxResolution(value: Double): Self = this.set("maxResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResolution: Self = this.set("maxResolution", js.undefined)
+    @scala.inline
+    def setMinResolution(value: Double): Self = this.set("minResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinResolution: Self = this.set("minResolution", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setRenderBuffer(value: Double): Self = this.set("renderBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderBuffer: Self = this.set("renderBuffer", js.undefined)
+    @scala.inline
+    def setRenderMode(value: VectorTileRenderType | String): Self = this.set("renderMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderMode: Self = this.set("renderMode", js.undefined)
+    @scala.inline
+    def setRenderOrder(value: (/* feature1 */ Feature, /* feature2 */ Feature) => Double): Self = this.set("renderOrder", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRenderOrder: Self = this.set("renderOrder", js.undefined)
+    @scala.inline
+    def setSource(value: VectorTile): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setStyleFunction2(
+      value: (/* feature */ Feature | typings.openlayers.mod.render.Feature, /* resolution */ Double) => Style | js.Array[Style] | Null
+    ): Self = this.set("style", js.Any.fromFunction2(value))
+    @scala.inline
+    def setStyleVarargs(value: Style*): Self = this.set("style", js.Array(value :_*))
+    @scala.inline
+    def setStyle(value: Style | js.Array[Style] | StyleFunction): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setUpdateWhileAnimating(value: Boolean): Self = this.set("updateWhileAnimating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateWhileAnimating: Self = this.set("updateWhileAnimating", js.undefined)
+    @scala.inline
+    def setUpdateWhileInteracting(value: Boolean): Self = this.set("updateWhileInteracting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateWhileInteracting: Self = this.set("updateWhileInteracting", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

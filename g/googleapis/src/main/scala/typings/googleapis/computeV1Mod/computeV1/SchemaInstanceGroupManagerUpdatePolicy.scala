@@ -45,18 +45,38 @@ trait SchemaInstanceGroupManagerUpdatePolicy extends js.Object {
 
 object SchemaInstanceGroupManagerUpdatePolicy {
   @scala.inline
-  def apply(
-    maxSurge: SchemaFixedOrPercent = null,
-    maxUnavailable: SchemaFixedOrPercent = null,
-    minimalAction: String = null,
-    `type`: String = null
-  ): SchemaInstanceGroupManagerUpdatePolicy = {
+  def apply(): SchemaInstanceGroupManagerUpdatePolicy = {
     val __obj = js.Dynamic.literal()
-    if (maxSurge != null) __obj.updateDynamic("maxSurge")(maxSurge.asInstanceOf[js.Any])
-    if (maxUnavailable != null) __obj.updateDynamic("maxUnavailable")(maxUnavailable.asInstanceOf[js.Any])
-    if (minimalAction != null) __obj.updateDynamic("minimalAction")(minimalAction.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerUpdatePolicy]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupManagerUpdatePolicyOps[Self <: SchemaInstanceGroupManagerUpdatePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxSurge(value: SchemaFixedOrPercent): Self = this.set("maxSurge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSurge: Self = this.set("maxSurge", js.undefined)
+    @scala.inline
+    def setMaxUnavailable(value: SchemaFixedOrPercent): Self = this.set("maxUnavailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxUnavailable: Self = this.set("maxUnavailable", js.undefined)
+    @scala.inline
+    def setMinimalAction(value: String): Self = this.set("minimalAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimalAction: Self = this.set("minimalAction", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

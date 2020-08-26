@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * @see XAccessibleContext
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleContext
   extends XAccessibleContext
      with XAccessibleEventBroadcaster

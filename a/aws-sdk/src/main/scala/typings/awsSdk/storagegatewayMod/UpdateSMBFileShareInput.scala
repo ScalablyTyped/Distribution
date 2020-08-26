@@ -7,13 +7,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateSMBFileShareInput extends js.Object {
   /**
-    * A list of users in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. For example, @group1. Can only be set if Authentication is set to ActiveDirectory.
+    * A list of users or groups in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.
     */
   var AdminUserList: js.UndefOr[FileShareUserList] = js.native
   /**
     * The Amazon Resource Name (ARN) of the storage used for the audit logs.
     */
   var AuditDestinationARN: js.UndefOr[typings.awsSdk.storagegatewayMod.AuditDestinationARN] = js.native
+  /**
+    * Refresh cache information.
+    */
+  var CacheAttributes: js.UndefOr[typings.awsSdk.storagegatewayMod.CacheAttributes] = js.native
+  /**
+    * The case of an object name in an Amazon S3 bucket. For ClientSpecified, the client determines the case sensitivity. For CaseSensitive, the gateway determines the case sensitivity. The default value is ClientSpecified.
+    */
+  var CaseSensitivity: js.UndefOr[typings.awsSdk.storagegatewayMod.CaseSensitivity] = js.native
   /**
     * The default storage class for objects put into an Amazon S3 bucket by the file gateway. The default value is S3_INTELLIGENT_TIERING. Optional. Valid Values: S3_STANDARD | S3_INTELLIGENT_TIERING | S3_STANDARD_IA | S3_ONEZONE_IA 
     */
@@ -23,11 +31,15 @@ trait UpdateSMBFileShareInput extends js.Object {
     */
   var FileShareARN: typings.awsSdk.storagegatewayMod.FileShareARN = js.native
   /**
+    * The name of the file share. Optional.   FileShareName must be set if an S3 prefix name is set in LocationARN. 
+    */
+  var FileShareName: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareName] = js.native
+  /**
     * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, otherwise set to false. The default value is true. Valid Values: true | false 
     */
   var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
+    * A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.
     */
   var InvalidUserList: js.UndefOr[FileShareUserList] = js.native
   /**
@@ -55,42 +67,97 @@ trait UpdateSMBFileShareInput extends js.Object {
     */
   var SMBACLEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. For example, @group1. Can only be set if Authentication is set to ActiveDirectory.
+    * A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.
     */
   var ValidUserList: js.UndefOr[FileShareUserList] = js.native
 }
 
 object UpdateSMBFileShareInput {
   @scala.inline
-  def apply(
-    FileShareARN: FileShareARN,
-    AdminUserList: FileShareUserList = null,
-    AuditDestinationARN: AuditDestinationARN = null,
-    DefaultStorageClass: StorageClass = null,
-    GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined,
-    InvalidUserList: FileShareUserList = null,
-    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
-    KMSKey: KMSKey = null,
-    ObjectACL: ObjectACL = null,
-    ReadOnly: js.UndefOr[Boolean] = js.undefined,
-    RequesterPays: js.UndefOr[Boolean] = js.undefined,
-    SMBACLEnabled: js.UndefOr[Boolean] = js.undefined,
-    ValidUserList: FileShareUserList = null
-  ): UpdateSMBFileShareInput = {
+  def apply(FileShareARN: FileShareARN): UpdateSMBFileShareInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN.asInstanceOf[js.Any])
-    if (AdminUserList != null) __obj.updateDynamic("AdminUserList")(AdminUserList.asInstanceOf[js.Any])
-    if (AuditDestinationARN != null) __obj.updateDynamic("AuditDestinationARN")(AuditDestinationARN.asInstanceOf[js.Any])
-    if (DefaultStorageClass != null) __obj.updateDynamic("DefaultStorageClass")(DefaultStorageClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(GuessMIMETypeEnabled)) __obj.updateDynamic("GuessMIMETypeEnabled")(GuessMIMETypeEnabled.get.asInstanceOf[js.Any])
-    if (InvalidUserList != null) __obj.updateDynamic("InvalidUserList")(InvalidUserList.asInstanceOf[js.Any])
-    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.get.asInstanceOf[js.Any])
-    if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
-    if (ObjectACL != null) __obj.updateDynamic("ObjectACL")(ObjectACL.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SMBACLEnabled)) __obj.updateDynamic("SMBACLEnabled")(SMBACLEnabled.get.asInstanceOf[js.Any])
-    if (ValidUserList != null) __obj.updateDynamic("ValidUserList")(ValidUserList.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSMBFileShareInput]
   }
+  @scala.inline
+  implicit class UpdateSMBFileShareInputOps[Self <: UpdateSMBFileShareInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileShareARN(value: FileShareARN): Self = this.set("FileShareARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdminUserListVarargs(value: FileShareUser*): Self = this.set("AdminUserList", js.Array(value :_*))
+    @scala.inline
+    def setAdminUserList(value: FileShareUserList): Self = this.set("AdminUserList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminUserList: Self = this.set("AdminUserList", js.undefined)
+    @scala.inline
+    def setAuditDestinationARN(value: AuditDestinationARN): Self = this.set("AuditDestinationARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditDestinationARN: Self = this.set("AuditDestinationARN", js.undefined)
+    @scala.inline
+    def setCacheAttributes(value: CacheAttributes): Self = this.set("CacheAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheAttributes: Self = this.set("CacheAttributes", js.undefined)
+    @scala.inline
+    def setCaseSensitivity(value: CaseSensitivity): Self = this.set("CaseSensitivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseSensitivity: Self = this.set("CaseSensitivity", js.undefined)
+    @scala.inline
+    def setDefaultStorageClass(value: StorageClass): Self = this.set("DefaultStorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultStorageClass: Self = this.set("DefaultStorageClass", js.undefined)
+    @scala.inline
+    def setFileShareName(value: FileShareName): Self = this.set("FileShareName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileShareName: Self = this.set("FileShareName", js.undefined)
+    @scala.inline
+    def setGuessMIMETypeEnabled(value: Boolean): Self = this.set("GuessMIMETypeEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuessMIMETypeEnabled: Self = this.set("GuessMIMETypeEnabled", js.undefined)
+    @scala.inline
+    def setInvalidUserListVarargs(value: FileShareUser*): Self = this.set("InvalidUserList", js.Array(value :_*))
+    @scala.inline
+    def setInvalidUserList(value: FileShareUserList): Self = this.set("InvalidUserList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidUserList: Self = this.set("InvalidUserList", js.undefined)
+    @scala.inline
+    def setKMSEncrypted(value: Boolean): Self = this.set("KMSEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSEncrypted: Self = this.set("KMSEncrypted", js.undefined)
+    @scala.inline
+    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    @scala.inline
+    def setObjectACL(value: ObjectACL): Self = this.set("ObjectACL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectACL: Self = this.set("ObjectACL", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("ReadOnly", js.undefined)
+    @scala.inline
+    def setRequesterPays(value: Boolean): Self = this.set("RequesterPays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterPays: Self = this.set("RequesterPays", js.undefined)
+    @scala.inline
+    def setSMBACLEnabled(value: Boolean): Self = this.set("SMBACLEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSMBACLEnabled: Self = this.set("SMBACLEnabled", js.undefined)
+    @scala.inline
+    def setValidUserListVarargs(value: FileShareUser*): Self = this.set("ValidUserList", js.Array(value :_*))
+    @scala.inline
+    def setValidUserList(value: FileShareUserList): Self = this.set("ValidUserList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidUserList: Self = this.set("ValidUserList", js.undefined)
+  }
+  
 }
 

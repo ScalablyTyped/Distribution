@@ -4,19 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UseSelectGetToggleButtonPropsOptions
   extends GetToggleButtonPropsOptions
      with GetPropsWithRefKey
 
 object UseSelectGetToggleButtonPropsOptions {
   @scala.inline
-  def apply(
-    GetPropsWithRefKey: GetPropsWithRefKey = null,
-    GetToggleButtonPropsOptions: GetToggleButtonPropsOptions = null
-  ): UseSelectGetToggleButtonPropsOptions = {
+  def apply(): UseSelectGetToggleButtonPropsOptions = {
     val __obj = js.Dynamic.literal()
-    if (GetPropsWithRefKey != null) js.Dynamic.global.Object.assign(__obj, GetPropsWithRefKey)
-    if (GetToggleButtonPropsOptions != null) js.Dynamic.global.Object.assign(__obj, GetToggleButtonPropsOptions)
     __obj.asInstanceOf[UseSelectGetToggleButtonPropsOptions]
   }
 }

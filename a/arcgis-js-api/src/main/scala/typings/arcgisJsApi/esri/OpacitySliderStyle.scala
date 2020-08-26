@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OpacitySliderStyle extends AnonymousAccessor {
   /**
     * The color of the slider's track. For single-color visualizations where only an Opacity variable is present, you should set this color to match the color of the symbol in the [SimpleRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html).
@@ -14,7 +15,7 @@ trait OpacitySliderStyle extends AnonymousAccessor {
     *
     * @default new Color([0, 121, 193])
     */
-  var trackFillColor: js.UndefOr[Color_] = js.undefined
+  var trackFillColor: js.UndefOr[Color_] = js.native
 }
 
 object OpacitySliderStyle {
@@ -23,17 +24,27 @@ object OpacitySliderStyle {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    get: /* propertyName */ String => _ = null,
-    set: (js.Function2[/* propertyName */ String, /* value */ js.Any, OpacitySliderStyle]) with (js.Function1[/* props */ HashMap[_], OpacitySliderStyle]) = null,
-    trackFillColor: Color_ = null,
-    watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, OpacitySliderStyle]]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], OpacitySliderStyle]])
   ): OpacitySliderStyle = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (trackFillColor != null) __obj.updateDynamic("trackFillColor")(trackFillColor.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpacitySliderStyle]
   }
+  @scala.inline
+  implicit class OpacitySliderStyleOps[Self <: OpacitySliderStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrackFillColor(value: Color_): Self = this.set("trackFillColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackFillColor: Self = this.set("trackFillColor", js.undefined)
+  }
+  
 }
 

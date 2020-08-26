@@ -36,7 +36,15 @@ trait PlusPush extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
   def addEventListener(): Unit = js.native
+  def addEventListener(`type`: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
+  def addEventListener(`type`: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ String, Unit]): Unit = js.native
+  def addEventListener(
+    `type`: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* result */ String, Unit],
+    capture: Boolean
+  ): Unit = js.native
   def addEventListener(`type`: String): Unit = js.native
+  def addEventListener(`type`: String, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function1[/* result */ String, Unit]): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function1[/* result */ String, Unit], capture: Boolean): Unit = js.native
   /**
@@ -53,7 +61,15 @@ trait PlusPush extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
   def createMessage(): Unit = js.native
+  def createMessage(
+    content: js.UndefOr[scala.Nothing],
+    payload: js.UndefOr[scala.Nothing],
+    options: PlusPushMessageOptions
+  ): Unit = js.native
+  def createMessage(content: js.UndefOr[scala.Nothing], payload: String): Unit = js.native
+  def createMessage(content: js.UndefOr[scala.Nothing], payload: String, options: PlusPushMessageOptions): Unit = js.native
   def createMessage(content: String): Unit = js.native
+  def createMessage(content: String, payload: js.UndefOr[scala.Nothing], options: PlusPushMessageOptions): Unit = js.native
   def createMessage(content: String, payload: String): Unit = js.native
   def createMessage(content: String, payload: String, options: PlusPushMessageOptions): Unit = js.native
   /**

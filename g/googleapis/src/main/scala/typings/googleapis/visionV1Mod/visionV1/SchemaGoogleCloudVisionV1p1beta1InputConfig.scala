@@ -22,11 +22,30 @@ trait SchemaGoogleCloudVisionV1p1beta1InputConfig extends js.Object {
 
 object SchemaGoogleCloudVisionV1p1beta1InputConfig {
   @scala.inline
-  def apply(gcsSource: SchemaGoogleCloudVisionV1p1beta1GcsSource = null, mimeType: String = null): SchemaGoogleCloudVisionV1p1beta1InputConfig = {
+  def apply(): SchemaGoogleCloudVisionV1p1beta1InputConfig = {
     val __obj = js.Dynamic.literal()
-    if (gcsSource != null) __obj.updateDynamic("gcsSource")(gcsSource.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1InputConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p1beta1InputConfigOps[Self <: SchemaGoogleCloudVisionV1p1beta1InputConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGcsSource(value: SchemaGoogleCloudVisionV1p1beta1GcsSource): Self = this.set("gcsSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsSource: Self = this.set("gcsSource", js.undefined)
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+  }
+  
 }
 

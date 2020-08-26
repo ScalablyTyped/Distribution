@@ -25,12 +25,34 @@ trait SchemaTimeEvent extends js.Object {
 
 object SchemaTimeEvent {
   @scala.inline
-  def apply(annotation: SchemaAnnotation = null, messageEvent: SchemaMessageEvent = null, time: String = null): SchemaTimeEvent = {
+  def apply(): SchemaTimeEvent = {
     val __obj = js.Dynamic.literal()
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
-    if (messageEvent != null) __obj.updateDynamic("messageEvent")(messageEvent.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTimeEvent]
   }
+  @scala.inline
+  implicit class SchemaTimeEventOps[Self <: SchemaTimeEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotation(value: SchemaAnnotation): Self = this.set("annotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotation: Self = this.set("annotation", js.undefined)
+    @scala.inline
+    def setMessageEvent(value: SchemaMessageEvent): Self = this.set("messageEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageEvent: Self = this.set("messageEvent", js.undefined)
+    @scala.inline
+    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+  }
+  
 }
 

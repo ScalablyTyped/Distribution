@@ -34,9 +34,149 @@ trait Command extends js.Object {
     * @param Size [Size=0]
     */
   def CreateParameter(): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Direction: js.UndefOr[scala.Nothing],
+    Size: js.UndefOr[scala.Nothing],
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Direction: js.UndefOr[scala.Nothing],
+    Size: Double
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Direction: js.UndefOr[scala.Nothing],
+    Size: Double,
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Direction: ParameterDirectionEnum
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Direction: ParameterDirectionEnum,
+    Size: js.UndefOr[scala.Nothing],
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Direction: ParameterDirectionEnum,
+    Size: Double
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Direction: ParameterDirectionEnum,
+    Size: Double,
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Direction: js.UndefOr[scala.Nothing],
+    Size: js.UndefOr[scala.Nothing],
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Direction: js.UndefOr[scala.Nothing],
+    Size: Double
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Direction: js.UndefOr[scala.Nothing],
+    Size: Double,
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Direction: ParameterDirectionEnum): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Direction: ParameterDirectionEnum,
+    Size: js.UndefOr[scala.Nothing],
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Direction: ParameterDirectionEnum,
+    Size: Double
+  ): Parameter = js.native
+  def CreateParameter(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Direction: ParameterDirectionEnum,
+    Size: Double,
+    Value: js.Any
+  ): Parameter = js.native
   def CreateParameter(Name: String): Parameter = js.native
+  def CreateParameter(
+    Name: String,
+    Type: js.UndefOr[scala.Nothing],
+    Direction: js.UndefOr[scala.Nothing],
+    Size: js.UndefOr[scala.Nothing],
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(Name: String, Type: js.UndefOr[scala.Nothing], Direction: js.UndefOr[scala.Nothing], Size: Double): Parameter = js.native
+  def CreateParameter(
+    Name: String,
+    Type: js.UndefOr[scala.Nothing],
+    Direction: js.UndefOr[scala.Nothing],
+    Size: Double,
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(Name: String, Type: js.UndefOr[scala.Nothing], Direction: ParameterDirectionEnum): Parameter = js.native
+  def CreateParameter(
+    Name: String,
+    Type: js.UndefOr[scala.Nothing],
+    Direction: ParameterDirectionEnum,
+    Size: js.UndefOr[scala.Nothing],
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(Name: String, Type: js.UndefOr[scala.Nothing], Direction: ParameterDirectionEnum, Size: Double): Parameter = js.native
+  def CreateParameter(
+    Name: String,
+    Type: js.UndefOr[scala.Nothing],
+    Direction: ParameterDirectionEnum,
+    Size: Double,
+    Value: js.Any
+  ): Parameter = js.native
   def CreateParameter(Name: String, Type: DataTypeEnum): Parameter = js.native
+  def CreateParameter(
+    Name: String,
+    Type: DataTypeEnum,
+    Direction: js.UndefOr[scala.Nothing],
+    Size: js.UndefOr[scala.Nothing],
+    Value: js.Any
+  ): Parameter = js.native
+  def CreateParameter(Name: String, Type: DataTypeEnum, Direction: js.UndefOr[scala.Nothing], Size: Double): Parameter = js.native
+  def CreateParameter(
+    Name: String,
+    Type: DataTypeEnum,
+    Direction: js.UndefOr[scala.Nothing],
+    Size: Double,
+    Value: js.Any
+  ): Parameter = js.native
   def CreateParameter(Name: String, Type: DataTypeEnum, Direction: ParameterDirectionEnum): Parameter = js.native
+  def CreateParameter(
+    Name: String,
+    Type: DataTypeEnum,
+    Direction: ParameterDirectionEnum,
+    Size: js.UndefOr[scala.Nothing],
+    Value: js.Any
+  ): Parameter = js.native
   def CreateParameter(Name: String, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Double): Parameter = js.native
   def CreateParameter(Name: String, Type: DataTypeEnum, Direction: ParameterDirectionEnum, Size: Double, Value: js.Any): Parameter = js.native
   /**
@@ -51,6 +191,7 @@ trait Command extends js.Object {
     * * If the command isn't intended to return results (e.g. an `UPDATE` statement), a closed empty **Recordset** will be returned.
     */
   def Execute(): Recordset | Null = js.native
+  def Execute(RecordsAffected: js.UndefOr[scala.Nothing], Parameters: js.UndefOr[scala.Nothing], Options: Double): Recordset | Null = js.native
   def Execute(RecordsAffected: js.UndefOr[scala.Nothing], Parameters: SafeArray[_]): Recordset | Null = js.native
   def Execute(RecordsAffected: js.UndefOr[scala.Nothing], Parameters: SafeArray[_], Options: Double): Recordset | Null = js.native
   def Parameters(Index: String): Parameter = js.native

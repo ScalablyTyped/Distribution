@@ -36,18 +36,38 @@ trait SchemaTagSetting extends js.Object {
 
 object SchemaTagSetting {
   @scala.inline
-  def apply(
-    additionalKeyValues: String = null,
-    includeClickThroughUrls: js.UndefOr[Boolean] = js.undefined,
-    includeClickTracking: js.UndefOr[Boolean] = js.undefined,
-    keywordOption: String = null
-  ): SchemaTagSetting = {
+  def apply(): SchemaTagSetting = {
     val __obj = js.Dynamic.literal()
-    if (additionalKeyValues != null) __obj.updateDynamic("additionalKeyValues")(additionalKeyValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeClickThroughUrls)) __obj.updateDynamic("includeClickThroughUrls")(includeClickThroughUrls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeClickTracking)) __obj.updateDynamic("includeClickTracking")(includeClickTracking.get.asInstanceOf[js.Any])
-    if (keywordOption != null) __obj.updateDynamic("keywordOption")(keywordOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTagSetting]
   }
+  @scala.inline
+  implicit class SchemaTagSettingOps[Self <: SchemaTagSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalKeyValues(value: String): Self = this.set("additionalKeyValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalKeyValues: Self = this.set("additionalKeyValues", js.undefined)
+    @scala.inline
+    def setIncludeClickThroughUrls(value: Boolean): Self = this.set("includeClickThroughUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeClickThroughUrls: Self = this.set("includeClickThroughUrls", js.undefined)
+    @scala.inline
+    def setIncludeClickTracking(value: Boolean): Self = this.set("includeClickTracking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeClickTracking: Self = this.set("includeClickTracking", js.undefined)
+    @scala.inline
+    def setKeywordOption(value: String): Self = this.set("keywordOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywordOption: Self = this.set("keywordOption", js.undefined)
+  }
+  
 }
 

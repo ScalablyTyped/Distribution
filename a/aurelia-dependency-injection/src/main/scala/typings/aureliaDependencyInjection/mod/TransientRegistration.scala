@@ -8,11 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransientRegistration[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] () extends Registration_[TBase, TImpl, TArgs] {
   def this(key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) = this()
-  /* CompleteClass */
-  override def registerResolver(
-    container: Container,
-    key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs],
-    fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs]
-  ): Resolver_ = js.native
 }
 

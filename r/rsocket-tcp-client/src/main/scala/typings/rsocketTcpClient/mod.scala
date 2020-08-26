@@ -15,6 +15,7 @@ object mod extends js.Object {
   class RSocketTcpConnection ()
     extends typings.rsocketTcpClient.rsockettcpclientMod.RSocketTcpConnection {
     def this(socket: Socket) = this()
+    def this(socket: js.UndefOr[scala.Nothing], encoders: Encoders[_]) = this()
     def this(socket: Socket, encoders: Encoders[_]) = this()
   }
   

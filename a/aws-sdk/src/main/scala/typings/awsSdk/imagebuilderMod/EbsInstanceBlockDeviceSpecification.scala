@@ -38,24 +38,50 @@ trait EbsInstanceBlockDeviceSpecification extends js.Object {
 
 object EbsInstanceBlockDeviceSpecification {
   @scala.inline
-  def apply(
-    deleteOnTermination: js.UndefOr[NullableBoolean] = js.undefined,
-    encrypted: js.UndefOr[NullableBoolean] = js.undefined,
-    iops: js.UndefOr[EbsIopsInteger] = js.undefined,
-    kmsKeyId: NonEmptyString = null,
-    snapshotId: NonEmptyString = null,
-    volumeSize: js.UndefOr[EbsVolumeSizeInteger] = js.undefined,
-    volumeType: EbsVolumeType = null
-  ): EbsInstanceBlockDeviceSpecification = {
+  def apply(): EbsInstanceBlockDeviceSpecification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iops)) __obj.updateDynamic("iops")(iops.get.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
-    if (!js.isUndefined(volumeSize)) __obj.updateDynamic("volumeSize")(volumeSize.get.asInstanceOf[js.Any])
-    if (volumeType != null) __obj.updateDynamic("volumeType")(volumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsInstanceBlockDeviceSpecification]
   }
+  @scala.inline
+  implicit class EbsInstanceBlockDeviceSpecificationOps[Self <: EbsInstanceBlockDeviceSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteOnTermination(value: NullableBoolean): Self = this.set("deleteOnTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteOnTermination: Self = this.set("deleteOnTermination", js.undefined)
+    @scala.inline
+    def setEncrypted(value: NullableBoolean): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    @scala.inline
+    def setIops(value: EbsIopsInteger): Self = this.set("iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("iops", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: NonEmptyString): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setSnapshotId(value: NonEmptyString): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
+    @scala.inline
+    def setVolumeSize(value: EbsVolumeSizeInteger): Self = this.set("volumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSize: Self = this.set("volumeSize", js.undefined)
+    @scala.inline
+    def setVolumeType(value: EbsVolumeType): Self = this.set("volumeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeType: Self = this.set("volumeType", js.undefined)
+  }
+  
 }
 

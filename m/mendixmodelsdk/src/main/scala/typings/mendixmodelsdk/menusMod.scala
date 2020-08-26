@@ -66,11 +66,11 @@ object menusMod extends js.Object {
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MMenuDocument: FolderBase = js.native
       def itemCollection: MenuItemCollection = js.native
-      def itemCollection(newValue: MenuItemCollection): js.Any = js.native
+      def itemCollection_=(newValue: MenuItemCollection): Unit = js.native
     }
     
     /**
-      * See: {@link https://docs.mendix.com/refguide7/menu-item relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide7/menu relevant section in reference guide}
       */
     @js.native
     class MenuItem protected () extends MenuItemContainer {
@@ -85,13 +85,16 @@ object menusMod extends js.Object {
       @JSName("model")
       var model_FMenuItem: IModel = js.native
       def action: ClientAction = js.native
-      def action(newValue: ClientAction): js.Any = js.native
+      def action_=(newValue: ClientAction): Unit = js.native
+      /**
+        * In version 8.12.0: introduced
+        */
+      def alternativeText: Text | Null = js.native
+      def alternativeText_=(newValue: Text | Null): Unit = js.native
       def caption: Text = js.native
-      def caption(newValue: Text): js.Any = js.native
-      def icon(): js.Any = js.native
-      def icon(newValue: Icon): js.Any = js.native
-      @JSName("icon")
-      def icon_Union: Icon | Null = js.native
+      def caption_=(newValue: Text): Unit = js.native
+      def icon: Icon | Null = js.native
+      def icon_=(newValue: Icon | Null): Unit = js.native
     }
     
     @js.native

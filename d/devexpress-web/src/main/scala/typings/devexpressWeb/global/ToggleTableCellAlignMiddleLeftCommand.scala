@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ToggleTableCellAlignMiddleLeftCommand")
 @js.native
 class ToggleTableCellAlignMiddleLeftCommand ()
-  extends typings.devexpressWeb.ToggleTableCellAlignMiddleLeftCommand {
-  /**
-    * Executes the ToggleTableCellAlignMiddleLeftCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.CommandState[Boolean] = js.native
-}
+  extends typings.devexpressWeb.ToggleTableCellAlignMiddleLeftCommand
 

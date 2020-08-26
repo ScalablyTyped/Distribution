@@ -11,8 +11,8 @@ A clean, whitespace-sensitive template language for writing HTML
 | Full name          | pug |
 | Keywords           | html, jade, pug, template |
 | # releases         | 6 |
-| # dependents       | 1752 |
-| # downloads        | 20877781 |
+| # dependents       | 1778 |
+| # downloads        | 21432594 |
 | # stars            | 180 |
 
 ## Links

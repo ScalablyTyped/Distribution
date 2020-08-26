@@ -12,8 +12,6 @@ trait InjectDecorator
     * Parameter decorator on a dependency parameter of a class constructor
     * that specifies a custom provider of the dependency.
     *
-    * Learn more in the ["Dependency Injection Guide"](guide/dependency-injection).
-    *
     * @usageNotes
     * The following example shows a class constructor that specifies a
     * custom provider of a dependency using the parameter decorator.
@@ -23,6 +21,9 @@ trait InjectDecorator
     *
     * <code-example path="core/di/ts/metadata_spec.ts" region="InjectWithoutDecorator">
     * </code-example>
+    *
+    * @see ["Dependency Injection Guide"](guide/dependency-injection)
+    *
     */
   def apply(token: js.Any): js.Any = js.native
 }

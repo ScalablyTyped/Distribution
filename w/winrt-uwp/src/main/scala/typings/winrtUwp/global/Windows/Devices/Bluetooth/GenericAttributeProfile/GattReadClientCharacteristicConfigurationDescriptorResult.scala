@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult")
 @js.native
 abstract class GattReadClientCharacteristicConfigurationDescriptorResult ()
-  extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult {
-  /** Gets the result of an asynchronous read operation. */
-  /* CompleteClass */
-  override var clientCharacteristicConfigurationDescriptor: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue = js.native
-  /** Gets the status of an asynchronous operation. */
-  /* CompleteClass */
-  override var status: typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCommunicationStatus = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult
 

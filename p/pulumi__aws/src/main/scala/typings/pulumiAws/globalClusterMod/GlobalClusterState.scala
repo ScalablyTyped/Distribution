@@ -44,26 +44,54 @@ trait GlobalClusterState extends js.Object {
 
 object GlobalClusterState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    databaseName: Input[String] = null,
-    deletionProtection: Input[Boolean] = null,
-    engine: Input[String] = null,
-    engineVersion: Input[String] = null,
-    globalClusterIdentifier: Input[String] = null,
-    globalClusterResourceId: Input[String] = null,
-    storageEncrypted: Input[Boolean] = null
-  ): GlobalClusterState = {
+  def apply(): GlobalClusterState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
-    if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (globalClusterIdentifier != null) __obj.updateDynamic("globalClusterIdentifier")(globalClusterIdentifier.asInstanceOf[js.Any])
-    if (globalClusterResourceId != null) __obj.updateDynamic("globalClusterResourceId")(globalClusterResourceId.asInstanceOf[js.Any])
-    if (storageEncrypted != null) __obj.updateDynamic("storageEncrypted")(storageEncrypted.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalClusterState]
   }
+  @scala.inline
+  implicit class GlobalClusterStateOps[Self <: GlobalClusterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDatabaseName(value: Input[String]): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("databaseName", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: Input[Boolean]): Self = this.set("deletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("deletionProtection", js.undefined)
+    @scala.inline
+    def setEngine(value: Input[String]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: Input[String]): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setGlobalClusterIdentifier(value: Input[String]): Self = this.set("globalClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalClusterIdentifier: Self = this.set("globalClusterIdentifier", js.undefined)
+    @scala.inline
+    def setGlobalClusterResourceId(value: Input[String]): Self = this.set("globalClusterResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalClusterResourceId: Self = this.set("globalClusterResourceId", js.undefined)
+    @scala.inline
+    def setStorageEncrypted(value: Input[Boolean]): Self = this.set("storageEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEncrypted: Self = this.set("storageEncrypted", js.undefined)
+  }
+  
 }
 

@@ -26,17 +26,40 @@ trait DeregisterDBProxyTargetsRequest extends js.Object {
 
 object DeregisterDBProxyTargetsRequest {
   @scala.inline
-  def apply(
-    DBProxyName: String,
-    DBClusterIdentifiers: StringList = null,
-    DBInstanceIdentifiers: StringList = null,
-    TargetGroupName: String = null
-  ): DeregisterDBProxyTargetsRequest = {
+  def apply(DBProxyName: String): DeregisterDBProxyTargetsRequest = {
     val __obj = js.Dynamic.literal(DBProxyName = DBProxyName.asInstanceOf[js.Any])
-    if (DBClusterIdentifiers != null) __obj.updateDynamic("DBClusterIdentifiers")(DBClusterIdentifiers.asInstanceOf[js.Any])
-    if (DBInstanceIdentifiers != null) __obj.updateDynamic("DBInstanceIdentifiers")(DBInstanceIdentifiers.asInstanceOf[js.Any])
-    if (TargetGroupName != null) __obj.updateDynamic("TargetGroupName")(TargetGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterDBProxyTargetsRequest]
   }
+  @scala.inline
+  implicit class DeregisterDBProxyTargetsRequestOps[Self <: DeregisterDBProxyTargetsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDBClusterIdentifiersVarargs(value: String*): Self = this.set("DBClusterIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setDBClusterIdentifiers(value: StringList): Self = this.set("DBClusterIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterIdentifiers: Self = this.set("DBClusterIdentifiers", js.undefined)
+    @scala.inline
+    def setDBInstanceIdentifiersVarargs(value: String*): Self = this.set("DBInstanceIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setDBInstanceIdentifiers(value: StringList): Self = this.set("DBInstanceIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceIdentifiers: Self = this.set("DBInstanceIdentifiers", js.undefined)
+    @scala.inline
+    def setTargetGroupName(value: String): Self = this.set("TargetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupName: Self = this.set("TargetGroupName", js.undefined)
+  }
+  
 }
 

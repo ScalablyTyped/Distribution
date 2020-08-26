@@ -16,6 +16,11 @@ object mod extends js.Object {
   def addResult(aggregatedResults: AggregatedResult, testResult: TestResult): Unit = js.native
   def buildFailureTestResult(testPath: String, err: SerializableError): TestResult = js.native
   def formatTestResults(results: AggregatedResult): FormattedTestResults = js.native
+  def formatTestResults(
+    results: AggregatedResult,
+    codeCoverageFormatter: js.UndefOr[scala.Nothing],
+    reporter: CodeCoverageReporter
+  ): FormattedTestResults = js.native
   def formatTestResults(results: AggregatedResult, codeCoverageFormatter: CodeCoverageFormatter): FormattedTestResults = js.native
   def formatTestResults(
     results: AggregatedResult,

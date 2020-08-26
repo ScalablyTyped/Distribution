@@ -9,9 +9,9 @@ YouTube upload API
 | ------------------ | :-------------: |
 | Full name          | youtube |
 | Keywords           | youtube, upload, video |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 6298 |
+| # downloads        | 6168 |
 | # stars            | 5 |
 
 ## Links

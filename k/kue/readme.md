@@ -12,7 +12,7 @@ Feature rich priority job queue backed by redis
 | Keywords           | job, queue, worker, redis |
 | # releases         | 1 |
 | # dependents       | 232 |
-| # downloads        | 1548538 |
+| # downloads        | 1536161 |
 | # stars            | 104 |
 
 ## Links

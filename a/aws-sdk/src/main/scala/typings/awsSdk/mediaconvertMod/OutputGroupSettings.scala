@@ -34,22 +34,46 @@ trait OutputGroupSettings extends js.Object {
 
 object OutputGroupSettings {
   @scala.inline
-  def apply(
-    CmafGroupSettings: CmafGroupSettings = null,
-    DashIsoGroupSettings: DashIsoGroupSettings = null,
-    FileGroupSettings: FileGroupSettings = null,
-    HlsGroupSettings: HlsGroupSettings = null,
-    MsSmoothGroupSettings: MsSmoothGroupSettings = null,
-    Type: OutputGroupType = null
-  ): OutputGroupSettings = {
+  def apply(): OutputGroupSettings = {
     val __obj = js.Dynamic.literal()
-    if (CmafGroupSettings != null) __obj.updateDynamic("CmafGroupSettings")(CmafGroupSettings.asInstanceOf[js.Any])
-    if (DashIsoGroupSettings != null) __obj.updateDynamic("DashIsoGroupSettings")(DashIsoGroupSettings.asInstanceOf[js.Any])
-    if (FileGroupSettings != null) __obj.updateDynamic("FileGroupSettings")(FileGroupSettings.asInstanceOf[js.Any])
-    if (HlsGroupSettings != null) __obj.updateDynamic("HlsGroupSettings")(HlsGroupSettings.asInstanceOf[js.Any])
-    if (MsSmoothGroupSettings != null) __obj.updateDynamic("MsSmoothGroupSettings")(MsSmoothGroupSettings.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputGroupSettings]
   }
+  @scala.inline
+  implicit class OutputGroupSettingsOps[Self <: OutputGroupSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCmafGroupSettings(value: CmafGroupSettings): Self = this.set("CmafGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCmafGroupSettings: Self = this.set("CmafGroupSettings", js.undefined)
+    @scala.inline
+    def setDashIsoGroupSettings(value: DashIsoGroupSettings): Self = this.set("DashIsoGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashIsoGroupSettings: Self = this.set("DashIsoGroupSettings", js.undefined)
+    @scala.inline
+    def setFileGroupSettings(value: FileGroupSettings): Self = this.set("FileGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileGroupSettings: Self = this.set("FileGroupSettings", js.undefined)
+    @scala.inline
+    def setHlsGroupSettings(value: HlsGroupSettings): Self = this.set("HlsGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsGroupSettings: Self = this.set("HlsGroupSettings", js.undefined)
+    @scala.inline
+    def setMsSmoothGroupSettings(value: MsSmoothGroupSettings): Self = this.set("MsSmoothGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsSmoothGroupSettings: Self = this.set("MsSmoothGroupSettings", js.undefined)
+    @scala.inline
+    def setType(value: OutputGroupType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

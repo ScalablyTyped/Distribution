@@ -18,10 +18,30 @@ trait BatchGrantPermissionsRequest extends js.Object {
 
 object BatchGrantPermissionsRequest {
   @scala.inline
-  def apply(Entries: BatchPermissionsRequestEntryList, CatalogId: CatalogIdString = null): BatchGrantPermissionsRequest = {
+  def apply(Entries: BatchPermissionsRequestEntryList): BatchGrantPermissionsRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any])
-    if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGrantPermissionsRequest]
   }
+  @scala.inline
+  implicit class BatchGrantPermissionsRequestOps[Self <: BatchGrantPermissionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntriesVarargs(value: BatchPermissionsRequestEntry*): Self = this.set("Entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: BatchPermissionsRequestEntryList): Self = this.set("Entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+  }
+  
 }
 

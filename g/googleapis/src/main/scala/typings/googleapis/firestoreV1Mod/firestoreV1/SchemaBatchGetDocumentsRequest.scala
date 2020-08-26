@@ -41,20 +41,44 @@ trait SchemaBatchGetDocumentsRequest extends js.Object {
 
 object SchemaBatchGetDocumentsRequest {
   @scala.inline
-  def apply(
-    documents: js.Array[String] = null,
-    mask: SchemaDocumentMask = null,
-    newTransaction: SchemaTransactionOptions = null,
-    readTime: String = null,
-    transaction: String = null
-  ): SchemaBatchGetDocumentsRequest = {
+  def apply(): SchemaBatchGetDocumentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (documents != null) __obj.updateDynamic("documents")(documents.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (newTransaction != null) __obj.updateDynamic("newTransaction")(newTransaction.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchGetDocumentsRequest]
   }
+  @scala.inline
+  implicit class SchemaBatchGetDocumentsRequestOps[Self <: SchemaBatchGetDocumentsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentsVarargs(value: String*): Self = this.set("documents", js.Array(value :_*))
+    @scala.inline
+    def setDocuments(value: js.Array[String]): Self = this.set("documents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocuments: Self = this.set("documents", js.undefined)
+    @scala.inline
+    def setMask(value: SchemaDocumentMask): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setNewTransaction(value: SchemaTransactionOptions): Self = this.set("newTransaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewTransaction: Self = this.set("newTransaction", js.undefined)
+    @scala.inline
+    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    @scala.inline
+    def setTransaction(value: String): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransaction: Self = this.set("transaction", js.undefined)
+  }
+  
 }
 

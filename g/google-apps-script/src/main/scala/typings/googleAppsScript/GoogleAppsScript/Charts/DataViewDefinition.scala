@@ -14,5 +14,6 @@ import scala.scalajs.js.annotation._
   * to define and use a DataViewDefinition.
   */
 // tslint:disable-next-line: no-empty-interface
+@js.native
 trait DataViewDefinition extends js.Object
 

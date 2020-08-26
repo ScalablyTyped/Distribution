@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "reach__auto-id"
-version := "0.2-dt-20190628Z-50151d"
-scalaVersion := "2.13.2"
+version := "0.2-dt-20190628Z-22388a"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

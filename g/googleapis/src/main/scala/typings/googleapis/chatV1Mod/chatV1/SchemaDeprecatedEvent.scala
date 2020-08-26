@@ -60,28 +60,58 @@ trait SchemaDeprecatedEvent extends js.Object {
 
 object SchemaDeprecatedEvent {
   @scala.inline
-  def apply(
-    action: SchemaFormAction = null,
-    configCompleteRedirectUrl: String = null,
-    eventTime: String = null,
-    message: SchemaMessage = null,
-    space: SchemaSpace = null,
-    threadKey: String = null,
-    token: String = null,
-    `type`: String = null,
-    user: SchemaUser = null
-  ): SchemaDeprecatedEvent = {
+  def apply(): SchemaDeprecatedEvent = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (configCompleteRedirectUrl != null) __obj.updateDynamic("configCompleteRedirectUrl")(configCompleteRedirectUrl.asInstanceOf[js.Any])
-    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (threadKey != null) __obj.updateDynamic("threadKey")(threadKey.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeprecatedEvent]
   }
+  @scala.inline
+  implicit class SchemaDeprecatedEventOps[Self <: SchemaDeprecatedEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: SchemaFormAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setConfigCompleteRedirectUrl(value: String): Self = this.set("configCompleteRedirectUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigCompleteRedirectUrl: Self = this.set("configCompleteRedirectUrl", js.undefined)
+    @scala.inline
+    def setEventTime(value: String): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTime: Self = this.set("eventTime", js.undefined)
+    @scala.inline
+    def setMessage(value: SchemaMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setSpace(value: SchemaSpace): Self = this.set("space", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpace: Self = this.set("space", js.undefined)
+    @scala.inline
+    def setThreadKey(value: String): Self = this.set("threadKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreadKey: Self = this.set("threadKey", js.undefined)
+    @scala.inline
+    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken: Self = this.set("token", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

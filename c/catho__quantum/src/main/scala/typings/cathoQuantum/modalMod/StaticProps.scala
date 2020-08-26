@@ -1,20 +1,37 @@
 package typings.cathoQuantum.modalMod
 
-import typings.cathoQuantum.anon.SpacingObject
+import typings.cathoQuantum.anon.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StaticProps extends js.Object {
-  var theme: js.UndefOr[SpacingObject] = js.undefined
+  var theme: js.UndefOr[`1`] = js.native
 }
 
 object StaticProps {
   @scala.inline
-  def apply(theme: SpacingObject = null): StaticProps = {
+  def apply(): StaticProps = {
     val __obj = js.Dynamic.literal()
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticProps]
   }
+  @scala.inline
+  implicit class StaticPropsOps[Self <: StaticProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTheme(value: `1`): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

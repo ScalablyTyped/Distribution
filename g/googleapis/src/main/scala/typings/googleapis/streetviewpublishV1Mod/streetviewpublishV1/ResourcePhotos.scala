@@ -32,6 +32,7 @@ class ResourcePhotos protected () extends js.Object {
     */
   def batchDelete(): GaxiosPromise[SchemaBatchDeletePhotosResponse] = js.native
   def batchDelete(callback: BodyResponseCallback[SchemaBatchDeletePhotosResponse]): Unit = js.native
+  def batchDelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchDeletePhotosResponse] = js.native
   def batchDelete(params: ParamsResourcePhotosBatchdelete): GaxiosPromise[SchemaBatchDeletePhotosResponse] = js.native
   def batchDelete(
     params: ParamsResourcePhotosBatchdelete,
@@ -69,6 +70,7 @@ class ResourcePhotos protected () extends js.Object {
     */
   def batchGet(): GaxiosPromise[SchemaBatchGetPhotosResponse] = js.native
   def batchGet(callback: BodyResponseCallback[SchemaBatchGetPhotosResponse]): Unit = js.native
+  def batchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchGetPhotosResponse] = js.native
   def batchGet(params: ParamsResourcePhotosBatchget): GaxiosPromise[SchemaBatchGetPhotosResponse] = js.native
   def batchGet(params: ParamsResourcePhotosBatchget, callback: BodyResponseCallback[SchemaBatchGetPhotosResponse]): Unit = js.native
   def batchGet(
@@ -108,6 +110,7 @@ class ResourcePhotos protected () extends js.Object {
     */
   def batchUpdate(): GaxiosPromise[SchemaBatchUpdatePhotosResponse] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaBatchUpdatePhotosResponse]): Unit = js.native
+  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchUpdatePhotosResponse] = js.native
   def batchUpdate(params: ParamsResourcePhotosBatchupdate): GaxiosPromise[SchemaBatchUpdatePhotosResponse] = js.native
   def batchUpdate(
     params: ParamsResourcePhotosBatchupdate,
@@ -144,6 +147,7 @@ class ResourcePhotos protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListPhotosResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListPhotosResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListPhotosResponse] = js.native
   def list(params: ParamsResourcePhotosList): GaxiosPromise[SchemaListPhotosResponse] = js.native
   def list(params: ParamsResourcePhotosList, callback: BodyResponseCallback[SchemaListPhotosResponse]): Unit = js.native
   def list(

@@ -36,18 +36,38 @@ trait SchemaOutline extends js.Object {
 
 object SchemaOutline {
   @scala.inline
-  def apply(
-    dashStyle: String = null,
-    outlineFill: SchemaOutlineFill = null,
-    propertyState: String = null,
-    weight: SchemaDimension = null
-  ): SchemaOutline = {
+  def apply(): SchemaOutline = {
     val __obj = js.Dynamic.literal()
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (outlineFill != null) __obj.updateDynamic("outlineFill")(outlineFill.asInstanceOf[js.Any])
-    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOutline]
   }
+  @scala.inline
+  implicit class SchemaOutlineOps[Self <: SchemaOutline] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDashStyle(value: String): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    @scala.inline
+    def setOutlineFill(value: SchemaOutlineFill): Self = this.set("outlineFill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineFill: Self = this.set("outlineFill", js.undefined)
+    @scala.inline
+    def setPropertyState(value: String): Self = this.set("propertyState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyState: Self = this.set("propertyState", js.undefined)
+    @scala.inline
+    def setWeight(value: SchemaDimension): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+  }
+  
 }
 

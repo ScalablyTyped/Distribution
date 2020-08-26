@@ -39,18 +39,40 @@ trait SchemaBatchGetValuesByDataFilterRequest extends js.Object {
 
 object SchemaBatchGetValuesByDataFilterRequest {
   @scala.inline
-  def apply(
-    dataFilters: js.Array[SchemaDataFilter] = null,
-    dateTimeRenderOption: String = null,
-    majorDimension: String = null,
-    valueRenderOption: String = null
-  ): SchemaBatchGetValuesByDataFilterRequest = {
+  def apply(): SchemaBatchGetValuesByDataFilterRequest = {
     val __obj = js.Dynamic.literal()
-    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters.asInstanceOf[js.Any])
-    if (dateTimeRenderOption != null) __obj.updateDynamic("dateTimeRenderOption")(dateTimeRenderOption.asInstanceOf[js.Any])
-    if (majorDimension != null) __obj.updateDynamic("majorDimension")(majorDimension.asInstanceOf[js.Any])
-    if (valueRenderOption != null) __obj.updateDynamic("valueRenderOption")(valueRenderOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchGetValuesByDataFilterRequest]
   }
+  @scala.inline
+  implicit class SchemaBatchGetValuesByDataFilterRequestOps[Self <: SchemaBatchGetValuesByDataFilterRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataFiltersVarargs(value: SchemaDataFilter*): Self = this.set("dataFilters", js.Array(value :_*))
+    @scala.inline
+    def setDataFilters(value: js.Array[SchemaDataFilter]): Self = this.set("dataFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataFilters: Self = this.set("dataFilters", js.undefined)
+    @scala.inline
+    def setDateTimeRenderOption(value: String): Self = this.set("dateTimeRenderOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTimeRenderOption: Self = this.set("dateTimeRenderOption", js.undefined)
+    @scala.inline
+    def setMajorDimension(value: String): Self = this.set("majorDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorDimension: Self = this.set("majorDimension", js.undefined)
+    @scala.inline
+    def setValueRenderOption(value: String): Self = this.set("valueRenderOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueRenderOption: Self = this.set("valueRenderOption", js.undefined)
+  }
+  
 }
 

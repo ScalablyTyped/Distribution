@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "langmap"
-version := "0.0-dt-20200515Z-45f68b"
-scalaVersion := "2.13.2"
+version := "0.0-dt-20200515Z-38b47d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

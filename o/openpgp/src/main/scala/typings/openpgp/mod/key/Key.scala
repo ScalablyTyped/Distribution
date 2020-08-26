@@ -83,7 +83,11 @@ class Key protected () extends js.Object {
     * @returns key or null if no encryption key has been found
     */
   def getEncryptionKey(): js.Promise[Key | SubKey | Null] = js.native
+  def getEncryptionKey(keyId: js.UndefOr[scala.Nothing], date: js.UndefOr[scala.Nothing], userId: String): js.Promise[Key | SubKey | Null] = js.native
+  def getEncryptionKey(keyId: js.UndefOr[scala.Nothing], date: Date): js.Promise[Key | SubKey | Null] = js.native
+  def getEncryptionKey(keyId: js.UndefOr[scala.Nothing], date: Date, userId: String): js.Promise[Key | SubKey | Null] = js.native
   def getEncryptionKey(keyId: Keyid): js.Promise[Key | SubKey | Null] = js.native
+  def getEncryptionKey(keyId: Keyid, date: js.UndefOr[scala.Nothing], userId: String): js.Promise[Key | SubKey | Null] = js.native
   def getEncryptionKey(keyId: Keyid, date: Date): js.Promise[Key | SubKey | Null] = js.native
   def getEncryptionKey(keyId: Keyid, date: Date, userId: String): js.Promise[Key | SubKey | Null] = js.native
   /**
@@ -97,8 +101,13 @@ class Key protected () extends js.Object {
     * @returns
     */
   def getExpirationTime(): js.Promise[Date | Infinity | Null] = js.native
+  def getExpirationTime(capabilities: js.UndefOr[scala.Nothing], keyId: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
+  def getExpirationTime(capabilities: js.UndefOr[scala.Nothing], keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
+  def getExpirationTime(capabilities: js.UndefOr[scala.Nothing], keyId: Keyid, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
   @JSName("getExpirationTime")
   def getExpirationTime_encrypt(capabilities: encrypt): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_encrypt(capabilities: encrypt, keyId: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
   @JSName("getExpirationTime")
   def getExpirationTime_encrypt(capabilities: encrypt, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
   @JSName("getExpirationTime")
@@ -106,11 +115,15 @@ class Key protected () extends js.Object {
   @JSName("getExpirationTime")
   def getExpirationTime_encryptsign(capabilities: encrypt_sign): js.Promise[Date | Infinity | Null] = js.native
   @JSName("getExpirationTime")
+  def getExpirationTime_encryptsign(capabilities: encrypt_sign, keyId: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
   def getExpirationTime_encryptsign(capabilities: encrypt_sign, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
   @JSName("getExpirationTime")
   def getExpirationTime_encryptsign(capabilities: encrypt_sign, keyId: Keyid, userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
   @JSName("getExpirationTime")
   def getExpirationTime_sign(capabilities: sign): js.Promise[Date | Infinity | Null] = js.native
+  @JSName("getExpirationTime")
+  def getExpirationTime_sign(capabilities: sign, keyId: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[Date | Infinity | Null] = js.native
   @JSName("getExpirationTime")
   def getExpirationTime_sign(capabilities: sign, keyId: Keyid): js.Promise[Date | Infinity | Null] = js.native
   @JSName("getExpirationTime")
@@ -146,6 +159,7 @@ class Key protected () extends js.Object {
     * @returns The primary user and the self signature
     */
   def getPrimaryUser(): js.Promise[SelfCertification] = js.native
+  def getPrimaryUser(date: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[SelfCertification] = js.native
   def getPrimaryUser(date: Date): js.Promise[SelfCertification] = js.native
   def getPrimaryUser(date: Date, userId: js.Object): js.Promise[SelfCertification] = js.native
   /**
@@ -162,6 +176,7 @@ class Key protected () extends js.Object {
     * @returns key or null if no signing key has been found
     */
   def getSigningKey(keyId: Keyid): js.Promise[Key | SubKey | Null] = js.native
+  def getSigningKey(keyId: Keyid, date: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[Key | SubKey | Null] = js.native
   def getSigningKey(keyId: Keyid, date: Date): js.Promise[Key | SubKey | Null] = js.native
   def getSigningKey(keyId: Keyid, date: Date, userId: js.Object): js.Promise[Key | SubKey | Null] = js.native
   /**
@@ -205,6 +220,7 @@ class Key protected () extends js.Object {
     * @returns True if the certificate is revoked
     */
   def isRevoked(signature: Signature): js.Promise[Boolean] = js.native
+  def isRevoked(signature: Signature, key: js.UndefOr[scala.Nothing], date: Date): js.Promise[Boolean] = js.native
   def isRevoked(signature: Signature, key: PublicKey): js.Promise[Boolean] = js.native
   def isRevoked(signature: Signature, key: PublicKey, date: Date): js.Promise[Boolean] = js.native
   def isRevoked(signature: Signature, key: PublicSubkey): js.Promise[Boolean] = js.native
@@ -277,6 +293,7 @@ class Key protected () extends js.Object {
     * @returns The status of the primary key
     */
   def verifyPrimaryKey(): js.Promise[keyStatus] = js.native
+  def verifyPrimaryKey(date: js.UndefOr[scala.Nothing], userId: js.Object): js.Promise[keyStatus] = js.native
   def verifyPrimaryKey(date: Date): js.Promise[keyStatus] = js.native
   def verifyPrimaryKey(date: Date, userId: js.Object): js.Promise[keyStatus] = js.native
   /**

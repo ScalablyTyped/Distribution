@@ -34,22 +34,48 @@ trait CelebrityDetail extends js.Object {
 
 object CelebrityDetail {
   @scala.inline
-  def apply(
-    BoundingBox: BoundingBox = null,
-    Confidence: js.UndefOr[Percent] = js.undefined,
-    Face: FaceDetail = null,
-    Id: RekognitionUniqueId = null,
-    Name: String = null,
-    Urls: Urls = null
-  ): CelebrityDetail = {
+  def apply(): CelebrityDetail = {
     val __obj = js.Dynamic.literal()
-    if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
-    if (Face != null) __obj.updateDynamic("Face")(Face.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Urls != null) __obj.updateDynamic("Urls")(Urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[CelebrityDetail]
   }
+  @scala.inline
+  implicit class CelebrityDetailOps[Self <: CelebrityDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingBox(value: BoundingBox): Self = this.set("BoundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingBox: Self = this.set("BoundingBox", js.undefined)
+    @scala.inline
+    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setFace(value: FaceDetail): Self = this.set("Face", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFace: Self = this.set("Face", js.undefined)
+    @scala.inline
+    def setId(value: RekognitionUniqueId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setUrlsVarargs(value: Url*): Self = this.set("Urls", js.Array(value :_*))
+    @scala.inline
+    def setUrls(value: Urls): Self = this.set("Urls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrls: Self = this.set("Urls", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "parse-env-string"
-version := "1.0-dt-20200624Z-1a5a70"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200624Z-1e02b6"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

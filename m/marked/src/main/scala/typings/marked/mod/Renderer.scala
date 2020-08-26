@@ -19,7 +19,8 @@ class Renderer () extends js.Object {
   def blockquote(quote: String): String = js.native
   def br(): String = js.native
   def checkbox(checked: Boolean): String = js.native
-  def code(code: String, language: js.UndefOr[String], isEscaped: Boolean): String = js.native
+  def code(code: String, language: js.UndefOr[scala.Nothing], isEscaped: Boolean): String = js.native
+  def code(code: String, language: String, isEscaped: Boolean): String = js.native
   def codespan(code: String): String = js.native
   def del(text: String): String = js.native
   def em(text: String): String = js.native

@@ -30,5 +30,30 @@ object AddPermissionInput {
     val __obj = js.Dynamic.literal(AWSAccountId = AWSAccountId.asInstanceOf[js.Any], ActionName = ActionName.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPermissionInput]
   }
+  @scala.inline
+  implicit class AddPermissionInputOps[Self <: AddPermissionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAWSAccountIdVarargs(value: delegate*): Self = this.set("AWSAccountId", js.Array(value :_*))
+    @scala.inline
+    def setAWSAccountId(value: DelegatesList): Self = this.set("AWSAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActionNameVarargs(value: action*): Self = this.set("ActionName", js.Array(value :_*))
+    @scala.inline
+    def setActionName(value: ActionsList): Self = this.set("ActionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabel(value: label): Self = this.set("Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopicArn(value: topicARN): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+  }
+  
 }
 

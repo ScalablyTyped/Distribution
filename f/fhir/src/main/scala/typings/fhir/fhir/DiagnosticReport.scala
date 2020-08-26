@@ -8,171 +8,218 @@ import scala.scalajs.js.annotation._
   * A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait DiagnosticReport extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait DiagnosticReport extends DomainResource {
   /**
     * Contains extended information for property 'conclusion'.
     */
-  var _conclusion: js.UndefOr[Element] = js.undefined
+  var _conclusion: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'effectiveDateTime'.
     */
-  var _effectiveDateTime: js.UndefOr[Element] = js.undefined
+  var _effectiveDateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'issued'.
     */
-  var _issued: js.UndefOr[Element] = js.undefined
+  var _issued: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * What was requested
     */
-  var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
+  var basedOn: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Service category
     */
-  var category: js.UndefOr[CodeableConcept] = js.undefined
+  var category: js.UndefOr[CodeableConcept] = js.native
   /**
     * Name/Code for this diagnostic report
     */
-  var code: CodeableConcept
+  var code: CodeableConcept = js.native
   /**
     * Codes for the conclusion
     */
-  var codedDiagnosis: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var codedDiagnosis: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Clinical Interpretation of test results
     */
-  var conclusion: js.UndefOr[String] = js.undefined
+  var conclusion: js.UndefOr[String] = js.native
   /**
     * Health care event when test ordered
     */
-  var context: js.UndefOr[Reference] = js.undefined
+  var context: js.UndefOr[Reference] = js.native
   /**
     * Clinically relevant time/time-period for report
     */
-  var effectiveDateTime: js.UndefOr[dateTime] = js.undefined
+  var effectiveDateTime: js.UndefOr[dateTime] = js.native
   /**
     * Clinically relevant time/time-period for report
     */
-  var effectivePeriod: js.UndefOr[Period] = js.undefined
+  var effectivePeriod: js.UndefOr[Period] = js.native
   /**
     * Business identifier for report
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Key images associated with this report
     */
-  var image: js.UndefOr[js.Array[DiagnosticReportImage]] = js.undefined
+  var image: js.UndefOr[js.Array[DiagnosticReportImage]] = js.native
   /**
     * Reference to full details of imaging associated with the diagnostic report
     */
-  var imagingStudy: js.UndefOr[js.Array[Reference]] = js.undefined
+  var imagingStudy: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * DateTime this version was released
     */
-  var issued: js.UndefOr[instant] = js.undefined
+  var issued: js.UndefOr[instant] = js.native
   /**
     * Participants in producing the report
     */
-  var performer: js.UndefOr[js.Array[DiagnosticReportPerformer]] = js.undefined
+  var performer: js.UndefOr[js.Array[DiagnosticReportPerformer]] = js.native
   /**
     * Entire report as issued
     */
-  var presentedForm: js.UndefOr[js.Array[Attachment]] = js.undefined
+  var presentedForm: js.UndefOr[js.Array[Attachment]] = js.native
   /**
     * Observations - simple, or complex nested groups
     */
-  var result: js.UndefOr[js.Array[Reference]] = js.undefined
+  var result: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Specimens this report is based on
     */
-  var specimen: js.UndefOr[js.Array[Reference]] = js.undefined
+  var specimen: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * registered | partial | preliminary | final +
     */
-  var status: code
+  var status: code = js.native
   /**
     * The subject of the report - usually, but not always, the patient
     */
-  var subject: js.UndefOr[Reference] = js.undefined
+  var subject: js.UndefOr[Reference] = js.native
 }
 
 object DiagnosticReport {
   @scala.inline
-  def apply(
-    code: CodeableConcept,
-    status: code,
-    _conclusion: Element = null,
-    _effectiveDateTime: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _issued: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    basedOn: js.Array[Reference] = null,
-    category: CodeableConcept = null,
-    codedDiagnosis: js.Array[CodeableConcept] = null,
-    conclusion: String = null,
-    contained: js.Array[Resource] = null,
-    context: Reference = null,
-    effectiveDateTime: dateTime = null,
-    effectivePeriod: Period = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    image: js.Array[DiagnosticReportImage] = null,
-    imagingStudy: js.Array[Reference] = null,
-    implicitRules: uri = null,
-    issued: instant = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    performer: js.Array[DiagnosticReportPerformer] = null,
-    presentedForm: js.Array[Attachment] = null,
-    resourceType: code = null,
-    result: js.Array[Reference] = null,
-    specimen: js.Array[Reference] = null,
-    subject: Reference = null,
-    text: Narrative = null
-  ): DiagnosticReport = {
+  def apply(code: CodeableConcept, status: code): DiagnosticReport = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (_conclusion != null) __obj.updateDynamic("_conclusion")(_conclusion.asInstanceOf[js.Any])
-    if (_effectiveDateTime != null) __obj.updateDynamic("_effectiveDateTime")(_effectiveDateTime.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_issued != null) __obj.updateDynamic("_issued")(_issued.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (codedDiagnosis != null) __obj.updateDynamic("codedDiagnosis")(codedDiagnosis.asInstanceOf[js.Any])
-    if (conclusion != null) __obj.updateDynamic("conclusion")(conclusion.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (effectiveDateTime != null) __obj.updateDynamic("effectiveDateTime")(effectiveDateTime.asInstanceOf[js.Any])
-    if (effectivePeriod != null) __obj.updateDynamic("effectivePeriod")(effectivePeriod.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (imagingStudy != null) __obj.updateDynamic("imagingStudy")(imagingStudy.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (issued != null) __obj.updateDynamic("issued")(issued.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])
-    if (presentedForm != null) __obj.updateDynamic("presentedForm")(presentedForm.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (specimen != null) __obj.updateDynamic("specimen")(specimen.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticReport]
   }
+  @scala.inline
+  implicit class DiagnosticReportOps[Self <: DiagnosticReport] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_conclusion(value: Element): Self = this.set("_conclusion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_conclusion: Self = this.set("_conclusion", js.undefined)
+    @scala.inline
+    def set_effectiveDateTime(value: Element): Self = this.set("_effectiveDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_effectiveDateTime: Self = this.set("_effectiveDateTime", js.undefined)
+    @scala.inline
+    def set_issued(value: Element): Self = this.set("_issued", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_issued: Self = this.set("_issued", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setBasedOnVarargs(value: Reference*): Self = this.set("basedOn", js.Array(value :_*))
+    @scala.inline
+    def setBasedOn(value: js.Array[Reference]): Self = this.set("basedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasedOn: Self = this.set("basedOn", js.undefined)
+    @scala.inline
+    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setCodedDiagnosisVarargs(value: CodeableConcept*): Self = this.set("codedDiagnosis", js.Array(value :_*))
+    @scala.inline
+    def setCodedDiagnosis(value: js.Array[CodeableConcept]): Self = this.set("codedDiagnosis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodedDiagnosis: Self = this.set("codedDiagnosis", js.undefined)
+    @scala.inline
+    def setConclusion(value: String): Self = this.set("conclusion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConclusion: Self = this.set("conclusion", js.undefined)
+    @scala.inline
+    def setContext(value: Reference): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setEffectiveDateTime(value: dateTime): Self = this.set("effectiveDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectiveDateTime: Self = this.set("effectiveDateTime", js.undefined)
+    @scala.inline
+    def setEffectivePeriod(value: Period): Self = this.set("effectivePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectivePeriod: Self = this.set("effectivePeriod", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setImageVarargs(value: DiagnosticReportImage*): Self = this.set("image", js.Array(value :_*))
+    @scala.inline
+    def setImage(value: js.Array[DiagnosticReportImage]): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setImagingStudyVarargs(value: Reference*): Self = this.set("imagingStudy", js.Array(value :_*))
+    @scala.inline
+    def setImagingStudy(value: js.Array[Reference]): Self = this.set("imagingStudy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagingStudy: Self = this.set("imagingStudy", js.undefined)
+    @scala.inline
+    def setIssued(value: instant): Self = this.set("issued", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssued: Self = this.set("issued", js.undefined)
+    @scala.inline
+    def setPerformerVarargs(value: DiagnosticReportPerformer*): Self = this.set("performer", js.Array(value :_*))
+    @scala.inline
+    def setPerformer(value: js.Array[DiagnosticReportPerformer]): Self = this.set("performer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformer: Self = this.set("performer", js.undefined)
+    @scala.inline
+    def setPresentedFormVarargs(value: Attachment*): Self = this.set("presentedForm", js.Array(value :_*))
+    @scala.inline
+    def setPresentedForm(value: js.Array[Attachment]): Self = this.set("presentedForm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresentedForm: Self = this.set("presentedForm", js.undefined)
+    @scala.inline
+    def setResultVarargs(value: Reference*): Self = this.set("result", js.Array(value :_*))
+    @scala.inline
+    def setResult(value: js.Array[Reference]): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("result", js.undefined)
+    @scala.inline
+    def setSpecimenVarargs(value: Reference*): Self = this.set("specimen", js.Array(value :_*))
+    @scala.inline
+    def setSpecimen(value: js.Array[Reference]): Self = this.set("specimen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecimen: Self = this.set("specimen", js.undefined)
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+  }
+  
 }
 

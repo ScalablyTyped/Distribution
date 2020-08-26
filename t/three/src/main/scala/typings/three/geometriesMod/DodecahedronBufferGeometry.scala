@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class DodecahedronBufferGeometry ()
   extends typings.three.dodecahedronGeometryMod.DodecahedronBufferGeometry {
   def this(radius: Double) = this()
+  def this(radius: js.UndefOr[scala.Nothing], detail: Double) = this()
   def this(radius: Double, detail: Double) = this()
 }
 

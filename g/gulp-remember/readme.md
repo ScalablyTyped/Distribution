@@ -9,9 +9,9 @@ Adds previously seen files back into the stream.
 | ------------------ | :-------------: |
 | Full name          | gulp-remember |
 | Keywords           | gulpplugin |
-| # releases         | 3 |
-| # dependents       | 49 |
-| # downloads        | 603221 |
+| # releases         | 0 |
+| # dependents       | 50 |
+| # downloads        | 600611 |
 | # stars            | 23 |
 
 ## Links

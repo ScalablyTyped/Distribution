@@ -133,6 +133,7 @@ object argsMod extends js.Object {
     val runInBand: AliasDefaultUndefined = js.native
     val runTestsByPath: DefaultDescriptionString = js.native
     val runner: `11` = js.native
+    val selectProjects: DescriptionString = js.native
     val setupFiles: DescriptionString = js.native
     val setupFilesAfterEnv: DescriptionString = js.native
     val showConfig: `12` = js.native

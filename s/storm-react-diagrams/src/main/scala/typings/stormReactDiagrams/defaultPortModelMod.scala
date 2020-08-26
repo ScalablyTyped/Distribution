@@ -16,6 +16,7 @@ object defaultPortModelMod extends js.Object {
   class DefaultPortModel protected () extends PortModel {
     def this(isInput: Boolean, name: String) = this()
     def this(isInput: Boolean, name: String, label: String) = this()
+    def this(isInput: Boolean, name: String, label: js.UndefOr[scala.Nothing], id: String) = this()
     def this(isInput: Boolean, name: String, label: String, id: String) = this()
     var in: Boolean = js.native
     var label: String = js.native

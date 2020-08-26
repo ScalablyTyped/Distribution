@@ -22,10 +22,30 @@ trait AssociateResolverRuleRequest extends js.Object {
 
 object AssociateResolverRuleRequest {
   @scala.inline
-  def apply(ResolverRuleId: ResourceId, VPCId: ResourceId, Name: Name = null): AssociateResolverRuleRequest = {
+  def apply(ResolverRuleId: ResourceId, VPCId: ResourceId): AssociateResolverRuleRequest = {
     val __obj = js.Dynamic.literal(ResolverRuleId = ResolverRuleId.asInstanceOf[js.Any], VPCId = VPCId.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateResolverRuleRequest]
   }
+  @scala.inline
+  implicit class AssociateResolverRuleRequestOps[Self <: AssociateResolverRuleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResolverRuleId(value: ResourceId): Self = this.set("ResolverRuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVPCId(value: ResourceId): Self = this.set("VPCId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

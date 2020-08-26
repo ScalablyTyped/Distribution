@@ -4,46 +4,77 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigStyle extends js.Object {
   /** A fallback scale object for when there isn't one defined in the `theme` object. */
-  var defaultScale: js.UndefOr[Scale] = js.undefined
+  var defaultScale: js.UndefOr[Scale] = js.native
   /**
     * An array of multiple properties (e.g. `['marginLeft', 'marginRight']`) to which this style's value will be
     * assigned (overrides `property` when present).
     */
   var properties: js.UndefOr[
     js.Array[
-      /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any
+      /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 765 */ js.Any
     ]
-  ] = js.undefined
+  ] = js.native
   /** The CSS property to use in the returned style object (overridden by `properties` if present). */
   var property: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 760 */ js.Any
-  ] = js.undefined
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 766 */ js.Any
+  ] = js.native
   /** A string referencing a key in the `theme` object. */
-  var scale: js.UndefOr[String] = js.undefined
+  var scale: js.UndefOr[String] = js.native
   /** A function to transform the raw value based on the scale. */
-  var transform: js.UndefOr[js.Function2[/* value */ js.Any, /* scale */ js.UndefOr[Scale], _]] = js.undefined
+  var transform: js.UndefOr[js.Function2[/* value */ js.Any, /* scale */ js.UndefOr[Scale], _]] = js.native
 }
 
 object ConfigStyle {
   @scala.inline
-  def apply(
-    defaultScale: Scale = null,
-    properties: js.Array[
-      /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any
-    ] = null,
-    property: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 760 */ js.Any = null,
-    scale: String = null,
-    transform: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => _ = null
-  ): ConfigStyle = {
+  def apply(): ConfigStyle = {
     val __obj = js.Dynamic.literal()
-    if (defaultScale != null) __obj.updateDynamic("defaultScale")(defaultScale.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     __obj.asInstanceOf[ConfigStyle]
   }
+  @scala.inline
+  implicit class ConfigStyleOps[Self <: ConfigStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultScaleVarargs(value: (Double | String)*): Self = this.set("defaultScale", js.Array(value :_*))
+    @scala.inline
+    def setDefaultScale(value: Scale): Self = this.set("defaultScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultScale: Self = this.set("defaultScale", js.undefined)
+    @scala.inline
+    def setPropertiesVarargs(
+      value: (/* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 765 */ js.Any)*
+    ): Self = this.set("properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(
+      value: js.Array[
+          /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 765 */ js.Any
+        ]
+    ): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 766 */ js.Any): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setScale(value: String): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => _): Self = this.set("transform", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

@@ -18,20 +18,5 @@ class ASPxClientGridViewBatchEditRowValidatingEventArgs protected ()
     * @param key An object that is the row's key.
     */
   def this(visibleIndex: Double, validationInfo: js.Any, key: js.Any) = this()
-  /**
-    * Gets the row's key.
-    */
-  /* CompleteClass */
-  override var key: js.Any = js.native
-  /**
-    * Provides validation information of a row currently being validated.
-    */
-  /* CompleteClass */
-  override var validationInfo: js.Any = js.native
-  /**
-    * Gets the processed row's visible index.
-    */
-  /* CompleteClass */
-  override var visibleIndex: Double = js.native
 }
 

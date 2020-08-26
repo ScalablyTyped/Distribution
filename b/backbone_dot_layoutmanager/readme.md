@@ -12,11 +12,11 @@ A layout and template manager for Backbone.js applications.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 14507 |
+| # downloads        | 14793 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/tbranyen/backbone.layoutmanager#readme)
+- [Homepage](http://layoutmanager.org/)
 - [Bugs](https://github.com/tbranyen/backbone.layoutmanager/issues)
 - [Repository](https://github.com/tbranyen/backbone.layoutmanager)
 - [Npm](https://www.npmjs.com/package/backbone.layoutmanager)

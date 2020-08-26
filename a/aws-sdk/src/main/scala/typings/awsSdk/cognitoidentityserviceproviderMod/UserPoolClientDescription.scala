@@ -22,16 +22,34 @@ trait UserPoolClientDescription extends js.Object {
 
 object UserPoolClientDescription {
   @scala.inline
-  def apply(
-    ClientId: ClientIdType = null,
-    ClientName: ClientNameType = null,
-    UserPoolId: UserPoolIdType = null
-  ): UserPoolClientDescription = {
+  def apply(): UserPoolClientDescription = {
     val __obj = js.Dynamic.literal()
-    if (ClientId != null) __obj.updateDynamic("ClientId")(ClientId.asInstanceOf[js.Any])
-    if (ClientName != null) __obj.updateDynamic("ClientName")(ClientName.asInstanceOf[js.Any])
-    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolClientDescription]
   }
+  @scala.inline
+  implicit class UserPoolClientDescriptionOps[Self <: UserPoolClientDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    @scala.inline
+    def setClientName(value: ClientNameType): Self = this.set("ClientName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientName: Self = this.set("ClientName", js.undefined)
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+  }
+  
 }
 

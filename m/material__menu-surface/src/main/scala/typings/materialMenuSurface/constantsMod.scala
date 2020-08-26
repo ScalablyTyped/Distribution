@@ -136,6 +136,7 @@ object constantsMod extends js.Object {
     var ANIMATING_CLOSED: String = js.native
     var ANIMATING_OPEN: String = js.native
     var FIXED: String = js.native
+    var IS_OPEN_BELOW: String = js.native
     var OPEN: String = js.native
     var ROOT: String = js.native
   }
@@ -144,7 +145,7 @@ object constantsMod extends js.Object {
   object numbers extends js.Object {
     /** Ratio of anchor width to menu-surface width for switching from corner positioning to center positioning. */
     var ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO: Double = js.native
-    /** Margin left to the edge of the viewport when menu-surface is at maximum possible height. */
+    /** Margin left to the edge of the viewport when menu-surface is at maximum possible height. Also used as a viewport margin. */
     var MARGIN_TO_EDGE: Double = js.native
     /** Total duration of menu-surface close animation. */
     var TRANSITION_CLOSE_DURATION: Double = js.native

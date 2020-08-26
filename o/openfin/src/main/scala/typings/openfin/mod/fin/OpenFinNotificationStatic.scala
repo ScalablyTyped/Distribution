@@ -20,7 +20,7 @@ Instantiable1[/* options */ NotificationOptions, OpenFinNotification]
     ]
      with Instantiable3[
       /* options */ NotificationOptions, 
-      /* callback */ js.Function0[Unit], 
+      js.UndefOr[/* callback */ js.Function0[Unit]], 
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinNotification
     ] {

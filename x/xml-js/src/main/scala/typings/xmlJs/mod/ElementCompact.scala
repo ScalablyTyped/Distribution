@@ -5,39 +5,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ElementCompact
   extends /* key */ StringDictionary[js.Any] {
-  var _attributes: js.UndefOr[Attributes] = js.undefined
-  var _cdata: js.UndefOr[String] = js.undefined
-  var _comment: js.UndefOr[String] = js.undefined
-  var _declaration: js.UndefOr[typings.xmlJs.anon.Attributes] = js.undefined
-  var _doctype: js.UndefOr[String] = js.undefined
-  var _instruction: js.UndefOr[StringDictionary[String]] = js.undefined
-  var _text: js.UndefOr[String | Double] = js.undefined
+  var _attributes: js.UndefOr[Attributes] = js.native
+  var _cdata: js.UndefOr[String] = js.native
+  var _comment: js.UndefOr[String] = js.native
+  var _declaration: js.UndefOr[typings.xmlJs.anon.Attributes] = js.native
+  var _doctype: js.UndefOr[String] = js.native
+  var _instruction: js.UndefOr[StringDictionary[String]] = js.native
+  var _text: js.UndefOr[String | Double] = js.native
 }
 
 object ElementCompact {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    _attributes: Attributes = null,
-    _cdata: String = null,
-    _comment: String = null,
-    _declaration: typings.xmlJs.anon.Attributes = null,
-    _doctype: String = null,
-    _instruction: StringDictionary[String] = null,
-    _text: String | Double = null
-  ): ElementCompact = {
+  def apply(): ElementCompact = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_attributes != null) __obj.updateDynamic("_attributes")(_attributes.asInstanceOf[js.Any])
-    if (_cdata != null) __obj.updateDynamic("_cdata")(_cdata.asInstanceOf[js.Any])
-    if (_comment != null) __obj.updateDynamic("_comment")(_comment.asInstanceOf[js.Any])
-    if (_declaration != null) __obj.updateDynamic("_declaration")(_declaration.asInstanceOf[js.Any])
-    if (_doctype != null) __obj.updateDynamic("_doctype")(_doctype.asInstanceOf[js.Any])
-    if (_instruction != null) __obj.updateDynamic("_instruction")(_instruction.asInstanceOf[js.Any])
-    if (_text != null) __obj.updateDynamic("_text")(_text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementCompact]
   }
+  @scala.inline
+  implicit class ElementCompactOps[Self <: ElementCompact] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_attributes(value: Attributes): Self = this.set("_attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_attributes: Self = this.set("_attributes", js.undefined)
+    @scala.inline
+    def set_cdata(value: String): Self = this.set("_cdata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_cdata: Self = this.set("_cdata", js.undefined)
+    @scala.inline
+    def set_comment(value: String): Self = this.set("_comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_comment: Self = this.set("_comment", js.undefined)
+    @scala.inline
+    def set_declaration(value: typings.xmlJs.anon.Attributes): Self = this.set("_declaration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_declaration: Self = this.set("_declaration", js.undefined)
+    @scala.inline
+    def set_doctype(value: String): Self = this.set("_doctype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_doctype: Self = this.set("_doctype", js.undefined)
+    @scala.inline
+    def set_instruction(value: StringDictionary[String]): Self = this.set("_instruction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_instruction: Self = this.set("_instruction", js.undefined)
+    @scala.inline
+    def set_text(value: String | Double): Self = this.set("_text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_text: Self = this.set("_text", js.undefined)
+  }
+  
 }
 

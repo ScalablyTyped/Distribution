@@ -18,6 +18,7 @@ trait Instance[Data] extends js.Object {
   def get[K /* <: /* keyof Data */ String */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: Data[K] */ js.Any = js.native
   def mount(selector: String): Unit = js.native
   def off(): Unit = js.native
+  def off(eventName: js.UndefOr[scala.Nothing], listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
   def off(eventName: String): Unit = js.native
   def off(eventName: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
   def on(eventName: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native

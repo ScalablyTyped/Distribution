@@ -22,16 +22,34 @@ trait CreateTemplateAliasResponse extends js.Object {
 
 object CreateTemplateAliasResponse {
   @scala.inline
-  def apply(
-    RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined,
-    TemplateAlias: TemplateAlias = null
-  ): CreateTemplateAliasResponse = {
+  def apply(): CreateTemplateAliasResponse = {
     val __obj = js.Dynamic.literal()
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
-    if (TemplateAlias != null) __obj.updateDynamic("TemplateAlias")(TemplateAlias.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTemplateAliasResponse]
   }
+  @scala.inline
+  implicit class CreateTemplateAliasResponseOps[Self <: CreateTemplateAliasResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTemplateAlias(value: TemplateAlias): Self = this.set("TemplateAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateAlias: Self = this.set("TemplateAlias", js.undefined)
+  }
+  
 }
 

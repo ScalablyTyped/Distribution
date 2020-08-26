@@ -1,6 +1,5 @@
 package typings.sharepoint.global.SP
 
-import typings.microsoftAjax.Sys.EventArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,26 +27,5 @@ class ClientRequestFailedEventArgs protected ()
     errorDetails: js.Any,
     errorTraceCorrelationId: String
   ) = this()
-  /**
-    * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
-    */
-  /* CompleteClass */
-  override var Empty: EventArgs = js.native
-  /* CompleteClass */
-  override def get_errorCode(): Double = js.native
-  /* CompleteClass */
-  override def get_errorDetails(): js.Any = js.native
-  /* CompleteClass */
-  override def get_errorTraceCorrelationId(): String = js.native
-  /* CompleteClass */
-  override def get_errorTypeName(): String = js.native
-  /* CompleteClass */
-  override def get_errorValue(): String = js.native
-  /* CompleteClass */
-  override def get_message(): String = js.native
-  /* CompleteClass */
-  override def get_request(): typings.sharepoint.SP.ClientRequest = js.native
-  /* CompleteClass */
-  override def get_stackTrace(): String = js.native
 }
 

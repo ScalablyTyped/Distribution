@@ -25,7 +25,7 @@ object keyIndexMod extends js.Object {
   @js.native
   object KeyIndex extends js.Object {
     def __EMPTY_NODE: ChildrenNode = js.native
-    def __EMPTY_NODE(`val`: ChildrenNode): js.Any = js.native
+    def __EMPTY_NODE_=(`val`: ChildrenNode): Unit = js.native
   }
   
 }

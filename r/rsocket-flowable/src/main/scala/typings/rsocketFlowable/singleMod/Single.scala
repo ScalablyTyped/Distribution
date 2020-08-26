@@ -17,6 +17,7 @@ trait Single[T] extends js.Object {
   def subscribe(): Unit = js.native
   def subscribe(partialSubscriber: Partial[IFutureSubscriber[T]]): Unit = js.native
   def `then`(): Unit = js.native
+  def `then`(successFn: js.UndefOr[scala.Nothing], errorFn: js.Function1[/* error */ Error, Unit]): Unit = js.native
   def `then`(successFn: js.Function1[/* data */ T, Unit]): Unit = js.native
   def `then`(successFn: js.Function1[/* data */ T, Unit], errorFn: js.Function1[/* error */ Error, Unit]): Unit = js.native
 }

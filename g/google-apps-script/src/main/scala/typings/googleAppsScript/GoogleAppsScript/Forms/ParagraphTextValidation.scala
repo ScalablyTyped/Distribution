@@ -15,5 +15,6 @@ import scala.scalajs.js.annotation._
   *     paragraphTextItem.setValidation(paragraphtextValidation);
   */
 // tslint:disable-next-line: no-empty-interface
+@js.native
 trait ParagraphTextValidation extends js.Object
 

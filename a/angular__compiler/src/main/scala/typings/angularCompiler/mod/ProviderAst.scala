@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ProviderAst")
 @js.native
 class ProviderAst protected ()
-  extends typings.angularCompiler.publicApiMod.ProviderAst {
+  extends typings.angularCompiler.compilerMod.ProviderAst {
   def this(
     token: CompileTokenMetadata,
     multiProvider: Boolean,

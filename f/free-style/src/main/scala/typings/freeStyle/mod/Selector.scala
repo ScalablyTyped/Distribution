@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Selector protected () extends Container[Selector] {
   def this(selector: String, id: String) = this()
-  /* CompleteClass */
-  override var id: String = js.native
   var selector: String = js.native
-  /* CompleteClass */
-  override def getStyles(): String = js.native
 }
 

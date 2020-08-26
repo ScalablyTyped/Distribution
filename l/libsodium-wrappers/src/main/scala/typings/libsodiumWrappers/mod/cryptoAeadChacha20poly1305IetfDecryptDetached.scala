@@ -14,16 +14,8 @@ object cryptoAeadChacha20poly1305IetfDecryptDetached extends js.Object {
     mac: Uint8Array,
     additional_data: String | Uint8Array | Null,
     public_nonce: Uint8Array,
-    key: Uint8Array
-  ): Uint8Array = js.native
-  def apply(
-    secret_nonce: String | Uint8Array | Null,
-    ciphertext: String | Uint8Array,
-    mac: Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
     key: Uint8Array,
-    outputFormat: Uint8ArrayOutputFormat
+    outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
   ): Uint8Array = js.native
   def apply(
     secret_nonce: String,

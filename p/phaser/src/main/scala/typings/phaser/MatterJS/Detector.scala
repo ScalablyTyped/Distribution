@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   *
   * @class Detector
   */
+@js.native
 trait Detector extends js.Object
 

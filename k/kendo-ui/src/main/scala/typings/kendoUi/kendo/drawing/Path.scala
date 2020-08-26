@@ -34,6 +34,7 @@ trait Path extends Element {
   def moveTo(x: Point): Path = js.native
   def moveTo(x: Point, y: Double): Path = js.native
   def stroke(color: String): Path = js.native
+  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): Path = js.native
   def stroke(color: String, width: Double): Path = js.native
   def stroke(color: String, width: Double, opacity: Double): Path = js.native
 }

@@ -17,14 +17,15 @@ import scala.scalajs.js.annotation._
   * @see XGroup
   * @see XReportDefinition
   */
+@js.native
 trait XGroups
   extends XIndexContainer
      with XContainer
      with XChild
      with XComponent {
-  var ReportDefinition: XReportDefinition
+  var ReportDefinition: XReportDefinition = js.native
   /** factory method for {@link XGroup} . */
-  def createGroup(): XGroup
+  def createGroup(): XGroup = js.native
 }
 
 object XGroups {
@@ -56,5 +57,22 @@ object XGroups {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ReportDefinition = ReportDefinition.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), addEventListener = js.Any.fromFunction1(addEventListener), createGroup = js.Any.fromFunction0(createGroup), dispose = js.Any.fromFunction0(dispose), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getParent = js.Any.fromFunction0(getParent), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removeEventListener = js.Any.fromFunction1(removeEventListener), replaceByIndex = js.Any.fromFunction2(replaceByIndex), setParent = js.Any.fromFunction1(setParent))
     __obj.asInstanceOf[XGroups]
   }
+  @scala.inline
+  implicit class XGroupsOps[Self <: XGroups] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReportDefinition(value: XReportDefinition): Self = this.set("ReportDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreateGroup(value: () => XGroup): Self = this.set("createGroup", js.Any.fromFunction0(value))
+  }
+  
 }
 

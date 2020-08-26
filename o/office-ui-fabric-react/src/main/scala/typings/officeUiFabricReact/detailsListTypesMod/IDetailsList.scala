@@ -19,7 +19,30 @@ trait IDetailsList extends IList {
     * when focused.
     */
   def focusIndex(index: Double): Unit = js.native
+  def focusIndex(
+    index: Double,
+    forceIntoFirstElement: js.UndefOr[scala.Nothing],
+    measureItem: js.UndefOr[scala.Nothing],
+    scrollToMode: ScrollToMode
+  ): Unit = js.native
+  def focusIndex(
+    index: Double,
+    forceIntoFirstElement: js.UndefOr[scala.Nothing],
+    measureItem: js.Function1[/* itemIndex */ Double, Double]
+  ): Unit = js.native
+  def focusIndex(
+    index: Double,
+    forceIntoFirstElement: js.UndefOr[scala.Nothing],
+    measureItem: js.Function1[/* itemIndex */ Double, Double],
+    scrollToMode: ScrollToMode
+  ): Unit = js.native
   def focusIndex(index: Double, forceIntoFirstElement: Boolean): Unit = js.native
+  def focusIndex(
+    index: Double,
+    forceIntoFirstElement: Boolean,
+    measureItem: js.UndefOr[scala.Nothing],
+    scrollToMode: ScrollToMode
+  ): Unit = js.native
   def focusIndex(
     index: Double,
     forceIntoFirstElement: Boolean,

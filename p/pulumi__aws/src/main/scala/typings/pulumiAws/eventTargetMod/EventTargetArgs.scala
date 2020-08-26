@@ -66,32 +66,68 @@ trait EventTargetArgs extends js.Object {
 
 object EventTargetArgs {
   @scala.inline
-  def apply(
-    arn: Input[String],
-    rule: Input[String],
-    batchTarget: Input[EventTargetBatchTarget] = null,
-    ecsTarget: Input[EventTargetEcsTarget] = null,
-    input: Input[String] = null,
-    inputPath: Input[String] = null,
-    inputTransformer: Input[EventTargetInputTransformer] = null,
-    kinesisTarget: Input[EventTargetKinesisTarget] = null,
-    roleArn: Input[String] = null,
-    runCommandTargets: Input[js.Array[Input[EventTargetRunCommandTarget]]] = null,
-    sqsTarget: Input[EventTargetSqsTarget] = null,
-    targetId: Input[String] = null
-  ): EventTargetArgs = {
+  def apply(arn: Input[String], rule: Input[String]): EventTargetArgs = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
-    if (batchTarget != null) __obj.updateDynamic("batchTarget")(batchTarget.asInstanceOf[js.Any])
-    if (ecsTarget != null) __obj.updateDynamic("ecsTarget")(ecsTarget.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (inputPath != null) __obj.updateDynamic("inputPath")(inputPath.asInstanceOf[js.Any])
-    if (inputTransformer != null) __obj.updateDynamic("inputTransformer")(inputTransformer.asInstanceOf[js.Any])
-    if (kinesisTarget != null) __obj.updateDynamic("kinesisTarget")(kinesisTarget.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    if (runCommandTargets != null) __obj.updateDynamic("runCommandTargets")(runCommandTargets.asInstanceOf[js.Any])
-    if (sqsTarget != null) __obj.updateDynamic("sqsTarget")(sqsTarget.asInstanceOf[js.Any])
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTargetArgs]
   }
+  @scala.inline
+  implicit class EventTargetArgsOps[Self <: EventTargetArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRule(value: Input[String]): Self = this.set("rule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBatchTarget(value: Input[EventTargetBatchTarget]): Self = this.set("batchTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchTarget: Self = this.set("batchTarget", js.undefined)
+    @scala.inline
+    def setEcsTarget(value: Input[EventTargetEcsTarget]): Self = this.set("ecsTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsTarget: Self = this.set("ecsTarget", js.undefined)
+    @scala.inline
+    def setInput(value: Input[String]): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setInputPath(value: Input[String]): Self = this.set("inputPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputPath: Self = this.set("inputPath", js.undefined)
+    @scala.inline
+    def setInputTransformer(value: Input[EventTargetInputTransformer]): Self = this.set("inputTransformer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputTransformer: Self = this.set("inputTransformer", js.undefined)
+    @scala.inline
+    def setKinesisTarget(value: Input[EventTargetKinesisTarget]): Self = this.set("kinesisTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisTarget: Self = this.set("kinesisTarget", js.undefined)
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    @scala.inline
+    def setRunCommandTargetsVarargs(value: Input[EventTargetRunCommandTarget]*): Self = this.set("runCommandTargets", js.Array(value :_*))
+    @scala.inline
+    def setRunCommandTargets(value: Input[js.Array[Input[EventTargetRunCommandTarget]]]): Self = this.set("runCommandTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunCommandTargets: Self = this.set("runCommandTargets", js.undefined)
+    @scala.inline
+    def setSqsTarget(value: Input[EventTargetSqsTarget]): Self = this.set("sqsTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqsTarget: Self = this.set("sqsTarget", js.undefined)
+    @scala.inline
+    def setTargetId(value: Input[String]): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetId: Self = this.set("targetId", js.undefined)
+  }
+  
 }
 

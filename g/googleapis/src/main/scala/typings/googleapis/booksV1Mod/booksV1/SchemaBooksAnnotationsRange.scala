@@ -26,18 +26,38 @@ trait SchemaBooksAnnotationsRange extends js.Object {
 
 object SchemaBooksAnnotationsRange {
   @scala.inline
-  def apply(
-    endOffset: String = null,
-    endPosition: String = null,
-    startOffset: String = null,
-    startPosition: String = null
-  ): SchemaBooksAnnotationsRange = {
+  def apply(): SchemaBooksAnnotationsRange = {
     val __obj = js.Dynamic.literal()
-    if (endOffset != null) __obj.updateDynamic("endOffset")(endOffset.asInstanceOf[js.Any])
-    if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition.asInstanceOf[js.Any])
-    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
-    if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBooksAnnotationsRange]
   }
+  @scala.inline
+  implicit class SchemaBooksAnnotationsRangeOps[Self <: SchemaBooksAnnotationsRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndOffset(value: String): Self = this.set("endOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOffset: Self = this.set("endOffset", js.undefined)
+    @scala.inline
+    def setEndPosition(value: String): Self = this.set("endPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    @scala.inline
+    def setStartOffset(value: String): Self = this.set("startOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartOffset: Self = this.set("startOffset", js.undefined)
+    @scala.inline
+    def setStartPosition(value: String): Self = this.set("startPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
+  }
+  
 }
 

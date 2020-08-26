@@ -25,6 +25,10 @@ object Principals extends js.Object {
     */
   val AutoscalingPrincipal: Principal = js.native
   /**
+    * Service Principal for Batch
+    */
+  val BatchPrincipal: Principal = js.native
+  /**
     * Service Principal for Cloud Directory
     */
   val CloudDirectoryPrincipal: Principal = js.native
@@ -201,6 +205,10 @@ object Principals extends js.Object {
     * Service Principal for Simple Notification Service
     */
   val SnsPrincipal: Principal = js.native
+  /**
+    * Service Principal for Spot Fleet
+    */
+  val SpotFleetPrincipal: Principal = js.native
   /**
     * Service Principal for Simple Queue Service
     */

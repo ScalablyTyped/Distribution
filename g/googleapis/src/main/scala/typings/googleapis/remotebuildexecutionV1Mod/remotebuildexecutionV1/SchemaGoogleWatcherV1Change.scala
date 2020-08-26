@@ -43,20 +43,42 @@ trait SchemaGoogleWatcherV1Change extends js.Object {
 
 object SchemaGoogleWatcherV1Change {
   @scala.inline
-  def apply(
-    continued: js.UndefOr[Boolean] = js.undefined,
-    data: StringDictionary[js.Any] = null,
-    element: String = null,
-    resumeMarker: String = null,
-    state: String = null
-  ): SchemaGoogleWatcherV1Change = {
+  def apply(): SchemaGoogleWatcherV1Change = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(continued)) __obj.updateDynamic("continued")(continued.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (resumeMarker != null) __obj.updateDynamic("resumeMarker")(resumeMarker.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleWatcherV1Change]
   }
+  @scala.inline
+  implicit class SchemaGoogleWatcherV1ChangeOps[Self <: SchemaGoogleWatcherV1Change] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContinued(value: Boolean): Self = this.set("continued", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinued: Self = this.set("continued", js.undefined)
+    @scala.inline
+    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setElement(value: String): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setResumeMarker(value: String): Self = this.set("resumeMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResumeMarker: Self = this.set("resumeMarker", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

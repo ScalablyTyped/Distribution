@@ -21,10 +21,30 @@ trait ListMeshesOutput extends js.Object {
 
 object ListMeshesOutput {
   @scala.inline
-  def apply(meshes: MeshList, nextToken: String = null): ListMeshesOutput = {
+  def apply(meshes: MeshList): ListMeshesOutput = {
     val __obj = js.Dynamic.literal(meshes = meshes.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMeshesOutput]
   }
+  @scala.inline
+  implicit class ListMeshesOutputOps[Self <: ListMeshesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMeshesVarargs(value: MeshRef*): Self = this.set("meshes", js.Array(value :_*))
+    @scala.inline
+    def setMeshes(value: MeshList): Self = this.set("meshes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

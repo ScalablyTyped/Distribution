@@ -2,7 +2,7 @@ package typings.oracleOraclejet.ojnboxMod
 
 import typings.oracleOraclejet.anon.CellDefaults
 import typings.oracleOraclejet.anon.HighlightedCount
-import typings.oracleOraclejet.anon.`13`
+import typings.oracleOraclejet.anon.`15`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
@@ -145,7 +145,7 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | single | multiple], _]) | Null = js.native
   var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[CellDefaults], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`13`[K]], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`15`[K]], _]) | Null = js.native
   var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
   var otherColor: String = js.native
   var otherThreshold: Double = js.native
@@ -154,7 +154,7 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   var selection: js.Array[K] = js.native
   var selectionMode: none | single | multiple = js.native
   var styleDefaults: CellDefaults = js.native
-  var tooltip: `13`[K] = js.native
+  var tooltip: `15`[K] = js.native
   var touchResponse: touchStart | auto = js.native
   @JSName("translations")
   var translations_ojNBox_ : HighlightedCount = js.native
@@ -496,12 +496,12 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`13`[K]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`15`[K]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`13`[K]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`15`[K]], _],
     useCapture: Boolean
   ): Unit = js.native
   def countLabel(context: CountLabelContext): String | Null = js.native
@@ -564,7 +564,7 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_styleDefaults(property: styleDefaults): CellDefaults = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): `13`[K] = js.native
+  def getProperty_tooltip(property: tooltip): `15`[K] = js.native
   @JSName("getProperty")
   def getProperty_touchResponse(property: touchResponse): touchStart | auto = js.native
   def getRow(rowValue: String): js.Object | Null = js.native
@@ -643,7 +643,7 @@ trait ojNBox_[K, D] extends dvtBaseComponent[ojNBoxSettableProperties[K, D]] {
   @JSName("setProperty")
   def setProperty_styleDefaults(property: styleDefaults, value: CellDefaults): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: `13`[K]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: `15`[K]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: HighlightedCount): Unit = js.native
 }

@@ -11,7 +11,7 @@ import typings.wegameApi.anon.Bottom
 import typings.wegameApi.anon.BuyQuantity
 import typings.wegameApi.anon.CallbacksWithTypeopenIdLi
 import typings.wegameApi.anon.CallbacksmuteConfigmuteMi
-import typings.wegameApi.anon.Callbacksxnumberynumberwi
+import typings.wegameApi.anon.Callbacksxnumberundefined
 import typings.wegameApi.anon.CancelColor
 import typings.wegameApi.anon.Code
 import typings.wegameApi.anon.Complete
@@ -59,7 +59,7 @@ import typings.wegameApi.anon.WindowHeight
 import typings.wegameApi.anon.WithShareTicket
 import typings.wegameApi.anon.X
 import typings.wegameApi.anon.`3`
-import typings.wegameApi.anon.appIdstringpathstringextr
+import typings.wegameApi.anon.appIdstringpathstringunde
 import typings.wegameApi.anon.cardListReadonlyArraycard
 import typings.wegameApi.anon.cardListReadonlyArraycardCardList
 import typings.wegameApi.anon.intervalgameuinormalCallb
@@ -153,7 +153,7 @@ object wx extends js.Object {
     * @param param 创建相机所需的初始化信息
     */
   def createCamera(): typings.wegameApi.Camera = js.native
-  def createCamera(param: Callbacksxnumberynumberwi): typings.wegameApi.Camera = js.native
+  def createCamera(param: Callbacksxnumberundefined): typings.wegameApi.Camera = js.native
   /**
     * 创建一个画布对象。首次调用创建的是显示在屏幕上的画布，之后调用创建的都是离屏画布。
     */
@@ -475,7 +475,7 @@ object wx extends js.Object {
     * 打开另一个小程序
     * @param param 跳转参数
     */
-  def navigateToMiniProgram(param: appIdstringpathstringextr): Unit = js.native
+  def navigateToMiniProgram(param: appIdstringpathstringunde): Unit = js.native
   /**
     * 取消监听音频因为受到系统占用而被中断开始，以下场景会触发此事件：闹钟、电话、FaceTime 通话、微信语音聊天、微信视频聊天。此事件触发后，小程序内所有音频会暂停。
     */

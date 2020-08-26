@@ -23,16 +23,34 @@ trait IdentityPoolCognitoIdentityProvider extends js.Object {
 
 object IdentityPoolCognitoIdentityProvider {
   @scala.inline
-  def apply(
-    clientId: Input[String] = null,
-    providerName: Input[String] = null,
-    serverSideTokenCheck: Input[Boolean] = null
-  ): IdentityPoolCognitoIdentityProvider = {
+  def apply(): IdentityPoolCognitoIdentityProvider = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
-    if (serverSideTokenCheck != null) __obj.updateDynamic("serverSideTokenCheck")(serverSideTokenCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPoolCognitoIdentityProvider]
   }
+  @scala.inline
+  implicit class IdentityPoolCognitoIdentityProviderOps[Self <: IdentityPoolCognitoIdentityProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientId(value: Input[String]): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setProviderName(value: Input[String]): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderName: Self = this.set("providerName", js.undefined)
+    @scala.inline
+    def setServerSideTokenCheck(value: Input[Boolean]): Self = this.set("serverSideTokenCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideTokenCheck: Self = this.set("serverSideTokenCheck", js.undefined)
+  }
+  
 }
 

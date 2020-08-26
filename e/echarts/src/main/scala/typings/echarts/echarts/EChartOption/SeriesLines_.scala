@@ -5,8 +5,8 @@ import typings.echarts.anon.AnimationEasingUpdate
 import typings.echarts.anon.AnimationThreshold
 import typings.echarts.anon.ConstantSpeed
 import typings.echarts.anon.FontSize
-import typings.echarts.anon.LabelFontSize
 import typings.echarts.anon.ShadowColor
+import typings.echarts.anon.`11`
 import typings.echarts.echarts.EChartOption.SeriesLines.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-lines
   */
+@js.native
 trait SeriesLines_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -39,7 +40,7 @@ trait SeriesLines_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-lines.animation
     */
-  var animation: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -55,7 +56,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.animationDelay
     */
-  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelay: js.UndefOr[js.Function | Double] = js.native
   /**
     * Delay before updating animation, which supports callback function
     * for different data to have different animation effect.
@@ -71,7 +72,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.animationDelayUpdate
     */
-  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -83,7 +84,7 @@ trait SeriesLines_ extends js.Object {
     * 1000
     * @see https://echarts.apache.org/en/option.html#series-lines.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDuration: js.UndefOr[js.Function | Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -95,7 +96,7 @@ trait SeriesLines_ extends js.Object {
     * 300
     * @see https://echarts.apache.org/en/option.html#series-lines.animationDurationUpdate
     */
-  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -107,7 +108,7 @@ trait SeriesLines_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-lines.animationEasing
     */
-  var animationEasing: js.UndefOr[String] = js.undefined
+  var animationEasing: js.UndefOr[String] = js.native
   /**
     * Easing method used for animation.
     *
@@ -116,7 +117,7 @@ trait SeriesLines_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-lines.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[String] = js.undefined
+  var animationEasingUpdate: js.UndefOr[String] = js.native
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -127,7 +128,7 @@ trait SeriesLines_ extends js.Object {
     * 2000
     * @see https://echarts.apache.org/en/option.html#series-lines.animationThreshold
     */
-  var animationThreshold: js.UndefOr[Double] = js.undefined
+  var animationThreshold: js.UndefOr[Double] = js.native
   /**
     * The coordinate used in the series, whose options are:
     *
@@ -151,14 +152,14 @@ trait SeriesLines_ extends js.Object {
     * "geo"
     * @see https://echarts.apache.org/en/option.html#series-lines.coordinateSystem
     */
-  var coordinateSystem: js.UndefOr[String] = js.undefined
+  var coordinateSystem: js.UndefOr[String] = js.native
   /**
     * The data set of lines.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data
     */
-  var data: js.UndefOr[js.Array[DataObject]] = js.undefined
+  var data: js.UndefOr[js.Array[DataObject]] = js.native
   /**
     * The setting about special effect of lines.
     *
@@ -175,14 +176,14 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.effect
     */
-  var effect: js.UndefOr[ConstantSpeed] = js.undefined
+  var effect: js.UndefOr[ConstantSpeed] = js.native
   /**
     * Emphasis style.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.emphasis
     */
-  var emphasis: js.UndefOr[LabelFontSize] = js.undefined
+  var emphasis: js.UndefOr[`11`] = js.native
   /**
     * Index of
     * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
@@ -192,7 +193,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.geoIndex
     */
-  var geoIndex: js.UndefOr[Double] = js.undefined
+  var geoIndex: js.UndefOr[Double] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -201,7 +202,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Label settings. Does not work when
     * [polyline](https://echarts.apache.org/en/option.html#series-lines.polyline)
@@ -210,7 +211,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.label
     */
-  var label: js.UndefOr[FontSize] = js.undefined
+  var label: js.UndefOr[FontSize] = js.native
   /**
     * Whether to enable the optimization of large-scale lines graph.
     * It could be enabled when there is a particularly large number
@@ -228,7 +229,7 @@ trait SeriesLines_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-lines.large
     */
-  var large: js.UndefOr[Boolean] = js.undefined
+  var large: js.UndefOr[Boolean] = js.native
   /**
     * The threshold enabling the drawing optimization.
     *
@@ -237,11 +238,11 @@ trait SeriesLines_ extends js.Object {
     * 2000
     * @see https://echarts.apache.org/en/option.html#series-lines.largeThreshold
     */
-  var largeThreshold: js.UndefOr[Double] = js.undefined
+  var largeThreshold: js.UndefOr[Double] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowColor] = js.undefined
+  var lineStyle: js.UndefOr[ShadowColor] = js.native
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -249,21 +250,21 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.markArea
     */
-  var markArea: js.UndefOr[AnimationThreshold] = js.undefined
+  var markArea: js.UndefOr[AnimationThreshold] = js.native
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.markLine
     */
-  var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
+  var markLine: js.UndefOr[AnimationEasingUpdate] = js.native
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.markPoint
     */
-  var markPoint: js.UndefOr[AnimationEasing] = js.undefined
+  var markPoint: js.UndefOr[AnimationEasing] = js.native
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -274,7 +275,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * If draw as polyline.
     *
@@ -290,7 +291,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.polyline
     */
-  var polyline: js.UndefOr[Boolean] = js.undefined
+  var polyline: js.UndefOr[Boolean] = js.native
   /**
     * `progressive` specifies the amount of graphic elements that can
     * be rendered within a frame (about 16ms) if "progressive rendering"
@@ -307,7 +308,7 @@ trait SeriesLines_ extends js.Object {
     * 400
     * @see https://echarts.apache.org/en/option.html#series-lines.progressive
     */
-  var progressive: js.UndefOr[Double] = js.undefined
+  var progressive: js.UndefOr[Double] = js.native
   /**
     * If current data amount is over the threshold, "progressive rendering"
     * is enabled.
@@ -317,7 +318,7 @@ trait SeriesLines_ extends js.Object {
     * 3000
     * @see https://echarts.apache.org/en/option.html#series-lines.progressiveThreshold
     */
-  var progressiveThreshold: js.UndefOr[Double] = js.undefined
+  var progressiveThreshold: js.UndefOr[Double] = js.native
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -326,7 +327,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.silent
     */
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.native
   /**
     * Symbol type at the two ends of the line.
     * It can be an array for two ends, or assigned seperately. See
@@ -338,7 +339,7 @@ trait SeriesLines_ extends js.Object {
     * "none"
     * @see https://echarts.apache.org/en/option.html#series-lines.symbol
     */
-  var symbol: js.UndefOr[js.Array[_] | String] = js.undefined
+  var symbol: js.UndefOr[js.Array[_] | String] = js.native
   /**
     * Symbol size at the two ends of the line.
     * It can be an array for two ends, or assigned seperately.
@@ -351,13 +352,13 @@ trait SeriesLines_ extends js.Object {
     * 10
     * @see https://echarts.apache.org/en/option.html#series-lines.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.native
   /**
     * @default
     * "lines"
     * @see https://echarts.apache.org/en/option.html#series-lines.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * Index of
     * [x axis](https://echarts.apache.org/en/option.html#xAxis)
@@ -366,7 +367,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.xAxisIndex
     */
-  var xAxisIndex: js.UndefOr[Double] = js.undefined
+  var xAxisIndex: js.UndefOr[Double] = js.native
   /**
     * Index of
     * [y axis](https://echarts.apache.org/en/option.html#yAxis)
@@ -375,7 +376,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.yAxisIndex
     */
-  var yAxisIndex: js.UndefOr[Double] = js.undefined
+  var yAxisIndex: js.UndefOr[Double] = js.native
   /**
     * `z` value of all graghical elements in lines graph, which controls
     * order of drawing graphical components.
@@ -390,7 +391,7 @@ trait SeriesLines_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-lines.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in lines graph.
     *
@@ -408,81 +409,165 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object SeriesLines_ {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    animationDelay: js.Function | Double = null,
-    animationDelayUpdate: js.Function | Double = null,
-    animationDuration: js.Function | Double = null,
-    animationDurationUpdate: js.Function | Double = null,
-    animationEasing: String = null,
-    animationEasingUpdate: String = null,
-    animationThreshold: js.UndefOr[Double] = js.undefined,
-    coordinateSystem: String = null,
-    data: js.Array[DataObject] = null,
-    effect: ConstantSpeed = null,
-    emphasis: LabelFontSize = null,
-    geoIndex: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    label: FontSize = null,
-    large: js.UndefOr[Boolean] = js.undefined,
-    largeThreshold: js.UndefOr[Double] = js.undefined,
-    lineStyle: ShadowColor = null,
-    markArea: AnimationThreshold = null,
-    markLine: AnimationEasingUpdate = null,
-    markPoint: AnimationEasing = null,
-    name: String = null,
-    polyline: js.UndefOr[Boolean] = js.undefined,
-    progressive: js.UndefOr[Double] = js.undefined,
-    progressiveThreshold: js.UndefOr[Double] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    symbol: js.Array[_] | String = null,
-    symbolSize: js.Array[_] | Double = null,
-    `type`: String = null,
-    xAxisIndex: js.UndefOr[Double] = js.undefined,
-    yAxisIndex: js.UndefOr[Double] = js.undefined,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): SeriesLines_ = {
+  def apply(): SeriesLines_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
-    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (!js.isUndefined(geoIndex)) __obj.updateDynamic("geoIndex")(geoIndex.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(largeThreshold)) __obj.updateDynamic("largeThreshold")(largeThreshold.get.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (markArea != null) __obj.updateDynamic("markArea")(markArea.asInstanceOf[js.Any])
-    if (markLine != null) __obj.updateDynamic("markLine")(markLine.asInstanceOf[js.Any])
-    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(polyline)) __obj.updateDynamic("polyline")(polyline.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressiveThreshold)) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisIndex)) __obj.updateDynamic("xAxisIndex")(xAxisIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisIndex)) __obj.updateDynamic("yAxisIndex")(yAxisIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesLines_]
   }
+  @scala.inline
+  implicit class SeriesLines_Ops[Self <: SeriesLines_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    @scala.inline
+    def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    @scala.inline
+    def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    @scala.inline
+    def setCoordinateSystem(value: String): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordinateSystem: Self = this.set("coordinateSystem", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: DataObject*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[DataObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setEffect(value: ConstantSpeed): Self = this.set("effect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffect: Self = this.set("effect", js.undefined)
+    @scala.inline
+    def setEmphasis(value: `11`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setGeoIndex(value: Double): Self = this.set("geoIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoIndex: Self = this.set("geoIndex", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLabel(value: FontSize): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLarge(value: Boolean): Self = this.set("large", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLarge: Self = this.set("large", js.undefined)
+    @scala.inline
+    def setLargeThreshold(value: Double): Self = this.set("largeThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLargeThreshold: Self = this.set("largeThreshold", js.undefined)
+    @scala.inline
+    def setLineStyle(value: ShadowColor): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setMarkArea(value: AnimationThreshold): Self = this.set("markArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkArea: Self = this.set("markArea", js.undefined)
+    @scala.inline
+    def setMarkLine(value: AnimationEasingUpdate): Self = this.set("markLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkLine: Self = this.set("markLine", js.undefined)
+    @scala.inline
+    def setMarkPoint(value: AnimationEasing): Self = this.set("markPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkPoint: Self = this.set("markPoint", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPolyline(value: Boolean): Self = this.set("polyline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolyline: Self = this.set("polyline", js.undefined)
+    @scala.inline
+    def setProgressive(value: Double): Self = this.set("progressive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressive: Self = this.set("progressive", js.undefined)
+    @scala.inline
+    def setProgressiveThreshold(value: Double): Self = this.set("progressiveThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressiveThreshold: Self = this.set("progressiveThreshold", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSymbolVarargs(value: js.Any*): Self = this.set("symbol", js.Array(value :_*))
+    @scala.inline
+    def setSymbol(value: js.Array[_] | String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    @scala.inline
+    def setSymbolSize(value: js.Array[_] | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setXAxisIndex(value: Double): Self = this.set("xAxisIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisIndex: Self = this.set("xAxisIndex", js.undefined)
+    @scala.inline
+    def setYAxisIndex(value: Double): Self = this.set("yAxisIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisIndex: Self = this.set("yAxisIndex", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

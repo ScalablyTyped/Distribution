@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object prepareEventListenerParameters extends js.Object {
   def apply(eventAst: BoundEvent): js.Array[Expression] = js.native
+  def apply(eventAst: BoundEvent, handlerName: js.UndefOr[scala.Nothing], scope: BindingScope): js.Array[Expression] = js.native
   def apply(eventAst: BoundEvent, handlerName: String): js.Array[Expression] = js.native
   def apply(eventAst: BoundEvent, handlerName: String, scope: BindingScope): js.Array[Expression] = js.native
   def apply(eventAst: BoundEvent, handlerName: Null, scope: BindingScope): js.Array[Expression] = js.native

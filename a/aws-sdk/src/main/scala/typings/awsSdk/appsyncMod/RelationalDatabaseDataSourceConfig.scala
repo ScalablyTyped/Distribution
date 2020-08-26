@@ -18,14 +18,30 @@ trait RelationalDatabaseDataSourceConfig extends js.Object {
 
 object RelationalDatabaseDataSourceConfig {
   @scala.inline
-  def apply(
-    rdsHttpEndpointConfig: RdsHttpEndpointConfig = null,
-    relationalDatabaseSourceType: RelationalDatabaseSourceType = null
-  ): RelationalDatabaseDataSourceConfig = {
+  def apply(): RelationalDatabaseDataSourceConfig = {
     val __obj = js.Dynamic.literal()
-    if (rdsHttpEndpointConfig != null) __obj.updateDynamic("rdsHttpEndpointConfig")(rdsHttpEndpointConfig.asInstanceOf[js.Any])
-    if (relationalDatabaseSourceType != null) __obj.updateDynamic("relationalDatabaseSourceType")(relationalDatabaseSourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationalDatabaseDataSourceConfig]
   }
+  @scala.inline
+  implicit class RelationalDatabaseDataSourceConfigOps[Self <: RelationalDatabaseDataSourceConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRdsHttpEndpointConfig(value: RdsHttpEndpointConfig): Self = this.set("rdsHttpEndpointConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRdsHttpEndpointConfig: Self = this.set("rdsHttpEndpointConfig", js.undefined)
+    @scala.inline
+    def setRelationalDatabaseSourceType(value: RelationalDatabaseSourceType): Self = this.set("relationalDatabaseSourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationalDatabaseSourceType: Self = this.set("relationalDatabaseSourceType", js.undefined)
+  }
+  
 }
 

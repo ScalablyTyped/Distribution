@@ -22,12 +22,34 @@ trait SchemaVideoPlayer extends js.Object {
 
 object SchemaVideoPlayer {
   @scala.inline
-  def apply(embedHeight: String = null, embedHtml: String = null, embedWidth: String = null): SchemaVideoPlayer = {
+  def apply(): SchemaVideoPlayer = {
     val __obj = js.Dynamic.literal()
-    if (embedHeight != null) __obj.updateDynamic("embedHeight")(embedHeight.asInstanceOf[js.Any])
-    if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml.asInstanceOf[js.Any])
-    if (embedWidth != null) __obj.updateDynamic("embedWidth")(embedWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoPlayer]
   }
+  @scala.inline
+  implicit class SchemaVideoPlayerOps[Self <: SchemaVideoPlayer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmbedHeight(value: String): Self = this.set("embedHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbedHeight: Self = this.set("embedHeight", js.undefined)
+    @scala.inline
+    def setEmbedHtml(value: String): Self = this.set("embedHtml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbedHtml: Self = this.set("embedHtml", js.undefined)
+    @scala.inline
+    def setEmbedWidth(value: String): Self = this.set("embedWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbedWidth: Self = this.set("embedWidth", js.undefined)
+  }
+  
 }
 

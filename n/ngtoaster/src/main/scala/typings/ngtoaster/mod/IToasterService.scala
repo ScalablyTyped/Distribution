@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait IToasterService extends js.Object {
   var toast: IToast = js.native
   def clear(): Unit = js.native
+  def clear(toasterId: js.UndefOr[scala.Nothing], toastId: String): Unit = js.native
+  def clear(toasterId: js.UndefOr[scala.Nothing], toastId: Double): Unit = js.native
   def clear(toasterId: Double): Unit = js.native
   def clear(toasterId: Double, toastId: String): Unit = js.native
   def clear(toasterId: Double, toastId: Double): Unit = js.native
@@ -21,7 +23,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[EventListener],
     toasterId: js.UndefOr[Double],
     showCloseButton: js.UndefOr[Boolean],
-    toastId: js.UndefOr[Double | String],
+    toastId: js.UndefOr[String | Double],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def info(params: IPopParams): Unit = js.native
@@ -33,7 +35,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[EventListener],
     toasterId: js.UndefOr[Double],
     showCloseButton: js.UndefOr[Boolean],
-    toastId: js.UndefOr[Double | String],
+    toastId: js.UndefOr[String | Double],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def pop(params: IPopParams): Unit = js.native
@@ -49,7 +51,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[EventListener],
     toasterId: js.UndefOr[Double],
     showCloseButton: js.UndefOr[Boolean],
-    toastId: js.UndefOr[Double | String],
+    toastId: js.UndefOr[String | Double],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def success(params: IPopParams): Unit = js.native
@@ -61,7 +63,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[EventListener],
     toasterId: js.UndefOr[Double],
     showCloseButton: js.UndefOr[Boolean],
-    toastId: js.UndefOr[Double | String],
+    toastId: js.UndefOr[String | Double],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def wait(params: IPopParams): Unit = js.native
@@ -73,7 +75,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[EventListener],
     toasterId: js.UndefOr[Double],
     showCloseButton: js.UndefOr[Boolean],
-    toastId: js.UndefOr[Double | String],
+    toastId: js.UndefOr[String | Double],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
   def warning(params: IPopParams): Unit = js.native
@@ -85,7 +87,7 @@ trait IToasterService extends js.Object {
     clickHandler: js.UndefOr[EventListener],
     toasterId: js.UndefOr[Double],
     showCloseButton: js.UndefOr[Boolean],
-    toastId: js.UndefOr[Double | String],
+    toastId: js.UndefOr[String | Double],
     onHideCallback: js.UndefOr[IToastCallback]
   ): IPopReturn = js.native
 }

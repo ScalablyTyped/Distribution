@@ -11,30 +11,49 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojlegend.ojLegendSectionSettableProperties> */
+@js.native
 trait ojLegendSectionSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var collapsible: js.UndefOr[on | off] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var textHalign: js.UndefOr[center | end | start] = js.undefined
-  var textStyle: js.UndefOr[js.Object] = js.undefined
+  var collapsible: js.UndefOr[on | off] = js.native
+  var text: js.UndefOr[String] = js.native
+  var textHalign: js.UndefOr[center | end | start] = js.native
+  var textStyle: js.UndefOr[js.Object] = js.native
 }
 
 object ojLegendSectionSettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    collapsible: on | off = null,
-    text: String = null,
-    textHalign: center | end | start = null,
-    textStyle: js.Object = null
-  ): ojLegendSectionSettablePropertiesLenient = {
+  def apply(): ojLegendSectionSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collapsible != null) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textHalign != null) __obj.updateDynamic("textHalign")(textHalign.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojLegendSectionSettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojLegendSectionSettablePropertiesLenientOps[Self <: ojLegendSectionSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollapsible(value: on | off): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextHalign(value: center | end | start): Self = this.set("textHalign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextHalign: Self = this.set("textHalign", js.undefined)
+    @scala.inline
+    def setTextStyle(value: js.Object): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+  }
+  
 }
 

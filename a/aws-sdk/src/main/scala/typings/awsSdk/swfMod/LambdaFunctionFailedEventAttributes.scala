@@ -26,16 +26,34 @@ trait LambdaFunctionFailedEventAttributes extends js.Object {
 
 object LambdaFunctionFailedEventAttributes {
   @scala.inline
-  def apply(
-    scheduledEventId: EventId,
-    startedEventId: EventId,
-    details: Data = null,
-    reason: FailureReason = null
-  ): LambdaFunctionFailedEventAttributes = {
+  def apply(scheduledEventId: EventId, startedEventId: EventId): LambdaFunctionFailedEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaFunctionFailedEventAttributes]
   }
+  @scala.inline
+  implicit class LambdaFunctionFailedEventAttributesOps[Self <: LambdaFunctionFailedEventAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScheduledEventId(value: EventId): Self = this.set("scheduledEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetails(value: Data): Self = this.set("details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("details", js.undefined)
+    @scala.inline
+    def setReason(value: FailureReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+  }
+  
 }
 

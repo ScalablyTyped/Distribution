@@ -12,7 +12,7 @@ This library helps to integrate google recaptcha into your react project easily.
 | Keywords           | react, react.js, react-component, ReCaptcha, g-recaptcha, invisible-recaptcha, visible-recaptcha, recaptcha-token |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 145883 |
+| # downloads        | 163539 |
 | # stars            | 0 |
 
 ## Links

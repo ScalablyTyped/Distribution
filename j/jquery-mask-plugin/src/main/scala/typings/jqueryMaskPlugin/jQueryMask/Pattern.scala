@@ -5,27 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Pattern extends js.Object {
-  var fallback: js.UndefOr[String] = js.undefined
-  var optional: js.UndefOr[Boolean] = js.undefined
-  var pattern: js.UndefOr[RegExp] = js.undefined
-  var recursive: js.UndefOr[Boolean] = js.undefined
+  var fallback: js.UndefOr[String] = js.native
+  var optional: js.UndefOr[Boolean] = js.native
+  var pattern: js.UndefOr[RegExp] = js.native
+  var recursive: js.UndefOr[Boolean] = js.native
 }
 
 object Pattern {
   @scala.inline
-  def apply(
-    fallback: String = null,
-    optional: js.UndefOr[Boolean] = js.undefined,
-    pattern: RegExp = null,
-    recursive: js.UndefOr[Boolean] = js.undefined
-  ): Pattern = {
+  def apply(): Pattern = {
     val __obj = js.Dynamic.literal()
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pattern]
   }
+  @scala.inline
+  implicit class PatternOps[Self <: Pattern] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFallback(value: String): Self = this.set("fallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallback: Self = this.set("fallback", js.undefined)
+    @scala.inline
+    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptional: Self = this.set("optional", js.undefined)
+    @scala.inline
+    def setPattern(value: RegExp): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecursive: Self = this.set("recursive", js.undefined)
+  }
+  
 }
 

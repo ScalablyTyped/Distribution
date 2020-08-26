@@ -11,8 +11,8 @@ The lodash method `_.isObjectLike` exported as a module.
 | Full name          | lodash.isobjectlike |
 | Keywords           | lodash, lodash-modularized, stdlib, util, isobjectlike |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 657307 |
+| # dependents       | 22 |
+| # downloads        | 686524 |
 | # stars            | 0 |
 
 ## Links

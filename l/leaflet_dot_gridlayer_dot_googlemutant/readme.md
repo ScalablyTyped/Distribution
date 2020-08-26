@@ -12,7 +12,7 @@ A plugin for LeafletJS to use Google maps basemaps.
 | Keywords           | leaflet, google maps |
 | # releases         | 4 |
 | # dependents       | 20 |
-| # downloads        | 327285 |
+| # downloads        | 337632 |
 | # stars            | 1 |
 
 ## Links

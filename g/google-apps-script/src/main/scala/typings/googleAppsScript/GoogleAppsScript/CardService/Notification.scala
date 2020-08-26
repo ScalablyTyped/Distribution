@@ -19,8 +19,9 @@ import scala.scalajs.js.annotation._
   *           .build();
   *     }
   */
+@js.native
 trait Notification extends js.Object {
-  def setText(text: String): Notification
+  def setText(text: String): Notification = js.native
 }
 
 object Notification {
@@ -29,5 +30,20 @@ object Notification {
     val __obj = js.Dynamic.literal(setText = js.Any.fromFunction1(setText))
     __obj.asInstanceOf[Notification]
   }
+  @scala.inline
+  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSetText(value: String => Notification): Self = this.set("setText", js.Any.fromFunction1(value))
+  }
+  
 }
 

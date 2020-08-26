@@ -57,6 +57,7 @@ object QuickTips extends js.Object {
     * @param config Object config object for the created QuickTip. By default, the QuickTip class is instantiated, but this can be changed by supplying an xtype property or a className property in this object. All other properties on this object are configuration for the created component.
     */
   def init(): Unit = js.native
+  def init(autoRender: js.UndefOr[scala.Nothing], config: js.Any): Unit = js.native
   def init(autoRender: Boolean): Unit = js.native
   def init(autoRender: Boolean, config: js.Any): Unit = js.native
   /** [Method] Initialize configuration for this class

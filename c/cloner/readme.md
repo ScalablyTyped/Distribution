@@ -12,7 +12,7 @@ An ES5+ compatible utility to deep or shallow copy and merge objects.
 | Keywords           | ES5, ES6, ES2015, clone, copy, shallow, deep, merge, utility |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 31582 |
+| # downloads        | 32675 |
 | # stars            | 0 |
 
 ## Links

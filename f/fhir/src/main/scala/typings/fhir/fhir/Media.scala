@@ -8,190 +8,233 @@ import scala.scalajs.js.annotation._
   * A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Media extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Media extends DomainResource {
   /**
     * Contains extended information for property 'duration'.
     */
-  var _duration: js.UndefOr[Element] = js.undefined
+  var _duration: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'frames'.
     */
-  var _frames: js.UndefOr[Element] = js.undefined
+  var _frames: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'height'.
     */
-  var _height: js.UndefOr[Element] = js.undefined
+  var _height: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'occurrenceDateTime'.
     */
-  var _occurrenceDateTime: js.UndefOr[Element] = js.undefined
+  var _occurrenceDateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.undefined
+  var _type: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'width'.
     */
-  var _width: js.UndefOr[Element] = js.undefined
+  var _width: js.UndefOr[Element] = js.native
   /**
     * Procedure that caused this media to be created
     */
-  var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
+  var basedOn: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Body part in media
     */
-  var bodySite: js.UndefOr[CodeableConcept] = js.undefined
+  var bodySite: js.UndefOr[CodeableConcept] = js.native
   /**
     * Actual Media - reference or data
     */
-  var content: Attachment
+  var content: Attachment = js.native
   /**
     * Encounter / Episode associated with media
     */
-  var context: js.UndefOr[Reference] = js.undefined
+  var context: js.UndefOr[Reference] = js.native
   /**
     * Observing Device
     */
-  var device: js.UndefOr[Reference] = js.undefined
+  var device: js.UndefOr[Reference] = js.native
   /**
     * Length in seconds (audio / video)
     */
-  var duration: js.UndefOr[unsignedInt] = js.undefined
+  var duration: js.UndefOr[unsignedInt] = js.native
   /**
     * Number of frames if > 1 (photo)
     */
-  var frames: js.UndefOr[positiveInt] = js.undefined
+  var frames: js.UndefOr[positiveInt] = js.native
   /**
     * Height of the image in pixels (photo/video)
     */
-  var height: js.UndefOr[positiveInt] = js.undefined
+  var height: js.UndefOr[positiveInt] = js.native
   /**
     * Identifier(s) for the image
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Comments made about the media
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
+  var note: js.UndefOr[js.Array[Annotation]] = js.native
   /**
     * When Media was collected
     */
-  var occurrenceDateTime: js.UndefOr[dateTime] = js.undefined
+  var occurrenceDateTime: js.UndefOr[dateTime] = js.native
   /**
     * When Media was collected
     */
-  var occurrencePeriod: js.UndefOr[Period] = js.undefined
+  var occurrencePeriod: js.UndefOr[Period] = js.native
   /**
     * The person who generated the image
     */
-  var operator: js.UndefOr[Reference] = js.undefined
+  var operator: js.UndefOr[Reference] = js.native
   /**
     * Why was event performed?
     */
-  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Who/What this Media is a record of
     */
-  var subject: js.UndefOr[Reference] = js.undefined
+  var subject: js.UndefOr[Reference] = js.native
   /**
     * The type of acquisition equipment/process
     */
-  var subtype: js.UndefOr[CodeableConcept] = js.undefined
+  var subtype: js.UndefOr[CodeableConcept] = js.native
   /**
     * photo | video | audio
     */
-  var `type`: code
+  var `type`: code = js.native
   /**
     * Imaging view, e.g. Lateral or Antero-posterior
     */
-  var view: js.UndefOr[CodeableConcept] = js.undefined
+  var view: js.UndefOr[CodeableConcept] = js.native
   /**
     * Width of the image in pixels (photo/video)
     */
-  var width: js.UndefOr[positiveInt] = js.undefined
+  var width: js.UndefOr[positiveInt] = js.native
 }
 
 object Media {
   @scala.inline
-  def apply(
-    content: Attachment,
-    `type`: code,
-    _duration: Element = null,
-    _frames: Element = null,
-    _height: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _occurrenceDateTime: Element = null,
-    _resourceType: Element = null,
-    _type: Element = null,
-    _width: Element = null,
-    basedOn: js.Array[Reference] = null,
-    bodySite: CodeableConcept = null,
-    contained: js.Array[Resource] = null,
-    context: Reference = null,
-    device: Reference = null,
-    duration: js.UndefOr[unsignedInt] = js.undefined,
-    extension: js.Array[Extension] = null,
-    frames: js.UndefOr[positiveInt] = js.undefined,
-    height: js.UndefOr[positiveInt] = js.undefined,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    note: js.Array[Annotation] = null,
-    occurrenceDateTime: dateTime = null,
-    occurrencePeriod: Period = null,
-    operator: Reference = null,
-    reasonCode: js.Array[CodeableConcept] = null,
-    resourceType: code = null,
-    subject: Reference = null,
-    subtype: CodeableConcept = null,
-    text: Narrative = null,
-    view: CodeableConcept = null,
-    width: js.UndefOr[positiveInt] = js.undefined
-  ): Media = {
+  def apply(content: Attachment, `type`: code): Media = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_duration != null) __obj.updateDynamic("_duration")(_duration.asInstanceOf[js.Any])
-    if (_frames != null) __obj.updateDynamic("_frames")(_frames.asInstanceOf[js.Any])
-    if (_height != null) __obj.updateDynamic("_height")(_height.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_occurrenceDateTime != null) __obj.updateDynamic("_occurrenceDateTime")(_occurrenceDateTime.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (_width != null) __obj.updateDynamic("_width")(_width.asInstanceOf[js.Any])
-    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn.asInstanceOf[js.Any])
-    if (bodySite != null) __obj.updateDynamic("bodySite")(bodySite.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (!js.isUndefined(frames)) __obj.updateDynamic("frames")(frames.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (occurrenceDateTime != null) __obj.updateDynamic("occurrenceDateTime")(occurrenceDateTime.asInstanceOf[js.Any])
-    if (occurrencePeriod != null) __obj.updateDynamic("occurrencePeriod")(occurrencePeriod.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Media]
   }
+  @scala.inline
+  implicit class MediaOps[Self <: Media] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: Attachment): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_duration(value: Element): Self = this.set("_duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_duration: Self = this.set("_duration", js.undefined)
+    @scala.inline
+    def set_frames(value: Element): Self = this.set("_frames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_frames: Self = this.set("_frames", js.undefined)
+    @scala.inline
+    def set_height(value: Element): Self = this.set("_height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_height: Self = this.set("_height", js.undefined)
+    @scala.inline
+    def set_occurrenceDateTime(value: Element): Self = this.set("_occurrenceDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_occurrenceDateTime: Self = this.set("_occurrenceDateTime", js.undefined)
+    @scala.inline
+    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_type: Self = this.set("_type", js.undefined)
+    @scala.inline
+    def set_width(value: Element): Self = this.set("_width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_width: Self = this.set("_width", js.undefined)
+    @scala.inline
+    def setBasedOnVarargs(value: Reference*): Self = this.set("basedOn", js.Array(value :_*))
+    @scala.inline
+    def setBasedOn(value: js.Array[Reference]): Self = this.set("basedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasedOn: Self = this.set("basedOn", js.undefined)
+    @scala.inline
+    def setBodySite(value: CodeableConcept): Self = this.set("bodySite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodySite: Self = this.set("bodySite", js.undefined)
+    @scala.inline
+    def setContext(value: Reference): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setDevice(value: Reference): Self = this.set("device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("device", js.undefined)
+    @scala.inline
+    def setDuration(value: unsignedInt): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setFrames(value: positiveInt): Self = this.set("frames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrames: Self = this.set("frames", js.undefined)
+    @scala.inline
+    def setHeight(value: positiveInt): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    @scala.inline
+    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("note", js.undefined)
+    @scala.inline
+    def setOccurrenceDateTime(value: dateTime): Self = this.set("occurrenceDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOccurrenceDateTime: Self = this.set("occurrenceDateTime", js.undefined)
+    @scala.inline
+    def setOccurrencePeriod(value: Period): Self = this.set("occurrencePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOccurrencePeriod: Self = this.set("occurrencePeriod", js.undefined)
+    @scala.inline
+    def setOperator(value: Reference): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+    @scala.inline
+    def setReasonCodeVarargs(value: CodeableConcept*): Self = this.set("reasonCode", js.Array(value :_*))
+    @scala.inline
+    def setReasonCode(value: js.Array[CodeableConcept]): Self = this.set("reasonCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonCode: Self = this.set("reasonCode", js.undefined)
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+    @scala.inline
+    def setSubtype(value: CodeableConcept): Self = this.set("subtype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtype: Self = this.set("subtype", js.undefined)
+    @scala.inline
+    def setView(value: CodeableConcept): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setWidth(value: positiveInt): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

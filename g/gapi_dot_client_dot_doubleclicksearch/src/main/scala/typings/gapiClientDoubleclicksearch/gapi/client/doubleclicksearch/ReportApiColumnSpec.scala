@@ -4,79 +4,112 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReportApiColumnSpec extends js.Object {
   /** Name of a DoubleClick Search column to include in the report. */
-  var columnName: js.UndefOr[String] = js.undefined
+  var columnName: js.UndefOr[String] = js.native
   /**
     * Segments a report by a custom dimension. The report must be scoped to an advertiser or lower, and the custom dimension must already be set up in
     * DoubleClick Search. The custom dimension name, which appears in DoubleClick Search, is case sensitive.
     * If used in a conversion report, returns the value of the specified custom dimension for the given conversion, if set. This column does not segment the
     * conversion report.
     */
-  var customDimensionName: js.UndefOr[String] = js.undefined
+  var customDimensionName: js.UndefOr[String] = js.native
   /**
     * Name of a custom metric to include in the report. The report must be scoped to an advertiser or lower, and the custom metric must already be set up in
     * DoubleClick Search. The custom metric name, which appears in DoubleClick Search, is case sensitive.
     */
-  var customMetricName: js.UndefOr[String] = js.undefined
+  var customMetricName: js.UndefOr[String] = js.native
   /**
     * Inclusive day in YYYY-MM-DD format. When provided, this overrides the overall time range of the report for this column only. Must be provided together
     * with startDate.
     */
-  var endDate: js.UndefOr[String] = js.undefined
+  var endDate: js.UndefOr[String] = js.native
   /** Synchronous report only. Set to true to group by this column. Defaults to false. */
-  var groupByColumn: js.UndefOr[Boolean] = js.undefined
+  var groupByColumn: js.UndefOr[Boolean] = js.native
   /**
     * Text used to identify this column in the report output; defaults to columnName or savedColumnName when not specified. This can be used to prevent
     * collisions between DoubleClick Search columns and saved columns with the same name.
     */
-  var headerText: js.UndefOr[String] = js.undefined
+  var headerText: js.UndefOr[String] = js.native
   /** The platform that is used to provide data for the custom dimension. Acceptable values are "floodlight". */
-  var platformSource: js.UndefOr[String] = js.undefined
+  var platformSource: js.UndefOr[String] = js.native
   /**
     * Returns metrics only for a specific type of product activity. Accepted values are:
     * - "sold": returns metrics only for products that were sold
     * - "advertised": returns metrics only for products that were advertised in a Shopping campaign, and that might or might not have been sold
     */
-  var productReportPerspective: js.UndefOr[String] = js.undefined
+  var productReportPerspective: js.UndefOr[String] = js.native
   /**
     * Name of a saved column to include in the report. The report must be scoped at advertiser or lower, and this saved column must already be created in the
     * DoubleClick Search UI.
     */
-  var savedColumnName: js.UndefOr[String] = js.undefined
+  var savedColumnName: js.UndefOr[String] = js.native
   /**
     * Inclusive date in YYYY-MM-DD format. When provided, this overrides the overall time range of the report for this column only. Must be provided together
     * with endDate.
     */
-  var startDate: js.UndefOr[String] = js.undefined
+  var startDate: js.UndefOr[String] = js.native
 }
 
 object ReportApiColumnSpec {
   @scala.inline
-  def apply(
-    columnName: String = null,
-    customDimensionName: String = null,
-    customMetricName: String = null,
-    endDate: String = null,
-    groupByColumn: js.UndefOr[Boolean] = js.undefined,
-    headerText: String = null,
-    platformSource: String = null,
-    productReportPerspective: String = null,
-    savedColumnName: String = null,
-    startDate: String = null
-  ): ReportApiColumnSpec = {
+  def apply(): ReportApiColumnSpec = {
     val __obj = js.Dynamic.literal()
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
-    if (customDimensionName != null) __obj.updateDynamic("customDimensionName")(customDimensionName.asInstanceOf[js.Any])
-    if (customMetricName != null) __obj.updateDynamic("customMetricName")(customMetricName.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupByColumn)) __obj.updateDynamic("groupByColumn")(groupByColumn.get.asInstanceOf[js.Any])
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
-    if (platformSource != null) __obj.updateDynamic("platformSource")(platformSource.asInstanceOf[js.Any])
-    if (productReportPerspective != null) __obj.updateDynamic("productReportPerspective")(productReportPerspective.asInstanceOf[js.Any])
-    if (savedColumnName != null) __obj.updateDynamic("savedColumnName")(savedColumnName.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportApiColumnSpec]
   }
+  @scala.inline
+  implicit class ReportApiColumnSpecOps[Self <: ReportApiColumnSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnName(value: String): Self = this.set("columnName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnName: Self = this.set("columnName", js.undefined)
+    @scala.inline
+    def setCustomDimensionName(value: String): Self = this.set("customDimensionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDimensionName: Self = this.set("customDimensionName", js.undefined)
+    @scala.inline
+    def setCustomMetricName(value: String): Self = this.set("customMetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMetricName: Self = this.set("customMetricName", js.undefined)
+    @scala.inline
+    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setGroupByColumn(value: Boolean): Self = this.set("groupByColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupByColumn: Self = this.set("groupByColumn", js.undefined)
+    @scala.inline
+    def setHeaderText(value: String): Self = this.set("headerText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderText: Self = this.set("headerText", js.undefined)
+    @scala.inline
+    def setPlatformSource(value: String): Self = this.set("platformSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformSource: Self = this.set("platformSource", js.undefined)
+    @scala.inline
+    def setProductReportPerspective(value: String): Self = this.set("productReportPerspective", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductReportPerspective: Self = this.set("productReportPerspective", js.undefined)
+    @scala.inline
+    def setSavedColumnName(value: String): Self = this.set("savedColumnName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavedColumnName: Self = this.set("savedColumnName", js.undefined)
+    @scala.inline
+    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+  }
+  
 }
 

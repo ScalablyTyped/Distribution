@@ -34,22 +34,50 @@ trait Expression extends js.Object {
 
 object Expression {
   @scala.inline
-  def apply(
-    And: Expressions = null,
-    CostCategories: CostCategoryValues = null,
-    Dimensions: DimensionValues = null,
-    Not: Expression = null,
-    Or: Expressions = null,
-    Tags: TagValues = null
-  ): Expression = {
+  def apply(): Expression = {
     val __obj = js.Dynamic.literal()
-    if (And != null) __obj.updateDynamic("And")(And.asInstanceOf[js.Any])
-    if (CostCategories != null) __obj.updateDynamic("CostCategories")(CostCategories.asInstanceOf[js.Any])
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (Not != null) __obj.updateDynamic("Not")(Not.asInstanceOf[js.Any])
-    if (Or != null) __obj.updateDynamic("Or")(Or.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
+  @scala.inline
+  implicit class ExpressionOps[Self <: Expression] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndVarargs(value: Expression*): Self = this.set("And", js.Array(value :_*))
+    @scala.inline
+    def setAnd(value: Expressions): Self = this.set("And", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnd: Self = this.set("And", js.undefined)
+    @scala.inline
+    def setCostCategories(value: CostCategoryValues): Self = this.set("CostCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCostCategories: Self = this.set("CostCategories", js.undefined)
+    @scala.inline
+    def setDimensions(value: DimensionValues): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setNot(value: Expression): Self = this.set("Not", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNot: Self = this.set("Not", js.undefined)
+    @scala.inline
+    def setOrVarargs(value: Expression*): Self = this.set("Or", js.Array(value :_*))
+    @scala.inline
+    def setOr(value: Expressions): Self = this.set("Or", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOr: Self = this.set("Or", js.undefined)
+    @scala.inline
+    def setTags(value: TagValues): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

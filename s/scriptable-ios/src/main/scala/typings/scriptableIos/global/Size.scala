@@ -19,17 +19,5 @@ class Size protected ()
     * @see https://docs.scriptable.app/size/#-new-size
     */
   def this(width: Double, height: Double) = this()
-  /**
-    * _Height value._
-    * @see https://docs.scriptable.app/size/#height
-    */
-  /* CompleteClass */
-  override var height: Double = js.native
-  /**
-    * _Width value._
-    * @see https://docs.scriptable.app/size/#width
-    */
-  /* CompleteClass */
-  override var width: Double = js.native
 }
 

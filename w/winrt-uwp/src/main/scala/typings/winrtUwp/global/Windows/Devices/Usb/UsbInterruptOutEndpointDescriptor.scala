@@ -8,18 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor")
 @js.native
 abstract class UsbInterruptOutEndpointDescriptor ()
-  extends typings.winrtUwp.Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor {
-  /** Gets the USB endpoint number of the interrupt OUT endpoint. */
-  /* CompleteClass */
-  override var endpointNumber: Double = js.native
-  /** Gets the poling interval of the USB interrupt endpoint. */
-  /* CompleteClass */
-  override var interval: Double = js.native
-  /** Gets the maximum number of bytes that can be sent to or received from this endpoint. */
-  /* CompleteClass */
-  override var maxPacketSize: Double = js.native
-  /** Gets the object that represents the pipe that the host opens to communicate with the interrupt OUT endpoint. */
-  /* CompleteClass */
-  override var pipe: typings.winrtUwp.Windows.Devices.Usb.UsbInterruptOutPipe = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor
 

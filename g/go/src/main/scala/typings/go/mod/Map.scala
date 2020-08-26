@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   */
 class Map[K, V] () extends Iterator[KeyValuePair[K, V]] {
   def this(keytype: String) = this()
+  def this(keytype: js.UndefOr[scala.Nothing], valtype: String) = this()
   def this(keytype: String, valtype: String) = this()
   /**
     * This creates a Map that may check the types of the keys and/or values.

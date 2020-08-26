@@ -4,36 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteFilesOptions extends GetFilesOptions {
-  var force: js.UndefOr[Boolean] = js.undefined
+  var force: js.UndefOr[Boolean] = js.native
 }
 
 object DeleteFilesOptions {
   @scala.inline
-  def apply(
-    autoPaginate: js.UndefOr[Boolean] = js.undefined,
-    delimiter: String = null,
-    directory: String = null,
-    force: js.UndefOr[Boolean] = js.undefined,
-    maxApiCalls: js.UndefOr[Double] = js.undefined,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    prefix: String = null,
-    userProject: String = null,
-    versions: js.UndefOr[Boolean] = js.undefined
-  ): DeleteFilesOptions = {
+  def apply(): DeleteFilesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPaginate)) __obj.updateDynamic("autoPaginate")(autoPaginate.get.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxApiCalls)) __obj.updateDynamic("maxApiCalls")(maxApiCalls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
-    if (!js.isUndefined(versions)) __obj.updateDynamic("versions")(versions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFilesOptions]
   }
+  @scala.inline
+  implicit class DeleteFilesOptionsOps[Self <: DeleteFilesOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+  }
+  
 }
 

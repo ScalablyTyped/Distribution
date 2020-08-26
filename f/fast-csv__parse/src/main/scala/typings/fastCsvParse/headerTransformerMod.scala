@@ -17,7 +17,7 @@ object headerTransformerMod extends js.Object {
     def this(parserOptions: ParserOptions) = this()
     var headers: HeaderArray | Null = js.native
     var headersLength: js.Any = js.native
-    val headersTransform: js.UndefOr[js.Any] = js.native
+    val headersTransform: js.Any = js.native
     var mapHeaders: js.Any = js.native
     val parserOptions: js.Any = js.native
     var processRow: js.Any = js.native

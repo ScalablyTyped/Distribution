@@ -1,11 +1,11 @@
 package typings.stripe.mod.cards
 
-import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.stripeStrings.card
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICardSourceCreationOptionsExtended extends ICardSourceCreationOptions {
   /**
     * Required when adding a card to an account (not applicable to a
@@ -15,7 +15,7 @@ trait ICardSourceCreationOptionsExtended extends ICardSourceCreationOptions {
     *
     * Managed accounts only.
     */
-  var currency: js.UndefOr[String] = js.undefined
+  var currency: js.UndefOr[String] = js.native
   /**
     * Only applicable on accounts (not customers or recipients). If you set
     * this to true (or if this is the first external account being added in this
@@ -24,42 +24,36 @@ trait ICardSourceCreationOptionsExtended extends ICardSourceCreationOptions {
     *
     * Managed accounts only.
     */
-  var default_for_currency: js.UndefOr[Boolean] = js.undefined
+  var default_for_currency: js.UndefOr[Boolean] = js.native
 }
 
 object ICardSourceCreationOptionsExtended {
   @scala.inline
-  def apply(
-    exp_month: Double,
-    exp_year: Double,
-    number: String,
-    `object`: card,
-    address_city: String = null,
-    address_country: String = null,
-    address_line1: String = null,
-    address_line2: String = null,
-    address_state: String = null,
-    address_zip: String = null,
-    currency: String = null,
-    cvc: String = null,
-    default_for_currency: js.UndefOr[Boolean] = js.undefined,
-    metadata: IOptionsMetadata = null,
-    name: String = null
-  ): ICardSourceCreationOptionsExtended = {
+  def apply(exp_month: Double, exp_year: Double, number: String, `object`: card): ICardSourceCreationOptionsExtended = {
     val __obj = js.Dynamic.literal(exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (address_city != null) __obj.updateDynamic("address_city")(address_city.asInstanceOf[js.Any])
-    if (address_country != null) __obj.updateDynamic("address_country")(address_country.asInstanceOf[js.Any])
-    if (address_line1 != null) __obj.updateDynamic("address_line1")(address_line1.asInstanceOf[js.Any])
-    if (address_line2 != null) __obj.updateDynamic("address_line2")(address_line2.asInstanceOf[js.Any])
-    if (address_state != null) __obj.updateDynamic("address_state")(address_state.asInstanceOf[js.Any])
-    if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (cvc != null) __obj.updateDynamic("cvc")(cvc.asInstanceOf[js.Any])
-    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICardSourceCreationOptionsExtended]
   }
+  @scala.inline
+  implicit class ICardSourceCreationOptionsExtendedOps[Self <: ICardSourceCreationOptionsExtended] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setDefault_for_currency(value: Boolean): Self = this.set("default_for_currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_for_currency: Self = this.set("default_for_currency", js.undefined)
+  }
+  
 }
 

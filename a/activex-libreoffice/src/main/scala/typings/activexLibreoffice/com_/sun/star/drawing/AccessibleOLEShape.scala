@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   * document view and not under the OLE object. This is due to underlying implementation constraints and may change in the future.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleOLEShape
   extends XAccessibleExtendedComponent
      with XAccessible

@@ -20,18 +20,44 @@ object ^ extends js.Object {
     * https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js#L18
     */
   def apply(): String = js.native
+  def apply(
+    date: js.UndefOr[scala.Nothing],
+    mask: js.UndefOr[scala.Nothing],
+    utc: js.UndefOr[scala.Nothing],
+    gmt: Boolean
+  ): String = js.native
+  def apply(date: js.UndefOr[scala.Nothing], mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
+  def apply(date: js.UndefOr[scala.Nothing], mask: js.UndefOr[scala.Nothing], utc: Boolean, gmt: Boolean): String = js.native
+  def apply(date: js.UndefOr[scala.Nothing], mask: String): String = js.native
+  def apply(date: js.UndefOr[scala.Nothing], mask: String, utc: js.UndefOr[scala.Nothing], gmt: Boolean): String = js.native
+  def apply(date: js.UndefOr[scala.Nothing], mask: String, utc: Boolean): String = js.native
+  def apply(date: js.UndefOr[scala.Nothing], mask: String, utc: Boolean, gmt: Boolean): String = js.native
   def apply(date: String): String = js.native
+  def apply(date: String, mask: js.UndefOr[scala.Nothing], utc: js.UndefOr[scala.Nothing], gmt: Boolean): String = js.native
+  def apply(date: String, mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
+  def apply(date: String, mask: js.UndefOr[scala.Nothing], utc: Boolean, gmt: Boolean): String = js.native
   def apply(date: String, mask: String): String = js.native
+  def apply(date: String, mask: String, utc: js.UndefOr[scala.Nothing], gmt: Boolean): String = js.native
   def apply(date: String, mask: String, utc: Boolean): String = js.native
   def apply(date: String, mask: String, utc: Boolean, gmt: Boolean): String = js.native
   def apply(date: Double): String = js.native
+  def apply(date: Double, mask: js.UndefOr[scala.Nothing], utc: js.UndefOr[scala.Nothing], gmt: Boolean): String = js.native
+  def apply(date: Double, mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
+  def apply(date: Double, mask: js.UndefOr[scala.Nothing], utc: Boolean, gmt: Boolean): String = js.native
   def apply(date: Double, mask: String): String = js.native
+  def apply(date: Double, mask: String, utc: js.UndefOr[scala.Nothing], gmt: Boolean): String = js.native
   def apply(date: Double, mask: String, utc: Boolean): String = js.native
   def apply(date: Double, mask: String, utc: Boolean, gmt: Boolean): String = js.native
   def apply(date: Date): String = js.native
+  def apply(date: Date, mask: js.UndefOr[scala.Nothing], utc: js.UndefOr[scala.Nothing], gmt: Boolean): String = js.native
+  def apply(date: Date, mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
+  def apply(date: Date, mask: js.UndefOr[scala.Nothing], utc: Boolean, gmt: Boolean): String = js.native
   def apply(date: Date, mask: String): String = js.native
+  def apply(date: Date, mask: String, utc: js.UndefOr[scala.Nothing], gmt: Boolean): String = js.native
   def apply(date: Date, mask: String, utc: Boolean): String = js.native
   def apply(date: Date, mask: String, utc: Boolean, gmt: Boolean): String = js.native
+  def apply(mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
+  def apply(mask: js.UndefOr[scala.Nothing], utc: Boolean, gmt: Boolean): String = js.native
   def apply(mask: String, utc: Boolean): String = js.native
   def apply(mask: String, utc: Boolean, gmt: Boolean): String = js.native
 }

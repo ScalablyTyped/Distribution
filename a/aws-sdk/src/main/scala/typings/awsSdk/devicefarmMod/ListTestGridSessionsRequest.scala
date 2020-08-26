@@ -42,25 +42,52 @@ trait ListTestGridSessionsRequest extends js.Object {
 
 object ListTestGridSessionsRequest {
   @scala.inline
-  def apply(
-    projectArn: DeviceFarmArn,
-    creationTimeAfter: DateTime = null,
-    creationTimeBefore: DateTime = null,
-    endTimeAfter: DateTime = null,
-    endTimeBefore: DateTime = null,
-    maxResult: js.UndefOr[MaxPageSize] = js.undefined,
-    nextToken: PaginationToken = null,
-    status: TestGridSessionStatus = null
-  ): ListTestGridSessionsRequest = {
+  def apply(projectArn: DeviceFarmArn): ListTestGridSessionsRequest = {
     val __obj = js.Dynamic.literal(projectArn = projectArn.asInstanceOf[js.Any])
-    if (creationTimeAfter != null) __obj.updateDynamic("creationTimeAfter")(creationTimeAfter.asInstanceOf[js.Any])
-    if (creationTimeBefore != null) __obj.updateDynamic("creationTimeBefore")(creationTimeBefore.asInstanceOf[js.Any])
-    if (endTimeAfter != null) __obj.updateDynamic("endTimeAfter")(endTimeAfter.asInstanceOf[js.Any])
-    if (endTimeBefore != null) __obj.updateDynamic("endTimeBefore")(endTimeBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResult)) __obj.updateDynamic("maxResult")(maxResult.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTestGridSessionsRequest]
   }
+  @scala.inline
+  implicit class ListTestGridSessionsRequestOps[Self <: ListTestGridSessionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProjectArn(value: DeviceFarmArn): Self = this.set("projectArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationTimeAfter(value: DateTime): Self = this.set("creationTimeAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimeAfter: Self = this.set("creationTimeAfter", js.undefined)
+    @scala.inline
+    def setCreationTimeBefore(value: DateTime): Self = this.set("creationTimeBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimeBefore: Self = this.set("creationTimeBefore", js.undefined)
+    @scala.inline
+    def setEndTimeAfter(value: DateTime): Self = this.set("endTimeAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimeAfter: Self = this.set("endTimeAfter", js.undefined)
+    @scala.inline
+    def setEndTimeBefore(value: DateTime): Self = this.set("endTimeBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimeBefore: Self = this.set("endTimeBefore", js.undefined)
+    @scala.inline
+    def setMaxResult(value: MaxPageSize): Self = this.set("maxResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResult: Self = this.set("maxResult", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setStatus(value: TestGridSessionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

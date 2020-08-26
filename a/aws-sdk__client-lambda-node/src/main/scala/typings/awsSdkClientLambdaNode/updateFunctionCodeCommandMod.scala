@@ -26,16 +26,9 @@ object updateFunctionCodeCommandMod extends js.Object {
           Readable
         ] {
     def this(input: UpdateFunctionCodeInput) = this()
-    /* CompleteClass */
-    override val input: UpdateFunctionCodeInput = js.native
     val middlewareStack: MiddlewareStack[UpdateFunctionCodeInput, UpdateFunctionCodeOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: LambdaResolvedConfiguration
-    ): Handler[UpdateFunctionCodeInput, UpdateFunctionCodeOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: LambdaResolvedConfiguration
     ): Handler[UpdateFunctionCodeInput, UpdateFunctionCodeOutput] = js.native
   }

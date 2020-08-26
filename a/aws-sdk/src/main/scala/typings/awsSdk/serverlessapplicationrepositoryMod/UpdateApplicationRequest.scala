@@ -38,23 +38,50 @@ trait UpdateApplicationRequest extends js.Object {
 
 object UpdateApplicationRequest {
   @scala.inline
-  def apply(
-    ApplicationId: string,
-    Author: string = null,
-    Description: string = null,
-    HomePageUrl: string = null,
-    Labels: listOfString = null,
-    ReadmeBody: string = null,
-    ReadmeUrl: string = null
-  ): UpdateApplicationRequest = {
+  def apply(ApplicationId: string): UpdateApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-    if (Author != null) __obj.updateDynamic("Author")(Author.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (HomePageUrl != null) __obj.updateDynamic("HomePageUrl")(HomePageUrl.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (ReadmeBody != null) __obj.updateDynamic("ReadmeBody")(ReadmeBody.asInstanceOf[js.Any])
-    if (ReadmeUrl != null) __obj.updateDynamic("ReadmeUrl")(ReadmeUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApplicationRequest]
   }
+  @scala.inline
+  implicit class UpdateApplicationRequestOps[Self <: UpdateApplicationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthor(value: string): Self = this.set("Author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("Author", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setHomePageUrl(value: string): Self = this.set("HomePageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomePageUrl: Self = this.set("HomePageUrl", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: string*): Self = this.set("Labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: listOfString): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+    @scala.inline
+    def setReadmeBody(value: string): Self = this.set("ReadmeBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadmeBody: Self = this.set("ReadmeBody", js.undefined)
+    @scala.inline
+    def setReadmeUrl(value: string): Self = this.set("ReadmeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadmeUrl: Self = this.set("ReadmeUrl", js.undefined)
+  }
+  
 }
 

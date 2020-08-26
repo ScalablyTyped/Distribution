@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-zendesk
 
-Typings are for version 1.4
+Typings are for version 2.0
 
 ## Library description:
 zendesk API client wrapper
@@ -12,7 +12,7 @@ zendesk API client wrapper
 | Keywords           | zendesk, API, support, supportdesk, buddha, radar, wrapper, help center, zopim, voice, reseller, knowledge base |
 | # releases         | 4 |
 | # dependents       | 14 |
-| # downloads        | 752613 |
+| # downloads        | 758319 |
 | # stars            | 6 |
 
 ## Links

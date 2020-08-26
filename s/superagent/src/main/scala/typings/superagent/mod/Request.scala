@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Writable
-import typings.std.Promise
 import typings.superagent.anon.ContentType
 import typings.superagent.anon.Deadline
 import typings.superagent.anon.Passphrase
@@ -19,7 +18,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Request extends Promise[Response] {
+trait Request
+  extends js.Promise[Response] {
   def abort(): Unit = js.native
   def accept(`type`: String): this.type = js.native
   def attach(field: String, file: MultipartValueSingle): this.type = js.native
@@ -68,6 +68,7 @@ trait Request extends Promise[Response] {
   def redirects(n: Double): this.type = js.native
   def responseType(`type`: String): this.type = js.native
   def retry(): this.type = js.native
+  def retry(count: js.UndefOr[scala.Nothing], callback: CallbackHandler): this.type = js.native
   def retry(count: Double): this.type = js.native
   def retry(count: Double, callback: CallbackHandler): this.type = js.native
   def send(): this.type = js.native

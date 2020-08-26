@@ -17,14 +17,34 @@ trait SchemaGooglePrivacyDlpV2Table extends js.Object {
 
 object SchemaGooglePrivacyDlpV2Table {
   @scala.inline
-  def apply(
-    headers: js.Array[SchemaGooglePrivacyDlpV2FieldId] = null,
-    rows: js.Array[SchemaGooglePrivacyDlpV2Row] = null
-  ): SchemaGooglePrivacyDlpV2Table = {
+  def apply(): SchemaGooglePrivacyDlpV2Table = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Table]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2TableOps[Self <: SchemaGooglePrivacyDlpV2Table] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeadersVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setRowsVarargs(value: SchemaGooglePrivacyDlpV2Row*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: js.Array[SchemaGooglePrivacyDlpV2Row]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+  }
+  
 }
 

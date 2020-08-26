@@ -24,11 +24,32 @@ trait ClusterLogging extends js.Object {
 
 object ClusterLogging {
   @scala.inline
-  def apply(enable: Input[Boolean], bucketName: Input[String] = null, s3KeyPrefix: Input[String] = null): ClusterLogging = {
+  def apply(enable: Input[Boolean]): ClusterLogging = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any])
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterLogging]
   }
+  @scala.inline
+  implicit class ClusterLoggingOps[Self <: ClusterLogging] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnable(value: Input[Boolean]): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBucketName(value: Input[String]): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    @scala.inline
+    def setS3KeyPrefix(value: Input[String]): Self = this.set("s3KeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3KeyPrefix: Self = this.set("s3KeyPrefix", js.undefined)
+  }
+  
 }
 

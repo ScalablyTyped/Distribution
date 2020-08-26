@@ -7,12 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
 @js.native
 class PointerVisualizationSettings ()
-  extends typings.winrt.Windows.UI.Input.PointerVisualizationSettings {
-  /* CompleteClass */
-  override var isBarrelButtonFeedbackEnabled: Boolean = js.native
-  /* CompleteClass */
-  override var isContactFeedbackEnabled: Boolean = js.native
-}
+  extends typings.winrt.Windows.UI.Input.PointerVisualizationSettings
 
 /* static members */
 @JSGlobal("Windows.UI.Input.PointerVisualizationSettings")

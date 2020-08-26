@@ -10,9 +10,9 @@ An in-place virtual DOM library
 | ------------------ | :-------------: |
 | Full name          | incremental-dom |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 52 |
-| # downloads        | 364774 |
+| # downloads        | 345340 |
 | # stars            | 7 |
 
 ## Links

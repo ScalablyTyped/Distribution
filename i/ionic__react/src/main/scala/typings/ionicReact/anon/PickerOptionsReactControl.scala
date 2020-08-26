@@ -15,71 +15,130 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @ionic/core.@ionic/core.PickerOptions & @ionic/react.@ionic/react/dist/types/components/createControllerComponent.ReactControllerProps & {  forwardedRef ? :react.react.RefObject<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonPickerElement> | undefined} & react.react.RefAttributes<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonPickerElement> */
+/* Inlined @ionic/core.@ionic/core.PickerOptions & @ionic/react.@ionic/react/dist/types/components/createControllerComponent.ReactControllerProps & {  forwardedRef :react.react.RefObject<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonPickerElement> | undefined} & react.react.RefAttributes<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonPickerElement> */
+@js.native
 trait PickerOptionsReactControl extends js.Object {
-  var animated: js.UndefOr[Boolean] = js.undefined
-  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
-  var buttons: js.UndefOr[js.Array[PickerButton]] = js.undefined
-  var columns: js.Array[PickerColumn]
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
-  var forwardedRef: js.UndefOr[RefObject[HTMLIonPickerElement]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var isOpen: Boolean
-  var key: js.UndefOr[Key] = js.undefined
-  var keyboardClose: js.UndefOr[Boolean] = js.undefined
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
-  var mode: js.UndefOr[Mode] = js.undefined
-  var onDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
-  var onDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
-  var onWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
-  var onWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
-  var ref: js.UndefOr[Ref[HTMLIonPickerElement]] = js.undefined
-  var showBackdrop: js.UndefOr[Boolean] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.native
+  var backdropDismiss: js.UndefOr[Boolean] = js.native
+  var buttons: js.UndefOr[js.Array[PickerButton]] = js.native
+  var columns: js.Array[PickerColumn] = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var forwardedRef: js.UndefOr[RefObject[HTMLIonPickerElement]] = js.native
+  var id: js.UndefOr[String] = js.native
+  var isOpen: Boolean = js.native
+  var key: js.UndefOr[Key] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var mode: js.UndefOr[Mode] = js.native
+  var onDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var ref: js.UndefOr[Ref[HTMLIonPickerElement]] = js.native
+  var showBackdrop: js.UndefOr[Boolean] = js.native
 }
 
 object PickerOptionsReactControl {
   @scala.inline
-  def apply(
-    columns: js.Array[PickerColumn],
-    isOpen: Boolean,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    backdropDismiss: js.UndefOr[Boolean] = js.undefined,
-    buttons: js.Array[PickerButton] = null,
-    cssClass: String | js.Array[String] = null,
-    enterAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    forwardedRef: RefObject[HTMLIonPickerElement] = null,
-    id: String = null,
-    key: Key = null,
-    keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    mode: Mode = null,
-    onDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
-    onDidPresent: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
-    onWillDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
-    onWillPresent: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
-    ref: js.UndefOr[Null | Ref[HTMLIonPickerElement]] = js.undefined,
-    showBackdrop: js.UndefOr[Boolean] = js.undefined
-  ): PickerOptionsReactControl = {
+  def apply(columns: js.Array[PickerColumn], isOpen: Boolean): PickerOptionsReactControl = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss.get.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
-    if (forwardedRef != null) __obj.updateDynamic("forwardedRef")(forwardedRef.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.get.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction2(leaveAnimation))
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onDidDismiss != null) __obj.updateDynamic("onDidDismiss")(js.Any.fromFunction1(onDidDismiss))
-    if (onDidPresent != null) __obj.updateDynamic("onDidPresent")(js.Any.fromFunction1(onDidPresent))
-    if (onWillDismiss != null) __obj.updateDynamic("onWillDismiss")(js.Any.fromFunction1(onWillDismiss))
-    if (onWillPresent != null) __obj.updateDynamic("onWillPresent")(js.Any.fromFunction1(onWillPresent))
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerOptionsReactControl]
   }
+  @scala.inline
+  implicit class PickerOptionsReactControlOps[Self <: PickerOptionsReactControl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnsVarargs(value: PickerColumn*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[PickerColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setBackdropDismiss(value: Boolean): Self = this.set("backdropDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdropDismiss: Self = this.set("backdropDismiss", js.undefined)
+    @scala.inline
+    def setButtonsVarargs(value: PickerButton*): Self = this.set("buttons", js.Array(value :_*))
+    @scala.inline
+    def setButtons(value: js.Array[PickerButton]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setCssClassVarargs(value: String*): Self = this.set("cssClass", js.Array(value :_*))
+    @scala.inline
+    def setCssClass(value: String | js.Array[String]): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("enterAnimation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEnterAnimation: Self = this.set("enterAnimation", js.undefined)
+    @scala.inline
+    def setForwardedRef(value: RefObject[HTMLIonPickerElement]): Self = this.set("forwardedRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForwardedRef: Self = this.set("forwardedRef", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setKeyboardClose(value: Boolean): Self = this.set("keyboardClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardClose: Self = this.set("keyboardClose", js.undefined)
+    @scala.inline
+    def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("leaveAnimation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLeaveAnimation: Self = this.set("leaveAnimation", js.undefined)
+    @scala.inline
+    def setMode(value: Mode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setOnDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = this.set("onDidDismiss", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDidDismiss: Self = this.set("onDidDismiss", js.undefined)
+    @scala.inline
+    def setOnDidPresent(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = this.set("onDidPresent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDidPresent: Self = this.set("onDidPresent", js.undefined)
+    @scala.inline
+    def setOnWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = this.set("onWillDismiss", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWillDismiss: Self = this.set("onWillDismiss", js.undefined)
+    @scala.inline
+    def setOnWillPresent(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = this.set("onWillPresent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWillPresent: Self = this.set("onWillPresent", js.undefined)
+    @scala.inline
+    def setRefFunction1(value: /* instance */ HTMLIonPickerElement | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRef(value: Ref[HTMLIonPickerElement]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setRefNull: Self = this.set("ref", null)
+    @scala.inline
+    def setShowBackdrop(value: Boolean): Self = this.set("showBackdrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowBackdrop: Self = this.set("showBackdrop", js.undefined)
+  }
+  
 }
 

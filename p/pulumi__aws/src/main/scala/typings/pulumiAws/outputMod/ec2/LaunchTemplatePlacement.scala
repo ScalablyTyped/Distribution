@@ -23,6 +23,10 @@ trait LaunchTemplatePlacement extends js.Object {
     */
   var hostId: js.UndefOr[String] = js.native
   /**
+    * The number of the partition the instance should launch in. Valid only if the placement group strategy is set to partition.
+    */
+  var partitionNumber: js.UndefOr[Double] = js.native
+  /**
     * Reserved for future use.
     */
   var spreadDomain: js.UndefOr[String] = js.native
@@ -34,22 +38,50 @@ trait LaunchTemplatePlacement extends js.Object {
 
 object LaunchTemplatePlacement {
   @scala.inline
-  def apply(
-    affinity: String = null,
-    availabilityZone: String = null,
-    groupName: String = null,
-    hostId: String = null,
-    spreadDomain: String = null,
-    tenancy: String = null
-  ): LaunchTemplatePlacement = {
+  def apply(): LaunchTemplatePlacement = {
     val __obj = js.Dynamic.literal()
-    if (affinity != null) __obj.updateDynamic("affinity")(affinity.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
-    if (hostId != null) __obj.updateDynamic("hostId")(hostId.asInstanceOf[js.Any])
-    if (spreadDomain != null) __obj.updateDynamic("spreadDomain")(spreadDomain.asInstanceOf[js.Any])
-    if (tenancy != null) __obj.updateDynamic("tenancy")(tenancy.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplatePlacement]
   }
+  @scala.inline
+  implicit class LaunchTemplatePlacementOps[Self <: LaunchTemplatePlacement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffinity(value: String): Self = this.set("affinity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffinity: Self = this.set("affinity", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    @scala.inline
+    def setHostId(value: String): Self = this.set("hostId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostId: Self = this.set("hostId", js.undefined)
+    @scala.inline
+    def setPartitionNumber(value: Double): Self = this.set("partitionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionNumber: Self = this.set("partitionNumber", js.undefined)
+    @scala.inline
+    def setSpreadDomain(value: String): Self = this.set("spreadDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpreadDomain: Self = this.set("spreadDomain", js.undefined)
+    @scala.inline
+    def setTenancy(value: String): Self = this.set("tenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenancy: Self = this.set("tenancy", js.undefined)
+  }
+  
 }
 

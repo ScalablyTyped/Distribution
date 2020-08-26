@@ -13,6 +13,7 @@ trait Utils extends js.Object {
     * @param width width of the grid. If undefined the width will be calculated automatically (optional).
     **/
   def sort(nodes: js.Array[GridStackNode]): Unit = js.native
+  def sort(nodes: js.Array[GridStackNode], dir: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
   def sort(nodes: js.Array[GridStackNode], dir: Double): Unit = js.native
   def sort(nodes: js.Array[GridStackNode], dir: Double, width: Double): Unit = js.native
 }

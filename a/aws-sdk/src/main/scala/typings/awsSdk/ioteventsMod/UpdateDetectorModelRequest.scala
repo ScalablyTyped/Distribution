@@ -33,14 +33,37 @@ object UpdateDetectorModelRequest {
   def apply(
     detectorModelDefinition: DetectorModelDefinition,
     detectorModelName: DetectorModelName,
-    roleArn: AmazonResourceName,
-    detectorModelDescription: DetectorModelDescription = null,
-    evaluationMethod: EvaluationMethod = null
+    roleArn: AmazonResourceName
   ): UpdateDetectorModelRequest = {
     val __obj = js.Dynamic.literal(detectorModelDefinition = detectorModelDefinition.asInstanceOf[js.Any], detectorModelName = detectorModelName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (detectorModelDescription != null) __obj.updateDynamic("detectorModelDescription")(detectorModelDescription.asInstanceOf[js.Any])
-    if (evaluationMethod != null) __obj.updateDynamic("evaluationMethod")(evaluationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDetectorModelRequest]
   }
+  @scala.inline
+  implicit class UpdateDetectorModelRequestOps[Self <: UpdateDetectorModelRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetectorModelDefinition(value: DetectorModelDefinition): Self = this.set("detectorModelDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetectorModelName(value: DetectorModelName): Self = this.set("detectorModelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: AmazonResourceName): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetectorModelDescription(value: DetectorModelDescription): Self = this.set("detectorModelDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelDescription: Self = this.set("detectorModelDescription", js.undefined)
+    @scala.inline
+    def setEvaluationMethod(value: EvaluationMethod): Self = this.set("evaluationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationMethod: Self = this.set("evaluationMethod", js.undefined)
+  }
+  
 }
 

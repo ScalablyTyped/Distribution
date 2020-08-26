@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SensorQuaternion extends ISensorQuaternion
 
 object SensorQuaternion {

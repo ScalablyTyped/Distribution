@@ -12,7 +12,7 @@ JavaScript Testing utilities for React
 | Keywords           | javascript, shallow rendering, shallowRender, test, reactjs, react, flux, testing, test utils, assertion helpers, tdd, mocha |
 | # releases         | 9 |
 | # dependents       | 23 |
-| # downloads        | 2565064 |
+| # downloads        | 2517135 |
 | # stars            | 0 |
 
 ## Links

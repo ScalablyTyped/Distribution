@@ -10,8 +10,49 @@ import scala.scalajs.js.annotation._
 @js.native
 class RouteNode () extends Route {
   def this(name: String) = this()
+  def this(name: js.UndefOr[scala.Nothing], path: String) = this()
   def this(name: String, path: String) = this()
+  def this(name: js.UndefOr[scala.Nothing], path: js.UndefOr[scala.Nothing], childRoutes: js.Array[Route]) = this()
+  def this(name: js.UndefOr[scala.Nothing], path: String, childRoutes: js.Array[Route]) = this()
+  def this(name: String, path: js.UndefOr[scala.Nothing], childRoutes: js.Array[Route]) = this()
   def this(name: String, path: String, childRoutes: js.Array[Route]) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    childRoutes: js.UndefOr[scala.Nothing],
+    options: RouteNodeOptions
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    childRoutes: js.Array[Route],
+    options: RouteNodeOptions
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    path: String,
+    childRoutes: js.UndefOr[scala.Nothing],
+    options: RouteNodeOptions
+  ) = this()
+  def this(
+    name: js.UndefOr[scala.Nothing],
+    path: String,
+    childRoutes: js.Array[Route],
+    options: RouteNodeOptions
+  ) = this()
+  def this(
+    name: String,
+    path: js.UndefOr[scala.Nothing],
+    childRoutes: js.UndefOr[scala.Nothing],
+    options: RouteNodeOptions
+  ) = this()
+  def this(
+    name: String,
+    path: js.UndefOr[scala.Nothing],
+    childRoutes: js.Array[Route],
+    options: RouteNodeOptions
+  ) = this()
+  def this(name: String, path: String, childRoutes: js.UndefOr[scala.Nothing], options: RouteNodeOptions) = this()
   def this(name: String, path: String, childRoutes: js.Array[Route], options: RouteNodeOptions) = this()
   var absolute: Boolean = js.native
   var addRouteNode: js.Any = js.native
@@ -27,13 +68,16 @@ class RouteNode () extends Route {
   var parser: (Path[Record[String, _]]) | Null = js.native
   var path: String = js.native
   def add(route: js.Array[Route]): this.type = js.native
+  def add(route: js.Array[Route], cb: js.UndefOr[scala.Nothing], sort: Boolean): this.type = js.native
   def add(route: js.Array[Route], cb: Callback): this.type = js.native
   def add(route: js.Array[Route], cb: Callback, sort: Boolean): this.type = js.native
   def add(route: Route): this.type = js.native
+  def add(route: Route, cb: js.UndefOr[scala.Nothing], sort: Boolean): this.type = js.native
   def add(route: Route, cb: Callback): this.type = js.native
   def add(route: Route, cb: Callback, sort: Boolean): this.type = js.native
   def addNode(name: String, path: String): this.type = js.native
   def buildPath(routeName: String): String = js.native
+  def buildPath(routeName: String, params: js.UndefOr[scala.Nothing], options: BuildOptions): String = js.native
   def buildPath(routeName: String, params: Record[String, _]): String = js.native
   def buildPath(routeName: String, params: Record[String, _], options: BuildOptions): String = js.native
   def buildState(name: String): RouteNodeState | Null = js.native

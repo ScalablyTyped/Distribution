@@ -36,18 +36,38 @@ trait SchemaIntegerPropertyOptions extends js.Object {
 
 object SchemaIntegerPropertyOptions {
   @scala.inline
-  def apply(
-    maximumValue: String = null,
-    minimumValue: String = null,
-    operatorOptions: SchemaIntegerOperatorOptions = null,
-    orderedRanking: String = null
-  ): SchemaIntegerPropertyOptions = {
+  def apply(): SchemaIntegerPropertyOptions = {
     val __obj = js.Dynamic.literal()
-    if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
-    if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])
-    if (operatorOptions != null) __obj.updateDynamic("operatorOptions")(operatorOptions.asInstanceOf[js.Any])
-    if (orderedRanking != null) __obj.updateDynamic("orderedRanking")(orderedRanking.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIntegerPropertyOptions]
   }
+  @scala.inline
+  implicit class SchemaIntegerPropertyOptionsOps[Self <: SchemaIntegerPropertyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaximumValue(value: String): Self = this.set("maximumValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumValue: Self = this.set("maximumValue", js.undefined)
+    @scala.inline
+    def setMinimumValue(value: String): Self = this.set("minimumValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumValue: Self = this.set("minimumValue", js.undefined)
+    @scala.inline
+    def setOperatorOptions(value: SchemaIntegerOperatorOptions): Self = this.set("operatorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatorOptions: Self = this.set("operatorOptions", js.undefined)
+    @scala.inline
+    def setOrderedRanking(value: String): Self = this.set("orderedRanking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderedRanking: Self = this.set("orderedRanking", js.undefined)
+  }
+  
 }
 

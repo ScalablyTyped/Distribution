@@ -20,6 +20,12 @@ object focusMod extends js.Object {
   def getFirstFocusable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native
   def getFirstFocusable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = js.native
   def getFirstTabbable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native
+  def getFirstTabbable(
+    rootElement: HTMLElement,
+    currentElement: HTMLElement,
+    includeElementsInFocusZones: js.UndefOr[scala.Nothing],
+    checkNode: Boolean
+  ): HTMLElement | Null = js.native
   def getFirstTabbable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = js.native
   def getFirstTabbable(
     rootElement: HTMLElement,
@@ -31,6 +37,12 @@ object focusMod extends js.Object {
   def getLastFocusable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native
   def getLastFocusable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = js.native
   def getLastTabbable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native
+  def getLastTabbable(
+    rootElement: HTMLElement,
+    currentElement: HTMLElement,
+    includeElementsInFocusZones: js.UndefOr[scala.Nothing],
+    checkNode: Boolean
+  ): HTMLElement | Null = js.native
   def getLastTabbable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = js.native
   def getLastTabbable(
     rootElement: HTMLElement,
@@ -40,17 +52,7 @@ object focusMod extends js.Object {
   ): HTMLElement | Null = js.native
   def getNextElement(
     rootElement: HTMLElement,
-    currentElement: Null,
-    checkNode: js.UndefOr[Boolean],
-    suppressParentTraversal: js.UndefOr[Boolean],
-    suppressChildTraversal: js.UndefOr[Boolean],
-    includeElementsInFocusZones: js.UndefOr[Boolean],
-    allowFocusRoot: js.UndefOr[Boolean],
-    tabbable: js.UndefOr[Boolean]
-  ): HTMLElement | Null = js.native
-  def getNextElement(
-    rootElement: HTMLElement,
-    currentElement: HTMLElement,
+    currentElement: HTMLElement | Null,
     checkNode: js.UndefOr[Boolean],
     suppressParentTraversal: js.UndefOr[Boolean],
     suppressChildTraversal: js.UndefOr[Boolean],
@@ -60,17 +62,7 @@ object focusMod extends js.Object {
   ): HTMLElement | Null = js.native
   def getPreviousElement(
     rootElement: HTMLElement,
-    currentElement: Null,
-    checkNode: js.UndefOr[Boolean],
-    suppressParentTraversal: js.UndefOr[Boolean],
-    traverseChildren: js.UndefOr[Boolean],
-    includeElementsInFocusZones: js.UndefOr[Boolean],
-    allowFocusRoot: js.UndefOr[Boolean],
-    tabbable: js.UndefOr[Boolean]
-  ): HTMLElement | Null = js.native
-  def getPreviousElement(
-    rootElement: HTMLElement,
-    currentElement: HTMLElement,
+    currentElement: HTMLElement | Null,
     checkNode: js.UndefOr[Boolean],
     suppressParentTraversal: js.UndefOr[Boolean],
     traverseChildren: js.UndefOr[Boolean],

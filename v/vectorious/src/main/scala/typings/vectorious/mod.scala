@@ -387,7 +387,17 @@ object mod extends js.Object {
       * @returns {Matrix} a matrix of the specified dimensions and `type`
       **/
     def random(i: Double, j: Double): Matrix = js.native
+    def random(
+      i: Double,
+      j: Double,
+      deviation: js.UndefOr[scala.Nothing],
+      mean: js.UndefOr[scala.Nothing],
+      `type`: js.Any
+    ): Matrix = js.native
+    def random(i: Double, j: Double, deviation: js.UndefOr[scala.Nothing], mean: Double): Matrix = js.native
+    def random(i: Double, j: Double, deviation: js.UndefOr[scala.Nothing], mean: Double, `type`: js.Any): Matrix = js.native
     def random(i: Double, j: Double, deviation: Double): Matrix = js.native
+    def random(i: Double, j: Double, deviation: Double, mean: js.UndefOr[scala.Nothing], `type`: js.Any): Matrix = js.native
     def random(i: Double, j: Double, deviation: Double, mean: Double): Matrix = js.native
     def random(i: Double, j: Double, deviation: Double, mean: Double, `type`: js.Any): Matrix = js.native
     /**
@@ -494,7 +504,16 @@ object mod extends js.Object {
       * @returns {Vector} a new vector of the specified size and `type`
       **/
     def random(count: Double): Vector = js.native
+    def random(
+      count: Double,
+      deviation: js.UndefOr[scala.Nothing],
+      mean: js.UndefOr[scala.Nothing],
+      `type`: js.Any
+    ): Vector = js.native
+    def random(count: Double, deviation: js.UndefOr[scala.Nothing], mean: Double): Vector = js.native
+    def random(count: Double, deviation: js.UndefOr[scala.Nothing], mean: Double, `type`: js.Any): Vector = js.native
     def random(count: Double, deviation: Double): Vector = js.native
+    def random(count: Double, deviation: Double, mean: js.UndefOr[scala.Nothing], `type`: js.Any): Vector = js.native
     def random(count: Double, deviation: Double, mean: Double): Vector = js.native
     def random(count: Double, deviation: Double, mean: Double, `type`: js.Any): Vector = js.native
     /**

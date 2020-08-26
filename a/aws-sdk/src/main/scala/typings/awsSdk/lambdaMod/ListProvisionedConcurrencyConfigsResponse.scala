@@ -18,11 +18,32 @@ trait ListProvisionedConcurrencyConfigsResponse extends js.Object {
 
 object ListProvisionedConcurrencyConfigsResponse {
   @scala.inline
-  def apply(NextMarker: String = null, ProvisionedConcurrencyConfigs: ProvisionedConcurrencyConfigList = null): ListProvisionedConcurrencyConfigsResponse = {
+  def apply(): ListProvisionedConcurrencyConfigsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
-    if (ProvisionedConcurrencyConfigs != null) __obj.updateDynamic("ProvisionedConcurrencyConfigs")(ProvisionedConcurrencyConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisionedConcurrencyConfigsResponse]
   }
+  @scala.inline
+  implicit class ListProvisionedConcurrencyConfigsResponseOps[Self <: ListProvisionedConcurrencyConfigsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextMarker(value: String): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    @scala.inline
+    def setProvisionedConcurrencyConfigsVarargs(value: ProvisionedConcurrencyConfigListItem*): Self = this.set("ProvisionedConcurrencyConfigs", js.Array(value :_*))
+    @scala.inline
+    def setProvisionedConcurrencyConfigs(value: ProvisionedConcurrencyConfigList): Self = this.set("ProvisionedConcurrencyConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedConcurrencyConfigs: Self = this.set("ProvisionedConcurrencyConfigs", js.undefined)
+  }
+  
 }
 

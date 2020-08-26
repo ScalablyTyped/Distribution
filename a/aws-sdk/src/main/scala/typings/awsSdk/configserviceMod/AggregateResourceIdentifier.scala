@@ -34,12 +34,35 @@ object AggregateResourceIdentifier {
     ResourceId: ResourceId,
     ResourceType: ResourceType,
     SourceAccountId: AccountId,
-    SourceRegion: AwsRegion,
-    ResourceName: ResourceName = null
+    SourceRegion: AwsRegion
   ): AggregateResourceIdentifier = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], SourceAccountId = SourceAccountId.asInstanceOf[js.Any], SourceRegion = SourceRegion.asInstanceOf[js.Any])
-    if (ResourceName != null) __obj.updateDynamic("ResourceName")(ResourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateResourceIdentifier]
   }
+  @scala.inline
+  implicit class AggregateResourceIdentifierOps[Self <: AggregateResourceIdentifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceId(value: ResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceAccountId(value: AccountId): Self = this.set("SourceAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceRegion(value: AwsRegion): Self = this.set("SourceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceName(value: ResourceName): Self = this.set("ResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("ResourceName", js.undefined)
+  }
+  
 }
 

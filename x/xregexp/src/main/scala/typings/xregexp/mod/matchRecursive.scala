@@ -58,6 +58,7 @@ object matchRecursive extends js.Object {
     */
   def apply(str: String, left: String, right: String): js.Array[String] = js.native
   def apply(str: String, left: String, right: String, flags: String): js.Array[String] = js.native
+  def apply[T /* <: js.UndefOr[MatchRecursiveOptions | Null] */](str: String, left: String, right: String, flags: js.UndefOr[scala.Nothing], options: T): js.Array[MatchRecursiveValueNameMatch | String] = js.native
   def apply[T /* <: js.UndefOr[MatchRecursiveOptions | Null] */](str: String, left: String, right: String, flags: String, options: T): js.Array[MatchRecursiveValueNameMatch | String] = js.native
   def apply[T /* <: js.UndefOr[MatchRecursiveOptions | Null] */](str: String, left: String, right: String, flags: Null, options: T): js.Array[MatchRecursiveValueNameMatch | String] = js.native
 }

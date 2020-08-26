@@ -7,51 +7,60 @@ import scala.scalajs.js.annotation._
 /**
   * If this describes a specific package/container of the substance
   */
+@js.native
 trait SubstanceInstance extends BackboneElement {
   /**
     * Contains extended information for property 'expiry'.
     */
-  var _expiry: js.UndefOr[Element] = js.undefined
+  var _expiry: js.UndefOr[Element] = js.native
   /**
     * When no longer valid to use
     */
-  var expiry: js.UndefOr[dateTime] = js.undefined
+  var expiry: js.UndefOr[dateTime] = js.native
   /**
     * Identifier of the package/container
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Amount of substance in the package
     */
-  var quantity: js.UndefOr[Quantity] = js.undefined
+  var quantity: js.UndefOr[Quantity] = js.native
 }
 
 object SubstanceInstance {
   @scala.inline
-  def apply(
-    _expiry: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    expiry: dateTime = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    identifier: Identifier = null,
-    modifierExtension: js.Array[Extension] = null,
-    quantity: Quantity = null
-  ): SubstanceInstance = {
+  def apply(): SubstanceInstance = {
     val __obj = js.Dynamic.literal()
-    if (_expiry != null) __obj.updateDynamic("_expiry")(_expiry.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubstanceInstance]
   }
+  @scala.inline
+  implicit class SubstanceInstanceOps[Self <: SubstanceInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_expiry(value: Element): Self = this.set("_expiry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_expiry: Self = this.set("_expiry", js.undefined)
+    @scala.inline
+    def setExpiry(value: dateTime): Self = this.set("expiry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiry: Self = this.set("expiry", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setQuantity(value: Quantity): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantity: Self = this.set("quantity", js.undefined)
+  }
+  
 }
 

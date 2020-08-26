@@ -6,60 +6,105 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SlideMenuProps extends js.Object {
-  var appendTo: js.UndefOr[js.Any] = js.undefined
-  var autoZIndex: js.UndefOr[Boolean] = js.undefined
-  var backLabel: js.UndefOr[String] = js.undefined
-  var baseZIndex: js.UndefOr[Double] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var easing: js.UndefOr[String] = js.undefined
-  var effectDuration: js.UndefOr[Double] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var menuWidth: js.UndefOr[Double] = js.undefined
-  var model: js.UndefOr[js.Array[MenuItem]] = js.undefined
-  var onHide: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
-  var onShow: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
-  var popup: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var viewportHeight: js.UndefOr[Double] = js.undefined
+  var appendTo: js.UndefOr[js.Any] = js.native
+  var autoZIndex: js.UndefOr[Boolean] = js.native
+  var backLabel: js.UndefOr[String] = js.native
+  var baseZIndex: js.UndefOr[Double] = js.native
+  var className: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.native
+  var effectDuration: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[String] = js.native
+  var menuWidth: js.UndefOr[Double] = js.native
+  var model: js.UndefOr[js.Array[MenuItem]] = js.native
+  var onHide: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+  var onShow: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+  var popup: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var viewportHeight: js.UndefOr[Double] = js.native
 }
 
 object SlideMenuProps {
   @scala.inline
-  def apply(
-    appendTo: js.Any = null,
-    autoZIndex: js.UndefOr[Boolean] = js.undefined,
-    backLabel: String = null,
-    baseZIndex: js.UndefOr[Double] = js.undefined,
-    className: String = null,
-    easing: String = null,
-    effectDuration: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    menuWidth: js.UndefOr[Double] = js.undefined,
-    model: js.Array[MenuItem] = null,
-    onHide: /* e */ Event => Unit = null,
-    onShow: /* e */ Event => Unit = null,
-    popup: js.UndefOr[Boolean] = js.undefined,
-    style: js.Object = null,
-    viewportHeight: js.UndefOr[Double] = js.undefined
-  ): SlideMenuProps = {
+  def apply(): SlideMenuProps = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoZIndex)) __obj.updateDynamic("autoZIndex")(autoZIndex.get.asInstanceOf[js.Any])
-    if (backLabel != null) __obj.updateDynamic("backLabel")(backLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(baseZIndex)) __obj.updateDynamic("baseZIndex")(baseZIndex.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(effectDuration)) __obj.updateDynamic("effectDuration")(effectDuration.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuWidth)) __obj.updateDynamic("menuWidth")(menuWidth.get.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewportHeight)) __obj.updateDynamic("viewportHeight")(viewportHeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideMenuProps]
   }
+  @scala.inline
+  implicit class SlideMenuPropsOps[Self <: SlideMenuProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendTo(value: js.Any): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setAutoZIndex(value: Boolean): Self = this.set("autoZIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoZIndex: Self = this.set("autoZIndex", js.undefined)
+    @scala.inline
+    def setBackLabel(value: String): Self = this.set("backLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackLabel: Self = this.set("backLabel", js.undefined)
+    @scala.inline
+    def setBaseZIndex(value: Double): Self = this.set("baseZIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseZIndex: Self = this.set("baseZIndex", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setEffectDuration(value: Double): Self = this.set("effectDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectDuration: Self = this.set("effectDuration", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMenuWidth(value: Double): Self = this.set("menuWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuWidth: Self = this.set("menuWidth", js.undefined)
+    @scala.inline
+    def setModelVarargs(value: MenuItem*): Self = this.set("model", js.Array(value :_*))
+    @scala.inline
+    def setModel(value: js.Array[MenuItem]): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setOnHide(value: /* e */ Event => Unit): Self = this.set("onHide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    @scala.inline
+    def setOnShow(value: /* e */ Event => Unit): Self = this.set("onShow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    @scala.inline
+    def setPopup(value: Boolean): Self = this.set("popup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopup: Self = this.set("popup", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setViewportHeight(value: Double): Self = this.set("viewportHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewportHeight: Self = this.set("viewportHeight", js.undefined)
+  }
+  
 }
 

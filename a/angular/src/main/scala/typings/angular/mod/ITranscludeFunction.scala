@@ -15,11 +15,29 @@ import scala.scalajs.js.annotation._
 trait ITranscludeFunction extends js.Object {
   // If one argument is provided, then it's assumed to be the cloneAttachFn.
   def apply(): JQLite = js.native
+  def apply(
+    cloneAttachFn: js.UndefOr[scala.Nothing],
+    futureParentElement: js.UndefOr[scala.Nothing],
+    slotName: String
+  ): JQLite = js.native
+  def apply(cloneAttachFn: js.UndefOr[scala.Nothing], futureParentElement: JQuery): JQLite = js.native
+  def apply(cloneAttachFn: js.UndefOr[scala.Nothing], futureParentElement: JQuery, slotName: String): JQLite = js.native
   def apply(cloneAttachFn: ICloneAttachFunction): JQLite = js.native
+  def apply(
+    cloneAttachFn: ICloneAttachFunction,
+    futureParentElement: js.UndefOr[scala.Nothing],
+    slotName: String
+  ): JQLite = js.native
   def apply(cloneAttachFn: ICloneAttachFunction, futureParentElement: JQuery): JQLite = js.native
   def apply(cloneAttachFn: ICloneAttachFunction, futureParentElement: JQuery, slotName: String): JQLite = js.native
   // If the scope is provided, then the cloneAttachFn must be as well.
   def apply(scope: IScope, cloneAttachFn: ICloneAttachFunction): JQLite = js.native
+  def apply(
+    scope: IScope,
+    cloneAttachFn: ICloneAttachFunction,
+    futureParentElement: js.UndefOr[scala.Nothing],
+    slotName: String
+  ): JQLite = js.native
   def apply(scope: IScope, cloneAttachFn: ICloneAttachFunction, futureParentElement: JQuery): JQLite = js.native
   def apply(scope: IScope, cloneAttachFn: ICloneAttachFunction, futureParentElement: JQuery, slotName: String): JQLite = js.native
   /**

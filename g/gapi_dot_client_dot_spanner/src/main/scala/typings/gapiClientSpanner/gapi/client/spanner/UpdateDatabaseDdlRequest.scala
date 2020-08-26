@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateDatabaseDdlRequest extends js.Object {
   /**
     * If empty, the new update request is assigned an
@@ -26,18 +27,39 @@ trait UpdateDatabaseDdlRequest extends js.Object {
     * UpdateDatabaseDdl returns
     * `ALREADY_EXISTS`.
     */
-  var operationId: js.UndefOr[String] = js.undefined
+  var operationId: js.UndefOr[String] = js.native
   /** DDL statements to be applied to the database. */
-  var statements: js.UndefOr[js.Array[String]] = js.undefined
+  var statements: js.UndefOr[js.Array[String]] = js.native
 }
 
 object UpdateDatabaseDdlRequest {
   @scala.inline
-  def apply(operationId: String = null, statements: js.Array[String] = null): UpdateDatabaseDdlRequest = {
+  def apply(): UpdateDatabaseDdlRequest = {
     val __obj = js.Dynamic.literal()
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (statements != null) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDatabaseDdlRequest]
   }
+  @scala.inline
+  implicit class UpdateDatabaseDdlRequestOps[Self <: UpdateDatabaseDdlRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setStatementsVarargs(value: String*): Self = this.set("statements", js.Array(value :_*))
+    @scala.inline
+    def setStatements(value: js.Array[String]): Self = this.set("statements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatements: Self = this.set("statements", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,36 @@ trait ServerGroupLaunchConfiguration extends js.Object {
 
 object ServerGroupLaunchConfiguration {
   @scala.inline
-  def apply(
-    launchOrder: js.UndefOr[LaunchOrder] = js.undefined,
-    serverGroupId: ServerGroupId = null,
-    serverLaunchConfigurations: ServerLaunchConfigurations = null
-  ): ServerGroupLaunchConfiguration = {
+  def apply(): ServerGroupLaunchConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(launchOrder)) __obj.updateDynamic("launchOrder")(launchOrder.get.asInstanceOf[js.Any])
-    if (serverGroupId != null) __obj.updateDynamic("serverGroupId")(serverGroupId.asInstanceOf[js.Any])
-    if (serverLaunchConfigurations != null) __obj.updateDynamic("serverLaunchConfigurations")(serverLaunchConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerGroupLaunchConfiguration]
   }
+  @scala.inline
+  implicit class ServerGroupLaunchConfigurationOps[Self <: ServerGroupLaunchConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchOrder(value: LaunchOrder): Self = this.set("launchOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchOrder: Self = this.set("launchOrder", js.undefined)
+    @scala.inline
+    def setServerGroupId(value: ServerGroupId): Self = this.set("serverGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerGroupId: Self = this.set("serverGroupId", js.undefined)
+    @scala.inline
+    def setServerLaunchConfigurationsVarargs(value: ServerLaunchConfiguration*): Self = this.set("serverLaunchConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setServerLaunchConfigurations(value: ServerLaunchConfigurations): Self = this.set("serverLaunchConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerLaunchConfigurations: Self = this.set("serverLaunchConfigurations", js.undefined)
+  }
+  
 }
 

@@ -4,18 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClassAttributes[T] extends Attributes {
-  var ref: js.UndefOr[Ref[T]] = js.undefined
+  var ref: js.UndefOr[Ref[T]] = js.native
 }
 
 object ClassAttributes {
   @scala.inline
-  def apply[T](jsx: js.UndefOr[Boolean] = js.undefined, key: Key = null, ref: Ref[T] = null): ClassAttributes[T] = {
+  def apply[T](): ClassAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassAttributes[T]]
   }
+  @scala.inline
+  implicit class ClassAttributesOps[Self <: ClassAttributes[_], T] (val x: Self with ClassAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRefFunction1(value: /* instance */ T | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRef(value: Ref[T]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+  }
+  
 }
 

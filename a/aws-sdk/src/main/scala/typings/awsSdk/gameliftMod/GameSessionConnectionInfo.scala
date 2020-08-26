@@ -30,20 +30,44 @@ trait GameSessionConnectionInfo extends js.Object {
 
 object GameSessionConnectionInfo {
   @scala.inline
-  def apply(
-    DnsName: DnsName = null,
-    GameSessionArn: ArnStringModel = null,
-    IpAddress: StringModel = null,
-    MatchedPlayerSessions: MatchedPlayerSessionList = null,
-    Port: js.UndefOr[PositiveInteger] = js.undefined
-  ): GameSessionConnectionInfo = {
+  def apply(): GameSessionConnectionInfo = {
     val __obj = js.Dynamic.literal()
-    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName.asInstanceOf[js.Any])
-    if (GameSessionArn != null) __obj.updateDynamic("GameSessionArn")(GameSessionArn.asInstanceOf[js.Any])
-    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
-    if (MatchedPlayerSessions != null) __obj.updateDynamic("MatchedPlayerSessions")(MatchedPlayerSessions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSessionConnectionInfo]
   }
+  @scala.inline
+  implicit class GameSessionConnectionInfoOps[Self <: GameSessionConnectionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDnsName(value: DnsName): Self = this.set("DnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("DnsName", js.undefined)
+    @scala.inline
+    def setGameSessionArn(value: ArnStringModel): Self = this.set("GameSessionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameSessionArn: Self = this.set("GameSessionArn", js.undefined)
+    @scala.inline
+    def setIpAddress(value: StringModel): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    @scala.inline
+    def setMatchedPlayerSessionsVarargs(value: MatchedPlayerSession*): Self = this.set("MatchedPlayerSessions", js.Array(value :_*))
+    @scala.inline
+    def setMatchedPlayerSessions(value: MatchedPlayerSessionList): Self = this.set("MatchedPlayerSessions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchedPlayerSessions: Self = this.set("MatchedPlayerSessions", js.undefined)
+    @scala.inline
+    def setPort(value: PositiveInteger): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+  }
+  
 }
 

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * represents a collection of all charts based on data in a table.
   * @see com.sun.star.table.TableChart
   */
+@js.native
 trait TableCharts
   extends XTableCharts
      with XIndexAccess

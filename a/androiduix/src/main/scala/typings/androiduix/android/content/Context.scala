@@ -12,10 +12,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.content.Context")
 @js.native
-abstract class Context protected () extends js.Object {
-  def this(androidUI: AndroidUI) = this()
+trait Context extends js.Object {
   var androidUI: AndroidUI = js.native
   var mLayoutInflater: js.Any = js.native
   var mResources: js.Any = js.native

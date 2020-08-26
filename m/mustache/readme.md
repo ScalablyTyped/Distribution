@@ -10,9 +10,9 @@ Logic-less {{mustache}} templates with JavaScript
 | ------------------ | :-------------: |
 | Full name          | mustache |
 | Keywords           | mustache, template, templates, ejs |
-| # releases         | 11 |
-| # dependents       | 2215 |
-| # downloads        | 54139337 |
+| # releases         | 10 |
+| # dependents       | 2222 |
+| # downloads        | 55092036 |
 | # stars            | 62 |
 
 ## Links

@@ -22,16 +22,34 @@ trait Landmark extends js.Object {
 
 object Landmark {
   @scala.inline
-  def apply(
-    Type: LandmarkType = null,
-    X: js.UndefOr[Float] = js.undefined,
-    Y: js.UndefOr[Float] = js.undefined
-  ): Landmark = {
+  def apply(): Landmark = {
     val __obj = js.Dynamic.literal()
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(X)) __obj.updateDynamic("X")(X.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Y)) __obj.updateDynamic("Y")(Y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Landmark]
   }
+  @scala.inline
+  implicit class LandmarkOps[Self <: Landmark] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: LandmarkType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setX(value: Float): Self = this.set("X", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("X", js.undefined)
+    @scala.inline
+    def setY(value: Float): Self = this.set("Y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("Y", js.undefined)
+  }
+  
 }
 

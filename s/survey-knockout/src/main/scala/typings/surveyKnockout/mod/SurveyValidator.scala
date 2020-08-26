@@ -21,7 +21,16 @@ class SurveyValidator () extends Base {
   def getProcessedText(text: String): String = js.native
   def onAsyncCompleted(result: ValidatorResult): Unit = js.native
   def validate(value: js.Any): ValidatorResult = js.native
+  def validate(
+    value: js.Any,
+    name: js.UndefOr[scala.Nothing],
+    values: js.UndefOr[scala.Nothing],
+    properties: js.Any
+  ): ValidatorResult = js.native
+  def validate(value: js.Any, name: js.UndefOr[scala.Nothing], values: js.Any): ValidatorResult = js.native
+  def validate(value: js.Any, name: js.UndefOr[scala.Nothing], values: js.Any, properties: js.Any): ValidatorResult = js.native
   def validate(value: js.Any, name: String): ValidatorResult = js.native
+  def validate(value: js.Any, name: String, values: js.UndefOr[scala.Nothing], properties: js.Any): ValidatorResult = js.native
   def validate(value: js.Any, name: String, values: js.Any): ValidatorResult = js.native
   def validate(value: js.Any, name: String, values: js.Any, properties: js.Any): ValidatorResult = js.native
 }

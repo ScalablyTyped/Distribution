@@ -22,6 +22,7 @@ class VideoStream protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: VideoStreamArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: VideoStreamArgs, opts: CustomResourceOptions) = this()
   /**
     * The Amazon Resource Name (ARN) specifying the Stream (same as `id`)
@@ -44,7 +45,7 @@ class VideoStream protected () extends CustomResource {
     */
   val kmsKeyId: Output_[String] = js.native
   /**
-    * The media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see [Media Types][2]. If you choose to specify the MediaType, see [Naming Requirements][3] for guidelines.
+    * The media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml). If you choose to specify the MediaType, see [Naming Requirements](https://tools.ietf.org/html/rfc6838#section-4.2) for guidelines.
     */
   val mediaType: Output_[js.UndefOr[String]] = js.native
   /**
@@ -53,9 +54,9 @@ class VideoStream protected () extends CustomResource {
     */
   val name: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The version of the stream.
     */
@@ -73,8 +74,10 @@ object VideoStream extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VideoStream = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VideoStream = js.native
   def get(name: String, id: Input[ID], state: VideoStreamState): VideoStream = js.native
   def get(name: String, id: Input[ID], state: VideoStreamState, opts: CustomResourceOptions): VideoStream = js.native
   /**

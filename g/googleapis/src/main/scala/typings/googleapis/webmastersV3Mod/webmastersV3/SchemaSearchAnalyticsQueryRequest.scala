@@ -64,26 +64,58 @@ trait SchemaSearchAnalyticsQueryRequest extends js.Object {
 
 object SchemaSearchAnalyticsQueryRequest {
   @scala.inline
-  def apply(
-    aggregationType: String = null,
-    dimensionFilterGroups: js.Array[SchemaApiDimensionFilterGroup] = null,
-    dimensions: js.Array[String] = null,
-    endDate: String = null,
-    rowLimit: js.UndefOr[Double] = js.undefined,
-    searchType: String = null,
-    startDate: String = null,
-    startRow: js.UndefOr[Double] = js.undefined
-  ): SchemaSearchAnalyticsQueryRequest = {
+  def apply(): SchemaSearchAnalyticsQueryRequest = {
     val __obj = js.Dynamic.literal()
-    if (aggregationType != null) __obj.updateDynamic("aggregationType")(aggregationType.asInstanceOf[js.Any])
-    if (dimensionFilterGroups != null) __obj.updateDynamic("dimensionFilterGroups")(dimensionFilterGroups.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowLimit)) __obj.updateDynamic("rowLimit")(rowLimit.get.asInstanceOf[js.Any])
-    if (searchType != null) __obj.updateDynamic("searchType")(searchType.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchAnalyticsQueryRequest]
   }
+  @scala.inline
+  implicit class SchemaSearchAnalyticsQueryRequestOps[Self <: SchemaSearchAnalyticsQueryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregationType(value: String): Self = this.set("aggregationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationType: Self = this.set("aggregationType", js.undefined)
+    @scala.inline
+    def setDimensionFilterGroupsVarargs(value: SchemaApiDimensionFilterGroup*): Self = this.set("dimensionFilterGroups", js.Array(value :_*))
+    @scala.inline
+    def setDimensionFilterGroups(value: js.Array[SchemaApiDimensionFilterGroup]): Self = this.set("dimensionFilterGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionFilterGroups: Self = this.set("dimensionFilterGroups", js.undefined)
+    @scala.inline
+    def setDimensionsVarargs(value: String*): Self = this.set("dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: js.Array[String]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setRowLimit(value: Double): Self = this.set("rowLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowLimit: Self = this.set("rowLimit", js.undefined)
+    @scala.inline
+    def setSearchType(value: String): Self = this.set("searchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchType: Self = this.set("searchType", js.undefined)
+    @scala.inline
+    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    @scala.inline
+    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartRow: Self = this.set("startRow", js.undefined)
+  }
+  
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * provides the possibility of receiving an event for confirming deletions of rows in a {@link com.sun.star.form.component.DataForm} .
   * @see XConfirmDeleteListener
   */
+@js.native
 trait XConfirmDeleteBroadcaster extends XInterface {
   /**
     * remembers the specified listener to receive an event for confirming deletions
@@ -19,13 +20,13 @@ trait XConfirmDeleteBroadcaster extends XInterface {
     * @param aListener the listener to add.
     * @see com.sun.star.form.XConfirmDeleteListener
     */
-  def addConfirmDeleteListener(aListener: XConfirmDeleteListener): Unit
+  def addConfirmDeleteListener(aListener: XConfirmDeleteListener): Unit = js.native
   /**
     * removes the specified listener.
     * @param aListener the listener to remove.
     * @see com.sun.star.form.XConfirmDeleteListener
     */
-  def removeConfirmDeleteListener(aListener: XConfirmDeleteListener): Unit
+  def removeConfirmDeleteListener(aListener: XConfirmDeleteListener): Unit = js.native
 }
 
 object XConfirmDeleteBroadcaster {
@@ -40,5 +41,22 @@ object XConfirmDeleteBroadcaster {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addConfirmDeleteListener = js.Any.fromFunction1(addConfirmDeleteListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeConfirmDeleteListener = js.Any.fromFunction1(removeConfirmDeleteListener))
     __obj.asInstanceOf[XConfirmDeleteBroadcaster]
   }
+  @scala.inline
+  implicit class XConfirmDeleteBroadcasterOps[Self <: XConfirmDeleteBroadcaster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddConfirmDeleteListener(value: XConfirmDeleteListener => Unit): Self = this.set("addConfirmDeleteListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveConfirmDeleteListener(value: XConfirmDeleteListener => Unit): Self = this.set("removeConfirmDeleteListener", js.Any.fromFunction1(value))
+  }
+  
 }
 

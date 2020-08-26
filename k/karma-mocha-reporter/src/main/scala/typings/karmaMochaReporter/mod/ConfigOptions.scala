@@ -4,19 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigOptions extends js.Object {
   /**
     * {@link https://github.com/litixsoft/karma-mocha-reporter#options}
     */
-  var mochaReporter: js.UndefOr[MochaReporterOptions] = js.undefined
+  var mochaReporter: js.UndefOr[MochaReporterOptions] = js.native
 }
 
 object ConfigOptions {
   @scala.inline
-  def apply(mochaReporter: MochaReporterOptions = null): ConfigOptions = {
+  def apply(): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (mochaReporter != null) __obj.updateDynamic("mochaReporter")(mochaReporter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
+  @scala.inline
+  implicit class ConfigOptionsOps[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMochaReporter(value: MochaReporterOptions): Self = this.set("mochaReporter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMochaReporter: Self = this.set("mochaReporter", js.undefined)
+  }
+  
 }
 

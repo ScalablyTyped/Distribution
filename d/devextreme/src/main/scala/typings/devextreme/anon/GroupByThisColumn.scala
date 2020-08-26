@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupByThisColumn extends js.Object {
-  var groupByThisColumn: js.UndefOr[String] = js.undefined
-  var groupContinuedMessage: js.UndefOr[String] = js.undefined
-  var groupContinuesMessage: js.UndefOr[String] = js.undefined
-  var ungroup: js.UndefOr[String] = js.undefined
-  var ungroupAll: js.UndefOr[String] = js.undefined
+  var groupByThisColumn: js.UndefOr[String] = js.native
+  var groupContinuedMessage: js.UndefOr[String] = js.native
+  var groupContinuesMessage: js.UndefOr[String] = js.native
+  var ungroup: js.UndefOr[String] = js.native
+  var ungroupAll: js.UndefOr[String] = js.native
 }
 
 object GroupByThisColumn {
   @scala.inline
-  def apply(
-    groupByThisColumn: String = null,
-    groupContinuedMessage: String = null,
-    groupContinuesMessage: String = null,
-    ungroup: String = null,
-    ungroupAll: String = null
-  ): GroupByThisColumn = {
+  def apply(): GroupByThisColumn = {
     val __obj = js.Dynamic.literal()
-    if (groupByThisColumn != null) __obj.updateDynamic("groupByThisColumn")(groupByThisColumn.asInstanceOf[js.Any])
-    if (groupContinuedMessage != null) __obj.updateDynamic("groupContinuedMessage")(groupContinuedMessage.asInstanceOf[js.Any])
-    if (groupContinuesMessage != null) __obj.updateDynamic("groupContinuesMessage")(groupContinuesMessage.asInstanceOf[js.Any])
-    if (ungroup != null) __obj.updateDynamic("ungroup")(ungroup.asInstanceOf[js.Any])
-    if (ungroupAll != null) __obj.updateDynamic("ungroupAll")(ungroupAll.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupByThisColumn]
   }
+  @scala.inline
+  implicit class GroupByThisColumnOps[Self <: GroupByThisColumn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupByThisColumn(value: String): Self = this.set("groupByThisColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupByThisColumn: Self = this.set("groupByThisColumn", js.undefined)
+    @scala.inline
+    def setGroupContinuedMessage(value: String): Self = this.set("groupContinuedMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupContinuedMessage: Self = this.set("groupContinuedMessage", js.undefined)
+    @scala.inline
+    def setGroupContinuesMessage(value: String): Self = this.set("groupContinuesMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupContinuesMessage: Self = this.set("groupContinuesMessage", js.undefined)
+    @scala.inline
+    def setUngroup(value: String): Self = this.set("ungroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUngroup: Self = this.set("ungroup", js.undefined)
+    @scala.inline
+    def setUngroupAll(value: String): Self = this.set("ungroupAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUngroupAll: Self = this.set("ungroupAll", js.undefined)
+  }
+  
 }
 

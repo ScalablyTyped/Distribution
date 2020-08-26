@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SplitNumber extends js.Object {
   /**
     * The length of tick line, can be a pecentage value relative
@@ -14,11 +15,11 @@ trait SplitNumber extends js.Object {
     * 8
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.length
     */
-  var length: js.UndefOr[Double | String] = js.undefined
+  var length: js.UndefOr[Double | String] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[ShadowBlur] = js.native
   /**
     * Whether to show the scale.
     *
@@ -27,7 +28,7 @@ trait SplitNumber extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.show
     */
-  var show: js.UndefOr[Boolean] = js.undefined
+  var show: js.UndefOr[Boolean] = js.native
   /**
     * The split scale number between split line.
     *
@@ -36,23 +37,43 @@ trait SplitNumber extends js.Object {
     * 5
     * @see https://echarts.apache.org/en/option.html#series-gauge.axisTick.splitNumber
     */
-  var splitNumber: js.UndefOr[Double] = js.undefined
+  var splitNumber: js.UndefOr[Double] = js.native
 }
 
 object SplitNumber {
   @scala.inline
-  def apply(
-    length: Double | String = null,
-    lineStyle: ShadowBlur = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    splitNumber: js.UndefOr[Double] = js.undefined
-  ): SplitNumber = {
+  def apply(): SplitNumber = {
     val __obj = js.Dynamic.literal()
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitNumber)) __obj.updateDynamic("splitNumber")(splitNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitNumber]
   }
+  @scala.inline
+  implicit class SplitNumberOps[Self <: SplitNumber] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLength(value: Double | String): Self = this.set("length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    @scala.inline
+    def setLineStyle(value: ShadowBlur): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setSplitNumber(value: Double): Self = this.set("splitNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitNumber: Self = this.set("splitNumber", js.undefined)
+  }
+  
 }
 

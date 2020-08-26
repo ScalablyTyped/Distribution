@@ -22,16 +22,34 @@ trait CreateEmailIdentityResponse extends js.Object {
 
 object CreateEmailIdentityResponse {
   @scala.inline
-  def apply(
-    DkimAttributes: DkimAttributes = null,
-    IdentityType: IdentityType = null,
-    VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
-  ): CreateEmailIdentityResponse = {
+  def apply(): CreateEmailIdentityResponse = {
     val __obj = js.Dynamic.literal()
-    if (DkimAttributes != null) __obj.updateDynamic("DkimAttributes")(DkimAttributes.asInstanceOf[js.Any])
-    if (IdentityType != null) __obj.updateDynamic("IdentityType")(IdentityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(VerifiedForSendingStatus)) __obj.updateDynamic("VerifiedForSendingStatus")(VerifiedForSendingStatus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEmailIdentityResponse]
   }
+  @scala.inline
+  implicit class CreateEmailIdentityResponseOps[Self <: CreateEmailIdentityResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDkimAttributes(value: DkimAttributes): Self = this.set("DkimAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDkimAttributes: Self = this.set("DkimAttributes", js.undefined)
+    @scala.inline
+    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityType: Self = this.set("IdentityType", js.undefined)
+    @scala.inline
+    def setVerifiedForSendingStatus(value: Enabled): Self = this.set("VerifiedForSendingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifiedForSendingStatus: Self = this.set("VerifiedForSendingStatus", js.undefined)
+  }
+  
 }
 

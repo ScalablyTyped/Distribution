@@ -27,6 +27,7 @@ class ResourceFullhashes protected () extends js.Object {
     */
   def find(): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
   def find(callback: BodyResponseCallback[SchemaFindFullHashesResponse]): Unit = js.native
+  def find(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
   def find(params: ParamsResourceFullhashesFind): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
   def find(params: ParamsResourceFullhashesFind, callback: BodyResponseCallback[SchemaFindFullHashesResponse]): Unit = js.native
   def find(

@@ -12,7 +12,7 @@ Empty the trash
 | Keywords           | trash, recycle, file, files, directory, directories, empty, clear, macos, windows, linux |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 10774 |
+| # downloads        | 10530 |
 | # stars            | 5 |
 
 ## Links

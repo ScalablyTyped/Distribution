@@ -27,6 +27,7 @@ class ResourceDetections protected () extends js.Object {
     */
   def detect(): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def detect(callback: BodyResponseCallback[SchemaDetectionsListResponse]): Unit = js.native
+  def detect(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def detect(params: ParamsResourceDetectionsDetect): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def detect(
     params: ParamsResourceDetectionsDetect,
@@ -57,6 +58,7 @@ class ResourceDetections protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDetectionsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def list(params: ParamsResourceDetectionsList): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def list(params: ParamsResourceDetectionsList, callback: BodyResponseCallback[SchemaDetectionsListResponse]): Unit = js.native
   def list(

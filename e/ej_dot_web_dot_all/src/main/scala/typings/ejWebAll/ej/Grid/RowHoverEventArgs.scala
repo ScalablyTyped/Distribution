@@ -4,30 +4,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RowHoverEventArgs extends js.Object {
   /** Returns the hovered row cell
     */
-  var cell: js.UndefOr[js.Any] = js.undefined
+  var cell: js.UndefOr[js.Any] = js.native
   /** Returns the hovered row.
     */
-  var row: js.UndefOr[js.Any] = js.undefined
+  var row: js.UndefOr[js.Any] = js.native
   /** Returns the hovered record details
     */
-  var rowData: js.UndefOr[js.Any] = js.undefined
+  var rowData: js.UndefOr[js.Any] = js.native
   /** Returns the hovered row index.
     */
-  var rowIndex: js.UndefOr[js.Any] = js.undefined
+  var rowIndex: js.UndefOr[js.Any] = js.native
 }
 
 object RowHoverEventArgs {
   @scala.inline
-  def apply(cell: js.Any = null, row: js.Any = null, rowData: js.Any = null, rowIndex: js.Any = null): RowHoverEventArgs = {
+  def apply(): RowHoverEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowHoverEventArgs]
   }
+  @scala.inline
+  implicit class RowHoverEventArgsOps[Self <: RowHoverEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCell(value: js.Any): Self = this.set("cell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCell: Self = this.set("cell", js.undefined)
+    @scala.inline
+    def setRow(value: js.Any): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setRowData(value: js.Any): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowData: Self = this.set("rowData", js.undefined)
+    @scala.inline
+    def setRowIndex(value: js.Any): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+  }
+  
 }
 

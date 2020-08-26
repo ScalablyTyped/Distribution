@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Networking
 
-import typings.winrtUwp.Windows.Networking.Connectivity.IPInformation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,28 +14,6 @@ class HostName protected ()
     * @param hostName A string that contains a hostname or an IP address.
     */
   def this(hostName: String) = this()
-  /** Gets the canonical name for the HostName object. */
-  /* CompleteClass */
-  override var canonicalName: String = js.native
-  /** Gets the display name for the HostName object. */
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /** Gets the IPInformation object for a local IP address assigned to a HostName object. */
-  /* CompleteClass */
-  override var ipInformation: IPInformation = js.native
-  /** Gets the original string used to construct the HostName object. */
-  /* CompleteClass */
-  override var rawName: String = js.native
-  /** Gets the HostNameType of the HostName object. */
-  /* CompleteClass */
-  override var `type`: typings.winrtUwp.Windows.Networking.HostNameType = js.native
-  /**
-    * Determines whether the specified HostName object has an equivalent value to the current HostName object.
-    * @param hostName A HostName object that is compared with the current HostName.
-    * @return A Boolean value that indicates whether the specified HostName object is equal to the current HostName object.
-    */
-  /* CompleteClass */
-  override def isEqual(hostName: typings.winrtUwp.Windows.Networking.HostName): Boolean = js.native
 }
 
 /* static members */

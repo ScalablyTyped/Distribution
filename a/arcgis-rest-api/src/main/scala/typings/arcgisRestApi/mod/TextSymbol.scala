@@ -13,65 +13,95 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextSymbol extends MarkerSymbol {
-  var backgroundColor: js.UndefOr[Color] = js.undefined
+  var backgroundColor: js.UndefOr[Color] = js.native
    // <size>;
-  var borderLineColor: js.UndefOr[Color] = js.undefined
-  var borderLineSize: js.UndefOr[Double] = js.undefined
-  var color: js.UndefOr[Color] = js.undefined
-  var font: js.UndefOr[Font] = js.undefined
+  var borderLineColor: js.UndefOr[Color] = js.native
+  var borderLineSize: js.UndefOr[Double] = js.native
+  var color: js.UndefOr[Color] = js.native
+  var font: js.UndefOr[Font] = js.native
    // <size>;
-  var haloColor: js.UndefOr[Color] = js.undefined
-  var haloSize: js.UndefOr[Double] = js.undefined
-  var horizontalAlignment: js.UndefOr[left | right | center | justify] = js.undefined
-  var kerning: js.UndefOr[Boolean] = js.undefined
-  var rightToLeft: js.UndefOr[Boolean] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
+  var haloColor: js.UndefOr[Color] = js.native
+  var haloSize: js.UndefOr[Double] = js.native
+  var horizontalAlignment: js.UndefOr[left | right | center | justify] = js.native
+  var kerning: js.UndefOr[Boolean] = js.native
+  var rightToLeft: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[String] = js.native
   @JSName("type")
-  var type_TextSymbol: esriTS
-  var verticalAlignment: js.UndefOr[baseline | top | middle | bottom] = js.undefined
+  var type_TextSymbol: esriTS = js.native
+  var verticalAlignment: js.UndefOr[baseline | top | middle | bottom] = js.native
 }
 
 object TextSymbol {
   @scala.inline
-  def apply(
-    `type`: esriTS,
-    angle: js.UndefOr[Double] = js.undefined,
-    backgroundColor: Color = null,
-    borderLineColor: Color = null,
-    borderLineSize: js.UndefOr[Double] = js.undefined,
-    color: Color = null,
-    font: Font = null,
-    haloColor: Color = null,
-    haloSize: js.UndefOr[Double] = js.undefined,
-    horizontalAlignment: left | right | center | justify = null,
-    kerning: js.UndefOr[Boolean] = js.undefined,
-    rightToLeft: js.UndefOr[Boolean] = js.undefined,
-    style: String = null,
-    text: String = null,
-    verticalAlignment: baseline | top | middle | bottom = null,
-    xoffset: js.UndefOr[Double] = js.undefined,
-    yoffset: js.UndefOr[Double] = js.undefined
-  ): TextSymbol = {
+  def apply(`type`: esriTS): TextSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderLineColor != null) __obj.updateDynamic("borderLineColor")(borderLineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderLineSize)) __obj.updateDynamic("borderLineSize")(borderLineSize.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(haloSize)) __obj.updateDynamic("haloSize")(haloSize.get.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(xoffset)) __obj.updateDynamic("xoffset")(xoffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoffset)) __obj.updateDynamic("yoffset")(yoffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSymbol]
   }
+  @scala.inline
+  implicit class TextSymbolOps[Self <: TextSymbol] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: esriTS): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderLineColor(value: Color): Self = this.set("borderLineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderLineColor: Self = this.set("borderLineColor", js.undefined)
+    @scala.inline
+    def setBorderLineSize(value: Double): Self = this.set("borderLineSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderLineSize: Self = this.set("borderLineSize", js.undefined)
+    @scala.inline
+    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFont(value: Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setHaloColor(value: Color): Self = this.set("haloColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHaloColor: Self = this.set("haloColor", js.undefined)
+    @scala.inline
+    def setHaloSize(value: Double): Self = this.set("haloSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHaloSize: Self = this.set("haloSize", js.undefined)
+    @scala.inline
+    def setHorizontalAlignment(value: left | right | center | justify): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    @scala.inline
+    def setKerning(value: Boolean): Self = this.set("kerning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKerning: Self = this.set("kerning", js.undefined)
+    @scala.inline
+    def setRightToLeft(value: Boolean): Self = this.set("rightToLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightToLeft: Self = this.set("rightToLeft", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setVerticalAlignment(value: baseline | top | middle | bottom): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+  }
+  
 }
 

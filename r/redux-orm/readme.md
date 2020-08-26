@@ -12,11 +12,11 @@ Simple ORM to manage and query your state trees
 | Keywords           | redux, orm |
 | # releases         | 22 |
 | # dependents       | 8 |
-| # downloads        | 291385 |
+| # downloads        | 290005 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/redux-orm/redux-orm#readme)
+- [Homepage](https://redux-orm.github.io/redux-orm)
 - [Bugs](https://github.com/redux-orm/redux-orm/issues)
 - [Repository](https://github.com/redux-orm/redux-orm)
 - [Npm](https://www.npmjs.com/package/redux-orm)

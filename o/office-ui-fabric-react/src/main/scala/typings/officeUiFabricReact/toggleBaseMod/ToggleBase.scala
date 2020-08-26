@@ -24,8 +24,6 @@ class ToggleBase protected ()
     * Gets the current checked state of the toggle.
     */
   val checked: Boolean = js.native
-  /* CompleteClass */
-  override def focus(): Unit = js.native
 }
 
 /* static members */

@@ -5,39 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var autoHide: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var label: js.UndefOr[String | HTMLElement] = js.undefined
-  var render: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapEventMod.default, Unit]] = js.undefined
-  var resetNorth: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var target: js.UndefOr[HTMLElement | String] = js.undefined
-  var tipLabel: js.UndefOr[String] = js.undefined
+  var autoHide: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var label: js.UndefOr[String | HTMLElement] = js.native
+  var render: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapEventMod.default, Unit]] = js.native
+  var resetNorth: js.UndefOr[js.Function0[Unit]] = js.native
+  var target: js.UndefOr[HTMLElement | String] = js.native
+  var tipLabel: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    autoHide: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    label: String | HTMLElement = null,
-    render: /* p0 */ typings.ol.mapEventMod.default => Unit = null,
-    resetNorth: () => Unit = null,
-    target: HTMLElement | String = null,
-    tipLabel: String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (resetNorth != null) __obj.updateDynamic("resetNorth")(js.Any.fromFunction0(resetNorth))
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (tipLabel != null) __obj.updateDynamic("tipLabel")(tipLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setLabel(value: String | HTMLElement): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setRender(value: /* p0 */ typings.ol.mapEventMod.default => Unit): Self = this.set("render", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+    @scala.inline
+    def setResetNorth(value: () => Unit): Self = this.set("resetNorth", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteResetNorth: Self = this.set("resetNorth", js.undefined)
+    @scala.inline
+    def setTarget(value: HTMLElement | String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTipLabel(value: String): Self = this.set("tipLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTipLabel: Self = this.set("tipLabel", js.undefined)
+  }
+  
 }
 

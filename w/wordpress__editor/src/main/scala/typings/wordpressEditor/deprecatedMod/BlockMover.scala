@@ -1,0 +1,13 @@
+package typings.wordpressEditor.deprecatedMod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ComponentType
+import typings.wordpressBlockEditor.blockMoverMod.BlockMover.Props
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@wordpress/editor/components/deprecated", "BlockMover")
+@js.native
+object BlockMover extends TopLevel[ComponentType[Props]]
+

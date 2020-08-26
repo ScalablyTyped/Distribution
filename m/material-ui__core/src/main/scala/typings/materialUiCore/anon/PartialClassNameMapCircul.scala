@@ -21,30 +21,62 @@ trait PartialClassNameMapCircul extends js.Object {
 
 object PartialClassNameMapCircul {
   @scala.inline
-  def apply(
-    circle: String = null,
-    circleDisableShrink: String = null,
-    circleIndeterminate: String = null,
-    circleStatic: String = null,
-    colorPrimary: String = null,
-    colorSecondary: String = null,
-    indeterminate: String = null,
-    root: String = null,
-    static: String = null,
-    svg: String = null
-  ): PartialClassNameMapCircul = {
+  def apply(): PartialClassNameMapCircul = {
     val __obj = js.Dynamic.literal()
-    if (circle != null) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
-    if (circleDisableShrink != null) __obj.updateDynamic("circleDisableShrink")(circleDisableShrink.asInstanceOf[js.Any])
-    if (circleIndeterminate != null) __obj.updateDynamic("circleIndeterminate")(circleIndeterminate.asInstanceOf[js.Any])
-    if (circleStatic != null) __obj.updateDynamic("circleStatic")(circleStatic.asInstanceOf[js.Any])
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
-    if (indeterminate != null) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (static != null) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
-    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapCircul]
   }
+  @scala.inline
+  implicit class PartialClassNameMapCirculOps[Self <: PartialClassNameMapCircul] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCircle(value: String): Self = this.set("circle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircle: Self = this.set("circle", js.undefined)
+    @scala.inline
+    def setCircleDisableShrink(value: String): Self = this.set("circleDisableShrink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircleDisableShrink: Self = this.set("circleDisableShrink", js.undefined)
+    @scala.inline
+    def setCircleIndeterminate(value: String): Self = this.set("circleIndeterminate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircleIndeterminate: Self = this.set("circleIndeterminate", js.undefined)
+    @scala.inline
+    def setCircleStatic(value: String): Self = this.set("circleStatic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircleStatic: Self = this.set("circleStatic", js.undefined)
+    @scala.inline
+    def setColorPrimary(value: String): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    @scala.inline
+    def setColorSecondary(value: String): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    @scala.inline
+    def setIndeterminate(value: String): Self = this.set("indeterminate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndeterminate: Self = this.set("indeterminate", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setStatic(value: String): Self = this.set("static", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatic: Self = this.set("static", js.undefined)
+    @scala.inline
+    def setSvg(value: String): Self = this.set("svg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvg: Self = this.set("svg", js.undefined)
+  }
+  
 }
 

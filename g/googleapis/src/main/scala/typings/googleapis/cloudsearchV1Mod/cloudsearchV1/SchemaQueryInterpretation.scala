@@ -17,11 +17,30 @@ trait SchemaQueryInterpretation extends js.Object {
 
 object SchemaQueryInterpretation {
   @scala.inline
-  def apply(interpretationType: String = null, interpretedQuery: String = null): SchemaQueryInterpretation = {
+  def apply(): SchemaQueryInterpretation = {
     val __obj = js.Dynamic.literal()
-    if (interpretationType != null) __obj.updateDynamic("interpretationType")(interpretationType.asInstanceOf[js.Any])
-    if (interpretedQuery != null) __obj.updateDynamic("interpretedQuery")(interpretedQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryInterpretation]
   }
+  @scala.inline
+  implicit class SchemaQueryInterpretationOps[Self <: SchemaQueryInterpretation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInterpretationType(value: String): Self = this.set("interpretationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterpretationType: Self = this.set("interpretationType", js.undefined)
+    @scala.inline
+    def setInterpretedQuery(value: String): Self = this.set("interpretedQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterpretedQuery: Self = this.set("interpretedQuery", js.undefined)
+  }
+  
 }
 

@@ -54,7 +54,7 @@ trait SchemaInternals extends js.Object {
     * Retrieve some rule configuration.
     */
   @JSName("$_getRule")
-  def $_getRule(name: String): ExtensionRule = js.native
+  def $_getRule(name: String): js.UndefOr[GetRuleOptions] = js.native
   @JSName("$_mapLabels")
   def $_mapLabels(path: String): String = js.native
   @JSName("$_mapLabels")

@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object jSXAttribute extends js.Object {
   def apply(): JSXAttribute_ = js.native
+  def apply(name: js.UndefOr[scala.Nothing], value: JSXElement_): JSXAttribute_ = js.native
+  def apply(name: js.UndefOr[scala.Nothing], value: JSXExpressionContainer_): JSXAttribute_ = js.native
+  def apply(name: js.UndefOr[scala.Nothing], value: StringLiteral_): JSXAttribute_ = js.native
   def apply(name: JSXIdentifier_): JSXAttribute_ = js.native
   def apply(name: JSXIdentifier_, value: JSXElement_): JSXAttribute_ = js.native
   def apply(name: JSXIdentifier_, value: JSXExpressionContainer_): JSXAttribute_ = js.native

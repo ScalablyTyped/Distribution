@@ -18,11 +18,32 @@ trait DescribeBudgetsResponse extends js.Object {
 
 object DescribeBudgetsResponse {
   @scala.inline
-  def apply(Budgets: Budgets = null, NextToken: GenericString = null): DescribeBudgetsResponse = {
+  def apply(): DescribeBudgetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Budgets != null) __obj.updateDynamic("Budgets")(Budgets.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBudgetsResponse]
   }
+  @scala.inline
+  implicit class DescribeBudgetsResponseOps[Self <: DescribeBudgetsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBudgetsVarargs(value: Budget*): Self = this.set("Budgets", js.Array(value :_*))
+    @scala.inline
+    def setBudgets(value: Budgets): Self = this.set("Budgets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBudgets: Self = this.set("Budgets", js.undefined)
+    @scala.inline
+    def setNextToken(value: GenericString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

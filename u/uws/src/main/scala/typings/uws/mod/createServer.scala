@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createServer extends js.Object {
   def apply(): Server = js.native
+  def apply(options: js.UndefOr[scala.Nothing], connectionListener: js.Function1[/* client */ WebSocket, Unit]): Server = js.native
   def apply(options: IServerOptions): Server = js.native
   def apply(options: IServerOptions, connectionListener: js.Function1[/* client */ WebSocket, Unit]): Server = js.native
 }

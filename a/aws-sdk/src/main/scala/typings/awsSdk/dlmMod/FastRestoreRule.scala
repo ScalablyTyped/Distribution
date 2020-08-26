@@ -26,17 +26,38 @@ trait FastRestoreRule extends js.Object {
 
 object FastRestoreRule {
   @scala.inline
-  def apply(
-    AvailabilityZones: AvailabilityZoneList,
-    Count: js.UndefOr[Count] = js.undefined,
-    Interval: js.UndefOr[Interval] = js.undefined,
-    IntervalUnit: RetentionIntervalUnitValues = null
-  ): FastRestoreRule = {
+  def apply(AvailabilityZones: AvailabilityZoneList): FastRestoreRule = {
     val __obj = js.Dynamic.literal(AvailabilityZones = AvailabilityZones.asInstanceOf[js.Any])
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval.get.asInstanceOf[js.Any])
-    if (IntervalUnit != null) __obj.updateDynamic("IntervalUnit")(IntervalUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastRestoreRule]
   }
+  @scala.inline
+  implicit class FastRestoreRuleOps[Self <: FastRestoreRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: AvailabilityZoneList): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCount(value: Count): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("Count", js.undefined)
+    @scala.inline
+    def setInterval(value: Interval): Self = this.set("Interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("Interval", js.undefined)
+    @scala.inline
+    def setIntervalUnit(value: RetentionIntervalUnitValues): Self = this.set("IntervalUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntervalUnit: Self = this.set("IntervalUnit", js.undefined)
+  }
+  
 }
 

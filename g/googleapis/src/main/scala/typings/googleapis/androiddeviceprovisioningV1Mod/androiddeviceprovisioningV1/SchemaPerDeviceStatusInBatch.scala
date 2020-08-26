@@ -29,18 +29,38 @@ trait SchemaPerDeviceStatusInBatch extends js.Object {
 
 object SchemaPerDeviceStatusInBatch {
   @scala.inline
-  def apply(
-    deviceId: String = null,
-    errorIdentifier: String = null,
-    errorMessage: String = null,
-    status: String = null
-  ): SchemaPerDeviceStatusInBatch = {
+  def apply(): SchemaPerDeviceStatusInBatch = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (errorIdentifier != null) __obj.updateDynamic("errorIdentifier")(errorIdentifier.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPerDeviceStatusInBatch]
   }
+  @scala.inline
+  implicit class SchemaPerDeviceStatusInBatchOps[Self <: SchemaPerDeviceStatusInBatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    @scala.inline
+    def setErrorIdentifier(value: String): Self = this.set("errorIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorIdentifier: Self = this.set("errorIdentifier", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

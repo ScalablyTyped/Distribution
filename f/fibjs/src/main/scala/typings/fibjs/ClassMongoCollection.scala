@@ -59,6 +59,7 @@ trait ClassMongoCollection extends ClassObject {
     * 
     */
   def find(): ClassMongoCursor = js.native
+  def find(query: js.UndefOr[scala.Nothing], projection: js.Object): ClassMongoCursor = js.native
   def find(query: js.Object): ClassMongoCursor = js.native
   def find(query: js.Object, projection: js.Object): ClassMongoCursor = js.native
   /**
@@ -82,6 +83,7 @@ trait ClassMongoCollection extends ClassObject {
     * 
     */
   def findOne(): js.Object = js.native
+  def findOne(query: js.UndefOr[scala.Nothing], projection: js.Object): js.Object = js.native
   def findOne(query: js.Object): js.Object = js.native
   def findOne(query: js.Object, projection: js.Object): js.Object = js.native
   /**
@@ -193,6 +195,7 @@ trait ClassMongoCollection extends ClassObject {
     * 
     */
   def update(query: js.Object, document: js.Object, options: js.Object): Unit = js.native
+  def update(query: js.Object, document: js.Object, upsert: js.UndefOr[scala.Nothing], multi: Boolean): Unit = js.native
   def update(query: js.Object, document: js.Object, upsert: Boolean): Unit = js.native
   def update(query: js.Object, document: js.Object, upsert: Boolean, multi: Boolean): Unit = js.native
 }

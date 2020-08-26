@@ -37,6 +37,7 @@ class ResourcePagespeedapi protected () extends js.Object {
     */
   def runpagespeed(): GaxiosPromise[SchemaPagespeedApiPagespeedResponseV4] = js.native
   def runpagespeed(callback: BodyResponseCallback[SchemaPagespeedApiPagespeedResponseV4]): Unit = js.native
+  def runpagespeed(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPagespeedApiPagespeedResponseV4] = js.native
   def runpagespeed(params: ParamsResourcePagespeedapiRunpagespeed): GaxiosPromise[SchemaPagespeedApiPagespeedResponseV4] = js.native
   def runpagespeed(
     params: ParamsResourcePagespeedapiRunpagespeed,

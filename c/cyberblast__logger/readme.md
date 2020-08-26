@@ -10,9 +10,9 @@ A simple logger for node
 | ------------------ | :-------------: |
 | Full name          | @cyberblast/logger |
 | Keywords           | node, log, logger |
-| # releases         | 9 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 473 |
+| # downloads        | 580 |
 | # stars            | 0 |
 
 ## Links

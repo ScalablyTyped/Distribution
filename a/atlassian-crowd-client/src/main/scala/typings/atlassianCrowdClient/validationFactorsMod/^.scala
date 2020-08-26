@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends ValidationFactors {
   def this(validationFactorPairs: js.Any) = this()
-  /* CompleteClass */
-  override val validationFactors: js.Any = js.native
-  /* CompleteClass */
-  override def toCrowd(): ValidationFactorsObj = js.native
 }
 
 @JSImport("atlassian-crowd-client/lib/models/validation-factors", JSImport.Namespace)

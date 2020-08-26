@@ -18,14 +18,30 @@ trait DescribeCACertificateResponse extends js.Object {
 
 object DescribeCACertificateResponse {
   @scala.inline
-  def apply(
-    certificateDescription: CACertificateDescription = null,
-    registrationConfig: RegistrationConfig = null
-  ): DescribeCACertificateResponse = {
+  def apply(): DescribeCACertificateResponse = {
     val __obj = js.Dynamic.literal()
-    if (certificateDescription != null) __obj.updateDynamic("certificateDescription")(certificateDescription.asInstanceOf[js.Any])
-    if (registrationConfig != null) __obj.updateDynamic("registrationConfig")(registrationConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCACertificateResponse]
   }
+  @scala.inline
+  implicit class DescribeCACertificateResponseOps[Self <: DescribeCACertificateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateDescription(value: CACertificateDescription): Self = this.set("certificateDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateDescription: Self = this.set("certificateDescription", js.undefined)
+    @scala.inline
+    def setRegistrationConfig(value: RegistrationConfig): Self = this.set("registrationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationConfig: Self = this.set("registrationConfig", js.undefined)
+  }
+  
 }
 

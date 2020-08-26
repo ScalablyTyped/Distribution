@@ -78,6 +78,7 @@ trait JQuery extends js.Object {
     * to the area.
     */
   def mapster(method: GetOptions): Options | AreaRenderingOptions = js.native
+  def mapster(method: GetOptions, key: js.UndefOr[scala.Nothing], effective: Boolean): Options | AreaRenderingOptions = js.native
   def mapster(method: GetOptions, key: String): Options | AreaRenderingOptions = js.native
   def mapster(method: GetOptions, key: String, effective: Boolean): Options | AreaRenderingOptions = js.native
   def mapster(method: Get, key: String): String | Boolean = js.native

@@ -22,16 +22,36 @@ trait DetectLabelsResponse extends js.Object {
 
 object DetectLabelsResponse {
   @scala.inline
-  def apply(
-    LabelModelVersion: String = null,
-    Labels: Labels = null,
-    OrientationCorrection: OrientationCorrection = null
-  ): DetectLabelsResponse = {
+  def apply(): DetectLabelsResponse = {
     val __obj = js.Dynamic.literal()
-    if (LabelModelVersion != null) __obj.updateDynamic("LabelModelVersion")(LabelModelVersion.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (OrientationCorrection != null) __obj.updateDynamic("OrientationCorrection")(OrientationCorrection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectLabelsResponse]
   }
+  @scala.inline
+  implicit class DetectLabelsResponseOps[Self <: DetectLabelsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabelModelVersion(value: String): Self = this.set("LabelModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelModelVersion: Self = this.set("LabelModelVersion", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: Label*): Self = this.set("Labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: Labels): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+    @scala.inline
+    def setOrientationCorrection(value: OrientationCorrection): Self = this.set("OrientationCorrection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientationCorrection: Self = this.set("OrientationCorrection", js.undefined)
+  }
+  
 }
 

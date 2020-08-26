@@ -1,117 +1,119 @@
 package typings.extjs.Ext.chart.axis
 
-import typings.extjs.Ext.Array
-import typings.extjs.Ext.IClass
-import typings.extjs.Ext.chart.ILabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IAxis extends IAbstract {
   /** [Config Option] (Boolean) */
-  var adjustEnd: js.UndefOr[Boolean] = js.undefined
+  var adjustEnd: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number) */
-  var dashSize: js.UndefOr[Double] = js.undefined
+  var dashSize: js.UndefOr[Double] = js.native
   /** [Method] Renders the axis into the screen and updates its position
     * @param init Object
     */
-  var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var drawAxis: js.UndefOr[js.Function1[/* init */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Renders an horizontal and or vertical grid into the Surface  */
-  var drawGrid: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var drawGrid: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Renders the labels in the axes  */
-  var drawLabel: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var drawLabel: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Boolean/Object) */
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var hidden: js.UndefOr[Boolean] = js.undefined
+  var hidden: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number) */
-  var length: js.UndefOr[Double] = js.undefined
+  var length: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var majorTickSteps: js.UndefOr[Double] = js.undefined
+  var majorTickSteps: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var minorTickSteps: js.UndefOr[Double] = js.undefined
+  var minorTickSteps: js.UndefOr[Double] = js.native
   /** [Config Option] (String) */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /** [Method] Updates the title of this axis
     * @param title String
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.native
   /** [Config Option] (String) */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /** [Config Option] (Number) */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object IAxis {
   @scala.inline
-  def apply(
-    adjustEnd: js.UndefOr[Boolean] = js.undefined,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    dashSize: js.UndefOr[Double] = js.undefined,
-    drawAxis: /* init */ js.UndefOr[js.Any] => Unit = null,
-    drawGrid: () => Unit = null,
-    drawLabel: () => Unit = null,
-    extend: String = null,
-    fields: Array = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    grid: js.Any = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => IAxis = null,
-    label: ILabel = null,
-    length: js.UndefOr[Double] = js.undefined,
-    majorTickSteps: js.UndefOr[Double] = js.undefined,
-    minorTickSteps: js.UndefOr[Double] = js.undefined,
-    mixins: js.Any = null,
-    position: String = null,
-    requires: Array = null,
-    self: IClass = null,
-    setTitle: /* title */ js.UndefOr[String] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    title: String = null,
-    uses: Array = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): IAxis = {
+  def apply(): IAxis = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adjustEnd)) __obj.updateDynamic("adjustEnd")(adjustEnd.get.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(dashSize)) __obj.updateDynamic("dashSize")(dashSize.get.asInstanceOf[js.Any])
-    if (drawAxis != null) __obj.updateDynamic("drawAxis")(js.Any.fromFunction1(drawAxis))
-    if (drawGrid != null) __obj.updateDynamic("drawGrid")(js.Any.fromFunction0(drawGrid))
-    if (drawLabel != null) __obj.updateDynamic("drawLabel")(js.Any.fromFunction0(drawLabel))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(majorTickSteps)) __obj.updateDynamic("majorTickSteps")(majorTickSteps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minorTickSteps)) __obj.updateDynamic("minorTickSteps")(minorTickSteps.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAxis]
   }
+  @scala.inline
+  implicit class IAxisOps[Self <: IAxis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdjustEnd(value: Boolean): Self = this.set("adjustEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustEnd: Self = this.set("adjustEnd", js.undefined)
+    @scala.inline
+    def setDashSize(value: Double): Self = this.set("dashSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashSize: Self = this.set("dashSize", js.undefined)
+    @scala.inline
+    def setDrawAxis(value: /* init */ js.UndefOr[js.Any] => Unit): Self = this.set("drawAxis", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDrawAxis: Self = this.set("drawAxis", js.undefined)
+    @scala.inline
+    def setDrawGrid(value: () => Unit): Self = this.set("drawGrid", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDrawGrid: Self = this.set("drawGrid", js.undefined)
+    @scala.inline
+    def setDrawLabel(value: () => Unit): Self = this.set("drawLabel", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDrawLabel: Self = this.set("drawLabel", js.undefined)
+    @scala.inline
+    def setGrid(value: js.Any): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    @scala.inline
+    def setMajorTickSteps(value: Double): Self = this.set("majorTickSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorTickSteps: Self = this.set("majorTickSteps", js.undefined)
+    @scala.inline
+    def setMinorTickSteps(value: Double): Self = this.set("minorTickSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorTickSteps: Self = this.set("minorTickSteps", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSetTitle(value: /* title */ js.UndefOr[String] => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -81,6 +81,7 @@ class BigInteger protected () extends js.Object {
   def fromInt(x: Double): Unit = js.native
   // (protected) alternate constructor
   def fromNumber(a: Double): Unit = js.native
+  def fromNumber(a: Double, b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
   def fromNumber(a: Double, b: Double): Unit = js.native
   def fromNumber(a: Double, b: Double, c: Double): Unit = js.native
   // (protected) convert from radix string

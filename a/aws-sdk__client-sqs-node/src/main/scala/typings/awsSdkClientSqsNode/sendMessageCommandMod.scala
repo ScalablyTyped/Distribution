@@ -26,16 +26,9 @@ object sendMessageCommandMod extends js.Object {
           Readable
         ] {
     def this(input: SendMessageInput) = this()
-    /* CompleteClass */
-    override val input: SendMessageInput = js.native
     val middlewareStack: MiddlewareStack[SendMessageInput, SendMessageOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: SQSResolvedConfiguration
-    ): Handler[SendMessageInput, SendMessageOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: SQSResolvedConfiguration
     ): Handler[SendMessageInput, SendMessageOutput] = js.native
   }

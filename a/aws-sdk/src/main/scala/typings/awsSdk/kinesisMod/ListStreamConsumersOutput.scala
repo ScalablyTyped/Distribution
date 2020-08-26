@@ -18,11 +18,32 @@ trait ListStreamConsumersOutput extends js.Object {
 
 object ListStreamConsumersOutput {
   @scala.inline
-  def apply(Consumers: ConsumerList = null, NextToken: NextToken = null): ListStreamConsumersOutput = {
+  def apply(): ListStreamConsumersOutput = {
     val __obj = js.Dynamic.literal()
-    if (Consumers != null) __obj.updateDynamic("Consumers")(Consumers.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStreamConsumersOutput]
   }
+  @scala.inline
+  implicit class ListStreamConsumersOutputOps[Self <: ListStreamConsumersOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumersVarargs(value: Consumer*): Self = this.set("Consumers", js.Array(value :_*))
+    @scala.inline
+    def setConsumers(value: ConsumerList): Self = this.set("Consumers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumers: Self = this.set("Consumers", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -34,22 +34,48 @@ trait OrderableDBInstanceOption extends js.Object {
 
 object OrderableDBInstanceOption {
   @scala.inline
-  def apply(
-    AvailabilityZones: AvailabilityZoneList = null,
-    DBInstanceClass: String = null,
-    Engine: String = null,
-    EngineVersion: String = null,
-    LicenseModel: String = null,
-    Vpc: js.UndefOr[Boolean] = js.undefined
-  ): OrderableDBInstanceOption = {
+  def apply(): OrderableDBInstanceOption = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(Vpc)) __obj.updateDynamic("Vpc")(Vpc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderableDBInstanceOption]
   }
+  @scala.inline
+  implicit class OrderableDBInstanceOptionOps[Self <: OrderableDBInstanceOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: AvailabilityZoneList): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    @scala.inline
+    def setDBInstanceClass(value: String): Self = this.set("DBInstanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceClass: Self = this.set("DBInstanceClass", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setLicenseModel(value: String): Self = this.set("LicenseModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseModel: Self = this.set("LicenseModel", js.undefined)
+    @scala.inline
+    def setVpc(value: Boolean): Self = this.set("Vpc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpc: Self = this.set("Vpc", js.undefined)
+  }
+  
 }
 

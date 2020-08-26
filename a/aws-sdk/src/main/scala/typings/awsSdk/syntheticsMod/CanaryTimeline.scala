@@ -26,18 +26,38 @@ trait CanaryTimeline extends js.Object {
 
 object CanaryTimeline {
   @scala.inline
-  def apply(
-    Created: Timestamp = null,
-    LastModified: Timestamp = null,
-    LastStarted: Timestamp = null,
-    LastStopped: Timestamp = null
-  ): CanaryTimeline = {
+  def apply(): CanaryTimeline = {
     val __obj = js.Dynamic.literal()
-    if (Created != null) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (LastStarted != null) __obj.updateDynamic("LastStarted")(LastStarted.asInstanceOf[js.Any])
-    if (LastStopped != null) __obj.updateDynamic("LastStopped")(LastStopped.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanaryTimeline]
   }
+  @scala.inline
+  implicit class CanaryTimelineOps[Self <: CanaryTimeline] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreated(value: Timestamp): Self = this.set("Created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("Created", js.undefined)
+    @scala.inline
+    def setLastModified(value: Timestamp): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setLastStarted(value: Timestamp): Self = this.set("LastStarted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStarted: Self = this.set("LastStarted", js.undefined)
+    @scala.inline
+    def setLastStopped(value: Timestamp): Self = this.set("LastStopped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStopped: Self = this.set("LastStopped", js.undefined)
+  }
+  
 }
 

@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
   * Profile group properties are accessed as subproperties of the related group, as shown in the following ECMAScript (JavaScript) example:
   * @see {@link http://msdn.microsoft.com/en-us/library/bb310801(v=vs.100).aspx}
   */
+@js.native
 trait ProfileGroup extends js.Object
 

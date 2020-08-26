@@ -21,14 +21,32 @@ trait SchemaTextProperty extends js.Object {
 
 object SchemaTextProperty {
   @scala.inline
-  def apply(
-    detectedBreak: SchemaDetectedBreak = null,
-    detectedLanguages: js.Array[SchemaDetectedLanguage] = null
-  ): SchemaTextProperty = {
+  def apply(): SchemaTextProperty = {
     val __obj = js.Dynamic.literal()
-    if (detectedBreak != null) __obj.updateDynamic("detectedBreak")(detectedBreak.asInstanceOf[js.Any])
-    if (detectedLanguages != null) __obj.updateDynamic("detectedLanguages")(detectedLanguages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTextProperty]
   }
+  @scala.inline
+  implicit class SchemaTextPropertyOps[Self <: SchemaTextProperty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetectedBreak(value: SchemaDetectedBreak): Self = this.set("detectedBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedBreak: Self = this.set("detectedBreak", js.undefined)
+    @scala.inline
+    def setDetectedLanguagesVarargs(value: SchemaDetectedLanguage*): Self = this.set("detectedLanguages", js.Array(value :_*))
+    @scala.inline
+    def setDetectedLanguages(value: js.Array[SchemaDetectedLanguage]): Self = this.set("detectedLanguages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedLanguages: Self = this.set("detectedLanguages", js.undefined)
+  }
+  
 }
 

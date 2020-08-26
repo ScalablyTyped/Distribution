@@ -3,13 +3,15 @@ package typings.ts3NodejsLibrary.anon
 import org.scalablytyped.runtime.Instantiable0
 import typings.ts3NodejsLibrary.commandMod.Command
 import typings.ts3NodejsLibrary.commandMod.Command.Parsers
+import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Instantiable extends Instantiable0[Command] {
-  val Identifier: RecordkeyofQueryResponseT = js.native
+  val Identifier: Apikey = js.native
+  var SNAKE_CASE_IDENTIFIER: String = js.native
   /**
     * Checks if a error has been received
     * @return The parsed String which is readable by the TeamSpeak Query
@@ -31,6 +33,7 @@ trait Instantiable extends Instantiable0[Command] {
     */
   def escapeKeyValue(key: String, value: String): String = js.native
   def escapeKeyValue(key: String, value: js.Array[String]): String = js.native
+  def escapeKeyValue(key: String, value: Boolean): String = js.native
   /**
     * retrieves the key value pair from a string
     * @param str the key value pair to unescape eg foo=bar
@@ -44,7 +47,12 @@ trait Instantiable extends Instantiable0[Command] {
     * parses a query response
     * @param data the query response received
     */
-  def parse(hasRaw: PickParserArgumentraw): js.Array[PartialPartialQueryRespon] = js.native
+  def parse(hasRaw: PickParserArgumentraw): Response = js.native
+  /**
+    * parses a number
+    * @param value string to parse
+    */
+  def parseBoolean(value: String): Boolean = js.native
   /**
     * parses a number
     * @param value string to parse
@@ -55,12 +63,12 @@ trait Instantiable extends Instantiable0[Command] {
     * @param value string to parse
     */
   def parseNumberArray(value: String): js.Array[Double] = js.native
-  def parseRecursive(value: String): js.Array[PartialPartialQueryRespon] = js.native
+  def parseRecursive(value: String): Response = js.native
   /**
     *
     * @param param0 the custom snapshot response parser
     */
-  def parseSnapshotCreate(hasRaw: PickParserArgumentraw): js.Array[PartialPartialQueryRespon] = js.native
+  def parseSnapshotCreate(hasRaw: PickParserArgumentraw): Response = js.native
   /**
     * parses a string value
     * @param value string to parse
@@ -78,6 +86,10 @@ trait Instantiable extends Instantiable0[Command] {
     */
   def parseValue(k: String): js.Any = js.native
   def parseValue(k: String, v: String): js.Any = js.native
+  /** converts a string to camel case */
+  def toCamelCase(str: String): String = js.native
+  /** converts a string to snake case */
+  def toSnakeCase(str: String): String = js.native
   /** unescapes a string */
   def unescape(str: String): String = js.native
 }

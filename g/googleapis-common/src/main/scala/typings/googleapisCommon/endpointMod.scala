@@ -2,7 +2,6 @@ package typings.googleapisCommon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleapisCommon.apiMod.APIRequestContext
-import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.schemaMod.Schema
 import typings.googleapisCommon.schemaMod.SchemaResource
 import scala.scalajs.js
@@ -18,8 +17,6 @@ object endpointMod extends js.Object {
     extends Target
        with APIRequestContext {
     def this(options: js.Object) = this()
-    /* CompleteClass */
-    override var _options: GlobalOptions = js.native
     /**
       * Given a schema, add methods to a target.
       *

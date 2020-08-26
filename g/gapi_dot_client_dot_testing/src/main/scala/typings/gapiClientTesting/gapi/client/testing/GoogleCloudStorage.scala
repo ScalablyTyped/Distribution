@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleCloudStorage extends js.Object {
   /**
     * The path to a directory in GCS that will
@@ -12,15 +13,31 @@ trait GoogleCloudStorage extends js.Object {
     * path.
     * Required
     */
-  var gcsPath: js.UndefOr[String] = js.undefined
+  var gcsPath: js.UndefOr[String] = js.native
 }
 
 object GoogleCloudStorage {
   @scala.inline
-  def apply(gcsPath: String = null): GoogleCloudStorage = {
+  def apply(): GoogleCloudStorage = {
     val __obj = js.Dynamic.literal()
-    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudStorage]
   }
+  @scala.inline
+  implicit class GoogleCloudStorageOps[Self <: GoogleCloudStorage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGcsPath(value: String): Self = this.set("gcsPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsPath: Self = this.set("gcsPath", js.undefined)
+  }
+  
 }
 

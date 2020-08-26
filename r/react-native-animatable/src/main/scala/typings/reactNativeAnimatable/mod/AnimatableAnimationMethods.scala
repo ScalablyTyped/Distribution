@@ -5,202 +5,339 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{[ k in react-native-animatable.react-native-animatable.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>}> */
+/* Inlined std.Partial<{[ k in react-native-animatable.react-native-animatable.Animation ]: (duration : number | undefined): std.Promise<{  finished :boolean}>}> */
+@js.native
 trait AnimatableAnimationMethods extends js.Object {
-  var bounce: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var bounceOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeInDownBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeInLeftBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeInRightBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeInUpBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeOutDownBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeOutLeftBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeOutRightBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var fadeOutUpBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var flash: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var flipInX: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var flipInY: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var flipOutX: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var flipOutY: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var jello: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var lightSpeedIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var lightSpeedOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var pulse: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var rotate: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var rubberBand: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var shake: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var slideInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var slideInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var slideInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var slideInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var slideOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var slideOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var slideOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var slideOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var swing: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var tada: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var wobble: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
-  var zoomOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
+  var bounce: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var bounceOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeInDownBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeInLeftBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeInRightBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeInUpBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeOutDownBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeOutLeftBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeOutRightBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var fadeOutUpBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var flash: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var flipInX: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var flipInY: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var flipOutX: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var flipOutY: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var jello: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var lightSpeedIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var lightSpeedOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var pulse: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var rotate: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var rubberBand: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var shake: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var slideInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var slideInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var slideInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var slideInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var slideOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var slideOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var slideOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var slideOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var swing: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var tada: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var wobble: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+  var zoomOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
 }
 
 object AnimatableAnimationMethods {
   @scala.inline
-  def apply(
-    bounce: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceIn: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceInDown: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceInLeft: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceInRight: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceInUp: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceOut: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceOutDown: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceOutLeft: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceOutRight: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    bounceOutUp: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeIn: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeInDown: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeInDownBig: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeInLeft: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeInLeftBig: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeInRight: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeInRightBig: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeInUp: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeInUpBig: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeOut: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeOutDown: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeOutDownBig: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeOutLeft: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeOutLeftBig: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeOutRight: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeOutRightBig: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeOutUp: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    fadeOutUpBig: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    flash: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    flipInX: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    flipInY: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    flipOutX: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    flipOutY: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    jello: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    lightSpeedIn: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    lightSpeedOut: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    pulse: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    rotate: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    rubberBand: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    shake: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    slideInDown: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    slideInLeft: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    slideInRight: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    slideInUp: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    slideOutDown: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    slideOutLeft: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    slideOutRight: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    slideOutUp: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    swing: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    tada: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    wobble: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomIn: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomInDown: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomInLeft: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomInRight: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomInUp: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomOut: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomOutDown: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomOutLeft: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomOutRight: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null,
-    zoomOutUp: /* duration */ js.UndefOr[Double] => js.Promise[Finished] = null
-  ): AnimatableAnimationMethods = {
+  def apply(): AnimatableAnimationMethods = {
     val __obj = js.Dynamic.literal()
-    if (bounce != null) __obj.updateDynamic("bounce")(js.Any.fromFunction1(bounce))
-    if (bounceIn != null) __obj.updateDynamic("bounceIn")(js.Any.fromFunction1(bounceIn))
-    if (bounceInDown != null) __obj.updateDynamic("bounceInDown")(js.Any.fromFunction1(bounceInDown))
-    if (bounceInLeft != null) __obj.updateDynamic("bounceInLeft")(js.Any.fromFunction1(bounceInLeft))
-    if (bounceInRight != null) __obj.updateDynamic("bounceInRight")(js.Any.fromFunction1(bounceInRight))
-    if (bounceInUp != null) __obj.updateDynamic("bounceInUp")(js.Any.fromFunction1(bounceInUp))
-    if (bounceOut != null) __obj.updateDynamic("bounceOut")(js.Any.fromFunction1(bounceOut))
-    if (bounceOutDown != null) __obj.updateDynamic("bounceOutDown")(js.Any.fromFunction1(bounceOutDown))
-    if (bounceOutLeft != null) __obj.updateDynamic("bounceOutLeft")(js.Any.fromFunction1(bounceOutLeft))
-    if (bounceOutRight != null) __obj.updateDynamic("bounceOutRight")(js.Any.fromFunction1(bounceOutRight))
-    if (bounceOutUp != null) __obj.updateDynamic("bounceOutUp")(js.Any.fromFunction1(bounceOutUp))
-    if (fadeIn != null) __obj.updateDynamic("fadeIn")(js.Any.fromFunction1(fadeIn))
-    if (fadeInDown != null) __obj.updateDynamic("fadeInDown")(js.Any.fromFunction1(fadeInDown))
-    if (fadeInDownBig != null) __obj.updateDynamic("fadeInDownBig")(js.Any.fromFunction1(fadeInDownBig))
-    if (fadeInLeft != null) __obj.updateDynamic("fadeInLeft")(js.Any.fromFunction1(fadeInLeft))
-    if (fadeInLeftBig != null) __obj.updateDynamic("fadeInLeftBig")(js.Any.fromFunction1(fadeInLeftBig))
-    if (fadeInRight != null) __obj.updateDynamic("fadeInRight")(js.Any.fromFunction1(fadeInRight))
-    if (fadeInRightBig != null) __obj.updateDynamic("fadeInRightBig")(js.Any.fromFunction1(fadeInRightBig))
-    if (fadeInUp != null) __obj.updateDynamic("fadeInUp")(js.Any.fromFunction1(fadeInUp))
-    if (fadeInUpBig != null) __obj.updateDynamic("fadeInUpBig")(js.Any.fromFunction1(fadeInUpBig))
-    if (fadeOut != null) __obj.updateDynamic("fadeOut")(js.Any.fromFunction1(fadeOut))
-    if (fadeOutDown != null) __obj.updateDynamic("fadeOutDown")(js.Any.fromFunction1(fadeOutDown))
-    if (fadeOutDownBig != null) __obj.updateDynamic("fadeOutDownBig")(js.Any.fromFunction1(fadeOutDownBig))
-    if (fadeOutLeft != null) __obj.updateDynamic("fadeOutLeft")(js.Any.fromFunction1(fadeOutLeft))
-    if (fadeOutLeftBig != null) __obj.updateDynamic("fadeOutLeftBig")(js.Any.fromFunction1(fadeOutLeftBig))
-    if (fadeOutRight != null) __obj.updateDynamic("fadeOutRight")(js.Any.fromFunction1(fadeOutRight))
-    if (fadeOutRightBig != null) __obj.updateDynamic("fadeOutRightBig")(js.Any.fromFunction1(fadeOutRightBig))
-    if (fadeOutUp != null) __obj.updateDynamic("fadeOutUp")(js.Any.fromFunction1(fadeOutUp))
-    if (fadeOutUpBig != null) __obj.updateDynamic("fadeOutUpBig")(js.Any.fromFunction1(fadeOutUpBig))
-    if (flash != null) __obj.updateDynamic("flash")(js.Any.fromFunction1(flash))
-    if (flipInX != null) __obj.updateDynamic("flipInX")(js.Any.fromFunction1(flipInX))
-    if (flipInY != null) __obj.updateDynamic("flipInY")(js.Any.fromFunction1(flipInY))
-    if (flipOutX != null) __obj.updateDynamic("flipOutX")(js.Any.fromFunction1(flipOutX))
-    if (flipOutY != null) __obj.updateDynamic("flipOutY")(js.Any.fromFunction1(flipOutY))
-    if (jello != null) __obj.updateDynamic("jello")(js.Any.fromFunction1(jello))
-    if (lightSpeedIn != null) __obj.updateDynamic("lightSpeedIn")(js.Any.fromFunction1(lightSpeedIn))
-    if (lightSpeedOut != null) __obj.updateDynamic("lightSpeedOut")(js.Any.fromFunction1(lightSpeedOut))
-    if (pulse != null) __obj.updateDynamic("pulse")(js.Any.fromFunction1(pulse))
-    if (rotate != null) __obj.updateDynamic("rotate")(js.Any.fromFunction1(rotate))
-    if (rubberBand != null) __obj.updateDynamic("rubberBand")(js.Any.fromFunction1(rubberBand))
-    if (shake != null) __obj.updateDynamic("shake")(js.Any.fromFunction1(shake))
-    if (slideInDown != null) __obj.updateDynamic("slideInDown")(js.Any.fromFunction1(slideInDown))
-    if (slideInLeft != null) __obj.updateDynamic("slideInLeft")(js.Any.fromFunction1(slideInLeft))
-    if (slideInRight != null) __obj.updateDynamic("slideInRight")(js.Any.fromFunction1(slideInRight))
-    if (slideInUp != null) __obj.updateDynamic("slideInUp")(js.Any.fromFunction1(slideInUp))
-    if (slideOutDown != null) __obj.updateDynamic("slideOutDown")(js.Any.fromFunction1(slideOutDown))
-    if (slideOutLeft != null) __obj.updateDynamic("slideOutLeft")(js.Any.fromFunction1(slideOutLeft))
-    if (slideOutRight != null) __obj.updateDynamic("slideOutRight")(js.Any.fromFunction1(slideOutRight))
-    if (slideOutUp != null) __obj.updateDynamic("slideOutUp")(js.Any.fromFunction1(slideOutUp))
-    if (swing != null) __obj.updateDynamic("swing")(js.Any.fromFunction1(swing))
-    if (tada != null) __obj.updateDynamic("tada")(js.Any.fromFunction1(tada))
-    if (wobble != null) __obj.updateDynamic("wobble")(js.Any.fromFunction1(wobble))
-    if (zoomIn != null) __obj.updateDynamic("zoomIn")(js.Any.fromFunction1(zoomIn))
-    if (zoomInDown != null) __obj.updateDynamic("zoomInDown")(js.Any.fromFunction1(zoomInDown))
-    if (zoomInLeft != null) __obj.updateDynamic("zoomInLeft")(js.Any.fromFunction1(zoomInLeft))
-    if (zoomInRight != null) __obj.updateDynamic("zoomInRight")(js.Any.fromFunction1(zoomInRight))
-    if (zoomInUp != null) __obj.updateDynamic("zoomInUp")(js.Any.fromFunction1(zoomInUp))
-    if (zoomOut != null) __obj.updateDynamic("zoomOut")(js.Any.fromFunction1(zoomOut))
-    if (zoomOutDown != null) __obj.updateDynamic("zoomOutDown")(js.Any.fromFunction1(zoomOutDown))
-    if (zoomOutLeft != null) __obj.updateDynamic("zoomOutLeft")(js.Any.fromFunction1(zoomOutLeft))
-    if (zoomOutRight != null) __obj.updateDynamic("zoomOutRight")(js.Any.fromFunction1(zoomOutRight))
-    if (zoomOutUp != null) __obj.updateDynamic("zoomOutUp")(js.Any.fromFunction1(zoomOutUp))
     __obj.asInstanceOf[AnimatableAnimationMethods]
   }
+  @scala.inline
+  implicit class AnimatableAnimationMethodsOps[Self <: AnimatableAnimationMethods] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBounce(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounce", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounce: Self = this.set("bounce", js.undefined)
+    @scala.inline
+    def setBounceIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceIn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceIn: Self = this.set("bounceIn", js.undefined)
+    @scala.inline
+    def setBounceInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceInDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceInDown: Self = this.set("bounceInDown", js.undefined)
+    @scala.inline
+    def setBounceInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceInLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceInLeft: Self = this.set("bounceInLeft", js.undefined)
+    @scala.inline
+    def setBounceInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceInRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceInRight: Self = this.set("bounceInRight", js.undefined)
+    @scala.inline
+    def setBounceInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceInUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceInUp: Self = this.set("bounceInUp", js.undefined)
+    @scala.inline
+    def setBounceOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceOut: Self = this.set("bounceOut", js.undefined)
+    @scala.inline
+    def setBounceOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceOutDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceOutDown: Self = this.set("bounceOutDown", js.undefined)
+    @scala.inline
+    def setBounceOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceOutLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceOutLeft: Self = this.set("bounceOutLeft", js.undefined)
+    @scala.inline
+    def setBounceOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceOutRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceOutRight: Self = this.set("bounceOutRight", js.undefined)
+    @scala.inline
+    def setBounceOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("bounceOutUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBounceOutUp: Self = this.set("bounceOutUp", js.undefined)
+    @scala.inline
+    def setFadeIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeIn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeIn: Self = this.set("fadeIn", js.undefined)
+    @scala.inline
+    def setFadeInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeInDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeInDown: Self = this.set("fadeInDown", js.undefined)
+    @scala.inline
+    def setFadeInDownBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeInDownBig", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeInDownBig: Self = this.set("fadeInDownBig", js.undefined)
+    @scala.inline
+    def setFadeInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeInLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeInLeft: Self = this.set("fadeInLeft", js.undefined)
+    @scala.inline
+    def setFadeInLeftBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeInLeftBig", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeInLeftBig: Self = this.set("fadeInLeftBig", js.undefined)
+    @scala.inline
+    def setFadeInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeInRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeInRight: Self = this.set("fadeInRight", js.undefined)
+    @scala.inline
+    def setFadeInRightBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeInRightBig", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeInRightBig: Self = this.set("fadeInRightBig", js.undefined)
+    @scala.inline
+    def setFadeInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeInUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeInUp: Self = this.set("fadeInUp", js.undefined)
+    @scala.inline
+    def setFadeInUpBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeInUpBig", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeInUpBig: Self = this.set("fadeInUpBig", js.undefined)
+    @scala.inline
+    def setFadeOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeOut: Self = this.set("fadeOut", js.undefined)
+    @scala.inline
+    def setFadeOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeOutDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeOutDown: Self = this.set("fadeOutDown", js.undefined)
+    @scala.inline
+    def setFadeOutDownBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeOutDownBig", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeOutDownBig: Self = this.set("fadeOutDownBig", js.undefined)
+    @scala.inline
+    def setFadeOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeOutLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeOutLeft: Self = this.set("fadeOutLeft", js.undefined)
+    @scala.inline
+    def setFadeOutLeftBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeOutLeftBig", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeOutLeftBig: Self = this.set("fadeOutLeftBig", js.undefined)
+    @scala.inline
+    def setFadeOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeOutRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeOutRight: Self = this.set("fadeOutRight", js.undefined)
+    @scala.inline
+    def setFadeOutRightBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeOutRightBig", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeOutRightBig: Self = this.set("fadeOutRightBig", js.undefined)
+    @scala.inline
+    def setFadeOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeOutUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeOutUp: Self = this.set("fadeOutUp", js.undefined)
+    @scala.inline
+    def setFadeOutUpBig(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("fadeOutUpBig", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFadeOutUpBig: Self = this.set("fadeOutUpBig", js.undefined)
+    @scala.inline
+    def setFlash(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("flash", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFlash: Self = this.set("flash", js.undefined)
+    @scala.inline
+    def setFlipInX(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("flipInX", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFlipInX: Self = this.set("flipInX", js.undefined)
+    @scala.inline
+    def setFlipInY(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("flipInY", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFlipInY: Self = this.set("flipInY", js.undefined)
+    @scala.inline
+    def setFlipOutX(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("flipOutX", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFlipOutX: Self = this.set("flipOutX", js.undefined)
+    @scala.inline
+    def setFlipOutY(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("flipOutY", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFlipOutY: Self = this.set("flipOutY", js.undefined)
+    @scala.inline
+    def setJello(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("jello", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteJello: Self = this.set("jello", js.undefined)
+    @scala.inline
+    def setLightSpeedIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("lightSpeedIn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLightSpeedIn: Self = this.set("lightSpeedIn", js.undefined)
+    @scala.inline
+    def setLightSpeedOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("lightSpeedOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLightSpeedOut: Self = this.set("lightSpeedOut", js.undefined)
+    @scala.inline
+    def setPulse(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("pulse", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePulse: Self = this.set("pulse", js.undefined)
+    @scala.inline
+    def setRotate(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("rotate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRotate: Self = this.set("rotate", js.undefined)
+    @scala.inline
+    def setRubberBand(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("rubberBand", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRubberBand: Self = this.set("rubberBand", js.undefined)
+    @scala.inline
+    def setShake(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("shake", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShake: Self = this.set("shake", js.undefined)
+    @scala.inline
+    def setSlideInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("slideInDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlideInDown: Self = this.set("slideInDown", js.undefined)
+    @scala.inline
+    def setSlideInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("slideInLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlideInLeft: Self = this.set("slideInLeft", js.undefined)
+    @scala.inline
+    def setSlideInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("slideInRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlideInRight: Self = this.set("slideInRight", js.undefined)
+    @scala.inline
+    def setSlideInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("slideInUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlideInUp: Self = this.set("slideInUp", js.undefined)
+    @scala.inline
+    def setSlideOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("slideOutDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlideOutDown: Self = this.set("slideOutDown", js.undefined)
+    @scala.inline
+    def setSlideOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("slideOutLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlideOutLeft: Self = this.set("slideOutLeft", js.undefined)
+    @scala.inline
+    def setSlideOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("slideOutRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlideOutRight: Self = this.set("slideOutRight", js.undefined)
+    @scala.inline
+    def setSlideOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("slideOutUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlideOutUp: Self = this.set("slideOutUp", js.undefined)
+    @scala.inline
+    def setSwing(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("swing", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSwing: Self = this.set("swing", js.undefined)
+    @scala.inline
+    def setTada(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("tada", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTada: Self = this.set("tada", js.undefined)
+    @scala.inline
+    def setWobble(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("wobble", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteWobble: Self = this.set("wobble", js.undefined)
+    @scala.inline
+    def setZoomIn(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomIn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomIn: Self = this.set("zoomIn", js.undefined)
+    @scala.inline
+    def setZoomInDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomInDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomInDown: Self = this.set("zoomInDown", js.undefined)
+    @scala.inline
+    def setZoomInLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomInLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomInLeft: Self = this.set("zoomInLeft", js.undefined)
+    @scala.inline
+    def setZoomInRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomInRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomInRight: Self = this.set("zoomInRight", js.undefined)
+    @scala.inline
+    def setZoomInUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomInUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomInUp: Self = this.set("zoomInUp", js.undefined)
+    @scala.inline
+    def setZoomOut(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomOut: Self = this.set("zoomOut", js.undefined)
+    @scala.inline
+    def setZoomOutDown(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomOutDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomOutDown: Self = this.set("zoomOutDown", js.undefined)
+    @scala.inline
+    def setZoomOutLeft(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomOutLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomOutLeft: Self = this.set("zoomOutLeft", js.undefined)
+    @scala.inline
+    def setZoomOutRight(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomOutRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomOutRight: Self = this.set("zoomOutRight", js.undefined)
+    @scala.inline
+    def setZoomOutUp(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = this.set("zoomOutUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomOutUp: Self = this.set("zoomOutUp", js.undefined)
+  }
+  
 }
 

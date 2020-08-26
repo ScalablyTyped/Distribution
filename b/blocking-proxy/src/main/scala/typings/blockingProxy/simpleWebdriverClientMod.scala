@@ -11,7 +11,6 @@ object simpleWebdriverClientMod extends js.Object {
   class SimpleWebDriverClient protected () extends js.Object {
     def this(seleniumAddress: String) = this()
     var seleniumAddress: String = js.native
-    /* private */ def createSeleniumRequest(method: js.Any, messageUrl: js.Any): js.Any = js.native
     /* private */ def createSeleniumRequest(method: js.Any, messageUrl: js.Any, data: js.Any): js.Any = js.native
     /**
       * Send an execute script command.

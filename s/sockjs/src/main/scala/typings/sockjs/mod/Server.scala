@@ -1,6 +1,6 @@
 package typings.sockjs.mod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.sockjs.sockjsStrings.connection
 import scala.scalajs.js
 import scala.scalajs.js.`|`

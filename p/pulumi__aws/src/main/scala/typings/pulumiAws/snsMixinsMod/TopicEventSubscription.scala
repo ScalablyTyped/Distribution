@@ -17,6 +17,13 @@ class TopicEventSubscription protected () extends EventSubscription {
     name: String,
     topic: Topic,
     handler: TopicEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ) = this()
+  def this(
+    name: String,
+    topic: Topic,
+    handler: TopicEventHandler,
     args: TopicEventSubscriptionArgs,
     opts: ComponentResourceOptions
   ) = this()

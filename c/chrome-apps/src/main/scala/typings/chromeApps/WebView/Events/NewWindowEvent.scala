@@ -2,7 +2,7 @@ package typings.chromeApps.WebView.Events
 
 import typings.chromeApps.WebView.NewWindow
 import typings.chromeApps.chrome.integer
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   * });
   */
 @js.native
-trait NewWindowEvent extends Event_ {
+trait NewWindowEvent extends Event {
   /** The initial height requested for the new window. */
   var initialHeight: integer = js.native
   /** The initial width requested for the new window. */

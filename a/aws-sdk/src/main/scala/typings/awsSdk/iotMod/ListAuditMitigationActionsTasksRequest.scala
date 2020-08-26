@@ -38,22 +38,46 @@ trait ListAuditMitigationActionsTasksRequest extends js.Object {
 
 object ListAuditMitigationActionsTasksRequest {
   @scala.inline
-  def apply(
-    endTime: Timestamp,
-    startTime: Timestamp,
-    auditTaskId: AuditTaskId = null,
-    findingId: FindingId = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    taskStatus: AuditMitigationActionsTaskStatus = null
-  ): ListAuditMitigationActionsTasksRequest = {
+  def apply(endTime: Timestamp, startTime: Timestamp): ListAuditMitigationActionsTasksRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (auditTaskId != null) __obj.updateDynamic("auditTaskId")(auditTaskId.asInstanceOf[js.Any])
-    if (findingId != null) __obj.updateDynamic("findingId")(findingId.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (taskStatus != null) __obj.updateDynamic("taskStatus")(taskStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuditMitigationActionsTasksRequest]
   }
+  @scala.inline
+  implicit class ListAuditMitigationActionsTasksRequestOps[Self <: ListAuditMitigationActionsTasksRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuditTaskId(value: AuditTaskId): Self = this.set("auditTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditTaskId: Self = this.set("auditTaskId", js.undefined)
+    @scala.inline
+    def setFindingId(value: FindingId): Self = this.set("findingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingId: Self = this.set("findingId", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setTaskStatus(value: AuditMitigationActionsTaskStatus): Self = this.set("taskStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStatus: Self = this.set("taskStatus", js.undefined)
+  }
+  
 }
 

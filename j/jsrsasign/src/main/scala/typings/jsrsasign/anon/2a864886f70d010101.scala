@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait `2a864886f70d010101` extends js.Object {
-  var `2a864886f70d010101`: String
-  var `2a8648ce380401`: String
-  var `2a8648ce380403`: String
-  var `2a8648ce3d0201`: String
-  var `2a8648ce3d030107`: String
-  var `2b8104000a`: String
-  var `2b8104001f`: String
-  var `2b81040021`: String
-  var `2b81040022`: String
-  var `2b81040023`: String
-  var `608648016503040301`: String
-  var `608648016503040302`: String
+  var `2a864886f70d010101`: String = js.native
+  var `2a8648ce380401`: String = js.native
+  var `2a8648ce380403`: String = js.native
+  var `2a8648ce3d0201`: String = js.native
+  var `2a8648ce3d030107`: String = js.native
+  var `2b8104000a`: String = js.native
+  var `2b8104001f`: String = js.native
+  var `2b81040021`: String = js.native
+  var `2b81040022`: String = js.native
+  var `2b81040023`: String = js.native
+  var `608648016503040301`: String = js.native
+  var `608648016503040302`: String = js.native
 }
 
 object `2a864886f70d010101` {
@@ -50,5 +51,42 @@ object `2a864886f70d010101` {
     __obj.updateDynamic("608648016503040302")(`608648016503040302`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2a864886f70d010101`]
   }
+  @scala.inline
+  implicit class `2a864886f70d010101Ops`[Self <: `2a864886f70d010101`] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set2a864886f70d010101(value: String): Self = this.set("2a864886f70d010101", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2a8648ce380401(value: String): Self = this.set("2a8648ce380401", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2a8648ce380403(value: String): Self = this.set("2a8648ce380403", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2a8648ce3d0201(value: String): Self = this.set("2a8648ce3d0201", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2a8648ce3d030107(value: String): Self = this.set("2a8648ce3d030107", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2b8104000a(value: String): Self = this.set("2b8104000a", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2b8104001f(value: String): Self = this.set("2b8104001f", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2b81040021(value: String): Self = this.set("2b81040021", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2b81040022(value: String): Self = this.set("2b81040022", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2b81040023(value: String): Self = this.set("2b81040023", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set608648016503040301(value: String): Self = this.set("608648016503040301", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set608648016503040302(value: String): Self = this.set("608648016503040302", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -2,7 +2,6 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.backwards
 import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.forwards
-import typings.std.Exclude
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,23 +17,16 @@ object SuspenseListProps {
   @scala.inline
   def DirectionalSuspenseListProps(
     children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]]),
-    revealOrder: forwards | backwards,
-    tail: typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListTailMode = null
+    revealOrder: forwards | backwards
   ): SuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
-    if (tail != null) __obj.updateDynamic("tail")(tail.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspenseListProps]
   }
   @scala.inline
   def NonDirectionalSuspenseListProps(
-    children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]]),
-    revealOrder: Exclude[
-      typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListRevealOrder, 
-      forwards | backwards
-    ] = null
+    children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]])
   ): SuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (revealOrder != null) __obj.updateDynamic("revealOrder")(revealOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspenseListProps]
   }
 }

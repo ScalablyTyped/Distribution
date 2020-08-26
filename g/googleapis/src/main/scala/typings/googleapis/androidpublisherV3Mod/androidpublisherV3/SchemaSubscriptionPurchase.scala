@@ -143,54 +143,110 @@ trait SchemaSubscriptionPurchase extends js.Object {
 
 object SchemaSubscriptionPurchase {
   @scala.inline
-  def apply(
-    autoRenewing: js.UndefOr[Boolean] = js.undefined,
-    autoResumeTimeMillis: String = null,
-    cancelReason: js.UndefOr[Double] = js.undefined,
-    cancelSurveyResult: SchemaSubscriptionCancelSurveyResult = null,
-    countryCode: String = null,
-    developerPayload: String = null,
-    emailAddress: String = null,
-    expiryTimeMillis: String = null,
-    familyName: String = null,
-    givenName: String = null,
-    kind: String = null,
-    linkedPurchaseToken: String = null,
-    orderId: String = null,
-    paymentState: js.UndefOr[Double] = js.undefined,
-    priceAmountMicros: String = null,
-    priceChange: SchemaSubscriptionPriceChange = null,
-    priceCurrencyCode: String = null,
-    profileId: String = null,
-    profileName: String = null,
-    purchaseType: js.UndefOr[Double] = js.undefined,
-    startTimeMillis: String = null,
-    userCancellationTimeMillis: String = null
-  ): SchemaSubscriptionPurchase = {
+  def apply(): SchemaSubscriptionPurchase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRenewing)) __obj.updateDynamic("autoRenewing")(autoRenewing.get.asInstanceOf[js.Any])
-    if (autoResumeTimeMillis != null) __obj.updateDynamic("autoResumeTimeMillis")(autoResumeTimeMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelReason)) __obj.updateDynamic("cancelReason")(cancelReason.get.asInstanceOf[js.Any])
-    if (cancelSurveyResult != null) __obj.updateDynamic("cancelSurveyResult")(cancelSurveyResult.asInstanceOf[js.Any])
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload.asInstanceOf[js.Any])
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (expiryTimeMillis != null) __obj.updateDynamic("expiryTimeMillis")(expiryTimeMillis.asInstanceOf[js.Any])
-    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
-    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (linkedPurchaseToken != null) __obj.updateDynamic("linkedPurchaseToken")(linkedPurchaseToken.asInstanceOf[js.Any])
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
-    if (!js.isUndefined(paymentState)) __obj.updateDynamic("paymentState")(paymentState.get.asInstanceOf[js.Any])
-    if (priceAmountMicros != null) __obj.updateDynamic("priceAmountMicros")(priceAmountMicros.asInstanceOf[js.Any])
-    if (priceChange != null) __obj.updateDynamic("priceChange")(priceChange.asInstanceOf[js.Any])
-    if (priceCurrencyCode != null) __obj.updateDynamic("priceCurrencyCode")(priceCurrencyCode.asInstanceOf[js.Any])
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
-    if (profileName != null) __obj.updateDynamic("profileName")(profileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(purchaseType)) __obj.updateDynamic("purchaseType")(purchaseType.get.asInstanceOf[js.Any])
-    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis.asInstanceOf[js.Any])
-    if (userCancellationTimeMillis != null) __obj.updateDynamic("userCancellationTimeMillis")(userCancellationTimeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscriptionPurchase]
   }
+  @scala.inline
+  implicit class SchemaSubscriptionPurchaseOps[Self <: SchemaSubscriptionPurchase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRenewing(value: Boolean): Self = this.set("autoRenewing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRenewing: Self = this.set("autoRenewing", js.undefined)
+    @scala.inline
+    def setAutoResumeTimeMillis(value: String): Self = this.set("autoResumeTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoResumeTimeMillis: Self = this.set("autoResumeTimeMillis", js.undefined)
+    @scala.inline
+    def setCancelReason(value: Double): Self = this.set("cancelReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelReason: Self = this.set("cancelReason", js.undefined)
+    @scala.inline
+    def setCancelSurveyResult(value: SchemaSubscriptionCancelSurveyResult): Self = this.set("cancelSurveyResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelSurveyResult: Self = this.set("cancelSurveyResult", js.undefined)
+    @scala.inline
+    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    @scala.inline
+    def setDeveloperPayload(value: String): Self = this.set("developerPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeveloperPayload: Self = this.set("developerPayload", js.undefined)
+    @scala.inline
+    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    @scala.inline
+    def setExpiryTimeMillis(value: String): Self = this.set("expiryTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiryTimeMillis: Self = this.set("expiryTimeMillis", js.undefined)
+    @scala.inline
+    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamilyName: Self = this.set("familyName", js.undefined)
+    @scala.inline
+    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLinkedPurchaseToken(value: String): Self = this.set("linkedPurchaseToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedPurchaseToken: Self = this.set("linkedPurchaseToken", js.undefined)
+    @scala.inline
+    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    @scala.inline
+    def setPaymentState(value: Double): Self = this.set("paymentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentState: Self = this.set("paymentState", js.undefined)
+    @scala.inline
+    def setPriceAmountMicros(value: String): Self = this.set("priceAmountMicros", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriceAmountMicros: Self = this.set("priceAmountMicros", js.undefined)
+    @scala.inline
+    def setPriceChange(value: SchemaSubscriptionPriceChange): Self = this.set("priceChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriceChange: Self = this.set("priceChange", js.undefined)
+    @scala.inline
+    def setPriceCurrencyCode(value: String): Self = this.set("priceCurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriceCurrencyCode: Self = this.set("priceCurrencyCode", js.undefined)
+    @scala.inline
+    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    @scala.inline
+    def setProfileName(value: String): Self = this.set("profileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileName: Self = this.set("profileName", js.undefined)
+    @scala.inline
+    def setPurchaseType(value: Double): Self = this.set("purchaseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurchaseType: Self = this.set("purchaseType", js.undefined)
+    @scala.inline
+    def setStartTimeMillis(value: String): Self = this.set("startTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimeMillis: Self = this.set("startTimeMillis", js.undefined)
+    @scala.inline
+    def setUserCancellationTimeMillis(value: String): Self = this.set("userCancellationTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserCancellationTimeMillis: Self = this.set("userCancellationTimeMillis", js.undefined)
+  }
+  
 }
 

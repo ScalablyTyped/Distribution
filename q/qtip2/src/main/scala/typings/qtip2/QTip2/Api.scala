@@ -176,6 +176,7 @@ trait Api extends js.Object {
   def hide(): Api = js.native
   def hide(event: Event): Api = js.native
   def reposition(): Api = js.native
+  def reposition(event: js.UndefOr[scala.Nothing], effect: Boolean): Api = js.native
   def reposition(event: Event): Api = js.native
   def reposition(event: Event, effect: Boolean): Api = js.native
   def set(properties: QTipOptions): Api = js.native
@@ -348,6 +349,7 @@ trait Api extends js.Object {
   def show(): Api = js.native
   def show(event: Event): Api = js.native
   def toggle(): Api = js.native
+  def toggle(state: js.UndefOr[scala.Nothing], event: Event): Api = js.native
   def toggle(state: Boolean): Api = js.native
   def toggle(state: Boolean, event: Event): Api = js.native
 }

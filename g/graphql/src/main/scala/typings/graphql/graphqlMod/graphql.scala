@@ -14,26 +14,16 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/graphql", "graphql")
 @js.native
 object graphql extends js.Object {
-  def apply[TData](args: GraphQLArgs): js.Promise[ExecutionResult[TData]] = js.native
-  def apply[TData](
+  def apply(args: GraphQLArgs): js.Promise[ExecutionResult[StringDictionary[_], StringDictionary[_]]] = js.native
+  def apply(
     schema: GraphQLSchema,
-    source: String,
+    source: Source | String,
     rootValue: js.UndefOr[js.Any],
     contextValue: js.UndefOr[js.Any],
     variableValues: js.UndefOr[Maybe[StringDictionary[_]]],
     operationName: js.UndefOr[Maybe[String]],
     fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
-    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
-  ): js.Promise[ExecutionResult[TData]] = js.native
-  def apply[TData](
-    schema: GraphQLSchema,
-    source: Source,
-    rootValue: js.UndefOr[js.Any],
-    contextValue: js.UndefOr[js.Any],
-    variableValues: js.UndefOr[Maybe[StringDictionary[_]]],
-    operationName: js.UndefOr[Maybe[String]],
-    fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
-    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
-  ): js.Promise[ExecutionResult[TData]] = js.native
+    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _]]]
+  ): js.Promise[ExecutionResult[StringDictionary[_], StringDictionary[_]]] = js.native
 }
 

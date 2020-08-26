@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * represents a cell annotation object attached to a spreadsheet cell.
   * @see com.sun.star.sheet.SheetCell
   */
+@js.native
 trait CellAnnotation
   extends XSimpleText
      with XSheetAnnotation

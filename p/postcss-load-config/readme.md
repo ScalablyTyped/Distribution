@@ -11,8 +11,8 @@ Autoload Config for PostCSS
 | Full name          | postcss-load-config |
 | Keywords           | postcss, postcssrc, postcss.config.js |
 | # releases         | 3 |
-| # dependents       | 175 |
-| # downloads        | 232256769 |
+| # dependents       | 180 |
+| # downloads        | 245807038 |
 | # stars            | 2 |
 
 ## Links

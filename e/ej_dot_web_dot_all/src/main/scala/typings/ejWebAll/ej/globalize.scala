@@ -18,9 +18,11 @@ trait globalize extends js.Object {
   def parseDate(value: String, format: String): Date = js.native
   def parseDate(value: String, format: String, culture: String): Date = js.native
   def parseFloat(value: String): Double = js.native
+  def parseFloat(value: String, radix: js.UndefOr[scala.Nothing], culture: String): Double = js.native
   def parseFloat(value: String, radix: js.Any): Double = js.native
   def parseFloat(value: String, radix: js.Any, culture: String): Double = js.native
   def parseInt(value: String): Double = js.native
+  def parseInt(value: String, radix: js.UndefOr[scala.Nothing], culture: String): Double = js.native
   def parseInt(value: String, radix: js.Any): Double = js.native
   def parseInt(value: String, radix: js.Any, culture: String): Double = js.native
   def preferredCulture(): culture = js.native

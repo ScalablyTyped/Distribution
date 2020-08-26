@@ -14,10 +14,26 @@ trait DeleteLaunchTemplateResult extends js.Object {
 
 object DeleteLaunchTemplateResult {
   @scala.inline
-  def apply(LaunchTemplate: LaunchTemplate = null): DeleteLaunchTemplateResult = {
+  def apply(): DeleteLaunchTemplateResult = {
     val __obj = js.Dynamic.literal()
-    if (LaunchTemplate != null) __obj.updateDynamic("LaunchTemplate")(LaunchTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLaunchTemplateResult]
   }
+  @scala.inline
+  implicit class DeleteLaunchTemplateResultOps[Self <: DeleteLaunchTemplateResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchTemplate(value: LaunchTemplate): Self = this.set("LaunchTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplate: Self = this.set("LaunchTemplate", js.undefined)
+  }
+  
 }
 

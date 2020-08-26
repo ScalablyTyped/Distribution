@@ -17,7 +17,16 @@ class JoinRoomRequest protected ()
     */
   def this(room: js.Any) = this()
   def this(room: js.Any, password: String) = this()
+  def this(room: js.Any, password: js.UndefOr[scala.Nothing], roomIdToLeave: Double) = this()
   def this(room: js.Any, password: String, roomIdToLeave: Double) = this()
+  def this(
+    room: js.Any,
+    password: js.UndefOr[scala.Nothing],
+    roomIdToLeave: js.UndefOr[scala.Nothing],
+    asSpect: Boolean
+  ) = this()
+  def this(room: js.Any, password: js.UndefOr[scala.Nothing], roomIdToLeave: Double, asSpect: Boolean) = this()
+  def this(room: js.Any, password: String, roomIdToLeave: js.UndefOr[scala.Nothing], asSpect: Boolean) = this()
   def this(room: js.Any, password: String, roomIdToLeave: Double, asSpect: Boolean) = this()
 }
 

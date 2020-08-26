@@ -4,20 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IEditorCommentsOptions extends js.Object {
   /**
     * Insert a space after the line comment token and inside the block comments tokens.
     * Defaults to true.
     */
-  var insertSpace: js.UndefOr[Boolean] = js.undefined
+  var insertSpace: js.UndefOr[Boolean] = js.native
 }
 
 object IEditorCommentsOptions {
   @scala.inline
-  def apply(insertSpace: js.UndefOr[Boolean] = js.undefined): IEditorCommentsOptions = {
+  def apply(): IEditorCommentsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(insertSpace)) __obj.updateDynamic("insertSpace")(insertSpace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorCommentsOptions]
   }
+  @scala.inline
+  implicit class IEditorCommentsOptionsOps[Self <: IEditorCommentsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInsertSpace(value: Boolean): Self = this.set("insertSpace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpace: Self = this.set("insertSpace", js.undefined)
+  }
+  
 }
 

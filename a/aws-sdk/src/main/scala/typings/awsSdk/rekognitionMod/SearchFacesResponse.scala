@@ -22,12 +22,36 @@ trait SearchFacesResponse extends js.Object {
 
 object SearchFacesResponse {
   @scala.inline
-  def apply(FaceMatches: FaceMatchList = null, FaceModelVersion: String = null, SearchedFaceId: FaceId = null): SearchFacesResponse = {
+  def apply(): SearchFacesResponse = {
     val __obj = js.Dynamic.literal()
-    if (FaceMatches != null) __obj.updateDynamic("FaceMatches")(FaceMatches.asInstanceOf[js.Any])
-    if (FaceModelVersion != null) __obj.updateDynamic("FaceModelVersion")(FaceModelVersion.asInstanceOf[js.Any])
-    if (SearchedFaceId != null) __obj.updateDynamic("SearchedFaceId")(SearchedFaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFacesResponse]
   }
+  @scala.inline
+  implicit class SearchFacesResponseOps[Self <: SearchFacesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFaceMatchesVarargs(value: FaceMatch*): Self = this.set("FaceMatches", js.Array(value :_*))
+    @scala.inline
+    def setFaceMatches(value: FaceMatchList): Self = this.set("FaceMatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceMatches: Self = this.set("FaceMatches", js.undefined)
+    @scala.inline
+    def setFaceModelVersion(value: String): Self = this.set("FaceModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceModelVersion: Self = this.set("FaceModelVersion", js.undefined)
+    @scala.inline
+    def setSearchedFaceId(value: FaceId): Self = this.set("SearchedFaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchedFaceId: Self = this.set("SearchedFaceId", js.undefined)
+  }
+  
 }
 

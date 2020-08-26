@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-input-autosize
 
-Typings are for version 2.0
+Typings are for version 2.2
 
 ## Library description:
 Auto-resizing Input Component for React

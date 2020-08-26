@@ -46,28 +46,58 @@ trait BGPPeer extends js.Object {
 
 object BGPPeer {
   @scala.inline
-  def apply(
-    addressFamily: AddressFamily = null,
-    amazonAddress: AmazonAddress = null,
-    asn: js.UndefOr[ASN] = js.undefined,
-    authKey: BGPAuthKey = null,
-    awsDeviceV2: AwsDeviceV2 = null,
-    bgpPeerId: BGPPeerId = null,
-    bgpPeerState: BGPPeerState = null,
-    bgpStatus: BGPStatus = null,
-    customerAddress: CustomerAddress = null
-  ): BGPPeer = {
+  def apply(): BGPPeer = {
     val __obj = js.Dynamic.literal()
-    if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
-    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(asn)) __obj.updateDynamic("asn")(asn.get.asInstanceOf[js.Any])
-    if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
-    if (awsDeviceV2 != null) __obj.updateDynamic("awsDeviceV2")(awsDeviceV2.asInstanceOf[js.Any])
-    if (bgpPeerId != null) __obj.updateDynamic("bgpPeerId")(bgpPeerId.asInstanceOf[js.Any])
-    if (bgpPeerState != null) __obj.updateDynamic("bgpPeerState")(bgpPeerState.asInstanceOf[js.Any])
-    if (bgpStatus != null) __obj.updateDynamic("bgpStatus")(bgpStatus.asInstanceOf[js.Any])
-    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[BGPPeer]
   }
+  @scala.inline
+  implicit class BGPPeerOps[Self <: BGPPeer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressFamily(value: AddressFamily): Self = this.set("addressFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressFamily: Self = this.set("addressFamily", js.undefined)
+    @scala.inline
+    def setAmazonAddress(value: AmazonAddress): Self = this.set("amazonAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmazonAddress: Self = this.set("amazonAddress", js.undefined)
+    @scala.inline
+    def setAsn(value: ASN): Self = this.set("asn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsn: Self = this.set("asn", js.undefined)
+    @scala.inline
+    def setAuthKey(value: BGPAuthKey): Self = this.set("authKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthKey: Self = this.set("authKey", js.undefined)
+    @scala.inline
+    def setAwsDeviceV2(value: AwsDeviceV2): Self = this.set("awsDeviceV2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsDeviceV2: Self = this.set("awsDeviceV2", js.undefined)
+    @scala.inline
+    def setBgpPeerId(value: BGPPeerId): Self = this.set("bgpPeerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgpPeerId: Self = this.set("bgpPeerId", js.undefined)
+    @scala.inline
+    def setBgpPeerState(value: BGPPeerState): Self = this.set("bgpPeerState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgpPeerState: Self = this.set("bgpPeerState", js.undefined)
+    @scala.inline
+    def setBgpStatus(value: BGPStatus): Self = this.set("bgpStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgpStatus: Self = this.set("bgpStatus", js.undefined)
+    @scala.inline
+    def setCustomerAddress(value: CustomerAddress): Self = this.set("customerAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerAddress: Self = this.set("customerAddress", js.undefined)
+  }
+  
 }
 

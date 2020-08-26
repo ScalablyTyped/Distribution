@@ -24,14 +24,30 @@ trait SchemaSuggestedListProperties extends js.Object {
 
 object SchemaSuggestedListProperties {
   @scala.inline
-  def apply(
-    listProperties: SchemaListProperties = null,
-    listPropertiesSuggestionState: SchemaListPropertiesSuggestionState = null
-  ): SchemaSuggestedListProperties = {
+  def apply(): SchemaSuggestedListProperties = {
     val __obj = js.Dynamic.literal()
-    if (listProperties != null) __obj.updateDynamic("listProperties")(listProperties.asInstanceOf[js.Any])
-    if (listPropertiesSuggestionState != null) __obj.updateDynamic("listPropertiesSuggestionState")(listPropertiesSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSuggestedListProperties]
   }
+  @scala.inline
+  implicit class SchemaSuggestedListPropertiesOps[Self <: SchemaSuggestedListProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListProperties(value: SchemaListProperties): Self = this.set("listProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListProperties: Self = this.set("listProperties", js.undefined)
+    @scala.inline
+    def setListPropertiesSuggestionState(value: SchemaListPropertiesSuggestionState): Self = this.set("listPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListPropertiesSuggestionState: Self = this.set("listPropertiesSuggestionState", js.undefined)
+  }
+  
 }
 

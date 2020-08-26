@@ -29,22 +29,46 @@ trait SchemaTargetingValue extends js.Object {
 
 object SchemaTargetingValue {
   @scala.inline
-  def apply(
-    creativeSizeValue: SchemaTargetingValueCreativeSize = null,
-    dayPartTargetingValue: SchemaTargetingValueDayPartTargeting = null,
-    demogAgeCriteriaValue: SchemaTargetingValueDemogAgeCriteria = null,
-    demogGenderCriteriaValue: SchemaTargetingValueDemogGenderCriteria = null,
-    longValue: String = null,
-    stringValue: String = null
-  ): SchemaTargetingValue = {
+  def apply(): SchemaTargetingValue = {
     val __obj = js.Dynamic.literal()
-    if (creativeSizeValue != null) __obj.updateDynamic("creativeSizeValue")(creativeSizeValue.asInstanceOf[js.Any])
-    if (dayPartTargetingValue != null) __obj.updateDynamic("dayPartTargetingValue")(dayPartTargetingValue.asInstanceOf[js.Any])
-    if (demogAgeCriteriaValue != null) __obj.updateDynamic("demogAgeCriteriaValue")(demogAgeCriteriaValue.asInstanceOf[js.Any])
-    if (demogGenderCriteriaValue != null) __obj.updateDynamic("demogGenderCriteriaValue")(demogGenderCriteriaValue.asInstanceOf[js.Any])
-    if (longValue != null) __obj.updateDynamic("longValue")(longValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTargetingValue]
   }
+  @scala.inline
+  implicit class SchemaTargetingValueOps[Self <: SchemaTargetingValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreativeSizeValue(value: SchemaTargetingValueCreativeSize): Self = this.set("creativeSizeValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeSizeValue: Self = this.set("creativeSizeValue", js.undefined)
+    @scala.inline
+    def setDayPartTargetingValue(value: SchemaTargetingValueDayPartTargeting): Self = this.set("dayPartTargetingValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayPartTargetingValue: Self = this.set("dayPartTargetingValue", js.undefined)
+    @scala.inline
+    def setDemogAgeCriteriaValue(value: SchemaTargetingValueDemogAgeCriteria): Self = this.set("demogAgeCriteriaValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDemogAgeCriteriaValue: Self = this.set("demogAgeCriteriaValue", js.undefined)
+    @scala.inline
+    def setDemogGenderCriteriaValue(value: SchemaTargetingValueDemogGenderCriteria): Self = this.set("demogGenderCriteriaValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDemogGenderCriteriaValue: Self = this.set("demogGenderCriteriaValue", js.undefined)
+    @scala.inline
+    def setLongValue(value: String): Self = this.set("longValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongValue: Self = this.set("longValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+  }
+  
 }
 

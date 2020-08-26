@@ -55,9 +55,9 @@ class CachesIscsiVolume protected () extends CustomResource {
     */
   val sourceVolumeArn: Output_[js.UndefOr[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
     */
@@ -91,8 +91,10 @@ object CachesIscsiVolume extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): CachesIscsiVolume = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CachesIscsiVolume = js.native
   def get(name: String, id: Input[ID], state: CachesIscsiVolumeState): CachesIscsiVolume = js.native
   def get(name: String, id: Input[ID], state: CachesIscsiVolumeState, opts: CustomResourceOptions): CachesIscsiVolume = js.native
   /**

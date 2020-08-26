@@ -4,33 +4,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var allowUnknownAttributes: js.UndefOr[Boolean] = js.undefined
-  var base: js.UndefOr[String] = js.undefined
-  var propertyName: js.UndefOr[String] = js.undefined
-  var rewrite: js.UndefOr[RewriteFunction] = js.undefined
-  var skipAttributes: js.UndefOr[js.Array[String]] = js.undefined
-  var throwError: js.UndefOr[Boolean] = js.undefined
+  var allowUnknownAttributes: js.UndefOr[Boolean] = js.native
+  var base: js.UndefOr[String] = js.native
+  var propertyName: js.UndefOr[String] = js.native
+  var rewrite: js.UndefOr[RewriteFunction] = js.native
+  var skipAttributes: js.UndefOr[js.Array[String]] = js.native
+  var throwError: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    allowUnknownAttributes: js.UndefOr[Boolean] = js.undefined,
-    base: String = null,
-    propertyName: String = null,
-    rewrite: (/* instance */ js.Any, /* schema */ Schema, /* options */ Options, /* ctx */ SchemaContext) => js.Any = null,
-    skipAttributes: js.Array[String] = null,
-    throwError: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnknownAttributes)) __obj.updateDynamic("allowUnknownAttributes")(allowUnknownAttributes.get.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
-    if (rewrite != null) __obj.updateDynamic("rewrite")(js.Any.fromFunction4(rewrite))
-    if (skipAttributes != null) __obj.updateDynamic("skipAttributes")(skipAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwError)) __obj.updateDynamic("throwError")(throwError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowUnknownAttributes(value: Boolean): Self = this.set("allowUnknownAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowUnknownAttributes: Self = this.set("allowUnknownAttributes", js.undefined)
+    @scala.inline
+    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyName: Self = this.set("propertyName", js.undefined)
+    @scala.inline
+    def setRewrite(
+      value: (/* instance */ js.Any, /* schema */ Schema, /* options */ Options, /* ctx */ SchemaContext) => js.Any
+    ): Self = this.set("rewrite", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteRewrite: Self = this.set("rewrite", js.undefined)
+    @scala.inline
+    def setSkipAttributesVarargs(value: String*): Self = this.set("skipAttributes", js.Array(value :_*))
+    @scala.inline
+    def setSkipAttributes(value: js.Array[String]): Self = this.set("skipAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipAttributes: Self = this.set("skipAttributes", js.undefined)
+    @scala.inline
+    def setThrowError(value: Boolean): Self = this.set("throwError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrowError: Self = this.set("throwError", js.undefined)
+  }
+  
 }
 

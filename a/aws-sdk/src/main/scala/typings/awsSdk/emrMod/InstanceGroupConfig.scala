@@ -46,25 +46,54 @@ trait InstanceGroupConfig extends js.Object {
 
 object InstanceGroupConfig {
   @scala.inline
-  def apply(
-    InstanceCount: Integer,
-    InstanceRole: InstanceRoleType,
-    InstanceType: InstanceType,
-    AutoScalingPolicy: AutoScalingPolicy = null,
-    BidPrice: XmlStringMaxLen256 = null,
-    Configurations: ConfigurationList = null,
-    EbsConfiguration: EbsConfiguration = null,
-    Market: MarketType = null,
-    Name: XmlStringMaxLen256 = null
-  ): InstanceGroupConfig = {
+  def apply(InstanceCount: Integer, InstanceRole: InstanceRoleType, InstanceType: InstanceType): InstanceGroupConfig = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], InstanceRole = InstanceRole.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any])
-    if (AutoScalingPolicy != null) __obj.updateDynamic("AutoScalingPolicy")(AutoScalingPolicy.asInstanceOf[js.Any])
-    if (BidPrice != null) __obj.updateDynamic("BidPrice")(BidPrice.asInstanceOf[js.Any])
-    if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
-    if (EbsConfiguration != null) __obj.updateDynamic("EbsConfiguration")(EbsConfiguration.asInstanceOf[js.Any])
-    if (Market != null) __obj.updateDynamic("Market")(Market.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupConfig]
   }
+  @scala.inline
+  implicit class InstanceGroupConfigOps[Self <: InstanceGroupConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceRole(value: InstanceRoleType): Self = this.set("InstanceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoScalingPolicy(value: AutoScalingPolicy): Self = this.set("AutoScalingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingPolicy: Self = this.set("AutoScalingPolicy", js.undefined)
+    @scala.inline
+    def setBidPrice(value: XmlStringMaxLen256): Self = this.set("BidPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidPrice: Self = this.set("BidPrice", js.undefined)
+    @scala.inline
+    def setConfigurationsVarargs(value: Configuration*): Self = this.set("Configurations", js.Array(value :_*))
+    @scala.inline
+    def setConfigurations(value: ConfigurationList): Self = this.set("Configurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurations: Self = this.set("Configurations", js.undefined)
+    @scala.inline
+    def setEbsConfiguration(value: EbsConfiguration): Self = this.set("EbsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsConfiguration: Self = this.set("EbsConfiguration", js.undefined)
+    @scala.inline
+    def setMarket(value: MarketType): Self = this.set("Market", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarket: Self = this.set("Market", js.undefined)
+    @scala.inline
+    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

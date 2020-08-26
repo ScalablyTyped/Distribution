@@ -36,20 +36,42 @@ trait SchemaExtendedValue extends js.Object {
 
 object SchemaExtendedValue {
   @scala.inline
-  def apply(
-    boolValue: js.UndefOr[Boolean] = js.undefined,
-    errorValue: SchemaErrorValue = null,
-    formulaValue: String = null,
-    numberValue: js.UndefOr[Double] = js.undefined,
-    stringValue: String = null
-  ): SchemaExtendedValue = {
+  def apply(): SchemaExtendedValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.get.asInstanceOf[js.Any])
-    if (errorValue != null) __obj.updateDynamic("errorValue")(errorValue.asInstanceOf[js.Any])
-    if (formulaValue != null) __obj.updateDynamic("formulaValue")(formulaValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberValue)) __obj.updateDynamic("numberValue")(numberValue.get.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtendedValue]
   }
+  @scala.inline
+  implicit class SchemaExtendedValueOps[Self <: SchemaExtendedValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoolValue(value: Boolean): Self = this.set("boolValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoolValue: Self = this.set("boolValue", js.undefined)
+    @scala.inline
+    def setErrorValue(value: SchemaErrorValue): Self = this.set("errorValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorValue: Self = this.set("errorValue", js.undefined)
+    @scala.inline
+    def setFormulaValue(value: String): Self = this.set("formulaValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormulaValue: Self = this.set("formulaValue", js.undefined)
+    @scala.inline
+    def setNumberValue(value: Double): Self = this.set("numberValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberValue: Self = this.set("numberValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+  }
+  
 }
 

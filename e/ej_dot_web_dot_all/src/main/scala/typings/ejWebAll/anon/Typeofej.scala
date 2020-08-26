@@ -29,9 +29,9 @@ trait Typeofej extends js.Object {
   val ComboBox: TypeofComboBox = js.native
   var CurrencyTextbox: Instantiable0[typings.ejWebAll.ej.CurrencyTextbox] = js.native
   var DataManager: Instantiable3[
-    js.UndefOr[/* dataSource */ js.Any], 
-    js.UndefOr[/* query */ Query], 
-    js.UndefOr[/* adaptor */ js.Any], 
+    /* dataSource */ js.UndefOr[js.Any], 
+    /* query */ js.UndefOr[Query], 
+    /* adaptor */ js.UndefOr[js.Any], 
     typings.ejWebAll.ej.DataManager
   ] = js.native
   val DatePicker: TypeofDatePicker = js.native
@@ -149,7 +149,16 @@ trait Typeofej extends js.Object {
   def blockDefaultActions(e: js.Any): Unit = js.native
   def browserInfo(): browserInfoOptions = js.native
   def buildTag(tag: String): JQuery = js.native
+  def buildTag(
+    tag: String,
+    innerHtml: js.UndefOr[scala.Nothing],
+    styles: js.UndefOr[scala.Nothing],
+    attrs: js.Any
+  ): JQuery = js.native
+  def buildTag(tag: String, innerHtml: js.UndefOr[scala.Nothing], styles: js.Any): JQuery = js.native
+  def buildTag(tag: String, innerHtml: js.UndefOr[scala.Nothing], styles: js.Any, attrs: js.Any): JQuery = js.native
   def buildTag(tag: String, innerHtml: String): JQuery = js.native
+  def buildTag(tag: String, innerHtml: String, styles: js.UndefOr[scala.Nothing], attrs: js.Any): JQuery = js.native
   def buildTag(tag: String, innerHtml: String, styles: js.Any): JQuery = js.native
   def buildTag(tag: String, innerHtml: String, styles: js.Any, attrs: js.Any): JQuery = js.native
   def cancelEvent(): String = js.native
@@ -210,7 +219,38 @@ trait Typeofej extends js.Object {
   def isWindows(): Boolean = js.native
   def isWindowsWebView(): String = js.native
   def listenEvents(selectors: js.Any, eventTypes: js.Any, handlers: js.Any): Unit = js.native
+  def listenEvents(
+    selectors: js.Any,
+    eventTypes: js.Any,
+    handlers: js.Any,
+    remove: js.UndefOr[scala.Nothing],
+    pluginObj: js.UndefOr[scala.Nothing],
+    disableMouse: Boolean
+  ): Unit = js.native
+  def listenEvents(
+    selectors: js.Any,
+    eventTypes: js.Any,
+    handlers: js.Any,
+    remove: js.UndefOr[scala.Nothing],
+    pluginObj: js.Any
+  ): Unit = js.native
+  def listenEvents(
+    selectors: js.Any,
+    eventTypes: js.Any,
+    handlers: js.Any,
+    remove: js.UndefOr[scala.Nothing],
+    pluginObj: js.Any,
+    disableMouse: Boolean
+  ): Unit = js.native
   def listenEvents(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: js.Any): Unit = js.native
+  def listenEvents(
+    selectors: js.Any,
+    eventTypes: js.Any,
+    handlers: js.Any,
+    remove: js.Any,
+    pluginObj: js.UndefOr[scala.Nothing],
+    disableMouse: Boolean
+  ): Unit = js.native
   def listenEvents(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: js.Any, pluginObj: js.Any): Unit = js.native
   def listenEvents(
     selectors: js.Any,
@@ -221,7 +261,38 @@ trait Typeofej extends js.Object {
     disableMouse: Boolean
   ): Unit = js.native
   def listenTouchEvent(selectors: js.Any, eventTypes: js.Any, handlers: js.Any): Unit = js.native
+  def listenTouchEvent(
+    selectors: js.Any,
+    eventTypes: js.Any,
+    handlers: js.Any,
+    remove: js.UndefOr[scala.Nothing],
+    pluginObj: js.UndefOr[scala.Nothing],
+    disableMouse: Boolean
+  ): Unit = js.native
+  def listenTouchEvent(
+    selectors: js.Any,
+    eventTypes: js.Any,
+    handlers: js.Any,
+    remove: js.UndefOr[scala.Nothing],
+    pluginObj: js.Any
+  ): Unit = js.native
+  def listenTouchEvent(
+    selectors: js.Any,
+    eventTypes: js.Any,
+    handlers: js.Any,
+    remove: js.UndefOr[scala.Nothing],
+    pluginObj: js.Any,
+    disableMouse: Boolean
+  ): Unit = js.native
   def listenTouchEvent(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: js.Any): Unit = js.native
+  def listenTouchEvent(
+    selectors: js.Any,
+    eventTypes: js.Any,
+    handlers: js.Any,
+    remove: js.Any,
+    pluginObj: js.UndefOr[scala.Nothing],
+    disableMouse: Boolean
+  ): Unit = js.native
   def listenTouchEvent(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: js.Any, pluginObj: js.Any): Unit = js.native
   def listenTouchEvent(
     selectors: js.Any,
@@ -233,6 +304,7 @@ trait Typeofej extends js.Object {
   ): Unit = js.native
   def logBase(`val`: String, base: String): Double = js.native
   def max(jsonArray: js.Any): js.Any = js.native
+  def max(jsonArray: js.Any, fieldName: js.UndefOr[scala.Nothing], comparer: String): js.Any = js.native
   def max(jsonArray: js.Any, fieldName: String): js.Any = js.native
   def max(jsonArray: js.Any, fieldName: String, comparer: String): js.Any = js.native
   def measureText(text: String, maxwidth: Double, font: String): String = js.native
@@ -243,9 +315,11 @@ trait Typeofej extends js.Object {
   def parseDate(value: String, format: String): Date = js.native
   def parseDate(value: String, format: String, culture: String): Date = js.native
   def parseFloat(value: String): Double = js.native
+  def parseFloat(value: String, radix: js.UndefOr[scala.Nothing], culture: String): Double = js.native
   def parseFloat(value: String, radix: js.Any): Double = js.native
   def parseFloat(value: String, radix: js.Any, culture: String): Double = js.native
   def parseInt(value: String): Double = js.native
+  def parseInt(value: String, radix: js.UndefOr[scala.Nothing], culture: String): Double = js.native
   def parseInt(value: String, radix: js.Any): Double = js.native
   def parseInt(value: String, radix: js.Any, culture: String): Double = js.native
   def parseJSON(jsonText: String): String = js.native
@@ -254,6 +328,7 @@ trait Typeofej extends js.Object {
   def preferredCulture(culture: String): culture = js.native
   def print(element: String, printWindow: js.Any): Unit = js.native
   def proxy(fn: js.Any): js.Any = js.native
+  def proxy(fn: js.Any, context: js.UndefOr[scala.Nothing], arg: String): js.Any = js.native
   def proxy(fn: js.Any, context: String): js.Any = js.native
   def proxy(fn: js.Any, context: String, arg: String): js.Any = js.native
   def round(value: String, div: String, up: String): js.Any = js.native

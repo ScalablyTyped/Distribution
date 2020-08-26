@@ -11,8 +11,8 @@ Boom response objects in Express
 | Full name          | express-boom |
 | Keywords           | Hapi, Boom, Express, response |
 | # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 176165 |
+| # dependents       | 11 |
+| # downloads        | 178801 |
 | # stars            | 5 |
 
 ## Links

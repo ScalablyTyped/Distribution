@@ -1,113 +1,145 @@
 package typings.mongodb.mod
 
-import typings.mongodb.mongodbStrings.majority
 import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DbCreateOptions extends CommonOptions {
   /**
     * If the database authentication is dependent on another databaseName.
     */
-  var authSource: js.UndefOr[String] = js.undefined
+  var authSource: js.UndefOr[String] = js.native
   /**
     * Sets a cap on how many operations the driver will buffer up before giving up on getting a
     * working connection, default is -1 which is unlimited.
     */
-  var bufferMaxEntries: js.UndefOr[scala.Double] = js.undefined
+  var bufferMaxEntries: js.UndefOr[scala.Double] = js.native
   /**
     * Default: false; Force server to create _id fields instead of client.
     */
-  var forceServerObjectId: js.UndefOr[Boolean] = js.undefined
+  var forceServerObjectId: js.UndefOr[Boolean] = js.native
   /**
     * Specify if the BSON serializer should ignore undefined fields.
     */
-  var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
+  var ignoreUndefined: js.UndefOr[Boolean] = js.native
   /**
     * Default: false; Use c++ bson parser.
     */
-  var native_parser: js.UndefOr[Boolean] = js.undefined
+  var native_parser: js.UndefOr[Boolean] = js.native
   /**
     * Custom primary key factory to generate _id values (see Custom primary keys).
     */
-  var pkFactory: js.UndefOr[js.Object] = js.undefined
+  var pkFactory: js.UndefOr[js.Object] = js.native
   /**
     * ES6 compatible promise constructor
     */
-  var promiseLibrary: js.UndefOr[PromiseConstructor] = js.undefined
+  var promiseLibrary: js.UndefOr[PromiseConstructor] = js.native
   /**
     * Default: false; Promotes Binary BSON values to native Node Buffers
     */
-  var promoteBuffers: js.UndefOr[Boolean] = js.undefined
+  var promoteBuffers: js.UndefOr[Boolean] = js.native
   /**
     * Default: true; Promotes Long values to number if they fit inside the 53 bits resolution.
     */
-  var promoteLongs: js.UndefOr[Boolean] = js.undefined
+  var promoteLongs: js.UndefOr[Boolean] = js.native
   /**
     * Default: true; Promotes BSON values to native types where possible, set to false to only receive wrapper types.
     */
-  var promoteValues: js.UndefOr[Boolean] = js.undefined
+  var promoteValues: js.UndefOr[Boolean] = js.native
   /**
     * Return document results as raw BSON buffers.
     */
-  var raw: js.UndefOr[Boolean] = js.undefined
+  var raw: js.UndefOr[Boolean] = js.native
   /**
     * https://docs.mongodb.com/manual/reference/read-concern/#read-concern
     */
-  var readConcern: js.UndefOr[ReadConcern | String] = js.undefined
+  var readConcern: js.UndefOr[ReadConcern | String] = js.native
   /**
     * the prefered read preference. use 'ReadPreference' class.
     */
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
   /**
     * Serialize functions on any object.
     */
-  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
+  var serializeFunctions: js.UndefOr[Boolean] = js.native
 }
 
 object DbCreateOptions {
   @scala.inline
-  def apply(
-    authSource: String = null,
-    bufferMaxEntries: js.UndefOr[scala.Double] = js.undefined,
-    forceServerObjectId: js.UndefOr[Boolean] = js.undefined,
-    ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
-    j: js.UndefOr[Boolean] = js.undefined,
-    native_parser: js.UndefOr[Boolean] = js.undefined,
-    pkFactory: js.Object = null,
-    promiseLibrary: PromiseConstructor = null,
-    promoteBuffers: js.UndefOr[Boolean] = js.undefined,
-    promoteLongs: js.UndefOr[Boolean] = js.undefined,
-    promoteValues: js.UndefOr[Boolean] = js.undefined,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    readConcern: ReadConcern | String = null,
-    readPreference: ReadPreferenceOrMode = null,
-    serializeFunctions: js.UndefOr[Boolean] = js.undefined,
-    session: ClientSession = null,
-    w: scala.Double | majority | String = null,
-    wtimeout: js.UndefOr[scala.Double] = js.undefined
-  ): DbCreateOptions = {
+  def apply(): DbCreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (authSource != null) __obj.updateDynamic("authSource")(authSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(bufferMaxEntries)) __obj.updateDynamic("bufferMaxEntries")(bufferMaxEntries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceServerObjectId)) __obj.updateDynamic("forceServerObjectId")(forceServerObjectId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(native_parser)) __obj.updateDynamic("native_parser")(native_parser.get.asInstanceOf[js.Any])
-    if (pkFactory != null) __obj.updateDynamic("pkFactory")(pkFactory.asInstanceOf[js.Any])
-    if (promiseLibrary != null) __obj.updateDynamic("promiseLibrary")(promiseLibrary.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
-    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.get.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (!js.isUndefined(wtimeout)) __obj.updateDynamic("wtimeout")(wtimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DbCreateOptions]
   }
+  @scala.inline
+  implicit class DbCreateOptionsOps[Self <: DbCreateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthSource(value: String): Self = this.set("authSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthSource: Self = this.set("authSource", js.undefined)
+    @scala.inline
+    def setBufferMaxEntries(value: scala.Double): Self = this.set("bufferMaxEntries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferMaxEntries: Self = this.set("bufferMaxEntries", js.undefined)
+    @scala.inline
+    def setForceServerObjectId(value: Boolean): Self = this.set("forceServerObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceServerObjectId: Self = this.set("forceServerObjectId", js.undefined)
+    @scala.inline
+    def setIgnoreUndefined(value: Boolean): Self = this.set("ignoreUndefined", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUndefined: Self = this.set("ignoreUndefined", js.undefined)
+    @scala.inline
+    def setNative_parser(value: Boolean): Self = this.set("native_parser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNative_parser: Self = this.set("native_parser", js.undefined)
+    @scala.inline
+    def setPkFactory(value: js.Object): Self = this.set("pkFactory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePkFactory: Self = this.set("pkFactory", js.undefined)
+    @scala.inline
+    def setPromiseLibrary(value: PromiseConstructor): Self = this.set("promiseLibrary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromiseLibrary: Self = this.set("promiseLibrary", js.undefined)
+    @scala.inline
+    def setPromoteBuffers(value: Boolean): Self = this.set("promoteBuffers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromoteBuffers: Self = this.set("promoteBuffers", js.undefined)
+    @scala.inline
+    def setPromoteLongs(value: Boolean): Self = this.set("promoteLongs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromoteLongs: Self = this.set("promoteLongs", js.undefined)
+    @scala.inline
+    def setPromoteValues(value: Boolean): Self = this.set("promoteValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromoteValues: Self = this.set("promoteValues", js.undefined)
+    @scala.inline
+    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaw: Self = this.set("raw", js.undefined)
+    @scala.inline
+    def setReadConcern(value: ReadConcern | String): Self = this.set("readConcern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadConcern: Self = this.set("readConcern", js.undefined)
+    @scala.inline
+    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    @scala.inline
+    def setSerializeFunctions(value: Boolean): Self = this.set("serializeFunctions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerializeFunctions: Self = this.set("serializeFunctions", js.undefined)
+  }
+  
 }
 

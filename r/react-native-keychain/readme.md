@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-keychain
 
-Typings are for version 4.0.5
+Typings are for version 6.1.1
 
 ## Library description:
 Keychain Access for React Native

@@ -1,6 +1,11 @@
 package typings.materialTopAppBar
 
+import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialTopAppBar.adapterMod.MDCTopAppBarAdapter
+import typings.materialTopAppBar.anon.ACTIONITEMSELECTOR
+import typings.materialTopAppBar.anon.DEBOUNCETHROTTLERESIZETIMEMS
+import typings.materialTopAppBar.anon.FIXEDCLASS
+import typings.materialTopAppBar.anon.PartialMDCTopAppBarAdapte
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,18 +14,43 @@ import scala.scalajs.js.annotation._
 @js.native
 object materialTopAppBarMod extends js.Object {
   @js.native
-  class default ()
-    extends typings.materialBase.foundationMod.default[MDCTopAppBarAdapter]
+  class MDCTopAppBarBaseFoundation () extends MDCFoundation[MDCTopAppBarAdapter] {
+    def this(adapter: PartialMDCTopAppBarAdapte) = this()
+    def handleNavigationClick(): Unit = js.native
+    /** Other variants of TopAppBar foundation overrides this method */
+    def handleTargetScroll(): Unit = js.native
+    /** Other variants of TopAppBar foundation overrides this method */
+    def handleWindowResize(): Unit = js.native
+  }
+  
+  @js.native
+  class default () extends MDCTopAppBarBaseFoundation {
+    def this(adapter: PartialMDCTopAppBarAdapte) = this()
+  }
+  
+  /* static members */
+  @js.native
+  object MDCTopAppBarBaseFoundation extends js.Object {
+    def cssClasses: FIXEDCLASS = js.native
+    /**
+      * See {@link MDCTopAppBarAdapter} for typing information on parameters and return types.
+      */
+    def defaultAdapter: MDCTopAppBarAdapter = js.native
+    def numbers: DEBOUNCETHROTTLERESIZETIMEMS = js.native
+    def strings: ACTIONITEMSELECTOR = js.native
+  }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    val cssClasses: typings.materialTopAppBar.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCTopAppBarAdapter = js.native
-    val numbers: typings.materialTopAppBar.constantsMod.numbers = js.native
-    val strings: typings.materialTopAppBar.constantsMod.strings = js.native
+    def cssClasses: FIXEDCLASS = js.native
+    /**
+      * See {@link MDCTopAppBarAdapter} for typing information on parameters and return types.
+      */
+    def defaultAdapter: MDCTopAppBarAdapter = js.native
+    def numbers: DEBOUNCETHROTTLERESIZETIMEMS = js.native
+    def strings: ACTIONITEMSELECTOR = js.native
   }
   
-  type MDCTopAppBarBaseFoundation = typings.materialBase.foundationMod.default[MDCTopAppBarAdapter]
 }
 

@@ -18,11 +18,30 @@ trait TargetGroupTuple extends js.Object {
 
 object TargetGroupTuple {
   @scala.inline
-  def apply(TargetGroupArn: TargetGroupArn = null, Weight: js.UndefOr[TargetGroupWeight] = js.undefined): TargetGroupTuple = {
+  def apply(): TargetGroupTuple = {
     val __obj = js.Dynamic.literal()
-    if (TargetGroupArn != null) __obj.updateDynamic("TargetGroupArn")(TargetGroupArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Weight)) __obj.updateDynamic("Weight")(Weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetGroupTuple]
   }
+  @scala.inline
+  implicit class TargetGroupTupleOps[Self <: TargetGroupTuple] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetGroupArn(value: TargetGroupArn): Self = this.set("TargetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupArn: Self = this.set("TargetGroupArn", js.undefined)
+    @scala.inline
+    def setWeight(value: TargetGroupWeight): Self = this.set("Weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("Weight", js.undefined)
+  }
+  
 }
 

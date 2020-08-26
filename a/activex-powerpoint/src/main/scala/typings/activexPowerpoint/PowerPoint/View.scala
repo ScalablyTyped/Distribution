@@ -49,9 +49,145 @@ trait View extends js.Object {
     * @param Office.MsoTriState [Collate=-99]
     */
   def PrintOut(): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: js.UndefOr[scala.Nothing],
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: Double
+  ): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: Double,
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(From: js.UndefOr[scala.Nothing], To: js.UndefOr[scala.Nothing], PrintToFile: String): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: String,
+    Copies: js.UndefOr[scala.Nothing],
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: String,
+    Copies: Double
+  ): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: String,
+    Copies: Double,
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(From: js.UndefOr[scala.Nothing], To: Double): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: Double,
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: js.UndefOr[scala.Nothing],
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: Double,
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: Double
+  ): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: Double,
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: Double,
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(From: js.UndefOr[scala.Nothing], To: Double, PrintToFile: String): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: Double,
+    PrintToFile: String,
+    Copies: js.UndefOr[scala.Nothing],
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(From: js.UndefOr[scala.Nothing], To: Double, PrintToFile: String, Copies: Double): Unit = js.native
+  def PrintOut(
+    From: js.UndefOr[scala.Nothing],
+    To: Double,
+    PrintToFile: String,
+    Copies: Double,
+    Collate: MsoTriState
+  ): Unit = js.native
   def PrintOut(From: Double): Unit = js.native
+  def PrintOut(
+    From: Double,
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: js.UndefOr[scala.Nothing],
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(
+    From: Double,
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: Double
+  ): Unit = js.native
+  def PrintOut(
+    From: Double,
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: Double,
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(From: Double, To: js.UndefOr[scala.Nothing], PrintToFile: String): Unit = js.native
+  def PrintOut(
+    From: Double,
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: String,
+    Copies: js.UndefOr[scala.Nothing],
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(From: Double, To: js.UndefOr[scala.Nothing], PrintToFile: String, Copies: Double): Unit = js.native
+  def PrintOut(
+    From: Double,
+    To: js.UndefOr[scala.Nothing],
+    PrintToFile: String,
+    Copies: Double,
+    Collate: MsoTriState
+  ): Unit = js.native
   def PrintOut(From: Double, To: Double): Unit = js.native
+  def PrintOut(
+    From: Double,
+    To: Double,
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: js.UndefOr[scala.Nothing],
+    Collate: MsoTriState
+  ): Unit = js.native
+  def PrintOut(From: Double, To: Double, PrintToFile: js.UndefOr[scala.Nothing], Copies: Double): Unit = js.native
+  def PrintOut(
+    From: Double,
+    To: Double,
+    PrintToFile: js.UndefOr[scala.Nothing],
+    Copies: Double,
+    Collate: MsoTriState
+  ): Unit = js.native
   def PrintOut(From: Double, To: Double, PrintToFile: String): Unit = js.native
+  def PrintOut(
+    From: Double,
+    To: Double,
+    PrintToFile: String,
+    Copies: js.UndefOr[scala.Nothing],
+    Collate: MsoTriState
+  ): Unit = js.native
   def PrintOut(From: Double, To: Double, PrintToFile: String, Copies: Double): Unit = js.native
   def PrintOut(From: Double, To: Double, PrintToFile: String, Copies: Double, Collate: MsoTriState): Unit = js.native
 }

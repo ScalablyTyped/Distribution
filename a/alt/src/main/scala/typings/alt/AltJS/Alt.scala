@@ -14,15 +14,25 @@ trait Alt extends js.Object {
   def addStore(name: String, store: StoreModel[_], saveStore: Boolean): Unit = js.native
   def bootstrap(jsonData: String): Unit = js.native
   def createActions[T](ActionsClass: ActionsClassConstructor): T = js.native
+  def createActions[T](
+    ActionsClass: ActionsClassConstructor,
+    exportObj: js.UndefOr[scala.Nothing],
+    constructorArgs: js.Any*
+  ): T = js.native
   def createActions[T](ActionsClass: ActionsClassConstructor, exportObj: js.Object): T = js.native
   def createActions[T](ActionsClass: ActionsClassConstructor, exportObj: js.Object, constructorArgs: js.Any*): T = js.native
   def createStore[S](store: StoreModel[S]): AltStore[S] = js.native
   def createStore[S](store: StoreModel[S], name: String): AltStore[S] = js.native
   def dispatch(): Unit = js.native
+  def dispatch(action: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
+  def dispatch(action: js.UndefOr[scala.Nothing], data: js.Object): Unit = js.native
+  def dispatch(action: js.UndefOr[scala.Nothing], data: js.Object, details: js.Any): Unit = js.native
   def dispatch(action: String): Unit = js.native
+  def dispatch(action: String, data: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
   def dispatch(action: String, data: js.Object): Unit = js.native
   def dispatch(action: String, data: js.Object, details: js.Any): Unit = js.native
   def dispatch(action: Action[_]): Unit = js.native
+  def dispatch(action: Action[_], data: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
   def dispatch(action: Action[_], data: js.Object): Unit = js.native
   def dispatch(action: Action[_], data: js.Object, details: js.Any): Unit = js.native
   def flush(): js.Object = js.native

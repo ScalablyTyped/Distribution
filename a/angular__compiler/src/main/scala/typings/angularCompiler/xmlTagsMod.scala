@@ -1,7 +1,6 @@
 package typings.angularCompiler
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompiler.tagsMod.TagContentType
 import typings.angularCompiler.tagsMod.TagDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,24 +11,10 @@ import scala.scalajs.js.annotation._
 object xmlTagsMod extends js.Object {
   @js.native
   class XmlTagDefinition () extends TagDefinition {
-    /* CompleteClass */
-    override var canSelfClose: Boolean = js.native
-    /* CompleteClass */
-    override var closedByParent: Boolean = js.native
-    /* CompleteClass */
-    override var contentType: TagContentType = js.native
-    /* CompleteClass */
-    override var ignoreFirstLf: Boolean = js.native
-    /* CompleteClass */
-    override var implicitNamespacePrefix: String | Null = js.native
     @JSName("implicitNamespacePrefix")
     var implicitNamespacePrefix_XmlTagDefinition: String = js.native
-    /* CompleteClass */
-    override var isVoid: Boolean = js.native
     var parentToAdd: String = js.native
     var requiredParents: StringDictionary[Boolean] = js.native
-    /* CompleteClass */
-    override def isClosedByChild(name: String): Boolean = js.native
     def requireExtraParent(currentParent: String): Boolean = js.native
   }
   

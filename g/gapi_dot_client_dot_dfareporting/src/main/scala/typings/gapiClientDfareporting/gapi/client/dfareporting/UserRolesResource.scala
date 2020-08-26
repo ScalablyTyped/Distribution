@@ -8,19 +8,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserRolesResource extends js.Object {
   /** Deletes an existing user role. */
-  def delete(request: Fields): Request[Unit]
+  def delete(request: Fields): Request[Unit] = js.native
   /** Gets one user role by ID. */
-  def get(request: Fields): Request[UserRole]
+  def get(request: Fields): Request[UserRole] = js.native
   /** Inserts a new user role. */
-  def insert(request: Key): Request[UserRole]
+  def insert(request: Key): Request[UserRole] = js.native
   /** Retrieves a list of user roles, possibly filtered. This method supports paging. */
-  def list(request: AccountUserRoleOnly): Request[UserRolesListResponse]
+  def list(request: AccountUserRoleOnly): Request[UserRolesListResponse] = js.native
   /** Updates an existing user role. This method supports patch semantics. */
-  def patch(request: Fields): Request[UserRole]
+  def patch(request: Fields): Request[UserRole] = js.native
   /** Updates an existing user role. */
-  def update(request: Key): Request[UserRole]
+  def update(request: Key): Request[UserRole] = js.native
 }
 
 object UserRolesResource {
@@ -36,5 +37,30 @@ object UserRolesResource {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[UserRolesResource]
   }
+  @scala.inline
+  implicit class UserRolesResourceOps[Self <: UserRolesResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelete(value: Fields => Request[Unit]): Self = this.set("delete", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGet(value: Fields => Request[UserRole]): Self = this.set("get", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInsert(value: Key => Request[UserRole]): Self = this.set("insert", js.Any.fromFunction1(value))
+    @scala.inline
+    def setList(value: AccountUserRoleOnly => Request[UserRolesListResponse]): Self = this.set("list", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPatch(value: Fields => Request[UserRole]): Self = this.set("patch", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUpdate(value: Key => Request[UserRole]): Self = this.set("update", js.Any.fromFunction1(value))
+  }
+  
 }
 

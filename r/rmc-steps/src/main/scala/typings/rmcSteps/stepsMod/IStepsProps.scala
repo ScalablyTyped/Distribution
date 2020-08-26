@@ -4,45 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IStepsProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var current: js.UndefOr[Double] = js.undefined
-  var direction: js.UndefOr[String] = js.undefined
-  var iconPrefix: js.UndefOr[String] = js.undefined
-  var labelPlacement: js.UndefOr[String] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var progressDot: js.UndefOr[Boolean | js.Function] = js.undefined
-  var size: js.UndefOr[String] = js.undefined
-  var status: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[js.Any] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var current: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[String] = js.native
+  var iconPrefix: js.UndefOr[String] = js.native
+  var labelPlacement: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var progressDot: js.UndefOr[Boolean | js.Function] = js.native
+  var size: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.native
+  var style: js.UndefOr[js.Any] = js.native
 }
 
 object IStepsProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    current: js.UndefOr[Double] = js.undefined,
-    direction: String = null,
-    iconPrefix: String = null,
-    labelPlacement: String = null,
-    prefixCls: String = null,
-    progressDot: Boolean | js.Function = null,
-    size: String = null,
-    status: String = null,
-    style: js.Any = null
-  ): IStepsProps = {
+  def apply(): IStepsProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix.asInstanceOf[js.Any])
-    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (progressDot != null) __obj.updateDynamic("progressDot")(progressDot.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStepsProps]
   }
+  @scala.inline
+  implicit class IStepsPropsOps[Self <: IStepsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCurrent(value: Double): Self = this.set("current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrent: Self = this.set("current", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setIconPrefix(value: String): Self = this.set("iconPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconPrefix: Self = this.set("iconPrefix", js.undefined)
+    @scala.inline
+    def setLabelPlacement(value: String): Self = this.set("labelPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelPlacement: Self = this.set("labelPlacement", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setProgressDot(value: Boolean | js.Function): Self = this.set("progressDot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressDot: Self = this.set("progressDot", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

@@ -26,16 +26,9 @@ object putTraceSegmentsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: PutTraceSegmentsInput) = this()
-    /* CompleteClass */
-    override val input: PutTraceSegmentsInput = js.native
     val middlewareStack: MiddlewareStack[PutTraceSegmentsInput, PutTraceSegmentsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: XRayResolvedConfiguration
-    ): Handler[PutTraceSegmentsInput, PutTraceSegmentsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: XRayResolvedConfiguration
     ): Handler[PutTraceSegmentsInput, PutTraceSegmentsOutput] = js.native
   }

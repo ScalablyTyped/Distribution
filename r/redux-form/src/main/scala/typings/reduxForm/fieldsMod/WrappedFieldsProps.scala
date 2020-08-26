@@ -6,13 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WrappedFieldsProps extends /* name */ StringDictionary[WrappedFieldsProps with WrappedFieldProps]
 
 object WrappedFieldsProps {
   @scala.inline
-  def apply(StringDictionary: /* name */ StringDictionary[WrappedFieldsProps with WrappedFieldProps] = null): WrappedFieldsProps = {
+  def apply(): WrappedFieldsProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[WrappedFieldsProps]
   }
 }

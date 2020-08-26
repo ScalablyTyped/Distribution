@@ -48,6 +48,7 @@ object graphlib extends js.Object {
     def setEdge(params: Edge, value: String): Graph[T] = js.native
     def setEdge(params: Edge, value: StringDictionary[js.Any]): Graph[T] = js.native
     def setEdge(sourceId: String, targetId: String): Graph[T] = js.native
+    def setEdge(sourceId: String, targetId: String, value: js.UndefOr[scala.Nothing], name: String): Graph[T] = js.native
     def setEdge(sourceId: String, targetId: String, value: String): Graph[T] = js.native
     def setEdge(sourceId: String, targetId: String, value: String, name: String): Graph[T] = js.native
     def setEdge(sourceId: String, targetId: String, value: Label): Graph[T] = js.native
@@ -65,13 +66,16 @@ object graphlib extends js.Object {
   object alg extends js.Object {
     def components(graph: Graph[js.Object]): js.Array[js.Array[String]] = js.native
     def dijkstra(graph: Graph[js.Object], source: String): js.Any = js.native
+    def dijkstra(graph: Graph[js.Object], source: String, weightFn: js.UndefOr[scala.Nothing], edgeFn: EdgeFn): js.Any = js.native
     def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn): js.Any = js.native
     def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn, edgeFn: EdgeFn): js.Any = js.native
     def dijkstraAll(graph: Graph[js.Object]): js.Any = js.native
+    def dijkstraAll(graph: Graph[js.Object], weightFn: js.UndefOr[scala.Nothing], edgeFn: EdgeFn): js.Any = js.native
     def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn): js.Any = js.native
     def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = js.native
     def findCycles(graph: Graph[js.Object]): js.Array[js.Array[String]] = js.native
     def floydWarchall(graph: Graph[js.Object]): js.Any = js.native
+    def floydWarchall(graph: Graph[js.Object], weightFn: js.UndefOr[scala.Nothing], edgeFn: EdgeFn): js.Any = js.native
     def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn): js.Any = js.native
     def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = js.native
     def isAcyclic(graph: Graph[js.Object]): Boolean = js.native

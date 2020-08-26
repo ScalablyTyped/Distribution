@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default () extends IntlRelativeFormat {
   def this(locales: String) = this()
   def this(locales: js.Array[String]) = this()
+  def this(locales: js.UndefOr[scala.Nothing], opts: IntlRelativeFormatOptions) = this()
   def this(locales: String, opts: IntlRelativeFormatOptions) = this()
   def this(locales: js.Array[String], opts: IntlRelativeFormatOptions) = this()
 }

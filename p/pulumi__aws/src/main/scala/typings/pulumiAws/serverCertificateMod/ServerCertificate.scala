@@ -50,7 +50,7 @@ class ServerCertificate protected () extends CustomResource {
     * The IAM path for the server certificate.  If it is not
     * included, it defaults to a slash (/). If this certificate is for use with
     * AWS CloudFront, the path must be in format `/cloudfront/your_path_here`.
-    * See [IAM Identifiers][1] for more details on IAM Paths.
+    * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more details on IAM Paths.
     */
   val path: Output_[js.UndefOr[String]] = js.native
   /**
@@ -70,8 +70,10 @@ object ServerCertificate extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ServerCertificate = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ServerCertificate = js.native
   def get(name: String, id: Input[ID], state: ServerCertificateState): ServerCertificate = js.native
   def get(name: String, id: Input[ID], state: ServerCertificateState, opts: CustomResourceOptions): ServerCertificate = js.native
   /**

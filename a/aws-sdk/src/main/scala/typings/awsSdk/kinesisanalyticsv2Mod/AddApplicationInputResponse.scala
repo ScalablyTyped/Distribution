@@ -22,16 +22,36 @@ trait AddApplicationInputResponse extends js.Object {
 
 object AddApplicationInputResponse {
   @scala.inline
-  def apply(
-    ApplicationARN: ResourceARN = null,
-    ApplicationVersionId: js.UndefOr[ApplicationVersionId] = js.undefined,
-    InputDescriptions: InputDescriptions = null
-  ): AddApplicationInputResponse = {
+  def apply(): AddApplicationInputResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationARN != null) __obj.updateDynamic("ApplicationARN")(ApplicationARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplicationVersionId)) __obj.updateDynamic("ApplicationVersionId")(ApplicationVersionId.get.asInstanceOf[js.Any])
-    if (InputDescriptions != null) __obj.updateDynamic("InputDescriptions")(InputDescriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddApplicationInputResponse]
   }
+  @scala.inline
+  implicit class AddApplicationInputResponseOps[Self <: AddApplicationInputResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationARN(value: ResourceARN): Self = this.set("ApplicationARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationARN: Self = this.set("ApplicationARN", js.undefined)
+    @scala.inline
+    def setApplicationVersionId(value: ApplicationVersionId): Self = this.set("ApplicationVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationVersionId: Self = this.set("ApplicationVersionId", js.undefined)
+    @scala.inline
+    def setInputDescriptionsVarargs(value: InputDescription*): Self = this.set("InputDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setInputDescriptions(value: InputDescriptions): Self = this.set("InputDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDescriptions: Self = this.set("InputDescriptions", js.undefined)
+  }
+  
 }
 

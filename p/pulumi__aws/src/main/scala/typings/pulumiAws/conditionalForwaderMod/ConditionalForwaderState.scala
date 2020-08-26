@@ -23,16 +23,36 @@ trait ConditionalForwaderState extends js.Object {
 
 object ConditionalForwaderState {
   @scala.inline
-  def apply(
-    directoryId: Input[String] = null,
-    dnsIps: Input[js.Array[Input[String]]] = null,
-    remoteDomainName: Input[String] = null
-  ): ConditionalForwaderState = {
+  def apply(): ConditionalForwaderState = {
     val __obj = js.Dynamic.literal()
-    if (directoryId != null) __obj.updateDynamic("directoryId")(directoryId.asInstanceOf[js.Any])
-    if (dnsIps != null) __obj.updateDynamic("dnsIps")(dnsIps.asInstanceOf[js.Any])
-    if (remoteDomainName != null) __obj.updateDynamic("remoteDomainName")(remoteDomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalForwaderState]
   }
+  @scala.inline
+  implicit class ConditionalForwaderStateOps[Self <: ConditionalForwaderState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryId(value: Input[String]): Self = this.set("directoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryId: Self = this.set("directoryId", js.undefined)
+    @scala.inline
+    def setDnsIpsVarargs(value: Input[String]*): Self = this.set("dnsIps", js.Array(value :_*))
+    @scala.inline
+    def setDnsIps(value: Input[js.Array[Input[String]]]): Self = this.set("dnsIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsIps: Self = this.set("dnsIps", js.undefined)
+    @scala.inline
+    def setRemoteDomainName(value: Input[String]): Self = this.set("remoteDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteDomainName: Self = this.set("remoteDomainName", js.undefined)
+  }
+  
 }
 

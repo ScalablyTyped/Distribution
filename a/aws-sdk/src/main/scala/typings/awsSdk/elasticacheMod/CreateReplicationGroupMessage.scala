@@ -19,7 +19,7 @@ trait CreateReplicationGroupMessage extends js.Object {
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.native
   /**
-    * Specifies whether a read-only replica is automatically promoted to read/write primary if the existing primary fails.  AutomaticFailoverEnabled must be enabled for Redis (cluster mode enabled) replication groups. Default: false Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 node types.   Redis (cluster mode enabled): T1 node types.  
+    * Specifies whether a read-only replica is automatically promoted to read/write primary if the existing primary fails.  AutomaticFailoverEnabled must be enabled for Redis (cluster mode enabled) replication groups. Default: false
     */
   var AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.native
   /**
@@ -134,70 +134,154 @@ trait CreateReplicationGroupMessage extends js.Object {
 
 object CreateReplicationGroupMessage {
   @scala.inline
-  def apply(
-    ReplicationGroupDescription: String,
-    ReplicationGroupId: String,
-    AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    AuthToken: String = null,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
-    AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    CacheNodeType: String = null,
-    CacheParameterGroupName: String = null,
-    CacheSecurityGroupNames: CacheSecurityGroupNameList = null,
-    CacheSubnetGroupName: String = null,
-    Engine: String = null,
-    EngineVersion: String = null,
-    GlobalReplicationGroupId: String = null,
-    KmsKeyId: String = null,
-    MultiAZEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    NodeGroupConfiguration: NodeGroupConfigurationList = null,
-    NotificationTopicArn: String = null,
-    NumCacheClusters: js.UndefOr[IntegerOptional] = js.undefined,
-    NumNodeGroups: js.UndefOr[IntegerOptional] = js.undefined,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
-    PreferredCacheClusterAZs: AvailabilityZonesList = null,
-    PreferredMaintenanceWindow: String = null,
-    PrimaryClusterId: String = null,
-    ReplicasPerNodeGroup: js.UndefOr[IntegerOptional] = js.undefined,
-    SecurityGroupIds: SecurityGroupIdsList = null,
-    SnapshotArns: SnapshotArnsList = null,
-    SnapshotName: String = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
-    SnapshotWindow: String = null,
-    Tags: TagList = null,
-    TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
-  ): CreateReplicationGroupMessage = {
+  def apply(ReplicationGroupDescription: String, ReplicationGroupId: String): CreateReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ReplicationGroupDescription = ReplicationGroupDescription.asInstanceOf[js.Any], ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.get.asInstanceOf[js.Any])
-    if (AuthToken != null) __obj.updateDynamic("AuthToken")(AuthToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutomaticFailoverEnabled)) __obj.updateDynamic("AutomaticFailoverEnabled")(AutomaticFailoverEnabled.get.asInstanceOf[js.Any])
-    if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
-    if (CacheParameterGroupName != null) __obj.updateDynamic("CacheParameterGroupName")(CacheParameterGroupName.asInstanceOf[js.Any])
-    if (CacheSecurityGroupNames != null) __obj.updateDynamic("CacheSecurityGroupNames")(CacheSecurityGroupNames.asInstanceOf[js.Any])
-    if (CacheSubnetGroupName != null) __obj.updateDynamic("CacheSubnetGroupName")(CacheSubnetGroupName.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (GlobalReplicationGroupId != null) __obj.updateDynamic("GlobalReplicationGroupId")(GlobalReplicationGroupId.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZEnabled)) __obj.updateDynamic("MultiAZEnabled")(MultiAZEnabled.get.asInstanceOf[js.Any])
-    if (NodeGroupConfiguration != null) __obj.updateDynamic("NodeGroupConfiguration")(NodeGroupConfiguration.asInstanceOf[js.Any])
-    if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumCacheClusters)) __obj.updateDynamic("NumCacheClusters")(NumCacheClusters.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumNodeGroups)) __obj.updateDynamic("NumNodeGroups")(NumNodeGroups.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (PreferredCacheClusterAZs != null) __obj.updateDynamic("PreferredCacheClusterAZs")(PreferredCacheClusterAZs.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (PrimaryClusterId != null) __obj.updateDynamic("PrimaryClusterId")(PrimaryClusterId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReplicasPerNodeGroup)) __obj.updateDynamic("ReplicasPerNodeGroup")(ReplicasPerNodeGroup.get.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (SnapshotArns != null) __obj.updateDynamic("SnapshotArns")(SnapshotArns.asInstanceOf[js.Any])
-    if (SnapshotName != null) __obj.updateDynamic("SnapshotName")(SnapshotName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.get.asInstanceOf[js.Any])
-    if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReplicationGroupMessage]
   }
+  @scala.inline
+  implicit class CreateReplicationGroupMessageOps[Self <: CreateReplicationGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReplicationGroupDescription(value: String): Self = this.set("ReplicationGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAtRestEncryptionEnabled(value: BooleanOptional): Self = this.set("AtRestEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtRestEncryptionEnabled: Self = this.set("AtRestEncryptionEnabled", js.undefined)
+    @scala.inline
+    def setAuthToken(value: String): Self = this.set("AuthToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthToken: Self = this.set("AuthToken", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: BooleanOptional): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setAutomaticFailoverEnabled(value: BooleanOptional): Self = this.set("AutomaticFailoverEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticFailoverEnabled: Self = this.set("AutomaticFailoverEnabled", js.undefined)
+    @scala.inline
+    def setCacheNodeType(value: String): Self = this.set("CacheNodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodeType: Self = this.set("CacheNodeType", js.undefined)
+    @scala.inline
+    def setCacheParameterGroupName(value: String): Self = this.set("CacheParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheParameterGroupName: Self = this.set("CacheParameterGroupName", js.undefined)
+    @scala.inline
+    def setCacheSecurityGroupNamesVarargs(value: String*): Self = this.set("CacheSecurityGroupNames", js.Array(value :_*))
+    @scala.inline
+    def setCacheSecurityGroupNames(value: CacheSecurityGroupNameList): Self = this.set("CacheSecurityGroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSecurityGroupNames: Self = this.set("CacheSecurityGroupNames", js.undefined)
+    @scala.inline
+    def setCacheSubnetGroupName(value: String): Self = this.set("CacheSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSubnetGroupName: Self = this.set("CacheSubnetGroupName", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalReplicationGroupId: Self = this.set("GlobalReplicationGroupId", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setMultiAZEnabled(value: BooleanOptional): Self = this.set("MultiAZEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiAZEnabled: Self = this.set("MultiAZEnabled", js.undefined)
+    @scala.inline
+    def setNodeGroupConfigurationVarargs(value: NodeGroupConfiguration*): Self = this.set("NodeGroupConfiguration", js.Array(value :_*))
+    @scala.inline
+    def setNodeGroupConfiguration(value: NodeGroupConfigurationList): Self = this.set("NodeGroupConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeGroupConfiguration: Self = this.set("NodeGroupConfiguration", js.undefined)
+    @scala.inline
+    def setNotificationTopicArn(value: String): Self = this.set("NotificationTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationTopicArn: Self = this.set("NotificationTopicArn", js.undefined)
+    @scala.inline
+    def setNumCacheClusters(value: IntegerOptional): Self = this.set("NumCacheClusters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumCacheClusters: Self = this.set("NumCacheClusters", js.undefined)
+    @scala.inline
+    def setNumNodeGroups(value: IntegerOptional): Self = this.set("NumNodeGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumNodeGroups: Self = this.set("NumNodeGroups", js.undefined)
+    @scala.inline
+    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setPreferredCacheClusterAZsVarargs(value: String*): Self = this.set("PreferredCacheClusterAZs", js.Array(value :_*))
+    @scala.inline
+    def setPreferredCacheClusterAZs(value: AvailabilityZonesList): Self = this.set("PreferredCacheClusterAZs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredCacheClusterAZs: Self = this.set("PreferredCacheClusterAZs", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setPrimaryClusterId(value: String): Self = this.set("PrimaryClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryClusterId: Self = this.set("PrimaryClusterId", js.undefined)
+    @scala.inline
+    def setReplicasPerNodeGroup(value: IntegerOptional): Self = this.set("ReplicasPerNodeGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicasPerNodeGroup: Self = this.set("ReplicasPerNodeGroup", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: SecurityGroupIdsList): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setSnapshotArnsVarargs(value: String*): Self = this.set("SnapshotArns", js.Array(value :_*))
+    @scala.inline
+    def setSnapshotArns(value: SnapshotArnsList): Self = this.set("SnapshotArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotArns: Self = this.set("SnapshotArns", js.undefined)
+    @scala.inline
+    def setSnapshotName(value: String): Self = this.set("SnapshotName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotName: Self = this.set("SnapshotName", js.undefined)
+    @scala.inline
+    def setSnapshotRetentionLimit(value: IntegerOptional): Self = this.set("SnapshotRetentionLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotRetentionLimit: Self = this.set("SnapshotRetentionLimit", js.undefined)
+    @scala.inline
+    def setSnapshotWindow(value: String): Self = this.set("SnapshotWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotWindow: Self = this.set("SnapshotWindow", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTransitEncryptionEnabled(value: BooleanOptional): Self = this.set("TransitEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitEncryptionEnabled: Self = this.set("TransitEncryptionEnabled", js.undefined)
+  }
+  
 }
 

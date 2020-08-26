@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This service specifies a collection of {@link Bookmarks} . */
+@js.native
 trait Bookmarks
   extends XNameAccess
      with XIndexAccess

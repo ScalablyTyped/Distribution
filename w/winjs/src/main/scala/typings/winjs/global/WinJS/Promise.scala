@@ -26,6 +26,7 @@ class Promise[T] ()
         /* progressDispatch */ js.Any, 
         Unit
       ]) = this()
+  def this(init: js.UndefOr[scala.Nothing], onCancel: js.Function) = this()
   def this(
     init: js.Function3[
         /* completeDispatch */ js.Any, 
@@ -118,7 +119,30 @@ object Promise extends js.Object {
     * @returns The promise whose value is the result of executing the onComplete function.
     **/
   def `then`(promise: IPromise[_]): IPromise[_] = js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, _]
+  ): IPromise[_] = js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, _],
+    onProgress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
   def `then`(promise: IPromise[_], onComplete: js.Function1[/* value */ js.Any, _]): IPromise[_] = js.native
+  def `then`(
+    promise: IPromise[_],
+    onComplete: js.Function1[/* value */ js.Any, _],
+    onError: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
   def `then`(
     promise: IPromise[_],
     onComplete: js.Function1[/* value */ js.Any, _],
@@ -139,7 +163,26 @@ object Promise extends js.Object {
     * @returns A Promise that is the result of calling join on the values parameter.
     **/
   def thenEach(values: js.Any): IPromise[_] = js.native
+  def thenEach(
+    values: js.Any,
+    complete: js.UndefOr[scala.Nothing],
+    error: js.UndefOr[scala.Nothing],
+    progress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
+  def thenEach(values: js.Any, complete: js.UndefOr[scala.Nothing], error: js.Function1[/* error */ js.Any, Unit]): IPromise[_] = js.native
+  def thenEach(
+    values: js.Any,
+    complete: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* error */ js.Any, Unit],
+    progress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
   def thenEach(values: js.Any, complete: js.Function1[/* value */ js.Any, Unit]): IPromise[_] = js.native
+  def thenEach(
+    values: js.Any,
+    complete: js.Function1[/* value */ js.Any, Unit],
+    error: js.UndefOr[scala.Nothing],
+    progress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[_] = js.native
   def thenEach(
     values: js.Any,
     complete: js.Function1[/* value */ js.Any, Unit],
@@ -158,6 +201,7 @@ object Promise extends js.Object {
     * @returns If the promise parameter is omitted, returns a promise that will be fulfilled after the timeout period. If the promise paramater is provided, the same promise is returned.
     **/
   def timeout(): IPromise[_] = js.native
+  def timeout(timeout: js.UndefOr[scala.Nothing], promise: IPromise[_]): IPromise[_] = js.native
   def timeout(timeout: Double): IPromise[_] = js.native
   def timeout(timeout: Double, promise: IPromise[_]): IPromise[_] = js.native
   /**

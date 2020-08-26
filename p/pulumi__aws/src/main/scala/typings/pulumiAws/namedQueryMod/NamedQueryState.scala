@@ -31,20 +31,42 @@ trait NamedQueryState extends js.Object {
 
 object NamedQueryState {
   @scala.inline
-  def apply(
-    database: Input[String] = null,
-    description: Input[String] = null,
-    name: Input[String] = null,
-    query: Input[String] = null,
-    workgroup: Input[String] = null
-  ): NamedQueryState = {
+  def apply(): NamedQueryState = {
     val __obj = js.Dynamic.literal()
-    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (workgroup != null) __obj.updateDynamic("workgroup")(workgroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedQueryState]
   }
+  @scala.inline
+  implicit class NamedQueryStateOps[Self <: NamedQueryState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabase(value: Input[String]): Self = this.set("database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabase: Self = this.set("database", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setQuery(value: Input[String]): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setWorkgroup(value: Input[String]): Self = this.set("workgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkgroup: Self = this.set("workgroup", js.undefined)
+  }
+  
 }
 

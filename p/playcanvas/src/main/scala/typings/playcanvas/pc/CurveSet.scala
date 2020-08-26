@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Creates a new curve set.
   * @param [curveKeys] - An array of arrays of keys (pairs of numbers with
-  the time first and value second).
+  * the time first and value second).
   */
 @js.native
 trait CurveSet extends js.Object {
@@ -17,13 +17,13 @@ trait CurveSet extends js.Object {
   val length: Double = js.native
   /**
     * The interpolation scheme applied to all curves in the curve set. Can be:
-    
-    * {@link pc.CURVE_LINEAR}
-    * {@link pc.CURVE_SMOOTHSTEP}
-    * {@link pc.CURVE_SPLINE}
-    * {@link pc.CURVE_STEP}
-    
-    Defaults to {@link pc.CURVE_SMOOTHSTEP}.
+    *
+    * * {@link pc.CURVE_LINEAR}
+    * * {@link pc.CURVE_SMOOTHSTEP}
+    * * {@link pc.CURVE_SPLINE}
+    * * {@link pc.CURVE_STEP}
+    *
+    * Defaults to {@link pc.CURVE_SMOOTHSTEP}.
     */
   var `type`: Double = js.native
   /**
@@ -34,11 +34,11 @@ trait CurveSet extends js.Object {
   def get(index: Double): Curve = js.native
   /**
     * Returns the interpolated value of all curves in the curve
-    set at the specified time.
+    * set at the specified time.
     * @param time - The time at which to calculate the value.
     * @param [result] - The interpolated curve values at the specified time.
-    If this parameter is not supplied, the function allocates a new array internally
-    to return the result.
+    * If this parameter is not supplied, the function allocates a new array internally
+    * to return the result.
     * @returns The interpolated curve values at the specified time.
     */
   def value(time: Double): js.Array[Double] = js.native

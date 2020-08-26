@@ -62,36 +62,74 @@ trait DescribeSigningJobResponse extends js.Object {
 
 object DescribeSigningJobResponse {
   @scala.inline
-  def apply(
-    completedAt: CompletedAt = null,
-    createdAt: CreatedAt = null,
-    jobId: JobId = null,
-    overrides: SigningPlatformOverrides = null,
-    platformId: PlatformId = null,
-    profileName: ProfileName = null,
-    requestedBy: RequestedBy = null,
-    signedObject: SignedObject = null,
-    signingMaterial: SigningMaterial = null,
-    signingParameters: SigningParameters = null,
-    source: Source = null,
-    status: SigningStatus = null,
-    statusReason: StatusReason = null
-  ): DescribeSigningJobResponse = {
+  def apply(): DescribeSigningJobResponse = {
     val __obj = js.Dynamic.literal()
-    if (completedAt != null) __obj.updateDynamic("completedAt")(completedAt.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (platformId != null) __obj.updateDynamic("platformId")(platformId.asInstanceOf[js.Any])
-    if (profileName != null) __obj.updateDynamic("profileName")(profileName.asInstanceOf[js.Any])
-    if (requestedBy != null) __obj.updateDynamic("requestedBy")(requestedBy.asInstanceOf[js.Any])
-    if (signedObject != null) __obj.updateDynamic("signedObject")(signedObject.asInstanceOf[js.Any])
-    if (signingMaterial != null) __obj.updateDynamic("signingMaterial")(signingMaterial.asInstanceOf[js.Any])
-    if (signingParameters != null) __obj.updateDynamic("signingParameters")(signingParameters.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSigningJobResponse]
   }
+  @scala.inline
+  implicit class DescribeSigningJobResponseOps[Self <: DescribeSigningJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletedAt(value: CompletedAt): Self = this.set("completedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedAt: Self = this.set("completedAt", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: CreatedAt): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setOverrides(value: SigningPlatformOverrides): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setPlatformId(value: PlatformId): Self = this.set("platformId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformId: Self = this.set("platformId", js.undefined)
+    @scala.inline
+    def setProfileName(value: ProfileName): Self = this.set("profileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileName: Self = this.set("profileName", js.undefined)
+    @scala.inline
+    def setRequestedBy(value: RequestedBy): Self = this.set("requestedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedBy: Self = this.set("requestedBy", js.undefined)
+    @scala.inline
+    def setSignedObject(value: SignedObject): Self = this.set("signedObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignedObject: Self = this.set("signedObject", js.undefined)
+    @scala.inline
+    def setSigningMaterial(value: SigningMaterial): Self = this.set("signingMaterial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningMaterial: Self = this.set("signingMaterial", js.undefined)
+    @scala.inline
+    def setSigningParameters(value: SigningParameters): Self = this.set("signingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningParameters: Self = this.set("signingParameters", js.undefined)
+    @scala.inline
+    def setSource(value: Source): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setStatus(value: SigningStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: StatusReason): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+  }
+  
 }
 

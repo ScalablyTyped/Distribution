@@ -13,6 +13,7 @@ class DataView protected ()
   extends typings.minappEnv.DataView {
   def this(buffer: ArrayBufferLike) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: js.UndefOr[scala.Nothing], byteLength: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double, byteLength: Double) = this()
 }
 

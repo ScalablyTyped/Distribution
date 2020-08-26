@@ -31,7 +31,7 @@ class XPathBasedUserSource protected () extends UserSource {
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
   def xPathConstraint: String = js.native
-  def xPathConstraint(newValue: String): js.Any = js.native
+  def xPathConstraint_=(newValue: String): Unit = js.native
 }
 
 /* static members */

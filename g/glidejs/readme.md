@@ -12,7 +12,7 @@ Glide is a responsive and touch-friendly jQuery slider. Based on CSS3 transition
 | Keywords           | simple, lightweight, fast, slider, carousel, jQuery, CSS3, transitions, touch, responsive |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5824 |
+| # downloads        | 5637 |
 | # stars            | 1 |
 
 ## Links

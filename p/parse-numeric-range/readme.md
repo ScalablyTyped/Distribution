@@ -12,7 +12,7 @@ Takes a string, such as "1,2,3-10,5-8" and turns it into an array of numbers
 | Keywords           | parse, numbers, ranges, utility, arrays |
 | # releases         | 0 |
 | # dependents       | 36 |
-| # downloads        | 2065761 |
+| # downloads        | 2087722 |
 | # stars            | 0 |
 
 ## Links

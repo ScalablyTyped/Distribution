@@ -9,75 +9,148 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<intercom-client.intercom-client/User.CreateUpdateUser> */
+@js.native
 trait PartialCreateUpdateUser extends js.Object {
-  var anonymous: js.UndefOr[Boolean] = js.undefined
-  var app_id: js.UndefOr[String] = js.undefined
-  var avatar: js.UndefOr[Avatar] = js.undefined
-  var companies: js.UndefOr[js.Array[PartialCompanyremoveboole]] = js.undefined
-  var created_at: js.UndefOr[Double] = js.undefined
-  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var email: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var last_request_at: js.UndefOr[Double] = js.undefined
-  var last_seen_ip: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var phone: js.UndefOr[String] = js.undefined
-  var pseudonym: js.UndefOr[String] = js.undefined
-  var session_count: js.UndefOr[Double] = js.undefined
-  var signed_up_at: js.UndefOr[Double] = js.undefined
-  var `type`: js.UndefOr[user | contact] = js.undefined
-  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.undefined
-  var updated_at: js.UndefOr[Double] = js.undefined
-  var user_agent_data: js.UndefOr[String] = js.undefined
-  var user_id: js.UndefOr[String] = js.undefined
+  var anonymous: js.UndefOr[Boolean] = js.native
+  var app_id: js.UndefOr[String] = js.native
+  var avatar: js.UndefOr[Avatar] = js.native
+  var companies: js.UndefOr[js.Array[PartialCompanyremoveboole]] = js.native
+  var created_at: js.UndefOr[Double] = js.native
+  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var email: js.UndefOr[String | Null] = js.native
+  var id: js.UndefOr[String] = js.native
+  var last_request_at: js.UndefOr[Double | Null] = js.native
+  var last_seen_ip: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.native
+  var phone: js.UndefOr[String | Null] = js.native
+  var pseudonym: js.UndefOr[String | Null] = js.native
+  var session_count: js.UndefOr[Double] = js.native
+  var signed_up_at: js.UndefOr[Double | Null] = js.native
+  var `type`: js.UndefOr[user | contact] = js.native
+  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.native
+  var updated_at: js.UndefOr[Double] = js.native
+  var user_agent_data: js.UndefOr[String | Null] = js.native
+  var user_id: js.UndefOr[String | Null] = js.native
 }
 
 object PartialCreateUpdateUser {
   @scala.inline
-  def apply(
-    anonymous: js.UndefOr[Boolean] = js.undefined,
-    app_id: String = null,
-    avatar: Avatar = null,
-    companies: js.Array[PartialCompanyremoveboole] = null,
-    created_at: js.UndefOr[Double] = js.undefined,
-    custom_attributes: StringDictionary[js.Any] = null,
-    email: String = null,
-    id: String = null,
-    last_request_at: js.UndefOr[Double] = js.undefined,
-    last_seen_ip: String = null,
-    name: String = null,
-    phone: String = null,
-    pseudonym: String = null,
-    session_count: js.UndefOr[Double] = js.undefined,
-    signed_up_at: js.UndefOr[Double] = js.undefined,
-    `type`: user | contact = null,
-    unsubscribed_from_emails: js.UndefOr[Boolean] = js.undefined,
-    updated_at: js.UndefOr[Double] = js.undefined,
-    user_agent_data: String = null,
-    user_id: String = null
-  ): PartialCreateUpdateUser = {
+  def apply(): PartialCreateUpdateUser = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.get.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (companies != null) __obj.updateDynamic("companies")(companies.asInstanceOf[js.Any])
-    if (!js.isUndefined(created_at)) __obj.updateDynamic("created_at")(created_at.get.asInstanceOf[js.Any])
-    if (custom_attributes != null) __obj.updateDynamic("custom_attributes")(custom_attributes.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(last_request_at)) __obj.updateDynamic("last_request_at")(last_request_at.get.asInstanceOf[js.Any])
-    if (last_seen_ip != null) __obj.updateDynamic("last_seen_ip")(last_seen_ip.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (pseudonym != null) __obj.updateDynamic("pseudonym")(pseudonym.asInstanceOf[js.Any])
-    if (!js.isUndefined(session_count)) __obj.updateDynamic("session_count")(session_count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(signed_up_at)) __obj.updateDynamic("signed_up_at")(signed_up_at.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsubscribed_from_emails)) __obj.updateDynamic("unsubscribed_from_emails")(unsubscribed_from_emails.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updated_at)) __obj.updateDynamic("updated_at")(updated_at.get.asInstanceOf[js.Any])
-    if (user_agent_data != null) __obj.updateDynamic("user_agent_data")(user_agent_data.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialCreateUpdateUser]
   }
+  @scala.inline
+  implicit class PartialCreateUpdateUserOps[Self <: PartialCreateUpdateUser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnonymous(value: Boolean): Self = this.set("anonymous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnonymous: Self = this.set("anonymous", js.undefined)
+    @scala.inline
+    def setApp_id(value: String): Self = this.set("app_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApp_id: Self = this.set("app_id", js.undefined)
+    @scala.inline
+    def setAvatar(value: Avatar): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    @scala.inline
+    def setCompaniesVarargs(value: PartialCompanyremoveboole*): Self = this.set("companies", js.Array(value :_*))
+    @scala.inline
+    def setCompanies(value: js.Array[PartialCompanyremoveboole]): Self = this.set("companies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanies: Self = this.set("companies", js.undefined)
+    @scala.inline
+    def setCreated_at(value: Double): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated_at: Self = this.set("created_at", js.undefined)
+    @scala.inline
+    def setCustom_attributes(value: StringDictionary[js.Any]): Self = this.set("custom_attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom_attributes: Self = this.set("custom_attributes", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setEmailNull: Self = this.set("email", null)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLast_request_at(value: Double): Self = this.set("last_request_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast_request_at: Self = this.set("last_request_at", js.undefined)
+    @scala.inline
+    def setLast_request_atNull: Self = this.set("last_request_at", null)
+    @scala.inline
+    def setLast_seen_ip(value: String): Self = this.set("last_seen_ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast_seen_ip: Self = this.set("last_seen_ip", js.undefined)
+    @scala.inline
+    def setLast_seen_ipNull: Self = this.set("last_seen_ip", null)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNameNull: Self = this.set("name", null)
+    @scala.inline
+    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhone: Self = this.set("phone", js.undefined)
+    @scala.inline
+    def setPhoneNull: Self = this.set("phone", null)
+    @scala.inline
+    def setPseudonym(value: String): Self = this.set("pseudonym", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePseudonym: Self = this.set("pseudonym", js.undefined)
+    @scala.inline
+    def setPseudonymNull: Self = this.set("pseudonym", null)
+    @scala.inline
+    def setSession_count(value: Double): Self = this.set("session_count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession_count: Self = this.set("session_count", js.undefined)
+    @scala.inline
+    def setSigned_up_at(value: Double): Self = this.set("signed_up_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigned_up_at: Self = this.set("signed_up_at", js.undefined)
+    @scala.inline
+    def setSigned_up_atNull: Self = this.set("signed_up_at", null)
+    @scala.inline
+    def setType(value: user | contact): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnsubscribed_from_emails(value: Boolean): Self = this.set("unsubscribed_from_emails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsubscribed_from_emails: Self = this.set("unsubscribed_from_emails", js.undefined)
+    @scala.inline
+    def setUpdated_at(value: Double): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated_at: Self = this.set("updated_at", js.undefined)
+    @scala.inline
+    def setUser_agent_data(value: String): Self = this.set("user_agent_data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser_agent_data: Self = this.set("user_agent_data", js.undefined)
+    @scala.inline
+    def setUser_agent_dataNull: Self = this.set("user_agent_data", null)
+    @scala.inline
+    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser_id: Self = this.set("user_id", js.undefined)
+    @scala.inline
+    def setUser_idNull: Self = this.set("user_id", null)
+  }
+  
 }
 

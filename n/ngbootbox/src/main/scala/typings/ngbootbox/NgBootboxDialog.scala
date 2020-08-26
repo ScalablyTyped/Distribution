@@ -5,54 +5,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NgBootboxDialog extends js.Object {
-  var animate: js.UndefOr[Boolean] = js.undefined
-  var backdrop: js.UndefOr[Boolean] = js.undefined
-  var buttons: js.UndefOr[BootboxButtonMap] = js.undefined
-  var callback: js.UndefOr[js.Function0[_]] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var closeButton: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var message: js.UndefOr[String] = js.undefined
-  var onEscape: js.UndefOr[js.Function0[_ | Boolean]] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[String] = js.undefined
-  var templateUrl: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var animate: js.UndefOr[Boolean] = js.native
+  var backdrop: js.UndefOr[Boolean] = js.native
+  var buttons: js.UndefOr[BootboxButtonMap] = js.native
+  var callback: js.UndefOr[js.Function0[_]] = js.native
+  var className: js.UndefOr[String] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.native
+  var onEscape: js.UndefOr[js.Function0[_ | Boolean]] = js.native
+  var show: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object NgBootboxDialog {
   @scala.inline
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    backdrop: js.UndefOr[Boolean] = js.undefined,
-    buttons: BootboxButtonMap = null,
-    callback: () => _ = null,
-    className: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    locale: String = null,
-    message: String = null,
-    onEscape: () => _ | Boolean = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    templateUrl: String = null,
-    title: String = null
-  ): NgBootboxDialog = {
+  def apply(): NgBootboxDialog = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.get.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (onEscape != null) __obj.updateDynamic("onEscape")(js.Any.fromFunction0(onEscape))
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NgBootboxDialog]
   }
+  @scala.inline
+  implicit class NgBootboxDialogOps[Self <: NgBootboxDialog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setBackdrop(value: Boolean): Self = this.set("backdrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdrop: Self = this.set("backdrop", js.undefined)
+    @scala.inline
+    def setButtons(value: BootboxButtonMap): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setCallback(value: () => _): Self = this.set("callback", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCloseButton(value: Boolean): Self = this.set("closeButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseButton: Self = this.set("closeButton", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setOnEscape(value: () => _ | Boolean): Self = this.set("onEscape", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnEscape: Self = this.set("onEscape", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTemplateUrl(value: String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

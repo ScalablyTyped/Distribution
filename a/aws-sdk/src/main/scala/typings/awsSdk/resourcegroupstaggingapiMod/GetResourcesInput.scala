@@ -38,24 +38,54 @@ trait GetResourcesInput extends js.Object {
 
 object GetResourcesInput {
   @scala.inline
-  def apply(
-    ExcludeCompliantResources: js.UndefOr[ExcludeCompliantResources] = js.undefined,
-    IncludeComplianceDetails: js.UndefOr[IncludeComplianceDetails] = js.undefined,
-    PaginationToken: PaginationToken = null,
-    ResourceTypeFilters: ResourceTypeFilterList = null,
-    ResourcesPerPage: js.UndefOr[ResourcesPerPage] = js.undefined,
-    TagFilters: TagFilterList = null,
-    TagsPerPage: js.UndefOr[TagsPerPage] = js.undefined
-  ): GetResourcesInput = {
+  def apply(): GetResourcesInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ExcludeCompliantResources)) __obj.updateDynamic("ExcludeCompliantResources")(ExcludeCompliantResources.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeComplianceDetails)) __obj.updateDynamic("IncludeComplianceDetails")(IncludeComplianceDetails.get.asInstanceOf[js.Any])
-    if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken.asInstanceOf[js.Any])
-    if (ResourceTypeFilters != null) __obj.updateDynamic("ResourceTypeFilters")(ResourceTypeFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(ResourcesPerPage)) __obj.updateDynamic("ResourcesPerPage")(ResourcesPerPage.get.asInstanceOf[js.Any])
-    if (TagFilters != null) __obj.updateDynamic("TagFilters")(TagFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(TagsPerPage)) __obj.updateDynamic("TagsPerPage")(TagsPerPage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcesInput]
   }
+  @scala.inline
+  implicit class GetResourcesInputOps[Self <: GetResourcesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludeCompliantResources(value: ExcludeCompliantResources): Self = this.set("ExcludeCompliantResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeCompliantResources: Self = this.set("ExcludeCompliantResources", js.undefined)
+    @scala.inline
+    def setIncludeComplianceDetails(value: IncludeComplianceDetails): Self = this.set("IncludeComplianceDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeComplianceDetails: Self = this.set("IncludeComplianceDetails", js.undefined)
+    @scala.inline
+    def setPaginationToken(value: PaginationToken): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    @scala.inline
+    def setResourceTypeFiltersVarargs(value: AmazonResourceType*): Self = this.set("ResourceTypeFilters", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypeFilters(value: ResourceTypeFilterList): Self = this.set("ResourceTypeFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypeFilters: Self = this.set("ResourceTypeFilters", js.undefined)
+    @scala.inline
+    def setResourcesPerPage(value: ResourcesPerPage): Self = this.set("ResourcesPerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcesPerPage: Self = this.set("ResourcesPerPage", js.undefined)
+    @scala.inline
+    def setTagFiltersVarargs(value: TagFilter*): Self = this.set("TagFilters", js.Array(value :_*))
+    @scala.inline
+    def setTagFilters(value: TagFilterList): Self = this.set("TagFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagFilters: Self = this.set("TagFilters", js.undefined)
+    @scala.inline
+    def setTagsPerPage(value: TagsPerPage): Self = this.set("TagsPerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagsPerPage: Self = this.set("TagsPerPage", js.undefined)
+  }
+  
 }
 

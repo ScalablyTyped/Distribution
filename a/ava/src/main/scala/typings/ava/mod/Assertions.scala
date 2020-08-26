@@ -185,6 +185,7 @@ trait Assertions extends js.Object {
   	 * Assert that the function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error value.
   	 */
   def throws[ThrownError /* <: Error */](fn: js.Function0[_]): ThrownError = js.native
+  def throws[ThrownError /* <: Error */](fn: js.Function0[_], expectations: js.UndefOr[scala.Nothing], message: String): ThrownError = js.native
   def throws[ThrownError /* <: Error */](fn: js.Function0[_], expectations: Null, message: String): ThrownError = js.native
   def throws[ThrownError /* <: Error */](fn: js.Function0[_], expectations: ThrowsExpectation): ThrownError = js.native
   def throws[ThrownError /* <: Error */](fn: js.Function0[_], expectations: ThrowsExpectation, message: String): ThrownError = js.native
@@ -197,6 +198,7 @@ trait Assertions extends js.Object {
   	 * with one. If so, returns a promise for the error value, which must be awaited.
   	 */
   def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]]): js.Promise[ThrownError] = js.native
+  def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], expectations: js.UndefOr[scala.Nothing], message: String): js.Promise[ThrownError] = js.native
   def throwsAsync[ThrownError /* <: Error */](fn: js.Function0[js.Thenable[_]], expectations: Null, message: String): js.Promise[ThrownError] = js.native
   /**
   	 * Assert that the async function throws [an error](https://www.npmjs.com/package/is-error). If so, returns the error
@@ -217,6 +219,7 @@ trait Assertions extends js.Object {
   	 * with one. If so, returns a promise for the error value, which must be awaited.
   	 */
   def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_]): js.Promise[ThrownError] = js.native
+  def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], expectations: js.UndefOr[scala.Nothing], message: String): js.Promise[ThrownError] = js.native
   def throwsAsync[ThrownError /* <: Error */](promise: js.Thenable[_], expectations: Null, message: String): js.Promise[ThrownError] = js.native
   /**
   	 * Assert that the promise rejects with [an error](https://www.npmjs.com/package/is-error). If so, returns the

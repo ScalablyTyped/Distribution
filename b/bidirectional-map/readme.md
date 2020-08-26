@@ -12,7 +12,7 @@ Create 'key/value' collections of one-to-one correspondence.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 29172 |
+| # downloads        | 29774 |
 | # stars            | 0 |
 
 ## Links

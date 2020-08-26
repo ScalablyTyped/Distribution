@@ -6,43 +6,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Config extends js.Object {
-  var basePath: js.UndefOr[String] = js.undefined
-  var imports: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var logoSrc: js.UndefOr[String] = js.undefined
-  var pages: js.Array[ConfigPageOrGroup]
-  var responsiveSizes: js.UndefOr[js.Array[ConfigResponsiveSize]] = js.undefined
-  var scripts: js.UndefOr[js.Array[String]] = js.undefined
-  var styles: js.UndefOr[js.Array[String]] = js.undefined
-  var theme: js.UndefOr[PartialTheme] = js.undefined
-  var title: String
-  var useBrowserHistory: js.UndefOr[Boolean] = js.undefined
+  var basePath: js.UndefOr[String] = js.native
+  var imports: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var logoSrc: js.UndefOr[String] = js.native
+  var pages: js.Array[ConfigPageOrGroup] = js.native
+  var responsiveSizes: js.UndefOr[js.Array[ConfigResponsiveSize]] = js.native
+  var scripts: js.UndefOr[js.Array[String]] = js.native
+  var styles: js.UndefOr[js.Array[String]] = js.native
+  var theme: js.UndefOr[PartialTheme] = js.native
+  var title: String = js.native
+  var useBrowserHistory: js.UndefOr[Boolean] = js.native
 }
 
 object Config {
   @scala.inline
-  def apply(
-    pages: js.Array[ConfigPageOrGroup],
-    title: String,
-    basePath: String = null,
-    imports: StringDictionary[js.Any] = null,
-    logoSrc: String = null,
-    responsiveSizes: js.Array[ConfigResponsiveSize] = null,
-    scripts: js.Array[String] = null,
-    styles: js.Array[String] = null,
-    theme: PartialTheme = null,
-    useBrowserHistory: js.UndefOr[Boolean] = js.undefined
-  ): Config = {
+  def apply(pages: js.Array[ConfigPageOrGroup], title: String): Config = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (logoSrc != null) __obj.updateDynamic("logoSrc")(logoSrc.asInstanceOf[js.Any])
-    if (responsiveSizes != null) __obj.updateDynamic("responsiveSizes")(responsiveSizes.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBrowserHistory)) __obj.updateDynamic("useBrowserHistory")(useBrowserHistory.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
+  @scala.inline
+  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPagesVarargs(value: ConfigPageOrGroup*): Self = this.set("pages", js.Array(value :_*))
+    @scala.inline
+    def setPages(value: js.Array[ConfigPageOrGroup]): Self = this.set("pages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBasePath(value: String): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasePath: Self = this.set("basePath", js.undefined)
+    @scala.inline
+    def setImports(value: StringDictionary[js.Any]): Self = this.set("imports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImports: Self = this.set("imports", js.undefined)
+    @scala.inline
+    def setLogoSrc(value: String): Self = this.set("logoSrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogoSrc: Self = this.set("logoSrc", js.undefined)
+    @scala.inline
+    def setResponsiveSizesVarargs(value: ConfigResponsiveSize*): Self = this.set("responsiveSizes", js.Array(value :_*))
+    @scala.inline
+    def setResponsiveSizes(value: js.Array[ConfigResponsiveSize]): Self = this.set("responsiveSizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsiveSizes: Self = this.set("responsiveSizes", js.undefined)
+    @scala.inline
+    def setScriptsVarargs(value: String*): Self = this.set("scripts", js.Array(value :_*))
+    @scala.inline
+    def setScripts(value: js.Array[String]): Self = this.set("scripts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScripts: Self = this.set("scripts", js.undefined)
+    @scala.inline
+    def setStylesVarargs(value: String*): Self = this.set("styles", js.Array(value :_*))
+    @scala.inline
+    def setStyles(value: js.Array[String]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setTheme(value: PartialTheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setUseBrowserHistory(value: Boolean): Self = this.set("useBrowserHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseBrowserHistory: Self = this.set("useBrowserHistory", js.undefined)
+  }
+  
 }
 

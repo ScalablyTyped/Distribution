@@ -72,6 +72,7 @@ class ResolvedPos[S /* <: Schema[_, _] */] () extends js.Object {
     * node to see if a range into that parent is acceptable.
     */
   def blockRange(): js.UndefOr[NodeRange[S] | Null] = js.native
+  def blockRange(other: js.UndefOr[scala.Nothing], pred: js.Function1[/* p */ ProsemirrorNode[S], Boolean]): js.UndefOr[NodeRange[S] | Null] = js.native
   def blockRange(other: ResolvedPos[S]): js.UndefOr[NodeRange[S] | Null] = js.native
   def blockRange(other: ResolvedPos[S], pred: js.Function1[/* p */ ProsemirrorNode[S], Boolean]): js.UndefOr[NodeRange[S] | Null] = js.native
   /**

@@ -11,8 +11,8 @@ Nice, downward compatible, touchable, jQuery dial
 | Full name          | jquery-knob |
 | Keywords           | jquery, knob, dial |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 854904 |
+| # dependents       | 16 |
+| # downloads        | 868281 |
 | # stars            | 3 |
 
 ## Links

@@ -19,12 +19,36 @@ trait DescribeVTLDevicesOutput extends js.Object {
 
 object DescribeVTLDevicesOutput {
   @scala.inline
-  def apply(GatewayARN: GatewayARN = null, Marker: Marker = null, VTLDevices: VTLDevices = null): DescribeVTLDevicesOutput = {
+  def apply(): DescribeVTLDevicesOutput = {
     val __obj = js.Dynamic.literal()
-    if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (VTLDevices != null) __obj.updateDynamic("VTLDevices")(VTLDevices.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVTLDevicesOutput]
   }
+  @scala.inline
+  implicit class DescribeVTLDevicesOutputOps[Self <: DescribeVTLDevicesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setVTLDevicesVarargs(value: VTLDevice*): Self = this.set("VTLDevices", js.Array(value :_*))
+    @scala.inline
+    def setVTLDevices(value: VTLDevices): Self = this.set("VTLDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVTLDevices: Self = this.set("VTLDevices", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ object fakeMod extends js.Object {
     def this(data: FakeTxData) = this()
     def this(data: PrefixedHexString) = this()
     def this(data: Buffer) = this()
+    def this(data: js.UndefOr[scala.Nothing], opts: TransactionOptions) = this()
     def this(data: js.Array[BufferLike], opts: TransactionOptions) = this()
     def this(data: FakeTxData, opts: TransactionOptions) = this()
     def this(data: PrefixedHexString, opts: TransactionOptions) = this()

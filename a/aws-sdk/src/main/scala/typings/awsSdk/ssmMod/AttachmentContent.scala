@@ -30,20 +30,42 @@ trait AttachmentContent extends js.Object {
 
 object AttachmentContent {
   @scala.inline
-  def apply(
-    Hash: AttachmentHash = null,
-    HashType: AttachmentHashType = null,
-    Name: AttachmentName = null,
-    Size: js.UndefOr[ContentLength] = js.undefined,
-    Url: AttachmentUrl = null
-  ): AttachmentContent = {
+  def apply(): AttachmentContent = {
     val __obj = js.Dynamic.literal()
-    if (Hash != null) __obj.updateDynamic("Hash")(Hash.asInstanceOf[js.Any])
-    if (HashType != null) __obj.updateDynamic("HashType")(HashType.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentContent]
   }
+  @scala.inline
+  implicit class AttachmentContentOps[Self <: AttachmentContent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHash(value: AttachmentHash): Self = this.set("Hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("Hash", js.undefined)
+    @scala.inline
+    def setHashType(value: AttachmentHashType): Self = this.set("HashType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashType: Self = this.set("HashType", js.undefined)
+    @scala.inline
+    def setName(value: AttachmentName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSize(value: ContentLength): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("Size", js.undefined)
+    @scala.inline
+    def setUrl(value: AttachmentUrl): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

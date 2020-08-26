@@ -11,14 +11,13 @@ The lodash method `_.toNumber` exported as a module.
 | Full name          | lodash.tonumber |
 | Keywords           | lodash-modularized, tonumber |
 | # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 21008380 |
+| # dependents       | 45 |
+| # downloads        | 21124558 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.tonumber)
     
 

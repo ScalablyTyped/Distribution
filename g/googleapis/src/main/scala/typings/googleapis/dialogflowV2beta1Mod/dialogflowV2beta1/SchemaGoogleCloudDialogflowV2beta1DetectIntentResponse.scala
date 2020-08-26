@@ -53,22 +53,48 @@ trait SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse {
   @scala.inline
-  def apply(
-    alternativeQueryResults: js.Array[SchemaGoogleCloudDialogflowV2beta1QueryResult] = null,
-    outputAudio: String = null,
-    outputAudioConfig: SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig = null,
-    queryResult: SchemaGoogleCloudDialogflowV2beta1QueryResult = null,
-    responseId: String = null,
-    webhookStatus: SchemaGoogleRpcStatus = null
-  ): SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse = {
     val __obj = js.Dynamic.literal()
-    if (alternativeQueryResults != null) __obj.updateDynamic("alternativeQueryResults")(alternativeQueryResults.asInstanceOf[js.Any])
-    if (outputAudio != null) __obj.updateDynamic("outputAudio")(outputAudio.asInstanceOf[js.Any])
-    if (outputAudioConfig != null) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
-    if (queryResult != null) __obj.updateDynamic("queryResult")(queryResult.asInstanceOf[js.Any])
-    if (responseId != null) __obj.updateDynamic("responseId")(responseId.asInstanceOf[js.Any])
-    if (webhookStatus != null) __obj.updateDynamic("webhookStatus")(webhookStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1DetectIntentResponseOps[Self <: SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlternativeQueryResultsVarargs(value: SchemaGoogleCloudDialogflowV2beta1QueryResult*): Self = this.set("alternativeQueryResults", js.Array(value :_*))
+    @scala.inline
+    def setAlternativeQueryResults(value: js.Array[SchemaGoogleCloudDialogflowV2beta1QueryResult]): Self = this.set("alternativeQueryResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternativeQueryResults: Self = this.set("alternativeQueryResults", js.undefined)
+    @scala.inline
+    def setOutputAudio(value: String): Self = this.set("outputAudio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputAudio: Self = this.set("outputAudio", js.undefined)
+    @scala.inline
+    def setOutputAudioConfig(value: SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig): Self = this.set("outputAudioConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputAudioConfig: Self = this.set("outputAudioConfig", js.undefined)
+    @scala.inline
+    def setQueryResult(value: SchemaGoogleCloudDialogflowV2beta1QueryResult): Self = this.set("queryResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryResult: Self = this.set("queryResult", js.undefined)
+    @scala.inline
+    def setResponseId(value: String): Self = this.set("responseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseId: Self = this.set("responseId", js.undefined)
+    @scala.inline
+    def setWebhookStatus(value: SchemaGoogleRpcStatus): Self = this.set("webhookStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebhookStatus: Self = this.set("webhookStatus", js.undefined)
+  }
+  
 }
 

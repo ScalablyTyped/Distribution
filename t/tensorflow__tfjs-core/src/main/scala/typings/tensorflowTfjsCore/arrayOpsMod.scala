@@ -6,12 +6,8 @@ import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
-import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
 import typings.tensorflowTfjsCore.tensorMod.Tensor
-import typings.tensorflowTfjsCore.tensorMod.Tensor4D
 import typings.tensorflowTfjsCore.tensorMod.TensorBuffer
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCHW
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NHWC
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bool
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.complex64
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
@@ -24,12 +20,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core/dist/ops/array_ops", JSImport.Namespace)
 @js.native
 object arrayOpsMod extends js.Object {
-  val depthToSpace: js.Function3[
-    /* x */ Tensor4D | TensorLike4D, 
-    /* blockSize */ Double, 
-    /* dataFormat */ js.UndefOr[NHWC | NCHW], 
-    Tensor4D
-  ] = js.native
   val setdiff1dAsync: js.Function2[
     /* x */ Tensor[Rank] | TensorLike, 
     /* y */ Tensor[Rank] | TensorLike, 
@@ -43,6 +33,26 @@ object arrayOpsMod extends js.Object {
   def buffer[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): TensorBuffer[R, float32] = js.native
+  def buffer[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: js.UndefOr[scala.Nothing],
+    values: js.Array[String]
+  ): TensorBuffer[R, string] = js.native
+  def buffer[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: js.UndefOr[scala.Nothing],
+    values: Float32Array
+  ): TensorBuffer[R, float32] = js.native
+  def buffer[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: js.UndefOr[scala.Nothing],
+    values: Int32Array
+  ): TensorBuffer[R, int32] = js.native
+  def buffer[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: js.UndefOr[scala.Nothing],
+    values: Uint8Array
+  ): TensorBuffer[R, bool] = js.native
   @JSName("buffer")
   def buffer_bool[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
@@ -113,27 +123,9 @@ object arrayOpsMod extends js.Object {
   def print[T /* <: Tensor[Rank] */](x: T): Unit = js.native
   def print[T /* <: Tensor[Rank] */](x: T, verbose: Boolean): Unit = js.native
   @js.native
-  object batchToSpaceND extends js.Object {
-    def apply[T /* <: Tensor[Rank] */](x: T, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = js.native
-  }
-  
-  @js.native
   object cast extends js.Object {
     def apply[T /* <: Tensor[Rank] */](x: T, dtype: DataType): T = js.native
     def apply[T /* <: Tensor[Rank] */](x: TensorLike, dtype: DataType): T = js.native
-  }
-  
-  @js.native
-  object cumsum extends js.Object {
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Boolean): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Boolean, reverse: Boolean): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Boolean): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Boolean, reverse: Boolean): T = js.native
   }
   
   @js.native
@@ -154,12 +146,6 @@ object arrayOpsMod extends js.Object {
       x: Tensor[Rank],
       shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R2] */ js.Any
     ): Tensor[R2] = js.native
-  }
-  
-  @js.native
-  object spaceToBatchND extends js.Object {
-    def apply[T /* <: Tensor[Rank] */](x: T, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = js.native
-    def apply[T /* <: Tensor[Rank] */](x: TensorLike, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = js.native
   }
   
   @js.native

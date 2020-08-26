@@ -6,20 +6,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetObjectsParameters extends js.Object {
-  var include: js.UndefOr[CustomFields] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var page: js.UndefOr[Next] = js.undefined
+  var include: js.UndefOr[CustomFields] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Next] = js.native
 }
 
 object GetObjectsParameters {
   @scala.inline
-  def apply(include: CustomFields = null, limit: js.UndefOr[Double] = js.undefined, page: Next = null): GetObjectsParameters = {
+  def apply(): GetObjectsParameters = {
     val __obj = js.Dynamic.literal()
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectsParameters]
   }
+  @scala.inline
+  implicit class GetObjectsParametersOps[Self <: GetObjectsParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInclude(value: CustomFields): Self = this.set("include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setPage(value: Next): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+  }
+  
 }
 

@@ -7,50 +7,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CatIndicesParams extends CatCommonParams {
-  var bytes: js.UndefOr[CatBytes] = js.undefined
-  var health: js.UndefOr[green | yellow | red] = js.undefined
-  var index: js.UndefOr[NameList] = js.undefined
-  var pri: js.UndefOr[Boolean] = js.undefined
+  var bytes: js.UndefOr[CatBytes] = js.native
+  var health: js.UndefOr[green | yellow | red] = js.native
+  var index: js.UndefOr[NameList] = js.native
+  var pri: js.UndefOr[Boolean] = js.native
 }
 
 object CatIndicesParams {
   @scala.inline
-  def apply(
-    format: String,
-    body: js.Any = null,
-    bytes: CatBytes = null,
-    filterPath: String | js.Array[String] = null,
-    h: NameList = null,
-    health: green | yellow | red = null,
-    help: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    index: NameList = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: TimeSpan = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    pri: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    v: js.UndefOr[Boolean] = js.undefined
-  ): CatIndicesParams = {
+  def apply(format: String): CatIndicesParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (bytes != null) __obj.updateDynamic("bytes")(bytes.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.get.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pri)) __obj.updateDynamic("pri")(pri.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatIndicesParams]
   }
+  @scala.inline
+  implicit class CatIndicesParamsOps[Self <: CatIndicesParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytes(value: CatBytes): Self = this.set("bytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytes: Self = this.set("bytes", js.undefined)
+    @scala.inline
+    def setHealth(value: green | yellow | red): Self = this.set("health", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealth: Self = this.set("health", js.undefined)
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setPri(value: Boolean): Self = this.set("pri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePri: Self = this.set("pri", js.undefined)
+  }
+  
 }
 

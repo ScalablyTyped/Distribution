@@ -45,16 +45,38 @@ trait SchemaQuotaInfo extends js.Object {
 
 object SchemaQuotaInfo {
   @scala.inline
-  def apply(
-    limitExceeded: js.Array[String] = null,
-    quotaConsumed: StringDictionary[Double] = null,
-    quotaMetrics: js.Array[SchemaMetricValueSet] = null
-  ): SchemaQuotaInfo = {
+  def apply(): SchemaQuotaInfo = {
     val __obj = js.Dynamic.literal()
-    if (limitExceeded != null) __obj.updateDynamic("limitExceeded")(limitExceeded.asInstanceOf[js.Any])
-    if (quotaConsumed != null) __obj.updateDynamic("quotaConsumed")(quotaConsumed.asInstanceOf[js.Any])
-    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuotaInfo]
   }
+  @scala.inline
+  implicit class SchemaQuotaInfoOps[Self <: SchemaQuotaInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimitExceededVarargs(value: String*): Self = this.set("limitExceeded", js.Array(value :_*))
+    @scala.inline
+    def setLimitExceeded(value: js.Array[String]): Self = this.set("limitExceeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitExceeded: Self = this.set("limitExceeded", js.undefined)
+    @scala.inline
+    def setQuotaConsumed(value: StringDictionary[Double]): Self = this.set("quotaConsumed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaConsumed: Self = this.set("quotaConsumed", js.undefined)
+    @scala.inline
+    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = this.set("quotaMetrics", js.Array(value :_*))
+    @scala.inline
+    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = this.set("quotaMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaMetrics: Self = this.set("quotaMetrics", js.undefined)
+  }
+  
 }
 

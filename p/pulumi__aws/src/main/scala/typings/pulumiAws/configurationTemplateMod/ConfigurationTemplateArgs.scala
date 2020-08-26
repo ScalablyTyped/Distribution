@@ -32,28 +32,53 @@ trait ConfigurationTemplateArgs extends js.Object {
   val settings: js.UndefOr[Input[js.Array[Input[ConfigurationTemplateSetting]]]] = js.native
   /**
     * A solution stack to base your Template
-    * off of. Example stacks can be found in the [Amazon API documentation][1]
+    * off of. Example stacks can be found in the [Amazon API documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html)
     */
   val solutionStackName: js.UndefOr[Input[String]] = js.native
 }
 
 object ConfigurationTemplateArgs {
   @scala.inline
-  def apply(
-    application: Input[String],
-    description: Input[String] = null,
-    environmentId: Input[String] = null,
-    name: Input[String] = null,
-    settings: Input[js.Array[Input[ConfigurationTemplateSetting]]] = null,
-    solutionStackName: Input[String] = null
-  ): ConfigurationTemplateArgs = {
+  def apply(application: Input[String]): ConfigurationTemplateArgs = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (environmentId != null) __obj.updateDynamic("environmentId")(environmentId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (solutionStackName != null) __obj.updateDynamic("solutionStackName")(solutionStackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationTemplateArgs]
   }
+  @scala.inline
+  implicit class ConfigurationTemplateArgsOps[Self <: ConfigurationTemplateArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Input[String]): Self = this.set("application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnvironmentId(value: Input[String]): Self = this.set("environmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentId: Self = this.set("environmentId", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSettingsVarargs(value: Input[ConfigurationTemplateSetting]*): Self = this.set("settings", js.Array(value :_*))
+    @scala.inline
+    def setSettings(value: Input[js.Array[Input[ConfigurationTemplateSetting]]]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setSolutionStackName(value: Input[String]): Self = this.set("solutionStackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionStackName: Self = this.set("solutionStackName", js.undefined)
+  }
+  
 }
 

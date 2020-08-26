@@ -1,54 +1,69 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.mod.global.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxTreeViewItem extends CollectionWidgetItem {
   /** @name dxTreeViewItem.expanded */
-  var expanded: js.UndefOr[Boolean] = js.undefined
+  var expanded: js.UndefOr[Boolean] = js.native
   /** @name dxTreeViewItem.hasItems */
-  var hasItems: js.UndefOr[Boolean] = js.undefined
+  var hasItems: js.UndefOr[Boolean] = js.native
   /** @name dxTreeViewItem.icon */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
   /** @name dxTreeViewItem.items */
-  var items: js.UndefOr[js.Array[dxTreeViewItem]] = js.undefined
+  var items: js.UndefOr[js.Array[dxTreeViewItem]] = js.native
   /** @name dxTreeViewItem.parentId */
-  var parentId: js.UndefOr[Double | String] = js.undefined
+  var parentId: js.UndefOr[Double | String] = js.native
   /** @name dxTreeViewItem.selected */
-  var selected: js.UndefOr[Boolean] = js.undefined
+  var selected: js.UndefOr[Boolean] = js.native
 }
 
 object dxTreeViewItem {
   @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    hasItems: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    icon: String = null,
-    items: js.Array[dxTreeViewItem] = null,
-    parentId: Double | String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxTreeViewItem = {
+  def apply(): dxTreeViewItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasItems)) __obj.updateDynamic("hasItems")(hasItems.get.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxTreeViewItem]
   }
+  @scala.inline
+  implicit class dxTreeViewItemOps[Self <: dxTreeViewItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    @scala.inline
+    def setHasItems(value: Boolean): Self = this.set("hasItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasItems: Self = this.set("hasItems", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: dxTreeViewItem*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[dxTreeViewItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setParentId(value: Double | String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+  }
+  
 }
 

@@ -75,52 +75,66 @@ trait ParamsResourceProjectsLocationsRegistriesDevicesList extends StandardParam
 
 object ParamsResourceProjectsLocationsRegistriesDevicesList {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    deviceIds: js.Array[String] = null,
-    deviceNumIds: js.Array[String] = null,
-    fieldMask: String = null,
-    fields: String = null,
-    gatewayListOptionsDotassociationsDeviceId: String = null,
-    gatewayListOptionsDotassociationsGatewayId: String = null,
-    gatewayListOptionsDotgatewayType: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    parent: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): ParamsResourceProjectsLocationsRegistriesDevicesList = {
+  def apply(): ParamsResourceProjectsLocationsRegistriesDevicesList = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (deviceIds != null) __obj.updateDynamic("deviceIds")(deviceIds.asInstanceOf[js.Any])
-    if (deviceNumIds != null) __obj.updateDynamic("deviceNumIds")(deviceNumIds.asInstanceOf[js.Any])
-    if (fieldMask != null) __obj.updateDynamic("fieldMask")(fieldMask.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (gatewayListOptionsDotassociationsDeviceId != null) __obj.updateDynamic("gatewayListOptions.associationsDeviceId")(gatewayListOptionsDotassociationsDeviceId.asInstanceOf[js.Any])
-    if (gatewayListOptionsDotassociationsGatewayId != null) __obj.updateDynamic("gatewayListOptions.associationsGatewayId")(gatewayListOptionsDotassociationsGatewayId.asInstanceOf[js.Any])
-    if (gatewayListOptionsDotgatewayType != null) __obj.updateDynamic("gatewayListOptions.gatewayType")(gatewayListOptionsDotgatewayType.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceProjectsLocationsRegistriesDevicesList]
   }
+  @scala.inline
+  implicit class ParamsResourceProjectsLocationsRegistriesDevicesListOps[Self <: ParamsResourceProjectsLocationsRegistriesDevicesList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setDeviceIdsVarargs(value: String*): Self = this.set("deviceIds", js.Array(value :_*))
+    @scala.inline
+    def setDeviceIds(value: js.Array[String]): Self = this.set("deviceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceIds: Self = this.set("deviceIds", js.undefined)
+    @scala.inline
+    def setDeviceNumIdsVarargs(value: String*): Self = this.set("deviceNumIds", js.Array(value :_*))
+    @scala.inline
+    def setDeviceNumIds(value: js.Array[String]): Self = this.set("deviceNumIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceNumIds: Self = this.set("deviceNumIds", js.undefined)
+    @scala.inline
+    def setFieldMask(value: String): Self = this.set("fieldMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldMask: Self = this.set("fieldMask", js.undefined)
+    @scala.inline
+    def setGatewayListOptionsDotassociationsDeviceId(value: String): Self = this.set("gatewayListOptions.associationsDeviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayListOptionsDotassociationsDeviceId: Self = this.set("gatewayListOptions.associationsDeviceId", js.undefined)
+    @scala.inline
+    def setGatewayListOptionsDotassociationsGatewayId(value: String): Self = this.set("gatewayListOptions.associationsGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayListOptionsDotassociationsGatewayId: Self = this.set("gatewayListOptions.associationsGatewayId", js.undefined)
+    @scala.inline
+    def setGatewayListOptionsDotgatewayType(value: String): Self = this.set("gatewayListOptions.gatewayType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayListOptionsDotgatewayType: Self = this.set("gatewayListOptions.gatewayType", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+  }
+  
 }
 

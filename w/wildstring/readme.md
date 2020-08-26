@@ -11,8 +11,8 @@ Simple String Wildcard Handling
 | Full name          | wildstring |
 | Keywords           | wildcard, string, interpolation |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 412519 |
+| # dependents       | 15 |
+| # downloads        | 438733 |
 | # stars            | 1 |
 
 ## Links

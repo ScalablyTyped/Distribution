@@ -30,19 +30,40 @@ trait SetRiskConfigurationRequest extends js.Object {
 
 object SetRiskConfigurationRequest {
   @scala.inline
-  def apply(
-    UserPoolId: UserPoolIdType,
-    AccountTakeoverRiskConfiguration: AccountTakeoverRiskConfigurationType = null,
-    ClientId: ClientIdType = null,
-    CompromisedCredentialsRiskConfiguration: CompromisedCredentialsRiskConfigurationType = null,
-    RiskExceptionConfiguration: RiskExceptionConfigurationType = null
-  ): SetRiskConfigurationRequest = {
+  def apply(UserPoolId: UserPoolIdType): SetRiskConfigurationRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
-    if (AccountTakeoverRiskConfiguration != null) __obj.updateDynamic("AccountTakeoverRiskConfiguration")(AccountTakeoverRiskConfiguration.asInstanceOf[js.Any])
-    if (ClientId != null) __obj.updateDynamic("ClientId")(ClientId.asInstanceOf[js.Any])
-    if (CompromisedCredentialsRiskConfiguration != null) __obj.updateDynamic("CompromisedCredentialsRiskConfiguration")(CompromisedCredentialsRiskConfiguration.asInstanceOf[js.Any])
-    if (RiskExceptionConfiguration != null) __obj.updateDynamic("RiskExceptionConfiguration")(RiskExceptionConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetRiskConfigurationRequest]
   }
+  @scala.inline
+  implicit class SetRiskConfigurationRequestOps[Self <: SetRiskConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccountTakeoverRiskConfiguration(value: AccountTakeoverRiskConfigurationType): Self = this.set("AccountTakeoverRiskConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountTakeoverRiskConfiguration: Self = this.set("AccountTakeoverRiskConfiguration", js.undefined)
+    @scala.inline
+    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    @scala.inline
+    def setCompromisedCredentialsRiskConfiguration(value: CompromisedCredentialsRiskConfigurationType): Self = this.set("CompromisedCredentialsRiskConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompromisedCredentialsRiskConfiguration: Self = this.set("CompromisedCredentialsRiskConfiguration", js.undefined)
+    @scala.inline
+    def setRiskExceptionConfiguration(value: RiskExceptionConfigurationType): Self = this.set("RiskExceptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskExceptionConfiguration: Self = this.set("RiskExceptionConfiguration", js.undefined)
+  }
+  
 }
 

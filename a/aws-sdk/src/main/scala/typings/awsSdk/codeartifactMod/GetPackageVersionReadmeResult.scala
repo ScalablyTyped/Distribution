@@ -35,22 +35,46 @@ trait GetPackageVersionReadmeResult extends js.Object {
 
 object GetPackageVersionReadmeResult {
   @scala.inline
-  def apply(
-    _package: PackageName = null,
-    format: PackageFormat = null,
-    namespace: PackageNamespace = null,
-    readme: String = null,
-    version: PackageVersion = null,
-    versionRevision: PackageVersionRevision = null
-  ): GetPackageVersionReadmeResult = {
+  def apply(): GetPackageVersionReadmeResult = {
     val __obj = js.Dynamic.literal()
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (readme != null) __obj.updateDynamic("readme")(readme.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (versionRevision != null) __obj.updateDynamic("versionRevision")(versionRevision.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPackageVersionReadmeResult]
   }
+  @scala.inline
+  implicit class GetPackageVersionReadmeResultOps[Self <: GetPackageVersionReadmeResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_package: Self = this.set("package", js.undefined)
+    @scala.inline
+    def setFormat(value: PackageFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setReadme(value: String): Self = this.set("readme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadme: Self = this.set("readme", js.undefined)
+    @scala.inline
+    def setVersion(value: PackageVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVersionRevision(value: PackageVersionRevision): Self = this.set("versionRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionRevision: Self = this.set("versionRevision", js.undefined)
+  }
+  
 }
 

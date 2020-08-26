@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object pickMod extends js.Object {
   def pick[T](engine: Engine, source: ArrayLike[T]): T = js.native
+  def pick[T](engine: Engine, source: ArrayLike[T], begin: js.UndefOr[scala.Nothing], end: Double): T = js.native
   def pick[T](engine: Engine, source: ArrayLike[T], begin: Double): T = js.native
   def pick[T](engine: Engine, source: ArrayLike[T], begin: Double, end: Double): T = js.native
 }

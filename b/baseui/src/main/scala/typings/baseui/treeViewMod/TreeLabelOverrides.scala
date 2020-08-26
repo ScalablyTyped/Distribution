@@ -4,45 +4,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeLabelOverrides extends js.Object {
   var CollapseIcon: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var ExpandIcon: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var IconContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var LeafIcon: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var LeafIconContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var TreeItemContent: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
-  ] = js.undefined
+  ] = js.native
 }
 
 object TreeLabelOverrides {
   @scala.inline
-  def apply(
-    CollapseIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    ExpandIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    IconContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    LeafIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    LeafIconContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    TreeItemContent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null
-  ): TreeLabelOverrides = {
+  def apply(): TreeLabelOverrides = {
     val __obj = js.Dynamic.literal()
-    if (CollapseIcon != null) __obj.updateDynamic("CollapseIcon")(CollapseIcon.asInstanceOf[js.Any])
-    if (ExpandIcon != null) __obj.updateDynamic("ExpandIcon")(ExpandIcon.asInstanceOf[js.Any])
-    if (IconContainer != null) __obj.updateDynamic("IconContainer")(IconContainer.asInstanceOf[js.Any])
-    if (LeafIcon != null) __obj.updateDynamic("LeafIcon")(LeafIcon.asInstanceOf[js.Any])
-    if (LeafIconContainer != null) __obj.updateDynamic("LeafIconContainer")(LeafIconContainer.asInstanceOf[js.Any])
-    if (TreeItemContent != null) __obj.updateDynamic("TreeItemContent")(TreeItemContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeLabelOverrides]
   }
+  @scala.inline
+  implicit class TreeLabelOverridesOps[Self <: TreeLabelOverrides] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollapseIcon(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
+    ): Self = this.set("CollapseIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapseIcon: Self = this.set("CollapseIcon", js.undefined)
+    @scala.inline
+    def setExpandIcon(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
+    ): Self = this.set("ExpandIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandIcon: Self = this.set("ExpandIcon", js.undefined)
+    @scala.inline
+    def setIconContainer(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
+    ): Self = this.set("IconContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconContainer: Self = this.set("IconContainer", js.undefined)
+    @scala.inline
+    def setLeafIcon(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
+    ): Self = this.set("LeafIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeafIcon: Self = this.set("LeafIcon", js.undefined)
+    @scala.inline
+    def setLeafIconContainer(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
+    ): Self = this.set("LeafIconContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeafIconContainer: Self = this.set("LeafIconContainer", js.undefined)
+    @scala.inline
+    def setTreeItemContent(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
+    ): Self = this.set("TreeItemContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeItemContent: Self = this.set("TreeItemContent", js.undefined)
+  }
+  
 }
 

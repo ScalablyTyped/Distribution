@@ -23,11 +23,32 @@ trait SchemaListReportTypesResponse extends js.Object {
 
 object SchemaListReportTypesResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, reportTypes: js.Array[SchemaReportType] = null): SchemaListReportTypesResponse = {
+  def apply(): SchemaListReportTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (reportTypes != null) __obj.updateDynamic("reportTypes")(reportTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListReportTypesResponse]
   }
+  @scala.inline
+  implicit class SchemaListReportTypesResponseOps[Self <: SchemaListReportTypesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setReportTypesVarargs(value: SchemaReportType*): Self = this.set("reportTypes", js.Array(value :_*))
+    @scala.inline
+    def setReportTypes(value: js.Array[SchemaReportType]): Self = this.set("reportTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportTypes: Self = this.set("reportTypes", js.undefined)
+  }
+  
 }
 

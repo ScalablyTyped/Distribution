@@ -16,102 +16,144 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListPartsOutput
   extends MetadataBearer
      with _OutputTypesUnion {
   /**
     * <p>Date when multipart upload will become eligible for abort operation by lifecycle.</p>
     */
-  var AbortDate: js.UndefOr[Date] = js.undefined
+  var AbortDate: js.UndefOr[Date] = js.native
   /**
     * <p>Id of the lifecycle rule that makes a multipart upload eligible for abort operation.</p>
     */
-  var AbortRuleId: js.UndefOr[String] = js.undefined
+  var AbortRuleId: js.UndefOr[String] = js.native
   /**
     * <p>Name of the bucket to which the multipart upload was initiated.</p>
     */
-  var Bucket: js.UndefOr[String] = js.undefined
+  var Bucket: js.UndefOr[String] = js.native
   /**
     * <p>Identifies who initiated the multipart upload.</p>
     */
-  var Initiator: js.UndefOr[UnmarshalledInitiator] = js.undefined
+  var Initiator: js.UndefOr[UnmarshalledInitiator] = js.native
   /**
     * <p>Indicates whether the returned list of parts is truncated.</p>
     */
-  var IsTruncated: js.UndefOr[Boolean] = js.undefined
+  var IsTruncated: js.UndefOr[Boolean] = js.native
   /**
     * <p>Object key for which the multipart upload was initiated.</p>
     */
-  var Key: js.UndefOr[String] = js.undefined
+  var Key: js.UndefOr[String] = js.native
   /**
     * <p>Maximum number of parts that were allowed in the response.</p>
     */
-  var MaxParts: js.UndefOr[Double] = js.undefined
+  var MaxParts: js.UndefOr[Double] = js.native
   /**
     * <p>When a list is truncated, this element specifies the last part in the list, as well as the value to use for the part-number-marker request parameter in a subsequent request.</p>
     */
-  var NextPartNumberMarker: js.UndefOr[Double] = js.undefined
+  var NextPartNumberMarker: js.UndefOr[Double] = js.native
   /**
     * _Owner shape
     */
-  var Owner: js.UndefOr[UnmarshalledOwner] = js.undefined
+  var Owner: js.UndefOr[UnmarshalledOwner] = js.native
   /**
     * <p>Part number after which listing begins.</p>
     */
-  var PartNumberMarker: js.UndefOr[Double] = js.undefined
+  var PartNumberMarker: js.UndefOr[Double] = js.native
   /**
     * _Parts shape
     */
-  var Parts: js.UndefOr[js.Array[UnmarshalledPart]] = js.undefined
+  var Parts: js.UndefOr[js.Array[UnmarshalledPart]] = js.native
   /**
     * <p>If present, indicates that the requester was successfully charged for the request.</p>
     */
-  var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
+  var RequestCharged: js.UndefOr[requester_ | String] = js.native
   /**
     * <p>The class of storage used to store the object.</p>
     */
-  var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.undefined
+  var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.native
   /**
     * <p>Upload ID identifying the multipart upload whose parts are being listed.</p>
     */
-  var UploadId: js.UndefOr[String] = js.undefined
+  var UploadId: js.UndefOr[String] = js.native
 }
 
 object ListPartsOutput {
   @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    AbortDate: Date = null,
-    AbortRuleId: String = null,
-    Bucket: String = null,
-    Initiator: UnmarshalledInitiator = null,
-    IsTruncated: js.UndefOr[Boolean] = js.undefined,
-    Key: String = null,
-    MaxParts: js.UndefOr[Double] = js.undefined,
-    NextPartNumberMarker: js.UndefOr[Double] = js.undefined,
-    Owner: UnmarshalledOwner = null,
-    PartNumberMarker: js.UndefOr[Double] = js.undefined,
-    Parts: js.Array[UnmarshalledPart] = null,
-    RequestCharged: requester_ | String = null,
-    StorageClass: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String = null,
-    UploadId: String = null
-  ): ListPartsOutput = {
+  def apply($metadata: ResponseMetadata): ListPartsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-    if (AbortDate != null) __obj.updateDynamic("AbortDate")(AbortDate.asInstanceOf[js.Any])
-    if (AbortRuleId != null) __obj.updateDynamic("AbortRuleId")(AbortRuleId.asInstanceOf[js.Any])
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
-    if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxParts)) __obj.updateDynamic("MaxParts")(MaxParts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NextPartNumberMarker)) __obj.updateDynamic("NextPartNumberMarker")(NextPartNumberMarker.get.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(PartNumberMarker)) __obj.updateDynamic("PartNumberMarker")(PartNumberMarker.get.asInstanceOf[js.Any])
-    if (Parts != null) __obj.updateDynamic("Parts")(Parts.asInstanceOf[js.Any])
-    if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (UploadId != null) __obj.updateDynamic("UploadId")(UploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPartsOutput]
   }
+  @scala.inline
+  implicit class ListPartsOutputOps[Self <: ListPartsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbortDate(value: Date): Self = this.set("AbortDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortDate: Self = this.set("AbortDate", js.undefined)
+    @scala.inline
+    def setAbortRuleId(value: String): Self = this.set("AbortRuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortRuleId: Self = this.set("AbortRuleId", js.undefined)
+    @scala.inline
+    def setBucket(value: String): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    @scala.inline
+    def setInitiator(value: UnmarshalledInitiator): Self = this.set("Initiator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitiator: Self = this.set("Initiator", js.undefined)
+    @scala.inline
+    def setIsTruncated(value: Boolean): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setMaxParts(value: Double): Self = this.set("MaxParts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxParts: Self = this.set("MaxParts", js.undefined)
+    @scala.inline
+    def setNextPartNumberMarker(value: Double): Self = this.set("NextPartNumberMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPartNumberMarker: Self = this.set("NextPartNumberMarker", js.undefined)
+    @scala.inline
+    def setOwner(value: UnmarshalledOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setPartNumberMarker(value: Double): Self = this.set("PartNumberMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartNumberMarker: Self = this.set("PartNumberMarker", js.undefined)
+    @scala.inline
+    def setPartsVarargs(value: UnmarshalledPart*): Self = this.set("Parts", js.Array(value :_*))
+    @scala.inline
+    def setParts(value: js.Array[UnmarshalledPart]): Self = this.set("Parts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParts: Self = this.set("Parts", js.undefined)
+    @scala.inline
+    def setRequestCharged(value: requester_ | String): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+    @scala.inline
+    def setStorageClass(value: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    @scala.inline
+    def setUploadId(value: String): Self = this.set("UploadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadId: Self = this.set("UploadId", js.undefined)
+  }
+  
 }
 

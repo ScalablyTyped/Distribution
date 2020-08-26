@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/creators/univariateColorSize", JSImport.Namespace)
+@JSImport("esri/smartMapping/renderers/univariateColorSize", JSImport.Namespace)
 @js.native
 object univariateColorSizeMod extends TopLevel[univariateColorSize]
 

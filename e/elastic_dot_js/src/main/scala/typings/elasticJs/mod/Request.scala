@@ -101,6 +101,7 @@ class Request protected () extends js.Object {
     It is recommended to use Sort objects when possible.
     */
   def sort(): Request = js.native
+  def sort(fieldName: js.UndefOr[scala.Nothing], order: String): Request = js.native
   def sort(fieldName: String): Request = js.native
   def sort(fieldName: String, order: String): Request = js.native
   def sort(fieldName: js.Array[_]): Request = js.native

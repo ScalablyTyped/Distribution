@@ -29,6 +29,11 @@ object observablearrayMod extends js.Object {
     def find(predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean]): T = js.native
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean],
+      thisArg: js.UndefOr[scala.Nothing],
+      fromIndex: Double
+    ): T = js.native
+    def find(
+      predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean],
       thisArg: js.Any
     ): T = js.native
     def find(
@@ -50,7 +55,7 @@ object observablearrayMod extends js.Object {
     def shift(): T = js.native
     def sort(): js.Array[T] = js.native
     def sort(compareFn: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = js.native
-    def splice(index: Double): js.Array[T] = js.native
+    def splice(index: Double, deleteCount: js.UndefOr[scala.Nothing], newItems: T*): js.Array[T] = js.native
     def splice(index: Double, deleteCount: Double, newItems: T*): js.Array[T] = js.native
     def toJSON(): js.Array[T] = js.native
     def unshift(items: T*): Double = js.native
@@ -77,6 +82,7 @@ object observablearrayMod extends js.Object {
     /* private */ def notifySplice(index: js.Any, deleted: js.Any, added: js.Any): js.Any = js.native
     def setLength(newLength: js.Any): Double = js.native
     def spliceWithArray(index: Double): js.Array[T] = js.native
+    def spliceWithArray(index: Double, deleteCount: js.UndefOr[scala.Nothing], newItems: js.Array[T]): js.Array[T] = js.native
     def spliceWithArray(index: Double, deleteCount: Double): js.Array[T] = js.native
     def spliceWithArray(index: Double, deleteCount: Double, newItems: js.Array[T]): js.Array[T] = js.native
     def updateLength(oldLength: Double, delta: Double): Unit = js.native

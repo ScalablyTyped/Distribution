@@ -14,56 +14,89 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxFormButtonItem extends js.Object {
   /** @deprecated */
   /** @name dxFormButtonItem.alignment */
-  var alignment: js.UndefOr[center | left | right] = js.undefined
+  var alignment: js.UndefOr[center | left | right] = js.native
   /** @name dxFormButtonItem.buttonOptions */
-  var buttonOptions: js.UndefOr[dxButtonOptions] = js.undefined
+  var buttonOptions: js.UndefOr[dxButtonOptions] = js.native
   /** @name dxFormButtonItem.colSpan */
-  var colSpan: js.UndefOr[Double] = js.undefined
+  var colSpan: js.UndefOr[Double] = js.native
   /** @name dxFormButtonItem.cssClass */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** @name dxFormButtonItem.horizontalAlignment */
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
+  var horizontalAlignment: js.UndefOr[center | left | right] = js.native
   /** @name dxFormButtonItem.itemType */
-  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
+  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.native
   /** @name dxFormButtonItem.name */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** @name dxFormButtonItem.verticalAlignment */
-  var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
+  var verticalAlignment: js.UndefOr[bottom | center | top] = js.native
   /** @name dxFormButtonItem.visible */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /** @name dxFormButtonItem.visibleIndex */
-  var visibleIndex: js.UndefOr[Double] = js.undefined
+  var visibleIndex: js.UndefOr[Double] = js.native
 }
 
 object dxFormButtonItem {
   @scala.inline
-  def apply(
-    alignment: center | left | right = null,
-    buttonOptions: dxButtonOptions = null,
-    colSpan: js.UndefOr[Double] = js.undefined,
-    cssClass: String = null,
-    horizontalAlignment: center | left | right = null,
-    itemType: empty | group | simple | tabbed | button = null,
-    name: String = null,
-    verticalAlignment: bottom | center | top = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    visibleIndex: js.UndefOr[Double] = js.undefined
-  ): dxFormButtonItem = {
+  def apply(): dxFormButtonItem = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleIndex)) __obj.updateDynamic("visibleIndex")(visibleIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFormButtonItem]
   }
+  @scala.inline
+  implicit class dxFormButtonItemOps[Self <: dxFormButtonItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: center | left | right): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    @scala.inline
+    def setButtonOptions(value: dxButtonOptions): Self = this.set("buttonOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonOptions: Self = this.set("buttonOptions", js.undefined)
+    @scala.inline
+    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setHorizontalAlignment(value: center | left | right): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    @scala.inline
+    def setItemType(value: empty | group | simple | tabbed | button): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemType: Self = this.set("itemType", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setVerticalAlignment(value: bottom | center | top): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setVisibleIndex(value: Double): Self = this.set("visibleIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleIndex: Self = this.set("visibleIndex", js.undefined)
+  }
+  
 }
 

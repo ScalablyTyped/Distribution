@@ -12,7 +12,7 @@ Bonjour/Avahi-like service discovery in pure JavaScript
 | Keywords           | bonjour, avahi, mdns, zeroconf |
 | # releases         | 8 |
 | # dependents       | 6 |
-| # downloads        | 49685 |
+| # downloads        | 52072 |
 | # stars            | 0 |
 
 ## Links

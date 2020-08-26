@@ -17,54 +17,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBalanceListOptions extends IListOptionsCreated {
-  var available_on: js.UndefOr[String | IDateFilter] = js.undefined
-  var currency: js.UndefOr[String] = js.undefined
+  var available_on: js.UndefOr[String | IDateFilter] = js.native
+  var currency: js.UndefOr[String] = js.native
   /**
     * For automatic Stripe payouts only, only returns transactions that were payed out on the specified payout ID.
     */
-  var payout: js.UndefOr[String] = js.undefined
+  var payout: js.UndefOr[String] = js.native
   /**
     * Only returns transactions that are related to the specified Stripe object ID
     * (e.g. filtering by a charge ID will return all related charge transactions).
     */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[String] = js.native
   /**
     * Only returns transactions of the given type.
     */
   var `type`: js.UndefOr[
     charge | refund | adjustment | application_fee | application_fee_refund | transfer | payment | payout | payout_failure | stripe_fee | network_cost
-  ] = js.undefined
+  ] = js.native
 }
 
 object IBalanceListOptions {
   @scala.inline
-  def apply(
-    available_on: String | IDateFilter = null,
-    created: String | IDateFilter = null,
-    currency: String = null,
-    ending_before: String = null,
-    expand: js.Array[String] = null,
-    include: js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    payout: String = null,
-    source: String = null,
-    starting_after: String = null,
-    `type`: charge | refund | adjustment | application_fee | application_fee_refund | transfer | payment | payout | payout_failure | stripe_fee | network_cost = null
-  ): IBalanceListOptions = {
+  def apply(): IBalanceListOptions = {
     val __obj = js.Dynamic.literal()
-    if (available_on != null) __obj.updateDynamic("available_on")(available_on.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (payout != null) __obj.updateDynamic("payout")(payout.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBalanceListOptions]
   }
+  @scala.inline
+  implicit class IBalanceListOptionsOps[Self <: IBalanceListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailable_on(value: String | IDateFilter): Self = this.set("available_on", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailable_on: Self = this.set("available_on", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setPayout(value: String): Self = this.set("payout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayout: Self = this.set("payout", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setType(
+      value: charge | refund | adjustment | application_fee | application_fee_refund | transfer | payment | payout | payout_failure | stripe_fee | network_cost
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

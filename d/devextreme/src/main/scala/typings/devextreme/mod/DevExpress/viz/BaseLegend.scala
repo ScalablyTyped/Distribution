@@ -14,87 +14,136 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseLegend extends js.Object {
   /** @name BaseLegend.backgroundColor */
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
   /** @name BaseLegend.border */
-  var border: js.UndefOr[CornerRadius] = js.undefined
+  var border: js.UndefOr[CornerRadius] = js.native
   /** @name BaseLegend.columnCount */
-  var columnCount: js.UndefOr[Double] = js.undefined
+  var columnCount: js.UndefOr[Double] = js.native
   /** @name BaseLegend.columnItemSpacing */
-  var columnItemSpacing: js.UndefOr[Double] = js.undefined
+  var columnItemSpacing: js.UndefOr[Double] = js.native
   /** @name BaseLegend.font */
-  var font: js.UndefOr[Font] = js.undefined
+  var font: js.UndefOr[Font] = js.native
   /** @name BaseLegend.horizontalAlignment */
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
+  var horizontalAlignment: js.UndefOr[center | left | right] = js.native
   /** @name BaseLegend.itemTextPosition */
-  var itemTextPosition: js.UndefOr[bottom | left | right | top] = js.undefined
+  var itemTextPosition: js.UndefOr[bottom | left | right | top] = js.native
   /** @name BaseLegend.itemsAlignment */
-  var itemsAlignment: js.UndefOr[center | left | right] = js.undefined
+  var itemsAlignment: js.UndefOr[center | left | right] = js.native
   /** @name BaseLegend.margin */
-  var margin: js.UndefOr[Double | Bottom] = js.undefined
+  var margin: js.UndefOr[Double | Bottom] = js.native
   /** @name BaseLegend.markerSize */
-  var markerSize: js.UndefOr[Double] = js.undefined
+  var markerSize: js.UndefOr[Double] = js.native
   /** @name BaseLegend.orientation */
-  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
+  var orientation: js.UndefOr[horizontal | vertical] = js.native
   /** @name BaseLegend.paddingLeftRight */
-  var paddingLeftRight: js.UndefOr[Double] = js.undefined
+  var paddingLeftRight: js.UndefOr[Double] = js.native
   /** @name BaseLegend.paddingTopBottom */
-  var paddingTopBottom: js.UndefOr[Double] = js.undefined
+  var paddingTopBottom: js.UndefOr[Double] = js.native
   /** @name BaseLegend.rowCount */
-  var rowCount: js.UndefOr[Double] = js.undefined
+  var rowCount: js.UndefOr[Double] = js.native
   /** @name BaseLegend.rowItemSpacing */
-  var rowItemSpacing: js.UndefOr[Double] = js.undefined
+  var rowItemSpacing: js.UndefOr[Double] = js.native
   /** @name BaseLegend.title */
-  var title: js.UndefOr[HorizontalAlignment | String] = js.undefined
+  var title: js.UndefOr[HorizontalAlignment | String] = js.native
   /** @name BaseLegend.verticalAlignment */
-  var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
+  var verticalAlignment: js.UndefOr[bottom | top] = js.native
   /** @name BaseLegend.visible */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object BaseLegend {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    border: CornerRadius = null,
-    columnCount: js.UndefOr[Double] = js.undefined,
-    columnItemSpacing: js.UndefOr[Double] = js.undefined,
-    font: Font = null,
-    horizontalAlignment: center | left | right = null,
-    itemTextPosition: bottom | left | right | top = null,
-    itemsAlignment: center | left | right = null,
-    margin: Double | Bottom = null,
-    markerSize: js.UndefOr[Double] = js.undefined,
-    orientation: horizontal | vertical = null,
-    paddingLeftRight: js.UndefOr[Double] = js.undefined,
-    paddingTopBottom: js.UndefOr[Double] = js.undefined,
-    rowCount: js.UndefOr[Double] = js.undefined,
-    rowItemSpacing: js.UndefOr[Double] = js.undefined,
-    title: HorizontalAlignment | String = null,
-    verticalAlignment: bottom | top = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): BaseLegend = {
+  def apply(): BaseLegend = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnItemSpacing)) __obj.updateDynamic("columnItemSpacing")(columnItemSpacing.get.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (itemTextPosition != null) __obj.updateDynamic("itemTextPosition")(itemTextPosition.asInstanceOf[js.Any])
-    if (itemsAlignment != null) __obj.updateDynamic("itemsAlignment")(itemsAlignment.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(paddingLeftRight)) __obj.updateDynamic("paddingLeftRight")(paddingLeftRight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paddingTopBottom)) __obj.updateDynamic("paddingTopBottom")(paddingTopBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowItemSpacing)) __obj.updateDynamic("rowItemSpacing")(rowItemSpacing.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseLegend]
   }
+  @scala.inline
+  implicit class BaseLegendOps[Self <: BaseLegend] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorder(value: CornerRadius): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    @scala.inline
+    def setColumnItemSpacing(value: Double): Self = this.set("columnItemSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnItemSpacing: Self = this.set("columnItemSpacing", js.undefined)
+    @scala.inline
+    def setFont(value: Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setHorizontalAlignment(value: center | left | right): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    @scala.inline
+    def setItemTextPosition(value: bottom | left | right | top): Self = this.set("itemTextPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemTextPosition: Self = this.set("itemTextPosition", js.undefined)
+    @scala.inline
+    def setItemsAlignment(value: center | left | right): Self = this.set("itemsAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsAlignment: Self = this.set("itemsAlignment", js.undefined)
+    @scala.inline
+    def setMargin(value: Double | Bottom): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMarkerSize(value: Double): Self = this.set("markerSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerSize: Self = this.set("markerSize", js.undefined)
+    @scala.inline
+    def setOrientation(value: horizontal | vertical): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setPaddingLeftRight(value: Double): Self = this.set("paddingLeftRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingLeftRight: Self = this.set("paddingLeftRight", js.undefined)
+    @scala.inline
+    def setPaddingTopBottom(value: Double): Self = this.set("paddingTopBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingTopBottom: Self = this.set("paddingTopBottom", js.undefined)
+    @scala.inline
+    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    @scala.inline
+    def setRowItemSpacing(value: Double): Self = this.set("rowItemSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowItemSpacing: Self = this.set("rowItemSpacing", js.undefined)
+    @scala.inline
+    def setTitle(value: HorizontalAlignment | String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVerticalAlignment(value: bottom | top): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

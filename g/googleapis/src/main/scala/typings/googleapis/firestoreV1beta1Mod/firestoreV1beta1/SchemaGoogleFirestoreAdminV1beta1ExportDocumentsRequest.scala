@@ -28,11 +28,32 @@ trait SchemaGoogleFirestoreAdminV1beta1ExportDocumentsRequest extends js.Object 
 
 object SchemaGoogleFirestoreAdminV1beta1ExportDocumentsRequest {
   @scala.inline
-  def apply(collectionIds: js.Array[String] = null, outputUriPrefix: String = null): SchemaGoogleFirestoreAdminV1beta1ExportDocumentsRequest = {
+  def apply(): SchemaGoogleFirestoreAdminV1beta1ExportDocumentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (collectionIds != null) __obj.updateDynamic("collectionIds")(collectionIds.asInstanceOf[js.Any])
-    if (outputUriPrefix != null) __obj.updateDynamic("outputUriPrefix")(outputUriPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta1ExportDocumentsRequest]
   }
+  @scala.inline
+  implicit class SchemaGoogleFirestoreAdminV1beta1ExportDocumentsRequestOps[Self <: SchemaGoogleFirestoreAdminV1beta1ExportDocumentsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectionIdsVarargs(value: String*): Self = this.set("collectionIds", js.Array(value :_*))
+    @scala.inline
+    def setCollectionIds(value: js.Array[String]): Self = this.set("collectionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionIds: Self = this.set("collectionIds", js.undefined)
+    @scala.inline
+    def setOutputUriPrefix(value: String): Self = this.set("outputUriPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputUriPrefix: Self = this.set("outputUriPrefix", js.undefined)
+  }
+  
 }
 

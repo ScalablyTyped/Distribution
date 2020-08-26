@@ -18,10 +18,30 @@ trait ListTrainingJobsResponse extends js.Object {
 
 object ListTrainingJobsResponse {
   @scala.inline
-  def apply(TrainingJobSummaries: TrainingJobSummaries, NextToken: NextToken = null): ListTrainingJobsResponse = {
+  def apply(TrainingJobSummaries: TrainingJobSummaries): ListTrainingJobsResponse = {
     val __obj = js.Dynamic.literal(TrainingJobSummaries = TrainingJobSummaries.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTrainingJobsResponse]
   }
+  @scala.inline
+  implicit class ListTrainingJobsResponseOps[Self <: ListTrainingJobsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrainingJobSummariesVarargs(value: TrainingJobSummary*): Self = this.set("TrainingJobSummaries", js.Array(value :_*))
+    @scala.inline
+    def setTrainingJobSummaries(value: TrainingJobSummaries): Self = this.set("TrainingJobSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

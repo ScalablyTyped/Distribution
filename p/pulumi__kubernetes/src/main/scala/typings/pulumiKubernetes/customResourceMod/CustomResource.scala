@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@pulumi/kubernetes/apiextensions/CustomResource", "CustomResource")
+@JSImport("@pulumi/kubernetes/apiextensions/customResource", "CustomResource")
 @js.native
 class CustomResource protected ()
   extends typings.pulumiPulumi.mod.CustomResource {
@@ -44,17 +44,14 @@ class CustomResource protected ()
 }
 
 /* static members */
-@JSImport("@pulumi/kubernetes/apiextensions/CustomResource", "CustomResource")
+@JSImport("@pulumi/kubernetes/apiextensions/customResource", "CustomResource")
 @js.native
 object CustomResource extends js.Object {
   /**
-    * Get the state of an existing `CustomResource`, as identified by `id`.
-    * Typically this ID  is of the form [namespace]/[name]; if [namespace] is omitted, then (per
-    * Kubernetes convention) the ID becomes default/[name].
+    * Get an existing CustomResource resource's state with the given name, ID, and optional extra
+    * properties used to qualify the lookup.
     *
-    * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-    *
-    * @param name _Unique_ name used to register this resource with Pulumi.
+    * @param name The _unique_ name of the resulting resource.
     * @param opts Uniquely specifies a CustomResource to select.
     */
   def get(name: String, opts: CustomResourceGetOptions): CustomResource = js.native

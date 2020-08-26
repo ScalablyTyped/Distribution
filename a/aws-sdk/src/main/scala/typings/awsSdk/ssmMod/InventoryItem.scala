@@ -37,16 +37,43 @@ object InventoryItem {
   def apply(
     CaptureTime: InventoryItemCaptureTime,
     SchemaVersion: InventoryItemSchemaVersion,
-    TypeName: InventoryItemTypeName,
-    Content: InventoryItemEntryList = null,
-    ContentHash: InventoryItemContentHash = null,
-    Context: InventoryItemContentContext = null
+    TypeName: InventoryItemTypeName
   ): InventoryItem = {
     val __obj = js.Dynamic.literal(CaptureTime = CaptureTime.asInstanceOf[js.Any], SchemaVersion = SchemaVersion.asInstanceOf[js.Any], TypeName = TypeName.asInstanceOf[js.Any])
-    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
-    if (ContentHash != null) __obj.updateDynamic("ContentHash")(ContentHash.asInstanceOf[js.Any])
-    if (Context != null) __obj.updateDynamic("Context")(Context.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryItem]
   }
+  @scala.inline
+  implicit class InventoryItemOps[Self <: InventoryItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptureTime(value: InventoryItemCaptureTime): Self = this.set("CaptureTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchemaVersion(value: InventoryItemSchemaVersion): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeName(value: InventoryItemTypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentVarargs(value: InventoryItemEntry*): Self = this.set("Content", js.Array(value :_*))
+    @scala.inline
+    def setContent(value: InventoryItemEntryList): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("Content", js.undefined)
+    @scala.inline
+    def setContentHash(value: InventoryItemContentHash): Self = this.set("ContentHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHash: Self = this.set("ContentHash", js.undefined)
+    @scala.inline
+    def setContext(value: InventoryItemContentContext): Self = this.set("Context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("Context", js.undefined)
+  }
+  
 }
 

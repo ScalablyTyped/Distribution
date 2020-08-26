@@ -6,17 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** FaxServer Class */
+@js.native
 trait FaxServer extends IFaxServer {
   /** Fax server configuration */
-  val Configuration: FaxConfiguration
+  val Configuration: FaxConfiguration = js.native
   /** FaxAccount for the current connection */
-  val CurrentAccount: FaxAccount
+  val CurrentAccount: FaxAccount = js.native
   @JSName("FAXCOMEXLib.FaxServer_typekey")
-  var FAXCOMEXLibDotFaxServer_typekey: FaxServer
+  var FAXCOMEXLibDotFaxServer_typekey: FaxServer = js.native
   /** The FaxAccountSet configuration object */
-  val FaxAccountSet: typings.activexFaxcomexlib.FAXCOMEXLib.FaxAccountSet
+  val FaxAccountSet: typings.activexFaxcomexlib.FAXCOMEXLib.FaxAccountSet = js.native
   /** The security configuration object */
-  val Security2: FaxSecurity2
+  val Security2: FaxSecurity2 = js.native
 }
 
 object FaxServer {
@@ -58,5 +59,28 @@ object FaxServer {
     __obj.updateDynamic("FAXCOMEXLib.FaxServer_typekey")(FAXCOMEXLibDotFaxServer_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaxServer]
   }
+  @scala.inline
+  implicit class FaxServerOps[Self <: FaxServer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: FaxConfiguration): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentAccount(value: FaxAccount): Self = this.set("CurrentAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFAXCOMEXLibDotFaxServer_typekey(value: FaxServer): Self = this.set("FAXCOMEXLib.FaxServer_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFaxAccountSet(value: FaxAccountSet): Self = this.set("FaxAccountSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurity2(value: FaxSecurity2): Self = this.set("Security2", value.asInstanceOf[js.Any])
+  }
+  
 }
 

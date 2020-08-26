@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object spawn extends js.Object {
   def apply(cmd: String): js.Promise[SpawnResult] = js.native
+  def apply(cmd: String, args: js.UndefOr[scala.Nothing], opts: SpawnOptions): js.Promise[SpawnResult] = js.native
   def apply(cmd: String, args: js.Array[String]): js.Promise[SpawnResult] = js.native
   def apply(cmd: String, args: js.Array[String], opts: SpawnOptions): js.Promise[SpawnResult] = js.native
 }

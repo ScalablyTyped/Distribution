@@ -26,6 +26,7 @@ trait Amplitude extends js.Object {
     *   smooth amplitude readings
     */
   def setInput(): Unit = js.native
+  def setInput(snd: js.UndefOr[scala.Nothing], smoothing: Double): Unit = js.native
   def setInput(snd: js.Any): Unit = js.native
   def setInput(snd: js.Any, smoothing: Double): Unit = js.native
   /**

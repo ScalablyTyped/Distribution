@@ -31,6 +31,7 @@ class ResourceBiddersAccountsFiltersetsNonbillablewinningbids protected () exten
     */
   def list(): GaxiosPromise[SchemaListNonBillableWinningBidsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListNonBillableWinningBidsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListNonBillableWinningBidsResponse] = js.native
   def list(params: ParamsResourceBiddersAccountsFiltersetsNonbillablewinningbidsList): GaxiosPromise[SchemaListNonBillableWinningBidsResponse] = js.native
   def list(
     params: ParamsResourceBiddersAccountsFiltersetsNonbillablewinningbidsList,

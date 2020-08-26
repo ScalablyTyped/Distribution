@@ -1,10 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices
 
-import typings.winrtUwp.Windows.Devices.Input.MouseDelta
-import typings.winrtUwp.Windows.Devices.Input.PointerDeviceType
-import typings.winrtUwp.Windows.Devices.Input.PointerDeviceUsage
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
-import typings.winrtUwp.Windows.Foundation.Rect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,33 +13,13 @@ object Input extends js.Object {
   @js.native
   /** Initializes a new instance of the KeyboardCapabilities class. */
   class KeyboardCapabilities ()
-    extends typings.winrtUwp.Windows.Devices.Input.KeyboardCapabilities {
-    /** Gets a value that indicates whether a hardware keyboard is detected. */
-    /* CompleteClass */
-    override var keyboardPresent: Double = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Input.KeyboardCapabilities
   
   /** Supports the ability to determine the capabilities of any connected mouse devices. */
   @js.native
   /** Initializes a new instance of the MouseCapabilities class. */
   class MouseCapabilities ()
-    extends typings.winrtUwp.Windows.Devices.Input.MouseCapabilities {
-    /** Gets a value indicating whether any of the mice connected to the computer have a scroll wheel that tilts left and right (usually for horizontal scrolling). */
-    /* CompleteClass */
-    override var horizontalWheelPresent: Double = js.native
-    /** Gets a value that indicates whether a mouse device is detected. */
-    /* CompleteClass */
-    override var mousePresent: Double = js.native
-    /** Gets a value representing the number of buttons on the mouse. If multiple mice are present, it returns the number of buttons of the mouse which has maximum number of buttons. */
-    /* CompleteClass */
-    override var numberOfButtons: Double = js.native
-    /** Gets a value indicating whether any of the mice connected to the computer has swapped left and right buttons. */
-    /* CompleteClass */
-    override var swapButtons: Double = js.native
-    /** Gets a value indicating whether any of the mice connected to the computer have a scroll wheel that rolls up and down (usually for vertical scrolling). */
-    /* CompleteClass */
-    override var verticalWheelPresent: Double = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Input.MouseCapabilities
   
   /** Supports the ability to identify and track connected mouse devices. */
   @js.native
@@ -53,50 +29,18 @@ object Input extends js.Object {
   /** Contains event data for the MouseMoved event. */
   @js.native
   abstract class MouseEventArgs ()
-    extends typings.winrtUwp.Windows.Devices.Input.MouseEventArgs {
-    /** Gets a value that indicates the change in the screen location of the mouse pointer since the last mouse event. */
-    /* CompleteClass */
-    override var mouseDelta: MouseDelta = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Input.MouseEventArgs
   
   /** Supports the ability to identify the connected pointer devices and determine their capabilities. */
   @js.native
   abstract class PointerDevice ()
-    extends typings.winrtUwp.Windows.Devices.Input.PointerDevice {
-    /** Gets a value indicating whether the pointer device is an integrated device. For example, a video display with an integrated touch digitizer compared to an external pen/stylus digitizer. */
-    /* CompleteClass */
-    override var isIntegrated: Boolean = js.native
-    /** Gets a value indicating the maximum number of contacts supported by the input device. */
-    /* CompleteClass */
-    override var maxContacts: Double = js.native
-    /* CompleteClass */
-    override var maxPointersWithZDistance: js.Any = js.native
-     /* unmapped type */ /** Gets the coordinates of the bounding rectangle supported by the input device. */
-    /* CompleteClass */
-    override var physicalDeviceRect: Rect = js.native
-    /** Gets the pointer device type. */
-    /* CompleteClass */
-    override var pointerDeviceType: PointerDeviceType = js.native
-    /** Gets the screen coordinates that are mapped to the bounding rectangle supported by the input device. */
-    /* CompleteClass */
-    override var screenRect: Rect = js.native
-    /** Gets a collection containing the supported pointer device usages . */
-    /* CompleteClass */
-    override var supportedUsages: IVectorView[PointerDeviceUsage] = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Input.PointerDevice
   
   /** Supports the ability to determine the touch capabilities of any connected touch digitizers. */
   @js.native
   /** Initializes a new instance of the TouchCapabilities class. */
   class TouchCapabilities ()
-    extends typings.winrtUwp.Windows.Devices.Input.TouchCapabilities {
-    /** Gets the minimum number of contacts supported by all the digitizers. */
-    /* CompleteClass */
-    override var contacts: Double = js.native
-    /** Gets a value that indicates whether a touch digitizer is detected. */
-    /* CompleteClass */
-    override var touchPresent: Double = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Input.TouchCapabilities
   
   /* static members */
   @js.native

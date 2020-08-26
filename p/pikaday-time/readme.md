@@ -12,7 +12,7 @@ Time support added to pikaday
 | Keywords           | datepicker, calendar, date, time, datetime |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 127140 |
+| # downloads        | 131445 |
 | # stars            | 0 |
 
 ## Links

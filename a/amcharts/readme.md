@@ -12,7 +12,7 @@ http://amcharts.com
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 25862 |
+| # downloads        | 25474 |
 | # stars            | 0 |
 
 ## Links

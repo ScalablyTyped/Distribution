@@ -16,6 +16,13 @@ object visitLexicalEnvironment extends js.Object {
     * and merging hoisted declarations upon completion.
     */
   def apply(statements: NodeArray[Statement], visitor: Visitor, context: TransformationContext): NodeArray[Statement] = js.native
+  def apply(
+    statements: NodeArray[Statement],
+    visitor: Visitor,
+    context: TransformationContext,
+    start: js.UndefOr[scala.Nothing],
+    ensureUseStrict: Boolean
+  ): NodeArray[Statement] = js.native
   def apply(statements: NodeArray[Statement], visitor: Visitor, context: TransformationContext, start: Double): NodeArray[Statement] = js.native
   def apply(
     statements: NodeArray[Statement],

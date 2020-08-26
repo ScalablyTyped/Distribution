@@ -34,11 +34,29 @@ object totextMod extends js.Object {
     def add(s: String): this.type = js.native
     def isFullyConvertible(): Boolean = js.native
     def list(arr: js.Array[ByWeekday]): String = js.native
+    def list(
+      arr: js.Array[ByWeekday],
+      callback: js.UndefOr[scala.Nothing],
+      finalDelim: js.UndefOr[scala.Nothing],
+      delim: String
+    ): String = js.native
+    def list(arr: js.Array[ByWeekday], callback: js.UndefOr[scala.Nothing], finalDelim: String): String = js.native
+    def list(arr: js.Array[ByWeekday], callback: js.UndefOr[scala.Nothing], finalDelim: String, delim: String): String = js.native
     def list(arr: js.Array[ByWeekday], callback: GetText): String = js.native
+    def list(arr: js.Array[ByWeekday], callback: GetText, finalDelim: js.UndefOr[scala.Nothing], delim: String): String = js.native
     def list(arr: js.Array[ByWeekday], callback: GetText, finalDelim: String): String = js.native
     def list(arr: js.Array[ByWeekday], callback: GetText, finalDelim: String, delim: String): String = js.native
     def list(arr: ByWeekday): String = js.native
+    def list(
+      arr: ByWeekday,
+      callback: js.UndefOr[scala.Nothing],
+      finalDelim: js.UndefOr[scala.Nothing],
+      delim: String
+    ): String = js.native
+    def list(arr: ByWeekday, callback: js.UndefOr[scala.Nothing], finalDelim: String): String = js.native
+    def list(arr: ByWeekday, callback: js.UndefOr[scala.Nothing], finalDelim: String, delim: String): String = js.native
     def list(arr: ByWeekday, callback: GetText): String = js.native
+    def list(arr: ByWeekday, callback: GetText, finalDelim: js.UndefOr[scala.Nothing], delim: String): String = js.native
     def list(arr: ByWeekday, callback: GetText, finalDelim: String): String = js.native
     def list(arr: ByWeekday, callback: GetText, finalDelim: String, delim: String): String = js.native
     def monthtext(m: Double): String = js.native
@@ -53,7 +71,26 @@ object totextMod extends js.Object {
   class default protected () extends ToText {
     def this(rrule: typings.rrule.mod.default) = this()
     def this(rrule: typings.rrule.mod.default, gettext: GetText) = this()
+    def this(rrule: typings.rrule.mod.default, gettext: js.UndefOr[scala.Nothing], language: Language) = this()
     def this(rrule: typings.rrule.mod.default, gettext: GetText, language: Language) = this()
+    def this(
+      rrule: typings.rrule.mod.default,
+      gettext: js.UndefOr[scala.Nothing],
+      language: js.UndefOr[scala.Nothing],
+      dateFormatter: DateFormatter
+    ) = this()
+    def this(
+      rrule: typings.rrule.mod.default,
+      gettext: js.UndefOr[scala.Nothing],
+      language: Language,
+      dateFormatter: DateFormatter
+    ) = this()
+    def this(
+      rrule: typings.rrule.mod.default,
+      gettext: GetText,
+      language: js.UndefOr[scala.Nothing],
+      dateFormatter: DateFormatter
+    ) = this()
     def this(
       rrule: typings.rrule.mod.default,
       gettext: GetText,

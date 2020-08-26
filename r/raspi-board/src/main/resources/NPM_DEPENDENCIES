@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "raspi-board" : "7.3.1"
+      "raspi-board" : "7.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "raspi-board" : "7.3.1"
+      "raspi-board" : "7.3.2"
     }
   ],
   "compile-devDependencies" : [

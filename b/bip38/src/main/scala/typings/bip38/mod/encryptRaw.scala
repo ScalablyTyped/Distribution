@@ -13,6 +13,13 @@ object encryptRaw extends js.Object {
     buffer: Buffer,
     compressed: Boolean,
     passphrase: String,
+    progressCallback: js.UndefOr[scala.Nothing],
+    scryptParams: ScryptParams
+  ): Buffer = js.native
+  def apply(
+    buffer: Buffer,
+    compressed: Boolean,
+    passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit]
   ): Buffer = js.native
   def apply(

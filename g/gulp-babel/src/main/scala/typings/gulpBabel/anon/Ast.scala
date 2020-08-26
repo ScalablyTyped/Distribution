@@ -4,96 +4,171 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Ast extends js.Object {
-  var ast: js.UndefOr[Boolean] = js.undefined
-  var auxiliaryCommentAfter: js.UndefOr[js.Any] = js.undefined
-  var auxiliaryCommentBefore: js.UndefOr[js.Any] = js.undefined
-  var code: js.UndefOr[Boolean] = js.undefined
-  var comments: js.UndefOr[Boolean] = js.undefined
-  var compact: js.UndefOr[js.Any] = js.undefined
-  var env: js.UndefOr[js.Any] = js.undefined
-  var filename: js.UndefOr[String] = js.undefined
-  var filenameRelative: js.UndefOr[String] = js.undefined
-  var getModuleId: js.UndefOr[js.Any] = js.undefined
-  var highlightCode: js.UndefOr[Boolean] = js.undefined
-  var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
-  var inputSourceMap: js.UndefOr[js.Any] = js.undefined
-  var keepModuleIdExtesions: js.UndefOr[Boolean] = js.undefined
-  var moduleId: js.UndefOr[js.Any] = js.undefined
-  var moduleIds: js.UndefOr[js.Any] = js.undefined
-  var moduleRoot: js.UndefOr[js.Any] = js.undefined
-  var only: js.UndefOr[String | js.Array[String]] = js.undefined
-  var plugins: js.UndefOr[js.Array[String]] = js.undefined
-  var presets: js.UndefOr[js.Array[String]] = js.undefined
-  var resolveModuleSource: js.UndefOr[js.Any] = js.undefined
-  var retainLines: js.UndefOr[Boolean] = js.undefined
-  var shouldPrintComment: js.UndefOr[js.Any] = js.undefined
-  var sourceFileName: js.UndefOr[js.Any] = js.undefined
-  var sourceMapTarget: js.UndefOr[js.Any] = js.undefined
-  var sourceMaps: js.UndefOr[js.Any] = js.undefined
-  var sourceRoot: js.UndefOr[js.Any] = js.undefined
+  var ast: js.UndefOr[Boolean] = js.native
+  var auxiliaryCommentAfter: js.UndefOr[js.Any] = js.native
+  var auxiliaryCommentBefore: js.UndefOr[js.Any] = js.native
+  var code: js.UndefOr[Boolean] = js.native
+  var comments: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[js.Any] = js.native
+  var env: js.UndefOr[js.Any] = js.native
+  var filename: js.UndefOr[String] = js.native
+  var filenameRelative: js.UndefOr[String] = js.native
+  var getModuleId: js.UndefOr[js.Any] = js.native
+  var highlightCode: js.UndefOr[Boolean] = js.native
+  var ignore: js.UndefOr[String | js.Array[String]] = js.native
+  var inputSourceMap: js.UndefOr[js.Any] = js.native
+  var keepModuleIdExtesions: js.UndefOr[Boolean] = js.native
+  var moduleId: js.UndefOr[js.Any] = js.native
+  var moduleIds: js.UndefOr[js.Any] = js.native
+  var moduleRoot: js.UndefOr[js.Any] = js.native
+  var only: js.UndefOr[String | js.Array[String]] = js.native
+  var plugins: js.UndefOr[js.Array[String]] = js.native
+  var presets: js.UndefOr[js.Array[String]] = js.native
+  var resolveModuleSource: js.UndefOr[js.Any] = js.native
+  var retainLines: js.UndefOr[Boolean] = js.native
+  var shouldPrintComment: js.UndefOr[js.Any] = js.native
+  var sourceFileName: js.UndefOr[js.Any] = js.native
+  var sourceMapTarget: js.UndefOr[js.Any] = js.native
+  var sourceMaps: js.UndefOr[js.Any] = js.native
+  var sourceRoot: js.UndefOr[js.Any] = js.native
 }
 
 object Ast {
   @scala.inline
-  def apply(
-    ast: js.UndefOr[Boolean] = js.undefined,
-    auxiliaryCommentAfter: js.Any = null,
-    auxiliaryCommentBefore: js.Any = null,
-    code: js.UndefOr[Boolean] = js.undefined,
-    comments: js.UndefOr[Boolean] = js.undefined,
-    compact: js.Any = null,
-    env: js.Any = null,
-    filename: String = null,
-    filenameRelative: String = null,
-    getModuleId: js.Any = null,
-    highlightCode: js.UndefOr[Boolean] = js.undefined,
-    ignore: String | js.Array[String] = null,
-    inputSourceMap: js.Any = null,
-    keepModuleIdExtesions: js.UndefOr[Boolean] = js.undefined,
-    moduleId: js.Any = null,
-    moduleIds: js.Any = null,
-    moduleRoot: js.Any = null,
-    only: String | js.Array[String] = null,
-    plugins: js.Array[String] = null,
-    presets: js.Array[String] = null,
-    resolveModuleSource: js.Any = null,
-    retainLines: js.UndefOr[Boolean] = js.undefined,
-    shouldPrintComment: js.Any = null,
-    sourceFileName: js.Any = null,
-    sourceMapTarget: js.Any = null,
-    sourceMaps: js.Any = null,
-    sourceRoot: js.Any = null
-  ): Ast = {
+  def apply(): Ast = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ast)) __obj.updateDynamic("ast")(ast.get.asInstanceOf[js.Any])
-    if (auxiliaryCommentAfter != null) __obj.updateDynamic("auxiliaryCommentAfter")(auxiliaryCommentAfter.asInstanceOf[js.Any])
-    if (auxiliaryCommentBefore != null) __obj.updateDynamic("auxiliaryCommentBefore")(auxiliaryCommentBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.get.asInstanceOf[js.Any])
-    if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (filenameRelative != null) __obj.updateDynamic("filenameRelative")(filenameRelative.asInstanceOf[js.Any])
-    if (getModuleId != null) __obj.updateDynamic("getModuleId")(getModuleId.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (inputSourceMap != null) __obj.updateDynamic("inputSourceMap")(inputSourceMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepModuleIdExtesions)) __obj.updateDynamic("keepModuleIdExtesions")(keepModuleIdExtesions.get.asInstanceOf[js.Any])
-    if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])
-    if (moduleIds != null) __obj.updateDynamic("moduleIds")(moduleIds.asInstanceOf[js.Any])
-    if (moduleRoot != null) __obj.updateDynamic("moduleRoot")(moduleRoot.asInstanceOf[js.Any])
-    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
-    if (resolveModuleSource != null) __obj.updateDynamic("resolveModuleSource")(resolveModuleSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines.get.asInstanceOf[js.Any])
-    if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(shouldPrintComment.asInstanceOf[js.Any])
-    if (sourceFileName != null) __obj.updateDynamic("sourceFileName")(sourceFileName.asInstanceOf[js.Any])
-    if (sourceMapTarget != null) __obj.updateDynamic("sourceMapTarget")(sourceMapTarget.asInstanceOf[js.Any])
-    if (sourceMaps != null) __obj.updateDynamic("sourceMaps")(sourceMaps.asInstanceOf[js.Any])
-    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ast]
   }
+  @scala.inline
+  implicit class AstOps[Self <: Ast] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAst(value: Boolean): Self = this.set("ast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAst: Self = this.set("ast", js.undefined)
+    @scala.inline
+    def setAuxiliaryCommentAfter(value: js.Any): Self = this.set("auxiliaryCommentAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuxiliaryCommentAfter: Self = this.set("auxiliaryCommentAfter", js.undefined)
+    @scala.inline
+    def setAuxiliaryCommentBefore(value: js.Any): Self = this.set("auxiliaryCommentBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuxiliaryCommentBefore: Self = this.set("auxiliaryCommentBefore", js.undefined)
+    @scala.inline
+    def setCode(value: Boolean): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setComments(value: Boolean): Self = this.set("comments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComments: Self = this.set("comments", js.undefined)
+    @scala.inline
+    def setCompact(value: js.Any): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setEnv(value: js.Any): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setFilenameRelative(value: String): Self = this.set("filenameRelative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilenameRelative: Self = this.set("filenameRelative", js.undefined)
+    @scala.inline
+    def setGetModuleId(value: js.Any): Self = this.set("getModuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetModuleId: Self = this.set("getModuleId", js.undefined)
+    @scala.inline
+    def setHighlightCode(value: Boolean): Self = this.set("highlightCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightCode: Self = this.set("highlightCode", js.undefined)
+    @scala.inline
+    def setIgnoreVarargs(value: String*): Self = this.set("ignore", js.Array(value :_*))
+    @scala.inline
+    def setIgnore(value: String | js.Array[String]): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    @scala.inline
+    def setInputSourceMap(value: js.Any): Self = this.set("inputSourceMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputSourceMap: Self = this.set("inputSourceMap", js.undefined)
+    @scala.inline
+    def setKeepModuleIdExtesions(value: Boolean): Self = this.set("keepModuleIdExtesions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepModuleIdExtesions: Self = this.set("keepModuleIdExtesions", js.undefined)
+    @scala.inline
+    def setModuleId(value: js.Any): Self = this.set("moduleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModuleId: Self = this.set("moduleId", js.undefined)
+    @scala.inline
+    def setModuleIds(value: js.Any): Self = this.set("moduleIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModuleIds: Self = this.set("moduleIds", js.undefined)
+    @scala.inline
+    def setModuleRoot(value: js.Any): Self = this.set("moduleRoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModuleRoot: Self = this.set("moduleRoot", js.undefined)
+    @scala.inline
+    def setOnlyVarargs(value: String*): Self = this.set("only", js.Array(value :_*))
+    @scala.inline
+    def setOnly(value: String | js.Array[String]): Self = this.set("only", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnly: Self = this.set("only", js.undefined)
+    @scala.inline
+    def setPluginsVarargs(value: String*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: js.Array[String]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setPresetsVarargs(value: String*): Self = this.set("presets", js.Array(value :_*))
+    @scala.inline
+    def setPresets(value: js.Array[String]): Self = this.set("presets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresets: Self = this.set("presets", js.undefined)
+    @scala.inline
+    def setResolveModuleSource(value: js.Any): Self = this.set("resolveModuleSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolveModuleSource: Self = this.set("resolveModuleSource", js.undefined)
+    @scala.inline
+    def setRetainLines(value: Boolean): Self = this.set("retainLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetainLines: Self = this.set("retainLines", js.undefined)
+    @scala.inline
+    def setShouldPrintComment(value: js.Any): Self = this.set("shouldPrintComment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShouldPrintComment: Self = this.set("shouldPrintComment", js.undefined)
+    @scala.inline
+    def setSourceFileName(value: js.Any): Self = this.set("sourceFileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceFileName: Self = this.set("sourceFileName", js.undefined)
+    @scala.inline
+    def setSourceMapTarget(value: js.Any): Self = this.set("sourceMapTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceMapTarget: Self = this.set("sourceMapTarget", js.undefined)
+    @scala.inline
+    def setSourceMaps(value: js.Any): Self = this.set("sourceMaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceMaps: Self = this.set("sourceMaps", js.undefined)
+    @scala.inline
+    def setSourceRoot(value: js.Any): Self = this.set("sourceRoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRoot: Self = this.set("sourceRoot", js.undefined)
+  }
+  
 }
 

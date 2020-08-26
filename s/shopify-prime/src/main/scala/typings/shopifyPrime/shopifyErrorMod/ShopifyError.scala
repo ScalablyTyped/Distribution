@@ -20,10 +20,6 @@ class ShopifyError protected () extends Error {
   var body: ErrorType1 | ErrorType2 | ErrorType3 = js.native
   var errors: StringDictionary[js.Array[String]] = js.native
   val isShopifyPrime: Boolean = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var statusCode: Double = js.native
   var statusText: String = js.native
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "pg-escape"
-version := "0.2-dt-20200515Z-f64f99"
-scalaVersion := "2.13.2"
+version := "0.2-dt-20200515Z-4bbbc6"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

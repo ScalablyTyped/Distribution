@@ -74,6 +74,7 @@ trait InfoWindow extends MVCObject {
     * @see {@link close}
     */
   def open(): Unit = js.native
+  def open(map: js.UndefOr[scala.Nothing], anchor: MVCObject): Unit = js.native
   def open(map: Map[Element]): Unit = js.native
   def open(map: Map[Element], anchor: MVCObject): Unit = js.native
   def open(map: StreetViewPanorama): Unit = js.native

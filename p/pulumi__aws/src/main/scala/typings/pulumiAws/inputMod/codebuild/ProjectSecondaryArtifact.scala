@@ -47,27 +47,55 @@ trait ProjectSecondaryArtifact extends js.Object {
 
 object ProjectSecondaryArtifact {
   @scala.inline
-  def apply(
-    artifactIdentifier: Input[String],
-    `type`: Input[String],
-    encryptionDisabled: Input[Boolean] = null,
-    location: Input[String] = null,
-    name: Input[String] = null,
-    namespaceType: Input[String] = null,
-    overrideArtifactName: Input[Boolean] = null,
-    packaging: Input[String] = null,
-    path: Input[String] = null
-  ): ProjectSecondaryArtifact = {
+  def apply(artifactIdentifier: Input[String], `type`: Input[String]): ProjectSecondaryArtifact = {
     val __obj = js.Dynamic.literal(artifactIdentifier = artifactIdentifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (encryptionDisabled != null) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namespaceType != null) __obj.updateDynamic("namespaceType")(namespaceType.asInstanceOf[js.Any])
-    if (overrideArtifactName != null) __obj.updateDynamic("overrideArtifactName")(overrideArtifactName.asInstanceOf[js.Any])
-    if (packaging != null) __obj.updateDynamic("packaging")(packaging.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSecondaryArtifact]
   }
+  @scala.inline
+  implicit class ProjectSecondaryArtifactOps[Self <: ProjectSecondaryArtifact] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifactIdentifier(value: Input[String]): Self = this.set("artifactIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncryptionDisabled(value: Input[Boolean]): Self = this.set("encryptionDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionDisabled: Self = this.set("encryptionDisabled", js.undefined)
+    @scala.inline
+    def setLocation(value: Input[String]): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamespaceType(value: Input[String]): Self = this.set("namespaceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceType: Self = this.set("namespaceType", js.undefined)
+    @scala.inline
+    def setOverrideArtifactName(value: Input[Boolean]): Self = this.set("overrideArtifactName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideArtifactName: Self = this.set("overrideArtifactName", js.undefined)
+    @scala.inline
+    def setPackaging(value: Input[String]): Self = this.set("packaging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackaging: Self = this.set("packaging", js.undefined)
+    @scala.inline
+    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+  }
+  
 }
 

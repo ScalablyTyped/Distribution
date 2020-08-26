@@ -69,6 +69,7 @@ trait IonSlides extends js.Object {
     * @param runCallbacks If true, the transition will produce [Transition/SlideChange][Start/End] transition events.
     */
   def slideNext(): js.Promise[Unit] = js.native
+  def slideNext(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): js.Promise[Unit] = js.native
   def slideNext(speed: Double): js.Promise[Unit] = js.native
   def slideNext(speed: Double, runCallbacks: Boolean): js.Promise[Unit] = js.native
   /**
@@ -77,6 +78,7 @@ trait IonSlides extends js.Object {
     * @param runCallbacks If true, the transition will produce the [Transition/SlideChange][Start/End] transition events.
     */
   def slidePrev(): js.Promise[Unit] = js.native
+  def slidePrev(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): js.Promise[Unit] = js.native
   def slidePrev(speed: Double): js.Promise[Unit] = js.native
   def slidePrev(speed: Double, runCallbacks: Boolean): js.Promise[Unit] = js.native
   /**
@@ -86,6 +88,7 @@ trait IonSlides extends js.Object {
     * @param runCallbacks If true, the transition will produce [Transition/SlideChange][Start/End] transition events.
     */
   def slideTo(index: Double): js.Promise[Unit] = js.native
+  def slideTo(index: Double, speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): js.Promise[Unit] = js.native
   def slideTo(index: Double, speed: Double): js.Promise[Unit] = js.native
   def slideTo(index: Double, speed: Double, runCallbacks: Boolean): js.Promise[Unit] = js.native
   /**

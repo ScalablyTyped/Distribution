@@ -54,7 +54,11 @@ object Loader extends js.Object {
     * @param withDomReady Boolean Whether or not to wait for document DOM ready as well.
     */
   def onReady(): Unit = js.native
+  def onReady(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], withDomReady: Boolean): Unit = js.native
+  def onReady(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def onReady(fn: js.UndefOr[scala.Nothing], scope: js.Any, withDomReady: Boolean): Unit = js.native
   def onReady(fn: js.Any): Unit = js.native
+  def onReady(fn: js.Any, scope: js.UndefOr[scala.Nothing], withDomReady: Boolean): Unit = js.native
   def onReady(fn: js.Any, scope: js.Any): Unit = js.native
   def onReady(fn: js.Any, scope: js.Any, withDomReady: Boolean): Unit = js.native
   /** [Method] Loads all classes by the given names and all their direct dependencies optionally executes the given callback functi
@@ -64,8 +68,39 @@ object Loader extends js.Object {
     * @param excludes String/Array Classes to be excluded, useful when being used with expressions.
     */
   def require(): Unit = js.native
+  def require(
+    expressions: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    excludes: js.Any
+  ): Unit = js.native
+  def require(expressions: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def require(
+    expressions: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    excludes: js.Any
+  ): Unit = js.native
+  def require(expressions: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def require(
+    expressions: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    excludes: js.Any
+  ): Unit = js.native
+  def require(expressions: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def require(expressions: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, excludes: js.Any): Unit = js.native
   def require(expressions: js.Any): Unit = js.native
+  def require(
+    expressions: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    excludes: js.Any
+  ): Unit = js.native
+  def require(expressions: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def require(expressions: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, excludes: js.Any): Unit = js.native
   def require(expressions: js.Any, fn: js.Any): Unit = js.native
+  def require(expressions: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], excludes: js.Any): Unit = js.native
   def require(expressions: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def require(expressions: js.Any, fn: js.Any, scope: js.Any, excludes: js.Any): Unit = js.native
   /** [Method] Set the configuration for the loader
@@ -74,6 +109,7 @@ object Loader extends js.Object {
     * @returns Ext.Loader this
     */
   def setConfig(): ILoader = js.native
+  def setConfig(name: js.UndefOr[scala.Nothing], value: js.Any): ILoader = js.native
   def setConfig(name: js.Any): ILoader = js.native
   def setConfig(name: js.Any, value: js.Any): ILoader = js.native
   /** [Method] Sets the path of a namespace
@@ -82,6 +118,7 @@ object Loader extends js.Object {
     * @returns Ext.Loader this
     */
   def setPath(): ILoader = js.native
+  def setPath(name: js.UndefOr[scala.Nothing], path: java.lang.String): ILoader = js.native
   def setPath(name: js.Any): ILoader = js.native
   def setPath(name: js.Any, path: java.lang.String): ILoader = js.native
   /** [Method] Synchronously loads all classes by the given names and all their direct dependencies optionally executes the given c
@@ -91,8 +128,39 @@ object Loader extends js.Object {
     * @param excludes String/Array Classes to be excluded, useful when being used with expressions
     */
   def syncRequire(): Unit = js.native
+  def syncRequire(
+    expressions: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    excludes: js.Any
+  ): Unit = js.native
+  def syncRequire(expressions: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def syncRequire(
+    expressions: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    excludes: js.Any
+  ): Unit = js.native
+  def syncRequire(expressions: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def syncRequire(
+    expressions: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    excludes: js.Any
+  ): Unit = js.native
+  def syncRequire(expressions: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def syncRequire(expressions: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, excludes: js.Any): Unit = js.native
   def syncRequire(expressions: js.Any): Unit = js.native
+  def syncRequire(
+    expressions: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    excludes: js.Any
+  ): Unit = js.native
+  def syncRequire(expressions: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def syncRequire(expressions: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, excludes: js.Any): Unit = js.native
   def syncRequire(expressions: js.Any, fn: js.Any): Unit = js.native
+  def syncRequire(expressions: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], excludes: js.Any): Unit = js.native
   def syncRequire(expressions: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def syncRequire(expressions: js.Any, fn: js.Any, scope: js.Any, excludes: js.Any): Unit = js.native
 }

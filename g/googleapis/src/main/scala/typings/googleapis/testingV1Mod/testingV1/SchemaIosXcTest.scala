@@ -41,18 +41,38 @@ trait SchemaIosXcTest extends js.Object {
 
 object SchemaIosXcTest {
   @scala.inline
-  def apply(
-    appBundleId: String = null,
-    testsZip: SchemaFileReference = null,
-    xcodeVersion: String = null,
-    xctestrun: SchemaFileReference = null
-  ): SchemaIosXcTest = {
+  def apply(): SchemaIosXcTest = {
     val __obj = js.Dynamic.literal()
-    if (appBundleId != null) __obj.updateDynamic("appBundleId")(appBundleId.asInstanceOf[js.Any])
-    if (testsZip != null) __obj.updateDynamic("testsZip")(testsZip.asInstanceOf[js.Any])
-    if (xcodeVersion != null) __obj.updateDynamic("xcodeVersion")(xcodeVersion.asInstanceOf[js.Any])
-    if (xctestrun != null) __obj.updateDynamic("xctestrun")(xctestrun.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIosXcTest]
   }
+  @scala.inline
+  implicit class SchemaIosXcTestOps[Self <: SchemaIosXcTest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppBundleId(value: String): Self = this.set("appBundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppBundleId: Self = this.set("appBundleId", js.undefined)
+    @scala.inline
+    def setTestsZip(value: SchemaFileReference): Self = this.set("testsZip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestsZip: Self = this.set("testsZip", js.undefined)
+    @scala.inline
+    def setXcodeVersion(value: String): Self = this.set("xcodeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXcodeVersion: Self = this.set("xcodeVersion", js.undefined)
+    @scala.inline
+    def setXctestrun(value: SchemaFileReference): Self = this.set("xctestrun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXctestrun: Self = this.set("xctestrun", js.undefined)
+  }
+  
 }
 

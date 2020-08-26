@@ -51,22 +51,50 @@ trait SchemaSurveyAudience extends js.Object {
 
 object SchemaSurveyAudience {
   @scala.inline
-  def apply(
-    ages: js.Array[String] = null,
-    country: String = null,
-    countrySubdivision: String = null,
-    gender: String = null,
-    languages: js.Array[String] = null,
-    populationSource: String = null
-  ): SchemaSurveyAudience = {
+  def apply(): SchemaSurveyAudience = {
     val __obj = js.Dynamic.literal()
-    if (ages != null) __obj.updateDynamic("ages")(ages.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (countrySubdivision != null) __obj.updateDynamic("countrySubdivision")(countrySubdivision.asInstanceOf[js.Any])
-    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
-    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (populationSource != null) __obj.updateDynamic("populationSource")(populationSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSurveyAudience]
   }
+  @scala.inline
+  implicit class SchemaSurveyAudienceOps[Self <: SchemaSurveyAudience] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgesVarargs(value: String*): Self = this.set("ages", js.Array(value :_*))
+    @scala.inline
+    def setAges(value: js.Array[String]): Self = this.set("ages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAges: Self = this.set("ages", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setCountrySubdivision(value: String): Self = this.set("countrySubdivision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountrySubdivision: Self = this.set("countrySubdivision", js.undefined)
+    @scala.inline
+    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGender: Self = this.set("gender", js.undefined)
+    @scala.inline
+    def setLanguagesVarargs(value: String*): Self = this.set("languages", js.Array(value :_*))
+    @scala.inline
+    def setLanguages(value: js.Array[String]): Self = this.set("languages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguages: Self = this.set("languages", js.undefined)
+    @scala.inline
+    def setPopulationSource(value: String): Self = this.set("populationSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopulationSource: Self = this.set("populationSource", js.undefined)
+  }
+  
 }
 

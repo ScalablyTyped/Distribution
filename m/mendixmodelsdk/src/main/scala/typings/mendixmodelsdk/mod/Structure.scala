@@ -24,6 +24,13 @@ abstract class Structure protected ()
     _model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
+    _isPartial: js.UndefOr[scala.Nothing],
+    container: IContainer
+  ) = this()
+  def this(
+    _model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
+    structureTypeName: String,
+    id: String,
     _isPartial: Boolean,
     container: IContainer
   ) = this()

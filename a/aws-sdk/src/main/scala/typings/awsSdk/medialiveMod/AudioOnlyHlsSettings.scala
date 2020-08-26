@@ -35,18 +35,38 @@ trait AudioOnlyHlsSettings extends js.Object {
 
 object AudioOnlyHlsSettings {
   @scala.inline
-  def apply(
-    AudioGroupId: string = null,
-    AudioOnlyImage: InputLocation = null,
-    AudioTrackType: AudioOnlyHlsTrackType = null,
-    SegmentType: AudioOnlyHlsSegmentType = null
-  ): AudioOnlyHlsSettings = {
+  def apply(): AudioOnlyHlsSettings = {
     val __obj = js.Dynamic.literal()
-    if (AudioGroupId != null) __obj.updateDynamic("AudioGroupId")(AudioGroupId.asInstanceOf[js.Any])
-    if (AudioOnlyImage != null) __obj.updateDynamic("AudioOnlyImage")(AudioOnlyImage.asInstanceOf[js.Any])
-    if (AudioTrackType != null) __obj.updateDynamic("AudioTrackType")(AudioTrackType.asInstanceOf[js.Any])
-    if (SegmentType != null) __obj.updateDynamic("SegmentType")(SegmentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioOnlyHlsSettings]
   }
+  @scala.inline
+  implicit class AudioOnlyHlsSettingsOps[Self <: AudioOnlyHlsSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioGroupId(value: string): Self = this.set("AudioGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioGroupId: Self = this.set("AudioGroupId", js.undefined)
+    @scala.inline
+    def setAudioOnlyImage(value: InputLocation): Self = this.set("AudioOnlyImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioOnlyImage: Self = this.set("AudioOnlyImage", js.undefined)
+    @scala.inline
+    def setAudioTrackType(value: AudioOnlyHlsTrackType): Self = this.set("AudioTrackType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioTrackType: Self = this.set("AudioTrackType", js.undefined)
+    @scala.inline
+    def setSegmentType(value: AudioOnlyHlsSegmentType): Self = this.set("SegmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentType: Self = this.set("SegmentType", js.undefined)
+  }
+  
 }
 

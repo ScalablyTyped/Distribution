@@ -26,16 +26,34 @@ trait DescribeTemplateRequest extends js.Object {
 
 object DescribeTemplateRequest {
   @scala.inline
-  def apply(
-    AwsAccountId: AwsAccountId,
-    TemplateId: RestrictiveResourceId,
-    AliasName: AliasName = null,
-    VersionNumber: js.UndefOr[VersionNumber] = js.undefined
-  ): DescribeTemplateRequest = {
+  def apply(AwsAccountId: AwsAccountId, TemplateId: RestrictiveResourceId): DescribeTemplateRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
-    if (AliasName != null) __obj.updateDynamic("AliasName")(AliasName.asInstanceOf[js.Any])
-    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTemplateRequest]
   }
+  @scala.inline
+  implicit class DescribeTemplateRequestOps[Self <: DescribeTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplateId(value: RestrictiveResourceId): Self = this.set("TemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAliasName(value: AliasName): Self = this.set("AliasName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasName: Self = this.set("AliasName", js.undefined)
+    @scala.inline
+    def setVersionNumber(value: VersionNumber): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionNumber: Self = this.set("VersionNumber", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ViewportQuad () extends js.Object {
   def this(rectangle: BoundingRectangle) = this()
+  def this(rectangle: js.UndefOr[scala.Nothing], material: Material) = this()
   def this(rectangle: BoundingRectangle, material: Material) = this()
   var material: Material = js.native
   var rectangle: BoundingRectangle = js.native

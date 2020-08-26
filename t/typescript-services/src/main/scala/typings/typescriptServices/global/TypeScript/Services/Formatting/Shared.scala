@@ -11,59 +11,30 @@ import scala.scalajs.js.annotation._
 object Shared extends js.Object {
   @js.native
   class TokenAllAccess ()
-    extends typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenAllAccess {
-    /* CompleteClass */
-    override def Contains(token: SyntaxKind): Boolean = js.native
-    /* CompleteClass */
-    override def GetTokens(): js.Array[SyntaxKind] = js.native
-  }
+    extends typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenAllAccess
   
   @js.native
   class TokenRange protected ()
     extends typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange {
     def this(tokenAccess: ITokenAccess) = this()
-    /* CompleteClass */
-    override var tokenAccess: ITokenAccess = js.native
-    /* CompleteClass */
-    override def Contains(token: SyntaxKind): Boolean = js.native
-    /* CompleteClass */
-    override def GetTokens(): js.Array[SyntaxKind] = js.native
   }
   
   @js.native
   class TokenRangeAccess protected ()
     extends typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRangeAccess {
     def this(from: SyntaxKind, to: SyntaxKind, except: js.Array[SyntaxKind]) = this()
-    /* CompleteClass */
-    override var tokens: js.Any = js.native
-    /* CompleteClass */
-    override def Contains(token: SyntaxKind): Boolean = js.native
-    /* CompleteClass */
-    override def GetTokens(): js.Array[SyntaxKind] = js.native
   }
   
   @js.native
   class TokenSingleValueAccess protected ()
     extends typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenSingleValueAccess {
     def this(token: SyntaxKind) = this()
-    /* CompleteClass */
-    override var token: SyntaxKind = js.native
-    /* CompleteClass */
-    override def Contains(token: SyntaxKind): Boolean = js.native
-    /* CompleteClass */
-    override def GetTokens(): js.Array[SyntaxKind] = js.native
   }
   
   @js.native
   class TokenValuesAccess protected ()
     extends typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenValuesAccess {
     def this(tks: js.Array[SyntaxKind]) = this()
-    /* CompleteClass */
-    override var tokens: js.Any = js.native
-    /* CompleteClass */
-    override def Contains(token: SyntaxKind): Boolean = js.native
-    /* CompleteClass */
-    override def GetTokens(): js.Array[SyntaxKind] = js.native
   }
   
   /* static members */

@@ -21,11 +21,15 @@ object baseServiceMod extends js.Object {
     @JSName("createRequest")
     /* protected */ def createRequest_DELETE[T](method: DELETE, path: String): js.Promise[T] = js.native
     @JSName("createRequest")
+    /* protected */ def createRequest_DELETE[T](method: DELETE, path: String, rootElement: js.UndefOr[scala.Nothing], payload: js.Object): js.Promise[T] = js.native
+    @JSName("createRequest")
     /* protected */ def createRequest_DELETE[T](method: DELETE, path: String, rootElement: String): js.Promise[T] = js.native
     @JSName("createRequest")
     /* protected */ def createRequest_DELETE[T](method: DELETE, path: String, rootElement: String, payload: js.Object): js.Promise[T] = js.native
     @JSName("createRequest")
     /* protected */ def createRequest_GET[T](method: GET, path: String): js.Promise[T] = js.native
+    @JSName("createRequest")
+    /* protected */ def createRequest_GET[T](method: GET, path: String, rootElement: js.UndefOr[scala.Nothing], payload: js.Object): js.Promise[T] = js.native
     @JSName("createRequest")
     /* protected */ def createRequest_GET[T](method: GET, path: String, rootElement: String): js.Promise[T] = js.native
     @JSName("createRequest")
@@ -33,11 +37,15 @@ object baseServiceMod extends js.Object {
     @JSName("createRequest")
     /* protected */ def createRequest_POST[T](method: POST, path: String): js.Promise[T] = js.native
     @JSName("createRequest")
+    /* protected */ def createRequest_POST[T](method: POST, path: String, rootElement: js.UndefOr[scala.Nothing], payload: js.Object): js.Promise[T] = js.native
+    @JSName("createRequest")
     /* protected */ def createRequest_POST[T](method: POST, path: String, rootElement: String): js.Promise[T] = js.native
     @JSName("createRequest")
     /* protected */ def createRequest_POST[T](method: POST, path: String, rootElement: String, payload: js.Object): js.Promise[T] = js.native
     @JSName("createRequest")
     /* protected */ def createRequest_PUT[T](method: PUT, path: String): js.Promise[T] = js.native
+    @JSName("createRequest")
+    /* protected */ def createRequest_PUT[T](method: PUT, path: String, rootElement: js.UndefOr[scala.Nothing], payload: js.Object): js.Promise[T] = js.native
     @JSName("createRequest")
     /* protected */ def createRequest_PUT[T](method: PUT, path: String, rootElement: String): js.Promise[T] = js.native
     @JSName("createRequest")

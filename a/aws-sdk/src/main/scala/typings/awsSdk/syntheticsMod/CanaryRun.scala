@@ -26,18 +26,38 @@ trait CanaryRun extends js.Object {
 
 object CanaryRun {
   @scala.inline
-  def apply(
-    ArtifactS3Location: String = null,
-    Name: CanaryName = null,
-    Status: CanaryRunStatus = null,
-    Timeline: CanaryRunTimeline = null
-  ): CanaryRun = {
+  def apply(): CanaryRun = {
     val __obj = js.Dynamic.literal()
-    if (ArtifactS3Location != null) __obj.updateDynamic("ArtifactS3Location")(ArtifactS3Location.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Timeline != null) __obj.updateDynamic("Timeline")(Timeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanaryRun]
   }
+  @scala.inline
+  implicit class CanaryRunOps[Self <: CanaryRun] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifactS3Location(value: String): Self = this.set("ArtifactS3Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactS3Location: Self = this.set("ArtifactS3Location", js.undefined)
+    @scala.inline
+    def setName(value: CanaryName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStatus(value: CanaryRunStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTimeline(value: CanaryRunTimeline): Self = this.set("Timeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeline: Self = this.set("Timeline", js.undefined)
+  }
+  
 }
 

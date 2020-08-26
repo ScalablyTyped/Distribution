@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MailMergeDialogCommand")
 @js.native
 class MailMergeDialogCommand ()
-  extends typings.devexpressWeb.MailMergeDialogCommand {
-  /**
-    * Executes the MailMergeDialogCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.MailMergeDialogCommand
 

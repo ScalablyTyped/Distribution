@@ -24,11 +24,30 @@ trait SchemaTrackInfo extends js.Object {
 
 object SchemaTrackInfo {
   @scala.inline
-  def apply(trackAlias: String = null, trackId: String = null): SchemaTrackInfo = {
+  def apply(): SchemaTrackInfo = {
     val __obj = js.Dynamic.literal()
-    if (trackAlias != null) __obj.updateDynamic("trackAlias")(trackAlias.asInstanceOf[js.Any])
-    if (trackId != null) __obj.updateDynamic("trackId")(trackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrackInfo]
   }
+  @scala.inline
+  implicit class SchemaTrackInfoOps[Self <: SchemaTrackInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrackAlias(value: String): Self = this.set("trackAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackAlias: Self = this.set("trackAlias", js.undefined)
+    @scala.inline
+    def setTrackId(value: String): Self = this.set("trackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackId: Self = this.set("trackId", js.undefined)
+  }
+  
 }
 

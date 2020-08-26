@@ -66,32 +66,68 @@ trait SchemaRuntimeEnvironment extends js.Object {
 
 object SchemaRuntimeEnvironment {
   @scala.inline
-  def apply(
-    additionalExperiments: js.Array[String] = null,
-    additionalUserLabels: StringDictionary[String] = null,
-    bypassTempDirValidation: js.UndefOr[Boolean] = js.undefined,
-    machineType: String = null,
-    maxWorkers: js.UndefOr[Double] = js.undefined,
-    network: String = null,
-    numWorkers: js.UndefOr[Double] = js.undefined,
-    serviceAccountEmail: String = null,
-    subnetwork: String = null,
-    tempLocation: String = null,
-    zone: String = null
-  ): SchemaRuntimeEnvironment = {
+  def apply(): SchemaRuntimeEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (additionalExperiments != null) __obj.updateDynamic("additionalExperiments")(additionalExperiments.asInstanceOf[js.Any])
-    if (additionalUserLabels != null) __obj.updateDynamic("additionalUserLabels")(additionalUserLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(bypassTempDirValidation)) __obj.updateDynamic("bypassTempDirValidation")(bypassTempDirValidation.get.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWorkers)) __obj.updateDynamic("maxWorkers")(maxWorkers.get.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (!js.isUndefined(numWorkers)) __obj.updateDynamic("numWorkers")(numWorkers.get.asInstanceOf[js.Any])
-    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
-    if (tempLocation != null) __obj.updateDynamic("tempLocation")(tempLocation.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRuntimeEnvironment]
   }
+  @scala.inline
+  implicit class SchemaRuntimeEnvironmentOps[Self <: SchemaRuntimeEnvironment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalExperimentsVarargs(value: String*): Self = this.set("additionalExperiments", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalExperiments(value: js.Array[String]): Self = this.set("additionalExperiments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalExperiments: Self = this.set("additionalExperiments", js.undefined)
+    @scala.inline
+    def setAdditionalUserLabels(value: StringDictionary[String]): Self = this.set("additionalUserLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalUserLabels: Self = this.set("additionalUserLabels", js.undefined)
+    @scala.inline
+    def setBypassTempDirValidation(value: Boolean): Self = this.set("bypassTempDirValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBypassTempDirValidation: Self = this.set("bypassTempDirValidation", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setMaxWorkers(value: Double): Self = this.set("maxWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWorkers: Self = this.set("maxWorkers", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setNumWorkers(value: Double): Self = this.set("numWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumWorkers: Self = this.set("numWorkers", js.undefined)
+    @scala.inline
+    def setServiceAccountEmail(value: String): Self = this.set("serviceAccountEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccountEmail: Self = this.set("serviceAccountEmail", js.undefined)
+    @scala.inline
+    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    @scala.inline
+    def setTempLocation(value: String): Self = this.set("tempLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTempLocation: Self = this.set("tempLocation", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,6 @@
 package typings.webicon.svgIconSetOptionsMod
 
 import typings.webicon.iconSetOptionsMod.IconSetOptions
-import typings.webicon.urlConfigMod.UrlConfig
 import typings.webicon.webiconBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,9 +9,10 @@ import scala.scalajs.js.annotation._
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webicon.iconMod.Icon because Already inherited
 - typings.webicon.downloadableMod.Downloadable because Already inherited
-- typings.webicon.storeableMod.Storeable because var conflicts: iconIdParser, uri, url. Inlined preloadable, iconIdResolver */ trait SvgIconSetOptions extends IconSetOptions {
+- typings.webicon.storeableMod.Storeable because var conflicts: iconIdParser, uri, url. Inlined preloadable, iconIdResolver */ @js.native
+trait SvgIconSetOptions extends IconSetOptions {
   @JSName("cumulative")
-  var cumulative_SvgIconSetOptions: js.UndefOr[`false`] = js.undefined
+  var cumulative_SvgIconSetOptions: js.UndefOr[`false`] = js.native
   /**
     * Resolves the id of the underlying source.
     *
@@ -22,39 +22,43 @@ import scala.scalajs.js.annotation._
     * @return
     * The resolved id of the source.
     */
-  var iconIdResolver: js.UndefOr[js.Function1[/* id */ String, String]] = js.undefined
+  var iconIdResolver: js.UndefOr[js.Function1[/* id */ String, String]] = js.native
   /**
     * A value indicating whether the source is preloadable.
     */
-  var preloadable: js.UndefOr[Boolean] = js.undefined
+  var preloadable: js.UndefOr[Boolean] = js.native
 }
 
 object SvgIconSetOptions {
   @scala.inline
-  def apply(
-    cumulative: `false` = null,
-    iconIdParser: (/* id */ String, /* params */ js.Array[String]) => String = null,
-    iconIdResolver: /* id */ String => String = null,
-    iconSize: js.UndefOr[Double] = js.undefined,
-    preloadable: js.UndefOr[Boolean] = js.undefined,
-    size: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
-    svgIconSize: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
-    uri: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any = null,
-    url: UrlConfig[scala.Nothing] = null,
-    viewBox: String = null
-  ): SvgIconSetOptions = {
+  def apply(): SvgIconSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (cumulative != null) __obj.updateDynamic("cumulative")(cumulative.asInstanceOf[js.Any])
-    if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
-    if (iconIdResolver != null) __obj.updateDynamic("iconIdResolver")(js.Any.fromFunction1(iconIdResolver))
-    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preloadable)) __obj.updateDynamic("preloadable")(preloadable.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (svgIconSize != null) __obj.updateDynamic("svgIconSize")(svgIconSize.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgIconSetOptions]
   }
+  @scala.inline
+  implicit class SvgIconSetOptionsOps[Self <: SvgIconSetOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCumulative(value: `false`): Self = this.set("cumulative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCumulative: Self = this.set("cumulative", js.undefined)
+    @scala.inline
+    def setIconIdResolver(value: /* id */ String => String): Self = this.set("iconIdResolver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIconIdResolver: Self = this.set("iconIdResolver", js.undefined)
+    @scala.inline
+    def setPreloadable(value: Boolean): Self = this.set("preloadable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreloadable: Self = this.set("preloadable", js.undefined)
+  }
+  
 }
 

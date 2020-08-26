@@ -1,9 +1,6 @@
 package typings.ionicCore
 
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
-import typings.ionicCore.ionicCoreStrings.button
-import typings.ionicCore.ionicCoreStrings.reset
-import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.segmentSegmentInterfaceMod.SegmentButtonLayout
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
@@ -19,16 +16,12 @@ object segmentButtonMod extends js.Object {
     extends ComponentInterface
        with ButtonInterface {
     var checked: Boolean = js.native
-    /* CompleteClass */
-    override var disabled: Boolean = js.native
     var el: HTMLElement = js.native
     /**
       * Set the layout of the text and icon in the segment.
       */
     var layout: js.UndefOr[SegmentButtonLayout] = js.native
     var segmentEl: js.Any = js.native
-    /* CompleteClass */
-    override var `type`: submit | reset | button = js.native
     var updateState: js.Any = js.native
     /**
       * The value of the segment button.

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/find", JSImport.Namespace)
+@JSImport("@lumino/algorithm/types/find", JSImport.Namespace)
 @js.native
 object findMod extends js.Object {
   def find[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native

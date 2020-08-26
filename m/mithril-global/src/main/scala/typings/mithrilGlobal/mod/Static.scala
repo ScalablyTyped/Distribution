@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined mithril.mithril.Static & {  stream  :{None <T>(value : T): mithril.mithril/stream.Stream<T>, None <T>(): mithril.mithril/stream.Stream<T>, readonly merge <S extends std.Array<any>>(streams : {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}): mithril.mithril/stream.Stream<{[ I in keyof S ]: S[I]}>, readonly lift <S extends std.Array<any>, T>(fn : (values : S): T, streams : {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}): mithril.mithril/stream.Stream<T>, readonly combine <T>(combiner : (streams : ...any): T, streams : std.Array<mithril.mithril/stream.Stream<any>>): mithril.mithril/stream.Stream<T>,  readonly SKIP  :symbol, readonly scan <T, U>(fn : (acc : U, value : T): U, acc : U, stream : mithril.mithril/stream.Stream<T>): mithril.mithril/stream.Stream<U>, readonly scanMerge <T, U>(pairs : std.Array<[mithril.mithril/stream.Stream<T>, (acc : U, value : T): U]>, acc : U): mithril.mithril/stream.Stream<U>, readonly scanMerge <U>(pairs : std.Array<[mithril.mithril/stream.Stream<any>, (acc : U, value : any): U]>, acc : U): mithril.mithril/stream.Stream<U>}} */
+/* Inlined mithril.mithril.Static & {  stream :{None <T>(value : T): mithril.mithril/stream.Stream<T>, None <T>(): mithril.mithril/stream.Stream<T>, readonly merge <S extends std.Array<any>>(streams : {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}): mithril.mithril/stream.Stream<{[ I in keyof S ]: S[I]}>, readonly lift <S extends std.Array<any>, T>(fn : (values : S): T, streams : {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}): mithril.mithril/stream.Stream<T>, readonly combine <T>(combiner : (streams : ...any): T, streams : std.Array<mithril.mithril/stream.Stream<any>>): mithril.mithril/stream.Stream<T>,  readonly SKIP :symbol, readonly scan <T, U>(fn : (acc : U, value : T): U, acc : U, stream : mithril.mithril/stream.Stream<T>): mithril.mithril/stream.Stream<U>, readonly scanMerge <T, U>(pairs : std.Array<[mithril.mithril/stream.Stream<T>, (acc : U, value : T): U]>, acc : U): mithril.mithril/stream.Stream<U>, readonly scanMerge <U>(pairs : std.Array<[mithril.mithril/stream.Stream<any>, (acc : U, value : any): U]>, acc : U): mithril.mithril/stream.Stream<U>}} */
 @js.native
 trait Static extends js.Object {
   @JSName("jsonp")
@@ -58,7 +58,7 @@ trait Static extends js.Object {
   def jsonp[T](options: JsonpOptionsurlstring): js.Promise[T] = js.native
   def jsonp[T](url: String): js.Promise[T] = js.native
   def jsonp[T](url: String, options: typings.mithril.mod.JsonpOptions): js.Promise[T] = js.native
-  def mount(element: Element): Unit = js.native
+  def mount(element: Element, component: Null): Unit = js.native
   def mount(element: Element, component: typings.mithril.mod.ComponentTypes[_, _]): Unit = js.native
   /** Parse path name */
   def parsePathname(url: String): typings.mithril.anon.Params = js.native

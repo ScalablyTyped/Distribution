@@ -12,7 +12,7 @@ Give your JavaScript the ability to speak many languages.
 | Keywords           | i18n, internationalization, internationalisation, translation, interpolation, translate, polyglot |
 | # releases         | 4 |
 | # dependents       | 149 |
-| # downloads        | 3733142 |
+| # downloads        | 3872094 |
 | # stars            | 14 |
 
 ## Links

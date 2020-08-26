@@ -5,33 +5,58 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.address.AddressData> */
+@js.native
 trait PartialAddressData extends js.Object {
-  var AddressLine1: js.UndefOr[String] = js.undefined
-  var AddressLine2: js.UndefOr[String] = js.undefined
-  var City: js.UndefOr[String] = js.undefined
-  var Country: js.UndefOr[String] = js.undefined
-  var PostalCode: js.UndefOr[String] = js.undefined
-  var Region: js.UndefOr[String] = js.undefined
+  var AddressLine1: js.UndefOr[String] = js.native
+  var AddressLine2: js.UndefOr[String] = js.native
+  var City: js.UndefOr[String] = js.native
+  var Country: js.UndefOr[String] = js.native
+  var PostalCode: js.UndefOr[String] = js.native
+  var Region: js.UndefOr[String] = js.native
 }
 
 object PartialAddressData {
   @scala.inline
-  def apply(
-    AddressLine1: String = null,
-    AddressLine2: String = null,
-    City: String = null,
-    Country: String = null,
-    PostalCode: String = null,
-    Region: String = null
-  ): PartialAddressData = {
+  def apply(): PartialAddressData = {
     val __obj = js.Dynamic.literal()
-    if (AddressLine1 != null) __obj.updateDynamic("AddressLine1")(AddressLine1.asInstanceOf[js.Any])
-    if (AddressLine2 != null) __obj.updateDynamic("AddressLine2")(AddressLine2.asInstanceOf[js.Any])
-    if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
-    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
-    if (PostalCode != null) __obj.updateDynamic("PostalCode")(PostalCode.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialAddressData]
   }
+  @scala.inline
+  implicit class PartialAddressDataOps[Self <: PartialAddressData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressLine1(value: String): Self = this.set("AddressLine1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressLine1: Self = this.set("AddressLine1", js.undefined)
+    @scala.inline
+    def setAddressLine2(value: String): Self = this.set("AddressLine2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressLine2: Self = this.set("AddressLine2", js.undefined)
+    @scala.inline
+    def setCity(value: String): Self = this.set("City", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("City", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("Country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("Country", js.undefined)
+    @scala.inline
+    def setPostalCode(value: String): Self = this.set("PostalCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalCode: Self = this.set("PostalCode", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+  }
+  
 }
 

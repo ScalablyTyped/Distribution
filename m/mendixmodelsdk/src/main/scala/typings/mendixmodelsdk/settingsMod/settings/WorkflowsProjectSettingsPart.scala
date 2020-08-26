@@ -29,15 +29,13 @@ class WorkflowsProjectSettingsPart protected () extends ProjectSettingsPart {
   @JSName("model")
   var model_FWorkflowsProjectSettingsPart: IModel = js.native
   def enabled: Boolean = js.native
-  def enabled(newValue: Boolean): js.Any = js.native
-  def userEntity(): js.Any = js.native
-  def userEntity(newValue: IEntity): js.Any = js.native
-  def userEntityQualifiedName: String | Null = js.native
+  def enabled_=(newValue: Boolean): Unit = js.native
   /**
     * In version 8.11.0: introduced
     */
-  @JSName("userEntity")
-  def userEntity_Union: IEntity | Null = js.native
+  def userEntity: IEntity | Null = js.native
+  def userEntityQualifiedName: String | Null = js.native
+  def userEntity_=(newValue: IEntity | Null): Unit = js.native
 }
 
 /* static members */

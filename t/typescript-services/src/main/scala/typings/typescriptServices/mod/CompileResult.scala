@@ -7,12 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript-services", "CompileResult")
 @js.native
 class CompileResult ()
-  extends typings.typescriptServices.TypeScript.CompileResult {
-  /* CompleteClass */
-  override var diagnostics: js.Array[typings.typescriptServices.TypeScript.Diagnostic] = js.native
-  /* CompleteClass */
-  override var outputFiles: js.Array[typings.typescriptServices.TypeScript.OutputFile] = js.native
-}
+  extends typings.typescriptServices.TypeScript.CompileResult
 
 /* static members */
 @JSImport("typescript-services", "CompileResult")

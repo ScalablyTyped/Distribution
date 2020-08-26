@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   * 
   * This is typically extended further by Game Object specific implementations.
   */
+@js.native
 trait ToJSON extends js.Object
 

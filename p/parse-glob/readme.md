@@ -11,8 +11,8 @@ Parse a glob pattern into an object of tokens.
 | Full name          | parse-glob |
 | Keywords           | glob, match, bash, expand, expansion, expression, file, files, filter, find, glob, globbing, globs, globstar, match, matcher, matches, matching, path, pattern, patterns, regex, regexp, regular, shell, wildcard |
 | # releases         | 0 |
-| # dependents       | 66 |
-| # downloads        | 236853073 |
+| # dependents       | 67 |
+| # downloads        | 232493071 |
 | # stars            | 0 |
 
 ## Links

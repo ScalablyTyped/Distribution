@@ -12,7 +12,7 @@ A JavaScript client library for Named Data Networking
 | Keywords           | NDN |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 1605 |
+| # downloads        | 1584 |
 | # stars            | 0 |
 
 ## Links

@@ -4,20 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutoIndex extends js.Object {
   /**
     * set to false to disable automatic index creation for all
     * models associated with this connection.
     */
-  var autoIndex: js.UndefOr[Boolean] = js.undefined
+  var autoIndex: js.UndefOr[Boolean] = js.native
 }
 
 object AutoIndex {
   @scala.inline
-  def apply(autoIndex: js.UndefOr[Boolean] = js.undefined): AutoIndex = {
+  def apply(): AutoIndex = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoIndex]
   }
+  @scala.inline
+  implicit class AutoIndexOps[Self <: AutoIndex] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoIndex(value: Boolean): Self = this.set("autoIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoIndex: Self = this.set("autoIndex", js.undefined)
+  }
+  
 }
 

@@ -18,35 +18,61 @@ import scala.scalajs.js.annotation._
   * @property crossOrigin {(string | boolean=)} - The CORS settings to use for the crossOrigin attribute for the image, if omitted or if the value evaluates to false no CORS settings
   * are used.
   */
+@js.native
 trait Options extends js.Object {
-  var crossOrigin: js.UndefOr[String | Boolean] = js.undefined
-  var getCopyrights: js.UndefOr[js.Function2[/* rect */ Rect, /* n */ Double, js.Array[ICopyright]]] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var tileSize: js.UndefOr[Double] = js.undefined
-  var uri: js.UndefOr[String] = js.undefined
-  def getURL(n1: Double, n2: Double, n3: Double): String
+  var crossOrigin: js.UndefOr[String | Boolean] = js.native
+  var getCopyrights: js.UndefOr[js.Function2[/* rect */ Rect, /* n */ Double, js.Array[ICopyright]]] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.native
+  var uri: js.UndefOr[String] = js.native
+  def getURL(n1: Double, n2: Double, n3: Double): String = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    getURL: (Double, Double, Double) => String,
-    crossOrigin: String | Boolean = null,
-    getCopyrights: (/* rect */ Rect, /* n */ Double) => js.Array[ICopyright] = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    tileSize: js.UndefOr[Double] = js.undefined,
-    uri: String = null
-  ): Options = {
+  def apply(getURL: (Double, Double, Double) => String): Options = {
     val __obj = js.Dynamic.literal(getURL = js.Any.fromFunction3(getURL))
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (getCopyrights != null) __obj.updateDynamic("getCopyrights")(js.Any.fromFunction2(getCopyrights))
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetURL(value: (Double, Double, Double) => String): Self = this.set("getURL", js.Any.fromFunction3(value))
+    @scala.inline
+    def setCrossOrigin(value: String | Boolean): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    @scala.inline
+    def setGetCopyrights(value: (/* rect */ Rect, /* n */ Double) => js.Array[ICopyright]): Self = this.set("getCopyrights", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetCopyrights: Self = this.set("getCopyrights", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setTileSize(value: Double): Self = this.set("tileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileSize: Self = this.set("tileSize", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

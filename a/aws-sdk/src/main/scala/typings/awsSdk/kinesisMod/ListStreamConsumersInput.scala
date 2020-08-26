@@ -26,17 +26,36 @@ trait ListStreamConsumersInput extends js.Object {
 
 object ListStreamConsumersInput {
   @scala.inline
-  def apply(
-    StreamARN: StreamARN,
-    MaxResults: js.UndefOr[ListStreamConsumersInputLimit] = js.undefined,
-    NextToken: NextToken = null,
-    StreamCreationTimestamp: Timestamp = null
-  ): ListStreamConsumersInput = {
+  def apply(StreamARN: StreamARN): ListStreamConsumersInput = {
     val __obj = js.Dynamic.literal(StreamARN = StreamARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StreamCreationTimestamp != null) __obj.updateDynamic("StreamCreationTimestamp")(StreamCreationTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStreamConsumersInput]
   }
+  @scala.inline
+  implicit class ListStreamConsumersInputOps[Self <: ListStreamConsumersInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStreamARN(value: StreamARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: ListStreamConsumersInputLimit): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStreamCreationTimestamp(value: Timestamp): Self = this.set("StreamCreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamCreationTimestamp: Self = this.set("StreamCreationTimestamp", js.undefined)
+  }
+  
 }
 

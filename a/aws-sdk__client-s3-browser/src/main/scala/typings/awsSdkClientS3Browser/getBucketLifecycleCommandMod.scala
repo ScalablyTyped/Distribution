@@ -27,17 +27,10 @@ object getBucketLifecycleCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetBucketLifecycleInput) = this()
-    /* CompleteClass */
-    override val input: GetBucketLifecycleInput = js.native
     val middlewareStack: MiddlewareStack[GetBucketLifecycleInput, GetBucketLifecycleOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[GetBucketLifecycleInput, GetBucketLifecycleOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[GetBucketLifecycleInput, GetBucketLifecycleOutput] = js.native
   }

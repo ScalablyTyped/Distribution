@@ -14,7 +14,11 @@ class Broadphase protected () extends js.Object {
   var world: World = js.native
   def aabbCheck(bodyA: Body, bodyB: Body): Boolean = js.native
   def aabbQuery(): js.Array[Body] = js.native
+  def aabbQuery(world: js.UndefOr[scala.Nothing], aabb: js.UndefOr[scala.Nothing], result: js.Array[Body]): js.Array[Body] = js.native
+  def aabbQuery(world: js.UndefOr[scala.Nothing], aabb: AABB): js.Array[Body] = js.native
+  def aabbQuery(world: js.UndefOr[scala.Nothing], aabb: AABB, result: js.Array[Body]): js.Array[Body] = js.native
   def aabbQuery(world: World): js.Array[Body] = js.native
+  def aabbQuery(world: World, aabb: js.UndefOr[scala.Nothing], result: js.Array[Body]): js.Array[Body] = js.native
   def aabbQuery(world: World, aabb: AABB): js.Array[Body] = js.native
   def aabbQuery(world: World, aabb: AABB, result: js.Array[Body]): js.Array[Body] = js.native
   def boundingRadiusCheck(bodyA: Body, bodyB: Body): Boolean = js.native

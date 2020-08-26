@@ -12,6 +12,7 @@ class LocalDate protected () extends ChronoLocalDate {
   def atStartOfDay(zone: ZoneId): ZonedDateTime = js.native
   def atStartOfDayWithZone(zone: ZoneId): ZonedDateTime = js.native
   def atTime(hour: Double, minute: Double): LocalDateTime = js.native
+  def atTime(hour: Double, minute: Double, second: js.UndefOr[scala.Nothing], nanoOfSecond: Double): LocalDateTime = js.native
   def atTime(hour: Double, minute: Double, second: Double): LocalDateTime = js.native
   def atTime(hour: Double, minute: Double, second: Double, nanoOfSecond: Double): LocalDateTime = js.native
   def atTime(time: LocalTime): LocalDateTime = js.native

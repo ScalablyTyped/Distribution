@@ -30,20 +30,42 @@ trait Room extends js.Object {
 
 object Room {
   @scala.inline
-  def apply(
-    Description: RoomDescription = null,
-    ProfileArn: Arn = null,
-    ProviderCalendarId: ProviderCalendarId = null,
-    RoomArn: Arn = null,
-    RoomName: RoomName = null
-  ): Room = {
+  def apply(): Room = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn.asInstanceOf[js.Any])
-    if (ProviderCalendarId != null) __obj.updateDynamic("ProviderCalendarId")(ProviderCalendarId.asInstanceOf[js.Any])
-    if (RoomArn != null) __obj.updateDynamic("RoomArn")(RoomArn.asInstanceOf[js.Any])
-    if (RoomName != null) __obj.updateDynamic("RoomName")(RoomName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Room]
   }
+  @scala.inline
+  implicit class RoomOps[Self <: Room] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: RoomDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setProfileArn(value: Arn): Self = this.set("ProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileArn: Self = this.set("ProfileArn", js.undefined)
+    @scala.inline
+    def setProviderCalendarId(value: ProviderCalendarId): Self = this.set("ProviderCalendarId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderCalendarId: Self = this.set("ProviderCalendarId", js.undefined)
+    @scala.inline
+    def setRoomArn(value: Arn): Self = this.set("RoomArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoomArn: Self = this.set("RoomArn", js.undefined)
+    @scala.inline
+    def setRoomName(value: RoomName): Self = this.set("RoomName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoomName: Self = this.set("RoomName", js.undefined)
+  }
+  
 }
 

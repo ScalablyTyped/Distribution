@@ -25,11 +25,9 @@ class MicroflowCall protected () extends Element {
   @JSName("model")
   var model_FMicroflowCall: IModel = js.native
   def containerAsMicroflowCallAction: MicroflowCallAction = js.native
-  def microflow(): js.Any = js.native
-  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflow: IMicroflow | Null = js.native
   def microflowQualifiedName: String | Null = js.native
-  @JSName("microflow")
-  def microflow_Union: IMicroflow | Null = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
   def parameterMappings: IList[MicroflowCallParameterMapping] = js.native
 }
 

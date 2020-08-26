@@ -18,11 +18,32 @@ trait SearchTablesResponse extends js.Object {
 
 object SearchTablesResponse {
   @scala.inline
-  def apply(NextToken: Token = null, TableList: TableList = null): SearchTablesResponse = {
+  def apply(): SearchTablesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TableList != null) __obj.updateDynamic("TableList")(TableList.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchTablesResponse]
   }
+  @scala.inline
+  implicit class SearchTablesResponseOps[Self <: SearchTablesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTableListVarargs(value: Table*): Self = this.set("TableList", js.Array(value :_*))
+    @scala.inline
+    def setTableList(value: TableList): Self = this.set("TableList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableList: Self = this.set("TableList", js.undefined)
+  }
+  
 }
 

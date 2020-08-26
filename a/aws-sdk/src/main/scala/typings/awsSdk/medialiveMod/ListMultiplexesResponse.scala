@@ -18,11 +18,32 @@ trait ListMultiplexesResponse extends js.Object {
 
 object ListMultiplexesResponse {
   @scala.inline
-  def apply(Multiplexes: listOfMultiplexSummary = null, NextToken: string = null): ListMultiplexesResponse = {
+  def apply(): ListMultiplexesResponse = {
     val __obj = js.Dynamic.literal()
-    if (Multiplexes != null) __obj.updateDynamic("Multiplexes")(Multiplexes.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMultiplexesResponse]
   }
+  @scala.inline
+  implicit class ListMultiplexesResponseOps[Self <: ListMultiplexesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMultiplexesVarargs(value: MultiplexSummary*): Self = this.set("Multiplexes", js.Array(value :_*))
+    @scala.inline
+    def setMultiplexes(value: listOfMultiplexSummary): Self = this.set("Multiplexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiplexes: Self = this.set("Multiplexes", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

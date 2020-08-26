@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__util
 
-Typings are for version 0.2.50
+Typings are for version 0.3.0
 
 ## Library description:
 _NOTE: This is specifically tailored for Firebase JS SDK usage, if you are not a member of the Firebase team, please avoid using this package_
@@ -10,9 +10,9 @@ _NOTE: This is specifically tailored for Firebase JS SDK usage, if you are not a
 | ------------------ | :-------------: |
 | Full name          | @firebase/util |
 | Keywords           | - |
-| # releases         | 924 |
-| # dependents       | 34 |
-| # downloads        | 36182979 |
+| # releases         | 942 |
+| # dependents       | 35 |
+| # downloads        | 37329378 |
 | # stars            | 0 |
 
 ## Links

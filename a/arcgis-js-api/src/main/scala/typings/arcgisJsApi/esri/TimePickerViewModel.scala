@@ -4,5 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TimePickerViewModel extends js.Object
+@js.native
+trait TimePickerViewModel
+  extends Accessor
+     with MomentElementViewModel
 

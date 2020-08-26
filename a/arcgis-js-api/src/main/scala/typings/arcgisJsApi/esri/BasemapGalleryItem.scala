@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.loading
+import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,13 +21,13 @@ trait BasemapGalleryItem extends Accessor {
     */
   val error: Error = js.native
   /**
-    * The item's state.  **Possible Values:** loading | ready | error
+    * The item's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-BasemapGalleryItem.html#state)
     *
     * @default loading
     */
-  val state: String = js.native
+  val state: loading | ready | typings.arcgisJsApi.arcgisJsApiStrings.error = js.native
   /**
     * The view associated with this item.
     *

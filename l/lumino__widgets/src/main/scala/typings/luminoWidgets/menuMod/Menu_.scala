@@ -16,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/menu", "Menu")
+@JSImport("@lumino/widgets/types/menu", "Menu")
 @js.native
 class Menu_ protected () extends Widget {
   /**

@@ -1,531 +1,864 @@
 package typings.preact.mod.h.JSX
 
-import typings.preact.anon.Html
-import typings.preact.mod.ComponentChildren
 import typings.preact.mod.PreactDOMAttributes
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DOMAttributes[Target /* <: EventTarget */] extends PreactDOMAttributes {
   // Media Events
-  var onAbort: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onAbortCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onAnimationEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
-  var onAnimationEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
-  var onAnimationIteration: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
-  var onAnimationIterationCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
+  var onAbort: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onAbortCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onAnimationEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.native
+  var onAnimationEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.native
+  var onAnimationIteration: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.native
+  var onAnimationIterationCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.native
   // Animation Events
-  var onAnimationStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
-  var onAnimationStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
-  var onBlur: js.UndefOr[typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]] = js.undefined
-  var onBlurCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]] = js.undefined
-  var onCanPlay: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onCanPlayCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onCanPlayThrough: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onCanPlayThroughCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onAnimationStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.native
+  var onAnimationStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]] = js.native
+  var onBlur: js.UndefOr[typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]] = js.native
+  var onBlurCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]] = js.native
+  var onCanPlay: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onCanPlayCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onCanPlayThrough: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onCanPlayThroughCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
   // Form Events
-  var onChange: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onChangeCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onChange: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onChangeCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
   // MouseEvents
-  var onClick: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onClickCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onClick: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onClickCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
   // Composition Events
-  var onCompositionEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
-  var onCompositionEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
-  var onCompositionStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
-  var onCompositionStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
-  var onCompositionUpdate: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
-  var onCompositionUpdateCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
-  var onContextMenu: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onContextMenuCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onCompositionEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.native
+  var onCompositionEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.native
+  var onCompositionStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.native
+  var onCompositionStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.native
+  var onCompositionUpdate: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.native
+  var onCompositionUpdateCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]] = js.native
+  var onContextMenu: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onContextMenuCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
   // Clipboard Events
-  var onCopy: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
-  var onCopyCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
-  var onCut: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
-  var onCutCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
-  var onDblClick: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onDblClickCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onDrag: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragEnter: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragEnterCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragExit: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragExitCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragLeave: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragLeaveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragOver: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragOverCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDragStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDrop: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDropCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
-  var onDurationChange: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onDurationChangeCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onEmptied: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onEmptiedCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onEncrypted: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onEncryptedCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onEnded: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onEndedCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onError: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onErrorCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onCopy: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.native
+  var onCopyCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.native
+  var onCut: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.native
+  var onCutCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.native
+  var onDblClick: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onDblClickCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onDrag: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragEnter: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragEnterCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragExit: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragExitCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragLeave: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragLeaveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragOver: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragOverCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDragStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDrop: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDropCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]] = js.native
+  var onDurationChange: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onDurationChangeCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onEmptied: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onEmptiedCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onEncrypted: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onEncryptedCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onEnded: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onEndedCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onError: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onErrorCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
   // Focus Events
-  var onFocus: js.UndefOr[typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]] = js.undefined
-  var onFocusCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]] = js.undefined
-  var onFormData: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onFormDataCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onGotPointerCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onGotPointerCaptureCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onInput: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onInputCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onInvalid: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onInvalidCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onFocus: js.UndefOr[typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]] = js.native
+  var onFocusCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]] = js.native
+  var onFormData: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onFormDataCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onGotPointerCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onGotPointerCaptureCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onInput: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onInputCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onInvalid: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onInvalidCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
   // Keyboard Events
-  var onKeyDown: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
-  var onKeyDownCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
-  var onKeyPress: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
-  var onKeyPressCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
-  var onKeyUp: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
-  var onKeyUpCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
+  var onKeyDown: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.native
+  var onKeyDownCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.native
+  var onKeyPress: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.native
+  var onKeyPressCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.native
+  var onKeyUp: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.native
+  var onKeyUpCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.native
   // Image Events
-  var onLoad: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onLoadCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onLoadStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onLoadStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onLoadedData: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onLoadedDataCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onLoadedMetadata: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onLoadedMetadataCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onLostPointerCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onLostPointerCaptureCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onMouseDown: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseDownCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseEnter: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseEnterCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseLeave: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseLeaveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseMove: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseMoveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseOut: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseOutCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseOver: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseOverCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseUp: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onMouseUpCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
-  var onPaste: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
-  var onPasteCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
-  var onPause: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onPauseCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onPlay: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onPlayCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onPlaying: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onPlayingCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onPointerCancel: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerCancelCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerDown: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerDownCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerEnter: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerEnterCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerLeave: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerLeaveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerMove: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerMoveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerOut: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerOutCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onLoad: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onLoadCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onLoadStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onLoadStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onLoadedData: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onLoadedDataCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onLoadedMetadata: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onLoadedMetadataCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onLostPointerCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onLostPointerCaptureCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onMouseDown: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseDownCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseEnter: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseEnterCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseLeave: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseLeaveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseMove: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseMoveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseOut: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseOutCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseOver: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseOverCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseUp: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onMouseUpCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]] = js.native
+  var onPaste: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.native
+  var onPasteCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.native
+  var onPause: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onPauseCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onPlay: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onPlayCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onPlaying: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onPlayingCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onPointerCancel: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerCancelCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerDown: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerDownCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerEnter: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerEnterCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerLeave: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerLeaveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerMove: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerMoveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerOut: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerOutCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
   // Pointer Events
-  var onPointerOver: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerOverCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerUp: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onPointerUpCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
-  var onProgress: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onProgressCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onRateChange: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onRateChangeCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onReset: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onResetCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onPointerOver: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerOverCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerUp: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onPointerUpCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]] = js.native
+  var onProgress: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onProgressCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onRateChange: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onRateChangeCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onReset: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onResetCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
   // UI Events
-  var onScroll: js.UndefOr[typings.preact.jsxMod.JSXInternal.UIEventHandler[Target]] = js.undefined
-  var onScrollCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.UIEventHandler[Target]] = js.undefined
-  var onSearch: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSearchCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSeeked: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSeekedCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSeeking: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSeekingCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onScroll: js.UndefOr[typings.preact.jsxMod.JSXInternal.UIEventHandler[Target]] = js.native
+  var onScrollCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.UIEventHandler[Target]] = js.native
+  var onSearch: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSearchCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSeeked: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSeekedCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSeeking: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSeekingCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
   // Selection Events
-  var onSelect: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSelectCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onStalled: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onStalledCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSubmit: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSubmitCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSuspend: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onSuspendCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onTimeUpdate: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onTimeUpdateCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSelect: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSelectCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onStalled: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onStalledCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSubmit: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSubmitCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSuspend: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onSuspendCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onTimeUpdate: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onTimeUpdateCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
   // Details Events
-  var onToggle: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onToggle: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
   // Touch Events
-  var onTouchCancel: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
-  var onTouchCancelCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
-  var onTouchEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
-  var onTouchEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
-  var onTouchMove: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
-  var onTouchMoveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
-  var onTouchStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
-  var onTouchStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
+  var onTouchCancel: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.native
+  var onTouchCancelCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.native
+  var onTouchEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.native
+  var onTouchEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.native
+  var onTouchMove: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.native
+  var onTouchMoveCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.native
+  var onTouchStart: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.native
+  var onTouchStartCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]] = js.native
   // Transition Events
-  var onTransitionEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
-  var onTransitionEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
-  var onVolumeChange: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onVolumeChangeCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onWaiting: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
-  var onWaitingCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onTransitionEnd: js.UndefOr[typings.preact.jsxMod.JSXInternal.TransitionEventHandler[Target]] = js.native
+  var onTransitionEndCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.TransitionEventHandler[Target]] = js.native
+  var onVolumeChange: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onVolumeChangeCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onWaiting: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
+  var onWaitingCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]] = js.native
   // Wheel Events
-  var onWheel: js.UndefOr[typings.preact.jsxMod.JSXInternal.WheelEventHandler[Target]] = js.undefined
-  var onWheelCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.WheelEventHandler[Target]] = js.undefined
+  var onWheel: js.UndefOr[typings.preact.jsxMod.JSXInternal.WheelEventHandler[Target]] = js.native
+  var onWheelCapture: js.UndefOr[typings.preact.jsxMod.JSXInternal.WheelEventHandler[Target]] = js.native
 }
 
 object DOMAttributes {
   @scala.inline
-  def apply[/* <: typings.std.EventTarget */ Target](
-    children: js.UndefOr[Null | ComponentChildren] = js.undefined,
-    dangerouslySetInnerHTML: Html = null,
-    onAbort: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onAbortCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onAnimationEnd: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target] = null,
-    onAnimationEndCapture: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target] = null,
-    onAnimationIteration: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target] = null,
-    onAnimationIterationCapture: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target] = null,
-    onAnimationStart: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target] = null,
-    onAnimationStartCapture: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target] = null,
-    onBlur: typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target] = null,
-    onBlurCapture: typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target] = null,
-    onCanPlay: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onCanPlayCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onCanPlayThrough: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onCanPlayThroughCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onChange: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onChangeCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onClick: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onClickCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onCompositionEnd: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target] = null,
-    onCompositionEndCapture: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target] = null,
-    onCompositionStart: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target] = null,
-    onCompositionStartCapture: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target] = null,
-    onCompositionUpdate: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target] = null,
-    onCompositionUpdateCapture: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target] = null,
-    onContextMenu: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onContextMenuCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onCopy: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target] = null,
-    onCopyCapture: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target] = null,
-    onCut: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target] = null,
-    onCutCapture: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target] = null,
-    onDblClick: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onDblClickCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onDrag: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragCapture: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragEnd: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragEndCapture: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragEnter: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragEnterCapture: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragExit: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragExitCapture: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragLeave: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragLeaveCapture: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragOver: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragOverCapture: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragStart: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDragStartCapture: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDrop: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDropCapture: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target] = null,
-    onDurationChange: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onDurationChangeCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onEmptied: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onEmptiedCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onEncrypted: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onEncryptedCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onEnded: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onEndedCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onError: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onErrorCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onFocus: typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target] = null,
-    onFocusCapture: typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target] = null,
-    onFormData: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onFormDataCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onGotPointerCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onGotPointerCaptureCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onInput: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onInputCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onInvalid: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onInvalidCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onKeyDown: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target] = null,
-    onKeyDownCapture: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target] = null,
-    onKeyPress: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target] = null,
-    onKeyPressCapture: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target] = null,
-    onKeyUp: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target] = null,
-    onKeyUpCapture: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target] = null,
-    onLoad: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onLoadCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onLoadStart: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onLoadStartCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onLoadedData: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onLoadedDataCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onLoadedMetadata: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onLoadedMetadataCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onLostPointerCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onLostPointerCaptureCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onMouseDown: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseDownCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseEnter: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseEnterCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseLeave: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseLeaveCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseMove: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseMoveCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseOut: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseOutCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseOver: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseOverCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseUp: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onMouseUpCapture: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target] = null,
-    onPaste: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target] = null,
-    onPasteCapture: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target] = null,
-    onPause: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onPauseCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onPlay: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onPlayCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onPlaying: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onPlayingCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onPointerCancel: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerCancelCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerDown: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerDownCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerEnter: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerEnterCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerLeave: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerLeaveCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerMove: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerMoveCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerOut: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerOutCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerOver: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerOverCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerUp: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onPointerUpCapture: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target] = null,
-    onProgress: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onProgressCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onRateChange: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onRateChangeCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onReset: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onResetCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onScroll: typings.preact.jsxMod.JSXInternal.UIEventHandler[Target] = null,
-    onScrollCapture: typings.preact.jsxMod.JSXInternal.UIEventHandler[Target] = null,
-    onSearch: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSearchCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSeeked: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSeekedCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSeeking: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSeekingCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSelect: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSelectCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onStalled: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onStalledCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSubmit: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSubmitCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSuspend: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onSuspendCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onTimeUpdate: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onTimeUpdateCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onToggle: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onTouchCancel: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target] = null,
-    onTouchCancelCapture: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target] = null,
-    onTouchEnd: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target] = null,
-    onTouchEndCapture: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target] = null,
-    onTouchMove: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target] = null,
-    onTouchMoveCapture: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target] = null,
-    onTouchStart: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target] = null,
-    onTouchStartCapture: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target] = null,
-    onTransitionEnd: typings.preact.jsxMod.JSXInternal.TransitionEventHandler[Target] = null,
-    onTransitionEndCapture: typings.preact.jsxMod.JSXInternal.TransitionEventHandler[Target] = null,
-    onVolumeChange: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onVolumeChangeCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onWaiting: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onWaitingCapture: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target] = null,
-    onWheel: typings.preact.jsxMod.JSXInternal.WheelEventHandler[Target] = null,
-    onWheelCapture: typings.preact.jsxMod.JSXInternal.WheelEventHandler[Target] = null
-  ): DOMAttributes[Target] = {
+  def apply[/* <: typings.std.EventTarget */ Target](): DOMAttributes[Target] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort.asInstanceOf[js.Any])
-    if (onAbortCapture != null) __obj.updateDynamic("onAbortCapture")(onAbortCapture.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd.asInstanceOf[js.Any])
-    if (onAnimationEndCapture != null) __obj.updateDynamic("onAnimationEndCapture")(onAnimationEndCapture.asInstanceOf[js.Any])
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(onAnimationIteration.asInstanceOf[js.Any])
-    if (onAnimationIterationCapture != null) __obj.updateDynamic("onAnimationIterationCapture")(onAnimationIterationCapture.asInstanceOf[js.Any])
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart.asInstanceOf[js.Any])
-    if (onAnimationStartCapture != null) __obj.updateDynamic("onAnimationStartCapture")(onAnimationStartCapture.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur.asInstanceOf[js.Any])
-    if (onBlurCapture != null) __obj.updateDynamic("onBlurCapture")(onBlurCapture.asInstanceOf[js.Any])
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(onCanPlay.asInstanceOf[js.Any])
-    if (onCanPlayCapture != null) __obj.updateDynamic("onCanPlayCapture")(onCanPlayCapture.asInstanceOf[js.Any])
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(onCanPlayThrough.asInstanceOf[js.Any])
-    if (onCanPlayThroughCapture != null) __obj.updateDynamic("onCanPlayThroughCapture")(onCanPlayThroughCapture.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
-    if (onChangeCapture != null) __obj.updateDynamic("onChangeCapture")(onChangeCapture.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (onClickCapture != null) __obj.updateDynamic("onClickCapture")(onClickCapture.asInstanceOf[js.Any])
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(onCompositionEnd.asInstanceOf[js.Any])
-    if (onCompositionEndCapture != null) __obj.updateDynamic("onCompositionEndCapture")(onCompositionEndCapture.asInstanceOf[js.Any])
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(onCompositionStart.asInstanceOf[js.Any])
-    if (onCompositionStartCapture != null) __obj.updateDynamic("onCompositionStartCapture")(onCompositionStartCapture.asInstanceOf[js.Any])
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(onCompositionUpdate.asInstanceOf[js.Any])
-    if (onCompositionUpdateCapture != null) __obj.updateDynamic("onCompositionUpdateCapture")(onCompositionUpdateCapture.asInstanceOf[js.Any])
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
-    if (onContextMenuCapture != null) __obj.updateDynamic("onContextMenuCapture")(onContextMenuCapture.asInstanceOf[js.Any])
-    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy.asInstanceOf[js.Any])
-    if (onCopyCapture != null) __obj.updateDynamic("onCopyCapture")(onCopyCapture.asInstanceOf[js.Any])
-    if (onCut != null) __obj.updateDynamic("onCut")(onCut.asInstanceOf[js.Any])
-    if (onCutCapture != null) __obj.updateDynamic("onCutCapture")(onCutCapture.asInstanceOf[js.Any])
-    if (onDblClick != null) __obj.updateDynamic("onDblClick")(onDblClick.asInstanceOf[js.Any])
-    if (onDblClickCapture != null) __obj.updateDynamic("onDblClickCapture")(onDblClickCapture.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag.asInstanceOf[js.Any])
-    if (onDragCapture != null) __obj.updateDynamic("onDragCapture")(onDragCapture.asInstanceOf[js.Any])
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
-    if (onDragEndCapture != null) __obj.updateDynamic("onDragEndCapture")(onDragEndCapture.asInstanceOf[js.Any])
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter.asInstanceOf[js.Any])
-    if (onDragEnterCapture != null) __obj.updateDynamic("onDragEnterCapture")(onDragEnterCapture.asInstanceOf[js.Any])
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit.asInstanceOf[js.Any])
-    if (onDragExitCapture != null) __obj.updateDynamic("onDragExitCapture")(onDragExitCapture.asInstanceOf[js.Any])
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave.asInstanceOf[js.Any])
-    if (onDragLeaveCapture != null) __obj.updateDynamic("onDragLeaveCapture")(onDragLeaveCapture.asInstanceOf[js.Any])
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver.asInstanceOf[js.Any])
-    if (onDragOverCapture != null) __obj.updateDynamic("onDragOverCapture")(onDragOverCapture.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
-    if (onDragStartCapture != null) __obj.updateDynamic("onDragStartCapture")(onDragStartCapture.asInstanceOf[js.Any])
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop.asInstanceOf[js.Any])
-    if (onDropCapture != null) __obj.updateDynamic("onDropCapture")(onDropCapture.asInstanceOf[js.Any])
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(onDurationChange.asInstanceOf[js.Any])
-    if (onDurationChangeCapture != null) __obj.updateDynamic("onDurationChangeCapture")(onDurationChangeCapture.asInstanceOf[js.Any])
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(onEmptied.asInstanceOf[js.Any])
-    if (onEmptiedCapture != null) __obj.updateDynamic("onEmptiedCapture")(onEmptiedCapture.asInstanceOf[js.Any])
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(onEncrypted.asInstanceOf[js.Any])
-    if (onEncryptedCapture != null) __obj.updateDynamic("onEncryptedCapture")(onEncryptedCapture.asInstanceOf[js.Any])
-    if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded.asInstanceOf[js.Any])
-    if (onEndedCapture != null) __obj.updateDynamic("onEndedCapture")(onEndedCapture.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
-    if (onErrorCapture != null) __obj.updateDynamic("onErrorCapture")(onErrorCapture.asInstanceOf[js.Any])
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus.asInstanceOf[js.Any])
-    if (onFocusCapture != null) __obj.updateDynamic("onFocusCapture")(onFocusCapture.asInstanceOf[js.Any])
-    if (onFormData != null) __obj.updateDynamic("onFormData")(onFormData.asInstanceOf[js.Any])
-    if (onFormDataCapture != null) __obj.updateDynamic("onFormDataCapture")(onFormDataCapture.asInstanceOf[js.Any])
-    if (onGotPointerCapture != null) __obj.updateDynamic("onGotPointerCapture")(onGotPointerCapture.asInstanceOf[js.Any])
-    if (onGotPointerCaptureCapture != null) __obj.updateDynamic("onGotPointerCaptureCapture")(onGotPointerCaptureCapture.asInstanceOf[js.Any])
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput.asInstanceOf[js.Any])
-    if (onInputCapture != null) __obj.updateDynamic("onInputCapture")(onInputCapture.asInstanceOf[js.Any])
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(onInvalid.asInstanceOf[js.Any])
-    if (onInvalidCapture != null) __obj.updateDynamic("onInvalidCapture")(onInvalidCapture.asInstanceOf[js.Any])
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown.asInstanceOf[js.Any])
-    if (onKeyDownCapture != null) __obj.updateDynamic("onKeyDownCapture")(onKeyDownCapture.asInstanceOf[js.Any])
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress.asInstanceOf[js.Any])
-    if (onKeyPressCapture != null) __obj.updateDynamic("onKeyPressCapture")(onKeyPressCapture.asInstanceOf[js.Any])
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp.asInstanceOf[js.Any])
-    if (onKeyUpCapture != null) __obj.updateDynamic("onKeyUpCapture")(onKeyUpCapture.asInstanceOf[js.Any])
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
-    if (onLoadCapture != null) __obj.updateDynamic("onLoadCapture")(onLoadCapture.asInstanceOf[js.Any])
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart.asInstanceOf[js.Any])
-    if (onLoadStartCapture != null) __obj.updateDynamic("onLoadStartCapture")(onLoadStartCapture.asInstanceOf[js.Any])
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(onLoadedData.asInstanceOf[js.Any])
-    if (onLoadedDataCapture != null) __obj.updateDynamic("onLoadedDataCapture")(onLoadedDataCapture.asInstanceOf[js.Any])
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(onLoadedMetadata.asInstanceOf[js.Any])
-    if (onLoadedMetadataCapture != null) __obj.updateDynamic("onLoadedMetadataCapture")(onLoadedMetadataCapture.asInstanceOf[js.Any])
-    if (onLostPointerCapture != null) __obj.updateDynamic("onLostPointerCapture")(onLostPointerCapture.asInstanceOf[js.Any])
-    if (onLostPointerCaptureCapture != null) __obj.updateDynamic("onLostPointerCaptureCapture")(onLostPointerCaptureCapture.asInstanceOf[js.Any])
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown.asInstanceOf[js.Any])
-    if (onMouseDownCapture != null) __obj.updateDynamic("onMouseDownCapture")(onMouseDownCapture.asInstanceOf[js.Any])
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter.asInstanceOf[js.Any])
-    if (onMouseEnterCapture != null) __obj.updateDynamic("onMouseEnterCapture")(onMouseEnterCapture.asInstanceOf[js.Any])
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
-    if (onMouseLeaveCapture != null) __obj.updateDynamic("onMouseLeaveCapture")(onMouseLeaveCapture.asInstanceOf[js.Any])
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove.asInstanceOf[js.Any])
-    if (onMouseMoveCapture != null) __obj.updateDynamic("onMouseMoveCapture")(onMouseMoveCapture.asInstanceOf[js.Any])
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut.asInstanceOf[js.Any])
-    if (onMouseOutCapture != null) __obj.updateDynamic("onMouseOutCapture")(onMouseOutCapture.asInstanceOf[js.Any])
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver.asInstanceOf[js.Any])
-    if (onMouseOverCapture != null) __obj.updateDynamic("onMouseOverCapture")(onMouseOverCapture.asInstanceOf[js.Any])
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp.asInstanceOf[js.Any])
-    if (onMouseUpCapture != null) __obj.updateDynamic("onMouseUpCapture")(onMouseUpCapture.asInstanceOf[js.Any])
-    if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste.asInstanceOf[js.Any])
-    if (onPasteCapture != null) __obj.updateDynamic("onPasteCapture")(onPasteCapture.asInstanceOf[js.Any])
-    if (onPause != null) __obj.updateDynamic("onPause")(onPause.asInstanceOf[js.Any])
-    if (onPauseCapture != null) __obj.updateDynamic("onPauseCapture")(onPauseCapture.asInstanceOf[js.Any])
-    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay.asInstanceOf[js.Any])
-    if (onPlayCapture != null) __obj.updateDynamic("onPlayCapture")(onPlayCapture.asInstanceOf[js.Any])
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(onPlaying.asInstanceOf[js.Any])
-    if (onPlayingCapture != null) __obj.updateDynamic("onPlayingCapture")(onPlayingCapture.asInstanceOf[js.Any])
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(onPointerCancel.asInstanceOf[js.Any])
-    if (onPointerCancelCapture != null) __obj.updateDynamic("onPointerCancelCapture")(onPointerCancelCapture.asInstanceOf[js.Any])
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(onPointerDown.asInstanceOf[js.Any])
-    if (onPointerDownCapture != null) __obj.updateDynamic("onPointerDownCapture")(onPointerDownCapture.asInstanceOf[js.Any])
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(onPointerEnter.asInstanceOf[js.Any])
-    if (onPointerEnterCapture != null) __obj.updateDynamic("onPointerEnterCapture")(onPointerEnterCapture.asInstanceOf[js.Any])
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(onPointerLeave.asInstanceOf[js.Any])
-    if (onPointerLeaveCapture != null) __obj.updateDynamic("onPointerLeaveCapture")(onPointerLeaveCapture.asInstanceOf[js.Any])
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(onPointerMove.asInstanceOf[js.Any])
-    if (onPointerMoveCapture != null) __obj.updateDynamic("onPointerMoveCapture")(onPointerMoveCapture.asInstanceOf[js.Any])
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(onPointerOut.asInstanceOf[js.Any])
-    if (onPointerOutCapture != null) __obj.updateDynamic("onPointerOutCapture")(onPointerOutCapture.asInstanceOf[js.Any])
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(onPointerOver.asInstanceOf[js.Any])
-    if (onPointerOverCapture != null) __obj.updateDynamic("onPointerOverCapture")(onPointerOverCapture.asInstanceOf[js.Any])
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(onPointerUp.asInstanceOf[js.Any])
-    if (onPointerUpCapture != null) __obj.updateDynamic("onPointerUpCapture")(onPointerUpCapture.asInstanceOf[js.Any])
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress.asInstanceOf[js.Any])
-    if (onProgressCapture != null) __obj.updateDynamic("onProgressCapture")(onProgressCapture.asInstanceOf[js.Any])
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(onRateChange.asInstanceOf[js.Any])
-    if (onRateChangeCapture != null) __obj.updateDynamic("onRateChangeCapture")(onRateChangeCapture.asInstanceOf[js.Any])
-    if (onReset != null) __obj.updateDynamic("onReset")(onReset.asInstanceOf[js.Any])
-    if (onResetCapture != null) __obj.updateDynamic("onResetCapture")(onResetCapture.asInstanceOf[js.Any])
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll.asInstanceOf[js.Any])
-    if (onScrollCapture != null) __obj.updateDynamic("onScrollCapture")(onScrollCapture.asInstanceOf[js.Any])
-    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch.asInstanceOf[js.Any])
-    if (onSearchCapture != null) __obj.updateDynamic("onSearchCapture")(onSearchCapture.asInstanceOf[js.Any])
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(onSeeked.asInstanceOf[js.Any])
-    if (onSeekedCapture != null) __obj.updateDynamic("onSeekedCapture")(onSeekedCapture.asInstanceOf[js.Any])
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(onSeeking.asInstanceOf[js.Any])
-    if (onSeekingCapture != null) __obj.updateDynamic("onSeekingCapture")(onSeekingCapture.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (onSelectCapture != null) __obj.updateDynamic("onSelectCapture")(onSelectCapture.asInstanceOf[js.Any])
-    if (onStalled != null) __obj.updateDynamic("onStalled")(onStalled.asInstanceOf[js.Any])
-    if (onStalledCapture != null) __obj.updateDynamic("onStalledCapture")(onStalledCapture.asInstanceOf[js.Any])
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit.asInstanceOf[js.Any])
-    if (onSubmitCapture != null) __obj.updateDynamic("onSubmitCapture")(onSubmitCapture.asInstanceOf[js.Any])
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(onSuspend.asInstanceOf[js.Any])
-    if (onSuspendCapture != null) __obj.updateDynamic("onSuspendCapture")(onSuspendCapture.asInstanceOf[js.Any])
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(onTimeUpdate.asInstanceOf[js.Any])
-    if (onTimeUpdateCapture != null) __obj.updateDynamic("onTimeUpdateCapture")(onTimeUpdateCapture.asInstanceOf[js.Any])
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle.asInstanceOf[js.Any])
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel.asInstanceOf[js.Any])
-    if (onTouchCancelCapture != null) __obj.updateDynamic("onTouchCancelCapture")(onTouchCancelCapture.asInstanceOf[js.Any])
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture.asInstanceOf[js.Any])
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
-    if (onTouchMoveCapture != null) __obj.updateDynamic("onTouchMoveCapture")(onTouchMoveCapture.asInstanceOf[js.Any])
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
-    if (onTouchStartCapture != null) __obj.updateDynamic("onTouchStartCapture")(onTouchStartCapture.asInstanceOf[js.Any])
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd.asInstanceOf[js.Any])
-    if (onTransitionEndCapture != null) __obj.updateDynamic("onTransitionEndCapture")(onTransitionEndCapture.asInstanceOf[js.Any])
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange.asInstanceOf[js.Any])
-    if (onVolumeChangeCapture != null) __obj.updateDynamic("onVolumeChangeCapture")(onVolumeChangeCapture.asInstanceOf[js.Any])
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting.asInstanceOf[js.Any])
-    if (onWaitingCapture != null) __obj.updateDynamic("onWaitingCapture")(onWaitingCapture.asInstanceOf[js.Any])
-    if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel.asInstanceOf[js.Any])
-    if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(onWheelCapture.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMAttributes[Target]]
   }
+  @scala.inline
+  implicit class DOMAttributesOps[Self <: DOMAttributes[_], /* <: typings.std.EventTarget */ Target] (val x: Self with DOMAttributes[Target]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnAbort(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onAbort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAbort: Self = this.set("onAbort", js.undefined)
+    @scala.inline
+    def setOnAbortCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onAbortCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAbortCapture: Self = this.set("onAbortCapture", js.undefined)
+    @scala.inline
+    def setOnAnimationEnd(value: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]): Self = this.set("onAnimationEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
+    @scala.inline
+    def setOnAnimationEndCapture(value: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]): Self = this.set("onAnimationEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationEndCapture: Self = this.set("onAnimationEndCapture", js.undefined)
+    @scala.inline
+    def setOnAnimationIteration(value: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]): Self = this.set("onAnimationIteration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationIteration: Self = this.set("onAnimationIteration", js.undefined)
+    @scala.inline
+    def setOnAnimationIterationCapture(value: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]): Self = this.set("onAnimationIterationCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationIterationCapture: Self = this.set("onAnimationIterationCapture", js.undefined)
+    @scala.inline
+    def setOnAnimationStart(value: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]): Self = this.set("onAnimationStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationStart: Self = this.set("onAnimationStart", js.undefined)
+    @scala.inline
+    def setOnAnimationStartCapture(value: typings.preact.jsxMod.JSXInternal.AnimationEventHandler[Target]): Self = this.set("onAnimationStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationStartCapture: Self = this.set("onAnimationStartCapture", js.undefined)
+    @scala.inline
+    def setOnBlur(value: typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnBlurCapture(value: typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]): Self = this.set("onBlurCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBlurCapture: Self = this.set("onBlurCapture", js.undefined)
+    @scala.inline
+    def setOnCanPlay(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onCanPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCanPlay: Self = this.set("onCanPlay", js.undefined)
+    @scala.inline
+    def setOnCanPlayCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onCanPlayCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCanPlayCapture: Self = this.set("onCanPlayCapture", js.undefined)
+    @scala.inline
+    def setOnCanPlayThrough(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onCanPlayThrough", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCanPlayThrough: Self = this.set("onCanPlayThrough", js.undefined)
+    @scala.inline
+    def setOnCanPlayThroughCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onCanPlayThroughCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCanPlayThroughCapture: Self = this.set("onCanPlayThroughCapture", js.undefined)
+    @scala.inline
+    def setOnChange(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnChangeCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onChangeCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnChangeCapture: Self = this.set("onChangeCapture", js.undefined)
+    @scala.inline
+    def setOnClick(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnClickCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onClickCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnClickCapture: Self = this.set("onClickCapture", js.undefined)
+    @scala.inline
+    def setOnCompositionEnd(value: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]): Self = this.set("onCompositionEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionEnd: Self = this.set("onCompositionEnd", js.undefined)
+    @scala.inline
+    def setOnCompositionEndCapture(value: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]): Self = this.set("onCompositionEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionEndCapture: Self = this.set("onCompositionEndCapture", js.undefined)
+    @scala.inline
+    def setOnCompositionStart(value: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]): Self = this.set("onCompositionStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionStart: Self = this.set("onCompositionStart", js.undefined)
+    @scala.inline
+    def setOnCompositionStartCapture(value: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]): Self = this.set("onCompositionStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionStartCapture: Self = this.set("onCompositionStartCapture", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdate(value: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]): Self = this.set("onCompositionUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionUpdate: Self = this.set("onCompositionUpdate", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdateCapture(value: typings.preact.jsxMod.JSXInternal.CompositionEventHandler[Target]): Self = this.set("onCompositionUpdateCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionUpdateCapture: Self = this.set("onCompositionUpdateCapture", js.undefined)
+    @scala.inline
+    def setOnContextMenu(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onContextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    @scala.inline
+    def setOnContextMenuCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onContextMenuCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnContextMenuCapture: Self = this.set("onContextMenuCapture", js.undefined)
+    @scala.inline
+    def setOnCopy(value: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]): Self = this.set("onCopy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    @scala.inline
+    def setOnCopyCapture(value: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]): Self = this.set("onCopyCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCopyCapture: Self = this.set("onCopyCapture", js.undefined)
+    @scala.inline
+    def setOnCut(value: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]): Self = this.set("onCut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCut: Self = this.set("onCut", js.undefined)
+    @scala.inline
+    def setOnCutCapture(value: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]): Self = this.set("onCutCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCutCapture: Self = this.set("onCutCapture", js.undefined)
+    @scala.inline
+    def setOnDblClick(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onDblClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDblClick: Self = this.set("onDblClick", js.undefined)
+    @scala.inline
+    def setOnDblClickCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onDblClickCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDblClickCapture: Self = this.set("onDblClickCapture", js.undefined)
+    @scala.inline
+    def setOnDrag(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    @scala.inline
+    def setOnDragCapture(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragCapture: Self = this.set("onDragCapture", js.undefined)
+    @scala.inline
+    def setOnDragEnd(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    @scala.inline
+    def setOnDragEndCapture(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragEndCapture: Self = this.set("onDragEndCapture", js.undefined)
+    @scala.inline
+    def setOnDragEnter(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    @scala.inline
+    def setOnDragEnterCapture(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragEnterCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragEnterCapture: Self = this.set("onDragEnterCapture", js.undefined)
+    @scala.inline
+    def setOnDragExit(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragExit: Self = this.set("onDragExit", js.undefined)
+    @scala.inline
+    def setOnDragExitCapture(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragExitCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragExitCapture: Self = this.set("onDragExitCapture", js.undefined)
+    @scala.inline
+    def setOnDragLeave(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragLeave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragLeave: Self = this.set("onDragLeave", js.undefined)
+    @scala.inline
+    def setOnDragLeaveCapture(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragLeaveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragLeaveCapture: Self = this.set("onDragLeaveCapture", js.undefined)
+    @scala.inline
+    def setOnDragOver(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragOver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    @scala.inline
+    def setOnDragOverCapture(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragOverCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragOverCapture: Self = this.set("onDragOverCapture", js.undefined)
+    @scala.inline
+    def setOnDragStart(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    @scala.inline
+    def setOnDragStartCapture(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDragStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragStartCapture: Self = this.set("onDragStartCapture", js.undefined)
+    @scala.inline
+    def setOnDrop(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDrop: Self = this.set("onDrop", js.undefined)
+    @scala.inline
+    def setOnDropCapture(value: typings.preact.jsxMod.JSXInternal.DragEventHandler[Target]): Self = this.set("onDropCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDropCapture: Self = this.set("onDropCapture", js.undefined)
+    @scala.inline
+    def setOnDurationChange(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onDurationChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDurationChange: Self = this.set("onDurationChange", js.undefined)
+    @scala.inline
+    def setOnDurationChangeCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onDurationChangeCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDurationChangeCapture: Self = this.set("onDurationChangeCapture", js.undefined)
+    @scala.inline
+    def setOnEmptied(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onEmptied", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEmptied: Self = this.set("onEmptied", js.undefined)
+    @scala.inline
+    def setOnEmptiedCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onEmptiedCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEmptiedCapture: Self = this.set("onEmptiedCapture", js.undefined)
+    @scala.inline
+    def setOnEncrypted(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEncrypted: Self = this.set("onEncrypted", js.undefined)
+    @scala.inline
+    def setOnEncryptedCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onEncryptedCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEncryptedCapture: Self = this.set("onEncryptedCapture", js.undefined)
+    @scala.inline
+    def setOnEnded(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onEnded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    @scala.inline
+    def setOnEndedCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onEndedCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEndedCapture: Self = this.set("onEndedCapture", js.undefined)
+    @scala.inline
+    def setOnError(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnErrorCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onErrorCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnErrorCapture: Self = this.set("onErrorCapture", js.undefined)
+    @scala.inline
+    def setOnFocus(value: typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]): Self = this.set("onFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnFocusCapture(value: typings.preact.jsxMod.JSXInternal.FocusEventHandler[Target]): Self = this.set("onFocusCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFocusCapture: Self = this.set("onFocusCapture", js.undefined)
+    @scala.inline
+    def setOnFormData(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onFormData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFormData: Self = this.set("onFormData", js.undefined)
+    @scala.inline
+    def setOnFormDataCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onFormDataCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFormDataCapture: Self = this.set("onFormDataCapture", js.undefined)
+    @scala.inline
+    def setOnGotPointerCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onGotPointerCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnGotPointerCapture: Self = this.set("onGotPointerCapture", js.undefined)
+    @scala.inline
+    def setOnGotPointerCaptureCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnGotPointerCaptureCapture: Self = this.set("onGotPointerCaptureCapture", js.undefined)
+    @scala.inline
+    def setOnInput(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnInputCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onInputCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInputCapture: Self = this.set("onInputCapture", js.undefined)
+    @scala.inline
+    def setOnInvalid(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onInvalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInvalid: Self = this.set("onInvalid", js.undefined)
+    @scala.inline
+    def setOnInvalidCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onInvalidCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInvalidCapture: Self = this.set("onInvalidCapture", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]): Self = this.set("onKeyDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyDownCapture(value: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]): Self = this.set("onKeyDownCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyDownCapture: Self = this.set("onKeyDownCapture", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]): Self = this.set("onKeyPress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnKeyPressCapture(value: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]): Self = this.set("onKeyPressCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyPressCapture: Self = this.set("onKeyPressCapture", js.undefined)
+    @scala.inline
+    def setOnKeyUp(value: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]): Self = this.set("onKeyUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyUp: Self = this.set("onKeyUp", js.undefined)
+    @scala.inline
+    def setOnKeyUpCapture(value: typings.preact.jsxMod.JSXInternal.KeyboardEventHandler[Target]): Self = this.set("onKeyUpCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyUpCapture: Self = this.set("onKeyUpCapture", js.undefined)
+    @scala.inline
+    def setOnLoad(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnLoadCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onLoadCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadCapture: Self = this.set("onLoadCapture", js.undefined)
+    @scala.inline
+    def setOnLoadStart(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onLoadStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadStart: Self = this.set("onLoadStart", js.undefined)
+    @scala.inline
+    def setOnLoadStartCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onLoadStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadStartCapture: Self = this.set("onLoadStartCapture", js.undefined)
+    @scala.inline
+    def setOnLoadedData(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onLoadedData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadedData: Self = this.set("onLoadedData", js.undefined)
+    @scala.inline
+    def setOnLoadedDataCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onLoadedDataCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadedDataCapture: Self = this.set("onLoadedDataCapture", js.undefined)
+    @scala.inline
+    def setOnLoadedMetadata(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onLoadedMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadedMetadata: Self = this.set("onLoadedMetadata", js.undefined)
+    @scala.inline
+    def setOnLoadedMetadataCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onLoadedMetadataCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadedMetadataCapture: Self = this.set("onLoadedMetadataCapture", js.undefined)
+    @scala.inline
+    def setOnLostPointerCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onLostPointerCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLostPointerCapture: Self = this.set("onLostPointerCapture", js.undefined)
+    @scala.inline
+    def setOnLostPointerCaptureCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLostPointerCaptureCapture: Self = this.set("onLostPointerCaptureCapture", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseDownCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseDownCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseDownCapture: Self = this.set("onMouseDownCapture", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseEnterCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseEnterCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseEnterCapture: Self = this.set("onMouseEnterCapture", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseLeave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseLeaveCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseLeaveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseLeaveCapture: Self = this.set("onMouseLeaveCapture", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseMoveCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseMoveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseMoveCapture: Self = this.set("onMouseMoveCapture", js.undefined)
+    @scala.inline
+    def setOnMouseOut(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    @scala.inline
+    def setOnMouseOutCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseOutCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseOutCapture: Self = this.set("onMouseOutCapture", js.undefined)
+    @scala.inline
+    def setOnMouseOver(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseOver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    @scala.inline
+    def setOnMouseOverCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseOverCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseOverCapture: Self = this.set("onMouseOverCapture", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnMouseUpCapture(value: typings.preact.jsxMod.JSXInternal.MouseEventHandler[Target]): Self = this.set("onMouseUpCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseUpCapture: Self = this.set("onMouseUpCapture", js.undefined)
+    @scala.inline
+    def setOnPaste(value: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]): Self = this.set("onPaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setOnPasteCapture(value: typings.preact.jsxMod.JSXInternal.ClipboardEventHandler[Target]): Self = this.set("onPasteCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPasteCapture: Self = this.set("onPasteCapture", js.undefined)
+    @scala.inline
+    def setOnPause(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onPause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    @scala.inline
+    def setOnPauseCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onPauseCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPauseCapture: Self = this.set("onPauseCapture", js.undefined)
+    @scala.inline
+    def setOnPlay(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    @scala.inline
+    def setOnPlayCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onPlayCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPlayCapture: Self = this.set("onPlayCapture", js.undefined)
+    @scala.inline
+    def setOnPlaying(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onPlaying", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPlaying: Self = this.set("onPlaying", js.undefined)
+    @scala.inline
+    def setOnPlayingCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onPlayingCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPlayingCapture: Self = this.set("onPlayingCapture", js.undefined)
+    @scala.inline
+    def setOnPointerCancel(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerCancel: Self = this.set("onPointerCancel", js.undefined)
+    @scala.inline
+    def setOnPointerCancelCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerCancelCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerCancelCapture: Self = this.set("onPointerCancelCapture", js.undefined)
+    @scala.inline
+    def setOnPointerDown(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerDown: Self = this.set("onPointerDown", js.undefined)
+    @scala.inline
+    def setOnPointerDownCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerDownCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerDownCapture: Self = this.set("onPointerDownCapture", js.undefined)
+    @scala.inline
+    def setOnPointerEnter(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerEnter: Self = this.set("onPointerEnter", js.undefined)
+    @scala.inline
+    def setOnPointerEnterCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerEnterCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerEnterCapture: Self = this.set("onPointerEnterCapture", js.undefined)
+    @scala.inline
+    def setOnPointerLeave(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerLeave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerLeave: Self = this.set("onPointerLeave", js.undefined)
+    @scala.inline
+    def setOnPointerLeaveCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerLeaveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerLeaveCapture: Self = this.set("onPointerLeaveCapture", js.undefined)
+    @scala.inline
+    def setOnPointerMove(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerMove: Self = this.set("onPointerMove", js.undefined)
+    @scala.inline
+    def setOnPointerMoveCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerMoveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerMoveCapture: Self = this.set("onPointerMoveCapture", js.undefined)
+    @scala.inline
+    def setOnPointerOut(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerOut: Self = this.set("onPointerOut", js.undefined)
+    @scala.inline
+    def setOnPointerOutCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerOutCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerOutCapture: Self = this.set("onPointerOutCapture", js.undefined)
+    @scala.inline
+    def setOnPointerOver(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerOver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerOver: Self = this.set("onPointerOver", js.undefined)
+    @scala.inline
+    def setOnPointerOverCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerOverCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerOverCapture: Self = this.set("onPointerOverCapture", js.undefined)
+    @scala.inline
+    def setOnPointerUp(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerUp: Self = this.set("onPointerUp", js.undefined)
+    @scala.inline
+    def setOnPointerUpCapture(value: typings.preact.jsxMod.JSXInternal.PointerEventHandler[Target]): Self = this.set("onPointerUpCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerUpCapture: Self = this.set("onPointerUpCapture", js.undefined)
+    @scala.inline
+    def setOnProgress(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    @scala.inline
+    def setOnProgressCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onProgressCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnProgressCapture: Self = this.set("onProgressCapture", js.undefined)
+    @scala.inline
+    def setOnRateChange(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onRateChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRateChange: Self = this.set("onRateChange", js.undefined)
+    @scala.inline
+    def setOnRateChangeCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onRateChangeCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRateChangeCapture: Self = this.set("onRateChangeCapture", js.undefined)
+    @scala.inline
+    def setOnReset(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onReset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    @scala.inline
+    def setOnResetCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onResetCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnResetCapture: Self = this.set("onResetCapture", js.undefined)
+    @scala.inline
+    def setOnScroll(value: typings.preact.jsxMod.JSXInternal.UIEventHandler[Target]): Self = this.set("onScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnScrollCapture(value: typings.preact.jsxMod.JSXInternal.UIEventHandler[Target]): Self = this.set("onScrollCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnScrollCapture: Self = this.set("onScrollCapture", js.undefined)
+    @scala.inline
+    def setOnSearch(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSearch: Self = this.set("onSearch", js.undefined)
+    @scala.inline
+    def setOnSearchCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSearchCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSearchCapture: Self = this.set("onSearchCapture", js.undefined)
+    @scala.inline
+    def setOnSeeked(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSeeked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSeeked: Self = this.set("onSeeked", js.undefined)
+    @scala.inline
+    def setOnSeekedCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSeekedCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSeekedCapture: Self = this.set("onSeekedCapture", js.undefined)
+    @scala.inline
+    def setOnSeeking(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSeeking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSeeking: Self = this.set("onSeeking", js.undefined)
+    @scala.inline
+    def setOnSeekingCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSeekingCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSeekingCapture: Self = this.set("onSeekingCapture", js.undefined)
+    @scala.inline
+    def setOnSelect(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnSelectCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSelectCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelectCapture: Self = this.set("onSelectCapture", js.undefined)
+    @scala.inline
+    def setOnStalled(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onStalled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStalled: Self = this.set("onStalled", js.undefined)
+    @scala.inline
+    def setOnStalledCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onStalledCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStalledCapture: Self = this.set("onStalledCapture", js.undefined)
+    @scala.inline
+    def setOnSubmit(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSubmit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    @scala.inline
+    def setOnSubmitCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSubmitCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSubmitCapture: Self = this.set("onSubmitCapture", js.undefined)
+    @scala.inline
+    def setOnSuspend(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSuspend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSuspend: Self = this.set("onSuspend", js.undefined)
+    @scala.inline
+    def setOnSuspendCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onSuspendCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSuspendCapture: Self = this.set("onSuspendCapture", js.undefined)
+    @scala.inline
+    def setOnTimeUpdate(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onTimeUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTimeUpdate: Self = this.set("onTimeUpdate", js.undefined)
+    @scala.inline
+    def setOnTimeUpdateCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onTimeUpdateCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTimeUpdateCapture: Self = this.set("onTimeUpdateCapture", js.undefined)
+    @scala.inline
+    def setOnToggle(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onToggle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnToggle: Self = this.set("onToggle", js.undefined)
+    @scala.inline
+    def setOnTouchCancel(value: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]): Self = this.set("onTouchCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    @scala.inline
+    def setOnTouchCancelCapture(value: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]): Self = this.set("onTouchCancelCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchCancelCapture: Self = this.set("onTouchCancelCapture", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]): Self = this.set("onTouchEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchEndCapture(value: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]): Self = this.set("onTouchEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchEndCapture: Self = this.set("onTouchEndCapture", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]): Self = this.set("onTouchMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchMoveCapture(value: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]): Self = this.set("onTouchMoveCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchMoveCapture: Self = this.set("onTouchMoveCapture", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]): Self = this.set("onTouchStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOnTouchStartCapture(value: typings.preact.jsxMod.JSXInternal.TouchEventHandler[Target]): Self = this.set("onTouchStartCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchStartCapture: Self = this.set("onTouchStartCapture", js.undefined)
+    @scala.inline
+    def setOnTransitionEnd(value: typings.preact.jsxMod.JSXInternal.TransitionEventHandler[Target]): Self = this.set("onTransitionEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    @scala.inline
+    def setOnTransitionEndCapture(value: typings.preact.jsxMod.JSXInternal.TransitionEventHandler[Target]): Self = this.set("onTransitionEndCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTransitionEndCapture: Self = this.set("onTransitionEndCapture", js.undefined)
+    @scala.inline
+    def setOnVolumeChange(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onVolumeChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnVolumeChange: Self = this.set("onVolumeChange", js.undefined)
+    @scala.inline
+    def setOnVolumeChangeCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onVolumeChangeCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnVolumeChangeCapture: Self = this.set("onVolumeChangeCapture", js.undefined)
+    @scala.inline
+    def setOnWaiting(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onWaiting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnWaiting: Self = this.set("onWaiting", js.undefined)
+    @scala.inline
+    def setOnWaitingCapture(value: typings.preact.jsxMod.JSXInternal.GenericEventHandler[Target]): Self = this.set("onWaitingCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnWaitingCapture: Self = this.set("onWaitingCapture", js.undefined)
+    @scala.inline
+    def setOnWheel(value: typings.preact.jsxMod.JSXInternal.WheelEventHandler[Target]): Self = this.set("onWheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    @scala.inline
+    def setOnWheelCapture(value: typings.preact.jsxMod.JSXInternal.WheelEventHandler[Target]): Self = this.set("onWheelCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnWheelCapture: Self = this.set("onWheelCapture", js.undefined)
+  }
+  
 }
 

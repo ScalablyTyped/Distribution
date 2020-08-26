@@ -6,39 +6,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AdminUIOptions[ListNames /* <: String */, UserType /* <: js.Object */] extends js.Object {
-  var adminPath: js.UndefOr[String] = js.undefined
-  var apiPath: js.UndefOr[String] = js.undefined
-  var authStrategy: js.UndefOr[BaseAuthStrategy] = js.undefined
-  var enableDefaultRoute: js.UndefOr[Boolean] = js.undefined
-  var graphiqlPath: js.UndefOr[String] = js.undefined
-  var isAccessAllowed: js.UndefOr[js.Function1[/* opts */ Authentication[UserType, ListNames], Boolean]] = js.undefined
-  var pages: js.UndefOr[js.Array[_]] = js.undefined
-  var schemaName: js.UndefOr[String] = js.undefined
+  var adminPath: js.UndefOr[String] = js.native
+  var apiPath: js.UndefOr[String] = js.native
+  var authStrategy: js.UndefOr[BaseAuthStrategy] = js.native
+  var enableDefaultRoute: js.UndefOr[Boolean] = js.native
+  var graphiqlPath: js.UndefOr[String] = js.native
+  var isAccessAllowed: js.UndefOr[js.Function1[/* opts */ Authentication[UserType, ListNames], Boolean]] = js.native
+  var pages: js.UndefOr[js.Array[_]] = js.native
+  var schemaName: js.UndefOr[String] = js.native
 }
 
 object AdminUIOptions {
   @scala.inline
-  def apply[/* <: java.lang.String */ ListNames, /* <: js.Object */ UserType](
-    adminPath: String = null,
-    apiPath: String = null,
-    authStrategy: BaseAuthStrategy = null,
-    enableDefaultRoute: js.UndefOr[Boolean] = js.undefined,
-    graphiqlPath: String = null,
-    isAccessAllowed: /* opts */ Authentication[UserType, ListNames] => Boolean = null,
-    pages: js.Array[_] = null,
-    schemaName: String = null
-  ): AdminUIOptions[ListNames, UserType] = {
+  def apply[/* <: java.lang.String */ ListNames, /* <: js.Object */ UserType](): AdminUIOptions[ListNames, UserType] = {
     val __obj = js.Dynamic.literal()
-    if (adminPath != null) __obj.updateDynamic("adminPath")(adminPath.asInstanceOf[js.Any])
-    if (apiPath != null) __obj.updateDynamic("apiPath")(apiPath.asInstanceOf[js.Any])
-    if (authStrategy != null) __obj.updateDynamic("authStrategy")(authStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDefaultRoute)) __obj.updateDynamic("enableDefaultRoute")(enableDefaultRoute.get.asInstanceOf[js.Any])
-    if (graphiqlPath != null) __obj.updateDynamic("graphiqlPath")(graphiqlPath.asInstanceOf[js.Any])
-    if (isAccessAllowed != null) __obj.updateDynamic("isAccessAllowed")(js.Any.fromFunction1(isAccessAllowed))
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminUIOptions[ListNames, UserType]]
   }
+  @scala.inline
+  implicit class AdminUIOptionsOps[Self <: AdminUIOptions[_, _], /* <: java.lang.String */ ListNames, /* <: js.Object */ UserType] (val x: Self with (AdminUIOptions[ListNames, UserType])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminPath(value: String): Self = this.set("adminPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminPath: Self = this.set("adminPath", js.undefined)
+    @scala.inline
+    def setApiPath(value: String): Self = this.set("apiPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiPath: Self = this.set("apiPath", js.undefined)
+    @scala.inline
+    def setAuthStrategy(value: BaseAuthStrategy): Self = this.set("authStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthStrategy: Self = this.set("authStrategy", js.undefined)
+    @scala.inline
+    def setEnableDefaultRoute(value: Boolean): Self = this.set("enableDefaultRoute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDefaultRoute: Self = this.set("enableDefaultRoute", js.undefined)
+    @scala.inline
+    def setGraphiqlPath(value: String): Self = this.set("graphiqlPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGraphiqlPath: Self = this.set("graphiqlPath", js.undefined)
+    @scala.inline
+    def setIsAccessAllowed(value: /* opts */ Authentication[UserType, ListNames] => Boolean): Self = this.set("isAccessAllowed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsAccessAllowed: Self = this.set("isAccessAllowed", js.undefined)
+    @scala.inline
+    def setPagesVarargs(value: js.Any*): Self = this.set("pages", js.Array(value :_*))
+    @scala.inline
+    def setPages(value: js.Array[_]): Self = this.set("pages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePages: Self = this.set("pages", js.undefined)
+    @scala.inline
+    def setSchemaName(value: String): Self = this.set("schemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaName: Self = this.set("schemaName", js.undefined)
+  }
+  
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class MapTypeRegistry ()
   extends typings.navermaps.naver.maps.MapTypeRegistry {
   def this(mapTypeInfo: js.Any) = this()
+  def this(mapTypeInfo: js.UndefOr[scala.Nothing], defaultMapTypeId: String) = this()
   def this(mapTypeInfo: js.Any, defaultMapTypeId: String) = this()
 }
 

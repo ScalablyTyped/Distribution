@@ -18,11 +18,30 @@ trait ApplicationVersionLifecycleConfig extends js.Object {
 
 object ApplicationVersionLifecycleConfig {
   @scala.inline
-  def apply(MaxAgeRule: MaxAgeRule = null, MaxCountRule: MaxCountRule = null): ApplicationVersionLifecycleConfig = {
+  def apply(): ApplicationVersionLifecycleConfig = {
     val __obj = js.Dynamic.literal()
-    if (MaxAgeRule != null) __obj.updateDynamic("MaxAgeRule")(MaxAgeRule.asInstanceOf[js.Any])
-    if (MaxCountRule != null) __obj.updateDynamic("MaxCountRule")(MaxCountRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationVersionLifecycleConfig]
   }
+  @scala.inline
+  implicit class ApplicationVersionLifecycleConfigOps[Self <: ApplicationVersionLifecycleConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxAgeRule(value: MaxAgeRule): Self = this.set("MaxAgeRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAgeRule: Self = this.set("MaxAgeRule", js.undefined)
+    @scala.inline
+    def setMaxCountRule(value: MaxCountRule): Self = this.set("MaxCountRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCountRule: Self = this.set("MaxCountRule", js.undefined)
+  }
+  
 }
 

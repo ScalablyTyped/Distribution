@@ -7,35 +7,82 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EndpointS3Settings extends js.Object {
+  /**
+    * S3 Bucket Object prefix.
+    */
   var bucketFolder: js.UndefOr[Input[String]] = js.native
+  /**
+    * S3 Bucket name.
+    */
   var bucketName: js.UndefOr[Input[String]] = js.native
+  /**
+    * Set to compress target files. Defaults to `NONE`. Valid values are `GZIP` and `NONE`.
+    */
   var compressionType: js.UndefOr[Input[String]] = js.native
+  /**
+    * Delimiter used to separate columns in the source files. Defaults to `,`.
+    */
   var csvDelimiter: js.UndefOr[Input[String]] = js.native
+  /**
+    * Delimiter used to separate rows in the source files. Defaults to `\n`.
+    */
   var csvRowDelimiter: js.UndefOr[Input[String]] = js.native
+  /**
+    * JSON document that describes how AWS DMS should interpret the data.
+    */
   var externalTableDefinition: js.UndefOr[Input[String]] = js.native
+  /**
+    * Amazon Resource Name (ARN) of the IAM Role with permissions to read from or write to the S3 Bucket.
+    */
   var serviceAccessRoleArn: js.UndefOr[Input[String]] = js.native
 }
 
 object EndpointS3Settings {
   @scala.inline
-  def apply(
-    bucketFolder: Input[String] = null,
-    bucketName: Input[String] = null,
-    compressionType: Input[String] = null,
-    csvDelimiter: Input[String] = null,
-    csvRowDelimiter: Input[String] = null,
-    externalTableDefinition: Input[String] = null,
-    serviceAccessRoleArn: Input[String] = null
-  ): EndpointS3Settings = {
+  def apply(): EndpointS3Settings = {
     val __obj = js.Dynamic.literal()
-    if (bucketFolder != null) __obj.updateDynamic("bucketFolder")(bucketFolder.asInstanceOf[js.Any])
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    if (compressionType != null) __obj.updateDynamic("compressionType")(compressionType.asInstanceOf[js.Any])
-    if (csvDelimiter != null) __obj.updateDynamic("csvDelimiter")(csvDelimiter.asInstanceOf[js.Any])
-    if (csvRowDelimiter != null) __obj.updateDynamic("csvRowDelimiter")(csvRowDelimiter.asInstanceOf[js.Any])
-    if (externalTableDefinition != null) __obj.updateDynamic("externalTableDefinition")(externalTableDefinition.asInstanceOf[js.Any])
-    if (serviceAccessRoleArn != null) __obj.updateDynamic("serviceAccessRoleArn")(serviceAccessRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointS3Settings]
   }
+  @scala.inline
+  implicit class EndpointS3SettingsOps[Self <: EndpointS3Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketFolder(value: Input[String]): Self = this.set("bucketFolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketFolder: Self = this.set("bucketFolder", js.undefined)
+    @scala.inline
+    def setBucketName(value: Input[String]): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    @scala.inline
+    def setCompressionType(value: Input[String]): Self = this.set("compressionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompressionType: Self = this.set("compressionType", js.undefined)
+    @scala.inline
+    def setCsvDelimiter(value: Input[String]): Self = this.set("csvDelimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvDelimiter: Self = this.set("csvDelimiter", js.undefined)
+    @scala.inline
+    def setCsvRowDelimiter(value: Input[String]): Self = this.set("csvRowDelimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvRowDelimiter: Self = this.set("csvRowDelimiter", js.undefined)
+    @scala.inline
+    def setExternalTableDefinition(value: Input[String]): Self = this.set("externalTableDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalTableDefinition: Self = this.set("externalTableDefinition", js.undefined)
+    @scala.inline
+    def setServiceAccessRoleArn(value: Input[String]): Self = this.set("serviceAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccessRoleArn: Self = this.set("serviceAccessRoleArn", js.undefined)
+  }
+  
 }
 

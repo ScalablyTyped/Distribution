@@ -136,6 +136,11 @@ object global extends js.Object {
       * @param callback Optional. Callback will trigger once translations have been fetched from Localize.
       */
     def translate(input: String): Unit = js.native
+    def translate(
+      input: String,
+      variables: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* translation */ String | HTMLElement, Unit]
+    ): Unit = js.native
     def translate(input: String, variables: js.Any): Unit = js.native
     def translate(
       input: String,
@@ -143,6 +148,11 @@ object global extends js.Object {
       callback: js.Function1[/* translation */ String | HTMLElement, Unit]
     ): Unit = js.native
     def translate(input: HTMLElement): Unit = js.native
+    def translate(
+      input: HTMLElement,
+      variables: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* translation */ String | HTMLElement, Unit]
+    ): Unit = js.native
     def translate(input: HTMLElement, variables: js.Any): Unit = js.native
     def translate(
       input: HTMLElement,

@@ -358,6 +358,12 @@ trait AppointmentRead extends Item {
     handler: js.Any,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def addHandlerAsync(
+    eventType: String,
+    handler: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addHandlerAsync(eventType: String, handler: js.Any, options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: String,
@@ -390,6 +396,12 @@ trait AppointmentRead extends Item {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Any,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
@@ -454,6 +466,11 @@ trait AppointmentRead extends Item {
     * @beta
     */
   def displayReplyAllFormAsync(formData: String): Unit = js.native
+  def displayReplyAllFormAsync(
+    formData: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def displayReplyAllFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
   def displayReplyAllFormAsync(
     formData: String,
@@ -461,6 +478,11 @@ trait AppointmentRead extends Item {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def displayReplyAllFormAsync(formData: ReplyFormData): Unit = js.native
+  def displayReplyAllFormAsync(
+    formData: ReplyFormData,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def displayReplyAllFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
   def displayReplyAllFormAsync(
     formData: ReplyFormData,
@@ -520,6 +542,11 @@ trait AppointmentRead extends Item {
     * @beta
     */
   def displayReplyFormAsync(formData: String): Unit = js.native
+  def displayReplyFormAsync(
+    formData: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def displayReplyFormAsync(formData: String, options: AsyncContextOptions): Unit = js.native
   def displayReplyFormAsync(
     formData: String,
@@ -527,6 +554,11 @@ trait AppointmentRead extends Item {
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def displayReplyFormAsync(formData: ReplyFormData): Unit = js.native
+  def displayReplyFormAsync(
+    formData: ReplyFormData,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def displayReplyFormAsync(formData: ReplyFormData, options: AsyncContextOptions): Unit = js.native
   def displayReplyFormAsync(
     formData: ReplyFormData,
@@ -567,6 +599,11 @@ trait AppointmentRead extends Item {
   def getAttachmentContentAsync(attachmentId: String): Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
+  ): Unit = js.native
+  def getAttachmentContentAsync(
+    attachmentId: String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
   def getAttachmentContentAsync(attachmentId: String, options: AsyncContextOptions): Unit = js.native
@@ -700,6 +737,10 @@ trait AppointmentRead extends Item {
     */
   def getInitializationContextAsync(): Unit = js.native
   def getInitializationContextAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  def getInitializationContextAsync(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
+  ): Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions): Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   /**
@@ -866,6 +907,11 @@ trait AppointmentRead extends Item {
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit], userContext: js.Any): Unit = js.native
   def removeHandlerAsync(eventType: String): Unit = js.native
   def removeHandlerAsync(eventType: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeHandlerAsync(
+    eventType: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeHandlerAsync(eventType: String, options: AsyncContextOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
@@ -893,6 +939,11 @@ trait AppointmentRead extends Item {
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,

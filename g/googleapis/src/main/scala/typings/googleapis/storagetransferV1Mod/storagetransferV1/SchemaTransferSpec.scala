@@ -42,22 +42,46 @@ trait SchemaTransferSpec extends js.Object {
 
 object SchemaTransferSpec {
   @scala.inline
-  def apply(
-    awsS3DataSource: SchemaAwsS3Data = null,
-    gcsDataSink: SchemaGcsData = null,
-    gcsDataSource: SchemaGcsData = null,
-    httpDataSource: SchemaHttpData = null,
-    objectConditions: SchemaObjectConditions = null,
-    transferOptions: SchemaTransferOptions = null
-  ): SchemaTransferSpec = {
+  def apply(): SchemaTransferSpec = {
     val __obj = js.Dynamic.literal()
-    if (awsS3DataSource != null) __obj.updateDynamic("awsS3DataSource")(awsS3DataSource.asInstanceOf[js.Any])
-    if (gcsDataSink != null) __obj.updateDynamic("gcsDataSink")(gcsDataSink.asInstanceOf[js.Any])
-    if (gcsDataSource != null) __obj.updateDynamic("gcsDataSource")(gcsDataSource.asInstanceOf[js.Any])
-    if (httpDataSource != null) __obj.updateDynamic("httpDataSource")(httpDataSource.asInstanceOf[js.Any])
-    if (objectConditions != null) __obj.updateDynamic("objectConditions")(objectConditions.asInstanceOf[js.Any])
-    if (transferOptions != null) __obj.updateDynamic("transferOptions")(transferOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransferSpec]
   }
+  @scala.inline
+  implicit class SchemaTransferSpecOps[Self <: SchemaTransferSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsS3DataSource(value: SchemaAwsS3Data): Self = this.set("awsS3DataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsS3DataSource: Self = this.set("awsS3DataSource", js.undefined)
+    @scala.inline
+    def setGcsDataSink(value: SchemaGcsData): Self = this.set("gcsDataSink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsDataSink: Self = this.set("gcsDataSink", js.undefined)
+    @scala.inline
+    def setGcsDataSource(value: SchemaGcsData): Self = this.set("gcsDataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsDataSource: Self = this.set("gcsDataSource", js.undefined)
+    @scala.inline
+    def setHttpDataSource(value: SchemaHttpData): Self = this.set("httpDataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpDataSource: Self = this.set("httpDataSource", js.undefined)
+    @scala.inline
+    def setObjectConditions(value: SchemaObjectConditions): Self = this.set("objectConditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectConditions: Self = this.set("objectConditions", js.undefined)
+    @scala.inline
+    def setTransferOptions(value: SchemaTransferOptions): Self = this.set("transferOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferOptions: Self = this.set("transferOptions", js.undefined)
+  }
+  
 }
 

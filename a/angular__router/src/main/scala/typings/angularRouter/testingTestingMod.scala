@@ -38,7 +38,7 @@ object testingTestingMod extends js.Object {
     /**
       * @docsNotRequired
       */
-    def stubbedModules(modules: StringDictionary[js.Any]): js.Any = js.native
+    def stubbedModules_=(modules: StringDictionary[js.Any]): Unit = js.native
   }
   
   def setupTestingRouter(
@@ -49,6 +49,17 @@ object testingTestingMod extends js.Object {
     compiler: Compiler,
     injector: Injector,
     routes: js.Array[js.Array[Route]]
+  ): Router = js.native
+  def setupTestingRouter(
+    urlSerializer: UrlSerializer,
+    contexts: ChildrenOutletContexts,
+    location: Location,
+    loader: NgModuleFactoryLoader,
+    compiler: Compiler,
+    injector: Injector,
+    routes: js.Array[js.Array[Route]],
+    opts: js.UndefOr[scala.Nothing],
+    urlHandlingStrategy: UrlHandlingStrategy
   ): Router = js.native
   def setupTestingRouter(
     urlSerializer: UrlSerializer,

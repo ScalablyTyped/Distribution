@@ -22,12 +22,34 @@ trait StartSessionResponse extends js.Object {
 
 object StartSessionResponse {
   @scala.inline
-  def apply(SessionId: SessionId = null, StreamUrl: StreamUrl = null, TokenValue: TokenValue = null): StartSessionResponse = {
+  def apply(): StartSessionResponse = {
     val __obj = js.Dynamic.literal()
-    if (SessionId != null) __obj.updateDynamic("SessionId")(SessionId.asInstanceOf[js.Any])
-    if (StreamUrl != null) __obj.updateDynamic("StreamUrl")(StreamUrl.asInstanceOf[js.Any])
-    if (TokenValue != null) __obj.updateDynamic("TokenValue")(TokenValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSessionResponse]
   }
+  @scala.inline
+  implicit class StartSessionResponseOps[Self <: StartSessionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSessionId(value: SessionId): Self = this.set("SessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("SessionId", js.undefined)
+    @scala.inline
+    def setStreamUrl(value: StreamUrl): Self = this.set("StreamUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamUrl: Self = this.set("StreamUrl", js.undefined)
+    @scala.inline
+    def setTokenValue(value: TokenValue): Self = this.set("TokenValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenValue: Self = this.set("TokenValue", js.undefined)
+  }
+  
 }
 

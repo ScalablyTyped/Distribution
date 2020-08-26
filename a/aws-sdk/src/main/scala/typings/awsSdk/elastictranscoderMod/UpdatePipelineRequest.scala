@@ -42,25 +42,52 @@ trait UpdatePipelineRequest extends js.Object {
 
 object UpdatePipelineRequest {
   @scala.inline
-  def apply(
-    Id: Id,
-    AwsKmsKeyArn: KeyArn = null,
-    ContentConfig: PipelineOutputConfig = null,
-    InputBucket: BucketName = null,
-    Name: Name = null,
-    Notifications: Notifications = null,
-    Role: Role = null,
-    ThumbnailConfig: PipelineOutputConfig = null
-  ): UpdatePipelineRequest = {
+  def apply(Id: Id): UpdatePipelineRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-    if (AwsKmsKeyArn != null) __obj.updateDynamic("AwsKmsKeyArn")(AwsKmsKeyArn.asInstanceOf[js.Any])
-    if (ContentConfig != null) __obj.updateDynamic("ContentConfig")(ContentConfig.asInstanceOf[js.Any])
-    if (InputBucket != null) __obj.updateDynamic("InputBucket")(InputBucket.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Notifications != null) __obj.updateDynamic("Notifications")(Notifications.asInstanceOf[js.Any])
-    if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
-    if (ThumbnailConfig != null) __obj.updateDynamic("ThumbnailConfig")(ThumbnailConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePipelineRequest]
   }
+  @scala.inline
+  implicit class UpdatePipelineRequestOps[Self <: UpdatePipelineRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAwsKmsKeyArn(value: KeyArn): Self = this.set("AwsKmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsKmsKeyArn: Self = this.set("AwsKmsKeyArn", js.undefined)
+    @scala.inline
+    def setContentConfig(value: PipelineOutputConfig): Self = this.set("ContentConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentConfig: Self = this.set("ContentConfig", js.undefined)
+    @scala.inline
+    def setInputBucket(value: BucketName): Self = this.set("InputBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputBucket: Self = this.set("InputBucket", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNotifications(value: Notifications): Self = this.set("Notifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifications: Self = this.set("Notifications", js.undefined)
+    @scala.inline
+    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("Role", js.undefined)
+    @scala.inline
+    def setThumbnailConfig(value: PipelineOutputConfig): Self = this.set("ThumbnailConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailConfig: Self = this.set("ThumbnailConfig", js.undefined)
+  }
+  
 }
 

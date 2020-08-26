@@ -76,6 +76,7 @@ trait Queue extends EventEmitter {
     * @param end The end of the specified portion of the Queue.
     */
   def slice(): Queue = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): Queue = js.native
   def slice(start: Double): Queue = js.native
   def slice(start: Double, end: Double): Queue = js.native
   /**

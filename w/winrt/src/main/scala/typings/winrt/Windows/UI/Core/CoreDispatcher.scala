@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CoreDispatcher extends ICoreDispatcher
 
 object CoreDispatcher {

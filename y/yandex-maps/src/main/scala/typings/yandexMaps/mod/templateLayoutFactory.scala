@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object templateLayoutFactory extends js.Object {
   def createClass(template: String): IClassConstructor[Base] = js.native
+  def createClass(template: String, overrides: js.UndefOr[scala.Nothing], staticMethods: js.Object): IClassConstructor[Base] = js.native
   def createClass(template: String, overrides: js.Object): IClassConstructor[Base] = js.native
   def createClass(template: String, overrides: js.Object, staticMethods: js.Object): IClassConstructor[Base] = js.native
 }

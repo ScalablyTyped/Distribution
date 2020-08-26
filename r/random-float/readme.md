@@ -12,7 +12,7 @@ Generate a random float
 | Keywords           | random, randomize, float, floating, point, real, number, max, min, math, generate, generator |
 | # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 33892 |
+| # downloads        | 34113 |
 | # stars            | 2 |
 
 ## Links

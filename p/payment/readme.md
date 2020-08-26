@@ -12,7 +12,7 @@ A general purpose library for building credit card forms, validating inputs and 
 | Keywords           | payment, cc, card |
 | # releases         | 1 |
 | # dependents       | 47 |
-| # downloads        | 1420665 |
+| # downloads        | 1484246 |
 | # stars            | 7 |
 
 ## Links

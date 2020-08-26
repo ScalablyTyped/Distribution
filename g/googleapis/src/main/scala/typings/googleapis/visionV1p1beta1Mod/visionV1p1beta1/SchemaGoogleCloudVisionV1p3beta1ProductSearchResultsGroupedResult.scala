@@ -22,14 +22,32 @@ trait SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult extends 
 
 object SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult {
   @scala.inline
-  def apply(
-    boundingPoly: SchemaGoogleCloudVisionV1p3beta1BoundingPoly = null,
-    results: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsResult] = null
-  ): SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult = {
+  def apply(): SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult = {
     val __obj = js.Dynamic.literal()
-    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResultOps[Self <: SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p3beta1BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    @scala.inline
+    def setResultsVarargs(value: SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsResult*): Self = this.set("results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: js.Array[SchemaGoogleCloudVisionV1p3beta1ProductSearchResultsResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+  }
+  
 }
 

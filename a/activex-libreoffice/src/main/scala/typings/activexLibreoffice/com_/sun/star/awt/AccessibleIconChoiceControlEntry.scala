@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.accessibility.XAccessibleText
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleIconChoiceControlEntry
   extends XAccessibleContext
      with XAccessibleEventBroadcaster

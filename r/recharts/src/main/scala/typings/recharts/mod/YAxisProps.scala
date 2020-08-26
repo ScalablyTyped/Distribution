@@ -1,6 +1,7 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.recharts.rechartsStrings.category
 import typings.recharts.rechartsStrings.left
 import typings.recharts.rechartsStrings.number
@@ -9,148 +10,207 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait YAxisProps extends EventAttributes {
-  var allowDataOverflow: js.UndefOr[Boolean] = js.undefined
-  var allowDecimals: js.UndefOr[Boolean] = js.undefined
+  var allowDataOverflow: js.UndefOr[Boolean] = js.native
+  var allowDecimals: js.UndefOr[Boolean] = js.native
   // Rotation of tick labels
-  var angle: js.UndefOr[Double] = js.undefined
-  var axisLine: js.UndefOr[Boolean | js.Object] = js.undefined
+  var angle: js.UndefOr[Double] = js.native
+  var axisLine: js.UndefOr[Boolean | js.Object] = js.native
   // The key of data displayed in the axis
-  var dataKey: js.UndefOr[DataKey] = js.undefined
-  var domain: js.UndefOr[js.Tuple2[AxisDomain, AxisDomain]] = js.undefined
+  var dataKey: js.UndefOr[DataKey] = js.native
+  var domain: js.UndefOr[js.Tuple2[AxisDomain, AxisDomain]] = js.native
   // X offset of tick label
-  var dx: js.UndefOr[Double] = js.undefined
+  var dx: js.UndefOr[Double] = js.native
   // Y offset of tick label
-  var dy: js.UndefOr[Double] = js.undefined
+  var dy: js.UndefOr[Double] = js.native
   // The height of axis which is usually calculated in Chart
-  var height: js.UndefOr[Double] = js.undefined
-  var hide: js.UndefOr[Boolean] = js.undefined
-  var interval: js.UndefOr[AxisInterval] = js.undefined
+  var height: js.UndefOr[Double] = js.native
+  var hide: js.UndefOr[Boolean] = js.native
+  var interval: js.UndefOr[AxisInterval] = js.native
   // see label section at http://recharts.org/#/en-US/api/YAxis
-  var label: js.UndefOr[String | Double | Label | LabelProps] = js.undefined
-  var minTickGap: js.UndefOr[Double] = js.undefined
-  var mirror: js.UndefOr[Boolean] = js.undefined
+  var label: js.UndefOr[String | Double | Label | LabelProps] = js.native
+  var minTickGap: js.UndefOr[Double] = js.native
+  var mirror: js.UndefOr[Boolean] = js.native
   // The name of data displayed in the axis
-  var name: js.UndefOr[String | Double] = js.undefined
+  var name: js.UndefOr[String | Double] = js.native
   // The orientation of axis
-  var orientation: js.UndefOr[left | right] = js.undefined
-  var padding: js.UndefOr[YPadding] = js.undefined
-  var reversed: js.UndefOr[Boolean] = js.undefined
-  var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
-  var stroke: js.UndefOr[String] = js.undefined
-  var tick: js.UndefOr[Boolean | ContentRenderer[_] | js.Object | ReactElement] = js.undefined
+  var orientation: js.UndefOr[left | right] = js.native
+  var padding: js.UndefOr[YPadding] = js.native
+  var reversed: js.UndefOr[Boolean] = js.native
+  var scale: js.UndefOr[ScaleType | RechartsFunction] = js.native
+  var stroke: js.UndefOr[String] = js.native
+  var tick: js.UndefOr[Boolean | ContentRenderer[_] | js.Object | ReactElement] = js.native
   // The count of ticks
-  var tickCount: js.UndefOr[Double] = js.undefined
+  var tickCount: js.UndefOr[Double] = js.native
   // The formatter function of tick
-  var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
-  var tickLine: js.UndefOr[Boolean | js.Object] = js.undefined
+  var tickFormatter: js.UndefOr[TickFormatterFunction] = js.native
+  var tickLine: js.UndefOr[Boolean | js.Object] = js.native
   // The margin between tick line and the label
-  var tickMargin: js.UndefOr[Double] = js.undefined
-  var tickSize: js.UndefOr[Double] = js.undefined
+  var tickMargin: js.UndefOr[Double] = js.native
+  var tickSize: js.UndefOr[Double] = js.native
   // Ticks can be any type when the axis is the type of category
   // Ticks must be numbers when the axis is the type of number
-  var ticks: js.UndefOr[js.Array[_]] = js.undefined
-  var `type`: js.UndefOr[number | category] = js.undefined
+  var ticks: js.UndefOr[js.Array[_]] = js.native
+  var `type`: js.UndefOr[number | category] = js.native
   // The unit of data displayed in the axis
-  var unit: js.UndefOr[String | Double] = js.undefined
+  var unit: js.UndefOr[String | Double] = js.native
   // The width of axis, which need to be set by user
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
   // The unique id of y-axis
-  var yAxisId: js.UndefOr[String | Double] = js.undefined
+  var yAxisId: js.UndefOr[String | Double] = js.native
 }
 
 object YAxisProps {
   @scala.inline
-  def apply(
-    allowDataOverflow: js.UndefOr[Boolean] = js.undefined,
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    angle: js.UndefOr[Double] = js.undefined,
-    axisLine: Boolean | js.Object = null,
-    dataKey: DataKey = null,
-    domain: js.Tuple2[AxisDomain, AxisDomain] = null,
-    dx: js.UndefOr[Double] = js.undefined,
-    dy: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    hide: js.UndefOr[Boolean] = js.undefined,
-    interval: AxisInterval = null,
-    label: String | Double | Label | LabelProps = null,
-    minTickGap: js.UndefOr[Double] = js.undefined,
-    mirror: js.UndefOr[Boolean] = js.undefined,
-    name: String | Double = null,
-    onClick: /* repeated */ js.Any => Unit = null,
-    onMouseDown: /* repeated */ js.Any => Unit = null,
-    onMouseEnter: /* repeated */ js.Any => Unit = null,
-    onMouseLeave: /* repeated */ js.Any => Unit = null,
-    onMouseMove: /* repeated */ js.Any => Unit = null,
-    onMouseOut: /* repeated */ js.Any => Unit = null,
-    onMouseOver: /* repeated */ js.Any => Unit = null,
-    onMouseUp: /* repeated */ js.Any => Unit = null,
-    onTouchCancel: /* repeated */ js.Any => Unit = null,
-    onTouchEnd: /* repeated */ js.Any => Unit = null,
-    onTouchMove: /* repeated */ js.Any => Unit = null,
-    onTouchStart: /* repeated */ js.Any => Unit = null,
-    orientation: left | right = null,
-    padding: YPadding = null,
-    reversed: js.UndefOr[Boolean] = js.undefined,
-    scale: ScaleType | RechartsFunction = null,
-    stroke: String = null,
-    tick: Boolean | ContentRenderer[_] | js.Object | ReactElement = null,
-    tickCount: js.UndefOr[Double] = js.undefined,
-    tickFormatter: /* value */ js.Any => js.Any = null,
-    tickLine: Boolean | js.Object = null,
-    tickMargin: js.UndefOr[Double] = js.undefined,
-    tickSize: js.UndefOr[Double] = js.undefined,
-    ticks: js.Array[_] = null,
-    `type`: number | category = null,
-    unit: String | Double = null,
-    width: js.UndefOr[Double] = js.undefined,
-    yAxisId: String | Double = null
-  ): YAxisProps = {
+  def apply(): YAxisProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDataOverflow)) __obj.updateDynamic("allowDataOverflow")(allowDataOverflow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
-    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
-    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(dx)) __obj.updateDynamic("dx")(dx.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dy)) __obj.updateDynamic("dy")(dy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.get.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(minTickGap)) __obj.updateDynamic("minTickGap")(minTickGap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (!js.isUndefined(tickCount)) __obj.updateDynamic("tickCount")(tickCount.get.asInstanceOf[js.Any])
-    if (tickFormatter != null) __obj.updateDynamic("tickFormatter")(js.Any.fromFunction1(tickFormatter))
-    if (tickLine != null) __obj.updateDynamic("tickLine")(tickLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(tickMargin)) __obj.updateDynamic("tickMargin")(tickMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tickSize)) __obj.updateDynamic("tickSize")(tickSize.get.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (yAxisId != null) __obj.updateDynamic("yAxisId")(yAxisId.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisProps]
   }
+  @scala.inline
+  implicit class YAxisPropsOps[Self <: YAxisProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowDataOverflow(value: Boolean): Self = this.set("allowDataOverflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDataOverflow: Self = this.set("allowDataOverflow", js.undefined)
+    @scala.inline
+    def setAllowDecimals(value: Boolean): Self = this.set("allowDecimals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDecimals: Self = this.set("allowDecimals", js.undefined)
+    @scala.inline
+    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngle: Self = this.set("angle", js.undefined)
+    @scala.inline
+    def setAxisLine(value: Boolean | js.Object): Self = this.set("axisLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisLine: Self = this.set("axisLine", js.undefined)
+    @scala.inline
+    def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = this.set("dataKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDataKey(value: DataKey): Self = this.set("dataKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataKey: Self = this.set("dataKey", js.undefined)
+    @scala.inline
+    def setDomain(value: js.Tuple2[AxisDomain, AxisDomain]): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setDx(value: Double): Self = this.set("dx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDx: Self = this.set("dx", js.undefined)
+    @scala.inline
+    def setDy(value: Double): Self = this.set("dy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDy: Self = this.set("dy", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHide(value: Boolean): Self = this.set("hide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHide: Self = this.set("hide", js.undefined)
+    @scala.inline
+    def setInterval(value: AxisInterval): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setLabel(value: String | Double | Label | LabelProps): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMinTickGap(value: Double): Self = this.set("minTickGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinTickGap: Self = this.set("minTickGap", js.undefined)
+    @scala.inline
+    def setMirror(value: Boolean): Self = this.set("mirror", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMirror: Self = this.set("mirror", js.undefined)
+    @scala.inline
+    def setName(value: String | Double): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrientation(value: left | right): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setPadding(value: YPadding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReversed: Self = this.set("reversed", js.undefined)
+    @scala.inline
+    def setScaleFunction1(value: /* repeated */ js.Any => Unit): Self = this.set("scale", js.Any.fromFunction1(value))
+    @scala.inline
+    def setScale(value: ScaleType | RechartsFunction): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setTickFunction1(value: _ => ReactNode): Self = this.set("tick", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTick(value: Boolean | ContentRenderer[_] | js.Object | ReactElement): Self = this.set("tick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTick: Self = this.set("tick", js.undefined)
+    @scala.inline
+    def setTickCount(value: Double): Self = this.set("tickCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickCount: Self = this.set("tickCount", js.undefined)
+    @scala.inline
+    def setTickFormatter(value: /* value */ js.Any => js.Any): Self = this.set("tickFormatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTickFormatter: Self = this.set("tickFormatter", js.undefined)
+    @scala.inline
+    def setTickLine(value: Boolean | js.Object): Self = this.set("tickLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickLine: Self = this.set("tickLine", js.undefined)
+    @scala.inline
+    def setTickMargin(value: Double): Self = this.set("tickMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickMargin: Self = this.set("tickMargin", js.undefined)
+    @scala.inline
+    def setTickSize(value: Double): Self = this.set("tickSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickSize: Self = this.set("tickSize", js.undefined)
+    @scala.inline
+    def setTicksVarargs(value: js.Any*): Self = this.set("ticks", js.Array(value :_*))
+    @scala.inline
+    def setTicks(value: js.Array[_]): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicks: Self = this.set("ticks", js.undefined)
+    @scala.inline
+    def setType(value: number | category): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnit(value: String | Double): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setYAxisId(value: String | Double): Self = this.set("yAxisId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisId: Self = this.set("yAxisId", js.undefined)
+  }
+  
 }
 

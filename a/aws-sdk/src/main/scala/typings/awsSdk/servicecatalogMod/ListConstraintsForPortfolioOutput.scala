@@ -18,11 +18,32 @@ trait ListConstraintsForPortfolioOutput extends js.Object {
 
 object ListConstraintsForPortfolioOutput {
   @scala.inline
-  def apply(ConstraintDetails: ConstraintDetails = null, NextPageToken: PageToken = null): ListConstraintsForPortfolioOutput = {
+  def apply(): ListConstraintsForPortfolioOutput = {
     val __obj = js.Dynamic.literal()
-    if (ConstraintDetails != null) __obj.updateDynamic("ConstraintDetails")(ConstraintDetails.asInstanceOf[js.Any])
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConstraintsForPortfolioOutput]
   }
+  @scala.inline
+  implicit class ListConstraintsForPortfolioOutputOps[Self <: ListConstraintsForPortfolioOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstraintDetailsVarargs(value: ConstraintDetail*): Self = this.set("ConstraintDetails", js.Array(value :_*))
+    @scala.inline
+    def setConstraintDetails(value: ConstraintDetails): Self = this.set("ConstraintDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraintDetails: Self = this.set("ConstraintDetails", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+  }
+  
 }
 

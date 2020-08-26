@@ -23,8 +23,19 @@ class Sorter protected ()
     */
   def this(sPath: String) = this()
   def this(sPath: String, bDescending: Boolean) = this()
+  def this(sPath: String, bDescending: js.UndefOr[scala.Nothing], vGroup: js.Any) = this()
+  def this(sPath: String, bDescending: js.UndefOr[scala.Nothing], vGroup: Boolean) = this()
   def this(sPath: String, bDescending: Boolean, vGroup: js.Any) = this()
   def this(sPath: String, bDescending: Boolean, vGroup: Boolean) = this()
+  def this(
+    sPath: String,
+    bDescending: js.UndefOr[scala.Nothing],
+    vGroup: js.UndefOr[scala.Nothing],
+    fnComparator: js.Any
+  ) = this()
+  def this(sPath: String, bDescending: js.UndefOr[scala.Nothing], vGroup: js.Any, fnComparator: js.Any) = this()
+  def this(sPath: String, bDescending: js.UndefOr[scala.Nothing], vGroup: Boolean, fnComparator: js.Any) = this()
+  def this(sPath: String, bDescending: Boolean, vGroup: js.UndefOr[scala.Nothing], fnComparator: js.Any) = this()
   def this(sPath: String, bDescending: Boolean, vGroup: js.Any, fnComparator: js.Any) = this()
   def this(sPath: String, bDescending: Boolean, vGroup: Boolean, fnComparator: js.Any) = this()
 }

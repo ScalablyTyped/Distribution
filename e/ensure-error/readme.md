@@ -1,7 +1,7 @@
 
 # Scala.js typings for ensure-error
 
-Typings are for version 2.1.0
+Typings are for version 3.0.1
 
 ## Library description:
 Ensures a value is a valid error by making it one if not
@@ -12,7 +12,7 @@ Ensures a value is a valid error by making it one if not
 | Keywords           | error, ensure, valid, stack, message, name, string, to, make, fix, clean, convert |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 157059 |
+| # downloads        | 165833 |
 | # stars            | 1 |
 
 ## Links

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EncryptedAndAuthenticatedData extends IEncryptedAndAuthenticatedData
 
 object EncryptedAndAuthenticatedData {

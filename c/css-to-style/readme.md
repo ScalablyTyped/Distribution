@@ -12,7 +12,7 @@ Transform a string of css rules into a style object
 | Keywords           | css, object, parse, react, string, style |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 23777 |
+| # downloads        | 25418 |
 | # stars            | 0 |
 
 ## Links

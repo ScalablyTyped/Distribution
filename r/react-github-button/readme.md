@@ -12,7 +12,7 @@ Unofficial GitHub buttons in React.
 | Keywords           | react, github, button |
 | # releases         | 0 |
 | # dependents       | 25 |
-| # downloads        | 93500 |
+| # downloads        | 95146 |
 | # stars            | 0 |
 
 ## Links

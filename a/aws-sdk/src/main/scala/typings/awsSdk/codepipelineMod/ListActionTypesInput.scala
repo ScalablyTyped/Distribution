@@ -18,11 +18,30 @@ trait ListActionTypesInput extends js.Object {
 
 object ListActionTypesInput {
   @scala.inline
-  def apply(actionOwnerFilter: ActionOwner = null, nextToken: NextToken = null): ListActionTypesInput = {
+  def apply(): ListActionTypesInput = {
     val __obj = js.Dynamic.literal()
-    if (actionOwnerFilter != null) __obj.updateDynamic("actionOwnerFilter")(actionOwnerFilter.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListActionTypesInput]
   }
+  @scala.inline
+  implicit class ListActionTypesInputOps[Self <: ListActionTypesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionOwnerFilter(value: ActionOwner): Self = this.set("actionOwnerFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionOwnerFilter: Self = this.set("actionOwnerFilter", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

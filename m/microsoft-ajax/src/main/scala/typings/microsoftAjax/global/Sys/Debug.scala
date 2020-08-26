@@ -37,6 +37,7 @@ object Debug extends js.Object {
     *      (Optional) true to indicate that the name of the function that is calling assert should be displayed in the message. The default is false.
     */
   def assert(condition: Boolean): Unit = js.native
+  def assert(condition: Boolean, message: js.UndefOr[scala.Nothing], displayCaller: Boolean): Unit = js.native
   def assert(condition: Boolean, message: String): Unit = js.native
   def assert(condition: Boolean, message: String, displayCaller: Boolean): Unit = js.native
   /**

@@ -19,5 +19,20 @@ object ResourceShareAccepterArgs {
     val __obj = js.Dynamic.literal(shareArn = shareArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceShareAccepterArgs]
   }
+  @scala.inline
+  implicit class ResourceShareAccepterArgsOps[Self <: ResourceShareAccepterArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShareArn(value: Input[String]): Self = this.set("shareArn", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -30,18 +30,40 @@ trait SchemaQuerySource extends js.Object {
 
 object SchemaQuerySource {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    operators: js.Array[SchemaQueryOperator] = null,
-    shortName: String = null,
-    source: SchemaSource = null
-  ): SchemaQuerySource = {
+  def apply(): SchemaQuerySource = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuerySource]
   }
+  @scala.inline
+  implicit class SchemaQuerySourceOps[Self <: SchemaQuerySource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setOperatorsVarargs(value: SchemaQueryOperator*): Self = this.set("operators", js.Array(value :_*))
+    @scala.inline
+    def setOperators(value: js.Array[SchemaQueryOperator]): Self = this.set("operators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperators: Self = this.set("operators", js.undefined)
+    @scala.inline
+    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortName: Self = this.set("shortName", js.undefined)
+    @scala.inline
+    def setSource(value: SchemaSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+  }
+  
 }
 

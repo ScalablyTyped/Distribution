@@ -26,17 +26,36 @@ trait RegisterCertificateRequest extends js.Object {
 
 object RegisterCertificateRequest {
   @scala.inline
-  def apply(
-    certificatePem: CertificatePem,
-    caCertificatePem: CertificatePem = null,
-    setAsActive: js.UndefOr[SetAsActiveFlag] = js.undefined,
-    status: CertificateStatus = null
-  ): RegisterCertificateRequest = {
+  def apply(certificatePem: CertificatePem): RegisterCertificateRequest = {
     val __obj = js.Dynamic.literal(certificatePem = certificatePem.asInstanceOf[js.Any])
-    if (caCertificatePem != null) __obj.updateDynamic("caCertificatePem")(caCertificatePem.asInstanceOf[js.Any])
-    if (!js.isUndefined(setAsActive)) __obj.updateDynamic("setAsActive")(setAsActive.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterCertificateRequest]
   }
+  @scala.inline
+  implicit class RegisterCertificateRequestOps[Self <: RegisterCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificatePem(value: CertificatePem): Self = this.set("certificatePem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCaCertificatePem(value: CertificatePem): Self = this.set("caCertificatePem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaCertificatePem: Self = this.set("caCertificatePem", js.undefined)
+    @scala.inline
+    def setSetAsActive(value: SetAsActiveFlag): Self = this.set("setAsActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetAsActive: Self = this.set("setAsActive", js.undefined)
+    @scala.inline
+    def setStatus(value: CertificateStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

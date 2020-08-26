@@ -223,6 +223,7 @@ trait Grid[T /* <: SlickData */] extends js.Object {
     **/
   def getOptions(): GridOptions[_] = js.native
   def getRenderedRange(): Viewport = js.native
+  def getRenderedRange(viewportTop: js.UndefOr[scala.Nothing], viewportLeft: Double): Viewport = js.native
   def getRenderedRange(viewportTop: Double): Viewport = js.native
   def getRenderedRange(viewportTop: Double, viewportLeft: Double): Viewport = js.native
   /**
@@ -246,6 +247,7 @@ trait Grid[T /* <: SlickData */] extends js.Object {
     **/
   def getTopPanel(): HTMLElement = js.native
   def getViewport(): Viewport = js.native
+  def getViewport(viewportTop: js.UndefOr[scala.Nothing], viewportLeft: Double): Viewport = js.native
   def getViewport(viewportTop: Double): Viewport = js.native
   def getViewport(viewportTop: Double, viewportLeft: Double): Viewport = js.native
   /**
@@ -393,6 +395,7 @@ trait Grid[T /* <: SlickData */] extends js.Object {
     * @param toolTip New column tooltip.
     **/
   def updateColumnHeader(columnId: String): Unit = js.native
+  def updateColumnHeader(columnId: String, title: js.UndefOr[scala.Nothing], toolTip: String): Unit = js.native
   def updateColumnHeader(columnId: String, title: String): Unit = js.native
   def updateColumnHeader(columnId: String, title: String, toolTip: String): Unit = js.native
   def updateRow(row: Double): Unit = js.native

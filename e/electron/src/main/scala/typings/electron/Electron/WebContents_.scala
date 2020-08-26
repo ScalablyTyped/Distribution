@@ -45,8 +45,8 @@ import typings.electron.electronStrings.`remote-get-builtin`
 import typings.electron.electronStrings.`remote-get-current-web-contents`
 import typings.electron.electronStrings.`remote-get-current-window`
 import typings.electron.electronStrings.`remote-get-global`
-import typings.electron.electronStrings.`remote-get-guest-web-contents`
 import typings.electron.electronStrings.`remote-require`
+import typings.electron.electronStrings.`render-process-gone`
 import typings.electron.electronStrings.`save-to-disk`
 import typings.electron.electronStrings.`select-bluetooth-device`
 import typings.electron.electronStrings.`select-client-certificate`
@@ -79,7 +79,7 @@ import typings.electron.electronStrings.unresponsive
 import typings.electron.electronStrings.webview
 import typings.electron.electronStrings.window
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import typings.std.Record
 import scala.scalajs.js
@@ -364,14 +364,14 @@ trait WebContents_ extends EventEmitter {
     listener: js.Function2[/* event */ IpcMainEvent, /* globalName */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_remotegetguestwebcontents(
-    event: `remote-get-guest-web-contents`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* guestWebContents */ this.type, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
   def addListener_remoterequire(
     event: `remote-require`,
     listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_renderprocessgone(
+    event: `render-process-gone`,
+    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_responsive(event: responsive, listener: js.Function): this.type = js.native
@@ -636,6 +636,7 @@ trait WebContents_ extends EventEmitter {
   This also affects the Page Visibility API.
     */
   def incrementCapturerCount(): Unit = js.native
+  def incrementCapturerCount(size: js.UndefOr[scala.Nothing], stayHidden: Boolean): Unit = js.native
   def incrementCapturerCount(size: Size): Unit = js.native
   def incrementCapturerCount(size: Size, stayHidden: Boolean): Unit = js.native
   /**
@@ -836,6 +837,13 @@ trait WebContents_ extends EventEmitter {
   ): this.type = js.native
   /**
     * Emitted when the renderer process crashes or is killed.
+    *
+    * **Deprecated:** This event is superceded by the `render-process-gone` event
+    * which contains more information about why the render process dissapeared. It
+    * isn't always because it crashed.  The `killed` boolean can be replaced by
+    * checking `reason === 'killed'` when you switch to that event.
+    *
+    * @deprecated
     */
   @JSName("on")
   def on_crashed(event: crashed, listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
@@ -1217,16 +1225,6 @@ trait WebContents_ extends EventEmitter {
     listener: js.Function2[/* event */ IpcMainEvent, /* globalName */ String, Unit]
   ): this.type = js.native
   /**
-    * Emitted when `<webview>.getWebContents()` is called in the renderer process.
-    * Calling `event.preventDefault()` will prevent the object from being returned.
-    * Custom value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remotegetguestwebcontents(
-    event: `remote-get-guest-web-contents`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* guestWebContents */ this.type, Unit]
-  ): this.type = js.native
-  /**
     * Emitted when `remote.require()` is called in the renderer process. Calling
     * `event.preventDefault()` will prevent the module from being returned. Custom
     * value can be returned by setting `event.returnValue`.
@@ -1235,6 +1233,15 @@ trait WebContents_ extends EventEmitter {
   def on_remoterequire(
     event: `remote-require`,
     listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the renderer process unexpectedly dissapears.  This is normally
+    * because it was crashed or killed.
+    */
+  @JSName("on")
+  def on_renderprocessgone(
+    event: `render-process-gone`,
+    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
   ): this.type = js.native
   /**
     * Emitted when the unresponsive web page becomes responsive again.
@@ -1617,14 +1624,14 @@ trait WebContents_ extends EventEmitter {
     listener: js.Function2[/* event */ IpcMainEvent, /* globalName */ String, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_remotegetguestwebcontents(
-    event: `remote-get-guest-web-contents`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* guestWebContents */ this.type, Unit]
-  ): this.type = js.native
-  @JSName("once")
   def once_remoterequire(
     event: `remote-require`,
     listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_renderprocessgone(
+    event: `render-process-gone`,
+    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_responsive(event: responsive, listener: js.Function): this.type = js.native
@@ -1697,6 +1704,22 @@ trait WebContents_ extends EventEmitter {
     */
   def pasteAndMatchStyle(): Unit = js.native
   /**
+    * Send a message to the renderer process, optionally transferring ownership of
+    * zero or more [`MessagePortMain`][] objects.
+    *
+    * The transferred `MessagePortMain` objects will be available in the renderer
+    * process by accessing the `ports` property of the emitted event. When they arrive
+    * in the renderer, they will be native DOM `MessagePort` objects.
+  For example:
+    */
+  def postMessage(channel: String, message: js.Any): Unit = js.native
+  def postMessage(channel: String, message: js.Any, transfer: js.Array[MessagePortMain]): Unit = js.native
+  /**
+    * When a custom `pageSize` is passed, Chromium attempts to validate platform
+    * specific minumum values for `width_microns` and `height_microns`. Width and
+    * height must both be minimum 353 microns but may be higher on some operating
+    * systems.
+    *
     * Prints window's web page. When `silent` is set to `true`, Electron will pick the
     * system's default printer if `deviceName` is empty and the default settings for
     * printing.
@@ -1706,6 +1729,10 @@ trait WebContents_ extends EventEmitter {
   Example usage:
     */
   def print(): Unit = js.native
+  def print(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* success */ Boolean, /* failureReason */ String, Unit]
+  ): Unit = js.native
   def print(options: WebContentsPrintOptions): Unit = js.native
   def print(
     options: WebContentsPrintOptions,
@@ -2011,14 +2038,14 @@ trait WebContents_ extends EventEmitter {
     listener: js.Function2[/* event */ IpcMainEvent, /* globalName */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_remotegetguestwebcontents(
-    event: `remote-get-guest-web-contents`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* guestWebContents */ this.type, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
   def removeListener_remoterequire(
     event: `remote-require`,
     listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_renderprocessgone(
+    event: `render-process-gone`,
+    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_responsive(event: responsive, listener: js.Function): this.type = js.native
@@ -2182,14 +2209,6 @@ trait WebContents_ extends EventEmitter {
     * @experimental
     */
   def setIgnoreMenuShortcuts(ignore: Boolean): Unit = js.native
-  /**
-    * Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
-    * 
-  **Deprecated:** This API is no longer supported by Chromium.
-    *
-    * @deprecated
-    */
-  def setLayoutZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): js.Promise[Unit] = js.native
   /**
     * Overrides the user agent for this web page.
     */

@@ -18,14 +18,30 @@ trait JobExecutionSettings extends js.Object {
 
 object JobExecutionSettings {
   @scala.inline
-  def apply(
-    AllowDeferredExecution: js.UndefOr[Boolean] = js.undefined,
-    DataAccessRoleArn: DataAccessRoleArn = null
-  ): JobExecutionSettings = {
+  def apply(): JobExecutionSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowDeferredExecution)) __obj.updateDynamic("AllowDeferredExecution")(AllowDeferredExecution.get.asInstanceOf[js.Any])
-    if (DataAccessRoleArn != null) __obj.updateDynamic("DataAccessRoleArn")(DataAccessRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionSettings]
   }
+  @scala.inline
+  implicit class JobExecutionSettingsOps[Self <: JobExecutionSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowDeferredExecution(value: Boolean): Self = this.set("AllowDeferredExecution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDeferredExecution: Self = this.set("AllowDeferredExecution", js.undefined)
+    @scala.inline
+    def setDataAccessRoleArn(value: DataAccessRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataAccessRoleArn: Self = this.set("DataAccessRoleArn", js.undefined)
+  }
+  
 }
 

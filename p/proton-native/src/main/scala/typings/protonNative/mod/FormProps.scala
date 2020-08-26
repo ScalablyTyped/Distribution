@@ -1,52 +1,57 @@
 package typings.protonNative.mod
 
-import typings.protonNative.anon.H
-import typings.protonNative.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormProps
   extends GridChildrenProps
      with Stretchy {
   /**
     * Whether the Form is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * Whether there is padding between the components
     */
-  var padded: js.UndefOr[Boolean] = js.undefined
+  var padded: js.UndefOr[Boolean] = js.native
   /**
     * Whether the Form can be seen.
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object FormProps {
   @scala.inline
-  def apply(
-    align: H = null,
-    column: js.UndefOr[Double] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    expand: H = null,
-    padded: js.UndefOr[Boolean] = js.undefined,
-    row: js.UndefOr[Double] = js.undefined,
-    span: X = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): FormProps = {
+  def apply(): FormProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(padded)) __obj.updateDynamic("padded")(padded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormProps]
   }
+  @scala.inline
+  implicit class FormPropsOps[Self <: FormProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setPadded(value: Boolean): Self = this.set("padded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadded: Self = this.set("padded", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

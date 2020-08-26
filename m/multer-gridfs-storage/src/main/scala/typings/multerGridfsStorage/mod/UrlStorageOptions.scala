@@ -1,30 +1,44 @@
 package typings.multerGridfsStorage.mod
 
-import typings.multerGridfsStorage.mod.global.Express.Multer.File
-import typings.std.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UrlStorageOptions extends MulterGfsOptions {
-  var cache: js.UndefOr[Boolean | String] = js.undefined
-  var options: js.UndefOr[js.Any] = js.undefined
-  var url: String
+  var cache: js.UndefOr[Boolean | String] = js.native
+  var options: js.UndefOr[js.Any] = js.native
+  var url: String = js.native
 }
 
 object UrlStorageOptions {
   @scala.inline
-  def apply(
-    url: String,
-    cache: Boolean | String = null,
-    file: (/* req */ Request, /* file */ File) => _ = null,
-    options: js.Any = null
-  ): UrlStorageOptions = {
+  def apply(url: String): UrlStorageOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(js.Any.fromFunction2(file))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlStorageOptions]
   }
+  @scala.inline
+  implicit class UrlStorageOptionsOps[Self <: UrlStorageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCache(value: Boolean | String): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+  }
+  
 }
 

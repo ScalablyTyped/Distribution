@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.removeLastWhere")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.removeLastWhere")
 @js.native
 object removeLastWhere extends js.Object {
   /**
@@ -47,6 +47,12 @@ object removeLastWhere extends js.Object {
     * ```
     */
   def apply[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Index[T] = js.native
+  def apply[T](
+    array: js.Array[T],
+    fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+    start: js.UndefOr[scala.Nothing],
+    stop: Double
+  ): Index[T] = js.native
   def apply[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Index[T] = js.native
   def apply[T](
     array: js.Array[T],

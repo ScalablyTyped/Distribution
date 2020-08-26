@@ -12,7 +12,7 @@ Return true if a file path contains the given path.
 | Keywords           | contains, directory, dirname, exec, ext, extname, file, filepath, fp, has, match, matches, path, regex, test |
 | # releases         | 0 |
 | # dependents       | 36 |
-| # downloads        | 185452883 |
+| # downloads        | 189334921 |
 | # stars            | 1 |
 
 ## Links

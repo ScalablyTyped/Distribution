@@ -63,6 +63,12 @@ trait JQuery extends js.Object {
     handler: js.Function1[/* eventobject */ BootstrapSwitchEventObject, _]
   ): JQuery = js.native
   @JSName("off")
+  def off_initbootstrapSwitch(
+    events: initDotbootstrapSwitch,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventobject */ BootstrapSwitchEventObject, _]
+  ): JQuery = js.native
+  @JSName("off")
   def off_initbootstrapSwitch(events: initDotbootstrapSwitch, selector: String): JQuery = js.native
   @JSName("off")
   def off_initbootstrapSwitch(
@@ -75,6 +81,12 @@ trait JQuery extends js.Object {
   @JSName("off")
   def off_switchChangebootstrapSwitch(
     events: switchChangeDotbootstrapSwitch,
+    handler: js.Function1[/* eventobject */ BootstrapSwitchChangeEventObject, _]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_switchChangebootstrapSwitch(
+    events: switchChangeDotbootstrapSwitch,
+    selector: js.UndefOr[scala.Nothing],
     handler: js.Function1[/* eventobject */ BootstrapSwitchChangeEventObject, _]
   ): JQuery = js.native
   @JSName("off")
@@ -93,6 +105,12 @@ trait JQuery extends js.Object {
     handler: js.Function1[/* eventobject */ BootstrapSwitchEventObject, _]
   ): JQuery = js.native
   @JSName("on")
+  def on_initbootstrapSwitch(
+    events: initDotbootstrapSwitch,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventobject */ BootstrapSwitchEventObject, _]
+  ): JQuery = js.native
+  @JSName("on")
   def on_initbootstrapSwitch(events: initDotbootstrapSwitch, selector: String): JQuery = js.native
   @JSName("on")
   def on_initbootstrapSwitch(
@@ -105,6 +123,12 @@ trait JQuery extends js.Object {
   @JSName("on")
   def on_switchChangebootstrapSwitch(
     events: switchChangeDotbootstrapSwitch,
+    handler: js.Function1[/* eventobject */ BootstrapSwitchChangeEventObject, _]
+  ): JQuery = js.native
+  @JSName("on")
+  def on_switchChangebootstrapSwitch(
+    events: switchChangeDotbootstrapSwitch,
+    selector: js.UndefOr[scala.Nothing],
     handler: js.Function1[/* eventobject */ BootstrapSwitchChangeEventObject, _]
   ): JQuery = js.native
   @JSName("on")

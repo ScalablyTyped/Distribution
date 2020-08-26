@@ -50,29 +50,62 @@ trait ModifyClientVpnEndpointRequest extends js.Object {
 
 object ModifyClientVpnEndpointRequest {
   @scala.inline
-  def apply(
-    ClientVpnEndpointId: ClientVpnEndpointId,
-    ConnectionLogOptions: ConnectionLogOptions = null,
-    Description: String = null,
-    DnsServers: DnsServersOptionsModifyStructure = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    SecurityGroupIds: ClientVpnSecurityGroupIdSet = null,
-    ServerCertificateArn: String = null,
-    SplitTunnel: js.UndefOr[Boolean] = js.undefined,
-    VpcId: VpcId = null,
-    VpnPort: js.UndefOr[Integer] = js.undefined
-  ): ModifyClientVpnEndpointRequest = {
+  def apply(ClientVpnEndpointId: ClientVpnEndpointId): ModifyClientVpnEndpointRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any])
-    if (ConnectionLogOptions != null) __obj.updateDynamic("ConnectionLogOptions")(ConnectionLogOptions.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DnsServers != null) __obj.updateDynamic("DnsServers")(DnsServers.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (ServerCertificateArn != null) __obj.updateDynamic("ServerCertificateArn")(ServerCertificateArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel.get.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
-    if (!js.isUndefined(VpnPort)) __obj.updateDynamic("VpnPort")(VpnPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClientVpnEndpointRequest]
   }
+  @scala.inline
+  implicit class ModifyClientVpnEndpointRequestOps[Self <: ModifyClientVpnEndpointRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionLogOptions(value: ConnectionLogOptions): Self = this.set("ConnectionLogOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionLogOptions: Self = this.set("ConnectionLogOptions", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDnsServers(value: DnsServersOptionsModifyStructure): Self = this.set("DnsServers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsServers: Self = this.set("DnsServers", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: ClientVpnSecurityGroupIdSet): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setServerCertificateArn(value: String): Self = this.set("ServerCertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerCertificateArn: Self = this.set("ServerCertificateArn", js.undefined)
+    @scala.inline
+    def setSplitTunnel(value: Boolean): Self = this.set("SplitTunnel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitTunnel: Self = this.set("SplitTunnel", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    @scala.inline
+    def setVpnPort(value: Integer): Self = this.set("VpnPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnPort: Self = this.set("VpnPort", js.undefined)
+  }
+  
 }
 

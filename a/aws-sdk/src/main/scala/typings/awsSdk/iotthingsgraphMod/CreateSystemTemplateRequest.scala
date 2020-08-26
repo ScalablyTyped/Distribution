@@ -18,10 +18,28 @@ trait CreateSystemTemplateRequest extends js.Object {
 
 object CreateSystemTemplateRequest {
   @scala.inline
-  def apply(definition: DefinitionDocument, compatibleNamespaceVersion: js.UndefOr[Version] = js.undefined): CreateSystemTemplateRequest = {
+  def apply(definition: DefinitionDocument): CreateSystemTemplateRequest = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any])
-    if (!js.isUndefined(compatibleNamespaceVersion)) __obj.updateDynamic("compatibleNamespaceVersion")(compatibleNamespaceVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSystemTemplateRequest]
   }
+  @scala.inline
+  implicit class CreateSystemTemplateRequestOps[Self <: CreateSystemTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefinition(value: DefinitionDocument): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompatibleNamespaceVersion(value: Version): Self = this.set("compatibleNamespaceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibleNamespaceVersion: Self = this.set("compatibleNamespaceVersion", js.undefined)
+  }
+  
 }
 

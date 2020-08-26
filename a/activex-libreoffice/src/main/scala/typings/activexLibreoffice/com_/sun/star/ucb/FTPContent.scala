@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.ucb.FTPContentProvider
   * @since OOo 1.1.2
   */
+@js.native
 trait FTPContent
   extends XComponent
      with XContent

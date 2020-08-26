@@ -42,26 +42,56 @@ trait LicenseOperationFailure extends js.Object {
 
 object LicenseOperationFailure {
   @scala.inline
-  def apply(
-    ErrorMessage: String = null,
-    FailureTime: DateTime = null,
-    MetadataList: MetadataList = null,
-    OperationName: String = null,
-    OperationRequestedBy: String = null,
-    ResourceArn: String = null,
-    ResourceOwnerId: String = null,
-    ResourceType: ResourceType = null
-  ): LicenseOperationFailure = {
+  def apply(): LicenseOperationFailure = {
     val __obj = js.Dynamic.literal()
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (FailureTime != null) __obj.updateDynamic("FailureTime")(FailureTime.asInstanceOf[js.Any])
-    if (MetadataList != null) __obj.updateDynamic("MetadataList")(MetadataList.asInstanceOf[js.Any])
-    if (OperationName != null) __obj.updateDynamic("OperationName")(OperationName.asInstanceOf[js.Any])
-    if (OperationRequestedBy != null) __obj.updateDynamic("OperationRequestedBy")(OperationRequestedBy.asInstanceOf[js.Any])
-    if (ResourceArn != null) __obj.updateDynamic("ResourceArn")(ResourceArn.asInstanceOf[js.Any])
-    if (ResourceOwnerId != null) __obj.updateDynamic("ResourceOwnerId")(ResourceOwnerId.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicenseOperationFailure]
   }
+  @scala.inline
+  implicit class LicenseOperationFailureOps[Self <: LicenseOperationFailure] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setFailureTime(value: DateTime): Self = this.set("FailureTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureTime: Self = this.set("FailureTime", js.undefined)
+    @scala.inline
+    def setMetadataListVarargs(value: Metadata*): Self = this.set("MetadataList", js.Array(value :_*))
+    @scala.inline
+    def setMetadataList(value: MetadataList): Self = this.set("MetadataList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataList: Self = this.set("MetadataList", js.undefined)
+    @scala.inline
+    def setOperationName(value: String): Self = this.set("OperationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationName: Self = this.set("OperationName", js.undefined)
+    @scala.inline
+    def setOperationRequestedBy(value: String): Self = this.set("OperationRequestedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationRequestedBy: Self = this.set("OperationRequestedBy", js.undefined)
+    @scala.inline
+    def setResourceArn(value: String): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    @scala.inline
+    def setResourceOwnerId(value: String): Self = this.set("ResourceOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceOwnerId: Self = this.set("ResourceOwnerId", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

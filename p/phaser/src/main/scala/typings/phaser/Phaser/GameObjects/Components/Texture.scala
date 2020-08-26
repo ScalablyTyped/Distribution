@@ -34,9 +34,11 @@ trait Texture extends js.Object {
     * @param updateOrigin Should this call adjust the origin of the Game Object? Default true.
     */
   def setFrame(frame: String): this.type = js.native
+  def setFrame(frame: String, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
   def setFrame(frame: String, updateSize: Boolean): this.type = js.native
   def setFrame(frame: String, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
   def setFrame(frame: integer): this.type = js.native
+  def setFrame(frame: integer, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
   def setFrame(frame: integer, updateSize: Boolean): this.type = js.native
   def setFrame(frame: integer, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
   /**

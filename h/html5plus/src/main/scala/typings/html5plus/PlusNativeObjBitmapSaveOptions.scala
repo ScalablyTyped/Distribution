@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
+@js.native
 trait PlusNativeObjBitmapSaveOptions extends js.Object {
   /**
     * 指定裁剪区域保存图片
@@ -18,7 +19,7 @@ trait PlusNativeObjBitmapSaveOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var clip: js.UndefOr[PlusNativeObjRect] = js.undefined
+  var clip: js.UndefOr[PlusNativeObjRect] = js.native
   /**
     * 保存图片的格式
     * 支持"jpg"、"png"，如果未指定则默认使用指定的保存路径后缀对应的文件格式，如果后缀文件格式无效则使用jpg格式。
@@ -27,7 +28,7 @@ trait PlusNativeObjBitmapSaveOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var format: js.UndefOr[jpg | png] = js.undefined
+  var format: js.UndefOr[jpg | png] = js.native
   /**
     * 覆盖保存图片文件
     * 仅在保存的图片路径文件存在时有效：
@@ -37,7 +38,7 @@ trait PlusNativeObjBitmapSaveOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var overwrite: js.UndefOr[Boolean] = js.undefined
+  var overwrite: js.UndefOr[Boolean] = js.native
   /**
     * 保存图片的质量
     * 取值范围为1-100，1表示使用最低的图片质量（保存后的图片文件最小）、100表示使用最高的图片质量（保存后的图片文件最大）；
@@ -45,23 +46,43 @@ trait PlusNativeObjBitmapSaveOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var quality: js.UndefOr[Double] = js.undefined
+  var quality: js.UndefOr[Double] = js.native
 }
 
 object PlusNativeObjBitmapSaveOptions {
   @scala.inline
-  def apply(
-    clip: PlusNativeObjRect = null,
-    format: jpg | png = null,
-    overwrite: js.UndefOr[Boolean] = js.undefined,
-    quality: js.UndefOr[Double] = js.undefined
-  ): PlusNativeObjBitmapSaveOptions = {
+  def apply(): PlusNativeObjBitmapSaveOptions = {
     val __obj = js.Dynamic.literal()
-    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjBitmapSaveOptions]
   }
+  @scala.inline
+  implicit class PlusNativeObjBitmapSaveOptionsOps[Self <: PlusNativeObjBitmapSaveOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClip(value: PlusNativeObjRect): Self = this.set("clip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClip: Self = this.set("clip", js.undefined)
+    @scala.inline
+    def setFormat(value: jpg | png): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    @scala.inline
+    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("quality", js.undefined)
+  }
+  
 }
 

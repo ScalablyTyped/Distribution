@@ -38,24 +38,58 @@ trait DescribeSnapshotsRequest extends js.Object {
 
 object DescribeSnapshotsRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
-    NextToken: String = null,
-    OwnerIds: OwnerStringList = null,
-    RestorableByUserIds: RestorableByStringList = null,
-    SnapshotIds: SnapshotIdStringList = null
-  ): DescribeSnapshotsRequest = {
+  def apply(): DescribeSnapshotsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (OwnerIds != null) __obj.updateDynamic("OwnerIds")(OwnerIds.asInstanceOf[js.Any])
-    if (RestorableByUserIds != null) __obj.updateDynamic("RestorableByUserIds")(RestorableByUserIds.asInstanceOf[js.Any])
-    if (SnapshotIds != null) __obj.updateDynamic("SnapshotIds")(SnapshotIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSnapshotsRequest]
   }
+  @scala.inline
+  implicit class DescribeSnapshotsRequestOps[Self <: DescribeSnapshotsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Integer): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setOwnerIdsVarargs(value: String*): Self = this.set("OwnerIds", js.Array(value :_*))
+    @scala.inline
+    def setOwnerIds(value: OwnerStringList): Self = this.set("OwnerIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerIds: Self = this.set("OwnerIds", js.undefined)
+    @scala.inline
+    def setRestorableByUserIdsVarargs(value: String*): Self = this.set("RestorableByUserIds", js.Array(value :_*))
+    @scala.inline
+    def setRestorableByUserIds(value: RestorableByStringList): Self = this.set("RestorableByUserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestorableByUserIds: Self = this.set("RestorableByUserIds", js.undefined)
+    @scala.inline
+    def setSnapshotIdsVarargs(value: SnapshotId*): Self = this.set("SnapshotIds", js.Array(value :_*))
+    @scala.inline
+    def setSnapshotIds(value: SnapshotIdStringList): Self = this.set("SnapshotIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIds: Self = this.set("SnapshotIds", js.undefined)
+  }
+  
 }
 

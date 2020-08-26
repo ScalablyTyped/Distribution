@@ -12,7 +12,7 @@ Easily format the time from node.js `process.hrtime`. Works with timescales rang
 | Keywords           | convert, date, format, formatting, hour, hrtime, micro, milli, minute, nano, nanosecond, pretty, second, time, week |
 | # releases         | 3 |
 | # dependents       | 39 |
-| # downloads        | 14941248 |
+| # downloads        | 15404215 |
 | # stars            | 4 |
 
 ## Links

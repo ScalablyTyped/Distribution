@@ -5,40 +5,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  android  :boolean | favicons.favicons.IconOptions,   appleIcon  :boolean | favicons.favicons.IconOptions,   appleStartup  :boolean | favicons.favicons.IconOptions,   coast  :boolean | favicons.favicons.IconOptions,   favicons  :boolean | favicons.favicons.IconOptions,   firefox  :boolean | favicons.favicons.IconOptions,   windows  :boolean | favicons.favicons.IconOptions,   yandex  :boolean | favicons.favicons.IconOptions}> */
+/* Inlined std.Partial<{  android :boolean | favicons.favicons.IconOptions,   appleIcon :boolean | favicons.favicons.IconOptions,   appleStartup :boolean | favicons.favicons.IconOptions,   coast :boolean | favicons.favicons.IconOptions,   favicons :boolean | favicons.favicons.IconOptions,   firefox :boolean | favicons.favicons.IconOptions,   windows :boolean | favicons.favicons.IconOptions,   yandex :boolean | favicons.favicons.IconOptions}> */
+@js.native
 trait PartialandroidbooleanIcon extends js.Object {
-  var android: js.UndefOr[Boolean | IconOptions] = js.undefined
-  var appleIcon: js.UndefOr[Boolean | IconOptions] = js.undefined
-  var appleStartup: js.UndefOr[Boolean | IconOptions] = js.undefined
-  var coast: js.UndefOr[Boolean | IconOptions] = js.undefined
-  var favicons: js.UndefOr[Boolean | IconOptions] = js.undefined
-  var firefox: js.UndefOr[Boolean | IconOptions] = js.undefined
-  var windows: js.UndefOr[Boolean | IconOptions] = js.undefined
-  var yandex: js.UndefOr[Boolean | IconOptions] = js.undefined
+  var android: js.UndefOr[Boolean | IconOptions] = js.native
+  var appleIcon: js.UndefOr[Boolean | IconOptions] = js.native
+  var appleStartup: js.UndefOr[Boolean | IconOptions] = js.native
+  var coast: js.UndefOr[Boolean | IconOptions] = js.native
+  var favicons: js.UndefOr[Boolean | IconOptions] = js.native
+  var firefox: js.UndefOr[Boolean | IconOptions] = js.native
+  var windows: js.UndefOr[Boolean | IconOptions] = js.native
+  var yandex: js.UndefOr[Boolean | IconOptions] = js.native
 }
 
 object PartialandroidbooleanIcon {
   @scala.inline
-  def apply(
-    android: Boolean | IconOptions = null,
-    appleIcon: Boolean | IconOptions = null,
-    appleStartup: Boolean | IconOptions = null,
-    coast: Boolean | IconOptions = null,
-    favicons: Boolean | IconOptions = null,
-    firefox: Boolean | IconOptions = null,
-    windows: Boolean | IconOptions = null,
-    yandex: Boolean | IconOptions = null
-  ): PartialandroidbooleanIcon = {
+  def apply(): PartialandroidbooleanIcon = {
     val __obj = js.Dynamic.literal()
-    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
-    if (appleIcon != null) __obj.updateDynamic("appleIcon")(appleIcon.asInstanceOf[js.Any])
-    if (appleStartup != null) __obj.updateDynamic("appleStartup")(appleStartup.asInstanceOf[js.Any])
-    if (coast != null) __obj.updateDynamic("coast")(coast.asInstanceOf[js.Any])
-    if (favicons != null) __obj.updateDynamic("favicons")(favicons.asInstanceOf[js.Any])
-    if (firefox != null) __obj.updateDynamic("firefox")(firefox.asInstanceOf[js.Any])
-    if (windows != null) __obj.updateDynamic("windows")(windows.asInstanceOf[js.Any])
-    if (yandex != null) __obj.updateDynamic("yandex")(yandex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialandroidbooleanIcon]
   }
+  @scala.inline
+  implicit class PartialandroidbooleanIconOps[Self <: PartialandroidbooleanIcon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroid(value: Boolean | IconOptions): Self = this.set("android", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroid: Self = this.set("android", js.undefined)
+    @scala.inline
+    def setAppleIcon(value: Boolean | IconOptions): Self = this.set("appleIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppleIcon: Self = this.set("appleIcon", js.undefined)
+    @scala.inline
+    def setAppleStartup(value: Boolean | IconOptions): Self = this.set("appleStartup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppleStartup: Self = this.set("appleStartup", js.undefined)
+    @scala.inline
+    def setCoast(value: Boolean | IconOptions): Self = this.set("coast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoast: Self = this.set("coast", js.undefined)
+    @scala.inline
+    def setFavicons(value: Boolean | IconOptions): Self = this.set("favicons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFavicons: Self = this.set("favicons", js.undefined)
+    @scala.inline
+    def setFirefox(value: Boolean | IconOptions): Self = this.set("firefox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirefox: Self = this.set("firefox", js.undefined)
+    @scala.inline
+    def setWindows(value: Boolean | IconOptions): Self = this.set("windows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindows: Self = this.set("windows", js.undefined)
+    @scala.inline
+    def setYandex(value: Boolean | IconOptions): Self = this.set("yandex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYandex: Self = this.set("yandex", js.undefined)
+  }
+  
 }
 

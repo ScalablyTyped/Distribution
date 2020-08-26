@@ -5,42 +5,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DotenvSafeOptions extends DotenvConfigOptions {
   /**
     * Enabling this option will not throw an error after loading.
     * @default false
     */
-  var allowEmptyValues: js.UndefOr[Boolean] = js.undefined
+  var allowEmptyValues: js.UndefOr[Boolean] = js.native
   /**
     * Path to example environment file. (Option 1)
     * @default ".env.example"
     */
-  var example: js.UndefOr[String] = js.undefined
+  var example: js.UndefOr[String] = js.native
   /**
     * Path to example environment file. (Option 2 -- example takes precedence)
     * @default ".env.example"
     */
-  var sample: js.UndefOr[String] = js.undefined
+  var sample: js.UndefOr[String] = js.native
 }
 
 object DotenvSafeOptions {
   @scala.inline
-  def apply(
-    allowEmptyValues: js.UndefOr[Boolean] = js.undefined,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    encoding: String = null,
-    example: String = null,
-    path: String = null,
-    sample: String = null
-  ): DotenvSafeOptions = {
+  def apply(): DotenvSafeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmptyValues)) __obj.updateDynamic("allowEmptyValues")(allowEmptyValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (sample != null) __obj.updateDynamic("sample")(sample.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotenvSafeOptions]
   }
+  @scala.inline
+  implicit class DotenvSafeOptionsOps[Self <: DotenvSafeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowEmptyValues(value: Boolean): Self = this.set("allowEmptyValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEmptyValues: Self = this.set("allowEmptyValues", js.undefined)
+    @scala.inline
+    def setExample(value: String): Self = this.set("example", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExample: Self = this.set("example", js.undefined)
+    @scala.inline
+    def setSample(value: String): Self = this.set("sample", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSample: Self = this.set("sample", js.undefined)
+  }
+  
 }
 

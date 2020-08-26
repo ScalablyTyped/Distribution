@@ -26,18 +26,38 @@ trait FailedCreateSimulationJobRequest extends js.Object {
 
 object FailedCreateSimulationJobRequest {
   @scala.inline
-  def apply(
-    failedAt: FailedAt = null,
-    failureCode: SimulationJobErrorCode = null,
-    failureReason: GenericString = null,
-    request: SimulationJobRequest = null
-  ): FailedCreateSimulationJobRequest = {
+  def apply(): FailedCreateSimulationJobRequest = {
     val __obj = js.Dynamic.literal()
-    if (failedAt != null) __obj.updateDynamic("failedAt")(failedAt.asInstanceOf[js.Any])
-    if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedCreateSimulationJobRequest]
   }
+  @scala.inline
+  implicit class FailedCreateSimulationJobRequestOps[Self <: FailedCreateSimulationJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailedAt(value: FailedAt): Self = this.set("failedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedAt: Self = this.set("failedAt", js.undefined)
+    @scala.inline
+    def setFailureCode(value: SimulationJobErrorCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    @scala.inline
+    def setFailureReason(value: GenericString): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setRequest(value: SimulationJobRequest): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+  }
+  
 }
 

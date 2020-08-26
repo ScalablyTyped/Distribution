@@ -18,10 +18,28 @@ trait IdentityVerificationAttributes extends js.Object {
 
 object IdentityVerificationAttributes {
   @scala.inline
-  def apply(VerificationStatus: VerificationStatus, VerificationToken: VerificationToken = null): IdentityVerificationAttributes = {
+  def apply(VerificationStatus: VerificationStatus): IdentityVerificationAttributes = {
     val __obj = js.Dynamic.literal(VerificationStatus = VerificationStatus.asInstanceOf[js.Any])
-    if (VerificationToken != null) __obj.updateDynamic("VerificationToken")(VerificationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityVerificationAttributes]
   }
+  @scala.inline
+  implicit class IdentityVerificationAttributesOps[Self <: IdentityVerificationAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVerificationStatus(value: VerificationStatus): Self = this.set("VerificationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVerificationToken(value: VerificationToken): Self = this.set("VerificationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationToken: Self = this.set("VerificationToken", js.undefined)
+  }
+  
 }
 

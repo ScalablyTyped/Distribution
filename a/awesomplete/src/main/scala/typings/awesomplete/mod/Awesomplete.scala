@@ -24,6 +24,7 @@ trait Awesomplete extends js.Object {
   def open(): Unit = js.native
   def previous(): Unit = js.native
   def select(): Unit = js.native
+  def select(selected: js.UndefOr[scala.Nothing], originalTarget: HTMLElement): Unit = js.native
   def select(selected: HTMLElement): Unit = js.native
   def select(selected: HTMLElement, originalTarget: HTMLElement): Unit = js.native
 }

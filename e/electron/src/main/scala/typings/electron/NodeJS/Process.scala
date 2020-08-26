@@ -7,7 +7,7 @@ import typings.electron.Electron.IOCounters
 import typings.electron.Electron.ProcessMemoryInfo
 import typings.electron.Electron.SystemMemoryInfo
 import typings.electron.electronStrings.loaded
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +30,6 @@ trait Process extends EventEmitter {
     *
     */
   val electron: String = js.native
-  /**
-    * A `Boolean` that controls whether or not deprecation warnings are printed to
-    * `stderr` when formerly callback-based APIs converted to Promises are invoked
-    * using callbacks. Setting this to `true` will enable deprecation warnings.
-    */
-  var enablePromiseAPIs: Boolean = js.native
   /**
     * A `Boolean`, `true` when the current renderer context is the "main" renderer
     * frame. If you want the ID of the current frame you should use

@@ -13,7 +13,7 @@ trait GetClusterResult extends js.Object {
   val arn: String = js.native
   val clusterName: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -53,5 +53,36 @@ object GetClusterResult {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], clusterName = clusterName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pendingTasksCount = pendingTasksCount.asInstanceOf[js.Any], registeredContainerInstancesCount = registeredContainerInstancesCount.asInstanceOf[js.Any], runningTasksCount = runningTasksCount.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClusterResult]
   }
+  @scala.inline
+  implicit class GetClusterResultOps[Self <: GetClusterResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPendingTasksCount(value: Double): Self = this.set("pendingTasksCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegisteredContainerInstancesCount(value: Double): Self = this.set("registeredContainerInstancesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRunningTasksCount(value: Double): Self = this.set("runningTasksCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSettingsVarargs(value: GetClusterSetting*): Self = this.set("settings", js.Array(value :_*))
+    @scala.inline
+    def setSettings(value: js.Array[GetClusterSetting]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+  }
+  
 }
 

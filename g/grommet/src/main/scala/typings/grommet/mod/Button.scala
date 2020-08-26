@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Button")
+@JSImport("grommet/es6", "Button")
 @js.native
 object Button extends TopLevel[
       FC[

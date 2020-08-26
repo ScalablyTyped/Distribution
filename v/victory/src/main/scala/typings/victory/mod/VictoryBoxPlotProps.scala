@@ -1,9 +1,6 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
-import typings.victory.anon.XBoolean
-import typings.victory.anon.Y
-import typings.victory.anon.`1`
 import typings.victory.victoryStrings.bottom
 import typings.victory.victoryStrings.left
 import typings.victory.victoryStrings.right
@@ -12,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VictoryBoxPlotProps
   extends VictoryCommonProps
      with VictoryDatableProps {
@@ -19,19 +17,19 @@ trait VictoryBoxPlotProps
     * The boxWidth prop specifies how wide each box should be. If the whiskerWidth
     * prop is not set, this prop will also determine the width of the whisker crosshair.
     */
-  var boxWidth: js.UndefOr[Double] = js.undefined
+  var boxWidth: js.UndefOr[Double] = js.native
   /**
     * The domainPadding prop specifies a number of pixels of padding to add to the
     * beginning and end of a domain. This prop is useful for explicitly spacing ticks farther
     * from the origin to prevent crowding. This prop should be given as an object with
     * numbers specified for x and y.
     */
-  var domainPadding: js.UndefOr[DomainPaddingPropType] = js.undefined
+  var domainPadding: js.UndefOr[DomainPaddingPropType] = js.native
   /**
     * Similar to data accessor props `x` and `y`, this prop may be used to functionally
     * assign eventKeys to data
     */
-  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.native
   /**
     * The event prop take an array of event objects. Event objects are composed of
     * a childName, target, eventKey, and eventHandlers. Targets may be any valid style namespace
@@ -73,19 +71,19 @@ trait VictoryBoxPlotProps
     *   }
     * ]}
     */
-  var events: js.UndefOr[js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]] = js.undefined
+  var events: js.UndefOr[js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]] = js.native
   /**
     * The labelOrientation prop determines where labels are placed relative to their
     * corresponding data. If this prop is not set, it will be set to “top” for
     * horizontal charts, and “right” for vertical charts.
     */
-  var labelOrientation: js.UndefOr[top | bottom | left | right] = js.undefined
+  var labelOrientation: js.UndefOr[top | bottom | left | right] = js.native
   /**
     * When the boolean labels prop is set to true, the values for min, max, median,
     * q1, and q3 will be displayed for each box. For more granular label control, use
     * the individual minLabels, maxLabels, medianLabels, q1Labels, and q3Labels props.
     */
-  var labels: js.UndefOr[Boolean] = js.undefined
+  var labels: js.UndefOr[Boolean] = js.native
   /**
     * Use the max data accessor prop to define the max value of a box plot.
     *
@@ -99,7 +97,7 @@ trait VictoryBoxPlotProps
     * be used as a max value
     * @example // max="bonds.max", max={["bonds", "max"]}
     */
-  var max: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
+  var max: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
   /**
     * The maxComponent prop takes a component instance which will be responsible for rendering
     * an element to represent the maximum value of the box plot. The new element created from
@@ -111,7 +109,7 @@ trait VictoryBoxPlotProps
     * ignored within the custom component itself. If a maxComponent is not provided,
     * VictoryBoxPlot will use its default Whisker component.
     */
-  var maxComponent: js.UndefOr[ReactElement] = js.undefined
+  var maxComponent: js.UndefOr[ReactElement] = js.native
   /**
     * The maxLabelComponent prop takes a component instance which will be used to render the
     * label corresponding to the maximum value for each box. The new element created from the
@@ -121,7 +119,7 @@ trait VictoryBoxPlotProps
     * ignored within the custom component itself. If maxLabelComponent is omitted, a new
     * VictoryLabel will be created with props described above.
     */
-  var maxLabelComponent: js.UndefOr[ReactElement] = js.undefined
+  var maxLabelComponent: js.UndefOr[ReactElement] = js.native
   /**
     * Use the median data accessor prop to define the median value of a box plot.
     *
@@ -135,7 +133,7 @@ trait VictoryBoxPlotProps
     * be used as a median value
     * @example // median="bonds.median", median={["bonds", "median"]}
     */
-  var median: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
+  var median: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
   /**
     * The medianComponent prop takes a component instance which will be responsible for rendering an
     * element to represent the median value of the box plot. The new element created from the passed
@@ -144,7 +142,7 @@ trait VictoryBoxPlotProps
     * in props to the supplied component, or modified or ignored within the custom component itself.
     * If a medianComponent is not provided, VictoryBoxPlot will use its default Line component.
     */
-  var medianComponent: js.UndefOr[ReactElement] = js.undefined
+  var medianComponent: js.UndefOr[ReactElement] = js.native
   /**
     * The medianLabelComponent prop takes a component instance which will be used to render the label
     * corresponding to the median value for each box. The new element created from the passed
@@ -153,7 +151,7 @@ trait VictoryBoxPlotProps
     * by passing in props to the supplied component, or modified or ignored within the custom component
     * itself. If medianLabelComponent is omitted, a new VictoryLabel will be created with props described above.
     */
-  var medianLabelComponent: js.UndefOr[ReactElement] = js.undefined
+  var medianLabelComponent: js.UndefOr[ReactElement] = js.native
   /**
     * Use the min data accessor prop to define the min value of a box plot.
     *
@@ -167,7 +165,7 @@ trait VictoryBoxPlotProps
     * be used as a min value
     * @example // min="bonds.min", min={["bonds", "min"]}
     */
-  var min: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
+  var min: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
   /**
     * The medianComponent prop takes a component instance which will be responsible for rendering an
     * element to represent the median value of the box plot. The new element created from the passed
@@ -176,7 +174,7 @@ trait VictoryBoxPlotProps
     * in props to the supplied component, or modified or ignored within the custom component itself.
     * If a medianComponent is not provided, VictoryBoxPlot will use its default Line component.
     */
-  var minComponent: js.UndefOr[ReactElement] = js.undefined
+  var minComponent: js.UndefOr[ReactElement] = js.native
   /**
     * The minLabelComponent prop takes a component instance which will be used to render the label
     * corresponding to the minimum value for each box. The new element created from the passed
@@ -185,7 +183,7 @@ trait VictoryBoxPlotProps
     * props to the supplied component, or modified or ignored within the custom component itself. If
     * minLabelComponent is omitted, a new VictoryLabel will be created with props described above.
     */
-  var minLabelComponent: js.UndefOr[ReactElement] = js.undefined
+  var minLabelComponent: js.UndefOr[ReactElement] = js.native
   /**
     * Use the q1 data accessor prop to define the q1 value of a box plot.
     *
@@ -199,7 +197,7 @@ trait VictoryBoxPlotProps
     * be used as a q1 value
     * @example // q1="bonds.q1", q1={["bonds", "q1"]}
     */
-  var q1: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
+  var q1: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
   /**
     * The q1Component prop takes a component instance which will be responsible for rendering an
     * element to represent the q1 value of the box plot. The new element created from the passed
@@ -208,7 +206,7 @@ trait VictoryBoxPlotProps
     * passing in props to the supplied component, or modified or ignored within the custom component
     * itself. If a q1Component is not provided, VictoryBoxPlot will use its default Box component.
     */
-  var q1Component: js.UndefOr[ReactElement] = js.undefined
+  var q1Component: js.UndefOr[ReactElement] = js.native
   /**
     * The q1LabelComponent prop takes a component instance which will be used to render the label
     * corresponding to the q1 value for each box. The new element created from the passed q1LabelComponent
@@ -217,7 +215,7 @@ trait VictoryBoxPlotProps
     * the supplied component, or modified or ignored within the custom component itself. If
     * q1LabelComponent is omitted, a new VictoryLabel will be created with props described above.
     */
-  var q1LabelComponent: js.UndefOr[ReactElement] = js.undefined
+  var q1LabelComponent: js.UndefOr[ReactElement] = js.native
   /**
     * Use the q3 data accessor prop to define the q3 value of a box plot.
     *
@@ -231,7 +229,7 @@ trait VictoryBoxPlotProps
     * be used as a q3 value
     * @example // q3="bonds.q3", q3={["bonds", "q3"]}
     */
-  var q3: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
+  var q3: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
   /**
     * The q3Component prop takes a component instance which will be responsible for rendering an
     * element to represent the q3 value of the box plot. The new element created from the passed
@@ -240,7 +238,7 @@ trait VictoryBoxPlotProps
     * passing in props to the supplied component, or modified or ignored within the custom component
     * itself. If a q3Component is not provided, VictoryBoxPlot will use its default Box component.
     */
-  var q3Component: js.UndefOr[ReactElement] = js.undefined
+  var q3Component: js.UndefOr[ReactElement] = js.native
   /**
     * The q3LabelComponent prop takes a component instance which will be used to render the label
     * corresponding to the q3 value for each box. The new element created from the passed q3LabelComponent
@@ -249,7 +247,7 @@ trait VictoryBoxPlotProps
     * the supplied component, or modified or ignored within the custom component itself. If q3LabelComponent
     * is omitted, a new VictoryLabel will be created with props described above.
     */
-  var q3LabelComponent: js.UndefOr[ReactElement] = js.undefined
+  var q3LabelComponent: js.UndefOr[ReactElement] = js.native
   /**
     * The style prop defines the style of the component. The style prop
     * should be given as an object with styles defined for parent, max,
@@ -259,109 +257,149 @@ trait VictoryBoxPlotProps
     * layout for components in VictoryChart. Functional styles may be
     * defined for style properties, and they will be evaluated with each datum.
     */
-  var style: js.UndefOr[VictoryBoxPlotStyleInterface] = js.undefined
+  var style: js.UndefOr[VictoryBoxPlotStyleInterface] = js.native
   /**
     * The whiskerWidth prop specifies how wide each whisker crosshair should be. If the
     * whiskerWidth prop is not set, the width of the whisker crosshair will match
     * the width of the box.
     */
-  var whiskerWidth: js.UndefOr[Double] = js.undefined
+  var whiskerWidth: js.UndefOr[Double] = js.native
 }
 
 object VictoryBoxPlotProps {
   @scala.inline
-  def apply(
-    animate: Boolean | AnimatePropTypeInterface = null,
-    boxWidth: js.UndefOr[Double] = js.undefined,
-    categories: CategoryPropType = null,
-    containerComponent: ReactElement = null,
-    data: js.Array[_] = null,
-    dataComponent: ReactElement = null,
-    domain: DomainPropType = null,
-    domainPadding: DomainPaddingPropType = null,
-    eventKey: StringOrNumberOrCallback = null,
-    events: js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]] = null,
-    groupComponent: ReactElement = null,
-    height: js.UndefOr[Double] = js.undefined,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    labelOrientation: top | bottom | left | right = null,
-    labels: js.UndefOr[Boolean] = js.undefined,
-    max: StringOrNumberOrCallback | js.Array[String] = null,
-    maxComponent: ReactElement = null,
-    maxDomain: Double | Y = null,
-    maxLabelComponent: ReactElement = null,
-    median: StringOrNumberOrCallback | js.Array[String] = null,
-    medianComponent: ReactElement = null,
-    medianLabelComponent: ReactElement = null,
-    min: StringOrNumberOrCallback | js.Array[String] = null,
-    minComponent: ReactElement = null,
-    minDomain: Double | Y = null,
-    minLabelComponent: ReactElement = null,
-    name: String = null,
-    padding: PaddingProps = null,
-    q1: StringOrNumberOrCallback | js.Array[String] = null,
-    q1Component: ReactElement = null,
-    q1LabelComponent: ReactElement = null,
-    q3: StringOrNumberOrCallback | js.Array[String] = null,
-    q3Component: ReactElement = null,
-    q3LabelComponent: ReactElement = null,
-    scale: ScalePropType | D3Scale | `1` = null,
-    singleQuadrantDomainPadding: Boolean | XBoolean = null,
-    standalone: js.UndefOr[Boolean] = js.undefined,
-    style: VictoryBoxPlotStyleInterface = null,
-    theme: VictoryThemeDefinition = null,
-    whiskerWidth: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    x: DataGetterPropType = null,
-    y: DataGetterPropType = null,
-    y0: DataGetterPropType = null
-  ): VictoryBoxPlotProps = {
+  def apply(): VictoryBoxPlotProps = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(boxWidth)) __obj.updateDynamic("boxWidth")(boxWidth.get.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (domainPadding != null) __obj.updateDynamic("domainPadding")(domainPadding.asInstanceOf[js.Any])
-    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (labelOrientation != null) __obj.updateDynamic("labelOrientation")(labelOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.get.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxComponent != null) __obj.updateDynamic("maxComponent")(maxComponent.asInstanceOf[js.Any])
-    if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
-    if (maxLabelComponent != null) __obj.updateDynamic("maxLabelComponent")(maxLabelComponent.asInstanceOf[js.Any])
-    if (median != null) __obj.updateDynamic("median")(median.asInstanceOf[js.Any])
-    if (medianComponent != null) __obj.updateDynamic("medianComponent")(medianComponent.asInstanceOf[js.Any])
-    if (medianLabelComponent != null) __obj.updateDynamic("medianLabelComponent")(medianLabelComponent.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minComponent != null) __obj.updateDynamic("minComponent")(minComponent.asInstanceOf[js.Any])
-    if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
-    if (minLabelComponent != null) __obj.updateDynamic("minLabelComponent")(minLabelComponent.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (q1 != null) __obj.updateDynamic("q1")(q1.asInstanceOf[js.Any])
-    if (q1Component != null) __obj.updateDynamic("q1Component")(q1Component.asInstanceOf[js.Any])
-    if (q1LabelComponent != null) __obj.updateDynamic("q1LabelComponent")(q1LabelComponent.asInstanceOf[js.Any])
-    if (q3 != null) __obj.updateDynamic("q3")(q3.asInstanceOf[js.Any])
-    if (q3Component != null) __obj.updateDynamic("q3Component")(q3Component.asInstanceOf[js.Any])
-    if (q3LabelComponent != null) __obj.updateDynamic("q3LabelComponent")(q3LabelComponent.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(whiskerWidth)) __obj.updateDynamic("whiskerWidth")(whiskerWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryBoxPlotProps]
   }
+  @scala.inline
+  implicit class VictoryBoxPlotPropsOps[Self <: VictoryBoxPlotProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoxWidth(value: Double): Self = this.set("boxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoxWidth: Self = this.set("boxWidth", js.undefined)
+    @scala.inline
+    def setDomainPadding(value: DomainPaddingPropType): Self = this.set("domainPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainPadding: Self = this.set("domainPadding", js.undefined)
+    @scala.inline
+    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("eventKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEventKey(value: StringOrNumberOrCallback): Self = this.set("eventKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventKey: Self = this.set("eventKey", js.undefined)
+    @scala.inline
+    def setEventsVarargs(value: (EventPropTypeInterface[String, StringOrNumberOrCallback])*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setLabelOrientation(value: top | bottom | left | right): Self = this.set("labelOrientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelOrientation: Self = this.set("labelOrientation", js.undefined)
+    @scala.inline
+    def setLabels(value: Boolean): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMaxVarargs(value: String*): Self = this.set("max", js.Array(value :_*))
+    @scala.inline
+    def setMaxFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("max", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMax(value: StringOrNumberOrCallback | js.Array[String]): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMaxComponent(value: ReactElement): Self = this.set("maxComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxComponent: Self = this.set("maxComponent", js.undefined)
+    @scala.inline
+    def setMaxLabelComponent(value: ReactElement): Self = this.set("maxLabelComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLabelComponent: Self = this.set("maxLabelComponent", js.undefined)
+    @scala.inline
+    def setMedianVarargs(value: String*): Self = this.set("median", js.Array(value :_*))
+    @scala.inline
+    def setMedianFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("median", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMedian(value: StringOrNumberOrCallback | js.Array[String]): Self = this.set("median", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedian: Self = this.set("median", js.undefined)
+    @scala.inline
+    def setMedianComponent(value: ReactElement): Self = this.set("medianComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedianComponent: Self = this.set("medianComponent", js.undefined)
+    @scala.inline
+    def setMedianLabelComponent(value: ReactElement): Self = this.set("medianLabelComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedianLabelComponent: Self = this.set("medianLabelComponent", js.undefined)
+    @scala.inline
+    def setMinVarargs(value: String*): Self = this.set("min", js.Array(value :_*))
+    @scala.inline
+    def setMinFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("min", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMin(value: StringOrNumberOrCallback | js.Array[String]): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMinComponent(value: ReactElement): Self = this.set("minComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinComponent: Self = this.set("minComponent", js.undefined)
+    @scala.inline
+    def setMinLabelComponent(value: ReactElement): Self = this.set("minLabelComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLabelComponent: Self = this.set("minLabelComponent", js.undefined)
+    @scala.inline
+    def setQ1Varargs(value: String*): Self = this.set("q1", js.Array(value :_*))
+    @scala.inline
+    def setQ1Function1(value: /* args */ CallbackArgs => String | Double): Self = this.set("q1", js.Any.fromFunction1(value))
+    @scala.inline
+    def setQ1(value: StringOrNumberOrCallback | js.Array[String]): Self = this.set("q1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ1: Self = this.set("q1", js.undefined)
+    @scala.inline
+    def setQ1Component(value: ReactElement): Self = this.set("q1Component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ1Component: Self = this.set("q1Component", js.undefined)
+    @scala.inline
+    def setQ1LabelComponent(value: ReactElement): Self = this.set("q1LabelComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ1LabelComponent: Self = this.set("q1LabelComponent", js.undefined)
+    @scala.inline
+    def setQ3Varargs(value: String*): Self = this.set("q3", js.Array(value :_*))
+    @scala.inline
+    def setQ3Function1(value: /* args */ CallbackArgs => String | Double): Self = this.set("q3", js.Any.fromFunction1(value))
+    @scala.inline
+    def setQ3(value: StringOrNumberOrCallback | js.Array[String]): Self = this.set("q3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ3: Self = this.set("q3", js.undefined)
+    @scala.inline
+    def setQ3Component(value: ReactElement): Self = this.set("q3Component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ3Component: Self = this.set("q3Component", js.undefined)
+    @scala.inline
+    def setQ3LabelComponent(value: ReactElement): Self = this.set("q3LabelComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ3LabelComponent: Self = this.set("q3LabelComponent", js.undefined)
+    @scala.inline
+    def setStyle(value: VictoryBoxPlotStyleInterface): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setWhiskerWidth(value: Double): Self = this.set("whiskerWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhiskerWidth: Self = this.set("whiskerWidth", js.undefined)
+  }
+  
 }
 

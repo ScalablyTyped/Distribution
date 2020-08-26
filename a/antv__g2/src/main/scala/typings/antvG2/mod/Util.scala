@@ -6,13 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Util extends /* other */ StringDictionary[lodashFn] {
-  var each: lodashFn
-  var isFunction: lodashFn
-  var isNumber: lodashFn
-  var isObject: lodashFn
-  var isString: lodashFn
-  var map: lodashFn
+  var each: lodashFn = js.native
+  var isFunction: lodashFn = js.native
+  var isNumber: lodashFn = js.native
+  var isObject: lodashFn = js.native
+  var isString: lodashFn = js.native
+  var map: lodashFn = js.native
 }
 
 @JSImport("@antv/g2", "Util")

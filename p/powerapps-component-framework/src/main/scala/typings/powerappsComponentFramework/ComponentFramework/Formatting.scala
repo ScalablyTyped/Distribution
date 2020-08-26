@@ -18,6 +18,7 @@ trait Formatting extends js.Object {
     * @param symbol The currency symbol/code to be added with currency value.
     */
   def formatCurrency(value: Double): String = js.native
+  def formatCurrency(value: Double, precision: js.UndefOr[scala.Nothing], symbol: String): String = js.native
   def formatCurrency(value: Double, precision: Double): String = js.native
   def formatCurrency(value: Double, precision: Double, symbol: String): String = js.native
   /**

@@ -5,6 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import typings.semanticUiReact.accordionAccordionMod.AccordionComponent
 import typings.semanticUiReact.accordionAccordionMod.AccordionProps
+import typings.semanticUiReact.accordionPanelMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,5 +20,9 @@ class Accordion protected ()
 
 @JSImport("semantic-ui-react", "Accordion")
 @js.native
-object Accordion extends TopLevel[AccordionComponent]
+object Accordion extends TopLevel[AccordionComponent] {
+  @js.native
+  class Panel () extends default
+  
+}
 

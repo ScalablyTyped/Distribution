@@ -4,51 +4,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Response extends js.Object {
-  var closedByClientTimeout: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[String] = js.undefined
-  var errorHandled: js.UndefOr[Boolean] = js.undefined
-  var headers: js.UndefOr[js.Array[String]] = js.undefined
-  var messages: js.UndefOr[js.Array[String]] = js.undefined
-  var partialMessage: js.UndefOr[String] = js.undefined
-  var reasonPhrase: js.UndefOr[String] = js.undefined
-  var request: js.UndefOr[Request] = js.undefined
-  var responseBody: js.UndefOr[String] = js.undefined
-  var state: js.UndefOr[String] = js.undefined
-  var status: js.UndefOr[Double] = js.undefined
-  var transport: js.UndefOr[String] = js.undefined
+  var closedByClientTimeout: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[String] = js.native
+  var errorHandled: js.UndefOr[Boolean] = js.native
+  var headers: js.UndefOr[js.Array[String]] = js.native
+  var messages: js.UndefOr[js.Array[String]] = js.native
+  var partialMessage: js.UndefOr[String] = js.native
+  var reasonPhrase: js.UndefOr[String] = js.native
+  var request: js.UndefOr[Request] = js.native
+  var responseBody: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.native
+  var status: js.UndefOr[Double] = js.native
+  var transport: js.UndefOr[String] = js.native
 }
 
 object Response {
   @scala.inline
-  def apply(
-    closedByClientTimeout: js.UndefOr[Boolean] = js.undefined,
-    error: String = null,
-    errorHandled: js.UndefOr[Boolean] = js.undefined,
-    headers: js.Array[String] = null,
-    messages: js.Array[String] = null,
-    partialMessage: String = null,
-    reasonPhrase: String = null,
-    request: Request = null,
-    responseBody: String = null,
-    state: String = null,
-    status: js.UndefOr[Double] = js.undefined,
-    transport: String = null
-  ): Response = {
+  def apply(): Response = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closedByClientTimeout)) __obj.updateDynamic("closedByClientTimeout")(closedByClientTimeout.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorHandled)) __obj.updateDynamic("errorHandled")(errorHandled.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (partialMessage != null) __obj.updateDynamic("partialMessage")(partialMessage.asInstanceOf[js.Any])
-    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
+  @scala.inline
+  implicit class ResponseOps[Self <: Response] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClosedByClientTimeout(value: Boolean): Self = this.set("closedByClientTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosedByClientTimeout: Self = this.set("closedByClientTimeout", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setErrorHandled(value: Boolean): Self = this.set("errorHandled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorHandled: Self = this.set("errorHandled", js.undefined)
+    @scala.inline
+    def setHeadersVarargs(value: String*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: js.Array[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setMessagesVarargs(value: String*): Self = this.set("messages", js.Array(value :_*))
+    @scala.inline
+    def setMessages(value: js.Array[String]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setPartialMessage(value: String): Self = this.set("partialMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartialMessage: Self = this.set("partialMessage", js.undefined)
+    @scala.inline
+    def setReasonPhrase(value: String): Self = this.set("reasonPhrase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonPhrase: Self = this.set("reasonPhrase", js.undefined)
+    @scala.inline
+    def setRequest(value: Request): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setResponseBody(value: String): Self = this.set("responseBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseBody: Self = this.set("responseBody", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTransport(value: String): Self = this.set("transport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransport: Self = this.set("transport", js.undefined)
+  }
+  
 }
 

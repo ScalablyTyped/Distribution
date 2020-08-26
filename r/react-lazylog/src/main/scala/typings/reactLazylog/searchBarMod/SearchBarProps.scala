@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchBarProps extends js.Object {
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var filterActive: js.UndefOr[Boolean] = js.undefined
-  var onClearSearch: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onFilterLinesWithMatches: js.UndefOr[js.Function1[/* isFiltered */ Boolean, Unit]] = js.undefined
-  var onSearch: js.UndefOr[js.Function1[/* keyword */ String, Unit]] = js.undefined
-  var resultsCount: js.UndefOr[Double] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
+  var filterActive: js.UndefOr[Boolean] = js.native
+  var onClearSearch: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFilterLinesWithMatches: js.UndefOr[js.Function1[/* isFiltered */ Boolean, Unit]] = js.native
+  var onSearch: js.UndefOr[js.Function1[/* keyword */ String, Unit]] = js.native
+  var resultsCount: js.UndefOr[Double] = js.native
 }
 
 object SearchBarProps {
   @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    filterActive: js.UndefOr[Boolean] = js.undefined,
-    onClearSearch: () => Unit = null,
-    onFilterLinesWithMatches: /* isFiltered */ Boolean => Unit = null,
-    onSearch: /* keyword */ String => Unit = null,
-    resultsCount: js.UndefOr[Double] = js.undefined
-  ): SearchBarProps = {
+  def apply(): SearchBarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterActive)) __obj.updateDynamic("filterActive")(filterActive.get.asInstanceOf[js.Any])
-    if (onClearSearch != null) __obj.updateDynamic("onClearSearch")(js.Any.fromFunction0(onClearSearch))
-    if (onFilterLinesWithMatches != null) __obj.updateDynamic("onFilterLinesWithMatches")(js.Any.fromFunction1(onFilterLinesWithMatches))
-    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
-    if (!js.isUndefined(resultsCount)) __obj.updateDynamic("resultsCount")(resultsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBarProps]
   }
+  @scala.inline
+  implicit class SearchBarPropsOps[Self <: SearchBarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFilterActive(value: Boolean): Self = this.set("filterActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterActive: Self = this.set("filterActive", js.undefined)
+    @scala.inline
+    def setOnClearSearch(value: () => Unit): Self = this.set("onClearSearch", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClearSearch: Self = this.set("onClearSearch", js.undefined)
+    @scala.inline
+    def setOnFilterLinesWithMatches(value: /* isFiltered */ Boolean => Unit): Self = this.set("onFilterLinesWithMatches", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFilterLinesWithMatches: Self = this.set("onFilterLinesWithMatches", js.undefined)
+    @scala.inline
+    def setOnSearch(value: /* keyword */ String => Unit): Self = this.set("onSearch", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSearch: Self = this.set("onSearch", js.undefined)
+    @scala.inline
+    def setResultsCount(value: Double): Self = this.set("resultsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultsCount: Self = this.set("resultsCount", js.undefined)
+  }
+  
 }
 

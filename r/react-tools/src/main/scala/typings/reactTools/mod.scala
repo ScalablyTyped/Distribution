@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class Component () extends js.Object {
-    def this(props: js.Any) = this()
+  class Component protected () extends js.Object {
     def this(props: js.Any, context: js.Any) = this()
     var context: js.Any = js.native
     var props: js.Any = js.native
@@ -21,7 +20,7 @@ object mod extends js.Object {
   }
   
   var PropTypes: js.Any = js.native
-  def createElement(tag: js.Any): js.Any = js.native
+  def createElement(tag: js.Any, props: js.UndefOr[scala.Nothing], children: js.Any*): js.Any = js.native
   def createElement(tag: js.Any, props: js.Any, children: js.Any*): js.Any = js.native
   def findDOMNode(instance: js.Any): js.Any = js.native
   def render(element: js.Any, container: js.Any): js.Any = js.native

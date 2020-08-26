@@ -10,15 +10,15 @@ RFC4122 (v1, v4, and v5) UUIDs
 | ------------------ | :-------------: |
 | Full name          | uuid |
 | Keywords           | uuid, guid, rfc4122 |
-| # releases         | 6 |
-| # dependents       | 13504 |
-| # downloads        | 853004855 |
+| # releases         | 5 |
+| # dependents       | 13638 |
+| # downloads        | 863386775 |
 | # stars            | 313 |
 
 ## Links
-- [Homepage](https://github.com/kelektiv/node-uuid#readme)
-- [Bugs](https://github.com/kelektiv/node-uuid/issues)
-- [Repository](https://github.com/kelektiv/node-uuid)
+- [Homepage](https://github.com/uuidjs/uuid#readme)
+- [Bugs](https://github.com/uuidjs/uuid/issues)
+- [Repository](https://github.com/uuidjs/uuid)
 - [Npm](https://www.npmjs.com/package/uuid)
     
 

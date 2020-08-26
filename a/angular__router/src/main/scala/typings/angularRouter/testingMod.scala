@@ -46,6 +46,17 @@ object testingMod extends js.Object {
     compiler: Compiler,
     injector: Injector,
     routes: js.Array[js.Array[Route]],
+    opts: js.UndefOr[scala.Nothing],
+    urlHandlingStrategy: UrlHandlingStrategy
+  ): Router = js.native
+  def setupTestingRouter(
+    urlSerializer: UrlSerializer,
+    contexts: ChildrenOutletContexts,
+    location: Location,
+    loader: NgModuleFactoryLoader,
+    compiler: Compiler,
+    injector: Injector,
+    routes: js.Array[js.Array[Route]],
     opts: ExtraOptions
   ): Router = js.native
   def setupTestingRouter(

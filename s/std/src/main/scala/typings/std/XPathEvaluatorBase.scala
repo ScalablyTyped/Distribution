@@ -10,6 +10,33 @@ trait XPathEvaluatorBase extends js.Object {
   def createExpression(expression: java.lang.String, resolver: XPathNSResolver): XPathExpression = js.native
   def createNSResolver(nodeResolver: Node): XPathNSResolver = js.native
   def evaluate(expression: java.lang.String, contextNode: Node): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: js.UndefOr[XPathNSResolver],
+    `type`: js.UndefOr[scala.Nothing],
+    result: XPathResult
+  ): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: js.UndefOr[XPathNSResolver],
+    `type`: Double
+  ): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: js.UndefOr[XPathNSResolver],
+    `type`: Double,
+    result: XPathResult
+  ): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: Null,
+    `type`: js.UndefOr[scala.Nothing],
+    result: XPathResult
+  ): XPathResult = js.native
   def evaluate(expression: java.lang.String, contextNode: Node, resolver: Null, `type`: Double): XPathResult = js.native
   def evaluate(
     expression: java.lang.String,
@@ -19,13 +46,5 @@ trait XPathEvaluatorBase extends js.Object {
     result: XPathResult
   ): XPathResult = js.native
   def evaluate(expression: java.lang.String, contextNode: Node, resolver: XPathNSResolver): XPathResult = js.native
-  def evaluate(expression: java.lang.String, contextNode: Node, resolver: XPathNSResolver, `type`: Double): XPathResult = js.native
-  def evaluate(
-    expression: java.lang.String,
-    contextNode: Node,
-    resolver: XPathNSResolver,
-    `type`: Double,
-    result: XPathResult
-  ): XPathResult = js.native
 }
 

@@ -83,6 +83,7 @@ trait FacebookInstantGamesLeaderboard extends EventEmitter {
     * @param offset The offset from the top of the leaderboard that entries will be fetched from. Default 0.
     */
   def getScores(): this.type = js.native
+  def getScores(count: js.UndefOr[scala.Nothing], offset: integer): this.type = js.native
   def getScores(count: integer): this.type = js.native
   def getScores(count: integer, offset: integer): this.type = js.native
   /**

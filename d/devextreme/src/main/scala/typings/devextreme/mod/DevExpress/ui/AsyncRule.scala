@@ -16,37 +16,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AsyncRule extends js.Object {
   /** @name AsyncRule.ignoreEmptyValue */
-  var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
+  var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
   /** @name AsyncRule.message */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String] = js.native
   /** @name AsyncRule.reevaluate */
-  var reevaluate: js.UndefOr[Boolean] = js.undefined
+  var reevaluate: js.UndefOr[Boolean] = js.native
   /** @name AsyncRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
-  ] = js.undefined
+  ] = js.native
   /** @name AsyncRule.validationCallback */
-  var validationCallback: js.UndefOr[js.Function1[/* options */ Column, Promise[_] | JQueryPromise[_]]] = js.undefined
+  var validationCallback: js.UndefOr[js.Function1[/* options */ Column, Promise[_] | JQueryPromise[_]]] = js.native
 }
 
 object AsyncRule {
   @scala.inline
-  def apply(
-    ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined,
-    message: String = null,
-    reevaluate: js.UndefOr[Boolean] = js.undefined,
-    `type`: required | numeric | range | stringLength | custom | compare | pattern | email | async = null,
-    validationCallback: /* options */ Column => Promise[_] | JQueryPromise[_] = null
-  ): AsyncRule = {
+  def apply(): AsyncRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreEmptyValue)) __obj.updateDynamic("ignoreEmptyValue")(ignoreEmptyValue.get.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(reevaluate)) __obj.updateDynamic("reevaluate")(reevaluate.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validationCallback != null) __obj.updateDynamic("validationCallback")(js.Any.fromFunction1(validationCallback))
     __obj.asInstanceOf[AsyncRule]
   }
+  @scala.inline
+  implicit class AsyncRuleOps[Self <: AsyncRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIgnoreEmptyValue(value: Boolean): Self = this.set("ignoreEmptyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreEmptyValue: Self = this.set("ignoreEmptyValue", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setReevaluate(value: Boolean): Self = this.set("reevaluate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReevaluate: Self = this.set("reevaluate", js.undefined)
+    @scala.inline
+    def setType(value: required | numeric | range | stringLength | custom | compare | pattern | email | async): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValidationCallback(value: /* options */ Column => Promise[_] | JQueryPromise[_]): Self = this.set("validationCallback", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteValidationCallback: Self = this.set("validationCallback", js.undefined)
+  }
+  
 }
 

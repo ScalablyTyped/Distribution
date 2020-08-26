@@ -8,15 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizerTimeouts")
 @js.native
 abstract class SpeechRecognizerTimeouts ()
-  extends typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognizerTimeouts {
-  /** Gets and sets the length of time that a SpeechRecognizer continues to listen while receiving unrecognizable sounds (babble) before it assumes speech input has ended and finalizes the recognition operation. */
-  /* CompleteClass */
-  override var babbleTimeout: Double = js.native
-  /** Gets and sets the length of time, after recognition results have been generated, that a SpeechRecognizer detects silence and assumes speech input has ended. */
-  /* CompleteClass */
-  override var endSilenceTimeout: Double = js.native
-  /** Gets and sets the length of time, before any recognition results have been generated, that a SpeechRecognizer detects silence and assumes speech input has ended. */
-  /* CompleteClass */
-  override var initialSilenceTimeout: Double = js.native
-}
+  extends typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognizerTimeouts
 

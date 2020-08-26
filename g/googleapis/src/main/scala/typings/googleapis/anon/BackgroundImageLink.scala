@@ -13,12 +13,34 @@ trait BackgroundImageLink extends js.Object {
 
 object BackgroundImageLink {
   @scala.inline
-  def apply(backgroundImageLink: String = null, colorRgb: String = null, id: String = null): BackgroundImageLink = {
+  def apply(): BackgroundImageLink = {
     val __obj = js.Dynamic.literal()
-    if (backgroundImageLink != null) __obj.updateDynamic("backgroundImageLink")(backgroundImageLink.asInstanceOf[js.Any])
-    if (colorRgb != null) __obj.updateDynamic("colorRgb")(colorRgb.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundImageLink]
   }
+  @scala.inline
+  implicit class BackgroundImageLinkOps[Self <: BackgroundImageLink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundImageLink(value: String): Self = this.set("backgroundImageLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageLink: Self = this.set("backgroundImageLink", js.undefined)
+    @scala.inline
+    def setColorRgb(value: String): Self = this.set("colorRgb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorRgb: Self = this.set("colorRgb", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+  }
+  
 }
 

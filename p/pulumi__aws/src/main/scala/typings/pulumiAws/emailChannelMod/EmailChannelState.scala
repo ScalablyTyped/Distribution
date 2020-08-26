@@ -35,22 +35,46 @@ trait EmailChannelState extends js.Object {
 
 object EmailChannelState {
   @scala.inline
-  def apply(
-    applicationId: Input[String] = null,
-    enabled: Input[Boolean] = null,
-    fromAddress: Input[String] = null,
-    identity: Input[String] = null,
-    messagesPerSecond: Input[Double] = null,
-    roleArn: Input[String] = null
-  ): EmailChannelState = {
+  def apply(): EmailChannelState = {
     val __obj = js.Dynamic.literal()
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (fromAddress != null) __obj.updateDynamic("fromAddress")(fromAddress.asInstanceOf[js.Any])
-    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    if (messagesPerSecond != null) __obj.updateDynamic("messagesPerSecond")(messagesPerSecond.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailChannelState]
   }
+  @scala.inline
+  implicit class EmailChannelStateOps[Self <: EmailChannelState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Input[String]): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setFromAddress(value: Input[String]): Self = this.set("fromAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromAddress: Self = this.set("fromAddress", js.undefined)
+    @scala.inline
+    def setIdentity(value: Input[String]): Self = this.set("identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentity: Self = this.set("identity", js.undefined)
+    @scala.inline
+    def setMessagesPerSecond(value: Input[Double]): Self = this.set("messagesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagesPerSecond: Self = this.set("messagesPerSecond", js.undefined)
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgPivotViewPivotGridOptionsLevelSortDirection
   extends /**
   * Option for JSONPDataSourceSettings
@@ -13,26 +14,40 @@ trait IgPivotViewPivotGridOptionsLevelSortDirection
   /**
     * Specifies the unique name of the level, which will be sorted.
     */
-  var levelUniqueName: js.UndefOr[String] = js.undefined
+  var levelUniqueName: js.UndefOr[String] = js.native
   /**
     * optional="true" Specifies the sort direction. If no direction is specified,the level is going to be sorted in the direction specified by the firstLevelSortDirection option.
     *
     */
-  var sortDirection: js.UndefOr[js.Any] = js.undefined
+  var sortDirection: js.UndefOr[js.Any] = js.native
 }
 
 object IgPivotViewPivotGridOptionsLevelSortDirection {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    levelUniqueName: String = null,
-    sortDirection: js.Any = null
-  ): IgPivotViewPivotGridOptionsLevelSortDirection = {
+  def apply(): IgPivotViewPivotGridOptionsLevelSortDirection = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (levelUniqueName != null) __obj.updateDynamic("levelUniqueName")(levelUniqueName.asInstanceOf[js.Any])
-    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotViewPivotGridOptionsLevelSortDirection]
   }
+  @scala.inline
+  implicit class IgPivotViewPivotGridOptionsLevelSortDirectionOps[Self <: IgPivotViewPivotGridOptionsLevelSortDirection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLevelUniqueName(value: String): Self = this.set("levelUniqueName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevelUniqueName: Self = this.set("levelUniqueName", js.undefined)
+    @scala.inline
+    def setSortDirection(value: js.Any): Self = this.set("sortDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortDirection: Self = this.set("sortDirection", js.undefined)
+  }
+  
 }
 

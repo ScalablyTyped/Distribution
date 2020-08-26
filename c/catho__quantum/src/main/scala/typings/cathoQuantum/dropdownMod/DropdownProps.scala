@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DropdownProps extends js.Object {
-  var autocomplete: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[String] = js.undefined
-  var helperText: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var ignoreSpecialChars: js.UndefOr[Boolean] = js.undefined
-  var items: js.UndefOr[js.Array[ItemPropType]] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
+  var autocomplete: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[String] = js.native
+  var helperText: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var ignoreSpecialChars: js.UndefOr[Boolean] = js.native
+  var items: js.UndefOr[js.Array[ItemPropType]] = js.native
+  var label: js.UndefOr[String] = js.native
   /** More about stateAndHelpers parameter here https://github.com/downshift-js/downshift#children-function */
   var onChange: js.UndefOr[
     js.Function2[
@@ -22,45 +23,87 @@ trait DropdownProps extends js.Object {
       /* stateAndHelpers */ ControllerStateAndHelpers[ItemPropType], 
       Unit
     ]
-  ] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var selectedItem: js.UndefOr[ItemPropType] = js.undefined
-  var theme: js.UndefOr[BaseFontSize] = js.undefined
+  ] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var selectedItem: js.UndefOr[ItemPropType] = js.native
+  var theme: js.UndefOr[BaseFontSize] = js.native
 }
 
 object DropdownProps {
   @scala.inline
-  def apply(
-    autocomplete: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: String = null,
-    helperText: String = null,
-    id: String = null,
-    ignoreSpecialChars: js.UndefOr[Boolean] = js.undefined,
-    items: js.Array[ItemPropType] = null,
-    label: String = null,
-    onChange: (/* selectedItem */ ItemPropType | Null, /* stateAndHelpers */ ControllerStateAndHelpers[ItemPropType]) => Unit = null,
-    placeholder: String = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    selectedItem: ItemPropType = null,
-    theme: BaseFontSize = null
-  ): DropdownProps = {
+  def apply(): DropdownProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (helperText != null) __obj.updateDynamic("helperText")(helperText.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSpecialChars)) __obj.updateDynamic("ignoreSpecialChars")(ignoreSpecialChars.get.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownProps]
   }
+  @scala.inline
+  implicit class DropdownPropsOps[Self <: DropdownProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutocomplete(value: Boolean): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutocomplete: Self = this.set("autocomplete", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setHelperText(value: String): Self = this.set("helperText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelperText: Self = this.set("helperText", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIgnoreSpecialChars(value: Boolean): Self = this.set("ignoreSpecialChars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreSpecialChars: Self = this.set("ignoreSpecialChars", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: ItemPropType*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[ItemPropType]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setOnChange(
+      value: (/* selectedItem */ ItemPropType | Null, /* stateAndHelpers */ ControllerStateAndHelpers[ItemPropType]) => Unit
+    ): Self = this.set("onChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setSelectedItem(value: ItemPropType): Self = this.set("selectedItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItem: Self = this.set("selectedItem", js.undefined)
+    @scala.inline
+    def setTheme(value: BaseFontSize): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

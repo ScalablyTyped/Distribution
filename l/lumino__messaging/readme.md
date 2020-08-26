@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__messaging
 
-Typings are for version 1.3.3
+Typings are for version 1.4.3
 
 ## Library description:
 Lumino Message Passing
@@ -10,9 +10,9 @@ Lumino Message Passing
 | ------------------ | :-------------: |
 | Full name          | @lumino/messaging |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 11865 |
+| # releases         | 8 |
+| # dependents       | 78 |
+| # downloads        | 320284 |
 | # stars            | 0 |
 
 ## Links

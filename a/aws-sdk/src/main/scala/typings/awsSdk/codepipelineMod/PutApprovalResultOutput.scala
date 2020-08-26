@@ -14,10 +14,26 @@ trait PutApprovalResultOutput extends js.Object {
 
 object PutApprovalResultOutput {
   @scala.inline
-  def apply(approvedAt: Timestamp = null): PutApprovalResultOutput = {
+  def apply(): PutApprovalResultOutput = {
     val __obj = js.Dynamic.literal()
-    if (approvedAt != null) __obj.updateDynamic("approvedAt")(approvedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutApprovalResultOutput]
   }
+  @scala.inline
+  implicit class PutApprovalResultOutputOps[Self <: PutApprovalResultOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovedAt(value: Timestamp): Self = this.set("approvedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovedAt: Self = this.set("approvedAt", js.undefined)
+  }
+  
 }
 

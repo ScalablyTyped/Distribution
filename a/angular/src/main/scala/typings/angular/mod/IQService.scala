@@ -169,6 +169,12 @@ trait IQService
   def when[TResult, T](
     value: T,
     successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
+    errorCallback: js.UndefOr[scala.Nothing],
+    notifyCallback: js.Function1[/* state */ js.Any, _]
+  ): IPromise[TResult] = js.native
+  def when[TResult, T](
+    value: T,
+    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
     errorCallback: js.Function1[/* reason */ js.Any, _]
   ): IPromise[TResult] = js.native
   def when[TResult, T](

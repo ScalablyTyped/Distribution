@@ -31,18 +31,40 @@ trait SchemaEventRecordRequest extends js.Object {
 
 object SchemaEventRecordRequest {
   @scala.inline
-  def apply(
-    currentTimeMillis: String = null,
-    kind: String = null,
-    requestId: String = null,
-    timePeriods: js.Array[SchemaEventPeriodUpdate] = null
-  ): SchemaEventRecordRequest = {
+  def apply(): SchemaEventRecordRequest = {
     val __obj = js.Dynamic.literal()
-    if (currentTimeMillis != null) __obj.updateDynamic("currentTimeMillis")(currentTimeMillis.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (timePeriods != null) __obj.updateDynamic("timePeriods")(timePeriods.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEventRecordRequest]
   }
+  @scala.inline
+  implicit class SchemaEventRecordRequestOps[Self <: SchemaEventRecordRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentTimeMillis(value: String): Self = this.set("currentTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentTimeMillis: Self = this.set("currentTimeMillis", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    @scala.inline
+    def setTimePeriodsVarargs(value: SchemaEventPeriodUpdate*): Self = this.set("timePeriods", js.Array(value :_*))
+    @scala.inline
+    def setTimePeriods(value: js.Array[SchemaEventPeriodUpdate]): Self = this.set("timePeriods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePeriods: Self = this.set("timePeriods", js.undefined)
+  }
+  
 }
 

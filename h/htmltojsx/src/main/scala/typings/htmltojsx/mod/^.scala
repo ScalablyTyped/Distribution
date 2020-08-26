@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends HTMLtoJSX {
   def this(options: CreateClass) = this()
-  /* CompleteClass */
-  override def convert(html: String): String = js.native
 }
 

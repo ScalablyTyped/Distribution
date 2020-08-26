@@ -232,6 +232,7 @@ trait Nightmare extends js.Object {
   def screenshot(clip: Height, done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
   def screenshot(done: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Nightmare = js.native
   def screenshot(path: String): Nightmare = js.native
+  def screenshot(path: String, clip: js.UndefOr[scala.Nothing], done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
   def screenshot(path: String, clip: Height): Nightmare = js.native
   def screenshot(path: String, clip: Height, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native
   def screenshot(path: String, done: js.Function1[/* err */ js.Any, Unit]): Nightmare = js.native

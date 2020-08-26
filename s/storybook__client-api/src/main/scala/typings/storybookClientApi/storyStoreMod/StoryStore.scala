@@ -57,7 +57,8 @@ trait StoryStore
   def remove(id: String): Unit = js.native
   def removeStoryKind(kind: String): Unit = js.native
   def setChannel(channel: Channel): Unit = js.native
-  def setSelection(data: js.UndefOr[Selection], error: ErrorLike): Unit = js.native
+  def setSelection(data: js.UndefOr[scala.Nothing], error: ErrorLike): Unit = js.native
+  def setSelection(data: Selection, error: ErrorLike): Unit = js.native
   def size(): Double = js.native
 }
 

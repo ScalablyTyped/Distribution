@@ -65,6 +65,7 @@ trait Editor extends OptionProvider {
     * @param animate If `true` animate scrolling
     **/
   def find(needle: String): Unit = js.native
+  def find(needle: String, options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def find(needle: String, options: js.Any): Unit = js.native
   def find(needle: String, options: js.Any, animate: Boolean): Unit = js.native
   /**
@@ -73,6 +74,7 @@ trait Editor extends OptionProvider {
     * @param animate If `true` animate scrolling
     **/
   def findNext(): Unit = js.native
+  def findNext(options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def findNext(options: js.Any): Unit = js.native
   def findNext(options: js.Any, animate: Boolean): Unit = js.native
   /**
@@ -81,6 +83,7 @@ trait Editor extends OptionProvider {
     * @param animate If `true` animate scrolling
     **/
   def findPrevious(): Unit = js.native
+  def findPrevious(options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def findPrevious(options: js.Any): Unit = js.native
   def findPrevious(options: js.Any, animate: Boolean): Unit = js.native
   /**
@@ -198,6 +201,7 @@ trait Editor extends OptionProvider {
     * @param animate If `true` animates scolling
     **/
   def gotoLine(lineNumber: Double): Unit = js.native
+  def gotoLine(lineNumber: Double, column: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def gotoLine(lineNumber: Double, column: Double): Unit = js.native
   def gotoLine(lineNumber: Double, column: Double, animate: Boolean): Unit = js.native
   /**
@@ -246,6 +250,7 @@ trait Editor extends OptionProvider {
     * @param column The new column number
     **/
   def moveCursorTo(row: Double): Unit = js.native
+  def moveCursorTo(row: Double, column: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def moveCursorTo(row: Double, column: Double): Unit = js.native
   def moveCursorTo(row: Double, column: Double, animate: Boolean): Unit = js.native
   /**

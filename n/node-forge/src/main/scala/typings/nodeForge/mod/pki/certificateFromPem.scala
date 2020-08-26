@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object certificateFromPem extends js.Object {
   def apply(pem: PEM): Certificate = js.native
+  def apply(pem: PEM, computeHash: js.UndefOr[scala.Nothing], strict: Boolean): Certificate = js.native
   def apply(pem: PEM, computeHash: Boolean): Certificate = js.native
   def apply(pem: PEM, computeHash: Boolean, strict: Boolean): Certificate = js.native
 }

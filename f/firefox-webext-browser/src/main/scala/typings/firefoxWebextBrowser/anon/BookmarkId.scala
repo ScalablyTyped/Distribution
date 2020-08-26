@@ -5,34 +5,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BookmarkId extends js.Object {
   /** Required when context is 'bookmark'. Requires 'bookmark' permission. */
-  var bookmarkId: js.UndefOr[String] = js.undefined
+  var bookmarkId: js.UndefOr[String] = js.native
   /**
     * ContextType to override, to allow menu items from other extensions in the menu. Currently only 'bookmark'
     * and 'tab' are supported. showDefaults cannot be used with this option.
     */
-  var context: js.UndefOr[OverrideContextContext] = js.undefined
+  var context: js.UndefOr[OverrideContextContext] = js.native
   /** Whether to also include default menu items in the menu. */
-  var showDefaults: js.UndefOr[Boolean] = js.undefined
+  var showDefaults: js.UndefOr[Boolean] = js.native
   /** Required when context is 'tab'. Requires 'tabs' permission. */
-  var tabId: js.UndefOr[Double] = js.undefined
+  var tabId: js.UndefOr[Double] = js.native
 }
 
 object BookmarkId {
   @scala.inline
-  def apply(
-    bookmarkId: String = null,
-    context: OverrideContextContext = null,
-    showDefaults: js.UndefOr[Boolean] = js.undefined,
-    tabId: js.UndefOr[Double] = js.undefined
-  ): BookmarkId = {
+  def apply(): BookmarkId = {
     val __obj = js.Dynamic.literal()
-    if (bookmarkId != null) __obj.updateDynamic("bookmarkId")(bookmarkId.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDefaults)) __obj.updateDynamic("showDefaults")(showDefaults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookmarkId]
   }
+  @scala.inline
+  implicit class BookmarkIdOps[Self <: BookmarkId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBookmarkId(value: String): Self = this.set("bookmarkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBookmarkId: Self = this.set("bookmarkId", js.undefined)
+    @scala.inline
+    def setContext(value: OverrideContextContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setShowDefaults(value: Boolean): Self = this.set("showDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDefaults: Self = this.set("showDefaults", js.undefined)
+    @scala.inline
+    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabId: Self = this.set("tabId", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait GetBucketMetricsConfigurationOutput extends js.Object {
 
 object GetBucketMetricsConfigurationOutput {
   @scala.inline
-  def apply(MetricsConfiguration: MetricsConfiguration = null): GetBucketMetricsConfigurationOutput = {
+  def apply(): GetBucketMetricsConfigurationOutput = {
     val __obj = js.Dynamic.literal()
-    if (MetricsConfiguration != null) __obj.updateDynamic("MetricsConfiguration")(MetricsConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketMetricsConfigurationOutput]
   }
+  @scala.inline
+  implicit class GetBucketMetricsConfigurationOutputOps[Self <: GetBucketMetricsConfigurationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricsConfiguration(value: MetricsConfiguration): Self = this.set("MetricsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricsConfiguration: Self = this.set("MetricsConfiguration", js.undefined)
+  }
+  
 }
 

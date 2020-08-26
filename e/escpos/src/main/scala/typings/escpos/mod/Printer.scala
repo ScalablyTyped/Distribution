@@ -35,6 +35,7 @@ class Printer protected () extends js.Object {
   def cashdraw(): Printer = js.native
   def cashdraw(pin: Double): Printer = js.native
   def close(): Printer = js.native
+  def close(callback: js.UndefOr[scala.Nothing], options: js.Any): Printer = js.native
   def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Printer = js.native
   def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit], options: js.Any): Printer = js.native
   /**
@@ -58,6 +59,7 @@ class Printer protected () extends js.Object {
     * @param feed
     */
   def cut(): Printer = js.native
+  def cut(part: js.UndefOr[scala.Nothing], feed: Double): Printer = js.native
   def cut(part: Boolean): Printer = js.native
   def cut(part: Boolean, feed: Double): Printer = js.native
   /**
@@ -124,6 +126,11 @@ class Printer protected () extends js.Object {
   def qrimage(content: String): Printer = js.native
   def qrimage(
     content: String,
+    callback: js.Function2[/* error */ Error | Null, /* printer */ js.UndefOr[this.type], Unit]
+  ): Printer = js.native
+  def qrimage(
+    content: String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* error */ Error | Null, /* printer */ js.UndefOr[this.type], Unit]
   ): Printer = js.native
   def qrimage(content: String, options: Mode): Printer = js.native

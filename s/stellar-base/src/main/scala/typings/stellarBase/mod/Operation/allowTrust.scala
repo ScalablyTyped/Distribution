@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-base", "Operation.allowTrust")
 @js.native
 object allowTrust extends js.Object {
-  def apply(options: AllowTrust): typings.stellarBase.mod.xdr.Operation[AllowTrust_] = js.native
+  def apply(options: AllowTrust): typings.stellarBase.xdrMod.default.Operation[AllowTrust_] = js.native
 }
 

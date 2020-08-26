@@ -14,10 +14,26 @@ trait UpdateTriggerResponse extends js.Object {
 
 object UpdateTriggerResponse {
   @scala.inline
-  def apply(Trigger: Trigger = null): UpdateTriggerResponse = {
+  def apply(): UpdateTriggerResponse = {
     val __obj = js.Dynamic.literal()
-    if (Trigger != null) __obj.updateDynamic("Trigger")(Trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTriggerResponse]
   }
+  @scala.inline
+  implicit class UpdateTriggerResponseOps[Self <: UpdateTriggerResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrigger(value: Trigger): Self = this.set("Trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrigger: Self = this.set("Trigger", js.undefined)
+  }
+  
 }
 

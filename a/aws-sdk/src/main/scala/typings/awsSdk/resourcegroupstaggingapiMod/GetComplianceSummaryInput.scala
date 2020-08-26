@@ -38,24 +38,60 @@ trait GetComplianceSummaryInput extends js.Object {
 
 object GetComplianceSummaryInput {
   @scala.inline
-  def apply(
-    GroupBy: GroupBy = null,
-    MaxResults: js.UndefOr[MaxResultsGetComplianceSummary] = js.undefined,
-    PaginationToken: PaginationToken = null,
-    RegionFilters: RegionFilterList = null,
-    ResourceTypeFilters: ResourceTypeFilterList = null,
-    TagKeyFilters: TagKeyFilterList = null,
-    TargetIdFilters: TargetIdFilterList = null
-  ): GetComplianceSummaryInput = {
+  def apply(): GetComplianceSummaryInput = {
     val __obj = js.Dynamic.literal()
-    if (GroupBy != null) __obj.updateDynamic("GroupBy")(GroupBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken.asInstanceOf[js.Any])
-    if (RegionFilters != null) __obj.updateDynamic("RegionFilters")(RegionFilters.asInstanceOf[js.Any])
-    if (ResourceTypeFilters != null) __obj.updateDynamic("ResourceTypeFilters")(ResourceTypeFilters.asInstanceOf[js.Any])
-    if (TagKeyFilters != null) __obj.updateDynamic("TagKeyFilters")(TagKeyFilters.asInstanceOf[js.Any])
-    if (TargetIdFilters != null) __obj.updateDynamic("TargetIdFilters")(TargetIdFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetComplianceSummaryInput]
   }
+  @scala.inline
+  implicit class GetComplianceSummaryInputOps[Self <: GetComplianceSummaryInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupByVarargs(value: GroupByAttribute*): Self = this.set("GroupBy", js.Array(value :_*))
+    @scala.inline
+    def setGroupBy(value: GroupBy): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupBy: Self = this.set("GroupBy", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResultsGetComplianceSummary): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setPaginationToken(value: PaginationToken): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    @scala.inline
+    def setRegionFiltersVarargs(value: Region*): Self = this.set("RegionFilters", js.Array(value :_*))
+    @scala.inline
+    def setRegionFilters(value: RegionFilterList): Self = this.set("RegionFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionFilters: Self = this.set("RegionFilters", js.undefined)
+    @scala.inline
+    def setResourceTypeFiltersVarargs(value: AmazonResourceType*): Self = this.set("ResourceTypeFilters", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypeFilters(value: ResourceTypeFilterList): Self = this.set("ResourceTypeFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypeFilters: Self = this.set("ResourceTypeFilters", js.undefined)
+    @scala.inline
+    def setTagKeyFiltersVarargs(value: TagKey*): Self = this.set("TagKeyFilters", js.Array(value :_*))
+    @scala.inline
+    def setTagKeyFilters(value: TagKeyFilterList): Self = this.set("TagKeyFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagKeyFilters: Self = this.set("TagKeyFilters", js.undefined)
+    @scala.inline
+    def setTargetIdFiltersVarargs(value: TargetId*): Self = this.set("TargetIdFilters", js.Array(value :_*))
+    @scala.inline
+    def setTargetIdFilters(value: TargetIdFilterList): Self = this.set("TargetIdFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetIdFilters: Self = this.set("TargetIdFilters", js.undefined)
+  }
+  
 }
 

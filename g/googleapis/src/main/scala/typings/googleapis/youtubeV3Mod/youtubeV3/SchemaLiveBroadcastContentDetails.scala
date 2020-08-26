@@ -99,42 +99,86 @@ trait SchemaLiveBroadcastContentDetails extends js.Object {
 
 object SchemaLiveBroadcastContentDetails {
   @scala.inline
-  def apply(
-    boundStreamId: String = null,
-    boundStreamLastUpdateTimeMs: String = null,
-    closedCaptionsType: String = null,
-    enableAutoStart: js.UndefOr[Boolean] = js.undefined,
-    enableClosedCaptions: js.UndefOr[Boolean] = js.undefined,
-    enableContentEncryption: js.UndefOr[Boolean] = js.undefined,
-    enableDvr: js.UndefOr[Boolean] = js.undefined,
-    enableEmbed: js.UndefOr[Boolean] = js.undefined,
-    enableLowLatency: js.UndefOr[Boolean] = js.undefined,
-    latencyPreference: String = null,
-    mesh: String = null,
-    monitorStream: SchemaMonitorStreamInfo = null,
-    projection: String = null,
-    recordFromStart: js.UndefOr[Boolean] = js.undefined,
-    startWithSlate: js.UndefOr[Boolean] = js.undefined,
-    stereoLayout: String = null
-  ): SchemaLiveBroadcastContentDetails = {
+  def apply(): SchemaLiveBroadcastContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (boundStreamId != null) __obj.updateDynamic("boundStreamId")(boundStreamId.asInstanceOf[js.Any])
-    if (boundStreamLastUpdateTimeMs != null) __obj.updateDynamic("boundStreamLastUpdateTimeMs")(boundStreamLastUpdateTimeMs.asInstanceOf[js.Any])
-    if (closedCaptionsType != null) __obj.updateDynamic("closedCaptionsType")(closedCaptionsType.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoStart)) __obj.updateDynamic("enableAutoStart")(enableAutoStart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableClosedCaptions)) __obj.updateDynamic("enableClosedCaptions")(enableClosedCaptions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableContentEncryption)) __obj.updateDynamic("enableContentEncryption")(enableContentEncryption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDvr)) __obj.updateDynamic("enableDvr")(enableDvr.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableEmbed)) __obj.updateDynamic("enableEmbed")(enableEmbed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLowLatency)) __obj.updateDynamic("enableLowLatency")(enableLowLatency.get.asInstanceOf[js.Any])
-    if (latencyPreference != null) __obj.updateDynamic("latencyPreference")(latencyPreference.asInstanceOf[js.Any])
-    if (mesh != null) __obj.updateDynamic("mesh")(mesh.asInstanceOf[js.Any])
-    if (monitorStream != null) __obj.updateDynamic("monitorStream")(monitorStream.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(recordFromStart)) __obj.updateDynamic("recordFromStart")(recordFromStart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startWithSlate)) __obj.updateDynamic("startWithSlate")(startWithSlate.get.asInstanceOf[js.Any])
-    if (stereoLayout != null) __obj.updateDynamic("stereoLayout")(stereoLayout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveBroadcastContentDetails]
   }
+  @scala.inline
+  implicit class SchemaLiveBroadcastContentDetailsOps[Self <: SchemaLiveBroadcastContentDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundStreamId(value: String): Self = this.set("boundStreamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundStreamId: Self = this.set("boundStreamId", js.undefined)
+    @scala.inline
+    def setBoundStreamLastUpdateTimeMs(value: String): Self = this.set("boundStreamLastUpdateTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundStreamLastUpdateTimeMs: Self = this.set("boundStreamLastUpdateTimeMs", js.undefined)
+    @scala.inline
+    def setClosedCaptionsType(value: String): Self = this.set("closedCaptionsType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosedCaptionsType: Self = this.set("closedCaptionsType", js.undefined)
+    @scala.inline
+    def setEnableAutoStart(value: Boolean): Self = this.set("enableAutoStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAutoStart: Self = this.set("enableAutoStart", js.undefined)
+    @scala.inline
+    def setEnableClosedCaptions(value: Boolean): Self = this.set("enableClosedCaptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableClosedCaptions: Self = this.set("enableClosedCaptions", js.undefined)
+    @scala.inline
+    def setEnableContentEncryption(value: Boolean): Self = this.set("enableContentEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableContentEncryption: Self = this.set("enableContentEncryption", js.undefined)
+    @scala.inline
+    def setEnableDvr(value: Boolean): Self = this.set("enableDvr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDvr: Self = this.set("enableDvr", js.undefined)
+    @scala.inline
+    def setEnableEmbed(value: Boolean): Self = this.set("enableEmbed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableEmbed: Self = this.set("enableEmbed", js.undefined)
+    @scala.inline
+    def setEnableLowLatency(value: Boolean): Self = this.set("enableLowLatency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLowLatency: Self = this.set("enableLowLatency", js.undefined)
+    @scala.inline
+    def setLatencyPreference(value: String): Self = this.set("latencyPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatencyPreference: Self = this.set("latencyPreference", js.undefined)
+    @scala.inline
+    def setMesh(value: String): Self = this.set("mesh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMesh: Self = this.set("mesh", js.undefined)
+    @scala.inline
+    def setMonitorStream(value: SchemaMonitorStreamInfo): Self = this.set("monitorStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitorStream: Self = this.set("monitorStream", js.undefined)
+    @scala.inline
+    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setRecordFromStart(value: Boolean): Self = this.set("recordFromStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordFromStart: Self = this.set("recordFromStart", js.undefined)
+    @scala.inline
+    def setStartWithSlate(value: Boolean): Self = this.set("startWithSlate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartWithSlate: Self = this.set("startWithSlate", js.undefined)
+    @scala.inline
+    def setStereoLayout(value: String): Self = this.set("stereoLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStereoLayout: Self = this.set("stereoLayout", js.undefined)
+  }
+  
 }
 

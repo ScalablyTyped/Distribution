@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def mailto(recipients: js.Array[String], fields: StringDictionary[String]): Unit = js.native
+  def mailto(
+    recipients: js.Array[String],
+    fields: StringDictionary[String],
+    recipientsSeparator: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error, Unit]
+  ): Unit = js.native
   def mailto(recipients: js.Array[String], fields: StringDictionary[String], recipientsSeparator: String): Unit = js.native
   def mailto(
     recipients: js.Array[String],

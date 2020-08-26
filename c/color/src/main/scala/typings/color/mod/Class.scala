@@ -27,5 +27,9 @@ class Class[T /* <: ColorParam */] () extends Color[T] {
     obj: T,
     model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
   ) = this()
+  def this(
+    obj: js.UndefOr[scala.Nothing],
+    model: /* keyof color.anon.Typeofconvert */ rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
+  ) = this()
 }
 

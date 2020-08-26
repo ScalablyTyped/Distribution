@@ -12,163 +12,268 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined prop-types.prop-types.ValidationMap<react-ace.react-ace/lib/split.ISplitEditorProps> */
+@js.native
 trait ValidationMapISplitEditor extends js.Object {
-  var annotations: js.UndefOr[Validator[js.UndefOr[js.Array[js.Array[IAnnotation]]]]] = js.undefined
-  var className: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
-  var commands: js.UndefOr[Validator[js.UndefOr[js.Array[ICommand]]]] = js.undefined
-  var cursorStart: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
-  var debounceChangePeriod: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
-  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.undefined
-  var editorProps: js.UndefOr[Validator[js.UndefOr[IEditorProps]]] = js.undefined
-  var enableBasicAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.undefined
-  var enableLiveAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.undefined
-  var focus: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
-  var fontSize: js.UndefOr[Validator[js.UndefOr[Double | String]]] = js.undefined
-  var height: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
-  var highlightActiveLine: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
-  var keyboardHandler: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
-  var markers: js.UndefOr[Validator[js.UndefOr[js.Array[js.Array[IMarker]]]]] = js.undefined
-  var maxLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
-  var minLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
-  var mode: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
-  var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
-  var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ _, Unit]]]] = js.undefined
-  var onBlur: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.undefined
+  var annotations: js.UndefOr[Validator[js.UndefOr[js.Array[js.Array[IAnnotation]]]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+  var commands: js.UndefOr[Validator[js.UndefOr[js.Array[ICommand]]]] = js.native
+  var cursorStart: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+  var debounceChangePeriod: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.native
+  var editorProps: js.UndefOr[Validator[js.UndefOr[IEditorProps]]] = js.native
+  var enableBasicAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.native
+  var enableLiveAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.native
+  var focus: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+  var fontSize: js.UndefOr[Validator[js.UndefOr[Double | String]]] = js.native
+  var height: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+  var highlightActiveLine: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+  var keyboardHandler: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+  var markers: js.UndefOr[Validator[js.UndefOr[js.Array[js.Array[IMarker]]]]] = js.native
+  var maxLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+  var minLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+  var mode: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+  var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+  var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ _, Unit]]]] = js.native
+  var onBlur: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.native
   var onChange: js.UndefOr[
     Validator[
       js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[_], Unit]]
     ]
-  ] = js.undefined
-  var onCopy: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.undefined
+  ] = js.native
+  var onCopy: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.native
   var onCursorChange: js.UndefOr[
     Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]
-  ] = js.undefined
-  var onFocus: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.undefined
-  var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[_], Unit]]]] = js.undefined
-  var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.undefined
-  var onPaste: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.undefined
-  var onScroll: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.undefined
+  ] = js.native
+  var onFocus: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.native
+  var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[_], Unit]]]] = js.native
+  var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.native
+  var onPaste: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.native
+  var onScroll: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.native
   var onSelection: js.UndefOr[
     Validator[
       js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[_], Unit]]
     ]
-  ] = js.undefined
+  ] = js.native
   var onSelectionChange: js.UndefOr[
     Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]
-  ] = js.undefined
-  var orientation: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
-  var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
-  var scrollMargin: js.UndefOr[Validator[js.UndefOr[js.Array[Double]]]] = js.undefined
-  var setOptions: js.UndefOr[Validator[js.UndefOr[IAceOptions]]] = js.undefined
-  var showGutter: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
-  var showPrintMargin: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
-  var splits: js.UndefOr[Validator[Double]] = js.undefined
-  var style: js.UndefOr[Validator[_]] = js.undefined
-  var tabSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
-  var theme: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
-  var value: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.undefined
-  var width: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
-  var wrapEnabled: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
+  ] = js.native
+  var orientation: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+  var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+  var scrollMargin: js.UndefOr[Validator[js.UndefOr[js.Array[Double]]]] = js.native
+  var setOptions: js.UndefOr[Validator[js.UndefOr[IAceOptions]]] = js.native
+  var showGutter: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+  var showPrintMargin: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+  var splits: js.UndefOr[Validator[Double]] = js.native
+  var style: js.UndefOr[Validator[_]] = js.native
+  var tabSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+  var theme: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+  var value: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.native
+  var width: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+  var wrapEnabled: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
 }
 
 object ValidationMapISplitEditor {
   @scala.inline
-  def apply(
-    annotations: Validator[js.UndefOr[js.Array[js.Array[IAnnotation]]]] = null,
-    className: Validator[js.UndefOr[String]] = null,
-    commands: Validator[js.UndefOr[js.Array[ICommand]]] = null,
-    cursorStart: Validator[js.UndefOr[Double]] = null,
-    debounceChangePeriod: Validator[js.UndefOr[Double]] = null,
-    defaultValue: Validator[js.UndefOr[js.Array[String]]] = null,
-    editorProps: Validator[js.UndefOr[IEditorProps]] = null,
-    enableBasicAutocompletion: Validator[js.UndefOr[Boolean | js.Array[String]]] = null,
-    enableLiveAutocompletion: Validator[js.UndefOr[Boolean | js.Array[String]]] = null,
-    focus: Validator[js.UndefOr[Boolean]] = null,
-    fontSize: Validator[js.UndefOr[Double | String]] = null,
-    height: Validator[js.UndefOr[String]] = null,
-    highlightActiveLine: Validator[js.UndefOr[Boolean]] = null,
-    keyboardHandler: Validator[js.UndefOr[String]] = null,
-    markers: Validator[js.UndefOr[js.Array[js.Array[IMarker]]]] = null,
-    maxLines: Validator[js.UndefOr[Double]] = null,
-    minLines: Validator[js.UndefOr[Double]] = null,
-    mode: Validator[js.UndefOr[String]] = null,
-    name: Validator[js.UndefOr[String]] = null,
-    onBeforeLoad: Validator[js.UndefOr[js.Function1[/* ace */ _, Unit]]] = null,
-    onBlur: Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]] = null,
-    onChange: Validator[
-      js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[_], Unit]]
-    ] = null,
-    onCopy: Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]] = null,
-    onCursorChange: Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]] = null,
-    onFocus: Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]] = null,
-    onInput: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[_], Unit]]] = null,
-    onLoad: Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]] = null,
-    onPaste: Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]] = null,
-    onScroll: Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]] = null,
-    onSelection: Validator[
-      js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[_], Unit]]
-    ] = null,
-    onSelectionChange: Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]] = null,
-    orientation: Validator[js.UndefOr[String]] = null,
-    readOnly: Validator[js.UndefOr[Boolean]] = null,
-    scrollMargin: Validator[js.UndefOr[js.Array[Double]]] = null,
-    setOptions: Validator[js.UndefOr[IAceOptions]] = null,
-    showGutter: Validator[js.UndefOr[Boolean]] = null,
-    showPrintMargin: Validator[js.UndefOr[Boolean]] = null,
-    splits: Validator[Double] = null,
-    style: Validator[_] = null,
-    tabSize: Validator[js.UndefOr[Double]] = null,
-    theme: Validator[js.UndefOr[String]] = null,
-    value: Validator[js.UndefOr[js.Array[String]]] = null,
-    width: Validator[js.UndefOr[String]] = null,
-    wrapEnabled: Validator[js.UndefOr[Boolean]] = null
-  ): ValidationMapISplitEditor = {
+  def apply(): ValidationMapISplitEditor = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
-    if (cursorStart != null) __obj.updateDynamic("cursorStart")(cursorStart.asInstanceOf[js.Any])
-    if (debounceChangePeriod != null) __obj.updateDynamic("debounceChangePeriod")(debounceChangePeriod.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (editorProps != null) __obj.updateDynamic("editorProps")(editorProps.asInstanceOf[js.Any])
-    if (enableBasicAutocompletion != null) __obj.updateDynamic("enableBasicAutocompletion")(enableBasicAutocompletion.asInstanceOf[js.Any])
-    if (enableLiveAutocompletion != null) __obj.updateDynamic("enableLiveAutocompletion")(enableLiveAutocompletion.asInstanceOf[js.Any])
-    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (highlightActiveLine != null) __obj.updateDynamic("highlightActiveLine")(highlightActiveLine.asInstanceOf[js.Any])
-    if (keyboardHandler != null) __obj.updateDynamic("keyboardHandler")(keyboardHandler.asInstanceOf[js.Any])
-    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
-    if (minLines != null) __obj.updateDynamic("minLines")(minLines.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBeforeLoad != null) __obj.updateDynamic("onBeforeLoad")(onBeforeLoad.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
-    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy.asInstanceOf[js.Any])
-    if (onCursorChange != null) __obj.updateDynamic("onCursorChange")(onCursorChange.asInstanceOf[js.Any])
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus.asInstanceOf[js.Any])
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput.asInstanceOf[js.Any])
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
-    if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste.asInstanceOf[js.Any])
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll.asInstanceOf[js.Any])
-    if (onSelection != null) __obj.updateDynamic("onSelection")(onSelection.asInstanceOf[js.Any])
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(onSelectionChange.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (scrollMargin != null) __obj.updateDynamic("scrollMargin")(scrollMargin.asInstanceOf[js.Any])
-    if (setOptions != null) __obj.updateDynamic("setOptions")(setOptions.asInstanceOf[js.Any])
-    if (showGutter != null) __obj.updateDynamic("showGutter")(showGutter.asInstanceOf[js.Any])
-    if (showPrintMargin != null) __obj.updateDynamic("showPrintMargin")(showPrintMargin.asInstanceOf[js.Any])
-    if (splits != null) __obj.updateDynamic("splits")(splits.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wrapEnabled != null) __obj.updateDynamic("wrapEnabled")(wrapEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationMapISplitEditor]
   }
+  @scala.inline
+  implicit class ValidationMapISplitEditorOps[Self <: ValidationMapISplitEditor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotations(value: Validator[js.UndefOr[js.Array[js.Array[IAnnotation]]]]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setClassName(value: Validator[js.UndefOr[String]]): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCommands(value: Validator[js.UndefOr[js.Array[ICommand]]]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommands: Self = this.set("commands", js.undefined)
+    @scala.inline
+    def setCursorStart(value: Validator[js.UndefOr[Double]]): Self = this.set("cursorStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursorStart: Self = this.set("cursorStart", js.undefined)
+    @scala.inline
+    def setDebounceChangePeriod(value: Validator[js.UndefOr[Double]]): Self = this.set("debounceChangePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebounceChangePeriod: Self = this.set("debounceChangePeriod", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: Validator[js.UndefOr[js.Array[String]]]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setEditorProps(value: Validator[js.UndefOr[IEditorProps]]): Self = this.set("editorProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorProps: Self = this.set("editorProps", js.undefined)
+    @scala.inline
+    def setEnableBasicAutocompletion(value: Validator[js.UndefOr[Boolean | js.Array[String]]]): Self = this.set("enableBasicAutocompletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableBasicAutocompletion: Self = this.set("enableBasicAutocompletion", js.undefined)
+    @scala.inline
+    def setEnableLiveAutocompletion(value: Validator[js.UndefOr[Boolean | js.Array[String]]]): Self = this.set("enableLiveAutocompletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLiveAutocompletion: Self = this.set("enableLiveAutocompletion", js.undefined)
+    @scala.inline
+    def setFocus(value: Validator[js.UndefOr[Boolean]]): Self = this.set("focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setFontSize(value: Validator[js.UndefOr[Double | String]]): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setHeight(value: Validator[js.UndefOr[String]]): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHighlightActiveLine(value: Validator[js.UndefOr[Boolean]]): Self = this.set("highlightActiveLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightActiveLine: Self = this.set("highlightActiveLine", js.undefined)
+    @scala.inline
+    def setKeyboardHandler(value: Validator[js.UndefOr[String]]): Self = this.set("keyboardHandler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardHandler: Self = this.set("keyboardHandler", js.undefined)
+    @scala.inline
+    def setMarkers(value: Validator[js.UndefOr[js.Array[js.Array[IMarker]]]]): Self = this.set("markers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkers: Self = this.set("markers", js.undefined)
+    @scala.inline
+    def setMaxLines(value: Validator[js.UndefOr[Double]]): Self = this.set("maxLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLines: Self = this.set("maxLines", js.undefined)
+    @scala.inline
+    def setMinLines(value: Validator[js.UndefOr[Double]]): Self = this.set("minLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLines: Self = this.set("minLines", js.undefined)
+    @scala.inline
+    def setMode(value: Validator[js.UndefOr[String]]): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setName(value: Validator[js.UndefOr[String]]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnBeforeLoad(value: Validator[js.UndefOr[js.Function1[/* ace */ _, Unit]]]): Self = this.set("onBeforeLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBeforeLoad: Self = this.set("onBeforeLoad", js.undefined)
+    @scala.inline
+    def setOnBlur(value: Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(
+      value: Validator[
+          js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[_], Unit]]
+        ]
+    ): Self = this.set("onChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnCopy(value: Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]): Self = this.set("onCopy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    @scala.inline
+    def setOnCursorChange(value: Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]): Self = this.set("onCursorChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCursorChange: Self = this.set("onCursorChange", js.undefined)
+    @scala.inline
+    def setOnFocus(value: Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]): Self = this.set("onFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnInput(value: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[_], Unit]]]): Self = this.set("onInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnLoad(value: Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]): Self = this.set("onLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnPaste(value: Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]): Self = this.set("onPaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setOnScroll(value: Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]): Self = this.set("onScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnSelection(
+      value: Validator[
+          js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[_], Unit]]
+        ]
+    ): Self = this.set("onSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelection: Self = this.set("onSelection", js.undefined)
+    @scala.inline
+    def setOnSelectionChange(value: Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]): Self = this.set("onSelectionChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelectionChange: Self = this.set("onSelectionChange", js.undefined)
+    @scala.inline
+    def setOrientation(value: Validator[js.UndefOr[String]]): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Validator[js.UndefOr[Boolean]]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setScrollMargin(value: Validator[js.UndefOr[js.Array[Double]]]): Self = this.set("scrollMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollMargin: Self = this.set("scrollMargin", js.undefined)
+    @scala.inline
+    def setSetOptions(value: Validator[js.UndefOr[IAceOptions]]): Self = this.set("setOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetOptions: Self = this.set("setOptions", js.undefined)
+    @scala.inline
+    def setShowGutter(value: Validator[js.UndefOr[Boolean]]): Self = this.set("showGutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowGutter: Self = this.set("showGutter", js.undefined)
+    @scala.inline
+    def setShowPrintMargin(value: Validator[js.UndefOr[Boolean]]): Self = this.set("showPrintMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPrintMargin: Self = this.set("showPrintMargin", js.undefined)
+    @scala.inline
+    def setSplits(value: Validator[Double]): Self = this.set("splits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplits: Self = this.set("splits", js.undefined)
+    @scala.inline
+    def setStyle(value: Validator[_]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTabSize(value: Validator[js.UndefOr[Double]]): Self = this.set("tabSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabSize: Self = this.set("tabSize", js.undefined)
+    @scala.inline
+    def setTheme(value: Validator[js.UndefOr[String]]): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setValue(value: Validator[js.UndefOr[js.Array[String]]]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWidth(value: Validator[js.UndefOr[String]]): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWrapEnabled(value: Validator[js.UndefOr[Boolean]]): Self = this.set("wrapEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapEnabled: Self = this.set("wrapEnabled", js.undefined)
+  }
+  
 }
 

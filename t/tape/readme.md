@@ -10,9 +10,9 @@ tap-producing test harness for node and browsers
 | ------------------ | :-------------: |
 | Full name          | tape |
 | Keywords           | tap, test, harness, assert, browser |
-| # releases         | 12 |
-| # dependents       | 804 |
-| # downloads        | 24970270 |
+| # releases         | 13 |
+| # dependents       | 807 |
+| # downloads        | 25168195 |
 | # stars            | 154 |
 
 ## Links

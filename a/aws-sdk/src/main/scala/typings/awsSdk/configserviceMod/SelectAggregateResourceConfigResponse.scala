@@ -19,12 +19,36 @@ trait SelectAggregateResourceConfigResponse extends js.Object {
 
 object SelectAggregateResourceConfigResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, QueryInfo: QueryInfo = null, Results: Results = null): SelectAggregateResourceConfigResponse = {
+  def apply(): SelectAggregateResourceConfigResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (QueryInfo != null) __obj.updateDynamic("QueryInfo")(QueryInfo.asInstanceOf[js.Any])
-    if (Results != null) __obj.updateDynamic("Results")(Results.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectAggregateResourceConfigResponse]
   }
+  @scala.inline
+  implicit class SelectAggregateResourceConfigResponseOps[Self <: SelectAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setQueryInfo(value: QueryInfo): Self = this.set("QueryInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryInfo: Self = this.set("QueryInfo", js.undefined)
+    @scala.inline
+    def setResultsVarargs(value: String*): Self = this.set("Results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: Results): Self = this.set("Results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("Results", js.undefined)
+  }
+  
 }
 

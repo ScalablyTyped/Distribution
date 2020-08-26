@@ -22,10 +22,30 @@ trait RegisterUsageRequest extends js.Object {
 
 object RegisterUsageRequest {
   @scala.inline
-  def apply(ProductCode: ProductCode, PublicKeyVersion: VersionInteger, Nonce: Nonce = null): RegisterUsageRequest = {
+  def apply(ProductCode: ProductCode, PublicKeyVersion: VersionInteger): RegisterUsageRequest = {
     val __obj = js.Dynamic.literal(ProductCode = ProductCode.asInstanceOf[js.Any], PublicKeyVersion = PublicKeyVersion.asInstanceOf[js.Any])
-    if (Nonce != null) __obj.updateDynamic("Nonce")(Nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterUsageRequest]
   }
+  @scala.inline
+  implicit class RegisterUsageRequestOps[Self <: RegisterUsageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProductCode(value: ProductCode): Self = this.set("ProductCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPublicKeyVersion(value: VersionInteger): Self = this.set("PublicKeyVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNonce(value: Nonce): Self = this.set("Nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("Nonce", js.undefined)
+  }
+  
 }
 

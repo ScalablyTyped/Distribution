@@ -60,20 +60,61 @@ object CreateGameServerGroupInput {
     LaunchTemplate: LaunchTemplateSpecification,
     MaxSize: PositiveInteger,
     MinSize: WholeNumber,
-    RoleArn: IamRoleArn,
-    AutoScalingPolicy: GameServerGroupAutoScalingPolicy = null,
-    BalancingStrategy: BalancingStrategy = null,
-    GameServerProtectionPolicy: GameServerProtectionPolicy = null,
-    Tags: TagList = null,
-    VpcSubnets: VpcSubnets = null
+    RoleArn: IamRoleArn
   ): CreateGameServerGroupInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any], InstanceDefinitions = InstanceDefinitions.asInstanceOf[js.Any], LaunchTemplate = LaunchTemplate.asInstanceOf[js.Any], MaxSize = MaxSize.asInstanceOf[js.Any], MinSize = MinSize.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (AutoScalingPolicy != null) __obj.updateDynamic("AutoScalingPolicy")(AutoScalingPolicy.asInstanceOf[js.Any])
-    if (BalancingStrategy != null) __obj.updateDynamic("BalancingStrategy")(BalancingStrategy.asInstanceOf[js.Any])
-    if (GameServerProtectionPolicy != null) __obj.updateDynamic("GameServerProtectionPolicy")(GameServerProtectionPolicy.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcSubnets != null) __obj.updateDynamic("VpcSubnets")(VpcSubnets.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGameServerGroupInput]
   }
+  @scala.inline
+  implicit class CreateGameServerGroupInputOps[Self <: CreateGameServerGroupInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGameServerGroupName(value: GameServerGroupName): Self = this.set("GameServerGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceDefinitionsVarargs(value: InstanceDefinition*): Self = this.set("InstanceDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setInstanceDefinitions(value: InstanceDefinitions): Self = this.set("InstanceDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = this.set("LaunchTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxSize(value: PositiveInteger): Self = this.set("MaxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinSize(value: WholeNumber): Self = this.set("MinSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: IamRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoScalingPolicy(value: GameServerGroupAutoScalingPolicy): Self = this.set("AutoScalingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingPolicy: Self = this.set("AutoScalingPolicy", js.undefined)
+    @scala.inline
+    def setBalancingStrategy(value: BalancingStrategy): Self = this.set("BalancingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBalancingStrategy: Self = this.set("BalancingStrategy", js.undefined)
+    @scala.inline
+    def setGameServerProtectionPolicy(value: GameServerProtectionPolicy): Self = this.set("GameServerProtectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerProtectionPolicy: Self = this.set("GameServerProtectionPolicy", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcSubnetsVarargs(value: VpcSubnet*): Self = this.set("VpcSubnets", js.Array(value :_*))
+    @scala.inline
+    def setVpcSubnets(value: VpcSubnets): Self = this.set("VpcSubnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSubnets: Self = this.set("VpcSubnets", js.undefined)
+  }
+  
 }
 

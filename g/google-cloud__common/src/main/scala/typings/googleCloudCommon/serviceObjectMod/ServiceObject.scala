@@ -3,7 +3,6 @@ package typings.googleCloudCommon.serviceObjectMod
 import typings.googleCloudCommon.utilMod.BodyResponseCallback
 import typings.googleCloudCommon.utilMod.DecorateRequestOptions
 import typings.node.eventsMod.EventEmitter
-import typings.std.PromiseConstructor
 import typings.teenyRequest.mod.Request
 import typings.teenyRequest.mod.Response
 import scala.scalajs.js
@@ -25,9 +24,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ServiceObject[T] protected () extends EventEmitter {
   def this(config: ServiceObjectConfig) = this()
-  var Promise: js.UndefOr[PromiseConstructor] = js.native
   var baseUrl: js.UndefOr[String] = js.native
-  var createMethod: js.UndefOr[js.Any] = js.native
+  var createMethod: js.Any = js.native
   var id: js.UndefOr[String] = js.native
   var interceptors: js.Array[Interceptor] = js.native
   var metadata: Metadata = js.native
@@ -107,6 +105,10 @@ class ServiceObject[T] protected () extends EventEmitter {
   def getMetadata(callback: MetadataCallback): Unit = js.native
   def getMetadata(options: GetMetadataOptions): js.Promise[MetadataResponse] = js.native
   def getMetadata(options: GetMetadataOptions, callback: MetadataCallback): Unit = js.native
+  /**
+    * Return the user's custom request interceptors.
+    */
+  def getRequestInterceptors(): js.Array[js.Function] = js.native
   /**
     * Make an authenticated API request.
     *

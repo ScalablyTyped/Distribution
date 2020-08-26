@@ -18,11 +18,30 @@ trait LogicalTableSource extends js.Object {
 
 object LogicalTableSource {
   @scala.inline
-  def apply(JoinInstruction: JoinInstruction = null, PhysicalTableId: PhysicalTableId = null): LogicalTableSource = {
+  def apply(): LogicalTableSource = {
     val __obj = js.Dynamic.literal()
-    if (JoinInstruction != null) __obj.updateDynamic("JoinInstruction")(JoinInstruction.asInstanceOf[js.Any])
-    if (PhysicalTableId != null) __obj.updateDynamic("PhysicalTableId")(PhysicalTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogicalTableSource]
   }
+  @scala.inline
+  implicit class LogicalTableSourceOps[Self <: LogicalTableSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJoinInstruction(value: JoinInstruction): Self = this.set("JoinInstruction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinInstruction: Self = this.set("JoinInstruction", js.undefined)
+    @scala.inline
+    def setPhysicalTableId(value: PhysicalTableId): Self = this.set("PhysicalTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhysicalTableId: Self = this.set("PhysicalTableId", js.undefined)
+  }
+  
 }
 

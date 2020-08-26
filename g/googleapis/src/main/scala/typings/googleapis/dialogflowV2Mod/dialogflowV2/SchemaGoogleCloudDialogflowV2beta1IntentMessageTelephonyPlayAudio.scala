@@ -27,10 +27,26 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends 
 
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio {
   @scala.inline
-  def apply(audioUri: String = null): SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio = {
     val __obj = js.Dynamic.literal()
-    if (audioUri != null) __obj.updateDynamic("audioUri")(audioUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudioOps[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioUri(value: String): Self = this.set("audioUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioUri: Self = this.set("audioUri", js.undefined)
+  }
+  
 }
 

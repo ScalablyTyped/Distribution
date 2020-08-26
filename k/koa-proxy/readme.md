@@ -12,7 +12,7 @@ Proxy middleware for koa
 | Keywords           | koa, middleware, proxy |
 | # releases         | 5 |
 | # dependents       | 74 |
-| # downloads        | 306891 |
+| # downloads        | 318652 |
 | # stars            | 5 |
 
 ## Links

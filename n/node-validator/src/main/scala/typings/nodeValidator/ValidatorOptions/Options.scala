@@ -1,7 +1,5 @@
 package typings.nodeValidator.ValidatorOptions
 
-import typings.std.Number
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,24 +13,18 @@ trait Options extends js.Object
 
 object Options {
   @scala.inline
-  def IsStringOptions(message: String = null, regex: RegExp = null): Options = {
+  def IsStringOptions(): Options = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   @scala.inline
-  def IsNumberOptions(max: Number = null, min: Number = null): Options = {
+  def IsNumberOptions(): Options = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   @scala.inline
-  def IsDateOptions(format: String = null, message: String = null): Options = {
+  def IsDateOptions(): Options = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExtraButtonsOptions extends js.Object {
   /**
     * The container element for the upload button
     *
     * @default `undefined`
     */
-  var element: HTMLElement
+  var element: HTMLElement = js.native
   /**
     * This value will be used when creating the `title` attribute for the underlying `<input type="file">`.
     *
@@ -19,19 +20,19 @@ trait ExtraButtonsOptions extends js.Object {
     *
     * @default `'file input'`
     */
-  var fileInputTitle: js.UndefOr[String] = js.undefined
+  var fileInputTitle: js.UndefOr[String] = js.native
   /**
     * `true` to allow folders to be selected, `false` to allow files to be selected.
     *
     * @default `false`
     */
-  var folders: js.UndefOr[Boolean] = js.undefined
+  var folders: js.UndefOr[Boolean] = js.native
   /**
     * Specify to override the default `multiple` value
     *
     * @default `true`
     */
-  var multiple: js.UndefOr[Boolean] = js.undefined
+  var multiple: js.UndefOr[Boolean] = js.native
   /**
     * Specify to override the default `validation` option specified.
     *
@@ -39,24 +40,45 @@ trait ExtraButtonsOptions extends js.Object {
     *
     * @default `validation`
     */
-  var validation: js.UndefOr[js.Any] = js.undefined
+  var validation: js.UndefOr[js.Any] = js.native
 }
 
 object ExtraButtonsOptions {
   @scala.inline
-  def apply(
-    element: HTMLElement,
-    fileInputTitle: String = null,
-    folders: js.UndefOr[Boolean] = js.undefined,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    validation: js.Any = null
-  ): ExtraButtonsOptions = {
+  def apply(element: HTMLElement): ExtraButtonsOptions = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(folders)) __obj.updateDynamic("folders")(folders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraButtonsOptions]
   }
+  @scala.inline
+  implicit class ExtraButtonsOptionsOps[Self <: ExtraButtonsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileInputTitle(value: String): Self = this.set("fileInputTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileInputTitle: Self = this.set("fileInputTitle", js.undefined)
+    @scala.inline
+    def setFolders(value: Boolean): Self = this.set("folders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolders: Self = this.set("folders", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setValidation(value: js.Any): Self = this.set("validation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidation: Self = this.set("validation", js.undefined)
+  }
+  
 }
 

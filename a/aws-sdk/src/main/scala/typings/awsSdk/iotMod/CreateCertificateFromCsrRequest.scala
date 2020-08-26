@@ -18,13 +18,28 @@ trait CreateCertificateFromCsrRequest extends js.Object {
 
 object CreateCertificateFromCsrRequest {
   @scala.inline
-  def apply(
-    certificateSigningRequest: CertificateSigningRequest,
-    setAsActive: js.UndefOr[SetAsActive] = js.undefined
-  ): CreateCertificateFromCsrRequest = {
+  def apply(certificateSigningRequest: CertificateSigningRequest): CreateCertificateFromCsrRequest = {
     val __obj = js.Dynamic.literal(certificateSigningRequest = certificateSigningRequest.asInstanceOf[js.Any])
-    if (!js.isUndefined(setAsActive)) __obj.updateDynamic("setAsActive")(setAsActive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCertificateFromCsrRequest]
   }
+  @scala.inline
+  implicit class CreateCertificateFromCsrRequestOps[Self <: CreateCertificateFromCsrRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateSigningRequest(value: CertificateSigningRequest): Self = this.set("certificateSigningRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSetAsActive(value: SetAsActive): Self = this.set("setAsActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetAsActive: Self = this.set("setAsActive", js.undefined)
+  }
+  
 }
 

@@ -167,6 +167,7 @@ trait Application extends js.Object {
   def CreateDataAccessPage(FileName: String): DataAccessPage = js.native
   def CreateDataAccessPage(FileName: String, CreateNewFile: Boolean): DataAccessPage = js.native
   def CreateForm(): Form = js.native
+  def CreateForm(Database: js.UndefOr[scala.Nothing], FormTemplate: String): Form = js.native
   def CreateForm(Database: String): Form = js.native
   def CreateForm(Database: String, FormTemplate: String): Form = js.native
   def CreateGroupLevel(ReportName: String, Expression: String, Header: Double, Footer: Double): Double = js.native
@@ -178,12 +179,149 @@ trait Application extends js.Object {
     * @param Replace [Replace=false]
     */
   def CreateNewWorkgroupFile(): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: js.UndefOr[scala.Nothing],
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: js.UndefOr[scala.Nothing],
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: js.UndefOr[scala.Nothing],
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: String
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: js.UndefOr[scala.Nothing],
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: String,
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(Path: js.UndefOr[scala.Nothing], Name: js.UndefOr[scala.Nothing], Company: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: js.UndefOr[scala.Nothing],
+    Company: String,
+    WorkgroupID: js.UndefOr[scala.Nothing],
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: js.UndefOr[scala.Nothing],
+    Company: String,
+    WorkgroupID: String
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: js.UndefOr[scala.Nothing],
+    Company: String,
+    WorkgroupID: String,
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(Path: js.UndefOr[scala.Nothing], Name: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: String,
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: js.UndefOr[scala.Nothing],
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: String,
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: String
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: String,
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: String,
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(Path: js.UndefOr[scala.Nothing], Name: String, Company: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: String,
+    Company: String,
+    WorkgroupID: js.UndefOr[scala.Nothing],
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(Path: js.UndefOr[scala.Nothing], Name: String, Company: String, WorkgroupID: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: js.UndefOr[scala.Nothing],
+    Name: String,
+    Company: String,
+    WorkgroupID: String,
+    Replace: Boolean
+  ): Unit = js.native
   def CreateNewWorkgroupFile(Path: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: String,
+    Name: js.UndefOr[scala.Nothing],
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: js.UndefOr[scala.Nothing],
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: String,
+    Name: js.UndefOr[scala.Nothing],
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: String
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: String,
+    Name: js.UndefOr[scala.Nothing],
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: String,
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(Path: String, Name: js.UndefOr[scala.Nothing], Company: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: String,
+    Name: js.UndefOr[scala.Nothing],
+    Company: String,
+    WorkgroupID: js.UndefOr[scala.Nothing],
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(Path: String, Name: js.UndefOr[scala.Nothing], Company: String, WorkgroupID: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: String,
+    Name: js.UndefOr[scala.Nothing],
+    Company: String,
+    WorkgroupID: String,
+    Replace: Boolean
+  ): Unit = js.native
   def CreateNewWorkgroupFile(Path: String, Name: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: String,
+    Name: String,
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: js.UndefOr[scala.Nothing],
+    Replace: Boolean
+  ): Unit = js.native
+  def CreateNewWorkgroupFile(Path: String, Name: String, Company: js.UndefOr[scala.Nothing], WorkgroupID: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: String,
+    Name: String,
+    Company: js.UndefOr[scala.Nothing],
+    WorkgroupID: String,
+    Replace: Boolean
+  ): Unit = js.native
   def CreateNewWorkgroupFile(Path: String, Name: String, Company: String): Unit = js.native
+  def CreateNewWorkgroupFile(
+    Path: String,
+    Name: String,
+    Company: String,
+    WorkgroupID: js.UndefOr[scala.Nothing],
+    Replace: Boolean
+  ): Unit = js.native
   def CreateNewWorkgroupFile(Path: String, Name: String, Company: String, WorkgroupID: String): Unit = js.native
   def CreateNewWorkgroupFile(Path: String, Name: String, Company: String, WorkgroupID: String, Replace: Boolean): Unit = js.native
   def CreateReport(): Report = js.native
+  def CreateReport(Database: js.UndefOr[scala.Nothing], ReportTemplate: String): Report = js.native
   def CreateReport(Database: String): Report = js.native
   def CreateReport(Database: String, ReportTemplate: String): Report = js.native
   /** @param Section [Section=0] */
@@ -276,6 +414,13 @@ trait Application extends js.Object {
   def Echo(EchoOn: Double): Unit = js.native
   def Echo(EchoOn: Double, bstrStatusBarText: String): Unit = js.native
   def EuroConvert(Number: Double, SourceCurrency: String, TargetCurrency: String): Double = js.native
+  def EuroConvert(
+    Number: Double,
+    SourceCurrency: String,
+    TargetCurrency: String,
+    FullPrecision: js.UndefOr[scala.Nothing],
+    TriangulationPrecision: Double
+  ): Double = js.native
   def EuroConvert(Number: Double, SourceCurrency: String, TargetCurrency: String, FullPrecision: Boolean): Double = js.native
   def EuroConvert(
     Number: Double,
@@ -301,7 +446,42 @@ trait Application extends js.Object {
     OutputFileName: String,
     ObjectName: String,
     ObjectType: AcOutputObjectType,
+    SelectedRecords: js.UndefOr[scala.Nothing],
+    FromPage: js.UndefOr[scala.Nothing],
+    ToPage: Double
+  ): Unit = js.native
+  def ExportCustomFixedFormat(
+    ExternalExporter: js.Any,
+    OutputFileName: String,
+    ObjectName: String,
+    ObjectType: AcOutputObjectType,
+    SelectedRecords: js.UndefOr[scala.Nothing],
+    FromPage: Double
+  ): Unit = js.native
+  def ExportCustomFixedFormat(
+    ExternalExporter: js.Any,
+    OutputFileName: String,
+    ObjectName: String,
+    ObjectType: AcOutputObjectType,
+    SelectedRecords: js.UndefOr[scala.Nothing],
+    FromPage: Double,
+    ToPage: Double
+  ): Unit = js.native
+  def ExportCustomFixedFormat(
+    ExternalExporter: js.Any,
+    OutputFileName: String,
+    ObjectName: String,
+    ObjectType: AcOutputObjectType,
     SelectedRecords: Boolean
+  ): Unit = js.native
+  def ExportCustomFixedFormat(
+    ExternalExporter: js.Any,
+    OutputFileName: String,
+    ObjectName: String,
+    ObjectType: AcOutputObjectType,
+    SelectedRecords: Boolean,
+    FromPage: js.UndefOr[scala.Nothing],
+    ToPage: Double
   ): Unit = js.native
   def ExportCustomFixedFormat(
     ExternalExporter: js.Any,
@@ -373,7 +553,7 @@ trait Application extends js.Object {
     SubAddress: js.UndefOr[String],
     NewWindow: js.UndefOr[Boolean],
     AddHistory: js.UndefOr[Boolean],
-    ExtraInfo: js.UndefOr[ByteArray | String],
+    ExtraInfo: js.UndefOr[String | ByteArray],
     Method: js.UndefOr[MsoExtraInfoMethod],
     HeaderInfo: js.UndefOr[String]
   ): Unit = js.native
@@ -419,8 +599,71 @@ trait Application extends js.Object {
     * @param ListID [ListID='']
     */
   def NewCurrentDatabase(filepath: String): Unit = js.native
+  def NewCurrentDatabase(
+    filepath: String,
+    FileFormat: js.UndefOr[scala.Nothing],
+    Template: js.UndefOr[scala.Nothing],
+    SiteAddress: js.UndefOr[scala.Nothing],
+    ListID: String
+  ): Unit = js.native
+  def NewCurrentDatabase(
+    filepath: String,
+    FileFormat: js.UndefOr[scala.Nothing],
+    Template: js.UndefOr[scala.Nothing],
+    SiteAddress: String
+  ): Unit = js.native
+  def NewCurrentDatabase(
+    filepath: String,
+    FileFormat: js.UndefOr[scala.Nothing],
+    Template: js.UndefOr[scala.Nothing],
+    SiteAddress: String,
+    ListID: String
+  ): Unit = js.native
+  def NewCurrentDatabase(filepath: String, FileFormat: js.UndefOr[scala.Nothing], Template: String): Unit = js.native
+  def NewCurrentDatabase(
+    filepath: String,
+    FileFormat: js.UndefOr[scala.Nothing],
+    Template: String,
+    SiteAddress: js.UndefOr[scala.Nothing],
+    ListID: String
+  ): Unit = js.native
+  def NewCurrentDatabase(filepath: String, FileFormat: js.UndefOr[scala.Nothing], Template: String, SiteAddress: String): Unit = js.native
+  def NewCurrentDatabase(
+    filepath: String,
+    FileFormat: js.UndefOr[scala.Nothing],
+    Template: String,
+    SiteAddress: String,
+    ListID: String
+  ): Unit = js.native
   def NewCurrentDatabase(filepath: String, FileFormat: AcNewDatabaseFormat): Unit = js.native
+  def NewCurrentDatabase(
+    filepath: String,
+    FileFormat: AcNewDatabaseFormat,
+    Template: js.UndefOr[scala.Nothing],
+    SiteAddress: js.UndefOr[scala.Nothing],
+    ListID: String
+  ): Unit = js.native
+  def NewCurrentDatabase(
+    filepath: String,
+    FileFormat: AcNewDatabaseFormat,
+    Template: js.UndefOr[scala.Nothing],
+    SiteAddress: String
+  ): Unit = js.native
+  def NewCurrentDatabase(
+    filepath: String,
+    FileFormat: AcNewDatabaseFormat,
+    Template: js.UndefOr[scala.Nothing],
+    SiteAddress: String,
+    ListID: String
+  ): Unit = js.native
   def NewCurrentDatabase(filepath: String, FileFormat: AcNewDatabaseFormat, Template: String): Unit = js.native
+  def NewCurrentDatabase(
+    filepath: String,
+    FileFormat: AcNewDatabaseFormat,
+    Template: String,
+    SiteAddress: js.UndefOr[scala.Nothing],
+    ListID: String
+  ): Unit = js.native
   def NewCurrentDatabase(filepath: String, FileFormat: AcNewDatabaseFormat, Template: String, SiteAddress: String): Unit = js.native
   def NewCurrentDatabase(
     filepath: String,
@@ -440,6 +683,7 @@ trait Application extends js.Object {
     * @param bstrPassword [bstrPassword='']
     */
   def OpenCurrentDatabase(filepath: String): Unit = js.native
+  def OpenCurrentDatabase(filepath: String, Exclusive: js.UndefOr[scala.Nothing], bstrPassword: String): Unit = js.native
   def OpenCurrentDatabase(filepath: String, Exclusive: Boolean): Unit = js.native
   def OpenCurrentDatabase(filepath: String, Exclusive: Boolean, bstrPassword: String): Unit = js.native
   /** @param Exclusive [Exclusive=false] */
@@ -557,6 +801,13 @@ trait Application extends js.Object {
     * @param ScriptOption [ScriptOption=1]
     */
   def TransformXML(DataSource: String, TransformSource: String, OutputTarget: String): Unit = js.native
+  def TransformXML(
+    DataSource: String,
+    TransformSource: String,
+    OutputTarget: String,
+    WellFormedXMLOutput: js.UndefOr[scala.Nothing],
+    ScriptOption: AcTransformXMLScriptOption
+  ): Unit = js.native
   def TransformXML(DataSource: String, TransformSource: String, OutputTarget: String, WellFormedXMLOutput: Boolean): Unit = js.native
   def TransformXML(
     DataSource: String,

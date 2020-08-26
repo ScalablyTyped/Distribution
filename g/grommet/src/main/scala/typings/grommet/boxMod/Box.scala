@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Box", "Box")
+@JSImport("grommet/es6/components/Box", "Box")
 @js.native
 object Box extends TopLevel[
       FC[

@@ -26,18 +26,42 @@ trait DescribeRegionsRequest extends js.Object {
 
 object DescribeRegionsRequest {
   @scala.inline
-  def apply(
-    AllRegions: js.UndefOr[Boolean] = js.undefined,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    RegionNames: RegionNameStringList = null
-  ): DescribeRegionsRequest = {
+  def apply(): DescribeRegionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllRegions)) __obj.updateDynamic("AllRegions")(AllRegions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (RegionNames != null) __obj.updateDynamic("RegionNames")(RegionNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRegionsRequest]
   }
+  @scala.inline
+  implicit class DescribeRegionsRequestOps[Self <: DescribeRegionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllRegions(value: Boolean): Self = this.set("AllRegions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllRegions: Self = this.set("AllRegions", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setRegionNamesVarargs(value: String*): Self = this.set("RegionNames", js.Array(value :_*))
+    @scala.inline
+    def setRegionNames(value: RegionNameStringList): Self = this.set("RegionNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionNames: Self = this.set("RegionNames", js.undefined)
+  }
+  
 }
 

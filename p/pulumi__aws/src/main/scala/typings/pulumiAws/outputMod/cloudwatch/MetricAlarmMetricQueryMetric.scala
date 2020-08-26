@@ -10,7 +10,7 @@ trait MetricAlarmMetricQueryMetric extends js.Object {
   /**
     * The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
     */
-  var dimensions: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var dimensions: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * The name for this metric.
     * See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
@@ -38,19 +38,40 @@ trait MetricAlarmMetricQueryMetric extends js.Object {
 
 object MetricAlarmMetricQueryMetric {
   @scala.inline
-  def apply(
-    metricName: String,
-    period: Double,
-    stat: String,
-    dimensions: StringDictionary[js.Any] = null,
-    namespace: String = null,
-    unit: String = null
-  ): MetricAlarmMetricQueryMetric = {
+  def apply(metricName: String, period: Double, stat: String): MetricAlarmMetricQueryMetric = {
     val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricAlarmMetricQueryMetric]
   }
+  @scala.inline
+  implicit class MetricAlarmMetricQueryMetricOps[Self <: MetricAlarmMetricQueryMetric] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricName(value: String): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPeriod(value: Double): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStat(value: String): Self = this.set("stat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDimensions(value: StringDictionary[String]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
+  
 }
 

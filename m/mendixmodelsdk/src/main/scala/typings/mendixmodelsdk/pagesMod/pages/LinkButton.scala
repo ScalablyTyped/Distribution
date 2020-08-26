@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/link-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/button-widgets relevant section in reference guide}
   *
   * In version 7.3.0: deleted
   */
@@ -29,9 +29,9 @@ class LinkButton protected () extends Button {
   @JSName("model")
   var model_FLinkButton: IModel = js.native
   def address: StaticOrDynamicString = js.native
-  def address(newValue: StaticOrDynamicString): js.Any = js.native
+  def address_=(newValue: StaticOrDynamicString): Unit = js.native
   def linkType: LinkType = js.native
-  def linkType(newValue: LinkType): js.Any = js.native
+  def linkType_=(newValue: LinkType): Unit = js.native
 }
 
 /* static members */

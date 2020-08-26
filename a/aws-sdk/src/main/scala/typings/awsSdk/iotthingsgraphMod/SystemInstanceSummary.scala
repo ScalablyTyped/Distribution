@@ -46,28 +46,58 @@ trait SystemInstanceSummary extends js.Object {
 
 object SystemInstanceSummary {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    createdAt: Timestamp = null,
-    greengrassGroupId: GreengrassGroupId = null,
-    greengrassGroupName: GroupName = null,
-    greengrassGroupVersionId: GreengrassGroupVersionId = null,
-    id: Urn = null,
-    status: SystemInstanceDeploymentStatus = null,
-    target: DeploymentTarget = null,
-    updatedAt: Timestamp = null
-  ): SystemInstanceSummary = {
+  def apply(): SystemInstanceSummary = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (greengrassGroupId != null) __obj.updateDynamic("greengrassGroupId")(greengrassGroupId.asInstanceOf[js.Any])
-    if (greengrassGroupName != null) __obj.updateDynamic("greengrassGroupName")(greengrassGroupName.asInstanceOf[js.Any])
-    if (greengrassGroupVersionId != null) __obj.updateDynamic("greengrassGroupVersionId")(greengrassGroupVersionId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInstanceSummary]
   }
+  @scala.inline
+  implicit class SystemInstanceSummaryOps[Self <: SystemInstanceSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setGreengrassGroupId(value: GreengrassGroupId): Self = this.set("greengrassGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreengrassGroupId: Self = this.set("greengrassGroupId", js.undefined)
+    @scala.inline
+    def setGreengrassGroupName(value: GroupName): Self = this.set("greengrassGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreengrassGroupName: Self = this.set("greengrassGroupName", js.undefined)
+    @scala.inline
+    def setGreengrassGroupVersionId(value: GreengrassGroupVersionId): Self = this.set("greengrassGroupVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreengrassGroupVersionId: Self = this.set("greengrassGroupVersionId", js.undefined)
+    @scala.inline
+    def setId(value: Urn): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setStatus(value: SystemInstanceDeploymentStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTarget(value: DeploymentTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+  }
+  
 }
 

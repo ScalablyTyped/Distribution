@@ -50,30 +50,68 @@ trait InstanceRecommendation extends js.Object {
 
 object InstanceRecommendation {
   @scala.inline
-  def apply(
-    accountId: AccountId = null,
-    currentInstanceType: CurrentInstanceType = null,
-    finding: Finding = null,
-    instanceArn: InstanceArn = null,
-    instanceName: InstanceName = null,
-    lastRefreshTimestamp: LastRefreshTimestamp = null,
-    lookBackPeriodInDays: js.UndefOr[LookBackPeriodInDays] = js.undefined,
-    recommendationOptions: RecommendationOptions = null,
-    recommendationSources: RecommendationSources = null,
-    utilizationMetrics: UtilizationMetrics = null
-  ): InstanceRecommendation = {
+  def apply(): InstanceRecommendation = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (currentInstanceType != null) __obj.updateDynamic("currentInstanceType")(currentInstanceType.asInstanceOf[js.Any])
-    if (finding != null) __obj.updateDynamic("finding")(finding.asInstanceOf[js.Any])
-    if (instanceArn != null) __obj.updateDynamic("instanceArn")(instanceArn.asInstanceOf[js.Any])
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
-    if (lastRefreshTimestamp != null) __obj.updateDynamic("lastRefreshTimestamp")(lastRefreshTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(lookBackPeriodInDays)) __obj.updateDynamic("lookBackPeriodInDays")(lookBackPeriodInDays.get.asInstanceOf[js.Any])
-    if (recommendationOptions != null) __obj.updateDynamic("recommendationOptions")(recommendationOptions.asInstanceOf[js.Any])
-    if (recommendationSources != null) __obj.updateDynamic("recommendationSources")(recommendationSources.asInstanceOf[js.Any])
-    if (utilizationMetrics != null) __obj.updateDynamic("utilizationMetrics")(utilizationMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceRecommendation]
   }
+  @scala.inline
+  implicit class InstanceRecommendationOps[Self <: InstanceRecommendation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setCurrentInstanceType(value: CurrentInstanceType): Self = this.set("currentInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentInstanceType: Self = this.set("currentInstanceType", js.undefined)
+    @scala.inline
+    def setFinding(value: Finding): Self = this.set("finding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinding: Self = this.set("finding", js.undefined)
+    @scala.inline
+    def setInstanceArn(value: InstanceArn): Self = this.set("instanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceArn: Self = this.set("instanceArn", js.undefined)
+    @scala.inline
+    def setInstanceName(value: InstanceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    @scala.inline
+    def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = this.set("lastRefreshTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRefreshTimestamp: Self = this.set("lastRefreshTimestamp", js.undefined)
+    @scala.inline
+    def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = this.set("lookBackPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookBackPeriodInDays: Self = this.set("lookBackPeriodInDays", js.undefined)
+    @scala.inline
+    def setRecommendationOptionsVarargs(value: InstanceRecommendationOption*): Self = this.set("recommendationOptions", js.Array(value :_*))
+    @scala.inline
+    def setRecommendationOptions(value: RecommendationOptions): Self = this.set("recommendationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationOptions: Self = this.set("recommendationOptions", js.undefined)
+    @scala.inline
+    def setRecommendationSourcesVarargs(value: RecommendationSource*): Self = this.set("recommendationSources", js.Array(value :_*))
+    @scala.inline
+    def setRecommendationSources(value: RecommendationSources): Self = this.set("recommendationSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationSources: Self = this.set("recommendationSources", js.undefined)
+    @scala.inline
+    def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = this.set("utilizationMetrics", js.Array(value :_*))
+    @scala.inline
+    def setUtilizationMetrics(value: UtilizationMetrics): Self = this.set("utilizationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtilizationMetrics: Self = this.set("utilizationMetrics", js.undefined)
+  }
+  
 }
 

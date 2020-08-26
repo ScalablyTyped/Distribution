@@ -26,17 +26,36 @@ trait WorkflowExecutionSignaledEventAttributes extends js.Object {
 
 object WorkflowExecutionSignaledEventAttributes {
   @scala.inline
-  def apply(
-    signalName: SignalName,
-    externalInitiatedEventId: js.UndefOr[EventId] = js.undefined,
-    externalWorkflowExecution: WorkflowExecution = null,
-    input: Data = null
-  ): WorkflowExecutionSignaledEventAttributes = {
+  def apply(signalName: SignalName): WorkflowExecutionSignaledEventAttributes = {
     val __obj = js.Dynamic.literal(signalName = signalName.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalInitiatedEventId)) __obj.updateDynamic("externalInitiatedEventId")(externalInitiatedEventId.get.asInstanceOf[js.Any])
-    if (externalWorkflowExecution != null) __obj.updateDynamic("externalWorkflowExecution")(externalWorkflowExecution.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionSignaledEventAttributes]
   }
+  @scala.inline
+  implicit class WorkflowExecutionSignaledEventAttributesOps[Self <: WorkflowExecutionSignaledEventAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSignalName(value: SignalName): Self = this.set("signalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExternalInitiatedEventId(value: EventId): Self = this.set("externalInitiatedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalInitiatedEventId: Self = this.set("externalInitiatedEventId", js.undefined)
+    @scala.inline
+    def setExternalWorkflowExecution(value: WorkflowExecution): Self = this.set("externalWorkflowExecution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalWorkflowExecution: Self = this.set("externalWorkflowExecution", js.undefined)
+    @scala.inline
+    def setInput(value: Data): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+  }
+  
 }
 

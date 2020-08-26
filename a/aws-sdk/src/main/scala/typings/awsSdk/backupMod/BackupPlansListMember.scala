@@ -42,26 +42,54 @@ trait BackupPlansListMember extends js.Object {
 
 object BackupPlansListMember {
   @scala.inline
-  def apply(
-    BackupPlanArn: ARN = null,
-    BackupPlanId: String = null,
-    BackupPlanName: BackupPlanName = null,
-    CreationDate: timestamp = null,
-    CreatorRequestId: String = null,
-    DeletionDate: timestamp = null,
-    LastExecutionDate: timestamp = null,
-    VersionId: String = null
-  ): BackupPlansListMember = {
+  def apply(): BackupPlansListMember = {
     val __obj = js.Dynamic.literal()
-    if (BackupPlanArn != null) __obj.updateDynamic("BackupPlanArn")(BackupPlanArn.asInstanceOf[js.Any])
-    if (BackupPlanId != null) __obj.updateDynamic("BackupPlanId")(BackupPlanId.asInstanceOf[js.Any])
-    if (BackupPlanName != null) __obj.updateDynamic("BackupPlanName")(BackupPlanName.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
-    if (DeletionDate != null) __obj.updateDynamic("DeletionDate")(DeletionDate.asInstanceOf[js.Any])
-    if (LastExecutionDate != null) __obj.updateDynamic("LastExecutionDate")(LastExecutionDate.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupPlansListMember]
   }
+  @scala.inline
+  implicit class BackupPlansListMemberOps[Self <: BackupPlansListMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupPlanArn(value: ARN): Self = this.set("BackupPlanArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanArn: Self = this.set("BackupPlanArn", js.undefined)
+    @scala.inline
+    def setBackupPlanId(value: String): Self = this.set("BackupPlanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanId: Self = this.set("BackupPlanId", js.undefined)
+    @scala.inline
+    def setBackupPlanName(value: BackupPlanName): Self = this.set("BackupPlanName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanName: Self = this.set("BackupPlanName", js.undefined)
+    @scala.inline
+    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setCreatorRequestId(value: String): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    @scala.inline
+    def setDeletionDate(value: timestamp): Self = this.set("DeletionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionDate: Self = this.set("DeletionDate", js.undefined)
+    @scala.inline
+    def setLastExecutionDate(value: timestamp): Self = this.set("LastExecutionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastExecutionDate: Self = this.set("LastExecutionDate", js.undefined)
+    @scala.inline
+    def setVersionId(value: String): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

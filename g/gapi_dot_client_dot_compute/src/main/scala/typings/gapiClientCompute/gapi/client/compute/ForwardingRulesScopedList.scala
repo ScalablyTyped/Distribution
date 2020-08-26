@@ -5,20 +5,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ForwardingRulesScopedList extends js.Object {
   /** List of forwarding rules contained in this scope. */
-  var forwardingRules: js.UndefOr[js.Array[ForwardingRule]] = js.undefined
+  var forwardingRules: js.UndefOr[js.Array[ForwardingRule]] = js.native
   /** Informational warning which replaces the list of forwarding rules when the list is empty. */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code] = js.native
 }
 
 object ForwardingRulesScopedList {
   @scala.inline
-  def apply(forwardingRules: js.Array[ForwardingRule] = null, warning: Code = null): ForwardingRulesScopedList = {
+  def apply(): ForwardingRulesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (forwardingRules != null) __obj.updateDynamic("forwardingRules")(forwardingRules.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardingRulesScopedList]
   }
+  @scala.inline
+  implicit class ForwardingRulesScopedListOps[Self <: ForwardingRulesScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForwardingRulesVarargs(value: ForwardingRule*): Self = this.set("forwardingRules", js.Array(value :_*))
+    @scala.inline
+    def setForwardingRules(value: js.Array[ForwardingRule]): Self = this.set("forwardingRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForwardingRules: Self = this.set("forwardingRules", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

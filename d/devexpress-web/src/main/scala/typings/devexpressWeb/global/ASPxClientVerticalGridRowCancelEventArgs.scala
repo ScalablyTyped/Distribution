@@ -16,15 +16,5 @@ class ASPxClientVerticalGridRowCancelEventArgs protected ()
     * @param row An ASPxClientVerticalGridRowCancelEventArgs object that represents the processed row.
     */
   def this(row: typings.devexpressWeb.ASPxClientVerticalGridRow) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the processed client row.
-    */
-  /* CompleteClass */
-  override var row: typings.devexpressWeb.ASPxClientVerticalGridRow = js.native
 }
 

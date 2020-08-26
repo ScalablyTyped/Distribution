@@ -47,16 +47,45 @@ object RestoreTableFromClusterSnapshotMessage {
     NewTableName: String,
     SnapshotIdentifier: String,
     SourceDatabaseName: String,
-    SourceTableName: String,
-    SourceSchemaName: String = null,
-    TargetDatabaseName: String = null,
-    TargetSchemaName: String = null
+    SourceTableName: String
   ): RestoreTableFromClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], NewTableName = NewTableName.asInstanceOf[js.Any], SnapshotIdentifier = SnapshotIdentifier.asInstanceOf[js.Any], SourceDatabaseName = SourceDatabaseName.asInstanceOf[js.Any], SourceTableName = SourceTableName.asInstanceOf[js.Any])
-    if (SourceSchemaName != null) __obj.updateDynamic("SourceSchemaName")(SourceSchemaName.asInstanceOf[js.Any])
-    if (TargetDatabaseName != null) __obj.updateDynamic("TargetDatabaseName")(TargetDatabaseName.asInstanceOf[js.Any])
-    if (TargetSchemaName != null) __obj.updateDynamic("TargetSchemaName")(TargetSchemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreTableFromClusterSnapshotMessage]
   }
+  @scala.inline
+  implicit class RestoreTableFromClusterSnapshotMessageOps[Self <: RestoreTableFromClusterSnapshotMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewTableName(value: String): Self = this.set("NewTableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotIdentifier(value: String): Self = this.set("SnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceDatabaseName(value: String): Self = this.set("SourceDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceTableName(value: String): Self = this.set("SourceTableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceSchemaName(value: String): Self = this.set("SourceSchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSchemaName: Self = this.set("SourceSchemaName", js.undefined)
+    @scala.inline
+    def setTargetDatabaseName(value: String): Self = this.set("TargetDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetDatabaseName: Self = this.set("TargetDatabaseName", js.undefined)
+    @scala.inline
+    def setTargetSchemaName(value: String): Self = this.set("TargetSchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetSchemaName: Self = this.set("TargetSchemaName", js.undefined)
+  }
+  
 }
 

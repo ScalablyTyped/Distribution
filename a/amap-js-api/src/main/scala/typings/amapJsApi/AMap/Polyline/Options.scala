@@ -1,97 +1,92 @@
 package typings.amapJsApi.AMap.Polyline
 
 import typings.amapJsApi.AMap.LocationValue
-import typings.amapJsApi.AMap.Map
-import typings.amapJsApi.AMap.StrokeLineCap
-import typings.amapJsApi.AMap.StrokeLineJoin
-import typings.amapJsApi.AMap.StrokeStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options[ExtraData]
   extends typings.amapJsApi.AMap.PathOverlay.Options[ExtraData] {
   /**
     * 描边的宽度
     */
-  var borderWeight: js.UndefOr[Double] = js.undefined
+  var borderWeight: js.UndefOr[Double] = js.native
   /**
     * 方向箭头颜色
     */
-  var dirColor: js.UndefOr[String] = js.undefined
+  var dirColor: js.UndefOr[String] = js.native
   /**
     * 是否绘制成大地线
     */
-  var geodesic: js.UndefOr[Boolean] = js.undefined
+  var geodesic: js.UndefOr[Boolean] = js.native
   /**
     * 线条是否带描边
     */
-  var isOutline: js.UndefOr[Boolean] = js.undefined
+  var isOutline: js.UndefOr[Boolean] = js.native
   /**
     * 线条描边颜色
     */
-  var outlineColor: js.UndefOr[String] = js.undefined
+  var outlineColor: js.UndefOr[String] = js.native
   // internal
   /**
     * 折线的节点数组
     */
-  var path: js.UndefOr[js.Array[LocationValue]] = js.undefined
+  var path: js.UndefOr[js.Array[LocationValue]] = js.native
   /**
     * 是否延路径显示方向箭头
     */
-  var showDir: js.UndefOr[Boolean] = js.undefined
+  var showDir: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply[ExtraData](
-    borderWeight: js.UndefOr[Double] = js.undefined,
-    bubble: js.UndefOr[Boolean] = js.undefined,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    cursor: String = null,
-    dirColor: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    extData: ExtraData = null,
-    geodesic: js.UndefOr[Boolean] = js.undefined,
-    isOutline: js.UndefOr[Boolean] = js.undefined,
-    lineCap: StrokeLineCap = null,
-    lineJoin: StrokeLineJoin = null,
-    map: Map = null,
-    outlineColor: String = null,
-    path: js.Array[LocationValue] = null,
-    showDir: js.UndefOr[Boolean] = js.undefined,
-    strokeColor: String = null,
-    strokeDasharray: js.Array[Double] = null,
-    strokeOpacity: js.UndefOr[Double] = js.undefined,
-    strokeStyle: StrokeStyle = null,
-    strokeWeight: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): Options[ExtraData] = {
+  def apply[ExtraData](): Options[ExtraData] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(borderWeight)) __obj.updateDynamic("borderWeight")(borderWeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubble)) __obj.updateDynamic("bubble")(bubble.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (dirColor != null) __obj.updateDynamic("dirColor")(dirColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOutline)) __obj.updateDynamic("isOutline")(isOutline.get.asInstanceOf[js.Any])
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDir)) __obj.updateDynamic("showDir")(showDir.get.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeOpacity)) __obj.updateDynamic("strokeOpacity")(strokeOpacity.get.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeWeight)) __obj.updateDynamic("strokeWeight")(strokeWeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[ExtraData]]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderWeight(value: Double): Self = this.set("borderWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWeight: Self = this.set("borderWeight", js.undefined)
+    @scala.inline
+    def setDirColor(value: String): Self = this.set("dirColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirColor: Self = this.set("dirColor", js.undefined)
+    @scala.inline
+    def setGeodesic(value: Boolean): Self = this.set("geodesic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeodesic: Self = this.set("geodesic", js.undefined)
+    @scala.inline
+    def setIsOutline(value: Boolean): Self = this.set("isOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOutline: Self = this.set("isOutline", js.undefined)
+    @scala.inline
+    def setOutlineColor(value: String): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    @scala.inline
+    def setPathVarargs(value: LocationValue*): Self = this.set("path", js.Array(value :_*))
+    @scala.inline
+    def setPath(value: js.Array[LocationValue]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setShowDir(value: Boolean): Self = this.set("showDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDir: Self = this.set("showDir", js.undefined)
+  }
+  
 }
 

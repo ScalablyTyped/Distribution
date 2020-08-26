@@ -19,6 +19,7 @@ class default protected () extends IsoFS {
     */
   def this(data: Buffer) = this()
   def this(data: Buffer, name: String) = this()
+  def this(data: Buffer, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
   def this(data: Buffer, name: String, deprecateMsg: Boolean) = this()
 }
 

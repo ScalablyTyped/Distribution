@@ -13,6 +13,7 @@ object utilsPluginsMod extends js.Object {
   class PluginHost () extends AbstractComponent[Application] {
     var discoverNpmPlugins: js.Any = js.native
     var plugins: js.Array[String] = js.native
+    var resolvePluginPaths: js.Any = js.native
     def load(): Boolean = js.native
   }
   

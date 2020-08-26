@@ -44,22 +44,50 @@ trait SchemaCreativeSize extends js.Object {
 
 object SchemaCreativeSize {
   @scala.inline
-  def apply(
-    allowedFormats: js.Array[String] = null,
-    companionSizes: js.Array[SchemaSize] = null,
-    creativeSizeType: String = null,
-    nativeTemplate: String = null,
-    size: SchemaSize = null,
-    skippableAdType: String = null
-  ): SchemaCreativeSize = {
+  def apply(): SchemaCreativeSize = {
     val __obj = js.Dynamic.literal()
-    if (allowedFormats != null) __obj.updateDynamic("allowedFormats")(allowedFormats.asInstanceOf[js.Any])
-    if (companionSizes != null) __obj.updateDynamic("companionSizes")(companionSizes.asInstanceOf[js.Any])
-    if (creativeSizeType != null) __obj.updateDynamic("creativeSizeType")(creativeSizeType.asInstanceOf[js.Any])
-    if (nativeTemplate != null) __obj.updateDynamic("nativeTemplate")(nativeTemplate.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (skippableAdType != null) __obj.updateDynamic("skippableAdType")(skippableAdType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreativeSize]
   }
+  @scala.inline
+  implicit class SchemaCreativeSizeOps[Self <: SchemaCreativeSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedFormatsVarargs(value: String*): Self = this.set("allowedFormats", js.Array(value :_*))
+    @scala.inline
+    def setAllowedFormats(value: js.Array[String]): Self = this.set("allowedFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedFormats: Self = this.set("allowedFormats", js.undefined)
+    @scala.inline
+    def setCompanionSizesVarargs(value: SchemaSize*): Self = this.set("companionSizes", js.Array(value :_*))
+    @scala.inline
+    def setCompanionSizes(value: js.Array[SchemaSize]): Self = this.set("companionSizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanionSizes: Self = this.set("companionSizes", js.undefined)
+    @scala.inline
+    def setCreativeSizeType(value: String): Self = this.set("creativeSizeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeSizeType: Self = this.set("creativeSizeType", js.undefined)
+    @scala.inline
+    def setNativeTemplate(value: String): Self = this.set("nativeTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNativeTemplate: Self = this.set("nativeTemplate", js.undefined)
+    @scala.inline
+    def setSize(value: SchemaSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSkippableAdType(value: String): Self = this.set("skippableAdType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkippableAdType: Self = this.set("skippableAdType", js.undefined)
+  }
+  
 }
 

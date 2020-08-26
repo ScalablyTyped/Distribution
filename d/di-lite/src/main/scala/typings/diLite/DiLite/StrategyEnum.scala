@@ -15,6 +15,14 @@ trait StrategyEnum extends js.Object {
     dependencies: js.Any
   ): TObject = js.native
   def singleton[TObject, TType](name: String, `object`: TObject, `type`: TType, args: js.Any): TObject = js.native
+  def singleton[TObject, TType](
+    name: String,
+    `object`: TObject,
+    `type`: TType,
+    args: js.Any,
+    ctx: js.UndefOr[scala.Nothing],
+    dependencies: js.Any
+  ): TObject = js.native
   def singleton[TObject, TType](name: String, `object`: TObject, `type`: TType, args: js.Any, ctx: CreateContext): TObject = js.native
   def singleton[TObject, TType](
     name: String,

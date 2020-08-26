@@ -12,7 +12,7 @@ convert a string to snake case
 | Keywords           | snake, snake_case, string, no-dependencies, just |
 | # releases         | 2 |
 | # dependents       | 18 |
-| # downloads        | 562595 |
+| # downloads        | 552419 |
 | # stars            | 1 |
 
 ## Links

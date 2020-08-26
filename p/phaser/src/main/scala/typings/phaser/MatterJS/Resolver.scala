@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   *
   * @class Resolver
   */
+@js.native
 trait Resolver extends js.Object
 

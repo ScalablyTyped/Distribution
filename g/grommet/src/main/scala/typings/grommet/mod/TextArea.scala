@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "TextArea")
+@JSImport("grommet/es6", "TextArea")
 @js.native
 object TextArea extends TopLevel[
       FC[

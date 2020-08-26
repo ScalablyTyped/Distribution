@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * interface element.
   * @since OOo 2.0
   */
+@js.native
 trait XUIElementFactory extends XInterface {
   /**
     * creates a new instances of a specific user interface element.
@@ -26,7 +27,7 @@ trait XUIElementFactory extends XInterface {
     * @see ConfigurableUIElement
     * @see UIElement
     */
-  def createUIElement(ResourceURL: String, Args: SeqEquiv[PropertyValue]): XUIElement
+  def createUIElement(ResourceURL: String, Args: SeqEquiv[PropertyValue]): XUIElement = js.native
 }
 
 object XUIElementFactory {
@@ -40,5 +41,20 @@ object XUIElementFactory {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createUIElement = js.Any.fromFunction2(createUIElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XUIElementFactory]
   }
+  @scala.inline
+  implicit class XUIElementFactoryOps[Self <: XUIElementFactory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateUIElement(value: (String, SeqEquiv[PropertyValue]) => XUIElement): Self = this.set("createUIElement", js.Any.fromFunction2(value))
+  }
+  
 }
 

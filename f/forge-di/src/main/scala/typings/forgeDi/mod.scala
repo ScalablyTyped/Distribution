@@ -2,10 +2,8 @@ package typings.forgeDi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.forgeDi.anon.Partialdefault
-import typings.forgeDi.argumentsMod.Arguments
 import typings.forgeDi.configMod.Config
 import typings.forgeDi.constructorMod.Constructor
-import typings.forgeDi.dependencyMod.Dependency
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,14 +55,7 @@ object mod extends js.Object {
   
   @js.native
   class RegexInspector ()
-    extends typings.forgeDi.regexInspectorMod.RegexInspector {
-    /* CompleteClass */
-    override var getParameterNames: js.Any = js.native
-    /* CompleteClass */
-    override def findConstructor(func: Constructor): Constructor = js.native
-    /* CompleteClass */
-    override def getDependencies(func: js.Function): js.Array[Dependency] = js.native
-  }
+    extends typings.forgeDi.regexInspectorMod.RegexInspector
   
   @js.native
   class ResolutionError protected ()
@@ -84,14 +75,7 @@ object mod extends js.Object {
   
   @js.native
   class TransientLifecycle ()
-    extends typings.forgeDi.transientLifecycleMod.TransientLifecycle {
-    /* CompleteClass */
-    override def resolve(
-      resolver: typings.forgeDi.resolverMod.default,
-      context: typings.forgeDi.contextMod.default,
-      args: Arguments
-    ): js.Any = js.native
-  }
+    extends typings.forgeDi.transientLifecycleMod.TransientLifecycle
   
   @js.native
   class TypeResolver protected ()

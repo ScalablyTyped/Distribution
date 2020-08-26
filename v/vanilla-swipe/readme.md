@@ -10,9 +10,9 @@ Tiny vanilla JS library to detect swipe direction.
 | ------------------ | :-------------: |
 | Full name          | vanilla-swipe |
 | Keywords           | swipe, touch, touchable, swipeable, drag and drop |
-| # releases         | 10 |
+| # releases         | 12 |
 | # dependents       | 2 |
-| # downloads        | 23153 |
+| # downloads        | 36369 |
 | # stars            | 0 |
 
 ## Links

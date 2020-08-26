@@ -37,7 +37,7 @@ class ODataMappedValue protected () extends MappedValue {
   @JSName("containerAsAttribute")
   def containerAsAttribute_MODataMappedValue: Attribute = js.native
   def remoteName: String = js.native
-  def remoteName(newValue: String): js.Any = js.native
+  def remoteName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

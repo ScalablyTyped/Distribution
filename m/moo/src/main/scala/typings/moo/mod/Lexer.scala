@@ -36,6 +36,7 @@ trait Lexer extends js.Object {
     * Empty the internal buffer of the lexer, and set the line, column, and offset counts back to their initial value.
     */
   def reset(): this.type = js.native
+  def reset(chunk: js.UndefOr[scala.Nothing], state: LexerState): this.type = js.native
   def reset(chunk: String): this.type = js.native
   def reset(chunk: String, state: LexerState): this.type = js.native
   /**

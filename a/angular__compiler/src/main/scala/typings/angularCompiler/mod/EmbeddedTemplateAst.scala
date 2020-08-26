@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "EmbeddedTemplateAst")
 @js.native
 class EmbeddedTemplateAst protected ()
-  extends typings.angularCompiler.publicApiMod.EmbeddedTemplateAst {
+  extends typings.angularCompiler.compilerMod.EmbeddedTemplateAst {
   def this(
     attrs: js.Array[typings.angularCompiler.templateAstMod.AttrAst],
     outputs: js.Array[typings.angularCompiler.templateAstMod.BoundEventAst],

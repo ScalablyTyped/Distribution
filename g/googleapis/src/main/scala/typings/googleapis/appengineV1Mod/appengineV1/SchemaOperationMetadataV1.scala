@@ -45,26 +45,56 @@ trait SchemaOperationMetadataV1 extends js.Object {
 
 object SchemaOperationMetadataV1 {
   @scala.inline
-  def apply(
-    createVersionMetadata: SchemaCreateVersionMetadataV1 = null,
-    endTime: String = null,
-    ephemeralMessage: String = null,
-    insertTime: String = null,
-    method: String = null,
-    target: String = null,
-    user: String = null,
-    warning: js.Array[String] = null
-  ): SchemaOperationMetadataV1 = {
+  def apply(): SchemaOperationMetadataV1 = {
     val __obj = js.Dynamic.literal()
-    if (createVersionMetadata != null) __obj.updateDynamic("createVersionMetadata")(createVersionMetadata.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (ephemeralMessage != null) __obj.updateDynamic("ephemeralMessage")(ephemeralMessage.asInstanceOf[js.Any])
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOperationMetadataV1]
   }
+  @scala.inline
+  implicit class SchemaOperationMetadataV1Ops[Self <: SchemaOperationMetadataV1] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateVersionMetadata(value: SchemaCreateVersionMetadataV1): Self = this.set("createVersionMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateVersionMetadata: Self = this.set("createVersionMetadata", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setEphemeralMessage(value: String): Self = this.set("ephemeralMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEphemeralMessage: Self = this.set("ephemeralMessage", js.undefined)
+    @scala.inline
+    def setInsertTime(value: String): Self = this.set("insertTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertTime: Self = this.set("insertTime", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+    @scala.inline
+    def setWarningVarargs(value: String*): Self = this.set("warning", js.Array(value :_*))
+    @scala.inline
+    def setWarning(value: js.Array[String]): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

@@ -23,6 +23,13 @@ object dateMathMod extends js.Object {
     date: Date,
     dateRangeType: DateRangeType,
     firstDayOfWeek: DayOfWeek,
+    workWeekDays: js.UndefOr[scala.Nothing],
+    daysToSelectInDayView: Double
+  ): js.Array[Date] = js.native
+  def getDateRangeArray(
+    date: Date,
+    dateRangeType: DateRangeType,
+    firstDayOfWeek: DayOfWeek,
     workWeekDays: js.Array[DayOfWeek]
   ): js.Array[Date] = js.native
   def getDateRangeArray(

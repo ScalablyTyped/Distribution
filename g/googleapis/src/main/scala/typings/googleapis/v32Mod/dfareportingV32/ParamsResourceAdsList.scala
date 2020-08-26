@@ -127,74 +127,142 @@ trait ParamsResourceAdsList extends StandardParameters {
 
 object ParamsResourceAdsList {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    advertiserId: String = null,
-    alt: String = null,
-    archived: js.UndefOr[Boolean] = js.undefined,
-    audienceSegmentIds: js.Array[String] = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    campaignIds: js.Array[String] = null,
-    compatibility: String = null,
-    creativeIds: js.Array[String] = null,
-    creativeOptimizationConfigurationIds: js.Array[String] = null,
-    dynamicClickTracker: js.UndefOr[Boolean] = js.undefined,
-    fields: String = null,
-    ids: js.Array[String] = null,
-    key: String = null,
-    landingPageIds: js.Array[String] = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    overriddenEventTagId: String = null,
-    pageToken: String = null,
-    placementIds: js.Array[String] = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    profileId: String = null,
-    quotaUser: String = null,
-    remarketingListIds: js.Array[String] = null,
-    searchString: String = null,
-    sizeIds: js.Array[String] = null,
-    sortField: String = null,
-    sortOrder: String = null,
-    sslCompliant: js.UndefOr[Boolean] = js.undefined,
-    sslRequired: js.UndefOr[Boolean] = js.undefined,
-    `type`: js.Array[String] = null,
-    userIp: String = null
-  ): ParamsResourceAdsList = {
+  def apply(): ParamsResourceAdsList = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (audienceSegmentIds != null) __obj.updateDynamic("audienceSegmentIds")(audienceSegmentIds.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (campaignIds != null) __obj.updateDynamic("campaignIds")(campaignIds.asInstanceOf[js.Any])
-    if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility.asInstanceOf[js.Any])
-    if (creativeIds != null) __obj.updateDynamic("creativeIds")(creativeIds.asInstanceOf[js.Any])
-    if (creativeOptimizationConfigurationIds != null) __obj.updateDynamic("creativeOptimizationConfigurationIds")(creativeOptimizationConfigurationIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicClickTracker)) __obj.updateDynamic("dynamicClickTracker")(dynamicClickTracker.get.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (landingPageIds != null) __obj.updateDynamic("landingPageIds")(landingPageIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (overriddenEventTagId != null) __obj.updateDynamic("overriddenEventTagId")(overriddenEventTagId.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (placementIds != null) __obj.updateDynamic("placementIds")(placementIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (remarketingListIds != null) __obj.updateDynamic("remarketingListIds")(remarketingListIds.asInstanceOf[js.Any])
-    if (searchString != null) __obj.updateDynamic("searchString")(searchString.asInstanceOf[js.Any])
-    if (sizeIds != null) __obj.updateDynamic("sizeIds")(sizeIds.asInstanceOf[js.Any])
-    if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceAdsList]
   }
+  @scala.inline
+  implicit class ParamsResourceAdsListOps[Self <: ParamsResourceAdsList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setAudienceSegmentIdsVarargs(value: String*): Self = this.set("audienceSegmentIds", js.Array(value :_*))
+    @scala.inline
+    def setAudienceSegmentIds(value: js.Array[String]): Self = this.set("audienceSegmentIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudienceSegmentIds: Self = this.set("audienceSegmentIds", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCampaignIdsVarargs(value: String*): Self = this.set("campaignIds", js.Array(value :_*))
+    @scala.inline
+    def setCampaignIds(value: js.Array[String]): Self = this.set("campaignIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignIds: Self = this.set("campaignIds", js.undefined)
+    @scala.inline
+    def setCompatibility(value: String): Self = this.set("compatibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibility: Self = this.set("compatibility", js.undefined)
+    @scala.inline
+    def setCreativeIdsVarargs(value: String*): Self = this.set("creativeIds", js.Array(value :_*))
+    @scala.inline
+    def setCreativeIds(value: js.Array[String]): Self = this.set("creativeIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeIds: Self = this.set("creativeIds", js.undefined)
+    @scala.inline
+    def setCreativeOptimizationConfigurationIdsVarargs(value: String*): Self = this.set("creativeOptimizationConfigurationIds", js.Array(value :_*))
+    @scala.inline
+    def setCreativeOptimizationConfigurationIds(value: js.Array[String]): Self = this.set("creativeOptimizationConfigurationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeOptimizationConfigurationIds: Self = this.set("creativeOptimizationConfigurationIds", js.undefined)
+    @scala.inline
+    def setDynamicClickTracker(value: Boolean): Self = this.set("dynamicClickTracker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamicClickTracker: Self = this.set("dynamicClickTracker", js.undefined)
+    @scala.inline
+    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    @scala.inline
+    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+    @scala.inline
+    def setLandingPageIdsVarargs(value: String*): Self = this.set("landingPageIds", js.Array(value :_*))
+    @scala.inline
+    def setLandingPageIds(value: js.Array[String]): Self = this.set("landingPageIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLandingPageIds: Self = this.set("landingPageIds", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setOverriddenEventTagId(value: String): Self = this.set("overriddenEventTagId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverriddenEventTagId: Self = this.set("overriddenEventTagId", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPlacementIdsVarargs(value: String*): Self = this.set("placementIds", js.Array(value :_*))
+    @scala.inline
+    def setPlacementIds(value: js.Array[String]): Self = this.set("placementIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementIds: Self = this.set("placementIds", js.undefined)
+    @scala.inline
+    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    @scala.inline
+    def setRemarketingListIdsVarargs(value: String*): Self = this.set("remarketingListIds", js.Array(value :_*))
+    @scala.inline
+    def setRemarketingListIds(value: js.Array[String]): Self = this.set("remarketingListIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemarketingListIds: Self = this.set("remarketingListIds", js.undefined)
+    @scala.inline
+    def setSearchString(value: String): Self = this.set("searchString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchString: Self = this.set("searchString", js.undefined)
+    @scala.inline
+    def setSizeIdsVarargs(value: String*): Self = this.set("sizeIds", js.Array(value :_*))
+    @scala.inline
+    def setSizeIds(value: js.Array[String]): Self = this.set("sizeIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeIds: Self = this.set("sizeIds", js.undefined)
+    @scala.inline
+    def setSortField(value: String): Self = this.set("sortField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortField: Self = this.set("sortField", js.undefined)
+    @scala.inline
+    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    @scala.inline
+    def setSslCompliant(value: Boolean): Self = this.set("sslCompliant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslCompliant: Self = this.set("sslCompliant", js.undefined)
+    @scala.inline
+    def setSslRequired(value: Boolean): Self = this.set("sslRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslRequired: Self = this.set("sslRequired", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: js.Array[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

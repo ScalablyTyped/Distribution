@@ -12,7 +12,7 @@ Parse, validate, manipulate, and display dates
 | Keywords           | moment, date, time, parse, format, validate, i18n, l10n, ender |
 | # releases         | 2 |
 | # dependents       | 29 |
-| # downloads        | 1254917 |
+| # downloads        | 1367760 |
 | # stars            | 0 |
 
 ## Links

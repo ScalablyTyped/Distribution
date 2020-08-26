@@ -25,11 +25,32 @@ trait SchemaBasicLevel extends js.Object {
 
 object SchemaBasicLevel {
   @scala.inline
-  def apply(combiningFunction: String = null, conditions: js.Array[SchemaCondition] = null): SchemaBasicLevel = {
+  def apply(): SchemaBasicLevel = {
     val __obj = js.Dynamic.literal()
-    if (combiningFunction != null) __obj.updateDynamic("combiningFunction")(combiningFunction.asInstanceOf[js.Any])
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBasicLevel]
   }
+  @scala.inline
+  implicit class SchemaBasicLevelOps[Self <: SchemaBasicLevel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCombiningFunction(value: String): Self = this.set("combiningFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCombiningFunction: Self = this.set("combiningFunction", js.undefined)
+    @scala.inline
+    def setConditionsVarargs(value: SchemaCondition*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[SchemaCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+  }
+  
 }
 

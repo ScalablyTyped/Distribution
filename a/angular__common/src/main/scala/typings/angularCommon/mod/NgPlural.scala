@@ -16,6 +16,6 @@ class NgPlural protected () extends js.Object {
   var _switchValue: js.Any = js.native
   var _updateView: js.Any = js.native
   def addCase(value: String, switchView: SwitchView): Unit = js.native
-  def ngPlural(value: Double): js.Any = js.native
+  def ngPlural_=(value: Double): Unit = js.native
 }
 

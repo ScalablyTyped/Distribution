@@ -11,7 +11,7 @@ Placeholder for Angular UI-Grid
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2504 |
+| # downloads        | 2535 |
 | # stars            | 0 |
 
 ## Links

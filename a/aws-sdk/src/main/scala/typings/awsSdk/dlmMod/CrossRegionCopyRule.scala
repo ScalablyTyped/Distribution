@@ -30,18 +30,38 @@ trait CrossRegionCopyRule extends js.Object {
 
 object CrossRegionCopyRule {
   @scala.inline
-  def apply(
-    Encrypted: Encrypted,
-    TargetRegion: TargetRegion,
-    CmkArn: CmkArn = null,
-    CopyTags: js.UndefOr[CopyTagsNullable] = js.undefined,
-    RetainRule: CrossRegionCopyRetainRule = null
-  ): CrossRegionCopyRule = {
+  def apply(Encrypted: Encrypted, TargetRegion: TargetRegion): CrossRegionCopyRule = {
     val __obj = js.Dynamic.literal(Encrypted = Encrypted.asInstanceOf[js.Any], TargetRegion = TargetRegion.asInstanceOf[js.Any])
-    if (CmkArn != null) __obj.updateDynamic("CmkArn")(CmkArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.get.asInstanceOf[js.Any])
-    if (RetainRule != null) __obj.updateDynamic("RetainRule")(RetainRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossRegionCopyRule]
   }
+  @scala.inline
+  implicit class CrossRegionCopyRuleOps[Self <: CrossRegionCopyRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncrypted(value: Encrypted): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetRegion(value: TargetRegion): Self = this.set("TargetRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCmkArn(value: CmkArn): Self = this.set("CmkArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCmkArn: Self = this.set("CmkArn", js.undefined)
+    @scala.inline
+    def setCopyTags(value: CopyTagsNullable): Self = this.set("CopyTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTags: Self = this.set("CopyTags", js.undefined)
+    @scala.inline
+    def setRetainRule(value: CrossRegionCopyRetainRule): Self = this.set("RetainRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetainRule: Self = this.set("RetainRule", js.undefined)
+  }
+  
 }
 

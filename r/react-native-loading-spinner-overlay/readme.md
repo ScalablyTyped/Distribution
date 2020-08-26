@@ -12,7 +12,7 @@ The only pure React Native Native iOS and Android loading spinner (progress bar 
 | Keywords           | activity, android, bar, full, indicator, ios, loading, modal, native, pop-up, popup, progress, react, react-native, screen, spinner, view |
 | # releases         | 3 |
 | # dependents       | 20 |
-| # downloads        | 445403 |
+| # downloads        | 453145 |
 | # stars            | 6 |
 
 ## Links

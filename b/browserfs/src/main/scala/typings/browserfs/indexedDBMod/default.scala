@@ -22,6 +22,7 @@ class default protected () extends AsyncKeyValueFileSystem {
     */
   def this(cb: BFSCallback[IndexedDBFileSystem]) = this()
   def this(cb: BFSCallback[IndexedDBFileSystem], storeName: String) = this()
+  def this(cb: BFSCallback[IndexedDBFileSystem], storeName: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
   def this(cb: BFSCallback[IndexedDBFileSystem], storeName: String, deprecateMsg: Boolean) = this()
 }
 

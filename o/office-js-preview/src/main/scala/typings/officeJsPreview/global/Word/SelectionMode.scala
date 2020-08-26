@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * [Api set: WordApi]
+  * This enum sets where the cursor (insertion point) in the document is after a selection.
+  * 
+  * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.SelectionMode")
 @js.native

@@ -52,7 +52,7 @@ object virtualScrollMod extends js.Object {
     var calcCells: js.Any = js.native
     var calcHeightIndex: js.Any = js.native
     var cells: js.Any = js.native
-    var contentEl: js.UndefOr[js.Any] = js.native
+    var contentEl: js.Any = js.native
     var currentScrollTop: js.Any = js.native
     /** @internal */
     var domRender: js.UndefOr[DomRenderFn] = js.native
@@ -86,7 +86,7 @@ object virtualScrollMod extends js.Object {
       * An optional function that maps each item header within their height.
       */
     var headerHeight: js.UndefOr[HeaderHeightFn] = js.native
-    var heightIndex: js.UndefOr[js.Any] = js.native
+    var heightIndex: js.Any = js.native
     var indexDirty: js.Any = js.native
     var isEnabled: js.Any = js.native
     /**
@@ -134,7 +134,7 @@ object virtualScrollMod extends js.Object {
     var renderVirtualNode: js.Any = js.native
     var rmEvent: js.Any = js.native
     var scheduleUpdate: js.Any = js.native
-    var scrollEl: js.UndefOr[js.Any] = js.native
+    var scrollEl: js.Any = js.native
     var setCellHeight: js.Any = js.native
     var timerUpdate: js.Any = js.native
     var totalHeight: Double = js.native

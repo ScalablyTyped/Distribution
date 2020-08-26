@@ -30,12 +30,34 @@ trait SchemaObservation extends js.Object {
 
 object SchemaObservation {
   @scala.inline
-  def apply(advertisedId: SchemaAdvertisedId = null, telemetry: String = null, timestampMs: String = null): SchemaObservation = {
+  def apply(): SchemaObservation = {
     val __obj = js.Dynamic.literal()
-    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId.asInstanceOf[js.Any])
-    if (telemetry != null) __obj.updateDynamic("telemetry")(telemetry.asInstanceOf[js.Any])
-    if (timestampMs != null) __obj.updateDynamic("timestampMs")(timestampMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObservation]
   }
+  @scala.inline
+  implicit class SchemaObservationOps[Self <: SchemaObservation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertisedId(value: SchemaAdvertisedId): Self = this.set("advertisedId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertisedId: Self = this.set("advertisedId", js.undefined)
+    @scala.inline
+    def setTelemetry(value: String): Self = this.set("telemetry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTelemetry: Self = this.set("telemetry", js.undefined)
+    @scala.inline
+    def setTimestampMs(value: String): Self = this.set("timestampMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampMs: Self = this.set("timestampMs", js.undefined)
+  }
+  
 }
 

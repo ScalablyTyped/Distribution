@@ -11,6 +11,7 @@ object box2Mod extends js.Object {
   @js.native
   class Box2 () extends js.Object {
     def this(min: Vector2) = this()
+    def this(min: js.UndefOr[scala.Nothing], max: Vector2) = this()
     def this(min: Vector2, max: Vector2) = this()
     var max: Vector2 = js.native
     var min: Vector2 = js.native
@@ -28,7 +29,7 @@ object box2Mod extends js.Object {
     def expandByScalar(scalar: Double): Box2 = js.native
     def expandByVector(vector: Vector2): Box2 = js.native
     def getCenter(target: Vector2): Vector2 = js.native
-    def getParameter(point: Vector2): Vector2 = js.native
+    def getParameter(point: Vector2, target: Vector2): Vector2 = js.native
     def getSize(target: Vector2): Vector2 = js.native
     def intersect(box: Box2): Box2 = js.native
     def intersectsBox(box: Box2): Boolean = js.native

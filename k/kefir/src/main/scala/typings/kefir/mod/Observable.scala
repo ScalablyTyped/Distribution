@@ -35,6 +35,7 @@ class Observable[T, S] () extends js.Object {
   def debounce(wait: Double, options: Immediate): Observable[T, S] = js.native
   def delay(wait: Double): Observable[T, S] = js.native
   def diff(): Observable[T, S] = js.native
+  def diff(fn: js.UndefOr[scala.Nothing], seed: T): Observable[T, S] = js.native
   def diff(fn: js.Function2[/* prev */ T, /* next */ T, T]): Observable[T, S] = js.native
   def diff(fn: js.Function2[/* prev */ T, /* next */ T, T], seed: T): Observable[T, S] = js.native
   def endOnError(): Observable[T, S] = js.native
@@ -71,7 +72,19 @@ class Observable[T, S] () extends js.Object {
   def mapErrors[U](fn: js.Function1[/* error */ S, U]): Observable[T, U] = js.native
   def merge[U, V](otherObs: Observable[U, V]): Observable[T | U, S | V] = js.native
   def observe(): Subscription = js.native
+  def observe(onValue: js.UndefOr[scala.Nothing], onError: js.UndefOr[scala.Nothing], onEnd: js.Function0[Unit]): Subscription = js.native
+  def observe(onValue: js.UndefOr[scala.Nothing], onError: js.Function1[/* error */ S, Unit]): Subscription = js.native
+  def observe(
+    onValue: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ S, Unit],
+    onEnd: js.Function0[Unit]
+  ): Subscription = js.native
   def observe(onValue: js.Function1[/* value */ T, Unit]): Subscription = js.native
+  def observe(
+    onValue: js.Function1[/* value */ T, Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onEnd: js.Function0[Unit]
+  ): Subscription = js.native
   def observe(onValue: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ S, Unit]): Subscription = js.native
   def observe(
     onValue: js.Function1[/* value */ T, Unit],

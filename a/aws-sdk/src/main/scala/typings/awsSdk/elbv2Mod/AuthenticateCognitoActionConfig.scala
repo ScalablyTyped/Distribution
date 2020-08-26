@@ -45,20 +45,49 @@ object AuthenticateCognitoActionConfig {
   def apply(
     UserPoolArn: AuthenticateCognitoActionUserPoolArn,
     UserPoolClientId: AuthenticateCognitoActionUserPoolClientId,
-    UserPoolDomain: AuthenticateCognitoActionUserPoolDomain,
-    AuthenticationRequestExtraParams: AuthenticateCognitoActionAuthenticationRequestExtraParams = null,
-    OnUnauthenticatedRequest: AuthenticateCognitoActionConditionalBehaviorEnum = null,
-    Scope: AuthenticateCognitoActionScope = null,
-    SessionCookieName: AuthenticateCognitoActionSessionCookieName = null,
-    SessionTimeout: js.UndefOr[AuthenticateCognitoActionSessionTimeout] = js.undefined
+    UserPoolDomain: AuthenticateCognitoActionUserPoolDomain
   ): AuthenticateCognitoActionConfig = {
     val __obj = js.Dynamic.literal(UserPoolArn = UserPoolArn.asInstanceOf[js.Any], UserPoolClientId = UserPoolClientId.asInstanceOf[js.Any], UserPoolDomain = UserPoolDomain.asInstanceOf[js.Any])
-    if (AuthenticationRequestExtraParams != null) __obj.updateDynamic("AuthenticationRequestExtraParams")(AuthenticationRequestExtraParams.asInstanceOf[js.Any])
-    if (OnUnauthenticatedRequest != null) __obj.updateDynamic("OnUnauthenticatedRequest")(OnUnauthenticatedRequest.asInstanceOf[js.Any])
-    if (Scope != null) __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])
-    if (SessionCookieName != null) __obj.updateDynamic("SessionCookieName")(SessionCookieName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SessionTimeout)) __obj.updateDynamic("SessionTimeout")(SessionTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateCognitoActionConfig]
   }
+  @scala.inline
+  implicit class AuthenticateCognitoActionConfigOps[Self <: AuthenticateCognitoActionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserPoolArn(value: AuthenticateCognitoActionUserPoolArn): Self = this.set("UserPoolArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolClientId(value: AuthenticateCognitoActionUserPoolClientId): Self = this.set("UserPoolClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolDomain(value: AuthenticateCognitoActionUserPoolDomain): Self = this.set("UserPoolDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationRequestExtraParams(value: AuthenticateCognitoActionAuthenticationRequestExtraParams): Self = this.set("AuthenticationRequestExtraParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationRequestExtraParams: Self = this.set("AuthenticationRequestExtraParams", js.undefined)
+    @scala.inline
+    def setOnUnauthenticatedRequest(value: AuthenticateCognitoActionConditionalBehaviorEnum): Self = this.set("OnUnauthenticatedRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnUnauthenticatedRequest: Self = this.set("OnUnauthenticatedRequest", js.undefined)
+    @scala.inline
+    def setScope(value: AuthenticateCognitoActionScope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("Scope", js.undefined)
+    @scala.inline
+    def setSessionCookieName(value: AuthenticateCognitoActionSessionCookieName): Self = this.set("SessionCookieName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionCookieName: Self = this.set("SessionCookieName", js.undefined)
+    @scala.inline
+    def setSessionTimeout(value: AuthenticateCognitoActionSessionTimeout): Self = this.set("SessionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionTimeout: Self = this.set("SessionTimeout", js.undefined)
+  }
+  
 }
 

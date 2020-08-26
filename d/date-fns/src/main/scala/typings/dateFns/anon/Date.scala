@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Date extends js.Object {
-  var date: js.UndefOr[Double] = js.undefined
-  var hours: js.UndefOr[Double] = js.undefined
-  var milliseconds: js.UndefOr[Double] = js.undefined
-  var minutes: js.UndefOr[Double] = js.undefined
-  var month: js.UndefOr[Double] = js.undefined
-  var seconds: js.UndefOr[Double] = js.undefined
-  var year: js.UndefOr[Double] = js.undefined
+  var date: js.UndefOr[Double] = js.native
+  var hours: js.UndefOr[Double] = js.native
+  var milliseconds: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.native
+  var seconds: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.native
 }
 
 object Date {
   @scala.inline
-  def apply(
-    date: js.UndefOr[Double] = js.undefined,
-    hours: js.UndefOr[Double] = js.undefined,
-    milliseconds: js.UndefOr[Double] = js.undefined,
-    minutes: js.UndefOr[Double] = js.undefined,
-    month: js.UndefOr[Double] = js.undefined,
-    seconds: js.UndefOr[Double] = js.undefined,
-    year: js.UndefOr[Double] = js.undefined
-  ): Date = {
+  def apply(): Date = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hours)) __obj.updateDynamic("hours")(hours.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(milliseconds)) __obj.updateDynamic("milliseconds")(milliseconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minutes)) __obj.updateDynamic("minutes")(minutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(month)) __obj.updateDynamic("month")(month.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(year)) __obj.updateDynamic("year")(year.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Date]
   }
+  @scala.inline
+  implicit class DateOps[Self <: Date] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: Double): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setHours(value: Double): Self = this.set("hours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHours: Self = this.set("hours", js.undefined)
+    @scala.inline
+    def setMilliseconds(value: Double): Self = this.set("milliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMilliseconds: Self = this.set("milliseconds", js.undefined)
+    @scala.inline
+    def setMinutes(value: Double): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    @scala.inline
+    def setMonth(value: Double): Self = this.set("month", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonth: Self = this.set("month", js.undefined)
+    @scala.inline
+    def setSeconds(value: Double): Self = this.set("seconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeconds: Self = this.set("seconds", js.undefined)
+    @scala.inline
+    def setYear(value: Double): Self = this.set("year", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYear: Self = this.set("year", js.undefined)
+  }
+  
 }
 

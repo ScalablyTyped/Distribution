@@ -1,11 +1,11 @@
 package typings.stripe.mod.refunds
 
 import typings.stripe.mod.IDataOptionsWithMetadata
-import typings.stripe.mod.IOptionsMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IRefundCreationOptions extends IDataOptionsWithMetadata {
   /**
     * A positive integer in cents/pence representing how much of this charge to
@@ -14,14 +14,14 @@ trait IRefundCreationOptions extends IDataOptionsWithMetadata {
     *
     * default is entire charge
     */
-  var amount: js.UndefOr[Double] = js.undefined
+  var amount: js.UndefOr[Double] = js.native
   /**
     * String indicating the reason for the refund. If set, possible values are
     * "duplicate", "fraudulent", and "requested_by_customer". Specifying
     * "fraudulent" as the reason when you believe the charge to be fraudulent
     * will help us improve our fraud detection algorithms.
     */
-  var reason: js.UndefOr[String] = js.undefined
+  var reason: js.UndefOr[String] = js.native
   /**
     * Boolean indicating whether the application fee should be refunded when
     * refunding this charge. If a full charge refund is given, the full application
@@ -32,7 +32,7 @@ trait IRefundCreationOptions extends IDataOptionsWithMetadata {
     *
     * Connect only, default is false.
     */
-  var refund_application_fee: js.UndefOr[Boolean] = js.undefined
+  var refund_application_fee: js.UndefOr[Boolean] = js.native
   /**
     * Boolean indicating whether the transfer should be reversed when
     * refunding this charge. The transfer will be reversed for the same amount
@@ -41,29 +41,43 @@ trait IRefundCreationOptions extends IDataOptionsWithMetadata {
     *
     * Connect only, default is false.
     */
-  var reverse_transfer: js.UndefOr[Boolean] = js.undefined
+  var reverse_transfer: js.UndefOr[Boolean] = js.native
 }
 
 object IRefundCreationOptions {
   @scala.inline
-  def apply(
-    amount: js.UndefOr[Double] = js.undefined,
-    expand: js.Array[String] = null,
-    include: js.Array[String] = null,
-    metadata: IOptionsMetadata = null,
-    reason: String = null,
-    refund_application_fee: js.UndefOr[Boolean] = js.undefined,
-    reverse_transfer: js.UndefOr[Boolean] = js.undefined
-  ): IRefundCreationOptions = {
+  def apply(): IRefundCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (!js.isUndefined(refund_application_fee)) __obj.updateDynamic("refund_application_fee")(refund_application_fee.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse_transfer)) __obj.updateDynamic("reverse_transfer")(reverse_transfer.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRefundCreationOptions]
   }
+  @scala.inline
+  implicit class IRefundCreationOptionsOps[Self <: IRefundCreationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    @scala.inline
+    def setRefund_application_fee(value: Boolean): Self = this.set("refund_application_fee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefund_application_fee: Self = this.set("refund_application_fee", js.undefined)
+    @scala.inline
+    def setReverse_transfer(value: Boolean): Self = this.set("reverse_transfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverse_transfer: Self = this.set("reverse_transfer", js.undefined)
+  }
+  
 }
 

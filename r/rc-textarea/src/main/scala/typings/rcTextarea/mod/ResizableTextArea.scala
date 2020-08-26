@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-textarea/lib", "ResizableTextArea")
+@JSImport("rc-textarea", "ResizableTextArea")
 @js.native
 class ResizableTextArea protected ()
   extends typings.rcTextarea.resizableTextAreaMod.default {

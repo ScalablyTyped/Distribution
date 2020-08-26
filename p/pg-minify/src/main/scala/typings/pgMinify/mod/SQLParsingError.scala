@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 class SQLParsingError () extends Error {
   var code: parsingErrorCode = js.native
   var error: String = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var position: IErrorPosition = js.native
   @JSName("stack")
   var stack_SQLParsingError: String = js.native

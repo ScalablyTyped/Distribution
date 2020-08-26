@@ -5,165 +5,278 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@uifabric/styling.@uifabric/styling/lib/interfaces/IPalette.IPalette> */
+@js.native
 trait PartialIPalette extends js.Object {
-  var accent: js.UndefOr[String] = js.undefined
-  var black: js.UndefOr[String] = js.undefined
-  var blackTranslucent40: js.UndefOr[String] = js.undefined
-  var blue: js.UndefOr[String] = js.undefined
-  var blueDark: js.UndefOr[String] = js.undefined
-  var blueLight: js.UndefOr[String] = js.undefined
-  var blueMid: js.UndefOr[String] = js.undefined
-  var green: js.UndefOr[String] = js.undefined
-  var greenDark: js.UndefOr[String] = js.undefined
-  var greenLight: js.UndefOr[String] = js.undefined
-  var magenta: js.UndefOr[String] = js.undefined
-  var magentaDark: js.UndefOr[String] = js.undefined
-  var magentaLight: js.UndefOr[String] = js.undefined
-  var neutralDark: js.UndefOr[String] = js.undefined
-  var neutralLight: js.UndefOr[String] = js.undefined
-  var neutralLighter: js.UndefOr[String] = js.undefined
-  var neutralLighterAlt: js.UndefOr[String] = js.undefined
-  var neutralPrimary: js.UndefOr[String] = js.undefined
-  var neutralPrimaryAlt: js.UndefOr[String] = js.undefined
-  var neutralQuaternary: js.UndefOr[String] = js.undefined
-  var neutralQuaternaryAlt: js.UndefOr[String] = js.undefined
-  var neutralSecondary: js.UndefOr[String] = js.undefined
-  var neutralSecondaryAlt: js.UndefOr[String] = js.undefined
-  var neutralTertiary: js.UndefOr[String] = js.undefined
-  var neutralTertiaryAlt: js.UndefOr[String] = js.undefined
-  var orange: js.UndefOr[String] = js.undefined
-  var orangeLight: js.UndefOr[String] = js.undefined
-  var orangeLighter: js.UndefOr[String] = js.undefined
-  var purple: js.UndefOr[String] = js.undefined
-  var purpleDark: js.UndefOr[String] = js.undefined
-  var purpleLight: js.UndefOr[String] = js.undefined
-  var red: js.UndefOr[String] = js.undefined
-  var redDark: js.UndefOr[String] = js.undefined
-  var teal: js.UndefOr[String] = js.undefined
-  var tealDark: js.UndefOr[String] = js.undefined
-  var tealLight: js.UndefOr[String] = js.undefined
-  var themeDark: js.UndefOr[String] = js.undefined
-  var themeDarkAlt: js.UndefOr[String] = js.undefined
-  var themeDarker: js.UndefOr[String] = js.undefined
-  var themeLight: js.UndefOr[String] = js.undefined
-  var themeLighter: js.UndefOr[String] = js.undefined
-  var themeLighterAlt: js.UndefOr[String] = js.undefined
-  var themePrimary: js.UndefOr[String] = js.undefined
-  var themeSecondary: js.UndefOr[String] = js.undefined
-  var themeTertiary: js.UndefOr[String] = js.undefined
-  var white: js.UndefOr[String] = js.undefined
-  var whiteTranslucent40: js.UndefOr[String] = js.undefined
-  var yellow: js.UndefOr[String] = js.undefined
-  var yellowDark: js.UndefOr[String] = js.undefined
-  var yellowLight: js.UndefOr[String] = js.undefined
+  var accent: js.UndefOr[String] = js.native
+  var black: js.UndefOr[String] = js.native
+  var blackTranslucent40: js.UndefOr[String] = js.native
+  var blue: js.UndefOr[String] = js.native
+  var blueDark: js.UndefOr[String] = js.native
+  var blueLight: js.UndefOr[String] = js.native
+  var blueMid: js.UndefOr[String] = js.native
+  var green: js.UndefOr[String] = js.native
+  var greenDark: js.UndefOr[String] = js.native
+  var greenLight: js.UndefOr[String] = js.native
+  var magenta: js.UndefOr[String] = js.native
+  var magentaDark: js.UndefOr[String] = js.native
+  var magentaLight: js.UndefOr[String] = js.native
+  var neutralDark: js.UndefOr[String] = js.native
+  var neutralLight: js.UndefOr[String] = js.native
+  var neutralLighter: js.UndefOr[String] = js.native
+  var neutralLighterAlt: js.UndefOr[String] = js.native
+  var neutralPrimary: js.UndefOr[String] = js.native
+  var neutralPrimaryAlt: js.UndefOr[String] = js.native
+  var neutralQuaternary: js.UndefOr[String] = js.native
+  var neutralQuaternaryAlt: js.UndefOr[String] = js.native
+  var neutralSecondary: js.UndefOr[String] = js.native
+  var neutralSecondaryAlt: js.UndefOr[String] = js.native
+  var neutralTertiary: js.UndefOr[String] = js.native
+  var neutralTertiaryAlt: js.UndefOr[String] = js.native
+  var orange: js.UndefOr[String] = js.native
+  var orangeLight: js.UndefOr[String] = js.native
+  var orangeLighter: js.UndefOr[String] = js.native
+  var purple: js.UndefOr[String] = js.native
+  var purpleDark: js.UndefOr[String] = js.native
+  var purpleLight: js.UndefOr[String] = js.native
+  var red: js.UndefOr[String] = js.native
+  var redDark: js.UndefOr[String] = js.native
+  var teal: js.UndefOr[String] = js.native
+  var tealDark: js.UndefOr[String] = js.native
+  var tealLight: js.UndefOr[String] = js.native
+  var themeDark: js.UndefOr[String] = js.native
+  var themeDarkAlt: js.UndefOr[String] = js.native
+  var themeDarker: js.UndefOr[String] = js.native
+  var themeLight: js.UndefOr[String] = js.native
+  var themeLighter: js.UndefOr[String] = js.native
+  var themeLighterAlt: js.UndefOr[String] = js.native
+  var themePrimary: js.UndefOr[String] = js.native
+  var themeSecondary: js.UndefOr[String] = js.native
+  var themeTertiary: js.UndefOr[String] = js.native
+  var white: js.UndefOr[String] = js.native
+  var whiteTranslucent40: js.UndefOr[String] = js.native
+  var yellow: js.UndefOr[String] = js.native
+  var yellowDark: js.UndefOr[String] = js.native
+  var yellowLight: js.UndefOr[String] = js.native
 }
 
 object PartialIPalette {
   @scala.inline
-  def apply(
-    accent: String = null,
-    black: String = null,
-    blackTranslucent40: String = null,
-    blue: String = null,
-    blueDark: String = null,
-    blueLight: String = null,
-    blueMid: String = null,
-    green: String = null,
-    greenDark: String = null,
-    greenLight: String = null,
-    magenta: String = null,
-    magentaDark: String = null,
-    magentaLight: String = null,
-    neutralDark: String = null,
-    neutralLight: String = null,
-    neutralLighter: String = null,
-    neutralLighterAlt: String = null,
-    neutralPrimary: String = null,
-    neutralPrimaryAlt: String = null,
-    neutralQuaternary: String = null,
-    neutralQuaternaryAlt: String = null,
-    neutralSecondary: String = null,
-    neutralSecondaryAlt: String = null,
-    neutralTertiary: String = null,
-    neutralTertiaryAlt: String = null,
-    orange: String = null,
-    orangeLight: String = null,
-    orangeLighter: String = null,
-    purple: String = null,
-    purpleDark: String = null,
-    purpleLight: String = null,
-    red: String = null,
-    redDark: String = null,
-    teal: String = null,
-    tealDark: String = null,
-    tealLight: String = null,
-    themeDark: String = null,
-    themeDarkAlt: String = null,
-    themeDarker: String = null,
-    themeLight: String = null,
-    themeLighter: String = null,
-    themeLighterAlt: String = null,
-    themePrimary: String = null,
-    themeSecondary: String = null,
-    themeTertiary: String = null,
-    white: String = null,
-    whiteTranslucent40: String = null,
-    yellow: String = null,
-    yellowDark: String = null,
-    yellowLight: String = null
-  ): PartialIPalette = {
+  def apply(): PartialIPalette = {
     val __obj = js.Dynamic.literal()
-    if (accent != null) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
-    if (black != null) __obj.updateDynamic("black")(black.asInstanceOf[js.Any])
-    if (blackTranslucent40 != null) __obj.updateDynamic("blackTranslucent40")(blackTranslucent40.asInstanceOf[js.Any])
-    if (blue != null) __obj.updateDynamic("blue")(blue.asInstanceOf[js.Any])
-    if (blueDark != null) __obj.updateDynamic("blueDark")(blueDark.asInstanceOf[js.Any])
-    if (blueLight != null) __obj.updateDynamic("blueLight")(blueLight.asInstanceOf[js.Any])
-    if (blueMid != null) __obj.updateDynamic("blueMid")(blueMid.asInstanceOf[js.Any])
-    if (green != null) __obj.updateDynamic("green")(green.asInstanceOf[js.Any])
-    if (greenDark != null) __obj.updateDynamic("greenDark")(greenDark.asInstanceOf[js.Any])
-    if (greenLight != null) __obj.updateDynamic("greenLight")(greenLight.asInstanceOf[js.Any])
-    if (magenta != null) __obj.updateDynamic("magenta")(magenta.asInstanceOf[js.Any])
-    if (magentaDark != null) __obj.updateDynamic("magentaDark")(magentaDark.asInstanceOf[js.Any])
-    if (magentaLight != null) __obj.updateDynamic("magentaLight")(magentaLight.asInstanceOf[js.Any])
-    if (neutralDark != null) __obj.updateDynamic("neutralDark")(neutralDark.asInstanceOf[js.Any])
-    if (neutralLight != null) __obj.updateDynamic("neutralLight")(neutralLight.asInstanceOf[js.Any])
-    if (neutralLighter != null) __obj.updateDynamic("neutralLighter")(neutralLighter.asInstanceOf[js.Any])
-    if (neutralLighterAlt != null) __obj.updateDynamic("neutralLighterAlt")(neutralLighterAlt.asInstanceOf[js.Any])
-    if (neutralPrimary != null) __obj.updateDynamic("neutralPrimary")(neutralPrimary.asInstanceOf[js.Any])
-    if (neutralPrimaryAlt != null) __obj.updateDynamic("neutralPrimaryAlt")(neutralPrimaryAlt.asInstanceOf[js.Any])
-    if (neutralQuaternary != null) __obj.updateDynamic("neutralQuaternary")(neutralQuaternary.asInstanceOf[js.Any])
-    if (neutralQuaternaryAlt != null) __obj.updateDynamic("neutralQuaternaryAlt")(neutralQuaternaryAlt.asInstanceOf[js.Any])
-    if (neutralSecondary != null) __obj.updateDynamic("neutralSecondary")(neutralSecondary.asInstanceOf[js.Any])
-    if (neutralSecondaryAlt != null) __obj.updateDynamic("neutralSecondaryAlt")(neutralSecondaryAlt.asInstanceOf[js.Any])
-    if (neutralTertiary != null) __obj.updateDynamic("neutralTertiary")(neutralTertiary.asInstanceOf[js.Any])
-    if (neutralTertiaryAlt != null) __obj.updateDynamic("neutralTertiaryAlt")(neutralTertiaryAlt.asInstanceOf[js.Any])
-    if (orange != null) __obj.updateDynamic("orange")(orange.asInstanceOf[js.Any])
-    if (orangeLight != null) __obj.updateDynamic("orangeLight")(orangeLight.asInstanceOf[js.Any])
-    if (orangeLighter != null) __obj.updateDynamic("orangeLighter")(orangeLighter.asInstanceOf[js.Any])
-    if (purple != null) __obj.updateDynamic("purple")(purple.asInstanceOf[js.Any])
-    if (purpleDark != null) __obj.updateDynamic("purpleDark")(purpleDark.asInstanceOf[js.Any])
-    if (purpleLight != null) __obj.updateDynamic("purpleLight")(purpleLight.asInstanceOf[js.Any])
-    if (red != null) __obj.updateDynamic("red")(red.asInstanceOf[js.Any])
-    if (redDark != null) __obj.updateDynamic("redDark")(redDark.asInstanceOf[js.Any])
-    if (teal != null) __obj.updateDynamic("teal")(teal.asInstanceOf[js.Any])
-    if (tealDark != null) __obj.updateDynamic("tealDark")(tealDark.asInstanceOf[js.Any])
-    if (tealLight != null) __obj.updateDynamic("tealLight")(tealLight.asInstanceOf[js.Any])
-    if (themeDark != null) __obj.updateDynamic("themeDark")(themeDark.asInstanceOf[js.Any])
-    if (themeDarkAlt != null) __obj.updateDynamic("themeDarkAlt")(themeDarkAlt.asInstanceOf[js.Any])
-    if (themeDarker != null) __obj.updateDynamic("themeDarker")(themeDarker.asInstanceOf[js.Any])
-    if (themeLight != null) __obj.updateDynamic("themeLight")(themeLight.asInstanceOf[js.Any])
-    if (themeLighter != null) __obj.updateDynamic("themeLighter")(themeLighter.asInstanceOf[js.Any])
-    if (themeLighterAlt != null) __obj.updateDynamic("themeLighterAlt")(themeLighterAlt.asInstanceOf[js.Any])
-    if (themePrimary != null) __obj.updateDynamic("themePrimary")(themePrimary.asInstanceOf[js.Any])
-    if (themeSecondary != null) __obj.updateDynamic("themeSecondary")(themeSecondary.asInstanceOf[js.Any])
-    if (themeTertiary != null) __obj.updateDynamic("themeTertiary")(themeTertiary.asInstanceOf[js.Any])
-    if (white != null) __obj.updateDynamic("white")(white.asInstanceOf[js.Any])
-    if (whiteTranslucent40 != null) __obj.updateDynamic("whiteTranslucent40")(whiteTranslucent40.asInstanceOf[js.Any])
-    if (yellow != null) __obj.updateDynamic("yellow")(yellow.asInstanceOf[js.Any])
-    if (yellowDark != null) __obj.updateDynamic("yellowDark")(yellowDark.asInstanceOf[js.Any])
-    if (yellowLight != null) __obj.updateDynamic("yellowLight")(yellowLight.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialIPalette]
   }
+  @scala.inline
+  implicit class PartialIPaletteOps[Self <: PartialIPalette] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccent(value: String): Self = this.set("accent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccent: Self = this.set("accent", js.undefined)
+    @scala.inline
+    def setBlack(value: String): Self = this.set("black", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlack: Self = this.set("black", js.undefined)
+    @scala.inline
+    def setBlackTranslucent40(value: String): Self = this.set("blackTranslucent40", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlackTranslucent40: Self = this.set("blackTranslucent40", js.undefined)
+    @scala.inline
+    def setBlue(value: String): Self = this.set("blue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlue: Self = this.set("blue", js.undefined)
+    @scala.inline
+    def setBlueDark(value: String): Self = this.set("blueDark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueDark: Self = this.set("blueDark", js.undefined)
+    @scala.inline
+    def setBlueLight(value: String): Self = this.set("blueLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueLight: Self = this.set("blueLight", js.undefined)
+    @scala.inline
+    def setBlueMid(value: String): Self = this.set("blueMid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueMid: Self = this.set("blueMid", js.undefined)
+    @scala.inline
+    def setGreen(value: String): Self = this.set("green", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreen: Self = this.set("green", js.undefined)
+    @scala.inline
+    def setGreenDark(value: String): Self = this.set("greenDark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreenDark: Self = this.set("greenDark", js.undefined)
+    @scala.inline
+    def setGreenLight(value: String): Self = this.set("greenLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreenLight: Self = this.set("greenLight", js.undefined)
+    @scala.inline
+    def setMagenta(value: String): Self = this.set("magenta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMagenta: Self = this.set("magenta", js.undefined)
+    @scala.inline
+    def setMagentaDark(value: String): Self = this.set("magentaDark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMagentaDark: Self = this.set("magentaDark", js.undefined)
+    @scala.inline
+    def setMagentaLight(value: String): Self = this.set("magentaLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMagentaLight: Self = this.set("magentaLight", js.undefined)
+    @scala.inline
+    def setNeutralDark(value: String): Self = this.set("neutralDark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralDark: Self = this.set("neutralDark", js.undefined)
+    @scala.inline
+    def setNeutralLight(value: String): Self = this.set("neutralLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralLight: Self = this.set("neutralLight", js.undefined)
+    @scala.inline
+    def setNeutralLighter(value: String): Self = this.set("neutralLighter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralLighter: Self = this.set("neutralLighter", js.undefined)
+    @scala.inline
+    def setNeutralLighterAlt(value: String): Self = this.set("neutralLighterAlt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralLighterAlt: Self = this.set("neutralLighterAlt", js.undefined)
+    @scala.inline
+    def setNeutralPrimary(value: String): Self = this.set("neutralPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralPrimary: Self = this.set("neutralPrimary", js.undefined)
+    @scala.inline
+    def setNeutralPrimaryAlt(value: String): Self = this.set("neutralPrimaryAlt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralPrimaryAlt: Self = this.set("neutralPrimaryAlt", js.undefined)
+    @scala.inline
+    def setNeutralQuaternary(value: String): Self = this.set("neutralQuaternary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralQuaternary: Self = this.set("neutralQuaternary", js.undefined)
+    @scala.inline
+    def setNeutralQuaternaryAlt(value: String): Self = this.set("neutralQuaternaryAlt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralQuaternaryAlt: Self = this.set("neutralQuaternaryAlt", js.undefined)
+    @scala.inline
+    def setNeutralSecondary(value: String): Self = this.set("neutralSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralSecondary: Self = this.set("neutralSecondary", js.undefined)
+    @scala.inline
+    def setNeutralSecondaryAlt(value: String): Self = this.set("neutralSecondaryAlt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralSecondaryAlt: Self = this.set("neutralSecondaryAlt", js.undefined)
+    @scala.inline
+    def setNeutralTertiary(value: String): Self = this.set("neutralTertiary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralTertiary: Self = this.set("neutralTertiary", js.undefined)
+    @scala.inline
+    def setNeutralTertiaryAlt(value: String): Self = this.set("neutralTertiaryAlt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutralTertiaryAlt: Self = this.set("neutralTertiaryAlt", js.undefined)
+    @scala.inline
+    def setOrange(value: String): Self = this.set("orange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrange: Self = this.set("orange", js.undefined)
+    @scala.inline
+    def setOrangeLight(value: String): Self = this.set("orangeLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrangeLight: Self = this.set("orangeLight", js.undefined)
+    @scala.inline
+    def setOrangeLighter(value: String): Self = this.set("orangeLighter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrangeLighter: Self = this.set("orangeLighter", js.undefined)
+    @scala.inline
+    def setPurple(value: String): Self = this.set("purple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurple: Self = this.set("purple", js.undefined)
+    @scala.inline
+    def setPurpleDark(value: String): Self = this.set("purpleDark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpleDark: Self = this.set("purpleDark", js.undefined)
+    @scala.inline
+    def setPurpleLight(value: String): Self = this.set("purpleLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpleLight: Self = this.set("purpleLight", js.undefined)
+    @scala.inline
+    def setRed(value: String): Self = this.set("red", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRed: Self = this.set("red", js.undefined)
+    @scala.inline
+    def setRedDark(value: String): Self = this.set("redDark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedDark: Self = this.set("redDark", js.undefined)
+    @scala.inline
+    def setTeal(value: String): Self = this.set("teal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeal: Self = this.set("teal", js.undefined)
+    @scala.inline
+    def setTealDark(value: String): Self = this.set("tealDark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTealDark: Self = this.set("tealDark", js.undefined)
+    @scala.inline
+    def setTealLight(value: String): Self = this.set("tealLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTealLight: Self = this.set("tealLight", js.undefined)
+    @scala.inline
+    def setThemeDark(value: String): Self = this.set("themeDark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeDark: Self = this.set("themeDark", js.undefined)
+    @scala.inline
+    def setThemeDarkAlt(value: String): Self = this.set("themeDarkAlt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeDarkAlt: Self = this.set("themeDarkAlt", js.undefined)
+    @scala.inline
+    def setThemeDarker(value: String): Self = this.set("themeDarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeDarker: Self = this.set("themeDarker", js.undefined)
+    @scala.inline
+    def setThemeLight(value: String): Self = this.set("themeLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeLight: Self = this.set("themeLight", js.undefined)
+    @scala.inline
+    def setThemeLighter(value: String): Self = this.set("themeLighter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeLighter: Self = this.set("themeLighter", js.undefined)
+    @scala.inline
+    def setThemeLighterAlt(value: String): Self = this.set("themeLighterAlt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeLighterAlt: Self = this.set("themeLighterAlt", js.undefined)
+    @scala.inline
+    def setThemePrimary(value: String): Self = this.set("themePrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemePrimary: Self = this.set("themePrimary", js.undefined)
+    @scala.inline
+    def setThemeSecondary(value: String): Self = this.set("themeSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeSecondary: Self = this.set("themeSecondary", js.undefined)
+    @scala.inline
+    def setThemeTertiary(value: String): Self = this.set("themeTertiary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeTertiary: Self = this.set("themeTertiary", js.undefined)
+    @scala.inline
+    def setWhite(value: String): Self = this.set("white", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhite: Self = this.set("white", js.undefined)
+    @scala.inline
+    def setWhiteTranslucent40(value: String): Self = this.set("whiteTranslucent40", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhiteTranslucent40: Self = this.set("whiteTranslucent40", js.undefined)
+    @scala.inline
+    def setYellow(value: String): Self = this.set("yellow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYellow: Self = this.set("yellow", js.undefined)
+    @scala.inline
+    def setYellowDark(value: String): Self = this.set("yellowDark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYellowDark: Self = this.set("yellowDark", js.undefined)
+    @scala.inline
+    def setYellowLight(value: String): Self = this.set("yellowLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYellowLight: Self = this.set("yellowLight", js.undefined)
+  }
+  
 }
 

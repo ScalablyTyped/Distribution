@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @since LibreOffice 4.0 */
+@js.native
 trait XNSSInitializer
   extends XDigestContextSupplier
      with XCipherContextSupplier

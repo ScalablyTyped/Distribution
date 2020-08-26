@@ -10,15 +10,34 @@ import scala.scalajs.js.annotation._
 @js.native
 object bufferTimeMod extends js.Object {
   def bufferTime[T](bufferTimeSpan: Double): OperatorFunction[T, js.Array[T]] = js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[Double | Null], maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[scala.Nothing], maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](
     bufferTimeSpan: Double,
-    bufferCreationInterval: js.UndefOr[Double | Null],
+    bufferCreationInterval: js.UndefOr[scala.Nothing],
     maxBufferSize: Double,
     scheduler: SchedulerLike
   ): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](
+    bufferTimeSpan: Double,
+    bufferCreationInterval: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](
+    bufferTimeSpan: Double,
+    bufferCreationInterval: Double,
+    maxBufferSize: Double,
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](
+    bufferTimeSpan: Double,
+    bufferCreationInterval: Null,
+    maxBufferSize: Double,
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
 }

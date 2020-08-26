@@ -7,1476 +7,1984 @@ import scala.scalajs.js.annotation._
 /**
   * Definition of an element in a resource or extension
   */
+@js.native
 trait ElementDefinition extends Element {
   /**
     * Contains extended information for property 'alias'.
     */
-  var _alias: js.UndefOr[js.Array[Element]] = js.undefined
+  var _alias: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Contains extended information for property 'comment'.
     */
-  var _comment: js.UndefOr[Element] = js.undefined
+  var _comment: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'condition'.
     */
-  var _condition: js.UndefOr[js.Array[Element]] = js.undefined
+  var _condition: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Contains extended information for property 'contentReference'.
     */
-  var _contentReference: js.UndefOr[Element] = js.undefined
+  var _contentReference: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueBase64Binary'.
     */
-  var _defaultValueBase64Binary: js.UndefOr[Element] = js.undefined
+  var _defaultValueBase64Binary: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueBoolean'.
     */
-  var _defaultValueBoolean: js.UndefOr[Element] = js.undefined
+  var _defaultValueBoolean: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueCode'.
     */
-  var _defaultValueCode: js.UndefOr[Element] = js.undefined
+  var _defaultValueCode: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueDate'.
     */
-  var _defaultValueDate: js.UndefOr[Element] = js.undefined
+  var _defaultValueDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueDateTime'.
     */
-  var _defaultValueDateTime: js.UndefOr[Element] = js.undefined
+  var _defaultValueDateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueDecimal'.
     */
-  var _defaultValueDecimal: js.UndefOr[Element] = js.undefined
+  var _defaultValueDecimal: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueId'.
     */
-  var _defaultValueId: js.UndefOr[Element] = js.undefined
+  var _defaultValueId: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueInstant'.
     */
-  var _defaultValueInstant: js.UndefOr[Element] = js.undefined
+  var _defaultValueInstant: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueInteger'.
     */
-  var _defaultValueInteger: js.UndefOr[Element] = js.undefined
+  var _defaultValueInteger: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueMarkdown'.
     */
-  var _defaultValueMarkdown: js.UndefOr[Element] = js.undefined
+  var _defaultValueMarkdown: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueOid'.
     */
-  var _defaultValueOid: js.UndefOr[Element] = js.undefined
+  var _defaultValueOid: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValuePositiveInt'.
     */
-  var _defaultValuePositiveInt: js.UndefOr[Element] = js.undefined
+  var _defaultValuePositiveInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueString'.
     */
-  var _defaultValueString: js.UndefOr[Element] = js.undefined
+  var _defaultValueString: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueTime'.
     */
-  var _defaultValueTime: js.UndefOr[Element] = js.undefined
+  var _defaultValueTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueUnsignedInt'.
     */
-  var _defaultValueUnsignedInt: js.UndefOr[Element] = js.undefined
+  var _defaultValueUnsignedInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'defaultValueUri'.
     */
-  var _defaultValueUri: js.UndefOr[Element] = js.undefined
+  var _defaultValueUri: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'definition'.
     */
-  var _definition: js.UndefOr[Element] = js.undefined
+  var _definition: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedBase64Binary'.
     */
-  var _fixedBase64Binary: js.UndefOr[Element] = js.undefined
+  var _fixedBase64Binary: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedBoolean'.
     */
-  var _fixedBoolean: js.UndefOr[Element] = js.undefined
+  var _fixedBoolean: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedCode'.
     */
-  var _fixedCode: js.UndefOr[Element] = js.undefined
+  var _fixedCode: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedDate'.
     */
-  var _fixedDate: js.UndefOr[Element] = js.undefined
+  var _fixedDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedDateTime'.
     */
-  var _fixedDateTime: js.UndefOr[Element] = js.undefined
+  var _fixedDateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedDecimal'.
     */
-  var _fixedDecimal: js.UndefOr[Element] = js.undefined
+  var _fixedDecimal: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedId'.
     */
-  var _fixedId: js.UndefOr[Element] = js.undefined
+  var _fixedId: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedInstant'.
     */
-  var _fixedInstant: js.UndefOr[Element] = js.undefined
+  var _fixedInstant: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedInteger'.
     */
-  var _fixedInteger: js.UndefOr[Element] = js.undefined
+  var _fixedInteger: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedMarkdown'.
     */
-  var _fixedMarkdown: js.UndefOr[Element] = js.undefined
+  var _fixedMarkdown: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedOid'.
     */
-  var _fixedOid: js.UndefOr[Element] = js.undefined
+  var _fixedOid: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedPositiveInt'.
     */
-  var _fixedPositiveInt: js.UndefOr[Element] = js.undefined
+  var _fixedPositiveInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedString'.
     */
-  var _fixedString: js.UndefOr[Element] = js.undefined
+  var _fixedString: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedTime'.
     */
-  var _fixedTime: js.UndefOr[Element] = js.undefined
+  var _fixedTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedUnsignedInt'.
     */
-  var _fixedUnsignedInt: js.UndefOr[Element] = js.undefined
+  var _fixedUnsignedInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'fixedUri'.
     */
-  var _fixedUri: js.UndefOr[Element] = js.undefined
+  var _fixedUri: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'isModifier'.
     */
-  var _isModifier: js.UndefOr[Element] = js.undefined
+  var _isModifier: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'isSummary'.
     */
-  var _isSummary: js.UndefOr[Element] = js.undefined
+  var _isSummary: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'label'.
     */
-  var _label: js.UndefOr[Element] = js.undefined
+  var _label: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'max'.
     */
-  var _max: js.UndefOr[Element] = js.undefined
+  var _max: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'maxLength'.
     */
-  var _maxLength: js.UndefOr[Element] = js.undefined
+  var _maxLength: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'maxValueDate'.
     */
-  var _maxValueDate: js.UndefOr[Element] = js.undefined
+  var _maxValueDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'maxValueDateTime'.
     */
-  var _maxValueDateTime: js.UndefOr[Element] = js.undefined
+  var _maxValueDateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'maxValueDecimal'.
     */
-  var _maxValueDecimal: js.UndefOr[Element] = js.undefined
+  var _maxValueDecimal: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'maxValueInstant'.
     */
-  var _maxValueInstant: js.UndefOr[Element] = js.undefined
+  var _maxValueInstant: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'maxValueInteger'.
     */
-  var _maxValueInteger: js.UndefOr[Element] = js.undefined
+  var _maxValueInteger: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'maxValuePositiveInt'.
     */
-  var _maxValuePositiveInt: js.UndefOr[Element] = js.undefined
+  var _maxValuePositiveInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'maxValueTime'.
     */
-  var _maxValueTime: js.UndefOr[Element] = js.undefined
+  var _maxValueTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'maxValueUnsignedInt'.
     */
-  var _maxValueUnsignedInt: js.UndefOr[Element] = js.undefined
+  var _maxValueUnsignedInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'meaningWhenMissing'.
     */
-  var _meaningWhenMissing: js.UndefOr[Element] = js.undefined
+  var _meaningWhenMissing: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'min'.
     */
-  var _min: js.UndefOr[Element] = js.undefined
+  var _min: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'minValueDate'.
     */
-  var _minValueDate: js.UndefOr[Element] = js.undefined
+  var _minValueDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'minValueDateTime'.
     */
-  var _minValueDateTime: js.UndefOr[Element] = js.undefined
+  var _minValueDateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'minValueDecimal'.
     */
-  var _minValueDecimal: js.UndefOr[Element] = js.undefined
+  var _minValueDecimal: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'minValueInstant'.
     */
-  var _minValueInstant: js.UndefOr[Element] = js.undefined
+  var _minValueInstant: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'minValueInteger'.
     */
-  var _minValueInteger: js.UndefOr[Element] = js.undefined
+  var _minValueInteger: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'minValuePositiveInt'.
     */
-  var _minValuePositiveInt: js.UndefOr[Element] = js.undefined
+  var _minValuePositiveInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'minValueTime'.
     */
-  var _minValueTime: js.UndefOr[Element] = js.undefined
+  var _minValueTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'minValueUnsignedInt'.
     */
-  var _minValueUnsignedInt: js.UndefOr[Element] = js.undefined
+  var _minValueUnsignedInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'mustSupport'.
     */
-  var _mustSupport: js.UndefOr[Element] = js.undefined
+  var _mustSupport: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'orderMeaning'.
     */
-  var _orderMeaning: js.UndefOr[Element] = js.undefined
+  var _orderMeaning: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'path'.
     */
-  var _path: js.UndefOr[Element] = js.undefined
+  var _path: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternBase64Binary'.
     */
-  var _patternBase64Binary: js.UndefOr[Element] = js.undefined
+  var _patternBase64Binary: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternBoolean'.
     */
-  var _patternBoolean: js.UndefOr[Element] = js.undefined
+  var _patternBoolean: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternCode'.
     */
-  var _patternCode: js.UndefOr[Element] = js.undefined
+  var _patternCode: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternDate'.
     */
-  var _patternDate: js.UndefOr[Element] = js.undefined
+  var _patternDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternDateTime'.
     */
-  var _patternDateTime: js.UndefOr[Element] = js.undefined
+  var _patternDateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternDecimal'.
     */
-  var _patternDecimal: js.UndefOr[Element] = js.undefined
+  var _patternDecimal: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternId'.
     */
-  var _patternId: js.UndefOr[Element] = js.undefined
+  var _patternId: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternInstant'.
     */
-  var _patternInstant: js.UndefOr[Element] = js.undefined
+  var _patternInstant: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternInteger'.
     */
-  var _patternInteger: js.UndefOr[Element] = js.undefined
+  var _patternInteger: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternMarkdown'.
     */
-  var _patternMarkdown: js.UndefOr[Element] = js.undefined
+  var _patternMarkdown: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternOid'.
     */
-  var _patternOid: js.UndefOr[Element] = js.undefined
+  var _patternOid: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternPositiveInt'.
     */
-  var _patternPositiveInt: js.UndefOr[Element] = js.undefined
+  var _patternPositiveInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternString'.
     */
-  var _patternString: js.UndefOr[Element] = js.undefined
+  var _patternString: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternTime'.
     */
-  var _patternTime: js.UndefOr[Element] = js.undefined
+  var _patternTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternUnsignedInt'.
     */
-  var _patternUnsignedInt: js.UndefOr[Element] = js.undefined
+  var _patternUnsignedInt: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'patternUri'.
     */
-  var _patternUri: js.UndefOr[Element] = js.undefined
+  var _patternUri: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'representation'.
     */
-  var _representation: js.UndefOr[js.Array[Element]] = js.undefined
+  var _representation: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Contains extended information for property 'requirements'.
     */
-  var _requirements: js.UndefOr[Element] = js.undefined
+  var _requirements: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'short'.
     */
-  var _short: js.UndefOr[Element] = js.undefined
+  var _short: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'sliceName'.
     */
-  var _sliceName: js.UndefOr[Element] = js.undefined
+  var _sliceName: js.UndefOr[Element] = js.native
   /**
     * Other names
     */
-  var alias: js.UndefOr[js.Array[String]] = js.undefined
+  var alias: js.UndefOr[js.Array[String]] = js.native
   /**
     * Base definition information for tools
     */
-  var base: js.UndefOr[ElementDefinitionBase] = js.undefined
+  var base: js.UndefOr[ElementDefinitionBase] = js.native
   /**
     * ValueSet details if this is coded
     */
-  var binding: js.UndefOr[ElementDefinitionBinding] = js.undefined
+  var binding: js.UndefOr[ElementDefinitionBinding] = js.native
   /**
     * Corresponding codes in terminologies
     */
-  var code: js.UndefOr[js.Array[Coding]] = js.undefined
+  var code: js.UndefOr[js.Array[Coding]] = js.native
   /**
     * Comments about the use of this element
     */
-  var comment: js.UndefOr[markdown] = js.undefined
+  var comment: js.UndefOr[markdown] = js.native
   /**
     * Reference to invariant about presence
     */
-  var condition: js.UndefOr[js.Array[id]] = js.undefined
+  var condition: js.UndefOr[js.Array[id]] = js.native
   /**
     * Condition that must evaluate to true
     */
-  var constraint: js.UndefOr[js.Array[ElementDefinitionConstraint]] = js.undefined
+  var constraint: js.UndefOr[js.Array[ElementDefinitionConstraint]] = js.native
   /**
     * Reference to definition of content for the element
     */
-  var contentReference: js.UndefOr[uri] = js.undefined
+  var contentReference: js.UndefOr[uri] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueAddress: js.UndefOr[Address] = js.undefined
+  var defaultValueAddress: js.UndefOr[Address] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueAge: js.UndefOr[Age] = js.undefined
+  var defaultValueAge: js.UndefOr[Age] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueAnnotation: js.UndefOr[Annotation] = js.undefined
+  var defaultValueAnnotation: js.UndefOr[Annotation] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueAttachment: js.UndefOr[Attachment] = js.undefined
+  var defaultValueAttachment: js.UndefOr[Attachment] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueBase64Binary: js.UndefOr[base64Binary] = js.undefined
+  var defaultValueBase64Binary: js.UndefOr[base64Binary] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueBoolean: js.UndefOr[Boolean] = js.undefined
+  var defaultValueBoolean: js.UndefOr[Boolean] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueCode: js.UndefOr[code] = js.undefined
+  var defaultValueCode: js.UndefOr[code] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var defaultValueCodeableConcept: js.UndefOr[CodeableConcept] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueCoding: js.UndefOr[Coding] = js.undefined
+  var defaultValueCoding: js.UndefOr[Coding] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueContactPoint: js.UndefOr[ContactPoint] = js.undefined
+  var defaultValueContactPoint: js.UndefOr[ContactPoint] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueCount: js.UndefOr[Count] = js.undefined
+  var defaultValueCount: js.UndefOr[Count] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueDate: js.UndefOr[date] = js.undefined
+  var defaultValueDate: js.UndefOr[date] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueDateTime: js.UndefOr[dateTime] = js.undefined
+  var defaultValueDateTime: js.UndefOr[dateTime] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueDecimal: js.UndefOr[decimal] = js.undefined
+  var defaultValueDecimal: js.UndefOr[decimal] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueDistance: js.UndefOr[Distance] = js.undefined
+  var defaultValueDistance: js.UndefOr[Distance] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueDuration: js.UndefOr[Duration] = js.undefined
+  var defaultValueDuration: js.UndefOr[Duration] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueHumanName: js.UndefOr[HumanName] = js.undefined
+  var defaultValueHumanName: js.UndefOr[HumanName] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueId: js.UndefOr[id] = js.undefined
+  var defaultValueId: js.UndefOr[id] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueIdentifier: js.UndefOr[Identifier] = js.undefined
+  var defaultValueIdentifier: js.UndefOr[Identifier] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueInstant: js.UndefOr[instant] = js.undefined
+  var defaultValueInstant: js.UndefOr[instant] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueInteger: js.UndefOr[integer] = js.undefined
+  var defaultValueInteger: js.UndefOr[integer] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueMarkdown: js.UndefOr[markdown] = js.undefined
+  var defaultValueMarkdown: js.UndefOr[markdown] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueMeta: js.UndefOr[Meta] = js.undefined
+  var defaultValueMeta: js.UndefOr[Meta] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueMoney: js.UndefOr[Money] = js.undefined
+  var defaultValueMoney: js.UndefOr[Money] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueOid: js.UndefOr[oid] = js.undefined
+  var defaultValueOid: js.UndefOr[oid] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValuePeriod: js.UndefOr[Period] = js.undefined
+  var defaultValuePeriod: js.UndefOr[Period] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValuePositiveInt: js.UndefOr[positiveInt] = js.undefined
+  var defaultValuePositiveInt: js.UndefOr[positiveInt] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueQuantity: js.UndefOr[Quantity] = js.undefined
+  var defaultValueQuantity: js.UndefOr[Quantity] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueRange: js.UndefOr[Range] = js.undefined
+  var defaultValueRange: js.UndefOr[Range] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueRatio: js.UndefOr[Ratio] = js.undefined
+  var defaultValueRatio: js.UndefOr[Ratio] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueReference: js.UndefOr[Reference] = js.undefined
+  var defaultValueReference: js.UndefOr[Reference] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueSampledData: js.UndefOr[SampledData] = js.undefined
+  var defaultValueSampledData: js.UndefOr[SampledData] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueSignature: js.UndefOr[Signature] = js.undefined
+  var defaultValueSignature: js.UndefOr[Signature] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueString: js.UndefOr[String] = js.undefined
+  var defaultValueString: js.UndefOr[String] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueTime: js.UndefOr[time] = js.undefined
+  var defaultValueTime: js.UndefOr[time] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueTiming: js.UndefOr[Timing] = js.undefined
+  var defaultValueTiming: js.UndefOr[Timing] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
+  var defaultValueUnsignedInt: js.UndefOr[unsignedInt] = js.native
   /**
     * Specified value if missing from instance
     */
-  var defaultValueUri: js.UndefOr[uri] = js.undefined
+  var defaultValueUri: js.UndefOr[uri] = js.native
   /**
     * Full formal definition as narrative text
     */
-  var definition: js.UndefOr[markdown] = js.undefined
+  var definition: js.UndefOr[markdown] = js.native
   /**
     * Example value (as defined for type)
     */
-  var example: js.UndefOr[js.Array[ElementDefinitionExample]] = js.undefined
+  var example: js.UndefOr[js.Array[ElementDefinitionExample]] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedAddress: js.UndefOr[Address] = js.undefined
+  var fixedAddress: js.UndefOr[Address] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedAge: js.UndefOr[Age] = js.undefined
+  var fixedAge: js.UndefOr[Age] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedAnnotation: js.UndefOr[Annotation] = js.undefined
+  var fixedAnnotation: js.UndefOr[Annotation] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedAttachment: js.UndefOr[Attachment] = js.undefined
+  var fixedAttachment: js.UndefOr[Attachment] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedBase64Binary: js.UndefOr[base64Binary] = js.undefined
+  var fixedBase64Binary: js.UndefOr[base64Binary] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedBoolean: js.UndefOr[Boolean] = js.undefined
+  var fixedBoolean: js.UndefOr[Boolean] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedCode: js.UndefOr[code] = js.undefined
+  var fixedCode: js.UndefOr[code] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var fixedCodeableConcept: js.UndefOr[CodeableConcept] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedCoding: js.UndefOr[Coding] = js.undefined
+  var fixedCoding: js.UndefOr[Coding] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedContactPoint: js.UndefOr[ContactPoint] = js.undefined
+  var fixedContactPoint: js.UndefOr[ContactPoint] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedCount: js.UndefOr[Count] = js.undefined
+  var fixedCount: js.UndefOr[Count] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedDate: js.UndefOr[date] = js.undefined
+  var fixedDate: js.UndefOr[date] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedDateTime: js.UndefOr[dateTime] = js.undefined
+  var fixedDateTime: js.UndefOr[dateTime] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedDecimal: js.UndefOr[decimal] = js.undefined
+  var fixedDecimal: js.UndefOr[decimal] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedDistance: js.UndefOr[Distance] = js.undefined
+  var fixedDistance: js.UndefOr[Distance] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedDuration: js.UndefOr[Duration] = js.undefined
+  var fixedDuration: js.UndefOr[Duration] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedHumanName: js.UndefOr[HumanName] = js.undefined
+  var fixedHumanName: js.UndefOr[HumanName] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedId: js.UndefOr[id] = js.undefined
+  var fixedId: js.UndefOr[id] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedIdentifier: js.UndefOr[Identifier] = js.undefined
+  var fixedIdentifier: js.UndefOr[Identifier] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedInstant: js.UndefOr[instant] = js.undefined
+  var fixedInstant: js.UndefOr[instant] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedInteger: js.UndefOr[integer] = js.undefined
+  var fixedInteger: js.UndefOr[integer] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedMarkdown: js.UndefOr[markdown] = js.undefined
+  var fixedMarkdown: js.UndefOr[markdown] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedMeta: js.UndefOr[Meta] = js.undefined
+  var fixedMeta: js.UndefOr[Meta] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedMoney: js.UndefOr[Money] = js.undefined
+  var fixedMoney: js.UndefOr[Money] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedOid: js.UndefOr[oid] = js.undefined
+  var fixedOid: js.UndefOr[oid] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedPeriod: js.UndefOr[Period] = js.undefined
+  var fixedPeriod: js.UndefOr[Period] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedPositiveInt: js.UndefOr[positiveInt] = js.undefined
+  var fixedPositiveInt: js.UndefOr[positiveInt] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedQuantity: js.UndefOr[Quantity] = js.undefined
+  var fixedQuantity: js.UndefOr[Quantity] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedRange: js.UndefOr[Range] = js.undefined
+  var fixedRange: js.UndefOr[Range] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedRatio: js.UndefOr[Ratio] = js.undefined
+  var fixedRatio: js.UndefOr[Ratio] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedReference: js.UndefOr[Reference] = js.undefined
+  var fixedReference: js.UndefOr[Reference] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedSampledData: js.UndefOr[SampledData] = js.undefined
+  var fixedSampledData: js.UndefOr[SampledData] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedSignature: js.UndefOr[Signature] = js.undefined
+  var fixedSignature: js.UndefOr[Signature] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedString: js.UndefOr[String] = js.undefined
+  var fixedString: js.UndefOr[String] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedTime: js.UndefOr[time] = js.undefined
+  var fixedTime: js.UndefOr[time] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedTiming: js.UndefOr[Timing] = js.undefined
+  var fixedTiming: js.UndefOr[Timing] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
+  var fixedUnsignedInt: js.UndefOr[unsignedInt] = js.native
   /**
     * Value must be exactly this
     */
-  var fixedUri: js.UndefOr[uri] = js.undefined
+  var fixedUri: js.UndefOr[uri] = js.native
   /**
     * If this modifies the meaning of other elements
     */
-  var isModifier: js.UndefOr[Boolean] = js.undefined
+  var isModifier: js.UndefOr[Boolean] = js.native
   /**
     * Include when _summary = true?
     */
-  var isSummary: js.UndefOr[Boolean] = js.undefined
+  var isSummary: js.UndefOr[Boolean] = js.native
   /**
     * Name for element to display with or prompt for element
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
   /**
     * Map element to another set of definitions
     */
-  var mapping: js.UndefOr[js.Array[ElementDefinitionMapping]] = js.undefined
+  var mapping: js.UndefOr[js.Array[ElementDefinitionMapping]] = js.native
   /**
     * Maximum Cardinality (a number or *)
     */
-  var max: js.UndefOr[String] = js.undefined
+  var max: js.UndefOr[String] = js.native
   /**
     * Max length for strings
     */
-  var maxLength: js.UndefOr[integer] = js.undefined
+  var maxLength: js.UndefOr[integer] = js.native
   /**
     * Maximum Allowed Value (for some types)
     */
-  var maxValueDate: js.UndefOr[date] = js.undefined
+  var maxValueDate: js.UndefOr[date] = js.native
   /**
     * Maximum Allowed Value (for some types)
     */
-  var maxValueDateTime: js.UndefOr[dateTime] = js.undefined
+  var maxValueDateTime: js.UndefOr[dateTime] = js.native
   /**
     * Maximum Allowed Value (for some types)
     */
-  var maxValueDecimal: js.UndefOr[decimal] = js.undefined
+  var maxValueDecimal: js.UndefOr[decimal] = js.native
   /**
     * Maximum Allowed Value (for some types)
     */
-  var maxValueInstant: js.UndefOr[instant] = js.undefined
+  var maxValueInstant: js.UndefOr[instant] = js.native
   /**
     * Maximum Allowed Value (for some types)
     */
-  var maxValueInteger: js.UndefOr[integer] = js.undefined
+  var maxValueInteger: js.UndefOr[integer] = js.native
   /**
     * Maximum Allowed Value (for some types)
     */
-  var maxValuePositiveInt: js.UndefOr[positiveInt] = js.undefined
+  var maxValuePositiveInt: js.UndefOr[positiveInt] = js.native
   /**
     * Maximum Allowed Value (for some types)
     */
-  var maxValueQuantity: js.UndefOr[Quantity] = js.undefined
+  var maxValueQuantity: js.UndefOr[Quantity] = js.native
   /**
     * Maximum Allowed Value (for some types)
     */
-  var maxValueTime: js.UndefOr[time] = js.undefined
+  var maxValueTime: js.UndefOr[time] = js.native
   /**
     * Maximum Allowed Value (for some types)
     */
-  var maxValueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
+  var maxValueUnsignedInt: js.UndefOr[unsignedInt] = js.native
   /**
     * Implicit meaning when this element is missing
     */
-  var meaningWhenMissing: js.UndefOr[markdown] = js.undefined
+  var meaningWhenMissing: js.UndefOr[markdown] = js.native
   /**
     * Minimum Cardinality
     */
-  var min: js.UndefOr[unsignedInt] = js.undefined
+  var min: js.UndefOr[unsignedInt] = js.native
   /**
     * Minimum Allowed Value (for some types)
     */
-  var minValueDate: js.UndefOr[date] = js.undefined
+  var minValueDate: js.UndefOr[date] = js.native
   /**
     * Minimum Allowed Value (for some types)
     */
-  var minValueDateTime: js.UndefOr[dateTime] = js.undefined
+  var minValueDateTime: js.UndefOr[dateTime] = js.native
   /**
     * Minimum Allowed Value (for some types)
     */
-  var minValueDecimal: js.UndefOr[decimal] = js.undefined
+  var minValueDecimal: js.UndefOr[decimal] = js.native
   /**
     * Minimum Allowed Value (for some types)
     */
-  var minValueInstant: js.UndefOr[instant] = js.undefined
+  var minValueInstant: js.UndefOr[instant] = js.native
   /**
     * Minimum Allowed Value (for some types)
     */
-  var minValueInteger: js.UndefOr[integer] = js.undefined
+  var minValueInteger: js.UndefOr[integer] = js.native
   /**
     * Minimum Allowed Value (for some types)
     */
-  var minValuePositiveInt: js.UndefOr[positiveInt] = js.undefined
+  var minValuePositiveInt: js.UndefOr[positiveInt] = js.native
   /**
     * Minimum Allowed Value (for some types)
     */
-  var minValueQuantity: js.UndefOr[Quantity] = js.undefined
+  var minValueQuantity: js.UndefOr[Quantity] = js.native
   /**
     * Minimum Allowed Value (for some types)
     */
-  var minValueTime: js.UndefOr[time] = js.undefined
+  var minValueTime: js.UndefOr[time] = js.native
   /**
     * Minimum Allowed Value (for some types)
     */
-  var minValueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
+  var minValueUnsignedInt: js.UndefOr[unsignedInt] = js.native
   /**
     * If the element must supported
     */
-  var mustSupport: js.UndefOr[Boolean] = js.undefined
+  var mustSupport: js.UndefOr[Boolean] = js.native
   /**
     * What the order of the elements means
     */
-  var orderMeaning: js.UndefOr[String] = js.undefined
+  var orderMeaning: js.UndefOr[String] = js.native
   /**
     * Path of the element in the hierarchy of elements
     */
-  var path: String
+  var path: String = js.native
   /**
     * Value must have at least these property values
     */
-  var patternAddress: js.UndefOr[Address] = js.undefined
+  var patternAddress: js.UndefOr[Address] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternAge: js.UndefOr[Age] = js.undefined
+  var patternAge: js.UndefOr[Age] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternAnnotation: js.UndefOr[Annotation] = js.undefined
+  var patternAnnotation: js.UndefOr[Annotation] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternAttachment: js.UndefOr[Attachment] = js.undefined
+  var patternAttachment: js.UndefOr[Attachment] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternBase64Binary: js.UndefOr[base64Binary] = js.undefined
+  var patternBase64Binary: js.UndefOr[base64Binary] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternBoolean: js.UndefOr[Boolean] = js.undefined
+  var patternBoolean: js.UndefOr[Boolean] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternCode: js.UndefOr[code] = js.undefined
+  var patternCode: js.UndefOr[code] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var patternCodeableConcept: js.UndefOr[CodeableConcept] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternCoding: js.UndefOr[Coding] = js.undefined
+  var patternCoding: js.UndefOr[Coding] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternContactPoint: js.UndefOr[ContactPoint] = js.undefined
+  var patternContactPoint: js.UndefOr[ContactPoint] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternCount: js.UndefOr[Count] = js.undefined
+  var patternCount: js.UndefOr[Count] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternDate: js.UndefOr[date] = js.undefined
+  var patternDate: js.UndefOr[date] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternDateTime: js.UndefOr[dateTime] = js.undefined
+  var patternDateTime: js.UndefOr[dateTime] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternDecimal: js.UndefOr[decimal] = js.undefined
+  var patternDecimal: js.UndefOr[decimal] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternDistance: js.UndefOr[Distance] = js.undefined
+  var patternDistance: js.UndefOr[Distance] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternDuration: js.UndefOr[Duration] = js.undefined
+  var patternDuration: js.UndefOr[Duration] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternHumanName: js.UndefOr[HumanName] = js.undefined
+  var patternHumanName: js.UndefOr[HumanName] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternId: js.UndefOr[id] = js.undefined
+  var patternId: js.UndefOr[id] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternIdentifier: js.UndefOr[Identifier] = js.undefined
+  var patternIdentifier: js.UndefOr[Identifier] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternInstant: js.UndefOr[instant] = js.undefined
+  var patternInstant: js.UndefOr[instant] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternInteger: js.UndefOr[integer] = js.undefined
+  var patternInteger: js.UndefOr[integer] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternMarkdown: js.UndefOr[markdown] = js.undefined
+  var patternMarkdown: js.UndefOr[markdown] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternMeta: js.UndefOr[Meta] = js.undefined
+  var patternMeta: js.UndefOr[Meta] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternMoney: js.UndefOr[Money] = js.undefined
+  var patternMoney: js.UndefOr[Money] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternOid: js.UndefOr[oid] = js.undefined
+  var patternOid: js.UndefOr[oid] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternPeriod: js.UndefOr[Period] = js.undefined
+  var patternPeriod: js.UndefOr[Period] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternPositiveInt: js.UndefOr[positiveInt] = js.undefined
+  var patternPositiveInt: js.UndefOr[positiveInt] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternQuantity: js.UndefOr[Quantity] = js.undefined
+  var patternQuantity: js.UndefOr[Quantity] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternRange: js.UndefOr[Range] = js.undefined
+  var patternRange: js.UndefOr[Range] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternRatio: js.UndefOr[Ratio] = js.undefined
+  var patternRatio: js.UndefOr[Ratio] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternReference: js.UndefOr[Reference] = js.undefined
+  var patternReference: js.UndefOr[Reference] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternSampledData: js.UndefOr[SampledData] = js.undefined
+  var patternSampledData: js.UndefOr[SampledData] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternSignature: js.UndefOr[Signature] = js.undefined
+  var patternSignature: js.UndefOr[Signature] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternString: js.UndefOr[String] = js.undefined
+  var patternString: js.UndefOr[String] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternTime: js.UndefOr[time] = js.undefined
+  var patternTime: js.UndefOr[time] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternTiming: js.UndefOr[Timing] = js.undefined
+  var patternTiming: js.UndefOr[Timing] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
+  var patternUnsignedInt: js.UndefOr[unsignedInt] = js.native
   /**
     * Value must have at least these property values
     */
-  var patternUri: js.UndefOr[uri] = js.undefined
+  var patternUri: js.UndefOr[uri] = js.native
   /**
     * xmlAttr | xmlText | typeAttr | cdaText | xhtml
     */
-  var representation: js.UndefOr[js.Array[code]] = js.undefined
+  var representation: js.UndefOr[js.Array[code]] = js.native
   /**
     * Why this resource has been created
     */
-  var requirements: js.UndefOr[markdown] = js.undefined
+  var requirements: js.UndefOr[markdown] = js.native
   /**
     * Concise definition for space-constrained presentation
     */
-  var short: js.UndefOr[String] = js.undefined
+  var short: js.UndefOr[String] = js.native
   /**
     * Name for this particular element (in a set of slices)
     */
-  var sliceName: js.UndefOr[String] = js.undefined
+  var sliceName: js.UndefOr[String] = js.native
   /**
     * This element is sliced - slices follow
     */
-  var slicing: js.UndefOr[ElementDefinitionSlicing] = js.undefined
+  var slicing: js.UndefOr[ElementDefinitionSlicing] = js.native
   /**
     * Data type and Profile for this element
     */
-  var `type`: js.UndefOr[js.Array[ElementDefinitionType]] = js.undefined
+  var `type`: js.UndefOr[js.Array[ElementDefinitionType]] = js.native
 }
 
 object ElementDefinition {
   @scala.inline
-  def apply(
-    path: String,
-    _alias: js.Array[Element] = null,
-    _comment: Element = null,
-    _condition: js.Array[Element] = null,
-    _contentReference: Element = null,
-    _defaultValueBase64Binary: Element = null,
-    _defaultValueBoolean: Element = null,
-    _defaultValueCode: Element = null,
-    _defaultValueDate: Element = null,
-    _defaultValueDateTime: Element = null,
-    _defaultValueDecimal: Element = null,
-    _defaultValueId: Element = null,
-    _defaultValueInstant: Element = null,
-    _defaultValueInteger: Element = null,
-    _defaultValueMarkdown: Element = null,
-    _defaultValueOid: Element = null,
-    _defaultValuePositiveInt: Element = null,
-    _defaultValueString: Element = null,
-    _defaultValueTime: Element = null,
-    _defaultValueUnsignedInt: Element = null,
-    _defaultValueUri: Element = null,
-    _definition: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _fixedBase64Binary: Element = null,
-    _fixedBoolean: Element = null,
-    _fixedCode: Element = null,
-    _fixedDate: Element = null,
-    _fixedDateTime: Element = null,
-    _fixedDecimal: Element = null,
-    _fixedId: Element = null,
-    _fixedInstant: Element = null,
-    _fixedInteger: Element = null,
-    _fixedMarkdown: Element = null,
-    _fixedOid: Element = null,
-    _fixedPositiveInt: Element = null,
-    _fixedString: Element = null,
-    _fixedTime: Element = null,
-    _fixedUnsignedInt: Element = null,
-    _fixedUri: Element = null,
-    _id: Element = null,
-    _isModifier: Element = null,
-    _isSummary: Element = null,
-    _label: Element = null,
-    _max: Element = null,
-    _maxLength: Element = null,
-    _maxValueDate: Element = null,
-    _maxValueDateTime: Element = null,
-    _maxValueDecimal: Element = null,
-    _maxValueInstant: Element = null,
-    _maxValueInteger: Element = null,
-    _maxValuePositiveInt: Element = null,
-    _maxValueTime: Element = null,
-    _maxValueUnsignedInt: Element = null,
-    _meaningWhenMissing: Element = null,
-    _min: Element = null,
-    _minValueDate: Element = null,
-    _minValueDateTime: Element = null,
-    _minValueDecimal: Element = null,
-    _minValueInstant: Element = null,
-    _minValueInteger: Element = null,
-    _minValuePositiveInt: Element = null,
-    _minValueTime: Element = null,
-    _minValueUnsignedInt: Element = null,
-    _mustSupport: Element = null,
-    _orderMeaning: Element = null,
-    _path: Element = null,
-    _patternBase64Binary: Element = null,
-    _patternBoolean: Element = null,
-    _patternCode: Element = null,
-    _patternDate: Element = null,
-    _patternDateTime: Element = null,
-    _patternDecimal: Element = null,
-    _patternId: Element = null,
-    _patternInstant: Element = null,
-    _patternInteger: Element = null,
-    _patternMarkdown: Element = null,
-    _patternOid: Element = null,
-    _patternPositiveInt: Element = null,
-    _patternString: Element = null,
-    _patternTime: Element = null,
-    _patternUnsignedInt: Element = null,
-    _patternUri: Element = null,
-    _representation: js.Array[Element] = null,
-    _requirements: Element = null,
-    _short: Element = null,
-    _sliceName: Element = null,
-    alias: js.Array[String] = null,
-    base: ElementDefinitionBase = null,
-    binding: ElementDefinitionBinding = null,
-    code: js.Array[Coding] = null,
-    comment: markdown = null,
-    condition: js.Array[id] = null,
-    constraint: js.Array[ElementDefinitionConstraint] = null,
-    contentReference: uri = null,
-    defaultValueAddress: Address = null,
-    defaultValueAge: Age = null,
-    defaultValueAnnotation: Annotation = null,
-    defaultValueAttachment: Attachment = null,
-    defaultValueBase64Binary: base64Binary = null,
-    defaultValueBoolean: js.UndefOr[Boolean] = js.undefined,
-    defaultValueCode: code = null,
-    defaultValueCodeableConcept: CodeableConcept = null,
-    defaultValueCoding: Coding = null,
-    defaultValueContactPoint: ContactPoint = null,
-    defaultValueCount: Count = null,
-    defaultValueDate: date = null,
-    defaultValueDateTime: dateTime = null,
-    defaultValueDecimal: js.UndefOr[decimal] = js.undefined,
-    defaultValueDistance: Distance = null,
-    defaultValueDuration: Duration = null,
-    defaultValueHumanName: HumanName = null,
-    defaultValueId: id = null,
-    defaultValueIdentifier: Identifier = null,
-    defaultValueInstant: instant = null,
-    defaultValueInteger: js.UndefOr[integer] = js.undefined,
-    defaultValueMarkdown: markdown = null,
-    defaultValueMeta: Meta = null,
-    defaultValueMoney: Money = null,
-    defaultValueOid: oid = null,
-    defaultValuePeriod: Period = null,
-    defaultValuePositiveInt: js.UndefOr[positiveInt] = js.undefined,
-    defaultValueQuantity: Quantity = null,
-    defaultValueRange: Range = null,
-    defaultValueRatio: Ratio = null,
-    defaultValueReference: Reference = null,
-    defaultValueSampledData: SampledData = null,
-    defaultValueSignature: Signature = null,
-    defaultValueString: String = null,
-    defaultValueTime: time = null,
-    defaultValueTiming: Timing = null,
-    defaultValueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
-    defaultValueUri: uri = null,
-    definition: markdown = null,
-    example: js.Array[ElementDefinitionExample] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    fixedAddress: Address = null,
-    fixedAge: Age = null,
-    fixedAnnotation: Annotation = null,
-    fixedAttachment: Attachment = null,
-    fixedBase64Binary: base64Binary = null,
-    fixedBoolean: js.UndefOr[Boolean] = js.undefined,
-    fixedCode: code = null,
-    fixedCodeableConcept: CodeableConcept = null,
-    fixedCoding: Coding = null,
-    fixedContactPoint: ContactPoint = null,
-    fixedCount: Count = null,
-    fixedDate: date = null,
-    fixedDateTime: dateTime = null,
-    fixedDecimal: js.UndefOr[decimal] = js.undefined,
-    fixedDistance: Distance = null,
-    fixedDuration: Duration = null,
-    fixedHumanName: HumanName = null,
-    fixedId: id = null,
-    fixedIdentifier: Identifier = null,
-    fixedInstant: instant = null,
-    fixedInteger: js.UndefOr[integer] = js.undefined,
-    fixedMarkdown: markdown = null,
-    fixedMeta: Meta = null,
-    fixedMoney: Money = null,
-    fixedOid: oid = null,
-    fixedPeriod: Period = null,
-    fixedPositiveInt: js.UndefOr[positiveInt] = js.undefined,
-    fixedQuantity: Quantity = null,
-    fixedRange: Range = null,
-    fixedRatio: Ratio = null,
-    fixedReference: Reference = null,
-    fixedSampledData: SampledData = null,
-    fixedSignature: Signature = null,
-    fixedString: String = null,
-    fixedTime: time = null,
-    fixedTiming: Timing = null,
-    fixedUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
-    fixedUri: uri = null,
-    id: String = null,
-    isModifier: js.UndefOr[Boolean] = js.undefined,
-    isSummary: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    mapping: js.Array[ElementDefinitionMapping] = null,
-    max: String = null,
-    maxLength: js.UndefOr[integer] = js.undefined,
-    maxValueDate: date = null,
-    maxValueDateTime: dateTime = null,
-    maxValueDecimal: js.UndefOr[decimal] = js.undefined,
-    maxValueInstant: instant = null,
-    maxValueInteger: js.UndefOr[integer] = js.undefined,
-    maxValuePositiveInt: js.UndefOr[positiveInt] = js.undefined,
-    maxValueQuantity: Quantity = null,
-    maxValueTime: time = null,
-    maxValueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
-    meaningWhenMissing: markdown = null,
-    min: js.UndefOr[unsignedInt] = js.undefined,
-    minValueDate: date = null,
-    minValueDateTime: dateTime = null,
-    minValueDecimal: js.UndefOr[decimal] = js.undefined,
-    minValueInstant: instant = null,
-    minValueInteger: js.UndefOr[integer] = js.undefined,
-    minValuePositiveInt: js.UndefOr[positiveInt] = js.undefined,
-    minValueQuantity: Quantity = null,
-    minValueTime: time = null,
-    minValueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
-    mustSupport: js.UndefOr[Boolean] = js.undefined,
-    orderMeaning: String = null,
-    patternAddress: Address = null,
-    patternAge: Age = null,
-    patternAnnotation: Annotation = null,
-    patternAttachment: Attachment = null,
-    patternBase64Binary: base64Binary = null,
-    patternBoolean: js.UndefOr[Boolean] = js.undefined,
-    patternCode: code = null,
-    patternCodeableConcept: CodeableConcept = null,
-    patternCoding: Coding = null,
-    patternContactPoint: ContactPoint = null,
-    patternCount: Count = null,
-    patternDate: date = null,
-    patternDateTime: dateTime = null,
-    patternDecimal: js.UndefOr[decimal] = js.undefined,
-    patternDistance: Distance = null,
-    patternDuration: Duration = null,
-    patternHumanName: HumanName = null,
-    patternId: id = null,
-    patternIdentifier: Identifier = null,
-    patternInstant: instant = null,
-    patternInteger: js.UndefOr[integer] = js.undefined,
-    patternMarkdown: markdown = null,
-    patternMeta: Meta = null,
-    patternMoney: Money = null,
-    patternOid: oid = null,
-    patternPeriod: Period = null,
-    patternPositiveInt: js.UndefOr[positiveInt] = js.undefined,
-    patternQuantity: Quantity = null,
-    patternRange: Range = null,
-    patternRatio: Ratio = null,
-    patternReference: Reference = null,
-    patternSampledData: SampledData = null,
-    patternSignature: Signature = null,
-    patternString: String = null,
-    patternTime: time = null,
-    patternTiming: Timing = null,
-    patternUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
-    patternUri: uri = null,
-    representation: js.Array[code] = null,
-    requirements: markdown = null,
-    short: String = null,
-    sliceName: String = null,
-    slicing: ElementDefinitionSlicing = null,
-    `type`: js.Array[ElementDefinitionType] = null
-  ): ElementDefinition = {
+  def apply(path: String): ElementDefinition = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (_alias != null) __obj.updateDynamic("_alias")(_alias.asInstanceOf[js.Any])
-    if (_comment != null) __obj.updateDynamic("_comment")(_comment.asInstanceOf[js.Any])
-    if (_condition != null) __obj.updateDynamic("_condition")(_condition.asInstanceOf[js.Any])
-    if (_contentReference != null) __obj.updateDynamic("_contentReference")(_contentReference.asInstanceOf[js.Any])
-    if (_defaultValueBase64Binary != null) __obj.updateDynamic("_defaultValueBase64Binary")(_defaultValueBase64Binary.asInstanceOf[js.Any])
-    if (_defaultValueBoolean != null) __obj.updateDynamic("_defaultValueBoolean")(_defaultValueBoolean.asInstanceOf[js.Any])
-    if (_defaultValueCode != null) __obj.updateDynamic("_defaultValueCode")(_defaultValueCode.asInstanceOf[js.Any])
-    if (_defaultValueDate != null) __obj.updateDynamic("_defaultValueDate")(_defaultValueDate.asInstanceOf[js.Any])
-    if (_defaultValueDateTime != null) __obj.updateDynamic("_defaultValueDateTime")(_defaultValueDateTime.asInstanceOf[js.Any])
-    if (_defaultValueDecimal != null) __obj.updateDynamic("_defaultValueDecimal")(_defaultValueDecimal.asInstanceOf[js.Any])
-    if (_defaultValueId != null) __obj.updateDynamic("_defaultValueId")(_defaultValueId.asInstanceOf[js.Any])
-    if (_defaultValueInstant != null) __obj.updateDynamic("_defaultValueInstant")(_defaultValueInstant.asInstanceOf[js.Any])
-    if (_defaultValueInteger != null) __obj.updateDynamic("_defaultValueInteger")(_defaultValueInteger.asInstanceOf[js.Any])
-    if (_defaultValueMarkdown != null) __obj.updateDynamic("_defaultValueMarkdown")(_defaultValueMarkdown.asInstanceOf[js.Any])
-    if (_defaultValueOid != null) __obj.updateDynamic("_defaultValueOid")(_defaultValueOid.asInstanceOf[js.Any])
-    if (_defaultValuePositiveInt != null) __obj.updateDynamic("_defaultValuePositiveInt")(_defaultValuePositiveInt.asInstanceOf[js.Any])
-    if (_defaultValueString != null) __obj.updateDynamic("_defaultValueString")(_defaultValueString.asInstanceOf[js.Any])
-    if (_defaultValueTime != null) __obj.updateDynamic("_defaultValueTime")(_defaultValueTime.asInstanceOf[js.Any])
-    if (_defaultValueUnsignedInt != null) __obj.updateDynamic("_defaultValueUnsignedInt")(_defaultValueUnsignedInt.asInstanceOf[js.Any])
-    if (_defaultValueUri != null) __obj.updateDynamic("_defaultValueUri")(_defaultValueUri.asInstanceOf[js.Any])
-    if (_definition != null) __obj.updateDynamic("_definition")(_definition.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_fixedBase64Binary != null) __obj.updateDynamic("_fixedBase64Binary")(_fixedBase64Binary.asInstanceOf[js.Any])
-    if (_fixedBoolean != null) __obj.updateDynamic("_fixedBoolean")(_fixedBoolean.asInstanceOf[js.Any])
-    if (_fixedCode != null) __obj.updateDynamic("_fixedCode")(_fixedCode.asInstanceOf[js.Any])
-    if (_fixedDate != null) __obj.updateDynamic("_fixedDate")(_fixedDate.asInstanceOf[js.Any])
-    if (_fixedDateTime != null) __obj.updateDynamic("_fixedDateTime")(_fixedDateTime.asInstanceOf[js.Any])
-    if (_fixedDecimal != null) __obj.updateDynamic("_fixedDecimal")(_fixedDecimal.asInstanceOf[js.Any])
-    if (_fixedId != null) __obj.updateDynamic("_fixedId")(_fixedId.asInstanceOf[js.Any])
-    if (_fixedInstant != null) __obj.updateDynamic("_fixedInstant")(_fixedInstant.asInstanceOf[js.Any])
-    if (_fixedInteger != null) __obj.updateDynamic("_fixedInteger")(_fixedInteger.asInstanceOf[js.Any])
-    if (_fixedMarkdown != null) __obj.updateDynamic("_fixedMarkdown")(_fixedMarkdown.asInstanceOf[js.Any])
-    if (_fixedOid != null) __obj.updateDynamic("_fixedOid")(_fixedOid.asInstanceOf[js.Any])
-    if (_fixedPositiveInt != null) __obj.updateDynamic("_fixedPositiveInt")(_fixedPositiveInt.asInstanceOf[js.Any])
-    if (_fixedString != null) __obj.updateDynamic("_fixedString")(_fixedString.asInstanceOf[js.Any])
-    if (_fixedTime != null) __obj.updateDynamic("_fixedTime")(_fixedTime.asInstanceOf[js.Any])
-    if (_fixedUnsignedInt != null) __obj.updateDynamic("_fixedUnsignedInt")(_fixedUnsignedInt.asInstanceOf[js.Any])
-    if (_fixedUri != null) __obj.updateDynamic("_fixedUri")(_fixedUri.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_isModifier != null) __obj.updateDynamic("_isModifier")(_isModifier.asInstanceOf[js.Any])
-    if (_isSummary != null) __obj.updateDynamic("_isSummary")(_isSummary.asInstanceOf[js.Any])
-    if (_label != null) __obj.updateDynamic("_label")(_label.asInstanceOf[js.Any])
-    if (_max != null) __obj.updateDynamic("_max")(_max.asInstanceOf[js.Any])
-    if (_maxLength != null) __obj.updateDynamic("_maxLength")(_maxLength.asInstanceOf[js.Any])
-    if (_maxValueDate != null) __obj.updateDynamic("_maxValueDate")(_maxValueDate.asInstanceOf[js.Any])
-    if (_maxValueDateTime != null) __obj.updateDynamic("_maxValueDateTime")(_maxValueDateTime.asInstanceOf[js.Any])
-    if (_maxValueDecimal != null) __obj.updateDynamic("_maxValueDecimal")(_maxValueDecimal.asInstanceOf[js.Any])
-    if (_maxValueInstant != null) __obj.updateDynamic("_maxValueInstant")(_maxValueInstant.asInstanceOf[js.Any])
-    if (_maxValueInteger != null) __obj.updateDynamic("_maxValueInteger")(_maxValueInteger.asInstanceOf[js.Any])
-    if (_maxValuePositiveInt != null) __obj.updateDynamic("_maxValuePositiveInt")(_maxValuePositiveInt.asInstanceOf[js.Any])
-    if (_maxValueTime != null) __obj.updateDynamic("_maxValueTime")(_maxValueTime.asInstanceOf[js.Any])
-    if (_maxValueUnsignedInt != null) __obj.updateDynamic("_maxValueUnsignedInt")(_maxValueUnsignedInt.asInstanceOf[js.Any])
-    if (_meaningWhenMissing != null) __obj.updateDynamic("_meaningWhenMissing")(_meaningWhenMissing.asInstanceOf[js.Any])
-    if (_min != null) __obj.updateDynamic("_min")(_min.asInstanceOf[js.Any])
-    if (_minValueDate != null) __obj.updateDynamic("_minValueDate")(_minValueDate.asInstanceOf[js.Any])
-    if (_minValueDateTime != null) __obj.updateDynamic("_minValueDateTime")(_minValueDateTime.asInstanceOf[js.Any])
-    if (_minValueDecimal != null) __obj.updateDynamic("_minValueDecimal")(_minValueDecimal.asInstanceOf[js.Any])
-    if (_minValueInstant != null) __obj.updateDynamic("_minValueInstant")(_minValueInstant.asInstanceOf[js.Any])
-    if (_minValueInteger != null) __obj.updateDynamic("_minValueInteger")(_minValueInteger.asInstanceOf[js.Any])
-    if (_minValuePositiveInt != null) __obj.updateDynamic("_minValuePositiveInt")(_minValuePositiveInt.asInstanceOf[js.Any])
-    if (_minValueTime != null) __obj.updateDynamic("_minValueTime")(_minValueTime.asInstanceOf[js.Any])
-    if (_minValueUnsignedInt != null) __obj.updateDynamic("_minValueUnsignedInt")(_minValueUnsignedInt.asInstanceOf[js.Any])
-    if (_mustSupport != null) __obj.updateDynamic("_mustSupport")(_mustSupport.asInstanceOf[js.Any])
-    if (_orderMeaning != null) __obj.updateDynamic("_orderMeaning")(_orderMeaning.asInstanceOf[js.Any])
-    if (_path != null) __obj.updateDynamic("_path")(_path.asInstanceOf[js.Any])
-    if (_patternBase64Binary != null) __obj.updateDynamic("_patternBase64Binary")(_patternBase64Binary.asInstanceOf[js.Any])
-    if (_patternBoolean != null) __obj.updateDynamic("_patternBoolean")(_patternBoolean.asInstanceOf[js.Any])
-    if (_patternCode != null) __obj.updateDynamic("_patternCode")(_patternCode.asInstanceOf[js.Any])
-    if (_patternDate != null) __obj.updateDynamic("_patternDate")(_patternDate.asInstanceOf[js.Any])
-    if (_patternDateTime != null) __obj.updateDynamic("_patternDateTime")(_patternDateTime.asInstanceOf[js.Any])
-    if (_patternDecimal != null) __obj.updateDynamic("_patternDecimal")(_patternDecimal.asInstanceOf[js.Any])
-    if (_patternId != null) __obj.updateDynamic("_patternId")(_patternId.asInstanceOf[js.Any])
-    if (_patternInstant != null) __obj.updateDynamic("_patternInstant")(_patternInstant.asInstanceOf[js.Any])
-    if (_patternInteger != null) __obj.updateDynamic("_patternInteger")(_patternInteger.asInstanceOf[js.Any])
-    if (_patternMarkdown != null) __obj.updateDynamic("_patternMarkdown")(_patternMarkdown.asInstanceOf[js.Any])
-    if (_patternOid != null) __obj.updateDynamic("_patternOid")(_patternOid.asInstanceOf[js.Any])
-    if (_patternPositiveInt != null) __obj.updateDynamic("_patternPositiveInt")(_patternPositiveInt.asInstanceOf[js.Any])
-    if (_patternString != null) __obj.updateDynamic("_patternString")(_patternString.asInstanceOf[js.Any])
-    if (_patternTime != null) __obj.updateDynamic("_patternTime")(_patternTime.asInstanceOf[js.Any])
-    if (_patternUnsignedInt != null) __obj.updateDynamic("_patternUnsignedInt")(_patternUnsignedInt.asInstanceOf[js.Any])
-    if (_patternUri != null) __obj.updateDynamic("_patternUri")(_patternUri.asInstanceOf[js.Any])
-    if (_representation != null) __obj.updateDynamic("_representation")(_representation.asInstanceOf[js.Any])
-    if (_requirements != null) __obj.updateDynamic("_requirements")(_requirements.asInstanceOf[js.Any])
-    if (_short != null) __obj.updateDynamic("_short")(_short.asInstanceOf[js.Any])
-    if (_sliceName != null) __obj.updateDynamic("_sliceName")(_sliceName.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
-    if (contentReference != null) __obj.updateDynamic("contentReference")(contentReference.asInstanceOf[js.Any])
-    if (defaultValueAddress != null) __obj.updateDynamic("defaultValueAddress")(defaultValueAddress.asInstanceOf[js.Any])
-    if (defaultValueAge != null) __obj.updateDynamic("defaultValueAge")(defaultValueAge.asInstanceOf[js.Any])
-    if (defaultValueAnnotation != null) __obj.updateDynamic("defaultValueAnnotation")(defaultValueAnnotation.asInstanceOf[js.Any])
-    if (defaultValueAttachment != null) __obj.updateDynamic("defaultValueAttachment")(defaultValueAttachment.asInstanceOf[js.Any])
-    if (defaultValueBase64Binary != null) __obj.updateDynamic("defaultValueBase64Binary")(defaultValueBase64Binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValueBoolean)) __obj.updateDynamic("defaultValueBoolean")(defaultValueBoolean.get.asInstanceOf[js.Any])
-    if (defaultValueCode != null) __obj.updateDynamic("defaultValueCode")(defaultValueCode.asInstanceOf[js.Any])
-    if (defaultValueCodeableConcept != null) __obj.updateDynamic("defaultValueCodeableConcept")(defaultValueCodeableConcept.asInstanceOf[js.Any])
-    if (defaultValueCoding != null) __obj.updateDynamic("defaultValueCoding")(defaultValueCoding.asInstanceOf[js.Any])
-    if (defaultValueContactPoint != null) __obj.updateDynamic("defaultValueContactPoint")(defaultValueContactPoint.asInstanceOf[js.Any])
-    if (defaultValueCount != null) __obj.updateDynamic("defaultValueCount")(defaultValueCount.asInstanceOf[js.Any])
-    if (defaultValueDate != null) __obj.updateDynamic("defaultValueDate")(defaultValueDate.asInstanceOf[js.Any])
-    if (defaultValueDateTime != null) __obj.updateDynamic("defaultValueDateTime")(defaultValueDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValueDecimal)) __obj.updateDynamic("defaultValueDecimal")(defaultValueDecimal.get.asInstanceOf[js.Any])
-    if (defaultValueDistance != null) __obj.updateDynamic("defaultValueDistance")(defaultValueDistance.asInstanceOf[js.Any])
-    if (defaultValueDuration != null) __obj.updateDynamic("defaultValueDuration")(defaultValueDuration.asInstanceOf[js.Any])
-    if (defaultValueHumanName != null) __obj.updateDynamic("defaultValueHumanName")(defaultValueHumanName.asInstanceOf[js.Any])
-    if (defaultValueId != null) __obj.updateDynamic("defaultValueId")(defaultValueId.asInstanceOf[js.Any])
-    if (defaultValueIdentifier != null) __obj.updateDynamic("defaultValueIdentifier")(defaultValueIdentifier.asInstanceOf[js.Any])
-    if (defaultValueInstant != null) __obj.updateDynamic("defaultValueInstant")(defaultValueInstant.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValueInteger)) __obj.updateDynamic("defaultValueInteger")(defaultValueInteger.get.asInstanceOf[js.Any])
-    if (defaultValueMarkdown != null) __obj.updateDynamic("defaultValueMarkdown")(defaultValueMarkdown.asInstanceOf[js.Any])
-    if (defaultValueMeta != null) __obj.updateDynamic("defaultValueMeta")(defaultValueMeta.asInstanceOf[js.Any])
-    if (defaultValueMoney != null) __obj.updateDynamic("defaultValueMoney")(defaultValueMoney.asInstanceOf[js.Any])
-    if (defaultValueOid != null) __obj.updateDynamic("defaultValueOid")(defaultValueOid.asInstanceOf[js.Any])
-    if (defaultValuePeriod != null) __obj.updateDynamic("defaultValuePeriod")(defaultValuePeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValuePositiveInt)) __obj.updateDynamic("defaultValuePositiveInt")(defaultValuePositiveInt.get.asInstanceOf[js.Any])
-    if (defaultValueQuantity != null) __obj.updateDynamic("defaultValueQuantity")(defaultValueQuantity.asInstanceOf[js.Any])
-    if (defaultValueRange != null) __obj.updateDynamic("defaultValueRange")(defaultValueRange.asInstanceOf[js.Any])
-    if (defaultValueRatio != null) __obj.updateDynamic("defaultValueRatio")(defaultValueRatio.asInstanceOf[js.Any])
-    if (defaultValueReference != null) __obj.updateDynamic("defaultValueReference")(defaultValueReference.asInstanceOf[js.Any])
-    if (defaultValueSampledData != null) __obj.updateDynamic("defaultValueSampledData")(defaultValueSampledData.asInstanceOf[js.Any])
-    if (defaultValueSignature != null) __obj.updateDynamic("defaultValueSignature")(defaultValueSignature.asInstanceOf[js.Any])
-    if (defaultValueString != null) __obj.updateDynamic("defaultValueString")(defaultValueString.asInstanceOf[js.Any])
-    if (defaultValueTime != null) __obj.updateDynamic("defaultValueTime")(defaultValueTime.asInstanceOf[js.Any])
-    if (defaultValueTiming != null) __obj.updateDynamic("defaultValueTiming")(defaultValueTiming.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValueUnsignedInt)) __obj.updateDynamic("defaultValueUnsignedInt")(defaultValueUnsignedInt.get.asInstanceOf[js.Any])
-    if (defaultValueUri != null) __obj.updateDynamic("defaultValueUri")(defaultValueUri.asInstanceOf[js.Any])
-    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (fixedAddress != null) __obj.updateDynamic("fixedAddress")(fixedAddress.asInstanceOf[js.Any])
-    if (fixedAge != null) __obj.updateDynamic("fixedAge")(fixedAge.asInstanceOf[js.Any])
-    if (fixedAnnotation != null) __obj.updateDynamic("fixedAnnotation")(fixedAnnotation.asInstanceOf[js.Any])
-    if (fixedAttachment != null) __obj.updateDynamic("fixedAttachment")(fixedAttachment.asInstanceOf[js.Any])
-    if (fixedBase64Binary != null) __obj.updateDynamic("fixedBase64Binary")(fixedBase64Binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedBoolean)) __obj.updateDynamic("fixedBoolean")(fixedBoolean.get.asInstanceOf[js.Any])
-    if (fixedCode != null) __obj.updateDynamic("fixedCode")(fixedCode.asInstanceOf[js.Any])
-    if (fixedCodeableConcept != null) __obj.updateDynamic("fixedCodeableConcept")(fixedCodeableConcept.asInstanceOf[js.Any])
-    if (fixedCoding != null) __obj.updateDynamic("fixedCoding")(fixedCoding.asInstanceOf[js.Any])
-    if (fixedContactPoint != null) __obj.updateDynamic("fixedContactPoint")(fixedContactPoint.asInstanceOf[js.Any])
-    if (fixedCount != null) __obj.updateDynamic("fixedCount")(fixedCount.asInstanceOf[js.Any])
-    if (fixedDate != null) __obj.updateDynamic("fixedDate")(fixedDate.asInstanceOf[js.Any])
-    if (fixedDateTime != null) __obj.updateDynamic("fixedDateTime")(fixedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedDecimal)) __obj.updateDynamic("fixedDecimal")(fixedDecimal.get.asInstanceOf[js.Any])
-    if (fixedDistance != null) __obj.updateDynamic("fixedDistance")(fixedDistance.asInstanceOf[js.Any])
-    if (fixedDuration != null) __obj.updateDynamic("fixedDuration")(fixedDuration.asInstanceOf[js.Any])
-    if (fixedHumanName != null) __obj.updateDynamic("fixedHumanName")(fixedHumanName.asInstanceOf[js.Any])
-    if (fixedId != null) __obj.updateDynamic("fixedId")(fixedId.asInstanceOf[js.Any])
-    if (fixedIdentifier != null) __obj.updateDynamic("fixedIdentifier")(fixedIdentifier.asInstanceOf[js.Any])
-    if (fixedInstant != null) __obj.updateDynamic("fixedInstant")(fixedInstant.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedInteger)) __obj.updateDynamic("fixedInteger")(fixedInteger.get.asInstanceOf[js.Any])
-    if (fixedMarkdown != null) __obj.updateDynamic("fixedMarkdown")(fixedMarkdown.asInstanceOf[js.Any])
-    if (fixedMeta != null) __obj.updateDynamic("fixedMeta")(fixedMeta.asInstanceOf[js.Any])
-    if (fixedMoney != null) __obj.updateDynamic("fixedMoney")(fixedMoney.asInstanceOf[js.Any])
-    if (fixedOid != null) __obj.updateDynamic("fixedOid")(fixedOid.asInstanceOf[js.Any])
-    if (fixedPeriod != null) __obj.updateDynamic("fixedPeriod")(fixedPeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedPositiveInt)) __obj.updateDynamic("fixedPositiveInt")(fixedPositiveInt.get.asInstanceOf[js.Any])
-    if (fixedQuantity != null) __obj.updateDynamic("fixedQuantity")(fixedQuantity.asInstanceOf[js.Any])
-    if (fixedRange != null) __obj.updateDynamic("fixedRange")(fixedRange.asInstanceOf[js.Any])
-    if (fixedRatio != null) __obj.updateDynamic("fixedRatio")(fixedRatio.asInstanceOf[js.Any])
-    if (fixedReference != null) __obj.updateDynamic("fixedReference")(fixedReference.asInstanceOf[js.Any])
-    if (fixedSampledData != null) __obj.updateDynamic("fixedSampledData")(fixedSampledData.asInstanceOf[js.Any])
-    if (fixedSignature != null) __obj.updateDynamic("fixedSignature")(fixedSignature.asInstanceOf[js.Any])
-    if (fixedString != null) __obj.updateDynamic("fixedString")(fixedString.asInstanceOf[js.Any])
-    if (fixedTime != null) __obj.updateDynamic("fixedTime")(fixedTime.asInstanceOf[js.Any])
-    if (fixedTiming != null) __obj.updateDynamic("fixedTiming")(fixedTiming.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedUnsignedInt)) __obj.updateDynamic("fixedUnsignedInt")(fixedUnsignedInt.get.asInstanceOf[js.Any])
-    if (fixedUri != null) __obj.updateDynamic("fixedUri")(fixedUri.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isModifier)) __obj.updateDynamic("isModifier")(isModifier.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSummary)) __obj.updateDynamic("isSummary")(isSummary.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (maxValueDate != null) __obj.updateDynamic("maxValueDate")(maxValueDate.asInstanceOf[js.Any])
-    if (maxValueDateTime != null) __obj.updateDynamic("maxValueDateTime")(maxValueDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValueDecimal)) __obj.updateDynamic("maxValueDecimal")(maxValueDecimal.get.asInstanceOf[js.Any])
-    if (maxValueInstant != null) __obj.updateDynamic("maxValueInstant")(maxValueInstant.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValueInteger)) __obj.updateDynamic("maxValueInteger")(maxValueInteger.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValuePositiveInt)) __obj.updateDynamic("maxValuePositiveInt")(maxValuePositiveInt.get.asInstanceOf[js.Any])
-    if (maxValueQuantity != null) __obj.updateDynamic("maxValueQuantity")(maxValueQuantity.asInstanceOf[js.Any])
-    if (maxValueTime != null) __obj.updateDynamic("maxValueTime")(maxValueTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValueUnsignedInt)) __obj.updateDynamic("maxValueUnsignedInt")(maxValueUnsignedInt.get.asInstanceOf[js.Any])
-    if (meaningWhenMissing != null) __obj.updateDynamic("meaningWhenMissing")(meaningWhenMissing.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (minValueDate != null) __obj.updateDynamic("minValueDate")(minValueDate.asInstanceOf[js.Any])
-    if (minValueDateTime != null) __obj.updateDynamic("minValueDateTime")(minValueDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValueDecimal)) __obj.updateDynamic("minValueDecimal")(minValueDecimal.get.asInstanceOf[js.Any])
-    if (minValueInstant != null) __obj.updateDynamic("minValueInstant")(minValueInstant.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValueInteger)) __obj.updateDynamic("minValueInteger")(minValueInteger.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValuePositiveInt)) __obj.updateDynamic("minValuePositiveInt")(minValuePositiveInt.get.asInstanceOf[js.Any])
-    if (minValueQuantity != null) __obj.updateDynamic("minValueQuantity")(minValueQuantity.asInstanceOf[js.Any])
-    if (minValueTime != null) __obj.updateDynamic("minValueTime")(minValueTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValueUnsignedInt)) __obj.updateDynamic("minValueUnsignedInt")(minValueUnsignedInt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mustSupport)) __obj.updateDynamic("mustSupport")(mustSupport.get.asInstanceOf[js.Any])
-    if (orderMeaning != null) __obj.updateDynamic("orderMeaning")(orderMeaning.asInstanceOf[js.Any])
-    if (patternAddress != null) __obj.updateDynamic("patternAddress")(patternAddress.asInstanceOf[js.Any])
-    if (patternAge != null) __obj.updateDynamic("patternAge")(patternAge.asInstanceOf[js.Any])
-    if (patternAnnotation != null) __obj.updateDynamic("patternAnnotation")(patternAnnotation.asInstanceOf[js.Any])
-    if (patternAttachment != null) __obj.updateDynamic("patternAttachment")(patternAttachment.asInstanceOf[js.Any])
-    if (patternBase64Binary != null) __obj.updateDynamic("patternBase64Binary")(patternBase64Binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(patternBoolean)) __obj.updateDynamic("patternBoolean")(patternBoolean.get.asInstanceOf[js.Any])
-    if (patternCode != null) __obj.updateDynamic("patternCode")(patternCode.asInstanceOf[js.Any])
-    if (patternCodeableConcept != null) __obj.updateDynamic("patternCodeableConcept")(patternCodeableConcept.asInstanceOf[js.Any])
-    if (patternCoding != null) __obj.updateDynamic("patternCoding")(patternCoding.asInstanceOf[js.Any])
-    if (patternContactPoint != null) __obj.updateDynamic("patternContactPoint")(patternContactPoint.asInstanceOf[js.Any])
-    if (patternCount != null) __obj.updateDynamic("patternCount")(patternCount.asInstanceOf[js.Any])
-    if (patternDate != null) __obj.updateDynamic("patternDate")(patternDate.asInstanceOf[js.Any])
-    if (patternDateTime != null) __obj.updateDynamic("patternDateTime")(patternDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(patternDecimal)) __obj.updateDynamic("patternDecimal")(patternDecimal.get.asInstanceOf[js.Any])
-    if (patternDistance != null) __obj.updateDynamic("patternDistance")(patternDistance.asInstanceOf[js.Any])
-    if (patternDuration != null) __obj.updateDynamic("patternDuration")(patternDuration.asInstanceOf[js.Any])
-    if (patternHumanName != null) __obj.updateDynamic("patternHumanName")(patternHumanName.asInstanceOf[js.Any])
-    if (patternId != null) __obj.updateDynamic("patternId")(patternId.asInstanceOf[js.Any])
-    if (patternIdentifier != null) __obj.updateDynamic("patternIdentifier")(patternIdentifier.asInstanceOf[js.Any])
-    if (patternInstant != null) __obj.updateDynamic("patternInstant")(patternInstant.asInstanceOf[js.Any])
-    if (!js.isUndefined(patternInteger)) __obj.updateDynamic("patternInteger")(patternInteger.get.asInstanceOf[js.Any])
-    if (patternMarkdown != null) __obj.updateDynamic("patternMarkdown")(patternMarkdown.asInstanceOf[js.Any])
-    if (patternMeta != null) __obj.updateDynamic("patternMeta")(patternMeta.asInstanceOf[js.Any])
-    if (patternMoney != null) __obj.updateDynamic("patternMoney")(patternMoney.asInstanceOf[js.Any])
-    if (patternOid != null) __obj.updateDynamic("patternOid")(patternOid.asInstanceOf[js.Any])
-    if (patternPeriod != null) __obj.updateDynamic("patternPeriod")(patternPeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(patternPositiveInt)) __obj.updateDynamic("patternPositiveInt")(patternPositiveInt.get.asInstanceOf[js.Any])
-    if (patternQuantity != null) __obj.updateDynamic("patternQuantity")(patternQuantity.asInstanceOf[js.Any])
-    if (patternRange != null) __obj.updateDynamic("patternRange")(patternRange.asInstanceOf[js.Any])
-    if (patternRatio != null) __obj.updateDynamic("patternRatio")(patternRatio.asInstanceOf[js.Any])
-    if (patternReference != null) __obj.updateDynamic("patternReference")(patternReference.asInstanceOf[js.Any])
-    if (patternSampledData != null) __obj.updateDynamic("patternSampledData")(patternSampledData.asInstanceOf[js.Any])
-    if (patternSignature != null) __obj.updateDynamic("patternSignature")(patternSignature.asInstanceOf[js.Any])
-    if (patternString != null) __obj.updateDynamic("patternString")(patternString.asInstanceOf[js.Any])
-    if (patternTime != null) __obj.updateDynamic("patternTime")(patternTime.asInstanceOf[js.Any])
-    if (patternTiming != null) __obj.updateDynamic("patternTiming")(patternTiming.asInstanceOf[js.Any])
-    if (!js.isUndefined(patternUnsignedInt)) __obj.updateDynamic("patternUnsignedInt")(patternUnsignedInt.get.asInstanceOf[js.Any])
-    if (patternUri != null) __obj.updateDynamic("patternUri")(patternUri.asInstanceOf[js.Any])
-    if (representation != null) __obj.updateDynamic("representation")(representation.asInstanceOf[js.Any])
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
-    if (short != null) __obj.updateDynamic("short")(short.asInstanceOf[js.Any])
-    if (sliceName != null) __obj.updateDynamic("sliceName")(sliceName.asInstanceOf[js.Any])
-    if (slicing != null) __obj.updateDynamic("slicing")(slicing.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinition]
   }
+  @scala.inline
+  implicit class ElementDefinitionOps[Self <: ElementDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_aliasVarargs(value: Element*): Self = this.set("_alias", js.Array(value :_*))
+    @scala.inline
+    def set_alias(value: js.Array[Element]): Self = this.set("_alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_alias: Self = this.set("_alias", js.undefined)
+    @scala.inline
+    def set_comment(value: Element): Self = this.set("_comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_comment: Self = this.set("_comment", js.undefined)
+    @scala.inline
+    def set_conditionVarargs(value: Element*): Self = this.set("_condition", js.Array(value :_*))
+    @scala.inline
+    def set_condition(value: js.Array[Element]): Self = this.set("_condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_condition: Self = this.set("_condition", js.undefined)
+    @scala.inline
+    def set_contentReference(value: Element): Self = this.set("_contentReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_contentReference: Self = this.set("_contentReference", js.undefined)
+    @scala.inline
+    def set_defaultValueBase64Binary(value: Element): Self = this.set("_defaultValueBase64Binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueBase64Binary: Self = this.set("_defaultValueBase64Binary", js.undefined)
+    @scala.inline
+    def set_defaultValueBoolean(value: Element): Self = this.set("_defaultValueBoolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueBoolean: Self = this.set("_defaultValueBoolean", js.undefined)
+    @scala.inline
+    def set_defaultValueCode(value: Element): Self = this.set("_defaultValueCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueCode: Self = this.set("_defaultValueCode", js.undefined)
+    @scala.inline
+    def set_defaultValueDate(value: Element): Self = this.set("_defaultValueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueDate: Self = this.set("_defaultValueDate", js.undefined)
+    @scala.inline
+    def set_defaultValueDateTime(value: Element): Self = this.set("_defaultValueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueDateTime: Self = this.set("_defaultValueDateTime", js.undefined)
+    @scala.inline
+    def set_defaultValueDecimal(value: Element): Self = this.set("_defaultValueDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueDecimal: Self = this.set("_defaultValueDecimal", js.undefined)
+    @scala.inline
+    def set_defaultValueId(value: Element): Self = this.set("_defaultValueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueId: Self = this.set("_defaultValueId", js.undefined)
+    @scala.inline
+    def set_defaultValueInstant(value: Element): Self = this.set("_defaultValueInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueInstant: Self = this.set("_defaultValueInstant", js.undefined)
+    @scala.inline
+    def set_defaultValueInteger(value: Element): Self = this.set("_defaultValueInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueInteger: Self = this.set("_defaultValueInteger", js.undefined)
+    @scala.inline
+    def set_defaultValueMarkdown(value: Element): Self = this.set("_defaultValueMarkdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueMarkdown: Self = this.set("_defaultValueMarkdown", js.undefined)
+    @scala.inline
+    def set_defaultValueOid(value: Element): Self = this.set("_defaultValueOid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueOid: Self = this.set("_defaultValueOid", js.undefined)
+    @scala.inline
+    def set_defaultValuePositiveInt(value: Element): Self = this.set("_defaultValuePositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValuePositiveInt: Self = this.set("_defaultValuePositiveInt", js.undefined)
+    @scala.inline
+    def set_defaultValueString(value: Element): Self = this.set("_defaultValueString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueString: Self = this.set("_defaultValueString", js.undefined)
+    @scala.inline
+    def set_defaultValueTime(value: Element): Self = this.set("_defaultValueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueTime: Self = this.set("_defaultValueTime", js.undefined)
+    @scala.inline
+    def set_defaultValueUnsignedInt(value: Element): Self = this.set("_defaultValueUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueUnsignedInt: Self = this.set("_defaultValueUnsignedInt", js.undefined)
+    @scala.inline
+    def set_defaultValueUri(value: Element): Self = this.set("_defaultValueUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultValueUri: Self = this.set("_defaultValueUri", js.undefined)
+    @scala.inline
+    def set_definition(value: Element): Self = this.set("_definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_definition: Self = this.set("_definition", js.undefined)
+    @scala.inline
+    def set_fixedBase64Binary(value: Element): Self = this.set("_fixedBase64Binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedBase64Binary: Self = this.set("_fixedBase64Binary", js.undefined)
+    @scala.inline
+    def set_fixedBoolean(value: Element): Self = this.set("_fixedBoolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedBoolean: Self = this.set("_fixedBoolean", js.undefined)
+    @scala.inline
+    def set_fixedCode(value: Element): Self = this.set("_fixedCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedCode: Self = this.set("_fixedCode", js.undefined)
+    @scala.inline
+    def set_fixedDate(value: Element): Self = this.set("_fixedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedDate: Self = this.set("_fixedDate", js.undefined)
+    @scala.inline
+    def set_fixedDateTime(value: Element): Self = this.set("_fixedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedDateTime: Self = this.set("_fixedDateTime", js.undefined)
+    @scala.inline
+    def set_fixedDecimal(value: Element): Self = this.set("_fixedDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedDecimal: Self = this.set("_fixedDecimal", js.undefined)
+    @scala.inline
+    def set_fixedId(value: Element): Self = this.set("_fixedId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedId: Self = this.set("_fixedId", js.undefined)
+    @scala.inline
+    def set_fixedInstant(value: Element): Self = this.set("_fixedInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedInstant: Self = this.set("_fixedInstant", js.undefined)
+    @scala.inline
+    def set_fixedInteger(value: Element): Self = this.set("_fixedInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedInteger: Self = this.set("_fixedInteger", js.undefined)
+    @scala.inline
+    def set_fixedMarkdown(value: Element): Self = this.set("_fixedMarkdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedMarkdown: Self = this.set("_fixedMarkdown", js.undefined)
+    @scala.inline
+    def set_fixedOid(value: Element): Self = this.set("_fixedOid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedOid: Self = this.set("_fixedOid", js.undefined)
+    @scala.inline
+    def set_fixedPositiveInt(value: Element): Self = this.set("_fixedPositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedPositiveInt: Self = this.set("_fixedPositiveInt", js.undefined)
+    @scala.inline
+    def set_fixedString(value: Element): Self = this.set("_fixedString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedString: Self = this.set("_fixedString", js.undefined)
+    @scala.inline
+    def set_fixedTime(value: Element): Self = this.set("_fixedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedTime: Self = this.set("_fixedTime", js.undefined)
+    @scala.inline
+    def set_fixedUnsignedInt(value: Element): Self = this.set("_fixedUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedUnsignedInt: Self = this.set("_fixedUnsignedInt", js.undefined)
+    @scala.inline
+    def set_fixedUri(value: Element): Self = this.set("_fixedUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fixedUri: Self = this.set("_fixedUri", js.undefined)
+    @scala.inline
+    def set_isModifier(value: Element): Self = this.set("_isModifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_isModifier: Self = this.set("_isModifier", js.undefined)
+    @scala.inline
+    def set_isSummary(value: Element): Self = this.set("_isSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_isSummary: Self = this.set("_isSummary", js.undefined)
+    @scala.inline
+    def set_label(value: Element): Self = this.set("_label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_label: Self = this.set("_label", js.undefined)
+    @scala.inline
+    def set_max(value: Element): Self = this.set("_max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_max: Self = this.set("_max", js.undefined)
+    @scala.inline
+    def set_maxLength(value: Element): Self = this.set("_maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_maxLength: Self = this.set("_maxLength", js.undefined)
+    @scala.inline
+    def set_maxValueDate(value: Element): Self = this.set("_maxValueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_maxValueDate: Self = this.set("_maxValueDate", js.undefined)
+    @scala.inline
+    def set_maxValueDateTime(value: Element): Self = this.set("_maxValueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_maxValueDateTime: Self = this.set("_maxValueDateTime", js.undefined)
+    @scala.inline
+    def set_maxValueDecimal(value: Element): Self = this.set("_maxValueDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_maxValueDecimal: Self = this.set("_maxValueDecimal", js.undefined)
+    @scala.inline
+    def set_maxValueInstant(value: Element): Self = this.set("_maxValueInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_maxValueInstant: Self = this.set("_maxValueInstant", js.undefined)
+    @scala.inline
+    def set_maxValueInteger(value: Element): Self = this.set("_maxValueInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_maxValueInteger: Self = this.set("_maxValueInteger", js.undefined)
+    @scala.inline
+    def set_maxValuePositiveInt(value: Element): Self = this.set("_maxValuePositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_maxValuePositiveInt: Self = this.set("_maxValuePositiveInt", js.undefined)
+    @scala.inline
+    def set_maxValueTime(value: Element): Self = this.set("_maxValueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_maxValueTime: Self = this.set("_maxValueTime", js.undefined)
+    @scala.inline
+    def set_maxValueUnsignedInt(value: Element): Self = this.set("_maxValueUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_maxValueUnsignedInt: Self = this.set("_maxValueUnsignedInt", js.undefined)
+    @scala.inline
+    def set_meaningWhenMissing(value: Element): Self = this.set("_meaningWhenMissing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_meaningWhenMissing: Self = this.set("_meaningWhenMissing", js.undefined)
+    @scala.inline
+    def set_min(value: Element): Self = this.set("_min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_min: Self = this.set("_min", js.undefined)
+    @scala.inline
+    def set_minValueDate(value: Element): Self = this.set("_minValueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_minValueDate: Self = this.set("_minValueDate", js.undefined)
+    @scala.inline
+    def set_minValueDateTime(value: Element): Self = this.set("_minValueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_minValueDateTime: Self = this.set("_minValueDateTime", js.undefined)
+    @scala.inline
+    def set_minValueDecimal(value: Element): Self = this.set("_minValueDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_minValueDecimal: Self = this.set("_minValueDecimal", js.undefined)
+    @scala.inline
+    def set_minValueInstant(value: Element): Self = this.set("_minValueInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_minValueInstant: Self = this.set("_minValueInstant", js.undefined)
+    @scala.inline
+    def set_minValueInteger(value: Element): Self = this.set("_minValueInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_minValueInteger: Self = this.set("_minValueInteger", js.undefined)
+    @scala.inline
+    def set_minValuePositiveInt(value: Element): Self = this.set("_minValuePositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_minValuePositiveInt: Self = this.set("_minValuePositiveInt", js.undefined)
+    @scala.inline
+    def set_minValueTime(value: Element): Self = this.set("_minValueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_minValueTime: Self = this.set("_minValueTime", js.undefined)
+    @scala.inline
+    def set_minValueUnsignedInt(value: Element): Self = this.set("_minValueUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_minValueUnsignedInt: Self = this.set("_minValueUnsignedInt", js.undefined)
+    @scala.inline
+    def set_mustSupport(value: Element): Self = this.set("_mustSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_mustSupport: Self = this.set("_mustSupport", js.undefined)
+    @scala.inline
+    def set_orderMeaning(value: Element): Self = this.set("_orderMeaning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_orderMeaning: Self = this.set("_orderMeaning", js.undefined)
+    @scala.inline
+    def set_path(value: Element): Self = this.set("_path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_path: Self = this.set("_path", js.undefined)
+    @scala.inline
+    def set_patternBase64Binary(value: Element): Self = this.set("_patternBase64Binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternBase64Binary: Self = this.set("_patternBase64Binary", js.undefined)
+    @scala.inline
+    def set_patternBoolean(value: Element): Self = this.set("_patternBoolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternBoolean: Self = this.set("_patternBoolean", js.undefined)
+    @scala.inline
+    def set_patternCode(value: Element): Self = this.set("_patternCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternCode: Self = this.set("_patternCode", js.undefined)
+    @scala.inline
+    def set_patternDate(value: Element): Self = this.set("_patternDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternDate: Self = this.set("_patternDate", js.undefined)
+    @scala.inline
+    def set_patternDateTime(value: Element): Self = this.set("_patternDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternDateTime: Self = this.set("_patternDateTime", js.undefined)
+    @scala.inline
+    def set_patternDecimal(value: Element): Self = this.set("_patternDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternDecimal: Self = this.set("_patternDecimal", js.undefined)
+    @scala.inline
+    def set_patternId(value: Element): Self = this.set("_patternId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternId: Self = this.set("_patternId", js.undefined)
+    @scala.inline
+    def set_patternInstant(value: Element): Self = this.set("_patternInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternInstant: Self = this.set("_patternInstant", js.undefined)
+    @scala.inline
+    def set_patternInteger(value: Element): Self = this.set("_patternInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternInteger: Self = this.set("_patternInteger", js.undefined)
+    @scala.inline
+    def set_patternMarkdown(value: Element): Self = this.set("_patternMarkdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternMarkdown: Self = this.set("_patternMarkdown", js.undefined)
+    @scala.inline
+    def set_patternOid(value: Element): Self = this.set("_patternOid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternOid: Self = this.set("_patternOid", js.undefined)
+    @scala.inline
+    def set_patternPositiveInt(value: Element): Self = this.set("_patternPositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternPositiveInt: Self = this.set("_patternPositiveInt", js.undefined)
+    @scala.inline
+    def set_patternString(value: Element): Self = this.set("_patternString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternString: Self = this.set("_patternString", js.undefined)
+    @scala.inline
+    def set_patternTime(value: Element): Self = this.set("_patternTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternTime: Self = this.set("_patternTime", js.undefined)
+    @scala.inline
+    def set_patternUnsignedInt(value: Element): Self = this.set("_patternUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternUnsignedInt: Self = this.set("_patternUnsignedInt", js.undefined)
+    @scala.inline
+    def set_patternUri(value: Element): Self = this.set("_patternUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_patternUri: Self = this.set("_patternUri", js.undefined)
+    @scala.inline
+    def set_representationVarargs(value: Element*): Self = this.set("_representation", js.Array(value :_*))
+    @scala.inline
+    def set_representation(value: js.Array[Element]): Self = this.set("_representation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_representation: Self = this.set("_representation", js.undefined)
+    @scala.inline
+    def set_requirements(value: Element): Self = this.set("_requirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_requirements: Self = this.set("_requirements", js.undefined)
+    @scala.inline
+    def set_short(value: Element): Self = this.set("_short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_short: Self = this.set("_short", js.undefined)
+    @scala.inline
+    def set_sliceName(value: Element): Self = this.set("_sliceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_sliceName: Self = this.set("_sliceName", js.undefined)
+    @scala.inline
+    def setAliasVarargs(value: String*): Self = this.set("alias", js.Array(value :_*))
+    @scala.inline
+    def setAlias(value: js.Array[String]): Self = this.set("alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlias: Self = this.set("alias", js.undefined)
+    @scala.inline
+    def setBase(value: ElementDefinitionBase): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setBinding(value: ElementDefinitionBinding): Self = this.set("binding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinding: Self = this.set("binding", js.undefined)
+    @scala.inline
+    def setCodeVarargs(value: Coding*): Self = this.set("code", js.Array(value :_*))
+    @scala.inline
+    def setCode(value: js.Array[Coding]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setComment(value: markdown): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setConditionVarargs(value: id*): Self = this.set("condition", js.Array(value :_*))
+    @scala.inline
+    def setCondition(value: js.Array[id]): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setConstraintVarargs(value: ElementDefinitionConstraint*): Self = this.set("constraint", js.Array(value :_*))
+    @scala.inline
+    def setConstraint(value: js.Array[ElementDefinitionConstraint]): Self = this.set("constraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraint: Self = this.set("constraint", js.undefined)
+    @scala.inline
+    def setContentReference(value: uri): Self = this.set("contentReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentReference: Self = this.set("contentReference", js.undefined)
+    @scala.inline
+    def setDefaultValueAddress(value: Address): Self = this.set("defaultValueAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueAddress: Self = this.set("defaultValueAddress", js.undefined)
+    @scala.inline
+    def setDefaultValueAge(value: Age): Self = this.set("defaultValueAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueAge: Self = this.set("defaultValueAge", js.undefined)
+    @scala.inline
+    def setDefaultValueAnnotation(value: Annotation): Self = this.set("defaultValueAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueAnnotation: Self = this.set("defaultValueAnnotation", js.undefined)
+    @scala.inline
+    def setDefaultValueAttachment(value: Attachment): Self = this.set("defaultValueAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueAttachment: Self = this.set("defaultValueAttachment", js.undefined)
+    @scala.inline
+    def setDefaultValueBase64Binary(value: base64Binary): Self = this.set("defaultValueBase64Binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueBase64Binary: Self = this.set("defaultValueBase64Binary", js.undefined)
+    @scala.inline
+    def setDefaultValueBoolean(value: Boolean): Self = this.set("defaultValueBoolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueBoolean: Self = this.set("defaultValueBoolean", js.undefined)
+    @scala.inline
+    def setDefaultValueCode(value: code): Self = this.set("defaultValueCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueCode: Self = this.set("defaultValueCode", js.undefined)
+    @scala.inline
+    def setDefaultValueCodeableConcept(value: CodeableConcept): Self = this.set("defaultValueCodeableConcept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueCodeableConcept: Self = this.set("defaultValueCodeableConcept", js.undefined)
+    @scala.inline
+    def setDefaultValueCoding(value: Coding): Self = this.set("defaultValueCoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueCoding: Self = this.set("defaultValueCoding", js.undefined)
+    @scala.inline
+    def setDefaultValueContactPoint(value: ContactPoint): Self = this.set("defaultValueContactPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueContactPoint: Self = this.set("defaultValueContactPoint", js.undefined)
+    @scala.inline
+    def setDefaultValueCount(value: Count): Self = this.set("defaultValueCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueCount: Self = this.set("defaultValueCount", js.undefined)
+    @scala.inline
+    def setDefaultValueDate(value: date): Self = this.set("defaultValueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueDate: Self = this.set("defaultValueDate", js.undefined)
+    @scala.inline
+    def setDefaultValueDateTime(value: dateTime): Self = this.set("defaultValueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueDateTime: Self = this.set("defaultValueDateTime", js.undefined)
+    @scala.inline
+    def setDefaultValueDecimal(value: decimal): Self = this.set("defaultValueDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueDecimal: Self = this.set("defaultValueDecimal", js.undefined)
+    @scala.inline
+    def setDefaultValueDistance(value: Distance): Self = this.set("defaultValueDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueDistance: Self = this.set("defaultValueDistance", js.undefined)
+    @scala.inline
+    def setDefaultValueDuration(value: Duration): Self = this.set("defaultValueDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueDuration: Self = this.set("defaultValueDuration", js.undefined)
+    @scala.inline
+    def setDefaultValueHumanName(value: HumanName): Self = this.set("defaultValueHumanName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueHumanName: Self = this.set("defaultValueHumanName", js.undefined)
+    @scala.inline
+    def setDefaultValueId(value: id): Self = this.set("defaultValueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueId: Self = this.set("defaultValueId", js.undefined)
+    @scala.inline
+    def setDefaultValueIdentifier(value: Identifier): Self = this.set("defaultValueIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueIdentifier: Self = this.set("defaultValueIdentifier", js.undefined)
+    @scala.inline
+    def setDefaultValueInstant(value: instant): Self = this.set("defaultValueInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueInstant: Self = this.set("defaultValueInstant", js.undefined)
+    @scala.inline
+    def setDefaultValueInteger(value: integer): Self = this.set("defaultValueInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueInteger: Self = this.set("defaultValueInteger", js.undefined)
+    @scala.inline
+    def setDefaultValueMarkdown(value: markdown): Self = this.set("defaultValueMarkdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueMarkdown: Self = this.set("defaultValueMarkdown", js.undefined)
+    @scala.inline
+    def setDefaultValueMeta(value: Meta): Self = this.set("defaultValueMeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueMeta: Self = this.set("defaultValueMeta", js.undefined)
+    @scala.inline
+    def setDefaultValueMoney(value: Money): Self = this.set("defaultValueMoney", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueMoney: Self = this.set("defaultValueMoney", js.undefined)
+    @scala.inline
+    def setDefaultValueOid(value: oid): Self = this.set("defaultValueOid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueOid: Self = this.set("defaultValueOid", js.undefined)
+    @scala.inline
+    def setDefaultValuePeriod(value: Period): Self = this.set("defaultValuePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValuePeriod: Self = this.set("defaultValuePeriod", js.undefined)
+    @scala.inline
+    def setDefaultValuePositiveInt(value: positiveInt): Self = this.set("defaultValuePositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValuePositiveInt: Self = this.set("defaultValuePositiveInt", js.undefined)
+    @scala.inline
+    def setDefaultValueQuantity(value: Quantity): Self = this.set("defaultValueQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueQuantity: Self = this.set("defaultValueQuantity", js.undefined)
+    @scala.inline
+    def setDefaultValueRange(value: Range): Self = this.set("defaultValueRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueRange: Self = this.set("defaultValueRange", js.undefined)
+    @scala.inline
+    def setDefaultValueRatio(value: Ratio): Self = this.set("defaultValueRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueRatio: Self = this.set("defaultValueRatio", js.undefined)
+    @scala.inline
+    def setDefaultValueReference(value: Reference): Self = this.set("defaultValueReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueReference: Self = this.set("defaultValueReference", js.undefined)
+    @scala.inline
+    def setDefaultValueSampledData(value: SampledData): Self = this.set("defaultValueSampledData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueSampledData: Self = this.set("defaultValueSampledData", js.undefined)
+    @scala.inline
+    def setDefaultValueSignature(value: Signature): Self = this.set("defaultValueSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueSignature: Self = this.set("defaultValueSignature", js.undefined)
+    @scala.inline
+    def setDefaultValueString(value: String): Self = this.set("defaultValueString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueString: Self = this.set("defaultValueString", js.undefined)
+    @scala.inline
+    def setDefaultValueTime(value: time): Self = this.set("defaultValueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueTime: Self = this.set("defaultValueTime", js.undefined)
+    @scala.inline
+    def setDefaultValueTiming(value: Timing): Self = this.set("defaultValueTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueTiming: Self = this.set("defaultValueTiming", js.undefined)
+    @scala.inline
+    def setDefaultValueUnsignedInt(value: unsignedInt): Self = this.set("defaultValueUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueUnsignedInt: Self = this.set("defaultValueUnsignedInt", js.undefined)
+    @scala.inline
+    def setDefaultValueUri(value: uri): Self = this.set("defaultValueUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValueUri: Self = this.set("defaultValueUri", js.undefined)
+    @scala.inline
+    def setDefinition(value: markdown): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinition: Self = this.set("definition", js.undefined)
+    @scala.inline
+    def setExampleVarargs(value: ElementDefinitionExample*): Self = this.set("example", js.Array(value :_*))
+    @scala.inline
+    def setExample(value: js.Array[ElementDefinitionExample]): Self = this.set("example", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExample: Self = this.set("example", js.undefined)
+    @scala.inline
+    def setFixedAddress(value: Address): Self = this.set("fixedAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedAddress: Self = this.set("fixedAddress", js.undefined)
+    @scala.inline
+    def setFixedAge(value: Age): Self = this.set("fixedAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedAge: Self = this.set("fixedAge", js.undefined)
+    @scala.inline
+    def setFixedAnnotation(value: Annotation): Self = this.set("fixedAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedAnnotation: Self = this.set("fixedAnnotation", js.undefined)
+    @scala.inline
+    def setFixedAttachment(value: Attachment): Self = this.set("fixedAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedAttachment: Self = this.set("fixedAttachment", js.undefined)
+    @scala.inline
+    def setFixedBase64Binary(value: base64Binary): Self = this.set("fixedBase64Binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedBase64Binary: Self = this.set("fixedBase64Binary", js.undefined)
+    @scala.inline
+    def setFixedBoolean(value: Boolean): Self = this.set("fixedBoolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedBoolean: Self = this.set("fixedBoolean", js.undefined)
+    @scala.inline
+    def setFixedCode(value: code): Self = this.set("fixedCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedCode: Self = this.set("fixedCode", js.undefined)
+    @scala.inline
+    def setFixedCodeableConcept(value: CodeableConcept): Self = this.set("fixedCodeableConcept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedCodeableConcept: Self = this.set("fixedCodeableConcept", js.undefined)
+    @scala.inline
+    def setFixedCoding(value: Coding): Self = this.set("fixedCoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedCoding: Self = this.set("fixedCoding", js.undefined)
+    @scala.inline
+    def setFixedContactPoint(value: ContactPoint): Self = this.set("fixedContactPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedContactPoint: Self = this.set("fixedContactPoint", js.undefined)
+    @scala.inline
+    def setFixedCount(value: Count): Self = this.set("fixedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedCount: Self = this.set("fixedCount", js.undefined)
+    @scala.inline
+    def setFixedDate(value: date): Self = this.set("fixedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedDate: Self = this.set("fixedDate", js.undefined)
+    @scala.inline
+    def setFixedDateTime(value: dateTime): Self = this.set("fixedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedDateTime: Self = this.set("fixedDateTime", js.undefined)
+    @scala.inline
+    def setFixedDecimal(value: decimal): Self = this.set("fixedDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedDecimal: Self = this.set("fixedDecimal", js.undefined)
+    @scala.inline
+    def setFixedDistance(value: Distance): Self = this.set("fixedDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedDistance: Self = this.set("fixedDistance", js.undefined)
+    @scala.inline
+    def setFixedDuration(value: Duration): Self = this.set("fixedDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedDuration: Self = this.set("fixedDuration", js.undefined)
+    @scala.inline
+    def setFixedHumanName(value: HumanName): Self = this.set("fixedHumanName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedHumanName: Self = this.set("fixedHumanName", js.undefined)
+    @scala.inline
+    def setFixedId(value: id): Self = this.set("fixedId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedId: Self = this.set("fixedId", js.undefined)
+    @scala.inline
+    def setFixedIdentifier(value: Identifier): Self = this.set("fixedIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedIdentifier: Self = this.set("fixedIdentifier", js.undefined)
+    @scala.inline
+    def setFixedInstant(value: instant): Self = this.set("fixedInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedInstant: Self = this.set("fixedInstant", js.undefined)
+    @scala.inline
+    def setFixedInteger(value: integer): Self = this.set("fixedInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedInteger: Self = this.set("fixedInteger", js.undefined)
+    @scala.inline
+    def setFixedMarkdown(value: markdown): Self = this.set("fixedMarkdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedMarkdown: Self = this.set("fixedMarkdown", js.undefined)
+    @scala.inline
+    def setFixedMeta(value: Meta): Self = this.set("fixedMeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedMeta: Self = this.set("fixedMeta", js.undefined)
+    @scala.inline
+    def setFixedMoney(value: Money): Self = this.set("fixedMoney", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedMoney: Self = this.set("fixedMoney", js.undefined)
+    @scala.inline
+    def setFixedOid(value: oid): Self = this.set("fixedOid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedOid: Self = this.set("fixedOid", js.undefined)
+    @scala.inline
+    def setFixedPeriod(value: Period): Self = this.set("fixedPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedPeriod: Self = this.set("fixedPeriod", js.undefined)
+    @scala.inline
+    def setFixedPositiveInt(value: positiveInt): Self = this.set("fixedPositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedPositiveInt: Self = this.set("fixedPositiveInt", js.undefined)
+    @scala.inline
+    def setFixedQuantity(value: Quantity): Self = this.set("fixedQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedQuantity: Self = this.set("fixedQuantity", js.undefined)
+    @scala.inline
+    def setFixedRange(value: Range): Self = this.set("fixedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedRange: Self = this.set("fixedRange", js.undefined)
+    @scala.inline
+    def setFixedRatio(value: Ratio): Self = this.set("fixedRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedRatio: Self = this.set("fixedRatio", js.undefined)
+    @scala.inline
+    def setFixedReference(value: Reference): Self = this.set("fixedReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedReference: Self = this.set("fixedReference", js.undefined)
+    @scala.inline
+    def setFixedSampledData(value: SampledData): Self = this.set("fixedSampledData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedSampledData: Self = this.set("fixedSampledData", js.undefined)
+    @scala.inline
+    def setFixedSignature(value: Signature): Self = this.set("fixedSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedSignature: Self = this.set("fixedSignature", js.undefined)
+    @scala.inline
+    def setFixedString(value: String): Self = this.set("fixedString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedString: Self = this.set("fixedString", js.undefined)
+    @scala.inline
+    def setFixedTime(value: time): Self = this.set("fixedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedTime: Self = this.set("fixedTime", js.undefined)
+    @scala.inline
+    def setFixedTiming(value: Timing): Self = this.set("fixedTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedTiming: Self = this.set("fixedTiming", js.undefined)
+    @scala.inline
+    def setFixedUnsignedInt(value: unsignedInt): Self = this.set("fixedUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedUnsignedInt: Self = this.set("fixedUnsignedInt", js.undefined)
+    @scala.inline
+    def setFixedUri(value: uri): Self = this.set("fixedUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedUri: Self = this.set("fixedUri", js.undefined)
+    @scala.inline
+    def setIsModifier(value: Boolean): Self = this.set("isModifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsModifier: Self = this.set("isModifier", js.undefined)
+    @scala.inline
+    def setIsSummary(value: Boolean): Self = this.set("isSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSummary: Self = this.set("isSummary", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMappingVarargs(value: ElementDefinitionMapping*): Self = this.set("mapping", js.Array(value :_*))
+    @scala.inline
+    def setMapping(value: js.Array[ElementDefinitionMapping]): Self = this.set("mapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapping: Self = this.set("mapping", js.undefined)
+    @scala.inline
+    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMaxLength(value: integer): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    @scala.inline
+    def setMaxValueDate(value: date): Self = this.set("maxValueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValueDate: Self = this.set("maxValueDate", js.undefined)
+    @scala.inline
+    def setMaxValueDateTime(value: dateTime): Self = this.set("maxValueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValueDateTime: Self = this.set("maxValueDateTime", js.undefined)
+    @scala.inline
+    def setMaxValueDecimal(value: decimal): Self = this.set("maxValueDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValueDecimal: Self = this.set("maxValueDecimal", js.undefined)
+    @scala.inline
+    def setMaxValueInstant(value: instant): Self = this.set("maxValueInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValueInstant: Self = this.set("maxValueInstant", js.undefined)
+    @scala.inline
+    def setMaxValueInteger(value: integer): Self = this.set("maxValueInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValueInteger: Self = this.set("maxValueInteger", js.undefined)
+    @scala.inline
+    def setMaxValuePositiveInt(value: positiveInt): Self = this.set("maxValuePositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValuePositiveInt: Self = this.set("maxValuePositiveInt", js.undefined)
+    @scala.inline
+    def setMaxValueQuantity(value: Quantity): Self = this.set("maxValueQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValueQuantity: Self = this.set("maxValueQuantity", js.undefined)
+    @scala.inline
+    def setMaxValueTime(value: time): Self = this.set("maxValueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValueTime: Self = this.set("maxValueTime", js.undefined)
+    @scala.inline
+    def setMaxValueUnsignedInt(value: unsignedInt): Self = this.set("maxValueUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValueUnsignedInt: Self = this.set("maxValueUnsignedInt", js.undefined)
+    @scala.inline
+    def setMeaningWhenMissing(value: markdown): Self = this.set("meaningWhenMissing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeaningWhenMissing: Self = this.set("meaningWhenMissing", js.undefined)
+    @scala.inline
+    def setMin(value: unsignedInt): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMinValueDate(value: date): Self = this.set("minValueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValueDate: Self = this.set("minValueDate", js.undefined)
+    @scala.inline
+    def setMinValueDateTime(value: dateTime): Self = this.set("minValueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValueDateTime: Self = this.set("minValueDateTime", js.undefined)
+    @scala.inline
+    def setMinValueDecimal(value: decimal): Self = this.set("minValueDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValueDecimal: Self = this.set("minValueDecimal", js.undefined)
+    @scala.inline
+    def setMinValueInstant(value: instant): Self = this.set("minValueInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValueInstant: Self = this.set("minValueInstant", js.undefined)
+    @scala.inline
+    def setMinValueInteger(value: integer): Self = this.set("minValueInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValueInteger: Self = this.set("minValueInteger", js.undefined)
+    @scala.inline
+    def setMinValuePositiveInt(value: positiveInt): Self = this.set("minValuePositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValuePositiveInt: Self = this.set("minValuePositiveInt", js.undefined)
+    @scala.inline
+    def setMinValueQuantity(value: Quantity): Self = this.set("minValueQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValueQuantity: Self = this.set("minValueQuantity", js.undefined)
+    @scala.inline
+    def setMinValueTime(value: time): Self = this.set("minValueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValueTime: Self = this.set("minValueTime", js.undefined)
+    @scala.inline
+    def setMinValueUnsignedInt(value: unsignedInt): Self = this.set("minValueUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValueUnsignedInt: Self = this.set("minValueUnsignedInt", js.undefined)
+    @scala.inline
+    def setMustSupport(value: Boolean): Self = this.set("mustSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMustSupport: Self = this.set("mustSupport", js.undefined)
+    @scala.inline
+    def setOrderMeaning(value: String): Self = this.set("orderMeaning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderMeaning: Self = this.set("orderMeaning", js.undefined)
+    @scala.inline
+    def setPatternAddress(value: Address): Self = this.set("patternAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternAddress: Self = this.set("patternAddress", js.undefined)
+    @scala.inline
+    def setPatternAge(value: Age): Self = this.set("patternAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternAge: Self = this.set("patternAge", js.undefined)
+    @scala.inline
+    def setPatternAnnotation(value: Annotation): Self = this.set("patternAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternAnnotation: Self = this.set("patternAnnotation", js.undefined)
+    @scala.inline
+    def setPatternAttachment(value: Attachment): Self = this.set("patternAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternAttachment: Self = this.set("patternAttachment", js.undefined)
+    @scala.inline
+    def setPatternBase64Binary(value: base64Binary): Self = this.set("patternBase64Binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternBase64Binary: Self = this.set("patternBase64Binary", js.undefined)
+    @scala.inline
+    def setPatternBoolean(value: Boolean): Self = this.set("patternBoolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternBoolean: Self = this.set("patternBoolean", js.undefined)
+    @scala.inline
+    def setPatternCode(value: code): Self = this.set("patternCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternCode: Self = this.set("patternCode", js.undefined)
+    @scala.inline
+    def setPatternCodeableConcept(value: CodeableConcept): Self = this.set("patternCodeableConcept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternCodeableConcept: Self = this.set("patternCodeableConcept", js.undefined)
+    @scala.inline
+    def setPatternCoding(value: Coding): Self = this.set("patternCoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternCoding: Self = this.set("patternCoding", js.undefined)
+    @scala.inline
+    def setPatternContactPoint(value: ContactPoint): Self = this.set("patternContactPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternContactPoint: Self = this.set("patternContactPoint", js.undefined)
+    @scala.inline
+    def setPatternCount(value: Count): Self = this.set("patternCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternCount: Self = this.set("patternCount", js.undefined)
+    @scala.inline
+    def setPatternDate(value: date): Self = this.set("patternDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternDate: Self = this.set("patternDate", js.undefined)
+    @scala.inline
+    def setPatternDateTime(value: dateTime): Self = this.set("patternDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternDateTime: Self = this.set("patternDateTime", js.undefined)
+    @scala.inline
+    def setPatternDecimal(value: decimal): Self = this.set("patternDecimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternDecimal: Self = this.set("patternDecimal", js.undefined)
+    @scala.inline
+    def setPatternDistance(value: Distance): Self = this.set("patternDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternDistance: Self = this.set("patternDistance", js.undefined)
+    @scala.inline
+    def setPatternDuration(value: Duration): Self = this.set("patternDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternDuration: Self = this.set("patternDuration", js.undefined)
+    @scala.inline
+    def setPatternHumanName(value: HumanName): Self = this.set("patternHumanName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternHumanName: Self = this.set("patternHumanName", js.undefined)
+    @scala.inline
+    def setPatternId(value: id): Self = this.set("patternId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternId: Self = this.set("patternId", js.undefined)
+    @scala.inline
+    def setPatternIdentifier(value: Identifier): Self = this.set("patternIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternIdentifier: Self = this.set("patternIdentifier", js.undefined)
+    @scala.inline
+    def setPatternInstant(value: instant): Self = this.set("patternInstant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternInstant: Self = this.set("patternInstant", js.undefined)
+    @scala.inline
+    def setPatternInteger(value: integer): Self = this.set("patternInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternInteger: Self = this.set("patternInteger", js.undefined)
+    @scala.inline
+    def setPatternMarkdown(value: markdown): Self = this.set("patternMarkdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternMarkdown: Self = this.set("patternMarkdown", js.undefined)
+    @scala.inline
+    def setPatternMeta(value: Meta): Self = this.set("patternMeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternMeta: Self = this.set("patternMeta", js.undefined)
+    @scala.inline
+    def setPatternMoney(value: Money): Self = this.set("patternMoney", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternMoney: Self = this.set("patternMoney", js.undefined)
+    @scala.inline
+    def setPatternOid(value: oid): Self = this.set("patternOid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternOid: Self = this.set("patternOid", js.undefined)
+    @scala.inline
+    def setPatternPeriod(value: Period): Self = this.set("patternPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternPeriod: Self = this.set("patternPeriod", js.undefined)
+    @scala.inline
+    def setPatternPositiveInt(value: positiveInt): Self = this.set("patternPositiveInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternPositiveInt: Self = this.set("patternPositiveInt", js.undefined)
+    @scala.inline
+    def setPatternQuantity(value: Quantity): Self = this.set("patternQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternQuantity: Self = this.set("patternQuantity", js.undefined)
+    @scala.inline
+    def setPatternRange(value: Range): Self = this.set("patternRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternRange: Self = this.set("patternRange", js.undefined)
+    @scala.inline
+    def setPatternRatio(value: Ratio): Self = this.set("patternRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternRatio: Self = this.set("patternRatio", js.undefined)
+    @scala.inline
+    def setPatternReference(value: Reference): Self = this.set("patternReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternReference: Self = this.set("patternReference", js.undefined)
+    @scala.inline
+    def setPatternSampledData(value: SampledData): Self = this.set("patternSampledData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternSampledData: Self = this.set("patternSampledData", js.undefined)
+    @scala.inline
+    def setPatternSignature(value: Signature): Self = this.set("patternSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternSignature: Self = this.set("patternSignature", js.undefined)
+    @scala.inline
+    def setPatternString(value: String): Self = this.set("patternString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternString: Self = this.set("patternString", js.undefined)
+    @scala.inline
+    def setPatternTime(value: time): Self = this.set("patternTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternTime: Self = this.set("patternTime", js.undefined)
+    @scala.inline
+    def setPatternTiming(value: Timing): Self = this.set("patternTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternTiming: Self = this.set("patternTiming", js.undefined)
+    @scala.inline
+    def setPatternUnsignedInt(value: unsignedInt): Self = this.set("patternUnsignedInt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternUnsignedInt: Self = this.set("patternUnsignedInt", js.undefined)
+    @scala.inline
+    def setPatternUri(value: uri): Self = this.set("patternUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternUri: Self = this.set("patternUri", js.undefined)
+    @scala.inline
+    def setRepresentationVarargs(value: code*): Self = this.set("representation", js.Array(value :_*))
+    @scala.inline
+    def setRepresentation(value: js.Array[code]): Self = this.set("representation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepresentation: Self = this.set("representation", js.undefined)
+    @scala.inline
+    def setRequirements(value: markdown): Self = this.set("requirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequirements: Self = this.set("requirements", js.undefined)
+    @scala.inline
+    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShort: Self = this.set("short", js.undefined)
+    @scala.inline
+    def setSliceName(value: String): Self = this.set("sliceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSliceName: Self = this.set("sliceName", js.undefined)
+    @scala.inline
+    def setSlicing(value: ElementDefinitionSlicing): Self = this.set("slicing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlicing: Self = this.set("slicing", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: ElementDefinitionType*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: js.Array[ElementDefinitionType]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

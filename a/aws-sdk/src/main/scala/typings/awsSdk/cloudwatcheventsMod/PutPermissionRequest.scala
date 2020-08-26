@@ -30,17 +30,36 @@ trait PutPermissionRequest extends js.Object {
 
 object PutPermissionRequest {
   @scala.inline
-  def apply(
-    Action: Action,
-    Principal: Principal,
-    StatementId: StatementId,
-    Condition: Condition = null,
-    EventBusName: NonPartnerEventBusName = null
-  ): PutPermissionRequest = {
+  def apply(Action: Action, Principal: Principal, StatementId: StatementId): PutPermissionRequest = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Principal = Principal.asInstanceOf[js.Any], StatementId = StatementId.asInstanceOf[js.Any])
-    if (Condition != null) __obj.updateDynamic("Condition")(Condition.asInstanceOf[js.Any])
-    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutPermissionRequest]
   }
+  @scala.inline
+  implicit class PutPermissionRequestOps[Self <: PutPermissionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrincipal(value: Principal): Self = this.set("Principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatementId(value: StatementId): Self = this.set("StatementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCondition(value: Condition): Self = this.set("Condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("Condition", js.undefined)
+    @scala.inline
+    def setEventBusName(value: NonPartnerEventBusName): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
+  }
+  
 }
 

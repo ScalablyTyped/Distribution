@@ -23,7 +23,7 @@ trait Policy extends js.Object {
     */
   var PolicyId: js.UndefOr[typings.awsSdk.fmsMod.PolicyId] = js.native
   /**
-    * The friendly name of the AWS Firewall Manager policy.
+    * The name of the AWS Firewall Manager policy.
     */
   var PolicyName: ResourceName = js.native
   /**
@@ -59,22 +59,61 @@ object Policy {
     PolicyName: ResourceName,
     RemediationEnabled: Boolean,
     ResourceType: ResourceType,
-    SecurityServicePolicyData: SecurityServicePolicyData,
-    ExcludeMap: CustomerPolicyScopeMap = null,
-    IncludeMap: CustomerPolicyScopeMap = null,
-    PolicyId: PolicyId = null,
-    PolicyUpdateToken: PolicyUpdateToken = null,
-    ResourceTags: ResourceTags = null,
-    ResourceTypeList: ResourceTypeList = null
+    SecurityServicePolicyData: SecurityServicePolicyData
   ): Policy = {
     val __obj = js.Dynamic.literal(ExcludeResourceTags = ExcludeResourceTags.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any], RemediationEnabled = RemediationEnabled.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], SecurityServicePolicyData = SecurityServicePolicyData.asInstanceOf[js.Any])
-    if (ExcludeMap != null) __obj.updateDynamic("ExcludeMap")(ExcludeMap.asInstanceOf[js.Any])
-    if (IncludeMap != null) __obj.updateDynamic("IncludeMap")(IncludeMap.asInstanceOf[js.Any])
-    if (PolicyId != null) __obj.updateDynamic("PolicyId")(PolicyId.asInstanceOf[js.Any])
-    if (PolicyUpdateToken != null) __obj.updateDynamic("PolicyUpdateToken")(PolicyUpdateToken.asInstanceOf[js.Any])
-    if (ResourceTags != null) __obj.updateDynamic("ResourceTags")(ResourceTags.asInstanceOf[js.Any])
-    if (ResourceTypeList != null) __obj.updateDynamic("ResourceTypeList")(ResourceTypeList.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policy]
   }
+  @scala.inline
+  implicit class PolicyOps[Self <: Policy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludeResourceTags(value: Boolean): Self = this.set("ExcludeResourceTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyName(value: ResourceName): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRemediationEnabled(value: Boolean): Self = this.set("RemediationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityServicePolicyData(value: SecurityServicePolicyData): Self = this.set("SecurityServicePolicyData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExcludeMap(value: CustomerPolicyScopeMap): Self = this.set("ExcludeMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeMap: Self = this.set("ExcludeMap", js.undefined)
+    @scala.inline
+    def setIncludeMap(value: CustomerPolicyScopeMap): Self = this.set("IncludeMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeMap: Self = this.set("IncludeMap", js.undefined)
+    @scala.inline
+    def setPolicyId(value: PolicyId): Self = this.set("PolicyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyId: Self = this.set("PolicyId", js.undefined)
+    @scala.inline
+    def setPolicyUpdateToken(value: PolicyUpdateToken): Self = this.set("PolicyUpdateToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyUpdateToken: Self = this.set("PolicyUpdateToken", js.undefined)
+    @scala.inline
+    def setResourceTagsVarargs(value: ResourceTag*): Self = this.set("ResourceTags", js.Array(value :_*))
+    @scala.inline
+    def setResourceTags(value: ResourceTags): Self = this.set("ResourceTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTags: Self = this.set("ResourceTags", js.undefined)
+    @scala.inline
+    def setResourceTypeListVarargs(value: ResourceType*): Self = this.set("ResourceTypeList", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypeList(value: ResourceTypeList): Self = this.set("ResourceTypeList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypeList: Self = this.set("ResourceTypeList", js.undefined)
+  }
+  
 }
 

@@ -5,38 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RunCreateModel extends js.Object {
-  var automated: Boolean
-  var build: ShallowReference
-  var buildDropLocation: String
-  var buildFlavor: String
-  var buildPlatform: String
-  var comment: String
-  var completeDate: String
-  var configurationIds: js.Array[Double]
-  var controller: String
-  var customTestFields: js.Array[CustomTestField]
-  var dtlAutEnvironment: ShallowReference
-  var dtlTestEnvironment: ShallowReference
-  var dueDate: String
-  var environmentDetails: DtlEnvironmentDetails
-  var errorMessage: String
-  var filter: RunFilter
-  var iteration: String
-  var name: String
-  var owner: IdentityRef
-  var plan: ShallowReference
-  var pointIds: js.Array[Double]
-  var releaseEnvironmentUri: String
-  var releaseUri: String
-  var runTimeout: js.Any
-  var sourceWorkflow: String
-  var startDate: String
-  var state: String
-  var testConfigurationsMapping: String
-  var testEnvironmentId: String
-  var testSettings: ShallowReference
-  var `type`: String
+  var automated: Boolean = js.native
+  var build: ShallowReference = js.native
+  var buildDropLocation: String = js.native
+  var buildFlavor: String = js.native
+  var buildPlatform: String = js.native
+  var comment: String = js.native
+  var completeDate: String = js.native
+  var configurationIds: js.Array[Double] = js.native
+  var controller: String = js.native
+  var customTestFields: js.Array[CustomTestField] = js.native
+  var dtlAutEnvironment: ShallowReference = js.native
+  var dtlTestEnvironment: ShallowReference = js.native
+  var dueDate: String = js.native
+  var environmentDetails: DtlEnvironmentDetails = js.native
+  var errorMessage: String = js.native
+  var filter: RunFilter = js.native
+  var iteration: String = js.native
+  var name: String = js.native
+  var owner: IdentityRef = js.native
+  var plan: ShallowReference = js.native
+  var pointIds: js.Array[Double] = js.native
+  var releaseEnvironmentUri: String = js.native
+  var releaseUri: String = js.native
+  var runTimeout: js.Any = js.native
+  var sourceWorkflow: String = js.native
+  var startDate: String = js.native
+  var state: String = js.native
+  var testConfigurationsMapping: String = js.native
+  var testEnvironmentId: String = js.native
+  var testSettings: ShallowReference = js.native
+  var `type`: String = js.native
 }
 
 object RunCreateModel {
@@ -78,5 +79,86 @@ object RunCreateModel {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunCreateModel]
   }
+  @scala.inline
+  implicit class RunCreateModelOps[Self <: RunCreateModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomated(value: Boolean): Self = this.set("automated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBuild(value: ShallowReference): Self = this.set("build", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBuildDropLocation(value: String): Self = this.set("buildDropLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBuildFlavor(value: String): Self = this.set("buildFlavor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBuildPlatform(value: String): Self = this.set("buildPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompleteDate(value: String): Self = this.set("completeDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationIdsVarargs(value: Double*): Self = this.set("configurationIds", js.Array(value :_*))
+    @scala.inline
+    def setConfigurationIds(value: js.Array[Double]): Self = this.set("configurationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setController(value: String): Self = this.set("controller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomTestFieldsVarargs(value: CustomTestField*): Self = this.set("customTestFields", js.Array(value :_*))
+    @scala.inline
+    def setCustomTestFields(value: js.Array[CustomTestField]): Self = this.set("customTestFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDtlAutEnvironment(value: ShallowReference): Self = this.set("dtlAutEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDtlTestEnvironment(value: ShallowReference): Self = this.set("dtlTestEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDueDate(value: String): Self = this.set("dueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnvironmentDetails(value: DtlEnvironmentDetails): Self = this.set("environmentDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: RunFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIteration(value: String): Self = this.set("iteration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwner(value: IdentityRef): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlan(value: ShallowReference): Self = this.set("plan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPointIdsVarargs(value: Double*): Self = this.set("pointIds", js.Array(value :_*))
+    @scala.inline
+    def setPointIds(value: js.Array[Double]): Self = this.set("pointIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReleaseEnvironmentUri(value: String): Self = this.set("releaseEnvironmentUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReleaseUri(value: String): Self = this.set("releaseUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRunTimeout(value: js.Any): Self = this.set("runTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceWorkflow(value: String): Self = this.set("sourceWorkflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTestConfigurationsMapping(value: String): Self = this.set("testConfigurationsMapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTestEnvironmentId(value: String): Self = this.set("testEnvironmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTestSettings(value: ShallowReference): Self = this.set("testSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

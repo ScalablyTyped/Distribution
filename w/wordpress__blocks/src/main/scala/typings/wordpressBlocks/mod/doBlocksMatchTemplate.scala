@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object doBlocksMatchTemplate extends js.Object {
   def apply(): Boolean = js.native
+  def apply(blocks: js.UndefOr[scala.Nothing], template: TemplateArray): Boolean = js.native
   def apply(blocks: js.Array[BlockInstance[StringDictionary[_]]]): Boolean = js.native
   def apply(blocks: js.Array[BlockInstance[StringDictionary[_]]], template: TemplateArray): Boolean = js.native
 }

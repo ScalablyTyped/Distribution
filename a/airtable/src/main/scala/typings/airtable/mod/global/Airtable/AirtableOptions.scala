@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AirtableOptions extends js.Object {
-  var apiKey: js.UndefOr[String] = js.undefined
-  var apiVersion: js.UndefOr[String] = js.undefined
-  var endpointUrl: js.UndefOr[String] = js.undefined
-  var noRetryIfRateLimited: js.UndefOr[Boolean] = js.undefined
-  var requestTimeout: js.UndefOr[Double] = js.undefined
+  var apiKey: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.native
+  var endpointUrl: js.UndefOr[String] = js.native
+  var noRetryIfRateLimited: js.UndefOr[Boolean] = js.native
+  var requestTimeout: js.UndefOr[Double] = js.native
 }
 
 object AirtableOptions {
   @scala.inline
-  def apply(
-    apiKey: String = null,
-    apiVersion: String = null,
-    endpointUrl: String = null,
-    noRetryIfRateLimited: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: js.UndefOr[Double] = js.undefined
-  ): AirtableOptions = {
+  def apply(): AirtableOptions = {
     val __obj = js.Dynamic.literal()
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(noRetryIfRateLimited)) __obj.updateDynamic("noRetryIfRateLimited")(noRetryIfRateLimited.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AirtableOptions]
   }
+  @scala.inline
+  implicit class AirtableOptionsOps[Self <: AirtableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiKey: Self = this.set("apiKey", js.undefined)
+    @scala.inline
+    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    @scala.inline
+    def setEndpointUrl(value: String): Self = this.set("endpointUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointUrl: Self = this.set("endpointUrl", js.undefined)
+    @scala.inline
+    def setNoRetryIfRateLimited(value: Boolean): Self = this.set("noRetryIfRateLimited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoRetryIfRateLimited: Self = this.set("noRetryIfRateLimited", js.undefined)
+    @scala.inline
+    def setRequestTimeout(value: Double): Self = this.set("requestTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestTimeout: Self = this.set("requestTimeout", js.undefined)
+  }
+  
 }
 

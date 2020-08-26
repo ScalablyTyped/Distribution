@@ -38,24 +38,50 @@ trait PackageDetails extends js.Object {
 
 object PackageDetails {
   @scala.inline
-  def apply(
-    CreatedAt: CreatedAt = null,
-    ErrorDetails: ErrorDetails = null,
-    PackageDescription: PackageDescription = null,
-    PackageID: PackageID = null,
-    PackageName: PackageName = null,
-    PackageStatus: PackageStatus = null,
-    PackageType: PackageType = null
-  ): PackageDetails = {
+  def apply(): PackageDetails = {
     val __obj = js.Dynamic.literal()
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (ErrorDetails != null) __obj.updateDynamic("ErrorDetails")(ErrorDetails.asInstanceOf[js.Any])
-    if (PackageDescription != null) __obj.updateDynamic("PackageDescription")(PackageDescription.asInstanceOf[js.Any])
-    if (PackageID != null) __obj.updateDynamic("PackageID")(PackageID.asInstanceOf[js.Any])
-    if (PackageName != null) __obj.updateDynamic("PackageName")(PackageName.asInstanceOf[js.Any])
-    if (PackageStatus != null) __obj.updateDynamic("PackageStatus")(PackageStatus.asInstanceOf[js.Any])
-    if (PackageType != null) __obj.updateDynamic("PackageType")(PackageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageDetails]
   }
+  @scala.inline
+  implicit class PackageDetailsOps[Self <: PackageDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: CreatedAt): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setErrorDetails(value: ErrorDetails): Self = this.set("ErrorDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorDetails: Self = this.set("ErrorDetails", js.undefined)
+    @scala.inline
+    def setPackageDescription(value: PackageDescription): Self = this.set("PackageDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageDescription: Self = this.set("PackageDescription", js.undefined)
+    @scala.inline
+    def setPackageID(value: PackageID): Self = this.set("PackageID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageID: Self = this.set("PackageID", js.undefined)
+    @scala.inline
+    def setPackageName(value: PackageName): Self = this.set("PackageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageName: Self = this.set("PackageName", js.undefined)
+    @scala.inline
+    def setPackageStatus(value: PackageStatus): Self = this.set("PackageStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageStatus: Self = this.set("PackageStatus", js.undefined)
+    @scala.inline
+    def setPackageType(value: PackageType): Self = this.set("PackageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageType: Self = this.set("PackageType", js.undefined)
+  }
+  
 }
 

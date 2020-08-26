@@ -1,7 +1,7 @@
 
 # Scala.js typings for polished
 
-Typings are for version 3.4.4
+Typings are for version 3.6.5
 
 ## Library description:
 A lightweight toolset for writing styles in Javascript.
@@ -11,8 +11,8 @@ A lightweight toolset for writing styles in Javascript.
 | Full name          | polished |
 | Keywords           | styled-components, polished, emotion, glamor, css-in-js, inline-styles, react, flow, typescript |
 | # releases         | 40 |
-| # dependents       | 815 |
-| # downloads        | 38004149 |
+| # dependents       | 841 |
+| # downloads        | 40850983 |
 | # stars            | 7 |
 
 ## Links

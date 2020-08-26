@@ -69,32 +69,70 @@ trait SchemaNodePool extends js.Object {
 
 object SchemaNodePool {
   @scala.inline
-  def apply(
-    autoscaling: SchemaNodePoolAutoscaling = null,
-    conditions: js.Array[SchemaStatusCondition] = null,
-    config: SchemaNodeConfig = null,
-    initialNodeCount: js.UndefOr[Double] = js.undefined,
-    instanceGroupUrls: js.Array[String] = null,
-    management: SchemaNodeManagement = null,
-    name: String = null,
-    selfLink: String = null,
-    status: String = null,
-    statusMessage: String = null,
-    version: String = null
-  ): SchemaNodePool = {
+  def apply(): SchemaNodePool = {
     val __obj = js.Dynamic.literal()
-    if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling.asInstanceOf[js.Any])
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialNodeCount)) __obj.updateDynamic("initialNodeCount")(initialNodeCount.get.asInstanceOf[js.Any])
-    if (instanceGroupUrls != null) __obj.updateDynamic("instanceGroupUrls")(instanceGroupUrls.asInstanceOf[js.Any])
-    if (management != null) __obj.updateDynamic("management")(management.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodePool]
   }
+  @scala.inline
+  implicit class SchemaNodePoolOps[Self <: SchemaNodePool] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoscaling(value: SchemaNodePoolAutoscaling): Self = this.set("autoscaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscaling: Self = this.set("autoscaling", js.undefined)
+    @scala.inline
+    def setConditionsVarargs(value: SchemaStatusCondition*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[SchemaStatusCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+    @scala.inline
+    def setConfig(value: SchemaNodeConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setInitialNodeCount(value: Double): Self = this.set("initialNodeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialNodeCount: Self = this.set("initialNodeCount", js.undefined)
+    @scala.inline
+    def setInstanceGroupUrlsVarargs(value: String*): Self = this.set("instanceGroupUrls", js.Array(value :_*))
+    @scala.inline
+    def setInstanceGroupUrls(value: js.Array[String]): Self = this.set("instanceGroupUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroupUrls: Self = this.set("instanceGroupUrls", js.undefined)
+    @scala.inline
+    def setManagement(value: SchemaNodeManagement): Self = this.set("management", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagement: Self = this.set("management", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

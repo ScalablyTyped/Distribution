@@ -1,11 +1,5 @@
 package typings.bootbox
 
-import typings.bootbox.bootboxStrings.`extra-large`
-import typings.bootbox.bootboxStrings.large
-import typings.bootbox.bootboxStrings.lg
-import typings.bootbox.bootboxStrings.sm
-import typings.bootbox.bootboxStrings.small
-import typings.bootbox.bootboxStrings.xl
 import typings.jquery.JQuery
 import typings.std.DocumentFragment
 import typings.std.Element
@@ -16,47 +10,49 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Bootbox options available for custom modals */
+@js.native
 trait BootboxDialogOptions[T] extends BootboxBaseOptions[T] {
-  var centerVertical: js.UndefOr[Boolean] = js.undefined
-  var message: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
-  var swapButtonOrder: js.UndefOr[Boolean] = js.undefined
+  var centerVertical: js.UndefOr[Boolean] = js.native
+  var message: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]]) = js.native
+  var swapButtonOrder: js.UndefOr[Boolean] = js.native
 }
 
 object BootboxDialogOptions {
   @scala.inline
   def apply[T](
-    message: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]]),
-    animate: js.UndefOr[Boolean] = js.undefined,
-    backdrop: js.UndefOr[Boolean] = js.undefined,
-    buttons: BootboxButtonMap = null,
-    callback: T => _ = null,
-    centerVertical: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    locale: String = null,
-    onEscape: js.Function0[_] | Boolean = null,
-    scrollable: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    size: small | sm | large | lg | `extra-large` | xl = null,
-    swapButtonOrder: js.UndefOr[Boolean] = js.undefined,
-    title: String | Element = null
+    message: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
   ): BootboxDialogOptions[T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.get.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (!js.isUndefined(centerVertical)) __obj.updateDynamic("centerVertical")(centerVertical.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(swapButtonOrder)) __obj.updateDynamic("swapButtonOrder")(swapButtonOrder.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxDialogOptions[T]]
   }
+  @scala.inline
+  implicit class BootboxDialogOptionsOps[Self <: BootboxDialogOptions[_], T] (val x: Self with BootboxDialogOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessageFunction2(value: (/* index */ Double, /* html */ String) => String | Element | JQuery[HTMLElement]): Self = this.set("message", js.Any.fromFunction2(value))
+    @scala.inline
+    def setMessageVarargs(value: js.Any*): Self = this.set("message", js.Array(value :_*))
+    @scala.inline
+    def setMessage(
+      value: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+    ): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCenterVertical(value: Boolean): Self = this.set("centerVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenterVertical: Self = this.set("centerVertical", js.undefined)
+    @scala.inline
+    def setSwapButtonOrder(value: Boolean): Self = this.set("swapButtonOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwapButtonOrder: Self = this.set("swapButtonOrder", js.undefined)
+  }
+  
 }
 

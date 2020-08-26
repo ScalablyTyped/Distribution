@@ -62,16 +62,53 @@ object RDSDataSpec {
     SecurityGroupIds: EDPSecurityGroupIds,
     SelectSqlQuery: RDSSelectSqlQuery,
     ServiceRole: EDPServiceRole,
-    SubnetId: EDPSubnetId,
-    DataRearrangement: DataRearrangement = null,
-    DataSchema: DataSchema = null,
-    DataSchemaUri: S3Url = null
+    SubnetId: EDPSubnetId
   ): RDSDataSpec = {
     val __obj = js.Dynamic.literal(DatabaseCredentials = DatabaseCredentials.asInstanceOf[js.Any], DatabaseInformation = DatabaseInformation.asInstanceOf[js.Any], ResourceRole = ResourceRole.asInstanceOf[js.Any], S3StagingLocation = S3StagingLocation.asInstanceOf[js.Any], SecurityGroupIds = SecurityGroupIds.asInstanceOf[js.Any], SelectSqlQuery = SelectSqlQuery.asInstanceOf[js.Any], ServiceRole = ServiceRole.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
-    if (DataRearrangement != null) __obj.updateDynamic("DataRearrangement")(DataRearrangement.asInstanceOf[js.Any])
-    if (DataSchema != null) __obj.updateDynamic("DataSchema")(DataSchema.asInstanceOf[js.Any])
-    if (DataSchemaUri != null) __obj.updateDynamic("DataSchemaUri")(DataSchemaUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RDSDataSpec]
   }
+  @scala.inline
+  implicit class RDSDataSpecOps[Self <: RDSDataSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseCredentials(value: RDSDatabaseCredentials): Self = this.set("DatabaseCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatabaseInformation(value: RDSDatabase): Self = this.set("DatabaseInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceRole(value: EDPResourceRole): Self = this.set("ResourceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3StagingLocation(value: S3Url): Self = this.set("S3StagingLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: EDPSecurityGroupId*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: EDPSecurityGroupIds): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelectSqlQuery(value: RDSSelectSqlQuery): Self = this.set("SelectSqlQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceRole(value: EDPServiceRole): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetId(value: EDPSubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataRearrangement(value: DataRearrangement): Self = this.set("DataRearrangement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRearrangement: Self = this.set("DataRearrangement", js.undefined)
+    @scala.inline
+    def setDataSchema(value: DataSchema): Self = this.set("DataSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSchema: Self = this.set("DataSchema", js.undefined)
+    @scala.inline
+    def setDataSchemaUri(value: S3Url): Self = this.set("DataSchemaUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSchemaUri: Self = this.set("DataSchemaUri", js.undefined)
+  }
+  
 }
 

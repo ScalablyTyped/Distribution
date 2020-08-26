@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSIndexedAccessType
   extends Node
      with TSType {
-  var indexType: TSType
-  var objectType: TSType
+  var indexType: TSType = js.native
+  var objectType: TSType = js.native
   @JSName("type")
-  var type_TSIndexedAccessType: typings.babelTypes.babelTypesStrings.TSIndexedAccessType
+  var type_TSIndexedAccessType: typings.babelTypes.babelTypesStrings.TSIndexedAccessType = js.native
 }
 
 @JSImport("babel-types", "TSIndexedAccessType")

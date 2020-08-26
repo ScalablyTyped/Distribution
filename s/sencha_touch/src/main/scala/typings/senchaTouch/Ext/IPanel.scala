@@ -4,65 +4,94 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPanel extends IContainer {
   /** [Config Option] (Number/Boolean/String) */
-  var bodyBorder: js.UndefOr[js.Any] = js.undefined
+  var bodyBorder: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number/Boolean/String) */
-  var bodyMargin: js.UndefOr[js.Any] = js.undefined
+  var bodyMargin: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number/Boolean/String) */
-  var bodyPadding: js.UndefOr[js.Any] = js.undefined
+  var bodyPadding: js.UndefOr[js.Any] = js.native
   /** [Method] Returns the value of bodyBorder
     * @returns Number/Boolean/String
     */
-  var getBodyBorder: js.UndefOr[js.Function0[_]] = js.undefined
+  var getBodyBorder: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of bodyMargin
     * @returns Number/Boolean/String
     */
-  var getBodyMargin: js.UndefOr[js.Function0[_]] = js.undefined
+  var getBodyMargin: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of bodyPadding
     * @returns Number/Boolean/String
     */
-  var getBodyPadding: js.UndefOr[js.Function0[_]] = js.undefined
+  var getBodyPadding: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Sets the value of bodyBorder
     * @param bodyBorder Number/Boolean/String The new value.
     */
-  var setBodyBorder: js.UndefOr[js.Function1[/* bodyBorder */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBodyBorder: js.UndefOr[js.Function1[/* bodyBorder */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of bodyMargin
     * @param bodyMargin Number/Boolean/String The new value.
     */
-  var setBodyMargin: js.UndefOr[js.Function1[/* bodyMargin */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBodyMargin: js.UndefOr[js.Function1[/* bodyMargin */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of bodyPadding
     * @param bodyPadding Number/Boolean/String The new value.
     */
-  var setBodyPadding: js.UndefOr[js.Function1[/* bodyPadding */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBodyPadding: js.UndefOr[js.Function1[/* bodyPadding */ js.UndefOr[js.Any], Unit]] = js.native
 }
 
 object IPanel {
   @scala.inline
-  def apply(
-    IContainer: IContainer = null,
-    bodyBorder: js.Any = null,
-    bodyMargin: js.Any = null,
-    bodyPadding: js.Any = null,
-    getBodyBorder: () => _ = null,
-    getBodyMargin: () => _ = null,
-    getBodyPadding: () => _ = null,
-    setBodyBorder: /* bodyBorder */ js.UndefOr[js.Any] => Unit = null,
-    setBodyMargin: /* bodyMargin */ js.UndefOr[js.Any] => Unit = null,
-    setBodyPadding: /* bodyPadding */ js.UndefOr[js.Any] => Unit = null
-  ): IPanel = {
+  def apply(): IPanel = {
     val __obj = js.Dynamic.literal()
-    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (bodyBorder != null) __obj.updateDynamic("bodyBorder")(bodyBorder.asInstanceOf[js.Any])
-    if (bodyMargin != null) __obj.updateDynamic("bodyMargin")(bodyMargin.asInstanceOf[js.Any])
-    if (bodyPadding != null) __obj.updateDynamic("bodyPadding")(bodyPadding.asInstanceOf[js.Any])
-    if (getBodyBorder != null) __obj.updateDynamic("getBodyBorder")(js.Any.fromFunction0(getBodyBorder))
-    if (getBodyMargin != null) __obj.updateDynamic("getBodyMargin")(js.Any.fromFunction0(getBodyMargin))
-    if (getBodyPadding != null) __obj.updateDynamic("getBodyPadding")(js.Any.fromFunction0(getBodyPadding))
-    if (setBodyBorder != null) __obj.updateDynamic("setBodyBorder")(js.Any.fromFunction1(setBodyBorder))
-    if (setBodyMargin != null) __obj.updateDynamic("setBodyMargin")(js.Any.fromFunction1(setBodyMargin))
-    if (setBodyPadding != null) __obj.updateDynamic("setBodyPadding")(js.Any.fromFunction1(setBodyPadding))
     __obj.asInstanceOf[IPanel]
   }
+  @scala.inline
+  implicit class IPanelOps[Self <: IPanel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBodyBorder(value: js.Any): Self = this.set("bodyBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyBorder: Self = this.set("bodyBorder", js.undefined)
+    @scala.inline
+    def setBodyMargin(value: js.Any): Self = this.set("bodyMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyMargin: Self = this.set("bodyMargin", js.undefined)
+    @scala.inline
+    def setBodyPadding(value: js.Any): Self = this.set("bodyPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyPadding: Self = this.set("bodyPadding", js.undefined)
+    @scala.inline
+    def setGetBodyBorder(value: () => _): Self = this.set("getBodyBorder", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBodyBorder: Self = this.set("getBodyBorder", js.undefined)
+    @scala.inline
+    def setGetBodyMargin(value: () => _): Self = this.set("getBodyMargin", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBodyMargin: Self = this.set("getBodyMargin", js.undefined)
+    @scala.inline
+    def setGetBodyPadding(value: () => _): Self = this.set("getBodyPadding", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBodyPadding: Self = this.set("getBodyPadding", js.undefined)
+    @scala.inline
+    def setSetBodyBorder(value: /* bodyBorder */ js.UndefOr[js.Any] => Unit): Self = this.set("setBodyBorder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBodyBorder: Self = this.set("setBodyBorder", js.undefined)
+    @scala.inline
+    def setSetBodyMargin(value: /* bodyMargin */ js.UndefOr[js.Any] => Unit): Self = this.set("setBodyMargin", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBodyMargin: Self = this.set("setBodyMargin", js.undefined)
+    @scala.inline
+    def setSetBodyPadding(value: /* bodyPadding */ js.UndefOr[js.Any] => Unit): Self = this.set("setBodyPadding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBodyPadding: Self = this.set("setBodyPadding", js.undefined)
+  }
+  
 }
 

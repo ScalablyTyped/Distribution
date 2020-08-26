@@ -15,6 +15,7 @@ trait DataStore extends js.Object {
   def add(obj: js.Any): String | Double = js.native
   def add(obj: js.Any, index: Double): String | Double = js.native
   def addMark(id: String, name: String): js.Any = js.native
+  def addMark(id: String, name: String, css: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
   def addMark(id: String, name: String, css: Boolean): js.Any = js.native
   def addMark(id: String, name: String, css: Boolean, value: js.Any): js.Any = js.native
   def attachEvent(`type`: String, functor: WebixCallback): String | Double = js.native
@@ -32,14 +33,17 @@ trait DataStore extends js.Object {
   def destructor(): Unit = js.native
   def detachEvent(id: String): Unit = js.native
   def each(method: WebixCallback): Unit = js.native
+  def each(method: WebixCallback, master: js.UndefOr[scala.Nothing], all: Boolean): Unit = js.native
   def each(method: WebixCallback, master: js.Any): Unit = js.native
   def each(method: WebixCallback, master: js.Any, all: Boolean): Unit = js.native
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   def filter(text: WebixCallback | WebixTemplate): Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
+  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
   def find(criterion: WebixCallback): js.Any = js.native
@@ -71,6 +75,7 @@ trait DataStore extends js.Object {
   def importData(source: baseview): Unit = js.native
   def mapEvent(map: js.Any): Unit = js.native
   def move(sid: String, tindex: Double): String = js.native
+  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
   def provideApi(target: js.Any, eventable: Boolean): Unit = js.native
@@ -88,6 +93,7 @@ trait DataStore extends js.Object {
   def setDriver(`type`: String): Unit = js.native
   def silent(code: WebixCallback): Unit = js.native
   def sort(by: String): Unit = js.native
+  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native

@@ -10,9 +10,9 @@ Client Runtime for Node.js client libraries generated using AutoRest
 | ------------------ | :-------------: |
 | Full name          | ms-rest |
 | Keywords           | node, microsoft, autorest, clientruntime |
-| # releases         | 17 |
-| # dependents       | 155 |
-| # downloads        | 4598512 |
+| # releases         | 15 |
+| # dependents       | 156 |
+| # downloads        | 4699580 |
 | # stars            | 0 |
 
 ## Links

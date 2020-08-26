@@ -24,6 +24,12 @@ object transportMod extends js.Object {
       */
     def this(connId: String, repoInfo: RepoInfo) = this()
     def this(connId: String, repoInfo: RepoInfo, transportSessionId: String) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      transportSessionId: js.UndefOr[scala.Nothing],
+      lastSessionId: String
+    ) = this()
     def this(connId: String, repoInfo: RepoInfo, transportSessionId: String, lastSessionId: String) = this()
     /**
       * Bytes received since connection started.
@@ -64,15 +70,15 @@ object transportMod extends js.Object {
        with Instantiable4[
           /* connId */ String, 
           /* repoInfo */ RepoInfo, 
-          /* applicationId */ String, 
+          js.UndefOr[/* applicationId */ String], 
           /* transportSessionId */ String, 
           Transport
         ]
        with Instantiable5[
           /* connId */ String, 
           /* repoInfo */ RepoInfo, 
-          /* applicationId */ String, 
-          /* transportSessionId */ String, 
+          js.UndefOr[/* applicationId */ String], 
+          js.UndefOr[/* transportSessionId */ String], 
           /* lastSessionId */ String, 
           Transport
         ] {

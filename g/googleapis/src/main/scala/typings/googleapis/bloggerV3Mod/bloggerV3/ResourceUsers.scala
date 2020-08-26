@@ -27,6 +27,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaUser] = js.native
   def get(callback: BodyResponseCallback[SchemaUser]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def get(params: ParamsResourceUsersGet): GaxiosPromise[SchemaUser] = js.native
   def get(params: ParamsResourceUsersGet, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
   def get(

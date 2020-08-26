@@ -50,30 +50,62 @@ trait DescribeInputDeviceResponse extends js.Object {
 
 object DescribeInputDeviceResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    ConnectionState: InputDeviceConnectionState = null,
-    DeviceSettingsSyncState: DeviceSettingsSyncState = null,
-    HdDeviceSettings: InputDeviceHdSettings = null,
-    Id: string = null,
-    MacAddress: string = null,
-    Name: string = null,
-    NetworkSettings: InputDeviceNetworkSettings = null,
-    SerialNumber: string = null,
-    Type: InputDeviceType = null
-  ): DescribeInputDeviceResponse = {
+  def apply(): DescribeInputDeviceResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (ConnectionState != null) __obj.updateDynamic("ConnectionState")(ConnectionState.asInstanceOf[js.Any])
-    if (DeviceSettingsSyncState != null) __obj.updateDynamic("DeviceSettingsSyncState")(DeviceSettingsSyncState.asInstanceOf[js.Any])
-    if (HdDeviceSettings != null) __obj.updateDynamic("HdDeviceSettings")(HdDeviceSettings.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (MacAddress != null) __obj.updateDynamic("MacAddress")(MacAddress.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NetworkSettings != null) __obj.updateDynamic("NetworkSettings")(NetworkSettings.asInstanceOf[js.Any])
-    if (SerialNumber != null) __obj.updateDynamic("SerialNumber")(SerialNumber.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInputDeviceResponse]
   }
+  @scala.inline
+  implicit class DescribeInputDeviceResponseOps[Self <: DescribeInputDeviceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setConnectionState(value: InputDeviceConnectionState): Self = this.set("ConnectionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionState: Self = this.set("ConnectionState", js.undefined)
+    @scala.inline
+    def setDeviceSettingsSyncState(value: DeviceSettingsSyncState): Self = this.set("DeviceSettingsSyncState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceSettingsSyncState: Self = this.set("DeviceSettingsSyncState", js.undefined)
+    @scala.inline
+    def setHdDeviceSettings(value: InputDeviceHdSettings): Self = this.set("HdDeviceSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHdDeviceSettings: Self = this.set("HdDeviceSettings", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setMacAddress(value: string): Self = this.set("MacAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacAddress: Self = this.set("MacAddress", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNetworkSettings(value: InputDeviceNetworkSettings): Self = this.set("NetworkSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkSettings: Self = this.set("NetworkSettings", js.undefined)
+    @scala.inline
+    def setSerialNumber(value: string): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialNumber: Self = this.set("SerialNumber", js.undefined)
+    @scala.inline
+    def setType(value: InputDeviceType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

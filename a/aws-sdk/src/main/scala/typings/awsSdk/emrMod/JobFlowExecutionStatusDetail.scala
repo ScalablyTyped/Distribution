@@ -34,20 +34,42 @@ trait JobFlowExecutionStatusDetail extends js.Object {
 
 object JobFlowExecutionStatusDetail {
   @scala.inline
-  def apply(
-    CreationDateTime: Date,
-    State: JobFlowExecutionState,
-    EndDateTime: Date = null,
-    LastStateChangeReason: XmlString = null,
-    ReadyDateTime: Date = null,
-    StartDateTime: Date = null
-  ): JobFlowExecutionStatusDetail = {
+  def apply(CreationDateTime: Date, State: JobFlowExecutionState): JobFlowExecutionStatusDetail = {
     val __obj = js.Dynamic.literal(CreationDateTime = CreationDateTime.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
-    if (EndDateTime != null) __obj.updateDynamic("EndDateTime")(EndDateTime.asInstanceOf[js.Any])
-    if (LastStateChangeReason != null) __obj.updateDynamic("LastStateChangeReason")(LastStateChangeReason.asInstanceOf[js.Any])
-    if (ReadyDateTime != null) __obj.updateDynamic("ReadyDateTime")(ReadyDateTime.asInstanceOf[js.Any])
-    if (StartDateTime != null) __obj.updateDynamic("StartDateTime")(StartDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobFlowExecutionStatusDetail]
   }
+  @scala.inline
+  implicit class JobFlowExecutionStatusDetailOps[Self <: JobFlowExecutionStatusDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDateTime(value: Date): Self = this.set("CreationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: JobFlowExecutionState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndDateTime(value: Date): Self = this.set("EndDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDateTime: Self = this.set("EndDateTime", js.undefined)
+    @scala.inline
+    def setLastStateChangeReason(value: XmlString): Self = this.set("LastStateChangeReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStateChangeReason: Self = this.set("LastStateChangeReason", js.undefined)
+    @scala.inline
+    def setReadyDateTime(value: Date): Self = this.set("ReadyDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadyDateTime: Self = this.set("ReadyDateTime", js.undefined)
+    @scala.inline
+    def setStartDateTime(value: Date): Self = this.set("StartDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDateTime: Self = this.set("StartDateTime", js.undefined)
+  }
+  
 }
 

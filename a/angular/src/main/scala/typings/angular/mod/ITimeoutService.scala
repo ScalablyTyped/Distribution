@@ -11,10 +11,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ITimeoutService extends js.Object {
   def apply(): IPromise[Unit] = js.native
+  def apply(delay: js.UndefOr[scala.Nothing], invokeApply: Boolean): IPromise[Unit] = js.native
   def apply(delay: Double): IPromise[Unit] = js.native
   def apply(delay: Double, invokeApply: Boolean): IPromise[Unit] = js.native
-  def apply[T](fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]]): IPromise[T] = js.native
-  def apply[T](fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]], delay: Double): IPromise[T] = js.native
+  def apply[T](
+    fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
+    delay: js.UndefOr[scala.Nothing],
+    invokeApply: js.UndefOr[scala.Nothing],
+    args: js.Any*
+  ): IPromise[T] = js.native
+  def apply[T](
+    fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
+    delay: js.UndefOr[scala.Nothing],
+    invokeApply: Boolean,
+    args: js.Any*
+  ): IPromise[T] = js.native
+  def apply[T](
+    fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
+    delay: Double,
+    invokeApply: js.UndefOr[scala.Nothing],
+    args: js.Any*
+  ): IPromise[T] = js.native
   def apply[T](
     fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
     delay: Double,

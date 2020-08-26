@@ -7,23 +7,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
+@js.native
 trait IEditControl extends js.Object {
-  var Focus: js.UndefOr[js.Function1[/* eventInfo */ DomEvent, Unit]] = js.undefined
-  var GetCellContext: js.UndefOr[js.Function0[IEditControlCellContext]] = js.undefined
-  var GetInputElement: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
-  var GetOriginalValue: js.UndefOr[js.Function0[IValue]] = js.undefined
-  var IsCurrentlyUsingGridTextInputElement: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var OnCellMove: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var OnValueChanged: js.UndefOr[js.Function1[/* newValue */ IValue, Unit]] = js.undefined
-  var SetSize: js.UndefOr[js.Function2[/* width */ Double, /* height */ Double, Unit]] = js.undefined
-  var SetValue: js.UndefOr[js.Function1[/* value */ IValue, Unit]] = js.undefined
-  var SupportedReadMode: js.UndefOr[EditActorReadType] = js.undefined
-  var SupportedWriteMode: js.UndefOr[EditActorWriteType] = js.undefined
-  def BindToCell(cellContext: IEditControlCellContext): Unit
-  def Dispose(): Unit
-  def OnBeginEdit(eventInfo: DomEvent): Unit
-  def OnEndEdit(): Unit
-  def Unbind(): Unit
+  var Focus: js.UndefOr[js.Function1[/* eventInfo */ DomEvent, Unit]] = js.native
+  var GetCellContext: js.UndefOr[js.Function0[IEditControlCellContext]] = js.native
+  var GetInputElement: js.UndefOr[js.Function0[HTMLElement]] = js.native
+  var GetOriginalValue: js.UndefOr[js.Function0[IValue]] = js.native
+  var IsCurrentlyUsingGridTextInputElement: js.UndefOr[js.Function0[Boolean]] = js.native
+  var OnCellMove: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnValueChanged: js.UndefOr[js.Function1[/* newValue */ IValue, Unit]] = js.native
+  var SetSize: js.UndefOr[js.Function2[/* width */ Double, /* height */ Double, Unit]] = js.native
+  var SetValue: js.UndefOr[js.Function1[/* value */ IValue, Unit]] = js.native
+  var SupportedReadMode: js.UndefOr[EditActorReadType] = js.native
+  var SupportedWriteMode: js.UndefOr[EditActorWriteType] = js.native
+  def BindToCell(cellContext: IEditControlCellContext): Unit = js.native
+  def Dispose(): Unit = js.native
+  def OnBeginEdit(eventInfo: DomEvent): Unit = js.native
+  def OnEndEdit(): Unit = js.native
+  def Unbind(): Unit = js.native
 }
 
 object IEditControl {
@@ -33,32 +34,77 @@ object IEditControl {
     Dispose: () => Unit,
     OnBeginEdit: DomEvent => Unit,
     OnEndEdit: () => Unit,
-    Unbind: () => Unit,
-    Focus: /* eventInfo */ DomEvent => Unit = null,
-    GetCellContext: () => IEditControlCellContext = null,
-    GetInputElement: () => HTMLElement = null,
-    GetOriginalValue: () => IValue = null,
-    IsCurrentlyUsingGridTextInputElement: () => Boolean = null,
-    OnCellMove: () => Unit = null,
-    OnValueChanged: /* newValue */ IValue => Unit = null,
-    SetSize: (/* width */ Double, /* height */ Double) => Unit = null,
-    SetValue: /* value */ IValue => Unit = null,
-    SupportedReadMode: EditActorReadType = null,
-    SupportedWriteMode: EditActorWriteType = null
+    Unbind: () => Unit
   ): IEditControl = {
     val __obj = js.Dynamic.literal(BindToCell = js.Any.fromFunction1(BindToCell), Dispose = js.Any.fromFunction0(Dispose), OnBeginEdit = js.Any.fromFunction1(OnBeginEdit), OnEndEdit = js.Any.fromFunction0(OnEndEdit), Unbind = js.Any.fromFunction0(Unbind))
-    if (Focus != null) __obj.updateDynamic("Focus")(js.Any.fromFunction1(Focus))
-    if (GetCellContext != null) __obj.updateDynamic("GetCellContext")(js.Any.fromFunction0(GetCellContext))
-    if (GetInputElement != null) __obj.updateDynamic("GetInputElement")(js.Any.fromFunction0(GetInputElement))
-    if (GetOriginalValue != null) __obj.updateDynamic("GetOriginalValue")(js.Any.fromFunction0(GetOriginalValue))
-    if (IsCurrentlyUsingGridTextInputElement != null) __obj.updateDynamic("IsCurrentlyUsingGridTextInputElement")(js.Any.fromFunction0(IsCurrentlyUsingGridTextInputElement))
-    if (OnCellMove != null) __obj.updateDynamic("OnCellMove")(js.Any.fromFunction0(OnCellMove))
-    if (OnValueChanged != null) __obj.updateDynamic("OnValueChanged")(js.Any.fromFunction1(OnValueChanged))
-    if (SetSize != null) __obj.updateDynamic("SetSize")(js.Any.fromFunction2(SetSize))
-    if (SetValue != null) __obj.updateDynamic("SetValue")(js.Any.fromFunction1(SetValue))
-    if (SupportedReadMode != null) __obj.updateDynamic("SupportedReadMode")(SupportedReadMode.asInstanceOf[js.Any])
-    if (SupportedWriteMode != null) __obj.updateDynamic("SupportedWriteMode")(SupportedWriteMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditControl]
   }
+  @scala.inline
+  implicit class IEditControlOps[Self <: IEditControl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBindToCell(value: IEditControlCellContext => Unit): Self = this.set("BindToCell", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDispose(value: () => Unit): Self = this.set("Dispose", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnBeginEdit(value: DomEvent => Unit): Self = this.set("OnBeginEdit", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOnEndEdit(value: () => Unit): Self = this.set("OnEndEdit", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUnbind(value: () => Unit): Self = this.set("Unbind", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFocus(value: /* eventInfo */ DomEvent => Unit): Self = this.set("Focus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFocus: Self = this.set("Focus", js.undefined)
+    @scala.inline
+    def setGetCellContext(value: () => IEditControlCellContext): Self = this.set("GetCellContext", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetCellContext: Self = this.set("GetCellContext", js.undefined)
+    @scala.inline
+    def setGetInputElement(value: () => HTMLElement): Self = this.set("GetInputElement", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetInputElement: Self = this.set("GetInputElement", js.undefined)
+    @scala.inline
+    def setGetOriginalValue(value: () => IValue): Self = this.set("GetOriginalValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOriginalValue: Self = this.set("GetOriginalValue", js.undefined)
+    @scala.inline
+    def setIsCurrentlyUsingGridTextInputElement(value: () => Boolean): Self = this.set("IsCurrentlyUsingGridTextInputElement", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsCurrentlyUsingGridTextInputElement: Self = this.set("IsCurrentlyUsingGridTextInputElement", js.undefined)
+    @scala.inline
+    def setOnCellMove(value: () => Unit): Self = this.set("OnCellMove", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnCellMove: Self = this.set("OnCellMove", js.undefined)
+    @scala.inline
+    def setOnValueChanged(value: /* newValue */ IValue => Unit): Self = this.set("OnValueChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnValueChanged: Self = this.set("OnValueChanged", js.undefined)
+    @scala.inline
+    def setSetSize(value: (/* width */ Double, /* height */ Double) => Unit): Self = this.set("SetSize", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetSize: Self = this.set("SetSize", js.undefined)
+    @scala.inline
+    def setSetValue(value: /* value */ IValue => Unit): Self = this.set("SetValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetValue: Self = this.set("SetValue", js.undefined)
+    @scala.inline
+    def setSupportedReadMode(value: EditActorReadType): Self = this.set("SupportedReadMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedReadMode: Self = this.set("SupportedReadMode", js.undefined)
+    @scala.inline
+    def setSupportedWriteMode(value: EditActorWriteType): Self = this.set("SupportedWriteMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedWriteMode: Self = this.set("SupportedWriteMode", js.undefined)
+  }
+  
 }
 

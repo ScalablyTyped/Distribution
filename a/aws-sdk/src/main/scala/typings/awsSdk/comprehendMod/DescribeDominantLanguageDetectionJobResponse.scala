@@ -14,10 +14,26 @@ trait DescribeDominantLanguageDetectionJobResponse extends js.Object {
 
 object DescribeDominantLanguageDetectionJobResponse {
   @scala.inline
-  def apply(DominantLanguageDetectionJobProperties: DominantLanguageDetectionJobProperties = null): DescribeDominantLanguageDetectionJobResponse = {
+  def apply(): DescribeDominantLanguageDetectionJobResponse = {
     val __obj = js.Dynamic.literal()
-    if (DominantLanguageDetectionJobProperties != null) __obj.updateDynamic("DominantLanguageDetectionJobProperties")(DominantLanguageDetectionJobProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDominantLanguageDetectionJobResponse]
   }
+  @scala.inline
+  implicit class DescribeDominantLanguageDetectionJobResponseOps[Self <: DescribeDominantLanguageDetectionJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDominantLanguageDetectionJobProperties(value: DominantLanguageDetectionJobProperties): Self = this.set("DominantLanguageDetectionJobProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDominantLanguageDetectionJobProperties: Self = this.set("DominantLanguageDetectionJobProperties", js.undefined)
+  }
+  
 }
 

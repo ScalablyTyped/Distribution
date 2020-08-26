@@ -30,16 +30,34 @@ trait SchemaRunPipelineRequest extends js.Object {
 
 object SchemaRunPipelineRequest {
   @scala.inline
-  def apply(
-    ephemeralPipeline: SchemaPipeline = null,
-    pipelineArgs: SchemaRunPipelineArgs = null,
-    pipelineId: String = null
-  ): SchemaRunPipelineRequest = {
+  def apply(): SchemaRunPipelineRequest = {
     val __obj = js.Dynamic.literal()
-    if (ephemeralPipeline != null) __obj.updateDynamic("ephemeralPipeline")(ephemeralPipeline.asInstanceOf[js.Any])
-    if (pipelineArgs != null) __obj.updateDynamic("pipelineArgs")(pipelineArgs.asInstanceOf[js.Any])
-    if (pipelineId != null) __obj.updateDynamic("pipelineId")(pipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRunPipelineRequest]
   }
+  @scala.inline
+  implicit class SchemaRunPipelineRequestOps[Self <: SchemaRunPipelineRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEphemeralPipeline(value: SchemaPipeline): Self = this.set("ephemeralPipeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEphemeralPipeline: Self = this.set("ephemeralPipeline", js.undefined)
+    @scala.inline
+    def setPipelineArgs(value: SchemaRunPipelineArgs): Self = this.set("pipelineArgs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineArgs: Self = this.set("pipelineArgs", js.undefined)
+    @scala.inline
+    def setPipelineId(value: String): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineId: Self = this.set("pipelineId", js.undefined)
+  }
+  
 }
 

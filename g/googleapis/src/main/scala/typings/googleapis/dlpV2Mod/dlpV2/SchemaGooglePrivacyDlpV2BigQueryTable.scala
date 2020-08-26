@@ -30,12 +30,34 @@ trait SchemaGooglePrivacyDlpV2BigQueryTable extends js.Object {
 
 object SchemaGooglePrivacyDlpV2BigQueryTable {
   @scala.inline
-  def apply(datasetId: String = null, projectId: String = null, tableId: String = null): SchemaGooglePrivacyDlpV2BigQueryTable = {
+  def apply(): SchemaGooglePrivacyDlpV2BigQueryTable = {
     val __obj = js.Dynamic.literal()
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2BigQueryTable]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2BigQueryTableOps[Self <: SchemaGooglePrivacyDlpV2BigQueryTable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatasetId(value: String): Self = this.set("datasetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetId: Self = this.set("datasetId", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableId: Self = this.set("tableId", js.undefined)
+  }
+  
 }
 

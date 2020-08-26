@@ -4,35 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MlGetJobs extends Generic {
-  var allow_no_jobs: js.UndefOr[Boolean] = js.undefined
-  var job_id: js.UndefOr[String] = js.undefined
+  var allow_no_jobs: js.UndefOr[Boolean] = js.native
+  var job_id: js.UndefOr[String] = js.native
 }
 
 object MlGetJobs {
   @scala.inline
-  def apply(
-    allow_no_jobs: js.UndefOr[Boolean] = js.undefined,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    job_id: String = null,
-    method: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null
-  ): MlGetJobs = {
+  def apply(): MlGetJobs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_no_jobs)) __obj.updateDynamic("allow_no_jobs")(allow_no_jobs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (job_id != null) __obj.updateDynamic("job_id")(job_id.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlGetJobs]
   }
+  @scala.inline
+  implicit class MlGetJobsOps[Self <: MlGetJobs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllow_no_jobs(value: Boolean): Self = this.set("allow_no_jobs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllow_no_jobs: Self = this.set("allow_no_jobs", js.undefined)
+    @scala.inline
+    def setJob_id(value: String): Self = this.set("job_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJob_id: Self = this.set("job_id", js.undefined)
+  }
+  
 }
 

@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object parseMod extends js.Object {
   def default(str: String, kb: typings.rdflib.formulaMod.default, base: String): Unit = js.native
+  def default(
+    str: String,
+    kb: typings.rdflib.formulaMod.default,
+    base: String,
+    contentType: js.UndefOr[scala.Nothing],
+    callback: CallbackFunc
+  ): Unit = js.native
   def default(str: String, kb: typings.rdflib.formulaMod.default, base: String, contentType: String): Unit = js.native
   def default(
     str: String,

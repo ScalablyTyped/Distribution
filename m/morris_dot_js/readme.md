@@ -12,7 +12,7 @@ Easy, pretty charts
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 916287 |
+| # downloads        | 936416 |
 | # stars            | 1 |
 
 ## Links

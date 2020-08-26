@@ -76,29 +76,12 @@ object quantitativeScaleMod extends js.Object {
       */
     def domainMin(domainMin: D): this.type = js.native
     /**
-      * Returns the current transformed domain of the scale. This must be a
-      * numerical range in the same coordinate space used for
-      * `scaleTransformation`.
-      */
-    /* CompleteClass */
-    override def getTransformationDomain(): js.Tuple2[Double, Double] = js.native
-    /**
-      * Gets the full extent of the transformation domain.
-      */
-    /* CompleteClass */
-    override def getTransformationExtent(): js.Tuple2[Double, Double] = js.native
-    /**
       * Computes the domain value corresponding to a supplied range value.
       *
       * @param {number} value: A value from the Scale's range.
       * @returns {D} The domain value corresponding to the supplied range value.
       */
     def invert(value: Double): D = js.native
-    /**
-      * Returns value in *Transformation Space* for the provided *screen space*.
-      */
-    /* CompleteClass */
-    override def invertedTransformation(value: Double): Double = js.native
     /**
       * Gets the padding proportion.
       */
@@ -113,31 +96,12 @@ object quantitativeScaleMod extends js.Object {
       */
     def padProportion(padProportion: Double): this.type = js.native
     /**
-      * Translates the scale by a number of pixels.
-      *
-      * @param {number} [translateAmount] The translation amount in screen space
-      */
-    /* CompleteClass */
-    override def pan(translateAmount: Double): Unit = js.native
-    /**
       * Removes the padding exception provider.
       *
       * @param {Scales.PaddingExceptionProvider<D>} provider The provider function.
       * @returns {QuantitativeScale} The calling QuantitativeScale.
       */
     def removePaddingExceptionsProvider(provider: IPaddingExceptionsProvider[D]): this.type = js.native
-    /**
-      * Returns value in *screen space* for the given domain value.
-      */
-    /* CompleteClass */
-    override def scaleTransformation(value: Double): Double = js.native
-    /**
-      * Directly set the transformation domain. Instead of calling `.zoom` or
-      * `.pan` perform calculations relative to the current domain, this can but
-      * used to pan/zoom to an exact domain interval (in transformation space).
-      */
-    /* CompleteClass */
-    override def setTransformationDomain(domain: js.Tuple2[Double, Double]): Unit = js.native
     /**
       * Gets whether or not the scale snaps its domain to nice values.
       */
@@ -157,17 +121,6 @@ object quantitativeScaleMod extends js.Object {
       * @return {QuantitativeScale} The calling QuantitativeScale.
       */
     def tickGenerator(generator: ITickGenerator[D]): this.type = js.native
-    /**
-      * Apply the magnification with the floating point `magnifyAmount` centered
-      * at the `centerValue` coordinate.
-      *
-      * @param {number} [magnifyAmount] The floating point zoom amount. `1.0` is
-      * no zoom change.
-      * @param {number} [centerValue] The coordinate of the mouse in screen
-      * space.
-      */
-    /* CompleteClass */
-    override def zoom(magnifyAmount: Double, centerValue: Double): Unit = js.native
   }
   
   /* static members */

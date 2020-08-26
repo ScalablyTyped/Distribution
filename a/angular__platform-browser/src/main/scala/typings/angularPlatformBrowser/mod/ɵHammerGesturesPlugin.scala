@@ -12,7 +12,7 @@ class ɵHammerGesturesPlugin protected () extends ɵangularPackagesPlatformBrows
   def this(doc: js.Any, _config: HammerGestureConfig, console: ɵConsole, loader: HammerLoader) = this()
   var _config: js.Any = js.native
   var console: js.Any = js.native
-  var loader: js.UndefOr[js.Any] = js.native
+  var loader: js.Any = js.native
   def isCustomEvent(eventName: String): Boolean = js.native
 }
 

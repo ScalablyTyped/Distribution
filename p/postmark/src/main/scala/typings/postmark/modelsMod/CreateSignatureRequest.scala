@@ -10,6 +10,7 @@ class CreateSignatureRequest protected ()
   extends typings.postmark.signatureMod.CreateSignatureRequest {
   def this(name: String, fromEmail: String) = this()
   def this(name: String, fromEmail: String, replyToEmail: String) = this()
+  def this(name: String, fromEmail: String, replyToEmail: js.UndefOr[scala.Nothing], returnPathDomain: String) = this()
   def this(name: String, fromEmail: String, replyToEmail: String, returnPathDomain: String) = this()
 }
 

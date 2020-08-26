@@ -1,54 +1,50 @@
 package typings.semanticUiReact.accordionAccordionMod
 
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactNode
 import typings.semanticUiReact.accordionAccordionAccordionMod.StrictAccordionAccordionProps
-import typings.semanticUiReact.accordionPanelMod.AccordionPanelProps
-import typings.semanticUiReact.accordionTitleMod.AccordionTitleProps
-import typings.semanticUiReact.genericMod.SemanticShorthandCollection
-import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrictAccordionProps extends StrictAccordionAccordionProps {
   /** Format to take up the width of its container. */
-  var fluid: js.UndefOr[Boolean] = js.undefined
+  var fluid: js.UndefOr[Boolean] = js.native
   /** Format for dark backgrounds. */
-  var inverted: js.UndefOr[Boolean] = js.undefined
+  var inverted: js.UndefOr[Boolean] = js.native
   /** Adds some basic styling to accordion panels. */
-  var styled: js.UndefOr[Boolean] = js.undefined
+  var styled: js.UndefOr[Boolean] = js.native
 }
 
 object StrictAccordionProps {
   @scala.inline
-  def apply(
-    activeIndex: Double | js.Array[Double] = null,
-    as: js.Any = null,
-    children: ReactNode = null,
-    className: String = null,
-    defaultActiveIndex: Double | js.Array[Double] = null,
-    exclusive: js.UndefOr[Boolean] = js.undefined,
-    fluid: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    onTitleClick: (/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* data */ AccordionTitleProps) => Unit = null,
-    panels: SemanticShorthandCollection[AccordionPanelProps] = null,
-    styled: js.UndefOr[Boolean] = js.undefined
-  ): StrictAccordionProps = {
+  def apply(): StrictAccordionProps = {
     val __obj = js.Dynamic.literal()
-    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultActiveIndex != null) __obj.updateDynamic("defaultActiveIndex")(defaultActiveIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction2(onTitleClick))
-    if (panels != null) __obj.updateDynamic("panels")(panels.asInstanceOf[js.Any])
-    if (!js.isUndefined(styled)) __obj.updateDynamic("styled")(styled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictAccordionProps]
   }
+  @scala.inline
+  implicit class StrictAccordionPropsOps[Self <: StrictAccordionProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFluid(value: Boolean): Self = this.set("fluid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFluid: Self = this.set("fluid", js.undefined)
+    @scala.inline
+    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("inverted", js.undefined)
+    @scala.inline
+    def setStyled(value: Boolean): Self = this.set("styled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyled: Self = this.set("styled", js.undefined)
+  }
+  
 }
 

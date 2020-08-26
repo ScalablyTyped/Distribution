@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 object serverMod extends js.Object {
   def cleanupApolloState(apolloState: js.Any): Unit = js.native
   def getDataFromTree(rootElement: js.Any): js.Promise[Unit] = js.native
+  def getDataFromTree(rootElement: js.Any, rootContext: js.UndefOr[scala.Nothing], fetchRoot: Boolean): js.Promise[Unit] = js.native
   def getDataFromTree(rootElement: js.Any, rootContext: js.Any): js.Promise[Unit] = js.native
   def getDataFromTree(rootElement: js.Any, rootContext: js.Any, fetchRoot: Boolean): js.Promise[Unit] = js.native
   def renderToStringWithData(component: js.Any): js.Promise[String] = js.native

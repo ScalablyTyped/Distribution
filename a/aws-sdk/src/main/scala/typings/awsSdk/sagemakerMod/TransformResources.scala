@@ -22,14 +22,30 @@ trait TransformResources extends js.Object {
 
 object TransformResources {
   @scala.inline
-  def apply(
-    InstanceCount: TransformInstanceCount,
-    InstanceType: TransformInstanceType,
-    VolumeKmsKeyId: KmsKeyId = null
-  ): TransformResources = {
+  def apply(InstanceCount: TransformInstanceCount, InstanceType: TransformInstanceType): TransformResources = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any])
-    if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformResources]
   }
+  @scala.inline
+  implicit class TransformResourcesOps[Self <: TransformResources] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceCount(value: TransformInstanceCount): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: TransformInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumeKmsKeyId(value: KmsKeyId): Self = this.set("VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeKmsKeyId: Self = this.set("VolumeKmsKeyId", js.undefined)
+  }
+  
 }
 

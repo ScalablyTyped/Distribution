@@ -53,26 +53,54 @@ trait SchemaJobConfiguration extends js.Object {
 
 object SchemaJobConfiguration {
   @scala.inline
-  def apply(
-    copy: SchemaJobConfigurationTableCopy = null,
-    dryRun: js.UndefOr[Boolean] = js.undefined,
-    extract: SchemaJobConfigurationExtract = null,
-    jobTimeoutMs: String = null,
-    jobType: String = null,
-    labels: StringDictionary[String] = null,
-    load: SchemaJobConfigurationLoad = null,
-    query: SchemaJobConfigurationQuery = null
-  ): SchemaJobConfiguration = {
+  def apply(): SchemaJobConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
-    if (extract != null) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])
-    if (jobTimeoutMs != null) __obj.updateDynamic("jobTimeoutMs")(jobTimeoutMs.asInstanceOf[js.Any])
-    if (jobType != null) __obj.updateDynamic("jobType")(jobType.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobConfiguration]
   }
+  @scala.inline
+  implicit class SchemaJobConfigurationOps[Self <: SchemaJobConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCopy(value: SchemaJobConfigurationTableCopy): Self = this.set("copy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopy: Self = this.set("copy", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    @scala.inline
+    def setExtract(value: SchemaJobConfigurationExtract): Self = this.set("extract", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtract: Self = this.set("extract", js.undefined)
+    @scala.inline
+    def setJobTimeoutMs(value: String): Self = this.set("jobTimeoutMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTimeoutMs: Self = this.set("jobTimeoutMs", js.undefined)
+    @scala.inline
+    def setJobType(value: String): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobType: Self = this.set("jobType", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLoad(value: SchemaJobConfigurationLoad): Self = this.set("load", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setQuery(value: SchemaJobConfigurationQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+  }
+  
 }
 

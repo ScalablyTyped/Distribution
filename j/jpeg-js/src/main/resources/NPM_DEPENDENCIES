@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jpeg-js" : "0.3.7"
+      "jpeg-js" : "0.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jpeg-js" : "0.3.7"
+      "jpeg-js" : "0.4.1"
     }
   ],
   "compile-devDependencies" : [

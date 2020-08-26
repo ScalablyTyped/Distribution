@@ -30,17 +30,36 @@ trait OptionStatus extends js.Object {
 
 object OptionStatus {
   @scala.inline
-  def apply(
-    CreationDate: UpdateTimestamp,
-    State: OptionState,
-    UpdateDate: UpdateTimestamp,
-    PendingDeletion: js.UndefOr[Boolean] = js.undefined,
-    UpdateVersion: js.UndefOr[UIntValue] = js.undefined
-  ): OptionStatus = {
+  def apply(CreationDate: UpdateTimestamp, State: OptionState, UpdateDate: UpdateTimestamp): OptionStatus = {
     val __obj = js.Dynamic.literal(CreationDate = CreationDate.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], UpdateDate = UpdateDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(PendingDeletion)) __obj.updateDynamic("PendingDeletion")(PendingDeletion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(UpdateVersion)) __obj.updateDynamic("UpdateVersion")(UpdateVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionStatus]
   }
+  @scala.inline
+  implicit class OptionStatusOps[Self <: OptionStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: UpdateTimestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: OptionState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdateDate(value: UpdateTimestamp): Self = this.set("UpdateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPendingDeletion(value: Boolean): Self = this.set("PendingDeletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingDeletion: Self = this.set("PendingDeletion", js.undefined)
+    @scala.inline
+    def setUpdateVersion(value: UIntValue): Self = this.set("UpdateVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateVersion: Self = this.set("UpdateVersion", js.undefined)
+  }
+  
 }
 

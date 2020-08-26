@@ -19,9 +19,16 @@ trait TestCase
   def resume(segment: js.Function): Unit = js.native
   def setUp(): Unit = js.native
   def tearDown(): Unit = js.native
+  def wait(segment: js.UndefOr[scala.Nothing], delay: Double): Unit = js.native
   def wait(segment: js.Function): Unit = js.native
   def wait(segment: js.Function, delay: Double): Unit = js.native
   def waitFor(condition: js.Function, segment: js.Function): Unit = js.native
+  def waitFor(
+    condition: js.Function,
+    segment: js.Function,
+    timeout: js.UndefOr[scala.Nothing],
+    increment: Double
+  ): Unit = js.native
   def waitFor(condition: js.Function, segment: js.Function, timeout: Double): Unit = js.native
   def waitFor(condition: js.Function, segment: js.Function, timeout: Double, increment: Double): Unit = js.native
 }

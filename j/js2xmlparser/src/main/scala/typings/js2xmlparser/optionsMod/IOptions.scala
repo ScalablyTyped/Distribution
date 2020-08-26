@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IOptions extends js.Object {
   /**
     * If an object or map contains a key that, when converted to a string,
@@ -29,7 +30,7 @@ trait IOptions extends js.Object {
     *
     * The default alias string is `"="`.
     */
-  var aliasString: js.UndefOr[String] = js.undefined
+  var aliasString: js.UndefOr[String] = js.native
   /**
     * If an object or map contains a key that, when converted to a string,
     * begins with the value of `attributeString`, then the value mapped by
@@ -66,7 +67,7 @@ trait IOptions extends js.Object {
     *
     * The default attribute string is `"@"`.
     */
-  var attributeString: js.UndefOr[String] = js.undefined
+  var attributeString: js.UndefOr[String] = js.native
   /**
     * Whether to enclose any text containing the characters `<` or `&`
     * in CDATA sections. If this is false, these characters shall be replaced
@@ -74,7 +75,7 @@ trait IOptions extends js.Object {
     *
     * By default, this is disabled.
     */
-  var cdataInvalidChars: js.UndefOr[Boolean] = js.undefined
+  var cdataInvalidChars: js.UndefOr[Boolean] = js.native
   /**
     * If an object or map contains a key that, when converted to a string, is
     * equal to an item in `cdataKeys`, then the value mapped by said key will
@@ -108,19 +109,19 @@ trait IOptions extends js.Object {
     *
     * By default, this is an empty array.
     */
-  var cdataKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var cdataKeys: js.UndefOr[js.Array[String]] = js.native
   /**
     * The options associated with the XML declaration.
     */
-  var declaration: js.UndefOr[IDeclarationOptions] = js.undefined
+  var declaration: js.UndefOr[IDeclarationOptions] = js.native
   /**
     * The options associated with the XML document type definition.
     */
-  var dtd: js.UndefOr[IDtdOptions] = js.undefined
+  var dtd: js.UndefOr[IDtdOptions] = js.native
   /**
     * The options associated with the formatting of the XML document.
     */
-  var format: js.UndefOr[IFormatOptions] = js.undefined
+  var format: js.UndefOr[IFormatOptions] = js.native
   /**
     * Whether to replace any characters that are not valid in XML in particular
     * contexts with the Unicode replacement character, U+FFFD.
@@ -131,7 +132,7 @@ trait IOptions extends js.Object {
     *
     * By default, this is disabled.
     */
-  var replaceInvalidChars: js.UndefOr[Boolean] = js.undefined
+  var replaceInvalidChars: js.UndefOr[Boolean] = js.native
   /**
     * If a value has a type (as defined by calling `Object.prototype.toString`
     * on the value) equal to a key in `typeHandlers`, then said value will be
@@ -174,7 +175,7 @@ trait IOptions extends js.Object {
     *
     * The default value is an empty object.
     */
-  var typeHandlers: js.UndefOr[ITypeHandlers] = js.undefined
+  var typeHandlers: js.UndefOr[ITypeHandlers] = js.native
   /**
     * Whether to use a self-closing tag for empty elements.
     *
@@ -189,14 +190,14 @@ trait IOptions extends js.Object {
     *
     * By default, this is enabled.
     */
-  var useSelfClosingTagIfEmpty: js.UndefOr[Boolean] = js.undefined
+  var useSelfClosingTagIfEmpty: js.UndefOr[Boolean] = js.native
   /**
     * Whether to throw an exception if basic XML validation fails while
     * building the document.
     *
     * By default, this is enabled.
     */
-  var validation: js.UndefOr[Boolean] = js.undefined
+  var validation: js.UndefOr[Boolean] = js.native
   /**
     * If an object or map contains a key that, when converted to a string,
     * begins with the value of `valueString`, then the value mapped by said key
@@ -221,7 +222,7 @@ trait IOptions extends js.Object {
     *
     * The default value is `"#"`.
     */
-  var valueString: js.UndefOr[String] = js.undefined
+  var valueString: js.UndefOr[String] = js.native
   /**
     * If an object or map contains a key that, when converted to a string, is
     * equal to a key in `wrapHandlers`, and the key in said object or map maps
@@ -277,41 +278,81 @@ trait IOptions extends js.Object {
     *
     * The default value is an empty object.
     */
-  var wrapHandlers: js.UndefOr[IWrapHandlers] = js.undefined
+  var wrapHandlers: js.UndefOr[IWrapHandlers] = js.native
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    aliasString: String = null,
-    attributeString: String = null,
-    cdataInvalidChars: js.UndefOr[Boolean] = js.undefined,
-    cdataKeys: js.Array[String] = null,
-    declaration: IDeclarationOptions = null,
-    dtd: IDtdOptions = null,
-    format: IFormatOptions = null,
-    replaceInvalidChars: js.UndefOr[Boolean] = js.undefined,
-    typeHandlers: ITypeHandlers = null,
-    useSelfClosingTagIfEmpty: js.UndefOr[Boolean] = js.undefined,
-    validation: js.UndefOr[Boolean] = js.undefined,
-    valueString: String = null,
-    wrapHandlers: IWrapHandlers = null
-  ): IOptions = {
+  def apply(): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (aliasString != null) __obj.updateDynamic("aliasString")(aliasString.asInstanceOf[js.Any])
-    if (attributeString != null) __obj.updateDynamic("attributeString")(attributeString.asInstanceOf[js.Any])
-    if (!js.isUndefined(cdataInvalidChars)) __obj.updateDynamic("cdataInvalidChars")(cdataInvalidChars.get.asInstanceOf[js.Any])
-    if (cdataKeys != null) __obj.updateDynamic("cdataKeys")(cdataKeys.asInstanceOf[js.Any])
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
-    if (dtd != null) __obj.updateDynamic("dtd")(dtd.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceInvalidChars)) __obj.updateDynamic("replaceInvalidChars")(replaceInvalidChars.get.asInstanceOf[js.Any])
-    if (typeHandlers != null) __obj.updateDynamic("typeHandlers")(typeHandlers.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSelfClosingTagIfEmpty)) __obj.updateDynamic("useSelfClosingTagIfEmpty")(useSelfClosingTagIfEmpty.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(validation)) __obj.updateDynamic("validation")(validation.get.asInstanceOf[js.Any])
-    if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
-    if (wrapHandlers != null) __obj.updateDynamic("wrapHandlers")(wrapHandlers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasString(value: String): Self = this.set("aliasString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasString: Self = this.set("aliasString", js.undefined)
+    @scala.inline
+    def setAttributeString(value: String): Self = this.set("attributeString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeString: Self = this.set("attributeString", js.undefined)
+    @scala.inline
+    def setCdataInvalidChars(value: Boolean): Self = this.set("cdataInvalidChars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdataInvalidChars: Self = this.set("cdataInvalidChars", js.undefined)
+    @scala.inline
+    def setCdataKeysVarargs(value: String*): Self = this.set("cdataKeys", js.Array(value :_*))
+    @scala.inline
+    def setCdataKeys(value: js.Array[String]): Self = this.set("cdataKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdataKeys: Self = this.set("cdataKeys", js.undefined)
+    @scala.inline
+    def setDeclaration(value: IDeclarationOptions): Self = this.set("declaration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeclaration: Self = this.set("declaration", js.undefined)
+    @scala.inline
+    def setDtd(value: IDtdOptions): Self = this.set("dtd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDtd: Self = this.set("dtd", js.undefined)
+    @scala.inline
+    def setFormat(value: IFormatOptions): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setReplaceInvalidChars(value: Boolean): Self = this.set("replaceInvalidChars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceInvalidChars: Self = this.set("replaceInvalidChars", js.undefined)
+    @scala.inline
+    def setTypeHandlers(value: ITypeHandlers): Self = this.set("typeHandlers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeHandlers: Self = this.set("typeHandlers", js.undefined)
+    @scala.inline
+    def setUseSelfClosingTagIfEmpty(value: Boolean): Self = this.set("useSelfClosingTagIfEmpty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseSelfClosingTagIfEmpty: Self = this.set("useSelfClosingTagIfEmpty", js.undefined)
+    @scala.inline
+    def setValidation(value: Boolean): Self = this.set("validation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidation: Self = this.set("validation", js.undefined)
+    @scala.inline
+    def setValueString(value: String): Self = this.set("valueString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueString: Self = this.set("valueString", js.undefined)
+    @scala.inline
+    def setWrapHandlers(value: IWrapHandlers): Self = this.set("wrapHandlers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapHandlers: Self = this.set("wrapHandlers", js.undefined)
+  }
+  
 }
 

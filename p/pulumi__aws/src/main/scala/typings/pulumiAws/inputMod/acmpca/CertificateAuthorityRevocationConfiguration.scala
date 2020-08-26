@@ -15,10 +15,26 @@ trait CertificateAuthorityRevocationConfiguration extends js.Object {
 
 object CertificateAuthorityRevocationConfiguration {
   @scala.inline
-  def apply(crlConfiguration: Input[CertificateAuthorityRevocationConfigurationCrlConfiguration] = null): CertificateAuthorityRevocationConfiguration = {
+  def apply(): CertificateAuthorityRevocationConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (crlConfiguration != null) __obj.updateDynamic("crlConfiguration")(crlConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthorityRevocationConfiguration]
   }
+  @scala.inline
+  implicit class CertificateAuthorityRevocationConfigurationOps[Self <: CertificateAuthorityRevocationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCrlConfiguration(value: Input[CertificateAuthorityRevocationConfigurationCrlConfiguration]): Self = this.set("crlConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrlConfiguration: Self = this.set("crlConfiguration", js.undefined)
+  }
+  
 }
 

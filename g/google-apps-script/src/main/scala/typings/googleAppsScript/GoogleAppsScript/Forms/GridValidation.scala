@@ -19,5 +19,6 @@ import scala.scalajs.js.annotation._
   *     gridItem.setValidation(gridValidation);
   */
 // tslint:disable-next-line: no-empty-interface
+@js.native
 trait GridValidation extends js.Object
 

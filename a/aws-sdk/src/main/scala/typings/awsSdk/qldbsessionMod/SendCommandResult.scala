@@ -38,24 +38,50 @@ trait SendCommandResult extends js.Object {
 
 object SendCommandResult {
   @scala.inline
-  def apply(
-    AbortTransaction: AbortTransactionResult = null,
-    CommitTransaction: CommitTransactionResult = null,
-    EndSession: EndSessionResult = null,
-    ExecuteStatement: ExecuteStatementResult = null,
-    FetchPage: FetchPageResult = null,
-    StartSession: StartSessionResult = null,
-    StartTransaction: StartTransactionResult = null
-  ): SendCommandResult = {
+  def apply(): SendCommandResult = {
     val __obj = js.Dynamic.literal()
-    if (AbortTransaction != null) __obj.updateDynamic("AbortTransaction")(AbortTransaction.asInstanceOf[js.Any])
-    if (CommitTransaction != null) __obj.updateDynamic("CommitTransaction")(CommitTransaction.asInstanceOf[js.Any])
-    if (EndSession != null) __obj.updateDynamic("EndSession")(EndSession.asInstanceOf[js.Any])
-    if (ExecuteStatement != null) __obj.updateDynamic("ExecuteStatement")(ExecuteStatement.asInstanceOf[js.Any])
-    if (FetchPage != null) __obj.updateDynamic("FetchPage")(FetchPage.asInstanceOf[js.Any])
-    if (StartSession != null) __obj.updateDynamic("StartSession")(StartSession.asInstanceOf[js.Any])
-    if (StartTransaction != null) __obj.updateDynamic("StartTransaction")(StartTransaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendCommandResult]
   }
+  @scala.inline
+  implicit class SendCommandResultOps[Self <: SendCommandResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbortTransaction(value: AbortTransactionResult): Self = this.set("AbortTransaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortTransaction: Self = this.set("AbortTransaction", js.undefined)
+    @scala.inline
+    def setCommitTransaction(value: CommitTransactionResult): Self = this.set("CommitTransaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitTransaction: Self = this.set("CommitTransaction", js.undefined)
+    @scala.inline
+    def setEndSession(value: EndSessionResult): Self = this.set("EndSession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndSession: Self = this.set("EndSession", js.undefined)
+    @scala.inline
+    def setExecuteStatement(value: ExecuteStatementResult): Self = this.set("ExecuteStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecuteStatement: Self = this.set("ExecuteStatement", js.undefined)
+    @scala.inline
+    def setFetchPage(value: FetchPageResult): Self = this.set("FetchPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchPage: Self = this.set("FetchPage", js.undefined)
+    @scala.inline
+    def setStartSession(value: StartSessionResult): Self = this.set("StartSession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartSession: Self = this.set("StartSession", js.undefined)
+    @scala.inline
+    def setStartTransaction(value: StartTransactionResult): Self = this.set("StartTransaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTransaction: Self = this.set("StartTransaction", js.undefined)
+  }
+  
 }
 

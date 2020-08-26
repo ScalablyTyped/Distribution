@@ -23,11 +23,11 @@ import scala.scalajs.js.annotation._
 object urlRouterMod extends js.Object {
   @js.native
   class UrlRouter protected () extends js.Object {
-    /** @hidden */
-    def this(/** @hidden */ router: UIRouter) = this()
+    /** @internal */
+    def this(/** @internal */ router: UIRouter) = this()
     /** @deprecated use [[UrlService.interceptDeferred]]*/
     var interceptDeferred: Boolean = js.native
-    /** @hidden */ var location: js.Any = js.native
+    /** @internal */ var location: js.Any = js.native
     var router: js.Any = js.native
     /** used to create [[UrlRule]] objects for common cases */
     var urlRuleFactory: UrlRuleFactory = js.native
@@ -54,6 +54,7 @@ object urlRouterMod extends js.Object {
       * @returns Returns the fully compiled URL, or `null` if `params` fail validation against `urlMatcher`
       */
     def href(urlMatcher: UrlMatcher): String = js.native
+    def href(urlMatcher: UrlMatcher, params: js.UndefOr[scala.Nothing], options: Absolute): String = js.native
     def href(urlMatcher: UrlMatcher, params: js.Any): String = js.native
     def href(urlMatcher: UrlMatcher, params: js.Any, options: Absolute): String = js.native
     /** @deprecated use [[UrlRules.initial]]*/
@@ -76,12 +77,13 @@ object urlRouterMod extends js.Object {
       *
       * Pushes a new location to the browser history.
       *
-      * @internalapi
+      * @internal
       * @param urlMatcher
       * @param params
       * @param options
       */
     def push(urlMatcher: UrlMatcher): Unit = js.native
+    def push(urlMatcher: UrlMatcher, params: js.UndefOr[scala.Nothing], options: Replace): Unit = js.native
     def push(urlMatcher: UrlMatcher, params: RawParams): Unit = js.native
     def push(urlMatcher: UrlMatcher, params: RawParams, options: Replace): Unit = js.native
     /** @deprecated use [[UrlRules.removeRule]]*/
@@ -96,17 +98,14 @@ object urlRouterMod extends js.Object {
     /** @deprecated use [[UrlService.sync]]*/
     def sync(): Unit = js.native
     def sync(evt: js.Any): Unit = js.native
-    /**
-      * Internal API.
-      * @internalapi
-      */
+    /** Internal API. */
     def update(): Unit = js.native
     def update(read: Boolean): Unit = js.native
-    /** @deprecated use [[UrlRules.when]]*/
     def when(matcher: String, handler: String): UrlRule = js.native
     def when(matcher: String, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: String, handler: UrlRuleHandlerFn): UrlRule = js.native
     def when(matcher: String, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
+    /** @deprecated use [[UrlRules.when]]*/
     def when(matcher: RegExp, handler: String): UrlRule = js.native
     def when(matcher: RegExp, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: RegExp, handler: UrlRuleHandlerFn): UrlRule = js.native

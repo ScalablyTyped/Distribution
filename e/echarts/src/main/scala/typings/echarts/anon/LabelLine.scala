@@ -4,29 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LabelLine extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.label
     */
-  var label: js.UndefOr[FontStyle] = js.undefined
+  var label: js.UndefOr[FontStyle] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.emphasis.labelLine
     */
-  var labelLine: js.UndefOr[Length] = js.undefined
+  var labelLine: js.UndefOr[Length] = js.native
 }
 
 object LabelLine {
   @scala.inline
-  def apply(itemStyle: BorderType = null, label: FontStyle = null, labelLine: Length = null): LabelLine = {
+  def apply(): LabelLine = {
     val __obj = js.Dynamic.literal()
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelLine != null) __obj.updateDynamic("labelLine")(labelLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelLine]
   }
+  @scala.inline
+  implicit class LabelLineOps[Self <: LabelLine] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: FontStyle): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelLine(value: Length): Self = this.set("labelLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelLine: Self = this.set("labelLine", js.undefined)
+  }
+  
 }
 

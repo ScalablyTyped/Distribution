@@ -18,11 +18,30 @@ trait MaintenanceWindowAutomationParameters extends js.Object {
 
 object MaintenanceWindowAutomationParameters {
   @scala.inline
-  def apply(DocumentVersion: DocumentVersion = null, Parameters: AutomationParameterMap = null): MaintenanceWindowAutomationParameters = {
+  def apply(): MaintenanceWindowAutomationParameters = {
     val __obj = js.Dynamic.literal()
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowAutomationParameters]
   }
+  @scala.inline
+  implicit class MaintenanceWindowAutomationParametersOps[Self <: MaintenanceWindowAutomationParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setParameters(value: AutomationParameterMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+  }
+  
 }
 

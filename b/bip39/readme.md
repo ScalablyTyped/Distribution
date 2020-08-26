@@ -10,9 +10,9 @@ Bitcoin BIP39: Mnemonic code for generating deterministic keys
 | ------------------ | :-------------: |
 | Full name          | bip39 |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 578 |
-| # downloads        | 2393584 |
+| # releases         | 5 |
+| # dependents       | 593 |
+| # downloads        | 2488368 |
 | # stars            | 5 |
 
 ## Links

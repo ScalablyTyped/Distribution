@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CropHintsParams extends js.Object {
   /**
     * Aspect ratios in floats, representing the ratio of the width to the height
@@ -13,15 +14,33 @@ trait CropHintsParams extends js.Object {
     * limited to a maximum of 16; any aspect ratios provided after the 16th are
     * ignored.
     */
-  var aspectRatios: js.UndefOr[js.Array[Double]] = js.undefined
+  var aspectRatios: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object CropHintsParams {
   @scala.inline
-  def apply(aspectRatios: js.Array[Double] = null): CropHintsParams = {
+  def apply(): CropHintsParams = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatios != null) __obj.updateDynamic("aspectRatios")(aspectRatios.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropHintsParams]
   }
+  @scala.inline
+  implicit class CropHintsParamsOps[Self <: CropHintsParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspectRatiosVarargs(value: Double*): Self = this.set("aspectRatios", js.Array(value :_*))
+    @scala.inline
+    def setAspectRatios(value: js.Array[Double]): Self = this.set("aspectRatios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectRatios: Self = this.set("aspectRatios", js.undefined)
+  }
+  
 }
 

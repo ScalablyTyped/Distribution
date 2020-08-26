@@ -54,32 +54,68 @@ trait StackInstance extends js.Object {
 
 object StackInstance {
   @scala.inline
-  def apply(
-    Account: Account = null,
-    DriftStatus: StackDriftStatus = null,
-    LastDriftCheckTimestamp: Timestamp = null,
-    OrganizationalUnitId: OrganizationalUnitId = null,
-    ParameterOverrides: Parameters = null,
-    Region: Region = null,
-    StackId: StackId = null,
-    StackInstanceStatus: StackInstanceComprehensiveStatus = null,
-    StackSetId: StackSetId = null,
-    Status: StackInstanceStatus = null,
-    StatusReason: Reason = null
-  ): StackInstance = {
+  def apply(): StackInstance = {
     val __obj = js.Dynamic.literal()
-    if (Account != null) __obj.updateDynamic("Account")(Account.asInstanceOf[js.Any])
-    if (DriftStatus != null) __obj.updateDynamic("DriftStatus")(DriftStatus.asInstanceOf[js.Any])
-    if (LastDriftCheckTimestamp != null) __obj.updateDynamic("LastDriftCheckTimestamp")(LastDriftCheckTimestamp.asInstanceOf[js.Any])
-    if (OrganizationalUnitId != null) __obj.updateDynamic("OrganizationalUnitId")(OrganizationalUnitId.asInstanceOf[js.Any])
-    if (ParameterOverrides != null) __obj.updateDynamic("ParameterOverrides")(ParameterOverrides.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (StackInstanceStatus != null) __obj.updateDynamic("StackInstanceStatus")(StackInstanceStatus.asInstanceOf[js.Any])
-    if (StackSetId != null) __obj.updateDynamic("StackSetId")(StackSetId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackInstance]
   }
+  @scala.inline
+  implicit class StackInstanceOps[Self <: StackInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccount(value: Account): Self = this.set("Account", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccount: Self = this.set("Account", js.undefined)
+    @scala.inline
+    def setDriftStatus(value: StackDriftStatus): Self = this.set("DriftStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriftStatus: Self = this.set("DriftStatus", js.undefined)
+    @scala.inline
+    def setLastDriftCheckTimestamp(value: Timestamp): Self = this.set("LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastDriftCheckTimestamp: Self = this.set("LastDriftCheckTimestamp", js.undefined)
+    @scala.inline
+    def setOrganizationalUnitId(value: OrganizationalUnitId): Self = this.set("OrganizationalUnitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationalUnitId: Self = this.set("OrganizationalUnitId", js.undefined)
+    @scala.inline
+    def setParameterOverridesVarargs(value: Parameter*): Self = this.set("ParameterOverrides", js.Array(value :_*))
+    @scala.inline
+    def setParameterOverrides(value: Parameters): Self = this.set("ParameterOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterOverrides: Self = this.set("ParameterOverrides", js.undefined)
+    @scala.inline
+    def setRegion(value: Region): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setStackId(value: StackId): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setStackInstanceStatus(value: StackInstanceComprehensiveStatus): Self = this.set("StackInstanceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackInstanceStatus: Self = this.set("StackInstanceStatus", js.undefined)
+    @scala.inline
+    def setStackSetId(value: StackSetId): Self = this.set("StackSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetId: Self = this.set("StackSetId", js.undefined)
+    @scala.inline
+    def setStatus(value: StackInstanceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: Reason): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+  }
+  
 }
 

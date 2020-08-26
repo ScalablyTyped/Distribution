@@ -4,55 +4,100 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SliderOverrides extends js.Object {
   var InnerThumb: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var InnerTrack: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var Root: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var Thumb: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var ThumbValue: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var Tick: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var TickBar: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var Track: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-  ] = js.undefined
+  ] = js.native
 }
 
 object SliderOverrides {
   @scala.inline
-  def apply(
-    InnerThumb: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any = null,
-    InnerTrack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any = null,
-    Root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any = null,
-    Thumb: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any = null,
-    ThumbValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any = null,
-    Tick: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any = null,
-    TickBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any = null,
-    Track: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any = null
-  ): SliderOverrides = {
+  def apply(): SliderOverrides = {
     val __obj = js.Dynamic.literal()
-    if (InnerThumb != null) __obj.updateDynamic("InnerThumb")(InnerThumb.asInstanceOf[js.Any])
-    if (InnerTrack != null) __obj.updateDynamic("InnerTrack")(InnerTrack.asInstanceOf[js.Any])
-    if (Root != null) __obj.updateDynamic("Root")(Root.asInstanceOf[js.Any])
-    if (Thumb != null) __obj.updateDynamic("Thumb")(Thumb.asInstanceOf[js.Any])
-    if (ThumbValue != null) __obj.updateDynamic("ThumbValue")(ThumbValue.asInstanceOf[js.Any])
-    if (Tick != null) __obj.updateDynamic("Tick")(Tick.asInstanceOf[js.Any])
-    if (TickBar != null) __obj.updateDynamic("TickBar")(TickBar.asInstanceOf[js.Any])
-    if (Track != null) __obj.updateDynamic("Track")(Track.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOverrides]
   }
+  @scala.inline
+  implicit class SliderOverridesOps[Self <: SliderOverrides] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInnerThumb(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
+    ): Self = this.set("InnerThumb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerThumb: Self = this.set("InnerThumb", js.undefined)
+    @scala.inline
+    def setInnerTrack(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
+    ): Self = this.set("InnerTrack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerTrack: Self = this.set("InnerTrack", js.undefined)
+    @scala.inline
+    def setRoot(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
+    ): Self = this.set("Root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("Root", js.undefined)
+    @scala.inline
+    def setThumb(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
+    ): Self = this.set("Thumb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumb: Self = this.set("Thumb", js.undefined)
+    @scala.inline
+    def setThumbValue(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
+    ): Self = this.set("ThumbValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbValue: Self = this.set("ThumbValue", js.undefined)
+    @scala.inline
+    def setTick(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
+    ): Self = this.set("Tick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTick: Self = this.set("Tick", js.undefined)
+    @scala.inline
+    def setTickBar(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
+    ): Self = this.set("TickBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickBar: Self = this.set("TickBar", js.undefined)
+    @scala.inline
+    def setTrack(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
+    ): Self = this.set("Track", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrack: Self = this.set("Track", js.undefined)
+  }
+  
 }
 

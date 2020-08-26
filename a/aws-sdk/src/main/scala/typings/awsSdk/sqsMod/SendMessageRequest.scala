@@ -38,22 +38,46 @@ trait SendMessageRequest extends js.Object {
 
 object SendMessageRequest {
   @scala.inline
-  def apply(
-    MessageBody: String,
-    QueueUrl: String,
-    DelaySeconds: js.UndefOr[Integer] = js.undefined,
-    MessageAttributes: MessageBodyAttributeMap = null,
-    MessageDeduplicationId: String = null,
-    MessageGroupId: String = null,
-    MessageSystemAttributes: MessageBodySystemAttributeMap = null
-  ): SendMessageRequest = {
+  def apply(MessageBody: String, QueueUrl: String): SendMessageRequest = {
     val __obj = js.Dynamic.literal(MessageBody = MessageBody.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(DelaySeconds)) __obj.updateDynamic("DelaySeconds")(DelaySeconds.get.asInstanceOf[js.Any])
-    if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes.asInstanceOf[js.Any])
-    if (MessageDeduplicationId != null) __obj.updateDynamic("MessageDeduplicationId")(MessageDeduplicationId.asInstanceOf[js.Any])
-    if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId.asInstanceOf[js.Any])
-    if (MessageSystemAttributes != null) __obj.updateDynamic("MessageSystemAttributes")(MessageSystemAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMessageRequest]
   }
+  @scala.inline
+  implicit class SendMessageRequestOps[Self <: SendMessageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessageBody(value: String): Self = this.set("MessageBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQueueUrl(value: String): Self = this.set("QueueUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelaySeconds(value: Integer): Self = this.set("DelaySeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelaySeconds: Self = this.set("DelaySeconds", js.undefined)
+    @scala.inline
+    def setMessageAttributes(value: MessageBodyAttributeMap): Self = this.set("MessageAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageAttributes: Self = this.set("MessageAttributes", js.undefined)
+    @scala.inline
+    def setMessageDeduplicationId(value: String): Self = this.set("MessageDeduplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageDeduplicationId: Self = this.set("MessageDeduplicationId", js.undefined)
+    @scala.inline
+    def setMessageGroupId(value: String): Self = this.set("MessageGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageGroupId: Self = this.set("MessageGroupId", js.undefined)
+    @scala.inline
+    def setMessageSystemAttributes(value: MessageBodySystemAttributeMap): Self = this.set("MessageSystemAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageSystemAttributes: Self = this.set("MessageSystemAttributes", js.undefined)
+  }
+  
 }
 

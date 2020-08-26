@@ -18,11 +18,30 @@ trait Schedule extends js.Object {
 
 object Schedule {
   @scala.inline
-  def apply(ScheduleExpression: CronExpression = null, State: ScheduleState = null): Schedule = {
+  def apply(): Schedule = {
     val __obj = js.Dynamic.literal()
-    if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]
   }
+  @scala.inline
+  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScheduleExpression(value: CronExpression): Self = this.set("ScheduleExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleExpression: Self = this.set("ScheduleExpression", js.undefined)
+    @scala.inline
+    def setState(value: ScheduleState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

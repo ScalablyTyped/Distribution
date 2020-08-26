@@ -26,16 +26,16 @@ class BasicReportColumn protected () extends Element {
   @JSName("model")
   var model_FBasicReportColumn: IModel = js.native
   def alignment: AlignmentEnum = js.native
-  def alignment(newValue: AlignmentEnum): js.Any = js.native
+  def alignment_=(newValue: AlignmentEnum): Unit = js.native
   def caption: Text = js.native
-  def caption(newValue: Text): js.Any = js.native
+  def caption_=(newValue: Text): Unit = js.native
   def containerAsBasicReport: BasicReport = js.native
   def dataSetColumnName: String = js.native
-  def dataSetColumnName(newValue: String): js.Any = js.native
+  def dataSetColumnName_=(newValue: String): Unit = js.native
   def format: ColumnFormat = js.native
-  def format(newValue: ColumnFormat): js.Any = js.native
+  def format_=(newValue: ColumnFormat): Unit = js.native
   def width: Double = js.native
-  def width(newValue: Double): js.Any = js.native
+  def width_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

@@ -18,11 +18,30 @@ trait GetConnectionStatusResponse extends js.Object {
 
 object GetConnectionStatusResponse {
   @scala.inline
-  def apply(Status: ConnectionStatus = null, Target: SessionTarget = null): GetConnectionStatusResponse = {
+  def apply(): GetConnectionStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Target != null) __obj.updateDynamic("Target")(Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectionStatusResponse]
   }
+  @scala.inline
+  implicit class GetConnectionStatusResponseOps[Self <: GetConnectionStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: ConnectionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTarget(value: SessionTarget): Self = this.set("Target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("Target", js.undefined)
+  }
+  
 }
 

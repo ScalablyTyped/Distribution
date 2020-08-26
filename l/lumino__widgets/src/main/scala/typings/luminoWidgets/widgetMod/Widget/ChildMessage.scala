@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * A message class for child related messages.
   */
-@JSImport("@lumino/widgets/lib/widget", "Widget.ChildMessage")
+@JSImport("@lumino/widgets/types/widget", "Widget.ChildMessage")
 @js.native
 class ChildMessage protected () extends Message {
   /**

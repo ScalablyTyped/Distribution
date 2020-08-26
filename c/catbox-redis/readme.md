@@ -12,7 +12,7 @@ Redis adapter for catbox
 | Keywords           | cache, catbox, redis |
 | # releases         | 7 |
 | # dependents       | 19 |
-| # downloads        | 309802 |
+| # downloads        | 305667 |
 | # stars            | 3 |
 
 ## Links

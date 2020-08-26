@@ -23,16 +23,34 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe {
   @scala.inline
-  def apply(
-    caseInsensitive: js.UndefOr[Boolean] = js.undefined,
-    columnToJsonKeyMappings: StringDictionary[String] = null,
-    convertDotsInJsonKeysToUnderscores: js.UndefOr[Boolean] = js.undefined
-  ): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe = {
+  def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseInsensitive)) __obj.updateDynamic("caseInsensitive")(caseInsensitive.get.asInstanceOf[js.Any])
-    if (columnToJsonKeyMappings != null) __obj.updateDynamic("columnToJsonKeyMappings")(columnToJsonKeyMappings.asInstanceOf[js.Any])
-    if (!js.isUndefined(convertDotsInJsonKeysToUnderscores)) __obj.updateDynamic("convertDotsInJsonKeysToUnderscores")(convertDotsInJsonKeysToUnderscores.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOps[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseInsensitive(value: Boolean): Self = this.set("caseInsensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseInsensitive: Self = this.set("caseInsensitive", js.undefined)
+    @scala.inline
+    def setColumnToJsonKeyMappings(value: StringDictionary[String]): Self = this.set("columnToJsonKeyMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnToJsonKeyMappings: Self = this.set("columnToJsonKeyMappings", js.undefined)
+    @scala.inline
+    def setConvertDotsInJsonKeysToUnderscores(value: Boolean): Self = this.set("convertDotsInJsonKeysToUnderscores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertDotsInJsonKeysToUnderscores: Self = this.set("convertDotsInJsonKeysToUnderscores", js.undefined)
+  }
+  
 }
 

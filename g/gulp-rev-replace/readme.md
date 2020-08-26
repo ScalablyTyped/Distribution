@@ -12,7 +12,7 @@ Rewrite occurences of filenames which have been renamed by gulp-rev
 | Keywords           | gulpplugin, rev, revision, version, replace, asset |
 | # releases         | 2 |
 | # dependents       | 144 |
-| # downloads        | 2098268 |
+| # downloads        | 2076303 |
 | # stars            | 49 |
 
 ## Links

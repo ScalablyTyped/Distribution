@@ -16,54 +16,75 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterHealthParams extends GenericParams {
-  var index: js.UndefOr[NameList] = js.undefined
-  var level: js.UndefOr[cluster | indices | shards] = js.undefined
-  var local: js.UndefOr[Boolean] = js.undefined
-  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
-  var waitForActiveShards: js.UndefOr[String] = js.undefined
-  var waitForEvents: js.UndefOr[immediate | urgent | high | normal | low | languid] = js.undefined
-  var waitForNodes: js.UndefOr[String] = js.undefined
-  var waitForRelocatingShards: js.UndefOr[Boolean] = js.undefined
-  var waitForStatus: js.UndefOr[green | yellow | red] = js.undefined
+  var index: js.UndefOr[NameList] = js.native
+  var level: js.UndefOr[cluster | indices | shards] = js.native
+  var local: js.UndefOr[Boolean] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var waitForActiveShards: js.UndefOr[String] = js.native
+  var waitForEvents: js.UndefOr[immediate | urgent | high | normal | low | languid] = js.native
+  var waitForNodes: js.UndefOr[String] = js.native
+  var waitForRelocatingShards: js.UndefOr[Boolean] = js.native
+  var waitForStatus: js.UndefOr[green | yellow | red] = js.native
 }
 
 object ClusterHealthParams {
   @scala.inline
-  def apply(
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    index: NameList = null,
-    level: cluster | indices | shards = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: TimeSpan = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    waitForActiveShards: String = null,
-    waitForEvents: immediate | urgent | high | normal | low | languid = null,
-    waitForNodes: String = null,
-    waitForRelocatingShards: js.UndefOr[Boolean] = js.undefined,
-    waitForStatus: green | yellow | red = null
-  ): ClusterHealthParams = {
+  def apply(): ClusterHealthParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.get.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (waitForActiveShards != null) __obj.updateDynamic("waitForActiveShards")(waitForActiveShards.asInstanceOf[js.Any])
-    if (waitForEvents != null) __obj.updateDynamic("waitForEvents")(waitForEvents.asInstanceOf[js.Any])
-    if (waitForNodes != null) __obj.updateDynamic("waitForNodes")(waitForNodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForRelocatingShards)) __obj.updateDynamic("waitForRelocatingShards")(waitForRelocatingShards.get.asInstanceOf[js.Any])
-    if (waitForStatus != null) __obj.updateDynamic("waitForStatus")(waitForStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterHealthParams]
   }
+  @scala.inline
+  implicit class ClusterHealthParamsOps[Self <: ClusterHealthParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setLevel(value: cluster | indices | shards): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setLocal(value: Boolean): Self = this.set("local", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocal: Self = this.set("local", js.undefined)
+    @scala.inline
+    def setMasterTimeout(value: TimeSpan): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
+    @scala.inline
+    def setWaitForActiveShards(value: String): Self = this.set("waitForActiveShards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForActiveShards: Self = this.set("waitForActiveShards", js.undefined)
+    @scala.inline
+    def setWaitForEvents(value: immediate | urgent | high | normal | low | languid): Self = this.set("waitForEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForEvents: Self = this.set("waitForEvents", js.undefined)
+    @scala.inline
+    def setWaitForNodes(value: String): Self = this.set("waitForNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForNodes: Self = this.set("waitForNodes", js.undefined)
+    @scala.inline
+    def setWaitForRelocatingShards(value: Boolean): Self = this.set("waitForRelocatingShards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForRelocatingShards: Self = this.set("waitForRelocatingShards", js.undefined)
+    @scala.inline
+    def setWaitForStatus(value: green | yellow | red): Self = this.set("waitForStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForStatus: Self = this.set("waitForStatus", js.undefined)
+  }
+  
 }
 

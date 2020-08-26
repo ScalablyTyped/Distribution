@@ -9,7 +9,19 @@ import scala.scalajs.js.annotation._
 class Triangle ()
   extends typings.three.triangleMod.Triangle {
   def this(a: typings.three.vector3Mod.Vector3) = this()
+  def this(a: js.UndefOr[scala.Nothing], b: typings.three.vector3Mod.Vector3) = this()
   def this(a: typings.three.vector3Mod.Vector3, b: typings.three.vector3Mod.Vector3) = this()
+  def this(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], c: typings.three.vector3Mod.Vector3) = this()
+  def this(
+    a: js.UndefOr[scala.Nothing],
+    b: typings.three.vector3Mod.Vector3,
+    c: typings.three.vector3Mod.Vector3
+  ) = this()
+  def this(
+    a: typings.three.vector3Mod.Vector3,
+    b: js.UndefOr[scala.Nothing],
+    c: typings.three.vector3Mod.Vector3
+  ) = this()
   def this(
     a: typings.three.vector3Mod.Vector3,
     b: typings.three.vector3Mod.Vector3,

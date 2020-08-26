@@ -46,27 +46,56 @@ trait CreateDeploymentRequest extends js.Object {
 
 object CreateDeploymentRequest {
   @scala.inline
-  def apply(
-    restApiId: String,
-    cacheClusterEnabled: js.UndefOr[NullableBoolean] = js.undefined,
-    cacheClusterSize: CacheClusterSize = null,
-    canarySettings: DeploymentCanarySettings = null,
-    description: String = null,
-    stageDescription: String = null,
-    stageName: String = null,
-    tracingEnabled: js.UndefOr[NullableBoolean] = js.undefined,
-    variables: MapOfStringToString = null
-  ): CreateDeploymentRequest = {
+  def apply(restApiId: String): CreateDeploymentRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheClusterEnabled)) __obj.updateDynamic("cacheClusterEnabled")(cacheClusterEnabled.get.asInstanceOf[js.Any])
-    if (cacheClusterSize != null) __obj.updateDynamic("cacheClusterSize")(cacheClusterSize.asInstanceOf[js.Any])
-    if (canarySettings != null) __obj.updateDynamic("canarySettings")(canarySettings.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (stageDescription != null) __obj.updateDynamic("stageDescription")(stageDescription.asInstanceOf[js.Any])
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracingEnabled)) __obj.updateDynamic("tracingEnabled")(tracingEnabled.get.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentRequest]
   }
+  @scala.inline
+  implicit class CreateDeploymentRequestOps[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCacheClusterEnabled(value: NullableBoolean): Self = this.set("cacheClusterEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterEnabled: Self = this.set("cacheClusterEnabled", js.undefined)
+    @scala.inline
+    def setCacheClusterSize(value: CacheClusterSize): Self = this.set("cacheClusterSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterSize: Self = this.set("cacheClusterSize", js.undefined)
+    @scala.inline
+    def setCanarySettings(value: DeploymentCanarySettings): Self = this.set("canarySettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanarySettings: Self = this.set("canarySettings", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setStageDescription(value: String): Self = this.set("stageDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageDescription: Self = this.set("stageDescription", js.undefined)
+    @scala.inline
+    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("stageName", js.undefined)
+    @scala.inline
+    def setTracingEnabled(value: NullableBoolean): Self = this.set("tracingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracingEnabled: Self = this.set("tracingEnabled", js.undefined)
+    @scala.inline
+    def setVariables(value: MapOfStringToString): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("variables", js.undefined)
+  }
+  
 }
 

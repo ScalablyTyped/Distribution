@@ -16,15 +16,9 @@ object _KeySequence {
   def ExtendedKeyMapOptions(
     action: KeyEventName,
     sequence: MouseTrapKeySequence,
-    sequences: js.Array[KeyMapOptions | MouseTrapKeySequence],
-    description: String = null,
-    group: String = null,
-    name: String = null
+    sequences: js.Array[KeyMapOptions | MouseTrapKeySequence]
   ): _KeySequence = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], sequences = sequences.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[_KeySequence]
   }
 }

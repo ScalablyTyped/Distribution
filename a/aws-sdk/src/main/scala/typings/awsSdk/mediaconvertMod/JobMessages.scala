@@ -18,11 +18,34 @@ trait JobMessages extends js.Object {
 
 object JobMessages {
   @scala.inline
-  def apply(Info: listOfString = null, Warning: listOfString = null): JobMessages = {
+  def apply(): JobMessages = {
     val __obj = js.Dynamic.literal()
-    if (Info != null) __obj.updateDynamic("Info")(Info.asInstanceOf[js.Any])
-    if (Warning != null) __obj.updateDynamic("Warning")(Warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobMessages]
   }
+  @scala.inline
+  implicit class JobMessagesOps[Self <: JobMessages] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInfoVarargs(value: string*): Self = this.set("Info", js.Array(value :_*))
+    @scala.inline
+    def setInfo(value: listOfString): Self = this.set("Info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfo: Self = this.set("Info", js.undefined)
+    @scala.inline
+    def setWarningVarargs(value: string*): Self = this.set("Warning", js.Array(value :_*))
+    @scala.inline
+    def setWarning(value: listOfString): Self = this.set("Warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("Warning", js.undefined)
+  }
+  
 }
 

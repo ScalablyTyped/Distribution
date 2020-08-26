@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "utility-types" : "2.1.0"
+      "utility-types" : "3.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "utility-types" : "2.1.0"
+      "utility-types" : "3.10.0"
     }
   ],
   "compile-devDependencies" : [

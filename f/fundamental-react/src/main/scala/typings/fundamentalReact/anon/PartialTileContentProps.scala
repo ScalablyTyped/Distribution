@@ -10,30 +10,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Tile/Tile.TileContentProps> */
+@js.native
 trait PartialTileContentProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var headingLevel: js.UndefOr[`2` | `3` | `4` | `5` | `6`] = js.undefined
-  var productTile: js.UndefOr[Boolean] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var titleProps: js.UndefOr[js.Any] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var headingLevel: js.UndefOr[`2` | `3` | `4` | `5` | `6`] = js.native
+  var productTile: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[String] = js.native
+  var titleProps: js.UndefOr[js.Any] = js.native
 }
 
 object PartialTileContentProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    headingLevel: `2` | `3` | `4` | `5` | `6` = null,
-    productTile: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    titleProps: js.Any = null
-  ): PartialTileContentProps = {
+  def apply(): PartialTileContentProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (headingLevel != null) __obj.updateDynamic("headingLevel")(headingLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(productTile)) __obj.updateDynamic("productTile")(productTile.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTileContentProps]
   }
+  @scala.inline
+  implicit class PartialTileContentPropsOps[Self <: PartialTileContentProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setHeadingLevel(value: `2` | `3` | `4` | `5` | `6`): Self = this.set("headingLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadingLevel: Self = this.set("headingLevel", js.undefined)
+    @scala.inline
+    def setProductTile(value: Boolean): Self = this.set("productTile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductTile: Self = this.set("productTile", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleProps(value: js.Any): Self = this.set("titleProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleProps: Self = this.set("titleProps", js.undefined)
+  }
+  
 }
 

@@ -33,10 +33,18 @@ object window extends js.Object {
   def createOutputChannel(name: String): OutputChannel = js.native
   def createQuickPick[T /* <: QuickPickItem */](): QuickPick[T] = js.native
   def createStatusBarItem(): StatusBarItem = js.native
+  def createStatusBarItem(alignment: js.UndefOr[scala.Nothing], priority: Double): StatusBarItem = js.native
   def createStatusBarItem(alignment: StatusBarAlignment): StatusBarItem = js.native
   def createStatusBarItem(alignment: StatusBarAlignment, priority: Double): StatusBarItem = js.native
   def createTerminal(): Terminal = js.native
+  def createTerminal(name: js.UndefOr[scala.Nothing], shellPath: js.UndefOr[scala.Nothing], shellArgs: String): Terminal = js.native
+  def createTerminal(name: js.UndefOr[scala.Nothing], shellPath: js.UndefOr[scala.Nothing], shellArgs: js.Array[String]): Terminal = js.native
+  def createTerminal(name: js.UndefOr[scala.Nothing], shellPath: String): Terminal = js.native
+  def createTerminal(name: js.UndefOr[scala.Nothing], shellPath: String, shellArgs: String): Terminal = js.native
+  def createTerminal(name: js.UndefOr[scala.Nothing], shellPath: String, shellArgs: js.Array[String]): Terminal = js.native
   def createTerminal(name: String): Terminal = js.native
+  def createTerminal(name: String, shellPath: js.UndefOr[scala.Nothing], shellArgs: String): Terminal = js.native
+  def createTerminal(name: String, shellPath: js.UndefOr[scala.Nothing], shellArgs: js.Array[String]): Terminal = js.native
   def createTerminal(name: String, shellPath: String): Terminal = js.native
   def createTerminal(name: String, shellPath: String, shellArgs: String): Terminal = js.native
   def createTerminal(name: String, shellPath: String, shellArgs: js.Array[String]): Terminal = js.native
@@ -91,21 +99,26 @@ object window extends js.Object {
   @JSName("showInformationMessage")
   def showInformationMessage_T_MessageItem[T /* <: MessageItem */](message: String, options: MessageOptions, items: T*): Thenable[js.UndefOr[T]] = js.native
   def showInputBox(): Thenable[js.UndefOr[String]] = js.native
+  def showInputBox(options: js.UndefOr[scala.Nothing], token: CancellationToken): Thenable[js.UndefOr[String]] = js.native
   def showInputBox(options: InputBoxOptions): Thenable[js.UndefOr[String]] = js.native
   def showInputBox(options: InputBoxOptions, token: CancellationToken): Thenable[js.UndefOr[String]] = js.native
   def showOpenDialog(options: OpenDialogOptions): Thenable[js.UndefOr[js.Array[Uri]]] = js.native
   def showQuickPick(items: js.Array[String]): Thenable[js.UndefOr[String]] = js.native
+  def showQuickPick(items: js.Array[String], options: js.UndefOr[scala.Nothing], token: CancellationToken): Thenable[js.UndefOr[String]] = js.native
   def showQuickPick(items: js.Array[String], options: QuickPickOptionscanPickMa): Thenable[js.UndefOr[js.Array[String]]] = js.native
   def showQuickPick(items: js.Array[String], options: QuickPickOptionscanPickMa, token: CancellationToken): Thenable[js.UndefOr[js.Array[String]]] = js.native
   def showQuickPick(items: js.Array[String], options: QuickPickOptions): Thenable[js.UndefOr[String]] = js.native
   def showQuickPick(items: js.Array[String], options: QuickPickOptions, token: CancellationToken): Thenable[js.UndefOr[String]] = js.native
   def showQuickPick(items: Thenable[js.Array[String]]): Thenable[js.UndefOr[String]] = js.native
+  def showQuickPick(items: Thenable[js.Array[String]], options: js.UndefOr[scala.Nothing], token: CancellationToken): Thenable[js.UndefOr[String]] = js.native
   def showQuickPick(items: Thenable[js.Array[String]], options: QuickPickOptionscanPickMa): Thenable[js.UndefOr[js.Array[String]]] = js.native
   def showQuickPick(items: Thenable[js.Array[String]], options: QuickPickOptionscanPickMa, token: CancellationToken): Thenable[js.UndefOr[js.Array[String]]] = js.native
   def showQuickPick(items: Thenable[js.Array[String]], options: QuickPickOptions): Thenable[js.UndefOr[String]] = js.native
   def showQuickPick(items: Thenable[js.Array[String]], options: QuickPickOptions, token: CancellationToken): Thenable[js.UndefOr[String]] = js.native
   @JSName("showQuickPick")
   def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: js.Array[T]): Thenable[js.UndefOr[T]] = js.native
+  @JSName("showQuickPick")
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: js.Array[T], options: js.UndefOr[scala.Nothing], token: CancellationToken): Thenable[js.UndefOr[T]] = js.native
   @JSName("showQuickPick")
   def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: js.Array[T], options: QuickPickOptionscanPickMa): Thenable[js.UndefOr[js.Array[T]]] = js.native
   @JSName("showQuickPick")
@@ -117,6 +130,8 @@ object window extends js.Object {
   @JSName("showQuickPick")
   def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]]): Thenable[js.UndefOr[T]] = js.native
   @JSName("showQuickPick")
+  def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]], options: js.UndefOr[scala.Nothing], token: CancellationToken): Thenable[js.UndefOr[T]] = js.native
+  @JSName("showQuickPick")
   def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]], options: QuickPickOptionscanPickMa): Thenable[js.UndefOr[js.Array[T]]] = js.native
   @JSName("showQuickPick")
   def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]], options: QuickPickOptionscanPickMa, token: CancellationToken): Thenable[js.UndefOr[js.Array[T]]] = js.native
@@ -126,6 +141,7 @@ object window extends js.Object {
   def showQuickPick_T_QuickPickItem[T /* <: QuickPickItem */](items: Thenable[js.Array[T]], options: QuickPickOptions, token: CancellationToken): Thenable[js.UndefOr[T]] = js.native
   def showSaveDialog(options: SaveDialogOptions): Thenable[js.UndefOr[Uri]] = js.native
   def showTextDocument(document: TextDocument): Thenable[TextEditor] = js.native
+  def showTextDocument(document: TextDocument, column: js.UndefOr[scala.Nothing], preserveFocus: Boolean): Thenable[TextEditor] = js.native
   def showTextDocument(document: TextDocument, column: ViewColumn): Thenable[TextEditor] = js.native
   def showTextDocument(document: TextDocument, column: ViewColumn, preserveFocus: Boolean): Thenable[TextEditor] = js.native
   def showTextDocument(document: TextDocument, options: TextDocumentShowOptions): Thenable[TextEditor] = js.native

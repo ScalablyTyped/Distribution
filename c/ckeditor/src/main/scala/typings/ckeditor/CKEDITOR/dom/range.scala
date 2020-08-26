@@ -33,17 +33,31 @@ trait range extends js.Object {
   def enlarge(unit: Double): Unit = js.native
   def enlarge(unit: Double, excludeBrs: Boolean): Unit = js.native
   def extractContents(): documentFragment = js.native
+  def extractContents(mergeThen: js.UndefOr[scala.Nothing], cloneId: Boolean): documentFragment = js.native
   def extractContents(mergeThen: Boolean): documentFragment = js.native
   def extractContents(mergeThen: Boolean, cloneId: Boolean): documentFragment = js.native
   def fixBlock(isStart: Boolean, blockTag: String): element = js.native
   def getBoundaryNodes(): EndNode = js.native
   def getCommonAncestor(): element = js.native
+  def getCommonAncestor(includeSelf: js.UndefOr[scala.Nothing], ignoreTextNode: Boolean): element = js.native
   def getCommonAncestor(includeSelf: Boolean): element = js.native
   def getCommonAncestor(includeSelf: Boolean, ignoreTextNode: Boolean): element = js.native
   def getEnclosedNode(): node = js.native
   def getNextEditableNode(): element | text = js.native
   def getNextNode(): element = js.native
+  def getNextNode(evaluator: js.UndefOr[scala.Nothing], guard: js.UndefOr[scala.Nothing], boundary: element): element = js.native
+  def getNextNode(evaluator: js.UndefOr[scala.Nothing], guard: js.Function1[/* element */ element, Boolean]): element = js.native
+  def getNextNode(
+    evaluator: js.UndefOr[scala.Nothing],
+    guard: js.Function1[/* element */ element, Boolean],
+    boundary: element
+  ): element = js.native
   def getNextNode(evaluator: js.Function1[/* element */ element, Boolean]): element = js.native
+  def getNextNode(
+    evaluator: js.Function1[/* element */ element, Boolean],
+    guard: js.UndefOr[scala.Nothing],
+    boundary: element
+  ): element = js.native
   def getNextNode(
     evaluator: js.Function1[/* element */ element, Boolean],
     guard: js.Function1[/* element */ element, Boolean]
@@ -55,7 +69,19 @@ trait range extends js.Object {
   ): element = js.native
   def getPreviousEditableNode(): element | text = js.native
   def getPreviousNode(): element = js.native
+  def getPreviousNode(evaluator: js.UndefOr[scala.Nothing], guard: js.UndefOr[scala.Nothing], boundary: element): element = js.native
+  def getPreviousNode(evaluator: js.UndefOr[scala.Nothing], guard: js.Function1[/* element */ element, Boolean]): element = js.native
+  def getPreviousNode(
+    evaluator: js.UndefOr[scala.Nothing],
+    guard: js.Function1[/* element */ element, Boolean],
+    boundary: element
+  ): element = js.native
   def getPreviousNode(evaluator: js.Function1[/* element */ element, Boolean]): element = js.native
+  def getPreviousNode(
+    evaluator: js.Function1[/* element */ element, Boolean],
+    guard: js.UndefOr[scala.Nothing],
+    boundary: element
+  ): element = js.native
   def getPreviousNode(
     evaluator: js.Function1[/* element */ element, Boolean],
     guard: js.Function1[/* element */ element, Boolean]
@@ -71,6 +97,7 @@ trait range extends js.Object {
   def moveToBookmark(bookmark: bookmark): Unit = js.native
   def moveToBookmark(bookmark: bookmark2): Unit = js.native
   def moveToClosestEditablePosition(): Boolean = js.native
+  def moveToClosestEditablePosition(element: js.UndefOr[scala.Nothing], isMoveForward: Boolean): Boolean = js.native
   def moveToClosestEditablePosition(element: element): Boolean = js.native
   def moveToClosestEditablePosition(element: element, isMoveForward: Boolean): Boolean = js.native
   def moveToElementEditEnd(target: element): Boolean = js.native
@@ -93,6 +120,8 @@ trait range extends js.Object {
   def setStartAt(node: node, position: Double): Unit = js.native
   def setStartBefore(node: node): Unit = js.native
   def shrink(mode: Double): Unit = js.native
+  def shrink(mode: Double, selectContents: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
+  def shrink(mode: Double, selectContents: js.UndefOr[scala.Nothing], options: shrinkOptions): Unit = js.native
   def shrink(mode: Double, selectContents: Boolean): Unit = js.native
   def shrink(mode: Double, selectContents: Boolean, options: Boolean): Unit = js.native
   def shrink(mode: Double, selectContents: Boolean, options: shrinkOptions): Unit = js.native
@@ -102,6 +131,7 @@ trait range extends js.Object {
   def splitElement(toSplit: element, cloneId: Boolean): element = js.native
   def startPath(): elementPath = js.native
   def trim(): Unit = js.native
+  def trim(ignoreStart: js.UndefOr[scala.Nothing], ignoreEnd: Boolean): Unit = js.native
   def trim(ignoreStart: Boolean): Unit = js.native
   def trim(ignoreStart: Boolean, ignoreEnd: Boolean): Unit = js.native
 }

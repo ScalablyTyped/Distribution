@@ -18,10 +18,28 @@ trait EbsBlockDeviceConfig extends js.Object {
 
 object EbsBlockDeviceConfig {
   @scala.inline
-  def apply(VolumeSpecification: VolumeSpecification, VolumesPerInstance: js.UndefOr[Integer] = js.undefined): EbsBlockDeviceConfig = {
+  def apply(VolumeSpecification: VolumeSpecification): EbsBlockDeviceConfig = {
     val __obj = js.Dynamic.literal(VolumeSpecification = VolumeSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumesPerInstance)) __obj.updateDynamic("VolumesPerInstance")(VolumesPerInstance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsBlockDeviceConfig]
   }
+  @scala.inline
+  implicit class EbsBlockDeviceConfigOps[Self <: EbsBlockDeviceConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVolumeSpecification(value: VolumeSpecification): Self = this.set("VolumeSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumesPerInstance(value: Integer): Self = this.set("VolumesPerInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumesPerInstance: Self = this.set("VolumesPerInstance", js.undefined)
+  }
+  
 }
 

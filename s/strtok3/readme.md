@@ -1,7 +1,7 @@
 
 # Scala.js typings for strtok3
 
-Typings are for version 6.0.3
+Typings are for version 6.0.4
 
 ## Library description:
 A promise based streaming tokenizer
@@ -10,9 +10,9 @@ A promise based streaming tokenizer
 | ------------------ | :-------------: |
 | Full name          | strtok3 |
 | Keywords           | tokenizer, reader, token, async, promise, parser, decoder, binary, endian, uint, stream, streaming |
-| # releases         | 40 |
-| # dependents       | 5 |
-| # downloads        | 386727 |
+| # releases         | 34 |
+| # dependents       | 6 |
+| # downloads        | 2422303 |
 | # stars            | 0 |
 
 ## Links

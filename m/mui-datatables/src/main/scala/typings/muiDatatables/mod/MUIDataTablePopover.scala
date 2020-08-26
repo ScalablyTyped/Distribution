@@ -5,42 +5,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MUIDataTablePopover extends js.Object {
-  var action: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var anchorEl: js.UndefOr[ReactNode] = js.undefined
-  var anchorOrigin: js.UndefOr[js.Any] = js.undefined
-  var elevation: js.UndefOr[Double] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var onExited: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var option: js.UndefOr[Boolean] = js.undefined
-  var ref: js.UndefOr[js.Any] = js.undefined
-  var transformOrigin: js.UndefOr[js.Any] = js.undefined
+  var action: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var anchorEl: js.UndefOr[ReactNode] = js.native
+  var anchorOrigin: js.UndefOr[js.Any] = js.native
+  var elevation: js.UndefOr[Double] = js.native
+  var onClose: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onExited: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var option: js.UndefOr[Boolean] = js.native
+  var ref: js.UndefOr[js.Any] = js.native
+  var transformOrigin: js.UndefOr[js.Any] = js.native
 }
 
 object MUIDataTablePopover {
   @scala.inline
-  def apply(
-    action: /* args */ js.Any => _ = null,
-    anchorEl: ReactNode = null,
-    anchorOrigin: js.Any = null,
-    elevation: js.UndefOr[Double] = js.undefined,
-    onClose: /* args */ js.Any => _ = null,
-    onExited: /* args */ js.Any => _ = null,
-    option: js.UndefOr[Boolean] = js.undefined,
-    ref: js.Any = null,
-    transformOrigin: js.Any = null
-  ): MUIDataTablePopover = {
+  def apply(): MUIDataTablePopover = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
-    if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
-    if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
-    if (!js.isUndefined(option)) __obj.updateDynamic("option")(option.get.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTablePopover]
   }
+  @scala.inline
+  implicit class MUIDataTablePopoverOps[Self <: MUIDataTablePopover] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: /* args */ js.Any => _): Self = this.set("action", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setAnchorEl(value: ReactNode): Self = this.set("anchorEl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorEl: Self = this.set("anchorEl", js.undefined)
+    @scala.inline
+    def setAnchorOrigin(value: js.Any): Self = this.set("anchorOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOrigin: Self = this.set("anchorOrigin", js.undefined)
+    @scala.inline
+    def setElevation(value: Double): Self = this.set("elevation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElevation: Self = this.set("elevation", js.undefined)
+    @scala.inline
+    def setOnClose(value: /* args */ js.Any => _): Self = this.set("onClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnExited(value: /* args */ js.Any => _): Self = this.set("onExited", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnExited: Self = this.set("onExited", js.undefined)
+    @scala.inline
+    def setOption(value: Boolean): Self = this.set("option", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOption: Self = this.set("option", js.undefined)
+    @scala.inline
+    def setRef(value: js.Any): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setTransformOrigin(value: js.Any): Self = this.set("transformOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformOrigin: Self = this.set("transformOrigin", js.undefined)
+  }
+  
 }
 

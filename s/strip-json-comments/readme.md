@@ -1,7 +1,7 @@
 
 # Scala.js typings for strip-json-comments
 
-Typings are for version 3.1.0
+Typings are for version 3.1.1
 
 ## Library description:
 Strip comments from JSON. Lets you use comments in your JSON files!

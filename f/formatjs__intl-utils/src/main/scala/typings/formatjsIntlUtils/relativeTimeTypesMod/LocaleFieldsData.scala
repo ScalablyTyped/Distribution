@@ -4,91 +4,156 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {[ f in @formatjs/intl-utils.@formatjs/intl-utils/dist/relative-time-types.RelativeTimeField ]:? @formatjs/intl-utils.@formatjs/intl-utils/dist/relative-time-types.FieldData} & {  nu ? :std.Array<string | null>} */
+/* Inlined {[ f in @formatjs/intl-utils.@formatjs/intl-utils/lib/src/relative-time-types.RelativeTimeField ]:? @formatjs/intl-utils.@formatjs/intl-utils/lib/src/relative-time-types.FieldData} & {  nu :std.Array<string | null> | undefined} */
+@js.native
 trait LocaleFieldsData extends js.Object {
-  var day: js.UndefOr[FieldData] = js.undefined
-  var `day-narrow`: js.UndefOr[FieldData] = js.undefined
-  var `day-short`: js.UndefOr[FieldData] = js.undefined
-  var hour: js.UndefOr[FieldData] = js.undefined
-  var `hour-narrow`: js.UndefOr[FieldData] = js.undefined
-  var `hour-short`: js.UndefOr[FieldData] = js.undefined
-  var minute: js.UndefOr[FieldData] = js.undefined
-  var `minute-narrow`: js.UndefOr[FieldData] = js.undefined
-  var `minute-short`: js.UndefOr[FieldData] = js.undefined
-  var month: js.UndefOr[FieldData] = js.undefined
-  var `month-narrow`: js.UndefOr[FieldData] = js.undefined
-  var `month-short`: js.UndefOr[FieldData] = js.undefined
-  var nu: js.UndefOr[js.Array[String | Null]] = js.undefined
-  var quarter: js.UndefOr[FieldData] = js.undefined
-  var `quarter-narrow`: js.UndefOr[FieldData] = js.undefined
-  var `quarter-short`: js.UndefOr[FieldData] = js.undefined
-  var second: js.UndefOr[FieldData] = js.undefined
-  var `second-narrow`: js.UndefOr[FieldData] = js.undefined
-  var `second-short`: js.UndefOr[FieldData] = js.undefined
-  var week: js.UndefOr[FieldData] = js.undefined
-  var `week-narrow`: js.UndefOr[FieldData] = js.undefined
-  var `week-short`: js.UndefOr[FieldData] = js.undefined
-  var year: js.UndefOr[FieldData] = js.undefined
-  var `year-narrow`: js.UndefOr[FieldData] = js.undefined
-  var `year-short`: js.UndefOr[FieldData] = js.undefined
+  var day: js.UndefOr[FieldData] = js.native
+  var `day-narrow`: js.UndefOr[FieldData] = js.native
+  var `day-short`: js.UndefOr[FieldData] = js.native
+  var hour: js.UndefOr[FieldData] = js.native
+  var `hour-narrow`: js.UndefOr[FieldData] = js.native
+  var `hour-short`: js.UndefOr[FieldData] = js.native
+  var minute: js.UndefOr[FieldData] = js.native
+  var `minute-narrow`: js.UndefOr[FieldData] = js.native
+  var `minute-short`: js.UndefOr[FieldData] = js.native
+  var month: js.UndefOr[FieldData] = js.native
+  var `month-narrow`: js.UndefOr[FieldData] = js.native
+  var `month-short`: js.UndefOr[FieldData] = js.native
+  var nu: js.UndefOr[js.Array[String | Null]] = js.native
+  var quarter: js.UndefOr[FieldData] = js.native
+  var `quarter-narrow`: js.UndefOr[FieldData] = js.native
+  var `quarter-short`: js.UndefOr[FieldData] = js.native
+  var second: js.UndefOr[FieldData] = js.native
+  var `second-narrow`: js.UndefOr[FieldData] = js.native
+  var `second-short`: js.UndefOr[FieldData] = js.native
+  var week: js.UndefOr[FieldData] = js.native
+  var `week-narrow`: js.UndefOr[FieldData] = js.native
+  var `week-short`: js.UndefOr[FieldData] = js.native
+  var year: js.UndefOr[FieldData] = js.native
+  var `year-narrow`: js.UndefOr[FieldData] = js.native
+  var `year-short`: js.UndefOr[FieldData] = js.native
 }
 
 object LocaleFieldsData {
   @scala.inline
-  def apply(
-    day: FieldData = null,
-    `day-narrow`: FieldData = null,
-    `day-short`: FieldData = null,
-    hour: FieldData = null,
-    `hour-narrow`: FieldData = null,
-    `hour-short`: FieldData = null,
-    minute: FieldData = null,
-    `minute-narrow`: FieldData = null,
-    `minute-short`: FieldData = null,
-    month: FieldData = null,
-    `month-narrow`: FieldData = null,
-    `month-short`: FieldData = null,
-    nu: js.Array[String | Null] = null,
-    quarter: FieldData = null,
-    `quarter-narrow`: FieldData = null,
-    `quarter-short`: FieldData = null,
-    second: FieldData = null,
-    `second-narrow`: FieldData = null,
-    `second-short`: FieldData = null,
-    week: FieldData = null,
-    `week-narrow`: FieldData = null,
-    `week-short`: FieldData = null,
-    year: FieldData = null,
-    `year-narrow`: FieldData = null,
-    `year-short`: FieldData = null
-  ): LocaleFieldsData = {
+  def apply(): LocaleFieldsData = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (`day-narrow` != null) __obj.updateDynamic("day-narrow")(`day-narrow`.asInstanceOf[js.Any])
-    if (`day-short` != null) __obj.updateDynamic("day-short")(`day-short`.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (`hour-narrow` != null) __obj.updateDynamic("hour-narrow")(`hour-narrow`.asInstanceOf[js.Any])
-    if (`hour-short` != null) __obj.updateDynamic("hour-short")(`hour-short`.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
-    if (`minute-narrow` != null) __obj.updateDynamic("minute-narrow")(`minute-narrow`.asInstanceOf[js.Any])
-    if (`minute-short` != null) __obj.updateDynamic("minute-short")(`minute-short`.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (`month-narrow` != null) __obj.updateDynamic("month-narrow")(`month-narrow`.asInstanceOf[js.Any])
-    if (`month-short` != null) __obj.updateDynamic("month-short")(`month-short`.asInstanceOf[js.Any])
-    if (nu != null) __obj.updateDynamic("nu")(nu.asInstanceOf[js.Any])
-    if (quarter != null) __obj.updateDynamic("quarter")(quarter.asInstanceOf[js.Any])
-    if (`quarter-narrow` != null) __obj.updateDynamic("quarter-narrow")(`quarter-narrow`.asInstanceOf[js.Any])
-    if (`quarter-short` != null) __obj.updateDynamic("quarter-short")(`quarter-short`.asInstanceOf[js.Any])
-    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
-    if (`second-narrow` != null) __obj.updateDynamic("second-narrow")(`second-narrow`.asInstanceOf[js.Any])
-    if (`second-short` != null) __obj.updateDynamic("second-short")(`second-short`.asInstanceOf[js.Any])
-    if (week != null) __obj.updateDynamic("week")(week.asInstanceOf[js.Any])
-    if (`week-narrow` != null) __obj.updateDynamic("week-narrow")(`week-narrow`.asInstanceOf[js.Any])
-    if (`week-short` != null) __obj.updateDynamic("week-short")(`week-short`.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
-    if (`year-narrow` != null) __obj.updateDynamic("year-narrow")(`year-narrow`.asInstanceOf[js.Any])
-    if (`year-short` != null) __obj.updateDynamic("year-short")(`year-short`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocaleFieldsData]
   }
+  @scala.inline
+  implicit class LocaleFieldsDataOps[Self <: LocaleFieldsData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDay(value: FieldData): Self = this.set("day", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDay: Self = this.set("day", js.undefined)
+    @scala.inline
+    def `setDay-narrow`(value: FieldData): Self = this.set("day-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDay-narrow`: Self = this.set("day-narrow", js.undefined)
+    @scala.inline
+    def `setDay-short`(value: FieldData): Self = this.set("day-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDay-short`: Self = this.set("day-short", js.undefined)
+    @scala.inline
+    def setHour(value: FieldData): Self = this.set("hour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHour: Self = this.set("hour", js.undefined)
+    @scala.inline
+    def `setHour-narrow`(value: FieldData): Self = this.set("hour-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHour-narrow`: Self = this.set("hour-narrow", js.undefined)
+    @scala.inline
+    def `setHour-short`(value: FieldData): Self = this.set("hour-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHour-short`: Self = this.set("hour-short", js.undefined)
+    @scala.inline
+    def setMinute(value: FieldData): Self = this.set("minute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinute: Self = this.set("minute", js.undefined)
+    @scala.inline
+    def `setMinute-narrow`(value: FieldData): Self = this.set("minute-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteMinute-narrow`: Self = this.set("minute-narrow", js.undefined)
+    @scala.inline
+    def `setMinute-short`(value: FieldData): Self = this.set("minute-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteMinute-short`: Self = this.set("minute-short", js.undefined)
+    @scala.inline
+    def setMonth(value: FieldData): Self = this.set("month", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonth: Self = this.set("month", js.undefined)
+    @scala.inline
+    def `setMonth-narrow`(value: FieldData): Self = this.set("month-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteMonth-narrow`: Self = this.set("month-narrow", js.undefined)
+    @scala.inline
+    def `setMonth-short`(value: FieldData): Self = this.set("month-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteMonth-short`: Self = this.set("month-short", js.undefined)
+    @scala.inline
+    def setNuVarargs(value: (String | Null)*): Self = this.set("nu", js.Array(value :_*))
+    @scala.inline
+    def setNu(value: js.Array[String | Null]): Self = this.set("nu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNu: Self = this.set("nu", js.undefined)
+    @scala.inline
+    def setQuarter(value: FieldData): Self = this.set("quarter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuarter: Self = this.set("quarter", js.undefined)
+    @scala.inline
+    def `setQuarter-narrow`(value: FieldData): Self = this.set("quarter-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteQuarter-narrow`: Self = this.set("quarter-narrow", js.undefined)
+    @scala.inline
+    def `setQuarter-short`(value: FieldData): Self = this.set("quarter-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteQuarter-short`: Self = this.set("quarter-short", js.undefined)
+    @scala.inline
+    def setSecond(value: FieldData): Self = this.set("second", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecond: Self = this.set("second", js.undefined)
+    @scala.inline
+    def `setSecond-narrow`(value: FieldData): Self = this.set("second-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSecond-narrow`: Self = this.set("second-narrow", js.undefined)
+    @scala.inline
+    def `setSecond-short`(value: FieldData): Self = this.set("second-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSecond-short`: Self = this.set("second-short", js.undefined)
+    @scala.inline
+    def setWeek(value: FieldData): Self = this.set("week", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeek: Self = this.set("week", js.undefined)
+    @scala.inline
+    def `setWeek-narrow`(value: FieldData): Self = this.set("week-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteWeek-narrow`: Self = this.set("week-narrow", js.undefined)
+    @scala.inline
+    def `setWeek-short`(value: FieldData): Self = this.set("week-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteWeek-short`: Self = this.set("week-short", js.undefined)
+    @scala.inline
+    def setYear(value: FieldData): Self = this.set("year", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYear: Self = this.set("year", js.undefined)
+    @scala.inline
+    def `setYear-narrow`(value: FieldData): Self = this.set("year-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteYear-narrow`: Self = this.set("year-narrow", js.undefined)
+    @scala.inline
+    def `setYear-short`(value: FieldData): Self = this.set("year-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteYear-short`: Self = this.set("year-short", js.undefined)
+  }
+  
 }
 

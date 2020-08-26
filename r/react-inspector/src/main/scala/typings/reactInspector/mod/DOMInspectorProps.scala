@@ -1,34 +1,37 @@
 package typings.reactInspector.mod
 
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DOMInspectorProps
   extends TreeViewProps
      with ThemedComponentProps {
   @JSName("data")
-  var data_DOMInspectorProps: js.Object
+  var data_DOMInspectorProps: js.Object = js.native
 }
 
 object DOMInspectorProps {
   @scala.inline
-  def apply(
-    data: js.Object,
-    expandLevel: js.UndefOr[Double] = js.undefined,
-    expandPaths: String | js.Array[String] = null,
-    name: String = null,
-    nodeRenderer: /* params */ InspectorNodeParams => ReactNode = null,
-    theme: InspectorTheme = null
-  ): DOMInspectorProps = {
+  def apply(data: js.Object): DOMInspectorProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandLevel)) __obj.updateDynamic("expandLevel")(expandLevel.get.asInstanceOf[js.Any])
-    if (expandPaths != null) __obj.updateDynamic("expandPaths")(expandPaths.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nodeRenderer != null) __obj.updateDynamic("nodeRenderer")(js.Any.fromFunction1(nodeRenderer))
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMInspectorProps]
   }
+  @scala.inline
+  implicit class DOMInspectorPropsOps[Self <: DOMInspectorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+  }
+  
 }
 

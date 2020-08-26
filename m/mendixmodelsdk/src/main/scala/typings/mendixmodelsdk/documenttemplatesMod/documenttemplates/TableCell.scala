@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/cell-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/cell-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TableCell")
 @js.native
@@ -26,13 +26,13 @@ class TableCell protected () extends DropZone {
   @JSName("model")
   var model_FTableCell: IModel = js.native
   def colSpan: Double = js.native
-  def colSpan(newValue: Double): js.Any = js.native
+  def colSpan_=(newValue: Double): Unit = js.native
   def isPartOfSpan: Boolean = js.native
-  def isPartOfSpan(newValue: Boolean): js.Any = js.native
+  def isPartOfSpan_=(newValue: Boolean): Unit = js.native
   def rowSpan: Double = js.native
-  def rowSpan(newValue: Double): js.Any = js.native
+  def rowSpan_=(newValue: Double): Unit = js.native
   def style: Style = js.native
-  def style(newValue: Style): js.Any = js.native
+  def style_=(newValue: Style): Unit = js.native
 }
 
 /* static members */

@@ -26,17 +26,40 @@ trait ModifyTrafficMirrorFilterNetworkServicesRequest extends js.Object {
 
 object ModifyTrafficMirrorFilterNetworkServicesRequest {
   @scala.inline
-  def apply(
-    TrafficMirrorFilterId: TrafficMirrorFilterId,
-    AddNetworkServices: TrafficMirrorNetworkServiceList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    RemoveNetworkServices: TrafficMirrorNetworkServiceList = null
-  ): ModifyTrafficMirrorFilterNetworkServicesRequest = {
+  def apply(TrafficMirrorFilterId: TrafficMirrorFilterId): ModifyTrafficMirrorFilterNetworkServicesRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorFilterId = TrafficMirrorFilterId.asInstanceOf[js.Any])
-    if (AddNetworkServices != null) __obj.updateDynamic("AddNetworkServices")(AddNetworkServices.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (RemoveNetworkServices != null) __obj.updateDynamic("RemoveNetworkServices")(RemoveNetworkServices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTrafficMirrorFilterNetworkServicesRequest]
   }
+  @scala.inline
+  implicit class ModifyTrafficMirrorFilterNetworkServicesRequestOps[Self <: ModifyTrafficMirrorFilterNetworkServicesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrafficMirrorFilterId(value: TrafficMirrorFilterId): Self = this.set("TrafficMirrorFilterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = this.set("AddNetworkServices", js.Array(value :_*))
+    @scala.inline
+    def setAddNetworkServices(value: TrafficMirrorNetworkServiceList): Self = this.set("AddNetworkServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddNetworkServices: Self = this.set("AddNetworkServices", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setRemoveNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = this.set("RemoveNetworkServices", js.Array(value :_*))
+    @scala.inline
+    def setRemoveNetworkServices(value: TrafficMirrorNetworkServiceList): Self = this.set("RemoveNetworkServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveNetworkServices: Self = this.set("RemoveNetworkServices", js.undefined)
+  }
+  
 }
 

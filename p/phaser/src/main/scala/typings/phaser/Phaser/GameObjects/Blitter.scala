@@ -77,13 +77,25 @@ trait Blitter
     * @param index The position in the Blitters Display List to add the new Bob at. Defaults to the top of the list.
     */
   def create(x: Double, y: Double): Bob = js.native
+  def create(
+    x: Double,
+    y: Double,
+    frame: js.UndefOr[scala.Nothing],
+    visible: js.UndefOr[scala.Nothing],
+    index: integer
+  ): Bob = js.native
+  def create(x: Double, y: Double, frame: js.UndefOr[scala.Nothing], visible: Boolean): Bob = js.native
+  def create(x: Double, y: Double, frame: js.UndefOr[scala.Nothing], visible: Boolean, index: integer): Bob = js.native
   def create(x: Double, y: Double, frame: String): Bob = js.native
+  def create(x: Double, y: Double, frame: String, visible: js.UndefOr[scala.Nothing], index: integer): Bob = js.native
   def create(x: Double, y: Double, frame: String, visible: Boolean): Bob = js.native
   def create(x: Double, y: Double, frame: String, visible: Boolean, index: integer): Bob = js.native
   def create(x: Double, y: Double, frame: Frame): Bob = js.native
+  def create(x: Double, y: Double, frame: Frame, visible: js.UndefOr[scala.Nothing], index: integer): Bob = js.native
   def create(x: Double, y: Double, frame: Frame, visible: Boolean): Bob = js.native
   def create(x: Double, y: Double, frame: Frame, visible: Boolean, index: integer): Bob = js.native
   def create(x: Double, y: Double, frame: integer): Bob = js.native
+  def create(x: Double, y: Double, frame: integer, visible: js.UndefOr[scala.Nothing], index: integer): Bob = js.native
   def create(x: Double, y: Double, frame: integer, visible: Boolean): Bob = js.native
   def create(x: Double, y: Double, frame: integer, visible: Boolean, index: integer): Bob = js.native
   /**
@@ -94,6 +106,7 @@ trait Blitter
     * @param visible Should the created Bob render or not? Default true.
     */
   def createFromCallback(callback: CreateCallback, quantity: integer): js.Array[Bob] = js.native
+  def createFromCallback(callback: CreateCallback, quantity: integer, frame: js.UndefOr[scala.Nothing], visible: Boolean): js.Array[Bob] = js.native
   def createFromCallback(callback: CreateCallback, quantity: integer, frame: String): js.Array[Bob] = js.native
   def createFromCallback(callback: CreateCallback, quantity: integer, frame: String, visible: Boolean): js.Array[Bob] = js.native
   def createFromCallback(callback: CreateCallback, quantity: integer, frame: js.Array[Frame | String | integer]): js.Array[Bob] = js.native
@@ -119,6 +132,7 @@ trait Blitter
     * @param visible Should the created Bob render or not? Default true.
     */
   def createMultiple(quantity: integer): js.Array[Bob] = js.native
+  def createMultiple(quantity: integer, frame: js.UndefOr[scala.Nothing], visible: Boolean): js.Array[Bob] = js.native
   def createMultiple(quantity: integer, frame: String): js.Array[Bob] = js.native
   def createMultiple(quantity: integer, frame: String, visible: Boolean): js.Array[Bob] = js.native
   def createMultiple(quantity: integer, frame: js.Array[Frame | String | integer]): js.Array[Bob] = js.native

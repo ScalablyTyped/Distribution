@@ -5,32 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Frame extends StackData {
   @JSName("file")
-  var file_Frame: String
+  var file_Frame: String = js.native
 }
 
 object Frame {
   @scala.inline
-  def apply(
-    file: String,
-    column: js.UndefOr[Double] = js.undefined,
-    constructor: js.UndefOr[Boolean] = js.undefined,
-    evalOrigin: String = null,
-    function: String = null,
-    line: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    native: js.UndefOr[Boolean] = js.undefined
-  ): Frame = {
+  def apply(file: String): Frame = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(constructor)) __obj.updateDynamic("constructor")(constructor.get.asInstanceOf[js.Any])
-    if (evalOrigin != null) __obj.updateDynamic("evalOrigin")(evalOrigin.asInstanceOf[js.Any])
-    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]
   }
+  @scala.inline
+  implicit class FrameOps[Self <: Frame] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__heatmap
 
-Typings are for version 0.61.0
+Typings are for version 0.62.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/heatmap.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/heatmap)
@@ -10,9 +10,9 @@ Typings are for version 0.61.0
 | ------------------ | :-------------: |
 | Full name          | @nivo/heatmap |
 | Keywords           | nivo, dataviz, react, d3, charts, heatmap |
-| # releases         | 30 |
+| # releases         | 32 |
 | # dependents       | 3 |
-| # downloads        | 72680 |
+| # downloads        | 77513 |
 | # stars            | 0 |
 
 ## Links

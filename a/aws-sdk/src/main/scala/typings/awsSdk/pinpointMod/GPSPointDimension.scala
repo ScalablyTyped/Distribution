@@ -18,10 +18,28 @@ trait GPSPointDimension extends js.Object {
 
 object GPSPointDimension {
   @scala.inline
-  def apply(Coordinates: GPSCoordinates, RangeInKilometers: js.UndefOr[double] = js.undefined): GPSPointDimension = {
+  def apply(Coordinates: GPSCoordinates): GPSPointDimension = {
     val __obj = js.Dynamic.literal(Coordinates = Coordinates.asInstanceOf[js.Any])
-    if (!js.isUndefined(RangeInKilometers)) __obj.updateDynamic("RangeInKilometers")(RangeInKilometers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPSPointDimension]
   }
+  @scala.inline
+  implicit class GPSPointDimensionOps[Self <: GPSPointDimension] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoordinates(value: GPSCoordinates): Self = this.set("Coordinates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRangeInKilometers(value: double): Self = this.set("RangeInKilometers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeInKilometers: Self = this.set("RangeInKilometers", js.undefined)
+  }
+  
 }
 

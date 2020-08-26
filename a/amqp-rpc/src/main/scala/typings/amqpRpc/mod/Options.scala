@@ -6,36 +6,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var conn_options: js.UndefOr[js.Any] = js.undefined
-  var connection: js.UndefOr[js.Any] = js.undefined
-  var exchange: js.UndefOr[String] = js.undefined
-  var exchangeInstance: js.UndefOr[js.Any] = js.undefined
-  var exchange_options: js.UndefOr[AutoDelete] = js.undefined
-  var ipml_options: js.UndefOr[DefaultExchangeName] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var conn_options: js.UndefOr[js.Any] = js.native
+  var connection: js.UndefOr[js.Any] = js.native
+  var exchange: js.UndefOr[String] = js.native
+  var exchangeInstance: js.UndefOr[js.Any] = js.native
+  var exchange_options: js.UndefOr[AutoDelete] = js.native
+  var ipml_options: js.UndefOr[DefaultExchangeName] = js.native
+  var url: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    conn_options: js.Any = null,
-    connection: js.Any = null,
-    exchange: String = null,
-    exchangeInstance: js.Any = null,
-    exchange_options: AutoDelete = null,
-    ipml_options: DefaultExchangeName = null,
-    url: String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (conn_options != null) __obj.updateDynamic("conn_options")(conn_options.asInstanceOf[js.Any])
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (exchange != null) __obj.updateDynamic("exchange")(exchange.asInstanceOf[js.Any])
-    if (exchangeInstance != null) __obj.updateDynamic("exchangeInstance")(exchangeInstance.asInstanceOf[js.Any])
-    if (exchange_options != null) __obj.updateDynamic("exchange_options")(exchange_options.asInstanceOf[js.Any])
-    if (ipml_options != null) __obj.updateDynamic("ipml_options")(ipml_options.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConn_options(value: js.Any): Self = this.set("conn_options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConn_options: Self = this.set("conn_options", js.undefined)
+    @scala.inline
+    def setConnection(value: js.Any): Self = this.set("connection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnection: Self = this.set("connection", js.undefined)
+    @scala.inline
+    def setExchange(value: String): Self = this.set("exchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExchange: Self = this.set("exchange", js.undefined)
+    @scala.inline
+    def setExchangeInstance(value: js.Any): Self = this.set("exchangeInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExchangeInstance: Self = this.set("exchangeInstance", js.undefined)
+    @scala.inline
+    def setExchange_options(value: AutoDelete): Self = this.set("exchange_options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExchange_options: Self = this.set("exchange_options", js.undefined)
+    @scala.inline
+    def setIpml_options(value: DefaultExchangeName): Self = this.set("ipml_options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpml_options: Self = this.set("ipml_options", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PageviewParams
   extends /* key */ StringDictionary[js.Any] {
   /**
@@ -14,7 +15,7 @@ trait PageviewParams
     *
     * Max length: 100 Bytes
     */
-  var dh: js.UndefOr[String] = js.undefined
+  var dh: js.UndefOr[String] = js.native
   /**
     * Document location URL
     *
@@ -22,7 +23,7 @@ trait PageviewParams
     *
     * Max length: 2048 Bytes
     */
-  var dl: js.UndefOr[String] = js.undefined
+  var dl: js.UndefOr[String] = js.native
   /**
     * Document Path
     *
@@ -30,7 +31,7 @@ trait PageviewParams
     *
     * Max length: 2048 Bytes
     */
-  var dp: js.UndefOr[String] = js.undefined
+  var dp: js.UndefOr[String] = js.native
   /**
     * Document Title
     *
@@ -38,25 +39,43 @@ trait PageviewParams
     *
     * Max length: 1500 Bytes
     */
-  var dt: js.UndefOr[String] = js.undefined
+  var dt: js.UndefOr[String] = js.native
 }
 
 object PageviewParams {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    dh: String = null,
-    dl: String = null,
-    dp: String = null,
-    dt: String = null
-  ): PageviewParams = {
+  def apply(): PageviewParams = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dh != null) __obj.updateDynamic("dh")(dh.asInstanceOf[js.Any])
-    if (dl != null) __obj.updateDynamic("dl")(dl.asInstanceOf[js.Any])
-    if (dp != null) __obj.updateDynamic("dp")(dp.asInstanceOf[js.Any])
-    if (dt != null) __obj.updateDynamic("dt")(dt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageviewParams]
   }
+  @scala.inline
+  implicit class PageviewParamsOps[Self <: PageviewParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDh(value: String): Self = this.set("dh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDh: Self = this.set("dh", js.undefined)
+    @scala.inline
+    def setDl(value: String): Self = this.set("dl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDl: Self = this.set("dl", js.undefined)
+    @scala.inline
+    def setDp(value: String): Self = this.set("dp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDp: Self = this.set("dp", js.undefined)
+    @scala.inline
+    def setDt(value: String): Self = this.set("dt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDt: Self = this.set("dt", js.undefined)
+  }
+  
 }
 

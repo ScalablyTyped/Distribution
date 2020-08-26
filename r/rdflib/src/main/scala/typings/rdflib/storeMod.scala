@@ -41,7 +41,7 @@ object storeMod extends js.Object {
     /** Map of iri predicates to functions to call when adding { s type X } */
     var classActions: StringDictionary[js.Array[js.Function]] = js.native
     /** Callbacks which are triggered after a statement has been added to the store */
-    var dataCallbacks: js.UndefOr[js.Any] = js.native
+    var dataCallbacks: js.Any = js.native
     var features: FeaturesType = js.native
     var index: js.Tuple4[
         js.Array[
@@ -87,32 +87,23 @@ object storeMod extends js.Object {
     var whyIndex: js.Array[
         typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
       ] = js.native
-    def add(subj: typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+    /**
+      * Adds a triple (quad) to the store.
+      *
+      * @param subj - The thing about which the fact a relationship is asserted.
+      *        Also accepts a statement or an array of Statements.
+      * @param pred - The relationship which is asserted
+      * @param obj - The object of the relationship, e.g. another thing or avalue. If passed a string, this will become a literal.
+      * @param why - The document in which the triple (S,P,O) was or will be stored on the web
+      * @returns The statement added to the store, or the store
+      */
     def add(
-      subj: typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType],
-      pred: QuadPredicate
-    ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
-    def add(
-      subj: typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType],
-      pred: QuadPredicate,
-      obj: String
-    ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
-    def add(
-      subj: typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType],
-      pred: QuadPredicate,
-      obj: String,
-      why: QuadGraph
-    ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
-    def add(
-      subj: typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType],
-      pred: QuadPredicate,
-      obj: Term
-    ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
-    def add(
-      subj: typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType],
-      pred: QuadPredicate,
-      obj: Term,
-      why: QuadGraph
+      subj: QuadSubject | (Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]) | (js.Array[
+          (Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]) | (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType])
+        ]) | (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]),
+      pred: js.UndefOr[QuadPredicate],
+      obj: js.UndefOr[Term | String],
+      why: js.UndefOr[QuadGraph]
     ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
     /**
       * Add a callback which will be triggered after a statement has been added to the store.
@@ -210,22 +201,12 @@ object storeMod extends js.Object {
       * @param object The object
       * @param graph The graph that contains the statement
       */
-    def `match`(): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: Null, predicate: Null, `object`: Null, graph: QuadGraph): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: Null, predicate: Null, `object`: QuadObject): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: Null, predicate: Null, `object`: QuadObject, graph: QuadGraph): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: Null, predicate: QuadPredicate): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: Null, predicate: QuadPredicate, `object`: Null, graph: QuadGraph): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: Null, predicate: QuadPredicate, `object`: QuadObject): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: Null, predicate: QuadPredicate, `object`: QuadObject, graph: QuadGraph): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: QuadSubject): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: QuadSubject, predicate: Null, `object`: Null, graph: QuadGraph): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: QuadSubject, predicate: Null, `object`: QuadObject): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: QuadSubject, predicate: Null, `object`: QuadObject, graph: QuadGraph): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: QuadSubject, predicate: QuadPredicate): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: QuadSubject, predicate: QuadPredicate, `object`: Null, graph: QuadGraph): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
-    def `match`(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject, graph: QuadGraph): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
+    def `match`(
+      subject: js.UndefOr[QuadSubject | Null],
+      predicate: js.UndefOr[QuadPredicate | Null],
+      `object`: js.UndefOr[QuadObject | Null],
+      graph: js.UndefOr[QuadGraph | Null]
+    ): js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]] = js.native
     /**
       * Find out whether a given URI is used as symbol in the formula
       * @param uri The URI to look for
@@ -268,8 +249,8 @@ object storeMod extends js.Object {
       *
       * @param myQuery The query to be run
       * @param callback Function to call when bindings
-      * @param dummy OBSOLETE - do not use this
-      * @param onDone OBSOLETE - do not use this
+      * @param Fetcher | null  If you want the query to do link following
+      * @param onDone OBSOLETE - do not use this // @@ Why not ?? Called when query complete
       */
     def query(
       myQuery: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Query */ js.Any,
@@ -278,18 +259,24 @@ object storeMod extends js.Object {
     def query(
       myQuery: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Query */ js.Any,
       callback: js.Function1[/* bindings */ Bindings, Unit],
-      dummy: Null,
+      fetcher: js.UndefOr[scala.Nothing],
       onDone: js.Function0[Unit]
     ): Unit = js.native
     def query(
       myQuery: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Query */ js.Any,
       callback: js.Function1[/* bindings */ Bindings, Unit],
-      dummy: typings.rdflib.fetcherMod.default
+      fetcher: Null,
+      onDone: js.Function0[Unit]
     ): Unit = js.native
     def query(
       myQuery: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Query */ js.Any,
       callback: js.Function1[/* bindings */ Bindings, Unit],
-      dummy: typings.rdflib.fetcherMod.default,
+      fetcher: typings.rdflib.fetcherMod.default
+    ): Unit = js.native
+    def query(
+      myQuery: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Query */ js.Any,
+      callback: js.Function1[/* bindings */ Bindings, Unit],
+      fetcher: typings.rdflib.fetcherMod.default,
       onDone: js.Function0[Unit]
     ): Unit = js.native
     /**
@@ -319,38 +306,13 @@ object storeMod extends js.Object {
       * @param why The graph that contains the statement
       * @param limit The number of statements to remove
       */
-    def removeMany(): Unit = js.native
-    def removeMany(subj: Null, pred: Null, obj: Null, why: Null, limit: Double): Unit = js.native
-    def removeMany(subj: Null, pred: Null, obj: Null, why: QuadGraph): Unit = js.native
-    def removeMany(subj: Null, pred: Null, obj: Null, why: QuadGraph, limit: Double): Unit = js.native
-    def removeMany(subj: Null, pred: Null, obj: QuadObject): Unit = js.native
-    def removeMany(subj: Null, pred: Null, obj: QuadObject, why: Null, limit: Double): Unit = js.native
-    def removeMany(subj: Null, pred: Null, obj: QuadObject, why: QuadGraph): Unit = js.native
-    def removeMany(subj: Null, pred: Null, obj: QuadObject, why: QuadGraph, limit: Double): Unit = js.native
-    def removeMany(subj: Null, pred: QuadPredicate): Unit = js.native
-    def removeMany(subj: Null, pred: QuadPredicate, obj: Null, why: Null, limit: Double): Unit = js.native
-    def removeMany(subj: Null, pred: QuadPredicate, obj: Null, why: QuadGraph): Unit = js.native
-    def removeMany(subj: Null, pred: QuadPredicate, obj: Null, why: QuadGraph, limit: Double): Unit = js.native
-    def removeMany(subj: Null, pred: QuadPredicate, obj: QuadObject): Unit = js.native
-    def removeMany(subj: Null, pred: QuadPredicate, obj: QuadObject, why: Null, limit: Double): Unit = js.native
-    def removeMany(subj: Null, pred: QuadPredicate, obj: QuadObject, why: QuadGraph): Unit = js.native
-    def removeMany(subj: Null, pred: QuadPredicate, obj: QuadObject, why: QuadGraph, limit: Double): Unit = js.native
-    def removeMany(subj: QuadSubject): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: Null, obj: Null, why: Null, limit: Double): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: Null, obj: Null, why: QuadGraph): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: Null, obj: Null, why: QuadGraph, limit: Double): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: Null, obj: QuadObject): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: Null, obj: QuadObject, why: Null, limit: Double): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: Null, obj: QuadObject, why: QuadGraph): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: Null, obj: QuadObject, why: QuadGraph, limit: Double): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: QuadPredicate): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: QuadPredicate, obj: Null, why: Null, limit: Double): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: QuadPredicate, obj: Null, why: QuadGraph): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: QuadPredicate, obj: Null, why: QuadGraph, limit: Double): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: QuadPredicate, obj: QuadObject): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: QuadPredicate, obj: QuadObject, why: Null, limit: Double): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: QuadPredicate, obj: QuadObject, why: QuadGraph): Unit = js.native
-    def removeMany(subj: QuadSubject, pred: QuadPredicate, obj: QuadObject, why: QuadGraph, limit: Double): Unit = js.native
+    def removeMany(
+      subj: js.UndefOr[QuadSubject | Null],
+      pred: js.UndefOr[QuadPredicate | Null],
+      obj: js.UndefOr[QuadObject | Null],
+      why: js.UndefOr[QuadGraph | Null],
+      limit: js.UndefOr[Double]
+    ): Unit = js.native
     /**
       * Remove all matching statements
       * @param subject The subject
@@ -358,22 +320,12 @@ object storeMod extends js.Object {
       * @param object The object
       * @param graph The graph that contains the statement
       */
-    def removeMatches(): IndexedFormula = js.native
-    def removeMatches(subject: Null, predicate: Null, `object`: Null, graph: QuadGraph): IndexedFormula = js.native
-    def removeMatches(subject: Null, predicate: Null, `object`: QuadObject): IndexedFormula = js.native
-    def removeMatches(subject: Null, predicate: Null, `object`: QuadObject, graph: QuadGraph): IndexedFormula = js.native
-    def removeMatches(subject: Null, predicate: QuadPredicate): IndexedFormula = js.native
-    def removeMatches(subject: Null, predicate: QuadPredicate, `object`: Null, graph: QuadGraph): IndexedFormula = js.native
-    def removeMatches(subject: Null, predicate: QuadPredicate, `object`: QuadObject): IndexedFormula = js.native
-    def removeMatches(subject: Null, predicate: QuadPredicate, `object`: QuadObject, graph: QuadGraph): IndexedFormula = js.native
-    def removeMatches(subject: QuadSubject): IndexedFormula = js.native
-    def removeMatches(subject: QuadSubject, predicate: Null, `object`: Null, graph: QuadGraph): IndexedFormula = js.native
-    def removeMatches(subject: QuadSubject, predicate: Null, `object`: QuadObject): IndexedFormula = js.native
-    def removeMatches(subject: QuadSubject, predicate: Null, `object`: QuadObject, graph: QuadGraph): IndexedFormula = js.native
-    def removeMatches(subject: QuadSubject, predicate: QuadPredicate): IndexedFormula = js.native
-    def removeMatches(subject: QuadSubject, predicate: QuadPredicate, `object`: Null, graph: QuadGraph): IndexedFormula = js.native
-    def removeMatches(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): IndexedFormula = js.native
-    def removeMatches(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject, graph: QuadGraph): IndexedFormula = js.native
+    def removeMatches(
+      subject: js.UndefOr[QuadSubject | Null],
+      predicate: js.UndefOr[QuadPredicate | Null],
+      `object`: js.UndefOr[QuadObject | Null],
+      graph: js.UndefOr[QuadGraph | Null]
+    ): IndexedFormula = js.native
     /**
       * Remove a particular statement object from the store
       *
@@ -417,7 +369,7 @@ object storeMod extends js.Object {
     */
   class default () extends IndexedFormula {
     def this(features: FeaturesType) = this()
-    def this(features: FeaturesType, opts: FormulaOpts) = this()
+    def this(features: js.UndefOr[FeaturesType], opts: FormulaOpts) = this()
   }
   
   val defaultGraphURI: /* "chrome:theSession" */ String = js.native

@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   * Implementations of this service usually also implement service {@link HierarchyAccess} , which concerns the complementary role of providing access to
   * subelements of the hierarchy.
   */
+@js.native
 trait HierarchyElement
   extends XHierarchicalName
      with XNamed

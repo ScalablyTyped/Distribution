@@ -13,11 +13,11 @@ trait ObjectConstructor
      with Instantiable1[/* value */ js.Any, Object] {
   def apply(): js.Any = js.native
   def apply(value: js.Any): js.Any = js.native
-  def create(): js.Any = js.native
   /**
     * Creates an object that has the specified prototype or that has null prototype.
     * @param o Object to use as a prototype. May be null.
     */
+  def create(): js.Any = js.native
   def create(o: js.Object): js.Any = js.native
   /**
     * Creates an object that has the specified prototype, and that optionally contains specified properties.

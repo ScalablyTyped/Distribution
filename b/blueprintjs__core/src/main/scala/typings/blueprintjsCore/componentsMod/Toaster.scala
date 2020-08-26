@@ -23,6 +23,7 @@ object Toaster extends js.Object {
     * The `Toaster` will be rendered into a new element appended to the given container.
     */
   def create(): IToaster = js.native
+  def create(props: js.UndefOr[scala.Nothing], container: HTMLElement): IToaster = js.native
   def create(props: IToasterProps): IToaster = js.native
   def create(props: IToasterProps, container: HTMLElement): IToaster = js.native
 }

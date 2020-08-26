@@ -252,17 +252,7 @@ class QuestionPanelDynamicModel protected ()
   /* protected */ def createNewPanel(): PanelModel = js.native
   /* protected */ def createNewPanelObject(): PanelModel = js.native
   def currentIndexChangedCallback(): Unit = js.native
-  /* CompleteClass */
-  override def getItemIndex(item: ISurveyData): Double = js.native
-  /* CompleteClass */
-  override def getPanelItemData(item: ISurveyData): js.Any = js.native
   def getPlainData(options: Calculations): js.Any = js.native
-  /* CompleteClass */
-  override def getRootData(): ISurveyData = js.native
-  /* CompleteClass */
-  override def getSharedQuestionFromArray(name: String, panelIndex: Double): Question = js.native
-  /* CompleteClass */
-  override def getSurvey(): ISurvey = js.native
   /**
     * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
     */
@@ -301,7 +291,5 @@ class QuestionPanelDynamicModel protected ()
   def removePanelUI(value: js.Any): Unit = js.native
   def renderModeChangedCallback(): Unit = js.native
   /* protected */ def runPanelsCondition(values: HashTable[_], properties: HashTable[_]): Unit = js.native
-  /* CompleteClass */
-  override def setPanelItemData(item: ISurveyData, name: String, `val`: js.Any): js.Any = js.native
 }
 

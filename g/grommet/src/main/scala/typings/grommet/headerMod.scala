@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Header", JSImport.Namespace)
+@JSImport("grommet/es6/components/Header", JSImport.Namespace)
 @js.native
 object headerMod extends js.Object {
   val Header: FC[BoxTypes] = js.native

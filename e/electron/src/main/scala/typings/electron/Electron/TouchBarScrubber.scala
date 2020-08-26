@@ -5,7 +5,7 @@ import typings.electron.electronStrings.fixed
 import typings.electron.electronStrings.free
 import typings.electron.electronStrings.none
 import typings.electron.electronStrings.outline
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

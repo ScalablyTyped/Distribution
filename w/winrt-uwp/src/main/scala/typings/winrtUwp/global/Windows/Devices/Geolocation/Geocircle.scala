@@ -40,20 +40,5 @@ class Geocircle protected ()
     altitudeReferenceSystem: typings.winrtUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem,
     spatialReferenceId: Double
   ) = this()
-  /** The altitude reference system of the geographic circle. */
-  /* CompleteClass */
-  override var altitudeReferenceSystem: typings.winrtUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem = js.native
-  /** The center point of a geographic circle. */
-  /* CompleteClass */
-  override var center: BasicGeoposition = js.native
-  /** The type of geographic shape. */
-  /* CompleteClass */
-  override var geoshapeType: typings.winrtUwp.Windows.Devices.Geolocation.GeoshapeType = js.native
-  /** The radius of a geographic circle in meters. */
-  /* CompleteClass */
-  override var radius: Double = js.native
-  /** The spatial reference identifier for the geographic circle, corresponding to a spatial reference system based on the specific ellipsoid used for either flat-earth mapping or round-earth mapping. */
-  /* CompleteClass */
-  override var spatialReferenceId: Double = js.native
 }
 

@@ -23,14 +23,17 @@ trait Socket extends Duplex {
   def connect(path: String): Unit = js.native
   def connect(path: String, connectionListener: js.Function): Unit = js.native
   def connect(port: Double): Unit = js.native
+  def connect(port: Double, host: js.UndefOr[scala.Nothing], connectionListener: js.Function): Unit = js.native
   def connect(port: Double, host: String): Unit = js.native
   def connect(port: Double, host: String, connectionListener: js.Function): Unit = js.native
   def destroy(): Unit = js.native
+  def end(data: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
   def end(data: js.Any): Unit = js.native
   def end(data: js.Any, encoding: String): Unit = js.native
   def ref(): Unit = js.native
   def setEncoding(): Unit = js.native
   def setKeepAlive(): Unit = js.native
+  def setKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): Unit = js.native
   def setKeepAlive(enable: Boolean): Unit = js.native
   def setKeepAlive(enable: Boolean, initialDelay: Double): Unit = js.native
   def setNoDelay(): Unit = js.native
@@ -39,8 +42,10 @@ trait Socket extends Duplex {
   def setTimeout(timeout: Double, callback: js.Function): Unit = js.native
   def unref(): Unit = js.native
   def write(data: js.Any): Unit = js.native
+  def write(data: js.Any, encoding: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def write(data: js.Any, encoding: String): Unit = js.native
   def write(data: js.Any, encoding: String, callback: js.Function): Unit = js.native
+  def write(str: String, encoding: js.UndefOr[scala.Nothing], fd: String): Boolean = js.native
   def write(str: String, encoding: String, fd: String): Boolean = js.native
 }
 

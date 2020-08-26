@@ -12,7 +12,7 @@ A standalone module that suggests a right domain when your users misspell it in 
 | Keywords           | form, email, spell check |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 1764933 |
+| # downloads        | 1766217 |
 | # stars            | 5 |
 
 ## Links

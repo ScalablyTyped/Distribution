@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Horizontal extends js.Object {
-  var verticalAligment: js.UndefOr[Double] = js.undefined
+  var verticalAligment: js.UndefOr[Double] = js.native
 }
 
 object Horizontal {
   @scala.inline
-  def apply(verticalAligment: js.UndefOr[Double] = js.undefined): Horizontal = {
+  def apply(): Horizontal = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(verticalAligment)) __obj.updateDynamic("verticalAligment")(verticalAligment.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Horizontal]
   }
+  @scala.inline
+  implicit class HorizontalOps[Self <: Horizontal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVerticalAligment(value: Double): Self = this.set("verticalAligment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAligment: Self = this.set("verticalAligment", js.undefined)
+  }
+  
 }
 

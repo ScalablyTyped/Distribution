@@ -22,11 +22,30 @@ trait EncryptionInfo extends js.Object {
 
 object EncryptionInfo {
   @scala.inline
-  def apply(EncryptionAtRest: EncryptionAtRest = null, EncryptionInTransit: EncryptionInTransit = null): EncryptionInfo = {
+  def apply(): EncryptionInfo = {
     val __obj = js.Dynamic.literal()
-    if (EncryptionAtRest != null) __obj.updateDynamic("EncryptionAtRest")(EncryptionAtRest.asInstanceOf[js.Any])
-    if (EncryptionInTransit != null) __obj.updateDynamic("EncryptionInTransit")(EncryptionInTransit.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionInfo]
   }
+  @scala.inline
+  implicit class EncryptionInfoOps[Self <: EncryptionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionAtRest(value: EncryptionAtRest): Self = this.set("EncryptionAtRest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionAtRest: Self = this.set("EncryptionAtRest", js.undefined)
+    @scala.inline
+    def setEncryptionInTransit(value: EncryptionInTransit): Self = this.set("EncryptionInTransit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionInTransit: Self = this.set("EncryptionInTransit", js.undefined)
+  }
+  
 }
 

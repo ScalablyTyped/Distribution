@@ -16,17 +16,5 @@ class ASPxClientReportDesignerCustomizeSaveAsDialogEventArgs protected ()
     * @param popup An object that specifies the Save Report dialog.
     */
   def this(popup: typings.devexpressWeb.ASPxDesignerSaveAsDialog) = this()
-  /**
-    * Provides access to the Save Report dialog.
-    */
-  /* CompleteClass */
-  override var Popup: typings.devexpressWeb.ASPxDesignerSaveAsDialog = js.native
-  /**
-    * Customizes the Save Report dialog based on the specified template and model.
-    * @param template A string that specifies the name of an HTML template for the dialog.
-    * @param model A model of the Save Report dialog.
-    */
-  /* CompleteClass */
-  override def Customize(template: String, model: typings.devexpressWeb.ASPxDesignerDialogModel): Unit = js.native
 }
 

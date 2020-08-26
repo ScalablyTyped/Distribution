@@ -70,32 +70,70 @@ trait SchemaQueryResponse extends js.Object {
 
 object SchemaQueryResponse {
   @scala.inline
-  def apply(
-    cacheHit: js.UndefOr[Boolean] = js.undefined,
-    errors: js.Array[SchemaErrorProto] = null,
-    jobComplete: js.UndefOr[Boolean] = js.undefined,
-    jobReference: SchemaJobReference = null,
-    kind: String = null,
-    numDmlAffectedRows: String = null,
-    pageToken: String = null,
-    rows: js.Array[SchemaTableRow] = null,
-    schema: SchemaTableSchema = null,
-    totalBytesProcessed: String = null,
-    totalRows: String = null
-  ): SchemaQueryResponse = {
+  def apply(): SchemaQueryResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.get.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (!js.isUndefined(jobComplete)) __obj.updateDynamic("jobComplete")(jobComplete.get.asInstanceOf[js.Any])
-    if (jobReference != null) __obj.updateDynamic("jobReference")(jobReference.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed.asInstanceOf[js.Any])
-    if (totalRows != null) __obj.updateDynamic("totalRows")(totalRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryResponse]
   }
+  @scala.inline
+  implicit class SchemaQueryResponseOps[Self <: SchemaQueryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheHit(value: Boolean): Self = this.set("cacheHit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheHit: Self = this.set("cacheHit", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: SchemaErrorProto*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: js.Array[SchemaErrorProto]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setJobComplete(value: Boolean): Self = this.set("jobComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobComplete: Self = this.set("jobComplete", js.undefined)
+    @scala.inline
+    def setJobReference(value: SchemaJobReference): Self = this.set("jobReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobReference: Self = this.set("jobReference", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNumDmlAffectedRows(value: String): Self = this.set("numDmlAffectedRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumDmlAffectedRows: Self = this.set("numDmlAffectedRows", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setRowsVarargs(value: SchemaTableRow*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: js.Array[SchemaTableRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setSchema(value: SchemaTableSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setTotalBytesProcessed(value: String): Self = this.set("totalBytesProcessed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBytesProcessed: Self = this.set("totalBytesProcessed", js.undefined)
+    @scala.inline
+    def setTotalRows(value: String): Self = this.set("totalRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalRows: Self = this.set("totalRows", js.undefined)
+  }
+  
 }
 

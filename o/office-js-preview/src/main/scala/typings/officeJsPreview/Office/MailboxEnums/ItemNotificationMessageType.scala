@@ -32,6 +32,16 @@ object ItemNotificationMessageType extends js.Object {
   sealed trait InformationalMessage extends ItemNotificationMessageType
   
   /**
+    * The notification message is an informational message with actions.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @beta
+    */
+  @js.native
+  sealed trait InsightMessage extends ItemNotificationMessageType
+  
+  /**
     * The notification message is a progress indicator.
     */
   @js.native

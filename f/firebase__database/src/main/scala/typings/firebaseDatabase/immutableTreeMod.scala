@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object immutableTreeMod extends js.Object {
   @js.native
+  /**
+    * @template T
+    * @param {?T} value
+    * @param {SortedMap.<string, !ImmutableTree.<T>>=} children
+    */
   class ImmutableTree[T] () extends js.Object {
-    /**
-      * @template T
-      * @param {?T} value
-      * @param {SortedMap.<string, !ImmutableTree.<T>>=} children
-      */
     def this(value: T) = this()
     def this(value: T, children: SortedMap[String, ImmutableTree[T]]) = this()
     def this(value: Null, children: SortedMap[String, ImmutableTree[T]]) = this()
@@ -110,7 +110,6 @@ object immutableTreeMod extends js.Object {
       * @return {!ImmutableTree.<T>} Resulting tree.
       */
     def remove(relativePath: Path): ImmutableTree[T] = js.native
-    def set(relativePath: Path): ImmutableTree[T] = js.native
     /**
       * Sets a value at the specified path.
       *
@@ -118,6 +117,7 @@ object immutableTreeMod extends js.Object {
       * @param {?T} toSet Value to set.
       * @return {!ImmutableTree.<T>} Resulting tree.
       */
+    def set(relativePath: Path): ImmutableTree[T] = js.native
     def set(relativePath: Path, toSet: T): ImmutableTree[T] = js.native
     /**
       * Replace the subtree at the specified path with the given new tree.

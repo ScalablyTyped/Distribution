@@ -24,19 +24,19 @@ trait Collection[T] extends js.Object {
   def allow(options: Fetch[T]): Boolean = js.native
   def deny(options: Fetch[T]): Boolean = js.native
   def find(): Cursor[T] = js.native
+  def find(selector: js.UndefOr[Selector[T]], options: Fields): Cursor[T] = js.native
   def find(selector: String): Cursor[T] = js.native
   def find(selector: String, options: Fields): Cursor[T] = js.native
   def find(selector: ObjectID): Cursor[T] = js.native
   def find(selector: ObjectID, options: Fields): Cursor[T] = js.native
   def find(selector: Selector[T]): Cursor[T] = js.native
-  def find(selector: Selector[T], options: Fields): Cursor[T] = js.native
   def findOne(): js.UndefOr[T] = js.native
+  def findOne(selector: js.UndefOr[Selector[T]], options: Reactive): js.UndefOr[T] = js.native
   def findOne(selector: String): js.UndefOr[T] = js.native
   def findOne(selector: String, options: Reactive): js.UndefOr[T] = js.native
   def findOne(selector: ObjectID): js.UndefOr[T] = js.native
   def findOne(selector: ObjectID, options: Reactive): js.UndefOr[T] = js.native
   def findOne(selector: Selector[T]): js.UndefOr[T] = js.native
-  def findOne(selector: Selector[T], options: Reactive): js.UndefOr[T] = js.native
   def insert(doc: OptionalId[T]): String = js.native
   def insert(doc: OptionalId[T], callback: js.Function): String = js.native
   def rawCollection(): typings.mongodb.mod.Collection[T] = js.native
@@ -48,21 +48,47 @@ trait Collection[T] extends js.Object {
   def remove(selector: Selector[T]): Double = js.native
   def remove(selector: Selector[T], callback: js.Function): Double = js.native
   def update(selector: String, modifier: Modifier[T]): Double = js.native
+  def update(selector: String, modifier: Modifier[T], options: js.UndefOr[scala.Nothing], callback: js.Function): Double = js.native
   def update(selector: String, modifier: Modifier[T], options: ArrayFilters): Double = js.native
   def update(selector: String, modifier: Modifier[T], options: ArrayFilters, callback: js.Function): Double = js.native
   def update(selector: ObjectID, modifier: Modifier[T]): Double = js.native
+  def update(
+    selector: ObjectID,
+    modifier: Modifier[T],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Double = js.native
   def update(selector: ObjectID, modifier: Modifier[T], options: ArrayFilters): Double = js.native
   def update(selector: ObjectID, modifier: Modifier[T], options: ArrayFilters, callback: js.Function): Double = js.native
   def update(selector: Selector[T], modifier: Modifier[T]): Double = js.native
+  def update(
+    selector: Selector[T],
+    modifier: Modifier[T],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Double = js.native
   def update(selector: Selector[T], modifier: Modifier[T], options: ArrayFilters): Double = js.native
   def update(selector: Selector[T], modifier: Modifier[T], options: ArrayFilters, callback: js.Function): Double = js.native
   def upsert(selector: String, modifier: Modifier[T]): InsertedId = js.native
+  def upsert(selector: String, modifier: Modifier[T], options: js.UndefOr[scala.Nothing], callback: js.Function): InsertedId = js.native
   def upsert(selector: String, modifier: Modifier[T], options: Multi): InsertedId = js.native
   def upsert(selector: String, modifier: Modifier[T], options: Multi, callback: js.Function): InsertedId = js.native
   def upsert(selector: ObjectID, modifier: Modifier[T]): InsertedId = js.native
+  def upsert(
+    selector: ObjectID,
+    modifier: Modifier[T],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): InsertedId = js.native
   def upsert(selector: ObjectID, modifier: Modifier[T], options: Multi): InsertedId = js.native
   def upsert(selector: ObjectID, modifier: Modifier[T], options: Multi, callback: js.Function): InsertedId = js.native
   def upsert(selector: Selector[T], modifier: Modifier[T]): InsertedId = js.native
+  def upsert(
+    selector: Selector[T],
+    modifier: Modifier[T],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): InsertedId = js.native
   def upsert(selector: Selector[T], modifier: Modifier[T], options: Multi): InsertedId = js.native
   def upsert(selector: Selector[T], modifier: Modifier[T], options: Multi, callback: js.Function): InsertedId = js.native
 }

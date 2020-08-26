@@ -14,12 +14,34 @@ trait PartialClassNameMapTextar extends js.Object {
 
 object PartialClassNameMapTextar {
   @scala.inline
-  def apply(root: String = null, shadow: String = null, textarea: String = null): PartialClassNameMapTextar = {
+  def apply(): PartialClassNameMapTextar = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (textarea != null) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTextar]
   }
+  @scala.inline
+  implicit class PartialClassNameMapTextarOps[Self <: PartialClassNameMapTextar] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setShadow(value: String): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setTextarea(value: String): Self = this.set("textarea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextarea: Self = this.set("textarea", js.undefined)
+  }
+  
 }
 

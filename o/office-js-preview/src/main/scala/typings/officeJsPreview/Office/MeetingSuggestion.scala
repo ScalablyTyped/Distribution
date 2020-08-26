@@ -19,31 +19,32 @@ import scala.scalajs.js.annotation._
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
+@js.native
 trait MeetingSuggestion extends js.Object {
   /**
     * Gets the attendees for a suggested meeting.
     */
-  var attendees: js.Array[EmailUser]
+  var attendees: js.Array[EmailUser] = js.native
   /**
     * Gets the date and time that a suggested meeting is to end.
     */
-  var end: String
+  var end: String = js.native
   /**
     * Gets the location of a suggested meeting.
     */
-  var location: String
+  var location: String = js.native
   /**
     * Gets a string that was identified as a meeting suggestion.
     */
-  var meetingString: String
+  var meetingString: String = js.native
   /**
     * Gets the date and time that a suggested meeting is to begin.
     */
-  var start: String
+  var start: String = js.native
   /**
     * Gets the subject of a suggested meeting.
     */
-  var subject: String
+  var subject: String = js.native
 }
 
 object MeetingSuggestion {
@@ -59,5 +60,32 @@ object MeetingSuggestion {
     val __obj = js.Dynamic.literal(attendees = attendees.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], meetingString = meetingString.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeetingSuggestion]
   }
+  @scala.inline
+  implicit class MeetingSuggestionOps[Self <: MeetingSuggestion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttendeesVarargs(value: EmailUser*): Self = this.set("attendees", js.Array(value :_*))
+    @scala.inline
+    def setAttendees(value: js.Array[EmailUser]): Self = this.set("attendees", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMeetingString(value: String): Self = this.set("meetingString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Anchor")
+@JSImport("grommet/es6", "Anchor")
 @js.native
 object Anchor extends TopLevel[
       FC[

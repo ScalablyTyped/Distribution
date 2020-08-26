@@ -44,6 +44,13 @@ trait Typeoftelemetry extends js.Object {
     * @param [extra] An optional object of the form (string -> string). It should only contain registered extra keys.
     */
   def recordEvent(category: String, method: String, `object`: String): js.Promise[_] = js.native
+  def recordEvent(
+    category: String,
+    method: String,
+    `object`: String,
+    value: js.UndefOr[scala.Nothing],
+    extra: StringDictionary[String]
+  ): js.Promise[_] = js.native
   def recordEvent(category: String, method: String, `object`: String, value: String): js.Promise[_] = js.native
   def recordEvent(category: String, method: String, `object`: String, value: String, extra: StringDictionary[String]): js.Promise[_] = js.native
   /**

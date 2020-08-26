@@ -33,131 +33,123 @@ trait Validation extends js.Object {
   val Type: Double = js.native
   val Value: Boolean = js.native
   def Add(): Unit = js.native
+  def Add(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: js.UndefOr[XlDVAlertStyle],
+    Operator: js.UndefOr[`1` | `2`],
+    Formula1: js.UndefOr[String],
+    Formula2: js.UndefOr[String]
+  ): Unit = js.native
+  def Add(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String
+  ): Unit = js.native
+  def Add(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: XlFormatConditionOperator
+  ): Unit = js.native
+  def Add(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: XlFormatConditionOperator,
+    Formula1: String
+  ): Unit = js.native
+  def Add(Type: js.UndefOr[scala.Nothing], AlertStyle: XlDVAlertStyle): Unit = js.native
+  def Add(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: XlDVAlertStyle,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String
+  ): Unit = js.native
+  def Add(Type: js.UndefOr[scala.Nothing], AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
+  def Add(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: XlDVAlertStyle,
+    Operator: XlFormatConditionOperator,
+    Formula1: String
+  ): Unit = js.native
   def Add(Type: XlDVType): Unit = js.native
+  def Add(
+    Type: XlDVType,
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String
+  ): Unit = js.native
+  def Add(Type: XlDVType, AlertStyle: js.UndefOr[scala.Nothing], Operator: XlFormatConditionOperator): Unit = js.native
+  def Add(
+    Type: XlDVType,
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: XlFormatConditionOperator,
+    Formula1: String
+  ): Unit = js.native
   def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle): Unit = js.native
+  def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: js.UndefOr[scala.Nothing], Formula1: String): Unit = js.native
   def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
   def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
-  def Add(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  def Add(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  def Add(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
-  def Add(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  def Add(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  def Add(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  def Add(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  def Add(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  def Add(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  def Add(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  def Add(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  def Add(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
-  def Add(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  def Add(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  def Add(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  def Add(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  def Add(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  def Add(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
-  def Add(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  def Add(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  def Add(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  def Add(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  def Add(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  def Add(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
   @JSName("Add")
   def Add_0(Type: `0`): Unit = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`): Unit = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`, AlertStyle: XlDVAlertStyle): Unit = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`): Unit = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`, AlertStyle: XlDVAlertStyle): Unit = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
-  @JSName("Add")
-  def Add_4(Type: `4`): Unit = js.native
-  @JSName("Add")
-  def Add_4(Type: `4`, AlertStyle: XlDVAlertStyle): Unit = js.native
-  @JSName("Add")
-  def Add_5(Type: `5`): Unit = js.native
-  @JSName("Add")
-  def Add_5(Type: `5`, AlertStyle: XlDVAlertStyle): Unit = js.native
-  @JSName("Add")
-  def Add_6(Type: `6`): Unit = js.native
-  @JSName("Add")
-  def Add_6(Type: `6`, AlertStyle: XlDVAlertStyle): Unit = js.native
   def Delete(): Unit = js.native
   def Modify(): Unit = js.native
+  def Modify(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: js.UndefOr[XlDVAlertStyle],
+    Operator: js.UndefOr[`1` | `2`],
+    Formula1: js.UndefOr[String],
+    Formula2: js.UndefOr[String]
+  ): Unit = js.native
+  def Modify(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String
+  ): Unit = js.native
+  def Modify(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: XlFormatConditionOperator
+  ): Unit = js.native
+  def Modify(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: XlFormatConditionOperator,
+    Formula1: String
+  ): Unit = js.native
+  def Modify(Type: js.UndefOr[scala.Nothing], AlertStyle: XlDVAlertStyle): Unit = js.native
+  def Modify(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: XlDVAlertStyle,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String
+  ): Unit = js.native
+  def Modify(Type: js.UndefOr[scala.Nothing], AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
+  def Modify(
+    Type: js.UndefOr[scala.Nothing],
+    AlertStyle: XlDVAlertStyle,
+    Operator: XlFormatConditionOperator,
+    Formula1: String
+  ): Unit = js.native
   def Modify(Type: XlDVType): Unit = js.native
+  def Modify(
+    Type: XlDVType,
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String
+  ): Unit = js.native
+  def Modify(Type: XlDVType, AlertStyle: js.UndefOr[scala.Nothing], Operator: XlFormatConditionOperator): Unit = js.native
+  def Modify(
+    Type: XlDVType,
+    AlertStyle: js.UndefOr[scala.Nothing],
+    Operator: XlFormatConditionOperator,
+    Formula1: String
+  ): Unit = js.native
   def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle): Unit = js.native
+  def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: js.UndefOr[scala.Nothing], Formula1: String): Unit = js.native
   def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
   def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
-  def Modify(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  def Modify(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  def Modify(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
-  def Modify(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  def Modify(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  def Modify(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  def Modify(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  def Modify(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  def Modify(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  def Modify(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  def Modify(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  def Modify(Type: `4`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
-  def Modify(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  def Modify(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  def Modify(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  def Modify(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  def Modify(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  def Modify(Type: `5`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
-  def Modify(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  def Modify(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  def Modify(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  def Modify(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  def Modify(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  def Modify(Type: `6`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
   @JSName("Modify")
   def Modify_0(Type: `0`): Unit = js.native
-  @JSName("Modify")
-  def Modify_1(Type: `1`): Unit = js.native
-  @JSName("Modify")
-  def Modify_1(Type: `1`, AlertStyle: XlDVAlertStyle): Unit = js.native
-  @JSName("Modify")
-  def Modify_1(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `1`): Unit = js.native
-  @JSName("Modify")
-  def Modify_1(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String): Unit = js.native
-  @JSName("Modify")
-  def Modify_1(Type: `1`, AlertStyle: XlDVAlertStyle, Operator: `1`, Formula1: String, Formula2: String): Unit = js.native
-  @JSName("Modify")
-  def Modify_2(Type: `2`): Unit = js.native
-  @JSName("Modify")
-  def Modify_2(Type: `2`, AlertStyle: XlDVAlertStyle): Unit = js.native
-  @JSName("Modify")
-  def Modify_2(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `2`): Unit = js.native
-  @JSName("Modify")
-  def Modify_2(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String): Unit = js.native
-  @JSName("Modify")
-  def Modify_2(Type: `2`, AlertStyle: XlDVAlertStyle, Operator: `2`, Formula1: String, Formula2: String): Unit = js.native
-  @JSName("Modify")
-  def Modify_4(Type: `4`): Unit = js.native
-  @JSName("Modify")
-  def Modify_4(Type: `4`, AlertStyle: XlDVAlertStyle): Unit = js.native
-  @JSName("Modify")
-  def Modify_5(Type: `5`): Unit = js.native
-  @JSName("Modify")
-  def Modify_5(Type: `5`, AlertStyle: XlDVAlertStyle): Unit = js.native
-  @JSName("Modify")
-  def Modify_6(Type: `6`): Unit = js.native
-  @JSName("Modify")
-  def Modify_6(Type: `6`, AlertStyle: XlDVAlertStyle): Unit = js.native
 }
 

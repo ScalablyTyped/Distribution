@@ -22,11 +22,32 @@ trait SchemaManifestsListResponse extends js.Object {
 
 object SchemaManifestsListResponse {
   @scala.inline
-  def apply(manifests: js.Array[SchemaManifest] = null, nextPageToken: String = null): SchemaManifestsListResponse = {
+  def apply(): SchemaManifestsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (manifests != null) __obj.updateDynamic("manifests")(manifests.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManifestsListResponse]
   }
+  @scala.inline
+  implicit class SchemaManifestsListResponseOps[Self <: SchemaManifestsListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setManifestsVarargs(value: SchemaManifest*): Self = this.set("manifests", js.Array(value :_*))
+    @scala.inline
+    def setManifests(value: js.Array[SchemaManifest]): Self = this.set("manifests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifests: Self = this.set("manifests", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

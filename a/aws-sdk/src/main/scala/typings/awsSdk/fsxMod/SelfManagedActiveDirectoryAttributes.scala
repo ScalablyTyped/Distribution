@@ -30,20 +30,44 @@ trait SelfManagedActiveDirectoryAttributes extends js.Object {
 
 object SelfManagedActiveDirectoryAttributes {
   @scala.inline
-  def apply(
-    DnsIps: DnsIps = null,
-    DomainName: ActiveDirectoryFullyQualifiedName = null,
-    FileSystemAdministratorsGroup: FileSystemAdministratorsGroupName = null,
-    OrganizationalUnitDistinguishedName: OrganizationalUnitDistinguishedName = null,
-    UserName: DirectoryUserName = null
-  ): SelfManagedActiveDirectoryAttributes = {
+  def apply(): SelfManagedActiveDirectoryAttributes = {
     val __obj = js.Dynamic.literal()
-    if (DnsIps != null) __obj.updateDynamic("DnsIps")(DnsIps.asInstanceOf[js.Any])
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
-    if (FileSystemAdministratorsGroup != null) __obj.updateDynamic("FileSystemAdministratorsGroup")(FileSystemAdministratorsGroup.asInstanceOf[js.Any])
-    if (OrganizationalUnitDistinguishedName != null) __obj.updateDynamic("OrganizationalUnitDistinguishedName")(OrganizationalUnitDistinguishedName.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelfManagedActiveDirectoryAttributes]
   }
+  @scala.inline
+  implicit class SelfManagedActiveDirectoryAttributesOps[Self <: SelfManagedActiveDirectoryAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDnsIpsVarargs(value: IpAddress*): Self = this.set("DnsIps", js.Array(value :_*))
+    @scala.inline
+    def setDnsIps(value: DnsIps): Self = this.set("DnsIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsIps: Self = this.set("DnsIps", js.undefined)
+    @scala.inline
+    def setDomainName(value: ActiveDirectoryFullyQualifiedName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    @scala.inline
+    def setFileSystemAdministratorsGroup(value: FileSystemAdministratorsGroupName): Self = this.set("FileSystemAdministratorsGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemAdministratorsGroup: Self = this.set("FileSystemAdministratorsGroup", js.undefined)
+    @scala.inline
+    def setOrganizationalUnitDistinguishedName(value: OrganizationalUnitDistinguishedName): Self = this.set("OrganizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationalUnitDistinguishedName: Self = this.set("OrganizationalUnitDistinguishedName", js.undefined)
+    @scala.inline
+    def setUserName(value: DirectoryUserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("UserName", js.undefined)
+  }
+  
 }
 

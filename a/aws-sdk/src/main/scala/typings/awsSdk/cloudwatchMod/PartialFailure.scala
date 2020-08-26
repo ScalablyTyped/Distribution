@@ -26,18 +26,38 @@ trait PartialFailure extends js.Object {
 
 object PartialFailure {
   @scala.inline
-  def apply(
-    ExceptionType: ExceptionType = null,
-    FailureCode: FailureCode = null,
-    FailureDescription: FailureDescription = null,
-    FailureResource: FailureResource = null
-  ): PartialFailure = {
+  def apply(): PartialFailure = {
     val __obj = js.Dynamic.literal()
-    if (ExceptionType != null) __obj.updateDynamic("ExceptionType")(ExceptionType.asInstanceOf[js.Any])
-    if (FailureCode != null) __obj.updateDynamic("FailureCode")(FailureCode.asInstanceOf[js.Any])
-    if (FailureDescription != null) __obj.updateDynamic("FailureDescription")(FailureDescription.asInstanceOf[js.Any])
-    if (FailureResource != null) __obj.updateDynamic("FailureResource")(FailureResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialFailure]
   }
+  @scala.inline
+  implicit class PartialFailureOps[Self <: PartialFailure] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExceptionType(value: ExceptionType): Self = this.set("ExceptionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExceptionType: Self = this.set("ExceptionType", js.undefined)
+    @scala.inline
+    def setFailureCode(value: FailureCode): Self = this.set("FailureCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCode: Self = this.set("FailureCode", js.undefined)
+    @scala.inline
+    def setFailureDescription(value: FailureDescription): Self = this.set("FailureDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDescription: Self = this.set("FailureDescription", js.undefined)
+    @scala.inline
+    def setFailureResource(value: FailureResource): Self = this.set("FailureResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureResource: Self = this.set("FailureResource", js.undefined)
+  }
+  
 }
 

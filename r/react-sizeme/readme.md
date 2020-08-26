@@ -11,8 +11,8 @@ Make your React Components aware of their width and/or height!
 | Full name          | react-sizeme |
 | Keywords           | library |
 | # releases         | 21 |
-| # dependents       | 118 |
-| # downloads        | 11498794 |
+| # dependents       | 119 |
+| # downloads        | 12614981 |
 | # stars            | 9 |
 
 ## Links

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JS2XML
   extends ChangingKeyNames
      with IgnoreOptions {
@@ -15,7 +16,7 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var attributeValueFn: js.UndefOr[
     js.Function4[
       /* attributeValue */ String, 
@@ -24,7 +25,7 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var attributesFn: js.UndefOr[
     js.Function3[
       /* value */ String, 
@@ -32,7 +33,7 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var cdataFn: js.UndefOr[
     js.Function3[
       /* value */ String, 
@@ -40,7 +41,7 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var commentFn: js.UndefOr[
     js.Function3[
       /* value */ String, 
@@ -48,8 +49,8 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
-  var compact: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var compact: js.UndefOr[Boolean] = js.native
   var doctypeFn: js.UndefOr[
     js.Function3[
       /* value */ String, 
@@ -57,7 +58,7 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var elementNameFn: js.UndefOr[
     js.Function3[
       /* value */ String, 
@@ -65,15 +66,15 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
-  var fullTagEmptyElement: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var fullTagEmptyElement: js.UndefOr[Boolean] = js.native
   var fullTagEmptyElementFn: js.UndefOr[
     js.Function2[/* currentElementName */ String, /* currentElementObj */ js.Object, Unit]
-  ] = js.undefined
-  var indentAttributes: js.UndefOr[Boolean] = js.undefined
-  var indentCdata: js.UndefOr[Boolean] = js.undefined
-  var indentInstruction: js.UndefOr[Boolean] = js.undefined
-  var indentText: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var indentAttributes: js.UndefOr[Boolean] = js.native
+  var indentCdata: js.UndefOr[Boolean] = js.native
+  var indentInstruction: js.UndefOr[Boolean] = js.native
+  var indentText: js.UndefOr[Boolean] = js.native
   var instructionFn: js.UndefOr[
     js.Function4[
       /* instructionValue */ String, 
@@ -82,7 +83,7 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var instructionNameFn: js.UndefOr[
     js.Function4[
       /* instructionName */ String, 
@@ -91,9 +92,9 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
-  var noQuotesForNativeAttributes: js.UndefOr[Boolean] = js.undefined
-  var spaces: js.UndefOr[Double | String] = js.undefined
+  ] = js.native
+  var noQuotesForNativeAttributes: js.UndefOr[Boolean] = js.native
+  var spaces: js.UndefOr[Double | String] = js.native
   var textFn: js.UndefOr[
     js.Function3[
       /* value */ String, 
@@ -101,89 +102,123 @@ trait JS2XML
       /* currentElementObj */ js.Object, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object JS2XML {
   @scala.inline
-  def apply(
-    attributeNameFn: (/* attributeName */ String, /* attributeValue */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    attributeValueFn: (/* attributeValue */ String, /* attributeName */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    attributesFn: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    attributesKey: String = null,
-    cdataFn: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    cdataKey: String = null,
-    commentFn: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    commentKey: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    declarationKey: String = null,
-    doctypeFn: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    doctypeKey: String = null,
-    elementNameFn: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    elementsKey: String = null,
-    fullTagEmptyElement: js.UndefOr[Boolean] = js.undefined,
-    fullTagEmptyElementFn: (/* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    ignoreAttributes: js.UndefOr[Boolean] = js.undefined,
-    ignoreCdata: js.UndefOr[Boolean] = js.undefined,
-    ignoreComment: js.UndefOr[Boolean] = js.undefined,
-    ignoreDeclaration: js.UndefOr[Boolean] = js.undefined,
-    ignoreDoctype: js.UndefOr[Boolean] = js.undefined,
-    ignoreInstruction: js.UndefOr[Boolean] = js.undefined,
-    ignoreText: js.UndefOr[Boolean] = js.undefined,
-    indentAttributes: js.UndefOr[Boolean] = js.undefined,
-    indentCdata: js.UndefOr[Boolean] = js.undefined,
-    indentInstruction: js.UndefOr[Boolean] = js.undefined,
-    indentText: js.UndefOr[Boolean] = js.undefined,
-    instructionFn: (/* instructionValue */ String, /* instructionName */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    instructionKey: String = null,
-    instructionNameFn: (/* instructionName */ String, /* instructionValue */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    nameKey: String = null,
-    noQuotesForNativeAttributes: js.UndefOr[Boolean] = js.undefined,
-    parentKey: String = null,
-    spaces: Double | String = null,
-    textFn: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit = null,
-    textKey: String = null,
-    typeKey: String = null
-  ): JS2XML = {
+  def apply(): JS2XML = {
     val __obj = js.Dynamic.literal()
-    if (attributeNameFn != null) __obj.updateDynamic("attributeNameFn")(js.Any.fromFunction4(attributeNameFn))
-    if (attributeValueFn != null) __obj.updateDynamic("attributeValueFn")(js.Any.fromFunction4(attributeValueFn))
-    if (attributesFn != null) __obj.updateDynamic("attributesFn")(js.Any.fromFunction3(attributesFn))
-    if (attributesKey != null) __obj.updateDynamic("attributesKey")(attributesKey.asInstanceOf[js.Any])
-    if (cdataFn != null) __obj.updateDynamic("cdataFn")(js.Any.fromFunction3(cdataFn))
-    if (cdataKey != null) __obj.updateDynamic("cdataKey")(cdataKey.asInstanceOf[js.Any])
-    if (commentFn != null) __obj.updateDynamic("commentFn")(js.Any.fromFunction3(commentFn))
-    if (commentKey != null) __obj.updateDynamic("commentKey")(commentKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
-    if (declarationKey != null) __obj.updateDynamic("declarationKey")(declarationKey.asInstanceOf[js.Any])
-    if (doctypeFn != null) __obj.updateDynamic("doctypeFn")(js.Any.fromFunction3(doctypeFn))
-    if (doctypeKey != null) __obj.updateDynamic("doctypeKey")(doctypeKey.asInstanceOf[js.Any])
-    if (elementNameFn != null) __obj.updateDynamic("elementNameFn")(js.Any.fromFunction3(elementNameFn))
-    if (elementsKey != null) __obj.updateDynamic("elementsKey")(elementsKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullTagEmptyElement)) __obj.updateDynamic("fullTagEmptyElement")(fullTagEmptyElement.get.asInstanceOf[js.Any])
-    if (fullTagEmptyElementFn != null) __obj.updateDynamic("fullTagEmptyElementFn")(js.Any.fromFunction2(fullTagEmptyElementFn))
-    if (!js.isUndefined(ignoreAttributes)) __obj.updateDynamic("ignoreAttributes")(ignoreAttributes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCdata)) __obj.updateDynamic("ignoreCdata")(ignoreCdata.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreComment)) __obj.updateDynamic("ignoreComment")(ignoreComment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDeclaration)) __obj.updateDynamic("ignoreDeclaration")(ignoreDeclaration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDoctype)) __obj.updateDynamic("ignoreDoctype")(ignoreDoctype.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreInstruction)) __obj.updateDynamic("ignoreInstruction")(ignoreInstruction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreText)) __obj.updateDynamic("ignoreText")(ignoreText.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentAttributes)) __obj.updateDynamic("indentAttributes")(indentAttributes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentCdata)) __obj.updateDynamic("indentCdata")(indentCdata.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentInstruction)) __obj.updateDynamic("indentInstruction")(indentInstruction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentText)) __obj.updateDynamic("indentText")(indentText.get.asInstanceOf[js.Any])
-    if (instructionFn != null) __obj.updateDynamic("instructionFn")(js.Any.fromFunction4(instructionFn))
-    if (instructionKey != null) __obj.updateDynamic("instructionKey")(instructionKey.asInstanceOf[js.Any])
-    if (instructionNameFn != null) __obj.updateDynamic("instructionNameFn")(js.Any.fromFunction4(instructionNameFn))
-    if (nameKey != null) __obj.updateDynamic("nameKey")(nameKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(noQuotesForNativeAttributes)) __obj.updateDynamic("noQuotesForNativeAttributes")(noQuotesForNativeAttributes.get.asInstanceOf[js.Any])
-    if (parentKey != null) __obj.updateDynamic("parentKey")(parentKey.asInstanceOf[js.Any])
-    if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
-    if (textFn != null) __obj.updateDynamic("textFn")(js.Any.fromFunction3(textFn))
-    if (textKey != null) __obj.updateDynamic("textKey")(textKey.asInstanceOf[js.Any])
-    if (typeKey != null) __obj.updateDynamic("typeKey")(typeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[JS2XML]
   }
+  @scala.inline
+  implicit class JS2XMLOps[Self <: JS2XML] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeNameFn(
+      value: (/* attributeName */ String, /* attributeValue */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("attributeNameFn", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteAttributeNameFn: Self = this.set("attributeNameFn", js.undefined)
+    @scala.inline
+    def setAttributeValueFn(
+      value: (/* attributeValue */ String, /* attributeName */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("attributeValueFn", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteAttributeValueFn: Self = this.set("attributeValueFn", js.undefined)
+    @scala.inline
+    def setAttributesFn(
+      value: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("attributesFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAttributesFn: Self = this.set("attributesFn", js.undefined)
+    @scala.inline
+    def setCdataFn(
+      value: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("cdataFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCdataFn: Self = this.set("cdataFn", js.undefined)
+    @scala.inline
+    def setCommentFn(
+      value: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("commentFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCommentFn: Self = this.set("commentFn", js.undefined)
+    @scala.inline
+    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setDoctypeFn(
+      value: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("doctypeFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDoctypeFn: Self = this.set("doctypeFn", js.undefined)
+    @scala.inline
+    def setElementNameFn(
+      value: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("elementNameFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteElementNameFn: Self = this.set("elementNameFn", js.undefined)
+    @scala.inline
+    def setFullTagEmptyElement(value: Boolean): Self = this.set("fullTagEmptyElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullTagEmptyElement: Self = this.set("fullTagEmptyElement", js.undefined)
+    @scala.inline
+    def setFullTagEmptyElementFn(value: (/* currentElementName */ String, /* currentElementObj */ js.Object) => Unit): Self = this.set("fullTagEmptyElementFn", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFullTagEmptyElementFn: Self = this.set("fullTagEmptyElementFn", js.undefined)
+    @scala.inline
+    def setIndentAttributes(value: Boolean): Self = this.set("indentAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentAttributes: Self = this.set("indentAttributes", js.undefined)
+    @scala.inline
+    def setIndentCdata(value: Boolean): Self = this.set("indentCdata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentCdata: Self = this.set("indentCdata", js.undefined)
+    @scala.inline
+    def setIndentInstruction(value: Boolean): Self = this.set("indentInstruction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentInstruction: Self = this.set("indentInstruction", js.undefined)
+    @scala.inline
+    def setIndentText(value: Boolean): Self = this.set("indentText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentText: Self = this.set("indentText", js.undefined)
+    @scala.inline
+    def setInstructionFn(
+      value: (/* instructionValue */ String, /* instructionName */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("instructionFn", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteInstructionFn: Self = this.set("instructionFn", js.undefined)
+    @scala.inline
+    def setInstructionNameFn(
+      value: (/* instructionName */ String, /* instructionValue */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("instructionNameFn", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteInstructionNameFn: Self = this.set("instructionNameFn", js.undefined)
+    @scala.inline
+    def setNoQuotesForNativeAttributes(value: Boolean): Self = this.set("noQuotesForNativeAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoQuotesForNativeAttributes: Self = this.set("noQuotesForNativeAttributes", js.undefined)
+    @scala.inline
+    def setSpaces(value: Double | String): Self = this.set("spaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpaces: Self = this.set("spaces", js.undefined)
+    @scala.inline
+    def setTextFn(
+      value: (/* value */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
+    ): Self = this.set("textFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteTextFn: Self = this.set("textFn", js.undefined)
+  }
+  
 }
 

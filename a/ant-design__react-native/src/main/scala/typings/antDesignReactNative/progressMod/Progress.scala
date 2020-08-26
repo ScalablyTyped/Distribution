@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Progress
   extends Component[ProgressProps, js.Any, js.Any] {
+  @JSName("UNSAFE_componentWillReceiveProps")
+  def UNSAFE_componentWillReceiveProps_MProgress(nextProps: ProgressProps): Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MProgress(): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MProgress(nextProps: ProgressProps): Unit = js.native
   def getWidth(): Double = js.native
   def getWidth(percent: Double): Double = js.native
   def normalPercent(): js.Any = js.native

@@ -12,7 +12,7 @@ JUI provide all kinds of UI components that are used in web pages. However, char
 | Keywords           | HTML5, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development, free, MIT |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 651 |
+| # downloads        | 648 |
 | # stars            | 0 |
 
 ## Links

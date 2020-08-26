@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SceneViewHighlightOptions extends AnonymousAccessor {
   /**
     * The color of the highlight.
@@ -14,7 +15,7 @@ trait SceneViewHighlightOptions extends AnonymousAccessor {
     *
     * @default #00ffff
     */
-  var color: js.UndefOr[Color_] = js.undefined
+  var color: js.UndefOr[Color_] = js.native
   /**
     * The opacity of the fill (area within the halo). This will be multiplied with the opacity specified in `color`.
     *
@@ -22,13 +23,13 @@ trait SceneViewHighlightOptions extends AnonymousAccessor {
     *
     * @default 0.25
     */
-  var fillOpacity: js.UndefOr[Double] = js.undefined
+  var fillOpacity: js.UndefOr[Double] = js.native
   /**
     * An optional color for the halo of the highlight. If unset, the `color` will be used for the halo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
-  var haloColor: js.UndefOr[Color_] = js.undefined
+  var haloColor: js.UndefOr[Color_] = js.native
   /**
     * The opacity of the highlight halo. This will be multiplied with the opacity specified in `color`.
     *
@@ -36,7 +37,7 @@ trait SceneViewHighlightOptions extends AnonymousAccessor {
     *
     * @default 1
     */
-  var haloOpacity: js.UndefOr[Double] = js.undefined
+  var haloOpacity: js.UndefOr[Double] = js.native
 }
 
 object SceneViewHighlightOptions {
@@ -45,23 +46,41 @@ object SceneViewHighlightOptions {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    color: Color_ = null,
-    fillOpacity: js.UndefOr[Double] = js.undefined,
-    get: /* propertyName */ String => _ = null,
-    haloColor: Color_ = null,
-    haloOpacity: js.UndefOr[Double] = js.undefined,
-    set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewHighlightOptions]) with (js.Function1[/* props */ HashMap[_], SceneViewHighlightOptions]) = null,
-    watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
+    set: (js.UndefOr[
+      js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewHighlightOptions]
+    ]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], SceneViewHighlightOptions]])
   ): SceneViewHighlightOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(haloOpacity)) __obj.updateDynamic("haloOpacity")(haloOpacity.get.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewHighlightOptions]
   }
+  @scala.inline
+  implicit class SceneViewHighlightOptionsOps[Self <: SceneViewHighlightOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: Color_): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    @scala.inline
+    def setHaloColor(value: Color_): Self = this.set("haloColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHaloColor: Self = this.set("haloColor", js.undefined)
+    @scala.inline
+    def setHaloOpacity(value: Double): Self = this.set("haloOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHaloOpacity: Self = this.set("haloOpacity", js.undefined)
+  }
+  
 }
 

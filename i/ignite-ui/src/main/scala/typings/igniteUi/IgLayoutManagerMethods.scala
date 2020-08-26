@@ -22,7 +22,15 @@ trait IgLayoutManagerMethods extends js.Object {
     * @param event Indicates the browser even which triggered this action (not API).
     */
   def reflow(): Unit = js.native
+  def reflow(
+    forceReflow: js.UndefOr[scala.Nothing],
+    animationDuration: js.UndefOr[scala.Nothing],
+    event: js.Object
+  ): Unit = js.native
+  def reflow(forceReflow: js.UndefOr[scala.Nothing], animationDuration: Double): Unit = js.native
+  def reflow(forceReflow: js.UndefOr[scala.Nothing], animationDuration: Double, event: js.Object): Unit = js.native
   def reflow(forceReflow: Boolean): Unit = js.native
+  def reflow(forceReflow: Boolean, animationDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def reflow(forceReflow: Boolean, animationDuration: Double): Unit = js.native
   def reflow(forceReflow: Boolean, animationDuration: Double, event: js.Object): Unit = js.native
 }

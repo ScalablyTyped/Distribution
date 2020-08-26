@@ -25,14 +25,10 @@ class Node () extends NodeOptions {
   var hangup_Original: TwimlMethod = js.native
   @JSName("leave")
   var leave_Original: TwimlMethod = js.native
-  /* CompleteClass */
-  override var legalNodes: js.Array[String] = js.native
   @JSName("media")
   var media_Original: TwimlMethod = js.native
   @JSName("message")
   var message_Original: TwimlMethod = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   @JSName("number")
   var number_Original: TwimlMethod = js.native
   @JSName("pause")

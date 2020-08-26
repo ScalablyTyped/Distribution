@@ -34,13 +34,13 @@ trait DataSource extends js.Object {
   def load(): Promise[_] with JQueryPromise[_] = js.native
   /** @name DataSource.loadOptions() */
   def loadOptions(): js.Any = js.native
-  /** @name EventsMixin.off(eventName) */
+  /** @name DataSource.off(eventName) */
   def off(eventName: String): this.type = js.native
-  /** @name EventsMixin.off(eventName, eventHandler) */
+  /** @name DataSource.off(eventName, eventHandler) */
   def off(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** @name EventsMixin.on(eventName, eventHandler) */
+  /** @name DataSource.on(eventName, eventHandler) */
   def on(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** @name EventsMixin.on(events) */
+  /** @name DataSource.on(events) */
   def on(events: js.Any): this.type = js.native
   /** @name DataSource.pageIndex() */
   def pageIndex(): Double = js.native

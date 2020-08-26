@@ -40,20 +40,44 @@ trait SchemaBlock extends js.Object {
 
 object SchemaBlock {
   @scala.inline
-  def apply(
-    blockType: String = null,
-    boundingBox: SchemaBoundingPoly = null,
-    confidence: js.UndefOr[Double] = js.undefined,
-    paragraphs: js.Array[SchemaParagraph] = null,
-    property: SchemaTextProperty = null
-  ): SchemaBlock = {
+  def apply(): SchemaBlock = {
     val __obj = js.Dynamic.literal()
-    if (blockType != null) __obj.updateDynamic("blockType")(blockType.asInstanceOf[js.Any])
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBlock]
   }
+  @scala.inline
+  implicit class SchemaBlockOps[Self <: SchemaBlock] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockType(value: String): Self = this.set("blockType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockType: Self = this.set("blockType", js.undefined)
+    @scala.inline
+    def setBoundingBox(value: SchemaBoundingPoly): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingBox: Self = this.set("boundingBox", js.undefined)
+    @scala.inline
+    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    @scala.inline
+    def setParagraphsVarargs(value: SchemaParagraph*): Self = this.set("paragraphs", js.Array(value :_*))
+    @scala.inline
+    def setParagraphs(value: js.Array[SchemaParagraph]): Self = this.set("paragraphs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraphs: Self = this.set("paragraphs", js.undefined)
+    @scala.inline
+    def setProperty(value: SchemaTextProperty): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+  }
+  
 }
 

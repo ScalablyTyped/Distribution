@@ -30,18 +30,38 @@ trait SchemaDiskUtilization extends js.Object {
 
 object SchemaDiskUtilization {
   @scala.inline
-  def apply(
-    targetReadBytesPerSecond: js.UndefOr[Double] = js.undefined,
-    targetReadOpsPerSecond: js.UndefOr[Double] = js.undefined,
-    targetWriteBytesPerSecond: js.UndefOr[Double] = js.undefined,
-    targetWriteOpsPerSecond: js.UndefOr[Double] = js.undefined
-  ): SchemaDiskUtilization = {
+  def apply(): SchemaDiskUtilization = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(targetReadBytesPerSecond)) __obj.updateDynamic("targetReadBytesPerSecond")(targetReadBytesPerSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetReadOpsPerSecond)) __obj.updateDynamic("targetReadOpsPerSecond")(targetReadOpsPerSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetWriteBytesPerSecond)) __obj.updateDynamic("targetWriteBytesPerSecond")(targetWriteBytesPerSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetWriteOpsPerSecond)) __obj.updateDynamic("targetWriteOpsPerSecond")(targetWriteOpsPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDiskUtilization]
   }
+  @scala.inline
+  implicit class SchemaDiskUtilizationOps[Self <: SchemaDiskUtilization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetReadBytesPerSecond(value: Double): Self = this.set("targetReadBytesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetReadBytesPerSecond: Self = this.set("targetReadBytesPerSecond", js.undefined)
+    @scala.inline
+    def setTargetReadOpsPerSecond(value: Double): Self = this.set("targetReadOpsPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetReadOpsPerSecond: Self = this.set("targetReadOpsPerSecond", js.undefined)
+    @scala.inline
+    def setTargetWriteBytesPerSecond(value: Double): Self = this.set("targetWriteBytesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetWriteBytesPerSecond: Self = this.set("targetWriteBytesPerSecond", js.undefined)
+    @scala.inline
+    def setTargetWriteOpsPerSecond(value: Double): Self = this.set("targetWriteOpsPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetWriteOpsPerSecond: Self = this.set("targetWriteOpsPerSecond", js.undefined)
+  }
+  
 }
 

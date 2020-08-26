@@ -11,8 +11,8 @@ JWT(JSON Web Token) encode and decode module
 | Full name          | jwt-simple |
 | Keywords           | jwt, encode, decode |
 | # releases         | 6 |
-| # dependents       | 365 |
-| # downloads        | 6359084 |
+| # dependents       | 368 |
+| # downloads        | 6378477 |
 | # stars            | 89 |
 
 ## Links

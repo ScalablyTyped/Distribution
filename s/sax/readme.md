@@ -11,8 +11,8 @@ An evented streaming XML parser in JavaScript
 | Full name          | sax |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 722 |
-| # downloads        | 612210000 |
+| # dependents       | 736 |
+| # downloads        | 640720894 |
 | # stars            | 34 |
 
 ## Links

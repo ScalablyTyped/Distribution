@@ -12,7 +12,7 @@ A node.js library to extract Exif metadata from images.
 | Keywords           | exif, image, jpeg, jpg, makernotes, gps |
 | # releases         | 1 |
 | # dependents       | 76 |
-| # downloads        | 265997 |
+| # downloads        | 277990 |
 | # stars            | 14 |
 
 ## Links

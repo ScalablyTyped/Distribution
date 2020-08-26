@@ -9,12 +9,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Props extends js.Object {
-  var descriptors: SceneDescriptorMap
-  var `lazy`: Boolean
-  var navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams]
-  var navigationConfig: DrawerOptionscontentCompo
-  var screenProps: js.Any
+  var descriptors: SceneDescriptorMap = js.native
+  var `lazy`: Boolean = js.native
+  var navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams] = js.native
+  var navigationConfig: DrawerOptionscontentCompo = js.native
+  var screenProps: js.Any = js.native
 }
 
 object Props {
@@ -30,5 +31,28 @@ object Props {
     __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  @scala.inline
+  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescriptors(value: SceneDescriptorMap): Self = this.set("descriptors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLazy(value: Boolean): Self = this.set("lazy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNavigation(value: NavigationScreenProp[NavigationDrawerState, NavigationParams]): Self = this.set("navigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNavigationConfig(value: DrawerOptionscontentCompo): Self = this.set("navigationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScreenProps(value: js.Any): Self = this.set("screenProps", value.asInstanceOf[js.Any])
+  }
+  
 }
 

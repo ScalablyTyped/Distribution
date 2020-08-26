@@ -12,7 +12,7 @@ Gustavo Niemeyer’s geocoding system
 | Keywords           | geohash, geocode, geolocation, latitude, longitude |
 | # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 278933 |
+| # downloads        | 284893 |
 | # stars            | 1 |
 
 ## Links

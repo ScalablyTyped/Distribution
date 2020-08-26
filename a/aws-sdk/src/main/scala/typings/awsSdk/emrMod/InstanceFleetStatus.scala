@@ -22,16 +22,34 @@ trait InstanceFleetStatus extends js.Object {
 
 object InstanceFleetStatus {
   @scala.inline
-  def apply(
-    State: InstanceFleetState = null,
-    StateChangeReason: InstanceFleetStateChangeReason = null,
-    Timeline: InstanceFleetTimeline = null
-  ): InstanceFleetStatus = {
+  def apply(): InstanceFleetStatus = {
     val __obj = js.Dynamic.literal()
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StateChangeReason != null) __obj.updateDynamic("StateChangeReason")(StateChangeReason.asInstanceOf[js.Any])
-    if (Timeline != null) __obj.updateDynamic("Timeline")(Timeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetStatus]
   }
+  @scala.inline
+  implicit class InstanceFleetStatusOps[Self <: InstanceFleetStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setState(value: InstanceFleetState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStateChangeReason(value: InstanceFleetStateChangeReason): Self = this.set("StateChangeReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateChangeReason: Self = this.set("StateChangeReason", js.undefined)
+    @scala.inline
+    def setTimeline(value: InstanceFleetTimeline): Self = this.set("Timeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeline: Self = this.set("Timeline", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait DetectFacesResponse extends js.Object {
 
 object DetectFacesResponse {
   @scala.inline
-  def apply(FaceDetails: FaceDetailList = null, OrientationCorrection: OrientationCorrection = null): DetectFacesResponse = {
+  def apply(): DetectFacesResponse = {
     val __obj = js.Dynamic.literal()
-    if (FaceDetails != null) __obj.updateDynamic("FaceDetails")(FaceDetails.asInstanceOf[js.Any])
-    if (OrientationCorrection != null) __obj.updateDynamic("OrientationCorrection")(OrientationCorrection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectFacesResponse]
   }
+  @scala.inline
+  implicit class DetectFacesResponseOps[Self <: DetectFacesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFaceDetailsVarargs(value: FaceDetail*): Self = this.set("FaceDetails", js.Array(value :_*))
+    @scala.inline
+    def setFaceDetails(value: FaceDetailList): Self = this.set("FaceDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceDetails: Self = this.set("FaceDetails", js.undefined)
+    @scala.inline
+    def setOrientationCorrection(value: OrientationCorrection): Self = this.set("OrientationCorrection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientationCorrection: Self = this.set("OrientationCorrection", js.undefined)
+  }
+  
 }
 

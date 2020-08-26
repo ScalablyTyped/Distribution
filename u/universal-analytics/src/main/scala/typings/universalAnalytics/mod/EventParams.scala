@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventParams
   extends /* key */ StringDictionary[js.Any] {
-  var dp: js.UndefOr[String] = js.undefined
+  var dp: js.UndefOr[String] = js.native
   /**
     * Event Action
     *
@@ -19,7 +20,7 @@ trait EventParams
     *
     * Example value: `Action`
     */
-  var ea: js.UndefOr[String] = js.undefined
+  var ea: js.UndefOr[String] = js.native
   /**
     * Event Category
     *
@@ -31,7 +32,7 @@ trait EventParams
     *
     * Example value: `Category`
     */
-  var ec: js.UndefOr[String] = js.undefined
+  var ec: js.UndefOr[String] = js.native
   /**
     * Event Label
     *
@@ -41,7 +42,7 @@ trait EventParams
     *
     * Example value: `Label`
     */
-  var el: js.UndefOr[String] = js.undefined
+  var el: js.UndefOr[String] = js.native
   /**
     * Event Value
     *
@@ -49,30 +50,52 @@ trait EventParams
     *
     * Example value: `55`
     */
-  var ev: js.UndefOr[String | Double] = js.undefined
-  var p: js.UndefOr[String] = js.undefined
+  var ev: js.UndefOr[String | Double] = js.native
+  var p: js.UndefOr[String] = js.native
 }
 
 object EventParams {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    dp: String = null,
-    ea: String = null,
-    ec: String = null,
-    el: String = null,
-    ev: String | Double = null,
-    p: String = null
-  ): EventParams = {
+  def apply(): EventParams = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dp != null) __obj.updateDynamic("dp")(dp.asInstanceOf[js.Any])
-    if (ea != null) __obj.updateDynamic("ea")(ea.asInstanceOf[js.Any])
-    if (ec != null) __obj.updateDynamic("ec")(ec.asInstanceOf[js.Any])
-    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (ev != null) __obj.updateDynamic("ev")(ev.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventParams]
   }
+  @scala.inline
+  implicit class EventParamsOps[Self <: EventParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDp(value: String): Self = this.set("dp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDp: Self = this.set("dp", js.undefined)
+    @scala.inline
+    def setEa(value: String): Self = this.set("ea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEa: Self = this.set("ea", js.undefined)
+    @scala.inline
+    def setEc(value: String): Self = this.set("ec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc: Self = this.set("ec", js.undefined)
+    @scala.inline
+    def setEl(value: String): Self = this.set("el", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEl: Self = this.set("el", js.undefined)
+    @scala.inline
+    def setEv(value: String | Double): Self = this.set("ev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEv: Self = this.set("ev", js.undefined)
+    @scala.inline
+    def setP(value: String): Self = this.set("p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP: Self = this.set("p", js.undefined)
+  }
+  
 }
 

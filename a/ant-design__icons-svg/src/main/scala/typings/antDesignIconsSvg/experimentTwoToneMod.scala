@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/ExperimentTwoTone", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/ExperimentTwoTone", JSImport.Namespace)
 @js.native
 object experimentTwoToneMod extends js.Object {
   val default: IconDefinition = js.native

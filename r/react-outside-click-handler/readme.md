@@ -11,8 +11,8 @@ A React component for dealing with clicks outside its subtree
 | Full name          | react-outside-click-handler |
 | Keywords           | - |
 | # releases         | 11 |
-| # dependents       | 72 |
-| # downloads        | 8235494 |
+| # dependents       | 79 |
+| # downloads        | 8695945 |
 | # stars            | 0 |
 
 ## Links

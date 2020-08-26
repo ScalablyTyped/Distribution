@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/panels/DatePanel", JSImport.Namespace)
+@JSImport("rc-picker/es/panels/DatePanel", JSImport.Namespace)
 @js.native
 object datePanelMod extends js.Object {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

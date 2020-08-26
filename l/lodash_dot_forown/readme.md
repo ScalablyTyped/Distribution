@@ -12,7 +12,7 @@ The lodash method `_.forOwn` exported as a module.
 | Keywords           | lodash-modularized, forown |
 | # releases         | 0 |
 | # dependents       | 66 |
-| # downloads        | 8255144 |
+| # downloads        | 8184771 |
 | # stars            | 0 |
 
 ## Links

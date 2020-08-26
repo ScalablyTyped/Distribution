@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 trait PeeringConnectionOptionsState extends js.Object {
   /**
     * An optional configuration block that allows for [VPC Peering Connection]
-    * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that accepts
+    * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options to be set for the VPC that accepts
     * the peering connection (a maximum of one).
     */
   val accepter: js.UndefOr[Input[PeeringConnectionOptionsAccepter]] = js.native
   /**
     * A optional configuration block that allows for [VPC Peering Connection]
-    * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that requests
+    * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options to be set for the VPC that requests
     * the peering connection (a maximum of one).
     */
   val requester: js.UndefOr[Input[PeeringConnectionOptionsRequester]] = js.native
@@ -29,16 +29,34 @@ trait PeeringConnectionOptionsState extends js.Object {
 
 object PeeringConnectionOptionsState {
   @scala.inline
-  def apply(
-    accepter: Input[PeeringConnectionOptionsAccepter] = null,
-    requester: Input[PeeringConnectionOptionsRequester] = null,
-    vpcPeeringConnectionId: Input[String] = null
-  ): PeeringConnectionOptionsState = {
+  def apply(): PeeringConnectionOptionsState = {
     val __obj = js.Dynamic.literal()
-    if (accepter != null) __obj.updateDynamic("accepter")(accepter.asInstanceOf[js.Any])
-    if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
-    if (vpcPeeringConnectionId != null) __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeeringConnectionOptionsState]
   }
+  @scala.inline
+  implicit class PeeringConnectionOptionsStateOps[Self <: PeeringConnectionOptionsState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccepter(value: Input[PeeringConnectionOptionsAccepter]): Self = this.set("accepter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccepter: Self = this.set("accepter", js.undefined)
+    @scala.inline
+    def setRequester(value: Input[PeeringConnectionOptionsRequester]): Self = this.set("requester", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequester: Self = this.set("requester", js.undefined)
+    @scala.inline
+    def setVpcPeeringConnectionId(value: Input[String]): Self = this.set("vpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringConnectionId: Self = this.set("vpcPeeringConnectionId", js.undefined)
+  }
+  
 }
 

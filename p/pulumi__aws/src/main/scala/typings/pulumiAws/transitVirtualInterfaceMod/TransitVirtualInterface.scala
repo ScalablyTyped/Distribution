@@ -73,9 +73,9 @@ class TransitVirtualInterface protected () extends CustomResource {
     */
   val name: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The VLAN ID.
     */
@@ -93,8 +93,10 @@ object TransitVirtualInterface extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): TransitVirtualInterface = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TransitVirtualInterface = js.native
   def get(name: String, id: Input[ID], state: TransitVirtualInterfaceState): TransitVirtualInterface = js.native
   def get(name: String, id: Input[ID], state: TransitVirtualInterfaceState, opts: CustomResourceOptions): TransitVirtualInterface = js.native
   /**

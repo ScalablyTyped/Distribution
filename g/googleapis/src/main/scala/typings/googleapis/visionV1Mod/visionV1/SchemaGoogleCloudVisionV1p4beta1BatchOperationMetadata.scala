@@ -28,12 +28,34 @@ trait SchemaGoogleCloudVisionV1p4beta1BatchOperationMetadata extends js.Object {
 
 object SchemaGoogleCloudVisionV1p4beta1BatchOperationMetadata {
   @scala.inline
-  def apply(endTime: String = null, state: String = null, submitTime: String = null): SchemaGoogleCloudVisionV1p4beta1BatchOperationMetadata = {
+  def apply(): SchemaGoogleCloudVisionV1p4beta1BatchOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (submitTime != null) __obj.updateDynamic("submitTime")(submitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p4beta1BatchOperationMetadata]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p4beta1BatchOperationMetadataOps[Self <: SchemaGoogleCloudVisionV1p4beta1BatchOperationMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setSubmitTime(value: String): Self = this.set("submitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitTime: Self = this.set("submitTime", js.undefined)
+  }
+  
 }
 

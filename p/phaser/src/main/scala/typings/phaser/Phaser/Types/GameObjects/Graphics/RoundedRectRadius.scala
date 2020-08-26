@@ -4,39 +4,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RoundedRectRadius extends js.Object {
   /**
     * Bottom left
     */
-  var bl: js.UndefOr[Double] = js.undefined
+  var bl: js.UndefOr[Double] = js.native
   /**
     * Bottom right
     */
-  var br: js.UndefOr[Double] = js.undefined
+  var br: js.UndefOr[Double] = js.native
   /**
     * Top left
     */
-  var tl: js.UndefOr[Double] = js.undefined
+  var tl: js.UndefOr[Double] = js.native
   /**
     * Top right
     */
-  var tr: js.UndefOr[Double] = js.undefined
+  var tr: js.UndefOr[Double] = js.native
 }
 
 object RoundedRectRadius {
   @scala.inline
-  def apply(
-    bl: js.UndefOr[Double] = js.undefined,
-    br: js.UndefOr[Double] = js.undefined,
-    tl: js.UndefOr[Double] = js.undefined,
-    tr: js.UndefOr[Double] = js.undefined
-  ): RoundedRectRadius = {
+  def apply(): RoundedRectRadius = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bl)) __obj.updateDynamic("bl")(bl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(br)) __obj.updateDynamic("br")(br.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tl)) __obj.updateDynamic("tl")(tl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tr)) __obj.updateDynamic("tr")(tr.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoundedRectRadius]
   }
+  @scala.inline
+  implicit class RoundedRectRadiusOps[Self <: RoundedRectRadius] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBl(value: Double): Self = this.set("bl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBl: Self = this.set("bl", js.undefined)
+    @scala.inline
+    def setBr(value: Double): Self = this.set("br", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBr: Self = this.set("br", js.undefined)
+    @scala.inline
+    def setTl(value: Double): Self = this.set("tl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTl: Self = this.set("tl", js.undefined)
+    @scala.inline
+    def setTr(value: Double): Self = this.set("tr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTr: Self = this.set("tr", js.undefined)
+  }
+  
 }
 

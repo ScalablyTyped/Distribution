@@ -10,9 +10,9 @@ Link component for Ink
 | ------------------ | :-------------: |
 | Full name          | ink-link |
 | Keywords           | ink-component, ink, component, link, hyperlink, url, react, jsx, terminal, term, console, command-line |
-| # releases         | 1 |
-| # dependents       | 19 |
-| # downloads        | 74571 |
+| # releases         | 3 |
+| # dependents       | 20 |
+| # downloads        | 957726 |
 | # stars            | 0 |
 
 ## Links

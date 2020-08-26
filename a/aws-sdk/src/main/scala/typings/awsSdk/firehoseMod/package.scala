@@ -21,6 +21,12 @@ package object firehoseMod {
     - java.lang.String
   */
   type CompressionFormat = typings.awsSdk.firehoseMod._CompressionFormat | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NONE
+    - typings.awsSdk.awsSdkStrings.GZIP
+    - java.lang.String
+  */
+  type ContentEncoding = typings.awsSdk.firehoseMod._ContentEncoding | java.lang.String
   type CopyOptions = java.lang.String
   type Data = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.firehoseMod.Blob | java.lang.String
   type DataTableColumns = java.lang.String
@@ -111,6 +117,21 @@ package object firehoseMod {
   */
   type HECEndpointType = typings.awsSdk.firehoseMod._HECEndpointType | java.lang.String
   type HECToken = java.lang.String
+  type HttpEndpointAccessKey = java.lang.String
+  type HttpEndpointAttributeName = java.lang.String
+  type HttpEndpointAttributeValue = java.lang.String
+  type HttpEndpointBufferingIntervalInSeconds = scala.Double
+  type HttpEndpointBufferingSizeInMBs = scala.Double
+  type HttpEndpointCommonAttributesList = js.Array[typings.awsSdk.firehoseMod.HttpEndpointCommonAttribute]
+  type HttpEndpointName = java.lang.String
+  type HttpEndpointRetryDurationInSeconds = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.FailedDataOnly
+    - typings.awsSdk.awsSdkStrings.AllData
+    - java.lang.String
+  */
+  type HttpEndpointS3BackupMode = typings.awsSdk.firehoseMod._HttpEndpointS3BackupMode | java.lang.String
+  type HttpEndpointUrl = java.lang.String
   type IntervalInSeconds = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AWS_OWNED_CMK

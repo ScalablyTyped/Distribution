@@ -36,18 +36,38 @@ trait SchemaNotificationEndpointGrpcSettings extends js.Object {
 
 object SchemaNotificationEndpointGrpcSettings {
   @scala.inline
-  def apply(
-    authority: String = null,
-    endpoint: String = null,
-    payloadName: String = null,
-    retryDurationSec: js.UndefOr[Double] = js.undefined
-  ): SchemaNotificationEndpointGrpcSettings = {
+  def apply(): SchemaNotificationEndpointGrpcSettings = {
     val __obj = js.Dynamic.literal()
-    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (payloadName != null) __obj.updateDynamic("payloadName")(payloadName.asInstanceOf[js.Any])
-    if (!js.isUndefined(retryDurationSec)) __obj.updateDynamic("retryDurationSec")(retryDurationSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNotificationEndpointGrpcSettings]
   }
+  @scala.inline
+  implicit class SchemaNotificationEndpointGrpcSettingsOps[Self <: SchemaNotificationEndpointGrpcSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthority(value: String): Self = this.set("authority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthority: Self = this.set("authority", js.undefined)
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setPayloadName(value: String): Self = this.set("payloadName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayloadName: Self = this.set("payloadName", js.undefined)
+    @scala.inline
+    def setRetryDurationSec(value: Double): Self = this.set("retryDurationSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryDurationSec: Self = this.set("retryDurationSec", js.undefined)
+  }
+  
 }
 

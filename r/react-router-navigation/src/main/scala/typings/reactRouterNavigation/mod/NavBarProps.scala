@@ -8,52 +8,91 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NavBarProps extends js.Object {
-  var backButtonTintColor: js.UndefOr[String] = js.undefined
-  var backButtonTitle: js.UndefOr[String] = js.undefined
+  var backButtonTintColor: js.UndefOr[String] = js.native
+  var backButtonTitle: js.UndefOr[String] = js.native
   // Left button
-  var hideBackButton: js.UndefOr[Boolean] = js.undefined
+  var hideBackButton: js.UndefOr[Boolean] = js.native
   // General
-  var hideNavBar: js.UndefOr[Boolean] = js.undefined
-  var navBarStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var renderLeftButton: js.UndefOr[js.Function1[/* props */ CardSubViewProps, ReactNode]] = js.undefined
-  var renderNavBar: js.UndefOr[js.Function1[/* props */ CardSubViewProps, ReactNode]] = js.undefined
+  var hideNavBar: js.UndefOr[Boolean] = js.native
+  var navBarStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var renderLeftButton: js.UndefOr[js.Function1[/* props */ CardSubViewProps, ReactNode]] = js.native
+  var renderNavBar: js.UndefOr[js.Function1[/* props */ CardSubViewProps, ReactNode]] = js.native
   // Right button
-  var renderRightButton: js.UndefOr[js.Function1[/* props */ CardSubViewProps, ReactNode]] = js.undefined
-  var renderTitle: js.UndefOr[js.Function1[/* props */ CardSubViewProps, ReactNode]] = js.undefined
+  var renderRightButton: js.UndefOr[js.Function1[/* props */ CardSubViewProps, ReactNode]] = js.native
+  var renderTitle: js.UndefOr[js.Function1[/* props */ CardSubViewProps, ReactNode]] = js.native
   // Title
-  var title: js.UndefOr[String] = js.undefined
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var title: js.UndefOr[String] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
 }
 
 object NavBarProps {
   @scala.inline
-  def apply(
-    backButtonTintColor: String = null,
-    backButtonTitle: String = null,
-    hideBackButton: js.UndefOr[Boolean] = js.undefined,
-    hideNavBar: js.UndefOr[Boolean] = js.undefined,
-    navBarStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    renderLeftButton: /* props */ CardSubViewProps => ReactNode = null,
-    renderNavBar: /* props */ CardSubViewProps => ReactNode = null,
-    renderRightButton: /* props */ CardSubViewProps => ReactNode = null,
-    renderTitle: /* props */ CardSubViewProps => ReactNode = null,
-    title: String = null,
-    titleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined
-  ): NavBarProps = {
+  def apply(): NavBarProps = {
     val __obj = js.Dynamic.literal()
-    if (backButtonTintColor != null) __obj.updateDynamic("backButtonTintColor")(backButtonTintColor.asInstanceOf[js.Any])
-    if (backButtonTitle != null) __obj.updateDynamic("backButtonTitle")(backButtonTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNavBar)) __obj.updateDynamic("hideNavBar")(hideNavBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(navBarStyle)) __obj.updateDynamic("navBarStyle")(navBarStyle.asInstanceOf[js.Any])
-    if (renderLeftButton != null) __obj.updateDynamic("renderLeftButton")(js.Any.fromFunction1(renderLeftButton))
-    if (renderNavBar != null) __obj.updateDynamic("renderNavBar")(js.Any.fromFunction1(renderNavBar))
-    if (renderRightButton != null) __obj.updateDynamic("renderRightButton")(js.Any.fromFunction1(renderRightButton))
-    if (renderTitle != null) __obj.updateDynamic("renderTitle")(js.Any.fromFunction1(renderTitle))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleStyle)) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavBarProps]
   }
+  @scala.inline
+  implicit class NavBarPropsOps[Self <: NavBarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackButtonTintColor(value: String): Self = this.set("backButtonTintColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackButtonTintColor: Self = this.set("backButtonTintColor", js.undefined)
+    @scala.inline
+    def setBackButtonTitle(value: String): Self = this.set("backButtonTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackButtonTitle: Self = this.set("backButtonTitle", js.undefined)
+    @scala.inline
+    def setHideBackButton(value: Boolean): Self = this.set("hideBackButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideBackButton: Self = this.set("hideBackButton", js.undefined)
+    @scala.inline
+    def setHideNavBar(value: Boolean): Self = this.set("hideNavBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideNavBar: Self = this.set("hideNavBar", js.undefined)
+    @scala.inline
+    def setNavBarStyle(value: StyleProp[ViewStyle]): Self = this.set("navBarStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavBarStyle: Self = this.set("navBarStyle", js.undefined)
+    @scala.inline
+    def setNavBarStyleNull: Self = this.set("navBarStyle", null)
+    @scala.inline
+    def setRenderLeftButton(value: /* props */ CardSubViewProps => ReactNode): Self = this.set("renderLeftButton", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderLeftButton: Self = this.set("renderLeftButton", js.undefined)
+    @scala.inline
+    def setRenderNavBar(value: /* props */ CardSubViewProps => ReactNode): Self = this.set("renderNavBar", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderNavBar: Self = this.set("renderNavBar", js.undefined)
+    @scala.inline
+    def setRenderRightButton(value: /* props */ CardSubViewProps => ReactNode): Self = this.set("renderRightButton", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderRightButton: Self = this.set("renderRightButton", js.undefined)
+    @scala.inline
+    def setRenderTitle(value: /* props */ CardSubViewProps => ReactNode): Self = this.set("renderTitle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderTitle: Self = this.set("renderTitle", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleStyle(value: StyleProp[TextStyle]): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
+    @scala.inline
+    def setTitleStyleNull: Self = this.set("titleStyle", null)
+  }
+  
 }
 

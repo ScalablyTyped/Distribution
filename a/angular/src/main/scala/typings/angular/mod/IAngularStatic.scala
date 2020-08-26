@@ -56,6 +56,7 @@ trait IAngularStatic extends js.Object {
     *     - `strictDi`: disable automatic function annotation for the application. This is meant to assist in finding bugs which break minified code.
     */
   def bootstrap(element: String): IInjectorService = js.native
+  def bootstrap(element: String, modules: js.UndefOr[scala.Nothing], config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: String, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
   def bootstrap(
     element: String,
@@ -63,6 +64,7 @@ trait IAngularStatic extends js.Object {
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
   def bootstrap(element: JQuery): IInjectorService = js.native
+  def bootstrap(element: JQuery, modules: js.UndefOr[scala.Nothing], config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: JQuery, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
   def bootstrap(
     element: JQuery,
@@ -70,6 +72,7 @@ trait IAngularStatic extends js.Object {
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
   def bootstrap(element: Document): IInjectorService = js.native
+  def bootstrap(element: Document, modules: js.UndefOr[scala.Nothing], config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: Document, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
   def bootstrap(
     element: Document,
@@ -77,6 +80,7 @@ trait IAngularStatic extends js.Object {
     config: IAngularBootstrapConfig
   ): IInjectorService = js.native
   def bootstrap(element: Element): IInjectorService = js.native
+  def bootstrap(element: Element, modules: js.UndefOr[scala.Nothing], config: IAngularBootstrapConfig): IInjectorService = js.native
   def bootstrap(element: Element, modules: js.Array[String | Function | js.Array[_]]): IInjectorService = js.native
   def bootstrap(
     element: Element,
@@ -181,6 +185,7 @@ trait IAngularStatic extends js.Object {
   def identity[T](): T = js.native
   def identity[T](arg: T): T = js.native
   def injector(): IInjectorService = js.native
+  def injector(modules: js.UndefOr[scala.Nothing], strictDi: Boolean): IInjectorService = js.native
   def injector(modules: js.Array[_]): IInjectorService = js.native
   def injector(modules: js.Array[_], strictDi: Boolean): IInjectorService = js.native
   def isArray(value: js.Any): /* is std.Array<any> */ Boolean = js.native
@@ -213,6 +218,7 @@ trait IAngularStatic extends js.Object {
     * @param configFn Optional configuration function for the module.
     */
   def module(name: String): IModule = js.native
+  def module(name: String, requires: js.UndefOr[scala.Nothing], configFn: Injectable[Function]): IModule = js.native
   def module(name: String, requires: js.Array[String]): IModule = js.native
   def module(name: String, requires: js.Array[String], configFn: Injectable[Function]): IModule = js.native
   def noop(args: js.Any*): Unit = js.native

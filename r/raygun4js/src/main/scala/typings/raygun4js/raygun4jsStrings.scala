@@ -34,6 +34,9 @@ object raygun4jsStrings {
   sealed trait customData extends js.Object
   
   @js.native
+  sealed trait customTiming extends js.Object
+  
+  @js.native
   sealed trait debug extends BreadcrumbLevel
   
   @js.native
@@ -76,6 +79,9 @@ object raygun4jsStrings {
   sealed trait enablePulse extends js.Object
   
   @js.native
+  sealed trait endSession extends js.Object
+  
+  @js.native
   sealed trait error extends BreadcrumbLevel
   
   @js.native
@@ -89,6 +95,9 @@ object raygun4jsStrings {
   
   @js.native
   sealed trait info extends BreadcrumbLevel
+  
+  @js.native
+  sealed trait logContentsOfXhrCalls extends js.Object
   
   @js.native
   sealed trait noConflict extends js.Object
@@ -169,6 +178,8 @@ object raygun4jsStrings {
   @scala.inline
   def customData: customData = "customData".asInstanceOf[customData]
   @scala.inline
+  def customTiming: customTiming = "customTiming".asInstanceOf[customTiming]
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def detach: detach = "detach".asInstanceOf[detach]
@@ -197,6 +208,8 @@ object raygun4jsStrings {
   @scala.inline
   def enablePulse: enablePulse = "enablePulse".asInstanceOf[enablePulse]
   @scala.inline
+  def endSession: endSession = "endSession".asInstanceOf[endSession]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def filterSensitiveData: filterSensitiveData = "filterSensitiveData".asInstanceOf[filterSensitiveData]
@@ -206,6 +219,8 @@ object raygun4jsStrings {
   def groupingKey: groupingKey = "groupingKey".asInstanceOf[groupingKey]
   @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
+  def logContentsOfXhrCalls: logContentsOfXhrCalls = "logContentsOfXhrCalls".asInstanceOf[logContentsOfXhrCalls]
   @scala.inline
   def noConflict: noConflict = "noConflict".asInstanceOf[noConflict]
   @scala.inline

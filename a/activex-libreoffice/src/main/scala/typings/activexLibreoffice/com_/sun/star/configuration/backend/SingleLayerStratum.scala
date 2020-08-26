@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides access to a single layer of configuration data */
+@js.native
 trait SingleLayerStratum
   extends XSingleLayerStratum
      with XBackendEntities

@@ -4,63 +4,104 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AvailableOffer extends js.Object {
   /** The number of codes for this offer that are available for distribution. */
-  var available: js.UndefOr[Double] = js.undefined
+  var available: js.UndefOr[Double] = js.native
   /** Offer info by country. */
-  var countryOfferInfos: js.UndefOr[js.Array[CountryOfferInfo]] = js.undefined
+  var countryOfferInfos: js.UndefOr[js.Array[CountryOfferInfo]] = js.native
   /** Description of the offer. */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /** ID of this offer. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** The maximum age of an account [in days] to be eligible. */
-  var maxAccountAge: js.UndefOr[Double] = js.undefined
+  var maxAccountAge: js.UndefOr[Double] = js.native
   /** Name of the offer. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** Level of this offer. */
-  var offerLevel: js.UndefOr[String] = js.undefined
+  var offerLevel: js.UndefOr[String] = js.native
   /** Type of offer. */
-  var offerType: js.UndefOr[String] = js.undefined
+  var offerType: js.UndefOr[String] = js.native
   /** Customers who qualify for this offer. */
-  var qualifiedCustomer: js.UndefOr[js.Array[OfferCustomer]] = js.undefined
+  var qualifiedCustomer: js.UndefOr[js.Array[OfferCustomer]] = js.native
   /** Whether or not the list of qualified customers is definitely complete. */
-  var qualifiedCustomersComplete: js.UndefOr[Boolean] = js.undefined
+  var qualifiedCustomersComplete: js.UndefOr[Boolean] = js.native
   /** Should special text be shown on the offers page. */
-  var showSpecialOfferCopy: js.UndefOr[Boolean] = js.undefined
+  var showSpecialOfferCopy: js.UndefOr[Boolean] = js.native
   /** Terms of the offer. */
-  var terms: js.UndefOr[String] = js.undefined
+  var terms: js.UndefOr[String] = js.native
 }
 
 object AvailableOffer {
   @scala.inline
-  def apply(
-    available: js.UndefOr[Double] = js.undefined,
-    countryOfferInfos: js.Array[CountryOfferInfo] = null,
-    description: String = null,
-    id: String = null,
-    maxAccountAge: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    offerLevel: String = null,
-    offerType: String = null,
-    qualifiedCustomer: js.Array[OfferCustomer] = null,
-    qualifiedCustomersComplete: js.UndefOr[Boolean] = js.undefined,
-    showSpecialOfferCopy: js.UndefOr[Boolean] = js.undefined,
-    terms: String = null
-  ): AvailableOffer = {
+  def apply(): AvailableOffer = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.get.asInstanceOf[js.Any])
-    if (countryOfferInfos != null) __obj.updateDynamic("countryOfferInfos")(countryOfferInfos.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAccountAge)) __obj.updateDynamic("maxAccountAge")(maxAccountAge.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (offerLevel != null) __obj.updateDynamic("offerLevel")(offerLevel.asInstanceOf[js.Any])
-    if (offerType != null) __obj.updateDynamic("offerType")(offerType.asInstanceOf[js.Any])
-    if (qualifiedCustomer != null) __obj.updateDynamic("qualifiedCustomer")(qualifiedCustomer.asInstanceOf[js.Any])
-    if (!js.isUndefined(qualifiedCustomersComplete)) __obj.updateDynamic("qualifiedCustomersComplete")(qualifiedCustomersComplete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSpecialOfferCopy)) __obj.updateDynamic("showSpecialOfferCopy")(showSpecialOfferCopy.get.asInstanceOf[js.Any])
-    if (terms != null) __obj.updateDynamic("terms")(terms.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailableOffer]
   }
+  @scala.inline
+  implicit class AvailableOfferOps[Self <: AvailableOffer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailable(value: Double): Self = this.set("available", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailable: Self = this.set("available", js.undefined)
+    @scala.inline
+    def setCountryOfferInfosVarargs(value: CountryOfferInfo*): Self = this.set("countryOfferInfos", js.Array(value :_*))
+    @scala.inline
+    def setCountryOfferInfos(value: js.Array[CountryOfferInfo]): Self = this.set("countryOfferInfos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryOfferInfos: Self = this.set("countryOfferInfos", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMaxAccountAge(value: Double): Self = this.set("maxAccountAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAccountAge: Self = this.set("maxAccountAge", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOfferLevel(value: String): Self = this.set("offerLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferLevel: Self = this.set("offerLevel", js.undefined)
+    @scala.inline
+    def setOfferType(value: String): Self = this.set("offerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferType: Self = this.set("offerType", js.undefined)
+    @scala.inline
+    def setQualifiedCustomerVarargs(value: OfferCustomer*): Self = this.set("qualifiedCustomer", js.Array(value :_*))
+    @scala.inline
+    def setQualifiedCustomer(value: js.Array[OfferCustomer]): Self = this.set("qualifiedCustomer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifiedCustomer: Self = this.set("qualifiedCustomer", js.undefined)
+    @scala.inline
+    def setQualifiedCustomersComplete(value: Boolean): Self = this.set("qualifiedCustomersComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifiedCustomersComplete: Self = this.set("qualifiedCustomersComplete", js.undefined)
+    @scala.inline
+    def setShowSpecialOfferCopy(value: Boolean): Self = this.set("showSpecialOfferCopy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSpecialOfferCopy: Self = this.set("showSpecialOfferCopy", js.undefined)
+    @scala.inline
+    def setTerms(value: String): Self = this.set("terms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerms: Self = this.set("terms", js.undefined)
+  }
+  
 }
 

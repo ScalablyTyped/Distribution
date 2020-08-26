@@ -12,7 +12,7 @@ A declarative animation library for HTML and SVG
 | Keywords           | animation, dom, declarative, popmotion |
 | # releases         | 92 |
 | # dependents       | 9 |
-| # downloads        | 3343176 |
+| # downloads        | 3448357 |
 | # stars            | 0 |
 
 ## Links

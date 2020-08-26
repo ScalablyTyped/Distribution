@@ -44,7 +44,7 @@ package object mod {
   ]
   type NavigationStateRoute[NavigationLeafRouteParams] = typings.reactNavigation.mod.NavigationLeafRoute[NavigationLeafRouteParams] with typings.reactNavigation.mod.NavigationState
   type NavigationSwitchAction = typings.reactNavigation.mod.NavigationJumpToAction
-  type NavigationSwitchScreenComponent[Params, ScreenProps] = (typings.react.mod.ComponentType[typings.reactNavigation.mod.NavigationSwitchScreenProps[Params, ScreenProps]]) with (typings.reactNavigation.anon.NavigationOptionsNavigationScreenConfig[Params, ScreenProps])
+  type NavigationSwitchScreenComponent[Params, ScreenProps] = (typings.react.mod.ComponentType[typings.reactNavigation.mod.NavigationSwitchScreenProps[Params, ScreenProps]]) with (typings.reactNavigation.anon.`1`[Params, ScreenProps])
   type NavigationView[Options, State, ScreenProps] = typings.react.mod.ComponentType[
     ((typings.reactNavigation.anon.Descriptors[Options, ScreenProps]) with typings.reactNavigation.mod.NavigationInjectedProps[typings.reactNavigation.mod.NavigationParams]) | js.Any
   ]

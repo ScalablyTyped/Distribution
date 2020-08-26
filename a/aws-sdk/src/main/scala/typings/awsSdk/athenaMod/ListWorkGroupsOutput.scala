@@ -18,11 +18,32 @@ trait ListWorkGroupsOutput extends js.Object {
 
 object ListWorkGroupsOutput {
   @scala.inline
-  def apply(NextToken: Token = null, WorkGroups: WorkGroupsList = null): ListWorkGroupsOutput = {
+  def apply(): ListWorkGroupsOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (WorkGroups != null) __obj.updateDynamic("WorkGroups")(WorkGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkGroupsOutput]
   }
+  @scala.inline
+  implicit class ListWorkGroupsOutputOps[Self <: ListWorkGroupsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setWorkGroupsVarargs(value: WorkGroupSummary*): Self = this.set("WorkGroups", js.Array(value :_*))
+    @scala.inline
+    def setWorkGroups(value: WorkGroupsList): Self = this.set("WorkGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkGroups: Self = this.set("WorkGroups", js.undefined)
+  }
+  
 }
 

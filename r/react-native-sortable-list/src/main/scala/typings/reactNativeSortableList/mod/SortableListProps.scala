@@ -10,29 +10,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SortableListProps[T, K] extends js.Object {
   /**
     * determines the height for vertical list and the width for horizontal list of the area at the begining and
     * the end of the list that will trigger autoscrolling. Defaults to 60.
     */
-  var autoscrollAreaSize: js.UndefOr[Double] = js.undefined
+  var autoscrollAreaSize: js.UndefOr[Double] = js.native
   /**
     * these styles will be applied to the inner scroll view content container
     */
-  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * data source
     */
-  var data: DataByNumber[T] | DataByString[T]
+  var data: DataByNumber[T] | DataByString[T] = js.native
   /**
     * when true, the SortableList's children are arranged horizontally in a row instead of vertically in a column.
     * The default value is false.
     */
-  var horizontal: js.UndefOr[Boolean] = js.undefined
+  var horizontal: js.UndefOr[Boolean] = js.native
   /**
     * these styles will be applied to the inner scroll view content container, excluding the header and footer
     */
-  var innerContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var innerContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * Determines when the keyboard should stay visible after a tap.
     *  - 'never' (the default), tapping outside of the focused text input when the keyboard is up dismisses
@@ -42,124 +43,186 @@ trait SortableListProps[T, K] extends js.Object {
     *  - 'handled', the keyboard will not dismiss automatically when the tap was handled by a children,
     *    (or captured by an ancestor).
     */
-  var keyboardShouldPersistTaps: js.UndefOr[never | always | handled] = js.undefined
+  var keyboardShouldPersistTaps: js.UndefOr[never | always | handled] = js.native
   /**
     * whether you intend to use the toggleRowActive method to activate a row or use the out of box solution.
     */
-  var manuallyActivateRows: js.UndefOr[Boolean] = js.undefined
+  var manuallyActivateRows: js.UndefOr[Boolean] = js.native
   /**
     * Called when a row was activated (user long tapped).
     */
-  var onActivateRow: js.UndefOr[js.Function1[/* key */ K, Unit]] = js.undefined
+  var onActivateRow: js.UndefOr[js.Function1[/* key */ K, Unit]] = js.native
   /**
     * Called when rows were reordered, takes an array of rows keys of the next rows order.
     */
-  var onChangeOrder: js.UndefOr[js.Function1[/* nextOrder */ js.Array[K], Unit]] = js.undefined
+  var onChangeOrder: js.UndefOr[js.Function1[/* nextOrder */ js.Array[K], Unit]] = js.native
   /**
     * Called when a row was pressed.
     */
-  var onPressRow: js.UndefOr[js.Function1[/* key */ K, Unit]] = js.undefined
+  var onPressRow: js.UndefOr[js.Function1[/* key */ K, Unit]] = js.native
   /**
     * Called when the active row was released.
     */
-  var onReleaseRow: js.UndefOr[js.Function2[/* key */ K, /* currentOrder */ js.Array[K], Unit]] = js.undefined
+  var onReleaseRow: js.UndefOr[js.Function2[/* key */ K, /* currentOrder */ js.Array[K], Unit]] = js.native
   /**
     * an array of keys from data, the order of keys from the array will be used to initial rows order
     */
-  var order: js.UndefOr[js.Array[K]] = js.undefined
+  var order: js.UndefOr[js.Array[K]] = js.native
   /**
     * A RefreshControl that works the same way as a ScrollView's refreshControl.
     */
-  var refreshControl: js.UndefOr[ReactElement] = js.undefined
+  var refreshControl: js.UndefOr[ReactElement] = js.native
   /**
     * Renders returned component at the bottom of the list.
     */
-  var renderFooter: js.UndefOr[js.Function0[ReactElement]] = js.undefined
+  var renderFooter: js.UndefOr[js.Function0[ReactElement]] = js.native
   /**
     * Renders returned component at the top of the list.
     */
-  var renderHeader: js.UndefOr[js.Function0[ReactElement]] = js.undefined
+  var renderHeader: js.UndefOr[js.Function0[ReactElement]] = js.native
   /**
     * determines time delay in ms before pressed row becomes active. Defaults to 200 ms.
     */
-  var rowActivationTime: js.UndefOr[Double] = js.undefined
+  var rowActivationTime: js.UndefOr[Double] = js.native
   /**
     * when false, the content does not scrollable. The default value is true.
     */
-  var scrollEnabled: js.UndefOr[Boolean] = js.undefined
+  var scrollEnabled: js.UndefOr[Boolean] = js.native
   /**
     * when false, the horizontal scroll indicator will not be visible. The default value is true.
     */
-  var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined
+  var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.native
   /**
     * when false, the vertical scroll indicator will not be visible. The default value is true.
     */
-  var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
+  var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.native
   /**
     * when false, rows are not sortable. The default value is true.
     */
-  var sortingEnabled: js.UndefOr[Boolean] = js.undefined
+  var sortingEnabled: js.UndefOr[Boolean] = js.native
   /**
     * style of HOC
     */
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * Takes a row key, row index, data entry from the data source and its statuses disabled, active and should
     * return a renderable component to be rendered as the row. The child component will receive a method called
     * toggleRowActive (only if manuallyActivateRows={true}) to manually activate the row. Useful if you have
     * multiple touch responders in your view.
     */
-  def renderRow(props: RowProps[T, K]): ReactElement | Null
+  def renderRow(props: RowProps[T, K]): ReactElement | Null = js.native
 }
 
 object SortableListProps {
   @scala.inline
-  def apply[T, K](
-    data: DataByNumber[T] | DataByString[T],
-    renderRow: RowProps[T, K] => ReactElement | Null,
-    autoscrollAreaSize: js.UndefOr[Double] = js.undefined,
-    contentContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    innerContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    keyboardShouldPersistTaps: never | always | handled = null,
-    manuallyActivateRows: js.UndefOr[Boolean] = js.undefined,
-    onActivateRow: /* key */ K => Unit = null,
-    onChangeOrder: /* nextOrder */ js.Array[K] => Unit = null,
-    onPressRow: /* key */ K => Unit = null,
-    onReleaseRow: (/* key */ K, /* currentOrder */ js.Array[K]) => Unit = null,
-    order: js.Array[K] = null,
-    refreshControl: ReactElement = null,
-    renderFooter: () => ReactElement = null,
-    renderHeader: () => ReactElement = null,
-    rowActivationTime: js.UndefOr[Double] = js.undefined,
-    scrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
-    showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
-    sortingEnabled: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined
-  ): SortableListProps[T, K] = {
+  def apply[T, K](data: DataByNumber[T] | DataByString[T], renderRow: RowProps[T, K] => ReactElement | Null): SortableListProps[T, K] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], renderRow = js.Any.fromFunction1(renderRow))
-    if (!js.isUndefined(autoscrollAreaSize)) __obj.updateDynamic("autoscrollAreaSize")(autoscrollAreaSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentContainerStyle)) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(innerContainerStyle)) __obj.updateDynamic("innerContainerStyle")(innerContainerStyle.asInstanceOf[js.Any])
-    if (keyboardShouldPersistTaps != null) __obj.updateDynamic("keyboardShouldPersistTaps")(keyboardShouldPersistTaps.asInstanceOf[js.Any])
-    if (!js.isUndefined(manuallyActivateRows)) __obj.updateDynamic("manuallyActivateRows")(manuallyActivateRows.get.asInstanceOf[js.Any])
-    if (onActivateRow != null) __obj.updateDynamic("onActivateRow")(js.Any.fromFunction1(onActivateRow))
-    if (onChangeOrder != null) __obj.updateDynamic("onChangeOrder")(js.Any.fromFunction1(onChangeOrder))
-    if (onPressRow != null) __obj.updateDynamic("onPressRow")(js.Any.fromFunction1(onPressRow))
-    if (onReleaseRow != null) __obj.updateDynamic("onReleaseRow")(js.Any.fromFunction2(onReleaseRow))
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (refreshControl != null) __obj.updateDynamic("refreshControl")(refreshControl.asInstanceOf[js.Any])
-    if (renderFooter != null) __obj.updateDynamic("renderFooter")(js.Any.fromFunction0(renderFooter))
-    if (renderHeader != null) __obj.updateDynamic("renderHeader")(js.Any.fromFunction0(renderHeader))
-    if (!js.isUndefined(rowActivationTime)) __obj.updateDynamic("rowActivationTime")(rowActivationTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsVerticalScrollIndicator)) __obj.updateDynamic("showsVerticalScrollIndicator")(showsVerticalScrollIndicator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortingEnabled)) __obj.updateDynamic("sortingEnabled")(sortingEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableListProps[T, K]]
   }
+  @scala.inline
+  implicit class SortableListPropsOps[Self <: SortableListProps[_, _], T, K] (val x: Self with (SortableListProps[T, K])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: DataByNumber[T] | DataByString[T]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderRow(value: RowProps[T, K] => ReactElement | Null): Self = this.set("renderRow", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAutoscrollAreaSize(value: Double): Self = this.set("autoscrollAreaSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscrollAreaSize: Self = this.set("autoscrollAreaSize", js.undefined)
+    @scala.inline
+    def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("contentContainerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentContainerStyle: Self = this.set("contentContainerStyle", js.undefined)
+    @scala.inline
+    def setContentContainerStyleNull: Self = this.set("contentContainerStyle", null)
+    @scala.inline
+    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setInnerContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("innerContainerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerContainerStyle: Self = this.set("innerContainerStyle", js.undefined)
+    @scala.inline
+    def setInnerContainerStyleNull: Self = this.set("innerContainerStyle", null)
+    @scala.inline
+    def setKeyboardShouldPersistTaps(value: never | always | handled): Self = this.set("keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardShouldPersistTaps: Self = this.set("keyboardShouldPersistTaps", js.undefined)
+    @scala.inline
+    def setManuallyActivateRows(value: Boolean): Self = this.set("manuallyActivateRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManuallyActivateRows: Self = this.set("manuallyActivateRows", js.undefined)
+    @scala.inline
+    def setOnActivateRow(value: /* key */ K => Unit): Self = this.set("onActivateRow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnActivateRow: Self = this.set("onActivateRow", js.undefined)
+    @scala.inline
+    def setOnChangeOrder(value: /* nextOrder */ js.Array[K] => Unit): Self = this.set("onChangeOrder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChangeOrder: Self = this.set("onChangeOrder", js.undefined)
+    @scala.inline
+    def setOnPressRow(value: /* key */ K => Unit): Self = this.set("onPressRow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPressRow: Self = this.set("onPressRow", js.undefined)
+    @scala.inline
+    def setOnReleaseRow(value: (/* key */ K, /* currentOrder */ js.Array[K]) => Unit): Self = this.set("onReleaseRow", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnReleaseRow: Self = this.set("onReleaseRow", js.undefined)
+    @scala.inline
+    def setOrderVarargs(value: K*): Self = this.set("order", js.Array(value :_*))
+    @scala.inline
+    def setOrder(value: js.Array[K]): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setRefreshControl(value: ReactElement): Self = this.set("refreshControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshControl: Self = this.set("refreshControl", js.undefined)
+    @scala.inline
+    def setRenderFooter(value: () => ReactElement): Self = this.set("renderFooter", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRenderFooter: Self = this.set("renderFooter", js.undefined)
+    @scala.inline
+    def setRenderHeader(value: () => ReactElement): Self = this.set("renderHeader", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRenderHeader: Self = this.set("renderHeader", js.undefined)
+    @scala.inline
+    def setRowActivationTime(value: Double): Self = this.set("rowActivationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowActivationTime: Self = this.set("rowActivationTime", js.undefined)
+    @scala.inline
+    def setScrollEnabled(value: Boolean): Self = this.set("scrollEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollEnabled: Self = this.set("scrollEnabled", js.undefined)
+    @scala.inline
+    def setShowsHorizontalScrollIndicator(value: Boolean): Self = this.set("showsHorizontalScrollIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowsHorizontalScrollIndicator: Self = this.set("showsHorizontalScrollIndicator", js.undefined)
+    @scala.inline
+    def setShowsVerticalScrollIndicator(value: Boolean): Self = this.set("showsVerticalScrollIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowsVerticalScrollIndicator: Self = this.set("showsVerticalScrollIndicator", js.undefined)
+    @scala.inline
+    def setSortingEnabled(value: Boolean): Self = this.set("sortingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortingEnabled: Self = this.set("sortingEnabled", js.undefined)
+    @scala.inline
+    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+  }
+  
 }
 

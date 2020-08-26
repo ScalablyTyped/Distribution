@@ -13,12 +13,10 @@ trait MotionActiveStatus extends js.Object
 
 object MotionActiveStatus {
   @scala.inline
-  def `appear-active`: typings.rcTrigger.rcTriggerStrings.`appear-active` = this.cast("appear-active")
+  def `appear-active`: typings.rcTrigger.rcTriggerStrings.`appear-active` = "appear-active".asInstanceOf[typings.rcTrigger.rcTriggerStrings.`appear-active`]
   @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  def `enter-active`: typings.rcTrigger.rcTriggerStrings.`enter-active` = "enter-active".asInstanceOf[typings.rcTrigger.rcTriggerStrings.`enter-active`]
   @scala.inline
-  def `enter-active`: typings.rcTrigger.rcTriggerStrings.`enter-active` = this.cast("enter-active")
-  @scala.inline
-  def `leave-active`: typings.rcTrigger.rcTriggerStrings.`leave-active` = this.cast("leave-active")
+  def `leave-active`: typings.rcTrigger.rcTriggerStrings.`leave-active` = "leave-active".asInstanceOf[typings.rcTrigger.rcTriggerStrings.`leave-active`]
 }
 

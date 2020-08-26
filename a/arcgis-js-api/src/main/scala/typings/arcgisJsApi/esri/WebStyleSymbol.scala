@@ -37,6 +37,17 @@ trait WebStyleSymbol
   @JSName("type")
   val type_WebStyleSymbol: `web-style` = js.native
   /**
+    * Returns the [CIMSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html) instance the WebStyleSymbol refers to.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#fetchCIMSymbol)
+    *
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def fetchCIMSymbol(): js.Promise[CIMSymbol] = js.native
+  def fetchCIMSymbol(options: WebStyleSymbolFetchCIMSymbolOptions): js.Promise[CIMSymbol] = js.native
+  /**
     * Downloads and returns the [PointSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html) instance the WebStyleSymbol refers to.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#fetchSymbol)

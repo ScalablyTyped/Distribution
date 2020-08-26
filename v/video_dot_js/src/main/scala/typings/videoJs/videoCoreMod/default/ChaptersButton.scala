@@ -35,7 +35,7 @@ Instantiable1[
     ]
      with Instantiable3[
       /* player */ typings.videoJs.mod.videojs.Player, 
-      /* options */ TrackButtonOptions, 
+      js.UndefOr[/* options */ TrackButtonOptions], 
       /* ready */ ReadyCallback, 
       typings.videoJs.mod.videojs.ChaptersButton
     ]

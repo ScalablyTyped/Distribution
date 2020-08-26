@@ -31,15 +31,34 @@ trait JobQueueArgs extends js.Object {
 
 object JobQueueArgs {
   @scala.inline
-  def apply(
-    computeEnvironments: Input[js.Array[Input[String]]],
-    priority: Input[Double],
-    state: Input[String],
-    name: Input[String] = null
-  ): JobQueueArgs = {
+  def apply(computeEnvironments: Input[js.Array[Input[String]]], priority: Input[Double], state: Input[String]): JobQueueArgs = {
     val __obj = js.Dynamic.literal(computeEnvironments = computeEnvironments.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobQueueArgs]
   }
+  @scala.inline
+  implicit class JobQueueArgsOps[Self <: JobQueueArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeEnvironmentsVarargs(value: Input[String]*): Self = this.set("computeEnvironments", js.Array(value :_*))
+    @scala.inline
+    def setComputeEnvironments(value: Input[js.Array[Input[String]]]): Self = this.set("computeEnvironments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: Input[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

@@ -11,21 +11,37 @@ trait CapacityReservationSpecificationResponse extends js.Object {
     */
   var CapacityReservationPreference: js.UndefOr[typings.awsSdk.ec2Mod.CapacityReservationPreference] = js.native
   /**
-    * Information about the targeted Capacity Reservation.
+    * Information about the targeted Capacity Reservation or Capacity Reservation group.
     */
   var CapacityReservationTarget: js.UndefOr[CapacityReservationTargetResponse] = js.native
 }
 
 object CapacityReservationSpecificationResponse {
   @scala.inline
-  def apply(
-    CapacityReservationPreference: CapacityReservationPreference = null,
-    CapacityReservationTarget: CapacityReservationTargetResponse = null
-  ): CapacityReservationSpecificationResponse = {
+  def apply(): CapacityReservationSpecificationResponse = {
     val __obj = js.Dynamic.literal()
-    if (CapacityReservationPreference != null) __obj.updateDynamic("CapacityReservationPreference")(CapacityReservationPreference.asInstanceOf[js.Any])
-    if (CapacityReservationTarget != null) __obj.updateDynamic("CapacityReservationTarget")(CapacityReservationTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityReservationSpecificationResponse]
   }
+  @scala.inline
+  implicit class CapacityReservationSpecificationResponseOps[Self <: CapacityReservationSpecificationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityReservationPreference(value: CapacityReservationPreference): Self = this.set("CapacityReservationPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityReservationPreference: Self = this.set("CapacityReservationPreference", js.undefined)
+    @scala.inline
+    def setCapacityReservationTarget(value: CapacityReservationTargetResponse): Self = this.set("CapacityReservationTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityReservationTarget: Self = this.set("CapacityReservationTarget", js.undefined)
+  }
+  
 }
 

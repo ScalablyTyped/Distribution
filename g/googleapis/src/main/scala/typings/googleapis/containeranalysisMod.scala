@@ -43,7 +43,7 @@ object containeranalysisMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Containeranalysis
               ]
             ]
@@ -53,7 +53,7 @@ object containeranalysisMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis
               ]
             ]

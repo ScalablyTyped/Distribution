@@ -10,7 +10,8 @@ trait Graphic
      with JSONSupport
      with IntersectItem
      with _GoToTarget2D
-     with _GoToTarget3D {
+     with _GoToTarget3D
+     with _HitTestItem {
   /**
     * Name-value pairs of fields and field values associated with the graphic.
     *

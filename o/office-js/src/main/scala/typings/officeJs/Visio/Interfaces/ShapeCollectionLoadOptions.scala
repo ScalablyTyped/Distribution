@@ -10,64 +10,89 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
+@js.native
 trait ShapeCollectionLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Shape's identifier. Read-only.
     *
     * [Api set:  1.1]
     */
-  var id: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Shape's name. Read-only.
     *
     * [Api set:  1.1]
     */
-  var name: js.UndefOr[Boolean] = js.undefined
+  var name: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Returns true, if shape is selected. User can set true to select the shape explicitly.
     *
     * [Api set:  1.1]
     */
-  var select: js.UndefOr[Boolean] = js.undefined
+  var select: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Shape's text. Read-only.
     *
     * [Api set:  1.1]
     */
-  var text: js.UndefOr[Boolean] = js.undefined
+  var text: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Returns the view of the shape.
     *
     * [Api set:  1.1]
     */
-  var view: js.UndefOr[ShapeViewLoadOptions] = js.undefined
+  var view: js.UndefOr[ShapeViewLoadOptions] = js.native
 }
 
 object ShapeCollectionLoadOptions {
   @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    id: js.UndefOr[Boolean] = js.undefined,
-    name: js.UndefOr[Boolean] = js.undefined,
-    select: js.UndefOr[Boolean] = js.undefined,
-    text: js.UndefOr[Boolean] = js.undefined,
-    view: ShapeViewLoadOptions = null
-  ): ShapeCollectionLoadOptions = {
+  def apply(): ShapeCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.get.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeCollectionLoadOptions]
   }
+  @scala.inline
+  implicit class ShapeCollectionLoadOptionsOps[Self <: ShapeCollectionLoadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$all: Self = this.set("$all", js.undefined)
+    @scala.inline
+    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSelect(value: Boolean): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setText(value: Boolean): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setView(value: ShapeViewLoadOptions): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

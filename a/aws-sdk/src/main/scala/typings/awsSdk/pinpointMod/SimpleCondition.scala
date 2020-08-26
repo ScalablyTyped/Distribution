@@ -22,16 +22,34 @@ trait SimpleCondition extends js.Object {
 
 object SimpleCondition {
   @scala.inline
-  def apply(
-    EventCondition: EventCondition = null,
-    SegmentCondition: SegmentCondition = null,
-    SegmentDimensions: SegmentDimensions = null
-  ): SimpleCondition = {
+  def apply(): SimpleCondition = {
     val __obj = js.Dynamic.literal()
-    if (EventCondition != null) __obj.updateDynamic("EventCondition")(EventCondition.asInstanceOf[js.Any])
-    if (SegmentCondition != null) __obj.updateDynamic("SegmentCondition")(SegmentCondition.asInstanceOf[js.Any])
-    if (SegmentDimensions != null) __obj.updateDynamic("SegmentDimensions")(SegmentDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleCondition]
   }
+  @scala.inline
+  implicit class SimpleConditionOps[Self <: SimpleCondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventCondition(value: EventCondition): Self = this.set("EventCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventCondition: Self = this.set("EventCondition", js.undefined)
+    @scala.inline
+    def setSegmentCondition(value: SegmentCondition): Self = this.set("SegmentCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentCondition: Self = this.set("SegmentCondition", js.undefined)
+    @scala.inline
+    def setSegmentDimensions(value: SegmentDimensions): Self = this.set("SegmentDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentDimensions: Self = this.set("SegmentDimensions", js.undefined)
+  }
+  
 }
 

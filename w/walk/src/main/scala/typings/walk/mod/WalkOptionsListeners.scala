@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WalkOptionsListeners extends js.Object {
-  var directories: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
-  var directory: js.UndefOr[WalkStatEventCallback] = js.undefined
-  var directoryError: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
-  var end: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
-  var errors: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
-  var file: js.UndefOr[WalkStatEventCallback] = js.undefined
-  var files: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
-  var names: js.UndefOr[WalkNamesEventCallback] = js.undefined
-  var nodeError: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
+  var directories: js.UndefOr[WalkStatArrayEventCallback] = js.native
+  var directory: js.UndefOr[WalkStatEventCallback] = js.native
+  var directoryError: js.UndefOr[WalkStatArrayEventCallback] = js.native
+  var end: js.UndefOr[WalkStatArrayEventCallback] = js.native
+  var errors: js.UndefOr[WalkStatArrayEventCallback] = js.native
+  var file: js.UndefOr[WalkStatEventCallback] = js.native
+  var files: js.UndefOr[WalkStatArrayEventCallback] = js.native
+  var names: js.UndefOr[WalkNamesEventCallback] = js.native
+  var nodeError: js.UndefOr[WalkStatArrayEventCallback] = js.native
 }
 
 object WalkOptionsListeners {
   @scala.inline
-  def apply(
-    directories: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
-    directory: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit = null,
-    directoryError: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
-    end: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
-    errors: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
-    file: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit = null,
-    files: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null,
-    names: (/* base */ String, /* names */ js.Array[String], /* next */ WalkNext) => Unit = null,
-    nodeError: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit = null
-  ): WalkOptionsListeners = {
+  def apply(): WalkOptionsListeners = {
     val __obj = js.Dynamic.literal()
-    if (directories != null) __obj.updateDynamic("directories")(js.Any.fromFunction3(directories))
-    if (directory != null) __obj.updateDynamic("directory")(js.Any.fromFunction3(directory))
-    if (directoryError != null) __obj.updateDynamic("directoryError")(js.Any.fromFunction3(directoryError))
-    if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction3(end))
-    if (errors != null) __obj.updateDynamic("errors")(js.Any.fromFunction3(errors))
-    if (file != null) __obj.updateDynamic("file")(js.Any.fromFunction3(file))
-    if (files != null) __obj.updateDynamic("files")(js.Any.fromFunction3(files))
-    if (names != null) __obj.updateDynamic("names")(js.Any.fromFunction3(names))
-    if (nodeError != null) __obj.updateDynamic("nodeError")(js.Any.fromFunction3(nodeError))
     __obj.asInstanceOf[WalkOptionsListeners]
   }
+  @scala.inline
+  implicit class WalkOptionsListenersOps[Self <: WalkOptionsListeners] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectories(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = this.set("directories", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDirectories: Self = this.set("directories", js.undefined)
+    @scala.inline
+    def setDirectory(value: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit): Self = this.set("directory", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDirectory: Self = this.set("directory", js.undefined)
+    @scala.inline
+    def setDirectoryError(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = this.set("directoryError", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDirectoryError: Self = this.set("directoryError", js.undefined)
+    @scala.inline
+    def setEnd(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = this.set("end", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setErrors(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = this.set("errors", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setFile(value: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit): Self = this.set("file", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setFiles(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = this.set("files", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setNames(value: (/* base */ String, /* names */ js.Array[String], /* next */ WalkNext) => Unit): Self = this.set("names", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteNames: Self = this.set("names", js.undefined)
+    @scala.inline
+    def setNodeError(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = this.set("nodeError", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteNodeError: Self = this.set("nodeError", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,8 @@
 package typings.tensorflowTfjsCore
 
 import typings.std.ArrayBuffer
+import typings.std.Float32Array
+import typings.std.Uint16Array
 import typings.tensorflowTfjsCore.anon.Data
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensor
@@ -26,6 +28,7 @@ object ioUtilsMod extends js.Object {
   def encodeWeights(tensors: js.Array[NamedTensor], group: WeightGroup): js.Promise[Data] = js.native
   def encodeWeights(tensors: NamedTensorMap): js.Promise[Data] = js.native
   def encodeWeights(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = js.native
+  def getFloat16Decoder(): js.Function1[/* buffer */ Uint16Array, Float32Array] = js.native
   def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = js.native
   def stringByteLength(str: String): Double = js.native
 }

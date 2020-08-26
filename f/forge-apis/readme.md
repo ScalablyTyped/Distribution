@@ -10,9 +10,9 @@ The Forge Platform contains an expanding collection of web service components th
 | ------------------ | :-------------: |
 | Full name          | forge-apis |
 | Keywords           | autodesk, autodesk-forge, rest, restful, api |
-| # releases         | 11 |
+| # releases         | 14 |
 | # dependents       | 7 |
-| # downloads        | 45153 |
+| # downloads        | 48224 |
 | # stars            | 2 |
 
 ## Links

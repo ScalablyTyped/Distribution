@@ -22,16 +22,34 @@ trait CaptionFormat extends js.Object {
 
 object CaptionFormat {
   @scala.inline
-  def apply(
-    Encryption: Encryption = null,
-    Format: CaptionFormatFormat = null,
-    Pattern: CaptionFormatPattern = null
-  ): CaptionFormat = {
+  def apply(): CaptionFormat = {
     val __obj = js.Dynamic.literal()
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (Pattern != null) __obj.updateDynamic("Pattern")(Pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionFormat]
   }
+  @scala.inline
+  implicit class CaptionFormatOps[Self <: CaptionFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setFormat(value: CaptionFormatFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("Format", js.undefined)
+    @scala.inline
+    def setPattern(value: CaptionFormatPattern): Self = this.set("Pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("Pattern", js.undefined)
+  }
+  
 }
 

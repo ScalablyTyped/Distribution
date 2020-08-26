@@ -12,7 +12,7 @@ input-number ui component for react(web & react-native)
 | Keywords           | react, react-component, react-m-input-number, input-number, react-native |
 | # releases         | 2 |
 | # dependents       | 35 |
-| # downloads        | 609256 |
+| # downloads        | 628509 |
 | # stars            | 0 |
 
 ## Links

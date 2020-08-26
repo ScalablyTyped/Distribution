@@ -9,11 +9,11 @@ import typings.meteor.URLS
 import typings.meteor.anon.Algorithm
 import typings.meteor.anon.AmbiguousErrorMessages
 import typings.meteor.anon.Connection
-import typings.meteor.anon.EmailString
 import typings.meteor.anon.ForceApprovalPrompt
 import typings.meteor.anon.Logout
 import typings.meteor.anon.Profile
 import typings.meteor.anon.Stop
+import typings.meteor.anon.`0`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -78,9 +78,9 @@ object Accounts extends js.Object {
   ): String = js.native
   def findUserByEmail(email: String): js.UndefOr[User | Null] = js.native
   def findUserByUsername(username: String): js.UndefOr[User | Null] = js.native
-  def forgotPassword(options: EmailString): Unit = js.native
+  def forgotPassword(options: `0`): Unit = js.native
   def forgotPassword(
-    options: EmailString,
+    options: `0`,
     callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
   ): Unit = js.native
   @JSName("_hashPassword")

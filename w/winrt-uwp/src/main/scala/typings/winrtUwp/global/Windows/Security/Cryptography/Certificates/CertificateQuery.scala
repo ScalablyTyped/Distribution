@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Security.Cryptography.Certificates
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,30 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Creates a new instance of a certificate query. */
 class CertificateQuery ()
-  extends typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateQuery {
-  /** Gets a collection of object identifiers (OIDs) for the enhanced key usage extension to search for. */
-  /* CompleteClass */
-  override var enhancedKeyUsages: IVector[String] = js.native
-  /** Gets or sets the certificate friendly name to search for. */
-  /* CompleteClass */
-  override var friendlyName: String = js.native
-  /** Gets or sets a value that indicates whether only hardware certificates (SC or TPM) are to be returned from the query. */
-  /* CompleteClass */
-  override var hardwareOnly: Boolean = js.native
-  /** Gets or sets whether to include duplicates. */
-  /* CompleteClass */
-  override var includeDuplicates: Boolean = js.native
-  /** Gets or sets whether to include expired certificates. */
-  /* CompleteClass */
-  override var includeExpiredCertificates: Boolean = js.native
-  /** Gets or sets the name of the certificate issuer to search for. */
-  /* CompleteClass */
-  override var issuerName: String = js.native
-  /** Gets or sets the store name. */
-  /* CompleteClass */
-  override var storeName: String = js.native
-  /** Gets or sets a certificate thumbprint to search for. */
-  /* CompleteClass */
-  override var thumbprint: Double = js.native
-}
+  extends typings.winrtUwp.Windows.Security.Cryptography.Certificates.CertificateQuery
 

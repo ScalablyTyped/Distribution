@@ -33,14 +33,37 @@ object Notification {
   def apply(
     ComparisonOperator: ComparisonOperator,
     NotificationType: NotificationType,
-    Threshold: NotificationThreshold,
-    NotificationState: NotificationState = null,
-    ThresholdType: ThresholdType = null
+    Threshold: NotificationThreshold
   ): Notification = {
     val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], NotificationType = NotificationType.asInstanceOf[js.Any], Threshold = Threshold.asInstanceOf[js.Any])
-    if (NotificationState != null) __obj.updateDynamic("NotificationState")(NotificationState.asInstanceOf[js.Any])
-    if (ThresholdType != null) __obj.updateDynamic("ThresholdType")(ThresholdType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }
+  @scala.inline
+  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonOperator(value: ComparisonOperator): Self = this.set("ComparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotificationType(value: NotificationType): Self = this.set("NotificationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThreshold(value: NotificationThreshold): Self = this.set("Threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotificationState(value: NotificationState): Self = this.set("NotificationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationState: Self = this.set("NotificationState", js.undefined)
+    @scala.inline
+    def setThresholdType(value: ThresholdType): Self = this.set("ThresholdType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThresholdType: Self = this.set("ThresholdType", js.undefined)
+  }
+  
 }
 

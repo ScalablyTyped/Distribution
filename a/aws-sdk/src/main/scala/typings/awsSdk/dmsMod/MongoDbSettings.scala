@@ -58,34 +58,70 @@ trait MongoDbSettings extends js.Object {
 
 object MongoDbSettings {
   @scala.inline
-  def apply(
-    AuthMechanism: AuthMechanismValue = null,
-    AuthSource: String = null,
-    AuthType: AuthTypeValue = null,
-    DatabaseName: String = null,
-    DocsToInvestigate: String = null,
-    ExtractDocId: String = null,
-    KmsKeyId: String = null,
-    NestingLevel: NestingLevelValue = null,
-    Password: SecretString = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
-    ServerName: String = null,
-    Username: String = null
-  ): MongoDbSettings = {
+  def apply(): MongoDbSettings = {
     val __obj = js.Dynamic.literal()
-    if (AuthMechanism != null) __obj.updateDynamic("AuthMechanism")(AuthMechanism.asInstanceOf[js.Any])
-    if (AuthSource != null) __obj.updateDynamic("AuthSource")(AuthSource.asInstanceOf[js.Any])
-    if (AuthType != null) __obj.updateDynamic("AuthType")(AuthType.asInstanceOf[js.Any])
-    if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
-    if (DocsToInvestigate != null) __obj.updateDynamic("DocsToInvestigate")(DocsToInvestigate.asInstanceOf[js.Any])
-    if (ExtractDocId != null) __obj.updateDynamic("ExtractDocId")(ExtractDocId.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (NestingLevel != null) __obj.updateDynamic("NestingLevel")(NestingLevel.asInstanceOf[js.Any])
-    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoDbSettings]
   }
+  @scala.inline
+  implicit class MongoDbSettingsOps[Self <: MongoDbSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthMechanism(value: AuthMechanismValue): Self = this.set("AuthMechanism", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthMechanism: Self = this.set("AuthMechanism", js.undefined)
+    @scala.inline
+    def setAuthSource(value: String): Self = this.set("AuthSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthSource: Self = this.set("AuthSource", js.undefined)
+    @scala.inline
+    def setAuthType(value: AuthTypeValue): Self = this.set("AuthType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthType: Self = this.set("AuthType", js.undefined)
+    @scala.inline
+    def setDatabaseName(value: String): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    @scala.inline
+    def setDocsToInvestigate(value: String): Self = this.set("DocsToInvestigate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocsToInvestigate: Self = this.set("DocsToInvestigate", js.undefined)
+    @scala.inline
+    def setExtractDocId(value: String): Self = this.set("ExtractDocId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtractDocId: Self = this.set("ExtractDocId", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setNestingLevel(value: NestingLevelValue): Self = this.set("NestingLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNestingLevel: Self = this.set("NestingLevel", js.undefined)
+    @scala.inline
+    def setPassword(value: SecretString): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("Password", js.undefined)
+    @scala.inline
+    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerName: Self = this.set("ServerName", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

@@ -193,6 +193,59 @@ class Connection protected () extends js.Object {
     jid: String,
     sid: String,
     rid: String,
+    callback: js.UndefOr[scala.Nothing],
+    wait: js.UndefOr[scala.Nothing],
+    hold: js.UndefOr[scala.Nothing],
+    wind: Double
+  ): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
+    callback: js.UndefOr[scala.Nothing],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double
+  ): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
+    callback: js.UndefOr[scala.Nothing],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double,
+    wind: Double
+  ): Unit = js.native
+  def attach(jid: String, sid: String, rid: String, callback: js.UndefOr[scala.Nothing], wait: Double): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
+    callback: js.UndefOr[scala.Nothing],
+    wait: Double,
+    hold: js.UndefOr[scala.Nothing],
+    wind: Double
+  ): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
+    callback: js.UndefOr[scala.Nothing],
+    wait: Double,
+    hold: Double
+  ): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
+    callback: js.UndefOr[scala.Nothing],
+    wait: Double,
+    hold: Double,
+    wind: Double
+  ): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
     callback: js.Function2[/* status */ Status, /* condition */ String, _]
   ): Unit = js.native
   def attach(
@@ -200,7 +253,42 @@ class Connection protected () extends js.Object {
     sid: String,
     rid: String,
     callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: js.UndefOr[scala.Nothing],
+    hold: js.UndefOr[scala.Nothing],
+    wind: Double
+  ): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double
+  ): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double,
+    wind: Double
+  ): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
     wait: Double
+  ): Unit = js.native
+  def attach(
+    jid: String,
+    sid: String,
+    rid: String,
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: Double,
+    hold: js.UndefOr[scala.Nothing],
+    wind: Double
   ): Unit = js.native
   def attach(
     jid: String,
@@ -398,9 +486,146 @@ class Connection protected () extends js.Object {
     *      The default is 5.
     */
   def restore(): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    wait: js.UndefOr[scala.Nothing],
+    hold: js.UndefOr[scala.Nothing],
+    route: String
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double,
+    route: String
+  ): Unit = js.native
+  def restore(jid: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], wait: Double): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    wait: Double,
+    hold: js.UndefOr[scala.Nothing],
+    route: String
+  ): Unit = js.native
+  def restore(jid: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], wait: Double, hold: Double): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    wait: Double,
+    hold: Double,
+    route: String
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ Status, /* condition */ String, _]
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: js.UndefOr[scala.Nothing],
+    hold: js.UndefOr[scala.Nothing],
+    route: String
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double,
+    route: String
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: Double
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: Double,
+    hold: js.UndefOr[scala.Nothing],
+    route: String
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: Double,
+    hold: Double
+  ): Unit = js.native
+  def restore(
+    jid: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: Double,
+    hold: Double,
+    route: String
+  ): Unit = js.native
   def restore(jid: String): Unit = js.native
+  def restore(
+    jid: String,
+    callback: js.UndefOr[scala.Nothing],
+    wait: js.UndefOr[scala.Nothing],
+    hold: js.UndefOr[scala.Nothing],
+    route: String
+  ): Unit = js.native
+  def restore(jid: String, callback: js.UndefOr[scala.Nothing], wait: js.UndefOr[scala.Nothing], hold: Double): Unit = js.native
+  def restore(
+    jid: String,
+    callback: js.UndefOr[scala.Nothing],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double,
+    route: String
+  ): Unit = js.native
+  def restore(jid: String, callback: js.UndefOr[scala.Nothing], wait: Double): Unit = js.native
+  def restore(
+    jid: String,
+    callback: js.UndefOr[scala.Nothing],
+    wait: Double,
+    hold: js.UndefOr[scala.Nothing],
+    route: String
+  ): Unit = js.native
+  def restore(jid: String, callback: js.UndefOr[scala.Nothing], wait: Double, hold: Double): Unit = js.native
+  def restore(jid: String, callback: js.UndefOr[scala.Nothing], wait: Double, hold: Double, route: String): Unit = js.native
   def restore(jid: String, callback: js.Function2[/* status */ Status, /* condition */ String, _]): Unit = js.native
+  def restore(
+    jid: String,
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: js.UndefOr[scala.Nothing],
+    hold: js.UndefOr[scala.Nothing],
+    route: String
+  ): Unit = js.native
+  def restore(
+    jid: String,
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double
+  ): Unit = js.native
+  def restore(
+    jid: String,
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: js.UndefOr[scala.Nothing],
+    hold: Double,
+    route: String
+  ): Unit = js.native
   def restore(jid: String, callback: js.Function2[/* status */ Status, /* condition */ String, _], wait: Double): Unit = js.native
+  def restore(
+    jid: String,
+    callback: js.Function2[/* status */ Status, /* condition */ String, _],
+    wait: Double,
+    hold: js.UndefOr[scala.Nothing],
+    route: String
+  ): Unit = js.native
   def restore(
     jid: String,
     callback: js.Function2[/* status */ Status, /* condition */ String, _],
@@ -450,7 +675,26 @@ class Connection protected () extends js.Object {
     *    The id used to send the IQ.
     */
   def sendIQ(elem: Element): String = js.native
+  def sendIQ(
+    elem: Element,
+    callback: js.UndefOr[scala.Nothing],
+    errback: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): String = js.native
+  def sendIQ(elem: Element, callback: js.UndefOr[scala.Nothing], errback: js.Function1[/* stanza */ Element, _]): String = js.native
+  def sendIQ(
+    elem: Element,
+    callback: js.UndefOr[scala.Nothing],
+    errback: js.Function1[/* stanza */ Element, _],
+    timeout: Double
+  ): String = js.native
   def sendIQ(elem: Element, callback: js.Function1[/* stanza */ Element, _]): String = js.native
+  def sendIQ(
+    elem: Element,
+    callback: js.Function1[/* stanza */ Element, _],
+    errback: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): String = js.native
   def sendIQ(
     elem: Element,
     callback: js.Function1[/* stanza */ Element, _],
@@ -463,7 +707,26 @@ class Connection protected () extends js.Object {
     timeout: Double
   ): String = js.native
   def sendIQ(elem: Builder): String = js.native
+  def sendIQ(
+    elem: Builder,
+    callback: js.UndefOr[scala.Nothing],
+    errback: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): String = js.native
+  def sendIQ(elem: Builder, callback: js.UndefOr[scala.Nothing], errback: js.Function1[/* stanza */ Element, _]): String = js.native
+  def sendIQ(
+    elem: Builder,
+    callback: js.UndefOr[scala.Nothing],
+    errback: js.Function1[/* stanza */ Element, _],
+    timeout: Double
+  ): String = js.native
   def sendIQ(elem: Builder, callback: js.Function1[/* stanza */ Element, _]): String = js.native
+  def sendIQ(
+    elem: Builder,
+    callback: js.Function1[/* stanza */ Element, _],
+    errback: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): String = js.native
   def sendIQ(
     elem: Builder,
     callback: js.Function1[/* stanza */ Element, _],

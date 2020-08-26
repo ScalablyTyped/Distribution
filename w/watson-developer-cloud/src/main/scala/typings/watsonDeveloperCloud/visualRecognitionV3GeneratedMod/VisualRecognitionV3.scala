@@ -59,6 +59,7 @@ trait VisualRecognitionV3 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def classify(): js.Promise[_] | Unit = js.native
+  def classify(params: js.UndefOr[scala.Nothing], callback: Callback[ClassifiedImages]): js.Promise[_] | Unit = js.native
   def classify(params: ClassifyParams): js.Promise[_] | Unit = js.native
   def classify(params: ClassifyParams, callback: Callback[ClassifiedImages]): js.Promise[_] | Unit = js.native
   /*************************
@@ -171,6 +172,7 @@ trait VisualRecognitionV3 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def detectFaces(): js.Promise[_] | Unit = js.native
+  def detectFaces(params: js.UndefOr[scala.Nothing], callback: Callback[DetectedFaces]): js.Promise[_] | Unit = js.native
   def detectFaces(params: DetectFacesParams): js.Promise[_] | Unit = js.native
   def detectFaces(params: DetectFacesParams, callback: Callback[DetectedFaces]): js.Promise[_] | Unit = js.native
   /**
@@ -214,6 +216,7 @@ trait VisualRecognitionV3 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listClassifiers(): js.Promise[_] | Unit = js.native
+  def listClassifiers(params: js.UndefOr[scala.Nothing], callback: Callback[Classifiers]): js.Promise[_] | Unit = js.native
   def listClassifiers(params: ListClassifiersParams): js.Promise[_] | Unit = js.native
   def listClassifiers(params: ListClassifiersParams, callback: Callback[Classifiers]): js.Promise[_] | Unit = js.native
   /**

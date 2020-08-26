@@ -26,13 +26,38 @@ trait PipelineNotifications extends js.Object {
 
 object PipelineNotifications {
   @scala.inline
-  def apply(completed: String = null, error: String = null, progressing: String = null, warning: String = null): PipelineNotifications = {
+  def apply(): PipelineNotifications = {
     val __obj = js.Dynamic.literal()
-    if (completed != null) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (progressing != null) __obj.updateDynamic("progressing")(progressing.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineNotifications]
   }
+  @scala.inline
+  implicit class PipelineNotificationsOps[Self <: PipelineNotifications] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompleted(value: String): Self = this.set("completed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleted: Self = this.set("completed", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setProgressing(value: String): Self = this.set("progressing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressing: Self = this.set("progressing", js.undefined)
+    @scala.inline
+    def setWarning(value: String): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

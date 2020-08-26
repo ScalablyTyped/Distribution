@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-textarea/lib/calculateNodeHeight", "calculateNodeStyling")
+@JSImport("rc-textarea/es/calculateNodeHeight", "calculateNodeStyling")
 @js.native
 object calculateNodeStyling extends js.Object {
   def apply(node: HTMLElement): NodeType = js.native

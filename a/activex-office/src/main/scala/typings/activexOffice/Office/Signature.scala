@@ -30,8 +30,58 @@ trait Signature extends js.Object {
   def Delete(): Unit = js.native
   def ShowDetails(): Unit = js.native
   def Sign(): Unit = js.native
+  def Sign(
+    varSigImg: js.UndefOr[scala.Nothing],
+    varDelSuggSigner: js.UndefOr[scala.Nothing],
+    varDelSuggSignerLine2: js.UndefOr[scala.Nothing],
+    varDelSuggSignerEmail: js.Any
+  ): Unit = js.native
+  def Sign(
+    varSigImg: js.UndefOr[scala.Nothing],
+    varDelSuggSigner: js.UndefOr[scala.Nothing],
+    varDelSuggSignerLine2: js.Any
+  ): Unit = js.native
+  def Sign(
+    varSigImg: js.UndefOr[scala.Nothing],
+    varDelSuggSigner: js.UndefOr[scala.Nothing],
+    varDelSuggSignerLine2: js.Any,
+    varDelSuggSignerEmail: js.Any
+  ): Unit = js.native
+  def Sign(varSigImg: js.UndefOr[scala.Nothing], varDelSuggSigner: js.Any): Unit = js.native
+  def Sign(
+    varSigImg: js.UndefOr[scala.Nothing],
+    varDelSuggSigner: js.Any,
+    varDelSuggSignerLine2: js.UndefOr[scala.Nothing],
+    varDelSuggSignerEmail: js.Any
+  ): Unit = js.native
+  def Sign(varSigImg: js.UndefOr[scala.Nothing], varDelSuggSigner: js.Any, varDelSuggSignerLine2: js.Any): Unit = js.native
+  def Sign(
+    varSigImg: js.UndefOr[scala.Nothing],
+    varDelSuggSigner: js.Any,
+    varDelSuggSignerLine2: js.Any,
+    varDelSuggSignerEmail: js.Any
+  ): Unit = js.native
   def Sign(varSigImg: js.Any): Unit = js.native
+  def Sign(
+    varSigImg: js.Any,
+    varDelSuggSigner: js.UndefOr[scala.Nothing],
+    varDelSuggSignerLine2: js.UndefOr[scala.Nothing],
+    varDelSuggSignerEmail: js.Any
+  ): Unit = js.native
+  def Sign(varSigImg: js.Any, varDelSuggSigner: js.UndefOr[scala.Nothing], varDelSuggSignerLine2: js.Any): Unit = js.native
+  def Sign(
+    varSigImg: js.Any,
+    varDelSuggSigner: js.UndefOr[scala.Nothing],
+    varDelSuggSignerLine2: js.Any,
+    varDelSuggSignerEmail: js.Any
+  ): Unit = js.native
   def Sign(varSigImg: js.Any, varDelSuggSigner: js.Any): Unit = js.native
+  def Sign(
+    varSigImg: js.Any,
+    varDelSuggSigner: js.Any,
+    varDelSuggSignerLine2: js.UndefOr[scala.Nothing],
+    varDelSuggSignerEmail: js.Any
+  ): Unit = js.native
   def Sign(varSigImg: js.Any, varDelSuggSigner: js.Any, varDelSuggSignerLine2: js.Any): Unit = js.native
   def Sign(
     varSigImg: js.Any,

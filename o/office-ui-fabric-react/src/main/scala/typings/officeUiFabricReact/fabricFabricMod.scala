@@ -1,7 +1,9 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.fabricBaseMod.FabricBase
 import typings.officeUiFabricReact.fabricTypesMod.IFabricProps
-import typings.react.mod.FunctionComponent
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Fabric/Fabric", JSImport.Namespace)
 @js.native
 object fabricFabricMod extends js.Object {
-  val Fabric: FunctionComponent[IFabricProps] = js.native
+  val Fabric: ForwardRefExoticComponent[IFabricProps with RefAttributes[FabricBase]] = js.native
 }
 

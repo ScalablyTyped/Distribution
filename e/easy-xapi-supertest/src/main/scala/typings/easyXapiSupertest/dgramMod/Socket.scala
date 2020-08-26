@@ -13,6 +13,7 @@ trait Socket extends EventEmitter {
   def addMembership(multicastAddress: String, multicastInterface: String): Unit = js.native
   def address(): AddressInfo = js.native
   def bind(port: Double): Unit = js.native
+  def bind(port: Double, address: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def bind(port: Double, address: String): Unit = js.native
   def bind(port: Double, address: String, callback: js.Function0[Unit]): Unit = js.native
   def close(): Unit = js.native

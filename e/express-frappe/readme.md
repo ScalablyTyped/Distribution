@@ -12,7 +12,7 @@ Express Frappe 🥤 - build express application another way.
 | Keywords           | express, expressjs, typescript |
 | # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 693 |
+| # downloads        | 667 |
 | # stars            | 0 |
 
 ## Links

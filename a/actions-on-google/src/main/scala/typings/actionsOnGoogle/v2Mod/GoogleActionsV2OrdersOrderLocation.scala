@@ -4,24 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleActionsV2OrdersOrderLocation extends js.Object {
   /**
     * Contains actual location info.
     */
-  var location: js.UndefOr[GoogleActionsV2Location] = js.undefined
+  var location: js.UndefOr[GoogleActionsV2Location] = js.native
   /**
     * Address type. Determines icon and placement. Required.
     */
-  var `type`: js.UndefOr[GoogleActionsV2OrdersOrderLocationType] = js.undefined
+  var `type`: js.UndefOr[GoogleActionsV2OrdersOrderLocationType] = js.native
 }
 
 object GoogleActionsV2OrdersOrderLocation {
   @scala.inline
-  def apply(location: GoogleActionsV2Location = null, `type`: GoogleActionsV2OrdersOrderLocationType = null): GoogleActionsV2OrdersOrderLocation = {
+  def apply(): GoogleActionsV2OrdersOrderLocation = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderLocation]
   }
+  @scala.inline
+  implicit class GoogleActionsV2OrdersOrderLocationOps[Self <: GoogleActionsV2OrdersOrderLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: GoogleActionsV2Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setType(value: GoogleActionsV2OrdersOrderLocationType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

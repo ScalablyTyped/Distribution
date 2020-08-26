@@ -38,20 +38,42 @@ trait CreateExportTaskRequest extends js.Object {
 
 object CreateExportTaskRequest {
   @scala.inline
-  def apply(
-    destination: ExportDestinationBucket,
-    from: Timestamp,
-    logGroupName: LogGroupName,
-    to: Timestamp,
-    destinationPrefix: ExportDestinationPrefix = null,
-    logStreamNamePrefix: LogStreamName = null,
-    taskName: ExportTaskName = null
-  ): CreateExportTaskRequest = {
+  def apply(destination: ExportDestinationBucket, from: Timestamp, logGroupName: LogGroupName, to: Timestamp): CreateExportTaskRequest = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (destinationPrefix != null) __obj.updateDynamic("destinationPrefix")(destinationPrefix.asInstanceOf[js.Any])
-    if (logStreamNamePrefix != null) __obj.updateDynamic("logStreamNamePrefix")(logStreamNamePrefix.asInstanceOf[js.Any])
-    if (taskName != null) __obj.updateDynamic("taskName")(taskName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateExportTaskRequest]
   }
+  @scala.inline
+  implicit class CreateExportTaskRequestOps[Self <: CreateExportTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: ExportDestinationBucket): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrom(value: Timestamp): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTo(value: Timestamp): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationPrefix(value: ExportDestinationPrefix): Self = this.set("destinationPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPrefix: Self = this.set("destinationPrefix", js.undefined)
+    @scala.inline
+    def setLogStreamNamePrefix(value: LogStreamName): Self = this.set("logStreamNamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreamNamePrefix: Self = this.set("logStreamNamePrefix", js.undefined)
+    @scala.inline
+    def setTaskName(value: ExportTaskName): Self = this.set("taskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskName: Self = this.set("taskName", js.undefined)
+  }
+  
 }
 

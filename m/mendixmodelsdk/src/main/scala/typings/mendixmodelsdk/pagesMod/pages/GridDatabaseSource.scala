@@ -24,7 +24,7 @@ class GridDatabaseSource protected () extends DatabaseSourceBase {
   @JSName("model")
   var model_FGridDatabaseSource: IModel = js.native
   def searchBar: SearchBar = js.native
-  def searchBar(newValue: SearchBar): js.Any = js.native
+  def searchBar_=(newValue: SearchBar): Unit = js.native
 }
 
 /* static members */

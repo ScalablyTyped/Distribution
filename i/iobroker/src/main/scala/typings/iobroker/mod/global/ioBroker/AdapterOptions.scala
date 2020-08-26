@@ -5,78 +5,122 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AdapterOptions extends js.Object {
   /** provide alternative global configuration for the adapter. Default: null */
-  var config: js.UndefOr[js.Any] = js.undefined
+  var config: js.UndefOr[js.Any] = js.native
   /** path to adapter */
-  var dirname: js.UndefOr[String] = js.undefined
+  var dirname: js.UndefOr[String] = js.native
   /** Will be called when ioBroker detects an unhandled error in the adapter. Return `true` to signal that the error was handled and the adapter does not need to be restarted. */
-  var error: js.UndefOr[ErrorHandler] = js.undefined
+  var error: js.UndefOr[ErrorHandler] = js.native
   /** instance of the created adapter. Default: null */
-  var instance: js.UndefOr[Double] = js.undefined
+  var instance: js.UndefOr[Double] = js.native
   /** If the adapter collects logs from all adapters (experts only). Default: false */
-  var logTransporter: js.UndefOr[Boolean] = js.undefined
+  var logTransporter: js.UndefOr[Boolean] = js.native
   /** Handler for received adapter messages. Can only be used if messagebox in io-package.json is set to true. */
-  var message: js.UndefOr[MessageHandler] = js.undefined
+  var message: js.UndefOr[MessageHandler] = js.native
   /** The name of the adapter */
-  var name: String
+  var name: String = js.native
   /** if true, stateChange will be called with an id that has no namespace, e.g. "state" instead of "adapter.0.state". Default: false */
-  var noNamespace: js.UndefOr[Boolean] = js.undefined
+  var noNamespace: js.UndefOr[Boolean] = js.native
   /** Handler for changes of subscribed objects */
-  var objectChange: js.UndefOr[ObjectChangeHandler] = js.undefined
+  var objectChange: js.UndefOr[ObjectChangeHandler] = js.native
   /** If true, the adapter will have a property `oObjects` that contains a live cache of the adapter's objects */
-  var objects: js.UndefOr[Boolean] = js.undefined
+  var objects: js.UndefOr[Boolean] = js.native
   /** Will be called when the adapter is intialized */
-  var ready: js.UndefOr[ReadyHandler] = js.undefined
+  var ready: js.UndefOr[ReadyHandler] = js.native
   /** Handler for changes of subscribed states */
-  var stateChange: js.UndefOr[StateChangeHandler] = js.undefined
+  var stateChange: js.UndefOr[StateChangeHandler] = js.native
   /** If true, the adapter will have a property `oStates` that contains a live cache of the adapter's states */
-  var states: js.UndefOr[Boolean] = js.undefined
+  var states: js.UndefOr[Boolean] = js.native
   /** if the global system config should be included in the created object. Default: false */
-  var systemConfig: js.UndefOr[Boolean] = js.undefined
+  var systemConfig: js.UndefOr[Boolean] = js.native
   /** Will be called on adapter termination */
-  var unload: js.UndefOr[UnloadHandler] = js.undefined
+  var unload: js.UndefOr[UnloadHandler] = js.native
   /** If the adapter needs access to the formatDate function to format dates according to the global settings. Default: false */
-  var useFormatDate: js.UndefOr[Boolean] = js.undefined
+  var useFormatDate: js.UndefOr[Boolean] = js.native
 }
 
 object AdapterOptions {
   @scala.inline
-  def apply(
-    name: String,
-    config: js.Any = null,
-    dirname: String = null,
-    error: /* err */ Error => Boolean = null,
-    instance: js.UndefOr[Double] = js.undefined,
-    logTransporter: js.UndefOr[Boolean] = js.undefined,
-    message: /* obj */ Message => Unit | js.Promise[Unit] = null,
-    noNamespace: js.UndefOr[Boolean] = js.undefined,
-    objectChange: (/* id */ String, /* obj */ js.UndefOr[Object | Null]) => Unit | js.Promise[Unit] = null,
-    objects: js.UndefOr[Boolean] = js.undefined,
-    ready: () => Unit | js.Promise[Unit] = null,
-    stateChange: (/* id */ String, /* obj */ js.UndefOr[State | Null]) => Unit | js.Promise[Unit] = null,
-    states: js.UndefOr[Boolean] = js.undefined,
-    systemConfig: js.UndefOr[Boolean] = js.undefined,
-    unload: /* callback */ EmptyCallback => Unit | js.Promise[Unit] = null,
-    useFormatDate: js.UndefOr[Boolean] = js.undefined
-  ): AdapterOptions = {
+  def apply(name: String): AdapterOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (dirname != null) __obj.updateDynamic("dirname")(dirname.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (!js.isUndefined(instance)) __obj.updateDynamic("instance")(instance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(logTransporter)) __obj.updateDynamic("logTransporter")(logTransporter.get.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(js.Any.fromFunction1(message))
-    if (!js.isUndefined(noNamespace)) __obj.updateDynamic("noNamespace")(noNamespace.get.asInstanceOf[js.Any])
-    if (objectChange != null) __obj.updateDynamic("objectChange")(js.Any.fromFunction2(objectChange))
-    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.get.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
-    if (stateChange != null) __obj.updateDynamic("stateChange")(js.Any.fromFunction2(stateChange))
-    if (!js.isUndefined(states)) __obj.updateDynamic("states")(states.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(systemConfig)) __obj.updateDynamic("systemConfig")(systemConfig.get.asInstanceOf[js.Any])
-    if (unload != null) __obj.updateDynamic("unload")(js.Any.fromFunction1(unload))
-    if (!js.isUndefined(useFormatDate)) __obj.updateDynamic("useFormatDate")(useFormatDate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdapterOptions]
   }
+  @scala.inline
+  implicit class AdapterOptionsOps[Self <: AdapterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfig(value: js.Any): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setDirname(value: String): Self = this.set("dirname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirname: Self = this.set("dirname", js.undefined)
+    @scala.inline
+    def setError(value: /* err */ Error => Boolean): Self = this.set("error", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setInstance(value: Double): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setLogTransporter(value: Boolean): Self = this.set("logTransporter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogTransporter: Self = this.set("logTransporter", js.undefined)
+    @scala.inline
+    def setMessage(value: /* obj */ Message => Unit | js.Promise[Unit]): Self = this.set("message", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setNoNamespace(value: Boolean): Self = this.set("noNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoNamespace: Self = this.set("noNamespace", js.undefined)
+    @scala.inline
+    def setObjectChange(value: (/* id */ String, /* obj */ js.UndefOr[Object | Null]) => Unit | js.Promise[Unit]): Self = this.set("objectChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteObjectChange: Self = this.set("objectChange", js.undefined)
+    @scala.inline
+    def setObjects(value: Boolean): Self = this.set("objects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjects: Self = this.set("objects", js.undefined)
+    @scala.inline
+    def setReady(value: () => Unit | js.Promise[Unit]): Self = this.set("ready", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteReady: Self = this.set("ready", js.undefined)
+    @scala.inline
+    def setStateChange(value: (/* id */ String, /* obj */ js.UndefOr[State | Null]) => Unit | js.Promise[Unit]): Self = this.set("stateChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStateChange: Self = this.set("stateChange", js.undefined)
+    @scala.inline
+    def setStates(value: Boolean): Self = this.set("states", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStates: Self = this.set("states", js.undefined)
+    @scala.inline
+    def setSystemConfig(value: Boolean): Self = this.set("systemConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemConfig: Self = this.set("systemConfig", js.undefined)
+    @scala.inline
+    def setUnload(value: /* callback */ EmptyCallback => Unit | js.Promise[Unit]): Self = this.set("unload", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUnload: Self = this.set("unload", js.undefined)
+    @scala.inline
+    def setUseFormatDate(value: Boolean): Self = this.set("useFormatDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseFormatDate: Self = this.set("useFormatDate", js.undefined)
+  }
+  
 }
 

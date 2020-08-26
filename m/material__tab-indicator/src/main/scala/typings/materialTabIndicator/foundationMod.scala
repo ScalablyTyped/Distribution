@@ -20,12 +20,6 @@ object foundationMod extends js.Object {
     def activate(previousIndicatorClientRect: ClientRect): Unit = js.native
     def computeContentClientRect(): ClientRect = js.native
     def deactivate(): Unit = js.native
-    // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
-    // Subclasses should override this method to perform initialization routines (registering events, etc.)
-    /* CompleteClass */
-    override def init(): Unit = js.native
   }
   
   @js.native
@@ -36,17 +30,17 @@ object foundationMod extends js.Object {
   /* static members */
   @js.native
   object MDCTabIndicatorFoundation extends js.Object {
-    val cssClasses: ACTIVE = js.native
-    val defaultAdapter: MDCTabIndicatorAdapter = js.native
-    val strings: CONTENTSELECTOR = js.native
+    def cssClasses: ACTIVE = js.native
+    def defaultAdapter: MDCTabIndicatorAdapter = js.native
+    def strings: CONTENTSELECTOR = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    val cssClasses: ACTIVE = js.native
-    val defaultAdapter: MDCTabIndicatorAdapter = js.native
-    val strings: CONTENTSELECTOR = js.native
+    def cssClasses: ACTIVE = js.native
+    def defaultAdapter: MDCTabIndicatorAdapter = js.native
+    def strings: CONTENTSELECTOR = js.native
   }
   
 }

@@ -12,7 +12,7 @@ Hystrix-like circuit breaker for JavaScript.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 106228 |
+| # downloads        | 110187 |
 | # stars            | 7 |
 
 ## Links

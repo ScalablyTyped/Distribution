@@ -18,14 +18,30 @@ trait CloudWatchOutputConfig extends js.Object {
 
 object CloudWatchOutputConfig {
   @scala.inline
-  def apply(
-    CloudWatchLogGroupName: CloudWatchLogGroupName = null,
-    CloudWatchOutputEnabled: js.UndefOr[CloudWatchOutputEnabled] = js.undefined
-  ): CloudWatchOutputConfig = {
+  def apply(): CloudWatchOutputConfig = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchLogGroupName != null) __obj.updateDynamic("CloudWatchLogGroupName")(CloudWatchLogGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudWatchOutputEnabled)) __obj.updateDynamic("CloudWatchOutputEnabled")(CloudWatchOutputEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchOutputConfig]
   }
+  @scala.inline
+  implicit class CloudWatchOutputConfigOps[Self <: CloudWatchOutputConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchLogGroupName(value: CloudWatchLogGroupName): Self = this.set("CloudWatchLogGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLogGroupName: Self = this.set("CloudWatchLogGroupName", js.undefined)
+    @scala.inline
+    def setCloudWatchOutputEnabled(value: CloudWatchOutputEnabled): Self = this.set("CloudWatchOutputEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchOutputEnabled: Self = this.set("CloudWatchOutputEnabled", js.undefined)
+  }
+  
 }
 

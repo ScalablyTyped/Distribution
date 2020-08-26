@@ -16,6 +16,7 @@ trait User extends js.Object {
   @JSName("Properties")
   val Properties_Original: Properties = js.native
   def CreateGroup(): Group = js.native
+  def CreateGroup(Name: js.UndefOr[scala.Nothing], PID: String): Group = js.native
   def CreateGroup(Name: String): Group = js.native
   def CreateGroup(Name: String, PID: String): Group = js.native
   def Groups(Item: String): Group = js.native

@@ -40,9 +40,9 @@ trait ResolverRuleState extends js.Object {
     */
   val shareStatus: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (documented below).
     * This argument should only be specified for `FORWARD` type rules.
@@ -52,28 +52,60 @@ trait ResolverRuleState extends js.Object {
 
 object ResolverRuleState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    domainName: Input[String] = null,
-    name: Input[String] = null,
-    ownerId: Input[String] = null,
-    resolverEndpointId: Input[String] = null,
-    ruleType: Input[String] = null,
-    shareStatus: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    targetIps: Input[js.Array[Input[ResolverRuleTargetIp]]] = null
-  ): ResolverRuleState = {
+  def apply(): ResolverRuleState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
-    if (resolverEndpointId != null) __obj.updateDynamic("resolverEndpointId")(resolverEndpointId.asInstanceOf[js.Any])
-    if (ruleType != null) __obj.updateDynamic("ruleType")(ruleType.asInstanceOf[js.Any])
-    if (shareStatus != null) __obj.updateDynamic("shareStatus")(shareStatus.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (targetIps != null) __obj.updateDynamic("targetIps")(targetIps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverRuleState]
   }
+  @scala.inline
+  implicit class ResolverRuleStateOps[Self <: ResolverRuleState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDomainName(value: Input[String]): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwnerId(value: Input[String]): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+    @scala.inline
+    def setResolverEndpointId(value: Input[String]): Self = this.set("resolverEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolverEndpointId: Self = this.set("resolverEndpointId", js.undefined)
+    @scala.inline
+    def setRuleType(value: Input[String]): Self = this.set("ruleType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleType: Self = this.set("ruleType", js.undefined)
+    @scala.inline
+    def setShareStatus(value: Input[String]): Self = this.set("shareStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShareStatus: Self = this.set("shareStatus", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTargetIpsVarargs(value: Input[ResolverRuleTargetIp]*): Self = this.set("targetIps", js.Array(value :_*))
+    @scala.inline
+    def setTargetIps(value: Input[js.Array[Input[ResolverRuleTargetIp]]]): Self = this.set("targetIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetIps: Self = this.set("targetIps", js.undefined)
+  }
+  
 }
 

@@ -2,6 +2,8 @@ package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.loadBalancerMod.ChannelControlHelper
 import typings.grpcGrpcJs.loadBalancerMod.LoadBalancer
+import typings.grpcGrpcJs.loadBalancingConfigMod.LoadBalancingConfig
+import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +21,7 @@ object loadBalancerPickFirstMod extends js.Object {
       *     this load balancer's owner.
       */
     def this(channelControlHelper: ChannelControlHelper) = this()
-    var channelControlHelper: js.Any = js.native
+    val channelControlHelper: js.Any = js.native
     /**
       * Start connecting to the address list most recently passed to
       * `updateAddressList`.
@@ -73,6 +75,7 @@ object loadBalancerPickFirstMod extends js.Object {
     var subchannels: js.Any = js.native
     var triedAllSubchannels: js.Any = js.native
     var updateState: js.Any = js.native
+    def updateAddressList(addressList: js.Array[SubchannelAddress], lbConfig: LoadBalancingConfig): Unit = js.native
   }
   
   def setup(): Unit = js.native

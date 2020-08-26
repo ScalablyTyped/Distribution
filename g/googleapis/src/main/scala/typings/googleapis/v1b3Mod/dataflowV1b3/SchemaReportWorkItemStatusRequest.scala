@@ -41,20 +41,44 @@ trait SchemaReportWorkItemStatusRequest extends js.Object {
 
 object SchemaReportWorkItemStatusRequest {
   @scala.inline
-  def apply(
-    currentWorkerTime: String = null,
-    location: String = null,
-    unifiedWorkerRequest: StringDictionary[js.Any] = null,
-    workItemStatuses: js.Array[SchemaWorkItemStatus] = null,
-    workerId: String = null
-  ): SchemaReportWorkItemStatusRequest = {
+  def apply(): SchemaReportWorkItemStatusRequest = {
     val __obj = js.Dynamic.literal()
-    if (currentWorkerTime != null) __obj.updateDynamic("currentWorkerTime")(currentWorkerTime.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (unifiedWorkerRequest != null) __obj.updateDynamic("unifiedWorkerRequest")(unifiedWorkerRequest.asInstanceOf[js.Any])
-    if (workItemStatuses != null) __obj.updateDynamic("workItemStatuses")(workItemStatuses.asInstanceOf[js.Any])
-    if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReportWorkItemStatusRequest]
   }
+  @scala.inline
+  implicit class SchemaReportWorkItemStatusRequestOps[Self <: SchemaReportWorkItemStatusRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentWorkerTime(value: String): Self = this.set("currentWorkerTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentWorkerTime: Self = this.set("currentWorkerTime", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setUnifiedWorkerRequest(value: StringDictionary[js.Any]): Self = this.set("unifiedWorkerRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnifiedWorkerRequest: Self = this.set("unifiedWorkerRequest", js.undefined)
+    @scala.inline
+    def setWorkItemStatusesVarargs(value: SchemaWorkItemStatus*): Self = this.set("workItemStatuses", js.Array(value :_*))
+    @scala.inline
+    def setWorkItemStatuses(value: js.Array[SchemaWorkItemStatus]): Self = this.set("workItemStatuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkItemStatuses: Self = this.set("workItemStatuses", js.undefined)
+    @scala.inline
+    def setWorkerId(value: String): Self = this.set("workerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerId: Self = this.set("workerId", js.undefined)
+  }
+  
 }
 

@@ -4,52 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UploadBlobOptions extends SetBlobPropertiesOptions {
-  var metadata: js.UndefOr[StorageMetadata] = js.undefined
-  var parallelOperationThreadCount: js.UndefOr[Double] = js.undefined
-  var speedSummary: js.UndefOr[SpeedSummary] = js.undefined
-  var storeBlobContentMD5: js.UndefOr[Boolean] = js.undefined
-  var useTransactionalMD5: js.UndefOr[Boolean] = js.undefined
+  var metadata: js.UndefOr[StorageMetadata] = js.native
+  var parallelOperationThreadCount: js.UndefOr[Double] = js.native
+  var speedSummary: js.UndefOr[SpeedSummary] = js.native
+  var storeBlobContentMD5: js.UndefOr[Boolean] = js.native
+  var useTransactionalMD5: js.UndefOr[Boolean] = js.native
 }
 
 object UploadBlobOptions {
   @scala.inline
-  def apply(
-    accessConditions: StorageAccessCondition = null,
-    cacheControl: String = null,
-    contentDisposition: String = null,
-    contentEncoding: String = null,
-    contentLanguage: String = null,
-    contentMD5: String = null,
-    contentType: String = null,
-    leaseId: String = null,
-    locationMode: String = null,
-    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
-    metadata: StorageMetadata = null,
-    parallelOperationThreadCount: js.UndefOr[Double] = js.undefined,
-    speedSummary: SpeedSummary = null,
-    storeBlobContentMD5: js.UndefOr[Boolean] = js.undefined,
-    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined,
-    useTransactionalMD5: js.UndefOr[Boolean] = js.undefined
-  ): UploadBlobOptions = {
+  def apply(): UploadBlobOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions.asInstanceOf[js.Any])
-    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
-    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
-    if (contentMD5 != null) __obj.updateDynamic("contentMD5")(contentMD5.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(parallelOperationThreadCount)) __obj.updateDynamic("parallelOperationThreadCount")(parallelOperationThreadCount.get.asInstanceOf[js.Any])
-    if (speedSummary != null) __obj.updateDynamic("speedSummary")(speedSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeBlobContentMD5)) __obj.updateDynamic("storeBlobContentMD5")(storeBlobContentMD5.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTransactionalMD5)) __obj.updateDynamic("useTransactionalMD5")(useTransactionalMD5.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadBlobOptions]
   }
+  @scala.inline
+  implicit class UploadBlobOptionsOps[Self <: UploadBlobOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetadata(value: StorageMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setParallelOperationThreadCount(value: Double): Self = this.set("parallelOperationThreadCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelOperationThreadCount: Self = this.set("parallelOperationThreadCount", js.undefined)
+    @scala.inline
+    def setSpeedSummary(value: SpeedSummary): Self = this.set("speedSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeedSummary: Self = this.set("speedSummary", js.undefined)
+    @scala.inline
+    def setStoreBlobContentMD5(value: Boolean): Self = this.set("storeBlobContentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreBlobContentMD5: Self = this.set("storeBlobContentMD5", js.undefined)
+    @scala.inline
+    def setUseTransactionalMD5(value: Boolean): Self = this.set("useTransactionalMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseTransactionalMD5: Self = this.set("useTransactionalMD5", js.undefined)
+  }
+  
 }
 

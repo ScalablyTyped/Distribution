@@ -42,24 +42,52 @@ trait CreateEnvironmentEC2Request extends js.Object {
 
 object CreateEnvironmentEC2Request {
   @scala.inline
-  def apply(
-    instanceType: InstanceType,
-    name: EnvironmentName,
-    automaticStopTimeMinutes: js.UndefOr[AutomaticStopTimeMinutes] = js.undefined,
-    clientRequestToken: ClientRequestToken = null,
-    description: EnvironmentDescription = null,
-    ownerArn: UserArn = null,
-    subnetId: SubnetId = null,
-    tags: TagList = null
-  ): CreateEnvironmentEC2Request = {
+  def apply(instanceType: InstanceType, name: EnvironmentName): CreateEnvironmentEC2Request = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(automaticStopTimeMinutes)) __obj.updateDynamic("automaticStopTimeMinutes")(automaticStopTimeMinutes.get.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (ownerArn != null) __obj.updateDynamic("ownerArn")(ownerArn.asInstanceOf[js.Any])
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEnvironmentEC2Request]
   }
+  @scala.inline
+  implicit class CreateEnvironmentEC2RequestOps[Self <: CreateEnvironmentEC2Request] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: EnvironmentName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutomaticStopTimeMinutes(value: AutomaticStopTimeMinutes): Self = this.set("automaticStopTimeMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticStopTimeMinutes: Self = this.set("automaticStopTimeMinutes", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setDescription(value: EnvironmentDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setOwnerArn(value: UserArn): Self = this.set("ownerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerArn: Self = this.set("ownerArn", js.undefined)
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

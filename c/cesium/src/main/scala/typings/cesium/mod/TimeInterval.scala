@@ -19,6 +19,7 @@ class TimeInterval () extends js.Object {
   var stop: JulianDate = js.native
   def clone(result: TimeInterval): TimeInterval = js.native
   def equals(): Boolean = js.native
+  def equals(right: js.UndefOr[scala.Nothing], dataComparer: DataComparer): Boolean = js.native
   def equals(right: TimeInterval): Boolean = js.native
   def equals(right: TimeInterval, dataComparer: DataComparer): Boolean = js.native
   def equalsEpsilon(right: TimeInterval, epsilon: Double): Boolean = js.native
@@ -30,11 +31,16 @@ class TimeInterval () extends js.Object {
 @js.native
 object TimeInterval extends js.Object {
   var EMPTY: TimeInterval = js.native
+  def clone(timeInterval: js.UndefOr[scala.Nothing], result: TimeInterval): TimeInterval = js.native
   def clone(timeInterval: TimeInterval): TimeInterval = js.native
   def clone(timeInterval: TimeInterval, result: TimeInterval): TimeInterval = js.native
   def contains(timeInterval: TimeInterval, julianDate: JulianDate): Boolean = js.native
   def equals(): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], dataComparer: DataComparer): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: TimeInterval): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: TimeInterval, dataComparer: DataComparer): Boolean = js.native
   def equals(left: TimeInterval): Boolean = js.native
+  def equals(left: TimeInterval, right: js.UndefOr[scala.Nothing], dataComparer: DataComparer): Boolean = js.native
   def equals(left: TimeInterval, right: TimeInterval): Boolean = js.native
   def equals(left: TimeInterval, right: TimeInterval, dataComparer: DataComparer): Boolean = js.native
   def equalsEpsilon(left: TimeInterval, right: TimeInterval, epsilon: Double): Boolean = js.native

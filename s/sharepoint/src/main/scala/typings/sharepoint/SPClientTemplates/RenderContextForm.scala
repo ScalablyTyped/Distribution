@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RenderContextForm extends RenderContext {
-  var CSRCustomLayout: js.UndefOr[Boolean] = js.undefined
-  var CurrentItem: Item
-  var FieldControlModes: StringDictionary[ClientControlMode]
-  var FormContext: ClientFormContext
-  var FormUniqueId: String
-  var ListData: ListDataInForm
-  var ListSchema: ListSchemaInForm
+  var CSRCustomLayout: js.UndefOr[Boolean] = js.native
+  var CurrentItem: Item = js.native
+  var FieldControlModes: StringDictionary[ClientControlMode] = js.native
+  var FormContext: ClientFormContext = js.native
+  var FormUniqueId: String = js.native
+  var ListData: ListDataInForm = js.native
+  var ListSchema: ListSchemaInForm = js.native
 }
 
 object RenderContextForm {
@@ -23,52 +24,39 @@ object RenderContextForm {
     FormContext: ClientFormContext,
     FormUniqueId: String,
     ListData: ListDataInForm,
-    ListSchema: ListSchemaInForm,
-    BaseViewID: js.UndefOr[Double] = js.undefined,
-    CSRCustomLayout: js.UndefOr[Boolean] = js.undefined,
-    ControlMode: ClientControlMode = null,
-    CurrentCultureName: String = null,
-    CurrentLanguage: js.UndefOr[Double] = js.undefined,
-    CurrentSelectedItems: js.Any = null,
-    CurrentUICultureName: String = null,
-    ListTemplateType: js.UndefOr[Double] = js.undefined,
-    OnPostRender: RenderCallback | js.Array[RenderCallback] = null,
-    OnPreRender: RenderCallback | js.Array[RenderCallback] = null,
-    RenderBody: RenderContextForm => String = null,
-    RenderFieldByName: (RenderContextForm, /* fieldName */ String) => String = null,
-    RenderFields: RenderContextForm => String = null,
-    RenderFooter: RenderContextForm => String = null,
-    RenderGroups: RenderContextForm => String = null,
-    RenderHeader: RenderContextForm => String = null,
-    RenderItems: RenderContextForm => String = null,
-    RenderView: RenderContextForm => String = null,
-    SiteClientTag: String = null,
-    Templates: Templates = null,
-    onRefreshFailed: js.Any = null
+    ListSchema: ListSchemaInForm
   ): RenderContextForm = {
     val __obj = js.Dynamic.literal(CurrentItem = CurrentItem.asInstanceOf[js.Any], FieldControlModes = FieldControlModes.asInstanceOf[js.Any], FormContext = FormContext.asInstanceOf[js.Any], FormUniqueId = FormUniqueId.asInstanceOf[js.Any], ListData = ListData.asInstanceOf[js.Any], ListSchema = ListSchema.asInstanceOf[js.Any])
-    if (!js.isUndefined(BaseViewID)) __obj.updateDynamic("BaseViewID")(BaseViewID.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CSRCustomLayout)) __obj.updateDynamic("CSRCustomLayout")(CSRCustomLayout.get.asInstanceOf[js.Any])
-    if (ControlMode != null) __obj.updateDynamic("ControlMode")(ControlMode.asInstanceOf[js.Any])
-    if (CurrentCultureName != null) __obj.updateDynamic("CurrentCultureName")(CurrentCultureName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CurrentLanguage)) __obj.updateDynamic("CurrentLanguage")(CurrentLanguage.get.asInstanceOf[js.Any])
-    if (CurrentSelectedItems != null) __obj.updateDynamic("CurrentSelectedItems")(CurrentSelectedItems.asInstanceOf[js.Any])
-    if (CurrentUICultureName != null) __obj.updateDynamic("CurrentUICultureName")(CurrentUICultureName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ListTemplateType)) __obj.updateDynamic("ListTemplateType")(ListTemplateType.get.asInstanceOf[js.Any])
-    if (OnPostRender != null) __obj.updateDynamic("OnPostRender")(OnPostRender.asInstanceOf[js.Any])
-    if (OnPreRender != null) __obj.updateDynamic("OnPreRender")(OnPreRender.asInstanceOf[js.Any])
-    if (RenderBody != null) __obj.updateDynamic("RenderBody")(js.Any.fromFunction1(RenderBody))
-    if (RenderFieldByName != null) __obj.updateDynamic("RenderFieldByName")(js.Any.fromFunction2(RenderFieldByName))
-    if (RenderFields != null) __obj.updateDynamic("RenderFields")(js.Any.fromFunction1(RenderFields))
-    if (RenderFooter != null) __obj.updateDynamic("RenderFooter")(js.Any.fromFunction1(RenderFooter))
-    if (RenderGroups != null) __obj.updateDynamic("RenderGroups")(js.Any.fromFunction1(RenderGroups))
-    if (RenderHeader != null) __obj.updateDynamic("RenderHeader")(js.Any.fromFunction1(RenderHeader))
-    if (RenderItems != null) __obj.updateDynamic("RenderItems")(js.Any.fromFunction1(RenderItems))
-    if (RenderView != null) __obj.updateDynamic("RenderView")(js.Any.fromFunction1(RenderView))
-    if (SiteClientTag != null) __obj.updateDynamic("SiteClientTag")(SiteClientTag.asInstanceOf[js.Any])
-    if (Templates != null) __obj.updateDynamic("Templates")(Templates.asInstanceOf[js.Any])
-    if (onRefreshFailed != null) __obj.updateDynamic("onRefreshFailed")(onRefreshFailed.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderContextForm]
   }
+  @scala.inline
+  implicit class RenderContextFormOps[Self <: RenderContextForm] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentItem(value: Item): Self = this.set("CurrentItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFieldControlModes(value: StringDictionary[ClientControlMode]): Self = this.set("FieldControlModes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormContext(value: ClientFormContext): Self = this.set("FormContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormUniqueId(value: String): Self = this.set("FormUniqueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setListData(value: ListDataInForm): Self = this.set("ListData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setListSchema(value: ListSchemaInForm): Self = this.set("ListSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCSRCustomLayout(value: Boolean): Self = this.set("CSRCustomLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCSRCustomLayout: Self = this.set("CSRCustomLayout", js.undefined)
+  }
+  
 }
 

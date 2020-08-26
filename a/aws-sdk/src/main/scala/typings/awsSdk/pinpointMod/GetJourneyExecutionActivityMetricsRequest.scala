@@ -30,17 +30,36 @@ trait GetJourneyExecutionActivityMetricsRequest extends js.Object {
 
 object GetJourneyExecutionActivityMetricsRequest {
   @scala.inline
-  def apply(
-    ApplicationId: string,
-    JourneyActivityId: string,
-    JourneyId: string,
-    NextToken: string = null,
-    PageSize: string = null
-  ): GetJourneyExecutionActivityMetricsRequest = {
+  def apply(ApplicationId: string, JourneyActivityId: string, JourneyId: string): GetJourneyExecutionActivityMetricsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], JourneyActivityId = JourneyActivityId.asInstanceOf[js.Any], JourneyId = JourneyId.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJourneyExecutionActivityMetricsRequest]
   }
+  @scala.inline
+  implicit class GetJourneyExecutionActivityMetricsRequestOps[Self <: GetJourneyExecutionActivityMetricsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJourneyActivityId(value: string): Self = this.set("JourneyActivityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJourneyId(value: string): Self = this.set("JourneyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPageSize(value: string): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+  }
+  
 }
 

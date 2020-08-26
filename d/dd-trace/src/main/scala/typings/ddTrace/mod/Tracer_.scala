@@ -1,9 +1,11 @@
 package typings.ddTrace.mod
 
+import typings.ddTrace.ddTraceStrings.`aws-sdk`
 import typings.ddTrace.ddTraceStrings.`cassandra-driver`
 import typings.ddTrace.ddTraceStrings.`generic-pool`
 import typings.ddTrace.ddTraceStrings.`google-cloud-pubsub`
 import typings.ddTrace.ddTraceStrings.`limitd-client`
+import typings.ddTrace.ddTraceStrings.`microgateway-core`
 import typings.ddTrace.ddTraceStrings.`mongodb-core`
 import typings.ddTrace.ddTraceStrings.`promise-js`
 import typings.ddTrace.ddTraceStrings.amqp10
@@ -41,10 +43,12 @@ import typings.ddTrace.ddTraceStrings.router
 import typings.ddTrace.ddTraceStrings.tedious
 import typings.ddTrace.ddTraceStrings.when
 import typings.ddTrace.ddTraceStrings.winston
+import typings.ddTrace.mod.plugins.awsSdk
 import typings.ddTrace.mod.plugins.cassandraDriver
 import typings.ddTrace.mod.plugins.genericPool
 import typings.ddTrace.mod.plugins.googleCloudPubsub
 import typings.ddTrace.mod.plugins.limitdClient
+import typings.ddTrace.mod.plugins.microgatewayCore
 import typings.ddTrace.mod.plugins.mongodbCore
 import typings.ddTrace.mod.plugins.promiseJs
 import typings.opentracing.tracerMod.SpanOptions
@@ -128,6 +132,12 @@ trait Tracer_ extends Tracer {
   def use_amqplib(plugin: amqplib, config: Boolean): this.type = js.native
   @JSName("use")
   def use_amqplib(plugin: amqplib, config: typings.ddTrace.mod.plugins.amqplib): this.type = js.native
+  @JSName("use")
+  def use_awssdk(plugin: `aws-sdk`): this.type = js.native
+  @JSName("use")
+  def use_awssdk(plugin: `aws-sdk`, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_awssdk(plugin: `aws-sdk`, config: awsSdk): this.type = js.native
   @JSName("use")
   def use_bluebird(plugin: bluebird): this.type = js.native
   @JSName("use")
@@ -260,6 +270,12 @@ trait Tracer_ extends Tracer {
   def use_memcached(plugin: memcached, config: Boolean): this.type = js.native
   @JSName("use")
   def use_memcached(plugin: memcached, config: typings.ddTrace.mod.plugins.memcached): this.type = js.native
+  @JSName("use")
+  def use_microgatewaycore(plugin: `microgateway-core`): this.type = js.native
+  @JSName("use")
+  def use_microgatewaycore(plugin: `microgateway-core`, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_microgatewaycore(plugin: `microgateway-core`, config: microgatewayCore): this.type = js.native
   @JSName("use")
   def use_mongodbcore(plugin: `mongodb-core`): this.type = js.native
   @JSName("use")

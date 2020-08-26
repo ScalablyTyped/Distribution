@@ -19,10 +19,26 @@ trait SchemaRevertZoneResponse extends js.Object {
 
 object SchemaRevertZoneResponse {
   @scala.inline
-  def apply(zone: SchemaZone = null): SchemaRevertZoneResponse = {
+  def apply(): SchemaRevertZoneResponse = {
     val __obj = js.Dynamic.literal()
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRevertZoneResponse]
   }
+  @scala.inline
+  implicit class SchemaRevertZoneResponseOps[Self <: SchemaRevertZoneResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setZone(value: SchemaZone): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

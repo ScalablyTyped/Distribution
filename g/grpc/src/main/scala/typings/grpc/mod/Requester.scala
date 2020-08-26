@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Requester extends js.Object {
-  var cancel: js.UndefOr[CancelRequester] = js.undefined
-  var getPeer: js.UndefOr[GetPeerRequester] = js.undefined
-  var halfClose: js.UndefOr[CloseRequester] = js.undefined
-  var sendMessage: js.UndefOr[MessageRequester] = js.undefined
-  var start: js.UndefOr[MetadataRequester] = js.undefined
+  var cancel: js.UndefOr[CancelRequester] = js.native
+  var getPeer: js.UndefOr[GetPeerRequester] = js.native
+  var halfClose: js.UndefOr[CloseRequester] = js.native
+  var sendMessage: js.UndefOr[MessageRequester] = js.native
+  var start: js.UndefOr[MetadataRequester] = js.native
 }
 
 object Requester {
   @scala.inline
-  def apply(
-    cancel: /* next */ js.Function => Unit = null,
-    getPeer: /* next */ js.Function => String = null,
-    halfClose: /* next */ js.Function => Unit = null,
-    sendMessage: (/* message */ js.Any, /* next */ js.Function) => Unit = null,
-    start: (/* metadata */ Metadata, /* listener */ Listener, /* next */ js.Function) => Unit = null
-  ): Requester = {
+  def apply(): Requester = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
-    if (getPeer != null) __obj.updateDynamic("getPeer")(js.Any.fromFunction1(getPeer))
-    if (halfClose != null) __obj.updateDynamic("halfClose")(js.Any.fromFunction1(halfClose))
-    if (sendMessage != null) __obj.updateDynamic("sendMessage")(js.Any.fromFunction2(sendMessage))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction3(start))
     __obj.asInstanceOf[Requester]
   }
+  @scala.inline
+  implicit class RequesterOps[Self <: Requester] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: /* next */ js.Function => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setGetPeer(value: /* next */ js.Function => String): Self = this.set("getPeer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetPeer: Self = this.set("getPeer", js.undefined)
+    @scala.inline
+    def setHalfClose(value: /* next */ js.Function => Unit): Self = this.set("halfClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHalfClose: Self = this.set("halfClose", js.undefined)
+    @scala.inline
+    def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function) => Unit): Self = this.set("sendMessage", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSendMessage: Self = this.set("sendMessage", js.undefined)
+    @scala.inline
+    def setStart(value: (/* metadata */ Metadata, /* listener */ Listener, /* next */ js.Function) => Unit): Self = this.set("start", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

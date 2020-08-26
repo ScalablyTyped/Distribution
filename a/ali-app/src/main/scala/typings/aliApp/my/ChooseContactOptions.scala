@@ -10,42 +10,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChooseContactOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 选择类型，值为single（单选）或者 multi（多选） */
-  var chooseType: single | multi | String
+  var chooseType: single | multi | String = js.native
   /** 是否包含自己 */
-  var includeMe: js.UndefOr[Boolean] = js.undefined
+  var includeMe: js.UndefOr[Boolean] = js.native
   /** 包含手机通讯录联系人的模式：默认为不包含（none）、或者仅仅包含双向通讯录联系人（known）、或者包含手机通讯录联系人（all） */
-  var includeMobileContactMode: js.UndefOr[none | known | all | String] = js.undefined
+  var includeMobileContactMode: js.UndefOr[none | known | all | String] = js.native
   /** 最大选择人数，仅 chooseType 为 multi 时才有效 */
-  var multiChooseMax: js.UndefOr[Double] = js.undefined
+  var multiChooseMax: js.UndefOr[Double] = js.native
   /** 多选达到上限的文案，仅 chooseType 为 multi 时才有效 */
-  var multiChooseMaxTips: js.UndefOr[String] = js.undefined
+  var multiChooseMaxTips: js.UndefOr[String] = js.native
   @JSName("success")
-  def success_MChooseContactOptions(result: ContactsDicArray): Unit
+  def success_MChooseContactOptions(result: ContactsDicArray): Unit = js.native
 }
 
 object ChooseContactOptions {
   @scala.inline
-  def apply(
-    chooseType: single | multi | String,
-    success: ContactsDicArray => Unit,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null,
-    includeMe: js.UndefOr[Boolean] = js.undefined,
-    includeMobileContactMode: none | known | all | String = null,
-    multiChooseMax: js.UndefOr[Double] = js.undefined,
-    multiChooseMaxTips: String = null
-  ): ChooseContactOptions = {
+  def apply(chooseType: single | multi | String, success: ContactsDicArray => Unit): ChooseContactOptions = {
     val __obj = js.Dynamic.literal(chooseType = chooseType.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(includeMe)) __obj.updateDynamic("includeMe")(includeMe.get.asInstanceOf[js.Any])
-    if (includeMobileContactMode != null) __obj.updateDynamic("includeMobileContactMode")(includeMobileContactMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiChooseMax)) __obj.updateDynamic("multiChooseMax")(multiChooseMax.get.asInstanceOf[js.Any])
-    if (multiChooseMaxTips != null) __obj.updateDynamic("multiChooseMaxTips")(multiChooseMaxTips.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseContactOptions]
   }
+  @scala.inline
+  implicit class ChooseContactOptionsOps[Self <: ChooseContactOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChooseType(value: single | multi | String): Self = this.set("chooseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuccess(value: ContactsDicArray => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIncludeMe(value: Boolean): Self = this.set("includeMe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeMe: Self = this.set("includeMe", js.undefined)
+    @scala.inline
+    def setIncludeMobileContactMode(value: none | known | all | String): Self = this.set("includeMobileContactMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeMobileContactMode: Self = this.set("includeMobileContactMode", js.undefined)
+    @scala.inline
+    def setMultiChooseMax(value: Double): Self = this.set("multiChooseMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiChooseMax: Self = this.set("multiChooseMax", js.undefined)
+    @scala.inline
+    def setMultiChooseMaxTips(value: String): Self = this.set("multiChooseMaxTips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiChooseMaxTips: Self = this.set("multiChooseMaxTips", js.undefined)
+  }
+  
 }
 

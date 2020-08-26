@@ -15,57 +15,102 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<scrollbooster.scrollbooster.ScrollBoosterOptions> */
+@js.native
 trait PartialScrollBoosterOptio extends js.Object {
-  var bounce: js.UndefOr[Boolean] = js.undefined
-  var bounceForce: js.UndefOr[Double] = js.undefined
-  var content: js.UndefOr[HTMLElement] = js.undefined
-  var direction: js.UndefOr[horizontal | vertical | all] = js.undefined
-  var emulateScroll: js.UndefOr[Boolean] = js.undefined
-  var friction: js.UndefOr[Double] = js.undefined
-  var inputsFocus: js.UndefOr[Boolean] = js.undefined
-  var onClick: js.UndefOr[js.Function2[/* state */ ScrollingState, /* event */ Event, Unit]] = js.undefined
-  var onUpdate: js.UndefOr[js.Function1[/* state */ ScrollingState, Unit]] = js.undefined
-  var pointerMode: js.UndefOr[touch | mouse | all] = js.undefined
-  var scrollMode: js.UndefOr[transform | native] = js.undefined
-  var shouldScroll: js.UndefOr[js.Function2[/* state */ ScrollingState, /* event */ Event, Boolean]] = js.undefined
-  var textSelection: js.UndefOr[Boolean] = js.undefined
-  var viewport: js.UndefOr[HTMLElement] = js.undefined
+  var bounce: js.UndefOr[Boolean] = js.native
+  var bounceForce: js.UndefOr[Double] = js.native
+  var content: js.UndefOr[HTMLElement | Null] = js.native
+  var direction: js.UndefOr[horizontal | vertical | all] = js.native
+  var emulateScroll: js.UndefOr[Boolean] = js.native
+  var friction: js.UndefOr[Double] = js.native
+  var inputsFocus: js.UndefOr[Boolean] = js.native
+  var onClick: js.UndefOr[js.Function2[/* state */ ScrollingState, /* event */ Event, Unit]] = js.native
+  var onUpdate: js.UndefOr[js.Function1[/* state */ ScrollingState, Unit]] = js.native
+  var pointerMode: js.UndefOr[touch | mouse | all] = js.native
+  var scrollMode: js.UndefOr[transform | native] = js.native
+  var shouldScroll: js.UndefOr[js.Function2[/* state */ ScrollingState, /* event */ Event, Boolean]] = js.native
+  var textSelection: js.UndefOr[Boolean] = js.native
+  var viewport: js.UndefOr[HTMLElement | Null] = js.native
 }
 
 object PartialScrollBoosterOptio {
   @scala.inline
-  def apply(
-    bounce: js.UndefOr[Boolean] = js.undefined,
-    bounceForce: js.UndefOr[Double] = js.undefined,
-    content: HTMLElement = null,
-    direction: horizontal | vertical | all = null,
-    emulateScroll: js.UndefOr[Boolean] = js.undefined,
-    friction: js.UndefOr[Double] = js.undefined,
-    inputsFocus: js.UndefOr[Boolean] = js.undefined,
-    onClick: (/* state */ ScrollingState, /* event */ Event) => Unit = null,
-    onUpdate: /* state */ ScrollingState => Unit = null,
-    pointerMode: touch | mouse | all = null,
-    scrollMode: transform | native = null,
-    shouldScroll: (/* state */ ScrollingState, /* event */ Event) => Boolean = null,
-    textSelection: js.UndefOr[Boolean] = js.undefined,
-    viewport: HTMLElement = null
-  ): PartialScrollBoosterOptio = {
+  def apply(): PartialScrollBoosterOptio = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bounce)) __obj.updateDynamic("bounce")(bounce.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounceForce)) __obj.updateDynamic("bounceForce")(bounceForce.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(emulateScroll)) __obj.updateDynamic("emulateScroll")(emulateScroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(friction)) __obj.updateDynamic("friction")(friction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputsFocus)) __obj.updateDynamic("inputsFocus")(inputsFocus.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (pointerMode != null) __obj.updateDynamic("pointerMode")(pointerMode.asInstanceOf[js.Any])
-    if (scrollMode != null) __obj.updateDynamic("scrollMode")(scrollMode.asInstanceOf[js.Any])
-    if (shouldScroll != null) __obj.updateDynamic("shouldScroll")(js.Any.fromFunction2(shouldScroll))
-    if (!js.isUndefined(textSelection)) __obj.updateDynamic("textSelection")(textSelection.get.asInstanceOf[js.Any])
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialScrollBoosterOptio]
   }
+  @scala.inline
+  implicit class PartialScrollBoosterOptioOps[Self <: PartialScrollBoosterOptio] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBounce(value: Boolean): Self = this.set("bounce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounce: Self = this.set("bounce", js.undefined)
+    @scala.inline
+    def setBounceForce(value: Double): Self = this.set("bounceForce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounceForce: Self = this.set("bounceForce", js.undefined)
+    @scala.inline
+    def setContent(value: HTMLElement): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContentNull: Self = this.set("content", null)
+    @scala.inline
+    def setDirection(value: horizontal | vertical | all): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setEmulateScroll(value: Boolean): Self = this.set("emulateScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmulateScroll: Self = this.set("emulateScroll", js.undefined)
+    @scala.inline
+    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFriction: Self = this.set("friction", js.undefined)
+    @scala.inline
+    def setInputsFocus(value: Boolean): Self = this.set("inputsFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputsFocus: Self = this.set("inputsFocus", js.undefined)
+    @scala.inline
+    def setOnClick(value: (/* state */ ScrollingState, /* event */ Event) => Unit): Self = this.set("onClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnUpdate(value: /* state */ ScrollingState => Unit): Self = this.set("onUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUpdate: Self = this.set("onUpdate", js.undefined)
+    @scala.inline
+    def setPointerMode(value: touch | mouse | all): Self = this.set("pointerMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerMode: Self = this.set("pointerMode", js.undefined)
+    @scala.inline
+    def setScrollMode(value: transform | native): Self = this.set("scrollMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollMode: Self = this.set("scrollMode", js.undefined)
+    @scala.inline
+    def setShouldScroll(value: (/* state */ ScrollingState, /* event */ Event) => Boolean): Self = this.set("shouldScroll", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteShouldScroll: Self = this.set("shouldScroll", js.undefined)
+    @scala.inline
+    def setTextSelection(value: Boolean): Self = this.set("textSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextSelection: Self = this.set("textSelection", js.undefined)
+    @scala.inline
+    def setViewport(value: HTMLElement): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewport: Self = this.set("viewport", js.undefined)
+    @scala.inline
+    def setViewportNull: Self = this.set("viewport", null)
+  }
+  
 }
 

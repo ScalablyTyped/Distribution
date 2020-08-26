@@ -28,6 +28,7 @@ class ResourceConversions protected () extends js.Object {
     */
   def batchinsert(): GaxiosPromise[SchemaConversionsBatchInsertResponse] = js.native
   def batchinsert(callback: BodyResponseCallback[SchemaConversionsBatchInsertResponse]): Unit = js.native
+  def batchinsert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConversionsBatchInsertResponse] = js.native
   def batchinsert(params: ParamsResourceConversionsBatchinsert): GaxiosPromise[SchemaConversionsBatchInsertResponse] = js.native
   def batchinsert(
     params: ParamsResourceConversionsBatchinsert,
@@ -59,6 +60,7 @@ class ResourceConversions protected () extends js.Object {
     */
   def batchupdate(): GaxiosPromise[SchemaConversionsBatchUpdateResponse] = js.native
   def batchupdate(callback: BodyResponseCallback[SchemaConversionsBatchUpdateResponse]): Unit = js.native
+  def batchupdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConversionsBatchUpdateResponse] = js.native
   def batchupdate(params: ParamsResourceConversionsBatchupdate): GaxiosPromise[SchemaConversionsBatchUpdateResponse] = js.native
   def batchupdate(
     params: ParamsResourceConversionsBatchupdate,

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(buffer: Buffer): ImagesStatic = js.native
+  def apply(buffer: Buffer, start: js.UndefOr[scala.Nothing], end: Double): ImagesStatic = js.native
   def apply(buffer: Buffer, start: Double): ImagesStatic = js.native
   def apply(buffer: Buffer, start: Double, end: Double): ImagesStatic = js.native
   def apply(file: String): ImagesStatic = js.native

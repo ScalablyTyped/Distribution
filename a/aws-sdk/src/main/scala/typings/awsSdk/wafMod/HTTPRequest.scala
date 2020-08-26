@@ -34,22 +34,48 @@ trait HTTPRequest extends js.Object {
 
 object HTTPRequest {
   @scala.inline
-  def apply(
-    ClientIP: IPString = null,
-    Country: Country = null,
-    HTTPVersion: HTTPVersion = null,
-    Headers: HTTPHeaders = null,
-    Method: HTTPMethod = null,
-    URI: URIString = null
-  ): HTTPRequest = {
+  def apply(): HTTPRequest = {
     val __obj = js.Dynamic.literal()
-    if (ClientIP != null) __obj.updateDynamic("ClientIP")(ClientIP.asInstanceOf[js.Any])
-    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
-    if (HTTPVersion != null) __obj.updateDynamic("HTTPVersion")(HTTPVersion.asInstanceOf[js.Any])
-    if (Headers != null) __obj.updateDynamic("Headers")(Headers.asInstanceOf[js.Any])
-    if (Method != null) __obj.updateDynamic("Method")(Method.asInstanceOf[js.Any])
-    if (URI != null) __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTTPRequest]
   }
+  @scala.inline
+  implicit class HTTPRequestOps[Self <: HTTPRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientIP(value: IPString): Self = this.set("ClientIP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientIP: Self = this.set("ClientIP", js.undefined)
+    @scala.inline
+    def setCountry(value: Country): Self = this.set("Country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("Country", js.undefined)
+    @scala.inline
+    def setHTTPVersion(value: HTTPVersion): Self = this.set("HTTPVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHTTPVersion: Self = this.set("HTTPVersion", js.undefined)
+    @scala.inline
+    def setHeadersVarargs(value: HTTPHeader*): Self = this.set("Headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: HTTPHeaders): Self = this.set("Headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("Headers", js.undefined)
+    @scala.inline
+    def setMethod(value: HTTPMethod): Self = this.set("Method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("Method", js.undefined)
+    @scala.inline
+    def setURI(value: URIString): Self = this.set("URI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteURI: Self = this.set("URI", js.undefined)
+  }
+  
 }
 

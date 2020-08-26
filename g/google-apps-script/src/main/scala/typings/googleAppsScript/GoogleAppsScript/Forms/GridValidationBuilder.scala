@@ -18,8 +18,9 @@ import scala.scalajs.js.annotation._
   *       .build();
   *     gridItem.setValidation(gridValidation);
   */
+@js.native
 trait GridValidationBuilder extends js.Object {
-  def requireLimitOneResponsePerColumn(): GridValidationBuilder
+  def requireLimitOneResponsePerColumn(): GridValidationBuilder = js.native
 }
 
 object GridValidationBuilder {
@@ -28,5 +29,20 @@ object GridValidationBuilder {
     val __obj = js.Dynamic.literal(requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn))
     __obj.asInstanceOf[GridValidationBuilder]
   }
+  @scala.inline
+  implicit class GridValidationBuilderOps[Self <: GridValidationBuilder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequireLimitOneResponsePerColumn(value: () => GridValidationBuilder): Self = this.set("requireLimitOneResponsePerColumn", js.Any.fromFunction0(value))
+  }
+  
 }
 

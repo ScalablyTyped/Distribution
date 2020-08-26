@@ -27,6 +27,7 @@ class ResourceManagementClientid protected () extends js.Object {
     */
   def hashClientId(): GaxiosPromise[SchemaHashClientIdResponse] = js.native
   def hashClientId(callback: BodyResponseCallback[SchemaHashClientIdResponse]): Unit = js.native
+  def hashClientId(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHashClientIdResponse] = js.native
   def hashClientId(params: ParamsResourceManagementClientidHashclientid): GaxiosPromise[SchemaHashClientIdResponse] = js.native
   def hashClientId(
     params: ParamsResourceManagementClientidHashclientid,

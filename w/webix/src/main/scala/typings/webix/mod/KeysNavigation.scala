@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeysNavigation extends js.Object {
-  def moveSelection(direction: String): Unit
+  def moveSelection(direction: String): Unit = js.native
 }
 
 @JSImport("webix", "KeysNavigation")

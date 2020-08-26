@@ -40,6 +40,15 @@ object immediateMod extends js.Object {
       extent: Extent,
       transform: Transform,
       viewRotation: Double,
+      opt_squaredTolerance: js.UndefOr[scala.Nothing],
+      opt_userTransform: TransformFunction
+    ) = this()
+    def this(
+      context: CanvasRenderingContext2D,
+      pixelRatio: Double,
+      extent: Extent,
+      transform: Transform,
+      viewRotation: Double,
       opt_squaredTolerance: Double,
       opt_userTransform: TransformFunction
     ) = this()

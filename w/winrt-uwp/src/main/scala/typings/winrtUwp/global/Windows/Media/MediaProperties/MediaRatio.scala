@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.MediaProperties.MediaRatio")
 @js.native
 abstract class MediaRatio ()
-  extends typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio {
-  /** The denominator of the MediaRatio. */
-  /* CompleteClass */
-  override var denominator: Double = js.native
-  /** The numerator of the MediaRatio. */
-  /* CompleteClass */
-  override var numerator: Double = js.native
-}
+  extends typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio
 

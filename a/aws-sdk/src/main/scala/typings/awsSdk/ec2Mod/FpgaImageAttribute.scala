@@ -30,20 +30,46 @@ trait FpgaImageAttribute extends js.Object {
 
 object FpgaImageAttribute {
   @scala.inline
-  def apply(
-    Description: String = null,
-    FpgaImageId: String = null,
-    LoadPermissions: LoadPermissionList = null,
-    Name: String = null,
-    ProductCodes: ProductCodeList = null
-  ): FpgaImageAttribute = {
+  def apply(): FpgaImageAttribute = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (FpgaImageId != null) __obj.updateDynamic("FpgaImageId")(FpgaImageId.asInstanceOf[js.Any])
-    if (LoadPermissions != null) __obj.updateDynamic("LoadPermissions")(LoadPermissions.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FpgaImageAttribute]
   }
+  @scala.inline
+  implicit class FpgaImageAttributeOps[Self <: FpgaImageAttribute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFpgaImageId(value: String): Self = this.set("FpgaImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFpgaImageId: Self = this.set("FpgaImageId", js.undefined)
+    @scala.inline
+    def setLoadPermissionsVarargs(value: LoadPermission*): Self = this.set("LoadPermissions", js.Array(value :_*))
+    @scala.inline
+    def setLoadPermissions(value: LoadPermissionList): Self = this.set("LoadPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadPermissions: Self = this.set("LoadPermissions", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setProductCodesVarargs(value: ProductCode*): Self = this.set("ProductCodes", js.Array(value :_*))
+    @scala.inline
+    def setProductCodes(value: ProductCodeList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ WebGL shader wrapper
 | Keywords           | webgl, shader, fragment, vertex, uniform, attribute, wrap, 3d, gl |
 | # releases         | 0 |
 | # dependents       | 86 |
-| # downloads        | 1958402 |
+| # downloads        | 2018020 |
 | # stars            | 4 |
 
 ## Links

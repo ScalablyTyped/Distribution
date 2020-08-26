@@ -5,84 +5,153 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<react-native-elements.react-native-elements.FullTheme> */
+@js.native
 trait RecursivePartialFullTheme extends js.Object {
-  var AirbnbRating: js.UndefOr[RecursivePartialPartialAi] = js.undefined
-  var Avatar: js.UndefOr[RecursivePartialPartialAv] = js.undefined
-  var Badge: js.UndefOr[RecursivePartialPartialBa] = js.undefined
-  var Button: js.UndefOr[RecursivePartialPartialBuAccessibilityActions] = js.undefined
-  var ButtonGroup: js.UndefOr[RecursivePartialPartialBu] = js.undefined
-  var Card: js.UndefOr[RecursivePartialPartialCa] = js.undefined
-  var CheckBox: js.UndefOr[RecursivePartialPartialCh] = js.undefined
-  var Divider: js.UndefOr[RecursivePartialPartialDi] = js.undefined
-  var Header: js.UndefOr[RecursivePartialPartialHe] = js.undefined
-  var Icon: js.UndefOr[RecursivePartialPartialIc] = js.undefined
-  var Image: js.UndefOr[RecursivePartialPartialIm] = js.undefined
-  var Input: js.UndefOr[RecursivePartialPartialIn] = js.undefined
-  var ListItem: js.UndefOr[RecursivePartialPartialLi] = js.undefined
-  var Overlay: js.UndefOr[RecursivePartialPartialOv] = js.undefined
-  var PricingCard: js.UndefOr[RecursivePartialPartialPr] = js.undefined
-  var Rating: js.UndefOr[RecursivePartialPartialRa] = js.undefined
-  var SearchBar: js.UndefOr[RecursivePartialPartialSe] = js.undefined
-  var Slider: js.UndefOr[RecursivePartialPartialSl] = js.undefined
-  var SocialIcon: js.UndefOr[RecursivePartialPartialSo] = js.undefined
-  var Text: js.UndefOr[RecursivePartialPartialTe] = js.undefined
-  var Tile: js.UndefOr[RecursivePartialPartialTi] = js.undefined
-  var Tooltip: js.UndefOr[RecursivePartialPartialTo] = js.undefined
-  var colors: js.UndefOr[RecursivePartialRecursive] = js.undefined
+  var Accessory: js.UndefOr[RecursivePartialPartialIc] = js.native
+  var AirbnbRating: js.UndefOr[RecursivePartialPartialAi] = js.native
+  var Avatar: js.UndefOr[RecursivePartialPartialAv] = js.native
+  var Badge: js.UndefOr[RecursivePartialPartialBa] = js.native
+  var BottomSheet: js.UndefOr[RecursivePartialPartialBo] = js.native
+  var Button: js.UndefOr[RecursivePartialPartialBu] = js.native
+  var ButtonGroup: js.UndefOr[RecursivePartialPartialBuActiveOpacity] = js.native
+  var Card: js.UndefOr[RecursivePartialPartialCa] = js.native
+  var CheckBox: js.UndefOr[RecursivePartialPartialCh] = js.native
+  var Divider: js.UndefOr[RecursivePartialPartialDi] = js.native
+  var Header: js.UndefOr[RecursivePartialPartialHe] = js.native
+  var Icon: js.UndefOr[RecursivePartialPartialIcAccessibilityActions] = js.native
+  var Image: js.UndefOr[RecursivePartialPartialIm] = js.native
+  var Input: js.UndefOr[RecursivePartialPartialIn] = js.native
+  var ListItem: js.UndefOr[RecursivePartialPartialLi] = js.native
+  var Overlay: js.UndefOr[RecursivePartialPartialOv] = js.native
+  var PricingCard: js.UndefOr[RecursivePartialPartialPr] = js.native
+  var Rating: js.UndefOr[RecursivePartialPartialRa] = js.native
+  var SearchBar: js.UndefOr[RecursivePartialPartialSe] = js.native
+  var Slider: js.UndefOr[RecursivePartialPartialSl] = js.native
+  var SocialIcon: js.UndefOr[RecursivePartialPartialSo] = js.native
+  var Text: js.UndefOr[RecursivePartialPartialTe] = js.native
+  var Tile: js.UndefOr[RecursivePartialPartialTi] = js.native
+  var Tooltip: js.UndefOr[RecursivePartialPartialTo] = js.native
+  var colors: js.UndefOr[RecursivePartialRecursive] = js.native
 }
 
 object RecursivePartialFullTheme {
   @scala.inline
-  def apply(
-    AirbnbRating: RecursivePartialPartialAi = null,
-    Avatar: RecursivePartialPartialAv = null,
-    Badge: RecursivePartialPartialBa = null,
-    Button: RecursivePartialPartialBuAccessibilityActions = null,
-    ButtonGroup: RecursivePartialPartialBu = null,
-    Card: RecursivePartialPartialCa = null,
-    CheckBox: RecursivePartialPartialCh = null,
-    Divider: RecursivePartialPartialDi = null,
-    Header: RecursivePartialPartialHe = null,
-    Icon: RecursivePartialPartialIc = null,
-    Image: RecursivePartialPartialIm = null,
-    Input: RecursivePartialPartialIn = null,
-    ListItem: RecursivePartialPartialLi = null,
-    Overlay: RecursivePartialPartialOv = null,
-    PricingCard: RecursivePartialPartialPr = null,
-    Rating: RecursivePartialPartialRa = null,
-    SearchBar: RecursivePartialPartialSe = null,
-    Slider: RecursivePartialPartialSl = null,
-    SocialIcon: RecursivePartialPartialSo = null,
-    Text: RecursivePartialPartialTe = null,
-    Tile: RecursivePartialPartialTi = null,
-    Tooltip: RecursivePartialPartialTo = null,
-    colors: RecursivePartialRecursive = null
-  ): RecursivePartialFullTheme = {
+  def apply(): RecursivePartialFullTheme = {
     val __obj = js.Dynamic.literal()
-    if (AirbnbRating != null) __obj.updateDynamic("AirbnbRating")(AirbnbRating.asInstanceOf[js.Any])
-    if (Avatar != null) __obj.updateDynamic("Avatar")(Avatar.asInstanceOf[js.Any])
-    if (Badge != null) __obj.updateDynamic("Badge")(Badge.asInstanceOf[js.Any])
-    if (Button != null) __obj.updateDynamic("Button")(Button.asInstanceOf[js.Any])
-    if (ButtonGroup != null) __obj.updateDynamic("ButtonGroup")(ButtonGroup.asInstanceOf[js.Any])
-    if (Card != null) __obj.updateDynamic("Card")(Card.asInstanceOf[js.Any])
-    if (CheckBox != null) __obj.updateDynamic("CheckBox")(CheckBox.asInstanceOf[js.Any])
-    if (Divider != null) __obj.updateDynamic("Divider")(Divider.asInstanceOf[js.Any])
-    if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
-    if (Icon != null) __obj.updateDynamic("Icon")(Icon.asInstanceOf[js.Any])
-    if (Image != null) __obj.updateDynamic("Image")(Image.asInstanceOf[js.Any])
-    if (Input != null) __obj.updateDynamic("Input")(Input.asInstanceOf[js.Any])
-    if (ListItem != null) __obj.updateDynamic("ListItem")(ListItem.asInstanceOf[js.Any])
-    if (Overlay != null) __obj.updateDynamic("Overlay")(Overlay.asInstanceOf[js.Any])
-    if (PricingCard != null) __obj.updateDynamic("PricingCard")(PricingCard.asInstanceOf[js.Any])
-    if (Rating != null) __obj.updateDynamic("Rating")(Rating.asInstanceOf[js.Any])
-    if (SearchBar != null) __obj.updateDynamic("SearchBar")(SearchBar.asInstanceOf[js.Any])
-    if (Slider != null) __obj.updateDynamic("Slider")(Slider.asInstanceOf[js.Any])
-    if (SocialIcon != null) __obj.updateDynamic("SocialIcon")(SocialIcon.asInstanceOf[js.Any])
-    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
-    if (Tile != null) __obj.updateDynamic("Tile")(Tile.asInstanceOf[js.Any])
-    if (Tooltip != null) __obj.updateDynamic("Tooltip")(Tooltip.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecursivePartialFullTheme]
   }
+  @scala.inline
+  implicit class RecursivePartialFullThemeOps[Self <: RecursivePartialFullTheme] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessory(value: RecursivePartialPartialIc): Self = this.set("Accessory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessory: Self = this.set("Accessory", js.undefined)
+    @scala.inline
+    def setAirbnbRating(value: RecursivePartialPartialAi): Self = this.set("AirbnbRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAirbnbRating: Self = this.set("AirbnbRating", js.undefined)
+    @scala.inline
+    def setAvatar(value: RecursivePartialPartialAv): Self = this.set("Avatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatar: Self = this.set("Avatar", js.undefined)
+    @scala.inline
+    def setBadge(value: RecursivePartialPartialBa): Self = this.set("Badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("Badge", js.undefined)
+    @scala.inline
+    def setBottomSheet(value: RecursivePartialPartialBo): Self = this.set("BottomSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomSheet: Self = this.set("BottomSheet", js.undefined)
+    @scala.inline
+    def setButton(value: RecursivePartialPartialBu): Self = this.set("Button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("Button", js.undefined)
+    @scala.inline
+    def setButtonGroup(value: RecursivePartialPartialBuActiveOpacity): Self = this.set("ButtonGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonGroup: Self = this.set("ButtonGroup", js.undefined)
+    @scala.inline
+    def setCard(value: RecursivePartialPartialCa): Self = this.set("Card", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCard: Self = this.set("Card", js.undefined)
+    @scala.inline
+    def setCheckBox(value: RecursivePartialPartialCh): Self = this.set("CheckBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckBox: Self = this.set("CheckBox", js.undefined)
+    @scala.inline
+    def setDivider(value: RecursivePartialPartialDi): Self = this.set("Divider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDivider: Self = this.set("Divider", js.undefined)
+    @scala.inline
+    def setHeader(value: RecursivePartialPartialHe): Self = this.set("Header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("Header", js.undefined)
+    @scala.inline
+    def setIcon(value: RecursivePartialPartialIcAccessibilityActions): Self = this.set("Icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("Icon", js.undefined)
+    @scala.inline
+    def setImage(value: RecursivePartialPartialIm): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("Image", js.undefined)
+    @scala.inline
+    def setInput(value: RecursivePartialPartialIn): Self = this.set("Input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("Input", js.undefined)
+    @scala.inline
+    def setListItem(value: RecursivePartialPartialLi): Self = this.set("ListItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListItem: Self = this.set("ListItem", js.undefined)
+    @scala.inline
+    def setOverlay(value: RecursivePartialPartialOv): Self = this.set("Overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("Overlay", js.undefined)
+    @scala.inline
+    def setPricingCard(value: RecursivePartialPartialPr): Self = this.set("PricingCard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingCard: Self = this.set("PricingCard", js.undefined)
+    @scala.inline
+    def setRating(value: RecursivePartialPartialRa): Self = this.set("Rating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRating: Self = this.set("Rating", js.undefined)
+    @scala.inline
+    def setSearchBar(value: RecursivePartialPartialSe): Self = this.set("SearchBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchBar: Self = this.set("SearchBar", js.undefined)
+    @scala.inline
+    def setSlider(value: RecursivePartialPartialSl): Self = this.set("Slider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlider: Self = this.set("Slider", js.undefined)
+    @scala.inline
+    def setSocialIcon(value: RecursivePartialPartialSo): Self = this.set("SocialIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialIcon: Self = this.set("SocialIcon", js.undefined)
+    @scala.inline
+    def setText(value: RecursivePartialPartialTe): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("Text", js.undefined)
+    @scala.inline
+    def setTile(value: RecursivePartialPartialTi): Self = this.set("Tile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTile: Self = this.set("Tile", js.undefined)
+    @scala.inline
+    def setTooltip(value: RecursivePartialPartialTo): Self = this.set("Tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("Tooltip", js.undefined)
+    @scala.inline
+    def setColors(value: RecursivePartialRecursive): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+  }
+  
 }
 

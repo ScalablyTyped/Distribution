@@ -5,10 +5,10 @@ import typings.highland.Flattened
 import typings.highland.PConstructor
 import typings.highland.anon.End
 import typings.highland.highlandStrings.done
-import typings.node.NodeJS.EventEmitter
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import typings.std.Partial
 import typings.std.Pick

@@ -47,28 +47,62 @@ trait ReportDefinitionState extends js.Object {
 
 object ReportDefinitionState {
   @scala.inline
-  def apply(
-    additionalArtifacts: Input[js.Array[Input[String]]] = null,
-    additionalSchemaElements: Input[js.Array[Input[String]]] = null,
-    compression: Input[String] = null,
-    format: Input[String] = null,
-    reportName: Input[String] = null,
-    s3Bucket: Input[String] = null,
-    s3Prefix: Input[String] = null,
-    s3Region: Input[String] = null,
-    timeUnit: Input[String] = null
-  ): ReportDefinitionState = {
+  def apply(): ReportDefinitionState = {
     val __obj = js.Dynamic.literal()
-    if (additionalArtifacts != null) __obj.updateDynamic("additionalArtifacts")(additionalArtifacts.asInstanceOf[js.Any])
-    if (additionalSchemaElements != null) __obj.updateDynamic("additionalSchemaElements")(additionalSchemaElements.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (reportName != null) __obj.updateDynamic("reportName")(reportName.asInstanceOf[js.Any])
-    if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
-    if (s3Prefix != null) __obj.updateDynamic("s3Prefix")(s3Prefix.asInstanceOf[js.Any])
-    if (s3Region != null) __obj.updateDynamic("s3Region")(s3Region.asInstanceOf[js.Any])
-    if (timeUnit != null) __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportDefinitionState]
   }
+  @scala.inline
+  implicit class ReportDefinitionStateOps[Self <: ReportDefinitionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalArtifactsVarargs(value: Input[String]*): Self = this.set("additionalArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalArtifacts(value: Input[js.Array[Input[String]]]): Self = this.set("additionalArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalArtifacts: Self = this.set("additionalArtifacts", js.undefined)
+    @scala.inline
+    def setAdditionalSchemaElementsVarargs(value: Input[String]*): Self = this.set("additionalSchemaElements", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalSchemaElements(value: Input[js.Array[Input[String]]]): Self = this.set("additionalSchemaElements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalSchemaElements: Self = this.set("additionalSchemaElements", js.undefined)
+    @scala.inline
+    def setCompression(value: Input[String]): Self = this.set("compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompression: Self = this.set("compression", js.undefined)
+    @scala.inline
+    def setFormat(value: Input[String]): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setReportName(value: Input[String]): Self = this.set("reportName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportName: Self = this.set("reportName", js.undefined)
+    @scala.inline
+    def setS3Bucket(value: Input[String]): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("s3Bucket", js.undefined)
+    @scala.inline
+    def setS3Prefix(value: Input[String]): Self = this.set("s3Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Prefix: Self = this.set("s3Prefix", js.undefined)
+    @scala.inline
+    def setS3Region(value: Input[String]): Self = this.set("s3Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Region: Self = this.set("s3Region", js.undefined)
+    @scala.inline
+    def setTimeUnit(value: Input[String]): Self = this.set("timeUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeUnit: Self = this.set("timeUnit", js.undefined)
+  }
+  
 }
 

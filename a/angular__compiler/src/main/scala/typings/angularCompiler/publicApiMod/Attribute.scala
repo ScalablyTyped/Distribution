@@ -20,6 +20,13 @@ class Attribute protected ()
     name: String,
     value: String,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
+    i18n: I18nMeta
+  ) = this()
+  def this(
+    name: String,
+    value: String,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     i18n: I18nMeta
   ) = this()

@@ -4,72 +4,123 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BodyOptions extends js.Object {
-  var allowSleep: js.UndefOr[Boolean] = js.undefined
-  var angle: js.UndefOr[Double] = js.undefined
-  var angularDamping: js.UndefOr[Double] = js.undefined
-  var angularForce: js.UndefOr[Double] = js.undefined
-  var angularVelocity: js.UndefOr[Double] = js.undefined
-  var ccdIterations: js.UndefOr[Double] = js.undefined
-  var ccdSpeedThreshold: js.UndefOr[Double] = js.undefined
-  var collisionResponse: js.UndefOr[Boolean] = js.undefined
-  var fixedRotation: js.UndefOr[Boolean] = js.undefined
-  var fixedX: js.UndefOr[Boolean] = js.undefined
-  var fixedY: js.UndefOr[Boolean] = js.undefined
-  var force: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-  var gravityScale: js.UndefOr[Double] = js.undefined
-  var id: js.UndefOr[Double] = js.undefined
-  var mass: js.UndefOr[Double] = js.undefined
-  var position: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-  var sleepSpeedLimit: js.UndefOr[Double] = js.undefined
-  var sleepTimeLimit: js.UndefOr[Double] = js.undefined
-  var velocity: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  var allowSleep: js.UndefOr[Boolean] = js.native
+  var angle: js.UndefOr[Double] = js.native
+  var angularDamping: js.UndefOr[Double] = js.native
+  var angularForce: js.UndefOr[Double] = js.native
+  var angularVelocity: js.UndefOr[Double] = js.native
+  var ccdIterations: js.UndefOr[Double] = js.native
+  var ccdSpeedThreshold: js.UndefOr[Double] = js.native
+  var collisionResponse: js.UndefOr[Boolean] = js.native
+  var fixedRotation: js.UndefOr[Boolean] = js.native
+  var fixedX: js.UndefOr[Boolean] = js.native
+  var fixedY: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var gravityScale: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var sleepSpeedLimit: js.UndefOr[Double] = js.native
+  var sleepTimeLimit: js.UndefOr[Double] = js.native
+  var velocity: js.UndefOr[js.Tuple2[Double, Double]] = js.native
 }
 
 object BodyOptions {
   @scala.inline
-  def apply(
-    allowSleep: js.UndefOr[Boolean] = js.undefined,
-    angle: js.UndefOr[Double] = js.undefined,
-    angularDamping: js.UndefOr[Double] = js.undefined,
-    angularForce: js.UndefOr[Double] = js.undefined,
-    angularVelocity: js.UndefOr[Double] = js.undefined,
-    ccdIterations: js.UndefOr[Double] = js.undefined,
-    ccdSpeedThreshold: js.UndefOr[Double] = js.undefined,
-    collisionResponse: js.UndefOr[Boolean] = js.undefined,
-    fixedRotation: js.UndefOr[Boolean] = js.undefined,
-    fixedX: js.UndefOr[Boolean] = js.undefined,
-    fixedY: js.UndefOr[Boolean] = js.undefined,
-    force: js.Tuple2[Double, Double] = null,
-    gravityScale: js.UndefOr[Double] = js.undefined,
-    id: js.UndefOr[Double] = js.undefined,
-    mass: js.UndefOr[Double] = js.undefined,
-    position: js.Tuple2[Double, Double] = null,
-    sleepSpeedLimit: js.UndefOr[Double] = js.undefined,
-    sleepTimeLimit: js.UndefOr[Double] = js.undefined,
-    velocity: js.Tuple2[Double, Double] = null
-  ): BodyOptions = {
+  def apply(): BodyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angularDamping)) __obj.updateDynamic("angularDamping")(angularDamping.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angularForce)) __obj.updateDynamic("angularForce")(angularForce.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angularVelocity)) __obj.updateDynamic("angularVelocity")(angularVelocity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ccdIterations)) __obj.updateDynamic("ccdIterations")(ccdIterations.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ccdSpeedThreshold)) __obj.updateDynamic("ccdSpeedThreshold")(ccdSpeedThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collisionResponse)) __obj.updateDynamic("collisionResponse")(collisionResponse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedRotation)) __obj.updateDynamic("fixedRotation")(fixedRotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedX)) __obj.updateDynamic("fixedX")(fixedX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedY)) __obj.updateDynamic("fixedY")(fixedY.get.asInstanceOf[js.Any])
-    if (force != null) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(gravityScale)) __obj.updateDynamic("gravityScale")(gravityScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mass)) __obj.updateDynamic("mass")(mass.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(sleepSpeedLimit)) __obj.updateDynamic("sleepSpeedLimit")(sleepSpeedLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sleepTimeLimit)) __obj.updateDynamic("sleepTimeLimit")(sleepTimeLimit.get.asInstanceOf[js.Any])
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyOptions]
   }
+  @scala.inline
+  implicit class BodyOptionsOps[Self <: BodyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowSleep(value: Boolean): Self = this.set("allowSleep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSleep: Self = this.set("allowSleep", js.undefined)
+    @scala.inline
+    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngle: Self = this.set("angle", js.undefined)
+    @scala.inline
+    def setAngularDamping(value: Double): Self = this.set("angularDamping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngularDamping: Self = this.set("angularDamping", js.undefined)
+    @scala.inline
+    def setAngularForce(value: Double): Self = this.set("angularForce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngularForce: Self = this.set("angularForce", js.undefined)
+    @scala.inline
+    def setAngularVelocity(value: Double): Self = this.set("angularVelocity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngularVelocity: Self = this.set("angularVelocity", js.undefined)
+    @scala.inline
+    def setCcdIterations(value: Double): Self = this.set("ccdIterations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCcdIterations: Self = this.set("ccdIterations", js.undefined)
+    @scala.inline
+    def setCcdSpeedThreshold(value: Double): Self = this.set("ccdSpeedThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCcdSpeedThreshold: Self = this.set("ccdSpeedThreshold", js.undefined)
+    @scala.inline
+    def setCollisionResponse(value: Boolean): Self = this.set("collisionResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollisionResponse: Self = this.set("collisionResponse", js.undefined)
+    @scala.inline
+    def setFixedRotation(value: Boolean): Self = this.set("fixedRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedRotation: Self = this.set("fixedRotation", js.undefined)
+    @scala.inline
+    def setFixedX(value: Boolean): Self = this.set("fixedX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedX: Self = this.set("fixedX", js.undefined)
+    @scala.inline
+    def setFixedY(value: Boolean): Self = this.set("fixedY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedY: Self = this.set("fixedY", js.undefined)
+    @scala.inline
+    def setForce(value: js.Tuple2[Double, Double]): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setGravityScale(value: Double): Self = this.set("gravityScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGravityScale: Self = this.set("gravityScale", js.undefined)
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMass(value: Double): Self = this.set("mass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMass: Self = this.set("mass", js.undefined)
+    @scala.inline
+    def setPosition(value: js.Tuple2[Double, Double]): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSleepSpeedLimit(value: Double): Self = this.set("sleepSpeedLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSleepSpeedLimit: Self = this.set("sleepSpeedLimit", js.undefined)
+    @scala.inline
+    def setSleepTimeLimit(value: Double): Self = this.set("sleepTimeLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSleepTimeLimit: Self = this.set("sleepTimeLimit", js.undefined)
+    @scala.inline
+    def setVelocity(value: js.Tuple2[Double, Double]): Self = this.set("velocity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVelocity: Self = this.set("velocity", js.undefined)
+  }
+  
 }
 

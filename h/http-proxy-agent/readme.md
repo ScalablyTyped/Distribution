@@ -1,7 +1,7 @@
 
 # Scala.js typings for http-proxy-agent
 
-Typings are for version 2.0
+Typings are for version 4.0.1
 
 ## Library description:
 An HTTP(s) proxy `http.Agent` implementation for HTTP
@@ -24,7 +24,7 @@ An HTTP(s) proxy `http.Agent` implementation for HTTP
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

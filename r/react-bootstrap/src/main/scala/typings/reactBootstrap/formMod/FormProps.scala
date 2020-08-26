@@ -7,33 +7,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormProps
   extends AllHTMLAttributes[Form]
      with ClassAttributes[Form] {
-  var bsClass: js.UndefOr[String] = js.undefined
-  var componentClass: js.UndefOr[ReactType[_]] = js.undefined
-  var horizontal: js.UndefOr[Boolean] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
+  var bsClass: js.UndefOr[String] = js.native
+  var componentClass: js.UndefOr[ReactType[_]] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
 }
 
 object FormProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[Form] = null,
-    ClassAttributes: ClassAttributes[Form] = null,
-    bsClass: String = null,
-    componentClass: ReactType[_] = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    `inline`: js.UndefOr[Boolean] = js.undefined
-  ): FormProps = {
+  def apply(): FormProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
-    if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormProps]
   }
+  @scala.inline
+  implicit class FormPropsOps[Self <: FormProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBsClass(value: String): Self = this.set("bsClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsClass: Self = this.set("bsClass", js.undefined)
+    @scala.inline
+    def setComponentClass(value: ReactType[_]): Self = this.set("componentClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentClass: Self = this.set("componentClass", js.undefined)
+    @scala.inline
+    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+  }
+  
 }
 

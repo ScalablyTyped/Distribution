@@ -11,6 +11,10 @@ trait CreateConfigurationResponse extends js.Object {
     */
   var Arn: js.UndefOr[string] = js.native
   /**
+    * The authentication strategy associated with the configuration.
+    */
+  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.native
+  /**
     * Required. The date and time of the configuration.
     */
   var Created: js.UndefOr[timestampIso8601] = js.native
@@ -30,20 +34,46 @@ trait CreateConfigurationResponse extends js.Object {
 
 object CreateConfigurationResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    Created: timestampIso8601 = null,
-    Id: string = null,
-    LatestRevision: ConfigurationRevision = null,
-    Name: string = null
-  ): CreateConfigurationResponse = {
+  def apply(): CreateConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Created != null) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (LatestRevision != null) __obj.updateDynamic("LatestRevision")(LatestRevision.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigurationResponse]
   }
+  @scala.inline
+  implicit class CreateConfigurationResponseOps[Self <: CreateConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAuthenticationStrategy(value: AuthenticationStrategy): Self = this.set("AuthenticationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationStrategy: Self = this.set("AuthenticationStrategy", js.undefined)
+    @scala.inline
+    def setCreated(value: timestampIso8601): Self = this.set("Created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("Created", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLatestRevision(value: ConfigurationRevision): Self = this.set("LatestRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestRevision: Self = this.set("LatestRevision", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

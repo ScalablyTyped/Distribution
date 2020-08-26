@@ -6,81 +6,126 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Explain[T] extends Generic {
-  var _source: js.UndefOr[String | js.Array[String]] = js.undefined
-  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.undefined
-  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.undefined
-  var _source_include: js.UndefOr[String | js.Array[String]] = js.undefined
-  var _source_includes: js.UndefOr[String | js.Array[String]] = js.undefined
-  var analyze_wildcard: js.UndefOr[Boolean] = js.undefined
-  var analyzer: js.UndefOr[String] = js.undefined
-  var body: js.UndefOr[T] = js.undefined
-  var default_operator: js.UndefOr[AND | OR] = js.undefined
-  var df: js.UndefOr[String] = js.undefined
-  var id: String
-  var index: String
-  var lenient: js.UndefOr[Boolean] = js.undefined
-  var preference: js.UndefOr[String] = js.undefined
-  var q: js.UndefOr[String] = js.undefined
-  var routing: js.UndefOr[String] = js.undefined
-  var stored_fields: js.UndefOr[String | js.Array[String]] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var _source: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_include: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_includes: js.UndefOr[String | js.Array[String]] = js.native
+  var analyze_wildcard: js.UndefOr[Boolean] = js.native
+  var analyzer: js.UndefOr[String] = js.native
+  var body: js.UndefOr[T] = js.native
+  var default_operator: js.UndefOr[AND | OR] = js.native
+  var df: js.UndefOr[String] = js.native
+  var id: String = js.native
+  var index: String = js.native
+  var lenient: js.UndefOr[Boolean] = js.native
+  var preference: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.native
+  var stored_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object Explain {
   @scala.inline
-  def apply[T](
-    id: String,
-    index: String,
-    _source: String | js.Array[String] = null,
-    _source_exclude: String | js.Array[String] = null,
-    _source_excludes: String | js.Array[String] = null,
-    _source_include: String | js.Array[String] = null,
-    _source_includes: String | js.Array[String] = null,
-    analyze_wildcard: js.UndefOr[Boolean] = js.undefined,
-    analyzer: String = null,
-    body: T = null,
-    default_operator: AND | OR = null,
-    df: String = null,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    lenient: js.UndefOr[Boolean] = js.undefined,
-    method: String = null,
-    preference: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    q: String = null,
-    routing: String = null,
-    source: String = null,
-    stored_fields: String | js.Array[String] = null,
-    `type`: String = null
-  ): Explain[T] = {
+  def apply[T](id: String, index: String): Explain[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
-    if (_source_exclude != null) __obj.updateDynamic("_source_exclude")(_source_exclude.asInstanceOf[js.Any])
-    if (_source_excludes != null) __obj.updateDynamic("_source_excludes")(_source_excludes.asInstanceOf[js.Any])
-    if (_source_include != null) __obj.updateDynamic("_source_include")(_source_include.asInstanceOf[js.Any])
-    if (_source_includes != null) __obj.updateDynamic("_source_includes")(_source_includes.asInstanceOf[js.Any])
-    if (!js.isUndefined(analyze_wildcard)) __obj.updateDynamic("analyze_wildcard")(analyze_wildcard.get.asInstanceOf[js.Any])
-    if (analyzer != null) __obj.updateDynamic("analyzer")(analyzer.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (default_operator != null) __obj.updateDynamic("default_operator")(default_operator.asInstanceOf[js.Any])
-    if (df != null) __obj.updateDynamic("df")(df.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(lenient)) __obj.updateDynamic("lenient")(lenient.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (stored_fields != null) __obj.updateDynamic("stored_fields")(stored_fields.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Explain[T]]
   }
+  @scala.inline
+  implicit class ExplainOps[Self <: Explain[_], T] (val x: Self with Explain[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_sourceVarargs(value: String*): Self = this.set("_source", js.Array(value :_*))
+    @scala.inline
+    def set_source(value: String | js.Array[String]): Self = this.set("_source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_source: Self = this.set("_source", js.undefined)
+    @scala.inline
+    def set_source_excludeVarargs(value: String*): Self = this.set("_source_exclude", js.Array(value :_*))
+    @scala.inline
+    def set_source_exclude(value: String | js.Array[String]): Self = this.set("_source_exclude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_source_exclude: Self = this.set("_source_exclude", js.undefined)
+    @scala.inline
+    def set_source_excludesVarargs(value: String*): Self = this.set("_source_excludes", js.Array(value :_*))
+    @scala.inline
+    def set_source_excludes(value: String | js.Array[String]): Self = this.set("_source_excludes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_source_excludes: Self = this.set("_source_excludes", js.undefined)
+    @scala.inline
+    def set_source_includeVarargs(value: String*): Self = this.set("_source_include", js.Array(value :_*))
+    @scala.inline
+    def set_source_include(value: String | js.Array[String]): Self = this.set("_source_include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_source_include: Self = this.set("_source_include", js.undefined)
+    @scala.inline
+    def set_source_includesVarargs(value: String*): Self = this.set("_source_includes", js.Array(value :_*))
+    @scala.inline
+    def set_source_includes(value: String | js.Array[String]): Self = this.set("_source_includes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_source_includes: Self = this.set("_source_includes", js.undefined)
+    @scala.inline
+    def setAnalyze_wildcard(value: Boolean): Self = this.set("analyze_wildcard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalyze_wildcard: Self = this.set("analyze_wildcard", js.undefined)
+    @scala.inline
+    def setAnalyzer(value: String): Self = this.set("analyzer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalyzer: Self = this.set("analyzer", js.undefined)
+    @scala.inline
+    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setDefault_operator(value: AND | OR): Self = this.set("default_operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_operator: Self = this.set("default_operator", js.undefined)
+    @scala.inline
+    def setDf(value: String): Self = this.set("df", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDf: Self = this.set("df", js.undefined)
+    @scala.inline
+    def setLenient(value: Boolean): Self = this.set("lenient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLenient: Self = this.set("lenient", js.undefined)
+    @scala.inline
+    def setPreference(value: String): Self = this.set("preference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreference: Self = this.set("preference", js.undefined)
+    @scala.inline
+    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setRouting(value: String): Self = this.set("routing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouting: Self = this.set("routing", js.undefined)
+    @scala.inline
+    def setStored_fieldsVarargs(value: String*): Self = this.set("stored_fields", js.Array(value :_*))
+    @scala.inline
+    def setStored_fields(value: String | js.Array[String]): Self = this.set("stored_fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStored_fields: Self = this.set("stored_fields", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

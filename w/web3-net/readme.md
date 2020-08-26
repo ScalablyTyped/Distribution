@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-net
 
-Typings are for version 1.2.9
+Typings are for version 1.2.11
 
 ## Library description:
 Web3 module to interact with the Ethereum nodes networking properties.
@@ -10,9 +10,9 @@ Web3 module to interact with the Ethereum nodes networking properties.
 | ------------------ | :-------------: |
 | Full name          | web3-net |
 | Keywords           | - |
-| # releases         | 36 |
+| # releases         | 35 |
 | # dependents       | 35 |
-| # downloads        | 4153618 |
+| # downloads        | 4216281 |
 | # stars            | 0 |
 
 ## Links

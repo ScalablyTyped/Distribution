@@ -18,11 +18,30 @@ trait EvaluationResult extends js.Object {
 
 object EvaluationResult {
   @scala.inline
-  def apply(F1Score: js.UndefOr[Float] = js.undefined, Summary: Summary = null): EvaluationResult = {
+  def apply(): EvaluationResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(F1Score)) __obj.updateDynamic("F1Score")(F1Score.get.asInstanceOf[js.Any])
-    if (Summary != null) __obj.updateDynamic("Summary")(Summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResult]
   }
+  @scala.inline
+  implicit class EvaluationResultOps[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setF1Score(value: Float): Self = this.set("F1Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF1Score: Self = this.set("F1Score", js.undefined)
+    @scala.inline
+    def setSummary(value: Summary): Self = this.set("Summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("Summary", js.undefined)
+  }
+  
 }
 

@@ -4,27 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DivisionSearchResult extends js.Object {
   /**
     * Other Open Civic Data identifiers that refer to the same division -- for example, those that refer to other political divisions whose boundaries are
     * defined to be coterminous with this one. For example, ocd-division/country:us/state:wy will include an alias of ocd-division/country:us/state:wy/cd:1,
     * since Wyoming has only one Congressional district.
     */
-  var aliases: js.UndefOr[js.Array[String]] = js.undefined
+  var aliases: js.UndefOr[js.Array[String]] = js.native
   /** The name of the division. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** The unique Open Civic Data identifier for this division. */
-  var ocdId: js.UndefOr[String] = js.undefined
+  var ocdId: js.UndefOr[String] = js.native
 }
 
 object DivisionSearchResult {
   @scala.inline
-  def apply(aliases: js.Array[String] = null, name: String = null, ocdId: String = null): DivisionSearchResult = {
+  def apply(): DivisionSearchResult = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ocdId != null) __obj.updateDynamic("ocdId")(ocdId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DivisionSearchResult]
   }
+  @scala.inline
+  implicit class DivisionSearchResultOps[Self <: DivisionSearchResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOcdId(value: String): Self = this.set("ocdId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOcdId: Self = this.set("ocdId", js.undefined)
+  }
+  
 }
 

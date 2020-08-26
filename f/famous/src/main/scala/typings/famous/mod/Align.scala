@@ -16,17 +16,55 @@ class Align protected () extends js.Object {
   def isActive(): Boolean = js.native
   def onUpdate(): Unit = js.native
   def set(x: Double): Align = js.native
+  def set(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    z: js.UndefOr[scala.Nothing],
+    transition: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Align = js.native
+  def set(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], transition: js.Any): Align = js.native
+  def set(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    z: js.UndefOr[scala.Nothing],
+    transition: js.Any,
+    callback: js.Function
+  ): Align = js.native
+  def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Align = js.native
+  def set(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    z: Double,
+    transition: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Align = js.native
+  def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double, transition: js.Any): Align = js.native
+  def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double, transition: js.Any, callback: js.Function): Align = js.native
   def set(x: Double, y: Double): Align = js.native
+  def set(
+    x: Double,
+    y: Double,
+    z: js.UndefOr[scala.Nothing],
+    transition: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Align = js.native
+  def set(x: Double, y: Double, z: js.UndefOr[scala.Nothing], transition: js.Any): Align = js.native
+  def set(x: Double, y: Double, z: js.UndefOr[scala.Nothing], transition: js.Any, callback: js.Function): Align = js.native
   def set(x: Double, y: Double, z: Double): Align = js.native
+  def set(x: Double, y: Double, z: Double, transition: js.UndefOr[scala.Nothing], callback: js.Function): Align = js.native
   def set(x: Double, y: Double, z: Double, transition: js.Any): Align = js.native
   def set(x: Double, y: Double, z: Double, transition: js.Any, callback: js.Function): Align = js.native
   def setX(`val`: Double): Align = js.native
+  def setX(`val`: Double, transition: js.UndefOr[scala.Nothing], callback: js.Function): Align = js.native
   def setX(`val`: Double, transition: js.Any): Align = js.native
   def setX(`val`: Double, transition: js.Any, callback: js.Function): Align = js.native
   def setY(`val`: Double): Align = js.native
+  def setY(`val`: Double, transition: js.UndefOr[scala.Nothing], callback: js.Function): Align = js.native
   def setY(`val`: Double, transition: js.Any): Align = js.native
   def setY(`val`: Double, transition: js.Any, callback: js.Function): Align = js.native
   def setZ(`val`: Double): Align = js.native
+  def setZ(`val`: Double, transition: js.UndefOr[scala.Nothing], callback: js.Function): Align = js.native
   def setZ(`val`: Double, transition: js.Any): Align = js.native
   def setZ(`val`: Double, transition: js.Any, callback: js.Function): Align = js.native
   def update(): Unit = js.native

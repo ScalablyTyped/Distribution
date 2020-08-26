@@ -88,7 +88,11 @@ trait JQuery extends js.Object {
   var qtip_Original: Plugin = js.native
   def qtip(): JQuery = js.native
   def qtip(methodName: String): js.Any = js.native
+  def qtip(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.UndefOr[scala.Nothing], p3: js.Any): js.Any = js.native
+  def qtip(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.Any): js.Any = js.native
+  def qtip(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.Any, p3: js.Any): js.Any = js.native
   def qtip(methodName: String, p1: js.Any): js.Any = js.native
+  def qtip(methodName: String, p1: js.Any, p2: js.UndefOr[scala.Nothing], p3: js.Any): js.Any = js.native
   def qtip(methodName: String, p1: js.Any, p2: js.Any): js.Any = js.native
   def qtip(methodName: String, p1: js.Any, p2: js.Any, p3: js.Any): js.Any = js.native
   def qtip(methodName: option, propertyName: content): Content = js.native
@@ -256,6 +260,8 @@ trait JQuery extends js.Object {
   @JSName("qtip")
   def qtip_reposition(methodName: reposition): JQuery = js.native
   @JSName("qtip")
+  def qtip_reposition(methodName: reposition, event: js.UndefOr[scala.Nothing], effect: Boolean): JQuery = js.native
+  @JSName("qtip")
   def qtip_reposition(methodName: reposition, event: Event): JQuery = js.native
   @JSName("qtip")
   def qtip_reposition(methodName: reposition, event: Event, effect: Boolean): JQuery = js.native
@@ -265,6 +271,8 @@ trait JQuery extends js.Object {
   def qtip_show(methodName: show, event: Event): JQuery = js.native
   @JSName("qtip")
   def qtip_toggle(methodName: toggle): JQuery = js.native
+  @JSName("qtip")
+  def qtip_toggle(methodName: toggle, state: js.UndefOr[scala.Nothing], event: Event): JQuery = js.native
   @JSName("qtip")
   def qtip_toggle(methodName: toggle, state: Boolean): JQuery = js.native
   @JSName("qtip")

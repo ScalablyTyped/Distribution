@@ -10,9 +10,9 @@ Reads files from a real location
 | ------------------ | :-------------: |
 | Full name          | fs-merger |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 20 |
 | # dependents       | 1 |
-| # downloads        | 20404 |
+| # downloads        | 108199 |
 | # stars            | 0 |
 
 ## Links

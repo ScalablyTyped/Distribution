@@ -12,15 +12,13 @@ trait ProtocolMethodSpec extends js.Object
 
 object ProtocolMethodSpec {
   @scala.inline
-  def SimpleProtocolMethodSpec(argTypes: js.Array[String], retType: String, optional: js.UndefOr[Boolean] = js.undefined): ProtocolMethodSpec = {
+  def SimpleProtocolMethodSpec(argTypes: js.Array[String], retType: String): ProtocolMethodSpec = {
     val __obj = js.Dynamic.literal(argTypes = argTypes.asInstanceOf[js.Any], retType = retType.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolMethodSpec]
   }
   @scala.inline
-  def DetailedProtocolMethodSpec(types: String, optional: js.UndefOr[Boolean] = js.undefined): ProtocolMethodSpec = {
+  def DetailedProtocolMethodSpec(types: String): ProtocolMethodSpec = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolMethodSpec]
   }
 }

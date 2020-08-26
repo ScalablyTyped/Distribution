@@ -37,28 +37,20 @@ class DataSetParameter protected ()
   var model_FDataSetParameter: IModel = js.native
   @JSName("name")
   val name_FDataSetParameter: String = js.native
-  /**
-    * Returns the qualified name of this element, or
-    * null if this element is not a part of the model,
-    * or if it or one of its namespace containers does not have a
-    * valid name.
-    */
-  /* CompleteClass */
-  override val qualifiedName: String | Null = js.native
   def constraints: IList[DataSetParameterConstraint] = js.native
   def containerAsDataSet: DataSet = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   /**
     * In version 7.9.0: introduced
     */
   def parameterType: DataType = js.native
-  def parameterType(newValue: DataType): js.Any = js.native
   /**
     * In version 7.9.0: introduced
     */
   def parameterTypeIsRange: Boolean = js.native
-  def parameterTypeIsRange(newValue: Boolean): js.Any = js.native
+  def parameterTypeIsRange_=(newValue: Boolean): Unit = js.native
+  def parameterType_=(newValue: DataType): Unit = js.native
   @JSName("qualifiedName")
   def qualifiedName_MDataSetParameter: String | Null = js.native
   /**
@@ -67,7 +59,7 @@ class DataSetParameter protected ()
     * In version 7.9.0: deleted
     */
   def `type`: String = js.native
-  def `type`(newValue: String): js.Any = js.native
+  def type_=(newValue: String): Unit = js.native
 }
 
 /* static members */

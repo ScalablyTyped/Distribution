@@ -11,13 +11,15 @@ import scala.scalajs.js.annotation._
 class HttpQueryError protected () extends Error {
   def this(statusCode: Double, message: String) = this()
   def this(statusCode: Double, message: String, isGraphQLError: Boolean) = this()
+  def this(
+    statusCode: Double,
+    message: String,
+    isGraphQLError: js.UndefOr[scala.Nothing],
+    headers: StringDictionary[String]
+  ) = this()
   def this(statusCode: Double, message: String, isGraphQLError: Boolean, headers: StringDictionary[String]) = this()
   var headers: js.UndefOr[StringDictionary[String]] = js.native
   var isGraphQLError: Boolean = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var statusCode: Double = js.native
 }
 

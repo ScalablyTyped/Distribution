@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 class default protected () extends MP4TagContents {
   def this(ftyp: String) = this()
   def this(ftyp: String, atoms: js.Array[Atom]) = this()
-  /* CompleteClass */
-  override var _atoms: js.Array[Atom] = js.native
-  /* CompleteClass */
-  override def toArray(): ByteArray = js.native
 }
 
 /* static members */

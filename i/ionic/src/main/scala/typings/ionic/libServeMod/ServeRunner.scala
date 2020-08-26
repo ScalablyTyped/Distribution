@@ -31,8 +31,6 @@ abstract class ServeRunner[T /* <: ServeOptions */] () extends Runner[T, ServeDe
   def getUsedPorts(options: T, details: ServeDetails): js.Array[Double] = js.native
   def modifyOpenUrl(url: String, options: T): String = js.native
   def publishDevApp(options: T, details: DevAppDetails): js.Promise[js.UndefOr[String]] = js.native
-  /* CompleteClass */
-  override def run(options: T): js.Promise[ServeDetails] = js.native
   def runLab(options: T, serveDetails: ServeDetails): js.Promise[LabServeDetails] = js.native
   def scheduleAfterServe(options: T, details: ServeDetails): Unit = js.native
   def selectExternalIP(options: T): js.Promise[js.Tuple2[String, js.Array[NetworkInterface]]] = js.native

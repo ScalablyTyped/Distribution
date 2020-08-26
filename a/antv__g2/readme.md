@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__g2
 
-Typings are for version 3.5.11
+Typings are for version 3.5.15
 
 ## Library description:
 the Grammar of Graphics in Javascript
@@ -12,7 +12,7 @@ the Grammar of Graphics in Javascript
 | Keywords           | g2, chart |
 | # releases         | 119 |
 | # dependents       | 63 |
-| # downloads        | 1144363 |
+| # downloads        | 1157373 |
 | # stars            | 2 |
 
 ## Links

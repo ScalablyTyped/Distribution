@@ -22,15 +22,32 @@ trait DeleteProjectRequest extends js.Object {
 
 object DeleteProjectRequest {
   @scala.inline
-  def apply(
-    id: ProjectId,
-    clientRequestToken: ClientRequestToken = null,
-    deleteStack: js.UndefOr[DeleteStack] = js.undefined
-  ): DeleteProjectRequest = {
+  def apply(id: ProjectId): DeleteProjectRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteStack)) __obj.updateDynamic("deleteStack")(deleteStack.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProjectRequest]
   }
+  @scala.inline
+  implicit class DeleteProjectRequestOps[Self <: DeleteProjectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: ProjectId): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setDeleteStack(value: DeleteStack): Self = this.set("deleteStack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteStack: Self = this.set("deleteStack", js.undefined)
+  }
+  
 }
 

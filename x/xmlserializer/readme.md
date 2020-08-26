@@ -10,9 +10,9 @@ Serializes a document to XML/XHTML
 | ------------------ | :-------------: |
 | Full name          | xmlserializer |
 | Keywords           | html, html5, xhtml, xml, serializer, XMLSerializer |
-| # releases         | 2 |
-| # dependents       | 25 |
-| # downloads        | 606281 |
+| # releases         | 0 |
+| # dependents       | 26 |
+| # downloads        | 660498 |
 | # stars            | 1 |
 
 ## Links

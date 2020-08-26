@@ -48,41 +48,41 @@ trait PaperScope extends js.Object {
   var CurveLocation: Instantiable3[
     /* curve */ Curve, 
     /* time */ Double, 
-    js.UndefOr[/* point */ Point], 
+    /* point */ js.UndefOr[Point], 
     typings.paper.paper.CurveLocation
   ] = js.native
   var Event: Instantiable0[typings.paper.paper.Event] = js.native
   var Gradient: Instantiable0[typings.paper.paper.Gradient] = js.native
   var GradientStop: Instantiable2[
-    js.UndefOr[/* color */ Color], 
-    js.UndefOr[/* offset */ Double], 
+    /* color */ js.UndefOr[Color], 
+    /* offset */ js.UndefOr[Double], 
     typings.paper.paper.GradientStop
   ] = js.native
-  var Group: Instantiable1[js.UndefOr[/* children */ js.Array[Item]], typings.paper.paper.Group] = js.native
+  var Group: Instantiable1[/* children */ js.UndefOr[js.Array[Item]], typings.paper.paper.Group] = js.native
   var HitResult: Instantiable0[typings.paper.paper.HitResult] = js.native
   var Item: Instantiable0[typings.paper.paper.Item] = js.native
   var Key: TypeofKey = js.native
   var KeyEvent: Instantiable0[typings.paper.paper.KeyEvent] = js.native
-  var Layer: Instantiable1[js.UndefOr[/* children */ js.Array[Item]], typings.paper.paper.Layer] = js.native
+  var Layer: Instantiable1[/* children */ js.UndefOr[js.Array[Item]], typings.paper.paper.Layer] = js.native
   var Matrix: Instantiable0[typings.paper.paper.Matrix] = js.native
   var MouseEvent: Instantiable0[typings.paper.paper.MouseEvent] = js.native
   var PaperScope: TypeofPaperScope = js.native
   var PaperScript: TypeofPaperScript = js.native
-  var Path: TypeofPath with (Instantiable1[js.UndefOr[/* segments */ js.Array[Segment]], typings.paper.paper.Path]) = js.native
+  var Path: TypeofPath with (Instantiable1[/* segments */ js.UndefOr[js.Array[Segment]], typings.paper.paper.Path]) = js.native
   var PathItem: TypeofPathItem = js.native
   var Point: TypeofPoint = js.native
   var PointText: Instantiable1[/* point */ Point, typings.paper.paper.PointText] = js.native
   var Project: Instantiable1[/* element */ HTMLCanvasElement | String | Size, typings.paper.paper.Project] = js.native
   var Raster: Instantiable2[
-    js.UndefOr[HTMLImageElement | HTMLCanvasElement | String], 
-    js.UndefOr[/* position */ Point], 
+    /* source */ js.UndefOr[HTMLImageElement | HTMLCanvasElement | String], 
+    /* position */ js.UndefOr[Point], 
     typings.paper.paper.Raster
   ] = js.native
   var Rectangle: Instantiable2[/* point */ Point, /* size */ Size, typings.paper.paper.Rectangle] = js.native
   var Segment: Instantiable3[
-    js.UndefOr[/* point */ Point], 
-    js.UndefOr[/* handleIn */ Point], 
-    js.UndefOr[/* handleOut */ Point], 
+    /* point */ js.UndefOr[Point], 
+    /* handleIn */ js.UndefOr[Point], 
+    /* handleOut */ js.UndefOr[Point], 
     typings.paper.paper.Segment
   ] = js.native
   var Shape: TypeofShape with Instantiable0[typings.paper.paper.Shape] = js.native
@@ -90,12 +90,12 @@ trait PaperScope extends js.Object {
   var Style: Instantiable1[/* style */ js.Object, typings.paper.paper.Style] = js.native
   var SymbolDefinition: Instantiable2[
     /* item */ Item, 
-    js.UndefOr[/* dontCenter */ Boolean], 
+    /* dontCenter */ js.UndefOr[Boolean], 
     typings.paper.paper.SymbolDefinition
   ] = js.native
   var SymbolItem: Instantiable2[
     /* definition */ SymbolDefinition | Item, 
-    js.UndefOr[/* point */ Point], 
+    /* point */ js.UndefOr[Point], 
     typings.paper.paper.SymbolItem
   ] = js.native
   var TextItem: Instantiable0[typings.paper.paper.TextItem] = js.native
@@ -106,8 +106,8 @@ trait PaperScope extends js.Object {
     /* from */ js.Object, 
     /* to */ js.Object, 
     /* duration */ Double, 
-    js.UndefOr[String | js.Function], 
-    js.UndefOr[/* start */ Boolean], 
+    /* easing */ js.UndefOr[String | js.Function], 
+    /* start */ js.UndefOr[Boolean], 
     typings.paper.paper.Tween
   ] = js.native
   var View: Instantiable0[typings.paper.paper.View] = js.native

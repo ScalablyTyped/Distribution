@@ -12,7 +12,7 @@ Really Fast Deep Clone
 | Keywords           | object, obj, properties, clone, copy, deep, recursive, key, keys, values, prop, deep-clone, deepclone, deep-copy, deepcopy, fast, performance, performant, fastclone, fastcopy, fast-clone, fast-deep-clone, fast-copy, fast-deep-copy |
 | # releases         | 12 |
 | # dependents       | 22 |
-| # downloads        | 46973715 |
+| # downloads        | 49451822 |
 | # stars            | 0 |
 
 ## Links

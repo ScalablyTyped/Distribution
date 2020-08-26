@@ -14,10 +14,26 @@ trait CreateOrganizationalUnitResponse extends js.Object {
 
 object CreateOrganizationalUnitResponse {
   @scala.inline
-  def apply(OrganizationalUnit: OrganizationalUnit = null): CreateOrganizationalUnitResponse = {
+  def apply(): CreateOrganizationalUnitResponse = {
     val __obj = js.Dynamic.literal()
-    if (OrganizationalUnit != null) __obj.updateDynamic("OrganizationalUnit")(OrganizationalUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOrganizationalUnitResponse]
   }
+  @scala.inline
+  implicit class CreateOrganizationalUnitResponseOps[Self <: CreateOrganizationalUnitResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOrganizationalUnit(value: OrganizationalUnit): Self = this.set("OrganizationalUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationalUnit: Self = this.set("OrganizationalUnit", js.undefined)
+  }
+  
 }
 

@@ -10,8 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("VarDate")
 @js.native
 class VarDate protected ()
-  extends typings.std.VarDate {
-  /* CompleteClass */
-  override var VarDate_typekey: typings.std.VarDate = js.native
-}
+  extends typings.std.VarDate
 

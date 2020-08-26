@@ -38,7 +38,26 @@ trait MailMerge extends js.Object {
     LinkToSource: js.UndefOr[js.Any]
   ): Unit = js.native
   def CreateHeaderSource(Name: String): Unit = js.native
+  def CreateHeaderSource(
+    Name: String,
+    PasswordDocument: js.UndefOr[scala.Nothing],
+    WritePasswordDocument: js.UndefOr[scala.Nothing],
+    HeaderRecord: js.Any
+  ): Unit = js.native
+  def CreateHeaderSource(Name: String, PasswordDocument: js.UndefOr[scala.Nothing], WritePasswordDocument: js.Any): Unit = js.native
+  def CreateHeaderSource(
+    Name: String,
+    PasswordDocument: js.UndefOr[scala.Nothing],
+    WritePasswordDocument: js.Any,
+    HeaderRecord: js.Any
+  ): Unit = js.native
   def CreateHeaderSource(Name: String, PasswordDocument: js.Any): Unit = js.native
+  def CreateHeaderSource(
+    Name: String,
+    PasswordDocument: js.Any,
+    WritePasswordDocument: js.UndefOr[scala.Nothing],
+    HeaderRecord: js.Any
+  ): Unit = js.native
   def CreateHeaderSource(Name: String, PasswordDocument: js.Any, WritePasswordDocument: js.Any): Unit = js.native
   def CreateHeaderSource(Name: String, PasswordDocument: js.Any, WritePasswordDocument: js.Any, HeaderRecord: js.Any): Unit = js.native
   def EditDataSource(): Unit = js.native

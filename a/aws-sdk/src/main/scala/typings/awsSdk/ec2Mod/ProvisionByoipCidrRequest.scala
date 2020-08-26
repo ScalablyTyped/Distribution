@@ -34,21 +34,46 @@ trait ProvisionByoipCidrRequest extends js.Object {
 
 object ProvisionByoipCidrRequest {
   @scala.inline
-  def apply(
-    Cidr: String,
-    CidrAuthorizationContext: CidrAuthorizationContext = null,
-    Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    PoolTagSpecifications: TagSpecificationList = null,
-    PubliclyAdvertisable: js.UndefOr[Boolean] = js.undefined
-  ): ProvisionByoipCidrRequest = {
+  def apply(Cidr: String): ProvisionByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
-    if (CidrAuthorizationContext != null) __obj.updateDynamic("CidrAuthorizationContext")(CidrAuthorizationContext.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (PoolTagSpecifications != null) __obj.updateDynamic("PoolTagSpecifications")(PoolTagSpecifications.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAdvertisable)) __obj.updateDynamic("PubliclyAdvertisable")(PubliclyAdvertisable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionByoipCidrRequest]
   }
+  @scala.inline
+  implicit class ProvisionByoipCidrRequestOps[Self <: ProvisionByoipCidrRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidr(value: String): Self = this.set("Cidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCidrAuthorizationContext(value: CidrAuthorizationContext): Self = this.set("CidrAuthorizationContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrAuthorizationContext: Self = this.set("CidrAuthorizationContext", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setPoolTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("PoolTagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setPoolTagSpecifications(value: TagSpecificationList): Self = this.set("PoolTagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoolTagSpecifications: Self = this.set("PoolTagSpecifications", js.undefined)
+    @scala.inline
+    def setPubliclyAdvertisable(value: Boolean): Self = this.set("PubliclyAdvertisable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAdvertisable: Self = this.set("PubliclyAdvertisable", js.undefined)
+  }
+  
 }
 

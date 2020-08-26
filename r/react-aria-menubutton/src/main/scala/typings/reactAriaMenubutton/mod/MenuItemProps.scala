@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MenuItemProps[T /* <: HTMLElement */]
   extends AllHTMLAttributes[T]
      with ClassAttributes[T] {
@@ -15,36 +16,50 @@ trait MenuItemProps[T /* <: HTMLElement */]
     */
   var tag: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     * If `text` has a value, its first letter will be the letter a user can
     * type to navigate to that item.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /**
     * If value has a value, it will be passed to the onSelection handler
     * when the `MenuItem` is selected
     */
   @JSName("value")
-  var value_MenuItemProps: js.UndefOr[js.Any] = js.undefined
+  var value_MenuItemProps: js.UndefOr[js.Any] = js.native
 }
 
 object MenuItemProps {
   @scala.inline
-  def apply[/* <: typings.std.HTMLElement */ T](
-    AllHTMLAttributes: AllHTMLAttributes[T] = null,
-    ClassAttributes: ClassAttributes[T] = null,
-    tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null,
-    text: String = null,
-    value: js.Any = null
-  ): MenuItemProps[T] = {
+  def apply[/* <: typings.std.HTMLElement */ T](): MenuItemProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemProps[T]]
   }
+  @scala.inline
+  implicit class MenuItemPropsOps[Self <: MenuItemProps[_], /* <: typings.std.HTMLElement */ T] (val x: Self with MenuItemProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

@@ -19,20 +19,44 @@ trait SchemaSetOperationStatusRequest extends js.Object {
 
 object SchemaSetOperationStatusRequest {
   @scala.inline
-  def apply(
-    errorCode: String = null,
-    errorMessage: String = null,
-    operationId: String = null,
-    timestampEvents: js.Array[SchemaTimestampEvent] = null,
-    validationToken: String = null
-  ): SchemaSetOperationStatusRequest = {
+  def apply(): SchemaSetOperationStatusRequest = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (timestampEvents != null) __obj.updateDynamic("timestampEvents")(timestampEvents.asInstanceOf[js.Any])
-    if (validationToken != null) __obj.updateDynamic("validationToken")(validationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSetOperationStatusRequest]
   }
+  @scala.inline
+  implicit class SchemaSetOperationStatusRequestOps[Self <: SchemaSetOperationStatusRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: String): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setTimestampEventsVarargs(value: SchemaTimestampEvent*): Self = this.set("timestampEvents", js.Array(value :_*))
+    @scala.inline
+    def setTimestampEvents(value: js.Array[SchemaTimestampEvent]): Self = this.set("timestampEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampEvents: Self = this.set("timestampEvents", js.undefined)
+    @scala.inline
+    def setValidationToken(value: String): Self = this.set("validationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationToken: Self = this.set("validationToken", js.undefined)
+  }
+  
 }
 

@@ -30,20 +30,42 @@ trait NetworkInterfaceAssociation extends js.Object {
 
 object NetworkInterfaceAssociation {
   @scala.inline
-  def apply(
-    AllocationId: String = null,
-    AssociationId: String = null,
-    IpOwnerId: String = null,
-    PublicDnsName: String = null,
-    PublicIp: String = null
-  ): NetworkInterfaceAssociation = {
+  def apply(): NetworkInterfaceAssociation = {
     val __obj = js.Dynamic.literal()
-    if (AllocationId != null) __obj.updateDynamic("AllocationId")(AllocationId.asInstanceOf[js.Any])
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
-    if (IpOwnerId != null) __obj.updateDynamic("IpOwnerId")(IpOwnerId.asInstanceOf[js.Any])
-    if (PublicDnsName != null) __obj.updateDynamic("PublicDnsName")(PublicDnsName.asInstanceOf[js.Any])
-    if (PublicIp != null) __obj.updateDynamic("PublicIp")(PublicIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfaceAssociation]
   }
+  @scala.inline
+  implicit class NetworkInterfaceAssociationOps[Self <: NetworkInterfaceAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationId(value: String): Self = this.set("AllocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationId: Self = this.set("AllocationId", js.undefined)
+    @scala.inline
+    def setAssociationId(value: String): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    @scala.inline
+    def setIpOwnerId(value: String): Self = this.set("IpOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpOwnerId: Self = this.set("IpOwnerId", js.undefined)
+    @scala.inline
+    def setPublicDnsName(value: String): Self = this.set("PublicDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicDnsName: Self = this.set("PublicDnsName", js.undefined)
+    @scala.inline
+    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+  }
+  
 }
 

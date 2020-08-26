@@ -27,7 +27,15 @@ object iconImageMod extends js.Object {
   class default protected () extends IconImage {
     def this(
       image: HTMLCanvasElement,
-      src: js.UndefOr[String],
+      src: js.UndefOr[scala.Nothing],
+      size: Size,
+      crossOrigin: String,
+      imageState: ImageState,
+      color: Color
+    ) = this()
+    def this(
+      image: HTMLCanvasElement,
+      src: String,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,
@@ -35,7 +43,15 @@ object iconImageMod extends js.Object {
     ) = this()
     def this(
       image: HTMLImageElement,
-      src: js.UndefOr[String],
+      src: js.UndefOr[scala.Nothing],
+      size: Size,
+      crossOrigin: String,
+      imageState: ImageState,
+      color: Color
+    ) = this()
+    def this(
+      image: HTMLImageElement,
+      src: String,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,

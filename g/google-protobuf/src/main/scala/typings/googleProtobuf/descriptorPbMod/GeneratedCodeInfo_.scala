@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeneratedCodeInfo_ () extends Message {
   def addAnnotation(): Annotation = js.native
+  def addAnnotation(value: js.UndefOr[scala.Nothing], index: Double): Annotation = js.native
   def addAnnotation(value: Annotation): Annotation = js.native
   def addAnnotation(value: Annotation, index: Double): Annotation = js.native
   def clearAnnotationList(): Unit = js.native

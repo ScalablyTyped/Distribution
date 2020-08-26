@@ -22,15 +22,34 @@ trait ListInstanceProfilesResponse extends js.Object {
 
 object ListInstanceProfilesResponse {
   @scala.inline
-  def apply(
-    InstanceProfiles: instanceProfileListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: responseMarkerType = null
-  ): ListInstanceProfilesResponse = {
+  def apply(InstanceProfiles: instanceProfileListType): ListInstanceProfilesResponse = {
     val __obj = js.Dynamic.literal(InstanceProfiles = InstanceProfiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInstanceProfilesResponse]
   }
+  @scala.inline
+  implicit class ListInstanceProfilesResponseOps[Self <: ListInstanceProfilesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceProfilesVarargs(value: InstanceProfile*): Self = this.set("InstanceProfiles", js.Array(value :_*))
+    @scala.inline
+    def setInstanceProfiles(value: instanceProfileListType): Self = this.set("InstanceProfiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

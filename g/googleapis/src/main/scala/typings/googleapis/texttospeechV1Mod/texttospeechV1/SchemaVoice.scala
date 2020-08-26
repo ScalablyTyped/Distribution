@@ -31,18 +31,40 @@ trait SchemaVoice extends js.Object {
 
 object SchemaVoice {
   @scala.inline
-  def apply(
-    languageCodes: js.Array[String] = null,
-    name: String = null,
-    naturalSampleRateHertz: js.UndefOr[Double] = js.undefined,
-    ssmlGender: String = null
-  ): SchemaVoice = {
+  def apply(): SchemaVoice = {
     val __obj = js.Dynamic.literal()
-    if (languageCodes != null) __obj.updateDynamic("languageCodes")(languageCodes.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(naturalSampleRateHertz)) __obj.updateDynamic("naturalSampleRateHertz")(naturalSampleRateHertz.get.asInstanceOf[js.Any])
-    if (ssmlGender != null) __obj.updateDynamic("ssmlGender")(ssmlGender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVoice]
   }
+  @scala.inline
+  implicit class SchemaVoiceOps[Self <: SchemaVoice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguageCodesVarargs(value: String*): Self = this.set("languageCodes", js.Array(value :_*))
+    @scala.inline
+    def setLanguageCodes(value: js.Array[String]): Self = this.set("languageCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCodes: Self = this.set("languageCodes", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNaturalSampleRateHertz(value: Double): Self = this.set("naturalSampleRateHertz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNaturalSampleRateHertz: Self = this.set("naturalSampleRateHertz", js.undefined)
+    @scala.inline
+    def setSsmlGender(value: String): Self = this.set("ssmlGender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsmlGender: Self = this.set("ssmlGender", js.undefined)
+  }
+  
 }
 

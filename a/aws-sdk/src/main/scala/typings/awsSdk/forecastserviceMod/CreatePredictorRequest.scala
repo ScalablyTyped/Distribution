@@ -47,6 +47,10 @@ trait CreatePredictorRequest extends js.Object {
     */
   var PredictorName: Name = js.native
   /**
+    * The optional metadata that you apply to the predictor to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. The following basic restrictions apply to tags:   Maximum number of tags per resource - 50.   For each resource, each tag key must be unique, and each tag key can have only one value.   Maximum key length - 128 Unicode characters in UTF-8.   Maximum value length - 256 Unicode characters in UTF-8.   If your tagging schema is used across multiple services and resources, remember that other services may have restrictions on allowed characters. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following characters: + - = . _ : / @.   Tag keys and values are case sensitive.   Do not use aws:, AWS:, or any upper or lowercase combination of such as a prefix for keys as it is reserved for AWS use. You cannot edit or delete tag keys with this prefix. Values can have this prefix. If a tag value has aws as its prefix but the key does not, then Forecast considers it to be a user tag and will count against the limit of 50 tags. Tags with only the key prefix of aws do not count against your tags per resource limit.  
+    */
+  var Tags: js.UndefOr[typings.awsSdk.forecastserviceMod.Tags] = js.native
+  /**
     * The hyperparameters to override for model training. The hyperparameters that you can override are listed in the individual algorithms. For the list of supported algorithms, see aws-forecast-choosing-recipes.
     */
   var TrainingParameters: js.UndefOr[typings.awsSdk.forecastserviceMod.TrainingParameters] = js.native
@@ -58,24 +62,65 @@ object CreatePredictorRequest {
     FeaturizationConfig: FeaturizationConfig,
     ForecastHorizon: Integer,
     InputDataConfig: InputDataConfig,
-    PredictorName: Name,
-    AlgorithmArn: Arn = null,
-    EncryptionConfig: EncryptionConfig = null,
-    EvaluationParameters: EvaluationParameters = null,
-    HPOConfig: HyperParameterTuningJobConfig = null,
-    PerformAutoML: js.UndefOr[Boolean] = js.undefined,
-    PerformHPO: js.UndefOr[Boolean] = js.undefined,
-    TrainingParameters: TrainingParameters = null
+    PredictorName: Name
   ): CreatePredictorRequest = {
     val __obj = js.Dynamic.literal(FeaturizationConfig = FeaturizationConfig.asInstanceOf[js.Any], ForecastHorizon = ForecastHorizon.asInstanceOf[js.Any], InputDataConfig = InputDataConfig.asInstanceOf[js.Any], PredictorName = PredictorName.asInstanceOf[js.Any])
-    if (AlgorithmArn != null) __obj.updateDynamic("AlgorithmArn")(AlgorithmArn.asInstanceOf[js.Any])
-    if (EncryptionConfig != null) __obj.updateDynamic("EncryptionConfig")(EncryptionConfig.asInstanceOf[js.Any])
-    if (EvaluationParameters != null) __obj.updateDynamic("EvaluationParameters")(EvaluationParameters.asInstanceOf[js.Any])
-    if (HPOConfig != null) __obj.updateDynamic("HPOConfig")(HPOConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformAutoML)) __obj.updateDynamic("PerformAutoML")(PerformAutoML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformHPO)) __obj.updateDynamic("PerformHPO")(PerformHPO.get.asInstanceOf[js.Any])
-    if (TrainingParameters != null) __obj.updateDynamic("TrainingParameters")(TrainingParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePredictorRequest]
   }
+  @scala.inline
+  implicit class CreatePredictorRequestOps[Self <: CreatePredictorRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFeaturizationConfig(value: FeaturizationConfig): Self = this.set("FeaturizationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForecastHorizon(value: Integer): Self = this.set("ForecastHorizon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPredictorName(value: Name): Self = this.set("PredictorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithmArn(value: Arn): Self = this.set("AlgorithmArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithmArn: Self = this.set("AlgorithmArn", js.undefined)
+    @scala.inline
+    def setEncryptionConfig(value: EncryptionConfig): Self = this.set("EncryptionConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfig: Self = this.set("EncryptionConfig", js.undefined)
+    @scala.inline
+    def setEvaluationParameters(value: EvaluationParameters): Self = this.set("EvaluationParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationParameters: Self = this.set("EvaluationParameters", js.undefined)
+    @scala.inline
+    def setHPOConfig(value: HyperParameterTuningJobConfig): Self = this.set("HPOConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHPOConfig: Self = this.set("HPOConfig", js.undefined)
+    @scala.inline
+    def setPerformAutoML(value: Boolean): Self = this.set("PerformAutoML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformAutoML: Self = this.set("PerformAutoML", js.undefined)
+    @scala.inline
+    def setPerformHPO(value: Boolean): Self = this.set("PerformHPO", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformHPO: Self = this.set("PerformHPO", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTrainingParameters(value: TrainingParameters): Self = this.set("TrainingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingParameters: Self = this.set("TrainingParameters", js.undefined)
+  }
+  
 }
 

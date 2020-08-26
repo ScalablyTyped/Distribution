@@ -31,18 +31,38 @@ trait NamedQueryArgs extends js.Object {
 
 object NamedQueryArgs {
   @scala.inline
-  def apply(
-    database: Input[String],
-    query: Input[String],
-    description: Input[String] = null,
-    name: Input[String] = null,
-    workgroup: Input[String] = null
-  ): NamedQueryArgs = {
+  def apply(database: Input[String], query: Input[String]): NamedQueryArgs = {
     val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (workgroup != null) __obj.updateDynamic("workgroup")(workgroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedQueryArgs]
   }
+  @scala.inline
+  implicit class NamedQueryArgsOps[Self <: NamedQueryArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabase(value: Input[String]): Self = this.set("database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuery(value: Input[String]): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setWorkgroup(value: Input[String]): Self = this.set("workgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkgroup: Self = this.set("workgroup", js.undefined)
+  }
+  
 }
 

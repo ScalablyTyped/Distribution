@@ -22,16 +22,34 @@ trait Timing extends js.Object {
 
 object Timing {
   @scala.inline
-  def apply(
-    FinishTime: timestampUnix = null,
-    StartTime: timestampUnix = null,
-    SubmitTime: timestampUnix = null
-  ): Timing = {
+  def apply(): Timing = {
     val __obj = js.Dynamic.literal()
-    if (FinishTime != null) __obj.updateDynamic("FinishTime")(FinishTime.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (SubmitTime != null) __obj.updateDynamic("SubmitTime")(SubmitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timing]
   }
+  @scala.inline
+  implicit class TimingOps[Self <: Timing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFinishTime(value: timestampUnix): Self = this.set("FinishTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinishTime: Self = this.set("FinishTime", js.undefined)
+    @scala.inline
+    def setStartTime(value: timestampUnix): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setSubmitTime(value: timestampUnix): Self = this.set("SubmitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitTime: Self = this.set("SubmitTime", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     */
   def create(): GaxiosPromise[SchemaFolder] = js.native
   def create(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def create(params: ParamsResourceAccountsContainersWorkspacesFoldersCreate): GaxiosPromise[SchemaFolder] = js.native
   def create(
     params: ParamsResourceAccountsContainersWorkspacesFoldersCreate,
@@ -58,6 +59,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersWorkspacesFoldersDelete): GaxiosPromise[Unit] = js.native
   def delete(
     params: ParamsResourceAccountsContainersWorkspacesFoldersDelete,
@@ -89,6 +91,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     */
   def entities(): GaxiosPromise[SchemaFolderEntities] = js.native
   def entities(callback: BodyResponseCallback[SchemaFolderEntities]): Unit = js.native
+  def entities(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolderEntities] = js.native
   def entities(params: ParamsResourceAccountsContainersWorkspacesFoldersEntities): GaxiosPromise[SchemaFolderEntities] = js.native
   def entities(
     params: ParamsResourceAccountsContainersWorkspacesFoldersEntities,
@@ -119,6 +122,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     */
   def get(): GaxiosPromise[SchemaFolder] = js.native
   def get(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def get(params: ParamsResourceAccountsContainersWorkspacesFoldersGet): GaxiosPromise[SchemaFolder] = js.native
   def get(
     params: ParamsResourceAccountsContainersWorkspacesFoldersGet,
@@ -150,6 +154,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     */
   def list(): GaxiosPromise[SchemaListFoldersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFoldersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFoldersResponse] = js.native
   def list(params: ParamsResourceAccountsContainersWorkspacesFoldersList): GaxiosPromise[SchemaListFoldersResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersWorkspacesFoldersList,
@@ -185,6 +190,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     */
   def move_entities_to_folder(): GaxiosPromise[Unit] = js.native
   def move_entities_to_folder(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def move_entities_to_folder(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def move_entities_to_folder(params: ParamsResourceAccountsContainersWorkspacesFoldersMoveEntitiesToFolder): GaxiosPromise[Unit] = js.native
   def move_entities_to_folder(
     params: ParamsResourceAccountsContainersWorkspacesFoldersMoveEntitiesToFolder,
@@ -219,6 +225,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     */
   def revert(): GaxiosPromise[SchemaRevertFolderResponse] = js.native
   def revert(callback: BodyResponseCallback[SchemaRevertFolderResponse]): Unit = js.native
+  def revert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevertFolderResponse] = js.native
   def revert(params: ParamsResourceAccountsContainersWorkspacesFoldersRevert): GaxiosPromise[SchemaRevertFolderResponse] = js.native
   def revert(
     params: ParamsResourceAccountsContainersWorkspacesFoldersRevert,
@@ -251,6 +258,7 @@ class ResourceAccountsContainersWorkspacesFolders protected () extends js.Object
     */
   def update(): GaxiosPromise[SchemaFolder] = js.native
   def update(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def update(params: ParamsResourceAccountsContainersWorkspacesFoldersUpdate): GaxiosPromise[SchemaFolder] = js.native
   def update(
     params: ParamsResourceAccountsContainersWorkspacesFoldersUpdate,

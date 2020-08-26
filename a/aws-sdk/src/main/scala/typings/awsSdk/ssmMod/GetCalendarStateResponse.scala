@@ -22,16 +22,34 @@ trait GetCalendarStateResponse extends js.Object {
 
 object GetCalendarStateResponse {
   @scala.inline
-  def apply(
-    AtTime: ISO8601String = null,
-    NextTransitionTime: ISO8601String = null,
-    State: CalendarState = null
-  ): GetCalendarStateResponse = {
+  def apply(): GetCalendarStateResponse = {
     val __obj = js.Dynamic.literal()
-    if (AtTime != null) __obj.updateDynamic("AtTime")(AtTime.asInstanceOf[js.Any])
-    if (NextTransitionTime != null) __obj.updateDynamic("NextTransitionTime")(NextTransitionTime.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCalendarStateResponse]
   }
+  @scala.inline
+  implicit class GetCalendarStateResponseOps[Self <: GetCalendarStateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAtTime(value: ISO8601String): Self = this.set("AtTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtTime: Self = this.set("AtTime", js.undefined)
+    @scala.inline
+    def setNextTransitionTime(value: ISO8601String): Self = this.set("NextTransitionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextTransitionTime: Self = this.set("NextTransitionTime", js.undefined)
+    @scala.inline
+    def setState(value: CalendarState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait NoiseReducer extends js.Object {
 
 object NoiseReducer {
   @scala.inline
-  def apply(
-    Filter: NoiseReducerFilter = null,
-    FilterSettings: NoiseReducerFilterSettings = null,
-    SpatialFilterSettings: NoiseReducerSpatialFilterSettings = null,
-    TemporalFilterSettings: NoiseReducerTemporalFilterSettings = null
-  ): NoiseReducer = {
+  def apply(): NoiseReducer = {
     val __obj = js.Dynamic.literal()
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (FilterSettings != null) __obj.updateDynamic("FilterSettings")(FilterSettings.asInstanceOf[js.Any])
-    if (SpatialFilterSettings != null) __obj.updateDynamic("SpatialFilterSettings")(SpatialFilterSettings.asInstanceOf[js.Any])
-    if (TemporalFilterSettings != null) __obj.updateDynamic("TemporalFilterSettings")(TemporalFilterSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoiseReducer]
   }
+  @scala.inline
+  implicit class NoiseReducerOps[Self <: NoiseReducer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(value: NoiseReducerFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setFilterSettings(value: NoiseReducerFilterSettings): Self = this.set("FilterSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterSettings: Self = this.set("FilterSettings", js.undefined)
+    @scala.inline
+    def setSpatialFilterSettings(value: NoiseReducerSpatialFilterSettings): Self = this.set("SpatialFilterSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpatialFilterSettings: Self = this.set("SpatialFilterSettings", js.undefined)
+    @scala.inline
+    def setTemporalFilterSettings(value: NoiseReducerTemporalFilterSettings): Self = this.set("TemporalFilterSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemporalFilterSettings: Self = this.set("TemporalFilterSettings", js.undefined)
+  }
+  
 }
 

@@ -17,7 +17,38 @@ trait editable extends element {
     obj: editable,
     eventName: String,
     listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
+    scopeobj: js.UndefOr[scala.Nothing],
+    listenerData: js.UndefOr[scala.Nothing],
+    priority: Double
+  ): listenerRegistration = js.native
+  def attachListener(
+    obj: editable,
+    eventName: String,
+    listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
+    scopeobj: js.UndefOr[scala.Nothing],
+    listenerData: js.Any
+  ): listenerRegistration = js.native
+  def attachListener(
+    obj: editable,
+    eventName: String,
+    listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
+    scopeobj: js.UndefOr[scala.Nothing],
+    listenerData: js.Any,
+    priority: Double
+  ): listenerRegistration = js.native
+  def attachListener(
+    obj: editable,
+    eventName: String,
+    listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
     scopeobj: js.Object
+  ): listenerRegistration = js.native
+  def attachListener(
+    obj: editable,
+    eventName: String,
+    listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
+    scopeobj: js.Object,
+    listenerData: js.UndefOr[scala.Nothing],
+    priority: Double
   ): listenerRegistration = js.native
   def attachListener(
     obj: editable,
@@ -39,7 +70,38 @@ trait editable extends element {
     obj: event,
     eventName: String,
     listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
+    scopeobj: js.UndefOr[scala.Nothing],
+    listenerData: js.UndefOr[scala.Nothing],
+    priority: Double
+  ): listenerRegistration = js.native
+  def attachListener(
+    obj: event,
+    eventName: String,
+    listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
+    scopeobj: js.UndefOr[scala.Nothing],
+    listenerData: js.Any
+  ): listenerRegistration = js.native
+  def attachListener(
+    obj: event,
+    eventName: String,
+    listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
+    scopeobj: js.UndefOr[scala.Nothing],
+    listenerData: js.Any,
+    priority: Double
+  ): listenerRegistration = js.native
+  def attachListener(
+    obj: event,
+    eventName: String,
+    listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
     scopeobj: js.Object
+  ): listenerRegistration = js.native
+  def attachListener(
+    obj: event,
+    eventName: String,
+    listenerFunction: js.Function1[/* ei */ eventInfo, Unit],
+    scopeobj: js.Object,
+    listenerData: js.UndefOr[scala.Nothing],
+    priority: Double
   ): listenerRegistration = js.native
   def attachListener(
     obj: event,
@@ -61,6 +123,7 @@ trait editable extends element {
   def insertElement(element: element): Unit = js.native
   def insertElement(element: element, range: range): Unit = js.native
   def insertHtml(data: String): Unit = js.native
+  def insertHtml(data: String, mode: js.UndefOr[scala.Nothing], range: range): Unit = js.native
   def insertHtml(data: String, mode: String): Unit = js.native
   def insertHtml(data: String, mode: String, range: range): Unit = js.native
   def insertText(text: text): Unit = js.native

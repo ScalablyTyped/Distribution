@@ -5,6 +5,7 @@ import typings.ionicCore.componentsMod.global.HTMLIonActionSheetElement
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +36,14 @@ object actionSheetMod extends js.Object {
     var dispatchCancelHandler: js.Any = js.native
     @JSName("el")
     var el_ActionSheet: HTMLIonActionSheetElement = js.native
-    var gesture: js.UndefOr[js.Any] = js.native
+    var gesture: js.Any = js.native
     var getButtons: js.Any = js.native
-    var groupEl: js.UndefOr[js.Any] = js.native
+    var groupEl: js.Any = js.native
     /**
       * Title for the action sheet.
       */
     var header: js.UndefOr[String] = js.native
+    var lastFocus: js.UndefOr[HTMLElement] = js.native
     var onBackdropTap: js.Any = js.native
     /**
       * Subtitle for the action sheet.
@@ -53,10 +55,12 @@ object actionSheetMod extends js.Object {
       * [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
       */
     var translucent: Boolean = js.native
-    var wrapperEl: js.UndefOr[js.Any] = js.native
+    var wrapperEl: js.Any = js.native
     @JSName("componentDidLoad")
     def componentDidLoad_MActionSheet(): Unit = js.native
     def componentDidUnload(): Unit = js.native
+    @JSName("connectedCallback")
+    def connectedCallback_MActionSheet(): Unit = js.native
     /**
       * Returns a promise that resolves when the action sheet did dismiss.
       */

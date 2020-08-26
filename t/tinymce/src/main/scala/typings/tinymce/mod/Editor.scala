@@ -64,7 +64,11 @@ class Editor protected () extends Observable {
   def destroy(automatic: Boolean): Unit = js.native
   def execCallback(name: String): js.Object = js.native
   def execCommand(cmd: String): Unit = js.native
+  def execCommand(cmd: String, ui: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], args: js.Object): Unit = js.native
+  def execCommand(cmd: String, ui: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
+  def execCommand(cmd: String, ui: js.UndefOr[scala.Nothing], value: js.Any, args: js.Object): Unit = js.native
   def execCommand(cmd: String, ui: Boolean): Unit = js.native
+  def execCommand(cmd: String, ui: Boolean, value: js.UndefOr[scala.Nothing], args: js.Object): Unit = js.native
   def execCommand(cmd: String, ui: Boolean, value: js.Any): Unit = js.native
   def execCommand(cmd: String, ui: Boolean, value: js.Any, args: js.Object): Unit = js.native
   def focus(skipFocus: Boolean): Unit = js.native
@@ -78,6 +82,7 @@ class Editor protected () extends Observable {
   def getLang(name: String): Unit = js.native
   def getLang(name: String, defaultVal: String): Unit = js.native
   def getParam(name: String): String = js.native
+  def getParam(name: String, defaultVal: js.UndefOr[scala.Nothing], `type`: String): String = js.native
   def getParam(name: String, defaultVal: String): String = js.native
   def getParam(name: String, defaultVal: String, `type`: String): String = js.native
   def getWin(): Window = js.native

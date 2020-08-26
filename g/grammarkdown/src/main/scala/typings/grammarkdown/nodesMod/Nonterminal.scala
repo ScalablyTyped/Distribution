@@ -11,6 +11,7 @@ class Nonterminal protected ()
   extends OptionalSymbolBase[typings.grammarkdown.tokensMod.SyntaxKind.Nonterminal] {
   def this(name: Identifier) = this()
   def this(name: Identifier, argumentList: ArgumentList) = this()
+  def this(name: Identifier, argumentList: js.UndefOr[scala.Nothing], questionToken: Token[QuestionToken]) = this()
   def this(name: Identifier, argumentList: ArgumentList, questionToken: Token[QuestionToken]) = this()
   val argumentList: js.UndefOr[ArgumentList] = js.native
   val name: Identifier = js.native

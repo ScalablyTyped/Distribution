@@ -26,17 +26,38 @@ trait DescribeStackResourceDriftsInput extends js.Object {
 
 object DescribeStackResourceDriftsInput {
   @scala.inline
-  def apply(
-    StackName: StackNameOrId,
-    MaxResults: js.UndefOr[BoxedMaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    StackResourceDriftStatusFilters: StackResourceDriftStatusFilters = null
-  ): DescribeStackResourceDriftsInput = {
+  def apply(StackName: StackNameOrId): DescribeStackResourceDriftsInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StackResourceDriftStatusFilters != null) __obj.updateDynamic("StackResourceDriftStatusFilters")(StackResourceDriftStatusFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStackResourceDriftsInput]
   }
+  @scala.inline
+  implicit class DescribeStackResourceDriftsInputOps[Self <: DescribeStackResourceDriftsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackName(value: StackNameOrId): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: BoxedMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStackResourceDriftStatusFiltersVarargs(value: StackResourceDriftStatus*): Self = this.set("StackResourceDriftStatusFilters", js.Array(value :_*))
+    @scala.inline
+    def setStackResourceDriftStatusFilters(value: StackResourceDriftStatusFilters): Self = this.set("StackResourceDriftStatusFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackResourceDriftStatusFilters: Self = this.set("StackResourceDriftStatusFilters", js.undefined)
+  }
+  
 }
 

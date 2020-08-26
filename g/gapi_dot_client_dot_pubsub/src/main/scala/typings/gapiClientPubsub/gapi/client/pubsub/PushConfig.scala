@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PushConfig extends js.Object {
   /**
     * Endpoint configuration attributes.
@@ -29,21 +30,40 @@ trait PushConfig extends js.Object {
     * &#42; `v1beta1`: uses the push format defined in the v1beta1 Pub/Sub API.
     * &#42; `v1` or `v1beta2`: uses the push format defined in the v1 Pub/Sub API.
     */
-  var attributes: js.UndefOr[Record[String, String]] = js.undefined
+  var attributes: js.UndefOr[Record[String, String]] = js.native
   /**
     * A URL locating the endpoint to which messages should be pushed.
     * For example, a Webhook endpoint might use "https://example.com/push".
     */
-  var pushEndpoint: js.UndefOr[String] = js.undefined
+  var pushEndpoint: js.UndefOr[String] = js.native
 }
 
 object PushConfig {
   @scala.inline
-  def apply(attributes: Record[String, String] = null, pushEndpoint: String = null): PushConfig = {
+  def apply(): PushConfig = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (pushEndpoint != null) __obj.updateDynamic("pushEndpoint")(pushEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushConfig]
   }
+  @scala.inline
+  implicit class PushConfigOps[Self <: PushConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: Record[String, String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setPushEndpoint(value: String): Self = this.set("pushEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePushEndpoint: Self = this.set("pushEndpoint", js.undefined)
+  }
+  
 }
 

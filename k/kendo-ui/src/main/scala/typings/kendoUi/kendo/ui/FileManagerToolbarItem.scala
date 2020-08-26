@@ -4,69 +4,118 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FileManagerToolbarItem extends js.Object {
-  var attributes: js.UndefOr[js.Any] = js.undefined
-  var command: js.UndefOr[String] = js.undefined
-  var enable: js.UndefOr[Boolean] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var imageUrl: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[String] = js.undefined
-  var overflow: js.UndefOr[String] = js.undefined
-  var primary: js.UndefOr[Boolean] = js.undefined
-  var showIcon: js.UndefOr[String] = js.undefined
-  var showText: js.UndefOr[String] = js.undefined
-  var spriteCssClass: js.UndefOr[String] = js.undefined
-  var template: js.UndefOr[String | js.Function] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var togglable: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var attributes: js.UndefOr[js.Any] = js.native
+  var command: js.UndefOr[String] = js.native
+  var enable: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var options: js.UndefOr[String] = js.native
+  var overflow: js.UndefOr[String] = js.native
+  var primary: js.UndefOr[Boolean] = js.native
+  var showIcon: js.UndefOr[String] = js.native
+  var showText: js.UndefOr[String] = js.native
+  var spriteCssClass: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String | js.Function] = js.native
+  var text: js.UndefOr[String] = js.native
+  var togglable: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object FileManagerToolbarItem {
   @scala.inline
-  def apply(
-    attributes: js.Any = null,
-    command: String = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    id: String = null,
-    imageUrl: String = null,
-    name: String = null,
-    options: String = null,
-    overflow: String = null,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    showIcon: String = null,
-    showText: String = null,
-    spriteCssClass: String = null,
-    template: String | js.Function = null,
-    text: String = null,
-    togglable: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null
-  ): FileManagerToolbarItem = {
+  def apply(): FileManagerToolbarItem = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
-    if (showIcon != null) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
-    if (showText != null) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(togglable)) __obj.updateDynamic("togglable")(togglable.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerToolbarItem]
   }
+  @scala.inline
+  implicit class FileManagerToolbarItemOps[Self <: FileManagerToolbarItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: js.Any): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("command", js.undefined)
+    @scala.inline
+    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptions(value: String): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setOverflow(value: String): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setShowIcon(value: String): Self = this.set("showIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIcon: Self = this.set("showIcon", js.undefined)
+    @scala.inline
+    def setShowText(value: String): Self = this.set("showText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowText: Self = this.set("showText", js.undefined)
+    @scala.inline
+    def setSpriteCssClass(value: String): Self = this.set("spriteCssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpriteCssClass: Self = this.set("spriteCssClass", js.undefined)
+    @scala.inline
+    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTogglable(value: Boolean): Self = this.set("togglable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTogglable: Self = this.set("togglable", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

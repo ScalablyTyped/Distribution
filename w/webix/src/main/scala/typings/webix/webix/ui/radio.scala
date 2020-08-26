@@ -53,9 +53,11 @@ trait radio extends baseview {
   @JSName("$tooltipOut")
   def $tooltipOut(): Unit = js.native
   def addOption(id: String, value: js.Any): Unit = js.native
+  def addOption(id: String, value: js.Any, show: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def addOption(id: String, value: js.Any, show: Boolean): Unit = js.native
   def addOption(id: String, value: js.Any, show: Boolean, index: Double): Unit = js.native
   def addOption(id: Double, value: js.Any): Unit = js.native
+  def addOption(id: Double, value: js.Any, show: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def addOption(id: Double, value: js.Any, show: Boolean): Unit = js.native
   def addOption(id: Double, value: js.Any, show: Boolean, index: Double): Unit = js.native
   def attachEvent(`type`: radioEventName, functor: WebixCallback): String | Double = js.native

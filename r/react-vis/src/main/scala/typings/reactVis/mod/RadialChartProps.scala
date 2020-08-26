@@ -14,74 +14,136 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RadialChartProps extends js.Object {
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
    // default: ''
-  var colorType: js.UndefOr[String] = js.undefined
+  var colorType: js.UndefOr[String] = js.native
    // default: 'category'
-  var data: js.Array[Angle]
-  var getAngle: js.UndefOr[RVGet[RadialChartPoint, angle]] = js.undefined
-  var getAngle0: js.UndefOr[RVGet[RadialChartPoint, angle0]] = js.undefined
-  var getLabel: js.UndefOr[RVGet[RadialChartPoint, label]] = js.undefined
-  var getRadius: js.UndefOr[RVGet[RadialChartPoint, radius]] = js.undefined
-  var getRadius0: js.UndefOr[RVGet[RadialChartPoint, radius0]] = js.undefined
-  var height: Double
-  var labelsAboveChildren: js.UndefOr[Boolean] = js.undefined
-  var labelsStyle: js.UndefOr[CSSProperties] = js.undefined
-  var margin: js.UndefOr[Margin | Double] = js.undefined
-  var onValueClick: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.undefined
-  var onValueMouseOut: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.undefined
-  var onValueMouseOver: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.undefined
-  var showLabels: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var subLabel: js.UndefOr[js.Function1[/* row */ js.Any, String]] = js.undefined
-  var width: Double
+  var data: js.Array[Angle] = js.native
+  var getAngle: js.UndefOr[RVGet[RadialChartPoint, angle]] = js.native
+  var getAngle0: js.UndefOr[RVGet[RadialChartPoint, angle0]] = js.native
+  var getLabel: js.UndefOr[RVGet[RadialChartPoint, label]] = js.native
+  var getRadius: js.UndefOr[RVGet[RadialChartPoint, radius]] = js.native
+  var getRadius0: js.UndefOr[RVGet[RadialChartPoint, radius0]] = js.native
+  var height: Double = js.native
+  var labelsAboveChildren: js.UndefOr[Boolean] = js.native
+  var labelsStyle: js.UndefOr[CSSProperties] = js.native
+  var margin: js.UndefOr[Margin | Double] = js.native
+  var onValueClick: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.native
+  var onValueMouseOut: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.native
+  var onValueMouseOver: js.UndefOr[RVValueEventHandler[RadialChartPoint]] = js.native
+  var showLabels: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var subLabel: js.UndefOr[js.Function1[/* row */ js.Any, String]] = js.native
+  var width: Double = js.native
 }
 
 object RadialChartProps {
   @scala.inline
-  def apply(
-    data: js.Array[Angle],
-    height: Double,
-    width: Double,
-    animation: String | AnimationParam | Boolean = null,
-    className: String = null,
-    colorType: String = null,
-    getAngle: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = null,
-    getAngle0: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = null,
-    getLabel: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = null,
-    getRadius: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = null,
-    getRadius0: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = null,
-    labelsAboveChildren: js.UndefOr[Boolean] = js.undefined,
-    labelsStyle: CSSProperties = null,
-    margin: Margin | Double = null,
-    onValueClick: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
-    onValueMouseOut: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
-    onValueMouseOver: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
-    showLabels: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    subLabel: /* row */ js.Any => String = null
-  ): RadialChartProps = {
+  def apply(data: js.Array[Angle], height: Double, width: Double): RadialChartProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (colorType != null) __obj.updateDynamic("colorType")(colorType.asInstanceOf[js.Any])
-    if (getAngle != null) __obj.updateDynamic("getAngle")(js.Any.fromFunction1(getAngle))
-    if (getAngle0 != null) __obj.updateDynamic("getAngle0")(js.Any.fromFunction1(getAngle0))
-    if (getLabel != null) __obj.updateDynamic("getLabel")(js.Any.fromFunction1(getLabel))
-    if (getRadius != null) __obj.updateDynamic("getRadius")(js.Any.fromFunction1(getRadius))
-    if (getRadius0 != null) __obj.updateDynamic("getRadius0")(js.Any.fromFunction1(getRadius0))
-    if (!js.isUndefined(labelsAboveChildren)) __obj.updateDynamic("labelsAboveChildren")(labelsAboveChildren.get.asInstanceOf[js.Any])
-    if (labelsStyle != null) __obj.updateDynamic("labelsStyle")(labelsStyle.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onValueClick != null) __obj.updateDynamic("onValueClick")(js.Any.fromFunction2(onValueClick))
-    if (onValueMouseOut != null) __obj.updateDynamic("onValueMouseOut")(js.Any.fromFunction2(onValueMouseOut))
-    if (onValueMouseOver != null) __obj.updateDynamic("onValueMouseOver")(js.Any.fromFunction2(onValueMouseOver))
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subLabel != null) __obj.updateDynamic("subLabel")(js.Any.fromFunction1(subLabel))
     __obj.asInstanceOf[RadialChartProps]
   }
+  @scala.inline
+  implicit class RadialChartPropsOps[Self <: RadialChartProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataVarargs(value: Angle*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[Angle]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnimation(value: String | AnimationParam | Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColorType(value: String): Self = this.set("colorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorType: Self = this.set("colorType", js.undefined)
+    @scala.inline
+    def setGetAngle(
+      value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): Self = this.set("getAngle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetAngle: Self = this.set("getAngle", js.undefined)
+    @scala.inline
+    def setGetAngle0(
+      value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): Self = this.set("getAngle0", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetAngle0: Self = this.set("getAngle0", js.undefined)
+    @scala.inline
+    def setGetLabel(
+      value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): Self = this.set("getLabel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetLabel: Self = this.set("getLabel", js.undefined)
+    @scala.inline
+    def setGetRadius(
+      value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): Self = this.set("getRadius", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetRadius: Self = this.set("getRadius", js.undefined)
+    @scala.inline
+    def setGetRadius0(
+      value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): Self = this.set("getRadius0", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetRadius0: Self = this.set("getRadius0", js.undefined)
+    @scala.inline
+    def setLabelsAboveChildren(value: Boolean): Self = this.set("labelsAboveChildren", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelsAboveChildren: Self = this.set("labelsAboveChildren", js.undefined)
+    @scala.inline
+    def setLabelsStyle(value: CSSProperties): Self = this.set("labelsStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelsStyle: Self = this.set("labelsStyle", js.undefined)
+    @scala.inline
+    def setMargin(value: Margin | Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setOnValueClick(value: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onValueClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnValueClick: Self = this.set("onValueClick", js.undefined)
+    @scala.inline
+    def setOnValueMouseOut(value: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onValueMouseOut", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnValueMouseOut: Self = this.set("onValueMouseOut", js.undefined)
+    @scala.inline
+    def setOnValueMouseOver(value: (RadialChartPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onValueMouseOver", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnValueMouseOver: Self = this.set("onValueMouseOver", js.undefined)
+    @scala.inline
+    def setShowLabels(value: Boolean): Self = this.set("showLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowLabels: Self = this.set("showLabels", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSubLabel(value: /* row */ js.Any => String): Self = this.set("subLabel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSubLabel: Self = this.set("subLabel", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
+import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Histogram_ extends Widget_ {
   /**
-    * The statistical average of the data in the histogram. You would typically get this value from the `avg` property of SummaryStatisticsResult, which is the result of the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) function.  When set, this value will render on the histogram with a symbol indicating it is the average.
+    * The statistical average of the data in the histogram. You would typically get this value from the `avg` property of SummaryStatisticsResult, which is the result of the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.  When set, this value will render on the histogram with a symbol indicating it is the average.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#average)
     */
@@ -22,7 +24,7 @@ trait Histogram_ extends Widget_ {
   @JSName("barCreatedFunction")
   var barCreatedFunction_Original: BarCreatedFunction = js.native
   /**
-    * An array of objects representing each bin in the histogram. This information is typically returned from the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html) function.
+    * An array of objects representing each bin in the histogram. This information is typically returned from the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html) function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#bins)
     */
@@ -68,11 +70,11 @@ trait Histogram_ extends Widget_ {
     */
   var min: Double = js.native
   /**
-    * The state of the widget.  **Possible Values:** ready | disabled
+    * The state of the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#state)
     */
-  val state: String = js.native
+  val state: ready | disabled = js.native
   /**
     * The view model for the Histogram widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [HistogramViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html) class to access all properties and methods on the Histogram widget.
     *
@@ -91,6 +93,7 @@ trait Histogram_ extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#dataLineCreatedFunction)
     */
   def dataLineCreatedFunction(lineElement: js.Any): Unit = js.native
+  def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.Any): Unit = js.native
   def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.Any, index: Double): Unit = js.native
   /**
@@ -99,6 +102,7 @@ trait Histogram_ extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
 }

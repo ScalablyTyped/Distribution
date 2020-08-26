@@ -4,38 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OpenLocationOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 地址的详细说明 */
-  var address: String
+  var address: String = js.native
   /** 纬度 */
-  var latitude: Double | String
+  var latitude: Double | String = js.native
   /** 经度 */
-  var longitude: Double | String
+  var longitude: Double | String = js.native
   /** 位置名称 */
-  var name: String
+  var name: String = js.native
   /** 缩放比例，范围 3~19，默认为 15 */
-  var scale: js.UndefOr[Double] = js.undefined
+  var scale: js.UndefOr[Double] = js.native
 }
 
 object OpenLocationOptions {
   @scala.inline
-  def apply(
-    address: String,
-    latitude: Double | String,
-    longitude: Double | String,
-    name: String,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null,
-    scale: js.UndefOr[Double] = js.undefined,
-    success: js.Any => Unit = null
-  ): OpenLocationOptions = {
+  def apply(address: String, latitude: Double | String, longitude: Double | String, name: String): OpenLocationOptions = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[OpenLocationOptions]
   }
+  @scala.inline
+  implicit class OpenLocationOptionsOps[Self <: OpenLocationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLatitude(value: Double | String): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLongitude(value: Double | String): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+  }
+  
 }
 

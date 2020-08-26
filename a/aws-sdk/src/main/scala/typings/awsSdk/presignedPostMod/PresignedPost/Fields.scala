@@ -28,15 +28,27 @@ trait Fields
 
 object Fields {
   @scala.inline
-  def apply(
-    Policy: String,
-    `X-Amz-Signature`: String,
-    StringDictionary: /* name */ StringDictionary[String] = null
-  ): Fields = {
+  def apply(Policy: String, `X-Amz-Signature`: String): Fields = {
     val __obj = js.Dynamic.literal(Policy = Policy.asInstanceOf[js.Any])
     __obj.updateDynamic("X-Amz-Signature")(`X-Amz-Signature`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Fields]
   }
+  @scala.inline
+  implicit class FieldsOps[Self <: Fields] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicy(value: String): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setX-Amz-Signature`(value: String): Self = this.set("X-Amz-Signature", value.asInstanceOf[js.Any])
+  }
+  
 }
 

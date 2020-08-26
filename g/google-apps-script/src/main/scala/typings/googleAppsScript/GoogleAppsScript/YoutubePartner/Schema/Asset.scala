@@ -4,66 +4,117 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Asset extends js.Object {
-  var aliasId: js.UndefOr[js.Array[String]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[js.Array[String]] = js.undefined
-  var matchPolicy: js.UndefOr[AssetMatchPolicy] = js.undefined
-  var matchPolicyEffective: js.UndefOr[AssetMatchPolicy] = js.undefined
-  var matchPolicyMine: js.UndefOr[AssetMatchPolicy] = js.undefined
-  var metadata: js.UndefOr[Metadata] = js.undefined
-  var metadataEffective: js.UndefOr[Metadata] = js.undefined
-  var metadataMine: js.UndefOr[Metadata] = js.undefined
-  var ownership: js.UndefOr[RightsOwnership] = js.undefined
-  var ownershipConflicts: js.UndefOr[OwnershipConflicts] = js.undefined
-  var ownershipEffective: js.UndefOr[RightsOwnership] = js.undefined
-  var ownershipMine: js.UndefOr[RightsOwnership] = js.undefined
-  var status: js.UndefOr[String] = js.undefined
-  var timeCreated: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var aliasId: js.UndefOr[js.Array[String]] = js.native
+  var id: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var label: js.UndefOr[js.Array[String]] = js.native
+  var matchPolicy: js.UndefOr[AssetMatchPolicy] = js.native
+  var matchPolicyEffective: js.UndefOr[AssetMatchPolicy] = js.native
+  var matchPolicyMine: js.UndefOr[AssetMatchPolicy] = js.native
+  var metadata: js.UndefOr[Metadata] = js.native
+  var metadataEffective: js.UndefOr[Metadata] = js.native
+  var metadataMine: js.UndefOr[Metadata] = js.native
+  var ownership: js.UndefOr[RightsOwnership] = js.native
+  var ownershipConflicts: js.UndefOr[OwnershipConflicts] = js.native
+  var ownershipEffective: js.UndefOr[RightsOwnership] = js.native
+  var ownershipMine: js.UndefOr[RightsOwnership] = js.native
+  var status: js.UndefOr[String] = js.native
+  var timeCreated: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object Asset {
   @scala.inline
-  def apply(
-    aliasId: js.Array[String] = null,
-    id: String = null,
-    kind: String = null,
-    label: js.Array[String] = null,
-    matchPolicy: AssetMatchPolicy = null,
-    matchPolicyEffective: AssetMatchPolicy = null,
-    matchPolicyMine: AssetMatchPolicy = null,
-    metadata: Metadata = null,
-    metadataEffective: Metadata = null,
-    metadataMine: Metadata = null,
-    ownership: RightsOwnership = null,
-    ownershipConflicts: OwnershipConflicts = null,
-    ownershipEffective: RightsOwnership = null,
-    ownershipMine: RightsOwnership = null,
-    status: String = null,
-    timeCreated: String = null,
-    `type`: String = null
-  ): Asset = {
+  def apply(): Asset = {
     val __obj = js.Dynamic.literal()
-    if (aliasId != null) __obj.updateDynamic("aliasId")(aliasId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (matchPolicy != null) __obj.updateDynamic("matchPolicy")(matchPolicy.asInstanceOf[js.Any])
-    if (matchPolicyEffective != null) __obj.updateDynamic("matchPolicyEffective")(matchPolicyEffective.asInstanceOf[js.Any])
-    if (matchPolicyMine != null) __obj.updateDynamic("matchPolicyMine")(matchPolicyMine.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (metadataEffective != null) __obj.updateDynamic("metadataEffective")(metadataEffective.asInstanceOf[js.Any])
-    if (metadataMine != null) __obj.updateDynamic("metadataMine")(metadataMine.asInstanceOf[js.Any])
-    if (ownership != null) __obj.updateDynamic("ownership")(ownership.asInstanceOf[js.Any])
-    if (ownershipConflicts != null) __obj.updateDynamic("ownershipConflicts")(ownershipConflicts.asInstanceOf[js.Any])
-    if (ownershipEffective != null) __obj.updateDynamic("ownershipEffective")(ownershipEffective.asInstanceOf[js.Any])
-    if (ownershipMine != null) __obj.updateDynamic("ownershipMine")(ownershipMine.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Asset]
   }
+  @scala.inline
+  implicit class AssetOps[Self <: Asset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasIdVarargs(value: String*): Self = this.set("aliasId", js.Array(value :_*))
+    @scala.inline
+    def setAliasId(value: js.Array[String]): Self = this.set("aliasId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasId: Self = this.set("aliasId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabelVarargs(value: String*): Self = this.set("label", js.Array(value :_*))
+    @scala.inline
+    def setLabel(value: js.Array[String]): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMatchPolicy(value: AssetMatchPolicy): Self = this.set("matchPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchPolicy: Self = this.set("matchPolicy", js.undefined)
+    @scala.inline
+    def setMatchPolicyEffective(value: AssetMatchPolicy): Self = this.set("matchPolicyEffective", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchPolicyEffective: Self = this.set("matchPolicyEffective", js.undefined)
+    @scala.inline
+    def setMatchPolicyMine(value: AssetMatchPolicy): Self = this.set("matchPolicyMine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchPolicyMine: Self = this.set("matchPolicyMine", js.undefined)
+    @scala.inline
+    def setMetadata(value: Metadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMetadataEffective(value: Metadata): Self = this.set("metadataEffective", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataEffective: Self = this.set("metadataEffective", js.undefined)
+    @scala.inline
+    def setMetadataMine(value: Metadata): Self = this.set("metadataMine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataMine: Self = this.set("metadataMine", js.undefined)
+    @scala.inline
+    def setOwnership(value: RightsOwnership): Self = this.set("ownership", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnership: Self = this.set("ownership", js.undefined)
+    @scala.inline
+    def setOwnershipConflicts(value: OwnershipConflicts): Self = this.set("ownershipConflicts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnershipConflicts: Self = this.set("ownershipConflicts", js.undefined)
+    @scala.inline
+    def setOwnershipEffective(value: RightsOwnership): Self = this.set("ownershipEffective", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnershipEffective: Self = this.set("ownershipEffective", js.undefined)
+    @scala.inline
+    def setOwnershipMine(value: RightsOwnership): Self = this.set("ownershipMine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnershipMine: Self = this.set("ownershipMine", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTimeCreated(value: String): Self = this.set("timeCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeCreated: Self = this.set("timeCreated", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

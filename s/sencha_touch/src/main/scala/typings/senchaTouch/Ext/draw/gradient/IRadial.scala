@@ -1,93 +1,75 @@
 package typings.senchaTouch.Ext.draw.gradient
 
-import typings.senchaTouch.Ext.Array
-import typings.senchaTouch.Ext.IClass
-import typings.senchaTouch.Ext.draw.engine.ISvgContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IRadial extends IGradient {
   /** [Config Option] (Object) */
-  var end: js.UndefOr[js.Any] = js.undefined
+  var end: js.UndefOr[js.Any] = js.native
   /** [Method] Returns the value of end
     * @returns Object
     */
-  var getEnd: js.UndefOr[js.Function0[_]] = js.undefined
+  var getEnd: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of start
     * @returns Object
     */
-  var getStart: js.UndefOr[js.Function0[_]] = js.undefined
+  var getStart: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Sets the value of end
     * @param end Object The new value.
     */
-  var setEnd: js.UndefOr[js.Function1[/* end */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setEnd: js.UndefOr[js.Function1[/* end */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of start
     * @param start Object The new value.
     */
-  var setStart: js.UndefOr[js.Function1[/* start */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStart: js.UndefOr[js.Function1[/* start */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Config Option] (Object) */
-  var start: js.UndefOr[js.Any] = js.undefined
+  var start: js.UndefOr[js.Any] = js.native
 }
 
 object IRadial {
   @scala.inline
-  def apply(
-    Defines: js.Any = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    end: js.Any = null,
-    extend: String = null,
-    generateGradient: (/* ctx */ js.UndefOr[ISvgContext], /* bbox */ js.UndefOr[js.Any]) => _ = null,
-    getEnd: () => _ = null,
-    getId: () => String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getStart: () => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    mixins: js.Any = null,
-    platformConfig: js.Any = null,
-    self: IClass = null,
-    setEnd: /* end */ js.UndefOr[js.Any] => Unit = null,
-    setStart: /* start */ js.UndefOr[js.Any] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    start: js.Any = null,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IRadial = {
+  def apply(): IRadial = {
     val __obj = js.Dynamic.literal()
-    if (Defines != null) __obj.updateDynamic("Defines")(Defines.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (generateGradient != null) __obj.updateDynamic("generateGradient")(js.Any.fromFunction2(generateGradient))
-    if (getEnd != null) __obj.updateDynamic("getEnd")(js.Any.fromFunction0(getEnd))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getStart != null) __obj.updateDynamic("getStart")(js.Any.fromFunction0(getStart))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setEnd != null) __obj.updateDynamic("setEnd")(js.Any.fromFunction1(setEnd))
-    if (setStart != null) __obj.updateDynamic("setStart")(js.Any.fromFunction1(setStart))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRadial]
   }
+  @scala.inline
+  implicit class IRadialOps[Self <: IRadial] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnd(value: js.Any): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setGetEnd(value: () => _): Self = this.set("getEnd", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetEnd: Self = this.set("getEnd", js.undefined)
+    @scala.inline
+    def setGetStart(value: () => _): Self = this.set("getStart", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetStart: Self = this.set("getStart", js.undefined)
+    @scala.inline
+    def setSetEnd(value: /* end */ js.UndefOr[js.Any] => Unit): Self = this.set("setEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetEnd: Self = this.set("setEnd", js.undefined)
+    @scala.inline
+    def setSetStart(value: /* start */ js.UndefOr[js.Any] => Unit): Self = this.set("setStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetStart: Self = this.set("setStart", js.undefined)
+    @scala.inline
+    def setStart(value: js.Any): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

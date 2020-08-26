@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object checkboxMod extends js.Object {
   @js.native
   class Checkbox () extends ComponentInterface {
-    var buttonEl: js.UndefOr[js.Any] = js.native
+    var buttonEl: js.Any = js.native
     /**
       * If `true`, the checkbox is selected.
       */

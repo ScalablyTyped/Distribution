@@ -99,42 +99,101 @@ object GetDomainDetailResponse {
     DomainName: DomainName,
     Nameservers: NameserverList,
     RegistrantContact: ContactDetail,
-    TechContact: ContactDetail,
-    AbuseContactEmail: Email = null,
-    AbuseContactPhone: ContactNumber = null,
-    AdminPrivacy: js.UndefOr[Boolean] = js.undefined,
-    AutoRenew: js.UndefOr[Boolean] = js.undefined,
-    CreationDate: Timestamp = null,
-    DnsSec: DNSSec = null,
-    ExpirationDate: Timestamp = null,
-    RegistrantPrivacy: js.UndefOr[Boolean] = js.undefined,
-    RegistrarName: RegistrarName = null,
-    RegistrarUrl: RegistrarUrl = null,
-    RegistryDomainId: RegistryDomainId = null,
-    Reseller: Reseller = null,
-    StatusList: DomainStatusList = null,
-    TechPrivacy: js.UndefOr[Boolean] = js.undefined,
-    UpdatedDate: Timestamp = null,
-    WhoIsServer: RegistrarWhoIsServer = null
+    TechContact: ContactDetail
   ): GetDomainDetailResponse = {
     val __obj = js.Dynamic.literal(AdminContact = AdminContact.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], Nameservers = Nameservers.asInstanceOf[js.Any], RegistrantContact = RegistrantContact.asInstanceOf[js.Any], TechContact = TechContact.asInstanceOf[js.Any])
-    if (AbuseContactEmail != null) __obj.updateDynamic("AbuseContactEmail")(AbuseContactEmail.asInstanceOf[js.Any])
-    if (AbuseContactPhone != null) __obj.updateDynamic("AbuseContactPhone")(AbuseContactPhone.asInstanceOf[js.Any])
-    if (!js.isUndefined(AdminPrivacy)) __obj.updateDynamic("AdminPrivacy")(AdminPrivacy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoRenew)) __obj.updateDynamic("AutoRenew")(AutoRenew.get.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (DnsSec != null) __obj.updateDynamic("DnsSec")(DnsSec.asInstanceOf[js.Any])
-    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(RegistrantPrivacy)) __obj.updateDynamic("RegistrantPrivacy")(RegistrantPrivacy.get.asInstanceOf[js.Any])
-    if (RegistrarName != null) __obj.updateDynamic("RegistrarName")(RegistrarName.asInstanceOf[js.Any])
-    if (RegistrarUrl != null) __obj.updateDynamic("RegistrarUrl")(RegistrarUrl.asInstanceOf[js.Any])
-    if (RegistryDomainId != null) __obj.updateDynamic("RegistryDomainId")(RegistryDomainId.asInstanceOf[js.Any])
-    if (Reseller != null) __obj.updateDynamic("Reseller")(Reseller.asInstanceOf[js.Any])
-    if (StatusList != null) __obj.updateDynamic("StatusList")(StatusList.asInstanceOf[js.Any])
-    if (!js.isUndefined(TechPrivacy)) __obj.updateDynamic("TechPrivacy")(TechPrivacy.get.asInstanceOf[js.Any])
-    if (UpdatedDate != null) __obj.updateDynamic("UpdatedDate")(UpdatedDate.asInstanceOf[js.Any])
-    if (WhoIsServer != null) __obj.updateDynamic("WhoIsServer")(WhoIsServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainDetailResponse]
   }
+  @scala.inline
+  implicit class GetDomainDetailResponseOps[Self <: GetDomainDetailResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminContact(value: ContactDetail): Self = this.set("AdminContact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNameserversVarargs(value: Nameserver*): Self = this.set("Nameservers", js.Array(value :_*))
+    @scala.inline
+    def setNameservers(value: NameserverList): Self = this.set("Nameservers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegistrantContact(value: ContactDetail): Self = this.set("RegistrantContact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTechContact(value: ContactDetail): Self = this.set("TechContact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbuseContactEmail(value: Email): Self = this.set("AbuseContactEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbuseContactEmail: Self = this.set("AbuseContactEmail", js.undefined)
+    @scala.inline
+    def setAbuseContactPhone(value: ContactNumber): Self = this.set("AbuseContactPhone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbuseContactPhone: Self = this.set("AbuseContactPhone", js.undefined)
+    @scala.inline
+    def setAdminPrivacy(value: Boolean): Self = this.set("AdminPrivacy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminPrivacy: Self = this.set("AdminPrivacy", js.undefined)
+    @scala.inline
+    def setAutoRenew(value: Boolean): Self = this.set("AutoRenew", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRenew: Self = this.set("AutoRenew", js.undefined)
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setDnsSec(value: DNSSec): Self = this.set("DnsSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsSec: Self = this.set("DnsSec", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: Timestamp): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    @scala.inline
+    def setRegistrantPrivacy(value: Boolean): Self = this.set("RegistrantPrivacy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrantPrivacy: Self = this.set("RegistrantPrivacy", js.undefined)
+    @scala.inline
+    def setRegistrarName(value: RegistrarName): Self = this.set("RegistrarName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrarName: Self = this.set("RegistrarName", js.undefined)
+    @scala.inline
+    def setRegistrarUrl(value: RegistrarUrl): Self = this.set("RegistrarUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrarUrl: Self = this.set("RegistrarUrl", js.undefined)
+    @scala.inline
+    def setRegistryDomainId(value: RegistryDomainId): Self = this.set("RegistryDomainId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryDomainId: Self = this.set("RegistryDomainId", js.undefined)
+    @scala.inline
+    def setReseller(value: Reseller): Self = this.set("Reseller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReseller: Self = this.set("Reseller", js.undefined)
+    @scala.inline
+    def setStatusListVarargs(value: DomainStatus*): Self = this.set("StatusList", js.Array(value :_*))
+    @scala.inline
+    def setStatusList(value: DomainStatusList): Self = this.set("StatusList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusList: Self = this.set("StatusList", js.undefined)
+    @scala.inline
+    def setTechPrivacy(value: Boolean): Self = this.set("TechPrivacy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTechPrivacy: Self = this.set("TechPrivacy", js.undefined)
+    @scala.inline
+    def setUpdatedDate(value: Timestamp): Self = this.set("UpdatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedDate: Self = this.set("UpdatedDate", js.undefined)
+    @scala.inline
+    def setWhoIsServer(value: RegistrarWhoIsServer): Self = this.set("WhoIsServer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoIsServer: Self = this.set("WhoIsServer", js.undefined)
+  }
+  
 }
 

@@ -44,8 +44,8 @@ class EnumerationType protected () extends Type {
   @JSName("containerAsCodeAction")
   def containerAsCodeAction_MEnumerationType: CodeAction = js.native
   def enumeration: IEnumeration = js.native
-  def enumeration(newValue: IEnumeration): js.Any = js.native
   def enumerationQualifiedName: String = js.native
+  def enumeration_=(newValue: IEnumeration): Unit = js.native
 }
 
 /* static members */

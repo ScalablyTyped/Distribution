@@ -12,10 +12,6 @@ object clientErrorMod extends js.Object {
   @js.native
   class ClientError protected () extends Error {
     def this(result: GraphQLResponse) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var result: GraphQLResponse = js.native
   }
   

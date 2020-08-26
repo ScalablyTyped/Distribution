@@ -7,40 +7,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.amapJsApiLineSearch.AMap.LineSearch.LineInfo because Already inherited */ trait LineInfoExt extends LineInfoBase {
+- typings.amapJsApiLineSearch.AMap.LineSearch.LineInfo because Already inherited */ @js.native
+trait LineInfoExt extends LineInfoBase {
   /**
     * 起步票价，单位：元
     */
-  var basic_price: String
+  var basic_price: String = js.native
    // is string actually
   /**
     * 全程距离，单位：千米
     */
-  var bounds: Bounds
+  var bounds: Bounds = js.native
   /**
     * 所属公交公司
     */
-  var company: String
+  var company: String = js.native
   /**
     * 全程距离，单位：千米
     */
-  var distance: String
+  var distance: String = js.native
   /**
     * 末班车时间
     */
-  var etime: String
+  var etime: String = js.native
   /**
     * 首班车时间
     */
-  var stime: String
+  var stime: String = js.native
   /**
     * 全程票价，单位：元
     */
-  var total_price: String
+  var total_price: String = js.native
   /**
     * 途径站，包括首发站和终点站
     */
-  var via_stops: js.Array[BusStop]
+  var via_stops: js.Array[BusStop] = js.native
 }
 
 object LineInfoExt {
@@ -66,5 +67,36 @@ object LineInfoExt {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineInfoExt]
   }
+  @scala.inline
+  implicit class LineInfoExtOps[Self <: LineInfoExt] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasic_price(value: String): Self = this.set("basic_price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBounds(value: Bounds): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompany(value: String): Self = this.set("company", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDistance(value: String): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEtime(value: String): Self = this.set("etime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStime(value: String): Self = this.set("stime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTotal_price(value: String): Self = this.set("total_price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVia_stopsVarargs(value: BusStop*): Self = this.set("via_stops", js.Array(value :_*))
+    @scala.inline
+    def setVia_stops(value: js.Array[BusStop]): Self = this.set("via_stops", value.asInstanceOf[js.Any])
+  }
+  
 }
 

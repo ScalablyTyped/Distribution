@@ -45,6 +45,7 @@ object PluginMgr extends js.Object {
     * @returns Ext.Component The newly instantiated Plugin.
     */
   def create(): IComponent = js.native
+  def create(config: js.UndefOr[scala.Nothing], defaultType: js.Any): IComponent = js.native
   def create(config: js.Any): IComponent = js.native
   def create(config: js.Any, defaultType: js.Any): IComponent = js.native
   /** [Method] Executes the specified function once for each item in the collection
@@ -52,6 +53,7 @@ object PluginMgr extends js.Object {
     * @param scope Object The scope to execute in. Defaults to this.
     */
   def each(): Unit = js.native
+  def each(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def each(fn: js.Any): Unit = js.native
   def each(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Returns all plugins registered with the given type
@@ -60,6 +62,7 @@ object PluginMgr extends js.Object {
     * @returns Ext.AbstractPlugin[] All matching plugins
     */
   def findByType(): typings.extjs.Ext.Array = js.native
+  def findByType(`type`: js.UndefOr[scala.Nothing], defaultsOnly: Boolean): typings.extjs.Ext.Array = js.native
   def findByType(`type`: java.lang.String): typings.extjs.Ext.Array = js.native
   def findByType(`type`: java.lang.String, defaultsOnly: Boolean): typings.extjs.Ext.Array = js.native
   /** [Method] Returns an item by id
@@ -96,7 +99,11 @@ object PluginMgr extends js.Object {
     * @param scope Object The scope (this reference) in which the callback is executed. Defaults to the item.
     */
   def onAvailable(): Unit = js.native
+  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def onAvailable(id: java.lang.String): Unit = js.native
+  def onAvailable(id: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def onAvailable(id: java.lang.String, fn: js.Any): Unit = js.native
   def onAvailable(id: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Registers an item to be managed
@@ -109,6 +116,7 @@ object PluginMgr extends js.Object {
     * @param cls Function The new instance class.
     */
   def registerType(): Unit = js.native
+  def registerType(`type`: js.UndefOr[scala.Nothing], cls: js.Any): Unit = js.native
   def registerType(`type`: java.lang.String): Unit = js.native
   def registerType(`type`: java.lang.String, cls: js.Any): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

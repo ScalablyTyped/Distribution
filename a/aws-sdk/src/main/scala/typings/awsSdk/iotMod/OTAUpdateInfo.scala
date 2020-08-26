@@ -74,42 +74,92 @@ trait OTAUpdateInfo extends js.Object {
 
 object OTAUpdateInfo {
   @scala.inline
-  def apply(
-    additionalParameters: AdditionalParameterMap = null,
-    awsIotJobArn: AwsIotJobArn = null,
-    awsIotJobId: AwsIotJobId = null,
-    awsJobExecutionsRolloutConfig: AwsJobExecutionsRolloutConfig = null,
-    awsJobPresignedUrlConfig: AwsJobPresignedUrlConfig = null,
-    creationDate: DateType = null,
-    description: OTAUpdateDescription = null,
-    errorInfo: ErrorInfo = null,
-    lastModifiedDate: DateType = null,
-    otaUpdateArn: OTAUpdateArn = null,
-    otaUpdateFiles: OTAUpdateFiles = null,
-    otaUpdateId: OTAUpdateId = null,
-    otaUpdateStatus: OTAUpdateStatus = null,
-    protocols: Protocols = null,
-    targetSelection: TargetSelection = null,
-    targets: Targets = null
-  ): OTAUpdateInfo = {
+  def apply(): OTAUpdateInfo = {
     val __obj = js.Dynamic.literal()
-    if (additionalParameters != null) __obj.updateDynamic("additionalParameters")(additionalParameters.asInstanceOf[js.Any])
-    if (awsIotJobArn != null) __obj.updateDynamic("awsIotJobArn")(awsIotJobArn.asInstanceOf[js.Any])
-    if (awsIotJobId != null) __obj.updateDynamic("awsIotJobId")(awsIotJobId.asInstanceOf[js.Any])
-    if (awsJobExecutionsRolloutConfig != null) __obj.updateDynamic("awsJobExecutionsRolloutConfig")(awsJobExecutionsRolloutConfig.asInstanceOf[js.Any])
-    if (awsJobPresignedUrlConfig != null) __obj.updateDynamic("awsJobPresignedUrlConfig")(awsJobPresignedUrlConfig.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (errorInfo != null) __obj.updateDynamic("errorInfo")(errorInfo.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (otaUpdateArn != null) __obj.updateDynamic("otaUpdateArn")(otaUpdateArn.asInstanceOf[js.Any])
-    if (otaUpdateFiles != null) __obj.updateDynamic("otaUpdateFiles")(otaUpdateFiles.asInstanceOf[js.Any])
-    if (otaUpdateId != null) __obj.updateDynamic("otaUpdateId")(otaUpdateId.asInstanceOf[js.Any])
-    if (otaUpdateStatus != null) __obj.updateDynamic("otaUpdateStatus")(otaUpdateStatus.asInstanceOf[js.Any])
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (targetSelection != null) __obj.updateDynamic("targetSelection")(targetSelection.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[OTAUpdateInfo]
   }
+  @scala.inline
+  implicit class OTAUpdateInfoOps[Self <: OTAUpdateInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalParameters(value: AdditionalParameterMap): Self = this.set("additionalParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalParameters: Self = this.set("additionalParameters", js.undefined)
+    @scala.inline
+    def setAwsIotJobArn(value: AwsIotJobArn): Self = this.set("awsIotJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsIotJobArn: Self = this.set("awsIotJobArn", js.undefined)
+    @scala.inline
+    def setAwsIotJobId(value: AwsIotJobId): Self = this.set("awsIotJobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsIotJobId: Self = this.set("awsIotJobId", js.undefined)
+    @scala.inline
+    def setAwsJobExecutionsRolloutConfig(value: AwsJobExecutionsRolloutConfig): Self = this.set("awsJobExecutionsRolloutConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsJobExecutionsRolloutConfig: Self = this.set("awsJobExecutionsRolloutConfig", js.undefined)
+    @scala.inline
+    def setAwsJobPresignedUrlConfig(value: AwsJobPresignedUrlConfig): Self = this.set("awsJobPresignedUrlConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsJobPresignedUrlConfig: Self = this.set("awsJobPresignedUrlConfig", js.undefined)
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setDescription(value: OTAUpdateDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setErrorInfo(value: ErrorInfo): Self = this.set("errorInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorInfo: Self = this.set("errorInfo", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateType): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setOtaUpdateArn(value: OTAUpdateArn): Self = this.set("otaUpdateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtaUpdateArn: Self = this.set("otaUpdateArn", js.undefined)
+    @scala.inline
+    def setOtaUpdateFilesVarargs(value: OTAUpdateFile*): Self = this.set("otaUpdateFiles", js.Array(value :_*))
+    @scala.inline
+    def setOtaUpdateFiles(value: OTAUpdateFiles): Self = this.set("otaUpdateFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtaUpdateFiles: Self = this.set("otaUpdateFiles", js.undefined)
+    @scala.inline
+    def setOtaUpdateId(value: OTAUpdateId): Self = this.set("otaUpdateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtaUpdateId: Self = this.set("otaUpdateId", js.undefined)
+    @scala.inline
+    def setOtaUpdateStatus(value: OTAUpdateStatus): Self = this.set("otaUpdateStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtaUpdateStatus: Self = this.set("otaUpdateStatus", js.undefined)
+    @scala.inline
+    def setProtocolsVarargs(value: Protocol*): Self = this.set("protocols", js.Array(value :_*))
+    @scala.inline
+    def setProtocols(value: Protocols): Self = this.set("protocols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocols: Self = this.set("protocols", js.undefined)
+    @scala.inline
+    def setTargetSelection(value: TargetSelection): Self = this.set("targetSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetSelection: Self = this.set("targetSelection", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: Target*): Self = this.set("targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Targets): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("targets", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ URL friendly JSON-like formatting and parsing
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 238311 |
+| # downloads        | 239089 |
 | # stars            | 0 |
 
 ## Links

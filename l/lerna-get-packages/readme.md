@@ -10,9 +10,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | lerna-get-packages |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3036 |
+| # downloads        | 2991 |
 | # stars            | 0 |
 
 ## Links

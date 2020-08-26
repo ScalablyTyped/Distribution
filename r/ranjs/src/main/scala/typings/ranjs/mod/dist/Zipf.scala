@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Zipf ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Zipf] {
   def this(s: Double) = this()
+  def this(s: js.UndefOr[scala.Nothing], N: Double) = this()
   def this(s: Double, N: Double) = this()
 }
 

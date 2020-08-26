@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pulumi/cloud" : "0.18.2"
+      "@pulumi/cloud" : "0.21.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@pulumi/cloud" : "0.18.2"
+      "@pulumi/cloud" : "0.21.0"
     }
   ],
   "compile-devDependencies" : [

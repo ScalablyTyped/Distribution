@@ -89,6 +89,7 @@ trait PivotField extends js.Object {
   def AddPageItem(Item: String, ClearList: Boolean): Unit = js.native
   def AutoShow(Type: Double, Range: Double, Count: Double, Field: String): Unit = js.native
   def AutoSort(Order: Double, Field: String): Unit = js.native
+  def AutoSort(Order: Double, Field: String, PivotLine: js.UndefOr[scala.Nothing], CustomSubtotal: js.Any): Unit = js.native
   def AutoSort(Order: Double, Field: String, PivotLine: js.Any): Unit = js.native
   def AutoSort(Order: Double, Field: String, PivotLine: js.Any, CustomSubtotal: js.Any): Unit = js.native
   def CalculatedItems(): typings.activexExcel.Excel.CalculatedItems = js.native

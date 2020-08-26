@@ -4,149 +4,206 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait YAxisScrollbarOptions extends js.Object {
   /**
     * (Highstock) The background color of the scrollbar itself.
     */
-  var barBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var barBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) The color of the scrollbar's border.
     */
-  var barBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var barBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) The border rounding radius of the bar.
     */
-  var barBorderRadius: js.UndefOr[Double] = js.undefined
+  var barBorderRadius: js.UndefOr[Double] = js.native
   /**
     * (Highstock) The width of the bar's border.
     */
-  var barBorderWidth: js.UndefOr[Double] = js.undefined
+  var barBorderWidth: js.UndefOr[Double] = js.native
   /**
     * (Highstock) The color of the small arrow inside the scrollbar buttons.
     */
-  var buttonArrowColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var buttonArrowColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) The color of scrollbar buttons.
     */
-  var buttonBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var buttonBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) The color of the border of the scrollbar buttons.
     */
-  var buttonBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var buttonBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) The corner radius of the scrollbar buttons.
     */
-  var buttonBorderRadius: js.UndefOr[Double] = js.undefined
+  var buttonBorderRadius: js.UndefOr[Double] = js.native
   /**
     * (Highstock) The border width of the scrollbar buttons.
     */
-  var buttonBorderWidth: js.UndefOr[Double] = js.undefined
+  var buttonBorderWidth: js.UndefOr[Double] = js.native
   /**
     * (Highstock) Enable the scrollbar on the Y axis.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Whether to redraw the main chart as the scrollbar or the
     * navigator zoomed window is moved. Defaults to `true` for modern browsers
     * and `false` for legacy IE browsers as well as mobile devices.
     */
-  var liveRedraw: js.UndefOr[Boolean] = js.undefined
+  var liveRedraw: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Pixel margin between the scrollbar and the axis elements.
     */
-  var margin: js.UndefOr[Double] = js.undefined
+  var margin: js.UndefOr[Double] = js.native
   /**
     * (Highstock) The minimum width of the scrollbar.
     */
-  var minWidth: js.UndefOr[Double] = js.undefined
+  var minWidth: js.UndefOr[Double] = js.native
   /**
     * (Highstock) The color of the small rifles in the middle of the scrollbar.
     */
-  var rifleColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var rifleColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) Whether to show the scrollbar when it is fully zoomed out at
     * max range. Setting it to `false` on the Y axis makes the scrollbar stay
     * hidden until the user zooms in, like common in browsers.
     */
-  var showFull: js.UndefOr[Boolean] = js.undefined
+  var showFull: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) The width of a vertical scrollbar or height of a horizontal
     * scrollbar. Defaults to 20 on touch devices.
     */
-  var size: js.UndefOr[Double] = js.undefined
-  var step: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.native
   /**
     * (Highstock) The color of the track background.
     */
-  var trackBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var trackBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) The color of the border of the scrollbar track.
     */
-  var trackBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var trackBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) The corner radius of the border of the scrollbar track.
     */
-  var trackBorderRadius: js.UndefOr[Double] = js.undefined
+  var trackBorderRadius: js.UndefOr[Double] = js.native
   /**
     * (Highstock) The width of the border of the scrollbar track.
     */
-  var trackBorderWidth: js.UndefOr[Double] = js.undefined
+  var trackBorderWidth: js.UndefOr[Double] = js.native
   /**
     * (Highstock) Z index of the scrollbar elements.
     */
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object YAxisScrollbarOptions {
   @scala.inline
-  def apply(
-    barBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    barBorderColor: ColorString | GradientColorObject | PatternObject = null,
-    barBorderRadius: js.UndefOr[Double] = js.undefined,
-    barBorderWidth: js.UndefOr[Double] = js.undefined,
-    buttonArrowColor: ColorString | GradientColorObject | PatternObject = null,
-    buttonBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    buttonBorderColor: ColorString | GradientColorObject | PatternObject = null,
-    buttonBorderRadius: js.UndefOr[Double] = js.undefined,
-    buttonBorderWidth: js.UndefOr[Double] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    liveRedraw: js.UndefOr[Boolean] = js.undefined,
-    margin: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    rifleColor: ColorString | GradientColorObject | PatternObject = null,
-    showFull: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    step: js.UndefOr[Double] = js.undefined,
-    trackBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    trackBorderColor: ColorString | GradientColorObject | PatternObject = null,
-    trackBorderRadius: js.UndefOr[Double] = js.undefined,
-    trackBorderWidth: js.UndefOr[Double] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): YAxisScrollbarOptions = {
+  def apply(): YAxisScrollbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (barBackgroundColor != null) __obj.updateDynamic("barBackgroundColor")(barBackgroundColor.asInstanceOf[js.Any])
-    if (barBorderColor != null) __obj.updateDynamic("barBorderColor")(barBorderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(barBorderRadius)) __obj.updateDynamic("barBorderRadius")(barBorderRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(barBorderWidth)) __obj.updateDynamic("barBorderWidth")(barBorderWidth.get.asInstanceOf[js.Any])
-    if (buttonArrowColor != null) __obj.updateDynamic("buttonArrowColor")(buttonArrowColor.asInstanceOf[js.Any])
-    if (buttonBackgroundColor != null) __obj.updateDynamic("buttonBackgroundColor")(buttonBackgroundColor.asInstanceOf[js.Any])
-    if (buttonBorderColor != null) __obj.updateDynamic("buttonBorderColor")(buttonBorderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonBorderRadius)) __obj.updateDynamic("buttonBorderRadius")(buttonBorderRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonBorderWidth)) __obj.updateDynamic("buttonBorderWidth")(buttonBorderWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveRedraw)) __obj.updateDynamic("liveRedraw")(liveRedraw.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (rifleColor != null) __obj.updateDynamic("rifleColor")(rifleColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFull)) __obj.updateDynamic("showFull")(showFull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (trackBackgroundColor != null) __obj.updateDynamic("trackBackgroundColor")(trackBackgroundColor.asInstanceOf[js.Any])
-    if (trackBorderColor != null) __obj.updateDynamic("trackBorderColor")(trackBorderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackBorderRadius)) __obj.updateDynamic("trackBorderRadius")(trackBorderRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackBorderWidth)) __obj.updateDynamic("trackBorderWidth")(trackBorderWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisScrollbarOptions]
   }
+  @scala.inline
+  implicit class YAxisScrollbarOptionsOps[Self <: YAxisScrollbarOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBarBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("barBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarBackgroundColor: Self = this.set("barBackgroundColor", js.undefined)
+    @scala.inline
+    def setBarBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("barBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarBorderColor: Self = this.set("barBorderColor", js.undefined)
+    @scala.inline
+    def setBarBorderRadius(value: Double): Self = this.set("barBorderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarBorderRadius: Self = this.set("barBorderRadius", js.undefined)
+    @scala.inline
+    def setBarBorderWidth(value: Double): Self = this.set("barBorderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarBorderWidth: Self = this.set("barBorderWidth", js.undefined)
+    @scala.inline
+    def setButtonArrowColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("buttonArrowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonArrowColor: Self = this.set("buttonArrowColor", js.undefined)
+    @scala.inline
+    def setButtonBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("buttonBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonBackgroundColor: Self = this.set("buttonBackgroundColor", js.undefined)
+    @scala.inline
+    def setButtonBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("buttonBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonBorderColor: Self = this.set("buttonBorderColor", js.undefined)
+    @scala.inline
+    def setButtonBorderRadius(value: Double): Self = this.set("buttonBorderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonBorderRadius: Self = this.set("buttonBorderRadius", js.undefined)
+    @scala.inline
+    def setButtonBorderWidth(value: Double): Self = this.set("buttonBorderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonBorderWidth: Self = this.set("buttonBorderWidth", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setLiveRedraw(value: Boolean): Self = this.set("liveRedraw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLiveRedraw: Self = this.set("liveRedraw", js.undefined)
+    @scala.inline
+    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setRifleColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("rifleColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRifleColor: Self = this.set("rifleColor", js.undefined)
+    @scala.inline
+    def setShowFull(value: Boolean): Self = this.set("showFull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFull: Self = this.set("showFull", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setTrackBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("trackBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackBackgroundColor: Self = this.set("trackBackgroundColor", js.undefined)
+    @scala.inline
+    def setTrackBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("trackBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackBorderColor: Self = this.set("trackBorderColor", js.undefined)
+    @scala.inline
+    def setTrackBorderRadius(value: Double): Self = this.set("trackBorderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackBorderRadius: Self = this.set("trackBorderRadius", js.undefined)
+    @scala.inline
+    def setTrackBorderWidth(value: Double): Self = this.set("trackBorderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackBorderWidth: Self = this.set("trackBorderWidth", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

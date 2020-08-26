@@ -18,14 +18,30 @@ trait WebhookAuthConfiguration extends js.Object {
 
 object WebhookAuthConfiguration {
   @scala.inline
-  def apply(
-    AllowedIPRange: WebhookAuthConfigurationAllowedIPRange = null,
-    SecretToken: WebhookAuthConfigurationSecretToken = null
-  ): WebhookAuthConfiguration = {
+  def apply(): WebhookAuthConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (AllowedIPRange != null) __obj.updateDynamic("AllowedIPRange")(AllowedIPRange.asInstanceOf[js.Any])
-    if (SecretToken != null) __obj.updateDynamic("SecretToken")(SecretToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookAuthConfiguration]
   }
+  @scala.inline
+  implicit class WebhookAuthConfigurationOps[Self <: WebhookAuthConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedIPRange(value: WebhookAuthConfigurationAllowedIPRange): Self = this.set("AllowedIPRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedIPRange: Self = this.set("AllowedIPRange", js.undefined)
+    @scala.inline
+    def setSecretToken(value: WebhookAuthConfigurationSecretToken): Self = this.set("SecretToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretToken: Self = this.set("SecretToken", js.undefined)
+  }
+  
 }
 

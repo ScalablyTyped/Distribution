@@ -21,6 +21,11 @@ trait Queryable extends EventEmitter {
     * with ConnectionPool and Transaction. See Adapter.createQuery for more details.
     */
   def query(text: String): Query = js.native
+  def query(
+    text: String,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Error, /* results */ ResultSet, Unit]
+  ): Query = js.native
   def query(text: String, params: js.Array[_]): Query = js.native
   def query(
     text: String,

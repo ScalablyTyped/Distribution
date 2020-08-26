@@ -19,32 +19,6 @@ class PerspectiveTransform protected ()
     a23: Double,
     a33: Double
   ) = this()
-  /* CompleteClass */
-  override var a11: Double = js.native
-  /* CompleteClass */
-  override var a12: Double = js.native
-  /* CompleteClass */
-  override var a13: Double = js.native
-  /* CompleteClass */
-  override var a21: Double = js.native
-  /* CompleteClass */
-  override var a22: Double = js.native
-  /* CompleteClass */
-  override var a23: Double = js.native
-  /* CompleteClass */
-  override var a31: Double = js.native
-  /* CompleteClass */
-  override var a32: Double = js.native
-  /* CompleteClass */
-  override var a33: Double = js.native
-  /* CompleteClass */
-  override def buildAdjoint(): typings.jsqrcode.PerspectiveTransform = js.native
-  /* CompleteClass */
-  override def times(other: typings.jsqrcode.PerspectiveTransform): typings.jsqrcode.PerspectiveTransform = js.native
-  /* CompleteClass */
-  override def transformPoints1(points: js.Array[Double]): Unit = js.native
-  /* CompleteClass */
-  override def transformPoints2(xValues: js.Array[Double], yValues: js.Array[Double]): Unit = js.native
 }
 
 /* static members */

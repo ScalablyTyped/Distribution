@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait FactoryFunction[Obj] extends js.Object {
-  def apply(): StampObjectType[Obj] = js.native
+  def apply(options: js.UndefOr[scala.Nothing], args: js.Any*): StampObjectType[Obj] = js.native
   def apply(options: PropertyMap, args: js.Any*): StampObjectType[Obj] = js.native
 }
 

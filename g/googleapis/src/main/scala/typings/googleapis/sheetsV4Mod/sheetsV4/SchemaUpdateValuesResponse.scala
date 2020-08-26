@@ -38,22 +38,46 @@ trait SchemaUpdateValuesResponse extends js.Object {
 
 object SchemaUpdateValuesResponse {
   @scala.inline
-  def apply(
-    spreadsheetId: String = null,
-    updatedCells: js.UndefOr[Double] = js.undefined,
-    updatedColumns: js.UndefOr[Double] = js.undefined,
-    updatedData: SchemaValueRange = null,
-    updatedRange: String = null,
-    updatedRows: js.UndefOr[Double] = js.undefined
-  ): SchemaUpdateValuesResponse = {
+  def apply(): SchemaUpdateValuesResponse = {
     val __obj = js.Dynamic.literal()
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatedCells)) __obj.updateDynamic("updatedCells")(updatedCells.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatedColumns)) __obj.updateDynamic("updatedColumns")(updatedColumns.get.asInstanceOf[js.Any])
-    if (updatedData != null) __obj.updateDynamic("updatedData")(updatedData.asInstanceOf[js.Any])
-    if (updatedRange != null) __obj.updateDynamic("updatedRange")(updatedRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatedRows)) __obj.updateDynamic("updatedRows")(updatedRows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateValuesResponse]
   }
+  @scala.inline
+  implicit class SchemaUpdateValuesResponseOps[Self <: SchemaUpdateValuesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+    @scala.inline
+    def setUpdatedCells(value: Double): Self = this.set("updatedCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedCells: Self = this.set("updatedCells", js.undefined)
+    @scala.inline
+    def setUpdatedColumns(value: Double): Self = this.set("updatedColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedColumns: Self = this.set("updatedColumns", js.undefined)
+    @scala.inline
+    def setUpdatedData(value: SchemaValueRange): Self = this.set("updatedData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedData: Self = this.set("updatedData", js.undefined)
+    @scala.inline
+    def setUpdatedRange(value: String): Self = this.set("updatedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedRange: Self = this.set("updatedRange", js.undefined)
+    @scala.inline
+    def setUpdatedRows(value: Double): Self = this.set("updatedRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedRows: Self = this.set("updatedRows", js.undefined)
+  }
+  
 }
 

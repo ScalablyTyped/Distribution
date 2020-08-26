@@ -41,22 +41,48 @@ trait ManagedUploadOptions extends js.Object {
 
 object ManagedUploadOptions {
   @scala.inline
-  def apply(
-    leavePartsOnError: js.UndefOr[Boolean] = js.undefined,
-    params: PutObjectRequest = null,
-    partSize: js.UndefOr[Double] = js.undefined,
-    queueSize: js.UndefOr[Double] = js.undefined,
-    service: typings.awsSdk.s3Mod.^ = null,
-    tags: js.Array[Tag] = null
-  ): ManagedUploadOptions = {
+  def apply(): ManagedUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leavePartsOnError)) __obj.updateDynamic("leavePartsOnError")(leavePartsOnError.get.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(partSize)) __obj.updateDynamic("partSize")(partSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(queueSize)) __obj.updateDynamic("queueSize")(queueSize.get.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedUploadOptions]
   }
+  @scala.inline
+  implicit class ManagedUploadOptionsOps[Self <: ManagedUploadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLeavePartsOnError(value: Boolean): Self = this.set("leavePartsOnError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeavePartsOnError: Self = this.set("leavePartsOnError", js.undefined)
+    @scala.inline
+    def setParams(value: PutObjectRequest): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setPartSize(value: Double): Self = this.set("partSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartSize: Self = this.set("partSize", js.undefined)
+    @scala.inline
+    def setQueueSize(value: Double): Self = this.set("queueSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueueSize: Self = this.set("queueSize", js.undefined)
+    @scala.inline
+    def setService(value: typings.awsSdk.s3Mod.^): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[Tag]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

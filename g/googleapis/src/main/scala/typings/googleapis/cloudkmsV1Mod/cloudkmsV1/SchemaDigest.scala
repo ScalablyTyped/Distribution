@@ -25,12 +25,34 @@ trait SchemaDigest extends js.Object {
 
 object SchemaDigest {
   @scala.inline
-  def apply(sha256: String = null, sha384: String = null, sha512: String = null): SchemaDigest = {
+  def apply(): SchemaDigest = {
     val __obj = js.Dynamic.literal()
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
-    if (sha384 != null) __obj.updateDynamic("sha384")(sha384.asInstanceOf[js.Any])
-    if (sha512 != null) __obj.updateDynamic("sha512")(sha512.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDigest]
   }
+  @scala.inline
+  implicit class SchemaDigestOps[Self <: SchemaDigest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSha256(value: String): Self = this.set("sha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha256: Self = this.set("sha256", js.undefined)
+    @scala.inline
+    def setSha384(value: String): Self = this.set("sha384", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha384: Self = this.set("sha384", js.undefined)
+    @scala.inline
+    def setSha512(value: String): Self = this.set("sha512", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha512: Self = this.set("sha512", js.undefined)
+  }
+  
 }
 

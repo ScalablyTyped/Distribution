@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
 class ToolBar ()
   extends typings.winjs.WinJS.UI.ToolBar {
   def this(element: HTMLElement) = this()
+  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 

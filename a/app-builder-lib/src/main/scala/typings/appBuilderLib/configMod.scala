@@ -20,6 +20,12 @@ object configMod extends js.Object {
   def getConfig(
     projectDir: String,
     configPath: String,
+    configFromOptions: js.UndefOr[scala.Nothing],
+    packageMetadata: Lazy[StringDictionary[_] | Null]
+  ): js.Promise[Configuration] = js.native
+  def getConfig(
+    projectDir: String,
+    configPath: String,
     configFromOptions: Null,
     packageMetadata: Lazy[StringDictionary[_] | Null]
   ): js.Promise[Configuration] = js.native
@@ -28,6 +34,12 @@ object configMod extends js.Object {
     projectDir: String,
     configPath: String,
     configFromOptions: Configuration,
+    packageMetadata: Lazy[StringDictionary[_] | Null]
+  ): js.Promise[Configuration] = js.native
+  def getConfig(
+    projectDir: String,
+    configPath: Null,
+    configFromOptions: js.UndefOr[scala.Nothing],
     packageMetadata: Lazy[StringDictionary[_] | Null]
   ): js.Promise[Configuration] = js.native
   def getConfig(

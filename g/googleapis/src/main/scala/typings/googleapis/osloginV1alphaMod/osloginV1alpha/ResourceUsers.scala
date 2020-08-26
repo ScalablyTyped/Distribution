@@ -33,6 +33,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def getLoginProfile(): GaxiosPromise[SchemaLoginProfile] = js.native
   def getLoginProfile(callback: BodyResponseCallback[SchemaLoginProfile]): Unit = js.native
+  def getLoginProfile(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLoginProfile] = js.native
   def getLoginProfile(params: ParamsResourceUsersGetloginprofile): GaxiosPromise[SchemaLoginProfile] = js.native
   def getLoginProfile(params: ParamsResourceUsersGetloginprofile, callback: BodyResponseCallback[SchemaLoginProfile]): Unit = js.native
   def getLoginProfile(
@@ -64,6 +65,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def importSshPublicKey(): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
   def importSshPublicKey(callback: BodyResponseCallback[SchemaImportSshPublicKeyResponse]): Unit = js.native
+  def importSshPublicKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
   def importSshPublicKey(params: ParamsResourceUsersImportsshpublickey): GaxiosPromise[SchemaImportSshPublicKeyResponse] = js.native
   def importSshPublicKey(
     params: ParamsResourceUsersImportsshpublickey,

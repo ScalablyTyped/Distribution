@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.removeAt")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.removeAt")
 @js.native
 object removeAt extends js.Object {
   /**

@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TensorBoardCallbackArgs extends js.Object {
   /**
     * The frequency at which loss and metric values are written to logs.
@@ -20,15 +21,31 @@ trait TensorBoardCallbackArgs extends js.Object {
     *
     * Default: 'epoch'.
     */
-  var updateFreq: js.UndefOr[batch | epoch] = js.undefined
+  var updateFreq: js.UndefOr[batch | epoch] = js.native
 }
 
 object TensorBoardCallbackArgs {
   @scala.inline
-  def apply(updateFreq: batch | epoch = null): TensorBoardCallbackArgs = {
+  def apply(): TensorBoardCallbackArgs = {
     val __obj = js.Dynamic.literal()
-    if (updateFreq != null) __obj.updateDynamic("updateFreq")(updateFreq.asInstanceOf[js.Any])
     __obj.asInstanceOf[TensorBoardCallbackArgs]
   }
+  @scala.inline
+  implicit class TensorBoardCallbackArgsOps[Self <: TensorBoardCallbackArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUpdateFreq(value: batch | epoch): Self = this.set("updateFreq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateFreq: Self = this.set("updateFreq", js.undefined)
+  }
+  
 }
 

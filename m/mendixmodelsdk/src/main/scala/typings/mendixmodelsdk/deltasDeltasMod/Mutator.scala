@@ -16,15 +16,13 @@ trait Mutator extends js.Object
 
 object Mutator {
   @scala.inline
-  def IChangeMutator(mutatorType: CHANGE, updateIndex: js.UndefOr[Double] = js.undefined, value: PrimitiveValue = null): Mutator = {
-    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateIndex)) __obj.updateDynamic("updateIndex")(updateIndex.get.asInstanceOf[js.Any])
+  def IChangeMutator(mutatorType: CHANGE): Mutator = {
+    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mutator]
   }
   @scala.inline
-  def IAddMutator(mutatorType: ADD, value: PrimitiveValue, insertionIndex: js.UndefOr[Double] = js.undefined): Mutator = {
+  def IAddMutator(mutatorType: ADD, value: PrimitiveValue): Mutator = {
     val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertionIndex)) __obj.updateDynamic("insertionIndex")(insertionIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mutator]
   }
   @scala.inline

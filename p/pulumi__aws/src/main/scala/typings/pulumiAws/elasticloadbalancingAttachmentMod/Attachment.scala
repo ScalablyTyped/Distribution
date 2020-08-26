@@ -19,6 +19,7 @@ class Attachment protected () extends CustomResource {
     * @param args The arguments to use to populate this resource's properties.
     * @param opts A bag of options that control this resource's behavior.
     */
+  /** @deprecated aws.elasticloadbalancing.Attachment has been deprecated in favor of aws.elb.Attachment */
   def this(name: String, args: AttachmentArgs) = this()
   def this(name: String, args: AttachmentArgs, opts: CustomResourceOptions) = this()
   /**
@@ -42,8 +43,10 @@ object Attachment extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Attachment = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Attachment = js.native
   def get(name: String, id: Input[ID], state: AttachmentState): Attachment = js.native
   def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): Attachment = js.native
   /**

@@ -43,14 +43,41 @@ object StreamJournalToKinesisRequest {
     KinesisConfiguration: KinesisConfiguration,
     LedgerName: LedgerName,
     RoleArn: Arn,
-    StreamName: StreamName,
-    ExclusiveEndTime: Timestamp = null,
-    Tags: Tags = null
+    StreamName: StreamName
   ): StreamJournalToKinesisRequest = {
     val __obj = js.Dynamic.literal(InclusiveStartTime = InclusiveStartTime.asInstanceOf[js.Any], KinesisConfiguration = KinesisConfiguration.asInstanceOf[js.Any], LedgerName = LedgerName.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
-    if (ExclusiveEndTime != null) __obj.updateDynamic("ExclusiveEndTime")(ExclusiveEndTime.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamJournalToKinesisRequest]
   }
+  @scala.inline
+  implicit class StreamJournalToKinesisRequestOps[Self <: StreamJournalToKinesisRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInclusiveStartTime(value: Timestamp): Self = this.set("InclusiveStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKinesisConfiguration(value: KinesisConfiguration): Self = this.set("KinesisConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLedgerName(value: LedgerName): Self = this.set("LedgerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: Arn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExclusiveEndTime(value: Timestamp): Self = this.set("ExclusiveEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveEndTime: Self = this.set("ExclusiveEndTime", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

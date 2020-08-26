@@ -12,7 +12,7 @@ Javascript SDK for communicating w/ a Sails server via WebSockets/socket.io.
 | Keywords           | sails, sdk, sails.io.js, socket.io, browser, javascript |
 | # releases         | 4 |
 | # dependents       | 28 |
-| # downloads        | 104422 |
+| # downloads        | 105565 |
 | # stars            | 6 |
 
 ## Links

@@ -18,19 +18,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RasterFunctionProperties extends js.Object {
   /**
     * The arguments for the raster function. The structure depends on the function specified. See [raster functions](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm) for a list of functions and their arguments. Also parses the arguments of RFT format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionArguments)
     */
-  var functionArguments: js.UndefOr[js.Any] = js.undefined
+  var functionArguments: js.UndefOr[js.Any] = js.native
   /**
     * The raster function name. See [raster functions](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm) for a list of functions and their arguments. The name in the raster function in RFT JSON format is also parsed to functionName.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionName)
     */
-  var functionName: js.UndefOr[String] = js.undefined
+  var functionName: js.UndefOr[String] = js.native
   /**
     * Defines the pixel type of the output image.
     *
@@ -40,29 +41,49 @@ trait RasterFunctionProperties extends js.Object {
     */
   var outputPixelType: js.UndefOr[
     c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown
-  ] = js.undefined
+  ] = js.native
   /**
     * The variable name for the raster function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#variableName)
     */
-  var variableName: js.UndefOr[String] = js.undefined
+  var variableName: js.UndefOr[String] = js.native
 }
 
 object RasterFunctionProperties {
   @scala.inline
-  def apply(
-    functionArguments: js.Any = null,
-    functionName: String = null,
-    outputPixelType: c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown = null,
-    variableName: String = null
-  ): RasterFunctionProperties = {
+  def apply(): RasterFunctionProperties = {
     val __obj = js.Dynamic.literal()
-    if (functionArguments != null) __obj.updateDynamic("functionArguments")(functionArguments.asInstanceOf[js.Any])
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (outputPixelType != null) __obj.updateDynamic("outputPixelType")(outputPixelType.asInstanceOf[js.Any])
-    if (variableName != null) __obj.updateDynamic("variableName")(variableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterFunctionProperties]
   }
+  @scala.inline
+  implicit class RasterFunctionPropertiesOps[Self <: RasterFunctionProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionArguments(value: js.Any): Self = this.set("functionArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionArguments: Self = this.set("functionArguments", js.undefined)
+    @scala.inline
+    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    @scala.inline
+    def setOutputPixelType(value: c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown): Self = this.set("outputPixelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputPixelType: Self = this.set("outputPixelType", js.undefined)
+    @scala.inline
+    def setVariableName(value: String): Self = this.set("variableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariableName: Self = this.set("variableName", js.undefined)
+  }
+  
 }
 

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A command to modify a floating object's relative position.
   */
+@js.native
 trait ChangeFloatingObjectRelativePositionCommand extends ChangeFloatingObjectPropertyCommandBase[FloatingObjectRelativePositionSettings]
 
 object ChangeFloatingObjectRelativePositionCommand {

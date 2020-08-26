@@ -73,7 +73,7 @@ trait World extends EventEmitter {
     */
   var drawDebug: Boolean = js.native
   /**
-    * Should Physics use a fixed update time-step (true) or sync to the render fps (false)?. 
+    * Should Physics use a fixed update time-step (true) or sync to the render fps (false)?.
     * False value of this property disables fps and timeScale properties.
     */
   var fixedStep: Boolean = js.native
@@ -141,7 +141,7 @@ trait World extends EventEmitter {
     */
   var treeMinMax: ArcadeWorldTreeMinMax = js.native
   /**
-    * Should this Arcade Physics World use an RTree for Dynamic and Static Physics bodies?
+    * Should this Arcade Physics World use an RTree for Dynamic bodies?
     * 
     * An RTree is a fast way of spatially sorting of all the bodies in the world.
     * However, at certain limits, the cost of clearing and inserting the bodies into the
@@ -183,7 +183,34 @@ trait World extends EventEmitter {
     * @param callbackContext The scope in which to call the callbacks.
     */
   def addCollider(object1: ArcadeColliderType, object2: ArcadeColliderType): Collider = js.native
+  def addCollider(
+    object1: ArcadeColliderType,
+    object2: ArcadeColliderType,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Collider = js.native
+  def addCollider(
+    object1: ArcadeColliderType,
+    object2: ArcadeColliderType,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Collider = js.native
+  def addCollider(
+    object1: ArcadeColliderType,
+    object2: ArcadeColliderType,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Collider = js.native
   def addCollider(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Collider = js.native
+  def addCollider(
+    object1: ArcadeColliderType,
+    object2: ArcadeColliderType,
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Collider = js.native
   def addCollider(
     object1: ArcadeColliderType,
     object2: ArcadeColliderType,
@@ -214,7 +241,34 @@ trait World extends EventEmitter {
     * @param callbackContext The scope in which to call the callbacks.
     */
   def addOverlap(object1: ArcadeColliderType, object2: ArcadeColliderType): Collider = js.native
+  def addOverlap(
+    object1: ArcadeColliderType,
+    object2: ArcadeColliderType,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Collider = js.native
+  def addOverlap(
+    object1: ArcadeColliderType,
+    object2: ArcadeColliderType,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Collider = js.native
+  def addOverlap(
+    object1: ArcadeColliderType,
+    object2: ArcadeColliderType,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Collider = js.native
   def addOverlap(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Collider = js.native
+  def addOverlap(
+    object1: ArcadeColliderType,
+    object2: ArcadeColliderType,
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Collider = js.native
   def addOverlap(
     object1: ArcadeColliderType,
     object2: ArcadeColliderType,
@@ -261,21 +315,52 @@ trait World extends EventEmitter {
     * @param callbackContext The context in which to run the callbacks.
     */
   def collide(object1: ArcadeColliderType): Boolean = js.native
-  def collide(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
-  def collide(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Boolean = js.native
   def collide(
     object1: ArcadeColliderType,
-    object2: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
     collideCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback
   ): Boolean = js.native
   def collide(
     object1: ArcadeColliderType,
-    object2: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
     collideCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  def collide(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
   /**
     * Internal handler for Sprite vs. Tilemap collisions.
     * Please use Phaser.Physics.Arcade.World#collide instead.
@@ -287,12 +372,95 @@ trait World extends EventEmitter {
     * @param overlapOnly Whether this is a collision or overlap check.
     */
   def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: DynamicTilemapLayer): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any,
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any,
+    overlapOnly: Boolean
+  ): Boolean = js.native
   def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: DynamicTilemapLayer, collideCallback: ArcadePhysicsCallback): Boolean = js.native
   def collideSpriteVsTilemapLayer(
     sprite: GameObject,
     tilemapLayer: DynamicTilemapLayer,
     collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any,
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: DynamicTilemapLayer,
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
   ): Boolean = js.native
   def collideSpriteVsTilemapLayer(
     sprite: GameObject,
@@ -310,12 +478,95 @@ trait World extends EventEmitter {
     overlapOnly: Boolean
   ): Boolean = js.native
   def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: StaticTilemapLayer): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any,
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any,
+    overlapOnly: Boolean
+  ): Boolean = js.native
   def collideSpriteVsTilemapLayer(sprite: GameObject, tilemapLayer: StaticTilemapLayer, collideCallback: ArcadePhysicsCallback): Boolean = js.native
   def collideSpriteVsTilemapLayer(
     sprite: GameObject,
     tilemapLayer: StaticTilemapLayer,
     collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any,
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collideSpriteVsTilemapLayer(
+    sprite: GameObject,
+    tilemapLayer: StaticTilemapLayer,
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
   ): Boolean = js.native
   def collideSpriteVsTilemapLayer(
     sprite: GameObject,
@@ -354,7 +605,34 @@ trait World extends EventEmitter {
     * @param callbackContext The context in which to run the callbacks.
     */
   def collideTiles(sprite: GameObject, tiles: js.Array[Tile]): Boolean = js.native
+  def collideTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collideTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collideTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
   def collideTiles(sprite: GameObject, tiles: js.Array[Tile], collideCallback: ArcadePhysicsCallback): Boolean = js.native
+  def collideTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
   def collideTiles(
     sprite: GameObject,
     tiles: js.Array[Tile],
@@ -491,21 +769,52 @@ trait World extends EventEmitter {
     * @param callbackContext The context in which to run the callbacks.
     */
   def overlap(object1: ArcadeColliderType): Boolean = js.native
-  def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
-  def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType, overlapCallback: ArcadePhysicsCallback): Boolean = js.native
   def overlap(
     object1: ArcadeColliderType,
-    object2: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    overlapCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    overlapCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    overlapCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    overlapCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    overlapCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
     overlapCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback
   ): Boolean = js.native
   def overlap(
     object1: ArcadeColliderType,
-    object2: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
     overlapCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
   /**
     * This advanced method is specifically for testing for overlaps between a single Sprite and an array of Tile objects.
     * 
@@ -523,7 +832,34 @@ trait World extends EventEmitter {
     * @param callbackContext The context in which to run the callbacks.
     */
   def overlapTiles(sprite: GameObject, tiles: js.Array[Tile]): Boolean = js.native
+  def overlapTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlapTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def overlapTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
   def overlapTiles(sprite: GameObject, tiles: js.Array[Tile], collideCallback: ArcadePhysicsCallback): Boolean = js.native
+  def overlapTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
   def overlapTiles(
     sprite: GameObject,
     tiles: js.Array[Tile],
@@ -584,16 +920,103 @@ trait World extends EventEmitter {
     * @param processCallback The process callback.
     * @param callbackContext The context in which to invoke the callback.
     * @param overlapOnly If this a collide or overlap check?
+    * @param intersects Assert that the bodies intersect and should not be tested before separation.
     */
   def separate(body1: Body, body2: Body): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: js.UndefOr[scala.Nothing],
+    intersects: Boolean
+  ): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean,
+    intersects: Boolean
+  ): Boolean = js.native
+  def separate(body1: Body, body2: Body, processCallback: js.UndefOr[scala.Nothing], callbackContext: js.Any): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any,
+    overlapOnly: js.UndefOr[scala.Nothing],
+    intersects: Boolean
+  ): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any,
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any,
+    overlapOnly: Boolean,
+    intersects: Boolean
+  ): Boolean = js.native
   def separate(body1: Body, body2: Body, processCallback: ArcadePhysicsCallback): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: js.UndefOr[scala.Nothing],
+    intersects: Boolean
+  ): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean
+  ): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.UndefOr[scala.Nothing],
+    overlapOnly: Boolean,
+    intersects: Boolean
+  ): Boolean = js.native
   def separate(body1: Body, body2: Body, processCallback: ArcadePhysicsCallback, callbackContext: js.Any): Boolean = js.native
   def separate(
     body1: Body,
     body2: Body,
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any,
+    overlapOnly: js.UndefOr[scala.Nothing],
+    intersects: Boolean
+  ): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any,
     overlapOnly: Boolean
+  ): Boolean = js.native
+  def separate(
+    body1: Body,
+    body2: Body,
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any,
+    overlapOnly: Boolean,
+    intersects: Boolean
   ): Boolean = js.native
   /**
     * Separates two Bodies, when both are circular.
@@ -603,6 +1026,7 @@ trait World extends EventEmitter {
     * @param bias A small value added to the calculations.
     */
   def separateCircle(body1: Body, body2: Body): Boolean = js.native
+  def separateCircle(body1: Body, body2: Body, overlapOnly: js.UndefOr[scala.Nothing], bias: Double): Boolean = js.native
   def separateCircle(body1: Body, body2: Body, overlapOnly: Boolean): Boolean = js.native
   def separateCircle(body1: Body, body2: Body, overlapOnly: Boolean, bias: Double): Boolean = js.native
   /**
@@ -622,8 +1046,113 @@ trait World extends EventEmitter {
     * @param checkDown Should bodies check against the bottom edge of the boundary?
     */
   def setBounds(x: Double, y: Double, width: Double, height: Double): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: js.UndefOr[scala.Nothing],
+    checkRight: js.UndefOr[scala.Nothing],
+    checkUp: js.UndefOr[scala.Nothing],
+    checkDown: Boolean
+  ): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: js.UndefOr[scala.Nothing],
+    checkRight: js.UndefOr[scala.Nothing],
+    checkUp: Boolean
+  ): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: js.UndefOr[scala.Nothing],
+    checkRight: js.UndefOr[scala.Nothing],
+    checkUp: Boolean,
+    checkDown: Boolean
+  ): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: js.UndefOr[scala.Nothing],
+    checkRight: Boolean
+  ): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: js.UndefOr[scala.Nothing],
+    checkRight: Boolean,
+    checkUp: js.UndefOr[scala.Nothing],
+    checkDown: Boolean
+  ): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: js.UndefOr[scala.Nothing],
+    checkRight: Boolean,
+    checkUp: Boolean
+  ): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: js.UndefOr[scala.Nothing],
+    checkRight: Boolean,
+    checkUp: Boolean,
+    checkDown: Boolean
+  ): World = js.native
   def setBounds(x: Double, y: Double, width: Double, height: Double, checkLeft: Boolean): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: Boolean,
+    checkRight: js.UndefOr[scala.Nothing],
+    checkUp: js.UndefOr[scala.Nothing],
+    checkDown: Boolean
+  ): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: Boolean,
+    checkRight: js.UndefOr[scala.Nothing],
+    checkUp: Boolean
+  ): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: Boolean,
+    checkRight: js.UndefOr[scala.Nothing],
+    checkUp: Boolean,
+    checkDown: Boolean
+  ): World = js.native
   def setBounds(x: Double, y: Double, width: Double, height: Double, checkLeft: Boolean, checkRight: Boolean): World = js.native
+  def setBounds(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    checkLeft: Boolean,
+    checkRight: Boolean,
+    checkUp: js.UndefOr[scala.Nothing],
+    checkDown: Boolean
+  ): World = js.native
   def setBounds(
     x: Double,
     y: Double,
@@ -651,8 +1180,24 @@ trait World extends EventEmitter {
     * @param down Should bodies check against the bottom edge of the boundary? Default true.
     */
   def setBoundsCollision(): World = js.native
+  def setBoundsCollision(
+    left: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    up: js.UndefOr[scala.Nothing],
+    down: Boolean
+  ): World = js.native
+  def setBoundsCollision(left: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], up: Boolean): World = js.native
+  def setBoundsCollision(left: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], up: Boolean, down: Boolean): World = js.native
+  def setBoundsCollision(left: js.UndefOr[scala.Nothing], right: Boolean): World = js.native
+  def setBoundsCollision(left: js.UndefOr[scala.Nothing], right: Boolean, up: js.UndefOr[scala.Nothing], down: Boolean): World = js.native
+  def setBoundsCollision(left: js.UndefOr[scala.Nothing], right: Boolean, up: Boolean): World = js.native
+  def setBoundsCollision(left: js.UndefOr[scala.Nothing], right: Boolean, up: Boolean, down: Boolean): World = js.native
   def setBoundsCollision(left: Boolean): World = js.native
+  def setBoundsCollision(left: Boolean, right: js.UndefOr[scala.Nothing], up: js.UndefOr[scala.Nothing], down: Boolean): World = js.native
+  def setBoundsCollision(left: Boolean, right: js.UndefOr[scala.Nothing], up: Boolean): World = js.native
+  def setBoundsCollision(left: Boolean, right: js.UndefOr[scala.Nothing], up: Boolean, down: Boolean): World = js.native
   def setBoundsCollision(left: Boolean, right: Boolean): World = js.native
+  def setBoundsCollision(left: Boolean, right: Boolean, up: js.UndefOr[scala.Nothing], down: Boolean): World = js.native
   def setBoundsCollision(left: Boolean, right: Boolean, up: Boolean): World = js.native
   def setBoundsCollision(left: Boolean, right: Boolean, up: Boolean, down: Boolean): World = js.native
   /**

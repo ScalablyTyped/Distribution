@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IActivityItemClassNames extends js.Object {
-  var activityContent: js.UndefOr[String] = js.undefined
-  var activityPersona: js.UndefOr[String] = js.undefined
-  var activityText: js.UndefOr[String] = js.undefined
-  var activityTypeIcon: js.UndefOr[String] = js.undefined
-  var commentText: js.UndefOr[String] = js.undefined
-  var personaContainer: js.UndefOr[String] = js.undefined
-  var pulsingBeacon: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var timeStamp: js.UndefOr[String] = js.undefined
+  var activityContent: js.UndefOr[String] = js.native
+  var activityPersona: js.UndefOr[String] = js.native
+  var activityText: js.UndefOr[String] = js.native
+  var activityTypeIcon: js.UndefOr[String] = js.native
+  var commentText: js.UndefOr[String] = js.native
+  var personaContainer: js.UndefOr[String] = js.native
+  var pulsingBeacon: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var timeStamp: js.UndefOr[String] = js.native
 }
 
 object IActivityItemClassNames {
   @scala.inline
-  def apply(
-    activityContent: String = null,
-    activityPersona: String = null,
-    activityText: String = null,
-    activityTypeIcon: String = null,
-    commentText: String = null,
-    personaContainer: String = null,
-    pulsingBeacon: String = null,
-    root: String = null,
-    timeStamp: String = null
-  ): IActivityItemClassNames = {
+  def apply(): IActivityItemClassNames = {
     val __obj = js.Dynamic.literal()
-    if (activityContent != null) __obj.updateDynamic("activityContent")(activityContent.asInstanceOf[js.Any])
-    if (activityPersona != null) __obj.updateDynamic("activityPersona")(activityPersona.asInstanceOf[js.Any])
-    if (activityText != null) __obj.updateDynamic("activityText")(activityText.asInstanceOf[js.Any])
-    if (activityTypeIcon != null) __obj.updateDynamic("activityTypeIcon")(activityTypeIcon.asInstanceOf[js.Any])
-    if (commentText != null) __obj.updateDynamic("commentText")(commentText.asInstanceOf[js.Any])
-    if (personaContainer != null) __obj.updateDynamic("personaContainer")(personaContainer.asInstanceOf[js.Any])
-    if (pulsingBeacon != null) __obj.updateDynamic("pulsingBeacon")(pulsingBeacon.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActivityItemClassNames]
   }
+  @scala.inline
+  implicit class IActivityItemClassNamesOps[Self <: IActivityItemClassNames] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivityContent(value: String): Self = this.set("activityContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityContent: Self = this.set("activityContent", js.undefined)
+    @scala.inline
+    def setActivityPersona(value: String): Self = this.set("activityPersona", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityPersona: Self = this.set("activityPersona", js.undefined)
+    @scala.inline
+    def setActivityText(value: String): Self = this.set("activityText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityText: Self = this.set("activityText", js.undefined)
+    @scala.inline
+    def setActivityTypeIcon(value: String): Self = this.set("activityTypeIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityTypeIcon: Self = this.set("activityTypeIcon", js.undefined)
+    @scala.inline
+    def setCommentText(value: String): Self = this.set("commentText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommentText: Self = this.set("commentText", js.undefined)
+    @scala.inline
+    def setPersonaContainer(value: String): Self = this.set("personaContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersonaContainer: Self = this.set("personaContainer", js.undefined)
+    @scala.inline
+    def setPulsingBeacon(value: String): Self = this.set("pulsingBeacon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePulsingBeacon: Self = this.set("pulsingBeacon", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setTimeStamp(value: String): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeStamp: Self = this.set("timeStamp", js.undefined)
+  }
+  
 }
 

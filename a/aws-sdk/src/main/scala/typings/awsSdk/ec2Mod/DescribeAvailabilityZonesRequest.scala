@@ -15,35 +15,63 @@ trait DescribeAvailabilityZonesRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.native
   /**
-    * The filters.    group-name - For Availability Zones, use the Region name. For Local Zones, use the name of the group associated with the Local Zone (for example, us-west-2-lax-1).    message - The Availability Zone or Local Zone message.    opt-in-status - The opt in status (opted-in, and not-opted-in | opt-in-not-required).    region-name - The name of the Region for the Availability Zone or Local Zone (for example, us-east-1).    state - The state of the Availability Zone or Local Zone (available | information | impaired | unavailable).    zone-id - The ID of the Availability Zone (for example, use1-az1) or the Local Zone (for example, use usw2-lax1-az1).    zone-name - The name of the Availability Zone (for example, us-east-1a) or the Local Zone (for example, use us-west-2-lax-1a).  
+    * The filters.    group-name - For Availability Zones, use the Region name. For Local Zones, use the name of the group associated with the Local Zone (for example, us-west-2-lax-1).    message - The Zone message.    opt-in-status - The opt in status (opted-in, and not-opted-in | opt-in-not-required).   The ID of the zone that handles some of the Local Zone control plane operations, such as API calls.    region-name - The name of the Region for the Zone (for example, us-east-1).    state - The state of the Availability Zone or Local Zone (available | information | impaired | unavailable).    zone-id - The ID of the Availability Zone (for example, use1-az1) or the Local Zone (for example, use usw2-lax1-az1).    zone-type - The type of zone, for example, local-zone.    zone-name - The name of the Availability Zone (for example, us-east-1a) or the Local Zone (for example, use us-west-2-lax-1a).    zone-type - The type of zone, for example, local-zone.  
     */
   var Filters: js.UndefOr[FilterList] = js.native
   /**
-    * The IDs of the Availability Zones and Local Zones.
+    * The IDs of the Zones.
     */
   var ZoneIds: js.UndefOr[ZoneIdStringList] = js.native
   /**
-    * The names of the Availability Zones and Local Zones.
+    * The names of the Zones.
     */
   var ZoneNames: js.UndefOr[ZoneNameStringList] = js.native
 }
 
 object DescribeAvailabilityZonesRequest {
   @scala.inline
-  def apply(
-    AllAvailabilityZones: js.UndefOr[Boolean] = js.undefined,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    ZoneIds: ZoneIdStringList = null,
-    ZoneNames: ZoneNameStringList = null
-  ): DescribeAvailabilityZonesRequest = {
+  def apply(): DescribeAvailabilityZonesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllAvailabilityZones)) __obj.updateDynamic("AllAvailabilityZones")(AllAvailabilityZones.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (ZoneIds != null) __obj.updateDynamic("ZoneIds")(ZoneIds.asInstanceOf[js.Any])
-    if (ZoneNames != null) __obj.updateDynamic("ZoneNames")(ZoneNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAvailabilityZonesRequest]
   }
+  @scala.inline
+  implicit class DescribeAvailabilityZonesRequestOps[Self <: DescribeAvailabilityZonesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllAvailabilityZones(value: Boolean): Self = this.set("AllAvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllAvailabilityZones: Self = this.set("AllAvailabilityZones", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setZoneIdsVarargs(value: String*): Self = this.set("ZoneIds", js.Array(value :_*))
+    @scala.inline
+    def setZoneIds(value: ZoneIdStringList): Self = this.set("ZoneIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneIds: Self = this.set("ZoneIds", js.undefined)
+    @scala.inline
+    def setZoneNamesVarargs(value: String*): Self = this.set("ZoneNames", js.Array(value :_*))
+    @scala.inline
+    def setZoneNames(value: ZoneNameStringList): Self = this.set("ZoneNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneNames: Self = this.set("ZoneNames", js.undefined)
+  }
+  
 }
 

@@ -26,16 +26,9 @@ object cancelKeyDeletionCommandMod extends js.Object {
           Readable
         ] {
     def this(input: CancelKeyDeletionInput) = this()
-    /* CompleteClass */
-    override val input: CancelKeyDeletionInput = js.native
     val middlewareStack: MiddlewareStack[CancelKeyDeletionInput, CancelKeyDeletionOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[CancelKeyDeletionInput, CancelKeyDeletionOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[CancelKeyDeletionInput, CancelKeyDeletionOutput] = js.native
   }

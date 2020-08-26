@@ -18,10 +18,30 @@ trait DescribeTaskDefinitionRequest extends js.Object {
 
 object DescribeTaskDefinitionRequest {
   @scala.inline
-  def apply(taskDefinition: String, include: TaskDefinitionFieldList = null): DescribeTaskDefinitionRequest = {
+  def apply(taskDefinition: String): DescribeTaskDefinitionRequest = {
     val __obj = js.Dynamic.literal(taskDefinition = taskDefinition.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTaskDefinitionRequest]
   }
+  @scala.inline
+  implicit class DescribeTaskDefinitionRequestOps[Self <: DescribeTaskDefinitionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncludeVarargs(value: TaskDefinitionField*): Self = this.set("include", js.Array(value :_*))
+    @scala.inline
+    def setInclude(value: TaskDefinitionFieldList): Self = this.set("include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+  }
+  
 }
 

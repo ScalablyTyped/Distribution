@@ -26,18 +26,40 @@ trait OutputGroup extends js.Object {
 
 object OutputGroup {
   @scala.inline
-  def apply(
-    CustomName: string = null,
-    Name: string = null,
-    OutputGroupSettings: OutputGroupSettings = null,
-    Outputs: listOfOutput = null
-  ): OutputGroup = {
+  def apply(): OutputGroup = {
     val __obj = js.Dynamic.literal()
-    if (CustomName != null) __obj.updateDynamic("CustomName")(CustomName.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OutputGroupSettings != null) __obj.updateDynamic("OutputGroupSettings")(OutputGroupSettings.asInstanceOf[js.Any])
-    if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputGroup]
   }
+  @scala.inline
+  implicit class OutputGroupOps[Self <: OutputGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomName(value: string): Self = this.set("CustomName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomName: Self = this.set("CustomName", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOutputGroupSettings(value: OutputGroupSettings): Self = this.set("OutputGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputGroupSettings: Self = this.set("OutputGroupSettings", js.undefined)
+    @scala.inline
+    def setOutputsVarargs(value: Output*): Self = this.set("Outputs", js.Array(value :_*))
+    @scala.inline
+    def setOutputs(value: listOfOutput): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+  }
+  
 }
 

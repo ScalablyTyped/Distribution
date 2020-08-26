@@ -26,17 +26,36 @@ trait ListResourcesForTagOptionInput extends js.Object {
 
 object ListResourcesForTagOptionInput {
   @scala.inline
-  def apply(
-    TagOptionId: TagOptionId,
-    PageSize: js.UndefOr[PageSize] = js.undefined,
-    PageToken: PageToken = null,
-    ResourceType: ResourceType = null
-  ): ListResourcesForTagOptionInput = {
+  def apply(TagOptionId: TagOptionId): ListResourcesForTagOptionInput = {
     val __obj = js.Dynamic.literal(TagOptionId = TagOptionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
-    if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourcesForTagOptionInput]
   }
+  @scala.inline
+  implicit class ListResourcesForTagOptionInputOps[Self <: ListResourcesForTagOptionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTagOptionId(value: TagOptionId): Self = this.set("TagOptionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPageSize(value: PageSize): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: PageToken): Self = this.set("PageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("PageToken", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

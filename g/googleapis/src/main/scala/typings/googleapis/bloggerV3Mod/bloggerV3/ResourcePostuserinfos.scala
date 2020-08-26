@@ -32,6 +32,7 @@ class ResourcePostuserinfos protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPostUserInfo] = js.native
   def get(callback: BodyResponseCallback[SchemaPostUserInfo]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPostUserInfo] = js.native
   def get(params: ParamsResourcePostuserinfosGet): GaxiosPromise[SchemaPostUserInfo] = js.native
   def get(params: ParamsResourcePostuserinfosGet, callback: BodyResponseCallback[SchemaPostUserInfo]): Unit = js.native
   def get(
@@ -71,6 +72,7 @@ class ResourcePostuserinfos protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPostUserInfosList] = js.native
   def list(callback: BodyResponseCallback[SchemaPostUserInfosList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPostUserInfosList] = js.native
   def list(params: ParamsResourcePostuserinfosList): GaxiosPromise[SchemaPostUserInfosList] = js.native
   def list(params: ParamsResourcePostuserinfosList, callback: BodyResponseCallback[SchemaPostUserInfosList]): Unit = js.native
   def list(

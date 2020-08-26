@@ -40,5 +40,28 @@ object CreateProjectVersionRequest {
     val __obj = js.Dynamic.literal(OutputConfig = OutputConfig.asInstanceOf[js.Any], ProjectArn = ProjectArn.asInstanceOf[js.Any], TestingData = TestingData.asInstanceOf[js.Any], TrainingData = TrainingData.asInstanceOf[js.Any], VersionName = VersionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProjectVersionRequest]
   }
+  @scala.inline
+  implicit class CreateProjectVersionRequestOps[Self <: CreateProjectVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOutputConfig(value: OutputConfig): Self = this.set("OutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProjectArn(value: ProjectArn): Self = this.set("ProjectArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTestingData(value: TestingData): Self = this.set("TestingData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingData(value: TrainingData): Self = this.set("TrainingData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersionName(value: VersionName): Self = this.set("VersionName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

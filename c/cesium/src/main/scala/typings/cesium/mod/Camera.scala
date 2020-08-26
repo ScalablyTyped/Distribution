@@ -47,6 +47,7 @@ class Camera protected () extends js.Object {
   def cameraToWorldCoordinatesVector(cartesian: Cartesian3, result: Cartesian3): Cartesian3 = js.native
   def cancelFlight(): Unit = js.native
   def computeViewRectangle(): js.UndefOr[Rectangle] = js.native
+  def computeViewRectangle(ellipsoid: js.UndefOr[scala.Nothing], result: Rectangle): js.UndefOr[Rectangle] = js.native
   def computeViewRectangle(ellipsoid: Ellipsoid): js.UndefOr[Rectangle] = js.native
   def computeViewRectangle(ellipsoid: Ellipsoid, result: Rectangle): js.UndefOr[Rectangle] = js.native
   def distanceToBoundingSphere(boundingSphere: BoundingSphere): Double = js.native
@@ -90,6 +91,7 @@ class Camera protected () extends js.Object {
   def moveUp(): Unit = js.native
   def moveUp(amount: Double): Unit = js.native
   def pickEllipsoid(windowPosition: Cartesian2): Cartesian3 = js.native
+  def pickEllipsoid(windowPosition: Cartesian2, ellipsoid: js.UndefOr[scala.Nothing], result: Cartesian3): Cartesian3 = js.native
   def pickEllipsoid(windowPosition: Cartesian2, ellipsoid: Ellipsoid): Cartesian3 = js.native
   def pickEllipsoid(windowPosition: Cartesian2, ellipsoid: Ellipsoid, result: Cartesian3): Cartesian3 = js.native
   def rotate(axis: Cartesian3): Unit = js.native

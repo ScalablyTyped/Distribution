@@ -13,5 +13,7 @@ class Tray protected ()
     * Tray
     */
   def this(image: typings.electron.Electron.NativeImage_) = this()
+  def this(image: String, guid: String) = this()
+  def this(image: typings.electron.Electron.NativeImage_, guid: String) = this()
 }
 

@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.loading
+import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,13 +23,13 @@ trait BookmarksViewModel
     */
   var bookmarks: Collection[Bookmark] = js.native
   /**
-    * The view model's state.  **Possible Values:** loading | ready
+    * The view model's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#state)
     *
     * @default ready
     */
-  val state: String = js.native
+  val state: loading | ready = js.native
   /**
     * The view from which the widget will operate.
     *

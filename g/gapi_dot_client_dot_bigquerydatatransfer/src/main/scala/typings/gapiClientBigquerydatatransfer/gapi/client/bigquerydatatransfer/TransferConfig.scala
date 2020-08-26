@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransferConfig extends js.Object {
   /**
     * The number of days to look back to automatically refresh the data.
@@ -14,20 +15,20 @@ trait TransferConfig extends js.Object {
     * Only valid if the data source supports the feature. Set the value to  0
     * to use the default value.
     */
-  var dataRefreshWindowDays: js.UndefOr[Double] = js.undefined
+  var dataRefreshWindowDays: js.UndefOr[Double] = js.native
   /** Data source id. Cannot be changed once data transfer is created. */
-  var dataSourceId: js.UndefOr[String] = js.undefined
+  var dataSourceId: js.UndefOr[String] = js.native
   /** Output only. Region in which BigQuery dataset is located. */
-  var datasetRegion: js.UndefOr[String] = js.undefined
+  var datasetRegion: js.UndefOr[String] = js.native
   /** The BigQuery target dataset id. */
-  var destinationDatasetId: js.UndefOr[String] = js.undefined
+  var destinationDatasetId: js.UndefOr[String] = js.native
   /**
     * Is this config disabled. When set to true, no runs are scheduled
     * for a given transfer.
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /** User specified display name for the data transfer. */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String] = js.native
   /**
     * The resource name of the transfer config.
     * Transfer config names have the form
@@ -36,11 +37,11 @@ trait TransferConfig extends js.Object {
     * guaranteed or required. The name is ignored when creating a transfer
     * config.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** Output only. Next time when data transfer will run. */
-  var nextRunTime: js.UndefOr[String] = js.undefined
+  var nextRunTime: js.UndefOr[String] = js.native
   /** Data transfer specific parameters. */
-  var params: js.UndefOr[Record[String, _]] = js.undefined
+  var params: js.UndefOr[Record[String, _]] = js.native
   /**
     * Data transfer schedule.
     * If the data source does not support a custom schedule, this should be
@@ -55,51 +56,89 @@ trait TransferConfig extends js.Object {
     * https://cloud.google.com/appengine/docs/flexible/python/scheduling-jobs-with-cron-yaml#the_schedule_format
     * NOTE: the granularity should be at least 8 hours, or less frequent.
     */
-  var schedule: js.UndefOr[String] = js.undefined
+  var schedule: js.UndefOr[String] = js.native
   /** Output only. State of the most recently updated transfer run. */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String] = js.native
   /** Output only. Data transfer modification time. Ignored by server on input. */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String] = js.native
   /**
     * Output only. Unique ID of the user on whose behalf transfer is done.
     * Applicable only to data sources that do not support service accounts.
     * When set to 0, the data source service account credentials are used.
     */
-  var userId: js.UndefOr[String] = js.undefined
+  var userId: js.UndefOr[String] = js.native
 }
 
 object TransferConfig {
   @scala.inline
-  def apply(
-    dataRefreshWindowDays: js.UndefOr[Double] = js.undefined,
-    dataSourceId: String = null,
-    datasetRegion: String = null,
-    destinationDatasetId: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    displayName: String = null,
-    name: String = null,
-    nextRunTime: String = null,
-    params: Record[String, _] = null,
-    schedule: String = null,
-    state: String = null,
-    updateTime: String = null,
-    userId: String = null
-  ): TransferConfig = {
+  def apply(): TransferConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dataRefreshWindowDays)) __obj.updateDynamic("dataRefreshWindowDays")(dataRefreshWindowDays.get.asInstanceOf[js.Any])
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
-    if (datasetRegion != null) __obj.updateDynamic("datasetRegion")(datasetRegion.asInstanceOf[js.Any])
-    if (destinationDatasetId != null) __obj.updateDynamic("destinationDatasetId")(destinationDatasetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nextRunTime != null) __obj.updateDynamic("nextRunTime")(nextRunTime.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferConfig]
   }
+  @scala.inline
+  implicit class TransferConfigOps[Self <: TransferConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataRefreshWindowDays(value: Double): Self = this.set("dataRefreshWindowDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRefreshWindowDays: Self = this.set("dataRefreshWindowDays", js.undefined)
+    @scala.inline
+    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    @scala.inline
+    def setDatasetRegion(value: String): Self = this.set("datasetRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetRegion: Self = this.set("datasetRegion", js.undefined)
+    @scala.inline
+    def setDestinationDatasetId(value: String): Self = this.set("destinationDatasetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationDatasetId: Self = this.set("destinationDatasetId", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNextRunTime(value: String): Self = this.set("nextRunTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextRunTime: Self = this.set("nextRunTime", js.undefined)
+    @scala.inline
+    def setParams(value: Record[String, _]): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setSchedule(value: String): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

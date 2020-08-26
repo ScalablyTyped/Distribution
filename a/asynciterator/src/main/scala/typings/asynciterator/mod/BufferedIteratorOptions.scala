@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BufferedIteratorOptions extends js.Object {
-  var autoStart: js.UndefOr[Boolean] = js.undefined
-  var maxBufferSize: js.UndefOr[Double] = js.undefined
+  var autoStart: js.UndefOr[Boolean] = js.native
+  var maxBufferSize: js.UndefOr[Double] = js.native
 }
 
 object BufferedIteratorOptions {
   @scala.inline
-  def apply(autoStart: js.UndefOr[Boolean] = js.undefined, maxBufferSize: js.UndefOr[Double] = js.undefined): BufferedIteratorOptions = {
+  def apply(): BufferedIteratorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBufferSize)) __obj.updateDynamic("maxBufferSize")(maxBufferSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferedIteratorOptions]
   }
+  @scala.inline
+  implicit class BufferedIteratorOptionsOps[Self <: BufferedIteratorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoStart(value: Boolean): Self = this.set("autoStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoStart: Self = this.set("autoStart", js.undefined)
+    @scala.inline
+    def setMaxBufferSize(value: Double): Self = this.set("maxBufferSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBufferSize: Self = this.set("maxBufferSize", js.undefined)
+  }
+  
 }
 

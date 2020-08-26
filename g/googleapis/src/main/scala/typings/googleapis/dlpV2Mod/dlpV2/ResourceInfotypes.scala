@@ -30,6 +30,7 @@ class ResourceInfotypes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInfoTypesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListInfoTypesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInfoTypesResponse] = js.native
   def list(params: ParamsResourceInfotypesList): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInfoTypesResponse] = js.native
   def list(
     params: ParamsResourceInfotypesList,

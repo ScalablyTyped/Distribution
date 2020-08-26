@@ -26,11 +26,30 @@ trait SchemaSecret extends js.Object {
 
 object SchemaSecret {
   @scala.inline
-  def apply(cipherText: String = null, keyName: String = null): SchemaSecret = {
+  def apply(): SchemaSecret = {
     val __obj = js.Dynamic.literal()
-    if (cipherText != null) __obj.updateDynamic("cipherText")(cipherText.asInstanceOf[js.Any])
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecret]
   }
+  @scala.inline
+  implicit class SchemaSecretOps[Self <: SchemaSecret] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCipherText(value: String): Self = this.set("cipherText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCipherText: Self = this.set("cipherText", js.undefined)
+    @scala.inline
+    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("keyName", js.undefined)
+  }
+  
 }
 

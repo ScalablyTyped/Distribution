@@ -10,9 +10,9 @@ Parse and stringify JSON with comments. It will retain comments even after saved
 | ------------------ | :-------------: |
 | Full name          | comment-json |
 | Keywords           | comment-json, comments, annotations, json, json-stringify, json-parse, parser, comments-json, json-comments |
-| # releases         | 12 |
-| # dependents       | 74 |
-| # downloads        | 2382809 |
+| # releases         | 14 |
+| # dependents       | 76 |
+| # downloads        | 2473958 |
 | # stars            | 1 |
 
 ## Links

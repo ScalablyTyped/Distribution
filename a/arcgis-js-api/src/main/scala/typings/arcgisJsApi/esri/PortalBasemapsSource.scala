@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`not-loaded`
+import typings.arcgisJsApi.arcgisJsApiStrings.loading
+import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +27,15 @@ trait PortalBasemapsSource extends LocalBasemapsSource {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#query)
     */
   var query: js.Any | String = js.native
+  /**
+    * The source's state.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#state)
+    *
+    * @default not-loaded
+    */
+  @JSName("state")
+  val state_PortalBasemapsSource: `not-loaded` | loading | ready = js.native
   /**
     * Callback for updating basemaps after being fetched and filtered.
     *

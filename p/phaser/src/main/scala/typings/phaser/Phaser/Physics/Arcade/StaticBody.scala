@@ -246,6 +246,7 @@ trait StaticBody extends js.Object {
     * @param y The y coordinate to reset the body to. If not given will use the parent Game Object's coordinate.
     */
   def reset(): Unit = js.native
+  def reset(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def reset(x: Double): Unit = js.native
   def reset(x: Double, y: Double): Unit = js.native
   /**
@@ -255,6 +256,7 @@ trait StaticBody extends js.Object {
     * @param offsetY The vertical offset of the StaticBody from its Game Object, in pixels.
     */
   def setCircle(radius: Double): StaticBody = js.native
+  def setCircle(radius: Double, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): StaticBody = js.native
   def setCircle(radius: Double, offsetX: Double): StaticBody = js.native
   def setCircle(radius: Double, offsetX: Double, offsetY: Double): StaticBody = js.native
   /**
@@ -286,7 +288,11 @@ trait StaticBody extends js.Object {
     * @param center Place the Static Body's center on its Game Object's center. Only works if the Game Object has the `getCenter` method. Default true.
     */
   def setSize(): StaticBody = js.native
+  def setSize(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], center: Boolean): StaticBody = js.native
+  def setSize(width: js.UndefOr[scala.Nothing], height: integer): StaticBody = js.native
+  def setSize(width: js.UndefOr[scala.Nothing], height: integer, center: Boolean): StaticBody = js.native
   def setSize(width: integer): StaticBody = js.native
+  def setSize(width: integer, height: js.UndefOr[scala.Nothing], center: Boolean): StaticBody = js.native
   def setSize(width: integer, height: integer): StaticBody = js.native
   def setSize(width: integer, height: integer, center: Boolean): StaticBody = js.native
   /**

@@ -16,15 +16,5 @@ class ASPxClientAppointmentDeletingEventArgs protected ()
     * @param appointments An array of ASPxClientAppointment objects.
     */
   def this(appointments: js.Array[typings.devexpressWeb.ASPxClientAppointment]) = this()
-  /**
-    * Gets client IDs of the appointments to be removed.
-    */
-  /* CompleteClass */
-  override var appointmentIds: js.Array[String] = js.native
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
 }
 

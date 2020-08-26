@@ -43,7 +43,23 @@ trait PlusMapsMap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def calculateArea(): Unit = js.native
+  def calculateArea(
+    bounds: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def calculateArea(bounds: js.UndefOr[scala.Nothing], successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def calculateArea(
+    bounds: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def calculateArea(bounds: PlusMapsBounds): Unit = js.native
+  def calculateArea(
+    bounds: PlusMapsBounds,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def calculateArea(bounds: PlusMapsBounds, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def calculateArea(
     bounds: PlusMapsBounds,
@@ -57,8 +73,66 @@ trait PlusMapsMap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def calculateDistance(): Unit = js.native
+  def calculateDistance(
+    pointStart: js.UndefOr[scala.Nothing],
+    pointEnd: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def calculateDistance(
+    pointStart: js.UndefOr[scala.Nothing],
+    pointEnd: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def calculateDistance(
+    pointStart: js.UndefOr[scala.Nothing],
+    pointEnd: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def calculateDistance(pointStart: js.UndefOr[scala.Nothing], pointEnd: PlusMapsPoint): Unit = js.native
+  def calculateDistance(
+    pointStart: js.UndefOr[scala.Nothing],
+    pointEnd: PlusMapsPoint,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def calculateDistance(
+    pointStart: js.UndefOr[scala.Nothing],
+    pointEnd: PlusMapsPoint,
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def calculateDistance(
+    pointStart: js.UndefOr[scala.Nothing],
+    pointEnd: PlusMapsPoint,
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def calculateDistance(pointStart: PlusMapsPoint): Unit = js.native
+  def calculateDistance(
+    pointStart: PlusMapsPoint,
+    pointEnd: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def calculateDistance(
+    pointStart: PlusMapsPoint,
+    pointEnd: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def calculateDistance(
+    pointStart: PlusMapsPoint,
+    pointEnd: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def calculateDistance(pointStart: PlusMapsPoint, pointEnd: PlusMapsPoint): Unit = js.native
+  def calculateDistance(
+    pointStart: PlusMapsPoint,
+    pointEnd: PlusMapsPoint,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def calculateDistance(
     pointStart: PlusMapsPoint,
     pointEnd: PlusMapsPoint,
@@ -80,6 +154,7 @@ trait PlusMapsMap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def centerAndZoom(): Unit = js.native
+  def centerAndZoom(center: js.UndefOr[scala.Nothing], zoom: Double): Unit = js.native
   def centerAndZoom(center: PlusMapsPoint): Unit = js.native
   def centerAndZoom(center: PlusMapsPoint, zoom: Double): Unit = js.native
   /**
@@ -105,8 +180,66 @@ trait PlusMapsMap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def convertCoordinates(): Unit = js.native
+  def convertCoordinates(
+    point: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def convertCoordinates(
+    point: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def convertCoordinates(
+    point: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def convertCoordinates(point: js.UndefOr[scala.Nothing], options: PlusMapsCoordinateConvertOptions): Unit = js.native
+  def convertCoordinates(
+    point: js.UndefOr[scala.Nothing],
+    options: PlusMapsCoordinateConvertOptions,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def convertCoordinates(
+    point: js.UndefOr[scala.Nothing],
+    options: PlusMapsCoordinateConvertOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def convertCoordinates(
+    point: js.UndefOr[scala.Nothing],
+    options: PlusMapsCoordinateConvertOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def convertCoordinates(point: PlusMapsPoint): Unit = js.native
+  def convertCoordinates(
+    point: PlusMapsPoint,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def convertCoordinates(
+    point: PlusMapsPoint,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def convertCoordinates(
+    point: PlusMapsPoint,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def convertCoordinates(point: PlusMapsPoint, options: PlusMapsCoordinateConvertOptions): Unit = js.native
+  def convertCoordinates(
+    point: PlusMapsPoint,
+    options: PlusMapsCoordinateConvertOptions,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def convertCoordinates(
     point: PlusMapsPoint,
     options: PlusMapsCoordinateConvertOptions,
@@ -126,8 +259,66 @@ trait PlusMapsMap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def geocode(): Unit = js.native
+  def geocode(
+    address: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def geocode(
+    address: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def geocode(
+    address: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def geocode(address: js.UndefOr[scala.Nothing], options: PlusMapsGeocodeOptions): Unit = js.native
+  def geocode(
+    address: js.UndefOr[scala.Nothing],
+    options: PlusMapsGeocodeOptions,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def geocode(
+    address: js.UndefOr[scala.Nothing],
+    options: PlusMapsGeocodeOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def geocode(
+    address: js.UndefOr[scala.Nothing],
+    options: PlusMapsGeocodeOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def geocode(address: String): Unit = js.native
+  def geocode(
+    address: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def geocode(
+    address: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def geocode(
+    address: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def geocode(address: String, options: PlusMapsGeocodeOptions): Unit = js.native
+  def geocode(
+    address: String,
+    options: PlusMapsGeocodeOptions,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def geocode(
     address: String,
     options: PlusMapsGeocodeOptions,
@@ -243,8 +434,66 @@ trait PlusMapsMap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def reverseGeocode(): Unit = js.native
+  def reverseGeocode(
+    point: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def reverseGeocode(
+    point: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def reverseGeocode(
+    point: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def reverseGeocode(point: js.UndefOr[scala.Nothing], options: PlusMapsGeocodeOptions): Unit = js.native
+  def reverseGeocode(
+    point: js.UndefOr[scala.Nothing],
+    options: PlusMapsGeocodeOptions,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def reverseGeocode(
+    point: js.UndefOr[scala.Nothing],
+    options: PlusMapsGeocodeOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def reverseGeocode(
+    point: js.UndefOr[scala.Nothing],
+    options: PlusMapsGeocodeOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def reverseGeocode(point: PlusMapsPoint): Unit = js.native
+  def reverseGeocode(
+    point: PlusMapsPoint,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def reverseGeocode(
+    point: PlusMapsPoint,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def reverseGeocode(
+    point: PlusMapsPoint,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def reverseGeocode(point: PlusMapsPoint, options: PlusMapsGeocodeOptions): Unit = js.native
+  def reverseGeocode(
+    point: PlusMapsPoint,
+    options: PlusMapsGeocodeOptions,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def reverseGeocode(
     point: PlusMapsPoint,
     options: PlusMapsGeocodeOptions,

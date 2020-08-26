@@ -19,14 +19,25 @@ object sliceUtilMod extends js.Object {
     startIndices: js.Array[Double],
     strides: js.Array[Double],
     inputShape: js.Array[Double],
-    axis: Double
+    axis: Double,
+    ellipsisMask: Double
   ): Double = js.native
+  def startIndicesWithElidedDims(startIndices: js.Array[Double], ellipsisInsertionIndex: Double, numElidedAxes: Double): js.Array[Double] = js.native
   def stopForAxis(
     endMask: Double,
     stopIndices: js.Array[Double],
     strides: js.Array[Double],
     inputShape: js.Array[Double],
-    axis: Double
+    axis: Double,
+    ellipsisMask: Double
   ): Double = js.native
+  def stopIndicesWithElidedDims(
+    stopIndices: js.Array[Double],
+    ellipsisInsertionIndex: Double,
+    numElidedAxes: Double,
+    inputShape: js.Array[Double]
+  ): js.Array[Double] = js.native
+  def stridesForAxis(strides: js.Array[Double], axis: Double, ellipsisMask: Double): Double = js.native
+  def stridesWithElidedDims(strides: js.Array[Double], ellipsisInsertionIndex: Double, numElidedAxes: Double): js.Array[Double] = js.native
 }
 

@@ -13,11 +13,12 @@ import scala.scalajs.js.annotation._
   *    are ignored as well.
   *  - "draworder" is ignored.
   */
+@js.native
 trait ObjectLayer extends js.Object {
   /**
     * The name of the Object Layer.
     */
-  var name: String
+  var name: String = js.native
   /**
     * An array of all objects on this Object Layer.
     * 
@@ -37,27 +38,27 @@ trait ObjectLayer extends js.Object {
     * 
     * Rectangles and ellipses have a `rectangle` or `ellipse` property set to `true`.
     */
-  var objects: js.Array[TiledObject]
+  var objects: js.Array[TiledObject] = js.native
   /**
     * The opacity of the layer, between 0 and 1.
     */
-  var opacity: Double
+  var opacity: Double = js.native
   /**
     * The custom properties defined on the Object Layer, keyed by their name.
     */
-  var properties: js.Object
+  var properties: js.Object = js.native
   /**
     * The type of each custom property defined on the Object Layer, keyed by its name.
     */
-  var propertyTypes: js.Object
+  var propertyTypes: js.Object = js.native
   /**
     * The type of the layer, which should be `objectgroup`.
     */
-  var `type`: String
+  var `type`: String = js.native
   /**
     * Whether the layer is shown (`true`) or hidden (`false`).
     */
-  var visible: Boolean
+  var visible: Boolean = js.native
 }
 
 object ObjectLayer {
@@ -75,5 +76,34 @@ object ObjectLayer {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectLayer]
   }
+  @scala.inline
+  implicit class ObjectLayerOps[Self <: ObjectLayer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectsVarargs(value: TiledObject*): Self = this.set("objects", js.Array(value :_*))
+    @scala.inline
+    def setObjects(value: js.Array[TiledObject]): Self = this.set("objects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProperties(value: js.Object): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPropertyTypes(value: js.Object): Self = this.set("propertyTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+  }
+  
 }
 

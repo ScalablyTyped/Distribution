@@ -42,26 +42,54 @@ trait FunctionConfiguration extends js.Object {
 
 object FunctionConfiguration {
   @scala.inline
-  def apply(
-    dataSourceName: ResourceName = null,
-    description: String = null,
-    functionArn: String = null,
-    functionId: String = null,
-    functionVersion: String = null,
-    name: ResourceName = null,
-    requestMappingTemplate: MappingTemplate = null,
-    responseMappingTemplate: MappingTemplate = null
-  ): FunctionConfiguration = {
+  def apply(): FunctionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceName != null) __obj.updateDynamic("dataSourceName")(dataSourceName.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (functionArn != null) __obj.updateDynamic("functionArn")(functionArn.asInstanceOf[js.Any])
-    if (functionId != null) __obj.updateDynamic("functionId")(functionId.asInstanceOf[js.Any])
-    if (functionVersion != null) __obj.updateDynamic("functionVersion")(functionVersion.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (requestMappingTemplate != null) __obj.updateDynamic("requestMappingTemplate")(requestMappingTemplate.asInstanceOf[js.Any])
-    if (responseMappingTemplate != null) __obj.updateDynamic("responseMappingTemplate")(responseMappingTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionConfiguration]
   }
+  @scala.inline
+  implicit class FunctionConfigurationOps[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceName(value: ResourceName): Self = this.set("dataSourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceName: Self = this.set("dataSourceName", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFunctionArn(value: String): Self = this.set("functionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionArn: Self = this.set("functionArn", js.undefined)
+    @scala.inline
+    def setFunctionId(value: String): Self = this.set("functionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionId: Self = this.set("functionId", js.undefined)
+    @scala.inline
+    def setFunctionVersion(value: String): Self = this.set("functionVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionVersion: Self = this.set("functionVersion", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRequestMappingTemplate(value: MappingTemplate): Self = this.set("requestMappingTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestMappingTemplate: Self = this.set("requestMappingTemplate", js.undefined)
+    @scala.inline
+    def setResponseMappingTemplate(value: MappingTemplate): Self = this.set("responseMappingTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseMappingTemplate: Self = this.set("responseMappingTemplate", js.undefined)
+  }
+  
 }
 

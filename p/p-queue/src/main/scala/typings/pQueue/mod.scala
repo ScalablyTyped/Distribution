@@ -4,7 +4,9 @@ import typings.eventemitter3.mod.^
 import typings.pQueue.optionsMod.Options
 import typings.pQueue.optionsMod.QueueAddOptions
 import typings.pQueue.pQueueStrings.active
+import typings.pQueue.pQueueStrings.add
 import typings.pQueue.pQueueStrings.idle
+import typings.pQueue.pQueueStrings.next
 import typings.pQueue.queueMod.Queue
 import typings.pQueue.queueMod.RunFunction
 import typings.std.Partial
@@ -17,7 +19,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */]
-    extends ^[active | idle, js.Any] {
+    extends ^[active | idle | add | next, js.Any] {
     val _carryoverConcurrencyCount: js.Any = js.native
     var _concurrency: js.Any = js.native
     var _initializeIntervalIfNeeded: js.Any = js.native
@@ -25,7 +27,7 @@ object mod extends js.Object {
     val _intervalCap: js.Any = js.native
     var _intervalCount: js.Any = js.native
     var _intervalEnd: js.Any = js.native
-    var _intervalId: js.UndefOr[js.Any] = js.native
+    var _intervalId: js.Any = js.native
     val _isIntervalIgnored: js.Any = js.native
     var _isIntervalPaused: js.Any = js.native
     var _isPaused: js.Any = js.native
@@ -43,8 +45,8 @@ object mod extends js.Object {
     var _resolveIdle: js.Any = js.native
     var _resolvePromises: js.Any = js.native
     val _throwOnTimeout: js.Any = js.native
-    var _timeout: js.UndefOr[js.Any] = js.native
-    var _timeoutId: js.UndefOr[js.Any] = js.native
+    var _timeout: js.Any = js.native
+    var _timeoutId: js.Any = js.native
     var _tryToStartAnother: js.Any = js.native
     /* private */ def _doesConcurrentAllowAnother: js.Any = js.native
     /* private */ def _doesIntervalAllowAnother: js.Any = js.native
@@ -64,7 +66,7 @@ object mod extends js.Object {
       */
     def clear(): Unit = js.native
     def concurrency: Double = js.native
-    def concurrency(newConcurrency: Double): js.Any = js.native
+    def concurrency_=(newConcurrency: Double): Unit = js.native
     /**
       Whether the queue is currently paused.
       */
@@ -100,13 +102,11 @@ object mod extends js.Object {
       Start (or resume) executing enqueued tasks within concurrency limit. No need to call this if queue is not paused (via `options.autoStart = false` or by `.pause()` method.)
       */
     def start(): this.type = js.native
+    def timeout: js.UndefOr[Double] = js.native
     /**
       Set the timeout for future operations.
       */
-    def timeout(): js.Any = js.native
-    def timeout(milliseconds: Double): js.Any = js.native
-    @JSName("timeout")
-    def timeout_Union: js.UndefOr[Double] = js.native
+    def timeout_=(milliseconds: js.UndefOr[Double]): Unit = js.native
   }
   
   @js.native

@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object polylineDecorator extends js.Object {
   def apply(
-    paths: (Polyline_[LineString | MultiLineString, _]) | (js.Array[Polyline_[LineString | MultiLineString, _]])
-  ): PolylineDecorator_ = js.native
-  def apply(
     paths: (Polyline_[LineString | MultiLineString, _]) | (js.Array[Polyline_[LineString | MultiLineString, _]]),
-    options: PolylineDecoratorOptions
+    options: js.UndefOr[PolylineDecoratorOptions]
   ): PolylineDecorator_ = js.native
 }
 

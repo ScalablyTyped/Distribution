@@ -16,36 +16,6 @@ class Color protected ()
     * @param b The b value in argb format
     */
   def this(a: Double, r: Double, g: Double, b: Double) = this()
-  /** The opacity of the color. The range of valid values are an interger between 0 and 255, or a decimal between 0 and 1. */
-  /* CompleteClass */
-  override var a: Double = js.native
-  /** The blue value of the color. The range of valid values is 0 to 255 */
-  /* CompleteClass */
-  override var b: Double = js.native
-  /** The green value of the color. The range of valid values is 0 to 255 */
-  /* CompleteClass */
-  override var g: Double = js.native
-  /** The red value of the color. The range of valid values is 0 to 255 */
-  /* CompleteClass */
-  override var r: Double = js.native
-  /**
-    * Gets the opacity of this color.
-    * @returns The opacity between 0 and 1 of this color.
-    */
-  /* CompleteClass */
-  override def getOpacity(): Double = js.native
-  /**
-    * Converts the color to hex notation.
-    * @returns The hex notation as '#rrggbb' (ignores a).
-    */
-  /* CompleteClass */
-  override def toHex(): String = js.native
-  /**
-    * Converts the color to rgba notation.
-    * @returns The rgba notation as rgba(rr, gg, bb, aa)
-    */
-  /* CompleteClass */
-  override def toRgba(): String = js.native
 }
 
 /* static members */

@@ -38,24 +38,52 @@ trait GetLifecyclePolicyPreviewResponse extends js.Object {
 
 object GetLifecyclePolicyPreviewResponse {
   @scala.inline
-  def apply(
-    lifecyclePolicyText: LifecyclePolicyText = null,
-    nextToken: NextToken = null,
-    previewResults: LifecyclePolicyPreviewResultList = null,
-    registryId: RegistryId = null,
-    repositoryName: RepositoryName = null,
-    status: LifecyclePolicyPreviewStatus = null,
-    summary: LifecyclePolicyPreviewSummary = null
-  ): GetLifecyclePolicyPreviewResponse = {
+  def apply(): GetLifecyclePolicyPreviewResponse = {
     val __obj = js.Dynamic.literal()
-    if (lifecyclePolicyText != null) __obj.updateDynamic("lifecyclePolicyText")(lifecyclePolicyText.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (previewResults != null) __obj.updateDynamic("previewResults")(previewResults.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLifecyclePolicyPreviewResponse]
   }
+  @scala.inline
+  implicit class GetLifecyclePolicyPreviewResponseOps[Self <: GetLifecyclePolicyPreviewResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLifecyclePolicyText(value: LifecyclePolicyText): Self = this.set("lifecyclePolicyText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecyclePolicyText: Self = this.set("lifecyclePolicyText", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setPreviewResultsVarargs(value: LifecyclePolicyPreviewResult*): Self = this.set("previewResults", js.Array(value :_*))
+    @scala.inline
+    def setPreviewResults(value: LifecyclePolicyPreviewResultList): Self = this.set("previewResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewResults: Self = this.set("previewResults", js.undefined)
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+    @scala.inline
+    def setStatus(value: LifecyclePolicyPreviewStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSummary(value: LifecyclePolicyPreviewSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,5 @@
 package typings.electronBuilder.builderMod
 
-import typings.yargs.mod.Argv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("electron-builder/out/builder", "configureBuildCommand")
 @js.native
 object configureBuildCommand extends js.Object {
-  def apply(yargs: Argv[js.Object]): Argv[js.Object] = js.native
+  def apply(
+    yargs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.Argv */ js.Any
+  ): js.Any = js.native
 }
 

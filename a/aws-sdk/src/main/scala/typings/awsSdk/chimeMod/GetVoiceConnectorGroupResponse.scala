@@ -14,10 +14,26 @@ trait GetVoiceConnectorGroupResponse extends js.Object {
 
 object GetVoiceConnectorGroupResponse {
   @scala.inline
-  def apply(VoiceConnectorGroup: VoiceConnectorGroup = null): GetVoiceConnectorGroupResponse = {
+  def apply(): GetVoiceConnectorGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (VoiceConnectorGroup != null) __obj.updateDynamic("VoiceConnectorGroup")(VoiceConnectorGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVoiceConnectorGroupResponse]
   }
+  @scala.inline
+  implicit class GetVoiceConnectorGroupResponseOps[Self <: GetVoiceConnectorGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVoiceConnectorGroup(value: VoiceConnectorGroup): Self = this.set("VoiceConnectorGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoiceConnectorGroup: Self = this.set("VoiceConnectorGroup", js.undefined)
+  }
+  
 }
 

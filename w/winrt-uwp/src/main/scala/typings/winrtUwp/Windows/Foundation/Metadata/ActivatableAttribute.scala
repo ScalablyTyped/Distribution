@@ -5,5 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Indicates that the class is an activatable runtime class. */
+@js.native
 trait ActivatableAttribute extends js.Object
 

@@ -28,6 +28,7 @@ trait InputItem
   def componentWillUnmount_MInputItem(): Unit = js.native
   def focus(): Unit = js.native
   def handleOnChange(value: String): Unit = js.native
+  def handleOnChange(value: String, isMutated: js.UndefOr[scala.Nothing], adjustPos: js.Function): Unit = js.native
   def handleOnChange(value: String, isMutated: Boolean): Unit = js.native
   def handleOnChange(value: String, isMutated: Boolean, adjustPos: js.Function): Unit = js.native
   def onInputBlur(value: String): Unit = js.native

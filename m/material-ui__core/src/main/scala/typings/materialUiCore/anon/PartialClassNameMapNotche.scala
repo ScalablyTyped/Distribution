@@ -16,20 +16,42 @@ trait PartialClassNameMapNotche extends js.Object {
 
 object PartialClassNameMapNotche {
   @scala.inline
-  def apply(
-    disabled: String = null,
-    error: String = null,
-    focused: String = null,
-    legend: String = null,
-    root: String = null
-  ): PartialClassNameMapNotche = {
+  def apply(): PartialClassNameMapNotche = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapNotche]
   }
+  @scala.inline
+  implicit class PartialClassNameMapNotcheOps[Self <: PartialClassNameMapNotche] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFocused(value: String): Self = this.set("focused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocused: Self = this.set("focused", js.undefined)
+    @scala.inline
+    def setLegend(value: String): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

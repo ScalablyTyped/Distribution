@@ -38,24 +38,52 @@ trait LaunchTemplate extends js.Object {
 
 object LaunchTemplate {
   @scala.inline
-  def apply(
-    CreateTime: DateTime = null,
-    CreatedBy: String = null,
-    DefaultVersionNumber: js.UndefOr[Long] = js.undefined,
-    LatestVersionNumber: js.UndefOr[Long] = js.undefined,
-    LaunchTemplateId: String = null,
-    LaunchTemplateName: LaunchTemplateName = null,
-    Tags: TagList = null
-  ): LaunchTemplate = {
+  def apply(): LaunchTemplate = {
     val __obj = js.Dynamic.literal()
-    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultVersionNumber)) __obj.updateDynamic("DefaultVersionNumber")(DefaultVersionNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(LatestVersionNumber)) __obj.updateDynamic("LatestVersionNumber")(LatestVersionNumber.get.asInstanceOf[js.Any])
-    if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
-    if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplate]
   }
+  @scala.inline
+  implicit class LaunchTemplateOps[Self <: LaunchTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    @scala.inline
+    def setCreatedBy(value: String): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    @scala.inline
+    def setDefaultVersionNumber(value: Long): Self = this.set("DefaultVersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultVersionNumber: Self = this.set("DefaultVersionNumber", js.undefined)
+    @scala.inline
+    def setLatestVersionNumber(value: Long): Self = this.set("LatestVersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestVersionNumber: Self = this.set("LatestVersionNumber", js.undefined)
+    @scala.inline
+    def setLaunchTemplateId(value: String): Self = this.set("LaunchTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateId: Self = this.set("LaunchTemplateId", js.undefined)
+    @scala.inline
+    def setLaunchTemplateName(value: LaunchTemplateName): Self = this.set("LaunchTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateName: Self = this.set("LaunchTemplateName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

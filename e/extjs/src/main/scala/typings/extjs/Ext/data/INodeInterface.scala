@@ -2,17 +2,17 @@ package typings.extjs.Ext.data
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.extjs.Ext.IClass
 import typings.extjs.Ext.tree.IPanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait INodeInterface extends IBase {
   /** [Config Option] (Boolean) */
-  var allowDrag: js.UndefOr[Boolean] = js.undefined
+  var allowDrag: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var allowDrop: js.UndefOr[Boolean] = js.undefined
+  var allowDrop: js.UndefOr[Boolean] = js.native
   /** [Method] Inserts node s as the last child node of this node
     * @param node Ext.data.NodeInterface/Ext.data.NodeInterface[]/Object The node or Array of nodes to append
     * @param suppressEvents Boolean True to suppress firering of events.
@@ -26,7 +26,7 @@ trait INodeInterface extends IBase {
       /* commit */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Bubbles up the tree from this node calling the specified function with each node
     * @param fn Function The function to call
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Node.
@@ -39,7 +39,7 @@ trait INodeInterface extends IBase {
       /* args */ js.UndefOr[Array], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Cascades down the tree from this node calling the specified function with each node
     * @param fn Function The function to call
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Node.
@@ -52,15 +52,15 @@ trait INodeInterface extends IBase {
       /* args */ js.UndefOr[Array], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (Boolean) */
-  var checked: js.UndefOr[Boolean] = js.undefined
+  var checked: js.UndefOr[Boolean] = js.native
   /** [Property] (Ext.data.NodeInterface[]) */
-  var childNodes: js.UndefOr[Array] = js.undefined
+  var childNodes: js.UndefOr[Array] = js.native
   /** [Config Option] (Ext.data.NodeInterface[]) */
-  var children: js.UndefOr[Array] = js.undefined
+  var children: js.UndefOr[Array] = js.native
   /** [Config Option] (String) */
-  var cls: js.UndefOr[String] = js.undefined
+  var cls: js.UndefOr[String] = js.native
   /** [Method] Collapse this node
     * @param recursive Boolean True to recursively collapse all the children
     * @param callback Function The function to execute once the collapse completes
@@ -73,7 +73,7 @@ trait INodeInterface extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Collapse all the children of this node
     * @param recursive Function True to recursively collapse all the children
     * @param callback Function The function to execute once all the children are collapsed
@@ -86,12 +86,12 @@ trait INodeInterface extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns true if this node is an ancestor at any point of the passed node
     * @param node Ext.data.NodeInterface
     * @returns Boolean
     */
-  var contains: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Boolean]] = js.undefined
+  var contains: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Boolean]] = js.native
   /** [Method] Creates a copy clone of this Node
     * @param id String A new id, defaults to this Node's id.
     * @param deep Boolean True to recursively copy all child Nodes into the new Node. False to copy without child Nodes.
@@ -99,18 +99,18 @@ trait INodeInterface extends IBase {
     */
   var copy: js.UndefOr[
     js.Function2[/* id */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Ensures that the passed object is an instance of a Record with the NodeInterface applied
     * @param node Object
     * @returns Ext.data.NodeInterface
     */
-  var createNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var createNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], this.type]] = js.native
   /** [Config Option] (Number) */
-  var depth: js.UndefOr[Double] = js.undefined
+  var depth: js.UndefOr[Double] = js.native
   /** [Method] Destroys the node
     * @param silent Object
     */
-  var destroy: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var destroy: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Interates the child nodes of this node calling the specified function with each node
     * @param fn Function The function to call
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Node in iteration.
@@ -123,7 +123,7 @@ trait INodeInterface extends IBase {
       /* args */ js.UndefOr[Array], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Expand this node
     * @param recursive Boolean True to recursively expand all the children
     * @param callback Function The function to execute once the expand completes
@@ -136,7 +136,7 @@ trait INodeInterface extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Expand all the children of this node
     * @param recursive Boolean True to recursively expand all the children
     * @param callback Function The function to execute once all the children are expanded
@@ -149,11 +149,11 @@ trait INodeInterface extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (Boolean) */
-  var expandable: js.UndefOr[Boolean] = js.undefined
+  var expandable: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var expanded: js.UndefOr[Boolean] = js.undefined
+  var expanded: js.UndefOr[Boolean] = js.native
   /** [Method] Finds the first child that has the attribute with the specified value
     * @param attribute String The attribute name
     * @param value Object The value to search for
@@ -167,7 +167,7 @@ trait INodeInterface extends IBase {
       /* deep */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Finds the first child by a custom function
     * @param fn Function A function which must return true if the passed Node is the required Node.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Node being tested.
@@ -181,22 +181,22 @@ trait INodeInterface extends IBase {
       /* deep */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Property] (Ext.data.NodeInterface) */
-  var firstChild: js.UndefOr[INodeInterface] = js.undefined
+  var firstChild: js.UndefOr[INodeInterface] = js.native
   /** [Method] Returns the child node at the specified index
     * @param index Number
     * @returns Ext.data.NodeInterface
     */
-  var getChildAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.undefined
+  var getChildAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.native
   /** [Method] Returns depth of this node the root node has a depth of 0
     * @returns Number
     */
-  var getDepth: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getDepth: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the tree this node is in
     * @returns Ext.tree.Panel The tree panel which owns this node.
     */
-  var getOwnerTree: js.UndefOr[js.Function0[IPanel]] = js.undefined
+  var getOwnerTree: js.UndefOr[js.Function0[IPanel]] = js.native
   /** [Method] Gets the hierarchical path from the root of the current node
     * @param field String The field to construct the path from. Defaults to the model idProperty.
     * @param separator String A separator to use.
@@ -204,31 +204,31 @@ trait INodeInterface extends IBase {
     */
   var getPath: js.UndefOr[
     js.Function2[/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String], String]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns true if this node has one or more child nodes else false
     * @returns Boolean
     */
-  var hasChildNodes: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var hasChildNodes: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Config Option] (String) */
-  var href: js.UndefOr[String] = js.undefined
+  var href: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var hrefTarget: js.UndefOr[String] = js.undefined
+  var hrefTarget: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[String] = js.undefined
+  var iconCls: js.UndefOr[String] = js.native
   /** [Config Option] (Number) */
-  var index: js.UndefOr[Double] = js.undefined
+  var index: js.UndefOr[Double] = js.native
   /** [Method] Returns the index of a child node
     * @param node Ext.data.NodeInterface
     * @returns Number The index of the node or -1 if it was not found
     */
-  var indexOf: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Double]] = js.undefined
+  var indexOf: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Double]] = js.native
   /** [Method] Returns the index of a child node that matches the id
     * @param id String The id of the node to find
     * @returns Number The index of the node or -1 if it was not found
     */
-  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.undefined
+  var indexOfId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Double]] = js.native
   /** [Method] Inserts the first node before the second node in this nodes childNodes collection
     * @param node Ext.data.NodeInterface The node to insert
     * @param refNode Ext.data.NodeInterface The node to insert before (if null the node is appended)
@@ -236,7 +236,7 @@ trait INodeInterface extends IBase {
     */
   var insertBefore: js.UndefOr[
     js.Function2[/* node */ js.UndefOr[this.type], /* refNode */ js.UndefOr[this.type], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Inserts a node into this node
     * @param index Number The zero-based index to insert the node at
     * @param node Ext.data.NodeInterface The node to insert
@@ -244,78 +244,78 @@ trait INodeInterface extends IBase {
     */
   var insertChild: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[Double], /* node */ js.UndefOr[this.type], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns true if the passed node is an ancestor at any point of this node
     * @param node Ext.data.NodeInterface
     * @returns Boolean
     */
-  var isAncestor: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Boolean]] = js.undefined
+  var isAncestor: js.UndefOr[js.Function1[/* node */ js.UndefOr[this.type], Boolean]] = js.native
   /** [Method] Returns true if this node has one or more child nodes or if the expandable node attribute is explicitly specified as
     * @returns Boolean
     */
-  var isExpandable: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isExpandable: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns true if this node is expaned
     * @returns Boolean
     */
-  var isExpanded: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isExpanded: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Config Option] (Boolean) */
-  var isFirst: js.UndefOr[Boolean] = js.undefined
+  var isFirst: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var isLast: js.UndefOr[Boolean] = js.undefined
+  var isLast: js.UndefOr[Boolean] = js.native
   /** [Method] Returns true if this node is a leaf
     * @returns Boolean
     */
-  var isLeaf: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isLeaf: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns true if this node is loaded
     * @returns Boolean
     */
-  var isLoaded: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isLoaded: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns true if this node is loading
     * @returns Boolean
     */
-  var isLoading: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isLoading: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Property] (Boolean) */
-  var isNode: js.UndefOr[Boolean] = js.undefined
+  var isNode: js.UndefOr[Boolean] = js.native
   /** [Method] Returns true if this node is the root node
     * @returns Boolean
     */
-  var isRoot: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isRoot: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns true if this node is visible
     * @returns Boolean
     */
-  var isVisible: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isVisible: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Property] (Ext.data.NodeInterface) */
-  var lastChild: js.UndefOr[INodeInterface] = js.undefined
+  var lastChild: js.UndefOr[INodeInterface] = js.native
   /** [Config Option] (Boolean) */
-  var leaf: js.UndefOr[Boolean] = js.undefined
+  var leaf: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var loaded: js.UndefOr[Boolean] = js.undefined
+  var loaded: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var loading: js.UndefOr[Boolean] = js.undefined
+  var loading: js.UndefOr[Boolean] = js.native
   /** [Property] (Ext.data.NodeInterface) */
-  var nextSibling: js.UndefOr[INodeInterface] = js.undefined
+  var nextSibling: js.UndefOr[INodeInterface] = js.native
   /** [Config Option] (String) */
-  var parentId: js.UndefOr[String] = js.undefined
+  var parentId: js.UndefOr[String] = js.native
   /** [Property] (Ext.data.NodeInterface) */
-  var parentNode: js.UndefOr[INodeInterface] = js.undefined
+  var parentNode: js.UndefOr[INodeInterface] = js.native
   /** [Property] (Ext.data.NodeInterface) */
-  var previousSibling: js.UndefOr[INodeInterface] = js.undefined
+  var previousSibling: js.UndefOr[INodeInterface] = js.native
   /** [Config Option] (Number) */
-  var qshowDelay: js.UndefOr[Double] = js.undefined
+  var qshowDelay: js.UndefOr[Double] = js.native
   /** [Config Option] (String) */
-  var qtip: js.UndefOr[String] = js.undefined
+  var qtip: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var qtitle: js.UndefOr[String] = js.undefined
+  var qtitle: js.UndefOr[String] = js.native
   /** [Method] Removes this node from its parent
     * @param destroy Boolean True to destroy the node upon removal.
     * @returns Ext.data.NodeInterface this
     */
-  var remove: js.UndefOr[js.Function1[/* destroy */ js.UndefOr[Boolean], this.type]] = js.undefined
+  var remove: js.UndefOr[js.Function1[/* destroy */ js.UndefOr[Boolean], this.type]] = js.native
   /** [Method] Removes all child nodes from this node
     * @param destroy Boolean True to destroy the node upon removal.
     * @returns Ext.data.NodeInterface this
     */
-  var removeAll: js.UndefOr[js.Function1[/* destroy */ js.UndefOr[Boolean], this.type]] = js.undefined
+  var removeAll: js.UndefOr[js.Function1[/* destroy */ js.UndefOr[Boolean], this.type]] = js.native
   /** [Method] Removes a child node from this node
     * @param node Ext.data.NodeInterface The node to remove
     * @param destroy Boolean True to destroy the node upon removal.
@@ -323,7 +323,7 @@ trait INodeInterface extends IBase {
     */
   var removeChild: js.UndefOr[
     js.Function2[/* node */ js.UndefOr[this.type], /* destroy */ js.UndefOr[Boolean], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Replaces one child node in this node with another
     * @param newChild Ext.data.NodeInterface The replacement node
     * @param oldChild Ext.data.NodeInterface The node to replace
@@ -335,11 +335,11 @@ trait INodeInterface extends IBase {
       /* oldChild */ js.UndefOr[this.type], 
       this.type
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (Boolean) */
-  var root: js.UndefOr[Boolean] = js.undefined
+  var root: js.UndefOr[Boolean] = js.native
   /** [Method] Creates an object representation of this node including its children  */
-  var serialize: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var serialize: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Sorts this nodes children using the supplied sort function
     * @param fn Function A function which, when passed two Nodes, returns -1, 0 or 1 depending upon required sort order.
     * @param recursive Boolean True to apply this sort recursively
@@ -352,194 +352,340 @@ trait INodeInterface extends IBase {
       /* suppressEvent */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (String) */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /** [Method] Updates general data of this node like isFirst isLast depth
     * @param commit Boolean
     * @param info Object The info to update. May contain any of the following
     */
   var updateInfo: js.UndefOr[
     js.Function2[/* commit */ js.UndefOr[Boolean], /* info */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
 }
 
 object INodeInterface {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    allowDrag: js.UndefOr[Boolean] = js.undefined,
-    allowDrop: js.UndefOr[Boolean] = js.undefined,
-    alternateClassName: js.Any = null,
-    appendChild: (/* node */ js.UndefOr[js.Any], /* suppressEvents */ js.UndefOr[Boolean], /* commit */ js.UndefOr[Boolean]) => INodeInterface = null,
-    bubble: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    cascadeBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    childNodes: Array = null,
-    children: Array = null,
-    cls: String = null,
-    collapse: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    collapseChildren: (/* recursive */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    config: js.Any = null,
-    contains: /* node */ js.UndefOr[INodeInterface] => Boolean = null,
-    copy: (/* id */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
-    createNode: /* node */ js.UndefOr[js.Any] => INodeInterface = null,
-    depth: js.UndefOr[Double] = js.undefined,
-    destroy: /* silent */ js.UndefOr[js.Any] => Unit = null,
-    eachChild: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit = null,
-    expand: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    expandChildren: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    expandable: js.UndefOr[Boolean] = js.undefined,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    extend: String = null,
-    findChild: (/* attribute */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
-    findChildBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface = null,
-    firstChild: INodeInterface = null,
-    getChildAt: /* index */ js.UndefOr[Double] => INodeInterface = null,
-    getDepth: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getOwnerTree: () => IPanel = null,
-    getPath: (/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String]) => String = null,
-    hasChildNodes: () => Boolean = null,
-    href: String = null,
-    hrefTarget: String = null,
-    icon: String = null,
-    iconCls: String = null,
-    index: js.UndefOr[Double] = js.undefined,
-    indexOf: /* node */ js.UndefOr[INodeInterface] => Double = null,
-    indexOfId: /* id */ js.UndefOr[String] => Double = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => INodeInterface = null,
-    insertBefore: (/* node */ js.UndefOr[INodeInterface], /* refNode */ js.UndefOr[INodeInterface]) => INodeInterface = null,
-    insertChild: (/* index */ js.UndefOr[Double], /* node */ js.UndefOr[INodeInterface]) => INodeInterface = null,
-    isAncestor: /* node */ js.UndefOr[INodeInterface] => Boolean = null,
-    isExpandable: () => Boolean = null,
-    isExpanded: () => Boolean = null,
-    isFirst: js.UndefOr[Boolean] = js.undefined,
-    isLast: js.UndefOr[Boolean] = js.undefined,
-    isLeaf: () => Boolean = null,
-    isLoaded: () => Boolean = null,
-    isLoading: () => Boolean = null,
-    isNode: js.UndefOr[Boolean] = js.undefined,
-    isRoot: () => Boolean = null,
-    isVisible: () => Boolean = null,
-    lastChild: INodeInterface = null,
-    leaf: js.UndefOr[Boolean] = js.undefined,
-    loaded: js.UndefOr[Boolean] = js.undefined,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    mixins: js.Any = null,
-    nextSibling: INodeInterface = null,
-    parentId: String = null,
-    parentNode: INodeInterface = null,
-    previousSibling: INodeInterface = null,
-    qshowDelay: js.UndefOr[Double] = js.undefined,
-    qtip: String = null,
-    qtitle: String = null,
-    remove: /* destroy */ js.UndefOr[Boolean] => INodeInterface = null,
-    removeAll: /* destroy */ js.UndefOr[Boolean] => INodeInterface = null,
-    removeChild: (/* node */ js.UndefOr[INodeInterface], /* destroy */ js.UndefOr[Boolean]) => INodeInterface = null,
-    replaceChild: (/* newChild */ js.UndefOr[INodeInterface], /* oldChild */ js.UndefOr[INodeInterface]) => INodeInterface = null,
-    requires: Array = null,
-    root: js.UndefOr[Boolean] = js.undefined,
-    self: IClass = null,
-    serialize: () => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (/* fn */ js.UndefOr[js.Any], /* recursive */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit = null,
-    statics: js.Any = null,
-    text: String = null,
-    updateInfo: (/* commit */ js.UndefOr[Boolean], /* info */ js.UndefOr[js.Any]) => Unit = null,
-    uses: Array = null
-  ): INodeInterface = {
+  def apply(): INodeInterface = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop.get.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (appendChild != null) __obj.updateDynamic("appendChild")(js.Any.fromFunction3(appendChild))
-    if (bubble != null) __obj.updateDynamic("bubble")(js.Any.fromFunction3(bubble))
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (cascadeBy != null) __obj.updateDynamic("cascadeBy")(js.Any.fromFunction3(cascadeBy))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
-    if (childNodes != null) __obj.updateDynamic("childNodes")(childNodes.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
-    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction3(collapse))
-    if (collapseChildren != null) __obj.updateDynamic("collapseChildren")(js.Any.fromFunction3(collapseChildren))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
-    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction2(copy))
-    if (createNode != null) __obj.updateDynamic("createNode")(js.Any.fromFunction1(createNode))
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (eachChild != null) __obj.updateDynamic("eachChild")(js.Any.fromFunction3(eachChild))
-    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction3(expand))
-    if (expandChildren != null) __obj.updateDynamic("expandChildren")(js.Any.fromFunction3(expandChildren))
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (findChild != null) __obj.updateDynamic("findChild")(js.Any.fromFunction3(findChild))
-    if (findChildBy != null) __obj.updateDynamic("findChildBy")(js.Any.fromFunction3(findChildBy))
-    if (firstChild != null) __obj.updateDynamic("firstChild")(firstChild.asInstanceOf[js.Any])
-    if (getChildAt != null) __obj.updateDynamic("getChildAt")(js.Any.fromFunction1(getChildAt))
-    if (getDepth != null) __obj.updateDynamic("getDepth")(js.Any.fromFunction0(getDepth))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getOwnerTree != null) __obj.updateDynamic("getOwnerTree")(js.Any.fromFunction0(getOwnerTree))
-    if (getPath != null) __obj.updateDynamic("getPath")(js.Any.fromFunction2(getPath))
-    if (hasChildNodes != null) __obj.updateDynamic("hasChildNodes")(js.Any.fromFunction0(hasChildNodes))
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (hrefTarget != null) __obj.updateDynamic("hrefTarget")(hrefTarget.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
-    if (indexOfId != null) __obj.updateDynamic("indexOfId")(js.Any.fromFunction1(indexOfId))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(js.Any.fromFunction2(insertBefore))
-    if (insertChild != null) __obj.updateDynamic("insertChild")(js.Any.fromFunction2(insertChild))
-    if (isAncestor != null) __obj.updateDynamic("isAncestor")(js.Any.fromFunction1(isAncestor))
-    if (isExpandable != null) __obj.updateDynamic("isExpandable")(js.Any.fromFunction0(isExpandable))
-    if (isExpanded != null) __obj.updateDynamic("isExpanded")(js.Any.fromFunction0(isExpanded))
-    if (!js.isUndefined(isFirst)) __obj.updateDynamic("isFirst")(isFirst.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLast)) __obj.updateDynamic("isLast")(isLast.get.asInstanceOf[js.Any])
-    if (isLeaf != null) __obj.updateDynamic("isLeaf")(js.Any.fromFunction0(isLeaf))
-    if (isLoaded != null) __obj.updateDynamic("isLoaded")(js.Any.fromFunction0(isLoaded))
-    if (isLoading != null) __obj.updateDynamic("isLoading")(js.Any.fromFunction0(isLoading))
-    if (!js.isUndefined(isNode)) __obj.updateDynamic("isNode")(isNode.get.asInstanceOf[js.Any])
-    if (isRoot != null) __obj.updateDynamic("isRoot")(js.Any.fromFunction0(isRoot))
-    if (isVisible != null) __obj.updateDynamic("isVisible")(js.Any.fromFunction0(isVisible))
-    if (lastChild != null) __obj.updateDynamic("lastChild")(lastChild.asInstanceOf[js.Any])
-    if (!js.isUndefined(leaf)) __obj.updateDynamic("leaf")(leaf.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (nextSibling != null) __obj.updateDynamic("nextSibling")(nextSibling.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode.asInstanceOf[js.Any])
-    if (previousSibling != null) __obj.updateDynamic("previousSibling")(previousSibling.asInstanceOf[js.Any])
-    if (!js.isUndefined(qshowDelay)) __obj.updateDynamic("qshowDelay")(qshowDelay.get.asInstanceOf[js.Any])
-    if (qtip != null) __obj.updateDynamic("qtip")(qtip.asInstanceOf[js.Any])
-    if (qtitle != null) __obj.updateDynamic("qtitle")(qtitle.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
-    if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction1(removeAll))
-    if (removeChild != null) __obj.updateDynamic("removeChild")(js.Any.fromFunction2(removeChild))
-    if (replaceChild != null) __obj.updateDynamic("replaceChild")(js.Any.fromFunction2(replaceChild))
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.get.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction0(serialize))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction3(sort))
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (updateInfo != null) __obj.updateDynamic("updateInfo")(js.Any.fromFunction2(updateInfo))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[INodeInterface]
   }
+  @scala.inline
+  implicit class INodeInterfaceOps[Self <: INodeInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowDrag(value: Boolean): Self = this.set("allowDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDrag: Self = this.set("allowDrag", js.undefined)
+    @scala.inline
+    def setAllowDrop(value: Boolean): Self = this.set("allowDrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDrop: Self = this.set("allowDrop", js.undefined)
+    @scala.inline
+    def setAppendChild(
+      value: (/* node */ js.UndefOr[js.Any], /* suppressEvents */ js.UndefOr[Boolean], /* commit */ js.UndefOr[Boolean]) => INodeInterface
+    ): Self = this.set("appendChild", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAppendChild: Self = this.set("appendChild", js.undefined)
+    @scala.inline
+    def setBubble(
+      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit
+    ): Self = this.set("bubble", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteBubble: Self = this.set("bubble", js.undefined)
+    @scala.inline
+    def setCascadeBy(
+      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit
+    ): Self = this.set("cascadeBy", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCascadeBy: Self = this.set("cascadeBy", js.undefined)
+    @scala.inline
+    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecked: Self = this.set("checked", js.undefined)
+    @scala.inline
+    def setChildNodes(value: Array): Self = this.set("childNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildNodes: Self = this.set("childNodes", js.undefined)
+    @scala.inline
+    def setChildren(value: Array): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setCls(value: String): Self = this.set("cls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCls: Self = this.set("cls", js.undefined)
+    @scala.inline
+    def setCollapse(
+      value: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("collapse", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    @scala.inline
+    def setCollapseChildren(
+      value: (/* recursive */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("collapseChildren", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCollapseChildren: Self = this.set("collapseChildren", js.undefined)
+    @scala.inline
+    def setContains(value: /* node */ js.UndefOr[INodeInterface] => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteContains: Self = this.set("contains", js.undefined)
+    @scala.inline
+    def setCopy(value: (/* id */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean]) => INodeInterface): Self = this.set("copy", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCopy: Self = this.set("copy", js.undefined)
+    @scala.inline
+    def setCreateNode(value: /* node */ js.UndefOr[js.Any] => INodeInterface): Self = this.set("createNode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCreateNode: Self = this.set("createNode", js.undefined)
+    @scala.inline
+    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepth: Self = this.set("depth", js.undefined)
+    @scala.inline
+    def setDestroy(value: /* silent */ js.UndefOr[js.Any] => Unit): Self = this.set("destroy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setEachChild(
+      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit
+    ): Self = this.set("eachChild", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteEachChild: Self = this.set("eachChild", js.undefined)
+    @scala.inline
+    def setExpand(
+      value: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("expand", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteExpand: Self = this.set("expand", js.undefined)
+    @scala.inline
+    def setExpandChildren(
+      value: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("expandChildren", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteExpandChildren: Self = this.set("expandChildren", js.undefined)
+    @scala.inline
+    def setExpandable(value: Boolean): Self = this.set("expandable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandable: Self = this.set("expandable", js.undefined)
+    @scala.inline
+    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    @scala.inline
+    def setFindChild(
+      value: (/* attribute */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface
+    ): Self = this.set("findChild", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteFindChild: Self = this.set("findChild", js.undefined)
+    @scala.inline
+    def setFindChildBy(
+      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface
+    ): Self = this.set("findChildBy", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteFindChildBy: Self = this.set("findChildBy", js.undefined)
+    @scala.inline
+    def setFirstChild(value: INodeInterface): Self = this.set("firstChild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstChild: Self = this.set("firstChild", js.undefined)
+    @scala.inline
+    def setGetChildAt(value: /* index */ js.UndefOr[Double] => INodeInterface): Self = this.set("getChildAt", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetChildAt: Self = this.set("getChildAt", js.undefined)
+    @scala.inline
+    def setGetDepth(value: () => Double): Self = this.set("getDepth", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDepth: Self = this.set("getDepth", js.undefined)
+    @scala.inline
+    def setGetOwnerTree(value: () => IPanel): Self = this.set("getOwnerTree", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOwnerTree: Self = this.set("getOwnerTree", js.undefined)
+    @scala.inline
+    def setGetPath(value: (/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String]) => String): Self = this.set("getPath", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetPath: Self = this.set("getPath", js.undefined)
+    @scala.inline
+    def setHasChildNodes(value: () => Boolean): Self = this.set("hasChildNodes", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteHasChildNodes: Self = this.set("hasChildNodes", js.undefined)
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHref: Self = this.set("href", js.undefined)
+    @scala.inline
+    def setHrefTarget(value: String): Self = this.set("hrefTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHrefTarget: Self = this.set("hrefTarget", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconCls(value: String): Self = this.set("iconCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconCls: Self = this.set("iconCls", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setIndexOf(value: /* node */ js.UndefOr[INodeInterface] => Double): Self = this.set("indexOf", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIndexOf: Self = this.set("indexOf", js.undefined)
+    @scala.inline
+    def setIndexOfId(value: /* id */ js.UndefOr[String] => Double): Self = this.set("indexOfId", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIndexOfId: Self = this.set("indexOfId", js.undefined)
+    @scala.inline
+    def setInsertBefore(
+      value: (/* node */ js.UndefOr[INodeInterface], /* refNode */ js.UndefOr[INodeInterface]) => INodeInterface
+    ): Self = this.set("insertBefore", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteInsertBefore: Self = this.set("insertBefore", js.undefined)
+    @scala.inline
+    def setInsertChild(value: (/* index */ js.UndefOr[Double], /* node */ js.UndefOr[INodeInterface]) => INodeInterface): Self = this.set("insertChild", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteInsertChild: Self = this.set("insertChild", js.undefined)
+    @scala.inline
+    def setIsAncestor(value: /* node */ js.UndefOr[INodeInterface] => Boolean): Self = this.set("isAncestor", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsAncestor: Self = this.set("isAncestor", js.undefined)
+    @scala.inline
+    def setIsExpandable(value: () => Boolean): Self = this.set("isExpandable", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsExpandable: Self = this.set("isExpandable", js.undefined)
+    @scala.inline
+    def setIsExpanded(value: () => Boolean): Self = this.set("isExpanded", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsExpanded: Self = this.set("isExpanded", js.undefined)
+    @scala.inline
+    def setIsFirst(value: Boolean): Self = this.set("isFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFirst: Self = this.set("isFirst", js.undefined)
+    @scala.inline
+    def setIsLast(value: Boolean): Self = this.set("isLast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLast: Self = this.set("isLast", js.undefined)
+    @scala.inline
+    def setIsLeaf(value: () => Boolean): Self = this.set("isLeaf", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsLeaf: Self = this.set("isLeaf", js.undefined)
+    @scala.inline
+    def setIsLoaded(value: () => Boolean): Self = this.set("isLoaded", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsLoaded: Self = this.set("isLoaded", js.undefined)
+    @scala.inline
+    def setIsLoading(value: () => Boolean): Self = this.set("isLoading", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsLoading: Self = this.set("isLoading", js.undefined)
+    @scala.inline
+    def setIsNode(value: Boolean): Self = this.set("isNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsNode: Self = this.set("isNode", js.undefined)
+    @scala.inline
+    def setIsRoot(value: () => Boolean): Self = this.set("isRoot", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsRoot: Self = this.set("isRoot", js.undefined)
+    @scala.inline
+    def setIsVisible(value: () => Boolean): Self = this.set("isVisible", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsVisible: Self = this.set("isVisible", js.undefined)
+    @scala.inline
+    def setLastChild(value: INodeInterface): Self = this.set("lastChild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastChild: Self = this.set("lastChild", js.undefined)
+    @scala.inline
+    def setLeaf(value: Boolean): Self = this.set("leaf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaf: Self = this.set("leaf", js.undefined)
+    @scala.inline
+    def setLoaded(value: Boolean): Self = this.set("loaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoaded: Self = this.set("loaded", js.undefined)
+    @scala.inline
+    def setLoading(value: Boolean): Self = this.set("loading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoading: Self = this.set("loading", js.undefined)
+    @scala.inline
+    def setNextSibling(value: INodeInterface): Self = this.set("nextSibling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextSibling: Self = this.set("nextSibling", js.undefined)
+    @scala.inline
+    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setParentNode(value: INodeInterface): Self = this.set("parentNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentNode: Self = this.set("parentNode", js.undefined)
+    @scala.inline
+    def setPreviousSibling(value: INodeInterface): Self = this.set("previousSibling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousSibling: Self = this.set("previousSibling", js.undefined)
+    @scala.inline
+    def setQshowDelay(value: Double): Self = this.set("qshowDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQshowDelay: Self = this.set("qshowDelay", js.undefined)
+    @scala.inline
+    def setQtip(value: String): Self = this.set("qtip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQtip: Self = this.set("qtip", js.undefined)
+    @scala.inline
+    def setQtitle(value: String): Self = this.set("qtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQtitle: Self = this.set("qtitle", js.undefined)
+    @scala.inline
+    def setRemove(value: /* destroy */ js.UndefOr[Boolean] => INodeInterface): Self = this.set("remove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setRemoveAll(value: /* destroy */ js.UndefOr[Boolean] => INodeInterface): Self = this.set("removeAll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemoveAll: Self = this.set("removeAll", js.undefined)
+    @scala.inline
+    def setRemoveChild(
+      value: (/* node */ js.UndefOr[INodeInterface], /* destroy */ js.UndefOr[Boolean]) => INodeInterface
+    ): Self = this.set("removeChild", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRemoveChild: Self = this.set("removeChild", js.undefined)
+    @scala.inline
+    def setReplaceChild(
+      value: (/* newChild */ js.UndefOr[INodeInterface], /* oldChild */ js.UndefOr[INodeInterface]) => INodeInterface
+    ): Self = this.set("replaceChild", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteReplaceChild: Self = this.set("replaceChild", js.undefined)
+    @scala.inline
+    def setRoot(value: Boolean): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSerialize(value: () => Unit): Self = this.set("serialize", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteSerialize: Self = this.set("serialize", js.undefined)
+    @scala.inline
+    def setSort(
+      value: (/* fn */ js.UndefOr[js.Any], /* recursive */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
+    ): Self = this.set("sort", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setUpdateInfo(value: (/* commit */ js.UndefOr[Boolean], /* info */ js.UndefOr[js.Any]) => Unit): Self = this.set("updateInfo", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUpdateInfo: Self = this.set("updateInfo", js.undefined)
+  }
+  
 }
 

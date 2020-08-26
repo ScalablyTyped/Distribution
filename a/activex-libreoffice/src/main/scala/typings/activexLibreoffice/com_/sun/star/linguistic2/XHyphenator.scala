@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.linguistic2.LinguProperties
   * @see com.sun.star.linguistic2.XSupportedLocales
   */
+@js.native
 trait XHyphenator extends XSupportedLocales {
   /**
     * returns information about all possible hyphenation positions of a word.
@@ -32,7 +33,7 @@ trait XHyphenator extends XSupportedLocales {
     * @see com.sun.star.linguistic2.XPossibleHyphens
     * @see com.sun.star.lang.Locale
     */
-  def createPossibleHyphens(aWord: String, aLocale: Locale, aProperties: PropertyValues): XPossibleHyphens
+  def createPossibleHyphens(aWord: String, aLocale: Locale, aProperties: PropertyValues): XPossibleHyphens = js.native
   /**
     * tries to find a valid hyphenation position relative to the beginning of a word.
     *
@@ -45,7 +46,7 @@ trait XHyphenator extends XSupportedLocales {
     * @see com.sun.star.linguistic2.XHyphenatedWord
     * @see com.sun.star.lang.Locale
     */
-  def hyphenate(aWord: String, aLocale: Locale, nMaxLeading: Double, aProperties: PropertyValues): XHyphenatedWord
+  def hyphenate(aWord: String, aLocale: Locale, nMaxLeading: Double, aProperties: PropertyValues): XHyphenatedWord = js.native
   /**
     * checks whether hyphenation at a position in a word will result in an alternative spelling or not.
     *
@@ -61,7 +62,7 @@ trait XHyphenator extends XSupportedLocales {
     * @see com.sun.star.linguistic2.XHyphenatedWord
     * @see com.sun.star.lang.Locale
     */
-  def queryAlternativeSpelling(aWord: String, aLocale: Locale, nIndex: Double, aProperties: PropertyValues): XHyphenatedWord
+  def queryAlternativeSpelling(aWord: String, aLocale: Locale, nIndex: Double, aProperties: PropertyValues): XHyphenatedWord = js.native
 }
 
 object XHyphenator {
@@ -80,5 +81,24 @@ object XHyphenator {
     val __obj = js.Dynamic.literal(Locales = Locales.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createPossibleHyphens = js.Any.fromFunction3(createPossibleHyphens), getLocales = js.Any.fromFunction0(getLocales), hasLocale = js.Any.fromFunction1(hasLocale), hyphenate = js.Any.fromFunction4(hyphenate), queryAlternativeSpelling = js.Any.fromFunction4(queryAlternativeSpelling), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XHyphenator]
   }
+  @scala.inline
+  implicit class XHyphenatorOps[Self <: XHyphenator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatePossibleHyphens(value: (String, Locale, PropertyValues) => XPossibleHyphens): Self = this.set("createPossibleHyphens", js.Any.fromFunction3(value))
+    @scala.inline
+    def setHyphenate(value: (String, Locale, Double, PropertyValues) => XHyphenatedWord): Self = this.set("hyphenate", js.Any.fromFunction4(value))
+    @scala.inline
+    def setQueryAlternativeSpelling(value: (String, Locale, Double, PropertyValues) => XHyphenatedWord): Self = this.set("queryAlternativeSpelling", js.Any.fromFunction4(value))
+  }
+  
 }
 

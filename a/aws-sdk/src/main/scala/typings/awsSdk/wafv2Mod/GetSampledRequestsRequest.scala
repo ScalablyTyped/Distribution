@@ -19,7 +19,7 @@ trait GetSampledRequestsRequest extends js.Object {
     */
   var Scope: typings.awsSdk.wafv2Mod.Scope = js.native
   /**
-    * The start date and time and the end date and time of the range for which you want GetSampledRequests to return a sample of requests. Specify the date and time in the following format: "2016-09-27T14:50Z". You can specify any time range in the previous three hours.
+    * The start date and time and the end date and time of the range for which you want GetSampledRequests to return a sample of requests. You must specify the times in Coordinated Universal Time (UTC) format. UTC format includes the special designator, Z. For example, "2016-09-27T14:50Z". You can specify any time range in the previous three hours.
     */
   var TimeWindow: typings.awsSdk.wafv2Mod.TimeWindow = js.native
   /**
@@ -40,5 +40,28 @@ object GetSampledRequestsRequest {
     val __obj = js.Dynamic.literal(MaxItems = MaxItems.asInstanceOf[js.Any], RuleMetricName = RuleMetricName.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any], TimeWindow = TimeWindow.asInstanceOf[js.Any], WebAclArn = WebAclArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSampledRequestsRequest]
   }
+  @scala.inline
+  implicit class GetSampledRequestsRequestOps[Self <: GetSampledRequestsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxItems(value: ListMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleMetricName(value: MetricName): Self = this.set("RuleMetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeWindow(value: TimeWindow): Self = this.set("TimeWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebAclArn(value: ResourceArn): Self = this.set("WebAclArn", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Event & {  detail  :D,   target  :std.EventTarget & aframe.aframe.Entity<aframe.aframe.ObjectMap<aframe.aframe.Component<any, aframe.aframe.System<any>>>>} */
+/* Inlined std.Event & {  detail :D,   target :std.EventTarget & aframe.aframe.Entity<aframe.aframe.ObjectMap<aframe.aframe.Component<any, aframe.aframe.System<any>>>>} */
 @js.native
 trait DetailEvent[D] extends js.Object {
   val AT_TARGET: Double = js.native
@@ -62,6 +62,7 @@ trait DetailEvent[D] extends js.Object {
     */
   def composedPath(): js.Array[EventTarget] = js.native
   def initEvent(`type`: String): Unit = js.native
+  def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
   /**

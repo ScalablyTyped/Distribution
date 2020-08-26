@@ -5,24 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventSourceOptions[T] extends js.Object {
-  var onerror: js.UndefOr[js.Function1[/* event */ MessageEvent, Unit]] = js.undefined
-  var onmessage: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
-  var reconnectTimeout: js.UndefOr[Double] = js.undefined
+  var onerror: js.UndefOr[js.Function1[/* event */ MessageEvent, Unit]] = js.native
+  var onmessage: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
+  var reconnectTimeout: js.UndefOr[Double] = js.native
 }
 
 object EventSourceOptions {
   @scala.inline
-  def apply[T](
-    onerror: /* event */ MessageEvent => Unit = null,
-    onmessage: /* value */ T => Unit = null,
-    reconnectTimeout: js.UndefOr[Double] = js.undefined
-  ): EventSourceOptions[T] = {
+  def apply[T](): EventSourceOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
-    if (onmessage != null) __obj.updateDynamic("onmessage")(js.Any.fromFunction1(onmessage))
-    if (!js.isUndefined(reconnectTimeout)) __obj.updateDynamic("reconnectTimeout")(reconnectTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSourceOptions[T]]
   }
+  @scala.inline
+  implicit class EventSourceOptionsOps[Self <: EventSourceOptions[_], T] (val x: Self with EventSourceOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnerror(value: /* event */ MessageEvent => Unit): Self = this.set("onerror", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnerror: Self = this.set("onerror", js.undefined)
+    @scala.inline
+    def setOnmessage(value: /* value */ T => Unit): Self = this.set("onmessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnmessage: Self = this.set("onmessage", js.undefined)
+    @scala.inline
+    def setReconnectTimeout(value: Double): Self = this.set("reconnectTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectTimeout: Self = this.set("reconnectTimeout", js.undefined)
+  }
+  
 }
 

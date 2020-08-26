@@ -24,14 +24,30 @@ trait SchemaInstructionInput extends js.Object {
 
 object SchemaInstructionInput {
   @scala.inline
-  def apply(
-    outputNum: js.UndefOr[Double] = js.undefined,
-    producerInstructionIndex: js.UndefOr[Double] = js.undefined
-  ): SchemaInstructionInput = {
+  def apply(): SchemaInstructionInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(outputNum)) __obj.updateDynamic("outputNum")(outputNum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(producerInstructionIndex)) __obj.updateDynamic("producerInstructionIndex")(producerInstructionIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstructionInput]
   }
+  @scala.inline
+  implicit class SchemaInstructionInputOps[Self <: SchemaInstructionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOutputNum(value: Double): Self = this.set("outputNum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputNum: Self = this.set("outputNum", js.undefined)
+    @scala.inline
+    def setProducerInstructionIndex(value: Double): Self = this.set("producerInstructionIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducerInstructionIndex: Self = this.set("producerInstructionIndex", js.undefined)
+  }
+  
 }
 

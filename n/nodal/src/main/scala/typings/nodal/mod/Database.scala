@@ -17,6 +17,7 @@ class Database () extends js.Object {
   def error(message: String): Boolean = js.native
   def info(message: String): Unit = js.native
   def log(sql: String): Boolean = js.native
+  def log(sql: String, params: js.UndefOr[scala.Nothing], time: Double): Boolean = js.native
   def log(sql: String, params: js.Any): Boolean = js.native
   def log(sql: String, params: js.Any, time: Double): Boolean = js.native
   def query(args: js.Any*): Unit = js.native

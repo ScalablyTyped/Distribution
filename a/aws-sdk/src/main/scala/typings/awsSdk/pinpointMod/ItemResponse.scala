@@ -18,14 +18,30 @@ trait ItemResponse extends js.Object {
 
 object ItemResponse {
   @scala.inline
-  def apply(
-    EndpointItemResponse: EndpointItemResponse = null,
-    EventsItemResponse: MapOfEventItemResponse = null
-  ): ItemResponse = {
+  def apply(): ItemResponse = {
     val __obj = js.Dynamic.literal()
-    if (EndpointItemResponse != null) __obj.updateDynamic("EndpointItemResponse")(EndpointItemResponse.asInstanceOf[js.Any])
-    if (EventsItemResponse != null) __obj.updateDynamic("EventsItemResponse")(EventsItemResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemResponse]
   }
+  @scala.inline
+  implicit class ItemResponseOps[Self <: ItemResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointItemResponse(value: EndpointItemResponse): Self = this.set("EndpointItemResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointItemResponse: Self = this.set("EndpointItemResponse", js.undefined)
+    @scala.inline
+    def setEventsItemResponse(value: MapOfEventItemResponse): Self = this.set("EventsItemResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventsItemResponse: Self = this.set("EventsItemResponse", js.undefined)
+  }
+  
 }
 

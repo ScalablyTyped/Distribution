@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(filepath: String): Unit = js.native
   def apply(filepath: String, callback: js.Function2[/* err */ Error | Null, /* exists */ Boolean, Unit]): Unit = js.native
+  def apply(
+    filepath: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* exists */ Boolean, Unit]
+  ): Unit = js.native
   def apply(filepath: String, options: Options): Unit = js.native
   def apply(
     filepath: String,

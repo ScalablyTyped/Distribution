@@ -40,6 +40,7 @@ trait IPreviousStateService extends js.Object {
     * @param defaultStateParams Default state parameters
     */
   def memo(memoName: String): Unit = js.native
+  def memo(memoName: String, defaultStateName: js.UndefOr[scala.Nothing], defaultStateParams: js.Object): Unit = js.native
   def memo(memoName: String, defaultStateName: String): Unit = js.native
   def memo(memoName: String, defaultStateName: String, defaultStateParams: js.Object): Unit = js.native
 }

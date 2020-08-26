@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-textarea" : "0.2.6"
+      "rc-textarea" : "0.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-textarea" : "0.2.6"
+      "rc-textarea" : "0.3.0"
     }
   ],
   "compile-devDependencies" : [

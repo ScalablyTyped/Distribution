@@ -1,6 +1,7 @@
 package typings.materialUiCore.anon
 
 import typings.enzyme.mod.EnzymeSelector
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,16 +16,36 @@ trait PartialShallowOptions extends js.Object {
 
 object PartialShallowOptions {
   @scala.inline
-  def apply(
-    dive: js.UndefOr[Boolean] = js.undefined,
-    shallow: Fn2 = null,
-    untilSelector: EnzymeSelector = null
-  ): PartialShallowOptions = {
+  def apply(): PartialShallowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dive)) __obj.updateDynamic("dive")(dive.get.asInstanceOf[js.Any])
-    if (shallow != null) __obj.updateDynamic("shallow")(shallow.asInstanceOf[js.Any])
-    if (untilSelector != null) __obj.updateDynamic("untilSelector")(untilSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialShallowOptions]
   }
+  @scala.inline
+  implicit class PartialShallowOptionsOps[Self <: PartialShallowOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDive(value: Boolean): Self = this.set("dive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDive: Self = this.set("dive", js.undefined)
+    @scala.inline
+    def setShallow(value: Fn2): Self = this.set("shallow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShallow: Self = this.set("shallow", js.undefined)
+    @scala.inline
+    def setUntilSelectorFunction2(value: (js.Any, /* context */ js.UndefOr[js.Any]) => Element | Null): Self = this.set("untilSelector", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUntilSelector(value: EnzymeSelector): Self = this.set("untilSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUntilSelector: Self = this.set("untilSelector", js.undefined)
+  }
+  
 }
 

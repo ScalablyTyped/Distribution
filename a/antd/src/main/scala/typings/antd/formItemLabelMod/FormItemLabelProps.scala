@@ -7,30 +7,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormItemLabelProps extends js.Object {
-  var colon: js.UndefOr[Boolean] = js.undefined
-  var htmlFor: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[ReactNode] = js.undefined
-  var labelAlign: js.UndefOr[FormLabelAlign] = js.undefined
-  var labelCol: js.UndefOr[ColProps] = js.undefined
+  var colon: js.UndefOr[Boolean] = js.native
+  var htmlFor: js.UndefOr[String] = js.native
+  var label: js.UndefOr[ReactNode] = js.native
+  var labelAlign: js.UndefOr[FormLabelAlign] = js.native
+  var labelCol: js.UndefOr[ColProps] = js.native
 }
 
 object FormItemLabelProps {
   @scala.inline
-  def apply(
-    colon: js.UndefOr[Boolean] = js.undefined,
-    htmlFor: String = null,
-    label: ReactNode = null,
-    labelAlign: FormLabelAlign = null,
-    labelCol: ColProps = null
-  ): FormItemLabelProps = {
+  def apply(): FormItemLabelProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colon)) __obj.updateDynamic("colon")(colon.get.asInstanceOf[js.Any])
-    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
-    if (labelCol != null) __obj.updateDynamic("labelCol")(labelCol.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormItemLabelProps]
   }
+  @scala.inline
+  implicit class FormItemLabelPropsOps[Self <: FormItemLabelProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColon(value: Boolean): Self = this.set("colon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColon: Self = this.set("colon", js.undefined)
+    @scala.inline
+    def setHtmlFor(value: String): Self = this.set("htmlFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlFor: Self = this.set("htmlFor", js.undefined)
+    @scala.inline
+    def setLabel(value: ReactNode): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelAlign(value: FormLabelAlign): Self = this.set("labelAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelAlign: Self = this.set("labelAlign", js.undefined)
+    @scala.inline
+    def setLabelCol(value: ColProps): Self = this.set("labelCol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelCol: Self = this.set("labelCol", js.undefined)
+  }
+  
 }
 

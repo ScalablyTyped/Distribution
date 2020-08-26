@@ -19,11 +19,30 @@ trait SchemaPromotion extends js.Object {
 
 object SchemaPromotion {
   @scala.inline
-  def apply(promotionAmount: SchemaAmount = null, promotionId: String = null): SchemaPromotion = {
+  def apply(): SchemaPromotion = {
     val __obj = js.Dynamic.literal()
-    if (promotionAmount != null) __obj.updateDynamic("promotionAmount")(promotionAmount.asInstanceOf[js.Any])
-    if (promotionId != null) __obj.updateDynamic("promotionId")(promotionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPromotion]
   }
+  @scala.inline
+  implicit class SchemaPromotionOps[Self <: SchemaPromotion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPromotionAmount(value: SchemaAmount): Self = this.set("promotionAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotionAmount: Self = this.set("promotionAmount", js.undefined)
+    @scala.inline
+    def setPromotionId(value: String): Self = this.set("promotionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotionId: Self = this.set("promotionId", js.undefined)
+  }
+  
 }
 

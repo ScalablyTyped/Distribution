@@ -24,6 +24,7 @@ trait Yar extends js.Object {
     * any existing value instead of being appended to it (defaults to false).
     */
   def flash(`type`: String): js.Array[_] = js.native
+  def flash(`type`: String, message: js.UndefOr[scala.Nothing], isOverride: Boolean): js.Array[_] = js.native
   def flash(`type`: String, message: js.Any): js.Array[_] = js.native
   def flash(`type`: String, message: js.Any, isOverride: Boolean): js.Array[_] = js.native
   /**

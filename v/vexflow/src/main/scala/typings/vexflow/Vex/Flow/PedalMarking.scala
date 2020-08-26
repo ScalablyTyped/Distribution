@@ -13,6 +13,7 @@ trait PedalMarking extends js.Object {
   def drawText(): Unit = js.native
   def setContext(context: IRenderContext): PedalMarking = js.native
   def setCustomText(): PedalMarking = js.native
+  def setCustomText(depress: js.UndefOr[scala.Nothing], release: String): PedalMarking = js.native
   def setCustomText(depress: String): PedalMarking = js.native
   def setCustomText(depress: String, release: String): PedalMarking = js.native
   def setLine(line: Double): PedalMarking = js.native

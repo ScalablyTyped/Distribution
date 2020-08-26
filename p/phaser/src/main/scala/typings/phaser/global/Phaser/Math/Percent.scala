@@ -18,6 +18,7 @@ object Percent extends js.Object {
     * @param upperMax The mid-way point in the range that represents 100%.
     */
   def apply(value: Double, min: Double): Double = js.native
+  def apply(value: Double, min: Double, max: js.UndefOr[scala.Nothing], upperMax: Double): Double = js.native
   def apply(value: Double, min: Double, max: Double): Double = js.native
   def apply(value: Double, min: Double, max: Double, upperMax: Double): Double = js.native
 }

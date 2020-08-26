@@ -18,7 +18,7 @@ object mod extends js.Object {
       */
     def this(Sha256: HashConstructor, fromUtf8: Decoder) = this()
     val Sha256: js.Any = js.native
-    var buffer: js.UndefOr[js.Any] = js.native
+    var buffer: js.Any = js.native
     var collectedHashDigests: js.Any = js.native
     /**
       * Converts source data into a Uint8Array.

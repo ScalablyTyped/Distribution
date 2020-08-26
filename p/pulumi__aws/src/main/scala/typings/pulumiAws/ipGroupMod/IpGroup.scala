@@ -23,6 +23,7 @@ class IpGroup protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: IpGroupArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: IpGroupArgs, opts: CustomResourceOptions) = this()
   /**
     * The description.
@@ -36,7 +37,7 @@ class IpGroup protected () extends CustomResource {
     * One or more pairs specifying the IP group rule (in CIDR format) from which web requests originate.
     */
   val rules: Output_[js.UndefOr[js.Array[IpGroupRule]]] = js.native
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -50,8 +51,10 @@ object IpGroup extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): IpGroup = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IpGroup = js.native
   def get(name: String, id: Input[ID], state: IpGroupState): IpGroup = js.native
   def get(name: String, id: Input[ID], state: IpGroupState, opts: CustomResourceOptions): IpGroup = js.native
   /**

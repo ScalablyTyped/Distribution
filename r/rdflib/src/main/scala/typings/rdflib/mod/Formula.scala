@@ -26,11 +26,25 @@ class Formula () extends default {
   def this(statements: js.Array[
         typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
       ]) = this()
+  def this(statements: js.UndefOr[scala.Nothing], constraints: js.Array[_]) = this()
   def this(
     statements: js.Array[
         typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
       ],
     constraints: js.Array[_]
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.Array[_]
+  ) = this()
+  def this(statements: js.UndefOr[scala.Nothing], constraints: js.Array[_], initBindings: js.Array[_]) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.Array[_]
   ) = this()
   def this(
     statements: js.Array[
@@ -40,12 +54,179 @@ class Formula () extends default {
     initBindings: js.Array[_]
   ) = this()
   def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.Array[_]
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.Array[_],
+    optional: js.Array[_]
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.Array[_],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.Array[_]
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.Array[_],
+    initBindings: js.Array[_],
+    optional: js.Array[_]
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.Array[_]
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.Array[_],
+    optional: js.Array[_]
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.Array[_],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.Array[_]
+  ) = this()
+  def this(
     statements: js.Array[
         typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
       ],
     constraints: js.Array[_],
     initBindings: js.Array[_],
     optional: js.Array[_]
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.UndefOr[scala.Nothing],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.Array[_],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.Array[_],
+    optional: js.UndefOr[scala.Nothing],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.Array[_],
+    optional: js.Array[_],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.Array[_],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.UndefOr[scala.Nothing],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.Array[_],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.Array[_],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.Array[_],
+    initBindings: js.Array[_],
+    optional: js.UndefOr[scala.Nothing],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.UndefOr[scala.Nothing],
+    constraints: js.Array[_],
+    initBindings: js.Array[_],
+    optional: js.Array[_],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.UndefOr[scala.Nothing],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.Array[_],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.Array[_],
+    optional: js.UndefOr[scala.Nothing],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.UndefOr[scala.Nothing],
+    initBindings: js.Array[_],
+    optional: js.Array[_],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.Array[_],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.UndefOr[scala.Nothing],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.Array[_],
+    initBindings: js.UndefOr[scala.Nothing],
+    optional: js.Array[_],
+    opts: FormulaOpts
+  ) = this()
+  def this(
+    statements: js.Array[
+        typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+      ],
+    constraints: js.Array[_],
+    initBindings: js.Array[_],
+    optional: js.UndefOr[scala.Nothing],
+    opts: FormulaOpts
   ) = this()
   def this(
     statements: js.Array[

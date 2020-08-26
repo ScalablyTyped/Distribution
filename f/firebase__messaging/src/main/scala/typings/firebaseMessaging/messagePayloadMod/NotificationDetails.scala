@@ -1,55 +1,40 @@
 package typings.firebaseMessaging.messagePayloadMod
 
-import typings.std.NotificationAction
-import typings.std.NotificationDirection
 import typings.std.NotificationOptions
-import typings.std.VibratePattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotificationDetails extends NotificationOptions {
-  var click_action: js.UndefOr[String] = js.undefined
-  var title: String
+  var click_action: js.UndefOr[String] = js.native
+  var title: String = js.native
 }
 
 object NotificationDetails {
   @scala.inline
-  def apply(
-    title: String,
-    actions: js.Array[NotificationAction] = null,
-    badge: String = null,
-    body: String = null,
-    click_action: String = null,
-    data: js.Any = null,
-    dir: NotificationDirection = null,
-    icon: String = null,
-    image: String = null,
-    lang: String = null,
-    renotify: js.UndefOr[Boolean] = js.undefined,
-    requireInteraction: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    tag: String = null,
-    timestamp: js.UndefOr[Double] = js.undefined,
-    vibrate: VibratePattern = null
-  ): NotificationDetails = {
+  def apply(title: String): NotificationDetails = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (click_action != null) __obj.updateDynamic("click_action")(click_action.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(renotify)) __obj.updateDynamic("renotify")(renotify.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
-    if (vibrate != null) __obj.updateDynamic("vibrate")(vibrate.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationDetails]
   }
+  @scala.inline
+  implicit class NotificationDetailsOps[Self <: NotificationDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClick_action(value: String): Self = this.set("click_action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClick_action: Self = this.set("click_action", js.undefined)
+  }
+  
 }
 

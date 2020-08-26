@@ -11,9 +11,11 @@ trait HistoryLike extends js.Object {
   def forward(): Unit = js.native
   def forward(distance: js.Any): Unit = js.native
   def pushState(statedata: js.Any): Unit = js.native
+  def pushState(statedata: js.Any, title: js.UndefOr[scala.Nothing], url: String): Unit = js.native
   def pushState(statedata: js.Any, title: String): Unit = js.native
   def pushState(statedata: js.Any, title: String, url: String): Unit = js.native
   def replaceState(statedata: js.Any): Unit = js.native
+  def replaceState(statedata: js.Any, title: js.UndefOr[scala.Nothing], url: String): Unit = js.native
   def replaceState(statedata: js.Any, title: String): Unit = js.native
   def replaceState(statedata: js.Any, title: String, url: String): Unit = js.native
 }

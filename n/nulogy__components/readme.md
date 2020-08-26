@@ -1,7 +1,7 @@
 
 # Scala.js typings for nulogy__components
 
-Typings are for version 2.16
+Typings are for version 3.1
 
 ## Library description:
 Component library for the Nulogy Design System - http://nulogy.design
@@ -10,9 +10,9 @@ Component library for the Nulogy Design System - http://nulogy.design
 | ------------------ | :-------------: |
 | Full name          | @nulogy/components |
 | Keywords           | nulogy, design system, NDS, react, components, component library |
-| # releases         | 157 |
+| # releases         | 181 |
 | # dependents       | 0 |
-| # downloads        | 28981 |
+| # downloads        | 35093 |
 | # stars            | 0 |
 
 ## Links

@@ -30,6 +30,7 @@ class ResourceBookshelves protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaBookshelf] = js.native
   def get(callback: BodyResponseCallback[SchemaBookshelf]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBookshelf] = js.native
   def get(params: ParamsResourceBookshelvesGet): GaxiosPromise[SchemaBookshelf] = js.native
   def get(params: ParamsResourceBookshelvesGet, callback: BodyResponseCallback[SchemaBookshelf]): Unit = js.native
   def get(
@@ -58,6 +59,7 @@ class ResourceBookshelves protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaBookshelves] = js.native
   def list(callback: BodyResponseCallback[SchemaBookshelves]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBookshelves] = js.native
   def list(params: ParamsResourceBookshelvesList): GaxiosPromise[SchemaBookshelves] = js.native
   def list(params: ParamsResourceBookshelvesList, callback: BodyResponseCallback[SchemaBookshelves]): Unit = js.native
   def list(

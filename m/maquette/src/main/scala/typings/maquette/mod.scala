@@ -27,6 +27,7 @@ object mod extends js.Object {
   var createProjector: js.Function1[/* projectorOptions */ js.UndefOr[ProjectorOptions], Projector] = js.native
   def h(selector: String): VNode = js.native
   def h(selector: String, children: js.Array[VNodeChild]): VNode = js.native
+  def h(selector: String, properties: js.UndefOr[scala.Nothing], children: js.Array[VNodeChild]): VNode = js.native
   def h(selector: String, properties: VNodeProperties): VNode = js.native
   def h(selector: String, properties: VNodeProperties, children: js.Array[VNodeChild]): VNode = js.native
   @js.native

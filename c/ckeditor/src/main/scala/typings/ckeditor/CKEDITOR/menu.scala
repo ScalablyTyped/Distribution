@@ -19,7 +19,16 @@ trait menu extends js.Object {
   def hide(returnFocus: Boolean): Unit = js.native
   def removeAll(): Unit = js.native
   def show(offsetParent: element): Unit = js.native
+  def show(
+    offsetParent: element,
+    corner: js.UndefOr[scala.Nothing],
+    offsetX: js.UndefOr[scala.Nothing],
+    offsetY: Double
+  ): Unit = js.native
+  def show(offsetParent: element, corner: js.UndefOr[scala.Nothing], offsetX: Double): Unit = js.native
+  def show(offsetParent: element, corner: js.UndefOr[scala.Nothing], offsetX: Double, offsetY: Double): Unit = js.native
   def show(offsetParent: element, corner: Double): Unit = js.native
+  def show(offsetParent: element, corner: Double, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): Unit = js.native
   def show(offsetParent: element, corner: Double, offsetX: Double): Unit = js.native
   def show(offsetParent: element, corner: Double, offsetX: Double, offsetY: Double): Unit = js.native
 }

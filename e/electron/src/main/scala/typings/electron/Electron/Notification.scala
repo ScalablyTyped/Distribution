@@ -10,7 +10,7 @@ import typings.electron.electronStrings.never
 import typings.electron.electronStrings.normal
 import typings.electron.electronStrings.reply
 import typings.electron.electronStrings.show
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

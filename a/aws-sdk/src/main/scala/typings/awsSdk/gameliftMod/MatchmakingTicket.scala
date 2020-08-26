@@ -54,32 +54,68 @@ trait MatchmakingTicket extends js.Object {
 
 object MatchmakingTicket {
   @scala.inline
-  def apply(
-    ConfigurationArn: MatchmakingConfigurationArn = null,
-    ConfigurationName: MatchmakingIdStringModel = null,
-    EndTime: Timestamp = null,
-    EstimatedWaitTime: js.UndefOr[WholeNumber] = js.undefined,
-    GameSessionConnectionInfo: GameSessionConnectionInfo = null,
-    Players: PlayerList = null,
-    StartTime: Timestamp = null,
-    Status: MatchmakingConfigurationStatus = null,
-    StatusMessage: StringModel = null,
-    StatusReason: StringModel = null,
-    TicketId: MatchmakingIdStringModel = null
-  ): MatchmakingTicket = {
+  def apply(): MatchmakingTicket = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationArn != null) __obj.updateDynamic("ConfigurationArn")(ConfigurationArn.asInstanceOf[js.Any])
-    if (ConfigurationName != null) __obj.updateDynamic("ConfigurationName")(ConfigurationName.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(EstimatedWaitTime)) __obj.updateDynamic("EstimatedWaitTime")(EstimatedWaitTime.get.asInstanceOf[js.Any])
-    if (GameSessionConnectionInfo != null) __obj.updateDynamic("GameSessionConnectionInfo")(GameSessionConnectionInfo.asInstanceOf[js.Any])
-    if (Players != null) __obj.updateDynamic("Players")(Players.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
-    if (TicketId != null) __obj.updateDynamic("TicketId")(TicketId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchmakingTicket]
   }
+  @scala.inline
+  implicit class MatchmakingTicketOps[Self <: MatchmakingTicket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationArn(value: MatchmakingConfigurationArn): Self = this.set("ConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationArn: Self = this.set("ConfigurationArn", js.undefined)
+    @scala.inline
+    def setConfigurationName(value: MatchmakingIdStringModel): Self = this.set("ConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationName: Self = this.set("ConfigurationName", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setEstimatedWaitTime(value: WholeNumber): Self = this.set("EstimatedWaitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedWaitTime: Self = this.set("EstimatedWaitTime", js.undefined)
+    @scala.inline
+    def setGameSessionConnectionInfo(value: GameSessionConnectionInfo): Self = this.set("GameSessionConnectionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameSessionConnectionInfo: Self = this.set("GameSessionConnectionInfo", js.undefined)
+    @scala.inline
+    def setPlayersVarargs(value: Player*): Self = this.set("Players", js.Array(value :_*))
+    @scala.inline
+    def setPlayers(value: PlayerList): Self = this.set("Players", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayers: Self = this.set("Players", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: MatchmakingConfigurationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: StringModel): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setStatusReason(value: StringModel): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+    @scala.inline
+    def setTicketId(value: MatchmakingIdStringModel): Self = this.set("TicketId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicketId: Self = this.set("TicketId", js.undefined)
+  }
+  
 }
 

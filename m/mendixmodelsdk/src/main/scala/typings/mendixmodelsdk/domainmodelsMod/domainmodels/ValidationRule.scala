@@ -28,13 +28,13 @@ class ValidationRule protected () extends Element {
   @JSName("model")
   var model_FValidationRule: IModel = js.native
   def attribute: IAttribute = js.native
-  def attribute(newValue: IAttribute): js.Any = js.native
   def attributeQualifiedName: String = js.native
+  def attribute_=(newValue: IAttribute): Unit = js.native
   def containerAsEntity: Entity = js.native
   def errorMessage: Text = js.native
-  def errorMessage(newValue: Text): js.Any = js.native
+  def errorMessage_=(newValue: Text): Unit = js.native
   def ruleInfo: RuleInfo = js.native
-  def ruleInfo(newValue: RuleInfo): js.Any = js.native
+  def ruleInfo_=(newValue: RuleInfo): Unit = js.native
 }
 
 /* static members */

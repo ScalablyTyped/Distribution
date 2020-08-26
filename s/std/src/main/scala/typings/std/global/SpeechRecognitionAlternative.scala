@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SpeechRecognitionAlternative")
 @js.native
 class SpeechRecognitionAlternative ()
-  extends typings.std.SpeechRecognitionAlternative {
-  /* CompleteClass */
-  override val confidence: Double = js.native
-  /* CompleteClass */
-  override val transcript: java.lang.String = js.native
-}
+  extends typings.std.SpeechRecognitionAlternative
 
 @JSGlobal("SpeechRecognitionAlternative")
 @js.native

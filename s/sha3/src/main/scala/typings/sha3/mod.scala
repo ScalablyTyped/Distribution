@@ -33,18 +33,19 @@ object mod extends js.Object {
   @js.native
   class default () extends SHA3
   
-  val Keccak: Instantiable1[js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
-  val SHA3Hash: Instantiable1[js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
+  val Keccak: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
+  val SHA3Hash: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
+  val SHAKE: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
   /* static members */
   @js.native
   object SHA3 extends js.Object {
-    var SHA3Hash: Instantiable1[js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
+    var SHA3Hash: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    var SHA3Hash: Instantiable1[js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
+    var SHA3Hash: Instantiable1[/* size */ js.UndefOr[`224` | `256` | `384` | `512`], Hasher] = js.native
   }
   
 }

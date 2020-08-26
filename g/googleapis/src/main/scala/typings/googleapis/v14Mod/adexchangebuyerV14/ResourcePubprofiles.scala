@@ -27,6 +27,7 @@ class ResourcePubprofiles protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGetPublisherProfilesByAccountIdResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGetPublisherProfilesByAccountIdResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetPublisherProfilesByAccountIdResponse] = js.native
   def list(params: ParamsResourcePubprofilesList): GaxiosPromise[SchemaGetPublisherProfilesByAccountIdResponse] = js.native
   def list(
     params: ParamsResourcePubprofilesList,

@@ -59,32 +59,66 @@ trait SchemaWorkflowMetadata extends js.Object {
 
 object SchemaWorkflowMetadata {
   @scala.inline
-  def apply(
-    clusterName: String = null,
-    clusterUuid: String = null,
-    createCluster: SchemaClusterOperation = null,
-    deleteCluster: SchemaClusterOperation = null,
-    endTime: String = null,
-    graph: SchemaWorkflowGraph = null,
-    parameters: StringDictionary[String] = null,
-    startTime: String = null,
-    state: String = null,
-    template: String = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): SchemaWorkflowMetadata = {
+  def apply(): SchemaWorkflowMetadata = {
     val __obj = js.Dynamic.literal()
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid.asInstanceOf[js.Any])
-    if (createCluster != null) __obj.updateDynamic("createCluster")(createCluster.asInstanceOf[js.Any])
-    if (deleteCluster != null) __obj.updateDynamic("deleteCluster")(deleteCluster.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkflowMetadata]
   }
+  @scala.inline
+  implicit class SchemaWorkflowMetadataOps[Self <: SchemaWorkflowMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    @scala.inline
+    def setClusterUuid(value: String): Self = this.set("clusterUuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterUuid: Self = this.set("clusterUuid", js.undefined)
+    @scala.inline
+    def setCreateCluster(value: SchemaClusterOperation): Self = this.set("createCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateCluster: Self = this.set("createCluster", js.undefined)
+    @scala.inline
+    def setDeleteCluster(value: SchemaClusterOperation): Self = this.set("deleteCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteCluster: Self = this.set("deleteCluster", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setGraph(value: SchemaWorkflowGraph): Self = this.set("graph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGraph: Self = this.set("graph", js.undefined)
+    @scala.inline
+    def setParameters(value: StringDictionary[String]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

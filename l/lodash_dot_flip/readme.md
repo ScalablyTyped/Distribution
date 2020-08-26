@@ -12,7 +12,7 @@ The lodash method `_.flip` exported as a module.
 | Keywords           | lodash-modularized, flip |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 898 |
+| # downloads        | 886 |
 | # stars            | 0 |
 
 ## Links

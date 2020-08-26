@@ -29,11 +29,34 @@ trait SchemaAuthentication extends js.Object {
 
 object SchemaAuthentication {
   @scala.inline
-  def apply(providers: js.Array[SchemaAuthProvider] = null, rules: js.Array[SchemaAuthenticationRule] = null): SchemaAuthentication = {
+  def apply(): SchemaAuthentication = {
     val __obj = js.Dynamic.literal()
-    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAuthentication]
   }
+  @scala.inline
+  implicit class SchemaAuthenticationOps[Self <: SchemaAuthentication] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvidersVarargs(value: SchemaAuthProvider*): Self = this.set("providers", js.Array(value :_*))
+    @scala.inline
+    def setProviders(value: js.Array[SchemaAuthProvider]): Self = this.set("providers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviders: Self = this.set("providers", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: SchemaAuthenticationRule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: js.Array[SchemaAuthenticationRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+  }
+  
 }
 

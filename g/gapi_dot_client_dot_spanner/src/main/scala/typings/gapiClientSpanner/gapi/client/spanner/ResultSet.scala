@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResultSet extends js.Object {
   /** Metadata about the result set, such as row type information. */
-  var metadata: js.UndefOr[ResultSetMetadata] = js.undefined
+  var metadata: js.UndefOr[ResultSetMetadata] = js.native
   /**
     * Each element in `rows` is a row whose format is defined by
     * metadata.row_type. The ith element
@@ -15,27 +16,47 @@ trait ResultSet extends js.Object {
     * encoded based on type as described
     * here.
     */
-  var rows: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
+  var rows: js.UndefOr[js.Array[js.Array[_]]] = js.native
   /**
     * Query plan and execution statistics for the query that produced this
     * result set. These can be requested by setting
     * ExecuteSqlRequest.query_mode.
     */
-  var stats: js.UndefOr[ResultSetStats] = js.undefined
+  var stats: js.UndefOr[ResultSetStats] = js.native
 }
 
 object ResultSet {
   @scala.inline
-  def apply(
-    metadata: ResultSetMetadata = null,
-    rows: js.Array[js.Array[_]] = null,
-    stats: ResultSetStats = null
-  ): ResultSet = {
+  def apply(): ResultSet = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSet]
   }
+  @scala.inline
+  implicit class ResultSetOps[Self <: ResultSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetadata(value: ResultSetMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setRowsVarargs(value: js.Array[js.Any]*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: js.Array[js.Array[_]]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setStats(value: ResultSetStats): Self = this.set("stats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStats: Self = this.set("stats", js.undefined)
+  }
+  
 }
 

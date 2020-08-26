@@ -147,6 +147,7 @@ trait Attachment extends js.Object {
   def Goto(): Unit = js.native
   def IsMemberSafe(dispid: Double): Boolean = js.native
   def Move(Left: Double): Unit = js.native
+  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Unit = js.native
   def Move(Left: Double, Top: Double): Unit = js.native
   def Move(Left: Double, Top: Double, Width: Double): Unit = js.native
   def PictureDisp(): js.Any = js.native

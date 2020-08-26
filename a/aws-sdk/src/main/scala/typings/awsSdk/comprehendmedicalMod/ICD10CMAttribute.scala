@@ -42,26 +42,56 @@ trait ICD10CMAttribute extends js.Object {
 
 object ICD10CMAttribute {
   @scala.inline
-  def apply(
-    BeginOffset: js.UndefOr[Integer] = js.undefined,
-    EndOffset: js.UndefOr[Integer] = js.undefined,
-    Id: js.UndefOr[Integer] = js.undefined,
-    RelationshipScore: js.UndefOr[Float] = js.undefined,
-    Score: js.UndefOr[Float] = js.undefined,
-    Text: String = null,
-    Traits: ICD10CMTraitList = null,
-    Type: ICD10CMAttributeType = null
-  ): ICD10CMAttribute = {
+  def apply(): ICD10CMAttribute = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BeginOffset)) __obj.updateDynamic("BeginOffset")(BeginOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EndOffset)) __obj.updateDynamic("EndOffset")(EndOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Id)) __obj.updateDynamic("Id")(Id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RelationshipScore)) __obj.updateDynamic("RelationshipScore")(RelationshipScore.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
-    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
-    if (Traits != null) __obj.updateDynamic("Traits")(Traits.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICD10CMAttribute]
   }
+  @scala.inline
+  implicit class ICD10CMAttributeOps[Self <: ICD10CMAttribute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeginOffset(value: Integer): Self = this.set("BeginOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeginOffset: Self = this.set("BeginOffset", js.undefined)
+    @scala.inline
+    def setEndOffset(value: Integer): Self = this.set("EndOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOffset: Self = this.set("EndOffset", js.undefined)
+    @scala.inline
+    def setId(value: Integer): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setRelationshipScore(value: Float): Self = this.set("RelationshipScore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationshipScore: Self = this.set("RelationshipScore", js.undefined)
+    @scala.inline
+    def setScore(value: Float): Self = this.set("Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("Score", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("Text", js.undefined)
+    @scala.inline
+    def setTraitsVarargs(value: ICD10CMTrait*): Self = this.set("Traits", js.Array(value :_*))
+    @scala.inline
+    def setTraits(value: ICD10CMTraitList): Self = this.set("Traits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraits: Self = this.set("Traits", js.undefined)
+    @scala.inline
+    def setType(value: ICD10CMAttributeType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

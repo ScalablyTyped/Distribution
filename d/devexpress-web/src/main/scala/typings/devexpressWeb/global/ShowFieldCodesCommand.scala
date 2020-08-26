@@ -10,11 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ShowFieldCodesCommand")
 @js.native
 class ShowFieldCodesCommand ()
-  extends typings.devexpressWeb.ShowFieldCodesCommand {
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.ShowFieldCodesCommand
 

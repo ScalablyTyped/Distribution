@@ -61,24 +61,52 @@ trait SchemaHttpRouteAction extends js.Object {
 
 object SchemaHttpRouteAction {
   @scala.inline
-  def apply(
-    corsPolicy: SchemaCorsPolicy = null,
-    faultInjectionPolicy: SchemaHttpFaultInjection = null,
-    requestMirrorPolicy: SchemaRequestMirrorPolicy = null,
-    retryPolicy: SchemaHttpRetryPolicy = null,
-    timeout: SchemaDuration = null,
-    urlRewrite: SchemaUrlRewrite = null,
-    weightedBackendServices: js.Array[SchemaWeightedBackendService] = null
-  ): SchemaHttpRouteAction = {
+  def apply(): SchemaHttpRouteAction = {
     val __obj = js.Dynamic.literal()
-    if (corsPolicy != null) __obj.updateDynamic("corsPolicy")(corsPolicy.asInstanceOf[js.Any])
-    if (faultInjectionPolicy != null) __obj.updateDynamic("faultInjectionPolicy")(faultInjectionPolicy.asInstanceOf[js.Any])
-    if (requestMirrorPolicy != null) __obj.updateDynamic("requestMirrorPolicy")(requestMirrorPolicy.asInstanceOf[js.Any])
-    if (retryPolicy != null) __obj.updateDynamic("retryPolicy")(retryPolicy.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (urlRewrite != null) __obj.updateDynamic("urlRewrite")(urlRewrite.asInstanceOf[js.Any])
-    if (weightedBackendServices != null) __obj.updateDynamic("weightedBackendServices")(weightedBackendServices.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRouteAction]
   }
+  @scala.inline
+  implicit class SchemaHttpRouteActionOps[Self <: SchemaHttpRouteAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCorsPolicy(value: SchemaCorsPolicy): Self = this.set("corsPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorsPolicy: Self = this.set("corsPolicy", js.undefined)
+    @scala.inline
+    def setFaultInjectionPolicy(value: SchemaHttpFaultInjection): Self = this.set("faultInjectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaultInjectionPolicy: Self = this.set("faultInjectionPolicy", js.undefined)
+    @scala.inline
+    def setRequestMirrorPolicy(value: SchemaRequestMirrorPolicy): Self = this.set("requestMirrorPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestMirrorPolicy: Self = this.set("requestMirrorPolicy", js.undefined)
+    @scala.inline
+    def setRetryPolicy(value: SchemaHttpRetryPolicy): Self = this.set("retryPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryPolicy: Self = this.set("retryPolicy", js.undefined)
+    @scala.inline
+    def setTimeout(value: SchemaDuration): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUrlRewrite(value: SchemaUrlRewrite): Self = this.set("urlRewrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlRewrite: Self = this.set("urlRewrite", js.undefined)
+    @scala.inline
+    def setWeightedBackendServicesVarargs(value: SchemaWeightedBackendService*): Self = this.set("weightedBackendServices", js.Array(value :_*))
+    @scala.inline
+    def setWeightedBackendServices(value: js.Array[SchemaWeightedBackendService]): Self = this.set("weightedBackendServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedBackendServices: Self = this.set("weightedBackendServices", js.undefined)
+  }
+  
 }
 

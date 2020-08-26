@@ -26,18 +26,38 @@ trait GetFunctionResponse extends js.Object {
 
 object GetFunctionResponse {
   @scala.inline
-  def apply(
-    Code: FunctionCodeLocation = null,
-    Concurrency: Concurrency = null,
-    Configuration: FunctionConfiguration = null,
-    Tags: Tags = null
-  ): GetFunctionResponse = {
+  def apply(): GetFunctionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
-    if (Concurrency != null) __obj.updateDynamic("Concurrency")(Concurrency.asInstanceOf[js.Any])
-    if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionResponse]
   }
+  @scala.inline
+  implicit class GetFunctionResponseOps[Self <: GetFunctionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: FunctionCodeLocation): Self = this.set("Code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("Code", js.undefined)
+    @scala.inline
+    def setConcurrency(value: Concurrency): Self = this.set("Concurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConcurrency: Self = this.set("Concurrency", js.undefined)
+    @scala.inline
+    def setConfiguration(value: FunctionConfiguration): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("Configuration", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

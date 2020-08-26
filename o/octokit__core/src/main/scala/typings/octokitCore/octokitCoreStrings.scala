@@ -132,6 +132,9 @@ object octokitCoreStrings {
   sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id` extends js.Object
   
   @js.native
+  sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_id` extends js.Object
+  
+  @js.native
   sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashlogs` extends js.Object
   
   @js.native
@@ -258,6 +261,12 @@ object octokitCoreStrings {
   sealed trait `DELETE SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts` extends js.Object
   
   @js.native
+  sealed trait `DELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id` extends js.Object
+  
+  @js.native
+  sealed trait `DELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id` extends js.Object
+  
+  @js.native
   sealed trait `DELETE SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id` extends js.Object
   
   @js.native
@@ -346,6 +355,15 @@ object octokitCoreStrings {
   
   @js.native
   sealed trait `GET Slashemojis` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashactions` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashpackages` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashshared-storage` extends js.Object
   
   @js.native
   sealed trait `GET Slashevents` extends js.Object
@@ -532,6 +550,15 @@ object octokitCoreStrings {
   
   @js.native
   sealed trait `GET SlashorgsSlashColonorgSlashrepos` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashactions` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashpackages` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashshared-storage` extends js.Object
   
   @js.native
   sealed trait `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups` extends js.Object
@@ -1053,6 +1080,18 @@ object octokitCoreStrings {
   sealed trait `GET Slashrepositories` extends js.Object
   
   @js.native
+  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id` extends js.Object
+  
+  @js.native
   sealed trait `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers` extends js.Object
   
   @js.native
@@ -1134,9 +1173,6 @@ object octokitCoreStrings {
   sealed trait `GET Slashuser` extends js.Object
   
   @js.native
-  sealed trait `GET SlashuserSlashColonmigration_idSlashrepositories` extends js.Object
-  
-  @js.native
   sealed trait `GET SlashuserSlashblocks` extends js.Object
   
   @js.native
@@ -1195,6 +1231,9 @@ object octokitCoreStrings {
   
   @js.native
   sealed trait `GET SlashuserSlashmigrationsSlashColonmigration_idSlasharchive` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories` extends js.Object
   
   @js.native
   sealed trait `GET SlashuserSlashorgs` extends js.Object
@@ -1273,6 +1312,15 @@ object octokitCoreStrings {
   
   @js.native
   sealed trait `GET SlashusersSlashColonusernameSlashrepos` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashactions` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashpackages` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashshared-storage` extends js.Object
   
   @js.native
   sealed trait `GET SlashusersSlashColonusernameSlashstarred` extends js.Object
@@ -1381,6 +1429,12 @@ object octokitCoreStrings {
   
   @js.native
   sealed trait `PATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id` extends js.Object
+  
+  @js.native
+  sealed trait `PATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id` extends js.Object
+  
+  @js.native
+  sealed trait `PATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id` extends js.Object
   
   @js.native
   sealed trait `PATCH SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id` extends js.Object
@@ -1504,6 +1558,9 @@ object octokitCoreStrings {
   
   @js.native
   sealed trait `POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashrerun` extends js.Object
+  
+  @js.native
+  sealed trait `POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashdispatches` extends js.Object
   
   @js.native
   sealed trait `POST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins` extends js.Object
@@ -1648,6 +1705,12 @@ object octokitCoreStrings {
   
   @js.native
   sealed trait `POST SlashreposSlashColontemplate_ownerSlashColontemplate_repoSlashgenerate` extends js.Object
+  
+  @js.native
+  sealed trait `POST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups` extends js.Object
+  
+  @js.native
+  sealed trait `POST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers` extends js.Object
   
   @js.native
   sealed trait `POST SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers` extends js.Object
@@ -1803,6 +1866,12 @@ object octokitCoreStrings {
   sealed trait `PUT SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts` extends js.Object
   
   @js.native
+  sealed trait `PUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id` extends js.Object
+  
+  @js.native
+  sealed trait `PUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id` extends js.Object
+  
+  @js.native
   sealed trait `PUT SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id` extends js.Object
   
   @js.native
@@ -1914,6 +1983,8 @@ object octokitCoreStrings {
   @scala.inline
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id` = ("DELETE /repos/:owner/:repo/actions/runners/:runner_id").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id`]
   @scala.inline
+  def `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_id`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_id` = ("DELETE /repos/:owner/:repo/actions/runs/:run_id").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_id`]
+  @scala.inline
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashlogs`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashlogs` = ("DELETE /repos/:owner/:repo/actions/runs/:run_id/logs").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashlogs`]
   @scala.inline
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name` = ("DELETE /repos/:owner/:repo/actions/secrets/:secret_name").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name`]
@@ -1998,6 +2069,10 @@ object octokitCoreStrings {
   @scala.inline
   def `DELETE SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`: `DELETE SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts` = ("DELETE /repos/:owner/:repo/vulnerability-alerts").asInstanceOf[`DELETE SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`]
   @scala.inline
+  def `DELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`: `DELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id` = ("DELETE /scim/v2/enterprises/:enterprise/Groups/:scim_group_id").asInstanceOf[`DELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`]
+  @scala.inline
+  def `DELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`: `DELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id` = ("DELETE /scim/v2/enterprises/:enterprise/Users/:scim_user_id").asInstanceOf[`DELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`]
+  @scala.inline
   def `DELETE SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`: `DELETE SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id` = ("DELETE /scim/v2/organizations/:org/Users/:scim_user_id").asInstanceOf[`DELETE SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`]
   @scala.inline
   def `DELETE SlashteamsSlashColonteam_id`: `DELETE SlashteamsSlashColonteam_id` = ("DELETE /teams/:team_id").asInstanceOf[`DELETE SlashteamsSlashColonteam_id`]
@@ -2057,6 +2132,12 @@ object octokitCoreStrings {
   def `GET Slashcodes_of_conductSlashColonkey`: `GET Slashcodes_of_conductSlashColonkey` = ("GET /codes_of_conduct/:key").asInstanceOf[`GET Slashcodes_of_conductSlashColonkey`]
   @scala.inline
   def `GET Slashemojis`: `GET Slashemojis` = ("GET /emojis").asInstanceOf[`GET Slashemojis`]
+  @scala.inline
+  def `GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashactions`: `GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashactions` = ("GET /enterprises/:enterprise_id/settings/billing/actions").asInstanceOf[`GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashactions`]
+  @scala.inline
+  def `GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashpackages`: `GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashpackages` = ("GET /enterprises/:enterprise_id/settings/billing/packages").asInstanceOf[`GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashpackages`]
+  @scala.inline
+  def `GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashshared-storage`: `GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashshared-storage` = ("GET /enterprises/:enterprise_id/settings/billing/shared-storage").asInstanceOf[`GET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashshared-storage`]
   @scala.inline
   def `GET Slashevents`: `GET Slashevents` = ("GET /events").asInstanceOf[`GET Slashevents`]
   @scala.inline
@@ -2181,6 +2262,12 @@ object octokitCoreStrings {
   def `GET SlashorgsSlashColonorgSlashpublic_membersSlashColonusername`: `GET SlashorgsSlashColonorgSlashpublic_membersSlashColonusername` = ("GET /orgs/:org/public_members/:username").asInstanceOf[`GET SlashorgsSlashColonorgSlashpublic_membersSlashColonusername`]
   @scala.inline
   def `GET SlashorgsSlashColonorgSlashrepos`: `GET SlashorgsSlashColonorgSlashrepos` = ("GET /orgs/:org/repos").asInstanceOf[`GET SlashorgsSlashColonorgSlashrepos`]
+  @scala.inline
+  def `GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashactions`: `GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashactions` = ("GET /orgs/:org/settings/billing/actions").asInstanceOf[`GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashactions`]
+  @scala.inline
+  def `GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashpackages`: `GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashpackages` = ("GET /orgs/:org/settings/billing/packages").asInstanceOf[`GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashpackages`]
+  @scala.inline
+  def `GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashshared-storage`: `GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashshared-storage` = ("GET /orgs/:org/settings/billing/shared-storage").asInstanceOf[`GET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashshared-storage`]
   @scala.inline
   def `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`: `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups` = ("GET /orgs/:org/team-sync/groups").asInstanceOf[`GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`]
   @scala.inline
@@ -2528,6 +2615,14 @@ object octokitCoreStrings {
   @scala.inline
   def `GET Slashrepositories`: `GET Slashrepositories` = ("GET /repositories").asInstanceOf[`GET Slashrepositories`]
   @scala.inline
+  def `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups` = ("GET /scim/v2/enterprises/:enterprise/Groups").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`]
+  @scala.inline
+  def `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id` = ("GET /scim/v2/enterprises/:enterprise/Groups/:scim_group_id").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`]
+  @scala.inline
+  def `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers` = ("GET /scim/v2/enterprises/:enterprise/Users").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`]
+  @scala.inline
+  def `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id` = ("GET /scim/v2/enterprises/:enterprise/Users/:scim_user_id").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`]
+  @scala.inline
   def `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers` = ("GET /scim/v2/organizations/:org/Users").asInstanceOf[`GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`]
   @scala.inline
   def `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id` = ("GET /scim/v2/organizations/:org/Users/:scim_user_id").asInstanceOf[`GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`]
@@ -2582,8 +2677,6 @@ object octokitCoreStrings {
   @scala.inline
   def `GET Slashuser`: `GET Slashuser` = ("GET /user").asInstanceOf[`GET Slashuser`]
   @scala.inline
-  def `GET SlashuserSlashColonmigration_idSlashrepositories`: `GET SlashuserSlashColonmigration_idSlashrepositories` = ("GET /user/:migration_id/repositories").asInstanceOf[`GET SlashuserSlashColonmigration_idSlashrepositories`]
-  @scala.inline
   def `GET SlashuserSlashblocks`: `GET SlashuserSlashblocks` = ("GET /user/blocks").asInstanceOf[`GET SlashuserSlashblocks`]
   @scala.inline
   def `GET SlashuserSlashblocksSlashColonusername`: `GET SlashuserSlashblocksSlashColonusername` = ("GET /user/blocks/:username").asInstanceOf[`GET SlashuserSlashblocksSlashColonusername`]
@@ -2623,6 +2716,8 @@ object octokitCoreStrings {
   def `GET SlashuserSlashmigrationsSlashColonmigration_id`: `GET SlashuserSlashmigrationsSlashColonmigration_id` = ("GET /user/migrations/:migration_id").asInstanceOf[`GET SlashuserSlashmigrationsSlashColonmigration_id`]
   @scala.inline
   def `GET SlashuserSlashmigrationsSlashColonmigration_idSlasharchive`: `GET SlashuserSlashmigrationsSlashColonmigration_idSlasharchive` = ("GET /user/migrations/:migration_id/archive").asInstanceOf[`GET SlashuserSlashmigrationsSlashColonmigration_idSlasharchive`]
+  @scala.inline
+  def `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories` = ("GET /user/migrations/:migration_id/repositories").asInstanceOf[`GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`]
   @scala.inline
   def `GET SlashuserSlashorgs`: `GET SlashuserSlashorgs` = ("GET /user/orgs").asInstanceOf[`GET SlashuserSlashorgs`]
   @scala.inline
@@ -2675,6 +2770,12 @@ object octokitCoreStrings {
   def `GET SlashusersSlashColonusernameSlashreceived_eventsSlashpublic`: `GET SlashusersSlashColonusernameSlashreceived_eventsSlashpublic` = ("GET /users/:username/received_events/public").asInstanceOf[`GET SlashusersSlashColonusernameSlashreceived_eventsSlashpublic`]
   @scala.inline
   def `GET SlashusersSlashColonusernameSlashrepos`: `GET SlashusersSlashColonusernameSlashrepos` = ("GET /users/:username/repos").asInstanceOf[`GET SlashusersSlashColonusernameSlashrepos`]
+  @scala.inline
+  def `GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashactions`: `GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashactions` = ("GET /users/:username/settings/billing/actions").asInstanceOf[`GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashactions`]
+  @scala.inline
+  def `GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashpackages`: `GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashpackages` = ("GET /users/:username/settings/billing/packages").asInstanceOf[`GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashpackages`]
+  @scala.inline
+  def `GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashshared-storage`: `GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashshared-storage` = ("GET /users/:username/settings/billing/shared-storage").asInstanceOf[`GET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashshared-storage`]
   @scala.inline
   def `GET SlashusersSlashColonusernameSlashstarred`: `GET SlashusersSlashColonusernameSlashstarred` = ("GET /users/:username/starred").asInstanceOf[`GET SlashusersSlashColonusernameSlashstarred`]
   @scala.inline
@@ -2747,6 +2848,10 @@ object octokitCoreStrings {
   def `PATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_id`: `PATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_id` = ("PATCH /repos/:owner/:repo/releases/:release_id").asInstanceOf[`PATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_id`]
   @scala.inline
   def `PATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id`: `PATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id` = ("PATCH /repos/:owner/:repo/releases/assets/:asset_id").asInstanceOf[`PATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id`]
+  @scala.inline
+  def `PATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`: `PATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id` = ("PATCH /scim/v2/enterprises/:enterprise/Groups/:scim_group_id").asInstanceOf[`PATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`]
+  @scala.inline
+  def `PATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`: `PATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id` = ("PATCH /scim/v2/enterprises/:enterprise/Users/:scim_user_id").asInstanceOf[`PATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`]
   @scala.inline
   def `PATCH SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`: `PATCH SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id` = ("PATCH /scim/v2/organizations/:org/Users/:scim_user_id").asInstanceOf[`PATCH SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`]
   @scala.inline
@@ -2829,6 +2934,8 @@ object octokitCoreStrings {
   def `POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashcancel`: `POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashcancel` = ("POST /repos/:owner/:repo/actions/runs/:run_id/cancel").asInstanceOf[`POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashcancel`]
   @scala.inline
   def `POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashrerun`: `POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashrerun` = ("POST /repos/:owner/:repo/actions/runs/:run_id/rerun").asInstanceOf[`POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashrerun`]
+  @scala.inline
+  def `POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashdispatches`: `POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashdispatches` = ("POST /repos/:owner/:repo/actions/workflows/:workflow_id/dispatches").asInstanceOf[`POST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashdispatches`]
   @scala.inline
   def `POST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins`: `POST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins` = ("POST /repos/:owner/:repo/branches/:branch/protection/enforce_admins").asInstanceOf[`POST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins`]
   @scala.inline
@@ -2925,6 +3032,10 @@ object octokitCoreStrings {
   def `POST SlashreposSlashColonownerSlashColonrepoSlashtransfer`: `POST SlashreposSlashColonownerSlashColonrepoSlashtransfer` = ("POST /repos/:owner/:repo/transfer").asInstanceOf[`POST SlashreposSlashColonownerSlashColonrepoSlashtransfer`]
   @scala.inline
   def `POST SlashreposSlashColontemplate_ownerSlashColontemplate_repoSlashgenerate`: `POST SlashreposSlashColontemplate_ownerSlashColontemplate_repoSlashgenerate` = ("POST /repos/:template_owner/:template_repo/generate").asInstanceOf[`POST SlashreposSlashColontemplate_ownerSlashColontemplate_repoSlashgenerate`]
+  @scala.inline
+  def `POST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`: `POST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups` = ("POST /scim/v2/enterprises/:enterprise/Groups").asInstanceOf[`POST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`]
+  @scala.inline
+  def `POST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`: `POST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers` = ("POST /scim/v2/enterprises/:enterprise/Users").asInstanceOf[`POST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`]
   @scala.inline
   def `POST SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`: `POST SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers` = ("POST /scim/v2/organizations/:org/Users").asInstanceOf[`POST SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`]
   @scala.inline
@@ -3027,6 +3138,10 @@ object octokitCoreStrings {
   def `PUT SlashreposSlashColonownerSlashColonrepoSlashtopics`: `PUT SlashreposSlashColonownerSlashColonrepoSlashtopics` = ("PUT /repos/:owner/:repo/topics").asInstanceOf[`PUT SlashreposSlashColonownerSlashColonrepoSlashtopics`]
   @scala.inline
   def `PUT SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`: `PUT SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts` = ("PUT /repos/:owner/:repo/vulnerability-alerts").asInstanceOf[`PUT SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`]
+  @scala.inline
+  def `PUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`: `PUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id` = ("PUT /scim/v2/enterprises/:enterprise/Groups/:scim_group_id").asInstanceOf[`PUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`]
+  @scala.inline
+  def `PUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`: `PUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id` = ("PUT /scim/v2/enterprises/:enterprise/Users/:scim_user_id").asInstanceOf[`PUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`]
   @scala.inline
   def `PUT SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`: `PUT SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id` = ("PUT /scim/v2/organizations/:org/Users/:scim_user_id").asInstanceOf[`PUT SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`]
   @scala.inline

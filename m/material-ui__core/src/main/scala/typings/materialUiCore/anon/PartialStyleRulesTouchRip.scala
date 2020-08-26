@@ -19,24 +19,50 @@ trait PartialStyleRulesTouchRip extends js.Object {
 
 object PartialStyleRulesTouchRip {
   @scala.inline
-  def apply(
-    child: CSSProperties = null,
-    childLeaving: CSSProperties = null,
-    childPulsate: CSSProperties = null,
-    ripple: CSSProperties = null,
-    ripplePulsate: CSSProperties = null,
-    rippleVisible: CSSProperties = null,
-    root: CSSProperties = null
-  ): PartialStyleRulesTouchRip = {
+  def apply(): PartialStyleRulesTouchRip = {
     val __obj = js.Dynamic.literal()
-    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
-    if (childLeaving != null) __obj.updateDynamic("childLeaving")(childLeaving.asInstanceOf[js.Any])
-    if (childPulsate != null) __obj.updateDynamic("childPulsate")(childPulsate.asInstanceOf[js.Any])
-    if (ripple != null) __obj.updateDynamic("ripple")(ripple.asInstanceOf[js.Any])
-    if (ripplePulsate != null) __obj.updateDynamic("ripplePulsate")(ripplePulsate.asInstanceOf[js.Any])
-    if (rippleVisible != null) __obj.updateDynamic("rippleVisible")(rippleVisible.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesTouchRip]
   }
+  @scala.inline
+  implicit class PartialStyleRulesTouchRipOps[Self <: PartialStyleRulesTouchRip] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChild(value: CSSProperties): Self = this.set("child", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChild: Self = this.set("child", js.undefined)
+    @scala.inline
+    def setChildLeaving(value: CSSProperties): Self = this.set("childLeaving", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildLeaving: Self = this.set("childLeaving", js.undefined)
+    @scala.inline
+    def setChildPulsate(value: CSSProperties): Self = this.set("childPulsate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildPulsate: Self = this.set("childPulsate", js.undefined)
+    @scala.inline
+    def setRipple(value: CSSProperties): Self = this.set("ripple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRipple: Self = this.set("ripple", js.undefined)
+    @scala.inline
+    def setRipplePulsate(value: CSSProperties): Self = this.set("ripplePulsate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRipplePulsate: Self = this.set("ripplePulsate", js.undefined)
+    @scala.inline
+    def setRippleVisible(value: CSSProperties): Self = this.set("rippleVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleVisible: Self = this.set("rippleVisible", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ trait Static extends js.Object {
     * callback: A function to invoke if the resource is retrieved successfully.
     */
   def request(resourceId: String): Unit = js.native
+  def request(resourceId: String, hash: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def request(resourceId: String, hash: js.Any): Unit = js.native
   def request(resourceId: String, hash: js.Any, callback: js.Function): Unit = js.native
   /***

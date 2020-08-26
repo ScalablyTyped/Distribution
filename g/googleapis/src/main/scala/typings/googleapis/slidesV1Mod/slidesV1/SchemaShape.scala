@@ -33,18 +33,38 @@ trait SchemaShape extends js.Object {
 
 object SchemaShape {
   @scala.inline
-  def apply(
-    placeholder: SchemaPlaceholder = null,
-    shapeProperties: SchemaShapeProperties = null,
-    shapeType: String = null,
-    text: SchemaTextContent = null
-  ): SchemaShape = {
+  def apply(): SchemaShape = {
     val __obj = js.Dynamic.literal()
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (shapeProperties != null) __obj.updateDynamic("shapeProperties")(shapeProperties.asInstanceOf[js.Any])
-    if (shapeType != null) __obj.updateDynamic("shapeType")(shapeType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaShape]
   }
+  @scala.inline
+  implicit class SchemaShapeOps[Self <: SchemaShape] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlaceholder(value: SchemaPlaceholder): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setShapeProperties(value: SchemaShapeProperties): Self = this.set("shapeProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeProperties: Self = this.set("shapeProperties", js.undefined)
+    @scala.inline
+    def setShapeType(value: String): Self = this.set("shapeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeType: Self = this.set("shapeType", js.undefined)
+    @scala.inline
+    def setText(value: SchemaTextContent): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

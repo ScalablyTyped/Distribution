@@ -11,8 +11,8 @@ Serve directory listings
 | Full name          | serve-index |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 440 |
-| # downloads        | 222468905 |
+| # dependents       | 445 |
+| # downloads        | 232929092 |
 | # stars            | 19 |
 
 ## Links

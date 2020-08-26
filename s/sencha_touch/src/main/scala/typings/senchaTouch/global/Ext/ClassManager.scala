@@ -76,6 +76,7 @@ object ClassManager extends js.Object {
     * @returns Object instance
     */
   def instantiate(): js.Any = js.native
+  def instantiate(name: js.UndefOr[scala.Nothing], args: js.Any): js.Any = js.native
   def instantiate(name: java.lang.String): js.Any = js.native
   def instantiate(name: java.lang.String, args: js.Any): js.Any = js.native
   /** [Method] Instantiate a class by its alias usually invoked by the convenient shorthand Ext createByAlias If Ext Loader is enab
@@ -96,6 +97,7 @@ object ClassManager extends js.Object {
     * @returns Ext.ClassManager this
     */
   def set(): IClassManager = js.native
+  def set(name: js.UndefOr[scala.Nothing], value: js.Any): IClassManager = js.native
   def set(name: java.lang.String): IClassManager = js.native
   def set(name: java.lang.String, value: js.Any): IClassManager = js.native
   /** [Method] Register the alias for a class
@@ -104,6 +106,7 @@ object ClassManager extends js.Object {
     * @returns Ext.ClassManager this
     */
   def setAlias(): IClassManager = js.native
+  def setAlias(cls: js.UndefOr[scala.Nothing], alias: java.lang.String): IClassManager = js.native
   def setAlias(cls: js.Any): IClassManager = js.native
   def setAlias(cls: js.Any, alias: java.lang.String): IClassManager = js.native
   /** [Method] Creates a namespace and assign the value to the created object
@@ -111,6 +114,7 @@ object ClassManager extends js.Object {
     * @param value Mixed
     */
   def setNamespace(): Unit = js.native
+  def setNamespace(name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def setNamespace(name: java.lang.String): Unit = js.native
   def setNamespace(name: java.lang.String, value: js.Any): Unit = js.native
 }

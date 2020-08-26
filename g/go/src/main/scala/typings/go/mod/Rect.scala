@@ -74,6 +74,7 @@ class Rect () extends js.Object {
     * false otherwise.
     */
   def contains(x: Double, y: Double): Boolean = js.native
+  def contains(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): Boolean = js.native
   def contains(x: Double, y: Double, w: Double): Boolean = js.native
   def contains(x: Double, y: Double, w: Double, h: Double): Boolean = js.native
   /**
@@ -210,6 +211,7 @@ class Rect () extends js.Object {
     * @param {number=} h The Height of the Rect to include in the new bounds, defaults to zero.
     */
   def union(x: Double, y: Double): Rect = js.native
+  def union(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): Rect = js.native
   def union(x: Double, y: Double, w: Double): Rect = js.native
   def union(x: Double, y: Double, w: Double, h: Double): Rect = js.native
   /**
@@ -242,6 +244,16 @@ object Rect extends js.Object {
     * false otherwise.
     */
   def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double): Boolean = js.native
+  def contains(
+    rx: Double,
+    ry: Double,
+    rw: Double,
+    rh: Double,
+    x: Double,
+    y: Double,
+    w: js.UndefOr[scala.Nothing],
+    h: Double
+  ): Boolean = js.native
   def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double): Boolean = js.native
   def contains(rx: Double, ry: Double, rw: Double, rh: Double, x: Double, y: Double, w: Double, h: Double): Boolean = js.native
   /**

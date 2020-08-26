@@ -4,96 +4,137 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectedItemsUserHandle extends js.Object {
   /** Defines the background color of the user handle
     * @Default {#2382c3}
     */
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
   /** Sets the border color of the user handle
     * @Default {transparent}
     */
-  var borderColor: js.UndefOr[String] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
   /** Defines whether the user handle should be added, when more than one element is selected
     * @Default {false}
     */
-  var enableMultiSelection: js.UndefOr[Boolean] = js.undefined
+  var enableMultiSelection: js.UndefOr[Boolean] = js.native
   /** Sets the horizontal alignment of the user handle
     * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
     */
-  var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
+  var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
   /** To set the margin of the user handle
     * @Default {ej.datavisualization.Diagram.Margin()}
     */
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[js.Any] = js.native
   /** Defines the name of the user handle
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** Sets the fraction/ratio(relative to node) that defines the position of the user handle
     * @Default {ej.datavisualization.Diagram.point(0.5, 1)}
     */
-  var offset: js.UndefOr[js.Any] = js.undefined
+  var offset: js.UndefOr[js.Any] = js.native
   /** Sets the stroke color of the user handle
     * @Default {transparent}
     */
-  var pathColor: js.UndefOr[String] = js.undefined
+  var pathColor: js.UndefOr[String] = js.native
   /** Defines the custom shape of the user handle
     */
-  var pathData: js.UndefOr[String] = js.undefined
+  var pathData: js.UndefOr[String] = js.native
   /** Defines the position of the user handle
     * @Default {ej.datavisualization.Diagram.UserHandlePositions.BottomCenter}
     */
-  var position: js.UndefOr[UserHandlePositions | String] = js.undefined
+  var position: js.UndefOr[UserHandlePositions | String] = js.native
   /** Defines the size of the user handle
     * @Default {8}
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
   /** Defines the interactive behaviors of the user handle
     */
-  var tool: js.UndefOr[js.Any] = js.undefined
+  var tool: js.UndefOr[js.Any] = js.native
   /** Sets the vertical alignment of the user handle
     * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
     */
-  var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
+  var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.native
   /** Defines the visibility of the user handle
     * @Default {true}
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object SelectedItemsUserHandle {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    borderColor: String = null,
-    enableMultiSelection: js.UndefOr[Boolean] = js.undefined,
-    horizontalAlignment: HorizontalAlignment | String = null,
-    margin: js.Any = null,
-    name: String = null,
-    offset: js.Any = null,
-    pathColor: String = null,
-    pathData: String = null,
-    position: UserHandlePositions | String = null,
-    size: js.UndefOr[Double] = js.undefined,
-    tool: js.Any = null,
-    verticalAlignment: VerticalAlignment | String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): SelectedItemsUserHandle = {
+  def apply(): SelectedItemsUserHandle = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMultiSelection)) __obj.updateDynamic("enableMultiSelection")(enableMultiSelection.get.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (pathColor != null) __obj.updateDynamic("pathColor")(pathColor.asInstanceOf[js.Any])
-    if (pathData != null) __obj.updateDynamic("pathData")(pathData.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (tool != null) __obj.updateDynamic("tool")(tool.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedItemsUserHandle]
   }
+  @scala.inline
+  implicit class SelectedItemsUserHandleOps[Self <: SelectedItemsUserHandle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setEnableMultiSelection(value: Boolean): Self = this.set("enableMultiSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableMultiSelection: Self = this.set("enableMultiSelection", js.undefined)
+    @scala.inline
+    def setHorizontalAlignment(value: HorizontalAlignment | String): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    @scala.inline
+    def setMargin(value: js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOffset(value: js.Any): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPathColor(value: String): Self = this.set("pathColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathColor: Self = this.set("pathColor", js.undefined)
+    @scala.inline
+    def setPathData(value: String): Self = this.set("pathData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathData: Self = this.set("pathData", js.undefined)
+    @scala.inline
+    def setPosition(value: UserHandlePositions | String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTool(value: js.Any): Self = this.set("tool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTool: Self = this.set("tool", js.undefined)
+    @scala.inline
+    def setVerticalAlignment(value: VerticalAlignment | String): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

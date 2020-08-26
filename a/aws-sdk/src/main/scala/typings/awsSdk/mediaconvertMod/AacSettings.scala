@@ -46,28 +46,58 @@ trait AacSettings extends js.Object {
 
 object AacSettings {
   @scala.inline
-  def apply(
-    AudioDescriptionBroadcasterMix: AacAudioDescriptionBroadcasterMix = null,
-    Bitrate: js.UndefOr[integerMin6000Max1024000] = js.undefined,
-    CodecProfile: AacCodecProfile = null,
-    CodingMode: AacCodingMode = null,
-    RateControlMode: AacRateControlMode = null,
-    RawFormat: AacRawFormat = null,
-    SampleRate: js.UndefOr[integerMin8000Max96000] = js.undefined,
-    Specification: AacSpecification = null,
-    VbrQuality: AacVbrQuality = null
-  ): AacSettings = {
+  def apply(): AacSettings = {
     val __obj = js.Dynamic.literal()
-    if (AudioDescriptionBroadcasterMix != null) __obj.updateDynamic("AudioDescriptionBroadcasterMix")(AudioDescriptionBroadcasterMix.asInstanceOf[js.Any])
-    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
-    if (CodecProfile != null) __obj.updateDynamic("CodecProfile")(CodecProfile.asInstanceOf[js.Any])
-    if (CodingMode != null) __obj.updateDynamic("CodingMode")(CodingMode.asInstanceOf[js.Any])
-    if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
-    if (RawFormat != null) __obj.updateDynamic("RawFormat")(RawFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
-    if (Specification != null) __obj.updateDynamic("Specification")(Specification.asInstanceOf[js.Any])
-    if (VbrQuality != null) __obj.updateDynamic("VbrQuality")(VbrQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[AacSettings]
   }
+  @scala.inline
+  implicit class AacSettingsOps[Self <: AacSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioDescriptionBroadcasterMix(value: AacAudioDescriptionBroadcasterMix): Self = this.set("AudioDescriptionBroadcasterMix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioDescriptionBroadcasterMix: Self = this.set("AudioDescriptionBroadcasterMix", js.undefined)
+    @scala.inline
+    def setBitrate(value: integerMin6000Max1024000): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    @scala.inline
+    def setCodecProfile(value: AacCodecProfile): Self = this.set("CodecProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecProfile: Self = this.set("CodecProfile", js.undefined)
+    @scala.inline
+    def setCodingMode(value: AacCodingMode): Self = this.set("CodingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodingMode: Self = this.set("CodingMode", js.undefined)
+    @scala.inline
+    def setRateControlMode(value: AacRateControlMode): Self = this.set("RateControlMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateControlMode: Self = this.set("RateControlMode", js.undefined)
+    @scala.inline
+    def setRawFormat(value: AacRawFormat): Self = this.set("RawFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawFormat: Self = this.set("RawFormat", js.undefined)
+    @scala.inline
+    def setSampleRate(value: integerMin8000Max96000): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    @scala.inline
+    def setSpecification(value: AacSpecification): Self = this.set("Specification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecification: Self = this.set("Specification", js.undefined)
+    @scala.inline
+    def setVbrQuality(value: AacVbrQuality): Self = this.set("VbrQuality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVbrQuality: Self = this.set("VbrQuality", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 package typings.ts3NodejsLibrary.commandMod
 
 import typings.std.Record
-import typings.ts3NodejsLibrary.anon.PartialQueryResponseTypes
 import typings.ts3NodejsLibrary.commandMod.Command.ParserCallback
 import typings.ts3NodejsLibrary.commandMod.Command.flags
 import typings.ts3NodejsLibrary.commandMod.Command.multiOpts
 import typings.ts3NodejsLibrary.commandMod.Command.options
 import typings.ts3NodejsLibrary.responseErrorMod.ResponseError
+import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +22,7 @@ class Command_ () extends js.Object {
   var requestParser: js.Any = js.native
   var response: js.Any = js.native
   var responseParser: js.Any = js.native
+  var stack: js.Any = js.native
   /** runs the parser of this instance */
   def build(): String = js.native
   /** builds the query string for flags */
@@ -36,7 +37,7 @@ class Command_ () extends js.Object {
   /** get the parsed error object which has been received from the TeamSpeak Query */
   def getError(): ResponseError | Null = js.native
   /** get the parsed response object which has been received from the TeamSpeak Query */
-  def getResponse(): js.Array[PartialQueryResponseTypes] = js.native
+  def getResponse(): Response = js.native
   /** checks if a error has been received */
   def hasError(): Boolean = js.native
   /** checks wether there are flags used with this command */
@@ -46,7 +47,7 @@ class Command_ () extends js.Object {
   /** checks wether there are options used with this command */
   def hasOptions(): Boolean = js.native
   /** runs the parser of this instance */
-  def parse(raw: String): js.Array[PartialQueryResponseTypes] = js.native
+  def parse(raw: String): Response = js.native
   /** Initializes the Respone with default values */
   def reset(): Command = js.native
   /** Sets the main command to send */

@@ -28,6 +28,7 @@ class ResourceProjectsOperations protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsOperationsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsOperationsCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -58,6 +59,7 @@ class ResourceProjectsOperations protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceProjectsOperationsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceProjectsOperationsPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-resolve-dependencies
 
-Typings are for version 24.9.0
+Typings are for version 26.2.2
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-resolve-dependencies |
 | Keywords           | - |
-| # releases         | 58 |
+| # releases         | 56 |
 | # dependents       | 22 |
-| # downloads        | 225630557 |
+| # downloads        | 227661081 |
 | # stars            | 0 |
 
 ## Links

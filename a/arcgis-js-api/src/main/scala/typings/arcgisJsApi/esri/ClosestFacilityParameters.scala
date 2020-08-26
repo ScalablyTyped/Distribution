@@ -261,7 +261,7 @@ trait ClosestFacilityParameters
     */
   var travelDirection: `from-facility` | `to-facility` = js.native
   /**
-    * Travel modes define how a pedestrian, car, truck or other medium of transportation moves through the street network.
+    * A travel mode represents a means of transportation, such as driving or walking. Travel modes define the physical characteristics of a vehicle or pedestrian.  The value for the `travelMode` parameter is the JSON object containing the settings for a travel mode supported by your service. To get the supported travel modes, execute the `retrieveTravelModes` operation. You can make a request to retrieve travel modes using the following form: `https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World/retrieveTravelModes?f=json`
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#travelMode)
     */

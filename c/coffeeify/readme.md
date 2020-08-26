@@ -9,9 +9,9 @@ browserify plugin for coffeescript with support for mixed .js and .coffee files
 | ------------------ | :-------------: |
 | Full name          | coffeeify |
 | Keywords           | coffeescript, coffee-script, browserify, v2, js, plugin, transform |
-| # releases         | 1 |
-| # dependents       | 145 |
-| # downloads        | 2039506 |
+| # releases         | 0 |
+| # dependents       | 144 |
+| # downloads        | 2223268 |
 | # stars            | 8 |
 
 ## Links

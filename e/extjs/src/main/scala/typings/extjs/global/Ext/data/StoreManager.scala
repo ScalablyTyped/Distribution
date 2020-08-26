@@ -37,6 +37,7 @@ object StoreManager extends js.Object {
     * @returns Object The item added.
     */
   def add(): js.Any = js.native
+  def add(key: js.UndefOr[scala.Nothing], obj: js.Any): js.Any = js.native
   def add(key: js.Any): js.Any = js.native
   def add(key: js.Any, obj: js.Any): js.Any = js.native
   /** [Method] Adds all elements of an Array or an Object to the collection
@@ -57,8 +58,39 @@ object StoreManager extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def addListener(): js.Any = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def addListener(eventName: js.Any): js.Any = js.native
+  def addListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def addListener(eventName: js.Any, fn: js.Any): js.Any = js.native
+  def addListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def addListener(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
@@ -70,9 +102,106 @@ object StoreManager extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def addManagedListener(): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
@@ -106,7 +235,11 @@ object StoreManager extends js.Object {
     * @returns Array The unique values
     */
   def collect(): Array = js.native
+  def collect(property: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], allowBlank: Boolean): Array = js.native
+  def collect(property: js.UndefOr[scala.Nothing], root: String): Array = js.native
+  def collect(property: js.UndefOr[scala.Nothing], root: String, allowBlank: Boolean): Array = js.native
   def collect(property: String): Array = js.native
+  def collect(property: String, root: js.UndefOr[scala.Nothing], allowBlank: Boolean): Array = js.native
   def collect(property: String, root: String): Array = js.native
   def collect(property: String, root: String, allowBlank: Boolean): Array = js.native
   /** [Method] Returns true if the collection contains the passed Object as an item
@@ -126,6 +259,7 @@ object StoreManager extends js.Object {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
     */
   def each(): Unit = js.native
+  def each(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def each(fn: js.Any): Unit = js.native
   def each(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Executes the specified function once for every key in the collection passing each key and its associated item as th
@@ -133,6 +267,7 @@ object StoreManager extends js.Object {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     */
   def eachKey(): Unit = js.native
+  def eachKey(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def eachKey(fn: js.Any): Unit = js.native
   def eachKey(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
@@ -148,8 +283,39 @@ object StoreManager extends js.Object {
     * @returns Ext.util.MixedCollection The new filtered collection
     */
   def filter(): IMixedCollection = js.native
+  def filter(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): IMixedCollection = js.native
+  def filter(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], anyMatch: Boolean): IMixedCollection = js.native
+  def filter(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    anyMatch: Boolean,
+    caseSensitive: Boolean
+  ): IMixedCollection = js.native
+  def filter(property: js.UndefOr[scala.Nothing], value: js.Any): IMixedCollection = js.native
+  def filter(
+    property: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): IMixedCollection = js.native
+  def filter(property: js.UndefOr[scala.Nothing], value: js.Any, anyMatch: Boolean): IMixedCollection = js.native
+  def filter(property: js.UndefOr[scala.Nothing], value: js.Any, anyMatch: Boolean, caseSensitive: Boolean): IMixedCollection = js.native
   def filter(property: js.Any): IMixedCollection = js.native
+  def filter(
+    property: js.Any,
+    value: js.UndefOr[scala.Nothing],
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): IMixedCollection = js.native
+  def filter(property: js.Any, value: js.UndefOr[scala.Nothing], anyMatch: Boolean): IMixedCollection = js.native
+  def filter(property: js.Any, value: js.UndefOr[scala.Nothing], anyMatch: Boolean, caseSensitive: Boolean): IMixedCollection = js.native
   def filter(property: js.Any, value: js.Any): IMixedCollection = js.native
+  def filter(property: js.Any, value: js.Any, anyMatch: js.UndefOr[scala.Nothing], caseSensitive: Boolean): IMixedCollection = js.native
   def filter(property: js.Any, value: js.Any, anyMatch: Boolean): IMixedCollection = js.native
   def filter(property: js.Any, value: js.Any, anyMatch: Boolean, caseSensitive: Boolean): IMixedCollection = js.native
   /** [Method] Filter by a function
@@ -158,6 +324,7 @@ object StoreManager extends js.Object {
     * @returns Ext.util.MixedCollection The new filtered collection
     */
   def filterBy(): IMixedCollection = js.native
+  def filterBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): IMixedCollection = js.native
   def filterBy(fn: js.Any): IMixedCollection = js.native
   def filterBy(fn: js.Any, scope: js.Any): IMixedCollection = js.native
   /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function  */
@@ -168,6 +335,7 @@ object StoreManager extends js.Object {
     * @returns Object The first item in the collection which returned true from the selection function, or null if none was found.
     */
   def findBy(): js.Any = js.native
+  def findBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
   def findBy(fn: js.Any): js.Any = js.native
   def findBy(fn: js.Any, scope: js.Any): js.Any = js.native
   /** [Method] Finds the index of the first matching object in this collection by a specific property value
@@ -179,9 +347,145 @@ object StoreManager extends js.Object {
     * @returns Number The matched index or -1
     */
   def findIndex(): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: Boolean
+  ): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: Boolean,
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    start: Double,
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    start: Double,
+    anyMatch: Boolean
+  ): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    start: Double,
+    anyMatch: Boolean,
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(property: js.UndefOr[scala.Nothing], value: js.Any): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: Boolean
+  ): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: Boolean,
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(property: js.UndefOr[scala.Nothing], value: js.Any, start: Double): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    start: Double,
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(property: js.UndefOr[scala.Nothing], value: js.Any, start: Double, anyMatch: Boolean): Double = js.native
+  def findIndex(
+    property: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    start: Double,
+    anyMatch: Boolean,
+    caseSensitive: Boolean
+  ): Double = js.native
   def findIndex(property: String): Double = js.native
+  def findIndex(
+    property: String,
+    value: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(
+    property: String,
+    value: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: Boolean
+  ): Double = js.native
+  def findIndex(
+    property: String,
+    value: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: Boolean,
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(property: String, value: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+  def findIndex(
+    property: String,
+    value: js.UndefOr[scala.Nothing],
+    start: Double,
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(property: String, value: js.UndefOr[scala.Nothing], start: Double, anyMatch: Boolean): Double = js.native
+  def findIndex(
+    property: String,
+    value: js.UndefOr[scala.Nothing],
+    start: Double,
+    anyMatch: Boolean,
+    caseSensitive: Boolean
+  ): Double = js.native
   def findIndex(property: String, value: js.Any): Double = js.native
+  def findIndex(
+    property: String,
+    value: js.Any,
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): Double = js.native
+  def findIndex(property: String, value: js.Any, start: js.UndefOr[scala.Nothing], anyMatch: Boolean): Double = js.native
+  def findIndex(
+    property: String,
+    value: js.Any,
+    start: js.UndefOr[scala.Nothing],
+    anyMatch: Boolean,
+    caseSensitive: Boolean
+  ): Double = js.native
   def findIndex(property: String, value: js.Any, start: Double): Double = js.native
+  def findIndex(
+    property: String,
+    value: js.Any,
+    start: Double,
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): Double = js.native
   def findIndex(property: String, value: js.Any, start: Double, anyMatch: Boolean): Double = js.native
   def findIndex(property: String, value: js.Any, start: Double, anyMatch: Boolean, caseSensitive: Boolean): Double = js.native
   /** [Method] Find the index of the first matching object in this collection by a function
@@ -191,7 +495,11 @@ object StoreManager extends js.Object {
     * @returns Number The matched index or -1
     */
   def findIndexBy(): Double = js.native
+  def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+  def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): Double = js.native
+  def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.Any, start: Double): Double = js.native
   def findIndexBy(fn: js.Any): Double = js.native
+  def findIndexBy(fn: js.Any, scope: js.UndefOr[scala.Nothing], start: Double): Double = js.native
   def findIndexBy(fn: js.Any, scope: js.Any): Double = js.native
   def findIndexBy(fn: js.Any, scope: js.Any, start: Double): Double = js.native
   /** [Method] Calculates the insertion index of the new item based upon the comparison function passed or the current sort order
@@ -200,6 +508,7 @@ object StoreManager extends js.Object {
     * @returns Number The insertion point to add the new item into this MixedCollection at using insert
     */
   def findInsertionIndex(): Double = js.native
+  def findInsertionIndex(newItem: js.UndefOr[scala.Nothing], sorterFn: js.Any): Double = js.native
   def findInsertionIndex(newItem: js.Any): Double = js.native
   def findInsertionIndex(newItem: js.Any, sorterFn: js.Any): Double = js.native
   /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
@@ -214,6 +523,7 @@ object StoreManager extends js.Object {
     * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
     */
   def fireEventArgs(): Boolean = js.native
+  def fireEventArgs(eventName: js.UndefOr[scala.Nothing], args: Array): Boolean = js.native
   def fireEventArgs(eventName: String): Boolean = js.native
   def fireEventArgs(eventName: String, args: Array): Boolean = js.native
   /** [Method] Returns the first item in the collection
@@ -266,6 +576,7 @@ object StoreManager extends js.Object {
     * @returns Array An array of items
     */
   def getRange(): Array = js.native
+  def getRange(startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Array = js.native
   def getRange(startIndex: Double): Array = js.native
   def getRange(startIndex: Double, endIndex: Double): Array = js.native
   /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
@@ -301,7 +612,11 @@ object StoreManager extends js.Object {
     * @returns Object The item inserted or an array of items inserted.
     */
   def insert(): js.Any = js.native
+  def insert(index: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+  def insert(index: js.UndefOr[scala.Nothing], key: js.Any): js.Any = js.native
+  def insert(index: js.UndefOr[scala.Nothing], key: js.Any, o: js.Any): js.Any = js.native
   def insert(index: Double): js.Any = js.native
+  def insert(index: Double, key: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
   def insert(index: Double, key: js.Any): js.Any = js.native
   def insert(index: Double, key: js.Any, o: js.Any): js.Any = js.native
   /** [Method] Returns the last item in the collection
@@ -323,9 +638,106 @@ object StoreManager extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def mon(): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def mon(item: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+  def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Shorthand for removeManagedListener
@@ -335,8 +747,24 @@ object StoreManager extends js.Object {
     * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
     */
   def mun(): Unit = js.native
+  def mun(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def mun(item: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def mun(item: js.Any, ename: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def mun(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
   def mun(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Shorthand for addListener
@@ -347,8 +775,39 @@ object StoreManager extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def on(): js.Any = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def on(eventName: js.Any): js.Any = js.native
+  def on(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def on(eventName: js.Any, fn: js.Any): js.Any = js.native
+  def on(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Registers one or more Stores with the StoreManager
@@ -362,7 +821,11 @@ object StoreManager extends js.Object {
     * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
     */
   def relayEvents(): js.Any = js.native
+  def relayEvents(origin: js.UndefOr[scala.Nothing], events: js.UndefOr[scala.Nothing], prefix: String): js.Any = js.native
+  def relayEvents(origin: js.UndefOr[scala.Nothing], events: Array): js.Any = js.native
+  def relayEvents(origin: js.UndefOr[scala.Nothing], events: Array, prefix: String): js.Any = js.native
   def relayEvents(origin: js.Any): js.Any = js.native
+  def relayEvents(origin: js.Any, events: js.UndefOr[scala.Nothing], prefix: String): js.Any = js.native
   def relayEvents(origin: js.Any, events: Array): js.Any = js.native
   def relayEvents(origin: js.Any, events: Array, prefix: String): js.Any = js.native
   /** [Method] Remove an item from the collection
@@ -395,7 +858,11 @@ object StoreManager extends js.Object {
     * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
     */
   def removeListener(): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def removeListener(eventName: String): Unit = js.native
+  def removeListener(eventName: String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def removeListener(eventName: String, fn: js.Any): Unit = js.native
   def removeListener(eventName: String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Removes listeners that were added by the mon method
@@ -405,8 +872,24 @@ object StoreManager extends js.Object {
     * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
     */
   def removeManagedListener(): Unit = js.native
+  def removeManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any, ename: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Remove a range of items starting at a specified index in the collection
@@ -415,6 +898,7 @@ object StoreManager extends js.Object {
     * @returns Object The last item removed or false if no item was removed.
     */
   def removeRange(): js.Any = js.native
+  def removeRange(index: js.UndefOr[scala.Nothing], removeCount: Double): js.Any = js.native
   def removeRange(index: Double): js.Any = js.native
   def removeRange(index: Double, removeCount: Double): js.Any = js.native
   /** [Method] Reorders each of the items based on a mapping from old index to new index
@@ -428,6 +912,7 @@ object StoreManager extends js.Object {
     * @returns Object The new item.
     */
   def replace(): js.Any = js.native
+  def replace(key: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
   def replace(key: String): js.Any = js.native
   def replace(key: String, o: js.Any): js.Any = js.native
   /** [Method] Resumes firing of the named event s
@@ -442,6 +927,7 @@ object StoreManager extends js.Object {
     * @returns Ext.util.Sorter[]
     */
   def sort(): Array = js.native
+  def sort(sorters: js.UndefOr[scala.Nothing], direction: String): Array = js.native
   def sort(sorters: js.Any): Array = js.native
   def sort(sorters: js.Any, direction: String): Array = js.native
   /** [Method] Sorts the collection by a single sorter function
@@ -454,6 +940,7 @@ object StoreManager extends js.Object {
     * @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
     */
   def sortByKey(): Unit = js.native
+  def sortByKey(direction: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
   def sortByKey(direction: String): Unit = js.native
   def sortByKey(direction: String, fn: js.Any): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
@@ -468,8 +955,24 @@ object StoreManager extends js.Object {
     * @returns Number The total
     */
   def sum(): Double = js.native
+  def sum(
+    property: js.UndefOr[scala.Nothing],
+    root: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    end: Double
+  ): Double = js.native
+  def sum(property: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+  def sum(property: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], start: Double, end: Double): Double = js.native
+  def sum(property: js.UndefOr[scala.Nothing], root: String): Double = js.native
+  def sum(property: js.UndefOr[scala.Nothing], root: String, start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
+  def sum(property: js.UndefOr[scala.Nothing], root: String, start: Double): Double = js.native
+  def sum(property: js.UndefOr[scala.Nothing], root: String, start: Double, end: Double): Double = js.native
   def sum(property: String): Double = js.native
+  def sum(property: String, root: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
+  def sum(property: String, root: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+  def sum(property: String, root: js.UndefOr[scala.Nothing], start: Double, end: Double): Double = js.native
   def sum(property: String, root: String): Double = js.native
+  def sum(property: String, root: String, start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
   def sum(property: String, root: String, start: Double): Double = js.native
   def sum(property: String, root: String, start: Double, end: Double): Double = js.native
   /** [Method] Suspends firing of the named event s
@@ -487,7 +990,11 @@ object StoreManager extends js.Object {
     * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
     */
   def un(): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def un(eventName: String): Unit = js.native
+  def un(eventName: String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def un(eventName: String, fn: js.Any): Unit = js.native
   def un(eventName: String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Unregisters one or more Stores with the StoreManager
@@ -500,6 +1007,7 @@ object StoreManager extends js.Object {
     * @param newKey Object The new key
     */
   def updateKey(): Unit = js.native
+  def updateKey(oldKey: js.UndefOr[scala.Nothing], newKey: js.Any): Unit = js.native
   def updateKey(oldKey: js.Any): Unit = js.native
   def updateKey(oldKey: js.Any, newKey: js.Any): Unit = js.native
 }

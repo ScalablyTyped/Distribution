@@ -48,6 +48,7 @@ trait PluginAPI extends js.Object {
   def flatten(nodes: js.Array[BaseNode]): VectorNode = js.native
   def flatten(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin): VectorNode = js.native
   def flatten(nodes: js.Array[BaseNode], parent: BaseNode with ChildrenMixin, index: Double): VectorNode = js.native
+  def flatten(nodes: js.Array[BaseNode], parent: js.UndefOr[scala.Nothing], index: Double): VectorNode = js.native
   def getImageByHash(hash: String): Image = js.native
   def getLocalEffectStyles(): js.Array[EffectStyle] = js.native
   def getLocalGridStyles(): js.Array[GridStyle] = js.native

@@ -12,7 +12,7 @@ provides middleware to load controllers based on api versions
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 29927 |
+| # downloads        | 31649 |
 | # stars            | 0 |
 
 ## Links

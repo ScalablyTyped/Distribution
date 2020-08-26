@@ -17,6 +17,7 @@ class SphereGeometry () extends Packable {
 object SphereGeometry extends js.Object {
   def createGeometry(sphereGeometry: SphereGeometry): Geometry = js.native
   def unpack(array: js.Array[Double]): SphereGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: SphereGeometry): SphereGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): SphereGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: SphereGeometry): SphereGeometry = js.native
 }

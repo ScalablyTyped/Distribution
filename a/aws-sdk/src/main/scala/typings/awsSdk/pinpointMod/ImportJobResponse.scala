@@ -68,24 +68,65 @@ object ImportJobResponse {
     Definition: ImportJobResource,
     Id: string,
     JobStatus: JobStatus,
-    Type: string,
-    CompletedPieces: js.UndefOr[integer] = js.undefined,
-    CompletionDate: string = null,
-    FailedPieces: js.UndefOr[integer] = js.undefined,
-    Failures: ListOfString = null,
-    TotalFailures: js.UndefOr[integer] = js.undefined,
-    TotalPieces: js.UndefOr[integer] = js.undefined,
-    TotalProcessed: js.UndefOr[integer] = js.undefined
+    Type: string
   ): ImportJobResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], Definition = Definition.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], JobStatus = JobStatus.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(CompletedPieces)) __obj.updateDynamic("CompletedPieces")(CompletedPieces.get.asInstanceOf[js.Any])
-    if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailedPieces)) __obj.updateDynamic("FailedPieces")(FailedPieces.get.asInstanceOf[js.Any])
-    if (Failures != null) __obj.updateDynamic("Failures")(Failures.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalFailures)) __obj.updateDynamic("TotalFailures")(TotalFailures.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalPieces)) __obj.updateDynamic("TotalPieces")(TotalPieces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalProcessed)) __obj.updateDynamic("TotalProcessed")(TotalProcessed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportJobResponse]
   }
+  @scala.inline
+  implicit class ImportJobResponseOps[Self <: ImportJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationDate(value: string): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefinition(value: ImportJobResource): Self = this.set("Definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: string): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompletedPieces(value: integer): Self = this.set("CompletedPieces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedPieces: Self = this.set("CompletedPieces", js.undefined)
+    @scala.inline
+    def setCompletionDate(value: string): Self = this.set("CompletionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionDate: Self = this.set("CompletionDate", js.undefined)
+    @scala.inline
+    def setFailedPieces(value: integer): Self = this.set("FailedPieces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedPieces: Self = this.set("FailedPieces", js.undefined)
+    @scala.inline
+    def setFailuresVarargs(value: string*): Self = this.set("Failures", js.Array(value :_*))
+    @scala.inline
+    def setFailures(value: ListOfString): Self = this.set("Failures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailures: Self = this.set("Failures", js.undefined)
+    @scala.inline
+    def setTotalFailures(value: integer): Self = this.set("TotalFailures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalFailures: Self = this.set("TotalFailures", js.undefined)
+    @scala.inline
+    def setTotalPieces(value: integer): Self = this.set("TotalPieces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalPieces: Self = this.set("TotalPieces", js.undefined)
+    @scala.inline
+    def setTotalProcessed(value: integer): Self = this.set("TotalProcessed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalProcessed: Self = this.set("TotalProcessed", js.undefined)
+  }
+  
 }
 

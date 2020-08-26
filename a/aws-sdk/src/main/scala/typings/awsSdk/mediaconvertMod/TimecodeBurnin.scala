@@ -22,16 +22,34 @@ trait TimecodeBurnin extends js.Object {
 
 object TimecodeBurnin {
   @scala.inline
-  def apply(
-    FontSize: js.UndefOr[integerMin10Max48] = js.undefined,
-    Position: TimecodeBurninPosition = null,
-    Prefix: stringPattern = null
-  ): TimecodeBurnin = {
+  def apply(): TimecodeBurnin = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FontSize)) __obj.updateDynamic("FontSize")(FontSize.get.asInstanceOf[js.Any])
-    if (Position != null) __obj.updateDynamic("Position")(Position.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimecodeBurnin]
   }
+  @scala.inline
+  implicit class TimecodeBurninOps[Self <: TimecodeBurnin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFontSize(value: integerMin10Max48): Self = this.set("FontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("FontSize", js.undefined)
+    @scala.inline
+    def setPosition(value: TimecodeBurninPosition): Self = this.set("Position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("Position", js.undefined)
+    @scala.inline
+    def setPrefix(value: stringPattern): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+  }
+  
 }
 

@@ -42,6 +42,16 @@ class ActionContext () extends js.Object {
       /* callback */ js.UndefOr[js.Function0[Unit]], 
       Unit
     ],
+    payload: js.UndefOr[scala.Nothing],
+    callback: js.Any
+  ): Unit = js.native
+  def executeAction(
+    action: js.Function3[
+      /* context */ this.type, 
+      /* params */ js.Object, 
+      /* callback */ js.UndefOr[js.Function0[Unit]], 
+      Unit
+    ],
     payload: js.Any
   ): Unit = js.native
   def executeAction(

@@ -49,26 +49,56 @@ trait SchemaAdministratorWebTokenSpec extends js.Object {
 
 object SchemaAdministratorWebTokenSpec {
   @scala.inline
-  def apply(
-    kind: String = null,
-    managedConfigurations: SchemaAdministratorWebTokenSpecManagedConfigurations = null,
-    parent: String = null,
-    permission: js.Array[String] = null,
-    playSearch: SchemaAdministratorWebTokenSpecPlaySearch = null,
-    privateApps: SchemaAdministratorWebTokenSpecPrivateApps = null,
-    storeBuilder: SchemaAdministratorWebTokenSpecStoreBuilder = null,
-    webApps: SchemaAdministratorWebTokenSpecWebApps = null
-  ): SchemaAdministratorWebTokenSpec = {
+  def apply(): SchemaAdministratorWebTokenSpec = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (managedConfigurations != null) __obj.updateDynamic("managedConfigurations")(managedConfigurations.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
-    if (playSearch != null) __obj.updateDynamic("playSearch")(playSearch.asInstanceOf[js.Any])
-    if (privateApps != null) __obj.updateDynamic("privateApps")(privateApps.asInstanceOf[js.Any])
-    if (storeBuilder != null) __obj.updateDynamic("storeBuilder")(storeBuilder.asInstanceOf[js.Any])
-    if (webApps != null) __obj.updateDynamic("webApps")(webApps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAdministratorWebTokenSpec]
   }
+  @scala.inline
+  implicit class SchemaAdministratorWebTokenSpecOps[Self <: SchemaAdministratorWebTokenSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setManagedConfigurations(value: SchemaAdministratorWebTokenSpecManagedConfigurations): Self = this.set("managedConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedConfigurations: Self = this.set("managedConfigurations", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setPermissionVarargs(value: String*): Self = this.set("permission", js.Array(value :_*))
+    @scala.inline
+    def setPermission(value: js.Array[String]): Self = this.set("permission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermission: Self = this.set("permission", js.undefined)
+    @scala.inline
+    def setPlaySearch(value: SchemaAdministratorWebTokenSpecPlaySearch): Self = this.set("playSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaySearch: Self = this.set("playSearch", js.undefined)
+    @scala.inline
+    def setPrivateApps(value: SchemaAdministratorWebTokenSpecPrivateApps): Self = this.set("privateApps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateApps: Self = this.set("privateApps", js.undefined)
+    @scala.inline
+    def setStoreBuilder(value: SchemaAdministratorWebTokenSpecStoreBuilder): Self = this.set("storeBuilder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreBuilder: Self = this.set("storeBuilder", js.undefined)
+    @scala.inline
+    def setWebApps(value: SchemaAdministratorWebTokenSpecWebApps): Self = this.set("webApps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebApps: Self = this.set("webApps", js.undefined)
+  }
+  
 }
 

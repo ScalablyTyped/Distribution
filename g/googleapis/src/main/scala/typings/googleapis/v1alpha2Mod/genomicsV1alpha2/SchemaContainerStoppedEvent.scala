@@ -31,16 +31,34 @@ trait SchemaContainerStoppedEvent extends js.Object {
 
 object SchemaContainerStoppedEvent {
   @scala.inline
-  def apply(
-    actionId: js.UndefOr[Double] = js.undefined,
-    exitStatus: js.UndefOr[Double] = js.undefined,
-    stderr: String = null
-  ): SchemaContainerStoppedEvent = {
+  def apply(): SchemaContainerStoppedEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(actionId)) __obj.updateDynamic("actionId")(actionId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitStatus)) __obj.updateDynamic("exitStatus")(exitStatus.get.asInstanceOf[js.Any])
-    if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainerStoppedEvent]
   }
+  @scala.inline
+  implicit class SchemaContainerStoppedEventOps[Self <: SchemaContainerStoppedEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionId(value: Double): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionId: Self = this.set("actionId", js.undefined)
+    @scala.inline
+    def setExitStatus(value: Double): Self = this.set("exitStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitStatus: Self = this.set("exitStatus", js.undefined)
+    @scala.inline
+    def setStderr(value: String): Self = this.set("stderr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStderr: Self = this.set("stderr", js.undefined)
+  }
+  
 }
 

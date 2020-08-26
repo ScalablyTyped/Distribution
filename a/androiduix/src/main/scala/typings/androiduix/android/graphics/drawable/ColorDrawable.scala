@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.drawable.ColorDrawable")
 @js.native
-class ColorDrawable () extends Drawable {
-  def this(color: Double) = this()
+trait ColorDrawable extends Drawable {
   var mMutated: js.Any = js.native
   var mPaint: js.Any = js.native
   var mState: js.Any = js.native

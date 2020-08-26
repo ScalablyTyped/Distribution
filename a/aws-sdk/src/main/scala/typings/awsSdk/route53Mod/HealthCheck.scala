@@ -38,14 +38,39 @@ object HealthCheck {
     CallerReference: HealthCheckNonce,
     HealthCheckConfig: HealthCheckConfig,
     HealthCheckVersion: HealthCheckVersion,
-    Id: HealthCheckId,
-    CloudWatchAlarmConfiguration: CloudWatchAlarmConfiguration = null,
-    LinkedService: LinkedService = null
+    Id: HealthCheckId
   ): HealthCheck = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], HealthCheckConfig = HealthCheckConfig.asInstanceOf[js.Any], HealthCheckVersion = HealthCheckVersion.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
-    if (CloudWatchAlarmConfiguration != null) __obj.updateDynamic("CloudWatchAlarmConfiguration")(CloudWatchAlarmConfiguration.asInstanceOf[js.Any])
-    if (LinkedService != null) __obj.updateDynamic("LinkedService")(LinkedService.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheck]
   }
+  @scala.inline
+  implicit class HealthCheckOps[Self <: HealthCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallerReference(value: HealthCheckNonce): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthCheckConfig(value: HealthCheckConfig): Self = this.set("HealthCheckConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthCheckVersion(value: HealthCheckVersion): Self = this.set("HealthCheckVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: HealthCheckId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCloudWatchAlarmConfiguration(value: CloudWatchAlarmConfiguration): Self = this.set("CloudWatchAlarmConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchAlarmConfiguration: Self = this.set("CloudWatchAlarmConfiguration", js.undefined)
+    @scala.inline
+    def setLinkedService(value: LinkedService): Self = this.set("LinkedService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedService: Self = this.set("LinkedService", js.undefined)
+  }
+  
 }
 

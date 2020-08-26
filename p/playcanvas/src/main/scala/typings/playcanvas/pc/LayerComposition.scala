@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
   * Create a new layer composition.
   * @property layerList - A read-only array of {@link pc.Layer} sorted in the order they will be rendered.
   * @property subLayerList - A read-only array of boolean values, matching {@link pc.Layer#layerList}.
-  True means only semi-transparent objects are rendered, and false means opaque.
+  * True means only semi-transparent objects are rendered, and false means opaque.
   * @property subLayerEnabled - A read-only array of boolean values, matching {@link pc.Layer#layerList}.
-  True means the layer is rendered, false means it's skipped.
+  * True means the layer is rendered, false means it's skipped.
   * @property cameras - A read-only array of {@link pc.CameraComponent} that can be used during rendering, e.g. Inside
-  {@link pc.Layer#onPreCull}, {@link pc.Layer#onPostCull}, {@link pc.Layer#onPreRender}, {@link pc.Layer#onPostRender}.
+  * {@link pc.Layer#onPreCull}, {@link pc.Layer#onPostCull}, {@link pc.Layer#onPreRender}, {@link pc.Layer#onPostRender}.
   */
 @js.native
 trait LayerComposition extends EventHandler {
   /**
     * A read-only array of {@link pc.CameraComponent} that can be used during rendering, e.g. Inside
-    * {@link pc.Layer#onPreCull}, {@link pc.Layer#onPostCull}, {@link pc.Layer#onPreRender}, {@link pc.Layer#onPostRender}.
+    {@link pc.Layer#onPreCull}, {@link pc.Layer#onPostCull}, {@link pc.Layer#onPreRender}, {@link pc.Layer#onPostRender}.
     */
   var cameras: js.Array[CameraComponent] = js.native
   /**
@@ -27,12 +27,12 @@ trait LayerComposition extends EventHandler {
   var layerList: js.Array[Layer] = js.native
   /**
     * A read-only array of boolean values, matching {@link pc.Layer#layerList}.
-    * True means the layer is rendered, false means it's skipped.
+    True means the layer is rendered, false means it's skipped.
     */
   var subLayerEnabled: js.Array[Boolean] = js.native
   /**
     * A read-only array of boolean values, matching {@link pc.Layer#layerList}.
-    * True means only semi-transparent objects are rendered, and false means opaque.
+    True means only semi-transparent objects are rendered, and false means opaque.
     */
   var subLayerList: js.Array[Boolean] = js.native
   /**
@@ -112,7 +112,7 @@ trait LayerComposition extends EventHandler {
     * @param layersA - IDs of layers.
     * @param layersB - IDs of layers.
     * @returns Returns a negative number if any of the opaque sublayers in layersA is on top of all the opaque sublayers in layersB,
-    or a positive number if any of the opaque sublayers in layersB is on top of all the opaque sublayers in layersA, or 0 otherwise.
+    * or a positive number if any of the opaque sublayers in layersB is on top of all the opaque sublayers in layersA, or 0 otherwise.
     */
   def sortOpaqueLayers(layersA: js.Array[Double], layersB: js.Array[Double]): Double = js.native
   /**
@@ -120,7 +120,7 @@ trait LayerComposition extends EventHandler {
     * @param layersA - IDs of layers.
     * @param layersB - IDs of layers.
     * @returns Returns a negative number if any of the transparent sublayers in layersA is on top of all the transparent sublayers in layersB,
-    or a positive number if any of the transparent sublayers in layersB is on top of all the transparent sublayers in layersA, or 0 otherwise.
+    * or a positive number if any of the transparent sublayers in layersB is on top of all the transparent sublayers in layersA, or 0 otherwise.
     */
   def sortTransparentLayers(layersA: js.Array[Double], layersB: js.Array[Double]): Double = js.native
 }

@@ -25,7 +25,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tarn/lib/Pool", JSImport.Namespace)
+@JSImport("tarn/dist/Pool", JSImport.Namespace)
 @js.native
 object poolMod extends js.Object {
   @js.native
@@ -48,6 +48,7 @@ object poolMod extends js.Object {
     var pendingAcquires: js.Array[PendingOperation[T]] = js.native
     var pendingCreates: js.Array[PendingOperation[T]] = js.native
     var pendingDestroys: js.Array[PendingOperation[T]] = js.native
+    var pendingValidations: js.Array[PendingOperation[T]] = js.native
     var propagateCreateError: Boolean = js.native
     var reapIntervalMillis: Double = js.native
     var used: js.Array[Resource[T]] = js.native
@@ -65,12 +66,24 @@ object poolMod extends js.Object {
     def _shouldCreateMoreResources(): Boolean = js.native
     def _startReaping(): Unit = js.native
     def _stopReaping(): Unit = js.native
+    /**
+      * The most important method that is called always when resources
+      * are created / destroyed / acquired / released. In other words
+      * every time when resources are moved from used to free or vice
+      * versa.
+      *
+      * Either assigns free resources to pendingAcquires or creates new
+      * resources if there is room for it in the pool.
+      */
     def _tryAcquireOrCreate(): Unit = js.native
-    def _validateResource(resource: T): Boolean = js.native
+    def _validateResource(resource: T): js.Promise[Boolean] = js.native
     def acquire(): PendingOperation[T] = js.native
+    /**
+      * Reaping cycle.
+      */
     def check(): Unit = js.native
     /* protected */ def creator(cb: Callback[T]): js.Any | js.Function0[js.Promise[T]] = js.native
-    def destroy(): js.Promise[PromiseInspection[js.Object | Unit]] = js.native
+    def destroy(): js.Promise[PromiseInspection[_ | Unit]] = js.native
     /* protected */ def destroyer(resource: T): js.Any = js.native
     def isEmpty(): Boolean = js.native
     @JSName("log")
@@ -78,6 +91,7 @@ object poolMod extends js.Object {
     def numFree(): Double = js.native
     def numPendingAcquires(): Double = js.native
     def numPendingCreates(): Double = js.native
+    def numPendingValidations(): Double = js.native
     def numUsed(): Double = js.native
     @JSName("on")
     def on_acquireFail(eventName: acquireFail, handler: js.Function2[/* eventId */ Double, /* err */ Error, Unit]): Unit = js.native

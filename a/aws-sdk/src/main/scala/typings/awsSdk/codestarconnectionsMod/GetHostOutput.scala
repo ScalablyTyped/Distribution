@@ -30,20 +30,42 @@ trait GetHostOutput extends js.Object {
 
 object GetHostOutput {
   @scala.inline
-  def apply(
-    Name: HostName = null,
-    ProviderEndpoint: Url = null,
-    ProviderType: ProviderType = null,
-    Status: HostStatus = null,
-    VpcConfiguration: VpcConfiguration = null
-  ): GetHostOutput = {
+  def apply(): GetHostOutput = {
     val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ProviderEndpoint != null) __obj.updateDynamic("ProviderEndpoint")(ProviderEndpoint.asInstanceOf[js.Any])
-    if (ProviderType != null) __obj.updateDynamic("ProviderType")(ProviderType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (VpcConfiguration != null) __obj.updateDynamic("VpcConfiguration")(VpcConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHostOutput]
   }
+  @scala.inline
+  implicit class GetHostOutputOps[Self <: GetHostOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: HostName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setProviderEndpoint(value: Url): Self = this.set("ProviderEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderEndpoint: Self = this.set("ProviderEndpoint", js.undefined)
+    @scala.inline
+    def setProviderType(value: ProviderType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderType: Self = this.set("ProviderType", js.undefined)
+    @scala.inline
+    def setStatus(value: HostStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setVpcConfiguration(value: VpcConfiguration): Self = this.set("VpcConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfiguration: Self = this.set("VpcConfiguration", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait EvaluationResult extends js.Object {
 
 object EvaluationResult {
   @scala.inline
-  def apply(AlgorithmArn: Arn = null, TestWindows: TestWindows = null): EvaluationResult = {
+  def apply(): EvaluationResult = {
     val __obj = js.Dynamic.literal()
-    if (AlgorithmArn != null) __obj.updateDynamic("AlgorithmArn")(AlgorithmArn.asInstanceOf[js.Any])
-    if (TestWindows != null) __obj.updateDynamic("TestWindows")(TestWindows.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResult]
   }
+  @scala.inline
+  implicit class EvaluationResultOps[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithmArn(value: Arn): Self = this.set("AlgorithmArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithmArn: Self = this.set("AlgorithmArn", js.undefined)
+    @scala.inline
+    def setTestWindowsVarargs(value: WindowSummary*): Self = this.set("TestWindows", js.Array(value :_*))
+    @scala.inline
+    def setTestWindows(value: TestWindows): Self = this.set("TestWindows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestWindows: Self = this.set("TestWindows", js.undefined)
+  }
+  
 }
 

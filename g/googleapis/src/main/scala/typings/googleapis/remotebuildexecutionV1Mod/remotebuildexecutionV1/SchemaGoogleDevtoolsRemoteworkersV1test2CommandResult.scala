@@ -54,22 +54,48 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult extends js.Object {
 
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult {
   @scala.inline
-  def apply(
-    duration: String = null,
-    exitCode: js.UndefOr[Double] = js.undefined,
-    metadata: js.Array[StringDictionary[_]] = null,
-    outputs: SchemaGoogleDevtoolsRemoteworkersV1test2Digest = null,
-    overhead: String = null,
-    status: SchemaGoogleRpcStatus = null
-  ): SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult = {
+  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (overhead != null) __obj.updateDynamic("overhead")(overhead.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandResultOps[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    @scala.inline
+    def setMetadataVarargs(value: StringDictionary[js.Any]*): Self = this.set("metadata", js.Array(value :_*))
+    @scala.inline
+    def setMetadata(value: js.Array[StringDictionary[_]]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setOutputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2Digest): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    @scala.inline
+    def setOverhead(value: String): Self = this.set("overhead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverhead: Self = this.set("overhead", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaGoogleRpcStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,40 @@ trait DescribeInstancesHealthRequest extends js.Object {
 
 object DescribeInstancesHealthRequest {
   @scala.inline
-  def apply(
-    AttributeNames: InstancesHealthAttributes = null,
-    EnvironmentId: EnvironmentId = null,
-    EnvironmentName: EnvironmentName = null,
-    NextToken: NextToken = null
-  ): DescribeInstancesHealthRequest = {
+  def apply(): DescribeInstancesHealthRequest = {
     val __obj = js.Dynamic.literal()
-    if (AttributeNames != null) __obj.updateDynamic("AttributeNames")(AttributeNames.asInstanceOf[js.Any])
-    if (EnvironmentId != null) __obj.updateDynamic("EnvironmentId")(EnvironmentId.asInstanceOf[js.Any])
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstancesHealthRequest]
   }
+  @scala.inline
+  implicit class DescribeInstancesHealthRequestOps[Self <: DescribeInstancesHealthRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeNamesVarargs(value: InstancesHealthAttribute*): Self = this.set("AttributeNames", js.Array(value :_*))
+    @scala.inline
+    def setAttributeNames(value: InstancesHealthAttributes): Self = this.set("AttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeNames: Self = this.set("AttributeNames", js.undefined)
+    @scala.inline
+    def setEnvironmentId(value: EnvironmentId): Self = this.set("EnvironmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentId: Self = this.set("EnvironmentId", js.undefined)
+    @scala.inline
+    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

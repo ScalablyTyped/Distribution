@@ -60,20 +60,55 @@ object DescribeDimensionKeysRequest {
     Identifier: String,
     Metric: String,
     ServiceType: ServiceType,
-    StartTime: ISOTimestamp,
-    Filter: MetricQueryFilterMap = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: String = null,
-    PartitionBy: DimensionGroup = null,
-    PeriodInSeconds: js.UndefOr[Integer] = js.undefined
+    StartTime: ISOTimestamp
   ): DescribeDimensionKeysRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], GroupBy = GroupBy.asInstanceOf[js.Any], Identifier = Identifier.asInstanceOf[js.Any], Metric = Metric.asInstanceOf[js.Any], ServiceType = ServiceType.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PartitionBy != null) __obj.updateDynamic("PartitionBy")(PartitionBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(PeriodInSeconds)) __obj.updateDynamic("PeriodInSeconds")(PeriodInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDimensionKeysRequest]
   }
+  @scala.inline
+  implicit class DescribeDimensionKeysRequestOps[Self <: DescribeDimensionKeysRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: ISOTimestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupBy(value: DimensionGroup): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentifier(value: String): Self = this.set("Identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetric(value: String): Self = this.set("Metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceType(value: ServiceType): Self = this.set("ServiceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: ISOTimestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: MetricQueryFilterMap): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPartitionBy(value: DimensionGroup): Self = this.set("PartitionBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionBy: Self = this.set("PartitionBy", js.undefined)
+    @scala.inline
+    def setPeriodInSeconds(value: Integer): Self = this.set("PeriodInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriodInSeconds: Self = this.set("PeriodInSeconds", js.undefined)
+  }
+  
 }
 

@@ -56,28 +56,62 @@ trait PipelineArgs extends js.Object {
 
 object PipelineArgs {
   @scala.inline
-  def apply(
-    inputBucket: Input[String],
-    role: Input[String],
-    awsKmsKeyArn: Input[String] = null,
-    contentConfig: Input[PipelineContentConfig] = null,
-    contentConfigPermissions: Input[js.Array[Input[PipelineContentConfigPermission]]] = null,
-    name: Input[String] = null,
-    notifications: Input[PipelineNotifications] = null,
-    outputBucket: Input[String] = null,
-    thumbnailConfig: Input[PipelineThumbnailConfig] = null,
-    thumbnailConfigPermissions: Input[js.Array[Input[PipelineThumbnailConfigPermission]]] = null
-  ): PipelineArgs = {
+  def apply(inputBucket: Input[String], role: Input[String]): PipelineArgs = {
     val __obj = js.Dynamic.literal(inputBucket = inputBucket.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
-    if (awsKmsKeyArn != null) __obj.updateDynamic("awsKmsKeyArn")(awsKmsKeyArn.asInstanceOf[js.Any])
-    if (contentConfig != null) __obj.updateDynamic("contentConfig")(contentConfig.asInstanceOf[js.Any])
-    if (contentConfigPermissions != null) __obj.updateDynamic("contentConfigPermissions")(contentConfigPermissions.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notifications != null) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
-    if (outputBucket != null) __obj.updateDynamic("outputBucket")(outputBucket.asInstanceOf[js.Any])
-    if (thumbnailConfig != null) __obj.updateDynamic("thumbnailConfig")(thumbnailConfig.asInstanceOf[js.Any])
-    if (thumbnailConfigPermissions != null) __obj.updateDynamic("thumbnailConfigPermissions")(thumbnailConfigPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineArgs]
   }
+  @scala.inline
+  implicit class PipelineArgsOps[Self <: PipelineArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputBucket(value: Input[String]): Self = this.set("inputBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRole(value: Input[String]): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAwsKmsKeyArn(value: Input[String]): Self = this.set("awsKmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsKmsKeyArn: Self = this.set("awsKmsKeyArn", js.undefined)
+    @scala.inline
+    def setContentConfig(value: Input[PipelineContentConfig]): Self = this.set("contentConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentConfig: Self = this.set("contentConfig", js.undefined)
+    @scala.inline
+    def setContentConfigPermissionsVarargs(value: Input[PipelineContentConfigPermission]*): Self = this.set("contentConfigPermissions", js.Array(value :_*))
+    @scala.inline
+    def setContentConfigPermissions(value: Input[js.Array[Input[PipelineContentConfigPermission]]]): Self = this.set("contentConfigPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentConfigPermissions: Self = this.set("contentConfigPermissions", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotifications(value: Input[PipelineNotifications]): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifications: Self = this.set("notifications", js.undefined)
+    @scala.inline
+    def setOutputBucket(value: Input[String]): Self = this.set("outputBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputBucket: Self = this.set("outputBucket", js.undefined)
+    @scala.inline
+    def setThumbnailConfig(value: Input[PipelineThumbnailConfig]): Self = this.set("thumbnailConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailConfig: Self = this.set("thumbnailConfig", js.undefined)
+    @scala.inline
+    def setThumbnailConfigPermissionsVarargs(value: Input[PipelineThumbnailConfigPermission]*): Self = this.set("thumbnailConfigPermissions", js.Array(value :_*))
+    @scala.inline
+    def setThumbnailConfigPermissions(value: Input[js.Array[Input[PipelineThumbnailConfigPermission]]]): Self = this.set("thumbnailConfigPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailConfigPermissions: Self = this.set("thumbnailConfigPermissions", js.undefined)
+  }
+  
 }
 

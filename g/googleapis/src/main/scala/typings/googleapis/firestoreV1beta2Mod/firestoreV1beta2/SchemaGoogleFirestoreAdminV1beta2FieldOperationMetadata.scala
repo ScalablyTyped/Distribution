@@ -44,24 +44,52 @@ trait SchemaGoogleFirestoreAdminV1beta2FieldOperationMetadata extends js.Object 
 
 object SchemaGoogleFirestoreAdminV1beta2FieldOperationMetadata {
   @scala.inline
-  def apply(
-    bytesProgress: SchemaGoogleFirestoreAdminV1beta2Progress = null,
-    documentProgress: SchemaGoogleFirestoreAdminV1beta2Progress = null,
-    endTime: String = null,
-    field: String = null,
-    indexConfigDeltas: js.Array[SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta] = null,
-    startTime: String = null,
-    state: String = null
-  ): SchemaGoogleFirestoreAdminV1beta2FieldOperationMetadata = {
+  def apply(): SchemaGoogleFirestoreAdminV1beta2FieldOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (bytesProgress != null) __obj.updateDynamic("bytesProgress")(bytesProgress.asInstanceOf[js.Any])
-    if (documentProgress != null) __obj.updateDynamic("documentProgress")(documentProgress.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (indexConfigDeltas != null) __obj.updateDynamic("indexConfigDeltas")(indexConfigDeltas.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta2FieldOperationMetadata]
   }
+  @scala.inline
+  implicit class SchemaGoogleFirestoreAdminV1beta2FieldOperationMetadataOps[Self <: SchemaGoogleFirestoreAdminV1beta2FieldOperationMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytesProgress(value: SchemaGoogleFirestoreAdminV1beta2Progress): Self = this.set("bytesProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesProgress: Self = this.set("bytesProgress", js.undefined)
+    @scala.inline
+    def setDocumentProgress(value: SchemaGoogleFirestoreAdminV1beta2Progress): Self = this.set("documentProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentProgress: Self = this.set("documentProgress", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setIndexConfigDeltasVarargs(value: SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta*): Self = this.set("indexConfigDeltas", js.Array(value :_*))
+    @scala.inline
+    def setIndexConfigDeltas(value: js.Array[SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta]): Self = this.set("indexConfigDeltas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexConfigDeltas: Self = this.set("indexConfigDeltas", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

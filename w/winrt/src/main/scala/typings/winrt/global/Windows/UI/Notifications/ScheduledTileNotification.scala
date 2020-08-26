@@ -11,15 +11,5 @@ import scala.scalajs.js.annotation._
 class ScheduledTileNotification protected ()
   extends typings.winrt.Windows.UI.Notifications.ScheduledTileNotification {
   def this(content: XmlDocument, deliveryTime: Date) = this()
-  /* CompleteClass */
-  override var content: XmlDocument = js.native
-  /* CompleteClass */
-  override var deliveryTime: Date = js.native
-  /* CompleteClass */
-  override var expirationTime: Date = js.native
-  /* CompleteClass */
-  override var id: String = js.native
-  /* CompleteClass */
-  override var tag: String = js.native
 }
 

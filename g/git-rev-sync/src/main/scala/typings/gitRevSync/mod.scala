@@ -20,6 +20,7 @@ object mod extends js.Object {
   def message(): String = js.native
   def remoteUrl(): String = js.native
   def short(): String = js.native
+  def short(filePath: js.UndefOr[scala.Nothing], length: Double): String = js.native
   def short(filePath: String): String = js.native
   def short(filePath: String, length: Double): String = js.native
   def tag(): String = js.native

@@ -171,9 +171,11 @@ object global extends js.Object {
       * @return {Cursor} cursor of users in role
       */
     def getUsersInRole(role: String): Cursor[User] = js.native
+    def getUsersInRole(role: String, group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User] = js.native
     def getUsersInRole(role: String, group: String): Cursor[User] = js.native
     def getUsersInRole(role: String, group: String, options: Fields): Cursor[User] = js.native
     def getUsersInRole(role: js.Array[String]): Cursor[User] = js.native
+    def getUsersInRole(role: js.Array[String], group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User] = js.native
     def getUsersInRole(role: js.Array[String], group: String): Cursor[User] = js.native
     def getUsersInRole(role: js.Array[String], group: String, options: Fields): Cursor[User] = js.native
     /**
@@ -192,12 +194,15 @@ object global extends js.Object {
       *                         group will have roles removed.
       */
     def removeUsersFromRoles(user: String): Unit = js.native
+    def removeUsersFromRoles(user: String, roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
     def removeUsersFromRoles(user: String, roles: js.Array[String]): Unit = js.native
     def removeUsersFromRoles(user: String, roles: js.Array[String], group: String): Unit = js.native
     def removeUsersFromRoles(user: js.Array[js.Object | String]): Unit = js.native
+    def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
     def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String]): Unit = js.native
     def removeUsersFromRoles(user: js.Array[js.Object | String], roles: js.Array[String], group: String): Unit = js.native
     def removeUsersFromRoles(user: js.Object): Unit = js.native
+    def removeUsersFromRoles(user: js.Object, roles: js.UndefOr[scala.Nothing], group: String): Unit = js.native
     def removeUsersFromRoles(user: js.Object, roles: js.Array[String]): Unit = js.native
     def removeUsersFromRoles(user: js.Object, roles: js.Array[String], group: String): Unit = js.native
     /**

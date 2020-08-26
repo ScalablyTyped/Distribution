@@ -13,17 +13,5 @@ class Address protected ()
   extends EntityBase[AddressData]
      with AddressData {
   def this(data: PartialAddressData) = this()
-  /* CompleteClass */
-  override var AddressLine1: String = js.native
-  /* CompleteClass */
-  override var AddressLine2: String = js.native
-  /* CompleteClass */
-  override var City: String = js.native
-  /* CompleteClass */
-  override var Country: String = js.native
-  /* CompleteClass */
-  override var PostalCode: String = js.native
-  /* CompleteClass */
-  override var Region: String = js.native
 }
 

@@ -5,20 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StepperActivateEvent extends js.Object {
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
-  var sender: js.UndefOr[Stepper] = js.undefined
-  var step: js.UndefOr[Step] = js.undefined
+  var originalEvent: js.UndefOr[js.Any] = js.native
+  var sender: js.UndefOr[Stepper] = js.native
+  var step: js.UndefOr[Step] = js.native
 }
 
 object StepperActivateEvent {
   @scala.inline
-  def apply(originalEvent: js.Any = null, sender: Stepper = null, step: Step = null): StepperActivateEvent = {
+  def apply(): StepperActivateEvent = {
     val __obj = js.Dynamic.literal()
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepperActivateEvent]
   }
+  @scala.inline
+  implicit class StepperActivateEventOps[Self <: StepperActivateEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOriginalEvent(value: js.Any): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalEvent: Self = this.set("originalEvent", js.undefined)
+    @scala.inline
+    def setSender(value: Stepper): Self = this.set("sender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSender: Self = this.set("sender", js.undefined)
+    @scala.inline
+    def setStep(value: Step): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+  }
+  
 }
 

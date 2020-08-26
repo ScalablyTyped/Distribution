@@ -1,64 +1,49 @@
 package typings.antd.countdownMod
 
 import typings.antd.statisticStatisticMod.StatisticProps
-import typings.antd.statisticUtilsMod.Formatter
 import typings.antd.statisticUtilsMod.countdownValueType
-import typings.react.mod.CSSProperties
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactNode
-import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CountdownProps extends StatisticProps {
-  var format: js.UndefOr[String] = js.undefined
-  var onFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var format: js.UndefOr[String] = js.native
+  var onFinish: js.UndefOr[js.Function0[Unit]] = js.native
   @JSName("value")
-  var value_CountdownProps: js.UndefOr[countdownValueType] = js.undefined
+  var value_CountdownProps: js.UndefOr[countdownValueType] = js.native
 }
 
 object CountdownProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    decimalSeparator: String = null,
-    format: String = null,
-    formatter: Formatter = null,
-    groupSeparator: String = null,
-    onFinish: () => Unit = null,
-    onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    prefix: ReactNode = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    suffix: ReactNode = null,
-    title: ReactNode = null,
-    value: countdownValueType = null,
-    valueRender: /* node */ ReactNode => ReactNode = null,
-    valueStyle: CSSProperties = null
-  ): CountdownProps = {
+  def apply(): CountdownProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
-    if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction0(onFinish))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueRender != null) __obj.updateDynamic("valueRender")(js.Any.fromFunction1(valueRender))
-    if (valueStyle != null) __obj.updateDynamic("valueStyle")(valueStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountdownProps]
   }
+  @scala.inline
+  implicit class CountdownPropsOps[Self <: CountdownProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setOnFinish(value: () => Unit): Self = this.set("onFinish", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnFinish: Self = this.set("onFinish", js.undefined)
+    @scala.inline
+    def setValue(value: countdownValueType): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

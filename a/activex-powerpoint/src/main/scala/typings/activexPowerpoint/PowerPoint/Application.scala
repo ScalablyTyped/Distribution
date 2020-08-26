@@ -100,6 +100,7 @@ trait Application extends js.Object {
     * @param number [ContextID=0]
     */
   def Help(): Unit = js.native
+  def Help(HelpFile: js.UndefOr[scala.Nothing], ContextID: Double): Unit = js.native
   def Help(HelpFile: String): Unit = js.native
   def Help(HelpFile: String, ContextID: Double): Unit = js.native
   def LaunchPublishSlidesDialog(SlideLibraryUrl: String): Unit = js.native

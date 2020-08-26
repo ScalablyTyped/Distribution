@@ -1,7 +1,5 @@
 package typings.cleanWebpackPlugin.mod
 
-import typings.webpack.mod.Compiler_
-import typings.webpack.mod.Stats
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +19,12 @@ class CleanWebpackPlugin () extends js.Object {
   val protectWebpackAssets: js.Any = js.native
   val verbose: js.Any = js.native
   @JSName("apply")
-  def apply(compiler: Compiler_): Unit = js.native
-  def handleDone(stats: Stats): Unit = js.native
+  def apply(
+    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+  ): Unit = js.native
+  def handleDone(
+    stats: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stats */ js.Any
+  ): Unit = js.native
   /**
     * Initially remove files from output directory prior to build.
     *

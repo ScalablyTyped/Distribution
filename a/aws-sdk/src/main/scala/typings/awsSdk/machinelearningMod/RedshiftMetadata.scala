@@ -16,16 +16,34 @@ trait RedshiftMetadata extends js.Object {
 
 object RedshiftMetadata {
   @scala.inline
-  def apply(
-    DatabaseUserName: RedshiftDatabaseUsername = null,
-    RedshiftDatabase: RedshiftDatabase = null,
-    SelectSqlQuery: RedshiftSelectSqlQuery = null
-  ): RedshiftMetadata = {
+  def apply(): RedshiftMetadata = {
     val __obj = js.Dynamic.literal()
-    if (DatabaseUserName != null) __obj.updateDynamic("DatabaseUserName")(DatabaseUserName.asInstanceOf[js.Any])
-    if (RedshiftDatabase != null) __obj.updateDynamic("RedshiftDatabase")(RedshiftDatabase.asInstanceOf[js.Any])
-    if (SelectSqlQuery != null) __obj.updateDynamic("SelectSqlQuery")(SelectSqlQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftMetadata]
   }
+  @scala.inline
+  implicit class RedshiftMetadataOps[Self <: RedshiftMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseUserName(value: RedshiftDatabaseUsername): Self = this.set("DatabaseUserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseUserName: Self = this.set("DatabaseUserName", js.undefined)
+    @scala.inline
+    def setRedshiftDatabase(value: RedshiftDatabase): Self = this.set("RedshiftDatabase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshiftDatabase: Self = this.set("RedshiftDatabase", js.undefined)
+    @scala.inline
+    def setSelectSqlQuery(value: RedshiftSelectSqlQuery): Self = this.set("SelectSqlQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectSqlQuery: Self = this.set("SelectSqlQuery", js.undefined)
+  }
+  
 }
 

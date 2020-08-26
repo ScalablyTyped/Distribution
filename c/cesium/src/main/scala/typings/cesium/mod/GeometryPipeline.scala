@@ -12,6 +12,7 @@ object GeometryPipeline extends js.Object {
   def computeNormal(geometry: Geometry): Geometry = js.native
   def createAttributeLocations(geometry: Geometry): js.Any = js.native
   def createLineSegmentsForVectors(geometry: Geometry): Geometry = js.native
+  def createLineSegmentsForVectors(geometry: Geometry, attributeName: js.UndefOr[scala.Nothing], length: Double): Geometry = js.native
   def createLineSegmentsForVectors(geometry: Geometry, attributeName: String): Geometry = js.native
   def createLineSegmentsForVectors(geometry: Geometry, attributeName: String, length: Double): Geometry = js.native
   def encodeAttribute(geometry: Geometry, attributeName: String, attributeHighName: String, attributeLowName: String): Geometry = js.native

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * current stack context will be blocked till this job finish it's work.
   * @see XAsyncJob
   */
+@js.native
 trait XJob extends XInterface {
   /**
     * executes the job synchronously
@@ -23,7 +24,7 @@ trait XJob extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if some of given arguments doesn't fill out the service specification or was corrupt so the servic
     * @throws com::sun::star::uno::Exception to notify the executor about failed operation; otherwise the return value indicates a successful finishing.
     */
-  def execute(Arguments: SeqEquiv[NamedValue]): js.Any
+  def execute(Arguments: SeqEquiv[NamedValue]): js.Any = js.native
 }
 
 object XJob {
@@ -37,5 +38,20 @@ object XJob {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction1(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XJob]
   }
+  @scala.inline
+  implicit class XJobOps[Self <: XJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecute(value: SeqEquiv[NamedValue] => js.Any): Self = this.set("execute", js.Any.fromFunction1(value))
+  }
+  
 }
 

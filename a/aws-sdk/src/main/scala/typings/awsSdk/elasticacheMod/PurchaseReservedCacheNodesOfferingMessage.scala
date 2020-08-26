@@ -22,15 +22,32 @@ trait PurchaseReservedCacheNodesOfferingMessage extends js.Object {
 
 object PurchaseReservedCacheNodesOfferingMessage {
   @scala.inline
-  def apply(
-    ReservedCacheNodesOfferingId: String,
-    CacheNodeCount: js.UndefOr[IntegerOptional] = js.undefined,
-    ReservedCacheNodeId: String = null
-  ): PurchaseReservedCacheNodesOfferingMessage = {
+  def apply(ReservedCacheNodesOfferingId: String): PurchaseReservedCacheNodesOfferingMessage = {
     val __obj = js.Dynamic.literal(ReservedCacheNodesOfferingId = ReservedCacheNodesOfferingId.asInstanceOf[js.Any])
-    if (!js.isUndefined(CacheNodeCount)) __obj.updateDynamic("CacheNodeCount")(CacheNodeCount.get.asInstanceOf[js.Any])
-    if (ReservedCacheNodeId != null) __obj.updateDynamic("ReservedCacheNodeId")(ReservedCacheNodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedCacheNodesOfferingMessage]
   }
+  @scala.inline
+  implicit class PurchaseReservedCacheNodesOfferingMessageOps[Self <: PurchaseReservedCacheNodesOfferingMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReservedCacheNodesOfferingId(value: String): Self = this.set("ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCacheNodeCount(value: IntegerOptional): Self = this.set("CacheNodeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodeCount: Self = this.set("CacheNodeCount", js.undefined)
+    @scala.inline
+    def setReservedCacheNodeId(value: String): Self = this.set("ReservedCacheNodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedCacheNodeId: Self = this.set("ReservedCacheNodeId", js.undefined)
+  }
+  
 }
 

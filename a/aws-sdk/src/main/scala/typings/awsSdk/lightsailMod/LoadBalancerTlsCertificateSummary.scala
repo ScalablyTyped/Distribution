@@ -18,11 +18,30 @@ trait LoadBalancerTlsCertificateSummary extends js.Object {
 
 object LoadBalancerTlsCertificateSummary {
   @scala.inline
-  def apply(isAttached: js.UndefOr[Boolean] = js.undefined, name: ResourceName = null): LoadBalancerTlsCertificateSummary = {
+  def apply(): LoadBalancerTlsCertificateSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerTlsCertificateSummary]
   }
+  @scala.inline
+  implicit class LoadBalancerTlsCertificateSummaryOps[Self <: LoadBalancerTlsCertificateSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsAttached(value: Boolean): Self = this.set("isAttached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsAttached: Self = this.set("isAttached", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

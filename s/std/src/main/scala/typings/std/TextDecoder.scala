@@ -21,6 +21,7 @@ trait TextDecoder extends TextDecoderCommon {
     * If the error mode is "fatal" and encoding's decoder returns error, throws a TypeError.
     */
   def decode(): java.lang.String = js.native
+  def decode(input: js.UndefOr[scala.Nothing], options: TextDecodeOptions): java.lang.String = js.native
   def decode(input: BufferSource): java.lang.String = js.native
   def decode(input: BufferSource, options: TextDecodeOptions): java.lang.String = js.native
 }

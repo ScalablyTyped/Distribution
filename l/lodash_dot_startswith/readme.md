@@ -12,7 +12,7 @@ The lodash method `_.startsWith` exported as a module.
 | Keywords           | lodash-modularized, startswith |
 | # releases         | 0 |
 | # dependents       | 62 |
-| # downloads        | 7273051 |
+| # downloads        | 7058841 |
 | # stars            | 1 |
 
 ## Links

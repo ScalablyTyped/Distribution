@@ -33,16 +33,34 @@ trait SchemaGooglePrivacyDlpV2HotwordRule extends js.Object {
 
 object SchemaGooglePrivacyDlpV2HotwordRule {
   @scala.inline
-  def apply(
-    hotwordRegex: SchemaGooglePrivacyDlpV2Regex = null,
-    likelihoodAdjustment: SchemaGooglePrivacyDlpV2LikelihoodAdjustment = null,
-    proximity: SchemaGooglePrivacyDlpV2Proximity = null
-  ): SchemaGooglePrivacyDlpV2HotwordRule = {
+  def apply(): SchemaGooglePrivacyDlpV2HotwordRule = {
     val __obj = js.Dynamic.literal()
-    if (hotwordRegex != null) __obj.updateDynamic("hotwordRegex")(hotwordRegex.asInstanceOf[js.Any])
-    if (likelihoodAdjustment != null) __obj.updateDynamic("likelihoodAdjustment")(likelihoodAdjustment.asInstanceOf[js.Any])
-    if (proximity != null) __obj.updateDynamic("proximity")(proximity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2HotwordRule]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2HotwordRuleOps[Self <: SchemaGooglePrivacyDlpV2HotwordRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHotwordRegex(value: SchemaGooglePrivacyDlpV2Regex): Self = this.set("hotwordRegex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHotwordRegex: Self = this.set("hotwordRegex", js.undefined)
+    @scala.inline
+    def setLikelihoodAdjustment(value: SchemaGooglePrivacyDlpV2LikelihoodAdjustment): Self = this.set("likelihoodAdjustment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLikelihoodAdjustment: Self = this.set("likelihoodAdjustment", js.undefined)
+    @scala.inline
+    def setProximity(value: SchemaGooglePrivacyDlpV2Proximity): Self = this.set("proximity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProximity: Self = this.set("proximity", js.undefined)
+  }
+  
 }
 

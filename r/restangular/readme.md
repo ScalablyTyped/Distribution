@@ -12,7 +12,7 @@ Restful Resources service for AngularJS apps
 | Keywords           | angular, client, browser, restful, resources, rest, api |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 724878 |
+| # downloads        | 729195 |
 | # stars            | 10 |
 
 ## Links

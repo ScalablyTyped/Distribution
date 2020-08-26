@@ -14,11 +14,7 @@ object collection extends js.Object {
     extends IChild[IControlParent]
        with IParentOnMap {
     def this(options: js.Object) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
     var options: IOptionManager = js.native
-    /* CompleteClass */
-    override def getMap(): Map_ = js.native
     def onAddToMap(map: Map_): Unit = js.native
     def onRemoveFromMap(oldMap: Map_): Unit = js.native
     def setParent(parent: IControlParent): this.type = js.native

@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Confirm extends js.Object {
-  var confirm: js.UndefOr[String] = js.undefined
-  var default: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[String] = js.undefined
-  var info: js.UndefOr[String] = js.undefined
-  var progress: js.UndefOr[String] = js.undefined
-  var prompt: js.UndefOr[String] = js.undefined
-  var success: js.UndefOr[String] = js.undefined
-  var warning: js.UndefOr[String] = js.undefined
-  var window: js.UndefOr[String] = js.undefined
+  var confirm: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.native
+  var info: js.UndefOr[String] = js.native
+  var progress: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.native
+  var success: js.UndefOr[String] = js.native
+  var warning: js.UndefOr[String] = js.native
+  var window: js.UndefOr[String] = js.native
 }
 
 object Confirm {
   @scala.inline
-  def apply(
-    confirm: String = null,
-    default: String = null,
-    error: String = null,
-    info: String = null,
-    progress: String = null,
-    prompt: String = null,
-    success: String = null,
-    warning: String = null,
-    window: String = null
-  ): Confirm = {
+  def apply(): Confirm = {
     val __obj = js.Dynamic.literal()
-    if (confirm != null) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Confirm]
   }
+  @scala.inline
+  implicit class ConfirmOps[Self <: Confirm] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfirm(value: String): Self = this.set("confirm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirm: Self = this.set("confirm", js.undefined)
+    @scala.inline
+    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfo: Self = this.set("info", js.undefined)
+    @scala.inline
+    def setProgress(value: String): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("progress", js.undefined)
+    @scala.inline
+    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrompt: Self = this.set("prompt", js.undefined)
+    @scala.inline
+    def setSuccess(value: String): Self = this.set("success", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+    @scala.inline
+    def setWarning(value: String): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+    @scala.inline
+    def setWindow(value: String): Self = this.set("window", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindow: Self = this.set("window", js.undefined)
+  }
+  
 }
 

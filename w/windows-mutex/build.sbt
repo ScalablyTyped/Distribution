@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "windows-mutex"
-version := "0.4-dt-20191216Z-471e94"
-scalaVersion := "2.13.2"
+version := "0.4-dt-20191216Z-3e654b"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ArrowColor extends js.Object {
-  var arrowColor: js.UndefOr[String] = js.undefined
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var beaconSize: js.UndefOr[Double] = js.undefined
-  var overlayColor: js.UndefOr[String] = js.undefined
-  var primaryColor: js.UndefOr[String] = js.undefined
-  var spotlightShadow: js.UndefOr[String] = js.undefined
-  var textColor: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[String | Double] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var arrowColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.native
+  var beaconSize: js.UndefOr[Double] = js.native
+  var overlayColor: js.UndefOr[String] = js.native
+  var primaryColor: js.UndefOr[String] = js.native
+  var spotlightShadow: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String | Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object ArrowColor {
   @scala.inline
-  def apply(
-    arrowColor: String = null,
-    backgroundColor: String = null,
-    beaconSize: js.UndefOr[Double] = js.undefined,
-    overlayColor: String = null,
-    primaryColor: String = null,
-    spotlightShadow: String = null,
-    textColor: String = null,
-    width: String | Double = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): ArrowColor = {
+  def apply(): ArrowColor = {
     val __obj = js.Dynamic.literal()
-    if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(beaconSize)) __obj.updateDynamic("beaconSize")(beaconSize.get.asInstanceOf[js.Any])
-    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor.asInstanceOf[js.Any])
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
-    if (spotlightShadow != null) __obj.updateDynamic("spotlightShadow")(spotlightShadow.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrowColor]
   }
+  @scala.inline
+  implicit class ArrowColorOps[Self <: ArrowColor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrowColor(value: String): Self = this.set("arrowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowColor: Self = this.set("arrowColor", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBeaconSize(value: Double): Self = this.set("beaconSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeaconSize: Self = this.set("beaconSize", js.undefined)
+    @scala.inline
+    def setOverlayColor(value: String): Self = this.set("overlayColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayColor: Self = this.set("overlayColor", js.undefined)
+    @scala.inline
+    def setPrimaryColor(value: String): Self = this.set("primaryColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryColor: Self = this.set("primaryColor", js.undefined)
+    @scala.inline
+    def setSpotlightShadow(value: String): Self = this.set("spotlightShadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotlightShadow: Self = this.set("spotlightShadow", js.undefined)
+    @scala.inline
+    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

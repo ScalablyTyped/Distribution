@@ -15,14 +15,6 @@ object distLabelMod extends js.Object {
     extends GitHubRef
        with Label {
     def this(data: typings.typedGithubApi.labelMod.Label, options: OptionsOrRef) = this()
-    /* CompleteClass */
-    override var color: String = js.native
-    /* CompleteClass */
-    override var default: Boolean = js.native
-    /* CompleteClass */
-    override var id: Double = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
 }

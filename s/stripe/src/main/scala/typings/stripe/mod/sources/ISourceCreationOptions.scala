@@ -33,62 +33,102 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ISourceCreationOptions extends IDataOptionsWithMetadata {
-  var amount: js.UndefOr[Double] = js.undefined
-  var currency: js.UndefOr[String] = js.undefined
-  var flow: js.UndefOr[redirect | receiver | code_verification | none] = js.undefined
-  var ideal: js.UndefOr[Bank] = js.undefined
-  var mandate: js.UndefOr[Acceptance] = js.undefined
+  var amount: js.UndefOr[Double] = js.native
+  var currency: js.UndefOr[String] = js.native
+  var flow: js.UndefOr[redirect | receiver | code_verification | none] = js.native
+  var ideal: js.UndefOr[Bank] = js.native
+  var mandate: js.UndefOr[Acceptance] = js.native
   @JSName("metadata")
-  var metadata_ISourceCreationOptions: js.UndefOr[IMetadata] = js.undefined
-  var owner: js.UndefOr[AddressEmail] = js.undefined
-  var receiver: js.UndefOr[Refundattributesmethod] = js.undefined
-  var redirect: js.UndefOr[ReturnurlString] = js.undefined
-  var sepa_debit: js.UndefOr[Iban] = js.undefined
-  var statement_descriptor: js.UndefOr[String] = js.undefined
-  var token: js.UndefOr[String] = js.undefined
-  var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat
-  var usage: js.UndefOr[reusable | single_use] = js.undefined
+  var metadata_ISourceCreationOptions: js.UndefOr[IMetadata] = js.native
+  var owner: js.UndefOr[AddressEmail] = js.native
+  var receiver: js.UndefOr[Refundattributesmethod] = js.native
+  var redirect: js.UndefOr[ReturnurlString] = js.native
+  var sepa_debit: js.UndefOr[Iban] = js.native
+  var statement_descriptor: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.native
+  var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat = js.native
+  var usage: js.UndefOr[reusable | single_use] = js.native
 }
 
 object ISourceCreationOptions {
   @scala.inline
   def apply(
-    `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat,
-    amount: js.UndefOr[Double] = js.undefined,
-    currency: String = null,
-    expand: js.Array[String] = null,
-    flow: redirect | receiver | code_verification | none = null,
-    ideal: Bank = null,
-    include: js.Array[String] = null,
-    mandate: Acceptance = null,
-    metadata: IMetadata = null,
-    owner: AddressEmail = null,
-    receiver: Refundattributesmethod = null,
-    redirect: ReturnurlString = null,
-    sepa_debit: Iban = null,
-    statement_descriptor: String = null,
-    token: String = null,
-    usage: reusable | single_use = null
+    `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat
   ): ISourceCreationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
-    if (ideal != null) __obj.updateDynamic("ideal")(ideal.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (mandate != null) __obj.updateDynamic("mandate")(mandate.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (receiver != null) __obj.updateDynamic("receiver")(receiver.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit.asInstanceOf[js.Any])
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISourceCreationOptions]
   }
+  @scala.inline
+  implicit class ISourceCreationOptionsOps[Self <: ISourceCreationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(
+      value: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setFlow(value: redirect | receiver | code_verification | none): Self = this.set("flow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlow: Self = this.set("flow", js.undefined)
+    @scala.inline
+    def setIdeal(value: Bank): Self = this.set("ideal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdeal: Self = this.set("ideal", js.undefined)
+    @scala.inline
+    def setMandate(value: Acceptance): Self = this.set("mandate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMandate: Self = this.set("mandate", js.undefined)
+    @scala.inline
+    def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setOwner(value: AddressEmail): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setReceiver(value: Refundattributesmethod): Self = this.set("receiver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceiver: Self = this.set("receiver", js.undefined)
+    @scala.inline
+    def setRedirect(value: ReturnurlString): Self = this.set("redirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirect: Self = this.set("redirect", js.undefined)
+    @scala.inline
+    def setSepa_debit(value: Iban): Self = this.set("sepa_debit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSepa_debit: Self = this.set("sepa_debit", js.undefined)
+    @scala.inline
+    def setStatement_descriptor(value: String): Self = this.set("statement_descriptor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatement_descriptor: Self = this.set("statement_descriptor", js.undefined)
+    @scala.inline
+    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken: Self = this.set("token", js.undefined)
+    @scala.inline
+    def setUsage(value: reusable | single_use): Self = this.set("usage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsage: Self = this.set("usage", js.undefined)
+  }
+  
 }
 

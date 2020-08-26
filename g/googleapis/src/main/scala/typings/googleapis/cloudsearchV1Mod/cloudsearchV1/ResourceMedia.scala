@@ -38,6 +38,7 @@ class ResourceMedia protected () extends js.Object {
     */
   def upload(): GaxiosPromise[SchemaMedia] = js.native
   def upload(callback: BodyResponseCallback[SchemaMedia]): Unit = js.native
+  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMedia] = js.native
   def upload(params: ParamsResourceMediaUpload): GaxiosPromise[SchemaMedia] = js.native
   def upload(params: ParamsResourceMediaUpload, callback: BodyResponseCallback[SchemaMedia]): Unit = js.native
   def upload(

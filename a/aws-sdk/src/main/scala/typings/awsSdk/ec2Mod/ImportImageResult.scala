@@ -70,40 +70,88 @@ trait ImportImageResult extends js.Object {
 
 object ImportImageResult {
   @scala.inline
-  def apply(
-    Architecture: String = null,
-    Description: String = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    Hypervisor: String = null,
-    ImageId: String = null,
-    ImportTaskId: ImportImageTaskId = null,
-    KmsKeyId: KmsKeyId = null,
-    LicenseSpecifications: ImportImageLicenseSpecificationListResponse = null,
-    LicenseType: String = null,
-    Platform: String = null,
-    Progress: String = null,
-    SnapshotDetails: SnapshotDetailList = null,
-    Status: String = null,
-    StatusMessage: String = null,
-    Tags: TagList = null
-  ): ImportImageResult = {
+  def apply(): ImportImageResult = {
     val __obj = js.Dynamic.literal()
-    if (Architecture != null) __obj.updateDynamic("Architecture")(Architecture.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
-    if (Hypervisor != null) __obj.updateDynamic("Hypervisor")(Hypervisor.asInstanceOf[js.Any])
-    if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId.asInstanceOf[js.Any])
-    if (ImportTaskId != null) __obj.updateDynamic("ImportTaskId")(ImportTaskId.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (LicenseSpecifications != null) __obj.updateDynamic("LicenseSpecifications")(LicenseSpecifications.asInstanceOf[js.Any])
-    if (LicenseType != null) __obj.updateDynamic("LicenseType")(LicenseType.asInstanceOf[js.Any])
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
-    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
-    if (SnapshotDetails != null) __obj.updateDynamic("SnapshotDetails")(SnapshotDetails.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportImageResult]
   }
+  @scala.inline
+  implicit class ImportImageResultOps[Self <: ImportImageResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchitecture(value: String): Self = this.set("Architecture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchitecture: Self = this.set("Architecture", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    @scala.inline
+    def setHypervisor(value: String): Self = this.set("Hypervisor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHypervisor: Self = this.set("Hypervisor", js.undefined)
+    @scala.inline
+    def setImageId(value: String): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    @scala.inline
+    def setImportTaskId(value: ImportImageTaskId): Self = this.set("ImportTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportTaskId: Self = this.set("ImportTaskId", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setLicenseSpecificationsVarargs(value: ImportImageLicenseConfigurationResponse*): Self = this.set("LicenseSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setLicenseSpecifications(value: ImportImageLicenseSpecificationListResponse): Self = this.set("LicenseSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseSpecifications: Self = this.set("LicenseSpecifications", js.undefined)
+    @scala.inline
+    def setLicenseType(value: String): Self = this.set("LicenseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseType: Self = this.set("LicenseType", js.undefined)
+    @scala.inline
+    def setPlatform(value: String): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("Platform", js.undefined)
+    @scala.inline
+    def setProgress(value: String): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("Progress", js.undefined)
+    @scala.inline
+    def setSnapshotDetailsVarargs(value: SnapshotDetail*): Self = this.set("SnapshotDetails", js.Array(value :_*))
+    @scala.inline
+    def setSnapshotDetails(value: SnapshotDetailList): Self = this.set("SnapshotDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotDetails: Self = this.set("SnapshotDetails", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

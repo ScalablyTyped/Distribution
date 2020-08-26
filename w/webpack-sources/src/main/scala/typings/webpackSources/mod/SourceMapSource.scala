@@ -20,6 +20,20 @@ class SourceMapSource protected ()
     sourceCode: String,
     name: String,
     sourceMap: RawSourceMap,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: String
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: RawSourceMap,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: RawSourceMap
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: RawSourceMap,
     originalSource: String,
     innerSourceMap: String
   ) = this()
@@ -34,6 +48,20 @@ class SourceMapSource protected ()
     sourceCode: String,
     name: String,
     sourceMap: SourceMapGenerator,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: String
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: SourceMapGenerator,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: RawSourceMap
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: SourceMapGenerator,
     originalSource: String,
     innerSourceMap: String
   ) = this()
@@ -43,6 +71,38 @@ class SourceMapSource protected ()
     sourceMap: SourceMapGenerator,
     originalSource: String,
     innerSourceMap: RawSourceMap
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: RawSourceMap,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: js.UndefOr[scala.Nothing],
+    removeOriginalSource: Boolean
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: RawSourceMap,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: String,
+    removeOriginalSource: Boolean
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: RawSourceMap,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: RawSourceMap,
+    removeOriginalSource: Boolean
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: RawSourceMap,
+    originalSource: String,
+    innerSourceMap: js.UndefOr[scala.Nothing],
+    removeOriginalSource: Boolean
   ) = this()
   def this(
     sourceCode: String,
@@ -58,6 +118,38 @@ class SourceMapSource protected ()
     sourceMap: RawSourceMap,
     originalSource: String,
     innerSourceMap: RawSourceMap,
+    removeOriginalSource: Boolean
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: SourceMapGenerator,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: js.UndefOr[scala.Nothing],
+    removeOriginalSource: Boolean
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: SourceMapGenerator,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: String,
+    removeOriginalSource: Boolean
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: SourceMapGenerator,
+    originalSource: js.UndefOr[scala.Nothing],
+    innerSourceMap: RawSourceMap,
+    removeOriginalSource: Boolean
+  ) = this()
+  def this(
+    sourceCode: String,
+    name: String,
+    sourceMap: SourceMapGenerator,
+    originalSource: String,
+    innerSourceMap: js.UndefOr[scala.Nothing],
     removeOriginalSource: Boolean
   ) = this()
   def this(
@@ -82,12 +174,15 @@ class SourceMapSource protected ()
     * May return `null` if no SourceMap is available.
     */
   /* InferMemberOverrides */
+  override def map(): RawSourceMap | Null = js.native
+  /* InferMemberOverrides */
   override def map(options: MapOptions): RawSourceMap | Null = js.native
-  def source(): String = js.native
   /**
     * Returns both, source code (like `Source.prototype.source()` and SourceMap (like `Source.prototype.map()`).
     * This method could have better performance than calling `source()` and `map()` separately.
     */
+  /* InferMemberOverrides */
+  override def sourceAndMap(): SourceAndMapResult = js.native
   /* InferMemberOverrides */
   override def sourceAndMap(options: MapOptions): SourceAndMapResult = js.native
 }

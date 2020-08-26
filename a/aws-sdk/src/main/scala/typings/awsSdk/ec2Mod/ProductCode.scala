@@ -18,11 +18,30 @@ trait ProductCode extends js.Object {
 
 object ProductCode {
   @scala.inline
-  def apply(ProductCodeId: String = null, ProductCodeType: ProductCodeValues = null): ProductCode = {
+  def apply(): ProductCode = {
     val __obj = js.Dynamic.literal()
-    if (ProductCodeId != null) __obj.updateDynamic("ProductCodeId")(ProductCodeId.asInstanceOf[js.Any])
-    if (ProductCodeType != null) __obj.updateDynamic("ProductCodeType")(ProductCodeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductCode]
   }
+  @scala.inline
+  implicit class ProductCodeOps[Self <: ProductCode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProductCodeId(value: String): Self = this.set("ProductCodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCodeId: Self = this.set("ProductCodeId", js.undefined)
+    @scala.inline
+    def setProductCodeType(value: ProductCodeValues): Self = this.set("ProductCodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCodeType: Self = this.set("ProductCodeType", js.undefined)
+  }
+  
 }
 

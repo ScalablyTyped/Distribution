@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Dialogs extends js.Object {
-  val Application: typings.activexWord.Word.Application
-  val Count: Double
-  val Creator: Double
-  val Parent: js.Any
+  val Application: typings.activexWord.Word.Application = js.native
+  val Count: Double = js.native
+  val Creator: Double = js.native
+  val Parent: js.Any = js.native
   @JSName("Word.Dialogs_typekey")
-  var WordDotDialogs_typekey: Dialogs
-  def Item(Index: WdWordDialog): Dialog
+  var WordDotDialogs_typekey: Dialogs = js.native
+  def Item(Index: WdWordDialog): Dialog = js.native
 }
 
 object Dialogs {
@@ -28,5 +29,30 @@ object Dialogs {
     __obj.updateDynamic("Word.Dialogs_typekey")(WordDotDialogs_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dialogs]
   }
+  @scala.inline
+  implicit class DialogsOps[Self <: Dialogs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItem(value: WdWordDialog => Dialog): Self = this.set("Item", js.Any.fromFunction1(value))
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordDotDialogs_typekey(value: Dialogs): Self = this.set("Word.Dialogs_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

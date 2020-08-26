@@ -22,5 +22,22 @@ object CreateHealthCheckRequest {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], HealthCheckConfig = HealthCheckConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHealthCheckRequest]
   }
+  @scala.inline
+  implicit class CreateHealthCheckRequestOps[Self <: CreateHealthCheckRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallerReference(value: HealthCheckNonce): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthCheckConfig(value: HealthCheckConfig): Self = this.set("HealthCheckConfig", value.asInstanceOf[js.Any])
+  }
+  
 }
 

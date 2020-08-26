@@ -16,17 +16,5 @@ class ASPxClientReportDesignerCustomizeOpenDialogEventArgs protected ()
     * @param popup An object that specifies the Open Report dialog.
     */
   def this(popup: typings.devexpressWeb.ASPxDesignerOpenDialog) = this()
-  /**
-    * Provides access to the Open Report dialog.
-    */
-  /* CompleteClass */
-  override var Popup: typings.devexpressWeb.ASPxDesignerOpenDialog = js.native
-  /**
-    * Customizes the Open Report dialog based on the specified template and model.
-    * @param template A string that specifies the name of an HTML template for the dialog.
-    * @param model A model of the Open Report dialog.
-    */
-  /* CompleteClass */
-  override def Customize(template: String, model: typings.devexpressWeb.ASPxDesignerDialogModel): Unit = js.native
 }
 

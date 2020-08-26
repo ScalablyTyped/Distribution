@@ -16,10 +16,5 @@ class ASPxClientHtmlEditorCustomDialogEventArgs protected ()
     * @param name A string value that specifies the custom dialog's name. Initializes the ASPxClientHtmlEditorCustomDialogEventArgs.name property.
     */
   def this(name: String) = this()
-  /**
-    * Gets the name that uniquely identifies the processed custom dialog.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

@@ -66,6 +66,7 @@ trait IgGridGroupByMethods extends js.Object {
     * @param sortingDirection if not set it is taken from option defaultSortingDirection
     */
   def groupByColumn(key: String): Unit = js.native
+  def groupByColumn(key: String, layout: js.UndefOr[scala.Nothing], sortingDirection: js.Object): Unit = js.native
   def groupByColumn(key: String, layout: String): Unit = js.native
   def groupByColumn(key: String, layout: String, sortingDirection: js.Object): Unit = js.native
   /**

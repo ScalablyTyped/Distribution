@@ -39,7 +39,34 @@ trait IFieldExpression extends js.Object {
     @param recurrenceIDField Internal name of "Recurrence ID" field (default: "RecurrenceID" - all OOTB Calendar lists use this name)
     */
   def DateRangesOverlap(overlapType: DateRangesOverlapType, calendarDate: String): IExpression = js.native
+  def DateRangesOverlap(
+    overlapType: DateRangesOverlapType,
+    calendarDate: String,
+    eventDateField: js.UndefOr[scala.Nothing],
+    endDateField: js.UndefOr[scala.Nothing],
+    recurrenceIDField: String
+  ): IExpression = js.native
+  def DateRangesOverlap(
+    overlapType: DateRangesOverlapType,
+    calendarDate: String,
+    eventDateField: js.UndefOr[scala.Nothing],
+    endDateField: String
+  ): IExpression = js.native
+  def DateRangesOverlap(
+    overlapType: DateRangesOverlapType,
+    calendarDate: String,
+    eventDateField: js.UndefOr[scala.Nothing],
+    endDateField: String,
+    recurrenceIDField: String
+  ): IExpression = js.native
   def DateRangesOverlap(overlapType: DateRangesOverlapType, calendarDate: String, eventDateField: String): IExpression = js.native
+  def DateRangesOverlap(
+    overlapType: DateRangesOverlapType,
+    calendarDate: String,
+    eventDateField: String,
+    endDateField: js.UndefOr[scala.Nothing],
+    recurrenceIDField: String
+  ): IExpression = js.native
   def DateRangesOverlap(
     overlapType: DateRangesOverlapType,
     calendarDate: String,

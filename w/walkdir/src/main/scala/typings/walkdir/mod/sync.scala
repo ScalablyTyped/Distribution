@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 object sync extends js.Object {
   def apply(path: String): js.Array[String] | StringDictionary[Stats] = js.native
   def apply(path: String, eventListener: WalkEventListener): js.Array[String] = js.native
+  def apply(path: String, options: js.UndefOr[scala.Nothing], eventListener: WalkEventListener): js.Array[String] | StringDictionary[Stats] = js.native
   def apply(path: String, options: WalkOptionsreturnobjectbo): js.Array[String] | StringDictionary[Stats] = js.native
   def apply(path: String, options: WalkOptionsreturnobjectbo, eventListener: WalkEventListener): js.Array[String] | StringDictionary[Stats] = js.native
   def apply(path: String, options: WalkOptionsreturnobjectfa): js.Array[String] = js.native

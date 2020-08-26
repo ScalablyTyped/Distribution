@@ -31,15 +31,22 @@ object polygonMod extends js.Object {
     def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: GeometryLayout) = this()
     def this(
       coordinates: js.Array[js.Array[Coordinate] | Double],
+      opt_layout: js.UndefOr[scala.Nothing],
+      opt_ends: js.Array[Double]
+    ) = this()
+    def this(
+      coordinates: js.Array[js.Array[Coordinate] | Double],
       opt_layout: GeometryLayout,
       opt_ends: js.Array[Double]
     ) = this()
   }
   
   def circular(center: Coordinate, radius: Double): Polygon = js.native
+  def circular(center: Coordinate, radius: Double, opt_n: js.UndefOr[scala.Nothing], opt_sphereRadius: Double): Polygon = js.native
   def circular(center: Coordinate, radius: Double, opt_n: Double): Polygon = js.native
   def circular(center: Coordinate, radius: Double, opt_n: Double, opt_sphereRadius: Double): Polygon = js.native
   def fromCircle(circle: typings.ol.circleMod.default): Polygon = js.native
+  def fromCircle(circle: typings.ol.circleMod.default, opt_sides: js.UndefOr[scala.Nothing], opt_angle: Double): Polygon = js.native
   def fromCircle(circle: typings.ol.circleMod.default, opt_sides: Double): Polygon = js.native
   def fromCircle(circle: typings.ol.circleMod.default, opt_sides: Double, opt_angle: Double): Polygon = js.native
   def fromExtent(extent: Extent): Polygon = js.native

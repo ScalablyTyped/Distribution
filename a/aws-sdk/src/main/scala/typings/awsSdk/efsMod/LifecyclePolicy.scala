@@ -14,10 +14,26 @@ trait LifecyclePolicy extends js.Object {
 
 object LifecyclePolicy {
   @scala.inline
-  def apply(TransitionToIA: TransitionToIARules = null): LifecyclePolicy = {
+  def apply(): LifecyclePolicy = {
     val __obj = js.Dynamic.literal()
-    if (TransitionToIA != null) __obj.updateDynamic("TransitionToIA")(TransitionToIA.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecyclePolicy]
   }
+  @scala.inline
+  implicit class LifecyclePolicyOps[Self <: LifecyclePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTransitionToIA(value: TransitionToIARules): Self = this.set("TransitionToIA", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionToIA: Self = this.set("TransitionToIA", js.undefined)
+  }
+  
 }
 

@@ -14,6 +14,13 @@ class WriteKeyExpr protected () extends Expression {
     receiver: Expression,
     index: Expression,
     value: Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    receiver: Expression,
+    index: Expression,
+    value: Expression,
     `type`: Null,
     sourceSpan: ParseSourceSpan
   ) = this()

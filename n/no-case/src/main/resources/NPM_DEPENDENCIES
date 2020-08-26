@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "no-case" : "2.3.2"
+      "no-case" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "no-case" : "2.3.2"
+      "no-case" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

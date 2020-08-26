@@ -26,10 +26,32 @@ trait S3Action extends js.Object {
 
 object S3Action {
   @scala.inline
-  def apply(bucketName: BucketName, key: Key, roleArn: AwsArn, cannedAcl: CannedAccessControlList = null): S3Action = {
+  def apply(bucketName: BucketName, key: Key, roleArn: AwsArn): S3Action = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (cannedAcl != null) __obj.updateDynamic("cannedAcl")(cannedAcl.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Action]
   }
+  @scala.inline
+  implicit class S3ActionOps[Self <: S3Action] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: BucketName): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCannedAcl(value: CannedAccessControlList): Self = this.set("cannedAcl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCannedAcl: Self = this.set("cannedAcl", js.undefined)
+  }
+  
 }
 

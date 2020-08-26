@@ -7,86 +7,148 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AppIntroProps extends js.Object {
-  var activeDotStyle: js.UndefOr[ViewStyle] = js.undefined
-  var bottomButton: js.UndefOr[Boolean] = js.undefined
-  var buttonStyle: js.UndefOr[ViewStyle] = js.undefined
-  var buttonTextStyle: js.UndefOr[TextProps] = js.undefined
-  var doneLabel: js.UndefOr[String] = js.undefined
-  var dotStyle: js.UndefOr[ViewStyle] = js.undefined
-  var hidePagination: js.UndefOr[Boolean] = js.undefined
-  var nextLabel: js.UndefOr[String] = js.undefined
-  var onDone: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSkip: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSlideChange: js.UndefOr[js.Function2[/* index */ Double, /* lastIndex */ Double, Unit]] = js.undefined
-  var paginationStyle: js.UndefOr[ViewStyle] = js.undefined
-  var prevLabel: js.UndefOr[String] = js.undefined
-  var renderDoneButton: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var renderItem: js.UndefOr[js.Function1[/* item */ js.Any, ReactElement]] = js.undefined
-  var renderNextButton: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var renderPrevButton: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var renderSkipButton: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var showDoneButton: js.UndefOr[Boolean] = js.undefined
-  var showNextButton: js.UndefOr[Boolean] = js.undefined
-  var showPrevButton: js.UndefOr[Boolean] = js.undefined
-  var showSkipButton: js.UndefOr[Boolean] = js.undefined
-  var skipLabel: js.UndefOr[String] = js.undefined
-  var slides: js.Array[_]
+  var activeDotStyle: js.UndefOr[ViewStyle] = js.native
+  var bottomButton: js.UndefOr[Boolean] = js.native
+  var buttonStyle: js.UndefOr[ViewStyle] = js.native
+  var buttonTextStyle: js.UndefOr[TextProps] = js.native
+  var doneLabel: js.UndefOr[String] = js.native
+  var dotStyle: js.UndefOr[ViewStyle] = js.native
+  var hidePagination: js.UndefOr[Boolean] = js.native
+  var nextLabel: js.UndefOr[String] = js.native
+  var onDone: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSkip: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSlideChange: js.UndefOr[js.Function2[/* index */ Double, /* lastIndex */ Double, Unit]] = js.native
+  var paginationStyle: js.UndefOr[ViewStyle] = js.native
+  var prevLabel: js.UndefOr[String] = js.native
+  var renderDoneButton: js.UndefOr[js.Function0[Unit]] = js.native
+  var renderItem: js.UndefOr[js.Function1[/* item */ js.Any, ReactElement]] = js.native
+  var renderNextButton: js.UndefOr[js.Function0[Unit]] = js.native
+  var renderPrevButton: js.UndefOr[js.Function0[Unit]] = js.native
+  var renderSkipButton: js.UndefOr[js.Function0[Unit]] = js.native
+  var showDoneButton: js.UndefOr[Boolean] = js.native
+  var showNextButton: js.UndefOr[Boolean] = js.native
+  var showPrevButton: js.UndefOr[Boolean] = js.native
+  var showSkipButton: js.UndefOr[Boolean] = js.native
+  var skipLabel: js.UndefOr[String] = js.native
+  var slides: js.Array[_] = js.native
 }
 
 object AppIntroProps {
   @scala.inline
-  def apply(
-    slides: js.Array[_],
-    activeDotStyle: ViewStyle = null,
-    bottomButton: js.UndefOr[Boolean] = js.undefined,
-    buttonStyle: ViewStyle = null,
-    buttonTextStyle: TextProps = null,
-    doneLabel: String = null,
-    dotStyle: ViewStyle = null,
-    hidePagination: js.UndefOr[Boolean] = js.undefined,
-    nextLabel: String = null,
-    onDone: () => Unit = null,
-    onSkip: () => Unit = null,
-    onSlideChange: (/* index */ Double, /* lastIndex */ Double) => Unit = null,
-    paginationStyle: ViewStyle = null,
-    prevLabel: String = null,
-    renderDoneButton: () => Unit = null,
-    renderItem: /* item */ js.Any => ReactElement = null,
-    renderNextButton: () => Unit = null,
-    renderPrevButton: () => Unit = null,
-    renderSkipButton: () => Unit = null,
-    showDoneButton: js.UndefOr[Boolean] = js.undefined,
-    showNextButton: js.UndefOr[Boolean] = js.undefined,
-    showPrevButton: js.UndefOr[Boolean] = js.undefined,
-    showSkipButton: js.UndefOr[Boolean] = js.undefined,
-    skipLabel: String = null
-  ): AppIntroProps = {
+  def apply(slides: js.Array[_]): AppIntroProps = {
     val __obj = js.Dynamic.literal(slides = slides.asInstanceOf[js.Any])
-    if (activeDotStyle != null) __obj.updateDynamic("activeDotStyle")(activeDotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomButton)) __obj.updateDynamic("bottomButton")(bottomButton.get.asInstanceOf[js.Any])
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (buttonTextStyle != null) __obj.updateDynamic("buttonTextStyle")(buttonTextStyle.asInstanceOf[js.Any])
-    if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel.asInstanceOf[js.Any])
-    if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePagination)) __obj.updateDynamic("hidePagination")(hidePagination.get.asInstanceOf[js.Any])
-    if (nextLabel != null) __obj.updateDynamic("nextLabel")(nextLabel.asInstanceOf[js.Any])
-    if (onDone != null) __obj.updateDynamic("onDone")(js.Any.fromFunction0(onDone))
-    if (onSkip != null) __obj.updateDynamic("onSkip")(js.Any.fromFunction0(onSkip))
-    if (onSlideChange != null) __obj.updateDynamic("onSlideChange")(js.Any.fromFunction2(onSlideChange))
-    if (paginationStyle != null) __obj.updateDynamic("paginationStyle")(paginationStyle.asInstanceOf[js.Any])
-    if (prevLabel != null) __obj.updateDynamic("prevLabel")(prevLabel.asInstanceOf[js.Any])
-    if (renderDoneButton != null) __obj.updateDynamic("renderDoneButton")(js.Any.fromFunction0(renderDoneButton))
-    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
-    if (renderNextButton != null) __obj.updateDynamic("renderNextButton")(js.Any.fromFunction0(renderNextButton))
-    if (renderPrevButton != null) __obj.updateDynamic("renderPrevButton")(js.Any.fromFunction0(renderPrevButton))
-    if (renderSkipButton != null) __obj.updateDynamic("renderSkipButton")(js.Any.fromFunction0(renderSkipButton))
-    if (!js.isUndefined(showDoneButton)) __obj.updateDynamic("showDoneButton")(showDoneButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNextButton)) __obj.updateDynamic("showNextButton")(showNextButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPrevButton)) __obj.updateDynamic("showPrevButton")(showPrevButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSkipButton)) __obj.updateDynamic("showSkipButton")(showSkipButton.get.asInstanceOf[js.Any])
-    if (skipLabel != null) __obj.updateDynamic("skipLabel")(skipLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppIntroProps]
   }
+  @scala.inline
+  implicit class AppIntroPropsOps[Self <: AppIntroProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSlidesVarargs(value: js.Any*): Self = this.set("slides", js.Array(value :_*))
+    @scala.inline
+    def setSlides(value: js.Array[_]): Self = this.set("slides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActiveDotStyle(value: ViewStyle): Self = this.set("activeDotStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveDotStyle: Self = this.set("activeDotStyle", js.undefined)
+    @scala.inline
+    def setBottomButton(value: Boolean): Self = this.set("bottomButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomButton: Self = this.set("bottomButton", js.undefined)
+    @scala.inline
+    def setButtonStyle(value: ViewStyle): Self = this.set("buttonStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonStyle: Self = this.set("buttonStyle", js.undefined)
+    @scala.inline
+    def setButtonTextStyle(value: TextProps): Self = this.set("buttonTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonTextStyle: Self = this.set("buttonTextStyle", js.undefined)
+    @scala.inline
+    def setDoneLabel(value: String): Self = this.set("doneLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoneLabel: Self = this.set("doneLabel", js.undefined)
+    @scala.inline
+    def setDotStyle(value: ViewStyle): Self = this.set("dotStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotStyle: Self = this.set("dotStyle", js.undefined)
+    @scala.inline
+    def setHidePagination(value: Boolean): Self = this.set("hidePagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidePagination: Self = this.set("hidePagination", js.undefined)
+    @scala.inline
+    def setNextLabel(value: String): Self = this.set("nextLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextLabel: Self = this.set("nextLabel", js.undefined)
+    @scala.inline
+    def setOnDone(value: () => Unit): Self = this.set("onDone", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDone: Self = this.set("onDone", js.undefined)
+    @scala.inline
+    def setOnSkip(value: () => Unit): Self = this.set("onSkip", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnSkip: Self = this.set("onSkip", js.undefined)
+    @scala.inline
+    def setOnSlideChange(value: (/* index */ Double, /* lastIndex */ Double) => Unit): Self = this.set("onSlideChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnSlideChange: Self = this.set("onSlideChange", js.undefined)
+    @scala.inline
+    def setPaginationStyle(value: ViewStyle): Self = this.set("paginationStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationStyle: Self = this.set("paginationStyle", js.undefined)
+    @scala.inline
+    def setPrevLabel(value: String): Self = this.set("prevLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevLabel: Self = this.set("prevLabel", js.undefined)
+    @scala.inline
+    def setRenderDoneButton(value: () => Unit): Self = this.set("renderDoneButton", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRenderDoneButton: Self = this.set("renderDoneButton", js.undefined)
+    @scala.inline
+    def setRenderItem(value: /* item */ js.Any => ReactElement): Self = this.set("renderItem", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderItem: Self = this.set("renderItem", js.undefined)
+    @scala.inline
+    def setRenderNextButton(value: () => Unit): Self = this.set("renderNextButton", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRenderNextButton: Self = this.set("renderNextButton", js.undefined)
+    @scala.inline
+    def setRenderPrevButton(value: () => Unit): Self = this.set("renderPrevButton", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRenderPrevButton: Self = this.set("renderPrevButton", js.undefined)
+    @scala.inline
+    def setRenderSkipButton(value: () => Unit): Self = this.set("renderSkipButton", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRenderSkipButton: Self = this.set("renderSkipButton", js.undefined)
+    @scala.inline
+    def setShowDoneButton(value: Boolean): Self = this.set("showDoneButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDoneButton: Self = this.set("showDoneButton", js.undefined)
+    @scala.inline
+    def setShowNextButton(value: Boolean): Self = this.set("showNextButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNextButton: Self = this.set("showNextButton", js.undefined)
+    @scala.inline
+    def setShowPrevButton(value: Boolean): Self = this.set("showPrevButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPrevButton: Self = this.set("showPrevButton", js.undefined)
+    @scala.inline
+    def setShowSkipButton(value: Boolean): Self = this.set("showSkipButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSkipButton: Self = this.set("showSkipButton", js.undefined)
+    @scala.inline
+    def setSkipLabel(value: String): Self = this.set("skipLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipLabel: Self = this.set("skipLabel", js.undefined)
+  }
+  
 }
 

@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FirstNameOptions extends js.Object {
-  var gender: male | female
-  var nationality: FirstNameNationalities
+  var gender: male | female = js.native
+  var nationality: FirstNameNationalities = js.native
 }
 
 object FirstNameOptions {
@@ -17,5 +18,22 @@ object FirstNameOptions {
     val __obj = js.Dynamic.literal(gender = gender.asInstanceOf[js.Any], nationality = nationality.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirstNameOptions]
   }
+  @scala.inline
+  implicit class FirstNameOptionsOps[Self <: FirstNameOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGender(value: male | female): Self = this.set("gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNationality(value: FirstNameNationalities): Self = this.set("nationality", value.asInstanceOf[js.Any])
+  }
+  
 }
 

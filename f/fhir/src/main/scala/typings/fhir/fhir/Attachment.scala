@@ -7,121 +7,156 @@ import scala.scalajs.js.annotation._
 /**
   * Content in a format defined elsewhere
   */
+@js.native
 trait Attachment extends Element {
   /**
     * Contains extended information for property 'contentType'.
     */
-  var _contentType: js.UndefOr[Element] = js.undefined
+  var _contentType: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'creation'.
     */
-  var _creation: js.UndefOr[Element] = js.undefined
+  var _creation: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'data'.
     */
-  var _data: js.UndefOr[Element] = js.undefined
+  var _data: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'hash'.
     */
-  var _hash: js.UndefOr[Element] = js.undefined
+  var _hash: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'language'.
     */
-  var _language: js.UndefOr[Element] = js.undefined
+  var _language: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'size'.
     */
-  var _size: js.UndefOr[Element] = js.undefined
+  var _size: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'title'.
     */
-  var _title: js.UndefOr[Element] = js.undefined
+  var _title: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.undefined
+  var _url: js.UndefOr[Element] = js.native
   /**
     * Mime type of the content, with charset etc.
     */
-  var contentType: js.UndefOr[code] = js.undefined
+  var contentType: js.UndefOr[code] = js.native
   /**
     * Date attachment was first created
     */
-  var creation: js.UndefOr[dateTime] = js.undefined
+  var creation: js.UndefOr[dateTime] = js.native
   /**
     * Data inline, base64ed
     */
-  var data: js.UndefOr[base64Binary] = js.undefined
+  var data: js.UndefOr[base64Binary] = js.native
   /**
     * Hash of the data (sha-1, base64ed)
     */
-  var hash: js.UndefOr[base64Binary] = js.undefined
+  var hash: js.UndefOr[base64Binary] = js.native
   /**
     * Human language of the content (BCP-47)
     */
-  var language: js.UndefOr[code] = js.undefined
+  var language: js.UndefOr[code] = js.native
   /**
     * Number of bytes of content (if url provided)
     */
-  var size: js.UndefOr[unsignedInt] = js.undefined
+  var size: js.UndefOr[unsignedInt] = js.native
   /**
     * Label to display in place of the data
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * Uri where the data can be found
     */
-  var url: js.UndefOr[uri] = js.undefined
+  var url: js.UndefOr[uri] = js.native
 }
 
 object Attachment {
   @scala.inline
-  def apply(
-    _contentType: Element = null,
-    _creation: Element = null,
-    _data: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _hash: Element = null,
-    _id: Element = null,
-    _language: Element = null,
-    _size: Element = null,
-    _title: Element = null,
-    _url: Element = null,
-    contentType: code = null,
-    creation: dateTime = null,
-    data: base64Binary = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    hash: base64Binary = null,
-    id: String = null,
-    language: code = null,
-    size: js.UndefOr[unsignedInt] = js.undefined,
-    title: String = null,
-    url: uri = null
-  ): Attachment = {
+  def apply(): Attachment = {
     val __obj = js.Dynamic.literal()
-    if (_contentType != null) __obj.updateDynamic("_contentType")(_contentType.asInstanceOf[js.Any])
-    if (_creation != null) __obj.updateDynamic("_creation")(_creation.asInstanceOf[js.Any])
-    if (_data != null) __obj.updateDynamic("_data")(_data.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_hash != null) __obj.updateDynamic("_hash")(_hash.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_size != null) __obj.updateDynamic("_size")(_size.asInstanceOf[js.Any])
-    if (_title != null) __obj.updateDynamic("_title")(_title.asInstanceOf[js.Any])
-    if (_url != null) __obj.updateDynamic("_url")(_url.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (creation != null) __obj.updateDynamic("creation")(creation.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
+  @scala.inline
+  implicit class AttachmentOps[Self <: Attachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_contentType(value: Element): Self = this.set("_contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_contentType: Self = this.set("_contentType", js.undefined)
+    @scala.inline
+    def set_creation(value: Element): Self = this.set("_creation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_creation: Self = this.set("_creation", js.undefined)
+    @scala.inline
+    def set_data(value: Element): Self = this.set("_data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_data: Self = this.set("_data", js.undefined)
+    @scala.inline
+    def set_hash(value: Element): Self = this.set("_hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_hash: Self = this.set("_hash", js.undefined)
+    @scala.inline
+    def set_language(value: Element): Self = this.set("_language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_language: Self = this.set("_language", js.undefined)
+    @scala.inline
+    def set_size(value: Element): Self = this.set("_size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_size: Self = this.set("_size", js.undefined)
+    @scala.inline
+    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_title: Self = this.set("_title", js.undefined)
+    @scala.inline
+    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_url: Self = this.set("_url", js.undefined)
+    @scala.inline
+    def setContentType(value: code): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setCreation(value: dateTime): Self = this.set("creation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreation: Self = this.set("creation", js.undefined)
+    @scala.inline
+    def setData(value: base64Binary): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setHash(value: base64Binary): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setLanguage(value: code): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setSize(value: unsignedInt): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

@@ -16,12 +16,22 @@ package object typesMod {
     /* testResult */ typings.jestTestResult.typesMod.TestResult, 
     js.Promise[scala.Unit]
   ]
-  type TestFramework = js.Function5[
+  type TestFileEvent[T /* <: /* keyof jest-runner.jest-runner/build/types.TestEvents */ typings.jestRunner.jestRunnerStrings.`test-file-start` | typings.jestRunner.jestRunnerStrings.`test-file-success` | typings.jestRunner.jestRunnerStrings.`test-file-failure` | typings.jestRunner.jestRunnerStrings.`test-case-result` */] = js.Function2[
+    /* eventName */ T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: jest-runner.jest-runner/build/types.TestEvents[T] */ /* args */ js.Any, 
+    js.Any
+  ]
+  type TestFramework = js.Function6[
     /* globalConfig */ typings.jestTypes.configMod.GlobalConfig, 
     /* config */ typings.jestTypes.configMod.ProjectConfig, 
     /* environment */ typings.jestEnvironment.mod.JestEnvironment, 
-    /* runtime */ typings.jestRuntime.mod.^, 
+    /* runtime */ typings.jestRuntime.mod.RuntimeType, 
     /* testPath */ java.lang.String, 
+    /* sendMessageToJest */ js.UndefOr[
+      typings.jestRunner.typesMod.TestFileEvent[
+        /* keyof jest-runner.jest-runner/build/types.TestEvents */ typings.jestRunner.jestRunnerStrings.`test-file-start` | typings.jestRunner.jestRunnerStrings.`test-file-success` | typings.jestRunner.jestRunnerStrings.`test-file-failure` | typings.jestRunner.jestRunnerStrings.`test-case-result`
+      ]
+    ], 
     js.Promise[typings.jestTestResult.typesMod.TestResult]
   ]
 }

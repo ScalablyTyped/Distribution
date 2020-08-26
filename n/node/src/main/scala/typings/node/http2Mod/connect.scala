@@ -15,6 +15,11 @@ object connect extends js.Object {
     authority: String,
     listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
   ): ClientHttp2Session = js.native
+  def apply(
+    authority: String,
+    options: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+  ): ClientHttp2Session = js.native
   def apply(authority: String, options: ClientSessionOptions): ClientHttp2Session = js.native
   def apply(
     authority: String,
@@ -30,6 +35,11 @@ object connect extends js.Object {
   def apply(authority: URL_): ClientHttp2Session = js.native
   def apply(
     authority: URL_,
+    listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
+  ): ClientHttp2Session = js.native
+  def apply(
+    authority: URL_,
+    options: js.UndefOr[scala.Nothing],
     listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
   ): ClientHttp2Session = js.native
   def apply(authority: URL_, options: ClientSessionOptions): ClientHttp2Session = js.native

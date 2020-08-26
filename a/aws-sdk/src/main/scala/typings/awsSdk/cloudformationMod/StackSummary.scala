@@ -54,29 +54,60 @@ trait StackSummary extends js.Object {
 
 object StackSummary {
   @scala.inline
-  def apply(
-    CreationTime: CreationTime,
-    StackName: StackName,
-    StackStatus: StackStatus,
-    DeletionTime: DeletionTime = null,
-    DriftInformation: StackDriftInformationSummary = null,
-    LastUpdatedTime: LastUpdatedTime = null,
-    ParentId: StackId = null,
-    RootId: StackId = null,
-    StackId: StackId = null,
-    StackStatusReason: StackStatusReason = null,
-    TemplateDescription: TemplateDescription = null
-  ): StackSummary = {
+  def apply(CreationTime: CreationTime, StackName: StackName, StackStatus: StackStatus): StackSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], StackStatus = StackStatus.asInstanceOf[js.Any])
-    if (DeletionTime != null) __obj.updateDynamic("DeletionTime")(DeletionTime.asInstanceOf[js.Any])
-    if (DriftInformation != null) __obj.updateDynamic("DriftInformation")(DriftInformation.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (ParentId != null) __obj.updateDynamic("ParentId")(ParentId.asInstanceOf[js.Any])
-    if (RootId != null) __obj.updateDynamic("RootId")(RootId.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (StackStatusReason != null) __obj.updateDynamic("StackStatusReason")(StackStatusReason.asInstanceOf[js.Any])
-    if (TemplateDescription != null) __obj.updateDynamic("TemplateDescription")(TemplateDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSummary]
   }
+  @scala.inline
+  implicit class StackSummaryOps[Self <: StackSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackStatus(value: StackStatus): Self = this.set("StackStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeletionTime(value: DeletionTime): Self = this.set("DeletionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionTime: Self = this.set("DeletionTime", js.undefined)
+    @scala.inline
+    def setDriftInformation(value: StackDriftInformationSummary): Self = this.set("DriftInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriftInformation: Self = this.set("DriftInformation", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: LastUpdatedTime): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    @scala.inline
+    def setParentId(value: StackId): Self = this.set("ParentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("ParentId", js.undefined)
+    @scala.inline
+    def setRootId(value: StackId): Self = this.set("RootId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootId: Self = this.set("RootId", js.undefined)
+    @scala.inline
+    def setStackId(value: StackId): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setStackStatusReason(value: StackStatusReason): Self = this.set("StackStatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackStatusReason: Self = this.set("StackStatusReason", js.undefined)
+    @scala.inline
+    def setTemplateDescription(value: TemplateDescription): Self = this.set("TemplateDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateDescription: Self = this.set("TemplateDescription", js.undefined)
+  }
+  
 }
 

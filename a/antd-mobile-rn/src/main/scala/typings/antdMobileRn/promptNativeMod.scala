@@ -15,7 +15,38 @@ object promptNativeMod extends js.Object {
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String]
+  ): Unit = js.native
+  def default(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[TextStyle],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: String
+  ): Unit = js.native
+  def default(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[TextStyle],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: String,
+    placeholders: js.Array[String]
+  ): Unit = js.native
+  def default(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[TextStyle],
     `type`: String
+  ): Unit = js.native
+  def default(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[TextStyle],
+    `type`: String,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String]
   ): Unit = js.native
   def default(
     title: ReactNode,

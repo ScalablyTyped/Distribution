@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OnOptions extends js.Object {
-  var async: js.UndefOr[Boolean] = js.undefined
-  var nextTick: js.UndefOr[Boolean] = js.undefined
-  var objectify: js.UndefOr[Boolean] = js.undefined
-  var promisify: js.UndefOr[Boolean] = js.undefined
+  var async: js.UndefOr[Boolean] = js.native
+  var nextTick: js.UndefOr[Boolean] = js.native
+  var objectify: js.UndefOr[Boolean] = js.native
+  var promisify: js.UndefOr[Boolean] = js.native
 }
 
 object OnOptions {
   @scala.inline
-  def apply(
-    async: js.UndefOr[Boolean] = js.undefined,
-    nextTick: js.UndefOr[Boolean] = js.undefined,
-    objectify: js.UndefOr[Boolean] = js.undefined,
-    promisify: js.UndefOr[Boolean] = js.undefined
-  ): OnOptions = {
+  def apply(): OnOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nextTick)) __obj.updateDynamic("nextTick")(nextTick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectify)) __obj.updateDynamic("objectify")(objectify.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(promisify)) __obj.updateDynamic("promisify")(promisify.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnOptions]
   }
+  @scala.inline
+  implicit class OnOptionsOps[Self <: OnOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsync: Self = this.set("async", js.undefined)
+    @scala.inline
+    def setNextTick(value: Boolean): Self = this.set("nextTick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextTick: Self = this.set("nextTick", js.undefined)
+    @scala.inline
+    def setObjectify(value: Boolean): Self = this.set("objectify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectify: Self = this.set("objectify", js.undefined)
+    @scala.inline
+    def setPromisify(value: Boolean): Self = this.set("promisify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromisify: Self = this.set("promisify", js.undefined)
+  }
+  
 }
 

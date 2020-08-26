@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/drop-down-widget relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/drop-down relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "pages.DropDown")
 @js.native

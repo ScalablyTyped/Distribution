@@ -97,6 +97,7 @@ trait ClassBreaksRenderer
     */
   var valueExpressionTitle: String = js.native
   def addClassBreakInfo(min: js.Any): Unit = js.native
+  def addClassBreakInfo(min: js.Any, max: js.UndefOr[scala.Nothing], symbol: Symbol): Unit = js.native
   def addClassBreakInfo(min: js.Any, max: Double): Unit = js.native
   def addClassBreakInfo(min: js.Any, max: Double, symbol: Symbol): Unit = js.native
   /**
@@ -110,6 +111,7 @@ trait ClassBreaksRenderer
     *
     */
   def addClassBreakInfo(min: Double): Unit = js.native
+  def addClassBreakInfo(min: Double, max: js.UndefOr[scala.Nothing], symbol: Symbol): Unit = js.native
   def addClassBreakInfo(min: Double, max: Double): Unit = js.native
   def addClassBreakInfo(min: Double, max: Double, symbol: Symbol): Unit = js.native
   /**

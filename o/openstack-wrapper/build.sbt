@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "openstack-wrapper"
-version := "2.1-dt-20200515Z-518f07"
-scalaVersion := "2.13.2"
+version := "2.1-dt-20200515Z-0d68fa"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

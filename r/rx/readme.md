@@ -1,7 +1,7 @@
 
 # Scala.js typings for rx
 
-Typings are for version 4.1
+Typings are for version 4.1.0
 
 ## Library description:
 Library for composing asynchronous and event-based operations in JavaScript
@@ -12,7 +12,7 @@ Library for composing asynchronous and event-based operations in JavaScript
 | Keywords           | LINQ, FRP, Reactive, Events, Rx, RxJS |
 | # releases         | 1 |
 | # dependents       | 682 |
-| # downloads        | 85109149 |
+| # downloads        | 85915897 |
 | # stars            | 63 |
 
 ## Links
@@ -24,7 +24,7 @@ Library for composing asynchronous and event-based operations in JavaScript
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

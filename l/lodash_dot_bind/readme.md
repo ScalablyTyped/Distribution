@@ -12,7 +12,7 @@ The lodash method `_.bind` exported as a module.
 | Keywords           | lodash-modularized, bind |
 | # releases         | 0 |
 | # dependents       | 48 |
-| # downloads        | 49767390 |
+| # downloads        | 50037683 |
 | # stars            | 1 |
 
 ## Links

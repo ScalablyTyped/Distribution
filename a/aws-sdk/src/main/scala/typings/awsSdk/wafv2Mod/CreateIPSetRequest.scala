@@ -34,18 +34,42 @@ trait CreateIPSetRequest extends js.Object {
 
 object CreateIPSetRequest {
   @scala.inline
-  def apply(
-    Addresses: IPAddresses,
-    IPAddressVersion: IPAddressVersion,
-    Name: EntityName,
-    Scope: Scope,
-    Description: EntityDescription = null,
-    Tags: TagList = null
-  ): CreateIPSetRequest = {
+  def apply(Addresses: IPAddresses, IPAddressVersion: IPAddressVersion, Name: EntityName, Scope: Scope): CreateIPSetRequest = {
     val __obj = js.Dynamic.literal(Addresses = Addresses.asInstanceOf[js.Any], IPAddressVersion = IPAddressVersion.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIPSetRequest]
   }
+  @scala.inline
+  implicit class CreateIPSetRequestOps[Self <: CreateIPSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressesVarargs(value: IPAddress*): Self = this.set("Addresses", js.Array(value :_*))
+    @scala.inline
+    def setAddresses(value: IPAddresses): Self = this.set("Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIPAddressVersion(value: IPAddressVersion): Self = this.set("IPAddressVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: EntityDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

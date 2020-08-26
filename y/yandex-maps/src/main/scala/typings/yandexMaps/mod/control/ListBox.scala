@@ -2,8 +2,6 @@ package typings.yandexMaps.mod.control
 
 import typings.yandexMaps.mod.ICollection
 import typings.yandexMaps.mod.IControlParent
-import typings.yandexMaps.mod.IEventManager
-import typings.yandexMaps.mod.IIterator
 import typings.yandexMaps.mod.IOptionManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,17 +15,9 @@ import scala.scalajs.js.annotation._
 class ListBox () extends ICollection {
   def this(parameters: IListBoxParameters) = this()
   var data: typings.yandexMaps.mod.data.Manager = js.native
-  /* CompleteClass */
-  override var events: IEventManager = js.native
   var options: IOptionManager = js.native
   var state: typings.yandexMaps.mod.data.Manager = js.native
-  /* CompleteClass */
-  override def add(`object`: js.Object): this.type = js.native
-  /* CompleteClass */
-  override def getIterator(): IIterator = js.native
   def getParent(): Null | IControlParent = js.native
-  /* CompleteClass */
-  override def remove(`object`: js.Object): this.type = js.native
   def setParent(): this.type = js.native
   def setParent(parent: js.Object): this.type = js.native
   def setParent(parent: IControlParent): this.type = js.native

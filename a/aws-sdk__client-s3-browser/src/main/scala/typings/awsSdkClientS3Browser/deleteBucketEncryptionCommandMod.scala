@@ -27,17 +27,10 @@ object deleteBucketEncryptionCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteBucketEncryptionInput) = this()
-    /* CompleteClass */
-    override val input: DeleteBucketEncryptionInput = js.native
     val middlewareStack: MiddlewareStack[DeleteBucketEncryptionInput, DeleteBucketEncryptionOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[DeleteBucketEncryptionInput, DeleteBucketEncryptionOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[DeleteBucketEncryptionInput, DeleteBucketEncryptionOutput] = js.native
   }

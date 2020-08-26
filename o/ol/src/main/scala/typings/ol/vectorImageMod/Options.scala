@@ -3,74 +3,128 @@ package typings.ol.vectorImageMod
 import typings.ol.extentMod.Extent
 import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.renderMod.OrderFunction
+import typings.ol.styleStyleMod.Style
 import typings.ol.styleStyleMod.StyleLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var declutter: js.UndefOr[Boolean] = js.undefined
-  var extent: js.UndefOr[Extent] = js.undefined
-  var imageRatio: js.UndefOr[Double] = js.undefined
-  var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.undefined
-  var maxResolution: js.UndefOr[Double] = js.undefined
-  var maxZoom: js.UndefOr[Double] = js.undefined
-  var minResolution: js.UndefOr[Double] = js.undefined
-  var minZoom: js.UndefOr[Double] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var renderBuffer: js.UndefOr[Double] = js.undefined
-  var renderOrder: js.UndefOr[OrderFunction] = js.undefined
-  var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.undefined
-  var style: js.UndefOr[StyleLike] = js.undefined
-  var updateWhileAnimating: js.UndefOr[Boolean] = js.undefined
-  var updateWhileInteracting: js.UndefOr[Boolean] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var declutter: js.UndefOr[Boolean] = js.native
+  var extent: js.UndefOr[Extent] = js.native
+  var imageRatio: js.UndefOr[Double] = js.native
+  var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.native
+  var maxResolution: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.native
+  var minResolution: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var renderBuffer: js.UndefOr[Double] = js.native
+  var renderOrder: js.UndefOr[OrderFunction] = js.native
+  var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.native
+  var style: js.UndefOr[StyleLike] = js.native
+  var updateWhileAnimating: js.UndefOr[Boolean] = js.native
+  var updateWhileInteracting: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    className: String = null,
-    declutter: js.UndefOr[Boolean] = js.undefined,
-    extent: Extent = null,
-    imageRatio: js.UndefOr[Double] = js.undefined,
-    map: typings.ol.pluggableMapMod.default = null,
-    maxResolution: js.UndefOr[Double] = js.undefined,
-    maxZoom: js.UndefOr[Double] = js.undefined,
-    minResolution: js.UndefOr[Double] = js.undefined,
-    minZoom: js.UndefOr[Double] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    renderBuffer: js.UndefOr[Double] = js.undefined,
-    renderOrder: (/* p0 */ FeatureLike, /* p1 */ FeatureLike) => Double = null,
-    source: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] = null,
-    style: StyleLike = null,
-    updateWhileAnimating: js.UndefOr[Boolean] = js.undefined,
-    updateWhileInteracting: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(declutter)) __obj.updateDynamic("declutter")(declutter.get.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageRatio)) __obj.updateDynamic("imageRatio")(imageRatio.get.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResolution)) __obj.updateDynamic("maxResolution")(maxResolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minResolution)) __obj.updateDynamic("minResolution")(minResolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderBuffer)) __obj.updateDynamic("renderBuffer")(renderBuffer.get.asInstanceOf[js.Any])
-    if (renderOrder != null) __obj.updateDynamic("renderOrder")(js.Any.fromFunction2(renderOrder))
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateWhileAnimating)) __obj.updateDynamic("updateWhileAnimating")(updateWhileAnimating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateWhileInteracting)) __obj.updateDynamic("updateWhileInteracting")(updateWhileInteracting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDeclutter(value: Boolean): Self = this.set("declutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeclutter: Self = this.set("declutter", js.undefined)
+    @scala.inline
+    def setExtent(value: Extent): Self = this.set("extent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtent: Self = this.set("extent", js.undefined)
+    @scala.inline
+    def setImageRatio(value: Double): Self = this.set("imageRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageRatio: Self = this.set("imageRatio", js.undefined)
+    @scala.inline
+    def setMap(value: typings.ol.pluggableMapMod.default): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setMaxResolution(value: Double): Self = this.set("maxResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResolution: Self = this.set("maxResolution", js.undefined)
+    @scala.inline
+    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    @scala.inline
+    def setMinResolution(value: Double): Self = this.set("minResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinResolution: Self = this.set("minResolution", js.undefined)
+    @scala.inline
+    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setRenderBuffer(value: Double): Self = this.set("renderBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderBuffer: Self = this.set("renderBuffer", js.undefined)
+    @scala.inline
+    def setRenderOrder(value: (/* p0 */ FeatureLike, /* p1 */ FeatureLike) => Double): Self = this.set("renderOrder", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRenderOrder: Self = this.set("renderOrder", js.undefined)
+    @scala.inline
+    def setSource(value: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setStyleFunction2(value: (/* p0 */ FeatureLike, /* p1 */ Double) => Style | js.Array[Style] | Unit): Self = this.set("style", js.Any.fromFunction2(value))
+    @scala.inline
+    def setStyleVarargs(value: Style*): Self = this.set("style", js.Array(value :_*))
+    @scala.inline
+    def setStyle(value: StyleLike): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setUpdateWhileAnimating(value: Boolean): Self = this.set("updateWhileAnimating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateWhileAnimating: Self = this.set("updateWhileAnimating", js.undefined)
+    @scala.inline
+    def setUpdateWhileInteracting(value: Boolean): Self = this.set("updateWhileInteracting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateWhileInteracting: Self = this.set("updateWhileInteracting", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

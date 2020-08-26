@@ -12,7 +12,7 @@ Throttle promise-returning & async functions
 | Keywords           | promise, throttle, throat, limit, limited, interval, rate, batch, ratelimit, queue, discard, async, await, promises, time, out, cancel, bluebird |
 | # releases         | 6 |
 | # dependents       | 33 |
-| # downloads        | 245611 |
+| # downloads        | 278737 |
 | # stars            | 2 |
 
 ## Links

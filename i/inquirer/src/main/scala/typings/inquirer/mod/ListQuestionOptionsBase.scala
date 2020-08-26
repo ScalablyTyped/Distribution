@@ -13,45 +13,50 @@ import scala.scalajs.js.annotation._
   * @template TChoiceMap
   * The valid choices for the question.
   */
+@js.native
 trait ListQuestionOptionsBase[T, TChoiceMap] extends Question[T] {
   /**
     * The choices of the prompt.
     */
-  var choices: js.UndefOr[AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]] = js.undefined
+  var choices: js.UndefOr[AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]] = js.native
   /**
     * The number of elements to show on each page.
     */
-  var pageSize: js.UndefOr[Double] = js.undefined
+  var pageSize: js.UndefOr[Double] = js.native
 }
 
 object ListQuestionOptionsBase {
   @scala.inline
-  def apply[T, TChoiceMap](
-    choices: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T] = null,
-    default: AsyncDynamicQuestionProperty[_, T] = null,
-    filter: /* input */ js.Any => _ = null,
-    message: AsyncDynamicQuestionProperty[String, T] = null,
-    name: KeyUnion[T] = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    prefix: String = null,
-    suffix: String = null,
-    `type`: String = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String]) = null,
-    when: AsyncDynamicQuestionProperty[Boolean, T] = null
-  ): ListQuestionOptionsBase[T, TChoiceMap] = {
+  def apply[T, TChoiceMap](): ListQuestionOptionsBase[T, TChoiceMap] = {
     val __obj = js.Dynamic.literal()
-    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQuestionOptionsBase[T, TChoiceMap]]
   }
+  @scala.inline
+  implicit class ListQuestionOptionsBaseOps[Self <: ListQuestionOptionsBase[_, _], T, TChoiceMap] (val x: Self with (ListQuestionOptionsBase[T, TChoiceMap])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChoicesVarargs(value: DistinctChoice[TChoiceMap]*): Self = this.set("choices", js.Array(value :_*))
+    @scala.inline
+    def setChoicesFunction1(
+      value: T => js.Array[DistinctChoice[TChoiceMap]] | js.Promise[js.Array[DistinctChoice[TChoiceMap]]]
+    ): Self = this.set("choices", js.Any.fromFunction1(value))
+    @scala.inline
+    def setChoices(value: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[TChoiceMap]], T]): Self = this.set("choices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChoices: Self = this.set("choices", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+  }
+  
 }
 

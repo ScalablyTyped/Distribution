@@ -34,22 +34,46 @@ trait OutputDescription extends js.Object {
 
 object OutputDescription {
   @scala.inline
-  def apply(
-    DestinationSchema: DestinationSchema = null,
-    KinesisFirehoseOutputDescription: KinesisFirehoseOutputDescription = null,
-    KinesisStreamsOutputDescription: KinesisStreamsOutputDescription = null,
-    LambdaOutputDescription: LambdaOutputDescription = null,
-    Name: InAppStreamName = null,
-    OutputId: Id = null
-  ): OutputDescription = {
+  def apply(): OutputDescription = {
     val __obj = js.Dynamic.literal()
-    if (DestinationSchema != null) __obj.updateDynamic("DestinationSchema")(DestinationSchema.asInstanceOf[js.Any])
-    if (KinesisFirehoseOutputDescription != null) __obj.updateDynamic("KinesisFirehoseOutputDescription")(KinesisFirehoseOutputDescription.asInstanceOf[js.Any])
-    if (KinesisStreamsOutputDescription != null) __obj.updateDynamic("KinesisStreamsOutputDescription")(KinesisStreamsOutputDescription.asInstanceOf[js.Any])
-    if (LambdaOutputDescription != null) __obj.updateDynamic("LambdaOutputDescription")(LambdaOutputDescription.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OutputId != null) __obj.updateDynamic("OutputId")(OutputId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputDescription]
   }
+  @scala.inline
+  implicit class OutputDescriptionOps[Self <: OutputDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationSchema(value: DestinationSchema): Self = this.set("DestinationSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationSchema: Self = this.set("DestinationSchema", js.undefined)
+    @scala.inline
+    def setKinesisFirehoseOutputDescription(value: KinesisFirehoseOutputDescription): Self = this.set("KinesisFirehoseOutputDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisFirehoseOutputDescription: Self = this.set("KinesisFirehoseOutputDescription", js.undefined)
+    @scala.inline
+    def setKinesisStreamsOutputDescription(value: KinesisStreamsOutputDescription): Self = this.set("KinesisStreamsOutputDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisStreamsOutputDescription: Self = this.set("KinesisStreamsOutputDescription", js.undefined)
+    @scala.inline
+    def setLambdaOutputDescription(value: LambdaOutputDescription): Self = this.set("LambdaOutputDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaOutputDescription: Self = this.set("LambdaOutputDescription", js.undefined)
+    @scala.inline
+    def setName(value: InAppStreamName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOutputId(value: Id): Self = this.set("OutputId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputId: Self = this.set("OutputId", js.undefined)
+  }
+  
 }
 

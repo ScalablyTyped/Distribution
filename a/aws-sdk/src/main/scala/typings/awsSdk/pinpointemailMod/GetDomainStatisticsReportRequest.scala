@@ -26,5 +26,24 @@ object GetDomainStatisticsReportRequest {
     val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any], EndDate = EndDate.asInstanceOf[js.Any], StartDate = StartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainStatisticsReportRequest]
   }
+  @scala.inline
+  implicit class GetDomainStatisticsReportRequestOps[Self <: GetDomainStatisticsReportRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomain(value: Identity): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndDate(value: Timestamp): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartDate(value: Timestamp): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+  }
+  
 }
 

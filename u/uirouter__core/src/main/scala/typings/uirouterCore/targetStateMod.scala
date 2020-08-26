@@ -28,10 +28,16 @@ object targetStateMod extends js.Object {
       * @param _params Parameters for the target state
       * @param _options Transition options.
       *
-      * @internalapi
+      * @internal
       */
     def this(_stateRegistry: StateRegistry, _identifier: StateOrName) = this()
     def this(_stateRegistry: StateRegistry, _identifier: StateOrName, _params: RawParams) = this()
+    def this(
+      _stateRegistry: StateRegistry,
+      _identifier: StateOrName,
+      _params: js.UndefOr[scala.Nothing],
+      _options: TransitionOptions
+    ) = this()
     def this(
       _stateRegistry: StateRegistry,
       _identifier: StateOrName,

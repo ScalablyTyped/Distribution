@@ -12,7 +12,7 @@ Password input for ReactJS that mimics mobile password masking behavior. Delays 
 | Keywords           | react, react-component, password, mask, mobile, timeout, last, character |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 296 |
+| # downloads        | 302 |
 | # stars            | 0 |
 
 ## Links

@@ -30,6 +30,12 @@ object Object extends js.Object {
     * @return {fabric.Object}
     */
   def _fromObject(className: String, `object`: typings.fabric.fabricImplMod.Object): typings.fabric.fabricImplMod.Object = js.native
+  def _fromObject(
+    className: String,
+    `object`: typings.fabric.fabricImplMod.Object,
+    callback: js.UndefOr[scala.Nothing],
+    extraParam: js.Any
+  ): typings.fabric.fabricImplMod.Object = js.native
   def _fromObject(className: String, `object`: typings.fabric.fabricImplMod.Object, callback: js.Function): typings.fabric.fabricImplMod.Object = js.native
   def _fromObject(
     className: String,

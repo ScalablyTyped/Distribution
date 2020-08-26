@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait withI18nOptions extends js.Object {
-  var update: js.UndefOr[Boolean] = js.undefined
-  var withHash: js.UndefOr[Boolean] = js.undefined
-  var withRef: js.UndefOr[Boolean] = js.undefined
+  var update: js.UndefOr[Boolean] = js.native
+  var withHash: js.UndefOr[Boolean] = js.native
+  var withRef: js.UndefOr[Boolean] = js.native
 }
 
 object withI18nOptions {
   @scala.inline
-  def apply(
-    update: js.UndefOr[Boolean] = js.undefined,
-    withHash: js.UndefOr[Boolean] = js.undefined,
-    withRef: js.UndefOr[Boolean] = js.undefined
-  ): withI18nOptions = {
+  def apply(): withI18nOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withHash)) __obj.updateDynamic("withHash")(withHash.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[withI18nOptions]
   }
+  @scala.inline
+  implicit class withI18nOptionsOps[Self <: withI18nOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+    @scala.inline
+    def setWithHash(value: Boolean): Self = this.set("withHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithHash: Self = this.set("withHash", js.undefined)
+    @scala.inline
+    def setWithRef(value: Boolean): Self = this.set("withRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithRef: Self = this.set("withRef", js.undefined)
+  }
+  
 }
 

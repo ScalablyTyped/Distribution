@@ -4,17 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CascadeSaveOption extends js.Object {
   /** If `false`, nested objects will not be saved (default is `true`). */
-  var cascadeSave: js.UndefOr[Boolean] = js.undefined
+  var cascadeSave: js.UndefOr[Boolean] = js.native
 }
 
 object CascadeSaveOption {
   @scala.inline
-  def apply(cascadeSave: js.UndefOr[Boolean] = js.undefined): CascadeSaveOption = {
+  def apply(): CascadeSaveOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cascadeSave)) __obj.updateDynamic("cascadeSave")(cascadeSave.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CascadeSaveOption]
   }
+  @scala.inline
+  implicit class CascadeSaveOptionOps[Self <: CascadeSaveOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCascadeSave(value: Boolean): Self = this.set("cascadeSave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCascadeSave: Self = this.set("cascadeSave", js.undefined)
+  }
+  
 }
 

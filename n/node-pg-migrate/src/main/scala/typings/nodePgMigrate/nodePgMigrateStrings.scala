@@ -85,6 +85,9 @@ object nodePgMigrateStrings {
   sealed trait `NO FORCE` extends js.Object
   
   @js.native
+  sealed trait Nullable extends js.Object
+  
+  @js.native
   sealed trait OUT extends js.Object
   
   @js.native
@@ -356,6 +359,8 @@ object nodePgMigrateStrings {
   def `NO ACTION`: `NO ACTION` = ("NO ACTION").asInstanceOf[`NO ACTION`]
   @scala.inline
   def `NO FORCE`: `NO FORCE` = ("NO FORCE").asInstanceOf[`NO FORCE`]
+  @scala.inline
+  def Nullable: Nullable = "Nullable".asInstanceOf[Nullable]
   @scala.inline
   def OUT: OUT = "OUT".asInstanceOf[OUT]
   @scala.inline

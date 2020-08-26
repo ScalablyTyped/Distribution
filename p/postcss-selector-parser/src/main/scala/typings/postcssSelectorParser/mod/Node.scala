@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation._
 
 /* Inlined postcss-selector-parser.postcss-selector-parser.NodeTypes[keyof postcss-selector-parser.postcss-selector-parser.NodeTypes] */
 /* Rewritten from type alias, can be one of: 
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.smartQuoteMark
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.spaces
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.error
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.quoted
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.raws
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.insensitive
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.attribute
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.operator
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.quoteMark
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.insensitiveFlag
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.getQuotedValue
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.setValue
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.qualifiedAttribute
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.nodeAt
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.preferredQuoteMark
   - typings.postcssSelectorParser.postcssSelectorParserStrings.offsetOf
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.operator
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.attribute
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.insensitiveFlag
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.insensitive
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.preferredQuoteMark
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.quoteMark
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.setValue
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.smartQuoteMark
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.nodeAt
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.spaces
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.getQuotedValue
   - typings.postcssSelectorParser.postcssSelectorParserStrings.`type`
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.raws
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.error
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.qualifiedAttribute
+  - typings.postcssSelectorParser.postcssSelectorParserStrings.quoted
 */
 trait Node extends js.Object
 

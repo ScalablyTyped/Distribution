@@ -18,11 +18,32 @@ trait GetRelationalDatabaseEventsResult extends js.Object {
 
 object GetRelationalDatabaseEventsResult {
   @scala.inline
-  def apply(nextPageToken: String = null, relationalDatabaseEvents: RelationalDatabaseEventList = null): GetRelationalDatabaseEventsResult = {
+  def apply(): GetRelationalDatabaseEventsResult = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (relationalDatabaseEvents != null) __obj.updateDynamic("relationalDatabaseEvents")(relationalDatabaseEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseEventsResult]
   }
+  @scala.inline
+  implicit class GetRelationalDatabaseEventsResultOps[Self <: GetRelationalDatabaseEventsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setRelationalDatabaseEventsVarargs(value: RelationalDatabaseEvent*): Self = this.set("relationalDatabaseEvents", js.Array(value :_*))
+    @scala.inline
+    def setRelationalDatabaseEvents(value: RelationalDatabaseEventList): Self = this.set("relationalDatabaseEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationalDatabaseEvents: Self = this.set("relationalDatabaseEvents", js.undefined)
+  }
+  
 }
 

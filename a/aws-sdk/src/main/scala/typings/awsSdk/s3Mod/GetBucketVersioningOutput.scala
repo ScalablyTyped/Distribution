@@ -18,11 +18,30 @@ trait GetBucketVersioningOutput extends js.Object {
 
 object GetBucketVersioningOutput {
   @scala.inline
-  def apply(MFADelete: MFADeleteStatus = null, Status: BucketVersioningStatus = null): GetBucketVersioningOutput = {
+  def apply(): GetBucketVersioningOutput = {
     val __obj = js.Dynamic.literal()
-    if (MFADelete != null) __obj.updateDynamic("MFADelete")(MFADelete.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketVersioningOutput]
   }
+  @scala.inline
+  implicit class GetBucketVersioningOutputOps[Self <: GetBucketVersioningOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMFADelete(value: MFADeleteStatus): Self = this.set("MFADelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMFADelete: Self = this.set("MFADelete", js.undefined)
+    @scala.inline
+    def setStatus(value: BucketVersioningStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

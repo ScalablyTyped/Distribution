@@ -24,25 +24,5 @@ class ASPxClientTreeViewNodeClickEventArgs protected ()
     htmlElement: js.Any,
     htmlEvent: js.Any
   ) = this()
-  /**
-    * Gets the HTML object that contains the processed node.
-    */
-  /* CompleteClass */
-  override var htmlElement: js.Any = js.native
-  /**
-    * Gets a DHTML event object that relates to the processed event.
-    */
-  /* CompleteClass */
-  override var htmlEvent: js.Any = js.native
-  /**
-    * Gets a node object related to the event.
-    */
-  /* CompleteClass */
-  override var node: typings.devexpressWeb.ASPxClientTreeViewNode = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

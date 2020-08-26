@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Expression () extends js.Object {
   def this(`type`: Type) = this()
+  def this(`type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(`type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(`type`: Type, sourceSpan: ParseSourceSpan) = this()
   var sourceSpan: ParseSourceSpan | Null = js.native
@@ -20,6 +21,7 @@ abstract class Expression () extends js.Object {
   def biggerEquals(rhs: Expression): BinaryOperatorExpr = js.native
   def biggerEquals(rhs: Expression, sourceSpan: ParseSourceSpan): BinaryOperatorExpr = js.native
   def bitwiseAnd(rhs: Expression): BinaryOperatorExpr = js.native
+  def bitwiseAnd(rhs: Expression, sourceSpan: js.UndefOr[scala.Nothing], parens: Boolean): BinaryOperatorExpr = js.native
   def bitwiseAnd(rhs: Expression, sourceSpan: Null, parens: Boolean): BinaryOperatorExpr = js.native
   def bitwiseAnd(rhs: Expression, sourceSpan: ParseSourceSpan): BinaryOperatorExpr = js.native
   def bitwiseAnd(rhs: Expression, sourceSpan: ParseSourceSpan, parens: Boolean): BinaryOperatorExpr = js.native
@@ -32,6 +34,7 @@ abstract class Expression () extends js.Object {
   def cast(`type`: Type): Expression = js.native
   def cast(`type`: Type, sourceSpan: ParseSourceSpan): Expression = js.native
   def conditional(trueCase: Expression): ConditionalExpr = js.native
+  def conditional(trueCase: Expression, falseCase: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan): ConditionalExpr = js.native
   def conditional(trueCase: Expression, falseCase: Null, sourceSpan: ParseSourceSpan): ConditionalExpr = js.native
   def conditional(trueCase: Expression, falseCase: Expression): ConditionalExpr = js.native
   def conditional(trueCase: Expression, falseCase: Expression, sourceSpan: ParseSourceSpan): ConditionalExpr = js.native
@@ -42,6 +45,7 @@ abstract class Expression () extends js.Object {
   def identical(rhs: Expression): BinaryOperatorExpr = js.native
   def identical(rhs: Expression, sourceSpan: ParseSourceSpan): BinaryOperatorExpr = js.native
   def instantiate(params: js.Array[Expression]): InstantiateExpr = js.native
+  def instantiate(params: js.Array[Expression], `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan): InstantiateExpr = js.native
   def instantiate(params: js.Array[Expression], `type`: Null, sourceSpan: ParseSourceSpan): InstantiateExpr = js.native
   def instantiate(params: js.Array[Expression], `type`: Type): InstantiateExpr = js.native
   def instantiate(params: js.Array[Expression], `type`: Type, sourceSpan: ParseSourceSpan): InstantiateExpr = js.native
@@ -57,6 +61,7 @@ abstract class Expression () extends js.Object {
     */
   def isEquivalent(e: Expression): Boolean = js.native
   def key(index: Expression): ReadKeyExpr = js.native
+  def key(index: Expression, `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan): ReadKeyExpr = js.native
   def key(index: Expression, `type`: Null, sourceSpan: ParseSourceSpan): ReadKeyExpr = js.native
   def key(index: Expression, `type`: Type): ReadKeyExpr = js.native
   def key(index: Expression, `type`: Type, sourceSpan: ParseSourceSpan): ReadKeyExpr = js.native

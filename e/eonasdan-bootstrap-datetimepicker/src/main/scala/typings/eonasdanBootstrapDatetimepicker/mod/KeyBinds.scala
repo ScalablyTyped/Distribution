@@ -5,54 +5,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyBinds extends js.Object {
-  var `control down`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.undefined
-  var `control space`: js.UndefOr[js.Function1[/* widget */ JQuery, _]] = js.undefined
-  var `control up`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.undefined
-  var delete: js.UndefOr[js.Function0[_]] = js.undefined
-  var down: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.undefined
-  var enter: js.UndefOr[js.Function0[_]] = js.undefined
-  var escape: js.UndefOr[js.Function0[_]] = js.undefined
-  var left: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.undefined
-  var pageDown: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.undefined
-  var pageUp: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.undefined
-  var right: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.undefined
-  var t: js.UndefOr[js.Function0[_]] = js.undefined
-  var up: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.undefined
+  var `control down`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+  var `control space`: js.UndefOr[js.Function1[/* widget */ JQuery, _]] = js.native
+  var `control up`: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+  var delete: js.UndefOr[js.Function0[_]] = js.native
+  var down: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+  var enter: js.UndefOr[js.Function0[_]] = js.native
+  var escape: js.UndefOr[js.Function0[_]] = js.native
+  var left: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+  var pageDown: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+  var pageUp: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+  var right: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
+  var t: js.UndefOr[js.Function0[_]] = js.native
+  var up: js.UndefOr[js.Function1[/* widget */ JQuery | Boolean, _]] = js.native
 }
 
 object KeyBinds {
   @scala.inline
-  def apply(
-    `control down`: /* widget */ JQuery | Boolean => _ = null,
-    `control space`: /* widget */ JQuery => _ = null,
-    `control up`: /* widget */ JQuery | Boolean => _ = null,
-    delete: () => _ = null,
-    down: /* widget */ JQuery | Boolean => _ = null,
-    enter: () => _ = null,
-    escape: () => _ = null,
-    left: /* widget */ JQuery | Boolean => _ = null,
-    pageDown: /* widget */ JQuery | Boolean => _ = null,
-    pageUp: /* widget */ JQuery | Boolean => _ = null,
-    right: /* widget */ JQuery | Boolean => _ = null,
-    t: () => _ = null,
-    up: /* widget */ JQuery | Boolean => _ = null
-  ): KeyBinds = {
+  def apply(): KeyBinds = {
     val __obj = js.Dynamic.literal()
-    if (`control down` != null) __obj.updateDynamic("control down")(js.Any.fromFunction1(`control down`))
-    if (`control space` != null) __obj.updateDynamic("control space")(js.Any.fromFunction1(`control space`))
-    if (`control up` != null) __obj.updateDynamic("control up")(js.Any.fromFunction1(`control up`))
-    if (delete != null) __obj.updateDynamic("delete")(js.Any.fromFunction0(delete))
-    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
-    if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction0(enter))
-    if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction0(escape))
-    if (left != null) __obj.updateDynamic("left")(js.Any.fromFunction1(left))
-    if (pageDown != null) __obj.updateDynamic("pageDown")(js.Any.fromFunction1(pageDown))
-    if (pageUp != null) __obj.updateDynamic("pageUp")(js.Any.fromFunction1(pageUp))
-    if (right != null) __obj.updateDynamic("right")(js.Any.fromFunction1(right))
-    if (t != null) __obj.updateDynamic("t")(js.Any.fromFunction0(t))
-    if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction1(up))
     __obj.asInstanceOf[KeyBinds]
   }
+  @scala.inline
+  implicit class KeyBindsOps[Self <: KeyBinds] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setControl down`(value: /* widget */ JQuery | Boolean => _): Self = this.set("control down", js.Any.fromFunction1(value))
+    @scala.inline
+    def `deleteControl down`: Self = this.set("control down", js.undefined)
+    @scala.inline
+    def `setControl space`(value: /* widget */ JQuery => _): Self = this.set("control space", js.Any.fromFunction1(value))
+    @scala.inline
+    def `deleteControl space`: Self = this.set("control space", js.undefined)
+    @scala.inline
+    def `setControl up`(value: /* widget */ JQuery | Boolean => _): Self = this.set("control up", js.Any.fromFunction1(value))
+    @scala.inline
+    def `deleteControl up`: Self = this.set("control up", js.undefined)
+    @scala.inline
+    def setDelete(value: () => _): Self = this.set("delete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDelete: Self = this.set("delete", js.undefined)
+    @scala.inline
+    def setDown(value: /* widget */ JQuery | Boolean => _): Self = this.set("down", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDown: Self = this.set("down", js.undefined)
+    @scala.inline
+    def setEnter(value: () => _): Self = this.set("enter", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteEnter: Self = this.set("enter", js.undefined)
+    @scala.inline
+    def setEscape(value: () => _): Self = this.set("escape", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteEscape: Self = this.set("escape", js.undefined)
+    @scala.inline
+    def setLeft(value: /* widget */ JQuery | Boolean => _): Self = this.set("left", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setPageDown(value: /* widget */ JQuery | Boolean => _): Self = this.set("pageDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePageDown: Self = this.set("pageDown", js.undefined)
+    @scala.inline
+    def setPageUp(value: /* widget */ JQuery | Boolean => _): Self = this.set("pageUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePageUp: Self = this.set("pageUp", js.undefined)
+    @scala.inline
+    def setRight(value: /* widget */ JQuery | Boolean => _): Self = this.set("right", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setT(value: () => _): Self = this.set("t", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteT: Self = this.set("t", js.undefined)
+    @scala.inline
+    def setUp(value: /* widget */ JQuery | Boolean => _): Self = this.set("up", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUp: Self = this.set("up", js.undefined)
+  }
+  
 }
 

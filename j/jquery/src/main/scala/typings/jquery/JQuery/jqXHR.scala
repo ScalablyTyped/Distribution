@@ -33,7 +33,7 @@ trait jqXHR[TResolve] extends js.Object {
   var readyState: Double = js.native
   var responseJSON: js.UndefOr[js.Any] = js.native
   var responseText: String = js.native
-  var responseXML: js.UndefOr[Document] = js.native
+  var responseXML: js.UndefOr[Document | Null] = js.native
   @JSName("setRequestHeader")
   var setRequestHeader_Original: js.Function2[/* name */ String, /* value */ String, Unit] = js.native
   var status: Double = js.native

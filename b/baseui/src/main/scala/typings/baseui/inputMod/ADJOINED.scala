@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ADJOINED extends js.Object {
-  var both: typings.baseui.baseuiStrings.both
-  var left: typings.baseui.baseuiStrings.left
-  var none: typings.baseui.baseuiStrings.none
-  var right: typings.baseui.baseuiStrings.right
+  var both: typings.baseui.baseuiStrings.both = js.native
+  var left: typings.baseui.baseuiStrings.left = js.native
+  var none: typings.baseui.baseuiStrings.none = js.native
+  var right: typings.baseui.baseuiStrings.right = js.native
 }
 
 @JSImport("baseui/input", "ADJOINED")

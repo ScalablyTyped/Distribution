@@ -19,6 +19,7 @@ trait TempStatic extends js.Object {
   def open(affixes: String): js.Promise[OpenFile] = js.native
   def open(affixes: AffixOptions): js.Promise[OpenFile] = js.native
   def path(): String = js.native
+  def path(affixes: js.UndefOr[scala.Nothing], defaultPrefix: String): String = js.native
   def path(affixes: String): String = js.native
   def path(affixes: String, defaultPrefix: String): String = js.native
   def path(affixes: AffixOptions): String = js.native

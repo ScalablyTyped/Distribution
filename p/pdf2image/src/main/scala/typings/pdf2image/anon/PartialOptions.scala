@@ -11,42 +11,77 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<pdf2image.pdf2image.Options> */
+@js.native
 trait PartialOptions extends js.Object {
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var density: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var outputFormat: js.UndefOr[OutputFormat] = js.undefined
-  var outputType: js.UndefOr[jpg | png | Dotjpg | Dotpng] = js.undefined
-  var pages: js.UndefOr[Asterisk | String] = js.undefined
-  var quality: js.UndefOr[Double] = js.undefined
-  var singleProcess: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
+  var density: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var outputFormat: js.UndefOr[OutputFormat] = js.native
+  var outputType: js.UndefOr[jpg | png | Dotjpg | Dotpng] = js.native
+  var pages: js.UndefOr[Asterisk | String] = js.native
+  var quality: js.UndefOr[Double] = js.native
+  var singleProcess: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object PartialOptions {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    density: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    outputFormat: OutputFormat = null,
-    outputType: jpg | png | Dotjpg | Dotpng = null,
-    pages: Asterisk | String = null,
-    quality: js.UndefOr[Double] = js.undefined,
-    singleProcess: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): PartialOptions = {
+  def apply(): PartialOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(density)) __obj.updateDynamic("density")(density.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
-    if (outputType != null) __obj.updateDynamic("outputType")(outputType.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
-    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleProcess)) __obj.updateDynamic("singleProcess")(singleProcess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialOptions]
   }
+  @scala.inline
+  implicit class PartialOptionsOps[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setDensity(value: Double): Self = this.set("density", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDensity: Self = this.set("density", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOutputFormatFunction7(
+      value: (/* pageNum */ Double, /* pageIndex */ Double, /* totalPagesProcessed */ Double, /* totalPDFPages */ Double, /* name */ String, /* path */ String, /* vm */ TypeofimportedVm) => String
+    ): Self = this.set("outputFormat", js.Any.fromFunction7(value))
+    @scala.inline
+    def setOutputFormat(value: OutputFormat): Self = this.set("outputFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFormat: Self = this.set("outputFormat", js.undefined)
+    @scala.inline
+    def setOutputType(value: jpg | png | Dotjpg | Dotpng): Self = this.set("outputType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputType: Self = this.set("outputType", js.undefined)
+    @scala.inline
+    def setPages(value: Asterisk | String): Self = this.set("pages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePages: Self = this.set("pages", js.undefined)
+    @scala.inline
+    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("quality", js.undefined)
+    @scala.inline
+    def setSingleProcess(value: Boolean): Self = this.set("singleProcess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleProcess: Self = this.set("singleProcess", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

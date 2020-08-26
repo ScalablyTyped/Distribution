@@ -15,8 +15,5 @@ class MediaProtectionPMPServer protected ()
     * @param pProperties The set of properties used to initialize the server.
     */
   def this(pProperties: IPropertySet) = this()
-  /** Gets the property set for the MediaProtectionPMPServer . */
-  /* CompleteClass */
-  override var properties: IPropertySet = js.native
 }
 

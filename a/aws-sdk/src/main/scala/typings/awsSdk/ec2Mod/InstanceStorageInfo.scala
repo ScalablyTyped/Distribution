@@ -18,11 +18,32 @@ trait InstanceStorageInfo extends js.Object {
 
 object InstanceStorageInfo {
   @scala.inline
-  def apply(Disks: DiskInfoList = null, TotalSizeInGB: js.UndefOr[DiskSize] = js.undefined): InstanceStorageInfo = {
+  def apply(): InstanceStorageInfo = {
     val __obj = js.Dynamic.literal()
-    if (Disks != null) __obj.updateDynamic("Disks")(Disks.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalSizeInGB)) __obj.updateDynamic("TotalSizeInGB")(TotalSizeInGB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceStorageInfo]
   }
+  @scala.inline
+  implicit class InstanceStorageInfoOps[Self <: InstanceStorageInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisksVarargs(value: DiskInfo*): Self = this.set("Disks", js.Array(value :_*))
+    @scala.inline
+    def setDisks(value: DiskInfoList): Self = this.set("Disks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisks: Self = this.set("Disks", js.undefined)
+    @scala.inline
+    def setTotalSizeInGB(value: DiskSize): Self = this.set("TotalSizeInGB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSizeInGB: Self = this.set("TotalSizeInGB", js.undefined)
+  }
+  
 }
 

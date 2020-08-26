@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class OnRowEscape protected ()
   extends typings.sharepoint.SP.JsGrid.EventArgs.OnRowEscape {
   def this(recordKey: Double) = this()
-  /* CompleteClass */
-  override var recordKey: Double = js.native
 }
 

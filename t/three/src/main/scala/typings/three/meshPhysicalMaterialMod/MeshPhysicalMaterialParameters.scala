@@ -1,193 +1,89 @@
 package typings.three.meshPhysicalMaterialMod
 
 import typings.three.colorMod.Color
-import typings.three.constantsMod.Blending
-import typings.three.constantsMod.BlendingDstFactor
-import typings.three.constantsMod.BlendingEquation
-import typings.three.constantsMod.BlendingSrcFactor
-import typings.three.constantsMod.DepthModes
-import typings.three.constantsMod.NormalMapTypes
-import typings.three.constantsMod.Side
-import typings.three.constantsMod.StencilFunc
-import typings.three.constantsMod.StencilOp
 import typings.three.meshStandardMaterialMod.MeshStandardMaterialParameters
-import typings.three.planeMod.Plane
 import typings.three.textureMod.Texture
-import typings.three.threeStrings.highp
-import typings.three.threeStrings.lowp
-import typings.three.threeStrings.mediump
 import typings.three.vector2Mod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MeshPhysicalMaterialParameters extends MeshStandardMaterialParameters {
-  var clearcoat: js.UndefOr[Double] = js.undefined
-  var clearcoatNormalMap: js.UndefOr[Texture | Null] = js.undefined
-  var clearcoatNormalScale: js.UndefOr[Vector2] = js.undefined
-  var clearcoatRoughness: js.UndefOr[Double] = js.undefined
-  var reflectivity: js.UndefOr[Double] = js.undefined
-  var sheen: js.UndefOr[Color] = js.undefined
+  var clearcoat: js.UndefOr[Double] = js.native
+  var clearcoatMap: Texture | Null = js.native
+  var clearcoatNormalMap: js.UndefOr[Texture | Null] = js.native
+  var clearcoatNormalScale: js.UndefOr[Vector2] = js.native
+  var clearcoatRoughness: js.UndefOr[Double] = js.native
+  var clearcoatRoughnessMap: Texture | Null = js.native
+  var reflectivity: js.UndefOr[Double] = js.native
+  var sheen: js.UndefOr[Color] = js.native
+  var transmission: js.UndefOr[Double] = js.native
+  var transmissionMap: js.UndefOr[Texture | Null] = js.native
 }
 
 object MeshPhysicalMaterialParameters {
   @scala.inline
-  def apply(
-    alphaMap: js.UndefOr[Null | Texture] = js.undefined,
-    alphaTest: js.UndefOr[Double] = js.undefined,
-    aoMap: js.UndefOr[Null | Texture] = js.undefined,
-    aoMapIntensity: js.UndefOr[Double] = js.undefined,
-    blendDst: BlendingDstFactor = null,
-    blendDstAlpha: js.UndefOr[Double] = js.undefined,
-    blendEquation: BlendingEquation = null,
-    blendEquationAlpha: js.UndefOr[Double] = js.undefined,
-    blendSrc: BlendingSrcFactor | BlendingDstFactor = null,
-    blendSrcAlpha: js.UndefOr[Double] = js.undefined,
-    blending: Blending = null,
-    bumpMap: js.UndefOr[Null | Texture] = js.undefined,
-    bumpScale: js.UndefOr[Double] = js.undefined,
-    clearcoat: js.UndefOr[Double] = js.undefined,
-    clearcoatNormalMap: js.UndefOr[Null | Texture] = js.undefined,
-    clearcoatNormalScale: Vector2 = null,
-    clearcoatRoughness: js.UndefOr[Double] = js.undefined,
-    clipIntersection: js.UndefOr[Boolean] = js.undefined,
-    clipShadows: js.UndefOr[Boolean] = js.undefined,
-    clippingPlanes: js.Array[Plane] = null,
-    color: Color | String | Double = null,
-    colorWrite: js.UndefOr[Boolean] = js.undefined,
-    defines: js.Any = null,
-    depthFunc: DepthModes = null,
-    depthTest: js.UndefOr[Boolean] = js.undefined,
-    depthWrite: js.UndefOr[Boolean] = js.undefined,
-    displacementBias: js.UndefOr[Double] = js.undefined,
-    displacementMap: js.UndefOr[Null | Texture] = js.undefined,
-    displacementScale: js.UndefOr[Double] = js.undefined,
-    dithering: js.UndefOr[Boolean] = js.undefined,
-    emissive: Color | String | Double = null,
-    emissiveIntensity: js.UndefOr[Double] = js.undefined,
-    emissiveMap: js.UndefOr[Null | Texture] = js.undefined,
-    envMap: js.UndefOr[Null | Texture] = js.undefined,
-    envMapIntensity: js.UndefOr[Double] = js.undefined,
-    flatShading: js.UndefOr[Boolean] = js.undefined,
-    fog: js.UndefOr[Boolean] = js.undefined,
-    lightMap: js.UndefOr[Null | Texture] = js.undefined,
-    lightMapIntensity: js.UndefOr[Double] = js.undefined,
-    map: js.UndefOr[Null | Texture] = js.undefined,
-    metalness: js.UndefOr[Double] = js.undefined,
-    metalnessMap: js.UndefOr[Null | Texture] = js.undefined,
-    morphNormals: js.UndefOr[Boolean] = js.undefined,
-    morphTargets: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    normalMap: js.UndefOr[Null | Texture] = js.undefined,
-    normalMapType: NormalMapTypes = null,
-    normalScale: Vector2 = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    polygonOffset: js.UndefOr[Boolean] = js.undefined,
-    polygonOffsetFactor: js.UndefOr[Double] = js.undefined,
-    polygonOffsetUnits: js.UndefOr[Double] = js.undefined,
-    precision: js.UndefOr[Null | highp | mediump | lowp] = js.undefined,
-    premultipliedAlpha: js.UndefOr[Boolean] = js.undefined,
-    reflectivity: js.UndefOr[Double] = js.undefined,
-    refractionRatio: js.UndefOr[Double] = js.undefined,
-    roughness: js.UndefOr[Double] = js.undefined,
-    roughnessMap: js.UndefOr[Null | Texture] = js.undefined,
-    shadowSide: Side = null,
-    sheen: Color = null,
-    side: Side = null,
-    skinning: js.UndefOr[Boolean] = js.undefined,
-    stencilFail: StencilOp = null,
-    stencilFunc: StencilFunc = null,
-    stencilMask: js.UndefOr[Double] = js.undefined,
-    stencilRef: js.UndefOr[Double] = js.undefined,
-    stencilWrite: js.UndefOr[Boolean] = js.undefined,
-    stencilZFail: StencilOp = null,
-    stencilZPass: StencilOp = null,
-    toneMapped: js.UndefOr[Boolean] = js.undefined,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    vertexColors: js.UndefOr[Boolean] = js.undefined,
-    vertexTangents: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    wireframe: js.UndefOr[Boolean] = js.undefined,
-    wireframeLinewidth: js.UndefOr[Double] = js.undefined
-  ): MeshPhysicalMaterialParameters = {
+  def apply(): MeshPhysicalMaterialParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alphaMap)) __obj.updateDynamic("alphaMap")(alphaMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(alphaTest)) __obj.updateDynamic("alphaTest")(alphaTest.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(aoMap)) __obj.updateDynamic("aoMap")(aoMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(aoMapIntensity)) __obj.updateDynamic("aoMapIntensity")(aoMapIntensity.get.asInstanceOf[js.Any])
-    if (blendDst != null) __obj.updateDynamic("blendDst")(blendDst.asInstanceOf[js.Any])
-    if (!js.isUndefined(blendDstAlpha)) __obj.updateDynamic("blendDstAlpha")(blendDstAlpha.get.asInstanceOf[js.Any])
-    if (blendEquation != null) __obj.updateDynamic("blendEquation")(blendEquation.asInstanceOf[js.Any])
-    if (!js.isUndefined(blendEquationAlpha)) __obj.updateDynamic("blendEquationAlpha")(blendEquationAlpha.get.asInstanceOf[js.Any])
-    if (blendSrc != null) __obj.updateDynamic("blendSrc")(blendSrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(blendSrcAlpha)) __obj.updateDynamic("blendSrcAlpha")(blendSrcAlpha.get.asInstanceOf[js.Any])
-    if (blending != null) __obj.updateDynamic("blending")(blending.asInstanceOf[js.Any])
-    if (!js.isUndefined(bumpMap)) __obj.updateDynamic("bumpMap")(bumpMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(bumpScale)) __obj.updateDynamic("bumpScale")(bumpScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearcoat)) __obj.updateDynamic("clearcoat")(clearcoat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearcoatNormalMap)) __obj.updateDynamic("clearcoatNormalMap")(clearcoatNormalMap.asInstanceOf[js.Any])
-    if (clearcoatNormalScale != null) __obj.updateDynamic("clearcoatNormalScale")(clearcoatNormalScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearcoatRoughness)) __obj.updateDynamic("clearcoatRoughness")(clearcoatRoughness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipIntersection)) __obj.updateDynamic("clipIntersection")(clipIntersection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipShadows)) __obj.updateDynamic("clipShadows")(clipShadows.get.asInstanceOf[js.Any])
-    if (clippingPlanes != null) __obj.updateDynamic("clippingPlanes")(clippingPlanes.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorWrite)) __obj.updateDynamic("colorWrite")(colorWrite.get.asInstanceOf[js.Any])
-    if (defines != null) __obj.updateDynamic("defines")(defines.asInstanceOf[js.Any])
-    if (depthFunc != null) __obj.updateDynamic("depthFunc")(depthFunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(depthTest)) __obj.updateDynamic("depthTest")(depthTest.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(depthWrite)) __obj.updateDynamic("depthWrite")(depthWrite.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(displacementBias)) __obj.updateDynamic("displacementBias")(displacementBias.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(displacementMap)) __obj.updateDynamic("displacementMap")(displacementMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(displacementScale)) __obj.updateDynamic("displacementScale")(displacementScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dithering)) __obj.updateDynamic("dithering")(dithering.get.asInstanceOf[js.Any])
-    if (emissive != null) __obj.updateDynamic("emissive")(emissive.asInstanceOf[js.Any])
-    if (!js.isUndefined(emissiveIntensity)) __obj.updateDynamic("emissiveIntensity")(emissiveIntensity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(emissiveMap)) __obj.updateDynamic("emissiveMap")(emissiveMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(envMap)) __obj.updateDynamic("envMap")(envMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(envMapIntensity)) __obj.updateDynamic("envMapIntensity")(envMapIntensity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatShading)) __obj.updateDynamic("flatShading")(flatShading.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lightMap)) __obj.updateDynamic("lightMap")(lightMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(lightMapIntensity)) __obj.updateDynamic("lightMapIntensity")(lightMapIntensity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(metalness)) __obj.updateDynamic("metalness")(metalness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(metalnessMap)) __obj.updateDynamic("metalnessMap")(metalnessMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(morphNormals)) __obj.updateDynamic("morphNormals")(morphNormals.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(morphTargets)) __obj.updateDynamic("morphTargets")(morphTargets.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalMap)) __obj.updateDynamic("normalMap")(normalMap.asInstanceOf[js.Any])
-    if (normalMapType != null) __obj.updateDynamic("normalMapType")(normalMapType.asInstanceOf[js.Any])
-    if (normalScale != null) __obj.updateDynamic("normalScale")(normalScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(polygonOffset)) __obj.updateDynamic("polygonOffset")(polygonOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(polygonOffsetFactor)) __obj.updateDynamic("polygonOffsetFactor")(polygonOffsetFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(polygonOffsetUnits)) __obj.updateDynamic("polygonOffsetUnits")(polygonOffsetUnits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reflectivity)) __obj.updateDynamic("reflectivity")(reflectivity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(refractionRatio)) __obj.updateDynamic("refractionRatio")(refractionRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(roughness)) __obj.updateDynamic("roughness")(roughness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(roughnessMap)) __obj.updateDynamic("roughnessMap")(roughnessMap.asInstanceOf[js.Any])
-    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide.asInstanceOf[js.Any])
-    if (sheen != null) __obj.updateDynamic("sheen")(sheen.asInstanceOf[js.Any])
-    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (!js.isUndefined(skinning)) __obj.updateDynamic("skinning")(skinning.get.asInstanceOf[js.Any])
-    if (stencilFail != null) __obj.updateDynamic("stencilFail")(stencilFail.asInstanceOf[js.Any])
-    if (stencilFunc != null) __obj.updateDynamic("stencilFunc")(stencilFunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencilMask)) __obj.updateDynamic("stencilMask")(stencilMask.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencilRef)) __obj.updateDynamic("stencilRef")(stencilRef.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencilWrite)) __obj.updateDynamic("stencilWrite")(stencilWrite.get.asInstanceOf[js.Any])
-    if (stencilZFail != null) __obj.updateDynamic("stencilZFail")(stencilZFail.asInstanceOf[js.Any])
-    if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass.asInstanceOf[js.Any])
-    if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertexColors)) __obj.updateDynamic("vertexColors")(vertexColors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertexTangents)) __obj.updateDynamic("vertexTangents")(vertexTangents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wireframe)) __obj.updateDynamic("wireframe")(wireframe.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wireframeLinewidth)) __obj.updateDynamic("wireframeLinewidth")(wireframeLinewidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshPhysicalMaterialParameters]
   }
+  @scala.inline
+  implicit class MeshPhysicalMaterialParametersOps[Self <: MeshPhysicalMaterialParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClearcoat(value: Double): Self = this.set("clearcoat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearcoat: Self = this.set("clearcoat", js.undefined)
+    @scala.inline
+    def setClearcoatMap(value: Texture): Self = this.set("clearcoatMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClearcoatMapNull: Self = this.set("clearcoatMap", null)
+    @scala.inline
+    def setClearcoatNormalMap(value: Texture): Self = this.set("clearcoatNormalMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearcoatNormalMap: Self = this.set("clearcoatNormalMap", js.undefined)
+    @scala.inline
+    def setClearcoatNormalMapNull: Self = this.set("clearcoatNormalMap", null)
+    @scala.inline
+    def setClearcoatNormalScale(value: Vector2): Self = this.set("clearcoatNormalScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearcoatNormalScale: Self = this.set("clearcoatNormalScale", js.undefined)
+    @scala.inline
+    def setClearcoatRoughness(value: Double): Self = this.set("clearcoatRoughness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearcoatRoughness: Self = this.set("clearcoatRoughness", js.undefined)
+    @scala.inline
+    def setClearcoatRoughnessMap(value: Texture): Self = this.set("clearcoatRoughnessMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClearcoatRoughnessMapNull: Self = this.set("clearcoatRoughnessMap", null)
+    @scala.inline
+    def setReflectivity(value: Double): Self = this.set("reflectivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReflectivity: Self = this.set("reflectivity", js.undefined)
+    @scala.inline
+    def setSheen(value: Color): Self = this.set("sheen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheen: Self = this.set("sheen", js.undefined)
+    @scala.inline
+    def setTransmission(value: Double): Self = this.set("transmission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransmission: Self = this.set("transmission", js.undefined)
+    @scala.inline
+    def setTransmissionMap(value: Texture): Self = this.set("transmissionMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransmissionMap: Self = this.set("transmissionMap", js.undefined)
+    @scala.inline
+    def setTransmissionMapNull: Self = this.set("transmissionMap", null)
+  }
+  
 }
 

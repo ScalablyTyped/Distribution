@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("primus", "createSocket")
 @js.native
 object createSocket extends js.Object {
-  def apply(): Instantiable1[js.UndefOr[/* options */ SocketOptions], Socket] = js.native
-  def apply(options: PrimusOptions): Instantiable1[js.UndefOr[/* options */ SocketOptions], Socket] = js.native
+  def apply(): Instantiable1[/* options */ js.UndefOr[SocketOptions], Socket] = js.native
+  def apply(options: PrimusOptions): Instantiable1[/* options */ js.UndefOr[SocketOptions], Socket] = js.native
 }
 

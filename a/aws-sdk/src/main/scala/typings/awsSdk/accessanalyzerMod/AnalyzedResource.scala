@@ -61,18 +61,57 @@ object AnalyzedResource {
     resourceArn: ResourceArn,
     resourceOwnerAccount: String,
     resourceType: ResourceType,
-    updatedAt: Timestamp,
-    actions: ActionList = null,
-    error: String = null,
-    sharedVia: SharedViaList = null,
-    status: FindingStatus = null
+    updatedAt: Timestamp
   ): AnalyzedResource = {
     val __obj = js.Dynamic.literal(analyzedAt = analyzedAt.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], isPublic = isPublic.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], resourceOwnerAccount = resourceOwnerAccount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (sharedVia != null) __obj.updateDynamic("sharedVia")(sharedVia.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzedResource]
   }
+  @scala.inline
+  implicit class AnalyzedResourceOps[Self <: AnalyzedResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnalyzedAt(value: Timestamp): Self = this.set("analyzedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsPublic(value: Boolean): Self = this.set("isPublic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceArn(value: ResourceArn): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceOwnerAccount(value: String): Self = this.set("resourceOwnerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: ActionList): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setSharedViaVarargs(value: String*): Self = this.set("sharedVia", js.Array(value :_*))
+    @scala.inline
+    def setSharedVia(value: SharedViaList): Self = this.set("sharedVia", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedVia: Self = this.set("sharedVia", js.undefined)
+    @scala.inline
+    def setStatus(value: FindingStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

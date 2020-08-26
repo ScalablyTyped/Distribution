@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSource extends js.Object {
   /** Information about an application which feeds sensor data into the platform. */
-  var application: js.UndefOr[Application] = js.undefined
-  var dataQualityStandard: js.UndefOr[js.Array[String]] = js.undefined
+  var application: js.UndefOr[Application] = js.native
+  var dataQualityStandard: js.UndefOr[js.Array[String]] = js.native
   /**
     * A unique identifier for the data stream produced by this data source. The identifier includes:
     *
@@ -32,45 +33,75 @@ trait DataSource extends js.Object {
     * Finally, the developer project number is obfuscated when read by any REST or Android client that did not create the data source. Only the data source
     * creator will see the developer project number in clear and normal form.
     */
-  var dataStreamId: js.UndefOr[String] = js.undefined
+  var dataStreamId: js.UndefOr[String] = js.native
   /**
     * The stream name uniquely identifies this particular data source among other data sources of the same type from the same underlying producer. Setting
     * the stream name is optional, but should be done whenever an application exposes two streams for the same data type, or when a device has two equivalent
     * sensors.
     */
-  var dataStreamName: js.UndefOr[String] = js.undefined
+  var dataStreamName: js.UndefOr[String] = js.native
   /** The data type defines the schema for a stream of data being collected by, inserted into, or queried from the Fitness API. */
-  var dataType: js.UndefOr[DataType] = js.undefined
+  var dataType: js.UndefOr[DataType] = js.native
   /** Representation of an integrated device (such as a phone or a wearable) that can hold sensors. */
-  var device: js.UndefOr[Device] = js.undefined
+  var device: js.UndefOr[Device] = js.native
   /** An end-user visible name for this data source. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** A constant describing the type of this data source. Indicates whether this data source produces raw or derived data. */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object DataSource {
   @scala.inline
-  def apply(
-    application: Application = null,
-    dataQualityStandard: js.Array[String] = null,
-    dataStreamId: String = null,
-    dataStreamName: String = null,
-    dataType: DataType = null,
-    device: Device = null,
-    name: String = null,
-    `type`: String = null
-  ): DataSource = {
+  def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (dataQualityStandard != null) __obj.updateDynamic("dataQualityStandard")(dataQualityStandard.asInstanceOf[js.Any])
-    if (dataStreamId != null) __obj.updateDynamic("dataStreamId")(dataStreamId.asInstanceOf[js.Any])
-    if (dataStreamName != null) __obj.updateDynamic("dataStreamName")(dataStreamName.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSource]
   }
+  @scala.inline
+  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplication: Self = this.set("application", js.undefined)
+    @scala.inline
+    def setDataQualityStandardVarargs(value: String*): Self = this.set("dataQualityStandard", js.Array(value :_*))
+    @scala.inline
+    def setDataQualityStandard(value: js.Array[String]): Self = this.set("dataQualityStandard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataQualityStandard: Self = this.set("dataQualityStandard", js.undefined)
+    @scala.inline
+    def setDataStreamId(value: String): Self = this.set("dataStreamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataStreamId: Self = this.set("dataStreamId", js.undefined)
+    @scala.inline
+    def setDataStreamName(value: String): Self = this.set("dataStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataStreamName: Self = this.set("dataStreamName", js.undefined)
+    @scala.inline
+    def setDataType(value: DataType): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataType: Self = this.set("dataType", js.undefined)
+    @scala.inline
+    def setDevice(value: Device): Self = this.set("device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("device", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

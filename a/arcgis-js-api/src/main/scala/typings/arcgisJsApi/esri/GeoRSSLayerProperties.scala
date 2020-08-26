@@ -1,12 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`hide-children`
-import typings.arcgisJsApi.arcgisJsApiStrings.hide
-import typings.arcgisJsApi.arcgisJsApiStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeoRSSLayerProperties
   extends LayerProperties
      with ScaleRangeLayerProperties {
@@ -15,57 +13,61 @@ trait GeoRSSLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#lineSymbol)
     */
-  var lineSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
+  var lineSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.native
   /**
     * Symbol used to represent point features from the GeoRSS feed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#pointSymbol)
     */
-  var pointSymbol: js.UndefOr[PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties] = js.undefined
+  var pointSymbol: js.UndefOr[PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties] = js.native
   /**
     * Symbol used to represent polygon features from the GeoRSS feed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#polygonSymbol)
     */
-  var polygonSymbol: js.UndefOr[SimpleFillSymbolProperties] = js.undefined
+  var polygonSymbol: js.UndefOr[SimpleFillSymbolProperties] = js.native
   /**
     * The URL pointing to a GeoRSS file. This must be publicly available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#url)
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
 }
 
 object GeoRSSLayerProperties {
   @scala.inline
-  def apply(
-    fullExtent: ExtentProperties = null,
-    id: String = null,
-    lineSymbol: SimpleLineSymbolProperties = null,
-    listMode: show | hide | `hide-children` = null,
-    maxScale: js.UndefOr[Double] = js.undefined,
-    minScale: js.UndefOr[Double] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    pointSymbol: PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties = null,
-    polygonSymbol: SimpleFillSymbolProperties = null,
-    title: String = null,
-    url: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): GeoRSSLayerProperties = {
+  def apply(): GeoRSSLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lineSymbol != null) __obj.updateDynamic("lineSymbol")(lineSymbol.asInstanceOf[js.Any])
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxScale)) __obj.updateDynamic("maxScale")(maxScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minScale)) __obj.updateDynamic("minScale")(minScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(pointSymbol.asInstanceOf[js.Any])
-    if (polygonSymbol != null) __obj.updateDynamic("polygonSymbol")(polygonSymbol.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoRSSLayerProperties]
   }
+  @scala.inline
+  implicit class GeoRSSLayerPropertiesOps[Self <: GeoRSSLayerProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLineSymbol(value: SimpleLineSymbolProperties): Self = this.set("lineSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineSymbol: Self = this.set("lineSymbol", js.undefined)
+    @scala.inline
+    def setPointSymbol(value: PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties): Self = this.set("pointSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointSymbol: Self = this.set("pointSymbol", js.undefined)
+    @scala.inline
+    def setPolygonSymbol(value: SimpleFillSymbolProperties): Self = this.set("polygonSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygonSymbol: Self = this.set("polygonSymbol", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

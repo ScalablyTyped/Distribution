@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "BoundEventAst")
 @js.native
 class BoundEventAst protected ()
-  extends typings.angularCompiler.publicApiMod.BoundEventAst {
+  extends typings.angularCompiler.compilerMod.BoundEventAst {
   def this(
     name: String,
     target: String,

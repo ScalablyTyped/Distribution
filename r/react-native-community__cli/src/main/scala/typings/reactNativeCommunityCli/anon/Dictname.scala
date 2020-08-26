@@ -13,6 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Dictname extends /* name */ StringDictionary[PlatformConfig[_, _, _, _]] {
   var android: js.UndefOr[
     PlatformConfig[
@@ -21,29 +22,45 @@ trait Dictname extends /* name */ StringDictionary[PlatformConfig[_, _, _, _]] {
       ProjectConfigAndroid, 
       DependencyConfigAndroid
     ]
-  ] = js.undefined
+  ] = js.native
   var ios: js.UndefOr[
     PlatformConfig[ProjectParamsIOS, ProjectParamsIOS, ProjectConfigIOS, DependencyConfigIOS]
-  ] = js.undefined
+  ] = js.native
 }
 
 object Dictname {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[PlatformConfig[_, _, _, _]] = null,
-    android: PlatformConfig[
-      ProjectParamsAndroid, 
-      DependencyParamsAndroid, 
-      ProjectConfigAndroid, 
-      DependencyConfigAndroid
-    ] = null,
-    ios: PlatformConfig[ProjectParamsIOS, ProjectParamsIOS, ProjectConfigIOS, DependencyConfigIOS] = null
-  ): Dictname = {
+  def apply(): Dictname = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
-    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictname]
   }
+  @scala.inline
+  implicit class DictnameOps[Self <: Dictname] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroid(
+      value: PlatformConfig[
+          ProjectParamsAndroid, 
+          DependencyParamsAndroid, 
+          ProjectConfigAndroid, 
+          DependencyConfigAndroid
+        ]
+    ): Self = this.set("android", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroid: Self = this.set("android", js.undefined)
+    @scala.inline
+    def setIos(value: PlatformConfig[ProjectParamsIOS, ProjectParamsIOS, ProjectConfigIOS, DependencyConfigIOS]): Self = this.set("ios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIos: Self = this.set("ios", js.undefined)
+  }
+  
 }
 

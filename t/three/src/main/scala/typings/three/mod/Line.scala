@@ -6,42 +6,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("three", "Line")
 @js.native
-class Line ()
-  extends typings.three.lineMod.Line {
-  def this(geometry: typings.three.bufferGeometryMod.BufferGeometry) = this()
-  def this(geometry: typings.three.geometryMod.Geometry) = this()
-  def this(
-    geometry: typings.three.bufferGeometryMod.BufferGeometry,
-    material: js.Array[typings.three.materialMod.Material]
-  ) = this()
-  def this(
-    geometry: typings.three.bufferGeometryMod.BufferGeometry,
-    material: typings.three.materialMod.Material
-  ) = this()
-  def this(
-    geometry: typings.three.geometryMod.Geometry,
-    material: js.Array[typings.three.materialMod.Material]
-  ) = this()
-  def this(geometry: typings.three.geometryMod.Geometry, material: typings.three.materialMod.Material) = this()
-  def this(
-    geometry: typings.three.bufferGeometryMod.BufferGeometry,
-    material: js.Array[typings.three.materialMod.Material],
-    mode: Double
-  ) = this()
-  def this(
-    geometry: typings.three.bufferGeometryMod.BufferGeometry,
-    material: typings.three.materialMod.Material,
-    mode: Double
-  ) = this()
-  def this(
-    geometry: typings.three.geometryMod.Geometry,
-    material: js.Array[typings.three.materialMod.Material],
-    mode: Double
-  ) = this()
-  def this(
-    geometry: typings.three.geometryMod.Geometry,
-    material: typings.three.materialMod.Material,
-    mode: Double
-  ) = this()
+class Line[TGeometry /* <: typings.three.geometryMod.Geometry | typings.three.bufferGeometryMod.BufferGeometry */, TMaterial /* <: typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material] */] ()
+  extends typings.three.lineMod.Line[TGeometry, TMaterial] {
+  def this(geometry: TGeometry) = this()
+  def this(geometry: TGeometry, material: TMaterial) = this()
+  def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
+  def this(geometry: TGeometry, material: TMaterial, mode: Double) = this()
+  def this(geometry: TGeometry, material: js.UndefOr[scala.Nothing], mode: Double) = this()
+  def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial, mode: Double) = this()
+  def this(geometry: js.UndefOr[scala.Nothing], material: js.UndefOr[scala.Nothing], mode: Double) = this()
 }
 

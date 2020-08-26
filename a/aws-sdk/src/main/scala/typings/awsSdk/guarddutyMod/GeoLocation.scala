@@ -18,11 +18,30 @@ trait GeoLocation extends js.Object {
 
 object GeoLocation {
   @scala.inline
-  def apply(Lat: js.UndefOr[Double] = js.undefined, Lon: js.UndefOr[Double] = js.undefined): GeoLocation = {
+  def apply(): GeoLocation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Lat)) __obj.updateDynamic("Lat")(Lat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Lon)) __obj.updateDynamic("Lon")(Lon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoLocation]
   }
+  @scala.inline
+  implicit class GeoLocationOps[Self <: GeoLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLat(value: Double): Self = this.set("Lat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLat: Self = this.set("Lat", js.undefined)
+    @scala.inline
+    def setLon(value: Double): Self = this.set("Lon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLon: Self = this.set("Lon", js.undefined)
+  }
+  
 }
 

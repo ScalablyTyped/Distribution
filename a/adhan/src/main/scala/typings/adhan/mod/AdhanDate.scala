@@ -12,6 +12,7 @@ trait AdhanDate extends js.Object {
   def dateByAddingSeconds(date: typings.std.Date, seconds: Double): String = js.native
   def dayOfYear(date: typings.std.Date): String = js.native
   def formattedTime(prayerTime: typings.std.Date): String = js.native
+  def formattedTime(prayerTime: typings.std.Date, offset: js.UndefOr[scala.Nothing], style: TimeMode): String = js.native
   def formattedTime(prayerTime: typings.std.Date, offset: Double): String = js.native
   def formattedTime(prayerTime: typings.std.Date, offset: Double, style: TimeMode): String = js.native
   def julianDate(date: typings.std.Date): String = js.native

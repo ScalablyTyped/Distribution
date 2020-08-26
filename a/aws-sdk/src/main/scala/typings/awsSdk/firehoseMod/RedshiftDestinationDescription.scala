@@ -55,20 +55,53 @@ object RedshiftDestinationDescription {
     CopyCommand: CopyCommand,
     RoleARN: RoleARN,
     S3DestinationDescription: S3DestinationDescription,
-    Username: Username,
-    CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
-    ProcessingConfiguration: ProcessingConfiguration = null,
-    RetryOptions: RedshiftRetryOptions = null,
-    S3BackupDescription: S3DestinationDescription = null,
-    S3BackupMode: RedshiftS3BackupMode = null
+    Username: Username
   ): RedshiftDestinationDescription = {
     val __obj = js.Dynamic.literal(ClusterJDBCURL = ClusterJDBCURL.asInstanceOf[js.Any], CopyCommand = CopyCommand.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], S3DestinationDescription = S3DestinationDescription.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions.asInstanceOf[js.Any])
-    if (ProcessingConfiguration != null) __obj.updateDynamic("ProcessingConfiguration")(ProcessingConfiguration.asInstanceOf[js.Any])
-    if (RetryOptions != null) __obj.updateDynamic("RetryOptions")(RetryOptions.asInstanceOf[js.Any])
-    if (S3BackupDescription != null) __obj.updateDynamic("S3BackupDescription")(S3BackupDescription.asInstanceOf[js.Any])
-    if (S3BackupMode != null) __obj.updateDynamic("S3BackupMode")(S3BackupMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftDestinationDescription]
   }
+  @scala.inline
+  implicit class RedshiftDestinationDescriptionOps[Self <: RedshiftDestinationDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterJDBCURL(value: ClusterJDBCURL): Self = this.set("ClusterJDBCURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopyCommand(value: CopyCommand): Self = this.set("CopyCommand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3DestinationDescription(value: S3DestinationDescription): Self = this.set("S3DestinationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: Username): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    @scala.inline
+    def setProcessingConfiguration(value: ProcessingConfiguration): Self = this.set("ProcessingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingConfiguration: Self = this.set("ProcessingConfiguration", js.undefined)
+    @scala.inline
+    def setRetryOptions(value: RedshiftRetryOptions): Self = this.set("RetryOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryOptions: Self = this.set("RetryOptions", js.undefined)
+    @scala.inline
+    def setS3BackupDescription(value: S3DestinationDescription): Self = this.set("S3BackupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupDescription: Self = this.set("S3BackupDescription", js.undefined)
+    @scala.inline
+    def setS3BackupMode(value: RedshiftS3BackupMode): Self = this.set("S3BackupMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupMode: Self = this.set("S3BackupMode", js.undefined)
+  }
+  
 }
 

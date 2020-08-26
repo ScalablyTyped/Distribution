@@ -6,27 +6,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ trait SubToken extends ContentToken {
+- typings.remarkable.libMod._Token because Already inherited */ @js.native
+trait SubToken extends ContentToken {
   @JSName("content")
-  var content_SubToken: String
+  var content_SubToken: String = js.native
   @JSName("type")
-  var type_SubToken: sub
+  var type_SubToken: sub = js.native
 }
 
 object SubToken {
   @scala.inline
-  def apply(
-    content: String,
-    level: Double,
-    `type`: sub,
-    block: js.UndefOr[Boolean] = js.undefined,
-    lines: js.Tuple2[Double, Double] = null
-  ): SubToken = {
+  def apply(content: String, level: Double, `type`: sub): SubToken = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.get.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubToken]
   }
+  @scala.inline
+  implicit class SubTokenOps[Self <: SubToken] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: sub): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

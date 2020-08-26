@@ -37,7 +37,7 @@ class Activation protected () extends CustomResource {
   /**
     * If the current activation has expired.
     */
-  val expired: Output_[String] = js.native
+  val expired: Output_[Boolean] = js.native
   /**
     * The IAM Role to attach to the managed instance.
     */
@@ -55,9 +55,9 @@ class Activation protected () extends CustomResource {
     */
   val registrationLimit: Output_[js.UndefOr[Double]] = js.native
   /**
-    * A mapping of tags to assign to the object.
+    * A map of tags to assign to the object.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -71,8 +71,10 @@ object Activation extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Activation = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Activation = js.native
   def get(name: String, id: Input[ID], state: ActivationState): Activation = js.native
   def get(name: String, id: Input[ID], state: ActivationState, opts: CustomResourceOptions): Activation = js.native
   /**

@@ -27,17 +27,10 @@ object completeMultipartUploadCommandMod extends js.Object {
           Readable
         ] {
     def this(input: CompleteMultipartUploadInput) = this()
-    /* CompleteClass */
-    override val input: CompleteMultipartUploadInput = js.native
     val middlewareStack: MiddlewareStack[CompleteMultipartUploadInput, CompleteMultipartUploadOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[CompleteMultipartUploadInput, CompleteMultipartUploadOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[CompleteMultipartUploadInput, CompleteMultipartUploadOutput] = js.native
   }

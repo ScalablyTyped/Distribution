@@ -71,550 +71,917 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/Link/Link.LinkProps> */
+@js.native
 trait WeakValidationMapLinkProp extends js.Object {
-  var about: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
-  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
-  var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-colindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-colspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-controls`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-current`: js.UndefOr[Validator[js.UndefOr[page | step | location | date | time_ | Boolean | Null]]] = js.undefined
-  var `aria-describedby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link_ | move | popup | Null]]] = js.undefined
-  var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu_ | listbox | tree | grid | dialog | Boolean | Null]]] = js.undefined
-  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.undefined
-  var `aria-keyshortcuts`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-label`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-labelledby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-level`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.undefined
-  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.undefined
-  var `aria-owns`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-placeholder`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-posinset`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
-  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var about: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.native
+  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.native
+  var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-colspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-controls`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-current`: js.UndefOr[Validator[js.UndefOr[page | step | location | date | time_ | Boolean | Null]]] = js.native
+  var `aria-describedby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link_ | move | popup | Null]]] = js.native
+  var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu_ | listbox | tree | grid | dialog | Boolean | Null]]] = js.native
+  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-label`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-labelledby`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-level`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.native
+  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.native
+  var `aria-owns`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-placeholder`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-posinset`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.native
+  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
   var `aria-relevant`: js.UndefOr[
     Validator[js.UndefOr[additions | (`additions text`) | all | removals | text | Null]]
-  ] = js.undefined
-  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var `aria-rowcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-rowindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.undefined
-  var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-valuemin`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-valuenow`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var `aria-valuetext`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var autoCapitalize: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var autoCorrect: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var autoSave: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.undefined
-  var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Html | Null]]] = js.undefined
-  var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.undefined
-  var dir: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var draggable: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
-  var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var href: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var inlist: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
+  ] = js.native
+  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var `aria-rowcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowindex`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.native
+  var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuemin`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuenow`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var `aria-valuetext`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoCapitalize: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoCorrect: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var autoSave: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.native
+  var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Html | Null]]] = js.native
+  var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.native
+  var dir: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disabled: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var draggable: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.native
+  var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var href: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var inlist: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
   var inputMode: js.UndefOr[
     Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]
-  ] = js.undefined
-  var is: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var itemID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var itemProp: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var itemRef: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var itemScope: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var itemType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var lang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var onAbort: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onAnimationEnd: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onAnimationIteration: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onAnimationStart: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onAuxClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onBeforeInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onCanPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onCanPlayThrough: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onChange: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onCompositionEnd: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onCompositionStart: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onCompositionUpdate: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onContextMenu: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onCopy: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onCut: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDoubleClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDrag: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDragEnd: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDragEnter: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDragExit: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDragLeave: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDragOver: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDragStart: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDrop: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onDurationChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onEmptied: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onEncrypted: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onEnded: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onError: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onInvalid: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onKeyDown: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onKeyPress: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onKeyUp: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onLoad: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onLoadStart: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onLoadedData: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onLoadedMetadata: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onMouseDown: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onMouseEnter: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onMouseLeave: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onMouseMove: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onMouseOut: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onMouseOver: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onMouseUp: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onPaste: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onPause: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPlaying: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPointerCancel: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPointerDown: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPointerEnter: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPointerLeave: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPointerMove: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPointerOut: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPointerOver: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onPointerUp: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onProgress: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onRateChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onReset: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onScroll: js.UndefOr[Validator[js.UndefOr[Null | UIEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onSeeked: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onSeeking: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onSelect: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onStalled: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onSubmit: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.undefined
-  var onSuspend: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onTimeUpdate: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onTouchCancel: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onTouchEnd: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onTouchMove: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onTouchStart: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onTransitionEnd: js.UndefOr[Validator[js.UndefOr[Null | TransitionEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onVolumeChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onWaiting: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var onWheel: js.UndefOr[Validator[js.UndefOr[Null | WheelEventHandler[HTMLAnchorElement]]]] = js.undefined
-  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var prefix: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var property: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var radioGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var ref: js.UndefOr[Validator[js.UndefOr[Null | Ref[HTMLAnchorElement]]]] = js.undefined
-  var resource: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
-  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
-  var suppressContentEditableWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var suppressHydrationWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
-  var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var translate: js.UndefOr[Validator[js.UndefOr[yes | no | Null]]] = js.undefined
-  var typeof: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var unselectable: js.UndefOr[Validator[js.UndefOr[on | off | Null]]] = js.undefined
-  var vocab: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  ] = js.native
+  var is: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemProp: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemRef: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var itemScope: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var itemType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var lang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var onAbort: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onAnimationEnd: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onAnimationIteration: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onAnimationStart: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onAuxClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onBeforeInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onCanPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onCanPlayThrough: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onChange: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onCompositionEnd: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onCompositionStart: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onCompositionUpdate: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onContextMenu: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onCopy: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onCut: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDoubleClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDrag: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDragEnd: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDragEnter: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDragExit: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDragLeave: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDragOver: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDragStart: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDrop: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onDurationChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onEmptied: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onEncrypted: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onEnded: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onError: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onInvalid: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onKeyDown: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onKeyPress: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onKeyUp: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onLoad: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onLoadStart: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onLoadedData: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onLoadedMetadata: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onMouseDown: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onMouseEnter: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onMouseLeave: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onMouseMove: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onMouseOut: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onMouseOver: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onMouseUp: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onPaste: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onPause: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPlaying: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPointerCancel: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPointerDown: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPointerEnter: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPointerLeave: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPointerMove: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPointerOut: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPointerOver: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.native
+  var onPointerUp: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]] = js.native
+  var onProgress: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onRateChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onReset: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onScroll: js.UndefOr[Validator[js.UndefOr[Null | UIEventHandler[HTMLAnchorElement]]]] = js.native
+  var onSeeked: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onSeeking: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onSelect: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onStalled: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onSubmit: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]] = js.native
+  var onSuspend: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onTimeUpdate: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onTouchCancel: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]] = js.native
+  var onTouchEnd: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]] = js.native
+  var onTouchMove: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]] = js.native
+  var onTouchStart: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]] = js.native
+  var onTransitionEnd: js.UndefOr[Validator[js.UndefOr[Null | TransitionEventHandler[HTMLAnchorElement]]]] = js.native
+  var onVolumeChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onWaiting: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]] = js.native
+  var onWheel: js.UndefOr[Validator[js.UndefOr[Null | WheelEventHandler[HTMLAnchorElement]]]] = js.native
+  var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var prefix: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var property: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var radioGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var ref: js.UndefOr[Validator[js.UndefOr[Null | Ref[HTMLAnchorElement]]]] = js.native
+  var resource: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.native
+  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var suppressHydrationWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var translate: js.UndefOr[Validator[js.UndefOr[yes | no | Null]]] = js.native
+  var typeof: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var unselectable: js.UndefOr[Validator[js.UndefOr[on | off | Null]]] = js.native
+  var vocab: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
 }
 
 object WeakValidationMapLinkProp {
   @scala.inline
-  def apply(
-    about: Validator[js.UndefOr[Null | String]] = null,
-    accessKey: Validator[js.UndefOr[Null | String]] = null,
-    `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list_ | both | Null]] = null,
-    `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
-    `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-colindex`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-colspan`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-controls`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-current`: Validator[js.UndefOr[page | step | location | date | time_ | Boolean | Null]] = null,
-    `aria-describedby`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-details`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-disabled`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-dropeffect`: Validator[js.UndefOr[none | copy | execute | link_ | move | popup | Null]] = null,
-    `aria-errormessage`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-expanded`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-flowto`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-grabbed`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-haspopup`: Validator[js.UndefOr[menu_ | listbox | tree | grid | dialog | Boolean | Null]] = null,
-    `aria-hidden`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-invalid`: Validator[js.UndefOr[grammar | spelling | Boolean | Null]] = null,
-    `aria-keyshortcuts`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-label`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-labelledby`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-level`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-live`: Validator[js.UndefOr[off | assertive | polite | Null]] = null,
-    `aria-modal`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-multiline`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-multiselectable`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-orientation`: Validator[js.UndefOr[horizontal | vertical | Null]] = null,
-    `aria-owns`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-placeholder`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-posinset`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-pressed`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
-    `aria-readonly`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-relevant`: Validator[js.UndefOr[additions | (`additions text`) | all | removals | text | Null]] = null,
-    `aria-required`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-roledescription`: Validator[js.UndefOr[Null | String]] = null,
-    `aria-rowcount`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-rowindex`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-rowspan`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-selected`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-setsize`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-sort`: Validator[js.UndefOr[none | ascending | descending | other | Null]] = null,
-    `aria-valuemax`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-valuemin`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-valuenow`: Validator[js.UndefOr[Double | Null]] = null,
-    `aria-valuetext`: Validator[js.UndefOr[Null | String]] = null,
-    autoCapitalize: Validator[js.UndefOr[Null | String]] = null,
-    autoCorrect: Validator[js.UndefOr[Null | String]] = null,
-    autoSave: Validator[js.UndefOr[Null | String]] = null,
-    children: Validator[js.UndefOr[Null | ReactNode]] = null,
-    className: Validator[js.UndefOr[Null | String]] = null,
-    color: Validator[js.UndefOr[Null | String]] = null,
-    contentEditable: Validator[js.UndefOr[inherit | Booleanish | Null]] = null,
-    contextMenu: Validator[js.UndefOr[Null | String]] = null,
-    dangerouslySetInnerHTML: Validator[js.UndefOr[Html | Null]] = null,
-    datatype: Validator[js.UndefOr[Null | String]] = null,
-    defaultChecked: Validator[js.UndefOr[Boolean | Null]] = null,
-    defaultValue: Validator[js.UndefOr[js.Array[String] | Double | Null | String]] = null,
-    dir: Validator[js.UndefOr[Null | String]] = null,
-    disableStyles: Validator[js.UndefOr[Boolean | Null]] = null,
-    disabled: Validator[js.UndefOr[Boolean | Null]] = null,
-    draggable: Validator[js.UndefOr[Booleanish | Null]] = null,
-    hidden: Validator[js.UndefOr[Boolean | Null]] = null,
-    href: Validator[js.UndefOr[Null | String]] = null,
-    id: Validator[js.UndefOr[Null | String]] = null,
-    inlist: Validator[js.UndefOr[_ | Null]] = null,
-    inputMode: Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]] = null,
-    is: Validator[js.UndefOr[Null | String]] = null,
-    itemID: Validator[js.UndefOr[Null | String]] = null,
-    itemProp: Validator[js.UndefOr[Null | String]] = null,
-    itemRef: Validator[js.UndefOr[Null | String]] = null,
-    itemScope: Validator[js.UndefOr[Boolean | Null]] = null,
-    itemType: Validator[js.UndefOr[Null | String]] = null,
-    lang: Validator[js.UndefOr[Null | String]] = null,
-    onAbort: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onAnimationEnd: Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]] = null,
-    onAnimationIteration: Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]] = null,
-    onAnimationStart: Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]] = null,
-    onAuxClick: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onBeforeInput: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]] = null,
-    onBlur: Validator[js.UndefOr[FocusEventHandler[HTMLAnchorElement] | Null]] = null,
-    onCanPlay: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onCanPlayThrough: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onChange: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]] = null,
-    onClick: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onCompositionEnd: Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]] = null,
-    onCompositionStart: Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]] = null,
-    onCompositionUpdate: Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]] = null,
-    onContextMenu: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onCopy: Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]] = null,
-    onCut: Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDoubleClick: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDrag: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDragEnd: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDragEnter: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDragExit: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDragLeave: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDragOver: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDragStart: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDrop: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]] = null,
-    onDurationChange: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onEmptied: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onEncrypted: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onEnded: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onError: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onFocus: Validator[js.UndefOr[FocusEventHandler[HTMLAnchorElement] | Null]] = null,
-    onInput: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]] = null,
-    onInvalid: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]] = null,
-    onKeyDown: Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]] = null,
-    onKeyPress: Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]] = null,
-    onKeyUp: Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]] = null,
-    onLoad: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onLoadStart: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onLoadedData: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onLoadedMetadata: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onMouseDown: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onMouseEnter: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onMouseLeave: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onMouseMove: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onMouseOut: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onMouseOver: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onMouseUp: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]] = null,
-    onPaste: Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]] = null,
-    onPause: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onPlay: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onPlaying: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onPointerCancel: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]] = null,
-    onPointerDown: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]] = null,
-    onPointerEnter: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]] = null,
-    onPointerLeave: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]] = null,
-    onPointerMove: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]] = null,
-    onPointerOut: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]] = null,
-    onPointerOver: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]] = null,
-    onPointerUp: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]] = null,
-    onProgress: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onRateChange: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onReset: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]] = null,
-    onScroll: Validator[js.UndefOr[Null | UIEventHandler[HTMLAnchorElement]]] = null,
-    onSeeked: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onSeeking: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onSelect: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onStalled: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onSubmit: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]] = null,
-    onSuspend: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onTimeUpdate: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onTouchCancel: Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]] = null,
-    onTouchEnd: Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]] = null,
-    onTouchMove: Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]] = null,
-    onTouchStart: Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]] = null,
-    onTransitionEnd: Validator[js.UndefOr[Null | TransitionEventHandler[HTMLAnchorElement]]] = null,
-    onVolumeChange: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onWaiting: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]] = null,
-    onWheel: Validator[js.UndefOr[Null | WheelEventHandler[HTMLAnchorElement]]] = null,
-    placeholder: Validator[js.UndefOr[Null | String]] = null,
-    prefix: Validator[js.UndefOr[Null | String]] = null,
-    property: Validator[js.UndefOr[Null | String]] = null,
-    radioGroup: Validator[js.UndefOr[Null | String]] = null,
-    ref: Validator[js.UndefOr[Null | Ref[HTMLAnchorElement]]] = null,
-    resource: Validator[js.UndefOr[Null | String]] = null,
-    results: Validator[js.UndefOr[Double | Null]] = null,
-    role: Validator[js.UndefOr[Null | String]] = null,
-    security: Validator[js.UndefOr[Null | String]] = null,
-    slot: Validator[js.UndefOr[Null | String]] = null,
-    spellCheck: Validator[js.UndefOr[Booleanish | Null]] = null,
-    style: Validator[js.UndefOr[CSSProperties | Null]] = null,
-    suppressContentEditableWarning: Validator[js.UndefOr[Boolean | Null]] = null,
-    suppressHydrationWarning: Validator[js.UndefOr[Boolean | Null]] = null,
-    tabIndex: Validator[js.UndefOr[Double | Null]] = null,
-    title: Validator[js.UndefOr[Null | String]] = null,
-    translate: Validator[js.UndefOr[yes | no | Null]] = null,
-    typeof: Validator[js.UndefOr[Null | String]] = null,
-    unselectable: Validator[js.UndefOr[on | off | Null]] = null,
-    vocab: Validator[js.UndefOr[Null | String]] = null
-  ): WeakValidationMapLinkProp = {
+  def apply(): WeakValidationMapLinkProp = {
     val __obj = js.Dynamic.literal()
-    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (`aria-atomic` != null) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (`aria-busy` != null) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (`aria-disabled` != null) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (`aria-expanded` != null) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (`aria-grabbed` != null) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (`aria-hidden` != null) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (`aria-modal` != null) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (`aria-multiline` != null) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (`aria-multiselectable` != null) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (`aria-readonly` != null) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (`aria-required` != null) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (`aria-selected` != null) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (defaultChecked != null) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (disableStyles != null) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (itemScope != null) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd.asInstanceOf[js.Any])
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(onAnimationIteration.asInstanceOf[js.Any])
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart.asInstanceOf[js.Any])
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(onAuxClick.asInstanceOf[js.Any])
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur.asInstanceOf[js.Any])
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(onCanPlay.asInstanceOf[js.Any])
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(onCanPlayThrough.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(onCompositionEnd.asInstanceOf[js.Any])
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(onCompositionStart.asInstanceOf[js.Any])
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(onCompositionUpdate.asInstanceOf[js.Any])
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
-    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy.asInstanceOf[js.Any])
-    if (onCut != null) __obj.updateDynamic("onCut")(onCut.asInstanceOf[js.Any])
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag.asInstanceOf[js.Any])
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter.asInstanceOf[js.Any])
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit.asInstanceOf[js.Any])
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave.asInstanceOf[js.Any])
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop.asInstanceOf[js.Any])
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(onDurationChange.asInstanceOf[js.Any])
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(onEmptied.asInstanceOf[js.Any])
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(onEncrypted.asInstanceOf[js.Any])
-    if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus.asInstanceOf[js.Any])
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput.asInstanceOf[js.Any])
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(onInvalid.asInstanceOf[js.Any])
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown.asInstanceOf[js.Any])
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress.asInstanceOf[js.Any])
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp.asInstanceOf[js.Any])
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart.asInstanceOf[js.Any])
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(onLoadedData.asInstanceOf[js.Any])
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(onLoadedMetadata.asInstanceOf[js.Any])
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown.asInstanceOf[js.Any])
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter.asInstanceOf[js.Any])
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove.asInstanceOf[js.Any])
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut.asInstanceOf[js.Any])
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver.asInstanceOf[js.Any])
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp.asInstanceOf[js.Any])
-    if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste.asInstanceOf[js.Any])
-    if (onPause != null) __obj.updateDynamic("onPause")(onPause.asInstanceOf[js.Any])
-    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay.asInstanceOf[js.Any])
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(onPlaying.asInstanceOf[js.Any])
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(onPointerCancel.asInstanceOf[js.Any])
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(onPointerDown.asInstanceOf[js.Any])
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(onPointerEnter.asInstanceOf[js.Any])
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(onPointerLeave.asInstanceOf[js.Any])
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(onPointerMove.asInstanceOf[js.Any])
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(onPointerOut.asInstanceOf[js.Any])
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(onPointerOver.asInstanceOf[js.Any])
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(onPointerUp.asInstanceOf[js.Any])
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress.asInstanceOf[js.Any])
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(onRateChange.asInstanceOf[js.Any])
-    if (onReset != null) __obj.updateDynamic("onReset")(onReset.asInstanceOf[js.Any])
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll.asInstanceOf[js.Any])
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(onSeeked.asInstanceOf[js.Any])
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(onSeeking.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (onStalled != null) __obj.updateDynamic("onStalled")(onStalled.asInstanceOf[js.Any])
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit.asInstanceOf[js.Any])
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(onSuspend.asInstanceOf[js.Any])
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(onTimeUpdate.asInstanceOf[js.Any])
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel.asInstanceOf[js.Any])
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd.asInstanceOf[js.Any])
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange.asInstanceOf[js.Any])
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting.asInstanceOf[js.Any])
-    if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (spellCheck != null) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suppressContentEditableWarning != null) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.asInstanceOf[js.Any])
-    if (suppressHydrationWarning != null) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
-    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
-    if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeakValidationMapLinkProp]
   }
+  @scala.inline
+  implicit class WeakValidationMapLinkPropOps[Self <: WeakValidationMapLinkProp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbout(value: Validator[js.UndefOr[Null | String]]): Self = this.set("about", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbout: Self = this.set("about", js.undefined)
+    @scala.inline
+    def setAccessKey(value: Validator[js.UndefOr[Null | String]]): Self = this.set("accessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKey: Self = this.set("accessKey", js.undefined)
+    @scala.inline
+    def `setAria-activedescendant`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-activedescendant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-activedescendant`: Self = this.set("aria-activedescendant", js.undefined)
+    @scala.inline
+    def `setAria-atomic`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-atomic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-atomic`: Self = this.set("aria-atomic", js.undefined)
+    @scala.inline
+    def `setAria-autocomplete`(value: Validator[js.UndefOr[none | `inline` | list_ | both | Null]]): Self = this.set("aria-autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-autocomplete`: Self = this.set("aria-autocomplete", js.undefined)
+    @scala.inline
+    def `setAria-busy`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-busy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-busy`: Self = this.set("aria-busy", js.undefined)
+    @scala.inline
+    def `setAria-checked`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = this.set("aria-checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-checked`: Self = this.set("aria-checked", js.undefined)
+    @scala.inline
+    def `setAria-colcount`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-colcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colcount`: Self = this.set("aria-colcount", js.undefined)
+    @scala.inline
+    def `setAria-colindex`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-colindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colindex`: Self = this.set("aria-colindex", js.undefined)
+    @scala.inline
+    def `setAria-colspan`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-colspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colspan`: Self = this.set("aria-colspan", js.undefined)
+    @scala.inline
+    def `setAria-controls`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-controls`: Self = this.set("aria-controls", js.undefined)
+    @scala.inline
+    def `setAria-current`(value: Validator[js.UndefOr[page | step | location | date | time_ | Boolean | Null]]): Self = this.set("aria-current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-current`: Self = this.set("aria-current", js.undefined)
+    @scala.inline
+    def `setAria-describedby`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-describedby`: Self = this.set("aria-describedby", js.undefined)
+    @scala.inline
+    def `setAria-details`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-details`: Self = this.set("aria-details", js.undefined)
+    @scala.inline
+    def `setAria-disabled`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-disabled`: Self = this.set("aria-disabled", js.undefined)
+    @scala.inline
+    def `setAria-dropeffect`(value: Validator[js.UndefOr[none | copy | execute | link_ | move | popup | Null]]): Self = this.set("aria-dropeffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-dropeffect`: Self = this.set("aria-dropeffect", js.undefined)
+    @scala.inline
+    def `setAria-errormessage`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-errormessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-errormessage`: Self = this.set("aria-errormessage", js.undefined)
+    @scala.inline
+    def `setAria-expanded`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-expanded`: Self = this.set("aria-expanded", js.undefined)
+    @scala.inline
+    def `setAria-flowto`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-flowto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-flowto`: Self = this.set("aria-flowto", js.undefined)
+    @scala.inline
+    def `setAria-grabbed`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-grabbed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-grabbed`: Self = this.set("aria-grabbed", js.undefined)
+    @scala.inline
+    def `setAria-haspopup`(value: Validator[js.UndefOr[menu_ | listbox | tree | grid | dialog | Boolean | Null]]): Self = this.set("aria-haspopup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-haspopup`: Self = this.set("aria-haspopup", js.undefined)
+    @scala.inline
+    def `setAria-hidden`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-hidden`: Self = this.set("aria-hidden", js.undefined)
+    @scala.inline
+    def `setAria-invalid`(value: Validator[js.UndefOr[grammar | spelling | Boolean | Null]]): Self = this.set("aria-invalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-invalid`: Self = this.set("aria-invalid", js.undefined)
+    @scala.inline
+    def `setAria-keyshortcuts`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-keyshortcuts`: Self = this.set("aria-keyshortcuts", js.undefined)
+    @scala.inline
+    def `setAria-label`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def `setAria-labelledby`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    @scala.inline
+    def `setAria-level`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-level`: Self = this.set("aria-level", js.undefined)
+    @scala.inline
+    def `setAria-live`(value: Validator[js.UndefOr[off | assertive | polite | Null]]): Self = this.set("aria-live", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-live`: Self = this.set("aria-live", js.undefined)
+    @scala.inline
+    def `setAria-modal`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-modal`: Self = this.set("aria-modal", js.undefined)
+    @scala.inline
+    def `setAria-multiline`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiline`: Self = this.set("aria-multiline", js.undefined)
+    @scala.inline
+    def `setAria-multiselectable`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-multiselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiselectable`: Self = this.set("aria-multiselectable", js.undefined)
+    @scala.inline
+    def `setAria-orientation`(value: Validator[js.UndefOr[horizontal | vertical | Null]]): Self = this.set("aria-orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-orientation`: Self = this.set("aria-orientation", js.undefined)
+    @scala.inline
+    def `setAria-owns`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-owns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-owns`: Self = this.set("aria-owns", js.undefined)
+    @scala.inline
+    def `setAria-placeholder`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-placeholder`: Self = this.set("aria-placeholder", js.undefined)
+    @scala.inline
+    def `setAria-posinset`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-posinset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-posinset`: Self = this.set("aria-posinset", js.undefined)
+    @scala.inline
+    def `setAria-pressed`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = this.set("aria-pressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-pressed`: Self = this.set("aria-pressed", js.undefined)
+    @scala.inline
+    def `setAria-readonly`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    @scala.inline
+    def `setAria-relevant`(value: Validator[js.UndefOr[additions | (`additions text`) | all | removals | text | Null]]): Self = this.set("aria-relevant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-relevant`: Self = this.set("aria-relevant", js.undefined)
+    @scala.inline
+    def `setAria-required`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-required`: Self = this.set("aria-required", js.undefined)
+    @scala.inline
+    def `setAria-roledescription`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-roledescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-roledescription`: Self = this.set("aria-roledescription", js.undefined)
+    @scala.inline
+    def `setAria-rowcount`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-rowcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowcount`: Self = this.set("aria-rowcount", js.undefined)
+    @scala.inline
+    def `setAria-rowindex`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-rowindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowindex`: Self = this.set("aria-rowindex", js.undefined)
+    @scala.inline
+    def `setAria-rowspan`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-rowspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowspan`: Self = this.set("aria-rowspan", js.undefined)
+    @scala.inline
+    def `setAria-selected`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-selected`: Self = this.set("aria-selected", js.undefined)
+    @scala.inline
+    def `setAria-setsize`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-setsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-setsize`: Self = this.set("aria-setsize", js.undefined)
+    @scala.inline
+    def `setAria-sort`(value: Validator[js.UndefOr[none | ascending | descending | other | Null]]): Self = this.set("aria-sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-sort`: Self = this.set("aria-sort", js.undefined)
+    @scala.inline
+    def `setAria-valuemax`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-valuemax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemax`: Self = this.set("aria-valuemax", js.undefined)
+    @scala.inline
+    def `setAria-valuemin`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-valuemin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemin`: Self = this.set("aria-valuemin", js.undefined)
+    @scala.inline
+    def `setAria-valuenow`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-valuenow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuenow`: Self = this.set("aria-valuenow", js.undefined)
+    @scala.inline
+    def `setAria-valuetext`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-valuetext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuetext`: Self = this.set("aria-valuetext", js.undefined)
+    @scala.inline
+    def setAutoCapitalize(value: Validator[js.UndefOr[Null | String]]): Self = this.set("autoCapitalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCapitalize: Self = this.set("autoCapitalize", js.undefined)
+    @scala.inline
+    def setAutoCorrect(value: Validator[js.UndefOr[Null | String]]): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    @scala.inline
+    def setAutoSave(value: Validator[js.UndefOr[Null | String]]): Self = this.set("autoSave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoSave: Self = this.set("autoSave", js.undefined)
+    @scala.inline
+    def setChildren(value: Validator[js.UndefOr[Null | ReactNode]]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColor(value: Validator[js.UndefOr[Null | String]]): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setContentEditable(value: Validator[js.UndefOr[inherit | Booleanish | Null]]): Self = this.set("contentEditable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEditable: Self = this.set("contentEditable", js.undefined)
+    @scala.inline
+    def setContextMenu(value: Validator[js.UndefOr[Null | String]]): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    @scala.inline
+    def setDangerouslySetInnerHTML(value: Validator[js.UndefOr[Html | Null]]): Self = this.set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDangerouslySetInnerHTML: Self = this.set("dangerouslySetInnerHTML", js.undefined)
+    @scala.inline
+    def setDatatype(value: Validator[js.UndefOr[Null | String]]): Self = this.set("datatype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatatype: Self = this.set("datatype", js.undefined)
+    @scala.inline
+    def setDefaultChecked(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("defaultChecked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultChecked: Self = this.set("defaultChecked", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: Validator[js.UndefOr[js.Array[String] | Double | Null | String]]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDir(value: Validator[js.UndefOr[Null | String]]): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setDisableStyles(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    @scala.inline
+    def setDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDraggable(value: Validator[js.UndefOr[Booleanish | Null]]): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setHidden(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHref(value: Validator[js.UndefOr[Null | String]]): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHref: Self = this.set("href", js.undefined)
+    @scala.inline
+    def setId(value: Validator[js.UndefOr[Null | String]]): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInlist(value: Validator[js.UndefOr[_ | Null]]): Self = this.set("inlist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlist: Self = this.set("inlist", js.undefined)
+    @scala.inline
+    def setInputMode(value: Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]): Self = this.set("inputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMode: Self = this.set("inputMode", js.undefined)
+    @scala.inline
+    def setIs(value: Validator[js.UndefOr[Null | String]]): Self = this.set("is", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs: Self = this.set("is", js.undefined)
+    @scala.inline
+    def setItemID(value: Validator[js.UndefOr[Null | String]]): Self = this.set("itemID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemID: Self = this.set("itemID", js.undefined)
+    @scala.inline
+    def setItemProp(value: Validator[js.UndefOr[Null | String]]): Self = this.set("itemProp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemProp: Self = this.set("itemProp", js.undefined)
+    @scala.inline
+    def setItemRef(value: Validator[js.UndefOr[Null | String]]): Self = this.set("itemRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemRef: Self = this.set("itemRef", js.undefined)
+    @scala.inline
+    def setItemScope(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("itemScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemScope: Self = this.set("itemScope", js.undefined)
+    @scala.inline
+    def setItemType(value: Validator[js.UndefOr[Null | String]]): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemType: Self = this.set("itemType", js.undefined)
+    @scala.inline
+    def setLang(value: Validator[js.UndefOr[Null | String]]): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setOnAbort(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onAbort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAbort: Self = this.set("onAbort", js.undefined)
+    @scala.inline
+    def setOnAnimationEnd(value: Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onAnimationEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
+    @scala.inline
+    def setOnAnimationIteration(value: Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onAnimationIteration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationIteration: Self = this.set("onAnimationIteration", js.undefined)
+    @scala.inline
+    def setOnAnimationStart(value: Validator[js.UndefOr[AnimationEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onAnimationStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationStart: Self = this.set("onAnimationStart", js.undefined)
+    @scala.inline
+    def setOnAuxClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onAuxClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAuxClick: Self = this.set("onAuxClick", js.undefined)
+    @scala.inline
+    def setOnBeforeInput(value: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onBeforeInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBeforeInput: Self = this.set("onBeforeInput", js.undefined)
+    @scala.inline
+    def setOnBlur(value: Validator[js.UndefOr[FocusEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnCanPlay(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onCanPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCanPlay: Self = this.set("onCanPlay", js.undefined)
+    @scala.inline
+    def setOnCanPlayThrough(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onCanPlayThrough", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCanPlayThrough: Self = this.set("onCanPlayThrough", js.undefined)
+    @scala.inline
+    def setOnChange(value: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnCompositionEnd(value: Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onCompositionEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionEnd: Self = this.set("onCompositionEnd", js.undefined)
+    @scala.inline
+    def setOnCompositionStart(value: Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onCompositionStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionStart: Self = this.set("onCompositionStart", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdate(value: Validator[js.UndefOr[CompositionEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onCompositionUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompositionUpdate: Self = this.set("onCompositionUpdate", js.undefined)
+    @scala.inline
+    def setOnContextMenu(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onContextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    @scala.inline
+    def setOnCopy(value: Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onCopy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    @scala.inline
+    def setOnCut(value: Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onCut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCut: Self = this.set("onCut", js.undefined)
+    @scala.inline
+    def setOnDoubleClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onDoubleClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    @scala.inline
+    def setOnDrag(value: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    @scala.inline
+    def setOnDragEnd(value: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onDragEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    @scala.inline
+    def setOnDragEnter(value: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onDragEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    @scala.inline
+    def setOnDragExit(value: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onDragExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragExit: Self = this.set("onDragExit", js.undefined)
+    @scala.inline
+    def setOnDragLeave(value: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onDragLeave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragLeave: Self = this.set("onDragLeave", js.undefined)
+    @scala.inline
+    def setOnDragOver(value: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onDragOver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    @scala.inline
+    def setOnDragStart(value: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onDragStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    @scala.inline
+    def setOnDrop(value: Validator[js.UndefOr[DragEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onDrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDrop: Self = this.set("onDrop", js.undefined)
+    @scala.inline
+    def setOnDurationChange(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onDurationChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDurationChange: Self = this.set("onDurationChange", js.undefined)
+    @scala.inline
+    def setOnEmptied(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onEmptied", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEmptied: Self = this.set("onEmptied", js.undefined)
+    @scala.inline
+    def setOnEncrypted(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEncrypted: Self = this.set("onEncrypted", js.undefined)
+    @scala.inline
+    def setOnEnded(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onEnded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    @scala.inline
+    def setOnError(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnFocus(value: Validator[js.UndefOr[FocusEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnInput(value: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnInvalid(value: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onInvalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInvalid: Self = this.set("onInvalid", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onKeyDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onKeyPress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnKeyUp(value: Validator[js.UndefOr[KeyboardEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onKeyUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKeyUp: Self = this.set("onKeyUp", js.undefined)
+    @scala.inline
+    def setOnLoad(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnLoadStart(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onLoadStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadStart: Self = this.set("onLoadStart", js.undefined)
+    @scala.inline
+    def setOnLoadedData(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onLoadedData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadedData: Self = this.set("onLoadedData", js.undefined)
+    @scala.inline
+    def setOnLoadedMetadata(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onLoadedMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoadedMetadata: Self = this.set("onLoadedMetadata", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onMouseDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onMouseEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onMouseLeave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onMouseMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseOut(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onMouseOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    @scala.inline
+    def setOnMouseOver(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onMouseOver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: Validator[js.UndefOr[MouseEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onMouseUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnPaste(value: Validator[js.UndefOr[ClipboardEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onPaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setOnPause(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onPause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    @scala.inline
+    def setOnPlay(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    @scala.inline
+    def setOnPlaying(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onPlaying", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPlaying: Self = this.set("onPlaying", js.undefined)
+    @scala.inline
+    def setOnPointerCancel(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]): Self = this.set("onPointerCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerCancel: Self = this.set("onPointerCancel", js.undefined)
+    @scala.inline
+    def setOnPointerDown(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]): Self = this.set("onPointerDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerDown: Self = this.set("onPointerDown", js.undefined)
+    @scala.inline
+    def setOnPointerEnter(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]): Self = this.set("onPointerEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerEnter: Self = this.set("onPointerEnter", js.undefined)
+    @scala.inline
+    def setOnPointerLeave(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]): Self = this.set("onPointerLeave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerLeave: Self = this.set("onPointerLeave", js.undefined)
+    @scala.inline
+    def setOnPointerMove(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]): Self = this.set("onPointerMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerMove: Self = this.set("onPointerMove", js.undefined)
+    @scala.inline
+    def setOnPointerOut(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]): Self = this.set("onPointerOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerOut: Self = this.set("onPointerOut", js.undefined)
+    @scala.inline
+    def setOnPointerOver(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]): Self = this.set("onPointerOver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerOver: Self = this.set("onPointerOver", js.undefined)
+    @scala.inline
+    def setOnPointerUp(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLAnchorElement]]]): Self = this.set("onPointerUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointerUp: Self = this.set("onPointerUp", js.undefined)
+    @scala.inline
+    def setOnProgress(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    @scala.inline
+    def setOnRateChange(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onRateChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRateChange: Self = this.set("onRateChange", js.undefined)
+    @scala.inline
+    def setOnReset(value: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onReset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    @scala.inline
+    def setOnScroll(value: Validator[js.UndefOr[Null | UIEventHandler[HTMLAnchorElement]]]): Self = this.set("onScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnSeeked(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onSeeked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSeeked: Self = this.set("onSeeked", js.undefined)
+    @scala.inline
+    def setOnSeeking(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onSeeking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSeeking: Self = this.set("onSeeking", js.undefined)
+    @scala.inline
+    def setOnSelect(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnStalled(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onStalled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStalled: Self = this.set("onStalled", js.undefined)
+    @scala.inline
+    def setOnSubmit(value: Validator[js.UndefOr[FormEventHandler[HTMLAnchorElement] | Null]]): Self = this.set("onSubmit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    @scala.inline
+    def setOnSuspend(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onSuspend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSuspend: Self = this.set("onSuspend", js.undefined)
+    @scala.inline
+    def setOnTimeUpdate(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onTimeUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTimeUpdate: Self = this.set("onTimeUpdate", js.undefined)
+    @scala.inline
+    def setOnTouchCancel(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]): Self = this.set("onTouchCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]): Self = this.set("onTouchEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]): Self = this.set("onTouchMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLAnchorElement]]]): Self = this.set("onTouchStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOnTransitionEnd(value: Validator[js.UndefOr[Null | TransitionEventHandler[HTMLAnchorElement]]]): Self = this.set("onTransitionEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    @scala.inline
+    def setOnVolumeChange(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onVolumeChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnVolumeChange: Self = this.set("onVolumeChange", js.undefined)
+    @scala.inline
+    def setOnWaiting(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLAnchorElement]]]): Self = this.set("onWaiting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnWaiting: Self = this.set("onWaiting", js.undefined)
+    @scala.inline
+    def setOnWheel(value: Validator[js.UndefOr[Null | WheelEventHandler[HTMLAnchorElement]]]): Self = this.set("onWheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: Validator[js.UndefOr[Null | String]]): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPrefix(value: Validator[js.UndefOr[Null | String]]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setProperty(value: Validator[js.UndefOr[Null | String]]): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setRadioGroup(value: Validator[js.UndefOr[Null | String]]): Self = this.set("radioGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadioGroup: Self = this.set("radioGroup", js.undefined)
+    @scala.inline
+    def setRef(value: Validator[js.UndefOr[Null | Ref[HTMLAnchorElement]]]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setResource(value: Validator[js.UndefOr[Null | String]]): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setResults(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setRole(value: Validator[js.UndefOr[Null | String]]): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setSecurity(value: Validator[js.UndefOr[Null | String]]): Self = this.set("security", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurity: Self = this.set("security", js.undefined)
+    @scala.inline
+    def setSlot(value: Validator[js.UndefOr[Null | String]]): Self = this.set("slot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlot: Self = this.set("slot", js.undefined)
+    @scala.inline
+    def setSpellCheck(value: Validator[js.UndefOr[Booleanish | Null]]): Self = this.set("spellCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellCheck: Self = this.set("spellCheck", js.undefined)
+    @scala.inline
+    def setStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSuppressContentEditableWarning(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("suppressContentEditableWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressContentEditableWarning: Self = this.set("suppressContentEditableWarning", js.undefined)
+    @scala.inline
+    def setSuppressHydrationWarning(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("suppressHydrationWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressHydrationWarning: Self = this.set("suppressHydrationWarning", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTitle(value: Validator[js.UndefOr[Null | String]]): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTranslate(value: Validator[js.UndefOr[yes | no | Null]]): Self = this.set("translate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslate: Self = this.set("translate", js.undefined)
+    @scala.inline
+    def setTypeof(value: Validator[js.UndefOr[Null | String]]): Self = this.set("typeof", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeof: Self = this.set("typeof", js.undefined)
+    @scala.inline
+    def setUnselectable(value: Validator[js.UndefOr[on | off | Null]]): Self = this.set("unselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnselectable: Self = this.set("unselectable", js.undefined)
+    @scala.inline
+    def setVocab(value: Validator[js.UndefOr[Null | String]]): Self = this.set("vocab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocab: Self = this.set("vocab", js.undefined)
+  }
+  
 }
 

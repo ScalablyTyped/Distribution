@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Expansion")
 @js.native
 class Expansion protected ()
-  extends typings.angularCompiler.publicApiMod.Expansion {
+  extends typings.angularCompiler.compilerMod.Expansion {
   def this(
     switchValue: String,
     `type`: String,

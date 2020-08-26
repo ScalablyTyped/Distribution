@@ -19,7 +19,7 @@ trait Options extends js.Object {
     */
   var Gid: js.UndefOr[typings.awsSdk.datasyncMod.Gid] = js.native
   /**
-    * A value that determines the type of logs DataSync will deliver to your AWS CloudWatch Logs file. If set to OFF, no logs will be delivered. BASIC will deliver a few logs per transfer operation and TRANSFER will deliver a verbose log that contains logs for every file that is transferred.
+    * A value that determines the type of logs that DataSync publishes to a log stream in the Amazon CloudWatch log group that you provide. For more information about providing a log group for DataSync, see CloudWatchLogGroupArn. If set to OFF, no logs are published. BASIC publishes logs on errors for individual files transferred, and TRANSFER publishes logs for every file or object that is transferred and integrity checked.
     */
   var LogLevel: js.UndefOr[typings.awsSdk.datasyncMod.LogLevel] = js.native
   /**
@@ -43,49 +43,93 @@ trait Options extends js.Object {
     */
   var PreserveDevices: js.UndefOr[typings.awsSdk.datasyncMod.PreserveDevices] = js.native
   /**
-    * A value that determines whether tasks should be queued before executing the tasks. If set to ENABLED, the tasks will be queued. The default is ENABLED. If you use the same agent to run multiple tasks you can enable the tasks to run in series. For more information see queue-task-execution.
+    * A value that determines whether tasks should be queued before executing the tasks. If set to ENABLED, the tasks will be queued. The default is ENABLED. If you use the same agent to run multiple tasks, you can enable the tasks to run in series. For more information, see queue-task-execution.
     */
   var TaskQueueing: js.UndefOr[typings.awsSdk.datasyncMod.TaskQueueing] = js.native
+  /**
+    * TransferMode has two values: CHANGED and ALL. CHANGED performs an "incremental" or "delta sync", it compares file modification time between source and destination to determine which files need to be transferred. ALL skips destination inventory and transfers all files discovered on the source.
+    */
+  var TransferMode: js.UndefOr[typings.awsSdk.datasyncMod.TransferMode] = js.native
   /**
     * The user ID (UID) of the file's owner.  Default value: INT_VALUE. This preserves the integer value of the ID. INT_VALUE: Preserve the integer value of UID and group ID (GID) (recommended). NONE: Ignore UID and GID. 
     */
   var Uid: js.UndefOr[typings.awsSdk.datasyncMod.Uid] = js.native
   /**
-    * A value that determines whether a data integrity verification should be performed at the end of a task execution after all data and metadata have been transferred.  Default value: POINT_IN_TIME_CONSISTENT. POINT_IN_TIME_CONSISTENT: Perform verification (recommended).  ONLY_FILES_TRANSFERRED: Perform verification on only files that were transferred. NONE: Skip verification.
+    * A value that determines whether a data integrity verification should be performed at the end of a task execution after all data and metadata have been transferred. For more information, see create-task  Default value: POINT_IN_TIME_CONSISTENT. ONLY_FILES_TRANSFERRED (recommended): Perform verification only on files that were transferred.  POINT_IN_TIME_CONSISTENT: Scan the entire source and entire destination at the end of the transfer to verify that source and destination are fully synchronized. This option isn't supported when transferring to S3 Glacier or S3 Glacier Deep Archive storage classes. NONE: No additional verification is done at the end of the transfer, but all data transmissions are integrity-checked with checksum verification during the transfer.
     */
   var VerifyMode: js.UndefOr[typings.awsSdk.datasyncMod.VerifyMode] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    Atime: Atime = null,
-    BytesPerSecond: js.UndefOr[BytesPerSecond] = js.undefined,
-    Gid: Gid = null,
-    LogLevel: LogLevel = null,
-    Mtime: Mtime = null,
-    OverwriteMode: OverwriteMode = null,
-    PosixPermissions: PosixPermissions = null,
-    PreserveDeletedFiles: PreserveDeletedFiles = null,
-    PreserveDevices: PreserveDevices = null,
-    TaskQueueing: TaskQueueing = null,
-    Uid: Uid = null,
-    VerifyMode: VerifyMode = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (Atime != null) __obj.updateDynamic("Atime")(Atime.asInstanceOf[js.Any])
-    if (!js.isUndefined(BytesPerSecond)) __obj.updateDynamic("BytesPerSecond")(BytesPerSecond.get.asInstanceOf[js.Any])
-    if (Gid != null) __obj.updateDynamic("Gid")(Gid.asInstanceOf[js.Any])
-    if (LogLevel != null) __obj.updateDynamic("LogLevel")(LogLevel.asInstanceOf[js.Any])
-    if (Mtime != null) __obj.updateDynamic("Mtime")(Mtime.asInstanceOf[js.Any])
-    if (OverwriteMode != null) __obj.updateDynamic("OverwriteMode")(OverwriteMode.asInstanceOf[js.Any])
-    if (PosixPermissions != null) __obj.updateDynamic("PosixPermissions")(PosixPermissions.asInstanceOf[js.Any])
-    if (PreserveDeletedFiles != null) __obj.updateDynamic("PreserveDeletedFiles")(PreserveDeletedFiles.asInstanceOf[js.Any])
-    if (PreserveDevices != null) __obj.updateDynamic("PreserveDevices")(PreserveDevices.asInstanceOf[js.Any])
-    if (TaskQueueing != null) __obj.updateDynamic("TaskQueueing")(TaskQueueing.asInstanceOf[js.Any])
-    if (Uid != null) __obj.updateDynamic("Uid")(Uid.asInstanceOf[js.Any])
-    if (VerifyMode != null) __obj.updateDynamic("VerifyMode")(VerifyMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAtime(value: Atime): Self = this.set("Atime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtime: Self = this.set("Atime", js.undefined)
+    @scala.inline
+    def setBytesPerSecond(value: BytesPerSecond): Self = this.set("BytesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesPerSecond: Self = this.set("BytesPerSecond", js.undefined)
+    @scala.inline
+    def setGid(value: Gid): Self = this.set("Gid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGid: Self = this.set("Gid", js.undefined)
+    @scala.inline
+    def setLogLevel(value: LogLevel): Self = this.set("LogLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("LogLevel", js.undefined)
+    @scala.inline
+    def setMtime(value: Mtime): Self = this.set("Mtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMtime: Self = this.set("Mtime", js.undefined)
+    @scala.inline
+    def setOverwriteMode(value: OverwriteMode): Self = this.set("OverwriteMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverwriteMode: Self = this.set("OverwriteMode", js.undefined)
+    @scala.inline
+    def setPosixPermissions(value: PosixPermissions): Self = this.set("PosixPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosixPermissions: Self = this.set("PosixPermissions", js.undefined)
+    @scala.inline
+    def setPreserveDeletedFiles(value: PreserveDeletedFiles): Self = this.set("PreserveDeletedFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveDeletedFiles: Self = this.set("PreserveDeletedFiles", js.undefined)
+    @scala.inline
+    def setPreserveDevices(value: PreserveDevices): Self = this.set("PreserveDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveDevices: Self = this.set("PreserveDevices", js.undefined)
+    @scala.inline
+    def setTaskQueueing(value: TaskQueueing): Self = this.set("TaskQueueing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskQueueing: Self = this.set("TaskQueueing", js.undefined)
+    @scala.inline
+    def setTransferMode(value: TransferMode): Self = this.set("TransferMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferMode: Self = this.set("TransferMode", js.undefined)
+    @scala.inline
+    def setUid(value: Uid): Self = this.set("Uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("Uid", js.undefined)
+    @scala.inline
+    def setVerifyMode(value: VerifyMode): Self = this.set("VerifyMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifyMode: Self = this.set("VerifyMode", js.undefined)
+  }
+  
 }
 

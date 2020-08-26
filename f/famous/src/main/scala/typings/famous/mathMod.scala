@@ -25,6 +25,7 @@ object mathMod extends js.Object {
   @js.native
   class Vec2 () extends js.Object {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
     var x: Double = js.native
     var y: Double = js.native
@@ -40,6 +41,7 @@ object mathMod extends js.Object {
     def rotate(theta: Double): Vec2 = js.native
     def scale(s: Double): Vec2 = js.native
     def set(): Vec3 = js.native
+    def set(x: js.UndefOr[scala.Nothing], y: Double): Vec3 = js.native
     def set(x: Double): Vec3 = js.native
     def set(x: Double, y: Double): Vec3 = js.native
     def subtract(v: Vec2): Vec2 = js.native
@@ -49,7 +51,11 @@ object mathMod extends js.Object {
   @js.native
   class Vec3 () extends js.Object {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
     var x: Double = js.native
     var y: Double = js.native
@@ -72,7 +78,11 @@ object mathMod extends js.Object {
     def rotateZ(theta: Double): Vec3 = js.native
     def scale(s: Double): Vec3 = js.native
     def set(): Vec3 = js.native
+    def set(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Vec3 = js.native
+    def set(x: js.UndefOr[scala.Nothing], y: Double): Vec3 = js.native
+    def set(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Vec3 = js.native
     def set(x: Double): Vec3 = js.native
+    def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vec3 = js.native
     def set(x: Double, y: Double): Vec3 = js.native
     def set(x: Double, y: Double, z: Double): Vec3 = js.native
     def subtract(v: Vec3): Vec3 = js.native

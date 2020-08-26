@@ -49,7 +49,11 @@ class PolyfillBlob protected () extends EventTarget {
     * @param  contentType Optional, content type of new Blob object
     */
   def slice(): PolyfillBlob = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], contentType: String): PolyfillBlob = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): PolyfillBlob = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double, contentType: String): PolyfillBlob = js.native
   def slice(start: Double): PolyfillBlob = js.native
+  def slice(start: Double, end: js.UndefOr[scala.Nothing], contentType: String): PolyfillBlob = js.native
   def slice(start: Double, end: Double): PolyfillBlob = js.native
   def slice(start: Double, end: Double, contentType: String): PolyfillBlob = js.native
 }

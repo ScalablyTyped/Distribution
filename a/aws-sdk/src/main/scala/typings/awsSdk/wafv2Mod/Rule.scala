@@ -34,18 +34,38 @@ trait Rule extends js.Object {
 
 object Rule {
   @scala.inline
-  def apply(
-    Name: EntityName,
-    Priority: RulePriority,
-    Statement: Statement,
-    VisibilityConfig: VisibilityConfig,
-    Action: RuleAction = null,
-    OverrideAction: OverrideAction = null
-  ): Rule = {
+  def apply(Name: EntityName, Priority: RulePriority, Statement: Statement, VisibilityConfig: VisibilityConfig): Rule = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], Statement = Statement.asInstanceOf[js.Any], VisibilityConfig = VisibilityConfig.asInstanceOf[js.Any])
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (OverrideAction != null) __obj.updateDynamic("OverrideAction")(OverrideAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
+  @scala.inline
+  implicit class RuleOps[Self <: Rule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: RulePriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatement(value: Statement): Self = this.set("Statement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVisibilityConfig(value: VisibilityConfig): Self = this.set("VisibilityConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAction(value: RuleAction): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setOverrideAction(value: OverrideAction): Self = this.set("OverrideAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideAction: Self = this.set("OverrideAction", js.undefined)
+  }
+  
 }
 

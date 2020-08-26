@@ -13,6 +13,13 @@ object encrypt extends js.Object {
     buffer: Buffer,
     compressed: Boolean,
     passphrase: String,
+    progressCallback: js.UndefOr[scala.Nothing],
+    scryptParams: ScryptParams
+  ): String = js.native
+  def apply(
+    buffer: Buffer,
+    compressed: Boolean,
+    passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit]
   ): String = js.native
   def apply(

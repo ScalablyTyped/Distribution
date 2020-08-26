@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object lastMod extends js.Object {
   def last[T, D](): OperatorFunction[T, T | D] = js.native
+  def last[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): OperatorFunction[T, T | D] = js.native
   def last[T, D](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, T | D] = js.native
   def last[T, D](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],

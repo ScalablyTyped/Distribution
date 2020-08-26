@@ -34,11 +34,11 @@ class JWT protected ()
     email: js.UndefOr[String],
     keyFile: js.UndefOr[String],
     key: js.UndefOr[String],
-    scopes: js.UndefOr[js.Array[String] | String],
+    scopes: js.UndefOr[String | js.Array[String]],
     subject: js.UndefOr[String],
     keyId: js.UndefOr[String]
   ) = this()
-  var access: js.UndefOr[js.Any] = js.native
+  var access: js.Any = js.native
   var additionalClaims: js.UndefOr[js.Object] = js.native
   var authorizeAsync: js.Any = js.native
   /**
@@ -73,15 +73,6 @@ class JWT protected ()
   def createScoped(): JWT = js.native
   def createScoped(scopes: String): JWT = js.native
   def createScoped(scopes: js.Array[String]): JWT = js.native
-  /**
-    * Indicates whether the credential requires scopes to be created by calling
-    * createScoped before use.
-    * @deprecated
-    * @return false if createScoped does not need to be called.
-    */
-  def createScopedRequired(): Boolean = js.native
-  /* CompleteClass */
-  override def fetchIdToken(targetAudience: String): js.Promise[String] = js.native
   /**
     * Creates a JWT credentials instance using an API Key for authentication.
     * @param apiKey The API Key in string form.

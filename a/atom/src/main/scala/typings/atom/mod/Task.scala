@@ -14,13 +14,13 @@ class Task protected () extends js.Object {
   /** Call a function when an event is emitted by the child process. */
   // tslint:disable-next-line:no-any
   def on(eventName: String, callback: js.Function1[/* param */ js.Any, Unit]): Disposable = js.native
-  def send(): Unit = js.native
   /**
     *  Send message to the task.
     *  Throws an error if this task has already been terminated or if sending a
     *  message to the child process fails.
     */
   // tslint:disable-next-line:no-any
+  def send(): Unit = js.native
   def send(message: String): Unit = js.native
   def send(message: js.Array[_]): Unit = js.native
   def send(message: js.Object): Unit = js.native

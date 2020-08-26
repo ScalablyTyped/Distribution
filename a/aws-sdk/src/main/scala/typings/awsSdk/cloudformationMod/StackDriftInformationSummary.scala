@@ -18,10 +18,28 @@ trait StackDriftInformationSummary extends js.Object {
 
 object StackDriftInformationSummary {
   @scala.inline
-  def apply(StackDriftStatus: StackDriftStatus, LastCheckTimestamp: Timestamp = null): StackDriftInformationSummary = {
+  def apply(StackDriftStatus: StackDriftStatus): StackDriftInformationSummary = {
     val __obj = js.Dynamic.literal(StackDriftStatus = StackDriftStatus.asInstanceOf[js.Any])
-    if (LastCheckTimestamp != null) __obj.updateDynamic("LastCheckTimestamp")(LastCheckTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackDriftInformationSummary]
   }
+  @scala.inline
+  implicit class StackDriftInformationSummaryOps[Self <: StackDriftInformationSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackDriftStatus(value: StackDriftStatus): Self = this.set("StackDriftStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastCheckTimestamp(value: Timestamp): Self = this.set("LastCheckTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastCheckTimestamp: Self = this.set("LastCheckTimestamp", js.undefined)
+  }
+  
 }
 

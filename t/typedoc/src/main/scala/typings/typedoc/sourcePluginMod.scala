@@ -12,6 +12,7 @@ object sourcePluginMod extends js.Object {
   @js.native
   class SourcePlugin () extends AbstractComponent[Converter] {
     var basePath: js.Any = js.native
+    val disableSources: Boolean = js.native
     var fileMappings: js.Any = js.native
     var getSourceFile: js.Any = js.native
     var onBegin: js.Any = js.native

@@ -85,42 +85,86 @@ trait SchemaTransferCounters extends js.Object {
 
 object SchemaTransferCounters {
   @scala.inline
-  def apply(
-    bytesCopiedToSink: String = null,
-    bytesDeletedFromSink: String = null,
-    bytesDeletedFromSource: String = null,
-    bytesFailedToDeleteFromSink: String = null,
-    bytesFoundFromSource: String = null,
-    bytesFoundOnlyFromSink: String = null,
-    bytesFromSourceFailed: String = null,
-    bytesFromSourceSkippedBySync: String = null,
-    objectsCopiedToSink: String = null,
-    objectsDeletedFromSink: String = null,
-    objectsDeletedFromSource: String = null,
-    objectsFailedToDeleteFromSink: String = null,
-    objectsFoundFromSource: String = null,
-    objectsFoundOnlyFromSink: String = null,
-    objectsFromSourceFailed: String = null,
-    objectsFromSourceSkippedBySync: String = null
-  ): SchemaTransferCounters = {
+  def apply(): SchemaTransferCounters = {
     val __obj = js.Dynamic.literal()
-    if (bytesCopiedToSink != null) __obj.updateDynamic("bytesCopiedToSink")(bytesCopiedToSink.asInstanceOf[js.Any])
-    if (bytesDeletedFromSink != null) __obj.updateDynamic("bytesDeletedFromSink")(bytesDeletedFromSink.asInstanceOf[js.Any])
-    if (bytesDeletedFromSource != null) __obj.updateDynamic("bytesDeletedFromSource")(bytesDeletedFromSource.asInstanceOf[js.Any])
-    if (bytesFailedToDeleteFromSink != null) __obj.updateDynamic("bytesFailedToDeleteFromSink")(bytesFailedToDeleteFromSink.asInstanceOf[js.Any])
-    if (bytesFoundFromSource != null) __obj.updateDynamic("bytesFoundFromSource")(bytesFoundFromSource.asInstanceOf[js.Any])
-    if (bytesFoundOnlyFromSink != null) __obj.updateDynamic("bytesFoundOnlyFromSink")(bytesFoundOnlyFromSink.asInstanceOf[js.Any])
-    if (bytesFromSourceFailed != null) __obj.updateDynamic("bytesFromSourceFailed")(bytesFromSourceFailed.asInstanceOf[js.Any])
-    if (bytesFromSourceSkippedBySync != null) __obj.updateDynamic("bytesFromSourceSkippedBySync")(bytesFromSourceSkippedBySync.asInstanceOf[js.Any])
-    if (objectsCopiedToSink != null) __obj.updateDynamic("objectsCopiedToSink")(objectsCopiedToSink.asInstanceOf[js.Any])
-    if (objectsDeletedFromSink != null) __obj.updateDynamic("objectsDeletedFromSink")(objectsDeletedFromSink.asInstanceOf[js.Any])
-    if (objectsDeletedFromSource != null) __obj.updateDynamic("objectsDeletedFromSource")(objectsDeletedFromSource.asInstanceOf[js.Any])
-    if (objectsFailedToDeleteFromSink != null) __obj.updateDynamic("objectsFailedToDeleteFromSink")(objectsFailedToDeleteFromSink.asInstanceOf[js.Any])
-    if (objectsFoundFromSource != null) __obj.updateDynamic("objectsFoundFromSource")(objectsFoundFromSource.asInstanceOf[js.Any])
-    if (objectsFoundOnlyFromSink != null) __obj.updateDynamic("objectsFoundOnlyFromSink")(objectsFoundOnlyFromSink.asInstanceOf[js.Any])
-    if (objectsFromSourceFailed != null) __obj.updateDynamic("objectsFromSourceFailed")(objectsFromSourceFailed.asInstanceOf[js.Any])
-    if (objectsFromSourceSkippedBySync != null) __obj.updateDynamic("objectsFromSourceSkippedBySync")(objectsFromSourceSkippedBySync.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransferCounters]
   }
+  @scala.inline
+  implicit class SchemaTransferCountersOps[Self <: SchemaTransferCounters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytesCopiedToSink(value: String): Self = this.set("bytesCopiedToSink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesCopiedToSink: Self = this.set("bytesCopiedToSink", js.undefined)
+    @scala.inline
+    def setBytesDeletedFromSink(value: String): Self = this.set("bytesDeletedFromSink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesDeletedFromSink: Self = this.set("bytesDeletedFromSink", js.undefined)
+    @scala.inline
+    def setBytesDeletedFromSource(value: String): Self = this.set("bytesDeletedFromSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesDeletedFromSource: Self = this.set("bytesDeletedFromSource", js.undefined)
+    @scala.inline
+    def setBytesFailedToDeleteFromSink(value: String): Self = this.set("bytesFailedToDeleteFromSink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesFailedToDeleteFromSink: Self = this.set("bytesFailedToDeleteFromSink", js.undefined)
+    @scala.inline
+    def setBytesFoundFromSource(value: String): Self = this.set("bytesFoundFromSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesFoundFromSource: Self = this.set("bytesFoundFromSource", js.undefined)
+    @scala.inline
+    def setBytesFoundOnlyFromSink(value: String): Self = this.set("bytesFoundOnlyFromSink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesFoundOnlyFromSink: Self = this.set("bytesFoundOnlyFromSink", js.undefined)
+    @scala.inline
+    def setBytesFromSourceFailed(value: String): Self = this.set("bytesFromSourceFailed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesFromSourceFailed: Self = this.set("bytesFromSourceFailed", js.undefined)
+    @scala.inline
+    def setBytesFromSourceSkippedBySync(value: String): Self = this.set("bytesFromSourceSkippedBySync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesFromSourceSkippedBySync: Self = this.set("bytesFromSourceSkippedBySync", js.undefined)
+    @scala.inline
+    def setObjectsCopiedToSink(value: String): Self = this.set("objectsCopiedToSink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectsCopiedToSink: Self = this.set("objectsCopiedToSink", js.undefined)
+    @scala.inline
+    def setObjectsDeletedFromSink(value: String): Self = this.set("objectsDeletedFromSink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectsDeletedFromSink: Self = this.set("objectsDeletedFromSink", js.undefined)
+    @scala.inline
+    def setObjectsDeletedFromSource(value: String): Self = this.set("objectsDeletedFromSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectsDeletedFromSource: Self = this.set("objectsDeletedFromSource", js.undefined)
+    @scala.inline
+    def setObjectsFailedToDeleteFromSink(value: String): Self = this.set("objectsFailedToDeleteFromSink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectsFailedToDeleteFromSink: Self = this.set("objectsFailedToDeleteFromSink", js.undefined)
+    @scala.inline
+    def setObjectsFoundFromSource(value: String): Self = this.set("objectsFoundFromSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectsFoundFromSource: Self = this.set("objectsFoundFromSource", js.undefined)
+    @scala.inline
+    def setObjectsFoundOnlyFromSink(value: String): Self = this.set("objectsFoundOnlyFromSink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectsFoundOnlyFromSink: Self = this.set("objectsFoundOnlyFromSink", js.undefined)
+    @scala.inline
+    def setObjectsFromSourceFailed(value: String): Self = this.set("objectsFromSourceFailed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectsFromSourceFailed: Self = this.set("objectsFromSourceFailed", js.undefined)
+    @scala.inline
+    def setObjectsFromSourceSkippedBySync(value: String): Self = this.set("objectsFromSourceSkippedBySync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectsFromSourceSkippedBySync: Self = this.set("objectsFromSourceSkippedBySync", js.undefined)
+  }
+  
 }
 

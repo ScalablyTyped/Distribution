@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * This action node returns `FAILURE` always.
   *
   */
+@js.native
 trait Failer extends BaseNode
 
 object Failer {

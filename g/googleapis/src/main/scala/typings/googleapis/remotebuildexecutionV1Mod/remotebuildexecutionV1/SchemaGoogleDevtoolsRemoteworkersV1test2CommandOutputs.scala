@@ -29,14 +29,30 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs extends js.Object {
 
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs {
   @scala.inline
-  def apply(
-    exitCode: js.UndefOr[Double] = js.undefined,
-    outputs: SchemaGoogleDevtoolsRemoteworkersV1test2Digest = null
-  ): SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs = {
+  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputsOps[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandOutputs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    @scala.inline
+    def setOutputs(value: SchemaGoogleDevtoolsRemoteworkersV1test2Digest): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("outputs", js.undefined)
+  }
+  
 }
 

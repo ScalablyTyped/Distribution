@@ -35,16 +35,36 @@ trait SchemaAdmissionRule extends js.Object {
 
 object SchemaAdmissionRule {
   @scala.inline
-  def apply(
-    enforcementMode: String = null,
-    evaluationMode: String = null,
-    requireAttestationsBy: js.Array[String] = null
-  ): SchemaAdmissionRule = {
+  def apply(): SchemaAdmissionRule = {
     val __obj = js.Dynamic.literal()
-    if (enforcementMode != null) __obj.updateDynamic("enforcementMode")(enforcementMode.asInstanceOf[js.Any])
-    if (evaluationMode != null) __obj.updateDynamic("evaluationMode")(evaluationMode.asInstanceOf[js.Any])
-    if (requireAttestationsBy != null) __obj.updateDynamic("requireAttestationsBy")(requireAttestationsBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAdmissionRule]
   }
+  @scala.inline
+  implicit class SchemaAdmissionRuleOps[Self <: SchemaAdmissionRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnforcementMode(value: String): Self = this.set("enforcementMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforcementMode: Self = this.set("enforcementMode", js.undefined)
+    @scala.inline
+    def setEvaluationMode(value: String): Self = this.set("evaluationMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationMode: Self = this.set("evaluationMode", js.undefined)
+    @scala.inline
+    def setRequireAttestationsByVarargs(value: String*): Self = this.set("requireAttestationsBy", js.Array(value :_*))
+    @scala.inline
+    def setRequireAttestationsBy(value: js.Array[String]): Self = this.set("requireAttestationsBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireAttestationsBy: Self = this.set("requireAttestationsBy", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ Parse the accept-language header from a HTTP request
 | Full name          | accept-language-parser |
 | Keywords           | accept-language, i18n, parser |
 | # releases         | 2 |
-| # dependents       | 51 |
-| # downloads        | 1493381 |
+| # dependents       | 53 |
+| # downloads        | 1587430 |
 | # stars            | 1 |
 
 ## Links

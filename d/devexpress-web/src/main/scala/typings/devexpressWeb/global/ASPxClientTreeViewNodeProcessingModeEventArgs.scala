@@ -17,15 +17,5 @@ class ASPxClientTreeViewNodeProcessingModeEventArgs protected ()
     * @param node An ASPxClientTreeViewNode object representing the node related to the event.
     */
   def this(processOnServer: Boolean, node: typings.devexpressWeb.ASPxClientTreeViewNode) = this()
-  /**
-    * Gets a node object related to the event.
-    */
-  /* CompleteClass */
-  override var node: typings.devexpressWeb.ASPxClientTreeViewNode = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

@@ -38,36 +38,52 @@ trait ParamsResourceCitiesList extends StandardParameters {
 
 object ParamsResourceCitiesList {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    countryDartIds: js.Array[String] = null,
-    dartIds: js.Array[String] = null,
-    fields: String = null,
-    key: String = null,
-    namePrefix: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    profileId: String = null,
-    quotaUser: String = null,
-    regionDartIds: js.Array[String] = null,
-    userIp: String = null
-  ): ParamsResourceCitiesList = {
+  def apply(): ParamsResourceCitiesList = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (countryDartIds != null) __obj.updateDynamic("countryDartIds")(countryDartIds.asInstanceOf[js.Any])
-    if (dartIds != null) __obj.updateDynamic("dartIds")(dartIds.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (regionDartIds != null) __obj.updateDynamic("regionDartIds")(regionDartIds.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceCitiesList]
   }
+  @scala.inline
+  implicit class ParamsResourceCitiesListOps[Self <: ParamsResourceCitiesList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCountryDartIdsVarargs(value: String*): Self = this.set("countryDartIds", js.Array(value :_*))
+    @scala.inline
+    def setCountryDartIds(value: js.Array[String]): Self = this.set("countryDartIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryDartIds: Self = this.set("countryDartIds", js.undefined)
+    @scala.inline
+    def setDartIdsVarargs(value: String*): Self = this.set("dartIds", js.Array(value :_*))
+    @scala.inline
+    def setDartIds(value: js.Array[String]): Self = this.set("dartIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDartIds: Self = this.set("dartIds", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: String): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    @scala.inline
+    def setRegionDartIdsVarargs(value: String*): Self = this.set("regionDartIds", js.Array(value :_*))
+    @scala.inline
+    def setRegionDartIds(value: js.Array[String]): Self = this.set("regionDartIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionDartIds: Self = this.set("regionDartIds", js.undefined)
+  }
+  
 }
 

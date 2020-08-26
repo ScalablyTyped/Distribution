@@ -62,36 +62,74 @@ trait Vp8Settings extends js.Object {
 
 object Vp8Settings {
   @scala.inline
-  def apply(
-    Bitrate: js.UndefOr[integerMin1000Max1152000000] = js.undefined,
-    FramerateControl: Vp8FramerateControl = null,
-    FramerateConversionAlgorithm: Vp8FramerateConversionAlgorithm = null,
-    FramerateDenominator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    FramerateNumerator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    GopSize: js.UndefOr[doubleMin0] = js.undefined,
-    HrdBufferSize: js.UndefOr[integerMin0Max47185920] = js.undefined,
-    MaxBitrate: js.UndefOr[integerMin1000Max1152000000] = js.undefined,
-    ParControl: Vp8ParControl = null,
-    ParDenominator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    ParNumerator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    QualityTuningLevel: Vp8QualityTuningLevel = null,
-    RateControlMode: Vp8RateControlMode = null
-  ): Vp8Settings = {
+  def apply(): Vp8Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
-    if (FramerateControl != null) __obj.updateDynamic("FramerateControl")(FramerateControl.asInstanceOf[js.Any])
-    if (FramerateConversionAlgorithm != null) __obj.updateDynamic("FramerateConversionAlgorithm")(FramerateConversionAlgorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GopSize)) __obj.updateDynamic("GopSize")(GopSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HrdBufferSize)) __obj.updateDynamic("HrdBufferSize")(HrdBufferSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate.get.asInstanceOf[js.Any])
-    if (ParControl != null) __obj.updateDynamic("ParControl")(ParControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParDenominator)) __obj.updateDynamic("ParDenominator")(ParDenominator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParNumerator)) __obj.updateDynamic("ParNumerator")(ParNumerator.get.asInstanceOf[js.Any])
-    if (QualityTuningLevel != null) __obj.updateDynamic("QualityTuningLevel")(QualityTuningLevel.asInstanceOf[js.Any])
-    if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vp8Settings]
   }
+  @scala.inline
+  implicit class Vp8SettingsOps[Self <: Vp8Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBitrate(value: integerMin1000Max1152000000): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    @scala.inline
+    def setFramerateControl(value: Vp8FramerateControl): Self = this.set("FramerateControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateControl: Self = this.set("FramerateControl", js.undefined)
+    @scala.inline
+    def setFramerateConversionAlgorithm(value: Vp8FramerateConversionAlgorithm): Self = this.set("FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateConversionAlgorithm: Self = this.set("FramerateConversionAlgorithm", js.undefined)
+    @scala.inline
+    def setFramerateDenominator(value: integerMin1Max2147483647): Self = this.set("FramerateDenominator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateDenominator: Self = this.set("FramerateDenominator", js.undefined)
+    @scala.inline
+    def setFramerateNumerator(value: integerMin1Max2147483647): Self = this.set("FramerateNumerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateNumerator: Self = this.set("FramerateNumerator", js.undefined)
+    @scala.inline
+    def setGopSize(value: doubleMin0): Self = this.set("GopSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGopSize: Self = this.set("GopSize", js.undefined)
+    @scala.inline
+    def setHrdBufferSize(value: integerMin0Max47185920): Self = this.set("HrdBufferSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHrdBufferSize: Self = this.set("HrdBufferSize", js.undefined)
+    @scala.inline
+    def setMaxBitrate(value: integerMin1000Max1152000000): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+    @scala.inline
+    def setParControl(value: Vp8ParControl): Self = this.set("ParControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParControl: Self = this.set("ParControl", js.undefined)
+    @scala.inline
+    def setParDenominator(value: integerMin1Max2147483647): Self = this.set("ParDenominator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParDenominator: Self = this.set("ParDenominator", js.undefined)
+    @scala.inline
+    def setParNumerator(value: integerMin1Max2147483647): Self = this.set("ParNumerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParNumerator: Self = this.set("ParNumerator", js.undefined)
+    @scala.inline
+    def setQualityTuningLevel(value: Vp8QualityTuningLevel): Self = this.set("QualityTuningLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualityTuningLevel: Self = this.set("QualityTuningLevel", js.undefined)
+    @scala.inline
+    def setRateControlMode(value: Vp8RateControlMode): Self = this.set("RateControlMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateControlMode: Self = this.set("RateControlMode", js.undefined)
+  }
+  
 }
 

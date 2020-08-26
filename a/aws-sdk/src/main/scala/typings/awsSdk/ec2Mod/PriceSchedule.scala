@@ -26,18 +26,38 @@ trait PriceSchedule extends js.Object {
 
 object PriceSchedule {
   @scala.inline
-  def apply(
-    Active: js.UndefOr[Boolean] = js.undefined,
-    CurrencyCode: CurrencyCodeValues = null,
-    Price: js.UndefOr[Double] = js.undefined,
-    Term: js.UndefOr[Long] = js.undefined
-  ): PriceSchedule = {
+  def apply(): PriceSchedule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Price)) __obj.updateDynamic("Price")(Price.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Term)) __obj.updateDynamic("Term")(Term.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriceSchedule]
   }
+  @scala.inline
+  implicit class PriceScheduleOps[Self <: PriceSchedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("Active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("Active", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: CurrencyCodeValues): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setPrice(value: Double): Self = this.set("Price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("Price", js.undefined)
+    @scala.inline
+    def setTerm(value: Long): Self = this.set("Term", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerm: Self = this.set("Term", js.undefined)
+  }
+  
 }
 

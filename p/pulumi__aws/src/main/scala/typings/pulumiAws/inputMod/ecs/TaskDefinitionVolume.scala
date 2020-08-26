@@ -12,7 +12,7 @@ trait TaskDefinitionVolume extends js.Object {
     */
   var dockerVolumeConfiguration: js.UndefOr[Input[TaskDefinitionVolumeDockerVolumeConfiguration]] = js.native
   /**
-    * Used to configure a EFS volume. Can be used only with an EC2 type task.
+    * Used to configure a EFS volume.
     */
   var efsVolumeConfiguration: js.UndefOr[Input[TaskDefinitionVolumeEfsVolumeConfiguration]] = js.native
   /**
@@ -28,17 +28,36 @@ trait TaskDefinitionVolume extends js.Object {
 
 object TaskDefinitionVolume {
   @scala.inline
-  def apply(
-    name: Input[String],
-    dockerVolumeConfiguration: Input[TaskDefinitionVolumeDockerVolumeConfiguration] = null,
-    efsVolumeConfiguration: Input[TaskDefinitionVolumeEfsVolumeConfiguration] = null,
-    hostPath: Input[String] = null
-  ): TaskDefinitionVolume = {
+  def apply(name: Input[String]): TaskDefinitionVolume = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (dockerVolumeConfiguration != null) __obj.updateDynamic("dockerVolumeConfiguration")(dockerVolumeConfiguration.asInstanceOf[js.Any])
-    if (efsVolumeConfiguration != null) __obj.updateDynamic("efsVolumeConfiguration")(efsVolumeConfiguration.asInstanceOf[js.Any])
-    if (hostPath != null) __obj.updateDynamic("hostPath")(hostPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinitionVolume]
   }
+  @scala.inline
+  implicit class TaskDefinitionVolumeOps[Self <: TaskDefinitionVolume] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDockerVolumeConfiguration(value: Input[TaskDefinitionVolumeDockerVolumeConfiguration]): Self = this.set("dockerVolumeConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDockerVolumeConfiguration: Self = this.set("dockerVolumeConfiguration", js.undefined)
+    @scala.inline
+    def setEfsVolumeConfiguration(value: Input[TaskDefinitionVolumeEfsVolumeConfiguration]): Self = this.set("efsVolumeConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEfsVolumeConfiguration: Self = this.set("efsVolumeConfiguration", js.undefined)
+    @scala.inline
+    def setHostPath(value: Input[String]): Self = this.set("hostPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostPath: Self = this.set("hostPath", js.undefined)
+  }
+  
 }
 

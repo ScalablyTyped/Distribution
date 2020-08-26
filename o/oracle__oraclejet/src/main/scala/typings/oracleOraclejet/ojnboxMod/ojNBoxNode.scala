@@ -1210,15 +1210,25 @@ trait ojNBoxNode extends JetElement[ojNBoxNodeSettableProperties] {
   @JSName("setProperty")
   def setProperty_categories(property: categories, value: js.Array[String]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_color(property: color): Unit = js.native
+  @JSName("setProperty")
   def setProperty_color(property: color, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_column(property: column, value: String): Unit = js.native
   @JSName("setProperty")
+  def setProperty_groupCategory(property: groupCategory): Unit = js.native
+  @JSName("setProperty")
   def setProperty_groupCategory(property: groupCategory, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_icon(property: icon): Unit = js.native
   @JSName("setProperty")
   def setProperty_icon(property: icon, value: BorderRadiusBorderWidth): Unit = js.native
   @JSName("setProperty")
+  def setProperty_indicatorColor(property: indicatorColor): Unit = js.native
+  @JSName("setProperty")
   def setProperty_indicatorColor(property: indicatorColor, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_indicatorIcon(property: indicatorIcon): Unit = js.native
   @JSName("setProperty")
   def setProperty_indicatorIcon(property: indicatorIcon, value: BorderWidthColor): Unit = js.native
   @JSName("setProperty")

@@ -107,7 +107,6 @@ package object fileMod {
   type RotateEncryptionKeyOptions = java.lang.String | typings.node.Buffer | typings.googleCloudStorage.fileMod.EncryptionKeyOptions
   type RotateEncryptionKeyResponse = typings.googleCloudStorage.fileMod.CopyResponse
   type SaveCallback = js.Function1[/* err */ js.UndefOr[typings.std.Error | scala.Null], scala.Unit]
-  type SaveOptions = typings.googleCloudStorage.fileMod.CreateWriteStreamOptions
   type SetFileMetadataCallback = js.Function2[
     /* err */ js.UndefOr[typings.std.Error | scala.Null], 
     /* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 

@@ -22,16 +22,34 @@ trait ClusterParameterStatus extends js.Object {
 
 object ClusterParameterStatus {
   @scala.inline
-  def apply(
-    ParameterApplyErrorDescription: String = null,
-    ParameterApplyStatus: String = null,
-    ParameterName: String = null
-  ): ClusterParameterStatus = {
+  def apply(): ClusterParameterStatus = {
     val __obj = js.Dynamic.literal()
-    if (ParameterApplyErrorDescription != null) __obj.updateDynamic("ParameterApplyErrorDescription")(ParameterApplyErrorDescription.asInstanceOf[js.Any])
-    if (ParameterApplyStatus != null) __obj.updateDynamic("ParameterApplyStatus")(ParameterApplyStatus.asInstanceOf[js.Any])
-    if (ParameterName != null) __obj.updateDynamic("ParameterName")(ParameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterParameterStatus]
   }
+  @scala.inline
+  implicit class ClusterParameterStatusOps[Self <: ClusterParameterStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameterApplyErrorDescription(value: String): Self = this.set("ParameterApplyErrorDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterApplyErrorDescription: Self = this.set("ParameterApplyErrorDescription", js.undefined)
+    @scala.inline
+    def setParameterApplyStatus(value: String): Self = this.set("ParameterApplyStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterApplyStatus: Self = this.set("ParameterApplyStatus", js.undefined)
+    @scala.inline
+    def setParameterName(value: String): Self = this.set("ParameterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterName: Self = this.set("ParameterName", js.undefined)
+  }
+  
 }
 

@@ -25,6 +25,7 @@ trait EditorManager extends Observable {
   def addI18n(code: String, items: js.Object): Unit = js.native
   def createEditor(id: String, settings: js.Object): Editor = js.native
   def execCommand(cmd: String): Boolean = js.native
+  def execCommand(cmd: String, ui: js.UndefOr[scala.Nothing], value: String): Boolean = js.native
   def execCommand(cmd: String, ui: Boolean): Boolean = js.native
   def execCommand(cmd: String, ui: Boolean, value: String): Boolean = js.native
   def get(id: String): Editor = js.native

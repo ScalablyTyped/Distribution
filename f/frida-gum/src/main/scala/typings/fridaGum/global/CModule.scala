@@ -43,11 +43,5 @@ class CModule protected ()
     */
   def this(source: String) = this()
   def this(source: String, symbols: CSymbols) = this()
-  /**
-    * Eagerly unmaps the module from memory. Useful for short-lived modules
-    * when waiting for a future garbage collection isn't desirable.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
 

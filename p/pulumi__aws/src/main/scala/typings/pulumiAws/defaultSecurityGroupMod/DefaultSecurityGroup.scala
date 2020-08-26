@@ -24,6 +24,7 @@ class DefaultSecurityGroup protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: DefaultSecurityGroupArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: DefaultSecurityGroupArgs, opts: CustomResourceOptions) = this()
   val arn: Output_[String] = js.native
   /**
@@ -50,9 +51,9 @@ class DefaultSecurityGroup protected () extends CustomResource {
   val ownerId: Output_[String] = js.native
   val revokeRulesOnDelete: Output_[js.UndefOr[Boolean]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The VPC ID. **Note that changing
     * the `vpcId` will _not_ restore any default security group rules that were
@@ -72,8 +73,10 @@ object DefaultSecurityGroup extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): DefaultSecurityGroup = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DefaultSecurityGroup = js.native
   def get(name: String, id: Input[ID], state: DefaultSecurityGroupState): DefaultSecurityGroup = js.native
   def get(name: String, id: Input[ID], state: DefaultSecurityGroupState, opts: CustomResourceOptions): DefaultSecurityGroup = js.native
   /**

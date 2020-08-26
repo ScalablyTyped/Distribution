@@ -32,11 +32,30 @@ trait SchemaSeekRequest extends js.Object {
 
 object SchemaSeekRequest {
   @scala.inline
-  def apply(snapshot: String = null, time: String = null): SchemaSeekRequest = {
+  def apply(): SchemaSeekRequest = {
     val __obj = js.Dynamic.literal()
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSeekRequest]
   }
+  @scala.inline
+  implicit class SchemaSeekRequestOps[Self <: SchemaSeekRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshot(value: String): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshot: Self = this.set("snapshot", js.undefined)
+    @scala.inline
+    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+  }
+  
 }
 

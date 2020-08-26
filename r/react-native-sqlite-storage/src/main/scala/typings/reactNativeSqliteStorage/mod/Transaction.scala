@@ -7,7 +7,26 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Transaction extends js.Object {
   def executeSql(sqlStatement: String): Unit = js.native
+  def executeSql(
+    sqlStatement: String,
+    arguments: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: StatementErrorCallback
+  ): Unit = js.native
+  def executeSql(sqlStatement: String, arguments: js.UndefOr[scala.Nothing], callback: StatementCallback): Unit = js.native
+  def executeSql(
+    sqlStatement: String,
+    arguments: js.UndefOr[scala.Nothing],
+    callback: StatementCallback,
+    errorCallback: StatementErrorCallback
+  ): Unit = js.native
   def executeSql(sqlStatement: String, arguments: js.Array[_]): Unit = js.native
+  def executeSql(
+    sqlStatement: String,
+    arguments: js.Array[_],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: StatementErrorCallback
+  ): Unit = js.native
   def executeSql(sqlStatement: String, arguments: js.Array[_], callback: StatementCallback): Unit = js.native
   def executeSql(
     sqlStatement: String,

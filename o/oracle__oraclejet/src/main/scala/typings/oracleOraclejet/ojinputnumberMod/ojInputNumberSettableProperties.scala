@@ -24,22 +24,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ojInputNumberSettableProperties extends editableValueSettableProperties[Double | Null, Double | Null, String] {
-  var asyncValidators: js.Array[AsyncValidator[Double]]
-  var autocomplete: on | off | String
-  var autofocus: Boolean
-  var converter: Converter[Double] | RegisteredConverter
-  var max: Double | Null
-  var min: Double | Null
-  var placeholder: String | Null
-  val rawValue: String
-  var readonly: Boolean | Null
-  var required: Boolean
-  var step: Double | Null
+  var asyncValidators: js.Array[AsyncValidator[Double]] = js.native
+  var autocomplete: on | off | String = js.native
+  var autofocus: Boolean = js.native
+  var converter: Converter[Double] | RegisteredConverter = js.native
+  var max: Double | Null = js.native
+  var min: Double | Null = js.native
+  var placeholder: String | Null = js.native
+  val rawValue: String = js.native
+  var readonly: Boolean | Null = js.native
+  var required: Boolean = js.native
+  var step: Double | Null = js.native
   @JSName("translations")
-  var translations_ojInputNumberSettableProperties: NumberRange
-  var validators: js.Array[Validator[Double] | RegisteredValidator]
-  var virtualKeyboard: auto | number | text
+  var translations_ojInputNumberSettableProperties: NumberRange = js.native
+  var validators: js.Array[Validator[Double] | RegisteredValidator] = js.native
+  var virtualKeyboard: auto | number | text = js.native
 }
 
 object ojInputNumberSettableProperties {
@@ -60,17 +61,65 @@ object ojInputNumberSettableProperties {
     translations: NumberRange,
     valid: valid | pending | invalidHidden | invalidShown,
     validators: js.Array[Validator[Double] | RegisteredValidator],
-    virtualKeyboard: auto | number | text,
-    describedBy: String = null,
-    max: Double = null.asInstanceOf[Double],
-    min: Double = null.asInstanceOf[Double],
-    placeholder: String = null,
-    readonly: Boolean = null.asInstanceOf[Boolean],
-    step: Double = null.asInstanceOf[Double],
-    value: Double = null.asInstanceOf[Double]
+    virtualKeyboard: auto | number | text
   ): ojInputNumberSettableProperties = {
-    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validators = validators.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any], describedBy = describedBy.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validators = validators.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojInputNumberSettableProperties]
   }
+  @scala.inline
+  implicit class ojInputNumberSettablePropertiesOps[Self <: ojInputNumberSettableProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsyncValidatorsVarargs(value: AsyncValidator[Double]*): Self = this.set("asyncValidators", js.Array(value :_*))
+    @scala.inline
+    def setAsyncValidators(value: js.Array[AsyncValidator[Double]]): Self = this.set("asyncValidators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutocomplete(value: on | off | String): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutofocus(value: Boolean): Self = this.set("autofocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConverter(value: Converter[Double] | RegisteredConverter): Self = this.set("converter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRawValue(value: String): Self = this.set("rawValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTranslations(value: NumberRange): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValidatorsVarargs(value: (Validator[Double] | RegisteredValidator)*): Self = this.set("validators", js.Array(value :_*))
+    @scala.inline
+    def setValidators(value: js.Array[Validator[Double] | RegisteredValidator]): Self = this.set("validators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualKeyboard(value: auto | number | text): Self = this.set("virtualKeyboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxNull: Self = this.set("max", null)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinNull: Self = this.set("min", null)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlaceholderNull: Self = this.set("placeholder", null)
+    @scala.inline
+    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReadonlyNull: Self = this.set("readonly", null)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStepNull: Self = this.set("step", null)
+  }
+  
 }
 

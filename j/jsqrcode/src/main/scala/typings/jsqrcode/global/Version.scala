@@ -16,24 +16,6 @@ class Version protected ()
     ecBlocks3: typings.jsqrcode.ECBlocks,
     ecBlocks4: typings.jsqrcode.ECBlocks
   ) = this()
-  /* CompleteClass */
-  override val AlignmentPatternCenters: js.Array[Double] = js.native
-  /* CompleteClass */
-  override val DimensionForVersion: Double = js.native
-  /* CompleteClass */
-  override val TotalCodewords: Double = js.native
-  /* CompleteClass */
-  override val VersionNumber: Double = js.native
-  /* CompleteClass */
-  override var alignmentPatternCenters: js.Array[Double] = js.native
-  /* CompleteClass */
-  override var ecBlocks: js.Array[typings.jsqrcode.ECBlocks] = js.native
-  /* CompleteClass */
-  override var versionNumber: Double = js.native
-  /* CompleteClass */
-  override def buildFunctionPattern(): typings.jsqrcode.BitMatrix = js.native
-  /* CompleteClass */
-  override def getECBlocksForLevel(ecLevel: typings.jsqrcode.ErrorCorrectionLevel): typings.jsqrcode.ECBlocks = js.native
 }
 
 /* static members */

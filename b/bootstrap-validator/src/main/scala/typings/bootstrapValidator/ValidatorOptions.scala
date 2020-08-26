@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ValidatorOptions extends js.Object {
-  var custom: js.UndefOr[js.Any] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var disable: js.UndefOr[Boolean] = js.undefined
-  var feedback: js.UndefOr[js.Any] = js.undefined
-  var focus: js.UndefOr[Boolean] = js.undefined
-  var html: js.UndefOr[Boolean] = js.undefined
+  var custom: js.UndefOr[js.Any] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var disable: js.UndefOr[Boolean] = js.native
+  var feedback: js.UndefOr[js.Any] = js.native
+  var focus: js.UndefOr[Boolean] = js.native
+  var html: js.UndefOr[Boolean] = js.native
 }
 
 object ValidatorOptions {
   @scala.inline
-  def apply(
-    custom: js.Any = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    disable: js.UndefOr[Boolean] = js.undefined,
-    feedback: js.Any = null,
-    focus: js.UndefOr[Boolean] = js.undefined,
-    html: js.UndefOr[Boolean] = js.undefined
-  ): ValidatorOptions = {
+  def apply(): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.get.asInstanceOf[js.Any])
-    if (feedback != null) __obj.updateDynamic("feedback")(feedback.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
+  @scala.inline
+  implicit class ValidatorOptionsOps[Self <: ValidatorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustom(value: js.Any): Self = this.set("custom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom: Self = this.set("custom", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDisable(value: Boolean): Self = this.set("disable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisable: Self = this.set("disable", js.undefined)
+    @scala.inline
+    def setFeedback(value: js.Any): Self = this.set("feedback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeedback: Self = this.set("feedback", js.undefined)
+    @scala.inline
+    def setFocus(value: Boolean): Self = this.set("focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setHtml(value: Boolean): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+  }
+  
 }
 

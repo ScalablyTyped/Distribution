@@ -26,10 +26,26 @@ trait SchemaGoogleCloudVisionV1p4beta1GcsDestination extends js.Object {
 
 object SchemaGoogleCloudVisionV1p4beta1GcsDestination {
   @scala.inline
-  def apply(uri: String = null): SchemaGoogleCloudVisionV1p4beta1GcsDestination = {
+  def apply(): SchemaGoogleCloudVisionV1p4beta1GcsDestination = {
     val __obj = js.Dynamic.literal()
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p4beta1GcsDestination]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p4beta1GcsDestinationOps[Self <: SchemaGoogleCloudVisionV1p4beta1GcsDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

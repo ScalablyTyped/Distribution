@@ -5,41 +5,77 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseScale extends js.Object {
-  var domain: js.UndefOr[(js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef] = js.undefined
-  var domainMax: js.UndefOr[Double | SignalRef] = js.undefined
-  var domainMid: js.UndefOr[Double | SignalRef] = js.undefined
-  var domainMin: js.UndefOr[Double | SignalRef] = js.undefined
-  var domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined
-  var name: String
-  var reverse: js.UndefOr[Boolean | SignalRef] = js.undefined
-  var round: js.UndefOr[Boolean | SignalRef] = js.undefined
-  var `type`: js.UndefOr[ScaleType] = js.undefined
+  var domain: js.UndefOr[(js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef] = js.native
+  var domainMax: js.UndefOr[Double | SignalRef] = js.native
+  var domainMid: js.UndefOr[Double | SignalRef] = js.native
+  var domainMin: js.UndefOr[Double | SignalRef] = js.native
+  var domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.native
+  var name: String = js.native
+  var reverse: js.UndefOr[Boolean | SignalRef] = js.native
+  var round: js.UndefOr[Boolean | SignalRef] = js.native
+  var `type`: js.UndefOr[ScaleType] = js.native
 }
 
 object BaseScale {
   @scala.inline
-  def apply(
-    name: String,
-    domain: (js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef = null,
-    domainMax: Double | SignalRef = null,
-    domainMid: Double | SignalRef = null,
-    domainMin: Double | SignalRef = null,
-    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
-    reverse: Boolean | SignalRef = null,
-    round: Boolean | SignalRef = null,
-    `type`: ScaleType = null
-  ): BaseScale = {
+  def apply(name: String): BaseScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
-    if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
-    if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
-    if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseScale]
   }
+  @scala.inline
+  implicit class BaseScaleOps[Self <: BaseScale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainVarargs(value: (Null | String | Double | Boolean | SignalRef)*): Self = this.set("domain", js.Array(value :_*))
+    @scala.inline
+    def setDomain(value: (js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setDomainMax(value: Double | SignalRef): Self = this.set("domainMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainMax: Self = this.set("domainMax", js.undefined)
+    @scala.inline
+    def setDomainMid(value: Double | SignalRef): Self = this.set("domainMid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainMid: Self = this.set("domainMid", js.undefined)
+    @scala.inline
+    def setDomainMin(value: Double | SignalRef): Self = this.set("domainMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainMin: Self = this.set("domainMin", js.undefined)
+    @scala.inline
+    def setDomainRawVarargs(value: js.Any*): Self = this.set("domainRaw", js.Array(value :_*))
+    @scala.inline
+    def setDomainRaw(value: js.Array[_] | SignalRef): Self = this.set("domainRaw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainRaw: Self = this.set("domainRaw", js.undefined)
+    @scala.inline
+    def setDomainRawNull: Self = this.set("domainRaw", null)
+    @scala.inline
+    def setReverse(value: Boolean | SignalRef): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverse: Self = this.set("reverse", js.undefined)
+    @scala.inline
+    def setRound(value: Boolean | SignalRef): Self = this.set("round", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRound: Self = this.set("round", js.undefined)
+    @scala.inline
+    def setType(value: ScaleType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

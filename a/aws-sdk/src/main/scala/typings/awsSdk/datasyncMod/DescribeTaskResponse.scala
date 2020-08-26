@@ -70,40 +70,88 @@ trait DescribeTaskResponse extends js.Object {
 
 object DescribeTaskResponse {
   @scala.inline
-  def apply(
-    CloudWatchLogGroupArn: LogGroupArn = null,
-    CreationTime: Time = null,
-    CurrentTaskExecutionArn: TaskExecutionArn = null,
-    DestinationLocationArn: LocationArn = null,
-    DestinationNetworkInterfaceArns: DestinationNetworkInterfaceArns = null,
-    ErrorCode: String = null,
-    ErrorDetail: String = null,
-    Excludes: FilterList = null,
-    Name: TagValue = null,
-    Options: Options = null,
-    Schedule: TaskSchedule = null,
-    SourceLocationArn: LocationArn = null,
-    SourceNetworkInterfaceArns: SourceNetworkInterfaceArns = null,
-    Status: TaskStatus = null,
-    TaskArn: TaskArn = null
-  ): DescribeTaskResponse = {
+  def apply(): DescribeTaskResponse = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchLogGroupArn != null) __obj.updateDynamic("CloudWatchLogGroupArn")(CloudWatchLogGroupArn.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (CurrentTaskExecutionArn != null) __obj.updateDynamic("CurrentTaskExecutionArn")(CurrentTaskExecutionArn.asInstanceOf[js.Any])
-    if (DestinationLocationArn != null) __obj.updateDynamic("DestinationLocationArn")(DestinationLocationArn.asInstanceOf[js.Any])
-    if (DestinationNetworkInterfaceArns != null) __obj.updateDynamic("DestinationNetworkInterfaceArns")(DestinationNetworkInterfaceArns.asInstanceOf[js.Any])
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (ErrorDetail != null) __obj.updateDynamic("ErrorDetail")(ErrorDetail.asInstanceOf[js.Any])
-    if (Excludes != null) __obj.updateDynamic("Excludes")(Excludes.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (SourceLocationArn != null) __obj.updateDynamic("SourceLocationArn")(SourceLocationArn.asInstanceOf[js.Any])
-    if (SourceNetworkInterfaceArns != null) __obj.updateDynamic("SourceNetworkInterfaceArns")(SourceNetworkInterfaceArns.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TaskArn != null) __obj.updateDynamic("TaskArn")(TaskArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTaskResponse]
   }
+  @scala.inline
+  implicit class DescribeTaskResponseOps[Self <: DescribeTaskResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchLogGroupArn(value: LogGroupArn): Self = this.set("CloudWatchLogGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLogGroupArn: Self = this.set("CloudWatchLogGroupArn", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setCurrentTaskExecutionArn(value: TaskExecutionArn): Self = this.set("CurrentTaskExecutionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentTaskExecutionArn: Self = this.set("CurrentTaskExecutionArn", js.undefined)
+    @scala.inline
+    def setDestinationLocationArn(value: LocationArn): Self = this.set("DestinationLocationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationLocationArn: Self = this.set("DestinationLocationArn", js.undefined)
+    @scala.inline
+    def setDestinationNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = this.set("DestinationNetworkInterfaceArns", js.Array(value :_*))
+    @scala.inline
+    def setDestinationNetworkInterfaceArns(value: DestinationNetworkInterfaceArns): Self = this.set("DestinationNetworkInterfaceArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationNetworkInterfaceArns: Self = this.set("DestinationNetworkInterfaceArns", js.undefined)
+    @scala.inline
+    def setErrorCode(value: String): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setErrorDetail(value: String): Self = this.set("ErrorDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorDetail: Self = this.set("ErrorDetail", js.undefined)
+    @scala.inline
+    def setExcludesVarargs(value: FilterRule*): Self = this.set("Excludes", js.Array(value :_*))
+    @scala.inline
+    def setExcludes(value: FilterList): Self = this.set("Excludes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludes: Self = this.set("Excludes", js.undefined)
+    @scala.inline
+    def setName(value: TagValue): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOptions(value: Options): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setSchedule(value: TaskSchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    @scala.inline
+    def setSourceLocationArn(value: LocationArn): Self = this.set("SourceLocationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLocationArn: Self = this.set("SourceLocationArn", js.undefined)
+    @scala.inline
+    def setSourceNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = this.set("SourceNetworkInterfaceArns", js.Array(value :_*))
+    @scala.inline
+    def setSourceNetworkInterfaceArns(value: SourceNetworkInterfaceArns): Self = this.set("SourceNetworkInterfaceArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceNetworkInterfaceArns: Self = this.set("SourceNetworkInterfaceArns", js.undefined)
+    @scala.inline
+    def setStatus(value: TaskStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTaskArn(value: TaskArn): Self = this.set("TaskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskArn: Self = this.set("TaskArn", js.undefined)
+  }
+  
 }
 

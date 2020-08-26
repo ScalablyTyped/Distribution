@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-diff
 
-Typings are for version 25.5.0
+Typings are for version 26.2.0
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 25.5.0
 | ------------------ | :-------------: |
 | Full name          | jest-diff |
 | Keywords           | - |
-| # releases         | 53 |
+| # releases         | 51 |
 | # dependents       | 113 |
-| # downloads        | 253381364 |
+| # downloads        | 255751565 |
 | # stars            | 0 |
 
 ## Links

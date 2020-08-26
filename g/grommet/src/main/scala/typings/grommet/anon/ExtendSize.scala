@@ -5,18 +5,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExtendSize extends js.Object {
-  var extend: js.UndefOr[ExtendType] = js.undefined
-  var size: js.UndefOr[String] = js.undefined
+  var extend: js.UndefOr[ExtendType] = js.native
+  var size: js.UndefOr[String] = js.native
 }
 
 object ExtendSize {
   @scala.inline
-  def apply(extend: ExtendType = null, size: String = null): ExtendSize = {
+  def apply(): ExtendSize = {
     val __obj = js.Dynamic.literal()
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendSize]
   }
+  @scala.inline
+  implicit class ExtendSizeOps[Self <: ExtendSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExtendFunction1(value: /* args */ js.Any => Unit): Self = this.set("extend", js.Any.fromFunction1(value))
+    @scala.inline
+    def setExtend(value: ExtendType): Self = this.set("extend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtend: Self = this.set("extend", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

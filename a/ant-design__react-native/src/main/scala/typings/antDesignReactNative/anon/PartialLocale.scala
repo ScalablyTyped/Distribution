@@ -5,42 +5,73 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/locale-provider.Locale> */
+@js.native
 trait PartialLocale extends js.Object {
-  var DatePicker: js.UndefOr[DismissText] = js.undefined
-  var DatePickerView: js.UndefOr[Day] = js.undefined
-  var InputItem: js.UndefOr[BackspaceLabel] = js.undefined
-  var ListView: js.UndefOr[Done] = js.undefined
-  var Modal: js.UndefOr[ButtonText] = js.undefined
-  var Pagination: js.UndefOr[NextText] = js.undefined
-  var Picker: js.UndefOr[Extra] = js.undefined
-  var SearchBar: js.UndefOr[CancelText] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
+  var DatePicker: js.UndefOr[DismissText] = js.native
+  var DatePickerView: js.UndefOr[Day] = js.native
+  var InputItem: js.UndefOr[BackspaceLabel] = js.native
+  var ListView: js.UndefOr[Done] = js.native
+  var Modal: js.UndefOr[ButtonText] = js.native
+  var Pagination: js.UndefOr[NextText] = js.native
+  var Picker: js.UndefOr[Extra] = js.native
+  var SearchBar: js.UndefOr[CancelText] = js.native
+  var locale: js.UndefOr[String] = js.native
 }
 
 object PartialLocale {
   @scala.inline
-  def apply(
-    DatePicker: DismissText = null,
-    DatePickerView: Day = null,
-    InputItem: BackspaceLabel = null,
-    ListView: Done = null,
-    Modal: ButtonText = null,
-    Pagination: NextText = null,
-    Picker: Extra = null,
-    SearchBar: CancelText = null,
-    locale: String = null
-  ): PartialLocale = {
+  def apply(): PartialLocale = {
     val __obj = js.Dynamic.literal()
-    if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker.asInstanceOf[js.Any])
-    if (DatePickerView != null) __obj.updateDynamic("DatePickerView")(DatePickerView.asInstanceOf[js.Any])
-    if (InputItem != null) __obj.updateDynamic("InputItem")(InputItem.asInstanceOf[js.Any])
-    if (ListView != null) __obj.updateDynamic("ListView")(ListView.asInstanceOf[js.Any])
-    if (Modal != null) __obj.updateDynamic("Modal")(Modal.asInstanceOf[js.Any])
-    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination.asInstanceOf[js.Any])
-    if (Picker != null) __obj.updateDynamic("Picker")(Picker.asInstanceOf[js.Any])
-    if (SearchBar != null) __obj.updateDynamic("SearchBar")(SearchBar.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialLocale]
   }
+  @scala.inline
+  implicit class PartialLocaleOps[Self <: PartialLocale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatePicker(value: DismissText): Self = this.set("DatePicker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatePicker: Self = this.set("DatePicker", js.undefined)
+    @scala.inline
+    def setDatePickerView(value: Day): Self = this.set("DatePickerView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatePickerView: Self = this.set("DatePickerView", js.undefined)
+    @scala.inline
+    def setInputItem(value: BackspaceLabel): Self = this.set("InputItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputItem: Self = this.set("InputItem", js.undefined)
+    @scala.inline
+    def setListView(value: Done): Self = this.set("ListView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListView: Self = this.set("ListView", js.undefined)
+    @scala.inline
+    def setModal(value: ButtonText): Self = this.set("Modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModal: Self = this.set("Modal", js.undefined)
+    @scala.inline
+    def setPagination(value: NextText): Self = this.set("Pagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagination: Self = this.set("Pagination", js.undefined)
+    @scala.inline
+    def setPicker(value: Extra): Self = this.set("Picker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePicker: Self = this.set("Picker", js.undefined)
+    @scala.inline
+    def setSearchBar(value: CancelText): Self = this.set("SearchBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchBar: Self = this.set("SearchBar", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+  }
+  
 }
 

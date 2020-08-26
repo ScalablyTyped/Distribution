@@ -20,6 +20,7 @@ trait ArbiterStatic extends js.Object {
     * @param data Pass data to subscribers that contains details about the message.
     */
   def publish(msg: String): Boolean = js.native
+  def publish(msg: String, data: js.UndefOr[scala.Nothing], options: PublishOptions): Boolean = js.native
   def publish(msg: String, data: js.Any): Boolean = js.native
   def publish(msg: String, data: js.Any, options: PublishOptions): Boolean = js.native
   /**

@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Inherited extends js.Object {
   /** Whether this permission is inherited. This field is always populated. This is an output-only field. */
-  var inherited: js.UndefOr[Boolean] = js.undefined
+  var inherited: js.UndefOr[Boolean] = js.native
   /** The ID of the item from which this permission is inherited. This is an output-only field. */
-  var inheritedFrom: js.UndefOr[String] = js.undefined
+  var inheritedFrom: js.UndefOr[String] = js.native
   /**
     * The permission type for this user. While new values may be added in future, the following are currently possible:
     * - file
     * - member
     */
-  var permissionType: js.UndefOr[String] = js.undefined
+  var permissionType: js.UndefOr[String] = js.native
   /**
     * The primary role for this user. While new values may be added in the future, the following are currently possible:
     * - organizer
@@ -23,23 +24,43 @@ trait Inherited extends js.Object {
     * - commenter
     * - reader
     */
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[String] = js.native
 }
 
 object Inherited {
   @scala.inline
-  def apply(
-    inherited: js.UndefOr[Boolean] = js.undefined,
-    inheritedFrom: String = null,
-    permissionType: String = null,
-    role: String = null
-  ): Inherited = {
+  def apply(): Inherited = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inherited)) __obj.updateDynamic("inherited")(inherited.get.asInstanceOf[js.Any])
-    if (inheritedFrom != null) __obj.updateDynamic("inheritedFrom")(inheritedFrom.asInstanceOf[js.Any])
-    if (permissionType != null) __obj.updateDynamic("permissionType")(permissionType.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inherited]
   }
+  @scala.inline
+  implicit class InheritedOps[Self <: Inherited] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInherited(value: Boolean): Self = this.set("inherited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInherited: Self = this.set("inherited", js.undefined)
+    @scala.inline
+    def setInheritedFrom(value: String): Self = this.set("inheritedFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInheritedFrom: Self = this.set("inheritedFrom", js.undefined)
+    @scala.inline
+    def setPermissionType(value: String): Self = this.set("permissionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionType: Self = this.set("permissionType", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+  }
+  
 }
 

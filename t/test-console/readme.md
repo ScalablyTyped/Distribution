@@ -11,8 +11,8 @@ A simple and pragmatic library for testing Node.js console output.
 | Full name          | test-console |
 | Keywords           | console, stdout, stderr, test, spy, test double |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 113390 |
+| # dependents       | 12 |
+| # downloads        | 117450 |
 | # stars            | 1 |
 
 ## Links

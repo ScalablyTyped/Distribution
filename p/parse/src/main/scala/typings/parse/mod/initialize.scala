@@ -15,6 +15,7 @@ object initialize extends js.Object {
     * @param masterKey (optional) Your Parse Master Key. (Node.js only!)
     */
   def apply(applicationId: String): Unit = js.native
+  def apply(applicationId: String, javaScriptKey: js.UndefOr[scala.Nothing], masterKey: String): Unit = js.native
   def apply(applicationId: String, javaScriptKey: String): Unit = js.native
   def apply(applicationId: String, javaScriptKey: String, masterKey: String): Unit = js.native
 }

@@ -14,6 +14,7 @@ class SubscribeOnObservable[T] protected ()
   extends typings.rxjs.subscribeOnObservableMod.SubscribeOnObservable[T] {
   def this(source: Observable[T]) = this()
   def this(source: Observable[T], delayTime: Double) = this()
+  def this(source: Observable[T], delayTime: js.UndefOr[scala.Nothing], scheduler: SchedulerLike) = this()
   def this(source: Observable[T], delayTime: Double, scheduler: SchedulerLike) = this()
 }
 
@@ -23,6 +24,7 @@ class SubscribeOnObservable[T] protected ()
 object SubscribeOnObservable extends js.Object {
   /** @nocollapse */
   def create[T](source: Observable[T]): Observable[T] = js.native
+  def create[T](source: Observable[T], delay: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[T] = js.native
   def create[T](source: Observable[T], delay: Double): Observable[T] = js.native
   def create[T](source: Observable[T], delay: Double, scheduler: SchedulerLike): Observable[T] = js.native
   /** @nocollapse */

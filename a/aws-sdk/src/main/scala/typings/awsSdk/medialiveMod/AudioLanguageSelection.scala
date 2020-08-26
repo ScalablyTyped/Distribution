@@ -18,10 +18,28 @@ trait AudioLanguageSelection extends js.Object {
 
 object AudioLanguageSelection {
   @scala.inline
-  def apply(LanguageCode: string, LanguageSelectionPolicy: AudioLanguageSelectionPolicy = null): AudioLanguageSelection = {
+  def apply(LanguageCode: string): AudioLanguageSelection = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any])
-    if (LanguageSelectionPolicy != null) __obj.updateDynamic("LanguageSelectionPolicy")(LanguageSelectionPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioLanguageSelection]
   }
+  @scala.inline
+  implicit class AudioLanguageSelectionOps[Self <: AudioLanguageSelection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguageCode(value: string): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLanguageSelectionPolicy(value: AudioLanguageSelectionPolicy): Self = this.set("LanguageSelectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageSelectionPolicy: Self = this.set("LanguageSelectionPolicy", js.undefined)
+  }
+  
 }
 

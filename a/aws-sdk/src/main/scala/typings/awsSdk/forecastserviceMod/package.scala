@@ -91,6 +91,10 @@ package object forecastserviceMod {
   type Status = java.lang.String
   type String = java.lang.String
   type SupplementaryFeatures = js.Array[typings.awsSdk.forecastserviceMod.SupplementaryFeature]
+  type TagKey = java.lang.String
+  type TagKeys = js.Array[typings.awsSdk.forecastserviceMod.TagKey]
+  type TagValue = java.lang.String
+  type Tags = js.Array[typings.awsSdk.forecastserviceMod.Tag]
   type TestWindowDetails = js.Array[typings.awsSdk.forecastserviceMod.TestWindowSummary]
   type TestWindows = js.Array[typings.awsSdk.forecastserviceMod.WindowSummary]
   type Timestamp = typings.std.Date

@@ -12,7 +12,7 @@ A Javascript string manipulation library without npm dependences.
 | Keywords           | string, manipulate, str, manipulation, strman |
 | # releases         | 2 |
 | # dependents       | 15 |
-| # downloads        | 21647 |
+| # downloads        | 24663 |
 | # stars            | 6 |
 
 ## Links

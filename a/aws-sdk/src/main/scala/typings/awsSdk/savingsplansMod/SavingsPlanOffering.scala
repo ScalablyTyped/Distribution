@@ -54,32 +54,70 @@ trait SavingsPlanOffering extends js.Object {
 
 object SavingsPlanOffering {
   @scala.inline
-  def apply(
-    currency: CurrencyCode = null,
-    description: SavingsPlanDescription = null,
-    durationSeconds: js.UndefOr[SavingsPlansDuration] = js.undefined,
-    offeringId: UUID = null,
-    operation: SavingsPlanOperation = null,
-    paymentOption: SavingsPlanPaymentOption = null,
-    planType: SavingsPlanType = null,
-    productTypes: SavingsPlanProductTypeList = null,
-    properties: SavingsPlanOfferingPropertyList = null,
-    serviceCode: SavingsPlanServiceCode = null,
-    usageType: SavingsPlanUsageType = null
-  ): SavingsPlanOffering = {
+  def apply(): SavingsPlanOffering = {
     val __obj = js.Dynamic.literal()
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(durationSeconds)) __obj.updateDynamic("durationSeconds")(durationSeconds.get.asInstanceOf[js.Any])
-    if (offeringId != null) __obj.updateDynamic("offeringId")(offeringId.asInstanceOf[js.Any])
-    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (paymentOption != null) __obj.updateDynamic("paymentOption")(paymentOption.asInstanceOf[js.Any])
-    if (planType != null) __obj.updateDynamic("planType")(planType.asInstanceOf[js.Any])
-    if (productTypes != null) __obj.updateDynamic("productTypes")(productTypes.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (serviceCode != null) __obj.updateDynamic("serviceCode")(serviceCode.asInstanceOf[js.Any])
-    if (usageType != null) __obj.updateDynamic("usageType")(usageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlanOffering]
   }
+  @scala.inline
+  implicit class SavingsPlanOfferingOps[Self <: SavingsPlanOffering] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrency(value: CurrencyCode): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setDescription(value: SavingsPlanDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDurationSeconds(value: SavingsPlansDuration): Self = this.set("durationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
+    @scala.inline
+    def setOfferingId(value: UUID): Self = this.set("offeringId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingId: Self = this.set("offeringId", js.undefined)
+    @scala.inline
+    def setOperation(value: SavingsPlanOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("operation", js.undefined)
+    @scala.inline
+    def setPaymentOption(value: SavingsPlanPaymentOption): Self = this.set("paymentOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentOption: Self = this.set("paymentOption", js.undefined)
+    @scala.inline
+    def setPlanType(value: SavingsPlanType): Self = this.set("planType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlanType: Self = this.set("planType", js.undefined)
+    @scala.inline
+    def setProductTypesVarargs(value: SavingsPlanProductType*): Self = this.set("productTypes", js.Array(value :_*))
+    @scala.inline
+    def setProductTypes(value: SavingsPlanProductTypeList): Self = this.set("productTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductTypes: Self = this.set("productTypes", js.undefined)
+    @scala.inline
+    def setPropertiesVarargs(value: SavingsPlanOfferingProperty*): Self = this.set("properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(value: SavingsPlanOfferingPropertyList): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setServiceCode(value: SavingsPlanServiceCode): Self = this.set("serviceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCode: Self = this.set("serviceCode", js.undefined)
+    @scala.inline
+    def setUsageType(value: SavingsPlanUsageType): Self = this.set("usageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageType: Self = this.set("usageType", js.undefined)
+  }
+  
 }
 

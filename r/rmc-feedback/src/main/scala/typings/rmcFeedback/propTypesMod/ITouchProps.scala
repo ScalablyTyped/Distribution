@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITouchProps extends js.Object {
-  var activeClassName: js.UndefOr[String] = js.undefined
-  var activeStyle: js.UndefOr[js.Any] = js.undefined
-  var children: js.UndefOr[js.Any] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var activeClassName: js.UndefOr[String] = js.native
+  var activeStyle: js.UndefOr[js.Any] = js.native
+  var children: js.UndefOr[js.Any] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
 }
 
 object ITouchProps {
   @scala.inline
-  def apply(
-    activeClassName: String = null,
-    activeStyle: js.Any = null,
-    children: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined
-  ): ITouchProps = {
+  def apply(): ITouchProps = {
     val __obj = js.Dynamic.literal()
-    if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName.asInstanceOf[js.Any])
-    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITouchProps]
   }
+  @scala.inline
+  implicit class ITouchPropsOps[Self <: ITouchProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveClassName(value: String): Self = this.set("activeClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveClassName: Self = this.set("activeClassName", js.undefined)
+    @scala.inline
+    def setActiveStyle(value: js.Any): Self = this.set("activeStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveStyle: Self = this.set("activeStyle", js.undefined)
+    @scala.inline
+    def setChildren(value: js.Any): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+  }
+  
 }
 

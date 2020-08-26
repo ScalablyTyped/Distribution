@@ -12,6 +12,16 @@ class ProtractorBrowser protected ()
   def this(webdriverInstance: typings.seleniumWebdriver.mod.WebDriver, opt_baseUrl: String) = this()
   def this(
     webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: js.Promise[String]
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
     opt_baseUrl: String,
     opt_rootElement: String
   ) = this()
@@ -19,6 +29,30 @@ class ProtractorBrowser protected ()
     webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
     opt_baseUrl: String,
     opt_rootElement: js.Promise[String]
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: js.UndefOr[scala.Nothing],
+    opt_untrackOutstandingTimeouts: Boolean
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: String,
+    opt_untrackOutstandingTimeouts: Boolean
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: js.Promise[String],
+    opt_untrackOutstandingTimeouts: Boolean
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: String,
+    opt_rootElement: js.UndefOr[scala.Nothing],
+    opt_untrackOutstandingTimeouts: Boolean
   ) = this()
   def this(
     webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
@@ -34,9 +68,79 @@ class ProtractorBrowser protected ()
   ) = this()
   def this(
     webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: js.UndefOr[scala.Nothing],
+    opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: js.UndefOr[scala.Nothing],
+    opt_untrackOutstandingTimeouts: Boolean,
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: String,
+    opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: String,
+    opt_untrackOutstandingTimeouts: Boolean,
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: js.Promise[String],
+    opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: js.UndefOr[scala.Nothing],
+    opt_rootElement: js.Promise[String],
+    opt_untrackOutstandingTimeouts: Boolean,
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: String,
+    opt_rootElement: js.UndefOr[scala.Nothing],
+    opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: String,
+    opt_rootElement: js.UndefOr[scala.Nothing],
+    opt_untrackOutstandingTimeouts: Boolean,
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: String,
+    opt_rootElement: String,
+    opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
     opt_baseUrl: String,
     opt_rootElement: String,
     opt_untrackOutstandingTimeouts: Boolean,
+    opt_blockingProxyUrl: String
+  ) = this()
+  def this(
+    webdriverInstance: typings.seleniumWebdriver.mod.WebDriver,
+    opt_baseUrl: String,
+    opt_rootElement: js.Promise[String],
+    opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
     opt_blockingProxyUrl: String
   ) = this()
   def this(

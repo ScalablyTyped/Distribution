@@ -19,6 +19,7 @@ trait FunctionsStatics extends js.Object {
     * See https://github.com/invertase/react-native-firebase-docs/blob/master/docs/functions/reference/functions.md
     */
   def apply(): Functions = js.native
+  def apply(appOrRegion: js.UndefOr[scala.Nothing], region: String): Functions = js.native
   def apply(appOrRegion: String): Functions = js.native
   def apply(appOrRegion: String, region: String): Functions = js.native
   def apply(appOrRegion: App): Functions = js.native

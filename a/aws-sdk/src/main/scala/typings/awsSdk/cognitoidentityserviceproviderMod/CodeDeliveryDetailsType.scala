@@ -22,16 +22,34 @@ trait CodeDeliveryDetailsType extends js.Object {
 
 object CodeDeliveryDetailsType {
   @scala.inline
-  def apply(
-    AttributeName: AttributeNameType = null,
-    DeliveryMedium: DeliveryMediumType = null,
-    Destination: StringType = null
-  ): CodeDeliveryDetailsType = {
+  def apply(): CodeDeliveryDetailsType = {
     val __obj = js.Dynamic.literal()
-    if (AttributeName != null) __obj.updateDynamic("AttributeName")(AttributeName.asInstanceOf[js.Any])
-    if (DeliveryMedium != null) __obj.updateDynamic("DeliveryMedium")(DeliveryMedium.asInstanceOf[js.Any])
-    if (Destination != null) __obj.updateDynamic("Destination")(Destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeDeliveryDetailsType]
   }
+  @scala.inline
+  implicit class CodeDeliveryDetailsTypeOps[Self <: CodeDeliveryDetailsType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: AttributeNameType): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
+    @scala.inline
+    def setDeliveryMedium(value: DeliveryMediumType): Self = this.set("DeliveryMedium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryMedium: Self = this.set("DeliveryMedium", js.undefined)
+    @scala.inline
+    def setDestination(value: StringType): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("Destination", js.undefined)
+  }
+  
 }
 

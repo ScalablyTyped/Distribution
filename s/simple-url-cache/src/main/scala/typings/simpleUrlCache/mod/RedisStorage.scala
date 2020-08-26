@@ -12,13 +12,5 @@ class RedisStorage protected ()
   extends CacheCategory
      with CacheStorage {
   def this(_url: String, _storageConfig: RedisStorageConfig, _regexRules: CacheRules) = this()
-  /* CompleteClass */
-  /* private */ override def getCacheCategory(): String = js.native
-  /* CompleteClass */
-  override def getCategory(): String = js.native
-  /* CompleteClass */
-  override def getCurrentUrl(): String = js.native
-  /* CompleteClass */
-  /* private */ override def getRegexTest(u: RegexRule): Boolean = js.native
 }
 

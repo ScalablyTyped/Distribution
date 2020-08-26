@@ -73,6 +73,7 @@ trait JuiStatic extends js.Object {
     * ready 타임에 실행될 callback 정의
     */
   def ready(): Unit = js.native
+  def ready(depends: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def ready(depends: js.Array[String]): Unit = js.native
   def ready(depends: js.Array[String], callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   /**

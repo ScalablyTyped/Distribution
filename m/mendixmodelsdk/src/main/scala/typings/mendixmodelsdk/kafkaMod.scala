@@ -63,38 +63,39 @@ object kafkaMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FConsumedKafkaService: IModel = js.native
-      def brokerPassword(): js.Any = js.native
-      def brokerPassword(newValue: IConstant): js.Any = js.native
+      def brokerPassword: IConstant | Null = js.native
       def brokerPasswordQualifiedName: String | Null = js.native
-      @JSName("brokerPassword")
-      def brokerPassword_Union: IConstant | Null = js.native
-      def brokerUrl(): js.Any = js.native
-      def brokerUrl(newValue: IConstant): js.Any = js.native
+      def brokerPassword_=(newValue: IConstant | Null): Unit = js.native
+      def brokerUrl: IConstant | Null = js.native
       def brokerUrlQualifiedName: String | Null = js.native
-      @JSName("brokerUrl")
-      def brokerUrl_Union: IConstant | Null = js.native
-      def brokerUsername(): js.Any = js.native
-      def brokerUsername(newValue: IConstant): js.Any = js.native
+      def brokerUrl_=(newValue: IConstant | Null): Unit = js.native
+      def brokerUsername: IConstant | Null = js.native
       def brokerUsernameQualifiedName: String | Null = js.native
-      @JSName("brokerUsername")
-      def brokerUsername_Union: IConstant | Null = js.native
+      def brokerUsername_=(newValue: IConstant | Null): Unit = js.native
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MConsumedKafkaService: FolderBase = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+        *
+        * In version 8.12.0: deleted
         */
       def entities: IList[KafkaEntity] = js.native
       def metadata: String = js.native
-      def metadata(newValue: String): js.Any = js.native
       def metadataReferences: IList[MetadataReference] = js.native
       def metadataUrl: String = js.native
-      def metadataUrl(newValue: String): js.Any = js.native
+      def metadataUrl_=(newValue: String): Unit = js.native
+      def metadata_=(newValue: String): Unit = js.native
+      /**
+        * In version 8.12.0: introduced
+        */
+      def serviceFeed: String = js.native
+      def serviceFeed_=(newValue: String): Unit = js.native
       def serviceId: String = js.native
-      def serviceId(newValue: String): js.Any = js.native
+      def serviceId_=(newValue: String): Unit = js.native
       def serviceName: String = js.native
-      def serviceName(newValue: String): js.Any = js.native
+      def serviceName_=(newValue: String): Unit = js.native
       def version: String = js.native
-      def version(newValue: String): js.Any = js.native
+      def version_=(newValue: String): Unit = js.native
     }
     
     /**
@@ -111,7 +112,7 @@ object kafkaMod extends js.Object {
     /**
       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
       *
-      * In version 8.11.0: introduced
+      * In version 8.12.0: deleted
       */
     @js.native
     trait IKafkaEntity
@@ -140,7 +141,7 @@ object kafkaMod extends js.Object {
     /**
       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
       *
-      * In version 8.11.0: introduced
+      * In version 8.12.0: deleted
       */
     @js.native
     class KafkaAttribute protected () extends Element {
@@ -156,13 +157,13 @@ object kafkaMod extends js.Object {
       var model_FKafkaAttribute: IModel = js.native
       def containerAsKafkaEntity: KafkaEntity = js.native
       def name: String = js.native
-      def name(newValue: String): js.Any = js.native
+      def name_=(newValue: String): Unit = js.native
     }
     
     /**
       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
       *
-      * In version 8.11.0: introduced
+      * In version 8.12.0: deleted
       */
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -188,33 +189,23 @@ object kafkaMod extends js.Object {
       @JSName("name")
       val name_FKafkaEntity: String = js.native
       /**
-        * Returns the qualified name of this element, or
-        * null if this element is not a part of the model,
-        * or if it or one of its namespace containers does not have a
-        * valid name.
-        */
-      /* CompleteClass */
-      override val qualifiedName: String | Null = js.native
-      /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
       def attributes: IList[KafkaAttribute] = js.native
       def containerAsConsumedKafkaService: ConsumedKafkaService = js.native
       def entitySet: String = js.native
-      def entitySet(newValue: String): js.Any = js.native
+      def entitySet_=(newValue: String): Unit = js.native
       def name: String = js.native
-      def name(newValue: String): js.Any = js.native
+      def name_=(newValue: String): Unit = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
       def navigationProperties: IList[KafkaNavigationProperty] = js.native
       @JSName("qualifiedName")
       def qualifiedName_MKafkaEntity: String | Null = js.native
-      def topicName(): js.Any = js.native
-      def topicName(newValue: IConstant): js.Any = js.native
+      def topicName: IConstant | Null = js.native
       def topicNameQualifiedName: String | Null = js.native
-      @JSName("topicName")
-      def topicName_Union: IConstant | Null = js.native
+      def topicName_=(newValue: IConstant | Null): Unit = js.native
     }
     
     /**
@@ -242,13 +233,13 @@ object kafkaMod extends js.Object {
       @JSName("containerAsAttribute")
       def containerAsAttribute_MKafkaMappedValue: Attribute = js.native
       def remoteName: String = js.native
-      def remoteName(newValue: String): js.Any = js.native
+      def remoteName_=(newValue: String): Unit = js.native
     }
     
     /**
       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
       *
-      * In version 8.11.0: introduced
+      * In version 8.12.0: deleted
       */
     @js.native
     class KafkaNavigationProperty protected () extends Element {
@@ -264,7 +255,7 @@ object kafkaMod extends js.Object {
       var model_FKafkaNavigationProperty: IModel = js.native
       def containerAsKafkaEntity: KafkaEntity = js.native
       def name: String = js.native
-      def name(newValue: String): js.Any = js.native
+      def name_=(newValue: String): Unit = js.native
     }
     
     /**
@@ -295,15 +286,18 @@ object kafkaMod extends js.Object {
       @JSName("containerAsEntity")
       def containerAsEntity_MKafkaRemoteEntitySource: Entity = js.native
       def remoteName: String = js.native
-      def remoteName(newValue: String): js.Any = js.native
-      def sourceDocument(): js.Any = js.native
-      def sourceDocument(newValue: IConsumedKafkaService): js.Any = js.native
-      def sourceDocumentQualifiedName: String | Null = js.native
+      def remoteName_=(newValue: String): Unit = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
-      @JSName("sourceDocument")
-      def sourceDocument_Union: IConsumedKafkaService | Null = js.native
+      def sourceDocument: IConsumedKafkaService | Null = js.native
+      def sourceDocumentQualifiedName: String | Null = js.native
+      def sourceDocument_=(newValue: IConsumedKafkaService | Null): Unit = js.native
+      /**
+        * In version 8.12.0: introduced
+        */
+      def topicName: String = js.native
+      def topicName_=(newValue: String): Unit = js.native
     }
     
     /* static members */
@@ -335,7 +329,7 @@ object kafkaMod extends js.Object {
         * of the parent KafkaEntity element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  8.11.0 and higher
+        *  6.0.0 to 8.11.0
         */
       def createIn(container: KafkaEntity): KafkaAttribute = js.native
     }
@@ -351,6 +345,15 @@ object kafkaMod extends js.Object {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       def create(model: IModel): KafkaEntity = js.native
+      /**
+        * Creates and returns a new KafkaEntity instance in the SDK and on the server.
+        * The new KafkaEntity will be automatically stored in the 'entities' property
+        * of the parent ConsumedKafkaService element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  8.11.0 to 8.11.0
+        */
+      def createIn(container: ConsumedKafkaService): KafkaEntity = js.native
     }
     
     /* static members */
@@ -392,7 +395,7 @@ object kafkaMod extends js.Object {
         * of the parent KafkaEntity element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  8.11.0 and higher
+        *  6.0.0 to 8.11.0
         */
       def createIn(container: KafkaEntity): KafkaNavigationProperty = js.native
     }

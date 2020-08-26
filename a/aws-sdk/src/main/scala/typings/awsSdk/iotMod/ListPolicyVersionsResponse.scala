@@ -14,10 +14,28 @@ trait ListPolicyVersionsResponse extends js.Object {
 
 object ListPolicyVersionsResponse {
   @scala.inline
-  def apply(policyVersions: PolicyVersions = null): ListPolicyVersionsResponse = {
+  def apply(): ListPolicyVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (policyVersions != null) __obj.updateDynamic("policyVersions")(policyVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPolicyVersionsResponse]
   }
+  @scala.inline
+  implicit class ListPolicyVersionsResponseOps[Self <: ListPolicyVersionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyVersionsVarargs(value: PolicyVersion*): Self = this.set("policyVersions", js.Array(value :_*))
+    @scala.inline
+    def setPolicyVersions(value: PolicyVersions): Self = this.set("policyVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyVersions: Self = this.set("policyVersions", js.undefined)
+  }
+  
 }
 

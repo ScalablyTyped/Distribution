@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.accessibility.XAccessibleExtendedComponent
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleComboBox
   extends XAccessibleExtendedComponent
      with XAccessibleContext

@@ -17,10 +17,26 @@ trait SchemaCreateDeveloperMetadataRequest extends js.Object {
 
 object SchemaCreateDeveloperMetadataRequest {
   @scala.inline
-  def apply(developerMetadata: SchemaDeveloperMetadata = null): SchemaCreateDeveloperMetadataRequest = {
+  def apply(): SchemaCreateDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
-    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateDeveloperMetadataRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateDeveloperMetadataRequestOps[Self <: SchemaCreateDeveloperMetadataRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeveloperMetadata(value: SchemaDeveloperMetadata): Self = this.set("developerMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeveloperMetadata: Self = this.set("developerMetadata", js.undefined)
+  }
+  
 }
 

@@ -14,18 +14,38 @@ trait AdsAppearOn extends js.Object {
 
 object AdsAppearOn {
   @scala.inline
-  def apply(
-    adsAppearOn: String = null,
-    description: String = null,
-    location: String = null,
-    siteLanguage: String = null
-  ): AdsAppearOn = {
+  def apply(): AdsAppearOn = {
     val __obj = js.Dynamic.literal()
-    if (adsAppearOn != null) __obj.updateDynamic("adsAppearOn")(adsAppearOn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (siteLanguage != null) __obj.updateDynamic("siteLanguage")(siteLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdsAppearOn]
   }
+  @scala.inline
+  implicit class AdsAppearOnOps[Self <: AdsAppearOn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdsAppearOn(value: String): Self = this.set("adsAppearOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdsAppearOn: Self = this.set("adsAppearOn", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setSiteLanguage(value: String): Self = this.set("siteLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteLanguage: Self = this.set("siteLanguage", js.undefined)
+  }
+  
 }
 

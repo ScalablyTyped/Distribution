@@ -27,27 +27,25 @@ class ExportXmlAction protected () extends MicroflowAction {
   @JSName("model")
   var model_FExportXmlAction: IModel = js.native
   def isValidationRequired: Boolean = js.native
-  def isValidationRequired(newValue: Boolean): js.Any = js.native
-  def mapping(): js.Any = js.native
-  def mapping(newValue: IExportMapping): js.Any = js.native
+  def isValidationRequired_=(newValue: Boolean): Unit = js.native
+  /**
+    * In version 7.6.0: deleted
+    */
+  def mapping: IExportMapping | Null = js.native
   /**
     * In version 7.6.0: deleted
     */
   def mappingArgumentVariableName: String = js.native
-  def mappingArgumentVariableName(newValue: String): js.Any = js.native
+  def mappingArgumentVariableName_=(newValue: String): Unit = js.native
   def mappingQualifiedName: String | Null = js.native
-  /**
-    * In version 7.6.0: deleted
-    */
-  @JSName("mapping")
-  def mapping_Union: IExportMapping | Null = js.native
+  def mapping_=(newValue: IExportMapping | Null): Unit = js.native
   def outputMethod: OutputMethod = js.native
-  def outputMethod(newValue: OutputMethod): js.Any = js.native
+  def outputMethod_=(newValue: OutputMethod): Unit = js.native
   /**
     * In version 7.6.0: introduced
     */
   def resultHandling: MappingRequestHandling = js.native
-  def resultHandling(newValue: MappingRequestHandling): js.Any = js.native
+  def resultHandling_=(newValue: MappingRequestHandling): Unit = js.native
 }
 
 /* static members */

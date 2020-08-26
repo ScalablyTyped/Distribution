@@ -55,24 +55,52 @@ trait SchemaCompensationInfo extends js.Object {
 
 object SchemaCompensationInfo {
   @scala.inline
-  def apply(
-    amount: SchemaMoney = null,
-    annualizedBaseCompensationRange: SchemaCompensationRange = null,
-    annualizedTotalCompensationRange: SchemaCompensationRange = null,
-    entries: js.Array[SchemaCompensationEntry] = null,
-    max: SchemaMoney = null,
-    min: SchemaMoney = null,
-    `type`: String = null
-  ): SchemaCompensationInfo = {
+  def apply(): SchemaCompensationInfo = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (annualizedBaseCompensationRange != null) __obj.updateDynamic("annualizedBaseCompensationRange")(annualizedBaseCompensationRange.asInstanceOf[js.Any])
-    if (annualizedTotalCompensationRange != null) __obj.updateDynamic("annualizedTotalCompensationRange")(annualizedTotalCompensationRange.asInstanceOf[js.Any])
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompensationInfo]
   }
+  @scala.inline
+  implicit class SchemaCompensationInfoOps[Self <: SchemaCompensationInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: SchemaMoney): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setAnnualizedBaseCompensationRange(value: SchemaCompensationRange): Self = this.set("annualizedBaseCompensationRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnualizedBaseCompensationRange: Self = this.set("annualizedBaseCompensationRange", js.undefined)
+    @scala.inline
+    def setAnnualizedTotalCompensationRange(value: SchemaCompensationRange): Self = this.set("annualizedTotalCompensationRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnualizedTotalCompensationRange: Self = this.set("annualizedTotalCompensationRange", js.undefined)
+    @scala.inline
+    def setEntriesVarargs(value: SchemaCompensationEntry*): Self = this.set("entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: js.Array[SchemaCompensationEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("entries", js.undefined)
+    @scala.inline
+    def setMax(value: SchemaMoney): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: SchemaMoney): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

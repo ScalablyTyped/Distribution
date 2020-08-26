@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DarkLight extends js.Object {
-  var dark: js.UndefOr[Medium] = js.undefined
-  var light: js.UndefOr[Medium] = js.undefined
+  var dark: js.UndefOr[None] = js.native
+  var light: js.UndefOr[None] = js.native
 }
 
 object DarkLight {
   @scala.inline
-  def apply(dark: Medium = null, light: Medium = null): DarkLight = {
+  def apply(): DarkLight = {
     val __obj = js.Dynamic.literal()
-    if (dark != null) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
-    if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
     __obj.asInstanceOf[DarkLight]
   }
+  @scala.inline
+  implicit class DarkLightOps[Self <: DarkLight] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDark(value: None): Self = this.set("dark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDark: Self = this.set("dark", js.undefined)
+    @scala.inline
+    def setLight(value: None): Self = this.set("light", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLight: Self = this.set("light", js.undefined)
+  }
+  
 }
 

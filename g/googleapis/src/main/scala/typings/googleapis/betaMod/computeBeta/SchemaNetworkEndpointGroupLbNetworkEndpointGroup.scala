@@ -34,18 +34,38 @@ trait SchemaNetworkEndpointGroupLbNetworkEndpointGroup extends js.Object {
 
 object SchemaNetworkEndpointGroupLbNetworkEndpointGroup {
   @scala.inline
-  def apply(
-    defaultPort: js.UndefOr[Double] = js.undefined,
-    network: String = null,
-    subnetwork: String = null,
-    zone: String = null
-  ): SchemaNetworkEndpointGroupLbNetworkEndpointGroup = {
+  def apply(): SchemaNetworkEndpointGroupLbNetworkEndpointGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultPort)) __obj.updateDynamic("defaultPort")(defaultPort.get.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkEndpointGroupLbNetworkEndpointGroup]
   }
+  @scala.inline
+  implicit class SchemaNetworkEndpointGroupLbNetworkEndpointGroupOps[Self <: SchemaNetworkEndpointGroupLbNetworkEndpointGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultPort(value: Double): Self = this.set("defaultPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPort: Self = this.set("defaultPort", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

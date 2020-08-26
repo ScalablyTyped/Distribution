@@ -486,6 +486,7 @@ trait Portal
     *
     */
   def fetchBasemaps(): js.Promise[js.Array[Basemap]] = js.native
+  def fetchBasemaps(basemapGalleryGroupQuery: js.UndefOr[scala.Nothing], options: PortalFetchBasemapsOptions): js.Promise[js.Array[Basemap]] = js.native
   def fetchBasemaps(basemapGalleryGroupQuery: String): js.Promise[js.Array[Basemap]] = js.native
   def fetchBasemaps(basemapGalleryGroupQuery: String, options: PortalFetchBasemapsOptions): js.Promise[js.Array[Basemap]] = js.native
   /**

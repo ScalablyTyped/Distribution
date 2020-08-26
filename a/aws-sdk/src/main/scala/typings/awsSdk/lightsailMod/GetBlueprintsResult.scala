@@ -18,11 +18,32 @@ trait GetBlueprintsResult extends js.Object {
 
 object GetBlueprintsResult {
   @scala.inline
-  def apply(blueprints: BlueprintList = null, nextPageToken: String = null): GetBlueprintsResult = {
+  def apply(): GetBlueprintsResult = {
     val __obj = js.Dynamic.literal()
-    if (blueprints != null) __obj.updateDynamic("blueprints")(blueprints.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBlueprintsResult]
   }
+  @scala.inline
+  implicit class GetBlueprintsResultOps[Self <: GetBlueprintsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlueprintsVarargs(value: Blueprint*): Self = this.set("blueprints", js.Array(value :_*))
+    @scala.inline
+    def setBlueprints(value: BlueprintList): Self = this.set("blueprints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueprints: Self = this.set("blueprints", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

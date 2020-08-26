@@ -4,57 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocOptions extends js.Object {
-  var apiprivate: js.UndefOr[Boolean] = js.undefined
-  var colorize: js.UndefOr[Boolean] = js.undefined
-  var config: js.UndefOr[String] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var dest: js.UndefOr[String] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
-  var markdown: js.UndefOr[Boolean] = js.undefined
-  var parse: js.UndefOr[Boolean] = js.undefined
-  var silent: js.UndefOr[Boolean] = js.undefined
-  var simulate: js.UndefOr[Boolean] = js.undefined
-  var single: js.UndefOr[Boolean] = js.undefined
-  var template: js.UndefOr[String] = js.undefined
-  var templateSingleFile: js.UndefOr[String] = js.undefined
-  var verbose: js.UndefOr[Boolean] = js.undefined
+  var apiprivate: js.UndefOr[Boolean] = js.native
+  var colorize: js.UndefOr[Boolean] = js.native
+  var config: js.UndefOr[String] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var dest: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.native
+  var markdown: js.UndefOr[Boolean] = js.native
+  var parse: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.native
+  var simulate: js.UndefOr[Boolean] = js.native
+  var single: js.UndefOr[Boolean] = js.native
+  var template: js.UndefOr[String] = js.native
+  var templateSingleFile: js.UndefOr[String] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
 }
 
 object DocOptions {
   @scala.inline
-  def apply(
-    apiprivate: js.UndefOr[Boolean] = js.undefined,
-    colorize: js.UndefOr[Boolean] = js.undefined,
-    config: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    dest: String = null,
-    encoding: String = null,
-    markdown: js.UndefOr[Boolean] = js.undefined,
-    parse: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    simulate: js.UndefOr[Boolean] = js.undefined,
-    single: js.UndefOr[Boolean] = js.undefined,
-    template: String = null,
-    templateSingleFile: String = null,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): DocOptions = {
+  def apply(): DocOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(apiprivate)) __obj.updateDynamic("apiprivate")(apiprivate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize.get.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(markdown)) __obj.updateDynamic("markdown")(markdown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(parse)) __obj.updateDynamic("parse")(parse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(simulate)) __obj.updateDynamic("simulate")(simulate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.get.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateSingleFile != null) __obj.updateDynamic("templateSingleFile")(templateSingleFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocOptions]
   }
+  @scala.inline
+  implicit class DocOptionsOps[Self <: DocOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiprivate(value: Boolean): Self = this.set("apiprivate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiprivate: Self = this.set("apiprivate", js.undefined)
+    @scala.inline
+    def setColorize(value: Boolean): Self = this.set("colorize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorize: Self = this.set("colorize", js.undefined)
+    @scala.inline
+    def setConfig(value: String): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setDest(value: String): Self = this.set("dest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDest: Self = this.set("dest", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setMarkdown(value: Boolean): Self = this.set("markdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkdown: Self = this.set("markdown", js.undefined)
+    @scala.inline
+    def setParse(value: Boolean): Self = this.set("parse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParse: Self = this.set("parse", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSimulate(value: Boolean): Self = this.set("simulate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimulate: Self = this.set("simulate", js.undefined)
+    @scala.inline
+    def setSingle(value: Boolean): Self = this.set("single", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingle: Self = this.set("single", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTemplateSingleFile(value: String): Self = this.set("templateSingleFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateSingleFile: Self = this.set("templateSingleFile", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+  }
+  
 }
 

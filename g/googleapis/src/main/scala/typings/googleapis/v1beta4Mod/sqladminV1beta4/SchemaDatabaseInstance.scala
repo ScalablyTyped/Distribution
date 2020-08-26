@@ -156,64 +156,136 @@ trait SchemaDatabaseInstance extends js.Object {
 
 object SchemaDatabaseInstance {
   @scala.inline
-  def apply(
-    backendType: String = null,
-    connectionName: String = null,
-    currentDiskSize: String = null,
-    databaseVersion: String = null,
-    diskEncryptionConfiguration: SchemaDiskEncryptionConfiguration = null,
-    diskEncryptionStatus: SchemaDiskEncryptionStatus = null,
-    etag: String = null,
-    failoverReplica: Available = null,
-    gceZone: String = null,
-    instanceType: String = null,
-    ipAddresses: js.Array[SchemaIpMapping] = null,
-    ipv6Address: String = null,
-    kind: String = null,
-    masterInstanceName: String = null,
-    maxDiskSize: String = null,
-    name: String = null,
-    onPremisesConfiguration: SchemaOnPremisesConfiguration = null,
-    project: String = null,
-    region: String = null,
-    replicaConfiguration: SchemaReplicaConfiguration = null,
-    replicaNames: js.Array[String] = null,
-    selfLink: String = null,
-    serverCaCert: SchemaSslCert = null,
-    serviceAccountEmailAddress: String = null,
-    settings: SchemaSettings = null,
-    state: String = null,
-    suspensionReason: js.Array[String] = null
-  ): SchemaDatabaseInstance = {
+  def apply(): SchemaDatabaseInstance = {
     val __obj = js.Dynamic.literal()
-    if (backendType != null) __obj.updateDynamic("backendType")(backendType.asInstanceOf[js.Any])
-    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
-    if (currentDiskSize != null) __obj.updateDynamic("currentDiskSize")(currentDiskSize.asInstanceOf[js.Any])
-    if (databaseVersion != null) __obj.updateDynamic("databaseVersion")(databaseVersion.asInstanceOf[js.Any])
-    if (diskEncryptionConfiguration != null) __obj.updateDynamic("diskEncryptionConfiguration")(diskEncryptionConfiguration.asInstanceOf[js.Any])
-    if (diskEncryptionStatus != null) __obj.updateDynamic("diskEncryptionStatus")(diskEncryptionStatus.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (failoverReplica != null) __obj.updateDynamic("failoverReplica")(failoverReplica.asInstanceOf[js.Any])
-    if (gceZone != null) __obj.updateDynamic("gceZone")(gceZone.asInstanceOf[js.Any])
-    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (ipAddresses != null) __obj.updateDynamic("ipAddresses")(ipAddresses.asInstanceOf[js.Any])
-    if (ipv6Address != null) __obj.updateDynamic("ipv6Address")(ipv6Address.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (masterInstanceName != null) __obj.updateDynamic("masterInstanceName")(masterInstanceName.asInstanceOf[js.Any])
-    if (maxDiskSize != null) __obj.updateDynamic("maxDiskSize")(maxDiskSize.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onPremisesConfiguration != null) __obj.updateDynamic("onPremisesConfiguration")(onPremisesConfiguration.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (replicaConfiguration != null) __obj.updateDynamic("replicaConfiguration")(replicaConfiguration.asInstanceOf[js.Any])
-    if (replicaNames != null) __obj.updateDynamic("replicaNames")(replicaNames.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (serverCaCert != null) __obj.updateDynamic("serverCaCert")(serverCaCert.asInstanceOf[js.Any])
-    if (serviceAccountEmailAddress != null) __obj.updateDynamic("serviceAccountEmailAddress")(serviceAccountEmailAddress.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (suspensionReason != null) __obj.updateDynamic("suspensionReason")(suspensionReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDatabaseInstance]
   }
+  @scala.inline
+  implicit class SchemaDatabaseInstanceOps[Self <: SchemaDatabaseInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackendType(value: String): Self = this.set("backendType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackendType: Self = this.set("backendType", js.undefined)
+    @scala.inline
+    def setConnectionName(value: String): Self = this.set("connectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionName: Self = this.set("connectionName", js.undefined)
+    @scala.inline
+    def setCurrentDiskSize(value: String): Self = this.set("currentDiskSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentDiskSize: Self = this.set("currentDiskSize", js.undefined)
+    @scala.inline
+    def setDatabaseVersion(value: String): Self = this.set("databaseVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseVersion: Self = this.set("databaseVersion", js.undefined)
+    @scala.inline
+    def setDiskEncryptionConfiguration(value: SchemaDiskEncryptionConfiguration): Self = this.set("diskEncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskEncryptionConfiguration: Self = this.set("diskEncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setDiskEncryptionStatus(value: SchemaDiskEncryptionStatus): Self = this.set("diskEncryptionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskEncryptionStatus: Self = this.set("diskEncryptionStatus", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setFailoverReplica(value: Available): Self = this.set("failoverReplica", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailoverReplica: Self = this.set("failoverReplica", js.undefined)
+    @scala.inline
+    def setGceZone(value: String): Self = this.set("gceZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGceZone: Self = this.set("gceZone", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    @scala.inline
+    def setIpAddressesVarargs(value: SchemaIpMapping*): Self = this.set("ipAddresses", js.Array(value :_*))
+    @scala.inline
+    def setIpAddresses(value: js.Array[SchemaIpMapping]): Self = this.set("ipAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddresses: Self = this.set("ipAddresses", js.undefined)
+    @scala.inline
+    def setIpv6Address(value: String): Self = this.set("ipv6Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Address: Self = this.set("ipv6Address", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMasterInstanceName(value: String): Self = this.set("masterInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterInstanceName: Self = this.set("masterInstanceName", js.undefined)
+    @scala.inline
+    def setMaxDiskSize(value: String): Self = this.set("maxDiskSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDiskSize: Self = this.set("maxDiskSize", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnPremisesConfiguration(value: SchemaOnPremisesConfiguration): Self = this.set("onPremisesConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPremisesConfiguration: Self = this.set("onPremisesConfiguration", js.undefined)
+    @scala.inline
+    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProject: Self = this.set("project", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setReplicaConfiguration(value: SchemaReplicaConfiguration): Self = this.set("replicaConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaConfiguration: Self = this.set("replicaConfiguration", js.undefined)
+    @scala.inline
+    def setReplicaNamesVarargs(value: String*): Self = this.set("replicaNames", js.Array(value :_*))
+    @scala.inline
+    def setReplicaNames(value: js.Array[String]): Self = this.set("replicaNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaNames: Self = this.set("replicaNames", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setServerCaCert(value: SchemaSslCert): Self = this.set("serverCaCert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerCaCert: Self = this.set("serverCaCert", js.undefined)
+    @scala.inline
+    def setServiceAccountEmailAddress(value: String): Self = this.set("serviceAccountEmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccountEmailAddress: Self = this.set("serviceAccountEmailAddress", js.undefined)
+    @scala.inline
+    def setSettings(value: SchemaSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setSuspensionReasonVarargs(value: String*): Self = this.set("suspensionReason", js.Array(value :_*))
+    @scala.inline
+    def setSuspensionReason(value: js.Array[String]): Self = this.set("suspensionReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspensionReason: Self = this.set("suspensionReason", js.undefined)
+  }
+  
 }
 

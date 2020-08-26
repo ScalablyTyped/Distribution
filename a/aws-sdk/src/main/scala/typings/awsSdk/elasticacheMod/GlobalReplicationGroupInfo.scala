@@ -18,11 +18,30 @@ trait GlobalReplicationGroupInfo extends js.Object {
 
 object GlobalReplicationGroupInfo {
   @scala.inline
-  def apply(GlobalReplicationGroupId: String = null, GlobalReplicationGroupMemberRole: String = null): GlobalReplicationGroupInfo = {
+  def apply(): GlobalReplicationGroupInfo = {
     val __obj = js.Dynamic.literal()
-    if (GlobalReplicationGroupId != null) __obj.updateDynamic("GlobalReplicationGroupId")(GlobalReplicationGroupId.asInstanceOf[js.Any])
-    if (GlobalReplicationGroupMemberRole != null) __obj.updateDynamic("GlobalReplicationGroupMemberRole")(GlobalReplicationGroupMemberRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalReplicationGroupInfo]
   }
+  @scala.inline
+  implicit class GlobalReplicationGroupInfoOps[Self <: GlobalReplicationGroupInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalReplicationGroupId: Self = this.set("GlobalReplicationGroupId", js.undefined)
+    @scala.inline
+    def setGlobalReplicationGroupMemberRole(value: String): Self = this.set("GlobalReplicationGroupMemberRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalReplicationGroupMemberRole: Self = this.set("GlobalReplicationGroupMemberRole", js.undefined)
+  }
+  
 }
 

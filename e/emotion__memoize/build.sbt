@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "emotion__memoize"
-version := "0.7.4-234c02"
-scalaVersion := "2.13.2"
+version := "0.7.4-10d5a1"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

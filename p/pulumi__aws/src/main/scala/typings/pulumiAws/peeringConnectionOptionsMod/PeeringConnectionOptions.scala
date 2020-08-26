@@ -25,13 +25,13 @@ class PeeringConnectionOptions protected () extends CustomResource {
   def this(name: String, args: PeeringConnectionOptionsArgs, opts: CustomResourceOptions) = this()
   /**
     * An optional configuration block that allows for [VPC Peering Connection]
-    * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that accepts
+    * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options to be set for the VPC that accepts
     * the peering connection (a maximum of one).
     */
   val accepter: Output_[PeeringConnectionOptionsAccepter] = js.native
   /**
     * A optional configuration block that allows for [VPC Peering Connection]
-    * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that requests
+    * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options to be set for the VPC that requests
     * the peering connection (a maximum of one).
     */
   val requester: Output_[PeeringConnectionOptionsRequester] = js.native
@@ -52,8 +52,10 @@ object PeeringConnectionOptions extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): PeeringConnectionOptions = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PeeringConnectionOptions = js.native
   def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState): PeeringConnectionOptions = js.native
   def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState, opts: CustomResourceOptions): PeeringConnectionOptions = js.native
   /**

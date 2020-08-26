@@ -30,20 +30,50 @@ trait GetLifecyclePoliciesRequest extends js.Object {
 
 object GetLifecyclePoliciesRequest {
   @scala.inline
-  def apply(
-    PolicyIds: PolicyIdList = null,
-    ResourceTypes: ResourceTypeValuesList = null,
-    State: GettablePolicyStateValues = null,
-    TagsToAdd: TagsToAddFilterList = null,
-    TargetTags: TargetTagsFilterList = null
-  ): GetLifecyclePoliciesRequest = {
+  def apply(): GetLifecyclePoliciesRequest = {
     val __obj = js.Dynamic.literal()
-    if (PolicyIds != null) __obj.updateDynamic("PolicyIds")(PolicyIds.asInstanceOf[js.Any])
-    if (ResourceTypes != null) __obj.updateDynamic("ResourceTypes")(ResourceTypes.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (TagsToAdd != null) __obj.updateDynamic("TagsToAdd")(TagsToAdd.asInstanceOf[js.Any])
-    if (TargetTags != null) __obj.updateDynamic("TargetTags")(TargetTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLifecyclePoliciesRequest]
   }
+  @scala.inline
+  implicit class GetLifecyclePoliciesRequestOps[Self <: GetLifecyclePoliciesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyIdsVarargs(value: PolicyId*): Self = this.set("PolicyIds", js.Array(value :_*))
+    @scala.inline
+    def setPolicyIds(value: PolicyIdList): Self = this.set("PolicyIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyIds: Self = this.set("PolicyIds", js.undefined)
+    @scala.inline
+    def setResourceTypesVarargs(value: ResourceTypeValues*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypes(value: ResourceTypeValuesList): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    @scala.inline
+    def setState(value: GettablePolicyStateValues): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsToAddVarargs(value: TagFilter*): Self = this.set("TagsToAdd", js.Array(value :_*))
+    @scala.inline
+    def setTagsToAdd(value: TagsToAddFilterList): Self = this.set("TagsToAdd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagsToAdd: Self = this.set("TagsToAdd", js.undefined)
+    @scala.inline
+    def setTargetTagsVarargs(value: TagFilter*): Self = this.set("TargetTags", js.Array(value :_*))
+    @scala.inline
+    def setTargetTags(value: TargetTagsFilterList): Self = this.set("TargetTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetTags: Self = this.set("TargetTags", js.undefined)
+  }
+  
 }
 

@@ -8,76 +8,76 @@ import scala.scalajs.js.annotation._
   * Resource for non-supported content
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Basic extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Basic extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */
-  var _created: js.UndefOr[Element] = js.undefined
+  var _created: js.UndefOr[Element] = js.native
   /**
     * Who created
     */
-  var author: js.UndefOr[Reference] = js.undefined
+  var author: js.UndefOr[Reference] = js.native
   /**
     * Kind of Resource
     */
-  var code: CodeableConcept
+  var code: CodeableConcept = js.native
   /**
     * When created
     */
-  var created: js.UndefOr[date] = js.undefined
+  var created: js.UndefOr[date] = js.native
   /**
     * Business identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Identifies the focus of this resource
     */
-  var subject: js.UndefOr[Reference] = js.undefined
+  var subject: js.UndefOr[Reference] = js.native
 }
 
 object Basic {
   @scala.inline
-  def apply(
-    code: CodeableConcept,
-    _created: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    author: Reference = null,
-    contained: js.Array[Resource] = null,
-    created: date = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    resourceType: code = null,
-    subject: Reference = null,
-    text: Narrative = null
-  ): Basic = {
+  def apply(code: CodeableConcept): Basic = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-    if (_created != null) __obj.updateDynamic("_created")(_created.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Basic]
   }
+  @scala.inline
+  implicit class BasicOps[Self <: Basic] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_created(value: Element): Self = this.set("_created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_created: Self = this.set("_created", js.undefined)
+    @scala.inline
+    def setAuthor(value: Reference): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setCreated(value: date): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+  }
+  
 }
 

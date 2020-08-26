@@ -11,6 +11,7 @@ package object mod {
     - typings.babelParser.babelParserStrings.classPrivateMethods
     - typings.babelParser.babelParserStrings.classPrivateProperties
     - typings.babelParser.babelParserStrings.classProperties
+    - typings.babelParser.babelParserStrings.decimal
     - typings.babelParser.babelParserStrings.decorators
     - typings.babelParser.babelParserStrings.`decorators-legacy`
     - typings.babelParser.babelParserStrings.doExpressions

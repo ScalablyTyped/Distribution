@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GlideDuration extends js.Object {
   /**
     * Add the specified duration to the object.
@@ -17,7 +18,7 @@ trait GlideDuration extends js.Object {
     * var answer = duration.add(duration2);
     * gs.info(answer.getDisplayValue());
     */
-  def add(value: GlideDuration): GlideDuration
+  def add(value: GlideDuration): GlideDuration = js.native
   /**
     * Gets the duration in the specified format.
     *
@@ -28,7 +29,7 @@ trait GlideDuration extends js.Object {
     * var dur = new GlideDuration('3 22:00:00');
     * gs.info(dur.getByFormat('HH:mm'));
     */
-  def getByFormat(format: String): String
+  def getByFormat(format: String): String = js.native
   /**
     * Gets the number of days.
     *
@@ -38,7 +39,7 @@ trait GlideDuration extends js.Object {
     * var dur = new GlideDuration('3 12:00:00');
     * gs.info(dur.getDayPart());
     */
-  def getDayPart(): Double
+  def getDayPart(): Double = js.native
   /**
     * Gets the display value of the duration in number of days, hours, and
     * minutes.
@@ -49,7 +50,7 @@ trait GlideDuration extends js.Object {
     * var dur = new GlideDuration('3 12:00:00');
     * gs.info(dur.getDisplayValue());
     */
-  def getDisplayValue(): String
+  def getDisplayValue(): String = js.native
   /**
     * Gets the duration value in "d HH:mm:ss" format.
     *
@@ -59,7 +60,7 @@ trait GlideDuration extends js.Object {
     * var dur = new GlideDuration('3 12:00:00');
     * gs.info(dur.getDurationValue());
     */
-  def getDurationValue(): String
+  def getDurationValue(): String = js.native
   /**
     * Gets the rounded number of days. If the time part is more than 12 hours, the return value is
     * rounded up. Otherwise, it is rounded down.
@@ -70,7 +71,7 @@ trait GlideDuration extends js.Object {
     * var dur = new GlideDuration('3 11:00:00');
     * gs.info(dur.getRoundedDayPart());
     */
-  def getRoundedDayPart(): Double
+  def getRoundedDayPart(): Double = js.native
   /**
     * Gets the internal value of the GlideDuration object.
     *
@@ -81,7 +82,7 @@ trait GlideDuration extends js.Object {
     * var dur = new GlideDuration('3 12:00:00');
     * gs.info(dur.getValue());
     */
-  def getValue(): String
+  def getValue(): String = js.native
   /**
     * Sets the display value.
     *
@@ -93,7 +94,7 @@ trait GlideDuration extends js.Object {
     * dur.setDisplayValue('3 08:00:00');
     * gs.info(dur.getDisplayValue());
     */
-  def setDisplayValue(asDisplayed: String): Unit
+  def setDisplayValue(asDisplayed: String): Unit = js.native
   /**
     * Sets the internal value of the GlideDuration object.
     *
@@ -106,7 +107,7 @@ trait GlideDuration extends js.Object {
     * dur.setValue('1970-01-05 08:00:00');
     * gs.info(dur.getDisplayValue());
     */
-  def setValue(value: String): Unit
+  def setValue(value: String): Unit = js.native
   /**
     * Subtracts the specified duration from the current duration.
     *
@@ -119,7 +120,7 @@ trait GlideDuration extends js.Object {
     * var answer = duration.subtract(duration2);
     * gs.info(answer.getDisplayValue());
     */
-  def subtract(value: GlideDuration): GlideDuration
+  def subtract(value: GlideDuration): GlideDuration = js.native
 }
 
 object GlideDuration {
@@ -139,5 +140,38 @@ object GlideDuration {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), getByFormat = js.Any.fromFunction1(getByFormat), getDayPart = js.Any.fromFunction0(getDayPart), getDisplayValue = js.Any.fromFunction0(getDisplayValue), getDurationValue = js.Any.fromFunction0(getDurationValue), getRoundedDayPart = js.Any.fromFunction0(getRoundedDayPart), getValue = js.Any.fromFunction0(getValue), setDisplayValue = js.Any.fromFunction1(setDisplayValue), setValue = js.Any.fromFunction1(setValue), subtract = js.Any.fromFunction1(subtract))
     __obj.asInstanceOf[GlideDuration]
   }
+  @scala.inline
+  implicit class GlideDurationOps[Self <: GlideDuration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: GlideDuration => GlideDuration): Self = this.set("add", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetByFormat(value: String => String): Self = this.set("getByFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetDayPart(value: () => Double): Self = this.set("getDayPart", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetDisplayValue(value: () => String): Self = this.set("getDisplayValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetDurationValue(value: () => String): Self = this.set("getDurationValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetRoundedDayPart(value: () => Double): Self = this.set("getRoundedDayPart", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetValue(value: () => String): Self = this.set("getValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetDisplayValue(value: String => Unit): Self = this.set("setDisplayValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetValue(value: String => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSubtract(value: GlideDuration => GlideDuration): Self = this.set("subtract", js.Any.fromFunction1(value))
+  }
+  
 }
 

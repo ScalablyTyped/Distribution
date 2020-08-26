@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation._
   * @property id - Unique number associated with instance of input source. Same physical devices when reconnected will not share this ID.
   * @property inputSource - XRInputSource object that is associated with this input source.
   * @property targetRayMode - Type of ray Input Device is based on. Can be one of the following:
-  
-  * {@link pc.XRTARGETRAY_GAZE}: Gaze - indicates the target ray will originate at the viewer and follow the direction it is facing. (This is commonly referred to as a "gaze input" device in the context of head-mounted displays.)
-  * {@link pc.XRTARGETRAY_SCREEN}: Screen - indicates that the input source was an interaction with the canvas element associated with an inline session’s output context, such as a mouse click or touch event.
-  * {@link pc.XRTARGETRAY_POINTER}: Tracked Pointer - indicates that the target ray originates from either a handheld device or other hand-tracking mechanism and represents that the user is using their hands or the held device for pointing.
+  *
+  * * {@link pc.XRTARGETRAY_GAZE}: Gaze - indicates the target ray will originate at the viewer and follow the direction it is facing. (This is commonly referred to as a "gaze input" device in the context of head-mounted displays.)
+  * * {@link pc.XRTARGETRAY_SCREEN}: Screen - indicates that the input source was an interaction with the canvas element associated with an inline session’s output context, such as a mouse click or touch event.
+  * * {@link pc.XRTARGETRAY_POINTER}: Tracked Pointer - indicates that the target ray originates from either a handheld device or other hand-tracking mechanism and represents that the user is using their hands or the held device for pointing.
   * @property handedness - Describes which hand input source is associated with. Can be one of the following:
-  
-  * {@link pc.XRHAND_NONE}: None - input source is not meant to be held in hands.
-  * {@link pc.XRHAND_LEFT}: Left - indicates that input source is meant to be held in left hand.
-  * {@link pc.XRHAND_RIGHT}: Right - indicates that input source is meant to be held in right hand.
+  *
+  * * {@link pc.XRHAND_NONE}: None - input source is not meant to be held in hands.
+  * * {@link pc.XRHAND_LEFT}: Left - indicates that input source is meant to be held in left hand.
+  * * {@link pc.XRHAND_RIGHT}: Right - indicates that input source is meant to be held in right hand.
   * @property profiles - List of input profile names indicating both the prefered visual representation and behavior of the input source.
   * @property grip - If input source can be held, then it will have node with its world transformation, that can be used to position and rotate virtual joystics based on it.
   * @property gamepad - If input source has buttons, triggers, thumbstick or touchpad, then this object provides access to its states.
@@ -50,9 +50,10 @@ trait XrInputSource extends EventHandler {
   var grip: Boolean = js.native
   /**
     * Describes which hand input source is associated with. Can be one of the following:
-    * * {@link pc.XRHAND_NONE}: None - input source is not meant to be held in hands.
-    * * {@link pc.XRHAND_LEFT}: Left - indicates that input source is meant to be held in left hand.
-    * * {@link pc.XRHAND_RIGHT}: Right - indicates that input source is meant to be held in right hand.
+    
+    * {@link pc.XRHAND_NONE}: None - input source is not meant to be held in hands.
+    * {@link pc.XRHAND_LEFT}: Left - indicates that input source is meant to be held in left hand.
+    * {@link pc.XRHAND_RIGHT}: Right - indicates that input source is meant to be held in right hand.
     */
   var handedness: String = js.native
   /**
@@ -77,9 +78,10 @@ trait XrInputSource extends EventHandler {
   var selecting: Boolean = js.native
   /**
     * Type of ray Input Device is based on. Can be one of the following:
-    * * {@link pc.XRTARGETRAY_GAZE}: Gaze - indicates the target ray will originate at the viewer and follow the direction it is facing. (This is commonly referred to as a "gaze input" device in the context of head-mounted displays.)
-    * * {@link pc.XRTARGETRAY_SCREEN}: Screen - indicates that the input source was an interaction with the canvas element associated with an inline session’s output context, such as a mouse click or touch event.
-    * * {@link pc.XRTARGETRAY_POINTER}: Tracked Pointer - indicates that the target ray originates from either a handheld device or other hand-tracking mechanism and represents that the user is using their hands or the held device for pointing.
+    
+    * {@link pc.XRTARGETRAY_GAZE}: Gaze - indicates the target ray will originate at the viewer and follow the direction it is facing. (This is commonly referred to as a "gaze input" device in the context of head-mounted displays.)
+    * {@link pc.XRTARGETRAY_SCREEN}: Screen - indicates that the input source was an interaction with the canvas element associated with an inline session’s output context, such as a mouse click or touch event.
+    * {@link pc.XRTARGETRAY_POINTER}: Tracked Pointer - indicates that the target ray originates from either a handheld device or other hand-tracking mechanism and represents that the user is using their hands or the held device for pointing.
     */
   var targetRayMode: String = js.native
   /**
@@ -116,30 +118,30 @@ trait XrInputSource extends EventHandler {
     * Attempts to start hit test source based on this input source.
     * @example
     * app.xr.input.on('add', function (inputSource) {
-    inputSource.hitTestStart({
-    callback: function (err, hitTestSource) {
-    if (err) return;
-    hitTestSource.on('result', function (position, rotation) {
-    // position and rotation of hit test result
-    // that will be created from touch on mobile devices
-    });
-    }
-    });
-    });
+    *     inputSource.hitTestStart({
+    *         callback: function (err, hitTestSource) {
+    *             if (err) return;
+    *             hitTestSource.on('result', function (position, rotation) {
+    *                 // position and rotation of hit test result
+    *                 // that will be created from touch on mobile devices
+    *             });
+    *         }
+    *     });
+    * });
     * @param [options] - Object for passing optional arguments.
     * @param [options.entityTypes] - Optional list of underlying entity types
-    against which hit tests will be performed. Defaults to [ {pc.XRTRACKABLE_PLANE} ].
-    Can be any combination of the following:
-    
-    * {@link pc.XRTRACKABLE_POINT}: Point - indicates that the hit test results will be
-    computed based on the feature points detected by the underlying Augmented Reality system.
-    * {@link pc.XRTRACKABLE_PLANE}: Plane - indicates that the hit test results will be
-    computed based on the planes detected by the underlying Augmented Reality system.
-    * {@link pc.XRTRACKABLE_MESH}: Mesh - indicates that the hit test results will be
-    computed based on the meshes detected by the underlying Augmented Reality system.
+    * against which hit tests will be performed. Defaults to [ {pc.XRTRACKABLE_PLANE} ].
+    * Can be any combination of the following:
+    *
+    * * {@link pc.XRTRACKABLE_POINT}: Point - indicates that the hit test results will be
+    * computed based on the feature points detected by the underlying Augmented Reality system.
+    * * {@link pc.XRTRACKABLE_PLANE}: Plane - indicates that the hit test results will be
+    * computed based on the planes detected by the underlying Augmented Reality system.
+    * * {@link pc.XRTRACKABLE_MESH}: Mesh - indicates that the hit test results will be
+    * computed based on the meshes detected by the underlying Augmented Reality system.
     * @param [options.offsetRay] - Optional ray by which hit test ray can be offset.
     * @param [options.callback] - Optional callback function
-    called once hit test source is created or failed.
+    * called once hit test source is created or failed.
     */
   def hitTestStart(): Unit = js.native
   def hitTestStart(options: EntityTypes): Unit = js.native

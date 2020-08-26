@@ -1,7 +1,7 @@
 package typings.emotionStyledBase.mod
 
 import typings.emotionSerialize.mod.ComponentSelector
-import typings.emotionStyledBase.anon.ThemeTheme
+import typings.emotionStyledBase.anon.`0`
 import typings.emotionStyledBase.emotionStyledBaseStrings.`object`
 import typings.emotionStyledBase.emotionStyledBaseStrings.`var`
 import typings.emotionStyledBase.emotionStyledBaseStrings.a
@@ -165,6 +165,7 @@ import typings.emotionStyledBase.emotionStyledBaseStrings.textarea
 import typings.emotionStyledBase.emotionStyledBaseStrings.tfoot
 import typings.emotionStyledBase.emotionStyledBaseStrings.th
 import typings.emotionStyledBase.emotionStyledBaseStrings.thead
+import typings.emotionStyledBase.emotionStyledBaseStrings.theme
 import typings.emotionStyledBase.emotionStyledBaseStrings.time
 import typings.emotionStyledBase.emotionStyledBaseStrings.title
 import typings.emotionStyledBase.emotionStyledBaseStrings.tr
@@ -177,6 +178,7 @@ import typings.emotionStyledBase.emotionStyledBaseStrings.video
 import typings.emotionStyledBase.emotionStyledBaseStrings.view
 import typings.emotionStyledBase.emotionStyledBaseStrings.wbr
 import typings.emotionStyledBase.emotionStyledBaseStrings.webview
+import typings.emotionStyledBase.helperMod.Omit
 import typings.emotionStyledBase.helperMod.PropsOf
 import typings.react.HTMLWebViewElement
 import typings.react.mod.AnchorHTMLAttributes
@@ -354,7 +356,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
   extends ComponentSelector
-     with FunctionComponent[InnerProps with StyleProps with ThemeTheme[Theme]] {
+     with FunctionComponent[InnerProps with (Omit[StyleProps, theme]) with `0`[Theme]] {
   def withComponent[Tag /* <: ComponentType[_] */](tag: Tag): StyledComponent[PropsOf[Tag], StyleProps, Theme] = js.native
   /**
     * @desc this method is type-unsafe

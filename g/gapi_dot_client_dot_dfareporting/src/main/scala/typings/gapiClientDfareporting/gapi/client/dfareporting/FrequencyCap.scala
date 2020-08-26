@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FrequencyCap extends js.Object {
   /** Duration of time, in seconds, for this frequency cap. The maximum duration is 90 days. Acceptable values are 1 to 7776000, inclusive. */
-  var duration: js.UndefOr[String] = js.undefined
+  var duration: js.UndefOr[String] = js.native
   /** Number of times an individual user can be served the ad within the specified duration. Acceptable values are 1 to 15, inclusive. */
-  var impressions: js.UndefOr[String] = js.undefined
+  var impressions: js.UndefOr[String] = js.native
 }
 
 object FrequencyCap {
   @scala.inline
-  def apply(duration: String = null, impressions: String = null): FrequencyCap = {
+  def apply(): FrequencyCap = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (impressions != null) __obj.updateDynamic("impressions")(impressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrequencyCap]
   }
+  @scala.inline
+  implicit class FrequencyCapOps[Self <: FrequencyCap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setImpressions(value: String): Self = this.set("impressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpressions: Self = this.set("impressions", js.undefined)
+  }
+  
 }
 

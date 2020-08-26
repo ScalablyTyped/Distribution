@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "notyf" : "3.7.0"
+      "notyf" : "3.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "notyf" : "3.7.0"
+      "notyf" : "3.9.0"
     }
   ],
   "compile-devDependencies" : [

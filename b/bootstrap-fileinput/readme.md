@@ -10,9 +10,9 @@ An enhanced HTML 5 file input for Bootstrap 3.x with file preview, multiple sele
 | ------------------ | :-------------: |
 | Full name          | bootstrap-fileinput |
 | Keywords           | file, input, preview, image, upload, ajax, multiple, delete, progress, gallery |
-| # releases         | 15 |
+| # releases         | 17 |
 | # dependents       | 7 |
-| # downloads        | 190524 |
+| # downloads        | 198977 |
 | # stars            | 0 |
 
 ## Links

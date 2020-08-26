@@ -1,6 +1,7 @@
 package typings.uifabricUtilities
 
 import typings.std.HTMLElement
+import typings.std.Window
 import typings.uifabricUtilities.eventGroupMod.EventGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,8 +17,8 @@ object scrollMod extends js.Object {
   def allowScrollOnElement(element: HTMLElement, events: EventGroup): Unit = js.native
   def disableBodyScroll(): Unit = js.native
   def enableBodyScroll(): Unit = js.native
-  def findScrollableParent(): HTMLElement | Null = js.native
-  def findScrollableParent(startingElement: HTMLElement): HTMLElement | Null = js.native
+  def findScrollableParent(): js.UndefOr[HTMLElement | Window | Null] = js.native
+  def findScrollableParent(startingElement: HTMLElement): js.UndefOr[HTMLElement | Window | Null] = js.native
   def getScrollbarWidth(): Double = js.native
 }
 

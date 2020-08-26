@@ -42,16 +42,45 @@ object CreateTrustRequest {
     DirectoryId: DirectoryId,
     RemoteDomainName: RemoteDomainName,
     TrustDirection: TrustDirection,
-    TrustPassword: TrustPassword,
-    ConditionalForwarderIpAddrs: DnsIpAddrs = null,
-    SelectiveAuth: SelectiveAuth = null,
-    TrustType: TrustType = null
+    TrustPassword: TrustPassword
   ): CreateTrustRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], RemoteDomainName = RemoteDomainName.asInstanceOf[js.Any], TrustDirection = TrustDirection.asInstanceOf[js.Any], TrustPassword = TrustPassword.asInstanceOf[js.Any])
-    if (ConditionalForwarderIpAddrs != null) __obj.updateDynamic("ConditionalForwarderIpAddrs")(ConditionalForwarderIpAddrs.asInstanceOf[js.Any])
-    if (SelectiveAuth != null) __obj.updateDynamic("SelectiveAuth")(SelectiveAuth.asInstanceOf[js.Any])
-    if (TrustType != null) __obj.updateDynamic("TrustType")(TrustType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTrustRequest]
   }
+  @scala.inline
+  implicit class CreateTrustRequestOps[Self <: CreateTrustRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRemoteDomainName(value: RemoteDomainName): Self = this.set("RemoteDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrustDirection(value: TrustDirection): Self = this.set("TrustDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrustPassword(value: TrustPassword): Self = this.set("TrustPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConditionalForwarderIpAddrsVarargs(value: IpAddr*): Self = this.set("ConditionalForwarderIpAddrs", js.Array(value :_*))
+    @scala.inline
+    def setConditionalForwarderIpAddrs(value: DnsIpAddrs): Self = this.set("ConditionalForwarderIpAddrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionalForwarderIpAddrs: Self = this.set("ConditionalForwarderIpAddrs", js.undefined)
+    @scala.inline
+    def setSelectiveAuth(value: SelectiveAuth): Self = this.set("SelectiveAuth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectiveAuth: Self = this.set("SelectiveAuth", js.undefined)
+    @scala.inline
+    def setTrustType(value: TrustType): Self = this.set("TrustType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrustType: Self = this.set("TrustType", js.undefined)
+  }
+  
 }
 

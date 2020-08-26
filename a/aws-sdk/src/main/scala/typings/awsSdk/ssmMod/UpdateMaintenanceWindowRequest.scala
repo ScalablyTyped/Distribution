@@ -62,35 +62,72 @@ trait UpdateMaintenanceWindowRequest extends js.Object {
 
 object UpdateMaintenanceWindowRequest {
   @scala.inline
-  def apply(
-    WindowId: MaintenanceWindowId,
-    AllowUnassociatedTargets: js.UndefOr[MaintenanceWindowAllowUnassociatedTargets] = js.undefined,
-    Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.undefined,
-    Description: MaintenanceWindowDescription = null,
-    Duration: js.UndefOr[MaintenanceWindowDurationHours] = js.undefined,
-    Enabled: js.UndefOr[MaintenanceWindowEnabled] = js.undefined,
-    EndDate: MaintenanceWindowStringDateTime = null,
-    Name: MaintenanceWindowName = null,
-    Replace: js.UndefOr[Boolean] = js.undefined,
-    Schedule: MaintenanceWindowSchedule = null,
-    ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.undefined,
-    ScheduleTimezone: MaintenanceWindowTimezone = null,
-    StartDate: MaintenanceWindowStringDateTime = null
-  ): UpdateMaintenanceWindowRequest = {
+  def apply(WindowId: MaintenanceWindowId): UpdateMaintenanceWindowRequest = {
     val __obj = js.Dynamic.literal(WindowId = WindowId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowUnassociatedTargets)) __obj.updateDynamic("AllowUnassociatedTargets")(AllowUnassociatedTargets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Cutoff)) __obj.updateDynamic("Cutoff")(Cutoff.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(Replace)) __obj.updateDynamic("Replace")(Replace.get.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScheduleOffset)) __obj.updateDynamic("ScheduleOffset")(ScheduleOffset.get.asInstanceOf[js.Any])
-    if (ScheduleTimezone != null) __obj.updateDynamic("ScheduleTimezone")(ScheduleTimezone.asInstanceOf[js.Any])
-    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMaintenanceWindowRequest]
   }
+  @scala.inline
+  implicit class UpdateMaintenanceWindowRequestOps[Self <: UpdateMaintenanceWindowRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWindowId(value: MaintenanceWindowId): Self = this.set("WindowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowUnassociatedTargets(value: MaintenanceWindowAllowUnassociatedTargets): Self = this.set("AllowUnassociatedTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowUnassociatedTargets: Self = this.set("AllowUnassociatedTargets", js.undefined)
+    @scala.inline
+    def setCutoff(value: MaintenanceWindowCutoff): Self = this.set("Cutoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCutoff: Self = this.set("Cutoff", js.undefined)
+    @scala.inline
+    def setDescription(value: MaintenanceWindowDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDuration(value: MaintenanceWindowDurationHours): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setEnabled(value: MaintenanceWindowEnabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setEndDate(value: MaintenanceWindowStringDateTime): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    @scala.inline
+    def setName(value: MaintenanceWindowName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setReplace(value: Boolean): Self = this.set("Replace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplace: Self = this.set("Replace", js.undefined)
+    @scala.inline
+    def setSchedule(value: MaintenanceWindowSchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    @scala.inline
+    def setScheduleOffset(value: MaintenanceWindowOffset): Self = this.set("ScheduleOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleOffset: Self = this.set("ScheduleOffset", js.undefined)
+    @scala.inline
+    def setScheduleTimezone(value: MaintenanceWindowTimezone): Self = this.set("ScheduleTimezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleTimezone: Self = this.set("ScheduleTimezone", js.undefined)
+    @scala.inline
+    def setStartDate(value: MaintenanceWindowStringDateTime): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+  }
+  
 }
 

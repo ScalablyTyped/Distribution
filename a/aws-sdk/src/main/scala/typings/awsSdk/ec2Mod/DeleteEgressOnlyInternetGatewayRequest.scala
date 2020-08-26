@@ -18,13 +18,28 @@ trait DeleteEgressOnlyInternetGatewayRequest extends js.Object {
 
 object DeleteEgressOnlyInternetGatewayRequest {
   @scala.inline
-  def apply(
-    EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): DeleteEgressOnlyInternetGatewayRequest = {
+  def apply(EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId): DeleteEgressOnlyInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(EgressOnlyInternetGatewayId = EgressOnlyInternetGatewayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEgressOnlyInternetGatewayRequest]
   }
+  @scala.inline
+  implicit class DeleteEgressOnlyInternetGatewayRequestOps[Self <: DeleteEgressOnlyInternetGatewayRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEgressOnlyInternetGatewayId(value: EgressOnlyInternetGatewayId): Self = this.set("EgressOnlyInternetGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

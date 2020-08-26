@@ -3,6 +3,7 @@ package typings.node.NodeJS
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.anon.End
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

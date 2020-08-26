@@ -11,8 +11,8 @@ List of escapable characters in markdown
 | Full name          | markdown-escapes |
 | Keywords           | markdown, escape, pedantic, gfm, commonmark |
 | # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 94986700 |
+| # dependents       | 11 |
+| # downloads        | 108326262 |
 | # stars            | 0 |
 
 ## Links

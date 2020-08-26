@@ -47,24 +47,52 @@ trait MutableClusterInfo extends js.Object {
 
 object MutableClusterInfo {
   @scala.inline
-  def apply(
-    BrokerEBSVolumeInfo: listOfBrokerEBSVolumeInfo = null,
-    ConfigurationInfo: ConfigurationInfo = null,
-    EnhancedMonitoring: EnhancedMonitoring = null,
-    KafkaVersion: string = null,
-    LoggingInfo: LoggingInfo = null,
-    NumberOfBrokerNodes: js.UndefOr[integer] = js.undefined,
-    OpenMonitoring: OpenMonitoring = null
-  ): MutableClusterInfo = {
+  def apply(): MutableClusterInfo = {
     val __obj = js.Dynamic.literal()
-    if (BrokerEBSVolumeInfo != null) __obj.updateDynamic("BrokerEBSVolumeInfo")(BrokerEBSVolumeInfo.asInstanceOf[js.Any])
-    if (ConfigurationInfo != null) __obj.updateDynamic("ConfigurationInfo")(ConfigurationInfo.asInstanceOf[js.Any])
-    if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
-    if (KafkaVersion != null) __obj.updateDynamic("KafkaVersion")(KafkaVersion.asInstanceOf[js.Any])
-    if (LoggingInfo != null) __obj.updateDynamic("LoggingInfo")(LoggingInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfBrokerNodes)) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.get.asInstanceOf[js.Any])
-    if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutableClusterInfo]
   }
+  @scala.inline
+  implicit class MutableClusterInfoOps[Self <: MutableClusterInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokerEBSVolumeInfoVarargs(value: BrokerEBSVolumeInfo*): Self = this.set("BrokerEBSVolumeInfo", js.Array(value :_*))
+    @scala.inline
+    def setBrokerEBSVolumeInfo(value: listOfBrokerEBSVolumeInfo): Self = this.set("BrokerEBSVolumeInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerEBSVolumeInfo: Self = this.set("BrokerEBSVolumeInfo", js.undefined)
+    @scala.inline
+    def setConfigurationInfo(value: ConfigurationInfo): Self = this.set("ConfigurationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationInfo: Self = this.set("ConfigurationInfo", js.undefined)
+    @scala.inline
+    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = this.set("EnhancedMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedMonitoring: Self = this.set("EnhancedMonitoring", js.undefined)
+    @scala.inline
+    def setKafkaVersion(value: string): Self = this.set("KafkaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKafkaVersion: Self = this.set("KafkaVersion", js.undefined)
+    @scala.inline
+    def setLoggingInfo(value: LoggingInfo): Self = this.set("LoggingInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingInfo: Self = this.set("LoggingInfo", js.undefined)
+    @scala.inline
+    def setNumberOfBrokerNodes(value: integer): Self = this.set("NumberOfBrokerNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfBrokerNodes: Self = this.set("NumberOfBrokerNodes", js.undefined)
+    @scala.inline
+    def setOpenMonitoring(value: OpenMonitoring): Self = this.set("OpenMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenMonitoring: Self = this.set("OpenMonitoring", js.undefined)
+  }
+  
 }
 

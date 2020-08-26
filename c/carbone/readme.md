@@ -10,9 +10,9 @@ Fast, Simple and Powerful report generator. Injects JSON and produces PDF, DOCX,
 | ------------------ | :-------------: |
 | Full name          | carbone |
 | Keywords           | report, document, pdf, xslx, docx, odt, ods, json |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 34741 |
+| # downloads        | 29143 |
 | # stars            | 0 |
 
 ## Links

@@ -38,20 +38,44 @@ trait SchemaManagedConfigurationsSettings extends js.Object {
 
 object SchemaManagedConfigurationsSettings {
   @scala.inline
-  def apply(
-    kind: String = null,
-    lastUpdatedTimestampMillis: String = null,
-    managedProperty: js.Array[SchemaManagedProperty] = null,
-    mcmId: String = null,
-    name: String = null
-  ): SchemaManagedConfigurationsSettings = {
+  def apply(): SchemaManagedConfigurationsSettings = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastUpdatedTimestampMillis != null) __obj.updateDynamic("lastUpdatedTimestampMillis")(lastUpdatedTimestampMillis.asInstanceOf[js.Any])
-    if (managedProperty != null) __obj.updateDynamic("managedProperty")(managedProperty.asInstanceOf[js.Any])
-    if (mcmId != null) __obj.updateDynamic("mcmId")(mcmId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedConfigurationsSettings]
   }
+  @scala.inline
+  implicit class SchemaManagedConfigurationsSettingsOps[Self <: SchemaManagedConfigurationsSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastUpdatedTimestampMillis(value: String): Self = this.set("lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTimestampMillis: Self = this.set("lastUpdatedTimestampMillis", js.undefined)
+    @scala.inline
+    def setManagedPropertyVarargs(value: SchemaManagedProperty*): Self = this.set("managedProperty", js.Array(value :_*))
+    @scala.inline
+    def setManagedProperty(value: js.Array[SchemaManagedProperty]): Self = this.set("managedProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedProperty: Self = this.set("managedProperty", js.undefined)
+    @scala.inline
+    def setMcmId(value: String): Self = this.set("mcmId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMcmId: Self = this.set("mcmId", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

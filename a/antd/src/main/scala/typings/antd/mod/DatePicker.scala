@@ -37,6 +37,7 @@ object DatePicker
       Component[PickerProps[Moment], js.Any, js.Any]
     ] {
   var MonthPicker: ComponentClass[PickPickPickerDatePropsMo, _] = js.native
+  var QuarterPicker: ComponentClass[PickPickPickerTimePropsMo, _] = js.native
   var RangePicker: ComponentClass[RangePickerProps[Moment], _] = js.native
   var TimePicker: ComponentClass[PickPickPickerTimePropsMo, _] = js.native
   var WeekPicker: ComponentClass[PickPickPickerDatePropsMo, _] = js.native

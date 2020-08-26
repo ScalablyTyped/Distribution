@@ -71,41 +71,86 @@ trait ScanInput extends js.Object {
 
 object ScanInput {
   @scala.inline
-  def apply(
-    TableName: TableName,
-    AttributesToGet: AttributeNameList = null,
-    ConditionalOperator: ConditionalOperator = null,
-    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
-    ExclusiveStartKey: Key = null,
-    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
-    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
-    FilterExpression: ConditionExpression = null,
-    IndexName: IndexName = null,
-    Limit: js.UndefOr[PositiveIntegerObject] = js.undefined,
-    ProjectionExpression: ProjectionExpression = null,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
-    ScanFilter: FilterConditionMap = null,
-    Segment: js.UndefOr[ScanSegment] = js.undefined,
-    Select: Select = null,
-    TotalSegments: js.UndefOr[ScanTotalSegments] = js.undefined
-  ): ScanInput = {
+  def apply(TableName: TableName): ScanInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
-    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet.asInstanceOf[js.Any])
-    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.get.asInstanceOf[js.Any])
-    if (ExclusiveStartKey != null) __obj.updateDynamic("ExclusiveStartKey")(ExclusiveStartKey.asInstanceOf[js.Any])
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
-    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues.asInstanceOf[js.Any])
-    if (FilterExpression != null) __obj.updateDynamic("FilterExpression")(FilterExpression.asInstanceOf[js.Any])
-    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression.asInstanceOf[js.Any])
-    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
-    if (ScanFilter != null) __obj.updateDynamic("ScanFilter")(ScanFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(Segment)) __obj.updateDynamic("Segment")(Segment.get.asInstanceOf[js.Any])
-    if (Select != null) __obj.updateDynamic("Select")(Select.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalSegments)) __obj.updateDynamic("TotalSegments")(TotalSegments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanInput]
   }
+  @scala.inline
+  implicit class ScanInputOps[Self <: ScanInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributesToGetVarargs(value: AttributeName*): Self = this.set("AttributesToGet", js.Array(value :_*))
+    @scala.inline
+    def setAttributesToGet(value: AttributeNameList): Self = this.set("AttributesToGet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributesToGet: Self = this.set("AttributesToGet", js.undefined)
+    @scala.inline
+    def setConditionalOperator(value: ConditionalOperator): Self = this.set("ConditionalOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionalOperator: Self = this.set("ConditionalOperator", js.undefined)
+    @scala.inline
+    def setConsistentRead(value: ConsistentRead): Self = this.set("ConsistentRead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsistentRead: Self = this.set("ConsistentRead", js.undefined)
+    @scala.inline
+    def setExclusiveStartKey(value: Key): Self = this.set("ExclusiveStartKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveStartKey: Self = this.set("ExclusiveStartKey", js.undefined)
+    @scala.inline
+    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = this.set("ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeNames: Self = this.set("ExpressionAttributeNames", js.undefined)
+    @scala.inline
+    def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = this.set("ExpressionAttributeValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeValues: Self = this.set("ExpressionAttributeValues", js.undefined)
+    @scala.inline
+    def setFilterExpression(value: ConditionExpression): Self = this.set("FilterExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterExpression: Self = this.set("FilterExpression", js.undefined)
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    @scala.inline
+    def setLimit(value: PositiveIntegerObject): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setProjectionExpression(value: ProjectionExpression): Self = this.set("ProjectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectionExpression: Self = this.set("ProjectionExpression", js.undefined)
+    @scala.inline
+    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = this.set("ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnConsumedCapacity: Self = this.set("ReturnConsumedCapacity", js.undefined)
+    @scala.inline
+    def setScanFilter(value: FilterConditionMap): Self = this.set("ScanFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanFilter: Self = this.set("ScanFilter", js.undefined)
+    @scala.inline
+    def setSegment(value: ScanSegment): Self = this.set("Segment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegment: Self = this.set("Segment", js.undefined)
+    @scala.inline
+    def setSelect(value: Select): Self = this.set("Select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("Select", js.undefined)
+    @scala.inline
+    def setTotalSegments(value: ScanTotalSegments): Self = this.set("TotalSegments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSegments: Self = this.set("TotalSegments", js.undefined)
+  }
+  
 }
 

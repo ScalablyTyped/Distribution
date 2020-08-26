@@ -26,15 +26,34 @@ trait LoggingOptions extends js.Object {
 
 object LoggingOptions {
   @scala.inline
-  def apply(
-    enabled: LoggingEnabled,
-    level: LoggingLevel,
-    roleArn: AmazonResourceName,
-    detectorDebugOptions: DetectorDebugOptions = null
-  ): LoggingOptions = {
+  def apply(enabled: LoggingEnabled, level: LoggingLevel, roleArn: AmazonResourceName): LoggingOptions = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (detectorDebugOptions != null) __obj.updateDynamic("detectorDebugOptions")(detectorDebugOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingOptions]
   }
+  @scala.inline
+  implicit class LoggingOptionsOps[Self <: LoggingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: LoggingEnabled): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLevel(value: LoggingLevel): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: AmazonResourceName): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetectorDebugOptionsVarargs(value: DetectorDebugOption*): Self = this.set("detectorDebugOptions", js.Array(value :_*))
+    @scala.inline
+    def setDetectorDebugOptions(value: DetectorDebugOptions): Self = this.set("detectorDebugOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorDebugOptions: Self = this.set("detectorDebugOptions", js.undefined)
+  }
+  
 }
 

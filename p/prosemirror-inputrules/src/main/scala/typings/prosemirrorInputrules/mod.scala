@@ -68,6 +68,12 @@ object mod extends js.Object {
   def wrappingInputRule[S /* <: Schema[_, _] */](
     regexp: RegExp,
     nodeType: NodeType[S],
+    getAttrs: js.UndefOr[scala.Nothing],
+    joinPredicate: js.Function2[/* p1 */ js.Array[String], /* p2 */ Node[S], Boolean]
+  ): InputRule[S] = js.native
+  def wrappingInputRule[S /* <: Schema[_, _] */](
+    regexp: RegExp,
+    nodeType: NodeType[S],
     getAttrs: js.Function1[/* p */ js.Array[String], js.UndefOr[StringDictionary[_] | Null]]
   ): InputRule[S] = js.native
   def wrappingInputRule[S /* <: Schema[_, _] */](

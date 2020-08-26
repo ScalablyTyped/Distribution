@@ -18,11 +18,32 @@ trait DescribeDhcpOptionsResult extends js.Object {
 
 object DescribeDhcpOptionsResult {
   @scala.inline
-  def apply(DhcpOptions: DhcpOptionsList = null, NextToken: String = null): DescribeDhcpOptionsResult = {
+  def apply(): DescribeDhcpOptionsResult = {
     val __obj = js.Dynamic.literal()
-    if (DhcpOptions != null) __obj.updateDynamic("DhcpOptions")(DhcpOptions.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDhcpOptionsResult]
   }
+  @scala.inline
+  implicit class DescribeDhcpOptionsResultOps[Self <: DescribeDhcpOptionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDhcpOptionsVarargs(value: DhcpOptions*): Self = this.set("DhcpOptions", js.Array(value :_*))
+    @scala.inline
+    def setDhcpOptions(value: DhcpOptionsList): Self = this.set("DhcpOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDhcpOptions: Self = this.set("DhcpOptions", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

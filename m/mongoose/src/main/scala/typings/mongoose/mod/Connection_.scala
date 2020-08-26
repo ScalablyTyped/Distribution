@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Connection_ extends ConnectionBase {
   def startSession(): js.Promise[typings.mongodb.mod.ClientSession] = js.native
+  def startSession(
+    options: js.UndefOr[scala.Nothing],
+    cb: js.Function2[/* err */ js.Any, /* session */ typings.mongodb.mod.ClientSession, Unit]
+  ): js.Promise[typings.mongodb.mod.ClientSession] = js.native
   def startSession(options: SessionOptions): js.Promise[typings.mongodb.mod.ClientSession] = js.native
   def startSession(
     options: SessionOptions,

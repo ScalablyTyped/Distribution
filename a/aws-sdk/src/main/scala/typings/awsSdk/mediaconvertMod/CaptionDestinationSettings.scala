@@ -42,26 +42,54 @@ trait CaptionDestinationSettings extends js.Object {
 
 object CaptionDestinationSettings {
   @scala.inline
-  def apply(
-    BurninDestinationSettings: BurninDestinationSettings = null,
-    DestinationType: CaptionDestinationType = null,
-    DvbSubDestinationSettings: DvbSubDestinationSettings = null,
-    EmbeddedDestinationSettings: EmbeddedDestinationSettings = null,
-    ImscDestinationSettings: ImscDestinationSettings = null,
-    SccDestinationSettings: SccDestinationSettings = null,
-    TeletextDestinationSettings: TeletextDestinationSettings = null,
-    TtmlDestinationSettings: TtmlDestinationSettings = null
-  ): CaptionDestinationSettings = {
+  def apply(): CaptionDestinationSettings = {
     val __obj = js.Dynamic.literal()
-    if (BurninDestinationSettings != null) __obj.updateDynamic("BurninDestinationSettings")(BurninDestinationSettings.asInstanceOf[js.Any])
-    if (DestinationType != null) __obj.updateDynamic("DestinationType")(DestinationType.asInstanceOf[js.Any])
-    if (DvbSubDestinationSettings != null) __obj.updateDynamic("DvbSubDestinationSettings")(DvbSubDestinationSettings.asInstanceOf[js.Any])
-    if (EmbeddedDestinationSettings != null) __obj.updateDynamic("EmbeddedDestinationSettings")(EmbeddedDestinationSettings.asInstanceOf[js.Any])
-    if (ImscDestinationSettings != null) __obj.updateDynamic("ImscDestinationSettings")(ImscDestinationSettings.asInstanceOf[js.Any])
-    if (SccDestinationSettings != null) __obj.updateDynamic("SccDestinationSettings")(SccDestinationSettings.asInstanceOf[js.Any])
-    if (TeletextDestinationSettings != null) __obj.updateDynamic("TeletextDestinationSettings")(TeletextDestinationSettings.asInstanceOf[js.Any])
-    if (TtmlDestinationSettings != null) __obj.updateDynamic("TtmlDestinationSettings")(TtmlDestinationSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionDestinationSettings]
   }
+  @scala.inline
+  implicit class CaptionDestinationSettingsOps[Self <: CaptionDestinationSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBurninDestinationSettings(value: BurninDestinationSettings): Self = this.set("BurninDestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBurninDestinationSettings: Self = this.set("BurninDestinationSettings", js.undefined)
+    @scala.inline
+    def setDestinationType(value: CaptionDestinationType): Self = this.set("DestinationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationType: Self = this.set("DestinationType", js.undefined)
+    @scala.inline
+    def setDvbSubDestinationSettings(value: DvbSubDestinationSettings): Self = this.set("DvbSubDestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDvbSubDestinationSettings: Self = this.set("DvbSubDestinationSettings", js.undefined)
+    @scala.inline
+    def setEmbeddedDestinationSettings(value: EmbeddedDestinationSettings): Self = this.set("EmbeddedDestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbeddedDestinationSettings: Self = this.set("EmbeddedDestinationSettings", js.undefined)
+    @scala.inline
+    def setImscDestinationSettings(value: ImscDestinationSettings): Self = this.set("ImscDestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImscDestinationSettings: Self = this.set("ImscDestinationSettings", js.undefined)
+    @scala.inline
+    def setSccDestinationSettings(value: SccDestinationSettings): Self = this.set("SccDestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSccDestinationSettings: Self = this.set("SccDestinationSettings", js.undefined)
+    @scala.inline
+    def setTeletextDestinationSettings(value: TeletextDestinationSettings): Self = this.set("TeletextDestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeletextDestinationSettings: Self = this.set("TeletextDestinationSettings", js.undefined)
+    @scala.inline
+    def setTtmlDestinationSettings(value: TtmlDestinationSettings): Self = this.set("TtmlDestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTtmlDestinationSettings: Self = this.set("TtmlDestinationSettings", js.undefined)
+  }
+  
 }
 

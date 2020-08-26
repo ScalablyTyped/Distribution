@@ -28,7 +28,7 @@ trait Media
      with Instantiable4[
       /* src */ String, 
       /* mediaSuccess */ js.Function, 
-      /* mediaError */ js.Function1[/* mediaError */ MediaError, js.Any], 
+      js.UndefOr[/* mediaError */ js.Function1[/* mediaError */ MediaError, js.Any]], 
       /* mediaStatus */ js.Function, 
       Media
     ] {

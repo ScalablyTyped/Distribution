@@ -1,17 +1,10 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.anon.CancelComponentData
-import typings.devextreme.anon.ComponentTElementDxElement
-import typings.devextreme.anon.ComponentTElementDxElementModelAny
 import typings.devextreme.anon.Duration
-import typings.devextreme.anon.Element
 import typings.devextreme.anon.ElementModelTarget
 import typings.devextreme.anon.ElementTarget
-import typings.devextreme.anon.FormatModel
-import typings.devextreme.anon.Model
 import typings.devextreme.anon.ModelTarget
-import typings.devextreme.anon.Name
-import typings.devextreme.anon.TargetAny
+import typings.devextreme.anon.`14`
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -31,20 +24,6 @@ import typings.devextreme.devextremeStrings.`Soft Pastel`
 import typings.devextreme.devextremeStrings.alternate
 import typings.devextreme.devextremeStrings.blend
 import typings.devextreme.devextremeStrings.extrapolate
-import typings.devextreme.devextremeStrings.genericDotcarmine
-import typings.devextreme.devextremeStrings.genericDotcontrast
-import typings.devextreme.devextremeStrings.genericDotdark
-import typings.devextreme.devextremeStrings.genericDotdarkmoon
-import typings.devextreme.devextremeStrings.genericDotdarkviolet
-import typings.devextreme.devextremeStrings.genericDotgreenmist
-import typings.devextreme.devextremeStrings.genericDotlight
-import typings.devextreme.devextremeStrings.genericDotsoftblue
-import typings.devextreme.devextremeStrings.ios7Dotdefault
-import typings.devextreme.devextremeStrings.materialDotblueDotlight
-import typings.devextreme.devextremeStrings.materialDotlimeDotlight
-import typings.devextreme.devextremeStrings.materialDotorangeDotlight
-import typings.devextreme.devextremeStrings.materialDotpurpleDotlight
-import typings.devextreme.devextremeStrings.materialDottealDotlight
 import typings.devextreme.devextremeStrings.multiple
 import typings.devextreme.devextremeStrings.single_
 import typings.devextreme.mod.DevExpress.data.DataSource
@@ -53,130 +32,143 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseChartOptions[T] extends BaseWidgetOptions[T] {
   /** @name BaseChart.Options.adaptiveLayout */
-  var adaptiveLayout: js.UndefOr[BaseChartAdaptiveLayout] = js.undefined
+  var adaptiveLayout: js.UndefOr[BaseChartAdaptiveLayout] = js.native
   /** @name BaseChart.Options.animation */
-  var animation: js.UndefOr[Duration | Boolean] = js.undefined
+  var animation: js.UndefOr[Duration | Boolean] = js.native
   /** @name BaseChart.Options.customizeLabel */
-  var customizeLabel: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesLabel]] = js.undefined
+  var customizeLabel: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesLabel]] = js.native
   /** @name BaseChart.Options.customizePoint */
-  var customizePoint: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesPoint]] = js.undefined
+  var customizePoint: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesPoint]] = js.native
   /** @name BaseChart.Options.dataSource */
-  var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.undefined
+  var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.native
   /** @name BaseChart.Options.legend */
-  var legend: js.UndefOr[BaseChartLegend] = js.undefined
+  var legend: js.UndefOr[BaseChartLegend] = js.native
   /** @name BaseChart.Options.onDone */
-  var onDone: js.UndefOr[js.Function1[/* e */ ComponentTElementDxElement[T], _]] = js.undefined
+  var onDone: js.UndefOr[js.Function1[/* e */ `14`[T], _]] = js.native
   /** @name BaseChart.Options.onPointClick */
-  var onPointClick: js.UndefOr[(js.Function1[/* e */ ModelTarget[T], _]) | String] = js.undefined
+  var onPointClick: js.UndefOr[(js.Function1[/* e */ ModelTarget[T], _]) | String] = js.native
   /** @name BaseChart.Options.onPointHoverChanged */
-  var onPointHoverChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, _]] = js.undefined
+  var onPointHoverChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, _]] = js.native
   /** @name BaseChart.Options.onPointSelectionChanged */
-  var onPointSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, _]] = js.undefined
+  var onPointSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, _]] = js.native
   /** @name BaseChart.Options.onTooltipHidden */
-  var onTooltipHidden: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], _]] = js.undefined
+  var onTooltipHidden: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], _]] = js.native
   /** @name BaseChart.Options.onTooltipShown */
-  var onTooltipShown: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], _]] = js.undefined
+  var onTooltipShown: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], _]] = js.native
   /** @name BaseChart.Options.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.undefined
+  ] = js.native
   /** @name BaseChart.Options.paletteExtensionMode */
-  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
+  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
   /** @name BaseChart.Options.pointSelectionMode */
-  var pointSelectionMode: js.UndefOr[multiple | single_] = js.undefined
+  var pointSelectionMode: js.UndefOr[multiple | single_] = js.native
   /** @name BaseChart.Options.series */
-  var series: js.UndefOr[js.Any | js.Array[_]] = js.undefined
+  var series: js.UndefOr[js.Any | js.Array[_]] = js.native
   /** @name BaseChart.Options.tooltip */
   @JSName("tooltip")
-  var tooltip_BaseChartOptions: js.UndefOr[BaseChartTooltip] = js.undefined
+  var tooltip_BaseChartOptions: js.UndefOr[BaseChartTooltip] = js.native
 }
 
 object BaseChartOptions {
   @scala.inline
-  def apply[T](
-    adaptiveLayout: BaseChartAdaptiveLayout = null,
-    animation: Duration | Boolean = null,
-    bindingOptions: js.Any = null,
-    customizeLabel: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesLabel = null,
-    customizePoint: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesPoint = null,
-    dataSource: js.Array[_] | DataSource | DataSourceOptions | String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    export: BaseWidgetExport = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    legend: BaseChartLegend = null,
-    loadingIndicator: BaseWidgetLoadingIndicator = null,
-    margin: BaseWidgetMargin = null,
-    onDisposing: /* e */ Model[T] => _ = null,
-    onDone: /* e */ ComponentTElementDxElement[T] => _ = null,
-    onDrawn: /* e */ ComponentTElementDxElementModelAny[T] => _ = null,
-    onExported: /* e */ ComponentTElementDxElementModelAny[T] => _ = null,
-    onExporting: /* e */ FormatModel[T] => _ = null,
-    onFileSaving: /* e */ CancelComponentData[T] => _ = null,
-    onIncidentOccurred: /* e */ TargetAny[T] => _ = null,
-    onInitialized: /* e */ Element[T] => _ = null,
-    onOptionChanged: /* e */ Name[T] => _ = null,
-    onPointClick: (js.Function1[/* e */ ModelTarget[T], _]) | String = null,
-    onPointHoverChanged: /* e */ ElementTarget => _ = null,
-    onPointSelectionChanged: /* e */ ElementTarget => _ = null,
-    onTooltipHidden: /* e */ ElementModelTarget[T] => _ = null,
-    onTooltipShown: /* e */ ElementModelTarget[T] => _ = null,
-    palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
-    paletteExtensionMode: alternate | blend | extrapolate = null,
-    pathModified: js.UndefOr[Boolean] = js.undefined,
-    pointSelectionMode: multiple | single_ = null,
-    redrawOnResize: js.UndefOr[Boolean] = js.undefined,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    series: js.Any | js.Array[_] = null,
-    size: BaseWidgetSize = null,
-    theme: genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight = null,
-    title: BaseWidgetTitle | String = null,
-    tooltip: BaseChartTooltip = null,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): BaseChartOptions[T] = {
+  def apply[T](): BaseChartOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (adaptiveLayout != null) __obj.updateDynamic("adaptiveLayout")(adaptiveLayout.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (customizeLabel != null) __obj.updateDynamic("customizeLabel")(js.Any.fromFunction1(customizeLabel))
-    if (customizePoint != null) __obj.updateDynamic("customizePoint")(js.Any.fromFunction1(customizePoint))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onDone != null) __obj.updateDynamic("onDone")(js.Any.fromFunction1(onDone))
-    if (onDrawn != null) __obj.updateDynamic("onDrawn")(js.Any.fromFunction1(onDrawn))
-    if (onExported != null) __obj.updateDynamic("onExported")(js.Any.fromFunction1(onExported))
-    if (onExporting != null) __obj.updateDynamic("onExporting")(js.Any.fromFunction1(onExporting))
-    if (onFileSaving != null) __obj.updateDynamic("onFileSaving")(js.Any.fromFunction1(onFileSaving))
-    if (onIncidentOccurred != null) __obj.updateDynamic("onIncidentOccurred")(js.Any.fromFunction1(onIncidentOccurred))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onPointClick != null) __obj.updateDynamic("onPointClick")(onPointClick.asInstanceOf[js.Any])
-    if (onPointHoverChanged != null) __obj.updateDynamic("onPointHoverChanged")(js.Any.fromFunction1(onPointHoverChanged))
-    if (onPointSelectionChanged != null) __obj.updateDynamic("onPointSelectionChanged")(js.Any.fromFunction1(onPointSelectionChanged))
-    if (onTooltipHidden != null) __obj.updateDynamic("onTooltipHidden")(js.Any.fromFunction1(onTooltipHidden))
-    if (onTooltipShown != null) __obj.updateDynamic("onTooltipShown")(js.Any.fromFunction1(onTooltipShown))
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
-    if (pointSelectionMode != null) __obj.updateDynamic("pointSelectionMode")(pointSelectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseChartOptions[T]]
   }
+  @scala.inline
+  implicit class BaseChartOptionsOps[Self <: BaseChartOptions[_], T] (val x: Self with BaseChartOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdaptiveLayout(value: BaseChartAdaptiveLayout): Self = this.set("adaptiveLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdaptiveLayout: Self = this.set("adaptiveLayout", js.undefined)
+    @scala.inline
+    def setAnimation(value: Duration | Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setCustomizeLabel(value: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesLabel): Self = this.set("customizeLabel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomizeLabel: Self = this.set("customizeLabel", js.undefined)
+    @scala.inline
+    def setCustomizePoint(value: /* pointInfo */ js.Any => dxChartSeriesTypesCommonSeriesPoint): Self = this.set("customizePoint", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomizePoint: Self = this.set("customizePoint", js.undefined)
+    @scala.inline
+    def setDataSourceVarargs(value: js.Any*): Self = this.set("dataSource", js.Array(value :_*))
+    @scala.inline
+    def setDataSource(value: js.Array[_] | DataSource | DataSourceOptions | String): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setLegend(value: BaseChartLegend): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setOnDone(value: /* e */ `14`[T] => _): Self = this.set("onDone", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDone: Self = this.set("onDone", js.undefined)
+    @scala.inline
+    def setOnPointClickFunction1(value: /* e */ ModelTarget[T] => _): Self = this.set("onPointClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOnPointClick(value: (js.Function1[/* e */ ModelTarget[T], _]) | String): Self = this.set("onPointClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPointClick: Self = this.set("onPointClick", js.undefined)
+    @scala.inline
+    def setOnPointHoverChanged(value: /* e */ ElementTarget => _): Self = this.set("onPointHoverChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointHoverChanged: Self = this.set("onPointHoverChanged", js.undefined)
+    @scala.inline
+    def setOnPointSelectionChanged(value: /* e */ ElementTarget => _): Self = this.set("onPointSelectionChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointSelectionChanged: Self = this.set("onPointSelectionChanged", js.undefined)
+    @scala.inline
+    def setOnTooltipHidden(value: /* e */ ElementModelTarget[T] => _): Self = this.set("onTooltipHidden", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTooltipHidden: Self = this.set("onTooltipHidden", js.undefined)
+    @scala.inline
+    def setOnTooltipShown(value: /* e */ ElementModelTarget[T] => _): Self = this.set("onTooltipShown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTooltipShown: Self = this.set("onTooltipShown", js.undefined)
+    @scala.inline
+    def setPaletteVarargs(value: String*): Self = this.set("palette", js.Array(value :_*))
+    @scala.inline
+    def setPalette(
+      value: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
+    ): Self = this.set("palette", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePalette: Self = this.set("palette", js.undefined)
+    @scala.inline
+    def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = this.set("paletteExtensionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaletteExtensionMode: Self = this.set("paletteExtensionMode", js.undefined)
+    @scala.inline
+    def setPointSelectionMode(value: multiple | single_): Self = this.set("pointSelectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointSelectionMode: Self = this.set("pointSelectionMode", js.undefined)
+    @scala.inline
+    def setSeriesVarargs(value: js.Any*): Self = this.set("series", js.Array(value :_*))
+    @scala.inline
+    def setSeries(value: js.Any | js.Array[_]): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseChartTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ MCrypt bindings
 | ------------------ | :-------------: |
 | Full name          | mcrypt |
 | Keywords           | mcrypt, crypto |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 13 |
-| # downloads        | 144877 |
+| # downloads        | 142676 |
 | # stars            | 4 |
 
 ## Links

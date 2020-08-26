@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait TypeofArray
   extends Instantiable1[/* key */ String, Array]
      with Instantiable2[/* key */ String, /* cast */ SchemaType, Array]
-     with Instantiable3[/* key */ String, /* cast */ SchemaType, /* options */ js.Any, Array] {
+     with Instantiable3[/* key */ String, js.UndefOr[/* cast */ SchemaType], /* options */ js.Any, Array] {
   /** This schema type's name, to defend against minifiers that mangle function names. */
   var schemaName: String = js.native
 }

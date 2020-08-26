@@ -15,8 +15,6 @@ trait DaylightViewModel extends Accessor {
     * A season can be set instead of a date. Each season uses a fixed date corresponding to the seasonsal equinoxes and solstices.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#currentSeason)
-    *
-    * @default "spring"
     */
   var currentSeason: spring | summer | fall | winter = js.native
   /**

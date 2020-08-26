@@ -12,7 +12,7 @@ Initialize your AngularJS app with constants loaded from the back-end.
 | Keywords           | angular, bootstrap |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 51278 |
+| # downloads        | 54331 |
 | # stars            | 2 |
 
 ## Links

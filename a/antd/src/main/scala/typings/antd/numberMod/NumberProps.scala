@@ -1,33 +1,36 @@
 package typings.antd.numberMod
 
 import typings.antd.statisticUtilsMod.FormatConfig
-import typings.antd.statisticUtilsMod.Formatter
 import typings.antd.statisticUtilsMod.valueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NumberProps extends FormatConfig {
-  var value: valueType
+  var value: valueType = js.native
 }
 
 object NumberProps {
   @scala.inline
-  def apply(
-    value: valueType,
-    decimalSeparator: String = null,
-    formatter: Formatter = null,
-    groupSeparator: String = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    prefixCls: String = null
-  ): NumberProps = {
+  def apply(value: valueType): NumberProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberProps]
   }
+  @scala.inline
+  implicit class NumberPropsOps[Self <: NumberProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: valueType): Self = this.set("value", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait DBClusterMember extends js.Object {
 
 object DBClusterMember {
   @scala.inline
-  def apply(
-    DBClusterParameterGroupStatus: String = null,
-    DBInstanceIdentifier: String = null,
-    IsClusterWriter: js.UndefOr[Boolean] = js.undefined,
-    PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
-  ): DBClusterMember = {
+  def apply(): DBClusterMember = {
     val __obj = js.Dynamic.literal()
-    if (DBClusterParameterGroupStatus != null) __obj.updateDynamic("DBClusterParameterGroupStatus")(DBClusterParameterGroupStatus.asInstanceOf[js.Any])
-    if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsClusterWriter)) __obj.updateDynamic("IsClusterWriter")(IsClusterWriter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PromotionTier)) __obj.updateDynamic("PromotionTier")(PromotionTier.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterMember]
   }
+  @scala.inline
+  implicit class DBClusterMemberOps[Self <: DBClusterMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBClusterParameterGroupStatus(value: String): Self = this.set("DBClusterParameterGroupStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterParameterGroupStatus: Self = this.set("DBClusterParameterGroupStatus", js.undefined)
+    @scala.inline
+    def setDBInstanceIdentifier(value: String): Self = this.set("DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceIdentifier: Self = this.set("DBInstanceIdentifier", js.undefined)
+    @scala.inline
+    def setIsClusterWriter(value: Boolean): Self = this.set("IsClusterWriter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsClusterWriter: Self = this.set("IsClusterWriter", js.undefined)
+    @scala.inline
+    def setPromotionTier(value: IntegerOptional): Self = this.set("PromotionTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotionTier: Self = this.set("PromotionTier", js.undefined)
+  }
+  
 }
 

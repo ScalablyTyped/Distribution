@@ -25,6 +25,7 @@ object StylesManager extends js.Object {
   var bootstrapmaterialThemeCss: StringDictionary[String] = js.native
   var modernThemeCss: StringDictionary[String] = js.native
   def applyTheme(): Unit = js.native
+  def applyTheme(themeName: js.UndefOr[scala.Nothing], themeSelector: String): Unit = js.native
   def applyTheme(themeName: String): Unit = js.native
   def applyTheme(themeName: String, themeSelector: String): Unit = js.native
   def createSheet(styleSheetId: String): CSSStyleSheet = js.native

@@ -27,7 +27,42 @@ object componentWrapperMod extends js.Object {
       OriginalComponentGenerator: ComponentProvider,
       store: Store,
       componentEventsObserver: ComponentEventsObserver,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.UndefOr[scala.Nothing],
+      reduxStore: js.Any
+    ): ComponentClass[_, ComponentState] = js.native
+    def wrap(
+      componentName: String,
+      OriginalComponentGenerator: ComponentProvider,
+      store: Store,
+      componentEventsObserver: ComponentEventsObserver,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.Any
+    ): ComponentClass[_, ComponentState] = js.native
+    def wrap(
+      componentName: String,
+      OriginalComponentGenerator: ComponentProvider,
+      store: Store,
+      componentEventsObserver: ComponentEventsObserver,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.Any,
+      reduxStore: js.Any
+    ): ComponentClass[_, ComponentState] = js.native
+    def wrap(
+      componentName: String,
+      OriginalComponentGenerator: ComponentProvider,
+      store: Store,
+      componentEventsObserver: ComponentEventsObserver,
       concreteComponentProvider: ComponentProvider
+    ): ComponentClass[_, ComponentState] = js.native
+    def wrap(
+      componentName: String,
+      OriginalComponentGenerator: ComponentProvider,
+      store: Store,
+      componentEventsObserver: ComponentEventsObserver,
+      concreteComponentProvider: ComponentProvider,
+      ReduxProvider: js.UndefOr[scala.Nothing],
+      reduxStore: js.Any
     ): ComponentClass[_, ComponentState] = js.native
     def wrap(
       componentName: String,
@@ -57,7 +92,42 @@ object componentWrapperMod extends js.Object {
       OriginalComponentGenerator: ComponentProvider,
       store: Store,
       componentEventsObserver: ComponentEventsObserver,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.UndefOr[scala.Nothing],
+      reduxStore: js.Any
+    ): ComponentClass[_, ComponentState] = js.native
+    def wrap(
+      componentName: Double,
+      OriginalComponentGenerator: ComponentProvider,
+      store: Store,
+      componentEventsObserver: ComponentEventsObserver,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.Any
+    ): ComponentClass[_, ComponentState] = js.native
+    def wrap(
+      componentName: Double,
+      OriginalComponentGenerator: ComponentProvider,
+      store: Store,
+      componentEventsObserver: ComponentEventsObserver,
+      concreteComponentProvider: js.UndefOr[scala.Nothing],
+      ReduxProvider: js.Any,
+      reduxStore: js.Any
+    ): ComponentClass[_, ComponentState] = js.native
+    def wrap(
+      componentName: Double,
+      OriginalComponentGenerator: ComponentProvider,
+      store: Store,
+      componentEventsObserver: ComponentEventsObserver,
       concreteComponentProvider: ComponentProvider
+    ): ComponentClass[_, ComponentState] = js.native
+    def wrap(
+      componentName: Double,
+      OriginalComponentGenerator: ComponentProvider,
+      store: Store,
+      componentEventsObserver: ComponentEventsObserver,
+      concreteComponentProvider: ComponentProvider,
+      ReduxProvider: js.UndefOr[scala.Nothing],
+      reduxStore: js.Any
     ): ComponentClass[_, ComponentState] = js.native
     def wrap(
       componentName: Double,

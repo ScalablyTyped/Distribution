@@ -55,30 +55,62 @@ trait SchemaNotification extends js.Object {
 
 object SchemaNotification {
   @scala.inline
-  def apply(
-    appRestrictionsSchemaChangeEvent: SchemaAppRestrictionsSchemaChangeEvent = null,
-    appUpdateEvent: SchemaAppUpdateEvent = null,
-    enterpriseId: String = null,
-    installFailureEvent: SchemaInstallFailureEvent = null,
-    newDeviceEvent: SchemaNewDeviceEvent = null,
-    newPermissionsEvent: SchemaNewPermissionsEvent = null,
-    notificationType: String = null,
-    productApprovalEvent: SchemaProductApprovalEvent = null,
-    productAvailabilityChangeEvent: SchemaProductAvailabilityChangeEvent = null,
-    timestampMillis: String = null
-  ): SchemaNotification = {
+  def apply(): SchemaNotification = {
     val __obj = js.Dynamic.literal()
-    if (appRestrictionsSchemaChangeEvent != null) __obj.updateDynamic("appRestrictionsSchemaChangeEvent")(appRestrictionsSchemaChangeEvent.asInstanceOf[js.Any])
-    if (appUpdateEvent != null) __obj.updateDynamic("appUpdateEvent")(appUpdateEvent.asInstanceOf[js.Any])
-    if (enterpriseId != null) __obj.updateDynamic("enterpriseId")(enterpriseId.asInstanceOf[js.Any])
-    if (installFailureEvent != null) __obj.updateDynamic("installFailureEvent")(installFailureEvent.asInstanceOf[js.Any])
-    if (newDeviceEvent != null) __obj.updateDynamic("newDeviceEvent")(newDeviceEvent.asInstanceOf[js.Any])
-    if (newPermissionsEvent != null) __obj.updateDynamic("newPermissionsEvent")(newPermissionsEvent.asInstanceOf[js.Any])
-    if (notificationType != null) __obj.updateDynamic("notificationType")(notificationType.asInstanceOf[js.Any])
-    if (productApprovalEvent != null) __obj.updateDynamic("productApprovalEvent")(productApprovalEvent.asInstanceOf[js.Any])
-    if (productAvailabilityChangeEvent != null) __obj.updateDynamic("productAvailabilityChangeEvent")(productAvailabilityChangeEvent.asInstanceOf[js.Any])
-    if (timestampMillis != null) __obj.updateDynamic("timestampMillis")(timestampMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNotification]
   }
+  @scala.inline
+  implicit class SchemaNotificationOps[Self <: SchemaNotification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppRestrictionsSchemaChangeEvent(value: SchemaAppRestrictionsSchemaChangeEvent): Self = this.set("appRestrictionsSchemaChangeEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppRestrictionsSchemaChangeEvent: Self = this.set("appRestrictionsSchemaChangeEvent", js.undefined)
+    @scala.inline
+    def setAppUpdateEvent(value: SchemaAppUpdateEvent): Self = this.set("appUpdateEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppUpdateEvent: Self = this.set("appUpdateEvent", js.undefined)
+    @scala.inline
+    def setEnterpriseId(value: String): Self = this.set("enterpriseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnterpriseId: Self = this.set("enterpriseId", js.undefined)
+    @scala.inline
+    def setInstallFailureEvent(value: SchemaInstallFailureEvent): Self = this.set("installFailureEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallFailureEvent: Self = this.set("installFailureEvent", js.undefined)
+    @scala.inline
+    def setNewDeviceEvent(value: SchemaNewDeviceEvent): Self = this.set("newDeviceEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewDeviceEvent: Self = this.set("newDeviceEvent", js.undefined)
+    @scala.inline
+    def setNewPermissionsEvent(value: SchemaNewPermissionsEvent): Self = this.set("newPermissionsEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewPermissionsEvent: Self = this.set("newPermissionsEvent", js.undefined)
+    @scala.inline
+    def setNotificationType(value: String): Self = this.set("notificationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationType: Self = this.set("notificationType", js.undefined)
+    @scala.inline
+    def setProductApprovalEvent(value: SchemaProductApprovalEvent): Self = this.set("productApprovalEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductApprovalEvent: Self = this.set("productApprovalEvent", js.undefined)
+    @scala.inline
+    def setProductAvailabilityChangeEvent(value: SchemaProductAvailabilityChangeEvent): Self = this.set("productAvailabilityChangeEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductAvailabilityChangeEvent: Self = this.set("productAvailabilityChangeEvent", js.undefined)
+    @scala.inline
+    def setTimestampMillis(value: String): Self = this.set("timestampMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampMillis: Self = this.set("timestampMillis", js.undefined)
+  }
+  
 }
 

@@ -74,38 +74,94 @@ trait ReceiptRuleState extends js.Object {
 
 object ReceiptRuleState {
   @scala.inline
-  def apply(
-    addHeaderActions: Input[js.Array[Input[ReceiptRuleAddHeaderAction]]] = null,
-    after: Input[String] = null,
-    bounceActions: Input[js.Array[Input[ReceiptRuleBounceAction]]] = null,
-    enabled: Input[Boolean] = null,
-    lambdaActions: Input[js.Array[Input[ReceiptRuleLambdaAction]]] = null,
-    name: Input[String] = null,
-    recipients: Input[js.Array[Input[String]]] = null,
-    ruleSetName: Input[String] = null,
-    s3Actions: Input[js.Array[Input[ReceiptRuleS3Action]]] = null,
-    scanEnabled: Input[Boolean] = null,
-    snsActions: Input[js.Array[Input[ReceiptRuleSnsAction]]] = null,
-    stopActions: Input[js.Array[Input[ReceiptRuleStopAction]]] = null,
-    tlsPolicy: Input[String] = null,
-    workmailActions: Input[js.Array[Input[ReceiptRuleWorkmailAction]]] = null
-  ): ReceiptRuleState = {
+  def apply(): ReceiptRuleState = {
     val __obj = js.Dynamic.literal()
-    if (addHeaderActions != null) __obj.updateDynamic("addHeaderActions")(addHeaderActions.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (bounceActions != null) __obj.updateDynamic("bounceActions")(bounceActions.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (lambdaActions != null) __obj.updateDynamic("lambdaActions")(lambdaActions.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
-    if (ruleSetName != null) __obj.updateDynamic("ruleSetName")(ruleSetName.asInstanceOf[js.Any])
-    if (s3Actions != null) __obj.updateDynamic("s3Actions")(s3Actions.asInstanceOf[js.Any])
-    if (scanEnabled != null) __obj.updateDynamic("scanEnabled")(scanEnabled.asInstanceOf[js.Any])
-    if (snsActions != null) __obj.updateDynamic("snsActions")(snsActions.asInstanceOf[js.Any])
-    if (stopActions != null) __obj.updateDynamic("stopActions")(stopActions.asInstanceOf[js.Any])
-    if (tlsPolicy != null) __obj.updateDynamic("tlsPolicy")(tlsPolicy.asInstanceOf[js.Any])
-    if (workmailActions != null) __obj.updateDynamic("workmailActions")(workmailActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiptRuleState]
   }
+  @scala.inline
+  implicit class ReceiptRuleStateOps[Self <: ReceiptRuleState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddHeaderActionsVarargs(value: Input[ReceiptRuleAddHeaderAction]*): Self = this.set("addHeaderActions", js.Array(value :_*))
+    @scala.inline
+    def setAddHeaderActions(value: Input[js.Array[Input[ReceiptRuleAddHeaderAction]]]): Self = this.set("addHeaderActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddHeaderActions: Self = this.set("addHeaderActions", js.undefined)
+    @scala.inline
+    def setAfter(value: Input[String]): Self = this.set("after", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfter: Self = this.set("after", js.undefined)
+    @scala.inline
+    def setBounceActionsVarargs(value: Input[ReceiptRuleBounceAction]*): Self = this.set("bounceActions", js.Array(value :_*))
+    @scala.inline
+    def setBounceActions(value: Input[js.Array[Input[ReceiptRuleBounceAction]]]): Self = this.set("bounceActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounceActions: Self = this.set("bounceActions", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setLambdaActionsVarargs(value: Input[ReceiptRuleLambdaAction]*): Self = this.set("lambdaActions", js.Array(value :_*))
+    @scala.inline
+    def setLambdaActions(value: Input[js.Array[Input[ReceiptRuleLambdaAction]]]): Self = this.set("lambdaActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaActions: Self = this.set("lambdaActions", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRecipientsVarargs(value: Input[String]*): Self = this.set("recipients", js.Array(value :_*))
+    @scala.inline
+    def setRecipients(value: Input[js.Array[Input[String]]]): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    @scala.inline
+    def setRuleSetName(value: Input[String]): Self = this.set("ruleSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleSetName: Self = this.set("ruleSetName", js.undefined)
+    @scala.inline
+    def setS3ActionsVarargs(value: Input[ReceiptRuleS3Action]*): Self = this.set("s3Actions", js.Array(value :_*))
+    @scala.inline
+    def setS3Actions(value: Input[js.Array[Input[ReceiptRuleS3Action]]]): Self = this.set("s3Actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Actions: Self = this.set("s3Actions", js.undefined)
+    @scala.inline
+    def setScanEnabled(value: Input[Boolean]): Self = this.set("scanEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanEnabled: Self = this.set("scanEnabled", js.undefined)
+    @scala.inline
+    def setSnsActionsVarargs(value: Input[ReceiptRuleSnsAction]*): Self = this.set("snsActions", js.Array(value :_*))
+    @scala.inline
+    def setSnsActions(value: Input[js.Array[Input[ReceiptRuleSnsAction]]]): Self = this.set("snsActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnsActions: Self = this.set("snsActions", js.undefined)
+    @scala.inline
+    def setStopActionsVarargs(value: Input[ReceiptRuleStopAction]*): Self = this.set("stopActions", js.Array(value :_*))
+    @scala.inline
+    def setStopActions(value: Input[js.Array[Input[ReceiptRuleStopAction]]]): Self = this.set("stopActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopActions: Self = this.set("stopActions", js.undefined)
+    @scala.inline
+    def setTlsPolicy(value: Input[String]): Self = this.set("tlsPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTlsPolicy: Self = this.set("tlsPolicy", js.undefined)
+    @scala.inline
+    def setWorkmailActionsVarargs(value: Input[ReceiptRuleWorkmailAction]*): Self = this.set("workmailActions", js.Array(value :_*))
+    @scala.inline
+    def setWorkmailActions(value: Input[js.Array[Input[ReceiptRuleWorkmailAction]]]): Self = this.set("workmailActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkmailActions: Self = this.set("workmailActions", js.undefined)
+  }
+  
 }
 

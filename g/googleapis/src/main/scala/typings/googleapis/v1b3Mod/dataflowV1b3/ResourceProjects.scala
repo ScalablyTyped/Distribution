@@ -31,6 +31,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def workerMessages(): GaxiosPromise[SchemaSendWorkerMessagesResponse] = js.native
   def workerMessages(callback: BodyResponseCallback[SchemaSendWorkerMessagesResponse]): Unit = js.native
+  def workerMessages(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendWorkerMessagesResponse] = js.native
   def workerMessages(params: ParamsResourceProjectsWorkermessages): GaxiosPromise[SchemaSendWorkerMessagesResponse] = js.native
   def workerMessages(
     params: ParamsResourceProjectsWorkermessages,

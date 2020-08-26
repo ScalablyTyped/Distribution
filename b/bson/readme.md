@@ -10,9 +10,9 @@ A bson parser for node.js and the browser
 | ------------------ | :-------------: |
 | Full name          | bson |
 | Keywords           | mongodb, bson, parser |
-| # releases         | 33 |
-| # dependents       | 425 |
-| # downloads        | 56670426 |
+| # releases         | 32 |
+| # dependents       | 429 |
+| # downloads        | 56984720 |
 | # stars            | 23 |
 
 ## Links

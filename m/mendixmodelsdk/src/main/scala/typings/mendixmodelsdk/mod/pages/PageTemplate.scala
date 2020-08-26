@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/page-template relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/page-templates relevant section in reference guide}
   *
   * In version 7.7.0: introduced
   */

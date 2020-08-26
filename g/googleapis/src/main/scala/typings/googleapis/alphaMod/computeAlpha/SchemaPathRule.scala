@@ -47,18 +47,40 @@ trait SchemaPathRule extends js.Object {
 
 object SchemaPathRule {
   @scala.inline
-  def apply(
-    paths: js.Array[String] = null,
-    routeAction: SchemaHttpRouteAction = null,
-    service: String = null,
-    urlRedirect: SchemaHttpRedirectAction = null
-  ): SchemaPathRule = {
+  def apply(): SchemaPathRule = {
     val __obj = js.Dynamic.literal()
-    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (routeAction != null) __obj.updateDynamic("routeAction")(routeAction.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (urlRedirect != null) __obj.updateDynamic("urlRedirect")(urlRedirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPathRule]
   }
+  @scala.inline
+  implicit class SchemaPathRuleOps[Self <: SchemaPathRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPathsVarargs(value: String*): Self = this.set("paths", js.Array(value :_*))
+    @scala.inline
+    def setPaths(value: js.Array[String]): Self = this.set("paths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaths: Self = this.set("paths", js.undefined)
+    @scala.inline
+    def setRouteAction(value: SchemaHttpRouteAction): Self = this.set("routeAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteAction: Self = this.set("routeAction", js.undefined)
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+    @scala.inline
+    def setUrlRedirect(value: SchemaHttpRedirectAction): Self = this.set("urlRedirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlRedirect: Self = this.set("urlRedirect", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorLastMod extends js.Object {
   def last[T, D](): js.Any = js.native
+  def last[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): js.Any = js.native
   def last[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 

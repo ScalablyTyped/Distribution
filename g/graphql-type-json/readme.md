@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-type-json
 
-Typings are for version 0.3
+Typings are for version 0.3.2
 
 ## Library description:
 JSON scalar types for GraphQL.js
@@ -11,8 +11,8 @@ JSON scalar types for GraphQL.js
 | Full name          | graphql-type-json |
 | Keywords           | graphql |
 | # releases         | 8 |
-| # dependents       | 214 |
-| # downloads        | 15894735 |
+| # dependents       | 221 |
+| # downloads        | 16588647 |
 | # stars            | 0 |
 
 ## Links
@@ -24,7 +24,7 @@ JSON scalar types for GraphQL.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

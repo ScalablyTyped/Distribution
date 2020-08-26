@@ -12,12 +12,12 @@ import typings.node.anon.BaseEncodingOptionswithFi
 import typings.node.anon.BaseEncodingOptionswithFiEncoding
 import typings.node.anon.EmitClose
 import typings.node.anon.EncodingBufferEncoding
-import typings.node.anon.EncodingNull
 import typings.node.anon.Interval
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
 import typings.node.anon.Persistent
 import typings.node.anon.Recursive
+import typings.node.anon.`3`
 import typings.node.fsMod.BaseEncodingOptions
 import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.FSWatcher
@@ -39,23 +39,14 @@ import typings.node.promisesMod.FileHandle
 import typings.promiseFs.anon.BufferBytesRead
 import typings.promiseFs.anon.BufferBytesWritten
 import typings.promiseFs.anon.BufferDataView
-import typings.promiseFs.anon.BufferDataViewBytesWrittenNumber
 import typings.promiseFs.anon.BufferFloat32Array
-import typings.promiseFs.anon.BufferFloat32ArrayBytesWrittenNumber
 import typings.promiseFs.anon.BufferFloat64Array
-import typings.promiseFs.anon.BufferFloat64ArrayBytesWrittenNumber
 import typings.promiseFs.anon.BufferInt16Array
-import typings.promiseFs.anon.BufferInt16ArrayBytesWrittenNumber
 import typings.promiseFs.anon.BufferInt32Array
-import typings.promiseFs.anon.BufferInt32ArrayBytesWrittenNumber
 import typings.promiseFs.anon.BufferInt8Array
-import typings.promiseFs.anon.BufferInt8ArrayBytesWrittenNumber
-import typings.promiseFs.anon.BufferString
-import typings.promiseFs.anon.BufferUint16Array
 import typings.promiseFs.anon.BufferUint32Array
 import typings.promiseFs.anon.BytesRead
 import typings.promiseFs.anon.BytesWritten
-import typings.promiseFs.anon.BytesWrittenNumber
 import typings.promiseFs.anon.Encoding
 import typings.promiseFs.anon.EncodingFlag
 import typings.promiseFs.anon.EncodingWithFileTypes
@@ -64,7 +55,6 @@ import typings.promiseFs.anon.WithFileTypes
 import typings.promiseFs.anon.`0`
 import typings.promiseFs.anon.`1`
 import typings.promiseFs.anon.`2`
-import typings.promiseFs.anon.`3`
 import typings.promiseFs.anon.`4`
 import typings.promiseFs.promiseFsStrings.buffer
 import typings.std.DataView
@@ -98,58 +88,7 @@ object mod extends js.Object {
     extends typings.node.fsMod.ReadStream
   
   @js.native
-  class Stats () extends StatsBase[Double] {
-    /* CompleteClass */
-    override var atime: Date = js.native
-    /* CompleteClass */
-    override var atimeMs: Double = js.native
-    /* CompleteClass */
-    override var birthtime: Date = js.native
-    /* CompleteClass */
-    override var birthtimeMs: Double = js.native
-    /* CompleteClass */
-    override var blksize: Double = js.native
-    /* CompleteClass */
-    override var blocks: Double = js.native
-    /* CompleteClass */
-    override var ctime: Date = js.native
-    /* CompleteClass */
-    override var ctimeMs: Double = js.native
-    /* CompleteClass */
-    override var dev: Double = js.native
-    /* CompleteClass */
-    override var gid: Double = js.native
-    /* CompleteClass */
-    override var ino: Double = js.native
-    /* CompleteClass */
-    override var mode: Double = js.native
-    /* CompleteClass */
-    override var mtime: Date = js.native
-    /* CompleteClass */
-    override var mtimeMs: Double = js.native
-    /* CompleteClass */
-    override var nlink: Double = js.native
-    /* CompleteClass */
-    override var rdev: Double = js.native
-    /* CompleteClass */
-    override var size: Double = js.native
-    /* CompleteClass */
-    override var uid: Double = js.native
-    /* CompleteClass */
-    override def isBlockDevice(): Boolean = js.native
-    /* CompleteClass */
-    override def isCharacterDevice(): Boolean = js.native
-    /* CompleteClass */
-    override def isDirectory(): Boolean = js.native
-    /* CompleteClass */
-    override def isFIFO(): Boolean = js.native
-    /* CompleteClass */
-    override def isFile(): Boolean = js.native
-    /* CompleteClass */
-    override def isSocket(): Boolean = js.native
-    /* CompleteClass */
-    override def isSymbolicLink(): Boolean = js.native
-  }
+  class Stats () extends StatsBase[Double]
   
   @js.native
   class WriteStream ()
@@ -294,12 +233,12 @@ object mod extends js.Object {
   def readFileSync(path: Double, options: BufferEncoding): String = js.native
   def readFileSync(path: Double, options: BaseEncodingOptionsflagst): String | Buffer = js.native
   def readFileSync(path: Double, options: EncodingBufferEncoding): String = js.native
-  def readFileSync(path: Double, options: EncodingNull): Buffer = js.native
+  def readFileSync(path: Double, options: `3`): Buffer = js.native
   def readFileSync(path: PathLike): String | Buffer = js.native
   def readFileSync(path: PathLike, options: BufferEncoding): String = js.native
   def readFileSync(path: PathLike, options: BaseEncodingOptionsflagst): String | Buffer = js.native
   def readFileSync(path: PathLike, options: EncodingBufferEncoding): String = js.native
-  def readFileSync(path: PathLike, options: EncodingNull): Buffer = js.native
+  def readFileSync(path: PathLike, options: `3`): Buffer = js.native
   @JSName("readFileSync")
   def readFileSync_Buffer(path: Double): Buffer = js.native
   @JSName("readFileSync")
@@ -333,7 +272,7 @@ object mod extends js.Object {
   def readlink(path: PathLike, options: String): js.Promise[String | Buffer] = js.native
   def readlink(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
   def readlink(path: PathLike, options: `2`): js.Promise[String] = js.native
-  def readlink(path: PathLike, options: `3`): js.Promise[Buffer] = js.native
+  def readlink(path: PathLike, options: typings.promiseFs.anon.`3`): js.Promise[Buffer] = js.native
   def readlink(path: PathLike, options: `4`): js.Promise[String | Buffer] = js.native
   def readlinkSync(path: PathLike): String = js.native
   def readlinkSync(path: PathLike, options: String): String | Buffer = js.native
@@ -352,7 +291,7 @@ object mod extends js.Object {
   def realpath(path: PathLike, options: String): js.Promise[String | Buffer] = js.native
   def realpath(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
   def realpath(path: PathLike, options: `2`): js.Promise[String] = js.native
-  def realpath(path: PathLike, options: `3`): js.Promise[Buffer] = js.native
+  def realpath(path: PathLike, options: typings.promiseFs.anon.`3`): js.Promise[Buffer] = js.native
   def realpath(path: PathLike, options: `4`): js.Promise[String | Buffer] = js.native
   @JSName("realpath")
   def realpath_buffer(path: PathLike, options: buffer): js.Promise[Buffer] = js.native
@@ -395,6 +334,11 @@ object mod extends js.Object {
   def utimesSync(path: PathLike, atime: Date, mtime: Date): Unit = js.native
   def watch(filename: PathLike): FSWatcher = js.native
   def watch(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
+  def watch(
+    filename: PathLike,
+    options: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
+  ): FSWatcher = js.native
   def watch(filename: PathLike, options: String): FSWatcher = js.native
   def watch(
     filename: PathLike,
@@ -430,7 +374,12 @@ object mod extends js.Object {
   ): Unit = js.native
   def watchFile(
     filename: PathLike,
-    options: js.UndefOr[Interval],
+    options: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
+  ): Unit = js.native
+  def watchFile(
+    filename: PathLike,
+    options: Interval,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
   ): Unit = js.native
   @JSName("watch")
@@ -441,51 +390,51 @@ object mod extends js.Object {
     options: buffer,
     listener: js.Function2[/* event */ String, /* filename */ Buffer, Unit]
   ): FSWatcher = js.native
-  def write(fd: Double): js.Promise[BytesWritten] = js.native
-  def write(fd: Double, buffer: DataView): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: DataView, offset: Double): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: DataView, offset: Double, length: Double): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: DataView, offset: Double, length: Double, position: Double): js.Promise[BufferDataViewBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Float32Array): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Float32Array, offset: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Float32Array, offset: Double, length: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Float32Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat32ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Float64Array): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Float64Array, offset: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Float64Array, offset: Double, length: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Float64Array, offset: Double, length: Double, position: Double): js.Promise[BufferFloat64ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int16Array): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int16Array, offset: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int16Array, offset: Double, length: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int16Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt16ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int32Array): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int32Array, offset: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int32Array, offset: Double, length: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int32Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt32ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int8Array): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int8Array, offset: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int8Array, offset: Double, length: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Int8Array, offset: Double, length: Double, position: Double): js.Promise[BufferInt8ArrayBytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Uint16Array): js.Promise[BufferUint16Array] = js.native
-  def write(fd: Double, buffer: Uint16Array, offset: Double): js.Promise[BufferUint16Array] = js.native
-  def write(fd: Double, buffer: Uint16Array, offset: Double, length: Double): js.Promise[BufferUint16Array] = js.native
-  def write(fd: Double, buffer: Uint16Array, offset: Double, length: Double, position: Double): js.Promise[BufferUint16Array] = js.native
-  def write(fd: Double, buffer: Uint32Array): js.Promise[BytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Uint32Array, offset: Double): js.Promise[BytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Uint32Array, offset: Double, length: Double): js.Promise[BytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Uint32Array, offset: Double, length: Double, position: Double): js.Promise[BytesWrittenNumber] = js.native
-  def write(fd: Double, buffer: Uint8Array): js.Promise[BytesWritten] = js.native
-  def write(fd: Double, buffer: Uint8Array, offset: Double): js.Promise[BytesWritten] = js.native
-  def write(fd: Double, buffer: Uint8Array, offset: Double, length: Double): js.Promise[BytesWritten] = js.native
-  def write(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[BytesWritten] = js.native
-  def write(fd: Double, buffer: Uint8ClampedArray): js.Promise[BufferBytesWritten] = js.native
-  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double): js.Promise[BufferBytesWritten] = js.native
-  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double): js.Promise[BufferBytesWritten] = js.native
-  def write(fd: Double, buffer: Uint8ClampedArray, offset: Double, length: Double, position: Double): js.Promise[BufferBytesWritten] = js.native
-  def write(fd: Double, string: js.Any): js.Promise[BufferString] = js.native
-  def write(fd: Double, string: js.Any, position: Double): js.Promise[BufferString] = js.native
-  def write(fd: Double, string: js.Any, position: Double, encoding: String): js.Promise[BufferString] = js.native
-  def write(fd: Double, string: js.Any, position: Null, encoding: String): js.Promise[BufferString] = js.native
+  def write(fd: Double, string: js.Any): js.Promise[BufferBytesWritten] = js.native
+  def write(fd: Double, string: js.Any, position: js.UndefOr[scala.Nothing], encoding: String): js.Promise[BufferBytesWritten] = js.native
+  def write(fd: Double, string: js.Any, position: Double): js.Promise[BufferBytesWritten] = js.native
+  def write(fd: Double, string: js.Any, position: Double, encoding: String): js.Promise[BufferBytesWritten] = js.native
+  def write(fd: Double, string: js.Any, position: Null, encoding: String): js.Promise[BufferBytesWritten] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](
+    fd: Double,
+    buffer: TBuffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](
+    fd: Double,
+    buffer: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](
+    fd: Double,
+    buffer: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    position: Double
+  ): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](
+    fd: Double,
+    buffer: js.UndefOr[scala.Nothing],
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double, length: Double): js.Promise[BytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = js.native
   def writeFile(path: Double, data: js.Any): js.Promise[Unit] = js.native
   def writeFile(path: Double, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
   def writeFile(path: PathLike, data: js.Any): js.Promise[Unit] = js.native
@@ -499,14 +448,51 @@ object mod extends js.Object {
   def writeFileSync(path: PathLike, data: ArrayBufferView): Unit = js.native
   def writeFileSync(path: PathLike, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    position: Double
+  ): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: js.UndefOr[scala.Nothing],
+    length: Null,
+    position: Double
+  ): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: Null,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
   def writeSync(fd: Double, string: String): Double = js.native
+  def writeSync(fd: Double, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): Double = js.native
   def writeSync(fd: Double, string: String, position: Double): Double = js.native
   def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
   def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = js.native
@@ -667,13 +653,33 @@ object mod extends js.Object {
     def apply(prefix: String, callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]): Unit = js.native
     def apply(
       prefix: String,
-      options: js.UndefOr[BaseEncodingOptions | BufferEncoding | Null | String],
+      options: js.UndefOr[scala.Nothing],
       callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
+    ): Unit = js.native
+    def apply(
+      prefix: String,
+      options: String,
+      callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String | Buffer, Unit]
+    ): Unit = js.native
+    def apply(
+      prefix: String,
+      options: Null,
+      callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
+    ): Unit = js.native
+    def apply(
+      prefix: String,
+      options: BufferEncoding,
+      callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
     ): Unit = js.native
     def apply(
       prefix: String,
       options: typings.node.anon.`2`,
       callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
+    ): Unit = js.native
+    def apply(
+      prefix: String,
+      options: BaseEncodingOptions,
+      callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
     ): Unit = js.native
     def apply(
       prefix: String,
@@ -899,10 +905,46 @@ object mod extends js.Object {
       * `null`, data will be read from the current position.
       */
     def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+    def read[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: js.UndefOr[scala.Nothing],
+      length: js.UndefOr[scala.Nothing],
+      position: Double
+    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+    def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+    def read[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: js.UndefOr[scala.Nothing],
+      length: Double,
+      position: Double
+    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+    def read[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: js.UndefOr[scala.Nothing],
+      length: Null,
+      position: Double
+    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
     def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+    def read[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: Double,
+      length: js.UndefOr[scala.Nothing],
+      position: Double
+    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
     def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
     def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
     def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
+    def read[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: Null,
+      length: js.UndefOr[scala.Nothing],
+      position: Double
+    ): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
     def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
     def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
     def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[typings.node.anon.Buffer[TBuffer]] = js.native
@@ -1046,6 +1088,7 @@ object mod extends js.Object {
       * @param encoding The expected string encoding.
       */
     def write(handle: FileHandle, string: String): js.Promise[typings.node.anon.BufferBytesWritten] = js.native
+    def write(handle: FileHandle, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): js.Promise[typings.node.anon.BufferBytesWritten] = js.native
     def write(handle: FileHandle, string: String, position: Double): js.Promise[typings.node.anon.BufferBytesWritten] = js.native
     def write(handle: FileHandle, string: String, position: Double, encoding: BufferEncoding): js.Promise[typings.node.anon.BufferBytesWritten] = js.native
     def write(handle: FileHandle, string: String, position: Null, encoding: BufferEncoding): js.Promise[typings.node.anon.BufferBytesWritten] = js.native
@@ -1060,10 +1103,46 @@ object mod extends js.Object {
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       */
     def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
+    def write[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: js.UndefOr[scala.Nothing],
+      length: js.UndefOr[scala.Nothing],
+      position: Double
+    ): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
+    def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
+    def write[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: js.UndefOr[scala.Nothing],
+      length: Double,
+      position: Double
+    ): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
+    def write[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: js.UndefOr[scala.Nothing],
+      length: Null,
+      position: Double
+    ): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
     def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
+    def write[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: Double,
+      length: js.UndefOr[scala.Nothing],
+      position: Double
+    ): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
     def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
     def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
     def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
+    def write[TBuffer /* <: Uint8Array */](
+      handle: FileHandle,
+      buffer: TBuffer,
+      offset: Null,
+      length: js.UndefOr[scala.Nothing],
+      position: Double
+    ): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
     def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
     def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
     def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[typings.node.anon.BytesWritten[TBuffer]] = js.native
@@ -1144,7 +1223,9 @@ object mod extends js.Object {
   @js.native
   object symlink extends js.Object {
     def apply(target: PathLike, path: PathLike, callback: NoParamCallback): Unit = js.native
-    def apply(target: PathLike, path: PathLike, `type`: js.UndefOr[Null | Type], callback: NoParamCallback): Unit = js.native
+    def apply(target: PathLike, path: PathLike, `type`: js.UndefOr[scala.Nothing], callback: NoParamCallback): Unit = js.native
+    def apply(target: PathLike, path: PathLike, `type`: Null, callback: NoParamCallback): Unit = js.native
+    def apply(target: PathLike, path: PathLike, `type`: Type, callback: NoParamCallback): Unit = js.native
     /**
       * Asynchronous symlink(2) - Create a new symbolic link to an existing file.
       * @param target A path to an existing file. If a URL is provided, it must use the `file:` protocol.
@@ -1161,7 +1242,9 @@ object mod extends js.Object {
   @js.native
   object truncate extends js.Object {
     def apply(path: PathLike, callback: NoParamCallback): Unit = js.native
-    def apply(path: PathLike, len: js.UndefOr[Double | Null], callback: NoParamCallback): Unit = js.native
+    def apply(path: PathLike, len: js.UndefOr[scala.Nothing], callback: NoParamCallback): Unit = js.native
+    def apply(path: PathLike, len: Double, callback: NoParamCallback): Unit = js.native
+    def apply(path: PathLike, len: Null, callback: NoParamCallback): Unit = js.native
     /**
       * Asynchronous truncate(2) - Truncate a file to a specified length.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

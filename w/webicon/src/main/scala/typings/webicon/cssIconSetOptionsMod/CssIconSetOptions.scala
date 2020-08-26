@@ -6,41 +6,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CssIconSetOptions extends Icon {
   /**
     * An alias of the `className`-property.
     */
   var `class`: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     * Either a text-pattern or a callback which provides a css-classname.
     *
     * The symbols `?` and `%` in the text-pattern are replaced by the icon-id.
     */
-  var className: js.UndefOr[CssClassConfig] = js.undefined
+  var className: js.UndefOr[CssClassConfig] = js.native
   /**
     * An alias of the `className`-property.
     */
   var cssClass: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any
-  ] = js.undefined
+  ] = js.native
 }
 
 object CssIconSetOptions {
   @scala.inline
-  def apply(
-    `class`: /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any = null,
-    className: CssClassConfig = null,
-    cssClass: /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any = null,
-    iconIdParser: (/* id */ String, /* params */ js.Array[String]) => String = null
-  ): CssIconSetOptions = {
+  def apply(): CssIconSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
     __obj.asInstanceOf[CssIconSetOptions]
   }
+  @scala.inline
+  implicit class CssIconSetOptionsOps[Self <: CssIconSetOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClass(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any
+    ): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setClassNameFunction2(value: (/* id */ String, /* params */ js.Array[String]) => String): Self = this.set("className", js.Any.fromFunction2(value))
+    @scala.inline
+    def setClassName(value: CssClassConfig): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCssClass(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any
+    ): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+  }
+  
 }
 

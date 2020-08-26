@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RefType[Ref /* <: String */] extends js.Object {
   @JSName(" $refType")
-  var Space$refType: Ref
+  var Space$refType: Ref = js.native
 }
 
 object RefType {
@@ -16,5 +17,20 @@ object RefType {
     __obj.updateDynamic(" $refType")(Space$refType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefType[Ref]]
   }
+  @scala.inline
+  implicit class RefTypeOps[Self <: RefType[_], /* <: java.lang.String */ Ref] (val x: Self with RefType[Ref]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpace$refType(value: Ref): Self = this.set(" $refType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -29,12 +29,36 @@ trait SchemaTrace extends js.Object {
 
 object SchemaTrace {
   @scala.inline
-  def apply(projectId: String = null, spans: js.Array[SchemaTraceSpan] = null, traceId: String = null): SchemaTrace = {
+  def apply(): SchemaTrace = {
     val __obj = js.Dynamic.literal()
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (spans != null) __obj.updateDynamic("spans")(spans.asInstanceOf[js.Any])
-    if (traceId != null) __obj.updateDynamic("traceId")(traceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrace]
   }
+  @scala.inline
+  implicit class SchemaTraceOps[Self <: SchemaTrace] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setSpansVarargs(value: SchemaTraceSpan*): Self = this.set("spans", js.Array(value :_*))
+    @scala.inline
+    def setSpans(value: js.Array[SchemaTraceSpan]): Self = this.set("spans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpans: Self = this.set("spans", js.undefined)
+    @scala.inline
+    def setTraceId(value: String): Self = this.set("traceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraceId: Self = this.set("traceId", js.undefined)
+  }
+  
 }
 

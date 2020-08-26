@@ -38,21 +38,46 @@ trait CreateDirectoryRequest extends js.Object {
 
 object CreateDirectoryRequest {
   @scala.inline
-  def apply(
-    Name: DirectoryName,
-    Password: Password,
-    Size: DirectorySize,
-    Description: Description = null,
-    ShortName: DirectoryShortName = null,
-    Tags: Tags = null,
-    VpcSettings: DirectoryVpcSettings = null
-  ): CreateDirectoryRequest = {
+  def apply(Name: DirectoryName, Password: Password, Size: DirectorySize): CreateDirectoryRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ShortName != null) __obj.updateDynamic("ShortName")(ShortName.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcSettings != null) __obj.updateDynamic("VpcSettings")(VpcSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDirectoryRequest]
   }
+  @scala.inline
+  implicit class CreateDirectoryRequestOps[Self <: CreateDirectoryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: DirectoryName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPassword(value: Password): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: DirectorySize): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setShortName(value: DirectoryShortName): Self = this.set("ShortName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortName: Self = this.set("ShortName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcSettings(value: DirectoryVpcSettings): Self = this.set("VpcSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSettings: Self = this.set("VpcSettings", js.undefined)
+  }
+  
 }
 

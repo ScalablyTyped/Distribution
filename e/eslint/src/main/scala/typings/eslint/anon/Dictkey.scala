@@ -5,30 +5,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Dictkey
   extends /* key */ StringDictionary[js.Any] {
-  var experimentalObjectRestSpread: js.UndefOr[Boolean] = js.undefined
-  var globalReturn: js.UndefOr[Boolean] = js.undefined
-  var impliedStrict: js.UndefOr[Boolean] = js.undefined
-  var jsx: js.UndefOr[Boolean] = js.undefined
+  var experimentalObjectRestSpread: js.UndefOr[Boolean] = js.native
+  var globalReturn: js.UndefOr[Boolean] = js.native
+  var impliedStrict: js.UndefOr[Boolean] = js.native
+  var jsx: js.UndefOr[Boolean] = js.native
 }
 
 object Dictkey {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    experimentalObjectRestSpread: js.UndefOr[Boolean] = js.undefined,
-    globalReturn: js.UndefOr[Boolean] = js.undefined,
-    impliedStrict: js.UndefOr[Boolean] = js.undefined,
-    jsx: js.UndefOr[Boolean] = js.undefined
-  ): Dictkey = {
+  def apply(): Dictkey = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(experimentalObjectRestSpread)) __obj.updateDynamic("experimentalObjectRestSpread")(experimentalObjectRestSpread.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalReturn)) __obj.updateDynamic("globalReturn")(globalReturn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(impliedStrict)) __obj.updateDynamic("impliedStrict")(impliedStrict.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
+  @scala.inline
+  implicit class DictkeyOps[Self <: Dictkey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExperimentalObjectRestSpread(value: Boolean): Self = this.set("experimentalObjectRestSpread", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentalObjectRestSpread: Self = this.set("experimentalObjectRestSpread", js.undefined)
+    @scala.inline
+    def setGlobalReturn(value: Boolean): Self = this.set("globalReturn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalReturn: Self = this.set("globalReturn", js.undefined)
+    @scala.inline
+    def setImpliedStrict(value: Boolean): Self = this.set("impliedStrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpliedStrict: Self = this.set("impliedStrict", js.undefined)
+    @scala.inline
+    def setJsx(value: Boolean): Self = this.set("jsx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsx: Self = this.set("jsx", js.undefined)
+  }
+  
 }
 

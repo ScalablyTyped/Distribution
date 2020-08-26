@@ -46,7 +46,42 @@ class ComponentResolver () extends js.Object {
     agGridParams: js.Any,
     propertyName: String,
     dynamicComponentParams: DynamicComponentParams,
+    defaultComponentName: js.UndefOr[scala.Nothing],
+    mandatory: js.UndefOr[scala.Nothing],
+    customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
+  ): Promise[A] = js.native
+  def createAgGridComponent[A /* <: IComponent[_] */](
+    holderOpt: ComponentHolder,
+    agGridParams: js.Any,
+    propertyName: String,
+    dynamicComponentParams: DynamicComponentParams,
+    defaultComponentName: js.UndefOr[scala.Nothing],
+    mandatory: Boolean
+  ): Promise[A] = js.native
+  def createAgGridComponent[A /* <: IComponent[_] */](
+    holderOpt: ComponentHolder,
+    agGridParams: js.Any,
+    propertyName: String,
+    dynamicComponentParams: DynamicComponentParams,
+    defaultComponentName: js.UndefOr[scala.Nothing],
+    mandatory: Boolean,
+    customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
+  ): Promise[A] = js.native
+  def createAgGridComponent[A /* <: IComponent[_] */](
+    holderOpt: ComponentHolder,
+    agGridParams: js.Any,
+    propertyName: String,
+    dynamicComponentParams: DynamicComponentParams,
     defaultComponentName: String
+  ): Promise[A] = js.native
+  def createAgGridComponent[A /* <: IComponent[_] */](
+    holderOpt: ComponentHolder,
+    agGridParams: js.Any,
+    propertyName: String,
+    dynamicComponentParams: DynamicComponentParams,
+    defaultComponentName: String,
+    mandatory: js.UndefOr[scala.Nothing],
+    customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, _]
   ): Promise[A] = js.native
   def createAgGridComponent[A /* <: IComponent[_] */](
     holderOpt: ComponentHolder,
@@ -104,7 +139,6 @@ class ComponentResolver () extends js.Object {
     dynamicComponentParams: DynamicComponentParams,
     defaultComponentName: String
   ): ResolvedComponent[A, B] = js.native
-  /* private */ def initialiseComponent[A](component: js.Any, agGridParams: js.Any): js.Any = js.native
   /* private */ def initialiseComponent[A](component: js.Any, agGridParams: js.Any, customInitParamsCb: js.Any): js.Any = js.native
   /**
     * Useful to check what would be the resultant params for a given object
@@ -124,8 +158,6 @@ class ComponentResolver () extends js.Object {
     dynamicCustomParams: js.Any,
     dynamicParams: js.Any
   ): js.Any = js.native
-  /* private */ def newAgGridComponent[A, B](holder: js.Any, propertyName: js.Any, dynamicComponentParams: js.Any): js.Any = js.native
-  /* private */ def newAgGridComponent[A, B](holder: js.Any, propertyName: js.Any, dynamicComponentParams: js.Any, defaultComponentName: js.Any): js.Any = js.native
   /* private */ def newAgGridComponent[A, B](
     holder: js.Any,
     propertyName: js.Any,
@@ -133,7 +165,6 @@ class ComponentResolver () extends js.Object {
     defaultComponentName: js.Any,
     mandatory: js.Any
   ): js.Any = js.native
-  /* private */ def resolveByName[A, B](propertyName: js.Any): js.Any = js.native
   /* private */ def resolveByName[A, B](propertyName: js.Any, componentNameOpt: js.Any): js.Any = js.native
 }
 

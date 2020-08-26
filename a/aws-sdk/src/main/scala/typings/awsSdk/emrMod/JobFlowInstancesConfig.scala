@@ -78,44 +78,100 @@ trait JobFlowInstancesConfig extends js.Object {
 
 object JobFlowInstancesConfig {
   @scala.inline
-  def apply(
-    AdditionalMasterSecurityGroups: SecurityGroupsList = null,
-    AdditionalSlaveSecurityGroups: SecurityGroupsList = null,
-    Ec2KeyName: XmlStringMaxLen256 = null,
-    Ec2SubnetId: XmlStringMaxLen256 = null,
-    Ec2SubnetIds: XmlStringMaxLen256List = null,
-    EmrManagedMasterSecurityGroup: XmlStringMaxLen256 = null,
-    EmrManagedSlaveSecurityGroup: XmlStringMaxLen256 = null,
-    HadoopVersion: XmlStringMaxLen256 = null,
-    InstanceCount: js.UndefOr[Integer] = js.undefined,
-    InstanceFleets: InstanceFleetConfigList = null,
-    InstanceGroups: InstanceGroupConfigList = null,
-    KeepJobFlowAliveWhenNoSteps: js.UndefOr[Boolean] = js.undefined,
-    MasterInstanceType: InstanceType = null,
-    Placement: PlacementType = null,
-    ServiceAccessSecurityGroup: XmlStringMaxLen256 = null,
-    SlaveInstanceType: InstanceType = null,
-    TerminationProtected: js.UndefOr[Boolean] = js.undefined
-  ): JobFlowInstancesConfig = {
+  def apply(): JobFlowInstancesConfig = {
     val __obj = js.Dynamic.literal()
-    if (AdditionalMasterSecurityGroups != null) __obj.updateDynamic("AdditionalMasterSecurityGroups")(AdditionalMasterSecurityGroups.asInstanceOf[js.Any])
-    if (AdditionalSlaveSecurityGroups != null) __obj.updateDynamic("AdditionalSlaveSecurityGroups")(AdditionalSlaveSecurityGroups.asInstanceOf[js.Any])
-    if (Ec2KeyName != null) __obj.updateDynamic("Ec2KeyName")(Ec2KeyName.asInstanceOf[js.Any])
-    if (Ec2SubnetId != null) __obj.updateDynamic("Ec2SubnetId")(Ec2SubnetId.asInstanceOf[js.Any])
-    if (Ec2SubnetIds != null) __obj.updateDynamic("Ec2SubnetIds")(Ec2SubnetIds.asInstanceOf[js.Any])
-    if (EmrManagedMasterSecurityGroup != null) __obj.updateDynamic("EmrManagedMasterSecurityGroup")(EmrManagedMasterSecurityGroup.asInstanceOf[js.Any])
-    if (EmrManagedSlaveSecurityGroup != null) __obj.updateDynamic("EmrManagedSlaveSecurityGroup")(EmrManagedSlaveSecurityGroup.asInstanceOf[js.Any])
-    if (HadoopVersion != null) __obj.updateDynamic("HadoopVersion")(HadoopVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
-    if (InstanceFleets != null) __obj.updateDynamic("InstanceFleets")(InstanceFleets.asInstanceOf[js.Any])
-    if (InstanceGroups != null) __obj.updateDynamic("InstanceGroups")(InstanceGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(KeepJobFlowAliveWhenNoSteps)) __obj.updateDynamic("KeepJobFlowAliveWhenNoSteps")(KeepJobFlowAliveWhenNoSteps.get.asInstanceOf[js.Any])
-    if (MasterInstanceType != null) __obj.updateDynamic("MasterInstanceType")(MasterInstanceType.asInstanceOf[js.Any])
-    if (Placement != null) __obj.updateDynamic("Placement")(Placement.asInstanceOf[js.Any])
-    if (ServiceAccessSecurityGroup != null) __obj.updateDynamic("ServiceAccessSecurityGroup")(ServiceAccessSecurityGroup.asInstanceOf[js.Any])
-    if (SlaveInstanceType != null) __obj.updateDynamic("SlaveInstanceType")(SlaveInstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminationProtected)) __obj.updateDynamic("TerminationProtected")(TerminationProtected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobFlowInstancesConfig]
   }
+  @scala.inline
+  implicit class JobFlowInstancesConfigOps[Self <: JobFlowInstancesConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalMasterSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = this.set("AdditionalMasterSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalMasterSecurityGroups(value: SecurityGroupsList): Self = this.set("AdditionalMasterSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalMasterSecurityGroups: Self = this.set("AdditionalMasterSecurityGroups", js.undefined)
+    @scala.inline
+    def setAdditionalSlaveSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = this.set("AdditionalSlaveSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalSlaveSecurityGroups(value: SecurityGroupsList): Self = this.set("AdditionalSlaveSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalSlaveSecurityGroups: Self = this.set("AdditionalSlaveSecurityGroups", js.undefined)
+    @scala.inline
+    def setEc2KeyName(value: XmlStringMaxLen256): Self = this.set("Ec2KeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2KeyName: Self = this.set("Ec2KeyName", js.undefined)
+    @scala.inline
+    def setEc2SubnetId(value: XmlStringMaxLen256): Self = this.set("Ec2SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2SubnetId: Self = this.set("Ec2SubnetId", js.undefined)
+    @scala.inline
+    def setEc2SubnetIdsVarargs(value: XmlStringMaxLen256*): Self = this.set("Ec2SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setEc2SubnetIds(value: XmlStringMaxLen256List): Self = this.set("Ec2SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2SubnetIds: Self = this.set("Ec2SubnetIds", js.undefined)
+    @scala.inline
+    def setEmrManagedMasterSecurityGroup(value: XmlStringMaxLen256): Self = this.set("EmrManagedMasterSecurityGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmrManagedMasterSecurityGroup: Self = this.set("EmrManagedMasterSecurityGroup", js.undefined)
+    @scala.inline
+    def setEmrManagedSlaveSecurityGroup(value: XmlStringMaxLen256): Self = this.set("EmrManagedSlaveSecurityGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmrManagedSlaveSecurityGroup: Self = this.set("EmrManagedSlaveSecurityGroup", js.undefined)
+    @scala.inline
+    def setHadoopVersion(value: XmlStringMaxLen256): Self = this.set("HadoopVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHadoopVersion: Self = this.set("HadoopVersion", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+    @scala.inline
+    def setInstanceFleetsVarargs(value: InstanceFleetConfig*): Self = this.set("InstanceFleets", js.Array(value :_*))
+    @scala.inline
+    def setInstanceFleets(value: InstanceFleetConfigList): Self = this.set("InstanceFleets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceFleets: Self = this.set("InstanceFleets", js.undefined)
+    @scala.inline
+    def setInstanceGroupsVarargs(value: InstanceGroupConfig*): Self = this.set("InstanceGroups", js.Array(value :_*))
+    @scala.inline
+    def setInstanceGroups(value: InstanceGroupConfigList): Self = this.set("InstanceGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroups: Self = this.set("InstanceGroups", js.undefined)
+    @scala.inline
+    def setKeepJobFlowAliveWhenNoSteps(value: Boolean): Self = this.set("KeepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepJobFlowAliveWhenNoSteps: Self = this.set("KeepJobFlowAliveWhenNoSteps", js.undefined)
+    @scala.inline
+    def setMasterInstanceType(value: InstanceType): Self = this.set("MasterInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterInstanceType: Self = this.set("MasterInstanceType", js.undefined)
+    @scala.inline
+    def setPlacement(value: PlacementType): Self = this.set("Placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("Placement", js.undefined)
+    @scala.inline
+    def setServiceAccessSecurityGroup(value: XmlStringMaxLen256): Self = this.set("ServiceAccessSecurityGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccessSecurityGroup: Self = this.set("ServiceAccessSecurityGroup", js.undefined)
+    @scala.inline
+    def setSlaveInstanceType(value: InstanceType): Self = this.set("SlaveInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlaveInstanceType: Self = this.set("SlaveInstanceType", js.undefined)
+    @scala.inline
+    def setTerminationProtected(value: Boolean): Self = this.set("TerminationProtected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationProtected: Self = this.set("TerminationProtected", js.undefined)
+  }
+  
 }
 

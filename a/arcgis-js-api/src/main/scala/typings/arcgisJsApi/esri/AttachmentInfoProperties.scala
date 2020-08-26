@@ -4,95 +4,130 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AttachmentInfoProperties extends js.Object {
   /**
     * The content type of the attachment. For example, `'image/jpeg'`. See the [ArcGIS REST API documentation](https://developers.arcgis.com/rest/services-reference/query-attachments-feature-service-layer-.htm) for more information on supported attachment types.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#contentType)
     */
-  var contentType: js.UndefOr[String] = js.undefined
+  var contentType: js.UndefOr[String] = js.native
   /**
     * An array of [ExifInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#ExifInfo) for the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#exifInfo)
     */
-  var exifInfo: js.UndefOr[js.Array[ExifInfo]] = js.undefined
+  var exifInfo: js.UndefOr[js.Array[ExifInfo]] = js.native
   /**
     * The global identifier for the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#globalId)
     */
-  var globalId: js.UndefOr[String] = js.undefined
+  var globalId: js.UndefOr[String] = js.native
   /**
     * The identifier for the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#id)
     */
-  var id: js.UndefOr[Double] = js.undefined
+  var id: js.UndefOr[Double] = js.native
   /**
     * Keywords used for the attachments.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#keywords)
     */
-  var keywords: js.UndefOr[String] = js.undefined
+  var keywords: js.UndefOr[String] = js.native
   /**
     * String value indicating the name of the file attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#name)
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The parent or the feature global id of the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#parentGlobalId)
     */
-  var parentGlobalId: js.UndefOr[Double] = js.undefined
+  var parentGlobalId: js.UndefOr[Double] = js.native
   /**
     * The parent or the feature object id of the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#parentObjectId)
     */
-  var parentObjectId: js.UndefOr[Double] = js.undefined
+  var parentObjectId: js.UndefOr[Double] = js.native
   /**
     * The file size of the attachment. This is specified in bytes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#size)
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
   /**
     * The URL of the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#url)
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
 }
 
 object AttachmentInfoProperties {
   @scala.inline
-  def apply(
-    contentType: String = null,
-    exifInfo: js.Array[ExifInfo] = null,
-    globalId: String = null,
-    id: js.UndefOr[Double] = js.undefined,
-    keywords: String = null,
-    name: String = null,
-    parentGlobalId: js.UndefOr[Double] = js.undefined,
-    parentObjectId: js.UndefOr[Double] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    url: String = null
-  ): AttachmentInfoProperties = {
+  def apply(): AttachmentInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (exifInfo != null) __obj.updateDynamic("exifInfo")(exifInfo.asInstanceOf[js.Any])
-    if (globalId != null) __obj.updateDynamic("globalId")(globalId.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(parentGlobalId)) __obj.updateDynamic("parentGlobalId")(parentGlobalId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(parentObjectId)) __obj.updateDynamic("parentObjectId")(parentObjectId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentInfoProperties]
   }
+  @scala.inline
+  implicit class AttachmentInfoPropertiesOps[Self <: AttachmentInfoProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setExifInfoVarargs(value: ExifInfo*): Self = this.set("exifInfo", js.Array(value :_*))
+    @scala.inline
+    def setExifInfo(value: js.Array[ExifInfo]): Self = this.set("exifInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExifInfo: Self = this.set("exifInfo", js.undefined)
+    @scala.inline
+    def setGlobalId(value: String): Self = this.set("globalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalId: Self = this.set("globalId", js.undefined)
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKeywords(value: String): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentGlobalId(value: Double): Self = this.set("parentGlobalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentGlobalId: Self = this.set("parentGlobalId", js.undefined)
+    @scala.inline
+    def setParentObjectId(value: Double): Self = this.set("parentObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentObjectId: Self = this.set("parentObjectId", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

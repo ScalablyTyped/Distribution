@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mapbox__polyline"
-version := "1.0-dt-20180823Z-f45ce8"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20180823Z-fb0543"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20200515Z-230004",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20200515Z-7b0d2d",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

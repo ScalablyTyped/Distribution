@@ -28,6 +28,7 @@ trait SharedWorkspace extends js.Object {
   val Tasks_Original: SharedWorkspaceTasks = js.native
   val URL: String = js.native
   def CreateNew(): Unit = js.native
+  def CreateNew(URL: js.UndefOr[scala.Nothing], Name: String): Unit = js.native
   def CreateNew(URL: String): Unit = js.native
   def CreateNew(URL: String, Name: String): Unit = js.native
   def Delete(): Unit = js.native

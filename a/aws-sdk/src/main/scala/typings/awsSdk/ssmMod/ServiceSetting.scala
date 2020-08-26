@@ -34,22 +34,46 @@ trait ServiceSetting extends js.Object {
 
 object ServiceSetting {
   @scala.inline
-  def apply(
-    ARN: String = null,
-    LastModifiedDate: DateTime = null,
-    LastModifiedUser: String = null,
-    SettingId: ServiceSettingId = null,
-    SettingValue: ServiceSettingValue = null,
-    Status: String = null
-  ): ServiceSetting = {
+  def apply(): ServiceSetting = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (LastModifiedUser != null) __obj.updateDynamic("LastModifiedUser")(LastModifiedUser.asInstanceOf[js.Any])
-    if (SettingId != null) __obj.updateDynamic("SettingId")(SettingId.asInstanceOf[js.Any])
-    if (SettingValue != null) __obj.updateDynamic("SettingValue")(SettingValue.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceSetting]
   }
+  @scala.inline
+  implicit class ServiceSettingOps[Self <: ServiceSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateTime): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setLastModifiedUser(value: String): Self = this.set("LastModifiedUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedUser: Self = this.set("LastModifiedUser", js.undefined)
+    @scala.inline
+    def setSettingId(value: ServiceSettingId): Self = this.set("SettingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingId: Self = this.set("SettingId", js.undefined)
+    @scala.inline
+    def setSettingValue(value: ServiceSettingValue): Self = this.set("SettingValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingValue: Self = this.set("SettingValue", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

@@ -21,28 +21,58 @@ trait PartialStyleRulesSvgIconC extends js.Object {
 
 object PartialStyleRulesSvgIconC {
   @scala.inline
-  def apply(
-    colorAction: CSSProperties = null,
-    colorDisabled: CSSProperties = null,
-    colorError: CSSProperties = null,
-    colorPrimary: CSSProperties = null,
-    colorSecondary: CSSProperties = null,
-    fontSizeInherit: CSSProperties = null,
-    fontSizeLarge: CSSProperties = null,
-    fontSizeSmall: CSSProperties = null,
-    root: CSSProperties = null
-  ): PartialStyleRulesSvgIconC = {
+  def apply(): PartialStyleRulesSvgIconC = {
     val __obj = js.Dynamic.literal()
-    if (colorAction != null) __obj.updateDynamic("colorAction")(colorAction.asInstanceOf[js.Any])
-    if (colorDisabled != null) __obj.updateDynamic("colorDisabled")(colorDisabled.asInstanceOf[js.Any])
-    if (colorError != null) __obj.updateDynamic("colorError")(colorError.asInstanceOf[js.Any])
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
-    if (fontSizeInherit != null) __obj.updateDynamic("fontSizeInherit")(fontSizeInherit.asInstanceOf[js.Any])
-    if (fontSizeLarge != null) __obj.updateDynamic("fontSizeLarge")(fontSizeLarge.asInstanceOf[js.Any])
-    if (fontSizeSmall != null) __obj.updateDynamic("fontSizeSmall")(fontSizeSmall.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesSvgIconC]
   }
+  @scala.inline
+  implicit class PartialStyleRulesSvgIconCOps[Self <: PartialStyleRulesSvgIconC] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorAction(value: CSSProperties): Self = this.set("colorAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorAction: Self = this.set("colorAction", js.undefined)
+    @scala.inline
+    def setColorDisabled(value: CSSProperties): Self = this.set("colorDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorDisabled: Self = this.set("colorDisabled", js.undefined)
+    @scala.inline
+    def setColorError(value: CSSProperties): Self = this.set("colorError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorError: Self = this.set("colorError", js.undefined)
+    @scala.inline
+    def setColorPrimary(value: CSSProperties): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    @scala.inline
+    def setColorSecondary(value: CSSProperties): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    @scala.inline
+    def setFontSizeInherit(value: CSSProperties): Self = this.set("fontSizeInherit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSizeInherit: Self = this.set("fontSizeInherit", js.undefined)
+    @scala.inline
+    def setFontSizeLarge(value: CSSProperties): Self = this.set("fontSizeLarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSizeLarge: Self = this.set("fontSizeLarge", js.undefined)
+    @scala.inline
+    def setFontSizeSmall(value: CSSProperties): Self = this.set("fontSizeSmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSizeSmall: Self = this.set("fontSizeSmall", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LinkModel[T /* <: LinkModelListener */] () extends BaseModel[DiagramModel, T] {
   def this(linkType: String) = this()
+  def this(linkType: js.UndefOr[scala.Nothing], id: String) = this()
   def this(linkType: String, id: String) = this()
   var labels: js.Array[LabelModel] = js.native
   var points: js.Array[PointModel] = js.native
@@ -23,6 +24,7 @@ class LinkModel[T /* <: LinkModelListener */] () extends BaseModel[DiagramModel,
   def addPoint[P /* <: PointModel */](pointModel: P, index: Double): P = js.native
   def doClone(lookupTable: js.Object, clone: js.Any): Unit = js.native
   def generatePoint(): PointModel = js.native
+  def generatePoint(x: js.UndefOr[scala.Nothing], y: Double): PointModel = js.native
   def generatePoint(x: Double): PointModel = js.native
   def generatePoint(x: Double, y: Double): PointModel = js.native
   def getFirstPoint(): PointModel = js.native

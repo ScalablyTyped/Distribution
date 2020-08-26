@@ -5,36 +5,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Domain extends js.Object {
-  var algorithm: js.UndefOr[HashAlgorithm] = js.undefined
-  var domain: js.UndefOr[String] = js.undefined
-  var httpOnly: js.UndefOr[Boolean] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var secret: js.UndefOr[String] = js.undefined
-  var secure: js.UndefOr[Boolean] = js.undefined
-  var ttl: js.UndefOr[Double] = js.undefined
+  var algorithm: js.UndefOr[HashAlgorithm] = js.native
+  var domain: js.UndefOr[String] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.native
+  var path: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.native
+  var secure: js.UndefOr[Boolean] = js.native
+  var ttl: js.UndefOr[Double] = js.native
 }
 
 object Domain {
   @scala.inline
-  def apply(
-    algorithm: HashAlgorithm = null,
-    domain: String = null,
-    httpOnly: js.UndefOr[Boolean] = js.undefined,
-    path: String = null,
-    secret: String = null,
-    secure: js.UndefOr[Boolean] = js.undefined,
-    ttl: js.UndefOr[Double] = js.undefined
-  ): Domain = {
+  def apply(): Domain = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Domain]
   }
+  @scala.inline
+  implicit class DomainOps[Self <: Domain] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithm(value: HashAlgorithm): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setHttpOnly(value: Boolean): Self = this.set("httpOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpOnly: Self = this.set("httpOnly", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setSecret(value: String): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecret: Self = this.set("secret", js.undefined)
+    @scala.inline
+    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecure: Self = this.set("secure", js.undefined)
+    @scala.inline
+    def setTtl(value: Double): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTtl: Self = this.set("ttl", js.undefined)
+  }
+  
 }
 

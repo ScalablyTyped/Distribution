@@ -28,11 +28,9 @@ class NanoflowSource protected () extends DataSource {
   ) = this()
   @JSName("model")
   var model_FNanoflowSource: IModel = js.native
-  def nanoflow(): js.Any = js.native
-  def nanoflow(newValue: INanoflow): js.Any = js.native
+  def nanoflow: INanoflow | Null = js.native
   def nanoflowQualifiedName: String | Null = js.native
-  @JSName("nanoflow")
-  def nanoflow_Union: INanoflow | Null = js.native
+  def nanoflow_=(newValue: INanoflow | Null): Unit = js.native
   /**
     * In version 7.19.0: introduced
     */

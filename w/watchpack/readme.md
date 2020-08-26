@@ -11,8 +11,8 @@ Wrapper library for directory and file watching.
 | Full name          | watchpack |
 | Keywords           | - |
 | # releases         | 14 |
-| # dependents       | 106 |
-| # downloads        | 280834040 |
+| # dependents       | 109 |
+| # downloads        | 284109145 |
 | # stars            | 2 |
 
 ## Links

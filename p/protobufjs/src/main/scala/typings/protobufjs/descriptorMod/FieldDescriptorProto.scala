@@ -62,6 +62,8 @@ object FieldDescriptorProto extends js.Object {
   var options: js.UndefOr[StringDictionary[js.Any]] = js.native
   /** Parent namespace. */
   var parent: Namespace | Null = js.native
+  /** Parsed Options. */
+  var parsedOptions: js.UndefOr[StringDictionary[js.Array[_]]] = js.native
   /** Reserved ranges, if any. */
   var reserved: js.Array[js.Array[Double] | String] = js.native
   /** Whether already resolved or not. */
@@ -302,6 +304,14 @@ object FieldDescriptorProto extends js.Object {
     */
   def setOptions(options: StringDictionary[js.Any]): ReflectionObject = js.native
   def setOptions(options: StringDictionary[js.Any], ifNotSet: Boolean): ReflectionObject = js.native
+  /**
+    * Sets a parsed option.
+    * @param name parsed Option name
+    * @param value Option value
+    * @param propName dot '.' delimited full path of property within the option to set. if undefined\empty, will add a new option with that value
+    * @returns `this`
+    */
+  def setParsedOption(name: String, value: js.Any, propName: String): ReflectionObject = js.native
   /**
     * Sets up {@link Type#encode|encode}, {@link Type#decode|decode} and {@link Type#verify|verify}.
     * @returns `this`

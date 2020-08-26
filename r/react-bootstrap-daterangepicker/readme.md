@@ -11,7 +11,7 @@ A date/time picker for react (using bootstrap). This is a react port of: https:/
 | Keywords           | react, react-component, bootstrap, date, range, picker, selector, datetime, ui |
 | # releases         | 4 |
 | # dependents       | 15 |
-| # downloads        | 1267580 |
+| # downloads        | 1277098 |
 | # stars            | 4 |
 
 ## Links

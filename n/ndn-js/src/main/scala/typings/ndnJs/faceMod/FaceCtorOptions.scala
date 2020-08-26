@@ -6,30 +6,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FaceCtorOptions extends js.Object {
-  var connectionInfo: js.UndefOr[TransportConnectionInfo | Null] = js.undefined
-  var getConnectionInfo: js.UndefOr[js.Function0[TransportConnectionInfo]] = js.undefined
-  var getTransport: js.UndefOr[js.Function0[Transport]] = js.undefined
-  var host: js.UndefOr[String | Null] = js.undefined
-  var port: js.UndefOr[Double | Null] = js.undefined
+  var connectionInfo: js.UndefOr[TransportConnectionInfo | Null] = js.native
+  var getConnectionInfo: js.UndefOr[js.Function0[TransportConnectionInfo]] = js.native
+  var getTransport: js.UndefOr[js.Function0[Transport]] = js.native
+  var host: js.UndefOr[String | Null] = js.native
+  var port: js.UndefOr[Double | Null] = js.native
 }
 
 object FaceCtorOptions {
   @scala.inline
-  def apply(
-    connectionInfo: js.UndefOr[Null | TransportConnectionInfo] = js.undefined,
-    getConnectionInfo: () => TransportConnectionInfo = null,
-    getTransport: () => Transport = null,
-    host: js.UndefOr[Null | String] = js.undefined,
-    port: js.UndefOr[Null | Double] = js.undefined
-  ): FaceCtorOptions = {
+  def apply(): FaceCtorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(connectionInfo)) __obj.updateDynamic("connectionInfo")(connectionInfo.asInstanceOf[js.Any])
-    if (getConnectionInfo != null) __obj.updateDynamic("getConnectionInfo")(js.Any.fromFunction0(getConnectionInfo))
-    if (getTransport != null) __obj.updateDynamic("getTransport")(js.Any.fromFunction0(getTransport))
-    if (!js.isUndefined(host)) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceCtorOptions]
   }
+  @scala.inline
+  implicit class FaceCtorOptionsOps[Self <: FaceCtorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionInfo(value: TransportConnectionInfo): Self = this.set("connectionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionInfo: Self = this.set("connectionInfo", js.undefined)
+    @scala.inline
+    def setConnectionInfoNull: Self = this.set("connectionInfo", null)
+    @scala.inline
+    def setGetConnectionInfo(value: () => TransportConnectionInfo): Self = this.set("getConnectionInfo", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetConnectionInfo: Self = this.set("getConnectionInfo", js.undefined)
+    @scala.inline
+    def setGetTransport(value: () => Transport): Self = this.set("getTransport", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTransport: Self = this.set("getTransport", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHostNull: Self = this.set("host", null)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPortNull: Self = this.set("port", null)
+  }
+  
 }
 

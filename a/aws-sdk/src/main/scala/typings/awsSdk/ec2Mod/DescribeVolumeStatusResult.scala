@@ -18,11 +18,32 @@ trait DescribeVolumeStatusResult extends js.Object {
 
 object DescribeVolumeStatusResult {
   @scala.inline
-  def apply(NextToken: String = null, VolumeStatuses: VolumeStatusList = null): DescribeVolumeStatusResult = {
+  def apply(): DescribeVolumeStatusResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (VolumeStatuses != null) __obj.updateDynamic("VolumeStatuses")(VolumeStatuses.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVolumeStatusResult]
   }
+  @scala.inline
+  implicit class DescribeVolumeStatusResultOps[Self <: DescribeVolumeStatusResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setVolumeStatusesVarargs(value: VolumeStatusItem*): Self = this.set("VolumeStatuses", js.Array(value :_*))
+    @scala.inline
+    def setVolumeStatuses(value: VolumeStatusList): Self = this.set("VolumeStatuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeStatuses: Self = this.set("VolumeStatuses", js.undefined)
+  }
+  
 }
 

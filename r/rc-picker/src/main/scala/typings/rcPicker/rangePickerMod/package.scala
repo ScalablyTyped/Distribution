@@ -12,7 +12,7 @@ package object rangePickerMod {
   type RangeDateRender[DateType] = js.Function3[
     /* currentDate */ DateType, 
     /* today */ DateType, 
-    /* info */ typings.rcPicker.anon.Range, 
+    /* info */ typings.rcPicker.rangePickerMod.RangeInfo, 
     typings.react.mod.ReactNode
   ]
 }

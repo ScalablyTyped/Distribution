@@ -73,7 +73,7 @@ object default extends js.Object {
   var querySetClass: (Instantiable3[
     /* modelClass */ ModelClass[/* import warning: RewrittenClass.unapply cls was tparam M */ js.Any], 
     /* clauses */ js.Array[QueryClause[js.Object]], 
-    js.UndefOr[/* opts */ js.Object], 
+    /* opts */ js.UndefOr[js.Object], 
     typings.reduxOrm.querySetMod.default[AnyModel, js.Object]
   ]) with TypeofQuerySet = js.native
   /**

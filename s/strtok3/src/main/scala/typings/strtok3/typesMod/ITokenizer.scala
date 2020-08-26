@@ -47,6 +47,7 @@ trait ITokenizer extends js.Object {
     * @param maybeless - If set, will not throw an EOF error if the less then the requested length could be read.
     */
   def peekToken[T](token: IGetToken[T]): js.Promise[T] = js.native
+  def peekToken[T](token: IGetToken[T], position: js.UndefOr[scala.Nothing], maybeless: Boolean): js.Promise[T] = js.native
   def peekToken[T](token: IGetToken[T], position: Double): js.Promise[T] = js.native
   def peekToken[T](token: IGetToken[T], position: Double, maybeless: Boolean): js.Promise[T] = js.native
   def peekToken[T](token: IGetToken[T], position: Null, maybeless: Boolean): js.Promise[T] = js.native

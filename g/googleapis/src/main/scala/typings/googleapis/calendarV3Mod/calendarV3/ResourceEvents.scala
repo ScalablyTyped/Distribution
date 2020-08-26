@@ -30,6 +30,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEventsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEventsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -57,6 +58,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaEvent] = js.native
   def get(callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEvent] = js.native
   def get(params: ParamsResourceEventsGet): GaxiosPromise[SchemaEvent] = js.native
   def get(params: ParamsResourceEventsGet, callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
   def get(
@@ -88,6 +90,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def `import`(): GaxiosPromise[SchemaEvent] = js.native
   def `import`(callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
+  def `import`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEvent] = js.native
   def `import`(params: ParamsResourceEventsImport): GaxiosPromise[SchemaEvent] = js.native
   def `import`(params: ParamsResourceEventsImport, callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
   def `import`(
@@ -121,6 +124,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaEvent] = js.native
   def insert(callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEvent] = js.native
   def insert(params: ParamsResourceEventsInsert): GaxiosPromise[SchemaEvent] = js.native
   def insert(params: ParamsResourceEventsInsert, callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
   def insert(
@@ -158,6 +162,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def instances(): GaxiosPromise[SchemaEvents] = js.native
   def instances(callback: BodyResponseCallback[SchemaEvents]): Unit = js.native
+  def instances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEvents] = js.native
   def instances(params: ParamsResourceEventsInstances): GaxiosPromise[SchemaEvents] = js.native
   def instances(params: ParamsResourceEventsInstances, callback: BodyResponseCallback[SchemaEvents]): Unit = js.native
   def instances(
@@ -202,6 +207,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaEvents] = js.native
   def list(callback: BodyResponseCallback[SchemaEvents]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEvents] = js.native
   def list(params: ParamsResourceEventsList): GaxiosPromise[SchemaEvents] = js.native
   def list(params: ParamsResourceEventsList, callback: BodyResponseCallback[SchemaEvents]): Unit = js.native
   def list(
@@ -234,6 +240,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def move(): GaxiosPromise[SchemaEvent] = js.native
   def move(callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
+  def move(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEvent] = js.native
   def move(params: ParamsResourceEventsMove): GaxiosPromise[SchemaEvent] = js.native
   def move(params: ParamsResourceEventsMove, callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
   def move(
@@ -269,6 +276,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaEvent] = js.native
   def patch(callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEvent] = js.native
   def patch(params: ParamsResourceEventsPatch): GaxiosPromise[SchemaEvent] = js.native
   def patch(params: ParamsResourceEventsPatch, callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
   def patch(
@@ -299,6 +307,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def quickAdd(): GaxiosPromise[SchemaEvent] = js.native
   def quickAdd(callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
+  def quickAdd(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEvent] = js.native
   def quickAdd(params: ParamsResourceEventsQuickadd): GaxiosPromise[SchemaEvent] = js.native
   def quickAdd(params: ParamsResourceEventsQuickadd, callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
   def quickAdd(
@@ -334,6 +343,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaEvent] = js.native
   def update(callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEvent] = js.native
   def update(params: ParamsResourceEventsUpdate): GaxiosPromise[SchemaEvent] = js.native
   def update(params: ParamsResourceEventsUpdate, callback: BodyResponseCallback[SchemaEvent]): Unit = js.native
   def update(
@@ -379,6 +389,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def watch(): GaxiosPromise[SchemaChannel] = js.native
   def watch(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
+  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceEventsWatch): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceEventsWatch, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watch(

@@ -3,49 +3,55 @@ package typings.shopifyPrime.optionsProductCollectionMod
 import typings.shopifyPrime.optionsBaseMod.FieldOptions
 import typings.shopifyPrime.optionsBaseMod.ListOptions
 import typings.shopifyPrime.optionsBaseMod.PublishedOptions
-import typings.shopifyPrime.publishedStatusMod.PublishedStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CollectionListOptions
   extends ListOptions
      with FieldOptions
      with PublishedOptions {
-  var handle: js.UndefOr[String] = js.undefined
-  var ids: js.UndefOr[String] = js.undefined
-  var product_id: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var handle: js.UndefOr[String] = js.native
+  var ids: js.UndefOr[String] = js.native
+  var product_id: js.UndefOr[Double] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object CollectionListOptions {
   @scala.inline
-  def apply(
-    fields: String = null,
-    handle: String = null,
-    ids: String = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    page: js.UndefOr[Double] = js.undefined,
-    product_id: js.UndefOr[Double] = js.undefined,
-    published_at_max: String = null,
-    published_at_min: String = null,
-    published_status: PublishedStatus = null,
-    since_id: js.UndefOr[Double] = js.undefined,
-    title: String = null
-  ): CollectionListOptions = {
+  def apply(): CollectionListOptions = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(product_id)) __obj.updateDynamic("product_id")(product_id.get.asInstanceOf[js.Any])
-    if (published_at_max != null) __obj.updateDynamic("published_at_max")(published_at_max.asInstanceOf[js.Any])
-    if (published_at_min != null) __obj.updateDynamic("published_at_min")(published_at_min.asInstanceOf[js.Any])
-    if (published_status != null) __obj.updateDynamic("published_status")(published_status.asInstanceOf[js.Any])
-    if (!js.isUndefined(since_id)) __obj.updateDynamic("since_id")(since_id.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionListOptions]
   }
+  @scala.inline
+  implicit class CollectionListOptionsOps[Self <: CollectionListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandle: Self = this.set("handle", js.undefined)
+    @scala.inline
+    def setIds(value: String): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+    @scala.inline
+    def setProduct_id(value: Double): Self = this.set("product_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct_id: Self = this.set("product_id", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

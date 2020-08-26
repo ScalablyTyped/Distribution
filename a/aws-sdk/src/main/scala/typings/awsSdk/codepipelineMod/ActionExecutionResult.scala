@@ -22,16 +22,34 @@ trait ActionExecutionResult extends js.Object {
 
 object ActionExecutionResult {
   @scala.inline
-  def apply(
-    externalExecutionId: ExternalExecutionId = null,
-    externalExecutionSummary: ExternalExecutionSummary = null,
-    externalExecutionUrl: Url = null
-  ): ActionExecutionResult = {
+  def apply(): ActionExecutionResult = {
     val __obj = js.Dynamic.literal()
-    if (externalExecutionId != null) __obj.updateDynamic("externalExecutionId")(externalExecutionId.asInstanceOf[js.Any])
-    if (externalExecutionSummary != null) __obj.updateDynamic("externalExecutionSummary")(externalExecutionSummary.asInstanceOf[js.Any])
-    if (externalExecutionUrl != null) __obj.updateDynamic("externalExecutionUrl")(externalExecutionUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionExecutionResult]
   }
+  @scala.inline
+  implicit class ActionExecutionResultOps[Self <: ActionExecutionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalExecutionId(value: ExternalExecutionId): Self = this.set("externalExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalExecutionId: Self = this.set("externalExecutionId", js.undefined)
+    @scala.inline
+    def setExternalExecutionSummary(value: ExternalExecutionSummary): Self = this.set("externalExecutionSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalExecutionSummary: Self = this.set("externalExecutionSummary", js.undefined)
+    @scala.inline
+    def setExternalExecutionUrl(value: Url): Self = this.set("externalExecutionUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalExecutionUrl: Self = this.set("externalExecutionUrl", js.undefined)
+  }
+  
 }
 

@@ -62,8 +62,6 @@ object syncPointMod extends js.Object {
     def getQueryViews(): js.Array[View] = js.native
     def hasCompleteView(): Boolean = js.native
     def isEmpty(): Boolean = js.native
-    def removeEventRegistration(query: Query): Events = js.native
-    def removeEventRegistration(query: Query, eventRegistration: Null, cancelError: Error): Events = js.native
     /**
       * Remove event callback(s).  Return cancelEvents if a cancelError is specified.
       *
@@ -75,6 +73,8 @@ object syncPointMod extends js.Object {
       * @param {Error=} cancelError If a cancelError is provided, appropriate cancel events will be returned.
       * @return {{removed:!Array.<!Query>, events:!Array.<!Event>}} removed queries and any cancel events
       */
+    def removeEventRegistration(query: Query): Events = js.native
+    def removeEventRegistration(query: Query, eventRegistration: Null, cancelError: Error): Events = js.native
     def removeEventRegistration(query: Query, eventRegistration: EventRegistration): Events = js.native
     def removeEventRegistration(query: Query, eventRegistration: EventRegistration, cancelError: Error): Events = js.native
     def viewExistsForQuery(query: Query): Boolean = js.native
@@ -85,7 +85,7 @@ object syncPointMod extends js.Object {
   @js.native
   object SyncPoint extends js.Object {
     def __referenceConstructor: ReferenceConstructor = js.native
-    def __referenceConstructor(`val`: ReferenceConstructor): js.Any = js.native
+    def __referenceConstructor_=(`val`: ReferenceConstructor): Unit = js.native
   }
   
 }

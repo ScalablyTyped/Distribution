@@ -10,9 +10,9 @@ A minimalist hotword / wake word for the web, based on Porcupine
 | ------------------ | :-------------: |
 | Full name          | bumblebee-hotword |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 673 |
+| # downloads        | 857 |
 | # stars            | 0 |
 
 ## Links

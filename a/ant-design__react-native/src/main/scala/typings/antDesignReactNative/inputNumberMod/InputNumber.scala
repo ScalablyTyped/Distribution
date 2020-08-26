@@ -15,8 +15,12 @@ trait InputNumber[P /* <: InputNumberProps */, S /* <: InputNumberState */]
   var _stepUp: js.Any = js.native
   var _stepUpText: js.Any = js.native
   var autoStepTimer: js.Any = js.native
+  @JSName("UNSAFE_componentWillReceiveProps")
+  def UNSAFE_componentWillReceiveProps_MInputNumber(nextProps: P): Unit = js.native
   @JSName("action")
   def action_down(`type`: down, e: js.Any): Unit = js.native
+  @JSName("action")
+  def action_down(`type`: down, e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
   @JSName("action")
   def action_down(`type`: down, e: js.Any, ratio: js.Any): Unit = js.native
   @JSName("action")
@@ -24,14 +28,15 @@ trait InputNumber[P /* <: InputNumberProps */, S /* <: InputNumberState */]
   @JSName("action")
   def action_up(`type`: up, e: js.Any): Unit = js.native
   @JSName("action")
+  def action_up(`type`: up, e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
+  @JSName("action")
   def action_up(`type`: up, e: js.Any, ratio: js.Any): Unit = js.native
   @JSName("action")
   def action_up(`type`: up, e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MInputNumber(nextProps: P): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MInputNumber(): Unit = js.native
   def down(e: js.Any): Unit = js.native
+  def down(e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
   def down(e: js.Any, ratio: js.Any): Unit = js.native
   def down(e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
   def getCurrentValidValue(value: js.Any): js.Any = js.native
@@ -71,6 +76,7 @@ trait InputNumber[P /* <: InputNumberProps */, S /* <: InputNumberState */]
   def toNumberWhenUserInput(num: js.Any): js.Any = js.native
   def toPrecisionAsStep(num: js.Any): js.Any = js.native
   def up(e: js.Any): Unit = js.native
+  def up(e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
   def up(e: js.Any, ratio: js.Any): Unit = js.native
   def up(e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
 }

@@ -12,7 +12,7 @@ provides access to the windows registry through the REG tool
 | Keywords           | windows, registry |
 | # releases         | 1 |
 | # dependents       | 89 |
-| # downloads        | 3003624 |
+| # downloads        | 3038472 |
 | # stars            | 10 |
 
 ## Links

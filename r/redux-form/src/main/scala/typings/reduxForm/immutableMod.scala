@@ -87,6 +87,13 @@ object immutableMod extends js.Object {
   def blur(form: String, field: String, value: js.Any): FormAction = js.native
   def blur(form: String, field: String, value: js.Any, touch: Boolean): FormAction = js.native
   def change(form: String, field: String, value: js.Any): FormAction = js.native
+  def change(
+    form: String,
+    field: String,
+    value: js.Any,
+    touch: js.UndefOr[scala.Nothing],
+    persistentSubmitErrors: Boolean
+  ): FormAction = js.native
   def change(form: String, field: String, value: js.Any, touch: Boolean): FormAction = js.native
   def change(form: String, field: String, value: js.Any, touch: Boolean, persistentSubmitErrors: Boolean): FormAction = js.native
   def clearFields(form: String, keepTouched: Boolean, persistentSubmitErrors: Boolean, fields: String*): FormAction = js.native
@@ -96,6 +103,12 @@ object immutableMod extends js.Object {
   def formValueSelector[State](form: String): js.Function2[/* state */ State, /* repeated */ String, _] = js.native
   def formValueSelector[State](form: String, getFormState: js.Function1[/* state */ State, FormStateMap]): js.Function2[/* state */ State, /* repeated */ String, _] = js.native
   def initialize(form: String, data: js.Any): FormAction = js.native
+  def initialize(
+    form: String,
+    data: js.Any,
+    keepDirty: js.UndefOr[scala.Nothing],
+    options: PartialInitializeOptions
+  ): FormAction = js.native
   def initialize(form: String, data: js.Any, keepDirty: Boolean): FormAction = js.native
   def initialize(form: String, data: js.Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = js.native
   def initialize(form: String, data: js.Any, options: PartialInitializeOptions): FormAction = js.native

@@ -33,6 +33,7 @@ trait Program extends js.Object {
     * @param {string} [fragmentSrc] - The source of the fragment shader.
     */
   /* protected */ def extractData(): Unit = js.native
+  /* protected */ def extractData(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String): Unit = js.native
   /* protected */ def extractData(vertexSrc: String): Unit = js.native
   /* protected */ def extractData(vertexSrc: String, fragmentSrc: String): Unit = js.native
 }

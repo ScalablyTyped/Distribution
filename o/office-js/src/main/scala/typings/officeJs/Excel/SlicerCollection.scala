@@ -33,12 +33,42 @@ trait SlicerCollection extends ClientObject {
     * @param slicerDestination Optional. The worksheet where the new slicer will be created in. It can be a Worksheet object or the name/id of a worksheet. This parameter can be omitted if the slicer collection is retrieved from worksheet.
     * @returns The new slicer.
     */
-  def add(slicerSource: String | PivotTable | Table, sourceField: String | PivotField | Double | TableColumn): Slicer = js.native
-  def add(
-    slicerSource: String | PivotTable | Table,
-    sourceField: String | PivotField | Double | TableColumn,
-    slicerDestination: String | Worksheet
-  ): Slicer = js.native
+  def add(slicerSource: String, sourceField: String): Slicer = js.native
+  def add(slicerSource: String, sourceField: String, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: String, sourceField: String, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: String, sourceField: Double): Slicer = js.native
+  def add(slicerSource: String, sourceField: Double, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: String, sourceField: Double, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: String, sourceField: PivotField): Slicer = js.native
+  def add(slicerSource: String, sourceField: PivotField, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: String, sourceField: PivotField, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: String, sourceField: TableColumn): Slicer = js.native
+  def add(slicerSource: String, sourceField: TableColumn, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: String, sourceField: TableColumn, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: String): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: String, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: String, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: Double): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: Double, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: Double, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: PivotField): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: PivotField, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: PivotField, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: TableColumn): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: TableColumn, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: PivotTable, sourceField: TableColumn, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: Table, sourceField: String): Slicer = js.native
+  def add(slicerSource: Table, sourceField: String, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: Table, sourceField: String, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: Table, sourceField: Double): Slicer = js.native
+  def add(slicerSource: Table, sourceField: Double, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: Table, sourceField: Double, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: Table, sourceField: PivotField): Slicer = js.native
+  def add(slicerSource: Table, sourceField: PivotField, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: Table, sourceField: PivotField, slicerDestination: Worksheet): Slicer = js.native
+  def add(slicerSource: Table, sourceField: TableColumn): Slicer = js.native
+  def add(slicerSource: Table, sourceField: TableColumn, slicerDestination: String): Slicer = js.native
+  def add(slicerSource: Table, sourceField: TableColumn, slicerDestination: Worksheet): Slicer = js.native
   /**
     * Returns the number of slicers in the collection.
     *

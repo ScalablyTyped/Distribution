@@ -11,8 +11,8 @@ Iterate over promises serially
 | Full name          | p-each-series |
 | Keywords           | promise, foreach, for-each, for, each, collection, iterable, iterator, fulfilled, async, await, promises, serial, serially, series, bluebird |
 | # releases         | 3 |
-| # dependents       | 111 |
-| # downloads        | 106856991 |
+| # dependents       | 115 |
+| # downloads        | 117114968 |
 | # stars            | 0 |
 
 ## Links

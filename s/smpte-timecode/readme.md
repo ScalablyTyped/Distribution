@@ -12,7 +12,7 @@ JavaScript implementation of SMPTE timecode type
 | Keywords           | SMPTE, Timecode, dropframe, drop-frame, video, time |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 19505 |
+| # downloads        | 21831 |
 | # stars            | 1 |
 
 ## Links

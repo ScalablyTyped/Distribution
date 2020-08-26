@@ -18,14 +18,34 @@ trait BatchGetCustomDataIdentifiersResponse extends js.Object {
 
 object BatchGetCustomDataIdentifiersResponse {
   @scala.inline
-  def apply(
-    customDataIdentifiers: listOfBatchGetCustomDataIdentifierSummary = null,
-    notFoundIdentifierIds: listOfString = null
-  ): BatchGetCustomDataIdentifiersResponse = {
+  def apply(): BatchGetCustomDataIdentifiersResponse = {
     val __obj = js.Dynamic.literal()
-    if (customDataIdentifiers != null) __obj.updateDynamic("customDataIdentifiers")(customDataIdentifiers.asInstanceOf[js.Any])
-    if (notFoundIdentifierIds != null) __obj.updateDynamic("notFoundIdentifierIds")(notFoundIdentifierIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetCustomDataIdentifiersResponse]
   }
+  @scala.inline
+  implicit class BatchGetCustomDataIdentifiersResponseOps[Self <: BatchGetCustomDataIdentifiersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomDataIdentifiersVarargs(value: BatchGetCustomDataIdentifierSummary*): Self = this.set("customDataIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setCustomDataIdentifiers(value: listOfBatchGetCustomDataIdentifierSummary): Self = this.set("customDataIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDataIdentifiers: Self = this.set("customDataIdentifiers", js.undefined)
+    @scala.inline
+    def setNotFoundIdentifierIdsVarargs(value: string*): Self = this.set("notFoundIdentifierIds", js.Array(value :_*))
+    @scala.inline
+    def setNotFoundIdentifierIds(value: listOfString): Self = this.set("notFoundIdentifierIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotFoundIdentifierIds: Self = this.set("notFoundIdentifierIds", js.undefined)
+  }
+  
 }
 

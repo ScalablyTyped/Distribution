@@ -21,11 +21,30 @@ trait DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption extends js.O
 
 object DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption {
   @scala.inline
-  def apply(actionOnTimeout: Input[String] = null, waitTimeInMinutes: Input[Double] = null): DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption = {
+  def apply(): DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption = {
     val __obj = js.Dynamic.literal()
-    if (actionOnTimeout != null) __obj.updateDynamic("actionOnTimeout")(actionOnTimeout.asInstanceOf[js.Any])
-    if (waitTimeInMinutes != null) __obj.updateDynamic("waitTimeInMinutes")(waitTimeInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption]
   }
+  @scala.inline
+  implicit class DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOps[Self <: DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionOnTimeout(value: Input[String]): Self = this.set("actionOnTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionOnTimeout: Self = this.set("actionOnTimeout", js.undefined)
+    @scala.inline
+    def setWaitTimeInMinutes(value: Input[Double]): Self = this.set("waitTimeInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitTimeInMinutes: Self = this.set("waitTimeInMinutes", js.undefined)
+  }
+  
 }
 

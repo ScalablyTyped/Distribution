@@ -14,10 +14,26 @@ trait GetDataLakeSettingsRequest extends js.Object {
 
 object GetDataLakeSettingsRequest {
   @scala.inline
-  def apply(CatalogId: CatalogIdString = null): GetDataLakeSettingsRequest = {
+  def apply(): GetDataLakeSettingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDataLakeSettingsRequest]
   }
+  @scala.inline
+  implicit class GetDataLakeSettingsRequestOps[Self <: GetDataLakeSettingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+  }
+  
 }
 

@@ -39,15 +39,26 @@ trait DOMMatrixReadOnly extends js.Object {
   def inverse(): DOMMatrix = js.native
   def multiply(other: DOMMatrix): DOMMatrix = js.native
   def rotate(angle: Double): DOMMatrix = js.native
+  def rotate(angle: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
   def rotate(angle: Double, originX: Double): DOMMatrix = js.native
   def rotate(angle: Double, originX: Double, originY: Double): DOMMatrix = js.native
   def rotateAxisAngle(x: Double, y: Double, z: Double, angle: Double): DOMMatrix = js.native
   def rotateFromVector(x: Double, y: Double): DOMMatrix = js.native
   def scale(scale: Double): DOMMatrix = js.native
+  def scale(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
   def scale(scale: Double, originX: Double): DOMMatrix = js.native
   def scale(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
   def scale3d(scale: Double): DOMMatrix = js.native
+  def scale3d(
+    scale: Double,
+    originX: js.UndefOr[scala.Nothing],
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double, originZ: Double): DOMMatrix = js.native
   def scale3d(scale: Double, originX: Double): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: Double, originY: js.UndefOr[scala.Nothing], originZ: Double): DOMMatrix = js.native
   def scale3d(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
   def scale3d(scale: Double, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
   def scaleNonUniform(

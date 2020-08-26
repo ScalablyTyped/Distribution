@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery-toastmessage-plugin"
-version := "0.2-dt-20200515Z-387c4b"
-scalaVersion := "2.13.2"
+version := "0.2-dt-20200515Z-f6f3d7"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

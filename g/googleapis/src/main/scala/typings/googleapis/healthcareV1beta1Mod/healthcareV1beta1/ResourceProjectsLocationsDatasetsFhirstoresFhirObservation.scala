@@ -32,6 +32,8 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhirObservation protected () ex
   @JSName("get$lastn")
   def get$lastn(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
   @JSName("get$lastn")
+  def get$lastn(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  @JSName("get$lastn")
   def get$lastn(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirObservationGetlastn): GaxiosPromise[SchemaHttpBody] = js.native
   @JSName("get$lastn")
   def get$lastn(

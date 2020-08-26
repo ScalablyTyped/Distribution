@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "inversify-restify-utils" : "3.4.0"
+      "inversify-restify-utils" : "3.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "inversify-restify-utils" : "3.4.0"
+      "inversify-restify-utils" : "3.4.1"
     }
   ],
   "compile-devDependencies" : [

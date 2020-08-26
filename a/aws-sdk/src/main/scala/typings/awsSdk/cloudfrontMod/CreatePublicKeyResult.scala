@@ -11,7 +11,7 @@ trait CreatePublicKeyResult extends js.Object {
     */
   var ETag: js.UndefOr[String] = js.native
   /**
-    * The fully qualified URI of the new public key resource just created. For example: https://cloudfront.amazonaws.com/2010-11-01/cloudfront-public-key/EDFDVBD632BHDS5.
+    * The fully qualified URI of the new public key resource just created.
     */
   var Location: js.UndefOr[String] = js.native
   /**
@@ -22,12 +22,34 @@ trait CreatePublicKeyResult extends js.Object {
 
 object CreatePublicKeyResult {
   @scala.inline
-  def apply(ETag: String = null, Location: String = null, PublicKey: PublicKey = null): CreatePublicKeyResult = {
+  def apply(): CreatePublicKeyResult = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
-    if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePublicKeyResult]
   }
+  @scala.inline
+  implicit class CreatePublicKeyResultOps[Self <: CreatePublicKeyResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("Location", js.undefined)
+    @scala.inline
+    def setPublicKey(value: PublicKey): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
+  }
+  
 }
 

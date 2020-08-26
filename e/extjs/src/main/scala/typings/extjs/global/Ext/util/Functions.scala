@@ -20,6 +20,7 @@ object Functions extends js.Object {
     * @returns Function aliasFn
     */
   def alias(): js.Any = js.native
+  def alias(`object`: js.UndefOr[scala.Nothing], methodName: String): js.Any = js.native
   def alias(`object`: js.Any): js.Any = js.native
   def alias(`object`: js.Any, methodName: String): js.Any = js.native
   /** [Method] Create a new function from the provided fn change this to the provided scope optionally overrides arguments for the
@@ -30,8 +31,24 @@ object Functions extends js.Object {
     * @returns Function The new function
     */
   def bind(): js.Any = js.native
+  def bind(
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def bind(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
+  def bind(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], args: Array, appendArgs: js.Any): js.Any = js.native
+  def bind(fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def bind(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
+  def bind(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: Array): js.Any = js.native
+  def bind(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: Array, appendArgs: js.Any): js.Any = js.native
   def bind(fn: js.Any): js.Any = js.native
+  def bind(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
+  def bind(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
+  def bind(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: Array, appendArgs: js.Any): js.Any = js.native
   def bind(fn: js.Any, scope: js.Any): js.Any = js.native
+  def bind(fn: js.Any, scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
   def bind(fn: js.Any, scope: js.Any, args: Array): js.Any = js.native
   def bind(fn: js.Any, scope: js.Any, args: Array, appendArgs: js.Any): js.Any = js.native
   def clone(method: js.Any): js.Any = js.native
@@ -43,8 +60,24 @@ object Functions extends js.Object {
     * @returns Function A function which invokes the passed function after buffering for the specified time.
     */
   def createBuffered(): js.Any = js.native
+  def createBuffered(
+    fn: js.UndefOr[scala.Nothing],
+    buffer: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: Array
+  ): js.Any = js.native
+  def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: js.UndefOr[scala.Nothing], scope: js.Any, args: Array): js.Any = js.native
+  def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: Double): js.Any = js.native
+  def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: Double, scope: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
+  def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: Double, scope: js.Any): js.Any = js.native
+  def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: Double, scope: js.Any, args: Array): js.Any = js.native
   def createBuffered(fn: js.Any): js.Any = js.native
+  def createBuffered(fn: js.Any, buffer: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
+  def createBuffered(fn: js.Any, buffer: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def createBuffered(fn: js.Any, buffer: js.UndefOr[scala.Nothing], scope: js.Any, args: Array): js.Any = js.native
   def createBuffered(fn: js.Any, buffer: Double): js.Any = js.native
+  def createBuffered(fn: js.Any, buffer: Double, scope: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
   def createBuffered(fn: js.Any, buffer: Double, scope: js.Any): js.Any = js.native
   def createBuffered(fn: js.Any, buffer: Double, scope: js.Any, args: Array): js.Any = js.native
   /** [Method] Creates a delegate callback which when called executes after a specific delay
@@ -56,9 +89,106 @@ object Functions extends js.Object {
     * @returns Function A function which, when called, executes the original function after the specified delay.
     */
   def createDelayed(): js.Any = js.native
+  def createDelayed(
+    fn: js.UndefOr[scala.Nothing],
+    delay: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(
+    fn: js.UndefOr[scala.Nothing],
+    delay: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: Array
+  ): js.Any = js.native
+  def createDelayed(
+    fn: js.UndefOr[scala.Nothing],
+    delay: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: Array,
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.UndefOr[scala.Nothing], delay: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def createDelayed(
+    fn: js.UndefOr[scala.Nothing],
+    delay: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.UndefOr[scala.Nothing], delay: js.UndefOr[scala.Nothing], scope: js.Any, args: Array): js.Any = js.native
+  def createDelayed(
+    fn: js.UndefOr[scala.Nothing],
+    delay: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    args: Array,
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
+  def createDelayed(
+    fn: js.UndefOr[scala.Nothing],
+    delay: Double,
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.UndefOr[scala.Nothing], delay: Double, scope: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
+  def createDelayed(
+    fn: js.UndefOr[scala.Nothing],
+    delay: Double,
+    scope: js.UndefOr[scala.Nothing],
+    args: Array,
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.UndefOr[scala.Nothing], delay: Double, scope: js.Any): js.Any = js.native
+  def createDelayed(
+    fn: js.UndefOr[scala.Nothing],
+    delay: Double,
+    scope: js.Any,
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.UndefOr[scala.Nothing], delay: Double, scope: js.Any, args: Array): js.Any = js.native
+  def createDelayed(fn: js.UndefOr[scala.Nothing], delay: Double, scope: js.Any, args: Array, appendArgs: js.Any): js.Any = js.native
   def createDelayed(fn: js.Any): js.Any = js.native
+  def createDelayed(
+    fn: js.Any,
+    delay: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.Any, delay: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
+  def createDelayed(
+    fn: js.Any,
+    delay: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: Array,
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.Any, delay: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def createDelayed(
+    fn: js.Any,
+    delay: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.Any, delay: js.UndefOr[scala.Nothing], scope: js.Any, args: Array): js.Any = js.native
+  def createDelayed(fn: js.Any, delay: js.UndefOr[scala.Nothing], scope: js.Any, args: Array, appendArgs: js.Any): js.Any = js.native
   def createDelayed(fn: js.Any, delay: Double): js.Any = js.native
+  def createDelayed(
+    fn: js.Any,
+    delay: Double,
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): js.Any = js.native
+  def createDelayed(fn: js.Any, delay: Double, scope: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
+  def createDelayed(fn: js.Any, delay: Double, scope: js.UndefOr[scala.Nothing], args: Array, appendArgs: js.Any): js.Any = js.native
   def createDelayed(fn: js.Any, delay: Double, scope: js.Any): js.Any = js.native
+  def createDelayed(fn: js.Any, delay: Double, scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
   def createDelayed(fn: js.Any, delay: Double, scope: js.Any, args: Array): js.Any = js.native
   def createDelayed(fn: js.Any, delay: Double, scope: js.Any, args: Array, appendArgs: js.Any): js.Any = js.native
   /** [Method] Creates an interceptor function
@@ -69,8 +199,39 @@ object Functions extends js.Object {
     * @returns Function The new function
     */
   def createInterceptor(): js.Any = js.native
+  def createInterceptor(
+    origFn: js.UndefOr[scala.Nothing],
+    newFn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    returnValue: js.Any
+  ): js.Any = js.native
+  def createInterceptor(origFn: js.UndefOr[scala.Nothing], newFn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def createInterceptor(
+    origFn: js.UndefOr[scala.Nothing],
+    newFn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    returnValue: js.Any
+  ): js.Any = js.native
+  def createInterceptor(origFn: js.UndefOr[scala.Nothing], newFn: js.Any): js.Any = js.native
+  def createInterceptor(
+    origFn: js.UndefOr[scala.Nothing],
+    newFn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    returnValue: js.Any
+  ): js.Any = js.native
+  def createInterceptor(origFn: js.UndefOr[scala.Nothing], newFn: js.Any, scope: js.Any): js.Any = js.native
+  def createInterceptor(origFn: js.UndefOr[scala.Nothing], newFn: js.Any, scope: js.Any, returnValue: js.Any): js.Any = js.native
   def createInterceptor(origFn: js.Any): js.Any = js.native
+  def createInterceptor(
+    origFn: js.Any,
+    newFn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    returnValue: js.Any
+  ): js.Any = js.native
+  def createInterceptor(origFn: js.Any, newFn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def createInterceptor(origFn: js.Any, newFn: js.UndefOr[scala.Nothing], scope: js.Any, returnValue: js.Any): js.Any = js.native
   def createInterceptor(origFn: js.Any, newFn: js.Any): js.Any = js.native
+  def createInterceptor(origFn: js.Any, newFn: js.Any, scope: js.UndefOr[scala.Nothing], returnValue: js.Any): js.Any = js.native
   def createInterceptor(origFn: js.Any, newFn: js.Any, scope: js.Any): js.Any = js.native
   def createInterceptor(origFn: js.Any, newFn: js.Any, scope: js.Any, returnValue: js.Any): js.Any = js.native
   /** [Method] Create a combined function call sequence of the original function  the passed function
@@ -80,7 +241,11 @@ object Functions extends js.Object {
     * @returns Function The new function
     */
   def createSequence(): js.Any = js.native
+  def createSequence(originalFn: js.UndefOr[scala.Nothing], newFn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def createSequence(originalFn: js.UndefOr[scala.Nothing], newFn: js.Any): js.Any = js.native
+  def createSequence(originalFn: js.UndefOr[scala.Nothing], newFn: js.Any, scope: js.Any): js.Any = js.native
   def createSequence(originalFn: js.Any): js.Any = js.native
+  def createSequence(originalFn: js.Any, newFn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
   def createSequence(originalFn: js.Any, newFn: js.Any): js.Any = js.native
   def createSequence(originalFn: js.Any, newFn: js.Any, scope: js.Any): js.Any = js.native
   /** [Method] Creates a throttled version of the passed function which when called repeatedly and rapidly invokes the passed func
@@ -90,7 +255,11 @@ object Functions extends js.Object {
     * @returns Function A function which invokes the passed function at the specified interval.
     */
   def createThrottled(): js.Any = js.native
+  def createThrottled(fn: js.UndefOr[scala.Nothing], interval: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def createThrottled(fn: js.UndefOr[scala.Nothing], interval: Double): js.Any = js.native
+  def createThrottled(fn: js.UndefOr[scala.Nothing], interval: Double, scope: js.Any): js.Any = js.native
   def createThrottled(fn: js.Any): js.Any = js.native
+  def createThrottled(fn: js.Any, interval: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
   def createThrottled(fn: js.Any, interval: Double): js.Any = js.native
   def createThrottled(fn: js.Any, interval: Double, scope: js.Any): js.Any = js.native
   /** [Method] Calls this function after the number of millseconds specified optionally in a specific scope
@@ -102,9 +271,106 @@ object Functions extends js.Object {
     * @returns Number The timeout id that can be used with clearTimeout
     */
   def defer(): Double = js.native
+  def defer(
+    fn: js.UndefOr[scala.Nothing],
+    millis: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(
+    fn: js.UndefOr[scala.Nothing],
+    millis: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: Array
+  ): Double = js.native
+  def defer(
+    fn: js.UndefOr[scala.Nothing],
+    millis: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: Array,
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.UndefOr[scala.Nothing], millis: js.UndefOr[scala.Nothing], scope: js.Any): Double = js.native
+  def defer(
+    fn: js.UndefOr[scala.Nothing],
+    millis: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.UndefOr[scala.Nothing], millis: js.UndefOr[scala.Nothing], scope: js.Any, args: Array): Double = js.native
+  def defer(
+    fn: js.UndefOr[scala.Nothing],
+    millis: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    args: Array,
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.UndefOr[scala.Nothing], millis: Double): Double = js.native
+  def defer(
+    fn: js.UndefOr[scala.Nothing],
+    millis: Double,
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.UndefOr[scala.Nothing], millis: Double, scope: js.UndefOr[scala.Nothing], args: Array): Double = js.native
+  def defer(
+    fn: js.UndefOr[scala.Nothing],
+    millis: Double,
+    scope: js.UndefOr[scala.Nothing],
+    args: Array,
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.UndefOr[scala.Nothing], millis: Double, scope: js.Any): Double = js.native
+  def defer(
+    fn: js.UndefOr[scala.Nothing],
+    millis: Double,
+    scope: js.Any,
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.UndefOr[scala.Nothing], millis: Double, scope: js.Any, args: Array): Double = js.native
+  def defer(fn: js.UndefOr[scala.Nothing], millis: Double, scope: js.Any, args: Array, appendArgs: js.Any): Double = js.native
   def defer(fn: js.Any): Double = js.native
+  def defer(
+    fn: js.Any,
+    millis: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.Any, millis: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], args: Array): Double = js.native
+  def defer(
+    fn: js.Any,
+    millis: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: Array,
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.Any, millis: js.UndefOr[scala.Nothing], scope: js.Any): Double = js.native
+  def defer(
+    fn: js.Any,
+    millis: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.Any, millis: js.UndefOr[scala.Nothing], scope: js.Any, args: Array): Double = js.native
+  def defer(fn: js.Any, millis: js.UndefOr[scala.Nothing], scope: js.Any, args: Array, appendArgs: js.Any): Double = js.native
   def defer(fn: js.Any, millis: Double): Double = js.native
+  def defer(
+    fn: js.Any,
+    millis: Double,
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    appendArgs: js.Any
+  ): Double = js.native
+  def defer(fn: js.Any, millis: Double, scope: js.UndefOr[scala.Nothing], args: Array): Double = js.native
+  def defer(fn: js.Any, millis: Double, scope: js.UndefOr[scala.Nothing], args: Array, appendArgs: js.Any): Double = js.native
   def defer(fn: js.Any, millis: Double, scope: js.Any): Double = js.native
+  def defer(fn: js.Any, millis: Double, scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): Double = js.native
   def defer(fn: js.Any, millis: Double, scope: js.Any, args: Array): Double = js.native
   def defer(fn: js.Any, millis: Double, scope: js.Any, args: Array, appendArgs: js.Any): Double = js.native
   /** [Method] A very commonly used method throughout the framework
@@ -121,8 +387,39 @@ object Functions extends js.Object {
     * @returns Function The new function just created.
     */
   def interceptAfter(): js.Any = js.native
+  def interceptAfter(
+    `object`: js.UndefOr[scala.Nothing],
+    methodName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def interceptAfter(`object`: js.UndefOr[scala.Nothing], methodName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def interceptAfter(
+    `object`: js.UndefOr[scala.Nothing],
+    methodName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any
+  ): js.Any = js.native
+  def interceptAfter(`object`: js.UndefOr[scala.Nothing], methodName: String): js.Any = js.native
+  def interceptAfter(
+    `object`: js.UndefOr[scala.Nothing],
+    methodName: String,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def interceptAfter(`object`: js.UndefOr[scala.Nothing], methodName: String, fn: js.Any): js.Any = js.native
+  def interceptAfter(`object`: js.UndefOr[scala.Nothing], methodName: String, fn: js.Any, scope: js.Any): js.Any = js.native
   def interceptAfter(`object`: js.Any): js.Any = js.native
+  def interceptAfter(
+    `object`: js.Any,
+    methodName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def interceptAfter(`object`: js.Any, methodName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def interceptAfter(`object`: js.Any, methodName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
   def interceptAfter(`object`: js.Any, methodName: String): js.Any = js.native
+  def interceptAfter(`object`: js.Any, methodName: String, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
   def interceptAfter(`object`: js.Any, methodName: String, fn: js.Any): js.Any = js.native
   def interceptAfter(`object`: js.Any, methodName: String, fn: js.Any, scope: js.Any): js.Any = js.native
   /** [Method] Adds behavior to an existing method that is executed before the original behavior of the function
@@ -133,8 +430,39 @@ object Functions extends js.Object {
     * @returns Function The new function just created.
     */
   def interceptBefore(): js.Any = js.native
+  def interceptBefore(
+    `object`: js.UndefOr[scala.Nothing],
+    methodName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def interceptBefore(`object`: js.UndefOr[scala.Nothing], methodName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def interceptBefore(
+    `object`: js.UndefOr[scala.Nothing],
+    methodName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any
+  ): js.Any = js.native
+  def interceptBefore(`object`: js.UndefOr[scala.Nothing], methodName: String): js.Any = js.native
+  def interceptBefore(
+    `object`: js.UndefOr[scala.Nothing],
+    methodName: String,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def interceptBefore(`object`: js.UndefOr[scala.Nothing], methodName: String, fn: js.Any): js.Any = js.native
+  def interceptBefore(`object`: js.UndefOr[scala.Nothing], methodName: String, fn: js.Any, scope: js.Any): js.Any = js.native
   def interceptBefore(`object`: js.Any): js.Any = js.native
+  def interceptBefore(
+    `object`: js.Any,
+    methodName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def interceptBefore(`object`: js.Any, methodName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def interceptBefore(`object`: js.Any, methodName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
   def interceptBefore(`object`: js.Any, methodName: String): js.Any = js.native
+  def interceptBefore(`object`: js.Any, methodName: String, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
   def interceptBefore(`object`: js.Any, methodName: String, fn: js.Any): js.Any = js.native
   def interceptBefore(`object`: js.Any, methodName: String, fn: js.Any, scope: js.Any): js.Any = js.native
   /** [Method] Create a new function from the provided fn the arguments of which are pre set to args
@@ -144,7 +472,11 @@ object Functions extends js.Object {
     * @returns Function The new callback function
     */
   def pass(): js.Any = js.native
+  def pass(fn: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def pass(fn: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
+  def pass(fn: js.UndefOr[scala.Nothing], args: Array, scope: js.Any): js.Any = js.native
   def pass(fn: js.Any): js.Any = js.native
+  def pass(fn: js.Any, args: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
   def pass(fn: js.Any, args: Array): js.Any = js.native
   def pass(fn: js.Any, args: Array, scope: js.Any): js.Any = js.native
 }

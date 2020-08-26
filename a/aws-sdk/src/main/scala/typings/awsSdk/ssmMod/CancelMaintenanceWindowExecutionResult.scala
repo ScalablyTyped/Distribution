@@ -14,10 +14,26 @@ trait CancelMaintenanceWindowExecutionResult extends js.Object {
 
 object CancelMaintenanceWindowExecutionResult {
   @scala.inline
-  def apply(WindowExecutionId: MaintenanceWindowExecutionId = null): CancelMaintenanceWindowExecutionResult = {
+  def apply(): CancelMaintenanceWindowExecutionResult = {
     val __obj = js.Dynamic.literal()
-    if (WindowExecutionId != null) __obj.updateDynamic("WindowExecutionId")(WindowExecutionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelMaintenanceWindowExecutionResult]
   }
+  @scala.inline
+  implicit class CancelMaintenanceWindowExecutionResultOps[Self <: CancelMaintenanceWindowExecutionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = this.set("WindowExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowExecutionId: Self = this.set("WindowExecutionId", js.undefined)
+  }
+  
 }
 

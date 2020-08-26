@@ -35,13 +35,17 @@ trait Arc_[This, Datum] extends js.Object {
     */
   def centroid(d: Datum, args: js.Any*): js.Tuple2[Double, Double] = js.native
   /**
+    * Returns the current rendering context, which defaults to null.
+    */
+  def context(): CanvasRenderingContext2D | Null = js.native
+  /**
     * Sets the rendering context to null and returns this arc generator.
     *
     * A path data string representing the generated arc will be returned when the generator is invoked with data.
     *
     * @param context null, to remove rendering context.
     */
-  def context(): this.type = js.native
+  def context(context: Null): this.type = js.native
   /**
     * Sets the rendering context and returns this arc generator.
     *
@@ -50,11 +54,6 @@ trait Arc_[This, Datum] extends js.Object {
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
-  /**
-    * Returns the current rendering context, which defaults to null.
-    */
-  @JSName("context")
-  def context_Union(): CanvasRenderingContext2D | Null = js.native
   /**
     * Returns the current corner radius accessor, which defaults to a function returning a constant value of zero.
     */
@@ -206,13 +205,9 @@ trait Arc_[This, Datum] extends js.Object {
   @JSName("padAngle")
   def padAngle_ThisFunction2(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, js.UndefOr[Double]] = js.native
   /**
-    * Sets the pad radius to null indicating that the pad radius should be automatically computed as sqrt(innerRadius * innerRadius + outerRadius * outerRadius), and returns this arc generator.
-    *
-    * The pad radius determines the fixed linear distance separating adjacent arcs, defined as padRadius * padAngle.
-    *
-    * @param radius null to set automatic pad radius calculation.
+    * Returns the current pad radius accessor, which defaults to null, indicating that the pad radius should be automatically computed as sqrt(innerRadius * innerRadius + outerRadius * outerRadius).
     */
-  def padRadius(): this.type = js.native
+  def padRadius(): (js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]) | Null = js.native
   /*
     * Sets the pad radius to the specified function, and returns this arc generator.
     *
@@ -229,10 +224,13 @@ trait Arc_[This, Datum] extends js.Object {
     */
   def padRadius(radius: Double): this.type = js.native
   /**
-    * Returns the current pad radius accessor, which defaults to null, indicating that the pad radius should be automatically computed as sqrt(innerRadius * innerRadius + outerRadius * outerRadius).
+    * Sets the pad radius to null indicating that the pad radius should be automatically computed as sqrt(innerRadius * innerRadius + outerRadius * outerRadius), and returns this arc generator.
+    *
+    * The pad radius determines the fixed linear distance separating adjacent arcs, defined as padRadius * padAngle.
+    *
+    * @param radius null to set automatic pad radius calculation.
     */
-  @JSName("padRadius")
-  def padRadius_Union(): (js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]) | Null = js.native
+  def padRadius(radius: Null): this.type = js.native
   /**
     * Returns the current start angle accessor, which defaults to a function returning the startAngle property
     * of the first argument passed into it.

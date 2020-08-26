@@ -21,6 +21,7 @@ object mod extends js.Object {
     // sed -r 's/^(\s+\w+)<T>/\1/' |
     // sed -r 's/^(\s+\w+)<T, /\1</'
     def asyncEach(fn: Consumer[_]): js.Any = js.native
+    def asyncEach(fn: Consumer[_], maxBlock: js.UndefOr[scala.Nothing], timeout: Double): js.Any = js.native
     def asyncEach(fn: Consumer[_], maxBlock: Double): js.Any = js.native
     def asyncEach(fn: Consumer[_], maxBlock: Double, timeout: Double): js.Any = js.native
     def chunk(n: Double): WuIterable[js.Array[T]] = js.native
@@ -57,6 +58,7 @@ object mod extends js.Object {
     def reductions_U[U](fn: js.Function2[/* a */ U, /* b */ T, U], initial: U): WuIterable[U] = js.native
     def reject(fn: Filter_[T]): WuIterable[T] = js.native
     def slice(): WuIterable[T] = js.native
+    def slice(start: js.UndefOr[scala.Nothing], stop: Double): WuIterable[T] = js.native
     def slice(start: Double): WuIterable[T] = js.native
     def slice(start: Double, stop: Double): WuIterable[T] = js.native
     def some(fn: Filter_[T]): Boolean = js.native
@@ -79,6 +81,7 @@ object mod extends js.Object {
   def apply[T](iterable: Iterable[T]): WuIterable[T] = js.native
   // also copied to WuIterable
   def asyncEach(fn: Consumer[_]): Unit = js.native
+  def asyncEach(fn: Consumer[_], maxBlock: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
   def asyncEach(fn: Consumer[_], maxBlock: Double): Unit = js.native
   def asyncEach(fn: Consumer[_], maxBlock: Double, timeout: Double): Unit = js.native
   // only static
@@ -86,6 +89,7 @@ object mod extends js.Object {
   def chunk[T](n: Double, iter: Iterable[T]): WuIterable[js.Array[T]] = js.native
   def concatMap[T, U](fn: js.Function1[/* t */ T, Iterable[U]], iter: Iterable[T]): WuIterable[U] = js.native
   def count(): WuIterable[Double] = js.native
+  def count(start: js.UndefOr[scala.Nothing], step: Double): WuIterable[Double] = js.native
   def count(start: Double): WuIterable[Double] = js.native
   def count(start: Double, step: Double): WuIterable[Double] = js.native
   def curryable(fun: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native

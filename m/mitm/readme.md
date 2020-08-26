@@ -12,7 +12,7 @@ Intercept and mock outgoing network TCP connections and HTTP requests for testin
 | Keywords           | http, https, intercept, interception, mock, network, socket, tcp, test, webmock |
 | # releases         | 5 |
 | # dependents       | 20 |
-| # downloads        | 710659 |
+| # downloads        | 699082 |
 | # stars            | 6 |
 
 ## Links

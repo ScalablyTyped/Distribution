@@ -26,17 +26,37 @@ trait IdentityPoolRoleAttachmentRoleMapping extends js.Object {
 
 object IdentityPoolRoleAttachmentRoleMapping {
   @scala.inline
-  def apply(
-    identityProvider: String,
-    `type`: String,
-    ambiguousRoleResolution: String = null,
-    mappingRules: js.Array[IdentityPoolRoleAttachmentRoleMappingMappingRule] = null
-  ): IdentityPoolRoleAttachmentRoleMapping = {
+  def apply(identityProvider: String, `type`: String): IdentityPoolRoleAttachmentRoleMapping = {
     val __obj = js.Dynamic.literal(identityProvider = identityProvider.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ambiguousRoleResolution != null) __obj.updateDynamic("ambiguousRoleResolution")(ambiguousRoleResolution.asInstanceOf[js.Any])
-    if (mappingRules != null) __obj.updateDynamic("mappingRules")(mappingRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPoolRoleAttachmentRoleMapping]
   }
+  @scala.inline
+  implicit class IdentityPoolRoleAttachmentRoleMappingOps[Self <: IdentityPoolRoleAttachmentRoleMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentityProvider(value: String): Self = this.set("identityProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmbiguousRoleResolution(value: String): Self = this.set("ambiguousRoleResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmbiguousRoleResolution: Self = this.set("ambiguousRoleResolution", js.undefined)
+    @scala.inline
+    def setMappingRulesVarargs(value: IdentityPoolRoleAttachmentRoleMappingMappingRule*): Self = this.set("mappingRules", js.Array(value :_*))
+    @scala.inline
+    def setMappingRules(value: js.Array[IdentityPoolRoleAttachmentRoleMappingMappingRule]): Self = this.set("mappingRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMappingRules: Self = this.set("mappingRules", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ Match balanced character pairs, like "{" and "}"
 | Full name          | balanced-match |
 | Keywords           | match, regexp, test, balanced, parse |
 | # releases         | 0 |
-| # dependents       | 166 |
-| # downloads        | 673551354 |
+| # dependents       | 167 |
+| # downloads        | 679874275 |
 | # stars            | 5 |
 
 ## Links

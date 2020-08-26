@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/fake-timers |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 10 |
 | # dependents       | 9 |
-| # downloads        | 114448775 |
+| # downloads        | 118412460 |
 | # stars            | 0 |
 
 ## Links

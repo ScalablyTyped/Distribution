@@ -83,6 +83,11 @@ trait Wizard extends js.Object {
     * previous page and the new page
     */
   def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, _]): Disposable = js.native
+  def onPageChanged(
+    listener: js.Function1[/* e */ WizardPageChangeInfo, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onPageChanged(listener: js.Function1[/* e */ WizardPageChangeInfo, _], thisArgs: js.Any): Disposable = js.native
   def onPageChanged(
     listener: js.Function1[/* e */ WizardPageChangeInfo, _],

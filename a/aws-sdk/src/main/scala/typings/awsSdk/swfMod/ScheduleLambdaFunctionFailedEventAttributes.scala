@@ -35,5 +35,26 @@ object ScheduleLambdaFunctionFailedEventAttributes {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleLambdaFunctionFailedEventAttributes]
   }
+  @scala.inline
+  implicit class ScheduleLambdaFunctionFailedEventAttributesOps[Self <: ScheduleLambdaFunctionFailedEventAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCause(value: ScheduleLambdaFunctionFailedCause): Self = this.set("cause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDecisionTaskCompletedEventId(value: EventId): Self = this.set("decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: FunctionId): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: FunctionName): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

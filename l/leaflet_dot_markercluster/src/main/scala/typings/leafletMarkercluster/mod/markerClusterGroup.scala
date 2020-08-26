@@ -10,7 +10,6 @@ object markerClusterGroup extends js.Object {
   /*
     * Create a marker cluster group, optionally given marker cluster group options.
     */
-  def apply(): MarkerClusterGroup_ = js.native
-  def apply(options: MarkerClusterGroupOptions): MarkerClusterGroup_ = js.native
+  def apply(options: js.UndefOr[MarkerClusterGroupOptions]): MarkerClusterGroup_ = js.native
 }
 

@@ -19,7 +19,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined typescript.typescript.ExportDeclaration & {  moduleSpecifier  :{}} */
+/* Inlined typescript.typescript.ExportDeclaration & {  moduleSpecifier :{}} */
 @js.native
 trait ExportDeclarationmoduleSp extends _ImportLike {
   var _declarationBrand: js.Any = js.native
@@ -33,7 +33,7 @@ trait ExportDeclarationmoduleSp extends _ImportLike {
   var kind: ExportDeclaration = js.native
   var modifiers: js.UndefOr[ModifiersArray] = js.native
   /** If this is not a StringLiteral it will be a grammar error. */
-  var moduleSpecifier: js.UndefOr[Expression with js.Object] = js.native
+  var moduleSpecifier: js.UndefOr[Expression] with js.Object = js.native
   var name: js.UndefOr[Identifier | StringLiteral | NumericLiteral] = js.native
   var parent: SourceFile | ModuleBlock = js.native
   var pos: Double = js.native
@@ -61,6 +61,7 @@ trait ExportDeclarationmoduleSp extends _ImportLike {
   def getLeadingTriviaWidth(sourceFile: SourceFile): Double = js.native
   def getSourceFile(): SourceFile = js.native
   def getStart(): Double = js.native
+  def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
   def getStart(sourceFile: SourceFile): Double = js.native
   def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
   def getText(): String = js.native

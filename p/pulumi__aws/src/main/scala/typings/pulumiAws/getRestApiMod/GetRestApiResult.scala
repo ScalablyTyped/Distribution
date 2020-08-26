@@ -29,11 +29,11 @@ trait GetRestApiResult extends js.Object {
     */
   val endpointConfigurations: js.Array[GetRestApiEndpointConfiguration] = js.native
   /**
-    * The execution ARN part to be used in [`lambdaPermission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `sourceArn` when allowing API Gateway to invoke a Lambda function, e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
+    * The execution ARN part to be used in `lambdaPermission`'s `sourceArn` when allowing API Gateway to invoke a Lambda function, e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
     */
   val executionArn: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -50,9 +50,9 @@ trait GetRestApiResult extends js.Object {
     */
   val rootResourceId: String = js.native
   /**
-    * Key-value mapping of resource tags.
+    * Key-value map of resource tags.
     */
-  val tags: StringDictionary[js.Any] = js.native
+  val tags: StringDictionary[String] = js.native
 }
 
 object GetRestApiResult {
@@ -69,10 +69,51 @@ object GetRestApiResult {
     name: String,
     policy: String,
     rootResourceId: String,
-    tags: StringDictionary[js.Any]
+    tags: StringDictionary[String]
   ): GetRestApiResult = {
     val __obj = js.Dynamic.literal(apiKeySource = apiKeySource.asInstanceOf[js.Any], arn = arn.asInstanceOf[js.Any], binaryMediaTypes = binaryMediaTypes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], endpointConfigurations = endpointConfigurations.asInstanceOf[js.Any], executionArn = executionArn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], minimumCompressionSize = minimumCompressionSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any], rootResourceId = rootResourceId.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRestApiResult]
   }
+  @scala.inline
+  implicit class GetRestApiResultOps[Self <: GetRestApiResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiKeySource(value: String): Self = this.set("apiKeySource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBinaryMediaTypesVarargs(value: String*): Self = this.set("binaryMediaTypes", js.Array(value :_*))
+    @scala.inline
+    def setBinaryMediaTypes(value: js.Array[String]): Self = this.set("binaryMediaTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointConfigurationsVarargs(value: GetRestApiEndpointConfiguration*): Self = this.set("endpointConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setEndpointConfigurations(value: js.Array[GetRestApiEndpointConfiguration]): Self = this.set("endpointConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExecutionArn(value: String): Self = this.set("executionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinimumCompressionSize(value: Double): Self = this.set("minimumCompressionSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicy(value: String): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRootResourceId(value: String): Self = this.set("rootResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+  }
+  
 }
 

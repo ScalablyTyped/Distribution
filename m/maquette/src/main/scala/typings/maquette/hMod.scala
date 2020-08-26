@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 object hMod extends js.Object {
   def h(selector: String): VNode = js.native
   def h(selector: String, children: js.Array[VNodeChild]): VNode = js.native
+  def h(selector: String, properties: js.UndefOr[scala.Nothing], children: js.Array[VNodeChild]): VNode = js.native
   def h(selector: String, properties: VNodeProperties): VNode = js.native
   def h(selector: String, properties: VNodeProperties, children: js.Array[VNodeChild]): VNode = js.native
 }

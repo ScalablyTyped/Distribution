@@ -73,34 +73,70 @@ trait SchemaGoogleCloudMlV1Job extends js.Object {
 
 object SchemaGoogleCloudMlV1Job {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    endTime: String = null,
-    errorMessage: String = null,
-    etag: String = null,
-    jobId: String = null,
-    labels: StringDictionary[String] = null,
-    predictionInput: SchemaGoogleCloudMlV1PredictionInput = null,
-    predictionOutput: SchemaGoogleCloudMlV1PredictionOutput = null,
-    startTime: String = null,
-    state: String = null,
-    trainingInput: SchemaGoogleCloudMlV1TrainingInput = null,
-    trainingOutput: SchemaGoogleCloudMlV1TrainingOutput = null
-  ): SchemaGoogleCloudMlV1Job = {
+  def apply(): SchemaGoogleCloudMlV1Job = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (predictionInput != null) __obj.updateDynamic("predictionInput")(predictionInput.asInstanceOf[js.Any])
-    if (predictionOutput != null) __obj.updateDynamic("predictionOutput")(predictionOutput.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (trainingInput != null) __obj.updateDynamic("trainingInput")(trainingInput.asInstanceOf[js.Any])
-    if (trainingOutput != null) __obj.updateDynamic("trainingOutput")(trainingOutput.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1Job]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1JobOps[Self <: SchemaGoogleCloudMlV1Job] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setPredictionInput(value: SchemaGoogleCloudMlV1PredictionInput): Self = this.set("predictionInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictionInput: Self = this.set("predictionInput", js.undefined)
+    @scala.inline
+    def setPredictionOutput(value: SchemaGoogleCloudMlV1PredictionOutput): Self = this.set("predictionOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictionOutput: Self = this.set("predictionOutput", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTrainingInput(value: SchemaGoogleCloudMlV1TrainingInput): Self = this.set("trainingInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingInput: Self = this.set("trainingInput", js.undefined)
+    @scala.inline
+    def setTrainingOutput(value: SchemaGoogleCloudMlV1TrainingOutput): Self = this.set("trainingOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingOutput: Self = this.set("trainingOutput", js.undefined)
+  }
+  
 }
 

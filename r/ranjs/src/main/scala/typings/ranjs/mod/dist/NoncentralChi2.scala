@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class NoncentralChi2 ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.NoncentralChi] {
   def this(k: Double) = this()
+  def this(k: js.UndefOr[scala.Nothing], lambda: Double) = this()
   def this(k: Double, lambda: Double) = this()
 }
 

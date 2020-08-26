@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation._
 class Layers ()
   extends typings.leaflet.mod.Control_ {
   def this(baseLayers: LayersObject) = this()
+  def this(baseLayers: js.UndefOr[scala.Nothing], overlays: LayersObject) = this()
   def this(baseLayers: LayersObject, overlays: LayersObject) = this()
+  def this(baseLayers: js.UndefOr[scala.Nothing], overlays: js.UndefOr[scala.Nothing], options: LayersOptions) = this()
+  def this(baseLayers: js.UndefOr[scala.Nothing], overlays: LayersObject, options: LayersOptions) = this()
+  def this(baseLayers: LayersObject, overlays: js.UndefOr[scala.Nothing], options: LayersOptions) = this()
   def this(baseLayers: LayersObject, overlays: LayersObject, options: LayersOptions) = this()
   @JSName("options")
   var options_Layers: LayersOptions = js.native

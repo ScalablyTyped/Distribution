@@ -14,10 +14,28 @@ trait EC2TagSet extends js.Object {
 
 object EC2TagSet {
   @scala.inline
-  def apply(ec2TagSetList: EC2TagSetList = null): EC2TagSet = {
+  def apply(): EC2TagSet = {
     val __obj = js.Dynamic.literal()
-    if (ec2TagSetList != null) __obj.updateDynamic("ec2TagSetList")(ec2TagSetList.asInstanceOf[js.Any])
     __obj.asInstanceOf[EC2TagSet]
   }
+  @scala.inline
+  implicit class EC2TagSetOps[Self <: EC2TagSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEc2TagSetListVarargs(value: EC2TagFilterList*): Self = this.set("ec2TagSetList", js.Array(value :_*))
+    @scala.inline
+    def setEc2TagSetList(value: EC2TagSetList): Self = this.set("ec2TagSetList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2TagSetList: Self = this.set("ec2TagSetList", js.undefined)
+  }
+  
 }
 

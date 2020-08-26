@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/enhancers/position", JSImport.Namespace)
+@JSImport("ui-box/dist/src/enhancers/position", JSImport.Namespace)
 @js.native
 object positionMod extends js.Object {
   val propAliases: PropAliases = js.native

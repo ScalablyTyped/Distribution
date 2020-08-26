@@ -63,24 +63,61 @@ object AuthenticateOidcActionConfig {
     ClientId: AuthenticateOidcActionClientId,
     Issuer: AuthenticateOidcActionIssuer,
     TokenEndpoint: AuthenticateOidcActionTokenEndpoint,
-    UserInfoEndpoint: AuthenticateOidcActionUserInfoEndpoint,
-    AuthenticationRequestExtraParams: AuthenticateOidcActionAuthenticationRequestExtraParams = null,
-    ClientSecret: AuthenticateOidcActionClientSecret = null,
-    OnUnauthenticatedRequest: AuthenticateOidcActionConditionalBehaviorEnum = null,
-    Scope: AuthenticateOidcActionScope = null,
-    SessionCookieName: AuthenticateOidcActionSessionCookieName = null,
-    SessionTimeout: js.UndefOr[AuthenticateOidcActionSessionTimeout] = js.undefined,
-    UseExistingClientSecret: js.UndefOr[AuthenticateOidcActionUseExistingClientSecret] = js.undefined
+    UserInfoEndpoint: AuthenticateOidcActionUserInfoEndpoint
   ): AuthenticateOidcActionConfig = {
     val __obj = js.Dynamic.literal(AuthorizationEndpoint = AuthorizationEndpoint.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any], Issuer = Issuer.asInstanceOf[js.Any], TokenEndpoint = TokenEndpoint.asInstanceOf[js.Any], UserInfoEndpoint = UserInfoEndpoint.asInstanceOf[js.Any])
-    if (AuthenticationRequestExtraParams != null) __obj.updateDynamic("AuthenticationRequestExtraParams")(AuthenticationRequestExtraParams.asInstanceOf[js.Any])
-    if (ClientSecret != null) __obj.updateDynamic("ClientSecret")(ClientSecret.asInstanceOf[js.Any])
-    if (OnUnauthenticatedRequest != null) __obj.updateDynamic("OnUnauthenticatedRequest")(OnUnauthenticatedRequest.asInstanceOf[js.Any])
-    if (Scope != null) __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])
-    if (SessionCookieName != null) __obj.updateDynamic("SessionCookieName")(SessionCookieName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SessionTimeout)) __obj.updateDynamic("SessionTimeout")(SessionTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseExistingClientSecret)) __obj.updateDynamic("UseExistingClientSecret")(UseExistingClientSecret.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateOidcActionConfig]
   }
+  @scala.inline
+  implicit class AuthenticateOidcActionConfigOps[Self <: AuthenticateOidcActionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizationEndpoint(value: AuthenticateOidcActionAuthorizationEndpoint): Self = this.set("AuthorizationEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientId(value: AuthenticateOidcActionClientId): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIssuer(value: AuthenticateOidcActionIssuer): Self = this.set("Issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTokenEndpoint(value: AuthenticateOidcActionTokenEndpoint): Self = this.set("TokenEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserInfoEndpoint(value: AuthenticateOidcActionUserInfoEndpoint): Self = this.set("UserInfoEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationRequestExtraParams(value: AuthenticateOidcActionAuthenticationRequestExtraParams): Self = this.set("AuthenticationRequestExtraParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationRequestExtraParams: Self = this.set("AuthenticationRequestExtraParams", js.undefined)
+    @scala.inline
+    def setClientSecret(value: AuthenticateOidcActionClientSecret): Self = this.set("ClientSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientSecret: Self = this.set("ClientSecret", js.undefined)
+    @scala.inline
+    def setOnUnauthenticatedRequest(value: AuthenticateOidcActionConditionalBehaviorEnum): Self = this.set("OnUnauthenticatedRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnUnauthenticatedRequest: Self = this.set("OnUnauthenticatedRequest", js.undefined)
+    @scala.inline
+    def setScope(value: AuthenticateOidcActionScope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("Scope", js.undefined)
+    @scala.inline
+    def setSessionCookieName(value: AuthenticateOidcActionSessionCookieName): Self = this.set("SessionCookieName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionCookieName: Self = this.set("SessionCookieName", js.undefined)
+    @scala.inline
+    def setSessionTimeout(value: AuthenticateOidcActionSessionTimeout): Self = this.set("SessionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionTimeout: Self = this.set("SessionTimeout", js.undefined)
+    @scala.inline
+    def setUseExistingClientSecret(value: AuthenticateOidcActionUseExistingClientSecret): Self = this.set("UseExistingClientSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseExistingClientSecret: Self = this.set("UseExistingClientSecret", js.undefined)
+  }
+  
 }
 

@@ -42,6 +42,7 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
   def create(
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse]
   ): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse] = js.native
   def create(params: ParamsResourceProjectsBrokersV2ServiceInstancesCreate): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse] = js.native
   def create(
     params: ParamsResourceProjectsBrokersV2ServiceInstancesCreate,
@@ -80,6 +81,7 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
   def delete(
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1DeleteServiceInstanceResponse]
   ): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1DeleteServiceInstanceResponse] = js.native
   def delete(params: ParamsResourceProjectsBrokersV2ServiceInstancesDelete): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1DeleteServiceInstanceResponse] = js.native
   def delete(
     params: ParamsResourceProjectsBrokersV2ServiceInstancesDelete,
@@ -112,6 +114,7 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance] = js.native
   def get(params: ParamsResourceProjectsBrokersV2ServiceInstancesGet): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1ServiceInstance] = js.native
   def get(
     params: ParamsResourceProjectsBrokersV2ServiceInstancesGet,
@@ -148,6 +151,7 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
     */
   def getLast_operation(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1Operation] = js.native
   def getLast_operation(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1Operation]): Unit = js.native
+  def getLast_operation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1Operation] = js.native
   def getLast_operation(params: ParamsResourceProjectsBrokersV2ServiceInstancesGetlastOperation): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1Operation] = js.native
   def getLast_operation(
     params: ParamsResourceProjectsBrokersV2ServiceInstancesGetlastOperation,
@@ -184,6 +188,7 @@ class ResourceProjectsBrokersV2ServiceInstances protected () extends js.Object {
   def patch(
     callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1UpdateServiceInstanceResponse]
   ): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1UpdateServiceInstanceResponse] = js.native
   def patch(params: ParamsResourceProjectsBrokersV2ServiceInstancesPatch): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1UpdateServiceInstanceResponse] = js.native
   def patch(
     params: ParamsResourceProjectsBrokersV2ServiceInstancesPatch,

@@ -9,5 +9,5 @@ package object mod {
   /**
     * Speed up development by automatically installing & saving dependencies with Webpack.
     */
-  type NpmInstallPlugin = typings.webpack.mod.Plugin
+  type NpmInstallPlugin = typings.std.Plugin
 }

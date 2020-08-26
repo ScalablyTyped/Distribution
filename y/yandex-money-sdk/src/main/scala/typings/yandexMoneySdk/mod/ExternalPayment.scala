@@ -9,9 +9,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExternalPayment extends js.Object {
-  def process(options: ProcessOptions, callback: ResponseCallback[ProcessResult]): Unit
-  def request(options: RequestOptions, callback: ResponseCallback[RequestResult]): Unit
+  def process(options: ProcessOptions, callback: ResponseCallback[ProcessResult]): Unit = js.native
+  def request(options: RequestOptions, callback: ResponseCallback[RequestResult]): Unit = js.native
 }
 
 @JSImport("yandex-money-sdk", "ExternalPayment")

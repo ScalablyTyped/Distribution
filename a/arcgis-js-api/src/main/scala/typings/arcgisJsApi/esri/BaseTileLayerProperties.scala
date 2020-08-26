@@ -1,12 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`hide-children`
-import typings.arcgisJsApi.arcgisJsApiStrings.hide
-import typings.arcgisJsApi.arcgisJsApiStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseTileLayerProperties
   extends LayerProperties
      with ScaleRangeLayerProperties
@@ -18,43 +16,41 @@ trait BaseTileLayerProperties
     *
     * @default {@link module:esri/geometry/SpatialReference#WebMercator SpatialReference.WebMercator}
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
   /**
     * The tiling scheme information for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#tileInfo)
     */
-  var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
+  var tileInfo: js.UndefOr[TileInfoProperties] = js.native
 }
 
 object BaseTileLayerProperties {
   @scala.inline
-  def apply(
-    fullExtent: ExtentProperties = null,
-    id: String = null,
-    listMode: show | hide | `hide-children` = null,
-    maxScale: js.UndefOr[Double] = js.undefined,
-    minScale: js.UndefOr[Double] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    refreshInterval: js.UndefOr[Double] = js.undefined,
-    spatialReference: SpatialReferenceProperties = null,
-    tileInfo: TileInfoProperties = null,
-    title: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): BaseTileLayerProperties = {
+  def apply(): BaseTileLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxScale)) __obj.updateDynamic("maxScale")(maxScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minScale)) __obj.updateDynamic("minScale")(minScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshInterval)) __obj.updateDynamic("refreshInterval")(refreshInterval.get.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
-    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseTileLayerProperties]
   }
+  @scala.inline
+  implicit class BaseTileLayerPropertiesOps[Self <: BaseTileLayerProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    @scala.inline
+    def setTileInfo(value: TileInfoProperties): Self = this.set("tileInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileInfo: Self = this.set("tileInfo", js.undefined)
+  }
+  
 }
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-base", "Operation.fromXDRObject")
 @js.native
 object fromXDRObject extends js.Object {
-  def apply[T /* <: typings.stellarBase.mod.Operation */](xdrOperation: typings.stellarBase.mod.xdr.Operation[T]): T = js.native
+  def apply[T /* <: typings.stellarBase.mod.Operation */](xdrOperation: typings.stellarBase.xdrMod.default.Operation[T]): T = js.native
 }
 

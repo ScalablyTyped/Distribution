@@ -26,17 +26,36 @@ trait ParallelismConfiguration extends js.Object {
 
 object ParallelismConfiguration {
   @scala.inline
-  def apply(
-    ConfigurationType: ConfigurationType,
-    AutoScalingEnabled: js.UndefOr[BooleanObject] = js.undefined,
-    Parallelism: js.UndefOr[Parallelism] = js.undefined,
-    ParallelismPerKPU: js.UndefOr[ParallelismPerKPU] = js.undefined
-  ): ParallelismConfiguration = {
+  def apply(ConfigurationType: ConfigurationType): ParallelismConfiguration = {
     val __obj = js.Dynamic.literal(ConfigurationType = ConfigurationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoScalingEnabled)) __obj.updateDynamic("AutoScalingEnabled")(AutoScalingEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Parallelism)) __obj.updateDynamic("Parallelism")(Parallelism.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParallelismPerKPU)) __obj.updateDynamic("ParallelismPerKPU")(ParallelismPerKPU.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelismConfiguration]
   }
+  @scala.inline
+  implicit class ParallelismConfigurationOps[Self <: ParallelismConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationType(value: ConfigurationType): Self = this.set("ConfigurationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoScalingEnabled(value: BooleanObject): Self = this.set("AutoScalingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingEnabled: Self = this.set("AutoScalingEnabled", js.undefined)
+    @scala.inline
+    def setParallelism(value: Parallelism): Self = this.set("Parallelism", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelism: Self = this.set("Parallelism", js.undefined)
+    @scala.inline
+    def setParallelismPerKPU(value: ParallelismPerKPU): Self = this.set("ParallelismPerKPU", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelismPerKPU: Self = this.set("ParallelismPerKPU", js.undefined)
+  }
+  
 }
 

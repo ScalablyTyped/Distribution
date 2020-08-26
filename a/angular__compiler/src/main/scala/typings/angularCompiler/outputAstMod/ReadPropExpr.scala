@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ReadPropExpr protected () extends Expression {
   def this(receiver: Expression, name: String) = this()
   def this(receiver: Expression, name: String, `type`: Type) = this()
+  def this(receiver: Expression, name: String, `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(receiver: Expression, name: String, `type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(receiver: Expression, name: String, `type`: Type, sourceSpan: ParseSourceSpan) = this()
   var name: String = js.native

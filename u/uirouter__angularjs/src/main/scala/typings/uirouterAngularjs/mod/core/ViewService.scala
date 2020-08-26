@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ViewService protected ()
   extends typings.uirouterCore.mod.ViewService {
-  /** @hidden */
-  def this(/** @hidden */ router: typings.uirouterCore.routerMod.UIRouter) = this()
+  /** @internal */
+  def this(/** @internal */ router: typings.uirouterCore.routerMod.UIRouter) = this()
 }
 
 /* static members */
@@ -76,7 +76,7 @@ object ViewService extends js.Object {
     * - And the remaining segments [ "$default", "bar" ].join("."_ of the ViewConfig's target name match
     *   the tail of the ui-view's fqn "default.bar"
     *
-    * @internalapi
+    * @internal
     */
   def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = js.native
   /**

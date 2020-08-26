@@ -27,6 +27,7 @@ class ResourceSites protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSiteSummaryResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaSiteSummaryResponse]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteSummaryResponse] = js.native
   def get(params: ParamsResourceSitesGet): GaxiosPromise[SchemaSiteSummaryResponse] = js.native
   def get(params: ParamsResourceSitesGet, callback: BodyResponseCallback[SchemaSiteSummaryResponse]): Unit = js.native
   def get(

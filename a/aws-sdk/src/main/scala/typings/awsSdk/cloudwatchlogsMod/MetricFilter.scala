@@ -27,20 +27,44 @@ trait MetricFilter extends js.Object {
 
 object MetricFilter {
   @scala.inline
-  def apply(
-    creationTime: js.UndefOr[Timestamp] = js.undefined,
-    filterName: FilterName = null,
-    filterPattern: FilterPattern = null,
-    logGroupName: LogGroupName = null,
-    metricTransformations: MetricTransformations = null
-  ): MetricFilter = {
+  def apply(): MetricFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime.get.asInstanceOf[js.Any])
-    if (filterName != null) __obj.updateDynamic("filterName")(filterName.asInstanceOf[js.Any])
-    if (filterPattern != null) __obj.updateDynamic("filterPattern")(filterPattern.asInstanceOf[js.Any])
-    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
-    if (metricTransformations != null) __obj.updateDynamic("metricTransformations")(metricTransformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricFilter]
   }
+  @scala.inline
+  implicit class MetricFilterOps[Self <: MetricFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setFilterName(value: FilterName): Self = this.set("filterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterName: Self = this.set("filterName", js.undefined)
+    @scala.inline
+    def setFilterPattern(value: FilterPattern): Self = this.set("filterPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterPattern: Self = this.set("filterPattern", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("logGroupName", js.undefined)
+    @scala.inline
+    def setMetricTransformationsVarargs(value: MetricTransformation*): Self = this.set("metricTransformations", js.Array(value :_*))
+    @scala.inline
+    def setMetricTransformations(value: MetricTransformations): Self = this.set("metricTransformations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricTransformations: Self = this.set("metricTransformations", js.undefined)
+  }
+  
 }
 

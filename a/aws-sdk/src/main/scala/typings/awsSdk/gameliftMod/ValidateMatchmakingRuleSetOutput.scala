@@ -14,10 +14,26 @@ trait ValidateMatchmakingRuleSetOutput extends js.Object {
 
 object ValidateMatchmakingRuleSetOutput {
   @scala.inline
-  def apply(Valid: js.UndefOr[BooleanModel] = js.undefined): ValidateMatchmakingRuleSetOutput = {
+  def apply(): ValidateMatchmakingRuleSetOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Valid)) __obj.updateDynamic("Valid")(Valid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateMatchmakingRuleSetOutput]
   }
+  @scala.inline
+  implicit class ValidateMatchmakingRuleSetOutputOps[Self <: ValidateMatchmakingRuleSetOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValid(value: BooleanModel): Self = this.set("Valid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValid: Self = this.set("Valid", js.undefined)
+  }
+  
 }
 

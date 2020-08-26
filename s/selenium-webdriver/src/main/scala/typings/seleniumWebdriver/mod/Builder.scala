@@ -54,6 +54,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def forBrowser(name: String): Builder = js.native
+  def forBrowser(name: String, opt_version: js.UndefOr[scala.Nothing], opt_platform: String): Builder = js.native
   def forBrowser(name: String, opt_version: String): Builder = js.native
   def forBrowser(name: String, opt_version: String, opt_platform: String): Builder = js.native
   /**

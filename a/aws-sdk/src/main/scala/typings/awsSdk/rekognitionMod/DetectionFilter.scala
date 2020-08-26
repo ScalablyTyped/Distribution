@@ -22,16 +22,34 @@ trait DetectionFilter extends js.Object {
 
 object DetectionFilter {
   @scala.inline
-  def apply(
-    MinBoundingBoxHeight: js.UndefOr[BoundingBoxHeight] = js.undefined,
-    MinBoundingBoxWidth: js.UndefOr[BoundingBoxWidth] = js.undefined,
-    MinConfidence: js.UndefOr[Percent] = js.undefined
-  ): DetectionFilter = {
+  def apply(): DetectionFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MinBoundingBoxHeight)) __obj.updateDynamic("MinBoundingBoxHeight")(MinBoundingBoxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinBoundingBoxWidth)) __obj.updateDynamic("MinBoundingBoxWidth")(MinBoundingBoxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinConfidence)) __obj.updateDynamic("MinConfidence")(MinConfidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectionFilter]
   }
+  @scala.inline
+  implicit class DetectionFilterOps[Self <: DetectionFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMinBoundingBoxHeight(value: BoundingBoxHeight): Self = this.set("MinBoundingBoxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinBoundingBoxHeight: Self = this.set("MinBoundingBoxHeight", js.undefined)
+    @scala.inline
+    def setMinBoundingBoxWidth(value: BoundingBoxWidth): Self = this.set("MinBoundingBoxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinBoundingBoxWidth: Self = this.set("MinBoundingBoxWidth", js.undefined)
+    @scala.inline
+    def setMinConfidence(value: Percent): Self = this.set("MinConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinConfidence: Self = this.set("MinConfidence", js.undefined)
+  }
+  
 }
 

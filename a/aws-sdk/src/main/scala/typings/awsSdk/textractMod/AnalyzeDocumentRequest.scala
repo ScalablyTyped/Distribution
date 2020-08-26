@@ -22,10 +22,32 @@ trait AnalyzeDocumentRequest extends js.Object {
 
 object AnalyzeDocumentRequest {
   @scala.inline
-  def apply(Document: Document, FeatureTypes: FeatureTypes, HumanLoopConfig: HumanLoopConfig = null): AnalyzeDocumentRequest = {
+  def apply(Document: Document, FeatureTypes: FeatureTypes): AnalyzeDocumentRequest = {
     val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any], FeatureTypes = FeatureTypes.asInstanceOf[js.Any])
-    if (HumanLoopConfig != null) __obj.updateDynamic("HumanLoopConfig")(HumanLoopConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzeDocumentRequest]
   }
+  @scala.inline
+  implicit class AnalyzeDocumentRequestOps[Self <: AnalyzeDocumentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocument(value: Document): Self = this.set("Document", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeatureTypesVarargs(value: FeatureType*): Self = this.set("FeatureTypes", js.Array(value :_*))
+    @scala.inline
+    def setFeatureTypes(value: FeatureTypes): Self = this.set("FeatureTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHumanLoopConfig(value: HumanLoopConfig): Self = this.set("HumanLoopConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHumanLoopConfig: Self = this.set("HumanLoopConfig", js.undefined)
+  }
+  
 }
 

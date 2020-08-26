@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createFromCapabilitiesMatrixSet extends js.Object {
   def apply(matrixSet: js.Any): WMTSTileGrid = js.native
+  def apply(matrixSet: js.Any, opt_extent: js.UndefOr[scala.Nothing], opt_matrixLimits: js.Array[js.Object]): WMTSTileGrid = js.native
   def apply(matrixSet: js.Any, opt_extent: Extent): WMTSTileGrid = js.native
   def apply(matrixSet: js.Any, opt_extent: Extent, opt_matrixLimits: js.Array[js.Object]): WMTSTileGrid = js.native
 }

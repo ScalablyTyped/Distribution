@@ -1,7 +1,7 @@
 package typings.shelljs.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.node.NodeJS.ProcessEnv
+import typings.node.processMod.global.NodeJS.ProcessEnv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

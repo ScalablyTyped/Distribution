@@ -1,7 +1,7 @@
 
 # Scala.js typings for readdir-enhanced
 
-Typings are for version 6.0.3
+Typings are for version 6.0.4
 
 ## Library description:
 fs.readdir with sync, async, streaming, and async iterator APIs + filtering, recursion, absolute paths, etc.

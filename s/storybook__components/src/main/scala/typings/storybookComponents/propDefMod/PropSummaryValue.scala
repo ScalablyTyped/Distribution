@@ -12,10 +12,28 @@ trait PropSummaryValue extends js.Object {
 
 object PropSummaryValue {
   @scala.inline
-  def apply(summary: String, detail: String = null): PropSummaryValue = {
+  def apply(summary: String): PropSummaryValue = {
     val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropSummaryValue]
   }
+  @scala.inline
+  implicit class PropSummaryValueOps[Self <: PropSummaryValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetail: Self = this.set("detail", js.undefined)
+  }
+  
 }
 

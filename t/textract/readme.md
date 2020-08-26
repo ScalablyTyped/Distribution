@@ -12,7 +12,7 @@ Extracting text from files of various type including html, pdf, doc, docx, xls, 
 | Keywords           | textract, extract, html, csv, text, pdf, docx, doc, xls, xlsx, png, jpg, gif, rtf, dxf, pptx, html, markdown, xml, odt, ott, xlsb, xlsm, xltx, ods, ots, potx, odg, otg, epub |
 | # releases         | 4 |
 | # dependents       | 22 |
-| # downloads        | 104758 |
+| # downloads        | 106715 |
 | # stars            | 26 |
 
 ## Links

@@ -22,11 +22,32 @@ trait InspectorServiceAttributes extends js.Object {
 
 object InspectorServiceAttributes {
   @scala.inline
-  def apply(schemaVersion: NumericVersion, assessmentRunArn: Arn = null, rulesPackageArn: Arn = null): InspectorServiceAttributes = {
+  def apply(schemaVersion: NumericVersion): InspectorServiceAttributes = {
     val __obj = js.Dynamic.literal(schemaVersion = schemaVersion.asInstanceOf[js.Any])
-    if (assessmentRunArn != null) __obj.updateDynamic("assessmentRunArn")(assessmentRunArn.asInstanceOf[js.Any])
-    if (rulesPackageArn != null) __obj.updateDynamic("rulesPackageArn")(rulesPackageArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[InspectorServiceAttributes]
   }
+  @scala.inline
+  implicit class InspectorServiceAttributesOps[Self <: InspectorServiceAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSchemaVersion(value: NumericVersion): Self = this.set("schemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssessmentRunArn(value: Arn): Self = this.set("assessmentRunArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssessmentRunArn: Self = this.set("assessmentRunArn", js.undefined)
+    @scala.inline
+    def setRulesPackageArn(value: Arn): Self = this.set("rulesPackageArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRulesPackageArn: Self = this.set("rulesPackageArn", js.undefined)
+  }
+  
 }
 

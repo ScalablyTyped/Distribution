@@ -23,11 +23,11 @@ object Collection extends js.Object {
   def isCollection[T](value: js.Any): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
   def isCollection[T](value: typings.arcgisJsApi.esri.Collection[T]): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
   def ofType[T /* <: Base */, Base](`type`: Constructor[T]): Instantiable1[
-    js.UndefOr[js.Array[T] | typings.arcgisJsApi.esri.Collection[T] | (Items[T, Base])], 
+    /* items */ js.UndefOr[js.Array[T] | typings.arcgisJsApi.esri.Collection[T] | (Items[T, Base])], 
     typings.arcgisJsApi.esri.Collection[T]
   ] = js.native
   def ofType[T /* <: Base */, Base](`type`: Types[T, Base]): Instantiable1[
-    js.UndefOr[js.Array[T] | typings.arcgisJsApi.esri.Collection[T] | (Items[T, Base])], 
+    /* items */ js.UndefOr[js.Array[T] | typings.arcgisJsApi.esri.Collection[T] | (Items[T, Base])], 
     typings.arcgisJsApi.esri.Collection[T]
   ] = js.native
 }

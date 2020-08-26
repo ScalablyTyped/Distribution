@@ -1,25 +1,25 @@
 package typings.workboxWebpackPlugin
 
-import typings.workboxWebpackPlugin.mod.ChacheStrategy
+import typings.workboxWebpackPlugin.mod.CacheStrategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object workboxWebpackPluginStrings {
   @js.native
-  sealed trait CacheFirst extends ChacheStrategy
+  sealed trait CacheFirst extends CacheStrategy
   
   @js.native
-  sealed trait CacheOnly extends ChacheStrategy
+  sealed trait CacheOnly extends CacheStrategy
   
   @js.native
-  sealed trait NetworkFirst extends ChacheStrategy
+  sealed trait NetworkFirst extends CacheStrategy
   
   @js.native
-  sealed trait NetworkOnly extends ChacheStrategy
+  sealed trait NetworkOnly extends CacheStrategy
   
   @js.native
-  sealed trait StaleWhileRevalidate extends ChacheStrategy
+  sealed trait StaleWhileRevalidate extends CacheStrategy
   
   @js.native
   sealed trait production extends js.Object

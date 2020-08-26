@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jstimezonedetect"
-version := "1.0-dt-20200515Z-4259f9"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-b9b3c6"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

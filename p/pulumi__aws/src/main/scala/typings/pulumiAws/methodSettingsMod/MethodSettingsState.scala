@@ -1,7 +1,7 @@
 package typings.pulumiAws.methodSettingsMod
 
+import typings.pulumiAws.apigatewayMod.RestApi
 import typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings
-import typings.pulumiAws.restApiMod.RestApi
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,18 +29,38 @@ trait MethodSettingsState extends js.Object {
 
 object MethodSettingsState {
   @scala.inline
-  def apply(
-    methodPath: Input[String] = null,
-    restApi: Input[String | RestApi] = null,
-    settings: Input[MethodSettingsSettings] = null,
-    stageName: Input[String] = null
-  ): MethodSettingsState = {
+  def apply(): MethodSettingsState = {
     val __obj = js.Dynamic.literal()
-    if (methodPath != null) __obj.updateDynamic("methodPath")(methodPath.asInstanceOf[js.Any])
-    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodSettingsState]
   }
+  @scala.inline
+  implicit class MethodSettingsStateOps[Self <: MethodSettingsState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethodPath(value: Input[String]): Self = this.set("methodPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethodPath: Self = this.set("methodPath", js.undefined)
+    @scala.inline
+    def setRestApi(value: Input[String | RestApi]): Self = this.set("restApi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestApi: Self = this.set("restApi", js.undefined)
+    @scala.inline
+    def setSettings(value: Input[MethodSettingsSettings]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setStageName(value: Input[String]): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("stageName", js.undefined)
+  }
+  
 }
 

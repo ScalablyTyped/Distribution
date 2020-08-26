@@ -30,20 +30,44 @@ trait GetFaceSearchResponse extends js.Object {
 
 object GetFaceSearchResponse {
   @scala.inline
-  def apply(
-    JobStatus: VideoJobStatus = null,
-    NextToken: PaginationToken = null,
-    Persons: PersonMatches = null,
-    StatusMessage: StatusMessage = null,
-    VideoMetadata: VideoMetadata = null
-  ): GetFaceSearchResponse = {
+  def apply(): GetFaceSearchResponse = {
     val __obj = js.Dynamic.literal()
-    if (JobStatus != null) __obj.updateDynamic("JobStatus")(JobStatus.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Persons != null) __obj.updateDynamic("Persons")(Persons.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (VideoMetadata != null) __obj.updateDynamic("VideoMetadata")(VideoMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFaceSearchResponse]
   }
+  @scala.inline
+  implicit class GetFaceSearchResponseOps[Self <: GetFaceSearchResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobStatus(value: VideoJobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPersonsVarargs(value: PersonMatch*): Self = this.set("Persons", js.Array(value :_*))
+    @scala.inline
+    def setPersons(value: PersonMatches): Self = this.set("Persons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersons: Self = this.set("Persons", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setVideoMetadata(value: VideoMetadata): Self = this.set("VideoMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoMetadata: Self = this.set("VideoMetadata", js.undefined)
+  }
+  
 }
 

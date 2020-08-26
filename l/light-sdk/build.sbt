@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "light-sdk"
-version := "1.0-dt-20200515Z-32e215"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-d95eb9"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

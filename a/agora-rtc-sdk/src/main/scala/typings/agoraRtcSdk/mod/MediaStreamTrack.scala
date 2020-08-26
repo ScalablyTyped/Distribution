@@ -14,8 +14,9 @@ import scala.scalajs.js.annotation._
   * See [MediaStreamTrack](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack) for details.
   *
   */
+@js.native
 trait MediaStreamTrack extends js.Object {
-  var kind: audio | video
+  var kind: audio | video = js.native
 }
 
 object MediaStreamTrack {
@@ -24,5 +25,20 @@ object MediaStreamTrack {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamTrack]
   }
+  @scala.inline
+  implicit class MediaStreamTrackOps[Self <: MediaStreamTrack] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: audio | video): Self = this.set("kind", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -1,53 +1,81 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.anon.Element
 import typings.devextreme.anon.Model
 import typings.devextreme.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DOMComponentOptions[T] extends ComponentOptions[T] {
   /** @name DOMComponent.Options.bindingOptions */
-  var bindingOptions: js.UndefOr[js.Any] = js.undefined
+  var bindingOptions: js.UndefOr[js.Any] = js.native
   /** @name DOMComponent.Options.elementAttr */
-  var elementAttr: js.UndefOr[js.Any] = js.undefined
+  var elementAttr: js.UndefOr[js.Any] = js.native
   /** @name DOMComponent.Options.height */
-  var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
+  var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
   /** @name DOMComponent.Options.onDisposing */
   @JSName("onDisposing")
-  var onDisposing_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Model[T], _]] = js.undefined
+  var onDisposing_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Model[T], _]] = js.native
   /** @name DOMComponent.Options.onOptionChanged */
   @JSName("onOptionChanged")
-  var onOptionChanged_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Name[T], _]] = js.undefined
+  var onOptionChanged_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Name[T], _]] = js.native
   /** @name DOMComponent.Options.rtlEnabled */
-  var rtlEnabled: js.UndefOr[Boolean] = js.undefined
+  var rtlEnabled: js.UndefOr[Boolean] = js.native
   /** @name DOMComponent.Options.width */
-  var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
+  var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
 }
 
 object DOMComponentOptions {
   @scala.inline
-  def apply[T](
-    bindingOptions: js.Any = null,
-    elementAttr: js.Any = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    onDisposing: /* e */ Model[T] => _ = null,
-    onInitialized: /* e */ Element[T] => _ = null,
-    onOptionChanged: /* e */ Name[T] => _ = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): DOMComponentOptions[T] = {
+  def apply[T](): DOMComponentOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMComponentOptions[T]]
   }
+  @scala.inline
+  implicit class DOMComponentOptionsOps[Self <: DOMComponentOptions[_], T] (val x: Self with DOMComponentOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBindingOptions(value: js.Any): Self = this.set("bindingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindingOptions: Self = this.set("bindingOptions", js.undefined)
+    @scala.inline
+    def setElementAttr(value: js.Any): Self = this.set("elementAttr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElementAttr: Self = this.set("elementAttr", js.undefined)
+    @scala.inline
+    def setHeightFunction0(value: () => Double | String): Self = this.set("height", js.Any.fromFunction0(value))
+    @scala.inline
+    def setHeight(value: Double | String | (js.Function0[Double | String])): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOnDisposing(value: /* e */ Model[T] => _): Self = this.set("onDisposing", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDisposing: Self = this.set("onDisposing", js.undefined)
+    @scala.inline
+    def setOnOptionChanged(value: /* e */ Name[T] => _): Self = this.set("onOptionChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOptionChanged: Self = this.set("onOptionChanged", js.undefined)
+    @scala.inline
+    def setRtlEnabled(value: Boolean): Self = this.set("rtlEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtlEnabled: Self = this.set("rtlEnabled", js.undefined)
+    @scala.inline
+    def setWidthFunction0(value: () => Double | String): Self = this.set("width", js.Any.fromFunction0(value))
+    @scala.inline
+    def setWidth(value: Double | String | (js.Function0[Double | String])): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

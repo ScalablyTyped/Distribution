@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends MessageValidator {
   def this(hostPattern: RegExp) = this()
+  def this(hostPattern: js.UndefOr[scala.Nothing], encoding: String) = this()
   def this(hostPattern: RegExp, encoding: String) = this()
 }
 

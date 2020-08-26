@@ -26,11 +26,30 @@ trait SchemaConditionValue extends js.Object {
 
 object SchemaConditionValue {
   @scala.inline
-  def apply(relativeDate: String = null, userEnteredValue: String = null): SchemaConditionValue = {
+  def apply(): SchemaConditionValue = {
     val __obj = js.Dynamic.literal()
-    if (relativeDate != null) __obj.updateDynamic("relativeDate")(relativeDate.asInstanceOf[js.Any])
-    if (userEnteredValue != null) __obj.updateDynamic("userEnteredValue")(userEnteredValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConditionValue]
   }
+  @scala.inline
+  implicit class SchemaConditionValueOps[Self <: SchemaConditionValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelativeDate(value: String): Self = this.set("relativeDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativeDate: Self = this.set("relativeDate", js.undefined)
+    @scala.inline
+    def setUserEnteredValue(value: String): Self = this.set("userEnteredValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserEnteredValue: Self = this.set("userEnteredValue", js.undefined)
+  }
+  
 }
 

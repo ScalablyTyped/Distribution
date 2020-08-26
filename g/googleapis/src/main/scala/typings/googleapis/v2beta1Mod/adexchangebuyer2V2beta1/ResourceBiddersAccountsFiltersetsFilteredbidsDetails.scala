@@ -32,6 +32,7 @@ class ResourceBiddersAccountsFiltersetsFilteredbidsDetails protected () extends 
     */
   def list(): GaxiosPromise[SchemaListCreativeStatusBreakdownByDetailResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCreativeStatusBreakdownByDetailResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCreativeStatusBreakdownByDetailResponse] = js.native
   def list(params: ParamsResourceBiddersAccountsFiltersetsFilteredbidsDetailsList): GaxiosPromise[SchemaListCreativeStatusBreakdownByDetailResponse] = js.native
   def list(
     params: ParamsResourceBiddersAccountsFiltersetsFilteredbidsDetailsList,

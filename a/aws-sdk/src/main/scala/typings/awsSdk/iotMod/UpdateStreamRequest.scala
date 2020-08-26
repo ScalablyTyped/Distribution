@@ -26,17 +26,38 @@ trait UpdateStreamRequest extends js.Object {
 
 object UpdateStreamRequest {
   @scala.inline
-  def apply(
-    streamId: StreamId,
-    description: StreamDescription = null,
-    files: StreamFiles = null,
-    roleArn: RoleArn = null
-  ): UpdateStreamRequest = {
+  def apply(streamId: StreamId): UpdateStreamRequest = {
     val __obj = js.Dynamic.literal(streamId = streamId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStreamRequest]
   }
+  @scala.inline
+  implicit class UpdateStreamRequestOps[Self <: UpdateStreamRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStreamId(value: StreamId): Self = this.set("streamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: StreamDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFilesVarargs(value: StreamFile*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: StreamFiles): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

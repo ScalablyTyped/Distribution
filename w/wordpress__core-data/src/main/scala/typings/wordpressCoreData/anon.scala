@@ -28,6 +28,13 @@ object anon extends js.Object {
     def receiveCurrentUser_view(currentUser: User[view]): Unit = js.native
     def receiveEmbedPreview(url: String, preview: Record[String, _]): Unit = js.native
     def receiveEntityRecords(kind: String, name: String, records: js.Array[Record[String, _]]): Unit = js.native
+    def receiveEntityRecords(
+      kind: String,
+      name: String,
+      records: js.Array[Record[String, _]],
+      query: js.UndefOr[scala.Nothing],
+      invalidateCache: Boolean
+    ): Unit = js.native
     def receiveEntityRecords(kind: String, name: String, records: js.Array[Record[String, _]], query: Record[String, _]): Unit = js.native
     def receiveEntityRecords(
       kind: String,
@@ -37,6 +44,13 @@ object anon extends js.Object {
       invalidateCache: Boolean
     ): Unit = js.native
     def receiveEntityRecords(kind: String, name: String, records: Record[String, _]): Unit = js.native
+    def receiveEntityRecords(
+      kind: String,
+      name: String,
+      records: Record[String, _],
+      query: js.UndefOr[scala.Nothing],
+      invalidateCache: Boolean
+    ): Unit = js.native
     def receiveEntityRecords(kind: String, name: String, records: Record[String, _], query: Record[String, _]): Unit = js.native
     def receiveEntityRecords(
       kind: String,

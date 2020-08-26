@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object htmlTag extends js.Object {
   def apply(tag: String): String = js.native
+  def apply(tag: String, attrs: js.UndefOr[scala.Nothing], text: String): String = js.native
   def apply(tag: String, attrs: js.Array[String]): String = js.native
   def apply(tag: String, attrs: js.Array[String], text: String): String = js.native
   def apply(tag: String, attrs: StringDictionary[js.Any]): String = js.native

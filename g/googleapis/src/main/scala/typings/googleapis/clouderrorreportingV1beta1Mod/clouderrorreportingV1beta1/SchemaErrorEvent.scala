@@ -31,18 +31,38 @@ trait SchemaErrorEvent extends js.Object {
 
 object SchemaErrorEvent {
   @scala.inline
-  def apply(
-    context: SchemaErrorContext = null,
-    eventTime: String = null,
-    message: String = null,
-    serviceContext: SchemaServiceContext = null
-  ): SchemaErrorEvent = {
+  def apply(): SchemaErrorEvent = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (serviceContext != null) __obj.updateDynamic("serviceContext")(serviceContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaErrorEvent]
   }
+  @scala.inline
+  implicit class SchemaErrorEventOps[Self <: SchemaErrorEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContext(value: SchemaErrorContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setEventTime(value: String): Self = this.set("eventTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTime: Self = this.set("eventTime", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setServiceContext(value: SchemaServiceContext): Self = this.set("serviceContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceContext: Self = this.set("serviceContext", js.undefined)
+  }
+  
 }
 

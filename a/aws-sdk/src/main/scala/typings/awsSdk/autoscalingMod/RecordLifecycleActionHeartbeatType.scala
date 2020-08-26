@@ -26,16 +26,34 @@ trait RecordLifecycleActionHeartbeatType extends js.Object {
 
 object RecordLifecycleActionHeartbeatType {
   @scala.inline
-  def apply(
-    AutoScalingGroupName: ResourceName,
-    LifecycleHookName: AsciiStringMaxLen255,
-    InstanceId: XmlStringMaxLen19 = null,
-    LifecycleActionToken: LifecycleActionToken = null
-  ): RecordLifecycleActionHeartbeatType = {
+  def apply(AutoScalingGroupName: ResourceName, LifecycleHookName: AsciiStringMaxLen255): RecordLifecycleActionHeartbeatType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], LifecycleHookName = LifecycleHookName.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (LifecycleActionToken != null) __obj.updateDynamic("LifecycleActionToken")(LifecycleActionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordLifecycleActionHeartbeatType]
   }
+  @scala.inline
+  implicit class RecordLifecycleActionHeartbeatTypeOps[Self <: RecordLifecycleActionHeartbeatType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLifecycleHookName(value: AsciiStringMaxLen255): Self = this.set("LifecycleHookName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceId(value: XmlStringMaxLen19): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setLifecycleActionToken(value: LifecycleActionToken): Self = this.set("LifecycleActionToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleActionToken: Self = this.set("LifecycleActionToken", js.undefined)
+  }
+  
 }
 

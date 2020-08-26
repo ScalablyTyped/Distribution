@@ -12,7 +12,7 @@ Align the text in a string.
 | Keywords           | align, align-center, alignment, center, center-align, indent, pad, padding, right, right-align, text, typography |
 | # releases         | 1 |
 | # dependents       | 48 |
-| # downloads        | 164946187 |
+| # downloads        | 162786867 |
 | # stars            | 3 |
 
 ## Links

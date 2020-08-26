@@ -78,6 +78,7 @@ trait IQHeader extends js.Object {
     * @return - A promise.
     */
   def selectRange(min: Double, max: Double): IPromise[_] = js.native
+  def selectRange(min: Double, max: Double, inclMin: js.UndefOr[scala.Nothing], inclMax: Boolean): IPromise[_] = js.native
   def selectRange(min: Double, max: Double, inclMin: Boolean): IPromise[_] = js.native
   def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): IPromise[_] = js.native
 }

@@ -30,15 +30,15 @@ trait TargetedCompositionEvent[Target /* <: EventTarget */] extends js.Object {
   @JSName("preventDefault")
   var preventDefault_Original: js.Function0[Unit] = js.native
   var returnValue: Boolean = js.native
-  var srcElement: js.UndefOr[EventTarget] = js.native
+  var srcElement: js.UndefOr[EventTarget | Null] = js.native
   @JSName("stopImmediatePropagation")
   var stopImmediatePropagation_Original: js.Function0[Unit] = js.native
   @JSName("stopPropagation")
   var stopPropagation_Original: js.Function0[Unit] = js.native
-  var target: js.UndefOr[EventTarget] = js.native
+  var target: js.UndefOr[EventTarget | Null] = js.native
   var timeStamp: Double = js.native
   var `type`: String = js.native
-  var view: js.UndefOr[Window] = js.native
+  var view: js.UndefOr[Window | Null] = js.native
   var which: Double = js.native
   def composedPath(): js.Array[EventTarget] = js.native
   def initEvent(`type`: String): Unit = js.native

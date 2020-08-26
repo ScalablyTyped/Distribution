@@ -4,35 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Reference extends js.Object {
-  var digestAlgorithm: js.UndefOr[String] = js.undefined
-  var digestValue: js.UndefOr[String] = js.undefined
-  var inclusiveNamespacesPrefixList: js.UndefOr[String] = js.undefined
-  var isEmptyUri: js.UndefOr[Boolean] = js.undefined
-  var transforms: js.UndefOr[js.Array[String]] = js.undefined
-  var uri: js.UndefOr[String] = js.undefined
-  var xpath: String
+  var digestAlgorithm: js.UndefOr[String] = js.native
+  var digestValue: js.UndefOr[String] = js.native
+  var inclusiveNamespacesPrefixList: js.UndefOr[String] = js.native
+  var isEmptyUri: js.UndefOr[Boolean] = js.native
+  var transforms: js.UndefOr[js.Array[String]] = js.native
+  var uri: js.UndefOr[String] = js.native
+  var xpath: String = js.native
 }
 
 object Reference {
   @scala.inline
-  def apply(
-    xpath: String,
-    digestAlgorithm: String = null,
-    digestValue: String = null,
-    inclusiveNamespacesPrefixList: String = null,
-    isEmptyUri: js.UndefOr[Boolean] = js.undefined,
-    transforms: js.Array[String] = null,
-    uri: String = null
-  ): Reference = {
+  def apply(xpath: String): Reference = {
     val __obj = js.Dynamic.literal(xpath = xpath.asInstanceOf[js.Any])
-    if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm.asInstanceOf[js.Any])
-    if (digestValue != null) __obj.updateDynamic("digestValue")(digestValue.asInstanceOf[js.Any])
-    if (inclusiveNamespacesPrefixList != null) __obj.updateDynamic("inclusiveNamespacesPrefixList")(inclusiveNamespacesPrefixList.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEmptyUri)) __obj.updateDynamic("isEmptyUri")(isEmptyUri.get.asInstanceOf[js.Any])
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
+  @scala.inline
+  implicit class ReferenceOps[Self <: Reference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setXpath(value: String): Self = this.set("xpath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDigestAlgorithm(value: String): Self = this.set("digestAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigestAlgorithm: Self = this.set("digestAlgorithm", js.undefined)
+    @scala.inline
+    def setDigestValue(value: String): Self = this.set("digestValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigestValue: Self = this.set("digestValue", js.undefined)
+    @scala.inline
+    def setInclusiveNamespacesPrefixList(value: String): Self = this.set("inclusiveNamespacesPrefixList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclusiveNamespacesPrefixList: Self = this.set("inclusiveNamespacesPrefixList", js.undefined)
+    @scala.inline
+    def setIsEmptyUri(value: Boolean): Self = this.set("isEmptyUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsEmptyUri: Self = this.set("isEmptyUri", js.undefined)
+    @scala.inline
+    def setTransformsVarargs(value: String*): Self = this.set("transforms", js.Array(value :_*))
+    @scala.inline
+    def setTransforms(value: js.Array[String]): Self = this.set("transforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransforms: Self = this.set("transforms", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

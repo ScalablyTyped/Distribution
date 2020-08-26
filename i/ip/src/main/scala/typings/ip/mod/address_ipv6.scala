@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ip", "address")
 @js.native
 object address_ipv6 extends js.Object {
+  def apply(name: js.UndefOr[scala.Nothing], family: ipv6): String = js.native
   def apply(name: String, family: ipv6): String = js.native
 }
 

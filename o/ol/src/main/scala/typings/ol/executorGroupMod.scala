@@ -31,6 +31,14 @@ object executorGroupMod extends js.Object {
       transform: Transform,
       viewRotation: Double,
       snapToPixel: Boolean,
+      opt_builderTypes: js.UndefOr[scala.Nothing],
+      opt_declutterReplays: StringDictionary[DeclutterGroup]
+    ): Unit = js.native
+    def execute(
+      context: CanvasRenderingContext2D,
+      transform: Transform,
+      viewRotation: Double,
+      snapToPixel: Boolean,
       opt_builderTypes: js.Array[BuilderType]
     ): Unit = js.native
     def execute(

@@ -30,18 +30,38 @@ trait ReplaceTransitGatewayRouteRequest extends js.Object {
 
 object ReplaceTransitGatewayRouteRequest {
   @scala.inline
-  def apply(
-    DestinationCidrBlock: String,
-    TransitGatewayRouteTableId: TransitGatewayRouteTableId,
-    Blackhole: js.UndefOr[Boolean] = js.undefined,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    TransitGatewayAttachmentId: TransitGatewayAttachmentId = null
-  ): ReplaceTransitGatewayRouteRequest = {
+  def apply(DestinationCidrBlock: String, TransitGatewayRouteTableId: TransitGatewayRouteTableId): ReplaceTransitGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], TransitGatewayRouteTableId = TransitGatewayRouteTableId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Blackhole)) __obj.updateDynamic("Blackhole")(Blackhole.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (TransitGatewayAttachmentId != null) __obj.updateDynamic("TransitGatewayAttachmentId")(TransitGatewayAttachmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceTransitGatewayRouteRequest]
   }
+  @scala.inline
+  implicit class ReplaceTransitGatewayRouteRequestOps[Self <: ReplaceTransitGatewayRouteRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCidrBlock(value: String): Self = this.set("DestinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = this.set("TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlackhole(value: Boolean): Self = this.set("Blackhole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlackhole: Self = this.set("Blackhole", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = this.set("TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayAttachmentId: Self = this.set("TransitGatewayAttachmentId", js.undefined)
+  }
+  
 }
 

@@ -16,6 +16,7 @@ object operationDataMod extends js.Object {
   @js.native
   abstract class OperationData[TOptions] () extends js.Object {
     def this(options: CommonOptions[TOptions]) = this()
+    def this(options: js.UndefOr[scala.Nothing], context: ApolloContextValue) = this()
     def this(options: CommonOptions[TOptions], context: ApolloContextValue) = this()
     var client: js.UndefOr[ApolloClient[js.Object]] = js.native
     var context: ApolloContextValue = js.native

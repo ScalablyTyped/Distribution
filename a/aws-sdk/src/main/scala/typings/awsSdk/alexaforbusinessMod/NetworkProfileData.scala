@@ -38,24 +38,50 @@ trait NetworkProfileData extends js.Object {
 
 object NetworkProfileData {
   @scala.inline
-  def apply(
-    CertificateAuthorityArn: Arn = null,
-    Description: NetworkProfileDescription = null,
-    EapMethod: NetworkEapMethod = null,
-    NetworkProfileArn: Arn = null,
-    NetworkProfileName: NetworkProfileName = null,
-    SecurityType: NetworkSecurityType = null,
-    Ssid: NetworkSsid = null
-  ): NetworkProfileData = {
+  def apply(): NetworkProfileData = {
     val __obj = js.Dynamic.literal()
-    if (CertificateAuthorityArn != null) __obj.updateDynamic("CertificateAuthorityArn")(CertificateAuthorityArn.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EapMethod != null) __obj.updateDynamic("EapMethod")(EapMethod.asInstanceOf[js.Any])
-    if (NetworkProfileArn != null) __obj.updateDynamic("NetworkProfileArn")(NetworkProfileArn.asInstanceOf[js.Any])
-    if (NetworkProfileName != null) __obj.updateDynamic("NetworkProfileName")(NetworkProfileName.asInstanceOf[js.Any])
-    if (SecurityType != null) __obj.updateDynamic("SecurityType")(SecurityType.asInstanceOf[js.Any])
-    if (Ssid != null) __obj.updateDynamic("Ssid")(Ssid.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkProfileData]
   }
+  @scala.inline
+  implicit class NetworkProfileDataOps[Self <: NetworkProfileData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateAuthorityArn: Self = this.set("CertificateAuthorityArn", js.undefined)
+    @scala.inline
+    def setDescription(value: NetworkProfileDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEapMethod(value: NetworkEapMethod): Self = this.set("EapMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEapMethod: Self = this.set("EapMethod", js.undefined)
+    @scala.inline
+    def setNetworkProfileArn(value: Arn): Self = this.set("NetworkProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkProfileArn: Self = this.set("NetworkProfileArn", js.undefined)
+    @scala.inline
+    def setNetworkProfileName(value: NetworkProfileName): Self = this.set("NetworkProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkProfileName: Self = this.set("NetworkProfileName", js.undefined)
+    @scala.inline
+    def setSecurityType(value: NetworkSecurityType): Self = this.set("SecurityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityType: Self = this.set("SecurityType", js.undefined)
+    @scala.inline
+    def setSsid(value: NetworkSsid): Self = this.set("Ssid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsid: Self = this.set("Ssid", js.undefined)
+  }
+  
 }
 

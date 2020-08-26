@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @see IFileWriteOptions
   */
+@js.native
 trait IFileWriteStringOption extends IFileWriteOptions {
   /**
     * The source file contents, source file path, and destination file path
@@ -28,20 +29,31 @@ trait IFileWriteStringOption extends IFileWriteOptions {
     */
   var process: js.UndefOr[
     js.Function3[/* contents */ String, /* srcpath */ String, /* destpath */ String, String | Boolean]
-  ] = js.undefined
+  ] = js.native
 }
 
 object IFileWriteStringOption {
   @scala.inline
-  def apply(
-    encoding: String,
-    noProcess: js.Any = null,
-    process: (/* contents */ String, /* srcpath */ String, /* destpath */ String) => String | Boolean = null
-  ): IFileWriteStringOption = {
+  def apply(encoding: String): IFileWriteStringOption = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
-    if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess.asInstanceOf[js.Any])
-    if (process != null) __obj.updateDynamic("process")(js.Any.fromFunction3(process))
     __obj.asInstanceOf[IFileWriteStringOption]
   }
+  @scala.inline
+  implicit class IFileWriteStringOptionOps[Self <: IFileWriteStringOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProcess(value: (/* contents */ String, /* srcpath */ String, /* destpath */ String) => String | Boolean): Self = this.set("process", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteProcess: Self = this.set("process", js.undefined)
+  }
+  
 }
 

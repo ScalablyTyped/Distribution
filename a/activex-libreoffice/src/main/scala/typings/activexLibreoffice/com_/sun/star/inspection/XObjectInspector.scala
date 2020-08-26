@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * @see ObjectInspector
   * @since OOo 2.0.3
   */
+@js.native
 trait XObjectInspector
   extends XController
      with XDispatchProvider {
@@ -37,7 +38,7 @@ trait XObjectInspector
     * If a new model is set at the inspector, the complete UI will be rebuilt to reflect the change, using the new property handlers provided by the new
     * model.
     */
-  var InspectorModel: XObjectInspectorModel
+  var InspectorModel: XObjectInspectorModel = js.native
   /**
     * provides access to the user interface of the object inspector.
     *
@@ -45,7 +46,7 @@ trait XObjectInspector
     * controls (or parts thereof), or register observers for all property controls.
     * @since OOo 2.2
     */
-  var InspectorUI: XObjectInspectorUI
+  var InspectorUI: XObjectInspectorUI = js.native
   /**
     * inspects a new collection of one or more objects.
     *
@@ -58,7 +59,7 @@ trait XObjectInspector
     * @see XPropertyHandler.suspend
     * @throws com::sun::star::util::VetoException if the inspector cannot switch to another object set. This typically happens if one of the active {@link XPro
     */
-  def inspect(Objects: SeqEquiv[XInterface]): Unit
+  def inspect(Objects: SeqEquiv[XInterface]): Unit = js.native
 }
 
 object XObjectInspector {
@@ -89,5 +90,24 @@ object XObjectInspector {
     val __obj = js.Dynamic.literal(Frame = Frame.asInstanceOf[js.Any], InspectorModel = InspectorModel.asInstanceOf[js.Any], InspectorUI = InspectorUI.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getViewData = js.Any.fromFunction0(getViewData), inspect = js.Any.fromFunction1(inspect), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), restoreViewData = js.Any.fromFunction1(restoreViewData), suspend = js.Any.fromFunction1(suspend))
     __obj.asInstanceOf[XObjectInspector]
   }
+  @scala.inline
+  implicit class XObjectInspectorOps[Self <: XObjectInspector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInspectorModel(value: XObjectInspectorModel): Self = this.set("InspectorModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInspectorUI(value: XObjectInspectorUI): Self = this.set("InspectorUI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInspect(value: SeqEquiv[XInterface] => Unit): Self = this.set("inspect", js.Any.fromFunction1(value))
+  }
+  
 }
 

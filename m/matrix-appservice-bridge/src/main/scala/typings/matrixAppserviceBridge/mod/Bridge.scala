@@ -12,6 +12,7 @@ class Bridge protected () extends js.Object {
   def getBot(): AppServiceBot = js.native
   def getClientFactory(): ClientFactory = js.native
   def getIntent(): Intent = js.native
+  def getIntent(userId: js.UndefOr[scala.Nothing], request: Request): Intent = js.native
   def getIntent(userId: String): Intent = js.native
   def getIntent(userId: String, request: Request): Intent = js.native
   def getIntentFromLocalpart(): Intent = js.native

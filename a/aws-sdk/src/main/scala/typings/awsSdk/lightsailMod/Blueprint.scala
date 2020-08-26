@@ -58,34 +58,70 @@ trait Blueprint extends js.Object {
 
 object Blueprint {
   @scala.inline
-  def apply(
-    blueprintId: NonEmptyString = null,
-    description: String = null,
-    group: NonEmptyString = null,
-    isActive: js.UndefOr[Boolean] = js.undefined,
-    licenseUrl: String = null,
-    minPower: js.UndefOr[integer] = js.undefined,
-    name: ResourceName = null,
-    platform: InstancePlatform = null,
-    productUrl: String = null,
-    `type`: BlueprintType = null,
-    version: String = null,
-    versionCode: String = null
-  ): Blueprint = {
+  def apply(): Blueprint = {
     val __obj = js.Dynamic.literal()
-    if (blueprintId != null) __obj.updateDynamic("blueprintId")(blueprintId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
-    if (licenseUrl != null) __obj.updateDynamic("licenseUrl")(licenseUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(minPower)) __obj.updateDynamic("minPower")(minPower.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (productUrl != null) __obj.updateDynamic("productUrl")(productUrl.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Blueprint]
   }
+  @scala.inline
+  implicit class BlueprintOps[Self <: Blueprint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlueprintId(value: NonEmptyString): Self = this.set("blueprintId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueprintId: Self = this.set("blueprintId", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setGroup(value: NonEmptyString): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    @scala.inline
+    def setLicenseUrl(value: String): Self = this.set("licenseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseUrl: Self = this.set("licenseUrl", js.undefined)
+    @scala.inline
+    def setMinPower(value: integer): Self = this.set("minPower", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinPower: Self = this.set("minPower", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlatform(value: InstancePlatform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setProductUrl(value: String): Self = this.set("productUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductUrl: Self = this.set("productUrl", js.undefined)
+    @scala.inline
+    def setType(value: BlueprintType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVersionCode(value: String): Self = this.set("versionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
+  }
+  
 }
 

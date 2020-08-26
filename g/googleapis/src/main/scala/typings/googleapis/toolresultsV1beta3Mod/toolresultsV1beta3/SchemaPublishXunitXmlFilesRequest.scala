@@ -18,10 +18,28 @@ trait SchemaPublishXunitXmlFilesRequest extends js.Object {
 
 object SchemaPublishXunitXmlFilesRequest {
   @scala.inline
-  def apply(xunitXmlFiles: js.Array[SchemaFileReference] = null): SchemaPublishXunitXmlFilesRequest = {
+  def apply(): SchemaPublishXunitXmlFilesRequest = {
     val __obj = js.Dynamic.literal()
-    if (xunitXmlFiles != null) __obj.updateDynamic("xunitXmlFiles")(xunitXmlFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPublishXunitXmlFilesRequest]
   }
+  @scala.inline
+  implicit class SchemaPublishXunitXmlFilesRequestOps[Self <: SchemaPublishXunitXmlFilesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setXunitXmlFilesVarargs(value: SchemaFileReference*): Self = this.set("xunitXmlFiles", js.Array(value :_*))
+    @scala.inline
+    def setXunitXmlFiles(value: js.Array[SchemaFileReference]): Self = this.set("xunitXmlFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXunitXmlFiles: Self = this.set("xunitXmlFiles", js.undefined)
+  }
+  
 }
 

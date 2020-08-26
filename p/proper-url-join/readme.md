@@ -12,7 +12,7 @@ Like `path.join` but for a URL
 | Keywords           | url, join, path, pathname, normalize |
 | # releases         | 6 |
 | # dependents       | 12 |
-| # downloads        | 175679 |
+| # downloads        | 197385 |
 | # stars            | 0 |
 
 ## Links

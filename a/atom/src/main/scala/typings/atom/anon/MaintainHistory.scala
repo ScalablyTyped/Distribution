@@ -9,24 +9,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaintainHistory extends js.Object {
-  var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
-  var maintainHistory: js.UndefOr[Boolean] = js.undefined
-  var reversed: js.UndefOr[Boolean] = js.undefined
+  var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.native
+  var maintainHistory: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.native
 }
 
 object MaintainHistory {
   @scala.inline
-  def apply(
-    invalidate: never | surround | overlap | inside | touch = null,
-    maintainHistory: js.UndefOr[Boolean] = js.undefined,
-    reversed: js.UndefOr[Boolean] = js.undefined
-  ): MaintainHistory = {
+  def apply(): MaintainHistory = {
     val __obj = js.Dynamic.literal()
-    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate.asInstanceOf[js.Any])
-    if (!js.isUndefined(maintainHistory)) __obj.updateDynamic("maintainHistory")(maintainHistory.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintainHistory]
   }
+  @scala.inline
+  implicit class MaintainHistoryOps[Self <: MaintainHistory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInvalidate(value: never | surround | overlap | inside | touch): Self = this.set("invalidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidate: Self = this.set("invalidate", js.undefined)
+    @scala.inline
+    def setMaintainHistory(value: Boolean): Self = this.set("maintainHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintainHistory: Self = this.set("maintainHistory", js.undefined)
+    @scala.inline
+    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReversed: Self = this.set("reversed", js.undefined)
+  }
+  
 }
 

@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientTreeListCustomDataCallbackEventArgs")
 @js.native
 class ASPxClientTreeListCustomDataCallbackEventArgs ()
-  extends typings.devexpressWeb.ASPxClientTreeListCustomDataCallbackEventArgs {
-  /**
-    * Gets the information that has been collected on the client-side and sent to the  server-side ASPxClientTreeList.CustomDataCallback event.
-    */
-  /* CompleteClass */
-  override var arg: String = js.native
-  /**
-    * Gets the information passed from the server-side ASPxTreeList.CustomDataCallback event.
-    */
-  /* CompleteClass */
-  override var result: js.Any = js.native
-}
+  extends typings.devexpressWeb.ASPxClientTreeListCustomDataCallbackEventArgs
 

@@ -12,7 +12,7 @@ Wait for a condition to be true
 | Keywords           | promise, wait, for, waits, condition, poll, polling, boolean, async, await, promises, bluebird |
 | # releases         | 5 |
 | # dependents       | 36 |
-| # downloads        | 1550338 |
+| # downloads        | 1652388 |
 | # stars            | 3 |
 
 ## Links

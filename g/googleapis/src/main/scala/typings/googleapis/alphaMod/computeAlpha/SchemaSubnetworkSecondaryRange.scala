@@ -33,12 +33,34 @@ trait SchemaSubnetworkSecondaryRange extends js.Object {
 
 object SchemaSubnetworkSecondaryRange {
   @scala.inline
-  def apply(ipCidrRange: String = null, rangeName: String = null, rangeType: String = null): SchemaSubnetworkSecondaryRange = {
+  def apply(): SchemaSubnetworkSecondaryRange = {
     val __obj = js.Dynamic.literal()
-    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
-    if (rangeName != null) __obj.updateDynamic("rangeName")(rangeName.asInstanceOf[js.Any])
-    if (rangeType != null) __obj.updateDynamic("rangeType")(rangeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubnetworkSecondaryRange]
   }
+  @scala.inline
+  implicit class SchemaSubnetworkSecondaryRangeOps[Self <: SchemaSubnetworkSecondaryRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpCidrRange(value: String): Self = this.set("ipCidrRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpCidrRange: Self = this.set("ipCidrRange", js.undefined)
+    @scala.inline
+    def setRangeName(value: String): Self = this.set("rangeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeName: Self = this.set("rangeName", js.undefined)
+    @scala.inline
+    def setRangeType(value: String): Self = this.set("rangeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeType: Self = this.set("rangeType", js.undefined)
+  }
+  
 }
 

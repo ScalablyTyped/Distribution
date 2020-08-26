@@ -17,10 +17,28 @@ trait SchemaSuggestResponse extends js.Object {
 
 object SchemaSuggestResponse {
   @scala.inline
-  def apply(suggestResults: js.Array[SchemaSuggestResult] = null): SchemaSuggestResponse = {
+  def apply(): SchemaSuggestResponse = {
     val __obj = js.Dynamic.literal()
-    if (suggestResults != null) __obj.updateDynamic("suggestResults")(suggestResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSuggestResponse]
   }
+  @scala.inline
+  implicit class SchemaSuggestResponseOps[Self <: SchemaSuggestResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuggestResultsVarargs(value: SchemaSuggestResult*): Self = this.set("suggestResults", js.Array(value :_*))
+    @scala.inline
+    def setSuggestResults(value: js.Array[SchemaSuggestResult]): Self = this.set("suggestResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestResults: Self = this.set("suggestResults", js.undefined)
+  }
+  
 }
 

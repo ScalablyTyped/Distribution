@@ -18,6 +18,7 @@ trait GradientStops extends js.Object {
     * @param Index [Index=-1]
     */
   def Insert(RGB: Double, Position: Double): Unit = js.native
+  def Insert(RGB: Double, Position: Double, Transparency: js.UndefOr[scala.Nothing], Index: Double): Unit = js.native
   def Insert(RGB: Double, Position: Double, Transparency: Double): Unit = js.native
   def Insert(RGB: Double, Position: Double, Transparency: Double, Index: Double): Unit = js.native
   /**
@@ -26,7 +27,29 @@ trait GradientStops extends js.Object {
     * @param Brightness [Brightness=0]
     */
   def Insert2(RGB: Double, Position: Double): Unit = js.native
+  def Insert2(
+    RGB: Double,
+    Position: Double,
+    Transparency: js.UndefOr[scala.Nothing],
+    Index: js.UndefOr[scala.Nothing],
+    Brightness: Double
+  ): Unit = js.native
+  def Insert2(RGB: Double, Position: Double, Transparency: js.UndefOr[scala.Nothing], Index: Double): Unit = js.native
+  def Insert2(
+    RGB: Double,
+    Position: Double,
+    Transparency: js.UndefOr[scala.Nothing],
+    Index: Double,
+    Brightness: Double
+  ): Unit = js.native
   def Insert2(RGB: Double, Position: Double, Transparency: Double): Unit = js.native
+  def Insert2(
+    RGB: Double,
+    Position: Double,
+    Transparency: Double,
+    Index: js.UndefOr[scala.Nothing],
+    Brightness: Double
+  ): Unit = js.native
   def Insert2(RGB: Double, Position: Double, Transparency: Double, Index: Double): Unit = js.native
   def Insert2(RGB: Double, Position: Double, Transparency: Double, Index: Double, Brightness: Double): Unit = js.native
   def Item(Index: Double): GradientStop = js.native

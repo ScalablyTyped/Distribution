@@ -7,23 +7,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactPlayerProps
   extends /* otherProps */ StringDictionary[js.Any] {
-  var config: js.UndefOr[Config] = js.undefined
-  var controls: js.UndefOr[Boolean] = js.undefined
-  var dailymotionConfig: js.UndefOr[DailyMotionConfig] = js.undefined
-  var facebookConfig: js.UndefOr[FacebookConfig] = js.undefined
-  var fileConfig: js.UndefOr[FileConfig] = js.undefined
-  var height: js.UndefOr[String | Double] = js.undefined
-  var light: js.UndefOr[Boolean | String] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var muted: js.UndefOr[Boolean] = js.undefined
-  var onBuffer: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onBufferEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onDisablePIP: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onDuration: js.UndefOr[js.Function1[/* duration */ Double, Unit]] = js.undefined
-  var onEnablePIP: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onEnded: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var config: js.UndefOr[Config] = js.native
+  var controls: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[String | Double] = js.native
+  var light: js.UndefOr[Boolean | String] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.native
+  var onBuffer: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBufferEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDisablePIP: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDuration: js.UndefOr[js.Function1[/* duration */ Double, Unit]] = js.native
+  var onEnablePIP: js.UndefOr[js.Function0[Unit]] = js.native
+  var onEnded: js.UndefOr[js.Function0[Unit]] = js.native
   var onError: js.UndefOr[
     js.Function4[
       /* error */ js.Any, 
@@ -32,109 +30,168 @@ trait ReactPlayerProps
       /* hlsGlobal */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
-  var onPause: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPlay: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onProgress: js.UndefOr[js.Function1[/* state */ Loaded, Unit]] = js.undefined
-  var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSeek: js.UndefOr[js.Function1[/* seconds */ Double, Unit]] = js.undefined
-  var onStart: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var pip: js.UndefOr[Boolean] = js.undefined
-  var playbackRate: js.UndefOr[Double] = js.undefined
-  var playing: js.UndefOr[Boolean] = js.undefined
-  var playsinline: js.UndefOr[Boolean] = js.undefined
-  var progressInterval: js.UndefOr[Double] = js.undefined
-  var soundcloudConfig: js.UndefOr[SoundCloudConfig] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var url: js.UndefOr[String | (js.Array[SourceProps | String]) | MediaStream] = js.undefined
-  var vimeoConfig: js.UndefOr[VimeoConfig] = js.undefined
-  var volume: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[String | Double] = js.undefined
-  var wistiaConfig: js.UndefOr[WistiaConfig] = js.undefined
-  var wrapper: js.UndefOr[js.Any] = js.undefined
-  var youtubeConfig: js.UndefOr[YouTubeConfig] = js.undefined
+  ] = js.native
+  var onPause: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onProgress: js.UndefOr[js.Function1[/* state */ Loaded, Unit]] = js.native
+  var onReady: js.UndefOr[js.Function1[/* player */ ReactPlayer, Unit]] = js.native
+  var onSeek: js.UndefOr[js.Function1[/* seconds */ Double, Unit]] = js.native
+  var onStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var pip: js.UndefOr[Boolean] = js.native
+  var playbackRate: js.UndefOr[Double] = js.native
+  var playing: js.UndefOr[Boolean] = js.native
+  var playsinline: js.UndefOr[Boolean] = js.native
+  var progressInterval: js.UndefOr[Double] = js.native
+  var stopOnUnmount: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var url: js.UndefOr[String | (js.Array[SourceProps | String]) | MediaStream] = js.native
+  var volume: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[String | Double] = js.native
+  var wrapper: js.UndefOr[js.Any] = js.native
 }
 
 object ReactPlayerProps {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    config: Config = null,
-    controls: js.UndefOr[Boolean] = js.undefined,
-    dailymotionConfig: DailyMotionConfig = null,
-    facebookConfig: FacebookConfig = null,
-    fileConfig: FileConfig = null,
-    height: String | Double = null,
-    light: Boolean | String = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    muted: js.UndefOr[Boolean] = js.undefined,
-    onBuffer: () => Unit = null,
-    onBufferEnd: () => Unit = null,
-    onDisablePIP: () => Unit = null,
-    onDuration: /* duration */ Double => Unit = null,
-    onEnablePIP: () => Unit = null,
-    onEnded: () => Unit = null,
-    onError: (/* error */ js.Any, /* data */ js.UndefOr[js.Any], /* hlsInstance */ js.UndefOr[js.Any], /* hlsGlobal */ js.UndefOr[js.Any]) => Unit = null,
-    onPause: () => Unit = null,
-    onPlay: () => Unit = null,
-    onProgress: /* state */ Loaded => Unit = null,
-    onReady: () => Unit = null,
-    onSeek: /* seconds */ Double => Unit = null,
-    onStart: () => Unit = null,
-    pip: js.UndefOr[Boolean] = js.undefined,
-    playbackRate: js.UndefOr[Double] = js.undefined,
-    playing: js.UndefOr[Boolean] = js.undefined,
-    playsinline: js.UndefOr[Boolean] = js.undefined,
-    progressInterval: js.UndefOr[Double] = js.undefined,
-    soundcloudConfig: SoundCloudConfig = null,
-    style: js.Object = null,
-    url: String | (js.Array[SourceProps | String]) | MediaStream = null,
-    vimeoConfig: VimeoConfig = null,
-    volume: js.UndefOr[Double] = js.undefined,
-    width: String | Double = null,
-    wistiaConfig: WistiaConfig = null,
-    wrapper: js.Any = null,
-    youtubeConfig: YouTubeConfig = null
-  ): ReactPlayerProps = {
+  def apply(): ReactPlayerProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
-    if (dailymotionConfig != null) __obj.updateDynamic("dailymotionConfig")(dailymotionConfig.asInstanceOf[js.Any])
-    if (facebookConfig != null) __obj.updateDynamic("facebookConfig")(facebookConfig.asInstanceOf[js.Any])
-    if (fileConfig != null) __obj.updateDynamic("fileConfig")(fileConfig.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
-    if (onBuffer != null) __obj.updateDynamic("onBuffer")(js.Any.fromFunction0(onBuffer))
-    if (onBufferEnd != null) __obj.updateDynamic("onBufferEnd")(js.Any.fromFunction0(onBufferEnd))
-    if (onDisablePIP != null) __obj.updateDynamic("onDisablePIP")(js.Any.fromFunction0(onDisablePIP))
-    if (onDuration != null) __obj.updateDynamic("onDuration")(js.Any.fromFunction1(onDuration))
-    if (onEnablePIP != null) __obj.updateDynamic("onEnablePIP")(js.Any.fromFunction0(onEnablePIP))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction0(onEnded))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction4(onError))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction0(onPause))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction0(onPlay))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction0(onReady))
-    if (onSeek != null) __obj.updateDynamic("onSeek")(js.Any.fromFunction1(onSeek))
-    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction0(onStart))
-    if (!js.isUndefined(pip)) __obj.updateDynamic("pip")(pip.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(playbackRate)) __obj.updateDynamic("playbackRate")(playbackRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsinline)) __obj.updateDynamic("playsinline")(playsinline.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressInterval)) __obj.updateDynamic("progressInterval")(progressInterval.get.asInstanceOf[js.Any])
-    if (soundcloudConfig != null) __obj.updateDynamic("soundcloudConfig")(soundcloudConfig.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (vimeoConfig != null) __obj.updateDynamic("vimeoConfig")(vimeoConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wistiaConfig != null) __obj.updateDynamic("wistiaConfig")(wistiaConfig.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
-    if (youtubeConfig != null) __obj.updateDynamic("youtubeConfig")(youtubeConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactPlayerProps]
   }
+  @scala.inline
+  implicit class ReactPlayerPropsOps[Self <: ReactPlayerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfig(value: Config): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLight(value: Boolean | String): Self = this.set("light", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLight: Self = this.set("light", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuted: Self = this.set("muted", js.undefined)
+    @scala.inline
+    def setOnBuffer(value: () => Unit): Self = this.set("onBuffer", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnBuffer: Self = this.set("onBuffer", js.undefined)
+    @scala.inline
+    def setOnBufferEnd(value: () => Unit): Self = this.set("onBufferEnd", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnBufferEnd: Self = this.set("onBufferEnd", js.undefined)
+    @scala.inline
+    def setOnDisablePIP(value: () => Unit): Self = this.set("onDisablePIP", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDisablePIP: Self = this.set("onDisablePIP", js.undefined)
+    @scala.inline
+    def setOnDuration(value: /* duration */ Double => Unit): Self = this.set("onDuration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDuration: Self = this.set("onDuration", js.undefined)
+    @scala.inline
+    def setOnEnablePIP(value: () => Unit): Self = this.set("onEnablePIP", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnEnablePIP: Self = this.set("onEnablePIP", js.undefined)
+    @scala.inline
+    def setOnEnded(value: () => Unit): Self = this.set("onEnded", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    @scala.inline
+    def setOnError(
+      value: (/* error */ js.Any, /* data */ js.UndefOr[js.Any], /* hlsInstance */ js.UndefOr[js.Any], /* hlsGlobal */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("onError", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnPause(value: () => Unit): Self = this.set("onPause", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    @scala.inline
+    def setOnPlay(value: () => Unit): Self = this.set("onPlay", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    @scala.inline
+    def setOnProgress(value: /* state */ Loaded => Unit): Self = this.set("onProgress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    @scala.inline
+    def setOnReady(value: /* player */ ReactPlayer => Unit): Self = this.set("onReady", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReady: Self = this.set("onReady", js.undefined)
+    @scala.inline
+    def setOnSeek(value: /* seconds */ Double => Unit): Self = this.set("onSeek", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeek: Self = this.set("onSeek", js.undefined)
+    @scala.inline
+    def setOnStart(value: () => Unit): Self = this.set("onStart", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    @scala.inline
+    def setPip(value: Boolean): Self = this.set("pip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePip: Self = this.set("pip", js.undefined)
+    @scala.inline
+    def setPlaybackRate(value: Double): Self = this.set("playbackRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaybackRate: Self = this.set("playbackRate", js.undefined)
+    @scala.inline
+    def setPlaying(value: Boolean): Self = this.set("playing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaying: Self = this.set("playing", js.undefined)
+    @scala.inline
+    def setPlaysinline(value: Boolean): Self = this.set("playsinline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaysinline: Self = this.set("playsinline", js.undefined)
+    @scala.inline
+    def setProgressInterval(value: Double): Self = this.set("progressInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressInterval: Self = this.set("progressInterval", js.undefined)
+    @scala.inline
+    def setStopOnUnmount(value: Boolean): Self = this.set("stopOnUnmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopOnUnmount: Self = this.set("stopOnUnmount", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setUrlVarargs(value: (SourceProps | String)*): Self = this.set("url", js.Array(value :_*))
+    @scala.inline
+    def setUrl(value: String | (js.Array[SourceProps | String]) | MediaStream): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWrapper(value: js.Any): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+  }
+  
 }
 

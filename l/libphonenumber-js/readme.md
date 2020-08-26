@@ -1,7 +1,7 @@
 
 # Scala.js typings for libphonenumber-js
 
-Typings are for version 1.7.54
+Typings are for version 1.7.55
 
 ## Library description:
 A simpler (and smaller) rewrite of Google Android's popular libphonenumber library

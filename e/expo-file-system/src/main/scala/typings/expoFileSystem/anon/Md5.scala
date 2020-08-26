@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Md5 extends js.Object {
-  var md5: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[Boolean] = js.undefined
+  var md5: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[Boolean] = js.native
 }
 
 object Md5 {
   @scala.inline
-  def apply(md5: js.UndefOr[Boolean] = js.undefined, size: js.UndefOr[Boolean] = js.undefined): Md5 = {
+  def apply(): Md5 = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(md5)) __obj.updateDynamic("md5")(md5.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Md5]
   }
+  @scala.inline
+  implicit class Md5Ops[Self <: Md5] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMd5(value: Boolean): Self = this.set("md5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd5: Self = this.set("md5", js.undefined)
+    @scala.inline
+    def setSize(value: Boolean): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

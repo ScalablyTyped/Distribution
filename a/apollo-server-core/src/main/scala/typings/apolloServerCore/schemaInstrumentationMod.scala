@@ -1,7 +1,6 @@
 package typings.apolloServerCore
 
 import typings.apolloServerCore.anon.GraphQLSchemasymbolPlugin
-import typings.apolloServerCore.anon.GraphQLSchemasymbolPluginAstNode
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,7 @@ object schemaInstrumentationMod extends js.Object {
   val symbolExecutionDispatcherWillResolveField: js.Symbol = js.native
   val symbolPluginsEnabled: js.Symbol = js.native
   val symbolUserFieldResolver: js.Symbol = js.native
-  def enablePluginsForSchemaResolvers(schema: GraphQLSchemasymbolPlugin): GraphQLSchemasymbolPluginAstNode = js.native
+  def enablePluginsForSchemaResolvers(schema: GraphQLSchemasymbolPlugin): GraphQLSchemasymbolPlugin = js.native
   def whenResultIsFinished(
     result: js.Any,
     callback: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], Unit]

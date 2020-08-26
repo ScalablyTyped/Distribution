@@ -15,20 +15,44 @@ trait QueryDefinition extends js.Object {
 
 object QueryDefinition {
   @scala.inline
-  def apply(
-    lastModified: js.UndefOr[Timestamp] = js.undefined,
-    logGroupNames: LogGroupNames = null,
-    name: QueryDefinitionName = null,
-    queryDefinitionId: QueryId = null,
-    queryString: QueryDefinitionString = null
-  ): QueryDefinition = {
+  def apply(): QueryDefinition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified.get.asInstanceOf[js.Any])
-    if (logGroupNames != null) __obj.updateDynamic("logGroupNames")(logGroupNames.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (queryDefinitionId != null) __obj.updateDynamic("queryDefinitionId")(queryDefinitionId.asInstanceOf[js.Any])
-    if (queryString != null) __obj.updateDynamic("queryString")(queryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryDefinition]
   }
+  @scala.inline
+  implicit class QueryDefinitionOps[Self <: QueryDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastModified(value: Timestamp): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    @scala.inline
+    def setLogGroupNamesVarargs(value: LogGroupName*): Self = this.set("logGroupNames", js.Array(value :_*))
+    @scala.inline
+    def setLogGroupNames(value: LogGroupNames): Self = this.set("logGroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupNames: Self = this.set("logGroupNames", js.undefined)
+    @scala.inline
+    def setName(value: QueryDefinitionName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setQueryDefinitionId(value: QueryId): Self = this.set("queryDefinitionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryDefinitionId: Self = this.set("queryDefinitionId", js.undefined)
+    @scala.inline
+    def setQueryString(value: QueryDefinitionString): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryString: Self = this.set("queryString", js.undefined)
+  }
+  
 }
 

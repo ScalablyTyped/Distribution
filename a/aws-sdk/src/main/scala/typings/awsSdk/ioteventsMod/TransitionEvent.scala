@@ -26,10 +26,34 @@ trait TransitionEvent extends js.Object {
 
 object TransitionEvent {
   @scala.inline
-  def apply(condition: Condition, eventName: EventName, nextState: StateName, actions: Actions = null): TransitionEvent = {
+  def apply(condition: Condition, eventName: EventName, nextState: StateName): TransitionEvent = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], nextState = nextState.asInstanceOf[js.Any])
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionEvent]
   }
+  @scala.inline
+  implicit class TransitionEventOps[Self <: TransitionEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCondition(value: Condition): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventName(value: EventName): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextState(value: StateName): Self = this.set("nextState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActionsVarargs(value: Action*): Self = this.set("actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: Actions): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+  }
+  
 }
 

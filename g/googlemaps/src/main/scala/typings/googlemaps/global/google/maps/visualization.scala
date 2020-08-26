@@ -30,10 +30,7 @@ object visualization extends js.Object {
   // TODO find source documentation
   @js.native
   class MouseEvent ()
-    extends typings.googlemaps.google.maps.visualization.MouseEvent {
-    /* CompleteClass */
-    override def stop(): Unit = js.native
-  }
+    extends typings.googlemaps.google.maps.visualization.MouseEvent
   
   // TODO find source documentation
   @js.native

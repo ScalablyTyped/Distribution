@@ -10,9 +10,9 @@ Library to help monitor operating system memory
 | ------------------ | :-------------: |
 | Full name          | memmonit |
 | Keywords           | memory, monitoring, lib |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 234 |
+| # downloads        | 427 |
 | # stars            | 0 |
 
 ## Links

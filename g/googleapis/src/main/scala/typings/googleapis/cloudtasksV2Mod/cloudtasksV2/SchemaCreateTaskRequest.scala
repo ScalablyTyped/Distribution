@@ -48,11 +48,30 @@ trait SchemaCreateTaskRequest extends js.Object {
 
 object SchemaCreateTaskRequest {
   @scala.inline
-  def apply(responseView: String = null, task: SchemaTask = null): SchemaCreateTaskRequest = {
+  def apply(): SchemaCreateTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
-    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateTaskRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateTaskRequestOps[Self <: SchemaCreateTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResponseView(value: String): Self = this.set("responseView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseView: Self = this.set("responseView", js.undefined)
+    @scala.inline
+    def setTask(value: SchemaTask): Self = this.set("task", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTask: Self = this.set("task", js.undefined)
+  }
+  
 }
 

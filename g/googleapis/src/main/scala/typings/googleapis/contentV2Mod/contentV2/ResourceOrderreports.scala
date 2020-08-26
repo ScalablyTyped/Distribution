@@ -32,6 +32,7 @@ class ResourceOrderreports protected () extends js.Object {
     */
   def listdisbursements(): GaxiosPromise[SchemaOrderreportsListDisbursementsResponse] = js.native
   def listdisbursements(callback: BodyResponseCallback[SchemaOrderreportsListDisbursementsResponse]): Unit = js.native
+  def listdisbursements(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderreportsListDisbursementsResponse] = js.native
   def listdisbursements(params: ParamsResourceOrderreportsListdisbursements): GaxiosPromise[SchemaOrderreportsListDisbursementsResponse] = js.native
   def listdisbursements(
     params: ParamsResourceOrderreportsListdisbursements,
@@ -68,6 +69,7 @@ class ResourceOrderreports protected () extends js.Object {
     */
   def listtransactions(): GaxiosPromise[SchemaOrderreportsListTransactionsResponse] = js.native
   def listtransactions(callback: BodyResponseCallback[SchemaOrderreportsListTransactionsResponse]): Unit = js.native
+  def listtransactions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderreportsListTransactionsResponse] = js.native
   def listtransactions(params: ParamsResourceOrderreportsListtransactions): GaxiosPromise[SchemaOrderreportsListTransactionsResponse] = js.native
   def listtransactions(
     params: ParamsResourceOrderreportsListtransactions,

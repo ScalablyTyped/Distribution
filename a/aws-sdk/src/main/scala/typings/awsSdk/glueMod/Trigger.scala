@@ -46,28 +46,60 @@ trait Trigger extends js.Object {
 
 object Trigger {
   @scala.inline
-  def apply(
-    Actions: ActionList = null,
-    Description: DescriptionString = null,
-    Id: IdString = null,
-    Name: NameString = null,
-    Predicate: Predicate = null,
-    Schedule: GenericString = null,
-    State: TriggerState = null,
-    Type: TriggerType = null,
-    WorkflowName: NameString = null
-  ): Trigger = {
+  def apply(): Trigger = {
     val __obj = js.Dynamic.literal()
-    if (Actions != null) __obj.updateDynamic("Actions")(Actions.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Predicate != null) __obj.updateDynamic("Predicate")(Predicate.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (WorkflowName != null) __obj.updateDynamic("WorkflowName")(WorkflowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trigger]
   }
+  @scala.inline
+  implicit class TriggerOps[Self <: Trigger] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: Action*): Self = this.set("Actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: ActionList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("Actions", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setId(value: IdString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPredicate(value: Predicate): Self = this.set("Predicate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredicate: Self = this.set("Predicate", js.undefined)
+    @scala.inline
+    def setSchedule(value: GenericString): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    @scala.inline
+    def setState(value: TriggerState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setType(value: TriggerType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setWorkflowName(value: NameString): Self = this.set("WorkflowName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowName: Self = this.set("WorkflowName", js.undefined)
+  }
+  
 }
 

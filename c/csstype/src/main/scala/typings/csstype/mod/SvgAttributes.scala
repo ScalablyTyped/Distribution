@@ -212,6 +212,7 @@ import scala.scalajs.js.annotation._
   - typings.csstype.csstypeStrings.`[textLength]`
   - typings.csstype.csstypeStrings.`[title]`
   - typings.csstype.csstypeStrings.`[to]`
+  - typings.csstype.csstypeStrings.`[transform-origin]`
   - typings.csstype.csstypeStrings.`[transform]`
   - typings.csstype.csstypeStrings.`[type]`
   - typings.csstype.csstypeStrings.`[u1]`
@@ -669,6 +670,8 @@ object SvgAttributes {
   def `[title]`: typings.csstype.csstypeStrings.`[title]` = "[title]".asInstanceOf[typings.csstype.csstypeStrings.`[title]`]
   @scala.inline
   def `[to]`: typings.csstype.csstypeStrings.`[to]` = "[to]".asInstanceOf[typings.csstype.csstypeStrings.`[to]`]
+  @scala.inline
+  def `[transform-origin]`: typings.csstype.csstypeStrings.`[transform-origin]` = "[transform-origin]".asInstanceOf[typings.csstype.csstypeStrings.`[transform-origin]`]
   @scala.inline
   def `[transform]`: typings.csstype.csstypeStrings.`[transform]` = "[transform]".asInstanceOf[typings.csstype.csstypeStrings.`[transform]`]
   @scala.inline

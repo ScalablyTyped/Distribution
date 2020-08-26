@@ -26,18 +26,42 @@ trait DescribeIamInstanceProfileAssociationsRequest extends js.Object {
 
 object DescribeIamInstanceProfileAssociationsRequest {
   @scala.inline
-  def apply(
-    AssociationIds: AssociationIdList = null,
-    Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeIamInstanceProfileAssociationsMaxResults] = js.undefined,
-    NextToken: NextToken = null
-  ): DescribeIamInstanceProfileAssociationsRequest = {
+  def apply(): DescribeIamInstanceProfileAssociationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (AssociationIds != null) __obj.updateDynamic("AssociationIds")(AssociationIds.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIamInstanceProfileAssociationsRequest]
   }
+  @scala.inline
+  implicit class DescribeIamInstanceProfileAssociationsRequestOps[Self <: DescribeIamInstanceProfileAssociationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationIdsVarargs(value: IamInstanceProfileAssociationId*): Self = this.set("AssociationIds", js.Array(value :_*))
+    @scala.inline
+    def setAssociationIds(value: AssociationIdList): Self = this.set("AssociationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationIds: Self = this.set("AssociationIds", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeIamInstanceProfileAssociationsMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,12 @@ import scala.scalajs.js.annotation._
   * Example: Even though S-Bahn and U-Bahn in Berlin are both trains, they have different operators, service patterns,
   * stations and look different. Therefore, they are two distinct products subway and suburban.
   */
+@js.native
 trait ProductType extends js.Object {
-  var id: String
-  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking
-  var name: String
-  var short: String
+  var id: String = js.native
+  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking = js.native
+  var name: String = js.native
+  var short: String = js.native
 }
 
 object ProductType {
@@ -36,5 +37,26 @@ object ProductType {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductType]
   }
+  @scala.inline
+  implicit class ProductTypeOps[Self <: ProductType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
+  }
+  
 }
 

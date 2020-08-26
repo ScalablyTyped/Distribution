@@ -17,17 +17,8 @@ trait Result extends js.Object
 
 object Result {
   @scala.inline
-  def MacOSResult(
-    bounds: Height,
-    id: Double,
-    memoryUsage: Double,
-    owner: MacOSOwner,
-    platform: macos,
-    title: String,
-    url: String = null
-  ): Result = {
+  def MacOSResult(bounds: Height, id: Double, memoryUsage: Double, owner: MacOSOwner, platform: macos, title: String): Result = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
   @scala.inline

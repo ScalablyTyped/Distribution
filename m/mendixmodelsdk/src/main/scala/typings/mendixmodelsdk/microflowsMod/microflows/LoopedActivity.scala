@@ -26,15 +26,15 @@ class LoopedActivity protected () extends Activity {
   @JSName("model")
   var model_FLoopedActivity: IModel = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def errorHandlingType: ErrorHandlingType = js.native
-  def errorHandlingType(newValue: ErrorHandlingType): js.Any = js.native
+  def errorHandlingType_=(newValue: ErrorHandlingType): Unit = js.native
   def iteratedListVariableName: String = js.native
-  def iteratedListVariableName(newValue: String): js.Any = js.native
+  def iteratedListVariableName_=(newValue: String): Unit = js.native
   def loopVariableName: String = js.native
-  def loopVariableName(newValue: String): js.Any = js.native
+  def loopVariableName_=(newValue: String): Unit = js.native
   def objectCollection: MicroflowObjectCollection = js.native
-  def objectCollection(newValue: MicroflowObjectCollection): js.Any = js.native
+  def objectCollection_=(newValue: MicroflowObjectCollection): Unit = js.native
 }
 
 /* static members */

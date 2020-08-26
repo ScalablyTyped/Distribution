@@ -31,6 +31,14 @@ class TestRequest protected () extends js.Object {
     * request.
     */
   def event(event: HttpEvent[_]): Unit = js.native
+  /**
+    * Resolve the request by returning a body plus additional HTTP information (such as response
+    * headers) if provided.
+    * If the request specifies an expected body type, the body is converted into the requested type.
+    * Otherwise, the body is converted to `JSON` by default.
+    *
+    * Both successful and unsuccessful responses can be delivered via `flush()`.
+    */
   def flush(): Unit = js.native
   def flush(body: String): Unit = js.native
   def flush(body: String, opts: StatusText): Unit = js.native
@@ -41,14 +49,6 @@ class TestRequest protected () extends js.Object {
   def flush(body: Double): Unit = js.native
   def flush(body: Double, opts: StatusText): Unit = js.native
   def flush(body: Null, opts: StatusText): Unit = js.native
-  /**
-    * Resolve the request by returning a body plus additional HTTP information (such as response
-    * headers) if provided.
-    * If the request specifies an expected body type, the body is converted into the requested type.
-    * Otherwise, the body is converted to `JSON` by default.
-    *
-    * Both successful and unsuccessful responses can be delivered via `flush()`.
-    */
   def flush(body: ArrayBuffer): Unit = js.native
   def flush(body: ArrayBuffer, opts: StatusText): Unit = js.native
   def flush(body: Blob): Unit = js.native

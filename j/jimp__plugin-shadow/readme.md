@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-shadow
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 Creates a shadow on an image.
@@ -10,9 +10,9 @@ Creates a shadow on an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-shadow |
 | Keywords           | - |
-| # releases         | 79 |
+| # releases         | 100 |
 | # dependents       | 1 |
-| # downloads        | 158652 |
+| # downloads        | 6413202 |
 | # stars            | 0 |
 
 ## Links

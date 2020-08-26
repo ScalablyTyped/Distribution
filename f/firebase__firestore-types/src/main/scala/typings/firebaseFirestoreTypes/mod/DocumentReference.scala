@@ -2,6 +2,7 @@ package typings.firebaseFirestoreTypes.mod
 
 import typings.firebaseFirestoreTypes.anon.Error
 import typings.firebaseFirestoreTypes.anon.Next
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +23,11 @@ class DocumentReference[T] protected () extends js.Object {
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ typings.std.Error, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
@@ -34,6 +40,12 @@ class DocumentReference[T] protected () extends js.Object {
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    options: SnapshotListenOptions,
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ typings.std.Error, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
@@ -43,7 +55,7 @@ class DocumentReference[T] protected () extends js.Object {
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
   def set(data: T): js.Promise[Unit] = js.native
-  def set(data: T, options: SetOptions): js.Promise[Unit] = js.native
+  def set(data: Partial[T], options: SetOptions): js.Promise[Unit] = js.native
   def update(data: UpdateData): js.Promise[Unit] = js.native
   def update(field: String, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[Unit] = js.native
   def update(field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[Unit] = js.native

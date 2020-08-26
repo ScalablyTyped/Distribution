@@ -11,6 +11,7 @@ class ^ protected () extends WebSocket {
   def this(address: String, options: IClientOptions) = this()
   def this(address: String, protocols: String) = this()
   def this(address: String, protocols: js.Array[String]) = this()
+  def this(address: String, protocols: js.UndefOr[scala.Nothing], options: IClientOptions) = this()
   def this(address: String, protocols: String, options: IClientOptions) = this()
   def this(address: String, protocols: js.Array[String], options: IClientOptions) = this()
 }

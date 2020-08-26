@@ -2,6 +2,7 @@ package typings.pulumiAws.spotFleetRequestMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.ec2.SpotFleetRequestLaunchSpecification
+import typings.pulumiAws.outputMod.ec2.SpotFleetRequestLaunchTemplateConfig
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -55,7 +56,6 @@ class SpotFleetRequest protected () extends CustomResource {
     */
   val instanceInterruptionBehaviour: Output_[js.UndefOr[String]] = js.native
   /**
-    *
     * The number of Spot pools across which to allocate your target Spot capacity.
     * Valid only when `allocationStrategy` is set to `lowestPrice`. Spot Fleet selects
     * the cheapest Spot pools and evenly allocates your target Spot capacity across
@@ -65,9 +65,13 @@ class SpotFleetRequest protected () extends CustomResource {
   /**
     * Used to define the launch configuration of the
     * spot-fleet request. Can be specified multiple times to define different bids
-    * across different markets and instance types.
+    * across different markets and instance types. Conflicts with `launchTemplateConfig`. At least one of `launchSpecification` or `launchTemplateConfig` is required.
     */
-  val launchSpecifications: Output_[js.Array[SpotFleetRequestLaunchSpecification]] = js.native
+  val launchSpecifications: Output_[js.UndefOr[js.Array[SpotFleetRequestLaunchSpecification]]] = js.native
+  /**
+    * Launch template configuration block. See Launch Template Configs below for more details. Conflicts with `launchSpecification`. At least one of `launchSpecification` or `launchTemplateConfig` is required.
+    */
+  val launchTemplateConfigs: Output_[js.UndefOr[js.Array[SpotFleetRequestLaunchTemplateConfig]]] = js.native
   /**
     * A list of elastic load balancer names to add to the Spot fleet.
     */
@@ -77,7 +81,7 @@ class SpotFleetRequest protected () extends CustomResource {
     */
   val replaceUnhealthyInstances: Output_[js.UndefOr[Boolean]] = js.native
   /**
-    * The maximum bid price per unit hour.
+    * The maximum spot bid for this override request.
     */
   val spotPrice: Output_[js.UndefOr[String]] = js.native
   /**
@@ -85,9 +89,9 @@ class SpotFleetRequest protected () extends CustomResource {
     */
   val spotRequestState: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The number of units to request. You can choose to set the
     * target capacity in terms of instances or a performance characteristic that is
@@ -130,8 +134,10 @@ object SpotFleetRequest extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): SpotFleetRequest = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SpotFleetRequest = js.native
   def get(name: String, id: Input[ID], state: SpotFleetRequestState): SpotFleetRequest = js.native
   def get(name: String, id: Input[ID], state: SpotFleetRequestState, opts: CustomResourceOptions): SpotFleetRequest = js.native
   /**

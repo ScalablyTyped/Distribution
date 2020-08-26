@@ -25,11 +25,30 @@ trait SchemaCompensationRange extends js.Object {
 
 object SchemaCompensationRange {
   @scala.inline
-  def apply(maxCompensation: SchemaMoney = null, minCompensation: SchemaMoney = null): SchemaCompensationRange = {
+  def apply(): SchemaCompensationRange = {
     val __obj = js.Dynamic.literal()
-    if (maxCompensation != null) __obj.updateDynamic("maxCompensation")(maxCompensation.asInstanceOf[js.Any])
-    if (minCompensation != null) __obj.updateDynamic("minCompensation")(minCompensation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompensationRange]
   }
+  @scala.inline
+  implicit class SchemaCompensationRangeOps[Self <: SchemaCompensationRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxCompensation(value: SchemaMoney): Self = this.set("maxCompensation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCompensation: Self = this.set("maxCompensation", js.undefined)
+    @scala.inline
+    def setMinCompensation(value: SchemaMoney): Self = this.set("minCompensation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCompensation: Self = this.set("minCompensation", js.undefined)
+  }
+  
 }
 

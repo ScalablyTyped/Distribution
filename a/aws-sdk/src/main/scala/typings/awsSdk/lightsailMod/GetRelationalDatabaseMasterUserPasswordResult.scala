@@ -18,11 +18,30 @@ trait GetRelationalDatabaseMasterUserPasswordResult extends js.Object {
 
 object GetRelationalDatabaseMasterUserPasswordResult {
   @scala.inline
-  def apply(createdAt: IsoDate = null, masterUserPassword: SensitiveString = null): GetRelationalDatabaseMasterUserPasswordResult = {
+  def apply(): GetRelationalDatabaseMasterUserPasswordResult = {
     val __obj = js.Dynamic.literal()
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (masterUserPassword != null) __obj.updateDynamic("masterUserPassword")(masterUserPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseMasterUserPasswordResult]
   }
+  @scala.inline
+  implicit class GetRelationalDatabaseMasterUserPasswordResultOps[Self <: GetRelationalDatabaseMasterUserPasswordResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setMasterUserPassword(value: SensitiveString): Self = this.set("masterUserPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUserPassword: Self = this.set("masterUserPassword", js.undefined)
+  }
+  
 }
 

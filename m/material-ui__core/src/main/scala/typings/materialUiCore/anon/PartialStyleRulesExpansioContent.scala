@@ -18,22 +18,46 @@ trait PartialStyleRulesExpansioContent extends js.Object {
 
 object PartialStyleRulesExpansioContent {
   @scala.inline
-  def apply(
-    content: CSSProperties = null,
-    disabled: CSSProperties = null,
-    expandIcon: CSSProperties = null,
-    expanded: CSSProperties = null,
-    focused: CSSProperties = null,
-    root: CSSProperties = null
-  ): PartialStyleRulesExpansioContent = {
+  def apply(): PartialStyleRulesExpansioContent = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesExpansioContent]
   }
+  @scala.inline
+  implicit class PartialStyleRulesExpansioContentOps[Self <: PartialStyleRulesExpansioContent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: CSSProperties): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setExpandIcon(value: CSSProperties): Self = this.set("expandIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandIcon: Self = this.set("expandIcon", js.undefined)
+    @scala.inline
+    def setExpanded(value: CSSProperties): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    @scala.inline
+    def setFocused(value: CSSProperties): Self = this.set("focused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocused: Self = this.set("focused", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

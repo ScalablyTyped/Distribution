@@ -13,7 +13,7 @@ trait ErrorStatic
      with Instantiable2[(/* error */ Double) | (/* error */ String), /* reason */ String, Error]
      with Instantiable3[
       (/* error */ Double) | (/* error */ String), 
-      /* reason */ String, 
+      js.UndefOr[/* reason */ String], 
       /* details */ String, 
       Error
     ]

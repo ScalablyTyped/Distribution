@@ -567,19 +567,19 @@ trait WebGL2RenderingContext
    //[WebGLHandlesContextLoss]
   def beginQuery(target: Double, query: WebGLQuery): Unit = js.native
   def beginTransformFeedback(primitiveMode: Double): Unit = js.native
-  def bindBufferBase(target: Double, index: Double): Unit = js.native
   /* Uniform Buffer Objects and Transform Feedback Buffers */
+  def bindBufferBase(target: Double, index: Double): Unit = js.native
   def bindBufferBase(target: Double, index: Double, buffer: WebGLBuffer): Unit = js.native
   def bindBufferRange(target: Double, index: Double, buffer: Null, offset: Double, size: Double): Unit = js.native
   def bindBufferRange(target: Double, index: Double, buffer: WebGLBuffer, offset: Double, size: Double): Unit = js.native
+   //[WebGLHandlesContextLoss]
   def bindSampler(unit: Double): Unit = js.native
-   //[WebGLHandlesContextLoss]
   def bindSampler(unit: Double, sampler: WebGLSampler): Unit = js.native
+   //[WebGLHandlesContextLoss]
   def bindTransformFeedback(target: Double): Unit = js.native
-   //[WebGLHandlesContextLoss]
   def bindTransformFeedback(target: Double, tf: WebGLTransformFeedback): Unit = js.native
-  def bindVertexArray(): Unit = js.native
    //[WebGLHandlesContextLoss]
+  def bindVertexArray(): Unit = js.native
   def bindVertexArray(array: WebGLVertexArrayObject): Unit = js.native
   /* Framebuffer objects */
   def blitFramebuffer(
@@ -596,37 +596,57 @@ trait WebGL2RenderingContext
   ): Unit = js.native
   // For compatibility with WebGL 1 context in older Typescript versions.
   def bufferData(target: Double, data: ArrayBufferView, usage: Double): Unit = js.native
-                   // 0x9247
-  /* Buffer objects */
-  // WebGL1:
-  def bufferData(
-    target: Double,
-    sizeOrData: Double | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null,
-    usage: Double
-  ): Unit = js.native
+  def bufferData(target: Double, sizeOrData: ArrayBuffer, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: DataView, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: Float32Array, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: Float64Array, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: Int16Array, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: Int32Array, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: Int8Array, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: Uint16Array, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: Uint32Array, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: Uint8Array, usage: Double): Unit = js.native
+  def bufferData(target: Double, sizeOrData: Uint8ClampedArray, usage: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Null, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Null, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: ArrayBuffer, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: ArrayBuffer, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: DataView, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: DataView, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Float32Array, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Float32Array, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Float64Array, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Float64Array, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Int16Array, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Int16Array, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Int32Array, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Int32Array, usage: Double, srcOffset: Double, length: Double): Unit = js.native
   // WebGL2:
-  def bufferData(
-    target: Double,
-    srcData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null,
-    usage: Double,
-    srcOffset: Double
-  ): Unit = js.native
-  def bufferData(
-    target: Double,
-    srcData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null,
-    usage: Double,
-    srcOffset: Double,
-    length: Double
-  ): Unit = js.native
+  def bufferData(target: Double, srcData: Int8Array, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Int8Array, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Uint16Array, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Uint16Array, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Uint32Array, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Uint32Array, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Uint8Array, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Uint8Array, usage: Double, srcOffset: Double, length: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Uint8ClampedArray, usage: Double, srcOffset: Double): Unit = js.native
+  def bufferData(target: Double, srcData: Uint8ClampedArray, usage: Double, srcOffset: Double, length: Double): Unit = js.native
   def bufferSubData(target: Double, dstByteOffset: Double): Unit = js.native
-  def bufferSubData(
-    target: Double,
-    dstByteOffset: Double,
-    srcData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: ArrayBuffer): Unit = js.native
   def bufferSubData(target: Double, dstByteOffset: Double, srcData: ArrayBufferView): Unit = js.native
   def bufferSubData(target: Double, dstByteOffset: Double, srcData: ArrayBufferView, srcOffset: Double): Unit = js.native
   def bufferSubData(target: Double, dstByteOffset: Double, srcData: ArrayBufferView, srcOffset: Double, length: Double): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: DataView): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: Float32Array): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: Float64Array): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: Int16Array): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: Int32Array): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: Int8Array): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: Uint16Array): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: Uint32Array): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: Uint8Array): Unit = js.native
+  def bufferSubData(target: Double, dstByteOffset: Double, srcData: Uint8ClampedArray): Unit = js.native
   def clearBufferfi(buffer: Double, drawbuffer: Double, depth: Double, stencil: Double): Unit = js.native
   def clearBufferfv(buffer: Double, drawbuffer: Double, values: ArrayLike[Double]): Unit = js.native
   def clearBufferfv(buffer: Double, drawbuffer: Double, values: ArrayLike[Double], srcOffset: Double): Unit = js.native
@@ -666,7 +686,9 @@ trait WebGL2RenderingContext
     width: Double,
     height: Double,
     border: Double,
-    srcData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView
+    srcData: Null,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
   ): Unit = js.native
   def compressedTexImage2D(
     target: Double,
@@ -675,7 +697,7 @@ trait WebGL2RenderingContext
     width: Double,
     height: Double,
     border: Double,
-    srcData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView,
+    srcData: Null,
     srcOffset: Double
   ): Unit = js.native
   def compressedTexImage2D(
@@ -685,8 +707,19 @@ trait WebGL2RenderingContext
     width: Double,
     height: Double,
     border: Double,
-    srcData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView,
+    srcData: Null,
     srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: ArrayBufferView,
+    srcOffset: js.UndefOr[scala.Nothing],
     srcLengthOverride: Double
   ): Unit = js.native
   def compressedTexImage2D(
@@ -707,6 +740,416 @@ trait WebGL2RenderingContext
     height: Double,
     border: Double,
     srcData: ArrayBufferView,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: DataView
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: DataView,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: DataView,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: DataView,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Float32Array
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Float32Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Float32Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Float64Array
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Float64Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Float64Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Float64Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int16Array
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int16Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int16Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int16Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int32Array
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int32Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int32Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int8Array
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int8Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int8Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Int8Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint16Array
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint16Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint16Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint16Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint32Array
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint32Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint32Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint8Array
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint8Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint8Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint8Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint8ClampedArray
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint8ClampedArray,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint8ClampedArray,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    border: Double,
+    srcData: Uint8ClampedArray,
     srcOffset: Double,
     srcLengthOverride: Double
   ): Unit = js.native
@@ -730,6 +1173,18 @@ trait WebGL2RenderingContext
     depth: Double,
     border: Double,
     srcData: ArrayBufferView
+  ): Unit = js.native
+  def compressedTexImage3D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    width: Double,
+    height: Double,
+    depth: Double,
+    border: Double,
+    srcData: ArrayBufferView,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
   ): Unit = js.native
   def compressedTexImage3D(
     target: Double,
@@ -782,29 +1237,8 @@ trait WebGL2RenderingContext
     width: Double,
     height: Double,
     format: Double,
-    srcData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView
-  ): Unit = js.native
-  def compressedTexSubImage2D(
-    target: Double,
-    level: Double,
-    xoffset: Double,
-    yoffset: Double,
-    width: Double,
-    height: Double,
-    format: Double,
-    srcData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView,
-    srcOffset: Double
-  ): Unit = js.native
-  def compressedTexSubImage2D(
-    target: Double,
-    level: Double,
-    xoffset: Double,
-    yoffset: Double,
-    width: Double,
-    height: Double,
-    format: Double,
-    srcData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView,
-    srcOffset: Double,
+    srcData: Null,
+    srcOffset: js.UndefOr[scala.Nothing],
     srcLengthOverride: Double
   ): Unit = js.native
   def compressedTexSubImage2D(
@@ -839,6 +1273,18 @@ trait WebGL2RenderingContext
     height: Double,
     format: Double,
     srcData: ArrayBufferView,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: ArrayBufferView,
     srcOffset: Double
   ): Unit = js.native
   def compressedTexSubImage2D(
@@ -850,6 +1296,456 @@ trait WebGL2RenderingContext
     height: Double,
     format: Double,
     srcData: ArrayBufferView,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: DataView
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: DataView,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: DataView,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: DataView,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Float32Array
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Float32Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Float32Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Float64Array
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Float64Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Float64Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Float64Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int16Array
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int16Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int16Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int16Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int32Array
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int32Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int32Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int8Array
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int8Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int8Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Int8Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint16Array
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint16Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint16Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint16Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint32Array
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint32Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint32Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint8Array
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint8Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint8Array,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint8Array,
+    srcOffset: Double,
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint8ClampedArray
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint8ClampedArray,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint8ClampedArray,
+    srcOffset: Double
+  ): Unit = js.native
+  def compressedTexSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    srcData: Uint8ClampedArray,
     srcOffset: Double,
     srcLengthOverride: Double
   ): Unit = js.native
@@ -877,6 +1773,20 @@ trait WebGL2RenderingContext
     depth: Double,
     format: Double,
     srcData: ArrayBufferView
+  ): Unit = js.native
+  def compressedTexSubImage3D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    zoffset: Double,
+    width: Double,
+    height: Double,
+    depth: Double,
+    format: Double,
+    srcData: ArrayBufferView,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLengthOverride: Double
   ): Unit = js.native
   def compressedTexSubImage3D(
     target: Double,
@@ -929,8 +1839,8 @@ trait WebGL2RenderingContext
   def deleteQuery(query: WebGLQuery): Unit = js.native
   def deleteSampler(): Unit = js.native
   def deleteSampler(sampler: WebGLSampler): Unit = js.native
-  def deleteSync(): Unit = js.native
    //[WebGLHandlesContextLoss]
+  def deleteSync(): Unit = js.native
   def deleteSync(sync: WebGLSync): Unit = js.native
   def deleteTransformFeedback(): Unit = js.native
   def deleteTransformFeedback(tf: WebGLTransformFeedback): Unit = js.native
@@ -954,6 +1864,13 @@ trait WebGL2RenderingContext
   // can not be exposed safely to JavaScript. GetBufferSubData
   // replaces it for the purpose of fetching data back from the GPU.
   def getBufferSubData(target: Double, srcByteOffset: Double, dstBuffer: ArrayBufferView): Unit = js.native
+  def getBufferSubData(
+    target: Double,
+    srcByteOffset: Double,
+    dstBuffer: ArrayBufferView,
+    dstOffset: js.UndefOr[scala.Nothing],
+    length: Double
+  ): Unit = js.native
   def getBufferSubData(target: Double, srcByteOffset: Double, dstBuffer: ArrayBufferView, dstOffset: Double): Unit = js.native
   def getBufferSubData(
     target: Double,
@@ -995,7 +1912,8 @@ trait WebGL2RenderingContext
     height: Double,
     format: Double,
     `type`: Double,
-    dstData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView
+    dstData: ArrayBufferView,
+    dstOffset: Double
   ): Unit = js.native
   def readPixels(
     x: Double,
@@ -1004,8 +1922,88 @@ trait WebGL2RenderingContext
     height: Double,
     format: Double,
     `type`: Double,
-    dstData: ArrayBufferView,
-    dstOffset: Double
+    dstData: DataView
+  ): Unit = js.native
+  def readPixels(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    `type`: Double,
+    dstData: Float32Array
+  ): Unit = js.native
+  def readPixels(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    `type`: Double,
+    dstData: Float64Array
+  ): Unit = js.native
+  def readPixels(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    `type`: Double,
+    dstData: Int16Array
+  ): Unit = js.native
+  def readPixels(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    `type`: Double,
+    dstData: Int32Array
+  ): Unit = js.native
+  def readPixels(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    `type`: Double,
+    dstData: Int8Array
+  ): Unit = js.native
+  def readPixels(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    `type`: Double,
+    dstData: Uint16Array
+  ): Unit = js.native
+  def readPixels(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    `type`: Double,
+    dstData: Uint32Array
+  ): Unit = js.native
+  def readPixels(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    `type`: Double,
+    dstData: Uint8Array
+  ): Unit = js.native
+  def readPixels(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    format: Double,
+    `type`: Double,
+    dstData: Uint8ClampedArray
   ): Unit = js.native
   // WebGL2:
   def readPixels(
@@ -1143,6 +2141,7 @@ trait WebGL2RenderingContext
     srcData: ArrayBufferView,
     srcOffset: Double
   ): Unit = js.native
+   // May throw DOMException
   def texImage3D(
     target: Double,
     level: Double,
@@ -1226,7 +2225,6 @@ trait WebGL2RenderingContext
     `type`: Double,
     source: ImageBitmap
   ): Unit = js.native
-   // May throw DOMException
   def texImage3D(
     target: Double,
     level: Double,
@@ -1387,6 +2385,7 @@ trait WebGL2RenderingContext
     srcData: ArrayBufferView,
     srcOffset: Double
   ): Unit = js.native
+   // May throw DOMException
   def texSubImage3D(
     target: Double,
     level: Double,
@@ -1491,7 +2490,6 @@ trait WebGL2RenderingContext
     srcData: Null,
     srcOffset: Double
   ): Unit = js.native
-   // May throw DOMException
   def texSubImage3D(
     target: Double,
     level: Double,
@@ -1521,166 +2519,355 @@ trait WebGL2RenderingContext
   ): Unit = js.native
   def transformFeedbackVaryings(program: WebGLProgram, varyings: js.Array[String], bufferMode: Double): Unit = js.native
   def uniform1fv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform1fv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform1fv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform1fv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1fv(location: Null, data: Float32Array): Unit = js.native
+  def uniform1fv(location: Null, data: Float32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform1fv(location: Null, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniform1fv(location: Null, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1fv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform1fv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform1fv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform1fv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1fv(location: WebGLUniformLocation, data: Float32Array): Unit = js.native
+  def uniform1fv(
+    location: WebGLUniformLocation,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform1fv(location: WebGLUniformLocation, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniform1fv(location: WebGLUniformLocation, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1iv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform1iv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform1iv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform1iv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1iv(location: Null, data: Int32Array): Unit = js.native
+  def uniform1iv(location: Null, data: Int32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform1iv(location: Null, data: Int32Array, srcOffset: Double): Unit = js.native
   def uniform1iv(location: Null, data: Int32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1iv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform1iv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform1iv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform1iv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1iv(location: WebGLUniformLocation, data: Int32Array): Unit = js.native
+  def uniform1iv(
+    location: WebGLUniformLocation,
+    data: Int32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform1iv(location: WebGLUniformLocation, data: Int32Array, srcOffset: Double): Unit = js.native
   def uniform1iv(location: WebGLUniformLocation, data: Int32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1ui(location: Null, v0: Double): Unit = js.native
   /* Uniforms */
   def uniform1ui(location: WebGLUniformLocation, v0: Double): Unit = js.native
   def uniform1uiv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform1uiv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform1uiv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform1uiv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1uiv(location: Null, data: Uint32Array): Unit = js.native
+  def uniform1uiv(location: Null, data: Uint32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform1uiv(location: Null, data: Uint32Array, srcOffset: Double): Unit = js.native
   def uniform1uiv(location: Null, data: Uint32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1uiv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform1uiv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform1uiv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform1uiv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform1uiv(location: WebGLUniformLocation, data: Uint32Array): Unit = js.native
+  def uniform1uiv(
+    location: WebGLUniformLocation,
+    data: Uint32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform1uiv(location: WebGLUniformLocation, data: Uint32Array, srcOffset: Double): Unit = js.native
   def uniform1uiv(location: WebGLUniformLocation, data: Uint32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2fv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform2fv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform2fv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform2fv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2fv(location: Null, data: Float32Array): Unit = js.native
+  def uniform2fv(location: Null, data: Float32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform2fv(location: Null, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniform2fv(location: Null, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2fv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform2fv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform2fv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform2fv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2fv(location: WebGLUniformLocation, data: Float32Array): Unit = js.native
+  def uniform2fv(
+    location: WebGLUniformLocation,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform2fv(location: WebGLUniformLocation, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniform2fv(location: WebGLUniformLocation, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2iv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform2iv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform2iv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform2iv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2iv(location: Null, data: Int32Array): Unit = js.native
+  def uniform2iv(location: Null, data: Int32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform2iv(location: Null, data: Int32Array, srcOffset: Double): Unit = js.native
   def uniform2iv(location: Null, data: Int32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2iv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform2iv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform2iv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform2iv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2iv(location: WebGLUniformLocation, data: Int32Array): Unit = js.native
+  def uniform2iv(
+    location: WebGLUniformLocation,
+    data: Int32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform2iv(location: WebGLUniformLocation, data: Int32Array, srcOffset: Double): Unit = js.native
   def uniform2iv(location: WebGLUniformLocation, data: Int32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2ui(location: Null, v0: Double, v1: Double): Unit = js.native
   def uniform2ui(location: WebGLUniformLocation, v0: Double, v1: Double): Unit = js.native
   def uniform2uiv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform2uiv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform2uiv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform2uiv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2uiv(location: Null, data: Uint32Array): Unit = js.native
+  def uniform2uiv(location: Null, data: Uint32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform2uiv(location: Null, data: Uint32Array, srcOffset: Double): Unit = js.native
   def uniform2uiv(location: Null, data: Uint32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2uiv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform2uiv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform2uiv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform2uiv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform2uiv(location: WebGLUniformLocation, data: Uint32Array): Unit = js.native
+  def uniform2uiv(
+    location: WebGLUniformLocation,
+    data: Uint32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform2uiv(location: WebGLUniformLocation, data: Uint32Array, srcOffset: Double): Unit = js.native
   def uniform2uiv(location: WebGLUniformLocation, data: Uint32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3fv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform3fv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform3fv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform3fv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3fv(location: Null, data: Float32Array): Unit = js.native
+  def uniform3fv(location: Null, data: Float32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform3fv(location: Null, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniform3fv(location: Null, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3fv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform3fv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform3fv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform3fv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3fv(location: WebGLUniformLocation, data: Float32Array): Unit = js.native
+  def uniform3fv(
+    location: WebGLUniformLocation,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform3fv(location: WebGLUniformLocation, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniform3fv(location: WebGLUniformLocation, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3iv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform3iv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform3iv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform3iv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3iv(location: Null, data: Int32Array): Unit = js.native
+  def uniform3iv(location: Null, data: Int32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform3iv(location: Null, data: Int32Array, srcOffset: Double): Unit = js.native
   def uniform3iv(location: Null, data: Int32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3iv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform3iv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform3iv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform3iv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3iv(location: WebGLUniformLocation, data: Int32Array): Unit = js.native
+  def uniform3iv(
+    location: WebGLUniformLocation,
+    data: Int32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform3iv(location: WebGLUniformLocation, data: Int32Array, srcOffset: Double): Unit = js.native
   def uniform3iv(location: WebGLUniformLocation, data: Int32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3ui(location: Null, v0: Double, v1: Double, v2: Double): Unit = js.native
   def uniform3ui(location: WebGLUniformLocation, v0: Double, v1: Double, v2: Double): Unit = js.native
   def uniform3uiv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform3uiv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform3uiv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform3uiv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3uiv(location: Null, data: Uint32Array): Unit = js.native
+  def uniform3uiv(location: Null, data: Uint32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform3uiv(location: Null, data: Uint32Array, srcOffset: Double): Unit = js.native
   def uniform3uiv(location: Null, data: Uint32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3uiv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform3uiv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform3uiv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform3uiv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform3uiv(location: WebGLUniformLocation, data: Uint32Array): Unit = js.native
+  def uniform3uiv(
+    location: WebGLUniformLocation,
+    data: Uint32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform3uiv(location: WebGLUniformLocation, data: Uint32Array, srcOffset: Double): Unit = js.native
   def uniform3uiv(location: WebGLUniformLocation, data: Uint32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4fv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform4fv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform4fv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform4fv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4fv(location: Null, data: Float32Array): Unit = js.native
+  def uniform4fv(location: Null, data: Float32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform4fv(location: Null, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniform4fv(location: Null, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4fv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform4fv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform4fv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform4fv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4fv(location: WebGLUniformLocation, data: Float32Array): Unit = js.native
+  def uniform4fv(
+    location: WebGLUniformLocation,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform4fv(location: WebGLUniformLocation, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniform4fv(location: WebGLUniformLocation, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4iv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform4iv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform4iv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform4iv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4iv(location: Null, data: Int32Array): Unit = js.native
+  def uniform4iv(location: Null, data: Int32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform4iv(location: Null, data: Int32Array, srcOffset: Double): Unit = js.native
   def uniform4iv(location: Null, data: Int32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4iv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform4iv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform4iv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform4iv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4iv(location: WebGLUniformLocation, data: Int32Array): Unit = js.native
+  def uniform4iv(
+    location: WebGLUniformLocation,
+    data: Int32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform4iv(location: WebGLUniformLocation, data: Int32Array, srcOffset: Double): Unit = js.native
   def uniform4iv(location: WebGLUniformLocation, data: Int32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4ui(location: Null, v0: Double, v1: Double, v2: Double, v3: Double): Unit = js.native
   def uniform4ui(location: WebGLUniformLocation, v0: Double, v1: Double, v2: Double, v3: Double): Unit = js.native
   def uniform4uiv(location: Null, data: ArrayLike[Double]): Unit = js.native
+  def uniform4uiv(location: Null, data: ArrayLike[Double], srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform4uiv(location: Null, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform4uiv(location: Null, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4uiv(location: Null, data: Uint32Array): Unit = js.native
+  def uniform4uiv(location: Null, data: Uint32Array, srcOffset: js.UndefOr[scala.Nothing], srcLength: Double): Unit = js.native
   def uniform4uiv(location: Null, data: Uint32Array, srcOffset: Double): Unit = js.native
   def uniform4uiv(location: Null, data: Uint32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4uiv(location: WebGLUniformLocation, data: ArrayLike[Double]): Unit = js.native
+  def uniform4uiv(
+    location: WebGLUniformLocation,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform4uiv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniform4uiv(location: WebGLUniformLocation, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniform4uiv(location: WebGLUniformLocation, data: Uint32Array): Unit = js.native
+  def uniform4uiv(
+    location: WebGLUniformLocation,
+    data: Uint32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniform4uiv(location: WebGLUniformLocation, data: Uint32Array, srcOffset: Double): Unit = js.native
   def uniform4uiv(location: WebGLUniformLocation, data: Uint32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformBlockBinding(program: WebGLProgram, uniformBlockIndex: Double, uniformBlockBinding: Double): Unit = js.native
   def uniformMatrix2fv(location: Null, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix2fv(
+    location: Null,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix2fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix2fv(location: Null, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix2fv(
+    location: Null,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix2fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix2fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix2fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix2fv(
     location: WebGLUniformLocation,
@@ -1690,6 +2877,13 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix2fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix2fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix2fv(
     location: WebGLUniformLocation,
@@ -1699,12 +2893,33 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix2x3fv(location: Null, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix2x3fv(
+    location: Null,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2x3fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix2x3fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix2x3fv(location: Null, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix2x3fv(
+    location: Null,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2x3fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix2x3fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix2x3fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix2x3fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2x3fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix2x3fv(
     location: WebGLUniformLocation,
@@ -1714,6 +2929,13 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix2x3fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix2x3fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2x3fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix2x3fv(
     location: WebGLUniformLocation,
@@ -1723,12 +2945,33 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix2x4fv(location: Null, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix2x4fv(
+    location: Null,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2x4fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix2x4fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix2x4fv(location: Null, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix2x4fv(
+    location: Null,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2x4fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix2x4fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix2x4fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix2x4fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2x4fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix2x4fv(
     location: WebGLUniformLocation,
@@ -1738,6 +2981,13 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix2x4fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix2x4fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix2x4fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix2x4fv(
     location: WebGLUniformLocation,
@@ -1747,12 +2997,33 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix3fv(location: Null, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix3fv(
+    location: Null,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix3fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix3fv(location: Null, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix3fv(
+    location: Null,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix3fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix3fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix3fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix3fv(
     location: WebGLUniformLocation,
@@ -1762,6 +3033,13 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix3fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix3fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix3fv(
     location: WebGLUniformLocation,
@@ -1771,12 +3049,33 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix3x2fv(location: Null, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix3x2fv(
+    location: Null,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3x2fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix3x2fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix3x2fv(location: Null, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix3x2fv(
+    location: Null,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3x2fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix3x2fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix3x2fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix3x2fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3x2fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix3x2fv(
     location: WebGLUniformLocation,
@@ -1786,6 +3085,13 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix3x2fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix3x2fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3x2fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix3x2fv(
     location: WebGLUniformLocation,
@@ -1795,12 +3101,33 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix3x4fv(location: Null, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix3x4fv(
+    location: Null,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3x4fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix3x4fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix3x4fv(location: Null, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix3x4fv(
+    location: Null,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3x4fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix3x4fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix3x4fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix3x4fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3x4fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix3x4fv(
     location: WebGLUniformLocation,
@@ -1810,6 +3137,13 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix3x4fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix3x4fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix3x4fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix3x4fv(
     location: WebGLUniformLocation,
@@ -1819,12 +3153,33 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix4fv(location: Null, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix4fv(
+    location: Null,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix4fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix4fv(location: Null, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix4fv(
+    location: Null,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix4fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix4fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix4fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix4fv(
     location: WebGLUniformLocation,
@@ -1834,6 +3189,13 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix4fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix4fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix4fv(
     location: WebGLUniformLocation,
@@ -1843,12 +3205,33 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix4x2fv(location: Null, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix4x2fv(
+    location: Null,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4x2fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix4x2fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix4x2fv(location: Null, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix4x2fv(
+    location: Null,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4x2fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix4x2fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix4x2fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix4x2fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4x2fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix4x2fv(
     location: WebGLUniformLocation,
@@ -1858,6 +3241,13 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix4x2fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix4x2fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4x2fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix4x2fv(
     location: WebGLUniformLocation,
@@ -1867,12 +3257,33 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix4x3fv(location: Null, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix4x3fv(
+    location: Null,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4x3fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix4x3fv(location: Null, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix4x3fv(location: Null, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix4x3fv(
+    location: Null,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4x3fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix4x3fv(location: Null, transpose: Boolean, data: Float32Array, srcOffset: Double, srcLength: Double): Unit = js.native
   def uniformMatrix4x3fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double]): Unit = js.native
+  def uniformMatrix4x3fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: ArrayLike[Double],
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4x3fv(location: WebGLUniformLocation, transpose: Boolean, data: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def uniformMatrix4x3fv(
     location: WebGLUniformLocation,
@@ -1882,6 +3293,13 @@ trait WebGL2RenderingContext
     srcLength: Double
   ): Unit = js.native
   def uniformMatrix4x3fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array): Unit = js.native
+  def uniformMatrix4x3fv(
+    location: WebGLUniformLocation,
+    transpose: Boolean,
+    data: Float32Array,
+    srcOffset: js.UndefOr[scala.Nothing],
+    srcLength: Double
+  ): Unit = js.native
   def uniformMatrix4x3fv(location: WebGLUniformLocation, transpose: Boolean, data: Float32Array, srcOffset: Double): Unit = js.native
   def uniformMatrix4x3fv(
     location: WebGLUniformLocation,

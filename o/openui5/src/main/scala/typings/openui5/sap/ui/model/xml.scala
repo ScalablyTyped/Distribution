@@ -64,6 +64,7 @@ object xml extends js.Object {
       * found.
       */
     def setProperty(sPath: String, oValue: js.Any): Boolean = js.native
+    def setProperty(sPath: String, oValue: js.Any, oContext: js.UndefOr[scala.Nothing], bAsyncUpdate: Boolean): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
     def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
     /**

@@ -13,8 +13,76 @@ trait Research extends js.Object {
   val Parent: js.Any = js.native
   def IsResearchService(ServiceID: String): Boolean = js.native
   def Query(ServiceID: String): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: js.UndefOr[scala.Nothing],
+    QueryLanguage: js.UndefOr[scala.Nothing],
+    UseSelection: js.UndefOr[scala.Nothing],
+    LaunchQuery: Boolean
+  ): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: js.UndefOr[scala.Nothing],
+    QueryLanguage: js.UndefOr[scala.Nothing],
+    UseSelection: Boolean
+  ): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: js.UndefOr[scala.Nothing],
+    QueryLanguage: js.UndefOr[scala.Nothing],
+    UseSelection: Boolean,
+    LaunchQuery: Boolean
+  ): js.Any = js.native
+  def Query(ServiceID: String, QueryString: js.UndefOr[scala.Nothing], QueryLanguage: js.Any): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: js.UndefOr[scala.Nothing],
+    QueryLanguage: js.Any,
+    UseSelection: js.UndefOr[scala.Nothing],
+    LaunchQuery: Boolean
+  ): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: js.UndefOr[scala.Nothing],
+    QueryLanguage: js.Any,
+    UseSelection: Boolean
+  ): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: js.UndefOr[scala.Nothing],
+    QueryLanguage: js.Any,
+    UseSelection: Boolean,
+    LaunchQuery: Boolean
+  ): js.Any = js.native
   def Query(ServiceID: String, QueryString: String): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: String,
+    QueryLanguage: js.UndefOr[scala.Nothing],
+    UseSelection: js.UndefOr[scala.Nothing],
+    LaunchQuery: Boolean
+  ): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: String,
+    QueryLanguage: js.UndefOr[scala.Nothing],
+    UseSelection: Boolean
+  ): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: String,
+    QueryLanguage: js.UndefOr[scala.Nothing],
+    UseSelection: Boolean,
+    LaunchQuery: Boolean
+  ): js.Any = js.native
   def Query(ServiceID: String, QueryString: String, QueryLanguage: js.Any): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: String,
+    QueryLanguage: js.Any,
+    UseSelection: js.UndefOr[scala.Nothing],
+    LaunchQuery: Boolean
+  ): js.Any = js.native
   def Query(ServiceID: String, QueryString: String, QueryLanguage: js.Any, UseSelection: Boolean): js.Any = js.native
   def Query(
     ServiceID: String,

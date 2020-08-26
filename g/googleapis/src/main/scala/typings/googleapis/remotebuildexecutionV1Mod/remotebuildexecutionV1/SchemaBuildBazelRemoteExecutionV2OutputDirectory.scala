@@ -26,11 +26,30 @@ trait SchemaBuildBazelRemoteExecutionV2OutputDirectory extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2OutputDirectory {
   @scala.inline
-  def apply(path: String = null, treeDigest: SchemaBuildBazelRemoteExecutionV2Digest = null): SchemaBuildBazelRemoteExecutionV2OutputDirectory = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2OutputDirectory = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (treeDigest != null) __obj.updateDynamic("treeDigest")(treeDigest.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2OutputDirectory]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2OutputDirectoryOps[Self <: SchemaBuildBazelRemoteExecutionV2OutputDirectory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setTreeDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = this.set("treeDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeDigest: Self = this.set("treeDigest", js.undefined)
+  }
+  
 }
 

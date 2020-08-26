@@ -1,7 +1,7 @@
 package typings.pulumiAws.mod.apigateway
 
-import typings.pulumiAws.vpcLinkMod.VpcLinkArgs
-import typings.pulumiAws.vpcLinkMod.VpcLinkState
+import typings.pulumiAws.apigatewayVpcLinkMod.VpcLinkArgs
+import typings.pulumiAws.apigatewayVpcLinkMod.VpcLinkState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -35,10 +35,12 @@ object VpcLink extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  def get(name: String, id: Input[ID]): typings.pulumiAws.vpcLinkMod.VpcLink = js.native
-  def get(name: String, id: Input[ID], state: VpcLinkState): typings.pulumiAws.vpcLinkMod.VpcLink = js.native
-  def get(name: String, id: Input[ID], state: VpcLinkState, opts: CustomResourceOptions): typings.pulumiAws.vpcLinkMod.VpcLink = js.native
+  def get(name: String, id: Input[ID]): typings.pulumiAws.apigatewayVpcLinkMod.VpcLink = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.apigatewayVpcLinkMod.VpcLink = js.native
+  def get(name: String, id: Input[ID], state: VpcLinkState): typings.pulumiAws.apigatewayVpcLinkMod.VpcLink = js.native
+  def get(name: String, id: Input[ID], state: VpcLinkState, opts: CustomResourceOptions): typings.pulumiAws.apigatewayVpcLinkMod.VpcLink = js.native
   /**
     * Returns true if the given object is an instance of VpcLink.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.

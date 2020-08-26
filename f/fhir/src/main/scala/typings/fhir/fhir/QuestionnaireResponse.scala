@@ -8,118 +8,136 @@ import scala.scalajs.js.annotation._
   * A structured set of questions and their answers
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait QuestionnaireResponse extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait QuestionnaireResponse extends DomainResource {
   /**
     * Contains extended information for property 'authored'.
     */
-  var _authored: js.UndefOr[Element] = js.undefined
+  var _authored: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Person who received and recorded the answers
     */
-  var author: js.UndefOr[Reference] = js.undefined
+  var author: js.UndefOr[Reference] = js.native
   /**
     * Date the answers were gathered
     */
-  var authored: js.UndefOr[dateTime] = js.undefined
+  var authored: js.UndefOr[dateTime] = js.native
   /**
     * Request fulfilled by this QuestionnaireResponse
     */
-  var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
+  var basedOn: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Encounter or Episode during which questionnaire was completed
     */
-  var context: js.UndefOr[Reference] = js.undefined
+  var context: js.UndefOr[Reference] = js.native
   /**
     * Unique id for this set of answers
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Groups and questions
     */
-  var item: js.UndefOr[js.Array[QuestionnaireResponseItem]] = js.undefined
+  var item: js.UndefOr[js.Array[QuestionnaireResponseItem]] = js.native
   /**
     * Part of this action
     */
-  var parent: js.UndefOr[js.Array[Reference]] = js.undefined
+  var parent: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Form being answered
     */
-  var questionnaire: js.UndefOr[Reference] = js.undefined
+  var questionnaire: js.UndefOr[Reference] = js.native
   /**
     * The person who answered the questions
     */
-  var source: js.UndefOr[Reference] = js.undefined
+  var source: js.UndefOr[Reference] = js.native
   /**
     * in-progress | completed | amended | entered-in-error | stopped
     */
-  var status: code
+  var status: code = js.native
   /**
     * The subject of the questions
     */
-  var subject: js.UndefOr[Reference] = js.undefined
+  var subject: js.UndefOr[Reference] = js.native
 }
 
 object QuestionnaireResponse {
   @scala.inline
-  def apply(
-    status: code,
-    _authored: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    author: Reference = null,
-    authored: dateTime = null,
-    basedOn: js.Array[Reference] = null,
-    contained: js.Array[Resource] = null,
-    context: Reference = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: Identifier = null,
-    implicitRules: uri = null,
-    item: js.Array[QuestionnaireResponseItem] = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    parent: js.Array[Reference] = null,
-    questionnaire: Reference = null,
-    resourceType: code = null,
-    source: Reference = null,
-    subject: Reference = null,
-    text: Narrative = null
-  ): QuestionnaireResponse = {
+  def apply(status: code): QuestionnaireResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (_authored != null) __obj.updateDynamic("_authored")(_authored.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (authored != null) __obj.updateDynamic("authored")(authored.asInstanceOf[js.Any])
-    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (questionnaire != null) __obj.updateDynamic("questionnaire")(questionnaire.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestionnaireResponse]
   }
+  @scala.inline
+  implicit class QuestionnaireResponseOps[Self <: QuestionnaireResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_authored(value: Element): Self = this.set("_authored", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_authored: Self = this.set("_authored", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setAuthor(value: Reference): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setAuthored(value: dateTime): Self = this.set("authored", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthored: Self = this.set("authored", js.undefined)
+    @scala.inline
+    def setBasedOnVarargs(value: Reference*): Self = this.set("basedOn", js.Array(value :_*))
+    @scala.inline
+    def setBasedOn(value: js.Array[Reference]): Self = this.set("basedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasedOn: Self = this.set("basedOn", js.undefined)
+    @scala.inline
+    def setContext(value: Reference): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setItemVarargs(value: QuestionnaireResponseItem*): Self = this.set("item", js.Array(value :_*))
+    @scala.inline
+    def setItem(value: js.Array[QuestionnaireResponseItem]): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setParentVarargs(value: Reference*): Self = this.set("parent", js.Array(value :_*))
+    @scala.inline
+    def setParent(value: js.Array[Reference]): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setQuestionnaire(value: Reference): Self = this.set("questionnaire", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuestionnaire: Self = this.set("questionnaire", js.undefined)
+    @scala.inline
+    def setSource(value: Reference): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+  }
+  
 }
 

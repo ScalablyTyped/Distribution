@@ -62,20 +62,18 @@ abstract class CodeAction protected () extends Document {
     * In version 7.21.0: introduced
     */
   def actionReturnType: Type = js.native
-  def actionReturnType(newValue: Type): js.Any = js.native
+  def actionReturnType_=(newValue: Type): Unit = js.native
   /**
     * In version 7.21.0: introduced
     */
   def actionTypeParameters: IList[TypeParameter] = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MCodeAction: FolderBase = js.native
-  def modelerActionInfo(): js.Any = js.native
-  def modelerActionInfo(newValue: MicroflowActionInfo): js.Any = js.native
   /**
     * In version 7.21.0: introduced
     */
-  @JSName("modelerActionInfo")
-  def modelerActionInfo_Union: MicroflowActionInfo | Null = js.native
+  def modelerActionInfo: MicroflowActionInfo | Null = js.native
+  def modelerActionInfo_=(newValue: MicroflowActionInfo | Null): Unit = js.native
 }
 
 /* static members */

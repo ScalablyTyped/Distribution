@@ -46,6 +46,7 @@ class ^ protected () extends ReconnectingWebSocket {
   def this(url: String) = this()
   def this(url: String, protocols: String) = this()
   def this(url: String, protocols: js.Array[String]) = this()
+  def this(url: String, protocols: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(url: String, protocols: String, options: Options) = this()
   def this(url: String, protocols: js.Array[String], options: Options) = this()
 }

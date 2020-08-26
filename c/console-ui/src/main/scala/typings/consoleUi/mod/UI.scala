@@ -48,6 +48,7 @@ trait UI extends js.Object {
     * will be prepended with DEPRECATION text when printed.
     */
   def writeDeprecateLine(message: String): Unit = js.native
+  def writeDeprecateLine(message: String, test: js.UndefOr[scala.Nothing], prepend: Boolean): Unit = js.native
   def writeDeprecateLine(message: String, test: Boolean): Unit = js.native
   def writeDeprecateLine(message: String, test: Boolean, prepend: Boolean): Unit = js.native
   /**
@@ -72,6 +73,7 @@ trait UI extends js.Object {
     * will be prepended with WARNING text when printed.
     */
   def writeWarnLine(message: String): Unit = js.native
+  def writeWarnLine(message: String, test: js.UndefOr[scala.Nothing], prepend: Boolean): Unit = js.native
   def writeWarnLine(message: String, test: Boolean): Unit = js.native
   def writeWarnLine(message: String, test: Boolean, prepend: Boolean): Unit = js.native
 }

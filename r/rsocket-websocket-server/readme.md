@@ -12,7 +12,7 @@ RSocket WebSocket server
 | Keywords           | - |
 | # releases         | 19 |
 | # dependents       | 2 |
-| # downloads        | 5344 |
+| # downloads        | 5746 |
 | # stars            | 0 |
 
 ## Links

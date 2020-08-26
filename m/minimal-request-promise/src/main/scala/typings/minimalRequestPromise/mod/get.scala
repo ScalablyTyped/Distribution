@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object get extends js.Object {
   def apply(url: String): js.Promise[MinimalRequestPromiseResponse] = js.native
+  def apply(
+    url: String,
+    additionalOptions: js.UndefOr[scala.Nothing],
+    PromiseImplementation: PromiseConstructor
+  ): js.Promise[MinimalRequestPromiseResponse] = js.native
   def apply(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = js.native
   def apply(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = js.native
 }

@@ -41,79 +41,80 @@ import scala.scalajs.js.annotation._
   * - http://mongoosejs.com/docs/schematypes.html
   * - http://mongoosejs.com/docs/api.html#schema_Schema.Types
   */
+@js.native
 trait SchemaTypeOpts_[T]
   extends /* other */ StringDictionary[js.Any] {
-  var alias: js.UndefOr[String] = js.undefined
+  var alias: js.UndefOr[String] = js.native
   /** ObjectId only - Adds an auto-generated ObjectId default if turnOn is true. */
-  var auto: js.UndefOr[Boolean | js.Any] = js.undefined
+  var auto: js.UndefOr[Boolean | js.Any] = js.native
   /** Sets a default value for this SchemaType. */
-  var default: js.UndefOr[DefaultFn[T] | T] = js.undefined
+  var default: js.UndefOr[DefaultFn[T] | T] = js.native
   /* Options for specific schema types (String, Number, Date, etc.) */
   /** String only - Adds an enum validator */
-  var enum: js.UndefOr[js.Array[T] | EnumOpts[T] | js.Any] = js.undefined
+  var enum: js.UndefOr[js.Array[T] | EnumOpts[T] | js.Any] = js.native
   /**
     * Date only - Declares a TTL index (rounded to the nearest second)
     * for Date types only.
     */
-  var expires: js.UndefOr[Double | String | js.Any] = js.undefined
+  var expires: js.UndefOr[Double | String | js.Any] = js.native
   /**
     * Getters allow you to transform the representation of the data as it travels
     * from the raw mongodb document to the value that you see.
     */
-  var get: js.UndefOr[js.Function2[/* value */ T, /* schematype */ js.UndefOr[this.type], T | _]] = js.undefined
+  var get: js.UndefOr[js.Function2[/* value */ T, /* schematype */ js.UndefOr[this.type], T | _]] = js.native
   /** Declares the index options for this schematype. */
-  var index: js.UndefOr[IndexOpts | Boolean | String] = js.undefined
+  var index: js.UndefOr[IndexOpts | Boolean | String] = js.native
   /** String only - Adds a lowercase setter. */
-  var lowercase: js.UndefOr[Boolean | js.Any] = js.undefined
+  var lowercase: js.UndefOr[Boolean | js.Any] = js.native
   /** String only - Sets a regexp validator. */
-  var `match`: js.UndefOr[RegExp | (js.Tuple2[RegExp, String]) | js.Any] = js.undefined
+  var `match`: js.UndefOr[RegExp | (js.Tuple2[RegExp, String]) | js.Any] = js.native
   /**
     * Date, Number only - Sets a maximum number validator.
     * Sets a maximum date validator.
     */
-  var max: js.UndefOr[Double | (js.Tuple2[Date | Double, String]) | Date | js.Any] = js.undefined
+  var max: js.UndefOr[Double | (js.Tuple2[Date | Double, String]) | Date | js.Any] = js.native
   /** String only - Sets a maximum length validator. */
-  var maxlength: js.UndefOr[Double | (js.Tuple2[Double, String]) | js.Any] = js.undefined
+  var maxlength: js.UndefOr[Double | (js.Tuple2[Double, String]) | js.Any] = js.native
   /**
     * Date, Number only - Sets a minimum number validator.
     * Sets a minimum date validator.
     */
-  var min: js.UndefOr[Double | (js.Tuple2[Date | Double, String]) | Date | js.Any] = js.undefined
+  var min: js.UndefOr[Double | (js.Tuple2[Date | Double, String]) | Date | js.Any] = js.native
   /** String only - Sets a minimum length validator. */
-  var minlength: js.UndefOr[Double | (js.Tuple2[Double, String]) | js.Any] = js.undefined
+  var minlength: js.UndefOr[Double | (js.Tuple2[Double, String]) | js.Any] = js.native
   /** Map only - Specifies the type of the map's attributes */
-  var of: js.UndefOr[js.Any] = js.undefined
+  var of: js.UndefOr[js.Any] = js.native
   /**
     * Adds a required validator to this SchemaType. The validator gets added
     * to the front of this SchemaType's validators array using unshift().
     */
   var required: js.UndefOr[
     RequiredFn[T] | Boolean | (js.Tuple2[Boolean | String, String]) | String | js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     * Sets default select() behavior for this path.
     * Set to true if this path should always be included in the results, false
     * if it should be excluded by default. This setting can be overridden at
     * the query level.
     */
-  var select: js.UndefOr[Boolean | js.Any] = js.undefined
+  var select: js.UndefOr[Boolean | js.Any] = js.native
   /**
     * Setters allow you to transform the data before it gets to the raw mongodb
     * document and is set as a value on an actual key.
     */
-  var set: js.UndefOr[js.Function2[/* value */ T, /* schematype */ js.UndefOr[this.type], T | _]] = js.undefined
+  var set: js.UndefOr[js.Function2[/* value */ T, /* schematype */ js.UndefOr[this.type], T | _]] = js.native
   /** Declares a sparse index. */
-  var sparse: js.UndefOr[Boolean | js.Any] = js.undefined
+  var sparse: js.UndefOr[Boolean | js.Any] = js.native
   /** Declares a full text index. */
-  var text: js.UndefOr[Boolean | js.Any] = js.undefined
+  var text: js.UndefOr[Boolean | js.Any] = js.native
   /** String only - Adds a trim setter. */
-  var trim: js.UndefOr[Boolean | js.Any] = js.undefined
+  var trim: js.UndefOr[Boolean | js.Any] = js.native
   /* Common Options for all schema types */
-  var `type`: js.UndefOr[T] = js.undefined
+  var `type`: js.UndefOr[T] = js.native
   /** Declares an unique index. */
-  var unique: js.UndefOr[Boolean | js.Any] = js.undefined
+  var unique: js.UndefOr[Boolean | js.Any] = js.native
   /** String only - Adds an uppercase setter. */
-  var uppercase: js.UndefOr[Boolean | js.Any] = js.undefined
+  var uppercase: js.UndefOr[Boolean | js.Any] = js.native
   /**
     * Adds validator(s) for this document path.
     * Validators always receive the value to validate as their first argument
@@ -123,67 +124,139 @@ trait SchemaTypeOpts_[T]
     RegExp | (js.Tuple2[AsyncPromiseValidationFn[T] | RegExp | ValidateFn[T], String]) | ValidateFn[T] | ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts | (js.Array[
       ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts
     ])
-  ] = js.undefined
+  ] = js.native
 }
 
 object SchemaTypeOpts_ {
   @scala.inline
-  def apply[T](
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    alias: String = null,
-    auto: Boolean | js.Any = null,
-    default: DefaultFn[T] | T = null,
-    enum: js.Array[T] | EnumOpts[T] | js.Any = null,
-    expires: Double | String | js.Any = null,
-    get: (/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts_[T]]) => T | _ = null,
-    index: IndexOpts | Boolean | String = null,
-    lowercase: Boolean | js.Any = null,
-    `match`: RegExp | (js.Tuple2[RegExp, String]) | js.Any = null,
-    max: Double | (js.Tuple2[Date | Double, String]) | Date | js.Any = null,
-    maxlength: Double | (js.Tuple2[Double, String]) | js.Any = null,
-    min: Double | (js.Tuple2[Date | Double, String]) | Date | js.Any = null,
-    minlength: Double | (js.Tuple2[Double, String]) | js.Any = null,
-    of: js.Any = null,
-    required: RequiredFn[T] | Boolean | (js.Tuple2[Boolean | String, String]) | String | js.Any = null,
-    select: Boolean | js.Any = null,
-    set: (/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts_[T]]) => T | _ = null,
-    sparse: Boolean | js.Any = null,
-    text: Boolean | js.Any = null,
-    trim: Boolean | js.Any = null,
-    `type`: T = null,
-    unique: Boolean | js.Any = null,
-    uppercase: Boolean | js.Any = null,
-    validate: RegExp | (js.Tuple2[AsyncPromiseValidationFn[T] | RegExp | ValidateFn[T], String]) | ValidateFn[T] | ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts | (js.Array[
-      ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts
-    ]) = null
-  ): SchemaTypeOpts_[T] = {
+  def apply[T](): SchemaTypeOpts_[T] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (auto != null) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction2(get))
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (lowercase != null) __obj.updateDynamic("lowercase")(lowercase.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
-    if (of != null) __obj.updateDynamic("of")(of.asInstanceOf[js.Any])
-    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))
-    if (sparse != null) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (trim != null) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
-    if (uppercase != null) __obj.updateDynamic("uppercase")(uppercase.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTypeOpts_[T]]
   }
+  @scala.inline
+  implicit class SchemaTypeOpts_Ops[Self <: SchemaTypeOpts_[_], T] (val x: Self with SchemaTypeOpts_[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlias: Self = this.set("alias", js.undefined)
+    @scala.inline
+    def setAuto(value: Boolean | js.Any): Self = this.set("auto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuto: Self = this.set("auto", js.undefined)
+    @scala.inline
+    def setDefaultFunction1(value: /* repeated */ js.Any => T): Self = this.set("default", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDefault(value: DefaultFn[T] | T): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setEnumVarargs(value: T*): Self = this.set("enum", js.Array(value :_*))
+    @scala.inline
+    def setEnum(value: js.Array[T] | EnumOpts[T] | js.Any): Self = this.set("enum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnum: Self = this.set("enum", js.undefined)
+    @scala.inline
+    def setExpires(value: Double | String | js.Any): Self = this.set("expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires: Self = this.set("expires", js.undefined)
+    @scala.inline
+    def setGet(value: (/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts_[T]]) => T | _): Self = this.set("get", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGet: Self = this.set("get", js.undefined)
+    @scala.inline
+    def setIndex(value: IndexOpts | Boolean | String): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setLowercase(value: Boolean | js.Any): Self = this.set("lowercase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowercase: Self = this.set("lowercase", js.undefined)
+    @scala.inline
+    def setMatch(value: RegExp | (js.Tuple2[RegExp, String]) | js.Any): Self = this.set("match", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatch: Self = this.set("match", js.undefined)
+    @scala.inline
+    def setMax(value: Double | (js.Tuple2[Date | Double, String]) | Date | js.Any): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMaxlength(value: Double | (js.Tuple2[Double, String]) | js.Any): Self = this.set("maxlength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxlength: Self = this.set("maxlength", js.undefined)
+    @scala.inline
+    def setMin(value: Double | (js.Tuple2[Date | Double, String]) | Date | js.Any): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMinlength(value: Double | (js.Tuple2[Double, String]) | js.Any): Self = this.set("minlength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinlength: Self = this.set("minlength", js.undefined)
+    @scala.inline
+    def setOf(value: js.Any): Self = this.set("of", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOf: Self = this.set("of", js.undefined)
+    @scala.inline
+    def setRequiredFunction2(value: (/* required */ Boolean, /* message */ js.UndefOr[String]) => T): Self = this.set("required", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRequired(value: RequiredFn[T] | Boolean | (js.Tuple2[Boolean | String, String]) | String | js.Any): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setSelect(value: Boolean | js.Any): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setSet(value: (/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts_[T]]) => T | _): Self = this.set("set", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSet: Self = this.set("set", js.undefined)
+    @scala.inline
+    def setSparse(value: Boolean | js.Any): Self = this.set("sparse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparse: Self = this.set("sparse", js.undefined)
+    @scala.inline
+    def setText(value: Boolean | js.Any): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTrim(value: Boolean | js.Any): Self = this.set("trim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrim: Self = this.set("trim", js.undefined)
+    @scala.inline
+    def setType(value: T): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnique(value: Boolean | js.Any): Self = this.set("unique", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnique: Self = this.set("unique", js.undefined)
+    @scala.inline
+    def setUppercase(value: Boolean | js.Any): Self = this.set("uppercase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUppercase: Self = this.set("uppercase", js.undefined)
+    @scala.inline
+    def setValidateVarargs(
+      value: (ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts)*
+    ): Self = this.set("validate", js.Array(value :_*))
+    @scala.inline
+    def setValidateFunction1(value: T => Boolean | js.Promise[Boolean]): Self = this.set("validate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setValidate(
+      value: RegExp | (js.Tuple2[AsyncPromiseValidationFn[T] | RegExp | ValidateFn[T], String]) | ValidateFn[T] | ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts | (js.Array[
+          ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts
+        ])
+    ): Self = this.set("validate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidate: Self = this.set("validate", js.undefined)
+  }
+  
 }
 

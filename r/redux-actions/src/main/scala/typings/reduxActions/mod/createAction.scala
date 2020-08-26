@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object createAction extends js.Object {
   def apply(actionType: String): ActionFunctionAny[Action[_]] = js.native
-  def apply[Meta](actionType: String, payloadCreator: js.UndefOr[Null], metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[ActionMeta[_, Meta]] = js.native
+  def apply[Meta](
+    actionType: String,
+    payloadCreator: js.UndefOr[scala.Nothing],
+    metaCreator: ActionFunctionAny[Meta]
+  ): ActionFunctionAny[ActionMeta[_, Meta]] = js.native
+  def apply[Meta](actionType: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): ActionFunctionAny[ActionMeta[_, Meta]] = js.native
   def apply[Payload](actionType: String, payloadCreator: ActionFunction0[Payload]): ActionFunction0[Action[Payload]] = js.native
   def apply[Payload, Arg1](actionType: String, payloadCreator: ActionFunction1[Arg1, Payload]): ActionFunction1[Arg1, Action[Payload]] = js.native
   def apply[Payload, Meta](

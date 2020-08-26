@@ -18,10 +18,30 @@ trait ListHapgsResponse extends js.Object {
 
 object ListHapgsResponse {
   @scala.inline
-  def apply(HapgList: HapgList, NextToken: PaginationToken = null): ListHapgsResponse = {
+  def apply(HapgList: HapgList): ListHapgsResponse = {
     val __obj = js.Dynamic.literal(HapgList = HapgList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHapgsResponse]
   }
+  @scala.inline
+  implicit class ListHapgsResponseOps[Self <: ListHapgsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHapgListVarargs(value: HapgArn*): Self = this.set("HapgList", js.Array(value :_*))
+    @scala.inline
+    def setHapgList(value: HapgList): Self = this.set("HapgList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

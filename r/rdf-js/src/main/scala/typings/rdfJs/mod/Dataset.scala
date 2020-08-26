@@ -33,14 +33,14 @@ trait Dataset[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends Datas
     * @param graph     The optional exact graph to match.
     */
   def deleteMatches(): this.type = js.native
+  def deleteMatches(subject: js.UndefOr[Term], predicate: js.UndefOr[Term], `object`: js.UndefOr[Term], graph: Term): this.type = js.native
+  def deleteMatches(subject: js.UndefOr[Term], predicate: js.UndefOr[Term], `object`: Term): this.type = js.native
+  def deleteMatches(subject: js.UndefOr[Term], predicate: Term): this.type = js.native
   def deleteMatches(subject: Term): this.type = js.native
-  def deleteMatches(subject: Term, predicate: Term): this.type = js.native
-  def deleteMatches(subject: Term, predicate: Term, `object`: Term): this.type = js.native
-  def deleteMatches(subject: Term, predicate: Term, `object`: Term, graph: Term): this.type = js.native
   /**
     * Returns a new dataset that contains all quads from the current dataset, not included in the given dataset.
     */
-  def difference(other: Dataset[InQuad, InQuad]): this.type = js.native
+  def difference(other: Dataset[InQuad, InQuad]): Dataset[OutQuad, InQuad] = js.native
   /**
     * Returns true if the current instance contains the same graph structure as the given dataset.
     *
@@ -63,7 +63,7 @@ trait Dataset[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends Datas
     *
     * This method is aligned with Array.prototype.filter() in ECMAScript-262.
     */
-  def filter(iteratee: js.Function2[/* quad */ OutQuad, /* dataset */ Dataset[OutQuad, OutQuad], Boolean]): this.type = js.native
+  def filter(iteratee: js.Function2[/* quad */ OutQuad, /* dataset */ Dataset[OutQuad, OutQuad], Boolean]): Dataset[OutQuad, InQuad] = js.native
   /**
     * Executes the provided `iteratee` once on each quad in the dataset.
     *
@@ -83,7 +83,7 @@ trait Dataset[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends Datas
   /**
     * Returns a new dataset containing all quads returned by applying `iteratee` to each quad in the current dataset.
     */
-  def map(iteratee: js.Function2[/* quad */ OutQuad, /* dataset */ Dataset[OutQuad, OutQuad], OutQuad]): this.type = js.native
+  def map(iteratee: js.Function2[/* quad */ OutQuad, /* dataset */ Dataset[OutQuad, OutQuad], OutQuad]): Dataset[OutQuad, InQuad] = js.native
   /**
     * This method calls the `iteratee` on each `quad` of the `Dataset`. The first time the `iteratee` is called, the
     * `accumulator` value is the `initialValue` or, if not given, equals to the first quad of the `Dataset`. The return
@@ -128,6 +128,6 @@ trait Dataset[OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends Datas
   /**
     * Returns a new `Dataset` that is a concatenation of this dataset and the quads given as an argument.
     */
-  def union(quads: Dataset[InQuad, InQuad]): this.type = js.native
+  def union(quads: Dataset[InQuad, InQuad]): Dataset[OutQuad, InQuad] = js.native
 }
 

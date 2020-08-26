@@ -28,62 +28,58 @@ class WebServiceCallAction protected () extends MicroflowAction {
   @JSName("model")
   var model_FWebServiceCallAction: IModel = js.native
   def httpConfiguration: HttpConfiguration = js.native
-  def httpConfiguration(newValue: HttpConfiguration): js.Any = js.native
-  def importedWebService(): js.Any = js.native
-  def importedWebService(newValue: IImportedWebService): js.Any = js.native
+  def httpConfiguration_=(newValue: HttpConfiguration): Unit = js.native
+  def importedWebService: IImportedWebService | Null = js.native
   def importedWebServiceQualifiedName: String | Null = js.native
-  @JSName("importedWebService")
-  def importedWebService_Union: IImportedWebService | Null = js.native
+  def importedWebService_=(newValue: IImportedWebService | Null): Unit = js.native
   def isValidationRequired: Boolean = js.native
-  def isValidationRequired(newValue: Boolean): js.Any = js.native
+  def isValidationRequired_=(newValue: Boolean): Unit = js.native
   def operationName: String = js.native
-  def operationName(newValue: String): js.Any = js.native
-  def proxyConfiguration(): js.Any = js.native
-  def proxyConfiguration(newValue: ProxyConfiguration): js.Any = js.native
+  def operationName_=(newValue: String): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */
-  @JSName("proxyConfiguration")
-  def proxyConfiguration_Union: ProxyConfiguration | Null = js.native
+  def proxyConfiguration: ProxyConfiguration | Null = js.native
+  def proxyConfiguration_=(newValue: ProxyConfiguration | Null): Unit = js.native
   def requestBodyHandling: RequestHandling = js.native
-  def requestBodyHandling(newValue: RequestHandling): js.Any = js.native
+  def requestBodyHandling_=(newValue: RequestHandling): Unit = js.native
   def requestHeaderHandling: RequestHandling = js.native
-  def requestHeaderHandling(newValue: RequestHandling): js.Any = js.native
+  def requestHeaderHandling_=(newValue: RequestHandling): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */
   def requestProxyType: RequestProxyType = js.native
-  def requestProxyType(newValue: RequestProxyType): js.Any = js.native
+  def requestProxyType_=(newValue: RequestProxyType): Unit = js.native
   def resultHandling: ResultHandling = js.native
-  def resultHandling(newValue: ResultHandling): js.Any = js.native
+  def resultHandling_=(newValue: ResultHandling): Unit = js.native
   /**
     * In version 6.7.0: deleted
     */
   def sendNullValueChoice: NullValueOption = js.native
-  def sendNullValueChoice(newValue: NullValueOption): js.Any = js.native
+  def sendNullValueChoice_=(newValue: NullValueOption): Unit = js.native
   def serviceName: String = js.native
-  def serviceName(newValue: String): js.Any = js.native
+  def serviceName_=(newValue: String): Unit = js.native
   /**
     * In version 7.15.0: deleted
     */
   def timeOut: Double = js.native
-  def timeOut(newValue: Double): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     *
     * In version 7.15.0: introduced
     */
   def timeOutExpression: String = js.native
-  def timeOutExpression(newValue: String): js.Any = js.native
+  def timeOutExpression_=(newValue: String): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.15.0: introduced
     */
   def timeOutModel: Expression = js.native
-  def timeOutModel(newValue: Expression): js.Any = js.native
+  def timeOutModel_=(newValue: Expression): Unit = js.native
+  def timeOut_=(newValue: Double): Unit = js.native
   def useRequestTimeOut: Boolean = js.native
-  def useRequestTimeOut(newValue: Boolean): js.Any = js.native
+  def useRequestTimeOut_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

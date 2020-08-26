@@ -18,14 +18,30 @@ trait Lifecycle extends js.Object {
 
 object Lifecycle {
   @scala.inline
-  def apply(
-    DeleteAfterDays: js.UndefOr[Long_] = js.undefined,
-    MoveToColdStorageAfterDays: js.UndefOr[Long_] = js.undefined
-  ): Lifecycle = {
+  def apply(): Lifecycle = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeleteAfterDays)) __obj.updateDynamic("DeleteAfterDays")(DeleteAfterDays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MoveToColdStorageAfterDays)) __obj.updateDynamic("MoveToColdStorageAfterDays")(MoveToColdStorageAfterDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lifecycle]
   }
+  @scala.inline
+  implicit class LifecycleOps[Self <: Lifecycle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteAfterDays(value: Long_): Self = this.set("DeleteAfterDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteAfterDays: Self = this.set("DeleteAfterDays", js.undefined)
+    @scala.inline
+    def setMoveToColdStorageAfterDays(value: Long_): Self = this.set("MoveToColdStorageAfterDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveToColdStorageAfterDays: Self = this.set("MoveToColdStorageAfterDays", js.undefined)
+  }
+  
 }
 

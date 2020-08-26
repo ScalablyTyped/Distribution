@@ -21,6 +21,7 @@ class Domain protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: DomainArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: DomainArgs, opts: CustomResourceOptions) = this()
   /**
     * The name of the SimpleDB domain
@@ -39,8 +40,10 @@ object Domain extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Domain = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Domain = js.native
   def get(name: String, id: Input[ID], state: DomainState): Domain = js.native
   def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = js.native
   /**

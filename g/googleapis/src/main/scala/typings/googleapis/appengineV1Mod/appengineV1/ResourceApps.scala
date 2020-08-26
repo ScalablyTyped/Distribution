@@ -40,6 +40,7 @@ class ResourceApps protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceAppsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceAppsCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -67,6 +68,7 @@ class ResourceApps protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaApplication] = js.native
   def get(callback: BodyResponseCallback[SchemaApplication]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApplication] = js.native
   def get(params: ParamsResourceAppsGet): GaxiosPromise[SchemaApplication] = js.native
   def get(params: ParamsResourceAppsGet, callback: BodyResponseCallback[SchemaApplication]): Unit = js.native
   def get(
@@ -99,6 +101,7 @@ class ResourceApps protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAppsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAppsPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -131,6 +134,7 @@ class ResourceApps protected () extends js.Object {
     */
   def repair(): GaxiosPromise[SchemaOperation] = js.native
   def repair(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def repair(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def repair(params: ParamsResourceAppsRepair): GaxiosPromise[SchemaOperation] = js.native
   def repair(params: ParamsResourceAppsRepair, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def repair(

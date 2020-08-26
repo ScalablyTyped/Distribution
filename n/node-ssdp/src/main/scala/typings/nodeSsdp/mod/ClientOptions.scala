@@ -4,44 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientOptions extends SsdpOptions {
   /** Bind sockets to each discovered interface explicitly instead of relying on the system. Might help with issues with multiple NICs. */
-  var explicitSocketBind: js.UndefOr[Boolean] = js.undefined
+  var explicitSocketBind: js.UndefOr[Boolean] = js.native
   /** List of interfaces to explicitly bind. By default, bind to all available interfaces. */
-  var interfaces: js.UndefOr[js.Array[String]] = js.undefined
+  var interfaces: js.UndefOr[js.Array[String]] = js.native
   /**
     * When true socket.bind() will reuse the address, even if another process has already bound a socket on it.
     * @default true
     */
-  var reuseAddr: js.UndefOr[Boolean] = js.undefined
+  var reuseAddr: js.UndefOr[Boolean] = js.native
 }
 
 object ClientOptions {
   @scala.inline
-  def apply(
-    customLogger: (/* format */ String, /* repeated */ js.Any) => Unit = null,
-    description: String = null,
-    explicitSocketBind: js.UndefOr[Boolean] = js.undefined,
-    headers: SsdpHeaders = null,
-    interfaces: js.Array[String] = null,
-    reuseAddr: js.UndefOr[Boolean] = js.undefined,
-    ssdpIp: String = null,
-    ssdpPort: js.UndefOr[Double] = js.undefined,
-    ssdpSig: String = null,
-    ssdpTtl: js.UndefOr[Double] = js.undefined
-  ): ClientOptions = {
+  def apply(): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (customLogger != null) __obj.updateDynamic("customLogger")(js.Any.fromFunction2(customLogger))
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitSocketBind)) __obj.updateDynamic("explicitSocketBind")(explicitSocketBind.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.get.asInstanceOf[js.Any])
-    if (ssdpIp != null) __obj.updateDynamic("ssdpIp")(ssdpIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssdpPort)) __obj.updateDynamic("ssdpPort")(ssdpPort.get.asInstanceOf[js.Any])
-    if (ssdpSig != null) __obj.updateDynamic("ssdpSig")(ssdpSig.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssdpTtl)) __obj.updateDynamic("ssdpTtl")(ssdpTtl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
+  @scala.inline
+  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExplicitSocketBind(value: Boolean): Self = this.set("explicitSocketBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplicitSocketBind: Self = this.set("explicitSocketBind", js.undefined)
+    @scala.inline
+    def setInterfacesVarargs(value: String*): Self = this.set("interfaces", js.Array(value :_*))
+    @scala.inline
+    def setInterfaces(value: js.Array[String]): Self = this.set("interfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterfaces: Self = this.set("interfaces", js.undefined)
+    @scala.inline
+    def setReuseAddr(value: Boolean): Self = this.set("reuseAddr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReuseAddr: Self = this.set("reuseAddr", js.undefined)
+  }
+  
 }
 

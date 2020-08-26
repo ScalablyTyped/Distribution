@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/helpers", "renderIconDefinitionToSVGElement")
+@JSImport("@ant-design/icons-svg/es/helpers", "renderIconDefinitionToSVGElement")
 @js.native
 object renderIconDefinitionToSVGElement extends js.Object {
   def apply(icond: IconDefinition): String = js.native

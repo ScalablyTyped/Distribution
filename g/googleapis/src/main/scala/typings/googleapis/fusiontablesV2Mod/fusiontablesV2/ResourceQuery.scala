@@ -30,6 +30,7 @@ class ResourceQuery protected () extends js.Object {
     */
   def sql(): GaxiosPromise[SchemaSqlresponse] = js.native
   def sql(callback: BodyResponseCallback[SchemaSqlresponse]): Unit = js.native
+  def sql(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSqlresponse] = js.native
   def sql(params: ParamsResourceQuerySql): GaxiosPromise[SchemaSqlresponse] = js.native
   def sql(params: ParamsResourceQuerySql, callback: BodyResponseCallback[SchemaSqlresponse]): Unit = js.native
   def sql(
@@ -60,6 +61,7 @@ class ResourceQuery protected () extends js.Object {
     */
   def sqlGet(): GaxiosPromise[SchemaSqlresponse] = js.native
   def sqlGet(callback: BodyResponseCallback[SchemaSqlresponse]): Unit = js.native
+  def sqlGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSqlresponse] = js.native
   def sqlGet(params: ParamsResourceQuerySqlget): GaxiosPromise[SchemaSqlresponse] = js.native
   def sqlGet(params: ParamsResourceQuerySqlget, callback: BodyResponseCallback[SchemaSqlresponse]): Unit = js.native
   def sqlGet(

@@ -26,18 +26,38 @@ trait MetricInfo extends js.Object {
 
 object MetricInfo {
   @scala.inline
-  def apply(
-    MetricDimensions: MetricDimensionsMapDefinition = null,
-    MetricName: QuotaMetricName = null,
-    MetricNamespace: QuotaMetricNamespace = null,
-    MetricStatisticRecommendation: Statistic = null
-  ): MetricInfo = {
+  def apply(): MetricInfo = {
     val __obj = js.Dynamic.literal()
-    if (MetricDimensions != null) __obj.updateDynamic("MetricDimensions")(MetricDimensions.asInstanceOf[js.Any])
-    if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName.asInstanceOf[js.Any])
-    if (MetricNamespace != null) __obj.updateDynamic("MetricNamespace")(MetricNamespace.asInstanceOf[js.Any])
-    if (MetricStatisticRecommendation != null) __obj.updateDynamic("MetricStatisticRecommendation")(MetricStatisticRecommendation.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricInfo]
   }
+  @scala.inline
+  implicit class MetricInfoOps[Self <: MetricInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricDimensions(value: MetricDimensionsMapDefinition): Self = this.set("MetricDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricDimensions: Self = this.set("MetricDimensions", js.undefined)
+    @scala.inline
+    def setMetricName(value: QuotaMetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    @scala.inline
+    def setMetricNamespace(value: QuotaMetricNamespace): Self = this.set("MetricNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricNamespace: Self = this.set("MetricNamespace", js.undefined)
+    @scala.inline
+    def setMetricStatisticRecommendation(value: Statistic): Self = this.set("MetricStatisticRecommendation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricStatisticRecommendation: Self = this.set("MetricStatisticRecommendation", js.undefined)
+  }
+  
 }
 

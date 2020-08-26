@@ -42,26 +42,56 @@ trait RadiusSettings extends js.Object {
 
 object RadiusSettings {
   @scala.inline
-  def apply(
-    AuthenticationProtocol: RadiusAuthenticationProtocol = null,
-    DisplayLabel: RadiusDisplayLabel = null,
-    RadiusPort: js.UndefOr[PortNumber] = js.undefined,
-    RadiusRetries: js.UndefOr[RadiusRetries] = js.undefined,
-    RadiusServers: Servers = null,
-    RadiusTimeout: js.UndefOr[RadiusTimeout] = js.undefined,
-    SharedSecret: RadiusSharedSecret = null,
-    UseSameUsername: js.UndefOr[UseSameUsername] = js.undefined
-  ): RadiusSettings = {
+  def apply(): RadiusSettings = {
     val __obj = js.Dynamic.literal()
-    if (AuthenticationProtocol != null) __obj.updateDynamic("AuthenticationProtocol")(AuthenticationProtocol.asInstanceOf[js.Any])
-    if (DisplayLabel != null) __obj.updateDynamic("DisplayLabel")(DisplayLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(RadiusPort)) __obj.updateDynamic("RadiusPort")(RadiusPort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RadiusRetries)) __obj.updateDynamic("RadiusRetries")(RadiusRetries.get.asInstanceOf[js.Any])
-    if (RadiusServers != null) __obj.updateDynamic("RadiusServers")(RadiusServers.asInstanceOf[js.Any])
-    if (!js.isUndefined(RadiusTimeout)) __obj.updateDynamic("RadiusTimeout")(RadiusTimeout.get.asInstanceOf[js.Any])
-    if (SharedSecret != null) __obj.updateDynamic("SharedSecret")(SharedSecret.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseSameUsername)) __obj.updateDynamic("UseSameUsername")(UseSameUsername.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadiusSettings]
   }
+  @scala.inline
+  implicit class RadiusSettingsOps[Self <: RadiusSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationProtocol(value: RadiusAuthenticationProtocol): Self = this.set("AuthenticationProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationProtocol: Self = this.set("AuthenticationProtocol", js.undefined)
+    @scala.inline
+    def setDisplayLabel(value: RadiusDisplayLabel): Self = this.set("DisplayLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayLabel: Self = this.set("DisplayLabel", js.undefined)
+    @scala.inline
+    def setRadiusPort(value: PortNumber): Self = this.set("RadiusPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadiusPort: Self = this.set("RadiusPort", js.undefined)
+    @scala.inline
+    def setRadiusRetries(value: RadiusRetries): Self = this.set("RadiusRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadiusRetries: Self = this.set("RadiusRetries", js.undefined)
+    @scala.inline
+    def setRadiusServersVarargs(value: Server*): Self = this.set("RadiusServers", js.Array(value :_*))
+    @scala.inline
+    def setRadiusServers(value: Servers): Self = this.set("RadiusServers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadiusServers: Self = this.set("RadiusServers", js.undefined)
+    @scala.inline
+    def setRadiusTimeout(value: RadiusTimeout): Self = this.set("RadiusTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadiusTimeout: Self = this.set("RadiusTimeout", js.undefined)
+    @scala.inline
+    def setSharedSecret(value: RadiusSharedSecret): Self = this.set("SharedSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedSecret: Self = this.set("SharedSecret", js.undefined)
+    @scala.inline
+    def setUseSameUsername(value: UseSameUsername): Self = this.set("UseSameUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseSameUsername: Self = this.set("UseSameUsername", js.undefined)
+  }
+  
 }
 

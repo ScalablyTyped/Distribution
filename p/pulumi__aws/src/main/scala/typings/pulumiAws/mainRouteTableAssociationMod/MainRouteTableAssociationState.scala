@@ -24,16 +24,34 @@ trait MainRouteTableAssociationState extends js.Object {
 
 object MainRouteTableAssociationState {
   @scala.inline
-  def apply(
-    originalRouteTableId: Input[String] = null,
-    routeTableId: Input[String] = null,
-    vpcId: Input[String] = null
-  ): MainRouteTableAssociationState = {
+  def apply(): MainRouteTableAssociationState = {
     val __obj = js.Dynamic.literal()
-    if (originalRouteTableId != null) __obj.updateDynamic("originalRouteTableId")(originalRouteTableId.asInstanceOf[js.Any])
-    if (routeTableId != null) __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MainRouteTableAssociationState]
   }
+  @scala.inline
+  implicit class MainRouteTableAssociationStateOps[Self <: MainRouteTableAssociationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOriginalRouteTableId(value: Input[String]): Self = this.set("originalRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalRouteTableId: Self = this.set("originalRouteTableId", js.undefined)
+    @scala.inline
+    def setRouteTableId(value: Input[String]): Self = this.set("routeTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteTableId: Self = this.set("routeTableId", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

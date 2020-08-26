@@ -5,33 +5,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableUserConfig extends js.Object {
-  var border: js.UndefOr[TableBorder] = js.undefined
-  var columnCount: js.UndefOr[Double] = js.undefined
-  var columnDefault: js.UndefOr[TableColumns] = js.undefined
-  var columns: js.UndefOr[NumberDictionary[TableColumns]] = js.undefined
-  var drawHorizontalLine: js.UndefOr[TableDrawHorizontalLine] = js.undefined
-  var singleLine: js.UndefOr[Boolean] = js.undefined
+  var border: js.UndefOr[TableBorder] = js.native
+  var columnCount: js.UndefOr[Double] = js.native
+  var columnDefault: js.UndefOr[TableColumns] = js.native
+  var columns: js.UndefOr[NumberDictionary[TableColumns]] = js.native
+  var drawHorizontalLine: js.UndefOr[TableDrawHorizontalLine] = js.native
+  var singleLine: js.UndefOr[Boolean] = js.native
 }
 
 object TableUserConfig {
   @scala.inline
-  def apply(
-    border: TableBorder = null,
-    columnCount: js.UndefOr[Double] = js.undefined,
-    columnDefault: TableColumns = null,
-    columns: NumberDictionary[TableColumns] = null,
-    drawHorizontalLine: (/* index */ Double, /* size */ Double) => Boolean = null,
-    singleLine: js.UndefOr[Boolean] = js.undefined
-  ): TableUserConfig = {
+  def apply(): TableUserConfig = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
-    if (columnDefault != null) __obj.updateDynamic("columnDefault")(columnDefault.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (drawHorizontalLine != null) __obj.updateDynamic("drawHorizontalLine")(js.Any.fromFunction2(drawHorizontalLine))
-    if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableUserConfig]
   }
+  @scala.inline
+  implicit class TableUserConfigOps[Self <: TableUserConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorder(value: TableBorder): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    @scala.inline
+    def setColumnDefault(value: TableColumns): Self = this.set("columnDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnDefault: Self = this.set("columnDefault", js.undefined)
+    @scala.inline
+    def setColumns(value: NumberDictionary[TableColumns]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setDrawHorizontalLine(value: (/* index */ Double, /* size */ Double) => Boolean): Self = this.set("drawHorizontalLine", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDrawHorizontalLine: Self = this.set("drawHorizontalLine", js.undefined)
+    @scala.inline
+    def setSingleLine(value: Boolean): Self = this.set("singleLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleLine: Self = this.set("singleLine", js.undefined)
+  }
+  
 }
 

@@ -36,20 +36,42 @@ trait SchemaApiConfigHandler extends js.Object {
 
 object SchemaApiConfigHandler {
   @scala.inline
-  def apply(
-    authFailAction: String = null,
-    login: String = null,
-    script: String = null,
-    securityLevel: String = null,
-    url: String = null
-  ): SchemaApiConfigHandler = {
+  def apply(): SchemaApiConfigHandler = {
     val __obj = js.Dynamic.literal()
-    if (authFailAction != null) __obj.updateDynamic("authFailAction")(authFailAction.asInstanceOf[js.Any])
-    if (login != null) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
-    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
-    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApiConfigHandler]
   }
+  @scala.inline
+  implicit class SchemaApiConfigHandlerOps[Self <: SchemaApiConfigHandler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthFailAction(value: String): Self = this.set("authFailAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthFailAction: Self = this.set("authFailAction", js.undefined)
+    @scala.inline
+    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogin: Self = this.set("login", js.undefined)
+    @scala.inline
+    def setScript(value: String): Self = this.set("script", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScript: Self = this.set("script", js.undefined)
+    @scala.inline
+    def setSecurityLevel(value: String): Self = this.set("securityLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityLevel: Self = this.set("securityLevel", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

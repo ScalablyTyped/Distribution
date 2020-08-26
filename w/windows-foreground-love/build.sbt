@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "windows-foreground-love"
-version := "0.3-dt-20191111Z-79bc04"
-scalaVersion := "2.13.2"
+version := "0.3-dt-20191111Z-2103ea"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

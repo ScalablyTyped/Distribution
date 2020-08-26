@@ -15,14 +15,15 @@ import scala.scalajs.js.annotation._
   * @see XDigestContextSupplier
   * @since OOo 3.4
   */
+@js.native
 trait XDigestContext extends XInterface {
   /** finalizes digest and disposes context. */
-  def finalizeDigestAndDispose(): SafeArray[Double]
+  def finalizeDigestAndDispose(): SafeArray[Double] = js.native
   /**
     * update the digest with the given data.
     * @param aData data that should be used to update the digest
     */
-  def updateDigest(aData: SeqEquiv[Double]): Unit
+  def updateDigest(aData: SeqEquiv[Double]): Unit = js.native
 }
 
 object XDigestContext {
@@ -37,5 +38,22 @@ object XDigestContext {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), finalizeDigestAndDispose = js.Any.fromFunction0(finalizeDigestAndDispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), updateDigest = js.Any.fromFunction1(updateDigest))
     __obj.asInstanceOf[XDigestContext]
   }
+  @scala.inline
+  implicit class XDigestContextOps[Self <: XDigestContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFinalizeDigestAndDispose(value: () => SafeArray[Double]): Self = this.set("finalizeDigestAndDispose", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUpdateDigest(value: SeqEquiv[Double] => Unit): Self = this.set("updateDigest", js.Any.fromFunction1(value))
+  }
+  
 }
 

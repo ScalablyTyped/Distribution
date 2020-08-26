@@ -11,8 +11,8 @@ Ruthlessly simple bindings to keep react-router and redux in sync
 | Full name          | react-router-redux |
 | Keywords           | react, redux, router |
 | # releases         | 1 |
-| # dependents       | 1021 |
-| # downloads        | 39594109 |
+| # dependents       | 1026 |
+| # downloads        | 39132429 |
 | # stars            | 78 |
 
 ## Links

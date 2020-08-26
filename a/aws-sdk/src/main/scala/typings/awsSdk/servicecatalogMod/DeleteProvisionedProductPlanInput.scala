@@ -22,15 +22,32 @@ trait DeleteProvisionedProductPlanInput extends js.Object {
 
 object DeleteProvisionedProductPlanInput {
   @scala.inline
-  def apply(
-    PlanId: Id,
-    AcceptLanguage: AcceptLanguage = null,
-    IgnoreErrors: js.UndefOr[IgnoreErrors] = js.undefined
-  ): DeleteProvisionedProductPlanInput = {
+  def apply(PlanId: Id): DeleteProvisionedProductPlanInput = {
     val __obj = js.Dynamic.literal(PlanId = PlanId.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(IgnoreErrors)) __obj.updateDynamic("IgnoreErrors")(IgnoreErrors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProvisionedProductPlanInput]
   }
+  @scala.inline
+  implicit class DeleteProvisionedProductPlanInputOps[Self <: DeleteProvisionedProductPlanInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlanId(value: Id): Self = this.set("PlanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setIgnoreErrors(value: IgnoreErrors): Self = this.set("IgnoreErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreErrors: Self = this.set("IgnoreErrors", js.undefined)
+  }
+  
 }
 

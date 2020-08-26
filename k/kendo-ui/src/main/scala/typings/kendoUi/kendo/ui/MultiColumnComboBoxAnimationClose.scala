@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MultiColumnComboBoxAnimationClose extends js.Object {
-  var duration: js.UndefOr[Double] = js.undefined
-  var effects: js.UndefOr[String] = js.undefined
+  var duration: js.UndefOr[Double] = js.native
+  var effects: js.UndefOr[String] = js.native
 }
 
 object MultiColumnComboBoxAnimationClose {
   @scala.inline
-  def apply(duration: js.UndefOr[Double] = js.undefined, effects: String = null): MultiColumnComboBoxAnimationClose = {
+  def apply(): MultiColumnComboBoxAnimationClose = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiColumnComboBoxAnimationClose]
   }
+  @scala.inline
+  implicit class MultiColumnComboBoxAnimationCloseOps[Self <: MultiColumnComboBoxAnimationClose] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEffects(value: String): Self = this.set("effects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffects: Self = this.set("effects", js.undefined)
+  }
+  
 }
 

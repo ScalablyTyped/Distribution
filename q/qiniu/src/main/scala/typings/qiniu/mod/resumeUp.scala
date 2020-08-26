@@ -20,9 +20,145 @@ object resumeUp extends js.Object {
     */
   class PutExtra () extends js.Object {
     def this(fname: String) = this()
+    def this(fname: js.UndefOr[scala.Nothing], params: js.Any) = this()
     def this(fname: String, params: js.Any) = this()
+    def this(fname: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], mimeType: String) = this()
+    def this(fname: js.UndefOr[scala.Nothing], params: js.Any, mimeType: String) = this()
+    def this(fname: String, params: js.UndefOr[scala.Nothing], mimeType: String) = this()
     def this(fname: String, params: js.Any, mimeType: String) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: String
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      resumeRecordFile: String
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: String
+    ) = this()
+    def this(fname: js.UndefOr[scala.Nothing], params: js.Any, mimeType: String, resumeRecordFile: String) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: String
+    ) = this()
+    def this(fname: String, params: js.UndefOr[scala.Nothing], mimeType: String, resumeRecordFile: String) = this()
+    def this(fname: String, params: js.Any, mimeType: js.UndefOr[scala.Nothing], resumeRecordFile: String) = this()
     def this(fname: String, params: js.Any, mimeType: String, resumeRecordFile: String) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: js.UndefOr[scala.Nothing],
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: String,
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      resumeRecordFile: js.UndefOr[scala.Nothing],
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      resumeRecordFile: String,
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: js.UndefOr[scala.Nothing],
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: String,
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: String,
+      resumeRecordFile: js.UndefOr[scala.Nothing],
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: String,
+      resumeRecordFile: String,
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: js.UndefOr[scala.Nothing],
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: String,
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      resumeRecordFile: js.UndefOr[scala.Nothing],
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      resumeRecordFile: String,
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: String,
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: js.UndefOr[scala.Nothing],
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: String,
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      resumeRecordFile: String,
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
+    def this(
+      fname: String,
+      params: js.Any,
+      mimeType: String,
+      resumeRecordFile: js.UndefOr[scala.Nothing],
+      progressCallback: js.Function1[/* data */ js.Any, Unit]
+    ) = this()
     def this(
       fname: String,
       params: js.Any,

@@ -18,12 +18,72 @@ class VASTClient () extends js.Object {
     * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
     * Default: 0
     */
+  cappingFreeLunch: js.UndefOr[scala.Nothing],
+    /**
+    * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
+    * Default: 0
+    */
+  cappingMinimumTimeInterval: Double
+  ) = this()
+  def this(
+    /**
+    * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
+    * Default: 0
+    */
   cappingFreeLunch: Double,
     /**
     * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
     * Default: 0
     */
   cappingMinimumTimeInterval: Double
+  ) = this()
+  def this(
+    /**
+    * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
+    * Default: 0
+    */
+  cappingFreeLunch: js.UndefOr[scala.Nothing],
+    /**
+    * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
+    * Default: 0
+    */
+  cappingMinimumTimeInterval: js.UndefOr[scala.Nothing],
+    /**
+    * Optional custom storage to be used instead of the default one
+    */
+  customStorage: VASTClientCustomStorage
+  ) = this()
+  def this(
+    /**
+    * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
+    * Default: 0
+    */
+  cappingFreeLunch: js.UndefOr[scala.Nothing],
+    /**
+    * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
+    * Default: 0
+    */
+  cappingMinimumTimeInterval: Double,
+    /**
+    * Optional custom storage to be used instead of the default one
+    */
+  customStorage: VASTClientCustomStorage
+  ) = this()
+  def this(
+    /**
+    * Used for ignoring the first n calls. Automatically reset 1 hour after the 1st ignored call. Free Lunch capping is disable if sets to 0.
+    * Default: 0
+    */
+  cappingFreeLunch: Double,
+    /**
+    * Used for ignoring calls that happen n ms after the previous call. Minimum time interval is disabled if sets to 0.
+    * Default: 0
+    */
+  cappingMinimumTimeInterval: js.UndefOr[scala.Nothing],
+    /**
+    * Optional custom storage to be used instead of the default one
+    */
+  customStorage: VASTClientCustomStorage
   ) = this()
   def this(
     /**

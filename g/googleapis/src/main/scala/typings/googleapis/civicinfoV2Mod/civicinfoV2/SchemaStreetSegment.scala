@@ -55,100 +55,218 @@ trait SchemaStreetSegment extends js.Object {
 
 object SchemaStreetSegment {
   @scala.inline
-  def apply(
-    administrationRegionIds: js.Array[String] = null,
-    beforeGeocodeId: String = null,
-    catalistUniquePrecinctCode: String = null,
-    city: String = null,
-    cityCouncilDistrict: String = null,
-    congressionalDistrict: String = null,
-    contestIds: js.Array[String] = null,
-    countyCouncilDistrict: String = null,
-    countyFips: String = null,
-    datasetId: String = null,
-    earlyVoteSiteByIds: js.Array[String] = null,
-    endHouseNumber: String = null,
-    geocodedPoint: SchemaPointProto = null,
-    geographicDivisionOcdIds: js.Array[String] = null,
-    id: String = null,
-    judicialDistrict: String = null,
-    mailOnly: js.UndefOr[Boolean] = js.undefined,
-    municipalDistrict: String = null,
-    ncoaAddress: String = null,
-    oddOrEvens: js.Array[String] = null,
-    originalId: String = null,
-    pollinglocationByIds: js.Array[String] = null,
-    precinctName: String = null,
-    precinctOcdId: String = null,
-    provenances: js.Array[SchemaProvenance] = null,
-    published: js.UndefOr[Boolean] = js.undefined,
-    schoolDistrict: String = null,
-    startHouseNumber: String = null,
-    startLatE7: String = null,
-    startLngE7: String = null,
-    state: String = null,
-    stateHouseDistrict: String = null,
-    stateSenateDistrict: String = null,
-    streetName: String = null,
-    subAdministrativeAreaName: String = null,
-    surrogateId: String = null,
-    targetsmartUniquePrecinctCode: String = null,
-    townshipDistrict: String = null,
-    unitNumber: String = null,
-    unitType: String = null,
-    vanPrecinctCode: String = null,
-    voterGeographicDivisionOcdIds: js.Array[String] = null,
-    wardDistrict: String = null,
-    wildcard: js.UndefOr[Boolean] = js.undefined,
-    zip: String = null
-  ): SchemaStreetSegment = {
+  def apply(): SchemaStreetSegment = {
     val __obj = js.Dynamic.literal()
-    if (administrationRegionIds != null) __obj.updateDynamic("administrationRegionIds")(administrationRegionIds.asInstanceOf[js.Any])
-    if (beforeGeocodeId != null) __obj.updateDynamic("beforeGeocodeId")(beforeGeocodeId.asInstanceOf[js.Any])
-    if (catalistUniquePrecinctCode != null) __obj.updateDynamic("catalistUniquePrecinctCode")(catalistUniquePrecinctCode.asInstanceOf[js.Any])
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (cityCouncilDistrict != null) __obj.updateDynamic("cityCouncilDistrict")(cityCouncilDistrict.asInstanceOf[js.Any])
-    if (congressionalDistrict != null) __obj.updateDynamic("congressionalDistrict")(congressionalDistrict.asInstanceOf[js.Any])
-    if (contestIds != null) __obj.updateDynamic("contestIds")(contestIds.asInstanceOf[js.Any])
-    if (countyCouncilDistrict != null) __obj.updateDynamic("countyCouncilDistrict")(countyCouncilDistrict.asInstanceOf[js.Any])
-    if (countyFips != null) __obj.updateDynamic("countyFips")(countyFips.asInstanceOf[js.Any])
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
-    if (earlyVoteSiteByIds != null) __obj.updateDynamic("earlyVoteSiteByIds")(earlyVoteSiteByIds.asInstanceOf[js.Any])
-    if (endHouseNumber != null) __obj.updateDynamic("endHouseNumber")(endHouseNumber.asInstanceOf[js.Any])
-    if (geocodedPoint != null) __obj.updateDynamic("geocodedPoint")(geocodedPoint.asInstanceOf[js.Any])
-    if (geographicDivisionOcdIds != null) __obj.updateDynamic("geographicDivisionOcdIds")(geographicDivisionOcdIds.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (judicialDistrict != null) __obj.updateDynamic("judicialDistrict")(judicialDistrict.asInstanceOf[js.Any])
-    if (!js.isUndefined(mailOnly)) __obj.updateDynamic("mailOnly")(mailOnly.get.asInstanceOf[js.Any])
-    if (municipalDistrict != null) __obj.updateDynamic("municipalDistrict")(municipalDistrict.asInstanceOf[js.Any])
-    if (ncoaAddress != null) __obj.updateDynamic("ncoaAddress")(ncoaAddress.asInstanceOf[js.Any])
-    if (oddOrEvens != null) __obj.updateDynamic("oddOrEvens")(oddOrEvens.asInstanceOf[js.Any])
-    if (originalId != null) __obj.updateDynamic("originalId")(originalId.asInstanceOf[js.Any])
-    if (pollinglocationByIds != null) __obj.updateDynamic("pollinglocationByIds")(pollinglocationByIds.asInstanceOf[js.Any])
-    if (precinctName != null) __obj.updateDynamic("precinctName")(precinctName.asInstanceOf[js.Any])
-    if (precinctOcdId != null) __obj.updateDynamic("precinctOcdId")(precinctOcdId.asInstanceOf[js.Any])
-    if (provenances != null) __obj.updateDynamic("provenances")(provenances.asInstanceOf[js.Any])
-    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.get.asInstanceOf[js.Any])
-    if (schoolDistrict != null) __obj.updateDynamic("schoolDistrict")(schoolDistrict.asInstanceOf[js.Any])
-    if (startHouseNumber != null) __obj.updateDynamic("startHouseNumber")(startHouseNumber.asInstanceOf[js.Any])
-    if (startLatE7 != null) __obj.updateDynamic("startLatE7")(startLatE7.asInstanceOf[js.Any])
-    if (startLngE7 != null) __obj.updateDynamic("startLngE7")(startLngE7.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (stateHouseDistrict != null) __obj.updateDynamic("stateHouseDistrict")(stateHouseDistrict.asInstanceOf[js.Any])
-    if (stateSenateDistrict != null) __obj.updateDynamic("stateSenateDistrict")(stateSenateDistrict.asInstanceOf[js.Any])
-    if (streetName != null) __obj.updateDynamic("streetName")(streetName.asInstanceOf[js.Any])
-    if (subAdministrativeAreaName != null) __obj.updateDynamic("subAdministrativeAreaName")(subAdministrativeAreaName.asInstanceOf[js.Any])
-    if (surrogateId != null) __obj.updateDynamic("surrogateId")(surrogateId.asInstanceOf[js.Any])
-    if (targetsmartUniquePrecinctCode != null) __obj.updateDynamic("targetsmartUniquePrecinctCode")(targetsmartUniquePrecinctCode.asInstanceOf[js.Any])
-    if (townshipDistrict != null) __obj.updateDynamic("townshipDistrict")(townshipDistrict.asInstanceOf[js.Any])
-    if (unitNumber != null) __obj.updateDynamic("unitNumber")(unitNumber.asInstanceOf[js.Any])
-    if (unitType != null) __obj.updateDynamic("unitType")(unitType.asInstanceOf[js.Any])
-    if (vanPrecinctCode != null) __obj.updateDynamic("vanPrecinctCode")(vanPrecinctCode.asInstanceOf[js.Any])
-    if (voterGeographicDivisionOcdIds != null) __obj.updateDynamic("voterGeographicDivisionOcdIds")(voterGeographicDivisionOcdIds.asInstanceOf[js.Any])
-    if (wardDistrict != null) __obj.updateDynamic("wardDistrict")(wardDistrict.asInstanceOf[js.Any])
-    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.get.asInstanceOf[js.Any])
-    if (zip != null) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStreetSegment]
   }
+  @scala.inline
+  implicit class SchemaStreetSegmentOps[Self <: SchemaStreetSegment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdministrationRegionIdsVarargs(value: String*): Self = this.set("administrationRegionIds", js.Array(value :_*))
+    @scala.inline
+    def setAdministrationRegionIds(value: js.Array[String]): Self = this.set("administrationRegionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdministrationRegionIds: Self = this.set("administrationRegionIds", js.undefined)
+    @scala.inline
+    def setBeforeGeocodeId(value: String): Self = this.set("beforeGeocodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeGeocodeId: Self = this.set("beforeGeocodeId", js.undefined)
+    @scala.inline
+    def setCatalistUniquePrecinctCode(value: String): Self = this.set("catalistUniquePrecinctCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalistUniquePrecinctCode: Self = this.set("catalistUniquePrecinctCode", js.undefined)
+    @scala.inline
+    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("city", js.undefined)
+    @scala.inline
+    def setCityCouncilDistrict(value: String): Self = this.set("cityCouncilDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCityCouncilDistrict: Self = this.set("cityCouncilDistrict", js.undefined)
+    @scala.inline
+    def setCongressionalDistrict(value: String): Self = this.set("congressionalDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCongressionalDistrict: Self = this.set("congressionalDistrict", js.undefined)
+    @scala.inline
+    def setContestIdsVarargs(value: String*): Self = this.set("contestIds", js.Array(value :_*))
+    @scala.inline
+    def setContestIds(value: js.Array[String]): Self = this.set("contestIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContestIds: Self = this.set("contestIds", js.undefined)
+    @scala.inline
+    def setCountyCouncilDistrict(value: String): Self = this.set("countyCouncilDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountyCouncilDistrict: Self = this.set("countyCouncilDistrict", js.undefined)
+    @scala.inline
+    def setCountyFips(value: String): Self = this.set("countyFips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountyFips: Self = this.set("countyFips", js.undefined)
+    @scala.inline
+    def setDatasetId(value: String): Self = this.set("datasetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetId: Self = this.set("datasetId", js.undefined)
+    @scala.inline
+    def setEarlyVoteSiteByIdsVarargs(value: String*): Self = this.set("earlyVoteSiteByIds", js.Array(value :_*))
+    @scala.inline
+    def setEarlyVoteSiteByIds(value: js.Array[String]): Self = this.set("earlyVoteSiteByIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEarlyVoteSiteByIds: Self = this.set("earlyVoteSiteByIds", js.undefined)
+    @scala.inline
+    def setEndHouseNumber(value: String): Self = this.set("endHouseNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndHouseNumber: Self = this.set("endHouseNumber", js.undefined)
+    @scala.inline
+    def setGeocodedPoint(value: SchemaPointProto): Self = this.set("geocodedPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeocodedPoint: Self = this.set("geocodedPoint", js.undefined)
+    @scala.inline
+    def setGeographicDivisionOcdIdsVarargs(value: String*): Self = this.set("geographicDivisionOcdIds", js.Array(value :_*))
+    @scala.inline
+    def setGeographicDivisionOcdIds(value: js.Array[String]): Self = this.set("geographicDivisionOcdIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeographicDivisionOcdIds: Self = this.set("geographicDivisionOcdIds", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setJudicialDistrict(value: String): Self = this.set("judicialDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJudicialDistrict: Self = this.set("judicialDistrict", js.undefined)
+    @scala.inline
+    def setMailOnly(value: Boolean): Self = this.set("mailOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMailOnly: Self = this.set("mailOnly", js.undefined)
+    @scala.inline
+    def setMunicipalDistrict(value: String): Self = this.set("municipalDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMunicipalDistrict: Self = this.set("municipalDistrict", js.undefined)
+    @scala.inline
+    def setNcoaAddress(value: String): Self = this.set("ncoaAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNcoaAddress: Self = this.set("ncoaAddress", js.undefined)
+    @scala.inline
+    def setOddOrEvensVarargs(value: String*): Self = this.set("oddOrEvens", js.Array(value :_*))
+    @scala.inline
+    def setOddOrEvens(value: js.Array[String]): Self = this.set("oddOrEvens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOddOrEvens: Self = this.set("oddOrEvens", js.undefined)
+    @scala.inline
+    def setOriginalId(value: String): Self = this.set("originalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalId: Self = this.set("originalId", js.undefined)
+    @scala.inline
+    def setPollinglocationByIdsVarargs(value: String*): Self = this.set("pollinglocationByIds", js.Array(value :_*))
+    @scala.inline
+    def setPollinglocationByIds(value: js.Array[String]): Self = this.set("pollinglocationByIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollinglocationByIds: Self = this.set("pollinglocationByIds", js.undefined)
+    @scala.inline
+    def setPrecinctName(value: String): Self = this.set("precinctName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecinctName: Self = this.set("precinctName", js.undefined)
+    @scala.inline
+    def setPrecinctOcdId(value: String): Self = this.set("precinctOcdId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecinctOcdId: Self = this.set("precinctOcdId", js.undefined)
+    @scala.inline
+    def setProvenancesVarargs(value: SchemaProvenance*): Self = this.set("provenances", js.Array(value :_*))
+    @scala.inline
+    def setProvenances(value: js.Array[SchemaProvenance]): Self = this.set("provenances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvenances: Self = this.set("provenances", js.undefined)
+    @scala.inline
+    def setPublished(value: Boolean): Self = this.set("published", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublished: Self = this.set("published", js.undefined)
+    @scala.inline
+    def setSchoolDistrict(value: String): Self = this.set("schoolDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchoolDistrict: Self = this.set("schoolDistrict", js.undefined)
+    @scala.inline
+    def setStartHouseNumber(value: String): Self = this.set("startHouseNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartHouseNumber: Self = this.set("startHouseNumber", js.undefined)
+    @scala.inline
+    def setStartLatE7(value: String): Self = this.set("startLatE7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartLatE7: Self = this.set("startLatE7", js.undefined)
+    @scala.inline
+    def setStartLngE7(value: String): Self = this.set("startLngE7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartLngE7: Self = this.set("startLngE7", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStateHouseDistrict(value: String): Self = this.set("stateHouseDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateHouseDistrict: Self = this.set("stateHouseDistrict", js.undefined)
+    @scala.inline
+    def setStateSenateDistrict(value: String): Self = this.set("stateSenateDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateSenateDistrict: Self = this.set("stateSenateDistrict", js.undefined)
+    @scala.inline
+    def setStreetName(value: String): Self = this.set("streetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreetName: Self = this.set("streetName", js.undefined)
+    @scala.inline
+    def setSubAdministrativeAreaName(value: String): Self = this.set("subAdministrativeAreaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubAdministrativeAreaName: Self = this.set("subAdministrativeAreaName", js.undefined)
+    @scala.inline
+    def setSurrogateId(value: String): Self = this.set("surrogateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSurrogateId: Self = this.set("surrogateId", js.undefined)
+    @scala.inline
+    def setTargetsmartUniquePrecinctCode(value: String): Self = this.set("targetsmartUniquePrecinctCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetsmartUniquePrecinctCode: Self = this.set("targetsmartUniquePrecinctCode", js.undefined)
+    @scala.inline
+    def setTownshipDistrict(value: String): Self = this.set("townshipDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTownshipDistrict: Self = this.set("townshipDistrict", js.undefined)
+    @scala.inline
+    def setUnitNumber(value: String): Self = this.set("unitNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnitNumber: Self = this.set("unitNumber", js.undefined)
+    @scala.inline
+    def setUnitType(value: String): Self = this.set("unitType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnitType: Self = this.set("unitType", js.undefined)
+    @scala.inline
+    def setVanPrecinctCode(value: String): Self = this.set("vanPrecinctCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVanPrecinctCode: Self = this.set("vanPrecinctCode", js.undefined)
+    @scala.inline
+    def setVoterGeographicDivisionOcdIdsVarargs(value: String*): Self = this.set("voterGeographicDivisionOcdIds", js.Array(value :_*))
+    @scala.inline
+    def setVoterGeographicDivisionOcdIds(value: js.Array[String]): Self = this.set("voterGeographicDivisionOcdIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoterGeographicDivisionOcdIds: Self = this.set("voterGeographicDivisionOcdIds", js.undefined)
+    @scala.inline
+    def setWardDistrict(value: String): Self = this.set("wardDistrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWardDistrict: Self = this.set("wardDistrict", js.undefined)
+    @scala.inline
+    def setWildcard(value: Boolean): Self = this.set("wildcard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWildcard: Self = this.set("wildcard", js.undefined)
+    @scala.inline
+    def setZip(value: String): Self = this.set("zip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZip: Self = this.set("zip", js.undefined)
+  }
+  
 }
 

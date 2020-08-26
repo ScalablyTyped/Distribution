@@ -41,18 +41,40 @@ trait SchemaConnection extends js.Object {
 
 object SchemaConnection {
   @scala.inline
-  def apply(
-    network: String = null,
-    peering: String = null,
-    reservedPeeringRanges: js.Array[String] = null,
-    service: String = null
-  ): SchemaConnection = {
+  def apply(): SchemaConnection = {
     val __obj = js.Dynamic.literal()
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (peering != null) __obj.updateDynamic("peering")(peering.asInstanceOf[js.Any])
-    if (reservedPeeringRanges != null) __obj.updateDynamic("reservedPeeringRanges")(reservedPeeringRanges.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConnection]
   }
+  @scala.inline
+  implicit class SchemaConnectionOps[Self <: SchemaConnection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setPeering(value: String): Self = this.set("peering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeering: Self = this.set("peering", js.undefined)
+    @scala.inline
+    def setReservedPeeringRangesVarargs(value: String*): Self = this.set("reservedPeeringRanges", js.Array(value :_*))
+    @scala.inline
+    def setReservedPeeringRanges(value: js.Array[String]): Self = this.set("reservedPeeringRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedPeeringRanges: Self = this.set("reservedPeeringRanges", js.undefined)
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+  }
+  
 }
 

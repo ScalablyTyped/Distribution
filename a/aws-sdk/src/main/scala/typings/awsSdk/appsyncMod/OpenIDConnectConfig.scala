@@ -26,17 +26,36 @@ trait OpenIDConnectConfig extends js.Object {
 
 object OpenIDConnectConfig {
   @scala.inline
-  def apply(
-    issuer: String,
-    authTTL: js.UndefOr[Long] = js.undefined,
-    clientId: String = null,
-    iatTTL: js.UndefOr[Long] = js.undefined
-  ): OpenIDConnectConfig = {
+  def apply(issuer: String): OpenIDConnectConfig = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
-    if (!js.isUndefined(authTTL)) __obj.updateDynamic("authTTL")(authTTL.get.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(iatTTL)) __obj.updateDynamic("iatTTL")(iatTTL.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenIDConnectConfig]
   }
+  @scala.inline
+  implicit class OpenIDConnectConfigOps[Self <: OpenIDConnectConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthTTL(value: Long): Self = this.set("authTTL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthTTL: Self = this.set("authTTL", js.undefined)
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setIatTTL(value: Long): Self = this.set("iatTTL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIatTTL: Self = this.set("iatTTL", js.undefined)
+  }
+  
 }
 

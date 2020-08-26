@@ -13,6 +13,10 @@ trait AudioBufferSourceNode extends AudioScheduledSourceNode {
   var loopEnd: Double = js.native
   var loopStart: Double = js.native
   val playbackRate: AudioParam = js.native
+  def start(when: js.UndefOr[scala.Nothing], offset: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
+  def start(when: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
+  def start(when: js.UndefOr[scala.Nothing], offset: Double, duration: Double): Unit = js.native
+  def start(when: Double, offset: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
   def start(when: Double, offset: Double): Unit = js.native
   def start(when: Double, offset: Double, duration: Double): Unit = js.native
 }

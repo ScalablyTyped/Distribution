@@ -38,21 +38,44 @@ trait AdminInitiateAuthRequest extends js.Object {
 
 object AdminInitiateAuthRequest {
   @scala.inline
-  def apply(
-    AuthFlow: AuthFlowType,
-    ClientId: ClientIdType,
-    UserPoolId: UserPoolIdType,
-    AnalyticsMetadata: AnalyticsMetadataType = null,
-    AuthParameters: AuthParametersType = null,
-    ClientMetadata: ClientMetadataType = null,
-    ContextData: ContextDataType = null
-  ): AdminInitiateAuthRequest = {
+  def apply(AuthFlow: AuthFlowType, ClientId: ClientIdType, UserPoolId: UserPoolIdType): AdminInitiateAuthRequest = {
     val __obj = js.Dynamic.literal(AuthFlow = AuthFlow.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-    if (AnalyticsMetadata != null) __obj.updateDynamic("AnalyticsMetadata")(AnalyticsMetadata.asInstanceOf[js.Any])
-    if (AuthParameters != null) __obj.updateDynamic("AuthParameters")(AuthParameters.asInstanceOf[js.Any])
-    if (ClientMetadata != null) __obj.updateDynamic("ClientMetadata")(ClientMetadata.asInstanceOf[js.Any])
-    if (ContextData != null) __obj.updateDynamic("ContextData")(ContextData.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminInitiateAuthRequest]
   }
+  @scala.inline
+  implicit class AdminInitiateAuthRequestOps[Self <: AdminInitiateAuthRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthFlow(value: AuthFlowType): Self = this.set("AuthFlow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientId(value: ClientIdType): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = this.set("AnalyticsMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalyticsMetadata: Self = this.set("AnalyticsMetadata", js.undefined)
+    @scala.inline
+    def setAuthParameters(value: AuthParametersType): Self = this.set("AuthParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthParameters: Self = this.set("AuthParameters", js.undefined)
+    @scala.inline
+    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
+    @scala.inline
+    def setContextData(value: ContextDataType): Self = this.set("ContextData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextData: Self = this.set("ContextData", js.undefined)
+  }
+  
 }
 

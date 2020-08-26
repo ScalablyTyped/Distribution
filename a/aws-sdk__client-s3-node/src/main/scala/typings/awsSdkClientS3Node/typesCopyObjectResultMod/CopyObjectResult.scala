@@ -5,24 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CopyObjectResult extends js.Object {
   /**
     * _ETag shape
     */
-  var ETag: js.UndefOr[String] = js.undefined
+  var ETag: js.UndefOr[String] = js.native
   /**
     * _LastModified shape
     */
-  var LastModified: js.UndefOr[Date | String | Double] = js.undefined
+  var LastModified: js.UndefOr[Date | String | Double] = js.native
 }
 
 object CopyObjectResult {
   @scala.inline
-  def apply(ETag: String = null, LastModified: Date | String | Double = null): CopyObjectResult = {
+  def apply(): CopyObjectResult = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyObjectResult]
   }
+  @scala.inline
+  implicit class CopyObjectResultOps[Self <: CopyObjectResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setLastModified(value: Date | String | Double): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+  }
+  
 }
 

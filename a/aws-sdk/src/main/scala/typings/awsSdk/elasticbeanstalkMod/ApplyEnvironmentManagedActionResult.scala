@@ -26,18 +26,38 @@ trait ApplyEnvironmentManagedActionResult extends js.Object {
 
 object ApplyEnvironmentManagedActionResult {
   @scala.inline
-  def apply(
-    ActionDescription: String = null,
-    ActionId: String = null,
-    ActionType: ActionType = null,
-    Status: String = null
-  ): ApplyEnvironmentManagedActionResult = {
+  def apply(): ApplyEnvironmentManagedActionResult = {
     val __obj = js.Dynamic.literal()
-    if (ActionDescription != null) __obj.updateDynamic("ActionDescription")(ActionDescription.asInstanceOf[js.Any])
-    if (ActionId != null) __obj.updateDynamic("ActionId")(ActionId.asInstanceOf[js.Any])
-    if (ActionType != null) __obj.updateDynamic("ActionType")(ActionType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyEnvironmentManagedActionResult]
   }
+  @scala.inline
+  implicit class ApplyEnvironmentManagedActionResultOps[Self <: ApplyEnvironmentManagedActionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionDescription(value: String): Self = this.set("ActionDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionDescription: Self = this.set("ActionDescription", js.undefined)
+    @scala.inline
+    def setActionId(value: String): Self = this.set("ActionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionId: Self = this.set("ActionId", js.undefined)
+    @scala.inline
+    def setActionType(value: ActionType): Self = this.set("ActionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionType: Self = this.set("ActionType", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

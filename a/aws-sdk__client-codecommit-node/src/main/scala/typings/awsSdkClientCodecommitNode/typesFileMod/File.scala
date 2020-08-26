@@ -7,39 +7,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait File extends js.Object {
   /**
     * <p>The fully-qualified path to the file in the repository.</p>
     */
-  var absolutePath: js.UndefOr[String] = js.undefined
+  var absolutePath: js.UndefOr[String] = js.native
   /**
     * <p>The blob ID that contains the file information.</p>
     */
-  var blobId: js.UndefOr[String] = js.undefined
+  var blobId: js.UndefOr[String] = js.native
   /**
     * <p>The extrapolated file mode permissions for the file. Valid values include EXECUTABLE and NORMAL.</p>
     */
-  var fileMode: js.UndefOr[EXECUTABLE | NORMAL | SYMLINK | String] = js.undefined
+  var fileMode: js.UndefOr[EXECUTABLE | NORMAL | SYMLINK | String] = js.native
   /**
     * <p>The relative path of the file from the folder where the query originated.</p>
     */
-  var relativePath: js.UndefOr[String] = js.undefined
+  var relativePath: js.UndefOr[String] = js.native
 }
 
 object File {
   @scala.inline
-  def apply(
-    absolutePath: String = null,
-    blobId: String = null,
-    fileMode: EXECUTABLE | NORMAL | SYMLINK | String = null,
-    relativePath: String = null
-  ): File = {
+  def apply(): File = {
     val __obj = js.Dynamic.literal()
-    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
-    if (blobId != null) __obj.updateDynamic("blobId")(blobId.asInstanceOf[js.Any])
-    if (fileMode != null) __obj.updateDynamic("fileMode")(fileMode.asInstanceOf[js.Any])
-    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
+  @scala.inline
+  implicit class FileOps[Self <: File] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbsolutePath(value: String): Self = this.set("absolutePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbsolutePath: Self = this.set("absolutePath", js.undefined)
+    @scala.inline
+    def setBlobId(value: String): Self = this.set("blobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlobId: Self = this.set("blobId", js.undefined)
+    @scala.inline
+    def setFileMode(value: EXECUTABLE | NORMAL | SYMLINK | String): Self = this.set("fileMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileMode: Self = this.set("fileMode", js.undefined)
+    @scala.inline
+    def setRelativePath(value: String): Self = this.set("relativePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativePath: Self = this.set("relativePath", js.undefined)
+  }
+  
 }
 

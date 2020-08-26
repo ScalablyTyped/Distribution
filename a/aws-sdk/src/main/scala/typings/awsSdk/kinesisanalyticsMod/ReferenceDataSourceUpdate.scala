@@ -26,17 +26,36 @@ trait ReferenceDataSourceUpdate extends js.Object {
 
 object ReferenceDataSourceUpdate {
   @scala.inline
-  def apply(
-    ReferenceId: Id,
-    ReferenceSchemaUpdate: SourceSchema = null,
-    S3ReferenceDataSourceUpdate: S3ReferenceDataSourceUpdate = null,
-    TableNameUpdate: InAppTableName = null
-  ): ReferenceDataSourceUpdate = {
+  def apply(ReferenceId: Id): ReferenceDataSourceUpdate = {
     val __obj = js.Dynamic.literal(ReferenceId = ReferenceId.asInstanceOf[js.Any])
-    if (ReferenceSchemaUpdate != null) __obj.updateDynamic("ReferenceSchemaUpdate")(ReferenceSchemaUpdate.asInstanceOf[js.Any])
-    if (S3ReferenceDataSourceUpdate != null) __obj.updateDynamic("S3ReferenceDataSourceUpdate")(S3ReferenceDataSourceUpdate.asInstanceOf[js.Any])
-    if (TableNameUpdate != null) __obj.updateDynamic("TableNameUpdate")(TableNameUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceDataSourceUpdate]
   }
+  @scala.inline
+  implicit class ReferenceDataSourceUpdateOps[Self <: ReferenceDataSourceUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReferenceId(value: Id): Self = this.set("ReferenceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReferenceSchemaUpdate(value: SourceSchema): Self = this.set("ReferenceSchemaUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceSchemaUpdate: Self = this.set("ReferenceSchemaUpdate", js.undefined)
+    @scala.inline
+    def setS3ReferenceDataSourceUpdate(value: S3ReferenceDataSourceUpdate): Self = this.set("S3ReferenceDataSourceUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ReferenceDataSourceUpdate: Self = this.set("S3ReferenceDataSourceUpdate", js.undefined)
+    @scala.inline
+    def setTableNameUpdate(value: InAppTableName): Self = this.set("TableNameUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableNameUpdate: Self = this.set("TableNameUpdate", js.undefined)
+  }
+  
 }
 

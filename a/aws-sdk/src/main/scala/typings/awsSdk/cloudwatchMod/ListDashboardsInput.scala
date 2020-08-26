@@ -18,11 +18,30 @@ trait ListDashboardsInput extends js.Object {
 
 object ListDashboardsInput {
   @scala.inline
-  def apply(DashboardNamePrefix: DashboardNamePrefix = null, NextToken: NextToken = null): ListDashboardsInput = {
+  def apply(): ListDashboardsInput = {
     val __obj = js.Dynamic.literal()
-    if (DashboardNamePrefix != null) __obj.updateDynamic("DashboardNamePrefix")(DashboardNamePrefix.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDashboardsInput]
   }
+  @scala.inline
+  implicit class ListDashboardsInputOps[Self <: ListDashboardsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDashboardNamePrefix(value: DashboardNamePrefix): Self = this.set("DashboardNamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashboardNamePrefix: Self = this.set("DashboardNamePrefix", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

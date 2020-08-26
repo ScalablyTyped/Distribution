@@ -12,7 +12,7 @@ Calculate remaining reading time estimates in real-time
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 671 |
+| # downloads        | 612 |
 | # stars            | 1 |
 
 ## Links

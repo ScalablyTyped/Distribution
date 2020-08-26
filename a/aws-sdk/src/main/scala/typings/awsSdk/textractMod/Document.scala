@@ -18,11 +18,30 @@ trait Document extends js.Object {
 
 object Document {
   @scala.inline
-  def apply(Bytes: ImageBlob = null, S3Object: S3Object = null): Document = {
+  def apply(): Document = {
     val __obj = js.Dynamic.literal()
-    if (Bytes != null) __obj.updateDynamic("Bytes")(Bytes.asInstanceOf[js.Any])
-    if (S3Object != null) __obj.updateDynamic("S3Object")(S3Object.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
+  @scala.inline
+  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytes(value: ImageBlob): Self = this.set("Bytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytes: Self = this.set("Bytes", js.undefined)
+    @scala.inline
+    def setS3Object(value: S3Object): Self = this.set("S3Object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Object: Self = this.set("S3Object", js.undefined)
+  }
+  
 }
 

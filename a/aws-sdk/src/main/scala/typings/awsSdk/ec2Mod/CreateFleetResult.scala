@@ -22,16 +22,38 @@ trait CreateFleetResult extends js.Object {
 
 object CreateFleetResult {
   @scala.inline
-  def apply(
-    Errors: CreateFleetErrorsSet = null,
-    FleetId: FleetId = null,
-    Instances: CreateFleetInstancesSet = null
-  ): CreateFleetResult = {
+  def apply(): CreateFleetResult = {
     val __obj = js.Dynamic.literal()
-    if (Errors != null) __obj.updateDynamic("Errors")(Errors.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFleetResult]
   }
+  @scala.inline
+  implicit class CreateFleetResultOps[Self <: CreateFleetResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorsVarargs(value: CreateFleetError*): Self = this.set("Errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: CreateFleetErrorsSet): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("Errors", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setInstancesVarargs(value: CreateFleetInstance*): Self = this.set("Instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: CreateFleetInstancesSet): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("Instances", js.undefined)
+  }
+  
 }
 

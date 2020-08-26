@@ -37,8 +37,31 @@ object exporter extends js.Object {
     def this(map: IPathOriginFunctionMap, fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint]) = this()
     def this(
       map: IPathOriginFunctionMap,
+      fixPoint: js.UndefOr[scala.Nothing],
+      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
       fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
       fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.UndefOr[scala.Nothing],
+      fixPath: js.UndefOr[scala.Nothing],
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.UndefOr[scala.Nothing],
+      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
+      fixPath: js.UndefOr[scala.Nothing],
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit]
     ) = this()
     def this(
       map: IPathOriginFunctionMap,
@@ -48,45 +71,60 @@ object exporter extends js.Object {
     ) = this()
     def this(
       map: IPathOriginFunctionMap,
+      fixPoint: js.UndefOr[scala.Nothing],
+      fixPath: js.UndefOr[scala.Nothing],
+      beginModel: js.UndefOr[scala.Nothing],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.UndefOr[scala.Nothing],
+      fixPath: js.UndefOr[scala.Nothing],
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.UndefOr[scala.Nothing],
+      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
+      beginModel: js.UndefOr[scala.Nothing],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.UndefOr[scala.Nothing],
+      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
+      fixPath: js.UndefOr[scala.Nothing],
+      beginModel: js.UndefOr[scala.Nothing],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
+      fixPath: js.UndefOr[scala.Nothing],
+      beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
+      fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
+      fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
+      beginModel: js.UndefOr[scala.Nothing],
+      endModel: js.Function1[/* modelContext */ IModel, Unit]
+    ) = this()
+    def this(
+      map: IPathOriginFunctionMap,
       fixPoint: js.Function1[/* pointToFix */ IPoint, IPoint],
       fixPath: js.Function2[/* pathToFix */ IPath, /* origin */ IPoint, IPath],
       beginModel: js.Function2[/* id */ String, /* modelContext */ IModel, Unit],
       endModel: js.Function1[/* modelContext */ IModel, Unit]
     ) = this()
-    /* CompleteClass */
-    override var beginModel: js.Any = js.native
-    /* CompleteClass */
-    override var endModel: js.Any = js.native
-    /* CompleteClass */
-    override var fixPath: js.Any = js.native
-    /* CompleteClass */
-    override var fixPoint: js.Any = js.native
-    /* CompleteClass */
-    override var map: js.Any = js.native
-    /**
-      * Export an object.
-      *
-      * @param item The object to export. May be a path, an array of paths, a model, or an array of models.
-      * @param offset The offset position of the object.
-      */
-    /* CompleteClass */
-    override def exportItem(itemId: String, itemToExport: js.Any, origin: IPoint): Unit = js.native
-    /**
-      * Export a model.
-      *
-      * @param modelToExport The model to export.
-      * @param offset The offset position of the model.
-      */
-    /* CompleteClass */
-    override def exportModel(modelId: String, modelToExport: IModel, offset: IPoint): Unit = js.native
-    /**
-      * Export a path.
-      *
-      * @param pathToExport The path to export.
-      * @param offset The offset position of the path.
-      */
-    /* CompleteClass */
-    override def exportPath(id: String, pathToExport: IPath, offset: IPoint, layer: String): Unit = js.native
   }
   
   /**
@@ -102,37 +140,6 @@ object exporter extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, attrs: IXmlTagAttrs) = this()
-    /* CompleteClass */
-    override var attrs: IXmlTagAttrs = js.native
-    /**
-      * Text between the opening and closing tags.
-      */
-    /* CompleteClass */
-    override var innerText: String = js.native
-    /**
-      * Boolean to indicate that the innerText has been escaped.
-      */
-    /* CompleteClass */
-    override var innerTextEscaped: Boolean = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /**
-      * Get the closing tag.
-      */
-    /* CompleteClass */
-    override def getClosingTag(): String = js.native
-    /**
-      * Get the inner text.
-      */
-    /* CompleteClass */
-    override def getInnerText(): String = js.native
-    /**
-      * Get the opening tag.
-      *
-      * @param selfClose Flag to determine if opening tag should be self closing.
-      */
-    /* CompleteClass */
-    override def getOpeningTag(selfClose: Boolean): String = js.native
   }
   
   /**
@@ -194,6 +201,7 @@ object exporter extends js.Object {
     * @returns String of SVG path data (if byLayers is false) or an object map of path data by layer .
     */
   def toSVGPathData(modelToExport: IModel): IPathDataByLayerMap | String = js.native
+  def toSVGPathData(modelToExport: IModel, byLayers: js.UndefOr[scala.Nothing], origin: IPoint): IPathDataByLayerMap | String = js.native
   def toSVGPathData(modelToExport: IModel, byLayers: Boolean): IPathDataByLayerMap | String = js.native
   def toSVGPathData(modelToExport: IModel, byLayers: Boolean, origin: IPoint): IPathDataByLayerMap | String = js.native
   /**

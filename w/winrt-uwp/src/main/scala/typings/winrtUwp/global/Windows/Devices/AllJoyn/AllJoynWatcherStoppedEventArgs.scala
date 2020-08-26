@@ -14,8 +14,5 @@ class AllJoynWatcherStoppedEventArgs protected ()
     * @param status The AllJoyn status code.
     */
   def this(status: Double) = this()
-  /** Returns a status code that was returned when the watcher object is stopped. This value is represented by AllJoynStatus . */
-  /* CompleteClass */
-  override var status: Double = js.native
 }
 

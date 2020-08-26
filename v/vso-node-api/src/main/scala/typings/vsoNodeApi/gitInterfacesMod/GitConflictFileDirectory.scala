@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GitConflictFileDirectory extends GitConflict {
-  var resolution: GitResolutionPathConflict
-  var sourceBlob: GitBlobRef
-  var targetTree: GitTreeRef
+  var resolution: GitResolutionPathConflict = js.native
+  var sourceBlob: GitBlobRef = js.native
+  var targetTree: GitTreeRef = js.native
 }
 
 object GitConflictFileDirectory {
@@ -35,5 +36,24 @@ object GitConflictFileDirectory {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], conflictId = conflictId.asInstanceOf[js.Any], conflictPath = conflictPath.asInstanceOf[js.Any], conflictType = conflictType.asInstanceOf[js.Any], mergeBaseCommit = mergeBaseCommit.asInstanceOf[js.Any], mergeOrigin = mergeOrigin.asInstanceOf[js.Any], mergeSourceCommit = mergeSourceCommit.asInstanceOf[js.Any], mergeTargetCommit = mergeTargetCommit.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], resolutionError = resolutionError.asInstanceOf[js.Any], resolutionStatus = resolutionStatus.asInstanceOf[js.Any], resolvedBy = resolvedBy.asInstanceOf[js.Any], resolvedDate = resolvedDate.asInstanceOf[js.Any], sourceBlob = sourceBlob.asInstanceOf[js.Any], targetTree = targetTree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitConflictFileDirectory]
   }
+  @scala.inline
+  implicit class GitConflictFileDirectoryOps[Self <: GitConflictFileDirectory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResolution(value: GitResolutionPathConflict): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceBlob(value: GitBlobRef): Self = this.set("sourceBlob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetTree(value: GitTreeRef): Self = this.set("targetTree", value.asInstanceOf[js.Any])
+  }
+  
 }
 

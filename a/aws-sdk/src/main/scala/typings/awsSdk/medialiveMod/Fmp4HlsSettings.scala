@@ -22,16 +22,34 @@ trait Fmp4HlsSettings extends js.Object {
 
 object Fmp4HlsSettings {
   @scala.inline
-  def apply(
-    AudioRenditionSets: string = null,
-    NielsenId3Behavior: Fmp4NielsenId3Behavior = null,
-    TimedMetadataBehavior: Fmp4TimedMetadataBehavior = null
-  ): Fmp4HlsSettings = {
+  def apply(): Fmp4HlsSettings = {
     val __obj = js.Dynamic.literal()
-    if (AudioRenditionSets != null) __obj.updateDynamic("AudioRenditionSets")(AudioRenditionSets.asInstanceOf[js.Any])
-    if (NielsenId3Behavior != null) __obj.updateDynamic("NielsenId3Behavior")(NielsenId3Behavior.asInstanceOf[js.Any])
-    if (TimedMetadataBehavior != null) __obj.updateDynamic("TimedMetadataBehavior")(TimedMetadataBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fmp4HlsSettings]
   }
+  @scala.inline
+  implicit class Fmp4HlsSettingsOps[Self <: Fmp4HlsSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioRenditionSets(value: string): Self = this.set("AudioRenditionSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioRenditionSets: Self = this.set("AudioRenditionSets", js.undefined)
+    @scala.inline
+    def setNielsenId3Behavior(value: Fmp4NielsenId3Behavior): Self = this.set("NielsenId3Behavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNielsenId3Behavior: Self = this.set("NielsenId3Behavior", js.undefined)
+    @scala.inline
+    def setTimedMetadataBehavior(value: Fmp4TimedMetadataBehavior): Self = this.set("TimedMetadataBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedMetadataBehavior: Self = this.set("TimedMetadataBehavior", js.undefined)
+  }
+  
 }
 

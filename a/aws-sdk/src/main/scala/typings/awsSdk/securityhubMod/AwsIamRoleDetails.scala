@@ -34,22 +34,46 @@ trait AwsIamRoleDetails extends js.Object {
 
 object AwsIamRoleDetails {
   @scala.inline
-  def apply(
-    AssumeRolePolicyDocument: AwsIamRoleAssumeRolePolicyDocument = null,
-    CreateDate: NonEmptyString = null,
-    MaxSessionDuration: js.UndefOr[Integer] = js.undefined,
-    Path: NonEmptyString = null,
-    RoleId: NonEmptyString = null,
-    RoleName: NonEmptyString = null
-  ): AwsIamRoleDetails = {
+  def apply(): AwsIamRoleDetails = {
     val __obj = js.Dynamic.literal()
-    if (AssumeRolePolicyDocument != null) __obj.updateDynamic("AssumeRolePolicyDocument")(AssumeRolePolicyDocument.asInstanceOf[js.Any])
-    if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxSessionDuration)) __obj.updateDynamic("MaxSessionDuration")(MaxSessionDuration.get.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
-    if (RoleId != null) __obj.updateDynamic("RoleId")(RoleId.asInstanceOf[js.Any])
-    if (RoleName != null) __obj.updateDynamic("RoleName")(RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsIamRoleDetails]
   }
+  @scala.inline
+  implicit class AwsIamRoleDetailsOps[Self <: AwsIamRoleDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssumeRolePolicyDocument(value: AwsIamRoleAssumeRolePolicyDocument): Self = this.set("AssumeRolePolicyDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssumeRolePolicyDocument: Self = this.set("AssumeRolePolicyDocument", js.undefined)
+    @scala.inline
+    def setCreateDate(value: NonEmptyString): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    @scala.inline
+    def setMaxSessionDuration(value: Integer): Self = this.set("MaxSessionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSessionDuration: Self = this.set("MaxSessionDuration", js.undefined)
+    @scala.inline
+    def setPath(value: NonEmptyString): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+    @scala.inline
+    def setRoleId(value: NonEmptyString): Self = this.set("RoleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleId: Self = this.set("RoleId", js.undefined)
+    @scala.inline
+    def setRoleName(value: NonEmptyString): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleName: Self = this.set("RoleName", js.undefined)
+  }
+  
 }
 

@@ -49,28 +49,58 @@ trait SchemaTokeninfo extends js.Object {
 
 object SchemaTokeninfo {
   @scala.inline
-  def apply(
-    access_type: String = null,
-    audience: String = null,
-    email: String = null,
-    expires_in: js.UndefOr[Double] = js.undefined,
-    issued_to: String = null,
-    scope: String = null,
-    token_handle: String = null,
-    user_id: String = null,
-    verified_email: js.UndefOr[Boolean] = js.undefined
-  ): SchemaTokeninfo = {
+  def apply(): SchemaTokeninfo = {
     val __obj = js.Dynamic.literal()
-    if (access_type != null) __obj.updateDynamic("access_type")(access_type.asInstanceOf[js.Any])
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(expires_in)) __obj.updateDynamic("expires_in")(expires_in.get.asInstanceOf[js.Any])
-    if (issued_to != null) __obj.updateDynamic("issued_to")(issued_to.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (token_handle != null) __obj.updateDynamic("token_handle")(token_handle.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTokeninfo]
   }
+  @scala.inline
+  implicit class SchemaTokeninfoOps[Self <: SchemaTokeninfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccess_type(value: String): Self = this.set("access_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccess_type: Self = this.set("access_type", js.undefined)
+    @scala.inline
+    def setAudience(value: String): Self = this.set("audience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudience: Self = this.set("audience", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setExpires_in(value: Double): Self = this.set("expires_in", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires_in: Self = this.set("expires_in", js.undefined)
+    @scala.inline
+    def setIssued_to(value: String): Self = this.set("issued_to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssued_to: Self = this.set("issued_to", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setToken_handle(value: String): Self = this.set("token_handle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken_handle: Self = this.set("token_handle", js.undefined)
+    @scala.inline
+    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser_id: Self = this.set("user_id", js.undefined)
+    @scala.inline
+    def setVerified_email(value: Boolean): Self = this.set("verified_email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerified_email: Self = this.set("verified_email", js.undefined)
+  }
+  
 }
 

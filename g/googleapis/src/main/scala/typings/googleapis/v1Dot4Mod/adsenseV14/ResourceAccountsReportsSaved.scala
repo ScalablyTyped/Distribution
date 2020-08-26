@@ -32,6 +32,7 @@ class ResourceAccountsReportsSaved protected () extends js.Object {
     */
   def generate(): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
   def generate(callback: BodyResponseCallback[SchemaAdsenseReportsGenerateResponse]): Unit = js.native
+  def generate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
   def generate(params: ParamsResourceAccountsReportsSavedGenerate): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
   def generate(
     params: ParamsResourceAccountsReportsSavedGenerate,
@@ -64,6 +65,7 @@ class ResourceAccountsReportsSaved protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSavedReports] = js.native
   def list(callback: BodyResponseCallback[SchemaSavedReports]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedReports] = js.native
   def list(params: ParamsResourceAccountsReportsSavedList): GaxiosPromise[SchemaSavedReports] = js.native
   def list(params: ParamsResourceAccountsReportsSavedList, callback: BodyResponseCallback[SchemaSavedReports]): Unit = js.native
   def list(

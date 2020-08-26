@@ -14,5 +14,6 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
+@js.native
 trait AppLoaderPlugin extends js.Object
 

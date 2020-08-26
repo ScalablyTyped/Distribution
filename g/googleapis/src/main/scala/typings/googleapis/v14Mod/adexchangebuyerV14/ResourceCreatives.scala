@@ -29,6 +29,7 @@ class ResourceCreatives protected () extends js.Object {
     */
   def addDeal(): GaxiosPromise[Unit] = js.native
   def addDeal(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def addDeal(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def addDeal(params: ParamsResourceCreativesAdddeal): GaxiosPromise[Unit] = js.native
   def addDeal(params: ParamsResourceCreativesAdddeal, callback: BodyResponseCallback[Unit]): Unit = js.native
   def addDeal(
@@ -58,6 +59,7 @@ class ResourceCreatives protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCreative] = js.native
   def get(callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
   def get(params: ParamsResourceCreativesGet): GaxiosPromise[SchemaCreative] = js.native
   def get(params: ParamsResourceCreativesGet, callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
   def get(
@@ -85,6 +87,7 @@ class ResourceCreatives protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaCreative] = js.native
   def insert(callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
   def insert(params: ParamsResourceCreativesInsert): GaxiosPromise[SchemaCreative] = js.native
   def insert(params: ParamsResourceCreativesInsert, callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
   def insert(
@@ -118,6 +121,7 @@ class ResourceCreatives protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCreativesList] = js.native
   def list(callback: BodyResponseCallback[SchemaCreativesList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativesList] = js.native
   def list(params: ParamsResourceCreativesList): GaxiosPromise[SchemaCreativesList] = js.native
   def list(params: ParamsResourceCreativesList, callback: BodyResponseCallback[SchemaCreativesList]): Unit = js.native
   def list(
@@ -146,6 +150,7 @@ class ResourceCreatives protected () extends js.Object {
     */
   def listDeals(): GaxiosPromise[SchemaCreativeDealIds] = js.native
   def listDeals(callback: BodyResponseCallback[SchemaCreativeDealIds]): Unit = js.native
+  def listDeals(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeDealIds] = js.native
   def listDeals(params: ParamsResourceCreativesListdeals): GaxiosPromise[SchemaCreativeDealIds] = js.native
   def listDeals(params: ParamsResourceCreativesListdeals, callback: BodyResponseCallback[SchemaCreativeDealIds]): Unit = js.native
   def listDeals(
@@ -175,6 +180,7 @@ class ResourceCreatives protected () extends js.Object {
     */
   def removeDeal(): GaxiosPromise[Unit] = js.native
   def removeDeal(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def removeDeal(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def removeDeal(params: ParamsResourceCreativesRemovedeal): GaxiosPromise[Unit] = js.native
   def removeDeal(params: ParamsResourceCreativesRemovedeal, callback: BodyResponseCallback[Unit]): Unit = js.native
   def removeDeal(

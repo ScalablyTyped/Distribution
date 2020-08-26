@@ -4,54 +4,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProcessInfo extends js.Object {
-  var cpuUsage: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var nonPagedPoolUsage: js.UndefOr[Double] = js.undefined
-  var pageFaultCount: js.UndefOr[Double] = js.undefined
-  var pagedPoolUsage: js.UndefOr[Double] = js.undefined
-  var pagefileUsage: js.UndefOr[Double] = js.undefined
-  var peakNonPagedPoolUsage: js.UndefOr[Double] = js.undefined
-  var peakPagedPoolUsage: js.UndefOr[Double] = js.undefined
-  var peakPagefileUsage: js.UndefOr[Double] = js.undefined
-  var peakWorkingSetSize: js.UndefOr[Double] = js.undefined
-  var processId: js.UndefOr[Double] = js.undefined
-  var uuid: js.UndefOr[String] = js.undefined
-  var workingSetSize: js.UndefOr[Double] = js.undefined
+  var cpuUsage: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var nonPagedPoolUsage: js.UndefOr[Double] = js.native
+  var pageFaultCount: js.UndefOr[Double] = js.native
+  var pagedPoolUsage: js.UndefOr[Double] = js.native
+  var pagefileUsage: js.UndefOr[Double] = js.native
+  var peakNonPagedPoolUsage: js.UndefOr[Double] = js.native
+  var peakPagedPoolUsage: js.UndefOr[Double] = js.native
+  var peakPagefileUsage: js.UndefOr[Double] = js.native
+  var peakWorkingSetSize: js.UndefOr[Double] = js.native
+  var processId: js.UndefOr[Double] = js.native
+  var uuid: js.UndefOr[String] = js.native
+  var workingSetSize: js.UndefOr[Double] = js.native
 }
 
 object ProcessInfo {
   @scala.inline
-  def apply(
-    cpuUsage: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    nonPagedPoolUsage: js.UndefOr[Double] = js.undefined,
-    pageFaultCount: js.UndefOr[Double] = js.undefined,
-    pagedPoolUsage: js.UndefOr[Double] = js.undefined,
-    pagefileUsage: js.UndefOr[Double] = js.undefined,
-    peakNonPagedPoolUsage: js.UndefOr[Double] = js.undefined,
-    peakPagedPoolUsage: js.UndefOr[Double] = js.undefined,
-    peakPagefileUsage: js.UndefOr[Double] = js.undefined,
-    peakWorkingSetSize: js.UndefOr[Double] = js.undefined,
-    processId: js.UndefOr[Double] = js.undefined,
-    uuid: String = null,
-    workingSetSize: js.UndefOr[Double] = js.undefined
-  ): ProcessInfo = {
+  def apply(): ProcessInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cpuUsage)) __obj.updateDynamic("cpuUsage")(cpuUsage.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonPagedPoolUsage)) __obj.updateDynamic("nonPagedPoolUsage")(nonPagedPoolUsage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageFaultCount)) __obj.updateDynamic("pageFaultCount")(pageFaultCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagedPoolUsage)) __obj.updateDynamic("pagedPoolUsage")(pagedPoolUsage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagefileUsage)) __obj.updateDynamic("pagefileUsage")(pagefileUsage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(peakNonPagedPoolUsage)) __obj.updateDynamic("peakNonPagedPoolUsage")(peakNonPagedPoolUsage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(peakPagedPoolUsage)) __obj.updateDynamic("peakPagedPoolUsage")(peakPagedPoolUsage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(peakPagefileUsage)) __obj.updateDynamic("peakPagefileUsage")(peakPagefileUsage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(peakWorkingSetSize)) __obj.updateDynamic("peakWorkingSetSize")(peakWorkingSetSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(processId)) __obj.updateDynamic("processId")(processId.get.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
-    if (!js.isUndefined(workingSetSize)) __obj.updateDynamic("workingSetSize")(workingSetSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessInfo]
   }
+  @scala.inline
+  implicit class ProcessInfoOps[Self <: ProcessInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCpuUsage(value: Double): Self = this.set("cpuUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuUsage: Self = this.set("cpuUsage", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNonPagedPoolUsage(value: Double): Self = this.set("nonPagedPoolUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonPagedPoolUsage: Self = this.set("nonPagedPoolUsage", js.undefined)
+    @scala.inline
+    def setPageFaultCount(value: Double): Self = this.set("pageFaultCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageFaultCount: Self = this.set("pageFaultCount", js.undefined)
+    @scala.inline
+    def setPagedPoolUsage(value: Double): Self = this.set("pagedPoolUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagedPoolUsage: Self = this.set("pagedPoolUsage", js.undefined)
+    @scala.inline
+    def setPagefileUsage(value: Double): Self = this.set("pagefileUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagefileUsage: Self = this.set("pagefileUsage", js.undefined)
+    @scala.inline
+    def setPeakNonPagedPoolUsage(value: Double): Self = this.set("peakNonPagedPoolUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeakNonPagedPoolUsage: Self = this.set("peakNonPagedPoolUsage", js.undefined)
+    @scala.inline
+    def setPeakPagedPoolUsage(value: Double): Self = this.set("peakPagedPoolUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeakPagedPoolUsage: Self = this.set("peakPagedPoolUsage", js.undefined)
+    @scala.inline
+    def setPeakPagefileUsage(value: Double): Self = this.set("peakPagefileUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeakPagefileUsage: Self = this.set("peakPagefileUsage", js.undefined)
+    @scala.inline
+    def setPeakWorkingSetSize(value: Double): Self = this.set("peakWorkingSetSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeakWorkingSetSize: Self = this.set("peakWorkingSetSize", js.undefined)
+    @scala.inline
+    def setProcessId(value: Double): Self = this.set("processId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessId: Self = this.set("processId", js.undefined)
+    @scala.inline
+    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUuid: Self = this.set("uuid", js.undefined)
+    @scala.inline
+    def setWorkingSetSize(value: Double): Self = this.set("workingSetSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkingSetSize: Self = this.set("workingSetSize", js.undefined)
+  }
+  
 }
 

@@ -36,6 +36,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.awt.UnoControl
   * @see com.sun.star.awt.UnoControlModel
   */
+@js.native
 trait ImageControl
   extends XControl
      with XWindow

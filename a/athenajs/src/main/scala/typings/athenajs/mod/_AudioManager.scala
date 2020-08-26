@@ -21,7 +21,11 @@ trait _AudioManager extends js.Object {
     *
     */
   def play(id: String): js.Any = js.native
+  def play(id: String, loop: js.UndefOr[scala.Nothing], volume: js.UndefOr[scala.Nothing], panning: Double): js.Any = js.native
+  def play(id: String, loop: js.UndefOr[scala.Nothing], volume: Double): js.Any = js.native
+  def play(id: String, loop: js.UndefOr[scala.Nothing], volume: Double, panning: Double): js.Any = js.native
   def play(id: String, loop: Boolean): js.Any = js.native
+  def play(id: String, loop: Boolean, volume: js.UndefOr[scala.Nothing], panning: Double): js.Any = js.native
   def play(id: String, loop: Boolean, volume: Double): js.Any = js.native
   def play(id: String, loop: Boolean, volume: Double, panning: Double): js.Any = js.native
   /**

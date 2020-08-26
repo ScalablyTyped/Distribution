@@ -5,30 +5,58 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<downshift.downshift.DownshiftState<Item>> */
+@js.native
 trait StateChangeOptions[Item] extends js.Object {
-  var highlightedIndex: js.UndefOr[Double] = js.undefined
-  var inputValue: js.UndefOr[String] = js.undefined
-  var isOpen: js.UndefOr[Boolean] = js.undefined
-  var selectedItem: js.UndefOr[Item] = js.undefined
-  var `type`: StateChangeTypes
+  var highlightedIndex: js.UndefOr[Double | Null] = js.native
+  var inputValue: js.UndefOr[String | Null] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.native
+  var selectedItem: js.UndefOr[Item | Null] = js.native
+  var `type`: StateChangeTypes = js.native
 }
 
 object StateChangeOptions {
   @scala.inline
-  def apply[Item](
-    `type`: StateChangeTypes,
-    highlightedIndex: js.UndefOr[Double] = js.undefined,
-    inputValue: String = null,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    selectedItem: Item = null
-  ): StateChangeOptions[Item] = {
+  def apply[Item](`type`: StateChangeTypes): StateChangeOptions[Item] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightedIndex)) __obj.updateDynamic("highlightedIndex")(highlightedIndex.get.asInstanceOf[js.Any])
-    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateChangeOptions[Item]]
   }
+  @scala.inline
+  implicit class StateChangeOptionsOps[Self <: StateChangeOptions[_], Item] (val x: Self with StateChangeOptions[Item]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: StateChangeTypes): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHighlightedIndex(value: Double): Self = this.set("highlightedIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightedIndex: Self = this.set("highlightedIndex", js.undefined)
+    @scala.inline
+    def setHighlightedIndexNull: Self = this.set("highlightedIndex", null)
+    @scala.inline
+    def setInputValue(value: String): Self = this.set("inputValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputValue: Self = this.set("inputValue", js.undefined)
+    @scala.inline
+    def setInputValueNull: Self = this.set("inputValue", null)
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    @scala.inline
+    def setSelectedItem(value: Item): Self = this.set("selectedItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItem: Self = this.set("selectedItem", js.undefined)
+    @scala.inline
+    def setSelectedItemNull: Self = this.set("selectedItem", null)
+  }
+  
 }
 

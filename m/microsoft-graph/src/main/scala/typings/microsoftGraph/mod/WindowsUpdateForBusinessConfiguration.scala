@@ -4,100 +4,115 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WindowsUpdateForBusinessConfiguration extends DeviceConfiguration {
   /**
     * Automatic update mode. Possible values are: userDefined, notifyDownload, autoInstallAtMaintenanceTime,
     * autoInstallAndRebootAtMaintenanceTime, autoInstallAndRebootAtScheduledTime, autoInstallAndRebootWithoutEndUserControl.
     */
-  var automaticUpdateMode: js.UndefOr[AutomaticUpdateMode] = js.undefined
+  var automaticUpdateMode: js.UndefOr[AutomaticUpdateMode] = js.native
   /**
     * Determines which branch devices will receive their updates from. Possible values are: userDefined, all,
     * businessReadyOnly, windowsInsiderBuildFast, windowsInsiderBuildSlow, windowsInsiderBuildRelease.
     */
-  var businessReadyUpdatesOnly: js.UndefOr[WindowsUpdateType] = js.undefined
+  var businessReadyUpdatesOnly: js.UndefOr[WindowsUpdateType] = js.native
   /**
     * Delivery Optimization Mode. Possible values are: userDefined, httpOnly, httpWithPeeringNat,
     * httpWithPeeringPrivateGroup, httpWithInternetPeering, simpleDownload, bypassMode.
     */
-  var deliveryOptimizationMode: js.UndefOr[WindowsDeliveryOptimizationMode] = js.undefined
+  var deliveryOptimizationMode: js.UndefOr[WindowsDeliveryOptimizationMode] = js.native
   // Exclude Windows update Drivers
-  var driversExcluded: js.UndefOr[Boolean] = js.undefined
+  var driversExcluded: js.UndefOr[Boolean] = js.native
   // Defer Feature Updates by these many days
-  var featureUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.undefined
+  var featureUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.native
   // Feature Updates Pause Expiry datetime
-  var featureUpdatesPauseExpiryDateTime: js.UndefOr[String] = js.undefined
+  var featureUpdatesPauseExpiryDateTime: js.UndefOr[String] = js.native
   // Pause Feature Updates
-  var featureUpdatesPaused: js.UndefOr[Boolean] = js.undefined
+  var featureUpdatesPaused: js.UndefOr[Boolean] = js.native
   // Installation schedule
-  var installationSchedule: js.UndefOr[WindowsUpdateInstallScheduleType] = js.undefined
+  var installationSchedule: js.UndefOr[WindowsUpdateInstallScheduleType] = js.native
   // Allow Microsoft Update Service
-  var microsoftUpdateServiceAllowed: js.UndefOr[Boolean] = js.undefined
+  var microsoftUpdateServiceAllowed: js.UndefOr[Boolean] = js.native
   // The pre-release features. Possible values are: userDefined, settingsOnly, settingsAndExperimentations, notAllowed.
-  var prereleaseFeatures: js.UndefOr[PrereleaseFeatures] = js.undefined
+  var prereleaseFeatures: js.UndefOr[PrereleaseFeatures] = js.native
   // Defer Quality Updates by these many days
-  var qualityUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.undefined
+  var qualityUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.native
   // Quality Updates Pause Expiry datetime
-  var qualityUpdatesPauseExpiryDateTime: js.UndefOr[String] = js.undefined
+  var qualityUpdatesPauseExpiryDateTime: js.UndefOr[String] = js.native
   // Pause Quality Updates
-  var qualityUpdatesPaused: js.UndefOr[Boolean] = js.undefined
+  var qualityUpdatesPaused: js.UndefOr[Boolean] = js.native
 }
 
 object WindowsUpdateForBusinessConfiguration {
   @scala.inline
-  def apply(
-    assignments: js.Array[DeviceConfigurationAssignment] = null,
-    automaticUpdateMode: AutomaticUpdateMode = null,
-    businessReadyUpdatesOnly: WindowsUpdateType = null,
-    createdDateTime: String = null,
-    deliveryOptimizationMode: WindowsDeliveryOptimizationMode = null,
-    description: String = null,
-    deviceSettingStateSummaries: js.Array[SettingStateDeviceSummary] = null,
-    deviceStatusOverview: DeviceConfigurationDeviceOverview = null,
-    deviceStatuses: js.Array[DeviceConfigurationDeviceStatus] = null,
-    displayName: String = null,
-    driversExcluded: js.UndefOr[Boolean] = js.undefined,
-    featureUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.undefined,
-    featureUpdatesPauseExpiryDateTime: String = null,
-    featureUpdatesPaused: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    installationSchedule: WindowsUpdateInstallScheduleType = null,
-    lastModifiedDateTime: String = null,
-    microsoftUpdateServiceAllowed: js.UndefOr[Boolean] = js.undefined,
-    prereleaseFeatures: PrereleaseFeatures = null,
-    qualityUpdatesDeferralPeriodInDays: js.UndefOr[Double] = js.undefined,
-    qualityUpdatesPauseExpiryDateTime: String = null,
-    qualityUpdatesPaused: js.UndefOr[Boolean] = js.undefined,
-    userStatusOverview: DeviceConfigurationUserOverview = null,
-    userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): WindowsUpdateForBusinessConfiguration = {
+  def apply(): WindowsUpdateForBusinessConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (automaticUpdateMode != null) __obj.updateDynamic("automaticUpdateMode")(automaticUpdateMode.asInstanceOf[js.Any])
-    if (businessReadyUpdatesOnly != null) __obj.updateDynamic("businessReadyUpdatesOnly")(businessReadyUpdatesOnly.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (deliveryOptimizationMode != null) __obj.updateDynamic("deliveryOptimizationMode")(deliveryOptimizationMode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
-    if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
-    if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(driversExcluded)) __obj.updateDynamic("driversExcluded")(driversExcluded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(featureUpdatesDeferralPeriodInDays)) __obj.updateDynamic("featureUpdatesDeferralPeriodInDays")(featureUpdatesDeferralPeriodInDays.get.asInstanceOf[js.Any])
-    if (featureUpdatesPauseExpiryDateTime != null) __obj.updateDynamic("featureUpdatesPauseExpiryDateTime")(featureUpdatesPauseExpiryDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(featureUpdatesPaused)) __obj.updateDynamic("featureUpdatesPaused")(featureUpdatesPaused.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (installationSchedule != null) __obj.updateDynamic("installationSchedule")(installationSchedule.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(microsoftUpdateServiceAllowed)) __obj.updateDynamic("microsoftUpdateServiceAllowed")(microsoftUpdateServiceAllowed.get.asInstanceOf[js.Any])
-    if (prereleaseFeatures != null) __obj.updateDynamic("prereleaseFeatures")(prereleaseFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(qualityUpdatesDeferralPeriodInDays)) __obj.updateDynamic("qualityUpdatesDeferralPeriodInDays")(qualityUpdatesDeferralPeriodInDays.get.asInstanceOf[js.Any])
-    if (qualityUpdatesPauseExpiryDateTime != null) __obj.updateDynamic("qualityUpdatesPauseExpiryDateTime")(qualityUpdatesPauseExpiryDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(qualityUpdatesPaused)) __obj.updateDynamic("qualityUpdatesPaused")(qualityUpdatesPaused.get.asInstanceOf[js.Any])
-    if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
-    if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsUpdateForBusinessConfiguration]
   }
+  @scala.inline
+  implicit class WindowsUpdateForBusinessConfigurationOps[Self <: WindowsUpdateForBusinessConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomaticUpdateMode(value: AutomaticUpdateMode): Self = this.set("automaticUpdateMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticUpdateMode: Self = this.set("automaticUpdateMode", js.undefined)
+    @scala.inline
+    def setBusinessReadyUpdatesOnly(value: WindowsUpdateType): Self = this.set("businessReadyUpdatesOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBusinessReadyUpdatesOnly: Self = this.set("businessReadyUpdatesOnly", js.undefined)
+    @scala.inline
+    def setDeliveryOptimizationMode(value: WindowsDeliveryOptimizationMode): Self = this.set("deliveryOptimizationMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryOptimizationMode: Self = this.set("deliveryOptimizationMode", js.undefined)
+    @scala.inline
+    def setDriversExcluded(value: Boolean): Self = this.set("driversExcluded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriversExcluded: Self = this.set("driversExcluded", js.undefined)
+    @scala.inline
+    def setFeatureUpdatesDeferralPeriodInDays(value: Double): Self = this.set("featureUpdatesDeferralPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureUpdatesDeferralPeriodInDays: Self = this.set("featureUpdatesDeferralPeriodInDays", js.undefined)
+    @scala.inline
+    def setFeatureUpdatesPauseExpiryDateTime(value: String): Self = this.set("featureUpdatesPauseExpiryDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureUpdatesPauseExpiryDateTime: Self = this.set("featureUpdatesPauseExpiryDateTime", js.undefined)
+    @scala.inline
+    def setFeatureUpdatesPaused(value: Boolean): Self = this.set("featureUpdatesPaused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureUpdatesPaused: Self = this.set("featureUpdatesPaused", js.undefined)
+    @scala.inline
+    def setInstallationSchedule(value: WindowsUpdateInstallScheduleType): Self = this.set("installationSchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallationSchedule: Self = this.set("installationSchedule", js.undefined)
+    @scala.inline
+    def setMicrosoftUpdateServiceAllowed(value: Boolean): Self = this.set("microsoftUpdateServiceAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMicrosoftUpdateServiceAllowed: Self = this.set("microsoftUpdateServiceAllowed", js.undefined)
+    @scala.inline
+    def setPrereleaseFeatures(value: PrereleaseFeatures): Self = this.set("prereleaseFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrereleaseFeatures: Self = this.set("prereleaseFeatures", js.undefined)
+    @scala.inline
+    def setQualityUpdatesDeferralPeriodInDays(value: Double): Self = this.set("qualityUpdatesDeferralPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualityUpdatesDeferralPeriodInDays: Self = this.set("qualityUpdatesDeferralPeriodInDays", js.undefined)
+    @scala.inline
+    def setQualityUpdatesPauseExpiryDateTime(value: String): Self = this.set("qualityUpdatesPauseExpiryDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualityUpdatesPauseExpiryDateTime: Self = this.set("qualityUpdatesPauseExpiryDateTime", js.undefined)
+    @scala.inline
+    def setQualityUpdatesPaused(value: Boolean): Self = this.set("qualityUpdatesPaused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualityUpdatesPaused: Self = this.set("qualityUpdatesPaused", js.undefined)
+  }
+  
 }
 

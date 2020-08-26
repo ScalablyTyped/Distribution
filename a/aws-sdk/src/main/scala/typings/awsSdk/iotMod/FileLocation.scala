@@ -18,11 +18,30 @@ trait FileLocation extends js.Object {
 
 object FileLocation {
   @scala.inline
-  def apply(s3Location: S3Location = null, stream: Stream = null): FileLocation = {
+  def apply(): FileLocation = {
     val __obj = js.Dynamic.literal()
-    if (s3Location != null) __obj.updateDynamic("s3Location")(s3Location.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileLocation]
   }
+  @scala.inline
+  implicit class FileLocationOps[Self <: FileLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3Location(value: S3Location): Self = this.set("s3Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Location: Self = this.set("s3Location", js.undefined)
+    @scala.inline
+    def setStream(value: Stream): Self = this.set("stream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStream: Self = this.set("stream", js.undefined)
+  }
+  
 }
 

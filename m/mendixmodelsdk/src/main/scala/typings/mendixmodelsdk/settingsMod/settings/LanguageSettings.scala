@@ -24,7 +24,7 @@ class LanguageSettings protected () extends ProjectSettingsPart {
   @JSName("model")
   var model_FLanguageSettings: IModel = js.native
   def defaultLanguageCode: String = js.native
-  def defaultLanguageCode(newValue: String): js.Any = js.native
+  def defaultLanguageCode_=(newValue: String): Unit = js.native
   def languages: IList[Language] = js.native
 }
 

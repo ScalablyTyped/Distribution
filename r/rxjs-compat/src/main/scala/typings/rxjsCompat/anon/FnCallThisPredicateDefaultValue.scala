@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FnCallThisPredicateDefaultValue extends js.Object {
   def apply[T, D](): js.Any = js.native
+  def apply[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): js.Any = js.native
   def apply[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 

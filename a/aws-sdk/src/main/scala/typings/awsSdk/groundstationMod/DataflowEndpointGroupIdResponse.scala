@@ -14,10 +14,26 @@ trait DataflowEndpointGroupIdResponse extends js.Object {
 
 object DataflowEndpointGroupIdResponse {
   @scala.inline
-  def apply(dataflowEndpointGroupId: String = null): DataflowEndpointGroupIdResponse = {
+  def apply(): DataflowEndpointGroupIdResponse = {
     val __obj = js.Dynamic.literal()
-    if (dataflowEndpointGroupId != null) __obj.updateDynamic("dataflowEndpointGroupId")(dataflowEndpointGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataflowEndpointGroupIdResponse]
   }
+  @scala.inline
+  implicit class DataflowEndpointGroupIdResponseOps[Self <: DataflowEndpointGroupIdResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataflowEndpointGroupId(value: String): Self = this.set("dataflowEndpointGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataflowEndpointGroupId: Self = this.set("dataflowEndpointGroupId", js.undefined)
+  }
+  
 }
 

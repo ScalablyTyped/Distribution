@@ -11,8 +11,8 @@ A binary shapefile loader, for javascript. Not many caveats
 | Full name          | shpjs |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 16 |
-| # downloads        | 328784 |
+| # dependents       | 17 |
+| # downloads        | 336726 |
 | # stars            | 2 |
 
 ## Links

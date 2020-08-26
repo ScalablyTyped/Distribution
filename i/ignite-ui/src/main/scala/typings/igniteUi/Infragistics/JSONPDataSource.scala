@@ -69,6 +69,7 @@ trait JSONPDataSource extends js.Object {
     * @param callee callee object on which the callback will be executed. If none is specified, will assume global execution context
     */
   def dataBind(): Unit = js.native
+  def dataBind(callback: js.UndefOr[scala.Nothing], callee: js.Object): Unit = js.native
   def dataBind(callback: String): Unit = js.native
   def dataBind(callback: String, callee: js.Object): Unit = js.native
   /**
@@ -150,6 +151,7 @@ trait JSONPDataSource extends js.Object {
     * @param objPath Not used in $.ig.DataSource
     */
   def findRecordByKey(key: js.Object): js.Object = js.native
+  def findRecordByKey(key: js.Object, ds: js.UndefOr[scala.Nothing], objPath: String): js.Object = js.native
   def findRecordByKey(key: js.Object, ds: String): js.Object = js.native
   def findRecordByKey(key: js.Object, ds: String, objPath: String): js.Object = js.native
   /**
@@ -311,6 +313,7 @@ trait JSONPDataSource extends js.Object {
     * @param t type of the data source. See settings.type
     */
   def schema(): Unit = js.native
+  def schema(s: js.UndefOr[scala.Nothing], t: String): Unit = js.native
   def schema(s: js.Object): Unit = js.native
   def schema(s: js.Object, t: String): Unit = js.native
   /**
@@ -363,6 +366,7 @@ trait JSONPDataSource extends js.Object {
     * @param dsObj data source object - usually contains information about data records and metadata(holds info about summaries)
     */
   def summariesResponse(): js.Object = js.native
+  def summariesResponse(key: js.UndefOr[scala.Nothing], dsObj: js.Object): js.Object = js.native
   def summariesResponse(key: String): js.Object = js.native
   def summariesResponse(key: String, dsObj: js.Object): js.Object = js.native
   /**
@@ -402,8 +406,39 @@ trait JSONPDataSource extends js.Object {
     * @param context
     */
   def totalRecordsCount(): Double = js.native
+  def totalRecordsCount(
+    count: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    dsObj: js.UndefOr[scala.Nothing],
+    context: js.Object
+  ): Double = js.native
+  def totalRecordsCount(count: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], dsObj: js.Object): Double = js.native
+  def totalRecordsCount(
+    count: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    dsObj: js.Object,
+    context: js.Object
+  ): Double = js.native
+  def totalRecordsCount(count: js.UndefOr[scala.Nothing], key: js.Object): Double = js.native
+  def totalRecordsCount(
+    count: js.UndefOr[scala.Nothing],
+    key: js.Object,
+    dsObj: js.UndefOr[scala.Nothing],
+    context: js.Object
+  ): Double = js.native
+  def totalRecordsCount(count: js.UndefOr[scala.Nothing], key: js.Object, dsObj: js.Object): Double = js.native
+  def totalRecordsCount(count: js.UndefOr[scala.Nothing], key: js.Object, dsObj: js.Object, context: js.Object): Double = js.native
   def totalRecordsCount(count: Double): Double = js.native
+  def totalRecordsCount(
+    count: Double,
+    key: js.UndefOr[scala.Nothing],
+    dsObj: js.UndefOr[scala.Nothing],
+    context: js.Object
+  ): Double = js.native
+  def totalRecordsCount(count: Double, key: js.UndefOr[scala.Nothing], dsObj: js.Object): Double = js.native
+  def totalRecordsCount(count: Double, key: js.UndefOr[scala.Nothing], dsObj: js.Object, context: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object): Double = js.native
+  def totalRecordsCount(count: Double, key: js.Object, dsObj: js.UndefOr[scala.Nothing], context: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.Object, context: js.Object): Double = js.native
   /**

@@ -25,16 +25,34 @@ trait RuleSourceSourceDetail extends js.Object {
 
 object RuleSourceSourceDetail {
   @scala.inline
-  def apply(
-    eventSource: Input[String] = null,
-    maximumExecutionFrequency: Input[String] = null,
-    messageType: Input[String] = null
-  ): RuleSourceSourceDetail = {
+  def apply(): RuleSourceSourceDetail = {
     val __obj = js.Dynamic.literal()
-    if (eventSource != null) __obj.updateDynamic("eventSource")(eventSource.asInstanceOf[js.Any])
-    if (maximumExecutionFrequency != null) __obj.updateDynamic("maximumExecutionFrequency")(maximumExecutionFrequency.asInstanceOf[js.Any])
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleSourceSourceDetail]
   }
+  @scala.inline
+  implicit class RuleSourceSourceDetailOps[Self <: RuleSourceSourceDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventSource(value: Input[String]): Self = this.set("eventSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventSource: Self = this.set("eventSource", js.undefined)
+    @scala.inline
+    def setMaximumExecutionFrequency(value: Input[String]): Self = this.set("maximumExecutionFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumExecutionFrequency: Self = this.set("maximumExecutionFrequency", js.undefined)
+    @scala.inline
+    def setMessageType(value: Input[String]): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageType: Self = this.set("messageType", js.undefined)
+  }
+  
 }
 

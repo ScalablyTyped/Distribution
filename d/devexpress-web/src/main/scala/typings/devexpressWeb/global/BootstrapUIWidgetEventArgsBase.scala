@@ -17,15 +17,5 @@ class BootstrapUIWidgetEventArgsBase protected ()
     * @param element The widget's container.
     */
   def this(component: js.Any, element: js.Any) = this()
-  /**
-    * The widget instance.
-    */
-  /* CompleteClass */
-  override var component: js.Any = js.native
-  /**
-    * The widget's container.
-    */
-  /* CompleteClass */
-  override var element: js.Any = js.native
 }
 

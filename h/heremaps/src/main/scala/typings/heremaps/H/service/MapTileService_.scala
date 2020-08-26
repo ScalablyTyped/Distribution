@@ -33,6 +33,72 @@ trait MapTileService_
     scheme: String,
     tileSize: Double,
     format: String,
+    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_opacity: js.UndefOr[scala.Nothing],
+    opt_dark: js.UndefOr[scala.Nothing],
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_opacity: js.UndefOr[scala.Nothing],
+    opt_dark: Boolean
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_opacity: js.UndefOr[scala.Nothing],
+    opt_dark: Boolean,
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_opacity: Double
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_opacity: Double,
+    opt_dark: js.UndefOr[scala.Nothing],
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_opacity: Double,
+    opt_dark: Boolean
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_opacity: Double,
+    opt_dark: Boolean,
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
     opt_additionalParameters: ServiceParameters
   ): TileLayer = js.native
   def createTileLayer(
@@ -41,7 +107,46 @@ trait MapTileService_
     tileSize: Double,
     format: String,
     opt_additionalParameters: ServiceParameters,
+    opt_opacity: js.UndefOr[scala.Nothing],
+    opt_dark: js.UndefOr[scala.Nothing],
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: ServiceParameters,
+    opt_opacity: js.UndefOr[scala.Nothing],
+    opt_dark: Boolean
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: ServiceParameters,
+    opt_opacity: js.UndefOr[scala.Nothing],
+    opt_dark: Boolean,
+    opt_options: TileProviderOptions
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: ServiceParameters,
     opt_opacity: Double
+  ): TileLayer = js.native
+  def createTileLayer(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: ServiceParameters,
+    opt_opacity: Double,
+    opt_dark: js.UndefOr[scala.Nothing],
+    opt_options: TileProviderOptions
   ): TileLayer = js.native
   def createTileLayer(
     tileType: String,
@@ -73,6 +178,14 @@ trait MapTileService_
     * @returns {H.map.provider.ImageTileProvider} - the image tile provider
     */
   def createTileProvider(tileType: String, scheme: String, tileSize: Double, format: String): ImageTileProvider = js.native
+  def createTileProvider(
+    tileType: String,
+    scheme: String,
+    tileSize: Double,
+    format: String,
+    opt_additionalParameters: js.UndefOr[scala.Nothing],
+    opt_options: TileProviderOptions
+  ): ImageTileProvider = js.native
   def createTileProvider(
     tileType: String,
     scheme: String,

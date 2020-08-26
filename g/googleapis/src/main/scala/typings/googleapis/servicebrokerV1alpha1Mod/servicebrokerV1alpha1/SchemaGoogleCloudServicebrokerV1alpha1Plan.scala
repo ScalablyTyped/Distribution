@@ -47,24 +47,50 @@ trait SchemaGoogleCloudServicebrokerV1alpha1Plan extends js.Object {
 
 object SchemaGoogleCloudServicebrokerV1alpha1Plan {
   @scala.inline
-  def apply(
-    bindable: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    free: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    metadata: StringDictionary[js.Any] = null,
-    name: String = null,
-    schemas: StringDictionary[js.Any] = null
-  ): SchemaGoogleCloudServicebrokerV1alpha1Plan = {
+  def apply(): SchemaGoogleCloudServicebrokerV1alpha1Plan = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bindable)) __obj.updateDynamic("bindable")(bindable.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(free)) __obj.updateDynamic("free")(free.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1alpha1Plan]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudServicebrokerV1alpha1PlanOps[Self <: SchemaGoogleCloudServicebrokerV1alpha1Plan] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBindable(value: Boolean): Self = this.set("bindable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindable: Self = this.set("bindable", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFree(value: Boolean): Self = this.set("free", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFree: Self = this.set("free", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[js.Any]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSchemas(value: StringDictionary[js.Any]): Self = this.set("schemas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemas: Self = this.set("schemas", js.undefined)
+  }
+  
 }
 

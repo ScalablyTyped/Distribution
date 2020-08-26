@@ -26,18 +26,38 @@ trait Diagnostics extends js.Object {
 
 object Diagnostics {
   @scala.inline
-  def apply(
-    errorCode: LifecycleErrorCode = null,
-    logTail: LogTail = null,
-    message: LifecycleMessage = null,
-    scriptName: ScriptName = null
-  ): Diagnostics = {
+  def apply(): Diagnostics = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (logTail != null) __obj.updateDynamic("logTail")(logTail.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (scriptName != null) __obj.updateDynamic("scriptName")(scriptName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostics]
   }
+  @scala.inline
+  implicit class DiagnosticsOps[Self <: Diagnostics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: LifecycleErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setLogTail(value: LogTail): Self = this.set("logTail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogTail: Self = this.set("logTail", js.undefined)
+    @scala.inline
+    def setMessage(value: LifecycleMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setScriptName(value: ScriptName): Self = this.set("scriptName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptName: Self = this.set("scriptName", js.undefined)
+  }
+  
 }
 

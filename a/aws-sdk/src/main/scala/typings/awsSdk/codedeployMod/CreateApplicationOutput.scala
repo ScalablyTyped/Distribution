@@ -14,10 +14,26 @@ trait CreateApplicationOutput extends js.Object {
 
 object CreateApplicationOutput {
   @scala.inline
-  def apply(applicationId: ApplicationId = null): CreateApplicationOutput = {
+  def apply(): CreateApplicationOutput = {
     val __obj = js.Dynamic.literal()
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationOutput]
   }
+  @scala.inline
+  implicit class CreateApplicationOutputOps[Self <: CreateApplicationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: ApplicationId): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+  }
+  
 }
 

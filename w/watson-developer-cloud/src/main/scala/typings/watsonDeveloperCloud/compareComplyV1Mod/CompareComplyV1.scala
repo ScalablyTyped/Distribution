@@ -215,6 +215,7 @@ trait CompareComplyV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listBatches(): js.Promise[_] | Unit = js.native
+  def listBatches(params: js.UndefOr[scala.Nothing], callback: Callback[Batches]): js.Promise[_] | Unit = js.native
   def listBatches(params: ListBatchesParams): js.Promise[_] | Unit = js.native
   def listBatches(params: ListBatchesParams, callback: Callback[Batches]): js.Promise[_] | Unit = js.native
   /**
@@ -267,6 +268,7 @@ trait CompareComplyV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listFeedback(): js.Promise[_] | Unit = js.native
+  def listFeedback(params: js.UndefOr[scala.Nothing], callback: Callback[FeedbackList]): js.Promise[_] | Unit = js.native
   def listFeedback(params: ListFeedbackParams): js.Promise[_] | Unit = js.native
   def listFeedback(params: ListFeedbackParams, callback: Callback[FeedbackList]): js.Promise[_] | Unit = js.native
   /**

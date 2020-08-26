@@ -7,12 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("compress.js", JSImport.Namespace)
 @js.native
-class ^ () extends Compress {
-  /* CompleteClass */
-  override def attach(el: String, options: CompressOptions): js.Promise[js.Array[CompressResult]] = js.native
-  /* CompleteClass */
-  override def compress(files: js.Array[File], options: CompressOptions): js.Promise[js.Array[CompressResult]] = js.native
-}
+class ^ () extends Compress
 
 @JSImport("compress.js", JSImport.Namespace)
 @js.native

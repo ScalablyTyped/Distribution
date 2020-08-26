@@ -54,6 +54,7 @@ trait Folder extends js.Object {
     * @param boolean [Unicode=false]
     */
   def CreateTextFile(FileName: String): TextStream = js.native
+  def CreateTextFile(FileName: String, Overwrite: js.UndefOr[scala.Nothing], Unicode: Boolean): TextStream = js.native
   def CreateTextFile(FileName: String, Overwrite: Boolean): TextStream = js.native
   def CreateTextFile(FileName: String, Overwrite: Boolean, Unicode: Boolean): TextStream = js.native
   /**

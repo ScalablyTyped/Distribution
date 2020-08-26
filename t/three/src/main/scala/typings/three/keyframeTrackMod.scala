@@ -27,7 +27,7 @@ object keyframeTrackMod extends js.Object {
     def InterpolantFactoryMethodLinear(result: js.Any): LinearInterpolant = js.native
     def InterpolantFactoryMethodSmooth(result: js.Any): CubicInterpolant = js.native
     def getInterpolation(): InterpolationModes = js.native
-    def getValuesize(): Double = js.native
+    def getValueSize(): Double = js.native
     def optimize(): KeyframeTrack = js.native
     def scale(timeScale: Double): KeyframeTrack = js.native
     def setInterpolation(interpolation: InterpolationModes): KeyframeTrack = js.native

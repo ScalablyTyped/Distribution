@@ -2,88 +2,112 @@ package typings.rcMentions.mentionsMod
 
 import typings.rcMentions.optionMod.OptionProps
 import typings.rcMentions.rcMentionsBooleans.`false`
-import typings.react.mod.CSSProperties
-import typings.react.mod.FocusEvent
-import typings.react.mod.FocusEventHandler
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
-import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TextAreaProps * / any, 'prefix' | 'onChange' | 'onSelect'> ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TextAreaProps * / any[P]} */ trait MentionsProps extends js.Object {
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var defaultValue: js.UndefOr[String] = js.undefined
-  var direction: js.UndefOr[Direction] = js.undefined
+@js.native
+trait MentionsProps extends BaseTextareaAttrs {
+  @JSName("defaultValue")
+  var defaultValue_MentionsProps: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[Direction] = js.native
   var filterOption: js.UndefOr[
     `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])
-  ] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
-  var notFoundContent: js.UndefOr[ReactNode] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] = js.undefined
-  var onSearch: js.UndefOr[js.Function2[/* text */ String, /* prefix */ String, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function2[/* option */ OptionProps, /* prefix */ String, Unit]] = js.undefined
-  var placement: js.UndefOr[Placement] = js.undefined
-  var prefix: js.UndefOr[String | js.Array[String]] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var split: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var transitionName: js.UndefOr[String] = js.undefined
-  var validateSearch: js.UndefOr[js.Function2[/* text */ String, /* props */ this.type, Boolean]] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var getPopupContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+  var notFoundContent: js.UndefOr[ReactNode] = js.native
+  var onChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+  var onSearch: js.UndefOr[js.Function2[/* text */ String, /* prefix */ String, Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function2[/* option */ OptionProps, /* prefix */ String, Unit]] = js.native
+  var placement: js.UndefOr[Placement] = js.native
+  var prefix: js.UndefOr[String | js.Array[String]] = js.native
+  var split: js.UndefOr[String] = js.native
+  var transitionName: js.UndefOr[String] = js.native
+  var validateSearch: js.UndefOr[js.Function2[/* text */ String, /* props */ this.type, Boolean]] = js.native
+  @JSName("value")
+  var value_MentionsProps: js.UndefOr[String] = js.native
 }
 
 object MentionsProps {
   @scala.inline
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    defaultValue: String = null,
-    direction: Direction = null,
-    filterOption: `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean]) = null,
-    getPopupContainer: () => HTMLElement = null,
-    notFoundContent: ReactNode = null,
-    onBlur: FocusEvent[HTMLTextAreaElement] => Unit = null,
-    onChange: /* text */ String => Unit = null,
-    onFocus: FocusEvent[HTMLTextAreaElement] => Unit = null,
-    onSearch: (/* text */ String, /* prefix */ String) => Unit = null,
-    onSelect: (/* option */ OptionProps, /* prefix */ String) => Unit = null,
-    placement: Placement = null,
-    prefix: String | js.Array[String] = null,
-    prefixCls: String = null,
-    split: String = null,
-    style: CSSProperties = null,
-    transitionName: String = null,
-    validateSearch: (/* text */ String, MentionsProps) => Boolean = null,
-    value: String = null
-  ): MentionsProps = {
+  def apply(): MentionsProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction0(getPopupContainer))
-    if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction2(onSearch))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (validateSearch != null) __obj.updateDynamic("validateSearch")(js.Any.fromFunction2(validateSearch))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MentionsProps]
   }
+  @scala.inline
+  implicit class MentionsPropsOps[Self <: MentionsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDirection(value: Direction): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setFilterOptionFunction2(value: (/* input */ String, /* hasValue */ OptionProps) => Boolean): Self = this.set("filterOption", js.Any.fromFunction2(value))
+    @scala.inline
+    def setFilterOption(value: `false` | (js.Function2[/* input */ String, /* hasValue */ OptionProps, Boolean])): Self = this.set("filterOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterOption: Self = this.set("filterOption", js.undefined)
+    @scala.inline
+    def setGetPopupContainer(value: () => HTMLElement): Self = this.set("getPopupContainer", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPopupContainer: Self = this.set("getPopupContainer", js.undefined)
+    @scala.inline
+    def setNotFoundContent(value: ReactNode): Self = this.set("notFoundContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotFoundContent: Self = this.set("notFoundContent", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* text */ String => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnSearch(value: (/* text */ String, /* prefix */ String) => Unit): Self = this.set("onSearch", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnSearch: Self = this.set("onSearch", js.undefined)
+    @scala.inline
+    def setOnSelect(value: (/* option */ OptionProps, /* prefix */ String) => Unit): Self = this.set("onSelect", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setPlacement(value: Placement): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setPrefixVarargs(value: String*): Self = this.set("prefix", js.Array(value :_*))
+    @scala.inline
+    def setPrefix(value: String | js.Array[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setSplit(value: String): Self = this.set("split", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplit: Self = this.set("split", js.undefined)
+    @scala.inline
+    def setTransitionName(value: String): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    @scala.inline
+    def setValidateSearch(value: (/* text */ String, MentionsProps) => Boolean): Self = this.set("validateSearch", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteValidateSearch: Self = this.set("validateSearch", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

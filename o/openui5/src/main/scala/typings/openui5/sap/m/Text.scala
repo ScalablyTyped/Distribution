@@ -67,6 +67,7 @@ trait Text extends Control {
     * @returns Returns found ellipsis position or undefined
     */
   def clampText(oDomRef: HTMLElement): Double | js.Any = js.native
+  def clampText(oDomRef: HTMLElement, iStartPos: js.UndefOr[scala.Nothing], iEndPos: Double): Double | js.Any = js.native
   def clampText(oDomRef: HTMLElement, iStartPos: Double): Double | js.Any = js.native
   def clampText(oDomRef: HTMLElement, iStartPos: Double, iEndPos: Double): Double | js.Any = js.native
   /**

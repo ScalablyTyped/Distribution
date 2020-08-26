@@ -35,10 +35,10 @@ trait Cursor[TValue, TKey] extends js.Object {
     * @param primaryKey The primary key to position the cursor at.
     * @returns The cursor after having been continued to the next or specified record. */
   def continuePrimaryKey(): js.Promise[Cursor[TValue, TKey]] = js.native
+  def continuePrimaryKey(key: js.UndefOr[IDBValidKey], primaryKey: TKey): js.Promise[Cursor[TValue, TKey]] = js.native
   def continuePrimaryKey(key: IDBKeyRange): js.Promise[Cursor[TValue, TKey]] = js.native
   def continuePrimaryKey(key: IDBKeyRange, primaryKey: TKey): js.Promise[Cursor[TValue, TKey]] = js.native
   def continuePrimaryKey(key: IDBValidKey): js.Promise[Cursor[TValue, TKey]] = js.native
-  def continuePrimaryKey(key: IDBValidKey, primaryKey: TKey): js.Promise[Cursor[TValue, TKey]] = js.native
   /** Returns a Promise of an IDBRequest object that (in a separate thread) deletes the record at the cursor's position, without changing the cursor's position.
     * This can be used to delete specific records.
     * @returns A promise that resolves when the underlying delete IDBRequest is successful. */

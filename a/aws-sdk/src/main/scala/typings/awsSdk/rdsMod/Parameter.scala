@@ -54,32 +54,68 @@ trait Parameter extends js.Object {
 
 object Parameter {
   @scala.inline
-  def apply(
-    AllowedValues: String = null,
-    ApplyMethod: ApplyMethod = null,
-    ApplyType: String = null,
-    DataType: String = null,
-    Description: String = null,
-    IsModifiable: js.UndefOr[Boolean] = js.undefined,
-    MinimumEngineVersion: String = null,
-    ParameterName: String = null,
-    ParameterValue: String = null,
-    Source: String = null,
-    SupportedEngineModes: EngineModeList = null
-  ): Parameter = {
+  def apply(): Parameter = {
     val __obj = js.Dynamic.literal()
-    if (AllowedValues != null) __obj.updateDynamic("AllowedValues")(AllowedValues.asInstanceOf[js.Any])
-    if (ApplyMethod != null) __obj.updateDynamic("ApplyMethod")(ApplyMethod.asInstanceOf[js.Any])
-    if (ApplyType != null) __obj.updateDynamic("ApplyType")(ApplyType.asInstanceOf[js.Any])
-    if (DataType != null) __obj.updateDynamic("DataType")(DataType.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsModifiable)) __obj.updateDynamic("IsModifiable")(IsModifiable.get.asInstanceOf[js.Any])
-    if (MinimumEngineVersion != null) __obj.updateDynamic("MinimumEngineVersion")(MinimumEngineVersion.asInstanceOf[js.Any])
-    if (ParameterName != null) __obj.updateDynamic("ParameterName")(ParameterName.asInstanceOf[js.Any])
-    if (ParameterValue != null) __obj.updateDynamic("ParameterValue")(ParameterValue.asInstanceOf[js.Any])
-    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
-    if (SupportedEngineModes != null) __obj.updateDynamic("SupportedEngineModes")(SupportedEngineModes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameter]
   }
+  @scala.inline
+  implicit class ParameterOps[Self <: Parameter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedValues(value: String): Self = this.set("AllowedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedValues: Self = this.set("AllowedValues", js.undefined)
+    @scala.inline
+    def setApplyMethod(value: ApplyMethod): Self = this.set("ApplyMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyMethod: Self = this.set("ApplyMethod", js.undefined)
+    @scala.inline
+    def setApplyType(value: String): Self = this.set("ApplyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyType: Self = this.set("ApplyType", js.undefined)
+    @scala.inline
+    def setDataType(value: String): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataType: Self = this.set("DataType", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setIsModifiable(value: Boolean): Self = this.set("IsModifiable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsModifiable: Self = this.set("IsModifiable", js.undefined)
+    @scala.inline
+    def setMinimumEngineVersion(value: String): Self = this.set("MinimumEngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumEngineVersion: Self = this.set("MinimumEngineVersion", js.undefined)
+    @scala.inline
+    def setParameterName(value: String): Self = this.set("ParameterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterName: Self = this.set("ParameterName", js.undefined)
+    @scala.inline
+    def setParameterValue(value: String): Self = this.set("ParameterValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterValue: Self = this.set("ParameterValue", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("Source", js.undefined)
+    @scala.inline
+    def setSupportedEngineModesVarargs(value: String*): Self = this.set("SupportedEngineModes", js.Array(value :_*))
+    @scala.inline
+    def setSupportedEngineModes(value: EngineModeList): Self = this.set("SupportedEngineModes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedEngineModes: Self = this.set("SupportedEngineModes", js.undefined)
+  }
+  
 }
 

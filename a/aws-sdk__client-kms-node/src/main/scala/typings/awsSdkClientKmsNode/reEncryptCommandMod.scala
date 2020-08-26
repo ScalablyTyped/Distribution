@@ -26,16 +26,9 @@ object reEncryptCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ReEncryptInput) = this()
-    /* CompleteClass */
-    override val input: ReEncryptInput = js.native
     val middlewareStack: MiddlewareStack[ReEncryptInput, ReEncryptOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[ReEncryptInput, ReEncryptOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[ReEncryptInput, ReEncryptOutput] = js.native
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/collections/lib/bplustree", JSImport.Namespace)
+@JSImport("@lumino/collections/types/bplustree", JSImport.Namespace)
 @js.native
 object bplustreeMod extends js.Object {
   @js.native
@@ -161,19 +161,6 @@ object bplustreeMod extends js.Object {
       */
     def insert(item: T): js.UndefOr[T] = js.native
     /**
-      * Get an iterator over the object's values.
-      *
-      * @returns An iterator which yields the object's values.
-      *
-      * #### Notes
-      * Depending on the iterable, the returned iterator may or may not be
-      * a new object. A collection or other container-like object should
-      * typically return a new iterator, while an iterator itself should
-      * normally return `this`.
-      */
-    /* CompleteClass */
-    override def iter(): IIterator[T] = js.native
-    /**
       * Remove an item at a particular index.
       *
       * @param index - The index of the item to remove. Negative
@@ -186,13 +173,6 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def remove(index: Double): js.UndefOr[T] = js.native
-    /**
-      * Get a reverse iterator over the object's values.
-      *
-      * @returns An iterator which yields the object's values in reverse.
-      */
-    /* CompleteClass */
-    override def retro(): IIterator[T] = js.native
     /**
       * Create a reverse iterator for a slice of items in the tree.
       *
@@ -210,6 +190,7 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def retroSlice(): IIterator[T] = js.native
+    def retroSlice(start: js.UndefOr[scala.Nothing], stop: Double): IIterator[T] = js.native
     def retroSlice(start: Double): IIterator[T] = js.native
     def retroSlice(start: Double, stop: Double): IIterator[T] = js.native
     /**
@@ -229,6 +210,7 @@ object bplustreeMod extends js.Object {
       * `O(log32 n)`
       */
     def slice(): IIterator[T] = js.native
+    def slice(start: js.UndefOr[scala.Nothing], stop: Double): IIterator[T] = js.native
     def slice(start: Double): IIterator[T] = js.native
     def slice(start: Double, stop: Double): IIterator[T] = js.native
     /**

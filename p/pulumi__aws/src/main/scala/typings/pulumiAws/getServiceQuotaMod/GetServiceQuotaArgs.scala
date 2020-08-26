@@ -15,18 +15,39 @@ trait GetServiceQuotaArgs extends js.Object {
     */
   val quotaName: js.UndefOr[String] = js.native
   /**
-    * Service code for the quota. Available values can be found with the [`aws.servicequotas.getService` data source](https://www.terraform.io/docs/providers/aws/d/servicequotas_service.html) or [AWS CLI service-quotas list-services command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-services.html).
+    * Service code for the quota. Available values can be found with the `aws.servicequotas.getService` data source or [AWS CLI service-quotas list-services command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-services.html).
     */
   val serviceCode: String = js.native
 }
 
 object GetServiceQuotaArgs {
   @scala.inline
-  def apply(serviceCode: String, quotaCode: String = null, quotaName: String = null): GetServiceQuotaArgs = {
+  def apply(serviceCode: String): GetServiceQuotaArgs = {
     val __obj = js.Dynamic.literal(serviceCode = serviceCode.asInstanceOf[js.Any])
-    if (quotaCode != null) __obj.updateDynamic("quotaCode")(quotaCode.asInstanceOf[js.Any])
-    if (quotaName != null) __obj.updateDynamic("quotaName")(quotaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceQuotaArgs]
   }
+  @scala.inline
+  implicit class GetServiceQuotaArgsOps[Self <: GetServiceQuotaArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceCode(value: String): Self = this.set("serviceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuotaCode(value: String): Self = this.set("quotaCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaCode: Self = this.set("quotaCode", js.undefined)
+    @scala.inline
+    def setQuotaName(value: String): Self = this.set("quotaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaName: Self = this.set("quotaName", js.undefined)
+  }
+  
 }
 

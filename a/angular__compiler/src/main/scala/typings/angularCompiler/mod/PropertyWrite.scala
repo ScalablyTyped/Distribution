@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "PropertyWrite")
 @js.native
 class PropertyWrite protected ()
-  extends typings.angularCompiler.publicApiMod.PropertyWrite {
+  extends typings.angularCompiler.compilerMod.PropertyWrite {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

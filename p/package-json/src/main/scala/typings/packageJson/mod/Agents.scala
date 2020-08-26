@@ -5,18 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Agents extends js.Object {
-  var http: js.UndefOr[Agent] = js.undefined
-  var https: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
+  var http: js.UndefOr[Agent] = js.native
+  var https: js.UndefOr[typings.node.httpsMod.Agent] = js.native
 }
 
 object Agents {
   @scala.inline
-  def apply(http: Agent = null, https: typings.node.httpsMod.Agent = null): Agents = {
+  def apply(): Agents = {
     val __obj = js.Dynamic.literal()
-    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
-    if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     __obj.asInstanceOf[Agents]
   }
+  @scala.inline
+  implicit class AgentsOps[Self <: Agents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttp(value: Agent): Self = this.set("http", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttp: Self = this.set("http", js.undefined)
+    @scala.inline
+    def setHttps(value: typings.node.httpsMod.Agent): Self = this.set("https", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttps: Self = this.set("https", js.undefined)
+  }
+  
 }
 

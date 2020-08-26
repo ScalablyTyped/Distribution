@@ -28,6 +28,7 @@ class ResourceGroupsMemberships protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceGroupsMembershipsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceGroupsMembershipsCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -55,6 +56,7 @@ class ResourceGroupsMemberships protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceGroupsMembershipsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceGroupsMembershipsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -82,6 +84,7 @@ class ResourceGroupsMemberships protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaMembership] = js.native
   def get(callback: BodyResponseCallback[SchemaMembership]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMembership] = js.native
   def get(params: ParamsResourceGroupsMembershipsGet): GaxiosPromise[SchemaMembership] = js.native
   def get(params: ParamsResourceGroupsMembershipsGet, callback: BodyResponseCallback[SchemaMembership]): Unit = js.native
   def get(
@@ -112,6 +115,7 @@ class ResourceGroupsMemberships protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListMembershipsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMembershipsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListMembershipsResponse] = js.native
   def list(params: ParamsResourceGroupsMembershipsList): GaxiosPromise[SchemaListMembershipsResponse] = js.native
   def list(
     params: ParamsResourceGroupsMembershipsList,
@@ -146,6 +150,7 @@ class ResourceGroupsMemberships protected () extends js.Object {
     */
   def lookup(): GaxiosPromise[SchemaLookupMembershipNameResponse] = js.native
   def lookup(callback: BodyResponseCallback[SchemaLookupMembershipNameResponse]): Unit = js.native
+  def lookup(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLookupMembershipNameResponse] = js.native
   def lookup(params: ParamsResourceGroupsMembershipsLookup): GaxiosPromise[SchemaLookupMembershipNameResponse] = js.native
   def lookup(
     params: ParamsResourceGroupsMembershipsLookup,

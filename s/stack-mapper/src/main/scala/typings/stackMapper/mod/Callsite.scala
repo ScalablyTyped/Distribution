@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Callsite extends js.Object {
-  var column: Double
-  var filename: String
-  var line: Double
+  var column: Double = js.native
+  var filename: String = js.native
+  var line: Double = js.native
 }
 
 object Callsite {
@@ -16,5 +17,24 @@ object Callsite {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[Callsite]
   }
+  @scala.inline
+  implicit class CallsiteOps[Self <: Callsite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+  }
+  
 }
 

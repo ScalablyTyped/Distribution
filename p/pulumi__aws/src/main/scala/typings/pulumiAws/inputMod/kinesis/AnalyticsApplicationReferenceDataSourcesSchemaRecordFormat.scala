@@ -22,14 +22,30 @@ trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat extends js.Obje
 
 object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat {
   @scala.inline
-  def apply(
-    mappingParameters: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters] = null,
-    recordFormatType: Input[String] = null
-  ): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat = {
+  def apply(): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat = {
     val __obj = js.Dynamic.literal()
-    if (mappingParameters != null) __obj.updateDynamic("mappingParameters")(mappingParameters.asInstanceOf[js.Any])
-    if (recordFormatType != null) __obj.updateDynamic("recordFormatType")(recordFormatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat]
   }
+  @scala.inline
+  implicit class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOps[Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMappingParameters(value: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters]): Self = this.set("mappingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMappingParameters: Self = this.set("mappingParameters", js.undefined)
+    @scala.inline
+    def setRecordFormatType(value: Input[String]): Self = this.set("recordFormatType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordFormatType: Self = this.set("recordFormatType", js.undefined)
+  }
+  
 }
 

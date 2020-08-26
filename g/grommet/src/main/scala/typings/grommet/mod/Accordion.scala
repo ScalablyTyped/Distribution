@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Accordion")
+@JSImport("grommet/es6", "Accordion")
 @js.native
 object Accordion extends TopLevel[
       FC[

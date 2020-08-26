@@ -1,6 +1,5 @@
 package typings.makerJs.global.MakerJs.models
 
-import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,8 +27,5 @@ class Holes protected ()
     */
   def this(holeRadius: Double, points: js.Array[IPoint]) = this()
   def this(holeRadius: Double, points: js.Array[IPoint], ids: js.Array[String]) = this()
-  /* CompleteClass */
-  @JSName("paths")
-  override var paths_Holes: IPathMap = js.native
 }
 

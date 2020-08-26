@@ -16,8 +16,9 @@ object resolutionMod extends js.Object {
   def resolveGlobs(
     files: js.Array[String],
     ignore: js.Array[String],
-    outputAbsolutePaths: js.UndefOr[Boolean],
+    outputAbsolutePaths: js.UndefOr[scala.Nothing],
     logger: Logger
   ): js.Array[String] = js.native
+  def resolveGlobs(files: js.Array[String], ignore: js.Array[String], outputAbsolutePaths: Boolean, logger: Logger): js.Array[String] = js.native
 }
 

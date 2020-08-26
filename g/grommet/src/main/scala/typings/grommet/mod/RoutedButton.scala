@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "RoutedButton")
+@JSImport("grommet/es6", "RoutedButton")
 @js.native
 class RoutedButton protected ()
   extends Component[RoutedButtonProps with ButtonProps, ComponentState, js.Any] {
@@ -18,7 +18,7 @@ class RoutedButton protected ()
   def this(props: RoutedButtonProps with ButtonProps, context: js.Any) = this()
 }
 
-@JSImport("grommet", "RoutedButton")
+@JSImport("grommet/es6", "RoutedButton")
 @js.native
 object RoutedButton extends TopLevel[ComponentClass[RoutedButtonProps with ButtonProps, ComponentState]]
 

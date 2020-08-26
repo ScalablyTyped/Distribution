@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Sparklines extends js.Object {
-  var paddingX: Double
-  var paddingY: Double
-  var radius: Double
-  def template(item: js.Any, common: String, data: js.Array[_], column: js.Any, index: Double): String
+  var paddingX: Double = js.native
+  var paddingY: Double = js.native
+  var radius: Double = js.native
+  def template(item: js.Any, common: String, data: js.Array[_], column: js.Any, index: Double): String = js.native
 }
 
 @JSImport("webix", "Sparklines")

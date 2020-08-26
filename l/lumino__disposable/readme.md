@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__disposable
 
-Typings are for version 1.3.6
+Typings are for version 1.4.3
 
 ## Library description:
 Lumino Disposable
@@ -10,9 +10,9 @@ Lumino Disposable
 | ------------------ | :-------------: |
 | Full name          | @lumino/disposable |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 11841 |
+| # releases         | 10 |
+| # dependents       | 86 |
+| # downloads        | 326576 |
 | # stars            | 0 |
 
 ## Links

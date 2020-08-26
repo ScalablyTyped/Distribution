@@ -23,17 +23,40 @@ trait UpdateTableReplicaAutoScalingInput extends js.Object {
 
 object UpdateTableReplicaAutoScalingInput {
   @scala.inline
-  def apply(
-    TableName: TableName,
-    GlobalSecondaryIndexUpdates: GlobalSecondaryIndexAutoScalingUpdateList = null,
-    ProvisionedWriteCapacityAutoScalingUpdate: AutoScalingSettingsUpdate = null,
-    ReplicaUpdates: ReplicaAutoScalingUpdateList = null
-  ): UpdateTableReplicaAutoScalingInput = {
+  def apply(TableName: TableName): UpdateTableReplicaAutoScalingInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
-    if (GlobalSecondaryIndexUpdates != null) __obj.updateDynamic("GlobalSecondaryIndexUpdates")(GlobalSecondaryIndexUpdates.asInstanceOf[js.Any])
-    if (ProvisionedWriteCapacityAutoScalingUpdate != null) __obj.updateDynamic("ProvisionedWriteCapacityAutoScalingUpdate")(ProvisionedWriteCapacityAutoScalingUpdate.asInstanceOf[js.Any])
-    if (ReplicaUpdates != null) __obj.updateDynamic("ReplicaUpdates")(ReplicaUpdates.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTableReplicaAutoScalingInput]
   }
+  @scala.inline
+  implicit class UpdateTableReplicaAutoScalingInputOps[Self <: UpdateTableReplicaAutoScalingInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexAutoScalingUpdate*): Self = this.set("GlobalSecondaryIndexUpdates", js.Array(value :_*))
+    @scala.inline
+    def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexAutoScalingUpdateList): Self = this.set("GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalSecondaryIndexUpdates: Self = this.set("GlobalSecondaryIndexUpdates", js.undefined)
+    @scala.inline
+    def setProvisionedWriteCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = this.set("ProvisionedWriteCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedWriteCapacityAutoScalingUpdate: Self = this.set("ProvisionedWriteCapacityAutoScalingUpdate", js.undefined)
+    @scala.inline
+    def setReplicaUpdatesVarargs(value: ReplicaAutoScalingUpdate*): Self = this.set("ReplicaUpdates", js.Array(value :_*))
+    @scala.inline
+    def setReplicaUpdates(value: ReplicaAutoScalingUpdateList): Self = this.set("ReplicaUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaUpdates: Self = this.set("ReplicaUpdates", js.undefined)
+  }
+  
 }
 

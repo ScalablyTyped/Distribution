@@ -64,6 +64,7 @@ class Layer () extends js.Object {
     * defaulting to a predicate that always returns true.
     */
   def findObjectAt(p: Point): GraphObject = js.native
+  def findObjectAt(p: Point, navig: js.UndefOr[scala.Nothing], pred: js.Function1[/* obj */ GraphObject, Boolean]): GraphObject = js.native
   def findObjectAt(p: Point, navig: js.Function1[/* obj */ GraphObject, GraphObject]): GraphObject = js.native
   def findObjectAt(
     p: Point,
@@ -71,7 +72,44 @@ class Layer () extends js.Object {
     pred: js.Function1[/* obj */ GraphObject, Boolean]
   ): GraphObject = js.native
   def findObjectsAt(p: Point): Set[GraphObject] = js.native
+  def findObjectsAt(
+    p: Point,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsAt(
+    p: Point,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsAt(p: Point, navig: js.UndefOr[scala.Nothing], pred: js.Function1[/* obj */ GraphObject, Boolean]): Set[GraphObject] = js.native
+  def findObjectsAt(
+    p: Point,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsAt(
+    p: Point,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
   def findObjectsAt(p: Point, navig: js.Function1[/* obj */ GraphObject, GraphObject]): Set[GraphObject] = js.native
+  def findObjectsAt(
+    p: Point,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsAt(
+    p: Point,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
   def findObjectsAt(
     p: Point,
     navig: js.Function1[/* obj */ GraphObject, GraphObject],
@@ -103,6 +141,8 @@ class Layer () extends js.Object {
   @JSName("findObjectsAt")
   def findObjectsAt_List(p: Point): List[GraphObject] = js.native
   @JSName("findObjectsAt")
+  def findObjectsAt_List(p: Point, navig: js.UndefOr[scala.Nothing], pred: js.Function1[/* obj */ GraphObject, Boolean]): List[GraphObject] = js.native
+  @JSName("findObjectsAt")
   def findObjectsAt_List(p: Point, navig: js.Function1[/* obj */ GraphObject, GraphObject]): List[GraphObject] = js.native
   @JSName("findObjectsAt")
   def findObjectsAt_List(
@@ -111,11 +151,128 @@ class Layer () extends js.Object {
     pred: js.Function1[/* obj */ GraphObject, Boolean]
   ): List[GraphObject] = js.native
   def findObjectsIn(r: Rect): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean
+  ): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean,
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean,
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsIn(r: Rect, navig: js.UndefOr[scala.Nothing], pred: js.Function1[/* obj */ GraphObject, Boolean]): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: Boolean
+  ): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: Boolean,
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: Boolean,
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
   def findObjectsIn(r: Rect, navig: js.Function1[/* obj */ GraphObject, GraphObject]): Set[GraphObject] = js.native
   def findObjectsIn(
     r: Rect,
     navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean
+  ): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean,
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean,
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
     pred: js.Function1[/* obj */ GraphObject, Boolean]
+  ): Set[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsIn(
+    r: Rect,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
   ): Set[GraphObject] = js.native
   def findObjectsIn(
     r: Rect,
@@ -153,7 +310,30 @@ class Layer () extends js.Object {
   @JSName("findObjectsIn")
   def findObjectsIn_List(r: Rect): List[GraphObject] = js.native
   @JSName("findObjectsIn")
+  def findObjectsIn_List(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean
+  ): List[GraphObject] = js.native
+  @JSName("findObjectsIn")
+  def findObjectsIn_List(r: Rect, navig: js.UndefOr[scala.Nothing], pred: js.Function1[/* obj */ GraphObject, Boolean]): List[GraphObject] = js.native
+  @JSName("findObjectsIn")
+  def findObjectsIn_List(
+    r: Rect,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: Boolean
+  ): List[GraphObject] = js.native
+  @JSName("findObjectsIn")
   def findObjectsIn_List(r: Rect, navig: js.Function1[/* obj */ GraphObject, GraphObject]): List[GraphObject] = js.native
+  @JSName("findObjectsIn")
+  def findObjectsIn_List(
+    r: Rect,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean
+  ): List[GraphObject] = js.native
   @JSName("findObjectsIn")
   def findObjectsIn_List(
     r: Rect,
@@ -168,12 +348,151 @@ class Layer () extends js.Object {
     partialInclusion: Boolean
   ): List[GraphObject] = js.native
   def findObjectsNear(p: Point, dist: Double): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean,
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean,
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean]
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: Boolean
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: Boolean,
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: Boolean,
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
   def findObjectsNear(p: Point, dist: Double, navig: js.Function1[/* obj */ GraphObject, GraphObject]): Set[GraphObject] = js.native
   def findObjectsNear(
     p: Point,
     dist: Double,
     navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean,
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean,
+    coll: Set[GraphObject]
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
     pred: js.Function1[/* obj */ GraphObject, Boolean]
+  ): Set[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: List[GraphObject]
+  ): List[GraphObject] = js.native
+  def findObjectsNear(
+    p: Point,
+    dist: Double,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: js.UndefOr[scala.Nothing],
+    coll: Set[GraphObject]
   ): Set[GraphObject] = js.native
   def findObjectsNear(
     p: Point,
@@ -215,7 +534,38 @@ class Layer () extends js.Object {
   @JSName("findObjectsNear")
   def findObjectsNear_List(p: Point, dist: Double): List[GraphObject] = js.native
   @JSName("findObjectsNear")
+  def findObjectsNear_List(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean
+  ): List[GraphObject] = js.native
+  @JSName("findObjectsNear")
+  def findObjectsNear_List(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean]
+  ): List[GraphObject] = js.native
+  @JSName("findObjectsNear")
+  def findObjectsNear_List(
+    p: Point,
+    dist: Double,
+    navig: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* obj */ GraphObject, Boolean],
+    partialInclusion: Boolean
+  ): List[GraphObject] = js.native
+  @JSName("findObjectsNear")
   def findObjectsNear_List(p: Point, dist: Double, navig: js.Function1[/* obj */ GraphObject, GraphObject]): List[GraphObject] = js.native
+  @JSName("findObjectsNear")
+  def findObjectsNear_List(
+    p: Point,
+    dist: Double,
+    navig: js.Function1[/* obj */ GraphObject, GraphObject],
+    pred: js.UndefOr[scala.Nothing],
+    partialInclusion: Boolean
+  ): List[GraphObject] = js.native
   @JSName("findObjectsNear")
   def findObjectsNear_List(
     p: Point,

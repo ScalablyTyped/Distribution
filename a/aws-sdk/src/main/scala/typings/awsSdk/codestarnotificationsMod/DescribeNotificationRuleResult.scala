@@ -54,31 +54,68 @@ trait DescribeNotificationRuleResult extends js.Object {
 
 object DescribeNotificationRuleResult {
   @scala.inline
-  def apply(
-    Arn: NotificationRuleArn,
-    CreatedBy: NotificationRuleCreatedBy = null,
-    CreatedTimestamp: CreatedTimestamp = null,
-    DetailType: DetailType = null,
-    EventTypes: EventTypeBatch = null,
-    LastModifiedTimestamp: LastModifiedTimestamp = null,
-    Name: NotificationRuleName = null,
-    Resource: NotificationRuleResource = null,
-    Status: NotificationRuleStatus = null,
-    Tags: Tags = null,
-    Targets: TargetsBatch = null
-  ): DescribeNotificationRuleResult = {
+  def apply(Arn: NotificationRuleArn): DescribeNotificationRuleResult = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-    if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (DetailType != null) __obj.updateDynamic("DetailType")(DetailType.asInstanceOf[js.Any])
-    if (EventTypes != null) __obj.updateDynamic("EventTypes")(EventTypes.asInstanceOf[js.Any])
-    if (LastModifiedTimestamp != null) __obj.updateDynamic("LastModifiedTimestamp")(LastModifiedTimestamp.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Resource != null) __obj.updateDynamic("Resource")(Resource.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotificationRuleResult]
   }
+  @scala.inline
+  implicit class DescribeNotificationRuleResultOps[Self <: DescribeNotificationRuleResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NotificationRuleArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedBy(value: NotificationRuleCreatedBy): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    @scala.inline
+    def setCreatedTimestamp(value: CreatedTimestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setDetailType(value: DetailType): Self = this.set("DetailType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailType: Self = this.set("DetailType", js.undefined)
+    @scala.inline
+    def setEventTypesVarargs(value: EventTypeSummary*): Self = this.set("EventTypes", js.Array(value :_*))
+    @scala.inline
+    def setEventTypes(value: EventTypeBatch): Self = this.set("EventTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypes: Self = this.set("EventTypes", js.undefined)
+    @scala.inline
+    def setLastModifiedTimestamp(value: LastModifiedTimestamp): Self = this.set("LastModifiedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTimestamp: Self = this.set("LastModifiedTimestamp", js.undefined)
+    @scala.inline
+    def setName(value: NotificationRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setResource(value: NotificationRuleResource): Self = this.set("Resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("Resource", js.undefined)
+    @scala.inline
+    def setStatus(value: NotificationRuleStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: TargetSummary*): Self = this.set("Targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: TargetsBatch): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("Targets", js.undefined)
+  }
+  
 }
 

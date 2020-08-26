@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Types.Tilemaps.GIDData
 import typings.phaser.Phaser.Types.Tilemaps.LayerDataConfig
 import typings.phaser.Phaser.Types.Tilemaps.MapDataConfig
 import typings.phaser.Phaser.Types.Tilemaps.ObjectLayerConfig
-import typings.phaser.Phaser.Types.Tilemaps.TiledObject
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -79,7 +78,23 @@ object Tilemaps extends js.Object {
       tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
       layerIndex: integer,
       tileset: String,
+      x: js.UndefOr[scala.Nothing],
+      y: Double
+    ) = this()
+    def this(
+      scene: typings.phaser.Phaser.Scene,
+      tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
+      layerIndex: integer,
+      tileset: String,
       x: Double,
+      y: Double
+    ) = this()
+    def this(
+      scene: typings.phaser.Phaser.Scene,
+      tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
+      layerIndex: integer,
+      tileset: js.Array[String | typings.phaser.Phaser.Tilemaps.Tileset],
+      x: js.UndefOr[scala.Nothing],
       y: Double
     ) = this()
     def this(
@@ -95,175 +110,17 @@ object Tilemaps extends js.Object {
       tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
       layerIndex: integer,
       tileset: typings.phaser.Phaser.Tilemaps.Tileset,
+      x: js.UndefOr[scala.Nothing],
+      y: Double
+    ) = this()
+    def this(
+      scene: typings.phaser.Phaser.Scene,
+      tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
+      layerIndex: integer,
+      tileset: typings.phaser.Phaser.Tilemaps.Tileset,
       x: Double,
       y: Double
     ) = this()
-    /**
-      * The depth of this Game Object within the Scene.
-      * 
-      * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-      * of Game Objects, without actually moving their position in the display list.
-      * 
-      * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-      * value will always render in front of one with a lower value.
-      * 
-      * Setting the depth will queue a depth sort event within the Scene.
-      */
-    /* CompleteClass */
-    override var depth: Double = js.native
-    /**
-      * The displayed height of this Game Object.
-      * 
-      * This value takes into account the scale factor.
-      * 
-      * Setting this value will adjust the Game Object's scale property.
-      */
-    /* CompleteClass */
-    override var displayHeight: Double = js.native
-    /**
-      * The displayed width of this Game Object.
-      * 
-      * This value takes into account the scale factor.
-      * 
-      * Setting this value will adjust the Game Object's scale property.
-      */
-    /* CompleteClass */
-    override var displayWidth: Double = js.native
-    /**
-      * The horizontally flipped state of the Game Object.
-      * 
-      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      */
-    /* CompleteClass */
-    override var flipX: Boolean = js.native
-    /**
-      * The vertically flipped state of the Game Object.
-      * 
-      * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      */
-    /* CompleteClass */
-    override var flipY: Boolean = js.native
-    /**
-      * The native (un-scaled) height of this Game Object.
-      * 
-      * Changing this value will not change the size that the Game Object is rendered in-game.
-      * For that you need to either set the scale of the Game Object (`setScale`) or use
-      * the `displayHeight` property.
-      */
-    /* CompleteClass */
-    override var height: Double = js.native
-    /**
-      * The visible state of the Game Object.
-      * 
-      * An invisible Game Object will skip rendering, but will still process update logic.
-      */
-    /* CompleteClass */
-    override var visible: Boolean = js.native
-    /**
-      * The native (un-scaled) width of this Game Object.
-      * 
-      * Changing this value will not change the size that the Game Object is rendered in-game.
-      * For that you need to either set the scale of the Game Object (`setScale`) or use
-      * the `displayWidth` property.
-      */
-    /* CompleteClass */
-    override var width: Double = js.native
-    /**
-      * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
-      */
-    /* CompleteClass */
-    override def resetFlip(): this.type = js.native
-    /**
-      * The depth of this Game Object within the Scene.
-      * 
-      * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-      * of Game Objects, without actually moving their position in the display list.
-      * 
-      * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-      * value will always render in front of one with a lower value.
-      * 
-      * Setting the depth will queue a depth sort event within the Scene.
-      * @param value The depth of this Game Object.
-      */
-    /* CompleteClass */
-    override def setDepth(value: integer): this.type = js.native
-    /**
-      * Sets the display size of this Game Object.
-      * 
-      * Calling this will adjust the scale.
-      * @param width The width of this Game Object.
-      * @param height The height of this Game Object.
-      */
-    /* CompleteClass */
-    override def setDisplaySize(width: Double, height: Double): this.type = js.native
-    /**
-      * Sets the horizontal and vertical flipped state of this Game Object.
-      * 
-      * A Game Object that is flipped will render inversed on the flipped axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-      * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-      */
-    /* CompleteClass */
-    override def setFlip(x: Boolean, y: Boolean): this.type = js.native
-    /**
-      * Sets the horizontal flipped state of this Game Object.
-      * 
-      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-      */
-    /* CompleteClass */
-    override def setFlipX(value: Boolean): this.type = js.native
-    /**
-      * Sets the vertical flipped state of this Game Object.
-      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-      */
-    /* CompleteClass */
-    override def setFlipY(value: Boolean): this.type = js.native
-    /**
-      * Sets the internal size of this Game Object, as used for frame or physics body creation.
-      * 
-      * This will not change the size that the Game Object is rendered in-game.
-      * For that you need to either set the scale of the Game Object (`setScale`) or call the
-      * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-      * to do so by giving pixel values.
-      * 
-      * If you have enabled this Game Object for input, changing the size will _not_ change the
-      * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-      * @param width The width of this Game Object.
-      * @param height The height of this Game Object.
-      */
-    /* CompleteClass */
-    override def setSize(width: Double, height: Double): this.type = js.native
-    /**
-      * Sets the visibility of this Game Object.
-      * 
-      * An invisible Game Object will skip rendering, but will still process update logic.
-      * @param value The visible state of the Game Object.
-      */
-    /* CompleteClass */
-    override def setVisible(value: Boolean): this.type = js.native
-    /**
-      * Toggles the horizontal flipped state of this Game Object.
-      * 
-      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      */
-    /* CompleteClass */
-    override def toggleFlipX(): this.type = js.native
-    /**
-      * Toggles the vertical flipped state of this Game Object.
-      */
-    /* CompleteClass */
-    override def toggleFlipY(): this.type = js.native
   }
   
   /**
@@ -286,8 +143,86 @@ object Tilemaps extends js.Object {
       */
     def this(name: String, firstgid: integer) = this()
     def this(name: String, firstgid: integer, width: integer) = this()
+    def this(name: String, firstgid: integer, width: js.UndefOr[scala.Nothing], height: integer) = this()
     def this(name: String, firstgid: integer, width: integer, height: integer) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      margin: integer
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: integer,
+      margin: integer
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: js.UndefOr[scala.Nothing],
+      margin: integer
+    ) = this()
     def this(name: String, firstgid: integer, width: integer, height: integer, margin: integer) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      margin: js.UndefOr[scala.Nothing],
+      spacing: integer
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      margin: integer,
+      spacing: integer
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: integer,
+      margin: js.UndefOr[scala.Nothing],
+      spacing: integer
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: integer,
+      margin: integer,
+      spacing: integer
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: js.UndefOr[scala.Nothing],
+      margin: js.UndefOr[scala.Nothing],
+      spacing: integer
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: js.UndefOr[scala.Nothing],
+      margin: integer,
+      spacing: integer
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: integer,
+      margin: js.UndefOr[scala.Nothing],
+      spacing: integer
+    ) = this()
     def this(
       name: String,
       firstgid: integer,
@@ -299,73 +234,147 @@ object Tilemaps extends js.Object {
     def this(
       name: String,
       firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      margin: js.UndefOr[scala.Nothing],
+      spacing: js.UndefOr[scala.Nothing],
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      margin: js.UndefOr[scala.Nothing],
+      spacing: integer,
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      margin: integer,
+      spacing: js.UndefOr[scala.Nothing],
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      margin: integer,
+      spacing: integer,
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: integer,
+      margin: js.UndefOr[scala.Nothing],
+      spacing: js.UndefOr[scala.Nothing],
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: integer,
+      margin: js.UndefOr[scala.Nothing],
+      spacing: integer,
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: integer,
+      margin: integer,
+      spacing: js.UndefOr[scala.Nothing],
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: js.UndefOr[scala.Nothing],
+      height: integer,
+      margin: integer,
+      spacing: integer,
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: js.UndefOr[scala.Nothing],
+      margin: js.UndefOr[scala.Nothing],
+      spacing: js.UndefOr[scala.Nothing],
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: js.UndefOr[scala.Nothing],
+      margin: js.UndefOr[scala.Nothing],
+      spacing: integer,
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: js.UndefOr[scala.Nothing],
+      margin: integer,
+      spacing: js.UndefOr[scala.Nothing],
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: js.UndefOr[scala.Nothing],
+      margin: integer,
+      spacing: integer,
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: integer,
+      margin: js.UndefOr[scala.Nothing],
+      spacing: js.UndefOr[scala.Nothing],
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: integer,
+      margin: js.UndefOr[scala.Nothing],
+      spacing: integer,
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
+      width: integer,
+      height: integer,
+      margin: integer,
+      spacing: js.UndefOr[scala.Nothing],
+      properties: js.Object
+    ) = this()
+    def this(
+      name: String,
+      firstgid: integer,
       width: integer,
       height: integer,
       margin: integer,
       spacing: integer,
       properties: js.Object
     ) = this()
-    /**
-      * The Tiled firstgid value.
-      * This is the starting index of the first image index this Image Collection contains.
-      */
-    /* CompleteClass */
-    override var firstgid: integer = js.native
-    /**
-      * The height of the tallest image (in pixels).
-      */
-    /* CompleteClass */
-    override val imageHeight: integer = js.native
-    /**
-      * The margin around the images in the collection (in pixels).
-      * Use `setSpacing` to change.
-      */
-    /* CompleteClass */
-    override val imageMarge: integer = js.native
-    /**
-      * The spacing between each image in the collection (in pixels).
-      * Use `setSpacing` to change.
-      */
-    /* CompleteClass */
-    override val imageSpacing: integer = js.native
-    /**
-      * The width of the widest image (in pixels).
-      */
-    /* CompleteClass */
-    override val imageWidth: integer = js.native
-    /**
-      * The cached images that are a part of this collection.
-      */
-    /* CompleteClass */
-    override val images: js.Array[_] = js.native
-    /**
-      * The name of the Image Collection.
-      */
-    /* CompleteClass */
-    override var name: String = js.native
-    /**
-      * Image Collection-specific properties that are typically defined in the Tiled editor.
-      */
-    /* CompleteClass */
-    override var properties: js.Object = js.native
-    /**
-      * The total number of images in the image collection.
-      */
-    /* CompleteClass */
-    override val total: integer = js.native
-    /**
-      * Add an image to this Image Collection.
-      * @param gid The gid of the image in the Image Collection.
-      * @param image The the key of the image in the Image Collection and in the cache.
-      */
-    /* CompleteClass */
-    override def addImage(gid: integer, image: String): typings.phaser.Phaser.Tilemaps.ImageCollection = js.native
-    /**
-      * Returns true if and only if this image collection contains the given image index.
-      * @param imageIndex The image index to search for.
-      */
-    /* CompleteClass */
-    override def containsImageIndex(imageIndex: integer): Boolean = js.native
   }
   
   /**
@@ -381,106 +390,6 @@ object Tilemaps extends js.Object {
   class LayerData ()
     extends typings.phaser.Phaser.Tilemaps.LayerData {
     def this(config: LayerDataConfig) = this()
-    /**
-      * The alpha value of the layer.
-      */
-    /* CompleteClass */
-    override var alpha: Double = js.native
-    /**
-      * The base tile height.
-      */
-    /* CompleteClass */
-    override var baseTileHeight: Double = js.native
-    /**
-      * The base tile width.
-      */
-    /* CompleteClass */
-    override var baseTileWidth: Double = js.native
-    /**
-      * An array of physics bodies.
-      */
-    /* CompleteClass */
-    override var bodies: js.Array[_] = js.native
-    /**
-      * An array of callbacks.
-      */
-    /* CompleteClass */
-    override var callbacks: js.Array[_] = js.native
-    /**
-      * Tile Collision ID index map.
-      */
-    /* CompleteClass */
-    override var collideIndexes: js.Array[_] = js.native
-    /**
-      * An array of the tile data indexes.
-      */
-    /* CompleteClass */
-    override var data: js.Array[js.Array[typings.phaser.Phaser.Tilemaps.Tile]] = js.native
-    /**
-      * The height of the layer in tiles.
-      */
-    /* CompleteClass */
-    override var height: Double = js.native
-    /**
-      * The height in pixels of the entire layer.
-      */
-    /* CompleteClass */
-    override var heightInPixels: Double = js.native
-    /**
-      * Tile ID index map.
-      */
-    /* CompleteClass */
-    override var indexes: js.Array[_] = js.native
-    /**
-      * The name of the layer, if specified in Tiled.
-      */
-    /* CompleteClass */
-    override var name: String = js.native
-    /**
-      * Layer specific properties (can be specified in Tiled)
-      */
-    /* CompleteClass */
-    override var properties: js.Array[js.Object] = js.native
-    /**
-      * The pixel height of the tiles.
-      */
-    /* CompleteClass */
-    override var tileHeight: Double = js.native
-    /**
-      * The pixel width of the tiles.
-      */
-    /* CompleteClass */
-    override var tileWidth: Double = js.native
-    /**
-      * A reference to the Tilemap layer that owns this data.
-      */
-    /* CompleteClass */
-    override var tilemapLayer: typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer | typings.phaser.Phaser.Tilemaps.StaticTilemapLayer = js.native
-    /**
-      * Is the layer visible or not?
-      */
-    /* CompleteClass */
-    override var visible: Boolean = js.native
-    /**
-      * The width of the layer in tiles.
-      */
-    /* CompleteClass */
-    override var width: Double = js.native
-    /**
-      * The width in pixels of the entire layer.
-      */
-    /* CompleteClass */
-    override var widthInPixels: Double = js.native
-    /**
-      * The x offset of where to draw from the top left.
-      */
-    /* CompleteClass */
-    override var x: Double = js.native
-    /**
-      * The y offset of where to draw from the top left.
-      */
-    /* CompleteClass */
-    override var y: Double = js.native
   }
   
   /**
@@ -496,111 +405,6 @@ object Tilemaps extends js.Object {
   class MapData ()
     extends typings.phaser.Phaser.Tilemaps.MapData {
     def this(config: MapDataConfig) = this()
-    /**
-      * An object of collision data. Must be created as physics object or will return undefined.
-      */
-    /* CompleteClass */
-    override var collision: js.Object = js.native
-    /**
-      * The format of the map data.
-      */
-    /* CompleteClass */
-    override var format: integer = js.native
-    /**
-      * The height of the entire tilemap.
-      */
-    /* CompleteClass */
-    override var height: Double = js.native
-    /**
-      * The height in pixels of the entire tilemap.
-      */
-    /* CompleteClass */
-    override var heightInPixels: Double = js.native
-    /**
-      * The collection of images the map uses(specified in Tiled)
-      */
-    /* CompleteClass */
-    override var imageCollections: js.Array[_] = js.native
-    /**
-      * An array of Tiled Image Layers.
-      */
-    /* CompleteClass */
-    override var images: js.Array[_] = js.native
-    /**
-      * If the map is infinite or not.
-      */
-    /* CompleteClass */
-    override var infinite: Boolean = js.native
-    /**
-      * An array with all the layers configured to the MapData.
-      */
-    /* CompleteClass */
-    override var layers: js.Array[typings.phaser.Phaser.Tilemaps.LayerData] | typings.phaser.Phaser.Tilemaps.ObjectLayer = js.native
-    /**
-      * The key in the Phaser cache that corresponds to the loaded tilemap data.
-      */
-    /* CompleteClass */
-    override var name: String = js.native
-    /**
-      * An object of Tiled Object Layers.
-      */
-    /* CompleteClass */
-    override var objects: js.Object = js.native
-    /**
-      * The orientation of the map data (i.e. orthogonal, isometric, hexagonal), default 'orthogonal'.
-      */
-    /* CompleteClass */
-    override var orientation: String = js.native
-    /**
-      * Map specific properties (can be specified in Tiled)
-      */
-    /* CompleteClass */
-    override var properties: js.Object = js.native
-    /**
-      * Determines the draw order of tilemap. Default is right-down
-      * 
-      * 0, or 'right-down'
-      * 1, or 'left-down'
-      * 2, or 'right-up'
-      * 3, or 'left-up'
-      */
-    /* CompleteClass */
-    override var renderOrder: String = js.native
-    /**
-      * The height of the tiles.
-      */
-    /* CompleteClass */
-    override var tileHeight: Double = js.native
-    /**
-      * The width of the tiles.
-      */
-    /* CompleteClass */
-    override var tileWidth: Double = js.native
-    /**
-      * An array of tile instances.
-      */
-    /* CompleteClass */
-    override var tiles: js.Array[_] = js.native
-    /**
-      * An array of Tilesets.
-      */
-    /* CompleteClass */
-    override var tilesets: js.Array[typings.phaser.Phaser.Tilemaps.Tileset] = js.native
-    /**
-      * The version of the map data (as specified in Tiled).
-      */
-    /* CompleteClass */
-    override var version: String = js.native
-    /**
-      * The width of the entire tilemap.
-      */
-    /* CompleteClass */
-    override var width: Double = js.native
-    /**
-      * The width in pixels of the entire tilemap.
-      */
-    /* CompleteClass */
-    override var widthInPixels: Double = js.native
   }
   
   /**
@@ -619,57 +423,6 @@ object Tilemaps extends js.Object {
   class ObjectLayer ()
     extends typings.phaser.Phaser.Tilemaps.ObjectLayer {
     def this(config: ObjectLayerConfig) = this()
-    /**
-      * The name of the Object Layer.
-      */
-    /* CompleteClass */
-    override var name: String = js.native
-    /**
-      * An array of all objects on this Object Layer.
-      * 
-      * Each Tiled object corresponds to a JavaScript object in this array. It has an `id` (unique),
-      * `name` (as assigned in Tiled), `type` (as assigned in Tiled), `rotation` (in clockwise degrees),
-      * `properties` (if any), `visible` state (`true` if visible, `false` otherwise),
-      * `x` and `y` coordinates (in pixels, relative to the tilemap), and a `width` and `height` (in pixels).
-      * 
-      * An object tile has a `gid` property (GID of the represented tile), a `flippedHorizontal` property,
-      * a `flippedVertical` property, and `flippedAntiDiagonal` property.
-      * The {@link http://docs.mapeditor.org/en/latest/reference/tmx-map-format/|Tiled documentation} contains
-      * information on flipping and rotation.
-      * 
-      * Polylines have a `polyline` property, which is an array of objects corresponding to points,
-      * where each point has an `x` property and a `y` property. Polygons have an identically structured
-      * array in their `polygon` property. Text objects have a `text` property with the text's properties.
-      * 
-      * Rectangles and ellipses have a `rectangle` or `ellipse` property set to `true`.
-      */
-    /* CompleteClass */
-    override var objects: js.Array[TiledObject] = js.native
-    /**
-      * The opacity of the layer, between 0 and 1.
-      */
-    /* CompleteClass */
-    override var opacity: Double = js.native
-    /**
-      * The custom properties defined on the Object Layer, keyed by their name.
-      */
-    /* CompleteClass */
-    override var properties: js.Object = js.native
-    /**
-      * The type of each custom property defined on the Object Layer, keyed by its name.
-      */
-    /* CompleteClass */
-    override var propertyTypes: js.Object = js.native
-    /**
-      * The type of the layer, which should be `objectgroup`.
-      */
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /**
-      * Whether the layer is shown (`true`) or hidden (`false`).
-      */
-    /* CompleteClass */
-    override var visible: Boolean = js.native
   }
   
   /**
@@ -737,7 +490,23 @@ object Tilemaps extends js.Object {
       tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
       layerIndex: integer,
       tileset: String,
+      x: js.UndefOr[scala.Nothing],
+      y: Double
+    ) = this()
+    def this(
+      scene: typings.phaser.Phaser.Scene,
+      tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
+      layerIndex: integer,
+      tileset: String,
       x: Double,
+      y: Double
+    ) = this()
+    def this(
+      scene: typings.phaser.Phaser.Scene,
+      tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
+      layerIndex: integer,
+      tileset: js.Array[String | typings.phaser.Phaser.Tilemaps.Tileset],
+      x: js.UndefOr[scala.Nothing],
       y: Double
     ) = this()
     def this(
@@ -753,175 +522,17 @@ object Tilemaps extends js.Object {
       tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
       layerIndex: integer,
       tileset: typings.phaser.Phaser.Tilemaps.Tileset,
+      x: js.UndefOr[scala.Nothing],
+      y: Double
+    ) = this()
+    def this(
+      scene: typings.phaser.Phaser.Scene,
+      tilemap: typings.phaser.Phaser.Tilemaps.Tilemap,
+      layerIndex: integer,
+      tileset: typings.phaser.Phaser.Tilemaps.Tileset,
       x: Double,
       y: Double
     ) = this()
-    /**
-      * The depth of this Game Object within the Scene.
-      * 
-      * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-      * of Game Objects, without actually moving their position in the display list.
-      * 
-      * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-      * value will always render in front of one with a lower value.
-      * 
-      * Setting the depth will queue a depth sort event within the Scene.
-      */
-    /* CompleteClass */
-    override var depth: Double = js.native
-    /**
-      * The displayed height of this Game Object.
-      * 
-      * This value takes into account the scale factor.
-      * 
-      * Setting this value will adjust the Game Object's scale property.
-      */
-    /* CompleteClass */
-    override var displayHeight: Double = js.native
-    /**
-      * The displayed width of this Game Object.
-      * 
-      * This value takes into account the scale factor.
-      * 
-      * Setting this value will adjust the Game Object's scale property.
-      */
-    /* CompleteClass */
-    override var displayWidth: Double = js.native
-    /**
-      * The horizontally flipped state of the Game Object.
-      * 
-      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      */
-    /* CompleteClass */
-    override var flipX: Boolean = js.native
-    /**
-      * The vertically flipped state of the Game Object.
-      * 
-      * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      */
-    /* CompleteClass */
-    override var flipY: Boolean = js.native
-    /**
-      * The native (un-scaled) height of this Game Object.
-      * 
-      * Changing this value will not change the size that the Game Object is rendered in-game.
-      * For that you need to either set the scale of the Game Object (`setScale`) or use
-      * the `displayHeight` property.
-      */
-    /* CompleteClass */
-    override var height: Double = js.native
-    /**
-      * The visible state of the Game Object.
-      * 
-      * An invisible Game Object will skip rendering, but will still process update logic.
-      */
-    /* CompleteClass */
-    override var visible: Boolean = js.native
-    /**
-      * The native (un-scaled) width of this Game Object.
-      * 
-      * Changing this value will not change the size that the Game Object is rendered in-game.
-      * For that you need to either set the scale of the Game Object (`setScale`) or use
-      * the `displayWidth` property.
-      */
-    /* CompleteClass */
-    override var width: Double = js.native
-    /**
-      * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
-      */
-    /* CompleteClass */
-    override def resetFlip(): this.type = js.native
-    /**
-      * The depth of this Game Object within the Scene.
-      * 
-      * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-      * of Game Objects, without actually moving their position in the display list.
-      * 
-      * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-      * value will always render in front of one with a lower value.
-      * 
-      * Setting the depth will queue a depth sort event within the Scene.
-      * @param value The depth of this Game Object.
-      */
-    /* CompleteClass */
-    override def setDepth(value: integer): this.type = js.native
-    /**
-      * Sets the display size of this Game Object.
-      * 
-      * Calling this will adjust the scale.
-      * @param width The width of this Game Object.
-      * @param height The height of this Game Object.
-      */
-    /* CompleteClass */
-    override def setDisplaySize(width: Double, height: Double): this.type = js.native
-    /**
-      * Sets the horizontal and vertical flipped state of this Game Object.
-      * 
-      * A Game Object that is flipped will render inversed on the flipped axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-      * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-      */
-    /* CompleteClass */
-    override def setFlip(x: Boolean, y: Boolean): this.type = js.native
-    /**
-      * Sets the horizontal flipped state of this Game Object.
-      * 
-      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-      */
-    /* CompleteClass */
-    override def setFlipX(value: Boolean): this.type = js.native
-    /**
-      * Sets the vertical flipped state of this Game Object.
-      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-      */
-    /* CompleteClass */
-    override def setFlipY(value: Boolean): this.type = js.native
-    /**
-      * Sets the internal size of this Game Object, as used for frame or physics body creation.
-      * 
-      * This will not change the size that the Game Object is rendered in-game.
-      * For that you need to either set the scale of the Game Object (`setScale`) or call the
-      * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-      * to do so by giving pixel values.
-      * 
-      * If you have enabled this Game Object for input, changing the size will _not_ change the
-      * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-      * @param width The width of this Game Object.
-      * @param height The height of this Game Object.
-      */
-    /* CompleteClass */
-    override def setSize(width: Double, height: Double): this.type = js.native
-    /**
-      * Sets the visibility of this Game Object.
-      * 
-      * An invisible Game Object will skip rendering, but will still process update logic.
-      * @param value The visible state of the Game Object.
-      */
-    /* CompleteClass */
-    override def setVisible(value: Boolean): this.type = js.native
-    /**
-      * Toggles the horizontal flipped state of this Game Object.
-      * 
-      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      */
-    /* CompleteClass */
-    override def toggleFlipX(): this.type = js.native
-    /**
-      * Toggles the vertical flipped state of this Game Object.
-      */
-    /* CompleteClass */
-    override def toggleFlipY(): this.type = js.native
   }
   
   /**
@@ -957,85 +568,6 @@ object Tilemaps extends js.Object {
       baseWidth: integer,
       baseHeight: integer
     ) = this()
-    /**
-      * The horizontally flipped state of the Game Object.
-      * 
-      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      */
-    /* CompleteClass */
-    override var flipX: Boolean = js.native
-    /**
-      * The vertically flipped state of the Game Object.
-      * 
-      * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      */
-    /* CompleteClass */
-    override var flipY: Boolean = js.native
-    /**
-      * The visible state of the Game Object.
-      * 
-      * An invisible Game Object will skip rendering, but will still process update logic.
-      */
-    /* CompleteClass */
-    override var visible: Boolean = js.native
-    /**
-      * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
-      */
-    /* CompleteClass */
-    override def resetFlip(): this.type = js.native
-    /**
-      * Sets the horizontal and vertical flipped state of this Game Object.
-      * 
-      * A Game Object that is flipped will render inversed on the flipped axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-      * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-      */
-    /* CompleteClass */
-    override def setFlip(x: Boolean, y: Boolean): this.type = js.native
-    /**
-      * Sets the horizontal flipped state of this Game Object.
-      * 
-      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-      */
-    /* CompleteClass */
-    override def setFlipX(value: Boolean): this.type = js.native
-    /**
-      * Sets the vertical flipped state of this Game Object.
-      * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-      */
-    /* CompleteClass */
-    override def setFlipY(value: Boolean): this.type = js.native
-    /**
-      * Sets the visibility of this Game Object.
-      * 
-      * An invisible Game Object will skip rendering, but will still process update logic.
-      * @param value The visible state of the Game Object.
-      */
-    /* CompleteClass */
-    override def setVisible(value: Boolean): this.type = js.native
-    /**
-      * Toggles the horizontal flipped state of this Game Object.
-      * 
-      * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-      * Flipping always takes place from the middle of the texture and does not impact the scale value.
-      * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-      */
-    /* CompleteClass */
-    override def toggleFlipX(): this.type = js.native
-    /**
-      * Toggles the vertical flipped state of this Game Object.
-      */
-    /* CompleteClass */
-    override def toggleFlipY(): this.type = js.native
   }
   
   /**
@@ -1292,6 +824,7 @@ object Tilemaps extends js.Object {
         * @param parentstate The state of the parent group (if any).
         */
       def CreateGroupLayer(json: js.Object): js.Object = js.native
+      def CreateGroupLayer(json: js.Object, currentl: js.UndefOr[scala.Nothing], parentstate: js.Object): js.Object = js.native
       def CreateGroupLayer(json: js.Object, currentl: js.Object): js.Object = js.native
       def CreateGroupLayer(json: js.Object, currentl: js.Object, parentstate: js.Object): js.Object = js.native
       /**
@@ -1324,6 +857,7 @@ object Tilemaps extends js.Object {
         * @param offsetY Optional additional offset to apply to the object's y property. Defaults to 0. Default 0.
         */
       def ParseObject(tiledObject: js.Object): js.Object = js.native
+      def ParseObject(tiledObject: js.Object, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): js.Object = js.native
       def ParseObject(tiledObject: js.Object, offsetX: Double): js.Object = js.native
       def ParseObject(tiledObject: js.Object, offsetX: Double, offsetY: Double): js.Object = js.native
       /**

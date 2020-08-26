@@ -19,6 +19,7 @@ trait Humane extends js.Object {
   def create(): Humane = js.native
   def create(options: HumaneOptions): Humane = js.native
   def log(message: logMessage): Humane = js.native
+  def log(message: logMessage, callback: js.UndefOr[scala.Nothing], options: HumaneMessageOptions): Humane = js.native
   def log(message: logMessage, callback: completionCallback): Humane = js.native
   def log(message: logMessage, callback: completionCallback, options: HumaneMessageOptions): Humane = js.native
   def log(message: logMessage, options: HumaneMessageOptions): Humane = js.native

@@ -14,10 +14,26 @@ trait LambdaInvokeOperation extends js.Object {
 
 object LambdaInvokeOperation {
   @scala.inline
-  def apply(FunctionArn: FunctionArnString = null): LambdaInvokeOperation = {
+  def apply(): LambdaInvokeOperation = {
     val __obj = js.Dynamic.literal()
-    if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaInvokeOperation]
   }
+  @scala.inline
+  implicit class LambdaInvokeOperationOps[Self <: LambdaInvokeOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionArn(value: FunctionArnString): Self = this.set("FunctionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionArn: Self = this.set("FunctionArn", js.undefined)
+  }
+  
 }
 

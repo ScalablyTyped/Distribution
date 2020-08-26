@@ -9,7 +9,23 @@ import scala.scalajs.js.annotation._
 trait IObservable[T] extends js.Object {
   def subscribe(): IDisposable = js.native
   def subscribe(observer: Observer[T]): IDisposable = js.native
+  def subscribe(
+    onNext: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    onCompleted: js.Function0[Unit]
+  ): IDisposable = js.native
+  def subscribe(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ js.Any, Unit]): IDisposable = js.native
+  def subscribe(
+    onNext: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* exception */ js.Any, Unit],
+    onCompleted: js.Function0[Unit]
+  ): IDisposable = js.native
   def subscribe(onNext: js.Function1[/* value */ T, Unit]): IDisposable = js.native
+  def subscribe(
+    onNext: js.Function1[/* value */ T, Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onCompleted: js.Function0[Unit]
+  ): IDisposable = js.native
   def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ js.Any, Unit]): IDisposable = js.native
   def subscribe(
     onNext: js.Function1[/* value */ T, Unit],

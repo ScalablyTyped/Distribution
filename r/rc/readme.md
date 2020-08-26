@@ -11,8 +11,8 @@ hardwired configuration loader
 | Full name          | rc |
 | Keywords           | config, rc, unix, defaults |
 | # releases         | 7 |
-| # dependents       | 920 |
-| # downloads        | 357703659 |
+| # dependents       | 921 |
+| # downloads        | 363525546 |
 | # stars            | 78 |
 
 ## Links

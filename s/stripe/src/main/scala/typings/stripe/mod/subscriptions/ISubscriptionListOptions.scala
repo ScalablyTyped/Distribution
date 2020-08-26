@@ -1,57 +1,65 @@
 package typings.stripe.mod.subscriptions
 
-import typings.stripe.mod.IDateFilter
 import typings.stripe.mod.IListOptionsCreated
 import typings.stripe.stripeStrings.all
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ISubscriptionListOptions extends IListOptionsCreated {
   /**
     * The billing mode of the subscriptions to retrieve. Either "charge_automatically" or "send_invoice".
     */
-  var billing: js.UndefOr[SubscriptionBilling] = js.undefined
+  var billing: js.UndefOr[SubscriptionBilling] = js.native
   /**
     * The ID of the customer whose subscriptions will be retrieved
     */
-  var customer: js.UndefOr[String] = js.undefined
+  var customer: js.UndefOr[String] = js.native
   /**
     * The ID of the plan whose subscriptions will be retrieved
     */
-  var plan: js.UndefOr[String] = js.undefined
+  var plan: js.UndefOr[String] = js.native
   /**
     * The status of the subscriptions to retrieve.
     */
-  var status: js.UndefOr[SubscriptionStatus | all] = js.undefined
+  var status: js.UndefOr[SubscriptionStatus | all] = js.native
 }
 
 object ISubscriptionListOptions {
   @scala.inline
-  def apply(
-    billing: SubscriptionBilling = null,
-    created: String | IDateFilter = null,
-    customer: String = null,
-    ending_before: String = null,
-    expand: js.Array[String] = null,
-    include: js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    plan: String = null,
-    starting_after: String = null,
-    status: SubscriptionStatus | all = null
-  ): ISubscriptionListOptions = {
+  def apply(): ISubscriptionListOptions = {
     val __obj = js.Dynamic.literal()
-    if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionListOptions]
   }
+  @scala.inline
+  implicit class ISubscriptionListOptionsOps[Self <: ISubscriptionListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBilling(value: SubscriptionBilling): Self = this.set("billing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBilling: Self = this.set("billing", js.undefined)
+    @scala.inline
+    def setCustomer(value: String): Self = this.set("customer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomer: Self = this.set("customer", js.undefined)
+    @scala.inline
+    def setPlan(value: String): Self = this.set("plan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlan: Self = this.set("plan", js.undefined)
+    @scala.inline
+    def setStatus(value: SubscriptionStatus | all): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

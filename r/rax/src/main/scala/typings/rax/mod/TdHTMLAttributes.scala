@@ -9,32 +9,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TdHTMLAttributes[T] extends HTMLAttributes[T] {
-  var align: js.UndefOr[left | center | right | justify | char] = js.undefined
-  var colSpan: js.UndefOr[Double] = js.undefined
-  var headers: js.UndefOr[String] = js.undefined
-  var rowSpan: js.UndefOr[Double] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
+  var align: js.UndefOr[left | center | right | justify | char] = js.native
+  var colSpan: js.UndefOr[Double] = js.native
+  var headers: js.UndefOr[String] = js.native
+  var rowSpan: js.UndefOr[Double] = js.native
+  var scope: js.UndefOr[String] = js.native
 }
 
 object TdHTMLAttributes {
   @scala.inline
-  def apply[T](
-    HTMLAttributes: HTMLAttributes[T] = null,
-    align: left | center | right | justify | char = null,
-    colSpan: js.UndefOr[Double] = js.undefined,
-    headers: String = null,
-    rowSpan: js.UndefOr[Double] = js.undefined,
-    scope: String = null
-  ): TdHTMLAttributes[T] = {
+  def apply[T](): TdHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[TdHTMLAttributes[T]]
   }
+  @scala.inline
+  implicit class TdHTMLAttributesOps[Self <: TdHTMLAttributes[_], T] (val x: Self with TdHTMLAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: left | center | right | justify | char): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    @scala.inline
+    def setHeaders(value: String): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+  }
+  
 }
 

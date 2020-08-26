@@ -11,8 +11,8 @@ Intelligent link recognition, made easy
 | Full name          | linkifyjs |
 | Keywords           | jquery, link, autolink, text, url, email, hashtag, hashtags, mention, mentions |
 | # releases         | 4 |
-| # dependents       | 45 |
-| # downloads        | 3023425 |
+| # dependents       | 46 |
+| # downloads        | 3125636 |
 | # stars            | 5 |
 
 ## Links

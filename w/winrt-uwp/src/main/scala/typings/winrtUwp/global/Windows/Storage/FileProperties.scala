@@ -4,14 +4,7 @@ import typings.winrtUwp.Windows.Devices.Geolocation.Geolocator
 import typings.winrtUwp.Windows.Devices.Geolocation.Geopoint
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
-import typings.winrtUwp.Windows.Storage.FileProperties.ThumbnailType
 import typings.winrtUwp.Windows.Storage.IStorageFile
-import typings.winrtUwp.Windows.Storage.Streams.IBuffer
-import typings.winrtUwp.Windows.Storage.Streams.IInputStream
-import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
-import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
-import typings.winrtUwp.Windows.Storage.Streams.InputStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,86 +46,7 @@ object FileProperties extends js.Object {
   /** Represents the thumbnail image associated with a system resource (like a file or folder). */
   @js.native
   abstract class StorageItemThumbnail ()
-    extends typings.winrtUwp.Windows.Storage.FileProperties.StorageItemThumbnail {
-    /** Gets a value that indicates whether the thumbnail stream can be read from. */
-    /* CompleteClass */
-    override var canRead: Boolean = js.native
-    /** Gets a value that indicates whether the thumbnail stream can be written to. */
-    /* CompleteClass */
-    override var canWrite: Boolean = js.native
-    /** Gets the MIME content type of the thumbnail image. */
-    /* CompleteClass */
-    override var contentType: String = js.native
-    /** Gets the original (not scaled) height of the thumbnail image. */
-    /* CompleteClass */
-    override var originalHeight: Double = js.native
-    /** Gets the original (not scaled) width of the thumbnail image. */
-    /* CompleteClass */
-    override var originalWidth: Double = js.native
-    /** Gets the byte offset of the thumbnail stream. */
-    /* CompleteClass */
-    override var position: Double = js.native
-    /** Gets a value that indicates whether the thumbnail image returned was a cached version with a smaller size. */
-    /* CompleteClass */
-    override var returnedSmallerCachedSize: Boolean = js.native
-    /** Gets or sets the size of the thumbnail image. */
-    /* CompleteClass */
-    override var size: Double = js.native
-    /** Gets a value that indicates if the thumbnail is an icon or an image. */
-    /* CompleteClass */
-    override var `type`: ThumbnailType = js.native
-    /**
-      * Creates a new stream over the thumbnail that is represented by the current storageItemThumbnail object.
-      * @return The new thumbnail stream. The initial, internal position of the stream is 0.
-      */
-    /* CompleteClass */
-    override def cloneStream(): IRandomAccessStream = js.native
-    /** Releases system resources that are exposed by a Windows Runtime object. */
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /**
-      * Flushes data asynchronously in a sequential stream.
-      * @return The stream flush operation.
-      */
-    /* CompleteClass */
-    override def flushAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
-    /**
-      * Retrieves the thumbnail image data as an undecoded stream.
-      * @param position The position in the storage item to start reading thumbnail image data.
-      * @return An object for reading the thumbnail image data.
-      */
-    /* CompleteClass */
-    override def getInputStreamAt(position: Double): IInputStream = js.native
-    /**
-      * Retrieves an output stream object for writing thumbnail image data to a storage item.
-      * @param position The position in the storage item to start writing thumbnail image data.
-      * @return The output stream.
-      */
-    /* CompleteClass */
-    override def getOutputStreamAt(position: Double): IOutputStream = js.native
-    /**
-      * Returns an asynchronous byte reader object.
-      * @param buffer The buffer into which the asynchronous read operation places the bytes that are read.
-      * @param count The number of bytes to read that is less than or equal to the Capacity value.
-      * @param options Specifies the type of the asynchronous read operation.
-      * @return The asynchronous operation.
-      */
-    /* CompleteClass */
-    override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
-    /**
-      * Sets the offset of the thumbnail stream to the specified value.
-      * @param position The number of bytes from the start of the thumbnail stream where the position of the thumbnail stream is set.
-      */
-    /* CompleteClass */
-    override def seek(position: Double): Unit = js.native
-    /**
-      * Writes data asynchronously in a sequential stream.
-      * @param buffer The buffer into which the asynchronous writer operation writes.
-      * @return The byte writer operation.
-      */
-    /* CompleteClass */
-    override def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.FileProperties.StorageItemThumbnail
   
   /** Provides access to the video-related properties of an item (like a file or folder). */
   @js.native

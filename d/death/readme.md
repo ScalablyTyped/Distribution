@@ -12,7 +12,7 @@ Gracefully cleanup when termination signals are sent to your process.
 | Keywords           | sigint, sigterm, sigkill, sigquit, exception, kill, terminate, process, clean |
 | # releases         | 1 |
 | # dependents       | 127 |
-| # downloads        | 3054815 |
+| # downloads        | 2934287 |
 | # stars            | 15 |
 
 ## Links

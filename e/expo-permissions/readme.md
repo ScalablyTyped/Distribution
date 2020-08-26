@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-permissions
 
-Typings are for version 8.2.0
+Typings are for version 9.1.0
 
 ## Library description:
 Allows you prompt for various permissions to access device sensors, personal data, etc.

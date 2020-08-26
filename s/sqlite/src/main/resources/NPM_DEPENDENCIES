@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sqlite" : "4.0.11"
+      "sqlite" : "4.0.12"
     }
   ],
   "test-dependencies" : [
     {
-      "sqlite" : "4.0.11"
+      "sqlite" : "4.0.12"
     }
   ],
   "compile-devDependencies" : [

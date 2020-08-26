@@ -12,7 +12,7 @@ Use jQuery Virtual Keyboard in react.js
 | Keywords           | react, reactjs, keyboard, onscreen, virtual, component |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 16146 |
+| # downloads        | 16100 |
 | # stars            | 0 |
 
 ## Links

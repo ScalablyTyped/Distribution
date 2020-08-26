@@ -16,16 +16,19 @@ object jestWatcherStrings {
   sealed trait html extends js.Object
   
   @js.native
+  sealed trait `html-spa` extends js.Object
+  
+  @js.native
   sealed trait json extends js.Object
   
   @js.native
   sealed trait `json-summary` extends js.Object
   
   @js.native
-  sealed trait lcovonly extends js.Object
+  sealed trait lcov extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait lcovonly extends js.Object
   
   @js.native
   sealed trait onFileChange extends AvailableHooks
@@ -61,13 +64,15 @@ object jestWatcherStrings {
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline
+  def `html-spa`: `html-spa` = "html-spa".asInstanceOf[`html-spa`]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
   def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
   @scala.inline
-  def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
+  def lcov: lcov = "lcov".asInstanceOf[lcov]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
   @scala.inline
   def onFileChange: onFileChange = "onFileChange".asInstanceOf[onFileChange]
   @scala.inline

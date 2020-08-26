@@ -30,18 +30,38 @@ trait UpdateNodegroupConfigRequest extends js.Object {
 
 object UpdateNodegroupConfigRequest {
   @scala.inline
-  def apply(
-    clusterName: String,
-    nodegroupName: String,
-    clientRequestToken: String = null,
-    labels: UpdateLabelsPayload = null,
-    scalingConfig: NodegroupScalingConfig = null
-  ): UpdateNodegroupConfigRequest = {
+  def apply(clusterName: String, nodegroupName: String): UpdateNodegroupConfigRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (scalingConfig != null) __obj.updateDynamic("scalingConfig")(scalingConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNodegroupConfigRequest]
   }
+  @scala.inline
+  implicit class UpdateNodegroupConfigRequestOps[Self <: UpdateNodegroupConfigRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodegroupName(value: String): Self = this.set("nodegroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: String): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setLabels(value: UpdateLabelsPayload): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setScalingConfig(value: NodegroupScalingConfig): Self = this.set("scalingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingConfig: Self = this.set("scalingConfig", js.undefined)
+  }
+  
 }
 

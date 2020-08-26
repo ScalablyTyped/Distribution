@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait COLUMNS extends js.Object {
-  var ANCHOR: typings.baseui.baseuiStrings.ANCHOR
-  var BOOLEAN: typings.baseui.baseuiStrings.BOOLEAN
-  var CATEGORICAL: typings.baseui.baseuiStrings.CATEGORICAL
-  var CUSTOM: typings.baseui.baseuiStrings.CUSTOM
-  var DATETIME: typings.baseui.baseuiStrings.DATETIME
-  var NUMERICAL: typings.baseui.baseuiStrings.NUMERICAL
-  var STRING: typings.baseui.baseuiStrings.STRING
+  var ANCHOR: typings.baseui.baseuiStrings.ANCHOR = js.native
+  var BOOLEAN: typings.baseui.baseuiStrings.BOOLEAN = js.native
+  var CATEGORICAL: typings.baseui.baseuiStrings.CATEGORICAL = js.native
+  var CUSTOM: typings.baseui.baseuiStrings.CUSTOM = js.native
+  var DATETIME: typings.baseui.baseuiStrings.DATETIME = js.native
+  var NUMERICAL: typings.baseui.baseuiStrings.NUMERICAL = js.native
+  var STRING: typings.baseui.baseuiStrings.STRING = js.native
 }
 
 @JSImport("baseui/data-table", "COLUMNS")

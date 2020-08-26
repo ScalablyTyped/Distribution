@@ -5,20 +5,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<email-templates.email-templates.EmailMessage> */
+@js.native
 trait PartialEmailMessage extends js.Object {
-  var html: js.UndefOr[String] = js.undefined
-  var subject: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
+  var html: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.native
 }
 
 object PartialEmailMessage {
   @scala.inline
-  def apply(html: String = null, subject: String = null, text: String = null): PartialEmailMessage = {
+  def apply(): PartialEmailMessage = {
     val __obj = js.Dynamic.literal()
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialEmailMessage]
   }
+  @scala.inline
+  implicit class PartialEmailMessageOps[Self <: PartialEmailMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

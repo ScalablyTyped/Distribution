@@ -25,11 +25,30 @@ trait SchemaAutoUpgradeOptions extends js.Object {
 
 object SchemaAutoUpgradeOptions {
   @scala.inline
-  def apply(autoUpgradeStartTime: String = null, description: String = null): SchemaAutoUpgradeOptions = {
+  def apply(): SchemaAutoUpgradeOptions = {
     val __obj = js.Dynamic.literal()
-    if (autoUpgradeStartTime != null) __obj.updateDynamic("autoUpgradeStartTime")(autoUpgradeStartTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoUpgradeOptions]
   }
+  @scala.inline
+  implicit class SchemaAutoUpgradeOptionsOps[Self <: SchemaAutoUpgradeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoUpgradeStartTime(value: String): Self = this.set("autoUpgradeStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoUpgradeStartTime: Self = this.set("autoUpgradeStartTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+  }
+  
 }
 

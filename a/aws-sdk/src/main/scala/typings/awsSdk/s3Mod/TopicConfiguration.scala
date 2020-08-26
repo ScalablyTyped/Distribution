@@ -20,16 +20,36 @@ trait TopicConfiguration extends js.Object {
 
 object TopicConfiguration {
   @scala.inline
-  def apply(
-    Events: EventList,
-    TopicArn: TopicArn,
-    Filter: NotificationConfigurationFilter = null,
-    Id: NotificationId = null
-  ): TopicConfiguration = {
+  def apply(Events: EventList, TopicArn: TopicArn): TopicConfiguration = {
     val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicConfiguration]
   }
+  @scala.inline
+  implicit class TopicConfigurationOps[Self <: TopicConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: Event*): Self = this.set("Events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: EventList): Self = this.set("Events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopicArn(value: TopicArn): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: NotificationConfigurationFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setId(value: NotificationId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+  }
+  
 }
 

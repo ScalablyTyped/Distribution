@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 /** Type that describes a property name with an obtainable text. */
 /* Inlined std.Exclude<typescript.typescript.PropertyName, typescript.typescript.ComputedPropertyName> */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCore.angularCoreStrings.isInJSDocNamespace
   - typings.angularCore.angularCoreStrings.escapedText
   - typings.angularCore.angularCoreStrings.text
   - typings.angularCore.angularCoreStrings.originalKeywordKind
+  - typings.angularCore.angularCoreStrings.isInJSDocNamespace
 */
 trait PropertyNameWithText extends js.Object
 

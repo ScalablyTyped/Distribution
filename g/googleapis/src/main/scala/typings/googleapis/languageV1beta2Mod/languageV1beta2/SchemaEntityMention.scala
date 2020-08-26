@@ -29,12 +29,34 @@ trait SchemaEntityMention extends js.Object {
 
 object SchemaEntityMention {
   @scala.inline
-  def apply(sentiment: SchemaSentiment = null, text: SchemaTextSpan = null, `type`: String = null): SchemaEntityMention = {
+  def apply(): SchemaEntityMention = {
     val __obj = js.Dynamic.literal()
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEntityMention]
   }
+  @scala.inline
+  implicit class SchemaEntityMentionOps[Self <: SchemaEntityMention] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSentiment(value: SchemaSentiment): Self = this.set("sentiment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentiment: Self = this.set("sentiment", js.undefined)
+    @scala.inline
+    def setText(value: SchemaTextSpan): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

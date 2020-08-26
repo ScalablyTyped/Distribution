@@ -11,8 +11,8 @@ Encode HTML character references and character entities
 | Full name          | stringify-entities |
 | Keywords           | stringify, encode, escape, html, character, reference, entity, entities |
 | # releases         | 4 |
-| # dependents       | 21 |
-| # downloads        | 60691625 |
+| # dependents       | 23 |
+| # downloads        | 69640040 |
 | # stars            | 0 |
 
 ## Links

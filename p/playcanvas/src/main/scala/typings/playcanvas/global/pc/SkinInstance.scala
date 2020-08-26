@@ -16,10 +16,5 @@ import scala.scalajs.js.annotation._
 class SkinInstance protected ()
   extends typings.playcanvas.pc.SkinInstance {
   def this(skin: typings.playcanvas.pc.Skin) = this()
-  /**
-    * An array of nodes representing each bone in this skin instance.
-    */
-  /* CompleteClass */
-  override var bones: js.Array[typings.playcanvas.pc.GraphNode] = js.native
 }
 

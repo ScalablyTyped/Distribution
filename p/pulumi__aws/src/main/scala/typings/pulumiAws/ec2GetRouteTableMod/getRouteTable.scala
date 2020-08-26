@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/getRouteTable", "getRouteTable")
 @js.native
 object getRouteTable extends js.Object {
-  def apply(): js.Promise[GetRouteTableResult] with GetRouteTableResult = js.native
-  def apply(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] with GetRouteTableResult = js.native
-  def apply(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] with GetRouteTableResult = js.native
+  def apply(): js.Promise[GetRouteTableResult] = js.native
+  def apply(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
+  def apply(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] = js.native
+  def apply(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
 }
 

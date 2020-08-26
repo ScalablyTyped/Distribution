@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgShapeChart
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,53 +15,53 @@ trait IgShapeChart
   /**
     * Gets or sets a value indicating whether grid and tick lines are aligned to device pixels.
     */
-  var alignsGridLinesToPixels: js.UndefOr[Boolean] = js.undefined
+  var alignsGridLinesToPixels: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets whether the series animations should be allowed when a range change has been detected on an axis.
     */
-  var animateSeriesWhenAxisRangeChanges: js.UndefOr[Boolean] = js.undefined
+  var animateSeriesWhenAxisRangeChanges: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets the bottom margin around the chart content.
     */
-  var bottomMargin: js.UndefOr[Double] = js.undefined
+  var bottomMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the palette of brushes to use for coloring the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var brushes: js.UndefOr[js.Any] = js.undefined
+  var brushes: js.UndefOr[js.Any] = js.native
   /**
     * Occurs when the style of a callout is updated.
     */
-  var calloutStyleUpdating: js.UndefOr[CalloutStyleUpdatingEvent] = js.undefined
+  var calloutStyleUpdating: js.UndefOr[CalloutStyleUpdatingEvent] = js.native
   /**
     * Gets or sets if event annotations should be displayed.
     */
-  var calloutStyleUpdatingEventEnabled: js.UndefOr[Boolean] = js.undefined
+  var calloutStyleUpdatingEventEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets the member path of the content data for the callouts.
     */
-  var calloutsContentMemberPath: js.UndefOr[String] = js.undefined
+  var calloutsContentMemberPath: js.UndefOr[String] = js.native
   /**
     * Gets or sets the collection of callout data to be annotated.
     */
-  var calloutsItemsSource: js.UndefOr[js.Any] = js.undefined
+  var calloutsItemsSource: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the member path of the label data for the callouts.
     */
-  var calloutsLabelMemberPath: js.UndefOr[String] = js.undefined
+  var calloutsLabelMemberPath: js.UndefOr[String] = js.native
   /**
     * Gets or sets if callouts should be displayed.
     */
-  var calloutsVisible: js.UndefOr[Boolean] = js.undefined
+  var calloutsVisible: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets the member path of the X data for the callouts.
     */
-  var calloutsXMemberPath: js.UndefOr[String] = js.undefined
+  var calloutsXMemberPath: js.UndefOr[String] = js.native
   /**
     * Gets or sets the member path of the Y data for the callouts.
     */
-  var calloutsYMemberPath: js.UndefOr[String] = js.undefined
+  var calloutsYMemberPath: js.UndefOr[String] = js.native
   /**
     * Gets or sets the type of chart series to generate from the data.
     *
@@ -76,15 +77,15 @@ trait IgShapeChart
     * "polygon" Specifies polygon chart with polygons defined by X/Y data
     * "polyline" Specifies polyline chart with polylines defined by X/Y data
     */
-  var chartType: js.UndefOr[String] = js.undefined
+  var chartType: js.UndefOr[String] = js.native
   /**
     * Gets or sets a function for creating wrapped tooltip
     */
-  var createWrappedTooltip: js.UndefOr[js.Any] = js.undefined
+  var createWrappedTooltip: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets whether annotations are shown along the axis for crosshair values
     */
-  var crosshairsAnnotationEnabled: js.UndefOr[Boolean] = js.undefined
+  var crosshairsAnnotationEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets the crosshairs to be displayed.
     *
@@ -95,11 +96,11 @@ trait IgShapeChart
     * "vertical" Display vertical line of crosshairs in the chart.
     * "both" Display both horizontal and vertical lines of crosshairs in the chart.
     */
-  var crosshairsDisplayMode: js.UndefOr[String] = js.undefined
+  var crosshairsDisplayMode: js.UndefOr[String] = js.native
   /**
     * Gets or sets whether crosshairs will snap to the nearest data point.
     */
-  var crosshairsSnapToData: js.UndefOr[Boolean] = js.undefined
+  var crosshairsSnapToData: js.UndefOr[Boolean] = js.native
   /**
     * Event which is raised before data binding.
     * Return false in order to cancel data binding.
@@ -107,7 +108,7 @@ trait IgShapeChart
     * Use ui.owner to obtain reference to chart widget.
     * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
     */
-  var dataBinding: js.UndefOr[DataBindingEvent] = js.undefined
+  var dataBinding: js.UndefOr[DataBindingEvent] = js.native
   /**
     * Event which is raised after data binding.
     * Function takes first argument null and second argument ui.
@@ -115,37 +116,37 @@ trait IgShapeChart
     * Use ui.data to obtain reference to array actual data which is displayed by chart.
     * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
     */
-  var dataBound: js.UndefOr[DataBoundEvent] = js.undefined
+  var dataBound: js.UndefOr[DataBoundEvent] = js.native
   /**
     * Gets sets a valid data source.
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[js.Any] = js.native
   /**
     * Gets sets data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
     */
-  var dataSourceType: js.UndefOr[String] = js.undefined
+  var dataSourceType: js.UndefOr[String] = js.native
   /**
     * Gets sets url which is used for sending JSON on request for remote data.
     */
-  var dataSourceUrl: js.UndefOr[String] = js.undefined
+  var dataSourceUrl: js.UndefOr[String] = js.native
   /**
     * String The database source URI.
     */
-  var databaseSource: js.UndefOr[String] = js.undefined
+  var databaseSource: js.UndefOr[String] = js.native
   /**
     * Gets or sets a set of property paths that should be excluded from consideration by the category chart.
     */
-  var excludedProperties: js.UndefOr[js.Any] = js.undefined
+  var excludedProperties: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets whether annotations for the final value of each series is displayed on the axis.
     */
-  var finalValueAnnotationsVisible: js.UndefOr[Boolean] = js.undefined
+  var finalValueAnnotationsVisible: js.UndefOr[Boolean] = js.native
   /**
     * The height of the chart.
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * Event which is raised before tooltip is hidden.
     * Return false in order to cancel hiding and keep tooltip visible.
@@ -154,24 +155,24 @@ trait IgShapeChart
     * Use ui.item to obtain reference to item.
     * Use ui.element to obtain reference to jquery object which represents tooltip or value of ui.element from last updateTooltip event. Value of that member can be replaced by custom element.
     */
-  var hideTooltip: js.UndefOr[HideTooltipEvent] = js.undefined
+  var hideTooltip: js.UndefOr[HideTooltipEvent] = js.native
   /**
     * Gets or sets a set of property paths that should be included for consideration by the category chart, leaving the remainder excluded. If null, all properties will be considered.
     */
-  var includedProperties: js.UndefOr[js.Any] = js.undefined
+  var includedProperties: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets whether the chart can be horizontally zoomed through user interactions.
     */
-  var isHorizontalZoomEnabled: js.UndefOr[Boolean] = js.undefined
+  var isHorizontalZoomEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets whether the chart can highlight series through user interactions.
     * This property applies to Category Chart and Financial Chart controls.
     */
-  var isSeriesHighlightingEnabled: js.UndefOr[Boolean] = js.undefined
+  var isSeriesHighlightingEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets whether the chart can be vertically zoomed through user interactions.
     */
-  var isVerticalZoomEnabled: js.UndefOr[Boolean] = js.undefined
+  var isVerticalZoomEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets a collection of data items used to generate the chart.
     * The ItemsSource of this chart can be a list of objects containing one or more numeric properties.
@@ -180,22 +181,22 @@ trait IgShapeChart
     * Databinding can be further configured by attributing the data item classes
     * with the DataSeriesMemberIntentAttribute.
     */
-  var itemsSource: js.UndefOr[js.Any] = js.undefined
+  var itemsSource: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the left margin of the chart content.
     */
-  var leftMargin: js.UndefOr[Double] = js.undefined
+  var leftMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the legend to connect this chart to.
     * When the legend property is set, the chart will use it to display information about its series.  Legends can be shared by multiple chart controls.
     */
-  var legend: js.UndefOr[js.Any] = js.undefined
+  var legend: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the palette of brushes used for rendering fill area of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var markerBrushes: js.UndefOr[js.Any] = js.undefined
+  var markerBrushes: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets collision avoidance between markers on series that support this behaviour.
     *
@@ -206,95 +207,95 @@ trait IgShapeChart
     * "omitAndShift" Items colliding with other items will be either hidden from view or moved to new positions.
     * "fadeAndShift" Items colliding with other items will be either partially hidden from view by reducing their opacity, or moved to new positions, or a combination of both.
     */
-  var markerCollision: js.UndefOr[String] = js.undefined
+  var markerCollision: js.UndefOr[String] = js.native
   /**
     * Gets or sets the maximum number of markers displyed in the plot area of the chart.
     */
-  var markerMaxCount: js.UndefOr[Double] = js.undefined
+  var markerMaxCount: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the palette of brushes used for rendering outlines of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var markerOutlines: js.UndefOr[js.Any] = js.undefined
+  var markerOutlines: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the marker shapes used for indicating location of data points in this chart.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     */
-  var markerTypes: js.UndefOr[js.Any] = js.undefined
+  var markerTypes: js.UndefOr[js.Any] = js.native
   /**
     * Gets sets maximum number of displayed records in chart.
     */
-  var maxRecCount: js.UndefOr[Double] = js.undefined
+  var maxRecCount: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the palette of brushes to use for outlines on the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var outlines: js.UndefOr[js.Any] = js.undefined
+  var outlines: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
     * to appear blurry.
     */
-  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
+  var pixelScalingRatio: js.UndefOr[Double] = js.native
   /**
     * Event raised when a property value is changed on this chart
     */
-  var propertyChanged: js.UndefOr[PropertyChangedEvent] = js.undefined
+  var propertyChanged: js.UndefOr[PropertyChangedEvent] = js.native
   /**
     * Gets or sets the rendering resolution for all series in this chart.
     * Where n = Resolution, for every n horizontal pixels, combine all items into a single datapoint.  When Resolution = 0, all datapoints will be rendered as graphical objects.  Charts with a higher resolution will have faster performance.
     */
-  var resolution: js.UndefOr[Double] = js.undefined
+  var resolution: js.UndefOr[Double] = js.native
   /**
     * See $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped.
     */
-  var responseDataKey: js.UndefOr[String] = js.undefined
+  var responseDataKey: js.UndefOr[String] = js.native
   /**
     * See $.ig.DataSource. property in the response specifying the total number of records on the server.
     */
-  var responseTotalRecCountKey: js.UndefOr[String] = js.undefined
+  var responseTotalRecCountKey: js.UndefOr[String] = js.native
   /**
     * Gets or sets the right margin of the chart content.
     */
-  var rightMargin: js.UndefOr[Double] = js.undefined
+  var rightMargin: js.UndefOr[Double] = js.native
   /**
     * Event raised when a series is initialized and added to this chart.
     */
-  var seriesAdded: js.UndefOr[SeriesAddedEvent] = js.undefined
+  var seriesAdded: js.UndefOr[SeriesAddedEvent] = js.native
   /**
     * Occurs when the pointer is pressed down over a Series.
     */
-  var seriesPointerDown: js.UndefOr[SeriesPointerDownEvent] = js.undefined
+  var seriesPointerDown: js.UndefOr[SeriesPointerDownEvent] = js.native
   /**
     * Occurs when the pointer enters a Series.
     */
-  var seriesPointerEnter: js.UndefOr[SeriesPointerEnterEvent] = js.undefined
+  var seriesPointerEnter: js.UndefOr[SeriesPointerEnterEvent] = js.native
   /**
     * Occurs when the pointer leaves a Series.
     */
-  var seriesPointerLeave: js.UndefOr[SeriesPointerLeaveEvent] = js.undefined
+  var seriesPointerLeave: js.UndefOr[SeriesPointerLeaveEvent] = js.native
   /**
     * Occurs when the pointer moves over a Series.
     */
-  var seriesPointerMove: js.UndefOr[SeriesPointerMoveEvent] = js.undefined
+  var seriesPointerMove: js.UndefOr[SeriesPointerMoveEvent] = js.native
   /**
     * Occurs when the pointer is released over a Series.
     */
-  var seriesPointerUp: js.UndefOr[SeriesPointerUpEvent] = js.undefined
+  var seriesPointerUp: js.UndefOr[SeriesPointerUpEvent] = js.native
   /**
     * Event raised when a series is removed from this chart.
     */
-  var seriesRemoved: js.UndefOr[SeriesRemovedEvent] = js.undefined
+  var seriesRemoved: js.UndefOr[SeriesRemovedEvent] = js.native
   /**
     * The triangulated file source URI or an instance of $.ig.ShapeDataSource.
     */
-  var shapeDataSource: js.UndefOr[String] = js.undefined
+  var shapeDataSource: js.UndefOr[String] = js.native
   /**
     * Gets or sets text to display below the Title, above the plot area.
     */
-  var subtitle: js.UndefOr[String] = js.undefined
+  var subtitle: js.UndefOr[String] = js.native
   /**
     * Gets or sets horizontal alignment which determines the subtitle position, relative to the left and right edges of the control.
     *
@@ -304,39 +305,39 @@ trait IgShapeChart
     * "right" Align the item to the right
     * "stretch" Stretch the item to the full width
     */
-  var subtitleAlignment: js.UndefOr[String] = js.undefined
+  var subtitleAlignment: js.UndefOr[String] = js.native
   /**
     * Gets or sets the bottom margin of chart subtitle
     */
-  var subtitleBottomMargin: js.UndefOr[Double] = js.undefined
+  var subtitleBottomMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the left margin of chart subtitle
     */
-  var subtitleLeftMargin: js.UndefOr[Double] = js.undefined
+  var subtitleLeftMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the right margin of chart subtitle
     */
-  var subtitleRightMargin: js.UndefOr[Double] = js.undefined
+  var subtitleRightMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets color of chart subtitle
     */
-  var subtitleTextColor: js.UndefOr[String] = js.undefined
+  var subtitleTextColor: js.UndefOr[String] = js.native
   /**
     * Gets or sets CSS font property for the chart subtitle
     */
-  var subtitleTextStyle: js.UndefOr[String] = js.undefined
+  var subtitleTextStyle: js.UndefOr[String] = js.native
   /**
     * Gets or sets the top margin of chart subtitle
     */
-  var subtitleTopMargin: js.UndefOr[Double] = js.undefined
+  var subtitleTopMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the thickness for all series in this chart. Depending on the ChartType, this can be the main brush used, or just the outline.
     */
-  var thickness: js.UndefOr[Double] = js.undefined
+  var thickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets text to display above the plot area.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * Gets or sets horizontal alignment which determines the title position, relative to the left and right edges of the control.
     *
@@ -346,31 +347,31 @@ trait IgShapeChart
     * "right" Align the item to the right
     * "stretch" Stretch the item to the full width
     */
-  var titleAlignment: js.UndefOr[String] = js.undefined
+  var titleAlignment: js.UndefOr[String] = js.native
   /**
     * Gets or sets the bottom margin of chart title
     */
-  var titleBottomMargin: js.UndefOr[Double] = js.undefined
+  var titleBottomMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the left margin of chart title
     */
-  var titleLeftMargin: js.UndefOr[Double] = js.undefined
+  var titleLeftMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the right margin of chart title
     */
-  var titleRightMargin: js.UndefOr[Double] = js.undefined
+  var titleRightMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets color of chart title
     */
-  var titleTextColor: js.UndefOr[String] = js.undefined
+  var titleTextColor: js.UndefOr[String] = js.native
   /**
     * Gets or sets CSS font property for the chart title
     */
-  var titleTextStyle: js.UndefOr[String] = js.undefined
+  var titleTextStyle: js.UndefOr[String] = js.native
   /**
     * Gets or sets the top margin of chart title
     */
-  var titleTopMargin: js.UndefOr[Double] = js.undefined
+  var titleTopMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the style of tooltip to be displayed.
     *
@@ -380,40 +381,40 @@ trait IgShapeChart
     * "category" Display combined tooltip for all series in the chart.
     * "none" Display no tooltips in the chart.
     */
-  var toolTipType: js.UndefOr[String] = js.undefined
+  var toolTipType: js.UndefOr[String] = js.native
   /**
     * Gets or sets the id of a template element to use for tooltips, or markup representing the tooltip template.
     */
-  var tooltipTemplate: js.UndefOr[js.Any] = js.undefined
+  var tooltipTemplate: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the names of tooltip templates
     */
-  var tooltipTemplates: js.UndefOr[js.Any] = js.undefined
+  var tooltipTemplates: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the top margin of the chart content.
     */
-  var topMargin: js.UndefOr[Double] = js.undefined
+  var topMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the duration used for animating series plots when the data is changing
     */
-  var transitionDuration: js.UndefOr[Double] = js.undefined
+  var transitionDuration: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the easing function used for animating series plots when the data is changing.
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     */
-  var transitionEasingFunction: js.UndefOr[js.Any] = js.undefined
+  var transitionEasingFunction: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the palette of brushes to used for coloring trend lines in this chart.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var trendLineBrushes: js.UndefOr[js.Any] = js.undefined
-  var trendLinePeriod: js.UndefOr[Double] = js.undefined
+  var trendLineBrushes: js.UndefOr[js.Any] = js.native
+  var trendLinePeriod: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the thickness of the trend lines in this chart.
     * This property applies only to these chart types: point, line, spline, and bubble
     */
-  var trendLineThickness: js.UndefOr[Double] = js.undefined
+  var trendLineThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the formula used for calculating trend lines in this chart.This property applies only to these chart types: point, line, spline, and bubble
     *
@@ -434,11 +435,11 @@ trait IgShapeChart
     * "cumulativeAverage" Cumulative moving average.
     * "weightedAverage" Weighted moving average.
     */
-  var trendLineType: js.UndefOr[String] = js.undefined
+  var trendLineType: js.UndefOr[String] = js.native
   /**
     * The triangulated file source URI or an instance of $.ig.TriangulationDataSource.
     */
-  var triangulationDataSource: js.UndefOr[String] = js.undefined
+  var triangulationDataSource: js.UndefOr[String] = js.native
   /**
     * Gets or sets the behavior that determines how unknown values will be plotted on the chart.Null and Double.NaN are two examples of unknown values.
     *
@@ -447,7 +448,7 @@ trait IgShapeChart
     * "linearInterpolate" Plot the unknown value as the midpoint between surrounding known values using linear interpolation.
     * "dontPlot" Do not plot the unknown value on the chart.
     */
-  var unknownValuePlotting: js.UndefOr[String] = js.undefined
+  var unknownValuePlotting: js.UndefOr[String] = js.native
   /**
     * Event which is raised before tooltip is updated.
     * Return false in order to cancel updating and hide tooltip.
@@ -459,59 +460,59 @@ trait IgShapeChart
     * Use ui.y to obtain top position of tooltip in pixels relative to widget. Value of that member can be modified.
     * Use ui.element to obtain reference to jquery object which represents tooltip. Value of that member can be replaced by custom element.
     */
-  var updateTooltip: js.UndefOr[UpdateTooltipEvent] = js.undefined
+  var updateTooltip: js.UndefOr[UpdateTooltipEvent] = js.native
   /**
     * Gets or sets the widget of this control
     */
-  var widget: js.UndefOr[js.Any] = js.undefined
+  var widget: js.UndefOr[js.Any] = js.native
   /**
     * The width of the chart.
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the rectangle representing the current scroll and zoom state of the chart.
     * WindowRect is expressed as a Rectangle with coordinates and sizes between 0 and 1.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  var windowRect: js.UndefOr[js.Any] = js.undefined
+  var windowRect: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets whether the large numbers on the X-axis labels are abbreviated.
     */
-  var xAxisAbbreviateLargeNumbers: js.UndefOr[Boolean] = js.undefined
+  var xAxisAbbreviateLargeNumbers: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets the distance between the X-axis and the bottom of the chart.
     */
-  var xAxisExtent: js.UndefOr[Double] = js.undefined
+  var xAxisExtent: js.UndefOr[Double] = js.native
   /**
     * Gets or sets function which takes an context object and returns a formatted label for the X-axis.
     */
-  var xAxisFormatLabel: js.UndefOr[js.Any] = js.undefined
+  var xAxisFormatLabel: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the frequency of displayed labels along the X-axis.
     * Gets or sets the set value is a factor that determines which labels will be hidden. For example, an interval of 2 will display every other label.
     */
-  var xAxisInterval: js.UndefOr[Double] = js.undefined
+  var xAxisInterval: js.UndefOr[Double] = js.native
   /**
     * Gets or sets whether to invert the direction of the X-axis by placing the first data items on the right side of the chart.
     */
-  var xAxisInverted: js.UndefOr[Boolean] = js.undefined
+  var xAxisInverted: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets whether the X-axis will use a logarithmic scale, instead of a linear one.
     * Since log(-1) is imaginary and log(0) is undefined, it is recommended to enable this property only when the X-axis minimum is greater than zero.
     */
-  var xAxisIsLogarithmic: js.UndefOr[Boolean] = js.undefined
+  var xAxisIsLogarithmic: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets the format for labels along the X-axis.
     */
-  var xAxisLabel: js.UndefOr[js.Any] = js.undefined
+  var xAxisLabel: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the angle of rotation for labels along the X-axis.
     */
-  var xAxisLabelAngle: js.UndefOr[Double] = js.undefined
+  var xAxisLabelAngle: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the bottom margin of labels on the X-axis
     */
-  var xAxisLabelBottomMargin: js.UndefOr[Double] = js.undefined
+  var xAxisLabelBottomMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets Horizontal alignment of X-axis labels.
     *
@@ -521,27 +522,27 @@ trait IgShapeChart
     * "right" Align the item to the right
     * "stretch" Stretch the item to the full width
     */
-  var xAxisLabelHorizontalAlignment: js.UndefOr[String] = js.undefined
+  var xAxisLabelHorizontalAlignment: js.UndefOr[String] = js.native
   /**
     * Gets or sets the left margin of labels on the X-axis
     */
-  var xAxisLabelLeftMargin: js.UndefOr[Double] = js.undefined
+  var xAxisLabelLeftMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the right margin of labels on the X-axis
     */
-  var xAxisLabelRightMargin: js.UndefOr[Double] = js.undefined
+  var xAxisLabelRightMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets color of labels on the X-axis
     */
-  var xAxisLabelTextColor: js.UndefOr[String] = js.undefined
+  var xAxisLabelTextColor: js.UndefOr[String] = js.native
   /**
     * Gets or sets CSS font property for labels on X-axis
     */
-  var xAxisLabelTextStyle: js.UndefOr[String] = js.undefined
+  var xAxisLabelTextStyle: js.UndefOr[String] = js.native
   /**
     * Gets or sets the top margin of labels on the X-axis
     */
-  var xAxisLabelTopMargin: js.UndefOr[Double] = js.undefined
+  var xAxisLabelTopMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets Vertical alignment of X-axis labels.
     *
@@ -551,7 +552,7 @@ trait IgShapeChart
     * "bottom" Align the item to the bottom
     * "stretch" Stretch the item to the full height
     */
-  var xAxisLabelVerticalAlignment: js.UndefOr[String] = js.undefined
+  var xAxisLabelVerticalAlignment: js.UndefOr[String] = js.native
   /**
     * Gets or sets Visibility of X-axis labels.
     *
@@ -559,69 +560,69 @@ trait IgShapeChart
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var xAxisLabelVisibility: js.UndefOr[String] = js.undefined
+  var xAxisLabelVisibility: js.UndefOr[String] = js.native
   /**
     * Gets or sets the base value to use in the log function when mapping the position of data items along the X-axis.
     * This property is effective only when y-axis is logarithmic
     */
-  var xAxisLogarithmBase: js.UndefOr[Double] = js.undefined
+  var xAxisLogarithmBase: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the color to apply to major gridlines along the X-axis.
     */
-  var xAxisMajorStroke: js.UndefOr[String] = js.undefined
+  var xAxisMajorStroke: js.UndefOr[String] = js.native
   /**
     * Gets or sets the thickness to apply to major gridlines along the X-axis.
     */
-  var xAxisMajorStrokeThickness: js.UndefOr[Double] = js.undefined
+  var xAxisMajorStrokeThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the data value corresponding to the maximum value on the X-axis.
     */
-  var xAxisMaximumValue: js.UndefOr[Double] = js.undefined
+  var xAxisMaximumValue: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the data value corresponding to the minimum value on the X-axis.
     */
-  var xAxisMinimumValue: js.UndefOr[Double] = js.undefined
+  var xAxisMinimumValue: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the frequency of displayed minor lines along the X-axis.
     * Gets or sets the set value is a factor that determines how the minor lines will be displayed.
     */
-  var xAxisMinorInterval: js.UndefOr[Double] = js.undefined
+  var xAxisMinorInterval: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the color to apply to minor gridlines along the X-axis.
     */
-  var xAxisMinorStroke: js.UndefOr[String] = js.undefined
+  var xAxisMinorStroke: js.UndefOr[String] = js.native
   /**
     * Gets or sets the thickness to apply to minor gridlines along the X-axis.
     */
-  var xAxisMinorStrokeThickness: js.UndefOr[Double] = js.undefined
+  var xAxisMinorStrokeThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the color to apply to stripes along the X-axis.
     */
-  var xAxisStrip: js.UndefOr[String] = js.undefined
+  var xAxisStrip: js.UndefOr[String] = js.native
   /**
     * Gets or sets the color to apply to the X-axis line.
     */
-  var xAxisStroke: js.UndefOr[String] = js.undefined
+  var xAxisStroke: js.UndefOr[String] = js.native
   /**
     * Gets or sets the thickness to apply to the X-axis line.
     */
-  var xAxisStrokeThickness: js.UndefOr[Double] = js.undefined
+  var xAxisStrokeThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the length of tickmarks along the X-axis.
     */
-  var xAxisTickLength: js.UndefOr[Double] = js.undefined
+  var xAxisTickLength: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the color to apply to tickmarks along the X-axis.
     */
-  var xAxisTickStroke: js.UndefOr[String] = js.undefined
+  var xAxisTickStroke: js.UndefOr[String] = js.native
   /**
     * Gets or sets the thickness to apply to tickmarks along the X-axis.
     */
-  var xAxisTickStrokeThickness: js.UndefOr[Double] = js.undefined
+  var xAxisTickStrokeThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the Text to display below the X-axis.
     */
-  var xAxisTitle: js.UndefOr[String] = js.undefined
+  var xAxisTitle: js.UndefOr[String] = js.native
   /**
     * Gets or sets Horizontal alignment of the X-axis title.
     *
@@ -631,76 +632,76 @@ trait IgShapeChart
     * "right" Align the item to the right
     * "stretch" Stretch the item to the full width
     */
-  var xAxisTitleAlignment: js.UndefOr[String] = js.undefined
+  var xAxisTitleAlignment: js.UndefOr[String] = js.native
   /**
     * Gets or sets the angle of rotation for the X-axis title.
     */
-  var xAxisTitleAngle: js.UndefOr[Double] = js.undefined
+  var xAxisTitleAngle: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the bottom margin of a title on the X-axis
     */
-  var xAxisTitleBottomMargin: js.UndefOr[Double] = js.undefined
+  var xAxisTitleBottomMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the left margin of a title on the X-axis
     */
-  var xAxisTitleLeftMargin: js.UndefOr[Double] = js.undefined
+  var xAxisTitleLeftMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the margin around a title on the X-axis
     */
-  var xAxisTitleMargin: js.UndefOr[Double] = js.undefined
+  var xAxisTitleMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the right margin of a title on the X-axis
     */
-  var xAxisTitleRightMargin: js.UndefOr[Double] = js.undefined
+  var xAxisTitleRightMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets color of title on the X-axis
     */
-  var xAxisTitleTextColor: js.UndefOr[String] = js.undefined
+  var xAxisTitleTextColor: js.UndefOr[String] = js.native
   /**
     * Gets or sets CSS font property for title on X-axis
     */
-  var xAxisTitleTextStyle: js.UndefOr[String] = js.undefined
+  var xAxisTitleTextStyle: js.UndefOr[String] = js.native
   /**
     * Gets or sets the top margin of a title on the X-axis
     */
-  var xAxisTitleTopMargin: js.UndefOr[Double] = js.undefined
+  var xAxisTitleTopMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets whether the large numbers on the Y-axis labels are abbreviated.
     */
-  var yAxisAbbreviateLargeNumbers: js.UndefOr[Boolean] = js.undefined
+  var yAxisAbbreviateLargeNumbers: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets the distance between the Y-axis and the left edge of the chart.
     */
-  var yAxisExtent: js.UndefOr[Double] = js.undefined
+  var yAxisExtent: js.UndefOr[Double] = js.native
   /**
     * Gets or sets function which takes a context object and returns a formatted label for the Y-axis.
     */
-  var yAxisFormatLabel: js.UndefOr[js.Any] = js.undefined
+  var yAxisFormatLabel: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the distance between each label and grid line along the Y-axis.
     */
-  var yAxisInterval: js.UndefOr[Double] = js.undefined
+  var yAxisInterval: js.UndefOr[Double] = js.native
   /**
     * Gets or sets whether to invert the direction of the Y-axis by placing the minimum numeric value at the top of the chart.
     */
-  var yAxisInverted: js.UndefOr[Boolean] = js.undefined
+  var yAxisInverted: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets whether the Y-axis should use a logarithmic scale instead of a linear one.
     * Since log(-1) is imaginary and log(0) is undefined, it is recommended to enable this property only when the Y-axis minimum is greater than zero.
     */
-  var yAxisIsLogarithmic: js.UndefOr[Boolean] = js.undefined
+  var yAxisIsLogarithmic: js.UndefOr[Boolean] = js.native
   /**
     * Gets or sets the property or string from which the labels are derived.
     */
-  var yAxisLabel: js.UndefOr[js.Any] = js.undefined
+  var yAxisLabel: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the angle of rotation for labels along the Y-axis.
     */
-  var yAxisLabelAngle: js.UndefOr[Double] = js.undefined
+  var yAxisLabelAngle: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the bottom margin of labels on the Y-axis
     */
-  var yAxisLabelBottomMargin: js.UndefOr[Double] = js.undefined
+  var yAxisLabelBottomMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets Horizontal alignment of Y-axis labels.
     *
@@ -710,11 +711,11 @@ trait IgShapeChart
     * "right" Align the item to the right
     * "stretch" Stretch the item to the full width
     */
-  var yAxisLabelHorizontalAlignment: js.UndefOr[String] = js.undefined
+  var yAxisLabelHorizontalAlignment: js.UndefOr[String] = js.native
   /**
     * Gets or sets the left margin of labels on the Y-axis
     */
-  var yAxisLabelLeftMargin: js.UndefOr[Double] = js.undefined
+  var yAxisLabelLeftMargin: js.UndefOr[Double] = js.native
   /**
     * The location of Y-axis labels, relative to the plot area.
     *
@@ -728,23 +729,23 @@ trait IgShapeChart
     * "insideLeft" Places the axis labels inside the plotting area and to the left of the axis line.
     * "insideRight" Places the axis labels inside the plotting area and to the right of the axis line.
     */
-  var yAxisLabelLocation: js.UndefOr[String] = js.undefined
+  var yAxisLabelLocation: js.UndefOr[String] = js.native
   /**
     * Gets or sets the right margin of labels on the Y-axis
     */
-  var yAxisLabelRightMargin: js.UndefOr[Double] = js.undefined
+  var yAxisLabelRightMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets color of labels on the Y-axis
     */
-  var yAxisLabelTextColor: js.UndefOr[String] = js.undefined
+  var yAxisLabelTextColor: js.UndefOr[String] = js.native
   /**
     * Gets or sets CSS font property for labels on Y-axis
     */
-  var yAxisLabelTextStyle: js.UndefOr[String] = js.undefined
+  var yAxisLabelTextStyle: js.UndefOr[String] = js.native
   /**
     * Gets or sets the top margin of labels on the Y-axis
     */
-  var yAxisLabelTopMargin: js.UndefOr[Double] = js.undefined
+  var yAxisLabelTopMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets Vertical alignment of Y-axis labels.
     *
@@ -754,7 +755,7 @@ trait IgShapeChart
     * "bottom" Align the item to the bottom
     * "stretch" Stretch the item to the full height
     */
-  var yAxisLabelVerticalAlignment: js.UndefOr[String] = js.undefined
+  var yAxisLabelVerticalAlignment: js.UndefOr[String] = js.native
   /**
     * Gets or sets Visibility of Y-axis labels.
     *
@@ -762,68 +763,68 @@ trait IgShapeChart
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var yAxisLabelVisibility: js.UndefOr[String] = js.undefined
+  var yAxisLabelVisibility: js.UndefOr[String] = js.native
   /**
     * Gets or sets the base value to use in the log function when mapping the position of data items along the Y-axis.
     * This property is effective only when YAxisIsLogarithmic is true.
     */
-  var yAxisLogarithmBase: js.UndefOr[Double] = js.undefined
+  var yAxisLogarithmBase: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the color to apply to major gridlines along the Y-axis.
     */
-  var yAxisMajorStroke: js.UndefOr[String] = js.undefined
+  var yAxisMajorStroke: js.UndefOr[String] = js.native
   /**
     * Gets or sets the thickness to apply to major gridlines along the Y-axis.
     */
-  var yAxisMajorStrokeThickness: js.UndefOr[Double] = js.undefined
+  var yAxisMajorStrokeThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the data value corresponding to the maximum value of the Y-axis.
     */
-  var yAxisMaximumValue: js.UndefOr[Double] = js.undefined
+  var yAxisMaximumValue: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the data value corresponding to the minimum value of the Y-axis.
     */
-  var yAxisMinimumValue: js.UndefOr[Double] = js.undefined
+  var yAxisMinimumValue: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the frequency of displayed minor lines along the Y-axis.
     */
-  var yAxisMinorInterval: js.UndefOr[Double] = js.undefined
+  var yAxisMinorInterval: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the color to apply to minor gridlines along the Y-axis.
     */
-  var yAxisMinorStroke: js.UndefOr[String] = js.undefined
+  var yAxisMinorStroke: js.UndefOr[String] = js.native
   /**
     * Gets or sets the thickness to apply to minor gridlines along the Y-axis.
     */
-  var yAxisMinorStrokeThickness: js.UndefOr[Double] = js.undefined
+  var yAxisMinorStrokeThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the color to apply to stripes along the Y-axis.
     */
-  var yAxisStrip: js.UndefOr[String] = js.undefined
+  var yAxisStrip: js.UndefOr[String] = js.native
   /**
     * Gets or sets the color to apply to the Y-axis line.
     */
-  var yAxisStroke: js.UndefOr[String] = js.undefined
+  var yAxisStroke: js.UndefOr[String] = js.native
   /**
     * Gets or sets the thickness to apply to the Y-axis line.
     */
-  var yAxisStrokeThickness: js.UndefOr[Double] = js.undefined
+  var yAxisStrokeThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the length of tickmarks along the Y-axis.
     */
-  var yAxisTickLength: js.UndefOr[Double] = js.undefined
+  var yAxisTickLength: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the color to apply to tickmarks along the Y-axis.
     */
-  var yAxisTickStroke: js.UndefOr[String] = js.undefined
+  var yAxisTickStroke: js.UndefOr[String] = js.native
   /**
     * Gets or sets the thickness to apply to tickmarks along the Y-axis.
     */
-  var yAxisTickStrokeThickness: js.UndefOr[Double] = js.undefined
+  var yAxisTickStrokeThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the Text to display to the left of the Y-axis.
     */
-  var yAxisTitle: js.UndefOr[String] = js.undefined
+  var yAxisTitle: js.UndefOr[String] = js.native
   /**
     * Gets or sets Vertical alignment of the Y-axis title.
     *
@@ -833,391 +834,743 @@ trait IgShapeChart
     * "bottom" Align the item to the bottom
     * "stretch" Stretch the item to the full height
     */
-  var yAxisTitleAlignment: js.UndefOr[String] = js.undefined
+  var yAxisTitleAlignment: js.UndefOr[String] = js.native
   /**
     * Gets or sets the angle of rotation for the Y-axis title.
     */
-  var yAxisTitleAngle: js.UndefOr[Double] = js.undefined
+  var yAxisTitleAngle: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the bottom margin of a title on the Y-axis
     */
-  var yAxisTitleBottomMargin: js.UndefOr[Double] = js.undefined
+  var yAxisTitleBottomMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the left margin of a title on the Y-axis
     */
-  var yAxisTitleLeftMargin: js.UndefOr[Double] = js.undefined
+  var yAxisTitleLeftMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the margin around a title on the Y-axis
     */
-  var yAxisTitleMargin: js.UndefOr[Double] = js.undefined
+  var yAxisTitleMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the right margin of a title on the Y-axis
     */
-  var yAxisTitleRightMargin: js.UndefOr[Double] = js.undefined
+  var yAxisTitleRightMargin: js.UndefOr[Double] = js.native
   /**
     * Gets or sets color of title on the Y-axis
     */
-  var yAxisTitleTextColor: js.UndefOr[String] = js.undefined
+  var yAxisTitleTextColor: js.UndefOr[String] = js.native
   /**
     * Gets or sets CSS font property for title on Y-axis
     */
-  var yAxisTitleTextStyle: js.UndefOr[String] = js.undefined
+  var yAxisTitleTextStyle: js.UndefOr[String] = js.native
   /**
     * Gets or sets the top margin of a title on the Y-axis
     */
-  var yAxisTitleTopMargin: js.UndefOr[Double] = js.undefined
+  var yAxisTitleTopMargin: js.UndefOr[Double] = js.native
 }
 
 object IgShapeChart {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    alignsGridLinesToPixels: js.UndefOr[Boolean] = js.undefined,
-    animateSeriesWhenAxisRangeChanges: js.UndefOr[Boolean] = js.undefined,
-    bottomMargin: js.UndefOr[Double] = js.undefined,
-    brushes: js.Any = null,
-    calloutStyleUpdating: (/* event */ Event, /* ui */ CalloutStyleUpdatingEventUIParam) => Unit = null,
-    calloutStyleUpdatingEventEnabled: js.UndefOr[Boolean] = js.undefined,
-    calloutsContentMemberPath: String = null,
-    calloutsItemsSource: js.Any = null,
-    calloutsLabelMemberPath: String = null,
-    calloutsVisible: js.UndefOr[Boolean] = js.undefined,
-    calloutsXMemberPath: String = null,
-    calloutsYMemberPath: String = null,
-    chartType: String = null,
-    createWrappedTooltip: js.Any = null,
-    crosshairsAnnotationEnabled: js.UndefOr[Boolean] = js.undefined,
-    crosshairsDisplayMode: String = null,
-    crosshairsSnapToData: js.UndefOr[Boolean] = js.undefined,
-    dataBinding: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit = null,
-    dataBound: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit = null,
-    dataSource: js.Any = null,
-    dataSourceType: String = null,
-    dataSourceUrl: String = null,
-    databaseSource: String = null,
-    excludedProperties: js.Any = null,
-    finalValueAnnotationsVisible: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    hideTooltip: (/* event */ Event, /* ui */ HideTooltipEventUIParam) => Unit = null,
-    includedProperties: js.Any = null,
-    isHorizontalZoomEnabled: js.UndefOr[Boolean] = js.undefined,
-    isSeriesHighlightingEnabled: js.UndefOr[Boolean] = js.undefined,
-    isVerticalZoomEnabled: js.UndefOr[Boolean] = js.undefined,
-    itemsSource: js.Any = null,
-    leftMargin: js.UndefOr[Double] = js.undefined,
-    legend: js.Any = null,
-    markerBrushes: js.Any = null,
-    markerCollision: String = null,
-    markerMaxCount: js.UndefOr[Double] = js.undefined,
-    markerOutlines: js.Any = null,
-    markerTypes: js.Any = null,
-    maxRecCount: js.UndefOr[Double] = js.undefined,
-    outlines: js.Any = null,
-    pixelScalingRatio: js.UndefOr[Double] = js.undefined,
-    propertyChanged: (/* event */ Event, /* ui */ PropertyChangedEventUIParam) => Unit = null,
-    resolution: js.UndefOr[Double] = js.undefined,
-    responseDataKey: String = null,
-    responseTotalRecCountKey: String = null,
-    rightMargin: js.UndefOr[Double] = js.undefined,
-    seriesAdded: (/* event */ Event, /* ui */ SeriesAddedEventUIParam) => Unit = null,
-    seriesPointerDown: (/* event */ Event, /* ui */ SeriesPointerDownEventUIParam) => Unit = null,
-    seriesPointerEnter: (/* event */ Event, /* ui */ SeriesPointerEnterEventUIParam) => Unit = null,
-    seriesPointerLeave: (/* event */ Event, /* ui */ SeriesPointerLeaveEventUIParam) => Unit = null,
-    seriesPointerMove: (/* event */ Event, /* ui */ SeriesPointerMoveEventUIParam) => Unit = null,
-    seriesPointerUp: (/* event */ Event, /* ui */ SeriesPointerUpEventUIParam) => Unit = null,
-    seriesRemoved: (/* event */ Event, /* ui */ SeriesRemovedEventUIParam) => Unit = null,
-    shapeDataSource: String = null,
-    subtitle: String = null,
-    subtitleAlignment: String = null,
-    subtitleBottomMargin: js.UndefOr[Double] = js.undefined,
-    subtitleLeftMargin: js.UndefOr[Double] = js.undefined,
-    subtitleRightMargin: js.UndefOr[Double] = js.undefined,
-    subtitleTextColor: String = null,
-    subtitleTextStyle: String = null,
-    subtitleTopMargin: js.UndefOr[Double] = js.undefined,
-    thickness: js.UndefOr[Double] = js.undefined,
-    title: String = null,
-    titleAlignment: String = null,
-    titleBottomMargin: js.UndefOr[Double] = js.undefined,
-    titleLeftMargin: js.UndefOr[Double] = js.undefined,
-    titleRightMargin: js.UndefOr[Double] = js.undefined,
-    titleTextColor: String = null,
-    titleTextStyle: String = null,
-    titleTopMargin: js.UndefOr[Double] = js.undefined,
-    toolTipType: String = null,
-    tooltipTemplate: js.Any = null,
-    tooltipTemplates: js.Any = null,
-    topMargin: js.UndefOr[Double] = js.undefined,
-    transitionDuration: js.UndefOr[Double] = js.undefined,
-    transitionEasingFunction: js.Any = null,
-    trendLineBrushes: js.Any = null,
-    trendLinePeriod: js.UndefOr[Double] = js.undefined,
-    trendLineThickness: js.UndefOr[Double] = js.undefined,
-    trendLineType: String = null,
-    triangulationDataSource: String = null,
-    unknownValuePlotting: String = null,
-    updateTooltip: (/* event */ Event, /* ui */ UpdateTooltipEventUIParam) => Unit = null,
-    widget: js.Any = null,
-    width: js.UndefOr[Double] = js.undefined,
-    windowRect: js.Any = null,
-    xAxisAbbreviateLargeNumbers: js.UndefOr[Boolean] = js.undefined,
-    xAxisExtent: js.UndefOr[Double] = js.undefined,
-    xAxisFormatLabel: js.Any = null,
-    xAxisInterval: js.UndefOr[Double] = js.undefined,
-    xAxisInverted: js.UndefOr[Boolean] = js.undefined,
-    xAxisIsLogarithmic: js.UndefOr[Boolean] = js.undefined,
-    xAxisLabel: js.Any = null,
-    xAxisLabelAngle: js.UndefOr[Double] = js.undefined,
-    xAxisLabelBottomMargin: js.UndefOr[Double] = js.undefined,
-    xAxisLabelHorizontalAlignment: String = null,
-    xAxisLabelLeftMargin: js.UndefOr[Double] = js.undefined,
-    xAxisLabelRightMargin: js.UndefOr[Double] = js.undefined,
-    xAxisLabelTextColor: String = null,
-    xAxisLabelTextStyle: String = null,
-    xAxisLabelTopMargin: js.UndefOr[Double] = js.undefined,
-    xAxisLabelVerticalAlignment: String = null,
-    xAxisLabelVisibility: String = null,
-    xAxisLogarithmBase: js.UndefOr[Double] = js.undefined,
-    xAxisMajorStroke: String = null,
-    xAxisMajorStrokeThickness: js.UndefOr[Double] = js.undefined,
-    xAxisMaximumValue: js.UndefOr[Double] = js.undefined,
-    xAxisMinimumValue: js.UndefOr[Double] = js.undefined,
-    xAxisMinorInterval: js.UndefOr[Double] = js.undefined,
-    xAxisMinorStroke: String = null,
-    xAxisMinorStrokeThickness: js.UndefOr[Double] = js.undefined,
-    xAxisStrip: String = null,
-    xAxisStroke: String = null,
-    xAxisStrokeThickness: js.UndefOr[Double] = js.undefined,
-    xAxisTickLength: js.UndefOr[Double] = js.undefined,
-    xAxisTickStroke: String = null,
-    xAxisTickStrokeThickness: js.UndefOr[Double] = js.undefined,
-    xAxisTitle: String = null,
-    xAxisTitleAlignment: String = null,
-    xAxisTitleAngle: js.UndefOr[Double] = js.undefined,
-    xAxisTitleBottomMargin: js.UndefOr[Double] = js.undefined,
-    xAxisTitleLeftMargin: js.UndefOr[Double] = js.undefined,
-    xAxisTitleMargin: js.UndefOr[Double] = js.undefined,
-    xAxisTitleRightMargin: js.UndefOr[Double] = js.undefined,
-    xAxisTitleTextColor: String = null,
-    xAxisTitleTextStyle: String = null,
-    xAxisTitleTopMargin: js.UndefOr[Double] = js.undefined,
-    yAxisAbbreviateLargeNumbers: js.UndefOr[Boolean] = js.undefined,
-    yAxisExtent: js.UndefOr[Double] = js.undefined,
-    yAxisFormatLabel: js.Any = null,
-    yAxisInterval: js.UndefOr[Double] = js.undefined,
-    yAxisInverted: js.UndefOr[Boolean] = js.undefined,
-    yAxisIsLogarithmic: js.UndefOr[Boolean] = js.undefined,
-    yAxisLabel: js.Any = null,
-    yAxisLabelAngle: js.UndefOr[Double] = js.undefined,
-    yAxisLabelBottomMargin: js.UndefOr[Double] = js.undefined,
-    yAxisLabelHorizontalAlignment: String = null,
-    yAxisLabelLeftMargin: js.UndefOr[Double] = js.undefined,
-    yAxisLabelLocation: String = null,
-    yAxisLabelRightMargin: js.UndefOr[Double] = js.undefined,
-    yAxisLabelTextColor: String = null,
-    yAxisLabelTextStyle: String = null,
-    yAxisLabelTopMargin: js.UndefOr[Double] = js.undefined,
-    yAxisLabelVerticalAlignment: String = null,
-    yAxisLabelVisibility: String = null,
-    yAxisLogarithmBase: js.UndefOr[Double] = js.undefined,
-    yAxisMajorStroke: String = null,
-    yAxisMajorStrokeThickness: js.UndefOr[Double] = js.undefined,
-    yAxisMaximumValue: js.UndefOr[Double] = js.undefined,
-    yAxisMinimumValue: js.UndefOr[Double] = js.undefined,
-    yAxisMinorInterval: js.UndefOr[Double] = js.undefined,
-    yAxisMinorStroke: String = null,
-    yAxisMinorStrokeThickness: js.UndefOr[Double] = js.undefined,
-    yAxisStrip: String = null,
-    yAxisStroke: String = null,
-    yAxisStrokeThickness: js.UndefOr[Double] = js.undefined,
-    yAxisTickLength: js.UndefOr[Double] = js.undefined,
-    yAxisTickStroke: String = null,
-    yAxisTickStrokeThickness: js.UndefOr[Double] = js.undefined,
-    yAxisTitle: String = null,
-    yAxisTitleAlignment: String = null,
-    yAxisTitleAngle: js.UndefOr[Double] = js.undefined,
-    yAxisTitleBottomMargin: js.UndefOr[Double] = js.undefined,
-    yAxisTitleLeftMargin: js.UndefOr[Double] = js.undefined,
-    yAxisTitleMargin: js.UndefOr[Double] = js.undefined,
-    yAxisTitleRightMargin: js.UndefOr[Double] = js.undefined,
-    yAxisTitleTextColor: String = null,
-    yAxisTitleTextStyle: String = null,
-    yAxisTitleTopMargin: js.UndefOr[Double] = js.undefined
-  ): IgShapeChart = {
+  def apply(): IgShapeChart = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(alignsGridLinesToPixels)) __obj.updateDynamic("alignsGridLinesToPixels")(alignsGridLinesToPixels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateSeriesWhenAxisRangeChanges)) __obj.updateDynamic("animateSeriesWhenAxisRangeChanges")(animateSeriesWhenAxisRangeChanges.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomMargin)) __obj.updateDynamic("bottomMargin")(bottomMargin.get.asInstanceOf[js.Any])
-    if (brushes != null) __obj.updateDynamic("brushes")(brushes.asInstanceOf[js.Any])
-    if (calloutStyleUpdating != null) __obj.updateDynamic("calloutStyleUpdating")(js.Any.fromFunction2(calloutStyleUpdating))
-    if (!js.isUndefined(calloutStyleUpdatingEventEnabled)) __obj.updateDynamic("calloutStyleUpdatingEventEnabled")(calloutStyleUpdatingEventEnabled.get.asInstanceOf[js.Any])
-    if (calloutsContentMemberPath != null) __obj.updateDynamic("calloutsContentMemberPath")(calloutsContentMemberPath.asInstanceOf[js.Any])
-    if (calloutsItemsSource != null) __obj.updateDynamic("calloutsItemsSource")(calloutsItemsSource.asInstanceOf[js.Any])
-    if (calloutsLabelMemberPath != null) __obj.updateDynamic("calloutsLabelMemberPath")(calloutsLabelMemberPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(calloutsVisible)) __obj.updateDynamic("calloutsVisible")(calloutsVisible.get.asInstanceOf[js.Any])
-    if (calloutsXMemberPath != null) __obj.updateDynamic("calloutsXMemberPath")(calloutsXMemberPath.asInstanceOf[js.Any])
-    if (calloutsYMemberPath != null) __obj.updateDynamic("calloutsYMemberPath")(calloutsYMemberPath.asInstanceOf[js.Any])
-    if (chartType != null) __obj.updateDynamic("chartType")(chartType.asInstanceOf[js.Any])
-    if (createWrappedTooltip != null) __obj.updateDynamic("createWrappedTooltip")(createWrappedTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(crosshairsAnnotationEnabled)) __obj.updateDynamic("crosshairsAnnotationEnabled")(crosshairsAnnotationEnabled.get.asInstanceOf[js.Any])
-    if (crosshairsDisplayMode != null) __obj.updateDynamic("crosshairsDisplayMode")(crosshairsDisplayMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(crosshairsSnapToData)) __obj.updateDynamic("crosshairsSnapToData")(crosshairsSnapToData.get.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2(dataBinding))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType.asInstanceOf[js.Any])
-    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl.asInstanceOf[js.Any])
-    if (databaseSource != null) __obj.updateDynamic("databaseSource")(databaseSource.asInstanceOf[js.Any])
-    if (excludedProperties != null) __obj.updateDynamic("excludedProperties")(excludedProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(finalValueAnnotationsVisible)) __obj.updateDynamic("finalValueAnnotationsVisible")(finalValueAnnotationsVisible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(js.Any.fromFunction2(hideTooltip))
-    if (includedProperties != null) __obj.updateDynamic("includedProperties")(includedProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHorizontalZoomEnabled)) __obj.updateDynamic("isHorizontalZoomEnabled")(isHorizontalZoomEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSeriesHighlightingEnabled)) __obj.updateDynamic("isSeriesHighlightingEnabled")(isSeriesHighlightingEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVerticalZoomEnabled)) __obj.updateDynamic("isVerticalZoomEnabled")(isVerticalZoomEnabled.get.asInstanceOf[js.Any])
-    if (itemsSource != null) __obj.updateDynamic("itemsSource")(itemsSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftMargin)) __obj.updateDynamic("leftMargin")(leftMargin.get.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (markerBrushes != null) __obj.updateDynamic("markerBrushes")(markerBrushes.asInstanceOf[js.Any])
-    if (markerCollision != null) __obj.updateDynamic("markerCollision")(markerCollision.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerMaxCount)) __obj.updateDynamic("markerMaxCount")(markerMaxCount.get.asInstanceOf[js.Any])
-    if (markerOutlines != null) __obj.updateDynamic("markerOutlines")(markerOutlines.asInstanceOf[js.Any])
-    if (markerTypes != null) __obj.updateDynamic("markerTypes")(markerTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRecCount)) __obj.updateDynamic("maxRecCount")(maxRecCount.get.asInstanceOf[js.Any])
-    if (outlines != null) __obj.updateDynamic("outlines")(outlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelScalingRatio)) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.get.asInstanceOf[js.Any])
-    if (propertyChanged != null) __obj.updateDynamic("propertyChanged")(js.Any.fromFunction2(propertyChanged))
-    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
-    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey.asInstanceOf[js.Any])
-    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightMargin)) __obj.updateDynamic("rightMargin")(rightMargin.get.asInstanceOf[js.Any])
-    if (seriesAdded != null) __obj.updateDynamic("seriesAdded")(js.Any.fromFunction2(seriesAdded))
-    if (seriesPointerDown != null) __obj.updateDynamic("seriesPointerDown")(js.Any.fromFunction2(seriesPointerDown))
-    if (seriesPointerEnter != null) __obj.updateDynamic("seriesPointerEnter")(js.Any.fromFunction2(seriesPointerEnter))
-    if (seriesPointerLeave != null) __obj.updateDynamic("seriesPointerLeave")(js.Any.fromFunction2(seriesPointerLeave))
-    if (seriesPointerMove != null) __obj.updateDynamic("seriesPointerMove")(js.Any.fromFunction2(seriesPointerMove))
-    if (seriesPointerUp != null) __obj.updateDynamic("seriesPointerUp")(js.Any.fromFunction2(seriesPointerUp))
-    if (seriesRemoved != null) __obj.updateDynamic("seriesRemoved")(js.Any.fromFunction2(seriesRemoved))
-    if (shapeDataSource != null) __obj.updateDynamic("shapeDataSource")(shapeDataSource.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (subtitleAlignment != null) __obj.updateDynamic("subtitleAlignment")(subtitleAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(subtitleBottomMargin)) __obj.updateDynamic("subtitleBottomMargin")(subtitleBottomMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(subtitleLeftMargin)) __obj.updateDynamic("subtitleLeftMargin")(subtitleLeftMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(subtitleRightMargin)) __obj.updateDynamic("subtitleRightMargin")(subtitleRightMargin.get.asInstanceOf[js.Any])
-    if (subtitleTextColor != null) __obj.updateDynamic("subtitleTextColor")(subtitleTextColor.asInstanceOf[js.Any])
-    if (subtitleTextStyle != null) __obj.updateDynamic("subtitleTextStyle")(subtitleTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(subtitleTopMargin)) __obj.updateDynamic("subtitleTopMargin")(subtitleTopMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(thickness)) __obj.updateDynamic("thickness")(thickness.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleAlignment != null) __obj.updateDynamic("titleAlignment")(titleAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleBottomMargin)) __obj.updateDynamic("titleBottomMargin")(titleBottomMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleLeftMargin)) __obj.updateDynamic("titleLeftMargin")(titleLeftMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleRightMargin)) __obj.updateDynamic("titleRightMargin")(titleRightMargin.get.asInstanceOf[js.Any])
-    if (titleTextColor != null) __obj.updateDynamic("titleTextColor")(titleTextColor.asInstanceOf[js.Any])
-    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleTopMargin)) __obj.updateDynamic("titleTopMargin")(titleTopMargin.get.asInstanceOf[js.Any])
-    if (toolTipType != null) __obj.updateDynamic("toolTipType")(toolTipType.asInstanceOf[js.Any])
-    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate.asInstanceOf[js.Any])
-    if (tooltipTemplates != null) __obj.updateDynamic("tooltipTemplates")(tooltipTemplates.asInstanceOf[js.Any])
-    if (!js.isUndefined(topMargin)) __obj.updateDynamic("topMargin")(topMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
-    if (transitionEasingFunction != null) __obj.updateDynamic("transitionEasingFunction")(transitionEasingFunction.asInstanceOf[js.Any])
-    if (trendLineBrushes != null) __obj.updateDynamic("trendLineBrushes")(trendLineBrushes.asInstanceOf[js.Any])
-    if (!js.isUndefined(trendLinePeriod)) __obj.updateDynamic("trendLinePeriod")(trendLinePeriod.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trendLineThickness)) __obj.updateDynamic("trendLineThickness")(trendLineThickness.get.asInstanceOf[js.Any])
-    if (trendLineType != null) __obj.updateDynamic("trendLineType")(trendLineType.asInstanceOf[js.Any])
-    if (triangulationDataSource != null) __obj.updateDynamic("triangulationDataSource")(triangulationDataSource.asInstanceOf[js.Any])
-    if (unknownValuePlotting != null) __obj.updateDynamic("unknownValuePlotting")(unknownValuePlotting.asInstanceOf[js.Any])
-    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(js.Any.fromFunction2(updateTooltip))
-    if (widget != null) __obj.updateDynamic("widget")(widget.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (windowRect != null) __obj.updateDynamic("windowRect")(windowRect.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisAbbreviateLargeNumbers)) __obj.updateDynamic("xAxisAbbreviateLargeNumbers")(xAxisAbbreviateLargeNumbers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisExtent)) __obj.updateDynamic("xAxisExtent")(xAxisExtent.get.asInstanceOf[js.Any])
-    if (xAxisFormatLabel != null) __obj.updateDynamic("xAxisFormatLabel")(xAxisFormatLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisInterval)) __obj.updateDynamic("xAxisInterval")(xAxisInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisInverted)) __obj.updateDynamic("xAxisInverted")(xAxisInverted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisIsLogarithmic)) __obj.updateDynamic("xAxisIsLogarithmic")(xAxisIsLogarithmic.get.asInstanceOf[js.Any])
-    if (xAxisLabel != null) __obj.updateDynamic("xAxisLabel")(xAxisLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisLabelAngle)) __obj.updateDynamic("xAxisLabelAngle")(xAxisLabelAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisLabelBottomMargin)) __obj.updateDynamic("xAxisLabelBottomMargin")(xAxisLabelBottomMargin.get.asInstanceOf[js.Any])
-    if (xAxisLabelHorizontalAlignment != null) __obj.updateDynamic("xAxisLabelHorizontalAlignment")(xAxisLabelHorizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisLabelLeftMargin)) __obj.updateDynamic("xAxisLabelLeftMargin")(xAxisLabelLeftMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisLabelRightMargin)) __obj.updateDynamic("xAxisLabelRightMargin")(xAxisLabelRightMargin.get.asInstanceOf[js.Any])
-    if (xAxisLabelTextColor != null) __obj.updateDynamic("xAxisLabelTextColor")(xAxisLabelTextColor.asInstanceOf[js.Any])
-    if (xAxisLabelTextStyle != null) __obj.updateDynamic("xAxisLabelTextStyle")(xAxisLabelTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisLabelTopMargin)) __obj.updateDynamic("xAxisLabelTopMargin")(xAxisLabelTopMargin.get.asInstanceOf[js.Any])
-    if (xAxisLabelVerticalAlignment != null) __obj.updateDynamic("xAxisLabelVerticalAlignment")(xAxisLabelVerticalAlignment.asInstanceOf[js.Any])
-    if (xAxisLabelVisibility != null) __obj.updateDynamic("xAxisLabelVisibility")(xAxisLabelVisibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisLogarithmBase)) __obj.updateDynamic("xAxisLogarithmBase")(xAxisLogarithmBase.get.asInstanceOf[js.Any])
-    if (xAxisMajorStroke != null) __obj.updateDynamic("xAxisMajorStroke")(xAxisMajorStroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisMajorStrokeThickness)) __obj.updateDynamic("xAxisMajorStrokeThickness")(xAxisMajorStrokeThickness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisMaximumValue)) __obj.updateDynamic("xAxisMaximumValue")(xAxisMaximumValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisMinimumValue)) __obj.updateDynamic("xAxisMinimumValue")(xAxisMinimumValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisMinorInterval)) __obj.updateDynamic("xAxisMinorInterval")(xAxisMinorInterval.get.asInstanceOf[js.Any])
-    if (xAxisMinorStroke != null) __obj.updateDynamic("xAxisMinorStroke")(xAxisMinorStroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisMinorStrokeThickness)) __obj.updateDynamic("xAxisMinorStrokeThickness")(xAxisMinorStrokeThickness.get.asInstanceOf[js.Any])
-    if (xAxisStrip != null) __obj.updateDynamic("xAxisStrip")(xAxisStrip.asInstanceOf[js.Any])
-    if (xAxisStroke != null) __obj.updateDynamic("xAxisStroke")(xAxisStroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisStrokeThickness)) __obj.updateDynamic("xAxisStrokeThickness")(xAxisStrokeThickness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisTickLength)) __obj.updateDynamic("xAxisTickLength")(xAxisTickLength.get.asInstanceOf[js.Any])
-    if (xAxisTickStroke != null) __obj.updateDynamic("xAxisTickStroke")(xAxisTickStroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisTickStrokeThickness)) __obj.updateDynamic("xAxisTickStrokeThickness")(xAxisTickStrokeThickness.get.asInstanceOf[js.Any])
-    if (xAxisTitle != null) __obj.updateDynamic("xAxisTitle")(xAxisTitle.asInstanceOf[js.Any])
-    if (xAxisTitleAlignment != null) __obj.updateDynamic("xAxisTitleAlignment")(xAxisTitleAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisTitleAngle)) __obj.updateDynamic("xAxisTitleAngle")(xAxisTitleAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisTitleBottomMargin)) __obj.updateDynamic("xAxisTitleBottomMargin")(xAxisTitleBottomMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisTitleLeftMargin)) __obj.updateDynamic("xAxisTitleLeftMargin")(xAxisTitleLeftMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisTitleMargin)) __obj.updateDynamic("xAxisTitleMargin")(xAxisTitleMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisTitleRightMargin)) __obj.updateDynamic("xAxisTitleRightMargin")(xAxisTitleRightMargin.get.asInstanceOf[js.Any])
-    if (xAxisTitleTextColor != null) __obj.updateDynamic("xAxisTitleTextColor")(xAxisTitleTextColor.asInstanceOf[js.Any])
-    if (xAxisTitleTextStyle != null) __obj.updateDynamic("xAxisTitleTextStyle")(xAxisTitleTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisTitleTopMargin)) __obj.updateDynamic("xAxisTitleTopMargin")(xAxisTitleTopMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisAbbreviateLargeNumbers)) __obj.updateDynamic("yAxisAbbreviateLargeNumbers")(yAxisAbbreviateLargeNumbers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisExtent)) __obj.updateDynamic("yAxisExtent")(yAxisExtent.get.asInstanceOf[js.Any])
-    if (yAxisFormatLabel != null) __obj.updateDynamic("yAxisFormatLabel")(yAxisFormatLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisInterval)) __obj.updateDynamic("yAxisInterval")(yAxisInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisInverted)) __obj.updateDynamic("yAxisInverted")(yAxisInverted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisIsLogarithmic)) __obj.updateDynamic("yAxisIsLogarithmic")(yAxisIsLogarithmic.get.asInstanceOf[js.Any])
-    if (yAxisLabel != null) __obj.updateDynamic("yAxisLabel")(yAxisLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisLabelAngle)) __obj.updateDynamic("yAxisLabelAngle")(yAxisLabelAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisLabelBottomMargin)) __obj.updateDynamic("yAxisLabelBottomMargin")(yAxisLabelBottomMargin.get.asInstanceOf[js.Any])
-    if (yAxisLabelHorizontalAlignment != null) __obj.updateDynamic("yAxisLabelHorizontalAlignment")(yAxisLabelHorizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisLabelLeftMargin)) __obj.updateDynamic("yAxisLabelLeftMargin")(yAxisLabelLeftMargin.get.asInstanceOf[js.Any])
-    if (yAxisLabelLocation != null) __obj.updateDynamic("yAxisLabelLocation")(yAxisLabelLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisLabelRightMargin)) __obj.updateDynamic("yAxisLabelRightMargin")(yAxisLabelRightMargin.get.asInstanceOf[js.Any])
-    if (yAxisLabelTextColor != null) __obj.updateDynamic("yAxisLabelTextColor")(yAxisLabelTextColor.asInstanceOf[js.Any])
-    if (yAxisLabelTextStyle != null) __obj.updateDynamic("yAxisLabelTextStyle")(yAxisLabelTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisLabelTopMargin)) __obj.updateDynamic("yAxisLabelTopMargin")(yAxisLabelTopMargin.get.asInstanceOf[js.Any])
-    if (yAxisLabelVerticalAlignment != null) __obj.updateDynamic("yAxisLabelVerticalAlignment")(yAxisLabelVerticalAlignment.asInstanceOf[js.Any])
-    if (yAxisLabelVisibility != null) __obj.updateDynamic("yAxisLabelVisibility")(yAxisLabelVisibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisLogarithmBase)) __obj.updateDynamic("yAxisLogarithmBase")(yAxisLogarithmBase.get.asInstanceOf[js.Any])
-    if (yAxisMajorStroke != null) __obj.updateDynamic("yAxisMajorStroke")(yAxisMajorStroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisMajorStrokeThickness)) __obj.updateDynamic("yAxisMajorStrokeThickness")(yAxisMajorStrokeThickness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisMaximumValue)) __obj.updateDynamic("yAxisMaximumValue")(yAxisMaximumValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisMinimumValue)) __obj.updateDynamic("yAxisMinimumValue")(yAxisMinimumValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisMinorInterval)) __obj.updateDynamic("yAxisMinorInterval")(yAxisMinorInterval.get.asInstanceOf[js.Any])
-    if (yAxisMinorStroke != null) __obj.updateDynamic("yAxisMinorStroke")(yAxisMinorStroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisMinorStrokeThickness)) __obj.updateDynamic("yAxisMinorStrokeThickness")(yAxisMinorStrokeThickness.get.asInstanceOf[js.Any])
-    if (yAxisStrip != null) __obj.updateDynamic("yAxisStrip")(yAxisStrip.asInstanceOf[js.Any])
-    if (yAxisStroke != null) __obj.updateDynamic("yAxisStroke")(yAxisStroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisStrokeThickness)) __obj.updateDynamic("yAxisStrokeThickness")(yAxisStrokeThickness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisTickLength)) __obj.updateDynamic("yAxisTickLength")(yAxisTickLength.get.asInstanceOf[js.Any])
-    if (yAxisTickStroke != null) __obj.updateDynamic("yAxisTickStroke")(yAxisTickStroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisTickStrokeThickness)) __obj.updateDynamic("yAxisTickStrokeThickness")(yAxisTickStrokeThickness.get.asInstanceOf[js.Any])
-    if (yAxisTitle != null) __obj.updateDynamic("yAxisTitle")(yAxisTitle.asInstanceOf[js.Any])
-    if (yAxisTitleAlignment != null) __obj.updateDynamic("yAxisTitleAlignment")(yAxisTitleAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisTitleAngle)) __obj.updateDynamic("yAxisTitleAngle")(yAxisTitleAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisTitleBottomMargin)) __obj.updateDynamic("yAxisTitleBottomMargin")(yAxisTitleBottomMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisTitleLeftMargin)) __obj.updateDynamic("yAxisTitleLeftMargin")(yAxisTitleLeftMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisTitleMargin)) __obj.updateDynamic("yAxisTitleMargin")(yAxisTitleMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisTitleRightMargin)) __obj.updateDynamic("yAxisTitleRightMargin")(yAxisTitleRightMargin.get.asInstanceOf[js.Any])
-    if (yAxisTitleTextColor != null) __obj.updateDynamic("yAxisTitleTextColor")(yAxisTitleTextColor.asInstanceOf[js.Any])
-    if (yAxisTitleTextStyle != null) __obj.updateDynamic("yAxisTitleTextStyle")(yAxisTitleTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisTitleTopMargin)) __obj.updateDynamic("yAxisTitleTopMargin")(yAxisTitleTopMargin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgShapeChart]
   }
+  @scala.inline
+  implicit class IgShapeChartOps[Self <: IgShapeChart] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignsGridLinesToPixels(value: Boolean): Self = this.set("alignsGridLinesToPixels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignsGridLinesToPixels: Self = this.set("alignsGridLinesToPixels", js.undefined)
+    @scala.inline
+    def setAnimateSeriesWhenAxisRangeChanges(value: Boolean): Self = this.set("animateSeriesWhenAxisRangeChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateSeriesWhenAxisRangeChanges: Self = this.set("animateSeriesWhenAxisRangeChanges", js.undefined)
+    @scala.inline
+    def setBottomMargin(value: Double): Self = this.set("bottomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomMargin: Self = this.set("bottomMargin", js.undefined)
+    @scala.inline
+    def setBrushes(value: js.Any): Self = this.set("brushes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrushes: Self = this.set("brushes", js.undefined)
+    @scala.inline
+    def setCalloutStyleUpdating(value: (/* event */ Event, /* ui */ CalloutStyleUpdatingEventUIParam) => Unit): Self = this.set("calloutStyleUpdating", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCalloutStyleUpdating: Self = this.set("calloutStyleUpdating", js.undefined)
+    @scala.inline
+    def setCalloutStyleUpdatingEventEnabled(value: Boolean): Self = this.set("calloutStyleUpdatingEventEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutStyleUpdatingEventEnabled: Self = this.set("calloutStyleUpdatingEventEnabled", js.undefined)
+    @scala.inline
+    def setCalloutsContentMemberPath(value: String): Self = this.set("calloutsContentMemberPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutsContentMemberPath: Self = this.set("calloutsContentMemberPath", js.undefined)
+    @scala.inline
+    def setCalloutsItemsSource(value: js.Any): Self = this.set("calloutsItemsSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutsItemsSource: Self = this.set("calloutsItemsSource", js.undefined)
+    @scala.inline
+    def setCalloutsLabelMemberPath(value: String): Self = this.set("calloutsLabelMemberPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutsLabelMemberPath: Self = this.set("calloutsLabelMemberPath", js.undefined)
+    @scala.inline
+    def setCalloutsVisible(value: Boolean): Self = this.set("calloutsVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutsVisible: Self = this.set("calloutsVisible", js.undefined)
+    @scala.inline
+    def setCalloutsXMemberPath(value: String): Self = this.set("calloutsXMemberPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutsXMemberPath: Self = this.set("calloutsXMemberPath", js.undefined)
+    @scala.inline
+    def setCalloutsYMemberPath(value: String): Self = this.set("calloutsYMemberPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutsYMemberPath: Self = this.set("calloutsYMemberPath", js.undefined)
+    @scala.inline
+    def setChartType(value: String): Self = this.set("chartType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartType: Self = this.set("chartType", js.undefined)
+    @scala.inline
+    def setCreateWrappedTooltip(value: js.Any): Self = this.set("createWrappedTooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateWrappedTooltip: Self = this.set("createWrappedTooltip", js.undefined)
+    @scala.inline
+    def setCrosshairsAnnotationEnabled(value: Boolean): Self = this.set("crosshairsAnnotationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrosshairsAnnotationEnabled: Self = this.set("crosshairsAnnotationEnabled", js.undefined)
+    @scala.inline
+    def setCrosshairsDisplayMode(value: String): Self = this.set("crosshairsDisplayMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrosshairsDisplayMode: Self = this.set("crosshairsDisplayMode", js.undefined)
+    @scala.inline
+    def setCrosshairsSnapToData(value: Boolean): Self = this.set("crosshairsSnapToData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrosshairsSnapToData: Self = this.set("crosshairsSnapToData", js.undefined)
+    @scala.inline
+    def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit): Self = this.set("dataBinding", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    @scala.inline
+    def setDataBound(value: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit): Self = this.set("dataBound", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    @scala.inline
+    def setDataSourceUrl(value: String): Self = this.set("dataSourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceUrl: Self = this.set("dataSourceUrl", js.undefined)
+    @scala.inline
+    def setDatabaseSource(value: String): Self = this.set("databaseSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseSource: Self = this.set("databaseSource", js.undefined)
+    @scala.inline
+    def setExcludedProperties(value: js.Any): Self = this.set("excludedProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedProperties: Self = this.set("excludedProperties", js.undefined)
+    @scala.inline
+    def setFinalValueAnnotationsVisible(value: Boolean): Self = this.set("finalValueAnnotationsVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalValueAnnotationsVisible: Self = this.set("finalValueAnnotationsVisible", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHideTooltip(value: (/* event */ Event, /* ui */ HideTooltipEventUIParam) => Unit): Self = this.set("hideTooltip", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHideTooltip: Self = this.set("hideTooltip", js.undefined)
+    @scala.inline
+    def setIncludedProperties(value: js.Any): Self = this.set("includedProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludedProperties: Self = this.set("includedProperties", js.undefined)
+    @scala.inline
+    def setIsHorizontalZoomEnabled(value: Boolean): Self = this.set("isHorizontalZoomEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsHorizontalZoomEnabled: Self = this.set("isHorizontalZoomEnabled", js.undefined)
+    @scala.inline
+    def setIsSeriesHighlightingEnabled(value: Boolean): Self = this.set("isSeriesHighlightingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSeriesHighlightingEnabled: Self = this.set("isSeriesHighlightingEnabled", js.undefined)
+    @scala.inline
+    def setIsVerticalZoomEnabled(value: Boolean): Self = this.set("isVerticalZoomEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsVerticalZoomEnabled: Self = this.set("isVerticalZoomEnabled", js.undefined)
+    @scala.inline
+    def setItemsSource(value: js.Any): Self = this.set("itemsSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsSource: Self = this.set("itemsSource", js.undefined)
+    @scala.inline
+    def setLeftMargin(value: Double): Self = this.set("leftMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftMargin: Self = this.set("leftMargin", js.undefined)
+    @scala.inline
+    def setLegend(value: js.Any): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setMarkerBrushes(value: js.Any): Self = this.set("markerBrushes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerBrushes: Self = this.set("markerBrushes", js.undefined)
+    @scala.inline
+    def setMarkerCollision(value: String): Self = this.set("markerCollision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerCollision: Self = this.set("markerCollision", js.undefined)
+    @scala.inline
+    def setMarkerMaxCount(value: Double): Self = this.set("markerMaxCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerMaxCount: Self = this.set("markerMaxCount", js.undefined)
+    @scala.inline
+    def setMarkerOutlines(value: js.Any): Self = this.set("markerOutlines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerOutlines: Self = this.set("markerOutlines", js.undefined)
+    @scala.inline
+    def setMarkerTypes(value: js.Any): Self = this.set("markerTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerTypes: Self = this.set("markerTypes", js.undefined)
+    @scala.inline
+    def setMaxRecCount(value: Double): Self = this.set("maxRecCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecCount: Self = this.set("maxRecCount", js.undefined)
+    @scala.inline
+    def setOutlines(value: js.Any): Self = this.set("outlines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlines: Self = this.set("outlines", js.undefined)
+    @scala.inline
+    def setPixelScalingRatio(value: Double): Self = this.set("pixelScalingRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelScalingRatio: Self = this.set("pixelScalingRatio", js.undefined)
+    @scala.inline
+    def setPropertyChanged(value: (/* event */ Event, /* ui */ PropertyChangedEventUIParam) => Unit): Self = this.set("propertyChanged", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePropertyChanged: Self = this.set("propertyChanged", js.undefined)
+    @scala.inline
+    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setResponseDataKey(value: String): Self = this.set("responseDataKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseDataKey: Self = this.set("responseDataKey", js.undefined)
+    @scala.inline
+    def setResponseTotalRecCountKey(value: String): Self = this.set("responseTotalRecCountKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTotalRecCountKey: Self = this.set("responseTotalRecCountKey", js.undefined)
+    @scala.inline
+    def setRightMargin(value: Double): Self = this.set("rightMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightMargin: Self = this.set("rightMargin", js.undefined)
+    @scala.inline
+    def setSeriesAdded(value: (/* event */ Event, /* ui */ SeriesAddedEventUIParam) => Unit): Self = this.set("seriesAdded", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSeriesAdded: Self = this.set("seriesAdded", js.undefined)
+    @scala.inline
+    def setSeriesPointerDown(value: (/* event */ Event, /* ui */ SeriesPointerDownEventUIParam) => Unit): Self = this.set("seriesPointerDown", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSeriesPointerDown: Self = this.set("seriesPointerDown", js.undefined)
+    @scala.inline
+    def setSeriesPointerEnter(value: (/* event */ Event, /* ui */ SeriesPointerEnterEventUIParam) => Unit): Self = this.set("seriesPointerEnter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSeriesPointerEnter: Self = this.set("seriesPointerEnter", js.undefined)
+    @scala.inline
+    def setSeriesPointerLeave(value: (/* event */ Event, /* ui */ SeriesPointerLeaveEventUIParam) => Unit): Self = this.set("seriesPointerLeave", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSeriesPointerLeave: Self = this.set("seriesPointerLeave", js.undefined)
+    @scala.inline
+    def setSeriesPointerMove(value: (/* event */ Event, /* ui */ SeriesPointerMoveEventUIParam) => Unit): Self = this.set("seriesPointerMove", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSeriesPointerMove: Self = this.set("seriesPointerMove", js.undefined)
+    @scala.inline
+    def setSeriesPointerUp(value: (/* event */ Event, /* ui */ SeriesPointerUpEventUIParam) => Unit): Self = this.set("seriesPointerUp", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSeriesPointerUp: Self = this.set("seriesPointerUp", js.undefined)
+    @scala.inline
+    def setSeriesRemoved(value: (/* event */ Event, /* ui */ SeriesRemovedEventUIParam) => Unit): Self = this.set("seriesRemoved", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSeriesRemoved: Self = this.set("seriesRemoved", js.undefined)
+    @scala.inline
+    def setShapeDataSource(value: String): Self = this.set("shapeDataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeDataSource: Self = this.set("shapeDataSource", js.undefined)
+    @scala.inline
+    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    @scala.inline
+    def setSubtitleAlignment(value: String): Self = this.set("subtitleAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleAlignment: Self = this.set("subtitleAlignment", js.undefined)
+    @scala.inline
+    def setSubtitleBottomMargin(value: Double): Self = this.set("subtitleBottomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleBottomMargin: Self = this.set("subtitleBottomMargin", js.undefined)
+    @scala.inline
+    def setSubtitleLeftMargin(value: Double): Self = this.set("subtitleLeftMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleLeftMargin: Self = this.set("subtitleLeftMargin", js.undefined)
+    @scala.inline
+    def setSubtitleRightMargin(value: Double): Self = this.set("subtitleRightMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleRightMargin: Self = this.set("subtitleRightMargin", js.undefined)
+    @scala.inline
+    def setSubtitleTextColor(value: String): Self = this.set("subtitleTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleTextColor: Self = this.set("subtitleTextColor", js.undefined)
+    @scala.inline
+    def setSubtitleTextStyle(value: String): Self = this.set("subtitleTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleTextStyle: Self = this.set("subtitleTextStyle", js.undefined)
+    @scala.inline
+    def setSubtitleTopMargin(value: Double): Self = this.set("subtitleTopMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleTopMargin: Self = this.set("subtitleTopMargin", js.undefined)
+    @scala.inline
+    def setThickness(value: Double): Self = this.set("thickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThickness: Self = this.set("thickness", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleAlignment(value: String): Self = this.set("titleAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleAlignment: Self = this.set("titleAlignment", js.undefined)
+    @scala.inline
+    def setTitleBottomMargin(value: Double): Self = this.set("titleBottomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleBottomMargin: Self = this.set("titleBottomMargin", js.undefined)
+    @scala.inline
+    def setTitleLeftMargin(value: Double): Self = this.set("titleLeftMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleLeftMargin: Self = this.set("titleLeftMargin", js.undefined)
+    @scala.inline
+    def setTitleRightMargin(value: Double): Self = this.set("titleRightMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleRightMargin: Self = this.set("titleRightMargin", js.undefined)
+    @scala.inline
+    def setTitleTextColor(value: String): Self = this.set("titleTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleTextColor: Self = this.set("titleTextColor", js.undefined)
+    @scala.inline
+    def setTitleTextStyle(value: String): Self = this.set("titleTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleTextStyle: Self = this.set("titleTextStyle", js.undefined)
+    @scala.inline
+    def setTitleTopMargin(value: Double): Self = this.set("titleTopMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleTopMargin: Self = this.set("titleTopMargin", js.undefined)
+    @scala.inline
+    def setToolTipType(value: String): Self = this.set("toolTipType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolTipType: Self = this.set("toolTipType", js.undefined)
+    @scala.inline
+    def setTooltipTemplate(value: js.Any): Self = this.set("tooltipTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipTemplate: Self = this.set("tooltipTemplate", js.undefined)
+    @scala.inline
+    def setTooltipTemplates(value: js.Any): Self = this.set("tooltipTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipTemplates: Self = this.set("tooltipTemplates", js.undefined)
+    @scala.inline
+    def setTopMargin(value: Double): Self = this.set("topMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopMargin: Self = this.set("topMargin", js.undefined)
+    @scala.inline
+    def setTransitionDuration(value: Double): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    @scala.inline
+    def setTransitionEasingFunction(value: js.Any): Self = this.set("transitionEasingFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionEasingFunction: Self = this.set("transitionEasingFunction", js.undefined)
+    @scala.inline
+    def setTrendLineBrushes(value: js.Any): Self = this.set("trendLineBrushes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrendLineBrushes: Self = this.set("trendLineBrushes", js.undefined)
+    @scala.inline
+    def setTrendLinePeriod(value: Double): Self = this.set("trendLinePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrendLinePeriod: Self = this.set("trendLinePeriod", js.undefined)
+    @scala.inline
+    def setTrendLineThickness(value: Double): Self = this.set("trendLineThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrendLineThickness: Self = this.set("trendLineThickness", js.undefined)
+    @scala.inline
+    def setTrendLineType(value: String): Self = this.set("trendLineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrendLineType: Self = this.set("trendLineType", js.undefined)
+    @scala.inline
+    def setTriangulationDataSource(value: String): Self = this.set("triangulationDataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriangulationDataSource: Self = this.set("triangulationDataSource", js.undefined)
+    @scala.inline
+    def setUnknownValuePlotting(value: String): Self = this.set("unknownValuePlotting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnknownValuePlotting: Self = this.set("unknownValuePlotting", js.undefined)
+    @scala.inline
+    def setUpdateTooltip(value: (/* event */ Event, /* ui */ UpdateTooltipEventUIParam) => Unit): Self = this.set("updateTooltip", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUpdateTooltip: Self = this.set("updateTooltip", js.undefined)
+    @scala.inline
+    def setWidget(value: js.Any): Self = this.set("widget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidget: Self = this.set("widget", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWindowRect(value: js.Any): Self = this.set("windowRect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowRect: Self = this.set("windowRect", js.undefined)
+    @scala.inline
+    def setXAxisAbbreviateLargeNumbers(value: Boolean): Self = this.set("xAxisAbbreviateLargeNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisAbbreviateLargeNumbers: Self = this.set("xAxisAbbreviateLargeNumbers", js.undefined)
+    @scala.inline
+    def setXAxisExtent(value: Double): Self = this.set("xAxisExtent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisExtent: Self = this.set("xAxisExtent", js.undefined)
+    @scala.inline
+    def setXAxisFormatLabel(value: js.Any): Self = this.set("xAxisFormatLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisFormatLabel: Self = this.set("xAxisFormatLabel", js.undefined)
+    @scala.inline
+    def setXAxisInterval(value: Double): Self = this.set("xAxisInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisInterval: Self = this.set("xAxisInterval", js.undefined)
+    @scala.inline
+    def setXAxisInverted(value: Boolean): Self = this.set("xAxisInverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisInverted: Self = this.set("xAxisInverted", js.undefined)
+    @scala.inline
+    def setXAxisIsLogarithmic(value: Boolean): Self = this.set("xAxisIsLogarithmic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisIsLogarithmic: Self = this.set("xAxisIsLogarithmic", js.undefined)
+    @scala.inline
+    def setXAxisLabel(value: js.Any): Self = this.set("xAxisLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabel: Self = this.set("xAxisLabel", js.undefined)
+    @scala.inline
+    def setXAxisLabelAngle(value: Double): Self = this.set("xAxisLabelAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelAngle: Self = this.set("xAxisLabelAngle", js.undefined)
+    @scala.inline
+    def setXAxisLabelBottomMargin(value: Double): Self = this.set("xAxisLabelBottomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelBottomMargin: Self = this.set("xAxisLabelBottomMargin", js.undefined)
+    @scala.inline
+    def setXAxisLabelHorizontalAlignment(value: String): Self = this.set("xAxisLabelHorizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelHorizontalAlignment: Self = this.set("xAxisLabelHorizontalAlignment", js.undefined)
+    @scala.inline
+    def setXAxisLabelLeftMargin(value: Double): Self = this.set("xAxisLabelLeftMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelLeftMargin: Self = this.set("xAxisLabelLeftMargin", js.undefined)
+    @scala.inline
+    def setXAxisLabelRightMargin(value: Double): Self = this.set("xAxisLabelRightMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelRightMargin: Self = this.set("xAxisLabelRightMargin", js.undefined)
+    @scala.inline
+    def setXAxisLabelTextColor(value: String): Self = this.set("xAxisLabelTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelTextColor: Self = this.set("xAxisLabelTextColor", js.undefined)
+    @scala.inline
+    def setXAxisLabelTextStyle(value: String): Self = this.set("xAxisLabelTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelTextStyle: Self = this.set("xAxisLabelTextStyle", js.undefined)
+    @scala.inline
+    def setXAxisLabelTopMargin(value: Double): Self = this.set("xAxisLabelTopMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelTopMargin: Self = this.set("xAxisLabelTopMargin", js.undefined)
+    @scala.inline
+    def setXAxisLabelVerticalAlignment(value: String): Self = this.set("xAxisLabelVerticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelVerticalAlignment: Self = this.set("xAxisLabelVerticalAlignment", js.undefined)
+    @scala.inline
+    def setXAxisLabelVisibility(value: String): Self = this.set("xAxisLabelVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLabelVisibility: Self = this.set("xAxisLabelVisibility", js.undefined)
+    @scala.inline
+    def setXAxisLogarithmBase(value: Double): Self = this.set("xAxisLogarithmBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisLogarithmBase: Self = this.set("xAxisLogarithmBase", js.undefined)
+    @scala.inline
+    def setXAxisMajorStroke(value: String): Self = this.set("xAxisMajorStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisMajorStroke: Self = this.set("xAxisMajorStroke", js.undefined)
+    @scala.inline
+    def setXAxisMajorStrokeThickness(value: Double): Self = this.set("xAxisMajorStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisMajorStrokeThickness: Self = this.set("xAxisMajorStrokeThickness", js.undefined)
+    @scala.inline
+    def setXAxisMaximumValue(value: Double): Self = this.set("xAxisMaximumValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisMaximumValue: Self = this.set("xAxisMaximumValue", js.undefined)
+    @scala.inline
+    def setXAxisMinimumValue(value: Double): Self = this.set("xAxisMinimumValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisMinimumValue: Self = this.set("xAxisMinimumValue", js.undefined)
+    @scala.inline
+    def setXAxisMinorInterval(value: Double): Self = this.set("xAxisMinorInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisMinorInterval: Self = this.set("xAxisMinorInterval", js.undefined)
+    @scala.inline
+    def setXAxisMinorStroke(value: String): Self = this.set("xAxisMinorStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisMinorStroke: Self = this.set("xAxisMinorStroke", js.undefined)
+    @scala.inline
+    def setXAxisMinorStrokeThickness(value: Double): Self = this.set("xAxisMinorStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisMinorStrokeThickness: Self = this.set("xAxisMinorStrokeThickness", js.undefined)
+    @scala.inline
+    def setXAxisStrip(value: String): Self = this.set("xAxisStrip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisStrip: Self = this.set("xAxisStrip", js.undefined)
+    @scala.inline
+    def setXAxisStroke(value: String): Self = this.set("xAxisStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisStroke: Self = this.set("xAxisStroke", js.undefined)
+    @scala.inline
+    def setXAxisStrokeThickness(value: Double): Self = this.set("xAxisStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisStrokeThickness: Self = this.set("xAxisStrokeThickness", js.undefined)
+    @scala.inline
+    def setXAxisTickLength(value: Double): Self = this.set("xAxisTickLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTickLength: Self = this.set("xAxisTickLength", js.undefined)
+    @scala.inline
+    def setXAxisTickStroke(value: String): Self = this.set("xAxisTickStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTickStroke: Self = this.set("xAxisTickStroke", js.undefined)
+    @scala.inline
+    def setXAxisTickStrokeThickness(value: Double): Self = this.set("xAxisTickStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTickStrokeThickness: Self = this.set("xAxisTickStrokeThickness", js.undefined)
+    @scala.inline
+    def setXAxisTitle(value: String): Self = this.set("xAxisTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitle: Self = this.set("xAxisTitle", js.undefined)
+    @scala.inline
+    def setXAxisTitleAlignment(value: String): Self = this.set("xAxisTitleAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitleAlignment: Self = this.set("xAxisTitleAlignment", js.undefined)
+    @scala.inline
+    def setXAxisTitleAngle(value: Double): Self = this.set("xAxisTitleAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitleAngle: Self = this.set("xAxisTitleAngle", js.undefined)
+    @scala.inline
+    def setXAxisTitleBottomMargin(value: Double): Self = this.set("xAxisTitleBottomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitleBottomMargin: Self = this.set("xAxisTitleBottomMargin", js.undefined)
+    @scala.inline
+    def setXAxisTitleLeftMargin(value: Double): Self = this.set("xAxisTitleLeftMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitleLeftMargin: Self = this.set("xAxisTitleLeftMargin", js.undefined)
+    @scala.inline
+    def setXAxisTitleMargin(value: Double): Self = this.set("xAxisTitleMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitleMargin: Self = this.set("xAxisTitleMargin", js.undefined)
+    @scala.inline
+    def setXAxisTitleRightMargin(value: Double): Self = this.set("xAxisTitleRightMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitleRightMargin: Self = this.set("xAxisTitleRightMargin", js.undefined)
+    @scala.inline
+    def setXAxisTitleTextColor(value: String): Self = this.set("xAxisTitleTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitleTextColor: Self = this.set("xAxisTitleTextColor", js.undefined)
+    @scala.inline
+    def setXAxisTitleTextStyle(value: String): Self = this.set("xAxisTitleTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitleTextStyle: Self = this.set("xAxisTitleTextStyle", js.undefined)
+    @scala.inline
+    def setXAxisTitleTopMargin(value: Double): Self = this.set("xAxisTitleTopMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisTitleTopMargin: Self = this.set("xAxisTitleTopMargin", js.undefined)
+    @scala.inline
+    def setYAxisAbbreviateLargeNumbers(value: Boolean): Self = this.set("yAxisAbbreviateLargeNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisAbbreviateLargeNumbers: Self = this.set("yAxisAbbreviateLargeNumbers", js.undefined)
+    @scala.inline
+    def setYAxisExtent(value: Double): Self = this.set("yAxisExtent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisExtent: Self = this.set("yAxisExtent", js.undefined)
+    @scala.inline
+    def setYAxisFormatLabel(value: js.Any): Self = this.set("yAxisFormatLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisFormatLabel: Self = this.set("yAxisFormatLabel", js.undefined)
+    @scala.inline
+    def setYAxisInterval(value: Double): Self = this.set("yAxisInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisInterval: Self = this.set("yAxisInterval", js.undefined)
+    @scala.inline
+    def setYAxisInverted(value: Boolean): Self = this.set("yAxisInverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisInverted: Self = this.set("yAxisInverted", js.undefined)
+    @scala.inline
+    def setYAxisIsLogarithmic(value: Boolean): Self = this.set("yAxisIsLogarithmic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisIsLogarithmic: Self = this.set("yAxisIsLogarithmic", js.undefined)
+    @scala.inline
+    def setYAxisLabel(value: js.Any): Self = this.set("yAxisLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabel: Self = this.set("yAxisLabel", js.undefined)
+    @scala.inline
+    def setYAxisLabelAngle(value: Double): Self = this.set("yAxisLabelAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelAngle: Self = this.set("yAxisLabelAngle", js.undefined)
+    @scala.inline
+    def setYAxisLabelBottomMargin(value: Double): Self = this.set("yAxisLabelBottomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelBottomMargin: Self = this.set("yAxisLabelBottomMargin", js.undefined)
+    @scala.inline
+    def setYAxisLabelHorizontalAlignment(value: String): Self = this.set("yAxisLabelHorizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelHorizontalAlignment: Self = this.set("yAxisLabelHorizontalAlignment", js.undefined)
+    @scala.inline
+    def setYAxisLabelLeftMargin(value: Double): Self = this.set("yAxisLabelLeftMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelLeftMargin: Self = this.set("yAxisLabelLeftMargin", js.undefined)
+    @scala.inline
+    def setYAxisLabelLocation(value: String): Self = this.set("yAxisLabelLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelLocation: Self = this.set("yAxisLabelLocation", js.undefined)
+    @scala.inline
+    def setYAxisLabelRightMargin(value: Double): Self = this.set("yAxisLabelRightMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelRightMargin: Self = this.set("yAxisLabelRightMargin", js.undefined)
+    @scala.inline
+    def setYAxisLabelTextColor(value: String): Self = this.set("yAxisLabelTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelTextColor: Self = this.set("yAxisLabelTextColor", js.undefined)
+    @scala.inline
+    def setYAxisLabelTextStyle(value: String): Self = this.set("yAxisLabelTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelTextStyle: Self = this.set("yAxisLabelTextStyle", js.undefined)
+    @scala.inline
+    def setYAxisLabelTopMargin(value: Double): Self = this.set("yAxisLabelTopMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelTopMargin: Self = this.set("yAxisLabelTopMargin", js.undefined)
+    @scala.inline
+    def setYAxisLabelVerticalAlignment(value: String): Self = this.set("yAxisLabelVerticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelVerticalAlignment: Self = this.set("yAxisLabelVerticalAlignment", js.undefined)
+    @scala.inline
+    def setYAxisLabelVisibility(value: String): Self = this.set("yAxisLabelVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLabelVisibility: Self = this.set("yAxisLabelVisibility", js.undefined)
+    @scala.inline
+    def setYAxisLogarithmBase(value: Double): Self = this.set("yAxisLogarithmBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisLogarithmBase: Self = this.set("yAxisLogarithmBase", js.undefined)
+    @scala.inline
+    def setYAxisMajorStroke(value: String): Self = this.set("yAxisMajorStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisMajorStroke: Self = this.set("yAxisMajorStroke", js.undefined)
+    @scala.inline
+    def setYAxisMajorStrokeThickness(value: Double): Self = this.set("yAxisMajorStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisMajorStrokeThickness: Self = this.set("yAxisMajorStrokeThickness", js.undefined)
+    @scala.inline
+    def setYAxisMaximumValue(value: Double): Self = this.set("yAxisMaximumValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisMaximumValue: Self = this.set("yAxisMaximumValue", js.undefined)
+    @scala.inline
+    def setYAxisMinimumValue(value: Double): Self = this.set("yAxisMinimumValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisMinimumValue: Self = this.set("yAxisMinimumValue", js.undefined)
+    @scala.inline
+    def setYAxisMinorInterval(value: Double): Self = this.set("yAxisMinorInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisMinorInterval: Self = this.set("yAxisMinorInterval", js.undefined)
+    @scala.inline
+    def setYAxisMinorStroke(value: String): Self = this.set("yAxisMinorStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisMinorStroke: Self = this.set("yAxisMinorStroke", js.undefined)
+    @scala.inline
+    def setYAxisMinorStrokeThickness(value: Double): Self = this.set("yAxisMinorStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisMinorStrokeThickness: Self = this.set("yAxisMinorStrokeThickness", js.undefined)
+    @scala.inline
+    def setYAxisStrip(value: String): Self = this.set("yAxisStrip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisStrip: Self = this.set("yAxisStrip", js.undefined)
+    @scala.inline
+    def setYAxisStroke(value: String): Self = this.set("yAxisStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisStroke: Self = this.set("yAxisStroke", js.undefined)
+    @scala.inline
+    def setYAxisStrokeThickness(value: Double): Self = this.set("yAxisStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisStrokeThickness: Self = this.set("yAxisStrokeThickness", js.undefined)
+    @scala.inline
+    def setYAxisTickLength(value: Double): Self = this.set("yAxisTickLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTickLength: Self = this.set("yAxisTickLength", js.undefined)
+    @scala.inline
+    def setYAxisTickStroke(value: String): Self = this.set("yAxisTickStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTickStroke: Self = this.set("yAxisTickStroke", js.undefined)
+    @scala.inline
+    def setYAxisTickStrokeThickness(value: Double): Self = this.set("yAxisTickStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTickStrokeThickness: Self = this.set("yAxisTickStrokeThickness", js.undefined)
+    @scala.inline
+    def setYAxisTitle(value: String): Self = this.set("yAxisTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitle: Self = this.set("yAxisTitle", js.undefined)
+    @scala.inline
+    def setYAxisTitleAlignment(value: String): Self = this.set("yAxisTitleAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitleAlignment: Self = this.set("yAxisTitleAlignment", js.undefined)
+    @scala.inline
+    def setYAxisTitleAngle(value: Double): Self = this.set("yAxisTitleAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitleAngle: Self = this.set("yAxisTitleAngle", js.undefined)
+    @scala.inline
+    def setYAxisTitleBottomMargin(value: Double): Self = this.set("yAxisTitleBottomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitleBottomMargin: Self = this.set("yAxisTitleBottomMargin", js.undefined)
+    @scala.inline
+    def setYAxisTitleLeftMargin(value: Double): Self = this.set("yAxisTitleLeftMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitleLeftMargin: Self = this.set("yAxisTitleLeftMargin", js.undefined)
+    @scala.inline
+    def setYAxisTitleMargin(value: Double): Self = this.set("yAxisTitleMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitleMargin: Self = this.set("yAxisTitleMargin", js.undefined)
+    @scala.inline
+    def setYAxisTitleRightMargin(value: Double): Self = this.set("yAxisTitleRightMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitleRightMargin: Self = this.set("yAxisTitleRightMargin", js.undefined)
+    @scala.inline
+    def setYAxisTitleTextColor(value: String): Self = this.set("yAxisTitleTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitleTextColor: Self = this.set("yAxisTitleTextColor", js.undefined)
+    @scala.inline
+    def setYAxisTitleTextStyle(value: String): Self = this.set("yAxisTitleTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitleTextStyle: Self = this.set("yAxisTitleTextStyle", js.undefined)
+    @scala.inline
+    def setYAxisTitleTopMargin(value: Double): Self = this.set("yAxisTitleTopMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisTitleTopMargin: Self = this.set("yAxisTitleTopMargin", js.undefined)
+  }
+  
 }
 

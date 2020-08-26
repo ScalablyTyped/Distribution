@@ -12,7 +12,7 @@ A function to get the scrolling parent of an html element.
 | Keywords           | browser, scroll, scrollparent, dom |
 | # releases         | 0 |
 | # dependents       | 48 |
-| # downloads        | 3104000 |
+| # downloads        | 3451960 |
 | # stars            | 0 |
 
 ## Links

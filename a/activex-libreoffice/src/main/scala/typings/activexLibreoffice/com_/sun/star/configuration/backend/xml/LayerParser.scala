@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.configuration.backend.xml.LayerWriter Service that writes OOR Update XML for data described via com.sun.star.configuration.backend.X
   * @since OOo 1.1.2
   */
+@js.native
 trait LayerParser
   extends XLayer
      with XActiveDataSink

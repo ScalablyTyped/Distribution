@@ -20,25 +20,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RasterInfo extends JSONSupport {
   /**
     * The raster attribute table associated with an imagery layer. It returns categorical mapping of pixel values such as class, group, or category, or membership.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#attributeTable)
     */
-  var attributeTable: FeatureSet
+  var attributeTable: FeatureSet = js.native
   /**
     * Raster band count.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#bandCount)
     */
-  var bandCount: Double
+  var bandCount: Double = js.native
   /**
     * Raster colormap that can be used to display the imagery layer. Each element in the array defines the pixel value and the red, green, and blue color values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#colormap)
     */
-  var colormap: js.Array[js.Array[Double]]
+  var colormap: js.Array[js.Array[Double]] = js.native
   /**
     * Raster data type controls how the data is rendered by default.
     *
@@ -55,49 +56,49 @@ trait RasterInfo extends JSONSupport {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#dataType)
     */
-  var dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`
+  var dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir` = js.native
   /**
     * The minimum and maximum X and Y coordinates of a bounding box containing all the raster data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#extent)
     */
-  var extent: Extent
+  var extent: Extent = js.native
   /**
     * Raster height (row count) in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#height)
     */
-  var height: Double
+  var height: Double = js.native
   /**
     * Raster histograms return basic name-value pairs for number of bins, min and max bounding values, counts of pixels in each bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
     */
-  var histograms: js.Array[_]
+  var histograms: js.Array[_] = js.native
   /**
     * Raster key properties.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#keyProperties)
     */
-  var keyProperties: js.Any
+  var keyProperties: js.Any = js.native
   /**
     * The multidimensional information associated with the raster.  If defined, multidimensional information contains various "dimensions" of data for a particular value, such as time, depth, altitude, etc. Defining slices of particular dimensions in the layer is handled with the [multidimensionalDefinition](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#multidimensionalDefinition) property of the [mosaicRule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#mosaicRule).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#multidimensionalInfo)
     */
-  var multidimensionalInfo: js.Any
+  var multidimensionalInfo: js.Any = js.native
   /**
     * The pixel value representing no available information. Can be a number (same value for all bands) or array (specific value for each band).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#noDataValue)
     */
-  var noDataValue: Double | js.Array[Double]
+  var noDataValue: Double | js.Array[Double] = js.native
   /**
     * Raster pixel size. Specifies the pixel size being identified on the x and y axis. Defaults to the base resolution of the dataset when not specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
-  var pixelSize: RasterInfoPixelSize
+  var pixelSize: RasterInfoPixelSize = js.native
   /**
     * Pixel type for the raster data source.
     *
@@ -116,25 +117,25 @@ trait RasterInfo extends JSONSupport {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelType)
     */
-  var pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64
+  var pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = js.native
   /**
     * The spatial reference of the raster.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#spatialReference)
     */
-  var spatialReference: SpatialReference
+  var spatialReference: SpatialReference = js.native
   /**
     * Raster band statistics. These include the minimum value in the raster, maximum value, mean of all values, and standard deviation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
     */
-  var statistics: js.Array[RasterInfoStatistics]
+  var statistics: js.Array[RasterInfoStatistics] = js.native
   /**
     * Raster width (column count) in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#width)
     */
-  var width: Double
+  var width: Double = js.native
 }
 
 object RasterInfo {
@@ -160,5 +161,56 @@ object RasterInfo {
     val __obj = js.Dynamic.literal(attributeTable = attributeTable.asInstanceOf[js.Any], bandCount = bandCount.asInstanceOf[js.Any], colormap = colormap.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], histograms = histograms.asInstanceOf[js.Any], keyProperties = keyProperties.asInstanceOf[js.Any], multidimensionalInfo = multidimensionalInfo.asInstanceOf[js.Any], noDataValue = noDataValue.asInstanceOf[js.Any], pixelSize = pixelSize.asInstanceOf[js.Any], pixelType = pixelType.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterInfo]
   }
+  @scala.inline
+  implicit class RasterInfoOps[Self <: RasterInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeTable(value: FeatureSet): Self = this.set("attributeTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBandCount(value: Double): Self = this.set("bandCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColormapVarargs(value: js.Array[Double]*): Self = this.set("colormap", js.Array(value :_*))
+    @scala.inline
+    def setColormap(value: js.Array[js.Array[Double]]): Self = this.set("colormap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataType(value: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExtent(value: Extent): Self = this.set("extent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHistogramsVarargs(value: js.Any*): Self = this.set("histograms", js.Array(value :_*))
+    @scala.inline
+    def setHistograms(value: js.Array[_]): Self = this.set("histograms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeyProperties(value: js.Any): Self = this.set("keyProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultidimensionalInfo(value: js.Any): Self = this.set("multidimensionalInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNoDataValueVarargs(value: Double*): Self = this.set("noDataValue", js.Array(value :_*))
+    @scala.inline
+    def setNoDataValue(value: Double | js.Array[Double]): Self = this.set("noDataValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPixelSize(value: RasterInfoPixelSize): Self = this.set("pixelSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPixelType(value: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64): Self = this.set("pixelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpatialReference(value: SpatialReference): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatisticsVarargs(value: RasterInfoStatistics*): Self = this.set("statistics", js.Array(value :_*))
+    @scala.inline
+    def setStatistics(value: js.Array[RasterInfoStatistics]): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+  }
+  
 }
 

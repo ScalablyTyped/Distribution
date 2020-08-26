@@ -6,81 +6,116 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IonMenu extends js.Object {
   /**
     * The content's id the menu should use.
     */
-  var contentId: js.UndefOr[String] = js.undefined
+  var contentId: js.UndefOr[String] = js.native
   /**
     * If `true`, the menu is disabled.
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * The edge threshold for dragging the menu open. If a drag/swipe happens over this value, the menu is not triggered.
     */
-  var maxEdgeStart: js.UndefOr[Double] = js.undefined
+  var maxEdgeStart: js.UndefOr[Double] = js.native
   /**
     * An id for the menu.
     */
-  var menuId: js.UndefOr[String] = js.undefined
+  var menuId: js.UndefOr[String] = js.native
   /**
     * Emitted when the menu is closed.
     */
-  var onIonDidClose: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonDidClose: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the menu is open.
     */
-  var onIonDidOpen: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonDidOpen: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the menu is about to be closed.
     */
-  var onIonWillClose: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonWillClose: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the menu is about to be opened.
     */
-  var onIonWillOpen: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonWillOpen: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Which side of the view the menu should be placed.
     */
-  var side: js.UndefOr[Side] = js.undefined
+  var side: js.UndefOr[Side] = js.native
   /**
     * If `true`, swiping the menu is enabled.
     */
-  var swipeGesture: js.UndefOr[Boolean] = js.undefined
+  var swipeGesture: js.UndefOr[Boolean] = js.native
   /**
     * The display type of the menu. Available options: `"overlay"`, `"reveal"`, `"push"`.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object IonMenu {
   @scala.inline
-  def apply(
-    contentId: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    maxEdgeStart: js.UndefOr[Double] = js.undefined,
-    menuId: String = null,
-    onIonDidClose: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonDidOpen: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonWillClose: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonWillOpen: /* event */ CustomEvent[Unit] => Unit = null,
-    side: Side = null,
-    swipeGesture: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null
-  ): IonMenu = {
+  def apply(): IonMenu = {
     val __obj = js.Dynamic.literal()
-    if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxEdgeStart)) __obj.updateDynamic("maxEdgeStart")(maxEdgeStart.get.asInstanceOf[js.Any])
-    if (menuId != null) __obj.updateDynamic("menuId")(menuId.asInstanceOf[js.Any])
-    if (onIonDidClose != null) __obj.updateDynamic("onIonDidClose")(js.Any.fromFunction1(onIonDidClose))
-    if (onIonDidOpen != null) __obj.updateDynamic("onIonDidOpen")(js.Any.fromFunction1(onIonDidOpen))
-    if (onIonWillClose != null) __obj.updateDynamic("onIonWillClose")(js.Any.fromFunction1(onIonWillClose))
-    if (onIonWillOpen != null) __obj.updateDynamic("onIonWillOpen")(js.Any.fromFunction1(onIonWillOpen))
-    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeGesture)) __obj.updateDynamic("swipeGesture")(swipeGesture.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenu]
   }
+  @scala.inline
+  implicit class IonMenuOps[Self <: IonMenu] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentId(value: String): Self = this.set("contentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentId: Self = this.set("contentId", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setMaxEdgeStart(value: Double): Self = this.set("maxEdgeStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxEdgeStart: Self = this.set("maxEdgeStart", js.undefined)
+    @scala.inline
+    def setMenuId(value: String): Self = this.set("menuId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuId: Self = this.set("menuId", js.undefined)
+    @scala.inline
+    def setOnIonDidClose(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonDidClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonDidClose: Self = this.set("onIonDidClose", js.undefined)
+    @scala.inline
+    def setOnIonDidOpen(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonDidOpen", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonDidOpen: Self = this.set("onIonDidOpen", js.undefined)
+    @scala.inline
+    def setOnIonWillClose(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonWillClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonWillClose: Self = this.set("onIonWillClose", js.undefined)
+    @scala.inline
+    def setOnIonWillOpen(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonWillOpen", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonWillOpen: Self = this.set("onIonWillOpen", js.undefined)
+    @scala.inline
+    def setSide(value: Side): Self = this.set("side", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSide: Self = this.set("side", js.undefined)
+    @scala.inline
+    def setSwipeGesture(value: Boolean): Self = this.set("swipeGesture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwipeGesture: Self = this.set("swipeGesture", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

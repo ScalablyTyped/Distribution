@@ -12,7 +12,7 @@ An easy way to send JSON over TCP using sockets.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 43 |
-| # downloads        | 1069982 |
+| # downloads        | 1262276 |
 | # stars            | 6 |
 
 ## Links

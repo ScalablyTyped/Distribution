@@ -131,6 +131,7 @@ object Canvas extends js.Object {
       * @param height The new height of the renderer.
       */
     def resize(): Unit = js.native
+    def resize(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
     def resize(width: Double): Unit = js.native
     def resize(width: Double, height: Double): Unit = js.native
     /**
@@ -164,6 +165,7 @@ object Canvas extends js.Object {
       * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
       */
     def snapshot(callback: SnapshotCallback): this.type = js.native
+    def snapshot(callback: SnapshotCallback, `type`: js.UndefOr[scala.Nothing], encoderOptions: Double): this.type = js.native
     def snapshot(callback: SnapshotCallback, `type`: String): this.type = js.native
     def snapshot(callback: SnapshotCallback, `type`: String, encoderOptions: Double): this.type = js.native
     /**
@@ -185,6 +187,15 @@ object Canvas extends js.Object {
       * @param encoderOptions The image quality, between 0 and 1. Used for image formats with lossy compression, such as `image/jpeg`. Default 0.92.
       */
     def snapshotArea(x: integer, y: integer, width: integer, height: integer, callback: SnapshotCallback): this.type = js.native
+    def snapshotArea(
+      x: integer,
+      y: integer,
+      width: integer,
+      height: integer,
+      callback: SnapshotCallback,
+      `type`: js.UndefOr[scala.Nothing],
+      encoderOptions: Double
+    ): this.type = js.native
     def snapshotArea(
       x: integer,
       y: integer,

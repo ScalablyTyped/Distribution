@@ -19,15 +19,5 @@ class ^ protected () extends ParkMiller {
   	```
   	*/
   def this(seed: Double) = this()
-  /* CompleteClass */
-  override def boolean(): Boolean = js.native
-  /* CompleteClass */
-  override def float(): Double = js.native
-  /* CompleteClass */
-  override def floatInRange(min: Double, max: Double): Double = js.native
-  /* CompleteClass */
-  override def integer(): Double = js.native
-  /* CompleteClass */
-  override def integerInRange(min: Double, max: Double): Double = js.native
 }
 

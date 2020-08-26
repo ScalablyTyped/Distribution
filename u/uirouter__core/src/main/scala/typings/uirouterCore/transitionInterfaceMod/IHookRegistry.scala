@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IHookRegistry extends js.Object {
-  /** @hidden place to store the hooks */
+  /** @internal place to store the hooks */
   var _registeredHooks: StringDictionary[js.Array[RegisteredHook]] = js.native
   /**
     * Returns all the registered hooks of a given `hookName` type

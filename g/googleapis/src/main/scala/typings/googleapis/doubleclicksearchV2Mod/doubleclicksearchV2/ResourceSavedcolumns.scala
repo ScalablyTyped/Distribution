@@ -28,6 +28,7 @@ class ResourceSavedcolumns protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSavedColumnList] = js.native
   def list(callback: BodyResponseCallback[SchemaSavedColumnList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedColumnList] = js.native
   def list(params: ParamsResourceSavedcolumnsList): GaxiosPromise[SchemaSavedColumnList] = js.native
   def list(params: ParamsResourceSavedcolumnsList, callback: BodyResponseCallback[SchemaSavedColumnList]): Unit = js.native
   def list(

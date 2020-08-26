@@ -33,6 +33,7 @@ trait Int16ArrayConstructor
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from(arrayLike: Iterable[Double]): Int16Array = js.native
+  def from(arrayLike: Iterable[Double], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): Int16Array = js.native
   def from(arrayLike: Iterable[Double], mapfn: js.Function2[/* v */ Double, /* k */ Double, Double]): Int16Array = js.native
   def from(
     arrayLike: Iterable[Double],

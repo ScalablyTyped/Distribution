@@ -12,7 +12,7 @@ A Node.js module for implementing BLE (Bluetooth Low Energy) peripherals
 | Keywords           | BLE, Bluetooth, Bluetooth Low Energy, Bluetooth Smart, peripheral |
 | # releases         | 2 |
 | # dependents       | 41 |
-| # downloads        | 47916 |
+| # downloads        | 46690 |
 | # stars            | 8 |
 
 ## Links

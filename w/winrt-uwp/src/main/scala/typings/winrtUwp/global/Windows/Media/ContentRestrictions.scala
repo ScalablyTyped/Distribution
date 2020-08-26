@@ -1,8 +1,6 @@
 package typings.winrtUwp.global.Windows.Media
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Media.ContentRestrictions.RatedContentCategory
-import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,17 +12,7 @@ object ContentRestrictions extends js.Object {
   /** Contains information used to filter an app's content catalog. */
   @js.native
   abstract class ContentRestrictionsBrowsePolicy ()
-    extends typings.winrtUwp.Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy {
-    /** Gets the region of the user's content restrictions. */
-    /* CompleteClass */
-    override var geographicRegion: String = js.native
-    /** Gets the maximum allowed age rating level to show in a content catalog. No content rated above this level should be displayed. For example, if the MaxBrowsableAgeRating is 13, MPAA:R rated movies should not be displayed. */
-    /* CompleteClass */
-    override var maxBrowsableAgeRating: Double = js.native
-    /** Gets the maximum allowed rating level for content consumption. */
-    /* CompleteClass */
-    override var preferredAgeRating: Double = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy
   
   /** Contains information about a piece of content. An app creates a RatedContentDescription object, for each piece of content to be used in the GetRestrictionLevelAsync and RequestContentAccessAsync methods. */
   @js.native
@@ -37,21 +25,6 @@ object ContentRestrictions extends js.Object {
       * @param category Specifies the type of a piece of content, defined by RatedContentCategory .
       */
     def this(id: String, title: String, category: RatedContentCategory) = this()
-    /** Specifies the type of a piece of content, defined by RatedContentCategory . */
-    /* CompleteClass */
-    override var category: RatedContentCategory = js.native
-    /** The unique content ID of a piece of content, in the app's content catalog. */
-    /* CompleteClass */
-    override var id: String = js.native
-    /** The thumbnail image associated with the content. */
-    /* CompleteClass */
-    override var image: IRandomAccessStreamReference = js.native
-    /** Provides all existing third-party and Windows Store age ratings for a piece of content. */
-    /* CompleteClass */
-    override var ratings: IVector[String] = js.native
-    /** The display title of a piece of content. */
-    /* CompleteClass */
-    override var title: String = js.native
   }
   
   /** Contains all behavior and functionality related to a user's Family Safety content settings. */

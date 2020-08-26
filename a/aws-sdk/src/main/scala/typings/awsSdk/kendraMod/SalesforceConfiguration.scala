@@ -46,26 +46,60 @@ trait SalesforceConfiguration extends js.Object {
 
 object SalesforceConfiguration {
   @scala.inline
-  def apply(
-    SecretArn: SecretArn,
-    ServerUrl: Url,
-    ChatterFeedConfiguration: SalesforceChatterFeedConfiguration = null,
-    CrawlAttachments: js.UndefOr[Boolean] = js.undefined,
-    ExcludeAttachmentFilePatterns: DataSourceInclusionsExclusionsStrings = null,
-    IncludeAttachmentFilePatterns: DataSourceInclusionsExclusionsStrings = null,
-    KnowledgeArticleConfiguration: SalesforceKnowledgeArticleConfiguration = null,
-    StandardObjectAttachmentConfiguration: SalesforceStandardObjectAttachmentConfiguration = null,
-    StandardObjectConfigurations: SalesforceStandardObjectConfigurationList = null
-  ): SalesforceConfiguration = {
+  def apply(SecretArn: SecretArn, ServerUrl: Url): SalesforceConfiguration = {
     val __obj = js.Dynamic.literal(SecretArn = SecretArn.asInstanceOf[js.Any], ServerUrl = ServerUrl.asInstanceOf[js.Any])
-    if (ChatterFeedConfiguration != null) __obj.updateDynamic("ChatterFeedConfiguration")(ChatterFeedConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(CrawlAttachments)) __obj.updateDynamic("CrawlAttachments")(CrawlAttachments.get.asInstanceOf[js.Any])
-    if (ExcludeAttachmentFilePatterns != null) __obj.updateDynamic("ExcludeAttachmentFilePatterns")(ExcludeAttachmentFilePatterns.asInstanceOf[js.Any])
-    if (IncludeAttachmentFilePatterns != null) __obj.updateDynamic("IncludeAttachmentFilePatterns")(IncludeAttachmentFilePatterns.asInstanceOf[js.Any])
-    if (KnowledgeArticleConfiguration != null) __obj.updateDynamic("KnowledgeArticleConfiguration")(KnowledgeArticleConfiguration.asInstanceOf[js.Any])
-    if (StandardObjectAttachmentConfiguration != null) __obj.updateDynamic("StandardObjectAttachmentConfiguration")(StandardObjectAttachmentConfiguration.asInstanceOf[js.Any])
-    if (StandardObjectConfigurations != null) __obj.updateDynamic("StandardObjectConfigurations")(StandardObjectConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SalesforceConfiguration]
   }
+  @scala.inline
+  implicit class SalesforceConfigurationOps[Self <: SalesforceConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerUrl(value: Url): Self = this.set("ServerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChatterFeedConfiguration(value: SalesforceChatterFeedConfiguration): Self = this.set("ChatterFeedConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChatterFeedConfiguration: Self = this.set("ChatterFeedConfiguration", js.undefined)
+    @scala.inline
+    def setCrawlAttachments(value: Boolean): Self = this.set("CrawlAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlAttachments: Self = this.set("CrawlAttachments", js.undefined)
+    @scala.inline
+    def setExcludeAttachmentFilePatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("ExcludeAttachmentFilePatterns", js.Array(value :_*))
+    @scala.inline
+    def setExcludeAttachmentFilePatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("ExcludeAttachmentFilePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeAttachmentFilePatterns: Self = this.set("ExcludeAttachmentFilePatterns", js.undefined)
+    @scala.inline
+    def setIncludeAttachmentFilePatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("IncludeAttachmentFilePatterns", js.Array(value :_*))
+    @scala.inline
+    def setIncludeAttachmentFilePatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("IncludeAttachmentFilePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeAttachmentFilePatterns: Self = this.set("IncludeAttachmentFilePatterns", js.undefined)
+    @scala.inline
+    def setKnowledgeArticleConfiguration(value: SalesforceKnowledgeArticleConfiguration): Self = this.set("KnowledgeArticleConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKnowledgeArticleConfiguration: Self = this.set("KnowledgeArticleConfiguration", js.undefined)
+    @scala.inline
+    def setStandardObjectAttachmentConfiguration(value: SalesforceStandardObjectAttachmentConfiguration): Self = this.set("StandardObjectAttachmentConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandardObjectAttachmentConfiguration: Self = this.set("StandardObjectAttachmentConfiguration", js.undefined)
+    @scala.inline
+    def setStandardObjectConfigurationsVarargs(value: SalesforceStandardObjectConfiguration*): Self = this.set("StandardObjectConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setStandardObjectConfigurations(value: SalesforceStandardObjectConfigurationList): Self = this.set("StandardObjectConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandardObjectConfigurations: Self = this.set("StandardObjectConfigurations", js.undefined)
+  }
+  
 }
 

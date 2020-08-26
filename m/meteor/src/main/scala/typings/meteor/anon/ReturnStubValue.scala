@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReturnStubValue[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] extends js.Object {
   var onResultReceived: js.UndefOr[
     js.Function2[
@@ -14,27 +15,49 @@ trait ReturnStubValue[Result /* <: EJSONable | (js.Array[EJSONable | EJSONablePr
       /* result */ js.UndefOr[Result], 
       Unit
     ]
-  ] = js.undefined
-  var returnStubValue: js.UndefOr[Boolean] = js.undefined
-  var throwStubExceptions: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var returnStubValue: js.UndefOr[Boolean] = js.native
+  var throwStubExceptions: js.UndefOr[Boolean] = js.native
   @JSName("wait")
-  var wait_FReturnStubValue: js.UndefOr[Boolean] = js.undefined
+  var wait_FReturnStubValue: js.UndefOr[Boolean] = js.native
 }
 
 object ReturnStubValue {
   @scala.inline
-  def apply[/* <: typings.meteor.EJSONable | (js.Array[typings.meteor.EJSONable | typings.meteor.EJSONableProperty]) | typings.meteor.EJSONableProperty */ Result](
-    onResultReceived: (/* error */ js.UndefOr[globalError | typings.meteor.Meteor.Error], /* result */ js.UndefOr[Result]) => Unit = null,
-    returnStubValue: js.UndefOr[Boolean] = js.undefined,
-    throwStubExceptions: js.UndefOr[Boolean] = js.undefined,
-    wait: js.UndefOr[Boolean] = js.undefined
-  ): ReturnStubValue[Result] = {
+  def apply[/* <: typings.meteor.EJSONable | (js.Array[typings.meteor.EJSONable | typings.meteor.EJSONableProperty]) | typings.meteor.EJSONableProperty */ Result](): ReturnStubValue[Result] = {
     val __obj = js.Dynamic.literal()
-    if (onResultReceived != null) __obj.updateDynamic("onResultReceived")(js.Any.fromFunction2(onResultReceived))
-    if (!js.isUndefined(returnStubValue)) __obj.updateDynamic("returnStubValue")(returnStubValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwStubExceptions)) __obj.updateDynamic("throwStubExceptions")(throwStubExceptions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnStubValue[Result]]
   }
+  @scala.inline
+  implicit class ReturnStubValueOps[Self <: ReturnStubValue[_], /* <: typings.meteor.EJSONable | (js.Array[typings.meteor.EJSONable | typings.meteor.EJSONableProperty]) | typings.meteor.EJSONableProperty */ Result] (val x: Self with ReturnStubValue[Result]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnResultReceived(
+      value: (/* error */ js.UndefOr[globalError | typings.meteor.Meteor.Error], /* result */ js.UndefOr[Result]) => Unit
+    ): Self = this.set("onResultReceived", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnResultReceived: Self = this.set("onResultReceived", js.undefined)
+    @scala.inline
+    def setReturnStubValue(value: Boolean): Self = this.set("returnStubValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnStubValue: Self = this.set("returnStubValue", js.undefined)
+    @scala.inline
+    def setThrowStubExceptions(value: Boolean): Self = this.set("throwStubExceptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrowStubExceptions: Self = this.set("throwStubExceptions", js.undefined)
+    @scala.inline
+    def setWait(value: Boolean): Self = this.set("wait", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWait: Self = this.set("wait", js.undefined)
+  }
+  
 }
 

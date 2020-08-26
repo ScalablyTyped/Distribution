@@ -72,28 +72,58 @@ trait SchemaEnrollmentToken extends js.Object {
 
 object SchemaEnrollmentToken {
   @scala.inline
-  def apply(
-    additionalData: String = null,
-    duration: String = null,
-    expirationTimestamp: String = null,
-    name: String = null,
-    oneTimeOnly: js.UndefOr[Boolean] = js.undefined,
-    policyName: String = null,
-    qrCode: String = null,
-    user: SchemaUser = null,
-    value: String = null
-  ): SchemaEnrollmentToken = {
+  def apply(): SchemaEnrollmentToken = {
     val __obj = js.Dynamic.literal()
-    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (expirationTimestamp != null) __obj.updateDynamic("expirationTimestamp")(expirationTimestamp.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneTimeOnly)) __obj.updateDynamic("oneTimeOnly")(oneTimeOnly.get.asInstanceOf[js.Any])
-    if (policyName != null) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
-    if (qrCode != null) __obj.updateDynamic("qrCode")(qrCode.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnrollmentToken]
   }
+  @scala.inline
+  implicit class SchemaEnrollmentTokenOps[Self <: SchemaEnrollmentToken] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalData(value: String): Self = this.set("additionalData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalData: Self = this.set("additionalData", js.undefined)
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setExpirationTimestamp(value: String): Self = this.set("expirationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTimestamp: Self = this.set("expirationTimestamp", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOneTimeOnly(value: Boolean): Self = this.set("oneTimeOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOneTimeOnly: Self = this.set("oneTimeOnly", js.undefined)
+    @scala.inline
+    def setPolicyName(value: String): Self = this.set("policyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyName: Self = this.set("policyName", js.undefined)
+    @scala.inline
+    def setQrCode(value: String): Self = this.set("qrCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQrCode: Self = this.set("qrCode", js.undefined)
+    @scala.inline
+    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

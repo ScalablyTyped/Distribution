@@ -34,22 +34,46 @@ trait GeoLocationDetails extends js.Object {
 
 object GeoLocationDetails {
   @scala.inline
-  def apply(
-    ContinentCode: GeoLocationContinentCode = null,
-    ContinentName: GeoLocationContinentName = null,
-    CountryCode: GeoLocationCountryCode = null,
-    CountryName: GeoLocationCountryName = null,
-    SubdivisionCode: GeoLocationSubdivisionCode = null,
-    SubdivisionName: GeoLocationSubdivisionName = null
-  ): GeoLocationDetails = {
+  def apply(): GeoLocationDetails = {
     val __obj = js.Dynamic.literal()
-    if (ContinentCode != null) __obj.updateDynamic("ContinentCode")(ContinentCode.asInstanceOf[js.Any])
-    if (ContinentName != null) __obj.updateDynamic("ContinentName")(ContinentName.asInstanceOf[js.Any])
-    if (CountryCode != null) __obj.updateDynamic("CountryCode")(CountryCode.asInstanceOf[js.Any])
-    if (CountryName != null) __obj.updateDynamic("CountryName")(CountryName.asInstanceOf[js.Any])
-    if (SubdivisionCode != null) __obj.updateDynamic("SubdivisionCode")(SubdivisionCode.asInstanceOf[js.Any])
-    if (SubdivisionName != null) __obj.updateDynamic("SubdivisionName")(SubdivisionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoLocationDetails]
   }
+  @scala.inline
+  implicit class GeoLocationDetailsOps[Self <: GeoLocationDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContinentCode(value: GeoLocationContinentCode): Self = this.set("ContinentCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinentCode: Self = this.set("ContinentCode", js.undefined)
+    @scala.inline
+    def setContinentName(value: GeoLocationContinentName): Self = this.set("ContinentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinentName: Self = this.set("ContinentName", js.undefined)
+    @scala.inline
+    def setCountryCode(value: GeoLocationCountryCode): Self = this.set("CountryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("CountryCode", js.undefined)
+    @scala.inline
+    def setCountryName(value: GeoLocationCountryName): Self = this.set("CountryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryName: Self = this.set("CountryName", js.undefined)
+    @scala.inline
+    def setSubdivisionCode(value: GeoLocationSubdivisionCode): Self = this.set("SubdivisionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdivisionCode: Self = this.set("SubdivisionCode", js.undefined)
+    @scala.inline
+    def setSubdivisionName(value: GeoLocationSubdivisionName): Self = this.set("SubdivisionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdivisionName: Self = this.set("SubdivisionName", js.undefined)
+  }
+  
 }
 

@@ -38,21 +38,46 @@ trait GetUploadStatusResponse extends js.Object {
 
 object GetUploadStatusResponse {
   @scala.inline
-  def apply(
-    createdDate: Timestamp,
-    uploadId: UploadId,
-    uploadStatus: UploadStatus,
-    failureReason: StringList = null,
-    namespaceArn: Arn = null,
-    namespaceName: NamespaceName = null,
-    namespaceVersion: js.UndefOr[Version] = js.undefined
-  ): GetUploadStatusResponse = {
+  def apply(createdDate: Timestamp, uploadId: UploadId, uploadStatus: UploadStatus): GetUploadStatusResponse = {
     val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], uploadStatus = uploadStatus.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (namespaceArn != null) __obj.updateDynamic("namespaceArn")(namespaceArn.asInstanceOf[js.Any])
-    if (namespaceName != null) __obj.updateDynamic("namespaceName")(namespaceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaceVersion)) __obj.updateDynamic("namespaceVersion")(namespaceVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUploadStatusResponse]
   }
+  @scala.inline
+  implicit class GetUploadStatusResponseOps[Self <: GetUploadStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUploadId(value: UploadId): Self = this.set("uploadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUploadStatus(value: UploadStatus): Self = this.set("uploadStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFailureReasonVarargs(value: String*): Self = this.set("failureReason", js.Array(value :_*))
+    @scala.inline
+    def setFailureReason(value: StringList): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setNamespaceArn(value: Arn): Self = this.set("namespaceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceArn: Self = this.set("namespaceArn", js.undefined)
+    @scala.inline
+    def setNamespaceName(value: NamespaceName): Self = this.set("namespaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceName: Self = this.set("namespaceName", js.undefined)
+    @scala.inline
+    def setNamespaceVersion(value: Version): Self = this.set("namespaceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceVersion: Self = this.set("namespaceVersion", js.undefined)
+  }
+  
 }
 

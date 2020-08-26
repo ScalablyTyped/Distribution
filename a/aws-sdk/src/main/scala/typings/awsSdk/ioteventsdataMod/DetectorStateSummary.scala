@@ -14,10 +14,26 @@ trait DetectorStateSummary extends js.Object {
 
 object DetectorStateSummary {
   @scala.inline
-  def apply(stateName: StateName = null): DetectorStateSummary = {
+  def apply(): DetectorStateSummary = {
     val __obj = js.Dynamic.literal()
-    if (stateName != null) __obj.updateDynamic("stateName")(stateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorStateSummary]
   }
+  @scala.inline
+  implicit class DetectorStateSummaryOps[Self <: DetectorStateSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStateName(value: StateName): Self = this.set("stateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateName: Self = this.set("stateName", js.undefined)
+  }
+  
 }
 

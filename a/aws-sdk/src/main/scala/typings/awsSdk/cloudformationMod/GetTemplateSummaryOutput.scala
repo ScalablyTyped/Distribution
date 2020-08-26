@@ -46,28 +46,68 @@ trait GetTemplateSummaryOutput extends js.Object {
 
 object GetTemplateSummaryOutput {
   @scala.inline
-  def apply(
-    Capabilities: Capabilities = null,
-    CapabilitiesReason: CapabilitiesReason = null,
-    DeclaredTransforms: TransformsList = null,
-    Description: Description = null,
-    Metadata: Metadata = null,
-    Parameters: ParameterDeclarations = null,
-    ResourceIdentifierSummaries: ResourceIdentifierSummaries = null,
-    ResourceTypes: ResourceTypes = null,
-    Version: Version = null
-  ): GetTemplateSummaryOutput = {
+  def apply(): GetTemplateSummaryOutput = {
     val __obj = js.Dynamic.literal()
-    if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
-    if (CapabilitiesReason != null) __obj.updateDynamic("CapabilitiesReason")(CapabilitiesReason.asInstanceOf[js.Any])
-    if (DeclaredTransforms != null) __obj.updateDynamic("DeclaredTransforms")(DeclaredTransforms.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (ResourceIdentifierSummaries != null) __obj.updateDynamic("ResourceIdentifierSummaries")(ResourceIdentifierSummaries.asInstanceOf[js.Any])
-    if (ResourceTypes != null) __obj.updateDynamic("ResourceTypes")(ResourceTypes.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTemplateSummaryOutput]
   }
+  @scala.inline
+  implicit class GetTemplateSummaryOutputOps[Self <: GetTemplateSummaryOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    @scala.inline
+    def setCapabilitiesReason(value: CapabilitiesReason): Self = this.set("CapabilitiesReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilitiesReason: Self = this.set("CapabilitiesReason", js.undefined)
+    @scala.inline
+    def setDeclaredTransformsVarargs(value: TransformName*): Self = this.set("DeclaredTransforms", js.Array(value :_*))
+    @scala.inline
+    def setDeclaredTransforms(value: TransformsList): Self = this.set("DeclaredTransforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeclaredTransforms: Self = this.set("DeclaredTransforms", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setMetadata(value: Metadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: ParameterDeclaration*): Self = this.set("Parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: ParameterDeclarations): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setResourceIdentifierSummariesVarargs(value: ResourceIdentifierSummary*): Self = this.set("ResourceIdentifierSummaries", js.Array(value :_*))
+    @scala.inline
+    def setResourceIdentifierSummaries(value: ResourceIdentifierSummaries): Self = this.set("ResourceIdentifierSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIdentifierSummaries: Self = this.set("ResourceIdentifierSummaries", js.undefined)
+    @scala.inline
+    def setResourceTypesVarargs(value: ResourceType*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypes(value: ResourceTypes): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

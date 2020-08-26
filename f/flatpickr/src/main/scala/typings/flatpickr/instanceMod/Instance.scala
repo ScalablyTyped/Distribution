@@ -22,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined flatpickr.flatpickr/dist/types/instance.Elements & flatpickr.flatpickr/dist/types/instance.Formatting & {  minRangeDate ? :flatpickr.flatpickr/dist/types/globals.<global>.Date,   maxRangeDate ? :flatpickr.flatpickr/dist/types/globals.<global>.Date,   now  :flatpickr.flatpickr/dist/types/globals.<global>.Date,   latestSelectedDateObj ? :flatpickr.flatpickr/dist/types/globals.<global>.Date,   _selectedDateObj ? :flatpickr.flatpickr/dist/types/globals.<global>.Date,   selectedDates  :std.Array<flatpickr.flatpickr/dist/types/globals.<global>.Date>,   _initialDate  :flatpickr.flatpickr/dist/types/globals.<global>.Date,   config  :flatpickr.flatpickr/dist/types/options.ParsedOptions,   loadedPlugins  :std.Array<string>,   l10n  :flatpickr.flatpickr/dist/types/locale.Locale,   currentYear  :number,   currentMonth  :number,   isOpen  :boolean,   isMobile  :boolean,   minDateHasTime  :boolean,   maxDateHasTime  :boolean,   showTimeInput  :boolean,   _showTimeInput  :boolean, changeMonth (value : number, isOffset ? : boolean, fromKeyboard ? : boolean): void, changeYear (year : number): void, clear (emitChangeEvent ? : boolean, toInitial ? : boolean): void, close (): void, destroy (): void, isEnabled (date : flatpickr.flatpickr/dist/types/options.DateOption, timeless ? : boolean): boolean, jumpToDate (date ? : flatpickr.flatpickr/dist/types/options.DateOption, triggerChange ? : boolean): void, open (e ? : std.FocusEvent | std.MouseEvent, positionElement ? : flatpickr.flatpickr/dist/types/globals.<global>.HTMLElement): void, redraw (): void, set (option : keyof flatpickr.flatpickr/dist/types/options.Options | {[ k in keyof flatpickr.flatpickr/dist/types/options.Options ]:? flatpickr.flatpickr/dist/types/options.Options[k]}, value ? : any): void, setDate (date : flatpickr.flatpickr/dist/types/options.DateOption | std.Array<flatpickr.flatpickr/dist/types/options.DateOption>, triggerChange ? : boolean, format ? : string): void, toggle (): void, pad (num : string | number): string, parseDate (date : flatpickr.flatpickr/dist/types/globals.<global>.Date | string | number, givenFormat ? : string, timeless ? : boolean): flatpickr.flatpickr/dist/types/globals.<global>.Date | undefined, formatDate (dateObj : flatpickr.flatpickr/dist/types/globals.<global>.Date, frmt : string): string,   _handlers  :std.Array<{  event  :string,   element  :std.Element, handler (e ? : std.Event): void,   options ? :{  capture ? :boolean}}>, _bind <E extends std.Element>(element : E | std.Array<E>, event : string | std.Array<string>, handler : (e ? : any): void): void, _createElement <E extends flatpickr.flatpickr/dist/types/globals.<global>.HTMLElement>(tag : keyof std.HTMLElementTagNameMap, className : string, content ? : string): E, _setHoursFromDate (date : flatpickr.flatpickr/dist/types/globals.<global>.Date): void, _debouncedChange (): void,   __hideNextMonthArrow  :boolean,   __hidePrevMonthArrow  :boolean, _positionCalendar (customPositionElement ? : flatpickr.flatpickr/dist/types/globals.<global>.HTMLElement): void,   utils  :{getDaysInMonth (month ? : number, year ? : number): number}} */
+/* Inlined flatpickr.flatpickr/dist/types/instance.Elements & flatpickr.flatpickr/dist/types/instance.Formatting & {  minRangeDate :flatpickr.flatpickr/dist/types/globals.<global>.Date | undefined,   maxRangeDate :flatpickr.flatpickr/dist/types/globals.<global>.Date | undefined,   now :flatpickr.flatpickr/dist/types/globals.<global>.Date,   latestSelectedDateObj :flatpickr.flatpickr/dist/types/globals.<global>.Date | undefined,   _selectedDateObj :flatpickr.flatpickr/dist/types/globals.<global>.Date | undefined,   selectedDates :std.Array<flatpickr.flatpickr/dist/types/globals.<global>.Date>,   _initialDate :flatpickr.flatpickr/dist/types/globals.<global>.Date,   config :flatpickr.flatpickr/dist/types/options.ParsedOptions,   loadedPlugins :std.Array<string>,   l10n :flatpickr.flatpickr/dist/types/locale.Locale,   currentYear :number,   currentMonth :number,   isOpen :boolean,   isMobile :boolean,   minDateHasTime :boolean,   maxDateHasTime :boolean,   showTimeInput :boolean,   _showTimeInput :boolean, changeMonth (value : number, isOffset : boolean | undefined, fromKeyboard : boolean | undefined): void, changeYear (year : number): void, clear (emitChangeEvent : boolean | undefined, toInitial : boolean | undefined): void, close (): void, destroy (): void, isEnabled (date : flatpickr.flatpickr/dist/types/options.DateOption, timeless : boolean | undefined): boolean, jumpToDate (date : flatpickr.flatpickr/dist/types/options.DateOption | undefined, triggerChange : boolean | undefined): void, open (e : std.FocusEvent | std.MouseEvent | undefined, positionElement : flatpickr.flatpickr/dist/types/globals.<global>.HTMLElement | undefined): void, redraw (): void, set (option : keyof flatpickr.flatpickr/dist/types/options.Options | {[ k in keyof flatpickr.flatpickr/dist/types/options.Options ]:? flatpickr.flatpickr/dist/types/options.Options[k]}, value : any | undefined): void, setDate (date : flatpickr.flatpickr/dist/types/options.DateOption | std.Array<flatpickr.flatpickr/dist/types/options.DateOption>, triggerChange : boolean | undefined, format : string | undefined): void, toggle (): void, pad (num : string | number): string, parseDate (date : flatpickr.flatpickr/dist/types/globals.<global>.Date | string | number, givenFormat : string | undefined, timeless : boolean | undefined): flatpickr.flatpickr/dist/types/globals.<global>.Date | undefined, formatDate (dateObj : flatpickr.flatpickr/dist/types/globals.<global>.Date, frmt : string): string,   _handlers :std.Array<{  event :string,   element :std.Element, handler (e : std.Event | undefined): void,   options :{  capture :boolean | undefined} | undefined}>, _bind <E extends std.Element>(element : E | std.Array<E>, event : string | std.Array<string>, handler : (e : any | undefined): void): void, _createElement <E extends flatpickr.flatpickr/dist/types/globals.<global>.HTMLElement>(tag : keyof std.HTMLElementTagNameMap, className : string, content : string | undefined): E, _setHoursFromDate (date : flatpickr.flatpickr/dist/types/globals.<global>.Date): void, _debouncedChange (): void,   __hideNextMonthArrow :boolean,   __hidePrevMonthArrow :boolean, _positionCalendar (customPositionElement : flatpickr.flatpickr/dist/types/globals.<global>.HTMLElement | undefined): void,   utils :{getDaysInMonth (month : number | undefined, year : number | undefined): number}} */
 @js.native
 trait Instance extends js.Object {
   var __hideNextMonthArrow: Boolean = js.native
@@ -105,10 +105,12 @@ trait Instance extends js.Object {
   def _positionCalendar(customPositionElement: HTMLElement): Unit = js.native
   def _setHoursFromDate(date: Date): Unit = js.native
   def changeMonth(value: Double): Unit = js.native
+  def changeMonth(value: Double, isOffset: js.UndefOr[scala.Nothing], fromKeyboard: Boolean): Unit = js.native
   def changeMonth(value: Double, isOffset: Boolean): Unit = js.native
   def changeMonth(value: Double, isOffset: Boolean, fromKeyboard: Boolean): Unit = js.native
   def changeYear(year: Double): Unit = js.native
   def clear(): Unit = js.native
+  def clear(emitChangeEvent: js.UndefOr[scala.Nothing], toInitial: Boolean): Unit = js.native
   def clear(emitChangeEvent: Boolean): Unit = js.native
   def clear(emitChangeEvent: Boolean, toInitial: Boolean): Unit = js.native
   def close(): Unit = js.native
@@ -117,9 +119,10 @@ trait Instance extends js.Object {
   def isEnabled(date: DateOption): Boolean = js.native
   def isEnabled(date: DateOption, timeless: Boolean): Boolean = js.native
   def jumpToDate(): Unit = js.native
+  def jumpToDate(date: js.UndefOr[DateOption], triggerChange: Boolean): Unit = js.native
   def jumpToDate(date: DateOption): Unit = js.native
-  def jumpToDate(date: DateOption, triggerChange: Boolean): Unit = js.native
   def open(): Unit = js.native
+  def open(e: js.UndefOr[scala.Nothing], positionElement: HTMLElement): Unit = js.native
   def open(e: FocusEvent): Unit = js.native
   def open(e: FocusEvent, positionElement: HTMLElement): Unit = js.native
   def open(e: MouseEvent): Unit = js.native
@@ -127,12 +130,15 @@ trait Instance extends js.Object {
   def pad(num: String): String = js.native
   def pad(num: Double): String = js.native
   def parseDate(date: String): js.UndefOr[Date] = js.native
+  def parseDate(date: String, givenFormat: js.UndefOr[scala.Nothing], timeless: Boolean): js.UndefOr[Date] = js.native
   def parseDate(date: String, givenFormat: String): js.UndefOr[Date] = js.native
   def parseDate(date: String, givenFormat: String, timeless: Boolean): js.UndefOr[Date] = js.native
   def parseDate(date: Double): js.UndefOr[Date] = js.native
+  def parseDate(date: Double, givenFormat: js.UndefOr[scala.Nothing], timeless: Boolean): js.UndefOr[Date] = js.native
   def parseDate(date: Double, givenFormat: String): js.UndefOr[Date] = js.native
   def parseDate(date: Double, givenFormat: String, timeless: Boolean): js.UndefOr[Date] = js.native
   def parseDate(date: Date): js.UndefOr[Date] = js.native
+  def parseDate(date: Date, givenFormat: js.UndefOr[scala.Nothing], timeless: Boolean): js.UndefOr[Date] = js.native
   def parseDate(date: Date, givenFormat: String): js.UndefOr[Date] = js.native
   def parseDate(date: Date, givenFormat: String, timeless: Boolean): js.UndefOr[Date] = js.native
   def redraw(): Unit = js.native
@@ -144,9 +150,11 @@ trait Instance extends js.Object {
   def set(option: kinkeyofOptionsOptionsk): Unit = js.native
   def set(option: kinkeyofOptionsOptionsk, value: js.Any): Unit = js.native
   def setDate(date: js.Array[DateOption]): Unit = js.native
+  def setDate(date: js.Array[DateOption], triggerChange: js.UndefOr[scala.Nothing], format: String): Unit = js.native
   def setDate(date: js.Array[DateOption], triggerChange: Boolean): Unit = js.native
   def setDate(date: js.Array[DateOption], triggerChange: Boolean, format: String): Unit = js.native
   def setDate(date: DateOption): Unit = js.native
+  def setDate(date: DateOption, triggerChange: js.UndefOr[scala.Nothing], format: String): Unit = js.native
   def setDate(date: DateOption, triggerChange: Boolean): Unit = js.native
   def setDate(date: DateOption, triggerChange: Boolean, format: String): Unit = js.native
   def toggle(): Unit = js.native

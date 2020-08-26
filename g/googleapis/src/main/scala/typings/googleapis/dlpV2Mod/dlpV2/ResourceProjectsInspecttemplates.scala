@@ -30,6 +30,7 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def create(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectTemplate]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def create(params: ParamsResourceProjectsInspecttemplatesCreate): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def create(
     params: ParamsResourceProjectsInspecttemplatesCreate,
@@ -61,6 +62,7 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceProjectsInspecttemplatesDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsInspecttemplatesDelete,
@@ -92,6 +94,7 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def get(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectTemplate]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def get(params: ParamsResourceProjectsInspecttemplatesGet): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def get(
     params: ParamsResourceProjectsInspecttemplatesGet,
@@ -126,6 +129,7 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse] = js.native
   def list(params: ParamsResourceProjectsInspecttemplatesList): GaxiosPromise[SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse] = js.native
   def list(
     params: ParamsResourceProjectsInspecttemplatesList,
@@ -158,6 +162,7 @@ class ResourceProjectsInspecttemplates protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def patch(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectTemplate]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def patch(params: ParamsResourceProjectsInspecttemplatesPatch): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
   def patch(
     params: ParamsResourceProjectsInspecttemplatesPatch,

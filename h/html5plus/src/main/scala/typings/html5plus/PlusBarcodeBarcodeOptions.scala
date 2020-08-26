@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
   */
+@js.native
 trait PlusBarcodeBarcodeOptions extends js.Object {
   /**
     * 是否保存扫码成功时的截图
@@ -20,14 +21,14 @@ trait PlusBarcodeBarcodeOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var conserve: js.UndefOr[Boolean] = js.undefined
+  var conserve: js.UndefOr[Boolean] = js.native
   /**
     * 保存扫码成功时图片保存路径
     * 可通过此参数设置保存截图的路径和名称，如果设置图片文件名称则必须指定文件的后缀名（必须是.png），否则认为是指定目录，文件名称则自动生成。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var filename: js.UndefOr[String] = js.undefined
+  var filename: js.UndefOr[String] = js.native
   /**
     * 扫码成功时播放的提示音
     * 可取值：
@@ -39,7 +40,7 @@ trait PlusBarcodeBarcodeOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var sound: js.UndefOr[none | default] = js.undefined
+  var sound: js.UndefOr[none | default] = js.native
   /**
     * 扫码成功时是否需要震动提醒
     * 如果设置为true则在扫码成功时震动设备，false则不震动。
@@ -47,23 +48,43 @@ trait PlusBarcodeBarcodeOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/barcode.html](http://www.html5plus.org/doc/zh_cn/barcode.html)
     */
-  var vibrate: js.UndefOr[Boolean] = js.undefined
+  var vibrate: js.UndefOr[Boolean] = js.native
 }
 
 object PlusBarcodeBarcodeOptions {
   @scala.inline
-  def apply(
-    conserve: js.UndefOr[Boolean] = js.undefined,
-    filename: String = null,
-    sound: none | default = null,
-    vibrate: js.UndefOr[Boolean] = js.undefined
-  ): PlusBarcodeBarcodeOptions = {
+  def apply(): PlusBarcodeBarcodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(conserve)) __obj.updateDynamic("conserve")(conserve.get.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusBarcodeBarcodeOptions]
   }
+  @scala.inline
+  implicit class PlusBarcodeBarcodeOptionsOps[Self <: PlusBarcodeBarcodeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConserve(value: Boolean): Self = this.set("conserve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConserve: Self = this.set("conserve", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setSound(value: none | default): Self = this.set("sound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSound: Self = this.set("sound", js.undefined)
+    @scala.inline
+    def setVibrate(value: Boolean): Self = this.set("vibrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVibrate: Self = this.set("vibrate", js.undefined)
+  }
+  
 }
 

@@ -45,6 +45,7 @@ trait AnySchema
     *  second parameter is required.
     */
   def default(): this.type = js.native
+  def default(value: js.UndefOr[scala.Nothing], description: String): this.type = js.native
   def default(value: js.Any): this.type = js.native
   def default(value: js.Any, description: String): this.type = js.native
   /**

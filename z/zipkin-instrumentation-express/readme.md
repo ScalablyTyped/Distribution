@@ -1,7 +1,7 @@
 
 # Scala.js typings for zipkin-instrumentation-express
 
-Typings are for version 0.19.2
+Typings are for version 0.22.0
 
 ## Library description:
 Express middleware for instrumentation with Zipkin.js
@@ -10,9 +10,9 @@ Express middleware for instrumentation with Zipkin.js
 | ------------------ | :-------------: |
 | Full name          | zipkin-instrumentation-express |
 | Keywords           | - |
-| # releases         | 28 |
+| # releases         | 27 |
 | # dependents       | 22 |
-| # downloads        | 232145 |
+| # downloads        | 238190 |
 | # stars            | 1 |
 
 ## Links

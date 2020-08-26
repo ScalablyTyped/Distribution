@@ -8,8 +8,24 @@ import scala.scalajs.js.annotation._
 @js.native
 class Cartesian4 () extends Packable {
   def this(x: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
+  def this(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    z: js.UndefOr[scala.Nothing],
+    w: Double
+  ) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+  def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
   var w: Double = js.native
   var x: Double = js.native
@@ -40,11 +56,13 @@ object Cartesian4 extends js.Object {
   def divideByScalar(cartesian: Cartesian4, scalar: Double, result: Cartesian4): Cartesian4 = js.native
   def dot(left: Cartesian4, right: Cartesian4): Double = js.native
   def equals(): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: Cartesian4): Boolean = js.native
   def equals(left: Cartesian4): Boolean = js.native
   def equals(left: Cartesian4, right: Cartesian4): Boolean = js.native
   def equalsEpsilon(left: Cartesian4, right: Cartesian4, relativeEpsilon: Double): Boolean = js.native
   def equalsEpsilon(left: Cartesian4, right: Cartesian4, relativeEpsilon: Double, absoluteEpsilon: Double): Boolean = js.native
   def fromArray(array: js.Array[Double]): Cartesian4 = js.native
+  def fromArray(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Cartesian4): Cartesian4 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double): Cartesian4 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double, result: Cartesian4): Cartesian4 = js.native
   def fromColor(color: Color): Cartesian4 = js.native
@@ -67,6 +85,7 @@ object Cartesian4 extends js.Object {
   def pack(value: Cartesian4, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
   def subtract(left: Cartesian4, right: Cartesian4, result: Cartesian4): Cartesian4 = js.native
   def unpack(array: js.Array[Double]): Cartesian4 = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Cartesian4): Cartesian4 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): Cartesian4 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: Cartesian4): Cartesian4 = js.native
 }

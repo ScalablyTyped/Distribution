@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Asset extends js.Object {
-  var asset: js.UndefOr[Double] = js.undefined
-  var autoPlay: js.UndefOr[Boolean] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var overlap: js.UndefOr[Boolean] = js.undefined
-  var pitch: js.UndefOr[Double] = js.undefined
-  var startTime: js.UndefOr[Double] = js.undefined
-  var volume: js.UndefOr[Double] = js.undefined
+  var asset: js.UndefOr[Double] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var overlap: js.UndefOr[Boolean] = js.native
+  var pitch: js.UndefOr[Double] = js.native
+  var startTime: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.native
 }
 
 object Asset {
   @scala.inline
-  def apply(
-    asset: js.UndefOr[Double] = js.undefined,
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    overlap: js.UndefOr[Boolean] = js.undefined,
-    pitch: js.UndefOr[Double] = js.undefined,
-    startTime: js.UndefOr[Double] = js.undefined,
-    volume: js.UndefOr[Double] = js.undefined
-  ): Asset = {
+  def apply(): Asset = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asset)) __obj.updateDynamic("asset")(asset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Asset]
   }
+  @scala.inline
+  implicit class AssetOps[Self <: Asset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsset(value: Double): Self = this.set("asset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsset: Self = this.set("asset", js.undefined)
+    @scala.inline
+    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setOverlap(value: Boolean): Self = this.set("overlap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlap: Self = this.set("overlap", js.undefined)
+    @scala.inline
+    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePitch: Self = this.set("pitch", js.undefined)
+    @scala.inline
+    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+  }
+  
 }
 

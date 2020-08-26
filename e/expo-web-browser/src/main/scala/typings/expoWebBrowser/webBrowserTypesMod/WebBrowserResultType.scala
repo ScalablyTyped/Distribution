@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined { readonly CANCEL  :'cancel',  readonly DISMISS  :'dismiss',  readonly OPENED  :'opened'}[keyof { readonly CANCEL  :'cancel',  readonly DISMISS  :'dismiss',  readonly OPENED  :'opened'}] */
+/* Inlined { readonly CANCEL :'cancel',  readonly DISMISS :'dismiss',  readonly OPENED :'opened'}[keyof { readonly CANCEL :'cancel',  readonly DISMISS :'dismiss',  readonly OPENED :'opened'}] */
 /* Rewritten from type alias, can be one of: 
   - typings.expoWebBrowser.expoWebBrowserStrings.cancel
   - typings.expoWebBrowser.expoWebBrowserStrings.dismiss

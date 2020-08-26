@@ -7,49 +7,64 @@ import scala.scalajs.js.annotation._
 /**
   * A timing schedule that specifies an event that may occur multiple times
   */
+@js.native
 trait Timing extends Element {
   /**
     * Contains extended information for property 'event'.
     */
-  var _event: js.UndefOr[js.Array[Element]] = js.undefined
+  var _event: js.UndefOr[js.Array[Element]] = js.native
   /**
     * BID | TID | QID | AM | PM | QD | QOD | Q4H | Q6H +
     */
-  var code: js.UndefOr[CodeableConcept] = js.undefined
+  var code: js.UndefOr[CodeableConcept] = js.native
   /**
     * When the event occurs
     */
-  var event: js.UndefOr[js.Array[dateTime]] = js.undefined
+  var event: js.UndefOr[js.Array[dateTime]] = js.native
   /**
     * When the event is to occur
     */
-  var repeat: js.UndefOr[TimingRepeat] = js.undefined
+  var repeat: js.UndefOr[TimingRepeat] = js.native
 }
 
 object Timing {
   @scala.inline
-  def apply(
-    _event: js.Array[Element] = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    code: CodeableConcept = null,
-    event: js.Array[dateTime] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    repeat: TimingRepeat = null
-  ): Timing = {
+  def apply(): Timing = {
     val __obj = js.Dynamic.literal()
-    if (_event != null) __obj.updateDynamic("_event")(_event.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timing]
   }
+  @scala.inline
+  implicit class TimingOps[Self <: Timing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_eventVarargs(value: Element*): Self = this.set("_event", js.Array(value :_*))
+    @scala.inline
+    def set_event(value: js.Array[Element]): Self = this.set("_event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_event: Self = this.set("_event", js.undefined)
+    @scala.inline
+    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setEventVarargs(value: dateTime*): Self = this.set("event", js.Array(value :_*))
+    @scala.inline
+    def setEvent(value: js.Array[dateTime]): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+    @scala.inline
+    def setRepeat(value: TimingRepeat): Self = this.set("repeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeat: Self = this.set("repeat", js.undefined)
+  }
+  
 }
 

@@ -84,6 +84,7 @@ object base extends js.Object {
       */
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
+    def this(sId: String, mSettings: js.UndefOr[scala.Nothing], oScope: js.Any) = this()
     def this(sId: String, mSettings: js.Any, oScope: js.Any) = this()
   }
   
@@ -97,58 +98,6 @@ object base extends js.Object {
       * @param oClassInfo info to construct the class and its metadata from
       */
     def this(sClassName: String, oClassInfo: js.Any) = this()
-    /**
-      * Returns an array with the names of all public methods declared by the described classand its
-      * ancestors.
-      * @returns array with names of all public methods provided by the described class and its ancestors
-      */
-    /* CompleteClass */
-    override def getAllPublicMethods(): js.Array[String] = js.native
-    /**
-      * Returns the fully qualified name of the described class
-      * @returns name of the described class
-      */
-    /* CompleteClass */
-    override def getName(): String = js.native
-    /**
-      * Returns the metadata object of the base class of the described classor null if the class has no
-      * (documented) base class.
-      * @returns metadata of the base class
-      */
-    /* CompleteClass */
-    override def getParent(): typings.openui5.sap.ui.base.Metadata = js.native
-    /**
-      * Returns an array with the names of the public methods declared by the described class.
-      * @returns array with names of public methods declared by the described class
-      */
-    /* CompleteClass */
-    override def getPublicMethods(): js.Array[String] = js.native
-    /**
-      * Returns whether the described class is abstract
-      * @returns whether the class is abstract
-      */
-    /* CompleteClass */
-    override def isAbstract(): Boolean = js.native
-    /**
-      * Whether the described class is deprecated and should not be used any more
-      * @since 1.26.4
-      * @returns whether the class is considered deprecated
-      */
-    /* CompleteClass */
-    override def isDeprecated(): Boolean = js.native
-    /**
-      * Returns whether the described class is final
-      * @returns whether the class is final
-      */
-    /* CompleteClass */
-    override def isFinal(): Boolean = js.native
-    /**
-      * Checks whether the described class or one of its ancestor classes implements the given interface.
-      * @param sInterface name of the interface to test for (in dot notation)
-      * @returns whether this class implements the interface
-      */
-    /* CompleteClass */
-    override def isInstanceOf(sInterface: String): Boolean = js.native
   }
   
   @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-axe
 
-Typings are for version 3.2
+Typings are for version 3.5
 
 ## Library description:
 Custom Jest matcher for aXe for testing accessibility
@@ -11,8 +11,8 @@ Custom Jest matcher for aXe for testing accessibility
 | Full name          | jest-axe |
 | Keywords           | jest, matcher, axe, accessibility, a11y |
 | # releases         | 15 |
-| # dependents       | 2 |
-| # downloads        | 564914 |
+| # dependents       | 3 |
+| # downloads        | 630034 |
 | # stars            | 0 |
 
 ## Links

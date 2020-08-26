@@ -52,7 +52,11 @@ object DateExtras extends js.Object {
     * @returns Date The new Date instance.
     */
   def add(): js.Any = js.native
+  def add(date: js.UndefOr[scala.Nothing], interval: js.UndefOr[scala.Nothing], value: Double): js.Any = js.native
+  def add(date: js.UndefOr[scala.Nothing], interval: java.lang.String): js.Any = js.native
+  def add(date: js.UndefOr[scala.Nothing], interval: java.lang.String, value: Double): js.Any = js.native
   def add(date: js.Any): js.Any = js.native
+  def add(date: js.Any, interval: js.UndefOr[scala.Nothing], value: Double): js.Any = js.native
   def add(date: js.Any, interval: java.lang.String): js.Any = js.native
   def add(date: js.Any, interval: java.lang.String, value: Double): js.Any = js.native
   /** [Method] Align the date to unit
@@ -61,6 +65,7 @@ object DateExtras extends js.Object {
     * @returns Date The aligned date.
     */
   def align(): js.Any = js.native
+  def align(date: js.UndefOr[scala.Nothing], unit: java.lang.String): js.Any = js.native
   def align(date: js.Any): js.Any = js.native
   def align(date: js.Any, unit: java.lang.String): js.Any = js.native
   /** [Method] Checks if a date falls on or between the given start and end dates
@@ -70,7 +75,11 @@ object DateExtras extends js.Object {
     * @returns Boolean true if this date falls on or between the given start and end dates.
     */
   def between(): Boolean = js.native
+  def between(date: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], end: js.Any): Boolean = js.native
+  def between(date: js.UndefOr[scala.Nothing], start: js.Any): Boolean = js.native
+  def between(date: js.UndefOr[scala.Nothing], start: js.Any, end: js.Any): Boolean = js.native
   def between(date: js.Any): Boolean = js.native
+  def between(date: js.Any, start: js.UndefOr[scala.Nothing], end: js.Any): Boolean = js.native
   def between(date: js.Any, start: js.Any): Boolean = js.native
   def between(date: js.Any, start: js.Any, end: js.Any): Boolean = js.native
   /** [Method] Attempts to clear all time information from this Date by setting the time to midnight of the same day automatically
@@ -79,6 +88,7 @@ object DateExtras extends js.Object {
     * @returns Date this or the clone.
     */
   def clearTime(): js.Any = js.native
+  def clearTime(date: js.UndefOr[scala.Nothing], clone: Boolean): js.Any = js.native
   def clearTime(date: js.Any): js.Any = js.native
   def clearTime(date: js.Any, clone: Boolean): js.Any = js.native
   def clone(date: js.Any): js.Any = js.native
@@ -89,7 +99,11 @@ object DateExtras extends js.Object {
     * @returns Number The maximum number n of units that min + n * unit &lt;= max.
     */
   def diff(): Double = js.native
+  def diff(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], unit: java.lang.String): Double = js.native
+  def diff(min: js.UndefOr[scala.Nothing], max: js.Any): Double = js.native
+  def diff(min: js.UndefOr[scala.Nothing], max: js.Any, unit: java.lang.String): Double = js.native
   def diff(min: js.Any): Double = js.native
+  def diff(min: js.Any, max: js.UndefOr[scala.Nothing], unit: java.lang.String): Double = js.native
   def diff(min: js.Any, max: js.Any): Double = js.native
   def diff(min: js.Any, max: js.Any, unit: java.lang.String): Double = js.native
   /** [Method] Formats a date given the supplied format string
@@ -98,6 +112,7 @@ object DateExtras extends js.Object {
     * @returns String The formatted date.
     */
   def format(): java.lang.String = js.native
+  def format(date: js.UndefOr[scala.Nothing], format: java.lang.String): java.lang.String = js.native
   def format(date: js.Any): java.lang.String = js.native
   def format(date: js.Any, format: java.lang.String): java.lang.String = js.native
   /** [Method] Get the numeric day number of the year adjusted for leap year
@@ -118,6 +133,7 @@ object DateExtras extends js.Object {
     * @returns Number The difference in milliseconds.
     */
   def getElapsed(): Double = js.native
+  def getElapsed(dateA: js.UndefOr[scala.Nothing], dateB: js.Any): Double = js.native
   def getElapsed(dateA: js.Any): Double = js.native
   def getElapsed(dateA: js.Any, dateB: js.Any): Double = js.native
   /** [Method] Get the date of the first day of the month in which this date resides
@@ -138,6 +154,7 @@ object DateExtras extends js.Object {
     * @returns String The 4-character offset string prefixed with + or - (e.g. '-0600').
     */
   def getGMTOffset(): java.lang.String = js.native
+  def getGMTOffset(date: js.UndefOr[scala.Nothing], colon: Boolean): java.lang.String = js.native
   def getGMTOffset(date: js.Any): java.lang.String = js.native
   def getGMTOffset(date: js.Any, colon: Boolean): java.lang.String = js.native
   /** [Method] Get the date of the last day of the month in which this date resides
@@ -230,7 +247,11 @@ object DateExtras extends js.Object {
     * @returns Date/null The parsed Date, or null if an invalid date string.
     */
   def parse(): js.Any = js.native
+  def parse(input: js.UndefOr[scala.Nothing], format: js.UndefOr[scala.Nothing], strict: Boolean): js.Any = js.native
+  def parse(input: js.UndefOr[scala.Nothing], format: java.lang.String): js.Any = js.native
+  def parse(input: js.UndefOr[scala.Nothing], format: java.lang.String, strict: Boolean): js.Any = js.native
   def parse(input: js.Any): js.Any = js.native
+  def parse(input: js.Any, format: js.UndefOr[scala.Nothing], strict: Boolean): js.Any = js.native
   def parse(input: js.Any, format: java.lang.String): js.Any = js.native
   def parse(input: js.Any, format: java.lang.String, strict: Boolean): js.Any = js.native
 }

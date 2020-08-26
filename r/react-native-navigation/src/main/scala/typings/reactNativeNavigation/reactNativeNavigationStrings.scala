@@ -62,9 +62,6 @@ object reactNativeNavigationStrings {
   sealed trait bookmarks extends SystemItemIcon
   
   @js.native
-  sealed trait bottom extends js.Object
-  
-  @js.native
   sealed trait camera extends SystemItemIcon
   
   @js.native
@@ -137,13 +134,22 @@ object reactNativeNavigationStrings {
   sealed trait linear extends Interpolation
   
   @js.native
+  sealed trait locale extends js.Object
+  
+  @js.native
   sealed trait ltr extends js.Object
   
   @js.native
   sealed trait medium extends FontWeight
   
   @js.native
+  sealed trait mini extends js.Object
+  
+  @js.native
   sealed trait never extends js.Object
+  
+  @js.native
+  sealed trait none extends js.Object
   
   @js.native
   sealed trait onSwitchToTab extends js.Object
@@ -203,6 +209,9 @@ object reactNativeNavigationStrings {
   sealed trait showWhenActiveForce extends js.Object
   
   @js.native
+  sealed trait sidebar extends js.Object
+  
+  @js.native
   sealed trait stop extends SystemItemIcon
   
   @js.native
@@ -210,9 +219,6 @@ object reactNativeNavigationStrings {
   
   @js.native
   sealed trait together extends js.Object
-  
-  @js.native
-  sealed trait top extends js.Object
   
   @js.native
   sealed trait trailing extends js.Object
@@ -267,8 +273,6 @@ object reactNativeNavigationStrings {
   @scala.inline
   def bookmarks: bookmarks = "bookmarks".asInstanceOf[bookmarks]
   @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
@@ -317,11 +321,17 @@ object reactNativeNavigationStrings {
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
+  def locale: locale = "locale".asInstanceOf[locale]
+  @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
+  def mini: mini = "mini".asInstanceOf[mini]
+  @scala.inline
   def never: never = "never".asInstanceOf[never]
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def onSwitchToTab: onSwitchToTab = "onSwitchToTab".asInstanceOf[onSwitchToTab]
   @scala.inline
@@ -361,13 +371,13 @@ object reactNativeNavigationStrings {
   @scala.inline
   def showWhenActiveForce: showWhenActiveForce = "showWhenActiveForce".asInstanceOf[showWhenActiveForce]
   @scala.inline
+  def sidebar: sidebar = "sidebar".asInstanceOf[sidebar]
+  @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
   @scala.inline
   def together: together = "together".asInstanceOf[together]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
   @scala.inline
   def trailing: trailing = "trailing".asInstanceOf[trailing]
   @scala.inline

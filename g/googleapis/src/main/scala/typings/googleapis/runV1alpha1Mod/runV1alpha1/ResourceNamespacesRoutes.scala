@@ -27,6 +27,7 @@ class ResourceNamespacesRoutes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRoute] = js.native
   def get(callback: BodyResponseCallback[SchemaRoute]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoute] = js.native
   def get(params: ParamsResourceNamespacesRoutesGet): GaxiosPromise[SchemaRoute] = js.native
   def get(params: ParamsResourceNamespacesRoutesGet, callback: BodyResponseCallback[SchemaRoute]): Unit = js.native
   def get(
@@ -61,6 +62,7 @@ class ResourceNamespacesRoutes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListRoutesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListRoutesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListRoutesResponse] = js.native
   def list(params: ParamsResourceNamespacesRoutesList): GaxiosPromise[SchemaListRoutesResponse] = js.native
   def list(
     params: ParamsResourceNamespacesRoutesList,

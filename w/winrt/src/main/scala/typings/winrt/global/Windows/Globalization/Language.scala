@@ -9,14 +9,6 @@ import scala.scalajs.js.annotation._
 class Language protected ()
   extends typings.winrt.Windows.Globalization.Language {
   def this(languageTag: String) = this()
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /* CompleteClass */
-  override var languageTag: String = js.native
-  /* CompleteClass */
-  override var nativeName: String = js.native
-  /* CompleteClass */
-  override var script: String = js.native
 }
 
 /* static members */

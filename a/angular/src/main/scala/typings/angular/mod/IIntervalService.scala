@@ -11,8 +11,27 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait IIntervalService extends js.Object {
-  def apply(func: Function, delay: Double): IPromise[_] = js.native
-  def apply(func: Function, delay: Double, count: Double): IPromise[_] = js.native
+  def apply(
+    func: Function,
+    delay: Double,
+    count: js.UndefOr[scala.Nothing],
+    invokeApply: js.UndefOr[scala.Nothing],
+    args: js.Any*
+  ): IPromise[_] = js.native
+  def apply(
+    func: Function,
+    delay: Double,
+    count: js.UndefOr[scala.Nothing],
+    invokeApply: Boolean,
+    args: js.Any*
+  ): IPromise[_] = js.native
+  def apply(
+    func: Function,
+    delay: Double,
+    count: Double,
+    invokeApply: js.UndefOr[scala.Nothing],
+    args: js.Any*
+  ): IPromise[_] = js.native
   def apply(func: Function, delay: Double, count: Double, invokeApply: Boolean, args: js.Any*): IPromise[_] = js.native
   def cancel(promise: IPromise[_]): Boolean = js.native
 }

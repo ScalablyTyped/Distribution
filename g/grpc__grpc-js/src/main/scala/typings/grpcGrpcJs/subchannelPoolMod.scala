@@ -4,6 +4,7 @@ import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.subchannelMod.Subchannel
 import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
+import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +40,7 @@ object subchannelPoolMod extends js.Object {
       * @param channelCredentials
       */
     def getOrCreateSubchannel(
-      channelTarget: String,
+      channelTargetUri: GrpcUri,
       subchannelTarget: SubchannelAddress,
       channelArguments: ChannelOptions,
       channelCredentials: ChannelCredentials

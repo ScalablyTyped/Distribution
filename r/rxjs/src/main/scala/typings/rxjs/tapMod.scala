@@ -10,21 +10,31 @@ import scala.scalajs.js.annotation._
 @js.native
 object tapMod extends js.Object {
   def tap[T](): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.UndefOr[Null], error: js.UndefOr[Null], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.UndefOr[Null], error: js.Function1[/* error */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* error */ /* e */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](
-    next: js.UndefOr[Null],
-    error: js.Function1[/* error */ js.Any, Unit],
+    next: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* error */ /* e */ js.Any, Unit],
     complete: js.Function0[Unit]
   ): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.UndefOr[scala.Nothing], error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](next: js.Function1[/* x */ T, Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.Function1[/* value */ T, Unit], error: js.UndefOr[Null], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](
+    next: js.Function1[/* value */ /* x */ T, Unit],
+    error: js.UndefOr[scala.Nothing],
+    complete: js.Function0[Unit]
+  ): MonoTypeOperatorFunction[T] = js.native
   def tap[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](
     next: js.Function1[/* x */ T, Unit],
     error: js.Function1[/* e */ js.Any, Unit],
     complete: js.Function0[Unit]
   ): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.Function1[/* value */ T, Unit], error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: Null, error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: Null, error: js.Function1[/* error */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: Null, error: js.Function1[/* error */ js.Any, Unit], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: Null, error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](observer: PartialObserver[T]): MonoTypeOperatorFunction[T] = js.native
 }
 

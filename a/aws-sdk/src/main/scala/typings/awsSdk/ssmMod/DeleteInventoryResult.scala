@@ -22,16 +22,34 @@ trait DeleteInventoryResult extends js.Object {
 
 object DeleteInventoryResult {
   @scala.inline
-  def apply(
-    DeletionId: InventoryDeletionId = null,
-    DeletionSummary: InventoryDeletionSummary = null,
-    TypeName: InventoryItemTypeName = null
-  ): DeleteInventoryResult = {
+  def apply(): DeleteInventoryResult = {
     val __obj = js.Dynamic.literal()
-    if (DeletionId != null) __obj.updateDynamic("DeletionId")(DeletionId.asInstanceOf[js.Any])
-    if (DeletionSummary != null) __obj.updateDynamic("DeletionSummary")(DeletionSummary.asInstanceOf[js.Any])
-    if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInventoryResult]
   }
+  @scala.inline
+  implicit class DeleteInventoryResultOps[Self <: DeleteInventoryResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeletionId(value: InventoryDeletionId): Self = this.set("DeletionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionId: Self = this.set("DeletionId", js.undefined)
+    @scala.inline
+    def setDeletionSummary(value: InventoryDeletionSummary): Self = this.set("DeletionSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionSummary: Self = this.set("DeletionSummary", js.undefined)
+    @scala.inline
+    def setTypeName(value: InventoryItemTypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+  }
+  
 }
 

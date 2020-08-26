@@ -10,7 +10,16 @@ trait KnockoutPunchesFilters extends js.Object {
   def default(value: js.Any): js.Any = js.native
   def default(value: js.Any, defaultValue: js.Any): js.Any = js.native
   def fit(value: String): String = js.native
+  def fit(
+    value: String,
+    length: js.UndefOr[scala.Nothing],
+    replacement: js.UndefOr[scala.Nothing],
+    trimWhere: String
+  ): String = js.native
+  def fit(value: String, length: js.UndefOr[scala.Nothing], replacement: String): String = js.native
+  def fit(value: String, length: js.UndefOr[scala.Nothing], replacement: String, trimWhere: String): String = js.native
   def fit(value: String, length: Double): String = js.native
+  def fit(value: String, length: Double, replacement: js.UndefOr[scala.Nothing], trimWhere: String): String = js.native
   def fit(value: String, length: Double, replacement: String): String = js.native
   def fit(value: String, length: Double, replacement: String, trimWhere: String): String = js.native
   // Trim the value if it’s longer than the given length. The trimmed portion is
@@ -19,11 +28,21 @@ trait KnockoutPunchesFilters extends js.Object {
   // where option. For example: name | fit:10::'middle' will
   // convert Shakespeare to Shak...are.
   def fit(value: Double): String = js.native
+  def fit(
+    value: Double,
+    length: js.UndefOr[scala.Nothing],
+    replacement: js.UndefOr[scala.Nothing],
+    trimWhere: String
+  ): String = js.native
+  def fit(value: Double, length: js.UndefOr[scala.Nothing], replacement: String): String = js.native
+  def fit(value: Double, length: js.UndefOr[scala.Nothing], replacement: String, trimWhere: String): String = js.native
   def fit(value: Double, length: Double): String = js.native
+  def fit(value: Double, length: Double, replacement: js.UndefOr[scala.Nothing], trimWhere: String): String = js.native
   def fit(value: Double, length: Double, replacement: String): String = js.native
   def fit(value: Double, length: Double, replacement: String, trimWhere: String): String = js.native
   // Convert the value to a JSON string using ko.toJSON. You can give a space value to format the JSON output.
   def json(rootObject: js.Any): String = js.native
+  def json(rootObject: js.Any, space: js.UndefOr[scala.Nothing], replacer: js.Any): String = js.native
   def json(rootObject: js.Any, space: js.Any): String = js.native
   def json(rootObject: js.Any, space: js.Any, replacer: js.Any): String = js.native
   // Convert the value to lowercase.

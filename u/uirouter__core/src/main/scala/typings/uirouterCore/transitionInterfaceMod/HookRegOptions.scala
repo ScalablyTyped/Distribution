@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HookRegOptions extends js.Object {
   /**
     * Specifies what `this` is bound to during hook invocation.
     */
-  var bind: js.UndefOr[js.Any] = js.undefined
+  var bind: js.UndefOr[js.Any] = js.native
   /**
     * Limits the number of times that the hook will be invoked.
     * Once the hook has been invoked this many times, it is automatically deregistered.
     */
-  var invokeLimit: js.UndefOr[Double] = js.undefined
+  var invokeLimit: js.UndefOr[Double] = js.native
   /**
     * Sets the priority of the registered hook
     *
@@ -22,21 +23,39 @@ trait HookRegOptions extends js.Object {
     *
     * The default hook priority is 0
     */
-  var priority: js.UndefOr[Double] = js.undefined
+  var priority: js.UndefOr[Double] = js.native
 }
 
 object HookRegOptions {
   @scala.inline
-  def apply(
-    bind: js.Any = null,
-    invokeLimit: js.UndefOr[Double] = js.undefined,
-    priority: js.UndefOr[Double] = js.undefined
-  ): HookRegOptions = {
+  def apply(): HookRegOptions = {
     val __obj = js.Dynamic.literal()
-    if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
-    if (!js.isUndefined(invokeLimit)) __obj.updateDynamic("invokeLimit")(invokeLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookRegOptions]
   }
+  @scala.inline
+  implicit class HookRegOptionsOps[Self <: HookRegOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBind(value: js.Any): Self = this.set("bind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBind: Self = this.set("bind", js.undefined)
+    @scala.inline
+    def setInvokeLimit(value: Double): Self = this.set("invokeLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvokeLimit: Self = this.set("invokeLimit", js.undefined)
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+  }
+  
 }
 

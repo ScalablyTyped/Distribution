@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeHierarchicalDataSourceSettingsTreeDS
   extends /**
   * Option for JSONPDataSourceSettings
@@ -13,126 +14,172 @@ trait TreeHierarchicalDataSourceSettingsTreeDS
   /**
     * Property name of the array of child data in a hierarchical data source.
     */
-  var childDataKey: js.UndefOr[String] = js.undefined
+  var childDataKey: js.UndefOr[String] = js.native
   /**
     * Specifies a custom function to be called when requesting data to the server - usually when expanding/collapsing record. If set the function should return the encoded URL. It takes as parameters: data record(type: object), expand - (type: bool).
     *
     */
-  var customEncodeUrlFunc: js.UndefOr[js.Function] = js.undefined
+  var customEncodeUrlFunc: js.UndefOr[js.Function] = js.native
   /**
     * The name of the property that keeps track of the level in the hierarchy.Defaults to __ig_options.dataLevel.
     */
-  var dataLevelKey: js.UndefOr[String] = js.undefined
+  var dataLevelKey: js.UndefOr[String] = js.native
   /**
     * Specifies a remote URL as a data source, from which data will be retrieved using an AJAX call ($.ajax)
     */
-  var dataSourceUrl: js.UndefOr[String] = js.undefined
+  var dataSourceUrl: js.UndefOr[String] = js.native
   /**
     * Specifies if data is loaded on demand from a remote server. Default is false.
     */
-  var enableRemoteLoadOnDemand: js.UndefOr[Boolean] = js.undefined
+  var enableRemoteLoadOnDemand: js.UndefOr[Boolean] = js.native
   /**
     * The name of the property that keeps track of the expansion state of a data item. Defaults to __ig_options.expanded.
     */
-  var expandedKey: js.UndefOr[String] = js.undefined
+  var expandedKey: js.UndefOr[String] = js.native
   /**
     * Configure datasource filtering settings.
     */
-  var filtering: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDSFiltering] = js.undefined
+  var filtering: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDSFiltering] = js.native
   /**
     * Unique identifier used in a self-referencing flat data source. Used with primaryKey to create a relationship among flat data sources.
     */
-  var foreignKey: js.UndefOr[String] = js.undefined
+  var foreignKey: js.UndefOr[String] = js.native
   /**
     * Specifies the depth down to which the tree grid would be expanded upon initial render. To expand all rows set value to -1. Default is -1.
     */
-  var initialExpandDepth: js.UndefOr[Double] = js.undefined
+  var initialExpandDepth: js.UndefOr[Double] = js.native
   /**
     * If set to TRUE it is expected that the source of data is normalized and transformed(has set dataLevel and expansion state). The source of data is used as flatDataView. Usually used when the paging is remote and paging mode is allLevels, or features are remote(and the processing of the returned result should be made on the server)
     *
     */
-  var initialFlatDataView: js.UndefOr[Boolean] = js.undefined
+  var initialFlatDataView: js.UndefOr[Boolean] = js.native
   /**
     * Configure datasource paging settings.
     */
-  var paging: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDSPaging] = js.undefined
+  var paging: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDSPaging] = js.native
   /**
     * If true save expansion states in internal list and send it to the server. Applying to one of the main constraint of the REST architecture  Stateless Interactions - client specific data(like expansion states) should NOT be stored on the server
     *
     */
-  var persistExpansionStates: js.UndefOr[Boolean] = js.undefined
+  var persistExpansionStates: js.UndefOr[Boolean] = js.native
   /**
     * *** IMPORTANT DEPRECATED *** Use the dataLevelKey option instead.
     * The name of the property that keeps track of the level in the hierarchy.Defaults to __ig_options.dataLevel.
     */
-  var propertyDataLevel: js.UndefOr[String] = js.undefined
+  var propertyDataLevel: js.UndefOr[String] = js.native
   /**
     * *** IMPORTANT DEPRECATED *** Use the expandedKey option instead.
     * The name of the property that keeps track of the expansion state of a data item. Defaults to __ig_options.expanded.
     */
-  var propertyExpanded: js.UndefOr[String] = js.undefined
+  var propertyExpanded: js.UndefOr[String] = js.native
   /**
     * Specifies a custom function to be called when the remote request for data has finished.
     */
-  var requestDataCallback: js.UndefOr[js.Function] = js.undefined
+  var requestDataCallback: js.UndefOr[js.Function] = js.native
   /**
     * Specifies a custom function to be called when the remote request for data has finished with an error.
     */
-  var requestDataErrorCallback: js.UndefOr[js.Function] = js.undefined
+  var requestDataErrorCallback: js.UndefOr[js.Function] = js.native
   /**
     * Specifies a custom function to be called when the remote request for data has finished successfully.
     */
-  var requestDataSuccessCallback: js.UndefOr[js.Function] = js.undefined
+  var requestDataSuccessCallback: js.UndefOr[js.Function] = js.native
   /**
     * Configure datasource sorting settings.
     */
-  var sorting: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDSSorting] = js.undefined
+  var sorting: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDSSorting] = js.native
 }
 
 object TreeHierarchicalDataSourceSettingsTreeDS {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    childDataKey: String = null,
-    customEncodeUrlFunc: js.Function = null,
-    dataLevelKey: String = null,
-    dataSourceUrl: String = null,
-    enableRemoteLoadOnDemand: js.UndefOr[Boolean] = js.undefined,
-    expandedKey: String = null,
-    filtering: TreeHierarchicalDataSourceSettingsTreeDSFiltering = null,
-    foreignKey: String = null,
-    initialExpandDepth: js.UndefOr[Double] = js.undefined,
-    initialFlatDataView: js.UndefOr[Boolean] = js.undefined,
-    paging: TreeHierarchicalDataSourceSettingsTreeDSPaging = null,
-    persistExpansionStates: js.UndefOr[Boolean] = js.undefined,
-    propertyDataLevel: String = null,
-    propertyExpanded: String = null,
-    requestDataCallback: js.Function = null,
-    requestDataErrorCallback: js.Function = null,
-    requestDataSuccessCallback: js.Function = null,
-    sorting: TreeHierarchicalDataSourceSettingsTreeDSSorting = null
-  ): TreeHierarchicalDataSourceSettingsTreeDS = {
+  def apply(): TreeHierarchicalDataSourceSettingsTreeDS = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (childDataKey != null) __obj.updateDynamic("childDataKey")(childDataKey.asInstanceOf[js.Any])
-    if (customEncodeUrlFunc != null) __obj.updateDynamic("customEncodeUrlFunc")(customEncodeUrlFunc.asInstanceOf[js.Any])
-    if (dataLevelKey != null) __obj.updateDynamic("dataLevelKey")(dataLevelKey.asInstanceOf[js.Any])
-    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRemoteLoadOnDemand)) __obj.updateDynamic("enableRemoteLoadOnDemand")(enableRemoteLoadOnDemand.get.asInstanceOf[js.Any])
-    if (expandedKey != null) __obj.updateDynamic("expandedKey")(expandedKey.asInstanceOf[js.Any])
-    if (filtering != null) __obj.updateDynamic("filtering")(filtering.asInstanceOf[js.Any])
-    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialExpandDepth)) __obj.updateDynamic("initialExpandDepth")(initialExpandDepth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialFlatDataView)) __obj.updateDynamic("initialFlatDataView")(initialFlatDataView.get.asInstanceOf[js.Any])
-    if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistExpansionStates)) __obj.updateDynamic("persistExpansionStates")(persistExpansionStates.get.asInstanceOf[js.Any])
-    if (propertyDataLevel != null) __obj.updateDynamic("propertyDataLevel")(propertyDataLevel.asInstanceOf[js.Any])
-    if (propertyExpanded != null) __obj.updateDynamic("propertyExpanded")(propertyExpanded.asInstanceOf[js.Any])
-    if (requestDataCallback != null) __obj.updateDynamic("requestDataCallback")(requestDataCallback.asInstanceOf[js.Any])
-    if (requestDataErrorCallback != null) __obj.updateDynamic("requestDataErrorCallback")(requestDataErrorCallback.asInstanceOf[js.Any])
-    if (requestDataSuccessCallback != null) __obj.updateDynamic("requestDataSuccessCallback")(requestDataSuccessCallback.asInstanceOf[js.Any])
-    if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDS]
   }
+  @scala.inline
+  implicit class TreeHierarchicalDataSourceSettingsTreeDSOps[Self <: TreeHierarchicalDataSourceSettingsTreeDS] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildDataKey(value: String): Self = this.set("childDataKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildDataKey: Self = this.set("childDataKey", js.undefined)
+    @scala.inline
+    def setCustomEncodeUrlFunc(value: js.Function): Self = this.set("customEncodeUrlFunc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomEncodeUrlFunc: Self = this.set("customEncodeUrlFunc", js.undefined)
+    @scala.inline
+    def setDataLevelKey(value: String): Self = this.set("dataLevelKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataLevelKey: Self = this.set("dataLevelKey", js.undefined)
+    @scala.inline
+    def setDataSourceUrl(value: String): Self = this.set("dataSourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceUrl: Self = this.set("dataSourceUrl", js.undefined)
+    @scala.inline
+    def setEnableRemoteLoadOnDemand(value: Boolean): Self = this.set("enableRemoteLoadOnDemand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRemoteLoadOnDemand: Self = this.set("enableRemoteLoadOnDemand", js.undefined)
+    @scala.inline
+    def setExpandedKey(value: String): Self = this.set("expandedKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandedKey: Self = this.set("expandedKey", js.undefined)
+    @scala.inline
+    def setFiltering(value: TreeHierarchicalDataSourceSettingsTreeDSFiltering): Self = this.set("filtering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiltering: Self = this.set("filtering", js.undefined)
+    @scala.inline
+    def setForeignKey(value: String): Self = this.set("foreignKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForeignKey: Self = this.set("foreignKey", js.undefined)
+    @scala.inline
+    def setInitialExpandDepth(value: Double): Self = this.set("initialExpandDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialExpandDepth: Self = this.set("initialExpandDepth", js.undefined)
+    @scala.inline
+    def setInitialFlatDataView(value: Boolean): Self = this.set("initialFlatDataView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialFlatDataView: Self = this.set("initialFlatDataView", js.undefined)
+    @scala.inline
+    def setPaging(value: TreeHierarchicalDataSourceSettingsTreeDSPaging): Self = this.set("paging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaging: Self = this.set("paging", js.undefined)
+    @scala.inline
+    def setPersistExpansionStates(value: Boolean): Self = this.set("persistExpansionStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersistExpansionStates: Self = this.set("persistExpansionStates", js.undefined)
+    @scala.inline
+    def setPropertyDataLevel(value: String): Self = this.set("propertyDataLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyDataLevel: Self = this.set("propertyDataLevel", js.undefined)
+    @scala.inline
+    def setPropertyExpanded(value: String): Self = this.set("propertyExpanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyExpanded: Self = this.set("propertyExpanded", js.undefined)
+    @scala.inline
+    def setRequestDataCallback(value: js.Function): Self = this.set("requestDataCallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestDataCallback: Self = this.set("requestDataCallback", js.undefined)
+    @scala.inline
+    def setRequestDataErrorCallback(value: js.Function): Self = this.set("requestDataErrorCallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestDataErrorCallback: Self = this.set("requestDataErrorCallback", js.undefined)
+    @scala.inline
+    def setRequestDataSuccessCallback(value: js.Function): Self = this.set("requestDataSuccessCallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestDataSuccessCallback: Self = this.set("requestDataSuccessCallback", js.undefined)
+    @scala.inline
+    def setSorting(value: TreeHierarchicalDataSourceSettingsTreeDSSorting): Self = this.set("sorting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSorting: Self = this.set("sorting", js.undefined)
+  }
+  
 }
 

@@ -26,17 +26,36 @@ trait MatchmakingRuleSet extends js.Object {
 
 object MatchmakingRuleSet {
   @scala.inline
-  def apply(
-    RuleSetBody: RuleSetBody,
-    CreationTime: Timestamp = null,
-    RuleSetArn: MatchmakingRuleSetArn = null,
-    RuleSetName: MatchmakingIdStringModel = null
-  ): MatchmakingRuleSet = {
+  def apply(RuleSetBody: RuleSetBody): MatchmakingRuleSet = {
     val __obj = js.Dynamic.literal(RuleSetBody = RuleSetBody.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (RuleSetArn != null) __obj.updateDynamic("RuleSetArn")(RuleSetArn.asInstanceOf[js.Any])
-    if (RuleSetName != null) __obj.updateDynamic("RuleSetName")(RuleSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchmakingRuleSet]
   }
+  @scala.inline
+  implicit class MatchmakingRuleSetOps[Self <: MatchmakingRuleSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRuleSetBody(value: RuleSetBody): Self = this.set("RuleSetBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setRuleSetArn(value: MatchmakingRuleSetArn): Self = this.set("RuleSetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleSetArn: Self = this.set("RuleSetArn", js.undefined)
+    @scala.inline
+    def setRuleSetName(value: MatchmakingIdStringModel): Self = this.set("RuleSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleSetName: Self = this.set("RuleSetName", js.undefined)
+  }
+  
 }
 

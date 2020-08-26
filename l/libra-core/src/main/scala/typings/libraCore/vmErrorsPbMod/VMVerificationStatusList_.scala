@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class VMVerificationStatusList_ () extends Message {
   def addStatusList(): VMVerificationStatus = js.native
+  def addStatusList(value: js.UndefOr[scala.Nothing], index: Double): VMVerificationStatus = js.native
   def addStatusList(value: VMVerificationStatus): VMVerificationStatus = js.native
   def addStatusList(value: VMVerificationStatus, index: Double): VMVerificationStatus = js.native
   def clearStatusListList(): Unit = js.native

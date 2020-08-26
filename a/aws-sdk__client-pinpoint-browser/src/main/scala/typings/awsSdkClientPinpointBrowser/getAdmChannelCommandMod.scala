@@ -26,16 +26,9 @@ object getAdmChannelCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetAdmChannelInput) = this()
-    /* CompleteClass */
-    override val input: GetAdmChannelInput = js.native
     val middlewareStack: MiddlewareStack[GetAdmChannelInput, GetAdmChannelOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[GetAdmChannelInput, GetAdmChannelOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[GetAdmChannelInput, GetAdmChannelOutput] = js.native
   }

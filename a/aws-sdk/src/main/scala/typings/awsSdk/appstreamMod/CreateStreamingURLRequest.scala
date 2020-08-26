@@ -34,19 +34,40 @@ trait CreateStreamingURLRequest extends js.Object {
 
 object CreateStreamingURLRequest {
   @scala.inline
-  def apply(
-    FleetName: String,
-    StackName: String,
-    UserId: StreamingUrlUserId,
-    ApplicationId: String = null,
-    SessionContext: String = null,
-    Validity: js.UndefOr[Long] = js.undefined
-  ): CreateStreamingURLRequest = {
+  def apply(FleetName: String, StackName: String, UserId: StreamingUrlUserId): CreateStreamingURLRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (SessionContext != null) __obj.updateDynamic("SessionContext")(SessionContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(Validity)) __obj.updateDynamic("Validity")(Validity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamingURLRequest]
   }
+  @scala.inline
+  implicit class CreateStreamingURLRequestOps[Self <: CreateStreamingURLRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetName(value: String): Self = this.set("FleetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackName(value: String): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserId(value: StreamingUrlUserId): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationId(value: String): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    @scala.inline
+    def setSessionContext(value: String): Self = this.set("SessionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionContext: Self = this.set("SessionContext", js.undefined)
+    @scala.inline
+    def setValidity(value: Long): Self = this.set("Validity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidity: Self = this.set("Validity", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait HlsCaptionLanguageMapping extends js.Object {
 
 object HlsCaptionLanguageMapping {
   @scala.inline
-  def apply(
-    CaptionChannel: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined,
-    CustomLanguageCode: stringMin3Max3PatternAZaZ3 = null,
-    LanguageCode: LanguageCode = null,
-    LanguageDescription: string = null
-  ): HlsCaptionLanguageMapping = {
+  def apply(): HlsCaptionLanguageMapping = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CaptionChannel)) __obj.updateDynamic("CaptionChannel")(CaptionChannel.get.asInstanceOf[js.Any])
-    if (CustomLanguageCode != null) __obj.updateDynamic("CustomLanguageCode")(CustomLanguageCode.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (LanguageDescription != null) __obj.updateDynamic("LanguageDescription")(LanguageDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsCaptionLanguageMapping]
   }
+  @scala.inline
+  implicit class HlsCaptionLanguageMappingOps[Self <: HlsCaptionLanguageMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptionChannel(value: integerMinNegative2147483648Max2147483647): Self = this.set("CaptionChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionChannel: Self = this.set("CaptionChannel", js.undefined)
+    @scala.inline
+    def setCustomLanguageCode(value: stringMin3Max3PatternAZaZ3): Self = this.set("CustomLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLanguageCode: Self = this.set("CustomLanguageCode", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setLanguageDescription(value: string): Self = this.set("LanguageDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageDescription: Self = this.set("LanguageDescription", js.undefined)
+  }
+  
 }
 

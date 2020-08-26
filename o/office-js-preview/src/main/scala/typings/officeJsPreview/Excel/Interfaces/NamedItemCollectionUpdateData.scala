@@ -5,16 +5,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the NamedItemCollection object, for use in `namedItemCollection.set({ ... })`. */
+@js.native
 trait NamedItemCollectionUpdateData extends js.Object {
-  var items: js.UndefOr[js.Array[NamedItemData]] = js.undefined
+  var items: js.UndefOr[js.Array[NamedItemData]] = js.native
 }
 
 object NamedItemCollectionUpdateData {
   @scala.inline
-  def apply(items: js.Array[NamedItemData] = null): NamedItemCollectionUpdateData = {
+  def apply(): NamedItemCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemCollectionUpdateData]
   }
+  @scala.inline
+  implicit class NamedItemCollectionUpdateDataOps[Self <: NamedItemCollectionUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: NamedItemData*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[NamedItemData]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+  }
+  
 }
 

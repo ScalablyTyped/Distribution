@@ -74,42 +74,86 @@ trait AppSummary extends js.Object {
 
 object AppSummary {
   @scala.inline
-  def apply(
-    appId: AppId = null,
-    creationTime: Timestamp = null,
-    description: AppDescription = null,
-    lastModified: Timestamp = null,
-    latestReplicationTime: Timestamp = null,
-    launchDetails: LaunchDetails = null,
-    launchStatus: AppLaunchStatus = null,
-    launchStatusMessage: AppLaunchStatusMessage = null,
-    name: AppName = null,
-    replicationStatus: AppReplicationStatus = null,
-    replicationStatusMessage: AppReplicationStatusMessage = null,
-    roleName: RoleName = null,
-    status: AppStatus = null,
-    statusMessage: AppStatusMessage = null,
-    totalServerGroups: js.UndefOr[TotalServerGroups] = js.undefined,
-    totalServers: js.UndefOr[TotalServers] = js.undefined
-  ): AppSummary = {
+  def apply(): AppSummary = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (latestReplicationTime != null) __obj.updateDynamic("latestReplicationTime")(latestReplicationTime.asInstanceOf[js.Any])
-    if (launchDetails != null) __obj.updateDynamic("launchDetails")(launchDetails.asInstanceOf[js.Any])
-    if (launchStatus != null) __obj.updateDynamic("launchStatus")(launchStatus.asInstanceOf[js.Any])
-    if (launchStatusMessage != null) __obj.updateDynamic("launchStatusMessage")(launchStatusMessage.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (replicationStatus != null) __obj.updateDynamic("replicationStatus")(replicationStatus.asInstanceOf[js.Any])
-    if (replicationStatusMessage != null) __obj.updateDynamic("replicationStatusMessage")(replicationStatusMessage.asInstanceOf[js.Any])
-    if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalServerGroups)) __obj.updateDynamic("totalServerGroups")(totalServerGroups.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalServers)) __obj.updateDynamic("totalServers")(totalServers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppSummary]
   }
+  @scala.inline
+  implicit class AppSummaryOps[Self <: AppSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("appId", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: AppDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLastModified(value: Timestamp): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    @scala.inline
+    def setLatestReplicationTime(value: Timestamp): Self = this.set("latestReplicationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestReplicationTime: Self = this.set("latestReplicationTime", js.undefined)
+    @scala.inline
+    def setLaunchDetails(value: LaunchDetails): Self = this.set("launchDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchDetails: Self = this.set("launchDetails", js.undefined)
+    @scala.inline
+    def setLaunchStatus(value: AppLaunchStatus): Self = this.set("launchStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchStatus: Self = this.set("launchStatus", js.undefined)
+    @scala.inline
+    def setLaunchStatusMessage(value: AppLaunchStatusMessage): Self = this.set("launchStatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchStatusMessage: Self = this.set("launchStatusMessage", js.undefined)
+    @scala.inline
+    def setName(value: AppName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setReplicationStatus(value: AppReplicationStatus): Self = this.set("replicationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationStatus: Self = this.set("replicationStatus", js.undefined)
+    @scala.inline
+    def setReplicationStatusMessage(value: AppReplicationStatusMessage): Self = this.set("replicationStatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationStatusMessage: Self = this.set("replicationStatusMessage", js.undefined)
+    @scala.inline
+    def setRoleName(value: RoleName): Self = this.set("roleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleName: Self = this.set("roleName", js.undefined)
+    @scala.inline
+    def setStatus(value: AppStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: AppStatusMessage): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setTotalServerGroups(value: TotalServerGroups): Self = this.set("totalServerGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalServerGroups: Self = this.set("totalServerGroups", js.undefined)
+    @scala.inline
+    def setTotalServers(value: TotalServers): Self = this.set("totalServers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalServers: Self = this.set("totalServers", js.undefined)
+  }
+  
 }
 

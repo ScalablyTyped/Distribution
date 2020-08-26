@@ -14,10 +14,28 @@ trait GetContextKeysForPolicyResponse extends js.Object {
 
 object GetContextKeysForPolicyResponse {
   @scala.inline
-  def apply(ContextKeyNames: ContextKeyNamesResultListType = null): GetContextKeysForPolicyResponse = {
+  def apply(): GetContextKeysForPolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (ContextKeyNames != null) __obj.updateDynamic("ContextKeyNames")(ContextKeyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContextKeysForPolicyResponse]
   }
+  @scala.inline
+  implicit class GetContextKeysForPolicyResponseOps[Self <: GetContextKeysForPolicyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContextKeyNamesVarargs(value: ContextKeyNameType*): Self = this.set("ContextKeyNames", js.Array(value :_*))
+    @scala.inline
+    def setContextKeyNames(value: ContextKeyNamesResultListType): Self = this.set("ContextKeyNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextKeyNames: Self = this.set("ContextKeyNames", js.undefined)
+  }
+  
 }
 

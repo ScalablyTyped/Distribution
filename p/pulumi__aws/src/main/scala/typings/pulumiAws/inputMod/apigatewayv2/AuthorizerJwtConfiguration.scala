@@ -12,18 +12,39 @@ trait AuthorizerJwtConfiguration extends js.Object {
     */
   var audiences: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * The base domain of the identity provider that issues JSON Web Tokens, such as the `endpoint` attribute of the [`aws.cognito.UserPool`](https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html) resource.
+    * The base domain of the identity provider that issues JSON Web Tokens, such as the `endpoint` attribute of the `aws.cognito.UserPool` resource.
     */
   var issuer: js.UndefOr[Input[String]] = js.native
 }
 
 object AuthorizerJwtConfiguration {
   @scala.inline
-  def apply(audiences: Input[js.Array[Input[String]]] = null, issuer: Input[String] = null): AuthorizerJwtConfiguration = {
+  def apply(): AuthorizerJwtConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (audiences != null) __obj.updateDynamic("audiences")(audiences.asInstanceOf[js.Any])
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizerJwtConfiguration]
   }
+  @scala.inline
+  implicit class AuthorizerJwtConfigurationOps[Self <: AuthorizerJwtConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudiencesVarargs(value: Input[String]*): Self = this.set("audiences", js.Array(value :_*))
+    @scala.inline
+    def setAudiences(value: Input[js.Array[Input[String]]]): Self = this.set("audiences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudiences: Self = this.set("audiences", js.undefined)
+    @scala.inline
+    def setIssuer(value: Input[String]): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuer: Self = this.set("issuer", js.undefined)
+  }
+  
 }
 

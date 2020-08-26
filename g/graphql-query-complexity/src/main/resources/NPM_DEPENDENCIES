@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "graphql-query-complexity" : "0.4.1"
+      "graphql-query-complexity" : "0.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "graphql-query-complexity" : "0.4.1"
+      "graphql-query-complexity" : "0.6.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_punches"
-version := "0.5.1-dt-20200515Z-d712f1"
-scalaVersion := "2.13.2"
+version := "0.5.1-dt-20200515Z-4f9b2e"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

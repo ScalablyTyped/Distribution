@@ -17,6 +17,7 @@ object anon extends js.Object {
   @js.native
   trait FnCallTypeEncoderOptions extends js.Object {
     def apply(): String = js.native
+    def apply(`type`: js.UndefOr[scala.Nothing], encoderOptions: js.Any): String = js.native
     def apply(`type`: String): String = js.native
     def apply(`type`: String, encoderOptions: js.Any): String = js.native
   }

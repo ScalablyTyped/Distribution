@@ -1,0 +1,12 @@
+package typings.badgin.badgingMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("badgin/build/badging", "isAvailable")
+@js.native
+object isAvailable extends js.Object {
+  def apply(): Boolean = js.native
+}
+

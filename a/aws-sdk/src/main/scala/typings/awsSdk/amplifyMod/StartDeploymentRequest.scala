@@ -26,11 +26,34 @@ trait StartDeploymentRequest extends js.Object {
 
 object StartDeploymentRequest {
   @scala.inline
-  def apply(appId: AppId, branchName: BranchName, jobId: JobId = null, sourceUrl: SourceUrl = null): StartDeploymentRequest = {
+  def apply(appId: AppId, branchName: BranchName): StartDeploymentRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (sourceUrl != null) __obj.updateDynamic("sourceUrl")(sourceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDeploymentRequest]
   }
+  @scala.inline
+  implicit class StartDeploymentRequestOps[Self <: StartDeploymentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setSourceUrl(value: SourceUrl): Self = this.set("sourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceUrl: Self = this.set("sourceUrl", js.undefined)
+  }
+  
 }
 

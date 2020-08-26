@@ -8,69 +8,120 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions.types.ISuggestionsProps<T>, 'onRenderNoResultFound' | 'suggestionsHeaderText' | 'mostRecentlyUsedHeaderText' | 'noResultsFoundText' | 'className' | 'suggestionsClassName' | 'suggestionsItemClassName' | 'searchForMoreText' | 'forceResolveText' | 'loadingText' | 'searchingText' | 'resultsFooterFull' | 'resultsFooter' | 'resultsMaximumNumber' | 'showRemoveButtons' | 'suggestionsAvailableAlertText' | 'suggestionsContainerAriaLabel' | 'showForceResolve'> */
+@js.native
 trait IBasePickerSuggestionsProps[T] extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var forceResolveText: js.UndefOr[String] = js.undefined
-  var loadingText: js.UndefOr[String] = js.undefined
-  var mostRecentlyUsedHeaderText: js.UndefOr[String] = js.undefined
-  var noResultsFoundText: js.UndefOr[String] = js.undefined
-  var onRenderNoResultFound: js.UndefOr[IRenderFunction[Unit]] = js.undefined
-  var resultsFooter: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.undefined
-  var resultsFooterFull: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.undefined
-  var resultsMaximumNumber: js.UndefOr[Double] = js.undefined
-  var searchForMoreText: js.UndefOr[String] = js.undefined
-  var searchingText: js.UndefOr[String] = js.undefined
-  var showForceResolve: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var showRemoveButtons: js.UndefOr[Boolean] = js.undefined
-  var suggestionsAvailableAlertText: js.UndefOr[String] = js.undefined
-  var suggestionsClassName: js.UndefOr[String] = js.undefined
-  var suggestionsContainerAriaLabel: js.UndefOr[String] = js.undefined
-  var suggestionsHeaderText: js.UndefOr[String] = js.undefined
-  var suggestionsItemClassName: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var forceResolveText: js.UndefOr[String] = js.native
+  var loadingText: js.UndefOr[String] = js.native
+  var mostRecentlyUsedHeaderText: js.UndefOr[String] = js.native
+  var noResultsFoundText: js.UndefOr[String] = js.native
+  var onRenderNoResultFound: js.UndefOr[IRenderFunction[Unit]] = js.native
+  var resultsFooter: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.native
+  var resultsFooterFull: js.UndefOr[js.Function1[/* props */ ISuggestionsProps[T], Element]] = js.native
+  var resultsMaximumNumber: js.UndefOr[Double] = js.native
+  var searchForMoreText: js.UndefOr[String] = js.native
+  var searchingText: js.UndefOr[String] = js.native
+  var showForceResolve: js.UndefOr[js.Function0[Boolean]] = js.native
+  var showRemoveButtons: js.UndefOr[Boolean] = js.native
+  var suggestionsAvailableAlertText: js.UndefOr[String] = js.native
+  var suggestionsClassName: js.UndefOr[String] = js.native
+  var suggestionsContainerAriaLabel: js.UndefOr[String] = js.native
+  var suggestionsHeaderText: js.UndefOr[String] = js.native
+  var suggestionsItemClassName: js.UndefOr[String] = js.native
 }
 
 object IBasePickerSuggestionsProps {
   @scala.inline
-  def apply[T](
-    className: String = null,
-    forceResolveText: String = null,
-    loadingText: String = null,
-    mostRecentlyUsedHeaderText: String = null,
-    noResultsFoundText: String = null,
-    onRenderNoResultFound: (/* props */ js.UndefOr[Unit], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Unit], Element | Null]]) => Element | Null = null,
-    resultsFooter: /* props */ ISuggestionsProps[T] => Element = null,
-    resultsFooterFull: /* props */ ISuggestionsProps[T] => Element = null,
-    resultsMaximumNumber: js.UndefOr[Double] = js.undefined,
-    searchForMoreText: String = null,
-    searchingText: String = null,
-    showForceResolve: () => Boolean = null,
-    showRemoveButtons: js.UndefOr[Boolean] = js.undefined,
-    suggestionsAvailableAlertText: String = null,
-    suggestionsClassName: String = null,
-    suggestionsContainerAriaLabel: String = null,
-    suggestionsHeaderText: String = null,
-    suggestionsItemClassName: String = null
-  ): IBasePickerSuggestionsProps[T] = {
+  def apply[T](): IBasePickerSuggestionsProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (forceResolveText != null) __obj.updateDynamic("forceResolveText")(forceResolveText.asInstanceOf[js.Any])
-    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
-    if (mostRecentlyUsedHeaderText != null) __obj.updateDynamic("mostRecentlyUsedHeaderText")(mostRecentlyUsedHeaderText.asInstanceOf[js.Any])
-    if (noResultsFoundText != null) __obj.updateDynamic("noResultsFoundText")(noResultsFoundText.asInstanceOf[js.Any])
-    if (onRenderNoResultFound != null) __obj.updateDynamic("onRenderNoResultFound")(js.Any.fromFunction2(onRenderNoResultFound))
-    if (resultsFooter != null) __obj.updateDynamic("resultsFooter")(js.Any.fromFunction1(resultsFooter))
-    if (resultsFooterFull != null) __obj.updateDynamic("resultsFooterFull")(js.Any.fromFunction1(resultsFooterFull))
-    if (!js.isUndefined(resultsMaximumNumber)) __obj.updateDynamic("resultsMaximumNumber")(resultsMaximumNumber.get.asInstanceOf[js.Any])
-    if (searchForMoreText != null) __obj.updateDynamic("searchForMoreText")(searchForMoreText.asInstanceOf[js.Any])
-    if (searchingText != null) __obj.updateDynamic("searchingText")(searchingText.asInstanceOf[js.Any])
-    if (showForceResolve != null) __obj.updateDynamic("showForceResolve")(js.Any.fromFunction0(showForceResolve))
-    if (!js.isUndefined(showRemoveButtons)) __obj.updateDynamic("showRemoveButtons")(showRemoveButtons.get.asInstanceOf[js.Any])
-    if (suggestionsAvailableAlertText != null) __obj.updateDynamic("suggestionsAvailableAlertText")(suggestionsAvailableAlertText.asInstanceOf[js.Any])
-    if (suggestionsClassName != null) __obj.updateDynamic("suggestionsClassName")(suggestionsClassName.asInstanceOf[js.Any])
-    if (suggestionsContainerAriaLabel != null) __obj.updateDynamic("suggestionsContainerAriaLabel")(suggestionsContainerAriaLabel.asInstanceOf[js.Any])
-    if (suggestionsHeaderText != null) __obj.updateDynamic("suggestionsHeaderText")(suggestionsHeaderText.asInstanceOf[js.Any])
-    if (suggestionsItemClassName != null) __obj.updateDynamic("suggestionsItemClassName")(suggestionsItemClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBasePickerSuggestionsProps[T]]
   }
+  @scala.inline
+  implicit class IBasePickerSuggestionsPropsOps[Self <: IBasePickerSuggestionsProps[_], T] (val x: Self with IBasePickerSuggestionsProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setForceResolveText(value: String): Self = this.set("forceResolveText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceResolveText: Self = this.set("forceResolveText", js.undefined)
+    @scala.inline
+    def setLoadingText(value: String): Self = this.set("loadingText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadingText: Self = this.set("loadingText", js.undefined)
+    @scala.inline
+    def setMostRecentlyUsedHeaderText(value: String): Self = this.set("mostRecentlyUsedHeaderText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMostRecentlyUsedHeaderText: Self = this.set("mostRecentlyUsedHeaderText", js.undefined)
+    @scala.inline
+    def setNoResultsFoundText(value: String): Self = this.set("noResultsFoundText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoResultsFoundText: Self = this.set("noResultsFoundText", js.undefined)
+    @scala.inline
+    def setOnRenderNoResultFound(
+      value: (/* props */ js.UndefOr[Unit], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Unit], Element | Null]]) => Element | Null
+    ): Self = this.set("onRenderNoResultFound", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRenderNoResultFound: Self = this.set("onRenderNoResultFound", js.undefined)
+    @scala.inline
+    def setResultsFooter(value: /* props */ ISuggestionsProps[T] => Element): Self = this.set("resultsFooter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteResultsFooter: Self = this.set("resultsFooter", js.undefined)
+    @scala.inline
+    def setResultsFooterFull(value: /* props */ ISuggestionsProps[T] => Element): Self = this.set("resultsFooterFull", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteResultsFooterFull: Self = this.set("resultsFooterFull", js.undefined)
+    @scala.inline
+    def setResultsMaximumNumber(value: Double): Self = this.set("resultsMaximumNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultsMaximumNumber: Self = this.set("resultsMaximumNumber", js.undefined)
+    @scala.inline
+    def setSearchForMoreText(value: String): Self = this.set("searchForMoreText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchForMoreText: Self = this.set("searchForMoreText", js.undefined)
+    @scala.inline
+    def setSearchingText(value: String): Self = this.set("searchingText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchingText: Self = this.set("searchingText", js.undefined)
+    @scala.inline
+    def setShowForceResolve(value: () => Boolean): Self = this.set("showForceResolve", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteShowForceResolve: Self = this.set("showForceResolve", js.undefined)
+    @scala.inline
+    def setShowRemoveButtons(value: Boolean): Self = this.set("showRemoveButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowRemoveButtons: Self = this.set("showRemoveButtons", js.undefined)
+    @scala.inline
+    def setSuggestionsAvailableAlertText(value: String): Self = this.set("suggestionsAvailableAlertText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsAvailableAlertText: Self = this.set("suggestionsAvailableAlertText", js.undefined)
+    @scala.inline
+    def setSuggestionsClassName(value: String): Self = this.set("suggestionsClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsClassName: Self = this.set("suggestionsClassName", js.undefined)
+    @scala.inline
+    def setSuggestionsContainerAriaLabel(value: String): Self = this.set("suggestionsContainerAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsContainerAriaLabel: Self = this.set("suggestionsContainerAriaLabel", js.undefined)
+    @scala.inline
+    def setSuggestionsHeaderText(value: String): Self = this.set("suggestionsHeaderText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsHeaderText: Self = this.set("suggestionsHeaderText", js.undefined)
+    @scala.inline
+    def setSuggestionsItemClassName(value: String): Self = this.set("suggestionsItemClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsItemClassName: Self = this.set("suggestionsItemClassName", js.undefined)
+  }
+  
 }
 

@@ -1,29 +1,35 @@
 package typings.pubnub.mod
 
-import typings.pubnub.anon.CustomFields
-import typings.pubnub.anon.Next
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Member
+@js.native
 trait GetMembersParameters extends GetObjectsParameters {
-  var spaceId: String
+  var spaceId: String = js.native
 }
 
 object GetMembersParameters {
   @scala.inline
-  def apply(
-    spaceId: String,
-    include: CustomFields = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    page: Next = null
-  ): GetMembersParameters = {
+  def apply(spaceId: String): GetMembersParameters = {
     val __obj = js.Dynamic.literal(spaceId = spaceId.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMembersParameters]
   }
+  @scala.inline
+  implicit class GetMembersParametersOps[Self <: GetMembersParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpaceId(value: String): Self = this.set("spaceId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

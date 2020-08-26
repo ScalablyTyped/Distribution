@@ -35,7 +35,7 @@ trait CreateInstancesRequest extends js.Object {
     */
   var keyPairName: js.UndefOr[ResourceName] = js.native
   /**
-    * The tag keys and optional values to add to the resource during create. To tag a resource after it has been created, see the tag resource operation.
+    * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
   var tags: js.UndefOr[TagList] = js.native
   /**
@@ -50,20 +50,57 @@ object CreateInstancesRequest {
     availabilityZone: String,
     blueprintId: NonEmptyString,
     bundleId: NonEmptyString,
-    instanceNames: StringList,
-    addOns: AddOnRequestList = null,
-    customImageName: ResourceName = null,
-    keyPairName: ResourceName = null,
-    tags: TagList = null,
-    userData: String = null
+    instanceNames: StringList
   ): CreateInstancesRequest = {
     val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], blueprintId = blueprintId.asInstanceOf[js.Any], bundleId = bundleId.asInstanceOf[js.Any], instanceNames = instanceNames.asInstanceOf[js.Any])
-    if (addOns != null) __obj.updateDynamic("addOns")(addOns.asInstanceOf[js.Any])
-    if (customImageName != null) __obj.updateDynamic("customImageName")(customImageName.asInstanceOf[js.Any])
-    if (keyPairName != null) __obj.updateDynamic("keyPairName")(keyPairName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstancesRequest]
   }
+  @scala.inline
+  implicit class CreateInstancesRequestOps[Self <: CreateInstancesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlueprintId(value: NonEmptyString): Self = this.set("blueprintId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBundleId(value: NonEmptyString): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceNamesVarargs(value: String*): Self = this.set("instanceNames", js.Array(value :_*))
+    @scala.inline
+    def setInstanceNames(value: StringList): Self = this.set("instanceNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddOnsVarargs(value: AddOnRequest*): Self = this.set("addOns", js.Array(value :_*))
+    @scala.inline
+    def setAddOns(value: AddOnRequestList): Self = this.set("addOns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddOns: Self = this.set("addOns", js.undefined)
+    @scala.inline
+    def setCustomImageName(value: ResourceName): Self = this.set("customImageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomImageName: Self = this.set("customImageName", js.undefined)
+    @scala.inline
+    def setKeyPairName(value: ResourceName): Self = this.set("keyPairName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPairName: Self = this.set("keyPairName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUserData(value: String): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("userData", js.undefined)
+  }
+  
 }
 

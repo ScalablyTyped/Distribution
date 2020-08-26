@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   * @see DocumentDefinition
   * @see DocumentContainer
   */
+@js.native
 trait DefinitionContent
   extends XCommandProcessor2
      with XContent

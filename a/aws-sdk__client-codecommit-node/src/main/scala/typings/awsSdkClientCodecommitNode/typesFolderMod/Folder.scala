@@ -4,29 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Folder extends js.Object {
   /**
     * <p>The fully-qualified path of the folder in the repository.</p>
     */
-  var absolutePath: js.UndefOr[String] = js.undefined
+  var absolutePath: js.UndefOr[String] = js.native
   /**
     * <p>The relative path of the specified folder from the folder where the query originated.</p>
     */
-  var relativePath: js.UndefOr[String] = js.undefined
+  var relativePath: js.UndefOr[String] = js.native
   /**
     * <p>The full SHA-1 pointer of the tree information for the commit that contains the folder.</p>
     */
-  var treeId: js.UndefOr[String] = js.undefined
+  var treeId: js.UndefOr[String] = js.native
 }
 
 object Folder {
   @scala.inline
-  def apply(absolutePath: String = null, relativePath: String = null, treeId: String = null): Folder = {
+  def apply(): Folder = {
     val __obj = js.Dynamic.literal()
-    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
-    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
-    if (treeId != null) __obj.updateDynamic("treeId")(treeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Folder]
   }
+  @scala.inline
+  implicit class FolderOps[Self <: Folder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbsolutePath(value: String): Self = this.set("absolutePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbsolutePath: Self = this.set("absolutePath", js.undefined)
+    @scala.inline
+    def setRelativePath(value: String): Self = this.set("relativePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativePath: Self = this.set("relativePath", js.undefined)
+    @scala.inline
+    def setTreeId(value: String): Self = this.set("treeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeId: Self = this.set("treeId", js.undefined)
+  }
+  
 }
 

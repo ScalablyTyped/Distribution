@@ -47,24 +47,50 @@ trait ScheduleArgs extends js.Object {
 
 object ScheduleArgs {
   @scala.inline
-  def apply(
-    autoscalingGroupName: Input[String],
-    scheduledActionName: Input[String],
-    desiredCapacity: Input[Double] = null,
-    endTime: Input[String] = null,
-    maxSize: Input[Double] = null,
-    minSize: Input[Double] = null,
-    recurrence: Input[String] = null,
-    startTime: Input[String] = null
-  ): ScheduleArgs = {
+  def apply(autoscalingGroupName: Input[String], scheduledActionName: Input[String]): ScheduleArgs = {
     val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any], scheduledActionName = scheduledActionName.asInstanceOf[js.Any])
-    if (desiredCapacity != null) __obj.updateDynamic("desiredCapacity")(desiredCapacity.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (recurrence != null) __obj.updateDynamic("recurrence")(recurrence.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleArgs]
   }
+  @scala.inline
+  implicit class ScheduleArgsOps[Self <: ScheduleArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoscalingGroupName(value: Input[String]): Self = this.set("autoscalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScheduledActionName(value: Input[String]): Self = this.set("scheduledActionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDesiredCapacity(value: Input[Double]): Self = this.set("desiredCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredCapacity: Self = this.set("desiredCapacity", js.undefined)
+    @scala.inline
+    def setEndTime(value: Input[String]): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setMaxSize(value: Input[Double]): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setMinSize(value: Input[Double]): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    @scala.inline
+    def setRecurrence(value: Input[String]): Self = this.set("recurrence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurrence: Self = this.set("recurrence", js.undefined)
+    @scala.inline
+    def setStartTime(value: Input[String]): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

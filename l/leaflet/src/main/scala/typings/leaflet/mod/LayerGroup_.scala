@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LayerGroup_[P] () extends Layer {
   def this(layers: js.Array[Layer]) = this()
+  def this(layers: js.UndefOr[scala.Nothing], options: LayerOptions) = this()
   def this(layers: js.Array[Layer], options: LayerOptions) = this()
   var feature: js.UndefOr[
     (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection

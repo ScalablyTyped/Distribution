@@ -22,7 +22,7 @@ class UserAgent ()
 @js.native
 object UserAgent extends js.Object {
   /** Default user agent options. */
-  val defaultOptions: js.Any = js.native
+  var defaultOptions: js.Any = js.native
   /**
     * Strip properties with undefined values from options.
     * This is a work around while waiting for missing vs undefined to be addressed (or not)...

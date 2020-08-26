@@ -12,7 +12,7 @@ transform the ast on a recursive walk
 | Keywords           | ast, burrito, source, syntax, traversal, tree |
 | # releases         | 0 |
 | # dependents       | 246 |
-| # downloads        | 31410166 |
+| # downloads        | 32000538 |
 | # stars            | 17 |
 
 ## Links

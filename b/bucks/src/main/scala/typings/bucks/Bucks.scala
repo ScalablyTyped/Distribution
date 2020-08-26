@@ -41,6 +41,7 @@ object Bucks extends js.Object {
       * @param errback Handler for occurring error in last callback function
       */
     def end(): Unit = js.native
+    def end(callback: js.UndefOr[scala.Nothing], errback: js.Function1[/* err */ Error, _]): Unit = js.native
     def end(callback: Task): Unit = js.native
     def end(callback: Task, errback: js.Function1[/* err */ Error, _]): Unit = js.native
     /**

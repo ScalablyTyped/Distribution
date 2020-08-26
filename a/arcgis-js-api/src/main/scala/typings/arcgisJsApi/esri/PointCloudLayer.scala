@@ -79,12 +79,10 @@ trait PointCloudLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#createPopupTemplate)
     *
     * @param options Options for creating the popup template.
-    * @param options.maximumFields The maximum number of fields to include in the popup template.
-    * @param options.ignoreFieldTypes Field types to ignore when creating the popup. By default the `geometry`, `blob`, `raster`, `guid` and `xml` field types are ignored.
     *
     */
   def createPopupTemplate(): PopupTemplate = js.native
-  def createPopupTemplate(options: PointCloudLayerCreatePopupTemplateOptions): PopupTemplate = js.native
+  def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
   /**
     * Returns the [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html) associated with the given field name. The domain can be either a [CodedValueDomain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html) or [RangeDomain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html).
     *

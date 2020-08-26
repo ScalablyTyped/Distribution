@@ -20,7 +20,7 @@ object imgMod extends js.Object {
       */
     var alt: js.UndefOr[String] = js.native
     var el: HTMLElement = js.native
-    var io: js.UndefOr[js.Any] = js.native
+    var io: js.Any = js.native
     /** Emitted when the img fails to load */
     var ionError: EventEmitter[Unit] = js.native
     /** Emitted when the image has finished loading */

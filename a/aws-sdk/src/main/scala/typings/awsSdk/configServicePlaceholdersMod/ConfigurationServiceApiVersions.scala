@@ -122,6 +122,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var iotsecuretunneling: js.UndefOr[typings.awsSdk.iotsecuretunnelingMod.apiVersion] = js.native
   var iotsitewise: js.UndefOr[typings.awsSdk.iotsitewiseMod.apiVersion] = js.native
   var iotthingsgraph: js.UndefOr[typings.awsSdk.iotthingsgraphMod.apiVersion] = js.native
+  var ivs: js.UndefOr[typings.awsSdk.ivsMod.apiVersion] = js.native
   var kafka: js.UndefOr[typings.awsSdk.kafkaMod.apiVersion] = js.native
   var kendra: js.UndefOr[typings.awsSdk.kendraMod.apiVersion] = js.native
   var kinesis: js.UndefOr[typings.awsSdk.kinesisMod.apiVersion] = js.native
@@ -236,460 +237,926 @@ trait ConfigurationServiceApiVersions extends js.Object {
 
 object ConfigurationServiceApiVersions {
   @scala.inline
-  def apply(
-    accessanalyzer: apiVersion = null,
-    acm: typings.awsSdk.acmMod.apiVersion = null,
-    acmpca: typings.awsSdk.acmpcaMod.apiVersion = null,
-    alexaforbusiness: typings.awsSdk.alexaforbusinessMod.apiVersion = null,
-    amplify: typings.awsSdk.amplifyMod.apiVersion = null,
-    apigateway: typings.awsSdk.apigatewayMod.apiVersion = null,
-    apigatewaymanagementapi: typings.awsSdk.apigatewaymanagementapiMod.apiVersion = null,
-    apigatewayv2: typings.awsSdk.apigatewayv2Mod.apiVersion = null,
-    appconfig: typings.awsSdk.appconfigMod.apiVersion = null,
-    applicationautoscaling: typings.awsSdk.applicationautoscalingMod.apiVersion = null,
-    applicationinsights: typings.awsSdk.applicationinsightsMod.apiVersion = null,
-    appmesh: typings.awsSdk.appmeshMod.apiVersion = null,
-    appstream: typings.awsSdk.appstreamMod.apiVersion = null,
-    appsync: typings.awsSdk.appsyncMod.apiVersion = null,
-    athena: typings.awsSdk.athenaMod.apiVersion = null,
-    augmentedairuntime: typings.awsSdk.augmentedairuntimeMod.apiVersion = null,
-    autoscaling: typings.awsSdk.autoscalingMod.apiVersion = null,
-    autoscalingplans: typings.awsSdk.autoscalingplansMod.apiVersion = null,
-    backup: typings.awsSdk.backupMod.apiVersion = null,
-    batch: typings.awsSdk.batchMod.apiVersion = null,
-    budgets: typings.awsSdk.budgetsMod.apiVersion = null,
-    chime: typings.awsSdk.chimeMod.apiVersion = null,
-    cloud9: typings.awsSdk.cloud9Mod.apiVersion = null,
-    clouddirectory: typings.awsSdk.clouddirectoryMod.apiVersion = null,
-    cloudformation: typings.awsSdk.cloudformationMod.apiVersion = null,
-    cloudfront: typings.awsSdk.cloudfrontMod.apiVersion = null,
-    cloudhsm: typings.awsSdk.cloudhsmMod.apiVersion = null,
-    cloudhsmv2: typings.awsSdk.cloudhsmv2Mod.apiVersion = null,
-    cloudsearch: typings.awsSdk.cloudsearchMod.apiVersion = null,
-    cloudsearchdomain: typings.awsSdk.cloudsearchdomainMod.apiVersion = null,
-    cloudtrail: typings.awsSdk.cloudtrailMod.apiVersion = null,
-    cloudwatch: typings.awsSdk.cloudwatchMod.apiVersion = null,
-    cloudwatchevents: typings.awsSdk.cloudwatcheventsMod.apiVersion = null,
-    cloudwatchlogs: typings.awsSdk.cloudwatchlogsMod.apiVersion = null,
-    codeartifact: typings.awsSdk.codeartifactMod.apiVersion = null,
-    codebuild: typings.awsSdk.codebuildMod.apiVersion = null,
-    codecommit: typings.awsSdk.codecommitMod.apiVersion = null,
-    codedeploy: typings.awsSdk.codedeployMod.apiVersion = null,
-    codeguruprofiler: typings.awsSdk.codeguruprofilerMod.apiVersion = null,
-    codegurureviewer: typings.awsSdk.codegurureviewerMod.apiVersion = null,
-    codepipeline: typings.awsSdk.codepipelineMod.apiVersion = null,
-    codestar: typings.awsSdk.codestarMod.apiVersion = null,
-    codestarconnections: typings.awsSdk.codestarconnectionsMod.apiVersion = null,
-    codestarnotifications: typings.awsSdk.codestarnotificationsMod.apiVersion = null,
-    cognitoidentity: typings.awsSdk.cognitoidentityMod.apiVersion = null,
-    cognitoidentityserviceprovider: typings.awsSdk.cognitoidentityserviceproviderMod.apiVersion = null,
-    cognitosync: typings.awsSdk.cognitosyncMod.apiVersion = null,
-    comprehend: typings.awsSdk.comprehendMod.apiVersion = null,
-    comprehendmedical: typings.awsSdk.comprehendmedicalMod.apiVersion = null,
-    computeoptimizer: typings.awsSdk.computeoptimizerMod.apiVersion = null,
-    configservice: typings.awsSdk.configserviceMod.apiVersion = null,
-    connect: typings.awsSdk.connectMod.apiVersion = null,
-    connectparticipant: typings.awsSdk.connectparticipantMod.apiVersion = null,
-    costexplorer: typings.awsSdk.costexplorerMod.apiVersion = null,
-    cur: typings.awsSdk.curMod.apiVersion = null,
-    dataexchange: typings.awsSdk.dataexchangeMod.apiVersion = null,
-    datapipeline: typings.awsSdk.datapipelineMod.apiVersion = null,
-    datasync: typings.awsSdk.datasyncMod.apiVersion = null,
-    dax: typings.awsSdk.daxMod.apiVersion = null,
-    detective: typings.awsSdk.detectiveMod.apiVersion = null,
-    devicefarm: typings.awsSdk.devicefarmMod.apiVersion = null,
-    directconnect: typings.awsSdk.directconnectMod.apiVersion = null,
-    directoryservice: typings.awsSdk.directoryserviceMod.apiVersion = null,
-    discovery: typings.awsSdk.discoveryMod.apiVersion = null,
-    dlm: typings.awsSdk.dlmMod.apiVersion = null,
-    dms: typings.awsSdk.dmsMod.apiVersion = null,
-    docdb: typings.awsSdk.docdbMod.apiVersion = null,
-    dynamodb: typings.awsSdk.dynamodbMod.apiVersion = null,
-    dynamodbstreams: typings.awsSdk.dynamodbstreamsMod.apiVersion = null,
-    ebs: typings.awsSdk.ebsMod.apiVersion = null,
-    ec2: typings.awsSdk.ec2Mod.apiVersion = null,
-    ec2instanceconnect: typings.awsSdk.ec2instanceconnectMod.apiVersion = null,
-    ecr: typings.awsSdk.ecrMod.apiVersion = null,
-    ecs: typings.awsSdk.ecsMod.apiVersion = null,
-    efs: typings.awsSdk.efsMod.apiVersion = null,
-    eks: typings.awsSdk.eksMod.apiVersion = null,
-    elasticache: typings.awsSdk.elasticacheMod.apiVersion = null,
-    elasticbeanstalk: typings.awsSdk.elasticbeanstalkMod.apiVersion = null,
-    elasticinference: typings.awsSdk.elasticinferenceMod.apiVersion = null,
-    elastictranscoder: typings.awsSdk.elastictranscoderMod.apiVersion = null,
-    elb: typings.awsSdk.elbMod.apiVersion = null,
-    elbv2: typings.awsSdk.elbv2Mod.apiVersion = null,
-    emr: typings.awsSdk.emrMod.apiVersion = null,
-    es: typings.awsSdk.esMod.apiVersion = null,
-    eventbridge: typings.awsSdk.eventbridgeMod.apiVersion = null,
-    firehose: typings.awsSdk.firehoseMod.apiVersion = null,
-    fms: typings.awsSdk.fmsMod.apiVersion = null,
-    forecastqueryservice: typings.awsSdk.forecastqueryserviceMod.apiVersion = null,
-    forecastservice: typings.awsSdk.forecastserviceMod.apiVersion = null,
-    frauddetector: typings.awsSdk.frauddetectorMod.apiVersion = null,
-    fsx: typings.awsSdk.fsxMod.apiVersion = null,
-    gamelift: typings.awsSdk.gameliftMod.apiVersion = null,
-    glacier: typings.awsSdk.glacierMod.apiVersion = null,
-    globalaccelerator: typings.awsSdk.globalacceleratorMod.apiVersion = null,
-    glue: typings.awsSdk.glueMod.apiVersion = null,
-    greengrass: typings.awsSdk.greengrassMod.apiVersion = null,
-    groundstation: typings.awsSdk.groundstationMod.apiVersion = null,
-    guardduty: typings.awsSdk.guarddutyMod.apiVersion = null,
-    health: typings.awsSdk.healthMod.apiVersion = null,
-    honeycode: typings.awsSdk.honeycodeMod.apiVersion = null,
-    iam: typings.awsSdk.iamMod.apiVersion = null,
-    imagebuilder: typings.awsSdk.imagebuilderMod.apiVersion = null,
-    importexport: typings.awsSdk.importexportMod.apiVersion = null,
-    inspector: typings.awsSdk.inspectorMod.apiVersion = null,
-    iot: typings.awsSdk.iotMod.apiVersion = null,
-    iot1clickdevicesservice: typings.awsSdk.iot1clickdevicesserviceMod.apiVersion = null,
-    iot1clickprojects: typings.awsSdk.iot1clickprojectsMod.apiVersion = null,
-    iotanalytics: typings.awsSdk.iotanalyticsMod.apiVersion = null,
-    iotdata: typings.awsSdk.iotdataMod.apiVersion = null,
-    iotevents: typings.awsSdk.ioteventsMod.apiVersion = null,
-    ioteventsdata: typings.awsSdk.ioteventsdataMod.apiVersion = null,
-    iotjobsdataplane: typings.awsSdk.iotjobsdataplaneMod.apiVersion = null,
-    iotsecuretunneling: typings.awsSdk.iotsecuretunnelingMod.apiVersion = null,
-    iotsitewise: typings.awsSdk.iotsitewiseMod.apiVersion = null,
-    iotthingsgraph: typings.awsSdk.iotthingsgraphMod.apiVersion = null,
-    kafka: typings.awsSdk.kafkaMod.apiVersion = null,
-    kendra: typings.awsSdk.kendraMod.apiVersion = null,
-    kinesis: typings.awsSdk.kinesisMod.apiVersion = null,
-    kinesisanalytics: typings.awsSdk.kinesisanalyticsMod.apiVersion = null,
-    kinesisanalyticsv2: typings.awsSdk.kinesisanalyticsv2Mod.apiVersion = null,
-    kinesisvideo: typings.awsSdk.kinesisvideoMod.apiVersion = null,
-    kinesisvideoarchivedmedia: typings.awsSdk.kinesisvideoarchivedmediaMod.apiVersion = null,
-    kinesisvideomedia: typings.awsSdk.kinesisvideomediaMod.apiVersion = null,
-    kinesisvideosignalingchannels: typings.awsSdk.kinesisvideosignalingchannelsMod.apiVersion = null,
-    kms: typings.awsSdk.kmsMod.apiVersion = null,
-    lakeformation: typings.awsSdk.lakeformationMod.apiVersion = null,
-    lambda: typings.awsSdk.lambdaMod.apiVersion = null,
-    lexmodelbuildingservice: typings.awsSdk.lexmodelbuildingserviceMod.apiVersion = null,
-    lexruntime: typings.awsSdk.lexruntimeMod.apiVersion = null,
-    licensemanager: typings.awsSdk.licensemanagerMod.apiVersion = null,
-    lightsail: typings.awsSdk.lightsailMod.apiVersion = null,
-    machinelearning: typings.awsSdk.machinelearningMod.apiVersion = null,
-    macie: typings.awsSdk.macieMod.apiVersion = null,
-    macie2: typings.awsSdk.macie2Mod.apiVersion = null,
-    managedblockchain: typings.awsSdk.managedblockchainMod.apiVersion = null,
-    marketplacecatalog: typings.awsSdk.marketplacecatalogMod.apiVersion = null,
-    marketplacecommerceanalytics: typings.awsSdk.marketplacecommerceanalyticsMod.apiVersion = null,
-    marketplaceentitlementservice: typings.awsSdk.marketplaceentitlementserviceMod.apiVersion = null,
-    marketplacemetering: typings.awsSdk.marketplacemeteringMod.apiVersion = null,
-    mediaconnect: typings.awsSdk.mediaconnectMod.apiVersion = null,
-    mediaconvert: typings.awsSdk.mediaconvertMod.apiVersion = null,
-    medialive: typings.awsSdk.medialiveMod.apiVersion = null,
-    mediapackage: typings.awsSdk.mediapackageMod.apiVersion = null,
-    mediapackagevod: typings.awsSdk.mediapackagevodMod.apiVersion = null,
-    mediastore: typings.awsSdk.mediastoreMod.apiVersion = null,
-    mediastoredata: typings.awsSdk.mediastoredataMod.apiVersion = null,
-    mediatailor: typings.awsSdk.mediatailorMod.apiVersion = null,
-    migrationhub: typings.awsSdk.migrationhubMod.apiVersion = null,
-    migrationhubconfig: typings.awsSdk.migrationhubconfigMod.apiVersion = null,
-    mobile: typings.awsSdk.mobileMod.apiVersion = null,
-    mobileanalytics: typings.awsSdk.mobileanalyticsMod.apiVersion = null,
-    mq: typings.awsSdk.mqMod.apiVersion = null,
-    mturk: typings.awsSdk.mturkMod.apiVersion = null,
-    neptune: typings.awsSdk.neptuneMod.apiVersion = null,
-    networkmanager: typings.awsSdk.networkmanagerMod.apiVersion = null,
-    opsworks: typings.awsSdk.opsworksMod.apiVersion = null,
-    opsworkscm: typings.awsSdk.opsworkscmMod.apiVersion = null,
-    organizations: typings.awsSdk.organizationsMod.apiVersion = null,
-    outposts: typings.awsSdk.outpostsMod.apiVersion = null,
-    personalize: typings.awsSdk.personalizeMod.apiVersion = null,
-    personalizeevents: typings.awsSdk.personalizeeventsMod.apiVersion = null,
-    personalizeruntime: typings.awsSdk.personalizeruntimeMod.apiVersion = null,
-    pi: typings.awsSdk.piMod.apiVersion = null,
-    pinpoint: typings.awsSdk.pinpointMod.apiVersion = null,
-    pinpointemail: typings.awsSdk.pinpointemailMod.apiVersion = null,
-    pinpointsmsvoice: typings.awsSdk.pinpointsmsvoiceMod.apiVersion = null,
-    polly: typings.awsSdk.pollyMod.apiVersion = null,
-    pricing: typings.awsSdk.pricingMod.apiVersion = null,
-    qldb: typings.awsSdk.qldbMod.apiVersion = null,
-    qldbsession: typings.awsSdk.qldbsessionMod.apiVersion = null,
-    quicksight: typings.awsSdk.quicksightMod.apiVersion = null,
-    ram: typings.awsSdk.ramMod.apiVersion = null,
-    rds: typings.awsSdk.rdsMod.apiVersion = null,
-    rdsdataservice: typings.awsSdk.rdsdataserviceMod.apiVersion = null,
-    redshift: typings.awsSdk.redshiftMod.apiVersion = null,
-    rekognition: typings.awsSdk.rekognitionMod.apiVersion = null,
-    resourcegroups: typings.awsSdk.resourcegroupsMod.apiVersion = null,
-    resourcegroupstaggingapi: typings.awsSdk.resourcegroupstaggingapiMod.apiVersion = null,
-    robomaker: typings.awsSdk.robomakerMod.apiVersion = null,
-    route53: typings.awsSdk.route53Mod.apiVersion = null,
-    route53domains: typings.awsSdk.route53domainsMod.apiVersion = null,
-    route53resolver: typings.awsSdk.route53resolverMod.apiVersion = null,
-    s3: typings.awsSdk.s3Mod.apiVersion = null,
-    s3control: typings.awsSdk.s3controlMod.apiVersion = null,
-    sagemaker: typings.awsSdk.sagemakerMod.apiVersion = null,
-    sagemakerruntime: typings.awsSdk.sagemakerruntimeMod.apiVersion = null,
-    savingsplans: typings.awsSdk.savingsplansMod.apiVersion = null,
-    schemas: typings.awsSdk.schemasMod.apiVersion = null,
-    secretsmanager: typings.awsSdk.secretsmanagerMod.apiVersion = null,
-    securityhub: typings.awsSdk.securityhubMod.apiVersion = null,
-    serverlessapplicationrepository: typings.awsSdk.serverlessapplicationrepositoryMod.apiVersion = null,
-    servicecatalog: typings.awsSdk.servicecatalogMod.apiVersion = null,
-    servicediscovery: typings.awsSdk.servicediscoveryMod.apiVersion = null,
-    servicequotas: typings.awsSdk.servicequotasMod.apiVersion = null,
-    ses: typings.awsSdk.sesMod.apiVersion = null,
-    sesv2: typings.awsSdk.sesv2Mod.apiVersion = null,
-    shield: typings.awsSdk.shieldMod.apiVersion = null,
-    signer: typings.awsSdk.signerMod.apiVersion = null,
-    simpledb: typings.awsSdk.simpledbMod.apiVersion = null,
-    sms: typings.awsSdk.smsMod.apiVersion = null,
-    snowball: typings.awsSdk.snowballMod.apiVersion = null,
-    sns: typings.awsSdk.snsMod.apiVersion = null,
-    sqs: typings.awsSdk.sqsMod.apiVersion = null,
-    ssm: typings.awsSdk.ssmMod.apiVersion = null,
-    sso: typings.awsSdk.ssoMod.apiVersion = null,
-    ssooidc: typings.awsSdk.ssooidcMod.apiVersion = null,
-    stepfunctions: typings.awsSdk.stepfunctionsMod.apiVersion = null,
-    storagegateway: typings.awsSdk.storagegatewayMod.apiVersion = null,
-    sts: typings.awsSdk.stsMod.apiVersion = null,
-    support: typings.awsSdk.supportMod.apiVersion = null,
-    swf: typings.awsSdk.swfMod.apiVersion = null,
-    synthetics: typings.awsSdk.syntheticsMod.apiVersion = null,
-    textract: typings.awsSdk.textractMod.apiVersion = null,
-    transcribeservice: typings.awsSdk.transcribeserviceMod.apiVersion = null,
-    transfer: typings.awsSdk.transferMod.apiVersion = null,
-    translate: typings.awsSdk.translateMod.apiVersion = null,
-    waf: typings.awsSdk.wafMod.apiVersion = null,
-    wafregional: typings.awsSdk.wafregionalMod.apiVersion = null,
-    wafv2: typings.awsSdk.wafv2Mod.apiVersion = null,
-    workdocs: typings.awsSdk.workdocsMod.apiVersion = null,
-    worklink: typings.awsSdk.worklinkMod.apiVersion = null,
-    workmail: typings.awsSdk.workmailMod.apiVersion = null,
-    workmailmessageflow: typings.awsSdk.workmailmessageflowMod.apiVersion = null,
-    workspaces: typings.awsSdk.workspacesMod.apiVersion = null,
-    xray: typings.awsSdk.xrayMod.apiVersion = null
-  ): ConfigurationServiceApiVersions = {
+  def apply(): ConfigurationServiceApiVersions = {
     val __obj = js.Dynamic.literal()
-    if (accessanalyzer != null) __obj.updateDynamic("accessanalyzer")(accessanalyzer.asInstanceOf[js.Any])
-    if (acm != null) __obj.updateDynamic("acm")(acm.asInstanceOf[js.Any])
-    if (acmpca != null) __obj.updateDynamic("acmpca")(acmpca.asInstanceOf[js.Any])
-    if (alexaforbusiness != null) __obj.updateDynamic("alexaforbusiness")(alexaforbusiness.asInstanceOf[js.Any])
-    if (amplify != null) __obj.updateDynamic("amplify")(amplify.asInstanceOf[js.Any])
-    if (apigateway != null) __obj.updateDynamic("apigateway")(apigateway.asInstanceOf[js.Any])
-    if (apigatewaymanagementapi != null) __obj.updateDynamic("apigatewaymanagementapi")(apigatewaymanagementapi.asInstanceOf[js.Any])
-    if (apigatewayv2 != null) __obj.updateDynamic("apigatewayv2")(apigatewayv2.asInstanceOf[js.Any])
-    if (appconfig != null) __obj.updateDynamic("appconfig")(appconfig.asInstanceOf[js.Any])
-    if (applicationautoscaling != null) __obj.updateDynamic("applicationautoscaling")(applicationautoscaling.asInstanceOf[js.Any])
-    if (applicationinsights != null) __obj.updateDynamic("applicationinsights")(applicationinsights.asInstanceOf[js.Any])
-    if (appmesh != null) __obj.updateDynamic("appmesh")(appmesh.asInstanceOf[js.Any])
-    if (appstream != null) __obj.updateDynamic("appstream")(appstream.asInstanceOf[js.Any])
-    if (appsync != null) __obj.updateDynamic("appsync")(appsync.asInstanceOf[js.Any])
-    if (athena != null) __obj.updateDynamic("athena")(athena.asInstanceOf[js.Any])
-    if (augmentedairuntime != null) __obj.updateDynamic("augmentedairuntime")(augmentedairuntime.asInstanceOf[js.Any])
-    if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling.asInstanceOf[js.Any])
-    if (autoscalingplans != null) __obj.updateDynamic("autoscalingplans")(autoscalingplans.asInstanceOf[js.Any])
-    if (backup != null) __obj.updateDynamic("backup")(backup.asInstanceOf[js.Any])
-    if (batch != null) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
-    if (budgets != null) __obj.updateDynamic("budgets")(budgets.asInstanceOf[js.Any])
-    if (chime != null) __obj.updateDynamic("chime")(chime.asInstanceOf[js.Any])
-    if (cloud9 != null) __obj.updateDynamic("cloud9")(cloud9.asInstanceOf[js.Any])
-    if (clouddirectory != null) __obj.updateDynamic("clouddirectory")(clouddirectory.asInstanceOf[js.Any])
-    if (cloudformation != null) __obj.updateDynamic("cloudformation")(cloudformation.asInstanceOf[js.Any])
-    if (cloudfront != null) __obj.updateDynamic("cloudfront")(cloudfront.asInstanceOf[js.Any])
-    if (cloudhsm != null) __obj.updateDynamic("cloudhsm")(cloudhsm.asInstanceOf[js.Any])
-    if (cloudhsmv2 != null) __obj.updateDynamic("cloudhsmv2")(cloudhsmv2.asInstanceOf[js.Any])
-    if (cloudsearch != null) __obj.updateDynamic("cloudsearch")(cloudsearch.asInstanceOf[js.Any])
-    if (cloudsearchdomain != null) __obj.updateDynamic("cloudsearchdomain")(cloudsearchdomain.asInstanceOf[js.Any])
-    if (cloudtrail != null) __obj.updateDynamic("cloudtrail")(cloudtrail.asInstanceOf[js.Any])
-    if (cloudwatch != null) __obj.updateDynamic("cloudwatch")(cloudwatch.asInstanceOf[js.Any])
-    if (cloudwatchevents != null) __obj.updateDynamic("cloudwatchevents")(cloudwatchevents.asInstanceOf[js.Any])
-    if (cloudwatchlogs != null) __obj.updateDynamic("cloudwatchlogs")(cloudwatchlogs.asInstanceOf[js.Any])
-    if (codeartifact != null) __obj.updateDynamic("codeartifact")(codeartifact.asInstanceOf[js.Any])
-    if (codebuild != null) __obj.updateDynamic("codebuild")(codebuild.asInstanceOf[js.Any])
-    if (codecommit != null) __obj.updateDynamic("codecommit")(codecommit.asInstanceOf[js.Any])
-    if (codedeploy != null) __obj.updateDynamic("codedeploy")(codedeploy.asInstanceOf[js.Any])
-    if (codeguruprofiler != null) __obj.updateDynamic("codeguruprofiler")(codeguruprofiler.asInstanceOf[js.Any])
-    if (codegurureviewer != null) __obj.updateDynamic("codegurureviewer")(codegurureviewer.asInstanceOf[js.Any])
-    if (codepipeline != null) __obj.updateDynamic("codepipeline")(codepipeline.asInstanceOf[js.Any])
-    if (codestar != null) __obj.updateDynamic("codestar")(codestar.asInstanceOf[js.Any])
-    if (codestarconnections != null) __obj.updateDynamic("codestarconnections")(codestarconnections.asInstanceOf[js.Any])
-    if (codestarnotifications != null) __obj.updateDynamic("codestarnotifications")(codestarnotifications.asInstanceOf[js.Any])
-    if (cognitoidentity != null) __obj.updateDynamic("cognitoidentity")(cognitoidentity.asInstanceOf[js.Any])
-    if (cognitoidentityserviceprovider != null) __obj.updateDynamic("cognitoidentityserviceprovider")(cognitoidentityserviceprovider.asInstanceOf[js.Any])
-    if (cognitosync != null) __obj.updateDynamic("cognitosync")(cognitosync.asInstanceOf[js.Any])
-    if (comprehend != null) __obj.updateDynamic("comprehend")(comprehend.asInstanceOf[js.Any])
-    if (comprehendmedical != null) __obj.updateDynamic("comprehendmedical")(comprehendmedical.asInstanceOf[js.Any])
-    if (computeoptimizer != null) __obj.updateDynamic("computeoptimizer")(computeoptimizer.asInstanceOf[js.Any])
-    if (configservice != null) __obj.updateDynamic("configservice")(configservice.asInstanceOf[js.Any])
-    if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
-    if (connectparticipant != null) __obj.updateDynamic("connectparticipant")(connectparticipant.asInstanceOf[js.Any])
-    if (costexplorer != null) __obj.updateDynamic("costexplorer")(costexplorer.asInstanceOf[js.Any])
-    if (cur != null) __obj.updateDynamic("cur")(cur.asInstanceOf[js.Any])
-    if (dataexchange != null) __obj.updateDynamic("dataexchange")(dataexchange.asInstanceOf[js.Any])
-    if (datapipeline != null) __obj.updateDynamic("datapipeline")(datapipeline.asInstanceOf[js.Any])
-    if (datasync != null) __obj.updateDynamic("datasync")(datasync.asInstanceOf[js.Any])
-    if (dax != null) __obj.updateDynamic("dax")(dax.asInstanceOf[js.Any])
-    if (detective != null) __obj.updateDynamic("detective")(detective.asInstanceOf[js.Any])
-    if (devicefarm != null) __obj.updateDynamic("devicefarm")(devicefarm.asInstanceOf[js.Any])
-    if (directconnect != null) __obj.updateDynamic("directconnect")(directconnect.asInstanceOf[js.Any])
-    if (directoryservice != null) __obj.updateDynamic("directoryservice")(directoryservice.asInstanceOf[js.Any])
-    if (discovery != null) __obj.updateDynamic("discovery")(discovery.asInstanceOf[js.Any])
-    if (dlm != null) __obj.updateDynamic("dlm")(dlm.asInstanceOf[js.Any])
-    if (dms != null) __obj.updateDynamic("dms")(dms.asInstanceOf[js.Any])
-    if (docdb != null) __obj.updateDynamic("docdb")(docdb.asInstanceOf[js.Any])
-    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb.asInstanceOf[js.Any])
-    if (dynamodbstreams != null) __obj.updateDynamic("dynamodbstreams")(dynamodbstreams.asInstanceOf[js.Any])
-    if (ebs != null) __obj.updateDynamic("ebs")(ebs.asInstanceOf[js.Any])
-    if (ec2 != null) __obj.updateDynamic("ec2")(ec2.asInstanceOf[js.Any])
-    if (ec2instanceconnect != null) __obj.updateDynamic("ec2instanceconnect")(ec2instanceconnect.asInstanceOf[js.Any])
-    if (ecr != null) __obj.updateDynamic("ecr")(ecr.asInstanceOf[js.Any])
-    if (ecs != null) __obj.updateDynamic("ecs")(ecs.asInstanceOf[js.Any])
-    if (efs != null) __obj.updateDynamic("efs")(efs.asInstanceOf[js.Any])
-    if (eks != null) __obj.updateDynamic("eks")(eks.asInstanceOf[js.Any])
-    if (elasticache != null) __obj.updateDynamic("elasticache")(elasticache.asInstanceOf[js.Any])
-    if (elasticbeanstalk != null) __obj.updateDynamic("elasticbeanstalk")(elasticbeanstalk.asInstanceOf[js.Any])
-    if (elasticinference != null) __obj.updateDynamic("elasticinference")(elasticinference.asInstanceOf[js.Any])
-    if (elastictranscoder != null) __obj.updateDynamic("elastictranscoder")(elastictranscoder.asInstanceOf[js.Any])
-    if (elb != null) __obj.updateDynamic("elb")(elb.asInstanceOf[js.Any])
-    if (elbv2 != null) __obj.updateDynamic("elbv2")(elbv2.asInstanceOf[js.Any])
-    if (emr != null) __obj.updateDynamic("emr")(emr.asInstanceOf[js.Any])
-    if (es != null) __obj.updateDynamic("es")(es.asInstanceOf[js.Any])
-    if (eventbridge != null) __obj.updateDynamic("eventbridge")(eventbridge.asInstanceOf[js.Any])
-    if (firehose != null) __obj.updateDynamic("firehose")(firehose.asInstanceOf[js.Any])
-    if (fms != null) __obj.updateDynamic("fms")(fms.asInstanceOf[js.Any])
-    if (forecastqueryservice != null) __obj.updateDynamic("forecastqueryservice")(forecastqueryservice.asInstanceOf[js.Any])
-    if (forecastservice != null) __obj.updateDynamic("forecastservice")(forecastservice.asInstanceOf[js.Any])
-    if (frauddetector != null) __obj.updateDynamic("frauddetector")(frauddetector.asInstanceOf[js.Any])
-    if (fsx != null) __obj.updateDynamic("fsx")(fsx.asInstanceOf[js.Any])
-    if (gamelift != null) __obj.updateDynamic("gamelift")(gamelift.asInstanceOf[js.Any])
-    if (glacier != null) __obj.updateDynamic("glacier")(glacier.asInstanceOf[js.Any])
-    if (globalaccelerator != null) __obj.updateDynamic("globalaccelerator")(globalaccelerator.asInstanceOf[js.Any])
-    if (glue != null) __obj.updateDynamic("glue")(glue.asInstanceOf[js.Any])
-    if (greengrass != null) __obj.updateDynamic("greengrass")(greengrass.asInstanceOf[js.Any])
-    if (groundstation != null) __obj.updateDynamic("groundstation")(groundstation.asInstanceOf[js.Any])
-    if (guardduty != null) __obj.updateDynamic("guardduty")(guardduty.asInstanceOf[js.Any])
-    if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
-    if (honeycode != null) __obj.updateDynamic("honeycode")(honeycode.asInstanceOf[js.Any])
-    if (iam != null) __obj.updateDynamic("iam")(iam.asInstanceOf[js.Any])
-    if (imagebuilder != null) __obj.updateDynamic("imagebuilder")(imagebuilder.asInstanceOf[js.Any])
-    if (importexport != null) __obj.updateDynamic("importexport")(importexport.asInstanceOf[js.Any])
-    if (inspector != null) __obj.updateDynamic("inspector")(inspector.asInstanceOf[js.Any])
-    if (iot != null) __obj.updateDynamic("iot")(iot.asInstanceOf[js.Any])
-    if (iot1clickdevicesservice != null) __obj.updateDynamic("iot1clickdevicesservice")(iot1clickdevicesservice.asInstanceOf[js.Any])
-    if (iot1clickprojects != null) __obj.updateDynamic("iot1clickprojects")(iot1clickprojects.asInstanceOf[js.Any])
-    if (iotanalytics != null) __obj.updateDynamic("iotanalytics")(iotanalytics.asInstanceOf[js.Any])
-    if (iotdata != null) __obj.updateDynamic("iotdata")(iotdata.asInstanceOf[js.Any])
-    if (iotevents != null) __obj.updateDynamic("iotevents")(iotevents.asInstanceOf[js.Any])
-    if (ioteventsdata != null) __obj.updateDynamic("ioteventsdata")(ioteventsdata.asInstanceOf[js.Any])
-    if (iotjobsdataplane != null) __obj.updateDynamic("iotjobsdataplane")(iotjobsdataplane.asInstanceOf[js.Any])
-    if (iotsecuretunneling != null) __obj.updateDynamic("iotsecuretunneling")(iotsecuretunneling.asInstanceOf[js.Any])
-    if (iotsitewise != null) __obj.updateDynamic("iotsitewise")(iotsitewise.asInstanceOf[js.Any])
-    if (iotthingsgraph != null) __obj.updateDynamic("iotthingsgraph")(iotthingsgraph.asInstanceOf[js.Any])
-    if (kafka != null) __obj.updateDynamic("kafka")(kafka.asInstanceOf[js.Any])
-    if (kendra != null) __obj.updateDynamic("kendra")(kendra.asInstanceOf[js.Any])
-    if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis.asInstanceOf[js.Any])
-    if (kinesisanalytics != null) __obj.updateDynamic("kinesisanalytics")(kinesisanalytics.asInstanceOf[js.Any])
-    if (kinesisanalyticsv2 != null) __obj.updateDynamic("kinesisanalyticsv2")(kinesisanalyticsv2.asInstanceOf[js.Any])
-    if (kinesisvideo != null) __obj.updateDynamic("kinesisvideo")(kinesisvideo.asInstanceOf[js.Any])
-    if (kinesisvideoarchivedmedia != null) __obj.updateDynamic("kinesisvideoarchivedmedia")(kinesisvideoarchivedmedia.asInstanceOf[js.Any])
-    if (kinesisvideomedia != null) __obj.updateDynamic("kinesisvideomedia")(kinesisvideomedia.asInstanceOf[js.Any])
-    if (kinesisvideosignalingchannels != null) __obj.updateDynamic("kinesisvideosignalingchannels")(kinesisvideosignalingchannels.asInstanceOf[js.Any])
-    if (kms != null) __obj.updateDynamic("kms")(kms.asInstanceOf[js.Any])
-    if (lakeformation != null) __obj.updateDynamic("lakeformation")(lakeformation.asInstanceOf[js.Any])
-    if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
-    if (lexmodelbuildingservice != null) __obj.updateDynamic("lexmodelbuildingservice")(lexmodelbuildingservice.asInstanceOf[js.Any])
-    if (lexruntime != null) __obj.updateDynamic("lexruntime")(lexruntime.asInstanceOf[js.Any])
-    if (licensemanager != null) __obj.updateDynamic("licensemanager")(licensemanager.asInstanceOf[js.Any])
-    if (lightsail != null) __obj.updateDynamic("lightsail")(lightsail.asInstanceOf[js.Any])
-    if (machinelearning != null) __obj.updateDynamic("machinelearning")(machinelearning.asInstanceOf[js.Any])
-    if (macie != null) __obj.updateDynamic("macie")(macie.asInstanceOf[js.Any])
-    if (macie2 != null) __obj.updateDynamic("macie2")(macie2.asInstanceOf[js.Any])
-    if (managedblockchain != null) __obj.updateDynamic("managedblockchain")(managedblockchain.asInstanceOf[js.Any])
-    if (marketplacecatalog != null) __obj.updateDynamic("marketplacecatalog")(marketplacecatalog.asInstanceOf[js.Any])
-    if (marketplacecommerceanalytics != null) __obj.updateDynamic("marketplacecommerceanalytics")(marketplacecommerceanalytics.asInstanceOf[js.Any])
-    if (marketplaceentitlementservice != null) __obj.updateDynamic("marketplaceentitlementservice")(marketplaceentitlementservice.asInstanceOf[js.Any])
-    if (marketplacemetering != null) __obj.updateDynamic("marketplacemetering")(marketplacemetering.asInstanceOf[js.Any])
-    if (mediaconnect != null) __obj.updateDynamic("mediaconnect")(mediaconnect.asInstanceOf[js.Any])
-    if (mediaconvert != null) __obj.updateDynamic("mediaconvert")(mediaconvert.asInstanceOf[js.Any])
-    if (medialive != null) __obj.updateDynamic("medialive")(medialive.asInstanceOf[js.Any])
-    if (mediapackage != null) __obj.updateDynamic("mediapackage")(mediapackage.asInstanceOf[js.Any])
-    if (mediapackagevod != null) __obj.updateDynamic("mediapackagevod")(mediapackagevod.asInstanceOf[js.Any])
-    if (mediastore != null) __obj.updateDynamic("mediastore")(mediastore.asInstanceOf[js.Any])
-    if (mediastoredata != null) __obj.updateDynamic("mediastoredata")(mediastoredata.asInstanceOf[js.Any])
-    if (mediatailor != null) __obj.updateDynamic("mediatailor")(mediatailor.asInstanceOf[js.Any])
-    if (migrationhub != null) __obj.updateDynamic("migrationhub")(migrationhub.asInstanceOf[js.Any])
-    if (migrationhubconfig != null) __obj.updateDynamic("migrationhubconfig")(migrationhubconfig.asInstanceOf[js.Any])
-    if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (mobileanalytics != null) __obj.updateDynamic("mobileanalytics")(mobileanalytics.asInstanceOf[js.Any])
-    if (mq != null) __obj.updateDynamic("mq")(mq.asInstanceOf[js.Any])
-    if (mturk != null) __obj.updateDynamic("mturk")(mturk.asInstanceOf[js.Any])
-    if (neptune != null) __obj.updateDynamic("neptune")(neptune.asInstanceOf[js.Any])
-    if (networkmanager != null) __obj.updateDynamic("networkmanager")(networkmanager.asInstanceOf[js.Any])
-    if (opsworks != null) __obj.updateDynamic("opsworks")(opsworks.asInstanceOf[js.Any])
-    if (opsworkscm != null) __obj.updateDynamic("opsworkscm")(opsworkscm.asInstanceOf[js.Any])
-    if (organizations != null) __obj.updateDynamic("organizations")(organizations.asInstanceOf[js.Any])
-    if (outposts != null) __obj.updateDynamic("outposts")(outposts.asInstanceOf[js.Any])
-    if (personalize != null) __obj.updateDynamic("personalize")(personalize.asInstanceOf[js.Any])
-    if (personalizeevents != null) __obj.updateDynamic("personalizeevents")(personalizeevents.asInstanceOf[js.Any])
-    if (personalizeruntime != null) __obj.updateDynamic("personalizeruntime")(personalizeruntime.asInstanceOf[js.Any])
-    if (pi != null) __obj.updateDynamic("pi")(pi.asInstanceOf[js.Any])
-    if (pinpoint != null) __obj.updateDynamic("pinpoint")(pinpoint.asInstanceOf[js.Any])
-    if (pinpointemail != null) __obj.updateDynamic("pinpointemail")(pinpointemail.asInstanceOf[js.Any])
-    if (pinpointsmsvoice != null) __obj.updateDynamic("pinpointsmsvoice")(pinpointsmsvoice.asInstanceOf[js.Any])
-    if (polly != null) __obj.updateDynamic("polly")(polly.asInstanceOf[js.Any])
-    if (pricing != null) __obj.updateDynamic("pricing")(pricing.asInstanceOf[js.Any])
-    if (qldb != null) __obj.updateDynamic("qldb")(qldb.asInstanceOf[js.Any])
-    if (qldbsession != null) __obj.updateDynamic("qldbsession")(qldbsession.asInstanceOf[js.Any])
-    if (quicksight != null) __obj.updateDynamic("quicksight")(quicksight.asInstanceOf[js.Any])
-    if (ram != null) __obj.updateDynamic("ram")(ram.asInstanceOf[js.Any])
-    if (rds != null) __obj.updateDynamic("rds")(rds.asInstanceOf[js.Any])
-    if (rdsdataservice != null) __obj.updateDynamic("rdsdataservice")(rdsdataservice.asInstanceOf[js.Any])
-    if (redshift != null) __obj.updateDynamic("redshift")(redshift.asInstanceOf[js.Any])
-    if (rekognition != null) __obj.updateDynamic("rekognition")(rekognition.asInstanceOf[js.Any])
-    if (resourcegroups != null) __obj.updateDynamic("resourcegroups")(resourcegroups.asInstanceOf[js.Any])
-    if (resourcegroupstaggingapi != null) __obj.updateDynamic("resourcegroupstaggingapi")(resourcegroupstaggingapi.asInstanceOf[js.Any])
-    if (robomaker != null) __obj.updateDynamic("robomaker")(robomaker.asInstanceOf[js.Any])
-    if (route53 != null) __obj.updateDynamic("route53")(route53.asInstanceOf[js.Any])
-    if (route53domains != null) __obj.updateDynamic("route53domains")(route53domains.asInstanceOf[js.Any])
-    if (route53resolver != null) __obj.updateDynamic("route53resolver")(route53resolver.asInstanceOf[js.Any])
-    if (s3 != null) __obj.updateDynamic("s3")(s3.asInstanceOf[js.Any])
-    if (s3control != null) __obj.updateDynamic("s3control")(s3control.asInstanceOf[js.Any])
-    if (sagemaker != null) __obj.updateDynamic("sagemaker")(sagemaker.asInstanceOf[js.Any])
-    if (sagemakerruntime != null) __obj.updateDynamic("sagemakerruntime")(sagemakerruntime.asInstanceOf[js.Any])
-    if (savingsplans != null) __obj.updateDynamic("savingsplans")(savingsplans.asInstanceOf[js.Any])
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
-    if (secretsmanager != null) __obj.updateDynamic("secretsmanager")(secretsmanager.asInstanceOf[js.Any])
-    if (securityhub != null) __obj.updateDynamic("securityhub")(securityhub.asInstanceOf[js.Any])
-    if (serverlessapplicationrepository != null) __obj.updateDynamic("serverlessapplicationrepository")(serverlessapplicationrepository.asInstanceOf[js.Any])
-    if (servicecatalog != null) __obj.updateDynamic("servicecatalog")(servicecatalog.asInstanceOf[js.Any])
-    if (servicediscovery != null) __obj.updateDynamic("servicediscovery")(servicediscovery.asInstanceOf[js.Any])
-    if (servicequotas != null) __obj.updateDynamic("servicequotas")(servicequotas.asInstanceOf[js.Any])
-    if (ses != null) __obj.updateDynamic("ses")(ses.asInstanceOf[js.Any])
-    if (sesv2 != null) __obj.updateDynamic("sesv2")(sesv2.asInstanceOf[js.Any])
-    if (shield != null) __obj.updateDynamic("shield")(shield.asInstanceOf[js.Any])
-    if (signer != null) __obj.updateDynamic("signer")(signer.asInstanceOf[js.Any])
-    if (simpledb != null) __obj.updateDynamic("simpledb")(simpledb.asInstanceOf[js.Any])
-    if (sms != null) __obj.updateDynamic("sms")(sms.asInstanceOf[js.Any])
-    if (snowball != null) __obj.updateDynamic("snowball")(snowball.asInstanceOf[js.Any])
-    if (sns != null) __obj.updateDynamic("sns")(sns.asInstanceOf[js.Any])
-    if (sqs != null) __obj.updateDynamic("sqs")(sqs.asInstanceOf[js.Any])
-    if (ssm != null) __obj.updateDynamic("ssm")(ssm.asInstanceOf[js.Any])
-    if (sso != null) __obj.updateDynamic("sso")(sso.asInstanceOf[js.Any])
-    if (ssooidc != null) __obj.updateDynamic("ssooidc")(ssooidc.asInstanceOf[js.Any])
-    if (stepfunctions != null) __obj.updateDynamic("stepfunctions")(stepfunctions.asInstanceOf[js.Any])
-    if (storagegateway != null) __obj.updateDynamic("storagegateway")(storagegateway.asInstanceOf[js.Any])
-    if (sts != null) __obj.updateDynamic("sts")(sts.asInstanceOf[js.Any])
-    if (support != null) __obj.updateDynamic("support")(support.asInstanceOf[js.Any])
-    if (swf != null) __obj.updateDynamic("swf")(swf.asInstanceOf[js.Any])
-    if (synthetics != null) __obj.updateDynamic("synthetics")(synthetics.asInstanceOf[js.Any])
-    if (textract != null) __obj.updateDynamic("textract")(textract.asInstanceOf[js.Any])
-    if (transcribeservice != null) __obj.updateDynamic("transcribeservice")(transcribeservice.asInstanceOf[js.Any])
-    if (transfer != null) __obj.updateDynamic("transfer")(transfer.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (waf != null) __obj.updateDynamic("waf")(waf.asInstanceOf[js.Any])
-    if (wafregional != null) __obj.updateDynamic("wafregional")(wafregional.asInstanceOf[js.Any])
-    if (wafv2 != null) __obj.updateDynamic("wafv2")(wafv2.asInstanceOf[js.Any])
-    if (workdocs != null) __obj.updateDynamic("workdocs")(workdocs.asInstanceOf[js.Any])
-    if (worklink != null) __obj.updateDynamic("worklink")(worklink.asInstanceOf[js.Any])
-    if (workmail != null) __obj.updateDynamic("workmail")(workmail.asInstanceOf[js.Any])
-    if (workmailmessageflow != null) __obj.updateDynamic("workmailmessageflow")(workmailmessageflow.asInstanceOf[js.Any])
-    if (workspaces != null) __obj.updateDynamic("workspaces")(workspaces.asInstanceOf[js.Any])
-    if (xray != null) __obj.updateDynamic("xray")(xray.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationServiceApiVersions]
   }
+  @scala.inline
+  implicit class ConfigurationServiceApiVersionsOps[Self <: ConfigurationServiceApiVersions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessanalyzer(value: apiVersion): Self = this.set("accessanalyzer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessanalyzer: Self = this.set("accessanalyzer", js.undefined)
+    @scala.inline
+    def setAcm(value: typings.awsSdk.acmMod.apiVersion): Self = this.set("acm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcm: Self = this.set("acm", js.undefined)
+    @scala.inline
+    def setAcmpca(value: typings.awsSdk.acmpcaMod.apiVersion): Self = this.set("acmpca", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcmpca: Self = this.set("acmpca", js.undefined)
+    @scala.inline
+    def setAlexaforbusiness(value: typings.awsSdk.alexaforbusinessMod.apiVersion): Self = this.set("alexaforbusiness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlexaforbusiness: Self = this.set("alexaforbusiness", js.undefined)
+    @scala.inline
+    def setAmplify(value: typings.awsSdk.amplifyMod.apiVersion): Self = this.set("amplify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmplify: Self = this.set("amplify", js.undefined)
+    @scala.inline
+    def setApigateway(value: typings.awsSdk.apigatewayMod.apiVersion): Self = this.set("apigateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApigateway: Self = this.set("apigateway", js.undefined)
+    @scala.inline
+    def setApigatewaymanagementapi(value: typings.awsSdk.apigatewaymanagementapiMod.apiVersion): Self = this.set("apigatewaymanagementapi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApigatewaymanagementapi: Self = this.set("apigatewaymanagementapi", js.undefined)
+    @scala.inline
+    def setApigatewayv2(value: typings.awsSdk.apigatewayv2Mod.apiVersion): Self = this.set("apigatewayv2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApigatewayv2: Self = this.set("apigatewayv2", js.undefined)
+    @scala.inline
+    def setAppconfig(value: typings.awsSdk.appconfigMod.apiVersion): Self = this.set("appconfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppconfig: Self = this.set("appconfig", js.undefined)
+    @scala.inline
+    def setApplicationautoscaling(value: typings.awsSdk.applicationautoscalingMod.apiVersion): Self = this.set("applicationautoscaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationautoscaling: Self = this.set("applicationautoscaling", js.undefined)
+    @scala.inline
+    def setApplicationinsights(value: typings.awsSdk.applicationinsightsMod.apiVersion): Self = this.set("applicationinsights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationinsights: Self = this.set("applicationinsights", js.undefined)
+    @scala.inline
+    def setAppmesh(value: typings.awsSdk.appmeshMod.apiVersion): Self = this.set("appmesh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppmesh: Self = this.set("appmesh", js.undefined)
+    @scala.inline
+    def setAppstream(value: typings.awsSdk.appstreamMod.apiVersion): Self = this.set("appstream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppstream: Self = this.set("appstream", js.undefined)
+    @scala.inline
+    def setAppsync(value: typings.awsSdk.appsyncMod.apiVersion): Self = this.set("appsync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppsync: Self = this.set("appsync", js.undefined)
+    @scala.inline
+    def setAthena(value: typings.awsSdk.athenaMod.apiVersion): Self = this.set("athena", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAthena: Self = this.set("athena", js.undefined)
+    @scala.inline
+    def setAugmentedairuntime(value: typings.awsSdk.augmentedairuntimeMod.apiVersion): Self = this.set("augmentedairuntime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAugmentedairuntime: Self = this.set("augmentedairuntime", js.undefined)
+    @scala.inline
+    def setAutoscaling(value: typings.awsSdk.autoscalingMod.apiVersion): Self = this.set("autoscaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscaling: Self = this.set("autoscaling", js.undefined)
+    @scala.inline
+    def setAutoscalingplans(value: typings.awsSdk.autoscalingplansMod.apiVersion): Self = this.set("autoscalingplans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscalingplans: Self = this.set("autoscalingplans", js.undefined)
+    @scala.inline
+    def setBackup(value: typings.awsSdk.backupMod.apiVersion): Self = this.set("backup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackup: Self = this.set("backup", js.undefined)
+    @scala.inline
+    def setBatch(value: typings.awsSdk.batchMod.apiVersion): Self = this.set("batch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatch: Self = this.set("batch", js.undefined)
+    @scala.inline
+    def setBudgets(value: typings.awsSdk.budgetsMod.apiVersion): Self = this.set("budgets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBudgets: Self = this.set("budgets", js.undefined)
+    @scala.inline
+    def setChime(value: typings.awsSdk.chimeMod.apiVersion): Self = this.set("chime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChime: Self = this.set("chime", js.undefined)
+    @scala.inline
+    def setCloud9(value: typings.awsSdk.cloud9Mod.apiVersion): Self = this.set("cloud9", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloud9: Self = this.set("cloud9", js.undefined)
+    @scala.inline
+    def setClouddirectory(value: typings.awsSdk.clouddirectoryMod.apiVersion): Self = this.set("clouddirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClouddirectory: Self = this.set("clouddirectory", js.undefined)
+    @scala.inline
+    def setCloudformation(value: typings.awsSdk.cloudformationMod.apiVersion): Self = this.set("cloudformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudformation: Self = this.set("cloudformation", js.undefined)
+    @scala.inline
+    def setCloudfront(value: typings.awsSdk.cloudfrontMod.apiVersion): Self = this.set("cloudfront", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudfront: Self = this.set("cloudfront", js.undefined)
+    @scala.inline
+    def setCloudhsm(value: typings.awsSdk.cloudhsmMod.apiVersion): Self = this.set("cloudhsm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudhsm: Self = this.set("cloudhsm", js.undefined)
+    @scala.inline
+    def setCloudhsmv2(value: typings.awsSdk.cloudhsmv2Mod.apiVersion): Self = this.set("cloudhsmv2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudhsmv2: Self = this.set("cloudhsmv2", js.undefined)
+    @scala.inline
+    def setCloudsearch(value: typings.awsSdk.cloudsearchMod.apiVersion): Self = this.set("cloudsearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudsearch: Self = this.set("cloudsearch", js.undefined)
+    @scala.inline
+    def setCloudsearchdomain(value: typings.awsSdk.cloudsearchdomainMod.apiVersion): Self = this.set("cloudsearchdomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudsearchdomain: Self = this.set("cloudsearchdomain", js.undefined)
+    @scala.inline
+    def setCloudtrail(value: typings.awsSdk.cloudtrailMod.apiVersion): Self = this.set("cloudtrail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudtrail: Self = this.set("cloudtrail", js.undefined)
+    @scala.inline
+    def setCloudwatch(value: typings.awsSdk.cloudwatchMod.apiVersion): Self = this.set("cloudwatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatch: Self = this.set("cloudwatch", js.undefined)
+    @scala.inline
+    def setCloudwatchevents(value: typings.awsSdk.cloudwatcheventsMod.apiVersion): Self = this.set("cloudwatchevents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchevents: Self = this.set("cloudwatchevents", js.undefined)
+    @scala.inline
+    def setCloudwatchlogs(value: typings.awsSdk.cloudwatchlogsMod.apiVersion): Self = this.set("cloudwatchlogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchlogs: Self = this.set("cloudwatchlogs", js.undefined)
+    @scala.inline
+    def setCodeartifact(value: typings.awsSdk.codeartifactMod.apiVersion): Self = this.set("codeartifact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeartifact: Self = this.set("codeartifact", js.undefined)
+    @scala.inline
+    def setCodebuild(value: typings.awsSdk.codebuildMod.apiVersion): Self = this.set("codebuild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodebuild: Self = this.set("codebuild", js.undefined)
+    @scala.inline
+    def setCodecommit(value: typings.awsSdk.codecommitMod.apiVersion): Self = this.set("codecommit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecommit: Self = this.set("codecommit", js.undefined)
+    @scala.inline
+    def setCodedeploy(value: typings.awsSdk.codedeployMod.apiVersion): Self = this.set("codedeploy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodedeploy: Self = this.set("codedeploy", js.undefined)
+    @scala.inline
+    def setCodeguruprofiler(value: typings.awsSdk.codeguruprofilerMod.apiVersion): Self = this.set("codeguruprofiler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeguruprofiler: Self = this.set("codeguruprofiler", js.undefined)
+    @scala.inline
+    def setCodegurureviewer(value: typings.awsSdk.codegurureviewerMod.apiVersion): Self = this.set("codegurureviewer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodegurureviewer: Self = this.set("codegurureviewer", js.undefined)
+    @scala.inline
+    def setCodepipeline(value: typings.awsSdk.codepipelineMod.apiVersion): Self = this.set("codepipeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodepipeline: Self = this.set("codepipeline", js.undefined)
+    @scala.inline
+    def setCodestar(value: typings.awsSdk.codestarMod.apiVersion): Self = this.set("codestar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodestar: Self = this.set("codestar", js.undefined)
+    @scala.inline
+    def setCodestarconnections(value: typings.awsSdk.codestarconnectionsMod.apiVersion): Self = this.set("codestarconnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodestarconnections: Self = this.set("codestarconnections", js.undefined)
+    @scala.inline
+    def setCodestarnotifications(value: typings.awsSdk.codestarnotificationsMod.apiVersion): Self = this.set("codestarnotifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodestarnotifications: Self = this.set("codestarnotifications", js.undefined)
+    @scala.inline
+    def setCognitoidentity(value: typings.awsSdk.cognitoidentityMod.apiVersion): Self = this.set("cognitoidentity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitoidentity: Self = this.set("cognitoidentity", js.undefined)
+    @scala.inline
+    def setCognitoidentityserviceprovider(value: typings.awsSdk.cognitoidentityserviceproviderMod.apiVersion): Self = this.set("cognitoidentityserviceprovider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitoidentityserviceprovider: Self = this.set("cognitoidentityserviceprovider", js.undefined)
+    @scala.inline
+    def setCognitosync(value: typings.awsSdk.cognitosyncMod.apiVersion): Self = this.set("cognitosync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitosync: Self = this.set("cognitosync", js.undefined)
+    @scala.inline
+    def setComprehend(value: typings.awsSdk.comprehendMod.apiVersion): Self = this.set("comprehend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComprehend: Self = this.set("comprehend", js.undefined)
+    @scala.inline
+    def setComprehendmedical(value: typings.awsSdk.comprehendmedicalMod.apiVersion): Self = this.set("comprehendmedical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComprehendmedical: Self = this.set("comprehendmedical", js.undefined)
+    @scala.inline
+    def setComputeoptimizer(value: typings.awsSdk.computeoptimizerMod.apiVersion): Self = this.set("computeoptimizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeoptimizer: Self = this.set("computeoptimizer", js.undefined)
+    @scala.inline
+    def setConfigservice(value: typings.awsSdk.configserviceMod.apiVersion): Self = this.set("configservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigservice: Self = this.set("configservice", js.undefined)
+    @scala.inline
+    def setConnect(value: typings.awsSdk.connectMod.apiVersion): Self = this.set("connect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnect: Self = this.set("connect", js.undefined)
+    @scala.inline
+    def setConnectparticipant(value: typings.awsSdk.connectparticipantMod.apiVersion): Self = this.set("connectparticipant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectparticipant: Self = this.set("connectparticipant", js.undefined)
+    @scala.inline
+    def setCostexplorer(value: typings.awsSdk.costexplorerMod.apiVersion): Self = this.set("costexplorer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCostexplorer: Self = this.set("costexplorer", js.undefined)
+    @scala.inline
+    def setCur(value: typings.awsSdk.curMod.apiVersion): Self = this.set("cur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCur: Self = this.set("cur", js.undefined)
+    @scala.inline
+    def setDataexchange(value: typings.awsSdk.dataexchangeMod.apiVersion): Self = this.set("dataexchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataexchange: Self = this.set("dataexchange", js.undefined)
+    @scala.inline
+    def setDatapipeline(value: typings.awsSdk.datapipelineMod.apiVersion): Self = this.set("datapipeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatapipeline: Self = this.set("datapipeline", js.undefined)
+    @scala.inline
+    def setDatasync(value: typings.awsSdk.datasyncMod.apiVersion): Self = this.set("datasync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasync: Self = this.set("datasync", js.undefined)
+    @scala.inline
+    def setDax(value: typings.awsSdk.daxMod.apiVersion): Self = this.set("dax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDax: Self = this.set("dax", js.undefined)
+    @scala.inline
+    def setDetective(value: typings.awsSdk.detectiveMod.apiVersion): Self = this.set("detective", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetective: Self = this.set("detective", js.undefined)
+    @scala.inline
+    def setDevicefarm(value: typings.awsSdk.devicefarmMod.apiVersion): Self = this.set("devicefarm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevicefarm: Self = this.set("devicefarm", js.undefined)
+    @scala.inline
+    def setDirectconnect(value: typings.awsSdk.directconnectMod.apiVersion): Self = this.set("directconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectconnect: Self = this.set("directconnect", js.undefined)
+    @scala.inline
+    def setDirectoryservice(value: typings.awsSdk.directoryserviceMod.apiVersion): Self = this.set("directoryservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryservice: Self = this.set("directoryservice", js.undefined)
+    @scala.inline
+    def setDiscovery(value: typings.awsSdk.discoveryMod.apiVersion): Self = this.set("discovery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscovery: Self = this.set("discovery", js.undefined)
+    @scala.inline
+    def setDlm(value: typings.awsSdk.dlmMod.apiVersion): Self = this.set("dlm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDlm: Self = this.set("dlm", js.undefined)
+    @scala.inline
+    def setDms(value: typings.awsSdk.dmsMod.apiVersion): Self = this.set("dms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDms: Self = this.set("dms", js.undefined)
+    @scala.inline
+    def setDocdb(value: typings.awsSdk.docdbMod.apiVersion): Self = this.set("docdb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocdb: Self = this.set("docdb", js.undefined)
+    @scala.inline
+    def setDynamodb(value: typings.awsSdk.dynamodbMod.apiVersion): Self = this.set("dynamodb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamodb: Self = this.set("dynamodb", js.undefined)
+    @scala.inline
+    def setDynamodbstreams(value: typings.awsSdk.dynamodbstreamsMod.apiVersion): Self = this.set("dynamodbstreams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamodbstreams: Self = this.set("dynamodbstreams", js.undefined)
+    @scala.inline
+    def setEbs(value: typings.awsSdk.ebsMod.apiVersion): Self = this.set("ebs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbs: Self = this.set("ebs", js.undefined)
+    @scala.inline
+    def setEc2(value: typings.awsSdk.ec2Mod.apiVersion): Self = this.set("ec2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2: Self = this.set("ec2", js.undefined)
+    @scala.inline
+    def setEc2instanceconnect(value: typings.awsSdk.ec2instanceconnectMod.apiVersion): Self = this.set("ec2instanceconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2instanceconnect: Self = this.set("ec2instanceconnect", js.undefined)
+    @scala.inline
+    def setEcr(value: typings.awsSdk.ecrMod.apiVersion): Self = this.set("ecr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcr: Self = this.set("ecr", js.undefined)
+    @scala.inline
+    def setEcs(value: typings.awsSdk.ecsMod.apiVersion): Self = this.set("ecs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcs: Self = this.set("ecs", js.undefined)
+    @scala.inline
+    def setEfs(value: typings.awsSdk.efsMod.apiVersion): Self = this.set("efs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEfs: Self = this.set("efs", js.undefined)
+    @scala.inline
+    def setEks(value: typings.awsSdk.eksMod.apiVersion): Self = this.set("eks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEks: Self = this.set("eks", js.undefined)
+    @scala.inline
+    def setElasticache(value: typings.awsSdk.elasticacheMod.apiVersion): Self = this.set("elasticache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticache: Self = this.set("elasticache", js.undefined)
+    @scala.inline
+    def setElasticbeanstalk(value: typings.awsSdk.elasticbeanstalkMod.apiVersion): Self = this.set("elasticbeanstalk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticbeanstalk: Self = this.set("elasticbeanstalk", js.undefined)
+    @scala.inline
+    def setElasticinference(value: typings.awsSdk.elasticinferenceMod.apiVersion): Self = this.set("elasticinference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticinference: Self = this.set("elasticinference", js.undefined)
+    @scala.inline
+    def setElastictranscoder(value: typings.awsSdk.elastictranscoderMod.apiVersion): Self = this.set("elastictranscoder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElastictranscoder: Self = this.set("elastictranscoder", js.undefined)
+    @scala.inline
+    def setElb(value: typings.awsSdk.elbMod.apiVersion): Self = this.set("elb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElb: Self = this.set("elb", js.undefined)
+    @scala.inline
+    def setElbv2(value: typings.awsSdk.elbv2Mod.apiVersion): Self = this.set("elbv2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElbv2: Self = this.set("elbv2", js.undefined)
+    @scala.inline
+    def setEmr(value: typings.awsSdk.emrMod.apiVersion): Self = this.set("emr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmr: Self = this.set("emr", js.undefined)
+    @scala.inline
+    def setEs(value: typings.awsSdk.esMod.apiVersion): Self = this.set("es", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEs: Self = this.set("es", js.undefined)
+    @scala.inline
+    def setEventbridge(value: typings.awsSdk.eventbridgeMod.apiVersion): Self = this.set("eventbridge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventbridge: Self = this.set("eventbridge", js.undefined)
+    @scala.inline
+    def setFirehose(value: typings.awsSdk.firehoseMod.apiVersion): Self = this.set("firehose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirehose: Self = this.set("firehose", js.undefined)
+    @scala.inline
+    def setFms(value: typings.awsSdk.fmsMod.apiVersion): Self = this.set("fms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFms: Self = this.set("fms", js.undefined)
+    @scala.inline
+    def setForecastqueryservice(value: typings.awsSdk.forecastqueryserviceMod.apiVersion): Self = this.set("forecastqueryservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastqueryservice: Self = this.set("forecastqueryservice", js.undefined)
+    @scala.inline
+    def setForecastservice(value: typings.awsSdk.forecastserviceMod.apiVersion): Self = this.set("forecastservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastservice: Self = this.set("forecastservice", js.undefined)
+    @scala.inline
+    def setFrauddetector(value: typings.awsSdk.frauddetectorMod.apiVersion): Self = this.set("frauddetector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrauddetector: Self = this.set("frauddetector", js.undefined)
+    @scala.inline
+    def setFsx(value: typings.awsSdk.fsxMod.apiVersion): Self = this.set("fsx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFsx: Self = this.set("fsx", js.undefined)
+    @scala.inline
+    def setGamelift(value: typings.awsSdk.gameliftMod.apiVersion): Self = this.set("gamelift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGamelift: Self = this.set("gamelift", js.undefined)
+    @scala.inline
+    def setGlacier(value: typings.awsSdk.glacierMod.apiVersion): Self = this.set("glacier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlacier: Self = this.set("glacier", js.undefined)
+    @scala.inline
+    def setGlobalaccelerator(value: typings.awsSdk.globalacceleratorMod.apiVersion): Self = this.set("globalaccelerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalaccelerator: Self = this.set("globalaccelerator", js.undefined)
+    @scala.inline
+    def setGlue(value: typings.awsSdk.glueMod.apiVersion): Self = this.set("glue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlue: Self = this.set("glue", js.undefined)
+    @scala.inline
+    def setGreengrass(value: typings.awsSdk.greengrassMod.apiVersion): Self = this.set("greengrass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreengrass: Self = this.set("greengrass", js.undefined)
+    @scala.inline
+    def setGroundstation(value: typings.awsSdk.groundstationMod.apiVersion): Self = this.set("groundstation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroundstation: Self = this.set("groundstation", js.undefined)
+    @scala.inline
+    def setGuardduty(value: typings.awsSdk.guarddutyMod.apiVersion): Self = this.set("guardduty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuardduty: Self = this.set("guardduty", js.undefined)
+    @scala.inline
+    def setHealth(value: typings.awsSdk.healthMod.apiVersion): Self = this.set("health", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealth: Self = this.set("health", js.undefined)
+    @scala.inline
+    def setHoneycode(value: typings.awsSdk.honeycodeMod.apiVersion): Self = this.set("honeycode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoneycode: Self = this.set("honeycode", js.undefined)
+    @scala.inline
+    def setIam(value: typings.awsSdk.iamMod.apiVersion): Self = this.set("iam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIam: Self = this.set("iam", js.undefined)
+    @scala.inline
+    def setImagebuilder(value: typings.awsSdk.imagebuilderMod.apiVersion): Self = this.set("imagebuilder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagebuilder: Self = this.set("imagebuilder", js.undefined)
+    @scala.inline
+    def setImportexport(value: typings.awsSdk.importexportMod.apiVersion): Self = this.set("importexport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportexport: Self = this.set("importexport", js.undefined)
+    @scala.inline
+    def setInspector(value: typings.awsSdk.inspectorMod.apiVersion): Self = this.set("inspector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInspector: Self = this.set("inspector", js.undefined)
+    @scala.inline
+    def setIot(value: typings.awsSdk.iotMod.apiVersion): Self = this.set("iot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIot: Self = this.set("iot", js.undefined)
+    @scala.inline
+    def setIot1clickdevicesservice(value: typings.awsSdk.iot1clickdevicesserviceMod.apiVersion): Self = this.set("iot1clickdevicesservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIot1clickdevicesservice: Self = this.set("iot1clickdevicesservice", js.undefined)
+    @scala.inline
+    def setIot1clickprojects(value: typings.awsSdk.iot1clickprojectsMod.apiVersion): Self = this.set("iot1clickprojects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIot1clickprojects: Self = this.set("iot1clickprojects", js.undefined)
+    @scala.inline
+    def setIotanalytics(value: typings.awsSdk.iotanalyticsMod.apiVersion): Self = this.set("iotanalytics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotanalytics: Self = this.set("iotanalytics", js.undefined)
+    @scala.inline
+    def setIotdata(value: typings.awsSdk.iotdataMod.apiVersion): Self = this.set("iotdata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotdata: Self = this.set("iotdata", js.undefined)
+    @scala.inline
+    def setIotevents(value: typings.awsSdk.ioteventsMod.apiVersion): Self = this.set("iotevents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotevents: Self = this.set("iotevents", js.undefined)
+    @scala.inline
+    def setIoteventsdata(value: typings.awsSdk.ioteventsdataMod.apiVersion): Self = this.set("ioteventsdata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIoteventsdata: Self = this.set("ioteventsdata", js.undefined)
+    @scala.inline
+    def setIotjobsdataplane(value: typings.awsSdk.iotjobsdataplaneMod.apiVersion): Self = this.set("iotjobsdataplane", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotjobsdataplane: Self = this.set("iotjobsdataplane", js.undefined)
+    @scala.inline
+    def setIotsecuretunneling(value: typings.awsSdk.iotsecuretunnelingMod.apiVersion): Self = this.set("iotsecuretunneling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotsecuretunneling: Self = this.set("iotsecuretunneling", js.undefined)
+    @scala.inline
+    def setIotsitewise(value: typings.awsSdk.iotsitewiseMod.apiVersion): Self = this.set("iotsitewise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotsitewise: Self = this.set("iotsitewise", js.undefined)
+    @scala.inline
+    def setIotthingsgraph(value: typings.awsSdk.iotthingsgraphMod.apiVersion): Self = this.set("iotthingsgraph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotthingsgraph: Self = this.set("iotthingsgraph", js.undefined)
+    @scala.inline
+    def setIvs(value: typings.awsSdk.ivsMod.apiVersion): Self = this.set("ivs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIvs: Self = this.set("ivs", js.undefined)
+    @scala.inline
+    def setKafka(value: typings.awsSdk.kafkaMod.apiVersion): Self = this.set("kafka", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKafka: Self = this.set("kafka", js.undefined)
+    @scala.inline
+    def setKendra(value: typings.awsSdk.kendraMod.apiVersion): Self = this.set("kendra", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKendra: Self = this.set("kendra", js.undefined)
+    @scala.inline
+    def setKinesis(value: typings.awsSdk.kinesisMod.apiVersion): Self = this.set("kinesis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesis: Self = this.set("kinesis", js.undefined)
+    @scala.inline
+    def setKinesisanalytics(value: typings.awsSdk.kinesisanalyticsMod.apiVersion): Self = this.set("kinesisanalytics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisanalytics: Self = this.set("kinesisanalytics", js.undefined)
+    @scala.inline
+    def setKinesisanalyticsv2(value: typings.awsSdk.kinesisanalyticsv2Mod.apiVersion): Self = this.set("kinesisanalyticsv2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisanalyticsv2: Self = this.set("kinesisanalyticsv2", js.undefined)
+    @scala.inline
+    def setKinesisvideo(value: typings.awsSdk.kinesisvideoMod.apiVersion): Self = this.set("kinesisvideo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisvideo: Self = this.set("kinesisvideo", js.undefined)
+    @scala.inline
+    def setKinesisvideoarchivedmedia(value: typings.awsSdk.kinesisvideoarchivedmediaMod.apiVersion): Self = this.set("kinesisvideoarchivedmedia", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisvideoarchivedmedia: Self = this.set("kinesisvideoarchivedmedia", js.undefined)
+    @scala.inline
+    def setKinesisvideomedia(value: typings.awsSdk.kinesisvideomediaMod.apiVersion): Self = this.set("kinesisvideomedia", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisvideomedia: Self = this.set("kinesisvideomedia", js.undefined)
+    @scala.inline
+    def setKinesisvideosignalingchannels(value: typings.awsSdk.kinesisvideosignalingchannelsMod.apiVersion): Self = this.set("kinesisvideosignalingchannels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisvideosignalingchannels: Self = this.set("kinesisvideosignalingchannels", js.undefined)
+    @scala.inline
+    def setKms(value: typings.awsSdk.kmsMod.apiVersion): Self = this.set("kms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKms: Self = this.set("kms", js.undefined)
+    @scala.inline
+    def setLakeformation(value: typings.awsSdk.lakeformationMod.apiVersion): Self = this.set("lakeformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLakeformation: Self = this.set("lakeformation", js.undefined)
+    @scala.inline
+    def setLambda(value: typings.awsSdk.lambdaMod.apiVersion): Self = this.set("lambda", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambda: Self = this.set("lambda", js.undefined)
+    @scala.inline
+    def setLexmodelbuildingservice(value: typings.awsSdk.lexmodelbuildingserviceMod.apiVersion): Self = this.set("lexmodelbuildingservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLexmodelbuildingservice: Self = this.set("lexmodelbuildingservice", js.undefined)
+    @scala.inline
+    def setLexruntime(value: typings.awsSdk.lexruntimeMod.apiVersion): Self = this.set("lexruntime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLexruntime: Self = this.set("lexruntime", js.undefined)
+    @scala.inline
+    def setLicensemanager(value: typings.awsSdk.licensemanagerMod.apiVersion): Self = this.set("licensemanager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicensemanager: Self = this.set("licensemanager", js.undefined)
+    @scala.inline
+    def setLightsail(value: typings.awsSdk.lightsailMod.apiVersion): Self = this.set("lightsail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLightsail: Self = this.set("lightsail", js.undefined)
+    @scala.inline
+    def setMachinelearning(value: typings.awsSdk.machinelearningMod.apiVersion): Self = this.set("machinelearning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachinelearning: Self = this.set("machinelearning", js.undefined)
+    @scala.inline
+    def setMacie(value: typings.awsSdk.macieMod.apiVersion): Self = this.set("macie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacie: Self = this.set("macie", js.undefined)
+    @scala.inline
+    def setMacie2(value: typings.awsSdk.macie2Mod.apiVersion): Self = this.set("macie2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacie2: Self = this.set("macie2", js.undefined)
+    @scala.inline
+    def setManagedblockchain(value: typings.awsSdk.managedblockchainMod.apiVersion): Self = this.set("managedblockchain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedblockchain: Self = this.set("managedblockchain", js.undefined)
+    @scala.inline
+    def setMarketplacecatalog(value: typings.awsSdk.marketplacecatalogMod.apiVersion): Self = this.set("marketplacecatalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketplacecatalog: Self = this.set("marketplacecatalog", js.undefined)
+    @scala.inline
+    def setMarketplacecommerceanalytics(value: typings.awsSdk.marketplacecommerceanalyticsMod.apiVersion): Self = this.set("marketplacecommerceanalytics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketplacecommerceanalytics: Self = this.set("marketplacecommerceanalytics", js.undefined)
+    @scala.inline
+    def setMarketplaceentitlementservice(value: typings.awsSdk.marketplaceentitlementserviceMod.apiVersion): Self = this.set("marketplaceentitlementservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketplaceentitlementservice: Self = this.set("marketplaceentitlementservice", js.undefined)
+    @scala.inline
+    def setMarketplacemetering(value: typings.awsSdk.marketplacemeteringMod.apiVersion): Self = this.set("marketplacemetering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketplacemetering: Self = this.set("marketplacemetering", js.undefined)
+    @scala.inline
+    def setMediaconnect(value: typings.awsSdk.mediaconnectMod.apiVersion): Self = this.set("mediaconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaconnect: Self = this.set("mediaconnect", js.undefined)
+    @scala.inline
+    def setMediaconvert(value: typings.awsSdk.mediaconvertMod.apiVersion): Self = this.set("mediaconvert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaconvert: Self = this.set("mediaconvert", js.undefined)
+    @scala.inline
+    def setMedialive(value: typings.awsSdk.medialiveMod.apiVersion): Self = this.set("medialive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedialive: Self = this.set("medialive", js.undefined)
+    @scala.inline
+    def setMediapackage(value: typings.awsSdk.mediapackageMod.apiVersion): Self = this.set("mediapackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediapackage: Self = this.set("mediapackage", js.undefined)
+    @scala.inline
+    def setMediapackagevod(value: typings.awsSdk.mediapackagevodMod.apiVersion): Self = this.set("mediapackagevod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediapackagevod: Self = this.set("mediapackagevod", js.undefined)
+    @scala.inline
+    def setMediastore(value: typings.awsSdk.mediastoreMod.apiVersion): Self = this.set("mediastore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediastore: Self = this.set("mediastore", js.undefined)
+    @scala.inline
+    def setMediastoredata(value: typings.awsSdk.mediastoredataMod.apiVersion): Self = this.set("mediastoredata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediastoredata: Self = this.set("mediastoredata", js.undefined)
+    @scala.inline
+    def setMediatailor(value: typings.awsSdk.mediatailorMod.apiVersion): Self = this.set("mediatailor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediatailor: Self = this.set("mediatailor", js.undefined)
+    @scala.inline
+    def setMigrationhub(value: typings.awsSdk.migrationhubMod.apiVersion): Self = this.set("migrationhub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMigrationhub: Self = this.set("migrationhub", js.undefined)
+    @scala.inline
+    def setMigrationhubconfig(value: typings.awsSdk.migrationhubconfigMod.apiVersion): Self = this.set("migrationhubconfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMigrationhubconfig: Self = this.set("migrationhubconfig", js.undefined)
+    @scala.inline
+    def setMobile(value: typings.awsSdk.mobileMod.apiVersion): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobile: Self = this.set("mobile", js.undefined)
+    @scala.inline
+    def setMobileanalytics(value: typings.awsSdk.mobileanalyticsMod.apiVersion): Self = this.set("mobileanalytics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobileanalytics: Self = this.set("mobileanalytics", js.undefined)
+    @scala.inline
+    def setMq(value: typings.awsSdk.mqMod.apiVersion): Self = this.set("mq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMq: Self = this.set("mq", js.undefined)
+    @scala.inline
+    def setMturk(value: typings.awsSdk.mturkMod.apiVersion): Self = this.set("mturk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMturk: Self = this.set("mturk", js.undefined)
+    @scala.inline
+    def setNeptune(value: typings.awsSdk.neptuneMod.apiVersion): Self = this.set("neptune", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeptune: Self = this.set("neptune", js.undefined)
+    @scala.inline
+    def setNetworkmanager(value: typings.awsSdk.networkmanagerMod.apiVersion): Self = this.set("networkmanager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkmanager: Self = this.set("networkmanager", js.undefined)
+    @scala.inline
+    def setOpsworks(value: typings.awsSdk.opsworksMod.apiVersion): Self = this.set("opsworks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpsworks: Self = this.set("opsworks", js.undefined)
+    @scala.inline
+    def setOpsworkscm(value: typings.awsSdk.opsworkscmMod.apiVersion): Self = this.set("opsworkscm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpsworkscm: Self = this.set("opsworkscm", js.undefined)
+    @scala.inline
+    def setOrganizations(value: typings.awsSdk.organizationsMod.apiVersion): Self = this.set("organizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizations: Self = this.set("organizations", js.undefined)
+    @scala.inline
+    def setOutposts(value: typings.awsSdk.outpostsMod.apiVersion): Self = this.set("outposts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutposts: Self = this.set("outposts", js.undefined)
+    @scala.inline
+    def setPersonalize(value: typings.awsSdk.personalizeMod.apiVersion): Self = this.set("personalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersonalize: Self = this.set("personalize", js.undefined)
+    @scala.inline
+    def setPersonalizeevents(value: typings.awsSdk.personalizeeventsMod.apiVersion): Self = this.set("personalizeevents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersonalizeevents: Self = this.set("personalizeevents", js.undefined)
+    @scala.inline
+    def setPersonalizeruntime(value: typings.awsSdk.personalizeruntimeMod.apiVersion): Self = this.set("personalizeruntime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersonalizeruntime: Self = this.set("personalizeruntime", js.undefined)
+    @scala.inline
+    def setPi(value: typings.awsSdk.piMod.apiVersion): Self = this.set("pi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePi: Self = this.set("pi", js.undefined)
+    @scala.inline
+    def setPinpoint(value: typings.awsSdk.pinpointMod.apiVersion): Self = this.set("pinpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinpoint: Self = this.set("pinpoint", js.undefined)
+    @scala.inline
+    def setPinpointemail(value: typings.awsSdk.pinpointemailMod.apiVersion): Self = this.set("pinpointemail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinpointemail: Self = this.set("pinpointemail", js.undefined)
+    @scala.inline
+    def setPinpointsmsvoice(value: typings.awsSdk.pinpointsmsvoiceMod.apiVersion): Self = this.set("pinpointsmsvoice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinpointsmsvoice: Self = this.set("pinpointsmsvoice", js.undefined)
+    @scala.inline
+    def setPolly(value: typings.awsSdk.pollyMod.apiVersion): Self = this.set("polly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolly: Self = this.set("polly", js.undefined)
+    @scala.inline
+    def setPricing(value: typings.awsSdk.pricingMod.apiVersion): Self = this.set("pricing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricing: Self = this.set("pricing", js.undefined)
+    @scala.inline
+    def setQldb(value: typings.awsSdk.qldbMod.apiVersion): Self = this.set("qldb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQldb: Self = this.set("qldb", js.undefined)
+    @scala.inline
+    def setQldbsession(value: typings.awsSdk.qldbsessionMod.apiVersion): Self = this.set("qldbsession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQldbsession: Self = this.set("qldbsession", js.undefined)
+    @scala.inline
+    def setQuicksight(value: typings.awsSdk.quicksightMod.apiVersion): Self = this.set("quicksight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuicksight: Self = this.set("quicksight", js.undefined)
+    @scala.inline
+    def setRam(value: typings.awsSdk.ramMod.apiVersion): Self = this.set("ram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRam: Self = this.set("ram", js.undefined)
+    @scala.inline
+    def setRds(value: typings.awsSdk.rdsMod.apiVersion): Self = this.set("rds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRds: Self = this.set("rds", js.undefined)
+    @scala.inline
+    def setRdsdataservice(value: typings.awsSdk.rdsdataserviceMod.apiVersion): Self = this.set("rdsdataservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRdsdataservice: Self = this.set("rdsdataservice", js.undefined)
+    @scala.inline
+    def setRedshift(value: typings.awsSdk.redshiftMod.apiVersion): Self = this.set("redshift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshift: Self = this.set("redshift", js.undefined)
+    @scala.inline
+    def setRekognition(value: typings.awsSdk.rekognitionMod.apiVersion): Self = this.set("rekognition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRekognition: Self = this.set("rekognition", js.undefined)
+    @scala.inline
+    def setResourcegroups(value: typings.awsSdk.resourcegroupsMod.apiVersion): Self = this.set("resourcegroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcegroups: Self = this.set("resourcegroups", js.undefined)
+    @scala.inline
+    def setResourcegroupstaggingapi(value: typings.awsSdk.resourcegroupstaggingapiMod.apiVersion): Self = this.set("resourcegroupstaggingapi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcegroupstaggingapi: Self = this.set("resourcegroupstaggingapi", js.undefined)
+    @scala.inline
+    def setRobomaker(value: typings.awsSdk.robomakerMod.apiVersion): Self = this.set("robomaker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRobomaker: Self = this.set("robomaker", js.undefined)
+    @scala.inline
+    def setRoute53(value: typings.awsSdk.route53Mod.apiVersion): Self = this.set("route53", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute53: Self = this.set("route53", js.undefined)
+    @scala.inline
+    def setRoute53domains(value: typings.awsSdk.route53domainsMod.apiVersion): Self = this.set("route53domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute53domains: Self = this.set("route53domains", js.undefined)
+    @scala.inline
+    def setRoute53resolver(value: typings.awsSdk.route53resolverMod.apiVersion): Self = this.set("route53resolver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute53resolver: Self = this.set("route53resolver", js.undefined)
+    @scala.inline
+    def setS3(value: typings.awsSdk.s3Mod.apiVersion): Self = this.set("s3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3: Self = this.set("s3", js.undefined)
+    @scala.inline
+    def setS3control(value: typings.awsSdk.s3controlMod.apiVersion): Self = this.set("s3control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3control: Self = this.set("s3control", js.undefined)
+    @scala.inline
+    def setSagemaker(value: typings.awsSdk.sagemakerMod.apiVersion): Self = this.set("sagemaker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSagemaker: Self = this.set("sagemaker", js.undefined)
+    @scala.inline
+    def setSagemakerruntime(value: typings.awsSdk.sagemakerruntimeMod.apiVersion): Self = this.set("sagemakerruntime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSagemakerruntime: Self = this.set("sagemakerruntime", js.undefined)
+    @scala.inline
+    def setSavingsplans(value: typings.awsSdk.savingsplansMod.apiVersion): Self = this.set("savingsplans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavingsplans: Self = this.set("savingsplans", js.undefined)
+    @scala.inline
+    def setSchemas(value: typings.awsSdk.schemasMod.apiVersion): Self = this.set("schemas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemas: Self = this.set("schemas", js.undefined)
+    @scala.inline
+    def setSecretsmanager(value: typings.awsSdk.secretsmanagerMod.apiVersion): Self = this.set("secretsmanager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretsmanager: Self = this.set("secretsmanager", js.undefined)
+    @scala.inline
+    def setSecurityhub(value: typings.awsSdk.securityhubMod.apiVersion): Self = this.set("securityhub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityhub: Self = this.set("securityhub", js.undefined)
+    @scala.inline
+    def setServerlessapplicationrepository(value: typings.awsSdk.serverlessapplicationrepositoryMod.apiVersion): Self = this.set("serverlessapplicationrepository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerlessapplicationrepository: Self = this.set("serverlessapplicationrepository", js.undefined)
+    @scala.inline
+    def setServicecatalog(value: typings.awsSdk.servicecatalogMod.apiVersion): Self = this.set("servicecatalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServicecatalog: Self = this.set("servicecatalog", js.undefined)
+    @scala.inline
+    def setServicediscovery(value: typings.awsSdk.servicediscoveryMod.apiVersion): Self = this.set("servicediscovery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServicediscovery: Self = this.set("servicediscovery", js.undefined)
+    @scala.inline
+    def setServicequotas(value: typings.awsSdk.servicequotasMod.apiVersion): Self = this.set("servicequotas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServicequotas: Self = this.set("servicequotas", js.undefined)
+    @scala.inline
+    def setSes(value: typings.awsSdk.sesMod.apiVersion): Self = this.set("ses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSes: Self = this.set("ses", js.undefined)
+    @scala.inline
+    def setSesv2(value: typings.awsSdk.sesv2Mod.apiVersion): Self = this.set("sesv2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSesv2: Self = this.set("sesv2", js.undefined)
+    @scala.inline
+    def setShield(value: typings.awsSdk.shieldMod.apiVersion): Self = this.set("shield", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShield: Self = this.set("shield", js.undefined)
+    @scala.inline
+    def setSigner(value: typings.awsSdk.signerMod.apiVersion): Self = this.set("signer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigner: Self = this.set("signer", js.undefined)
+    @scala.inline
+    def setSimpledb(value: typings.awsSdk.simpledbMod.apiVersion): Self = this.set("simpledb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimpledb: Self = this.set("simpledb", js.undefined)
+    @scala.inline
+    def setSms(value: typings.awsSdk.smsMod.apiVersion): Self = this.set("sms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSms: Self = this.set("sms", js.undefined)
+    @scala.inline
+    def setSnowball(value: typings.awsSdk.snowballMod.apiVersion): Self = this.set("snowball", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnowball: Self = this.set("snowball", js.undefined)
+    @scala.inline
+    def setSns(value: typings.awsSdk.snsMod.apiVersion): Self = this.set("sns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSns: Self = this.set("sns", js.undefined)
+    @scala.inline
+    def setSqs(value: typings.awsSdk.sqsMod.apiVersion): Self = this.set("sqs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqs: Self = this.set("sqs", js.undefined)
+    @scala.inline
+    def setSsm(value: typings.awsSdk.ssmMod.apiVersion): Self = this.set("ssm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsm: Self = this.set("ssm", js.undefined)
+    @scala.inline
+    def setSso(value: typings.awsSdk.ssoMod.apiVersion): Self = this.set("sso", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSso: Self = this.set("sso", js.undefined)
+    @scala.inline
+    def setSsooidc(value: typings.awsSdk.ssooidcMod.apiVersion): Self = this.set("ssooidc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsooidc: Self = this.set("ssooidc", js.undefined)
+    @scala.inline
+    def setStepfunctions(value: typings.awsSdk.stepfunctionsMod.apiVersion): Self = this.set("stepfunctions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepfunctions: Self = this.set("stepfunctions", js.undefined)
+    @scala.inline
+    def setStoragegateway(value: typings.awsSdk.storagegatewayMod.apiVersion): Self = this.set("storagegateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoragegateway: Self = this.set("storagegateway", js.undefined)
+    @scala.inline
+    def setSts(value: typings.awsSdk.stsMod.apiVersion): Self = this.set("sts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSts: Self = this.set("sts", js.undefined)
+    @scala.inline
+    def setSupport(value: typings.awsSdk.supportMod.apiVersion): Self = this.set("support", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupport: Self = this.set("support", js.undefined)
+    @scala.inline
+    def setSwf(value: typings.awsSdk.swfMod.apiVersion): Self = this.set("swf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwf: Self = this.set("swf", js.undefined)
+    @scala.inline
+    def setSynthetics(value: typings.awsSdk.syntheticsMod.apiVersion): Self = this.set("synthetics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSynthetics: Self = this.set("synthetics", js.undefined)
+    @scala.inline
+    def setTextract(value: typings.awsSdk.textractMod.apiVersion): Self = this.set("textract", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextract: Self = this.set("textract", js.undefined)
+    @scala.inline
+    def setTranscribeservice(value: typings.awsSdk.transcribeserviceMod.apiVersion): Self = this.set("transcribeservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscribeservice: Self = this.set("transcribeservice", js.undefined)
+    @scala.inline
+    def setTransfer(value: typings.awsSdk.transferMod.apiVersion): Self = this.set("transfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransfer: Self = this.set("transfer", js.undefined)
+    @scala.inline
+    def setTranslate(value: typings.awsSdk.translateMod.apiVersion): Self = this.set("translate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslate: Self = this.set("translate", js.undefined)
+    @scala.inline
+    def setWaf(value: typings.awsSdk.wafMod.apiVersion): Self = this.set("waf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaf: Self = this.set("waf", js.undefined)
+    @scala.inline
+    def setWafregional(value: typings.awsSdk.wafregionalMod.apiVersion): Self = this.set("wafregional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWafregional: Self = this.set("wafregional", js.undefined)
+    @scala.inline
+    def setWafv2(value: typings.awsSdk.wafv2Mod.apiVersion): Self = this.set("wafv2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWafv2: Self = this.set("wafv2", js.undefined)
+    @scala.inline
+    def setWorkdocs(value: typings.awsSdk.workdocsMod.apiVersion): Self = this.set("workdocs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkdocs: Self = this.set("workdocs", js.undefined)
+    @scala.inline
+    def setWorklink(value: typings.awsSdk.worklinkMod.apiVersion): Self = this.set("worklink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorklink: Self = this.set("worklink", js.undefined)
+    @scala.inline
+    def setWorkmail(value: typings.awsSdk.workmailMod.apiVersion): Self = this.set("workmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkmail: Self = this.set("workmail", js.undefined)
+    @scala.inline
+    def setWorkmailmessageflow(value: typings.awsSdk.workmailmessageflowMod.apiVersion): Self = this.set("workmailmessageflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkmailmessageflow: Self = this.set("workmailmessageflow", js.undefined)
+    @scala.inline
+    def setWorkspaces(value: typings.awsSdk.workspacesMod.apiVersion): Self = this.set("workspaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaces: Self = this.set("workspaces", js.undefined)
+    @scala.inline
+    def setXray(value: typings.awsSdk.xrayMod.apiVersion): Self = this.set("xray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXray: Self = this.set("xray", js.undefined)
+  }
+  
 }
 

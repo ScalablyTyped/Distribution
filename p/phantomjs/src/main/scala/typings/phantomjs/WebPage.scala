@@ -68,6 +68,7 @@ trait WebPage extends js.Object {
   def injectJs(filename: String): Boolean = js.native
   def javaScriptAlertSent(msg: String): Unit = js.native
   def javaScriptConsoleMessageSent(msg: String): Unit = js.native
+  def javaScriptConsoleMessageSent(msg: String, lineNum: js.UndefOr[scala.Nothing], sourceId: String): Unit = js.native
   def javaScriptConsoleMessageSent(msg: String, lineNum: Double): Unit = js.native
   def javaScriptConsoleMessageSent(msg: String, lineNum: Double, sourceId: String): Unit = js.native
   def loadFinished(status: String): Unit = js.native
@@ -79,6 +80,7 @@ trait WebPage extends js.Object {
   def onClosing(closingPage: WebPage): js.Any = js.native
   def onConfirm(msg: String): Boolean = js.native
   def onConsoleMessage(msg: String): js.Any = js.native
+  def onConsoleMessage(msg: String, lineNum: js.UndefOr[scala.Nothing], sourceId: String): js.Any = js.native
   def onConsoleMessage(msg: String, lineNum: Double): js.Any = js.native
   def onConsoleMessage(msg: String, lineNum: Double, sourceId: String): js.Any = js.native
   def onError(msg: String, trace: js.Array[String]): js.Any = js.native
@@ -107,11 +109,42 @@ trait WebPage extends js.Object {
   def resourceReceived(response: ResourceResponse): Unit = js.native
   def resourceRequested(requestData: ResourceRequest, networkRequest: NetworkRequest): Unit = js.native
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any): Unit = js.native
+  def sendEvent(
+    keyboardEventType: String,
+    keyOrKeys: js.Any,
+    aNull: js.UndefOr[scala.Nothing],
+    bNull: js.UndefOr[scala.Nothing],
+    modifier: Double
+  ): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.UndefOr[scala.Nothing], bNull: js.Any): Unit = js.native
+  def sendEvent(
+    keyboardEventType: String,
+    keyOrKeys: js.Any,
+    aNull: js.UndefOr[scala.Nothing],
+    bNull: js.Any,
+    modifier: Double
+  ): Unit = js.native
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any): Unit = js.native
+  def sendEvent(
+    keyboardEventType: String,
+    keyOrKeys: js.Any,
+    aNull: js.Any,
+    bNull: js.UndefOr[scala.Nothing],
+    modifier: Double
+  ): Unit = js.native
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any): Unit = js.native
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any, modifier: Double): Unit = js.native
   def sendEvent(mouseEventType: String): Unit = js.native
+  def sendEvent(
+    mouseEventType: String,
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: js.UndefOr[scala.Nothing],
+    button: String
+  ): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double, button: String): Unit = js.native
   def sendEvent(mouseEventType: String, mouseX: Double): Unit = js.native
+  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: js.UndefOr[scala.Nothing], button: String): Unit = js.native
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): Unit = js.native
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): Unit = js.native
   def setContent(content: String, url: String): Unit = js.native

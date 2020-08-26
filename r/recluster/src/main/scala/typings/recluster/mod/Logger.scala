@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Logger extends js.Object {
-  def log(): Unit = js.native
+  def log(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
 }
 

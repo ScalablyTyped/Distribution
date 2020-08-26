@@ -22,11 +22,32 @@ trait SchemaGroupedResult extends js.Object {
 
 object SchemaGroupedResult {
   @scala.inline
-  def apply(boundingPoly: SchemaBoundingPoly = null, results: js.Array[SchemaResult] = null): SchemaGroupedResult = {
+  def apply(): SchemaGroupedResult = {
     val __obj = js.Dynamic.literal()
-    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGroupedResult]
   }
+  @scala.inline
+  implicit class SchemaGroupedResultOps[Self <: SchemaGroupedResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingPoly(value: SchemaBoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    @scala.inline
+    def setResultsVarargs(value: SchemaResult*): Self = this.set("results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: js.Array[SchemaResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+  }
+  
 }
 

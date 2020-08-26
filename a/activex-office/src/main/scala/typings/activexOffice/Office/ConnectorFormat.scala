@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectorFormat extends js.Object {
-  val Application: js.Any
-  val BeginConnected: MsoTriState
-  val BeginConnectedShape: Shape
-  val BeginConnectionSite: Double
-  val Creator: Double
-  val EndConnected: MsoTriState
-  val EndConnectedShape: Shape
-  val EndConnectionSite: Double
+  val Application: js.Any = js.native
+  val BeginConnected: MsoTriState = js.native
+  val BeginConnectedShape: Shape = js.native
+  val BeginConnectionSite: Double = js.native
+  val Creator: Double = js.native
+  val EndConnected: MsoTriState = js.native
+  val EndConnectedShape: Shape = js.native
+  val EndConnectionSite: Double = js.native
   @JSName("Office.ConnectorFormat_typekey")
-  var OfficeDotConnectorFormat_typekey: ConnectorFormat
-  val Parent: js.Any
-  var Type: MsoConnectorType
-  def BeginConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit
-  def BeginDisconnect(): Unit
-  def EndConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit
-  def EndDisconnect(): Unit
+  var OfficeDotConnectorFormat_typekey: ConnectorFormat = js.native
+  val Parent: js.Any = js.native
+  var Type: MsoConnectorType = js.native
+  def BeginConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit = js.native
+  def BeginDisconnect(): Unit = js.native
+  def EndConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit = js.native
+  def EndDisconnect(): Unit = js.native
 }
 
 object ConnectorFormat {
@@ -46,5 +47,48 @@ object ConnectorFormat {
     __obj.updateDynamic("Office.ConnectorFormat_typekey")(OfficeDotConnectorFormat_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorFormat]
   }
+  @scala.inline
+  implicit class ConnectorFormatOps[Self <: ConnectorFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBeginConnect(value: (Shape, Double) => Unit): Self = this.set("BeginConnect", js.Any.fromFunction2(value))
+    @scala.inline
+    def setBeginConnected(value: MsoTriState): Self = this.set("BeginConnected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBeginConnectedShape(value: Shape): Self = this.set("BeginConnectedShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBeginConnectionSite(value: Double): Self = this.set("BeginConnectionSite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBeginDisconnect(value: () => Unit): Self = this.set("BeginDisconnect", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndConnect(value: (Shape, Double) => Unit): Self = this.set("EndConnect", js.Any.fromFunction2(value))
+    @scala.inline
+    def setEndConnected(value: MsoTriState): Self = this.set("EndConnected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndConnectedShape(value: Shape): Self = this.set("EndConnectedShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndConnectionSite(value: Double): Self = this.set("EndConnectionSite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndDisconnect(value: () => Unit): Self = this.set("EndDisconnect", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOfficeDotConnectorFormat_typekey(value: ConnectorFormat): Self = this.set("Office.ConnectorFormat_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: MsoConnectorType): Self = this.set("Type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -55,32 +55,66 @@ trait PutObjectAclRequest extends js.Object {
 
 object PutObjectAclRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    Key: ObjectKey,
-    ACL: ObjectCannedACL = null,
-    AccessControlPolicy: AccessControlPolicy = null,
-    ContentMD5: ContentMD5 = null,
-    GrantFullControl: GrantFullControl = null,
-    GrantRead: GrantRead = null,
-    GrantReadACP: GrantReadACP = null,
-    GrantWrite: GrantWrite = null,
-    GrantWriteACP: GrantWriteACP = null,
-    RequestPayer: RequestPayer = null,
-    VersionId: ObjectVersionId = null
-  ): PutObjectAclRequest = {
+  def apply(Bucket: BucketName, Key: ObjectKey): PutObjectAclRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-    if (ACL != null) __obj.updateDynamic("ACL")(ACL.asInstanceOf[js.Any])
-    if (AccessControlPolicy != null) __obj.updateDynamic("AccessControlPolicy")(AccessControlPolicy.asInstanceOf[js.Any])
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
-    if (GrantFullControl != null) __obj.updateDynamic("GrantFullControl")(GrantFullControl.asInstanceOf[js.Any])
-    if (GrantRead != null) __obj.updateDynamic("GrantRead")(GrantRead.asInstanceOf[js.Any])
-    if (GrantReadACP != null) __obj.updateDynamic("GrantReadACP")(GrantReadACP.asInstanceOf[js.Any])
-    if (GrantWrite != null) __obj.updateDynamic("GrantWrite")(GrantWrite.asInstanceOf[js.Any])
-    if (GrantWriteACP != null) __obj.updateDynamic("GrantWriteACP")(GrantWriteACP.asInstanceOf[js.Any])
-    if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutObjectAclRequest]
   }
+  @scala.inline
+  implicit class PutObjectAclRequestOps[Self <: PutObjectAclRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setACL(value: ObjectCannedACL): Self = this.set("ACL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteACL: Self = this.set("ACL", js.undefined)
+    @scala.inline
+    def setAccessControlPolicy(value: AccessControlPolicy): Self = this.set("AccessControlPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessControlPolicy: Self = this.set("AccessControlPolicy", js.undefined)
+    @scala.inline
+    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+    @scala.inline
+    def setGrantFullControl(value: GrantFullControl): Self = this.set("GrantFullControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantFullControl: Self = this.set("GrantFullControl", js.undefined)
+    @scala.inline
+    def setGrantRead(value: GrantRead): Self = this.set("GrantRead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantRead: Self = this.set("GrantRead", js.undefined)
+    @scala.inline
+    def setGrantReadACP(value: GrantReadACP): Self = this.set("GrantReadACP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantReadACP: Self = this.set("GrantReadACP", js.undefined)
+    @scala.inline
+    def setGrantWrite(value: GrantWrite): Self = this.set("GrantWrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantWrite: Self = this.set("GrantWrite", js.undefined)
+    @scala.inline
+    def setGrantWriteACP(value: GrantWriteACP): Self = this.set("GrantWriteACP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantWriteACP: Self = this.set("GrantWriteACP", js.undefined)
+    @scala.inline
+    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    @scala.inline
+    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

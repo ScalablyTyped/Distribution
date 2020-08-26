@@ -414,6 +414,7 @@ trait Assert extends js.Object {
     * @remarks Node.js assert module-compatible.
     */
   def fail[T](actual: T, expected: T): scala.Nothing = js.native
+  def fail[T](actual: T, expected: T, message: js.UndefOr[scala.Nothing], operator: Operator): scala.Nothing = js.native
   def fail[T](actual: T, expected: T, message: String): scala.Nothing = js.native
   def fail[T](actual: T, expected: T, message: String, operator: Operator): scala.Nothing = js.native
   /**

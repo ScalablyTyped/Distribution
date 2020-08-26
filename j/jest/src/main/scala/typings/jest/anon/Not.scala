@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Not[T] extends js.Object {
-  var not: T
+  var not: T = js.native
 }
 
 object Not {
@@ -14,5 +15,20 @@ object Not {
     val __obj = js.Dynamic.literal(not = not.asInstanceOf[js.Any])
     __obj.asInstanceOf[Not[T]]
   }
+  @scala.inline
+  implicit class NotOps[Self <: Not[_], T] (val x: Self with Not[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNot(value: T): Self = this.set("not", value.asInstanceOf[js.Any])
+  }
+  
 }
 

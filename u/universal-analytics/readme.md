@@ -10,9 +10,9 @@ A node module for Google's Universal Analytics tracking
 | ------------------ | :-------------: |
 | Full name          | universal-analytics |
 | Keywords           | google, analytics, universal, tracking |
-| # releases         | 5 |
-| # dependents       | 143 |
-| # downloads        | 18717094 |
+| # releases         | 4 |
+| # dependents       | 146 |
+| # downloads        | 23401951 |
 | # stars            | 35 |
 
 ## Links

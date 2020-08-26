@@ -28,6 +28,7 @@ class ResourceCampaigns protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCampaign] = js.native
   def get(callback: BodyResponseCallback[SchemaCampaign]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCampaign] = js.native
   def get(params: ParamsResourceCampaignsGet): GaxiosPromise[SchemaCampaign] = js.native
   def get(params: ParamsResourceCampaignsGet, callback: BodyResponseCallback[SchemaCampaign]): Unit = js.native
   def get(
@@ -56,6 +57,7 @@ class ResourceCampaigns protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaCampaign] = js.native
   def insert(callback: BodyResponseCallback[SchemaCampaign]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCampaign] = js.native
   def insert(params: ParamsResourceCampaignsInsert): GaxiosPromise[SchemaCampaign] = js.native
   def insert(params: ParamsResourceCampaignsInsert, callback: BodyResponseCallback[SchemaCampaign]): Unit = js.native
   def insert(
@@ -97,6 +99,7 @@ class ResourceCampaigns protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCampaignsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCampaignsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCampaignsListResponse] = js.native
   def list(params: ParamsResourceCampaignsList): GaxiosPromise[SchemaCampaignsListResponse] = js.native
   def list(params: ParamsResourceCampaignsList, callback: BodyResponseCallback[SchemaCampaignsListResponse]): Unit = js.native
   def list(
@@ -126,6 +129,7 @@ class ResourceCampaigns protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaCampaign] = js.native
   def patch(callback: BodyResponseCallback[SchemaCampaign]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCampaign] = js.native
   def patch(params: ParamsResourceCampaignsPatch): GaxiosPromise[SchemaCampaign] = js.native
   def patch(params: ParamsResourceCampaignsPatch, callback: BodyResponseCallback[SchemaCampaign]): Unit = js.native
   def patch(
@@ -154,6 +158,7 @@ class ResourceCampaigns protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaCampaign] = js.native
   def update(callback: BodyResponseCallback[SchemaCampaign]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCampaign] = js.native
   def update(params: ParamsResourceCampaignsUpdate): GaxiosPromise[SchemaCampaign] = js.native
   def update(params: ParamsResourceCampaignsUpdate, callback: BodyResponseCallback[SchemaCampaign]): Unit = js.native
   def update(

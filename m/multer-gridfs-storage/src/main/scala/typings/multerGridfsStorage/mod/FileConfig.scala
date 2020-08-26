@@ -4,39 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FileConfig extends js.Object {
-  var aliases: js.UndefOr[js.Array[String]] = js.undefined
-  var bucketName: js.UndefOr[String] = js.undefined
-  var chunkSize: js.UndefOr[Double] = js.undefined
-  var contentType: js.UndefOr[String] = js.undefined
-  var disableMD5: js.UndefOr[Boolean] = js.undefined
-  var filename: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[js.Any] = js.undefined
-  var metadata: js.UndefOr[js.Object] = js.undefined
+  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var bucketName: js.UndefOr[String] = js.native
+  var chunkSize: js.UndefOr[Double] = js.native
+  var contentType: js.UndefOr[String] = js.native
+  var disableMD5: js.UndefOr[Boolean] = js.native
+  var filename: js.UndefOr[String] = js.native
+  var id: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Object] = js.native
 }
 
 object FileConfig {
   @scala.inline
-  def apply(
-    aliases: js.Array[String] = null,
-    bucketName: String = null,
-    chunkSize: js.UndefOr[Double] = js.undefined,
-    contentType: String = null,
-    disableMD5: js.UndefOr[Boolean] = js.undefined,
-    filename: String = null,
-    id: js.Any = null,
-    metadata: js.Object = null
-  ): FileConfig = {
+  def apply(): FileConfig = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMD5)) __obj.updateDynamic("disableMD5")(disableMD5.get.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileConfig]
   }
+  @scala.inline
+  implicit class FileConfigOps[Self <: FileConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    @scala.inline
+    def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setDisableMD5(value: Boolean): Self = this.set("disableMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableMD5: Self = this.set("disableMD5", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMetadata(value: js.Object): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+  }
+  
 }
 

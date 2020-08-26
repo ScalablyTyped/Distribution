@@ -4,26 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ToHumanSizeOptions extends ToNumberOptions {
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
 }
 
 object ToHumanSizeOptions {
   @scala.inline
-  def apply(
-    delimiter: String = null,
-    format: String = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    separator: String = null,
-    strip_insignificant_zeros: js.UndefOr[Boolean] = js.undefined
-  ): ToHumanSizeOptions = {
+  def apply(): ToHumanSizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(strip_insignificant_zeros)) __obj.updateDynamic("strip_insignificant_zeros")(strip_insignificant_zeros.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToHumanSizeOptions]
   }
+  @scala.inline
+  implicit class ToHumanSizeOptionsOps[Self <: ToHumanSizeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+  }
+  
 }
 

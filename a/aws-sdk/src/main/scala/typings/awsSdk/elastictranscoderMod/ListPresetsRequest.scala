@@ -18,11 +18,30 @@ trait ListPresetsRequest extends js.Object {
 
 object ListPresetsRequest {
   @scala.inline
-  def apply(Ascending: Ascending = null, PageToken: Id = null): ListPresetsRequest = {
+  def apply(): ListPresetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (Ascending != null) __obj.updateDynamic("Ascending")(Ascending.asInstanceOf[js.Any])
-    if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPresetsRequest]
   }
+  @scala.inline
+  implicit class ListPresetsRequestOps[Self <: ListPresetsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAscending(value: Ascending): Self = this.set("Ascending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAscending: Self = this.set("Ascending", js.undefined)
+    @scala.inline
+    def setPageToken(value: Id): Self = this.set("PageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("PageToken", js.undefined)
+  }
+  
 }
 

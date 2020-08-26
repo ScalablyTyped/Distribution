@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   *
   * @class Grid
   */
+@js.native
 trait Grid extends js.Object
 

@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojtableMod.ojTable
 
-import typings.oracleOraclejet.anon.`20`
-import typings.oracleOraclejet.anon.`21`
+import typings.oracleOraclejet.anon.ColumnNumber
+import typings.oracleOraclejet.anon.`22`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,15 +15,13 @@ trait ColumnSelectionStart[K] extends js.Object
 
 object ColumnSelectionStart {
   @scala.inline
-  def StartKey[K](startIndex: `20`, startKey: `21`[K] = null): ColumnSelectionStart[K] = {
+  def StartKey[K](startIndex: ColumnNumber): ColumnSelectionStart[K] = {
     val __obj = js.Dynamic.literal(startIndex = startIndex.asInstanceOf[js.Any])
-    if (startKey != null) __obj.updateDynamic("startKey")(startKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSelectionStart[K]]
   }
   @scala.inline
-  def StartIndexStartKey[K](startKey: `21`[K], startIndex: `20` = null): ColumnSelectionStart[K] = {
+  def StartIndexStartKey[K](startKey: `22`[K]): ColumnSelectionStart[K] = {
     val __obj = js.Dynamic.literal(startKey = startKey.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSelectionStart[K]]
   }
 }

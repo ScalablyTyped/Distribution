@@ -10,9 +10,9 @@ Yoga is a cross-platform layout engine enabling maximum collaboration within you
 | ------------------ | :-------------: |
 | Full name          | yoga-layout |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 25 |
-| # downloads        | 60499 |
+| # downloads        | 52081 |
 | # stars            | 0 |
 
 ## Links

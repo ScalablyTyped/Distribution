@@ -15,96 +15,169 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResizableProps extends js.Object {
-  var bounds: js.UndefOr[parent | window | HTMLElement] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var defaultSize: js.UndefOr[Size] = js.undefined
-  var enable: js.UndefOr[Enable] = js.undefined
-  var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-  var handleClasses: js.UndefOr[HandleClassName] = js.undefined
-  var handleComponent: js.UndefOr[HandleComponent] = js.undefined
-  var handleStyles: js.UndefOr[HandleStyles] = js.undefined
-  var handleWrapperClass: js.UndefOr[String] = js.undefined
-  var handleWrapperStyle: js.UndefOr[CSSProperties] = js.undefined
-  var lockAspectRatio: js.UndefOr[Boolean | Double] = js.undefined
-  var lockAspectRatioExtraHeight: js.UndefOr[Double] = js.undefined
-  var lockAspectRatioExtraWidth: js.UndefOr[Double] = js.undefined
-  var maxHeight: js.UndefOr[String | Double] = js.undefined
-  var maxWidth: js.UndefOr[String | Double] = js.undefined
-  var minHeight: js.UndefOr[String | Double] = js.undefined
-  var minWidth: js.UndefOr[String | Double] = js.undefined
-  var onResize: js.UndefOr[ResizeCallback] = js.undefined
-  var onResizeStart: js.UndefOr[ResizeStartCallback] = js.undefined
-  var onResizeStop: js.UndefOr[ResizeCallback] = js.undefined
-  var resizeRatio: js.UndefOr[Double] = js.undefined
-  var scale: js.UndefOr[Double] = js.undefined
-  var size: js.UndefOr[Size] = js.undefined
-  var snap: js.UndefOr[X] = js.undefined
-  var snapGap: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var bounds: js.UndefOr[parent | window | HTMLElement] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var className: js.UndefOr[String] = js.native
+  var defaultSize: js.UndefOr[Size] = js.native
+  var enable: js.UndefOr[Enable] = js.native
+  var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var handleClasses: js.UndefOr[HandleClassName] = js.native
+  var handleComponent: js.UndefOr[HandleComponent] = js.native
+  var handleStyles: js.UndefOr[HandleStyles] = js.native
+  var handleWrapperClass: js.UndefOr[String] = js.native
+  var handleWrapperStyle: js.UndefOr[CSSProperties] = js.native
+  var lockAspectRatio: js.UndefOr[Boolean | Double] = js.native
+  var lockAspectRatioExtraHeight: js.UndefOr[Double] = js.native
+  var lockAspectRatioExtraWidth: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[String | Double] = js.native
+  var maxWidth: js.UndefOr[String | Double] = js.native
+  var minHeight: js.UndefOr[String | Double] = js.native
+  var minWidth: js.UndefOr[String | Double] = js.native
+  var onResize: js.UndefOr[ResizeCallback] = js.native
+  var onResizeStart: js.UndefOr[ResizeStartCallback] = js.native
+  var onResizeStop: js.UndefOr[ResizeCallback] = js.native
+  var resizeRatio: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Size] = js.native
+  var snap: js.UndefOr[X] = js.native
+  var snapGap: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object ResizableProps {
   @scala.inline
-  def apply(
-    bounds: parent | window | HTMLElement = null,
-    children: ReactNode = null,
-    className: String = null,
-    defaultSize: Size = null,
-    enable: Enable = null,
-    grid: js.Tuple2[Double, Double] = null,
-    handleClasses: HandleClassName = null,
-    handleComponent: HandleComponent = null,
-    handleStyles: HandleStyles = null,
-    handleWrapperClass: String = null,
-    handleWrapperStyle: CSSProperties = null,
-    lockAspectRatio: Boolean | Double = null,
-    lockAspectRatioExtraHeight: js.UndefOr[Double] = js.undefined,
-    lockAspectRatioExtraWidth: js.UndefOr[Double] = js.undefined,
-    maxHeight: String | Double = null,
-    maxWidth: String | Double = null,
-    minHeight: String | Double = null,
-    minWidth: String | Double = null,
-    onResize: (/* event */ MouseEvent | TouchEvent, /* direction */ Direction, /* elementRef */ HTMLDivElement, /* delta */ NumberSize) => Unit = null,
-    onResizeStart: (/* e */ (typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent]) | typings.react.mod.TouchEvent[HTMLDivElement], /* dir */ Direction, /* elementRef */ HTMLDivElement) => Unit | Boolean = null,
-    onResizeStop: (/* event */ MouseEvent | TouchEvent, /* direction */ Direction, /* elementRef */ HTMLDivElement, /* delta */ NumberSize) => Unit = null,
-    resizeRatio: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Double] = js.undefined,
-    size: Size = null,
-    snap: X = null,
-    snapGap: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null
-  ): ResizableProps = {
+  def apply(): ResizableProps = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
-    if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (handleClasses != null) __obj.updateDynamic("handleClasses")(handleClasses.asInstanceOf[js.Any])
-    if (handleComponent != null) __obj.updateDynamic("handleComponent")(handleComponent.asInstanceOf[js.Any])
-    if (handleStyles != null) __obj.updateDynamic("handleStyles")(handleStyles.asInstanceOf[js.Any])
-    if (handleWrapperClass != null) __obj.updateDynamic("handleWrapperClass")(handleWrapperClass.asInstanceOf[js.Any])
-    if (handleWrapperStyle != null) __obj.updateDynamic("handleWrapperStyle")(handleWrapperStyle.asInstanceOf[js.Any])
-    if (lockAspectRatio != null) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockAspectRatioExtraHeight)) __obj.updateDynamic("lockAspectRatioExtraHeight")(lockAspectRatioExtraHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockAspectRatioExtraWidth)) __obj.updateDynamic("lockAspectRatioExtraWidth")(lockAspectRatioExtraWidth.get.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction4(onResize))
-    if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction3(onResizeStart))
-    if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(js.Any.fromFunction4(onResizeStop))
-    if (!js.isUndefined(resizeRatio)) __obj.updateDynamic("resizeRatio")(resizeRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapGap)) __obj.updateDynamic("snapGap")(snapGap.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizableProps]
   }
+  @scala.inline
+  implicit class ResizablePropsOps[Self <: ResizableProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBounds(value: parent | window | HTMLElement): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounds: Self = this.set("bounds", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDefaultSize(value: Size): Self = this.set("defaultSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSize: Self = this.set("defaultSize", js.undefined)
+    @scala.inline
+    def setEnable(value: Enable): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setGrid(value: js.Tuple2[Double, Double]): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setHandleClasses(value: HandleClassName): Self = this.set("handleClasses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleClasses: Self = this.set("handleClasses", js.undefined)
+    @scala.inline
+    def setHandleComponent(value: HandleComponent): Self = this.set("handleComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleComponent: Self = this.set("handleComponent", js.undefined)
+    @scala.inline
+    def setHandleStyles(value: HandleStyles): Self = this.set("handleStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleStyles: Self = this.set("handleStyles", js.undefined)
+    @scala.inline
+    def setHandleWrapperClass(value: String): Self = this.set("handleWrapperClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleWrapperClass: Self = this.set("handleWrapperClass", js.undefined)
+    @scala.inline
+    def setHandleWrapperStyle(value: CSSProperties): Self = this.set("handleWrapperStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleWrapperStyle: Self = this.set("handleWrapperStyle", js.undefined)
+    @scala.inline
+    def setLockAspectRatio(value: Boolean | Double): Self = this.set("lockAspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockAspectRatio: Self = this.set("lockAspectRatio", js.undefined)
+    @scala.inline
+    def setLockAspectRatioExtraHeight(value: Double): Self = this.set("lockAspectRatioExtraHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockAspectRatioExtraHeight: Self = this.set("lockAspectRatioExtraHeight", js.undefined)
+    @scala.inline
+    def setLockAspectRatioExtraWidth(value: Double): Self = this.set("lockAspectRatioExtraWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockAspectRatioExtraWidth: Self = this.set("lockAspectRatioExtraWidth", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: String | Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: String | Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: String | Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: String | Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setOnResize(
+      value: (/* event */ MouseEvent | TouchEvent, /* direction */ Direction, /* elementRef */ HTMLDivElement, /* delta */ NumberSize) => Unit
+    ): Self = this.set("onResize", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteOnResize: Self = this.set("onResize", js.undefined)
+    @scala.inline
+    def setOnResizeStart(
+      value: (/* e */ (typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent]) | typings.react.mod.TouchEvent[HTMLDivElement], /* dir */ Direction, /* elementRef */ HTMLDivElement) => Unit | Boolean
+    ): Self = this.set("onResizeStart", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnResizeStart: Self = this.set("onResizeStart", js.undefined)
+    @scala.inline
+    def setOnResizeStop(
+      value: (/* event */ MouseEvent | TouchEvent, /* direction */ Direction, /* elementRef */ HTMLDivElement, /* delta */ NumberSize) => Unit
+    ): Self = this.set("onResizeStop", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteOnResizeStop: Self = this.set("onResizeStop", js.undefined)
+    @scala.inline
+    def setResizeRatio(value: Double): Self = this.set("resizeRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeRatio: Self = this.set("resizeRatio", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSnap(value: X): Self = this.set("snap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnap: Self = this.set("snap", js.undefined)
+    @scala.inline
+    def setSnapGap(value: Double): Self = this.set("snapGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapGap: Self = this.set("snapGap", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

@@ -69,6 +69,7 @@ trait Queue[T] extends EventEmitter {
     * @param limit Maximum amount of jobs to clean per call. If not provided will clean all matching jobs.
     */
   def clean(grace: Double): js.Promise[js.Array[Job[T]]] = js.native
+  def clean(grace: Double, status: js.UndefOr[scala.Nothing], limit: Double): js.Promise[js.Array[Job[T]]] = js.native
   def clean(grace: Double, status: JobStatusClean): js.Promise[js.Array[Job[T]]] = js.native
   def clean(grace: Double, status: JobStatusClean, limit: Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
@@ -96,6 +97,7 @@ trait Queue[T] extends EventEmitter {
     * Returns a promise that will return an array with the active jobs between start and end.
     */
   def getActive(): js.Promise[js.Array[Job[T]]] = js.native
+  def getActive(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getActive(start: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getActive(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
@@ -106,6 +108,7 @@ trait Queue[T] extends EventEmitter {
     * Returns a promise that will return an array with the completed jobs between start and end.
     */
   def getCompleted(): js.Promise[js.Array[Job[T]]] = js.native
+  def getCompleted(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getCompleted(start: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getCompleted(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
@@ -116,6 +119,7 @@ trait Queue[T] extends EventEmitter {
     * Returns a promise that will return an array with the delayed jobs between start and end.
     */
   def getDelayed(): js.Promise[js.Array[Job[T]]] = js.native
+  def getDelayed(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getDelayed(start: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getDelayed(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
@@ -126,6 +130,7 @@ trait Queue[T] extends EventEmitter {
     * Returns a promise that will return an array with the failed jobs between start and end.
     */
   def getFailed(): js.Promise[js.Array[Job[T]]] = js.native
+  def getFailed(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getFailed(start: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getFailed(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
@@ -151,6 +156,7 @@ trait Queue[T] extends EventEmitter {
     * value is the total amount of logs, useful for implementing pagination.
     */
   def getJobLogs(jobId: String): js.Promise[Count] = js.native
+  def getJobLogs(jobId: String, start: js.UndefOr[scala.Nothing], end: Double): js.Promise[Count] = js.native
   def getJobLogs(jobId: String, start: Double): js.Promise[Count] = js.native
   def getJobLogs(jobId: String, start: Double, end: Double): js.Promise[Count] = js.native
   /**
@@ -158,7 +164,16 @@ trait Queue[T] extends EventEmitter {
     * Optional parameters for range and ordering are provided.
     */
   def getJobs(types: js.Array[JobStatus]): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(
+    types: js.Array[JobStatus],
+    start: js.UndefOr[scala.Nothing],
+    end: js.UndefOr[scala.Nothing],
+    asc: Boolean
+  ): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[JobStatus], start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[JobStatus], start: js.UndefOr[scala.Nothing], end: Double, asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
   def getJobs(types: js.Array[JobStatus], start: Double): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[JobStatus], start: Double, end: js.UndefOr[scala.Nothing], asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
   def getJobs(types: js.Array[JobStatus], start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getJobs(types: js.Array[JobStatus], start: Double, end: Double, asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
   /**
@@ -174,13 +189,18 @@ trait Queue[T] extends EventEmitter {
     * index to limit the number of results. Start defaults to 0, end to -1 and asc to false.
     */
   def getRepeatableJobs(): js.Promise[js.Array[JobInformation]] = js.native
+  def getRepeatableJobs(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
+  def getRepeatableJobs(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[JobInformation]] = js.native
+  def getRepeatableJobs(start: js.UndefOr[scala.Nothing], end: Double, asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
   def getRepeatableJobs(start: Double): js.Promise[js.Array[JobInformation]] = js.native
+  def getRepeatableJobs(start: Double, end: js.UndefOr[scala.Nothing], asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
   def getRepeatableJobs(start: Double, end: Double): js.Promise[js.Array[JobInformation]] = js.native
   def getRepeatableJobs(start: Double, end: Double, asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
   /**
     * Returns a promise that will return an array with the waiting jobs between start and end.
     */
   def getWaiting(): js.Promise[js.Array[Job[T]]] = js.native
+  def getWaiting(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getWaiting(start: Double): js.Promise[js.Array[Job[T]]] = js.native
   def getWaiting(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
@@ -290,6 +310,7 @@ trait Queue[T] extends EventEmitter {
     * Pausing a queue that is already paused does nothing.
     */
   def pause(): js.Promise[Unit] = js.native
+  def pause(isLocal: js.UndefOr[scala.Nothing], doNotWaitActive: Boolean): js.Promise[Unit] = js.native
   def pause(isLocal: Boolean): js.Promise[Unit] = js.native
   def pause(isLocal: Boolean, doNotWaitActive: Boolean): js.Promise[Unit] = js.native
   def process(callback: String): js.Promise[Unit] = js.native

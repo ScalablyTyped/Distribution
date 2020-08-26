@@ -22,16 +22,34 @@ trait CreateBackupVaultOutput extends js.Object {
 
 object CreateBackupVaultOutput {
   @scala.inline
-  def apply(
-    BackupVaultArn: ARN = null,
-    BackupVaultName: BackupVaultName = null,
-    CreationDate: timestamp = null
-  ): CreateBackupVaultOutput = {
+  def apply(): CreateBackupVaultOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn.asInstanceOf[js.Any])
-    if (BackupVaultName != null) __obj.updateDynamic("BackupVaultName")(BackupVaultName.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBackupVaultOutput]
   }
+  @scala.inline
+  implicit class CreateBackupVaultOutputOps[Self <: CreateBackupVaultOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupVaultArn(value: ARN): Self = this.set("BackupVaultArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultArn: Self = this.set("BackupVaultArn", js.undefined)
+    @scala.inline
+    def setBackupVaultName(value: BackupVaultName): Self = this.set("BackupVaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultName: Self = this.set("BackupVaultName", js.undefined)
+    @scala.inline
+    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+  }
+  
 }
 

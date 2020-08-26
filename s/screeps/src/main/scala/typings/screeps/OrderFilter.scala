@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrderFilter extends js.Object {
-  var amount: js.UndefOr[Double] = js.undefined
-  var created: js.UndefOr[Double] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var price: js.UndefOr[Double] = js.undefined
-  var remainingAmount: js.UndefOr[Double] = js.undefined
-  var resourceType: js.UndefOr[MarketResourceConstant] = js.undefined
-  var roomName: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var amount: js.UndefOr[Double] = js.native
+  var created: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[String] = js.native
+  var price: js.UndefOr[Double] = js.native
+  var remainingAmount: js.UndefOr[Double] = js.native
+  var resourceType: js.UndefOr[MarketResourceConstant] = js.native
+  var roomName: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object OrderFilter {
   @scala.inline
-  def apply(
-    amount: js.UndefOr[Double] = js.undefined,
-    created: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    price: js.UndefOr[Double] = js.undefined,
-    remainingAmount: js.UndefOr[Double] = js.undefined,
-    resourceType: MarketResourceConstant = null,
-    roomName: String = null,
-    `type`: String = null
-  ): OrderFilter = {
+  def apply(): OrderFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(created)) __obj.updateDynamic("created")(created.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(price)) __obj.updateDynamic("price")(price.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(remainingAmount)) __obj.updateDynamic("remainingAmount")(remainingAmount.get.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (roomName != null) __obj.updateDynamic("roomName")(roomName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderFilter]
   }
+  @scala.inline
+  implicit class OrderFilterOps[Self <: OrderFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setPrice(value: Double): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+    @scala.inline
+    def setRemainingAmount(value: Double): Self = this.set("remainingAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemainingAmount: Self = this.set("remainingAmount", js.undefined)
+    @scala.inline
+    def setResourceType(value: MarketResourceConstant): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setRoomName(value: String): Self = this.set("roomName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoomName: Self = this.set("roomName", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

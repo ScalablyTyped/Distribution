@@ -42,25 +42,56 @@ trait PutSlotTypeRequest extends js.Object {
 
 object PutSlotTypeRequest {
   @scala.inline
-  def apply(
-    name: SlotTypeName,
-    checksum: String = null,
-    createVersion: js.UndefOr[Boolean] = js.undefined,
-    description: Description = null,
-    enumerationValues: EnumerationValues = null,
-    parentSlotTypeSignature: CustomOrBuiltinSlotTypeName = null,
-    slotTypeConfigurations: SlotTypeConfigurations = null,
-    valueSelectionStrategy: SlotValueSelectionStrategy = null
-  ): PutSlotTypeRequest = {
+  def apply(name: SlotTypeName): PutSlotTypeRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (enumerationValues != null) __obj.updateDynamic("enumerationValues")(enumerationValues.asInstanceOf[js.Any])
-    if (parentSlotTypeSignature != null) __obj.updateDynamic("parentSlotTypeSignature")(parentSlotTypeSignature.asInstanceOf[js.Any])
-    if (slotTypeConfigurations != null) __obj.updateDynamic("slotTypeConfigurations")(slotTypeConfigurations.asInstanceOf[js.Any])
-    if (valueSelectionStrategy != null) __obj.updateDynamic("valueSelectionStrategy")(valueSelectionStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSlotTypeRequest]
   }
+  @scala.inline
+  implicit class PutSlotTypeRequestOps[Self <: PutSlotTypeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: SlotTypeName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    @scala.inline
+    def setCreateVersion(value: Boolean): Self = this.set("createVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateVersion: Self = this.set("createVersion", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnumerationValuesVarargs(value: EnumerationValue*): Self = this.set("enumerationValues", js.Array(value :_*))
+    @scala.inline
+    def setEnumerationValues(value: EnumerationValues): Self = this.set("enumerationValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnumerationValues: Self = this.set("enumerationValues", js.undefined)
+    @scala.inline
+    def setParentSlotTypeSignature(value: CustomOrBuiltinSlotTypeName): Self = this.set("parentSlotTypeSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentSlotTypeSignature: Self = this.set("parentSlotTypeSignature", js.undefined)
+    @scala.inline
+    def setSlotTypeConfigurationsVarargs(value: SlotTypeConfiguration*): Self = this.set("slotTypeConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setSlotTypeConfigurations(value: SlotTypeConfigurations): Self = this.set("slotTypeConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlotTypeConfigurations: Self = this.set("slotTypeConfigurations", js.undefined)
+    @scala.inline
+    def setValueSelectionStrategy(value: SlotValueSelectionStrategy): Self = this.set("valueSelectionStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueSelectionStrategy: Self = this.set("valueSelectionStrategy", js.undefined)
+  }
+  
 }
 

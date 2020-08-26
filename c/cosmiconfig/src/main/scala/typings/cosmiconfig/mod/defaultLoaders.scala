@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("cosmiconfig", "defaultLoaders")
 @js.native
 object defaultLoaders extends js.Object {
+  @JSName(".cjs")
+  def Dotcjs(filepath: String, content: String): LoaderResult = js.native
   @JSName(".js")
   def Dotjs(filepath: String, content: String): LoaderResult = js.native
   @JSName(".json")

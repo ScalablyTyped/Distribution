@@ -1,47 +1,56 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.devextremeStrings.auto
-import typings.devextreme.mod.global.JQuery
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxBoxItem extends CollectionWidgetItem {
   /** @name dxBoxItem.baseSize */
-  var baseSize: js.UndefOr[Double | auto] = js.undefined
+  var baseSize: js.UndefOr[Double | auto] = js.native
   /** @name dxBoxItem.box */
-  var box: js.UndefOr[dxBoxOptions] = js.undefined
+  var box: js.UndefOr[dxBoxOptions] = js.native
   /** @name dxBoxItem.ratio */
-  var ratio: js.UndefOr[Double] = js.undefined
+  var ratio: js.UndefOr[Double] = js.native
   /** @name dxBoxItem.shrink */
-  var shrink: js.UndefOr[Double] = js.undefined
+  var shrink: js.UndefOr[Double] = js.native
 }
 
 object dxBoxItem {
   @scala.inline
-  def apply(
-    baseSize: Double | auto = null,
-    box: dxBoxOptions = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    ratio: js.UndefOr[Double] = js.undefined,
-    shrink: js.UndefOr[Double] = js.undefined,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxBoxItem = {
+  def apply(): dxBoxItem = {
     val __obj = js.Dynamic.literal()
-    if (baseSize != null) __obj.updateDynamic("baseSize")(baseSize.asInstanceOf[js.Any])
-    if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (!js.isUndefined(ratio)) __obj.updateDynamic("ratio")(ratio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrink)) __obj.updateDynamic("shrink")(shrink.get.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxBoxItem]
   }
+  @scala.inline
+  implicit class dxBoxItemOps[Self <: dxBoxItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseSize(value: Double | auto): Self = this.set("baseSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseSize: Self = this.set("baseSize", js.undefined)
+    @scala.inline
+    def setBox(value: dxBoxOptions): Self = this.set("box", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBox: Self = this.set("box", js.undefined)
+    @scala.inline
+    def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRatio: Self = this.set("ratio", js.undefined)
+    @scala.inline
+    def setShrink(value: Double): Self = this.set("shrink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShrink: Self = this.set("shrink", js.undefined)
+  }
+  
 }
 

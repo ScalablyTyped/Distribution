@@ -22,5 +22,22 @@ object DeleteFirewallManagerRuleGroupsRequest {
     val __obj = js.Dynamic.literal(WebACLArn = WebACLArn.asInstanceOf[js.Any], WebACLLockToken = WebACLLockToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFirewallManagerRuleGroupsRequest]
   }
+  @scala.inline
+  implicit class DeleteFirewallManagerRuleGroupsRequestOps[Self <: DeleteFirewallManagerRuleGroupsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWebACLArn(value: ResourceArn): Self = this.set("WebACLArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebACLLockToken(value: LockToken): Self = this.set("WebACLLockToken", value.asInstanceOf[js.Any])
+  }
+  
 }
 

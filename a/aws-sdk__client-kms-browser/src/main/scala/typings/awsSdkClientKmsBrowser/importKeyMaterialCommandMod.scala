@@ -26,16 +26,9 @@ object importKeyMaterialCommandMod extends js.Object {
           Blob
         ] {
     def this(input: ImportKeyMaterialInput) = this()
-    /* CompleteClass */
-    override val input: ImportKeyMaterialInput = js.native
     val middlewareStack: MiddlewareStack[ImportKeyMaterialInput, ImportKeyMaterialOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KMSResolvedConfiguration
-    ): Handler[ImportKeyMaterialInput, ImportKeyMaterialOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KMSResolvedConfiguration
     ): Handler[ImportKeyMaterialInput, ImportKeyMaterialOutput] = js.native
   }

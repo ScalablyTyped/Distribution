@@ -15,6 +15,12 @@ object obatchMod extends js.Object {
   class OBatch protected () extends js.Object {
     def this(resources: js.Array[ORequest], config: OdataConfig) = this()
     def this(resources: js.Array[ORequest], config: OdataConfig, query: OdataQuery) = this()
+    def this(
+      resources: js.Array[ORequest],
+      config: OdataConfig,
+      query: js.UndefOr[scala.Nothing],
+      changeset: Boolean
+    ) = this()
     def this(resources: js.Array[ORequest], config: OdataConfig, query: OdataQuery, changeset: Boolean) = this()
     var batchBody: js.Any = js.native
     var batchConfig: js.Any = js.native

@@ -11,4 +11,5 @@ package object notyfModelsMod {
     /* elems */ js.Array[T], 
     scala.Unit
   ]
+  type NotyfEventCallback = js.Function1[/* payload */ typings.notyf.notyfModelsMod.INotyfEventPayload, scala.Unit]
 }

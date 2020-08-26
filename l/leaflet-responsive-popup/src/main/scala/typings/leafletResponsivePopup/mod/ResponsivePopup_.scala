@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ResponsivePopup_ () extends Popup_ {
   def this(options: ResponsivePopupOptions) = this()
+  def this(options: js.UndefOr[scala.Nothing], source: Layer) = this()
   def this(options: ResponsivePopupOptions, source: Layer) = this()
 }
 

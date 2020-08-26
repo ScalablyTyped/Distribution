@@ -10,8 +10,8 @@ Typings are for version 0.1.0-preview.1
 | Full name          | @aws-sdk/url-parser-node |
 | Keywords           | - |
 | # releases         | 10 |
-| # dependents       | 185 |
-| # downloads        | 27722 |
+| # dependents       | 367 |
+| # downloads        | 30643 |
 | # stars            | 0 |
 
 ## Links

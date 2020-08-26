@@ -26,11 +26,30 @@ trait SchemaVpnGatewayStatusHighAvailabilityRequirementState extends js.Object {
 
 object SchemaVpnGatewayStatusHighAvailabilityRequirementState {
   @scala.inline
-  def apply(state: String = null, unsatisfiedReason: String = null): SchemaVpnGatewayStatusHighAvailabilityRequirementState = {
+  def apply(): SchemaVpnGatewayStatusHighAvailabilityRequirementState = {
     val __obj = js.Dynamic.literal()
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (unsatisfiedReason != null) __obj.updateDynamic("unsatisfiedReason")(unsatisfiedReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVpnGatewayStatusHighAvailabilityRequirementState]
   }
+  @scala.inline
+  implicit class SchemaVpnGatewayStatusHighAvailabilityRequirementStateOps[Self <: SchemaVpnGatewayStatusHighAvailabilityRequirementState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setUnsatisfiedReason(value: String): Self = this.set("unsatisfiedReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsatisfiedReason: Self = this.set("unsatisfiedReason", js.undefined)
+  }
+  
 }
 

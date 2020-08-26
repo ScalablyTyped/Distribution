@@ -12,7 +12,7 @@ A framework to make it easy for developers to add product tours to their pages.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 413312 |
+| # downloads        | 414006 |
 | # stars            | 5 |
 
 ## Links

@@ -24,6 +24,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * An Electron BrowserWindow instance, or an options object to be passed into
@@ -37,18 +38,18 @@ trait Options extends js.Object {
     * });
     * ```
     */
-  var browserWindow: BrowserWindowConstructorOptions
+  var browserWindow: BrowserWindowConstructorOptions = js.native
   /**
     * The app source directory.
     */
-  var dir: String
+  var dir: String = js.native
   /**
     * The png icon to use for the menubar. A good size to start with is 20x20.
     * To support retina, supply a 2x sized image (e.g. 40x40) with @2x added to
     * the end of the name, so icon.png and icon@2x.png and Electron will
     * automatically use your @2x version on retina screens.
     */
-  var icon: js.UndefOr[String | NativeImage_] = js.undefined
+  var icon: js.UndefOr[String | NativeImage_] = js.native
   /**
     * The URL to load the menubar's browserWindow with. The url can be a remote
     * address (e.g. `http://`) or a path to a local HTML file using the
@@ -57,7 +58,7 @@ trait Options extends js.Object {
     * @default `file:// + options.dir + index.html`
     * @see https://electronjs.org/docs/api/browser-window#winloadurlurl-options
     */
-  var index: String | `false`
+  var index: String | `false` = js.native
   /**
     * The options passed when loading the index URL in the menubar's
     * browserWindow. Everything browserWindow.loadUrl supports is supported;
@@ -65,41 +66,41 @@ trait Options extends js.Object {
     * @default `{}`
     * @see https://electronjs.org/docs/api/browser-window#winloadurlurl-options
     */
-  var loadUrlOptions: js.UndefOr[LoadURLOptions] = js.undefined
+  var loadUrlOptions: js.UndefOr[LoadURLOptions] = js.native
   /**
     * Create BrowserWindow instance before it is used -- increasing resource
     * usage, but making the click on the menubar load faster.
     */
-  var preloadWindow: js.UndefOr[Boolean] = js.undefined
+  var preloadWindow: js.UndefOr[Boolean] = js.native
   /**
     * Configure the visibility of the application dock icon, macOS only. Calls
     * [`app.dock.hide`](https://electronjs.org/docs/api/app#appdockhide-macos).
     */
-  var showDockIcon: js.UndefOr[Boolean] = js.undefined
+  var showDockIcon: js.UndefOr[Boolean] = js.native
   /**
     * Makes the window available on all OS X workspaces. Calls
     * [`setVisibleOnAllWorkspaces`](https://electronjs.org/docs/api/browser-window#winsetvisibleonallworkspacesvisible-options).
     */
-  var showOnAllWorkspaces: js.UndefOr[Boolean] = js.undefined
+  var showOnAllWorkspaces: js.UndefOr[Boolean] = js.native
   /**
     * Show the window on 'right-click' event instead of regular 'click'.
     */
-  var showOnRightClick: js.UndefOr[Boolean] = js.undefined
+  var showOnRightClick: js.UndefOr[Boolean] = js.native
   /**
     * Menubar tray icon tooltip text. Calls [`tray.setTooltip`](https://electronjs.org/docs/api/tray#traysettooltiptooltip).
     */
-  var tooltip: String
+  var tooltip: String = js.native
   /**
     * An electron Tray instance. If provided, `options.icon` will be ignored.
     */
-  var tray: js.UndefOr[Tray] = js.undefined
+  var tray: js.UndefOr[Tray] = js.native
   /**
     * Sets the window position (x and y will still override this), check
     * electron-positioner docs for valid values.
     */
   var windowPosition: js.UndefOr[
     trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center
-  ] = js.undefined
+  ] = js.native
 }
 
 object Options {
@@ -108,26 +109,65 @@ object Options {
     browserWindow: BrowserWindowConstructorOptions,
     dir: String,
     index: String | `false`,
-    tooltip: String,
-    icon: String | NativeImage_ = null,
-    loadUrlOptions: LoadURLOptions = null,
-    preloadWindow: js.UndefOr[Boolean] = js.undefined,
-    showDockIcon: js.UndefOr[Boolean] = js.undefined,
-    showOnAllWorkspaces: js.UndefOr[Boolean] = js.undefined,
-    showOnRightClick: js.UndefOr[Boolean] = js.undefined,
-    tray: Tray = null,
-    windowPosition: trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center = null
+    tooltip: String
   ): Options = {
     val __obj = js.Dynamic.literal(browserWindow = browserWindow.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (loadUrlOptions != null) __obj.updateDynamic("loadUrlOptions")(loadUrlOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(preloadWindow)) __obj.updateDynamic("preloadWindow")(preloadWindow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDockIcon)) __obj.updateDynamic("showDockIcon")(showDockIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnAllWorkspaces)) __obj.updateDynamic("showOnAllWorkspaces")(showOnAllWorkspaces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnRightClick)) __obj.updateDynamic("showOnRightClick")(showOnRightClick.get.asInstanceOf[js.Any])
-    if (tray != null) __obj.updateDynamic("tray")(tray.asInstanceOf[js.Any])
-    if (windowPosition != null) __obj.updateDynamic("windowPosition")(windowPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrowserWindow(value: BrowserWindowConstructorOptions): Self = this.set("browserWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndex(value: String | `false`): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIcon(value: String | NativeImage_): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setLoadUrlOptions(value: LoadURLOptions): Self = this.set("loadUrlOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadUrlOptions: Self = this.set("loadUrlOptions", js.undefined)
+    @scala.inline
+    def setPreloadWindow(value: Boolean): Self = this.set("preloadWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreloadWindow: Self = this.set("preloadWindow", js.undefined)
+    @scala.inline
+    def setShowDockIcon(value: Boolean): Self = this.set("showDockIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDockIcon: Self = this.set("showDockIcon", js.undefined)
+    @scala.inline
+    def setShowOnAllWorkspaces(value: Boolean): Self = this.set("showOnAllWorkspaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOnAllWorkspaces: Self = this.set("showOnAllWorkspaces", js.undefined)
+    @scala.inline
+    def setShowOnRightClick(value: Boolean): Self = this.set("showOnRightClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOnRightClick: Self = this.set("showOnRightClick", js.undefined)
+    @scala.inline
+    def setTray(value: Tray): Self = this.set("tray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTray: Self = this.set("tray", js.undefined)
+    @scala.inline
+    def setWindowPosition(
+      value: trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center
+    ): Self = this.set("windowPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowPosition: Self = this.set("windowPosition", js.undefined)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourceProjectsAgentSessions protected () extends js.Object {
     */
   def deleteContexts(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def deleteContexts(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
+  def deleteContexts(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def deleteContexts(params: ParamsResourceProjectsAgentSessionsDeletecontexts): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def deleteContexts(
     params: ParamsResourceProjectsAgentSessionsDeletecontexts,
@@ -63,6 +64,7 @@ class ResourceProjectsAgentSessions protected () extends js.Object {
     */
   def detectIntent(): GaxiosPromise[SchemaGoogleCloudDialogflowV2DetectIntentResponse] = js.native
   def detectIntent(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2DetectIntentResponse]): Unit = js.native
+  def detectIntent(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2DetectIntentResponse] = js.native
   def detectIntent(params: ParamsResourceProjectsAgentSessionsDetectintent): GaxiosPromise[SchemaGoogleCloudDialogflowV2DetectIntentResponse] = js.native
   def detectIntent(
     params: ParamsResourceProjectsAgentSessionsDetectintent,

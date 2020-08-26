@@ -18,8 +18,14 @@ trait Typeofopen extends js.Object {
   def apply(
     path: PathLike,
     flags: OpenMode,
-    mode: js.UndefOr[Mode | Null],
+    mode: js.UndefOr[Mode],
     callback: js.Function2[ErrnoException | Null, /* fd */ Double, Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    flags: OpenMode,
+    mode: Null,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   /**
     * Asynchronous open(2) - open and possibly create a file.

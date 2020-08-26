@@ -100,9 +100,9 @@ trait UserPoolState extends js.Object {
     */
   val softwareTokenMfaConfiguration: js.UndefOr[Input[UserPoolSoftwareTokenMfaConfiguration]] = js.native
   /**
-    * A mapping of tags to assign to the User Pool.
+    * A map of tags to assign to the User Pool.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Configuration block for user pool add-ons to enable user pool advanced security mode features.
     */
@@ -123,60 +123,130 @@ trait UserPoolState extends js.Object {
 
 object UserPoolState {
   @scala.inline
-  def apply(
-    adminCreateUserConfig: Input[UserPoolAdminCreateUserConfig] = null,
-    aliasAttributes: Input[js.Array[Input[String]]] = null,
-    arn: Input[String] = null,
-    autoVerifiedAttributes: Input[js.Array[Input[String]]] = null,
-    creationDate: Input[String] = null,
-    deviceConfiguration: Input[UserPoolDeviceConfiguration] = null,
-    emailConfiguration: Input[UserPoolEmailConfiguration] = null,
-    emailVerificationMessage: Input[String] = null,
-    emailVerificationSubject: Input[String] = null,
-    endpoint: Input[String] = null,
-    lambdaConfig: Input[UserPoolLambdaConfig] = null,
-    lastModifiedDate: Input[String] = null,
-    mfaConfiguration: Input[String] = null,
-    name: Input[String] = null,
-    passwordPolicy: Input[UserPoolPasswordPolicy] = null,
-    schemas: Input[js.Array[Input[UserPoolSchema]]] = null,
-    smsAuthenticationMessage: Input[String] = null,
-    smsConfiguration: Input[UserPoolSmsConfiguration] = null,
-    smsVerificationMessage: Input[String] = null,
-    softwareTokenMfaConfiguration: Input[UserPoolSoftwareTokenMfaConfiguration] = null,
-    tags: Input[StringDictionary[_]] = null,
-    userPoolAddOns: Input[UserPoolUserPoolAddOns] = null,
-    usernameAttributes: Input[js.Array[Input[String]]] = null,
-    usernameConfiguration: Input[UserPoolUsernameConfiguration] = null,
-    verificationMessageTemplate: Input[UserPoolVerificationMessageTemplate] = null
-  ): UserPoolState = {
+  def apply(): UserPoolState = {
     val __obj = js.Dynamic.literal()
-    if (adminCreateUserConfig != null) __obj.updateDynamic("adminCreateUserConfig")(adminCreateUserConfig.asInstanceOf[js.Any])
-    if (aliasAttributes != null) __obj.updateDynamic("aliasAttributes")(aliasAttributes.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (autoVerifiedAttributes != null) __obj.updateDynamic("autoVerifiedAttributes")(autoVerifiedAttributes.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (deviceConfiguration != null) __obj.updateDynamic("deviceConfiguration")(deviceConfiguration.asInstanceOf[js.Any])
-    if (emailConfiguration != null) __obj.updateDynamic("emailConfiguration")(emailConfiguration.asInstanceOf[js.Any])
-    if (emailVerificationMessage != null) __obj.updateDynamic("emailVerificationMessage")(emailVerificationMessage.asInstanceOf[js.Any])
-    if (emailVerificationSubject != null) __obj.updateDynamic("emailVerificationSubject")(emailVerificationSubject.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (lambdaConfig != null) __obj.updateDynamic("lambdaConfig")(lambdaConfig.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (mfaConfiguration != null) __obj.updateDynamic("mfaConfiguration")(mfaConfiguration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (passwordPolicy != null) __obj.updateDynamic("passwordPolicy")(passwordPolicy.asInstanceOf[js.Any])
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
-    if (smsAuthenticationMessage != null) __obj.updateDynamic("smsAuthenticationMessage")(smsAuthenticationMessage.asInstanceOf[js.Any])
-    if (smsConfiguration != null) __obj.updateDynamic("smsConfiguration")(smsConfiguration.asInstanceOf[js.Any])
-    if (smsVerificationMessage != null) __obj.updateDynamic("smsVerificationMessage")(smsVerificationMessage.asInstanceOf[js.Any])
-    if (softwareTokenMfaConfiguration != null) __obj.updateDynamic("softwareTokenMfaConfiguration")(softwareTokenMfaConfiguration.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (userPoolAddOns != null) __obj.updateDynamic("userPoolAddOns")(userPoolAddOns.asInstanceOf[js.Any])
-    if (usernameAttributes != null) __obj.updateDynamic("usernameAttributes")(usernameAttributes.asInstanceOf[js.Any])
-    if (usernameConfiguration != null) __obj.updateDynamic("usernameConfiguration")(usernameConfiguration.asInstanceOf[js.Any])
-    if (verificationMessageTemplate != null) __obj.updateDynamic("verificationMessageTemplate")(verificationMessageTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolState]
   }
+  @scala.inline
+  implicit class UserPoolStateOps[Self <: UserPoolState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminCreateUserConfig(value: Input[UserPoolAdminCreateUserConfig]): Self = this.set("adminCreateUserConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminCreateUserConfig: Self = this.set("adminCreateUserConfig", js.undefined)
+    @scala.inline
+    def setAliasAttributesVarargs(value: Input[String]*): Self = this.set("aliasAttributes", js.Array(value :_*))
+    @scala.inline
+    def setAliasAttributes(value: Input[js.Array[Input[String]]]): Self = this.set("aliasAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasAttributes: Self = this.set("aliasAttributes", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAutoVerifiedAttributesVarargs(value: Input[String]*): Self = this.set("autoVerifiedAttributes", js.Array(value :_*))
+    @scala.inline
+    def setAutoVerifiedAttributes(value: Input[js.Array[Input[String]]]): Self = this.set("autoVerifiedAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoVerifiedAttributes: Self = this.set("autoVerifiedAttributes", js.undefined)
+    @scala.inline
+    def setCreationDate(value: Input[String]): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setDeviceConfiguration(value: Input[UserPoolDeviceConfiguration]): Self = this.set("deviceConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceConfiguration: Self = this.set("deviceConfiguration", js.undefined)
+    @scala.inline
+    def setEmailConfiguration(value: Input[UserPoolEmailConfiguration]): Self = this.set("emailConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailConfiguration: Self = this.set("emailConfiguration", js.undefined)
+    @scala.inline
+    def setEmailVerificationMessage(value: Input[String]): Self = this.set("emailVerificationMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailVerificationMessage: Self = this.set("emailVerificationMessage", js.undefined)
+    @scala.inline
+    def setEmailVerificationSubject(value: Input[String]): Self = this.set("emailVerificationSubject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailVerificationSubject: Self = this.set("emailVerificationSubject", js.undefined)
+    @scala.inline
+    def setEndpoint(value: Input[String]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setLambdaConfig(value: Input[UserPoolLambdaConfig]): Self = this.set("lambdaConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaConfig: Self = this.set("lambdaConfig", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: Input[String]): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setMfaConfiguration(value: Input[String]): Self = this.set("mfaConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMfaConfiguration: Self = this.set("mfaConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPasswordPolicy(value: Input[UserPoolPasswordPolicy]): Self = this.set("passwordPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordPolicy: Self = this.set("passwordPolicy", js.undefined)
+    @scala.inline
+    def setSchemasVarargs(value: Input[UserPoolSchema]*): Self = this.set("schemas", js.Array(value :_*))
+    @scala.inline
+    def setSchemas(value: Input[js.Array[Input[UserPoolSchema]]]): Self = this.set("schemas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemas: Self = this.set("schemas", js.undefined)
+    @scala.inline
+    def setSmsAuthenticationMessage(value: Input[String]): Self = this.set("smsAuthenticationMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsAuthenticationMessage: Self = this.set("smsAuthenticationMessage", js.undefined)
+    @scala.inline
+    def setSmsConfiguration(value: Input[UserPoolSmsConfiguration]): Self = this.set("smsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsConfiguration: Self = this.set("smsConfiguration", js.undefined)
+    @scala.inline
+    def setSmsVerificationMessage(value: Input[String]): Self = this.set("smsVerificationMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsVerificationMessage: Self = this.set("smsVerificationMessage", js.undefined)
+    @scala.inline
+    def setSoftwareTokenMfaConfiguration(value: Input[UserPoolSoftwareTokenMfaConfiguration]): Self = this.set("softwareTokenMfaConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSoftwareTokenMfaConfiguration: Self = this.set("softwareTokenMfaConfiguration", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUserPoolAddOns(value: Input[UserPoolUserPoolAddOns]): Self = this.set("userPoolAddOns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolAddOns: Self = this.set("userPoolAddOns", js.undefined)
+    @scala.inline
+    def setUsernameAttributesVarargs(value: Input[String]*): Self = this.set("usernameAttributes", js.Array(value :_*))
+    @scala.inline
+    def setUsernameAttributes(value: Input[js.Array[Input[String]]]): Self = this.set("usernameAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsernameAttributes: Self = this.set("usernameAttributes", js.undefined)
+    @scala.inline
+    def setUsernameConfiguration(value: Input[UserPoolUsernameConfiguration]): Self = this.set("usernameConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsernameConfiguration: Self = this.set("usernameConfiguration", js.undefined)
+    @scala.inline
+    def setVerificationMessageTemplate(value: Input[UserPoolVerificationMessageTemplate]): Self = this.set("verificationMessageTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationMessageTemplate: Self = this.set("verificationMessageTemplate", js.undefined)
+  }
+  
 }
 

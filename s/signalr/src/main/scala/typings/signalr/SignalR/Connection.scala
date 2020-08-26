@@ -130,6 +130,7 @@ trait Connection extends js.Object {
     * @param notifyServer Whether we want to notify the server that we are aborting the connection
     */
   def stop(): Connection = js.native
+  def stop(async: js.UndefOr[scala.Nothing], notifyServer: Boolean): Connection = js.native
   def stop(async: Boolean): Connection = js.native
   def stop(async: Boolean, notifyServer: Boolean): Connection = js.native
 }

@@ -30,20 +30,42 @@ trait SchemaInternalIpAddress extends js.Object {
 
 object SchemaInternalIpAddress {
   @scala.inline
-  def apply(
-    cidr: String = null,
-    owner: String = null,
-    purpose: String = null,
-    region: String = null,
-    `type`: String = null
-  ): SchemaInternalIpAddress = {
+  def apply(): SchemaInternalIpAddress = {
     val __obj = js.Dynamic.literal()
-    if (cidr != null) __obj.updateDynamic("cidr")(cidr.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInternalIpAddress]
   }
+  @scala.inline
+  implicit class SchemaInternalIpAddressOps[Self <: SchemaInternalIpAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidr(value: String): Self = this.set("cidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidr: Self = this.set("cidr", js.undefined)
+    @scala.inline
+    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setPurpose(value: String): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpose: Self = this.set("purpose", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

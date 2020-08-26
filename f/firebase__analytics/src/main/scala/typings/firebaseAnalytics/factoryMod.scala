@@ -15,6 +15,7 @@ object factoryMod extends js.Object {
   def factory(app: FirebaseApp, installations: FirebaseInstallations): FirebaseAnalytics = js.native
   def getGlobalVars(): InitializedIdPromisesMap = js.native
   def resetGlobalVars(): Unit = js.native
+  def resetGlobalVars(newGlobalInitDone: js.UndefOr[scala.Nothing], newGaInitializedPromise: js.Object): Unit = js.native
   def resetGlobalVars(newGlobalInitDone: Boolean): Unit = js.native
   def resetGlobalVars(newGlobalInitDone: Boolean, newGaInitializedPromise: js.Object): Unit = js.native
   def settings(options: SettingsOptions): Unit = js.native

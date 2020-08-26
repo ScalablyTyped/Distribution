@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__bar
 
-Typings are for version 0.61.1
+Typings are for version 0.62.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/bar.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/bar)
@@ -10,9 +10,9 @@ Typings are for version 0.61.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/bar |
 | Keywords           | nivo, dataviz, react, d3, charts, bar-chart |
-| # releases         | 37 |
+| # releases         | 39 |
 | # dependents       | 15 |
-| # downloads        | 575473 |
+| # downloads        | 614287 |
 | # stars            | 0 |
 
 ## Links

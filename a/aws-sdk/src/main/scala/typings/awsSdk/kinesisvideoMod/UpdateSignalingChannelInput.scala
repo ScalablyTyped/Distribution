@@ -22,14 +22,30 @@ trait UpdateSignalingChannelInput extends js.Object {
 
 object UpdateSignalingChannelInput {
   @scala.inline
-  def apply(
-    ChannelARN: ResourceARN,
-    CurrentVersion: Version,
-    SingleMasterConfiguration: SingleMasterConfiguration = null
-  ): UpdateSignalingChannelInput = {
+  def apply(ChannelARN: ResourceARN, CurrentVersion: Version): UpdateSignalingChannelInput = {
     val __obj = js.Dynamic.literal(ChannelARN = ChannelARN.asInstanceOf[js.Any], CurrentVersion = CurrentVersion.asInstanceOf[js.Any])
-    if (SingleMasterConfiguration != null) __obj.updateDynamic("SingleMasterConfiguration")(SingleMasterConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSignalingChannelInput]
   }
+  @scala.inline
+  implicit class UpdateSignalingChannelInputOps[Self <: UpdateSignalingChannelInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelARN(value: ResourceARN): Self = this.set("ChannelARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentVersion(value: Version): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSingleMasterConfiguration(value: SingleMasterConfiguration): Self = this.set("SingleMasterConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleMasterConfiguration: Self = this.set("SingleMasterConfiguration", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait RotationRulesType extends js.Object {
 
 object RotationRulesType {
   @scala.inline
-  def apply(AutomaticallyAfterDays: js.UndefOr[AutomaticallyRotateAfterDaysType] = js.undefined): RotationRulesType = {
+  def apply(): RotationRulesType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutomaticallyAfterDays)) __obj.updateDynamic("AutomaticallyAfterDays")(AutomaticallyAfterDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationRulesType]
   }
+  @scala.inline
+  implicit class RotationRulesTypeOps[Self <: RotationRulesType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomaticallyAfterDays(value: AutomaticallyRotateAfterDaysType): Self = this.set("AutomaticallyAfterDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticallyAfterDays: Self = this.set("AutomaticallyAfterDays", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ A geographic extension for [flatbush](https://github.com/mourner/flatbush), a ve
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 476 |
+| # downloads        | 469 |
 | # stars            | 0 |
 
 ## Links

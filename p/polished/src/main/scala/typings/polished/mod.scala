@@ -31,15 +31,19 @@ object mod extends js.Object {
   def backgroundImages(properties: String*): Styles = js.native
   def backgrounds(properties: String*): Styles = js.native
   def between(fromSize: String, toSize: String): String = js.native
+  def between(fromSize: String, toSize: String, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): String = js.native
   def between(fromSize: String, toSize: String, minScreen: String): String = js.native
   def between(fromSize: String, toSize: String, minScreen: String, maxScreen: String): String = js.native
   def between(fromSize: String, toSize: Double): String = js.native
+  def between(fromSize: String, toSize: Double, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): String = js.native
   def between(fromSize: String, toSize: Double, minScreen: String): String = js.native
   def between(fromSize: String, toSize: Double, minScreen: String, maxScreen: String): String = js.native
   def between(fromSize: Double, toSize: String): String = js.native
+  def between(fromSize: Double, toSize: String, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): String = js.native
   def between(fromSize: Double, toSize: String, minScreen: String): String = js.native
   def between(fromSize: Double, toSize: String, minScreen: String, maxScreen: String): String = js.native
   def between(fromSize: Double, toSize: Double): String = js.native
+  def between(fromSize: Double, toSize: Double, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): String = js.native
   def between(fromSize: Double, toSize: Double, minScreen: String): String = js.native
   def between(fromSize: Double, toSize: Double, minScreen: String, maxScreen: String): String = js.native
   def border(sideKeyword: String, values: (String | Double)*): Styles = js.native
@@ -57,6 +61,8 @@ object mod extends js.Object {
   def cover(): Styles = js.native
   def cover(offset: String): Styles = js.native
   def cover(offset: Double): Styles = js.native
+  def cssVar(cssVariable: String): String | Double = js.native
+  def cssVar(cssVariable: String, passThrough: Boolean): String | Double = js.native
   def darken(amount: String): js.Function1[/* color */ String, String] = js.native
   def darken(amount: String, color: String): String = js.native
   def darken(amount: Double): js.Function1[/* color */ String, String] = js.native
@@ -76,9 +82,15 @@ object mod extends js.Object {
   def em(value: Double, base: String): String = js.native
   def em(value: Double, base: Double): String = js.native
   def fluidRange(cssProp: js.Array[FluidRangeConfiguration]): Styles = js.native
+  def fluidRange(
+    cssProp: js.Array[FluidRangeConfiguration],
+    minScreen: js.UndefOr[scala.Nothing],
+    maxScreen: String
+  ): Styles = js.native
   def fluidRange(cssProp: js.Array[FluidRangeConfiguration], minScreen: String): Styles = js.native
   def fluidRange(cssProp: js.Array[FluidRangeConfiguration], minScreen: String, maxScreen: String): Styles = js.native
   def fluidRange(cssProp: FluidRangeConfiguration): Styles = js.native
+  def fluidRange(cssProp: FluidRangeConfiguration, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): Styles = js.native
   def fluidRange(cssProp: FluidRangeConfiguration, minScreen: String): Styles = js.native
   def fluidRange(cssProp: FluidRangeConfiguration, minScreen: String, maxScreen: String): Styles = js.native
   def fontFace(
@@ -86,27 +98,48 @@ object mod extends js.Object {
   ): Styles = js.native
   def getContrast(color1: String, color2: String): Double = js.native
   def getLuminance(color: String): Double = js.native
-  def getValueAndUnit(value: String): js.Tuple2[Double | String, String | Unit] = js.native
+  def getValueAndUnit(value: String): js.Any = js.native
+  def getValueAndUnit(value: Double): js.Any = js.native
   def grayscale(color: String): String = js.native
   def hiDPI(): String = js.native
   def hiDPI(ratio: Double): String = js.native
   def hideText(): Styles = js.native
   def hideVisually(): Styles = js.native
   def hsl(value: Double): String = js.native
+  def hsl(value: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double): String = js.native
   def hsl(value: Double, saturation: Double): String = js.native
   def hsl(value: Double, saturation: Double, lightness: Double): String = js.native
   def hsl(value: HslColor): String = js.native
+  def hsl(value: HslColor, saturation: js.UndefOr[scala.Nothing], lightness: Double): String = js.native
   def hsl(value: HslColor, saturation: Double): String = js.native
   def hsl(value: HslColor, saturation: Double, lightness: Double): String = js.native
   def hslToColorString(color: Double): String = js.native
   def hslToColorString(color: HslColor): String = js.native
   def hslToColorString(color: HslaColor): String = js.native
   def hsla(value: Double): String = js.native
+  def hsla(
+    value: Double,
+    saturation: js.UndefOr[scala.Nothing],
+    lightness: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): String = js.native
+  def hsla(value: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double): String = js.native
+  def hsla(value: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double, alpha: Double): String = js.native
   def hsla(value: Double, saturation: Double): String = js.native
+  def hsla(value: Double, saturation: Double, lightness: js.UndefOr[scala.Nothing], alpha: Double): String = js.native
   def hsla(value: Double, saturation: Double, lightness: Double): String = js.native
   def hsla(value: Double, saturation: Double, lightness: Double, alpha: Double): String = js.native
   def hsla(value: HslaColor): String = js.native
+  def hsla(
+    value: HslaColor,
+    saturation: js.UndefOr[scala.Nothing],
+    lightness: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): String = js.native
+  def hsla(value: HslaColor, saturation: js.UndefOr[scala.Nothing], lightness: Double): String = js.native
+  def hsla(value: HslaColor, saturation: js.UndefOr[scala.Nothing], lightness: Double, alpha: Double): String = js.native
   def hsla(value: HslaColor, saturation: Double): String = js.native
+  def hsla(value: HslaColor, saturation: Double, lightness: js.UndefOr[scala.Nothing], alpha: Double): String = js.native
   def hsla(value: HslaColor, saturation: Double, lightness: Double): String = js.native
   def hsla(value: HslaColor, saturation: Double, lightness: Double, alpha: Double): String = js.native
   def invert(color: String): String = js.native
@@ -126,6 +159,7 @@ object mod extends js.Object {
   def mix(weight: Double, color: String): js.Function1[/* otherColor */ String, String] = js.native
   def mix(weight: Double, color: String, otherColor: String): String = js.native
   def modularScale(steps: Double): String = js.native
+  def modularScale(steps: Double, base: js.UndefOr[scala.Nothing], ratio: ModularScaleRatio): String = js.native
   def modularScale(steps: Double, base: String): String = js.native
   def modularScale(steps: Double, base: String, ratio: ModularScaleRatio): String = js.native
   def modularScale(steps: Double, base: Double): String = js.native
@@ -140,11 +174,31 @@ object mod extends js.Object {
   def parseToRgb(color: String): RgbColor | RgbaColor = js.native
   def position(firstValue: String, values: (Null | Unit | String | Double)*): Styles = js.native
   def position(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = js.native
-  def position(values: (Null | Unit | String | Double)*): Styles = js.native
+  def position(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = js.native
   def radialGradient(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = js.native
   def readableColor(color: String): String = js.native
+  def readableColor(
+    color: String,
+    lightReturnColor: js.UndefOr[scala.Nothing],
+    darkReturnColor: js.UndefOr[scala.Nothing],
+    strict: Boolean
+  ): String = js.native
+  def readableColor(color: String, lightReturnColor: js.UndefOr[scala.Nothing], darkReturnColor: String): String = js.native
+  def readableColor(
+    color: String,
+    lightReturnColor: js.UndefOr[scala.Nothing],
+    darkReturnColor: String,
+    strict: Boolean
+  ): String = js.native
   def readableColor(color: String, lightReturnColor: String): String = js.native
+  def readableColor(
+    color: String,
+    lightReturnColor: String,
+    darkReturnColor: js.UndefOr[scala.Nothing],
+    strict: Boolean
+  ): String = js.native
   def readableColor(color: String, lightReturnColor: String, darkReturnColor: String): String = js.native
+  def readableColor(color: String, lightReturnColor: String, darkReturnColor: String, strict: Boolean): String = js.native
   def rem(value: String): String = js.native
   def rem(value: String, base: String): String = js.native
   def rem(value: String, base: Double): String = js.native
@@ -152,8 +206,76 @@ object mod extends js.Object {
   def rem(value: Double, base: String): String = js.native
   def rem(value: Double, base: Double): String = js.native
   def retinaImage(filename: String): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: js.UndefOr[scala.Nothing],
+    extension: js.UndefOr[scala.Nothing],
+    retinaFilename: js.UndefOr[scala.Nothing],
+    retinaSuffix: String
+  ): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: js.UndefOr[scala.Nothing],
+    extension: js.UndefOr[scala.Nothing],
+    retinaFilename: String
+  ): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: js.UndefOr[scala.Nothing],
+    extension: js.UndefOr[scala.Nothing],
+    retinaFilename: String,
+    retinaSuffix: String
+  ): Styles = js.native
+  def retinaImage(filename: String, backgroundSize: js.UndefOr[scala.Nothing], extension: String): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: js.UndefOr[scala.Nothing],
+    extension: String,
+    retinaFilename: js.UndefOr[scala.Nothing],
+    retinaSuffix: String
+  ): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: js.UndefOr[scala.Nothing],
+    extension: String,
+    retinaFilename: String
+  ): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: js.UndefOr[scala.Nothing],
+    extension: String,
+    retinaFilename: String,
+    retinaSuffix: String
+  ): Styles = js.native
   def retinaImage(filename: String, backgroundSize: String): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: String,
+    extension: js.UndefOr[scala.Nothing],
+    retinaFilename: js.UndefOr[scala.Nothing],
+    retinaSuffix: String
+  ): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: String,
+    extension: js.UndefOr[scala.Nothing],
+    retinaFilename: String
+  ): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: String,
+    extension: js.UndefOr[scala.Nothing],
+    retinaFilename: String,
+    retinaSuffix: String
+  ): Styles = js.native
   def retinaImage(filename: String, backgroundSize: String, extension: String): Styles = js.native
+  def retinaImage(
+    filename: String,
+    backgroundSize: String,
+    extension: String,
+    retinaFilename: js.UndefOr[scala.Nothing],
+    retinaSuffix: String
+  ): Styles = js.native
   def retinaImage(filename: String, backgroundSize: String, extension: String, retinaFilename: String): Styles = js.native
   def retinaImage(
     filename: String,
@@ -163,23 +285,82 @@ object mod extends js.Object {
     retinaSuffix: String
   ): Styles = js.native
   def rgb(value: Double): String = js.native
+  def rgb(value: Double, green: js.UndefOr[scala.Nothing], blue: Double): String = js.native
   def rgb(value: Double, green: Double): String = js.native
   def rgb(value: Double, green: Double, blue: Double): String = js.native
   def rgb(value: RgbColor): String = js.native
+  def rgb(value: RgbColor, green: js.UndefOr[scala.Nothing], blue: Double): String = js.native
   def rgb(value: RgbColor, green: Double): String = js.native
   def rgb(value: RgbColor, green: Double, blue: Double): String = js.native
   def rgbToColorString(color: RgbColor): String = js.native
   def rgbToColorString(color: RgbaColor): String = js.native
   def rgba(firstValue: String): String = js.native
+  def rgba(
+    firstValue: String,
+    secondValue: js.UndefOr[scala.Nothing],
+    thirdValue: js.UndefOr[scala.Nothing],
+    fourthValue: Double
+  ): String = js.native
+  def rgba(firstValue: String, secondValue: js.UndefOr[scala.Nothing], thirdValue: Double): String = js.native
+  def rgba(
+    firstValue: String,
+    secondValue: js.UndefOr[scala.Nothing],
+    thirdValue: Double,
+    fourthValue: Double
+  ): String = js.native
   def rgba(firstValue: String, secondValue: Double): String = js.native
+  def rgba(
+    firstValue: String,
+    secondValue: Double,
+    thirdValue: js.UndefOr[scala.Nothing],
+    fourthValue: Double
+  ): String = js.native
   def rgba(firstValue: String, secondValue: Double, thirdValue: Double): String = js.native
   def rgba(firstValue: String, secondValue: Double, thirdValue: Double, fourthValue: Double): String = js.native
   def rgba(firstValue: Double): String = js.native
+  def rgba(
+    firstValue: Double,
+    secondValue: js.UndefOr[scala.Nothing],
+    thirdValue: js.UndefOr[scala.Nothing],
+    fourthValue: Double
+  ): String = js.native
+  def rgba(firstValue: Double, secondValue: js.UndefOr[scala.Nothing], thirdValue: Double): String = js.native
+  def rgba(
+    firstValue: Double,
+    secondValue: js.UndefOr[scala.Nothing],
+    thirdValue: Double,
+    fourthValue: Double
+  ): String = js.native
   def rgba(firstValue: Double, secondValue: Double): String = js.native
+  def rgba(
+    firstValue: Double,
+    secondValue: Double,
+    thirdValue: js.UndefOr[scala.Nothing],
+    fourthValue: Double
+  ): String = js.native
   def rgba(firstValue: Double, secondValue: Double, thirdValue: Double): String = js.native
   def rgba(firstValue: Double, secondValue: Double, thirdValue: Double, fourthValue: Double): String = js.native
   def rgba(firstValue: RgbaColor): String = js.native
+  def rgba(
+    firstValue: RgbaColor,
+    secondValue: js.UndefOr[scala.Nothing],
+    thirdValue: js.UndefOr[scala.Nothing],
+    fourthValue: Double
+  ): String = js.native
+  def rgba(firstValue: RgbaColor, secondValue: js.UndefOr[scala.Nothing], thirdValue: Double): String = js.native
+  def rgba(
+    firstValue: RgbaColor,
+    secondValue: js.UndefOr[scala.Nothing],
+    thirdValue: Double,
+    fourthValue: Double
+  ): String = js.native
   def rgba(firstValue: RgbaColor, secondValue: Double): String = js.native
+  def rgba(
+    firstValue: RgbaColor,
+    secondValue: Double,
+    thirdValue: js.UndefOr[scala.Nothing],
+    fourthValue: Double
+  ): String = js.native
   def rgba(firstValue: RgbaColor, secondValue: Double, thirdValue: Double): String = js.native
   def rgba(firstValue: RgbaColor, secondValue: Double, thirdValue: Double, fourthValue: Double): String = js.native
   def saturate(amount: String): js.Function1[/* color */ String, String] = js.native

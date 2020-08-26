@@ -4,7 +4,7 @@ import typings.electron.electronStrings.dark
 import typings.electron.electronStrings.light
 import typings.electron.electronStrings.system
 import typings.electron.electronStrings.updated
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait NativeTheme extends EventEmitter {
   val shouldUseInvertedColorScheme: Boolean = js.native
   /**
     * A `String` property that can be `system`, `light` or `dark`.  It is used to
-    * override and supercede the value that Chromium has chosen to use internally.
+    * override and supersede the value that Chromium has chosen to use internally.
     *
     * Setting this property to `system` will remove the override and everything will
     * be reset to the OS default.  By default `themeSource` is `system`.

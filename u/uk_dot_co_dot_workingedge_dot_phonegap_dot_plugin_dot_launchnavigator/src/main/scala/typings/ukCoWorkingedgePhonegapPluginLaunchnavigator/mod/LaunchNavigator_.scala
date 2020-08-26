@@ -73,6 +73,7 @@ trait LaunchNavigator_ extends js.Object {
     errorCallback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
   def logEvent(name: String): Unit = js.native
+  def logEvent(name: String, params: js.UndefOr[scala.Nothing], valueToSum: Double): Unit = js.native
   def logEvent(name: String, params: js.Any): Unit = js.native
   def logEvent(name: String, params: js.Any, valueToSum: Double): Unit = js.native
   /**

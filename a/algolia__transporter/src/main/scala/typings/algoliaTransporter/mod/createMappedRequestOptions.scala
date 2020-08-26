@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createMappedRequestOptions extends js.Object {
   def apply(): MappedRequestOptions = js.native
+  def apply(requestOptions: js.UndefOr[scala.Nothing], timeout: Double): MappedRequestOptions = js.native
   def apply(requestOptions: RequestOptions): MappedRequestOptions = js.native
   def apply(requestOptions: RequestOptions, timeout: Double): MappedRequestOptions = js.native
 }

@@ -46,7 +46,38 @@ class SVGRenderer protected ()
     */
   def this(container: HTMLDOMElement, width: Double, height: Double) = this()
   def this(container: HTMLDOMElement, width: Double, height: Double, style: CSSObject) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: js.UndefOr[scala.Nothing],
+    forExport: Boolean
+  ) = this()
   def this(container: HTMLDOMElement, width: Double, height: Double, style: CSSObject, forExport: Boolean) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: js.UndefOr[scala.Nothing],
+    forExport: js.UndefOr[scala.Nothing],
+    allowHTML: Boolean
+  ) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: js.UndefOr[scala.Nothing],
+    forExport: Boolean,
+    allowHTML: Boolean
+  ) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: CSSObject,
+    forExport: js.UndefOr[scala.Nothing],
+    allowHTML: Boolean
+  ) = this()
   def this(
     container: HTMLDOMElement,
     width: Double,
@@ -54,6 +85,69 @@ class SVGRenderer protected ()
     style: CSSObject,
     forExport: Boolean,
     allowHTML: Boolean
+  ) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: js.UndefOr[scala.Nothing],
+    forExport: js.UndefOr[scala.Nothing],
+    allowHTML: js.UndefOr[scala.Nothing],
+    styledMode: Boolean
+  ) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: js.UndefOr[scala.Nothing],
+    forExport: js.UndefOr[scala.Nothing],
+    allowHTML: Boolean,
+    styledMode: Boolean
+  ) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: js.UndefOr[scala.Nothing],
+    forExport: Boolean,
+    allowHTML: js.UndefOr[scala.Nothing],
+    styledMode: Boolean
+  ) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: js.UndefOr[scala.Nothing],
+    forExport: Boolean,
+    allowHTML: Boolean,
+    styledMode: Boolean
+  ) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: CSSObject,
+    forExport: js.UndefOr[scala.Nothing],
+    allowHTML: js.UndefOr[scala.Nothing],
+    styledMode: Boolean
+  ) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: CSSObject,
+    forExport: js.UndefOr[scala.Nothing],
+    allowHTML: Boolean,
+    styledMode: Boolean
+  ) = this()
+  def this(
+    container: HTMLDOMElement,
+    width: Double,
+    height: Double,
+    style: CSSObject,
+    forExport: Boolean,
+    allowHTML: js.UndefOr[scala.Nothing],
+    styledMode: Boolean
   ) = this()
   def this(
     container: HTMLDOMElement,

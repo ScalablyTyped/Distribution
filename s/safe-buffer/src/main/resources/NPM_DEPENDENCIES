@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "safe-buffer" : "5.1.2"
+      "safe-buffer" : "5.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "safe-buffer" : "5.1.2"
+      "safe-buffer" : "5.2.1"
     }
   ],
   "compile-devDependencies" : [

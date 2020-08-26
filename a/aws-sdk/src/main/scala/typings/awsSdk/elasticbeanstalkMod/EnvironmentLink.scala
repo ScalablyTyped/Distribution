@@ -18,11 +18,30 @@ trait EnvironmentLink extends js.Object {
 
 object EnvironmentLink {
   @scala.inline
-  def apply(EnvironmentName: String = null, LinkName: String = null): EnvironmentLink = {
+  def apply(): EnvironmentLink = {
     val __obj = js.Dynamic.literal()
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (LinkName != null) __obj.updateDynamic("LinkName")(LinkName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentLink]
   }
+  @scala.inline
+  implicit class EnvironmentLinkOps[Self <: EnvironmentLink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnvironmentName(value: String): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    @scala.inline
+    def setLinkName(value: String): Self = this.set("LinkName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkName: Self = this.set("LinkName", js.undefined)
+  }
+  
 }
 

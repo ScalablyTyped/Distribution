@@ -17,10 +17,28 @@ trait SchemaModifyContactGroupMembersResponse extends js.Object {
 
 object SchemaModifyContactGroupMembersResponse {
   @scala.inline
-  def apply(notFoundResourceNames: js.Array[String] = null): SchemaModifyContactGroupMembersResponse = {
+  def apply(): SchemaModifyContactGroupMembersResponse = {
     val __obj = js.Dynamic.literal()
-    if (notFoundResourceNames != null) __obj.updateDynamic("notFoundResourceNames")(notFoundResourceNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaModifyContactGroupMembersResponse]
   }
+  @scala.inline
+  implicit class SchemaModifyContactGroupMembersResponseOps[Self <: SchemaModifyContactGroupMembersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotFoundResourceNamesVarargs(value: String*): Self = this.set("notFoundResourceNames", js.Array(value :_*))
+    @scala.inline
+    def setNotFoundResourceNames(value: js.Array[String]): Self = this.set("notFoundResourceNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotFoundResourceNames: Self = this.set("notFoundResourceNames", js.undefined)
+  }
+  
 }
 

@@ -18,7 +18,7 @@ object templatesMod extends js.Object {
   
   @js.native
   class Template[T] () extends Resource {
-    var template: js.UndefOr[js.Any] = js.native
+    var template: js.Any = js.native
     def getTemplate(): TemplateDelegate[T] = js.native
     def render(context: js.Any): String = js.native
     def render(context: js.Any, options: RuntimeOptions): String = js.native

@@ -22,5 +22,24 @@ object UnassignPrivateIpAddressesRequest {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any], PrivateIpAddresses = PrivateIpAddresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnassignPrivateIpAddressesRequest]
   }
+  @scala.inline
+  implicit class UnassignPrivateIpAddressesRequestOps[Self <: UnassignPrivateIpAddressesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrivateIpAddressesVarargs(value: String*): Self = this.set("PrivateIpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setPrivateIpAddresses(value: PrivateIpAddressStringList): Self = this.set("PrivateIpAddresses", value.asInstanceOf[js.Any])
+  }
+  
 }
 

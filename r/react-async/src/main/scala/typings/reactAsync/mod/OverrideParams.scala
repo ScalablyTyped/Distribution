@@ -13,58 +13,105 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  resource ? :std.RequestInfo} & std.Partial<std.RequestInit> */
+/* Inlined {  resource :std.RequestInfo | undefined} & std.Partial<std.RequestInit> */
+@js.native
 trait OverrideParams extends js.Object {
-  var body: js.UndefOr[BodyInit] = js.undefined
-  var cache: js.UndefOr[RequestCache] = js.undefined
-  var credentials: js.UndefOr[RequestCredentials] = js.undefined
-  var headers: js.UndefOr[HeadersInit] = js.undefined
-  var integrity: js.UndefOr[String] = js.undefined
-  var keepalive: js.UndefOr[Boolean] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
-  var mode: js.UndefOr[RequestMode] = js.undefined
-  var redirect: js.UndefOr[RequestRedirect] = js.undefined
-  var referrer: js.UndefOr[String] = js.undefined
-  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
-  var resource: js.UndefOr[RequestInfo] = js.undefined
-  var signal: js.UndefOr[AbortSignal] = js.undefined
-  var window: js.UndefOr[js.Any] = js.undefined
+  var body: js.UndefOr[BodyInit | Null] = js.native
+  var cache: js.UndefOr[RequestCache] = js.native
+  var credentials: js.UndefOr[RequestCredentials] = js.native
+  var headers: js.UndefOr[HeadersInit] = js.native
+  var integrity: js.UndefOr[String] = js.native
+  var keepalive: js.UndefOr[Boolean] = js.native
+  var method: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[RequestMode] = js.native
+  var redirect: js.UndefOr[RequestRedirect] = js.native
+  var referrer: js.UndefOr[String] = js.native
+  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.native
+  var resource: js.UndefOr[RequestInfo] = js.native
+  var signal: js.UndefOr[AbortSignal | Null] = js.native
+  var window: js.UndefOr[js.Any] = js.native
 }
 
 object OverrideParams {
   @scala.inline
-  def apply(
-    body: BodyInit = null,
-    cache: RequestCache = null,
-    credentials: RequestCredentials = null,
-    headers: HeadersInit = null,
-    integrity: String = null,
-    keepalive: js.UndefOr[Boolean] = js.undefined,
-    method: String = null,
-    mode: RequestMode = null,
-    redirect: RequestRedirect = null,
-    referrer: String = null,
-    referrerPolicy: ReferrerPolicy = null,
-    resource: RequestInfo = null,
-    signal: AbortSignal = null,
-    window: js.Any = null
-  ): OverrideParams = {
+  def apply(): OverrideParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverrideParams]
   }
+  @scala.inline
+  implicit class OverrideParamsOps[Self <: OverrideParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: BodyInit): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setBodyNull: Self = this.set("body", null)
+    @scala.inline
+    def setCache(value: RequestCache): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setCredentials(value: RequestCredentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    @scala.inline
+    def setHeadersVarargs(value: js.Array[String]*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: HeadersInit): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setIntegrity(value: String): Self = this.set("integrity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrity: Self = this.set("integrity", js.undefined)
+    @scala.inline
+    def setKeepalive(value: Boolean): Self = this.set("keepalive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepalive: Self = this.set("keepalive", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setMode(value: RequestMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setRedirect(value: RequestRedirect): Self = this.set("redirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirect: Self = this.set("redirect", js.undefined)
+    @scala.inline
+    def setReferrer(value: String): Self = this.set("referrer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferrer: Self = this.set("referrer", js.undefined)
+    @scala.inline
+    def setReferrerPolicy(value: ReferrerPolicy): Self = this.set("referrerPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferrerPolicy: Self = this.set("referrerPolicy", js.undefined)
+    @scala.inline
+    def setResource(value: RequestInfo): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignal: Self = this.set("signal", js.undefined)
+    @scala.inline
+    def setSignalNull: Self = this.set("signal", null)
+    @scala.inline
+    def setWindow(value: js.Any): Self = this.set("window", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindow: Self = this.set("window", js.undefined)
+  }
+  
 }
 

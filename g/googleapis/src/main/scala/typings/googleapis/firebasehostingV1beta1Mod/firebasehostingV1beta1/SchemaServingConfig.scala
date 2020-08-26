@@ -43,22 +43,52 @@ trait SchemaServingConfig extends js.Object {
 
 object SchemaServingConfig {
   @scala.inline
-  def apply(
-    appAssociation: String = null,
-    cleanUrls: js.UndefOr[Boolean] = js.undefined,
-    headers: js.Array[SchemaHeader] = null,
-    redirects: js.Array[SchemaRedirect] = null,
-    rewrites: js.Array[SchemaRewrite] = null,
-    trailingSlashBehavior: String = null
-  ): SchemaServingConfig = {
+  def apply(): SchemaServingConfig = {
     val __obj = js.Dynamic.literal()
-    if (appAssociation != null) __obj.updateDynamic("appAssociation")(appAssociation.asInstanceOf[js.Any])
-    if (!js.isUndefined(cleanUrls)) __obj.updateDynamic("cleanUrls")(cleanUrls.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (redirects != null) __obj.updateDynamic("redirects")(redirects.asInstanceOf[js.Any])
-    if (rewrites != null) __obj.updateDynamic("rewrites")(rewrites.asInstanceOf[js.Any])
-    if (trailingSlashBehavior != null) __obj.updateDynamic("trailingSlashBehavior")(trailingSlashBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServingConfig]
   }
+  @scala.inline
+  implicit class SchemaServingConfigOps[Self <: SchemaServingConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppAssociation(value: String): Self = this.set("appAssociation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppAssociation: Self = this.set("appAssociation", js.undefined)
+    @scala.inline
+    def setCleanUrls(value: Boolean): Self = this.set("cleanUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCleanUrls: Self = this.set("cleanUrls", js.undefined)
+    @scala.inline
+    def setHeadersVarargs(value: SchemaHeader*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: js.Array[SchemaHeader]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setRedirectsVarargs(value: SchemaRedirect*): Self = this.set("redirects", js.Array(value :_*))
+    @scala.inline
+    def setRedirects(value: js.Array[SchemaRedirect]): Self = this.set("redirects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirects: Self = this.set("redirects", js.undefined)
+    @scala.inline
+    def setRewritesVarargs(value: SchemaRewrite*): Self = this.set("rewrites", js.Array(value :_*))
+    @scala.inline
+    def setRewrites(value: js.Array[SchemaRewrite]): Self = this.set("rewrites", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRewrites: Self = this.set("rewrites", js.undefined)
+    @scala.inline
+    def setTrailingSlashBehavior(value: String): Self = this.set("trailingSlashBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrailingSlashBehavior: Self = this.set("trailingSlashBehavior", js.undefined)
+  }
+  
 }
 

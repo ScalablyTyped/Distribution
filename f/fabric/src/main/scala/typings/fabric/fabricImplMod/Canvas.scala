@@ -19,13 +19,13 @@ import scala.scalajs.js.annotation._
 - typings.fabric.fabricImplMod.IStaticCanvasOptions because Already inherited
 - typings.fabric.fabricImplMod.ICanvasOptions because var conflicts: allowTouchScrolling, backgroundColor, backgroundImage, backgroundVpt, clipPath, clipTo, controlsAboveOverlay, enableRetinaScaling, imageSmoothingEnabled, includeDefaultValues, overlayColor, overlayImage, overlayVpt, renderOnAddRemove, skipOffscreen, stateful, svgViewportTransformation, viewportTransform, vptCoords. Inlined uniScaleTransform, uniScaleKey, centeredScaling, centeredRotation, fill, centeredKey, altActionKey, interactive, selection, selectionKey, altSelectionKey, selectionColor, selectionDashArray, selectionBorderColor, selectionLineWidth, selectionFullyContained, hoverCursor, moveCursor, defaultCursor, freeDrawingCursor, rotationCursor, notAllowedCursor, containerClass, perPixelTargetFind, targetFindTolerance, skipTargetFind, isDrawingMode, preserveObjectStacking, snapAngle, snapThreshold, stopContextMenu, fireRightClick, fireMiddleClick, targets, width, height */ @JSImport("fabric/fabric-impl", "Canvas")
 @js.native
+/**
+  * Constructor
+  * @param element <canvas> element to initialize instance on
+  * @param [options] Options object
+  */
 class Canvas () extends StaticCanvas {
   def this(element: String) = this()
-  /**
-    * Constructor
-    * @param element <canvas> element to initialize instance on
-    * @param [options] Options object
-    */
   def this(element: HTMLCanvasElement) = this()
   def this(element: String, options: ICanvasOptions) = this()
   def this(element: Null, options: ICanvasOptions) = this()
@@ -294,13 +294,22 @@ class Canvas () extends StaticCanvas {
     */
   def _setActiveObject(`object`: Object): Boolean = js.native
   def _setActiveObject(`object`: Object, e: Event): Boolean = js.native
+  def _setObjectScale(
+    localMouse: Point,
+    transform: js.Any,
+    lockScalingX: Boolean,
+    lockScalingY: Boolean,
+    by: js.UndefOr[scala.Nothing],
+    lockScalingFlip: Boolean,
+    _dim: Point
+  ): Boolean = js.native
   @JSName("_setObjectScale")
   def _setObjectScale_equally(
     localMouse: Point,
     transform: js.Any,
     lockScalingX: Boolean,
     lockScalingY: Boolean,
-    by: js.UndefOr[equally],
+    by: equally,
     lockScalingFlip: Boolean,
     _dim: Point
   ): Boolean = js.native
@@ -314,7 +323,7 @@ class Canvas () extends StaticCanvas {
     transform: js.Any,
     lockScalingX: Boolean,
     lockScalingY: Boolean,
-    by: js.UndefOr[x],
+    by: x,
     lockScalingFlip: Boolean,
     _dim: Point
   ): Boolean = js.native
@@ -324,7 +333,7 @@ class Canvas () extends StaticCanvas {
     transform: js.Any,
     lockScalingX: Boolean,
     lockScalingY: Boolean,
-    by: js.UndefOr[y],
+    by: y,
     lockScalingFlip: Boolean,
     _dim: Point
   ): Boolean = js.native

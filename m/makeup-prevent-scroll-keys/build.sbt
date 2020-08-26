@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "makeup-prevent-scroll-keys"
-version := "0.0-dt-20181023Z-c98d24"
-scalaVersion := "2.13.2"
+version := "0.0-dt-20181023Z-40345b"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

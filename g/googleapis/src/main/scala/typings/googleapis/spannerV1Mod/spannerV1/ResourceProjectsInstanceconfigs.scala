@@ -27,6 +27,7 @@ class ResourceProjectsInstanceconfigs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInstanceConfig] = js.native
   def get(callback: BodyResponseCallback[SchemaInstanceConfig]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceConfig] = js.native
   def get(params: ParamsResourceProjectsInstanceconfigsGet): GaxiosPromise[SchemaInstanceConfig] = js.native
   def get(
     params: ParamsResourceProjectsInstanceconfigsGet,
@@ -59,6 +60,7 @@ class ResourceProjectsInstanceconfigs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListInstanceConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListInstanceConfigsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListInstanceConfigsResponse] = js.native
   def list(params: ParamsResourceProjectsInstanceconfigsList): GaxiosPromise[SchemaListInstanceConfigsResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstanceconfigsList,

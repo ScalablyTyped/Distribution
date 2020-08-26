@@ -1,7 +1,7 @@
 
 # Scala.js typings for zen-observable-ts
 
-Typings are for version 0.8.20
+Typings are for version 0.8.21
 
 ## Library description:
 An Implementation of ES Observables in Typescript

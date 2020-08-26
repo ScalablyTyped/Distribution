@@ -54,6 +54,13 @@ class dxSurveyService () extends js.Object {
     postId: String,
     result: JSON,
     onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit],
+    clientId: js.UndefOr[scala.Nothing],
+    isPartialCompleted: Boolean
+  ): Unit = js.native
+  def sendResult(
+    postId: String,
+    result: JSON,
+    onSendResult: js.Function3[/* success */ Boolean, /* response */ js.Any, /* request */ js.UndefOr[js.Any], Unit],
     clientId: String
   ): Unit = js.native
   def sendResult(

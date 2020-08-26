@@ -41,6 +41,9 @@ object mod extends js.Object {
     extends typings.builderUtilRuntime.httpExecutorMod.DigestTransform {
     def this(expected: String) = this()
     def this(expected: String, algorithm: String) = this()
+    def this(expected: String, algorithm: js.UndefOr[scala.Nothing], encoding: base64) = this()
+    def this(expected: String, algorithm: js.UndefOr[scala.Nothing], encoding: hex) = this()
+    def this(expected: String, algorithm: js.UndefOr[scala.Nothing], encoding: latin1) = this()
     def this(expected: String, algorithm: String, encoding: base64) = this()
     def this(expected: String, algorithm: String, encoding: hex) = this()
     def this(expected: String, algorithm: String, encoding: latin1) = this()
@@ -51,6 +54,7 @@ object mod extends js.Object {
     extends typings.builderUtilRuntime.httpExecutorMod.HttpError {
     def this(statusCode: Double) = this()
     def this(statusCode: Double, message: String) = this()
+    def this(statusCode: Double, message: js.UndefOr[scala.Nothing], description: js.Any) = this()
     def this(statusCode: Double, message: String, description: js.Any) = this()
   }
   
@@ -90,13 +94,19 @@ object mod extends js.Object {
   def configureRequestOptions(options: RequestOptions, token: String): RequestOptions = js.native
   def configureRequestOptionsFromUrl(url: String, options: RequestOptions): RequestOptions = js.native
   @JSName("configureRequestOptions")
+  def configureRequestOptions_DELETE(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: DELETE): RequestOptions = js.native
+  @JSName("configureRequestOptions")
   def configureRequestOptions_DELETE(options: RequestOptions, token: String, method: DELETE): RequestOptions = js.native
   @JSName("configureRequestOptions")
   def configureRequestOptions_DELETE(options: RequestOptions, token: Null, method: DELETE): RequestOptions = js.native
   @JSName("configureRequestOptions")
+  def configureRequestOptions_GET(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: GET): RequestOptions = js.native
+  @JSName("configureRequestOptions")
   def configureRequestOptions_GET(options: RequestOptions, token: String, method: GET): RequestOptions = js.native
   @JSName("configureRequestOptions")
   def configureRequestOptions_GET(options: RequestOptions, token: Null, method: GET): RequestOptions = js.native
+  @JSName("configureRequestOptions")
+  def configureRequestOptions_PUT(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: PUT): RequestOptions = js.native
   @JSName("configureRequestOptions")
   def configureRequestOptions_PUT(options: RequestOptions, token: String, method: PUT): RequestOptions = js.native
   @JSName("configureRequestOptions")

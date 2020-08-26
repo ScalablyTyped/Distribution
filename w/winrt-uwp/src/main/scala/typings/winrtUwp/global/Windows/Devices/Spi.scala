@@ -1,8 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices
 
 import typings.winrtUwp.Windows.Devices.Spi.Provider.ISpiProvider
-import typings.winrtUwp.Windows.Devices.Spi.SpiMode
-import typings.winrtUwp.Windows.Devices.Spi.SpiSharingMode
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
@@ -16,20 +14,7 @@ object Spi extends js.Object {
   /** Represents the info about a SPI bus. */
   @js.native
   abstract class SpiBusInfo ()
-    extends typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo {
-    /** Gets the number of chip select lines available on the bus. */
-    /* CompleteClass */
-    override var chipSelectLineCount: Double = js.native
-    /** Maximum clock cycle frequency of the bus. */
-    /* CompleteClass */
-    override var maxClockFrequency: Double = js.native
-    /** Minimum clock cycle frequency of the bus. */
-    /* CompleteClass */
-    override var minClockFrequency: Double = js.native
-    /** Gets the bit lengths that can be used on the bus for transmitting data. */
-    /* CompleteClass */
-    override var supportedDataBitLengths: IVectorView[Double] = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo
   
   /** Represents the settings for the connection with a device. */
   @js.native
@@ -40,94 +25,24 @@ object Spi extends js.Object {
       * @param chipSelectLine The chip select line on which the connection will be made.
       */
     def this(chipSelectLine: Double) = this()
-    /** Gets or sets the chip select line for the connection to the SPI device. */
-    /* CompleteClass */
-    override var chipSelectLine: Double = js.native
-    /** Gets or sets the clock frequency for the connection. */
-    /* CompleteClass */
-    override var clockFrequency: Double = js.native
-    /** Gets or sets the bit length for data on this connection. */
-    /* CompleteClass */
-    override var dataBitLength: Double = js.native
-    /** Gets or sets the SpiMode for this connection. */
-    /* CompleteClass */
-    override var mode: SpiMode = js.native
-    /** Gets or sets the sharing mode for the SPI connection. */
-    /* CompleteClass */
-    override var sharingMode: SpiSharingMode = js.native
   }
   
   /** Represents the SPI controller on the system. */
   @js.native
   abstract class SpiController ()
-    extends typings.winrtUwp.Windows.Devices.Spi.SpiController {
-    /**
-      * Gets the SPI device with the specified settings.
-      * @param settings The desired connection settings.
-      * @return The SPI device.
-      */
-    /* CompleteClass */
-    override def getDevice(settings: typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings): typings.winrtUwp.Windows.Devices.Spi.SpiDevice = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Spi.SpiController
   
   /** Represents a device connected through the SPI bus. */
   @js.native
   abstract class SpiDevice ()
-    extends typings.winrtUwp.Windows.Devices.Spi.SpiDevice {
-    /** Gets the connection settings for the device. */
-    /* CompleteClass */
-    override var connectionSettings: typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings = js.native
-    /** Gets the unique ID associated with the device. */
-    /* CompleteClass */
-    override var deviceId: String = js.native
-    /** Closes the connection to the device. */
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /**
-      * Reads from the connected device.
-      * @return Array containing data read from the device.
-      */
-    /* CompleteClass */
-    override def read(): js.Array[Double] = js.native
-    /**
-      * Transfer data using a full duplex communication system. Full duplex allows both the master and the slave to communicate simultaneously.
-      * @param writeBuffer Array containing data to write to the device.
-      * @return Array containing data read from the device.
-      */
-    /* CompleteClass */
-    override def transferFullDuplex(writeBuffer: js.Array[Double]): js.Array[Double] = js.native
-    /**
-      * Transfer data sequentially to the device.
-      * @param writeBuffer Array containing data to write to the device.
-      * @return Array containing data read from the device.
-      */
-    /* CompleteClass */
-    override def transferSequential(writeBuffer: js.Array[Double]): js.Array[Double] = js.native
-    /**
-      * Writes to the connected device.
-      * @param buffer Array containing the data to write to the device.
-      */
-    /* CompleteClass */
-    override def write(buffer: js.Array[Double]): Unit = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Spi.SpiDevice
   
   /** This API exposes a Provider interface and associated classes for the user to implement for a specific controller. The SPI API needs a SPI Provider implementation to talk to the SPI controller. */
   @js.native
   object Provider extends js.Object {
     @js.native
     abstract class ProviderSpiConnectionSettings ()
-      extends typings.winrtUwp.Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings {
-      /* CompleteClass */
-      override var chipSelectLine: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var clockFrequency: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var dataBitLength: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var mode: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var sharingMode: js.Any = js.native
-    }
+      extends typings.winrtUwp.Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings
     
     @js.native
     object ProviderSpiMode extends js.Object {

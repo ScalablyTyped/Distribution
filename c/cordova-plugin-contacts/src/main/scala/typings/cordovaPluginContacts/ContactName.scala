@@ -5,39 +5,64 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains different kinds of information about a Contact object's name. */
+@js.native
 trait ContactName extends js.Object {
   /** The contact's family name. */
-  var familyName: js.UndefOr[String] = js.undefined
+  var familyName: js.UndefOr[String] = js.native
   /** The complete name of the contact. */
-  var formatted: js.UndefOr[String] = js.undefined
+  var formatted: js.UndefOr[String] = js.native
   /** The contact's given name. */
-  var givenName: js.UndefOr[String] = js.undefined
+  var givenName: js.UndefOr[String] = js.native
   /** The contact's prefix (example Mr. or Dr.) */
-  var honorificPrefix: js.UndefOr[String] = js.undefined
+  var honorificPrefix: js.UndefOr[String] = js.native
   /** The contact's suffix (example Esq.). */
-  var honorificSuffix: js.UndefOr[String] = js.undefined
+  var honorificSuffix: js.UndefOr[String] = js.native
   /** The contact's middle name. */
-  var middleName: js.UndefOr[String] = js.undefined
+  var middleName: js.UndefOr[String] = js.native
 }
 
 object ContactName {
   @scala.inline
-  def apply(
-    familyName: String = null,
-    formatted: String = null,
-    givenName: String = null,
-    honorificPrefix: String = null,
-    honorificSuffix: String = null,
-    middleName: String = null
-  ): ContactName = {
+  def apply(): ContactName = {
     val __obj = js.Dynamic.literal()
-    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
-    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
-    if (honorificPrefix != null) __obj.updateDynamic("honorificPrefix")(honorificPrefix.asInstanceOf[js.Any])
-    if (honorificSuffix != null) __obj.updateDynamic("honorificSuffix")(honorificSuffix.asInstanceOf[js.Any])
-    if (middleName != null) __obj.updateDynamic("middleName")(middleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactName]
   }
+  @scala.inline
+  implicit class ContactNameOps[Self <: ContactName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamilyName: Self = this.set("familyName", js.undefined)
+    @scala.inline
+    def setFormatted(value: String): Self = this.set("formatted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatted: Self = this.set("formatted", js.undefined)
+    @scala.inline
+    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    @scala.inline
+    def setHonorificPrefix(value: String): Self = this.set("honorificPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHonorificPrefix: Self = this.set("honorificPrefix", js.undefined)
+    @scala.inline
+    def setHonorificSuffix(value: String): Self = this.set("honorificSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHonorificSuffix: Self = this.set("honorificSuffix", js.undefined)
+    @scala.inline
+    def setMiddleName(value: String): Self = this.set("middleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiddleName: Self = this.set("middleName", js.undefined)
+  }
+  
 }
 

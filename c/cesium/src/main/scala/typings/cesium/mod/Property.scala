@@ -12,6 +12,7 @@ abstract class Property () extends js.Object {
   def equals(): Boolean = js.native
   def equals(other: Property): Boolean = js.native
   def getValue(): js.Any = js.native
+  def getValue(time: js.UndefOr[scala.Nothing], result: js.Any): js.Any = js.native
   def getValue(time: JulianDate): js.Any = js.native
   def getValue(time: JulianDate, result: js.Any): js.Any = js.native
 }

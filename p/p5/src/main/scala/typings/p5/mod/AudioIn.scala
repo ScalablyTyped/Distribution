@@ -80,6 +80,7 @@ trait AudioIn extends js.Object {
     *   enumerateDevices() method
     */
   def getSources(): js.Promise[_] = js.native
+  def getSources(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def getSources(successCallback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
   def getSources(
     successCallback: js.Function1[/* repeated */ js.Any, _],
@@ -117,6 +118,7 @@ trait AudioIn extends js.Object {
     *   do not support getUserMedia.
     */
   def start(): Unit = js.native
+  def start(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
   def start(successCallback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
   def start(
     successCallback: js.Function1[/* repeated */ js.Any, _],

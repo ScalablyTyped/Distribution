@@ -18,11 +18,32 @@ trait GetResourcesOutput extends js.Object {
 
 object GetResourcesOutput {
   @scala.inline
-  def apply(PaginationToken: PaginationToken = null, ResourceTagMappingList: ResourceTagMappingList = null): GetResourcesOutput = {
+  def apply(): GetResourcesOutput = {
     val __obj = js.Dynamic.literal()
-    if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken.asInstanceOf[js.Any])
-    if (ResourceTagMappingList != null) __obj.updateDynamic("ResourceTagMappingList")(ResourceTagMappingList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcesOutput]
   }
+  @scala.inline
+  implicit class GetResourcesOutputOps[Self <: GetResourcesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPaginationToken(value: PaginationToken): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+    @scala.inline
+    def setResourceTagMappingListVarargs(value: ResourceTagMapping*): Self = this.set("ResourceTagMappingList", js.Array(value :_*))
+    @scala.inline
+    def setResourceTagMappingList(value: ResourceTagMappingList): Self = this.set("ResourceTagMappingList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTagMappingList: Self = this.set("ResourceTagMappingList", js.undefined)
+  }
+  
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the FormatProtection object, for use in `formatProtection.set({ ... })`. */
+@js.native
 trait FormatProtectionUpdateData extends js.Object {
   /**
     *
@@ -12,23 +13,42 @@ trait FormatProtectionUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var formulaHidden: js.UndefOr[Boolean] = js.undefined
+  var formulaHidden: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
     *
     * [Api set: ExcelApi 1.2]
     */
-  var locked: js.UndefOr[Boolean] = js.undefined
+  var locked: js.UndefOr[Boolean] = js.native
 }
 
 object FormatProtectionUpdateData {
   @scala.inline
-  def apply(formulaHidden: js.UndefOr[Boolean] = js.undefined, locked: js.UndefOr[Boolean] = js.undefined): FormatProtectionUpdateData = {
+  def apply(): FormatProtectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatProtectionUpdateData]
   }
+  @scala.inline
+  implicit class FormatProtectionUpdateDataOps[Self <: FormatProtectionUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormulaHidden(value: Boolean): Self = this.set("formulaHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormulaHidden: Self = this.set("formulaHidden", js.undefined)
+    @scala.inline
+    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocked: Self = this.set("locked", js.undefined)
+  }
+  
 }
 

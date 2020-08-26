@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/DataChart", "DataChart")
+@JSImport("grommet/es6/components/DataChart", "DataChart")
 @js.native
 object DataChart extends TopLevel[FC[DataChartProps]]
 

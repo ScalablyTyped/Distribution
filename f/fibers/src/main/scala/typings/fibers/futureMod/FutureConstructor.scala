@@ -41,6 +41,7 @@ trait FutureConstructor
     */
   def wait(futures: FutureOrFutureArray*): Unit = js.native
   def wrap[O /* <: js.Object */](fnOrObject: O): FutureObject[O] = js.native
+  def wrap[O /* <: js.Object */](fnOrObject: O, multi: js.UndefOr[scala.Nothing], suffix: String): FutureObject[O] = js.native
   def wrap[O /* <: js.Object */](fnOrObject: O, multi: Boolean): FutureObject[O] = js.native
   def wrap[O /* <: js.Object */](fnOrObject: O, multi: Boolean, suffix: String): FutureObject[O] = js.native
   /**
@@ -63,6 +64,11 @@ trait FutureConstructor
     * Example usage: Future.wrap(asyncFunction)(arg1).wait()
     */
   def wrap[T](fnOrObject: js.Function1[/* repeated */ js.Any, T]): FutureFunction[T] = js.native
+  def wrap[T](
+    fnOrObject: js.Function1[/* repeated */ js.Any, T],
+    multi: js.UndefOr[scala.Nothing],
+    suffix: String
+  ): FutureFunction[T] = js.native
   def wrap[T](fnOrObject: js.Function1[/* repeated */ js.Any, T], multi: Boolean): FutureFunction[T] = js.native
   def wrap[T](fnOrObject: js.Function1[/* repeated */ js.Any, T], multi: Boolean, suffix: String): FutureFunction[T] = js.native
 }

@@ -93,42 +93,86 @@ trait SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest extends js.Object {
 
 object SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest {
   @scala.inline
-  def apply(
-    appId: String = null,
-    authFlowType: String = null,
-    clientId: String = null,
-    context: String = null,
-    continueUri: String = null,
-    customParameter: StringDictionary[String] = null,
-    hostedDomain: String = null,
-    identifier: String = null,
-    oauthConsumerKey: String = null,
-    oauthScope: String = null,
-    openidRealm: String = null,
-    otaApp: String = null,
-    providerId: String = null,
-    sessionId: String = null,
-    tenantId: String = null,
-    tenantProjectNumber: String = null
-  ): SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest = {
+  def apply(): SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (authFlowType != null) __obj.updateDynamic("authFlowType")(authFlowType.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (continueUri != null) __obj.updateDynamic("continueUri")(continueUri.asInstanceOf[js.Any])
-    if (customParameter != null) __obj.updateDynamic("customParameter")(customParameter.asInstanceOf[js.Any])
-    if (hostedDomain != null) __obj.updateDynamic("hostedDomain")(hostedDomain.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (oauthConsumerKey != null) __obj.updateDynamic("oauthConsumerKey")(oauthConsumerKey.asInstanceOf[js.Any])
-    if (oauthScope != null) __obj.updateDynamic("oauthScope")(oauthScope.asInstanceOf[js.Any])
-    if (openidRealm != null) __obj.updateDynamic("openidRealm")(openidRealm.asInstanceOf[js.Any])
-    if (otaApp != null) __obj.updateDynamic("otaApp")(otaApp.asInstanceOf[js.Any])
-    if (providerId != null) __obj.updateDynamic("providerId")(providerId.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
-    if (tenantProjectNumber != null) __obj.updateDynamic("tenantProjectNumber")(tenantProjectNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest]
   }
+  @scala.inline
+  implicit class SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequestOps[Self <: SchemaIdentitytoolkitRelyingpartyCreateAuthUriRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("appId", js.undefined)
+    @scala.inline
+    def setAuthFlowType(value: String): Self = this.set("authFlowType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthFlowType: Self = this.set("authFlowType", js.undefined)
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setContinueUri(value: String): Self = this.set("continueUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinueUri: Self = this.set("continueUri", js.undefined)
+    @scala.inline
+    def setCustomParameter(value: StringDictionary[String]): Self = this.set("customParameter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomParameter: Self = this.set("customParameter", js.undefined)
+    @scala.inline
+    def setHostedDomain(value: String): Self = this.set("hostedDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedDomain: Self = this.set("hostedDomain", js.undefined)
+    @scala.inline
+    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setOauthConsumerKey(value: String): Self = this.set("oauthConsumerKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthConsumerKey: Self = this.set("oauthConsumerKey", js.undefined)
+    @scala.inline
+    def setOauthScope(value: String): Self = this.set("oauthScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthScope: Self = this.set("oauthScope", js.undefined)
+    @scala.inline
+    def setOpenidRealm(value: String): Self = this.set("openidRealm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenidRealm: Self = this.set("openidRealm", js.undefined)
+    @scala.inline
+    def setOtaApp(value: String): Self = this.set("otaApp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtaApp: Self = this.set("otaApp", js.undefined)
+    @scala.inline
+    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderId: Self = this.set("providerId", js.undefined)
+    @scala.inline
+    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    @scala.inline
+    def setTenantId(value: String): Self = this.set("tenantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenantId: Self = this.set("tenantId", js.undefined)
+    @scala.inline
+    def setTenantProjectNumber(value: String): Self = this.set("tenantProjectNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenantProjectNumber: Self = this.set("tenantProjectNumber", js.undefined)
+  }
+  
 }
 

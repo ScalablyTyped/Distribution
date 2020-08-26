@@ -6,93 +6,132 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BackgroundClipMerging extends js.Object {
   /**
     * Controls background-clip merging into shorthand; defaults to `true`
     */
-  var backgroundClipMerging: js.UndefOr[Boolean] = js.undefined
+  var backgroundClipMerging: js.UndefOr[Boolean] = js.native
   /**
     * Controls background-origin merging into shorthand; defaults to `true`
     */
-  var backgroundOriginMerging: js.UndefOr[Boolean] = js.undefined
+  var backgroundOriginMerging: js.UndefOr[Boolean] = js.native
   /**
     * Controls background-size merging into shorthand; defaults to `true`
     */
-  var backgroundSizeMerging: js.UndefOr[Boolean] = js.undefined
+  var backgroundSizeMerging: js.UndefOr[Boolean] = js.native
   /**
     * controls color optimizations; defaults to `true`
     */
-  var colors: js.UndefOr[Boolean] = js.undefined
+  var colors: js.UndefOr[Boolean] = js.native
   /**
     * Controls keeping IE bang hack; defaults to `false`
     */
-  var ieBangHack: js.UndefOr[Boolean] = js.undefined
+  var ieBangHack: js.UndefOr[Boolean] = js.native
   /**
     * Controls keeping IE `filter` / `-ms-filter`; defaults to `false`
     */
-  var ieFilters: js.UndefOr[Boolean] = js.undefined
+  var ieFilters: js.UndefOr[Boolean] = js.native
   /**
     * Controls keeping IE prefix hack; defaults to `false`
     */
-  var iePrefixHack: js.UndefOr[Boolean] = js.undefined
+  var iePrefixHack: js.UndefOr[Boolean] = js.native
   /**
     * Controls keeping IE suffix hack; defaults to `false`
     */
-  var ieSuffixHack: js.UndefOr[Boolean] = js.undefined
+  var ieSuffixHack: js.UndefOr[Boolean] = js.native
   /**
     * Controls property merging based on understandably; defaults to `true`
     */
-  var merging: js.UndefOr[Boolean] = js.undefined
+  var merging: js.UndefOr[Boolean] = js.native
   /**
     * Controls shortening pixel units into `pc`, `pt`, or `in` units; defaults to `false`
     */
-  var shorterLengthUnits: js.UndefOr[`false`] = js.undefined
+  var shorterLengthUnits: js.UndefOr[`false`] = js.native
   /**
     * Controls keeping space after closing brace - `url() no-repeat` into `url()no-repeat`; defaults to `true`
     */
-  var spaceAfterClosingBrace: js.UndefOr[`true`] = js.undefined
+  var spaceAfterClosingBrace: js.UndefOr[`true`] = js.native
   /**
     * Controls keeping quoting inside `url()`; defaults to `false`
     */
-  var urlQuotes: js.UndefOr[Boolean] = js.undefined
+  var urlQuotes: js.UndefOr[Boolean] = js.native
   /**
     * Controls removal of units `0` value; defaults to `true`
     */
-  var zeroUnits: js.UndefOr[Boolean] = js.undefined
+  var zeroUnits: js.UndefOr[Boolean] = js.native
 }
 
 object BackgroundClipMerging {
   @scala.inline
-  def apply(
-    backgroundClipMerging: js.UndefOr[Boolean] = js.undefined,
-    backgroundOriginMerging: js.UndefOr[Boolean] = js.undefined,
-    backgroundSizeMerging: js.UndefOr[Boolean] = js.undefined,
-    colors: js.UndefOr[Boolean] = js.undefined,
-    ieBangHack: js.UndefOr[Boolean] = js.undefined,
-    ieFilters: js.UndefOr[Boolean] = js.undefined,
-    iePrefixHack: js.UndefOr[Boolean] = js.undefined,
-    ieSuffixHack: js.UndefOr[Boolean] = js.undefined,
-    merging: js.UndefOr[Boolean] = js.undefined,
-    shorterLengthUnits: `false` = null,
-    spaceAfterClosingBrace: `true` = null,
-    urlQuotes: js.UndefOr[Boolean] = js.undefined,
-    zeroUnits: js.UndefOr[Boolean] = js.undefined
-  ): BackgroundClipMerging = {
+  def apply(): BackgroundClipMerging = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backgroundClipMerging)) __obj.updateDynamic("backgroundClipMerging")(backgroundClipMerging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundOriginMerging)) __obj.updateDynamic("backgroundOriginMerging")(backgroundOriginMerging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundSizeMerging)) __obj.updateDynamic("backgroundSizeMerging")(backgroundSizeMerging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ieBangHack)) __obj.updateDynamic("ieBangHack")(ieBangHack.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ieFilters)) __obj.updateDynamic("ieFilters")(ieFilters.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iePrefixHack)) __obj.updateDynamic("iePrefixHack")(iePrefixHack.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ieSuffixHack)) __obj.updateDynamic("ieSuffixHack")(ieSuffixHack.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(merging)) __obj.updateDynamic("merging")(merging.get.asInstanceOf[js.Any])
-    if (shorterLengthUnits != null) __obj.updateDynamic("shorterLengthUnits")(shorterLengthUnits.asInstanceOf[js.Any])
-    if (spaceAfterClosingBrace != null) __obj.updateDynamic("spaceAfterClosingBrace")(spaceAfterClosingBrace.asInstanceOf[js.Any])
-    if (!js.isUndefined(urlQuotes)) __obj.updateDynamic("urlQuotes")(urlQuotes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zeroUnits)) __obj.updateDynamic("zeroUnits")(zeroUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundClipMerging]
   }
+  @scala.inline
+  implicit class BackgroundClipMergingOps[Self <: BackgroundClipMerging] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundClipMerging(value: Boolean): Self = this.set("backgroundClipMerging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundClipMerging: Self = this.set("backgroundClipMerging", js.undefined)
+    @scala.inline
+    def setBackgroundOriginMerging(value: Boolean): Self = this.set("backgroundOriginMerging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundOriginMerging: Self = this.set("backgroundOriginMerging", js.undefined)
+    @scala.inline
+    def setBackgroundSizeMerging(value: Boolean): Self = this.set("backgroundSizeMerging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundSizeMerging: Self = this.set("backgroundSizeMerging", js.undefined)
+    @scala.inline
+    def setColors(value: Boolean): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setIeBangHack(value: Boolean): Self = this.set("ieBangHack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIeBangHack: Self = this.set("ieBangHack", js.undefined)
+    @scala.inline
+    def setIeFilters(value: Boolean): Self = this.set("ieFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIeFilters: Self = this.set("ieFilters", js.undefined)
+    @scala.inline
+    def setIePrefixHack(value: Boolean): Self = this.set("iePrefixHack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIePrefixHack: Self = this.set("iePrefixHack", js.undefined)
+    @scala.inline
+    def setIeSuffixHack(value: Boolean): Self = this.set("ieSuffixHack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIeSuffixHack: Self = this.set("ieSuffixHack", js.undefined)
+    @scala.inline
+    def setMerging(value: Boolean): Self = this.set("merging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerging: Self = this.set("merging", js.undefined)
+    @scala.inline
+    def setShorterLengthUnits(value: `false`): Self = this.set("shorterLengthUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShorterLengthUnits: Self = this.set("shorterLengthUnits", js.undefined)
+    @scala.inline
+    def setSpaceAfterClosingBrace(value: `true`): Self = this.set("spaceAfterClosingBrace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpaceAfterClosingBrace: Self = this.set("spaceAfterClosingBrace", js.undefined)
+    @scala.inline
+    def setUrlQuotes(value: Boolean): Self = this.set("urlQuotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlQuotes: Self = this.set("urlQuotes", js.undefined)
+    @scala.inline
+    def setZeroUnits(value: Boolean): Self = this.set("zeroUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZeroUnits: Self = this.set("zeroUnits", js.undefined)
+  }
+  
 }
 

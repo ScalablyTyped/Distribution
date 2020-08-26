@@ -33,12 +33,36 @@ trait SchemaNamedRange extends js.Object {
 
 object SchemaNamedRange {
   @scala.inline
-  def apply(name: String = null, namedRangeId: String = null, ranges: js.Array[SchemaRange] = null): SchemaNamedRange = {
+  def apply(): SchemaNamedRange = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNamedRange]
   }
+  @scala.inline
+  implicit class SchemaNamedRangeOps[Self <: SchemaNamedRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamedRangeId(value: String): Self = this.set("namedRangeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedRangeId: Self = this.set("namedRangeId", js.undefined)
+    @scala.inline
+    def setRangesVarargs(value: SchemaRange*): Self = this.set("ranges", js.Array(value :_*))
+    @scala.inline
+    def setRanges(value: js.Array[SchemaRange]): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRanges: Self = this.set("ranges", js.undefined)
+  }
+  
 }
 

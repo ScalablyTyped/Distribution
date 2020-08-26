@@ -22,6 +22,7 @@ class TimeIntervalCollection () extends js.Object {
   def addInterval(interval: TimeInterval, dataComparer: DataComparer): Unit = js.native
   def contains(julianDate: JulianDate): Boolean = js.native
   def equals(): Boolean = js.native
+  def equals(right: js.UndefOr[scala.Nothing], dataComparer: DataComparer): Boolean = js.native
   def equals(right: TimeIntervalCollection): Boolean = js.native
   def equals(right: TimeIntervalCollection, dataComparer: DataComparer): Boolean = js.native
   def findDataForIntervalContainingDate(date: JulianDate): js.Any = js.native
@@ -31,6 +32,11 @@ class TimeIntervalCollection () extends js.Object {
   def get(index: Double): TimeInterval = js.native
   def indexOf(date: JulianDate): Double = js.native
   def intersect(other: TimeIntervalCollection): TimeIntervalCollection = js.native
+  def intersect(
+    other: TimeIntervalCollection,
+    dataComparer: js.UndefOr[scala.Nothing],
+    mergeCallback: MergeCallback
+  ): TimeIntervalCollection = js.native
   def intersect(other: TimeIntervalCollection, dataComparer: DataComparer): TimeIntervalCollection = js.native
   def intersect(other: TimeIntervalCollection, dataComparer: DataComparer, mergeCallback: MergeCallback): TimeIntervalCollection = js.native
   def removeAll(): Unit = js.native

@@ -14,10 +14,26 @@ trait DescribeEntitiesDetectionV2JobResponse extends js.Object {
 
 object DescribeEntitiesDetectionV2JobResponse {
   @scala.inline
-  def apply(ComprehendMedicalAsyncJobProperties: ComprehendMedicalAsyncJobProperties = null): DescribeEntitiesDetectionV2JobResponse = {
+  def apply(): DescribeEntitiesDetectionV2JobResponse = {
     val __obj = js.Dynamic.literal()
-    if (ComprehendMedicalAsyncJobProperties != null) __obj.updateDynamic("ComprehendMedicalAsyncJobProperties")(ComprehendMedicalAsyncJobProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEntitiesDetectionV2JobResponse]
   }
+  @scala.inline
+  implicit class DescribeEntitiesDetectionV2JobResponseOps[Self <: DescribeEntitiesDetectionV2JobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComprehendMedicalAsyncJobProperties(value: ComprehendMedicalAsyncJobProperties): Self = this.set("ComprehendMedicalAsyncJobProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComprehendMedicalAsyncJobProperties: Self = this.set("ComprehendMedicalAsyncJobProperties", js.undefined)
+  }
+  
 }
 

@@ -30,18 +30,38 @@ trait SchemaGoogleCloudMlV1BuiltInAlgorithmOutput extends js.Object {
 
 object SchemaGoogleCloudMlV1BuiltInAlgorithmOutput {
   @scala.inline
-  def apply(
-    framework: String = null,
-    modelPath: String = null,
-    pythonVersion: String = null,
-    runtimeVersion: String = null
-  ): SchemaGoogleCloudMlV1BuiltInAlgorithmOutput = {
+  def apply(): SchemaGoogleCloudMlV1BuiltInAlgorithmOutput = {
     val __obj = js.Dynamic.literal()
-    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
-    if (modelPath != null) __obj.updateDynamic("modelPath")(modelPath.asInstanceOf[js.Any])
-    if (pythonVersion != null) __obj.updateDynamic("pythonVersion")(pythonVersion.asInstanceOf[js.Any])
-    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1BuiltInAlgorithmOutput]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1BuiltInAlgorithmOutputOps[Self <: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFramework(value: String): Self = this.set("framework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramework: Self = this.set("framework", js.undefined)
+    @scala.inline
+    def setModelPath(value: String): Self = this.set("modelPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelPath: Self = this.set("modelPath", js.undefined)
+    @scala.inline
+    def setPythonVersion(value: String): Self = this.set("pythonVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePythonVersion: Self = this.set("pythonVersion", js.undefined)
+    @scala.inline
+    def setRuntimeVersion(value: String): Self = this.set("runtimeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeVersion: Self = this.set("runtimeVersion", js.undefined)
+  }
+  
 }
 

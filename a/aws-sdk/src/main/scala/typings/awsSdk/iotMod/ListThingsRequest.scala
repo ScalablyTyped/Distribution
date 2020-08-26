@@ -30,20 +30,42 @@ trait ListThingsRequest extends js.Object {
 
 object ListThingsRequest {
   @scala.inline
-  def apply(
-    attributeName: AttributeName = null,
-    attributeValue: AttributeValue = null,
-    maxResults: js.UndefOr[RegistryMaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    thingTypeName: ThingTypeName = null
-  ): ListThingsRequest = {
+  def apply(): ListThingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
-    if (attributeValue != null) __obj.updateDynamic("attributeValue")(attributeValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThingsRequest]
   }
+  @scala.inline
+  implicit class ListThingsRequestOps[Self <: ListThingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: AttributeName): Self = this.set("attributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeName: Self = this.set("attributeName", js.undefined)
+    @scala.inline
+    def setAttributeValue(value: AttributeValue): Self = this.set("attributeValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeValue: Self = this.set("attributeValue", js.undefined)
+    @scala.inline
+    def setMaxResults(value: RegistryMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
+  }
+  
 }
 

@@ -5,28 +5,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InlineQueryResultCachedSticker
   extends InlineQueryResultBase
      with InlineQueryResult {
-  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
-  var sticker_file_id: String
-  var `type`: sticker
+  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var sticker_file_id: String = js.native
+  var `type`: sticker = js.native
 }
 
 object InlineQueryResultCachedSticker {
   @scala.inline
-  def apply(
-    id: String,
-    sticker_file_id: String,
-    `type`: sticker,
-    input_message_content: InputMessageContent = null,
-    reply_markup: InlineKeyboardMarkup = null
-  ): InlineQueryResultCachedSticker = {
+  def apply(id: String, sticker_file_id: String, `type`: sticker): InlineQueryResultCachedSticker = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sticker_file_id = sticker_file_id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultCachedSticker]
   }
+  @scala.inline
+  implicit class InlineQueryResultCachedStickerOps[Self <: InlineQueryResultCachedSticker] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSticker_file_id(value: String): Self = this.set("sticker_file_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: sticker): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInput_message_content(value: InputMessageContent): Self = this.set("input_message_content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput_message_content: Self = this.set("input_message_content", js.undefined)
+  }
+  
 }
 

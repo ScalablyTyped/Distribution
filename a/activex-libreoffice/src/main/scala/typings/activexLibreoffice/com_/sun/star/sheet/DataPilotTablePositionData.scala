@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.DataPiotTableHeaderData
   * @since OOo 3.0
   */
+@js.native
 trait DataPilotTablePositionData extends js.Object {
   /**
     * This member contains a structure of different types depending on the position type specified in {@link PositionType} member.
@@ -26,13 +27,13 @@ trait DataPilotTablePositionData extends js.Object {
     * @see com.sun.star.sheet.DataPiotTableResultData
     * @see com.sun.star.sheet.DataPiotTableHeaderData
     */
-  var PositionData: js.Any
+  var PositionData: js.Any = js.native
   /**
     * This parameter specifies which sub-area of a DataPilot table a given cell is positioned. See {@link DataPilotTablePositionType} for how to interpret
     * the value of this parameter.
     * @see com.sun.star.sheet.DataPilotTablePositionType
     */
-  var PositionType: Double
+  var PositionType: Double = js.native
 }
 
 object DataPilotTablePositionData {
@@ -41,5 +42,22 @@ object DataPilotTablePositionData {
     val __obj = js.Dynamic.literal(PositionData = PositionData.asInstanceOf[js.Any], PositionType = PositionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPilotTablePositionData]
   }
+  @scala.inline
+  implicit class DataPilotTablePositionDataOps[Self <: DataPilotTablePositionData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPositionData(value: js.Any): Self = this.set("PositionData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPositionType(value: Double): Self = this.set("PositionType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

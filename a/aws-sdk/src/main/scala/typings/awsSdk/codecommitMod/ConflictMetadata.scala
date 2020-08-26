@@ -50,30 +50,62 @@ trait ConflictMetadata extends js.Object {
 
 object ConflictMetadata {
   @scala.inline
-  def apply(
-    contentConflict: js.UndefOr[IsContentConflict] = js.undefined,
-    fileModeConflict: js.UndefOr[IsFileModeConflict] = js.undefined,
-    fileModes: FileModes = null,
-    filePath: Path = null,
-    fileSizes: FileSizes = null,
-    isBinaryFile: IsBinaryFile = null,
-    mergeOperations: MergeOperations = null,
-    numberOfConflicts: js.UndefOr[NumberOfConflicts] = js.undefined,
-    objectTypeConflict: js.UndefOr[IsObjectTypeConflict] = js.undefined,
-    objectTypes: ObjectTypes = null
-  ): ConflictMetadata = {
+  def apply(): ConflictMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contentConflict)) __obj.updateDynamic("contentConflict")(contentConflict.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fileModeConflict)) __obj.updateDynamic("fileModeConflict")(fileModeConflict.get.asInstanceOf[js.Any])
-    if (fileModes != null) __obj.updateDynamic("fileModes")(fileModes.asInstanceOf[js.Any])
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
-    if (fileSizes != null) __obj.updateDynamic("fileSizes")(fileSizes.asInstanceOf[js.Any])
-    if (isBinaryFile != null) __obj.updateDynamic("isBinaryFile")(isBinaryFile.asInstanceOf[js.Any])
-    if (mergeOperations != null) __obj.updateDynamic("mergeOperations")(mergeOperations.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfConflicts)) __obj.updateDynamic("numberOfConflicts")(numberOfConflicts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectTypeConflict)) __obj.updateDynamic("objectTypeConflict")(objectTypeConflict.get.asInstanceOf[js.Any])
-    if (objectTypes != null) __obj.updateDynamic("objectTypes")(objectTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConflictMetadata]
   }
+  @scala.inline
+  implicit class ConflictMetadataOps[Self <: ConflictMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentConflict(value: IsContentConflict): Self = this.set("contentConflict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentConflict: Self = this.set("contentConflict", js.undefined)
+    @scala.inline
+    def setFileModeConflict(value: IsFileModeConflict): Self = this.set("fileModeConflict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileModeConflict: Self = this.set("fileModeConflict", js.undefined)
+    @scala.inline
+    def setFileModes(value: FileModes): Self = this.set("fileModes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileModes: Self = this.set("fileModes", js.undefined)
+    @scala.inline
+    def setFilePath(value: Path): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    @scala.inline
+    def setFileSizes(value: FileSizes): Self = this.set("fileSizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSizes: Self = this.set("fileSizes", js.undefined)
+    @scala.inline
+    def setIsBinaryFile(value: IsBinaryFile): Self = this.set("isBinaryFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsBinaryFile: Self = this.set("isBinaryFile", js.undefined)
+    @scala.inline
+    def setMergeOperations(value: MergeOperations): Self = this.set("mergeOperations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeOperations: Self = this.set("mergeOperations", js.undefined)
+    @scala.inline
+    def setNumberOfConflicts(value: NumberOfConflicts): Self = this.set("numberOfConflicts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfConflicts: Self = this.set("numberOfConflicts", js.undefined)
+    @scala.inline
+    def setObjectTypeConflict(value: IsObjectTypeConflict): Self = this.set("objectTypeConflict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectTypeConflict: Self = this.set("objectTypeConflict", js.undefined)
+    @scala.inline
+    def setObjectTypes(value: ObjectTypes): Self = this.set("objectTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectTypes: Self = this.set("objectTypes", js.undefined)
+  }
+  
 }
 

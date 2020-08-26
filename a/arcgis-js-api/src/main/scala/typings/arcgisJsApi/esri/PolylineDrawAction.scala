@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PolylineDrawAction extends DrawAction {
   /**
-    * The drawing mode. It is only relevant when the action is first created. Its value cannot be changed during the action lifecycle.  **Possible Values:**
+    * The drawing mode. It is only relevant when the action is first created. Its value cannot be changed during the action lifecycle.  **Possible Values**
     *
     * Value | Description |
     * ----- | ----------- |

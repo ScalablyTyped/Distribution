@@ -14,10 +14,28 @@ trait GetComplianceSummaryByResourceTypeRequest extends js.Object {
 
 object GetComplianceSummaryByResourceTypeRequest {
   @scala.inline
-  def apply(ResourceTypes: ResourceTypes = null): GetComplianceSummaryByResourceTypeRequest = {
+  def apply(): GetComplianceSummaryByResourceTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (ResourceTypes != null) __obj.updateDynamic("ResourceTypes")(ResourceTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetComplianceSummaryByResourceTypeRequest]
   }
+  @scala.inline
+  implicit class GetComplianceSummaryByResourceTypeRequestOps[Self <: GetComplianceSummaryByResourceTypeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceTypesVarargs(value: StringWithCharLimit256*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypes(value: ResourceTypes): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+  }
+  
 }
 

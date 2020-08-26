@@ -29,11 +29,30 @@ trait SchemaInsertPageBreakRequest extends js.Object {
 
 object SchemaInsertPageBreakRequest {
   @scala.inline
-  def apply(endOfSegmentLocation: SchemaEndOfSegmentLocation = null, location: SchemaLocation = null): SchemaInsertPageBreakRequest = {
+  def apply(): SchemaInsertPageBreakRequest = {
     val __obj = js.Dynamic.literal()
-    if (endOfSegmentLocation != null) __obj.updateDynamic("endOfSegmentLocation")(endOfSegmentLocation.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInsertPageBreakRequest]
   }
+  @scala.inline
+  implicit class SchemaInsertPageBreakRequestOps[Self <: SchemaInsertPageBreakRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndOfSegmentLocation(value: SchemaEndOfSegmentLocation): Self = this.set("endOfSegmentLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOfSegmentLocation: Self = this.set("endOfSegmentLocation", js.undefined)
+    @scala.inline
+    def setLocation(value: SchemaLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+  }
+  
 }
 

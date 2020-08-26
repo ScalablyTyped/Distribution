@@ -13,6 +13,11 @@ object appInfoMod extends js.Object {
   class AppInfo protected () extends js.Object {
     def this(info: Packager) = this()
     def this(info: Packager, buildVersion: String) = this()
+    def this(
+      info: Packager,
+      buildVersion: js.UndefOr[scala.Nothing],
+      platformSpecificOptions: PlatformSpecificBuildOptions
+    ) = this()
     def this(info: Packager, buildVersion: String, platformSpecificOptions: PlatformSpecificBuildOptions) = this()
     def this(info: Packager, buildVersion: Null, platformSpecificOptions: PlatformSpecificBuildOptions) = this()
     val buildNumber: js.UndefOr[String] = js.native

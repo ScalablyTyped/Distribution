@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSMappedType
   extends Node
      with TSType {
-  var optional: Boolean | Null
-  var readonly: Boolean | Null
-  var typeAnnotation: TSType | Null
-  var typeParameter: TypeParameter_
+  var optional: Boolean | Null = js.native
+  var readonly: Boolean | Null = js.native
+  var typeAnnotation: TSType | Null = js.native
+  var typeParameter: TypeParameter_ = js.native
   @JSName("type")
-  var type_TSMappedType: typings.babelTypes.babelTypesStrings.TSMappedType
+  var type_TSMappedType: typings.babelTypes.babelTypesStrings.TSMappedType = js.native
 }
 
 @JSImport("babel-types", "TSMappedType")

@@ -11,12 +11,13 @@ import scala.scalajs.js.annotation._
 class Optimization ()
   extends typings.webpackChain.mod._Config.TypedChainedMap[Config, js.Any] {
   def concatenateModules(value: Boolean): this.type = js.native
-  /* CompleteClass */
-  override def end(): Config = js.native
   def flagIncludedChunks(value: Boolean): this.type = js.native
   def mergeDuplicateChunks(value: Boolean): this.type = js.native
   def minimize(value: Boolean): this.type = js.native
-  def minimizer(name: String): Plugin[this.type, typings.webpack.mod.Plugin] = js.native
+  def minimizer(name: String): Plugin[
+    this.type, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ _
+  ] = js.native
   def namedChunks(value: Boolean): this.type = js.native
   def namedModules(value: Boolean): this.type = js.native
   def noEmitOnErrors(value: Boolean): this.type = js.native

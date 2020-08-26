@@ -21,6 +21,7 @@ class SmsPreferences protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: SmsPreferencesArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: SmsPreferencesArgs, opts: CustomResourceOptions) = this()
   /**
     * A string, such as your business brand, that is displayed as the sender on the receiving device.
@@ -59,8 +60,10 @@ object SmsPreferences extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): SmsPreferences = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SmsPreferences = js.native
   def get(name: String, id: Input[ID], state: SmsPreferencesState): SmsPreferences = js.native
   def get(name: String, id: Input[ID], state: SmsPreferencesState, opts: CustomResourceOptions): SmsPreferences = js.native
   /**

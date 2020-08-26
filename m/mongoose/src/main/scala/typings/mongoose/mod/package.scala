@@ -11,20 +11,19 @@ package object mod {
   type CreateQuery[D] = typings.mongoose.mod.CreateDocumentDefinition[D] | (typings.mongodb.mod.OptionalId[
     typings.mongoose.mod.CreateDocumentDefinition[D] with typings.mongoose.anon.IdAny
   ]) | (typings.mongoose.anon.Id with (typings.std.Record[java.lang.String, _]))
+  type DeepCreateObjectTransformer[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ V in keyof mongoose.mongoose.NonFunctionProperties<mongoose.mongoose.OmitReadonly<T>> ]: T[V] extends object | undefined? mongoose.mongoose.ImplicitMongooseConversions<mongoose.mongoose.DeepCreateTransformer<std.NonNullable<T[V]>>> : mongoose.mongoose.ImplicitMongooseConversions<T[V]>}
+    */ typings.mongoose.mongooseStrings.DeepCreateObjectTransformer with org.scalablytyped.runtime.TopLevel[js.Any])
+  // removes functions from schema from all levels
+  type DeepCreateTransformer[T] = typings.mongoose.mod.DeepCreateObjectTransformer[T] | (js.Array[
+    typings.mongoose.mod.DeepCreateObjectTransformer[js.Any] | (js.Tuple2[js.Any, js.Any])
+  ]) | (org.scalablytyped.runtime.StringDictionary[
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongoose.mongoose.DeepCreateTransformer<KV> */ js.Object
+  ]) | (typings.std.Map[js.Any, js.Any])
   // mongoose allows Map<K, V> to be specified either as a Map or a Record<K, V>
   type DeepMapAsObject[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K] extends std.Map<infer KM, infer KV> | undefined? any extends string? std.Map<any, / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongoose.mongoose.DeepMapAsObject<KV> * / object> | std.Record<any, / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongoose.mongoose.DeepMapAsObject<KV> * / object> | std.Array<[any, / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongoose.mongoose.DeepMapAsObject<KV> * / object]> : never : T[K] extends object | undefined? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongoose.mongoose.DeepMapAsObject<T[K]> * / object : T[K]}
     */ typings.mongoose.mongooseStrings.DeepMapAsObject with org.scalablytyped.runtime.TopLevel[js.Any])
-  // used to exclude functions from all levels of the schema
-  type DeepNonFunctionProperties[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ V in keyof mongoose.mongoose.NonFunctionProperties<mongoose.mongoose.OmitReadonly<T>> ]: T[V] extends object | undefined? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongoose.mongoose.DeepNonFunctionProperties<std.NonNullable<T[V]>> * / object : T[V]}
-    */ typings.mongoose.mongooseStrings.DeepNonFunctionProperties with org.scalablytyped.runtime.TopLevel[js.Any]) | (js.Array[
-    (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ V in keyof mongoose.mongoose.NonFunctionProperties<mongoose.mongoose.OmitReadonly<any>> ]: any[V] extends object | undefined? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongoose.mongoose.DeepNonFunctionProperties<std.NonNullable<U[V]>> * / object : any[V]}
-    */ typings.mongoose.mongooseStrings.DeepNonFunctionProperties with org.scalablytyped.runtime.TopLevel[js.Any]) | (js.Tuple2[js.Any, js.Any])
-  ]) | (org.scalablytyped.runtime.StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongoose.mongoose.DeepNonFunctionProperties<KV> */ js.Object
-  ]) | (typings.std.Map[js.Any, js.Any])
   /* Helper type to extract a definition type from a Document type */
   type DocumentDefinition[T] = typings.mongoose.mod.Omit[
     T, 
@@ -53,6 +52,8 @@ package object mod {
     js.Promise[js.Any] | scala.Unit
   ]
   type IfEquals[X, Y, A, B] = B | A
+  type ImplicitMongooseConversions[T] = T | java.lang.String | scala.Double
+  type MongooseBuiltIns = typings.mongodb.mod.ObjectID_ | typings.mongodb.mod.Decimal128 | typings.std.Date | scala.Double | scala.Boolean
   type MongooseFilterQuery[T] = typings.mongoose.mongooseStrings.MongooseFilterQuery with org.scalablytyped.runtime.TopLevel[js.Any] with typings.mongodb.mod.RootQuerySelector[T]
   type MongooseUpdateQuery[S] = typings.mongodb.mod.UpdateQuery[S] with typings.mongodb.mod.MatchKeysAndValues[S]
   /*
@@ -88,7 +89,7 @@ package object mod {
     typings.mongoose.mod.SchemaTypeOpts[js.Any] | typings.mongoose.mod.Schema[js.Any] | typings.mongoose.mod.SchemaType
   ]
   type SchemaTypeOpts[T] = typings.mongoose.mod.SchemaTypeOpts_[T]
-  type ScrubCreateDefinition[T] = typings.mongoose.mod.DeepMapAsObject[typings.mongoose.mod.DeepNonFunctionProperties[T]]
+  type ScrubCreateDefinition[T] = typings.mongoose.mod.DeepMapAsObject[typings.mongoose.mod.DeepCreateTransformer[T]]
   type TagSet = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type UpdateQuery[D] = typings.mongoose.mod.MongooseUpdateQuery[typings.mongoose.mod.DocumentDefinition[D]]
 }

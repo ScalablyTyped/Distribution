@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-native-keychain"
-version := "4.0.5-777392"
-scalaVersion := "2.13.2"
+version := "6.1.1-89b04d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

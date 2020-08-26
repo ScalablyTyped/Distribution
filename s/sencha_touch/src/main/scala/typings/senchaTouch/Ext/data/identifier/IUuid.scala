@@ -1,104 +1,95 @@
 package typings.senchaTouch.Ext.data.identifier
 
-import typings.senchaTouch.Ext.Array
-import typings.senchaTouch.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IUuid extends ISimple {
   /** [Method] Returns the value of id
     * @returns Object
     */
-  var getId: js.UndefOr[js.Function0[_]] = js.undefined
+  var getId: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of version
     * @returns Number
     */
-  var getVersion: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getVersion: js.UndefOr[js.Function0[Double]] = js.native
   /** [Config Option] (Object) */
-  var id: js.UndefOr[js.Any] = js.undefined
+  var id: js.UndefOr[js.Any] = js.native
   /** [Method] Reconfigures this generator given new config properties
     * @param config Object
     */
-  var reconfigure: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var reconfigure: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Property] (Number/Object) */
-  var salt: js.UndefOr[js.Any] = js.undefined
+  var salt: js.UndefOr[js.Any] = js.native
   /** [Method] Sets the value of id
     * @param id Object The new value.
     */
-  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of version
     * @param version Number The new value.
     */
-  var setVersion: js.UndefOr[js.Function1[/* version */ js.UndefOr[Double], Unit]] = js.undefined
+  var setVersion: js.UndefOr[js.Function1[/* version */ js.UndefOr[Double], Unit]] = js.native
   /** [Property] (Number/Object) */
-  var timestamp: js.UndefOr[js.Any] = js.undefined
+  var timestamp: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number) */
-  var version: js.UndefOr[Double] = js.undefined
+  var version: js.UndefOr[Double] = js.native
 }
 
 object IUuid {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    extend: String = null,
-    getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getPrefix: () => String = null,
-    getVersion: () => Double = null,
-    id: js.Any = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    mixins: js.Any = null,
-    platformConfig: js.Any = null,
-    reconfigure: /* config */ js.UndefOr[js.Any] => Unit = null,
-    salt: js.Any = null,
-    self: IClass = null,
-    setId: /* id */ js.UndefOr[js.Any] => Unit = null,
-    setPrefix: /* prefix */ js.UndefOr[String] => Unit = null,
-    setVersion: /* version */ js.UndefOr[Double] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    timestamp: js.Any = null,
-    uses: Array = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): IUuid = {
+  def apply(): IUuid = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getPrefix != null) __obj.updateDynamic("getPrefix")(js.Any.fromFunction0(getPrefix))
-    if (getVersion != null) __obj.updateDynamic("getVersion")(js.Any.fromFunction0(getVersion))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (reconfigure != null) __obj.updateDynamic("reconfigure")(js.Any.fromFunction1(reconfigure))
-    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setId != null) __obj.updateDynamic("setId")(js.Any.fromFunction1(setId))
-    if (setPrefix != null) __obj.updateDynamic("setPrefix")(js.Any.fromFunction1(setPrefix))
-    if (setVersion != null) __obj.updateDynamic("setVersion")(js.Any.fromFunction1(setVersion))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUuid]
   }
+  @scala.inline
+  implicit class IUuidOps[Self <: IUuid] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetId(value: () => _): Self = this.set("getId", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetId: Self = this.set("getId", js.undefined)
+    @scala.inline
+    def setGetVersion(value: () => Double): Self = this.set("getVersion", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetVersion: Self = this.set("getVersion", js.undefined)
+    @scala.inline
+    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setReconfigure(value: /* config */ js.UndefOr[js.Any] => Unit): Self = this.set("reconfigure", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReconfigure: Self = this.set("reconfigure", js.undefined)
+    @scala.inline
+    def setSalt(value: js.Any): Self = this.set("salt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalt: Self = this.set("salt", js.undefined)
+    @scala.inline
+    def setSetId(value: /* id */ js.UndefOr[js.Any] => Unit): Self = this.set("setId", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetId: Self = this.set("setId", js.undefined)
+    @scala.inline
+    def setSetVersion(value: /* version */ js.UndefOr[Double] => Unit): Self = this.set("setVersion", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetVersion: Self = this.set("setVersion", js.undefined)
+    @scala.inline
+    def setTimestamp(value: js.Any): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

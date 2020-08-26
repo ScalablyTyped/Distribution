@@ -12,7 +12,7 @@ Return a copy of an object excluding the given key, or array of keys. Also accep
 | Keywords           | clear, delete, key, object, omit, property, remove, value |
 | # releases         | 0 |
 | # dependents       | 220 |
-| # downloads        | 252758589 |
+| # downloads        | 249442943 |
 | # stars            | 6 |
 
 ## Links

@@ -29,18 +29,38 @@ trait SchemaPartnerClaim extends js.Object {
 
 object SchemaPartnerClaim {
   @scala.inline
-  def apply(
-    customerId: String = null,
-    deviceIdentifier: SchemaDeviceIdentifier = null,
-    deviceMetadata: SchemaDeviceMetadata = null,
-    sectionType: String = null
-  ): SchemaPartnerClaim = {
+  def apply(): SchemaPartnerClaim = {
     val __obj = js.Dynamic.literal()
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier.asInstanceOf[js.Any])
-    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata.asInstanceOf[js.Any])
-    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPartnerClaim]
   }
+  @scala.inline
+  implicit class SchemaPartnerClaimOps[Self <: SchemaPartnerClaim] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    @scala.inline
+    def setDeviceIdentifier(value: SchemaDeviceIdentifier): Self = this.set("deviceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceIdentifier: Self = this.set("deviceIdentifier", js.undefined)
+    @scala.inline
+    def setDeviceMetadata(value: SchemaDeviceMetadata): Self = this.set("deviceMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceMetadata: Self = this.set("deviceMetadata", js.undefined)
+    @scala.inline
+    def setSectionType(value: String): Self = this.set("sectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSectionType: Self = this.set("sectionType", js.undefined)
+  }
+  
 }
 

@@ -14,6 +14,7 @@ trait FunctionsModule extends js.Object {
   var HttpsErrorCode: typings.reactNativeFirebase.mod.RNFirebase.functions.HttpsErrorCode = js.native
   var nativeModuleExists: Boolean = js.native
   def apply(): Functions = js.native
+  def apply(appOrRegion: js.UndefOr[scala.Nothing], region: String): Functions = js.native
   def apply(appOrRegion: String): Functions = js.native
   def apply(appOrRegion: String, region: String): Functions = js.native
   def apply(appOrRegion: App): Functions = js.native

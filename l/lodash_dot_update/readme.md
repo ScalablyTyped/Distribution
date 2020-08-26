@@ -12,7 +12,7 @@ The lodash method `_.update` exported as a module.
 | Keywords           | lodash-modularized, update |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 217262 |
+| # downloads        | 227640 |
 | # stars            | 1 |
 
 ## Links

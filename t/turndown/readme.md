@@ -10,9 +10,9 @@ A library that converts HTML to Markdown
 | ------------------ | :-------------: |
 | Full name          | turndown |
 | Keywords           | converter, html, markdown |
-| # releases         | 7 |
-| # dependents       | 101 |
-| # downloads        | 1686472 |
+| # releases         | 5 |
+| # dependents       | 103 |
+| # downloads        | 1793964 |
 | # stars            | 0 |
 
 ## Links

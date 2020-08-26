@@ -80,6 +80,7 @@ object Stalker extends js.Object {
     * @param options Options to customize the instrumentation.
     */
   def follow(): Unit = js.native
+  def follow(threadId: js.UndefOr[scala.Nothing], options: StalkerOptions): Unit = js.native
   def follow(threadId: ThreadId): Unit = js.native
   def follow(threadId: ThreadId, options: StalkerOptions): Unit = js.native
   /**

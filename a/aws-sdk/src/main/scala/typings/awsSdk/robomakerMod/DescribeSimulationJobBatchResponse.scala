@@ -58,34 +58,76 @@ trait DescribeSimulationJobBatchResponse extends js.Object {
 
 object DescribeSimulationJobBatchResponse {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    batchPolicy: BatchPolicy = null,
-    clientRequestToken: ClientRequestToken = null,
-    createdAt: CreatedAt = null,
-    createdRequests: SimulationJobSummaries = null,
-    failedRequests: FailedCreateSimulationJobRequests = null,
-    failureCode: SimulationJobBatchErrorCode = null,
-    failureReason: GenericString = null,
-    lastUpdatedAt: LastUpdatedAt = null,
-    pendingRequests: CreateSimulationJobRequests = null,
-    status: SimulationJobBatchStatus = null,
-    tags: TagMap = null
-  ): DescribeSimulationJobBatchResponse = {
+  def apply(): DescribeSimulationJobBatchResponse = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (batchPolicy != null) __obj.updateDynamic("batchPolicy")(batchPolicy.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (createdRequests != null) __obj.updateDynamic("createdRequests")(createdRequests.asInstanceOf[js.Any])
-    if (failedRequests != null) __obj.updateDynamic("failedRequests")(failedRequests.asInstanceOf[js.Any])
-    if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (pendingRequests != null) __obj.updateDynamic("pendingRequests")(pendingRequests.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSimulationJobBatchResponse]
   }
+  @scala.inline
+  implicit class DescribeSimulationJobBatchResponseOps[Self <: DescribeSimulationJobBatchResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setBatchPolicy(value: BatchPolicy): Self = this.set("batchPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchPolicy: Self = this.set("batchPolicy", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: CreatedAt): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setCreatedRequestsVarargs(value: SimulationJobSummary*): Self = this.set("createdRequests", js.Array(value :_*))
+    @scala.inline
+    def setCreatedRequests(value: SimulationJobSummaries): Self = this.set("createdRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedRequests: Self = this.set("createdRequests", js.undefined)
+    @scala.inline
+    def setFailedRequestsVarargs(value: FailedCreateSimulationJobRequest*): Self = this.set("failedRequests", js.Array(value :_*))
+    @scala.inline
+    def setFailedRequests(value: FailedCreateSimulationJobRequests): Self = this.set("failedRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedRequests: Self = this.set("failedRequests", js.undefined)
+    @scala.inline
+    def setFailureCode(value: SimulationJobBatchErrorCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    @scala.inline
+    def setFailureReason(value: GenericString): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: LastUpdatedAt): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    @scala.inline
+    def setPendingRequestsVarargs(value: SimulationJobRequest*): Self = this.set("pendingRequests", js.Array(value :_*))
+    @scala.inline
+    def setPendingRequests(value: CreateSimulationJobRequests): Self = this.set("pendingRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingRequests: Self = this.set("pendingRequests", js.undefined)
+    @scala.inline
+    def setStatus(value: SimulationJobBatchStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

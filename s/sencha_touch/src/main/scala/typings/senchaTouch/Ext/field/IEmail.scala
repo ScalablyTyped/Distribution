@@ -4,13 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IEmail extends IText
 
 object IEmail {
   @scala.inline
-  def apply(IText: IText = null): IEmail = {
+  def apply(): IEmail = {
     val __obj = js.Dynamic.literal()
-    if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)
     __obj.asInstanceOf[IEmail]
   }
 }

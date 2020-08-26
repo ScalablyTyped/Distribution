@@ -38,24 +38,50 @@ trait CustomKeyStoresListEntry extends js.Object {
 
 object CustomKeyStoresListEntry {
   @scala.inline
-  def apply(
-    CloudHsmClusterId: CloudHsmClusterIdType = null,
-    ConnectionErrorCode: ConnectionErrorCodeType = null,
-    ConnectionState: ConnectionStateType = null,
-    CreationDate: DateType = null,
-    CustomKeyStoreId: CustomKeyStoreIdType = null,
-    CustomKeyStoreName: CustomKeyStoreNameType = null,
-    TrustAnchorCertificate: TrustAnchorCertificateType = null
-  ): CustomKeyStoresListEntry = {
+  def apply(): CustomKeyStoresListEntry = {
     val __obj = js.Dynamic.literal()
-    if (CloudHsmClusterId != null) __obj.updateDynamic("CloudHsmClusterId")(CloudHsmClusterId.asInstanceOf[js.Any])
-    if (ConnectionErrorCode != null) __obj.updateDynamic("ConnectionErrorCode")(ConnectionErrorCode.asInstanceOf[js.Any])
-    if (ConnectionState != null) __obj.updateDynamic("ConnectionState")(ConnectionState.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (CustomKeyStoreId != null) __obj.updateDynamic("CustomKeyStoreId")(CustomKeyStoreId.asInstanceOf[js.Any])
-    if (CustomKeyStoreName != null) __obj.updateDynamic("CustomKeyStoreName")(CustomKeyStoreName.asInstanceOf[js.Any])
-    if (TrustAnchorCertificate != null) __obj.updateDynamic("TrustAnchorCertificate")(TrustAnchorCertificate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomKeyStoresListEntry]
   }
+  @scala.inline
+  implicit class CustomKeyStoresListEntryOps[Self <: CustomKeyStoresListEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = this.set("CloudHsmClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudHsmClusterId: Self = this.set("CloudHsmClusterId", js.undefined)
+    @scala.inline
+    def setConnectionErrorCode(value: ConnectionErrorCodeType): Self = this.set("ConnectionErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionErrorCode: Self = this.set("ConnectionErrorCode", js.undefined)
+    @scala.inline
+    def setConnectionState(value: ConnectionStateType): Self = this.set("ConnectionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionState: Self = this.set("ConnectionState", js.undefined)
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = this.set("CustomKeyStoreId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomKeyStoreId: Self = this.set("CustomKeyStoreId", js.undefined)
+    @scala.inline
+    def setCustomKeyStoreName(value: CustomKeyStoreNameType): Self = this.set("CustomKeyStoreName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomKeyStoreName: Self = this.set("CustomKeyStoreName", js.undefined)
+    @scala.inline
+    def setTrustAnchorCertificate(value: TrustAnchorCertificateType): Self = this.set("TrustAnchorCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrustAnchorCertificate: Self = this.set("TrustAnchorCertificate", js.undefined)
+  }
+  
 }
 

@@ -5,27 +5,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Item extends js.Object {
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var itemId: js.UndefOr[String] = js.undefined
-  var subNav: js.UndefOr[js.Array[Item]] = js.undefined
-  var title: ReactNode
+  var disabled: js.UndefOr[Boolean] = js.native
+  var itemId: js.UndefOr[String] = js.native
+  var subNav: js.UndefOr[js.Array[Item]] = js.native
+  var title: ReactNode = js.native
 }
 
 object Item {
   @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    itemId: String = null,
-    subNav: js.Array[Item] = null,
-    title: ReactNode = null
-  ): Item = {
+  def apply(): Item = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (subNav != null) __obj.updateDynamic("subNav")(subNav.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
+  @scala.inline
+  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setItemId(value: String): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemId: Self = this.set("itemId", js.undefined)
+    @scala.inline
+    def setSubNavVarargs(value: Item*): Self = this.set("subNav", js.Array(value :_*))
+    @scala.inline
+    def setSubNav(value: js.Array[Item]): Self = this.set("subNav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubNav: Self = this.set("subNav", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

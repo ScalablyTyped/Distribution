@@ -47,8 +47,76 @@ trait Workbooks extends js.Object {
     CorruptLoad: js.UndefOr[XlCorruptLoad]
   ): Workbook = js.native
   def OpenDatabase(Filename: String): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: js.UndefOr[scala.Nothing],
+    CommandType: js.UndefOr[scala.Nothing],
+    BackgroundQuery: js.UndefOr[scala.Nothing],
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: js.UndefOr[scala.Nothing],
+    CommandType: js.UndefOr[scala.Nothing],
+    BackgroundQuery: Boolean
+  ): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: js.UndefOr[scala.Nothing],
+    CommandType: js.UndefOr[scala.Nothing],
+    BackgroundQuery: Boolean,
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
+  def OpenDatabase(Filename: String, CommandText: js.UndefOr[scala.Nothing], CommandType: XlCmdType): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: js.UndefOr[scala.Nothing],
+    CommandType: XlCmdType,
+    BackgroundQuery: js.UndefOr[scala.Nothing],
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: js.UndefOr[scala.Nothing],
+    CommandType: XlCmdType,
+    BackgroundQuery: Boolean
+  ): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: js.UndefOr[scala.Nothing],
+    CommandType: XlCmdType,
+    BackgroundQuery: Boolean,
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
   def OpenDatabase(Filename: String, CommandText: String): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: String,
+    CommandType: js.UndefOr[scala.Nothing],
+    BackgroundQuery: js.UndefOr[scala.Nothing],
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: String,
+    CommandType: js.UndefOr[scala.Nothing],
+    BackgroundQuery: Boolean
+  ): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: String,
+    CommandType: js.UndefOr[scala.Nothing],
+    BackgroundQuery: Boolean,
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
   def OpenDatabase(Filename: String, CommandText: String, CommandType: XlCmdType): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: String,
+    CommandType: XlCmdType,
+    BackgroundQuery: js.UndefOr[scala.Nothing],
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
   def OpenDatabase(Filename: String, CommandText: String, CommandType: XlCmdType, BackgroundQuery: Boolean): Workbook = js.native
   def OpenDatabase(
     Filename: String,
@@ -122,28 +190,11 @@ trait Workbooks extends js.Object {
     Local: js.UndefOr[Boolean]
   ): Unit = js.native
   def OpenXML(Filename: String): Workbook = js.native
+  def OpenXML(Filename: String, Stylesheets: js.UndefOr[scala.Nothing], LoadOption: XlXmlLoadOption): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: String): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: String, LoadOption: XlXmlLoadOption): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: SafeArray[String]): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: SafeArray[String], LoadOption: XlXmlLoadOption): Workbook = js.native
-  @JSName("Open")
-  def Open_3(
-    Filename: String,
-    UpdateLinks: js.UndefOr[`3`],
-    ReadOnly: js.UndefOr[Boolean],
-    Format: js.UndefOr[`3`],
-    Password: js.UndefOr[String],
-    WriteResPassword: js.UndefOr[String],
-    IgnoreReadOnlyRecommended: js.UndefOr[Boolean],
-    Origin: js.UndefOr[XlPlatform],
-    Delimiter: js.UndefOr[scala.Nothing],
-    Editable: js.UndefOr[Boolean],
-    Notify: js.UndefOr[Boolean],
-    Converter: js.UndefOr[Double],
-    AddToMru: js.UndefOr[Boolean],
-    Local: js.UndefOr[Boolean],
-    CorruptLoad: js.UndefOr[XlCorruptLoad]
-  ): Workbook = js.native
   def _Default(Index: js.Any): Workbook = js.native
   def _Open(
     Filename: String,

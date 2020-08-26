@@ -14,6 +14,7 @@ object directoryMod extends js.Object {
   @js.native
   class SourceDirectory () extends js.Object {
     def this(name: String) = this()
+    def this(name: js.UndefOr[scala.Nothing], parent: SourceDirectory) = this()
     def this(name: String, parent: SourceDirectory) = this()
     var dirName: js.UndefOr[String] = js.native
     var directories: StringDictionary[SourceDirectory] = js.native

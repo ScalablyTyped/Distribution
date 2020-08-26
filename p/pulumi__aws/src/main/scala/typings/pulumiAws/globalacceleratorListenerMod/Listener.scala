@@ -51,8 +51,10 @@ object Listener extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Listener = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Listener = js.native
   def get(name: String, id: Input[ID], state: ListenerState): Listener = js.native
   def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = js.native
   /**

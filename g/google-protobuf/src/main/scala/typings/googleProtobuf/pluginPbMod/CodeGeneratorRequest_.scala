@@ -12,6 +12,7 @@ class CodeGeneratorRequest_ () extends Message {
   def addFileToGenerate(value: String): String = js.native
   def addFileToGenerate(value: String, index: Double): String = js.native
   def addProtoFile(): FileDescriptorProto = js.native
+  def addProtoFile(value: js.UndefOr[scala.Nothing], index: Double): FileDescriptorProto = js.native
   def addProtoFile(value: FileDescriptorProto): FileDescriptorProto = js.native
   def addProtoFile(value: FileDescriptorProto, index: Double): FileDescriptorProto = js.native
   def clearCompilerVersion(): Unit = js.native

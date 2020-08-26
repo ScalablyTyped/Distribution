@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FeatureTemplatesViewModelProperties extends js.Object {
   /**
     * [Function](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#FilterFunction) can be defined to help filter [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) within the widget. A custom function can be used to aid when searching for templates. It takes a function which passes in an object containing a [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#label) property of the [template item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).  ![featureTemplatesFilterFunction](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/featureTemplatesFilterFunction.png)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#filterFunction)
     */
-  var filterFunction: js.UndefOr[FilterFunction] = js.undefined
+  var filterFunction: js.UndefOr[FilterFunction] = js.native
   /**
     * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html). This can aid in managing various template items and how they display within the widget. The values are discussed below.
     *
@@ -26,28 +27,50 @@ trait FeatureTemplatesViewModelProperties extends js.Object {
     *
     * @default layer
     */
-  var groupBy: js.UndefOr[String | GroupByFunction] = js.undefined
+  var groupBy: js.UndefOr[String | GroupByFunction] = js.native
   /**
     * An array of [Featurelayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) that are associated with the widget. The order in which these layers are set in the array dictates how they display within the widget.
     * > The widget is designed to only display layers that are enabled for editing. It will not display layers that are enabled to only edit attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#layers)
     */
-  var layers: js.UndefOr[js.Array[FeatureLayerProperties]] = js.undefined
+  var layers: js.UndefOr[js.Array[FeatureLayerProperties]] = js.native
 }
 
 object FeatureTemplatesViewModelProperties {
   @scala.inline
-  def apply(
-    filterFunction: /* filterName */ js.Any => Boolean = null,
-    groupBy: String | GroupByFunction = null,
-    layers: js.Array[FeatureLayerProperties] = null
-  ): FeatureTemplatesViewModelProperties = {
+  def apply(): FeatureTemplatesViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (filterFunction != null) __obj.updateDynamic("filterFunction")(js.Any.fromFunction1(filterFunction))
-    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTemplatesViewModelProperties]
   }
+  @scala.inline
+  implicit class FeatureTemplatesViewModelPropertiesOps[Self <: FeatureTemplatesViewModelProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterFunction(value: /* filterName */ js.Any => Boolean): Self = this.set("filterFunction", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilterFunction: Self = this.set("filterFunction", js.undefined)
+    @scala.inline
+    def setGroupByFunction1(value: /* grouping */ js.Any => String | js.Any): Self = this.set("groupBy", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGroupBy(value: String | GroupByFunction): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupBy: Self = this.set("groupBy", js.undefined)
+    @scala.inline
+    def setLayersVarargs(value: FeatureLayerProperties*): Self = this.set("layers", js.Array(value :_*))
+    @scala.inline
+    def setLayers(value: js.Array[FeatureLayerProperties]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayers: Self = this.set("layers", js.undefined)
+  }
+  
 }
 

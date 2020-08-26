@@ -1,6 +1,9 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.IHandle
+import typings.arcgisJsApi.arcgisJsApiStrings.disabled
+import typings.arcgisJsApi.arcgisJsApiStrings.loading
+import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.select
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,7 +63,7 @@ trait FeatureTemplatesViewModel
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: ready | loading | disabled = js.native
   /**
     * [Function](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#FilterFunction) can be defined to help filter [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) within the widget. A custom function can be used to aid when searching for templates. It takes a function which passes in an object containing a [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#label) property of the [template item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).  ![featureTemplatesFilterFunction](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/featureTemplatesFilterFunction.png)
     *

@@ -9,48 +9,83 @@ import scala.scalajs.js.annotation._
 /**
   * Custom configuration used in single message call.
   */
+@js.native
 trait IGrowlMessageConfig extends js.Object {
-  var disableCloseButton: js.UndefOr[Boolean] = js.undefined
-  var disableCountDown: js.UndefOr[Boolean] = js.undefined
-  var disableIcons: js.UndefOr[Boolean] = js.undefined
-  var onclose: js.UndefOr[Function] = js.undefined
-  var onopen: js.UndefOr[Function] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var referenceId: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var translateMessage: js.UndefOr[Boolean] = js.undefined
-  var ttl: js.UndefOr[Double] = js.undefined
-  var variables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var disableCloseButton: js.UndefOr[Boolean] = js.native
+  var disableCountDown: js.UndefOr[Boolean] = js.native
+  var disableIcons: js.UndefOr[Boolean] = js.native
+  var onclose: js.UndefOr[Function] = js.native
+  var onopen: js.UndefOr[Function] = js.native
+  var position: js.UndefOr[String] = js.native
+  var referenceId: js.UndefOr[Double] = js.native
+  var title: js.UndefOr[String] = js.native
+  var translateMessage: js.UndefOr[Boolean] = js.native
+  var ttl: js.UndefOr[Double] = js.native
+  var variables: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 
 object IGrowlMessageConfig {
   @scala.inline
-  def apply(
-    disableCloseButton: js.UndefOr[Boolean] = js.undefined,
-    disableCountDown: js.UndefOr[Boolean] = js.undefined,
-    disableIcons: js.UndefOr[Boolean] = js.undefined,
-    onclose: Function = null,
-    onopen: Function = null,
-    position: String = null,
-    referenceId: js.UndefOr[Double] = js.undefined,
-    title: String = null,
-    translateMessage: js.UndefOr[Boolean] = js.undefined,
-    ttl: js.UndefOr[Double] = js.undefined,
-    variables: StringDictionary[js.Any] = null
-  ): IGrowlMessageConfig = {
+  def apply(): IGrowlMessageConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableCloseButton)) __obj.updateDynamic("disableCloseButton")(disableCloseButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCountDown)) __obj.updateDynamic("disableCountDown")(disableCountDown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableIcons)) __obj.updateDynamic("disableIcons")(disableIcons.get.asInstanceOf[js.Any])
-    if (onclose != null) __obj.updateDynamic("onclose")(onclose.asInstanceOf[js.Any])
-    if (onopen != null) __obj.updateDynamic("onopen")(onopen.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(referenceId)) __obj.updateDynamic("referenceId")(referenceId.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(translateMessage)) __obj.updateDynamic("translateMessage")(translateMessage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ttl)) __obj.updateDynamic("ttl")(ttl.get.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGrowlMessageConfig]
   }
+  @scala.inline
+  implicit class IGrowlMessageConfigOps[Self <: IGrowlMessageConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisableCloseButton(value: Boolean): Self = this.set("disableCloseButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableCloseButton: Self = this.set("disableCloseButton", js.undefined)
+    @scala.inline
+    def setDisableCountDown(value: Boolean): Self = this.set("disableCountDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableCountDown: Self = this.set("disableCountDown", js.undefined)
+    @scala.inline
+    def setDisableIcons(value: Boolean): Self = this.set("disableIcons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableIcons: Self = this.set("disableIcons", js.undefined)
+    @scala.inline
+    def setOnclose(value: Function): Self = this.set("onclose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnclose: Self = this.set("onclose", js.undefined)
+    @scala.inline
+    def setOnopen(value: Function): Self = this.set("onopen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnopen: Self = this.set("onopen", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setReferenceId(value: Double): Self = this.set("referenceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceId: Self = this.set("referenceId", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTranslateMessage(value: Boolean): Self = this.set("translateMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslateMessage: Self = this.set("translateMessage", js.undefined)
+    @scala.inline
+    def setTtl(value: Double): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTtl: Self = this.set("ttl", js.undefined)
+    @scala.inline
+    def setVariables(value: StringDictionary[js.Any]): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("variables", js.undefined)
+  }
+  
 }
 

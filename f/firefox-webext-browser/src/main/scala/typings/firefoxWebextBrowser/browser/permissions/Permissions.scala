@@ -7,18 +7,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* permissions types */
+@js.native
 trait Permissions extends js.Object {
-  var origins: js.UndefOr[js.Array[MatchPattern]] = js.undefined
-  var permissions: js.UndefOr[js.Array[OptionalPermission]] = js.undefined
+  var origins: js.UndefOr[js.Array[MatchPattern]] = js.native
+  var permissions: js.UndefOr[js.Array[OptionalPermission]] = js.native
 }
 
 object Permissions {
   @scala.inline
-  def apply(origins: js.Array[MatchPattern] = null, permissions: js.Array[OptionalPermission] = null): Permissions = {
+  def apply(): Permissions = {
     val __obj = js.Dynamic.literal()
-    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permissions]
   }
+  @scala.inline
+  implicit class PermissionsOps[Self <: Permissions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOriginsVarargs(value: MatchPattern*): Self = this.set("origins", js.Array(value :_*))
+    @scala.inline
+    def setOrigins(value: js.Array[MatchPattern]): Self = this.set("origins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigins: Self = this.set("origins", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: OptionalPermission*): Self = this.set("permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: js.Array[OptionalPermission]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+  }
+  
 }
 

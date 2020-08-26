@@ -79,7 +79,26 @@ trait ZeptoCollection extends js.Object {
     * @note Zepto exclusively uses CSS transitions for effects and animation. jQuery easings are not supported. jQuery's syntax for relative changes ("=+10px") is not supported. See the spec for a list of animatable properties (http://www.w3.org/TR/css3-transitions/#animatable-properties-). Browser support may vary, so be sure to test in all browsers you want to support.
     **/
   def animate(properties: js.Any): ZeptoCollection = js.native
+  def animate(
+    properties: js.Any,
+    duration: js.UndefOr[scala.Nothing],
+    easing: js.UndefOr[scala.Nothing],
+    complete: js.Function0[Unit]
+  ): ZeptoCollection = js.native
+  def animate(properties: js.Any, duration: js.UndefOr[scala.Nothing], easing: String): ZeptoCollection = js.native
+  def animate(
+    properties: js.Any,
+    duration: js.UndefOr[scala.Nothing],
+    easing: String,
+    complete: js.Function0[Unit]
+  ): ZeptoCollection = js.native
   def animate(properties: js.Any, duration: Double): ZeptoCollection = js.native
+  def animate(
+    properties: js.Any,
+    duration: Double,
+    easing: js.UndefOr[scala.Nothing],
+    complete: js.Function0[Unit]
+  ): ZeptoCollection = js.native
   def animate(properties: js.Any, duration: Double, easing: String): ZeptoCollection = js.native
   def animate(properties: js.Any, duration: Double, easing: String, complete: js.Function0[Unit]): ZeptoCollection = js.native
   /**
@@ -851,6 +870,7 @@ trait ZeptoCollection extends js.Object {
     * @return
     **/
   def slice(): js.Array[ZeptoCollection] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[ZeptoCollection] = js.native
   def slice(start: Double): js.Array[ZeptoCollection] = js.native
   def slice(start: Double, end: Double): js.Array[ZeptoCollection] = js.native
   /**

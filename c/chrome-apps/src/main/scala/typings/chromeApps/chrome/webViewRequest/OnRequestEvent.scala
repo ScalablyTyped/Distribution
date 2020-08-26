@@ -36,6 +36,7 @@ trait OnRequestEvent extends js.Object {
     * @param [callback] Called when rules were unregistered.
     */
   def removeRules(): Unit = js.native
+  def removeRules(ruleIdentifiers: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def removeRules(ruleIdentifiers: js.Array[String]): Unit = js.native
   def removeRules(ruleIdentifiers: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
 }

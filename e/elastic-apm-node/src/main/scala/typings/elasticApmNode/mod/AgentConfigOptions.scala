@@ -5,171 +5,294 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AgentConfigOptions extends js.Object {
-  var abortedErrorThreshold: js.UndefOr[String] = js.undefined
+  var abortedErrorThreshold: js.UndefOr[String] = js.native
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var active: js.UndefOr[Boolean] = js.undefined
-  var addPatch: js.UndefOr[KeyValueConfig] = js.undefined
-  var apiRequestSize: js.UndefOr[String] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var addPatch: js.UndefOr[KeyValueConfig] = js.native
+  var apiRequestSize: js.UndefOr[String] = js.native
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var apiRequestTime: js.UndefOr[String] = js.undefined
+  var apiRequestTime: js.UndefOr[String] = js.native
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var asyncHooks: js.UndefOr[Boolean] = js.undefined
-  var captureBody: js.UndefOr[CaptureBody] = js.undefined
-  var captureErrorLogStackTraces: js.UndefOr[CaptureErrorLogStackTraces] = js.undefined
-  var captureExceptions: js.UndefOr[Boolean] = js.undefined
-  var captureHeaders: js.UndefOr[Boolean] = js.undefined
-  var captureSpanStackTraces: js.UndefOr[Boolean] = js.undefined
-  var centralConfig: js.UndefOr[Boolean] = js.undefined
-  var containerId: js.UndefOr[String] = js.undefined
-  var disableInstrumentations: js.UndefOr[String | js.Array[String]] = js.undefined
-  var environment: js.UndefOr[String] = js.undefined
-  var errorMessageMaxLength: js.UndefOr[String] = js.undefined
+  var asyncHooks: js.UndefOr[Boolean] = js.native
+  var captureBody: js.UndefOr[CaptureBody] = js.native
+  var captureErrorLogStackTraces: js.UndefOr[CaptureErrorLogStackTraces] = js.native
+  var captureExceptions: js.UndefOr[Boolean] = js.native
+  var captureHeaders: js.UndefOr[Boolean] = js.native
+  var captureSpanStackTraces: js.UndefOr[Boolean] = js.native
+  var centralConfig: js.UndefOr[Boolean] = js.native
+  var containerId: js.UndefOr[String] = js.native
+  var disableInstrumentations: js.UndefOr[String | js.Array[String]] = js.native
+  var environment: js.UndefOr[String] = js.native
+  var errorMessageMaxLength: js.UndefOr[String] = js.native
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var errorOnAbortedRequests: js.UndefOr[Boolean] = js.undefined
-  var filterHttpHeaders: js.UndefOr[Boolean] = js.undefined
-  var frameworkName: js.UndefOr[String] = js.undefined
-  var frameworkVersion: js.UndefOr[String] = js.undefined
-  var globalLabels: js.UndefOr[KeyValueConfig] = js.undefined
-  var hostname: js.UndefOr[String] = js.undefined
-  var ignoreUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
-  var ignoreUserAgents: js.UndefOr[js.Array[String | RegExp]] = js.undefined
-  var instrument: js.UndefOr[Boolean] = js.undefined
-  var instrumentIncomingHTTPRequests: js.UndefOr[Boolean] = js.undefined
-  var kubernetesNamespace: js.UndefOr[String] = js.undefined
-  var kubernetesNodeName: js.UndefOr[String] = js.undefined
-  var kubernetesPodName: js.UndefOr[String] = js.undefined
-  var kubernetesPodUID: js.UndefOr[String] = js.undefined
-  var logLevel: js.UndefOr[LogLevel] = js.undefined
-  var logUncaughtExceptions: js.UndefOr[Boolean] = js.undefined
-  var logger: js.UndefOr[Logger] = js.undefined
-  var metricsInterval: js.UndefOr[String] = js.undefined
+  var errorOnAbortedRequests: js.UndefOr[Boolean] = js.native
+  var filterHttpHeaders: js.UndefOr[Boolean] = js.native
+  var frameworkName: js.UndefOr[String] = js.native
+  var frameworkVersion: js.UndefOr[String] = js.native
+  var globalLabels: js.UndefOr[KeyValueConfig] = js.native
+  var hostname: js.UndefOr[String] = js.native
+  var ignoreUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+  var ignoreUserAgents: js.UndefOr[js.Array[String | RegExp]] = js.native
+  var instrument: js.UndefOr[Boolean] = js.native
+  var instrumentIncomingHTTPRequests: js.UndefOr[Boolean] = js.native
+  var kubernetesNamespace: js.UndefOr[String] = js.native
+  var kubernetesNodeName: js.UndefOr[String] = js.native
+  var kubernetesPodName: js.UndefOr[String] = js.native
+  var kubernetesPodUID: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[LogLevel] = js.native
+  var logUncaughtExceptions: js.UndefOr[Boolean] = js.native
+  var logger: js.UndefOr[Logger] = js.native
+  var metricsInterval: js.UndefOr[String] = js.native
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var payloadLogFile: js.UndefOr[String] = js.undefined
-  var secretToken: js.UndefOr[String] = js.undefined
-  var serverCaCertFile: js.UndefOr[String] = js.undefined
-  var serverTimeout: js.UndefOr[String] = js.undefined
+  var payloadLogFile: js.UndefOr[String] = js.native
+  var secretToken: js.UndefOr[String] = js.native
+  var serverCaCertFile: js.UndefOr[String] = js.native
+  var serverTimeout: js.UndefOr[String] = js.native
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var serverUrl: js.UndefOr[String] = js.undefined
-  var serviceName: js.UndefOr[String] = js.undefined
-  var serviceVersion: js.UndefOr[String] = js.undefined
-  var sourceLinesErrorAppFrames: js.UndefOr[Double] = js.undefined
-  var sourceLinesErrorLibraryFrames: js.UndefOr[Double] = js.undefined
-  var sourceLinesSpanAppFrames: js.UndefOr[Double] = js.undefined
-  var sourceLinesSpanLibraryFrames: js.UndefOr[Double] = js.undefined
-  var stackTraceLimit: js.UndefOr[Double] = js.undefined
-  var transactionMaxSpans: js.UndefOr[Double] = js.undefined
-  var transactionSampleRate: js.UndefOr[Double] = js.undefined
-  var usePathAsTransactionName: js.UndefOr[Boolean] = js.undefined
-  var verifyServerCert: js.UndefOr[Boolean] = js.undefined
+  var serverUrl: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.native
+  var serviceVersion: js.UndefOr[String] = js.native
+  var sourceLinesErrorAppFrames: js.UndefOr[Double] = js.native
+  var sourceLinesErrorLibraryFrames: js.UndefOr[Double] = js.native
+  var sourceLinesSpanAppFrames: js.UndefOr[Double] = js.native
+  var sourceLinesSpanLibraryFrames: js.UndefOr[Double] = js.native
+  var stackTraceLimit: js.UndefOr[Double] = js.native
+  var transactionMaxSpans: js.UndefOr[Double] = js.native
+  var transactionSampleRate: js.UndefOr[Double] = js.native
+  var usePathAsTransactionName: js.UndefOr[Boolean] = js.native
+  var verifyServerCert: js.UndefOr[Boolean] = js.native
 }
 
 object AgentConfigOptions {
   @scala.inline
-  def apply(
-    abortedErrorThreshold: String = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    addPatch: KeyValueConfig = null,
-    apiRequestSize: String = null,
-    apiRequestTime: String = null,
-    asyncHooks: js.UndefOr[Boolean] = js.undefined,
-    captureBody: CaptureBody = null,
-    captureErrorLogStackTraces: CaptureErrorLogStackTraces = null,
-    captureExceptions: js.UndefOr[Boolean] = js.undefined,
-    captureHeaders: js.UndefOr[Boolean] = js.undefined,
-    captureSpanStackTraces: js.UndefOr[Boolean] = js.undefined,
-    centralConfig: js.UndefOr[Boolean] = js.undefined,
-    containerId: String = null,
-    disableInstrumentations: String | js.Array[String] = null,
-    environment: String = null,
-    errorMessageMaxLength: String = null,
-    errorOnAbortedRequests: js.UndefOr[Boolean] = js.undefined,
-    filterHttpHeaders: js.UndefOr[Boolean] = js.undefined,
-    frameworkName: String = null,
-    frameworkVersion: String = null,
-    globalLabels: KeyValueConfig = null,
-    hostname: String = null,
-    ignoreUrls: js.Array[String | RegExp] = null,
-    ignoreUserAgents: js.Array[String | RegExp] = null,
-    instrument: js.UndefOr[Boolean] = js.undefined,
-    instrumentIncomingHTTPRequests: js.UndefOr[Boolean] = js.undefined,
-    kubernetesNamespace: String = null,
-    kubernetesNodeName: String = null,
-    kubernetesPodName: String = null,
-    kubernetesPodUID: String = null,
-    logLevel: LogLevel = null,
-    logUncaughtExceptions: js.UndefOr[Boolean] = js.undefined,
-    logger: Logger = null,
-    metricsInterval: String = null,
-    payloadLogFile: String = null,
-    secretToken: String = null,
-    serverCaCertFile: String = null,
-    serverTimeout: String = null,
-    serverUrl: String = null,
-    serviceName: String = null,
-    serviceVersion: String = null,
-    sourceLinesErrorAppFrames: js.UndefOr[Double] = js.undefined,
-    sourceLinesErrorLibraryFrames: js.UndefOr[Double] = js.undefined,
-    sourceLinesSpanAppFrames: js.UndefOr[Double] = js.undefined,
-    sourceLinesSpanLibraryFrames: js.UndefOr[Double] = js.undefined,
-    stackTraceLimit: js.UndefOr[Double] = js.undefined,
-    transactionMaxSpans: js.UndefOr[Double] = js.undefined,
-    transactionSampleRate: js.UndefOr[Double] = js.undefined,
-    usePathAsTransactionName: js.UndefOr[Boolean] = js.undefined,
-    verifyServerCert: js.UndefOr[Boolean] = js.undefined
-  ): AgentConfigOptions = {
+  def apply(): AgentConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (abortedErrorThreshold != null) __obj.updateDynamic("abortedErrorThreshold")(abortedErrorThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (addPatch != null) __obj.updateDynamic("addPatch")(addPatch.asInstanceOf[js.Any])
-    if (apiRequestSize != null) __obj.updateDynamic("apiRequestSize")(apiRequestSize.asInstanceOf[js.Any])
-    if (apiRequestTime != null) __obj.updateDynamic("apiRequestTime")(apiRequestTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(asyncHooks)) __obj.updateDynamic("asyncHooks")(asyncHooks.get.asInstanceOf[js.Any])
-    if (captureBody != null) __obj.updateDynamic("captureBody")(captureBody.asInstanceOf[js.Any])
-    if (captureErrorLogStackTraces != null) __obj.updateDynamic("captureErrorLogStackTraces")(captureErrorLogStackTraces.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureExceptions)) __obj.updateDynamic("captureExceptions")(captureExceptions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureHeaders)) __obj.updateDynamic("captureHeaders")(captureHeaders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureSpanStackTraces)) __obj.updateDynamic("captureSpanStackTraces")(captureSpanStackTraces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(centralConfig)) __obj.updateDynamic("centralConfig")(centralConfig.get.asInstanceOf[js.Any])
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (disableInstrumentations != null) __obj.updateDynamic("disableInstrumentations")(disableInstrumentations.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (errorMessageMaxLength != null) __obj.updateDynamic("errorMessageMaxLength")(errorMessageMaxLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorOnAbortedRequests)) __obj.updateDynamic("errorOnAbortedRequests")(errorOnAbortedRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterHttpHeaders)) __obj.updateDynamic("filterHttpHeaders")(filterHttpHeaders.get.asInstanceOf[js.Any])
-    if (frameworkName != null) __obj.updateDynamic("frameworkName")(frameworkName.asInstanceOf[js.Any])
-    if (frameworkVersion != null) __obj.updateDynamic("frameworkVersion")(frameworkVersion.asInstanceOf[js.Any])
-    if (globalLabels != null) __obj.updateDynamic("globalLabels")(globalLabels.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (ignoreUrls != null) __obj.updateDynamic("ignoreUrls")(ignoreUrls.asInstanceOf[js.Any])
-    if (ignoreUserAgents != null) __obj.updateDynamic("ignoreUserAgents")(ignoreUserAgents.asInstanceOf[js.Any])
-    if (!js.isUndefined(instrument)) __obj.updateDynamic("instrument")(instrument.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(instrumentIncomingHTTPRequests)) __obj.updateDynamic("instrumentIncomingHTTPRequests")(instrumentIncomingHTTPRequests.get.asInstanceOf[js.Any])
-    if (kubernetesNamespace != null) __obj.updateDynamic("kubernetesNamespace")(kubernetesNamespace.asInstanceOf[js.Any])
-    if (kubernetesNodeName != null) __obj.updateDynamic("kubernetesNodeName")(kubernetesNodeName.asInstanceOf[js.Any])
-    if (kubernetesPodName != null) __obj.updateDynamic("kubernetesPodName")(kubernetesPodName.asInstanceOf[js.Any])
-    if (kubernetesPodUID != null) __obj.updateDynamic("kubernetesPodUID")(kubernetesPodUID.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(logUncaughtExceptions)) __obj.updateDynamic("logUncaughtExceptions")(logUncaughtExceptions.get.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (metricsInterval != null) __obj.updateDynamic("metricsInterval")(metricsInterval.asInstanceOf[js.Any])
-    if (payloadLogFile != null) __obj.updateDynamic("payloadLogFile")(payloadLogFile.asInstanceOf[js.Any])
-    if (secretToken != null) __obj.updateDynamic("secretToken")(secretToken.asInstanceOf[js.Any])
-    if (serverCaCertFile != null) __obj.updateDynamic("serverCaCertFile")(serverCaCertFile.asInstanceOf[js.Any])
-    if (serverTimeout != null) __obj.updateDynamic("serverTimeout")(serverTimeout.asInstanceOf[js.Any])
-    if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (serviceVersion != null) __obj.updateDynamic("serviceVersion")(serviceVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceLinesErrorAppFrames)) __obj.updateDynamic("sourceLinesErrorAppFrames")(sourceLinesErrorAppFrames.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceLinesErrorLibraryFrames)) __obj.updateDynamic("sourceLinesErrorLibraryFrames")(sourceLinesErrorLibraryFrames.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceLinesSpanAppFrames)) __obj.updateDynamic("sourceLinesSpanAppFrames")(sourceLinesSpanAppFrames.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceLinesSpanLibraryFrames)) __obj.updateDynamic("sourceLinesSpanLibraryFrames")(sourceLinesSpanLibraryFrames.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackTraceLimit)) __obj.updateDynamic("stackTraceLimit")(stackTraceLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transactionMaxSpans)) __obj.updateDynamic("transactionMaxSpans")(transactionMaxSpans.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transactionSampleRate)) __obj.updateDynamic("transactionSampleRate")(transactionSampleRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePathAsTransactionName)) __obj.updateDynamic("usePathAsTransactionName")(usePathAsTransactionName.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifyServerCert)) __obj.updateDynamic("verifyServerCert")(verifyServerCert.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentConfigOptions]
   }
+  @scala.inline
+  implicit class AgentConfigOptionsOps[Self <: AgentConfigOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbortedErrorThreshold(value: String): Self = this.set("abortedErrorThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortedErrorThreshold: Self = this.set("abortedErrorThreshold", js.undefined)
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAddPatchVarargs(value: js.Array[LabelValue]*): Self = this.set("addPatch", js.Array(value :_*))
+    @scala.inline
+    def setAddPatch(value: KeyValueConfig): Self = this.set("addPatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddPatch: Self = this.set("addPatch", js.undefined)
+    @scala.inline
+    def setApiRequestSize(value: String): Self = this.set("apiRequestSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiRequestSize: Self = this.set("apiRequestSize", js.undefined)
+    @scala.inline
+    def setApiRequestTime(value: String): Self = this.set("apiRequestTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiRequestTime: Self = this.set("apiRequestTime", js.undefined)
+    @scala.inline
+    def setAsyncHooks(value: Boolean): Self = this.set("asyncHooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsyncHooks: Self = this.set("asyncHooks", js.undefined)
+    @scala.inline
+    def setCaptureBody(value: CaptureBody): Self = this.set("captureBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureBody: Self = this.set("captureBody", js.undefined)
+    @scala.inline
+    def setCaptureErrorLogStackTraces(value: CaptureErrorLogStackTraces): Self = this.set("captureErrorLogStackTraces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureErrorLogStackTraces: Self = this.set("captureErrorLogStackTraces", js.undefined)
+    @scala.inline
+    def setCaptureExceptions(value: Boolean): Self = this.set("captureExceptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureExceptions: Self = this.set("captureExceptions", js.undefined)
+    @scala.inline
+    def setCaptureHeaders(value: Boolean): Self = this.set("captureHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureHeaders: Self = this.set("captureHeaders", js.undefined)
+    @scala.inline
+    def setCaptureSpanStackTraces(value: Boolean): Self = this.set("captureSpanStackTraces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureSpanStackTraces: Self = this.set("captureSpanStackTraces", js.undefined)
+    @scala.inline
+    def setCentralConfig(value: Boolean): Self = this.set("centralConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCentralConfig: Self = this.set("centralConfig", js.undefined)
+    @scala.inline
+    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    @scala.inline
+    def setDisableInstrumentationsVarargs(value: String*): Self = this.set("disableInstrumentations", js.Array(value :_*))
+    @scala.inline
+    def setDisableInstrumentations(value: String | js.Array[String]): Self = this.set("disableInstrumentations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableInstrumentations: Self = this.set("disableInstrumentations", js.undefined)
+    @scala.inline
+    def setEnvironment(value: String): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setErrorMessageMaxLength(value: String): Self = this.set("errorMessageMaxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageMaxLength: Self = this.set("errorMessageMaxLength", js.undefined)
+    @scala.inline
+    def setErrorOnAbortedRequests(value: Boolean): Self = this.set("errorOnAbortedRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorOnAbortedRequests: Self = this.set("errorOnAbortedRequests", js.undefined)
+    @scala.inline
+    def setFilterHttpHeaders(value: Boolean): Self = this.set("filterHttpHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterHttpHeaders: Self = this.set("filterHttpHeaders", js.undefined)
+    @scala.inline
+    def setFrameworkName(value: String): Self = this.set("frameworkName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameworkName: Self = this.set("frameworkName", js.undefined)
+    @scala.inline
+    def setFrameworkVersion(value: String): Self = this.set("frameworkVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameworkVersion: Self = this.set("frameworkVersion", js.undefined)
+    @scala.inline
+    def setGlobalLabelsVarargs(value: js.Array[LabelValue]*): Self = this.set("globalLabels", js.Array(value :_*))
+    @scala.inline
+    def setGlobalLabels(value: KeyValueConfig): Self = this.set("globalLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalLabels: Self = this.set("globalLabels", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    @scala.inline
+    def setIgnoreUrlsVarargs(value: (String | RegExp)*): Self = this.set("ignoreUrls", js.Array(value :_*))
+    @scala.inline
+    def setIgnoreUrls(value: js.Array[String | RegExp]): Self = this.set("ignoreUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUrls: Self = this.set("ignoreUrls", js.undefined)
+    @scala.inline
+    def setIgnoreUserAgentsVarargs(value: (String | RegExp)*): Self = this.set("ignoreUserAgents", js.Array(value :_*))
+    @scala.inline
+    def setIgnoreUserAgents(value: js.Array[String | RegExp]): Self = this.set("ignoreUserAgents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUserAgents: Self = this.set("ignoreUserAgents", js.undefined)
+    @scala.inline
+    def setInstrument(value: Boolean): Self = this.set("instrument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstrument: Self = this.set("instrument", js.undefined)
+    @scala.inline
+    def setInstrumentIncomingHTTPRequests(value: Boolean): Self = this.set("instrumentIncomingHTTPRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstrumentIncomingHTTPRequests: Self = this.set("instrumentIncomingHTTPRequests", js.undefined)
+    @scala.inline
+    def setKubernetesNamespace(value: String): Self = this.set("kubernetesNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKubernetesNamespace: Self = this.set("kubernetesNamespace", js.undefined)
+    @scala.inline
+    def setKubernetesNodeName(value: String): Self = this.set("kubernetesNodeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKubernetesNodeName: Self = this.set("kubernetesNodeName", js.undefined)
+    @scala.inline
+    def setKubernetesPodName(value: String): Self = this.set("kubernetesPodName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKubernetesPodName: Self = this.set("kubernetesPodName", js.undefined)
+    @scala.inline
+    def setKubernetesPodUID(value: String): Self = this.set("kubernetesPodUID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKubernetesPodUID: Self = this.set("kubernetesPodUID", js.undefined)
+    @scala.inline
+    def setLogLevel(value: LogLevel): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    @scala.inline
+    def setLogUncaughtExceptions(value: Boolean): Self = this.set("logUncaughtExceptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUncaughtExceptions: Self = this.set("logUncaughtExceptions", js.undefined)
+    @scala.inline
+    def setLogger(value: Logger): Self = this.set("logger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogger: Self = this.set("logger", js.undefined)
+    @scala.inline
+    def setMetricsInterval(value: String): Self = this.set("metricsInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricsInterval: Self = this.set("metricsInterval", js.undefined)
+    @scala.inline
+    def setPayloadLogFile(value: String): Self = this.set("payloadLogFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayloadLogFile: Self = this.set("payloadLogFile", js.undefined)
+    @scala.inline
+    def setSecretToken(value: String): Self = this.set("secretToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretToken: Self = this.set("secretToken", js.undefined)
+    @scala.inline
+    def setServerCaCertFile(value: String): Self = this.set("serverCaCertFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerCaCertFile: Self = this.set("serverCaCertFile", js.undefined)
+    @scala.inline
+    def setServerTimeout(value: String): Self = this.set("serverTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerTimeout: Self = this.set("serverTimeout", js.undefined)
+    @scala.inline
+    def setServerUrl(value: String): Self = this.set("serverUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerUrl: Self = this.set("serverUrl", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    @scala.inline
+    def setServiceVersion(value: String): Self = this.set("serviceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceVersion: Self = this.set("serviceVersion", js.undefined)
+    @scala.inline
+    def setSourceLinesErrorAppFrames(value: Double): Self = this.set("sourceLinesErrorAppFrames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLinesErrorAppFrames: Self = this.set("sourceLinesErrorAppFrames", js.undefined)
+    @scala.inline
+    def setSourceLinesErrorLibraryFrames(value: Double): Self = this.set("sourceLinesErrorLibraryFrames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLinesErrorLibraryFrames: Self = this.set("sourceLinesErrorLibraryFrames", js.undefined)
+    @scala.inline
+    def setSourceLinesSpanAppFrames(value: Double): Self = this.set("sourceLinesSpanAppFrames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLinesSpanAppFrames: Self = this.set("sourceLinesSpanAppFrames", js.undefined)
+    @scala.inline
+    def setSourceLinesSpanLibraryFrames(value: Double): Self = this.set("sourceLinesSpanLibraryFrames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLinesSpanLibraryFrames: Self = this.set("sourceLinesSpanLibraryFrames", js.undefined)
+    @scala.inline
+    def setStackTraceLimit(value: Double): Self = this.set("stackTraceLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackTraceLimit: Self = this.set("stackTraceLimit", js.undefined)
+    @scala.inline
+    def setTransactionMaxSpans(value: Double): Self = this.set("transactionMaxSpans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionMaxSpans: Self = this.set("transactionMaxSpans", js.undefined)
+    @scala.inline
+    def setTransactionSampleRate(value: Double): Self = this.set("transactionSampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionSampleRate: Self = this.set("transactionSampleRate", js.undefined)
+    @scala.inline
+    def setUsePathAsTransactionName(value: Boolean): Self = this.set("usePathAsTransactionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsePathAsTransactionName: Self = this.set("usePathAsTransactionName", js.undefined)
+    @scala.inline
+    def setVerifyServerCert(value: Boolean): Self = this.set("verifyServerCert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifyServerCert: Self = this.set("verifyServerCert", js.undefined)
+  }
+  
 }
 

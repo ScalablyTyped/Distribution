@@ -8,51 +8,89 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/lib/typings.MenuDataItem & {  isUrl  :boolean} */
+/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/lib/typings.MenuDataItem & {  isUrl :boolean} */
+@js.native
 trait MenuDataItemisUrlboolean
   extends /* key */ StringDictionary[js.Any] {
-  var authority: js.UndefOr[js.Array[String] | String] = js.undefined
-  var children: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
-  var hideChildrenInMenu: js.UndefOr[Boolean] = js.undefined
-  var hideInMenu: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[ReactNode] = js.undefined
-  var isUrl: Boolean
-  var key: js.UndefOr[String] = js.undefined
-  var locale: js.UndefOr[String | `false`] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var parentKeys: js.UndefOr[js.Array[String]] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
+  var authority: js.UndefOr[js.Array[String] | String] = js.native
+  var children: js.UndefOr[js.Array[MenuDataItem]] = js.native
+  var hideChildrenInMenu: js.UndefOr[Boolean] = js.native
+  var hideInMenu: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[ReactNode] = js.native
+  var isUrl: Boolean = js.native
+  var key: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String | `false`] = js.native
+  var name: js.UndefOr[String] = js.native
+  var parentKeys: js.UndefOr[js.Array[String]] = js.native
+  var path: js.UndefOr[String] = js.native
 }
 
 object MenuDataItemisUrlboolean {
   @scala.inline
-  def apply(
-    isUrl: Boolean,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    authority: js.Array[String] | String = null,
-    children: js.Array[MenuDataItem] = null,
-    hideChildrenInMenu: js.UndefOr[Boolean] = js.undefined,
-    hideInMenu: js.UndefOr[Boolean] = js.undefined,
-    icon: ReactNode = null,
-    key: String = null,
-    locale: String | `false` = null,
-    name: String = null,
-    parentKeys: js.Array[String] = null,
-    path: String = null
-  ): MenuDataItemisUrlboolean = {
+  def apply(isUrl: Boolean): MenuDataItemisUrlboolean = {
     val __obj = js.Dynamic.literal(isUrl = isUrl.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideChildrenInMenu)) __obj.updateDynamic("hideChildrenInMenu")(hideChildrenInMenu.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideInMenu)) __obj.updateDynamic("hideInMenu")(hideInMenu.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentKeys != null) __obj.updateDynamic("parentKeys")(parentKeys.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuDataItemisUrlboolean]
   }
+  @scala.inline
+  implicit class MenuDataItemisUrlbooleanOps[Self <: MenuDataItemisUrlboolean] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsUrl(value: Boolean): Self = this.set("isUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorityVarargs(value: String*): Self = this.set("authority", js.Array(value :_*))
+    @scala.inline
+    def setAuthority(value: js.Array[String] | String): Self = this.set("authority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthority: Self = this.set("authority", js.undefined)
+    @scala.inline
+    def setChildrenVarargs(value: MenuDataItem*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[MenuDataItem]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setHideChildrenInMenu(value: Boolean): Self = this.set("hideChildrenInMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideChildrenInMenu: Self = this.set("hideChildrenInMenu", js.undefined)
+    @scala.inline
+    def setHideInMenu(value: Boolean): Self = this.set("hideInMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideInMenu: Self = this.set("hideInMenu", js.undefined)
+    @scala.inline
+    def setIcon(value: ReactNode): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLocale(value: String | `false`): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentKeysVarargs(value: String*): Self = this.set("parentKeys", js.Array(value :_*))
+    @scala.inline
+    def setParentKeys(value: js.Array[String]): Self = this.set("parentKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentKeys: Self = this.set("parentKeys", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+  }
+  
 }
 

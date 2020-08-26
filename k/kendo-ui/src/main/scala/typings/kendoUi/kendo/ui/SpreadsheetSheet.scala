@@ -5,51 +5,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpreadsheetSheet extends js.Object {
-  var activeCell: js.UndefOr[String] = js.undefined
-  var columns: js.UndefOr[js.Array[SpreadsheetSheetColumn]] = js.undefined
-  var dataSource: js.UndefOr[DataSource] = js.undefined
-  var filter: js.UndefOr[SpreadsheetSheetFilter] = js.undefined
-  var frozenColumns: js.UndefOr[Double] = js.undefined
-  var frozenRows: js.UndefOr[Double] = js.undefined
-  var mergedCells: js.UndefOr[js.Any] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var rows: js.UndefOr[js.Array[SpreadsheetSheetRow]] = js.undefined
-  var selection: js.UndefOr[String] = js.undefined
-  var showGridLines: js.UndefOr[Boolean] = js.undefined
-  var sort: js.UndefOr[SpreadsheetSheetSort] = js.undefined
+  var activeCell: js.UndefOr[String] = js.native
+  var columns: js.UndefOr[js.Array[SpreadsheetSheetColumn]] = js.native
+  var dataSource: js.UndefOr[DataSource] = js.native
+  var filter: js.UndefOr[SpreadsheetSheetFilter] = js.native
+  var frozenColumns: js.UndefOr[Double] = js.native
+  var frozenRows: js.UndefOr[Double] = js.native
+  var mergedCells: js.UndefOr[js.Any] = js.native
+  var name: js.UndefOr[String] = js.native
+  var rows: js.UndefOr[js.Array[SpreadsheetSheetRow]] = js.native
+  var selection: js.UndefOr[String] = js.native
+  var showGridLines: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[SpreadsheetSheetSort] = js.native
 }
 
 object SpreadsheetSheet {
   @scala.inline
-  def apply(
-    activeCell: String = null,
-    columns: js.Array[SpreadsheetSheetColumn] = null,
-    dataSource: DataSource = null,
-    filter: SpreadsheetSheetFilter = null,
-    frozenColumns: js.UndefOr[Double] = js.undefined,
-    frozenRows: js.UndefOr[Double] = js.undefined,
-    mergedCells: js.Any = null,
-    name: String = null,
-    rows: js.Array[SpreadsheetSheetRow] = null,
-    selection: String = null,
-    showGridLines: js.UndefOr[Boolean] = js.undefined,
-    sort: SpreadsheetSheetSort = null
-  ): SpreadsheetSheet = {
+  def apply(): SpreadsheetSheet = {
     val __obj = js.Dynamic.literal()
-    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(frozenColumns)) __obj.updateDynamic("frozenColumns")(frozenColumns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(frozenRows)) __obj.updateDynamic("frozenRows")(frozenRows.get.asInstanceOf[js.Any])
-    if (mergedCells != null) __obj.updateDynamic("mergedCells")(mergedCells.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheet]
   }
+  @scala.inline
+  implicit class SpreadsheetSheetOps[Self <: SpreadsheetSheet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveCell(value: String): Self = this.set("activeCell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveCell: Self = this.set("activeCell", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: SpreadsheetSheetColumn*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[SpreadsheetSheetColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setDataSource(value: DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setFilter(value: SpreadsheetSheetFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFrozenColumns(value: Double): Self = this.set("frozenColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrozenColumns: Self = this.set("frozenColumns", js.undefined)
+    @scala.inline
+    def setFrozenRows(value: Double): Self = this.set("frozenRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrozenRows: Self = this.set("frozenRows", js.undefined)
+    @scala.inline
+    def setMergedCells(value: js.Any): Self = this.set("mergedCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergedCells: Self = this.set("mergedCells", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRowsVarargs(value: SpreadsheetSheetRow*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: js.Array[SpreadsheetSheetRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setSelection(value: String): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setShowGridLines(value: Boolean): Self = this.set("showGridLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowGridLines: Self = this.set("showGridLines", js.undefined)
+    @scala.inline
+    def setSort(value: SpreadsheetSheetSort): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+  }
+  
 }
 

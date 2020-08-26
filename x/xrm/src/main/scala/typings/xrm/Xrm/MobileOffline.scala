@@ -69,6 +69,7 @@ trait MobileOffline extends js.Object {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def retrieveMultipleRecords(entityType: String): PromiseLike[js.Array[StringDictionary[_]]] = js.native
+  def retrieveMultipleRecords(entityType: String, options: js.UndefOr[scala.Nothing], maxPageSize: Double): PromiseLike[js.Array[StringDictionary[_]]] = js.native
   def retrieveMultipleRecords(entityType: String, options: String): PromiseLike[js.Array[StringDictionary[_]]] = js.native
   def retrieveMultipleRecords(entityType: String, options: String, maxPageSize: Double): PromiseLike[js.Array[StringDictionary[_]]] = js.native
   /**

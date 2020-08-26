@@ -11,10 +11,26 @@ trait CreateTransitVirtualInterfaceResult extends js.Object {
 
 object CreateTransitVirtualInterfaceResult {
   @scala.inline
-  def apply(virtualInterface: VirtualInterface = null): CreateTransitVirtualInterfaceResult = {
+  def apply(): CreateTransitVirtualInterfaceResult = {
     val __obj = js.Dynamic.literal()
-    if (virtualInterface != null) __obj.updateDynamic("virtualInterface")(virtualInterface.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTransitVirtualInterfaceResult]
   }
+  @scala.inline
+  implicit class CreateTransitVirtualInterfaceResultOps[Self <: CreateTransitVirtualInterfaceResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVirtualInterface(value: VirtualInterface): Self = this.set("virtualInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualInterface: Self = this.set("virtualInterface", js.undefined)
+  }
+  
 }
 

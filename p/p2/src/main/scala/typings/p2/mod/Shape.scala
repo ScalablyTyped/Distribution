@@ -21,14 +21,53 @@ class Shape () extends js.Object {
   var sensor: Boolean = js.native
   var `type`: Double = js.native
   def computeAABB(): Unit = js.native
+  def computeAABB(out: js.UndefOr[scala.Nothing], position: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
+  def computeAABB(out: js.UndefOr[scala.Nothing], position: js.Tuple2[Double, Double]): Unit = js.native
+  def computeAABB(out: js.UndefOr[scala.Nothing], position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
   def computeAABB(out: AABB): Unit = js.native
+  def computeAABB(out: AABB, position: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
   def computeAABB(out: AABB, position: js.Tuple2[Double, Double]): Unit = js.native
   def computeAABB(out: AABB, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
   def computeMomentOfInertia(): Double = js.native
   def computeMomentOfInertia(mass: Double): Double = js.native
   def raycast(): Unit = js.native
+  def raycast(
+    result: js.UndefOr[scala.Nothing],
+    ray: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    angle: Double
+  ): Unit = js.native
+  def raycast(
+    result: js.UndefOr[scala.Nothing],
+    ray: js.UndefOr[scala.Nothing],
+    position: js.Tuple2[Double, Double]
+  ): Unit = js.native
+  def raycast(
+    result: js.UndefOr[scala.Nothing],
+    ray: js.UndefOr[scala.Nothing],
+    position: js.Tuple2[Double, Double],
+    angle: Double
+  ): Unit = js.native
+  def raycast(result: js.UndefOr[scala.Nothing], ray: Ray): Unit = js.native
+  def raycast(result: js.UndefOr[scala.Nothing], ray: Ray, position: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
+  def raycast(result: js.UndefOr[scala.Nothing], ray: Ray, position: js.Tuple2[Double, Double]): Unit = js.native
+  def raycast(result: js.UndefOr[scala.Nothing], ray: Ray, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
   def raycast(result: RaycastResult): Unit = js.native
+  def raycast(
+    result: RaycastResult,
+    ray: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    angle: Double
+  ): Unit = js.native
+  def raycast(result: RaycastResult, ray: js.UndefOr[scala.Nothing], position: js.Tuple2[Double, Double]): Unit = js.native
+  def raycast(
+    result: RaycastResult,
+    ray: js.UndefOr[scala.Nothing],
+    position: js.Tuple2[Double, Double],
+    angle: Double
+  ): Unit = js.native
   def raycast(result: RaycastResult, ray: Ray): Unit = js.native
+  def raycast(result: RaycastResult, ray: Ray, position: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
   def raycast(result: RaycastResult, ray: Ray, position: js.Tuple2[Double, Double]): Unit = js.native
   def raycast(result: RaycastResult, ray: Ray, position: js.Tuple2[Double, Double], angle: Double): Unit = js.native
   def updateArea(): Unit = js.native

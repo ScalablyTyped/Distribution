@@ -74,41 +74,92 @@ trait RunTaskRequest extends js.Object {
 
 object RunTaskRequest {
   @scala.inline
-  def apply(
-    taskDefinition: String,
-    capacityProviderStrategy: CapacityProviderStrategy = null,
-    cluster: String = null,
-    count: js.UndefOr[BoxedInteger] = js.undefined,
-    enableECSManagedTags: js.UndefOr[Boolean] = js.undefined,
-    group: String = null,
-    launchType: LaunchType = null,
-    networkConfiguration: NetworkConfiguration = null,
-    overrides: TaskOverride = null,
-    placementConstraints: PlacementConstraints = null,
-    placementStrategy: PlacementStrategies = null,
-    platformVersion: String = null,
-    propagateTags: PropagateTags = null,
-    referenceId: String = null,
-    startedBy: String = null,
-    tags: Tags = null
-  ): RunTaskRequest = {
+  def apply(taskDefinition: String): RunTaskRequest = {
     val __obj = js.Dynamic.literal(taskDefinition = taskDefinition.asInstanceOf[js.Any])
-    if (capacityProviderStrategy != null) __obj.updateDynamic("capacityProviderStrategy")(capacityProviderStrategy.asInstanceOf[js.Any])
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags.get.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
-    if (placementStrategy != null) __obj.updateDynamic("placementStrategy")(placementStrategy.asInstanceOf[js.Any])
-    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
-    if (propagateTags != null) __obj.updateDynamic("propagateTags")(propagateTags.asInstanceOf[js.Any])
-    if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId.asInstanceOf[js.Any])
-    if (startedBy != null) __obj.updateDynamic("startedBy")(startedBy.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunTaskRequest]
   }
+  @scala.inline
+  implicit class RunTaskRequestOps[Self <: RunTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = this.set("capacityProviderStrategy", js.Array(value :_*))
+    @scala.inline
+    def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = this.set("capacityProviderStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviderStrategy: Self = this.set("capacityProviderStrategy", js.undefined)
+    @scala.inline
+    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCluster: Self = this.set("cluster", js.undefined)
+    @scala.inline
+    def setCount(value: BoxedInteger): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setEnableECSManagedTags(value: Boolean): Self = this.set("enableECSManagedTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableECSManagedTags: Self = this.set("enableECSManagedTags", js.undefined)
+    @scala.inline
+    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setLaunchType(value: LaunchType): Self = this.set("launchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchType: Self = this.set("launchType", js.undefined)
+    @scala.inline
+    def setNetworkConfiguration(value: NetworkConfiguration): Self = this.set("networkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkConfiguration: Self = this.set("networkConfiguration", js.undefined)
+    @scala.inline
+    def setOverrides(value: TaskOverride): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setPlacementConstraintsVarargs(value: PlacementConstraint*): Self = this.set("placementConstraints", js.Array(value :_*))
+    @scala.inline
+    def setPlacementConstraints(value: PlacementConstraints): Self = this.set("placementConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementConstraints: Self = this.set("placementConstraints", js.undefined)
+    @scala.inline
+    def setPlacementStrategyVarargs(value: PlacementStrategy*): Self = this.set("placementStrategy", js.Array(value :_*))
+    @scala.inline
+    def setPlacementStrategy(value: PlacementStrategies): Self = this.set("placementStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementStrategy: Self = this.set("placementStrategy", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    @scala.inline
+    def setPropagateTags(value: PropagateTags): Self = this.set("propagateTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropagateTags: Self = this.set("propagateTags", js.undefined)
+    @scala.inline
+    def setReferenceId(value: String): Self = this.set("referenceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceId: Self = this.set("referenceId", js.undefined)
+    @scala.inline
+    def setStartedBy(value: String): Self = this.set("startedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedBy: Self = this.set("startedBy", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

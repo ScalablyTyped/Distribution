@@ -10,9 +10,9 @@ react currency formatter Component
 | ------------------ | :-------------: |
 | Full name          | react-currency-formatter |
 | Keywords           | currency, formatter, react-component |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 289978 |
+| # releases         | 0 |
+| # dependents       | 9 |
+| # downloads        | 315202 |
 | # stars            | 0 |
 
 ## Links

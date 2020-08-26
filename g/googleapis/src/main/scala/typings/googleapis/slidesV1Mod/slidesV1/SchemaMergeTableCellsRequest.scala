@@ -25,11 +25,30 @@ trait SchemaMergeTableCellsRequest extends js.Object {
 
 object SchemaMergeTableCellsRequest {
   @scala.inline
-  def apply(objectId: String = null, tableRange: SchemaTableRange = null): SchemaMergeTableCellsRequest = {
+  def apply(): SchemaMergeTableCellsRequest = {
     val __obj = js.Dynamic.literal()
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMergeTableCellsRequest]
   }
+  @scala.inline
+  implicit class SchemaMergeTableCellsRequestOps[Self <: SchemaMergeTableCellsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setTableRange(value: SchemaTableRange): Self = this.set("tableRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableRange: Self = this.set("tableRange", js.undefined)
+  }
+  
 }
 

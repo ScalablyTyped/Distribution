@@ -11,54 +11,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetHistoryOptions extends js.Object {
-  var ack: js.UndefOr[Boolean] = js.undefined
-  var addID: js.UndefOr[Boolean] = js.undefined
-  var aggregate: js.UndefOr[minmax | min | max | average | total | count | none] = js.undefined
-  var count: js.UndefOr[Double] = js.undefined
-  var end: js.UndefOr[Double] = js.undefined
-  var from: js.UndefOr[Boolean] = js.undefined
-  var ignoreNull: js.UndefOr[Boolean] = js.undefined
-  var instance: js.UndefOr[String] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var q: js.UndefOr[Boolean] = js.undefined
-  var sessionId: js.UndefOr[js.Any] = js.undefined
-  var start: js.UndefOr[Double] = js.undefined
-  var step: js.UndefOr[Double] = js.undefined
+  var ack: js.UndefOr[Boolean] = js.native
+  var addID: js.UndefOr[Boolean] = js.native
+  var aggregate: js.UndefOr[minmax | min | max | average | total | count | none] = js.native
+  var count: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Boolean] = js.native
+  var ignoreNull: js.UndefOr[Boolean] = js.native
+  var instance: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var q: js.UndefOr[Boolean] = js.native
+  var sessionId: js.UndefOr[js.Any] = js.native
+  var start: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.native
 }
 
 object GetHistoryOptions {
   @scala.inline
-  def apply(
-    ack: js.UndefOr[Boolean] = js.undefined,
-    addID: js.UndefOr[Boolean] = js.undefined,
-    aggregate: minmax | min | max | average | total | count | none = null,
-    count: js.UndefOr[Double] = js.undefined,
-    end: js.UndefOr[Double] = js.undefined,
-    from: js.UndefOr[Boolean] = js.undefined,
-    ignoreNull: js.UndefOr[Boolean] = js.undefined,
-    instance: String = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    q: js.UndefOr[Boolean] = js.undefined,
-    sessionId: js.Any = null,
-    start: js.UndefOr[Double] = js.undefined,
-    step: js.UndefOr[Double] = js.undefined
-  ): GetHistoryOptions = {
+  def apply(): GetHistoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ack)) __obj.updateDynamic("ack")(ack.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(addID)) __obj.updateDynamic("addID")(addID.get.asInstanceOf[js.Any])
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreNull)) __obj.updateDynamic("ignoreNull")(ignoreNull.get.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(q)) __obj.updateDynamic("q")(q.get.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHistoryOptions]
   }
+  @scala.inline
+  implicit class GetHistoryOptionsOps[Self <: GetHistoryOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAck(value: Boolean): Self = this.set("ack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAck: Self = this.set("ack", js.undefined)
+    @scala.inline
+    def setAddID(value: Boolean): Self = this.set("addID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddID: Self = this.set("addID", js.undefined)
+    @scala.inline
+    def setAggregate(value: minmax | min | max | average | total | count | none): Self = this.set("aggregate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregate: Self = this.set("aggregate", js.undefined)
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setFrom(value: Boolean): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setIgnoreNull(value: Boolean): Self = this.set("ignoreNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreNull: Self = this.set("ignoreNull", js.undefined)
+    @scala.inline
+    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setQ(value: Boolean): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setSessionId(value: js.Any): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    @scala.inline
+    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+  }
+  
 }
 

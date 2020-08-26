@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "code-excerpt" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "code-excerpt" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -6,21 +6,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DragRotateAndZoomOptions extends js.Object {
-  var condition: js.UndefOr[EventsConditionType] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
+  var condition: js.UndefOr[EventsConditionType] = js.native
+  var duration: js.UndefOr[Double] = js.native
 }
 
 object DragRotateAndZoomOptions {
   @scala.inline
-  def apply(
-    condition: /* event */ MapBrowserEvent => Boolean = null,
-    duration: js.UndefOr[Double] = js.undefined
-  ): DragRotateAndZoomOptions = {
+  def apply(): DragRotateAndZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragRotateAndZoomOptions]
   }
+  @scala.inline
+  implicit class DragRotateAndZoomOptionsOps[Self <: DragRotateAndZoomOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("condition", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+  }
+  
 }
 

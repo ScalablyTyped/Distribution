@@ -14,10 +14,26 @@ trait AwsS3BucketServerSideEncryptionRule extends js.Object {
 
 object AwsS3BucketServerSideEncryptionRule {
   @scala.inline
-  def apply(ApplyServerSideEncryptionByDefault: AwsS3BucketServerSideEncryptionByDefault = null): AwsS3BucketServerSideEncryptionRule = {
+  def apply(): AwsS3BucketServerSideEncryptionRule = {
     val __obj = js.Dynamic.literal()
-    if (ApplyServerSideEncryptionByDefault != null) __obj.updateDynamic("ApplyServerSideEncryptionByDefault")(ApplyServerSideEncryptionByDefault.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsS3BucketServerSideEncryptionRule]
   }
+  @scala.inline
+  implicit class AwsS3BucketServerSideEncryptionRuleOps[Self <: AwsS3BucketServerSideEncryptionRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplyServerSideEncryptionByDefault(value: AwsS3BucketServerSideEncryptionByDefault): Self = this.set("ApplyServerSideEncryptionByDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyServerSideEncryptionByDefault: Self = this.set("ApplyServerSideEncryptionByDefault", js.undefined)
+  }
+  
 }
 

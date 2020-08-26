@@ -17,6 +17,13 @@ object getTranslationDeclStmts extends js.Object {
     message: Message,
     variable: ReadVarExpr,
     closureVar: ReadVarExpr,
+    params: js.UndefOr[scala.Nothing],
+    transformFn: js.Function1[/* raw */ ReadVarExpr, Expression]
+  ): js.Array[Statement] = js.native
+  def apply(
+    message: Message,
+    variable: ReadVarExpr,
+    closureVar: ReadVarExpr,
     params: StringDictionary[Expression]
   ): js.Array[Statement] = js.native
   def apply(

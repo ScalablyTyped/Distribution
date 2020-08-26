@@ -96,6 +96,8 @@ package object codeguruprofilerMod {
   type RevisionId = java.lang.String
   type String = java.lang.String
   type Strings = js.Array[typings.awsSdk.codeguruprofilerMod.String]
+  type TagKeys = js.Array[typings.awsSdk.codeguruprofilerMod.String]
+  type TagsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codeguruprofilerMod.String]
   type TargetFrame = js.Array[typings.awsSdk.codeguruprofilerMod.String]
   type TargetFrames = js.Array[typings.awsSdk.codeguruprofilerMod.TargetFrame]
   type ThreadStates = js.Array[typings.awsSdk.codeguruprofilerMod.String]

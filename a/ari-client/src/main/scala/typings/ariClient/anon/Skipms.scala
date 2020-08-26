@@ -4,31 +4,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Skipms extends js.Object {
-  var channelId: String
-  var lang: js.UndefOr[String] = js.undefined
-  var media: String | js.Array[String]
-  var offsetms: js.UndefOr[Double] = js.undefined
-  var playbackId: js.UndefOr[String] = js.undefined
-  var skipms: js.UndefOr[Double] = js.undefined
+  var channelId: String = js.native
+  var lang: js.UndefOr[String] = js.native
+  var media: String | js.Array[String] = js.native
+  var offsetms: js.UndefOr[Double] = js.native
+  var playbackId: js.UndefOr[String] = js.native
+  var skipms: js.UndefOr[Double] = js.native
 }
 
 object Skipms {
   @scala.inline
-  def apply(
-    channelId: String,
-    media: String | js.Array[String],
-    lang: String = null,
-    offsetms: js.UndefOr[Double] = js.undefined,
-    playbackId: String = null,
-    skipms: js.UndefOr[Double] = js.undefined
-  ): Skipms = {
+  def apply(channelId: String, media: String | js.Array[String]): Skipms = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetms)) __obj.updateDynamic("offsetms")(offsetms.get.asInstanceOf[js.Any])
-    if (playbackId != null) __obj.updateDynamic("playbackId")(playbackId.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipms)) __obj.updateDynamic("skipms")(skipms.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Skipms]
   }
+  @scala.inline
+  implicit class SkipmsOps[Self <: Skipms] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMediaVarargs(value: String*): Self = this.set("media", js.Array(value :_*))
+    @scala.inline
+    def setMedia(value: String | js.Array[String]): Self = this.set("media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setOffsetms(value: Double): Self = this.set("offsetms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetms: Self = this.set("offsetms", js.undefined)
+    @scala.inline
+    def setPlaybackId(value: String): Self = this.set("playbackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaybackId: Self = this.set("playbackId", js.undefined)
+    @scala.inline
+    def setSkipms(value: Double): Self = this.set("skipms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipms: Self = this.set("skipms", js.undefined)
+  }
+  
 }
 

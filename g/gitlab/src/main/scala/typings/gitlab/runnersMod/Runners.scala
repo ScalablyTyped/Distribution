@@ -1,6 +1,6 @@
 package typings.gitlab.runnersMod
 
-import typings.gitlab.anon.projectIdstringnumberPagiDictkey
+import typings.gitlab.anon.projectIdstringnumberPagi
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist/types/core/services/Runners", "Runners")
 @js.native
 class Runners () extends BaseService {
-  def all(hasProjectIdOptions: projectIdstringnumberPagiDictkey): js.Promise[GetResponse] = js.native
+  def all(hasProjectIdOptions: projectIdstringnumberPagi): js.Promise[GetResponse] = js.native
   def allOwned(): js.Promise[GetResponse] = js.native
   def allOwned(options: BaseRequestOptions): js.Promise[GetResponse] = js.native
   def disable(projectId: String, runnerId: Double): js.Promise[js.Object] = js.native

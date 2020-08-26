@@ -1,76 +1,79 @@
 package typings.bootbox
 
 import typings.bootbox.anon.Group
-import typings.bootbox.bootboxStrings.`extra-large`
 import typings.bootbox.bootboxStrings.checkbox
 import typings.bootbox.bootboxStrings.date
 import typings.bootbox.bootboxStrings.email
-import typings.bootbox.bootboxStrings.large
-import typings.bootbox.bootboxStrings.lg
 import typings.bootbox.bootboxStrings.number
 import typings.bootbox.bootboxStrings.password
 import typings.bootbox.bootboxStrings.radio
 import typings.bootbox.bootboxStrings.range
 import typings.bootbox.bootboxStrings.select
-import typings.bootbox.bootboxStrings.sm
-import typings.bootbox.bootboxStrings.small
 import typings.bootbox.bootboxStrings.text
 import typings.bootbox.bootboxStrings.textarea
 import typings.bootbox.bootboxStrings.time
-import typings.bootbox.bootboxStrings.xl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Bootbox options available for prompt modals */
+@js.native
 trait BootboxPromptOptions extends BootboxBaseOptions[String] {
   @JSName("buttons")
-  var buttons_BootboxPromptOptions: js.UndefOr[BootboxConfirmPromptButtonMap] = js.undefined
-  var inputOptions: js.UndefOr[js.Array[Group]] = js.undefined
+  var buttons_BootboxPromptOptions: js.UndefOr[BootboxConfirmPromptButtonMap] = js.native
+  var inputOptions: js.UndefOr[js.Array[Group]] = js.native
   var inputType: js.UndefOr[
     text | textarea | email | select | checkbox | date | time | number | password | radio | range
-  ] = js.undefined
+  ] = js.native
   @JSName("title")
-  var title_BootboxPromptOptions: String
-  var value: js.UndefOr[String] = js.undefined
+  var title_BootboxPromptOptions: String = js.native
+  var value: js.UndefOr[String] = js.native
   @JSName("callback")
-  def callback_MBootboxPromptOptions(result: String): js.Any
+  def callback_MBootboxPromptOptions(result: String): js.Any = js.native
 }
 
 object BootboxPromptOptions {
   @scala.inline
-  def apply(
-    callback: String => js.Any,
-    title: String,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    backdrop: js.UndefOr[Boolean] = js.undefined,
-    buttons: BootboxConfirmPromptButtonMap = null,
-    className: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    inputOptions: js.Array[Group] = null,
-    inputType: text | textarea | email | select | checkbox | date | time | number | password | radio | range = null,
-    locale: String = null,
-    onEscape: js.Function0[_] | Boolean = null,
-    scrollable: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    size: small | sm | large | lg | `extra-large` | xl = null,
-    value: String = null
-  ): BootboxPromptOptions = {
+  def apply(callback: String => js.Any, title: String): BootboxPromptOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.get.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
-    if (inputOptions != null) __obj.updateDynamic("inputOptions")(inputOptions.asInstanceOf[js.Any])
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxPromptOptions]
   }
+  @scala.inline
+  implicit class BootboxPromptOptionsOps[Self <: BootboxPromptOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallback(value: String => js.Any): Self = this.set("callback", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setButtons(value: BootboxConfirmPromptButtonMap): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setInputOptionsVarargs(value: Group*): Self = this.set("inputOptions", js.Array(value :_*))
+    @scala.inline
+    def setInputOptions(value: js.Array[Group]): Self = this.set("inputOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputOptions: Self = this.set("inputOptions", js.undefined)
+    @scala.inline
+    def setInputType(
+      value: text | textarea | email | select | checkbox | date | time | number | password | radio | range
+    ): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputType: Self = this.set("inputType", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

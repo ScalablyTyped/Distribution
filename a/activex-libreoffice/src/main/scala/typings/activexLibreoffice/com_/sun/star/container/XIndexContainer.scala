@@ -9,15 +9,16 @@ import scala.scalajs.js.annotation._
   * This is the generic interface for supporting the insertion and removal of indexed elements.
   * @see XContainer
   */
+@js.native
 trait XIndexContainer extends XIndexReplace {
   /**
     * inserts the given element at the specified index.
     *
     * To append an element, use the index "last index +1".
     */
-  def insertByIndex(Index: Double, Element: js.Any): Unit
+  def insertByIndex(Index: Double, Element: js.Any): Unit = js.native
   /** removes the element at the specified index. */
-  def removeByIndex(Index: Double): Unit
+  def removeByIndex(Index: Double): Unit = js.native
 }
 
 object XIndexContainer {
@@ -39,5 +40,22 @@ object XIndexContainer {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), replaceByIndex = js.Any.fromFunction2(replaceByIndex))
     __obj.asInstanceOf[XIndexContainer]
   }
+  @scala.inline
+  implicit class XIndexContainerOps[Self <: XIndexContainer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInsertByIndex(value: (Double, js.Any) => Unit): Self = this.set("insertByIndex", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRemoveByIndex(value: Double => Unit): Self = this.set("removeByIndex", js.Any.fromFunction1(value))
+  }
+  
 }
 

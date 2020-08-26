@@ -11,10 +11,26 @@ trait KeyProviderSettings extends js.Object {
 
 object KeyProviderSettings {
   @scala.inline
-  def apply(StaticKeySettings: StaticKeySettings = null): KeyProviderSettings = {
+  def apply(): KeyProviderSettings = {
     val __obj = js.Dynamic.literal()
-    if (StaticKeySettings != null) __obj.updateDynamic("StaticKeySettings")(StaticKeySettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyProviderSettings]
   }
+  @scala.inline
+  implicit class KeyProviderSettingsOps[Self <: KeyProviderSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStaticKeySettings(value: StaticKeySettings): Self = this.set("StaticKeySettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticKeySettings: Self = this.set("StaticKeySettings", js.undefined)
+  }
+  
 }
 

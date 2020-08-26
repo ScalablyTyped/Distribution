@@ -26,6 +26,12 @@ import scala.scalajs.js.annotation._
 trait TextureMatrix extends js.Object {
   /**
     * Tracks Texture frame changes
+    * @member {number} PIXI.TextureMatrix#_textureID
+    * @protected
+    */
+  var _textureID: Double = js.native
+  /**
+    * Tracks Texture frame changes
     * @member {number} PIXI.TextureMatrix#_updateID
     * @protected
     */

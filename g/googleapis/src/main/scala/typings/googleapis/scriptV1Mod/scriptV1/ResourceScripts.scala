@@ -39,6 +39,7 @@ class ResourceScripts protected () extends js.Object {
     */
   def run(): GaxiosPromise[SchemaOperation] = js.native
   def run(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourceScriptsRun): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourceScriptsRun, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def run(

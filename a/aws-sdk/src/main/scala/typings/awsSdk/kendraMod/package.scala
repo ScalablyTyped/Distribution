@@ -172,6 +172,12 @@ package object kendraMod {
   type PrincipalType = typings.awsSdk.kendraMod._PrincipalType | java.lang.String
   type QueryCapacityUnit = scala.Double
   type QueryId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DOUBLE_QUOTES
+    - typings.awsSdk.awsSdkStrings.NONE
+    - java.lang.String
+  */
+  type QueryIdentifiersEnclosingOption = typings.awsSdk.kendraMod._QueryIdentifiersEnclosingOption | java.lang.String
   type QueryResultItemList = js.Array[typings.awsSdk.kendraMod.QueryResultItem]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DOCUMENT
@@ -249,6 +255,12 @@ package object kendraMod {
   type ServiceNowHostUrl = java.lang.String
   type SharePointUrlList = js.Array[typings.awsSdk.kendraMod.Url]
   type SharePointVersion = typings.awsSdk.awsSdkStrings.SHAREPOINT_ONLINE | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DESC
+    - typings.awsSdk.awsSdkStrings.ASC
+    - java.lang.String
+  */
+  type SortOrder = typings.awsSdk.kendraMod._SortOrder | java.lang.String
   type StorageCapacityUnit = scala.Double
   type String = java.lang.String
   type SubnetId = java.lang.String

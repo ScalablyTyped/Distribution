@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ffmpeg-static"
-version := "3.0-dt-20200515Z-411673"
-scalaVersion := "2.13.2"
+version := "3.0-dt-20200515Z-f27074"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

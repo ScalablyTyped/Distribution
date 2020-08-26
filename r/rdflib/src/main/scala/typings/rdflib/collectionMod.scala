@@ -41,7 +41,7 @@ object collectionMod extends js.Object {
     def close(): Boolean = js.native
     def compareTerm(other: typings.rdflib.blankNodeMod.default): Double = js.native
     def id: String = js.native
-    def id(value: String): js.Any = js.native
+    def id_=(value: String): Unit = js.native
     /**
       * Removes the first element from the collection (and return it)
       */

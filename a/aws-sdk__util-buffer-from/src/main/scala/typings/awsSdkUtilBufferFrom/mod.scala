@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def fromArrayBuffer(input: ArrayBuffer): Buffer = js.native
+  def fromArrayBuffer(input: ArrayBuffer, offset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
   def fromArrayBuffer(input: ArrayBuffer, offset: Double): Buffer = js.native
   def fromArrayBuffer(input: ArrayBuffer, offset: Double, length: Double): Buffer = js.native
   def fromString(input: String): Buffer = js.native

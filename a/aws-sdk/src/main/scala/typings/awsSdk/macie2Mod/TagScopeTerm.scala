@@ -26,18 +26,40 @@ trait TagScopeTerm extends js.Object {
 
 object TagScopeTerm {
   @scala.inline
-  def apply(
-    comparator: JobComparator = null,
-    key: string = null,
-    tagValues: listOfTagValuePair = null,
-    target: TagTarget = null
-  ): TagScopeTerm = {
+  def apply(): TagScopeTerm = {
     val __obj = js.Dynamic.literal()
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (tagValues != null) __obj.updateDynamic("tagValues")(tagValues.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagScopeTerm]
   }
+  @scala.inline
+  implicit class TagScopeTermOps[Self <: TagScopeTerm] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparator(value: JobComparator): Self = this.set("comparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparator: Self = this.set("comparator", js.undefined)
+    @scala.inline
+    def setKey(value: string): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setTagValuesVarargs(value: TagValuePair*): Self = this.set("tagValues", js.Array(value :_*))
+    @scala.inline
+    def setTagValues(value: listOfTagValuePair): Self = this.set("tagValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagValues: Self = this.set("tagValues", js.undefined)
+    @scala.inline
+    def setTarget(value: TagTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

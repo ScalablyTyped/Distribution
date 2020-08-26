@@ -6,31 +6,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateObservableOptions extends js.Object {
-  var deep: js.UndefOr[Boolean] = js.undefined
-  var defaultDecorator: js.UndefOr[IObservableDecorator] = js.undefined
+  var deep: js.UndefOr[Boolean] = js.native
+  var defaultDecorator: js.UndefOr[IObservableDecorator] = js.native
   @JSName("equals")
-  var equals_FCreateObservableOptions: js.UndefOr[IEqualsComparer[_]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var proxy: js.UndefOr[Boolean] = js.undefined
+  var equals_FCreateObservableOptions: js.UndefOr[IEqualsComparer[_]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[Boolean] = js.native
 }
 
 object CreateObservableOptions {
   @scala.inline
-  def apply(
-    deep: js.UndefOr[Boolean] = js.undefined,
-    defaultDecorator: IObservableDecorator = null,
-    equals: (_, _) => Boolean = null,
-    name: String = null,
-    proxy: js.UndefOr[Boolean] = js.undefined
-  ): CreateObservableOptions = {
+  def apply(): CreateObservableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.get.asInstanceOf[js.Any])
-    if (defaultDecorator != null) __obj.updateDynamic("defaultDecorator")(defaultDecorator.asInstanceOf[js.Any])
-    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateObservableOptions]
   }
+  @scala.inline
+  implicit class CreateObservableOptionsOps[Self <: CreateObservableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeep(value: Boolean): Self = this.set("deep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeep: Self = this.set("deep", js.undefined)
+    @scala.inline
+    def setDefaultDecorator(value: IObservableDecorator): Self = this.set("defaultDecorator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultDecorator: Self = this.set("defaultDecorator", js.undefined)
+    @scala.inline
+    def setEquals(value: (_, _) => Boolean): Self = this.set("equals", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEquals: Self = this.set("equals", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProxy(value: Boolean): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+  }
+  
 }
 

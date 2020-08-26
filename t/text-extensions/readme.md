@@ -12,7 +12,7 @@ List of text file extensions
 | Keywords           | text, ascii, extensions, extension, file, json, list, array |
 | # releases         | 4 |
 | # dependents       | 11 |
-| # downloads        | 39503562 |
+| # downloads        | 43399717 |
 | # stars            | 0 |
 
 ## Links

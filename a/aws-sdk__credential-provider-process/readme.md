@@ -12,7 +12,7 @@ AWS credential provider that sources credential_process from ~/.aws/credentials 
 | Keywords           | aws, credentials |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 12959 |
+| # downloads        | 14738 |
 | # stars            | 0 |
 
 ## Links

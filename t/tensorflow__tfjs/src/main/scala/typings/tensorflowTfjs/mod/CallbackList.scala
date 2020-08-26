@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 class CallbackList ()
   extends typings.tensorflowTfjsLayers.mod.CallbackList {
   def this(callbacks: js.Array[BaseCallback]) = this()
+  def this(callbacks: js.UndefOr[scala.Nothing], queueLength: Double) = this()
   def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()
 }
 

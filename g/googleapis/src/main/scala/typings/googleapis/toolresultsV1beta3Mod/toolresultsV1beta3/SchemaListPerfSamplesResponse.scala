@@ -17,11 +17,32 @@ trait SchemaListPerfSamplesResponse extends js.Object {
 
 object SchemaListPerfSamplesResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, perfSamples: js.Array[SchemaPerfSample] = null): SchemaListPerfSamplesResponse = {
+  def apply(): SchemaListPerfSamplesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (perfSamples != null) __obj.updateDynamic("perfSamples")(perfSamples.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListPerfSamplesResponse]
   }
+  @scala.inline
+  implicit class SchemaListPerfSamplesResponseOps[Self <: SchemaListPerfSamplesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setPerfSamplesVarargs(value: SchemaPerfSample*): Self = this.set("perfSamples", js.Array(value :_*))
+    @scala.inline
+    def setPerfSamples(value: js.Array[SchemaPerfSample]): Self = this.set("perfSamples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerfSamples: Self = this.set("perfSamples", js.undefined)
+  }
+  
 }
 

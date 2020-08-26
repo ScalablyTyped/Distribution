@@ -10,13 +10,6 @@ import scala.scalajs.js.annotation._
 class ReservedMimeTypeEntry protected () extends Entry {
   def this(content: Buffer, `type`: Double) = this()
   /**
-    * Returns the un-decoded content of the {@link Entry}.
-    *
-    * @return the un-decoded content of the {@link Entry}
-    */
-  /* CompleteClass */
-  override val content: Buffer = js.native
-  /**
     * {@inheritDoc} Since this entry represents a compressed id that couldn't be decoded, this is
     * always {@code null}.
     */

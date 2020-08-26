@@ -1,51 +1,46 @@
 package typings.passportGoogleOauth20.mod
 
-import typings.node.httpMod.OutgoingHttpHeaders
-import typings.passportOauth2.mod.StateStore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrategyOptionsBase extends OAuth2StrategyOptionsWithoutRequiredURLs {
-  var authorizationURL: js.UndefOr[String] = js.undefined
-  var tokenURL: js.UndefOr[String] = js.undefined
-  var userProfileURL: js.UndefOr[String] = js.undefined
+  var authorizationURL: js.UndefOr[String] = js.native
+  var tokenURL: js.UndefOr[String] = js.native
+  var userProfileURL: js.UndefOr[String] = js.native
 }
 
 object StrategyOptionsBase {
   @scala.inline
-  def apply(
-    clientID: String,
-    clientSecret: String,
-    authorizationURL: String = null,
-    callbackURL: String = null,
-    customHeaders: OutgoingHttpHeaders = null,
-    pkce: js.UndefOr[Boolean] = js.undefined,
-    proxy: js.Any = null,
-    scope: String | js.Array[String] = null,
-    scopeSeparator: String = null,
-    sessionKey: String = null,
-    skipUserProfile: js.Any = null,
-    state: js.Any = null,
-    store: StateStore = null,
-    tokenURL: String = null,
-    userProfileURL: String = null
-  ): StrategyOptionsBase = {
+  def apply(clientID: String, clientSecret: String): StrategyOptionsBase = {
     val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
-    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL.asInstanceOf[js.Any])
-    if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL.asInstanceOf[js.Any])
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(pkce)) __obj.updateDynamic("pkce")(pkce.get.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator.asInstanceOf[js.Any])
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
-    if (skipUserProfile != null) __obj.updateDynamic("skipUserProfile")(skipUserProfile.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL.asInstanceOf[js.Any])
-    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptionsBase]
   }
+  @scala.inline
+  implicit class StrategyOptionsBaseOps[Self <: StrategyOptionsBase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizationURL(value: String): Self = this.set("authorizationURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationURL: Self = this.set("authorizationURL", js.undefined)
+    @scala.inline
+    def setTokenURL(value: String): Self = this.set("tokenURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenURL: Self = this.set("tokenURL", js.undefined)
+    @scala.inline
+    def setUserProfileURL(value: String): Self = this.set("userProfileURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProfileURL: Self = this.set("userProfileURL", js.undefined)
+  }
+  
 }
 

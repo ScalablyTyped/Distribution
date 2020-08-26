@@ -1,7 +1,7 @@
 
 # Scala.js typings for binary-extensions
 
-Typings are for version 2.0.0
+Typings are for version 2.1.0
 
 ## Library description:
 List of binary file extensions
@@ -11,8 +11,8 @@ List of binary file extensions
 | Full name          | binary-extensions |
 | Keywords           | binary, extensions, extension, file, json, list, array |
 | # releases         | 5 |
-| # dependents       | 59 |
-| # downloads        | 431412814 |
+| # dependents       | 60 |
+| # downloads        | 465444727 |
 | # stars            | 1 |
 
 ## Links

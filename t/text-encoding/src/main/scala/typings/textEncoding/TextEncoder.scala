@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait TextEncoder extends js.Object {
   val encoding: String = js.native
   def encode(): Uint8Array = js.native
+  def encode(input: js.UndefOr[scala.Nothing], options: TextEncodeOptions): Uint8Array = js.native
   def encode(input: String): Uint8Array = js.native
   def encode(input: String, options: TextEncodeOptions): Uint8Array = js.native
 }

@@ -56,28 +56,58 @@ trait SchemaPlayerLeaderboardScore extends js.Object {
 
 object SchemaPlayerLeaderboardScore {
   @scala.inline
-  def apply(
-    kind: String = null,
-    leaderboard_id: String = null,
-    publicRank: SchemaLeaderboardScoreRank = null,
-    scoreString: String = null,
-    scoreTag: String = null,
-    scoreValue: String = null,
-    socialRank: SchemaLeaderboardScoreRank = null,
-    timeSpan: String = null,
-    writeTimestamp: String = null
-  ): SchemaPlayerLeaderboardScore = {
+  def apply(): SchemaPlayerLeaderboardScore = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (leaderboard_id != null) __obj.updateDynamic("leaderboard_id")(leaderboard_id.asInstanceOf[js.Any])
-    if (publicRank != null) __obj.updateDynamic("publicRank")(publicRank.asInstanceOf[js.Any])
-    if (scoreString != null) __obj.updateDynamic("scoreString")(scoreString.asInstanceOf[js.Any])
-    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag.asInstanceOf[js.Any])
-    if (scoreValue != null) __obj.updateDynamic("scoreValue")(scoreValue.asInstanceOf[js.Any])
-    if (socialRank != null) __obj.updateDynamic("socialRank")(socialRank.asInstanceOf[js.Any])
-    if (timeSpan != null) __obj.updateDynamic("timeSpan")(timeSpan.asInstanceOf[js.Any])
-    if (writeTimestamp != null) __obj.updateDynamic("writeTimestamp")(writeTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlayerLeaderboardScore]
   }
+  @scala.inline
+  implicit class SchemaPlayerLeaderboardScoreOps[Self <: SchemaPlayerLeaderboardScore] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLeaderboard_id(value: String): Self = this.set("leaderboard_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaderboard_id: Self = this.set("leaderboard_id", js.undefined)
+    @scala.inline
+    def setPublicRank(value: SchemaLeaderboardScoreRank): Self = this.set("publicRank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicRank: Self = this.set("publicRank", js.undefined)
+    @scala.inline
+    def setScoreString(value: String): Self = this.set("scoreString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoreString: Self = this.set("scoreString", js.undefined)
+    @scala.inline
+    def setScoreTag(value: String): Self = this.set("scoreTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoreTag: Self = this.set("scoreTag", js.undefined)
+    @scala.inline
+    def setScoreValue(value: String): Self = this.set("scoreValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoreValue: Self = this.set("scoreValue", js.undefined)
+    @scala.inline
+    def setSocialRank(value: SchemaLeaderboardScoreRank): Self = this.set("socialRank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialRank: Self = this.set("socialRank", js.undefined)
+    @scala.inline
+    def setTimeSpan(value: String): Self = this.set("timeSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeSpan: Self = this.set("timeSpan", js.undefined)
+    @scala.inline
+    def setWriteTimestamp(value: String): Self = this.set("writeTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteTimestamp: Self = this.set("writeTimestamp", js.undefined)
+  }
+  
 }
 

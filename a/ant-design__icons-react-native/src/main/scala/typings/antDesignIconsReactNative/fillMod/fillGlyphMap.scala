@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-react-native/lib/fill", "fillGlyphMap")
+@JSImport("@ant-design/icons-react-native/es/fill", "fillGlyphMap")
 @js.native
 object fillGlyphMap extends js.Object {
   var `account-book`: Double = js.native

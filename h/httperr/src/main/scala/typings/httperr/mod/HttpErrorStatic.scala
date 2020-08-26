@@ -14,7 +14,7 @@ trait HttpErrorStatic
   extends Instantiable0[HttpError]
      with Instantiable1[(/* config */ Config) | (/* config */ Error) | (/* config */ String), HttpError]
      with Instantiable2[
-      (/* config */ Config) | (/* config */ Error) | (/* config */ String), 
+      js.UndefOr[(/* config */ Config) | (/* config */ Error) | (/* config */ String)], 
       /* extra */ js.Object, 
       HttpError
     ]

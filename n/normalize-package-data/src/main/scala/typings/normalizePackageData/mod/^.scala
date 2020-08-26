@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(data: Input): Unit = js.native
   def apply(data: Input, strict: Boolean): Unit = js.native
+  def apply(data: Input, warn: js.UndefOr[scala.Nothing], strict: Boolean): Unit = js.native
   def apply(data: Input, warn: WarnFn): Unit = js.native
   def apply(data: Input, warn: WarnFn, strict: Boolean): Unit = js.native
 }

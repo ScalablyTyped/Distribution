@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * Provides a unified interface for new-style service {@link SystemClipboard} .
   * @since LibreOffice 4.2
   */
+@js.native
 trait XSystemClipboard
   extends XClipboardEx
      with XClipboardNotifier

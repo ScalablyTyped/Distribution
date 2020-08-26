@@ -15,20 +15,14 @@ trait GetAllTemplates extends js.Object {
     * List all templates available to pass as an option when [creating a repository](https://developer.github.com/v3/repos/#create-a-repository-for-the-authenticated-user).
     */
   @JSName("getAllTemplates")
-  var getAllTemplates_Original: `146` = js.native
+  var getAllTemplates_Original: `154` = js.native
   /**
     * The API also allows fetching the source of a single template.
     *
     * Use the raw [media type](https://developer.github.com/v3/media/) to get the raw contents.
     */
   @JSName("getTemplate")
-  var getTemplate_Original: `147` = js.native
-  /**
-    * List all templates available to pass as an option when [creating a repository](https://developer.github.com/v3/repos/#create-a-repository-for-the-authenticated-user).
-    * @deprecated octokit.gitignore.listTemplates() has been renamed to octokit.gitignore.getAllTemplates() (2020-06-04)
-    */
-  @JSName("listTemplates")
-  var listTemplates_Original: `146` = js.native
+  var getTemplate_Original: `155` = js.native
   /**
     * List all templates available to pass as an option when [creating a repository](https://developer.github.com/v3/repos/#create-a-repository-for-the-authenticated-user).
     */
@@ -58,21 +52,6 @@ trait GetAllTemplates extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /gitignore/templates/:name']['response'] */ js.Any
-  ] = js.native
-  /**
-    * List all templates available to pass as an option when [creating a repository](https://developer.github.com/v3/repos/#create-a-repository-for-the-authenticated-user).
-    * @deprecated octokit.gitignore.listTemplates() has been renamed to octokit.gitignore.getAllTemplates() (2020-06-04)
-    */
-  def listTemplates(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /gitignore/templates']['response'] */ js.Any
-  ] = js.native
-  def listTemplates(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /gitignore/templates']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /gitignore/templates']['response'] */ js.Any
   ] = js.native
 }
 

@@ -1,6 +1,5 @@
 package typings.kendoUi.global.kendo.dataviz.map
 
-import typings.kendoUi.kendo.dataviz.map.LocationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,24 +9,6 @@ import scala.scalajs.js.annotation._
 class Location protected ()
   extends typings.kendoUi.kendo.dataviz.map.Location {
   def this(lat: Double, lng: Double) = this()
-  /* CompleteClass */
-  override var lat: Double = js.native
-  /* CompleteClass */
-  override var lng: Double = js.native
-  /* CompleteClass */
-  override var options: LocationOptions = js.native
-  /* CompleteClass */
-  override def destination(destination: typings.kendoUi.kendo.dataviz.map.Location, bearing: Double): Double = js.native
-  /* CompleteClass */
-  override def distanceTo(distance: Double, bearing: Double): typings.kendoUi.kendo.dataviz.map.Location = js.native
-  /* CompleteClass */
-  override def equals(location: typings.kendoUi.kendo.dataviz.map.Location): Boolean = js.native
-  /* CompleteClass */
-  override def round(digits: Double): typings.kendoUi.kendo.dataviz.map.Location = js.native
-  /* CompleteClass */
-  override def toArray(): js.Any = js.native
-  /* CompleteClass */
-  override def wrap(): typings.kendoUi.kendo.dataviz.map.Location = js.native
 }
 
 /* static members */

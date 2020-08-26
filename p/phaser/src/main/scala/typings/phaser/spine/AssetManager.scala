@@ -21,6 +21,11 @@ trait AssetManager extends Disposable {
   def hasErrors(): Boolean = js.native
   def isLoadingComplete(): Boolean = js.native
   def loadBinary(path: String): Unit = js.native
+  def loadBinary(
+    path: String,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function2[/* path */ String, /* error */ String, Unit]
+  ): Unit = js.native
   def loadBinary(path: String, success: js.Function2[/* path */ String, /* binary */ Uint8Array, Unit]): Unit = js.native
   def loadBinary(
     path: String,
@@ -28,6 +33,11 @@ trait AssetManager extends Disposable {
     error: js.Function2[/* path */ String, /* error */ String, Unit]
   ): Unit = js.native
   def loadText(path: String): Unit = js.native
+  def loadText(
+    path: String,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function2[/* path */ String, /* error */ String, Unit]
+  ): Unit = js.native
   def loadText(path: String, success: js.Function2[/* path */ String, /* text */ String, Unit]): Unit = js.native
   def loadText(
     path: String,
@@ -35,6 +45,11 @@ trait AssetManager extends Disposable {
     error: js.Function2[/* path */ String, /* error */ String, Unit]
   ): Unit = js.native
   def loadTexture(path: String): Unit = js.native
+  def loadTexture(
+    path: String,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function2[/* path */ String, /* error */ String, Unit]
+  ): Unit = js.native
   def loadTexture(path: String, success: js.Function2[/* path */ String, /* image */ HTMLImageElement, Unit]): Unit = js.native
   def loadTexture(
     path: String,
@@ -42,6 +57,11 @@ trait AssetManager extends Disposable {
     error: js.Function2[/* path */ String, /* error */ String, Unit]
   ): Unit = js.native
   def loadTextureAtlas(path: String): Unit = js.native
+  def loadTextureAtlas(
+    path: String,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function2[/* path */ String, /* error */ String, Unit]
+  ): Unit = js.native
   def loadTextureAtlas(path: String, success: js.Function2[/* path */ String, /* atlas */ TextureAtlas, Unit]): Unit = js.native
   def loadTextureAtlas(
     path: String,
@@ -49,6 +69,12 @@ trait AssetManager extends Disposable {
     error: js.Function2[/* path */ String, /* error */ String, Unit]
   ): Unit = js.native
   def loadTextureData(path: String, data: String): Unit = js.native
+  def loadTextureData(
+    path: String,
+    data: String,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function2[/* path */ String, /* error */ String, Unit]
+  ): Unit = js.native
   def loadTextureData(
     path: String,
     data: String,

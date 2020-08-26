@@ -42,26 +42,56 @@ trait OptionGroup extends js.Object {
 
 object OptionGroup {
   @scala.inline
-  def apply(
-    AllowsVpcAndNonVpcInstanceMemberships: js.UndefOr[Boolean] = js.undefined,
-    EngineName: String = null,
-    MajorEngineVersion: String = null,
-    OptionGroupArn: String = null,
-    OptionGroupDescription: String = null,
-    OptionGroupName: String = null,
-    Options: OptionsList = null,
-    VpcId: String = null
-  ): OptionGroup = {
+  def apply(): OptionGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowsVpcAndNonVpcInstanceMemberships)) __obj.updateDynamic("AllowsVpcAndNonVpcInstanceMemberships")(AllowsVpcAndNonVpcInstanceMemberships.get.asInstanceOf[js.Any])
-    if (EngineName != null) __obj.updateDynamic("EngineName")(EngineName.asInstanceOf[js.Any])
-    if (MajorEngineVersion != null) __obj.updateDynamic("MajorEngineVersion")(MajorEngineVersion.asInstanceOf[js.Any])
-    if (OptionGroupArn != null) __obj.updateDynamic("OptionGroupArn")(OptionGroupArn.asInstanceOf[js.Any])
-    if (OptionGroupDescription != null) __obj.updateDynamic("OptionGroupDescription")(OptionGroupDescription.asInstanceOf[js.Any])
-    if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionGroup]
   }
+  @scala.inline
+  implicit class OptionGroupOps[Self <: OptionGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowsVpcAndNonVpcInstanceMemberships(value: Boolean): Self = this.set("AllowsVpcAndNonVpcInstanceMemberships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowsVpcAndNonVpcInstanceMemberships: Self = this.set("AllowsVpcAndNonVpcInstanceMemberships", js.undefined)
+    @scala.inline
+    def setEngineName(value: String): Self = this.set("EngineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineName: Self = this.set("EngineName", js.undefined)
+    @scala.inline
+    def setMajorEngineVersion(value: String): Self = this.set("MajorEngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorEngineVersion: Self = this.set("MajorEngineVersion", js.undefined)
+    @scala.inline
+    def setOptionGroupArn(value: String): Self = this.set("OptionGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupArn: Self = this.set("OptionGroupArn", js.undefined)
+    @scala.inline
+    def setOptionGroupDescription(value: String): Self = this.set("OptionGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupDescription: Self = this.set("OptionGroupDescription", js.undefined)
+    @scala.inline
+    def setOptionGroupName(value: String): Self = this.set("OptionGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupName: Self = this.set("OptionGroupName", js.undefined)
+    @scala.inline
+    def setOptionsVarargs(value: Option*): Self = this.set("Options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: OptionsList): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

@@ -1,54 +1,52 @@
 package typings.jquery.JQuery
 
-import typings.std.Element
-import typings.std.TouchList
-import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // region Event
 // #region Event
+@js.native
 trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
   // MouseEvent, KeyboardEvent, TouchEvent
   @JSName("altKey")
-  var altKey_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var altKey_EventBase: js.UndefOr[scala.Nothing] = js.native
   // Event
   @JSName("bubbles")
-  var bubbles_EventBase: Boolean
+  var bubbles_EventBase: Boolean = js.native
   // MouseEvent
   @JSName("button")
-  var button_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var button_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("buttons")
-  var buttons_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var buttons_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("cancelable")
-  var cancelable_EventBase: Boolean
+  var cancelable_EventBase: Boolean = js.native
   // TouchEvent
   @JSName("changedTouches")
-  var changedTouches_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var changedTouches_EventBase: js.UndefOr[scala.Nothing] = js.native
   /** @deprecated */
   @JSName("charCode")
-  var charCode_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var charCode_EventBase: js.UndefOr[scala.Nothing] = js.native
   // KeyboardEvent
   /** @deprecated */
   @JSName("char")
-  var char_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var char_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("clientX")
-  var clientX_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var clientX_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("clientY")
-  var clientY_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var clientY_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("ctrlKey")
-  var ctrlKey_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var ctrlKey_EventBase: js.UndefOr[scala.Nothing] = js.native
   // UIEvent
   @JSName("detail")
-  var detail_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var detail_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("eventPhase")
-  var eventPhase_EventBase: Double
+  var eventPhase_EventBase: Double = js.native
   /** @deprecated */
   @JSName("keyCode")
-  var keyCode_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var keyCode_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("key")
-  var key_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var key_EventBase: js.UndefOr[scala.Nothing] = js.native
   /**
     * Indicates whether the META key was pressed when the event fired.
     * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
@@ -86,11 +84,11 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   ```
     */
   @JSName("metaKey")
-  var metaKey_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var metaKey_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("offsetX")
-  var offsetX_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var offsetX_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("offsetY")
-  var offsetY_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var offsetY_EventBase: js.UndefOr[scala.Nothing] = js.native
   /**
     * The mouse position relative to the left edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageX/ }\`
@@ -127,7 +125,7 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   ```
     */
   @JSName("pageX")
-  var pageX_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var pageX_EventBase: js.UndefOr[scala.Nothing] = js.native
   /**
     * The mouse position relative to the top edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageY/ }\`
@@ -164,12 +162,12 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   ```
     */
   @JSName("pageY")
-  var pageY_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var pageY_EventBase: js.UndefOr[scala.Nothing] = js.native
   // PointerEvent
   @JSName("pointerId")
-  var pointerId_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var pointerId_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("pointerType")
-  var pointerType_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var pointerType_EventBase: js.UndefOr[scala.Nothing] = js.native
   /**
     * The other DOM element involved in the event, if any.
     * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
@@ -181,22 +179,22 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   });
   ```
     */
-  var relatedTarget: js.UndefOr[scala.Nothing] = js.undefined
+  var relatedTarget: js.UndefOr[scala.Nothing] = js.native
   @JSName("screenX")
-  var screenX_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var screenX_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("screenY")
-  var screenY_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var screenY_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("shiftKey")
-  var shiftKey_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var shiftKey_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("targetTouches")
-  var targetTouches_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var targetTouches_EventBase: js.UndefOr[scala.Nothing] = js.native
   /** @deprecated */
   @JSName("toElement")
-  var toElement_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var toElement_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("touches")
-  var touches_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var touches_EventBase: js.UndefOr[scala.Nothing] = js.native
   @JSName("view")
-  var view_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var view_EventBase: js.UndefOr[scala.Nothing] = js.native
   // MouseEvent, KeyboardEvent
   /**
     * For key or mouse events, this property indicates the specific key or button that was pressed.
@@ -251,7 +249,7 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   ```
     */
   @JSName("which")
-  var which_EventBase: js.UndefOr[scala.Nothing] = js.undefined
+  var which_EventBase: js.UndefOr[scala.Nothing] = js.native
 }
 
 object EventBase {
@@ -271,71 +269,30 @@ object EventBase {
     stopPropagation: () => Unit,
     target: TTarget,
     timeStamp: Double,
-    `type`: String,
-    altKey: js.UndefOr[Boolean] = js.undefined,
-    button: js.UndefOr[Double] = js.undefined,
-    buttons: js.UndefOr[Double] = js.undefined,
-    changedTouches: TouchList = null,
-    char: String = null,
-    charCode: js.UndefOr[Double] = js.undefined,
-    clientX: js.UndefOr[Double] = js.undefined,
-    clientY: js.UndefOr[Double] = js.undefined,
-    ctrlKey: js.UndefOr[Boolean] = js.undefined,
-    detail: js.UndefOr[Double] = js.undefined,
-    key: String = null,
-    keyCode: js.UndefOr[Double] = js.undefined,
-    metaKey: js.UndefOr[Boolean] = js.undefined,
-    namespace: String = null,
-    offsetX: js.UndefOr[Double] = js.undefined,
-    offsetY: js.UndefOr[Double] = js.undefined,
-    originalEvent: typings.jquery.Event = null,
-    pageX: js.UndefOr[Double] = js.undefined,
-    pageY: js.UndefOr[Double] = js.undefined,
-    pointerId: js.UndefOr[Double] = js.undefined,
-    pointerType: String = null,
-    result: js.Any = null,
-    screenX: js.UndefOr[Double] = js.undefined,
-    screenY: js.UndefOr[Double] = js.undefined,
-    shiftKey: js.UndefOr[Boolean] = js.undefined,
-    targetTouches: TouchList = null,
-    toElement: Element = null,
-    touches: TouchList = null,
-    view: Window = null,
-    which: js.UndefOr[Double] = js.undefined
+    `type`: String
   ): EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
     val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttons)) __obj.updateDynamic("buttons")(buttons.get.asInstanceOf[js.Any])
-    if (changedTouches != null) __obj.updateDynamic("changedTouches")(changedTouches.asInstanceOf[js.Any])
-    if (char != null) __obj.updateDynamic("char")(char.asInstanceOf[js.Any])
-    if (!js.isUndefined(charCode)) __obj.updateDynamic("charCode")(charCode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientX)) __obj.updateDynamic("clientX")(clientX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientY)) __obj.updateDynamic("clientY")(clientY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(detail)) __obj.updateDynamic("detail")(detail.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyCode)) __obj.updateDynamic("keyCode")(keyCode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaKey)) __obj.updateDynamic("metaKey")(metaKey.get.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageX)) __obj.updateDynamic("pageX")(pageX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageY)) __obj.updateDynamic("pageY")(pageY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointerId)) __obj.updateDynamic("pointerId")(pointerId.get.asInstanceOf[js.Any])
-    if (pointerType != null) __obj.updateDynamic("pointerType")(pointerType.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenX)) __obj.updateDynamic("screenX")(screenX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenY)) __obj.updateDynamic("screenY")(screenY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.get.asInstanceOf[js.Any])
-    if (targetTouches != null) __obj.updateDynamic("targetTouches")(targetTouches.asInstanceOf[js.Any])
-    if (toElement != null) __obj.updateDynamic("toElement")(toElement.asInstanceOf[js.Any])
-    if (touches != null) __obj.updateDynamic("touches")(touches.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(which)) __obj.updateDynamic("which")(which.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
   }
+  @scala.inline
+  implicit class EventBaseOps[Self <: EventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBubbles(value: Boolean): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCancelable(value: Boolean): Self = this.set("cancelable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventPhase(value: Double): Self = this.set("eventPhase", value.asInstanceOf[js.Any])
+  }
+  
 }
 

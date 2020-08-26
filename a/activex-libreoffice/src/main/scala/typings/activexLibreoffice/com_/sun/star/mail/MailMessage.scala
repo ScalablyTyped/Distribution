@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @since OOo 2.0 */
+@js.native
 trait MailMessage extends XMailMessage {
   /**
     * Constructs an instance of a mail message.
@@ -18,7 +19,7 @@ trait MailMessage extends XMailMessage {
     * @see com.sun.star.mail.XMailMessage
     * @see com.sun.star.datatransfer.XTransferable
     */
-  def create(sTo: String, sFrom: String, sSubject: String, xBody: XTransferable): Unit
+  def create(sTo: String, sFrom: String, sSubject: String, xBody: XTransferable): Unit = js.native
   /**
     * Constructs an instance of a mail message.
     * @param sTo [in] the e-mail address of the recipient. The e-mail address has to conform to [RFC   822]{@link url="http://www.ietf.org/rfc/rfc822.txt"} .
@@ -36,7 +37,7 @@ trait MailMessage extends XMailMessage {
     sSubject: String,
     xBody: XTransferable,
     aMailAttachment: MailAttachment
-  ): Unit
+  ): Unit = js.native
 }
 
 object MailMessage {
@@ -68,5 +69,22 @@ object MailMessage {
     val __obj = js.Dynamic.literal(Attachments = Attachments.asInstanceOf[js.Any], BccRecipients = BccRecipients.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any], CcRecipients = CcRecipients.asInstanceOf[js.Any], Recipients = Recipients.asInstanceOf[js.Any], ReplyToAddress = ReplyToAddress.asInstanceOf[js.Any], SenderAddress = SenderAddress.asInstanceOf[js.Any], SenderName = SenderName.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addAttachment = js.Any.fromFunction1(addAttachment), addBccRecipient = js.Any.fromFunction1(addBccRecipient), addCcRecipient = js.Any.fromFunction1(addCcRecipient), addRecipient = js.Any.fromFunction1(addRecipient), create = js.Any.fromFunction4(create), createWithAttachment = js.Any.fromFunction5(createWithAttachment), getAttachments = js.Any.fromFunction0(getAttachments), getBccRecipients = js.Any.fromFunction0(getBccRecipients), getCcRecipients = js.Any.fromFunction0(getCcRecipients), getRecipients = js.Any.fromFunction0(getRecipients), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[MailMessage]
   }
+  @scala.inline
+  implicit class MailMessageOps[Self <: MailMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreate(value: (String, String, String, XTransferable) => Unit): Self = this.set("create", js.Any.fromFunction4(value))
+    @scala.inline
+    def setCreateWithAttachment(value: (String, String, String, XTransferable, MailAttachment) => Unit): Self = this.set("createWithAttachment", js.Any.fromFunction5(value))
+  }
+  
 }
 

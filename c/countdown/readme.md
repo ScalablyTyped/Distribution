@@ -11,7 +11,7 @@ A simple JavaScript API for producing an accurate, intuitive description of the 
 | Keywords           | countdown, timer, clock, date, time, timespan, year, month, week, day, hour, minute, second |
 | # releases         | 0 |
 | # dependents       | 20 |
-| # downloads        | 317179 |
+| # downloads        | 331803 |
 | # stars            | 6 |
 
 ## Links

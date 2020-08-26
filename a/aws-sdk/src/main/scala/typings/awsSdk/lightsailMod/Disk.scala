@@ -78,44 +78,94 @@ trait Disk extends js.Object {
 
 object Disk {
   @scala.inline
-  def apply(
-    addOns: AddOnList = null,
-    arn: NonEmptyString = null,
-    attachedTo: ResourceName = null,
-    attachmentState: String = null,
-    createdAt: IsoDate = null,
-    gbInUse: js.UndefOr[integer] = js.undefined,
-    iops: js.UndefOr[integer] = js.undefined,
-    isAttached: js.UndefOr[Boolean] = js.undefined,
-    isSystemDisk: js.UndefOr[Boolean] = js.undefined,
-    location: ResourceLocation = null,
-    name: ResourceName = null,
-    path: String = null,
-    resourceType: ResourceType = null,
-    sizeInGb: js.UndefOr[integer] = js.undefined,
-    state: DiskState = null,
-    supportCode: String = null,
-    tags: TagList = null
-  ): Disk = {
+  def apply(): Disk = {
     val __obj = js.Dynamic.literal()
-    if (addOns != null) __obj.updateDynamic("addOns")(addOns.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (attachedTo != null) __obj.updateDynamic("attachedTo")(attachedTo.asInstanceOf[js.Any])
-    if (attachmentState != null) __obj.updateDynamic("attachmentState")(attachmentState.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(gbInUse)) __obj.updateDynamic("gbInUse")(gbInUse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iops)) __obj.updateDynamic("iops")(iops.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSystemDisk)) __obj.updateDynamic("isSystemDisk")(isSystemDisk.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeInGb)) __obj.updateDynamic("sizeInGb")(sizeInGb.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (supportCode != null) __obj.updateDynamic("supportCode")(supportCode.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Disk]
   }
+  @scala.inline
+  implicit class DiskOps[Self <: Disk] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddOnsVarargs(value: AddOn*): Self = this.set("addOns", js.Array(value :_*))
+    @scala.inline
+    def setAddOns(value: AddOnList): Self = this.set("addOns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddOns: Self = this.set("addOns", js.undefined)
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAttachedTo(value: ResourceName): Self = this.set("attachedTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachedTo: Self = this.set("attachedTo", js.undefined)
+    @scala.inline
+    def setAttachmentState(value: String): Self = this.set("attachmentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentState: Self = this.set("attachmentState", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setGbInUse(value: integer): Self = this.set("gbInUse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGbInUse: Self = this.set("gbInUse", js.undefined)
+    @scala.inline
+    def setIops(value: integer): Self = this.set("iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("iops", js.undefined)
+    @scala.inline
+    def setIsAttached(value: Boolean): Self = this.set("isAttached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsAttached: Self = this.set("isAttached", js.undefined)
+    @scala.inline
+    def setIsSystemDisk(value: Boolean): Self = this.set("isSystemDisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSystemDisk: Self = this.set("isSystemDisk", js.undefined)
+    @scala.inline
+    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setSizeInGb(value: integer): Self = this.set("sizeInGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeInGb: Self = this.set("sizeInGb", js.undefined)
+    @scala.inline
+    def setState(value: DiskState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

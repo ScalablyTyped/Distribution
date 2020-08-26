@@ -16,10 +16,5 @@ class ASPxClientNavBarGroupEventArgs protected ()
     * @param group An ASPxClientNavBarGroup object representing the group related to the event.
     */
   def this(group: typings.devexpressWeb.ASPxClientNavBarGroup) = this()
-  /**
-    * Gets the group object related to the event.
-    */
-  /* CompleteClass */
-  override var group: typings.devexpressWeb.ASPxClientNavBarGroup = js.native
 }
 

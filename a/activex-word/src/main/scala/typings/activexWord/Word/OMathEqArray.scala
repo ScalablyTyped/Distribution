@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OMathEqArray extends js.Object {
-  var Align: WdOMathVertAlignType
-  val Application: typings.activexWord.Word.Application
-  val Creator: Double
-  val E: OMathArgs
-  var MaxDist: Boolean
-  var ObjDist: Boolean
-  val Parent: js.Any
-  var RowSpacing: Double
-  var RowSpacingRule: WdOMathSpacingRule
+  var Align: WdOMathVertAlignType = js.native
+  val Application: typings.activexWord.Word.Application = js.native
+  val Creator: Double = js.native
+  val E: OMathArgs = js.native
+  var MaxDist: Boolean = js.native
+  var ObjDist: Boolean = js.native
+  val Parent: js.Any = js.native
+  var RowSpacing: Double = js.native
+  var RowSpacingRule: WdOMathSpacingRule = js.native
   @JSName("Word.OMathEqArray_typekey")
-  var WordDotOMathEqArray_typekey: OMathEqArray
+  var WordDotOMathEqArray_typekey: OMathEqArray = js.native
 }
 
 object OMathEqArray {
@@ -36,5 +37,38 @@ object OMathEqArray {
     __obj.updateDynamic("Word.OMathEqArray_typekey")(WordDotOMathEqArray_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OMathEqArray]
   }
+  @scala.inline
+  implicit class OMathEqArrayOps[Self <: OMathEqArray] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: WdOMathVertAlignType): Self = this.set("Align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setE(value: OMathArgs): Self = this.set("E", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxDist(value: Boolean): Self = this.set("MaxDist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjDist(value: Boolean): Self = this.set("ObjDist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRowSpacing(value: Double): Self = this.set("RowSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRowSpacingRule(value: WdOMathSpacingRule): Self = this.set("RowSpacingRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordDotOMathEqArray_typekey(value: OMathEqArray): Self = this.set("Word.OMathEqArray_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

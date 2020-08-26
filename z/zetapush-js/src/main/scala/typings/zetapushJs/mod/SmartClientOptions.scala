@@ -4,27 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SmartClientOptions extends Options {
-  var deployment: js.UndefOr[SmartClientDeployment] = js.undefined
+  var deployment: js.UndefOr[SmartClientDeployment] = js.native
 }
 
 object SmartClientOptions {
   @scala.inline
-  def apply(
-    sandboxId: String,
-    apiUrl: String = null,
-    deployment: SmartClientDeployment = null,
-    forceHttps: js.UndefOr[Boolean] = js.undefined,
-    resource: String = null,
-    transports: js.Array[_] = null
-  ): SmartClientOptions = {
+  def apply(sandboxId: String): SmartClientOptions = {
     val __obj = js.Dynamic.literal(sandboxId = sandboxId.asInstanceOf[js.Any])
-    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl.asInstanceOf[js.Any])
-    if (deployment != null) __obj.updateDynamic("deployment")(deployment.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps.get.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartClientOptions]
   }
+  @scala.inline
+  implicit class SmartClientOptionsOps[Self <: SmartClientOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeployment(value: SmartClientDeployment): Self = this.set("deployment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployment: Self = this.set("deployment", js.undefined)
+  }
+  
 }
 

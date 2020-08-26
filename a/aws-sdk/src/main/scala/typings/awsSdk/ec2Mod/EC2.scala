@@ -1042,12 +1042,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotsResult, Unit]
   ): Request[CreateSnapshotsResult, AWSError] = js.native
   /**
-    * Creates a data feed for Spot Instances, enabling you to view Spot Instance usage logs. You can create one data feed per AWS account. For more information, see Spot Instance Data Feed in the Amazon EC2 User Guide for Linux Instances.
+    * Creates a data feed for Spot Instances, enabling you to view Spot Instance usage logs. You can create one data feed per AWS account. For more information, see Spot Instance data feed in the Amazon EC2 User Guide for Linux Instances.
     */
   def createSpotDatafeedSubscription(): Request[CreateSpotDatafeedSubscriptionResult, AWSError] = js.native
   def createSpotDatafeedSubscription(callback: js.Function2[/* err */ AWSError, /* data */ CreateSpotDatafeedSubscriptionResult, Unit]): Request[CreateSpotDatafeedSubscriptionResult, AWSError] = js.native
   /**
-    * Creates a data feed for Spot Instances, enabling you to view Spot Instance usage logs. You can create one data feed per AWS account. For more information, see Spot Instance Data Feed in the Amazon EC2 User Guide for Linux Instances.
+    * Creates a data feed for Spot Instances, enabling you to view Spot Instance usage logs. You can create one data feed per AWS account. For more information, see Spot Instance data feed in the Amazon EC2 User Guide for Linux Instances.
     */
   def createSpotDatafeedSubscription(params: CreateSpotDatafeedSubscriptionRequest): Request[CreateSpotDatafeedSubscriptionResult, AWSError] = js.native
   def createSpotDatafeedSubscription(
@@ -2708,12 +2708,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeKeyPairsResult, Unit]
   ): Request[DescribeKeyPairsResult, AWSError] = js.native
   /**
-    * Describes one or more versions of a specified launch template. You can describe all versions, individual versions, or a range of versions.
+    * Describes one or more versions of a specified launch template. You can describe all versions, individual versions, or a range of versions. You can also describe all the latest versions or all the default versions of all the launch templates in your account.
     */
   def describeLaunchTemplateVersions(): Request[DescribeLaunchTemplateVersionsResult, AWSError] = js.native
   def describeLaunchTemplateVersions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLaunchTemplateVersionsResult, Unit]): Request[DescribeLaunchTemplateVersionsResult, AWSError] = js.native
   /**
-    * Describes one or more versions of a specified launch template. You can describe all versions, individual versions, or a range of versions.
+    * Describes one or more versions of a specified launch template. You can describe all versions, individual versions, or a range of versions. You can also describe all the latest versions or all the default versions of all the launch templates in your account.
     */
   def describeLaunchTemplateVersions(params: DescribeLaunchTemplateVersionsRequest): Request[DescribeLaunchTemplateVersionsResult, AWSError] = js.native
   def describeLaunchTemplateVersions(
@@ -3155,14 +3155,14 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotsResult, Unit]
   ): Request[DescribeSnapshotsResult, AWSError] = js.native
   /**
-    * Describes the data feed for Spot Instances. For more information, see Spot Instance Data Feed in the Amazon EC2 User Guide for Linux Instances.
+    * Describes the data feed for Spot Instances. For more information, see Spot Instance data feed in the Amazon EC2 User Guide for Linux Instances.
     */
   def describeSpotDatafeedSubscription(): Request[DescribeSpotDatafeedSubscriptionResult, AWSError] = js.native
   def describeSpotDatafeedSubscription(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotDatafeedSubscriptionResult, Unit]
   ): Request[DescribeSpotDatafeedSubscriptionResult, AWSError] = js.native
   /**
-    * Describes the data feed for Spot Instances. For more information, see Spot Instance Data Feed in the Amazon EC2 User Guide for Linux Instances.
+    * Describes the data feed for Spot Instances. For more information, see Spot Instance data feed in the Amazon EC2 User Guide for Linux Instances.
     */
   def describeSpotDatafeedSubscription(params: DescribeSpotDatafeedSubscriptionRequest): Request[DescribeSpotDatafeedSubscriptionResult, AWSError] = js.native
   def describeSpotDatafeedSubscription(
@@ -3224,12 +3224,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotInstanceRequestsResult, Unit]
   ): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
   /**
-    * Describes the Spot price history. For more information, see Spot Instance Pricing History in the Amazon EC2 User Guide for Linux Instances. When you specify a start and end time, this operation returns the prices of the instance types within the time range that you specified and the time when the price changed. The price is valid within the time period that you specified; the response merely indicates the last time that the price changed.
+    * Describes the Spot price history. For more information, see Spot Instance pricing history in the Amazon EC2 User Guide for Linux Instances. When you specify a start and end time, this operation returns the prices of the instance types within the time range that you specified and the time when the price changed. The price is valid within the time period that you specified; the response merely indicates the last time that the price changed.
     */
   def describeSpotPriceHistory(): Request[DescribeSpotPriceHistoryResult, AWSError] = js.native
   def describeSpotPriceHistory(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotPriceHistoryResult, Unit]): Request[DescribeSpotPriceHistoryResult, AWSError] = js.native
   /**
-    * Describes the Spot price history. For more information, see Spot Instance Pricing History in the Amazon EC2 User Guide for Linux Instances. When you specify a start and end time, this operation returns the prices of the instance types within the time range that you specified and the time when the price changed. The price is valid within the time period that you specified; the response merely indicates the last time that the price changed.
+    * Describes the Spot price history. For more information, see Spot Instance pricing history in the Amazon EC2 User Guide for Linux Instances. When you specify a start and end time, this operation returns the prices of the instance types within the time range that you specified and the time when the price changed. The price is valid within the time period that you specified; the response merely indicates the last time that the price changed.
     */
   def describeSpotPriceHistory(params: DescribeSpotPriceHistoryRequest): Request[DescribeSpotPriceHistoryResult, AWSError] = js.native
   def describeSpotPriceHistory(
@@ -4164,6 +4164,19 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetEbsEncryptionByDefaultResult, Unit]
   ): Request[GetEbsEncryptionByDefaultResult, AWSError] = js.native
   /**
+    * Lists the resource groups to which a Capacity Reservation has been added.
+    */
+  def getGroupsForCapacityReservation(): Request[GetGroupsForCapacityReservationResult, AWSError] = js.native
+  def getGroupsForCapacityReservation(callback: js.Function2[/* err */ AWSError, /* data */ GetGroupsForCapacityReservationResult, Unit]): Request[GetGroupsForCapacityReservationResult, AWSError] = js.native
+  /**
+    * Lists the resource groups to which a Capacity Reservation has been added.
+    */
+  def getGroupsForCapacityReservation(params: GetGroupsForCapacityReservationRequest): Request[GetGroupsForCapacityReservationResult, AWSError] = js.native
+  def getGroupsForCapacityReservation(
+    params: GetGroupsForCapacityReservationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetGroupsForCapacityReservationResult, Unit]
+  ): Request[GetGroupsForCapacityReservationResult, AWSError] = js.native
+  /**
     * Preview a reservation purchase with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation. This is a preview of the PurchaseHostReservation action and does not result in the offering being purchased.
     */
   def getHostReservationPurchasePreview(): Request[GetHostReservationPurchasePreviewResult, AWSError] = js.native
@@ -4179,12 +4192,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetHostReservationPurchasePreviewResult, Unit]
   ): Request[GetHostReservationPurchasePreviewResult, AWSError] = js.native
   /**
-    * Retrieves the configuration data of the specified instance. You can use this data to create a launch template.
+    * Retrieves the configuration data of the specified instance. You can use this data to create a launch template.  This action calls on other describe actions to get instance information. Depending on your instance configuration, you may need to allow the following actions in your IAM policy: DescribeSpotInstanceRequests, DescribeInstanceCreditSpecifications, DescribeVolumes, DescribeInstanceAttribute, and DescribeElasticGpus. Or, you can allow describe* depending on your instance requirements.
     */
   def getLaunchTemplateData(): Request[GetLaunchTemplateDataResult, AWSError] = js.native
   def getLaunchTemplateData(callback: js.Function2[/* err */ AWSError, /* data */ GetLaunchTemplateDataResult, Unit]): Request[GetLaunchTemplateDataResult, AWSError] = js.native
   /**
-    * Retrieves the configuration data of the specified instance. You can use this data to create a launch template.
+    * Retrieves the configuration data of the specified instance. You can use this data to create a launch template.  This action calls on other describe actions to get instance information. Depending on your instance configuration, you may need to allow the following actions in your IAM policy: DescribeSpotInstanceRequests, DescribeInstanceCreditSpecifications, DescribeVolumes, DescribeInstanceAttribute, and DescribeElasticGpus. Or, you can allow describe* depending on your instance requirements.
     */
   def getLaunchTemplateData(params: GetLaunchTemplateDataRequest): Request[GetLaunchTemplateDataResult, AWSError] = js.native
   def getLaunchTemplateData(
@@ -4404,12 +4417,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ImportVolumeResult, Unit]
   ): Request[ImportVolumeResult, AWSError] = js.native
   /**
-    * Enables or disables an Availability Zone group for your account. Use describe-availability-zones to view the value for GroupName.
+    * Enables or disables an Availability Zone group for your account. Use  DescribeAvailabilityZones to view the value for GroupName.
     */
   def modifyAvailabilityZoneGroup(): Request[ModifyAvailabilityZoneGroupResult, AWSError] = js.native
   def modifyAvailabilityZoneGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyAvailabilityZoneGroupResult, Unit]): Request[ModifyAvailabilityZoneGroupResult, AWSError] = js.native
   /**
-    * Enables or disables an Availability Zone group for your account. Use describe-availability-zones to view the value for GroupName.
+    * Enables or disables an Availability Zone group for your account. Use  DescribeAvailabilityZones to view the value for GroupName.
     */
   def modifyAvailabilityZoneGroup(params: ModifyAvailabilityZoneGroupRequest): Request[ModifyAvailabilityZoneGroupResult, AWSError] = js.native
   def modifyAvailabilityZoneGroup(
@@ -5043,12 +5056,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Creating Your Own AMIs in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself.  You can also use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using the block device mapping. For more information, see Launching a Linux Instance from a Backup in the Amazon Elastic Compute Cloud User Guide. You can't register an image where a secondary (non-root) snapshot has AWS Marketplace product codes. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Obtaining Billing Information in the Amazon Elastic Compute Cloud User Guide. If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.
+    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Creating your own AMIs in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself.  You can also use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using the block device mapping. For more information, see Launching a Linux instance from a backup in the Amazon Elastic Compute Cloud User Guide. If any snapshots have AWS Marketplace product codes, they are copied to the new AMI. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Obtaining billing information in the Amazon Elastic Compute Cloud User Guide. If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.
     */
   def registerImage(): Request[RegisterImageResult, AWSError] = js.native
   def registerImage(callback: js.Function2[/* err */ AWSError, /* data */ RegisterImageResult, Unit]): Request[RegisterImageResult, AWSError] = js.native
   /**
-    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Creating Your Own AMIs in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself.  You can also use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using the block device mapping. For more information, see Launching a Linux Instance from a Backup in the Amazon Elastic Compute Cloud User Guide. You can't register an image where a secondary (non-root) snapshot has AWS Marketplace product codes. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Obtaining Billing Information in the Amazon Elastic Compute Cloud User Guide. If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.
+    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Creating your own AMIs in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself.  You can also use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using the block device mapping. For more information, see Launching a Linux instance from a backup in the Amazon Elastic Compute Cloud User Guide. If any snapshots have AWS Marketplace product codes, they are copied to the new AMI. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Obtaining billing information in the Amazon Elastic Compute Cloud User Guide. If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.
     */
   def registerImage(params: RegisterImageRequest): Request[RegisterImageResult, AWSError] = js.native
   def registerImage(
@@ -5300,12 +5313,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet request and instances launched by the fleet. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet Requests in the Amazon EC2 User Guide for Linux Instances.
+    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet request and instances launched by the fleet. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet requests in the Amazon EC2 User Guide for Linux Instances.
     */
   def requestSpotFleet(): Request[RequestSpotFleetResponse, AWSError] = js.native
   def requestSpotFleet(callback: js.Function2[/* err */ AWSError, /* data */ RequestSpotFleetResponse, Unit]): Request[RequestSpotFleetResponse, AWSError] = js.native
   /**
-    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet request and instances launched by the fleet. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet Requests in the Amazon EC2 User Guide for Linux Instances.
+    * Creates a Spot Fleet request. The Spot Fleet request specifies the total target capacity and the On-Demand target capacity. Amazon EC2 calculates the difference between the total capacity and On-Demand capacity, and launches the difference as Spot capacity. You can submit a single request that includes multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. By default, the Spot Fleet requests Spot Instances in the Spot Instance pool where the price per unit is the lowest. Each launch specification can include its own instance weighting that reflects the value of the instance type to your application workload. Alternatively, you can specify that the Spot Fleet distribute the target capacity across the Spot pools included in its launch specifications. By ensuring that the Spot Instances in your Spot Fleet are in different Spot pools, you can improve the availability of your fleet. You can specify tags for the Spot Fleet request and instances launched by the fleet. You cannot tag other resource types in a Spot Fleet request because only the spot-fleet-request and instance resource types are supported. For more information, see Spot Fleet requests in the Amazon EC2 User Guide for Linux Instances.
     */
   def requestSpotFleet(params: RequestSpotFleetRequest): Request[RequestSpotFleetResponse, AWSError] = js.native
   def requestSpotFleet(
@@ -5313,12 +5326,12 @@ trait EC2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RequestSpotFleetResponse, Unit]
   ): Request[RequestSpotFleetResponse, AWSError] = js.native
   /**
-    * Creates a Spot Instance request. For more information, see Spot Instance Requests in the Amazon EC2 User Guide for Linux Instances.
+    * Creates a Spot Instance request. For more information, see Spot Instance requests in the Amazon EC2 User Guide for Linux Instances.
     */
   def requestSpotInstances(): Request[RequestSpotInstancesResult, AWSError] = js.native
   def requestSpotInstances(callback: js.Function2[/* err */ AWSError, /* data */ RequestSpotInstancesResult, Unit]): Request[RequestSpotInstancesResult, AWSError] = js.native
   /**
-    * Creates a Spot Instance request. For more information, see Spot Instance Requests in the Amazon EC2 User Guide for Linux Instances.
+    * Creates a Spot Instance request. For more information, see Spot Instance requests in the Amazon EC2 User Guide for Linux Instances.
     */
   def requestSpotInstances(params: RequestSpotInstancesRequest): Request[RequestSpotInstancesResult, AWSError] = js.native
   def requestSpotInstances(

@@ -12,7 +12,7 @@ An openload.co API handler
 | Keywords           | openload, api, file, upload, request |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 577 |
+| # downloads        | 574 |
 | # stars            | 1 |
 
 ## Links

@@ -49,6 +49,17 @@ trait SortedSet[T] extends AbstractSet {
       /* collection */ js.UndefOr[js.Any], 
       _
     ],
+    basis: js.UndefOr[scala.Nothing],
+    thisp: js.Any
+  ): js.Any = js.native
+  def reduce(
+    callback: js.Function4[
+      /* result */ js.UndefOr[js.Any], 
+      /* val */ js.UndefOr[js.Any], 
+      /* key */ js.UndefOr[js.Any], 
+      /* collection */ js.UndefOr[js.Any], 
+      _
+    ],
     basis: js.Any
   ): js.Any = js.native
   def reduce(
@@ -79,6 +90,17 @@ trait SortedSet[T] extends AbstractSet {
       /* collection */ js.UndefOr[js.Any], 
       _
     ],
+    basis: js.UndefOr[scala.Nothing],
+    thisp: js.Any
+  ): js.Any = js.native
+  def reduceRight(
+    callback: js.Function4[
+      /* result */ js.UndefOr[js.Any], 
+      /* val */ js.UndefOr[js.Any], 
+      /* key */ js.UndefOr[js.Any], 
+      /* collection */ js.UndefOr[js.Any], 
+      _
+    ],
     basis: js.Any
   ): js.Any = js.native
   def reduceRight(
@@ -94,6 +116,7 @@ trait SortedSet[T] extends AbstractSet {
   ): js.Any = js.native
   def shift(): js.UndefOr[T] = js.native
   def slice(): js.Array[T] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[T] = js.native
   def slice(start: Double): js.Array[T] = js.native
   def slice(start: Double, end: Double): js.Array[T] = js.native
   def splay(value: T): Unit = js.native

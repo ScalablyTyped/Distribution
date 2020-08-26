@@ -22,6 +22,12 @@ object addHandlers extends js.Object {
   def apply(
     element: HTMLElement,
     events: StringDictionary[js.Function1[/* e */ DomEvent, Unit]],
+    handlerOwner: js.UndefOr[scala.Nothing],
+    autoRemove: Boolean
+  ): Unit = js.native
+  def apply(
+    element: HTMLElement,
+    events: StringDictionary[js.Function1[/* e */ DomEvent, Unit]],
     handlerOwner: js.Any
   ): Unit = js.native
   def apply(

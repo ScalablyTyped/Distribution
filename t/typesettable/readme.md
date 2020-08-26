@@ -12,7 +12,7 @@ A typesetting library for SVG and Canvas
 | Keywords           | canvas, svg, text, wrap |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 70299 |
+| # downloads        | 70106 |
 | # stars            | 0 |
 
 ## Links

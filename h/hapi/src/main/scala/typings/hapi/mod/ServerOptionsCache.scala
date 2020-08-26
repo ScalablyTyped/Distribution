@@ -1,76 +1,73 @@
 package typings.hapi.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.catbox.catboxBooleans.`false`
 import typings.catbox.mod.ClientApi
 import typings.catbox.mod.ClientOptions
-import typings.catbox.mod.GenerateFuncFlags
-import typings.catbox.mod.Id
 import typings.catbox.mod.PolicyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServerOptionsCache
   extends PolicyOptions[js.Any]
      with /** other options passed to the catbox strategy used. Other options are only passed to catbox when engine above is a class or function and ignored if engine is a catbox engine object). */
 /* s */ StringDictionary[js.Any] {
   /** catbox engine object. */
-  var engine: js.UndefOr[ClientApi[_]] = js.undefined
+  var engine: js.UndefOr[ClientApi[_]] = js.native
   /**
     * an identifier used later when provisioning or configuring caching for server methods or plugins. Each cache name must be unique. A single item may omit the name option which defines
     * the default cache. If every cache includes a name, a default memory cache is provisioned as well.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** (optional) string used to isolate cached data. Defaults to 'hapi-cache'. */
-  var partition: js.UndefOr[String] = js.undefined
+  var partition: js.UndefOr[String] = js.native
   /**
     * a class or a prototype function
     */
-  var provider: js.UndefOr[CacheProvider[ClientOptions]] = js.undefined
+  var provider: js.UndefOr[CacheProvider[ClientOptions]] = js.native
   /** if true, allows multiple cache users to share the same segment (e.g. multiple methods using the same cache storage container). Default to false. */
-  var shared: js.UndefOr[Boolean] = js.undefined
+  var shared: js.UndefOr[Boolean] = js.native
 }
 
 object ServerOptionsCache {
   @scala.inline
-  def apply(
-    StringDictionary: /** other options passed to the catbox strategy used. Other options are only passed to catbox when engine above is a class or function and ignored if engine is a catbox engine object). */
-  /* s */ StringDictionary[js.Any] = null,
-    dropOnError: js.UndefOr[Boolean] = js.undefined,
-    engine: ClientApi[_] = null,
-    expiresAt: String = null,
-    expiresIn: js.UndefOr[Double] = js.undefined,
-    generateFunc: (/* id */ Id, /* flags */ GenerateFuncFlags) => js.Promise[js.Any] = null,
-    generateIgnoreWriteError: js.UndefOr[Boolean] = js.undefined,
-    generateOnReadError: js.UndefOr[Boolean] = js.undefined,
-    generateTimeout: Double | `false` = null,
-    name: String = null,
-    partition: String = null,
-    pendingGenerateTimeout: js.UndefOr[Double] = js.undefined,
-    provider: CacheProvider[ClientOptions] = null,
-    shared: js.UndefOr[Boolean] = js.undefined,
-    staleIn: Double | (js.Function2[/* stored */ Double, /* ttl */ Double, Double]) = null,
-    staleTimeout: js.UndefOr[Double] = js.undefined
-  ): ServerOptionsCache = {
+  def apply(): ServerOptionsCache = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(dropOnError)) __obj.updateDynamic("dropOnError")(dropOnError.get.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (expiresAt != null) __obj.updateDynamic("expiresAt")(expiresAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(expiresIn)) __obj.updateDynamic("expiresIn")(expiresIn.get.asInstanceOf[js.Any])
-    if (generateFunc != null) __obj.updateDynamic("generateFunc")(js.Any.fromFunction2(generateFunc))
-    if (!js.isUndefined(generateIgnoreWriteError)) __obj.updateDynamic("generateIgnoreWriteError")(generateIgnoreWriteError.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateOnReadError)) __obj.updateDynamic("generateOnReadError")(generateOnReadError.get.asInstanceOf[js.Any])
-    if (generateTimeout != null) __obj.updateDynamic("generateTimeout")(generateTimeout.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingGenerateTimeout)) __obj.updateDynamic("pendingGenerateTimeout")(pendingGenerateTimeout.get.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.get.asInstanceOf[js.Any])
-    if (staleIn != null) __obj.updateDynamic("staleIn")(staleIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(staleTimeout)) __obj.updateDynamic("staleTimeout")(staleTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptionsCache]
   }
+  @scala.inline
+  implicit class ServerOptionsCacheOps[Self <: ServerOptionsCache] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEngine(value: ClientApi[_]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPartition(value: String): Self = this.set("partition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartition: Self = this.set("partition", js.undefined)
+    @scala.inline
+    def setProvider(value: CacheProvider[ClientOptions]): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShared: Self = this.set("shared", js.undefined)
+  }
+  
 }
 

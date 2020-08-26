@@ -46,6 +46,7 @@ object variants extends js.Object {
     def getPreviewContent(): js.Promise[String] = js.native
     def getPreviewContext(): js.Promise[_] = js.native
     def render(context: js.Any): js.Promise[String] = js.native
+    def render(context: js.Any, env: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[String] = js.native
     def render(context: js.Any, env: js.Any): js.Promise[String] = js.native
     def render(context: js.Any, env: js.Any, opts: js.Any): js.Promise[String] = js.native
     def resources(): AssetCollection = js.native

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class geometry () extends js.Object {
   def this(isPath: Boolean) = this()
+  def this(isPath: js.UndefOr[scala.Nothing], isClosed: Boolean) = this()
   def this(isPath: Boolean, isClosed: Boolean) = this()
   /**
     * Adds point to the last set in geometry's set collection. If the

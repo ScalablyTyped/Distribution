@@ -1,10 +1,10 @@
 package typings.googleapis.bloggerV3Mod.bloggerV3
 
-import typings.googleapis.anon.IdString
 import typings.googleapis.anon.Image
 import typings.googleapis.anon.ItemsSelfLink
 import typings.googleapis.anon.Lat
 import typings.googleapis.anon.Url
+import typings.googleapis.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait SchemaPost extends js.Object {
   /**
     * Data about the blog containing this Post.
     */
-  var blog: js.UndefOr[IdString] = js.native
+  var blog: js.UndefOr[`0`] = js.native
   /**
     * The content of the Post. May contain HTML markup.
     */
@@ -91,48 +91,102 @@ trait SchemaPost extends js.Object {
 
 object SchemaPost {
   @scala.inline
-  def apply(
-    author: Image = null,
-    blog: IdString = null,
-    content: String = null,
-    customMetaData: String = null,
-    etag: String = null,
-    id: String = null,
-    images: js.Array[Url] = null,
-    kind: String = null,
-    labels: js.Array[String] = null,
-    location: Lat = null,
-    published: String = null,
-    readerComments: String = null,
-    replies: ItemsSelfLink = null,
-    selfLink: String = null,
-    status: String = null,
-    title: String = null,
-    titleLink: String = null,
-    updated: String = null,
-    url: String = null
-  ): SchemaPost = {
+  def apply(): SchemaPost = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (blog != null) __obj.updateDynamic("blog")(blog.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (customMetaData != null) __obj.updateDynamic("customMetaData")(customMetaData.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
-    if (readerComments != null) __obj.updateDynamic("readerComments")(readerComments.asInstanceOf[js.Any])
-    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleLink != null) __obj.updateDynamic("titleLink")(titleLink.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPost]
   }
+  @scala.inline
+  implicit class SchemaPostOps[Self <: SchemaPost] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: Image): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setBlog(value: `0`): Self = this.set("blog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlog: Self = this.set("blog", js.undefined)
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setCustomMetaData(value: String): Self = this.set("customMetaData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMetaData: Self = this.set("customMetaData", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImagesVarargs(value: Url*): Self = this.set("images", js.Array(value :_*))
+    @scala.inline
+    def setImages(value: js.Array[Url]): Self = this.set("images", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImages: Self = this.set("images", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: String*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: js.Array[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLocation(value: Lat): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setPublished(value: String): Self = this.set("published", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublished: Self = this.set("published", js.undefined)
+    @scala.inline
+    def setReaderComments(value: String): Self = this.set("readerComments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReaderComments: Self = this.set("readerComments", js.undefined)
+    @scala.inline
+    def setReplies(value: ItemsSelfLink): Self = this.set("replies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplies: Self = this.set("replies", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleLink(value: String): Self = this.set("titleLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleLink: Self = this.set("titleLink", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

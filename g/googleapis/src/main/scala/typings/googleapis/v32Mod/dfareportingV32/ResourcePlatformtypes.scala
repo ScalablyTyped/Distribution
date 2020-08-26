@@ -28,6 +28,7 @@ class ResourcePlatformtypes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPlatformType] = js.native
   def get(callback: BodyResponseCallback[SchemaPlatformType]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlatformType] = js.native
   def get(params: ParamsResourcePlatformtypesGet): GaxiosPromise[SchemaPlatformType] = js.native
   def get(params: ParamsResourcePlatformtypesGet, callback: BodyResponseCallback[SchemaPlatformType]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourcePlatformtypes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPlatformTypesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlatformTypesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlatformTypesListResponse] = js.native
   def list(params: ParamsResourcePlatformtypesList): GaxiosPromise[SchemaPlatformTypesListResponse] = js.native
   def list(
     params: ParamsResourcePlatformtypesList,

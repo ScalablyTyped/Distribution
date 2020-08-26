@@ -12,7 +12,7 @@ A marshaller and unmarshaller for timestamps used by the AWS SDKs
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 9 |
-| # downloads        | 45429 |
+| # downloads        | 49588 |
 | # stars            | 0 |
 
 ## Links

@@ -39,12 +39,39 @@ object TrainingJobDefinition {
     OutputDataConfig: OutputDataConfig,
     ResourceConfig: ResourceConfig,
     StoppingCondition: StoppingCondition,
-    TrainingInputMode: TrainingInputMode,
-    HyperParameters: HyperParameters = null
+    TrainingInputMode: TrainingInputMode
   ): TrainingJobDefinition = {
     val __obj = js.Dynamic.literal(InputDataConfig = InputDataConfig.asInstanceOf[js.Any], OutputDataConfig = OutputDataConfig.asInstanceOf[js.Any], ResourceConfig = ResourceConfig.asInstanceOf[js.Any], StoppingCondition = StoppingCondition.asInstanceOf[js.Any], TrainingInputMode = TrainingInputMode.asInstanceOf[js.Any])
-    if (HyperParameters != null) __obj.updateDynamic("HyperParameters")(HyperParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingJobDefinition]
   }
+  @scala.inline
+  implicit class TrainingJobDefinitionOps[Self <: TrainingJobDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputDataConfigVarargs(value: Channel*): Self = this.set("InputDataConfig", js.Array(value :_*))
+    @scala.inline
+    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceConfig(value: ResourceConfig): Self = this.set("ResourceConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStoppingCondition(value: StoppingCondition): Self = this.set("StoppingCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingInputMode(value: TrainingInputMode): Self = this.set("TrainingInputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHyperParameters(value: HyperParameters): Self = this.set("HyperParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyperParameters: Self = this.set("HyperParameters", js.undefined)
+  }
+  
 }
 

@@ -21,11 +21,30 @@ trait SchemaOpaqueColor extends js.Object {
 
 object SchemaOpaqueColor {
   @scala.inline
-  def apply(rgbColor: SchemaRgbColor = null, themeColor: String = null): SchemaOpaqueColor = {
+  def apply(): SchemaOpaqueColor = {
     val __obj = js.Dynamic.literal()
-    if (rgbColor != null) __obj.updateDynamic("rgbColor")(rgbColor.asInstanceOf[js.Any])
-    if (themeColor != null) __obj.updateDynamic("themeColor")(themeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOpaqueColor]
   }
+  @scala.inline
+  implicit class SchemaOpaqueColorOps[Self <: SchemaOpaqueColor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRgbColor(value: SchemaRgbColor): Self = this.set("rgbColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRgbColor: Self = this.set("rgbColor", js.undefined)
+    @scala.inline
+    def setThemeColor(value: String): Self = this.set("themeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeColor: Self = this.set("themeColor", js.undefined)
+  }
+  
 }
 

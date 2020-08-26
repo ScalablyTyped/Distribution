@@ -5,144 +5,245 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MultiColumnComboBoxOptions extends js.Object {
-  var animation: js.UndefOr[MultiColumnComboBoxAnimation] = js.undefined
-  var autoBind: js.UndefOr[Boolean] = js.undefined
-  var autoWidth: js.UndefOr[Boolean] = js.undefined
-  var cascade: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxCascadeEvent, Unit]] = js.undefined
-  var cascadeFrom: js.UndefOr[String] = js.undefined
-  var cascadeFromField: js.UndefOr[String] = js.undefined
-  var change: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxChangeEvent, Unit]] = js.undefined
-  var clearButton: js.UndefOr[Boolean] = js.undefined
-  var close: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxCloseEvent, Unit]] = js.undefined
-  var columns: js.UndefOr[js.Array[MultiColumnComboBoxColumn]] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxDataBoundEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
-  var dataTextField: js.UndefOr[String] = js.undefined
-  var dataValueField: js.UndefOr[String] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var dropDownWidth: js.UndefOr[String | Double] = js.undefined
-  var enable: js.UndefOr[Boolean] = js.undefined
-  var enforceMinLength: js.UndefOr[Boolean] = js.undefined
-  var filter: js.UndefOr[String] = js.undefined
-  var filterFields: js.UndefOr[js.Any] = js.undefined
-  var filtering: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxFilteringEvent, Unit]] = js.undefined
-  var fixedGroupTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var groupTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var highlightFirst: js.UndefOr[Boolean] = js.undefined
-  var ignoreCase: js.UndefOr[Boolean] = js.undefined
-  var index: js.UndefOr[Double] = js.undefined
-  var minLength: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.undefined
-  var open: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxOpenEvent, Unit]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var popup: js.UndefOr[MultiColumnComboBoxPopup] = js.undefined
-  var select: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxSelectEvent, Unit]] = js.undefined
-  var suggest: js.UndefOr[Boolean] = js.undefined
-  var syncValueAndText: js.UndefOr[Boolean] = js.undefined
-  var template: js.UndefOr[String | js.Function] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
-  var valuePrimitive: js.UndefOr[Boolean] = js.undefined
-  var virtual: js.UndefOr[Boolean | MultiColumnComboBoxVirtual] = js.undefined
+  var animation: js.UndefOr[MultiColumnComboBoxAnimation] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.native
+  var cascade: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxCascadeEvent, Unit]] = js.native
+  var cascadeFrom: js.UndefOr[String] = js.native
+  var cascadeFromField: js.UndefOr[String] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxChangeEvent, Unit]] = js.native
+  var clearButton: js.UndefOr[Boolean] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxCloseEvent, Unit]] = js.native
+  var columns: js.UndefOr[js.Array[MultiColumnComboBoxColumn]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxDataBoundEvent, Unit]] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataTextField: js.UndefOr[String] = js.native
+  var dataValueField: js.UndefOr[String] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var dropDownWidth: js.UndefOr[String | Double] = js.native
+  var enable: js.UndefOr[Boolean] = js.native
+  var enforceMinLength: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[String] = js.native
+  var filterFields: js.UndefOr[js.Any] = js.native
+  var filtering: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxFilteringEvent, Unit]] = js.native
+  var fixedGroupTemplate: js.UndefOr[String | js.Function] = js.native
+  var footerTemplate: js.UndefOr[String | js.Function] = js.native
+  var groupTemplate: js.UndefOr[String | js.Function] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var highlightFirst: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxOpenEvent, Unit]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var popup: js.UndefOr[MultiColumnComboBoxPopup] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ MultiColumnComboBoxSelectEvent, Unit]] = js.native
+  var suggest: js.UndefOr[Boolean] = js.native
+  var syncValueAndText: js.UndefOr[Boolean] = js.native
+  var template: js.UndefOr[String | js.Function] = js.native
+  var text: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.native
+  var valuePrimitive: js.UndefOr[Boolean] = js.native
+  var virtual: js.UndefOr[Boolean | MultiColumnComboBoxVirtual] = js.native
 }
 
 object MultiColumnComboBoxOptions {
   @scala.inline
-  def apply(
-    animation: MultiColumnComboBoxAnimation = null,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    autoWidth: js.UndefOr[Boolean] = js.undefined,
-    cascade: /* e */ MultiColumnComboBoxCascadeEvent => Unit = null,
-    cascadeFrom: String = null,
-    cascadeFromField: String = null,
-    change: /* e */ MultiColumnComboBoxChangeEvent => Unit = null,
-    clearButton: js.UndefOr[Boolean] = js.undefined,
-    close: /* e */ MultiColumnComboBoxCloseEvent => Unit = null,
-    columns: js.Array[MultiColumnComboBoxColumn] = null,
-    dataBound: /* e */ MultiColumnComboBoxDataBoundEvent => Unit = null,
-    dataSource: js.Any | DataSource = null,
-    dataTextField: String = null,
-    dataValueField: String = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    dropDownWidth: String | Double = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    enforceMinLength: js.UndefOr[Boolean] = js.undefined,
-    filter: String = null,
-    filterFields: js.Any = null,
-    filtering: /* e */ MultiColumnComboBoxFilteringEvent => Unit = null,
-    fixedGroupTemplate: String | js.Function = null,
-    footerTemplate: String | js.Function = null,
-    groupTemplate: String | js.Function = null,
-    headerTemplate: String | js.Function = null,
-    height: js.UndefOr[Double] = js.undefined,
-    highlightFirst: js.UndefOr[Boolean] = js.undefined,
-    ignoreCase: js.UndefOr[Boolean] = js.undefined,
-    index: js.UndefOr[Double] = js.undefined,
-    minLength: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    noDataTemplate: String | js.Function | Boolean = null,
-    open: /* e */ MultiColumnComboBoxOpenEvent => Unit = null,
-    placeholder: String = null,
-    popup: MultiColumnComboBoxPopup = null,
-    select: /* e */ MultiColumnComboBoxSelectEvent => Unit = null,
-    suggest: js.UndefOr[Boolean] = js.undefined,
-    syncValueAndText: js.UndefOr[Boolean] = js.undefined,
-    template: String | js.Function = null,
-    text: String = null,
-    value: String = null,
-    valuePrimitive: js.UndefOr[Boolean] = js.undefined,
-    virtual: Boolean | MultiColumnComboBoxVirtual = null
-  ): MultiColumnComboBoxOptions = {
+  def apply(): MultiColumnComboBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
-    if (cascade != null) __obj.updateDynamic("cascade")(js.Any.fromFunction1(cascade))
-    if (cascadeFrom != null) __obj.updateDynamic("cascadeFrom")(cascadeFrom.asInstanceOf[js.Any])
-    if (cascadeFromField != null) __obj.updateDynamic("cascadeFromField")(cascadeFromField.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (!js.isUndefined(clearButton)) __obj.updateDynamic("clearButton")(clearButton.get.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
-    if (dataValueField != null) __obj.updateDynamic("dataValueField")(dataValueField.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (dropDownWidth != null) __obj.updateDynamic("dropDownWidth")(dropDownWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceMinLength)) __obj.updateDynamic("enforceMinLength")(enforceMinLength.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (filterFields != null) __obj.updateDynamic("filterFields")(filterFields.asInstanceOf[js.Any])
-    if (filtering != null) __obj.updateDynamic("filtering")(js.Any.fromFunction1(filtering))
-    if (fixedGroupTemplate != null) __obj.updateDynamic("fixedGroupTemplate")(fixedGroupTemplate.asInstanceOf[js.Any])
-    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate.asInstanceOf[js.Any])
-    if (groupTemplate != null) __obj.updateDynamic("groupTemplate")(groupTemplate.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightFirst)) __obj.updateDynamic("highlightFirst")(highlightFirst.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (noDataTemplate != null) __obj.updateDynamic("noDataTemplate")(noDataTemplate.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (!js.isUndefined(suggest)) __obj.updateDynamic("suggest")(suggest.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(syncValueAndText)) __obj.updateDynamic("syncValueAndText")(syncValueAndText.get.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(valuePrimitive)) __obj.updateDynamic("valuePrimitive")(valuePrimitive.get.asInstanceOf[js.Any])
-    if (virtual != null) __obj.updateDynamic("virtual")(virtual.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiColumnComboBoxOptions]
   }
+  @scala.inline
+  implicit class MultiColumnComboBoxOptionsOps[Self <: MultiColumnComboBoxOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: MultiColumnComboBoxAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    @scala.inline
+    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoWidth: Self = this.set("autoWidth", js.undefined)
+    @scala.inline
+    def setCascade(value: /* e */ MultiColumnComboBoxCascadeEvent => Unit): Self = this.set("cascade", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCascade: Self = this.set("cascade", js.undefined)
+    @scala.inline
+    def setCascadeFrom(value: String): Self = this.set("cascadeFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCascadeFrom: Self = this.set("cascadeFrom", js.undefined)
+    @scala.inline
+    def setCascadeFromField(value: String): Self = this.set("cascadeFromField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCascadeFromField: Self = this.set("cascadeFromField", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ MultiColumnComboBoxChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setClearButton(value: Boolean): Self = this.set("clearButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearButton: Self = this.set("clearButton", js.undefined)
+    @scala.inline
+    def setClose(value: /* e */ MultiColumnComboBoxCloseEvent => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: MultiColumnComboBoxColumn*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[MultiColumnComboBoxColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ MultiColumnComboBoxDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDataTextField(value: String): Self = this.set("dataTextField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTextField: Self = this.set("dataTextField", js.undefined)
+    @scala.inline
+    def setDataValueField(value: String): Self = this.set("dataValueField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataValueField: Self = this.set("dataValueField", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDropDownWidth(value: String | Double): Self = this.set("dropDownWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropDownWidth: Self = this.set("dropDownWidth", js.undefined)
+    @scala.inline
+    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setEnforceMinLength(value: Boolean): Self = this.set("enforceMinLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceMinLength: Self = this.set("enforceMinLength", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFilterFields(value: js.Any): Self = this.set("filterFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterFields: Self = this.set("filterFields", js.undefined)
+    @scala.inline
+    def setFiltering(value: /* e */ MultiColumnComboBoxFilteringEvent => Unit): Self = this.set("filtering", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFiltering: Self = this.set("filtering", js.undefined)
+    @scala.inline
+    def setFixedGroupTemplate(value: String | js.Function): Self = this.set("fixedGroupTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedGroupTemplate: Self = this.set("fixedGroupTemplate", js.undefined)
+    @scala.inline
+    def setFooterTemplate(value: String | js.Function): Self = this.set("footerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterTemplate: Self = this.set("footerTemplate", js.undefined)
+    @scala.inline
+    def setGroupTemplate(value: String | js.Function): Self = this.set("groupTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupTemplate: Self = this.set("groupTemplate", js.undefined)
+    @scala.inline
+    def setHeaderTemplate(value: String | js.Function): Self = this.set("headerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderTemplate: Self = this.set("headerTemplate", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHighlightFirst(value: Boolean): Self = this.set("highlightFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightFirst: Self = this.set("highlightFirst", js.undefined)
+    @scala.inline
+    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoDataTemplate(value: String | js.Function | Boolean): Self = this.set("noDataTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoDataTemplate: Self = this.set("noDataTemplate", js.undefined)
+    @scala.inline
+    def setOpen(value: /* e */ MultiColumnComboBoxOpenEvent => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopup(value: MultiColumnComboBoxPopup): Self = this.set("popup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopup: Self = this.set("popup", js.undefined)
+    @scala.inline
+    def setSelect(value: /* e */ MultiColumnComboBoxSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setSuggest(value: Boolean): Self = this.set("suggest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggest: Self = this.set("suggest", js.undefined)
+    @scala.inline
+    def setSyncValueAndText(value: Boolean): Self = this.set("syncValueAndText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncValueAndText: Self = this.set("syncValueAndText", js.undefined)
+    @scala.inline
+    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValuePrimitive(value: Boolean): Self = this.set("valuePrimitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuePrimitive: Self = this.set("valuePrimitive", js.undefined)
+    @scala.inline
+    def setVirtual(value: Boolean | MultiColumnComboBoxVirtual): Self = this.set("virtual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtual: Self = this.set("virtual", js.undefined)
+  }
+  
 }
 

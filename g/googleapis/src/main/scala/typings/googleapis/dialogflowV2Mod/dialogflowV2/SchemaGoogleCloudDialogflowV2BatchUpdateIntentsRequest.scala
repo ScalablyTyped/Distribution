@@ -40,20 +40,42 @@ trait SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest {
   @scala.inline
-  def apply(
-    intentBatchInline: SchemaGoogleCloudDialogflowV2IntentBatch = null,
-    intentBatchUri: String = null,
-    intentView: String = null,
-    languageCode: String = null,
-    updateMask: String = null
-  ): SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest = {
+  def apply(): SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (intentBatchInline != null) __obj.updateDynamic("intentBatchInline")(intentBatchInline.asInstanceOf[js.Any])
-    if (intentBatchUri != null) __obj.updateDynamic("intentBatchUri")(intentBatchUri.asInstanceOf[js.Any])
-    if (intentView != null) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequestOps[Self <: SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIntentBatchInline(value: SchemaGoogleCloudDialogflowV2IntentBatch): Self = this.set("intentBatchInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntentBatchInline: Self = this.set("intentBatchInline", js.undefined)
+    @scala.inline
+    def setIntentBatchUri(value: String): Self = this.set("intentBatchUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntentBatchUri: Self = this.set("intentBatchUri", js.undefined)
+    @scala.inline
+    def setIntentView(value: String): Self = this.set("intentView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntentView: Self = this.set("intentView", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+  }
+  
 }
 

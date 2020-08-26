@@ -29,17 +29,15 @@ class CreateObjectClientAction protected () extends ClientAction {
   ) = this()
   @JSName("model")
   var model_FCreateObjectClientAction: IModel = js.native
-  def entityRef(): js.Any = js.native
-  def entityRef(newValue: EntityRef): js.Any = js.native
-  @JSName("entityRef")
-  def entityRef_Union: EntityRef | Null = js.native
+  def entityRef: EntityRef | Null = js.native
+  def entityRef_=(newValue: EntityRef | Null): Unit = js.native
   /**
     * In version 8.11.0: introduced
     */
   def numberOfPagesToClose: Double = js.native
-  def numberOfPagesToClose(newValue: Double): js.Any = js.native
+  def numberOfPagesToClose_=(newValue: Double): Unit = js.native
   def pageSettings: PageSettings = js.native
-  def pageSettings(newValue: PageSettings): js.Any = js.native
+  def pageSettings_=(newValue: PageSettings): Unit = js.native
 }
 
 /* static members */

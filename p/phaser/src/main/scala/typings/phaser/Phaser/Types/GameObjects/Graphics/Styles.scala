@@ -7,24 +7,44 @@ import scala.scalajs.js.annotation._
 /**
   * Graphics style settings.
   */
+@js.native
 trait Styles extends js.Object {
   /**
     * The style applied to shape areas.
     */
-  var fillStyle: js.UndefOr[FillStyle] = js.undefined
+  var fillStyle: js.UndefOr[FillStyle] = js.native
   /**
     * The style applied to shape outlines.
     */
-  var lineStyle: js.UndefOr[LineStyle] = js.undefined
+  var lineStyle: js.UndefOr[LineStyle] = js.native
 }
 
 object Styles {
   @scala.inline
-  def apply(fillStyle: FillStyle = null, lineStyle: LineStyle = null): Styles = {
+  def apply(): Styles = {
     val __obj = js.Dynamic.literal()
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Styles]
   }
+  @scala.inline
+  implicit class StylesOps[Self <: Styles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFillStyle(value: FillStyle): Self = this.set("fillStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillStyle: Self = this.set("fillStyle", js.undefined)
+    @scala.inline
+    def setLineStyle(value: LineStyle): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+  }
+  
 }
 

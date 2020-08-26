@@ -6,32 +6,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait BindExpression_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait BindExpression_
   extends Expression
      with BaseNode {
-  var callee: Expression
-  var `object`: Expression
+  var callee: Expression = js.native
+  var `object`: Expression = js.native
   @JSName("type")
-  var type_BindExpression_ : BindExpression
+  var type_BindExpression_ : BindExpression = js.native
 }
 
 object BindExpression_ {
   @scala.inline
-  def apply(
-    callee: Expression,
-    `object`: Expression,
-    `type`: BindExpression,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): BindExpression_ = {
-    val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def apply(callee: Expression, `object`: Expression, `type`: BindExpression): BindExpression_ = {
+    val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindExpression_]
   }
+  @scala.inline
+  implicit class BindExpression_Ops[Self <: BindExpression_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallee(value: Expression): Self = this.set("callee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObject(value: Expression): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: BindExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

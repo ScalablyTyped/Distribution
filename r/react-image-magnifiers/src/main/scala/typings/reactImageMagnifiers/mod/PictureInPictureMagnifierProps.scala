@@ -1,87 +1,100 @@
 package typings.reactImageMagnifiers.mod
 
-import typings.react.mod.CSSProperties
-import typings.react.mod.ReactNode
-import typings.react.mod.SyntheticEvent
 import typings.reactImageMagnifiers.reactImageMagnifiersStrings.bottom
 import typings.reactImageMagnifiers.reactImageMagnifiersStrings.left
 import typings.reactImageMagnifiers.reactImageMagnifiersStrings.right
 import typings.reactImageMagnifiers.reactImageMagnifiersStrings.top
-import typings.std.Element
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PictureInPictureMagnifierProps extends CommonProps {
-  var cursorStyleActive: js.UndefOr[String] = js.undefined
-  var previewHorizontalPos: js.UndefOr[left | right] = js.undefined
-  var previewOpacity: js.UndefOr[Double] = js.undefined
-  var previewOverlayBackgroundColor: js.UndefOr[String] = js.undefined
-  var previewOverlayBoxColor: js.UndefOr[String] = js.undefined
-  var previewOverlayBoxImage: js.UndefOr[String] = js.undefined
-  var previewOverlayBoxImageSize: js.UndefOr[String] = js.undefined
-  var previewOverlayBoxOpacity: js.UndefOr[Double] = js.undefined
-  var previewOverlayOpacity: js.UndefOr[Double] = js.undefined
-  var previewSizePercentage: js.UndefOr[Double] = js.undefined
-  var previewVerticalPos: js.UndefOr[top | bottom] = js.undefined
-  var shadow: js.UndefOr[Boolean] = js.undefined
-  var shadowColor: js.UndefOr[String] = js.undefined
+  var cursorStyleActive: js.UndefOr[String] = js.native
+  var previewHorizontalPos: js.UndefOr[left | right] = js.native
+  var previewOpacity: js.UndefOr[Double] = js.native
+  var previewOverlayBackgroundColor: js.UndefOr[String] = js.native
+  var previewOverlayBoxColor: js.UndefOr[String] = js.native
+  var previewOverlayBoxImage: js.UndefOr[String] = js.native
+  var previewOverlayBoxImageSize: js.UndefOr[String] = js.native
+  var previewOverlayBoxOpacity: js.UndefOr[Double] = js.native
+  var previewOverlayOpacity: js.UndefOr[Double] = js.native
+  var previewSizePercentage: js.UndefOr[Double] = js.native
+  var previewVerticalPos: js.UndefOr[top | bottom] = js.native
+  var shadow: js.UndefOr[Boolean] = js.native
+  var shadowColor: js.UndefOr[String] = js.native
 }
 
 object PictureInPictureMagnifierProps {
   @scala.inline
-  def apply(
-    imageSrc: String,
-    className: String = null,
-    cursorStyle: String = null,
-    cursorStyleActive: String = null,
-    imageAlt: String = null,
-    largeImageSrc: String = null,
-    onImageLoad: /* ev */ SyntheticEvent[Element, Event] => Unit = null,
-    onLargeImageLoad: /* ev */ SyntheticEvent[Element, Event] => Unit = null,
-    onZoomEnd: () => Unit = null,
-    onZoomStart: () => Unit = null,
-    previewHorizontalPos: left | right = null,
-    previewOpacity: js.UndefOr[Double] = js.undefined,
-    previewOverlayBackgroundColor: String = null,
-    previewOverlayBoxColor: String = null,
-    previewOverlayBoxImage: String = null,
-    previewOverlayBoxImageSize: String = null,
-    previewOverlayBoxOpacity: js.UndefOr[Double] = js.undefined,
-    previewOverlayOpacity: js.UndefOr[Double] = js.undefined,
-    previewSizePercentage: js.UndefOr[Double] = js.undefined,
-    previewVerticalPos: top | bottom = null,
-    renderOverlay: /* state */ Boolean => ReactNode = null,
-    shadow: js.UndefOr[Boolean] = js.undefined,
-    shadowColor: String = null,
-    style: CSSProperties = null
-  ): PictureInPictureMagnifierProps = {
+  def apply(imageSrc: String): PictureInPictureMagnifierProps = {
     val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
-    if (cursorStyleActive != null) __obj.updateDynamic("cursorStyleActive")(cursorStyleActive.asInstanceOf[js.Any])
-    if (imageAlt != null) __obj.updateDynamic("imageAlt")(imageAlt.asInstanceOf[js.Any])
-    if (largeImageSrc != null) __obj.updateDynamic("largeImageSrc")(largeImageSrc.asInstanceOf[js.Any])
-    if (onImageLoad != null) __obj.updateDynamic("onImageLoad")(js.Any.fromFunction1(onImageLoad))
-    if (onLargeImageLoad != null) __obj.updateDynamic("onLargeImageLoad")(js.Any.fromFunction1(onLargeImageLoad))
-    if (onZoomEnd != null) __obj.updateDynamic("onZoomEnd")(js.Any.fromFunction0(onZoomEnd))
-    if (onZoomStart != null) __obj.updateDynamic("onZoomStart")(js.Any.fromFunction0(onZoomStart))
-    if (previewHorizontalPos != null) __obj.updateDynamic("previewHorizontalPos")(previewHorizontalPos.asInstanceOf[js.Any])
-    if (!js.isUndefined(previewOpacity)) __obj.updateDynamic("previewOpacity")(previewOpacity.get.asInstanceOf[js.Any])
-    if (previewOverlayBackgroundColor != null) __obj.updateDynamic("previewOverlayBackgroundColor")(previewOverlayBackgroundColor.asInstanceOf[js.Any])
-    if (previewOverlayBoxColor != null) __obj.updateDynamic("previewOverlayBoxColor")(previewOverlayBoxColor.asInstanceOf[js.Any])
-    if (previewOverlayBoxImage != null) __obj.updateDynamic("previewOverlayBoxImage")(previewOverlayBoxImage.asInstanceOf[js.Any])
-    if (previewOverlayBoxImageSize != null) __obj.updateDynamic("previewOverlayBoxImageSize")(previewOverlayBoxImageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(previewOverlayBoxOpacity)) __obj.updateDynamic("previewOverlayBoxOpacity")(previewOverlayBoxOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(previewOverlayOpacity)) __obj.updateDynamic("previewOverlayOpacity")(previewOverlayOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(previewSizePercentage)) __obj.updateDynamic("previewSizePercentage")(previewSizePercentage.get.asInstanceOf[js.Any])
-    if (previewVerticalPos != null) __obj.updateDynamic("previewVerticalPos")(previewVerticalPos.asInstanceOf[js.Any])
-    if (renderOverlay != null) __obj.updateDynamic("renderOverlay")(js.Any.fromFunction1(renderOverlay))
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureInPictureMagnifierProps]
   }
+  @scala.inline
+  implicit class PictureInPictureMagnifierPropsOps[Self <: PictureInPictureMagnifierProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCursorStyleActive(value: String): Self = this.set("cursorStyleActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursorStyleActive: Self = this.set("cursorStyleActive", js.undefined)
+    @scala.inline
+    def setPreviewHorizontalPos(value: left | right): Self = this.set("previewHorizontalPos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewHorizontalPos: Self = this.set("previewHorizontalPos", js.undefined)
+    @scala.inline
+    def setPreviewOpacity(value: Double): Self = this.set("previewOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewOpacity: Self = this.set("previewOpacity", js.undefined)
+    @scala.inline
+    def setPreviewOverlayBackgroundColor(value: String): Self = this.set("previewOverlayBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewOverlayBackgroundColor: Self = this.set("previewOverlayBackgroundColor", js.undefined)
+    @scala.inline
+    def setPreviewOverlayBoxColor(value: String): Self = this.set("previewOverlayBoxColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewOverlayBoxColor: Self = this.set("previewOverlayBoxColor", js.undefined)
+    @scala.inline
+    def setPreviewOverlayBoxImage(value: String): Self = this.set("previewOverlayBoxImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewOverlayBoxImage: Self = this.set("previewOverlayBoxImage", js.undefined)
+    @scala.inline
+    def setPreviewOverlayBoxImageSize(value: String): Self = this.set("previewOverlayBoxImageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewOverlayBoxImageSize: Self = this.set("previewOverlayBoxImageSize", js.undefined)
+    @scala.inline
+    def setPreviewOverlayBoxOpacity(value: Double): Self = this.set("previewOverlayBoxOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewOverlayBoxOpacity: Self = this.set("previewOverlayBoxOpacity", js.undefined)
+    @scala.inline
+    def setPreviewOverlayOpacity(value: Double): Self = this.set("previewOverlayOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewOverlayOpacity: Self = this.set("previewOverlayOpacity", js.undefined)
+    @scala.inline
+    def setPreviewSizePercentage(value: Double): Self = this.set("previewSizePercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewSizePercentage: Self = this.set("previewSizePercentage", js.undefined)
+    @scala.inline
+    def setPreviewVerticalPos(value: top | bottom): Self = this.set("previewVerticalPos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewVerticalPos: Self = this.set("previewVerticalPos", js.undefined)
+    @scala.inline
+    def setShadow(value: Boolean): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setShadowColor(value: String): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+  }
+  
 }
 

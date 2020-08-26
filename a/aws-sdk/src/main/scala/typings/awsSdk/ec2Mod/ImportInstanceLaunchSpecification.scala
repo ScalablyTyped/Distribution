@@ -54,32 +54,70 @@ trait ImportInstanceLaunchSpecification extends js.Object {
 
 object ImportInstanceLaunchSpecification {
   @scala.inline
-  def apply(
-    AdditionalInfo: String = null,
-    Architecture: ArchitectureValues = null,
-    GroupIds: SecurityGroupIdStringList = null,
-    GroupNames: SecurityGroupStringList = null,
-    InstanceInitiatedShutdownBehavior: ShutdownBehavior = null,
-    InstanceType: InstanceType = null,
-    Monitoring: js.UndefOr[Boolean] = js.undefined,
-    Placement: Placement = null,
-    PrivateIpAddress: String = null,
-    SubnetId: SubnetId = null,
-    UserData: UserData = null
-  ): ImportInstanceLaunchSpecification = {
+  def apply(): ImportInstanceLaunchSpecification = {
     val __obj = js.Dynamic.literal()
-    if (AdditionalInfo != null) __obj.updateDynamic("AdditionalInfo")(AdditionalInfo.asInstanceOf[js.Any])
-    if (Architecture != null) __obj.updateDynamic("Architecture")(Architecture.asInstanceOf[js.Any])
-    if (GroupIds != null) __obj.updateDynamic("GroupIds")(GroupIds.asInstanceOf[js.Any])
-    if (GroupNames != null) __obj.updateDynamic("GroupNames")(GroupNames.asInstanceOf[js.Any])
-    if (InstanceInitiatedShutdownBehavior != null) __obj.updateDynamic("InstanceInitiatedShutdownBehavior")(InstanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Monitoring)) __obj.updateDynamic("Monitoring")(Monitoring.get.asInstanceOf[js.Any])
-    if (Placement != null) __obj.updateDynamic("Placement")(Placement.asInstanceOf[js.Any])
-    if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (UserData != null) __obj.updateDynamic("UserData")(UserData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportInstanceLaunchSpecification]
   }
+  @scala.inline
+  implicit class ImportInstanceLaunchSpecificationOps[Self <: ImportInstanceLaunchSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalInfo(value: String): Self = this.set("AdditionalInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalInfo: Self = this.set("AdditionalInfo", js.undefined)
+    @scala.inline
+    def setArchitecture(value: ArchitectureValues): Self = this.set("Architecture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchitecture: Self = this.set("Architecture", js.undefined)
+    @scala.inline
+    def setGroupIdsVarargs(value: SecurityGroupId*): Self = this.set("GroupIds", js.Array(value :_*))
+    @scala.inline
+    def setGroupIds(value: SecurityGroupIdStringList): Self = this.set("GroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupIds: Self = this.set("GroupIds", js.undefined)
+    @scala.inline
+    def setGroupNamesVarargs(value: SecurityGroupName*): Self = this.set("GroupNames", js.Array(value :_*))
+    @scala.inline
+    def setGroupNames(value: SecurityGroupStringList): Self = this.set("GroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupNames: Self = this.set("GroupNames", js.undefined)
+    @scala.inline
+    def setInstanceInitiatedShutdownBehavior(value: ShutdownBehavior): Self = this.set("InstanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceInitiatedShutdownBehavior: Self = this.set("InstanceInitiatedShutdownBehavior", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setMonitoring(value: Boolean): Self = this.set("Monitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoring: Self = this.set("Monitoring", js.undefined)
+    @scala.inline
+    def setPlacement(value: Placement): Self = this.set("Placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("Placement", js.undefined)
+    @scala.inline
+    def setPrivateIpAddress(value: String): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setUserData(value: UserData): Self = this.set("UserData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("UserData", js.undefined)
+  }
+  
 }
 

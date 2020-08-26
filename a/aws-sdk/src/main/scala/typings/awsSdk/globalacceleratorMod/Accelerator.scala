@@ -46,28 +46,60 @@ trait Accelerator extends js.Object {
 
 object Accelerator {
   @scala.inline
-  def apply(
-    AcceleratorArn: GenericString = null,
-    CreatedTime: Timestamp = null,
-    DnsName: GenericString = null,
-    Enabled: js.UndefOr[GenericBoolean] = js.undefined,
-    IpAddressType: IpAddressType = null,
-    IpSets: IpSets = null,
-    LastModifiedTime: Timestamp = null,
-    Name: GenericString = null,
-    Status: AcceleratorStatus = null
-  ): Accelerator = {
+  def apply(): Accelerator = {
     val __obj = js.Dynamic.literal()
-    if (AcceleratorArn != null) __obj.updateDynamic("AcceleratorArn")(AcceleratorArn.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (IpAddressType != null) __obj.updateDynamic("IpAddressType")(IpAddressType.asInstanceOf[js.Any])
-    if (IpSets != null) __obj.updateDynamic("IpSets")(IpSets.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accelerator]
   }
+  @scala.inline
+  implicit class AcceleratorOps[Self <: Accelerator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorArn(value: GenericString): Self = this.set("AcceleratorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorArn: Self = this.set("AcceleratorArn", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: Timestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDnsName(value: GenericString): Self = this.set("DnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("DnsName", js.undefined)
+    @scala.inline
+    def setEnabled(value: GenericBoolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setIpAddressType(value: IpAddressType): Self = this.set("IpAddressType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressType: Self = this.set("IpAddressType", js.undefined)
+    @scala.inline
+    def setIpSetsVarargs(value: IpSet*): Self = this.set("IpSets", js.Array(value :_*))
+    @scala.inline
+    def setIpSets(value: IpSets): Self = this.set("IpSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpSets: Self = this.set("IpSets", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setName(value: GenericString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStatus(value: AcceleratorStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

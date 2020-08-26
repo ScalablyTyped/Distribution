@@ -1,15 +1,6 @@
 package typings.winrt.global.Windows.Media
 
-import typings.winrt.Windows.Foundation.Collections.IVectorView
-import typings.winrt.Windows.Foundation.IAsyncAction
-import typings.winrt.Windows.Media.Capture.MediaStreamType
-import typings.winrt.Windows.Media.Capture.PowerlineFrequency
 import typings.winrt.Windows.Media.Devices.AudioDeviceRole
-import typings.winrt.Windows.Media.Devices.TelephonyKey
-import typings.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
-import typings.winrt.anon.SucceededBoolean
-import typings.winrt.anon.SucceededValue
-import typings.winrt.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,79 +10,27 @@ import scala.scalajs.js.annotation._
 object Devices extends js.Object {
   @js.native
   class AudioDeviceController ()
-    extends typings.winrt.Windows.Media.Devices.AudioDeviceController {
-    /* CompleteClass */
-    override var muted: Boolean = js.native
-    /* CompleteClass */
-    override var volumePercent: Double = js.native
-    /* CompleteClass */
-    override def getAvailableMediaStreamProperties(mediaStreamType: MediaStreamType): IVectorView[IMediaEncodingProperties] = js.native
-    /* CompleteClass */
-    override def getMediaStreamProperties(mediaStreamType: MediaStreamType): IMediaEncodingProperties = js.native
-    /* CompleteClass */
-    override def setMediaStreamPropertiesAsync(mediaStreamType: MediaStreamType, mediaEncodingProperties: IMediaEncodingProperties): IAsyncAction = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.AudioDeviceController
   
   @js.native
   class CallControl ()
-    extends typings.winrt.Windows.Media.Devices.CallControl {
-    /* CompleteClass */
-    override var hasRinger: Boolean = js.native
-    /* CompleteClass */
-    override var onanswerrequested: js.Any = js.native
-    /* CompleteClass */
-    override var onaudiotransferrequested: js.Any = js.native
-    /* CompleteClass */
-    override var ondialrequested: js.Any = js.native
-    /* CompleteClass */
-    override var onhanguprequested: js.Any = js.native
-    /* CompleteClass */
-    override var onkeypadpressed: js.Any = js.native
-    /* CompleteClass */
-    override var onredialrequested: js.Any = js.native
-    /* CompleteClass */
-    override def endCall(callToken: Double): Unit = js.native
-    /* CompleteClass */
-    override def indicateActiveCall(callToken: Double): Unit = js.native
-    /* CompleteClass */
-    override def indicateNewIncomingCall(enableRinger: Boolean, callerId: String): Double = js.native
-    /* CompleteClass */
-    override def indicateNewOutgoingCall(): Double = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.CallControl
   
   @js.native
   class DefaultAudioCaptureDeviceChangedEventArgs ()
-    extends typings.winrt.Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs {
-    /* CompleteClass */
-    override var id: String = js.native
-    /* CompleteClass */
-    override var role: AudioDeviceRole = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs
   
   @js.native
   class DefaultAudioRenderDeviceChangedEventArgs ()
-    extends typings.winrt.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs {
-    /* CompleteClass */
-    override var id: String = js.native
-    /* CompleteClass */
-    override var role: AudioDeviceRole = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs
   
   @js.native
   class DialRequestedEventArgs ()
-    extends typings.winrt.Windows.Media.Devices.DialRequestedEventArgs {
-    /* CompleteClass */
-    override var contact: js.Any = js.native
-    /* CompleteClass */
-    override def handled(): Unit = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.DialRequestedEventArgs
   
   @js.native
   class KeypadPressedEventArgs ()
-    extends typings.winrt.Windows.Media.Devices.KeypadPressedEventArgs {
-    /* CompleteClass */
-    override var telephonyKey: TelephonyKey = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.KeypadPressedEventArgs
   
   @js.native
   class MediaDevice ()
@@ -99,83 +38,19 @@ object Devices extends js.Object {
   
   @js.native
   class MediaDeviceControl ()
-    extends typings.winrt.Windows.Media.Devices.MediaDeviceControl {
-    /* CompleteClass */
-    override var capabilities: typings.winrt.Windows.Media.Devices.MediaDeviceControlCapabilities = js.native
-    /* CompleteClass */
-    override def tryGetAuto(): SucceededBoolean = js.native
-    /* CompleteClass */
-    override def tryGetValue(): SucceededValue = js.native
-    /* CompleteClass */
-    override def trySetAuto(value: Boolean): Boolean = js.native
-    /* CompleteClass */
-    override def trySetValue(value: Double): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.MediaDeviceControl
   
   @js.native
   class MediaDeviceControlCapabilities ()
-    extends typings.winrt.Windows.Media.Devices.MediaDeviceControlCapabilities {
-    /* CompleteClass */
-    override var autoModeSupported: Boolean = js.native
-    /* CompleteClass */
-    override var default: Double = js.native
-    /* CompleteClass */
-    override var max: Double = js.native
-    /* CompleteClass */
-    override var min: Double = js.native
-    /* CompleteClass */
-    override var step: Double = js.native
-    /* CompleteClass */
-    override var supported: Boolean = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.MediaDeviceControlCapabilities
   
   @js.native
   class RedialRequestedEventArgs ()
-    extends typings.winrt.Windows.Media.Devices.RedialRequestedEventArgs {
-    /* CompleteClass */
-    override def handled(): Unit = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.RedialRequestedEventArgs
   
   @js.native
   class VideoDeviceController ()
-    extends typings.winrt.Windows.Media.Devices.VideoDeviceController {
-    /* CompleteClass */
-    override var backlightCompensation: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var brightness: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var contrast: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var exposure: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var focus: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var hue: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var pan: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var roll: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var tilt: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var whiteBalance: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override var zoom: typings.winrt.Windows.Media.Devices.MediaDeviceControl = js.native
-    /* CompleteClass */
-    override def getAvailableMediaStreamProperties(mediaStreamType: MediaStreamType): IVectorView[IMediaEncodingProperties] = js.native
-    /* CompleteClass */
-    override def getDeviceProperty(propertyId: String): js.Any = js.native
-    /* CompleteClass */
-    override def getMediaStreamProperties(mediaStreamType: MediaStreamType): IMediaEncodingProperties = js.native
-    /* CompleteClass */
-    override def setDeviceProperty(propertyId: String, propertyValue: js.Any): Unit = js.native
-    /* CompleteClass */
-    override def setMediaStreamPropertiesAsync(mediaStreamType: MediaStreamType, mediaEncodingProperties: IMediaEncodingProperties): IAsyncAction = js.native
-    /* CompleteClass */
-    override def tryGetPowerlineFrequency(): Value = js.native
-    /* CompleteClass */
-    override def trySetPowerlineFrequency(value: PowerlineFrequency): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Media.Devices.VideoDeviceController
   
   @js.native
   object AudioDeviceRole extends js.Object {

@@ -12,7 +12,7 @@ A json validator that has an option to check for duplicated keys
 | Keywords           | jsonvalidator, json, validator, validation, gulpplugin |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 7923 |
+| # downloads        | 8220 |
 | # stars            | 1 |
 
 ## Links

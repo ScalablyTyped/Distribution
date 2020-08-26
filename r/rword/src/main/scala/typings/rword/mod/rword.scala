@@ -20,6 +20,7 @@ object rword extends js.Object {
     * Randomly generates words from the words array
     */
   def generate(): String | js.Array[String] = js.native
+  def generate(count: js.UndefOr[scala.Nothing], opt: GenerateOptions): String | js.Array[String] = js.native
   def generate(count: Double): String | js.Array[String] = js.native
   def generate(count: Double, opt: GenerateOptions): String | js.Array[String] = js.native
   /**

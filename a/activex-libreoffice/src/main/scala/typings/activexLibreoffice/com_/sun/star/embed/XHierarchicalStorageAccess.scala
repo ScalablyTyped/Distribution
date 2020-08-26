@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * access, another stream "a/b/d" can also be opened with hierarchical access ( if it is still not opened ), but the substorage "a" can not be opened (
   * it is locked by hierarchical access ).
   */
+@js.native
 trait XHierarchicalStorageAccess extends js.Object {
   /**
     * allows to get access to a child encrypted stream with password using hierarchical path.
@@ -30,7 +31,7 @@ trait XHierarchicalStorageAccess extends js.Object {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def openEncryptedStreamElementByHierarchicalName(sStreamName: String, nOpenMode: Double, sPassword: String): XExtendedStorageStream
+  def openEncryptedStreamElementByHierarchicalName(sStreamName: String, nOpenMode: Double, sPassword: String): XExtendedStorageStream = js.native
   /**
     * allows to get access to a child stream of the storage, using hierarchical path.
     *
@@ -43,7 +44,7 @@ trait XHierarchicalStorageAccess extends js.Object {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def openStreamElementByHierarchicalName(sStreamPath: String, nOpenMode: Double): XExtendedStorageStream
+  def openStreamElementByHierarchicalName(sStreamPath: String, nOpenMode: Double): XExtendedStorageStream = js.native
   /**
     * removes a stream specified by hierarchical name from a storage.
     * @param sElementPath the path to the element to remove
@@ -53,7 +54,7 @@ trait XHierarchicalStorageAccess extends js.Object {
     * @throws com::sun::star::io::IOException in case of io errors during removing
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def removeStreamElementByHierarchicalName(sElementPath: String): Unit
+  def removeStreamElementByHierarchicalName(sElementPath: String): Unit = js.native
 }
 
 object XHierarchicalStorageAccess {
@@ -66,5 +67,24 @@ object XHierarchicalStorageAccess {
     val __obj = js.Dynamic.literal(openEncryptedStreamElementByHierarchicalName = js.Any.fromFunction3(openEncryptedStreamElementByHierarchicalName), openStreamElementByHierarchicalName = js.Any.fromFunction2(openStreamElementByHierarchicalName), removeStreamElementByHierarchicalName = js.Any.fromFunction1(removeStreamElementByHierarchicalName))
     __obj.asInstanceOf[XHierarchicalStorageAccess]
   }
+  @scala.inline
+  implicit class XHierarchicalStorageAccessOps[Self <: XHierarchicalStorageAccess] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOpenEncryptedStreamElementByHierarchicalName(value: (String, Double, String) => XExtendedStorageStream): Self = this.set("openEncryptedStreamElementByHierarchicalName", js.Any.fromFunction3(value))
+    @scala.inline
+    def setOpenStreamElementByHierarchicalName(value: (String, Double) => XExtendedStorageStream): Self = this.set("openStreamElementByHierarchicalName", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRemoveStreamElementByHierarchicalName(value: String => Unit): Self = this.set("removeStreamElementByHierarchicalName", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -6,18 +6,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ trait DlCloseToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ @js.native
+trait DlCloseToken extends TagToken {
   @JSName("type")
-  var type_DlCloseToken: dl_close
+  var type_DlCloseToken: dl_close = js.native
 }
 
 object DlCloseToken {
   @scala.inline
-  def apply(level: Double, `type`: dl_close, lines: js.Tuple2[Double, Double] = null): DlCloseToken = {
+  def apply(level: Double, `type`: dl_close): DlCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[DlCloseToken]
   }
+  @scala.inline
+  implicit class DlCloseTokenOps[Self <: DlCloseToken] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: dl_close): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

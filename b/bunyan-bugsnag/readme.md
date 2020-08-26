@@ -12,7 +12,7 @@ A Bunyan stream for logging errors and warnings to Bugsnag
 | Keywords           | bunyan, bugsnag, logging |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 21680 |
+| # downloads        | 19959 |
 | # stars            | 0 |
 
 ## Links

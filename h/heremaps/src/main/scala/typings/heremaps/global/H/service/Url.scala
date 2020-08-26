@@ -23,8 +23,86 @@ class Url protected ()
     */
   def this(scheme: String, host: String) = this()
   def this(scheme: String, host: String, opt_path: String) = this()
+  def this(scheme: String, host: String, opt_path: js.UndefOr[scala.Nothing], opt_params: js.Object) = this()
   def this(scheme: String, host: String, opt_path: String, opt_params: js.Object) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: js.UndefOr[scala.Nothing],
+    opt_params: js.UndefOr[scala.Nothing],
+    opt_port: Double
+  ) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: js.UndefOr[scala.Nothing],
+    opt_params: js.Object,
+    opt_port: Double
+  ) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: String,
+    opt_params: js.UndefOr[scala.Nothing],
+    opt_port: Double
+  ) = this()
   def this(scheme: String, host: String, opt_path: String, opt_params: js.Object, opt_port: Double) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: js.UndefOr[scala.Nothing],
+    opt_params: js.UndefOr[scala.Nothing],
+    opt_port: js.UndefOr[scala.Nothing],
+    opt_anchor: String
+  ) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: js.UndefOr[scala.Nothing],
+    opt_params: js.UndefOr[scala.Nothing],
+    opt_port: Double,
+    opt_anchor: String
+  ) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: js.UndefOr[scala.Nothing],
+    opt_params: js.Object,
+    opt_port: js.UndefOr[scala.Nothing],
+    opt_anchor: String
+  ) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: js.UndefOr[scala.Nothing],
+    opt_params: js.Object,
+    opt_port: Double,
+    opt_anchor: String
+  ) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: String,
+    opt_params: js.UndefOr[scala.Nothing],
+    opt_port: js.UndefOr[scala.Nothing],
+    opt_anchor: String
+  ) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: String,
+    opt_params: js.UndefOr[scala.Nothing],
+    opt_port: Double,
+    opt_anchor: String
+  ) = this()
+  def this(
+    scheme: String,
+    host: String,
+    opt_path: String,
+    opt_params: js.Object,
+    opt_port: js.UndefOr[scala.Nothing],
+    opt_anchor: String
+  ) = this()
   def this(
     scheme: String,
     host: String,

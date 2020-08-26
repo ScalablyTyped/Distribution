@@ -14,10 +14,26 @@ trait MissionProfileIdResponse extends js.Object {
 
 object MissionProfileIdResponse {
   @scala.inline
-  def apply(missionProfileId: String = null): MissionProfileIdResponse = {
+  def apply(): MissionProfileIdResponse = {
     val __obj = js.Dynamic.literal()
-    if (missionProfileId != null) __obj.updateDynamic("missionProfileId")(missionProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MissionProfileIdResponse]
   }
+  @scala.inline
+  implicit class MissionProfileIdResponseOps[Self <: MissionProfileIdResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMissionProfileId(value: String): Self = this.set("missionProfileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissionProfileId: Self = this.set("missionProfileId", js.undefined)
+  }
+  
 }
 

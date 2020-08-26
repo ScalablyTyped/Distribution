@@ -31,18 +31,38 @@ trait SchemaStreamLocation extends js.Object {
 
 object SchemaStreamLocation {
   @scala.inline
-  def apply(
-    customSourceLocation: SchemaCustomSourceLocation = null,
-    pubsubLocation: SchemaPubsubLocation = null,
-    sideInputLocation: SchemaStreamingSideInputLocation = null,
-    streamingStageLocation: SchemaStreamingStageLocation = null
-  ): SchemaStreamLocation = {
+  def apply(): SchemaStreamLocation = {
     val __obj = js.Dynamic.literal()
-    if (customSourceLocation != null) __obj.updateDynamic("customSourceLocation")(customSourceLocation.asInstanceOf[js.Any])
-    if (pubsubLocation != null) __obj.updateDynamic("pubsubLocation")(pubsubLocation.asInstanceOf[js.Any])
-    if (sideInputLocation != null) __obj.updateDynamic("sideInputLocation")(sideInputLocation.asInstanceOf[js.Any])
-    if (streamingStageLocation != null) __obj.updateDynamic("streamingStageLocation")(streamingStageLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStreamLocation]
   }
+  @scala.inline
+  implicit class SchemaStreamLocationOps[Self <: SchemaStreamLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomSourceLocation(value: SchemaCustomSourceLocation): Self = this.set("customSourceLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSourceLocation: Self = this.set("customSourceLocation", js.undefined)
+    @scala.inline
+    def setPubsubLocation(value: SchemaPubsubLocation): Self = this.set("pubsubLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubsubLocation: Self = this.set("pubsubLocation", js.undefined)
+    @scala.inline
+    def setSideInputLocation(value: SchemaStreamingSideInputLocation): Self = this.set("sideInputLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSideInputLocation: Self = this.set("sideInputLocation", js.undefined)
+    @scala.inline
+    def setStreamingStageLocation(value: SchemaStreamingStageLocation): Self = this.set("streamingStageLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingStageLocation: Self = this.set("streamingStageLocation", js.undefined)
+  }
+  
 }
 

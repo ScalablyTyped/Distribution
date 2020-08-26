@@ -1,156 +1,147 @@
 package typings.reactToolbox.listItemLayoutMod
 
-import typings.react.mod.CSSProperties
-import typings.react.mod.Key
 import typings.react.mod.ReactChild
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.reactToolbox.componentsMod.ReactToolbox.Props
 import typings.reactToolbox.listItemActionsMod.ListItemActionsTheme
 import typings.reactToolbox.listItemContentMod.ListItemContentTheme
+import typings.reactToolbox.mod.ReactToolbox.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListItemLayoutProps extends Props {
   /**
     * A string URL to specify an avatar in the left side of the item.
     */
-  var avatar: js.UndefOr[String | ReactElement] = js.undefined
+  var avatar: js.UndefOr[String | ReactElement] = js.native
   /**
     * Main text of the item.
     */
-  var caption: js.UndefOr[String] = js.undefined
+  var caption: js.UndefOr[String] = js.native
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.native
   /**
     * If true, the item is displayed as disabled and it's not clickable.
     * @default false
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * Layout content.
     */
-  var itemContent: js.UndefOr[ReactChild] = js.undefined
+  var itemContent: js.UndefOr[ReactChild] = js.native
   /**
     * A list of elements that are placed on the left side of the item and after the avatar attribute.
     */
-  var leftActions: js.UndefOr[js.Array[ReactNode]] = js.undefined
+  var leftActions: js.UndefOr[js.Array[ReactNode]] = js.native
   /**
     * A string key of a font icon or element to display an icon in the left side of the item.
     */
-  var leftIcon: js.UndefOr[String | ReactElement] = js.undefined
+  var leftIcon: js.UndefOr[String | ReactElement] = js.native
   /**
     * Secondary text to display under the caption.
     */
-  var legend: js.UndefOr[String] = js.undefined
+  var legend: js.UndefOr[String] = js.native
   /**
     * A list of elements that are placed on the right side of the item and after the rightIcon attribute.
     */
-  var rightActions: js.UndefOr[js.Array[ReactNode]] = js.undefined
+  var rightActions: js.UndefOr[js.Array[ReactNode]] = js.native
   /**
     * The same as the leftIcon but in this case the icon is displayed in the right side.
     */
-  var rightIcon: js.UndefOr[String | ReactElement] = js.undefined
+  var rightIcon: js.UndefOr[String | ReactElement] = js.native
   /**
     * If true, the elements in the list will display a hover effect and a pointer cursor. Inherited from the parent.
     * @default false
     */
-  var selectable: js.UndefOr[Boolean] = js.undefined
+  var selectable: js.UndefOr[Boolean] = js.native
   /**
     * Object defining the component class name mappings.
     */
-  var theme: js.UndefOr[ListItemLayoutTheme with ListItemContentTheme with ListItemActionsTheme] = js.undefined
+  var theme: js.UndefOr[ListItemLayoutTheme with ListItemContentTheme with ListItemActionsTheme] = js.native
   /**
     * In case you want to provide the item as a link, you can pass this property to specify the href.
     */
-  var to: js.UndefOr[String] = js.undefined
+  var to: js.UndefOr[String] = js.native
 }
 
 object ListItemLayoutProps {
   @scala.inline
-  def apply(
-    avatar: String | ReactElement = null,
-    caption: String = null,
-    children: ReactNode = null,
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    itemContent: ReactChild = null,
-    key: Key = null,
-    leftActions: js.Array[ReactNode] = null,
-    leftIcon: String | ReactElement = null,
-    legend: String = null,
-    onClick: js.Function = null,
-    onContextMenu: js.Function = null,
-    onDoubleClick: js.Function = null,
-    onDrag: js.Function = null,
-    onDragEnd: js.Function = null,
-    onDragEnter: js.Function = null,
-    onDragExit: js.Function = null,
-    onDragLeave: js.Function = null,
-    onDragOver: js.Function = null,
-    onDragStart: js.Function = null,
-    onDrop: js.Function = null,
-    onMouseDown: js.Function = null,
-    onMouseEnter: js.Function = null,
-    onMouseLeave: js.Function = null,
-    onMouseMove: js.Function = null,
-    onMouseOut: js.Function = null,
-    onMouseOver: js.Function = null,
-    onMouseUp: js.Function = null,
-    onTouchCancel: js.Function = null,
-    onTouchEnd: js.Function = null,
-    onTouchMove: js.Function = null,
-    onTouchStart: js.Function = null,
-    rightActions: js.Array[ReactNode] = null,
-    rightIcon: String | ReactElement = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    theme: ListItemLayoutTheme with ListItemContentTheme with ListItemActionsTheme = null,
-    to: String = null
-  ): ListItemLayoutProps = {
+  def apply(): ListItemLayoutProps = {
     val __obj = js.Dynamic.literal()
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (itemContent != null) __obj.updateDynamic("itemContent")(itemContent.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (leftActions != null) __obj.updateDynamic("leftActions")(leftActions.asInstanceOf[js.Any])
-    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag.asInstanceOf[js.Any])
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter.asInstanceOf[js.Any])
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit.asInstanceOf[js.Any])
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave.asInstanceOf[js.Any])
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop.asInstanceOf[js.Any])
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown.asInstanceOf[js.Any])
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter.asInstanceOf[js.Any])
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove.asInstanceOf[js.Any])
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut.asInstanceOf[js.Any])
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver.asInstanceOf[js.Any])
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp.asInstanceOf[js.Any])
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel.asInstanceOf[js.Any])
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
-    if (rightActions != null) __obj.updateDynamic("rightActions")(rightActions.asInstanceOf[js.Any])
-    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemLayoutProps]
   }
+  @scala.inline
+  implicit class ListItemLayoutPropsOps[Self <: ListItemLayoutProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvatar(value: String | ReactElement): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    @scala.inline
+    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setItemContent(value: ReactChild): Self = this.set("itemContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemContent: Self = this.set("itemContent", js.undefined)
+    @scala.inline
+    def setLeftActionsVarargs(value: ReactNode*): Self = this.set("leftActions", js.Array(value :_*))
+    @scala.inline
+    def setLeftActions(value: js.Array[ReactNode]): Self = this.set("leftActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftActions: Self = this.set("leftActions", js.undefined)
+    @scala.inline
+    def setLeftIcon(value: String | ReactElement): Self = this.set("leftIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftIcon: Self = this.set("leftIcon", js.undefined)
+    @scala.inline
+    def setLegend(value: String): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setRightActionsVarargs(value: ReactNode*): Self = this.set("rightActions", js.Array(value :_*))
+    @scala.inline
+    def setRightActions(value: js.Array[ReactNode]): Self = this.set("rightActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightActions: Self = this.set("rightActions", js.undefined)
+    @scala.inline
+    def setRightIcon(value: String | ReactElement): Self = this.set("rightIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightIcon: Self = this.set("rightIcon", js.undefined)
+    @scala.inline
+    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setTheme(value: ListItemLayoutTheme with ListItemContentTheme with ListItemActionsTheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

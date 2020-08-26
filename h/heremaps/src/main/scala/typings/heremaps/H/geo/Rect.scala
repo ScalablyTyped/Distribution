@@ -112,6 +112,7 @@ trait Rect extends AbstractGeometry {
     * @returns {H.geo.Rect} - either the rectangular area passed as out parameter or a new rectangular area
     */
   def mergeLatLng(lat: Latitude, lng: Longitude): Rect = js.native
+  def mergeLatLng(lat: Latitude, lng: Longitude, opt_skipValidation: js.UndefOr[scala.Nothing], opt_out: Rect): Rect = js.native
   def mergeLatLng(lat: Latitude, lng: Longitude, opt_skipValidation: Boolean): Rect = js.native
   def mergeLatLng(lat: Latitude, lng: Longitude, opt_skipValidation: Boolean, opt_out: Rect): Rect = js.native
   /**
@@ -122,6 +123,7 @@ trait Rect extends AbstractGeometry {
     * @returns {H.geo.Rect} - either the rectangular area passed as out parameter or a new rectangular area
     */
   def mergePoint(geoPoint: IPoint): Rect = js.native
+  def mergePoint(geoPoint: IPoint, opt_skipValidation: js.UndefOr[scala.Nothing], opt_out: Rect): Rect = js.native
   def mergePoint(geoPoint: IPoint, opt_skipValidation: Boolean): Rect = js.native
   def mergePoint(geoPoint: IPoint, opt_skipValidation: Boolean, opt_out: Rect): Rect = js.native
   /**
@@ -132,6 +134,7 @@ trait Rect extends AbstractGeometry {
     * @returns {H.geo.Rect} - either the rectangular area passed as out parameter or a new rectangular area
     */
   def mergeRect(geoRect: Rect): Rect = js.native
+  def mergeRect(geoRect: Rect, opt_skipValidation: js.UndefOr[scala.Nothing], opt_out: Rect): Rect = js.native
   def mergeRect(geoRect: Rect, opt_skipValidation: Boolean): Rect = js.native
   def mergeRect(geoRect: Rect, opt_skipValidation: Boolean, opt_out: Rect): Rect = js.native
   /**
@@ -145,6 +148,14 @@ trait Rect extends AbstractGeometry {
     * @returns {H.geo.Rect} - either the rectangular area passed as out parameter or a new rectangular area
     */
   def mergeTopLeftBottomRight(top: Latitude, left: Longitude, bottom: Latitude, right: Longitude): Rect = js.native
+  def mergeTopLeftBottomRight(
+    top: Latitude,
+    left: Longitude,
+    bottom: Latitude,
+    right: Longitude,
+    opt_skipValidation: js.UndefOr[scala.Nothing],
+    opt_out: Rect
+  ): Rect = js.native
   def mergeTopLeftBottomRight(top: Latitude, left: Longitude, bottom: Latitude, right: Longitude, opt_skipValidation: Boolean): Rect = js.native
   def mergeTopLeftBottomRight(
     top: Latitude,

@@ -7,30 +7,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SimpleRouterURL extends UrlWithParsedQuery {
-  var args: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var args: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 
 object SimpleRouterURL {
   @scala.inline
-  def apply(
-    href: String,
-    query: ParsedUrlQuery,
-    args: StringDictionary[js.Any] = null,
-    auth: String = null,
-    hash: String = null,
-    host: String = null,
-    hostname: String = null,
-    path: String = null,
-    pathname: String = null,
-    port: String = null,
-    protocol: String = null,
-    search: String = null,
-    slashes: Boolean = null.asInstanceOf[Boolean]
-  ): SimpleRouterURL = {
-    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], auth = auth.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], slashes = slashes.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+  def apply(href: String, query: ParsedUrlQuery): SimpleRouterURL = {
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleRouterURL]
   }
+  @scala.inline
+  implicit class SimpleRouterURLOps[Self <: SimpleRouterURL] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgs(value: StringDictionary[js.Any]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+  }
+  
 }
 

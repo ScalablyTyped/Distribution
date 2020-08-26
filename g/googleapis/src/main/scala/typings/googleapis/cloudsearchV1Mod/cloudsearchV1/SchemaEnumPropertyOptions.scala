@@ -45,16 +45,36 @@ trait SchemaEnumPropertyOptions extends js.Object {
 
 object SchemaEnumPropertyOptions {
   @scala.inline
-  def apply(
-    operatorOptions: SchemaEnumOperatorOptions = null,
-    orderedRanking: String = null,
-    possibleValues: js.Array[SchemaEnumValuePair] = null
-  ): SchemaEnumPropertyOptions = {
+  def apply(): SchemaEnumPropertyOptions = {
     val __obj = js.Dynamic.literal()
-    if (operatorOptions != null) __obj.updateDynamic("operatorOptions")(operatorOptions.asInstanceOf[js.Any])
-    if (orderedRanking != null) __obj.updateDynamic("orderedRanking")(orderedRanking.asInstanceOf[js.Any])
-    if (possibleValues != null) __obj.updateDynamic("possibleValues")(possibleValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnumPropertyOptions]
   }
+  @scala.inline
+  implicit class SchemaEnumPropertyOptionsOps[Self <: SchemaEnumPropertyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOperatorOptions(value: SchemaEnumOperatorOptions): Self = this.set("operatorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatorOptions: Self = this.set("operatorOptions", js.undefined)
+    @scala.inline
+    def setOrderedRanking(value: String): Self = this.set("orderedRanking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderedRanking: Self = this.set("orderedRanking", js.undefined)
+    @scala.inline
+    def setPossibleValuesVarargs(value: SchemaEnumValuePair*): Self = this.set("possibleValues", js.Array(value :_*))
+    @scala.inline
+    def setPossibleValues(value: js.Array[SchemaEnumValuePair]): Self = this.set("possibleValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePossibleValues: Self = this.set("possibleValues", js.undefined)
+  }
+  
 }
 

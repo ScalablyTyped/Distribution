@@ -5,66 +5,113 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListViewOptions extends js.Object {
-  var altTemplate: js.UndefOr[js.Function] = js.undefined
-  var autoBind: js.UndefOr[Boolean] = js.undefined
-  var cancel: js.UndefOr[js.Function1[/* e */ ListViewCancelEvent, Unit]] = js.undefined
-  var change: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
-  var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
-  var edit: js.UndefOr[js.Function1[/* e */ ListViewEditEvent, Unit]] = js.undefined
-  var editTemplate: js.UndefOr[js.Function] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var navigatable: js.UndefOr[Boolean] = js.undefined
-  var remove: js.UndefOr[js.Function1[/* e */ ListViewRemoveEvent, Unit]] = js.undefined
-  var save: js.UndefOr[js.Function1[/* e */ ListViewSaveEvent, Unit]] = js.undefined
-  var scrollable: js.UndefOr[Boolean | String] = js.undefined
-  var selectable: js.UndefOr[Boolean | String] = js.undefined
-  var template: js.UndefOr[js.Function] = js.undefined
+  var altTemplate: js.UndefOr[js.Function] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ ListViewCancelEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ ListViewEditEvent, Unit]] = js.native
+  var editTemplate: js.UndefOr[js.Function] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ ListViewRemoveEvent, Unit]] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ ListViewSaveEvent, Unit]] = js.native
+  var scrollable: js.UndefOr[Boolean | String] = js.native
+  var selectable: js.UndefOr[Boolean | String] = js.native
+  var template: js.UndefOr[js.Function] = js.native
 }
 
 object ListViewOptions {
   @scala.inline
-  def apply(
-    altTemplate: js.Function = null,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    cancel: /* e */ ListViewCancelEvent => Unit = null,
-    change: /* e */ ListViewEvent => Unit = null,
-    dataBinding: /* e */ ListViewEvent => Unit = null,
-    dataBound: /* e */ ListViewEvent => Unit = null,
-    dataSource: js.Any | DataSource = null,
-    edit: /* e */ ListViewEditEvent => Unit = null,
-    editTemplate: js.Function = null,
-    height: Double | String = null,
-    name: String = null,
-    navigatable: js.UndefOr[Boolean] = js.undefined,
-    remove: /* e */ ListViewRemoveEvent => Unit = null,
-    save: /* e */ ListViewSaveEvent => Unit = null,
-    scrollable: Boolean | String = null,
-    selectable: Boolean | String = null,
-    template: js.Function = null
-  ): ListViewOptions = {
+  def apply(): ListViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (altTemplate != null) __obj.updateDynamic("altTemplate")(altTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
-    if (editTemplate != null) __obj.updateDynamic("editTemplate")(editTemplate.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.get.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
-    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewOptions]
   }
+  @scala.inline
+  implicit class ListViewOptionsOps[Self <: ListViewOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltTemplate(value: js.Function): Self = this.set("altTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltTemplate: Self = this.set("altTemplate", js.undefined)
+    @scala.inline
+    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    @scala.inline
+    def setCancel(value: /* e */ ListViewCancelEvent => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ ListViewEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setDataBinding(value: /* e */ ListViewEvent => Unit): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ ListViewEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setEdit(value: /* e */ ListViewEditEvent => Unit): Self = this.set("edit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEdit: Self = this.set("edit", js.undefined)
+    @scala.inline
+    def setEditTemplate(value: js.Function): Self = this.set("editTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditTemplate: Self = this.set("editTemplate", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNavigatable(value: Boolean): Self = this.set("navigatable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatable: Self = this.set("navigatable", js.undefined)
+    @scala.inline
+    def setRemove(value: /* e */ ListViewRemoveEvent => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setSave(value: /* e */ ListViewSaveEvent => Unit): Self = this.set("save", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSave: Self = this.set("save", js.undefined)
+    @scala.inline
+    def setScrollable(value: Boolean | String): Self = this.set("scrollable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollable: Self = this.set("scrollable", js.undefined)
+    @scala.inline
+    def setSelectable(value: Boolean | String): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setTemplate(value: js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+  }
+  
 }
 

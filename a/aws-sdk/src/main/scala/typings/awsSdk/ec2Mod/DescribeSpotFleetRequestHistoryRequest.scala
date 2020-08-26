@@ -34,20 +34,42 @@ trait DescribeSpotFleetRequestHistoryRequest extends js.Object {
 
 object DescribeSpotFleetRequestHistoryRequest {
   @scala.inline
-  def apply(
-    SpotFleetRequestId: SpotFleetRequestId,
-    StartTime: DateTime,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    EventType: EventType = null,
-    MaxResults: js.UndefOr[DescribeSpotFleetRequestHistoryMaxResults] = js.undefined,
-    NextToken: String = null
-  ): DescribeSpotFleetRequestHistoryRequest = {
+  def apply(SpotFleetRequestId: SpotFleetRequestId, StartTime: DateTime): DescribeSpotFleetRequestHistoryRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestId = SpotFleetRequestId.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (EventType != null) __obj.updateDynamic("EventType")(EventType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSpotFleetRequestHistoryRequest]
   }
+  @scala.inline
+  implicit class DescribeSpotFleetRequestHistoryRequestOps[Self <: DescribeSpotFleetRequestHistoryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpotFleetRequestId(value: SpotFleetRequestId): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setEventType(value: EventType): Self = this.set("EventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("EventType", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeSpotFleetRequestHistoryMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

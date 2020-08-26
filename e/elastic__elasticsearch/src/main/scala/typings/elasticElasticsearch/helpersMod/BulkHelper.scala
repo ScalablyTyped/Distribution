@@ -1,12 +1,12 @@
 package typings.elasticElasticsearch.helpersMod
 
-import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait BulkHelper[T] extends Promise[T] {
+trait BulkHelper[T]
+  extends js.Promise[T] {
   def abort(): BulkHelper[T] = js.native
 }
 

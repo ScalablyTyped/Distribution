@@ -10,19 +10,20 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.10]
   */
+@js.native
 trait SlicerLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the caption of slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
-  var caption: js.UndefOr[Boolean] = js.undefined
+  var caption: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the height, in points, of the slicer.
@@ -30,21 +31,21 @@ trait SlicerLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var height: js.UndefOr[Boolean] = js.undefined
+  var height: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the unique id of slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
-  var id: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[Boolean] = js.native
   /**
     *
     * True if all filters currently applied on the slicer are cleared.
     *
     * [Api set: ExcelApi 1.10]
     */
-  var isFilterCleared: js.UndefOr[Boolean] = js.undefined
+  var isFilterCleared: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
@@ -52,14 +53,14 @@ trait SlicerLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var left: js.UndefOr[Boolean] = js.undefined
+  var left: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the name of slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[Boolean] = js.undefined
+  var name: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the slicer name used in the formula.
@@ -67,7 +68,7 @@ trait SlicerLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var nameInFormula: js.UndefOr[Boolean] = js.undefined
+  var nameInFormula: js.UndefOr[Boolean] = js.native
   /**
     *
     * The style applied to the Slicer.
@@ -75,21 +76,21 @@ trait SlicerLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var slicerStyle: js.UndefOr[SlicerStyleLoadOptions] = js.undefined
+  var slicerStyle: js.UndefOr[SlicerStyleLoadOptions] = js.native
   /**
     *
     * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
     * [Api set: ExcelApi 1.10]
     */
-  var sortBy: js.UndefOr[Boolean] = js.undefined
+  var sortBy: js.UndefOr[Boolean] = js.native
   /**
     *
     * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
     *
     * [Api set: ExcelApi 1.10]
     */
-  var style: js.UndefOr[Boolean] = js.undefined
+  var style: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
@@ -97,7 +98,7 @@ trait SlicerLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var top: js.UndefOr[Boolean] = js.undefined
+  var top: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the width, in points, of the slicer.
@@ -105,50 +106,90 @@ trait SlicerLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var width: js.UndefOr[Boolean] = js.undefined
+  var width: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the worksheet containing the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
-  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
+  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.native
 }
 
 object SlicerLoadOptions {
   @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    caption: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Boolean] = js.undefined,
-    id: js.UndefOr[Boolean] = js.undefined,
-    isFilterCleared: js.UndefOr[Boolean] = js.undefined,
-    left: js.UndefOr[Boolean] = js.undefined,
-    name: js.UndefOr[Boolean] = js.undefined,
-    nameInFormula: js.UndefOr[Boolean] = js.undefined,
-    slicerStyle: SlicerStyleLoadOptions = null,
-    sortBy: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Boolean] = js.undefined,
-    top: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Boolean] = js.undefined,
-    worksheet: WorksheetLoadOptions = null
-  ): SlicerLoadOptions = {
+  def apply(): SlicerLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(caption)) __obj.updateDynamic("caption")(caption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFilterCleared)) __obj.updateDynamic("isFilterCleared")(isFilterCleared.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nameInFormula)) __obj.updateDynamic("nameInFormula")(nameInFormula.get.asInstanceOf[js.Any])
-    if (slicerStyle != null) __obj.updateDynamic("slicerStyle")(slicerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortBy)) __obj.updateDynamic("sortBy")(sortBy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlicerLoadOptions]
   }
+  @scala.inline
+  implicit class SlicerLoadOptionsOps[Self <: SlicerLoadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$all: Self = this.set("$all", js.undefined)
+    @scala.inline
+    def setCaption(value: Boolean): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    @scala.inline
+    def setHeight(value: Boolean): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsFilterCleared(value: Boolean): Self = this.set("isFilterCleared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFilterCleared: Self = this.set("isFilterCleared", js.undefined)
+    @scala.inline
+    def setLeft(value: Boolean): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNameInFormula(value: Boolean): Self = this.set("nameInFormula", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameInFormula: Self = this.set("nameInFormula", js.undefined)
+    @scala.inline
+    def setSlicerStyle(value: SlicerStyleLoadOptions): Self = this.set("slicerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlicerStyle: Self = this.set("slicerStyle", js.undefined)
+    @scala.inline
+    def setSortBy(value: Boolean): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    @scala.inline
+    def setStyle(value: Boolean): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTop(value: Boolean): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setWidth(value: Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWorksheet(value: WorksheetLoadOptions): Self = this.set("worksheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorksheet: Self = this.set("worksheet", js.undefined)
+  }
+  
 }
 

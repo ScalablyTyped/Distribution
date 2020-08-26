@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the ChartErrorBarsFormat object, for use in `chartErrorBarsFormat.set({ ... })`. */
+@js.native
 trait ChartErrorBarsFormatUpdateData extends js.Object {
   /**
     *
@@ -12,15 +13,31 @@ trait ChartErrorBarsFormatUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var line: js.UndefOr[ChartLineFormatUpdateData] = js.undefined
+  var line: js.UndefOr[ChartLineFormatUpdateData] = js.native
 }
 
 object ChartErrorBarsFormatUpdateData {
   @scala.inline
-  def apply(line: ChartLineFormatUpdateData = null): ChartErrorBarsFormatUpdateData = {
+  def apply(): ChartErrorBarsFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartErrorBarsFormatUpdateData]
   }
+  @scala.inline
+  implicit class ChartErrorBarsFormatUpdateDataOps[Self <: ChartErrorBarsFormatUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLine(value: ChartLineFormatUpdateData): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+  }
+  
 }
 

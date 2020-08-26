@@ -22,16 +22,34 @@ trait CreateGroupMembershipResponse extends js.Object {
 
 object CreateGroupMembershipResponse {
   @scala.inline
-  def apply(
-    GroupMember: GroupMember = null,
-    RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined
-  ): CreateGroupMembershipResponse = {
+  def apply(): CreateGroupMembershipResponse = {
     val __obj = js.Dynamic.literal()
-    if (GroupMember != null) __obj.updateDynamic("GroupMember")(GroupMember.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGroupMembershipResponse]
   }
+  @scala.inline
+  implicit class CreateGroupMembershipResponseOps[Self <: CreateGroupMembershipResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupMember(value: GroupMember): Self = this.set("GroupMember", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupMember: Self = this.set("GroupMember", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

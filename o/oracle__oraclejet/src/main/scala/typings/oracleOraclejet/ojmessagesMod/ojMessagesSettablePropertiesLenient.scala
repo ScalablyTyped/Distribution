@@ -13,33 +13,60 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojmessages.ojMessagesSettableProperties> */
+@js.native
 trait ojMessagesSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var display: js.UndefOr[general | notification] = js.undefined
-  var displayOptions: js.UndefOr[DisplayOptions] = js.undefined
-  var messages: js.UndefOr[js.Array[Message] | (DataProvider[_, Message])] = js.undefined
-  var position: js.UndefOr[Position] = js.undefined
-  var translations: js.UndefOr[AriaLiveRegion] = js.undefined
+  var display: js.UndefOr[general | notification] = js.native
+  var displayOptions: js.UndefOr[DisplayOptions] = js.native
+  var messages: js.UndefOr[js.Array[Message] | Null | (DataProvider[_, Message])] = js.native
+  var position: js.UndefOr[Position | Null] = js.native
+  var translations: js.UndefOr[AriaLiveRegion] = js.native
 }
 
 object ojMessagesSettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    display: general | notification = null,
-    displayOptions: DisplayOptions = null,
-    messages: js.Array[Message] | (DataProvider[_, Message]) = null,
-    position: Position = null,
-    translations: AriaLiveRegion = null
-  ): ojMessagesSettablePropertiesLenient = {
+  def apply(): ojMessagesSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojMessagesSettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojMessagesSettablePropertiesLenientOps[Self <: ojMessagesSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplay(value: general | notification): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setDisplayOptions(value: DisplayOptions): Self = this.set("displayOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayOptions: Self = this.set("displayOptions", js.undefined)
+    @scala.inline
+    def setMessagesVarargs(value: Message*): Self = this.set("messages", js.Array(value :_*))
+    @scala.inline
+    def setMessages(value: js.Array[Message] | (DataProvider[_, Message])): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setMessagesNull: Self = this.set("messages", null)
+    @scala.inline
+    def setPosition(value: Position): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setPositionNull: Self = this.set("position", null)
+    @scala.inline
+    def setTranslations(value: AriaLiveRegion): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+  }
+  
 }
 

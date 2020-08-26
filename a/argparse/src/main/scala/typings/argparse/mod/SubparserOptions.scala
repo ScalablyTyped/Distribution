@@ -5,39 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubparserOptions extends js.Object {
-  var action: js.UndefOr[String] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var dest: js.UndefOr[String] = js.undefined
-  var help: js.UndefOr[String] = js.undefined
-  var metavar: js.UndefOr[String] = js.undefined
-  var parserClass: js.UndefOr[Instantiable] = js.undefined
-  var prog: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.native
+  var dest: js.UndefOr[String] = js.native
+  var help: js.UndefOr[String] = js.native
+  var metavar: js.UndefOr[String] = js.native
+  var parserClass: js.UndefOr[Instantiable] = js.native
+  var prog: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object SubparserOptions {
   @scala.inline
-  def apply(
-    action: String = null,
-    description: String = null,
-    dest: String = null,
-    help: String = null,
-    metavar: String = null,
-    parserClass: Instantiable = null,
-    prog: String = null,
-    title: String = null
-  ): SubparserOptions = {
+  def apply(): SubparserOptions = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
-    if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (metavar != null) __obj.updateDynamic("metavar")(metavar.asInstanceOf[js.Any])
-    if (parserClass != null) __obj.updateDynamic("parserClass")(parserClass.asInstanceOf[js.Any])
-    if (prog != null) __obj.updateDynamic("prog")(prog.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubparserOptions]
   }
+  @scala.inline
+  implicit class SubparserOptionsOps[Self <: SubparserOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDest(value: String): Self = this.set("dest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDest: Self = this.set("dest", js.undefined)
+    @scala.inline
+    def setHelp(value: String): Self = this.set("help", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelp: Self = this.set("help", js.undefined)
+    @scala.inline
+    def setMetavar(value: String): Self = this.set("metavar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetavar: Self = this.set("metavar", js.undefined)
+    @scala.inline
+    def setParserClass(value: Instantiable): Self = this.set("parserClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParserClass: Self = this.set("parserClass", js.undefined)
+    @scala.inline
+    def setProg(value: String): Self = this.set("prog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProg: Self = this.set("prog", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefinitionProvider extends js.Object {
   /**
     * Provide the definition of the symbol at the given position and document.
@@ -14,7 +15,7 @@ trait DefinitionProvider extends js.Object {
     * @return A definition or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def provideDefinition(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[Definition | js.Array[DefinitionLink]]
+  def provideDefinition(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[Definition | js.Array[DefinitionLink]] = js.native
 }
 
 object DefinitionProvider {
@@ -25,5 +26,22 @@ object DefinitionProvider {
     val __obj = js.Dynamic.literal(provideDefinition = js.Any.fromFunction3(provideDefinition))
     __obj.asInstanceOf[DefinitionProvider]
   }
+  @scala.inline
+  implicit class DefinitionProviderOps[Self <: DefinitionProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvideDefinition(
+      value: (TextDocument, Position, CancellationToken) => ProviderResult[Definition | js.Array[DefinitionLink]]
+    ): Self = this.set("provideDefinition", js.Any.fromFunction3(value))
+  }
+  
 }
 

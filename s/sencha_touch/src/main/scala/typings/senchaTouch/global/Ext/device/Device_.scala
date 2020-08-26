@@ -33,8 +33,39 @@ object Device_ extends js.Object {
     * @param options Object An object containing handler configuration.
     */
   def addAfterListener(): Unit = js.native
+  def addAfterListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addAfterListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def addAfterListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addAfterListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def addAfterListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addAfterListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def addAfterListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def addAfterListener(eventName: js.Any): Unit = js.native
+  def addAfterListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addAfterListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def addAfterListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def addAfterListener(eventName: js.Any, fn: js.Any): Unit = js.native
+  def addAfterListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def addAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def addAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Appends a before event handler
@@ -44,8 +75,39 @@ object Device_ extends js.Object {
     * @param options Object An object containing handler configuration.
     */
   def addBeforeListener(): Unit = js.native
+  def addBeforeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addBeforeListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def addBeforeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addBeforeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def addBeforeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addBeforeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def addBeforeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def addBeforeListener(eventName: js.Any): Unit = js.native
+  def addBeforeListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addBeforeListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def addBeforeListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def addBeforeListener(eventName: js.Any, fn: js.Any): Unit = js.native
+  def addBeforeListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def addBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def addBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Adds the specified events to the list of events which this Observable may fire
@@ -61,9 +123,121 @@ object Device_ extends js.Object {
     * @param order String The order of when the listener should be added into the listener queue. Possible values are before, current and after.
     */
   def addListener(): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   def addListener(eventName: js.Any): Unit = js.native
+  def addListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def addListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def addListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
+  def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any, order: String): Unit = js.native
   def addListener(eventName: js.Any, fn: js.Any): Unit = js.native
+  def addListener(
+    eventName: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def addListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
+  def addListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any, order: String): Unit = js.native
   def addListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+  def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.UndefOr[scala.Nothing], order: String): Unit = js.native
   def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
@@ -74,9 +248,121 @@ object Device_ extends js.Object {
     * @param options Object If the eventName parameter was an event name, this is the addListener options.
     */
   def addManagedListener(): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(`object`: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any
+  ): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(`object`: js.UndefOr[scala.Nothing], eventName: js.Any): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any): Unit = js.native
+  def addManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+  def addManagedListener(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def addManagedListener(`object`: js.Any): Unit = js.native
+  def addManagedListener(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def addManagedListener(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def addManagedListener(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def addManagedListener(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def addManagedListener(`object`: js.Any, eventName: js.Any): Unit = js.native
+  def addManagedListener(
+    `object`: js.Any,
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = js.native
+  def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def addManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
@@ -114,8 +400,24 @@ object Device_ extends js.Object {
     * @returns Object
     */
   def fireAction(): js.Any = js.native
+  def fireAction(
+    eventName: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def fireAction(eventName: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def fireAction(eventName: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def fireAction(eventName: js.UndefOr[scala.Nothing], args: Array): js.Any = js.native
+  def fireAction(eventName: js.UndefOr[scala.Nothing], args: Array, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def fireAction(eventName: js.UndefOr[scala.Nothing], args: Array, fn: js.Any): js.Any = js.native
+  def fireAction(eventName: js.UndefOr[scala.Nothing], args: Array, fn: js.Any, scope: js.Any): js.Any = js.native
   def fireAction(eventName: String): js.Any = js.native
+  def fireAction(eventName: String, args: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def fireAction(eventName: String, args: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def fireAction(eventName: String, args: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
   def fireAction(eventName: String, args: Array): js.Any = js.native
+  def fireAction(eventName: String, args: Array, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
   def fireAction(eventName: String, args: Array, fn: js.Any): js.Any = js.native
   def fireAction(eventName: String, args: Array, fn: js.Any, scope: js.Any): js.Any = js.native
   /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
@@ -162,9 +464,121 @@ object Device_ extends js.Object {
     * @param options Object If the eventName parameter was an event name, this is the addListener options.
     */
   def mon(): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def mon(`object`: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any
+  ): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def mon(`object`: js.UndefOr[scala.Nothing], eventName: js.Any): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def mon(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any): Unit = js.native
+  def mon(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def mon(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+  def mon(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def mon(`object`: js.Any): Unit = js.native
+  def mon(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def mon(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def mon(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def mon(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mon(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def mon(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def mon(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def mon(`object`: js.Any, eventName: js.Any): Unit = js.native
+  def mon(
+    `object`: js.Any,
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def mon(`object`: js.Any, eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def mon(`object`: js.Any, eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def mon(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = js.native
+  def mon(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def mon(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def mon(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Alias for removeManagedListener
@@ -174,8 +588,39 @@ object Device_ extends js.Object {
     * @param scope Object If the eventName parameter was an event name, this is the scope in which the handler function is executed.
     */
   def mun(): Unit = js.native
+  def mun(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def mun(`object`: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mun(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any
+  ): Unit = js.native
+  def mun(`object`: js.UndefOr[scala.Nothing], eventName: js.Any): Unit = js.native
+  def mun(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def mun(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any): Unit = js.native
+  def mun(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def mun(`object`: js.Any): Unit = js.native
+  def mun(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def mun(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mun(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def mun(`object`: js.Any, eventName: js.Any): Unit = js.native
+  def mun(`object`: js.Any, eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def mun(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = js.native
   def mun(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Alias for addListener
@@ -186,9 +631,121 @@ object Device_ extends js.Object {
     * @param order String The order of when the listener should be added into the listener queue. Possible values are before, current and after.
     */
   def on(): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   def on(eventName: js.Any): Unit = js.native
+  def on(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def on(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def on(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
+  def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any, order: String): Unit = js.native
   def on(eventName: js.Any, fn: js.Any): Unit = js.native
+  def on(
+    eventName: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def on(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
+  def on(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any, order: String): Unit = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+  def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.UndefOr[scala.Nothing], order: String): Unit = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   /** [Method] Alias for addAfterListener
@@ -198,8 +755,39 @@ object Device_ extends js.Object {
     * @param options Object An object containing handler configuration.
     */
   def onAfter(): Unit = js.native
+  def onAfter(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def onAfter(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def onAfter(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def onAfter(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def onAfter(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def onAfter(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def onAfter(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def onAfter(eventName: js.Any): Unit = js.native
+  def onAfter(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def onAfter(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def onAfter(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def onAfter(eventName: js.Any, fn: js.Any): Unit = js.native
+  def onAfter(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def onAfter(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def onAfter(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Alias for addBeforeListener
@@ -209,8 +797,39 @@ object Device_ extends js.Object {
     * @param options Object An object containing handler configuration.
     */
   def onBefore(): Unit = js.native
+  def onBefore(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def onBefore(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def onBefore(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def onBefore(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def onBefore(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def onBefore(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def onBefore(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def onBefore(eventName: js.Any): Unit = js.native
+  def onBefore(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def onBefore(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def onBefore(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def onBefore(eventName: js.Any, fn: js.Any): Unit = js.native
+  def onBefore(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def onBefore(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def onBefore(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Opens a specified URL
@@ -224,6 +843,7 @@ object Device_ extends js.Object {
     * @returns Ext.mixin.Observable this
     */
   def relayEvents(): IObservable = js.native
+  def relayEvents(`object`: js.UndefOr[scala.Nothing], events: js.Any): IObservable = js.native
   def relayEvents(`object`: js.Any): IObservable = js.native
   def relayEvents(`object`: js.Any, events: js.Any): IObservable = js.native
   /** [Method] Removes a before event handler
@@ -233,8 +853,39 @@ object Device_ extends js.Object {
     * @param options Object Extra options object.
     */
   def removeAfterListener(): Unit = js.native
+  def removeAfterListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def removeAfterListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeAfterListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def removeAfterListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeAfterListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def removeAfterListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def removeAfterListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def removeAfterListener(eventName: js.Any): Unit = js.native
+  def removeAfterListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def removeAfterListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeAfterListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def removeAfterListener(eventName: js.Any, fn: js.Any): Unit = js.native
+  def removeAfterListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def removeAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def removeAfterListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Removes a before event handler
@@ -244,8 +895,39 @@ object Device_ extends js.Object {
     * @param options Object Extra options object.
     */
   def removeBeforeListener(): Unit = js.native
+  def removeBeforeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def removeBeforeListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeBeforeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def removeBeforeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeBeforeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def removeBeforeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def removeBeforeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def removeBeforeListener(eventName: js.Any): Unit = js.native
+  def removeBeforeListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def removeBeforeListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeBeforeListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def removeBeforeListener(eventName: js.Any, fn: js.Any): Unit = js.native
+  def removeBeforeListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def removeBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def removeBeforeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Removes an event handler
@@ -256,9 +938,121 @@ object Device_ extends js.Object {
     * @param order String The order of the listener to remove. Possible values are before, current and after.
     */
   def removeListener(): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def removeListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   def removeListener(eventName: js.Any): Unit = js.native
+  def removeListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def removeListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def removeListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def removeListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def removeListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
+  def removeListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any, order: String): Unit = js.native
   def removeListener(eventName: js.Any, fn: js.Any): Unit = js.native
+  def removeListener(
+    eventName: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def removeListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
+  def removeListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any, order: String): Unit = js.native
   def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+  def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.UndefOr[scala.Nothing], order: String): Unit = js.native
   def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def removeListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
@@ -268,8 +1062,39 @@ object Device_ extends js.Object {
     * @param scope Object If the eventName parameter was an event name, this is the scope in which the handler function is executed.
     */
   def removeManagedListener(): Unit = js.native
+  def removeManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def removeManagedListener(`object`: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any
+  ): Unit = js.native
+  def removeManagedListener(`object`: js.UndefOr[scala.Nothing], eventName: js.Any): Unit = js.native
+  def removeManagedListener(
+    `object`: js.UndefOr[scala.Nothing],
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def removeManagedListener(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any): Unit = js.native
+  def removeManagedListener(`object`: js.UndefOr[scala.Nothing], eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def removeManagedListener(`object`: js.Any): Unit = js.native
+  def removeManagedListener(
+    `object`: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def removeManagedListener(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeManagedListener(`object`: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def removeManagedListener(`object`: js.Any, eventName: js.Any): Unit = js.native
+  def removeManagedListener(`object`: js.Any, eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def removeManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any): Unit = js.native
   def removeManagedListener(`object`: js.Any, eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Resumes firing events see suspendEvents
@@ -301,9 +1126,121 @@ object Device_ extends js.Object {
     * @param order String The order of the listener to remove. Possible values are before, current and after.
     */
   def un(): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def un(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   def un(eventName: js.Any): Unit = js.native
+  def un(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def un(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def un(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    order: String
+  ): Unit = js.native
+  def un(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def un(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def un(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
+  def un(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any, order: String): Unit = js.native
   def un(eventName: js.Any, fn: js.Any): Unit = js.native
+  def un(
+    eventName: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    order: String
+  ): Unit = js.native
+  def un(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
+  def un(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any, order: String): Unit = js.native
   def un(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
+  def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.UndefOr[scala.Nothing], order: String): Unit = js.native
   def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def un(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any, order: String): Unit = js.native
   /** [Method] Alias for removeAfterListener
@@ -313,8 +1250,39 @@ object Device_ extends js.Object {
     * @param options Object Extra options object.
     */
   def unAfter(): Unit = js.native
+  def unAfter(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def unAfter(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def unAfter(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def unAfter(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def unAfter(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def unAfter(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def unAfter(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def unAfter(eventName: js.Any): Unit = js.native
+  def unAfter(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def unAfter(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def unAfter(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def unAfter(eventName: js.Any, fn: js.Any): Unit = js.native
+  def unAfter(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def unAfter(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def unAfter(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Alias for removeBeforeListener
@@ -324,8 +1292,39 @@ object Device_ extends js.Object {
     * @param options Object Extra options object.
     */
   def unBefore(): Unit = js.native
+  def unBefore(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def unBefore(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def unBefore(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def unBefore(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def unBefore(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def unBefore(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def unBefore(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def unBefore(eventName: js.Any): Unit = js.native
+  def unBefore(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def unBefore(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def unBefore(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): Unit = js.native
   def unBefore(eventName: js.Any, fn: js.Any): Unit = js.native
+  def unBefore(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def unBefore(eventName: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def unBefore(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): Unit = js.native
 }

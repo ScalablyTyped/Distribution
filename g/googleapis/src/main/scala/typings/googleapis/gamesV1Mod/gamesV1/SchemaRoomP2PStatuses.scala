@@ -22,11 +22,32 @@ trait SchemaRoomP2PStatuses extends js.Object {
 
 object SchemaRoomP2PStatuses {
   @scala.inline
-  def apply(kind: String = null, updates: js.Array[SchemaRoomP2PStatus] = null): SchemaRoomP2PStatuses = {
+  def apply(): SchemaRoomP2PStatuses = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (updates != null) __obj.updateDynamic("updates")(updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRoomP2PStatuses]
   }
+  @scala.inline
+  implicit class SchemaRoomP2PStatusesOps[Self <: SchemaRoomP2PStatuses] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setUpdatesVarargs(value: SchemaRoomP2PStatus*): Self = this.set("updates", js.Array(value :_*))
+    @scala.inline
+    def setUpdates(value: js.Array[SchemaRoomP2PStatus]): Self = this.set("updates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdates: Self = this.set("updates", js.undefined)
+  }
+  
 }
 

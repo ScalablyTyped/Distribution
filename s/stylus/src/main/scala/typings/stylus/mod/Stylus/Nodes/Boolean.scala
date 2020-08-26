@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Boolean extends Node {
-  var isFalse: scala.Boolean
-  var isTrue: scala.Boolean
-  var `val`: scala.Boolean
+  var isFalse: scala.Boolean = js.native
+  var isTrue: scala.Boolean = js.native
+  var `val`: scala.Boolean = js.native
   /**
     * Return 'Boolean'.
     */
-  def inspect(): java.lang.String
+  def inspect(): java.lang.String = js.native
   /**
     * Negate the value.
     */
   // tslint:disable-next-line no-unnecessary-qualifier
-  def negate(): Boolean
+  def negate(): Boolean = js.native
 }
 
 object Boolean {
@@ -46,5 +47,28 @@ object Boolean {
     __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Boolean]
   }
+  @scala.inline
+  implicit class BooleanOps[Self <: Boolean] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInspect(value: () => java.lang.String): Self = this.set("inspect", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsFalse(value: scala.Boolean): Self = this.set("isFalse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsTrue(value: scala.Boolean): Self = this.set("isTrue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNegate(value: () => Boolean): Self = this.set("negate", js.Any.fromFunction0(value))
+    @scala.inline
+    def setVal(value: scala.Boolean): Self = this.set("val", value.asInstanceOf[js.Any])
+  }
+  
 }
 

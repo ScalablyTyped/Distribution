@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/inspector/getRulesPackages", "getRulesPackages")
 @js.native
 object getRulesPackages extends js.Object {
-  def apply(): js.Promise[GetRulesPackagesResult] with GetRulesPackagesResult = js.native
-  def apply(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] with GetRulesPackagesResult = js.native
+  def apply(): js.Promise[GetRulesPackagesResult] = js.native
+  def apply(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] = js.native
 }
 

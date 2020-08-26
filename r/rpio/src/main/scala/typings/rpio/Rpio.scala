@@ -116,8 +116,6 @@ trait Rpio extends js.Object {
     */
   def open(pin: Double, mode: Double): Unit = js.native
   def open(pin: Double, mode: Double, options: Double): Unit = js.native
-  def poll(pin: Double): Unit = js.native
-  def poll(pin: Double, cb: Null, direction: Double): Unit = js.native
   /**
     * Watch pin for changes and execute the callback cb() on events. cb() takes a single argument, the pin which triggered the callback.
     *
@@ -133,6 +131,8 @@ trait Rpio extends js.Object {
     * @param cb
     * @param direction
     */
+  def poll(pin: Double): Unit = js.native
+  def poll(pin: Double, cb: Null, direction: Double): Unit = js.native
   def poll(pin: Double, cb: CallbackFunction): Unit = js.native
   def poll(pin: Double, cb: CallbackFunction, direction: Double): Unit = js.native
   /**

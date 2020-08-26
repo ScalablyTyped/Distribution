@@ -42,26 +42,54 @@ trait Certificate extends js.Object {
 
 object Certificate {
   @scala.inline
-  def apply(
-    CertificateArn: String = null,
-    CertificateIdentifier: String = null,
-    CertificateType: String = null,
-    CustomerOverride: js.UndefOr[BooleanOptional] = js.undefined,
-    CustomerOverrideValidTill: TStamp = null,
-    Thumbprint: String = null,
-    ValidFrom: TStamp = null,
-    ValidTill: TStamp = null
-  ): Certificate = {
+  def apply(): Certificate = {
     val __obj = js.Dynamic.literal()
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (CertificateIdentifier != null) __obj.updateDynamic("CertificateIdentifier")(CertificateIdentifier.asInstanceOf[js.Any])
-    if (CertificateType != null) __obj.updateDynamic("CertificateType")(CertificateType.asInstanceOf[js.Any])
-    if (!js.isUndefined(CustomerOverride)) __obj.updateDynamic("CustomerOverride")(CustomerOverride.get.asInstanceOf[js.Any])
-    if (CustomerOverrideValidTill != null) __obj.updateDynamic("CustomerOverrideValidTill")(CustomerOverrideValidTill.asInstanceOf[js.Any])
-    if (Thumbprint != null) __obj.updateDynamic("Thumbprint")(Thumbprint.asInstanceOf[js.Any])
-    if (ValidFrom != null) __obj.updateDynamic("ValidFrom")(ValidFrom.asInstanceOf[js.Any])
-    if (ValidTill != null) __obj.updateDynamic("ValidTill")(ValidTill.asInstanceOf[js.Any])
     __obj.asInstanceOf[Certificate]
   }
+  @scala.inline
+  implicit class CertificateOps[Self <: Certificate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: String): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setCertificateIdentifier(value: String): Self = this.set("CertificateIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateIdentifier: Self = this.set("CertificateIdentifier", js.undefined)
+    @scala.inline
+    def setCertificateType(value: String): Self = this.set("CertificateType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateType: Self = this.set("CertificateType", js.undefined)
+    @scala.inline
+    def setCustomerOverride(value: BooleanOptional): Self = this.set("CustomerOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerOverride: Self = this.set("CustomerOverride", js.undefined)
+    @scala.inline
+    def setCustomerOverrideValidTill(value: TStamp): Self = this.set("CustomerOverrideValidTill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerOverrideValidTill: Self = this.set("CustomerOverrideValidTill", js.undefined)
+    @scala.inline
+    def setThumbprint(value: String): Self = this.set("Thumbprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbprint: Self = this.set("Thumbprint", js.undefined)
+    @scala.inline
+    def setValidFrom(value: TStamp): Self = this.set("ValidFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidFrom: Self = this.set("ValidFrom", js.undefined)
+    @scala.inline
+    def setValidTill(value: TStamp): Self = this.set("ValidTill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidTill: Self = this.set("ValidTill", js.undefined)
+  }
+  
 }
 

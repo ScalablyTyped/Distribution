@@ -8,16 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.SourceObjectFile")
 @js.native
-class SourceObjectFile () extends ISourceObjectFile {
-  /* CompleteClass */
-  override var Extension: String = js.native
-  /* CompleteClass */
-  override var SourceFilePath: String = js.native
-  /* CompleteClass */
-  override var Title: String = js.native
-  /* CompleteClass */
-  override def Clone(): ISourceObjectFile = js.native
-}
+class SourceObjectFile () extends ISourceObjectFile
 
 @JSGlobal("MFiles.SourceObjectFile")
 @js.native

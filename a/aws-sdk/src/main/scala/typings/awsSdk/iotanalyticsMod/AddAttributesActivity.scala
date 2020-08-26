@@ -22,10 +22,30 @@ trait AddAttributesActivity extends js.Object {
 
 object AddAttributesActivity {
   @scala.inline
-  def apply(attributes: AttributeNameMapping, name: ActivityName, next: ActivityName = null): AddAttributesActivity = {
+  def apply(attributes: AttributeNameMapping, name: ActivityName): AddAttributesActivity = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAttributesActivity]
   }
+  @scala.inline
+  implicit class AddAttributesActivityOps[Self <: AddAttributesActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: AttributeNameMapping): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ActivityName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNext(value: ActivityName): Self = this.set("next", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNext: Self = this.set("next", js.undefined)
+  }
+  
 }
 

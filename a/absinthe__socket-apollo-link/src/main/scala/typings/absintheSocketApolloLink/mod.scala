@@ -23,6 +23,11 @@ object mod extends js.Object {
   }
   
   def createAbsintheSocketLink(absintheSocket: AbsintheSocket[js.Object]): AbsintheSocketLink = js.native
+  def createAbsintheSocketLink(
+    absintheSocket: AbsintheSocket[js.Object],
+    onError: js.UndefOr[scala.Nothing],
+    onStart: js.Function1[/* notifier */ Notifier[js.Object, js.Object], _]
+  ): AbsintheSocketLink = js.native
   def createAbsintheSocketLink(absintheSocket: AbsintheSocket[js.Object], onError: js.Function1[/* error */ Error, _]): AbsintheSocketLink = js.native
   def createAbsintheSocketLink(
     absintheSocket: AbsintheSocket[js.Object],

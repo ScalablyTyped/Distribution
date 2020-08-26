@@ -12,33 +12,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RuleMetaData extends js.Object {
-  var deprecated: js.UndefOr[Boolean] = js.undefined
-  var docs: js.UndefOr[Category] = js.undefined
-  var fixable: js.UndefOr[code | whitespace] = js.undefined
-  var messages: js.UndefOr[StringDictionary[String]] = js.undefined
-  var schema: js.UndefOr[JSONSchema4 | js.Array[JSONSchema4]] = js.undefined
-  var `type`: js.UndefOr[problem | suggestion | layout] = js.undefined
+  var deprecated: js.UndefOr[Boolean] = js.native
+  var docs: js.UndefOr[Category] = js.native
+  var fixable: js.UndefOr[code | whitespace] = js.native
+  var messages: js.UndefOr[StringDictionary[String]] = js.native
+  var schema: js.UndefOr[JSONSchema4 | js.Array[JSONSchema4]] = js.native
+  var `type`: js.UndefOr[problem | suggestion | layout] = js.native
 }
 
 object RuleMetaData {
   @scala.inline
-  def apply(
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    docs: Category = null,
-    fixable: code | whitespace = null,
-    messages: StringDictionary[String] = null,
-    schema: JSONSchema4 | js.Array[JSONSchema4] = null,
-    `type`: problem | suggestion | layout = null
-  ): RuleMetaData = {
+  def apply(): RuleMetaData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
-    if (docs != null) __obj.updateDynamic("docs")(docs.asInstanceOf[js.Any])
-    if (fixable != null) __obj.updateDynamic("fixable")(fixable.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleMetaData]
   }
+  @scala.inline
+  implicit class RuleMetaDataOps[Self <: RuleMetaData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeprecated(value: Boolean): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    @scala.inline
+    def setDocs(value: Category): Self = this.set("docs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocs: Self = this.set("docs", js.undefined)
+    @scala.inline
+    def setFixable(value: code | whitespace): Self = this.set("fixable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixable: Self = this.set("fixable", js.undefined)
+    @scala.inline
+    def setMessages(value: StringDictionary[String]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setSchemaVarargs(value: JSONSchema4*): Self = this.set("schema", js.Array(value :_*))
+    @scala.inline
+    def setSchema(value: JSONSchema4 | js.Array[JSONSchema4]): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setType(value: problem | suggestion | layout): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

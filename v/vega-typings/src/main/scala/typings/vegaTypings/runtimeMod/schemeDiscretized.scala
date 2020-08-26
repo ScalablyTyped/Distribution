@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object schemeDiscretized extends js.Object {
   def apply(name: String): js.Any = js.native
+  def apply(name: String, scheme: js.UndefOr[scala.Nothing], interpolator: js.Any): js.Any = js.native
   def apply(name: String, scheme: js.Any): js.Any = js.native
   def apply(name: String, scheme: js.Any, interpolator: js.Any): js.Any = js.native
 }

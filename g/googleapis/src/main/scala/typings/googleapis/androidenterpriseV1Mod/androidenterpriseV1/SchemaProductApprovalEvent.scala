@@ -23,11 +23,30 @@ trait SchemaProductApprovalEvent extends js.Object {
 
 object SchemaProductApprovalEvent {
   @scala.inline
-  def apply(approved: String = null, productId: String = null): SchemaProductApprovalEvent = {
+  def apply(): SchemaProductApprovalEvent = {
     val __obj = js.Dynamic.literal()
-    if (approved != null) __obj.updateDynamic("approved")(approved.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductApprovalEvent]
   }
+  @scala.inline
+  implicit class SchemaProductApprovalEventOps[Self <: SchemaProductApprovalEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApproved(value: String): Self = this.set("approved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproved: Self = this.set("approved", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+  }
+  
 }
 

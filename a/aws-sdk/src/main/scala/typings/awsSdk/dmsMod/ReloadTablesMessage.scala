@@ -22,14 +22,32 @@ trait ReloadTablesMessage extends js.Object {
 
 object ReloadTablesMessage {
   @scala.inline
-  def apply(
-    ReplicationTaskArn: String,
-    TablesToReload: TableListToReload,
-    ReloadOption: ReloadOptionValue = null
-  ): ReloadTablesMessage = {
+  def apply(ReplicationTaskArn: String, TablesToReload: TableListToReload): ReloadTablesMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskArn = ReplicationTaskArn.asInstanceOf[js.Any], TablesToReload = TablesToReload.asInstanceOf[js.Any])
-    if (ReloadOption != null) __obj.updateDynamic("ReloadOption")(ReloadOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReloadTablesMessage]
   }
+  @scala.inline
+  implicit class ReloadTablesMessageOps[Self <: ReloadTablesMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReplicationTaskArn(value: String): Self = this.set("ReplicationTaskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTablesToReloadVarargs(value: TableToReload*): Self = this.set("TablesToReload", js.Array(value :_*))
+    @scala.inline
+    def setTablesToReload(value: TableListToReload): Self = this.set("TablesToReload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReloadOption(value: ReloadOptionValue): Self = this.set("ReloadOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReloadOption: Self = this.set("ReloadOption", js.undefined)
+  }
+  
 }
 

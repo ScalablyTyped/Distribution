@@ -29,6 +29,7 @@ trait WatcherJob extends Job {
     * @param exponent The exponent to for calculating the final delay (delay^exponent).
     */
   def delay(): js.Promise[`1`] = js.native
+  def delay(delay: js.UndefOr[scala.Nothing], exponent: Double): js.Promise[`1`] = js.native
   def delay(delay: Double): js.Promise[`1`] = js.native
   def delay(delay: Double, exponent: Double): js.Promise[`1`] = js.native
   /**

@@ -5,36 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledEventSourceMappingConfiguration extends EventSourceMappingConfiguration {
   /**
     * <p>The UTC time string indicating the last time the event mapping was updated.</p>
     */
   @JSName("LastModified")
-  var LastModified_UnmarshalledEventSourceMappingConfiguration: js.UndefOr[Date] = js.undefined
+  var LastModified_UnmarshalledEventSourceMappingConfiguration: js.UndefOr[Date] = js.native
 }
 
 object UnmarshalledEventSourceMappingConfiguration {
   @scala.inline
-  def apply(
-    BatchSize: js.UndefOr[Double] = js.undefined,
-    EventSourceArn: String = null,
-    FunctionArn: String = null,
-    LastModified: Date = null,
-    LastProcessingResult: String = null,
-    State: String = null,
-    StateTransitionReason: String = null,
-    UUID: String = null
-  ): UnmarshalledEventSourceMappingConfiguration = {
+  def apply(): UnmarshalledEventSourceMappingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize.get.asInstanceOf[js.Any])
-    if (EventSourceArn != null) __obj.updateDynamic("EventSourceArn")(EventSourceArn.asInstanceOf[js.Any])
-    if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (LastProcessingResult != null) __obj.updateDynamic("LastProcessingResult")(LastProcessingResult.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StateTransitionReason != null) __obj.updateDynamic("StateTransitionReason")(StateTransitionReason.asInstanceOf[js.Any])
-    if (UUID != null) __obj.updateDynamic("UUID")(UUID.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledEventSourceMappingConfiguration]
   }
+  @scala.inline
+  implicit class UnmarshalledEventSourceMappingConfigurationOps[Self <: UnmarshalledEventSourceMappingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastModified(value: Date): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+  }
+  
 }
 

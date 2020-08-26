@@ -28,7 +28,7 @@ class JavaDataSetSource protected () extends DataSetSource {
     * In version 8.0.0: introduced
     */
   def useLegacyCodeGeneration: Boolean = js.native
-  def useLegacyCodeGeneration(newValue: Boolean): js.Any = js.native
+  def useLegacyCodeGeneration_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

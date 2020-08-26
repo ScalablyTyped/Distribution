@@ -41,6 +41,7 @@ class ResourceReports protected () extends js.Object {
     */
   def generate(): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
   def generate(callback: BodyResponseCallback[SchemaAdsenseReportsGenerateResponse]): Unit = js.native
+  def generate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
   def generate(params: ParamsResourceReportsGenerate): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
   def generate(
     params: ParamsResourceReportsGenerate,

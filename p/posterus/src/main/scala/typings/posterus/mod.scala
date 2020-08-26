@@ -34,7 +34,12 @@ object mod extends js.Object {
     def settle(): Unit = js.native
     def settle(error: E): Unit = js.native
     def settle(error: E, result: T): Unit = js.native
+    def settle(error: js.UndefOr[scala.Nothing], result: T): Unit = js.native
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](
+      onfulfilled: js.UndefOr[scala.Nothing],
+      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+    ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
@@ -62,6 +67,7 @@ object mod extends js.Object {
     def from[T, E /* <: Error */](): Future[T, E] = js.native
     def from[T, E /* <: Error */](result: T): Future[T, E] = js.native
     def from[T, E /* <: Error */](result: T, error: E): Future[T, E] = js.native
+    def from[T, E /* <: Error */](result: js.UndefOr[scala.Nothing], error: E): Future[T, E] = js.native
     def fromError[E /* <: Error */](error: E): Future[js.UndefOr[scala.Nothing], E] = js.native
     def fromPromise[T](promise: js.Promise[T]): Future[T, Error] = js.native
     def fromResult[T](

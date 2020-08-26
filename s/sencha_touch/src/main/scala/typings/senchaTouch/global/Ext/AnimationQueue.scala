@@ -54,7 +54,11 @@ object AnimationQueue extends js.Object {
     * @param args Object
     */
   def start(): Unit = js.native
+  def start(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], args: js.Any): Unit = js.native
+  def start(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def start(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: js.Any): Unit = js.native
   def start(fn: js.Any): Unit = js.native
+  def start(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: js.Any): Unit = js.native
   def start(fn: js.Any, scope: js.Any): Unit = js.native
   def start(fn: js.Any, scope: js.Any, args: js.Any): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
@@ -67,7 +71,11 @@ object AnimationQueue extends js.Object {
     * @param args Object
     */
   def stop(): Unit = js.native
+  def stop(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], args: js.Any): Unit = js.native
+  def stop(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def stop(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: js.Any): Unit = js.native
   def stop(fn: js.Any): Unit = js.native
+  def stop(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: js.Any): Unit = js.native
   def stop(fn: js.Any, scope: js.Any): Unit = js.native
   def stop(fn: js.Any, scope: js.Any, args: js.Any): Unit = js.native
 }

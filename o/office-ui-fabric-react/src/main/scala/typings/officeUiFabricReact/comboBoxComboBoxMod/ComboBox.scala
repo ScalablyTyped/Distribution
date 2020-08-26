@@ -334,6 +334,7 @@ class ComboBox protected ()
     * {@inheritdoc}
     */
   def focus(): Unit = js.native
+  def focus(shouldOpenOnFocus: js.UndefOr[scala.Nothing], useFocusAsync: Boolean): Unit = js.native
   def focus(shouldOpenOnFocus: Boolean): Unit = js.native
   def focus(shouldOpenOnFocus: Boolean, useFocusAsync: Boolean): Unit = js.native
 }

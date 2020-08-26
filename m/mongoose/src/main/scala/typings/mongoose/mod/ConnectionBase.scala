@@ -52,6 +52,7 @@ trait ConnectionBase extends EventEmitter {
   /** Closes the connection */
   def close(): js.Promise[Unit] = js.native
   def close(callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def close(force: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def close(force: Boolean): js.Promise[Unit] = js.native
   def close(force: Boolean, callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   /**
@@ -106,12 +107,15 @@ trait ConnectionBase extends EventEmitter {
     * @returns The compiled model
     */
   def model[T /* <: Document */](name: String): Model_[T, js.Object] = js.native
+  def model[T /* <: Document */](name: String, schema: js.UndefOr[scala.Nothing], collection: String): Model_[T, js.Object] = js.native
   def model[T /* <: Document */](name: String, schema: Schema[_]): Model_[T, js.Object] = js.native
   def model[T /* <: Document */](name: String, schema: Schema[_], collection: String): Model_[T, js.Object] = js.native
   /** Returns an array of model names created on this connection. */
   def modelNames(): js.Array[String] = js.native
   @JSName("model")
   def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String): U = js.native
+  @JSName("model")
+  def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: js.UndefOr[scala.Nothing], collection: String): U = js.native
   @JSName("model")
   def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: Schema[_]): U = js.native
   @JSName("model")

@@ -26,18 +26,38 @@ trait AccessKeyDetails extends js.Object {
 
 object AccessKeyDetails {
   @scala.inline
-  def apply(
-    AccessKeyId: String = null,
-    PrincipalId: String = null,
-    UserName: String = null,
-    UserType: String = null
-  ): AccessKeyDetails = {
+  def apply(): AccessKeyDetails = {
     val __obj = js.Dynamic.literal()
-    if (AccessKeyId != null) __obj.updateDynamic("AccessKeyId")(AccessKeyId.asInstanceOf[js.Any])
-    if (PrincipalId != null) __obj.updateDynamic("PrincipalId")(PrincipalId.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
-    if (UserType != null) __obj.updateDynamic("UserType")(UserType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessKeyDetails]
   }
+  @scala.inline
+  implicit class AccessKeyDetailsOps[Self <: AccessKeyDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKeyId(value: String): Self = this.set("AccessKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKeyId: Self = this.set("AccessKeyId", js.undefined)
+    @scala.inline
+    def setPrincipalId(value: String): Self = this.set("PrincipalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalId: Self = this.set("PrincipalId", js.undefined)
+    @scala.inline
+    def setUserName(value: String): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("UserName", js.undefined)
+    @scala.inline
+    def setUserType(value: String): Self = this.set("UserType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserType: Self = this.set("UserType", js.undefined)
+  }
+  
 }
 

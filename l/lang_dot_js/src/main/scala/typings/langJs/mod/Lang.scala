@@ -17,6 +17,7 @@ trait Lang extends js.Object {
     * @return The translation message according to an integer value.
     */
   def choice(key: String, count: Double): String = js.native
+  def choice(key: String, count: Double, replacements: js.UndefOr[scala.Nothing], locale: String): String = js.native
   def choice(key: String, count: Double, replacements: Replacements): String = js.native
   def choice(key: String, count: Double, replacements: Replacements, locale: String): String = js.native
   /**
@@ -29,6 +30,7 @@ trait Lang extends js.Object {
     * @return The translation message, if not found the given key.
     */
   def get(key: String): String = js.native
+  def get(key: String, replacements: js.UndefOr[scala.Nothing], locale: String): String = js.native
   def get(key: String, replacements: Replacements): String = js.native
   def get(key: String, replacements: Replacements, locale: String): String = js.native
   /**

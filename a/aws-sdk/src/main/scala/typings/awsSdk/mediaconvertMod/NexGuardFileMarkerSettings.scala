@@ -26,18 +26,38 @@ trait NexGuardFileMarkerSettings extends js.Object {
 
 object NexGuardFileMarkerSettings {
   @scala.inline
-  def apply(
-    License: stringMin1Max100000 = null,
-    Payload: js.UndefOr[integerMin0Max4194303] = js.undefined,
-    Preset: stringMin1Max256 = null,
-    Strength: WatermarkingStrength = null
-  ): NexGuardFileMarkerSettings = {
+  def apply(): NexGuardFileMarkerSettings = {
     val __obj = js.Dynamic.literal()
-    if (License != null) __obj.updateDynamic("License")(License.asInstanceOf[js.Any])
-    if (!js.isUndefined(Payload)) __obj.updateDynamic("Payload")(Payload.get.asInstanceOf[js.Any])
-    if (Preset != null) __obj.updateDynamic("Preset")(Preset.asInstanceOf[js.Any])
-    if (Strength != null) __obj.updateDynamic("Strength")(Strength.asInstanceOf[js.Any])
     __obj.asInstanceOf[NexGuardFileMarkerSettings]
   }
+  @scala.inline
+  implicit class NexGuardFileMarkerSettingsOps[Self <: NexGuardFileMarkerSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLicense(value: stringMin1Max100000): Self = this.set("License", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicense: Self = this.set("License", js.undefined)
+    @scala.inline
+    def setPayload(value: integerMin0Max4194303): Self = this.set("Payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("Payload", js.undefined)
+    @scala.inline
+    def setPreset(value: stringMin1Max256): Self = this.set("Preset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreset: Self = this.set("Preset", js.undefined)
+    @scala.inline
+    def setStrength(value: WatermarkingStrength): Self = this.set("Strength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrength: Self = this.set("Strength", js.undefined)
+  }
+  
 }
 

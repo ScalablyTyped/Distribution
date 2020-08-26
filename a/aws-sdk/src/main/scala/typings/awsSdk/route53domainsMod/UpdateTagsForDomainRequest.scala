@@ -18,10 +18,30 @@ trait UpdateTagsForDomainRequest extends js.Object {
 
 object UpdateTagsForDomainRequest {
   @scala.inline
-  def apply(DomainName: DomainName, TagsToUpdate: TagList = null): UpdateTagsForDomainRequest = {
+  def apply(DomainName: DomainName): UpdateTagsForDomainRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (TagsToUpdate != null) __obj.updateDynamic("TagsToUpdate")(TagsToUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTagsForDomainRequest]
   }
+  @scala.inline
+  implicit class UpdateTagsForDomainRequestOps[Self <: UpdateTagsForDomainRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsToUpdateVarargs(value: Tag*): Self = this.set("TagsToUpdate", js.Array(value :_*))
+    @scala.inline
+    def setTagsToUpdate(value: TagList): Self = this.set("TagsToUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagsToUpdate: Self = this.set("TagsToUpdate", js.undefined)
+  }
+  
 }
 

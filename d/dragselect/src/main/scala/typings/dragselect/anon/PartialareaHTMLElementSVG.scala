@@ -14,76 +14,129 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  area  :std.HTMLElement | std.SVGElement | std.Document,   autoScrollSpeed  :number, callback (selected : std.Array<std.HTMLElement | std.SVGElement>, event : std.MouseEvent | std.TouchEvent): void,   customStyles  :boolean,   hoverClass  :string,   multiSelectKeys  :std.ReadonlyArray<'ctrlKey' | 'shiftKey' | 'metaKey' | 'altKey'>,   multiSelectMode  :boolean, onDragMove (event : std.MouseEvent | std.TouchEvent): void, onDragStart (event : std.MouseEvent | std.TouchEvent): void, onDragStartBegin (event : std.MouseEvent | std.TouchEvent): void, onElementSelect (selected : std.HTMLElement | std.SVGElement): void, onElementUnselect (selected : std.HTMLElement | std.SVGElement): void,   selectableClass  :string,   selectables  :std.ArrayLike<std.HTMLElement | std.SVGElement> | std.HTMLElement | std.SVGElement,   selectedClass  :string,   selector  :std.HTMLElement,   selectorClass  :string,   zoom  :number}> */
+/* Inlined std.Partial<{  area :std.HTMLElement | std.SVGElement | std.Document,   autoScrollSpeed :number, callback (selected : std.Array<std.HTMLElement | std.SVGElement>, event : std.MouseEvent | std.TouchEvent): void,   customStyles :boolean,   hoverClass :string,   multiSelectKeys :std.ReadonlyArray<'ctrlKey' | 'shiftKey' | 'metaKey' | 'altKey'>,   multiSelectMode :boolean, onDragMove (event : std.MouseEvent | std.TouchEvent): void, onDragStart (event : std.MouseEvent | std.TouchEvent): void, onDragStartBegin (event : std.MouseEvent | std.TouchEvent): void, onElementSelect (selected : std.HTMLElement | std.SVGElement): void, onElementUnselect (selected : std.HTMLElement | std.SVGElement): void,   selectableClass :string,   selectables :std.ArrayLike<std.HTMLElement | std.SVGElement> | std.HTMLElement | std.SVGElement,   selectedClass :string,   selector :std.HTMLElement,   selectorClass :string,   zoom :number}> */
+@js.native
 trait PartialareaHTMLElementSVG extends js.Object {
-  var area: js.UndefOr[HTMLElement | SVGElement | Document] = js.undefined
-  var autoScrollSpeed: js.UndefOr[Double] = js.undefined
+  var area: js.UndefOr[HTMLElement | SVGElement | Document] = js.native
+  var autoScrollSpeed: js.UndefOr[Double] = js.native
   var callback: js.UndefOr[
     js.Function2[
       /* selected */ js.Array[HTMLElement | SVGElement], 
       /* event */ MouseEvent | TouchEvent, 
       Unit
     ]
-  ] = js.undefined
-  var customStyles: js.UndefOr[Boolean] = js.undefined
-  var hoverClass: js.UndefOr[String] = js.undefined
-  var multiSelectKeys: js.UndefOr[js.Array[ctrlKey | shiftKey | metaKey | altKey]] = js.undefined
-  var multiSelectMode: js.UndefOr[Boolean] = js.undefined
-  var onDragMove: js.UndefOr[js.Function1[/* event */ MouseEvent | TouchEvent, Unit]] = js.undefined
-  var onDragStart: js.UndefOr[js.Function1[/* event */ MouseEvent | TouchEvent, Unit]] = js.undefined
-  var onDragStartBegin: js.UndefOr[js.Function1[/* event */ MouseEvent | TouchEvent, Unit]] = js.undefined
-  var onElementSelect: js.UndefOr[js.Function1[/* selected */ HTMLElement | SVGElement, Unit]] = js.undefined
-  var onElementUnselect: js.UndefOr[js.Function1[/* selected */ HTMLElement | SVGElement, Unit]] = js.undefined
-  var selectableClass: js.UndefOr[String] = js.undefined
-  var selectables: js.UndefOr[(ArrayLike[HTMLElement | SVGElement]) | HTMLElement | SVGElement] = js.undefined
-  var selectedClass: js.UndefOr[String] = js.undefined
-  var selector: js.UndefOr[HTMLElement] = js.undefined
-  var selectorClass: js.UndefOr[String] = js.undefined
-  var zoom: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var customStyles: js.UndefOr[Boolean] = js.native
+  var hoverClass: js.UndefOr[String] = js.native
+  var multiSelectKeys: js.UndefOr[js.Array[ctrlKey | shiftKey | metaKey | altKey]] = js.native
+  var multiSelectMode: js.UndefOr[Boolean] = js.native
+  var onDragMove: js.UndefOr[js.Function1[/* event */ MouseEvent | TouchEvent, Unit]] = js.native
+  var onDragStart: js.UndefOr[js.Function1[/* event */ MouseEvent | TouchEvent, Unit]] = js.native
+  var onDragStartBegin: js.UndefOr[js.Function1[/* event */ MouseEvent | TouchEvent, Unit]] = js.native
+  var onElementSelect: js.UndefOr[js.Function1[/* selected */ HTMLElement | SVGElement, Unit]] = js.native
+  var onElementUnselect: js.UndefOr[js.Function1[/* selected */ HTMLElement | SVGElement, Unit]] = js.native
+  var selectableClass: js.UndefOr[String] = js.native
+  var selectables: js.UndefOr[(ArrayLike[HTMLElement | SVGElement]) | HTMLElement | SVGElement] = js.native
+  var selectedClass: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[HTMLElement] = js.native
+  var selectorClass: js.UndefOr[String] = js.native
+  var zoom: js.UndefOr[Double] = js.native
 }
 
 object PartialareaHTMLElementSVG {
   @scala.inline
-  def apply(
-    area: HTMLElement | SVGElement | Document = null,
-    autoScrollSpeed: js.UndefOr[Double] = js.undefined,
-    callback: (/* selected */ js.Array[HTMLElement | SVGElement], /* event */ MouseEvent | TouchEvent) => Unit = null,
-    customStyles: js.UndefOr[Boolean] = js.undefined,
-    hoverClass: String = null,
-    multiSelectKeys: js.Array[ctrlKey | shiftKey | metaKey | altKey] = null,
-    multiSelectMode: js.UndefOr[Boolean] = js.undefined,
-    onDragMove: /* event */ MouseEvent | TouchEvent => Unit = null,
-    onDragStart: /* event */ MouseEvent | TouchEvent => Unit = null,
-    onDragStartBegin: /* event */ MouseEvent | TouchEvent => Unit = null,
-    onElementSelect: /* selected */ HTMLElement | SVGElement => Unit = null,
-    onElementUnselect: /* selected */ HTMLElement | SVGElement => Unit = null,
-    selectableClass: String = null,
-    selectables: (ArrayLike[HTMLElement | SVGElement]) | HTMLElement | SVGElement = null,
-    selectedClass: String = null,
-    selector: HTMLElement = null,
-    selectorClass: String = null,
-    zoom: js.UndefOr[Double] = js.undefined
-  ): PartialareaHTMLElementSVG = {
+  def apply(): PartialareaHTMLElementSVG = {
     val __obj = js.Dynamic.literal()
-    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScrollSpeed)) __obj.updateDynamic("autoScrollSpeed")(autoScrollSpeed.get.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (!js.isUndefined(customStyles)) __obj.updateDynamic("customStyles")(customStyles.get.asInstanceOf[js.Any])
-    if (hoverClass != null) __obj.updateDynamic("hoverClass")(hoverClass.asInstanceOf[js.Any])
-    if (multiSelectKeys != null) __obj.updateDynamic("multiSelectKeys")(multiSelectKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelectMode)) __obj.updateDynamic("multiSelectMode")(multiSelectMode.get.asInstanceOf[js.Any])
-    if (onDragMove != null) __obj.updateDynamic("onDragMove")(js.Any.fromFunction1(onDragMove))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (onDragStartBegin != null) __obj.updateDynamic("onDragStartBegin")(js.Any.fromFunction1(onDragStartBegin))
-    if (onElementSelect != null) __obj.updateDynamic("onElementSelect")(js.Any.fromFunction1(onElementSelect))
-    if (onElementUnselect != null) __obj.updateDynamic("onElementUnselect")(js.Any.fromFunction1(onElementUnselect))
-    if (selectableClass != null) __obj.updateDynamic("selectableClass")(selectableClass.asInstanceOf[js.Any])
-    if (selectables != null) __obj.updateDynamic("selectables")(selectables.asInstanceOf[js.Any])
-    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (selectorClass != null) __obj.updateDynamic("selectorClass")(selectorClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialareaHTMLElementSVG]
   }
+  @scala.inline
+  implicit class PartialareaHTMLElementSVGOps[Self <: PartialareaHTMLElementSVG] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArea(value: HTMLElement | SVGElement | Document): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArea: Self = this.set("area", js.undefined)
+    @scala.inline
+    def setAutoScrollSpeed(value: Double): Self = this.set("autoScrollSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScrollSpeed: Self = this.set("autoScrollSpeed", js.undefined)
+    @scala.inline
+    def setCallback(
+      value: (/* selected */ js.Array[HTMLElement | SVGElement], /* event */ MouseEvent | TouchEvent) => Unit
+    ): Self = this.set("callback", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setCustomStyles(value: Boolean): Self = this.set("customStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomStyles: Self = this.set("customStyles", js.undefined)
+    @scala.inline
+    def setHoverClass(value: String): Self = this.set("hoverClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverClass: Self = this.set("hoverClass", js.undefined)
+    @scala.inline
+    def setMultiSelectKeysVarargs(value: (ctrlKey | shiftKey | metaKey | altKey)*): Self = this.set("multiSelectKeys", js.Array(value :_*))
+    @scala.inline
+    def setMultiSelectKeys(value: js.Array[ctrlKey | shiftKey | metaKey | altKey]): Self = this.set("multiSelectKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiSelectKeys: Self = this.set("multiSelectKeys", js.undefined)
+    @scala.inline
+    def setMultiSelectMode(value: Boolean): Self = this.set("multiSelectMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiSelectMode: Self = this.set("multiSelectMode", js.undefined)
+    @scala.inline
+    def setOnDragMove(value: /* event */ MouseEvent | TouchEvent => Unit): Self = this.set("onDragMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragMove: Self = this.set("onDragMove", js.undefined)
+    @scala.inline
+    def setOnDragStart(value: /* event */ MouseEvent | TouchEvent => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    @scala.inline
+    def setOnDragStartBegin(value: /* event */ MouseEvent | TouchEvent => Unit): Self = this.set("onDragStartBegin", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStartBegin: Self = this.set("onDragStartBegin", js.undefined)
+    @scala.inline
+    def setOnElementSelect(value: /* selected */ HTMLElement | SVGElement => Unit): Self = this.set("onElementSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnElementSelect: Self = this.set("onElementSelect", js.undefined)
+    @scala.inline
+    def setOnElementUnselect(value: /* selected */ HTMLElement | SVGElement => Unit): Self = this.set("onElementUnselect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnElementUnselect: Self = this.set("onElementUnselect", js.undefined)
+    @scala.inline
+    def setSelectableClass(value: String): Self = this.set("selectableClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectableClass: Self = this.set("selectableClass", js.undefined)
+    @scala.inline
+    def setSelectables(value: (ArrayLike[HTMLElement | SVGElement]) | HTMLElement | SVGElement): Self = this.set("selectables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectables: Self = this.set("selectables", js.undefined)
+    @scala.inline
+    def setSelectedClass(value: String): Self = this.set("selectedClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedClass: Self = this.set("selectedClass", js.undefined)
+    @scala.inline
+    def setSelector(value: HTMLElement): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setSelectorClass(value: String): Self = this.set("selectorClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectorClass: Self = this.set("selectorClass", js.undefined)
+    @scala.inline
+    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+  }
+  
 }
 

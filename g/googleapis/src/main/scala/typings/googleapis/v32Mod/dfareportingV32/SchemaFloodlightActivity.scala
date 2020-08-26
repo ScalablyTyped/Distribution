@@ -156,66 +156,140 @@ trait SchemaFloodlightActivity extends js.Object {
 
 object SchemaFloodlightActivity {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    advertiserId: String = null,
-    advertiserIdDimensionValue: SchemaDimensionValue = null,
-    cacheBustingType: String = null,
-    countingMethod: String = null,
-    defaultTags: js.Array[SchemaFloodlightActivityDynamicTag] = null,
-    expectedUrl: String = null,
-    floodlightActivityGroupId: String = null,
-    floodlightActivityGroupName: String = null,
-    floodlightActivityGroupTagString: String = null,
-    floodlightActivityGroupType: String = null,
-    floodlightConfigurationId: String = null,
-    floodlightConfigurationIdDimensionValue: SchemaDimensionValue = null,
-    floodlightTagType: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    idDimensionValue: SchemaDimensionValue = null,
-    kind: String = null,
-    name: String = null,
-    notes: String = null,
-    publisherTags: js.Array[SchemaFloodlightActivityPublisherDynamicTag] = null,
-    secure: js.UndefOr[Boolean] = js.undefined,
-    sslCompliant: js.UndefOr[Boolean] = js.undefined,
-    sslRequired: js.UndefOr[Boolean] = js.undefined,
-    subaccountId: String = null,
-    tagFormat: String = null,
-    tagString: String = null,
-    userDefinedVariableTypes: js.Array[String] = null
-  ): SchemaFloodlightActivity = {
+  def apply(): SchemaFloodlightActivity = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue.asInstanceOf[js.Any])
-    if (cacheBustingType != null) __obj.updateDynamic("cacheBustingType")(cacheBustingType.asInstanceOf[js.Any])
-    if (countingMethod != null) __obj.updateDynamic("countingMethod")(countingMethod.asInstanceOf[js.Any])
-    if (defaultTags != null) __obj.updateDynamic("defaultTags")(defaultTags.asInstanceOf[js.Any])
-    if (expectedUrl != null) __obj.updateDynamic("expectedUrl")(expectedUrl.asInstanceOf[js.Any])
-    if (floodlightActivityGroupId != null) __obj.updateDynamic("floodlightActivityGroupId")(floodlightActivityGroupId.asInstanceOf[js.Any])
-    if (floodlightActivityGroupName != null) __obj.updateDynamic("floodlightActivityGroupName")(floodlightActivityGroupName.asInstanceOf[js.Any])
-    if (floodlightActivityGroupTagString != null) __obj.updateDynamic("floodlightActivityGroupTagString")(floodlightActivityGroupTagString.asInstanceOf[js.Any])
-    if (floodlightActivityGroupType != null) __obj.updateDynamic("floodlightActivityGroupType")(floodlightActivityGroupType.asInstanceOf[js.Any])
-    if (floodlightConfigurationId != null) __obj.updateDynamic("floodlightConfigurationId")(floodlightConfigurationId.asInstanceOf[js.Any])
-    if (floodlightConfigurationIdDimensionValue != null) __obj.updateDynamic("floodlightConfigurationIdDimensionValue")(floodlightConfigurationIdDimensionValue.asInstanceOf[js.Any])
-    if (floodlightTagType != null) __obj.updateDynamic("floodlightTagType")(floodlightTagType.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (publisherTags != null) __obj.updateDynamic("publisherTags")(publisherTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.get.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (tagFormat != null) __obj.updateDynamic("tagFormat")(tagFormat.asInstanceOf[js.Any])
-    if (tagString != null) __obj.updateDynamic("tagString")(tagString.asInstanceOf[js.Any])
-    if (userDefinedVariableTypes != null) __obj.updateDynamic("userDefinedVariableTypes")(userDefinedVariableTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFloodlightActivity]
   }
+  @scala.inline
+  implicit class SchemaFloodlightActivityOps[Self <: SchemaFloodlightActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAdvertiserIdDimensionValue(value: SchemaDimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    @scala.inline
+    def setCacheBustingType(value: String): Self = this.set("cacheBustingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheBustingType: Self = this.set("cacheBustingType", js.undefined)
+    @scala.inline
+    def setCountingMethod(value: String): Self = this.set("countingMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountingMethod: Self = this.set("countingMethod", js.undefined)
+    @scala.inline
+    def setDefaultTagsVarargs(value: SchemaFloodlightActivityDynamicTag*): Self = this.set("defaultTags", js.Array(value :_*))
+    @scala.inline
+    def setDefaultTags(value: js.Array[SchemaFloodlightActivityDynamicTag]): Self = this.set("defaultTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTags: Self = this.set("defaultTags", js.undefined)
+    @scala.inline
+    def setExpectedUrl(value: String): Self = this.set("expectedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedUrl: Self = this.set("expectedUrl", js.undefined)
+    @scala.inline
+    def setFloodlightActivityGroupId(value: String): Self = this.set("floodlightActivityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightActivityGroupId: Self = this.set("floodlightActivityGroupId", js.undefined)
+    @scala.inline
+    def setFloodlightActivityGroupName(value: String): Self = this.set("floodlightActivityGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightActivityGroupName: Self = this.set("floodlightActivityGroupName", js.undefined)
+    @scala.inline
+    def setFloodlightActivityGroupTagString(value: String): Self = this.set("floodlightActivityGroupTagString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightActivityGroupTagString: Self = this.set("floodlightActivityGroupTagString", js.undefined)
+    @scala.inline
+    def setFloodlightActivityGroupType(value: String): Self = this.set("floodlightActivityGroupType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightActivityGroupType: Self = this.set("floodlightActivityGroupType", js.undefined)
+    @scala.inline
+    def setFloodlightConfigurationId(value: String): Self = this.set("floodlightConfigurationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightConfigurationId: Self = this.set("floodlightConfigurationId", js.undefined)
+    @scala.inline
+    def setFloodlightConfigurationIdDimensionValue(value: SchemaDimensionValue): Self = this.set("floodlightConfigurationIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightConfigurationIdDimensionValue: Self = this.set("floodlightConfigurationIdDimensionValue", js.undefined)
+    @scala.inline
+    def setFloodlightTagType(value: String): Self = this.set("floodlightTagType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightTagType: Self = this.set("floodlightTagType", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+    @scala.inline
+    def setPublisherTagsVarargs(value: SchemaFloodlightActivityPublisherDynamicTag*): Self = this.set("publisherTags", js.Array(value :_*))
+    @scala.inline
+    def setPublisherTags(value: js.Array[SchemaFloodlightActivityPublisherDynamicTag]): Self = this.set("publisherTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisherTags: Self = this.set("publisherTags", js.undefined)
+    @scala.inline
+    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecure: Self = this.set("secure", js.undefined)
+    @scala.inline
+    def setSslCompliant(value: Boolean): Self = this.set("sslCompliant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslCompliant: Self = this.set("sslCompliant", js.undefined)
+    @scala.inline
+    def setSslRequired(value: Boolean): Self = this.set("sslRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslRequired: Self = this.set("sslRequired", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setTagFormat(value: String): Self = this.set("tagFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagFormat: Self = this.set("tagFormat", js.undefined)
+    @scala.inline
+    def setTagString(value: String): Self = this.set("tagString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagString: Self = this.set("tagString", js.undefined)
+    @scala.inline
+    def setUserDefinedVariableTypesVarargs(value: String*): Self = this.set("userDefinedVariableTypes", js.Array(value :_*))
+    @scala.inline
+    def setUserDefinedVariableTypes(value: js.Array[String]): Self = this.set("userDefinedVariableTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDefinedVariableTypes: Self = this.set("userDefinedVariableTypes", js.undefined)
+  }
+  
 }
 

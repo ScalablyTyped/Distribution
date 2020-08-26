@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JsonObject
   extends /* x */ StringDictionary[JsonValue]
      with _JsonValue
 
 object JsonObject {
   @scala.inline
-  def apply(StringDictionary: /* x */ StringDictionary[JsonValue] = null): JsonObject = {
+  def apply(): JsonObject = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[JsonObject]
   }
 }

@@ -12,7 +12,7 @@ Functional approach to compose your webpack config.
 | Keywords           | webpack, webpack-blocks, block, feature, functional |
 | # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 215509 |
+| # downloads        | 206511 |
 | # stars            | 0 |
 
 ## Links

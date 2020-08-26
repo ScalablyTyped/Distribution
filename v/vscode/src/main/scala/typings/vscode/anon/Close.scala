@@ -4,19 +4,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Close extends js.Object {
-  var close: js.UndefOr[String] = js.undefined
-  var lineStart: String
-  var open: String
-  var scope: String
+  var close: js.UndefOr[String] = js.native
+  var lineStart: String = js.native
+  var open: String = js.native
+  var scope: String = js.native
 }
 
 object Close {
   @scala.inline
-  def apply(lineStart: String, open: String, scope: String, close: String = null): Close = {
+  def apply(lineStart: String, open: String, scope: String): Close = {
     val __obj = js.Dynamic.literal(lineStart = lineStart.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
     __obj.asInstanceOf[Close]
   }
+  @scala.inline
+  implicit class CloseOps[Self <: Close] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLineStart(value: String): Self = this.set("lineStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOpen(value: String): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+  }
+  
 }
 

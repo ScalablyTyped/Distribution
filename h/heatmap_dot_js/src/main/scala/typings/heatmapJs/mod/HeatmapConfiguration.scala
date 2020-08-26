@@ -1,62 +1,57 @@
 package typings.heatmapJs.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HeatmapConfiguration[V /* <: String */, X /* <: String */, Y /* <: String */] extends BaseHeatmapConfiguration[V] {
   /**
     * A DOM node where the heatmap canvas should be appended (heatmap will adapt to
     * the node's size)
     */
-  var container: HTMLElement
+  var container: HTMLElement = js.native
   /**
     * The property name of your x coordinate in a datapoint
     * Default value: 'x'
     */
-  var xField: js.UndefOr[X] = js.undefined
+  var xField: js.UndefOr[X] = js.native
   /**
     * The property name of your y coordinate in a datapoint
     * Default value: 'y'
     */
-  var yField: js.UndefOr[Y] = js.undefined
+  var yField: js.UndefOr[Y] = js.native
 }
 
 object HeatmapConfiguration {
   @scala.inline
-  def apply[/* <: java.lang.String */ V, /* <: java.lang.String */ X, /* <: java.lang.String */ Y](
-    container: HTMLElement,
-    backgroundColor: String = null,
-    blur: js.UndefOr[Double] = js.undefined,
-    gradient: StringDictionary[String] = null,
-    maxOpacity: js.UndefOr[Double] = js.undefined,
-    minOpacity: js.UndefOr[Double] = js.undefined,
-    onExtremaChange: () => Unit = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    radius: js.UndefOr[Double] = js.undefined,
-    scaleRadius: js.UndefOr[Boolean] = js.undefined,
-    useLocalExtrema: js.UndefOr[Boolean] = js.undefined,
-    valueField: V = null,
-    xField: X = null,
-    yField: Y = null
-  ): HeatmapConfiguration[V, X, Y] = {
+  def apply[/* <: java.lang.String */ V, /* <: java.lang.String */ X, /* <: java.lang.String */ Y](container: HTMLElement): HeatmapConfiguration[V, X, Y] = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur.get.asInstanceOf[js.Any])
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxOpacity)) __obj.updateDynamic("maxOpacity")(maxOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minOpacity)) __obj.updateDynamic("minOpacity")(minOpacity.get.asInstanceOf[js.Any])
-    if (onExtremaChange != null) __obj.updateDynamic("onExtremaChange")(js.Any.fromFunction0(onExtremaChange))
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleRadius)) __obj.updateDynamic("scaleRadius")(scaleRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLocalExtrema)) __obj.updateDynamic("useLocalExtrema")(useLocalExtrema.get.asInstanceOf[js.Any])
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
-    if (xField != null) __obj.updateDynamic("xField")(xField.asInstanceOf[js.Any])
-    if (yField != null) __obj.updateDynamic("yField")(yField.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapConfiguration[V, X, Y]]
   }
+  @scala.inline
+  implicit class HeatmapConfigurationOps[Self <: HeatmapConfiguration[_, _, _], /* <: java.lang.String */ V, /* <: java.lang.String */ X, /* <: java.lang.String */ Y] (val x: Self with (HeatmapConfiguration[V, X, Y])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setXField(value: X): Self = this.set("xField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXField: Self = this.set("xField", js.undefined)
+    @scala.inline
+    def setYField(value: Y): Self = this.set("yField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYField: Self = this.set("yField", js.undefined)
+  }
+  
 }
 

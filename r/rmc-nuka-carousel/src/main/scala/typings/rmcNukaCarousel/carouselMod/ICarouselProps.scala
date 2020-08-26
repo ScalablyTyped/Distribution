@@ -8,99 +8,170 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICarouselProps extends js.Object {
-  var afterSlide: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
-  var autoplay: js.UndefOr[Boolean] = js.undefined
-  var autoplayInterval: js.UndefOr[Double] = js.undefined
-  var beforeSlide: js.UndefOr[js.Function2[/* currentIndex */ Double, /* endIndex */ Double, Unit]] = js.undefined
-  var cellAlign: js.UndefOr[left | center | right] = js.undefined
-  var cellSpacing: js.UndefOr[Double] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var decorators: js.UndefOr[js.Array[_]] = js.undefined
-  var dragging: js.UndefOr[Boolean] = js.undefined
-  var easing: js.UndefOr[js.Function] = js.undefined
-  var edgeEasing: js.UndefOr[js.Function] = js.undefined
-  var frameOverflow: js.UndefOr[String] = js.undefined
-  var framePadding: js.UndefOr[String] = js.undefined
-  var initialSlideHeight: js.UndefOr[Double] = js.undefined
-  var initialSlideWidth: js.UndefOr[Double] = js.undefined
-  var resetAutoplay: js.UndefOr[Boolean] = js.undefined
-  var slideIndex: js.UndefOr[Double] = js.undefined
-  var slideWidth: js.UndefOr[String | Double] = js.undefined
-  var slidesToScroll: js.UndefOr[Double | auto] = js.undefined
-  var slidesToShow: js.UndefOr[Double] = js.undefined
-  var speed: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[js.Any] = js.undefined
-  var swipeSpeed: js.UndefOr[Double] = js.undefined
-  var swiping: js.UndefOr[Boolean] = js.undefined
-  var vertical: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[String] = js.undefined
-  var wrapAround: js.UndefOr[Boolean] = js.undefined
+  var afterSlide: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplayInterval: js.UndefOr[Double] = js.native
+  var beforeSlide: js.UndefOr[js.Function2[/* currentIndex */ Double, /* endIndex */ Double, Unit]] = js.native
+  var cellAlign: js.UndefOr[left | center | right] = js.native
+  var cellSpacing: js.UndefOr[Double] = js.native
+  var className: js.UndefOr[String] = js.native
+  var data: js.UndefOr[js.Function0[Unit]] = js.native
+  var decorators: js.UndefOr[js.Array[_]] = js.native
+  var dragging: js.UndefOr[Boolean] = js.native
+  var easing: js.UndefOr[js.Function] = js.native
+  var edgeEasing: js.UndefOr[js.Function] = js.native
+  var frameOverflow: js.UndefOr[String] = js.native
+  var framePadding: js.UndefOr[String] = js.native
+  var initialSlideHeight: js.UndefOr[Double] = js.native
+  var initialSlideWidth: js.UndefOr[Double] = js.native
+  var resetAutoplay: js.UndefOr[Boolean] = js.native
+  var slideIndex: js.UndefOr[Double] = js.native
+  var slideWidth: js.UndefOr[String | Double] = js.native
+  var slidesToScroll: js.UndefOr[Double | auto] = js.native
+  var slidesToShow: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[js.Any] = js.native
+  var swipeSpeed: js.UndefOr[Double] = js.native
+  var swiping: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[String] = js.native
+  var wrapAround: js.UndefOr[Boolean] = js.native
 }
 
 object ICarouselProps {
   @scala.inline
-  def apply(
-    afterSlide: /* index */ Double => Unit = null,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    autoplayInterval: js.UndefOr[Double] = js.undefined,
-    beforeSlide: (/* currentIndex */ Double, /* endIndex */ Double) => Unit = null,
-    cellAlign: left | center | right = null,
-    cellSpacing: js.UndefOr[Double] = js.undefined,
-    className: String = null,
-    data: () => Unit = null,
-    decorators: js.Array[_] = null,
-    dragging: js.UndefOr[Boolean] = js.undefined,
-    easing: js.Function = null,
-    edgeEasing: js.Function = null,
-    frameOverflow: String = null,
-    framePadding: String = null,
-    initialSlideHeight: js.UndefOr[Double] = js.undefined,
-    initialSlideWidth: js.UndefOr[Double] = js.undefined,
-    resetAutoplay: js.UndefOr[Boolean] = js.undefined,
-    slideIndex: js.UndefOr[Double] = js.undefined,
-    slideWidth: String | Double = null,
-    slidesToScroll: Double | auto = null,
-    slidesToShow: js.UndefOr[Double] = js.undefined,
-    speed: js.UndefOr[Double] = js.undefined,
-    style: js.Any = null,
-    swipeSpeed: js.UndefOr[Double] = js.undefined,
-    swiping: js.UndefOr[Boolean] = js.undefined,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    width: String = null,
-    wrapAround: js.UndefOr[Boolean] = js.undefined
-  ): ICarouselProps = {
+  def apply(): ICarouselProps = {
     val __obj = js.Dynamic.literal()
-    if (afterSlide != null) __obj.updateDynamic("afterSlide")(js.Any.fromFunction1(afterSlide))
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplayInterval)) __obj.updateDynamic("autoplayInterval")(autoplayInterval.get.asInstanceOf[js.Any])
-    if (beforeSlide != null) __obj.updateDynamic("beforeSlide")(js.Any.fromFunction2(beforeSlide))
-    if (cellAlign != null) __obj.updateDynamic("cellAlign")(cellAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellSpacing)) __obj.updateDynamic("cellSpacing")(cellSpacing.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(js.Any.fromFunction0(data))
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (edgeEasing != null) __obj.updateDynamic("edgeEasing")(edgeEasing.asInstanceOf[js.Any])
-    if (frameOverflow != null) __obj.updateDynamic("frameOverflow")(frameOverflow.asInstanceOf[js.Any])
-    if (framePadding != null) __obj.updateDynamic("framePadding")(framePadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialSlideHeight)) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialSlideWidth)) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetAutoplay)) __obj.updateDynamic("resetAutoplay")(resetAutoplay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideIndex)) __obj.updateDynamic("slideIndex")(slideIndex.get.asInstanceOf[js.Any])
-    if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
-    if (slidesToScroll != null) __obj.updateDynamic("slidesToScroll")(slidesToScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(slidesToShow)) __obj.updateDynamic("slidesToShow")(slidesToShow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeSpeed)) __obj.updateDynamic("swipeSpeed")(swipeSpeed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(swiping)) __obj.updateDynamic("swiping")(swiping.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICarouselProps]
   }
+  @scala.inline
+  implicit class ICarouselPropsOps[Self <: ICarouselProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterSlide(value: /* index */ Double => Unit): Self = this.set("afterSlide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterSlide: Self = this.set("afterSlide", js.undefined)
+    @scala.inline
+    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    @scala.inline
+    def setAutoplayInterval(value: Double): Self = this.set("autoplayInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplayInterval: Self = this.set("autoplayInterval", js.undefined)
+    @scala.inline
+    def setBeforeSlide(value: (/* currentIndex */ Double, /* endIndex */ Double) => Unit): Self = this.set("beforeSlide", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBeforeSlide: Self = this.set("beforeSlide", js.undefined)
+    @scala.inline
+    def setCellAlign(value: left | center | right): Self = this.set("cellAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellAlign: Self = this.set("cellAlign", js.undefined)
+    @scala.inline
+    def setCellSpacing(value: Double): Self = this.set("cellSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellSpacing: Self = this.set("cellSpacing", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setData(value: () => Unit): Self = this.set("data", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDecoratorsVarargs(value: js.Any*): Self = this.set("decorators", js.Array(value :_*))
+    @scala.inline
+    def setDecorators(value: js.Array[_]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    @scala.inline
+    def setDragging(value: Boolean): Self = this.set("dragging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragging: Self = this.set("dragging", js.undefined)
+    @scala.inline
+    def setEasing(value: js.Function): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setEdgeEasing(value: js.Function): Self = this.set("edgeEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeEasing: Self = this.set("edgeEasing", js.undefined)
+    @scala.inline
+    def setFrameOverflow(value: String): Self = this.set("frameOverflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameOverflow: Self = this.set("frameOverflow", js.undefined)
+    @scala.inline
+    def setFramePadding(value: String): Self = this.set("framePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramePadding: Self = this.set("framePadding", js.undefined)
+    @scala.inline
+    def setInitialSlideHeight(value: Double): Self = this.set("initialSlideHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialSlideHeight: Self = this.set("initialSlideHeight", js.undefined)
+    @scala.inline
+    def setInitialSlideWidth(value: Double): Self = this.set("initialSlideWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialSlideWidth: Self = this.set("initialSlideWidth", js.undefined)
+    @scala.inline
+    def setResetAutoplay(value: Boolean): Self = this.set("resetAutoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetAutoplay: Self = this.set("resetAutoplay", js.undefined)
+    @scala.inline
+    def setSlideIndex(value: Double): Self = this.set("slideIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideIndex: Self = this.set("slideIndex", js.undefined)
+    @scala.inline
+    def setSlideWidth(value: String | Double): Self = this.set("slideWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideWidth: Self = this.set("slideWidth", js.undefined)
+    @scala.inline
+    def setSlidesToScroll(value: Double | auto): Self = this.set("slidesToScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlidesToScroll: Self = this.set("slidesToScroll", js.undefined)
+    @scala.inline
+    def setSlidesToShow(value: Double): Self = this.set("slidesToShow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlidesToShow: Self = this.set("slidesToShow", js.undefined)
+    @scala.inline
+    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeed: Self = this.set("speed", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSwipeSpeed(value: Double): Self = this.set("swipeSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwipeSpeed: Self = this.set("swipeSpeed", js.undefined)
+    @scala.inline
+    def setSwiping(value: Boolean): Self = this.set("swiping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwiping: Self = this.set("swiping", js.undefined)
+    @scala.inline
+    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWrapAround(value: Boolean): Self = this.set("wrapAround", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapAround: Self = this.set("wrapAround", js.undefined)
+  }
+  
 }
 

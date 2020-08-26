@@ -31,19 +31,40 @@ trait PermissionArgs extends js.Object {
 
 object PermissionArgs {
   @scala.inline
-  def apply(
-    userArn: Input[String],
-    allowSsh: Input[Boolean] = null,
-    allowSudo: Input[Boolean] = null,
-    level: Input[String] = null,
-    stackId: Input[String] = null
-  ): PermissionArgs = {
+  def apply(userArn: Input[String]): PermissionArgs = {
     val __obj = js.Dynamic.literal(userArn = userArn.asInstanceOf[js.Any])
-    if (allowSsh != null) __obj.updateDynamic("allowSsh")(allowSsh.asInstanceOf[js.Any])
-    if (allowSudo != null) __obj.updateDynamic("allowSudo")(allowSudo.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (stackId != null) __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionArgs]
   }
+  @scala.inline
+  implicit class PermissionArgsOps[Self <: PermissionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserArn(value: Input[String]): Self = this.set("userArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowSsh(value: Input[Boolean]): Self = this.set("allowSsh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSsh: Self = this.set("allowSsh", js.undefined)
+    @scala.inline
+    def setAllowSudo(value: Input[Boolean]): Self = this.set("allowSudo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSudo: Self = this.set("allowSudo", js.undefined)
+    @scala.inline
+    def setLevel(value: Input[String]): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setStackId(value: Input[String]): Self = this.set("stackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("stackId", js.undefined)
+  }
+  
 }
 

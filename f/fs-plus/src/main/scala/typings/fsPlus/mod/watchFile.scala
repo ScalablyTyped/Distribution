@@ -15,7 +15,12 @@ object watchFile extends js.Object {
   ): Unit = js.native
   def apply(
     filename: PathLike,
-    options: js.UndefOr[Interval],
+    options: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
+  ): Unit = js.native
+  def apply(
+    filename: PathLike,
+    options: Interval,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
   ): Unit = js.native
 }

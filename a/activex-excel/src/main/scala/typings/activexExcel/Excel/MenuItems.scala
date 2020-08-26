@@ -22,6 +22,7 @@ trait MenuItems extends js.Object {
     HelpContextID: js.UndefOr[js.Any]
   ): MenuItem = js.native
   def AddMenu(Caption: String): Menu = js.native
+  def AddMenu(Caption: String, Before: js.UndefOr[scala.Nothing], Restore: js.Any): Menu = js.native
   def AddMenu(Caption: String, Before: js.Any): Menu = js.native
   def AddMenu(Caption: String, Before: js.Any, Restore: js.Any): Menu = js.native
   def Item(Index: js.Any): js.Any = js.native

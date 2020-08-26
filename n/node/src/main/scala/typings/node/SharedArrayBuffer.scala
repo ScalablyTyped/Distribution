@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait SharedArrayBuffer extends js.Object {
   val byteLength: Double = js.native
   def slice(): SharedArrayBuffer = js.native
+  def slice(begin: js.UndefOr[scala.Nothing], end: Double): SharedArrayBuffer = js.native
   def slice(begin: Double): SharedArrayBuffer = js.native
   def slice(begin: Double, end: Double): SharedArrayBuffer = js.native
 }

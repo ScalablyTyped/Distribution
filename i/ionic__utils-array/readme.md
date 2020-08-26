@@ -10,9 +10,9 @@ Array utils
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-array |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 14 |
 | # dependents       | 3 |
-| # downloads        | 1952114 |
+| # downloads        | 2022047 |
 | # stars            | 0 |
 
 ## Links

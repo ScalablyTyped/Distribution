@@ -11,6 +11,7 @@ trait StoreJsAPI extends js.Object {
   def addPlugin(plugin: js.Function): Unit = js.native
   def clearAll(): Unit = js.native
   def createStore(): StoreJsAPI = js.native
+  def createStore(plugins: js.UndefOr[scala.Nothing], namespace: String): StoreJsAPI = js.native
   def createStore(plugins: js.Array[js.Function]): StoreJsAPI = js.native
   def createStore(plugins: js.Array[js.Function], namespace: String): StoreJsAPI = js.native
   def each(callback: js.Function2[/* val */ js.Any, /* namespacedKey */ String, Unit]): Unit = js.native

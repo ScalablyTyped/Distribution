@@ -4,49 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssocLanguage[T] extends js.Object {
-  var assocLanguage: js.UndefOr[String] = js.undefined
-  var autoselect: js.UndefOr[Boolean] = js.undefined
-  var channels: js.UndefOr[String] = js.undefined
-  var characteristics: js.UndefOr[String] = js.undefined
-  var forced: js.UndefOr[Boolean] = js.undefined
-  var groupId: String
-  var instreamId: js.UndefOr[String] = js.undefined
-  var isDefault: js.UndefOr[Boolean] = js.undefined
-  var language: js.UndefOr[String] = js.undefined
-  var name: String
-  var `type`: T
-  var uri: js.UndefOr[String] = js.undefined
+  var assocLanguage: js.UndefOr[String] = js.native
+  var autoselect: js.UndefOr[Boolean] = js.native
+  var channels: js.UndefOr[String] = js.native
+  var characteristics: js.UndefOr[String] = js.native
+  var forced: js.UndefOr[Boolean] = js.native
+  var groupId: String = js.native
+  var instreamId: js.UndefOr[String] = js.native
+  var isDefault: js.UndefOr[Boolean] = js.native
+  var language: js.UndefOr[String] = js.native
+  var name: String = js.native
+  var `type`: T = js.native
+  var uri: js.UndefOr[String] = js.native
 }
 
 object AssocLanguage {
   @scala.inline
-  def apply[T](
-    groupId: String,
-    name: String,
-    `type`: T,
-    assocLanguage: String = null,
-    autoselect: js.UndefOr[Boolean] = js.undefined,
-    channels: String = null,
-    characteristics: String = null,
-    forced: js.UndefOr[Boolean] = js.undefined,
-    instreamId: String = null,
-    isDefault: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    uri: String = null
-  ): AssocLanguage[T] = {
+  def apply[T](groupId: String, name: String, `type`: T): AssocLanguage[T] = {
     val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (assocLanguage != null) __obj.updateDynamic("assocLanguage")(assocLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoselect)) __obj.updateDynamic("autoselect")(autoselect.get.asInstanceOf[js.Any])
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (characteristics != null) __obj.updateDynamic("characteristics")(characteristics.asInstanceOf[js.Any])
-    if (!js.isUndefined(forced)) __obj.updateDynamic("forced")(forced.get.asInstanceOf[js.Any])
-    if (instreamId != null) __obj.updateDynamic("instreamId")(instreamId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssocLanguage[T]]
   }
+  @scala.inline
+  implicit class AssocLanguageOps[Self <: AssocLanguage[_], T] (val x: Self with AssocLanguage[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: T): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssocLanguage(value: String): Self = this.set("assocLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssocLanguage: Self = this.set("assocLanguage", js.undefined)
+    @scala.inline
+    def setAutoselect(value: Boolean): Self = this.set("autoselect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoselect: Self = this.set("autoselect", js.undefined)
+    @scala.inline
+    def setChannels(value: String): Self = this.set("channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("channels", js.undefined)
+    @scala.inline
+    def setCharacteristics(value: String): Self = this.set("characteristics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharacteristics: Self = this.set("characteristics", js.undefined)
+    @scala.inline
+    def setForced(value: Boolean): Self = this.set("forced", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForced: Self = this.set("forced", js.undefined)
+    @scala.inline
+    def setInstreamId(value: String): Self = this.set("instreamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstreamId: Self = this.set("instreamId", js.undefined)
+    @scala.inline
+    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

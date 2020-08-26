@@ -18,11 +18,32 @@ trait GetComplianceDetailsByConfigRuleResponse extends js.Object {
 
 object GetComplianceDetailsByConfigRuleResponse {
   @scala.inline
-  def apply(EvaluationResults: EvaluationResults = null, NextToken: NextToken = null): GetComplianceDetailsByConfigRuleResponse = {
+  def apply(): GetComplianceDetailsByConfigRuleResponse = {
     val __obj = js.Dynamic.literal()
-    if (EvaluationResults != null) __obj.updateDynamic("EvaluationResults")(EvaluationResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetComplianceDetailsByConfigRuleResponse]
   }
+  @scala.inline
+  implicit class GetComplianceDetailsByConfigRuleResponseOps[Self <: GetComplianceDetailsByConfigRuleResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvaluationResultsVarargs(value: EvaluationResult*): Self = this.set("EvaluationResults", js.Array(value :_*))
+    @scala.inline
+    def setEvaluationResults(value: EvaluationResults): Self = this.set("EvaluationResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationResults: Self = this.set("EvaluationResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

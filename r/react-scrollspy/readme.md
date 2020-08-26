@@ -10,9 +10,9 @@ react scrollspy component
 | ------------------ | :-------------: |
 | Full name          | react-scrollspy |
 | Keywords           | react, react-component, component, scrollspy, scroll |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 10 |
-| # downloads        | 707237 |
+| # downloads        | 795686 |
 | # stars            | 2 |
 
 ## Links

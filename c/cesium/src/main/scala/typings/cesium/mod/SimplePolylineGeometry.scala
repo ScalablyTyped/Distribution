@@ -17,6 +17,7 @@ class SimplePolylineGeometry protected () extends Packable {
 object SimplePolylineGeometry extends js.Object {
   def createGeometry(simplePolylineGeometry: SimplePolylineGeometry): Geometry = js.native
   def unpack(array: js.Array[Double]): SimplePolylineGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: SimplePolylineGeometry): SimplePolylineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): SimplePolylineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: SimplePolylineGeometry): SimplePolylineGeometry = js.native
 }

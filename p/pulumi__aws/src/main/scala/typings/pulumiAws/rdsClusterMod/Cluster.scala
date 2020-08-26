@@ -26,11 +26,10 @@ class Cluster protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: ClusterArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   /**
-    * Specifies whether any cluster modifications
-    * are applied immediately, or during the next maintenance window. Default is
-    * `false`. See [Amazon RDS Documentation for more information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html)
+    * Specifies whether any cluster modifications are applied immediately, or during the next maintenance window. Default is `false`. See [Amazon RDS Documentation for more information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html)
     */
   val applyImmediately: Output_[Boolean] = js.native
   /**
@@ -38,7 +37,7 @@ class Cluster protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
-    * A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. RDS automatically assigns 3 AZs if less than 3 AZs are configured, which will show as a difference requiring resource recreation next deployment. It is recommended to specify 3 AZs or use `ignoreChanges` if necessary.
+    * A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. RDS automatically assigns 3 AZs if less than 3 AZs are configured, which will show as a difference requiring resource recreation next provider update. It is recommended to specify 3 AZs or use [the `ignoreChanges` argument](https://www.pulumi.com/docs/intro/concepts/programming-model/#ignorechanges) if necessary.
     */
   val availabilityZones: Output_[js.Array[String]] = js.native
   /**
@@ -70,7 +69,7 @@ class Cluster protected () extends CustomResource {
     */
   val copyTagsToSnapshot: Output_[js.UndefOr[Boolean]] = js.native
   /**
-    * Name for an automatically created database on cluster creation. There are different naming restrictions per database engine: [RDS Naming Constraints][5]
+    * Name for an automatically created database on cluster creation. There are different naming restrictions per database engine: [RDS Naming Constraints](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html#RDS_Limits.Constraints)
     */
   val databaseName: Output_[String] = js.native
   /**
@@ -78,7 +77,7 @@ class Cluster protected () extends CustomResource {
     */
   val dbClusterParameterGroupName: Output_[String] = js.native
   /**
-    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` specified on every [`aws.rds.ClusterInstance`](https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html) in the cluster.
+    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` specified on every `aws.rds.ClusterInstance` in the cluster.
     */
   val dbSubnetGroupName: Output_[String] = js.native
   /**
@@ -90,8 +89,7 @@ class Cluster protected () extends CustomResource {
     */
   val enableHttpEndpoint: Output_[js.UndefOr[Boolean]] = js.native
   /**
-    * List of log types to export to cloudwatch. If omitted, no logs will be exported.
-    * The following log types are supported: `audit`, `error`, `general`, `slowquery`, `postgresql` (PostgreSQL).
+    * List of log types to export to cloudwatch. If omitted, no logs will be exported. The following log types are supported: `audit`, `error`, `general`, `slowquery`, `postgresql` (PostgreSQL).
     */
   val enabledCloudwatchLogsExports: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
@@ -111,13 +109,11 @@ class Cluster protected () extends CustomResource {
     */
   val engineVersion: Output_[String] = js.native
   /**
-    * The name of your final DB snapshot
-    * when this DB cluster is deleted. If omitted, no final snapshot will be
-    * made.
+    * The name of your final DB snapshot when this DB cluster is deleted. If omitted, no final snapshot will be made.
     */
   val finalSnapshotIdentifier: Output_[js.UndefOr[String]] = js.native
   /**
-    * The global cluster identifier specified on [`aws.rds.GlobalCluster`](https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html).
+    * The global cluster identifier specified on `aws.rds.GlobalCluster`.
     */
   val globalClusterIdentifier: Output_[js.UndefOr[String]] = js.native
   /**
@@ -137,12 +133,11 @@ class Cluster protected () extends CustomResource {
     */
   val kmsKeyId: Output_[String] = js.native
   /**
-    * Password for the master DB user. Note that this may
-    * show up in logs, and it will be stored in the state file. Please refer to the [RDS Naming Constraints][5]
+    * Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Please refer to the [RDS Naming Constraints](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html#RDS_Limits.Constraints)
     */
   val masterPassword: Output_[js.UndefOr[String]] = js.native
   /**
-    * Username for the master DB user. Please refer to the [RDS Naming Constraints][5]. This argument does not support in-place updates and cannot be changed during a restore from snapshot.
+    * Username for the master DB user. Please refer to the [RDS Naming Constraints](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html#RDS_Limits.Constraints). This argument does not support in-place updates and cannot be changed during a restore from snapshot.
     */
   val masterUsername: Output_[String] = js.native
   /**
@@ -150,8 +145,7 @@ class Cluster protected () extends CustomResource {
     */
   val port: Output_[Double] = js.native
   /**
-    * The daily time range during which automated backups are created if automated backups are enabled using the BackupRetentionPeriod parameter.Time in UTC
-    * Default: A 30-minute window selected at random from an 8-hour block of time per region. e.g. 04:00-09:00
+    * The daily time range during which automated backups are created if automated backups are enabled using the BackupRetentionPeriod parameter.Time in UTC. Default: A 30-minute window selected at random from an 8-hour block of time per region. e.g. 04:00-09:00
     */
   val preferredBackupWindow: Output_[String] = js.native
   /**
@@ -189,12 +183,11 @@ class Cluster protected () extends CustomResource {
     */
   val storageEncrypted: Output_[js.UndefOr[Boolean]] = js.native
   /**
-    * A mapping of tags to assign to the DB cluster.
+    * A map of tags to assign to the DB cluster.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
-    * List of VPC security groups to associate
-    * with the Cluster
+    * List of VPC security groups to associate with the Cluster
     */
   val vpcSecurityGroupIds: Output_[js.Array[String]] = js.native
 }
@@ -210,8 +203,10 @@ object Cluster extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Cluster = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
   def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
   def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
   /**

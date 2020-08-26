@@ -1,188 +1,197 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.ComponentElement
-import typings.devextreme.anon.Element
-import typings.devextreme.anon.ElementEventJQueryEvent
-import typings.devextreme.anon.JQueryEvent
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
+import typings.devextreme.anon.EventJQueryEventModel
 import typings.devextreme.devextremeStrings.always
-import typings.devextreme.devextremeStrings.auto
 import typings.devextreme.devextremeStrings.clear
 import typings.devextreme.devextremeStrings.filled
-import typings.devextreme.devextremeStrings.invalid
 import typings.devextreme.devextremeStrings.onFocus
 import typings.devextreme.devextremeStrings.outlined
-import typings.devextreme.devextremeStrings.pending
 import typings.devextreme.devextremeStrings.underlined
-import typings.devextreme.devextremeStrings.valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxTextEditorOptions[T] extends EditorOptions[T] {
   /** @name dxTextEditor.Options.buttons */
-  var buttons: js.UndefOr[js.Array[String | clear | dxTextEditorButton]] = js.undefined
+  var buttons: js.UndefOr[js.Array[String | clear | dxTextEditorButton]] = js.native
   /** @name dxTextEditor.Options.inputAttr */
-  var inputAttr: js.UndefOr[js.Any] = js.undefined
+  var inputAttr: js.UndefOr[js.Any] = js.native
   /** @name dxTextEditor.Options.mask */
-  var mask: js.UndefOr[String] = js.undefined
+  var mask: js.UndefOr[String] = js.native
   /** @name dxTextEditor.Options.maskChar */
-  var maskChar: js.UndefOr[String] = js.undefined
+  var maskChar: js.UndefOr[String] = js.native
   /** @name dxTextEditor.Options.maskInvalidMessage */
-  var maskInvalidMessage: js.UndefOr[String] = js.undefined
+  var maskInvalidMessage: js.UndefOr[String] = js.native
   /** @name dxTextEditor.Options.maskRules */
-  var maskRules: js.UndefOr[js.Any] = js.undefined
+  var maskRules: js.UndefOr[js.Any] = js.native
   /** @name dxTextEditor.Options.name */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** @name dxTextEditor.Options.onChange */
-  var onChange: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.onCopy */
-  var onCopy: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onCopy: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.onCut */
-  var onCut: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onCut: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.onEnterKey */
-  var onEnterKey: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onEnterKey: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.onFocusIn */
-  var onFocusIn: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onFocusIn: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.onFocusOut */
-  var onFocusOut: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onFocusOut: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.onInput */
-  var onInput: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onInput: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.onKeyDown */
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
+  /** @deprecated */
   /** @name dxTextEditor.Options.onKeyPress */
-  var onKeyPress: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onKeyPress: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.onKeyUp */
-  var onKeyUp: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onKeyUp: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.onPaste */
-  var onPaste: js.UndefOr[js.Function1[/* e */ ElementEventJQueryEvent[T], _]] = js.undefined
+  var onPaste: js.UndefOr[js.Function1[/* e */ EventJQueryEventModel[T], _]] = js.native
   /** @name dxTextEditor.Options.placeholder */
-  var placeholder: js.UndefOr[String] = js.undefined
+  var placeholder: js.UndefOr[String] = js.native
   /** @name dxTextEditor.Options.showClearButton */
-  var showClearButton: js.UndefOr[Boolean] = js.undefined
+  var showClearButton: js.UndefOr[Boolean] = js.native
   /** @name dxTextEditor.Options.showMaskMode */
-  var showMaskMode: js.UndefOr[always | onFocus] = js.undefined
+  var showMaskMode: js.UndefOr[always | onFocus] = js.native
   /** @name dxTextEditor.Options.spellcheck */
-  var spellcheck: js.UndefOr[Boolean] = js.undefined
+  var spellcheck: js.UndefOr[Boolean] = js.native
   /** @name dxTextEditor.Options.stylingMode */
-  var stylingMode: js.UndefOr[outlined | underlined | filled] = js.undefined
+  var stylingMode: js.UndefOr[outlined | underlined | filled] = js.native
   /** @name dxTextEditor.Options.text */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /** @name dxTextEditor.Options.useMaskedValue */
-  var useMaskedValue: js.UndefOr[Boolean] = js.undefined
+  var useMaskedValue: js.UndefOr[Boolean] = js.native
   /** @name dxTextEditor.Options.valueChangeEvent */
-  var valueChangeEvent: js.UndefOr[String] = js.undefined
+  var valueChangeEvent: js.UndefOr[String] = js.native
 }
 
 object dxTextEditorOptions {
   @scala.inline
-  def apply[T](
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    bindingOptions: js.Any = null,
-    buttons: js.Array[String | clear | dxTextEditorButton] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    inputAttr: js.Any = null,
-    isValid: js.UndefOr[Boolean] = js.undefined,
-    mask: String = null,
-    maskChar: String = null,
-    maskInvalidMessage: String = null,
-    maskRules: js.Any = null,
-    name: String = null,
-    onChange: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onContentReady: /* e */ ComponentElement[T] => _ = null,
-    onCopy: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onCut: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onDisposing: /* e */ Model[T] => _ = null,
-    onEnterKey: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onFocusIn: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onFocusOut: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onInitialized: /* e */ Element[T] => _ = null,
-    onInput: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onKeyDown: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onKeyPress: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onKeyUp: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onOptionChanged: /* e */ Name[T] => _ = null,
-    onPaste: /* e */ ElementEventJQueryEvent[T] => _ = null,
-    onValueChanged: /* e */ JQueryEvent[T] => _ = null,
-    placeholder: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    showClearButton: js.UndefOr[Boolean] = js.undefined,
-    showMaskMode: always | onFocus = null,
-    spellcheck: js.UndefOr[Boolean] = js.undefined,
-    stylingMode: outlined | underlined | filled = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    text: String = null,
-    useMaskedValue: js.UndefOr[Boolean] = js.undefined,
-    validationError: js.Any = null,
-    validationErrors: js.Array[_] = null,
-    validationMessageMode: always | auto = null,
-    validationStatus: valid | invalid | pending = null,
-    value: js.Any = null,
-    valueChangeEvent: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxTextEditorOptions[T] = {
+  def apply[T](): dxTextEditorOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
-    if (inputAttr != null) __obj.updateDynamic("inputAttr")(inputAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.get.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (maskChar != null) __obj.updateDynamic("maskChar")(maskChar.asInstanceOf[js.Any])
-    if (maskInvalidMessage != null) __obj.updateDynamic("maskInvalidMessage")(maskInvalidMessage.asInstanceOf[js.Any])
-    if (maskRules != null) __obj.updateDynamic("maskRules")(maskRules.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1(onContentReady))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onEnterKey != null) __obj.updateDynamic("onEnterKey")(js.Any.fromFunction1(onEnterKey))
-    if (onFocusIn != null) __obj.updateDynamic("onFocusIn")(js.Any.fromFunction1(onFocusIn))
-    if (onFocusOut != null) __obj.updateDynamic("onFocusOut")(js.Any.fromFunction1(onFocusOut))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1(onValueChanged))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.get.asInstanceOf[js.Any])
-    if (showMaskMode != null) __obj.updateDynamic("showMaskMode")(showMaskMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
-    if (stylingMode != null) __obj.updateDynamic("stylingMode")(stylingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaskedValue)) __obj.updateDynamic("useMaskedValue")(useMaskedValue.get.asInstanceOf[js.Any])
-    if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
-    if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
-    if (validationMessageMode != null) __obj.updateDynamic("validationMessageMode")(validationMessageMode.asInstanceOf[js.Any])
-    if (validationStatus != null) __obj.updateDynamic("validationStatus")(validationStatus.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueChangeEvent != null) __obj.updateDynamic("valueChangeEvent")(valueChangeEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxTextEditorOptions[T]]
   }
+  @scala.inline
+  implicit class dxTextEditorOptionsOps[Self <: dxTextEditorOptions[_], T] (val x: Self with dxTextEditorOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButtonsVarargs(value: (String | clear | dxTextEditorButton)*): Self = this.set("buttons", js.Array(value :_*))
+    @scala.inline
+    def setButtons(value: js.Array[String | clear | dxTextEditorButton]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setInputAttr(value: js.Any): Self = this.set("inputAttr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAttr: Self = this.set("inputAttr", js.undefined)
+    @scala.inline
+    def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMaskChar(value: String): Self = this.set("maskChar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskChar: Self = this.set("maskChar", js.undefined)
+    @scala.inline
+    def setMaskInvalidMessage(value: String): Self = this.set("maskInvalidMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskInvalidMessage: Self = this.set("maskInvalidMessage", js.undefined)
+    @scala.inline
+    def setMaskRules(value: js.Any): Self = this.set("maskRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskRules: Self = this.set("maskRules", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnCopy(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onCopy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    @scala.inline
+    def setOnCut(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onCut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCut: Self = this.set("onCut", js.undefined)
+    @scala.inline
+    def setOnEnterKey(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onEnterKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEnterKey: Self = this.set("onEnterKey", js.undefined)
+    @scala.inline
+    def setOnFocusIn(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onFocusIn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocusIn: Self = this.set("onFocusIn", js.undefined)
+    @scala.inline
+    def setOnFocusOut(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onFocusOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocusOut: Self = this.set("onFocusOut", js.undefined)
+    @scala.inline
+    def setOnInput(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnKeyUp(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onKeyUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyUp: Self = this.set("onKeyUp", js.undefined)
+    @scala.inline
+    def setOnPaste(value: /* e */ EventJQueryEventModel[T] => _): Self = this.set("onPaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setShowClearButton(value: Boolean): Self = this.set("showClearButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowClearButton: Self = this.set("showClearButton", js.undefined)
+    @scala.inline
+    def setShowMaskMode(value: always | onFocus): Self = this.set("showMaskMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMaskMode: Self = this.set("showMaskMode", js.undefined)
+    @scala.inline
+    def setSpellcheck(value: Boolean): Self = this.set("spellcheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellcheck: Self = this.set("spellcheck", js.undefined)
+    @scala.inline
+    def setStylingMode(value: outlined | underlined | filled): Self = this.set("stylingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStylingMode: Self = this.set("stylingMode", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setUseMaskedValue(value: Boolean): Self = this.set("useMaskedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseMaskedValue: Self = this.set("useMaskedValue", js.undefined)
+    @scala.inline
+    def setValueChangeEvent(value: String): Self = this.set("valueChangeEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueChangeEvent: Self = this.set("valueChangeEvent", js.undefined)
+  }
+  
 }
 

@@ -36,6 +36,7 @@ class ContentMatch[S /* <: Schema[_, _] */] () extends js.Object {
     * content expression.
     */
   def fillBefore(after: Fragment[S]): js.UndefOr[Fragment[S] | Null] = js.native
+  def fillBefore(after: Fragment[S], toEnd: js.UndefOr[scala.Nothing], startIndex: Double): js.UndefOr[Fragment[S] | Null] = js.native
   def fillBefore(after: Fragment[S], toEnd: Boolean): js.UndefOr[Fragment[S] | Null] = js.native
   def fillBefore(after: Fragment[S], toEnd: Boolean, startIndex: Double): js.UndefOr[Fragment[S] | Null] = js.native
   /**
@@ -50,6 +51,7 @@ class ContentMatch[S /* <: Schema[_, _] */] () extends js.Object {
     * successful.
     */
   def matchFragment(frag: Fragment[S]): js.UndefOr[ContentMatch[S] | Null] = js.native
+  def matchFragment(frag: Fragment[S], start: js.UndefOr[scala.Nothing], end: Double): js.UndefOr[ContentMatch[S] | Null] = js.native
   def matchFragment(frag: Fragment[S], start: Double): js.UndefOr[ContentMatch[S] | Null] = js.native
   def matchFragment(frag: Fragment[S], start: Double, end: Double): js.UndefOr[ContentMatch[S] | Null] = js.native
   /**

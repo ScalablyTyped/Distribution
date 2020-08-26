@@ -22,12 +22,34 @@ trait EventInformation extends js.Object {
 
 object EventInformation {
   @scala.inline
-  def apply(EventDescription: String = null, EventSubType: String = null, InstanceId: String = null): EventInformation = {
+  def apply(): EventInformation = {
     val __obj = js.Dynamic.literal()
-    if (EventDescription != null) __obj.updateDynamic("EventDescription")(EventDescription.asInstanceOf[js.Any])
-    if (EventSubType != null) __obj.updateDynamic("EventSubType")(EventSubType.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventInformation]
   }
+  @scala.inline
+  implicit class EventInformationOps[Self <: EventInformation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventDescription(value: String): Self = this.set("EventDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventDescription: Self = this.set("EventDescription", js.undefined)
+    @scala.inline
+    def setEventSubType(value: String): Self = this.set("EventSubType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventSubType: Self = this.set("EventSubType", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+  }
+  
 }
 

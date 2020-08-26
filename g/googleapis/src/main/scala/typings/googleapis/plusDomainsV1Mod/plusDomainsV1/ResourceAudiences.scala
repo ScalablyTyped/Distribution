@@ -30,6 +30,7 @@ class ResourceAudiences protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAudiencesFeed] = js.native
   def list(callback: BodyResponseCallback[SchemaAudiencesFeed]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAudiencesFeed] = js.native
   def list(params: ParamsResourceAudiencesList): GaxiosPromise[SchemaAudiencesFeed] = js.native
   def list(params: ParamsResourceAudiencesList, callback: BodyResponseCallback[SchemaAudiencesFeed]): Unit = js.native
   def list(

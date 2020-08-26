@@ -14,10 +14,26 @@ trait GetUserResponse extends js.Object {
 
 object GetUserResponse {
   @scala.inline
-  def apply(User: User = null): GetUserResponse = {
+  def apply(): GetUserResponse = {
     val __obj = js.Dynamic.literal()
-    if (User != null) __obj.updateDynamic("User")(User.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserResponse]
   }
+  @scala.inline
+  implicit class GetUserResponseOps[Self <: GetUserResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUser(value: User): Self = this.set("User", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("User", js.undefined)
+  }
+  
 }
 

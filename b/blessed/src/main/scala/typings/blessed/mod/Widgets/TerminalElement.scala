@@ -18,8 +18,24 @@ class TerminalElement protected () extends BoxElement {
     * reference to the headless term.js terminal.
     */
   var term: js.Any = js.native
+  def screenshot(
+    xi: js.UndefOr[scala.Nothing],
+    xl: js.UndefOr[scala.Nothing],
+    yi: js.UndefOr[scala.Nothing],
+    yl: Double
+  ): String = js.native
+  def screenshot(xi: js.UndefOr[scala.Nothing], xl: js.UndefOr[scala.Nothing], yi: Double): String = js.native
+  def screenshot(xi: js.UndefOr[scala.Nothing], xl: js.UndefOr[scala.Nothing], yi: Double, yl: Double): String = js.native
+  def screenshot(xi: js.UndefOr[scala.Nothing], xl: Double): String = js.native
+  def screenshot(xi: js.UndefOr[scala.Nothing], xl: Double, yi: js.UndefOr[scala.Nothing], yl: Double): String = js.native
+  def screenshot(xi: js.UndefOr[scala.Nothing], xl: Double, yi: Double): String = js.native
+  def screenshot(xi: js.UndefOr[scala.Nothing], xl: Double, yi: Double, yl: Double): String = js.native
   def screenshot(xi: Double): String = js.native
+  def screenshot(xi: Double, xl: js.UndefOr[scala.Nothing], yi: js.UndefOr[scala.Nothing], yl: Double): String = js.native
+  def screenshot(xi: Double, xl: js.UndefOr[scala.Nothing], yi: Double): String = js.native
+  def screenshot(xi: Double, xl: js.UndefOr[scala.Nothing], yi: Double, yl: Double): String = js.native
   def screenshot(xi: Double, xl: Double): String = js.native
+  def screenshot(xi: Double, xl: Double, yi: js.UndefOr[scala.Nothing], yl: Double): String = js.native
   def screenshot(xi: Double, xl: Double, yi: Double): String = js.native
   /**
     * write data to the terminal.

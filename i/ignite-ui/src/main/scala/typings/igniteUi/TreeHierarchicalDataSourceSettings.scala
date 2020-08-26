@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeHierarchicalDataSourceSettings
   extends /**
   * Option for JSONPDataSourceSettings
@@ -13,19 +14,31 @@ trait TreeHierarchicalDataSourceSettings
   /**
     * Configure tree datasource specific settings
     */
-  var treeDS: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDS] = js.undefined
+  var treeDS: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDS] = js.native
 }
 
 object TreeHierarchicalDataSourceSettings {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    treeDS: TreeHierarchicalDataSourceSettingsTreeDS = null
-  ): TreeHierarchicalDataSourceSettings = {
+  def apply(): TreeHierarchicalDataSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (treeDS != null) __obj.updateDynamic("treeDS")(treeDS.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettings]
   }
+  @scala.inline
+  implicit class TreeHierarchicalDataSourceSettingsOps[Self <: TreeHierarchicalDataSourceSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTreeDS(value: TreeHierarchicalDataSourceSettingsTreeDS): Self = this.set("treeDS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeDS: Self = this.set("treeDS", js.undefined)
+  }
+  
 }
 

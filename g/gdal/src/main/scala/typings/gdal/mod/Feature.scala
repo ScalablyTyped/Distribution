@@ -17,6 +17,7 @@ class Feature protected () extends js.Object {
   def getFieldDefn(index: Double): FieldDefn = js.native
   def getGeometry(): Geometry = js.native
   def setFrom(feature: Feature): Unit = js.native
+  def setFrom(feature: Feature, index_map: js.UndefOr[scala.Nothing], forgiving: Boolean): Unit = js.native
   def setFrom(feature: Feature, index_map: js.Array[Double]): Unit = js.native
   def setFrom(feature: Feature, index_map: js.Array[Double], forgiving: Boolean): Unit = js.native
   def setGeometry(geometry: Geometry): Unit = js.native

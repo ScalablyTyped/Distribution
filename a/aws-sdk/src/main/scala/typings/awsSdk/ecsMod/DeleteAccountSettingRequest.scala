@@ -18,10 +18,28 @@ trait DeleteAccountSettingRequest extends js.Object {
 
 object DeleteAccountSettingRequest {
   @scala.inline
-  def apply(name: SettingName, principalArn: String = null): DeleteAccountSettingRequest = {
+  def apply(name: SettingName): DeleteAccountSettingRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (principalArn != null) __obj.updateDynamic("principalArn")(principalArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccountSettingRequest]
   }
+  @scala.inline
+  implicit class DeleteAccountSettingRequestOps[Self <: DeleteAccountSettingRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: SettingName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrincipalArn(value: String): Self = this.set("principalArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalArn: Self = this.set("principalArn", js.undefined)
+  }
+  
 }
 

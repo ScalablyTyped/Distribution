@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * is a {@link TextContent} that can be used to attach RDF metadata to a range of text.
   * @since OOo 3.2
   */
+@js.native
 trait InContentMetadata
   extends TextContent
      with XMetadatable

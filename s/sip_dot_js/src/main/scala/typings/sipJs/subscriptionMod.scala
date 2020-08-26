@@ -50,24 +50,24 @@ object subscriptionMod extends js.Object {
     /**
       * The subscribed subscription dialog.
       */
-    val dialog: js.UndefOr[typings.sipJs.subscriptionSubscriptionMod.Subscription] = js.native
-    /**
-      * True if disposed.
-      * @internal
-      */
-    val disposed: Boolean = js.native
-    /**
-      * Subscription state. See {@link SubscriptionState} for details.
-      */
-    val state: SubscriptionState = js.native
-    /**
-      * Emits when the subscription `state` property changes.
-      */
-    val stateChange: Emitter[SubscriptionState] = js.native
+    def dialog: js.UndefOr[typings.sipJs.subscriptionSubscriptionMod.Subscription] = js.native
     /**
       * Destructor.
       */
     def dispose(): js.Promise[Unit] = js.native
+    /**
+      * True if disposed.
+      * @internal
+      */
+    def disposed: Boolean = js.native
+    /**
+      * Subscription state. See {@link SubscriptionState} for details.
+      */
+    def state: SubscriptionState = js.native
+    /**
+      * Emits when the subscription `state` property changes.
+      */
+    def stateChange: Emitter[SubscriptionState] = js.native
     /** @internal */
     /* protected */ def stateTransition(newState: SubscriptionState): Unit = js.native
     /**

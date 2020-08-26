@@ -32,6 +32,7 @@ class ResourceProjectsBrokersInstancesBindings protected () extends js.Object {
     */
   def getLast_operation(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
   def getLast_operation(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1Operation]): Unit = js.native
+  def getLast_operation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
   def getLast_operation(params: ParamsResourceProjectsBrokersInstancesBindingsGetlastOperation): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
   def getLast_operation(
     params: ParamsResourceProjectsBrokersInstancesBindingsGetlastOperation,
@@ -64,6 +65,7 @@ class ResourceProjectsBrokersInstancesBindings protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse] = js.native
   def list(params: ParamsResourceProjectsBrokersInstancesBindingsList): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListBindingsResponse] = js.native
   def list(
     params: ParamsResourceProjectsBrokersInstancesBindingsList,

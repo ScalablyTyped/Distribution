@@ -30,6 +30,7 @@ trait Reference extends js.Object {
   def put(data: Uint8Array): UploadTask = js.native
   def put(data: Uint8Array, metadata: UploadMetadata): UploadTask = js.native
   def putString(data: String): UploadTask = js.native
+  def putString(data: String, format: js.UndefOr[scala.Nothing], metadata: UploadMetadata): UploadTask = js.native
   def putString(data: String, format: StringFormat): UploadTask = js.native
   def putString(data: String, format: StringFormat, metadata: UploadMetadata): UploadTask = js.native
   def updateMetadata(metadata: SettableMetadata): js.Promise[FullMetadata] = js.native

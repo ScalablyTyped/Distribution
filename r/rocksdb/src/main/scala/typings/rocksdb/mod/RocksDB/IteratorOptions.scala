@@ -5,38 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IteratorOptions extends AbstractIteratorOptions[Bytes] {
-  var fillCache: js.UndefOr[Boolean] = js.undefined
+  var fillCache: js.UndefOr[Boolean] = js.native
 }
 
 object IteratorOptions {
   @scala.inline
-  def apply(
-    fillCache: js.UndefOr[Boolean] = js.undefined,
-    gt: Bytes = null,
-    gte: Bytes = null,
-    keyAsBuffer: js.UndefOr[Boolean] = js.undefined,
-    keys: js.UndefOr[Boolean] = js.undefined,
-    limit: js.UndefOr[Double] = js.undefined,
-    lt: Bytes = null,
-    lte: Bytes = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    valueAsBuffer: js.UndefOr[Boolean] = js.undefined,
-    values: js.UndefOr[Boolean] = js.undefined
-  ): IteratorOptions = {
+  def apply(): IteratorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fillCache)) __obj.updateDynamic("fillCache")(fillCache.get.asInstanceOf[js.Any])
-    if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
-    if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyAsBuffer)) __obj.updateDynamic("keyAsBuffer")(keyAsBuffer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
-    if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueAsBuffer)) __obj.updateDynamic("valueAsBuffer")(valueAsBuffer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IteratorOptions]
   }
+  @scala.inline
+  implicit class IteratorOptionsOps[Self <: IteratorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFillCache(value: Boolean): Self = this.set("fillCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillCache: Self = this.set("fillCache", js.undefined)
+  }
+  
 }
 

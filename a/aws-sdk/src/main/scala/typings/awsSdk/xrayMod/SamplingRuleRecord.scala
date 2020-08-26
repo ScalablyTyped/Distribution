@@ -22,12 +22,34 @@ trait SamplingRuleRecord extends js.Object {
 
 object SamplingRuleRecord {
   @scala.inline
-  def apply(CreatedAt: Timestamp = null, ModifiedAt: Timestamp = null, SamplingRule: SamplingRule = null): SamplingRuleRecord = {
+  def apply(): SamplingRuleRecord = {
     val __obj = js.Dynamic.literal()
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (ModifiedAt != null) __obj.updateDynamic("ModifiedAt")(ModifiedAt.asInstanceOf[js.Any])
-    if (SamplingRule != null) __obj.updateDynamic("SamplingRule")(SamplingRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingRuleRecord]
   }
+  @scala.inline
+  implicit class SamplingRuleRecordOps[Self <: SamplingRuleRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setModifiedAt(value: Timestamp): Self = this.set("ModifiedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedAt: Self = this.set("ModifiedAt", js.undefined)
+    @scala.inline
+    def setSamplingRule(value: SamplingRule): Self = this.set("SamplingRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamplingRule: Self = this.set("SamplingRule", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ object EventGroup extends js.Object {
     *
     */
   def raise(target: js.Any, eventName: String): js.UndefOr[Boolean] = js.native
+  def raise(target: js.Any, eventName: String, eventArgs: js.UndefOr[scala.Nothing], bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
   def raise(target: js.Any, eventName: String, eventArgs: js.Any): js.UndefOr[Boolean] = js.native
   def raise(target: js.Any, eventName: String, eventArgs: js.Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
   def stopPropagation(event: js.Any): Unit = js.native

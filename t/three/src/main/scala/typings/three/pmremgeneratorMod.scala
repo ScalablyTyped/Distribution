@@ -21,7 +21,11 @@ object pmremgeneratorMod extends js.Object {
     def fromCubemap(cubemap: CubeTexture): WebGLRenderTarget = js.native
     def fromEquirectangular(equirectangular: Texture): WebGLRenderTarget = js.native
     def fromScene(scene: Scene): WebGLRenderTarget = js.native
+    def fromScene(scene: Scene, sigma: js.UndefOr[scala.Nothing], near: js.UndefOr[scala.Nothing], far: Double): WebGLRenderTarget = js.native
+    def fromScene(scene: Scene, sigma: js.UndefOr[scala.Nothing], near: Double): WebGLRenderTarget = js.native
+    def fromScene(scene: Scene, sigma: js.UndefOr[scala.Nothing], near: Double, far: Double): WebGLRenderTarget = js.native
     def fromScene(scene: Scene, sigma: Double): WebGLRenderTarget = js.native
+    def fromScene(scene: Scene, sigma: Double, near: js.UndefOr[scala.Nothing], far: Double): WebGLRenderTarget = js.native
     def fromScene(scene: Scene, sigma: Double, near: Double): WebGLRenderTarget = js.native
     def fromScene(scene: Scene, sigma: Double, near: Double, far: Double): WebGLRenderTarget = js.native
   }

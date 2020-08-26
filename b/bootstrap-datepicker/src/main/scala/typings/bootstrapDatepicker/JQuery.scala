@@ -12,6 +12,11 @@ trait JQuery extends js.Object {
   def datepicker(options: DatepickerOptions): JQuery = js.native
   def off(events: DatepickerEvents): JQuery = js.native
   def off(events: DatepickerEvents, handler: js.Function1[/* eventObject */ DatepickerEventObject, _]): JQuery = js.native
+  def off(
+    events: DatepickerEvents,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ DatepickerEventObject, _]
+  ): JQuery = js.native
   def off(events: DatepickerEvents, selector: String): JQuery = js.native
   def off(
     events: DatepickerEvents,

@@ -38,22 +38,54 @@ trait GetFolderOutput extends js.Object {
 
 object GetFolderOutput {
   @scala.inline
-  def apply(
-    commitId: ObjectId,
-    folderPath: Path,
-    files: FileList = null,
-    subFolders: FolderList = null,
-    subModules: SubModuleList = null,
-    symbolicLinks: SymbolicLinkList = null,
-    treeId: ObjectId = null
-  ): GetFolderOutput = {
+  def apply(commitId: ObjectId, folderPath: Path): GetFolderOutput = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], folderPath = folderPath.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (subFolders != null) __obj.updateDynamic("subFolders")(subFolders.asInstanceOf[js.Any])
-    if (subModules != null) __obj.updateDynamic("subModules")(subModules.asInstanceOf[js.Any])
-    if (symbolicLinks != null) __obj.updateDynamic("symbolicLinks")(symbolicLinks.asInstanceOf[js.Any])
-    if (treeId != null) __obj.updateDynamic("treeId")(treeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFolderOutput]
   }
+  @scala.inline
+  implicit class GetFolderOutputOps[Self <: GetFolderOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommitId(value: ObjectId): Self = this.set("commitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFolderPath(value: Path): Self = this.set("folderPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilesVarargs(value: File*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: FileList): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setSubFoldersVarargs(value: Folder*): Self = this.set("subFolders", js.Array(value :_*))
+    @scala.inline
+    def setSubFolders(value: FolderList): Self = this.set("subFolders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubFolders: Self = this.set("subFolders", js.undefined)
+    @scala.inline
+    def setSubModulesVarargs(value: SubModule*): Self = this.set("subModules", js.Array(value :_*))
+    @scala.inline
+    def setSubModules(value: SubModuleList): Self = this.set("subModules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubModules: Self = this.set("subModules", js.undefined)
+    @scala.inline
+    def setSymbolicLinksVarargs(value: SymbolicLink*): Self = this.set("symbolicLinks", js.Array(value :_*))
+    @scala.inline
+    def setSymbolicLinks(value: SymbolicLinkList): Self = this.set("symbolicLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolicLinks: Self = this.set("symbolicLinks", js.undefined)
+    @scala.inline
+    def setTreeId(value: ObjectId): Self = this.set("treeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeId: Self = this.set("treeId", js.undefined)
+  }
+  
 }
 

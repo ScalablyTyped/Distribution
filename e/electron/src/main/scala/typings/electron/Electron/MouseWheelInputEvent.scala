@@ -1,86 +1,81 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.alt
-import typings.electron.electronStrings.capsLock
-import typings.electron.electronStrings.cmd
-import typings.electron.electronStrings.command
-import typings.electron.electronStrings.control
-import typings.electron.electronStrings.ctrl
-import typings.electron.electronStrings.isAutoRepeat
-import typings.electron.electronStrings.isKeypad
-import typings.electron.electronStrings.left
-import typings.electron.electronStrings.leftButtonDown
-import typings.electron.electronStrings.meta
-import typings.electron.electronStrings.middle
-import typings.electron.electronStrings.middleButtonDown
 import typings.electron.electronStrings.mouseWheel
-import typings.electron.electronStrings.numLock
-import typings.electron.electronStrings.right
-import typings.electron.electronStrings.rightButtonDown
-import typings.electron.electronStrings.shift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MouseWheelInputEvent extends MouseInputEvent {
   // Docs: http://electronjs.org/docs/api/structures/mouse-wheel-input-event
-  var accelerationRatioX: js.UndefOr[Double] = js.undefined
-  var accelerationRatioY: js.UndefOr[Double] = js.undefined
-  var canScroll: js.UndefOr[Boolean] = js.undefined
-  var deltaX: js.UndefOr[Double] = js.undefined
-  var deltaY: js.UndefOr[Double] = js.undefined
-  var hasPreciseScrollingDeltas: js.UndefOr[Boolean] = js.undefined
+  var accelerationRatioX: js.UndefOr[Double] = js.native
+  var accelerationRatioY: js.UndefOr[Double] = js.native
+  var canScroll: js.UndefOr[Boolean] = js.native
+  var deltaX: js.UndefOr[Double] = js.native
+  var deltaY: js.UndefOr[Double] = js.native
+  var hasPreciseScrollingDeltas: js.UndefOr[Boolean] = js.native
   /**
     * The type of the event, can be `mouseWheel`.
     */
   @JSName("type")
-  var type_MouseWheelInputEvent: mouseWheel
-  var wheelTicksX: js.UndefOr[Double] = js.undefined
-  var wheelTicksY: js.UndefOr[Double] = js.undefined
+  var type_MouseWheelInputEvent: mouseWheel = js.native
+  var wheelTicksX: js.UndefOr[Double] = js.native
+  var wheelTicksY: js.UndefOr[Double] = js.native
 }
 
 object MouseWheelInputEvent {
   @scala.inline
-  def apply(
-    `type`: mouseWheel,
-    x: Double,
-    y: Double,
-    accelerationRatioX: js.UndefOr[Double] = js.undefined,
-    accelerationRatioY: js.UndefOr[Double] = js.undefined,
-    button: left | middle | right = null,
-    canScroll: js.UndefOr[Boolean] = js.undefined,
-    clickCount: js.UndefOr[Double] = js.undefined,
-    deltaX: js.UndefOr[Double] = js.undefined,
-    deltaY: js.UndefOr[Double] = js.undefined,
-    globalX: js.UndefOr[Double] = js.undefined,
-    globalY: js.UndefOr[Double] = js.undefined,
-    hasPreciseScrollingDeltas: js.UndefOr[Boolean] = js.undefined,
-    modifiers: js.Array[
-      shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
-    ] = null,
-    movementX: js.UndefOr[Double] = js.undefined,
-    movementY: js.UndefOr[Double] = js.undefined,
-    wheelTicksX: js.UndefOr[Double] = js.undefined,
-    wheelTicksY: js.UndefOr[Double] = js.undefined
-  ): MouseWheelInputEvent = {
+  def apply(`type`: mouseWheel, x: Double, y: Double): MouseWheelInputEvent = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(accelerationRatioX)) __obj.updateDynamic("accelerationRatioX")(accelerationRatioX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(accelerationRatioY)) __obj.updateDynamic("accelerationRatioY")(accelerationRatioY.get.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (!js.isUndefined(canScroll)) __obj.updateDynamic("canScroll")(canScroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickCount)) __obj.updateDynamic("clickCount")(clickCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deltaX)) __obj.updateDynamic("deltaX")(deltaX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deltaY)) __obj.updateDynamic("deltaY")(deltaY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalX)) __obj.updateDynamic("globalX")(globalX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalY)) __obj.updateDynamic("globalY")(globalY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasPreciseScrollingDeltas)) __obj.updateDynamic("hasPreciseScrollingDeltas")(hasPreciseScrollingDeltas.get.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(movementX)) __obj.updateDynamic("movementX")(movementX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(movementY)) __obj.updateDynamic("movementY")(movementY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wheelTicksX)) __obj.updateDynamic("wheelTicksX")(wheelTicksX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wheelTicksY)) __obj.updateDynamic("wheelTicksY")(wheelTicksY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseWheelInputEvent]
   }
+  @scala.inline
+  implicit class MouseWheelInputEventOps[Self <: MouseWheelInputEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: mouseWheel): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccelerationRatioX(value: Double): Self = this.set("accelerationRatioX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerationRatioX: Self = this.set("accelerationRatioX", js.undefined)
+    @scala.inline
+    def setAccelerationRatioY(value: Double): Self = this.set("accelerationRatioY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerationRatioY: Self = this.set("accelerationRatioY", js.undefined)
+    @scala.inline
+    def setCanScroll(value: Boolean): Self = this.set("canScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanScroll: Self = this.set("canScroll", js.undefined)
+    @scala.inline
+    def setDeltaX(value: Double): Self = this.set("deltaX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeltaX: Self = this.set("deltaX", js.undefined)
+    @scala.inline
+    def setDeltaY(value: Double): Self = this.set("deltaY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeltaY: Self = this.set("deltaY", js.undefined)
+    @scala.inline
+    def setHasPreciseScrollingDeltas(value: Boolean): Self = this.set("hasPreciseScrollingDeltas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasPreciseScrollingDeltas: Self = this.set("hasPreciseScrollingDeltas", js.undefined)
+    @scala.inline
+    def setWheelTicksX(value: Double): Self = this.set("wheelTicksX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWheelTicksX: Self = this.set("wheelTicksX", js.undefined)
+    @scala.inline
+    def setWheelTicksY(value: Double): Self = this.set("wheelTicksY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWheelTicksY: Self = this.set("wheelTicksY", js.undefined)
+  }
+  
 }
 

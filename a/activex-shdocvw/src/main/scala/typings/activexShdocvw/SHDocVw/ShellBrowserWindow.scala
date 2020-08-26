@@ -74,6 +74,7 @@ trait ShellBrowserWindow extends js.Object {
   def ClientToWindow(pcx: Double, pcy: Double): Unit = js.native
   /** IOleCommandTarget::Exec */
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT): Unit = js.native
+  def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.UndefOr[scala.Nothing], pvaOut: js.Any): Unit = js.native
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.Any): Unit = js.native
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.Any, pvaOut: js.Any): Unit = js.native
   /** Retrieve the Associated value for the property vtValue in the context of the object. */
@@ -88,8 +89,92 @@ trait ShellBrowserWindow extends js.Object {
   def GoSearch(): Unit = js.native
   /** Navigates to a URL or file. */
   def Navigate(URL: String): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.Any
+  ): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.Any,
+    Headers: String
+  ): Unit = js.native
+  def Navigate(URL: String, Flags: js.UndefOr[scala.Nothing], TargetFrameName: String): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: String,
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
+  def Navigate(URL: String, Flags: js.UndefOr[scala.Nothing], TargetFrameName: String, PostData: js.Any): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: String,
+    PostData: js.Any,
+    Headers: String
+  ): Unit = js.native
+  def Navigate(URL: String, Flags: js.UndefOr[scala.Nothing], TargetFrameName: TargetFrameValues): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: TargetFrameValues,
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: TargetFrameValues,
+    PostData: js.Any
+  ): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: TargetFrameValues,
+    PostData: js.Any,
+    Headers: String
+  ): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: BrowserNavConstants,
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: BrowserNavConstants,
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.Any
+  ): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: BrowserNavConstants,
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.Any,
+    Headers: String
+  ): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: BrowserNavConstants,
+    TargetFrameName: String,
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: String, PostData: js.Any): Unit = js.native
   def Navigate(
     URL: String,
@@ -99,6 +184,13 @@ trait ShellBrowserWindow extends js.Object {
     Headers: String
   ): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): Unit = js.native
+  def Navigate(
+    URL: String,
+    Flags: BrowserNavConstants,
+    TargetFrameName: TargetFrameValues,
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
   def Navigate(URL: String, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
   def Navigate(
     URL: String,
@@ -109,8 +201,92 @@ trait ShellBrowserWindow extends js.Object {
   ): Unit = js.native
   /** Navigates to a URL or file or pidl. */
   def Navigate2(URL: js.Any): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.Any
+  ): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.Any,
+    Headers: String
+  ): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: js.UndefOr[scala.Nothing], TargetFrameName: String): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: String,
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: js.UndefOr[scala.Nothing], TargetFrameName: String, PostData: js.Any): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: String,
+    PostData: js.Any,
+    Headers: String
+  ): Unit = js.native
+  def Navigate2(URL: js.Any, Flags: js.UndefOr[scala.Nothing], TargetFrameName: TargetFrameValues): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: TargetFrameValues,
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: TargetFrameValues,
+    PostData: js.Any
+  ): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: js.UndefOr[scala.Nothing],
+    TargetFrameName: TargetFrameValues,
+    PostData: js.Any,
+    Headers: String
+  ): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: BrowserNavConstants,
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: BrowserNavConstants,
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.Any
+  ): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: BrowserNavConstants,
+    TargetFrameName: js.UndefOr[scala.Nothing],
+    PostData: js.Any,
+    Headers: String
+  ): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: String): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: BrowserNavConstants,
+    TargetFrameName: String,
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: String, PostData: js.Any): Unit = js.native
   def Navigate2(
     URL: js.Any,
@@ -120,6 +296,13 @@ trait ShellBrowserWindow extends js.Object {
     Headers: String
   ): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): Unit = js.native
+  def Navigate2(
+    URL: js.Any,
+    Flags: BrowserNavConstants,
+    TargetFrameName: TargetFrameValues,
+    PostData: js.UndefOr[scala.Nothing],
+    Headers: String
+  ): Unit = js.native
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues, PostData: js.Any): Unit = js.native
   def Navigate2(
     URL: js.Any,

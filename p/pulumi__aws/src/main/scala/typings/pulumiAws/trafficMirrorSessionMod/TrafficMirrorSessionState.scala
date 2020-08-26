@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TrafficMirrorSessionState extends js.Object {
   /**
+    * The ARN of the traffic mirror session.
+    */
+  val arn: js.UndefOr[Input[String]] = js.native
+  /**
     * A description of the traffic mirror session.
     */
   val description: js.UndefOr[Input[String]] = js.native
@@ -25,9 +29,9 @@ trait TrafficMirrorSessionState extends js.Object {
     */
   val sessionNumber: js.UndefOr[Input[Double]] = js.native
   /**
-    * Key-value mapping of resource tags.
+    * Key-value map of resource tags.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * ID of the traffic mirror filter to be used
     */
@@ -44,26 +48,58 @@ trait TrafficMirrorSessionState extends js.Object {
 
 object TrafficMirrorSessionState {
   @scala.inline
-  def apply(
-    description: Input[String] = null,
-    networkInterfaceId: Input[String] = null,
-    packetLength: Input[Double] = null,
-    sessionNumber: Input[Double] = null,
-    tags: Input[StringDictionary[_]] = null,
-    trafficMirrorFilterId: Input[String] = null,
-    trafficMirrorTargetId: Input[String] = null,
-    virtualNetworkId: Input[Double] = null
-  ): TrafficMirrorSessionState = {
+  def apply(): TrafficMirrorSessionState = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    if (packetLength != null) __obj.updateDynamic("packetLength")(packetLength.asInstanceOf[js.Any])
-    if (sessionNumber != null) __obj.updateDynamic("sessionNumber")(sessionNumber.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (trafficMirrorFilterId != null) __obj.updateDynamic("trafficMirrorFilterId")(trafficMirrorFilterId.asInstanceOf[js.Any])
-    if (trafficMirrorTargetId != null) __obj.updateDynamic("trafficMirrorTargetId")(trafficMirrorTargetId.asInstanceOf[js.Any])
-    if (virtualNetworkId != null) __obj.updateDynamic("virtualNetworkId")(virtualNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficMirrorSessionState]
   }
+  @scala.inline
+  implicit class TrafficMirrorSessionStateOps[Self <: TrafficMirrorSessionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: Input[String]): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    @scala.inline
+    def setPacketLength(value: Input[Double]): Self = this.set("packetLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePacketLength: Self = this.set("packetLength", js.undefined)
+    @scala.inline
+    def setSessionNumber(value: Input[Double]): Self = this.set("sessionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionNumber: Self = this.set("sessionNumber", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTrafficMirrorFilterId(value: Input[String]): Self = this.set("trafficMirrorFilterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficMirrorFilterId: Self = this.set("trafficMirrorFilterId", js.undefined)
+    @scala.inline
+    def setTrafficMirrorTargetId(value: Input[String]): Self = this.set("trafficMirrorTargetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficMirrorTargetId: Self = this.set("trafficMirrorTargetId", js.undefined)
+    @scala.inline
+    def setVirtualNetworkId(value: Input[Double]): Self = this.set("virtualNetworkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualNetworkId: Self = this.set("virtualNetworkId", js.undefined)
+  }
+  
 }
 

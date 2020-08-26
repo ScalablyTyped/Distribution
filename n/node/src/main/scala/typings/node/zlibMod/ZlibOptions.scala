@@ -6,51 +6,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZlibOptions extends js.Object {
   /**
     * @default 16*1024
     */
-  var chunkSize: js.UndefOr[Double] = js.undefined
+  var chunkSize: js.UndefOr[Double] = js.native
    // compression only
-  var dictionary: js.UndefOr[ArrayBufferView | ArrayBuffer] = js.undefined
+  var dictionary: js.UndefOr[ArrayBufferView | ArrayBuffer] = js.native
   /**
     * @default constants.Z_FINISH
     */
-  var finishFlush: js.UndefOr[Double] = js.undefined
+  var finishFlush: js.UndefOr[Double] = js.native
   /**
     * @default constants.Z_NO_FLUSH
     */
-  var flush: js.UndefOr[Double] = js.undefined
-  var level: js.UndefOr[Double] = js.undefined
+  var flush: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.native
    // compression only
-  var memLevel: js.UndefOr[Double] = js.undefined
+  var memLevel: js.UndefOr[Double] = js.native
    // compression only
-  var strategy: js.UndefOr[Double] = js.undefined
-  var windowBits: js.UndefOr[Double] = js.undefined
+  var strategy: js.UndefOr[Double] = js.native
+  var windowBits: js.UndefOr[Double] = js.native
 }
 
 object ZlibOptions {
   @scala.inline
-  def apply(
-    chunkSize: js.UndefOr[Double] = js.undefined,
-    dictionary: ArrayBufferView | ArrayBuffer = null,
-    finishFlush: js.UndefOr[Double] = js.undefined,
-    flush: js.UndefOr[Double] = js.undefined,
-    level: js.UndefOr[Double] = js.undefined,
-    memLevel: js.UndefOr[Double] = js.undefined,
-    strategy: js.UndefOr[Double] = js.undefined,
-    windowBits: js.UndefOr[Double] = js.undefined
-  ): ZlibOptions = {
+  def apply(): ZlibOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
-    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary.asInstanceOf[js.Any])
-    if (!js.isUndefined(finishFlush)) __obj.updateDynamic("finishFlush")(finishFlush.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flush)) __obj.updateDynamic("flush")(flush.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(memLevel)) __obj.updateDynamic("memLevel")(memLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strategy)) __obj.updateDynamic("strategy")(strategy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowBits)) __obj.updateDynamic("windowBits")(windowBits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZlibOptions]
   }
+  @scala.inline
+  implicit class ZlibOptionsOps[Self <: ZlibOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    @scala.inline
+    def setDictionary(value: ArrayBufferView | ArrayBuffer): Self = this.set("dictionary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDictionary: Self = this.set("dictionary", js.undefined)
+    @scala.inline
+    def setFinishFlush(value: Double): Self = this.set("finishFlush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinishFlush: Self = this.set("finishFlush", js.undefined)
+    @scala.inline
+    def setFlush(value: Double): Self = this.set("flush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlush: Self = this.set("flush", js.undefined)
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setMemLevel(value: Double): Self = this.set("memLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemLevel: Self = this.set("memLevel", js.undefined)
+    @scala.inline
+    def setStrategy(value: Double): Self = this.set("strategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrategy: Self = this.set("strategy", js.undefined)
+    @scala.inline
+    def setWindowBits(value: Double): Self = this.set("windowBits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowBits: Self = this.set("windowBits", js.undefined)
+  }
+  
 }
 

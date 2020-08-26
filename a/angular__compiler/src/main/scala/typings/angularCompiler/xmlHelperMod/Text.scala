@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class Text protected () extends Node {
   def this(unescapedValue: String) = this()
   var value: String = js.native
-  /* CompleteClass */
-  override def visit(visitor: IVisitor): js.Any = js.native
 }
 

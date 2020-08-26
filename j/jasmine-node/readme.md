@@ -12,7 +12,7 @@ DOM-less simple JavaScript BDD testing framework for Node
 | Keywords           | testing, bdd |
 | # releases         | 8 |
 | # dependents       | 182 |
-| # downloads        | 1932722 |
+| # downloads        | 1945380 |
 | # stars            | 30 |
 
 ## Links

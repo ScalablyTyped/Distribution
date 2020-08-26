@@ -14,10 +14,26 @@ trait GetMeetingResponse extends js.Object {
 
 object GetMeetingResponse {
   @scala.inline
-  def apply(Meeting: Meeting = null): GetMeetingResponse = {
+  def apply(): GetMeetingResponse = {
     val __obj = js.Dynamic.literal()
-    if (Meeting != null) __obj.updateDynamic("Meeting")(Meeting.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMeetingResponse]
   }
+  @scala.inline
+  implicit class GetMeetingResponseOps[Self <: GetMeetingResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMeeting(value: Meeting): Self = this.set("Meeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeeting: Self = this.set("Meeting", js.undefined)
+  }
+  
 }
 

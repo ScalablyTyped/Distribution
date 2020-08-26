@@ -18,11 +18,32 @@ trait ListRuleNamesByTargetResponse extends js.Object {
 
 object ListRuleNamesByTargetResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, RuleNames: RuleNameList = null): ListRuleNamesByTargetResponse = {
+  def apply(): ListRuleNamesByTargetResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (RuleNames != null) __obj.updateDynamic("RuleNames")(RuleNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRuleNamesByTargetResponse]
   }
+  @scala.inline
+  implicit class ListRuleNamesByTargetResponseOps[Self <: ListRuleNamesByTargetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRuleNamesVarargs(value: RuleName*): Self = this.set("RuleNames", js.Array(value :_*))
+    @scala.inline
+    def setRuleNames(value: RuleNameList): Self = this.set("RuleNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleNames: Self = this.set("RuleNames", js.undefined)
+  }
+  
 }
 

@@ -16,10 +16,5 @@ class ASPxClientUploadControlFilesUploadStartEventArgs protected ()
     * @param cancel true, if the action that raised the event should be canceled; otherwise, false.
     */
   def this(cancel: Boolean) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
 }
 

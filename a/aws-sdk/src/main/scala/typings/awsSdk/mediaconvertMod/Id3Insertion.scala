@@ -18,11 +18,30 @@ trait Id3Insertion extends js.Object {
 
 object Id3Insertion {
   @scala.inline
-  def apply(Id3: stringPatternAZaZ0902 = null, Timecode: stringPattern010920405090509092 = null): Id3Insertion = {
+  def apply(): Id3Insertion = {
     val __obj = js.Dynamic.literal()
-    if (Id3 != null) __obj.updateDynamic("Id3")(Id3.asInstanceOf[js.Any])
-    if (Timecode != null) __obj.updateDynamic("Timecode")(Timecode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id3Insertion]
   }
+  @scala.inline
+  implicit class Id3InsertionOps[Self <: Id3Insertion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId3(value: stringPatternAZaZ0902): Self = this.set("Id3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId3: Self = this.set("Id3", js.undefined)
+    @scala.inline
+    def setTimecode(value: stringPattern010920405090509092): Self = this.set("Timecode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimecode: Self = this.set("Timecode", js.undefined)
+  }
+  
 }
 

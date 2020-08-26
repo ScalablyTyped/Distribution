@@ -11,8 +11,8 @@ Object properties matcher for Chai
 | Full name          | chai-subset |
 | Keywords           | chai, chai-plugin, objects, subset, contains, plugin, containSubset, deep, like, match, similar, includes, superset |
 | # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 3615468 |
+| # dependents       | 44 |
+| # downloads        | 3704355 |
 | # stars            | 4 |
 
 ## Links

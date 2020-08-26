@@ -12,7 +12,7 @@ Handle WebSocket connections using express routes.
 | Keywords           | express, ws, websocket |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 2900 |
+| # downloads        | 2907 |
 | # stars            | 2 |
 
 ## Links

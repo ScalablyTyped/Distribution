@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/InsertRowRightOutlined", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/InsertRowRightOutlined", JSImport.Namespace)
 @js.native
 object insertRowRightOutlinedMod extends js.Object {
   val default: IconDefinition = js.native

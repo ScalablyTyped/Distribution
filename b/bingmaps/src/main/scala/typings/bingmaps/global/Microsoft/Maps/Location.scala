@@ -14,12 +14,6 @@ class Location protected ()
     * @param longitude The location east or west of the prime meridian +180 to -180
     */
   def this(latitude: js.Any, longitude: js.Any) = this()
-  /** The location north or south of the equator from +90 to -90 */
-  /* CompleteClass */
-  override var latitude: Double = js.native
-  /** The location east or west of the prime meridian +180 to -180 */
-  /* CompleteClass */
-  override var longitude: Double = js.native
 }
 
 /* static members */

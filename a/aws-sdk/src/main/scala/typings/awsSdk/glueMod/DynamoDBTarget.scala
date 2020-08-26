@@ -22,16 +22,34 @@ trait DynamoDBTarget extends js.Object {
 
 object DynamoDBTarget {
   @scala.inline
-  def apply(
-    Path: Path = null,
-    scanAll: js.UndefOr[NullableBoolean] = js.undefined,
-    scanRate: js.UndefOr[NullableDouble] = js.undefined
-  ): DynamoDBTarget = {
+  def apply(): DynamoDBTarget = {
     val __obj = js.Dynamic.literal()
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
-    if (!js.isUndefined(scanAll)) __obj.updateDynamic("scanAll")(scanAll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scanRate)) __obj.updateDynamic("scanRate")(scanRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamoDBTarget]
   }
+  @scala.inline
+  implicit class DynamoDBTargetOps[Self <: DynamoDBTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: Path): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+    @scala.inline
+    def setScanAll(value: NullableBoolean): Self = this.set("scanAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanAll: Self = this.set("scanAll", js.undefined)
+    @scala.inline
+    def setScanRate(value: NullableDouble): Self = this.set("scanRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanRate: Self = this.set("scanRate", js.undefined)
+  }
+  
 }
 

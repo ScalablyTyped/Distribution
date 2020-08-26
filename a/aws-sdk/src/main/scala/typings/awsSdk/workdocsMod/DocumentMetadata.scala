@@ -42,26 +42,56 @@ trait DocumentMetadata extends js.Object {
 
 object DocumentMetadata {
   @scala.inline
-  def apply(
-    CreatedTimestamp: TimestampType = null,
-    CreatorId: IdType = null,
-    Id: ResourceIdType = null,
-    Labels: SharedLabels = null,
-    LatestVersionMetadata: DocumentVersionMetadata = null,
-    ModifiedTimestamp: TimestampType = null,
-    ParentFolderId: ResourceIdType = null,
-    ResourceState: ResourceStateType = null
-  ): DocumentMetadata = {
+  def apply(): DocumentMetadata = {
     val __obj = js.Dynamic.literal()
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (CreatorId != null) __obj.updateDynamic("CreatorId")(CreatorId.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (LatestVersionMetadata != null) __obj.updateDynamic("LatestVersionMetadata")(LatestVersionMetadata.asInstanceOf[js.Any])
-    if (ModifiedTimestamp != null) __obj.updateDynamic("ModifiedTimestamp")(ModifiedTimestamp.asInstanceOf[js.Any])
-    if (ParentFolderId != null) __obj.updateDynamic("ParentFolderId")(ParentFolderId.asInstanceOf[js.Any])
-    if (ResourceState != null) __obj.updateDynamic("ResourceState")(ResourceState.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentMetadata]
   }
+  @scala.inline
+  implicit class DocumentMetadataOps[Self <: DocumentMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedTimestamp(value: TimestampType): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setCreatorId(value: IdType): Self = this.set("CreatorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorId: Self = this.set("CreatorId", js.undefined)
+    @scala.inline
+    def setId(value: ResourceIdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: SharedLabel*): Self = this.set("Labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: SharedLabels): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+    @scala.inline
+    def setLatestVersionMetadata(value: DocumentVersionMetadata): Self = this.set("LatestVersionMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestVersionMetadata: Self = this.set("LatestVersionMetadata", js.undefined)
+    @scala.inline
+    def setModifiedTimestamp(value: TimestampType): Self = this.set("ModifiedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedTimestamp: Self = this.set("ModifiedTimestamp", js.undefined)
+    @scala.inline
+    def setParentFolderId(value: ResourceIdType): Self = this.set("ParentFolderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentFolderId: Self = this.set("ParentFolderId", js.undefined)
+    @scala.inline
+    def setResourceState(value: ResourceStateType): Self = this.set("ResourceState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceState: Self = this.set("ResourceState", js.undefined)
+  }
+  
 }
 

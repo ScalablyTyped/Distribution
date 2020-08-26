@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait storage extends js.Object {
-  var cookie: typings.webix.webix.cookie
-  var local: typings.webix.webix.local
-  var session: typings.webix.webix.session
+  var cookie: typings.webix.webix.cookie = js.native
+  var local: typings.webix.webix.local = js.native
+  var session: typings.webix.webix.session = js.native
 }
 
 @JSImport("webix", "storage")

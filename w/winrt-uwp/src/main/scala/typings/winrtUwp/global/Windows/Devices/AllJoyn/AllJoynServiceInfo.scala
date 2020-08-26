@@ -16,14 +16,5 @@ class AllJoynServiceInfo protected ()
     * @param sessionPort The port for this session.
     */
   def this(uniqueName: String, objectPath: String, sessionPort: Double) = this()
-  /** The path to the service object. This path is used to match communications with service objects connected to the session. */
-  /* CompleteClass */
-  override var objectPath: String = js.native
-  /** The port used to connect to the session. */
-  /* CompleteClass */
-  override var sessionPort: Double = js.native
-  /** The unique bus name associated with the advertising app. */
-  /* CompleteClass */
-  override var uniqueName: String = js.native
 }
 

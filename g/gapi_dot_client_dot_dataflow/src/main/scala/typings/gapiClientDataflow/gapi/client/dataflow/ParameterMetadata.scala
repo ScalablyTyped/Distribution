@@ -4,35 +4,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParameterMetadata extends js.Object {
   /** Required. The help text to display for the parameter. */
-  var helpText: js.UndefOr[String] = js.undefined
+  var helpText: js.UndefOr[String] = js.native
   /** Optional. Whether the parameter is optional. Defaults to false. */
-  var isOptional: js.UndefOr[Boolean] = js.undefined
+  var isOptional: js.UndefOr[Boolean] = js.native
   /** Required. The label to display for the parameter. */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
   /** Required. The name of the parameter. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** Optional. Regexes that the parameter must match. */
-  var regexes: js.UndefOr[js.Array[String]] = js.undefined
+  var regexes: js.UndefOr[js.Array[String]] = js.native
 }
 
 object ParameterMetadata {
   @scala.inline
-  def apply(
-    helpText: String = null,
-    isOptional: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    name: String = null,
-    regexes: js.Array[String] = null
-  ): ParameterMetadata = {
+  def apply(): ParameterMetadata = {
     val __obj = js.Dynamic.literal()
-    if (helpText != null) __obj.updateDynamic("helpText")(helpText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (regexes != null) __obj.updateDynamic("regexes")(regexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterMetadata]
   }
+  @scala.inline
+  implicit class ParameterMetadataOps[Self <: ParameterMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHelpText(value: String): Self = this.set("helpText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelpText: Self = this.set("helpText", js.undefined)
+    @scala.inline
+    def setIsOptional(value: Boolean): Self = this.set("isOptional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOptional: Self = this.set("isOptional", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRegexesVarargs(value: String*): Self = this.set("regexes", js.Array(value :_*))
+    @scala.inline
+    def setRegexes(value: js.Array[String]): Self = this.set("regexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexes: Self = this.set("regexes", js.undefined)
+  }
+  
 }
 

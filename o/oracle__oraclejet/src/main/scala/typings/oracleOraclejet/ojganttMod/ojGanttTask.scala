@@ -1215,6 +1215,8 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   @JSName("setProperty")
   def setProperty_progress(property: progress, value: Value): Unit = js.native
   @JSName("setProperty")
+  def setProperty_rowId(property: rowId): Unit = js.native
+  @JSName("setProperty")
   def setProperty_rowId(property: rowId, value: js.Any): Unit = js.native
   @JSName("setProperty")
   def setProperty_shortDesc(property: shortDesc): Unit = js.native

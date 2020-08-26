@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 class InfragisticsMode protected ()
   extends typings.igniteUi.Infragistics.InfragisticsMode {
   def this(settings: InfragisticsModeSettings) = this()
-  /* CompleteClass */
-  override def isActive(): Unit = js.native
 }
 

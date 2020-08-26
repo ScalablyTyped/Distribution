@@ -22,10 +22,32 @@ trait DetectPHIResponse extends js.Object {
 
 object DetectPHIResponse {
   @scala.inline
-  def apply(Entities: EntityList, ModelVersion: String, PaginationToken: String = null): DetectPHIResponse = {
+  def apply(Entities: EntityList, ModelVersion: String): DetectPHIResponse = {
     val __obj = js.Dynamic.literal(Entities = Entities.asInstanceOf[js.Any], ModelVersion = ModelVersion.asInstanceOf[js.Any])
-    if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectPHIResponse]
   }
+  @scala.inline
+  implicit class DetectPHIResponseOps[Self <: DetectPHIResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntitiesVarargs(value: Entity*): Self = this.set("Entities", js.Array(value :_*))
+    @scala.inline
+    def setEntities(value: EntityList): Self = this.set("Entities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setModelVersion(value: String): Self = this.set("ModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaginationToken(value: String): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+  }
+  
 }
 

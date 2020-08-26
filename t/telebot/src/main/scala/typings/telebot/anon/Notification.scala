@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Notification extends js.Object {
-  var notification: js.UndefOr[Boolean] = js.undefined
-  var parseMode: js.UndefOr[String] = js.undefined
-  var replyMarkup: js.UndefOr[js.Any] = js.undefined
-  var replyToMessage: js.UndefOr[Double] = js.undefined
-  var webPreview: js.UndefOr[Boolean] = js.undefined
+  var notification: js.UndefOr[Boolean] = js.native
+  var parseMode: js.UndefOr[String] = js.native
+  var replyMarkup: js.UndefOr[js.Any] = js.native
+  var replyToMessage: js.UndefOr[Double] = js.native
+  var webPreview: js.UndefOr[Boolean] = js.native
 }
 
 object Notification {
   @scala.inline
-  def apply(
-    notification: js.UndefOr[Boolean] = js.undefined,
-    parseMode: String = null,
-    replyMarkup: js.Any = null,
-    replyToMessage: js.UndefOr[Double] = js.undefined,
-    webPreview: js.UndefOr[Boolean] = js.undefined
-  ): Notification = {
+  def apply(): Notification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification.get.asInstanceOf[js.Any])
-    if (parseMode != null) __obj.updateDynamic("parseMode")(parseMode.asInstanceOf[js.Any])
-    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup.asInstanceOf[js.Any])
-    if (!js.isUndefined(replyToMessage)) __obj.updateDynamic("replyToMessage")(replyToMessage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(webPreview)) __obj.updateDynamic("webPreview")(webPreview.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }
+  @scala.inline
+  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotification(value: Boolean): Self = this.set("notification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotification: Self = this.set("notification", js.undefined)
+    @scala.inline
+    def setParseMode(value: String): Self = this.set("parseMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParseMode: Self = this.set("parseMode", js.undefined)
+    @scala.inline
+    def setReplyMarkup(value: js.Any): Self = this.set("replyMarkup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyMarkup: Self = this.set("replyMarkup", js.undefined)
+    @scala.inline
+    def setReplyToMessage(value: Double): Self = this.set("replyToMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyToMessage: Self = this.set("replyToMessage", js.undefined)
+    @scala.inline
+    def setWebPreview(value: Boolean): Self = this.set("webPreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebPreview: Self = this.set("webPreview", js.undefined)
+  }
+  
 }
 

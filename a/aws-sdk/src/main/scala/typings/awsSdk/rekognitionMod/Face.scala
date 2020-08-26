@@ -30,20 +30,42 @@ trait Face extends js.Object {
 
 object Face {
   @scala.inline
-  def apply(
-    BoundingBox: BoundingBox = null,
-    Confidence: js.UndefOr[Percent] = js.undefined,
-    ExternalImageId: ExternalImageId = null,
-    FaceId: FaceId = null,
-    ImageId: ImageId = null
-  ): Face = {
+  def apply(): Face = {
     val __obj = js.Dynamic.literal()
-    if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
-    if (ExternalImageId != null) __obj.updateDynamic("ExternalImageId")(ExternalImageId.asInstanceOf[js.Any])
-    if (FaceId != null) __obj.updateDynamic("FaceId")(FaceId.asInstanceOf[js.Any])
-    if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Face]
   }
+  @scala.inline
+  implicit class FaceOps[Self <: Face] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingBox(value: BoundingBox): Self = this.set("BoundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingBox: Self = this.set("BoundingBox", js.undefined)
+    @scala.inline
+    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setExternalImageId(value: ExternalImageId): Self = this.set("ExternalImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalImageId: Self = this.set("ExternalImageId", js.undefined)
+    @scala.inline
+    def setFaceId(value: FaceId): Self = this.set("FaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceId: Self = this.set("FaceId", js.undefined)
+    @scala.inline
+    def setImageId(value: ImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("ImageId", js.undefined)
+  }
+  
 }
 

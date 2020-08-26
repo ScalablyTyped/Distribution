@@ -20,7 +20,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LookForAtAreaResult[T, K /* <: exit | structure | source | nuke | deposit | powerCreep | terrain | tombstone | resource | flag | mineral | ruin | constructionSite | creep | energy */] extends js.Object {
+trait LookForAtAreaResult[T, K /* <: tombstone | exit | resource | creep | structure | source | deposit | constructionSite | mineral | nuke | flag | energy | ruin | terrain | powerCreep */] extends js.Object {
   var `type`: K = js.native
 }
 

@@ -90,40 +90,82 @@ trait SchemaHttpRequest extends js.Object {
 
 object SchemaHttpRequest {
   @scala.inline
-  def apply(
-    cacheFillBytes: String = null,
-    cacheHit: js.UndefOr[Boolean] = js.undefined,
-    cacheLookup: js.UndefOr[Boolean] = js.undefined,
-    cacheValidatedWithOriginServer: js.UndefOr[Boolean] = js.undefined,
-    latency: String = null,
-    protocol: String = null,
-    referer: String = null,
-    remoteIp: String = null,
-    requestMethod: String = null,
-    requestSize: String = null,
-    requestUrl: String = null,
-    responseSize: String = null,
-    serverIp: String = null,
-    status: js.UndefOr[Double] = js.undefined,
-    userAgent: String = null
-  ): SchemaHttpRequest = {
+  def apply(): SchemaHttpRequest = {
     val __obj = js.Dynamic.literal()
-    if (cacheFillBytes != null) __obj.updateDynamic("cacheFillBytes")(cacheFillBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheLookup)) __obj.updateDynamic("cacheLookup")(cacheLookup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheValidatedWithOriginServer)) __obj.updateDynamic("cacheValidatedWithOriginServer")(cacheValidatedWithOriginServer.get.asInstanceOf[js.Any])
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (referer != null) __obj.updateDynamic("referer")(referer.asInstanceOf[js.Any])
-    if (remoteIp != null) __obj.updateDynamic("remoteIp")(remoteIp.asInstanceOf[js.Any])
-    if (requestMethod != null) __obj.updateDynamic("requestMethod")(requestMethod.asInstanceOf[js.Any])
-    if (requestSize != null) __obj.updateDynamic("requestSize")(requestSize.asInstanceOf[js.Any])
-    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl.asInstanceOf[js.Any])
-    if (responseSize != null) __obj.updateDynamic("responseSize")(responseSize.asInstanceOf[js.Any])
-    if (serverIp != null) __obj.updateDynamic("serverIp")(serverIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRequest]
   }
+  @scala.inline
+  implicit class SchemaHttpRequestOps[Self <: SchemaHttpRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheFillBytes(value: String): Self = this.set("cacheFillBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheFillBytes: Self = this.set("cacheFillBytes", js.undefined)
+    @scala.inline
+    def setCacheHit(value: Boolean): Self = this.set("cacheHit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheHit: Self = this.set("cacheHit", js.undefined)
+    @scala.inline
+    def setCacheLookup(value: Boolean): Self = this.set("cacheLookup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheLookup: Self = this.set("cacheLookup", js.undefined)
+    @scala.inline
+    def setCacheValidatedWithOriginServer(value: Boolean): Self = this.set("cacheValidatedWithOriginServer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheValidatedWithOriginServer: Self = this.set("cacheValidatedWithOriginServer", js.undefined)
+    @scala.inline
+    def setLatency(value: String): Self = this.set("latency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatency: Self = this.set("latency", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setReferer(value: String): Self = this.set("referer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferer: Self = this.set("referer", js.undefined)
+    @scala.inline
+    def setRemoteIp(value: String): Self = this.set("remoteIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteIp: Self = this.set("remoteIp", js.undefined)
+    @scala.inline
+    def setRequestMethod(value: String): Self = this.set("requestMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestMethod: Self = this.set("requestMethod", js.undefined)
+    @scala.inline
+    def setRequestSize(value: String): Self = this.set("requestSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestSize: Self = this.set("requestSize", js.undefined)
+    @scala.inline
+    def setRequestUrl(value: String): Self = this.set("requestUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestUrl: Self = this.set("requestUrl", js.undefined)
+    @scala.inline
+    def setResponseSize(value: String): Self = this.set("responseSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseSize: Self = this.set("responseSize", js.undefined)
+    @scala.inline
+    def setServerIp(value: String): Self = this.set("serverIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerIp: Self = this.set("serverIp", js.undefined)
+    @scala.inline
+    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+  }
+  
 }
 

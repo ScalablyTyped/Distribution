@@ -24,75 +24,128 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ManagementCollection extends js.Object {
-  var AccountSummaries: js.UndefOr[AccountSummariesCollection] = js.undefined
-  var AccountUserLinks: js.UndefOr[AccountUserLinksCollection] = js.undefined
-  var Accounts: js.UndefOr[AccountsCollection] = js.undefined
-  var ClientId: js.UndefOr[ClientIdCollection] = js.undefined
-  var CustomDataSources: js.UndefOr[CustomDataSourcesCollection] = js.undefined
-  var CustomDimensions: js.UndefOr[CustomDimensionsCollection] = js.undefined
-  var CustomMetrics: js.UndefOr[CustomMetricsCollection] = js.undefined
-  var Experiments: js.UndefOr[ExperimentsCollection] = js.undefined
-  var Filters: js.UndefOr[FiltersCollection] = js.undefined
-  var Goals: js.UndefOr[GoalsCollection] = js.undefined
-  var ProfileFilterLinks: js.UndefOr[ProfileFilterLinksCollection] = js.undefined
-  var ProfileUserLinks: js.UndefOr[ProfileUserLinksCollection] = js.undefined
-  var Profiles: js.UndefOr[ProfilesCollection] = js.undefined
-  var RemarketingAudience: js.UndefOr[RemarketingAudienceCollection] = js.undefined
-  var Segments: js.UndefOr[SegmentsCollection] = js.undefined
-  var UnsampledReports: js.UndefOr[UnsampledReportsCollection] = js.undefined
-  var Uploads: js.UndefOr[UploadsCollection] = js.undefined
-  var WebPropertyAdWordsLinks: js.UndefOr[WebPropertyAdWordsLinksCollection] = js.undefined
-  var Webproperties: js.UndefOr[WebpropertiesCollection] = js.undefined
-  var WebpropertyUserLinks: js.UndefOr[WebpropertyUserLinksCollection] = js.undefined
+  var AccountSummaries: js.UndefOr[AccountSummariesCollection] = js.native
+  var AccountUserLinks: js.UndefOr[AccountUserLinksCollection] = js.native
+  var Accounts: js.UndefOr[AccountsCollection] = js.native
+  var ClientId: js.UndefOr[ClientIdCollection] = js.native
+  var CustomDataSources: js.UndefOr[CustomDataSourcesCollection] = js.native
+  var CustomDimensions: js.UndefOr[CustomDimensionsCollection] = js.native
+  var CustomMetrics: js.UndefOr[CustomMetricsCollection] = js.native
+  var Experiments: js.UndefOr[ExperimentsCollection] = js.native
+  var Filters: js.UndefOr[FiltersCollection] = js.native
+  var Goals: js.UndefOr[GoalsCollection] = js.native
+  var ProfileFilterLinks: js.UndefOr[ProfileFilterLinksCollection] = js.native
+  var ProfileUserLinks: js.UndefOr[ProfileUserLinksCollection] = js.native
+  var Profiles: js.UndefOr[ProfilesCollection] = js.native
+  var RemarketingAudience: js.UndefOr[RemarketingAudienceCollection] = js.native
+  var Segments: js.UndefOr[SegmentsCollection] = js.native
+  var UnsampledReports: js.UndefOr[UnsampledReportsCollection] = js.native
+  var Uploads: js.UndefOr[UploadsCollection] = js.native
+  var WebPropertyAdWordsLinks: js.UndefOr[WebPropertyAdWordsLinksCollection] = js.native
+  var Webproperties: js.UndefOr[WebpropertiesCollection] = js.native
+  var WebpropertyUserLinks: js.UndefOr[WebpropertyUserLinksCollection] = js.native
 }
 
 object ManagementCollection {
   @scala.inline
-  def apply(
-    AccountSummaries: AccountSummariesCollection = null,
-    AccountUserLinks: AccountUserLinksCollection = null,
-    Accounts: AccountsCollection = null,
-    ClientId: ClientIdCollection = null,
-    CustomDataSources: CustomDataSourcesCollection = null,
-    CustomDimensions: CustomDimensionsCollection = null,
-    CustomMetrics: CustomMetricsCollection = null,
-    Experiments: ExperimentsCollection = null,
-    Filters: FiltersCollection = null,
-    Goals: GoalsCollection = null,
-    ProfileFilterLinks: ProfileFilterLinksCollection = null,
-    ProfileUserLinks: ProfileUserLinksCollection = null,
-    Profiles: ProfilesCollection = null,
-    RemarketingAudience: RemarketingAudienceCollection = null,
-    Segments: SegmentsCollection = null,
-    UnsampledReports: UnsampledReportsCollection = null,
-    Uploads: UploadsCollection = null,
-    WebPropertyAdWordsLinks: WebPropertyAdWordsLinksCollection = null,
-    Webproperties: WebpropertiesCollection = null,
-    WebpropertyUserLinks: WebpropertyUserLinksCollection = null
-  ): ManagementCollection = {
+  def apply(): ManagementCollection = {
     val __obj = js.Dynamic.literal()
-    if (AccountSummaries != null) __obj.updateDynamic("AccountSummaries")(AccountSummaries.asInstanceOf[js.Any])
-    if (AccountUserLinks != null) __obj.updateDynamic("AccountUserLinks")(AccountUserLinks.asInstanceOf[js.Any])
-    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts.asInstanceOf[js.Any])
-    if (ClientId != null) __obj.updateDynamic("ClientId")(ClientId.asInstanceOf[js.Any])
-    if (CustomDataSources != null) __obj.updateDynamic("CustomDataSources")(CustomDataSources.asInstanceOf[js.Any])
-    if (CustomDimensions != null) __obj.updateDynamic("CustomDimensions")(CustomDimensions.asInstanceOf[js.Any])
-    if (CustomMetrics != null) __obj.updateDynamic("CustomMetrics")(CustomMetrics.asInstanceOf[js.Any])
-    if (Experiments != null) __obj.updateDynamic("Experiments")(Experiments.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (Goals != null) __obj.updateDynamic("Goals")(Goals.asInstanceOf[js.Any])
-    if (ProfileFilterLinks != null) __obj.updateDynamic("ProfileFilterLinks")(ProfileFilterLinks.asInstanceOf[js.Any])
-    if (ProfileUserLinks != null) __obj.updateDynamic("ProfileUserLinks")(ProfileUserLinks.asInstanceOf[js.Any])
-    if (Profiles != null) __obj.updateDynamic("Profiles")(Profiles.asInstanceOf[js.Any])
-    if (RemarketingAudience != null) __obj.updateDynamic("RemarketingAudience")(RemarketingAudience.asInstanceOf[js.Any])
-    if (Segments != null) __obj.updateDynamic("Segments")(Segments.asInstanceOf[js.Any])
-    if (UnsampledReports != null) __obj.updateDynamic("UnsampledReports")(UnsampledReports.asInstanceOf[js.Any])
-    if (Uploads != null) __obj.updateDynamic("Uploads")(Uploads.asInstanceOf[js.Any])
-    if (WebPropertyAdWordsLinks != null) __obj.updateDynamic("WebPropertyAdWordsLinks")(WebPropertyAdWordsLinks.asInstanceOf[js.Any])
-    if (Webproperties != null) __obj.updateDynamic("Webproperties")(Webproperties.asInstanceOf[js.Any])
-    if (WebpropertyUserLinks != null) __obj.updateDynamic("WebpropertyUserLinks")(WebpropertyUserLinks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagementCollection]
   }
+  @scala.inline
+  implicit class ManagementCollectionOps[Self <: ManagementCollection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountSummaries(value: AccountSummariesCollection): Self = this.set("AccountSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountSummaries: Self = this.set("AccountSummaries", js.undefined)
+    @scala.inline
+    def setAccountUserLinks(value: AccountUserLinksCollection): Self = this.set("AccountUserLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountUserLinks: Self = this.set("AccountUserLinks", js.undefined)
+    @scala.inline
+    def setAccounts(value: AccountsCollection): Self = this.set("Accounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccounts: Self = this.set("Accounts", js.undefined)
+    @scala.inline
+    def setClientId(value: ClientIdCollection): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    @scala.inline
+    def setCustomDataSources(value: CustomDataSourcesCollection): Self = this.set("CustomDataSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDataSources: Self = this.set("CustomDataSources", js.undefined)
+    @scala.inline
+    def setCustomDimensions(value: CustomDimensionsCollection): Self = this.set("CustomDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDimensions: Self = this.set("CustomDimensions", js.undefined)
+    @scala.inline
+    def setCustomMetrics(value: CustomMetricsCollection): Self = this.set("CustomMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMetrics: Self = this.set("CustomMetrics", js.undefined)
+    @scala.inline
+    def setExperiments(value: ExperimentsCollection): Self = this.set("Experiments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperiments: Self = this.set("Experiments", js.undefined)
+    @scala.inline
+    def setFilters(value: FiltersCollection): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setGoals(value: GoalsCollection): Self = this.set("Goals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoals: Self = this.set("Goals", js.undefined)
+    @scala.inline
+    def setProfileFilterLinks(value: ProfileFilterLinksCollection): Self = this.set("ProfileFilterLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileFilterLinks: Self = this.set("ProfileFilterLinks", js.undefined)
+    @scala.inline
+    def setProfileUserLinks(value: ProfileUserLinksCollection): Self = this.set("ProfileUserLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileUserLinks: Self = this.set("ProfileUserLinks", js.undefined)
+    @scala.inline
+    def setProfiles(value: ProfilesCollection): Self = this.set("Profiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfiles: Self = this.set("Profiles", js.undefined)
+    @scala.inline
+    def setRemarketingAudience(value: RemarketingAudienceCollection): Self = this.set("RemarketingAudience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemarketingAudience: Self = this.set("RemarketingAudience", js.undefined)
+    @scala.inline
+    def setSegments(value: SegmentsCollection): Self = this.set("Segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegments: Self = this.set("Segments", js.undefined)
+    @scala.inline
+    def setUnsampledReports(value: UnsampledReportsCollection): Self = this.set("UnsampledReports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsampledReports: Self = this.set("UnsampledReports", js.undefined)
+    @scala.inline
+    def setUploads(value: UploadsCollection): Self = this.set("Uploads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploads: Self = this.set("Uploads", js.undefined)
+    @scala.inline
+    def setWebPropertyAdWordsLinks(value: WebPropertyAdWordsLinksCollection): Self = this.set("WebPropertyAdWordsLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebPropertyAdWordsLinks: Self = this.set("WebPropertyAdWordsLinks", js.undefined)
+    @scala.inline
+    def setWebproperties(value: WebpropertiesCollection): Self = this.set("Webproperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebproperties: Self = this.set("Webproperties", js.undefined)
+    @scala.inline
+    def setWebpropertyUserLinks(value: WebpropertyUserLinksCollection): Self = this.set("WebpropertyUserLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebpropertyUserLinks: Self = this.set("WebpropertyUserLinks", js.undefined)
+  }
+  
 }
 

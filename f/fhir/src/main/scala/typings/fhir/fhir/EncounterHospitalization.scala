@@ -7,81 +7,106 @@ import scala.scalajs.js.annotation._
 /**
   * Details about the admission to a healthcare service
   */
+@js.native
 trait EncounterHospitalization extends BackboneElement {
   /**
     * From where patient was admitted (physician referral, transfer)
     */
-  var admitSource: js.UndefOr[CodeableConcept] = js.undefined
+  var admitSource: js.UndefOr[CodeableConcept] = js.native
   /**
     * Location to which the patient is discharged
     */
-  var destination: js.UndefOr[Reference] = js.undefined
+  var destination: js.UndefOr[Reference] = js.native
   /**
     * Diet preferences reported by the patient
     */
-  var dietPreference: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var dietPreference: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Category or kind of location after discharge
     */
-  var dischargeDisposition: js.UndefOr[CodeableConcept] = js.undefined
+  var dischargeDisposition: js.UndefOr[CodeableConcept] = js.native
   /**
     * The location from which the patient came before admission
     */
-  var origin: js.UndefOr[Reference] = js.undefined
+  var origin: js.UndefOr[Reference] = js.native
   /**
     * Pre-admission identifier
     */
-  var preAdmissionIdentifier: js.UndefOr[Identifier] = js.undefined
+  var preAdmissionIdentifier: js.UndefOr[Identifier] = js.native
   /**
     * The type of hospital re-admission that has occurred (if any). If the value is absent, then this is not identified as a readmission
     */
-  var reAdmission: js.UndefOr[CodeableConcept] = js.undefined
+  var reAdmission: js.UndefOr[CodeableConcept] = js.native
   /**
     * Wheelchair, translator, stretcher, etc.
     */
-  var specialArrangement: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var specialArrangement: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Special courtesies (VIP, board member)
     */
-  var specialCourtesy: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var specialCourtesy: js.UndefOr[js.Array[CodeableConcept]] = js.native
 }
 
 object EncounterHospitalization {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    admitSource: CodeableConcept = null,
-    destination: Reference = null,
-    dietPreference: js.Array[CodeableConcept] = null,
-    dischargeDisposition: CodeableConcept = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    origin: Reference = null,
-    preAdmissionIdentifier: Identifier = null,
-    reAdmission: CodeableConcept = null,
-    specialArrangement: js.Array[CodeableConcept] = null,
-    specialCourtesy: js.Array[CodeableConcept] = null
-  ): EncounterHospitalization = {
+  def apply(): EncounterHospitalization = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (admitSource != null) __obj.updateDynamic("admitSource")(admitSource.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (dietPreference != null) __obj.updateDynamic("dietPreference")(dietPreference.asInstanceOf[js.Any])
-    if (dischargeDisposition != null) __obj.updateDynamic("dischargeDisposition")(dischargeDisposition.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (preAdmissionIdentifier != null) __obj.updateDynamic("preAdmissionIdentifier")(preAdmissionIdentifier.asInstanceOf[js.Any])
-    if (reAdmission != null) __obj.updateDynamic("reAdmission")(reAdmission.asInstanceOf[js.Any])
-    if (specialArrangement != null) __obj.updateDynamic("specialArrangement")(specialArrangement.asInstanceOf[js.Any])
-    if (specialCourtesy != null) __obj.updateDynamic("specialCourtesy")(specialCourtesy.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncounterHospitalization]
   }
+  @scala.inline
+  implicit class EncounterHospitalizationOps[Self <: EncounterHospitalization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdmitSource(value: CodeableConcept): Self = this.set("admitSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdmitSource: Self = this.set("admitSource", js.undefined)
+    @scala.inline
+    def setDestination(value: Reference): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setDietPreferenceVarargs(value: CodeableConcept*): Self = this.set("dietPreference", js.Array(value :_*))
+    @scala.inline
+    def setDietPreference(value: js.Array[CodeableConcept]): Self = this.set("dietPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDietPreference: Self = this.set("dietPreference", js.undefined)
+    @scala.inline
+    def setDischargeDisposition(value: CodeableConcept): Self = this.set("dischargeDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDischargeDisposition: Self = this.set("dischargeDisposition", js.undefined)
+    @scala.inline
+    def setOrigin(value: Reference): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setPreAdmissionIdentifier(value: Identifier): Self = this.set("preAdmissionIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreAdmissionIdentifier: Self = this.set("preAdmissionIdentifier", js.undefined)
+    @scala.inline
+    def setReAdmission(value: CodeableConcept): Self = this.set("reAdmission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReAdmission: Self = this.set("reAdmission", js.undefined)
+    @scala.inline
+    def setSpecialArrangementVarargs(value: CodeableConcept*): Self = this.set("specialArrangement", js.Array(value :_*))
+    @scala.inline
+    def setSpecialArrangement(value: js.Array[CodeableConcept]): Self = this.set("specialArrangement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecialArrangement: Self = this.set("specialArrangement", js.undefined)
+    @scala.inline
+    def setSpecialCourtesyVarargs(value: CodeableConcept*): Self = this.set("specialCourtesy", js.Array(value :_*))
+    @scala.inline
+    def setSpecialCourtesy(value: js.Array[CodeableConcept]): Self = this.set("specialCourtesy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecialCourtesy: Self = this.set("specialCourtesy", js.undefined)
+  }
+  
 }
 

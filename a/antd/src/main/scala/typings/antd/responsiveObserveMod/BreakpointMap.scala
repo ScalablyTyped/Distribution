@@ -5,33 +5,58 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, string>> */
+@js.native
 trait BreakpointMap extends js.Object {
-  var lg: js.UndefOr[String] = js.undefined
-  var md: js.UndefOr[String] = js.undefined
-  var sm: js.UndefOr[String] = js.undefined
-  var xl: js.UndefOr[String] = js.undefined
-  var xs: js.UndefOr[String] = js.undefined
-  var xxl: js.UndefOr[String] = js.undefined
+  var lg: js.UndefOr[String] = js.native
+  var md: js.UndefOr[String] = js.native
+  var sm: js.UndefOr[String] = js.native
+  var xl: js.UndefOr[String] = js.native
+  var xs: js.UndefOr[String] = js.native
+  var xxl: js.UndefOr[String] = js.native
 }
 
 object BreakpointMap {
   @scala.inline
-  def apply(
-    lg: String = null,
-    md: String = null,
-    sm: String = null,
-    xl: String = null,
-    xs: String = null,
-    xxl: String = null
-  ): BreakpointMap = {
+  def apply(): BreakpointMap = {
     val __obj = js.Dynamic.literal()
-    if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
-    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
-    if (sm != null) __obj.updateDynamic("sm")(sm.asInstanceOf[js.Any])
-    if (xl != null) __obj.updateDynamic("xl")(xl.asInstanceOf[js.Any])
-    if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
-    if (xxl != null) __obj.updateDynamic("xxl")(xxl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakpointMap]
   }
+  @scala.inline
+  implicit class BreakpointMapOps[Self <: BreakpointMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLg(value: String): Self = this.set("lg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLg: Self = this.set("lg", js.undefined)
+    @scala.inline
+    def setMd(value: String): Self = this.set("md", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd: Self = this.set("md", js.undefined)
+    @scala.inline
+    def setSm(value: String): Self = this.set("sm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSm: Self = this.set("sm", js.undefined)
+    @scala.inline
+    def setXl(value: String): Self = this.set("xl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXl: Self = this.set("xl", js.undefined)
+    @scala.inline
+    def setXs(value: String): Self = this.set("xs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXs: Self = this.set("xs", js.undefined)
+    @scala.inline
+    def setXxl(value: String): Self = this.set("xxl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXxl: Self = this.set("xxl", js.undefined)
+  }
+  
 }
 

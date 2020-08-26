@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * API for proofreading a text
   * @since OOo 3.0.1
   */
+@js.native
 trait XProofreader extends XSupportedLocales {
   /**
     * start checking
@@ -31,20 +32,20 @@ trait XProofreader extends XSupportedLocales {
     nStartOfSentencePosition: Double,
     nSuggestedBehindEndOfSentencePosition: Double,
     aProperties: SeqEquiv[PropertyValue]
-  ): ProofreadingResult
+  ): ProofreadingResult = js.native
   /**
     * disables a specific rule for a given locale.
     *
     * If the locale is empty the rule should be ignored for all languages.
     */
-  def ignoreRule(aRuleIdentifier: String, aLocale: Locale): Unit
+  def ignoreRule(aRuleIdentifier: String, aLocale: Locale): Unit = js.native
   /**
     * whether is the text checked by the spell checker
     * @returns true if it is also a spell checker
     */
-  def isSpellChecker(): Boolean
+  def isSpellChecker(): Boolean = js.native
   /** sets all rules back to their default settings. */
-  def resetIgnoreRules(): Unit
+  def resetIgnoreRules(): Unit = js.native
 }
 
 object XProofreader {
@@ -64,5 +65,26 @@ object XProofreader {
     val __obj = js.Dynamic.literal(Locales = Locales.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), doProofreading = js.Any.fromFunction6(doProofreading), getLocales = js.Any.fromFunction0(getLocales), hasLocale = js.Any.fromFunction1(hasLocale), ignoreRule = js.Any.fromFunction2(ignoreRule), isSpellChecker = js.Any.fromFunction0(isSpellChecker), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), resetIgnoreRules = js.Any.fromFunction0(resetIgnoreRules))
     __obj.asInstanceOf[XProofreader]
   }
+  @scala.inline
+  implicit class XProofreaderOps[Self <: XProofreader] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDoProofreading(value: (String, String, Locale, Double, Double, SeqEquiv[PropertyValue]) => ProofreadingResult): Self = this.set("doProofreading", js.Any.fromFunction6(value))
+    @scala.inline
+    def setIgnoreRule(value: (String, Locale) => Unit): Self = this.set("ignoreRule", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIsSpellChecker(value: () => Boolean): Self = this.set("isSpellChecker", js.Any.fromFunction0(value))
+    @scala.inline
+    def setResetIgnoreRules(value: () => Unit): Self = this.set("resetIgnoreRules", js.Any.fromFunction0(value))
+  }
+  
 }
 

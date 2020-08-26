@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LoggingCallbackWrapper extends LoggingCallbackTools {
-  def apply(): js.Any = js.native
-  def apply(args: js.Any*): js.Any = js.native
+  def apply(err: js.UndefOr[scala.Nothing], args: js.Any*): js.Any = js.native
+  def apply(err: Null, args: js.Any*): js.Any = js.native
   def apply(err: Error, args: js.Any*): js.Any = js.native
 }
 

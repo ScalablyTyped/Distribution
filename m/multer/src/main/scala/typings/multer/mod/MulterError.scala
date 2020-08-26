@@ -14,9 +14,5 @@ class MulterError protected () extends Error {
   var code: ErrorCode = js.native
   /** Name of the multipart form field associated with this error. */
   var field: js.UndefOr[String] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

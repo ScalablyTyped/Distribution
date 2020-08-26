@@ -29,11 +29,30 @@ trait SchemaHistogramQueryResult extends js.Object {
 
 object SchemaHistogramQueryResult {
   @scala.inline
-  def apply(histogram: StringDictionary[String] = null, histogramQuery: String = null): SchemaHistogramQueryResult = {
+  def apply(): SchemaHistogramQueryResult = {
     val __obj = js.Dynamic.literal()
-    if (histogram != null) __obj.updateDynamic("histogram")(histogram.asInstanceOf[js.Any])
-    if (histogramQuery != null) __obj.updateDynamic("histogramQuery")(histogramQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHistogramQueryResult]
   }
+  @scala.inline
+  implicit class SchemaHistogramQueryResultOps[Self <: SchemaHistogramQueryResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHistogram(value: StringDictionary[String]): Self = this.set("histogram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogram: Self = this.set("histogram", js.undefined)
+    @scala.inline
+    def setHistogramQuery(value: String): Self = this.set("histogramQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogramQuery: Self = this.set("histogramQuery", js.undefined)
+  }
+  
 }
 

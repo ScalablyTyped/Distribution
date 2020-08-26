@@ -12,7 +12,29 @@ object changeMod extends js.Object {
   class Change protected () extends js.Object {
     def this(`type`: String, snapshotNode: Node) = this()
     def this(`type`: String, snapshotNode: Node, childName: String) = this()
+    def this(`type`: String, snapshotNode: Node, childName: js.UndefOr[scala.Nothing], oldSnap: Node) = this()
     def this(`type`: String, snapshotNode: Node, childName: String, oldSnap: Node) = this()
+    def this(
+      `type`: String,
+      snapshotNode: Node,
+      childName: js.UndefOr[scala.Nothing],
+      oldSnap: js.UndefOr[scala.Nothing],
+      prevName: String
+    ) = this()
+    def this(
+      `type`: String,
+      snapshotNode: Node,
+      childName: js.UndefOr[scala.Nothing],
+      oldSnap: Node,
+      prevName: String
+    ) = this()
+    def this(
+      `type`: String,
+      snapshotNode: Node,
+      childName: String,
+      oldSnap: js.UndefOr[scala.Nothing],
+      prevName: String
+    ) = this()
     def this(`type`: String, snapshotNode: Node, childName: String, oldSnap: Node, prevName: String) = this()
     var childName: js.UndefOr[String] = js.native
     var oldSnap: js.UndefOr[Node] = js.native

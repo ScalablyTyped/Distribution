@@ -59,32 +59,74 @@ trait SchemaSearchResponse extends js.Object {
 
 object SchemaSearchResponse {
   @scala.inline
-  def apply(
-    debugInfo: SchemaResponseDebugInfo = null,
-    errorInfo: SchemaErrorInfo = null,
-    facetResults: js.Array[SchemaFacetResult] = null,
-    hasMoreResults: js.UndefOr[Boolean] = js.undefined,
-    queryInterpretation: SchemaQueryInterpretation = null,
-    resultCountEstimate: String = null,
-    resultCountExact: String = null,
-    resultCounts: SchemaResultCounts = null,
-    results: js.Array[SchemaSearchResult] = null,
-    spellResults: js.Array[SchemaSpellResult] = null,
-    structuredResults: js.Array[SchemaStructuredResult] = null
-  ): SchemaSearchResponse = {
+  def apply(): SchemaSearchResponse = {
     val __obj = js.Dynamic.literal()
-    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo.asInstanceOf[js.Any])
-    if (errorInfo != null) __obj.updateDynamic("errorInfo")(errorInfo.asInstanceOf[js.Any])
-    if (facetResults != null) __obj.updateDynamic("facetResults")(facetResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasMoreResults)) __obj.updateDynamic("hasMoreResults")(hasMoreResults.get.asInstanceOf[js.Any])
-    if (queryInterpretation != null) __obj.updateDynamic("queryInterpretation")(queryInterpretation.asInstanceOf[js.Any])
-    if (resultCountEstimate != null) __obj.updateDynamic("resultCountEstimate")(resultCountEstimate.asInstanceOf[js.Any])
-    if (resultCountExact != null) __obj.updateDynamic("resultCountExact")(resultCountExact.asInstanceOf[js.Any])
-    if (resultCounts != null) __obj.updateDynamic("resultCounts")(resultCounts.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (spellResults != null) __obj.updateDynamic("spellResults")(spellResults.asInstanceOf[js.Any])
-    if (structuredResults != null) __obj.updateDynamic("structuredResults")(structuredResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchResponse]
   }
+  @scala.inline
+  implicit class SchemaSearchResponseOps[Self <: SchemaSearchResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebugInfo(value: SchemaResponseDebugInfo): Self = this.set("debugInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugInfo: Self = this.set("debugInfo", js.undefined)
+    @scala.inline
+    def setErrorInfo(value: SchemaErrorInfo): Self = this.set("errorInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorInfo: Self = this.set("errorInfo", js.undefined)
+    @scala.inline
+    def setFacetResultsVarargs(value: SchemaFacetResult*): Self = this.set("facetResults", js.Array(value :_*))
+    @scala.inline
+    def setFacetResults(value: js.Array[SchemaFacetResult]): Self = this.set("facetResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFacetResults: Self = this.set("facetResults", js.undefined)
+    @scala.inline
+    def setHasMoreResults(value: Boolean): Self = this.set("hasMoreResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasMoreResults: Self = this.set("hasMoreResults", js.undefined)
+    @scala.inline
+    def setQueryInterpretation(value: SchemaQueryInterpretation): Self = this.set("queryInterpretation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryInterpretation: Self = this.set("queryInterpretation", js.undefined)
+    @scala.inline
+    def setResultCountEstimate(value: String): Self = this.set("resultCountEstimate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultCountEstimate: Self = this.set("resultCountEstimate", js.undefined)
+    @scala.inline
+    def setResultCountExact(value: String): Self = this.set("resultCountExact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultCountExact: Self = this.set("resultCountExact", js.undefined)
+    @scala.inline
+    def setResultCounts(value: SchemaResultCounts): Self = this.set("resultCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultCounts: Self = this.set("resultCounts", js.undefined)
+    @scala.inline
+    def setResultsVarargs(value: SchemaSearchResult*): Self = this.set("results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: js.Array[SchemaSearchResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setSpellResultsVarargs(value: SchemaSpellResult*): Self = this.set("spellResults", js.Array(value :_*))
+    @scala.inline
+    def setSpellResults(value: js.Array[SchemaSpellResult]): Self = this.set("spellResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellResults: Self = this.set("spellResults", js.undefined)
+    @scala.inline
+    def setStructuredResultsVarargs(value: SchemaStructuredResult*): Self = this.set("structuredResults", js.Array(value :_*))
+    @scala.inline
+    def setStructuredResults(value: js.Array[SchemaStructuredResult]): Self = this.set("structuredResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStructuredResults: Self = this.set("structuredResults", js.undefined)
+  }
+  
 }
 

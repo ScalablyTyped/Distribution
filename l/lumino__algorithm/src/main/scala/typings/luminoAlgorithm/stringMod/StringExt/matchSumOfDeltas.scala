@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/string", "StringExt.matchSumOfDeltas")
+@JSImport("@lumino/algorithm/types/string", "StringExt.matchSumOfDeltas")
 @js.native
 object matchSumOfDeltas extends js.Object {
   /**

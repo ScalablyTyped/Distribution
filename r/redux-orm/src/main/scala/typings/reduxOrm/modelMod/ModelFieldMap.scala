@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModelFieldMap extends /* K */ StringDictionary[ModelField]
 
 object ModelFieldMap {
   @scala.inline
-  def apply(StringDictionary: /* K */ StringDictionary[ModelField] = null): ModelFieldMap = {
+  def apply(): ModelFieldMap = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ModelFieldMap]
   }
 }

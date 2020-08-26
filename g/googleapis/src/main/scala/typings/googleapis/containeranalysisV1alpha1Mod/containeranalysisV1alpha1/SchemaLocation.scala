@@ -27,12 +27,34 @@ trait SchemaLocation extends js.Object {
 
 object SchemaLocation {
   @scala.inline
-  def apply(cpeUri: String = null, path: String = null, version: SchemaVersion = null): SchemaLocation = {
+  def apply(): SchemaLocation = {
     val __obj = js.Dynamic.literal()
-    if (cpeUri != null) __obj.updateDynamic("cpeUri")(cpeUri.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLocation]
   }
+  @scala.inline
+  implicit class SchemaLocationOps[Self <: SchemaLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCpeUri(value: String): Self = this.set("cpeUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpeUri: Self = this.set("cpeUri", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setVersion(value: SchemaVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

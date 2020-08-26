@@ -26,16 +26,9 @@ object revokeGrantCommandMod extends js.Object {
           Readable
         ] {
     def this(input: RevokeGrantInput) = this()
-    /* CompleteClass */
-    override val input: RevokeGrantInput = js.native
     val middlewareStack: MiddlewareStack[RevokeGrantInput, RevokeGrantOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[RevokeGrantInput, RevokeGrantOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[RevokeGrantInput, RevokeGrantOutput] = js.native
   }

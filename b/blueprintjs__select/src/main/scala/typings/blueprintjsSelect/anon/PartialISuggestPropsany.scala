@@ -23,11 +23,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@blueprintjs/select.@blueprintjs/select/lib/esm/components/select/suggest.ISuggestProps<any>> */
+@js.native
 trait PartialISuggestPropsany extends js.Object {
-  var activeItem: js.UndefOr[js.Any | ICreateNewItem] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var closeOnSelect: js.UndefOr[Boolean] = js.undefined
-  var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, _]] = js.undefined
+  var activeItem: js.UndefOr[js.Any | ICreateNewItem | Null] = js.native
+  var className: js.UndefOr[String] = js.native
+  var closeOnSelect: js.UndefOr[Boolean] = js.native
+  var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, _]] = js.native
   var createNewItemRenderer: js.UndefOr[
     js.Function3[
       /* query */ String, 
@@ -35,111 +36,201 @@ trait PartialISuggestPropsany extends js.Object {
       /* handleClick */ MouseEventHandler[HTMLElement], 
       js.UndefOr[Element]
     ]
-  ] = js.undefined
-  var defaultSelectedItem: js.UndefOr[js.Any] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var fill: js.UndefOr[Boolean] = js.undefined
-  var initialContent: js.UndefOr[ReactNode] = js.undefined
-  var inputProps: js.UndefOr[IInputGroupProps with HTMLInputProps] = js.undefined
-  var inputValueRenderer: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
+  ] = js.native
+  var defaultSelectedItem: js.UndefOr[js.Any] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.native
+  var initialContent: js.UndefOr[ReactNode | Null] = js.native
+  var inputProps: js.UndefOr[IInputGroupProps with HTMLInputProps] = js.native
+  var inputValueRenderer: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.native
   var itemDisabled: js.UndefOr[
     (/* keyof any */ String) | (js.Function2[/* item */ js.Any, /* index */ Double, Boolean])
-  ] = js.undefined
-  var itemListPredicate: js.UndefOr[ItemListPredicate[_]] = js.undefined
-  var itemListRenderer: js.UndefOr[ItemListRenderer[_]] = js.undefined
-  var itemPredicate: js.UndefOr[ItemPredicate[_]] = js.undefined
-  var itemRenderer: js.UndefOr[ItemRenderer[_]] = js.undefined
-  var items: js.UndefOr[js.Array[_]] = js.undefined
-  var itemsEqual: js.UndefOr[ItemsEqualProp[_]] = js.undefined
-  var noResults: js.UndefOr[ReactNode] = js.undefined
+  ] = js.native
+  var itemListPredicate: js.UndefOr[ItemListPredicate[_]] = js.native
+  var itemListRenderer: js.UndefOr[ItemListRenderer[_]] = js.native
+  var itemPredicate: js.UndefOr[ItemPredicate[_]] = js.native
+  var itemRenderer: js.UndefOr[ItemRenderer[_]] = js.native
+  var items: js.UndefOr[js.Array[_]] = js.native
+  var itemsEqual: js.UndefOr[ItemsEqualProp[_]] = js.native
+  var noResults: js.UndefOr[ReactNode] = js.native
   var onActiveItemChange: js.UndefOr[
     js.Function2[/* activeItem */ js.Any | Null, /* isCreateNewItem */ Boolean, Unit]
-  ] = js.undefined
+  ] = js.native
   var onItemSelect: js.UndefOr[
     js.Function2[/* item */ js.Any, /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]
-  ] = js.undefined
-  var onItemsPaste: js.UndefOr[js.Function1[/* items */ js.Array[_], Unit]] = js.undefined
+  ] = js.native
+  var onItemsPaste: js.UndefOr[js.Function1[/* items */ js.Array[_], Unit]] = js.native
   var onQueryChange: js.UndefOr[
     js.Function2[/* query */ String, /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]], Unit]
-  ] = js.undefined
-  var openOnKeyDown: js.UndefOr[Boolean] = js.undefined
-  var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.undefined
-  var query: js.UndefOr[String] = js.undefined
-  var resetOnClose: js.UndefOr[Boolean] = js.undefined
-  var resetOnQuery: js.UndefOr[Boolean] = js.undefined
-  var resetOnSelect: js.UndefOr[Boolean] = js.undefined
-  var scrollToActiveItem: js.UndefOr[Boolean] = js.undefined
-  var selectedItem: js.UndefOr[js.Any] = js.undefined
+  ] = js.native
+  var openOnKeyDown: js.UndefOr[Boolean] = js.native
+  var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
+  var query: js.UndefOr[String] = js.native
+  var resetOnClose: js.UndefOr[Boolean] = js.native
+  var resetOnQuery: js.UndefOr[Boolean] = js.native
+  var resetOnSelect: js.UndefOr[Boolean] = js.native
+  var scrollToActiveItem: js.UndefOr[Boolean] = js.native
+  var selectedItem: js.UndefOr[js.Any | Null] = js.native
 }
 
 object PartialISuggestPropsany {
   @scala.inline
-  def apply(
-    activeItem: js.Any | ICreateNewItem = null,
-    className: String = null,
-    closeOnSelect: js.UndefOr[Boolean] = js.undefined,
-    createNewItemFromQuery: /* query */ String => _ = null,
-    createNewItemRenderer: (/* query */ String, /* active */ Boolean, /* handleClick */ MouseEventHandler[HTMLElement]) => js.UndefOr[Element] = null,
-    defaultSelectedItem: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    fill: js.UndefOr[Boolean] = js.undefined,
-    initialContent: ReactNode = null,
-    inputProps: IInputGroupProps with HTMLInputProps = null,
-    inputValueRenderer: /* item */ js.Any => String = null,
-    itemDisabled: (/* keyof any */ String) | (js.Function2[/* item */ js.Any, /* index */ Double, Boolean]) = null,
-    itemListPredicate: (/* query */ String, /* items */ js.Array[_]) => js.Array[_] = null,
-    itemListRenderer: /* itemListProps */ IItemListRendererProps[_] => Element | Null = null,
-    itemPredicate: (/* query */ String, _, /* index */ js.UndefOr[Double], /* exactMatch */ js.UndefOr[Boolean]) => Boolean = null,
-    itemRenderer: (_, /* itemProps */ IItemRendererProps) => Element | Null = null,
-    items: js.Array[_] = null,
-    itemsEqual: ItemsEqualProp[_] = null,
-    noResults: ReactNode = null,
-    onActiveItemChange: (/* activeItem */ js.Any | Null, /* isCreateNewItem */ Boolean) => Unit = null,
-    onItemSelect: (/* item */ js.Any, /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit = null,
-    onItemsPaste: /* items */ js.Array[_] => Unit = null,
-    onQueryChange: (/* query */ String, /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]]) => Unit = null,
-    openOnKeyDown: js.UndefOr[Boolean] = js.undefined,
-    popoverProps: PartialIPopoverProps with js.Object = null,
-    query: String = null,
-    resetOnClose: js.UndefOr[Boolean] = js.undefined,
-    resetOnQuery: js.UndefOr[Boolean] = js.undefined,
-    resetOnSelect: js.UndefOr[Boolean] = js.undefined,
-    scrollToActiveItem: js.UndefOr[Boolean] = js.undefined,
-    selectedItem: js.Any = null
-  ): PartialISuggestPropsany = {
+  def apply(): PartialISuggestPropsany = {
     val __obj = js.Dynamic.literal()
-    if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.get.asInstanceOf[js.Any])
-    if (createNewItemFromQuery != null) __obj.updateDynamic("createNewItemFromQuery")(js.Any.fromFunction1(createNewItemFromQuery))
-    if (createNewItemRenderer != null) __obj.updateDynamic("createNewItemRenderer")(js.Any.fromFunction3(createNewItemRenderer))
-    if (defaultSelectedItem != null) __obj.updateDynamic("defaultSelectedItem")(defaultSelectedItem.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
-    if (initialContent != null) __obj.updateDynamic("initialContent")(initialContent.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (inputValueRenderer != null) __obj.updateDynamic("inputValueRenderer")(js.Any.fromFunction1(inputValueRenderer))
-    if (itemDisabled != null) __obj.updateDynamic("itemDisabled")(itemDisabled.asInstanceOf[js.Any])
-    if (itemListPredicate != null) __obj.updateDynamic("itemListPredicate")(js.Any.fromFunction2(itemListPredicate))
-    if (itemListRenderer != null) __obj.updateDynamic("itemListRenderer")(js.Any.fromFunction1(itemListRenderer))
-    if (itemPredicate != null) __obj.updateDynamic("itemPredicate")(js.Any.fromFunction4(itemPredicate))
-    if (itemRenderer != null) __obj.updateDynamic("itemRenderer")(js.Any.fromFunction2(itemRenderer))
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (itemsEqual != null) __obj.updateDynamic("itemsEqual")(itemsEqual.asInstanceOf[js.Any])
-    if (noResults != null) __obj.updateDynamic("noResults")(noResults.asInstanceOf[js.Any])
-    if (onActiveItemChange != null) __obj.updateDynamic("onActiveItemChange")(js.Any.fromFunction2(onActiveItemChange))
-    if (onItemSelect != null) __obj.updateDynamic("onItemSelect")(js.Any.fromFunction2(onItemSelect))
-    if (onItemsPaste != null) __obj.updateDynamic("onItemsPaste")(js.Any.fromFunction1(onItemsPaste))
-    if (onQueryChange != null) __obj.updateDynamic("onQueryChange")(js.Any.fromFunction2(onQueryChange))
-    if (!js.isUndefined(openOnKeyDown)) __obj.updateDynamic("openOnKeyDown")(openOnKeyDown.get.asInstanceOf[js.Any])
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnClose)) __obj.updateDynamic("resetOnClose")(resetOnClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnQuery)) __obj.updateDynamic("resetOnQuery")(resetOnQuery.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnSelect)) __obj.updateDynamic("resetOnSelect")(resetOnSelect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollToActiveItem)) __obj.updateDynamic("scrollToActiveItem")(scrollToActiveItem.get.asInstanceOf[js.Any])
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialISuggestPropsany]
   }
+  @scala.inline
+  implicit class PartialISuggestPropsanyOps[Self <: PartialISuggestPropsany] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveItem(value: js.Any | ICreateNewItem): Self = this.set("activeItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveItem: Self = this.set("activeItem", js.undefined)
+    @scala.inline
+    def setActiveItemNull: Self = this.set("activeItem", null)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCloseOnSelect(value: Boolean): Self = this.set("closeOnSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnSelect: Self = this.set("closeOnSelect", js.undefined)
+    @scala.inline
+    def setCreateNewItemFromQuery(value: /* query */ String => _): Self = this.set("createNewItemFromQuery", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCreateNewItemFromQuery: Self = this.set("createNewItemFromQuery", js.undefined)
+    @scala.inline
+    def setCreateNewItemRenderer(
+      value: (/* query */ String, /* active */ Boolean, /* handleClick */ MouseEventHandler[HTMLElement]) => js.UndefOr[Element]
+    ): Self = this.set("createNewItemRenderer", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCreateNewItemRenderer: Self = this.set("createNewItemRenderer", js.undefined)
+    @scala.inline
+    def setDefaultSelectedItem(value: js.Any): Self = this.set("defaultSelectedItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSelectedItem: Self = this.set("defaultSelectedItem", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setInitialContent(value: ReactNode): Self = this.set("initialContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialContent: Self = this.set("initialContent", js.undefined)
+    @scala.inline
+    def setInitialContentNull: Self = this.set("initialContent", null)
+    @scala.inline
+    def setInputProps(value: IInputGroupProps with HTMLInputProps): Self = this.set("inputProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputProps: Self = this.set("inputProps", js.undefined)
+    @scala.inline
+    def setInputValueRenderer(value: /* item */ js.Any => String): Self = this.set("inputValueRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInputValueRenderer: Self = this.set("inputValueRenderer", js.undefined)
+    @scala.inline
+    def setItemDisabledFunction2(value: (/* item */ js.Any, /* index */ Double) => Boolean): Self = this.set("itemDisabled", js.Any.fromFunction2(value))
+    @scala.inline
+    def setItemDisabled(value: (/* keyof any */ String) | (js.Function2[/* item */ js.Any, /* index */ Double, Boolean])): Self = this.set("itemDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemDisabled: Self = this.set("itemDisabled", js.undefined)
+    @scala.inline
+    def setItemListPredicate(value: (/* query */ String, /* items */ js.Array[_]) => js.Array[_]): Self = this.set("itemListPredicate", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemListPredicate: Self = this.set("itemListPredicate", js.undefined)
+    @scala.inline
+    def setItemListRenderer(value: /* itemListProps */ IItemListRendererProps[_] => Element | Null): Self = this.set("itemListRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemListRenderer: Self = this.set("itemListRenderer", js.undefined)
+    @scala.inline
+    def setItemPredicate(
+      value: (/* query */ String, _, /* index */ js.UndefOr[Double], /* exactMatch */ js.UndefOr[Boolean]) => Boolean
+    ): Self = this.set("itemPredicate", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteItemPredicate: Self = this.set("itemPredicate", js.undefined)
+    @scala.inline
+    def setItemRenderer(value: (_, /* itemProps */ IItemRendererProps) => Element | Null): Self = this.set("itemRenderer", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemRenderer: Self = this.set("itemRenderer", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setItemsEqualFunction2(value: (_, _) => Boolean): Self = this.set("itemsEqual", js.Any.fromFunction2(value))
+    @scala.inline
+    def setItemsEqual(value: ItemsEqualProp[_]): Self = this.set("itemsEqual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsEqual: Self = this.set("itemsEqual", js.undefined)
+    @scala.inline
+    def setNoResults(value: ReactNode): Self = this.set("noResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoResults: Self = this.set("noResults", js.undefined)
+    @scala.inline
+    def setOnActiveItemChange(value: (/* activeItem */ js.Any | Null, /* isCreateNewItem */ Boolean) => Unit): Self = this.set("onActiveItemChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnActiveItemChange: Self = this.set("onActiveItemChange", js.undefined)
+    @scala.inline
+    def setOnItemSelect(value: (/* item */ js.Any, /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit): Self = this.set("onItemSelect", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnItemSelect: Self = this.set("onItemSelect", js.undefined)
+    @scala.inline
+    def setOnItemsPaste(value: /* items */ js.Array[_] => Unit): Self = this.set("onItemsPaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnItemsPaste: Self = this.set("onItemsPaste", js.undefined)
+    @scala.inline
+    def setOnQueryChange(value: (/* query */ String, /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]]) => Unit): Self = this.set("onQueryChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnQueryChange: Self = this.set("onQueryChange", js.undefined)
+    @scala.inline
+    def setOpenOnKeyDown(value: Boolean): Self = this.set("openOnKeyDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenOnKeyDown: Self = this.set("openOnKeyDown", js.undefined)
+    @scala.inline
+    def setPopoverProps(value: PartialIPopoverProps with js.Object): Self = this.set("popoverProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopoverProps: Self = this.set("popoverProps", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setResetOnClose(value: Boolean): Self = this.set("resetOnClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetOnClose: Self = this.set("resetOnClose", js.undefined)
+    @scala.inline
+    def setResetOnQuery(value: Boolean): Self = this.set("resetOnQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetOnQuery: Self = this.set("resetOnQuery", js.undefined)
+    @scala.inline
+    def setResetOnSelect(value: Boolean): Self = this.set("resetOnSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetOnSelect: Self = this.set("resetOnSelect", js.undefined)
+    @scala.inline
+    def setScrollToActiveItem(value: Boolean): Self = this.set("scrollToActiveItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollToActiveItem: Self = this.set("scrollToActiveItem", js.undefined)
+    @scala.inline
+    def setSelectedItem(value: js.Any): Self = this.set("selectedItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItem: Self = this.set("selectedItem", js.undefined)
+    @scala.inline
+    def setSelectedItemNull: Self = this.set("selectedItem", null)
+  }
+  
 }
 

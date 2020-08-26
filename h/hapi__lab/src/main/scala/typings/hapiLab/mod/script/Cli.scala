@@ -5,312 +5,420 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Cli extends js.Object {
   /**
     * Specifies an assertion library module path to require and make available under Lab.assertions as well as use for enhanced reporting.
     */
-  val assert: js.UndefOr[String] = js.undefined
+  val assert: js.UndefOr[String] = js.native
   /**
     * Forces the process to exist with a non zero exit code on the first test failure.
     * 
     * @default false
     */
-  val bail: js.UndefOr[Boolean] = js.undefined
+  val bail: js.UndefOr[Boolean] = js.native
   /**
     * Enables color output.
     * 
     * @default terminal capabilities.
     */
-  val colors: js.UndefOr[Boolean] = js.undefined
+  val colors: js.UndefOr[Boolean] = js.native
   /**
     * Sets a timeout value for before, after, beforeEach, afterEach in milliseconds.
     * 
     * @default 0
     */
-  val `context-timeout`: js.UndefOr[Double] = js.undefined
+  val `context-timeout`: js.UndefOr[Double] = js.native
   /**
     * Enable code coverage analysis
     * 
     * @default false
     */
-  val coverage: js.UndefOr[Boolean] = js.undefined
+  val coverage: js.UndefOr[Boolean] = js.native
   /**
     * Includes all files in coveragePath in report.
     * 
     * @default false
     */
-  val `coverage-all`: js.UndefOr[Boolean] = js.undefined
+  val `coverage-all`: js.UndefOr[Boolean] = js.native
   /**
     * Set code coverage excludes (an array of path strings).
     */
-  val `coverage-exclude`: js.UndefOr[js.Array[String]] = js.undefined
+  val `coverage-exclude`: js.UndefOr[js.Array[String]] = js.native
   /**
     * Prevents recursive inclusion of all files in coveragePath in report.
     * 
     * @default false
     */
-  val `coverage-flat`: js.UndefOr[Boolean] = js.undefined
+  val `coverage-flat`: js.UndefOr[Boolean] = js.native
   /**
     * Enables coverage on external modules.
     */
-  val `coverage-module`: js.UndefOr[js.Array[String]] = js.undefined
+  val `coverage-module`: js.UndefOr[js.Array[String]] = js.native
   /**
     * Sets code coverage path.
     */
-  val `coverage-path`: js.UndefOr[String] = js.undefined
+  val `coverage-path`: js.UndefOr[String] = js.native
   /**
     * File pattern to use for locating files for coverage.
     */
-  val coveragePattern: js.UndefOr[RegExp] = js.undefined
+  val coveragePattern: js.UndefOr[RegExp] = js.native
   /**
     * Minimum plan threshold to apply to all tests that don't define any plan.
     */
-  val `default-plan-threshold`: js.UndefOr[Double] = js.undefined
+  val `default-plan-threshold`: js.UndefOr[Double] = js.native
   /**
     * Skip all tests (dry run).
     * 
     * @default: false
     */
-  val dry: js.UndefOr[Boolean] = js.undefined
+  val dry: js.UndefOr[Boolean] = js.native
   /**
     * Value to set NODE_ENV before tests.
     * 
     * @default: 'test'
     */
-  val environment: js.UndefOr[String] = js.undefined
+  val environment: js.UndefOr[String] = js.native
   /**
     * Prevent recursive collection of tests within the provided path.
     * 
     * @default false
     */
-  val flat: js.UndefOr[Boolean] = js.undefined
+  val flat: js.UndefOr[Boolean] = js.native
   /**
     * Sets a list of globals to ignore for the leak detection (comma separated).
     */
-  val globals: js.UndefOr[js.Array[String]] = js.undefined
+  val globals: js.UndefOr[js.Array[String]] = js.native
   /**
     * Only run tests matching the given pattern which is internally compiled to a RegExp.
     */
-  val grep: js.UndefOr[String] = js.undefined
+  val grep: js.UndefOr[String] = js.native
   /**
     * Range of test ids to execute.
     */
-  val id: js.UndefOr[js.Array[Double]] = js.undefined
+  val id: js.UndefOr[js.Array[Double]] = js.native
   /**
     * Sets lab to start with the node.js native debugger.
     * 
     * @default false
     */
-  val inspect: js.UndefOr[Boolean] = js.undefined
+  val inspect: js.UndefOr[Boolean] = js.native
   /**
     * Sets global variable leaks detection.
     * 
     * @default true
     */
-  val leaks: js.UndefOr[Boolean] = js.undefined
+  val leaks: js.UndefOr[Boolean] = js.native
   /**
     * Enables code lint.
     * 
     * @default false
     */
-  val lint: js.UndefOr[Boolean] = js.undefined
+  val lint: js.UndefOr[Boolean] = js.native
   /**
     * Linter errors threshold in absolute value.
     * 
     * @default 0
     */
-  val `lint-errors-threshold`: Double
+  val `lint-errors-threshold`: Double = js.native
   /**
     * Apply any fixes from the linter.
     * 
     * @default false
     */
-  val `lint-fix`: js.UndefOr[Boolean] = js.undefined
+  val `lint-fix`: js.UndefOr[Boolean] = js.native
   /**
     * Options to pass to linting program. It must be a string that is JSON.parse(able).
     */
-  val `lint-options`: js.UndefOr[String] = js.undefined
+  val `lint-options`: js.UndefOr[String] = js.native
   /**
     * Linter warnings threshold in absolute value.
     * 
     * @default 0
     */
-  val `lint-warnings-threshold`: Double
+  val `lint-warnings-threshold`: Double = js.native
   /**
     * Linter path.
     * 
     * @default 'eslint'
     */
-  val linter: js.UndefOr[String] = js.undefined
+  val linter: js.UndefOr[String] = js.native
   /**
     * File path to write test results. When set to an array, the array size must match the reporter option array.
     * 
     * @default stdout
     */
-  val output: js.UndefOr[String | js.Array[String]] = js.undefined
+  val output: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * File paths to load tests from.
     * 
     * @default ['test']
     */
-  val path: js.UndefOr[js.Array[String]] = js.undefined
+  val path: js.UndefOr[js.Array[String]] = js.native
   /**
     * File pattern to use for locating tests (must include file extensions).
     */
-  val pattern: js.UndefOr[RegExp] = js.undefined
+  val pattern: js.UndefOr[RegExp] = js.native
   /**
     * Sets output verbosity (0: none, 1: normal, 2: verbose).
     *
     * @default 1
     */
-  val progress: js.UndefOr[Double] = js.undefined
+  val progress: js.UndefOr[Double] = js.native
   /**
     * Reporter type. One of: 'console', 'html', 'json', 'tap', 'lcov', 'clover', 'junit'.
     * 
     * @default 'console'
     */
-  val reporter: js.UndefOr[String | js.Array[String]] = js.undefined
+  val reporter: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * Number of times to retry failing tests (marked explicitly for retry).
     * 
     * @default 5
     */
-  val retries: js.UndefOr[Double] = js.undefined
+  val retries: js.UndefOr[Double] = js.native
   /**
     * Random number seed when shuffle is enabled.
     */
-  val seed: js.UndefOr[String] = js.undefined
+  val seed: js.UndefOr[String] = js.native
   /**
     * Shuffle script execution order.
     * 
     * @default false
     */
-  val shuffle: Boolean
+  val shuffle: Boolean = js.native
   /**
     * Silence skipped tests.
     *
     * @default false
     */
-  val `silent-skips`: js.UndefOr[Boolean] = js.undefined
+  val `silent-skips`: js.UndefOr[Boolean] = js.native
   /**
     * Enable support for sourcemaps.
     *
     * @default false
     */
-  val sourcemaps: js.UndefOr[Boolean] = js.undefined
+  val sourcemaps: js.UndefOr[Boolean] = js.native
   /**
     * Code coverage threshold percentage.
     */
-  val threshold: js.UndefOr[Double] = js.undefined
+  val threshold: js.UndefOr[Double] = js.native
   /**
     * Timeout for each test in milliseconds.
     * 
     * @default 2000
     */
-  val timeout: js.UndefOr[Double] = js.undefined
+  val timeout: js.UndefOr[Double] = js.native
   /**
     * Transformers for non-js file types.
     */
-  val transform: js.UndefOr[js.Array[Transformer]] = js.undefined
+  val transform: js.UndefOr[js.Array[Transformer]] = js.native
   /**
     * Test types definitions.
     *
     * @default false
     */
-  val types: js.UndefOr[Boolean] = js.undefined
+  val types: js.UndefOr[Boolean] = js.native
   /**
     * Location of types definitions test file.
     */
-  val `types-test`: js.UndefOr[String] = js.undefined
+  val `types-test`: js.UndefOr[String] = js.native
 }
 
 object Cli {
   @scala.inline
-  def apply(
-    `lint-errors-threshold`: Double,
-    `lint-warnings-threshold`: Double,
-    shuffle: Boolean,
-    assert: String = null,
-    bail: js.UndefOr[Boolean] = js.undefined,
-    colors: js.UndefOr[Boolean] = js.undefined,
-    `context-timeout`: js.UndefOr[Double] = js.undefined,
-    coverage: js.UndefOr[Boolean] = js.undefined,
-    `coverage-all`: js.UndefOr[Boolean] = js.undefined,
-    `coverage-exclude`: js.Array[String] = null,
-    `coverage-flat`: js.UndefOr[Boolean] = js.undefined,
-    `coverage-module`: js.Array[String] = null,
-    `coverage-path`: String = null,
-    coveragePattern: RegExp = null,
-    `default-plan-threshold`: js.UndefOr[Double] = js.undefined,
-    dry: js.UndefOr[Boolean] = js.undefined,
-    environment: String = null,
-    flat: js.UndefOr[Boolean] = js.undefined,
-    globals: js.Array[String] = null,
-    grep: String = null,
-    id: js.Array[Double] = null,
-    inspect: js.UndefOr[Boolean] = js.undefined,
-    leaks: js.UndefOr[Boolean] = js.undefined,
-    lint: js.UndefOr[Boolean] = js.undefined,
-    `lint-fix`: js.UndefOr[Boolean] = js.undefined,
-    `lint-options`: String = null,
-    linter: String = null,
-    output: String | js.Array[String] = null,
-    path: js.Array[String] = null,
-    pattern: RegExp = null,
-    progress: js.UndefOr[Double] = js.undefined,
-    reporter: String | js.Array[String] = null,
-    retries: js.UndefOr[Double] = js.undefined,
-    seed: String = null,
-    `silent-skips`: js.UndefOr[Boolean] = js.undefined,
-    sourcemaps: js.UndefOr[Boolean] = js.undefined,
-    threshold: js.UndefOr[Double] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    transform: js.Array[Transformer] = null,
-    types: js.UndefOr[Boolean] = js.undefined,
-    `types-test`: String = null
-  ): Cli = {
+  def apply(`lint-errors-threshold`: Double, `lint-warnings-threshold`: Double, shuffle: Boolean): Cli = {
     val __obj = js.Dynamic.literal(shuffle = shuffle.asInstanceOf[js.Any])
     __obj.updateDynamic("lint-errors-threshold")(`lint-errors-threshold`.asInstanceOf[js.Any])
     __obj.updateDynamic("lint-warnings-threshold")(`lint-warnings-threshold`.asInstanceOf[js.Any])
-    if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`context-timeout`)) __obj.updateDynamic("context-timeout")(`context-timeout`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverage)) __obj.updateDynamic("coverage")(coverage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`coverage-all`)) __obj.updateDynamic("coverage-all")(`coverage-all`.get.asInstanceOf[js.Any])
-    if (`coverage-exclude` != null) __obj.updateDynamic("coverage-exclude")(`coverage-exclude`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`coverage-flat`)) __obj.updateDynamic("coverage-flat")(`coverage-flat`.get.asInstanceOf[js.Any])
-    if (`coverage-module` != null) __obj.updateDynamic("coverage-module")(`coverage-module`.asInstanceOf[js.Any])
-    if (`coverage-path` != null) __obj.updateDynamic("coverage-path")(`coverage-path`.asInstanceOf[js.Any])
-    if (coveragePattern != null) __obj.updateDynamic("coveragePattern")(coveragePattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(`default-plan-threshold`)) __obj.updateDynamic("default-plan-threshold")(`default-plan-threshold`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry.get.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.get.asInstanceOf[js.Any])
-    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (grep != null) __obj.updateDynamic("grep")(grep.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(leaks)) __obj.updateDynamic("leaks")(leaks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lint)) __obj.updateDynamic("lint")(lint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lint-fix`)) __obj.updateDynamic("lint-fix")(`lint-fix`.get.asInstanceOf[js.Any])
-    if (`lint-options` != null) __obj.updateDynamic("lint-options")(`lint-options`.asInstanceOf[js.Any])
-    if (linter != null) __obj.updateDynamic("linter")(linter.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
-    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (!js.isUndefined(`silent-skips`)) __obj.updateDynamic("silent-skips")(`silent-skips`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types.get.asInstanceOf[js.Any])
-    if (`types-test` != null) __obj.updateDynamic("types-test")(`types-test`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cli]
   }
+  @scala.inline
+  implicit class CliOps[Self <: Cli] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setLint-errors-threshold`(value: Double): Self = this.set("lint-errors-threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setLint-warnings-threshold`(value: Double): Self = this.set("lint-warnings-threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShuffle(value: Boolean): Self = this.set("shuffle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssert(value: String): Self = this.set("assert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssert: Self = this.set("assert", js.undefined)
+    @scala.inline
+    def setBail(value: Boolean): Self = this.set("bail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBail: Self = this.set("bail", js.undefined)
+    @scala.inline
+    def setColors(value: Boolean): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def `setContext-timeout`(value: Double): Self = this.set("context-timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteContext-timeout`: Self = this.set("context-timeout", js.undefined)
+    @scala.inline
+    def setCoverage(value: Boolean): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverage: Self = this.set("coverage", js.undefined)
+    @scala.inline
+    def `setCoverage-all`(value: Boolean): Self = this.set("coverage-all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteCoverage-all`: Self = this.set("coverage-all", js.undefined)
+    @scala.inline
+    def `setCoverage-excludeVarargs`(value: String*): Self = this.set("coverage-exclude", js.Array(value :_*))
+    @scala.inline
+    def `setCoverage-exclude`(value: js.Array[String]): Self = this.set("coverage-exclude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteCoverage-exclude`: Self = this.set("coverage-exclude", js.undefined)
+    @scala.inline
+    def `setCoverage-flat`(value: Boolean): Self = this.set("coverage-flat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteCoverage-flat`: Self = this.set("coverage-flat", js.undefined)
+    @scala.inline
+    def `setCoverage-moduleVarargs`(value: String*): Self = this.set("coverage-module", js.Array(value :_*))
+    @scala.inline
+    def `setCoverage-module`(value: js.Array[String]): Self = this.set("coverage-module", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteCoverage-module`: Self = this.set("coverage-module", js.undefined)
+    @scala.inline
+    def `setCoverage-path`(value: String): Self = this.set("coverage-path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteCoverage-path`: Self = this.set("coverage-path", js.undefined)
+    @scala.inline
+    def setCoveragePattern(value: RegExp): Self = this.set("coveragePattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoveragePattern: Self = this.set("coveragePattern", js.undefined)
+    @scala.inline
+    def `setDefault-plan-threshold`(value: Double): Self = this.set("default-plan-threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDefault-plan-threshold`: Self = this.set("default-plan-threshold", js.undefined)
+    @scala.inline
+    def setDry(value: Boolean): Self = this.set("dry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDry: Self = this.set("dry", js.undefined)
+    @scala.inline
+    def setEnvironment(value: String): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setFlat(value: Boolean): Self = this.set("flat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlat: Self = this.set("flat", js.undefined)
+    @scala.inline
+    def setGlobalsVarargs(value: String*): Self = this.set("globals", js.Array(value :_*))
+    @scala.inline
+    def setGlobals(value: js.Array[String]): Self = this.set("globals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobals: Self = this.set("globals", js.undefined)
+    @scala.inline
+    def setGrep(value: String): Self = this.set("grep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrep: Self = this.set("grep", js.undefined)
+    @scala.inline
+    def setIdVarargs(value: Double*): Self = this.set("id", js.Array(value :_*))
+    @scala.inline
+    def setId(value: js.Array[Double]): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInspect(value: Boolean): Self = this.set("inspect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInspect: Self = this.set("inspect", js.undefined)
+    @scala.inline
+    def setLeaks(value: Boolean): Self = this.set("leaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaks: Self = this.set("leaks", js.undefined)
+    @scala.inline
+    def setLint(value: Boolean): Self = this.set("lint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLint: Self = this.set("lint", js.undefined)
+    @scala.inline
+    def `setLint-fix`(value: Boolean): Self = this.set("lint-fix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteLint-fix`: Self = this.set("lint-fix", js.undefined)
+    @scala.inline
+    def `setLint-options`(value: String): Self = this.set("lint-options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteLint-options`: Self = this.set("lint-options", js.undefined)
+    @scala.inline
+    def setLinter(value: String): Self = this.set("linter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinter: Self = this.set("linter", js.undefined)
+    @scala.inline
+    def setOutputVarargs(value: String*): Self = this.set("output", js.Array(value :_*))
+    @scala.inline
+    def setOutput(value: String | js.Array[String]): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+    @scala.inline
+    def setPathVarargs(value: String*): Self = this.set("path", js.Array(value :_*))
+    @scala.inline
+    def setPath(value: js.Array[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPattern(value: RegExp): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("progress", js.undefined)
+    @scala.inline
+    def setReporterVarargs(value: String*): Self = this.set("reporter", js.Array(value :_*))
+    @scala.inline
+    def setReporter(value: String | js.Array[String]): Self = this.set("reporter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReporter: Self = this.set("reporter", js.undefined)
+    @scala.inline
+    def setRetries(value: Double): Self = this.set("retries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetries: Self = this.set("retries", js.undefined)
+    @scala.inline
+    def setSeed(value: String): Self = this.set("seed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeed: Self = this.set("seed", js.undefined)
+    @scala.inline
+    def `setSilent-skips`(value: Boolean): Self = this.set("silent-skips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSilent-skips`: Self = this.set("silent-skips", js.undefined)
+    @scala.inline
+    def setSourcemaps(value: Boolean): Self = this.set("sourcemaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcemaps: Self = this.set("sourcemaps", js.undefined)
+    @scala.inline
+    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTransformVarargs(value: Transformer*): Self = this.set("transform", js.Array(value :_*))
+    @scala.inline
+    def setTransform(value: js.Array[Transformer]): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+    @scala.inline
+    def setTypes(value: Boolean): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+    @scala.inline
+    def `setTypes-test`(value: String): Self = this.set("types-test", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteTypes-test`: Self = this.set("types-test", js.undefined)
+  }
+  
 }
 

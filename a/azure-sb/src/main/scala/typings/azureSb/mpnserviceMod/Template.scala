@@ -43,9 +43,8 @@ object Template {
     __obj.asInstanceOf[Template]
   }
   @scala.inline
-  def ToastTemplate(text1: String, text2: String, param: String = null): Template = {
+  def ToastTemplate(text1: String, text2: String): Template = {
     val __obj = js.Dynamic.literal(text1 = text1.asInstanceOf[js.Any], text2 = text2.asInstanceOf[js.Any])
-    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
 }

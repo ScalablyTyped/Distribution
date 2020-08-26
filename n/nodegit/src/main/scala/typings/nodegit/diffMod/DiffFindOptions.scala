@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DiffFindOptions extends js.Object {
-  var breakRewriteThreshold: js.UndefOr[Double] = js.undefined
-  var copyThreshold: js.UndefOr[Double] = js.undefined
-  var flags: js.UndefOr[Double] = js.undefined
-  var renameFromRewriteThreshold: js.UndefOr[Double] = js.undefined
-  var renameLimit: js.UndefOr[Double] = js.undefined
-  var renameThreshold: js.UndefOr[Double] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
+  var breakRewriteThreshold: js.UndefOr[Double] = js.native
+  var copyThreshold: js.UndefOr[Double] = js.native
+  var flags: js.UndefOr[Double] = js.native
+  var renameFromRewriteThreshold: js.UndefOr[Double] = js.native
+  var renameLimit: js.UndefOr[Double] = js.native
+  var renameThreshold: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.native
 }
 
 object DiffFindOptions {
   @scala.inline
-  def apply(
-    breakRewriteThreshold: js.UndefOr[Double] = js.undefined,
-    copyThreshold: js.UndefOr[Double] = js.undefined,
-    flags: js.UndefOr[Double] = js.undefined,
-    renameFromRewriteThreshold: js.UndefOr[Double] = js.undefined,
-    renameLimit: js.UndefOr[Double] = js.undefined,
-    renameThreshold: js.UndefOr[Double] = js.undefined,
-    version: js.UndefOr[Double] = js.undefined
-  ): DiffFindOptions = {
+  def apply(): DiffFindOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breakRewriteThreshold)) __obj.updateDynamic("breakRewriteThreshold")(breakRewriteThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyThreshold)) __obj.updateDynamic("copyThreshold")(copyThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(renameFromRewriteThreshold)) __obj.updateDynamic("renameFromRewriteThreshold")(renameFromRewriteThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(renameLimit)) __obj.updateDynamic("renameLimit")(renameLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(renameThreshold)) __obj.updateDynamic("renameThreshold")(renameThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffFindOptions]
   }
+  @scala.inline
+  implicit class DiffFindOptionsOps[Self <: DiffFindOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBreakRewriteThreshold(value: Double): Self = this.set("breakRewriteThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreakRewriteThreshold: Self = this.set("breakRewriteThreshold", js.undefined)
+    @scala.inline
+    def setCopyThreshold(value: Double): Self = this.set("copyThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyThreshold: Self = this.set("copyThreshold", js.undefined)
+    @scala.inline
+    def setFlags(value: Double): Self = this.set("flags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlags: Self = this.set("flags", js.undefined)
+    @scala.inline
+    def setRenameFromRewriteThreshold(value: Double): Self = this.set("renameFromRewriteThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenameFromRewriteThreshold: Self = this.set("renameFromRewriteThreshold", js.undefined)
+    @scala.inline
+    def setRenameLimit(value: Double): Self = this.set("renameLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenameLimit: Self = this.set("renameLimit", js.undefined)
+    @scala.inline
+    def setRenameThreshold(value: Double): Self = this.set("renameThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenameThreshold: Self = this.set("renameThreshold", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

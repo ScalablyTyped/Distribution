@@ -15,7 +15,11 @@ trait Number extends js.Object {
   def asin(): Double = js.native
   def atan(): Double = js.native
   def bytes(): java.lang.String = js.native
+  def bytes(precision: js.UndefOr[scala.Nothing], binary: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
+  def bytes(precision: js.UndefOr[scala.Nothing], binary: Boolean): java.lang.String = js.native
+  def bytes(precision: js.UndefOr[scala.Nothing], binary: Boolean, units: java.lang.String): java.lang.String = js.native
   def bytes(precision: Double): java.lang.String = js.native
+  def bytes(precision: Double, binary: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
   def bytes(precision: Double, binary: Boolean): java.lang.String = js.native
   def bytes(precision: Double, binary: Boolean, units: java.lang.String): java.lang.String = js.native
   def cap(): Double = js.native
@@ -24,6 +28,7 @@ trait Number extends js.Object {
   def ceil(precision: Double): Double = js.native
   def chr(): java.lang.String = js.native
   def clamp(): Double = js.native
+  def clamp(start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
   def clamp(start: Double): Double = js.native
   def clamp(start: Double, end: Double): Double = js.native
   def cos(): Double = js.native
@@ -59,6 +64,11 @@ trait Number extends js.Object {
   def daysFromNow(): Date = js.native
   def downto[T](num: Double): Array[T] = js.native
   def downto[T](num: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
+  def downto[T](
+    num: Double,
+    step: js.UndefOr[scala.Nothing],
+    everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
+  ): Array[T] = js.native
   def downto[T](num: Double, step: Double): Array[T] = js.native
   def downto[T](num: Double, step: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
   def duration(): java.lang.String = js.native
@@ -107,6 +117,7 @@ trait Number extends js.Object {
   def log(): Double = js.native
   def log(base: Double): Double = js.native
   def metric(): java.lang.String = js.native
+  def metric(precision: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
   def metric(precision: Double): java.lang.String = js.native
   def metric(precision: Double, units: java.lang.String): java.lang.String = js.native
   def millisecond(): Double = js.native
@@ -201,7 +212,11 @@ trait Number extends js.Object {
   def monthsFromNow(): Date = js.native
   def ordinalize(): java.lang.String = js.native
   def pad(): java.lang.String = js.native
+  def pad(place: js.UndefOr[scala.Nothing], sign: js.UndefOr[scala.Nothing], base: Double): java.lang.String = js.native
+  def pad(place: js.UndefOr[scala.Nothing], sign: Boolean): java.lang.String = js.native
+  def pad(place: js.UndefOr[scala.Nothing], sign: Boolean, base: Double): java.lang.String = js.native
   def pad(place: Double): java.lang.String = js.native
+  def pad(place: Double, sign: js.UndefOr[scala.Nothing], base: Double): java.lang.String = js.native
   def pad(place: Double, sign: Boolean): java.lang.String = js.native
   def pad(place: Double, sign: Boolean, base: Double): java.lang.String = js.native
   def pow(): Double = js.native
@@ -244,6 +259,11 @@ trait Number extends js.Object {
   def toNumber(): Double = js.native
   def upto[T](num: Double): Array[T] = js.native
   def upto[T](num: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
+  def upto[T](
+    num: Double,
+    step: js.UndefOr[scala.Nothing],
+    everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
+  ): Array[T] = js.native
   def upto[T](num: Double, step: Double): Array[T] = js.native
   def upto[T](num: Double, step: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
   def week(): Double = js.native

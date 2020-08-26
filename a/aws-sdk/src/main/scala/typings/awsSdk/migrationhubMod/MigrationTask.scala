@@ -30,20 +30,44 @@ trait MigrationTask extends js.Object {
 
 object MigrationTask {
   @scala.inline
-  def apply(
-    MigrationTaskName: MigrationTaskName = null,
-    ProgressUpdateStream: ProgressUpdateStream = null,
-    ResourceAttributeList: LatestResourceAttributeList = null,
-    Task: Task = null,
-    UpdateDateTime: UpdateDateTime = null
-  ): MigrationTask = {
+  def apply(): MigrationTask = {
     val __obj = js.Dynamic.literal()
-    if (MigrationTaskName != null) __obj.updateDynamic("MigrationTaskName")(MigrationTaskName.asInstanceOf[js.Any])
-    if (ProgressUpdateStream != null) __obj.updateDynamic("ProgressUpdateStream")(ProgressUpdateStream.asInstanceOf[js.Any])
-    if (ResourceAttributeList != null) __obj.updateDynamic("ResourceAttributeList")(ResourceAttributeList.asInstanceOf[js.Any])
-    if (Task != null) __obj.updateDynamic("Task")(Task.asInstanceOf[js.Any])
-    if (UpdateDateTime != null) __obj.updateDynamic("UpdateDateTime")(UpdateDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationTask]
   }
+  @scala.inline
+  implicit class MigrationTaskOps[Self <: MigrationTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMigrationTaskName(value: MigrationTaskName): Self = this.set("MigrationTaskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMigrationTaskName: Self = this.set("MigrationTaskName", js.undefined)
+    @scala.inline
+    def setProgressUpdateStream(value: ProgressUpdateStream): Self = this.set("ProgressUpdateStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressUpdateStream: Self = this.set("ProgressUpdateStream", js.undefined)
+    @scala.inline
+    def setResourceAttributeListVarargs(value: ResourceAttribute*): Self = this.set("ResourceAttributeList", js.Array(value :_*))
+    @scala.inline
+    def setResourceAttributeList(value: LatestResourceAttributeList): Self = this.set("ResourceAttributeList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAttributeList: Self = this.set("ResourceAttributeList", js.undefined)
+    @scala.inline
+    def setTask(value: Task): Self = this.set("Task", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTask: Self = this.set("Task", js.undefined)
+    @scala.inline
+    def setUpdateDateTime(value: UpdateDateTime): Self = this.set("UpdateDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateDateTime: Self = this.set("UpdateDateTime", js.undefined)
+  }
+  
 }
 

@@ -35,6 +35,11 @@ object Param extends js.Object {
     * @returns any Param objects whose values were different between values1 and values2
     */
   def changed(params: js.Array[typings.uirouterCore.paramMod.Param]): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+  def changed(
+    params: js.Array[typings.uirouterCore.paramMod.Param],
+    values1: js.UndefOr[scala.Nothing],
+    values2: RawParams
+  ): js.Array[typings.uirouterCore.paramMod.Param] = js.native
   def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
   def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
   /**
@@ -47,6 +52,11 @@ object Param extends js.Object {
     * @returns true if the param values in values1 and values2 are equal
     */
   def equals(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
+  def equals(
+    params: js.Array[typings.uirouterCore.paramMod.Param],
+    values1: js.UndefOr[scala.Nothing],
+    values2: js.Object
+  ): Boolean = js.native
   def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = js.native
   def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = js.native
   /** Returns true if a the parameter values are valid, according to the Param definitions */

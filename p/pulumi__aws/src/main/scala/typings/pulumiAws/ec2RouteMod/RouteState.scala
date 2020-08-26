@@ -55,38 +55,78 @@ trait RouteState extends js.Object {
 
 object RouteState {
   @scala.inline
-  def apply(
-    destinationCidrBlock: Input[String] = null,
-    destinationIpv6CidrBlock: Input[String] = null,
-    destinationPrefixListId: Input[String] = null,
-    egressOnlyGatewayId: Input[String] = null,
-    gatewayId: Input[String] = null,
-    instanceId: Input[String] = null,
-    instanceOwnerId: Input[String] = null,
-    natGatewayId: Input[String] = null,
-    networkInterfaceId: Input[String] = null,
-    origin: Input[String] = null,
-    routeTableId: Input[String] = null,
-    state: Input[String] = null,
-    transitGatewayId: Input[String] = null,
-    vpcPeeringConnectionId: Input[String] = null
-  ): RouteState = {
+  def apply(): RouteState = {
     val __obj = js.Dynamic.literal()
-    if (destinationCidrBlock != null) __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock.asInstanceOf[js.Any])
-    if (destinationIpv6CidrBlock != null) __obj.updateDynamic("destinationIpv6CidrBlock")(destinationIpv6CidrBlock.asInstanceOf[js.Any])
-    if (destinationPrefixListId != null) __obj.updateDynamic("destinationPrefixListId")(destinationPrefixListId.asInstanceOf[js.Any])
-    if (egressOnlyGatewayId != null) __obj.updateDynamic("egressOnlyGatewayId")(egressOnlyGatewayId.asInstanceOf[js.Any])
-    if (gatewayId != null) __obj.updateDynamic("gatewayId")(gatewayId.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (instanceOwnerId != null) __obj.updateDynamic("instanceOwnerId")(instanceOwnerId.asInstanceOf[js.Any])
-    if (natGatewayId != null) __obj.updateDynamic("natGatewayId")(natGatewayId.asInstanceOf[js.Any])
-    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (routeTableId != null) __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
-    if (vpcPeeringConnectionId != null) __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteState]
   }
+  @scala.inline
+  implicit class RouteStateOps[Self <: RouteState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCidrBlock(value: Input[String]): Self = this.set("destinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCidrBlock: Self = this.set("destinationCidrBlock", js.undefined)
+    @scala.inline
+    def setDestinationIpv6CidrBlock(value: Input[String]): Self = this.set("destinationIpv6CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationIpv6CidrBlock: Self = this.set("destinationIpv6CidrBlock", js.undefined)
+    @scala.inline
+    def setDestinationPrefixListId(value: Input[String]): Self = this.set("destinationPrefixListId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPrefixListId: Self = this.set("destinationPrefixListId", js.undefined)
+    @scala.inline
+    def setEgressOnlyGatewayId(value: Input[String]): Self = this.set("egressOnlyGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEgressOnlyGatewayId: Self = this.set("egressOnlyGatewayId", js.undefined)
+    @scala.inline
+    def setGatewayId(value: Input[String]): Self = this.set("gatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayId: Self = this.set("gatewayId", js.undefined)
+    @scala.inline
+    def setInstanceId(value: Input[String]): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setInstanceOwnerId(value: Input[String]): Self = this.set("instanceOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceOwnerId: Self = this.set("instanceOwnerId", js.undefined)
+    @scala.inline
+    def setNatGatewayId(value: Input[String]): Self = this.set("natGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNatGatewayId: Self = this.set("natGatewayId", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: Input[String]): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    @scala.inline
+    def setOrigin(value: Input[String]): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setRouteTableId(value: Input[String]): Self = this.set("routeTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteTableId: Self = this.set("routeTableId", js.undefined)
+    @scala.inline
+    def setState(value: Input[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: Input[String]): Self = this.set("transitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("transitGatewayId", js.undefined)
+    @scala.inline
+    def setVpcPeeringConnectionId(value: Input[String]): Self = this.set("vpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringConnectionId: Self = this.set("vpcPeeringConnectionId", js.undefined)
+  }
+  
 }
 

@@ -66,38 +66,82 @@ trait ImportApiResponse extends js.Object {
 
 object ImportApiResponse {
   @scala.inline
-  def apply(
-    ApiEndpoint: string = null,
-    ApiId: Id = null,
-    ApiKeySelectionExpression: SelectionExpression = null,
-    CorsConfiguration: Cors = null,
-    CreatedDate: timestampIso8601 = null,
-    Description: StringWithLengthBetween0And1024 = null,
-    DisableSchemaValidation: js.UndefOr[boolean] = js.undefined,
-    ImportInfo: listOfString = null,
-    Name: StringWithLengthBetween1And128 = null,
-    ProtocolType: ProtocolType = null,
-    RouteSelectionExpression: SelectionExpression = null,
-    Tags: Tags = null,
-    Version: StringWithLengthBetween1And64 = null,
-    Warnings: listOfString = null
-  ): ImportApiResponse = {
+  def apply(): ImportApiResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApiEndpoint != null) __obj.updateDynamic("ApiEndpoint")(ApiEndpoint.asInstanceOf[js.Any])
-    if (ApiId != null) __obj.updateDynamic("ApiId")(ApiId.asInstanceOf[js.Any])
-    if (ApiKeySelectionExpression != null) __obj.updateDynamic("ApiKeySelectionExpression")(ApiKeySelectionExpression.asInstanceOf[js.Any])
-    if (CorsConfiguration != null) __obj.updateDynamic("CorsConfiguration")(CorsConfiguration.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableSchemaValidation)) __obj.updateDynamic("DisableSchemaValidation")(DisableSchemaValidation.get.asInstanceOf[js.Any])
-    if (ImportInfo != null) __obj.updateDynamic("ImportInfo")(ImportInfo.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ProtocolType != null) __obj.updateDynamic("ProtocolType")(ProtocolType.asInstanceOf[js.Any])
-    if (RouteSelectionExpression != null) __obj.updateDynamic("RouteSelectionExpression")(RouteSelectionExpression.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
-    if (Warnings != null) __obj.updateDynamic("Warnings")(Warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportApiResponse]
   }
+  @scala.inline
+  implicit class ImportApiResponseOps[Self <: ImportApiResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiEndpoint(value: string): Self = this.set("ApiEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiEndpoint: Self = this.set("ApiEndpoint", js.undefined)
+    @scala.inline
+    def setApiId(value: Id): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiId: Self = this.set("ApiId", js.undefined)
+    @scala.inline
+    def setApiKeySelectionExpression(value: SelectionExpression): Self = this.set("ApiKeySelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiKeySelectionExpression: Self = this.set("ApiKeySelectionExpression", js.undefined)
+    @scala.inline
+    def setCorsConfiguration(value: Cors): Self = this.set("CorsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorsConfiguration: Self = this.set("CorsConfiguration", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: timestampIso8601): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDisableSchemaValidation(value: boolean): Self = this.set("DisableSchemaValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableSchemaValidation: Self = this.set("DisableSchemaValidation", js.undefined)
+    @scala.inline
+    def setImportInfoVarargs(value: string*): Self = this.set("ImportInfo", js.Array(value :_*))
+    @scala.inline
+    def setImportInfo(value: listOfString): Self = this.set("ImportInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportInfo: Self = this.set("ImportInfo", js.undefined)
+    @scala.inline
+    def setName(value: StringWithLengthBetween1And128): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setProtocolType(value: ProtocolType): Self = this.set("ProtocolType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocolType: Self = this.set("ProtocolType", js.undefined)
+    @scala.inline
+    def setRouteSelectionExpression(value: SelectionExpression): Self = this.set("RouteSelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteSelectionExpression: Self = this.set("RouteSelectionExpression", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVersion(value: StringWithLengthBetween1And64): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+    @scala.inline
+    def setWarningsVarargs(value: string*): Self = this.set("Warnings", js.Array(value :_*))
+    @scala.inline
+    def setWarnings(value: listOfString): Self = this.set("Warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnings: Self = this.set("Warnings", js.undefined)
+  }
+  
 }
 

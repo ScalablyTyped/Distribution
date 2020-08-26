@@ -42,26 +42,58 @@ trait ApplicationDescription extends js.Object {
 
 object ApplicationDescription {
   @scala.inline
-  def apply(
-    ApplicationArn: ApplicationArn = null,
-    ApplicationName: ApplicationName = null,
-    ConfigurationTemplates: ConfigurationTemplateNamesList = null,
-    DateCreated: CreationDate = null,
-    DateUpdated: UpdateDate = null,
-    Description: Description = null,
-    ResourceLifecycleConfig: ApplicationResourceLifecycleConfig = null,
-    Versions: VersionLabelsList = null
-  ): ApplicationDescription = {
+  def apply(): ApplicationDescription = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationArn != null) __obj.updateDynamic("ApplicationArn")(ApplicationArn.asInstanceOf[js.Any])
-    if (ApplicationName != null) __obj.updateDynamic("ApplicationName")(ApplicationName.asInstanceOf[js.Any])
-    if (ConfigurationTemplates != null) __obj.updateDynamic("ConfigurationTemplates")(ConfigurationTemplates.asInstanceOf[js.Any])
-    if (DateCreated != null) __obj.updateDynamic("DateCreated")(DateCreated.asInstanceOf[js.Any])
-    if (DateUpdated != null) __obj.updateDynamic("DateUpdated")(DateUpdated.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ResourceLifecycleConfig != null) __obj.updateDynamic("ResourceLifecycleConfig")(ResourceLifecycleConfig.asInstanceOf[js.Any])
-    if (Versions != null) __obj.updateDynamic("Versions")(Versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationDescription]
   }
+  @scala.inline
+  implicit class ApplicationDescriptionOps[Self <: ApplicationDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationArn(value: ApplicationArn): Self = this.set("ApplicationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationArn: Self = this.set("ApplicationArn", js.undefined)
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    @scala.inline
+    def setConfigurationTemplatesVarargs(value: ConfigurationTemplateName*): Self = this.set("ConfigurationTemplates", js.Array(value :_*))
+    @scala.inline
+    def setConfigurationTemplates(value: ConfigurationTemplateNamesList): Self = this.set("ConfigurationTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationTemplates: Self = this.set("ConfigurationTemplates", js.undefined)
+    @scala.inline
+    def setDateCreated(value: CreationDate): Self = this.set("DateCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateCreated: Self = this.set("DateCreated", js.undefined)
+    @scala.inline
+    def setDateUpdated(value: UpdateDate): Self = this.set("DateUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateUpdated: Self = this.set("DateUpdated", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = this.set("ResourceLifecycleConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceLifecycleConfig: Self = this.set("ResourceLifecycleConfig", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: VersionLabel*): Self = this.set("Versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: VersionLabelsList): Self = this.set("Versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("Versions", js.undefined)
+  }
+  
 }
 

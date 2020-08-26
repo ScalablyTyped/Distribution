@@ -19,10 +19,10 @@ object tooltipMod extends js.Object {
     var getArrowProps: js.Any = js.native
     var getTooltipProps: js.Any = js.native
     var getTooltipRef: js.Any = js.native
-    var handleOutsideClick: js.UndefOr[js.Any] = js.native
-    var handleOutsideRightClick: js.UndefOr[js.Any] = js.native
+    var handleOutsideClick: js.Any = js.native
+    var handleOutsideRightClick: js.Any = js.native
     var isTriggeredBy: js.Any = js.native
-    var observer: js.UndefOr[js.Any] = js.native
+    var observer: js.Any = js.native
     var removeOutsideClickHandler: js.Any = js.native
     var removeOutsideRightClickHandler: js.Any = js.native
     var tooltipRef: js.Any = js.native

@@ -5,39 +5,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * The pod this Toleration is attached to tolerates any taint that matches the triple
-  * <key,value,effect> using the matching operator <operator>.
+  * The pod this Toleration is attached to tolerates any taint that matches the triple <key,value,effect> using the matching operator <operator>.
   */
+@js.native
 trait Toleration extends js.Object {
   /**
-    * Effect indicates the taint effect to match. Empty means match all taint effects. When
-    * specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
+    * Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
     */
-  val effect: String
+  var effect: String = js.native
   /**
-    * Key is the taint key that the toleration applies to. Empty means match all taint keys. If
-    * the key is empty, operator must be Exists; this combination means to match all values and
-    * all keys.
+    * Key is the taint key that the toleration applies to. Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
     */
-  val key: String
+  var key: String = js.native
   /**
-    * Operator represents a key's relationship to the value. Valid operators are Exists and
-    * Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can
-    * tolerate all taints of a particular category.
+    * Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
     */
-  val operator: String
+  var operator: String = js.native
   /**
-    * TolerationSeconds represents the period of time the toleration (which must be of effect
-    * NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set,
-    * which means tolerate the taint forever (do not evict). Zero and negative values will be
-    * treated as 0 (evict immediately) by the system.
+    * TolerationSeconds represents the period of time the toleration (which must be of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
     */
-  val tolerationSeconds: Double
+  var tolerationSeconds: Double = js.native
   /**
-    * Value is the taint value the toleration matches to. If the operator is Exists, the value
-    * should be empty, otherwise just a regular string.
+    * Value is the taint value the toleration matches to. If the operator is Exists, the value should be empty, otherwise just a regular string.
     */
-  val value: String
+  var value: String = js.native
 }
 
 object Toleration {
@@ -46,5 +37,28 @@ object Toleration {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], tolerationSeconds = tolerationSeconds.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Toleration]
   }
+  @scala.inline
+  implicit class TolerationOps[Self <: Toleration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEffect(value: String): Self = this.set("effect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTolerationSeconds(value: Double): Self = this.set("tolerationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+  }
+  
 }
 

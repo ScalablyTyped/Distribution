@@ -1,55 +1,55 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EditorProperties extends ComponentProperties {
   /**
     * The content inside the text editor
     */
-  var content: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[String] = js.native
   /**
     * The languge mode for this text editor. The language mode is SQL by default.
     */
-  var languageMode: js.UndefOr[String] = js.undefined
+  var languageMode: js.UndefOr[String] = js.native
   /**
     * Minimum height for editor component
     */
-  var minimumHeight: js.UndefOr[Double] = js.undefined
+  var minimumHeight: js.UndefOr[Double] = js.native
 }
 
 object EditorProperties {
   @scala.inline
-  def apply(
-    CSSStyles: StringDictionary[String] = null,
-    ariaLabel: String = null,
-    ariaRole: String = null,
-    ariaSelected: js.UndefOr[Boolean] = js.undefined,
-    content: String = null,
-    display: DisplayType = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    languageMode: String = null,
-    minimumHeight: js.UndefOr[Double] = js.undefined,
-    position: PositionType = null,
-    width: Double | String = null
-  ): EditorProperties = {
+  def apply(): EditorProperties = {
     val __obj = js.Dynamic.literal()
-    if (CSSStyles != null) __obj.updateDynamic("CSSStyles")(CSSStyles.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (languageMode != null) __obj.updateDynamic("languageMode")(languageMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumHeight)) __obj.updateDynamic("minimumHeight")(minimumHeight.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorProperties]
   }
+  @scala.inline
+  implicit class EditorPropertiesOps[Self <: EditorProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setLanguageMode(value: String): Self = this.set("languageMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageMode: Self = this.set("languageMode", js.undefined)
+    @scala.inline
+    def setMinimumHeight(value: Double): Self = this.set("minimumHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumHeight: Self = this.set("minimumHeight", js.undefined)
+  }
+  
 }
 

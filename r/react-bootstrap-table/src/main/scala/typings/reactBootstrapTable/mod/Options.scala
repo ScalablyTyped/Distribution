@@ -4,10 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
+import typings.reactBootstrapTable.anon.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options[TRow /* <: js.Object */] extends js.Object {
   /**
     * Assign a callback function which will be called after triggering column filtering.
@@ -20,7 +22,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     */
   var afterColumnFilter: js.UndefOr[
     js.Function2[/* filterConds */ js.Array[FilterData[_]], /* result */ js.Array[TRow], Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Assign a callback function which will be called after row delete.
     * This function takes two arguments:
@@ -29,28 +31,28 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     */
   var afterDeleteRow: js.UndefOr[
     js.Function2[/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow], Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Assign a callback function which will be called after inserting a row.
     * This function takes one argument: row, which means the whole row data you added.
     */
-  var afterInsertRow: js.UndefOr[js.Function1[/* row */ TRow, Unit]] = js.undefined
+  var afterInsertRow: js.UndefOr[js.Function1[/* row */ TRow, Unit]] = js.native
   /**
     * Assign a callback function which will be called after triggering searching.
     * This function takes two argument: search and result.
     *   `search`: The search text from the user.
     *   `result`: The results after searching (array of rows that matched the search).
     */
-  var afterSearch: js.UndefOr[js.Function2[/* search */ String, /* result */ js.Array[TRow], Unit]] = js.undefined
+  var afterSearch: js.UndefOr[js.Function2[/* search */ String, /* result */ js.Array[TRow], Unit]] = js.native
   /**
     * Assign a callback function that will be called after table updates.
     */
-  var afterTableComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var afterTableComplete: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Flag to indicate that the table should always show next/previous buttons even when there is not next/previous
     * page.
     */
-  var alwaysShowAllBtns: js.UndefOr[Boolean] = js.undefined
+  var alwaysShowAllBtns: js.UndefOr[Boolean] = js.native
   /**
     * You can do something before the toastr pop or even disable the toastr!!
     * Returning false or void will not trigger the toastr.
@@ -59,19 +61,19 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     */
   var beforeShowError: js.UndefOr[
     js.Function3[/* type */ EditValidatorType, /* msg */ String, /* title */ String, Boolean | Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Button group which contain the insert, drop, show only select and export CSV buttons, these button all
     * grouped as btn-group class in bootstrap. This is a chance that you can custom this button group.
     * Give a btnGroup in options props and btnGroup only accept a function and a JSX returned value is necessary.
     * This lets you customize just the left-hand-side of the toolbar if desired.
     */
-  var btnGroup: js.UndefOr[js.Function1[/* props */ ButtonGroupProps, ReactElement]] = js.undefined
+  var btnGroup: js.UndefOr[js.Function1[/* props */ ButtonGroupProps, ReactElement]] = js.native
   /**
     * Only work on enable search. If true, there will be a button beside the search input field
     * that will empty the field when clicked.
     */
-  var clearSearch: js.UndefOr[Boolean] = js.undefined
+  var clearSearch: js.UndefOr[Boolean] = js.native
   /**
     * You can custom the clear button for search field by giving clearSearchBtn in options props.
     * clearSearchBtn only accept a function and a JSX returned value is necessary.
@@ -84,25 +86,25 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], 
       ReactElement
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Customize the text on the close button in the insert modal.
     */
-  var closeText: js.UndefOr[String] = js.undefined
+  var closeText: js.UndefOr[String] = js.native
   /**
     * Set the default search condition.
     */
-  var defaultSearch: js.UndefOr[String] = js.undefined
+  var defaultSearch: js.UndefOr[String] = js.native
   /**
     * Specify the default sort column.
     * Note: when using cleanSort(), this default sort column will be restored.
     */
-  var defaultSortName: js.UndefOr[/* keyof TRow */ String] = js.undefined
+  var defaultSortName: js.UndefOr[/* keyof TRow */ String] = js.native
   /**
     * Assign a default sort order.
     * Note: when using cleanSort(), this default sort order will be restored.
     */
-  var defaultSortOrder: js.UndefOr[SortOrder] = js.undefined
+  var defaultSortOrder: js.UndefOr[SortOrder] = js.native
   /**
     * It's available to customize delete button by configuring deleteBtn in options props, deleteBtn onl<y
     * accept a function and a JSX returned value is necessary. This function will take one argument: onClick.
@@ -115,15 +117,15 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], 
       ReactElement
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Customize the text on the delete button.
     */
-  var deleteText: js.UndefOr[String] = js.undefined
+  var deleteText: js.UndefOr[String] = js.native
   /**
     * Expand all rows
     */
-  var expandAll: js.UndefOr[Boolean] = js.undefined
+  var expandAll: js.UndefOr[Boolean] = js.native
   /**
     * Custom class to use for the expanded content section of an expanded row. This can either be a string, or a
     * function that returns a string and takes three arguments: row, rowIndex, isExpanding.
@@ -133,29 +135,29 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     */
   var expandBodyClass: js.UndefOr[
     String | (js.Function3[/* row */ TRow, /* rowIndex */ Double, /* isExpanding */ Boolean, String])
-  ] = js.undefined
+  ] = js.native
   /**
     * Tell react-bootstrap-table how to trigger expanding by clicking on 'row' or 'column' level.
     * If the value is 'column', by default all the columns are expandable. If you want to specify some columns as
     * unexpandable, check expandable.
     * Default is 'row'.
     */
-  var expandBy: js.UndefOr[ExpandBy] = js.undefined
+  var expandBy: js.UndefOr[ExpandBy] = js.native
   /**
     * Custom class to use for the row itself for an expanded row when it has been expanded. This can either be a
     * string, or a function that returns a string and takes two arguments: row and rowIndex.
     *   `row`: the expanded row.
     *   `rowIndex`: index number of the row.
     */
-  var expandParentClass: js.UndefOr[String | (js.Function2[/* row */ TRow, /* rowIndex */ Double, String])] = js.undefined
+  var expandParentClass: js.UndefOr[String | (js.Function2[/* row */ TRow, /* rowIndex */ Double, String])] = js.native
   /**
     * Background color on expanded rows (css color value).
     */
-  var expandRowBgColor: js.UndefOr[String] = js.undefined
+  var expandRowBgColor: js.UndefOr[String] = js.native
   /**
     * Provide an array of expanded rows for the table.
     */
-  var expanding: js.UndefOr[js.Array[Double | String]] = js.undefined
+  var expanding: js.UndefOr[js.Array[Double | String]] = js.native
   /**
     * It's available to customize the export csv button by configuring exportCSVBtn in options props, exportCSVBtn only
     * accept a function and a JSX returned value is necessary. This function will take one argument: onClick.
@@ -168,25 +170,25 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], 
       ReactElement
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Customize the field separator in a CSV export file. Default is ','.
     */
-  var exportCSVSeparator: js.UndefOr[String] = js.undefined
+  var exportCSVSeparator: js.UndefOr[String] = js.native
   /**
     * Customize the text on the export csv button
     */
-  var exportCSVText: js.UndefOr[String] = js.undefined
+  var exportCSVText: js.UndefOr[String] = js.native
   /**
     * Customize the text of first page button.
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var firstPage: js.UndefOr[js.Any] = js.undefined
+  var firstPage: js.UndefOr[js.Any] = js.native
   /**
     * Customize the tooltip text shown when hovering over the firstPage button.
     */
-  var firstPageTitle: js.UndefOr[String] = js.undefined
+  var firstPageTitle: js.UndefOr[String] = js.native
   /**
     * Assign a callback function which will be called when deleting a row.
     * It gives you a chance to customize your confirmation for row deletion.
@@ -196,19 +198,19 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     */
   var handleConfirmDeleteRow: js.UndefOr[
     js.Function2[/* next */ js.Function0[Unit], /* rowKeys */ js.Array[Double | String], Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Default is false. If true, the pagination list will be hidden when there is only one page.
     */
-  var hidePageListOnlyOnePage: js.UndefOr[Boolean] = js.undefined
+  var hidePageListOnlyOnePage: js.UndefOr[Boolean] = js.native
   /**
     * Hide the dropdown list for size per page, default is false.
     */
-  var hideSizePerPage: js.UndefOr[Boolean] = js.undefined
+  var hideSizePerPage: js.UndefOr[Boolean] = js.native
   /**
     * Default is false, if true means you want to ignore any editable columns when creating the insert form.
     */
-  var ignoreEditable: js.UndefOr[Boolean] = js.undefined
+  var ignoreEditable: js.UndefOr[Boolean] = js.native
   /**
     * It's available to customize the insert button by configuring insertBtn in options props, insertBtn only
     * accept a function and a JSX returned value is necessary. This function will take one argument: onClick.
@@ -221,12 +223,12 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], 
       ReactElement
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Custom message to show when the InsertModal save fails validation.
     * Default message is 'Form validate errors, please checking!'
     */
-  var insertFailIndicator: js.UndefOr[String] = js.undefined
+  var insertFailIndicator: js.UndefOr[String] = js.native
   /**
     * You can customize everything in the insert modal via options.insertModal and we give you the event
     * callback, props and some informations: onModalClose, onSave, columns, validateState, ignoreEditable
@@ -241,7 +243,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* ignoreEditable */ Boolean, 
       ReactElement
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * You can customize the body of the insert modal via options.insertModalBody and we give you the following
     * arguments: columns, validateState {[fieldname]: errorMsg}, ignoreEditable
@@ -257,7 +259,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* ignoreEditable */ Boolean, 
       ReactElement
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * It's available to custom the footer of insert modal by configuring options.insertModalFooter. It only accepts
     * a function and a JSX returned value is necessary. This function will take two arguments: closeModal and save.
@@ -269,7 +271,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     */
   var insertModalFooter: js.UndefOr[
     js.Function2[/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit], ReactElement]
-  ] = js.undefined
+  ] = js.native
   /**
     * It's available to custom the header of insert modal by configuring options.insertModalHeader. It only accepts
     * a function and a JSX returned value is necessary. This function will take two arguments: closeModal and save.
@@ -281,51 +283,51 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     */
   var insertModalHeader: js.UndefOr[
     js.Function2[/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit], ReactElement]
-  ] = js.undefined
+  ] = js.native
   /**
     * Customize the text on the insert button.
     */
-  var insertText: js.UndefOr[String] = js.undefined
+  var insertText: js.UndefOr[String] = js.native
   /**
     * Function to verify that a key being generated in the Insert Modal is a valid key.
     * If the key fails validation, return a string error message.
     * If the key is ok, return void.
     */
-  var isValidKey: js.UndefOr[js.Function1[/* key */ Double | String, String | Unit]] = js.undefined
+  var isValidKey: js.UndefOr[js.Function1[/* key */ Double | String, String | Unit]] = js.native
   /**
     * Flag to indicate that the table should keep the SizePerPage dropdown open if the table rerenders without any
     * user interaction.
     */
-  var keepSizePerPageState: js.UndefOr[Boolean] = js.undefined
+  var keepSizePerPageState: js.UndefOr[Boolean] = js.native
   /**
     * Customize the text of last page button.
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var lastPage: js.UndefOr[js.Any] = js.undefined
+  var lastPage: js.UndefOr[js.Any] = js.native
   /**
     * Customize the tooltip text shown when hovering over the lastPage button.
     */
-  var lastPageTitle: js.UndefOr[String] = js.undefined
+  var lastPageTitle: js.UndefOr[String] = js.native
   /**
     * Customize the text of next page button.
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var nextPage: js.UndefOr[js.Any] = js.undefined
+  var nextPage: js.UndefOr[js.Any] = js.native
   /**
     * Customize the tooltip text shown when hovering over the nextPage button.
     */
-  var nextPageTitle: js.UndefOr[String] = js.undefined
+  var nextPageTitle: js.UndefOr[String] = js.native
   /**
     * Ability to disable the BOM in the exported CSV file.
     * BOM = prepend BOM for UTF-8 XML and text/ * types(including HTML) when saving the file.
     */
-  var noAutoBOM: js.UndefOr[Boolean] = js.undefined
+  var noAutoBOM: js.UndefOr[Boolean] = js.native
   /**
     * Change the text displayed on the table if data is empty.
     */
-  var noDataText: js.UndefOr[String | ReactElement] = js.undefined
+  var noDataText: js.UndefOr[String | ReactElement] = js.native
   /**
     * Assign a callback function which will be called when a row is added. This function
     * takes three arguments:
@@ -342,7 +344,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* errorCallback */ js.Function1[/* message */ String, Unit], 
       String | Boolean
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Callback when the value in a cell has been modified. It accepts a function that takes three arguments:
     *   `row`: row that is being edited.
@@ -358,7 +360,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ /* value */ js.Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ js.Any
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Assign a callback function which will be called when a row been deleted.
     * This function takes two arguments:
@@ -367,7 +369,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     */
   var onDeleteRow: js.UndefOr[
     js.Function2[/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow], Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Set a function to be called when expanding or collapsing a row. This function takes three arguments:
     *   `rowKey`: dataField key for the row that is expanding or collapsing.
@@ -381,33 +383,33 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* event */ MouseEvent[_, NativeMouseEvent], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Assign a callback function which will be called when the export csv button is clicked.
     * In this function, you need to return an array of rows to be exported.
     */
-  var onExportToCSV: js.UndefOr[js.Function0[js.Array[TRow]]] = js.undefined
+  var onExportToCSV: js.UndefOr[js.Function0[js.Array[TRow]]] = js.native
   /**
     * Assign a callback function which will be called when a filter condition changes.
     * This function takes one argument: filterObj which is an object which take dataField
     * as object key and the value is the filter condition.
     */
-  var onFilterChange: js.UndefOr[js.Function1[/* filterObject */ FilterData[_], Unit]] = js.undefined
+  var onFilterChange: js.UndefOr[js.Function1[/* filterObject */ FilterData[_], Unit]] = js.native
   /**
     * Assign a callback function which will be called when mouse enters the table.
     */
-  var onMouseEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Assign a callback function which will be called when mouse leaves the table.
     */
-  var onMouseLeave: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onMouseLeave: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Assign a callback function which will be called after page changed.
     * This function takes two argument: page and sizePerPage.
     *   `page`: New page number
     *   `sizePerPage`: The number of rows to display in one page.
     */
-  var onPageChange: js.UndefOr[js.Function2[/* page */ Double, /* sizePerPage */ Double, Unit]] = js.undefined
+  var onPageChange: js.UndefOr[js.Function2[/* page */ Double, /* sizePerPage */ Double, Unit]] = js.native
   /**
     * Assign a callback function which will be called after a row click.
     * This function takes four arguments:
@@ -424,28 +426,28 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* event */ MouseEvent[_, NativeMouseEvent], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Assign a callback function which will be called after a row double click.
     * This function takes two arguments:
     *   `row`: which is the row data that was double clicked on.
     *   `event`: the double click event.
     */
-  var onRowDoubleClick: js.UndefOr[js.Function2[/* row */ TRow, /* event */ MouseEvent[_, NativeMouseEvent], Unit]] = js.undefined
+  var onRowDoubleClick: js.UndefOr[js.Function2[/* row */ TRow, /* event */ MouseEvent[_, NativeMouseEvent], Unit]] = js.native
   /**
     * Assign a callback function which will be called when mouse leaves a row in table.
     * This function takes two arguments:
     *   `row`: the row data the mouse entered
     *   `e`: the mouse event data
     */
-  var onRowMouseOut: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent], Unit]] = js.undefined
+  var onRowMouseOut: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent], Unit]] = js.native
   /**
     * Assign a callback function which will be called when the mouse enters a row in table.
     * This function takes two arguments:
     *   `row`: the row data the mouse entered
     *   `e`: the mouse event data
     */
-  var onRowMouseOver: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent], Unit]] = js.undefined
+  var onRowMouseOver: js.UndefOr[js.Function2[/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent], Unit]] = js.native
   /**
     * Assign a callback function which will be called when search text changes. This function takes
     * three argument:
@@ -461,14 +463,14 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* multiColumnSearch */ Boolean, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Assign a callback function which will be called after the size per page (number of rows per page)
     * has been changed.
     * This function takes one argument: sizePerPage.
     *   `sizePerPage`: The new number of rows to display in one page.
     */
-  var onSizePerPageList: js.UndefOr[js.Function1[/* sizePerPage */ Double, Unit]] = js.undefined
+  var onSizePerPageList: js.UndefOr[js.Function1[/* sizePerPage */ Double, Unit]] = js.native
   /**
     * Assign a callback function which will be called after triggering sorting.
     * This function takes two argument: `sortName` and `sortOrder`.
@@ -481,30 +483,30 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder), 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Specify that only one row should be able to be expanded at the same time.
     */
-  var onlyOneExpanding: js.UndefOr[Boolean] = js.undefined
+  var onlyOneExpanding: js.UndefOr[Boolean] = js.native
   /**
     * Accept a number, which means the page you want to show as default.
     */
-  var page: js.UndefOr[Double] = js.undefined
+  var page: js.UndefOr[Double] = js.native
   /**
     * Allows you to modify where to start counting the pages, e.g. to set the first page number to 0.
     * Default is 1.
     */
-  var pageStartIndex: js.UndefOr[Double] = js.undefined
+  var pageStartIndex: js.UndefOr[Double] = js.native
   /**
     * Function to customize all of components for pagination, including the sizePerPage dropdown and the
     * pagination list.
     */
-  var paginationPanel: js.UndefOr[js.Function1[/* props */ PaginationPanelProps, ReactElement]] = js.undefined
+  var paginationPanel: js.UndefOr[js.Function1[/* props */ PaginationPanelProps, ReactElement]] = js.native
   /**
     * Location for the pagination panel to be displayed. Options are 'top' (above the table), 'bottom'
     * (below the table) and 'both' (above and below the table).
     */
-  var paginationPosition: js.UndefOr[PaginationPostion] = js.undefined
+  var paginationPosition: js.UndefOr[PaginationPostion] = js.native
   /**
     * Display a short text showing the total number of rows and current lines displayed,
     * default is false. If you want to customize this short text, you can give a function
@@ -515,34 +517,34 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     */
   var paginationShowsTotal: js.UndefOr[
     Boolean | (js.Function3[/* start */ Double, /* to */ Double, /* total */ Double, String | ReactElement])
-  ] = js.undefined
+  ] = js.native
   /**
     * Number of page buttons to show on the pagination bar, default is 5.
     * i.e. previous 2 pages + current page + next two pages = 5.
     */
-  var paginationSize: js.UndefOr[Double] = js.undefined
+  var paginationSize: js.UndefOr[Double] = js.native
   /**
     * Customize the text of previouse page button.
     * If using the default pagination panel, this should be a string to use for the button label.
     * If creating a custom pagination panel, this is passed to the panel and can be of any type desired.
     */
-  var prePage: js.UndefOr[js.Any] = js.undefined
+  var prePage: js.UndefOr[js.Any] = js.native
   /**
     * Customize the tooltip text shown when hovering over the prePage button.
     */
-  var prePageTitle: js.UndefOr[String] = js.undefined
+  var prePageTitle: js.UndefOr[String] = js.native
   /**
     * Default is true. If false, during printing the toolbar is hidden.
     */
-  var printToolBar: js.UndefOr[Boolean] = js.undefined
+  var printToolBar: js.UndefOr[Boolean] = js.native
   /**
     * Customize the text on the save button in the insert modal.
     */
-  var saveText: js.UndefOr[String] = js.undefined
+  var saveText: js.UndefOr[String] = js.native
   /**
     * A delay for trigger search after a keyup (millisecond)
     */
-  var searchDelayTime: js.UndefOr[Double] = js.undefined
+  var searchDelayTime: js.UndefOr[Double] = js.native
   /**
     * You can custom the search input field only by searchField in options props. searchField only accept a
     * function and a JSX returned value is necessary.
@@ -550,7 +552,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     * The default `SearchField` component is also exported as a component, so that you can use it as the base for
     * your custom component.
     */
-  var searchField: js.UndefOr[js.Function1[/* props */ SearchFieldProps, ReactElement]] = js.undefined
+  var searchField: js.UndefOr[js.Function1[/* props */ SearchFieldProps, ReactElement]] = js.native
   /**
     * You can custom the whole search panel(right side) by searchPanel in options props. searchPanel only accept
     * a function and a JSX returned value is necessary. This function will take one argument: props, that contains:
@@ -561,7 +563,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     *   `clearBtnClick`: the callback function to use when the clear search button is clicked
     *   `search`: the callback function for triggering the search, which takes the search text as an input.
     */
-  var searchPanel: js.UndefOr[js.Function1[/* props */ SearchPanelProps, ReactElement]] = js.undefined
+  var searchPanel: js.UndefOr[js.Function1[/* props */ SearchPanelProps, ReactElement]] = js.native
   /**
     * It's available to custom select only toggle button by configuring showSelectedOnlyBtn in options props.
     * showSelectedOnlyBtn only accept a function and a JSX returned value is necessary.
@@ -576,230 +578,450 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* showSelected */ Boolean, 
       ReactElement
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Current chosen size per page.
     */
-  var sizePerPage: js.UndefOr[Double] = js.undefined
+  var sizePerPage: js.UndefOr[Double] = js.native
   /**
     * Function to customize the sizePerPage dropdown.
     */
-  var sizePerPageDropDown: js.UndefOr[js.Function1[/* props */ SizePerPageFunctionProps, ReactElement]] = js.undefined
+  var sizePerPageDropDown: js.UndefOr[js.Function1[/* props */ SizePerPageFunctionProps, ReactElement]] = js.native
   /**
     * You can change the dropdown list for size per page if you enable pagination.
     * Default is [10, 25, 30, 50].
     */
-  var sizePerPageList: js.UndefOr[SizePerPageList] = js.undefined
+  var sizePerPageList: js.UndefOr[SizePerPageList] = js.native
   /**
     * Set to false to disable sort indicators on header columns, default is true.
     */
-  var sortIndicator: js.UndefOr[Boolean] = js.undefined
+  var sortIndicator: js.UndefOr[Boolean] = js.native
   /**
     * Provide the name of the column that should be sorted by.
     * If multi-column sort is active, this is an array of columns.
     * If there should be no active sort, both sortName and sortOrder should be undefined.
     */
-  var sortName: js.UndefOr[(/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String])] = js.undefined
+  var sortName: js.UndefOr[(/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String])] = js.native
   /**
     * Specify whether the sort should be ascending or descending.
     * If multi-column sort is active, this is an array of sortOrder items.
     * If there should be no active sort, both sortName and sortOrder should be undefined.
     */
-  var sortOrder: js.UndefOr[SortOrder | js.Array[SortOrder]] = js.undefined
+  var sortOrder: js.UndefOr[SortOrder | js.Array[SortOrder]] = js.native
   /**
     * ToolBar is the area on the top of table, it contain the search panel, buttons for data manipulation.
     * After v3.0.0, you can custom all the components in the ToolBar also itself too.
     * Give a toolBar in options props and toolBar only accept a function and a JSX returned value is necessary.
     */
-  var toolBar: js.UndefOr[js.Function1[/* props */ ToolBarProps, ReactElement]] = js.undefined
+  var toolBar: js.UndefOr[js.Function1[/* props */ ToolBarProps, ReactElement]] = js.native
   /**
     * Flag to indicate whether there should be buttons for First and Last page.
     */
-  var withFirstAndLast: js.UndefOr[Boolean] = js.undefined
+  var withFirstAndLast: js.UndefOr[Boolean] = js.native
   /**
     * If true, this hides the noDataText on the table when the tableis empty. Default is false.
     */
-  var withoutNoDataText: js.UndefOr[Boolean] = js.undefined
+  var withoutNoDataText: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply[/* <: js.Object */ TRow](
-    afterColumnFilter: (/* filterConds */ js.Array[FilterData[_]], /* result */ js.Array[TRow]) => Unit = null,
-    afterDeleteRow: (/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow]) => Unit = null,
-    afterInsertRow: /* row */ TRow => Unit = null,
-    afterSearch: (/* search */ String, /* result */ js.Array[TRow]) => Unit = null,
-    afterTableComplete: () => Unit = null,
-    alwaysShowAllBtns: js.UndefOr[Boolean] = js.undefined,
-    beforeShowError: (/* type */ EditValidatorType, /* msg */ String, /* title */ String) => Boolean | Unit = null,
-    btnGroup: /* props */ ButtonGroupProps => ReactElement = null,
-    clearSearch: js.UndefOr[Boolean] = js.undefined,
-    clearSearchBtn: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement = null,
-    closeText: String = null,
-    defaultSearch: String = null,
-    defaultSortName: /* keyof TRow */ String = null,
-    defaultSortOrder: SortOrder = null,
-    deleteBtn: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement = null,
-    deleteText: String = null,
-    expandAll: js.UndefOr[Boolean] = js.undefined,
-    expandBodyClass: String | (js.Function3[/* row */ TRow, /* rowIndex */ Double, /* isExpanding */ Boolean, String]) = null,
-    expandBy: ExpandBy = null,
-    expandParentClass: String | (js.Function2[/* row */ TRow, /* rowIndex */ Double, String]) = null,
-    expandRowBgColor: String = null,
-    expanding: js.Array[Double | String] = null,
-    exportCSVBtn: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement = null,
-    exportCSVSeparator: String = null,
-    exportCSVText: String = null,
-    firstPage: js.Any = null,
-    firstPageTitle: String = null,
-    handleConfirmDeleteRow: (/* next */ js.Function0[Unit], /* rowKeys */ js.Array[Double | String]) => Unit = null,
-    hidePageListOnlyOnePage: js.UndefOr[Boolean] = js.undefined,
-    hideSizePerPage: js.UndefOr[Boolean] = js.undefined,
-    ignoreEditable: js.UndefOr[Boolean] = js.undefined,
-    insertBtn: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement = null,
-    insertFailIndicator: String = null,
-    insertModal: (/* onModalClose */ js.Function0[Unit], /* onSave */ js.Function1[/* row */ TRow, Unit], /* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ StringDictionary[String], /* ignoreEditable */ Boolean) => ReactElement = null,
-    insertModalBody: (/* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ StringDictionary[String], /* ignoreEditable */ Boolean) => ReactElement = null,
-    insertModalFooter: (/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit]) => ReactElement = null,
-    insertModalHeader: (/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit]) => ReactElement = null,
-    insertText: String = null,
-    isValidKey: /* key */ Double | String => String | Unit = null,
-    keepSizePerPageState: js.UndefOr[Boolean] = js.undefined,
-    lastPage: js.Any = null,
-    lastPageTitle: String = null,
-    nextPage: js.Any = null,
-    nextPageTitle: String = null,
-    noAutoBOM: js.UndefOr[Boolean] = js.undefined,
-    noDataText: String | ReactElement = null,
-    onAddRow: (/* row */ TRow, /* colInfo */ js.Array[ColumnDescription[TRow]], /* errorCallback */ js.Function1[/* message */ String, Unit]) => String | Boolean = null,
-    onCellEdit: (/* row */ TRow, /* fieldName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ /* value */ js.Any) => /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ js.Any = null,
-    onDeleteRow: (/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow]) => Unit = null,
-    onExpand: (/* rowKey */ Double | String, /* isExpand */ Boolean, /* event */ MouseEvent[_, NativeMouseEvent]) => Unit = null,
-    onExportToCSV: () => js.Array[TRow] = null,
-    onFilterChange: /* filterObject */ FilterData[_] => Unit = null,
-    onMouseEnter: () => Unit = null,
-    onMouseLeave: () => Unit = null,
-    onPageChange: (/* page */ Double, /* sizePerPage */ Double) => Unit = null,
-    onRowClick: (/* row */ TRow, /* columnIndex */ Double, /* rowIndex */ Double, /* event */ MouseEvent[_, NativeMouseEvent]) => Unit = null,
-    onRowDoubleClick: (/* row */ TRow, /* event */ MouseEvent[_, NativeMouseEvent]) => Unit = null,
-    onRowMouseOut: (/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent]) => Unit = null,
-    onRowMouseOver: (/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent]) => Unit = null,
-    onSearchChange: (/* searchText */ String, /* colInfos */ js.Array[ColumnDescription[TRow]], /* multiColumnSearch */ Boolean) => Unit = null,
-    onSizePerPageList: /* sizePerPage */ Double => Unit = null,
-    onSortChange: ((/* sortName */ js.Array[/* keyof TRow */ String]) | (/* keyof TRow */ /* sortName */ String), (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder)) => Unit = null,
-    onlyOneExpanding: js.UndefOr[Boolean] = js.undefined,
-    page: js.UndefOr[Double] = js.undefined,
-    pageStartIndex: js.UndefOr[Double] = js.undefined,
-    paginationPanel: /* props */ PaginationPanelProps => ReactElement = null,
-    paginationPosition: PaginationPostion = null,
-    paginationShowsTotal: Boolean | (js.Function3[/* start */ Double, /* to */ Double, /* total */ Double, String | ReactElement]) = null,
-    paginationSize: js.UndefOr[Double] = js.undefined,
-    prePage: js.Any = null,
-    prePageTitle: String = null,
-    printToolBar: js.UndefOr[Boolean] = js.undefined,
-    saveText: String = null,
-    searchDelayTime: js.UndefOr[Double] = js.undefined,
-    searchField: /* props */ SearchFieldProps => ReactElement = null,
-    searchPanel: /* props */ SearchPanelProps => ReactElement = null,
-    showSelectedOnlyBtn: (/* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], /* showSelected */ Boolean) => ReactElement = null,
-    sizePerPage: js.UndefOr[Double] = js.undefined,
-    sizePerPageDropDown: /* props */ SizePerPageFunctionProps => ReactElement = null,
-    sizePerPageList: SizePerPageList = null,
-    sortIndicator: js.UndefOr[Boolean] = js.undefined,
-    sortName: (/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String]) = null,
-    sortOrder: SortOrder | js.Array[SortOrder] = null,
-    toolBar: /* props */ ToolBarProps => ReactElement = null,
-    withFirstAndLast: js.UndefOr[Boolean] = js.undefined,
-    withoutNoDataText: js.UndefOr[Boolean] = js.undefined
-  ): Options[TRow] = {
+  def apply[/* <: js.Object */ TRow](): Options[TRow] = {
     val __obj = js.Dynamic.literal()
-    if (afterColumnFilter != null) __obj.updateDynamic("afterColumnFilter")(js.Any.fromFunction2(afterColumnFilter))
-    if (afterDeleteRow != null) __obj.updateDynamic("afterDeleteRow")(js.Any.fromFunction2(afterDeleteRow))
-    if (afterInsertRow != null) __obj.updateDynamic("afterInsertRow")(js.Any.fromFunction1(afterInsertRow))
-    if (afterSearch != null) __obj.updateDynamic("afterSearch")(js.Any.fromFunction2(afterSearch))
-    if (afterTableComplete != null) __obj.updateDynamic("afterTableComplete")(js.Any.fromFunction0(afterTableComplete))
-    if (!js.isUndefined(alwaysShowAllBtns)) __obj.updateDynamic("alwaysShowAllBtns")(alwaysShowAllBtns.get.asInstanceOf[js.Any])
-    if (beforeShowError != null) __obj.updateDynamic("beforeShowError")(js.Any.fromFunction3(beforeShowError))
-    if (btnGroup != null) __obj.updateDynamic("btnGroup")(js.Any.fromFunction1(btnGroup))
-    if (!js.isUndefined(clearSearch)) __obj.updateDynamic("clearSearch")(clearSearch.get.asInstanceOf[js.Any])
-    if (clearSearchBtn != null) __obj.updateDynamic("clearSearchBtn")(js.Any.fromFunction1(clearSearchBtn))
-    if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
-    if (defaultSearch != null) __obj.updateDynamic("defaultSearch")(defaultSearch.asInstanceOf[js.Any])
-    if (defaultSortName != null) __obj.updateDynamic("defaultSortName")(defaultSortName.asInstanceOf[js.Any])
-    if (defaultSortOrder != null) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.asInstanceOf[js.Any])
-    if (deleteBtn != null) __obj.updateDynamic("deleteBtn")(js.Any.fromFunction1(deleteBtn))
-    if (deleteText != null) __obj.updateDynamic("deleteText")(deleteText.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandAll)) __obj.updateDynamic("expandAll")(expandAll.get.asInstanceOf[js.Any])
-    if (expandBodyClass != null) __obj.updateDynamic("expandBodyClass")(expandBodyClass.asInstanceOf[js.Any])
-    if (expandBy != null) __obj.updateDynamic("expandBy")(expandBy.asInstanceOf[js.Any])
-    if (expandParentClass != null) __obj.updateDynamic("expandParentClass")(expandParentClass.asInstanceOf[js.Any])
-    if (expandRowBgColor != null) __obj.updateDynamic("expandRowBgColor")(expandRowBgColor.asInstanceOf[js.Any])
-    if (expanding != null) __obj.updateDynamic("expanding")(expanding.asInstanceOf[js.Any])
-    if (exportCSVBtn != null) __obj.updateDynamic("exportCSVBtn")(js.Any.fromFunction1(exportCSVBtn))
-    if (exportCSVSeparator != null) __obj.updateDynamic("exportCSVSeparator")(exportCSVSeparator.asInstanceOf[js.Any])
-    if (exportCSVText != null) __obj.updateDynamic("exportCSVText")(exportCSVText.asInstanceOf[js.Any])
-    if (firstPage != null) __obj.updateDynamic("firstPage")(firstPage.asInstanceOf[js.Any])
-    if (firstPageTitle != null) __obj.updateDynamic("firstPageTitle")(firstPageTitle.asInstanceOf[js.Any])
-    if (handleConfirmDeleteRow != null) __obj.updateDynamic("handleConfirmDeleteRow")(js.Any.fromFunction2(handleConfirmDeleteRow))
-    if (!js.isUndefined(hidePageListOnlyOnePage)) __obj.updateDynamic("hidePageListOnlyOnePage")(hidePageListOnlyOnePage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideSizePerPage)) __obj.updateDynamic("hideSizePerPage")(hideSizePerPage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEditable)) __obj.updateDynamic("ignoreEditable")(ignoreEditable.get.asInstanceOf[js.Any])
-    if (insertBtn != null) __obj.updateDynamic("insertBtn")(js.Any.fromFunction1(insertBtn))
-    if (insertFailIndicator != null) __obj.updateDynamic("insertFailIndicator")(insertFailIndicator.asInstanceOf[js.Any])
-    if (insertModal != null) __obj.updateDynamic("insertModal")(js.Any.fromFunction5(insertModal))
-    if (insertModalBody != null) __obj.updateDynamic("insertModalBody")(js.Any.fromFunction3(insertModalBody))
-    if (insertModalFooter != null) __obj.updateDynamic("insertModalFooter")(js.Any.fromFunction2(insertModalFooter))
-    if (insertModalHeader != null) __obj.updateDynamic("insertModalHeader")(js.Any.fromFunction2(insertModalHeader))
-    if (insertText != null) __obj.updateDynamic("insertText")(insertText.asInstanceOf[js.Any])
-    if (isValidKey != null) __obj.updateDynamic("isValidKey")(js.Any.fromFunction1(isValidKey))
-    if (!js.isUndefined(keepSizePerPageState)) __obj.updateDynamic("keepSizePerPageState")(keepSizePerPageState.get.asInstanceOf[js.Any])
-    if (lastPage != null) __obj.updateDynamic("lastPage")(lastPage.asInstanceOf[js.Any])
-    if (lastPageTitle != null) __obj.updateDynamic("lastPageTitle")(lastPageTitle.asInstanceOf[js.Any])
-    if (nextPage != null) __obj.updateDynamic("nextPage")(nextPage.asInstanceOf[js.Any])
-    if (nextPageTitle != null) __obj.updateDynamic("nextPageTitle")(nextPageTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAutoBOM)) __obj.updateDynamic("noAutoBOM")(noAutoBOM.get.asInstanceOf[js.Any])
-    if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
-    if (onAddRow != null) __obj.updateDynamic("onAddRow")(js.Any.fromFunction3(onAddRow))
-    if (onCellEdit != null) __obj.updateDynamic("onCellEdit")(js.Any.fromFunction3(onCellEdit))
-    if (onDeleteRow != null) __obj.updateDynamic("onDeleteRow")(js.Any.fromFunction2(onDeleteRow))
-    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction3(onExpand))
-    if (onExportToCSV != null) __obj.updateDynamic("onExportToCSV")(js.Any.fromFunction0(onExportToCSV))
-    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(js.Any.fromFunction1(onFilterChange))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction0(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction0(onMouseLeave))
-    if (onPageChange != null) __obj.updateDynamic("onPageChange")(js.Any.fromFunction2(onPageChange))
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction4(onRowClick))
-    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(js.Any.fromFunction2(onRowDoubleClick))
-    if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(js.Any.fromFunction2(onRowMouseOut))
-    if (onRowMouseOver != null) __obj.updateDynamic("onRowMouseOver")(js.Any.fromFunction2(onRowMouseOver))
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction3(onSearchChange))
-    if (onSizePerPageList != null) __obj.updateDynamic("onSizePerPageList")(js.Any.fromFunction1(onSizePerPageList))
-    if (onSortChange != null) __obj.updateDynamic("onSortChange")(js.Any.fromFunction2(onSortChange))
-    if (!js.isUndefined(onlyOneExpanding)) __obj.updateDynamic("onlyOneExpanding")(onlyOneExpanding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageStartIndex)) __obj.updateDynamic("pageStartIndex")(pageStartIndex.get.asInstanceOf[js.Any])
-    if (paginationPanel != null) __obj.updateDynamic("paginationPanel")(js.Any.fromFunction1(paginationPanel))
-    if (paginationPosition != null) __obj.updateDynamic("paginationPosition")(paginationPosition.asInstanceOf[js.Any])
-    if (paginationShowsTotal != null) __obj.updateDynamic("paginationShowsTotal")(paginationShowsTotal.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginationSize)) __obj.updateDynamic("paginationSize")(paginationSize.get.asInstanceOf[js.Any])
-    if (prePage != null) __obj.updateDynamic("prePage")(prePage.asInstanceOf[js.Any])
-    if (prePageTitle != null) __obj.updateDynamic("prePageTitle")(prePageTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(printToolBar)) __obj.updateDynamic("printToolBar")(printToolBar.get.asInstanceOf[js.Any])
-    if (saveText != null) __obj.updateDynamic("saveText")(saveText.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchDelayTime)) __obj.updateDynamic("searchDelayTime")(searchDelayTime.get.asInstanceOf[js.Any])
-    if (searchField != null) __obj.updateDynamic("searchField")(js.Any.fromFunction1(searchField))
-    if (searchPanel != null) __obj.updateDynamic("searchPanel")(js.Any.fromFunction1(searchPanel))
-    if (showSelectedOnlyBtn != null) __obj.updateDynamic("showSelectedOnlyBtn")(js.Any.fromFunction2(showSelectedOnlyBtn))
-    if (!js.isUndefined(sizePerPage)) __obj.updateDynamic("sizePerPage")(sizePerPage.get.asInstanceOf[js.Any])
-    if (sizePerPageDropDown != null) __obj.updateDynamic("sizePerPageDropDown")(js.Any.fromFunction1(sizePerPageDropDown))
-    if (sizePerPageList != null) __obj.updateDynamic("sizePerPageList")(sizePerPageList.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortIndicator)) __obj.updateDynamic("sortIndicator")(sortIndicator.get.asInstanceOf[js.Any])
-    if (sortName != null) __obj.updateDynamic("sortName")(sortName.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (toolBar != null) __obj.updateDynamic("toolBar")(js.Any.fromFunction1(toolBar))
-    if (!js.isUndefined(withFirstAndLast)) __obj.updateDynamic("withFirstAndLast")(withFirstAndLast.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutNoDataText)) __obj.updateDynamic("withoutNoDataText")(withoutNoDataText.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[TRow]]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options[_], /* <: js.Object */ TRow] (val x: Self with Options[TRow]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterColumnFilter(value: (/* filterConds */ js.Array[FilterData[_]], /* result */ js.Array[TRow]) => Unit): Self = this.set("afterColumnFilter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAfterColumnFilter: Self = this.set("afterColumnFilter", js.undefined)
+    @scala.inline
+    def setAfterDeleteRow(value: (/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow]) => Unit): Self = this.set("afterDeleteRow", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAfterDeleteRow: Self = this.set("afterDeleteRow", js.undefined)
+    @scala.inline
+    def setAfterInsertRow(value: /* row */ TRow => Unit): Self = this.set("afterInsertRow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterInsertRow: Self = this.set("afterInsertRow", js.undefined)
+    @scala.inline
+    def setAfterSearch(value: (/* search */ String, /* result */ js.Array[TRow]) => Unit): Self = this.set("afterSearch", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAfterSearch: Self = this.set("afterSearch", js.undefined)
+    @scala.inline
+    def setAfterTableComplete(value: () => Unit): Self = this.set("afterTableComplete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteAfterTableComplete: Self = this.set("afterTableComplete", js.undefined)
+    @scala.inline
+    def setAlwaysShowAllBtns(value: Boolean): Self = this.set("alwaysShowAllBtns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysShowAllBtns: Self = this.set("alwaysShowAllBtns", js.undefined)
+    @scala.inline
+    def setBeforeShowError(value: (/* type */ EditValidatorType, /* msg */ String, /* title */ String) => Boolean | Unit): Self = this.set("beforeShowError", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteBeforeShowError: Self = this.set("beforeShowError", js.undefined)
+    @scala.inline
+    def setBtnGroup(value: /* props */ ButtonGroupProps => ReactElement): Self = this.set("btnGroup", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBtnGroup: Self = this.set("btnGroup", js.undefined)
+    @scala.inline
+    def setClearSearch(value: Boolean): Self = this.set("clearSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearSearch: Self = this.set("clearSearch", js.undefined)
+    @scala.inline
+    def setClearSearchBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement): Self = this.set("clearSearchBtn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClearSearchBtn: Self = this.set("clearSearchBtn", js.undefined)
+    @scala.inline
+    def setCloseText(value: String): Self = this.set("closeText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseText: Self = this.set("closeText", js.undefined)
+    @scala.inline
+    def setDefaultSearch(value: String): Self = this.set("defaultSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSearch: Self = this.set("defaultSearch", js.undefined)
+    @scala.inline
+    def setDefaultSortName(value: /* keyof TRow */ String): Self = this.set("defaultSortName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSortName: Self = this.set("defaultSortName", js.undefined)
+    @scala.inline
+    def setDefaultSortOrder(value: SortOrder): Self = this.set("defaultSortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSortOrder: Self = this.set("defaultSortOrder", js.undefined)
+    @scala.inline
+    def setDeleteBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement): Self = this.set("deleteBtn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDeleteBtn: Self = this.set("deleteBtn", js.undefined)
+    @scala.inline
+    def setDeleteText(value: String): Self = this.set("deleteText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteText: Self = this.set("deleteText", js.undefined)
+    @scala.inline
+    def setExpandAll(value: Boolean): Self = this.set("expandAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandAll: Self = this.set("expandAll", js.undefined)
+    @scala.inline
+    def setExpandBodyClassFunction3(value: (/* row */ TRow, /* rowIndex */ Double, /* isExpanding */ Boolean) => String): Self = this.set("expandBodyClass", js.Any.fromFunction3(value))
+    @scala.inline
+    def setExpandBodyClass(
+      value: String | (js.Function3[/* row */ TRow, /* rowIndex */ Double, /* isExpanding */ Boolean, String])
+    ): Self = this.set("expandBodyClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandBodyClass: Self = this.set("expandBodyClass", js.undefined)
+    @scala.inline
+    def setExpandBy(value: ExpandBy): Self = this.set("expandBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandBy: Self = this.set("expandBy", js.undefined)
+    @scala.inline
+    def setExpandParentClassFunction2(value: (/* row */ TRow, /* rowIndex */ Double) => String): Self = this.set("expandParentClass", js.Any.fromFunction2(value))
+    @scala.inline
+    def setExpandParentClass(value: String | (js.Function2[/* row */ TRow, /* rowIndex */ Double, String])): Self = this.set("expandParentClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandParentClass: Self = this.set("expandParentClass", js.undefined)
+    @scala.inline
+    def setExpandRowBgColor(value: String): Self = this.set("expandRowBgColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandRowBgColor: Self = this.set("expandRowBgColor", js.undefined)
+    @scala.inline
+    def setExpandingVarargs(value: (Double | String)*): Self = this.set("expanding", js.Array(value :_*))
+    @scala.inline
+    def setExpanding(value: js.Array[Double | String]): Self = this.set("expanding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanding: Self = this.set("expanding", js.undefined)
+    @scala.inline
+    def setExportCSVBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement): Self = this.set("exportCSVBtn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteExportCSVBtn: Self = this.set("exportCSVBtn", js.undefined)
+    @scala.inline
+    def setExportCSVSeparator(value: String): Self = this.set("exportCSVSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportCSVSeparator: Self = this.set("exportCSVSeparator", js.undefined)
+    @scala.inline
+    def setExportCSVText(value: String): Self = this.set("exportCSVText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportCSVText: Self = this.set("exportCSVText", js.undefined)
+    @scala.inline
+    def setFirstPage(value: js.Any): Self = this.set("firstPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstPage: Self = this.set("firstPage", js.undefined)
+    @scala.inline
+    def setFirstPageTitle(value: String): Self = this.set("firstPageTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstPageTitle: Self = this.set("firstPageTitle", js.undefined)
+    @scala.inline
+    def setHandleConfirmDeleteRow(value: (/* next */ js.Function0[Unit], /* rowKeys */ js.Array[Double | String]) => Unit): Self = this.set("handleConfirmDeleteRow", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHandleConfirmDeleteRow: Self = this.set("handleConfirmDeleteRow", js.undefined)
+    @scala.inline
+    def setHidePageListOnlyOnePage(value: Boolean): Self = this.set("hidePageListOnlyOnePage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidePageListOnlyOnePage: Self = this.set("hidePageListOnlyOnePage", js.undefined)
+    @scala.inline
+    def setHideSizePerPage(value: Boolean): Self = this.set("hideSizePerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideSizePerPage: Self = this.set("hideSizePerPage", js.undefined)
+    @scala.inline
+    def setIgnoreEditable(value: Boolean): Self = this.set("ignoreEditable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreEditable: Self = this.set("ignoreEditable", js.undefined)
+    @scala.inline
+    def setInsertBtn(value: /* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit] => ReactElement): Self = this.set("insertBtn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertBtn: Self = this.set("insertBtn", js.undefined)
+    @scala.inline
+    def setInsertFailIndicator(value: String): Self = this.set("insertFailIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertFailIndicator: Self = this.set("insertFailIndicator", js.undefined)
+    @scala.inline
+    def setInsertModal(
+      value: (/* onModalClose */ js.Function0[Unit], /* onSave */ js.Function1[/* row */ TRow, Unit], /* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ StringDictionary[String], /* ignoreEditable */ Boolean) => ReactElement
+    ): Self = this.set("insertModal", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteInsertModal: Self = this.set("insertModal", js.undefined)
+    @scala.inline
+    def setInsertModalBody(
+      value: (/* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ StringDictionary[String], /* ignoreEditable */ Boolean) => ReactElement
+    ): Self = this.set("insertModalBody", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteInsertModalBody: Self = this.set("insertModalBody", js.undefined)
+    @scala.inline
+    def setInsertModalFooter(value: (/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit]) => ReactElement): Self = this.set("insertModalFooter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteInsertModalFooter: Self = this.set("insertModalFooter", js.undefined)
+    @scala.inline
+    def setInsertModalHeader(value: (/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit]) => ReactElement): Self = this.set("insertModalHeader", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteInsertModalHeader: Self = this.set("insertModalHeader", js.undefined)
+    @scala.inline
+    def setInsertText(value: String): Self = this.set("insertText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertText: Self = this.set("insertText", js.undefined)
+    @scala.inline
+    def setIsValidKey(value: /* key */ Double | String => String | Unit): Self = this.set("isValidKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsValidKey: Self = this.set("isValidKey", js.undefined)
+    @scala.inline
+    def setKeepSizePerPageState(value: Boolean): Self = this.set("keepSizePerPageState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepSizePerPageState: Self = this.set("keepSizePerPageState", js.undefined)
+    @scala.inline
+    def setLastPage(value: js.Any): Self = this.set("lastPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPage: Self = this.set("lastPage", js.undefined)
+    @scala.inline
+    def setLastPageTitle(value: String): Self = this.set("lastPageTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPageTitle: Self = this.set("lastPageTitle", js.undefined)
+    @scala.inline
+    def setNextPage(value: js.Any): Self = this.set("nextPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPage: Self = this.set("nextPage", js.undefined)
+    @scala.inline
+    def setNextPageTitle(value: String): Self = this.set("nextPageTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageTitle: Self = this.set("nextPageTitle", js.undefined)
+    @scala.inline
+    def setNoAutoBOM(value: Boolean): Self = this.set("noAutoBOM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoAutoBOM: Self = this.set("noAutoBOM", js.undefined)
+    @scala.inline
+    def setNoDataText(value: String | ReactElement): Self = this.set("noDataText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoDataText: Self = this.set("noDataText", js.undefined)
+    @scala.inline
+    def setOnAddRow(
+      value: (/* row */ TRow, /* colInfo */ js.Array[ColumnDescription[TRow]], /* errorCallback */ js.Function1[/* message */ String, Unit]) => String | Boolean
+    ): Self = this.set("onAddRow", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnAddRow: Self = this.set("onAddRow", js.undefined)
+    @scala.inline
+    def setOnCellEdit(
+      value: (/* row */ TRow, /* fieldName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ /* value */ js.Any) => /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ js.Any
+    ): Self = this.set("onCellEdit", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnCellEdit: Self = this.set("onCellEdit", js.undefined)
+    @scala.inline
+    def setOnDeleteRow(value: (/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow]) => Unit): Self = this.set("onDeleteRow", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnDeleteRow: Self = this.set("onDeleteRow", js.undefined)
+    @scala.inline
+    def setOnExpand(
+      value: (/* rowKey */ Double | String, /* isExpand */ Boolean, /* event */ MouseEvent[_, NativeMouseEvent]) => Unit
+    ): Self = this.set("onExpand", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnExpand: Self = this.set("onExpand", js.undefined)
+    @scala.inline
+    def setOnExportToCSV(value: () => js.Array[TRow]): Self = this.set("onExportToCSV", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnExportToCSV: Self = this.set("onExportToCSV", js.undefined)
+    @scala.inline
+    def setOnFilterChange(value: /* filterObject */ FilterData[_] => Unit): Self = this.set("onFilterChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFilterChange: Self = this.set("onFilterChange", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: () => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: () => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnPageChange(value: (/* page */ Double, /* sizePerPage */ Double) => Unit): Self = this.set("onPageChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnPageChange: Self = this.set("onPageChange", js.undefined)
+    @scala.inline
+    def setOnRowClick(
+      value: (/* row */ TRow, /* columnIndex */ Double, /* rowIndex */ Double, /* event */ MouseEvent[_, NativeMouseEvent]) => Unit
+    ): Self = this.set("onRowClick", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteOnRowClick: Self = this.set("onRowClick", js.undefined)
+    @scala.inline
+    def setOnRowDoubleClick(value: (/* row */ TRow, /* event */ MouseEvent[_, NativeMouseEvent]) => Unit): Self = this.set("onRowDoubleClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRowDoubleClick: Self = this.set("onRowDoubleClick", js.undefined)
+    @scala.inline
+    def setOnRowMouseOut(value: (/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent]) => Unit): Self = this.set("onRowMouseOut", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRowMouseOut: Self = this.set("onRowMouseOut", js.undefined)
+    @scala.inline
+    def setOnRowMouseOver(value: (/* row */ TRow, /* e */ MouseEvent[_, NativeMouseEvent]) => Unit): Self = this.set("onRowMouseOver", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRowMouseOver: Self = this.set("onRowMouseOver", js.undefined)
+    @scala.inline
+    def setOnSearchChange(
+      value: (/* searchText */ String, /* colInfos */ js.Array[ColumnDescription[TRow]], /* multiColumnSearch */ Boolean) => Unit
+    ): Self = this.set("onSearchChange", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnSearchChange: Self = this.set("onSearchChange", js.undefined)
+    @scala.inline
+    def setOnSizePerPageList(value: /* sizePerPage */ Double => Unit): Self = this.set("onSizePerPageList", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSizePerPageList: Self = this.set("onSizePerPageList", js.undefined)
+    @scala.inline
+    def setOnSortChange(
+      value: ((/* sortName */ js.Array[/* keyof TRow */ String]) | (/* keyof TRow */ /* sortName */ String), (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder)) => Unit
+    ): Self = this.set("onSortChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnSortChange: Self = this.set("onSortChange", js.undefined)
+    @scala.inline
+    def setOnlyOneExpanding(value: Boolean): Self = this.set("onlyOneExpanding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyOneExpanding: Self = this.set("onlyOneExpanding", js.undefined)
+    @scala.inline
+    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setPageStartIndex(value: Double): Self = this.set("pageStartIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageStartIndex: Self = this.set("pageStartIndex", js.undefined)
+    @scala.inline
+    def setPaginationPanel(value: /* props */ PaginationPanelProps => ReactElement): Self = this.set("paginationPanel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePaginationPanel: Self = this.set("paginationPanel", js.undefined)
+    @scala.inline
+    def setPaginationPosition(value: PaginationPostion): Self = this.set("paginationPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationPosition: Self = this.set("paginationPosition", js.undefined)
+    @scala.inline
+    def setPaginationShowsTotalFunction3(value: (/* start */ Double, /* to */ Double, /* total */ Double) => String | ReactElement): Self = this.set("paginationShowsTotal", js.Any.fromFunction3(value))
+    @scala.inline
+    def setPaginationShowsTotal(
+      value: Boolean | (js.Function3[/* start */ Double, /* to */ Double, /* total */ Double, String | ReactElement])
+    ): Self = this.set("paginationShowsTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationShowsTotal: Self = this.set("paginationShowsTotal", js.undefined)
+    @scala.inline
+    def setPaginationSize(value: Double): Self = this.set("paginationSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationSize: Self = this.set("paginationSize", js.undefined)
+    @scala.inline
+    def setPrePage(value: js.Any): Self = this.set("prePage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrePage: Self = this.set("prePage", js.undefined)
+    @scala.inline
+    def setPrePageTitle(value: String): Self = this.set("prePageTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrePageTitle: Self = this.set("prePageTitle", js.undefined)
+    @scala.inline
+    def setPrintToolBar(value: Boolean): Self = this.set("printToolBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrintToolBar: Self = this.set("printToolBar", js.undefined)
+    @scala.inline
+    def setSaveText(value: String): Self = this.set("saveText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaveText: Self = this.set("saveText", js.undefined)
+    @scala.inline
+    def setSearchDelayTime(value: Double): Self = this.set("searchDelayTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchDelayTime: Self = this.set("searchDelayTime", js.undefined)
+    @scala.inline
+    def setSearchField(value: /* props */ SearchFieldProps => ReactElement): Self = this.set("searchField", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSearchField: Self = this.set("searchField", js.undefined)
+    @scala.inline
+    def setSearchPanel(value: /* props */ SearchPanelProps => ReactElement): Self = this.set("searchPanel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSearchPanel: Self = this.set("searchPanel", js.undefined)
+    @scala.inline
+    def setShowSelectedOnlyBtn(
+      value: (/* onClick */ js.Function1[/* e */ MouseEvent[_, NativeMouseEvent], Unit], /* showSelected */ Boolean) => ReactElement
+    ): Self = this.set("showSelectedOnlyBtn", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteShowSelectedOnlyBtn: Self = this.set("showSelectedOnlyBtn", js.undefined)
+    @scala.inline
+    def setSizePerPage(value: Double): Self = this.set("sizePerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizePerPage: Self = this.set("sizePerPage", js.undefined)
+    @scala.inline
+    def setSizePerPageDropDown(value: /* props */ SizePerPageFunctionProps => ReactElement): Self = this.set("sizePerPageDropDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSizePerPageDropDown: Self = this.set("sizePerPageDropDown", js.undefined)
+    @scala.inline
+    def setSizePerPageListVarargs(value: (Double | Text)*): Self = this.set("sizePerPageList", js.Array(value :_*))
+    @scala.inline
+    def setSizePerPageList(value: SizePerPageList): Self = this.set("sizePerPageList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizePerPageList: Self = this.set("sizePerPageList", js.undefined)
+    @scala.inline
+    def setSortIndicator(value: Boolean): Self = this.set("sortIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortIndicator: Self = this.set("sortIndicator", js.undefined)
+    @scala.inline
+    def setSortNameVarargs(value: (/* keyof TRow */ String)*): Self = this.set("sortName", js.Array(value :_*))
+    @scala.inline
+    def setSortName(value: (/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String])): Self = this.set("sortName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortName: Self = this.set("sortName", js.undefined)
+    @scala.inline
+    def setSortOrderVarargs(value: SortOrder*): Self = this.set("sortOrder", js.Array(value :_*))
+    @scala.inline
+    def setSortOrder(value: SortOrder | js.Array[SortOrder]): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    @scala.inline
+    def setToolBar(value: /* props */ ToolBarProps => ReactElement): Self = this.set("toolBar", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteToolBar: Self = this.set("toolBar", js.undefined)
+    @scala.inline
+    def setWithFirstAndLast(value: Boolean): Self = this.set("withFirstAndLast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithFirstAndLast: Self = this.set("withFirstAndLast", js.undefined)
+    @scala.inline
+    def setWithoutNoDataText(value: Boolean): Self = this.set("withoutNoDataText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithoutNoDataText: Self = this.set("withoutNoDataText", js.undefined)
+  }
+  
 }
 

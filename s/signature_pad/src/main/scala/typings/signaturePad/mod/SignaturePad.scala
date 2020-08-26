@@ -102,6 +102,7 @@ trait SignaturePad extends js.Object {
     *   If 'type' parameter is ommitted, PNG dataUrl is returned.
     */
   def toDataURL(): String = js.native
+  def toDataURL(`type`: js.UndefOr[scala.Nothing], encoderOptions: js.Any): String = js.native
   def toDataURL(`type`: String): String = js.native
   def toDataURL(`type`: String, encoderOptions: js.Any): String = js.native
 }

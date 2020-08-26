@@ -62,27 +62,35 @@ object util extends js.Object {
   def fetch(path: String): js.Promise[Response] = js.native
   def fetch(path: String, requestInits: RequestInit): js.Promise[Response] = js.native
   def flatten(arr: String): js.Array[String] = js.native
+  def flatten(arr: String, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[String] = js.native
   def flatten(arr: String, result: js.Array[String]): js.Array[String] = js.native
   def flatten(arr: String, result: js.Array[String], skipTypedArray: Boolean): js.Array[String] = js.native
   def flatten(arr: js.Promise[Double]): js.Array[js.Promise[Double]] = js.native
+  def flatten(arr: js.Promise[Double], result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[js.Promise[Double]] = js.native
   def flatten(arr: js.Promise[Double], result: js.Array[js.Promise[Double]]): js.Array[js.Promise[Double]] = js.native
   def flatten(arr: js.Promise[Double], result: js.Array[js.Promise[Double]], skipTypedArray: Boolean): js.Array[js.Promise[Double]] = js.native
   def flatten(arr: Boolean): js.Array[Boolean] = js.native
+  def flatten(arr: Boolean, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Boolean] = js.native
   def flatten(arr: Boolean, result: js.Array[Boolean]): js.Array[Boolean] = js.native
   def flatten(arr: Boolean, result: js.Array[Boolean], skipTypedArray: Boolean): js.Array[Boolean] = js.native
   def flatten(arr: Double): js.Array[Double] = js.native
+  def flatten(arr: Double, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Double] = js.native
   def flatten(arr: Double, result: js.Array[Double]): js.Array[Double] = js.native
   def flatten(arr: Double, result: js.Array[Double], skipTypedArray: Boolean): js.Array[Double] = js.native
   def flatten(arr: Float32Array): js.Array[Float32Array] = js.native
+  def flatten(arr: Float32Array, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Float32Array] = js.native
   def flatten(arr: Float32Array, result: js.Array[Float32Array]): js.Array[Float32Array] = js.native
   def flatten(arr: Float32Array, result: js.Array[Float32Array], skipTypedArray: Boolean): js.Array[Float32Array] = js.native
   def flatten(arr: Int32Array): js.Array[Int32Array] = js.native
+  def flatten(arr: Int32Array, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Int32Array] = js.native
   def flatten(arr: Int32Array, result: js.Array[Int32Array]): js.Array[Int32Array] = js.native
   def flatten(arr: Int32Array, result: js.Array[Int32Array], skipTypedArray: Boolean): js.Array[Int32Array] = js.native
   def flatten(arr: Uint8Array): js.Array[Uint8Array] = js.native
+  def flatten(arr: Uint8Array, result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[Uint8Array] = js.native
   def flatten(arr: Uint8Array, result: js.Array[Uint8Array]): js.Array[Uint8Array] = js.native
   def flatten(arr: Uint8Array, result: js.Array[Uint8Array], skipTypedArray: Boolean): js.Array[Uint8Array] = js.native
   def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T]): js.Array[T] = js.native
+  def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.UndefOr[scala.Nothing], skipTypedArray: Boolean): js.Array[T] = js.native
   def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.Array[T]): js.Array[T] = js.native
   def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.Array[T], skipTypedArray: Boolean): js.Array[T] = js.native
   @JSName("getArrayFromDType")
@@ -136,6 +144,7 @@ object util extends js.Object {
   def parseAxisParam(axis: Double, shape: js.Array[Double]): js.Array[Double] = js.native
   def randUniform(a: Double, b: Double): Double = js.native
   def repeatedTry(checkFn: js.Function0[Boolean]): js.Promise[Unit] = js.native
+  def repeatedTry(checkFn: js.Function0[Boolean], delayFn: js.UndefOr[scala.Nothing], maxCounter: Double): js.Promise[Unit] = js.native
   def repeatedTry(checkFn: js.Function0[Boolean], delayFn: js.Function1[/* counter */ Double, Double]): js.Promise[Unit] = js.native
   def repeatedTry(
     checkFn: js.Function0[Boolean],

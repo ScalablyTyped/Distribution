@@ -30,19 +30,42 @@ trait DeleteCustomMetadataRequest extends js.Object {
 
 object DeleteCustomMetadataRequest {
   @scala.inline
-  def apply(
-    ResourceId: ResourceIdType,
-    AuthenticationToken: AuthenticationHeaderType = null,
-    DeleteAll: js.UndefOr[BooleanType] = js.undefined,
-    Keys: CustomMetadataKeyList = null,
-    VersionId: DocumentVersionIdType = null
-  ): DeleteCustomMetadataRequest = {
+  def apply(ResourceId: ResourceIdType): DeleteCustomMetadataRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteAll)) __obj.updateDynamic("DeleteAll")(DeleteAll.get.asInstanceOf[js.Any])
-    if (Keys != null) __obj.updateDynamic("Keys")(Keys.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomMetadataRequest]
   }
+  @scala.inline
+  implicit class DeleteCustomMetadataRequestOps[Self <: DeleteCustomMetadataRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceId(value: ResourceIdType): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+    @scala.inline
+    def setDeleteAll(value: BooleanType): Self = this.set("DeleteAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteAll: Self = this.set("DeleteAll", js.undefined)
+    @scala.inline
+    def setKeysVarargs(value: CustomMetadataKeyType*): Self = this.set("Keys", js.Array(value :_*))
+    @scala.inline
+    def setKeys(value: CustomMetadataKeyList): Self = this.set("Keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("Keys", js.undefined)
+    @scala.inline
+    def setVersionId(value: DocumentVersionIdType): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

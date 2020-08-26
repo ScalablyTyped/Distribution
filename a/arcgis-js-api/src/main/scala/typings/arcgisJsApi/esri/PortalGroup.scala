@@ -133,6 +133,7 @@ trait PortalGroup extends Accessor {
     *
     */
   def queryItems(): js.Promise[PortalQueryResult] = js.native
+  def queryItems(queryParams: js.UndefOr[scala.Nothing], options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParams): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParamsProperties): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParamsProperties, options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native

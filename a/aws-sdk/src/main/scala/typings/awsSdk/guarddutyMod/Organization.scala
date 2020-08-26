@@ -26,13 +26,38 @@ trait Organization extends js.Object {
 
 object Organization {
   @scala.inline
-  def apply(Asn: String = null, AsnOrg: String = null, Isp: String = null, Org: String = null): Organization = {
+  def apply(): Organization = {
     val __obj = js.Dynamic.literal()
-    if (Asn != null) __obj.updateDynamic("Asn")(Asn.asInstanceOf[js.Any])
-    if (AsnOrg != null) __obj.updateDynamic("AsnOrg")(AsnOrg.asInstanceOf[js.Any])
-    if (Isp != null) __obj.updateDynamic("Isp")(Isp.asInstanceOf[js.Any])
-    if (Org != null) __obj.updateDynamic("Org")(Org.asInstanceOf[js.Any])
     __obj.asInstanceOf[Organization]
   }
+  @scala.inline
+  implicit class OrganizationOps[Self <: Organization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsn(value: String): Self = this.set("Asn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsn: Self = this.set("Asn", js.undefined)
+    @scala.inline
+    def setAsnOrg(value: String): Self = this.set("AsnOrg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsnOrg: Self = this.set("AsnOrg", js.undefined)
+    @scala.inline
+    def setIsp(value: String): Self = this.set("Isp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsp: Self = this.set("Isp", js.undefined)
+    @scala.inline
+    def setOrg(value: String): Self = this.set("Org", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrg: Self = this.set("Org", js.undefined)
+  }
+  
 }
 

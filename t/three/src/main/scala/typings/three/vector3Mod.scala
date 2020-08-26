@@ -21,7 +21,11 @@ object vector3Mod extends js.Object {
   @js.native
   class Vector3 () extends Vector {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
     val isVector3: `true` = js.native
     var x: Double = js.native
@@ -31,7 +35,6 @@ object vector3Mod extends js.Object {
     	 * Adds v to this vector.
     	 */
     def add(v: Vector3): this.type = js.native
-    def add(v: Vector3, w: Vector3): this.type = js.native
     def addScaledVector(v: Vector3, s: Double): this.type = js.native
     /**
     	 * Sets this vector to a + b.
@@ -56,7 +59,6 @@ object vector3Mod extends js.Object {
     	 * Sets this vector to cross product of itself and v.
     	 */
     def cross(a: Vector3): this.type = js.native
-    def cross(a: Vector3, w: Vector3): this.type = js.native
     /**
     	 * Sets this vector to cross product of a and b.
     	 */
@@ -100,7 +102,6 @@ object vector3Mod extends js.Object {
     def fromArray(array: ArrayLike[Double]): this.type = js.native
     def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
     def fromBufferAttribute(attribute: BufferAttribute, index: Double): this.type = js.native
-    def fromBufferAttribute(attribute: BufferAttribute, index: Double, offset: Double): this.type = js.native
     /**
     	 * Computes Manhattan length of this vector.
     	 * http://en.wikipedia.org/wiki/Taxicab_geometry
@@ -135,6 +136,10 @@ object vector3Mod extends js.Object {
     def project(camera: Camera): this.type = js.native
     def projectOnPlane(planeNormal: Vector3): this.type = js.native
     def projectOnVector(v: Vector3): this.type = js.native
+    /**
+    	 * Sets this vector's x, y and z from Math.random
+    	 */
+    def random(): this.type = js.native
     def reflect(vector: Vector3): this.type = js.native
     def round(): this.type = js.native
     def roundToZero(): this.type = js.native
@@ -178,6 +183,7 @@ object vector3Mod extends js.Object {
     	 * @return The created or provided array.
     	 */
     def toArray(): js.Array[Double] = js.native
+    def toArray(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
     /**

@@ -22,12 +22,40 @@ trait Content extends js.Object {
 
 object Content {
   @scala.inline
-  def apply(AudioList: AudioList = null, SsmlList: SsmlList = null, TextList: TextList = null): Content = {
+  def apply(): Content = {
     val __obj = js.Dynamic.literal()
-    if (AudioList != null) __obj.updateDynamic("AudioList")(AudioList.asInstanceOf[js.Any])
-    if (SsmlList != null) __obj.updateDynamic("SsmlList")(SsmlList.asInstanceOf[js.Any])
-    if (TextList != null) __obj.updateDynamic("TextList")(TextList.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
+  @scala.inline
+  implicit class ContentOps[Self <: Content] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioListVarargs(value: Audio*): Self = this.set("AudioList", js.Array(value :_*))
+    @scala.inline
+    def setAudioList(value: AudioList): Self = this.set("AudioList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioList: Self = this.set("AudioList", js.undefined)
+    @scala.inline
+    def setSsmlListVarargs(value: Ssml*): Self = this.set("SsmlList", js.Array(value :_*))
+    @scala.inline
+    def setSsmlList(value: SsmlList): Self = this.set("SsmlList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsmlList: Self = this.set("SsmlList", js.undefined)
+    @scala.inline
+    def setTextListVarargs(value: Text*): Self = this.set("TextList", js.Array(value :_*))
+    @scala.inline
+    def setTextList(value: TextList): Self = this.set("TextList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextList: Self = this.set("TextList", js.undefined)
+  }
+  
 }
 

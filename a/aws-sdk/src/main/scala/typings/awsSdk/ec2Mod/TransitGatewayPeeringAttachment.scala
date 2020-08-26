@@ -38,24 +38,52 @@ trait TransitGatewayPeeringAttachment extends js.Object {
 
 object TransitGatewayPeeringAttachment {
   @scala.inline
-  def apply(
-    AccepterTgwInfo: PeeringTgwInfo = null,
-    CreationTime: DateTime = null,
-    RequesterTgwInfo: PeeringTgwInfo = null,
-    State: TransitGatewayAttachmentState = null,
-    Status: PeeringAttachmentStatus = null,
-    Tags: TagList = null,
-    TransitGatewayAttachmentId: String = null
-  ): TransitGatewayPeeringAttachment = {
+  def apply(): TransitGatewayPeeringAttachment = {
     val __obj = js.Dynamic.literal()
-    if (AccepterTgwInfo != null) __obj.updateDynamic("AccepterTgwInfo")(AccepterTgwInfo.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (RequesterTgwInfo != null) __obj.updateDynamic("RequesterTgwInfo")(RequesterTgwInfo.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TransitGatewayAttachmentId != null) __obj.updateDynamic("TransitGatewayAttachmentId")(TransitGatewayAttachmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitGatewayPeeringAttachment]
   }
+  @scala.inline
+  implicit class TransitGatewayPeeringAttachmentOps[Self <: TransitGatewayPeeringAttachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccepterTgwInfo(value: PeeringTgwInfo): Self = this.set("AccepterTgwInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccepterTgwInfo: Self = this.set("AccepterTgwInfo", js.undefined)
+    @scala.inline
+    def setCreationTime(value: DateTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setRequesterTgwInfo(value: PeeringTgwInfo): Self = this.set("RequesterTgwInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterTgwInfo: Self = this.set("RequesterTgwInfo", js.undefined)
+    @scala.inline
+    def setState(value: TransitGatewayAttachmentState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStatus(value: PeeringAttachmentStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTransitGatewayAttachmentId(value: String): Self = this.set("TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayAttachmentId: Self = this.set("TransitGatewayAttachmentId", js.undefined)
+  }
+  
 }
 

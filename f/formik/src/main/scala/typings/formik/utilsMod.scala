@@ -12,9 +12,11 @@ object utilsMod extends js.Object {
   def getActiveElement(): Element | Null = js.native
   def getActiveElement(doc: Document): Element | Null = js.native
   def getIn(obj: js.Any, key: String): js.Any = js.native
+  def getIn(obj: js.Any, key: String, `def`: js.UndefOr[scala.Nothing], p: Double): js.Any = js.native
   def getIn(obj: js.Any, key: String, `def`: js.Any): js.Any = js.native
   def getIn(obj: js.Any, key: String, `def`: js.Any, p: Double): js.Any = js.native
   def getIn(obj: js.Any, key: js.Array[String]): js.Any = js.native
+  def getIn(obj: js.Any, key: js.Array[String], `def`: js.UndefOr[scala.Nothing], p: Double): js.Any = js.native
   def getIn(obj: js.Any, key: js.Array[String], `def`: js.Any): js.Any = js.native
   def getIn(obj: js.Any, key: js.Array[String], `def`: js.Any, p: Double): js.Any = js.native
   def isEmptyArray(): Boolean = js.native
@@ -29,6 +31,7 @@ object utilsMod extends js.Object {
   def isString(obj: js.Any): /* is string */ Boolean = js.native
   def setIn(obj: js.Any, path: String, value: js.Any): js.Any = js.native
   def setNestedObjectValues[T](`object`: js.Any, value: js.Any): T = js.native
+  def setNestedObjectValues[T](`object`: js.Any, value: js.Any, visited: js.UndefOr[scala.Nothing], response: js.Any): T = js.native
   def setNestedObjectValues[T](`object`: js.Any, value: js.Any, visited: js.Any): T = js.native
   def setNestedObjectValues[T](`object`: js.Any, value: js.Any, visited: js.Any, response: js.Any): T = js.native
 }

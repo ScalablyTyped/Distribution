@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object format extends js.Object {
   def apply(): js.Any = js.native
+  def apply(nameOrFormatMap: js.UndefOr[NameOrFormatMap], callback: js.Function1[js.UndefOr[Schema], Unit]): js.Any = js.native
   def apply(nameOrFormatMap: NameOrFormatMap): js.Any = js.native
-  def apply(nameOrFormatMap: NameOrFormatMap, callback: js.Function1[/* schema */ js.UndefOr[Schema], Unit]): js.Any = js.native
 }
 

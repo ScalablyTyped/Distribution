@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-move
 
-Typings are for version 6.1.0
+Typings are for version 6.4.0
 
 ## Library description:
 Beautiful, data-driven animations for React.

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * A DDE link controls the results of a DDE spreadsheet formula.
   */
+@js.native
 trait DDELink
   extends XNamed
      with XDDELink

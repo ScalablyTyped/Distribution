@@ -10,9 +10,9 @@ webpack Validation Utils
 | ------------------ | :-------------: |
 | Full name          | schema-utils |
 | Keywords           | webpack |
-| # releases         | 16 |
-| # dependents       | 417 |
-| # downloads        | 597872694 |
+| # releases         | 15 |
+| # dependents       | 426 |
+| # downloads        | 608674129 |
 | # stars            | 2 |
 
 ## Links

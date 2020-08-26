@@ -17,6 +17,7 @@ class FindUsersRequest protected ()
     */
   def this(expr: MatchExpression) = this()
   def this(expr: MatchExpression, target: js.Any) = this()
+  def this(expr: MatchExpression, target: js.UndefOr[scala.Nothing], limit: Double) = this()
   def this(expr: MatchExpression, target: js.Any, limit: Double) = this()
 }
 

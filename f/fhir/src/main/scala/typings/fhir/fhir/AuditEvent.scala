@@ -8,122 +8,141 @@ import scala.scalajs.js.annotation._
   * Event record kept for security purposes
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait AuditEvent extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait AuditEvent extends DomainResource {
   /**
     * Contains extended information for property 'action'.
     */
-  var _action: js.UndefOr[Element] = js.undefined
+  var _action: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'outcome'.
     */
-  var _outcome: js.UndefOr[Element] = js.undefined
+  var _outcome: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'outcomeDesc'.
     */
-  var _outcomeDesc: js.UndefOr[Element] = js.undefined
+  var _outcomeDesc: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'recorded'.
     */
-  var _recorded: js.UndefOr[Element] = js.undefined
+  var _recorded: js.UndefOr[Element] = js.native
   /**
     * Type of action performed during the event
     */
-  var action: js.UndefOr[code] = js.undefined
+  var action: js.UndefOr[code] = js.native
   /**
     * Actor involved in the event
     */
-  var agent: js.Array[AuditEventAgent]
+  var agent: js.Array[AuditEventAgent] = js.native
   /**
     * Data or objects used
     */
-  var entity: js.UndefOr[js.Array[AuditEventEntity]] = js.undefined
+  var entity: js.UndefOr[js.Array[AuditEventEntity]] = js.native
   /**
     * Whether the event succeeded or failed
     */
-  var outcome: js.UndefOr[code] = js.undefined
+  var outcome: js.UndefOr[code] = js.native
   /**
     * Description of the event outcome
     */
-  var outcomeDesc: js.UndefOr[String] = js.undefined
+  var outcomeDesc: js.UndefOr[String] = js.native
   /**
     * The purposeOfUse of the event
     */
-  var purposeOfEvent: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var purposeOfEvent: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Time when the event occurred on source
     */
-  var recorded: instant
+  var recorded: instant = js.native
   /**
     * Audit Event Reporter
     */
-  var source: AuditEventSource
+  var source: AuditEventSource = js.native
   /**
     * More specific type/id for the event
     */
-  var subtype: js.UndefOr[js.Array[Coding]] = js.undefined
+  var subtype: js.UndefOr[js.Array[Coding]] = js.native
   /**
     * Type/identifier of event
     */
-  var `type`: Coding
+  var `type`: Coding = js.native
 }
 
 object AuditEvent {
   @scala.inline
-  def apply(
-    agent: js.Array[AuditEventAgent],
-    recorded: instant,
-    source: AuditEventSource,
-    `type`: Coding,
-    _action: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _outcome: Element = null,
-    _outcomeDesc: Element = null,
-    _recorded: Element = null,
-    _resourceType: Element = null,
-    action: code = null,
-    contained: js.Array[Resource] = null,
-    entity: js.Array[AuditEventEntity] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    outcome: code = null,
-    outcomeDesc: String = null,
-    purposeOfEvent: js.Array[CodeableConcept] = null,
-    resourceType: code = null,
-    subtype: js.Array[Coding] = null,
-    text: Narrative = null
-  ): AuditEvent = {
+  def apply(agent: js.Array[AuditEventAgent], recorded: instant, source: AuditEventSource, `type`: Coding): AuditEvent = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], recorded = recorded.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_action != null) __obj.updateDynamic("_action")(_action.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_outcome != null) __obj.updateDynamic("_outcome")(_outcome.asInstanceOf[js.Any])
-    if (_outcomeDesc != null) __obj.updateDynamic("_outcomeDesc")(_outcomeDesc.asInstanceOf[js.Any])
-    if (_recorded != null) __obj.updateDynamic("_recorded")(_recorded.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
-    if (outcomeDesc != null) __obj.updateDynamic("outcomeDesc")(outcomeDesc.asInstanceOf[js.Any])
-    if (purposeOfEvent != null) __obj.updateDynamic("purposeOfEvent")(purposeOfEvent.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditEvent]
   }
+  @scala.inline
+  implicit class AuditEventOps[Self <: AuditEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentVarargs(value: AuditEventAgent*): Self = this.set("agent", js.Array(value :_*))
+    @scala.inline
+    def setAgent(value: js.Array[AuditEventAgent]): Self = this.set("agent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecorded(value: instant): Self = this.set("recorded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: AuditEventSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Coding): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_action(value: Element): Self = this.set("_action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_action: Self = this.set("_action", js.undefined)
+    @scala.inline
+    def set_outcome(value: Element): Self = this.set("_outcome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_outcome: Self = this.set("_outcome", js.undefined)
+    @scala.inline
+    def set_outcomeDesc(value: Element): Self = this.set("_outcomeDesc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_outcomeDesc: Self = this.set("_outcomeDesc", js.undefined)
+    @scala.inline
+    def set_recorded(value: Element): Self = this.set("_recorded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_recorded: Self = this.set("_recorded", js.undefined)
+    @scala.inline
+    def setAction(value: code): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setEntityVarargs(value: AuditEventEntity*): Self = this.set("entity", js.Array(value :_*))
+    @scala.inline
+    def setEntity(value: js.Array[AuditEventEntity]): Self = this.set("entity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntity: Self = this.set("entity", js.undefined)
+    @scala.inline
+    def setOutcome(value: code): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutcome: Self = this.set("outcome", js.undefined)
+    @scala.inline
+    def setOutcomeDesc(value: String): Self = this.set("outcomeDesc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutcomeDesc: Self = this.set("outcomeDesc", js.undefined)
+    @scala.inline
+    def setPurposeOfEventVarargs(value: CodeableConcept*): Self = this.set("purposeOfEvent", js.Array(value :_*))
+    @scala.inline
+    def setPurposeOfEvent(value: js.Array[CodeableConcept]): Self = this.set("purposeOfEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurposeOfEvent: Self = this.set("purposeOfEvent", js.undefined)
+    @scala.inline
+    def setSubtypeVarargs(value: Coding*): Self = this.set("subtype", js.Array(value :_*))
+    @scala.inline
+    def setSubtype(value: js.Array[Coding]): Self = this.set("subtype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtype: Self = this.set("subtype", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,40 @@ trait ListBucketInventoryConfigurationsOutput extends js.Object {
 
 object ListBucketInventoryConfigurationsOutput {
   @scala.inline
-  def apply(
-    ContinuationToken: Token = null,
-    InventoryConfigurationList: InventoryConfigurationList = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
-    NextContinuationToken: NextToken = null
-  ): ListBucketInventoryConfigurationsOutput = {
+  def apply(): ListBucketInventoryConfigurationsOutput = {
     val __obj = js.Dynamic.literal()
-    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
-    if (InventoryConfigurationList != null) __obj.updateDynamic("InventoryConfigurationList")(InventoryConfigurationList.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketInventoryConfigurationsOutput]
   }
+  @scala.inline
+  implicit class ListBucketInventoryConfigurationsOutputOps[Self <: ListBucketInventoryConfigurationsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContinuationToken(value: Token): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    @scala.inline
+    def setInventoryConfigurationListVarargs(value: InventoryConfiguration*): Self = this.set("InventoryConfigurationList", js.Array(value :_*))
+    @scala.inline
+    def setInventoryConfigurationList(value: InventoryConfigurationList): Self = this.set("InventoryConfigurationList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventoryConfigurationList: Self = this.set("InventoryConfigurationList", js.undefined)
+    @scala.inline
+    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setNextContinuationToken(value: NextToken): Self = this.set("NextContinuationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextContinuationToken: Self = this.set("NextContinuationToken", js.undefined)
+  }
+  
 }
 

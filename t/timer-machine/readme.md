@@ -12,7 +12,7 @@ A lightweight, pause-able timer class
 | Keywords           | timer, time, pause, stopwatch |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 17882 |
+| # downloads        | 18277 |
 | # stars            | 2 |
 
 ## Links

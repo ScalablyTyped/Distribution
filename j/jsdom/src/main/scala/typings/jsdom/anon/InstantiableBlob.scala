@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation._
 trait InstantiableBlob
   extends Instantiable0[Blob]
      with Instantiable1[/* blobParts */ js.Array[BlobPart], Blob]
-     with Instantiable2[/* blobParts */ js.Array[BlobPart], /* options */ BlobPropertyBag, Blob]
+     with Instantiable2[js.UndefOr[/* blobParts */ js.Array[BlobPart]], /* options */ BlobPropertyBag, Blob]
 

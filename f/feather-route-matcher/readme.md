@@ -12,7 +12,7 @@ featherweight url to handler matching
 | Keywords           | feather, matcher, router, routing, url |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 8791 |
+| # downloads        | 9159 |
 | # stars            | 0 |
 
 ## Links

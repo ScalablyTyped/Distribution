@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@electron/get/dist/cjs", JSImport.Namespace)
+@JSImport("@electron/get/dist/esm", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   def download(version: String): js.Promise[String] = js.native

@@ -74,6 +74,7 @@ trait It extends js.Object {
     * @param timeout The timeout for an async function test
     */
   def apply(name: String): Unit = js.native
+  def apply(name: String, fn: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
   def apply(name: String, fn: ProvidesCallback): Unit = js.native
   def apply(name: String, fn: ProvidesCallback, timeout: Double): Unit = js.native
 }

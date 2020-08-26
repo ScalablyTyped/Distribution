@@ -63,10 +63,9 @@ trait InstanceState extends js.Object {
   val caCertIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * The character set name to use for DB
-    * encoding in Oracle instances. This can't be changed. See [Oracle Character Sets
-    * Supported in Amazon
-    * RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.OracleCharacterSets.html)
-    * for more information.
+    * encoding in Oracle and Microsoft SQL instances (collation). This can't be changed. See [Oracle Character Sets
+    * Supported in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.OracleCharacterSets.html)
+    * or [Server-Level Collation for Microsoft SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.CommonDBATasks.Collation.html) for more information.
     */
   val characterSetName: js.UndefOr[Input[String]] = js.native
   /**
@@ -74,7 +73,7 @@ trait InstanceState extends js.Object {
     */
   val copyTagsToSnapshot: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * Name of [DB subnet group](https://www.terraform.io/docs/providers/aws/r/db_subnet_group.html). DB instance will
+    * Name of `DB subnet group`. DB instance will
     * be created in the VPC associated with the DB subnet group. If unspecified, will
     * be created in the `default` VPC, or in EC2 Classic, if available. When working
     * with read replicas, it should be specified only if the source database
@@ -100,7 +99,7 @@ trait InstanceState extends js.Object {
     */
   val domainIamRoleName: js.UndefOr[Input[String]] = js.native
   /**
-    * List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`): `agent` (MSSQL), `alert`, `audit`, `error`, `general`, `listener`, `slowquery`, `trace`, `postgresql` (PostgreSQL), `upgrade` (PostgreSQL).
+    * List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`). MySQL and MariaDB: `audit`, `error`, `general`, `slowquery`. PostgreSQL: `postgresql`, `upgrade`. MSSQL: `agent` , `error`. Oracle: `alert`, `audit`, `listener`, `trace`.
     */
   val enabledCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
@@ -110,7 +109,7 @@ trait InstanceState extends js.Object {
   /**
     * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
     * is provided) The database engine to use.  For supported values, see the Engine parameter in [API action CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html).
-    * Note that for Amazon Aurora instances the engine must match the [DB cluster](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html)'s engine'.
+    * Note that for Amazon Aurora instances the engine must match the `DB cluster`'s engine'.
     * For information on the difference between the available Aurora MySQL engines
     * see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
     * in the Amazon RDS User Guide.
@@ -121,7 +120,7 @@ trait InstanceState extends js.Object {
     * is enabled, you can provide a prefix of the version such as `5.7` (for `5.7.10`) and
     * this attribute will ignore differences in the patch version automatically (e.g. `5.7.17`).
     * For supported values, see the EngineVersion parameter in [API action CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html).
-    * Note that for Amazon Aurora instances the engine version must match the [DB cluster](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html)'s engine version'.
+    * Note that for Amazon Aurora instances the engine version must match the `DB cluster`'s engine version'.
     */
   val engineVersion: js.UndefOr[Input[String]] = js.native
   /**
@@ -245,7 +244,9 @@ trait InstanceState extends js.Object {
   /**
     * Specifies that this resource is a Replicate
     * database, and to use this value as the source database. This correlates to the
-    * `identifier` of another Amazon RDS Database to replicate. Note that if you are
+    * `identifier` of another Amazon RDS Database to replicate (if replicating within
+    * a single region) or ARN of the Amazon RDS Database to replicate (if replicating
+    * cross-region). Note that if you are
     * creating a cross-region replica of an encrypted database you will also need to
     * specify a `kmsKeyId`. See [DB Instance Replication][1] and [Working with
     * PostgreSQL and MySQL Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
@@ -298,9 +299,9 @@ trait InstanceState extends js.Object {
     */
   val storageType: js.UndefOr[Input[String | StorageType]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Time zone of the DB instance. `timezone` is currently
     * only supported by Microsoft SQL Server. The `timezone` can only be set on
@@ -323,126 +324,262 @@ trait InstanceState extends js.Object {
 
 object InstanceState {
   @scala.inline
-  def apply(
-    address: Input[String] = null,
-    allocatedStorage: Input[Double] = null,
-    allowMajorVersionUpgrade: Input[Boolean] = null,
-    applyImmediately: Input[Boolean] = null,
-    arn: Input[String] = null,
-    autoMinorVersionUpgrade: Input[Boolean] = null,
-    availabilityZone: Input[String] = null,
-    backupRetentionPeriod: Input[Double] = null,
-    backupWindow: Input[String] = null,
-    caCertIdentifier: Input[String] = null,
-    characterSetName: Input[String] = null,
-    copyTagsToSnapshot: Input[Boolean] = null,
-    dbSubnetGroupName: Input[String] = null,
-    deleteAutomatedBackups: Input[Boolean] = null,
-    deletionProtection: Input[Boolean] = null,
-    domain: Input[String] = null,
-    domainIamRoleName: Input[String] = null,
-    enabledCloudwatchLogsExports: Input[js.Array[Input[String]]] = null,
-    endpoint: Input[String] = null,
-    engine: Input[String] = null,
-    engineVersion: Input[String] = null,
-    finalSnapshotIdentifier: Input[String] = null,
-    hostedZoneId: Input[String] = null,
-    iamDatabaseAuthenticationEnabled: Input[Boolean] = null,
-    identifier: Input[String] = null,
-    identifierPrefix: Input[String] = null,
-    instanceClass: Input[String | InstanceType] = null,
-    iops: Input[Double] = null,
-    kmsKeyId: Input[String] = null,
-    licenseModel: Input[String] = null,
-    maintenanceWindow: Input[String] = null,
-    maxAllocatedStorage: Input[Double] = null,
-    monitoringInterval: Input[Double] = null,
-    monitoringRoleArn: Input[String] = null,
-    multiAz: Input[Boolean] = null,
-    name: Input[String] = null,
-    optionGroupName: Input[String] = null,
-    parameterGroupName: Input[String] = null,
-    password: Input[String] = null,
-    performanceInsightsEnabled: Input[Boolean] = null,
-    performanceInsightsKmsKeyId: Input[String] = null,
-    performanceInsightsRetentionPeriod: Input[Double] = null,
-    port: Input[Double] = null,
-    publiclyAccessible: Input[Boolean] = null,
-    replicas: Input[js.Array[Input[String]]] = null,
-    replicateSourceDb: Input[String] = null,
-    resourceId: Input[String] = null,
-    s3Import: Input[InstanceS3Import] = null,
-    securityGroupNames: Input[js.Array[Input[String]]] = null,
-    skipFinalSnapshot: Input[Boolean] = null,
-    snapshotIdentifier: Input[String] = null,
-    status: Input[String] = null,
-    storageEncrypted: Input[Boolean] = null,
-    storageType: Input[String | StorageType] = null,
-    tags: Input[StringDictionary[_]] = null,
-    timezone: Input[String] = null,
-    username: Input[String] = null,
-    vpcSecurityGroupIds: Input[js.Array[Input[String]]] = null
-  ): InstanceState = {
+  def apply(): InstanceState = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (allocatedStorage != null) __obj.updateDynamic("allocatedStorage")(allocatedStorage.asInstanceOf[js.Any])
-    if (allowMajorVersionUpgrade != null) __obj.updateDynamic("allowMajorVersionUpgrade")(allowMajorVersionUpgrade.asInstanceOf[js.Any])
-    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (backupRetentionPeriod != null) __obj.updateDynamic("backupRetentionPeriod")(backupRetentionPeriod.asInstanceOf[js.Any])
-    if (backupWindow != null) __obj.updateDynamic("backupWindow")(backupWindow.asInstanceOf[js.Any])
-    if (caCertIdentifier != null) __obj.updateDynamic("caCertIdentifier")(caCertIdentifier.asInstanceOf[js.Any])
-    if (characterSetName != null) __obj.updateDynamic("characterSetName")(characterSetName.asInstanceOf[js.Any])
-    if (copyTagsToSnapshot != null) __obj.updateDynamic("copyTagsToSnapshot")(copyTagsToSnapshot.asInstanceOf[js.Any])
-    if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
-    if (deleteAutomatedBackups != null) __obj.updateDynamic("deleteAutomatedBackups")(deleteAutomatedBackups.asInstanceOf[js.Any])
-    if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (domainIamRoleName != null) __obj.updateDynamic("domainIamRoleName")(domainIamRoleName.asInstanceOf[js.Any])
-    if (enabledCloudwatchLogsExports != null) __obj.updateDynamic("enabledCloudwatchLogsExports")(enabledCloudwatchLogsExports.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (finalSnapshotIdentifier != null) __obj.updateDynamic("finalSnapshotIdentifier")(finalSnapshotIdentifier.asInstanceOf[js.Any])
-    if (hostedZoneId != null) __obj.updateDynamic("hostedZoneId")(hostedZoneId.asInstanceOf[js.Any])
-    if (iamDatabaseAuthenticationEnabled != null) __obj.updateDynamic("iamDatabaseAuthenticationEnabled")(iamDatabaseAuthenticationEnabled.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (identifierPrefix != null) __obj.updateDynamic("identifierPrefix")(identifierPrefix.asInstanceOf[js.Any])
-    if (instanceClass != null) __obj.updateDynamic("instanceClass")(instanceClass.asInstanceOf[js.Any])
-    if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (licenseModel != null) __obj.updateDynamic("licenseModel")(licenseModel.asInstanceOf[js.Any])
-    if (maintenanceWindow != null) __obj.updateDynamic("maintenanceWindow")(maintenanceWindow.asInstanceOf[js.Any])
-    if (maxAllocatedStorage != null) __obj.updateDynamic("maxAllocatedStorage")(maxAllocatedStorage.asInstanceOf[js.Any])
-    if (monitoringInterval != null) __obj.updateDynamic("monitoringInterval")(monitoringInterval.asInstanceOf[js.Any])
-    if (monitoringRoleArn != null) __obj.updateDynamic("monitoringRoleArn")(monitoringRoleArn.asInstanceOf[js.Any])
-    if (multiAz != null) __obj.updateDynamic("multiAz")(multiAz.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (optionGroupName != null) __obj.updateDynamic("optionGroupName")(optionGroupName.asInstanceOf[js.Any])
-    if (parameterGroupName != null) __obj.updateDynamic("parameterGroupName")(parameterGroupName.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (performanceInsightsEnabled != null) __obj.updateDynamic("performanceInsightsEnabled")(performanceInsightsEnabled.asInstanceOf[js.Any])
-    if (performanceInsightsKmsKeyId != null) __obj.updateDynamic("performanceInsightsKmsKeyId")(performanceInsightsKmsKeyId.asInstanceOf[js.Any])
-    if (performanceInsightsRetentionPeriod != null) __obj.updateDynamic("performanceInsightsRetentionPeriod")(performanceInsightsRetentionPeriod.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
-    if (replicas != null) __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
-    if (replicateSourceDb != null) __obj.updateDynamic("replicateSourceDb")(replicateSourceDb.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (s3Import != null) __obj.updateDynamic("s3Import")(s3Import.asInstanceOf[js.Any])
-    if (securityGroupNames != null) __obj.updateDynamic("securityGroupNames")(securityGroupNames.asInstanceOf[js.Any])
-    if (skipFinalSnapshot != null) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.asInstanceOf[js.Any])
-    if (snapshotIdentifier != null) __obj.updateDynamic("snapshotIdentifier")(snapshotIdentifier.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (storageEncrypted != null) __obj.updateDynamic("storageEncrypted")(storageEncrypted.asInstanceOf[js.Any])
-    if (storageType != null) __obj.updateDynamic("storageType")(storageType.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceState]
   }
+  @scala.inline
+  implicit class InstanceStateOps[Self <: InstanceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: Input[String]): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setAllocatedStorage(value: Input[Double]): Self = this.set("allocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedStorage: Self = this.set("allocatedStorage", js.undefined)
+    @scala.inline
+    def setAllowMajorVersionUpgrade(value: Input[Boolean]): Self = this.set("allowMajorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowMajorVersionUpgrade: Self = this.set("allowMajorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setApplyImmediately(value: Input[Boolean]): Self = this.set("applyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("applyImmediately", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = this.set("autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("autoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setBackupRetentionPeriod(value: Input[Double]): Self = this.set("backupRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupRetentionPeriod: Self = this.set("backupRetentionPeriod", js.undefined)
+    @scala.inline
+    def setBackupWindow(value: Input[String]): Self = this.set("backupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupWindow: Self = this.set("backupWindow", js.undefined)
+    @scala.inline
+    def setCaCertIdentifier(value: Input[String]): Self = this.set("caCertIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaCertIdentifier: Self = this.set("caCertIdentifier", js.undefined)
+    @scala.inline
+    def setCharacterSetName(value: Input[String]): Self = this.set("characterSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharacterSetName: Self = this.set("characterSetName", js.undefined)
+    @scala.inline
+    def setCopyTagsToSnapshot(value: Input[Boolean]): Self = this.set("copyTagsToSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTagsToSnapshot: Self = this.set("copyTagsToSnapshot", js.undefined)
+    @scala.inline
+    def setDbSubnetGroupName(value: Input[String]): Self = this.set("dbSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbSubnetGroupName: Self = this.set("dbSubnetGroupName", js.undefined)
+    @scala.inline
+    def setDeleteAutomatedBackups(value: Input[Boolean]): Self = this.set("deleteAutomatedBackups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteAutomatedBackups: Self = this.set("deleteAutomatedBackups", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: Input[Boolean]): Self = this.set("deletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("deletionProtection", js.undefined)
+    @scala.inline
+    def setDomain(value: Input[String]): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setDomainIamRoleName(value: Input[String]): Self = this.set("domainIamRoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainIamRoleName: Self = this.set("domainIamRoleName", js.undefined)
+    @scala.inline
+    def setEnabledCloudwatchLogsExportsVarargs(value: Input[String]*): Self = this.set("enabledCloudwatchLogsExports", js.Array(value :_*))
+    @scala.inline
+    def setEnabledCloudwatchLogsExports(value: Input[js.Array[Input[String]]]): Self = this.set("enabledCloudwatchLogsExports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledCloudwatchLogsExports: Self = this.set("enabledCloudwatchLogsExports", js.undefined)
+    @scala.inline
+    def setEndpoint(value: Input[String]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setEngine(value: Input[String]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: Input[String]): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setFinalSnapshotIdentifier(value: Input[String]): Self = this.set("finalSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalSnapshotIdentifier: Self = this.set("finalSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setHostedZoneId(value: Input[String]): Self = this.set("hostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneId: Self = this.set("hostedZoneId", js.undefined)
+    @scala.inline
+    def setIamDatabaseAuthenticationEnabled(value: Input[Boolean]): Self = this.set("iamDatabaseAuthenticationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamDatabaseAuthenticationEnabled: Self = this.set("iamDatabaseAuthenticationEnabled", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Input[String]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setIdentifierPrefix(value: Input[String]): Self = this.set("identifierPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifierPrefix: Self = this.set("identifierPrefix", js.undefined)
+    @scala.inline
+    def setInstanceClass(value: Input[String | InstanceType]): Self = this.set("instanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceClass: Self = this.set("instanceClass", js.undefined)
+    @scala.inline
+    def setIops(value: Input[Double]): Self = this.set("iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("iops", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setLicenseModel(value: Input[String]): Self = this.set("licenseModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseModel: Self = this.set("licenseModel", js.undefined)
+    @scala.inline
+    def setMaintenanceWindow(value: Input[String]): Self = this.set("maintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceWindow: Self = this.set("maintenanceWindow", js.undefined)
+    @scala.inline
+    def setMaxAllocatedStorage(value: Input[Double]): Self = this.set("maxAllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAllocatedStorage: Self = this.set("maxAllocatedStorage", js.undefined)
+    @scala.inline
+    def setMonitoringInterval(value: Input[Double]): Self = this.set("monitoringInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoringInterval: Self = this.set("monitoringInterval", js.undefined)
+    @scala.inline
+    def setMonitoringRoleArn(value: Input[String]): Self = this.set("monitoringRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoringRoleArn: Self = this.set("monitoringRoleArn", js.undefined)
+    @scala.inline
+    def setMultiAz(value: Input[Boolean]): Self = this.set("multiAz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiAz: Self = this.set("multiAz", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptionGroupName(value: Input[String]): Self = this.set("optionGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupName: Self = this.set("optionGroupName", js.undefined)
+    @scala.inline
+    def setParameterGroupName(value: Input[String]): Self = this.set("parameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterGroupName: Self = this.set("parameterGroupName", js.undefined)
+    @scala.inline
+    def setPassword(value: Input[String]): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPerformanceInsightsEnabled(value: Input[Boolean]): Self = this.set("performanceInsightsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceInsightsEnabled: Self = this.set("performanceInsightsEnabled", js.undefined)
+    @scala.inline
+    def setPerformanceInsightsKmsKeyId(value: Input[String]): Self = this.set("performanceInsightsKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceInsightsKmsKeyId: Self = this.set("performanceInsightsKmsKeyId", js.undefined)
+    @scala.inline
+    def setPerformanceInsightsRetentionPeriod(value: Input[Double]): Self = this.set("performanceInsightsRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceInsightsRetentionPeriod: Self = this.set("performanceInsightsRetentionPeriod", js.undefined)
+    @scala.inline
+    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: Input[Boolean]): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
+    @scala.inline
+    def setReplicasVarargs(value: Input[String]*): Self = this.set("replicas", js.Array(value :_*))
+    @scala.inline
+    def setReplicas(value: Input[js.Array[Input[String]]]): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicas: Self = this.set("replicas", js.undefined)
+    @scala.inline
+    def setReplicateSourceDb(value: Input[String]): Self = this.set("replicateSourceDb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicateSourceDb: Self = this.set("replicateSourceDb", js.undefined)
+    @scala.inline
+    def setResourceId(value: Input[String]): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setS3Import(value: Input[InstanceS3Import]): Self = this.set("s3Import", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Import: Self = this.set("s3Import", js.undefined)
+    @scala.inline
+    def setSecurityGroupNamesVarargs(value: Input[String]*): Self = this.set("securityGroupNames", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupNames: Self = this.set("securityGroupNames", js.undefined)
+    @scala.inline
+    def setSkipFinalSnapshot(value: Input[Boolean]): Self = this.set("skipFinalSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFinalSnapshot: Self = this.set("skipFinalSnapshot", js.undefined)
+    @scala.inline
+    def setSnapshotIdentifier(value: Input[String]): Self = this.set("snapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIdentifier: Self = this.set("snapshotIdentifier", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStorageEncrypted(value: Input[Boolean]): Self = this.set("storageEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEncrypted: Self = this.set("storageEncrypted", js.undefined)
+    @scala.inline
+    def setStorageType(value: Input[String | StorageType]): Self = this.set("storageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("storageType", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTimezone(value: Input[String]): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    @scala.inline
+    def setUsername(value: Input[String]): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("vpcSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("vpcSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroupIds: Self = this.set("vpcSecurityGroupIds", js.undefined)
+  }
+  
 }
 

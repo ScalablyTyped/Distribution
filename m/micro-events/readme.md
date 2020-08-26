@@ -12,7 +12,7 @@ A very, very simple event emitter implementation.
 | Keywords           | util, events, server, client, browser |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 2317 |
+| # downloads        | 2267 |
 | # stars            | 0 |
 
 ## Links

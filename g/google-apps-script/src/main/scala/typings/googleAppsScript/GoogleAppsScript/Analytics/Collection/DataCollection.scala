@@ -7,20 +7,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataCollection extends js.Object {
-  var Ga: js.UndefOr[GaCollection] = js.undefined
-  var Mcf: js.UndefOr[McfCollection] = js.undefined
-  var Realtime: js.UndefOr[RealtimeCollection] = js.undefined
+  var Ga: js.UndefOr[GaCollection] = js.native
+  var Mcf: js.UndefOr[McfCollection] = js.native
+  var Realtime: js.UndefOr[RealtimeCollection] = js.native
 }
 
 object DataCollection {
   @scala.inline
-  def apply(Ga: GaCollection = null, Mcf: McfCollection = null, Realtime: RealtimeCollection = null): DataCollection = {
+  def apply(): DataCollection = {
     val __obj = js.Dynamic.literal()
-    if (Ga != null) __obj.updateDynamic("Ga")(Ga.asInstanceOf[js.Any])
-    if (Mcf != null) __obj.updateDynamic("Mcf")(Mcf.asInstanceOf[js.Any])
-    if (Realtime != null) __obj.updateDynamic("Realtime")(Realtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataCollection]
   }
+  @scala.inline
+  implicit class DataCollectionOps[Self <: DataCollection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGa(value: GaCollection): Self = this.set("Ga", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGa: Self = this.set("Ga", js.undefined)
+    @scala.inline
+    def setMcf(value: McfCollection): Self = this.set("Mcf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMcf: Self = this.set("Mcf", js.undefined)
+    @scala.inline
+    def setRealtime(value: RealtimeCollection): Self = this.set("Realtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealtime: Self = this.set("Realtime", js.undefined)
+  }
+  
 }
 

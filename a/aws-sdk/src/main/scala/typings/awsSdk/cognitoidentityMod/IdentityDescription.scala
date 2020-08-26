@@ -26,18 +26,40 @@ trait IdentityDescription extends js.Object {
 
 object IdentityDescription {
   @scala.inline
-  def apply(
-    CreationDate: DateType = null,
-    IdentityId: IdentityId = null,
-    LastModifiedDate: DateType = null,
-    Logins: LoginsList = null
-  ): IdentityDescription = {
+  def apply(): IdentityDescription = {
     val __obj = js.Dynamic.literal()
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (Logins != null) __obj.updateDynamic("Logins")(Logins.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityDescription]
   }
+  @scala.inline
+  implicit class IdentityDescriptionOps[Self <: IdentityDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setIdentityId(value: IdentityId): Self = this.set("IdentityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityId: Self = this.set("IdentityId", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateType): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setLoginsVarargs(value: IdentityProviderName*): Self = this.set("Logins", js.Array(value :_*))
+    @scala.inline
+    def setLogins(value: LoginsList): Self = this.set("Logins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogins: Self = this.set("Logins", js.undefined)
+  }
+  
 }
 

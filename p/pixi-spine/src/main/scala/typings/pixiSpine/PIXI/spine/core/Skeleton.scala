@@ -30,9 +30,9 @@ trait Skeleton extends js.Object {
   def findSlotIndex(slotName: String): Double = js.native
   def findTransformConstraint(constraintName: String): TransformConstraint = js.native
   def flipX: Boolean = js.native
-  def flipX(value: Boolean): js.Any = js.native
+  def flipX_=(value: Boolean): Unit = js.native
   def flipY: Boolean = js.native
-  def flipY(value: Boolean): js.Any = js.native
+  def flipY_=(value: Boolean): Unit = js.native
   def getAttachment(slotIndex: Double, attachmentName: String): Attachment = js.native
   def getAttachmentByName(slotName: String, attachmentName: String): Attachment = js.native
   def getBounds(offset: Vector2, size: Vector2): Unit = js.native

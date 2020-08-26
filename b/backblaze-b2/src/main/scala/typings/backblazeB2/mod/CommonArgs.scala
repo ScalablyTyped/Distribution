@@ -5,18 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommonArgs extends js.Object {
-  var axios: js.UndefOr[Record[String, _]] = js.undefined
-  var axiosOverride: js.UndefOr[Record[String, _]] = js.undefined
+  var axios: js.UndefOr[Record[String, _]] = js.native
+  var axiosOverride: js.UndefOr[Record[String, _]] = js.native
 }
 
 object CommonArgs {
   @scala.inline
-  def apply(axios: Record[String, _] = null, axiosOverride: Record[String, _] = null): CommonArgs = {
+  def apply(): CommonArgs = {
     val __obj = js.Dynamic.literal()
-    if (axios != null) __obj.updateDynamic("axios")(axios.asInstanceOf[js.Any])
-    if (axiosOverride != null) __obj.updateDynamic("axiosOverride")(axiosOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonArgs]
   }
+  @scala.inline
+  implicit class CommonArgsOps[Self <: CommonArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxios(value: Record[String, _]): Self = this.set("axios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxios: Self = this.set("axios", js.undefined)
+    @scala.inline
+    def setAxiosOverride(value: Record[String, _]): Self = this.set("axiosOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxiosOverride: Self = this.set("axiosOverride", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListStreamsOutput extends js.Object {
 
 object ListStreamsOutput {
   @scala.inline
-  def apply(LastEvaluatedStreamArn: StreamArn = null, Streams: StreamList = null): ListStreamsOutput = {
+  def apply(): ListStreamsOutput = {
     val __obj = js.Dynamic.literal()
-    if (LastEvaluatedStreamArn != null) __obj.updateDynamic("LastEvaluatedStreamArn")(LastEvaluatedStreamArn.asInstanceOf[js.Any])
-    if (Streams != null) __obj.updateDynamic("Streams")(Streams.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStreamsOutput]
   }
+  @scala.inline
+  implicit class ListStreamsOutputOps[Self <: ListStreamsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastEvaluatedStreamArn(value: StreamArn): Self = this.set("LastEvaluatedStreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEvaluatedStreamArn: Self = this.set("LastEvaluatedStreamArn", js.undefined)
+    @scala.inline
+    def setStreamsVarargs(value: Stream*): Self = this.set("Streams", js.Array(value :_*))
+    @scala.inline
+    def setStreams(value: StreamList): Self = this.set("Streams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreams: Self = this.set("Streams", js.undefined)
+  }
+  
 }
 

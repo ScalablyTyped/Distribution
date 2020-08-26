@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AppEngineRouting extends js.Object {
   /**
     * Output only.
@@ -65,7 +66,7 @@ trait AppEngineRouting extends js.Object {
     * AppEngineRouting.instance is invalid, then the task will be sent
     * to the default version of the default service when the task is attempted.
     */
-  var host: js.UndefOr[String] = js.undefined
+  var host: js.UndefOr[String] = js.native
   /**
     * App instance.
     *
@@ -78,7 +79,7 @@ trait AppEngineRouting extends js.Object {
     * [App Engine Standard request routing](/appengine/docs/standard/python/how-requests-are-routed)
     * and [App Engine Flex request routing](/appengine/docs/flexible/python/how-requests-are-routed).
     */
-  var instance: js.UndefOr[String] = js.undefined
+  var instance: js.UndefOr[String] = js.native
   /**
     * App service.
     *
@@ -94,7 +95,7 @@ trait AppEngineRouting extends js.Object {
     * AppEngineRouting.service, AppEngineRouting.version, and
     * AppEngineRouting.instance are the empty string.
     */
-  var service: js.UndefOr[String] = js.undefined
+  var service: js.UndefOr[String] = js.native
   /**
     * App version.
     *
@@ -110,18 +111,43 @@ trait AppEngineRouting extends js.Object {
     * AppEngineRouting.service, AppEngineRouting.version, and
     * AppEngineRouting.instance are the empty string.
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
 }
 
 object AppEngineRouting {
   @scala.inline
-  def apply(host: String = null, instance: String = null, service: String = null, version: String = null): AppEngineRouting = {
+  def apply(): AppEngineRouting = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppEngineRouting]
   }
+  @scala.inline
+  implicit class AppEngineRoutingOps[Self <: AppEngineRouting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

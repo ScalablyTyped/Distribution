@@ -28,15 +28,32 @@ trait TableItemArgs extends js.Object {
 
 object TableItemArgs {
   @scala.inline
-  def apply(
-    hashKey: Input[String],
-    item: Input[String],
-    tableName: Input[String],
-    rangeKey: Input[String] = null
-  ): TableItemArgs = {
+  def apply(hashKey: Input[String], item: Input[String], tableName: Input[String]): TableItemArgs = {
     val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
-    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableItemArgs]
   }
+  @scala.inline
+  implicit class TableItemArgsOps[Self <: TableItemArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHashKey(value: Input[String]): Self = this.set("hashKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItem(value: Input[String]): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: Input[String]): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRangeKey(value: Input[String]): Self = this.set("rangeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeKey: Self = this.set("rangeKey", js.undefined)
+  }
+  
 }
 

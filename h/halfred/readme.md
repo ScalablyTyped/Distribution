@@ -12,7 +12,7 @@ parses JSON HAL resources (Hypertext Application Language)
 | Keywords           | HAL, REST, JSON |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 173308 |
+| # downloads        | 169648 |
 | # stars            | 1 |
 
 ## Links

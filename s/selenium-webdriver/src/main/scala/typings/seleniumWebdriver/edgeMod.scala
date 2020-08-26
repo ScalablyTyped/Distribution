@@ -52,6 +52,7 @@ object edgeMod extends js.Object {
       * @return {!Driver} A new driver instance.
       */
     def createSession(): Driver = js.native
+    def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: DriverService): Driver = js.native
     def createSession(opt_config: CreateSessionCapabilities): Driver = js.native
     def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = js.native
   }

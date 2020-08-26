@@ -24,6 +24,7 @@ object sinksMod extends js.Object {
   @js.native
   object drain extends js.Object {
     def apply[T](): Sink[T] = js.native
+    def apply[T](op: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ Error | Null, _]): Sink[T] = js.native
     def apply[T](op: js.Function1[/* data */ T, _]): Sink[T] = js.native
     def apply[T](op: js.Function1[/* data */ T, _], cb: js.Function1[/* err */ Error | Null, _]): Sink[T] = js.native
   }

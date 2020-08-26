@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * In fact a named range is a named formula expression. A cell range address is one possible content of a named range.
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
+@js.native
 trait NamedRanges
   extends XNamedRanges
      with XIndexAccess

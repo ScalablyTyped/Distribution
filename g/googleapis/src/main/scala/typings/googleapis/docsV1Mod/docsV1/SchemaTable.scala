@@ -41,22 +41,52 @@ trait SchemaTable extends js.Object {
 
 object SchemaTable {
   @scala.inline
-  def apply(
-    columns: js.UndefOr[Double] = js.undefined,
-    rows: js.UndefOr[Double] = js.undefined,
-    suggestedDeletionIds: js.Array[String] = null,
-    suggestedInsertionIds: js.Array[String] = null,
-    tableRows: js.Array[SchemaTableRow] = null,
-    tableStyle: SchemaTableStyle = null
-  ): SchemaTable = {
+  def apply(): SchemaTable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
-    if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds.asInstanceOf[js.Any])
-    if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows.asInstanceOf[js.Any])
-    if (tableStyle != null) __obj.updateDynamic("tableStyle")(tableStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTable]
   }
+  @scala.inline
+  implicit class SchemaTableOps[Self <: SchemaTable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setSuggestedDeletionIdsVarargs(value: String*): Self = this.set("suggestedDeletionIds", js.Array(value :_*))
+    @scala.inline
+    def setSuggestedDeletionIds(value: js.Array[String]): Self = this.set("suggestedDeletionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedDeletionIds: Self = this.set("suggestedDeletionIds", js.undefined)
+    @scala.inline
+    def setSuggestedInsertionIdsVarargs(value: String*): Self = this.set("suggestedInsertionIds", js.Array(value :_*))
+    @scala.inline
+    def setSuggestedInsertionIds(value: js.Array[String]): Self = this.set("suggestedInsertionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedInsertionIds: Self = this.set("suggestedInsertionIds", js.undefined)
+    @scala.inline
+    def setTableRowsVarargs(value: SchemaTableRow*): Self = this.set("tableRows", js.Array(value :_*))
+    @scala.inline
+    def setTableRows(value: js.Array[SchemaTableRow]): Self = this.set("tableRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableRows: Self = this.set("tableRows", js.undefined)
+    @scala.inline
+    def setTableStyle(value: SchemaTableStyle): Self = this.set("tableStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableStyle: Self = this.set("tableStyle", js.undefined)
+  }
+  
 }
 

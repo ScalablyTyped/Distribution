@@ -18,11 +18,32 @@ trait DescribeWorkspacesConnectionStatusRequest extends js.Object {
 
 object DescribeWorkspacesConnectionStatusRequest {
   @scala.inline
-  def apply(NextToken: PaginationToken = null, WorkspaceIds: WorkspaceIdList = null): DescribeWorkspacesConnectionStatusRequest = {
+  def apply(): DescribeWorkspacesConnectionStatusRequest = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (WorkspaceIds != null) __obj.updateDynamic("WorkspaceIds")(WorkspaceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkspacesConnectionStatusRequest]
   }
+  @scala.inline
+  implicit class DescribeWorkspacesConnectionStatusRequestOps[Self <: DescribeWorkspacesConnectionStatusRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = this.set("WorkspaceIds", js.Array(value :_*))
+    @scala.inline
+    def setWorkspaceIds(value: WorkspaceIdList): Self = this.set("WorkspaceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceIds: Self = this.set("WorkspaceIds", js.undefined)
+  }
+  
 }
 

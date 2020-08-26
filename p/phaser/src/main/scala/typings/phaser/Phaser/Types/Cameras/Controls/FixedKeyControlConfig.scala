@@ -6,69 +6,100 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FixedKeyControlConfig extends js.Object {
   /**
     * The Camera that this Control will update.
     */
-  var camera: js.UndefOr[Camera] = js.undefined
+  var camera: js.UndefOr[Camera] = js.native
   /**
     * The Key to be pressed that will move the Camera down.
     */
-  var down: js.UndefOr[Key] = js.undefined
+  var down: js.UndefOr[Key] = js.native
   /**
     * The Key to be pressed that will move the Camera left.
     */
-  var left: js.UndefOr[Key] = js.undefined
+  var left: js.UndefOr[Key] = js.native
   /**
     * The Key to be pressed that will move the Camera right.
     */
-  var right: js.UndefOr[Key] = js.undefined
+  var right: js.UndefOr[Key] = js.native
   /**
     * The horizontal and vertical speed the camera will move.
     */
-  var speed: js.UndefOr[Double | js.Object] = js.undefined
+  var speed: js.UndefOr[Double | js.Object] = js.native
   /**
     * The Key to be pressed that will move the Camera up.
     */
-  var up: js.UndefOr[Key] = js.undefined
+  var up: js.UndefOr[Key] = js.native
   /**
     * The Key to be pressed that will zoom the Camera in.
     */
-  var zoomIn: js.UndefOr[Key] = js.undefined
+  var zoomIn: js.UndefOr[Key] = js.native
   /**
     * The Key to be pressed that will zoom the Camera out.
     */
-  var zoomOut: js.UndefOr[Key] = js.undefined
+  var zoomOut: js.UndefOr[Key] = js.native
   /**
     * The speed at which the camera will zoom if the `zoomIn` or `zoomOut` keys are pressed.
     */
-  var zoomSpeed: js.UndefOr[Double] = js.undefined
+  var zoomSpeed: js.UndefOr[Double] = js.native
 }
 
 object FixedKeyControlConfig {
   @scala.inline
-  def apply(
-    camera: Camera = null,
-    down: Key = null,
-    left: Key = null,
-    right: Key = null,
-    speed: Double | js.Object = null,
-    up: Key = null,
-    zoomIn: Key = null,
-    zoomOut: Key = null,
-    zoomSpeed: js.UndefOr[Double] = js.undefined
-  ): FixedKeyControlConfig = {
+  def apply(): FixedKeyControlConfig = {
     val __obj = js.Dynamic.literal()
-    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
-    if (zoomIn != null) __obj.updateDynamic("zoomIn")(zoomIn.asInstanceOf[js.Any])
-    if (zoomOut != null) __obj.updateDynamic("zoomOut")(zoomOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomSpeed)) __obj.updateDynamic("zoomSpeed")(zoomSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedKeyControlConfig]
   }
+  @scala.inline
+  implicit class FixedKeyControlConfigOps[Self <: FixedKeyControlConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCamera(value: Camera): Self = this.set("camera", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCamera: Self = this.set("camera", js.undefined)
+    @scala.inline
+    def setDown(value: Key): Self = this.set("down", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDown: Self = this.set("down", js.undefined)
+    @scala.inline
+    def setLeft(value: Key): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setRight(value: Key): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setSpeed(value: Double | js.Object): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeed: Self = this.set("speed", js.undefined)
+    @scala.inline
+    def setUp(value: Key): Self = this.set("up", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUp: Self = this.set("up", js.undefined)
+    @scala.inline
+    def setZoomIn(value: Key): Self = this.set("zoomIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomIn: Self = this.set("zoomIn", js.undefined)
+    @scala.inline
+    def setZoomOut(value: Key): Self = this.set("zoomOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomOut: Self = this.set("zoomOut", js.undefined)
+    @scala.inline
+    def setZoomSpeed(value: Double): Self = this.set("zoomSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomSpeed: Self = this.set("zoomSpeed", js.undefined)
+  }
+  
 }
 

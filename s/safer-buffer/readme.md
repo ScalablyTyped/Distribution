@@ -12,7 +12,7 @@ Modern Buffer API polyfill without footguns
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 62 |
-| # downloads        | 587262486 |
+| # downloads        | 602279223 |
 | # stars            | 0 |
 
 ## Links

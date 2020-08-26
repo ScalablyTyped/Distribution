@@ -4,59 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Chat extends js.Object {
   /**
     * @deprecated since version Telegram Bot API 4.4 - July 29, 2019
     */
-  var all_members_are_administrators: js.UndefOr[Boolean] = js.undefined
-  var can_set_sticker_set: js.UndefOr[Boolean] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var first_name: js.UndefOr[String] = js.undefined
-  var id: Double
-  var invite_link: js.UndefOr[String] = js.undefined
-  var last_name: js.UndefOr[String] = js.undefined
-  var permissions: js.UndefOr[ChatPermissions] = js.undefined
-  var photo: js.UndefOr[ChatPhoto] = js.undefined
-  var pinned_message: js.UndefOr[Message] = js.undefined
-  var sticker_set_name: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: ChatType
-  var username: js.UndefOr[String] = js.undefined
+  var all_members_are_administrators: js.UndefOr[Boolean] = js.native
+  var can_set_sticker_set: js.UndefOr[Boolean] = js.native
+  var description: js.UndefOr[String] = js.native
+  var first_name: js.UndefOr[String] = js.native
+  var id: Double = js.native
+  var invite_link: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.native
+  var permissions: js.UndefOr[ChatPermissions] = js.native
+  var photo: js.UndefOr[ChatPhoto] = js.native
+  var pinned_message: js.UndefOr[Message] = js.native
+  var sticker_set_name: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: ChatType = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object Chat {
   @scala.inline
-  def apply(
-    id: Double,
-    `type`: ChatType,
-    all_members_are_administrators: js.UndefOr[Boolean] = js.undefined,
-    can_set_sticker_set: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    first_name: String = null,
-    invite_link: String = null,
-    last_name: String = null,
-    permissions: ChatPermissions = null,
-    photo: ChatPhoto = null,
-    pinned_message: Message = null,
-    sticker_set_name: String = null,
-    title: String = null,
-    username: String = null
-  ): Chat = {
+  def apply(id: Double, `type`: ChatType): Chat = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(all_members_are_administrators)) __obj.updateDynamic("all_members_are_administrators")(all_members_are_administrators.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_set_sticker_set)) __obj.updateDynamic("can_set_sticker_set")(can_set_sticker_set.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
-    if (invite_link != null) __obj.updateDynamic("invite_link")(invite_link.asInstanceOf[js.Any])
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
-    if (pinned_message != null) __obj.updateDynamic("pinned_message")(pinned_message.asInstanceOf[js.Any])
-    if (sticker_set_name != null) __obj.updateDynamic("sticker_set_name")(sticker_set_name.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chat]
   }
+  @scala.inline
+  implicit class ChatOps[Self <: Chat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: ChatType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAll_members_are_administrators(value: Boolean): Self = this.set("all_members_are_administrators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAll_members_are_administrators: Self = this.set("all_members_are_administrators", js.undefined)
+    @scala.inline
+    def setCan_set_sticker_set(value: Boolean): Self = this.set("can_set_sticker_set", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_set_sticker_set: Self = this.set("can_set_sticker_set", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirst_name: Self = this.set("first_name", js.undefined)
+    @scala.inline
+    def setInvite_link(value: String): Self = this.set("invite_link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvite_link: Self = this.set("invite_link", js.undefined)
+    @scala.inline
+    def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast_name: Self = this.set("last_name", js.undefined)
+    @scala.inline
+    def setPermissions(value: ChatPermissions): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setPhoto(value: ChatPhoto): Self = this.set("photo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoto: Self = this.set("photo", js.undefined)
+    @scala.inline
+    def setPinned_message(value: Message): Self = this.set("pinned_message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinned_message: Self = this.set("pinned_message", js.undefined)
+    @scala.inline
+    def setSticker_set_name(value: String): Self = this.set("sticker_set_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSticker_set_name: Self = this.set("sticker_set_name", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

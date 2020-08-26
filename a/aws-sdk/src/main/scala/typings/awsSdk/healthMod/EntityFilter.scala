@@ -34,21 +34,56 @@ trait EntityFilter extends js.Object {
 
 object EntityFilter {
   @scala.inline
-  def apply(
-    eventArns: eventArnList,
-    entityArns: entityArnList = null,
-    entityValues: entityValueList = null,
-    lastUpdatedTimes: dateTimeRangeList = null,
-    statusCodes: entityStatusCodeList = null,
-    tags: tagFilter = null
-  ): EntityFilter = {
+  def apply(eventArns: eventArnList): EntityFilter = {
     val __obj = js.Dynamic.literal(eventArns = eventArns.asInstanceOf[js.Any])
-    if (entityArns != null) __obj.updateDynamic("entityArns")(entityArns.asInstanceOf[js.Any])
-    if (entityValues != null) __obj.updateDynamic("entityValues")(entityValues.asInstanceOf[js.Any])
-    if (lastUpdatedTimes != null) __obj.updateDynamic("lastUpdatedTimes")(lastUpdatedTimes.asInstanceOf[js.Any])
-    if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityFilter]
   }
+  @scala.inline
+  implicit class EntityFilterOps[Self <: EntityFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventArnsVarargs(value: eventArn*): Self = this.set("eventArns", js.Array(value :_*))
+    @scala.inline
+    def setEventArns(value: eventArnList): Self = this.set("eventArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEntityArnsVarargs(value: entityArn*): Self = this.set("entityArns", js.Array(value :_*))
+    @scala.inline
+    def setEntityArns(value: entityArnList): Self = this.set("entityArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityArns: Self = this.set("entityArns", js.undefined)
+    @scala.inline
+    def setEntityValuesVarargs(value: entityValue*): Self = this.set("entityValues", js.Array(value :_*))
+    @scala.inline
+    def setEntityValues(value: entityValueList): Self = this.set("entityValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityValues: Self = this.set("entityValues", js.undefined)
+    @scala.inline
+    def setLastUpdatedTimesVarargs(value: DateTimeRange*): Self = this.set("lastUpdatedTimes", js.Array(value :_*))
+    @scala.inline
+    def setLastUpdatedTimes(value: dateTimeRangeList): Self = this.set("lastUpdatedTimes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTimes: Self = this.set("lastUpdatedTimes", js.undefined)
+    @scala.inline
+    def setStatusCodesVarargs(value: entityStatusCode*): Self = this.set("statusCodes", js.Array(value :_*))
+    @scala.inline
+    def setStatusCodes(value: entityStatusCodeList): Self = this.set("statusCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCodes: Self = this.set("statusCodes", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: tagSet*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: tagFilter): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

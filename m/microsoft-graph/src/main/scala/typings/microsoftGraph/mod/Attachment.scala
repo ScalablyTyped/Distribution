@@ -4,40 +4,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Attachment extends Entity {
   // The MIME type.
-  var contentType: js.UndefOr[String] = js.undefined
+  var contentType: js.UndefOr[String] = js.native
   // true if the attachment is an inline attachment; otherwise, false.
-  var isInline: js.UndefOr[Boolean] = js.undefined
+  var isInline: js.UndefOr[Boolean] = js.native
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
+  var lastModifiedDateTime: js.UndefOr[String] = js.native
   // The attachment's file name.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   // The length of the attachment in bytes.
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
 }
 
 object Attachment {
   @scala.inline
-  def apply(
-    contentType: String = null,
-    id: String = null,
-    isInline: js.UndefOr[Boolean] = js.undefined,
-    lastModifiedDateTime: String = null,
-    name: String = null,
-    size: js.UndefOr[Double] = js.undefined
-  ): Attachment = {
+  def apply(): Attachment = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInline)) __obj.updateDynamic("isInline")(isInline.get.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
+  @scala.inline
+  implicit class AttachmentOps[Self <: Attachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setIsInline(value: Boolean): Self = this.set("isInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsInline: Self = this.set("isInline", js.undefined)
+    @scala.inline
+    def setLastModifiedDateTime(value: String): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

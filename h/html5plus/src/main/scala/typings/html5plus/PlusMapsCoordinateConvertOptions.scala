@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
+@js.native
 trait PlusMapsCoordinateConvertOptions extends js.Object {
   /**
     * 源数据的坐标系类型
@@ -25,15 +26,31 @@ trait PlusMapsCoordinateConvertOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var coordType: js.UndefOr[wgs84 | gcj02 | bd09 | bd09ll] = js.undefined
+  var coordType: js.UndefOr[wgs84 | gcj02 | bd09 | bd09ll] = js.native
 }
 
 object PlusMapsCoordinateConvertOptions {
   @scala.inline
-  def apply(coordType: wgs84 | gcj02 | bd09 | bd09ll = null): PlusMapsCoordinateConvertOptions = {
+  def apply(): PlusMapsCoordinateConvertOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordType != null) __obj.updateDynamic("coordType")(coordType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsCoordinateConvertOptions]
   }
+  @scala.inline
+  implicit class PlusMapsCoordinateConvertOptionsOps[Self <: PlusMapsCoordinateConvertOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoordType(value: wgs84 | gcj02 | bd09 | bd09ll): Self = this.set("coordType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordType: Self = this.set("coordType", js.undefined)
+  }
+  
 }
 

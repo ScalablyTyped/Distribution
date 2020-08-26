@@ -58,22 +58,48 @@ trait SchemaAudioConfig extends js.Object {
 
 object SchemaAudioConfig {
   @scala.inline
-  def apply(
-    audioEncoding: String = null,
-    effectsProfileId: js.Array[String] = null,
-    pitch: js.UndefOr[Double] = js.undefined,
-    sampleRateHertz: js.UndefOr[Double] = js.undefined,
-    speakingRate: js.UndefOr[Double] = js.undefined,
-    volumeGainDb: js.UndefOr[Double] = js.undefined
-  ): SchemaAudioConfig = {
+  def apply(): SchemaAudioConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
-    if (effectsProfileId != null) __obj.updateDynamic("effectsProfileId")(effectsProfileId.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sampleRateHertz)) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(speakingRate)) __obj.updateDynamic("speakingRate")(speakingRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(volumeGainDb)) __obj.updateDynamic("volumeGainDb")(volumeGainDb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAudioConfig]
   }
+  @scala.inline
+  implicit class SchemaAudioConfigOps[Self <: SchemaAudioConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioEncoding(value: String): Self = this.set("audioEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioEncoding: Self = this.set("audioEncoding", js.undefined)
+    @scala.inline
+    def setEffectsProfileIdVarargs(value: String*): Self = this.set("effectsProfileId", js.Array(value :_*))
+    @scala.inline
+    def setEffectsProfileId(value: js.Array[String]): Self = this.set("effectsProfileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectsProfileId: Self = this.set("effectsProfileId", js.undefined)
+    @scala.inline
+    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePitch: Self = this.set("pitch", js.undefined)
+    @scala.inline
+    def setSampleRateHertz(value: Double): Self = this.set("sampleRateHertz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRateHertz: Self = this.set("sampleRateHertz", js.undefined)
+    @scala.inline
+    def setSpeakingRate(value: Double): Self = this.set("speakingRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeakingRate: Self = this.set("speakingRate", js.undefined)
+    @scala.inline
+    def setVolumeGainDb(value: Double): Self = this.set("volumeGainDb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeGainDb: Self = this.set("volumeGainDb", js.undefined)
+  }
+  
 }
 

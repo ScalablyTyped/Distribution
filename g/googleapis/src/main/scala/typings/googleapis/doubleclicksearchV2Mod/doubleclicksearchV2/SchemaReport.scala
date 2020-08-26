@@ -60,28 +60,62 @@ trait SchemaReport extends js.Object {
 
 object SchemaReport {
   @scala.inline
-  def apply(
-    files: js.Array[ByteCount] = null,
-    id: String = null,
-    isReportReady: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    request: SchemaReportRequest = null,
-    rowCount: js.UndefOr[Double] = js.undefined,
-    rows: js.Array[SchemaReportRow] = null,
-    statisticsCurrencyCode: String = null,
-    statisticsTimeZone: String = null
-  ): SchemaReport = {
+  def apply(): SchemaReport = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReportReady)) __obj.updateDynamic("isReportReady")(isReportReady.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (statisticsCurrencyCode != null) __obj.updateDynamic("statisticsCurrencyCode")(statisticsCurrencyCode.asInstanceOf[js.Any])
-    if (statisticsTimeZone != null) __obj.updateDynamic("statisticsTimeZone")(statisticsTimeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReport]
   }
+  @scala.inline
+  implicit class SchemaReportOps[Self <: SchemaReport] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilesVarargs(value: ByteCount*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: js.Array[ByteCount]): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsReportReady(value: Boolean): Self = this.set("isReportReady", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsReportReady: Self = this.set("isReportReady", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setRequest(value: SchemaReportRequest): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    @scala.inline
+    def setRowsVarargs(value: SchemaReportRow*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: js.Array[SchemaReportRow]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setStatisticsCurrencyCode(value: String): Self = this.set("statisticsCurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatisticsCurrencyCode: Self = this.set("statisticsCurrencyCode", js.undefined)
+    @scala.inline
+    def setStatisticsTimeZone(value: String): Self = this.set("statisticsTimeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatisticsTimeZone: Self = this.set("statisticsTimeZone", js.undefined)
+  }
+  
 }
 

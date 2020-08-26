@@ -5,23 +5,46 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** DialogNodeVisitedDetails. */
+@js.native
 trait DialogNodeVisitedDetails extends js.Object {
   /** The conditions that trigger the dialog node. */
-  var conditions: js.UndefOr[String] = js.undefined
+  var conditions: js.UndefOr[String] = js.native
   /** A dialog node that was triggered during processing of the input message. */
-  var dialog_node: js.UndefOr[String] = js.undefined
+  var dialog_node: js.UndefOr[String] = js.native
   /** The title of the dialog node. */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
 }
 
 object DialogNodeVisitedDetails {
   @scala.inline
-  def apply(conditions: String = null, dialog_node: String = null, title: String = null): DialogNodeVisitedDetails = {
+  def apply(): DialogNodeVisitedDetails = {
     val __obj = js.Dynamic.literal()
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (dialog_node != null) __obj.updateDynamic("dialog_node")(dialog_node.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeVisitedDetails]
   }
+  @scala.inline
+  implicit class DialogNodeVisitedDetailsOps[Self <: DialogNodeVisitedDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditions(value: String): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+    @scala.inline
+    def setDialog_node(value: String): Self = this.set("dialog_node", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialog_node: Self = this.set("dialog_node", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

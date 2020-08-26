@@ -22,16 +22,34 @@ trait SyncConfig extends js.Object {
 
 object SyncConfig {
   @scala.inline
-  def apply(
-    conflictDetection: ConflictDetectionType = null,
-    conflictHandler: ConflictHandlerType = null,
-    lambdaConflictHandlerConfig: LambdaConflictHandlerConfig = null
-  ): SyncConfig = {
+  def apply(): SyncConfig = {
     val __obj = js.Dynamic.literal()
-    if (conflictDetection != null) __obj.updateDynamic("conflictDetection")(conflictDetection.asInstanceOf[js.Any])
-    if (conflictHandler != null) __obj.updateDynamic("conflictHandler")(conflictHandler.asInstanceOf[js.Any])
-    if (lambdaConflictHandlerConfig != null) __obj.updateDynamic("lambdaConflictHandlerConfig")(lambdaConflictHandlerConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncConfig]
   }
+  @scala.inline
+  implicit class SyncConfigOps[Self <: SyncConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConflictDetection(value: ConflictDetectionType): Self = this.set("conflictDetection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConflictDetection: Self = this.set("conflictDetection", js.undefined)
+    @scala.inline
+    def setConflictHandler(value: ConflictHandlerType): Self = this.set("conflictHandler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConflictHandler: Self = this.set("conflictHandler", js.undefined)
+    @scala.inline
+    def setLambdaConflictHandlerConfig(value: LambdaConflictHandlerConfig): Self = this.set("lambdaConflictHandlerConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaConflictHandlerConfig: Self = this.set("lambdaConflictHandlerConfig", js.undefined)
+  }
+  
 }
 

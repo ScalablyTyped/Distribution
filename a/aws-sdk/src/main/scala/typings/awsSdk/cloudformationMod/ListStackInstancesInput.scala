@@ -34,21 +34,46 @@ trait ListStackInstancesInput extends js.Object {
 
 object ListStackInstancesInput {
   @scala.inline
-  def apply(
-    StackSetName: StackSetName,
-    Filters: StackInstanceFilters = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    StackInstanceAccount: Account = null,
-    StackInstanceRegion: Region = null
-  ): ListStackInstancesInput = {
+  def apply(StackSetName: StackSetName): ListStackInstancesInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StackInstanceAccount != null) __obj.updateDynamic("StackInstanceAccount")(StackInstanceAccount.asInstanceOf[js.Any])
-    if (StackInstanceRegion != null) __obj.updateDynamic("StackInstanceRegion")(StackInstanceRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStackInstancesInput]
   }
+  @scala.inline
+  implicit class ListStackInstancesInputOps[Self <: ListStackInstancesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackSetName(value: StackSetName): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFiltersVarargs(value: StackInstanceFilter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: StackInstanceFilters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStackInstanceAccount(value: Account): Self = this.set("StackInstanceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackInstanceAccount: Self = this.set("StackInstanceAccount", js.undefined)
+    @scala.inline
+    def setStackInstanceRegion(value: Region): Self = this.set("StackInstanceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackInstanceRegion: Self = this.set("StackInstanceRegion", js.undefined)
+  }
+  
 }
 

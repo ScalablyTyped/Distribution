@@ -27,17 +27,10 @@ object putBucketLifecycleCommandMod extends js.Object {
           Blob
         ] {
     def this(input: PutBucketLifecycleInput) = this()
-    /* CompleteClass */
-    override val input: PutBucketLifecycleInput = js.native
     val middlewareStack: MiddlewareStack[PutBucketLifecycleInput, PutBucketLifecycleOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[PutBucketLifecycleInput, PutBucketLifecycleOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[PutBucketLifecycleInput, PutBucketLifecycleOutput] = js.native
   }

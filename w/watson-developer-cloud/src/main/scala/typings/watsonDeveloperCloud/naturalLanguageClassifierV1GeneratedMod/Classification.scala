@@ -8,35 +8,60 @@ import scala.scalajs.js.annotation._
   * model interfaces
   ************************/
 /** Response from the classifier for a phrase. */
+@js.native
 trait Classification extends js.Object {
   /** An array of up to ten class-confidence pairs sorted in descending order of confidence. */
-  var classes: js.UndefOr[js.Array[ClassifiedClass]] = js.undefined
+  var classes: js.UndefOr[js.Array[ClassifiedClass]] = js.native
   /** Unique identifier for this classifier. */
-  var classifier_id: js.UndefOr[String] = js.undefined
+  var classifier_id: js.UndefOr[String] = js.native
   /** The submitted phrase. */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /** The class with the highest confidence. */
-  var top_class: js.UndefOr[String] = js.undefined
+  var top_class: js.UndefOr[String] = js.native
   /** Link to the classifier. */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
 }
 
 object Classification {
   @scala.inline
-  def apply(
-    classes: js.Array[ClassifiedClass] = null,
-    classifier_id: String = null,
-    text: String = null,
-    top_class: String = null,
-    url: String = null
-  ): Classification = {
+  def apply(): Classification = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (classifier_id != null) __obj.updateDynamic("classifier_id")(classifier_id.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (top_class != null) __obj.updateDynamic("top_class")(top_class.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classification]
   }
+  @scala.inline
+  implicit class ClassificationOps[Self <: Classification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassesVarargs(value: ClassifiedClass*): Self = this.set("classes", js.Array(value :_*))
+    @scala.inline
+    def setClasses(value: js.Array[ClassifiedClass]): Self = this.set("classes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClasses: Self = this.set("classes", js.undefined)
+    @scala.inline
+    def setClassifier_id(value: String): Self = this.set("classifier_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassifier_id: Self = this.set("classifier_id", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTop_class(value: String): Self = this.set("top_class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop_class: Self = this.set("top_class", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

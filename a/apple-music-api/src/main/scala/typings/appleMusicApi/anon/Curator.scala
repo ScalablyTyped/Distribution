@@ -6,20 +6,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Curator extends js.Object {
-  var curator: Relationship[typings.appleMusicApi.AppleMusicApi.Curator]
-  var tracks: js.UndefOr[Relationship[Song]] = js.undefined
+  var curator: Relationship[typings.appleMusicApi.AppleMusicApi.Curator] = js.native
+  var tracks: js.UndefOr[Relationship[Song]] = js.native
 }
 
 object Curator {
   @scala.inline
-  def apply(
-    curator: Relationship[typings.appleMusicApi.AppleMusicApi.Curator],
-    tracks: Relationship[Song] = null
-  ): Curator = {
+  def apply(curator: Relationship[typings.appleMusicApi.AppleMusicApi.Curator]): Curator = {
     val __obj = js.Dynamic.literal(curator = curator.asInstanceOf[js.Any])
-    if (tracks != null) __obj.updateDynamic("tracks")(tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Curator]
   }
+  @scala.inline
+  implicit class CuratorOps[Self <: Curator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurator(value: Relationship[typings.appleMusicApi.AppleMusicApi.Curator]): Self = this.set("curator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTracks(value: Relationship[Song]): Self = this.set("tracks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracks: Self = this.set("tracks", js.undefined)
+  }
+  
 }
 

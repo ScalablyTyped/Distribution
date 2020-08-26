@@ -5,24 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Expand extends js.Object {
-  var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
-  var expand: js.UndefOr[String] = js.undefined
-  var recurse: js.UndefOr[Boolean] = js.undefined
+  var customHeaders: js.UndefOr[StringDictionary[String]] = js.native
+  var expand: js.UndefOr[String] = js.native
+  var recurse: js.UndefOr[Boolean] = js.native
 }
 
 object Expand {
   @scala.inline
-  def apply(
-    customHeaders: StringDictionary[String] = null,
-    expand: String = null,
-    recurse: js.UndefOr[Boolean] = js.undefined
-  ): Expand = {
+  def apply(): Expand = {
     val __obj = js.Dynamic.literal()
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expand]
   }
+  @scala.inline
+  implicit class ExpandOps[Self <: Expand] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomHeaders(value: StringDictionary[String]): Self = this.set("customHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomHeaders: Self = this.set("customHeaders", js.undefined)
+    @scala.inline
+    def setExpand(value: String): Self = this.set("expand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpand: Self = this.set("expand", js.undefined)
+    @scala.inline
+    def setRecurse(value: Boolean): Self = this.set("recurse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurse: Self = this.set("recurse", js.undefined)
+  }
+  
 }
 

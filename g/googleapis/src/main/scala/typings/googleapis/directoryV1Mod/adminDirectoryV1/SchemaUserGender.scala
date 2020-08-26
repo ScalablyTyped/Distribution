@@ -24,12 +24,34 @@ trait SchemaUserGender extends js.Object {
 
 object SchemaUserGender {
   @scala.inline
-  def apply(addressMeAs: String = null, customGender: String = null, `type`: String = null): SchemaUserGender = {
+  def apply(): SchemaUserGender = {
     val __obj = js.Dynamic.literal()
-    if (addressMeAs != null) __obj.updateDynamic("addressMeAs")(addressMeAs.asInstanceOf[js.Any])
-    if (customGender != null) __obj.updateDynamic("customGender")(customGender.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserGender]
   }
+  @scala.inline
+  implicit class SchemaUserGenderOps[Self <: SchemaUserGender] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressMeAs(value: String): Self = this.set("addressMeAs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressMeAs: Self = this.set("addressMeAs", js.undefined)
+    @scala.inline
+    def setCustomGender(value: String): Self = this.set("customGender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomGender: Self = this.set("customGender", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

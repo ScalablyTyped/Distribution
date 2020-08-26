@@ -26,6 +26,7 @@ class ResourceThreatlists protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListThreatListsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListThreatListsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListThreatListsResponse] = js.native
   def list(params: ParamsResourceThreatlistsList): GaxiosPromise[SchemaListThreatListsResponse] = js.native
   def list(
     params: ParamsResourceThreatlistsList,

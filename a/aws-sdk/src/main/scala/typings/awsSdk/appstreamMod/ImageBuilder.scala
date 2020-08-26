@@ -79,45 +79,96 @@ trait ImageBuilder extends js.Object {
 
 object ImageBuilder {
   @scala.inline
-  def apply(
-    Name: String,
-    AccessEndpoints: AccessEndpointList = null,
-    AppstreamAgentVersion: AppstreamAgentVersion = null,
-    Arn: Arn = null,
-    CreatedTime: Timestamp = null,
-    Description: String = null,
-    DisplayName: String = null,
-    DomainJoinInfo: DomainJoinInfo = null,
-    EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
-    IamRoleArn: Arn = null,
-    ImageArn: Arn = null,
-    ImageBuilderErrors: ResourceErrors = null,
-    InstanceType: String = null,
-    NetworkAccessConfiguration: NetworkAccessConfiguration = null,
-    Platform: PlatformType = null,
-    State: ImageBuilderState = null,
-    StateChangeReason: ImageBuilderStateChangeReason = null,
-    VpcConfig: VpcConfig = null
-  ): ImageBuilder = {
+  def apply(Name: String): ImageBuilder = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (AccessEndpoints != null) __obj.updateDynamic("AccessEndpoints")(AccessEndpoints.asInstanceOf[js.Any])
-    if (AppstreamAgentVersion != null) __obj.updateDynamic("AppstreamAgentVersion")(AppstreamAgentVersion.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (DomainJoinInfo != null) __obj.updateDynamic("DomainJoinInfo")(DomainJoinInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess.get.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (ImageArn != null) __obj.updateDynamic("ImageArn")(ImageArn.asInstanceOf[js.Any])
-    if (ImageBuilderErrors != null) __obj.updateDynamic("ImageBuilderErrors")(ImageBuilderErrors.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (NetworkAccessConfiguration != null) __obj.updateDynamic("NetworkAccessConfiguration")(NetworkAccessConfiguration.asInstanceOf[js.Any])
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StateChangeReason != null) __obj.updateDynamic("StateChangeReason")(StateChangeReason.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageBuilder]
   }
+  @scala.inline
+  implicit class ImageBuilderOps[Self <: ImageBuilder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = this.set("AccessEndpoints", js.Array(value :_*))
+    @scala.inline
+    def setAccessEndpoints(value: AccessEndpointList): Self = this.set("AccessEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessEndpoints: Self = this.set("AccessEndpoints", js.undefined)
+    @scala.inline
+    def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = this.set("AppstreamAgentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppstreamAgentVersion: Self = this.set("AppstreamAgentVersion", js.undefined)
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: Timestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setDomainJoinInfo(value: DomainJoinInfo): Self = this.set("DomainJoinInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainJoinInfo: Self = this.set("DomainJoinInfo", js.undefined)
+    @scala.inline
+    def setEnableDefaultInternetAccess(value: BooleanObject): Self = this.set("EnableDefaultInternetAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDefaultInternetAccess: Self = this.set("EnableDefaultInternetAccess", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: Arn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    @scala.inline
+    def setImageArn(value: Arn): Self = this.set("ImageArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageArn: Self = this.set("ImageArn", js.undefined)
+    @scala.inline
+    def setImageBuilderErrorsVarargs(value: ResourceError*): Self = this.set("ImageBuilderErrors", js.Array(value :_*))
+    @scala.inline
+    def setImageBuilderErrors(value: ResourceErrors): Self = this.set("ImageBuilderErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageBuilderErrors: Self = this.set("ImageBuilderErrors", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setNetworkAccessConfiguration(value: NetworkAccessConfiguration): Self = this.set("NetworkAccessConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkAccessConfiguration: Self = this.set("NetworkAccessConfiguration", js.undefined)
+    @scala.inline
+    def setPlatform(value: PlatformType): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("Platform", js.undefined)
+    @scala.inline
+    def setState(value: ImageBuilderState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStateChangeReason(value: ImageBuilderStateChangeReason): Self = this.set("StateChangeReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateChangeReason: Self = this.set("StateChangeReason", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

@@ -8,124 +8,150 @@ import scala.scalajs.js.annotation._
   * Sample for analysis
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Specimen extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Specimen extends DomainResource {
   /**
     * Contains extended information for property 'receivedTime'.
     */
-  var _receivedTime: js.UndefOr[Element] = js.undefined
+  var _receivedTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Identifier assigned by the lab
     */
-  var accessionIdentifier: js.UndefOr[Identifier] = js.undefined
+  var accessionIdentifier: js.UndefOr[Identifier] = js.native
   /**
     * Collection details
     */
-  var collection: js.UndefOr[SpecimenCollection] = js.undefined
+  var collection: js.UndefOr[SpecimenCollection] = js.native
   /**
     * Direct container of specimen (tube/slide, etc.)
     */
-  var container: js.UndefOr[js.Array[SpecimenContainer]] = js.undefined
+  var container: js.UndefOr[js.Array[SpecimenContainer]] = js.native
   /**
     * External Identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Comments
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
+  var note: js.UndefOr[js.Array[Annotation]] = js.native
   /**
     * Specimen from which this specimen originated
     */
-  var parent: js.UndefOr[js.Array[Reference]] = js.undefined
+  var parent: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Processing and processing step details
     */
-  var processing: js.UndefOr[js.Array[SpecimenProcessing]] = js.undefined
+  var processing: js.UndefOr[js.Array[SpecimenProcessing]] = js.native
   /**
     * The time when specimen was received for processing
     */
-  var receivedTime: js.UndefOr[dateTime] = js.undefined
+  var receivedTime: js.UndefOr[dateTime] = js.native
   /**
     * Why the specimen was collected
     */
-  var request: js.UndefOr[js.Array[Reference]] = js.undefined
+  var request: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * available | unavailable | unsatisfactory | entered-in-error
     */
-  var status: js.UndefOr[code] = js.undefined
+  var status: js.UndefOr[code] = js.native
   /**
     * Where the specimen came from. This may be from the patient(s) or from the environment or a device
     */
-  var subject: Reference
+  var subject: Reference = js.native
   /**
     * Kind of material that forms the specimen
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.undefined
+  var `type`: js.UndefOr[CodeableConcept] = js.native
 }
 
 object Specimen {
   @scala.inline
-  def apply(
-    subject: Reference,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _receivedTime: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    accessionIdentifier: Identifier = null,
-    collection: SpecimenCollection = null,
-    contained: js.Array[Resource] = null,
-    container: js.Array[SpecimenContainer] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    note: js.Array[Annotation] = null,
-    parent: js.Array[Reference] = null,
-    processing: js.Array[SpecimenProcessing] = null,
-    receivedTime: dateTime = null,
-    request: js.Array[Reference] = null,
-    resourceType: code = null,
-    status: code = null,
-    text: Narrative = null,
-    `type`: CodeableConcept = null
-  ): Specimen = {
+  def apply(subject: Reference): Specimen = {
     val __obj = js.Dynamic.literal(subject = subject.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_receivedTime != null) __obj.updateDynamic("_receivedTime")(_receivedTime.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (accessionIdentifier != null) __obj.updateDynamic("accessionIdentifier")(accessionIdentifier.asInstanceOf[js.Any])
-    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (processing != null) __obj.updateDynamic("processing")(processing.asInstanceOf[js.Any])
-    if (receivedTime != null) __obj.updateDynamic("receivedTime")(receivedTime.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Specimen]
   }
+  @scala.inline
+  implicit class SpecimenOps[Self <: Specimen] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_receivedTime(value: Element): Self = this.set("_receivedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_receivedTime: Self = this.set("_receivedTime", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setAccessionIdentifier(value: Identifier): Self = this.set("accessionIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessionIdentifier: Self = this.set("accessionIdentifier", js.undefined)
+    @scala.inline
+    def setCollection(value: SpecimenCollection): Self = this.set("collection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollection: Self = this.set("collection", js.undefined)
+    @scala.inline
+    def setContainerVarargs(value: SpecimenContainer*): Self = this.set("container", js.Array(value :_*))
+    @scala.inline
+    def setContainer(value: js.Array[SpecimenContainer]): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    @scala.inline
+    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("note", js.undefined)
+    @scala.inline
+    def setParentVarargs(value: Reference*): Self = this.set("parent", js.Array(value :_*))
+    @scala.inline
+    def setParent(value: js.Array[Reference]): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setProcessingVarargs(value: SpecimenProcessing*): Self = this.set("processing", js.Array(value :_*))
+    @scala.inline
+    def setProcessing(value: js.Array[SpecimenProcessing]): Self = this.set("processing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessing: Self = this.set("processing", js.undefined)
+    @scala.inline
+    def setReceivedTime(value: dateTime): Self = this.set("receivedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceivedTime: Self = this.set("receivedTime", js.undefined)
+    @scala.inline
+    def setRequestVarargs(value: Reference*): Self = this.set("request", js.Array(value :_*))
+    @scala.inline
+    def setRequest(value: js.Array[Reference]): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

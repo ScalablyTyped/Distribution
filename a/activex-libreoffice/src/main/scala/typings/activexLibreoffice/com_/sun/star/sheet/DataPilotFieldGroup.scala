@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * @see DataPilotFieldGroups
   * @see DataPilotFieldGroupItem
   */
+@js.native
 trait DataPilotFieldGroup
   extends XNameContainer
      with XNamed

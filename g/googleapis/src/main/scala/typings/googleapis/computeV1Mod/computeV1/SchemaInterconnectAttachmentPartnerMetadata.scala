@@ -32,12 +32,34 @@ trait SchemaInterconnectAttachmentPartnerMetadata extends js.Object {
 
 object SchemaInterconnectAttachmentPartnerMetadata {
   @scala.inline
-  def apply(interconnectName: String = null, partnerName: String = null, portalUrl: String = null): SchemaInterconnectAttachmentPartnerMetadata = {
+  def apply(): SchemaInterconnectAttachmentPartnerMetadata = {
     val __obj = js.Dynamic.literal()
-    if (interconnectName != null) __obj.updateDynamic("interconnectName")(interconnectName.asInstanceOf[js.Any])
-    if (partnerName != null) __obj.updateDynamic("partnerName")(partnerName.asInstanceOf[js.Any])
-    if (portalUrl != null) __obj.updateDynamic("portalUrl")(portalUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInterconnectAttachmentPartnerMetadata]
   }
+  @scala.inline
+  implicit class SchemaInterconnectAttachmentPartnerMetadataOps[Self <: SchemaInterconnectAttachmentPartnerMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInterconnectName(value: String): Self = this.set("interconnectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterconnectName: Self = this.set("interconnectName", js.undefined)
+    @scala.inline
+    def setPartnerName(value: String): Self = this.set("partnerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartnerName: Self = this.set("partnerName", js.undefined)
+    @scala.inline
+    def setPortalUrl(value: String): Self = this.set("portalUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortalUrl: Self = this.set("portalUrl", js.undefined)
+  }
+  
 }
 

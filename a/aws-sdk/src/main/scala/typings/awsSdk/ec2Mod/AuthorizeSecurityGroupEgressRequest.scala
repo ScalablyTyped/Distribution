@@ -46,27 +46,58 @@ trait AuthorizeSecurityGroupEgressRequest extends js.Object {
 
 object AuthorizeSecurityGroupEgressRequest {
   @scala.inline
-  def apply(
-    GroupId: SecurityGroupId,
-    CidrIp: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    FromPort: js.UndefOr[Integer] = js.undefined,
-    IpPermissions: IpPermissionList = null,
-    IpProtocol: String = null,
-    SourceSecurityGroupName: String = null,
-    SourceSecurityGroupOwnerId: String = null,
-    ToPort: js.UndefOr[Integer] = js.undefined
-  ): AuthorizeSecurityGroupEgressRequest = {
+  def apply(GroupId: SecurityGroupId): AuthorizeSecurityGroupEgressRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
-    if (CidrIp != null) __obj.updateDynamic("CidrIp")(CidrIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FromPort)) __obj.updateDynamic("FromPort")(FromPort.get.asInstanceOf[js.Any])
-    if (IpPermissions != null) __obj.updateDynamic("IpPermissions")(IpPermissions.asInstanceOf[js.Any])
-    if (IpProtocol != null) __obj.updateDynamic("IpProtocol")(IpProtocol.asInstanceOf[js.Any])
-    if (SourceSecurityGroupName != null) __obj.updateDynamic("SourceSecurityGroupName")(SourceSecurityGroupName.asInstanceOf[js.Any])
-    if (SourceSecurityGroupOwnerId != null) __obj.updateDynamic("SourceSecurityGroupOwnerId")(SourceSecurityGroupOwnerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ToPort)) __obj.updateDynamic("ToPort")(ToPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeSecurityGroupEgressRequest]
   }
+  @scala.inline
+  implicit class AuthorizeSecurityGroupEgressRequestOps[Self <: AuthorizeSecurityGroupEgressRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupId(value: SecurityGroupId): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCidrIp(value: String): Self = this.set("CidrIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrIp: Self = this.set("CidrIp", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFromPort(value: Integer): Self = this.set("FromPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromPort: Self = this.set("FromPort", js.undefined)
+    @scala.inline
+    def setIpPermissionsVarargs(value: IpPermission*): Self = this.set("IpPermissions", js.Array(value :_*))
+    @scala.inline
+    def setIpPermissions(value: IpPermissionList): Self = this.set("IpPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpPermissions: Self = this.set("IpPermissions", js.undefined)
+    @scala.inline
+    def setIpProtocol(value: String): Self = this.set("IpProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpProtocol: Self = this.set("IpProtocol", js.undefined)
+    @scala.inline
+    def setSourceSecurityGroupName(value: String): Self = this.set("SourceSecurityGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSecurityGroupName: Self = this.set("SourceSecurityGroupName", js.undefined)
+    @scala.inline
+    def setSourceSecurityGroupOwnerId(value: String): Self = this.set("SourceSecurityGroupOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSecurityGroupOwnerId: Self = this.set("SourceSecurityGroupOwnerId", js.undefined)
+    @scala.inline
+    def setToPort(value: Integer): Self = this.set("ToPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToPort: Self = this.set("ToPort", js.undefined)
+  }
+  
 }
 

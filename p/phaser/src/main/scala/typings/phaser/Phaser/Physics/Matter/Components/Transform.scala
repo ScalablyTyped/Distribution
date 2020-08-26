@@ -56,6 +56,7 @@ trait Transform extends js.Object {
     * @param y The vertical position of the body. Default x.
     */
   def setPosition(): this.type = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setPosition(x: Double): this.type = js.native
   def setPosition(x: Double, y: Double): this.type = js.native
   /**
@@ -72,7 +73,11 @@ trait Transform extends js.Object {
     * @param point The point (Vector2) from which scaling will occur.
     */
   def setScale(): this.type = js.native
+  def setScale(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], point: Vector2): this.type = js.native
+  def setScale(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+  def setScale(x: js.UndefOr[scala.Nothing], y: Double, point: Vector2): this.type = js.native
   def setScale(x: Double): this.type = js.native
+  def setScale(x: Double, y: js.UndefOr[scala.Nothing], point: Vector2): this.type = js.native
   def setScale(x: Double, y: Double): this.type = js.native
   def setScale(x: Double, y: Double, point: Vector2): this.type = js.native
 }

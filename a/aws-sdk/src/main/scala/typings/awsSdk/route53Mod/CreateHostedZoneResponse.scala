@@ -34,12 +34,35 @@ object CreateHostedZoneResponse {
     ChangeInfo: ChangeInfo,
     DelegationSet: DelegationSet,
     HostedZone: HostedZone,
-    Location: ResourceURI,
-    VPC: VPC = null
+    Location: ResourceURI
   ): CreateHostedZoneResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any], DelegationSet = DelegationSet.asInstanceOf[js.Any], HostedZone = HostedZone.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any])
-    if (VPC != null) __obj.updateDynamic("VPC")(VPC.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHostedZoneResponse]
   }
+  @scala.inline
+  implicit class CreateHostedZoneResponseOps[Self <: CreateHostedZoneResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeInfo(value: ChangeInfo): Self = this.set("ChangeInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelegationSet(value: DelegationSet): Self = this.set("DelegationSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHostedZone(value: HostedZone): Self = this.set("HostedZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocation(value: ResourceURI): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVPC(value: VPC): Self = this.set("VPC", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVPC: Self = this.set("VPC", js.undefined)
+  }
+  
 }
 

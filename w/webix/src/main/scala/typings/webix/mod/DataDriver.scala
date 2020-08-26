@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataDriver extends js.Object {
-  var csv: js.Any
-  var excel: String
-  var html: js.Any
-  var htmltable: js.Any
-  var jsarray: js.Any
-  var json: js.Any
-  var xml: js.Any
+  var csv: js.Any = js.native
+  var excel: String = js.native
+  var html: js.Any = js.native
+  var htmltable: js.Any = js.native
+  var jsarray: js.Any = js.native
+  var json: js.Any = js.native
+  var xml: js.Any = js.native
 }
 
 @JSImport("webix", "DataDriver")

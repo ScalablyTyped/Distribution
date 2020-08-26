@@ -18,11 +18,5 @@ class SystemTrigger protected ()
     triggerType: typings.winrtUwp.Windows.ApplicationModel.Background.SystemTriggerType,
     oneShot: Boolean
   ) = this()
-  /** Gets whether a system event trigger will be used only once. */
-  /* CompleteClass */
-  override var oneShot: Boolean = js.native
-  /** Gets the system event type of a system event trigger. */
-  /* CompleteClass */
-  override var triggerType: typings.winrtUwp.Windows.ApplicationModel.Background.SystemTriggerType = js.native
 }
 

@@ -16,14 +16,10 @@ object maxPool extends js.Object {
     x: T | TensorLike,
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same | Double
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    filterSize: (js.Tuple2[Double, Double]) | Double,
-    strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+    dimRoundingMode: js.UndefOr[
+      typings.tensorflowTfjs.tensorflowTfjsStrings.floor | typings.tensorflowTfjs.tensorflowTfjsStrings.round | typings.tensorflowTfjs.tensorflowTfjsStrings.ceil
+    ]
   ): T = js.native
 }
 

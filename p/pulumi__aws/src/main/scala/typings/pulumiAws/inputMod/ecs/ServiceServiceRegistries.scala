@@ -7,25 +7,56 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ServiceServiceRegistries extends js.Object {
+  /**
+    * The container name value, already specified in the task definition, to be used for your service discovery service.
+    */
   var containerName: js.UndefOr[Input[String]] = js.native
+  /**
+    * The port value, already specified in the task definition, to be used for your service discovery service.
+    */
   var containerPort: js.UndefOr[Input[Double]] = js.native
+  /**
+    * The port value used if your Service Discovery service specified an SRV record.
+    */
   var port: js.UndefOr[Input[Double]] = js.native
+  /**
+    * The ARN of the Service Registry. The currently supported service registry is Amazon Route 53 Auto Naming Service(`aws.servicediscovery.Service`). For more information, see [Service](https://docs.aws.amazon.com/Route53/latest/APIReference/API_autonaming_Service.html)
+    */
   var registryArn: Input[String] = js.native
 }
 
 object ServiceServiceRegistries {
   @scala.inline
-  def apply(
-    registryArn: Input[String],
-    containerName: Input[String] = null,
-    containerPort: Input[Double] = null,
-    port: Input[Double] = null
-  ): ServiceServiceRegistries = {
+  def apply(registryArn: Input[String]): ServiceServiceRegistries = {
     val __obj = js.Dynamic.literal(registryArn = registryArn.asInstanceOf[js.Any])
-    if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    if (containerPort != null) __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceServiceRegistries]
   }
+  @scala.inline
+  implicit class ServiceServiceRegistriesOps[Self <: ServiceServiceRegistries] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegistryArn(value: Input[String]): Self = this.set("registryArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainerName(value: Input[String]): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    @scala.inline
+    def setContainerPort(value: Input[Double]): Self = this.set("containerPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerPort: Self = this.set("containerPort", js.undefined)
+    @scala.inline
+    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+  }
+  
 }
 

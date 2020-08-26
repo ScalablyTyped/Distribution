@@ -12,7 +12,7 @@ Get the diff from objectA to objectB
 | Keywords           | object, diff, patch |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 651403 |
+| # downloads        | 687653 |
 | # stars            | 3 |
 
 ## Links

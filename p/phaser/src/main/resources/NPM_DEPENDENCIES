@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "phaser" : "3.23.0"
+      "phaser" : "3.24.1"
     }
   ],
   "test-dependencies" : [
     {
-      "phaser" : "3.23.0"
+      "phaser" : "3.24.1"
     }
   ],
   "compile-devDependencies" : [

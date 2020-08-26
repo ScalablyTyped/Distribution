@@ -16,6 +16,7 @@ object nodeModelMod extends js.Object {
   @js.native
   class NodeModel () extends BaseModel[DiagramModel, BaseModelListener] {
     def this(nodeType: String) = this()
+    def this(nodeType: js.UndefOr[scala.Nothing], id: String) = this()
     def this(nodeType: String, id: String) = this()
     var extras: js.Any = js.native
     var height: Double = js.native

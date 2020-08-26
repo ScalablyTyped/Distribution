@@ -1,8 +1,8 @@
 package typings.subscriptionsTransportWs.clientMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.eventemitter3.mod.ListenerFn
 import typings.graphql.executeMod.ExecutionResult
-import typings.graphql.executeMod.ExecutionResultDataDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,39 @@ import scala.scalajs.js.annotation._
 class SubscriptionClient protected () extends js.Object {
   def this(url: String) = this()
   def this(url: String, options: ClientOptions) = this()
+  def this(url: String, options: js.UndefOr[scala.Nothing], webSocketImpl: js.Any) = this()
   def this(url: String, options: ClientOptions, webSocketImpl: js.Any) = this()
+  def this(
+    url: String,
+    options: js.UndefOr[scala.Nothing],
+    webSocketImpl: js.UndefOr[scala.Nothing],
+    webSocketProtocols: String
+  ) = this()
+  def this(
+    url: String,
+    options: js.UndefOr[scala.Nothing],
+    webSocketImpl: js.UndefOr[scala.Nothing],
+    webSocketProtocols: js.Array[String]
+  ) = this()
+  def this(url: String, options: js.UndefOr[scala.Nothing], webSocketImpl: js.Any, webSocketProtocols: String) = this()
+  def this(
+    url: String,
+    options: js.UndefOr[scala.Nothing],
+    webSocketImpl: js.Any,
+    webSocketProtocols: js.Array[String]
+  ) = this()
+  def this(
+    url: String,
+    options: ClientOptions,
+    webSocketImpl: js.UndefOr[scala.Nothing],
+    webSocketProtocols: String
+  ) = this()
+  def this(
+    url: String,
+    options: ClientOptions,
+    webSocketImpl: js.UndefOr[scala.Nothing],
+    webSocketProtocols: js.Array[String]
+  ) = this()
   def this(url: String, options: ClientOptions, webSocketImpl: js.Any, webSocketProtocols: String) = this()
   def this(url: String, options: ClientOptions, webSocketImpl: js.Any, webSocketProtocols: js.Array[String]) = this()
   var backoff: js.Any = js.native
@@ -53,7 +85,6 @@ class SubscriptionClient protected () extends js.Object {
   var sendMessage: js.Any = js.native
   var sendMessageRaw: js.Any = js.native
   var setInactivityTimeout: js.Any = js.native
-  val status: js.Any = js.native
   var tryReconnect: js.Any = js.native
   var tryReconnectTimeoutId: js.Any = js.native
   var unsentMessagesQueue: js.Any = js.native
@@ -65,6 +96,7 @@ class SubscriptionClient protected () extends js.Object {
   var wsTimeout: js.Any = js.native
   def applyMiddlewares(options: OperationOptions): js.Promise[OperationOptions] = js.native
   def close(): Unit = js.native
+  def close(isForced: js.UndefOr[scala.Nothing], closedByUser: Boolean): Unit = js.native
   def close(isForced: Boolean): Unit = js.native
   def close(isForced: Boolean, closedByUser: Boolean): Unit = js.native
   def on(eventName: String, callback: ListenerFn[js.Array[_]]): js.Function = js.native
@@ -81,7 +113,8 @@ class SubscriptionClient protected () extends js.Object {
   def onReconnected(callback: ListenerFn[js.Array[_]], context: js.Any): js.Function = js.native
   def onReconnecting(callback: ListenerFn[js.Array[_]]): js.Function = js.native
   def onReconnecting(callback: ListenerFn[js.Array[_]], context: js.Any): js.Function = js.native
-  def request(request: OperationOptions): Observable[ExecutionResult[ExecutionResultDataDefault]] = js.native
+  def request(request: OperationOptions): Observable[ExecutionResult[StringDictionary[_], StringDictionary[_]]] = js.native
+  def status: js.Any = js.native
   def unsubscribeAll(): Unit = js.native
   def use(middlewares: js.Array[Middleware]): SubscriptionClient = js.native
 }

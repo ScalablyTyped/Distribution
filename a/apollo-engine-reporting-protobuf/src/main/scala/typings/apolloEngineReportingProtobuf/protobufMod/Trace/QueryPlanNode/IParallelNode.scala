@@ -6,17 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Properties of a ParallelNode. */
+@js.native
 trait IParallelNode extends js.Object {
   /** ParallelNode nodes */
-  var nodes: js.UndefOr[js.Array[IQueryPlanNode] | Null] = js.undefined
+  var nodes: js.UndefOr[js.Array[IQueryPlanNode] | Null] = js.native
 }
 
 object IParallelNode {
   @scala.inline
-  def apply(nodes: js.UndefOr[Null | js.Array[IQueryPlanNode]] = js.undefined): IParallelNode = {
+  def apply(): IParallelNode = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(nodes)) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParallelNode]
   }
+  @scala.inline
+  implicit class IParallelNodeOps[Self <: IParallelNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNodesVarargs(value: IQueryPlanNode*): Self = this.set("nodes", js.Array(value :_*))
+    @scala.inline
+    def setNodes(value: js.Array[IQueryPlanNode]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodes: Self = this.set("nodes", js.undefined)
+    @scala.inline
+    def setNodesNull: Self = this.set("nodes", null)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait GetResolverRulePolicyResponse extends js.Object {
 
 object GetResolverRulePolicyResponse {
   @scala.inline
-  def apply(ResolverRulePolicy: ResolverRulePolicy = null): GetResolverRulePolicyResponse = {
+  def apply(): GetResolverRulePolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (ResolverRulePolicy != null) __obj.updateDynamic("ResolverRulePolicy")(ResolverRulePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResolverRulePolicyResponse]
   }
+  @scala.inline
+  implicit class GetResolverRulePolicyResponseOps[Self <: GetResolverRulePolicyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResolverRulePolicy(value: ResolverRulePolicy): Self = this.set("ResolverRulePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolverRulePolicy: Self = this.set("ResolverRulePolicy", js.undefined)
+  }
+  
 }
 

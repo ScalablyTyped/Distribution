@@ -16,17 +16,8 @@ object errorMod extends js.Object {
   class HttpsErrorImpl protected () extends HttpsError {
     def this(code: FunctionsErrorCode) = this()
     def this(code: FunctionsErrorCode, message: String) = this()
+    def this(code: FunctionsErrorCode, message: js.UndefOr[scala.Nothing], details: js.Any) = this()
     def this(code: FunctionsErrorCode, message: String, details: js.Any) = this()
-    /**
-      * A standard error code that will be returned to the client. This also
-      * determines the HTTP status code of the response, as defined in code.proto.
-      */
-    /* CompleteClass */
-    override val code: FunctionsErrorCode = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @JSName("_errorForResponse")

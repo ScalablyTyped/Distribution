@@ -12,7 +12,7 @@ Get the protocols of an input url.
 | Keywords           | protocols, protocol, url, parse |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 28944330 |
+| # downloads        | 31443327 |
 | # stars            | 0 |
 
 ## Links

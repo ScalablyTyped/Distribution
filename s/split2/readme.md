@@ -11,8 +11,8 @@ split a Text Stream into a Line Stream, using Stream 3
 | Full name          | split2 |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 441 |
-| # downloads        | 84204387 |
+| # dependents       | 450 |
+| # downloads        | 86944501 |
 | # stars            | 13 |
 
 ## Links

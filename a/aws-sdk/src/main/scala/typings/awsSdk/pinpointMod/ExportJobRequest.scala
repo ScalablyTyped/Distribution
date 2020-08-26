@@ -26,16 +26,34 @@ trait ExportJobRequest extends js.Object {
 
 object ExportJobRequest {
   @scala.inline
-  def apply(
-    RoleArn: string,
-    S3UrlPrefix: string,
-    SegmentId: string = null,
-    SegmentVersion: js.UndefOr[integer] = js.undefined
-  ): ExportJobRequest = {
+  def apply(RoleArn: string, S3UrlPrefix: string): ExportJobRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], S3UrlPrefix = S3UrlPrefix.asInstanceOf[js.Any])
-    if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentVersion)) __obj.updateDynamic("SegmentVersion")(SegmentVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportJobRequest]
   }
+  @scala.inline
+  implicit class ExportJobRequestOps[Self <: ExportJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3UrlPrefix(value: string): Self = this.set("S3UrlPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSegmentId(value: string): Self = this.set("SegmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentId: Self = this.set("SegmentId", js.undefined)
+    @scala.inline
+    def setSegmentVersion(value: integer): Self = this.set("SegmentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentVersion: Self = this.set("SegmentVersion", js.undefined)
+  }
+  
 }
 

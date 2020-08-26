@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Crop extends js.Object {
-  val Application: js.Any
-  val Creator: Double
+  val Application: js.Any = js.native
+  val Creator: Double = js.native
   @JSName("Office.Crop_typekey")
-  var OfficeDotCrop_typekey: Crop
-  var PictureHeight: Double
-  var PictureOffsetX: Double
-  var PictureOffsetY: Double
-  var PictureWidth: Double
-  var ShapeHeight: Double
-  var ShapeLeft: Double
-  var ShapeTop: Double
-  var ShapeWidth: Double
+  var OfficeDotCrop_typekey: Crop = js.native
+  var PictureHeight: Double = js.native
+  var PictureOffsetX: Double = js.native
+  var PictureOffsetY: Double = js.native
+  var PictureWidth: Double = js.native
+  var ShapeHeight: Double = js.native
+  var ShapeLeft: Double = js.native
+  var ShapeTop: Double = js.native
+  var ShapeWidth: Double = js.native
 }
 
 object Crop {
@@ -38,5 +39,40 @@ object Crop {
     __obj.updateDynamic("Office.Crop_typekey")(OfficeDotCrop_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crop]
   }
+  @scala.inline
+  implicit class CropOps[Self <: Crop] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOfficeDotCrop_typekey(value: Crop): Self = this.set("Office.Crop_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPictureHeight(value: Double): Self = this.set("PictureHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPictureOffsetX(value: Double): Self = this.set("PictureOffsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPictureOffsetY(value: Double): Self = this.set("PictureOffsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPictureWidth(value: Double): Self = this.set("PictureWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShapeHeight(value: Double): Self = this.set("ShapeHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShapeLeft(value: Double): Self = this.set("ShapeLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShapeTop(value: Double): Self = this.set("ShapeTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShapeWidth(value: Double): Self = this.set("ShapeWidth", value.asInstanceOf[js.Any])
+  }
+  
 }
 

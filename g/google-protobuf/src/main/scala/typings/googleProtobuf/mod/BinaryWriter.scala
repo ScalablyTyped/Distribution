@@ -16,7 +16,11 @@ class BinaryWriter () extends js.Object {
   def getResultBase64String(): String = js.native
   def getResultBuffer(): Uint8Array = js.native
   def maybeWriteSerializedMessage(): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: js.UndefOr[scala.Nothing], start: Double): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: js.UndefOr[scala.Nothing], start: Double, end: Double): Unit = js.native
   def maybeWriteSerializedMessage(bytes: Uint8Array): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: Uint8Array, start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
   def maybeWriteSerializedMessage(bytes: Uint8Array, start: Double): Unit = js.native
   def maybeWriteSerializedMessage(bytes: Uint8Array, start: Double, end: Double): Unit = js.native
   def reset(): Unit = js.native

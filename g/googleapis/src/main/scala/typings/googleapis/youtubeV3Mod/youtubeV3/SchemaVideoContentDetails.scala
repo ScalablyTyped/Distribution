@@ -68,30 +68,62 @@ trait SchemaVideoContentDetails extends js.Object {
 
 object SchemaVideoContentDetails {
   @scala.inline
-  def apply(
-    caption: String = null,
-    contentRating: SchemaContentRating = null,
-    countryRestriction: SchemaAccessPolicy = null,
-    definition: String = null,
-    dimension: String = null,
-    duration: String = null,
-    hasCustomThumbnail: js.UndefOr[Boolean] = js.undefined,
-    licensedContent: js.UndefOr[Boolean] = js.undefined,
-    projection: String = null,
-    regionRestriction: SchemaVideoContentDetailsRegionRestriction = null
-  ): SchemaVideoContentDetails = {
+  def apply(): SchemaVideoContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (contentRating != null) __obj.updateDynamic("contentRating")(contentRating.asInstanceOf[js.Any])
-    if (countryRestriction != null) __obj.updateDynamic("countryRestriction")(countryRestriction.asInstanceOf[js.Any])
-    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCustomThumbnail)) __obj.updateDynamic("hasCustomThumbnail")(hasCustomThumbnail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(licensedContent)) __obj.updateDynamic("licensedContent")(licensedContent.get.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (regionRestriction != null) __obj.updateDynamic("regionRestriction")(regionRestriction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoContentDetails]
   }
+  @scala.inline
+  implicit class SchemaVideoContentDetailsOps[Self <: SchemaVideoContentDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    @scala.inline
+    def setContentRating(value: SchemaContentRating): Self = this.set("contentRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentRating: Self = this.set("contentRating", js.undefined)
+    @scala.inline
+    def setCountryRestriction(value: SchemaAccessPolicy): Self = this.set("countryRestriction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryRestriction: Self = this.set("countryRestriction", js.undefined)
+    @scala.inline
+    def setDefinition(value: String): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinition: Self = this.set("definition", js.undefined)
+    @scala.inline
+    def setDimension(value: String): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension: Self = this.set("dimension", js.undefined)
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setHasCustomThumbnail(value: Boolean): Self = this.set("hasCustomThumbnail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasCustomThumbnail: Self = this.set("hasCustomThumbnail", js.undefined)
+    @scala.inline
+    def setLicensedContent(value: Boolean): Self = this.set("licensedContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicensedContent: Self = this.set("licensedContent", js.undefined)
+    @scala.inline
+    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setRegionRestriction(value: SchemaVideoContentDetailsRegionRestriction): Self = this.set("regionRestriction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionRestriction: Self = this.set("regionRestriction", js.undefined)
+  }
+  
 }
 

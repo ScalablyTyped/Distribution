@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 object stringify extends js.Object {
   def apply(value: js.Any): String = js.native
   def apply(value: js.Any, options: StringifyOptions): String = js.native
+  def apply(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
+  def apply(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
   def apply(value: js.Any, replacer: js.Array[Double | String]): String = js.native
   def apply(value: js.Any, replacer: js.Array[Double | String], space: String): String = js.native
   def apply(value: js.Any, replacer: js.Array[Double | String], space: Double): String = js.native

@@ -10,6 +10,5 @@ import scala.scalajs.js.annotation._
 class RawSource protected () extends Source {
   def this(value: String) = this()
   def listMap(options: MapOptions): SourceListMap = js.native
-  def source(): String = js.native
 }
 

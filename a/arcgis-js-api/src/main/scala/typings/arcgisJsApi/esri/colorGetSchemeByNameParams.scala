@@ -1,36 +1,49 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
+import typings.arcgisJsApi.arcgisJsApiStrings.`centered-on`
+import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typings.arcgisJsApi.arcgisJsApiStrings.dark
+import typings.arcgisJsApi.arcgisJsApiStrings.extremes
+import typings.arcgisJsApi.arcgisJsApiStrings.light
+import typings.arcgisJsApi.arcgisJsApiStrings.mesh
+import typings.arcgisJsApi.arcgisJsApiStrings.multipatch
+import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
+import typings.arcgisJsApi.arcgisJsApiStrings.point
+import typings.arcgisJsApi.arcgisJsApiStrings.polygon
+import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait colorGetSchemeByNameParams extends Object {
   /**
     * The basemap to pair with the visualization. This value indicates the best symbol colors for visualizing features against the given basemap.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
+  var basemap: js.UndefOr[String | Basemap] = js.native
   /**
-    * If you have a non-Esri basemap (e.g. a VectorTileLayer basemap with a custom style) or no basemap at all, use this parameter to indicate whether the background of the visualization is `light` or `dark`.  **Possible Values:** light | dark
+    * If you have a non-Esri basemap (e.g. a VectorTileLayer basemap with a custom style) or no basemap at all, use this parameter to indicate whether the background of the visualization is `light` or `dark`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
-  var basemapTheme: js.UndefOr[String] = js.undefined
+  var basemapTheme: js.UndefOr[light | dark] = js.native
   /**
-    * The geometry type of the features to visualize.  **Possible Values:** point | multipoint | polyline | polygon | mesh
+    * The geometry type of the features to visualize.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
-  var geometryType: String
+  var geometryType: point | multipoint | polyline | polygon | mesh | multipatch = js.native
   /**
     * The name of the scheme to retrieve.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
-  var name: String
+  var name: String = js.native
   /**
     * The theme determines which values will be emphasized in the continuous ramp and the map. Possible values are listed below.
     *
@@ -42,43 +55,70 @@ trait colorGetSchemeByNameParams extends Object {
     * | extremes | High and low values are emphasized with strong colors. All others are visualized with weak colors. | ![extremes](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-extremes.png) |
     *
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
-  var theme: String
+  var theme: `high-to-low` | `above-and-below` | `centered-on` | extremes = js.native
   /**
     * The SceneView instance in which the scheme will be used. This property is only applicable when the scheme will be used in conjunction with 3D symbols.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[SceneView] = js.undefined
+  var view: js.UndefOr[SceneView] = js.native
   /**
     * Indicates if the size units of the scheme will be in meters. This should be `true` when the scheme is intended for 3D volumetric symbology. A `view` must be provided if this property is set to `true`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
-  var worldScale: js.UndefOr[Boolean] = js.undefined
+  var worldScale: js.UndefOr[Boolean] = js.native
 }
 
 object colorGetSchemeByNameParams {
   @scala.inline
   def apply(
     constructor: js.Function,
-    geometryType: String,
+    geometryType: point | multipoint | polyline | polygon | mesh | multipatch,
     hasOwnProperty: PropertyKey => Boolean,
     name: String,
     propertyIsEnumerable: PropertyKey => Boolean,
-    theme: String,
-    basemap: String | Basemap = null,
-    basemapTheme: String = null,
-    view: SceneView = null,
-    worldScale: js.UndefOr[Boolean] = js.undefined
+    theme: `high-to-low` | `above-and-below` | `centered-on` | extremes
   ): colorGetSchemeByNameParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), theme = theme.asInstanceOf[js.Any])
-    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[colorGetSchemeByNameParams]
   }
+  @scala.inline
+  implicit class colorGetSchemeByNameParamsOps[Self <: colorGetSchemeByNameParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGeometryType(value: point | multipoint | polyline | polygon | mesh | multipatch): Self = this.set("geometryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBasemap(value: String | Basemap): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    @scala.inline
+    def setBasemapTheme(value: light | dark): Self = this.set("basemapTheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasemapTheme: Self = this.set("basemapTheme", js.undefined)
+    @scala.inline
+    def setView(value: SceneView): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setWorldScale(value: Boolean): Self = this.set("worldScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorldScale: Self = this.set("worldScale", js.undefined)
+  }
+  
 }
 

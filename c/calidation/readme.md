@@ -12,7 +12,7 @@ A red hot validation library for React
 | Keywords           | validation, react, react validation |
 | # releases         | 35 |
 | # dependents       | 0 |
-| # downloads        | 28236 |
+| # downloads        | 28602 |
 | # stars            | 0 |
 
 ## Links

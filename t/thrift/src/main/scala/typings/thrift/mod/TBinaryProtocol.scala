@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class TBinaryProtocol protected () extends TProtocol {
   def this(trans: TTransport) = this()
   def this(trans: TTransport, strictRead: Boolean) = this()
+  def this(trans: TTransport, strictRead: js.UndefOr[scala.Nothing], strictWrite: Boolean) = this()
   def this(trans: TTransport, strictRead: Boolean, strictWrite: Boolean) = this()
 }
 

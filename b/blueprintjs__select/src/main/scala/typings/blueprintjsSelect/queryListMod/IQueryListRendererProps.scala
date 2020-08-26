@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @blueprintjs/core.@blueprintjs/core.IProps */
 @js.native
 trait IQueryListRendererProps[T] extends js.Object {
-  var activeItem: js.UndefOr[T | ICreateNewItem] = js.native
+  var activeItem: T | ICreateNewItem | Null = js.native
   /** A space-delimited list of class names to pass along to a child element. */
   var className: js.UndefOr[String] = js.native
   var filteredItems: js.Array[T] = js.native

@@ -18,11 +18,32 @@ trait SourceRegionMessage extends js.Object {
 
 object SourceRegionMessage {
   @scala.inline
-  def apply(Marker: String = null, SourceRegions: SourceRegionList = null): SourceRegionMessage = {
+  def apply(): SourceRegionMessage = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (SourceRegions != null) __obj.updateDynamic("SourceRegions")(SourceRegions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceRegionMessage]
   }
+  @scala.inline
+  implicit class SourceRegionMessageOps[Self <: SourceRegionMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setSourceRegionsVarargs(value: SourceRegion*): Self = this.set("SourceRegions", js.Array(value :_*))
+    @scala.inline
+    def setSourceRegions(value: SourceRegionList): Self = this.set("SourceRegions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRegions: Self = this.set("SourceRegions", js.undefined)
+  }
+  
 }
 

@@ -20,25 +20,15 @@ trait DefObject extends js.Object
 
 object DefObject {
   @scala.inline
-  def DefStringObject(`type`: string, enum: js.Array[String] = null, regex: String = null): DefObject = {
+  def DefStringObject(`type`: string): DefObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefObject]
   }
   @scala.inline
-  def DefIntegerObject(
-    `type`: integer,
-    enum: js.Array[Double] = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined
-  ): DefObject = {
+  def DefIntegerObject(`type`: integer): DefObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefObject]
   }
   @scala.inline
@@ -54,17 +44,9 @@ object DefObject {
     __obj.asInstanceOf[DefObject]
   }
   @scala.inline
-  def DefFloatObject(
-    `type`: float,
-    enum: js.Array[Double] = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined
-  ): DefObject = {
+  def DefFloatObject(`type`: float): DefObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefObject]
   }
 }

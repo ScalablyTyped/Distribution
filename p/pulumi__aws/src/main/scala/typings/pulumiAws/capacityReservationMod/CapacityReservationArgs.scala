@@ -48,9 +48,9 @@ trait CapacityReservationArgs extends js.Object {
     */
   val instanceType: Input[InstanceType] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
     */
@@ -63,24 +63,59 @@ object CapacityReservationArgs {
     availabilityZone: Input[String],
     instanceCount: Input[Double],
     instancePlatform: Input[InstancePlatform],
-    instanceType: Input[InstanceType],
-    ebsOptimized: Input[Boolean] = null,
-    endDate: Input[String] = null,
-    endDateType: Input[String] = null,
-    ephemeralStorage: Input[Boolean] = null,
-    instanceMatchCriteria: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    tenancy: Input[Tenancy] = null
+    instanceType: Input[InstanceType]
   ): CapacityReservationArgs = {
     val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], instanceCount = instanceCount.asInstanceOf[js.Any], instancePlatform = instancePlatform.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
-    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (endDateType != null) __obj.updateDynamic("endDateType")(endDateType.asInstanceOf[js.Any])
-    if (ephemeralStorage != null) __obj.updateDynamic("ephemeralStorage")(ephemeralStorage.asInstanceOf[js.Any])
-    if (instanceMatchCriteria != null) __obj.updateDynamic("instanceMatchCriteria")(instanceMatchCriteria.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (tenancy != null) __obj.updateDynamic("tenancy")(tenancy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityReservationArgs]
   }
+  @scala.inline
+  implicit class CapacityReservationArgsOps[Self <: CapacityReservationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceCount(value: Input[Double]): Self = this.set("instanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstancePlatform(value: Input[InstancePlatform]): Self = this.set("instancePlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: Input[InstanceType]): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEbsOptimized(value: Input[Boolean]): Self = this.set("ebsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("ebsOptimized", js.undefined)
+    @scala.inline
+    def setEndDate(value: Input[String]): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setEndDateType(value: Input[String]): Self = this.set("endDateType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDateType: Self = this.set("endDateType", js.undefined)
+    @scala.inline
+    def setEphemeralStorage(value: Input[Boolean]): Self = this.set("ephemeralStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEphemeralStorage: Self = this.set("ephemeralStorage", js.undefined)
+    @scala.inline
+    def setInstanceMatchCriteria(value: Input[String]): Self = this.set("instanceMatchCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceMatchCriteria: Self = this.set("instanceMatchCriteria", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTenancy(value: Input[Tenancy]): Self = this.set("tenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenancy: Self = this.set("tenancy", js.undefined)
+  }
+  
 }
 

@@ -10,10 +10,13 @@ import scala.scalajs.js.annotation._
   - typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loaderror
   - typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit
   - typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.message
+  - typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.customscheme
 */
 trait channel extends js.Object
 
 object channel {
+  @scala.inline
+  def customscheme: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.customscheme = "customscheme".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.customscheme]
   @scala.inline
   def exit: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit = "exit".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit]
   @scala.inline

@@ -49,26 +49,56 @@ trait SchemaDataTransfer extends js.Object {
 
 object SchemaDataTransfer {
   @scala.inline
-  def apply(
-    applicationDataTransfers: js.Array[SchemaApplicationDataTransfer] = null,
-    etag: String = null,
-    id: String = null,
-    kind: String = null,
-    newOwnerUserId: String = null,
-    oldOwnerUserId: String = null,
-    overallTransferStatusCode: String = null,
-    requestTime: String = null
-  ): SchemaDataTransfer = {
+  def apply(): SchemaDataTransfer = {
     val __obj = js.Dynamic.literal()
-    if (applicationDataTransfers != null) __obj.updateDynamic("applicationDataTransfers")(applicationDataTransfers.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (newOwnerUserId != null) __obj.updateDynamic("newOwnerUserId")(newOwnerUserId.asInstanceOf[js.Any])
-    if (oldOwnerUserId != null) __obj.updateDynamic("oldOwnerUserId")(oldOwnerUserId.asInstanceOf[js.Any])
-    if (overallTransferStatusCode != null) __obj.updateDynamic("overallTransferStatusCode")(overallTransferStatusCode.asInstanceOf[js.Any])
-    if (requestTime != null) __obj.updateDynamic("requestTime")(requestTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataTransfer]
   }
+  @scala.inline
+  implicit class SchemaDataTransferOps[Self <: SchemaDataTransfer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationDataTransfersVarargs(value: SchemaApplicationDataTransfer*): Self = this.set("applicationDataTransfers", js.Array(value :_*))
+    @scala.inline
+    def setApplicationDataTransfers(value: js.Array[SchemaApplicationDataTransfer]): Self = this.set("applicationDataTransfers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationDataTransfers: Self = this.set("applicationDataTransfers", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNewOwnerUserId(value: String): Self = this.set("newOwnerUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewOwnerUserId: Self = this.set("newOwnerUserId", js.undefined)
+    @scala.inline
+    def setOldOwnerUserId(value: String): Self = this.set("oldOwnerUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOldOwnerUserId: Self = this.set("oldOwnerUserId", js.undefined)
+    @scala.inline
+    def setOverallTransferStatusCode(value: String): Self = this.set("overallTransferStatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverallTransferStatusCode: Self = this.set("overallTransferStatusCode", js.undefined)
+    @scala.inline
+    def setRequestTime(value: String): Self = this.set("requestTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestTime: Self = this.set("requestTime", js.undefined)
+  }
+  
 }
 

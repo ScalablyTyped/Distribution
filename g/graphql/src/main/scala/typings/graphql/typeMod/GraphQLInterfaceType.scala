@@ -1,7 +1,6 @@
 package typings.graphql.typeMod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.definitionMod.GraphQLInterfaceTypeConfig
+import typings.graphql.anon.ReadonlyGraphQLInterfaceT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class GraphQLInterfaceType protected ()
   extends typings.graphql.definitionMod.GraphQLInterfaceType {
-  def this(config: GraphQLInterfaceTypeConfig[_, _, StringDictionary[_]]) = this()
+  def this(config: ReadonlyGraphQLInterfaceT) = this()
 }
 

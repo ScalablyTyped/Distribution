@@ -4,37 +4,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Mapping extends js.Object {
-  var errInfo: js.UndefOr[String] = js.undefined
-  var externalIp: js.UndefOr[String] = js.undefined
-  var externalPort: Double
-  var internalIp: String
-  var internalPort: Double
-  var lifetime: Double
-  var nonce: js.UndefOr[js.Array[Double]] = js.undefined
-  var protocol: String
-  var timeoutId: js.UndefOr[Double] = js.undefined
+  var errInfo: js.UndefOr[String] = js.native
+  var externalIp: js.UndefOr[String] = js.native
+  var externalPort: Double = js.native
+  var internalIp: String = js.native
+  var internalPort: Double = js.native
+  var lifetime: Double = js.native
+  var nonce: js.UndefOr[js.Array[Double]] = js.native
+  var protocol: String = js.native
+  var timeoutId: js.UndefOr[Double] = js.native
 }
 
 object Mapping {
   @scala.inline
-  def apply(
-    externalPort: Double,
-    internalIp: String,
-    internalPort: Double,
-    lifetime: Double,
-    protocol: String,
-    errInfo: String = null,
-    externalIp: String = null,
-    nonce: js.Array[Double] = null,
-    timeoutId: js.UndefOr[Double] = js.undefined
-  ): Mapping = {
+  def apply(externalPort: Double, internalIp: String, internalPort: Double, lifetime: Double, protocol: String): Mapping = {
     val __obj = js.Dynamic.literal(externalPort = externalPort.asInstanceOf[js.Any], internalIp = internalIp.asInstanceOf[js.Any], internalPort = internalPort.asInstanceOf[js.Any], lifetime = lifetime.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-    if (errInfo != null) __obj.updateDynamic("errInfo")(errInfo.asInstanceOf[js.Any])
-    if (externalIp != null) __obj.updateDynamic("externalIp")(externalIp.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutId)) __obj.updateDynamic("timeoutId")(timeoutId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mapping]
   }
+  @scala.inline
+  implicit class MappingOps[Self <: Mapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalPort(value: Double): Self = this.set("externalPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInternalIp(value: String): Self = this.set("internalIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInternalPort(value: Double): Self = this.set("internalPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLifetime(value: Double): Self = this.set("lifetime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrInfo(value: String): Self = this.set("errInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrInfo: Self = this.set("errInfo", js.undefined)
+    @scala.inline
+    def setExternalIp(value: String): Self = this.set("externalIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalIp: Self = this.set("externalIp", js.undefined)
+    @scala.inline
+    def setNonceVarargs(value: Double*): Self = this.set("nonce", js.Array(value :_*))
+    @scala.inline
+    def setNonce(value: js.Array[Double]): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("nonce", js.undefined)
+    @scala.inline
+    def setTimeoutId(value: Double): Self = this.set("timeoutId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutId: Self = this.set("timeoutId", js.undefined)
+  }
+  
 }
 

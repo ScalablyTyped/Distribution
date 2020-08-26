@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * @see {@link https://www.w3.org/TR/credential-management-1/#passwordcredential}
   */
+@js.native
 trait PasswordCredential
   extends SiteBoundCredential
      with CredentialType {
@@ -19,7 +20,7 @@ trait PasswordCredential
     * mixed into the object to produce the body. The value is {@code null}
     * unless otherwise specified.
     */
-  var additionalData: CredentialBodyType | Null
+  var additionalData: CredentialBodyType | Null = js.native
   /**
     * Represents the name which will be used for the ID field when submitting
     * the PasswordCredential to a remote endpoint via {@code fetch()}. It
@@ -27,14 +28,14 @@ trait PasswordCredential
     * whatever the backend service expects.
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-passwordcredential-idname}
     */
-  var idName: String
+  var idName: String = js.native
   /**
     * The plain-text password. Returned for implementation of the 08/04/2017
     * Working Draft of Credential Management, not returned before this.
     *
     * @see {@link https://www.w3.org/TR/credential-management-1/#passwordcredential}
     */
-  val password: js.UndefOr[String] = js.undefined
+  val password: js.UndefOr[String] = js.native
   /**
     * Represents the name which will be used for the ID field when submitting
     * the PasswordCredential to a remote endpoint via fetch(). It defaults to
@@ -43,27 +44,44 @@ trait PasswordCredential
     *
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-passwordcredential-passwordname}
     */
-  var passwordName: String
+  var passwordName: String = js.native
   @JSName("type")
-  val type_PasswordCredential: typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.password
+  val type_PasswordCredential: typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.password = js.native
 }
 
 object PasswordCredential {
   @scala.inline
-  def apply(
-    id: String,
-    idName: String,
-    passwordName: String,
-    `type`: password,
-    additionalData: CredentialBodyType = null,
-    iconURL: String = null,
-    name: String = null,
-    password: String = null
-  ): PasswordCredential = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], idName = idName.asInstanceOf[js.Any], passwordName = passwordName.asInstanceOf[js.Any], additionalData = additionalData.asInstanceOf[js.Any], iconURL = iconURL.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(id: String, idName: String, passwordName: String, `type`: password): PasswordCredential = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], idName = idName.asInstanceOf[js.Any], passwordName = passwordName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordCredential]
   }
+  @scala.inline
+  implicit class PasswordCredentialOps[Self <: PasswordCredential] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdName(value: String): Self = this.set("idName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPasswordName(value: String): Self = this.set("passwordName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: password): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalData(value: CredentialBodyType): Self = this.set("additionalData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalDataNull: Self = this.set("additionalData", null)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+  }
+  
 }
 

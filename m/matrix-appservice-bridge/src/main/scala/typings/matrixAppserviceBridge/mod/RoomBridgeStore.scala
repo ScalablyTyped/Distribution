@@ -21,6 +21,7 @@ class RoomBridgeStore protected () extends js.Object {
   def getLinkedRemoteRooms(matrixId: String): js.Promise[js.Array[RemoteRoom]] = js.native
   def getMatrixRoom(roomId: String): js.Promise[Null | MatrixRoom] = js.native
   def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom): js.Promise[Unit] = js.native
+  def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: js.UndefOr[scala.Nothing], linkId: String): js.Promise[Unit] = js.native
   def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: js.Object): js.Promise[Unit] = js.native
   def linkRooms(matrixRoom: MatrixRoom, remoteRoom: RemoteRoom, data: js.Object, linkId: String): js.Promise[Unit] = js.native
   def removeEntriesByLinkData(data: js.Object): js.Promise[Unit] = js.native

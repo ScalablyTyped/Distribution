@@ -29,7 +29,26 @@ trait DirectoryEntry extends Entry {
     *
     */
   def getDirectory(path: String): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: ErrorCallback
+  ): Unit = js.native
+  def getDirectory(path: String, options: js.UndefOr[scala.Nothing], successCallback: DirectoryEntryCallback): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: DirectoryEntryCallback,
+    errorCallback: ErrorCallback
+  ): Unit = js.native
   def getDirectory(path: String, options: Flags): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: Flags,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: ErrorCallback
+  ): Unit = js.native
   def getDirectory(path: String, options: Flags, successCallback: DirectoryEntryCallback): Unit = js.native
   def getDirectory(
     path: String,
@@ -52,7 +71,26 @@ trait DirectoryEntry extends Entry {
     * @param errorCallback A callback that is called when errors happen.
     */
   def getFile(path: String): Unit = js.native
+  def getFile(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: ErrorCallback
+  ): Unit = js.native
+  def getFile(path: String, options: js.UndefOr[scala.Nothing], successCallback: FileEntryCallback): Unit = js.native
+  def getFile(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: FileEntryCallback,
+    errorCallback: ErrorCallback
+  ): Unit = js.native
   def getFile(path: String, options: Flags): Unit = js.native
+  def getFile(
+    path: String,
+    options: Flags,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: ErrorCallback
+  ): Unit = js.native
   def getFile(path: String, options: Flags, successCallback: FileEntryCallback): Unit = js.native
   def getFile(path: String, options: Flags, successCallback: FileEntryCallback, errorCallback: ErrorCallback): Unit = js.native
   /**

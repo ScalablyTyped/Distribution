@@ -1,6 +1,6 @@
 package typings.nivoHeatmap.mod
 
-import typings.nivoAxes.mod.Axis
+import typings.nivoAxes.mod.AxisProps
 import typings.nivoColors.mod.InheritedColorProp
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.Colors
@@ -13,6 +13,7 @@ import typings.nivoHeatmap.nivoHeatmapStrings.column
 import typings.nivoHeatmap.nivoHeatmapStrings.rect
 import typings.nivoHeatmap.nivoHeatmapStrings.row
 import typings.nivoHeatmap.nivoHeatmapStrings.rowColumn
+import typings.nivoTooltip.mod.BasicTooltipProps
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.StatelessComponent
@@ -21,114 +22,217 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @nivo/heatmap.@nivo/heatmap.HeatMapData & @nivo/heatmap.@nivo/heatmap.HeatMapCommonProps & std.Partial<{onClick (datum : @nivo/heatmap.@nivo/heatmap.NodeData, event : react.react.MouseEvent<std.HTMLCanvasElement, react.react.NativeMouseEvent>): void,   pixelRatio  :number}> */
+/* Inlined @nivo/heatmap.@nivo/heatmap.HeatMapData & @nivo/heatmap.@nivo/heatmap.HeatMapCommonProps & std.Partial<{onClick (datum : @nivo/heatmap.@nivo/heatmap.NodeData, event : react.react.MouseEvent<std.HTMLCanvasElement, react.react.NativeMouseEvent>): void,   pixelRatio :number}> */
+@js.native
 trait HeatMapCanvasProps extends js.Object {
-  var axisBottom: js.UndefOr[Axis] = js.undefined
-  var axisLeft: js.UndefOr[Axis] = js.undefined
-  var axisRight: js.UndefOr[Axis] = js.undefined
-  var axisTop: js.UndefOr[Axis] = js.undefined
-  var cellBorderColor: js.UndefOr[InheritedColorProp[HeatMapDatumWithColor]] = js.undefined
-  var cellBorderWidth: js.UndefOr[Double] = js.undefined
-  var cellHoverOpacity: js.UndefOr[Double] = js.undefined
-  var cellHoverOthersOpacity: js.UndefOr[Double] = js.undefined
-  var cellOpacity: js.UndefOr[Double] = js.undefined
-  var cellShape: js.UndefOr[rect | circle | StatelessComponent[_]] = js.undefined
-  var colorBy: js.UndefOr[String | GetColor[HeatMapDatum]] = js.undefined
-  var colors: js.UndefOr[Colors] = js.undefined
-  var data: js.Array[HeatMapDatum]
-  var enableGridX: js.UndefOr[Boolean] = js.undefined
-  var enableGridY: js.UndefOr[Boolean] = js.undefined
-  var enableLabels: js.UndefOr[Boolean] = js.undefined
-  var forceSquare: js.UndefOr[Boolean] = js.undefined
-  var hoverTarget: js.UndefOr[cell | row | column | rowColumn] = js.undefined
-  var indexBy: js.UndefOr[String | IndexByFunc] = js.undefined
-  var isInteractive: js.UndefOr[Boolean] = js.undefined
-  var keys: js.UndefOr[js.Array[String]] = js.undefined
-  var labelTextColor: js.UndefOr[InheritedColorProp[HeatMapDatumWithColor]] = js.undefined
-  var margin: js.UndefOr[Box] = js.undefined
-  var maxValue: js.UndefOr[Double | auto] = js.undefined
-  var minValue: js.UndefOr[Double | auto] = js.undefined
+  var axisBottom: js.UndefOr[AxisProps | Null] = js.native
+  var axisLeft: js.UndefOr[AxisProps | Null] = js.native
+  var axisRight: js.UndefOr[AxisProps | Null] = js.native
+  var axisTop: js.UndefOr[AxisProps | Null] = js.native
+  var cellBorderColor: js.UndefOr[InheritedColorProp[HeatMapDatumWithColor]] = js.native
+  var cellBorderWidth: js.UndefOr[Double] = js.native
+  var cellHoverOpacity: js.UndefOr[Double] = js.native
+  var cellHoverOthersOpacity: js.UndefOr[Double] = js.native
+  var cellOpacity: js.UndefOr[Double] = js.native
+  var cellShape: js.UndefOr[rect | circle | StatelessComponent[_]] = js.native
+  var colorBy: js.UndefOr[String | GetColor[HeatMapDatum]] = js.native
+  var colors: js.UndefOr[Colors] = js.native
+  var data: js.Array[HeatMapDatum] = js.native
+  var enableGridX: js.UndefOr[Boolean] = js.native
+  var enableGridY: js.UndefOr[Boolean] = js.native
+  var enableLabels: js.UndefOr[Boolean] = js.native
+  var forceSquare: js.UndefOr[Boolean] = js.native
+  var hoverTarget: js.UndefOr[cell | row | column | rowColumn] = js.native
+  var indexBy: js.UndefOr[String | IndexByFunc] = js.native
+  var isInteractive: js.UndefOr[Boolean] = js.native
+  var keys: js.UndefOr[js.Array[String]] = js.native
+  var labelTextColor: js.UndefOr[InheritedColorProp[HeatMapDatumWithColor]] = js.native
+  var margin: js.UndefOr[Box] = js.native
+  var maxValue: js.UndefOr[Double | auto] = js.native
+  var minValue: js.UndefOr[Double | auto] = js.native
   var onClick: js.UndefOr[
     js.Function2[
       /* datum */ NodeData, 
       /* event */ MouseEvent[HTMLCanvasElement, NativeMouseEvent], 
       Unit
     ]
-  ] = js.undefined
-  var padding: js.UndefOr[Double] = js.undefined
-  var pixelRatio: js.UndefOr[Double] = js.undefined
-  var sizeVariation: js.UndefOr[Double] = js.undefined
-  var theme: js.UndefOr[Theme] = js.undefined
-  var tooltipFormat: js.UndefOr[String | ValueFormatter] = js.undefined
+  ] = js.native
+  var padding: js.UndefOr[Double] = js.native
+  var pixelRatio: js.UndefOr[Double] = js.native
+  var sizeVariation: js.UndefOr[Double] = js.native
+  var theme: js.UndefOr[Theme] = js.native
+  var tooltip: js.UndefOr[StatelessComponent[BasicTooltipProps with NodeData]] = js.native
+  var tooltipFormat: js.UndefOr[String | ValueFormatter] = js.native
 }
 
 object HeatMapCanvasProps {
   @scala.inline
-  def apply(
-    data: js.Array[HeatMapDatum],
-    axisBottom: Axis = null,
-    axisLeft: Axis = null,
-    axisRight: Axis = null,
-    axisTop: Axis = null,
-    cellBorderColor: InheritedColorProp[HeatMapDatumWithColor] = null,
-    cellBorderWidth: js.UndefOr[Double] = js.undefined,
-    cellHoverOpacity: js.UndefOr[Double] = js.undefined,
-    cellHoverOthersOpacity: js.UndefOr[Double] = js.undefined,
-    cellOpacity: js.UndefOr[Double] = js.undefined,
-    cellShape: rect | circle | StatelessComponent[_] = null,
-    colorBy: String | GetColor[HeatMapDatum] = null,
-    colors: Colors = null,
-    enableGridX: js.UndefOr[Boolean] = js.undefined,
-    enableGridY: js.UndefOr[Boolean] = js.undefined,
-    enableLabels: js.UndefOr[Boolean] = js.undefined,
-    forceSquare: js.UndefOr[Boolean] = js.undefined,
-    hoverTarget: cell | row | column | rowColumn = null,
-    indexBy: String | IndexByFunc = null,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    keys: js.Array[String] = null,
-    labelTextColor: InheritedColorProp[HeatMapDatumWithColor] = null,
-    margin: Box = null,
-    maxValue: Double | auto = null,
-    minValue: Double | auto = null,
-    onClick: (/* datum */ NodeData, /* event */ MouseEvent[HTMLCanvasElement, NativeMouseEvent]) => Unit = null,
-    padding: js.UndefOr[Double] = js.undefined,
-    pixelRatio: js.UndefOr[Double] = js.undefined,
-    sizeVariation: js.UndefOr[Double] = js.undefined,
-    theme: Theme = null,
-    tooltipFormat: String | ValueFormatter = null
-  ): HeatMapCanvasProps = {
+  def apply(data: js.Array[HeatMapDatum]): HeatMapCanvasProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
-    if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft.asInstanceOf[js.Any])
-    if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
-    if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
-    if (cellBorderColor != null) __obj.updateDynamic("cellBorderColor")(cellBorderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellBorderWidth)) __obj.updateDynamic("cellBorderWidth")(cellBorderWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellHoverOpacity)) __obj.updateDynamic("cellHoverOpacity")(cellHoverOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellHoverOthersOpacity)) __obj.updateDynamic("cellHoverOthersOpacity")(cellHoverOthersOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellOpacity)) __obj.updateDynamic("cellOpacity")(cellOpacity.get.asInstanceOf[js.Any])
-    if (cellShape != null) __obj.updateDynamic("cellShape")(cellShape.asInstanceOf[js.Any])
-    if (colorBy != null) __obj.updateDynamic("colorBy")(colorBy.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLabels)) __obj.updateDynamic("enableLabels")(enableLabels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSquare)) __obj.updateDynamic("forceSquare")(forceSquare.get.asInstanceOf[js.Any])
-    if (hoverTarget != null) __obj.updateDynamic("hoverTarget")(hoverTarget.asInstanceOf[js.Any])
-    if (indexBy != null) __obj.updateDynamic("indexBy")(indexBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.get.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeVariation)) __obj.updateDynamic("sizeVariation")(sizeVariation.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatMapCanvasProps]
   }
+  @scala.inline
+  implicit class HeatMapCanvasPropsOps[Self <: HeatMapCanvasProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataVarargs(value: HeatMapDatum*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[HeatMapDatum]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAxisBottom(value: AxisProps): Self = this.set("axisBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisBottom: Self = this.set("axisBottom", js.undefined)
+    @scala.inline
+    def setAxisBottomNull: Self = this.set("axisBottom", null)
+    @scala.inline
+    def setAxisLeft(value: AxisProps): Self = this.set("axisLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisLeft: Self = this.set("axisLeft", js.undefined)
+    @scala.inline
+    def setAxisLeftNull: Self = this.set("axisLeft", null)
+    @scala.inline
+    def setAxisRight(value: AxisProps): Self = this.set("axisRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisRight: Self = this.set("axisRight", js.undefined)
+    @scala.inline
+    def setAxisRightNull: Self = this.set("axisRight", null)
+    @scala.inline
+    def setAxisTop(value: AxisProps): Self = this.set("axisTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisTop: Self = this.set("axisTop", js.undefined)
+    @scala.inline
+    def setAxisTopNull: Self = this.set("axisTop", null)
+    @scala.inline
+    def setCellBorderColorFunction1(value: HeatMapDatumWithColor => String): Self = this.set("cellBorderColor", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCellBorderColor(value: InheritedColorProp[HeatMapDatumWithColor]): Self = this.set("cellBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellBorderColor: Self = this.set("cellBorderColor", js.undefined)
+    @scala.inline
+    def setCellBorderWidth(value: Double): Self = this.set("cellBorderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellBorderWidth: Self = this.set("cellBorderWidth", js.undefined)
+    @scala.inline
+    def setCellHoverOpacity(value: Double): Self = this.set("cellHoverOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellHoverOpacity: Self = this.set("cellHoverOpacity", js.undefined)
+    @scala.inline
+    def setCellHoverOthersOpacity(value: Double): Self = this.set("cellHoverOthersOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellHoverOthersOpacity: Self = this.set("cellHoverOthersOpacity", js.undefined)
+    @scala.inline
+    def setCellOpacity(value: Double): Self = this.set("cellOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellOpacity: Self = this.set("cellOpacity", js.undefined)
+    @scala.inline
+    def setCellShape(value: rect | circle | StatelessComponent[_]): Self = this.set("cellShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellShape: Self = this.set("cellShape", js.undefined)
+    @scala.inline
+    def setColorByFunction1(value: HeatMapDatum => String): Self = this.set("colorBy", js.Any.fromFunction1(value))
+    @scala.inline
+    def setColorBy(value: String | GetColor[HeatMapDatum]): Self = this.set("colorBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorBy: Self = this.set("colorBy", js.undefined)
+    @scala.inline
+    def setColorsVarargs(value: String*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColors(value: Colors): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setEnableGridX(value: Boolean): Self = this.set("enableGridX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableGridX: Self = this.set("enableGridX", js.undefined)
+    @scala.inline
+    def setEnableGridY(value: Boolean): Self = this.set("enableGridY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableGridY: Self = this.set("enableGridY", js.undefined)
+    @scala.inline
+    def setEnableLabels(value: Boolean): Self = this.set("enableLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLabels: Self = this.set("enableLabels", js.undefined)
+    @scala.inline
+    def setForceSquare(value: Boolean): Self = this.set("forceSquare", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceSquare: Self = this.set("forceSquare", js.undefined)
+    @scala.inline
+    def setHoverTarget(value: cell | row | column | rowColumn): Self = this.set("hoverTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverTarget: Self = this.set("hoverTarget", js.undefined)
+    @scala.inline
+    def setIndexByFunction1(value: /* datum */ HeatMapDatum => String | Double): Self = this.set("indexBy", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIndexBy(value: String | IndexByFunc): Self = this.set("indexBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexBy: Self = this.set("indexBy", js.undefined)
+    @scala.inline
+    def setIsInteractive(value: Boolean): Self = this.set("isInteractive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsInteractive: Self = this.set("isInteractive", js.undefined)
+    @scala.inline
+    def setKeysVarargs(value: String*): Self = this.set("keys", js.Array(value :_*))
+    @scala.inline
+    def setKeys(value: js.Array[String]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("keys", js.undefined)
+    @scala.inline
+    def setLabelTextColorFunction1(value: HeatMapDatumWithColor => String): Self = this.set("labelTextColor", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLabelTextColor(value: InheritedColorProp[HeatMapDatumWithColor]): Self = this.set("labelTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelTextColor: Self = this.set("labelTextColor", js.undefined)
+    @scala.inline
+    def setMargin(value: Box): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double | auto): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double | auto): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setOnClick(value: (/* datum */ NodeData, /* event */ MouseEvent[HTMLCanvasElement, NativeMouseEvent]) => Unit): Self = this.set("onClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelRatio: Self = this.set("pixelRatio", js.undefined)
+    @scala.inline
+    def setSizeVariation(value: Double): Self = this.set("sizeVariation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeVariation: Self = this.set("sizeVariation", js.undefined)
+    @scala.inline
+    def setTheme(value: Theme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTooltip(value: StatelessComponent[BasicTooltipProps with NodeData]): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTooltipFormatFunction1(value: /* value */ Double => String | Double): Self = this.set("tooltipFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTooltipFormat(value: String | ValueFormatter): Self = this.set("tooltipFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipFormat: Self = this.set("tooltipFormat", js.undefined)
+  }
+  
 }
 

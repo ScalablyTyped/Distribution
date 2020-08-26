@@ -19,7 +19,7 @@ object createMappedTypeNode extends js.Object {
   def apply(
     readonlyToken: js.UndefOr[MinusToken | PlusToken | ReadonlyToken],
     typeParameter: TypeParameterDeclaration,
-    questionToken: MinusToken | PlusToken | QuestionToken,
+    questionToken: js.UndefOr[MinusToken | PlusToken | QuestionToken],
     `type`: TypeNode
   ): MappedTypeNode = js.native
 }

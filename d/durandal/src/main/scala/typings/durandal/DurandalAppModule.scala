@@ -32,6 +32,8 @@ trait DurandalAppModule extends DurandalEventSupport[DurandalAppModule] {
     * @param {string} [applicationHost] The application host element id. By default the id 'applicationHost' will be used.
     */
   def setRoot(root: js.Any): Unit = js.native
+  def setRoot(root: js.Any, transition: js.UndefOr[scala.Nothing], applicationHost: String): Unit = js.native
+  def setRoot(root: js.Any, transition: js.UndefOr[scala.Nothing], applicationHost: HTMLElement): Unit = js.native
   def setRoot(root: js.Any, transition: String): Unit = js.native
   def setRoot(root: js.Any, transition: String, applicationHost: String): Unit = js.native
   def setRoot(root: js.Any, transition: String, applicationHost: HTMLElement): Unit = js.native
@@ -43,6 +45,7 @@ trait DurandalAppModule extends DurandalEventSupport[DurandalAppModule] {
     * @returns {Promise} A promise that resolves when the dialog is closed and returns any data passed at the time of closing.
     */
   def showDialog(obj: js.Any): DurandalPromise[_] = js.native
+  def showDialog(obj: js.Any, activationData: js.UndefOr[scala.Nothing], context: String): DurandalPromise[_] = js.native
   def showDialog(obj: js.Any, activationData: js.Any): DurandalPromise[_] = js.native
   def showDialog(obj: js.Any, activationData: js.Any, context: String): DurandalPromise[_] = js.native
   /**
@@ -64,8 +67,71 @@ trait DurandalAppModule extends DurandalEventSupport[DurandalAppModule] {
     * @returns {Promise} A promise that resolves when the message box is closed and returns the selected option.
     */
   def showMessage(message: String): DurandalPromise[String] = js.native
+  def showMessage(
+    message: String,
+    title: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    autoclose: js.UndefOr[scala.Nothing],
+    settings: js.Object
+  ): DurandalPromise[String] = js.native
+  def showMessage(
+    message: String,
+    title: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    autoclose: Boolean
+  ): DurandalPromise[String] = js.native
+  def showMessage(
+    message: String,
+    title: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    autoclose: Boolean,
+    settings: js.Object
+  ): DurandalPromise[String] = js.native
+  def showMessage(message: String, title: js.UndefOr[scala.Nothing], options: js.Array[DialogButton | String]): DurandalPromise[String] = js.native
+  def showMessage(
+    message: String,
+    title: js.UndefOr[scala.Nothing],
+    options: js.Array[DialogButton | String],
+    autoclose: js.UndefOr[scala.Nothing],
+    settings: js.Object
+  ): DurandalPromise[String] = js.native
+  def showMessage(
+    message: String,
+    title: js.UndefOr[scala.Nothing],
+    options: js.Array[DialogButton | String],
+    autoclose: Boolean
+  ): DurandalPromise[String] = js.native
+  def showMessage(
+    message: String,
+    title: js.UndefOr[scala.Nothing],
+    options: js.Array[DialogButton | String],
+    autoclose: Boolean,
+    settings: js.Object
+  ): DurandalPromise[String] = js.native
   def showMessage(message: String, title: String): DurandalPromise[String] = js.native
+  def showMessage(
+    message: String,
+    title: String,
+    options: js.UndefOr[scala.Nothing],
+    autoclose: js.UndefOr[scala.Nothing],
+    settings: js.Object
+  ): DurandalPromise[String] = js.native
+  def showMessage(message: String, title: String, options: js.UndefOr[scala.Nothing], autoclose: Boolean): DurandalPromise[String] = js.native
+  def showMessage(
+    message: String,
+    title: String,
+    options: js.UndefOr[scala.Nothing],
+    autoclose: Boolean,
+    settings: js.Object
+  ): DurandalPromise[String] = js.native
   def showMessage(message: String, title: String, options: js.Array[DialogButton | String]): DurandalPromise[String] = js.native
+  def showMessage(
+    message: String,
+    title: String,
+    options: js.Array[DialogButton | String],
+    autoclose: js.UndefOr[scala.Nothing],
+    settings: js.Object
+  ): DurandalPromise[String] = js.native
   def showMessage(message: String, title: String, options: js.Array[DialogButton | String], autoclose: Boolean): DurandalPromise[String] = js.native
   def showMessage(
     message: String,

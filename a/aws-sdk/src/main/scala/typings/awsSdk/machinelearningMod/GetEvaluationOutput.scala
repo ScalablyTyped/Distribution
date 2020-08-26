@@ -70,40 +70,82 @@ trait GetEvaluationOutput extends js.Object {
 
 object GetEvaluationOutput {
   @scala.inline
-  def apply(
-    ComputeTime: js.UndefOr[LongType] = js.undefined,
-    CreatedAt: EpochTime = null,
-    CreatedByIamUser: AwsUserArn = null,
-    EvaluationDataSourceId: EntityId = null,
-    EvaluationId: EntityId = null,
-    FinishedAt: EpochTime = null,
-    InputDataLocationS3: S3Url = null,
-    LastUpdatedAt: EpochTime = null,
-    LogUri: PresignedS3Url = null,
-    MLModelId: EntityId = null,
-    Message: Message = null,
-    Name: EntityName = null,
-    PerformanceMetrics: PerformanceMetrics = null,
-    StartedAt: EpochTime = null,
-    Status: EntityStatus = null
-  ): GetEvaluationOutput = {
+  def apply(): GetEvaluationOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ComputeTime)) __obj.updateDynamic("ComputeTime")(ComputeTime.get.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (CreatedByIamUser != null) __obj.updateDynamic("CreatedByIamUser")(CreatedByIamUser.asInstanceOf[js.Any])
-    if (EvaluationDataSourceId != null) __obj.updateDynamic("EvaluationDataSourceId")(EvaluationDataSourceId.asInstanceOf[js.Any])
-    if (EvaluationId != null) __obj.updateDynamic("EvaluationId")(EvaluationId.asInstanceOf[js.Any])
-    if (FinishedAt != null) __obj.updateDynamic("FinishedAt")(FinishedAt.asInstanceOf[js.Any])
-    if (InputDataLocationS3 != null) __obj.updateDynamic("InputDataLocationS3")(InputDataLocationS3.asInstanceOf[js.Any])
-    if (LastUpdatedAt != null) __obj.updateDynamic("LastUpdatedAt")(LastUpdatedAt.asInstanceOf[js.Any])
-    if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
-    if (MLModelId != null) __obj.updateDynamic("MLModelId")(MLModelId.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PerformanceMetrics != null) __obj.updateDynamic("PerformanceMetrics")(PerformanceMetrics.asInstanceOf[js.Any])
-    if (StartedAt != null) __obj.updateDynamic("StartedAt")(StartedAt.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEvaluationOutput]
   }
+  @scala.inline
+  implicit class GetEvaluationOutputOps[Self <: GetEvaluationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeTime(value: LongType): Self = this.set("ComputeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeTime: Self = this.set("ComputeTime", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: EpochTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setCreatedByIamUser(value: AwsUserArn): Self = this.set("CreatedByIamUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedByIamUser: Self = this.set("CreatedByIamUser", js.undefined)
+    @scala.inline
+    def setEvaluationDataSourceId(value: EntityId): Self = this.set("EvaluationDataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationDataSourceId: Self = this.set("EvaluationDataSourceId", js.undefined)
+    @scala.inline
+    def setEvaluationId(value: EntityId): Self = this.set("EvaluationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationId: Self = this.set("EvaluationId", js.undefined)
+    @scala.inline
+    def setFinishedAt(value: EpochTime): Self = this.set("FinishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinishedAt: Self = this.set("FinishedAt", js.undefined)
+    @scala.inline
+    def setInputDataLocationS3(value: S3Url): Self = this.set("InputDataLocationS3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDataLocationS3: Self = this.set("InputDataLocationS3", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: EpochTime): Self = this.set("LastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("LastUpdatedAt", js.undefined)
+    @scala.inline
+    def setLogUri(value: PresignedS3Url): Self = this.set("LogUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUri: Self = this.set("LogUri", js.undefined)
+    @scala.inline
+    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMLModelId: Self = this.set("MLModelId", js.undefined)
+    @scala.inline
+    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPerformanceMetrics(value: PerformanceMetrics): Self = this.set("PerformanceMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceMetrics: Self = this.set("PerformanceMetrics", js.undefined)
+    @scala.inline
+    def setStartedAt(value: EpochTime): Self = this.set("StartedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedAt: Self = this.set("StartedAt", js.undefined)
+    @scala.inline
+    def setStatus(value: EntityStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

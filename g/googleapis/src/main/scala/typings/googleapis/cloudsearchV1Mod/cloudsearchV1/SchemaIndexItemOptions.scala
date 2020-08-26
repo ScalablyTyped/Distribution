@@ -15,10 +15,26 @@ trait SchemaIndexItemOptions extends js.Object {
 
 object SchemaIndexItemOptions {
   @scala.inline
-  def apply(allowUnknownGsuitePrincipals: js.UndefOr[Boolean] = js.undefined): SchemaIndexItemOptions = {
+  def apply(): SchemaIndexItemOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnknownGsuitePrincipals)) __obj.updateDynamic("allowUnknownGsuitePrincipals")(allowUnknownGsuitePrincipals.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIndexItemOptions]
   }
+  @scala.inline
+  implicit class SchemaIndexItemOptionsOps[Self <: SchemaIndexItemOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowUnknownGsuitePrincipals(value: Boolean): Self = this.set("allowUnknownGsuitePrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowUnknownGsuitePrincipals: Self = this.set("allowUnknownGsuitePrincipals", js.undefined)
+  }
+  
 }
 

@@ -65,6 +65,7 @@ class ^ protected ()
     */
   def this(player: Player) = this()
   def this(player: Player, options: ComponentOptions) = this()
+  def this(player: Player, options: js.UndefOr[scala.Nothing], ready: ReadyCallback) = this()
   def this(player: Player, options: ComponentOptions, ready: ReadyCallback) = this()
 }
 
@@ -92,6 +93,11 @@ object ^
 Instantiable1[/* player */ Player, typings.videoJs.mod.videojs.Component]) with (Instantiable2[
         /* player */ Player, 
         /* options */ ComponentOptions, 
+        typings.videoJs.mod.videojs.Component
+      ]) with (Instantiable3[
+        /* player */ Player, 
+        /* options */ js.UndefOr[scala.Nothing], 
+        /* ready */ ReadyCallback, 
         typings.videoJs.mod.videojs.Component
       ]) with (Instantiable3[
         /* player */ Player, 

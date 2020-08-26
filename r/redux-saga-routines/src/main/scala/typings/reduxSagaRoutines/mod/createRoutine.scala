@@ -18,7 +18,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object createRoutine extends js.Object {
   def apply[Payload](typePrefix: String): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]] = js.native
-  def apply[Meta](typePrefix: String, payloadCreator: js.UndefOr[Null], metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[_], ActionMeta[_, Meta]]] = js.native
+  def apply[Meta](
+    typePrefix: String,
+    payloadCreator: js.UndefOr[scala.Nothing],
+    metaCreator: ActionFunctionAny[Meta]
+  ): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[_], ActionMeta[_, Meta]]] = js.native
+  def apply[Meta](typePrefix: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[_], ActionMeta[_, Meta]]] = js.native
   def apply[Payload](typePrefix: String, payloadCreator: ActionFunction0[Payload]): UnifiedRoutine[ActionFunction0[Action[Payload]]] = js.native
   def apply[Payload, Arg1](typePrefix: String, payloadCreator: ActionFunction1[Arg1, Payload]): UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]] = js.native
   def apply[Payload, Meta](
@@ -35,7 +40,59 @@ object createRoutine extends js.Object {
   def apply[Payload, Arg1, Arg2, Arg3](typePrefix: String, payloadCreator: ActionFunction3[Arg1, Arg2, Arg3, Payload]): UnifiedRoutine[ActionFunction3[Arg1, Arg2, Arg3, Action[Payload]]] = js.native
   def apply[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
-    payloadCreator: js.UndefOr[Null],
+    payloadCreator: js.UndefOr[scala.Nothing],
+    metaCreator: FULFILL[
+      TTriggerMetaCreator, 
+      TRequestMetaCreator, 
+      TSuccessMetaCreator, 
+      TFailureMetaCreator, 
+      TFulfillMetaCreator
+    ]
+  ): Routine[
+    ResolveActionCreatorByMeta[
+      TTriggerMetaCreator, 
+      ResolveFunctionReturnType[TTriggerMetaCreator], 
+      ResolveFunctionArg1Type[TTriggerMetaCreator], 
+      ResolveFunctionArg2Type[TTriggerMetaCreator], 
+      ResolveFunctionArg3Type[TTriggerMetaCreator], 
+      ResolveFunctionArg4Type[TTriggerMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TRequestMetaCreator, 
+      ResolveFunctionReturnType[TRequestMetaCreator], 
+      ResolveFunctionArg1Type[TRequestMetaCreator], 
+      ResolveFunctionArg2Type[TRequestMetaCreator], 
+      ResolveFunctionArg3Type[TRequestMetaCreator], 
+      ResolveFunctionArg4Type[TRequestMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TSuccessMetaCreator, 
+      ResolveFunctionReturnType[TSuccessMetaCreator], 
+      ResolveFunctionArg1Type[TSuccessMetaCreator], 
+      ResolveFunctionArg2Type[TSuccessMetaCreator], 
+      ResolveFunctionArg3Type[TSuccessMetaCreator], 
+      ResolveFunctionArg4Type[TSuccessMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TFailureMetaCreator, 
+      ResolveFunctionReturnType[TFailureMetaCreator], 
+      ResolveFunctionArg1Type[TFailureMetaCreator], 
+      ResolveFunctionArg2Type[TFailureMetaCreator], 
+      ResolveFunctionArg3Type[TFailureMetaCreator], 
+      ResolveFunctionArg4Type[TFailureMetaCreator]
+    ], 
+    ResolveActionCreatorByMeta[
+      TFulfillMetaCreator, 
+      ResolveFunctionReturnType[TFulfillMetaCreator], 
+      ResolveFunctionArg1Type[TFulfillMetaCreator], 
+      ResolveFunctionArg2Type[TFulfillMetaCreator], 
+      ResolveFunctionArg3Type[TFulfillMetaCreator], 
+      ResolveFunctionArg4Type[TFulfillMetaCreator]
+    ]
+  ] = js.native
+  def apply[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
+    typePrefix: String,
+    payloadCreator: Null,
     metaCreator: FULFILL[
       TTriggerMetaCreator, 
       TRequestMetaCreator, 

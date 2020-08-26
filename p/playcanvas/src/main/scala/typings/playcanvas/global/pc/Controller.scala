@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
   * Create a new instance of a Controller.
   * @example
   * var c = new pc.Controller(document);
-  
-  // Register the "fire" action and assign it to both the Enter key and the Spacebar.
-  c.registerKeys("fire", [pc.KEY_ENTER, pc.KEY_SPACE]);
+  *
+  * // Register the "fire" action and assign it to both the Enter key and the Spacebar.
+  * c.registerKeys("fire", [pc.KEY_ENTER, pc.KEY_SPACE]);
   * @param [element] - Element to attach Controller to.
   * @param [options] - Optional arguments.
   * @param [options.keyboard] - A Keyboard object to use.
@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
 class Controller ()
   extends typings.playcanvas.pc.Controller {
   def this(element: Element) = this()
+  def this(element: js.UndefOr[scala.Nothing], options: Gamepads) = this()
   def this(element: Element, options: Gamepads) = this()
 }
 

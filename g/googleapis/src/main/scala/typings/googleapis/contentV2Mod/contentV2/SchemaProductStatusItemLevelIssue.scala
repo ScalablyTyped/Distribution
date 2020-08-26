@@ -42,26 +42,54 @@ trait SchemaProductStatusItemLevelIssue extends js.Object {
 
 object SchemaProductStatusItemLevelIssue {
   @scala.inline
-  def apply(
-    attributeName: String = null,
-    code: String = null,
-    description: String = null,
-    destination: String = null,
-    detail: String = null,
-    documentation: String = null,
-    resolution: String = null,
-    servability: String = null
-  ): SchemaProductStatusItemLevelIssue = {
+  def apply(): SchemaProductStatusItemLevelIssue = {
     val __obj = js.Dynamic.literal()
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (servability != null) __obj.updateDynamic("servability")(servability.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductStatusItemLevelIssue]
   }
+  @scala.inline
+  implicit class SchemaProductStatusItemLevelIssueOps[Self <: SchemaProductStatusItemLevelIssue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: String): Self = this.set("attributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeName: Self = this.set("attributeName", js.undefined)
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetail: Self = this.set("detail", js.undefined)
+    @scala.inline
+    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    @scala.inline
+    def setResolution(value: String): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setServability(value: String): Self = this.set("servability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServability: Self = this.set("servability", js.undefined)
+  }
+  
 }
 

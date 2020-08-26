@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object useBaseQueryMod extends js.Object {
   def useBaseQuery[TData, TVariables](query: DocumentNode): (QueryTuple[TData, TVariables]) | (QueryResult[TData, TVariables]) = js.native
+  def useBaseQuery[TData, TVariables](query: DocumentNode, options: js.UndefOr[scala.Nothing], `lazy`: Boolean): (QueryTuple[TData, TVariables]) | (QueryResult[TData, TVariables]) = js.native
   def useBaseQuery[TData, TVariables](query: DocumentNode, options: QueryHookOptions[TData, TVariables]): (QueryTuple[TData, TVariables]) | (QueryResult[TData, TVariables]) = js.native
   def useBaseQuery[TData, TVariables](query: DocumentNode, options: QueryHookOptions[TData, TVariables], `lazy`: Boolean): (QueryTuple[TData, TVariables]) | (QueryResult[TData, TVariables]) = js.native
 }

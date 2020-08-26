@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Stroke extends Modifier {
-  def addEndNote(note: Note): Stroke
+  def addEndNote(note: Note): Stroke = js.native
 }
 
 @JSGlobal("Vex.Flow.Stroke")

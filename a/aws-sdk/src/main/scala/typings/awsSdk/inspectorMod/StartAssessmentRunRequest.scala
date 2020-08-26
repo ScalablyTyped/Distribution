@@ -18,10 +18,28 @@ trait StartAssessmentRunRequest extends js.Object {
 
 object StartAssessmentRunRequest {
   @scala.inline
-  def apply(assessmentTemplateArn: Arn, assessmentRunName: AssessmentRunName = null): StartAssessmentRunRequest = {
+  def apply(assessmentTemplateArn: Arn): StartAssessmentRunRequest = {
     val __obj = js.Dynamic.literal(assessmentTemplateArn = assessmentTemplateArn.asInstanceOf[js.Any])
-    if (assessmentRunName != null) __obj.updateDynamic("assessmentRunName")(assessmentRunName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartAssessmentRunRequest]
   }
+  @scala.inline
+  implicit class StartAssessmentRunRequestOps[Self <: StartAssessmentRunRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssessmentTemplateArn(value: Arn): Self = this.set("assessmentTemplateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssessmentRunName(value: AssessmentRunName): Self = this.set("assessmentRunName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssessmentRunName: Self = this.set("assessmentRunName", js.undefined)
+  }
+  
 }
 

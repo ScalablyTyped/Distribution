@@ -58,6 +58,7 @@ object profilerMod extends js.Object {
   def loadSnapshot(fname: String): ClassHeapSnapshot = js.native
   def saveSnapshot(fname: String): Unit = js.native
   def start(fname: String): ClassTimer = js.native
+  def start(fname: String, time: js.UndefOr[scala.Nothing], interval: Double): ClassTimer = js.native
   def start(fname: String, time: Double): ClassTimer = js.native
   def start(fname: String, time: Double, interval: Double): ClassTimer = js.native
   def takeSnapshot(): ClassHeapSnapshot = js.native

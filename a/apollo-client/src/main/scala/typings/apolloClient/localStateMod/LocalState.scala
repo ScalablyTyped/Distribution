@@ -25,8 +25,9 @@ class LocalState[TCacheShape] protected () extends js.Object {
   var resolveField: js.Any = js.native
   var resolveSelectionSet: js.Any = js.native
   var resolveSubSelectedArray: js.Any = js.native
-  var resolvers: js.UndefOr[js.Any] = js.native
+  var resolvers: js.Any = js.native
   def addExportedVariables(document: DocumentNode): js.Promise[StringDictionary[_]] = js.native
+  def addExportedVariables(document: DocumentNode, variables: js.UndefOr[scala.Nothing], context: js.Object): js.Promise[StringDictionary[_]] = js.native
   def addExportedVariables(document: DocumentNode, variables: OperationVariables): js.Promise[StringDictionary[_]] = js.native
   def addExportedVariables(document: DocumentNode, variables: OperationVariables, context: js.Object): js.Promise[StringDictionary[_]] = js.native
   def addResolvers(resolvers: js.Array[Resolvers]): Unit = js.native

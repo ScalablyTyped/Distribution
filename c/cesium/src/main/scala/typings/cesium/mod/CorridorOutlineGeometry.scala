@@ -17,6 +17,7 @@ class CorridorOutlineGeometry protected () extends Packable {
 object CorridorOutlineGeometry extends js.Object {
   def createGeometry(corridorOutlineGeometry: CorridorOutlineGeometry): Geometry = js.native
   def unpack(array: js.Array[Double]): CorridorOutlineGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: CorridorOutlineGeometry): CorridorOutlineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): CorridorOutlineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: CorridorOutlineGeometry): CorridorOutlineGeometry = js.native
 }

@@ -40,13 +40,11 @@ class ImportedWebService protected () extends Document {
     * In version 6.4.1: introduced
     */
   def useMtom: Boolean = js.native
-  def useMtom(newValue: Boolean): js.Any = js.native
-  def wsdlDescription(): js.Any = js.native
-  def wsdlDescription(newValue: WsdlDescription): js.Any = js.native
-  @JSName("wsdlDescription")
-  def wsdlDescription_Union: WsdlDescription | Null = js.native
+  def useMtom_=(newValue: Boolean): Unit = js.native
+  def wsdlDescription: WsdlDescription | Null = js.native
+  def wsdlDescription_=(newValue: WsdlDescription | Null): Unit = js.native
   def wsdlUrl: String = js.native
-  def wsdlUrl(newValue: String): js.Any = js.native
+  def wsdlUrl_=(newValue: String): Unit = js.native
 }
 
 /* static members */

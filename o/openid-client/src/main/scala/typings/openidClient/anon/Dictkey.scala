@@ -5,36 +5,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Dictkey
   extends /* key */ StringDictionary[js.Any] {
-  var country: js.UndefOr[String] = js.undefined
-  var formatted: js.UndefOr[String] = js.undefined
-  var locality: js.UndefOr[String] = js.undefined
-  var postal_code: js.UndefOr[String] = js.undefined
-  var region: js.UndefOr[String] = js.undefined
-  var street_address: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String] = js.native
+  var formatted: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.native
+  var postal_code: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.native
+  var street_address: js.UndefOr[String] = js.native
 }
 
 object Dictkey {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    country: String = null,
-    formatted: String = null,
-    locality: String = null,
-    postal_code: String = null,
-    region: String = null,
-    street_address: String = null
-  ): Dictkey = {
+  def apply(): Dictkey = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
-    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
-    if (postal_code != null) __obj.updateDynamic("postal_code")(postal_code.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (street_address != null) __obj.updateDynamic("street_address")(street_address.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
+  @scala.inline
+  implicit class DictkeyOps[Self <: Dictkey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setFormatted(value: String): Self = this.set("formatted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatted: Self = this.set("formatted", js.undefined)
+    @scala.inline
+    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocality: Self = this.set("locality", js.undefined)
+    @scala.inline
+    def setPostal_code(value: String): Self = this.set("postal_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostal_code: Self = this.set("postal_code", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setStreet_address(value: String): Self = this.set("street_address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreet_address: Self = this.set("street_address", js.undefined)
+  }
+  
 }
 

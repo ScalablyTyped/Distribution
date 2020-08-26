@@ -30,12 +30,36 @@ trait SchemaRevisionList extends js.Object {
 
 object SchemaRevisionList {
   @scala.inline
-  def apply(kind: String = null, nextPageToken: String = null, revisions: js.Array[SchemaRevision] = null): SchemaRevisionList = {
+  def apply(): SchemaRevisionList = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (revisions != null) __obj.updateDynamic("revisions")(revisions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRevisionList]
   }
+  @scala.inline
+  implicit class SchemaRevisionListOps[Self <: SchemaRevisionList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setRevisionsVarargs(value: SchemaRevision*): Self = this.set("revisions", js.Array(value :_*))
+    @scala.inline
+    def setRevisions(value: js.Array[SchemaRevision]): Self = this.set("revisions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisions: Self = this.set("revisions", js.undefined)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def acknowledgeNotificationSet(): GaxiosPromise[Unit] = js.native
   def acknowledgeNotificationSet(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def acknowledgeNotificationSet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def acknowledgeNotificationSet(params: ParamsResourceEnterprisesAcknowledgenotificationset): GaxiosPromise[Unit] = js.native
   def acknowledgeNotificationSet(params: ParamsResourceEnterprisesAcknowledgenotificationset, callback: BodyResponseCallback[Unit]): Unit = js.native
   def acknowledgeNotificationSet(
@@ -59,6 +60,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def completeSignup(): GaxiosPromise[SchemaEnterprise] = js.native
   def completeSignup(callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
+  def completeSignup(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
   def completeSignup(params: ParamsResourceEnterprisesCompletesignup): GaxiosPromise[SchemaEnterprise] = js.native
   def completeSignup(params: ParamsResourceEnterprisesCompletesignup, callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
   def completeSignup(
@@ -90,6 +92,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def createWebToken(): GaxiosPromise[SchemaAdministratorWebToken] = js.native
   def createWebToken(callback: BodyResponseCallback[SchemaAdministratorWebToken]): Unit = js.native
+  def createWebToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdministratorWebToken] = js.native
   def createWebToken(params: ParamsResourceEnterprisesCreatewebtoken): GaxiosPromise[SchemaAdministratorWebToken] = js.native
   def createWebToken(
     params: ParamsResourceEnterprisesCreatewebtoken,
@@ -121,6 +124,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def enroll(): GaxiosPromise[SchemaEnterprise] = js.native
   def enroll(callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
+  def enroll(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
   def enroll(params: ParamsResourceEnterprisesEnroll): GaxiosPromise[SchemaEnterprise] = js.native
   def enroll(params: ParamsResourceEnterprisesEnroll, callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
   def enroll(
@@ -148,6 +152,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def generateSignupUrl(): GaxiosPromise[SchemaSignupInfo] = js.native
   def generateSignupUrl(callback: BodyResponseCallback[SchemaSignupInfo]): Unit = js.native
+  def generateSignupUrl(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSignupInfo] = js.native
   def generateSignupUrl(params: ParamsResourceEnterprisesGeneratesignupurl): GaxiosPromise[SchemaSignupInfo] = js.native
   def generateSignupUrl(
     params: ParamsResourceEnterprisesGeneratesignupurl,
@@ -178,6 +183,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaEnterprise] = js.native
   def get(callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
   def get(params: ParamsResourceEnterprisesGet): GaxiosPromise[SchemaEnterprise] = js.native
   def get(params: ParamsResourceEnterprisesGet, callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
   def get(
@@ -216,6 +222,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def getServiceAccount(): GaxiosPromise[SchemaServiceAccount] = js.native
   def getServiceAccount(callback: BodyResponseCallback[SchemaServiceAccount]): Unit = js.native
+  def getServiceAccount(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
   def getServiceAccount(params: ParamsResourceEnterprisesGetserviceaccount): GaxiosPromise[SchemaServiceAccount] = js.native
   def getServiceAccount(
     params: ParamsResourceEnterprisesGetserviceaccount,
@@ -248,6 +255,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def getStoreLayout(): GaxiosPromise[SchemaStoreLayout] = js.native
   def getStoreLayout(callback: BodyResponseCallback[SchemaStoreLayout]): Unit = js.native
+  def getStoreLayout(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStoreLayout] = js.native
   def getStoreLayout(params: ParamsResourceEnterprisesGetstorelayout): GaxiosPromise[SchemaStoreLayout] = js.native
   def getStoreLayout(params: ParamsResourceEnterprisesGetstorelayout, callback: BodyResponseCallback[SchemaStoreLayout]): Unit = js.native
   def getStoreLayout(
@@ -279,6 +287,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaEnterprisesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaEnterprisesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprisesListResponse] = js.native
   def list(params: ParamsResourceEnterprisesList): GaxiosPromise[SchemaEnterprisesListResponse] = js.native
   def list(
     params: ParamsResourceEnterprisesList,
@@ -322,6 +331,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def pullNotificationSet(): GaxiosPromise[SchemaNotificationSet] = js.native
   def pullNotificationSet(callback: BodyResponseCallback[SchemaNotificationSet]): Unit = js.native
+  def pullNotificationSet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotificationSet] = js.native
   def pullNotificationSet(params: ParamsResourceEnterprisesPullnotificationset): GaxiosPromise[SchemaNotificationSet] = js.native
   def pullNotificationSet(
     params: ParamsResourceEnterprisesPullnotificationset,
@@ -353,6 +363,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def sendTestPushNotification(): GaxiosPromise[SchemaEnterprisesSendTestPushNotificationResponse] = js.native
   def sendTestPushNotification(callback: BodyResponseCallback[SchemaEnterprisesSendTestPushNotificationResponse]): Unit = js.native
+  def sendTestPushNotification(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprisesSendTestPushNotificationResponse] = js.native
   def sendTestPushNotification(params: ParamsResourceEnterprisesSendtestpushnotification): GaxiosPromise[SchemaEnterprisesSendTestPushNotificationResponse] = js.native
   def sendTestPushNotification(
     params: ParamsResourceEnterprisesSendtestpushnotification,
@@ -385,6 +396,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def setAccount(): GaxiosPromise[SchemaEnterpriseAccount] = js.native
   def setAccount(callback: BodyResponseCallback[SchemaEnterpriseAccount]): Unit = js.native
+  def setAccount(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterpriseAccount] = js.native
   def setAccount(params: ParamsResourceEnterprisesSetaccount): GaxiosPromise[SchemaEnterpriseAccount] = js.native
   def setAccount(
     params: ParamsResourceEnterprisesSetaccount,
@@ -423,6 +435,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def setStoreLayout(): GaxiosPromise[SchemaStoreLayout] = js.native
   def setStoreLayout(callback: BodyResponseCallback[SchemaStoreLayout]): Unit = js.native
+  def setStoreLayout(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStoreLayout] = js.native
   def setStoreLayout(params: ParamsResourceEnterprisesSetstorelayout): GaxiosPromise[SchemaStoreLayout] = js.native
   def setStoreLayout(params: ParamsResourceEnterprisesSetstorelayout, callback: BodyResponseCallback[SchemaStoreLayout]): Unit = js.native
   def setStoreLayout(
@@ -450,6 +463,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def unenroll(): GaxiosPromise[Unit] = js.native
   def unenroll(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def unenroll(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def unenroll(params: ParamsResourceEnterprisesUnenroll): GaxiosPromise[Unit] = js.native
   def unenroll(params: ParamsResourceEnterprisesUnenroll, callback: BodyResponseCallback[Unit]): Unit = js.native
   def unenroll(

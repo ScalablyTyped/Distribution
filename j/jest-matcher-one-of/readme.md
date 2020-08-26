@@ -12,7 +12,7 @@ A Jest matcher to test if a value is one of many (like enums)
 | Keywords           | jest, matcher, test, tests, testing, tdd |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 18076 |
+| # downloads        | 19112 |
 | # stars            | 0 |
 
 ## Links

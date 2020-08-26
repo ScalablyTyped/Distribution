@@ -51,13 +51,13 @@ object ^ extends js.Object {
     * @param secrets Array holding the secrets/sensitive-information to be filtered out.
     */
   def addSecrets(secrets: js.Array[Double | String]): Unit = js.native
-  def await(): Unit = js.native
+  def await(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def await(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   /**
     * Removes all secrets/sensitive-information from the targeted Signale instance.
     */
   def clearSecrets(): Unit = js.native
-  def complete(): Unit = js.native
+  def complete(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def complete(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   /**
     * Sets the configuration of an instance overriding any existing global or local configuration.
@@ -65,7 +65,7 @@ object ^ extends js.Object {
     * @param configObj Can hold any of the documented options.
     */
   def config(configObj: SignaleConfig): SignaleDefaultMethods = js.native
-  def debug(): Unit = js.native
+  def debug(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def debug(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   /**
     * Disables the logging functionality of all loggers belonging to a specific instance.
@@ -75,13 +75,13 @@ object ^ extends js.Object {
     * Enables the logging functionality of all loggers belonging to a specific instance.
     */
   def enable(): Unit = js.native
-  def error(): Unit = js.native
+  def error(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def error(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-  def fatal(): Unit = js.native
+  def fatal(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def fatal(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-  def fav(): Unit = js.native
+  def fav(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def fav(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-  def info(): Unit = js.native
+  def info(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def info(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   /**
     * Checks whether the logging functionality of a specific instance is enabled.
@@ -89,13 +89,13 @@ object ^ extends js.Object {
     * @returns a boolean that describes whether or not the logger is enabled.
     */
   def isEnabled(): Boolean = js.native
-  def log(): Unit = js.native
+  def log(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def log(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-  def note(): Unit = js.native
+  def note(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def note(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-  def pause(): Unit = js.native
+  def pause(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def pause(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-  def pending(): Unit = js.native
+  def pending(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def pending(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   /**
     * Defines the scope name of the logger.
@@ -103,11 +103,11 @@ object ^ extends js.Object {
     * @param name Can be one or more comma delimited strings.
     */
   def scope(name: String*): SignaleDefaultMethods = js.native
-  def star(): Unit = js.native
+  def star(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def star(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-  def start(): Unit = js.native
+  def start(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def start(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-  def success(): Unit = js.native
+  def success(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def success(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   /**
     * Sets a timers and accepts an optional label. If none provided the timer will receive a unique label automatically.
@@ -126,13 +126,14 @@ object ^ extends js.Object {
     * @param span Total running time.
     */
   def timeEnd(): Label = js.native
+  def timeEnd(label: js.UndefOr[scala.Nothing], span: Double): Label = js.native
   def timeEnd(label: String): Label = js.native
   def timeEnd(label: String, span: Double): Label = js.native
   /** Clears the scope name of the logger. */
   def unscope(): Unit = js.native
-  def warn(): Unit = js.native
+  def warn(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def warn(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-  def watch(): Unit = js.native
+  def watch(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
   def watch(message: js.Any, optionalArgs: js.Any*): Unit = js.native
 }
 

@@ -23,8 +23,23 @@ object mod extends js.Object {
     def this(mode: recv, options: js.Object) = this()
     def this(mode: sendRecv, options: js.Object) = this()
     def this(mode: send, options: js.Object) = this()
+    def this(
+      mode: recv,
+      options: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
+    ) = this()
     def this(mode: recv, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
+    def this(
+      mode: sendRecv,
+      options: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
+    ) = this()
     def this(mode: sendRecv, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
+    def this(
+      mode: send,
+      options: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
+    ) = this()
     def this(mode: send, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
     /**
       * Using this property the user can get the peerConnection and use it directly.

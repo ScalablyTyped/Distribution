@@ -10,9 +10,9 @@ A storybook addon to show different backgrounds for your preview
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-backgrounds |
 | Keywords           | addon, background, react, storybook |
-| # releases         | 419 |
-| # dependents       | 20 |
-| # downloads        | 3385021 |
+| # releases         | 420 |
+| # dependents       | 22 |
+| # downloads        | 3518492 |
 | # stars            | 0 |
 
 ## Links

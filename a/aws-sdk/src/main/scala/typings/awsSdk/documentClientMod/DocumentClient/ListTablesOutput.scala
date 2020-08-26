@@ -18,11 +18,32 @@ trait ListTablesOutput extends js.Object {
 
 object ListTablesOutput {
   @scala.inline
-  def apply(LastEvaluatedTableName: TableName = null, TableNames: TableNameList = null): ListTablesOutput = {
+  def apply(): ListTablesOutput = {
     val __obj = js.Dynamic.literal()
-    if (LastEvaluatedTableName != null) __obj.updateDynamic("LastEvaluatedTableName")(LastEvaluatedTableName.asInstanceOf[js.Any])
-    if (TableNames != null) __obj.updateDynamic("TableNames")(TableNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTablesOutput]
   }
+  @scala.inline
+  implicit class ListTablesOutputOps[Self <: ListTablesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastEvaluatedTableName(value: TableName): Self = this.set("LastEvaluatedTableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEvaluatedTableName: Self = this.set("LastEvaluatedTableName", js.undefined)
+    @scala.inline
+    def setTableNamesVarargs(value: TableName*): Self = this.set("TableNames", js.Array(value :_*))
+    @scala.inline
+    def setTableNames(value: TableNameList): Self = this.set("TableNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableNames: Self = this.set("TableNames", js.undefined)
+  }
+  
 }
 

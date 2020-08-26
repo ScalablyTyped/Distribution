@@ -22,20 +22,5 @@ class RaycastResult protected ()
     point: typings.playcanvas.pc.Vec3,
     normal: typings.playcanvas.pc.Vec3
   ) = this()
-  /**
-    * The entity that was hit.
-    */
-  /* CompleteClass */
-  override var entity: typings.playcanvas.pc.Entity = js.native
-  /**
-    * The normal vector of the surface where the ray hit in world space.
-    */
-  /* CompleteClass */
-  override var normal: typings.playcanvas.pc.Vec3 = js.native
-  /**
-    * The point at which the ray hit the entity in world space.
-    */
-  /* CompleteClass */
-  override var point: typings.playcanvas.pc.Vec3 = js.native
 }
 

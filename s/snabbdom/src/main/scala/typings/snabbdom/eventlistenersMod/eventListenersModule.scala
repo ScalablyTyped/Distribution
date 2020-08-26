@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("snabbdom/modules/eventlisteners", "eventListenersModule")
+@JSImport("snabbdom/build/package/modules/eventlisteners", "eventListenersModule")
 @js.native
 object eventListenersModule extends TopLevel[Module]
 

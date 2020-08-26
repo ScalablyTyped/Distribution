@@ -10,9 +10,9 @@ Typings are for version 2.1
 | ------------------ | :-------------: |
 | Full name          | system-logger |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 1095 |
+| # downloads        | 1043 |
 | # stars            | 0 |
 
 ## Links

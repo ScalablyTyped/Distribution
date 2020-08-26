@@ -12,7 +12,7 @@ The lodash method `_.take` exported as a module.
 | Keywords           | lodash-modularized, take |
 | # releases         | 0 |
 | # dependents       | 26 |
-| # downloads        | 354257 |
+| # downloads        | 358277 |
 | # stars            | 0 |
 
 ## Links

@@ -32,6 +32,7 @@ class ResourceDataRealtime protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRealtimeData] = js.native
   def get(callback: BodyResponseCallback[SchemaRealtimeData]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRealtimeData] = js.native
   def get(params: ParamsResourceDataRealtimeGet): GaxiosPromise[SchemaRealtimeData] = js.native
   def get(params: ParamsResourceDataRealtimeGet, callback: BodyResponseCallback[SchemaRealtimeData]): Unit = js.native
   def get(

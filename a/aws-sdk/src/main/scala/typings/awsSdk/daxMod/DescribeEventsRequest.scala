@@ -38,24 +38,50 @@ trait DescribeEventsRequest extends js.Object {
 
 object DescribeEventsRequest {
   @scala.inline
-  def apply(
-    Duration: js.UndefOr[IntegerOptional] = js.undefined,
-    EndTime: TStamp = null,
-    MaxResults: js.UndefOr[IntegerOptional] = js.undefined,
-    NextToken: String = null,
-    SourceName: String = null,
-    SourceType: SourceType = null,
-    StartTime: TStamp = null
-  ): DescribeEventsRequest = {
+  def apply(): DescribeEventsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SourceName != null) __obj.updateDynamic("SourceName")(SourceName.asInstanceOf[js.Any])
-    if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEventsRequest]
   }
+  @scala.inline
+  implicit class DescribeEventsRequestOps[Self <: DescribeEventsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: IntegerOptional): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setEndTime(value: TStamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setMaxResults(value: IntegerOptional): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSourceName(value: String): Self = this.set("SourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceName: Self = this.set("SourceName", js.undefined)
+    @scala.inline
+    def setSourceType(value: SourceType): Self = this.set("SourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    @scala.inline
+    def setStartTime(value: TStamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+  }
+  
 }
 

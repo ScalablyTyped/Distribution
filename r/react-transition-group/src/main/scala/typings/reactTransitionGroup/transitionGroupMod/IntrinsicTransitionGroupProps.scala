@@ -5,24 +5,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] extends TransitionActions {
-  var component: js.UndefOr[T | Null] = js.undefined
+  var component: js.UndefOr[T | Null] = js.native
 }
 
 object IntrinsicTransitionGroupProps {
   @scala.inline
-  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 * / js.Any */ T](
-    appear: js.UndefOr[Boolean] = js.undefined,
-    component: js.UndefOr[Null | T] = js.undefined,
-    enter: js.UndefOr[Boolean] = js.undefined,
-    exit: js.UndefOr[Boolean] = js.undefined
-  ): IntrinsicTransitionGroupProps[T] = {
+  def apply[/* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 * / js.Any */ T](): IntrinsicTransitionGroupProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(enter)) __obj.updateDynamic("enter")(enter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrinsicTransitionGroupProps[T]]
   }
+  @scala.inline
+  implicit class IntrinsicTransitionGroupPropsOps[Self <: IntrinsicTransitionGroupProps[_], /* <: / * import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 * / js.Any */ T] (val x: Self with IntrinsicTransitionGroupProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponent(value: T): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setComponentNull: Self = this.set("component", null)
+  }
+  
 }
 

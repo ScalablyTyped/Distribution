@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class ^[Ctx] () extends Listr[Ctx] {
   def this(options: ListrOptions[Ctx]) = this()
   def this(tasks: js.Array[ListrTask[Ctx]]) = this()
+  def this(tasks: js.UndefOr[scala.Nothing], options: ListrOptions[Ctx]) = this()
   def this(tasks: js.Array[ListrTask[Ctx]], options: ListrOptions[Ctx]) = this()
 }
 

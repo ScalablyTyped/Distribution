@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Integer[T /* <: SlickData */] extends Editor[T]
 
 object Integer {

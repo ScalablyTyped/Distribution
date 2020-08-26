@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object range extends js.Object {
   def apply(): Observable[Double] = js.native
+  def apply(start: js.UndefOr[scala.Nothing], count: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
+  def apply(start: js.UndefOr[scala.Nothing], count: Double): Observable[Double] = js.native
+  def apply(start: js.UndefOr[scala.Nothing], count: Double, scheduler: SchedulerLike): Observable[Double] = js.native
   def apply(start: Double): Observable[Double] = js.native
+  def apply(start: Double, count: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
   def apply(start: Double, count: Double): Observable[Double] = js.native
   def apply(start: Double, count: Double, scheduler: SchedulerLike): Observable[Double] = js.native
 }

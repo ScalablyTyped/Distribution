@@ -14,10 +14,26 @@ trait Schedule extends js.Object {
 
 object Schedule {
   @scala.inline
-  def apply(expression: ScheduleExpression = null): Schedule = {
+  def apply(): Schedule = {
     val __obj = js.Dynamic.literal()
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]
   }
+  @scala.inline
+  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpression(value: ScheduleExpression): Self = this.set("expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("expression", js.undefined)
+  }
+  
 }
 

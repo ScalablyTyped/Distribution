@@ -19,6 +19,14 @@ trait floatPanel extends js.Object {
   def hideChild(restoreFocus: Boolean): Unit = js.native
   def reposition(): Unit = js.native
   def showAsChild(panel: floatPanel, blckName: String, offsetParent: element, corner: Double): Unit = js.native
+  def showAsChild(
+    panel: floatPanel,
+    blckName: String,
+    offsetParent: element,
+    corner: Double,
+    offsetX: js.UndefOr[scala.Nothing],
+    offsetY: Double
+  ): Unit = js.native
   def showAsChild(panel: floatPanel, blckName: String, offsetParent: element, corner: Double, offsetX: Double): Unit = js.native
   def showAsChild(
     panel: floatPanel,
@@ -29,7 +37,38 @@ trait floatPanel extends js.Object {
     offsetY: Double
   ): Unit = js.native
   def showBlock(name: String, offsetParent: element, corner: Double): Unit = js.native
+  def showBlock(
+    name: String,
+    offsetParent: element,
+    corner: Double,
+    offsetX: js.UndefOr[scala.Nothing],
+    offsetY: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def showBlock(
+    name: String,
+    offsetParent: element,
+    corner: Double,
+    offsetX: js.UndefOr[scala.Nothing],
+    offsetY: Double
+  ): Unit = js.native
+  def showBlock(
+    name: String,
+    offsetParent: element,
+    corner: Double,
+    offsetX: js.UndefOr[scala.Nothing],
+    offsetY: Double,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def showBlock(name: String, offsetParent: element, corner: Double, offsetX: Double): Unit = js.native
+  def showBlock(
+    name: String,
+    offsetParent: element,
+    corner: Double,
+    offsetX: Double,
+    offsetY: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def showBlock(name: String, offsetParent: element, corner: Double, offsetX: Double, offsetY: Double): Unit = js.native
   def showBlock(
     name: String,

@@ -46,20 +46,44 @@ trait SchemaDataset extends js.Object {
 
 object SchemaDataset {
   @scala.inline
-  def apply(
-    dataSourceId: String = null,
-    maxEndTimeNs: String = null,
-    minStartTimeNs: String = null,
-    nextPageToken: String = null,
-    point: js.Array[SchemaDataPoint] = null
-  ): SchemaDataset = {
+  def apply(): SchemaDataset = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
-    if (maxEndTimeNs != null) __obj.updateDynamic("maxEndTimeNs")(maxEndTimeNs.asInstanceOf[js.Any])
-    if (minStartTimeNs != null) __obj.updateDynamic("minStartTimeNs")(minStartTimeNs.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataset]
   }
+  @scala.inline
+  implicit class SchemaDatasetOps[Self <: SchemaDataset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    @scala.inline
+    def setMaxEndTimeNs(value: String): Self = this.set("maxEndTimeNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxEndTimeNs: Self = this.set("maxEndTimeNs", js.undefined)
+    @scala.inline
+    def setMinStartTimeNs(value: String): Self = this.set("minStartTimeNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinStartTimeNs: Self = this.set("minStartTimeNs", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setPointVarargs(value: SchemaDataPoint*): Self = this.set("point", js.Array(value :_*))
+    @scala.inline
+    def setPoint(value: js.Array[SchemaDataPoint]): Self = this.set("point", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoint: Self = this.set("point", js.undefined)
+  }
+  
 }
 

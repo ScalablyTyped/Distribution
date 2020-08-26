@@ -21,12 +21,6 @@ class HttpContentCodingWithQualityHeaderValue protected ()
     * @param quality The value of the qvalue to use.
     */
   def this(contentCoding: String, quality: Double) = this()
-  /** Gets the value of the content-coding characteristic in the Accept-Encoding HTTP header. */
-  /* CompleteClass */
-  override var contentCoding: String = js.native
-  /** Gets the value of the qvalue attribute in the Accept-Encoding HTTP header. */
-  /* CompleteClass */
-  override var quality: Double = js.native
 }
 
 /* static members */

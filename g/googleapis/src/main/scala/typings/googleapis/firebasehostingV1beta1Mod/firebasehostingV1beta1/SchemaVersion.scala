@@ -78,34 +78,70 @@ trait SchemaVersion extends js.Object {
 
 object SchemaVersion {
   @scala.inline
-  def apply(
-    config: SchemaServingConfig = null,
-    createTime: String = null,
-    createUser: SchemaActingUser = null,
-    deleteTime: String = null,
-    deleteUser: SchemaActingUser = null,
-    fileCount: String = null,
-    finalizeTime: String = null,
-    finalizeUser: SchemaActingUser = null,
-    labels: StringDictionary[String] = null,
-    name: String = null,
-    status: String = null,
-    versionBytes: String = null
-  ): SchemaVersion = {
+  def apply(): SchemaVersion = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (createUser != null) __obj.updateDynamic("createUser")(createUser.asInstanceOf[js.Any])
-    if (deleteTime != null) __obj.updateDynamic("deleteTime")(deleteTime.asInstanceOf[js.Any])
-    if (deleteUser != null) __obj.updateDynamic("deleteUser")(deleteUser.asInstanceOf[js.Any])
-    if (fileCount != null) __obj.updateDynamic("fileCount")(fileCount.asInstanceOf[js.Any])
-    if (finalizeTime != null) __obj.updateDynamic("finalizeTime")(finalizeTime.asInstanceOf[js.Any])
-    if (finalizeUser != null) __obj.updateDynamic("finalizeUser")(finalizeUser.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (versionBytes != null) __obj.updateDynamic("versionBytes")(versionBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVersion]
   }
+  @scala.inline
+  implicit class SchemaVersionOps[Self <: SchemaVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfig(value: SchemaServingConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setCreateUser(value: SchemaActingUser): Self = this.set("createUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateUser: Self = this.set("createUser", js.undefined)
+    @scala.inline
+    def setDeleteTime(value: String): Self = this.set("deleteTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteTime: Self = this.set("deleteTime", js.undefined)
+    @scala.inline
+    def setDeleteUser(value: SchemaActingUser): Self = this.set("deleteUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteUser: Self = this.set("deleteUser", js.undefined)
+    @scala.inline
+    def setFileCount(value: String): Self = this.set("fileCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileCount: Self = this.set("fileCount", js.undefined)
+    @scala.inline
+    def setFinalizeTime(value: String): Self = this.set("finalizeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalizeTime: Self = this.set("finalizeTime", js.undefined)
+    @scala.inline
+    def setFinalizeUser(value: SchemaActingUser): Self = this.set("finalizeUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalizeUser: Self = this.set("finalizeUser", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setVersionBytes(value: String): Self = this.set("versionBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionBytes: Self = this.set("versionBytes", js.undefined)
+  }
+  
 }
 

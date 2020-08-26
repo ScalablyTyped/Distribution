@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 class SimpleServer () extends EventEmitter {
   def this(callback: js.Function1[/* connection */ SimpleServerConnection, Unit]) = this()
   def this(options: SmtpServerOptions) = this()
+  def this(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* connection */ SimpleServerConnection, Unit]
+  ) = this()
   def this(options: SmtpServerOptions, callback: js.Function1[/* connection */ SimpleServerConnection, Unit]) = this()
   var server: SMTPServer = js.native
   /**

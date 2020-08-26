@@ -14,6 +14,12 @@ trait ChartAxisX extends ChartAxisXOptions {
     * @param updateChart When true, Updates the chart automatically after setting the value. Defaults to true.
     */
   def addTo(propertyName: String, options: ChartStripLinesOptions): Unit = js.native
+  def addTo(
+    propertyName: String,
+    options: ChartStripLinesOptions,
+    index: js.UndefOr[scala.Nothing],
+    updateChart: Boolean
+  ): Unit = js.native
   def addTo(propertyName: String, options: ChartStripLinesOptions, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartStripLinesOptions, index: Double, updateChart: Boolean): Unit = js.native
   /**

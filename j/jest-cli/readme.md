@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-cli
 
-Typings are for version 25.5.4
+Typings are for version 26.2.2
 
 ## Library description:
 Delightful JavaScript Testing.
@@ -10,9 +10,9 @@ Delightful JavaScript Testing.
 | ------------------ | :-------------: |
 | Full name          | jest-cli |
 | Keywords           | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
-| # releases         | 75 |
-| # dependents       | 320 |
-| # downloads        | 228225004 |
+| # releases         | 74 |
+| # dependents       | 325 |
+| # downloads        | 229804318 |
 | # stars            | 42 |
 
 ## Links

@@ -54,6 +54,9 @@ trait Cluster extends js.Object {
     * A map from availability zone to the cluster’s subnet in that availability zone.
     */
   var SubnetMapping: js.UndefOr[ExternalSubnetMapping] = js.native
+  /**
+    * The list of tags for the cluster.
+    */
   var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.native
   /**
     * The identifier (ID) of the virtual private cloud (VPC) that contains the cluster.
@@ -63,38 +66,82 @@ trait Cluster extends js.Object {
 
 object Cluster {
   @scala.inline
-  def apply(
-    BackupPolicy: BackupPolicy = null,
-    Certificates: Certificates = null,
-    ClusterId: ClusterId = null,
-    CreateTimestamp: Timestamp = null,
-    HsmType: HsmType = null,
-    Hsms: Hsms = null,
-    PreCoPassword: PreCoPassword = null,
-    SecurityGroup: SecurityGroup = null,
-    SourceBackupId: BackupId = null,
-    State: ClusterState = null,
-    StateMessage: StateMessage = null,
-    SubnetMapping: ExternalSubnetMapping = null,
-    TagList: TagList = null,
-    VpcId: VpcId = null
-  ): Cluster = {
+  def apply(): Cluster = {
     val __obj = js.Dynamic.literal()
-    if (BackupPolicy != null) __obj.updateDynamic("BackupPolicy")(BackupPolicy.asInstanceOf[js.Any])
-    if (Certificates != null) __obj.updateDynamic("Certificates")(Certificates.asInstanceOf[js.Any])
-    if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
-    if (CreateTimestamp != null) __obj.updateDynamic("CreateTimestamp")(CreateTimestamp.asInstanceOf[js.Any])
-    if (HsmType != null) __obj.updateDynamic("HsmType")(HsmType.asInstanceOf[js.Any])
-    if (Hsms != null) __obj.updateDynamic("Hsms")(Hsms.asInstanceOf[js.Any])
-    if (PreCoPassword != null) __obj.updateDynamic("PreCoPassword")(PreCoPassword.asInstanceOf[js.Any])
-    if (SecurityGroup != null) __obj.updateDynamic("SecurityGroup")(SecurityGroup.asInstanceOf[js.Any])
-    if (SourceBackupId != null) __obj.updateDynamic("SourceBackupId")(SourceBackupId.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StateMessage != null) __obj.updateDynamic("StateMessage")(StateMessage.asInstanceOf[js.Any])
-    if (SubnetMapping != null) __obj.updateDynamic("SubnetMapping")(SubnetMapping.asInstanceOf[js.Any])
-    if (TagList != null) __obj.updateDynamic("TagList")(TagList.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cluster]
   }
+  @scala.inline
+  implicit class ClusterOps[Self <: Cluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupPolicy(value: BackupPolicy): Self = this.set("BackupPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPolicy: Self = this.set("BackupPolicy", js.undefined)
+    @scala.inline
+    def setCertificates(value: Certificates): Self = this.set("Certificates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificates: Self = this.set("Certificates", js.undefined)
+    @scala.inline
+    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    @scala.inline
+    def setCreateTimestamp(value: Timestamp): Self = this.set("CreateTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTimestamp: Self = this.set("CreateTimestamp", js.undefined)
+    @scala.inline
+    def setHsmType(value: HsmType): Self = this.set("HsmType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmType: Self = this.set("HsmType", js.undefined)
+    @scala.inline
+    def setHsmsVarargs(value: Hsm*): Self = this.set("Hsms", js.Array(value :_*))
+    @scala.inline
+    def setHsms(value: Hsms): Self = this.set("Hsms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsms: Self = this.set("Hsms", js.undefined)
+    @scala.inline
+    def setPreCoPassword(value: PreCoPassword): Self = this.set("PreCoPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreCoPassword: Self = this.set("PreCoPassword", js.undefined)
+    @scala.inline
+    def setSecurityGroup(value: SecurityGroup): Self = this.set("SecurityGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroup: Self = this.set("SecurityGroup", js.undefined)
+    @scala.inline
+    def setSourceBackupId(value: BackupId): Self = this.set("SourceBackupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceBackupId: Self = this.set("SourceBackupId", js.undefined)
+    @scala.inline
+    def setState(value: ClusterState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStateMessage(value: StateMessage): Self = this.set("StateMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateMessage: Self = this.set("StateMessage", js.undefined)
+    @scala.inline
+    def setSubnetMapping(value: ExternalSubnetMapping): Self = this.set("SubnetMapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetMapping: Self = this.set("SubnetMapping", js.undefined)
+    @scala.inline
+    def setTagListVarargs(value: Tag*): Self = this.set("TagList", js.Array(value :_*))
+    @scala.inline
+    def setTagList(value: TagList): Self = this.set("TagList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagList: Self = this.set("TagList", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

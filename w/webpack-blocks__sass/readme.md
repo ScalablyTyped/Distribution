@@ -12,7 +12,7 @@ Webpack block for SASS.
 | Keywords           | webpack, webpack-blocks |
 | # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 129252 |
+| # downloads        | 122679 |
 | # stars            | 0 |
 
 ## Links

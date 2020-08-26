@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MessageOptions_ () extends Message {
   def addUninterpretedOption(): UninterpretedOption = js.native
+  def addUninterpretedOption(value: js.UndefOr[scala.Nothing], index: Double): UninterpretedOption = js.native
   def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
   def addUninterpretedOption(value: UninterpretedOption, index: Double): UninterpretedOption = js.native
   def clearDeprecated(): Unit = js.native

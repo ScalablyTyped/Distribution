@@ -4,19 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPaymentMethodOptions extends js.Object {
   /**
     * Configuration for any card payments attempted on this PaymentIntent.
     */
-  var card: js.UndefOr[IPaymentMethodCardOptions] = js.undefined
+  var card: js.UndefOr[IPaymentMethodCardOptions] = js.native
 }
 
 object IPaymentMethodOptions {
   @scala.inline
-  def apply(card: IPaymentMethodCardOptions = null): IPaymentMethodOptions = {
+  def apply(): IPaymentMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodOptions]
   }
+  @scala.inline
+  implicit class IPaymentMethodOptionsOps[Self <: IPaymentMethodOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCard(value: IPaymentMethodCardOptions): Self = this.set("card", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCard: Self = this.set("card", js.undefined)
+  }
+  
 }
 

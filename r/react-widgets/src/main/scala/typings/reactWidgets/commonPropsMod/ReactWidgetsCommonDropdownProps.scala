@@ -4,30 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactWidgetsCommonDropdownProps extends ReactWidgetsCommonProps {
   /**
     * Show "drop up" not "drop down"
     * @default false
     */
-  var dropUp: js.UndefOr[Boolean] = js.undefined
+  var dropUp: js.UndefOr[Boolean] = js.native
 }
 
 object ReactWidgetsCommonDropdownProps {
   @scala.inline
-  def apply(
-    disabled: Boolean | js.Array[_] = null,
-    dropUp: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    isRtl: js.UndefOr[Boolean] = js.undefined,
-    readOnly: Boolean | js.Array[_] = null
-  ): ReactWidgetsCommonDropdownProps = {
+  def apply(): ReactWidgetsCommonDropdownProps = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropUp)) __obj.updateDynamic("dropUp")(dropUp.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.get.asInstanceOf[js.Any])
-    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactWidgetsCommonDropdownProps]
   }
+  @scala.inline
+  implicit class ReactWidgetsCommonDropdownPropsOps[Self <: ReactWidgetsCommonDropdownProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDropUp(value: Boolean): Self = this.set("dropUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropUp: Self = this.set("dropUp", js.undefined)
+  }
+  
 }
 

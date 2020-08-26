@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object cordovaPluginInappbrowserStrings {
   @js.native
+  sealed trait customscheme extends channel
+  
+  @js.native
   sealed trait exit extends channel
   
   @js.native
@@ -20,6 +23,8 @@ object cordovaPluginInappbrowserStrings {
   @js.native
   sealed trait message extends channel
   
+  @scala.inline
+  def customscheme: customscheme = "customscheme".asInstanceOf[customscheme]
   @scala.inline
   def exit: exit = "exit".asInstanceOf[exit]
   @scala.inline

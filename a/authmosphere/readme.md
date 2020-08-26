@@ -10,9 +10,9 @@ authmosphere is a library to support OAuth2 workflows in JavaScript projects.
 | ------------------ | :-------------: |
 | Full name          | authmosphere |
 | Keywords           | zalando, oauth2, express, node, typescript |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 0 |
-| # downloads        | 27840 |
+| # downloads        | 27163 |
 | # stars            | 1 |
 
 ## Links

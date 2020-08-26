@@ -18,11 +18,32 @@ trait ListTableMetadataOutput extends js.Object {
 
 object ListTableMetadataOutput {
   @scala.inline
-  def apply(NextToken: Token = null, TableMetadataList: TableMetadataList = null): ListTableMetadataOutput = {
+  def apply(): ListTableMetadataOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TableMetadataList != null) __obj.updateDynamic("TableMetadataList")(TableMetadataList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTableMetadataOutput]
   }
+  @scala.inline
+  implicit class ListTableMetadataOutputOps[Self <: ListTableMetadataOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTableMetadataListVarargs(value: TableMetadata*): Self = this.set("TableMetadataList", js.Array(value :_*))
+    @scala.inline
+    def setTableMetadataList(value: TableMetadataList): Self = this.set("TableMetadataList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableMetadataList: Self = this.set("TableMetadataList", js.undefined)
+  }
+  
 }
 

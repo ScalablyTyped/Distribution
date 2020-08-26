@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Table", "Table")
+@JSImport("grommet/es6/components/Table", "Table")
 @js.native
 object Table extends TopLevel[
       FC[

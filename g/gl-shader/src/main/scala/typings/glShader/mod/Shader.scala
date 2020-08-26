@@ -21,6 +21,12 @@ trait Shader extends js.Object {
   def dispose(): Unit = js.native
   def update(obj: Fragment): Unit = js.native
   def update(vertex: String, fragment: String): Unit = js.native
+  def update(
+    vertex: String,
+    fragment: String,
+    uniforms: js.UndefOr[scala.Nothing],
+    attributes: js.Array[Parameter]
+  ): Unit = js.native
   def update(vertex: String, fragment: String, uniforms: js.Array[Parameter]): Unit = js.native
   def update(vertex: String, fragment: String, uniforms: js.Array[Parameter], attributes: js.Array[Parameter]): Unit = js.native
 }

@@ -46,28 +46,58 @@ trait DirectMessageConfiguration extends js.Object {
 
 object DirectMessageConfiguration {
   @scala.inline
-  def apply(
-    ADMMessage: ADMMessage = null,
-    APNSMessage: APNSMessage = null,
-    BaiduMessage: BaiduMessage = null,
-    DefaultMessage: DefaultMessage = null,
-    DefaultPushNotificationMessage: DefaultPushNotificationMessage = null,
-    EmailMessage: EmailMessage = null,
-    GCMMessage: GCMMessage = null,
-    SMSMessage: SMSMessage = null,
-    VoiceMessage: VoiceMessage = null
-  ): DirectMessageConfiguration = {
+  def apply(): DirectMessageConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ADMMessage != null) __obj.updateDynamic("ADMMessage")(ADMMessage.asInstanceOf[js.Any])
-    if (APNSMessage != null) __obj.updateDynamic("APNSMessage")(APNSMessage.asInstanceOf[js.Any])
-    if (BaiduMessage != null) __obj.updateDynamic("BaiduMessage")(BaiduMessage.asInstanceOf[js.Any])
-    if (DefaultMessage != null) __obj.updateDynamic("DefaultMessage")(DefaultMessage.asInstanceOf[js.Any])
-    if (DefaultPushNotificationMessage != null) __obj.updateDynamic("DefaultPushNotificationMessage")(DefaultPushNotificationMessage.asInstanceOf[js.Any])
-    if (EmailMessage != null) __obj.updateDynamic("EmailMessage")(EmailMessage.asInstanceOf[js.Any])
-    if (GCMMessage != null) __obj.updateDynamic("GCMMessage")(GCMMessage.asInstanceOf[js.Any])
-    if (SMSMessage != null) __obj.updateDynamic("SMSMessage")(SMSMessage.asInstanceOf[js.Any])
-    if (VoiceMessage != null) __obj.updateDynamic("VoiceMessage")(VoiceMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectMessageConfiguration]
   }
+  @scala.inline
+  implicit class DirectMessageConfigurationOps[Self <: DirectMessageConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setADMMessage(value: ADMMessage): Self = this.set("ADMMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteADMMessage: Self = this.set("ADMMessage", js.undefined)
+    @scala.inline
+    def setAPNSMessage(value: APNSMessage): Self = this.set("APNSMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAPNSMessage: Self = this.set("APNSMessage", js.undefined)
+    @scala.inline
+    def setBaiduMessage(value: BaiduMessage): Self = this.set("BaiduMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaiduMessage: Self = this.set("BaiduMessage", js.undefined)
+    @scala.inline
+    def setDefaultMessage(value: DefaultMessage): Self = this.set("DefaultMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultMessage: Self = this.set("DefaultMessage", js.undefined)
+    @scala.inline
+    def setDefaultPushNotificationMessage(value: DefaultPushNotificationMessage): Self = this.set("DefaultPushNotificationMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPushNotificationMessage: Self = this.set("DefaultPushNotificationMessage", js.undefined)
+    @scala.inline
+    def setEmailMessage(value: EmailMessage): Self = this.set("EmailMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessage: Self = this.set("EmailMessage", js.undefined)
+    @scala.inline
+    def setGCMMessage(value: GCMMessage): Self = this.set("GCMMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGCMMessage: Self = this.set("GCMMessage", js.undefined)
+    @scala.inline
+    def setSMSMessage(value: SMSMessage): Self = this.set("SMSMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSMSMessage: Self = this.set("SMSMessage", js.undefined)
+    @scala.inline
+    def setVoiceMessage(value: VoiceMessage): Self = this.set("VoiceMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoiceMessage: Self = this.set("VoiceMessage", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Magic, self-described javaScript objects build up elastic, maintainable front-ba
 | Keywords           | di, IoC, AOP, dependency, injection, consistent, configuration, hot reload, front-backend, sharable codes, dependency injection, asynchronous script loading, magic, self-described javaScript objects |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 498 |
+| # downloads        | 541 |
 | # stars            | 0 |
 
 ## Links

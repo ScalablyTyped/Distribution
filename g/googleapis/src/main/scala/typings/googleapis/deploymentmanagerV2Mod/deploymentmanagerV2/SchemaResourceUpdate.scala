@@ -1,7 +1,7 @@
 package typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2
 
 import typings.googleapis.anon.Code
-import typings.googleapis.anon.ErrorsArray
+import typings.googleapis.anon.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait SchemaResourceUpdate extends js.Object {
     * Output only. If errors are generated during update of the resource, this
     * field will be populated.
     */
-  var error: js.UndefOr[ErrorsArray] = js.native
+  var error: js.UndefOr[`3`] = js.native
   /**
     * Output only. The expanded properties of the resource with reference
     * values expanded. Returned as serialized YAML.
@@ -50,26 +50,56 @@ trait SchemaResourceUpdate extends js.Object {
 
 object SchemaResourceUpdate {
   @scala.inline
-  def apply(
-    accessControl: SchemaResourceAccessControl = null,
-    error: ErrorsArray = null,
-    finalProperties: String = null,
-    intent: String = null,
-    manifest: String = null,
-    properties: String = null,
-    state: String = null,
-    warnings: js.Array[Code] = null
-  ): SchemaResourceUpdate = {
+  def apply(): SchemaResourceUpdate = {
     val __obj = js.Dynamic.literal()
-    if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (finalProperties != null) __obj.updateDynamic("finalProperties")(finalProperties.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourceUpdate]
   }
+  @scala.inline
+  implicit class SchemaResourceUpdateOps[Self <: SchemaResourceUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessControl(value: SchemaResourceAccessControl): Self = this.set("accessControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessControl: Self = this.set("accessControl", js.undefined)
+    @scala.inline
+    def setError(value: `3`): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFinalProperties(value: String): Self = this.set("finalProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalProperties: Self = this.set("finalProperties", js.undefined)
+    @scala.inline
+    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntent: Self = this.set("intent", js.undefined)
+    @scala.inline
+    def setManifest(value: String): Self = this.set("manifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifest: Self = this.set("manifest", js.undefined)
+    @scala.inline
+    def setProperties(value: String): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setWarningsVarargs(value: Code*): Self = this.set("warnings", js.Array(value :_*))
+    @scala.inline
+    def setWarnings(value: js.Array[Code]): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnings: Self = this.set("warnings", js.undefined)
+  }
+  
 }
 

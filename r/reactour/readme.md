@@ -10,9 +10,9 @@ Tourist Guide into your React Components
 | ------------------ | :-------------: |
 | Full name          | reactour |
 | Keywords           | react, tour, intro, guide, introduction, step-by-step, guide, walkthrough, joyride, tourist-guide, product-intro, presentation |
-| # releases         | 33 |
-| # dependents       | 6 |
-| # downloads        | 366667 |
+| # releases         | 32 |
+| # dependents       | 8 |
+| # downloads        | 392355 |
 | # stars            | 1 |
 
 ## Links

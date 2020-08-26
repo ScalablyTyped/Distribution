@@ -12,7 +12,7 @@ Automatically minify and cache your javascript and css files.
 | Keywords           | uglify, minify, express |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 136146 |
+| # downloads        | 154370 |
 | # stars            | 11 |
 
 ## Links

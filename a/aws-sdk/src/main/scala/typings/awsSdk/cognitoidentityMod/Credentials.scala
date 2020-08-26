@@ -26,18 +26,38 @@ trait Credentials extends js.Object {
 
 object Credentials {
   @scala.inline
-  def apply(
-    AccessKeyId: AccessKeyString = null,
-    Expiration: DateType = null,
-    SecretKey: SecretKeyString = null,
-    SessionToken: SessionTokenString = null
-  ): Credentials = {
+  def apply(): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (AccessKeyId != null) __obj.updateDynamic("AccessKeyId")(AccessKeyId.asInstanceOf[js.Any])
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
-    if (SecretKey != null) __obj.updateDynamic("SecretKey")(SecretKey.asInstanceOf[js.Any])
-    if (SessionToken != null) __obj.updateDynamic("SessionToken")(SessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
+  @scala.inline
+  implicit class CredentialsOps[Self <: Credentials] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKeyId(value: AccessKeyString): Self = this.set("AccessKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKeyId: Self = this.set("AccessKeyId", js.undefined)
+    @scala.inline
+    def setExpiration(value: DateType): Self = this.set("Expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("Expiration", js.undefined)
+    @scala.inline
+    def setSecretKey(value: SecretKeyString): Self = this.set("SecretKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretKey: Self = this.set("SecretKey", js.undefined)
+    @scala.inline
+    def setSessionToken(value: SessionTokenString): Self = this.set("SessionToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionToken: Self = this.set("SessionToken", js.undefined)
+  }
+  
 }
 

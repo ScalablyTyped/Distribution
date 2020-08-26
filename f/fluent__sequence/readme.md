@@ -12,7 +12,7 @@ Manage ordered sequences of FluentBundles
 | Keywords           | fluent, ftl |
 | # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 4487 |
+| # downloads        | 6118 |
 | # stars            | 0 |
 
 ## Links

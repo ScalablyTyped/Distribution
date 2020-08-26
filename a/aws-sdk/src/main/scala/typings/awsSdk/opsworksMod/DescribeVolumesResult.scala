@@ -14,10 +14,28 @@ trait DescribeVolumesResult extends js.Object {
 
 object DescribeVolumesResult {
   @scala.inline
-  def apply(Volumes: Volumes = null): DescribeVolumesResult = {
+  def apply(): DescribeVolumesResult = {
     val __obj = js.Dynamic.literal()
-    if (Volumes != null) __obj.updateDynamic("Volumes")(Volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVolumesResult]
   }
+  @scala.inline
+  implicit class DescribeVolumesResultOps[Self <: DescribeVolumesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVolumesVarargs(value: Volume*): Self = this.set("Volumes", js.Array(value :_*))
+    @scala.inline
+    def setVolumes(value: Volumes): Self = this.set("Volumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumes: Self = this.set("Volumes", js.undefined)
+  }
+  
 }
 

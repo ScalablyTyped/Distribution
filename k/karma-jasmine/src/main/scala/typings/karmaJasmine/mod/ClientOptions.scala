@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientOptions extends js.Object {
-  var jasmine: js.UndefOr[EnvConfigurationtimeoutIn] = js.undefined
+  var jasmine: js.UndefOr[EnvConfigurationtimeoutIn] = js.native
   /**
     * run a subset of the full set of specs.
     * Complete sharding support needs to be done in the process that calls karma,
@@ -14,28 +15,46 @@ trait ClientOptions extends js.Object {
     * See {@link https://github.com/karma-runner/karma-jasmine#sharding}
     *
     */
-  var shardIndex: js.UndefOr[Double] = js.undefined
+  var shardIndex: js.UndefOr[Double] = js.native
   /**
     * run a subset of the full set of specs.
     * Complete sharding support needs to be done in the process that calls karma,
     * and would need to support test result integration across shards.
     * See {@link https://github.com/karma-runner/karma-jasmine#sharding}
     */
-  var totalShards: js.UndefOr[Double] = js.undefined
+  var totalShards: js.UndefOr[Double] = js.native
 }
 
 object ClientOptions {
   @scala.inline
-  def apply(
-    jasmine: EnvConfigurationtimeoutIn = null,
-    shardIndex: js.UndefOr[Double] = js.undefined,
-    totalShards: js.UndefOr[Double] = js.undefined
-  ): ClientOptions = {
+  def apply(): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (jasmine != null) __obj.updateDynamic("jasmine")(jasmine.asInstanceOf[js.Any])
-    if (!js.isUndefined(shardIndex)) __obj.updateDynamic("shardIndex")(shardIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalShards)) __obj.updateDynamic("totalShards")(totalShards.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
+  @scala.inline
+  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJasmine(value: EnvConfigurationtimeoutIn): Self = this.set("jasmine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJasmine: Self = this.set("jasmine", js.undefined)
+    @scala.inline
+    def setShardIndex(value: Double): Self = this.set("shardIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShardIndex: Self = this.set("shardIndex", js.undefined)
+    @scala.inline
+    def setTotalShards(value: Double): Self = this.set("totalShards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalShards: Self = this.set("totalShards", js.undefined)
+  }
+  
 }
 

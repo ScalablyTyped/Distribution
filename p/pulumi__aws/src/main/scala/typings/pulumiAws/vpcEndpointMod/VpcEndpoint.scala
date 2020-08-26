@@ -24,6 +24,10 @@ class VpcEndpoint protected () extends CustomResource {
   def this(name: String, args: VpcEndpointArgs) = this()
   def this(name: String, args: VpcEndpointArgs, opts: CustomResourceOptions) = this()
   /**
+    * The Amazon Resource Name (ARN) of the VPC endpoint.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).
     */
   val autoAccept: Output_[js.UndefOr[Boolean]] = js.native
@@ -81,9 +85,9 @@ class VpcEndpoint protected () extends CustomResource {
     */
   val subnetIds: Output_[js.Array[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The VPC endpoint type, `Gateway` or `Interface`. Defaults to `Gateway`.
     */
@@ -105,8 +109,10 @@ object VpcEndpoint extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VpcEndpoint = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcEndpoint = js.native
   def get(name: String, id: Input[ID], state: VpcEndpointState): VpcEndpoint = js.native
   def get(name: String, id: Input[ID], state: VpcEndpointState, opts: CustomResourceOptions): VpcEndpoint = js.native
   /**

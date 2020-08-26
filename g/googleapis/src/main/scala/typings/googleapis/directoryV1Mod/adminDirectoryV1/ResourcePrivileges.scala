@@ -27,6 +27,7 @@ class ResourcePrivileges protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPrivileges] = js.native
   def list(callback: BodyResponseCallback[SchemaPrivileges]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPrivileges] = js.native
   def list(params: ParamsResourcePrivilegesList): GaxiosPromise[SchemaPrivileges] = js.native
   def list(params: ParamsResourcePrivilegesList, callback: BodyResponseCallback[SchemaPrivileges]): Unit = js.native
   def list(

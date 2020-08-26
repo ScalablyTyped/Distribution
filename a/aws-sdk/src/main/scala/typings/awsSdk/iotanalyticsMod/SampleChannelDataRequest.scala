@@ -26,17 +26,36 @@ trait SampleChannelDataRequest extends js.Object {
 
 object SampleChannelDataRequest {
   @scala.inline
-  def apply(
-    channelName: ChannelName,
-    endTime: EndTime = null,
-    maxMessages: js.UndefOr[MaxMessages] = js.undefined,
-    startTime: StartTime = null
-  ): SampleChannelDataRequest = {
+  def apply(channelName: ChannelName): SampleChannelDataRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages.get.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SampleChannelDataRequest]
   }
+  @scala.inline
+  implicit class SampleChannelDataRequestOps[Self <: SampleChannelDataRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelName(value: ChannelName): Self = this.set("channelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: EndTime): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setMaxMessages(value: MaxMessages): Self = this.set("maxMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxMessages: Self = this.set("maxMessages", js.undefined)
+    @scala.inline
+    def setStartTime(value: StartTime): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

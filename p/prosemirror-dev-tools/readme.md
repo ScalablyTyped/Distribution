@@ -12,7 +12,7 @@ Dev Tools for ProseMirror
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 232511 |
+| # downloads        | 236704 |
 | # stars            | 0 |
 
 ## Links

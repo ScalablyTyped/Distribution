@@ -28,11 +28,30 @@ trait SchemaHttpFaultInjection extends js.Object {
 
 object SchemaHttpFaultInjection {
   @scala.inline
-  def apply(abort: SchemaHttpFaultAbort = null, delay: SchemaHttpFaultDelay = null): SchemaHttpFaultInjection = {
+  def apply(): SchemaHttpFaultInjection = {
     val __obj = js.Dynamic.literal()
-    if (abort != null) __obj.updateDynamic("abort")(abort.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpFaultInjection]
   }
+  @scala.inline
+  implicit class SchemaHttpFaultInjectionOps[Self <: SchemaHttpFaultInjection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbort(value: SchemaHttpFaultAbort): Self = this.set("abort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbort: Self = this.set("abort", js.undefined)
+    @scala.inline
+    def setDelay(value: SchemaHttpFaultDelay): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+  }
+  
 }
 

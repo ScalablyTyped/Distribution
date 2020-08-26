@@ -26,11 +26,9 @@ class EntityTypeCodeActionParameterValue protected () extends ExpressionBasedCod
   ) = this()
   @JSName("model")
   var model_FEntityTypeCodeActionParameterValue: IModel = js.native
-  def entity(): js.Any = js.native
-  def entity(newValue: IEntity): js.Any = js.native
+  def entity: IEntity | Null = js.native
   def entityQualifiedName: String | Null = js.native
-  @JSName("entity")
-  def entity_Union: IEntity | Null = js.native
+  def entity_=(newValue: IEntity | Null): Unit = js.native
 }
 
 /* static members */

@@ -16,11 +16,11 @@ package object mod {
     * Map module request to a script handle.
     */
   type RequestToHandle = js.Function1[/* request */ java.lang.String, java.lang.String | scala.Unit]
-  type WebpackCompiler = typings.webpack.mod.Compiler_
+  type WebpackCompiler = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
   type WebpackExternalsFunction = js.Function3[
     /* context */ js.Any, 
     /* request */ js.Any, 
-    /* callback */ typings.webpack.mod.ExternalsFunctionCallback, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.ExternalsFunctionCallback */ /* callback */ js.Any, 
     js.Any
   ]
 }

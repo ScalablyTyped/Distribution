@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createModelViewDialog extends js.Object {
   def apply(title: String): Dialog = js.native
+  def apply(title: String, dialogName: js.UndefOr[scala.Nothing], isWide: Boolean): Dialog = js.native
   def apply(title: String, dialogName: String): Dialog = js.native
   def apply(title: String, dialogName: String, isWide: Boolean): Dialog = js.native
 }

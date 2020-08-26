@@ -4,35 +4,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IInitialProperties extends js.Object {
    // IListObjectDef;
-  var fixed: js.UndefOr[Boolean] = js.undefined
-  var percent: js.UndefOr[Boolean] = js.undefined
-  var qHyperCubeDef: js.UndefOr[js.Any] = js.undefined
+  var fixed: js.UndefOr[Boolean] = js.native
+  var percent: js.UndefOr[Boolean] = js.native
+  var qHyperCubeDef: js.UndefOr[js.Any] = js.native
    // IHyperCubeDef;
-  var qListObjectDef: js.UndefOr[js.Any] = js.undefined
-  var selectionMode: js.UndefOr[SelectionModeType] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var qListObjectDef: js.UndefOr[js.Any] = js.native
+  var selectionMode: js.UndefOr[SelectionModeType] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object IInitialProperties {
   @scala.inline
-  def apply(
-    fixed: js.UndefOr[Boolean] = js.undefined,
-    percent: js.UndefOr[Boolean] = js.undefined,
-    qHyperCubeDef: js.Any = null,
-    qListObjectDef: js.Any = null,
-    selectionMode: SelectionModeType = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): IInitialProperties = {
+  def apply(): IInitialProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
-    if (qHyperCubeDef != null) __obj.updateDynamic("qHyperCubeDef")(qHyperCubeDef.asInstanceOf[js.Any])
-    if (qListObjectDef != null) __obj.updateDynamic("qListObjectDef")(qListObjectDef.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInitialProperties]
   }
+  @scala.inline
+  implicit class IInitialPropertiesOps[Self <: IInitialProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFixed(value: Boolean): Self = this.set("fixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixed: Self = this.set("fixed", js.undefined)
+    @scala.inline
+    def setPercent(value: Boolean): Self = this.set("percent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercent: Self = this.set("percent", js.undefined)
+    @scala.inline
+    def setQHyperCubeDef(value: js.Any): Self = this.set("qHyperCubeDef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQHyperCubeDef: Self = this.set("qHyperCubeDef", js.undefined)
+    @scala.inline
+    def setQListObjectDef(value: js.Any): Self = this.set("qListObjectDef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQListObjectDef: Self = this.set("qListObjectDef", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: SelectionModeType): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

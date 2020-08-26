@@ -54,30 +54,62 @@ trait CreateStageRequest extends js.Object {
 
 object CreateStageRequest {
   @scala.inline
-  def apply(
-    ApiId: string,
-    StageName: StringWithLengthBetween1And128,
-    AccessLogSettings: AccessLogSettings = null,
-    AutoDeploy: js.UndefOr[boolean] = js.undefined,
-    ClientCertificateId: Id = null,
-    DefaultRouteSettings: RouteSettings = null,
-    DeploymentId: Id = null,
-    Description: StringWithLengthBetween0And1024 = null,
-    RouteSettings: RouteSettingsMap = null,
-    StageVariables: StageVariablesMap = null,
-    Tags: Tags = null
-  ): CreateStageRequest = {
+  def apply(ApiId: string, StageName: StringWithLengthBetween1And128): CreateStageRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], StageName = StageName.asInstanceOf[js.Any])
-    if (AccessLogSettings != null) __obj.updateDynamic("AccessLogSettings")(AccessLogSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoDeploy)) __obj.updateDynamic("AutoDeploy")(AutoDeploy.get.asInstanceOf[js.Any])
-    if (ClientCertificateId != null) __obj.updateDynamic("ClientCertificateId")(ClientCertificateId.asInstanceOf[js.Any])
-    if (DefaultRouteSettings != null) __obj.updateDynamic("DefaultRouteSettings")(DefaultRouteSettings.asInstanceOf[js.Any])
-    if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (RouteSettings != null) __obj.updateDynamic("RouteSettings")(RouteSettings.asInstanceOf[js.Any])
-    if (StageVariables != null) __obj.updateDynamic("StageVariables")(StageVariables.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStageRequest]
   }
+  @scala.inline
+  implicit class CreateStageRequestOps[Self <: CreateStageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiId(value: string): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStageName(value: StringWithLengthBetween1And128): Self = this.set("StageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessLogSettings(value: AccessLogSettings): Self = this.set("AccessLogSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessLogSettings: Self = this.set("AccessLogSettings", js.undefined)
+    @scala.inline
+    def setAutoDeploy(value: boolean): Self = this.set("AutoDeploy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDeploy: Self = this.set("AutoDeploy", js.undefined)
+    @scala.inline
+    def setClientCertificateId(value: Id): Self = this.set("ClientCertificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCertificateId: Self = this.set("ClientCertificateId", js.undefined)
+    @scala.inline
+    def setDefaultRouteSettings(value: RouteSettings): Self = this.set("DefaultRouteSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRouteSettings: Self = this.set("DefaultRouteSettings", js.undefined)
+    @scala.inline
+    def setDeploymentId(value: Id): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    @scala.inline
+    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setRouteSettings(value: RouteSettingsMap): Self = this.set("RouteSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteSettings: Self = this.set("RouteSettings", js.undefined)
+    @scala.inline
+    def setStageVariables(value: StageVariablesMap): Self = this.set("StageVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageVariables: Self = this.set("StageVariables", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

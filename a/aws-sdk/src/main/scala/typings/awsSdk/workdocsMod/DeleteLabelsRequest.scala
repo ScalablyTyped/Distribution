@@ -26,17 +26,38 @@ trait DeleteLabelsRequest extends js.Object {
 
 object DeleteLabelsRequest {
   @scala.inline
-  def apply(
-    ResourceId: ResourceIdType,
-    AuthenticationToken: AuthenticationHeaderType = null,
-    DeleteAll: js.UndefOr[BooleanType] = js.undefined,
-    Labels: SharedLabels = null
-  ): DeleteLabelsRequest = {
+  def apply(ResourceId: ResourceIdType): DeleteLabelsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteAll)) __obj.updateDynamic("DeleteAll")(DeleteAll.get.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLabelsRequest]
   }
+  @scala.inline
+  implicit class DeleteLabelsRequestOps[Self <: DeleteLabelsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceId(value: ResourceIdType): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+    @scala.inline
+    def setDeleteAll(value: BooleanType): Self = this.set("DeleteAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteAll: Self = this.set("DeleteAll", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: SharedLabel*): Self = this.set("Labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: SharedLabels): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+  }
+  
 }
 

@@ -49,26 +49,58 @@ trait SchemaRoomCreateRequest extends js.Object {
 
 object SchemaRoomCreateRequest {
   @scala.inline
-  def apply(
-    autoMatchingCriteria: SchemaRoomAutoMatchingCriteria = null,
-    capabilities: js.Array[String] = null,
-    clientAddress: SchemaRoomClientAddress = null,
-    invitedPlayerIds: js.Array[String] = null,
-    kind: String = null,
-    networkDiagnostics: SchemaNetworkDiagnostics = null,
-    requestId: String = null,
-    variant: js.UndefOr[Double] = js.undefined
-  ): SchemaRoomCreateRequest = {
+  def apply(): SchemaRoomCreateRequest = {
     val __obj = js.Dynamic.literal()
-    if (autoMatchingCriteria != null) __obj.updateDynamic("autoMatchingCriteria")(autoMatchingCriteria.asInstanceOf[js.Any])
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress.asInstanceOf[js.Any])
-    if (invitedPlayerIds != null) __obj.updateDynamic("invitedPlayerIds")(invitedPlayerIds.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (networkDiagnostics != null) __obj.updateDynamic("networkDiagnostics")(networkDiagnostics.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(variant)) __obj.updateDynamic("variant")(variant.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRoomCreateRequest]
   }
+  @scala.inline
+  implicit class SchemaRoomCreateRequestOps[Self <: SchemaRoomCreateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoMatchingCriteria(value: SchemaRoomAutoMatchingCriteria): Self = this.set("autoMatchingCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMatchingCriteria: Self = this.set("autoMatchingCriteria", js.undefined)
+    @scala.inline
+    def setCapabilitiesVarargs(value: String*): Self = this.set("capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: js.Array[String]): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    @scala.inline
+    def setClientAddress(value: SchemaRoomClientAddress): Self = this.set("clientAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientAddress: Self = this.set("clientAddress", js.undefined)
+    @scala.inline
+    def setInvitedPlayerIdsVarargs(value: String*): Self = this.set("invitedPlayerIds", js.Array(value :_*))
+    @scala.inline
+    def setInvitedPlayerIds(value: js.Array[String]): Self = this.set("invitedPlayerIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitedPlayerIds: Self = this.set("invitedPlayerIds", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNetworkDiagnostics(value: SchemaNetworkDiagnostics): Self = this.set("networkDiagnostics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkDiagnostics: Self = this.set("networkDiagnostics", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    @scala.inline
+    def setVariant(value: Double): Self = this.set("variant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariant: Self = this.set("variant", js.undefined)
+  }
+  
 }
 

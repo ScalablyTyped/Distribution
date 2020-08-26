@@ -258,6 +258,11 @@ object GraphObject extends js.Object {
     * @return {*}
     */
   def takeBuilderArgument(args: js.Array[_]): js.Any = js.native
+  def takeBuilderArgument(
+    args: js.Array[_],
+    defval: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* arg */ js.Any, Boolean]
+  ): js.Any = js.native
   def takeBuilderArgument(args: js.Array[_], defval: js.Any): js.Any = js.native
   def takeBuilderArgument(args: js.Array[_], defval: js.Any, pred: js.Function1[/* arg */ js.Any, Boolean]): js.Any = js.native
 }

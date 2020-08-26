@@ -12,10 +12,10 @@ trait CassandraStore extends Store {
   var _client: Client = js.native
   var _clientOptions: ClientOptions = js.native
   def client: Client = js.native
-  def client(value: Client): js.Any = js.native
   def clientOptions: ClientOptions = js.native
-  def clientOptions(value: ClientOptions): js.Any = js.native
+  def clientOptions_=(value: ClientOptions): Unit = js.native
+  def client_=(value: Client): Unit = js.native
   def table: String = js.native
-  def table(value: String): js.Any = js.native
+  def table_=(value: String): Unit = js.native
 }
 

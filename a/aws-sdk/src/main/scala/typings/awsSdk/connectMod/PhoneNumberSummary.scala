@@ -30,20 +30,42 @@ trait PhoneNumberSummary extends js.Object {
 
 object PhoneNumberSummary {
   @scala.inline
-  def apply(
-    Arn: ARN = null,
-    Id: PhoneNumberId = null,
-    PhoneNumber: PhoneNumber = null,
-    PhoneNumberCountryCode: PhoneNumberCountryCode = null,
-    PhoneNumberType: PhoneNumberType = null
-  ): PhoneNumberSummary = {
+  def apply(): PhoneNumberSummary = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (PhoneNumber != null) __obj.updateDynamic("PhoneNumber")(PhoneNumber.asInstanceOf[js.Any])
-    if (PhoneNumberCountryCode != null) __obj.updateDynamic("PhoneNumberCountryCode")(PhoneNumberCountryCode.asInstanceOf[js.Any])
-    if (PhoneNumberType != null) __obj.updateDynamic("PhoneNumberType")(PhoneNumberType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneNumberSummary]
   }
+  @scala.inline
+  implicit class PhoneNumberSummaryOps[Self <: PhoneNumberSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: ARN): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setId(value: PhoneNumberId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: PhoneNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
+    @scala.inline
+    def setPhoneNumberCountryCode(value: PhoneNumberCountryCode): Self = this.set("PhoneNumberCountryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumberCountryCode: Self = this.set("PhoneNumberCountryCode", js.undefined)
+    @scala.inline
+    def setPhoneNumberType(value: PhoneNumberType): Self = this.set("PhoneNumberType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumberType: Self = this.set("PhoneNumberType", js.undefined)
+  }
+  
 }
 

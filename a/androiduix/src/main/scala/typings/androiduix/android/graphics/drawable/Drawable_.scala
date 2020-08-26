@@ -5,15 +5,14 @@ import typings.androiduix.android.graphics.Canvas
 import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.graphics.drawable.Drawable.Callback
 import typings.androiduix.android.graphics.drawable.Drawable.ConstantState
-import typings.androiduix.java.lang.ref.WeakReference
+import typings.androiduix.java_.lang.ref.WeakReference
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.drawable.Drawable")
 @js.native
-abstract class Drawable_ () extends js.Object {
+trait Drawable_ extends js.Object {
   var mBounds: Rect = js.native
   var mCallback: WeakReference[Callback] = js.native
   var mIgnoreNotifySizeChange: js.Any = js.native

@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
+@js.native
 trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
   /**
     * 按钮的背景颜色
@@ -28,14 +29,14 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var background: js.UndefOr[String] = js.undefined
+  var background: js.UndefOr[String] = js.native
   /**
     * 按钮上显示的角标文本
     * 最多显示3个字符，超过则显示为...。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var badgeText: js.UndefOr[String] = js.undefined
+  var badgeText: js.UndefOr[String] = js.native
   /**
     * 按钮上文字颜色
     * 可取值： "#RRGGBB"格式字符串，如"#FF0000"表示绘制红色返回键；
@@ -44,7 +45,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /**
     * 按下状态按钮文字颜色
     * 可取值： "#RRGGBB"格式字符串，如"#FF0000"表示绘制红色返回键；
@@ -53,7 +54,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var colorPressed: js.UndefOr[String] = js.undefined
+  var colorPressed: js.UndefOr[String] = js.native
   /**
     * 按钮在标题栏上的显示位置
     * 可取值：
@@ -69,7 +70,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var float: js.UndefOr[right | left] = js.undefined
+  var float: js.UndefOr[right | left] = js.native
   /**
     * 按钮上文字大小
     * 可取值：字体高度像素值，数字加"px"格式字符串，如"22px"。 
@@ -78,7 +79,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var fontSize: js.UndefOr[String] = js.undefined
+  var fontSize: js.UndefOr[String] = js.native
   /**
     * 按钮上文字使用的字体文件路径
     * 字体文件路径支持以下类型：
@@ -89,7 +90,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var fontSrc: js.UndefOr[String] = js.undefined
+  var fontSrc: js.UndefOr[String] = js.native
   /**
     * 按钮上文字的粗细
     * 可取值：
@@ -105,14 +106,14 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var fontWeight: js.UndefOr[normal | bold] = js.undefined
+  var fontWeight: js.UndefOr[normal | bold] = js.native
   /**
     * 按钮点击后触发的回调函数
     * 回调函数中将返回此JSON对象。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var onclick: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onclick: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
   /**
     * 按钮上是否显示红点
     * 设置为true则显示红点，false则不显示红点。默认值为false。
@@ -120,7 +121,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var redDot: js.UndefOr[Boolean] = js.undefined
+  var redDot: js.UndefOr[Boolean] = js.native
   /**
     * 是否显示选择指示图标
     * 设置为true则显示选择指示图标（向下箭头），颜色与文字颜色一致；
@@ -128,14 +129,14 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var select: js.UndefOr[Boolean] = js.undefined
+  var select: js.UndefOr[Boolean] = js.native
   /**
     * 按钮上显示的文字
     * 推荐使用一个字符，超过一个字符可能无法正常显示，使用字体图标时unicode字符表示必须'\\u'开头，如"\\ue123"（注意不能写成"\e123"）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /**
     * 按钮样式
     * 运行环境中内置按钮样式直接使用，内置样式忽略fontSrc和text属性。
@@ -159,7 +160,7 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `type`: js.UndefOr[forward | back | share | favorite | home | menu | close] = js.undefined
+  var `type`: js.UndefOr[forward | back | share | favorite | home | menu | close] = js.native
   /**
     * 按钮的宽度
     * 可取值：
@@ -169,43 +170,83 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var width: js.UndefOr[String] = js.undefined
+  var width: js.UndefOr[String] = js.native
 }
 
 object PlusWebviewWebviewTitleNViewButtonStyles {
   @scala.inline
-  def apply(
-    background: String = null,
-    badgeText: String = null,
-    color: String = null,
-    colorPressed: String = null,
-    float: right | left = null,
-    fontSize: String = null,
-    fontSrc: String = null,
-    fontWeight: normal | bold = null,
-    onclick: /* result */ js.Any => Unit = null,
-    redDot: js.UndefOr[Boolean] = js.undefined,
-    select: js.UndefOr[Boolean] = js.undefined,
-    text: String = null,
-    `type`: forward | back | share | favorite | home | menu | close = null,
-    width: String = null
-  ): PlusWebviewWebviewTitleNViewButtonStyles = {
+  def apply(): PlusWebviewWebviewTitleNViewButtonStyles = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (badgeText != null) __obj.updateDynamic("badgeText")(badgeText.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorPressed != null) __obj.updateDynamic("colorPressed")(colorPressed.asInstanceOf[js.Any])
-    if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontSrc != null) __obj.updateDynamic("fontSrc")(fontSrc.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
-    if (!js.isUndefined(redDot)) __obj.updateDynamic("redDot")(redDot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewTitleNViewButtonStyles]
   }
+  @scala.inline
+  implicit class PlusWebviewWebviewTitleNViewButtonStylesOps[Self <: PlusWebviewWebviewTitleNViewButtonStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBadgeText(value: String): Self = this.set("badgeText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeText: Self = this.set("badgeText", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorPressed(value: String): Self = this.set("colorPressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPressed: Self = this.set("colorPressed", js.undefined)
+    @scala.inline
+    def setFloat(value: right | left): Self = this.set("float", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloat: Self = this.set("float", js.undefined)
+    @scala.inline
+    def setFontSize(value: String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontSrc(value: String): Self = this.set("fontSrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSrc: Self = this.set("fontSrc", js.undefined)
+    @scala.inline
+    def setFontWeight(value: normal | bold): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setOnclick(value: /* result */ js.Any => Unit): Self = this.set("onclick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnclick: Self = this.set("onclick", js.undefined)
+    @scala.inline
+    def setRedDot(value: Boolean): Self = this.set("redDot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedDot: Self = this.set("redDot", js.undefined)
+    @scala.inline
+    def setSelect(value: Boolean): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setType(value: forward | back | share | favorite | home | menu | close): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

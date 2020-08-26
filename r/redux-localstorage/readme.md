@@ -12,7 +12,7 @@ Store enhancer that syncs (a subset of) your redux store state to localstorage.
 | Keywords           | Redux, localstorage |
 | # releases         | 1 |
 | # dependents       | 35 |
-| # downloads        | 1461700 |
+| # downloads        | 1484540 |
 | # stars            | 10 |
 
 ## Links

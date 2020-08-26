@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-menu/lib/MenuItem", "MenuItem")
+@JSImport("rc-menu/es/MenuItem", "MenuItem")
 @js.native
 class MenuItem ()
   extends Component[MenuItemProps, js.Object, js.Any] {
@@ -34,7 +34,7 @@ class MenuItem ()
 }
 
 /* static members */
-@JSImport("rc-menu/lib/MenuItem", "MenuItem")
+@JSImport("rc-menu/es/MenuItem", "MenuItem")
 @js.native
 object MenuItem extends js.Object {
   var defaultProps: ManualRef = js.native

@@ -1,36 +1,37 @@
 package typings.pulumiKubernetes.v2HelmMod
 
-import typings.pulumiPulumi.outputMod.Input
-import typings.pulumiPulumi.outputMod.Inputs
-import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LocalChartOpts extends BaseChartOpts {
   /**
     * The path to the chart directory which contains the `Chart.yaml` file.
     */
-  var path: String
+  var path: String = js.native
 }
 
 object LocalChartOpts {
   @scala.inline
-  def apply(
-    path: String,
-    apiVersions: Input[js.Array[Input[String]]] = null,
-    namespace: Input[String] = null,
-    resourcePrefix: String = null,
-    transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]] = null,
-    values: Inputs = null
-  ): LocalChartOpts = {
+  def apply(path: String): LocalChartOpts = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (apiVersions != null) __obj.updateDynamic("apiVersions")(apiVersions.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix.asInstanceOf[js.Any])
-    if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalChartOpts]
   }
+  @scala.inline
+  implicit class LocalChartOptsOps[Self <: LocalChartOpts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+  }
+  
 }
 

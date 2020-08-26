@@ -30,6 +30,7 @@ class ResourceVideos protected () extends js.Object {
     */
   def annotate(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def annotate(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def annotate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def annotate(params: ParamsResourceVideosAnnotate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def annotate(
     params: ParamsResourceVideosAnnotate,

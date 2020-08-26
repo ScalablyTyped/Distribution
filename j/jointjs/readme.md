@@ -1,7 +1,7 @@
 
 # Scala.js typings for jointjs
 
-Typings are for version 3.0.4
+Typings are for version 3.2.0
 
 ## Library description:
 JavaScript diagramming library
@@ -10,9 +10,9 @@ JavaScript diagramming library
 | ------------------ | :-------------: |
 | Full name          | jointjs |
 | Keywords           | diagram, flowchart, graph, visualization |
-| # releases         | 10 |
-| # dependents       | 19 |
-| # downloads        | 168568 |
+| # releases         | 15 |
+| # dependents       | 25 |
+| # downloads        | 291609 |
 | # stars            | 4 |
 
 ## Links

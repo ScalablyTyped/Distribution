@@ -10,6 +10,7 @@ class Channel protected () extends js.Object {
   def this(topic: String) = this()
   def this(topic: String, params: js.Function0[js.Object]) = this()
   def this(topic: String, params: js.Object) = this()
+  def this(topic: String, params: js.UndefOr[scala.Nothing], socket: Socket) = this()
   def this(topic: String, params: js.Function0[js.Object], socket: Socket) = this()
   def this(topic: String, params: js.Object, socket: Socket) = this()
   def join(): Push = js.native

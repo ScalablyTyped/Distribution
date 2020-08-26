@@ -32,6 +32,7 @@ class ResourceThumbnails protected () extends js.Object {
     */
   def set(): GaxiosPromise[SchemaThumbnailSetResponse] = js.native
   def set(callback: BodyResponseCallback[SchemaThumbnailSetResponse]): Unit = js.native
+  def set(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaThumbnailSetResponse] = js.native
   def set(params: ParamsResourceThumbnailsSet): GaxiosPromise[SchemaThumbnailSetResponse] = js.native
   def set(params: ParamsResourceThumbnailsSet, callback: BodyResponseCallback[SchemaThumbnailSetResponse]): Unit = js.native
   def set(

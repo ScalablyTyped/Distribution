@@ -43,7 +43,7 @@ object runtimeconfigMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Runtimeconfig
               ]
             ]
@@ -53,7 +53,7 @@ object runtimeconfigMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig
               ]
             ]

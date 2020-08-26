@@ -11,10 +11,26 @@ trait SchemaSecurityPolicyReference extends js.Object {
 
 object SchemaSecurityPolicyReference {
   @scala.inline
-  def apply(securityPolicy: String = null): SchemaSecurityPolicyReference = {
+  def apply(): SchemaSecurityPolicyReference = {
     val __obj = js.Dynamic.literal()
-    if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityPolicyReference]
   }
+  @scala.inline
+  implicit class SchemaSecurityPolicyReferenceOps[Self <: SchemaSecurityPolicyReference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecurityPolicy(value: String): Self = this.set("securityPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityPolicy: Self = this.set("securityPolicy", js.undefined)
+  }
+  
 }
 

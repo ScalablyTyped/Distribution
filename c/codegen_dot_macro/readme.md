@@ -12,7 +12,7 @@ Generate code at build-time with babel-macros
 | Keywords           | babel-plugin-macros, babel-macros |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 48668 |
+| # downloads        | 51053 |
 | # stars            | 0 |
 
 ## Links

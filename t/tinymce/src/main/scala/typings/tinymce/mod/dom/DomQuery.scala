@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DomQuery () extends js.Object {
   def this(selector: String) = this()
+  def this(selector: js.UndefOr[scala.Nothing], context: Document) = this()
   def this(selector: String, context: Document) = this()
   def add[T](items: js.Array[T]): DomQuery = js.native
   def add[T](items: js.Array[T], sort: Boolean): DomQuery = js.native
@@ -50,6 +51,7 @@ class DomQuery () extends js.Object {
   def nextUntil(node: String, until: String): DomQuery = js.native
   def nextUntil(node: Element, until: String): DomQuery = js.native
   def off(): DomQuery = js.native
+  def off(name: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): DomQuery = js.native
   def off(name: String): DomQuery = js.native
   def off(name: String, callback: js.Function0[Unit]): DomQuery = js.native
   def offset(): js.Object | DomQuery = js.native

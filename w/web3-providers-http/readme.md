@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-providers-http
 
-Typings are for version 1.2.9
+Typings are for version 1.2.11
 
 ## Library description:
 Module to handle web3 RPC connections over HTTP.
@@ -10,9 +10,9 @@ Module to handle web3 RPC connections over HTTP.
 | ------------------ | :-------------: |
 | Full name          | web3-providers-http |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 16 |
-| # downloads        | 3505860 |
+| # releases         | 16 |
+| # dependents       | 17 |
+| # downloads        | 3563491 |
 | # stars            | 0 |
 
 ## Links

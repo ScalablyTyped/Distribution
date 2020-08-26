@@ -62,33 +62,72 @@ trait CreateInfrastructureConfigurationRequest extends js.Object {
 
 object CreateInfrastructureConfigurationRequest {
   @scala.inline
-  def apply(
-    clientToken: ClientToken,
-    instanceProfileName: NonEmptyString,
-    name: ResourceName,
-    description: NonEmptyString = null,
-    instanceTypes: InstanceTypeList = null,
-    keyPair: NonEmptyString = null,
-    logging: Logging = null,
-    resourceTags: ResourceTagMap = null,
-    securityGroupIds: SecurityGroupIds = null,
-    snsTopicArn: SnsTopicArn = null,
-    subnetId: NonEmptyString = null,
-    tags: TagMap = null,
-    terminateInstanceOnFailure: js.UndefOr[NullableBoolean] = js.undefined
-  ): CreateInfrastructureConfigurationRequest = {
+  def apply(clientToken: ClientToken, instanceProfileName: NonEmptyString, name: ResourceName): CreateInfrastructureConfigurationRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], instanceProfileName = instanceProfileName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (instanceTypes != null) __obj.updateDynamic("instanceTypes")(instanceTypes.asInstanceOf[js.Any])
-    if (keyPair != null) __obj.updateDynamic("keyPair")(keyPair.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (resourceTags != null) __obj.updateDynamic("resourceTags")(resourceTags.asInstanceOf[js.Any])
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (snsTopicArn != null) __obj.updateDynamic("snsTopicArn")(snsTopicArn.asInstanceOf[js.Any])
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminateInstanceOnFailure)) __obj.updateDynamic("terminateInstanceOnFailure")(terminateInstanceOnFailure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInfrastructureConfigurationRequest]
   }
+  @scala.inline
+  implicit class CreateInfrastructureConfigurationRequestOps[Self <: CreateInfrastructureConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceProfileName(value: NonEmptyString): Self = this.set("instanceProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: NonEmptyString): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setInstanceTypesVarargs(value: InstanceType*): Self = this.set("instanceTypes", js.Array(value :_*))
+    @scala.inline
+    def setInstanceTypes(value: InstanceTypeList): Self = this.set("instanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTypes: Self = this.set("instanceTypes", js.undefined)
+    @scala.inline
+    def setKeyPair(value: NonEmptyString): Self = this.set("keyPair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPair: Self = this.set("keyPair", js.undefined)
+    @scala.inline
+    def setLogging(value: Logging): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setResourceTags(value: ResourceTagMap): Self = this.set("resourceTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTags: Self = this.set("resourceTags", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: NonEmptyString*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: SecurityGroupIds): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setSnsTopicArn(value: SnsTopicArn): Self = this.set("snsTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnsTopicArn: Self = this.set("snsTopicArn", js.undefined)
+    @scala.inline
+    def setSubnetId(value: NonEmptyString): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTerminateInstanceOnFailure(value: NullableBoolean): Self = this.set("terminateInstanceOnFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminateInstanceOnFailure: Self = this.set("terminateInstanceOnFailure", js.undefined)
+  }
+  
 }
 

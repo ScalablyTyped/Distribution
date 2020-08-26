@@ -4,27 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IExecuteRequest extends IExecuteOptions {
-  var code: String | js.Array[String]
+  var code: String | js.Array[String] = js.native
 }
 
 object IExecuteRequest {
   @scala.inline
-  def apply(
-    code: String | js.Array[String],
-    allow_stdin: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    stop_on_error: js.UndefOr[Boolean] = js.undefined,
-    store_history: js.UndefOr[Boolean] = js.undefined,
-    user_expressions: js.Object = null
-  ): IExecuteRequest = {
+  def apply(code: String | js.Array[String]): IExecuteRequest = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_stdin)) __obj.updateDynamic("allow_stdin")(allow_stdin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stop_on_error)) __obj.updateDynamic("stop_on_error")(stop_on_error.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(store_history)) __obj.updateDynamic("store_history")(store_history.get.asInstanceOf[js.Any])
-    if (user_expressions != null) __obj.updateDynamic("user_expressions")(user_expressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteRequest]
   }
+  @scala.inline
+  implicit class IExecuteRequestOps[Self <: IExecuteRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodeVarargs(value: String*): Self = this.set("code", js.Array(value :_*))
+    @scala.inline
+    def setCode(value: String | js.Array[String]): Self = this.set("code", value.asInstanceOf[js.Any])
+  }
+  
 }
 

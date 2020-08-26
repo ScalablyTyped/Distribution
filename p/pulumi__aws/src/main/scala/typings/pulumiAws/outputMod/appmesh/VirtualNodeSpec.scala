@@ -26,18 +26,40 @@ trait VirtualNodeSpec extends js.Object {
 
 object VirtualNodeSpec {
   @scala.inline
-  def apply(
-    backends: js.Array[VirtualNodeSpecBackend] = null,
-    listener: VirtualNodeSpecListener = null,
-    logging: VirtualNodeSpecLogging = null,
-    serviceDiscovery: VirtualNodeSpecServiceDiscovery = null
-  ): VirtualNodeSpec = {
+  def apply(): VirtualNodeSpec = {
     val __obj = js.Dynamic.literal()
-    if (backends != null) __obj.updateDynamic("backends")(backends.asInstanceOf[js.Any])
-    if (listener != null) __obj.updateDynamic("listener")(listener.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (serviceDiscovery != null) __obj.updateDynamic("serviceDiscovery")(serviceDiscovery.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpec]
   }
+  @scala.inline
+  implicit class VirtualNodeSpecOps[Self <: VirtualNodeSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackendsVarargs(value: VirtualNodeSpecBackend*): Self = this.set("backends", js.Array(value :_*))
+    @scala.inline
+    def setBackends(value: js.Array[VirtualNodeSpecBackend]): Self = this.set("backends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackends: Self = this.set("backends", js.undefined)
+    @scala.inline
+    def setListener(value: VirtualNodeSpecListener): Self = this.set("listener", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListener: Self = this.set("listener", js.undefined)
+    @scala.inline
+    def setLogging(value: VirtualNodeSpecLogging): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setServiceDiscovery(value: VirtualNodeSpecServiceDiscovery): Self = this.set("serviceDiscovery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceDiscovery: Self = this.set("serviceDiscovery", js.undefined)
+  }
+  
 }
 

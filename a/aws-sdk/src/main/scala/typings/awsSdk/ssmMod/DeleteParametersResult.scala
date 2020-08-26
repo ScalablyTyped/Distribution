@@ -18,11 +18,34 @@ trait DeleteParametersResult extends js.Object {
 
 object DeleteParametersResult {
   @scala.inline
-  def apply(DeletedParameters: ParameterNameList = null, InvalidParameters: ParameterNameList = null): DeleteParametersResult = {
+  def apply(): DeleteParametersResult = {
     val __obj = js.Dynamic.literal()
-    if (DeletedParameters != null) __obj.updateDynamic("DeletedParameters")(DeletedParameters.asInstanceOf[js.Any])
-    if (InvalidParameters != null) __obj.updateDynamic("InvalidParameters")(InvalidParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersResult]
   }
+  @scala.inline
+  implicit class DeleteParametersResultOps[Self <: DeleteParametersResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeletedParametersVarargs(value: PSParameterName*): Self = this.set("DeletedParameters", js.Array(value :_*))
+    @scala.inline
+    def setDeletedParameters(value: ParameterNameList): Self = this.set("DeletedParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletedParameters: Self = this.set("DeletedParameters", js.undefined)
+    @scala.inline
+    def setInvalidParametersVarargs(value: PSParameterName*): Self = this.set("InvalidParameters", js.Array(value :_*))
+    @scala.inline
+    def setInvalidParameters(value: ParameterNameList): Self = this.set("InvalidParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidParameters: Self = this.set("InvalidParameters", js.undefined)
+  }
+  
 }
 

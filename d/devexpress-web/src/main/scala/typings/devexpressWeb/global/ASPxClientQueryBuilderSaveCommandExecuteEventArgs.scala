@@ -13,11 +13,5 @@ import scala.scalajs.js.annotation._
   * Initializes a new instance of the ASPxClientQueryBuilderSaveCommandExecuteEventArgs class with the default settings.
   */
 class ASPxClientQueryBuilderSaveCommandExecuteEventArgs ()
-  extends typings.devexpressWeb.ASPxClientQueryBuilderSaveCommandExecuteEventArgs {
-  /**
-    * Specifies whether or not the event was handled.
-    */
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-}
+  extends typings.devexpressWeb.ASPxClientQueryBuilderSaveCommandExecuteEventArgs
 

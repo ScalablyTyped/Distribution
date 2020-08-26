@@ -23,6 +23,7 @@ class Secret protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: SecretArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: SecretArgs, opts: CustomResourceOptions) = this()
   /**
     * Amazon Resource Name (ARN) of the secret.
@@ -54,20 +55,26 @@ class Secret protected () extends CustomResource {
   val recoveryWindowInDays: Output_[js.UndefOr[Double]] = js.native
   /**
     * Specifies whether automatic rotation is enabled for this secret.
+    *
+    * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
     */
   val rotationEnabled: Output_[Boolean] = js.native
   /**
-    * Specifies the ARN of the Lambda function that can rotate the secret.
+    * Specifies the ARN of the Lambda function that can rotate the secret. Use the `aws.secretsmanager.SecretRotation` resource to manage this configuration instead. As of version 2.67.0, removal of this configuration will no longer remove rotation due to supporting the new resource. Either import the new resource and remove the configuration or manually remove rotation.
+    *
+    * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
     */
-  val rotationLambdaArn: Output_[js.UndefOr[String]] = js.native
+  val rotationLambdaArn: Output_[String] = js.native
   /**
-    * A structure that defines the rotation configuration for this secret. Defined below.
+    * A structure that defines the rotation configuration for this secret. Defined below. Use the `aws.secretsmanager.SecretRotation` resource to manage this configuration instead. As of version 2.67.0, removal of this configuration will no longer remove rotation due to supporting the new resource. Either import the new resource and remove the configuration or manually remove rotation.
+    *
+    * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
     */
-  val rotationRules: Output_[js.UndefOr[SecretRotationRules]] = js.native
+  val rotationRules: Output_[SecretRotationRules] = js.native
   /**
     * Specifies a key-value map of user-defined tags that are attached to the secret.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -81,8 +88,10 @@ object Secret extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Secret = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Secret = js.native
   def get(name: String, id: Input[ID], state: SecretState): Secret = js.native
   def get(name: String, id: Input[ID], state: SecretState, opts: CustomResourceOptions): Secret = js.native
   /**

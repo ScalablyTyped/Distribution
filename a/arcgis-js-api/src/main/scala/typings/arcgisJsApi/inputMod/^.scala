@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/views/input/Input", JSImport.Namespace)
+@JSImport("esri/form/elements/inputs/Input", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[InputConstructor]
 

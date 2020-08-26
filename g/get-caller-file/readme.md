@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-caller-file
 
-Typings are for version 1.0
+Typings are for version 2.0.5
 
 ## Library description:
 [![Build Status](https://travis-ci.org/stefanpenner/get-caller-file.svg?branch=master)](https://travis-ci.org/stefanpenner/get-caller-file) [![Build status](https://ci.appveyor.com/api/projects/status/ol2q94g1932cy14a/branch/master?svg=true)](https://ci.a
@@ -11,8 +11,8 @@ Typings are for version 1.0
 | Full name          | get-caller-file |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 87 |
-| # downloads        | 515274683 |
+| # dependents       | 88 |
+| # downloads        | 543056825 |
 | # stars            | 1 |
 
 ## Links
@@ -24,7 +24,7 @@ Typings are for version 1.0
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

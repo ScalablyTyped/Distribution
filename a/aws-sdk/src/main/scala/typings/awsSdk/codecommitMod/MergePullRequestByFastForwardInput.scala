@@ -22,10 +22,30 @@ trait MergePullRequestByFastForwardInput extends js.Object {
 
 object MergePullRequestByFastForwardInput {
   @scala.inline
-  def apply(pullRequestId: PullRequestId, repositoryName: RepositoryName, sourceCommitId: ObjectId = null): MergePullRequestByFastForwardInput = {
+  def apply(pullRequestId: PullRequestId, repositoryName: RepositoryName): MergePullRequestByFastForwardInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (sourceCommitId != null) __obj.updateDynamic("sourceCommitId")(sourceCommitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergePullRequestByFastForwardInput]
   }
+  @scala.inline
+  implicit class MergePullRequestByFastForwardInputOps[Self <: MergePullRequestByFastForwardInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPullRequestId(value: PullRequestId): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceCommitId(value: ObjectId): Self = this.set("sourceCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCommitId: Self = this.set("sourceCommitId", js.undefined)
+  }
+  
 }
 

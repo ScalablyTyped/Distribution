@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Delete extends js.Object {
   /** Required. The primary keys of the rows within table to delete. */
-  var keySet: js.UndefOr[KeySet] = js.undefined
+  var keySet: js.UndefOr[KeySet] = js.native
   /** Required. The table whose rows will be deleted. */
-  var table: js.UndefOr[String] = js.undefined
+  var table: js.UndefOr[String] = js.native
 }
 
 object Delete {
   @scala.inline
-  def apply(keySet: KeySet = null, table: String = null): Delete = {
+  def apply(): Delete = {
     val __obj = js.Dynamic.literal()
-    if (keySet != null) __obj.updateDynamic("keySet")(keySet.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delete]
   }
+  @scala.inline
+  implicit class DeleteOps[Self <: Delete] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeySet(value: KeySet): Self = this.set("keySet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeySet: Self = this.set("keySet", js.undefined)
+    @scala.inline
+    def setTable(value: String): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+  }
+  
 }
 

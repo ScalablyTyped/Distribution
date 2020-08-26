@@ -12,7 +12,7 @@ $(document).ready() for the 21st century
 | Keywords           | check, dom, loaded, ready, promise, async, asynchronous, pure |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 74531 |
+| # downloads        | 86689 |
 | # stars            | 0 |
 
 ## Links

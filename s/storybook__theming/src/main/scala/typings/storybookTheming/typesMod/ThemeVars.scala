@@ -6,80 +6,136 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThemeVars extends js.Object {
-  var appBg: js.UndefOr[String] = js.undefined
-  var appBorderColor: js.UndefOr[String] = js.undefined
-  var appBorderRadius: js.UndefOr[Double] = js.undefined
-  var appContentBg: js.UndefOr[String] = js.undefined
-  var barBg: js.UndefOr[String] = js.undefined
-  var barSelectedColor: js.UndefOr[String] = js.undefined
-  var barTextColor: js.UndefOr[String] = js.undefined
-  var base: light | dark
-  var brandImage: js.UndefOr[String] = js.undefined
-  var brandTitle: js.UndefOr[String] = js.undefined
-  var brandUrl: js.UndefOr[String] = js.undefined
-  var colorPrimary: js.UndefOr[String] = js.undefined
-  var colorSecondary: js.UndefOr[String] = js.undefined
-  var fontBase: js.UndefOr[String] = js.undefined
-  var fontCode: js.UndefOr[String] = js.undefined
-  var gridCellSize: js.UndefOr[Double] = js.undefined
-  var inputBg: js.UndefOr[String] = js.undefined
-  var inputBorder: js.UndefOr[String] = js.undefined
-  var inputBorderRadius: js.UndefOr[Double] = js.undefined
-  var inputTextColor: js.UndefOr[String] = js.undefined
-  var textColor: js.UndefOr[String] = js.undefined
-  var textInverseColor: js.UndefOr[String] = js.undefined
+  var appBg: js.UndefOr[String] = js.native
+  var appBorderColor: js.UndefOr[String] = js.native
+  var appBorderRadius: js.UndefOr[Double] = js.native
+  var appContentBg: js.UndefOr[String] = js.native
+  var barBg: js.UndefOr[String] = js.native
+  var barSelectedColor: js.UndefOr[String] = js.native
+  var barTextColor: js.UndefOr[String] = js.native
+  var base: light | dark = js.native
+  var brandImage: js.UndefOr[String] = js.native
+  var brandTitle: js.UndefOr[String] = js.native
+  var brandUrl: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.native
+  var fontBase: js.UndefOr[String] = js.native
+  var fontCode: js.UndefOr[String] = js.native
+  var gridCellSize: js.UndefOr[Double] = js.native
+  var inputBg: js.UndefOr[String] = js.native
+  var inputBorder: js.UndefOr[String] = js.native
+  var inputBorderRadius: js.UndefOr[Double] = js.native
+  var inputTextColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.native
+  var textInverseColor: js.UndefOr[String] = js.native
 }
 
 object ThemeVars {
   @scala.inline
-  def apply(
-    base: light | dark,
-    appBg: String = null,
-    appBorderColor: String = null,
-    appBorderRadius: js.UndefOr[Double] = js.undefined,
-    appContentBg: String = null,
-    barBg: String = null,
-    barSelectedColor: String = null,
-    barTextColor: String = null,
-    brandImage: String = null,
-    brandTitle: String = null,
-    brandUrl: String = null,
-    colorPrimary: String = null,
-    colorSecondary: String = null,
-    fontBase: String = null,
-    fontCode: String = null,
-    gridCellSize: js.UndefOr[Double] = js.undefined,
-    inputBg: String = null,
-    inputBorder: String = null,
-    inputBorderRadius: js.UndefOr[Double] = js.undefined,
-    inputTextColor: String = null,
-    textColor: String = null,
-    textInverseColor: String = null
-  ): ThemeVars = {
+  def apply(base: light | dark): ThemeVars = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any])
-    if (appBg != null) __obj.updateDynamic("appBg")(appBg.asInstanceOf[js.Any])
-    if (appBorderColor != null) __obj.updateDynamic("appBorderColor")(appBorderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(appBorderRadius)) __obj.updateDynamic("appBorderRadius")(appBorderRadius.get.asInstanceOf[js.Any])
-    if (appContentBg != null) __obj.updateDynamic("appContentBg")(appContentBg.asInstanceOf[js.Any])
-    if (barBg != null) __obj.updateDynamic("barBg")(barBg.asInstanceOf[js.Any])
-    if (barSelectedColor != null) __obj.updateDynamic("barSelectedColor")(barSelectedColor.asInstanceOf[js.Any])
-    if (barTextColor != null) __obj.updateDynamic("barTextColor")(barTextColor.asInstanceOf[js.Any])
-    if (brandImage != null) __obj.updateDynamic("brandImage")(brandImage.asInstanceOf[js.Any])
-    if (brandTitle != null) __obj.updateDynamic("brandTitle")(brandTitle.asInstanceOf[js.Any])
-    if (brandUrl != null) __obj.updateDynamic("brandUrl")(brandUrl.asInstanceOf[js.Any])
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
-    if (fontBase != null) __obj.updateDynamic("fontBase")(fontBase.asInstanceOf[js.Any])
-    if (fontCode != null) __obj.updateDynamic("fontCode")(fontCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(gridCellSize)) __obj.updateDynamic("gridCellSize")(gridCellSize.get.asInstanceOf[js.Any])
-    if (inputBg != null) __obj.updateDynamic("inputBg")(inputBg.asInstanceOf[js.Any])
-    if (inputBorder != null) __obj.updateDynamic("inputBorder")(inputBorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputBorderRadius)) __obj.updateDynamic("inputBorderRadius")(inputBorderRadius.get.asInstanceOf[js.Any])
-    if (inputTextColor != null) __obj.updateDynamic("inputTextColor")(inputTextColor.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (textInverseColor != null) __obj.updateDynamic("textInverseColor")(textInverseColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeVars]
   }
+  @scala.inline
+  implicit class ThemeVarsOps[Self <: ThemeVars] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBase(value: light | dark): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAppBg(value: String): Self = this.set("appBg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppBg: Self = this.set("appBg", js.undefined)
+    @scala.inline
+    def setAppBorderColor(value: String): Self = this.set("appBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppBorderColor: Self = this.set("appBorderColor", js.undefined)
+    @scala.inline
+    def setAppBorderRadius(value: Double): Self = this.set("appBorderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppBorderRadius: Self = this.set("appBorderRadius", js.undefined)
+    @scala.inline
+    def setAppContentBg(value: String): Self = this.set("appContentBg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppContentBg: Self = this.set("appContentBg", js.undefined)
+    @scala.inline
+    def setBarBg(value: String): Self = this.set("barBg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarBg: Self = this.set("barBg", js.undefined)
+    @scala.inline
+    def setBarSelectedColor(value: String): Self = this.set("barSelectedColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarSelectedColor: Self = this.set("barSelectedColor", js.undefined)
+    @scala.inline
+    def setBarTextColor(value: String): Self = this.set("barTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarTextColor: Self = this.set("barTextColor", js.undefined)
+    @scala.inline
+    def setBrandImage(value: String): Self = this.set("brandImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrandImage: Self = this.set("brandImage", js.undefined)
+    @scala.inline
+    def setBrandTitle(value: String): Self = this.set("brandTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrandTitle: Self = this.set("brandTitle", js.undefined)
+    @scala.inline
+    def setBrandUrl(value: String): Self = this.set("brandUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrandUrl: Self = this.set("brandUrl", js.undefined)
+    @scala.inline
+    def setColorPrimary(value: String): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    @scala.inline
+    def setColorSecondary(value: String): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    @scala.inline
+    def setFontBase(value: String): Self = this.set("fontBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontBase: Self = this.set("fontBase", js.undefined)
+    @scala.inline
+    def setFontCode(value: String): Self = this.set("fontCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontCode: Self = this.set("fontCode", js.undefined)
+    @scala.inline
+    def setGridCellSize(value: Double): Self = this.set("gridCellSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridCellSize: Self = this.set("gridCellSize", js.undefined)
+    @scala.inline
+    def setInputBg(value: String): Self = this.set("inputBg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputBg: Self = this.set("inputBg", js.undefined)
+    @scala.inline
+    def setInputBorder(value: String): Self = this.set("inputBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputBorder: Self = this.set("inputBorder", js.undefined)
+    @scala.inline
+    def setInputBorderRadius(value: Double): Self = this.set("inputBorderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputBorderRadius: Self = this.set("inputBorderRadius", js.undefined)
+    @scala.inline
+    def setInputTextColor(value: String): Self = this.set("inputTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputTextColor: Self = this.set("inputTextColor", js.undefined)
+    @scala.inline
+    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    @scala.inline
+    def setTextInverseColor(value: String): Self = this.set("textInverseColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextInverseColor: Self = this.set("textInverseColor", js.undefined)
+  }
+  
 }
 

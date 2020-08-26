@@ -39,6 +39,7 @@ trait ICompositeChart[T] extends CoordinateGridMixin[T] {
     t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
   ): ICompositeChart[T] = js.native
   def rightYAxisLabel(): IGetSet[String, ICompositeChart[T]] = js.native
+  def rightYAxisLabel(rightYAxisLabel: js.UndefOr[scala.Nothing], padding: Double): IGetSet[String, ICompositeChart[T]] = js.native
   def rightYAxisLabel(rightYAxisLabel: String): IGetSet[String, ICompositeChart[T]] = js.native
   def rightYAxisLabel(rightYAxisLabel: String, padding: Double): IGetSet[String, ICompositeChart[T]] = js.native
   def shareColors(): Boolean = js.native

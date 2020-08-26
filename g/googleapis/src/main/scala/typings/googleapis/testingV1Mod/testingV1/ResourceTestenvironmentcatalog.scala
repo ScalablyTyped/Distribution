@@ -31,6 +31,7 @@ class ResourceTestenvironmentcatalog protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTestEnvironmentCatalog] = js.native
   def get(callback: BodyResponseCallback[SchemaTestEnvironmentCatalog]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestEnvironmentCatalog] = js.native
   def get(params: ParamsResourceTestenvironmentcatalogGet): GaxiosPromise[SchemaTestEnvironmentCatalog] = js.native
   def get(
     params: ParamsResourceTestenvironmentcatalogGet,

@@ -60,8 +60,24 @@ trait Animation extends js.Object {
     * 同transform-function rotate3d
     */
   def rotate3d(): Unit = js.native
+  def rotate3d(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    z: js.UndefOr[scala.Nothing],
+    deg: Double
+  ): Unit = js.native
+  def rotate3d(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
+  def rotate3d(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, deg: Double): Unit = js.native
+  def rotate3d(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def rotate3d(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], deg: Double): Unit = js.native
+  def rotate3d(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Unit = js.native
+  def rotate3d(x: js.UndefOr[scala.Nothing], y: Double, z: Double, deg: Double): Unit = js.native
   def rotate3d(x: Double): Unit = js.native
+  def rotate3d(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], deg: Double): Unit = js.native
+  def rotate3d(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
+  def rotate3d(x: Double, y: js.UndefOr[scala.Nothing], z: Double, deg: Double): Unit = js.native
   def rotate3d(x: Double, y: Double): Unit = js.native
+  def rotate3d(x: Double, y: Double, z: js.UndefOr[scala.Nothing], deg: Double): Unit = js.native
   def rotate3d(x: Double, y: Double, z: Double): Unit = js.native
   def rotate3d(x: Double, y: Double, z: Double, deg: Double): Unit = js.native
   /**
@@ -83,13 +99,18 @@ trait Animation extends js.Object {
     * 缩放
     */
   def scale(): Unit = js.native
+  def scale(sx: js.UndefOr[scala.Nothing], sy: Double): Unit = js.native
   def scale(sx: Double): Unit = js.native
   def scale(sx: Double, sy: Double): Unit = js.native
   /**
     * 在X轴缩放sx倍数，在Y轴缩放sy倍数，在Z轴缩放sz倍数
     */
   def scale3d(): Unit = js.native
+  def scale3d(sx: js.UndefOr[scala.Nothing], sy: js.UndefOr[scala.Nothing], sz: Double): Unit = js.native
+  def scale3d(sx: js.UndefOr[scala.Nothing], sy: Double): Unit = js.native
+  def scale3d(sx: js.UndefOr[scala.Nothing], sy: Double, sz: Double): Unit = js.native
   def scale3d(sx: Double): Unit = js.native
+  def scale3d(sx: Double, sy: js.UndefOr[scala.Nothing], sz: Double): Unit = js.native
   def scale3d(sx: Double, sy: Double): Unit = js.native
   def scale3d(sx: Double, sy: Double, sz: Double): Unit = js.native
   /**
@@ -111,6 +132,7 @@ trait Animation extends js.Object {
     * 倾斜
     */
   def skew(): Unit = js.native
+  def skew(ax: js.UndefOr[scala.Nothing], ay: Double): Unit = js.native
   def skew(ax: Double): Unit = js.native
   def skew(ax: Double, ay: Double): Unit = js.native
   /**
@@ -132,13 +154,18 @@ trait Animation extends js.Object {
     * 偏移
     */
   def translate(): Unit = js.native
+  def translate(tx: js.UndefOr[scala.Nothing], ty: Double): Unit = js.native
   def translate(tx: Double): Unit = js.native
   def translate(tx: Double, ty: Double): Unit = js.native
   /**
     * 在X轴偏移tx，在Y轴偏移ty，在Z轴偏移tz
     */
   def translate3d(): Unit = js.native
+  def translate3d(tx: js.UndefOr[scala.Nothing], ty: js.UndefOr[scala.Nothing], tz: Double): Unit = js.native
+  def translate3d(tx: js.UndefOr[scala.Nothing], ty: Double): Unit = js.native
+  def translate3d(tx: js.UndefOr[scala.Nothing], ty: Double, tz: Double): Unit = js.native
   def translate3d(tx: Double): Unit = js.native
+  def translate3d(tx: Double, ty: js.UndefOr[scala.Nothing], tz: Double): Unit = js.native
   def translate3d(tx: Double, ty: Double): Unit = js.native
   def translate3d(tx: Double, ty: Double, tz: Double): Unit = js.native
   /**

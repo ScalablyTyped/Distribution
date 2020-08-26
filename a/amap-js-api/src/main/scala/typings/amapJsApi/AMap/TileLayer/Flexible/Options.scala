@@ -1,18 +1,18 @@
 package typings.amapJsApi.AMap.TileLayer.Flexible
 
-import typings.amapJsApi.AMap.Map
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options
   extends typings.amapJsApi.AMap.TileLayer.Options {
   /**
     * 内存中缓存的切片的数量上限
     */
-  var cacheSize: js.UndefOr[Double] = js.undefined
+  var cacheSize: js.UndefOr[Double] = js.native
   /**
     * 创建切片回调
     * @param x 横坐标
@@ -30,43 +30,45 @@ trait Options
       /* fail */ js.Function0[Unit], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * 是否显示
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    cacheSize: js.UndefOr[Double] = js.undefined,
-    createTile: (/* x */ Double, /* y */ Double, /* z */ Double, /* success */ js.Function1[/* tile */ HTMLImageElement | HTMLCanvasElement, Unit], /* fail */ js.Function0[Unit]) => Unit = null,
-    detectRetina: js.UndefOr[Boolean] = js.undefined,
-    errorUrl: String = null,
-    getTileUrl: String | (js.Function3[/* x */ Double, /* y */ Double, /* level */ Double, String]) = null,
-    map: Map = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    tileSize: js.UndefOr[Double] = js.undefined,
-    tileUrl: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined,
-    zooms: js.Tuple2[Double, Double] = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheSize)) __obj.updateDynamic("cacheSize")(cacheSize.get.asInstanceOf[js.Any])
-    if (createTile != null) __obj.updateDynamic("createTile")(js.Any.fromFunction5(createTile))
-    if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina.get.asInstanceOf[js.Any])
-    if (errorUrl != null) __obj.updateDynamic("errorUrl")(errorUrl.asInstanceOf[js.Any])
-    if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(getTileUrl.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
-    if (tileUrl != null) __obj.updateDynamic("tileUrl")(tileUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheSize(value: Double): Self = this.set("cacheSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSize: Self = this.set("cacheSize", js.undefined)
+    @scala.inline
+    def setCreateTile(
+      value: (/* x */ Double, /* y */ Double, /* z */ Double, /* success */ js.Function1[/* tile */ HTMLImageElement | HTMLCanvasElement, Unit], /* fail */ js.Function0[Unit]) => Unit
+    ): Self = this.set("createTile", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteCreateTile: Self = this.set("createTile", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

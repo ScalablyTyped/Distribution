@@ -12,45 +12,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SortableOptions extends js.Object {
   /**
     * ms, animation speed moving items when sorting, `0` — without animation
     */
-  var animation: js.UndefOr[Double] = js.undefined
+  var animation: js.UndefOr[Double] = js.native
   /**
     * Class name for the chosen item
     */
-  var chosenClass: js.UndefOr[String] = js.undefined
-  var dataIdAttr: js.UndefOr[String] = js.undefined
+  var chosenClass: js.UndefOr[String] = js.native
+  var dataIdAttr: js.UndefOr[String] = js.native
   /**
     * time in milliseconds to define when the sorting should start
     */
-  var delay: js.UndefOr[Double] = js.undefined
+  var delay: js.UndefOr[Double] = js.native
   /**
     * Only delay if user is using touch
     */
-  var delayOnTouchOnly: js.UndefOr[Boolean] = js.undefined
+  var delayOnTouchOnly: js.UndefOr[Boolean] = js.native
   /**
     * Direction of Sortable
     * (will be detected automatically if not given)
     */
   var direction: js.UndefOr[
     (js.Function3[/* evt */ SortableEvent, /* target */ HTMLElement, /* dragEl */ HTMLElement, Direction]) | Direction
-  ] = js.undefined
+  ] = js.native
   /**
     * Disables the sortable if set to true.
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * Class name for the dragging item
     */
-  var dragClass: js.UndefOr[String] = js.undefined
+  var dragClass: js.UndefOr[String] = js.native
   /**
     * Specifies which items inside the element should be draggable
     */
-  var draggable: js.UndefOr[String] = js.undefined
-  var dragoverBubble: js.UndefOr[Boolean] = js.undefined
-  var dropBubble: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[String] = js.native
+  var dragoverBubble: js.UndefOr[Boolean] = js.native
+  var dropBubble: js.UndefOr[Boolean] = js.native
   /**
     * Easing for animation. Defaults to null.
     *
@@ -76,25 +77,25 @@ trait SortableOptions extends js.Object {
     * | 'initial'
     * | 'inherit'
     */
-  var easing: js.UndefOr[String] = js.undefined
+  var easing: js.UndefOr[String] = js.native
   /**
     * distance mouse must be from empty sortable
     * to insert drag element into it
     */
-  var emptyInsertThreshold: js.UndefOr[Double] = js.undefined
+  var emptyInsertThreshold: js.UndefOr[Double] = js.native
   /**
     * Class name for the cloned DOM Element when using forceFallback
     */
-  var fallbackClass: js.UndefOr[String] = js.undefined
-  var fallbackOffset: js.UndefOr[X] = js.undefined
+  var fallbackClass: js.UndefOr[String] = js.native
+  var fallbackOffset: js.UndefOr[X] = js.native
   /**
     * Appends the cloned DOM Element into the Document's Body
     */
-  var fallbackOnBody: js.UndefOr[Boolean] = js.undefined
+  var fallbackOnBody: js.UndefOr[Boolean] = js.native
   /**
     * Specify in pixels how far the mouse should move before it's considered as a drag.
     */
-  var fallbackTolerance: js.UndefOr[Double] = js.undefined
+  var fallbackTolerance: js.UndefOr[Double] = js.native
   /**
     * Selectors that do not lead to dragging (String or Function)
     */
@@ -106,212 +107,318 @@ trait SortableOptions extends js.Object {
       /* sortable */ Sortable, 
       Boolean
     ])
-  ] = js.undefined
+  ] = js.native
   /**
     * ignore the HTML5 DnD behaviour and force the fallback to kick in
     */
-  var forceFallback: js.UndefOr[Boolean] = js.undefined
+  var forceFallback: js.UndefOr[Boolean] = js.native
   /**
     * Class name for the drop placeholder
     */
-  var ghostClass: js.UndefOr[String] = js.undefined
+  var ghostClass: js.UndefOr[String] = js.native
   /**
     * To drag elements from one list into another, both lists must have the same group value.
     * You can also define whether lists can give away, give and keep a copy (clone), and receive elements.
     */
-  var group: js.UndefOr[String | GroupOptions] = js.undefined
+  var group: js.UndefOr[String | GroupOptions] = js.native
   /**
     * Drag handle selector within list items
     */
-  var handle: js.UndefOr[String] = js.undefined
-  var ignore: js.UndefOr[String] = js.undefined
+  var handle: js.UndefOr[String] = js.native
+  var ignore: js.UndefOr[String] = js.native
   /**
     * Will always use inverted swap zone if set to true
     */
-  var invertSwap: js.UndefOr[Boolean] = js.undefined
+  var invertSwap: js.UndefOr[Boolean] = js.native
   /**
     * Threshold of the inverted swap zone
     * (will be set to `swapThreshold` value by default)
     */
-  var invertedSwapThreshold: js.UndefOr[Double] = js.undefined
+  var invertedSwapThreshold: js.UndefOr[Double] = js.native
   /**
     * Element is dropped into the list from another list
     */
-  var onAdd: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onAdd: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Called when dragging element changes position
     */
-  var onChange: js.UndefOr[js.Function1[/* evt */ SortableEvent, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* evt */ SortableEvent, Unit]] = js.native
   /**
     * Element is chosen
     */
-  var onChoose: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onChoose: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Created a clone of an element
     */
-  var onClone: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onClone: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Element dragging ended
     */
-  var onEnd: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onEnd: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Attempt to drag a filtered element
     */
-  var onFilter: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onFilter: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Event when you move an item in the list or between lists
     */
   var onMove: js.UndefOr[
     js.Function2[/* evt */ MoveEvent, /* originalEvent */ Event, Boolean | `-1` | `1`]
-  ] = js.undefined
+  ] = js.native
   /**
     * Element is removed from the list into another list
     */
-  var onRemove: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onRemove: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Called by any change to the list (add / update / remove)
     */
-  var onSort: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onSort: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Element dragging started
     */
-  var onStart: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onStart: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Element is unchosen
     */
-  var onUnchoose: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onUnchoose: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Changed sorting within list
     */
-  var onUpdate: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
+  var onUpdate: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
   /**
     * Call `event.preventDefault()` when triggered `filter`
     */
-  var preventOnFilter: js.UndefOr[Boolean] = js.undefined
+  var preventOnFilter: js.UndefOr[Boolean] = js.native
   /**
     * Remove the clone element when it is not showing,
     * rather than just hiding it
     */
-  var removeCloneOnHide: js.UndefOr[Boolean] = js.undefined
+  var removeCloneOnHide: js.UndefOr[Boolean] = js.native
   var setData: js.UndefOr[
     js.Function2[/* dataTransfer */ DataTransfer, /* draggedElement */ HTMLElement, Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * sorting inside list
     */
-  var sort: js.UndefOr[Boolean] = js.undefined
-  var store: js.UndefOr[Get] = js.undefined
+  var sort: js.UndefOr[Boolean] = js.native
+  var store: js.UndefOr[Get] = js.native
   /**
     * Threshold of the swap zone.
     * Defaults to `1`
     */
-  var swapThreshold: js.UndefOr[Double] = js.undefined
+  var swapThreshold: js.UndefOr[Double] = js.native
   /**
     * How many *pixels* the point should move before cancelling a delayed drag event
     */
-  var touchStartThreshold: js.UndefOr[Double] = js.undefined
+  var touchStartThreshold: js.UndefOr[Double] = js.native
 }
 
 object SortableOptions {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Double] = js.undefined,
-    chosenClass: String = null,
-    dataIdAttr: String = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    delayOnTouchOnly: js.UndefOr[Boolean] = js.undefined,
-    direction: (js.Function3[/* evt */ SortableEvent, /* target */ HTMLElement, /* dragEl */ HTMLElement, Direction]) | Direction = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dragClass: String = null,
-    draggable: String = null,
-    dragoverBubble: js.UndefOr[Boolean] = js.undefined,
-    dropBubble: js.UndefOr[Boolean] = js.undefined,
-    easing: String = null,
-    emptyInsertThreshold: js.UndefOr[Double] = js.undefined,
-    fallbackClass: String = null,
-    fallbackOffset: X = null,
-    fallbackOnBody: js.UndefOr[Boolean] = js.undefined,
-    fallbackTolerance: js.UndefOr[Double] = js.undefined,
-    filter: String | (js.ThisFunction3[
-      /* this */ Sortable, 
-      /* event */ Event | TouchEvent, 
-      /* target */ HTMLElement, 
-      /* sortable */ Sortable, 
-      Boolean
-    ]) = null,
-    forceFallback: js.UndefOr[Boolean] = js.undefined,
-    ghostClass: String = null,
-    group: String | GroupOptions = null,
-    handle: String = null,
-    ignore: String = null,
-    invertSwap: js.UndefOr[Boolean] = js.undefined,
-    invertedSwapThreshold: js.UndefOr[Double] = js.undefined,
-    onAdd: /* event */ SortableEvent => Unit = null,
-    onChange: /* evt */ SortableEvent => Unit = null,
-    onChoose: /* event */ SortableEvent => Unit = null,
-    onClone: /* event */ SortableEvent => Unit = null,
-    onEnd: /* event */ SortableEvent => Unit = null,
-    onFilter: /* event */ SortableEvent => Unit = null,
-    onMove: (/* evt */ MoveEvent, /* originalEvent */ Event) => Boolean | `-1` | `1` = null,
-    onRemove: /* event */ SortableEvent => Unit = null,
-    onSort: /* event */ SortableEvent => Unit = null,
-    onStart: /* event */ SortableEvent => Unit = null,
-    onUnchoose: /* event */ SortableEvent => Unit = null,
-    onUpdate: /* event */ SortableEvent => Unit = null,
-    preventOnFilter: js.UndefOr[Boolean] = js.undefined,
-    removeCloneOnHide: js.UndefOr[Boolean] = js.undefined,
-    setData: (/* dataTransfer */ DataTransfer, /* draggedElement */ HTMLElement) => Unit = null,
-    sort: js.UndefOr[Boolean] = js.undefined,
-    store: Get = null,
-    swapThreshold: js.UndefOr[Double] = js.undefined,
-    touchStartThreshold: js.UndefOr[Double] = js.undefined
-  ): SortableOptions = {
+  def apply(): SortableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (chosenClass != null) __obj.updateDynamic("chosenClass")(chosenClass.asInstanceOf[js.Any])
-    if (dataIdAttr != null) __obj.updateDynamic("dataIdAttr")(dataIdAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayOnTouchOnly)) __obj.updateDynamic("delayOnTouchOnly")(delayOnTouchOnly.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (dragClass != null) __obj.updateDynamic("dragClass")(dragClass.asInstanceOf[js.Any])
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragoverBubble)) __obj.updateDynamic("dragoverBubble")(dragoverBubble.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropBubble)) __obj.updateDynamic("dropBubble")(dropBubble.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(emptyInsertThreshold)) __obj.updateDynamic("emptyInsertThreshold")(emptyInsertThreshold.get.asInstanceOf[js.Any])
-    if (fallbackClass != null) __obj.updateDynamic("fallbackClass")(fallbackClass.asInstanceOf[js.Any])
-    if (fallbackOffset != null) __obj.updateDynamic("fallbackOffset")(fallbackOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallbackOnBody)) __obj.updateDynamic("fallbackOnBody")(fallbackOnBody.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallbackTolerance)) __obj.updateDynamic("fallbackTolerance")(fallbackTolerance.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFallback)) __obj.updateDynamic("forceFallback")(forceFallback.get.asInstanceOf[js.Any])
-    if (ghostClass != null) __obj.updateDynamic("ghostClass")(ghostClass.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertSwap)) __obj.updateDynamic("invertSwap")(invertSwap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertedSwapThreshold)) __obj.updateDynamic("invertedSwapThreshold")(invertedSwapThreshold.get.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onChoose != null) __obj.updateDynamic("onChoose")(js.Any.fromFunction1(onChoose))
-    if (onClone != null) __obj.updateDynamic("onClone")(js.Any.fromFunction1(onClone))
-    if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
-    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1(onFilter))
-    if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction2(onMove))
-    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
-    if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
-    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
-    if (onUnchoose != null) __obj.updateDynamic("onUnchoose")(js.Any.fromFunction1(onUnchoose))
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (!js.isUndefined(preventOnFilter)) __obj.updateDynamic("preventOnFilter")(preventOnFilter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeCloneOnHide)) __obj.updateDynamic("removeCloneOnHide")(removeCloneOnHide.get.asInstanceOf[js.Any])
-    if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction2(setData))
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.get.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (!js.isUndefined(swapThreshold)) __obj.updateDynamic("swapThreshold")(swapThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchStartThreshold)) __obj.updateDynamic("touchStartThreshold")(touchStartThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableOptions]
   }
+  @scala.inline
+  implicit class SortableOptionsOps[Self <: SortableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Double): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setChosenClass(value: String): Self = this.set("chosenClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChosenClass: Self = this.set("chosenClass", js.undefined)
+    @scala.inline
+    def setDataIdAttr(value: String): Self = this.set("dataIdAttr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataIdAttr: Self = this.set("dataIdAttr", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDelayOnTouchOnly(value: Boolean): Self = this.set("delayOnTouchOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayOnTouchOnly: Self = this.set("delayOnTouchOnly", js.undefined)
+    @scala.inline
+    def setDirectionFunction3(value: (/* evt */ SortableEvent, /* target */ HTMLElement, /* dragEl */ HTMLElement) => Direction): Self = this.set("direction", js.Any.fromFunction3(value))
+    @scala.inline
+    def setDirection(
+      value: (js.Function3[/* evt */ SortableEvent, /* target */ HTMLElement, /* dragEl */ HTMLElement, Direction]) | Direction
+    ): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDragClass(value: String): Self = this.set("dragClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragClass: Self = this.set("dragClass", js.undefined)
+    @scala.inline
+    def setDraggable(value: String): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setDragoverBubble(value: Boolean): Self = this.set("dragoverBubble", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragoverBubble: Self = this.set("dragoverBubble", js.undefined)
+    @scala.inline
+    def setDropBubble(value: Boolean): Self = this.set("dropBubble", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropBubble: Self = this.set("dropBubble", js.undefined)
+    @scala.inline
+    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setEmptyInsertThreshold(value: Double): Self = this.set("emptyInsertThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyInsertThreshold: Self = this.set("emptyInsertThreshold", js.undefined)
+    @scala.inline
+    def setFallbackClass(value: String): Self = this.set("fallbackClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackClass: Self = this.set("fallbackClass", js.undefined)
+    @scala.inline
+    def setFallbackOffset(value: X): Self = this.set("fallbackOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackOffset: Self = this.set("fallbackOffset", js.undefined)
+    @scala.inline
+    def setFallbackOnBody(value: Boolean): Self = this.set("fallbackOnBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackOnBody: Self = this.set("fallbackOnBody", js.undefined)
+    @scala.inline
+    def setFallbackTolerance(value: Double): Self = this.set("fallbackTolerance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackTolerance: Self = this.set("fallbackTolerance", js.undefined)
+    @scala.inline
+    def setFilter(
+      value: String | (js.ThisFunction3[
+          /* this */ Sortable, 
+          /* event */ Event | TouchEvent, 
+          /* target */ HTMLElement, 
+          /* sortable */ Sortable, 
+          Boolean
+        ])
+    ): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setForceFallback(value: Boolean): Self = this.set("forceFallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceFallback: Self = this.set("forceFallback", js.undefined)
+    @scala.inline
+    def setGhostClass(value: String): Self = this.set("ghostClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGhostClass: Self = this.set("ghostClass", js.undefined)
+    @scala.inline
+    def setGroup(value: String | GroupOptions): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandle: Self = this.set("handle", js.undefined)
+    @scala.inline
+    def setIgnore(value: String): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    @scala.inline
+    def setInvertSwap(value: Boolean): Self = this.set("invertSwap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvertSwap: Self = this.set("invertSwap", js.undefined)
+    @scala.inline
+    def setInvertedSwapThreshold(value: Double): Self = this.set("invertedSwapThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvertedSwapThreshold: Self = this.set("invertedSwapThreshold", js.undefined)
+    @scala.inline
+    def setOnAdd(value: /* event */ SortableEvent => Unit): Self = this.set("onAdd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAdd: Self = this.set("onAdd", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* evt */ SortableEvent => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnChoose(value: /* event */ SortableEvent => Unit): Self = this.set("onChoose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChoose: Self = this.set("onChoose", js.undefined)
+    @scala.inline
+    def setOnClone(value: /* event */ SortableEvent => Unit): Self = this.set("onClone", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClone: Self = this.set("onClone", js.undefined)
+    @scala.inline
+    def setOnEnd(value: /* event */ SortableEvent => Unit): Self = this.set("onEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
+    @scala.inline
+    def setOnFilter(value: /* event */ SortableEvent => Unit): Self = this.set("onFilter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFilter: Self = this.set("onFilter", js.undefined)
+    @scala.inline
+    def setOnMove(value: (/* evt */ MoveEvent, /* originalEvent */ Event) => Boolean | `-1` | `1`): Self = this.set("onMove", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMove: Self = this.set("onMove", js.undefined)
+    @scala.inline
+    def setOnRemove(value: /* event */ SortableEvent => Unit): Self = this.set("onRemove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRemove: Self = this.set("onRemove", js.undefined)
+    @scala.inline
+    def setOnSort(value: /* event */ SortableEvent => Unit): Self = this.set("onSort", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSort: Self = this.set("onSort", js.undefined)
+    @scala.inline
+    def setOnStart(value: /* event */ SortableEvent => Unit): Self = this.set("onStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    @scala.inline
+    def setOnUnchoose(value: /* event */ SortableEvent => Unit): Self = this.set("onUnchoose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUnchoose: Self = this.set("onUnchoose", js.undefined)
+    @scala.inline
+    def setOnUpdate(value: /* event */ SortableEvent => Unit): Self = this.set("onUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUpdate: Self = this.set("onUpdate", js.undefined)
+    @scala.inline
+    def setPreventOnFilter(value: Boolean): Self = this.set("preventOnFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreventOnFilter: Self = this.set("preventOnFilter", js.undefined)
+    @scala.inline
+    def setRemoveCloneOnHide(value: Boolean): Self = this.set("removeCloneOnHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveCloneOnHide: Self = this.set("removeCloneOnHide", js.undefined)
+    @scala.inline
+    def setSetData(value: (/* dataTransfer */ DataTransfer, /* draggedElement */ HTMLElement) => Unit): Self = this.set("setData", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetData: Self = this.set("setData", js.undefined)
+    @scala.inline
+    def setSort(value: Boolean): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setStore(value: Get): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+    @scala.inline
+    def setSwapThreshold(value: Double): Self = this.set("swapThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwapThreshold: Self = this.set("swapThreshold", js.undefined)
+    @scala.inline
+    def setTouchStartThreshold(value: Double): Self = this.set("touchStartThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchStartThreshold: Self = this.set("touchStartThreshold", js.undefined)
+  }
+  
 }
 

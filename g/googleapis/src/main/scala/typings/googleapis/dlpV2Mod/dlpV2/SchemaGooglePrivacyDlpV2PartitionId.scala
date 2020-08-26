@@ -24,11 +24,30 @@ trait SchemaGooglePrivacyDlpV2PartitionId extends js.Object {
 
 object SchemaGooglePrivacyDlpV2PartitionId {
   @scala.inline
-  def apply(namespaceId: String = null, projectId: String = null): SchemaGooglePrivacyDlpV2PartitionId = {
+  def apply(): SchemaGooglePrivacyDlpV2PartitionId = {
     val __obj = js.Dynamic.literal()
-    if (namespaceId != null) __obj.updateDynamic("namespaceId")(namespaceId.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2PartitionId]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2PartitionIdOps[Self <: SchemaGooglePrivacyDlpV2PartitionId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamespaceId(value: String): Self = this.set("namespaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceId: Self = this.set("namespaceId", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+  }
+  
 }
 

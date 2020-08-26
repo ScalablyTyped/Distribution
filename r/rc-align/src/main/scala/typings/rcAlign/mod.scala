@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-align/lib", JSImport.Namespace)
+@JSImport("rc-align", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   val default: ForwardRefExoticComponent[AlignProps with RefAttributes[RefAlign]] = js.native

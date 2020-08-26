@@ -6,87 +6,152 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CategoricalChartWrapper[L] extends js.Object {
-  var barCategoryGap: js.UndefOr[Double | String] = js.undefined
-  var barGap: js.UndefOr[Double | String] = js.undefined
-  var barSize: js.UndefOr[Double | String] = js.undefined
-  var baseValue: js.UndefOr[BaseValueType] = js.undefined
-  var children: js.UndefOr[ReactNode | js.Array[ReactNode]] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var compact: js.UndefOr[Boolean] = js.undefined
-  var data: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var layout: js.UndefOr[L] = js.undefined
-  var margin: js.UndefOr[PartialMargin] = js.undefined
-  var maxBarSize: js.UndefOr[Double] = js.undefined
-  var onClick: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseDown: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseEnter: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseLeave: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseMove: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseUp: js.UndefOr[RechartsFunction] = js.undefined
-  var reverseStackOrder: js.UndefOr[Boolean] = js.undefined
-  var stackOffset: js.UndefOr[StackOffsetType] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var syncId: js.UndefOr[String | Double] = js.undefined
-  var throttleDelay: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var barCategoryGap: js.UndefOr[Double | String] = js.native
+  var barGap: js.UndefOr[Double | String] = js.native
+  var barSize: js.UndefOr[Double | String] = js.native
+  var baseValue: js.UndefOr[BaseValueType] = js.native
+  var children: js.UndefOr[ReactNode | js.Array[ReactNode]] = js.native
+  var className: js.UndefOr[String] = js.native
+  var compact: js.UndefOr[Boolean] = js.native
+  var data: js.UndefOr[js.Array[js.Object]] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var layout: js.UndefOr[L] = js.native
+  var margin: js.UndefOr[PartialMargin] = js.native
+  var maxBarSize: js.UndefOr[Double] = js.native
+  var onClick: js.UndefOr[RechartsFunction] = js.native
+  var onMouseDown: js.UndefOr[RechartsFunction] = js.native
+  var onMouseEnter: js.UndefOr[RechartsFunction] = js.native
+  var onMouseLeave: js.UndefOr[RechartsFunction] = js.native
+  var onMouseMove: js.UndefOr[RechartsFunction] = js.native
+  var onMouseUp: js.UndefOr[RechartsFunction] = js.native
+  var reverseStackOrder: js.UndefOr[Boolean] = js.native
+  var stackOffset: js.UndefOr[StackOffsetType] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var syncId: js.UndefOr[String | Double] = js.native
+  var throttleDelay: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object CategoricalChartWrapper {
   @scala.inline
-  def apply[L](
-    barCategoryGap: Double | String = null,
-    barGap: Double | String = null,
-    barSize: Double | String = null,
-    baseValue: BaseValueType = null,
-    children: ReactNode | js.Array[ReactNode] = null,
-    className: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    data: js.Array[js.Object] = null,
-    height: js.UndefOr[Double] = js.undefined,
-    layout: L = null,
-    margin: PartialMargin = null,
-    maxBarSize: js.UndefOr[Double] = js.undefined,
-    onClick: /* repeated */ js.Any => Unit = null,
-    onMouseDown: /* repeated */ js.Any => Unit = null,
-    onMouseEnter: /* repeated */ js.Any => Unit = null,
-    onMouseLeave: /* repeated */ js.Any => Unit = null,
-    onMouseMove: /* repeated */ js.Any => Unit = null,
-    onMouseUp: /* repeated */ js.Any => Unit = null,
-    reverseStackOrder: js.UndefOr[Boolean] = js.undefined,
-    stackOffset: StackOffsetType = null,
-    style: js.Object = null,
-    syncId: String | Double = null,
-    throttleDelay: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): CategoricalChartWrapper[L] = {
+  def apply[L](): CategoricalChartWrapper[L] = {
     val __obj = js.Dynamic.literal()
-    if (barCategoryGap != null) __obj.updateDynamic("barCategoryGap")(barCategoryGap.asInstanceOf[js.Any])
-    if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
-    if (barSize != null) __obj.updateDynamic("barSize")(barSize.asInstanceOf[js.Any])
-    if (baseValue != null) __obj.updateDynamic("baseValue")(baseValue.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBarSize)) __obj.updateDynamic("maxBarSize")(maxBarSize.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (!js.isUndefined(reverseStackOrder)) __obj.updateDynamic("reverseStackOrder")(reverseStackOrder.get.asInstanceOf[js.Any])
-    if (stackOffset != null) __obj.updateDynamic("stackOffset")(stackOffset.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (syncId != null) __obj.updateDynamic("syncId")(syncId.asInstanceOf[js.Any])
-    if (!js.isUndefined(throttleDelay)) __obj.updateDynamic("throttleDelay")(throttleDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoricalChartWrapper[L]]
   }
+  @scala.inline
+  implicit class CategoricalChartWrapperOps[Self <: CategoricalChartWrapper[_], L] (val x: Self with CategoricalChartWrapper[L]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBarCategoryGap(value: Double | String): Self = this.set("barCategoryGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarCategoryGap: Self = this.set("barCategoryGap", js.undefined)
+    @scala.inline
+    def setBarGap(value: Double | String): Self = this.set("barGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarGap: Self = this.set("barGap", js.undefined)
+    @scala.inline
+    def setBarSize(value: Double | String): Self = this.set("barSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarSize: Self = this.set("barSize", js.undefined)
+    @scala.inline
+    def setBaseValue(value: BaseValueType): Self = this.set("baseValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseValue: Self = this.set("baseValue", js.undefined)
+    @scala.inline
+    def setChildrenVarargs(value: ReactNode*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: ReactNode | js.Array[ReactNode]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: js.Object*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[js.Object]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLayout(value: L): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setMargin(value: PartialMargin): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMaxBarSize(value: Double): Self = this.set("maxBarSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBarSize: Self = this.set("maxBarSize", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* repeated */ js.Any => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setReverseStackOrder(value: Boolean): Self = this.set("reverseStackOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverseStackOrder: Self = this.set("reverseStackOrder", js.undefined)
+    @scala.inline
+    def setStackOffset(value: StackOffsetType): Self = this.set("stackOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackOffset: Self = this.set("stackOffset", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSyncId(value: String | Double): Self = this.set("syncId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncId: Self = this.set("syncId", js.undefined)
+    @scala.inline
+    def setThrottleDelay(value: Double): Self = this.set("throttleDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrottleDelay: Self = this.set("throttleDelay", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait ObjectAttributeUpdate extends js.Object {
 
 object ObjectAttributeUpdate {
   @scala.inline
-  def apply(ObjectAttributeAction: ObjectAttributeAction = null, ObjectAttributeKey: AttributeKey = null): ObjectAttributeUpdate = {
+  def apply(): ObjectAttributeUpdate = {
     val __obj = js.Dynamic.literal()
-    if (ObjectAttributeAction != null) __obj.updateDynamic("ObjectAttributeAction")(ObjectAttributeAction.asInstanceOf[js.Any])
-    if (ObjectAttributeKey != null) __obj.updateDynamic("ObjectAttributeKey")(ObjectAttributeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectAttributeUpdate]
   }
+  @scala.inline
+  implicit class ObjectAttributeUpdateOps[Self <: ObjectAttributeUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setObjectAttributeAction(value: ObjectAttributeAction): Self = this.set("ObjectAttributeAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectAttributeAction: Self = this.set("ObjectAttributeAction", js.undefined)
+    @scala.inline
+    def setObjectAttributeKey(value: AttributeKey): Self = this.set("ObjectAttributeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectAttributeKey: Self = this.set("ObjectAttributeKey", js.undefined)
+  }
+  
 }
 

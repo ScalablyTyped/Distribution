@@ -25,11 +25,30 @@ trait SchemaExtendedCompensationInfoDecimal extends js.Object {
 
 object SchemaExtendedCompensationInfoDecimal {
   @scala.inline
-  def apply(micros: js.UndefOr[Double] = js.undefined, units: String = null): SchemaExtendedCompensationInfoDecimal = {
+  def apply(): SchemaExtendedCompensationInfoDecimal = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(micros)) __obj.updateDynamic("micros")(micros.get.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtendedCompensationInfoDecimal]
   }
+  @scala.inline
+  implicit class SchemaExtendedCompensationInfoDecimalOps[Self <: SchemaExtendedCompensationInfoDecimal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMicros(value: Double): Self = this.set("micros", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMicros: Self = this.set("micros", js.undefined)
+    @scala.inline
+    def setUnits(value: String): Self = this.set("units", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnits: Self = this.set("units", js.undefined)
+  }
+  
 }
 

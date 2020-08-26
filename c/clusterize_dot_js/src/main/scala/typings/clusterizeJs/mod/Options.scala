@@ -4,46 +4,81 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var blocks_in_cluster: js.UndefOr[Double] = js.undefined
-  var callbacks: js.UndefOr[Callbacks] = js.undefined
-  var contentId: String
-  var keep_parity: js.UndefOr[Boolean] = js.undefined
-  var no_data_class: js.UndefOr[String] = js.undefined
-  var no_data_text: js.UndefOr[String] = js.undefined
-  var rows: js.UndefOr[js.Array[String]] = js.undefined
-  var rows_in_block: js.UndefOr[Double] = js.undefined
-  var scrollId: String
-  var show_no_data_row: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[String] = js.undefined
+  var blocks_in_cluster: js.UndefOr[Double] = js.native
+  var callbacks: js.UndefOr[Callbacks] = js.native
+  var contentId: String = js.native
+  var keep_parity: js.UndefOr[Boolean] = js.native
+  var no_data_class: js.UndefOr[String] = js.native
+  var no_data_text: js.UndefOr[String] = js.native
+  var rows: js.UndefOr[js.Array[String]] = js.native
+  var rows_in_block: js.UndefOr[Double] = js.native
+  var scrollId: String = js.native
+  var show_no_data_row: js.UndefOr[Boolean] = js.native
+  var tag: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    contentId: String,
-    scrollId: String,
-    blocks_in_cluster: js.UndefOr[Double] = js.undefined,
-    callbacks: Callbacks = null,
-    keep_parity: js.UndefOr[Boolean] = js.undefined,
-    no_data_class: String = null,
-    no_data_text: String = null,
-    rows: js.Array[String] = null,
-    rows_in_block: js.UndefOr[Double] = js.undefined,
-    show_no_data_row: js.UndefOr[Boolean] = js.undefined,
-    tag: String = null
-  ): Options = {
+  def apply(contentId: String, scrollId: String): Options = {
     val __obj = js.Dynamic.literal(contentId = contentId.asInstanceOf[js.Any], scrollId = scrollId.asInstanceOf[js.Any])
-    if (!js.isUndefined(blocks_in_cluster)) __obj.updateDynamic("blocks_in_cluster")(blocks_in_cluster.get.asInstanceOf[js.Any])
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_parity)) __obj.updateDynamic("keep_parity")(keep_parity.get.asInstanceOf[js.Any])
-    if (no_data_class != null) __obj.updateDynamic("no_data_class")(no_data_class.asInstanceOf[js.Any])
-    if (no_data_text != null) __obj.updateDynamic("no_data_text")(no_data_text.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows_in_block)) __obj.updateDynamic("rows_in_block")(rows_in_block.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_no_data_row)) __obj.updateDynamic("show_no_data_row")(show_no_data_row.get.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentId(value: String): Self = this.set("contentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScrollId(value: String): Self = this.set("scrollId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlocks_in_cluster(value: Double): Self = this.set("blocks_in_cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlocks_in_cluster: Self = this.set("blocks_in_cluster", js.undefined)
+    @scala.inline
+    def setCallbacks(value: Callbacks): Self = this.set("callbacks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbacks: Self = this.set("callbacks", js.undefined)
+    @scala.inline
+    def setKeep_parity(value: Boolean): Self = this.set("keep_parity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeep_parity: Self = this.set("keep_parity", js.undefined)
+    @scala.inline
+    def setNo_data_class(value: String): Self = this.set("no_data_class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNo_data_class: Self = this.set("no_data_class", js.undefined)
+    @scala.inline
+    def setNo_data_text(value: String): Self = this.set("no_data_text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNo_data_text: Self = this.set("no_data_text", js.undefined)
+    @scala.inline
+    def setRowsVarargs(value: String*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: js.Array[String]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setRows_in_block(value: Double): Self = this.set("rows_in_block", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows_in_block: Self = this.set("rows_in_block", js.undefined)
+    @scala.inline
+    def setShow_no_data_row(value: Boolean): Self = this.set("show_no_data_row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow_no_data_row: Self = this.set("show_no_data_row", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

@@ -33,12 +33,36 @@ trait SchemaChoosePrivateKeyRule extends js.Object {
 
 object SchemaChoosePrivateKeyRule {
   @scala.inline
-  def apply(packageNames: js.Array[String] = null, privateKeyAlias: String = null, urlPattern: String = null): SchemaChoosePrivateKeyRule = {
+  def apply(): SchemaChoosePrivateKeyRule = {
     val __obj = js.Dynamic.literal()
-    if (packageNames != null) __obj.updateDynamic("packageNames")(packageNames.asInstanceOf[js.Any])
-    if (privateKeyAlias != null) __obj.updateDynamic("privateKeyAlias")(privateKeyAlias.asInstanceOf[js.Any])
-    if (urlPattern != null) __obj.updateDynamic("urlPattern")(urlPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChoosePrivateKeyRule]
   }
+  @scala.inline
+  implicit class SchemaChoosePrivateKeyRuleOps[Self <: SchemaChoosePrivateKeyRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPackageNamesVarargs(value: String*): Self = this.set("packageNames", js.Array(value :_*))
+    @scala.inline
+    def setPackageNames(value: js.Array[String]): Self = this.set("packageNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageNames: Self = this.set("packageNames", js.undefined)
+    @scala.inline
+    def setPrivateKeyAlias(value: String): Self = this.set("privateKeyAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeyAlias: Self = this.set("privateKeyAlias", js.undefined)
+    @scala.inline
+    def setUrlPattern(value: String): Self = this.set("urlPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlPattern: Self = this.set("urlPattern", js.undefined)
+  }
+  
 }
 

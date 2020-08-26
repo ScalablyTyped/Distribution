@@ -11,8 +11,8 @@ Utilities for working with Blob objects in the browser
 | Full name          | blob-util |
 | Keywords           | blob, blobs, binary, util, utils |
 | # releases         | 4 |
-| # dependents       | 42 |
-| # downloads        | 567509 |
+| # dependents       | 43 |
+| # downloads        | 585284 |
 | # stars            | 4 |
 
 ## Links

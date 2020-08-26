@@ -18,10 +18,28 @@ trait RemovePermissionRequest extends js.Object {
 
 object RemovePermissionRequest {
   @scala.inline
-  def apply(StatementId: StatementId, EventBusName: NonPartnerEventBusName = null): RemovePermissionRequest = {
+  def apply(StatementId: StatementId): RemovePermissionRequest = {
     val __obj = js.Dynamic.literal(StatementId = StatementId.asInstanceOf[js.Any])
-    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovePermissionRequest]
   }
+  @scala.inline
+  implicit class RemovePermissionRequestOps[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatementId(value: StatementId): Self = this.set("StatementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventBusName(value: NonPartnerEventBusName): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
+  }
+  
 }
 

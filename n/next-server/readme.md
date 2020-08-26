@@ -10,8 +10,8 @@ Typings are for version 9.0.5
 | Full name          | next-server |
 | Keywords           | - |
 | # releases         | 255 |
-| # dependents       | 7 |
-| # downloads        | 5800328 |
+| # dependents       | 8 |
+| # downloads        | 6048746 |
 | # stars            | 0 |
 
 ## Links

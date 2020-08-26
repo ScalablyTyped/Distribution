@@ -41,7 +41,26 @@ object anon extends js.Object {
   trait Parse extends js.Object {
     def parse(input: String): js.Any = js.native
     def serialize(immutable: TypeofImmutable): Options = js.native
+    def serialize(
+      immutable: TypeofImmutable,
+      refs: js.UndefOr[scala.Nothing],
+      customReplacer: js.UndefOr[scala.Nothing],
+      customReviver: Reviver
+    ): Options = js.native
+    def serialize(immutable: TypeofImmutable, refs: js.UndefOr[scala.Nothing], customReplacer: Replacer): Options = js.native
+    def serialize(
+      immutable: TypeofImmutable,
+      refs: js.UndefOr[scala.Nothing],
+      customReplacer: Replacer,
+      customReviver: Reviver
+    ): Options = js.native
     def serialize(immutable: TypeofImmutable, refs: Refs): Options = js.native
+    def serialize(
+      immutable: TypeofImmutable,
+      refs: Refs,
+      customReplacer: js.UndefOr[scala.Nothing],
+      customReviver: Reviver
+    ): Options = js.native
     def serialize(immutable: TypeofImmutable, refs: Refs, customReplacer: Replacer): Options = js.native
     def serialize(immutable: TypeofImmutable, refs: Refs, customReplacer: Replacer, customReviver: Reviver): Options = js.native
     def stringify(input: js.Any): String = js.native
@@ -92,7 +111,11 @@ object anon extends js.Object {
     val Set: TypeofSetFromKeys = js.native
     val Stack: TypeofStack = js.native
     def Range(): Indexed[Double] = js.native
+    def Range(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], step: Double): Indexed[Double] = js.native
+    def Range(start: js.UndefOr[scala.Nothing], end: Double): Indexed[Double] = js.native
+    def Range(start: js.UndefOr[scala.Nothing], end: Double, step: Double): Indexed[Double] = js.native
     def Range(start: Double): Indexed[Double] = js.native
+    def Range(start: Double, end: js.UndefOr[scala.Nothing], step: Double): Indexed[Double] = js.native
     def Range(start: Double, end: Double): Indexed[Double] = js.native
     def Range(start: Double, end: Double, step: Double): Indexed[Double] = js.native
     def Repeat[T](value: T): Indexed[T] = js.native

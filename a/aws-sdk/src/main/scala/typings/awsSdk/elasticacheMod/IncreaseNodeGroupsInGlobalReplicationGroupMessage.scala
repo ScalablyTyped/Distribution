@@ -26,15 +26,34 @@ trait IncreaseNodeGroupsInGlobalReplicationGroupMessage extends js.Object {
 
 object IncreaseNodeGroupsInGlobalReplicationGroupMessage {
   @scala.inline
-  def apply(
-    ApplyImmediately: Boolean,
-    GlobalReplicationGroupId: String,
-    NodeGroupCount: Integer,
-    RegionalConfigurations: RegionalConfigurationList = null
-  ): IncreaseNodeGroupsInGlobalReplicationGroupMessage = {
+  def apply(ApplyImmediately: Boolean, GlobalReplicationGroupId: String, NodeGroupCount: Integer): IncreaseNodeGroupsInGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ApplyImmediately = ApplyImmediately.asInstanceOf[js.Any], GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any], NodeGroupCount = NodeGroupCount.asInstanceOf[js.Any])
-    if (RegionalConfigurations != null) __obj.updateDynamic("RegionalConfigurations")(RegionalConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncreaseNodeGroupsInGlobalReplicationGroupMessage]
   }
+  @scala.inline
+  implicit class IncreaseNodeGroupsInGlobalReplicationGroupMessageOps[Self <: IncreaseNodeGroupsInGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplyImmediately(value: Boolean): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlobalReplicationGroupId(value: String): Self = this.set("GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeGroupCount(value: Integer): Self = this.set("NodeGroupCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegionalConfigurationsVarargs(value: RegionalConfiguration*): Self = this.set("RegionalConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setRegionalConfigurations(value: RegionalConfigurationList): Self = this.set("RegionalConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionalConfigurations: Self = this.set("RegionalConfigurations", js.undefined)
+  }
+  
 }
 

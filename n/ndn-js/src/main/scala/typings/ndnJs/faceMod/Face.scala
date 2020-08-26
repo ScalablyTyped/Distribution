@@ -22,6 +22,12 @@ class Face () extends js.Object {
   def expressInterest(
     interest: Interest,
     onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
+    onTimeout: js.UndefOr[scala.Nothing],
+    onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
+  ): Double = js.native
+  def expressInterest(
+    interest: Interest,
+    onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
     onTimeout: js.Function1[/* interest */ Interest, _]
   ): Double = js.native
   def expressInterest(
@@ -31,6 +37,12 @@ class Face () extends js.Object {
     onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
   ): Double = js.native
   def expressInterest(interest: Name, onData: js.Function2[/* interest */ Interest, /* data */ Data, _]): Double = js.native
+  def expressInterest(
+    interest: Name,
+    onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
+    onTimeout: js.UndefOr[scala.Nothing],
+    onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
+  ): Double = js.native
   def expressInterest(
     interest: Name,
     onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
@@ -51,6 +63,13 @@ class Face () extends js.Object {
     name: Name,
     interestTemplate: Interest,
     onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
+    onTimeout: js.UndefOr[scala.Nothing],
+    onNetworkNack: js.Function2[/* interest */ Interest, /* nack */ NetworkNack, _]
+  ): Double = js.native
+  def expressInterest(
+    name: Name,
+    interestTemplate: Interest,
+    onData: js.Function2[/* interest */ Interest, /* data */ Data, _],
     onTimeout: js.Function1[/* interest */ Interest, _]
   ): Double = js.native
   def expressInterest(
@@ -62,6 +81,13 @@ class Face () extends js.Object {
   ): Double = js.native
   def putData(data: Data): Unit = js.native
   def registerPrefix(prefix: Name, onInterest: OnInterestCallback, onRegisterFailed: js.Function1[/* prefix */ Name, _]): Double = js.native
+  def registerPrefix(
+    prefix: Name,
+    onInterest: OnInterestCallback,
+    onRegisterFailed: js.Function1[/* prefix */ Name, _],
+    onRegisterSuccess: js.UndefOr[scala.Nothing],
+    flags: ForwardingFlags
+  ): Double = js.native
   def registerPrefix(
     prefix: Name,
     onInterest: OnInterestCallback,

@@ -22,5 +22,22 @@ object UpdateRepositoryNameInput {
     val __obj = js.Dynamic.literal(newName = newName.asInstanceOf[js.Any], oldName = oldName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRepositoryNameInput]
   }
+  @scala.inline
+  implicit class UpdateRepositoryNameInputOps[Self <: UpdateRepositoryNameInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewName(value: RepositoryName): Self = this.set("newName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOldName(value: RepositoryName): Self = this.set("oldName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

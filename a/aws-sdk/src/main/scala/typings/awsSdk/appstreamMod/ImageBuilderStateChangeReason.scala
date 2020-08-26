@@ -18,11 +18,30 @@ trait ImageBuilderStateChangeReason extends js.Object {
 
 object ImageBuilderStateChangeReason {
   @scala.inline
-  def apply(Code: ImageBuilderStateChangeReasonCode = null, Message: String = null): ImageBuilderStateChangeReason = {
+  def apply(): ImageBuilderStateChangeReason = {
     val __obj = js.Dynamic.literal()
-    if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageBuilderStateChangeReason]
   }
+  @scala.inline
+  implicit class ImageBuilderStateChangeReasonOps[Self <: ImageBuilderStateChangeReason] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: ImageBuilderStateChangeReasonCode): Self = this.set("Code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("Code", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-utilities
 
-Typings are for version 1.3.3
+Typings are for version 1.3.4
 
 ## Library description:
 Utilities for working with GraphQL ASTs
@@ -10,9 +10,9 @@ Utilities for working with GraphQL ASTs
 | ------------------ | :-------------: |
 | Full name          | apollo-utilities |
 | Keywords           | - |
-| # releases         | 83 |
-| # dependents       | 195 |
-| # downloads        | 69151589 |
+| # releases         | 84 |
+| # dependents       | 199 |
+| # downloads        | 71508614 |
 | # stars            | 0 |
 
 ## Links

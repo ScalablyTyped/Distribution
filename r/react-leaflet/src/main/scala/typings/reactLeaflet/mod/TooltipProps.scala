@@ -1,53 +1,59 @@
 package typings.reactLeaflet.mod
 
 import typings.leaflet.mod.Direction
-import typings.leaflet.mod.PointExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.DivOverlayOptions because Already inherited
-- typings.leaflet.mod.TooltipOptions because var conflicts: className, offset, pane, zoomAnimation. Inlined direction, interactive, opacity, permanent, sticky */ trait TooltipProps extends DivOverlayProps {
-  var direction: js.UndefOr[Direction] = js.undefined
-  var interactive: js.UndefOr[Boolean] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var permanent: js.UndefOr[Boolean] = js.undefined
-  var sticky: js.UndefOr[Boolean] = js.undefined
+- typings.leaflet.mod.TooltipOptions because var conflicts: className, offset, pane, zoomAnimation. Inlined direction, interactive, opacity, permanent, sticky */ @js.native
+trait TooltipProps extends DivOverlayProps {
+  var direction: js.UndefOr[Direction] = js.native
+  var interactive: js.UndefOr[Boolean] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var permanent: js.UndefOr[Boolean] = js.native
+  var sticky: js.UndefOr[Boolean] = js.native
 }
 
 object TooltipProps {
   @scala.inline
-  def apply(
-    children: Children = null,
-    className: String = null,
-    direction: Direction = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    leaflet: LeafletContext = null,
-    offset: PointExpression = null,
-    onClose: () => Unit = null,
-    onOpen: () => Unit = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    pane: String = null,
-    permanent: js.UndefOr[Boolean] = js.undefined,
-    sticky: js.UndefOr[Boolean] = js.undefined,
-    zoomAnimation: js.UndefOr[Boolean] = js.undefined
-  ): TooltipProps = {
+  def apply(): TooltipProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (!js.isUndefined(permanent)) __obj.updateDynamic("permanent")(permanent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }
+  @scala.inline
+  implicit class TooltipPropsOps[Self <: TooltipProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirection(value: Direction): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPermanent(value: Boolean): Self = this.set("permanent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermanent: Self = this.set("permanent", js.undefined)
+    @scala.inline
+    def setSticky(value: Boolean): Self = this.set("sticky", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSticky: Self = this.set("sticky", js.undefined)
+  }
+  
 }
 

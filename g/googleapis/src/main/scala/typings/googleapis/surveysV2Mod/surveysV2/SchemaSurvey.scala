@@ -61,32 +61,70 @@ trait SchemaSurvey extends js.Object {
 
 object SchemaSurvey {
   @scala.inline
-  def apply(
-    audience: SchemaSurveyAudience = null,
-    cost: SchemaSurveyCost = null,
-    customerData: String = null,
-    description: String = null,
-    owners: js.Array[String] = null,
-    questions: js.Array[SchemaSurveyQuestion] = null,
-    rejectionReason: SchemaSurveyRejection = null,
-    state: String = null,
-    surveyUrlId: String = null,
-    title: String = null,
-    wantedResponseCount: js.UndefOr[Double] = js.undefined
-  ): SchemaSurvey = {
+  def apply(): SchemaSurvey = {
     val __obj = js.Dynamic.literal()
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (cost != null) __obj.updateDynamic("cost")(cost.asInstanceOf[js.Any])
-    if (customerData != null) __obj.updateDynamic("customerData")(customerData.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
-    if (questions != null) __obj.updateDynamic("questions")(questions.asInstanceOf[js.Any])
-    if (rejectionReason != null) __obj.updateDynamic("rejectionReason")(rejectionReason.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (surveyUrlId != null) __obj.updateDynamic("surveyUrlId")(surveyUrlId.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(wantedResponseCount)) __obj.updateDynamic("wantedResponseCount")(wantedResponseCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSurvey]
   }
+  @scala.inline
+  implicit class SchemaSurveyOps[Self <: SchemaSurvey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudience(value: SchemaSurveyAudience): Self = this.set("audience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudience: Self = this.set("audience", js.undefined)
+    @scala.inline
+    def setCost(value: SchemaSurveyCost): Self = this.set("cost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCost: Self = this.set("cost", js.undefined)
+    @scala.inline
+    def setCustomerData(value: String): Self = this.set("customerData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerData: Self = this.set("customerData", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setOwnersVarargs(value: String*): Self = this.set("owners", js.Array(value :_*))
+    @scala.inline
+    def setOwners(value: js.Array[String]): Self = this.set("owners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwners: Self = this.set("owners", js.undefined)
+    @scala.inline
+    def setQuestionsVarargs(value: SchemaSurveyQuestion*): Self = this.set("questions", js.Array(value :_*))
+    @scala.inline
+    def setQuestions(value: js.Array[SchemaSurveyQuestion]): Self = this.set("questions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuestions: Self = this.set("questions", js.undefined)
+    @scala.inline
+    def setRejectionReason(value: SchemaSurveyRejection): Self = this.set("rejectionReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectionReason: Self = this.set("rejectionReason", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setSurveyUrlId(value: String): Self = this.set("surveyUrlId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSurveyUrlId: Self = this.set("surveyUrlId", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWantedResponseCount(value: Double): Self = this.set("wantedResponseCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWantedResponseCount: Self = this.set("wantedResponseCount", js.undefined)
+  }
+  
 }
 

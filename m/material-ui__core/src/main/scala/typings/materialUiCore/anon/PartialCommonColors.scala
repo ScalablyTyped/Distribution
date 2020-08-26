@@ -13,11 +13,30 @@ trait PartialCommonColors extends js.Object {
 
 object PartialCommonColors {
   @scala.inline
-  def apply(black: String = null, white: String = null): PartialCommonColors = {
+  def apply(): PartialCommonColors = {
     val __obj = js.Dynamic.literal()
-    if (black != null) __obj.updateDynamic("black")(black.asInstanceOf[js.Any])
-    if (white != null) __obj.updateDynamic("white")(white.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialCommonColors]
   }
+  @scala.inline
+  implicit class PartialCommonColorsOps[Self <: PartialCommonColors] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlack(value: String): Self = this.set("black", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlack: Self = this.set("black", js.undefined)
+    @scala.inline
+    def setWhite(value: String): Self = this.set("white", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhite: Self = this.set("white", js.undefined)
+  }
+  
 }
 

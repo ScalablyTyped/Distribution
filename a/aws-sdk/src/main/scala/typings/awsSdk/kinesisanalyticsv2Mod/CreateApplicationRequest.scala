@@ -41,18 +41,49 @@ object CreateApplicationRequest {
   def apply(
     ApplicationName: ApplicationName,
     RuntimeEnvironment: RuntimeEnvironment,
-    ServiceExecutionRole: RoleARN,
-    ApplicationConfiguration: ApplicationConfiguration = null,
-    ApplicationDescription: ApplicationDescription = null,
-    CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
-    Tags: Tags = null
+    ServiceExecutionRole: RoleARN
   ): CreateApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], RuntimeEnvironment = RuntimeEnvironment.asInstanceOf[js.Any], ServiceExecutionRole = ServiceExecutionRole.asInstanceOf[js.Any])
-    if (ApplicationConfiguration != null) __obj.updateDynamic("ApplicationConfiguration")(ApplicationConfiguration.asInstanceOf[js.Any])
-    if (ApplicationDescription != null) __obj.updateDynamic("ApplicationDescription")(ApplicationDescription.asInstanceOf[js.Any])
-    if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationRequest]
   }
+  @scala.inline
+  implicit class CreateApplicationRequestOps[Self <: CreateApplicationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuntimeEnvironment(value: RuntimeEnvironment): Self = this.set("RuntimeEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceExecutionRole(value: RoleARN): Self = this.set("ServiceExecutionRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationConfiguration(value: ApplicationConfiguration): Self = this.set("ApplicationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationConfiguration: Self = this.set("ApplicationConfiguration", js.undefined)
+    @scala.inline
+    def setApplicationDescription(value: ApplicationDescription): Self = this.set("ApplicationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationDescription: Self = this.set("ApplicationDescription", js.undefined)
+    @scala.inline
+    def setCloudWatchLoggingOptionsVarargs(value: CloudWatchLoggingOption*): Self = this.set("CloudWatchLoggingOptions", js.Array(value :_*))
+    @scala.inline
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -15,6 +15,7 @@ object emitterMod extends js.Object {
     def off(): Emitter[Event] = js.native
     def off(event: Event): Emitter[Event] = js.native
     def off(event: Event, listener: Listener): Emitter[Event] = js.native
+    def off(event: js.UndefOr[scala.Nothing], listener: Listener): Emitter[Event] = js.native
     def on(event: Event, listener: Listener): Emitter[Event] = js.native
     def once(event: Event, listener: Listener): Emitter[Event] = js.native
   }

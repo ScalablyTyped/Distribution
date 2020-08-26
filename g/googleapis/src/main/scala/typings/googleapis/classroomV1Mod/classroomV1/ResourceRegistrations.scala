@@ -47,6 +47,7 @@ class ResourceRegistrations protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaRegistration] = js.native
   def create(callback: BodyResponseCallback[SchemaRegistration]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegistration] = js.native
   def create(params: ParamsResourceRegistrationsCreate): GaxiosPromise[SchemaRegistration] = js.native
   def create(params: ParamsResourceRegistrationsCreate, callback: BodyResponseCallback[SchemaRegistration]): Unit = js.native
   def create(
@@ -75,6 +76,7 @@ class ResourceRegistrations protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceRegistrationsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceRegistrationsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(

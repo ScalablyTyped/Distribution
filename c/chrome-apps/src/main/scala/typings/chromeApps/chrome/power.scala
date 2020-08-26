@@ -1,11 +1,5 @@
 package typings.chromeApps.chrome
 
-import typings.chromeApps.AnonDISPLAY
-import typings.chromeApps.chromeAppsStrings.DISPLAY
-import typings.chromeApps.chromeAppsStrings.SYSTEM
-import typings.chromeApps.chromeAppsStrings.display_
-import typings.chromeApps.chromeAppsStrings.system_
-import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,28 +16,5 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.power")
 @js.native
-object power extends js.Object {
-  /** Releases a request previously made via requestKeepAwake(). */
-  def releaseKeepAwake(): Unit = js.native
-  /**
-    * Requests that power management be temporarily disabled.
-    * @param level Level describes the degree to which power management should be disabled.
-    *              If a request previously made by the same app is still active, it will be replaced by the new request.
-    * @see Enum: chrome.power.Level
-    */
-  def requestKeepAwake(
-    level: ToStringLiteral[AnonDISPLAY, SYSTEM | DISPLAY, Exclude[SYSTEM | DISPLAY, system_ | display_]]
-  ): Unit = js.native
-  /**
-    * @enum
-    * @property SYSTEM - Prevent the system from sleeping in response to user inactivity.
-    * @property DISPLAY - Prevent the display from being turned off or dimmed or the system from sleeping in response to user inactivity.
-    */
-  @js.native
-  object Level extends js.Object {
-    var DISPLAY: display_ = js.native
-    var SYSTEM: system_ = js.native
-  }
-  
-}
+object power extends js.Object
 

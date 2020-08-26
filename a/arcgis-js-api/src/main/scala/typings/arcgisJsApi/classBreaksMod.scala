@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/statistics/classBreaks", JSImport.Namespace)
+@JSImport("esri/smartMapping/statistics/classBreaks", JSImport.Namespace)
 @js.native
 object classBreaksMod
   extends TopLevel[

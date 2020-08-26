@@ -31,6 +31,7 @@ class ResourceVideocategories protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVideoCategoryListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaVideoCategoryListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVideoCategoryListResponse] = js.native
   def list(params: ParamsResourceVideocategoriesList): GaxiosPromise[SchemaVideoCategoryListResponse] = js.native
   def list(
     params: ParamsResourceVideocategoriesList,

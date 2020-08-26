@@ -12,6 +12,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object functionsMod extends js.Object {
   def logEvent(gtagFunction: Gtag, analyticsId: String, eventName: String): Unit = js.native
+  def logEvent(
+    gtagFunction: Gtag,
+    analyticsId: String,
+    eventName: String,
+    eventParams: js.UndefOr[scala.Nothing],
+    options: AnalyticsCallOptions
+  ): Unit = js.native
   def logEvent(gtagFunction: Gtag, analyticsId: String, eventName: String, eventParams: EventParams): Unit = js.native
   def logEvent(
     gtagFunction: Gtag,

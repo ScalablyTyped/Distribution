@@ -6,27 +6,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZoomFactor extends js.Object {
-  var component: js.UndefOr[dxVectorMap] = js.undefined
-  var element: js.UndefOr[dxElement] = js.undefined
-  var model: js.UndefOr[js.Any] = js.undefined
-  var zoomFactor: js.UndefOr[Double] = js.undefined
+  var component: js.UndefOr[dxVectorMap] = js.native
+  var element: js.UndefOr[dxElement] = js.native
+  var model: js.UndefOr[js.Any] = js.native
+  var zoomFactor: js.UndefOr[Double] = js.native
 }
 
 object ZoomFactor {
   @scala.inline
-  def apply(
-    component: dxVectorMap = null,
-    element: dxElement = null,
-    model: js.Any = null,
-    zoomFactor: js.UndefOr[Double] = js.undefined
-  ): ZoomFactor = {
+  def apply(): ZoomFactor = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomFactor)) __obj.updateDynamic("zoomFactor")(zoomFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomFactor]
   }
+  @scala.inline
+  implicit class ZoomFactorOps[Self <: ZoomFactor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponent(value: dxVectorMap): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setZoomFactor(value: Double): Self = this.set("zoomFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomFactor: Self = this.set("zoomFactor", js.undefined)
+  }
+  
 }
 

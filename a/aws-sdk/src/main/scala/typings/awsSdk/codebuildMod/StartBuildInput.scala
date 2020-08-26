@@ -11,6 +11,10 @@ trait StartBuildInput extends js.Object {
     */
   var artifactsOverride: js.UndefOr[ProjectArtifacts] = js.native
   /**
+    * Contains information that defines how the build project reports the build status to the source provider. This option is only used when the source provider is GITHUB, GITHUB_ENTERPRISE, or BITBUCKET.
+    */
+  var buildStatusConfigOverride: js.UndefOr[BuildStatusConfig] = js.native
+  /**
     * A buildspec file declaration that overrides, for this build only, the latest one already defined in the build project.  If this value is set, it can be either an inline buildspec definition, the path to an alternate buildspec file relative to the value of the built-in CODEBUILD_SRC_DIR environment variable, or the path to an S3 bucket. The bucket must be in the same AWS Region as the build project. Specify the buildspec file using its ARN (for example, arn:aws:s3:::my-codebuild-sample2/buildspec.yml). If this value is not provided or is set to an empty string, the source code must contain a buildspec file in its root directory. For more information, see Buildspec File Name and Storage Location. 
     */
   var buildspecOverride: js.UndefOr[String] = js.native
@@ -26,6 +30,10 @@ trait StartBuildInput extends js.Object {
     * The name of a compute type for this build that overrides the one specified in the build project.
     */
   var computeTypeOverride: js.UndefOr[ComputeType] = js.native
+  /**
+    * Specifies if session debugging is enabled for this build. For more information, see Viewing a running build in Session Manager.
+    */
+  var debugSessionEnabled: js.UndefOr[WrapperBoolean] = js.native
   /**
     * The AWS Key Management Service (AWS KMS) customer master key (CMK) that overrides the one specified in the build project. The CMK key encrypts the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
     */
@@ -47,7 +55,7 @@ trait StartBuildInput extends js.Object {
     */
   var gitSubmodulesConfigOverride: js.UndefOr[GitSubmodulesConfig] = js.native
   /**
-    * A unique, case sensitive identifier you provide to ensure the idempotency of the StartBuild request. The token is included in the StartBuild request and is valid for 12 hours. If you repeat the StartBuild request with the same token, but change a parameter, AWS CodeBuild returns a parameter mismatch error. 
+    * A unique, case sensitive identifier you provide to ensure the idempotency of the StartBuild request. The token is included in the StartBuild request and is valid for 5 minutes. If you repeat the StartBuild request with the same token, but change a parameter, AWS CodeBuild returns a parameter mismatch error. 
     */
   var idempotencyToken: js.UndefOr[String] = js.native
   /**
@@ -55,7 +63,7 @@ trait StartBuildInput extends js.Object {
     */
   var imageOverride: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The type of credentials AWS CodeBuild uses to pull images in your build. There are two valid values:     CODEBUILD specifies that AWS CodeBuild uses its own credentials. This requires that you modify your ECR repository policy to trust AWS CodeBuild's service principal.    SERVICE_ROLE specifies that AWS CodeBuild uses your build project's service role.     When using a cross-account or private registry image, you must use SERVICE_ROLE credentials. When using an AWS CodeBuild curated image, you must use CODEBUILD credentials. 
+    * The type of credentials AWS CodeBuild uses to pull images in your build. There are two valid values:   CODEBUILD  Specifies that AWS CodeBuild uses its own credentials. This requires that you modify your ECR repository policy to trust AWS CodeBuild's service principal.  SERVICE_ROLE  Specifies that AWS CodeBuild uses your build project's service role.    When using a cross-account or private registry image, you must use SERVICE_ROLE credentials. When using an AWS CodeBuild curated image, you must use CODEBUILD credentials. 
     */
   var imagePullCredentialsTypeOverride: js.UndefOr[ImagePullCredentialsType] = js.native
   /**
@@ -115,7 +123,7 @@ trait StartBuildInput extends js.Object {
     */
   var sourceTypeOverride: js.UndefOr[SourceType] = js.native
   /**
-    * A version of the build input to be built, for this build only. If not specified, the latest version is used. If specified, must be one of:   For AWS CodeCommit: the commit ID, branch, or Git tag to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.    If sourceVersion is specified at the project level, then this sourceVersion (at the build level) takes precedence.   For more information, see Source Version Sample with CodeBuild in the AWS CodeBuild User Guide. 
+    * The version of the build input to be built, for this build only. If not specified, the latest version is used. If specified, the contents depends on the source provider:  AWS CodeCommit  The commit ID, branch, or Git tag to use.  GitHub  The commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.  Bitbucket  The commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.  Amazon Simple Storage Service (Amazon S3)  The version ID of the object that represents the build input ZIP file to use.   If sourceVersion is specified at the project level, then this sourceVersion (at the build level) takes precedence.  For more information, see Source Version Sample with CodeBuild in the AWS CodeBuild User Guide. 
     */
   var sourceVersion: js.UndefOr[String] = js.native
   /**
@@ -126,67 +134,152 @@ trait StartBuildInput extends js.Object {
 
 object StartBuildInput {
   @scala.inline
-  def apply(
-    projectName: NonEmptyString,
-    artifactsOverride: ProjectArtifacts = null,
-    buildspecOverride: String = null,
-    cacheOverride: ProjectCache = null,
-    certificateOverride: String = null,
-    computeTypeOverride: ComputeType = null,
-    encryptionKeyOverride: NonEmptyString = null,
-    environmentTypeOverride: EnvironmentType = null,
-    environmentVariablesOverride: EnvironmentVariables = null,
-    gitCloneDepthOverride: js.UndefOr[GitCloneDepth] = js.undefined,
-    gitSubmodulesConfigOverride: GitSubmodulesConfig = null,
-    idempotencyToken: String = null,
-    imageOverride: NonEmptyString = null,
-    imagePullCredentialsTypeOverride: ImagePullCredentialsType = null,
-    insecureSslOverride: js.UndefOr[WrapperBoolean] = js.undefined,
-    logsConfigOverride: LogsConfig = null,
-    privilegedModeOverride: js.UndefOr[WrapperBoolean] = js.undefined,
-    queuedTimeoutInMinutesOverride: js.UndefOr[TimeOut] = js.undefined,
-    registryCredentialOverride: RegistryCredential = null,
-    reportBuildStatusOverride: js.UndefOr[WrapperBoolean] = js.undefined,
-    secondaryArtifactsOverride: ProjectArtifactsList = null,
-    secondarySourcesOverride: ProjectSources = null,
-    secondarySourcesVersionOverride: ProjectSecondarySourceVersions = null,
-    serviceRoleOverride: NonEmptyString = null,
-    sourceAuthOverride: SourceAuth = null,
-    sourceLocationOverride: String = null,
-    sourceTypeOverride: SourceType = null,
-    sourceVersion: String = null,
-    timeoutInMinutesOverride: js.UndefOr[TimeOut] = js.undefined
-  ): StartBuildInput = {
+  def apply(projectName: NonEmptyString): StartBuildInput = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
-    if (artifactsOverride != null) __obj.updateDynamic("artifactsOverride")(artifactsOverride.asInstanceOf[js.Any])
-    if (buildspecOverride != null) __obj.updateDynamic("buildspecOverride")(buildspecOverride.asInstanceOf[js.Any])
-    if (cacheOverride != null) __obj.updateDynamic("cacheOverride")(cacheOverride.asInstanceOf[js.Any])
-    if (certificateOverride != null) __obj.updateDynamic("certificateOverride")(certificateOverride.asInstanceOf[js.Any])
-    if (computeTypeOverride != null) __obj.updateDynamic("computeTypeOverride")(computeTypeOverride.asInstanceOf[js.Any])
-    if (encryptionKeyOverride != null) __obj.updateDynamic("encryptionKeyOverride")(encryptionKeyOverride.asInstanceOf[js.Any])
-    if (environmentTypeOverride != null) __obj.updateDynamic("environmentTypeOverride")(environmentTypeOverride.asInstanceOf[js.Any])
-    if (environmentVariablesOverride != null) __obj.updateDynamic("environmentVariablesOverride")(environmentVariablesOverride.asInstanceOf[js.Any])
-    if (!js.isUndefined(gitCloneDepthOverride)) __obj.updateDynamic("gitCloneDepthOverride")(gitCloneDepthOverride.get.asInstanceOf[js.Any])
-    if (gitSubmodulesConfigOverride != null) __obj.updateDynamic("gitSubmodulesConfigOverride")(gitSubmodulesConfigOverride.asInstanceOf[js.Any])
-    if (idempotencyToken != null) __obj.updateDynamic("idempotencyToken")(idempotencyToken.asInstanceOf[js.Any])
-    if (imageOverride != null) __obj.updateDynamic("imageOverride")(imageOverride.asInstanceOf[js.Any])
-    if (imagePullCredentialsTypeOverride != null) __obj.updateDynamic("imagePullCredentialsTypeOverride")(imagePullCredentialsTypeOverride.asInstanceOf[js.Any])
-    if (!js.isUndefined(insecureSslOverride)) __obj.updateDynamic("insecureSslOverride")(insecureSslOverride.get.asInstanceOf[js.Any])
-    if (logsConfigOverride != null) __obj.updateDynamic("logsConfigOverride")(logsConfigOverride.asInstanceOf[js.Any])
-    if (!js.isUndefined(privilegedModeOverride)) __obj.updateDynamic("privilegedModeOverride")(privilegedModeOverride.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(queuedTimeoutInMinutesOverride)) __obj.updateDynamic("queuedTimeoutInMinutesOverride")(queuedTimeoutInMinutesOverride.get.asInstanceOf[js.Any])
-    if (registryCredentialOverride != null) __obj.updateDynamic("registryCredentialOverride")(registryCredentialOverride.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportBuildStatusOverride)) __obj.updateDynamic("reportBuildStatusOverride")(reportBuildStatusOverride.get.asInstanceOf[js.Any])
-    if (secondaryArtifactsOverride != null) __obj.updateDynamic("secondaryArtifactsOverride")(secondaryArtifactsOverride.asInstanceOf[js.Any])
-    if (secondarySourcesOverride != null) __obj.updateDynamic("secondarySourcesOverride")(secondarySourcesOverride.asInstanceOf[js.Any])
-    if (secondarySourcesVersionOverride != null) __obj.updateDynamic("secondarySourcesVersionOverride")(secondarySourcesVersionOverride.asInstanceOf[js.Any])
-    if (serviceRoleOverride != null) __obj.updateDynamic("serviceRoleOverride")(serviceRoleOverride.asInstanceOf[js.Any])
-    if (sourceAuthOverride != null) __obj.updateDynamic("sourceAuthOverride")(sourceAuthOverride.asInstanceOf[js.Any])
-    if (sourceLocationOverride != null) __obj.updateDynamic("sourceLocationOverride")(sourceLocationOverride.asInstanceOf[js.Any])
-    if (sourceTypeOverride != null) __obj.updateDynamic("sourceTypeOverride")(sourceTypeOverride.asInstanceOf[js.Any])
-    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutInMinutesOverride)) __obj.updateDynamic("timeoutInMinutesOverride")(timeoutInMinutesOverride.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartBuildInput]
   }
+  @scala.inline
+  implicit class StartBuildInputOps[Self <: StartBuildInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProjectName(value: NonEmptyString): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArtifactsOverride(value: ProjectArtifacts): Self = this.set("artifactsOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactsOverride: Self = this.set("artifactsOverride", js.undefined)
+    @scala.inline
+    def setBuildStatusConfigOverride(value: BuildStatusConfig): Self = this.set("buildStatusConfigOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildStatusConfigOverride: Self = this.set("buildStatusConfigOverride", js.undefined)
+    @scala.inline
+    def setBuildspecOverride(value: String): Self = this.set("buildspecOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildspecOverride: Self = this.set("buildspecOverride", js.undefined)
+    @scala.inline
+    def setCacheOverride(value: ProjectCache): Self = this.set("cacheOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheOverride: Self = this.set("cacheOverride", js.undefined)
+    @scala.inline
+    def setCertificateOverride(value: String): Self = this.set("certificateOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateOverride: Self = this.set("certificateOverride", js.undefined)
+    @scala.inline
+    def setComputeTypeOverride(value: ComputeType): Self = this.set("computeTypeOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeTypeOverride: Self = this.set("computeTypeOverride", js.undefined)
+    @scala.inline
+    def setDebugSessionEnabled(value: WrapperBoolean): Self = this.set("debugSessionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugSessionEnabled: Self = this.set("debugSessionEnabled", js.undefined)
+    @scala.inline
+    def setEncryptionKeyOverride(value: NonEmptyString): Self = this.set("encryptionKeyOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKeyOverride: Self = this.set("encryptionKeyOverride", js.undefined)
+    @scala.inline
+    def setEnvironmentTypeOverride(value: EnvironmentType): Self = this.set("environmentTypeOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentTypeOverride: Self = this.set("environmentTypeOverride", js.undefined)
+    @scala.inline
+    def setEnvironmentVariablesOverrideVarargs(value: EnvironmentVariable*): Self = this.set("environmentVariablesOverride", js.Array(value :_*))
+    @scala.inline
+    def setEnvironmentVariablesOverride(value: EnvironmentVariables): Self = this.set("environmentVariablesOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentVariablesOverride: Self = this.set("environmentVariablesOverride", js.undefined)
+    @scala.inline
+    def setGitCloneDepthOverride(value: GitCloneDepth): Self = this.set("gitCloneDepthOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGitCloneDepthOverride: Self = this.set("gitCloneDepthOverride", js.undefined)
+    @scala.inline
+    def setGitSubmodulesConfigOverride(value: GitSubmodulesConfig): Self = this.set("gitSubmodulesConfigOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGitSubmodulesConfigOverride: Self = this.set("gitSubmodulesConfigOverride", js.undefined)
+    @scala.inline
+    def setIdempotencyToken(value: String): Self = this.set("idempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdempotencyToken: Self = this.set("idempotencyToken", js.undefined)
+    @scala.inline
+    def setImageOverride(value: NonEmptyString): Self = this.set("imageOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageOverride: Self = this.set("imageOverride", js.undefined)
+    @scala.inline
+    def setImagePullCredentialsTypeOverride(value: ImagePullCredentialsType): Self = this.set("imagePullCredentialsTypeOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePullCredentialsTypeOverride: Self = this.set("imagePullCredentialsTypeOverride", js.undefined)
+    @scala.inline
+    def setInsecureSslOverride(value: WrapperBoolean): Self = this.set("insecureSslOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsecureSslOverride: Self = this.set("insecureSslOverride", js.undefined)
+    @scala.inline
+    def setLogsConfigOverride(value: LogsConfig): Self = this.set("logsConfigOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogsConfigOverride: Self = this.set("logsConfigOverride", js.undefined)
+    @scala.inline
+    def setPrivilegedModeOverride(value: WrapperBoolean): Self = this.set("privilegedModeOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivilegedModeOverride: Self = this.set("privilegedModeOverride", js.undefined)
+    @scala.inline
+    def setQueuedTimeoutInMinutesOverride(value: TimeOut): Self = this.set("queuedTimeoutInMinutesOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueuedTimeoutInMinutesOverride: Self = this.set("queuedTimeoutInMinutesOverride", js.undefined)
+    @scala.inline
+    def setRegistryCredentialOverride(value: RegistryCredential): Self = this.set("registryCredentialOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryCredentialOverride: Self = this.set("registryCredentialOverride", js.undefined)
+    @scala.inline
+    def setReportBuildStatusOverride(value: WrapperBoolean): Self = this.set("reportBuildStatusOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportBuildStatusOverride: Self = this.set("reportBuildStatusOverride", js.undefined)
+    @scala.inline
+    def setSecondaryArtifactsOverrideVarargs(value: ProjectArtifacts*): Self = this.set("secondaryArtifactsOverride", js.Array(value :_*))
+    @scala.inline
+    def setSecondaryArtifactsOverride(value: ProjectArtifactsList): Self = this.set("secondaryArtifactsOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryArtifactsOverride: Self = this.set("secondaryArtifactsOverride", js.undefined)
+    @scala.inline
+    def setSecondarySourcesOverrideVarargs(value: ProjectSource*): Self = this.set("secondarySourcesOverride", js.Array(value :_*))
+    @scala.inline
+    def setSecondarySourcesOverride(value: ProjectSources): Self = this.set("secondarySourcesOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondarySourcesOverride: Self = this.set("secondarySourcesOverride", js.undefined)
+    @scala.inline
+    def setSecondarySourcesVersionOverrideVarargs(value: ProjectSourceVersion*): Self = this.set("secondarySourcesVersionOverride", js.Array(value :_*))
+    @scala.inline
+    def setSecondarySourcesVersionOverride(value: ProjectSecondarySourceVersions): Self = this.set("secondarySourcesVersionOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondarySourcesVersionOverride: Self = this.set("secondarySourcesVersionOverride", js.undefined)
+    @scala.inline
+    def setServiceRoleOverride(value: NonEmptyString): Self = this.set("serviceRoleOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRoleOverride: Self = this.set("serviceRoleOverride", js.undefined)
+    @scala.inline
+    def setSourceAuthOverride(value: SourceAuth): Self = this.set("sourceAuthOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceAuthOverride: Self = this.set("sourceAuthOverride", js.undefined)
+    @scala.inline
+    def setSourceLocationOverride(value: String): Self = this.set("sourceLocationOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLocationOverride: Self = this.set("sourceLocationOverride", js.undefined)
+    @scala.inline
+    def setSourceTypeOverride(value: SourceType): Self = this.set("sourceTypeOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceTypeOverride: Self = this.set("sourceTypeOverride", js.undefined)
+    @scala.inline
+    def setSourceVersion(value: String): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceVersion: Self = this.set("sourceVersion", js.undefined)
+    @scala.inline
+    def setTimeoutInMinutesOverride(value: TimeOut): Self = this.set("timeoutInMinutesOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInMinutesOverride: Self = this.set("timeoutInMinutesOverride", js.undefined)
+  }
+  
 }
 

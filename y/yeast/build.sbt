@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "yeast"
-version := "0.1-dt-20200515Z-37e70e"
-scalaVersion := "2.13.2"
+version := "0.1-dt-20200515Z-48a181"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

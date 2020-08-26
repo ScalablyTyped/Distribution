@@ -18,14 +18,30 @@ trait BucketPermissionConfiguration extends js.Object {
 
 object BucketPermissionConfiguration {
   @scala.inline
-  def apply(
-    accountLevelPermissions: AccountLevelPermissions = null,
-    bucketLevelPermissions: BucketLevelPermissions = null
-  ): BucketPermissionConfiguration = {
+  def apply(): BucketPermissionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (accountLevelPermissions != null) __obj.updateDynamic("accountLevelPermissions")(accountLevelPermissions.asInstanceOf[js.Any])
-    if (bucketLevelPermissions != null) __obj.updateDynamic("bucketLevelPermissions")(bucketLevelPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketPermissionConfiguration]
   }
+  @scala.inline
+  implicit class BucketPermissionConfigurationOps[Self <: BucketPermissionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountLevelPermissions(value: AccountLevelPermissions): Self = this.set("accountLevelPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountLevelPermissions: Self = this.set("accountLevelPermissions", js.undefined)
+    @scala.inline
+    def setBucketLevelPermissions(value: BucketLevelPermissions): Self = this.set("bucketLevelPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketLevelPermissions: Self = this.set("bucketLevelPermissions", js.undefined)
+  }
+  
 }
 

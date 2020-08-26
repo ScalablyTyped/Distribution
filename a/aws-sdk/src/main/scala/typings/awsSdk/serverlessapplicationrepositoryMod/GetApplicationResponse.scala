@@ -62,36 +62,76 @@ trait GetApplicationResponse extends js.Object {
 
 object GetApplicationResponse {
   @scala.inline
-  def apply(
-    ApplicationId: string = null,
-    Author: string = null,
-    CreationTime: string = null,
-    Description: string = null,
-    HomePageUrl: string = null,
-    IsVerifiedAuthor: js.UndefOr[boolean] = js.undefined,
-    Labels: listOfString = null,
-    LicenseUrl: string = null,
-    Name: string = null,
-    ReadmeUrl: string = null,
-    SpdxLicenseId: string = null,
-    VerifiedAuthorUrl: string = null,
-    Version: Version = null
-  ): GetApplicationResponse = {
+  def apply(): GetApplicationResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (Author != null) __obj.updateDynamic("Author")(Author.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (HomePageUrl != null) __obj.updateDynamic("HomePageUrl")(HomePageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsVerifiedAuthor)) __obj.updateDynamic("IsVerifiedAuthor")(IsVerifiedAuthor.get.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (LicenseUrl != null) __obj.updateDynamic("LicenseUrl")(LicenseUrl.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ReadmeUrl != null) __obj.updateDynamic("ReadmeUrl")(ReadmeUrl.asInstanceOf[js.Any])
-    if (SpdxLicenseId != null) __obj.updateDynamic("SpdxLicenseId")(SpdxLicenseId.asInstanceOf[js.Any])
-    if (VerifiedAuthorUrl != null) __obj.updateDynamic("VerifiedAuthorUrl")(VerifiedAuthorUrl.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApplicationResponse]
   }
+  @scala.inline
+  implicit class GetApplicationResponseOps[Self <: GetApplicationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    @scala.inline
+    def setAuthor(value: string): Self = this.set("Author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("Author", js.undefined)
+    @scala.inline
+    def setCreationTime(value: string): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setHomePageUrl(value: string): Self = this.set("HomePageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomePageUrl: Self = this.set("HomePageUrl", js.undefined)
+    @scala.inline
+    def setIsVerifiedAuthor(value: boolean): Self = this.set("IsVerifiedAuthor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsVerifiedAuthor: Self = this.set("IsVerifiedAuthor", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: string*): Self = this.set("Labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: listOfString): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+    @scala.inline
+    def setLicenseUrl(value: string): Self = this.set("LicenseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseUrl: Self = this.set("LicenseUrl", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setReadmeUrl(value: string): Self = this.set("ReadmeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadmeUrl: Self = this.set("ReadmeUrl", js.undefined)
+    @scala.inline
+    def setSpdxLicenseId(value: string): Self = this.set("SpdxLicenseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpdxLicenseId: Self = this.set("SpdxLicenseId", js.undefined)
+    @scala.inline
+    def setVerifiedAuthorUrl(value: string): Self = this.set("VerifiedAuthorUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifiedAuthorUrl: Self = this.set("VerifiedAuthorUrl", js.undefined)
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

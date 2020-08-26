@@ -1,35 +1,41 @@
 package typings.fridaGum
 
-import typings.fridaGum.anon.Value
 import typings.fridaGum.fridaGumStrings.pstate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Arm64PstateOperand
   extends Arm64BaseOperand
      with Arm64Operand {
-  var `type`: pstate
-  var value: Double
+  var `type`: pstate = js.native
+  var value: Double = js.native
 }
 
 object Arm64PstateOperand {
   @scala.inline
-  def apply(
-    `type`: pstate,
-    value: Double,
-    ext: Arm64Extender = null,
-    shift: Value = null,
-    vas: Arm64Vas = null,
-    vectorIndex: js.UndefOr[Double] = js.undefined
-  ): Arm64PstateOperand = {
+  def apply(`type`: pstate, value: Double): Arm64PstateOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (!js.isUndefined(vectorIndex)) __obj.updateDynamic("vectorIndex")(vectorIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64PstateOperand]
   }
+  @scala.inline
+  implicit class Arm64PstateOperandOps[Self <: Arm64PstateOperand] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: pstate): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+  }
+  
 }
 

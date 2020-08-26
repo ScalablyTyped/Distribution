@@ -1,17 +1,15 @@
 organization := "org.scalablytyped"
 name := "jest-config"
-version := "24.9.0-b8230c"
-scalaVersion := "2.13.2"
+version := "26.2.2-432789"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200515Z-901968",
-  "org.scalablytyped" %%% "jest-validate" % "25.5.0-cfd2ac",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-cdd098",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200521Z-3aabb7",
-  "org.scalablytyped" %%% "std" % "3.9-18cbeb",
-  "org.scalablytyped" %%% "yargs" % "15.0-dt-20200515Z-fe917d",
-  "org.scalablytyped" %%% "yargs-parser" % "15.0-dt-20200113Z-2f9616")
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200609Z-73ff2c",
+  "org.scalablytyped" %%% "jest-validate" % "26.2.0-f76d2e",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-dd389b",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

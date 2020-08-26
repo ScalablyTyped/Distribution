@@ -12,10 +12,26 @@ trait PartialClassNameMapMenuCl extends js.Object {
 
 object PartialClassNameMapMenuCl {
   @scala.inline
-  def apply(paper: String = null): PartialClassNameMapMenuCl = {
+  def apply(): PartialClassNameMapMenuCl = {
     val __obj = js.Dynamic.literal()
-    if (paper != null) __obj.updateDynamic("paper")(paper.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapMenuCl]
   }
+  @scala.inline
+  implicit class PartialClassNameMapMenuClOps[Self <: PartialClassNameMapMenuCl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPaper(value: String): Self = this.set("paper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaper: Self = this.set("paper", js.undefined)
+  }
+  
 }
 

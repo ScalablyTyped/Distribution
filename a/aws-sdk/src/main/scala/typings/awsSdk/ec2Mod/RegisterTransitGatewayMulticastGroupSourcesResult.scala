@@ -14,10 +14,26 @@ trait RegisterTransitGatewayMulticastGroupSourcesResult extends js.Object {
 
 object RegisterTransitGatewayMulticastGroupSourcesResult {
   @scala.inline
-  def apply(RegisteredMulticastGroupSources: TransitGatewayMulticastRegisteredGroupSources = null): RegisterTransitGatewayMulticastGroupSourcesResult = {
+  def apply(): RegisterTransitGatewayMulticastGroupSourcesResult = {
     val __obj = js.Dynamic.literal()
-    if (RegisteredMulticastGroupSources != null) __obj.updateDynamic("RegisteredMulticastGroupSources")(RegisteredMulticastGroupSources.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterTransitGatewayMulticastGroupSourcesResult]
   }
+  @scala.inline
+  implicit class RegisterTransitGatewayMulticastGroupSourcesResultOps[Self <: RegisterTransitGatewayMulticastGroupSourcesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegisteredMulticastGroupSources(value: TransitGatewayMulticastRegisteredGroupSources): Self = this.set("RegisteredMulticastGroupSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredMulticastGroupSources: Self = this.set("RegisteredMulticastGroupSources", js.undefined)
+  }
+  
 }
 

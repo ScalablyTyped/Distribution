@@ -105,6 +105,7 @@ trait Shape extends js.Object {
   def CanvasItems(Index: Double): typings.activexOffice.Office.Shape = js.native
   def Copy(): Unit = js.native
   def CopyPicture(): Unit = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): Unit = js.native
   def Cut(): Unit = js.native

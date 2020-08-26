@@ -1,6 +1,5 @@
 package typings.notifyjs.mod
 
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,31 +9,6 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends Notify {
   def this(title: String) = this()
   def this(title: String, options: INotifyOption) = this()
-  /**
-    * Close the notification.
-    */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Remove all event listener.
-    */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
-  /* CompleteClass */
-  override def handleEvent(e: Event): Unit = js.native
-  /* CompleteClass */
-  override def onClickNotification(): Unit = js.native
-  /* CompleteClass */
-  override def onCloseNotification(): Unit = js.native
-  /* CompleteClass */
-  override def onErrorNotification(): Unit = js.native
-  /* CompleteClass */
-  override def onShowNotification(e: Event): Unit = js.native
-  /**
-    * Show the notification.
-    */
-  /* CompleteClass */
-  override def show(): Unit = js.native
 }
 
 @JSImport("notifyjs", JSImport.Namespace)
@@ -61,6 +35,10 @@ object ^ extends js.Object {
     * @param onPermissionDeniedCallback  A callback for permission is denied.
     */
   def requestPermission(): Unit = js.native
+  def requestPermission(
+    onPermissionGrantedCallback: js.UndefOr[scala.Nothing],
+    onPermissionDeniedCallback: js.Function0[_]
+  ): Unit = js.native
   def requestPermission(onPermissionGrantedCallback: js.Function0[_]): Unit = js.native
   def requestPermission(onPermissionGrantedCallback: js.Function0[_], onPermissionDeniedCallback: js.Function0[_]): Unit = js.native
 }

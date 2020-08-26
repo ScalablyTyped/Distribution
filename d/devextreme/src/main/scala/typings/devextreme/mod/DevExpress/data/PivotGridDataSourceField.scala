@@ -37,177 +37,277 @@ import typings.devextreme.devextremeStrings.value
 import typings.devextreme.devextremeStrings.year
 import typings.devextreme.mod.DevExpress.ui.dxPivotGridSummaryCell
 import typings.devextreme.mod.DevExpress.ui.format
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PivotGridDataSourceField extends js.Object {
   /** @name PivotGridDataSource.Options.fields.allowCrossGroupCalculation */
-  var allowCrossGroupCalculation: js.UndefOr[Boolean] = js.undefined
+  var allowCrossGroupCalculation: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.allowExpandAll */
-  var allowExpandAll: js.UndefOr[Boolean] = js.undefined
+  var allowExpandAll: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.allowFiltering */
-  var allowFiltering: js.UndefOr[Boolean] = js.undefined
+  var allowFiltering: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.allowSorting */
-  var allowSorting: js.UndefOr[Boolean] = js.undefined
+  var allowSorting: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.allowSortingBySummary */
-  var allowSortingBySummary: js.UndefOr[Boolean] = js.undefined
+  var allowSortingBySummary: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.area */
-  var area: js.UndefOr[column | typings.devextreme.devextremeStrings.data | filter | row] = js.undefined
+  var area: js.UndefOr[column | typings.devextreme.devextremeStrings.data | filter | row] = js.native
   /** @name PivotGridDataSource.Options.fields.areaIndex */
-  var areaIndex: js.UndefOr[Double] = js.undefined
+  var areaIndex: js.UndefOr[Double] = js.native
   /** @name PivotGridDataSource.Options.fields.calculateCustomSummary */
-  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ SummaryProcess, _]] = js.undefined
+  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ SummaryProcess, _]] = js.native
   /** @name PivotGridDataSource.Options.fields.calculateSummaryValue */
-  var calculateSummaryValue: js.UndefOr[js.Function1[/* e */ dxPivotGridSummaryCell, Double]] = js.undefined
+  var calculateSummaryValue: js.UndefOr[js.Function1[/* e */ dxPivotGridSummaryCell, Double]] = js.native
   /** @name PivotGridDataSource.Options.fields.caption */
-  var caption: js.UndefOr[String] = js.undefined
+  var caption: js.UndefOr[String] = js.native
   /** @name PivotGridDataSource.Options.fields.customizeText */
-  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ Value, String]] = js.undefined
+  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ Value, String]] = js.native
   /** @name PivotGridDataSource.Options.fields.dataField */
-  var dataField: js.UndefOr[String] = js.undefined
+  var dataField: js.UndefOr[String] = js.native
   /** @name PivotGridDataSource.Options.fields.dataType */
-  var dataType: js.UndefOr[date | number | string_] = js.undefined
+  var dataType: js.UndefOr[date | number | string_] = js.native
   /** @name PivotGridDataSource.Options.fields.displayFolder */
-  var displayFolder: js.UndefOr[String] = js.undefined
+  var displayFolder: js.UndefOr[String] = js.native
   /** @name PivotGridDataSource.Options.fields.expanded */
-  var expanded: js.UndefOr[Boolean] = js.undefined
+  var expanded: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.filterType */
-  var filterType: js.UndefOr[exclude | include] = js.undefined
+  var filterType: js.UndefOr[exclude | include] = js.native
   /** @name PivotGridDataSource.Options.fields.filterValues */
-  var filterValues: js.UndefOr[js.Array[_]] = js.undefined
+  var filterValues: js.UndefOr[js.Array[_]] = js.native
   /** @name PivotGridDataSource.Options.fields.format */
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
   /** @name PivotGridDataSource.Options.fields.groupIndex */
-  var groupIndex: js.UndefOr[Double] = js.undefined
+  var groupIndex: js.UndefOr[Double] = js.native
   /** @name PivotGridDataSource.Options.fields.groupInterval */
-  var groupInterval: js.UndefOr[day | dayOfWeek | month | quarter | year | Double] = js.undefined
+  var groupInterval: js.UndefOr[day | dayOfWeek | month | quarter | year | Double] = js.native
   /** @name PivotGridDataSource.Options.fields.groupName */
-  var groupName: js.UndefOr[String] = js.undefined
+  var groupName: js.UndefOr[String] = js.native
   /** @name PivotGridDataSource.Options.fields.headerFilter */
-  var headerFilter: js.UndefOr[AllowSearch] = js.undefined
+  var headerFilter: js.UndefOr[AllowSearch] = js.native
   /** @name PivotGridDataSource.Options.fields.isMeasure */
-  var isMeasure: js.UndefOr[Boolean] = js.undefined
+  var isMeasure: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.name */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** @name PivotGridDataSource.Options.fields.runningTotal */
-  var runningTotal: js.UndefOr[column | row] = js.undefined
+  var runningTotal: js.UndefOr[column | row] = js.native
   /** @name PivotGridDataSource.Options.fields.selector */
-  var selector: js.UndefOr[js.Function] = js.undefined
+  var selector: js.UndefOr[js.Function] = js.native
   /** @name PivotGridDataSource.Options.fields.showGrandTotals */
-  var showGrandTotals: js.UndefOr[Boolean] = js.undefined
+  var showGrandTotals: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.showTotals */
-  var showTotals: js.UndefOr[Boolean] = js.undefined
+  var showTotals: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.showValues */
-  var showValues: js.UndefOr[Boolean] = js.undefined
+  var showValues: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.sortBy */
-  var sortBy: js.UndefOr[displayText | value | none] = js.undefined
+  var sortBy: js.UndefOr[displayText | value | none] = js.native
   /** @name PivotGridDataSource.Options.fields.sortBySummaryField */
-  var sortBySummaryField: js.UndefOr[String] = js.undefined
+  var sortBySummaryField: js.UndefOr[String] = js.native
   /** @name PivotGridDataSource.Options.fields.sortBySummaryPath */
-  var sortBySummaryPath: js.UndefOr[js.Array[Double | String]] = js.undefined
+  var sortBySummaryPath: js.UndefOr[js.Array[Double | String]] = js.native
   /** @name PivotGridDataSource.Options.fields.sortOrder */
-  var sortOrder: js.UndefOr[asc | desc] = js.undefined
+  var sortOrder: js.UndefOr[asc | desc] = js.native
   /** @name PivotGridDataSource.Options.fields.sortingMethod */
-  var sortingMethod: js.UndefOr[js.Function2[/* a */ Children, /* b */ Children, Double]] = js.undefined
+  var sortingMethod: js.UndefOr[js.Function2[/* a */ Children, /* b */ Children, Double]] = js.native
   /** @name PivotGridDataSource.Options.fields.summaryDisplayMode */
   var summaryDisplayMode: js.UndefOr[
     absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation
-  ] = js.undefined
+  ] = js.native
   /** @name PivotGridDataSource.Options.fields.summaryType */
-  var summaryType: js.UndefOr[avg | count | custom | max | min | sum | String] = js.undefined
+  var summaryType: js.UndefOr[avg | count | custom | max | min | sum | String] = js.native
   /** @name PivotGridDataSource.Options.fields.visible */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /** @name PivotGridDataSource.Options.fields.width */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
   /** @name PivotGridDataSource.Options.fields.wordWrapEnabled */
-  var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
+  var wordWrapEnabled: js.UndefOr[Boolean] = js.native
 }
 
 object PivotGridDataSourceField {
   @scala.inline
-  def apply(
-    allowCrossGroupCalculation: js.UndefOr[Boolean] = js.undefined,
-    allowExpandAll: js.UndefOr[Boolean] = js.undefined,
-    allowFiltering: js.UndefOr[Boolean] = js.undefined,
-    allowSorting: js.UndefOr[Boolean] = js.undefined,
-    allowSortingBySummary: js.UndefOr[Boolean] = js.undefined,
-    area: column | typings.devextreme.devextremeStrings.data | filter | row = null,
-    areaIndex: js.UndefOr[Double] = js.undefined,
-    calculateCustomSummary: /* options */ SummaryProcess => _ = null,
-    calculateSummaryValue: /* e */ dxPivotGridSummaryCell => Double = null,
-    caption: String = null,
-    customizeText: /* cellInfo */ Value => String = null,
-    dataField: String = null,
-    dataType: date | number | string_ = null,
-    displayFolder: String = null,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    filterType: exclude | include = null,
-    filterValues: js.Array[_] = null,
-    format: format = null,
-    groupIndex: js.UndefOr[Double] = js.undefined,
-    groupInterval: day | dayOfWeek | month | quarter | year | Double = null,
-    groupName: String = null,
-    headerFilter: AllowSearch = null,
-    isMeasure: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    runningTotal: column | row = null,
-    selector: js.Function = null,
-    showGrandTotals: js.UndefOr[Boolean] = js.undefined,
-    showTotals: js.UndefOr[Boolean] = js.undefined,
-    showValues: js.UndefOr[Boolean] = js.undefined,
-    sortBy: displayText | value | none = null,
-    sortBySummaryField: String = null,
-    sortBySummaryPath: js.Array[Double | String] = null,
-    sortOrder: asc | desc = null,
-    sortingMethod: (/* a */ Children, /* b */ Children) => Double = null,
-    summaryDisplayMode: absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation = null,
-    summaryType: avg | count | custom | max | min | sum | String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
-  ): PivotGridDataSourceField = {
+  def apply(): PivotGridDataSourceField = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCrossGroupCalculation)) __obj.updateDynamic("allowCrossGroupCalculation")(allowCrossGroupCalculation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExpandAll)) __obj.updateDynamic("allowExpandAll")(allowExpandAll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSortingBySummary)) __obj.updateDynamic("allowSortingBySummary")(allowSortingBySummary.get.asInstanceOf[js.Any])
-    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (!js.isUndefined(areaIndex)) __obj.updateDynamic("areaIndex")(areaIndex.get.asInstanceOf[js.Any])
-    if (calculateCustomSummary != null) __obj.updateDynamic("calculateCustomSummary")(js.Any.fromFunction1(calculateCustomSummary))
-    if (calculateSummaryValue != null) __obj.updateDynamic("calculateSummaryValue")(js.Any.fromFunction1(calculateSummaryValue))
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (customizeText != null) __obj.updateDynamic("customizeText")(js.Any.fromFunction1(customizeText))
-    if (dataField != null) __obj.updateDynamic("dataField")(dataField.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (displayFolder != null) __obj.updateDynamic("displayFolder")(displayFolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (filterValues != null) __obj.updateDynamic("filterValues")(filterValues.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupIndex)) __obj.updateDynamic("groupIndex")(groupIndex.get.asInstanceOf[js.Any])
-    if (groupInterval != null) __obj.updateDynamic("groupInterval")(groupInterval.asInstanceOf[js.Any])
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
-    if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMeasure)) __obj.updateDynamic("isMeasure")(isMeasure.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (runningTotal != null) __obj.updateDynamic("runningTotal")(runningTotal.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGrandTotals)) __obj.updateDynamic("showGrandTotals")(showGrandTotals.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValues)) __obj.updateDynamic("showValues")(showValues.get.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
-    if (sortBySummaryField != null) __obj.updateDynamic("sortBySummaryField")(sortBySummaryField.asInstanceOf[js.Any])
-    if (sortBySummaryPath != null) __obj.updateDynamic("sortBySummaryPath")(sortBySummaryPath.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (sortingMethod != null) __obj.updateDynamic("sortingMethod")(js.Any.fromFunction2(sortingMethod))
-    if (summaryDisplayMode != null) __obj.updateDynamic("summaryDisplayMode")(summaryDisplayMode.asInstanceOf[js.Any])
-    if (summaryType != null) __obj.updateDynamic("summaryType")(summaryType.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordWrapEnabled)) __obj.updateDynamic("wordWrapEnabled")(wordWrapEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridDataSourceField]
   }
+  @scala.inline
+  implicit class PivotGridDataSourceFieldOps[Self <: PivotGridDataSourceField] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowCrossGroupCalculation(value: Boolean): Self = this.set("allowCrossGroupCalculation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCrossGroupCalculation: Self = this.set("allowCrossGroupCalculation", js.undefined)
+    @scala.inline
+    def setAllowExpandAll(value: Boolean): Self = this.set("allowExpandAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowExpandAll: Self = this.set("allowExpandAll", js.undefined)
+    @scala.inline
+    def setAllowFiltering(value: Boolean): Self = this.set("allowFiltering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFiltering: Self = this.set("allowFiltering", js.undefined)
+    @scala.inline
+    def setAllowSorting(value: Boolean): Self = this.set("allowSorting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSorting: Self = this.set("allowSorting", js.undefined)
+    @scala.inline
+    def setAllowSortingBySummary(value: Boolean): Self = this.set("allowSortingBySummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSortingBySummary: Self = this.set("allowSortingBySummary", js.undefined)
+    @scala.inline
+    def setArea(value: column | typings.devextreme.devextremeStrings.data | filter | row): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArea: Self = this.set("area", js.undefined)
+    @scala.inline
+    def setAreaIndex(value: Double): Self = this.set("areaIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAreaIndex: Self = this.set("areaIndex", js.undefined)
+    @scala.inline
+    def setCalculateCustomSummary(value: /* options */ SummaryProcess => _): Self = this.set("calculateCustomSummary", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCalculateCustomSummary: Self = this.set("calculateCustomSummary", js.undefined)
+    @scala.inline
+    def setCalculateSummaryValue(value: /* e */ dxPivotGridSummaryCell => Double): Self = this.set("calculateSummaryValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCalculateSummaryValue: Self = this.set("calculateSummaryValue", js.undefined)
+    @scala.inline
+    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    @scala.inline
+    def setCustomizeText(value: /* cellInfo */ Value => String): Self = this.set("customizeText", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomizeText: Self = this.set("customizeText", js.undefined)
+    @scala.inline
+    def setDataField(value: String): Self = this.set("dataField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataField: Self = this.set("dataField", js.undefined)
+    @scala.inline
+    def setDataType(value: date | number | string_): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataType: Self = this.set("dataType", js.undefined)
+    @scala.inline
+    def setDisplayFolder(value: String): Self = this.set("displayFolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayFolder: Self = this.set("displayFolder", js.undefined)
+    @scala.inline
+    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    @scala.inline
+    def setFilterType(value: exclude | include): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    @scala.inline
+    def setFilterValuesVarargs(value: js.Any*): Self = this.set("filterValues", js.Array(value :_*))
+    @scala.inline
+    def setFilterValues(value: js.Array[_]): Self = this.set("filterValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterValues: Self = this.set("filterValues", js.undefined)
+    @scala.inline
+    def setFormatFunction1(value: /* value */ Double | Date => String): Self = this.set("format", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFormat(value: format): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGroupIndex(value: Double): Self = this.set("groupIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupIndex: Self = this.set("groupIndex", js.undefined)
+    @scala.inline
+    def setGroupInterval(value: day | dayOfWeek | month | quarter | year | Double): Self = this.set("groupInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupInterval: Self = this.set("groupInterval", js.undefined)
+    @scala.inline
+    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    @scala.inline
+    def setHeaderFilter(value: AllowSearch): Self = this.set("headerFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderFilter: Self = this.set("headerFilter", js.undefined)
+    @scala.inline
+    def setIsMeasure(value: Boolean): Self = this.set("isMeasure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMeasure: Self = this.set("isMeasure", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRunningTotal(value: column | row): Self = this.set("runningTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningTotal: Self = this.set("runningTotal", js.undefined)
+    @scala.inline
+    def setSelector(value: js.Function): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setShowGrandTotals(value: Boolean): Self = this.set("showGrandTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowGrandTotals: Self = this.set("showGrandTotals", js.undefined)
+    @scala.inline
+    def setShowTotals(value: Boolean): Self = this.set("showTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTotals: Self = this.set("showTotals", js.undefined)
+    @scala.inline
+    def setShowValues(value: Boolean): Self = this.set("showValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowValues: Self = this.set("showValues", js.undefined)
+    @scala.inline
+    def setSortBy(value: displayText | value | none): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    @scala.inline
+    def setSortBySummaryField(value: String): Self = this.set("sortBySummaryField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBySummaryField: Self = this.set("sortBySummaryField", js.undefined)
+    @scala.inline
+    def setSortBySummaryPathVarargs(value: (Double | String)*): Self = this.set("sortBySummaryPath", js.Array(value :_*))
+    @scala.inline
+    def setSortBySummaryPath(value: js.Array[Double | String]): Self = this.set("sortBySummaryPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBySummaryPath: Self = this.set("sortBySummaryPath", js.undefined)
+    @scala.inline
+    def setSortOrder(value: asc | desc): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    @scala.inline
+    def setSortingMethod(value: (/* a */ Children, /* b */ Children) => Double): Self = this.set("sortingMethod", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSortingMethod: Self = this.set("sortingMethod", js.undefined)
+    @scala.inline
+    def setSummaryDisplayMode(
+      value: absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation
+    ): Self = this.set("summaryDisplayMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaryDisplayMode: Self = this.set("summaryDisplayMode", js.undefined)
+    @scala.inline
+    def setSummaryType(value: avg | count | custom | max | min | sum | String): Self = this.set("summaryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaryType: Self = this.set("summaryType", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWordWrapEnabled(value: Boolean): Self = this.set("wordWrapEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWordWrapEnabled: Self = this.set("wordWrapEnabled", js.undefined)
+  }
+  
 }
 

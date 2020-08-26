@@ -44,24 +44,50 @@ trait SchemaRoleAssignment extends js.Object {
 
 object SchemaRoleAssignment {
   @scala.inline
-  def apply(
-    assignedTo: String = null,
-    etag: String = null,
-    kind: String = null,
-    orgUnitId: String = null,
-    roleAssignmentId: String = null,
-    roleId: String = null,
-    scopeType: String = null
-  ): SchemaRoleAssignment = {
+  def apply(): SchemaRoleAssignment = {
     val __obj = js.Dynamic.literal()
-    if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (orgUnitId != null) __obj.updateDynamic("orgUnitId")(orgUnitId.asInstanceOf[js.Any])
-    if (roleAssignmentId != null) __obj.updateDynamic("roleAssignmentId")(roleAssignmentId.asInstanceOf[js.Any])
-    if (roleId != null) __obj.updateDynamic("roleId")(roleId.asInstanceOf[js.Any])
-    if (scopeType != null) __obj.updateDynamic("scopeType")(scopeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRoleAssignment]
   }
+  @scala.inline
+  implicit class SchemaRoleAssignmentOps[Self <: SchemaRoleAssignment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignedTo(value: String): Self = this.set("assignedTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignedTo: Self = this.set("assignedTo", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setOrgUnitId(value: String): Self = this.set("orgUnitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrgUnitId: Self = this.set("orgUnitId", js.undefined)
+    @scala.inline
+    def setRoleAssignmentId(value: String): Self = this.set("roleAssignmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleAssignmentId: Self = this.set("roleAssignmentId", js.undefined)
+    @scala.inline
+    def setRoleId(value: String): Self = this.set("roleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleId: Self = this.set("roleId", js.undefined)
+    @scala.inline
+    def setScopeType(value: String): Self = this.set("scopeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScopeType: Self = this.set("scopeType", js.undefined)
+  }
+  
 }
 

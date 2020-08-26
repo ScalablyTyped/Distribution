@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * This service represents a stream contained within a {@link Package} . Instances of this class can only be constructed by the implementation of the
   * {@link Package} service.
   */
+@js.native
 trait PackageStream
   extends XNamed
      with XChild

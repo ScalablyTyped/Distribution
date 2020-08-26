@@ -29,32 +29,30 @@ class ImportMappingCall protected () extends Element {
     * In version 7.18.0: introduced
     */
   def commit: CommitEnum = js.native
-  def commit(newValue: CommitEnum): js.Any = js.native
+  def commit_=(newValue: CommitEnum): Unit = js.native
   def containerAsResultHandling: ResultHandling = js.native
   /**
     * In version 7.6.0: introduced
     */
   def contentType: ContentType = js.native
-  def contentType(newValue: ContentType): js.Any = js.native
+  def contentType_=(newValue: ContentType): Unit = js.native
   /**
     * In version 7.8.0: introduced
     */
   def forceSingleOccurrence: Boolean = js.native
-  def forceSingleOccurrence(newValue: Boolean): js.Any = js.native
-  def mapping(): js.Any = js.native
-  def mapping(newValue: IImportMapping): js.Any = js.native
+  def forceSingleOccurrence_=(newValue: Boolean): Unit = js.native
+  def mapping: IImportMapping | Null = js.native
   def mappingArgumentVariableName: String = js.native
-  def mappingArgumentVariableName(newValue: String): js.Any = js.native
+  def mappingArgumentVariableName_=(newValue: String): Unit = js.native
   def mappingQualifiedName: String | Null = js.native
-  @JSName("mapping")
-  def mapping_Union: IImportMapping | Null = js.native
+  def mapping_=(newValue: IImportMapping | Null): Unit = js.native
   /**
     * In version 7.17.0: introduced
     */
   def objectHandlingBackup: ObjectHandlingBackupEnum = js.native
-  def objectHandlingBackup(newValue: ObjectHandlingBackupEnum): js.Any = js.native
+  def objectHandlingBackup_=(newValue: ObjectHandlingBackupEnum): Unit = js.native
   def range: Range = js.native
-  def range(newValue: Range): js.Any = js.native
+  def range_=(newValue: Range): Unit = js.native
 }
 
 /* static members */

@@ -26,22 +26,16 @@ class ɵNgSelectMultipleOption protected () extends OnDestroy {
   var _select: js.Any = js.native
   var id: String = js.native
   /**
-    * A callback method that performs custom clean-up, invoked immediately
-    * before a directive, pipe, or service instance is destroyed.
-    */
-  /* CompleteClass */
-  override def ngOnDestroy(): Unit = js.native
-  /**
     * @description
     * Tracks the value bound to the option element. Unlike the value binding,
     * ngValue supports binding to objects.
     */
-  def ngValue(value: js.Any): js.Any = js.native
+  def ngValue_=(value: js.Any): Unit = js.native
   /**
     * @description
     * Tracks simple string values bound to the option element.
     * For objects, use the `ngValue` input binding.
     */
-  def value(value: js.Any): js.Any = js.native
+  def value_=(value: js.Any): Unit = js.native
 }
 

@@ -67,6 +67,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def addField(name: String, `type`: String): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: js.UndefOr[scala.Nothing], source: js.Any): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String, source: js.Any): js.Function0[Unit] = js.native
   /**
@@ -81,6 +82,7 @@ Instantiable0[js.Any] {
     * @param indent
     */
   def addLine(text: String): Unit = js.native
+  def addLine(text: String, url: js.UndefOr[scala.Nothing], indent: js.Any): Unit = js.native
   def addLine(text: String, url: String): Unit = js.native
   def addLine(text: String, url: String, indent: js.Any): Unit = js.native
   /**

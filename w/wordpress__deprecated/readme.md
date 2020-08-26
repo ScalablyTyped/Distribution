@@ -10,15 +10,14 @@ Deprecation utility for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/deprecated |
 | Keywords           | wordpress, deprecated |
-| # releases         | 23 |
-| # dependents       | 10 |
-| # downloads        | 154371 |
+| # releases         | 22 |
+| # dependents       | 11 |
+| # downloads        | 159106 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/deprecated/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fdeprecated)
     
 

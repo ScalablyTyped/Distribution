@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KnockoutObservable[T] extends js.Object {
   def publishOn(topic: String): KnockoutObservable[T] = js.native
+  def publishOn(
+    topic: String,
+    skipInitialPublish: js.UndefOr[scala.Nothing],
+    equalityComparer: js.Function2[/* newValue */ T, /* oldValue */ T, Boolean]
+  ): KnockoutObservable[T] = js.native
   def publishOn(topic: String, skipInitialPublish: Boolean): KnockoutObservable[T] = js.native
   def publishOn(
     topic: String,
@@ -15,6 +20,11 @@ trait KnockoutObservable[T] extends js.Object {
   ): KnockoutObservable[T] = js.native
   def stopPublishingOn(topic: String): KnockoutObservable[T] = js.native
   def subscribeTo(topic: String): KnockoutObservable[T] = js.native
+  def subscribeTo(
+    topic: String,
+    useLastPublishedValueToInitialize: js.UndefOr[scala.Nothing],
+    transform: js.Function1[/* val */ js.Any, T]
+  ): KnockoutObservable[T] = js.native
   def subscribeTo(topic: String, useLastPublishedValueToInitialize: Boolean): KnockoutObservable[T] = js.native
   def subscribeTo(
     topic: String,
@@ -22,7 +32,26 @@ trait KnockoutObservable[T] extends js.Object {
     transform: js.Function1[/* val */ js.Any, T]
   ): KnockoutObservable[T] = js.native
   def syncWith(topic: String): KnockoutObservable[T] = js.native
+  def syncWith(
+    topic: String,
+    initializeWithLatestValue: js.UndefOr[scala.Nothing],
+    skipInitialPublish: js.UndefOr[scala.Nothing],
+    equalityComparer: js.Function2[/* newValue */ T, /* oldValue */ T, Boolean]
+  ): KnockoutObservable[T] = js.native
+  def syncWith(topic: String, initializeWithLatestValue: js.UndefOr[scala.Nothing], skipInitialPublish: Boolean): KnockoutObservable[T] = js.native
+  def syncWith(
+    topic: String,
+    initializeWithLatestValue: js.UndefOr[scala.Nothing],
+    skipInitialPublish: Boolean,
+    equalityComparer: js.Function2[/* newValue */ T, /* oldValue */ T, Boolean]
+  ): KnockoutObservable[T] = js.native
   def syncWith(topic: String, initializeWithLatestValue: Boolean): KnockoutObservable[T] = js.native
+  def syncWith(
+    topic: String,
+    initializeWithLatestValue: Boolean,
+    skipInitialPublish: js.UndefOr[scala.Nothing],
+    equalityComparer: js.Function2[/* newValue */ T, /* oldValue */ T, Boolean]
+  ): KnockoutObservable[T] = js.native
   def syncWith(topic: String, initializeWithLatestValue: Boolean, skipInitialPublish: Boolean): KnockoutObservable[T] = js.native
   def syncWith(
     topic: String,

@@ -30,6 +30,7 @@ class WriteStream protected () extends Socket {
     */
   def cursorTo(x: Double): Boolean = js.native
   def cursorTo(x: Double, callback: js.Function0[Unit]): Boolean = js.native
+  def cursorTo(x: Double, y: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Boolean = js.native
   def cursorTo(x: Double, y: Double): Boolean = js.native
   def cursorTo(x: Double, y: Double, callback: js.Function0[Unit]): Boolean = js.native
   @JSName("emit")

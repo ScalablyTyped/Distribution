@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetFindingsRequest extends js.Object {
   /**
-    * The finding attributes used to define a condition to filter the returned findings.
+    * The finding attributes used to define a condition to filter the returned findings. Note that in the available filter fields, WorkflowState is deprecated. To search for a finding based on its workflow status, use WorkflowStatus.
     */
   var Filters: js.UndefOr[AwsSecurityFindingFilters] = js.native
   /**
@@ -26,18 +26,40 @@ trait GetFindingsRequest extends js.Object {
 
 object GetFindingsRequest {
   @scala.inline
-  def apply(
-    Filters: AwsSecurityFindingFilters = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    SortCriteria: SortCriteria = null
-  ): GetFindingsRequest = {
+  def apply(): GetFindingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SortCriteria != null) __obj.updateDynamic("SortCriteria")(SortCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFindingsRequest]
   }
+  @scala.inline
+  implicit class GetFindingsRequestOps[Self <: GetFindingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilters(value: AwsSecurityFindingFilters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSortCriteriaVarargs(value: SortCriterion*): Self = this.set("SortCriteria", js.Array(value :_*))
+    @scala.inline
+    def setSortCriteria(value: SortCriteria): Self = this.set("SortCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortCriteria: Self = this.set("SortCriteria", js.undefined)
+  }
+  
 }
 

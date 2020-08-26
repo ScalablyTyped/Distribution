@@ -77,7 +77,7 @@ trait Simulation[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: js.Unde
     * @param name Name of the registered force.
     * @param force Use null to remove force.
     */
-  def force(name: String): this.type = js.native
+  def force(name: String, force: Null): this.type = js.native
   /**
     * Assign the force for the specified name and return this simulation.
     * (By default, new simulations have no forces.)
@@ -95,8 +95,7 @@ trait Simulation[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: js.Unde
     *
     * @param name Name of the registered force.
     */
-  @JSName("force")
-  def force_F_ForceNodeDatumLinkDatum_Union[F /* <: Force[NodeDatum, LinkDatum] */](name: String): js.UndefOr[F] = js.native
+  def force[F /* <: Force[NodeDatum, LinkDatum] */](name: String): js.UndefOr[F] = js.native
   /**
     * Returns the simulation’s array of nodes as specified to the constructor.
     */

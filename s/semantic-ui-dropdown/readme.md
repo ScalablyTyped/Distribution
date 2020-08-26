@@ -12,7 +12,7 @@ Single component release of dropdown
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 74786 |
+| # downloads        | 75762 |
 | # stars            | 0 |
 
 ## Links

@@ -83,24 +83,54 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testActionResult extends js.Object {
 
 object SchemaGoogleDevtoolsRemoteexecutionV1testActionResult {
   @scala.inline
-  def apply(
-    exitCode: js.UndefOr[Double] = js.undefined,
-    outputDirectories: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory] = null,
-    outputFiles: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile] = null,
-    stderrDigest: SchemaGoogleDevtoolsRemoteexecutionV1testDigest = null,
-    stderrRaw: String = null,
-    stdoutDigest: SchemaGoogleDevtoolsRemoteexecutionV1testDigest = null,
-    stdoutRaw: String = null
-  ): SchemaGoogleDevtoolsRemoteexecutionV1testActionResult = {
+  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testActionResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
-    if (outputDirectories != null) __obj.updateDynamic("outputDirectories")(outputDirectories.asInstanceOf[js.Any])
-    if (outputFiles != null) __obj.updateDynamic("outputFiles")(outputFiles.asInstanceOf[js.Any])
-    if (stderrDigest != null) __obj.updateDynamic("stderrDigest")(stderrDigest.asInstanceOf[js.Any])
-    if (stderrRaw != null) __obj.updateDynamic("stderrRaw")(stderrRaw.asInstanceOf[js.Any])
-    if (stdoutDigest != null) __obj.updateDynamic("stdoutDigest")(stdoutDigest.asInstanceOf[js.Any])
-    if (stdoutRaw != null) __obj.updateDynamic("stdoutRaw")(stdoutRaw.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testActionResult]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testActionResultOps[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testActionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    @scala.inline
+    def setOutputDirectoriesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory*): Self = this.set("outputDirectories", js.Array(value :_*))
+    @scala.inline
+    def setOutputDirectories(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory]): Self = this.set("outputDirectories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDirectories: Self = this.set("outputDirectories", js.undefined)
+    @scala.inline
+    def setOutputFilesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile*): Self = this.set("outputFiles", js.Array(value :_*))
+    @scala.inline
+    def setOutputFiles(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile]): Self = this.set("outputFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFiles: Self = this.set("outputFiles", js.undefined)
+    @scala.inline
+    def setStderrDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = this.set("stderrDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStderrDigest: Self = this.set("stderrDigest", js.undefined)
+    @scala.inline
+    def setStderrRaw(value: String): Self = this.set("stderrRaw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStderrRaw: Self = this.set("stderrRaw", js.undefined)
+    @scala.inline
+    def setStdoutDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = this.set("stdoutDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdoutDigest: Self = this.set("stdoutDigest", js.undefined)
+    @scala.inline
+    def setStdoutRaw(value: String): Self = this.set("stdoutRaw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdoutRaw: Self = this.set("stdoutRaw", js.undefined)
+  }
+  
 }
 

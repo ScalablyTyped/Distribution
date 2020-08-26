@@ -36,20 +36,44 @@ trait SchemaCheckResponse extends js.Object {
 
 object SchemaCheckResponse {
   @scala.inline
-  def apply(
-    checkErrors: js.Array[SchemaCheckError] = null,
-    checkInfo: SchemaCheckInfo = null,
-    operationId: String = null,
-    quotaInfo: SchemaQuotaInfo = null,
-    serviceConfigId: String = null
-  ): SchemaCheckResponse = {
+  def apply(): SchemaCheckResponse = {
     val __obj = js.Dynamic.literal()
-    if (checkErrors != null) __obj.updateDynamic("checkErrors")(checkErrors.asInstanceOf[js.Any])
-    if (checkInfo != null) __obj.updateDynamic("checkInfo")(checkInfo.asInstanceOf[js.Any])
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (quotaInfo != null) __obj.updateDynamic("quotaInfo")(quotaInfo.asInstanceOf[js.Any])
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCheckResponse]
   }
+  @scala.inline
+  implicit class SchemaCheckResponseOps[Self <: SchemaCheckResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckErrorsVarargs(value: SchemaCheckError*): Self = this.set("checkErrors", js.Array(value :_*))
+    @scala.inline
+    def setCheckErrors(value: js.Array[SchemaCheckError]): Self = this.set("checkErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckErrors: Self = this.set("checkErrors", js.undefined)
+    @scala.inline
+    def setCheckInfo(value: SchemaCheckInfo): Self = this.set("checkInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckInfo: Self = this.set("checkInfo", js.undefined)
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setQuotaInfo(value: SchemaQuotaInfo): Self = this.set("quotaInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaInfo: Self = this.set("quotaInfo", js.undefined)
+    @scala.inline
+    def setServiceConfigId(value: String): Self = this.set("serviceConfigId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceConfigId: Self = this.set("serviceConfigId", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ a reducer enhancer to enable type-agnostic optimistic updates
 | Keywords           | redux, optimistic, latency-compensation, optimistic-ui |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 329199 |
+| # downloads        | 315403 |
 | # stars            | 3 |
 
 ## Links

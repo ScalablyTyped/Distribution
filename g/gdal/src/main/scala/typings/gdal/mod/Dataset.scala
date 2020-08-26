@@ -17,6 +17,7 @@ trait Dataset extends js.Object {
   def buildOverviews(resampling: Resampling, overviews: js.Array[Double], bands: js.Array[Double]): Unit = js.native
   def close(): Unit = js.native
   def executeSQL(statement: String): Layer = js.native
+  def executeSQL(statement: String, spatial_filter: js.UndefOr[scala.Nothing], dialect: String): Layer = js.native
   def executeSQL(statement: String, spatial_filter: Geometry): Layer = js.native
   def executeSQL(statement: String, spatial_filter: Geometry, dialect: String): Layer = js.native
   def flush(): Unit = js.native

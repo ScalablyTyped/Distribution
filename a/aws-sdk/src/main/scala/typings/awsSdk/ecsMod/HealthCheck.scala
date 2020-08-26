@@ -30,19 +30,42 @@ trait HealthCheck extends js.Object {
 
 object HealthCheck {
   @scala.inline
-  def apply(
-    command: StringList,
-    interval: js.UndefOr[BoxedInteger] = js.undefined,
-    retries: js.UndefOr[BoxedInteger] = js.undefined,
-    startPeriod: js.UndefOr[BoxedInteger] = js.undefined,
-    timeout: js.UndefOr[BoxedInteger] = js.undefined
-  ): HealthCheck = {
+  def apply(command: StringList): HealthCheck = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startPeriod)) __obj.updateDynamic("startPeriod")(startPeriod.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheck]
   }
+  @scala.inline
+  implicit class HealthCheckOps[Self <: HealthCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommandVarargs(value: String*): Self = this.set("command", js.Array(value :_*))
+    @scala.inline
+    def setCommand(value: StringList): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInterval(value: BoxedInteger): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setRetries(value: BoxedInteger): Self = this.set("retries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetries: Self = this.set("retries", js.undefined)
+    @scala.inline
+    def setStartPeriod(value: BoxedInteger): Self = this.set("startPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartPeriod: Self = this.set("startPeriod", js.undefined)
+    @scala.inline
+    def setTimeout(value: BoxedInteger): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

@@ -33,6 +33,7 @@ class ResourceSearchanalytics protected () extends js.Object {
     */
   def query(): GaxiosPromise[SchemaSearchAnalyticsQueryResponse] = js.native
   def query(callback: BodyResponseCallback[SchemaSearchAnalyticsQueryResponse]): Unit = js.native
+  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchAnalyticsQueryResponse] = js.native
   def query(params: ParamsResourceSearchanalyticsQuery): GaxiosPromise[SchemaSearchAnalyticsQueryResponse] = js.native
   def query(
     params: ParamsResourceSearchanalyticsQuery,

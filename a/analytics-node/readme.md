@@ -11,8 +11,8 @@ The hassle-free way to integrate analytics into any Node.js application
 | Full name          | analytics-node |
 | Keywords           | analytics, stats, segment.io, segmentio, segment, client, driver |
 | # releases         | 6 |
-| # dependents       | 77 |
-| # downloads        | 6835172 |
+| # dependents       | 78 |
+| # downloads        | 7042403 |
 | # stars            | 4 |
 
 ## Links

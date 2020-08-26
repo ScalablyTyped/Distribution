@@ -18,10 +18,28 @@ trait DeleteDistributionRequest extends js.Object {
 
 object DeleteDistributionRequest {
   @scala.inline
-  def apply(Id: String, IfMatch: String = null): DeleteDistributionRequest = {
+  def apply(Id: String): DeleteDistributionRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-    if (IfMatch != null) __obj.updateDynamic("IfMatch")(IfMatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDistributionRequest]
   }
+  @scala.inline
+  implicit class DeleteDistributionRequestOps[Self <: DeleteDistributionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIfMatch(value: String): Self = this.set("IfMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfMatch: Self = this.set("IfMatch", js.undefined)
+  }
+  
 }
 

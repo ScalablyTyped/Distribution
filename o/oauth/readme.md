@@ -12,7 +12,7 @@ Library for interacting with OAuth 1.0, 1.0A, 2 and Echo.  Provides simplified c
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 594 |
-| # downloads        | 15700365 |
+| # downloads        | 15669287 |
 | # stars            | 76 |
 
 ## Links

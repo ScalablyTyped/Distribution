@@ -11,7 +11,7 @@ MongoDB session store for connect/express built by MongoDB
 | Keywords           | connect, mongo, mongodb, session, express |
 | # releases         | 13 |
 | # dependents       | 32 |
-| # downloads        | 339489 |
+| # downloads        | 346758 |
 | # stars            | 10 |
 
 ## Links

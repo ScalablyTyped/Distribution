@@ -28,6 +28,8 @@ trait CanDeactivate extends js.Object {
   @JSName("$routerCanDeactivate")
   def $routerCanDeactivate(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
   @JSName("$routerCanDeactivate")
+  def $routerCanDeactivate(next: js.UndefOr[scala.Nothing], prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+  @JSName("$routerCanDeactivate")
   def $routerCanDeactivate(next: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
   @JSName("$routerCanDeactivate")
   def $routerCanDeactivate(next: ComponentInstruction, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native

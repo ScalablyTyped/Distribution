@@ -26,16 +26,34 @@ trait ModifyDBProxyTargetGroupRequest extends js.Object {
 
 object ModifyDBProxyTargetGroupRequest {
   @scala.inline
-  def apply(
-    DBProxyName: String,
-    TargetGroupName: String,
-    ConnectionPoolConfig: ConnectionPoolConfiguration = null,
-    NewName: String = null
-  ): ModifyDBProxyTargetGroupRequest = {
+  def apply(DBProxyName: String, TargetGroupName: String): ModifyDBProxyTargetGroupRequest = {
     val __obj = js.Dynamic.literal(DBProxyName = DBProxyName.asInstanceOf[js.Any], TargetGroupName = TargetGroupName.asInstanceOf[js.Any])
-    if (ConnectionPoolConfig != null) __obj.updateDynamic("ConnectionPoolConfig")(ConnectionPoolConfig.asInstanceOf[js.Any])
-    if (NewName != null) __obj.updateDynamic("NewName")(NewName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBProxyTargetGroupRequest]
   }
+  @scala.inline
+  implicit class ModifyDBProxyTargetGroupRequestOps[Self <: ModifyDBProxyTargetGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetGroupName(value: String): Self = this.set("TargetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPoolConfig(value: ConnectionPoolConfiguration): Self = this.set("ConnectionPoolConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionPoolConfig: Self = this.set("ConnectionPoolConfig", js.undefined)
+    @scala.inline
+    def setNewName(value: String): Self = this.set("NewName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewName: Self = this.set("NewName", js.undefined)
+  }
+  
 }
 

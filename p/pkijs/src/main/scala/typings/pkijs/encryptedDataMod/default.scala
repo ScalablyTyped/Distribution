@@ -1,8 +1,5 @@
 package typings.pkijs.encryptedDataMod
 
-import typings.pkijs.anon.ContentEncryptionAlgorithm
-import typings.pkijs.anon.Password
-import typings.std.ArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,31 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends EncryptedData {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var encryptedContentInfo: typings.pkijs.encryptedContentInfoMod.default = js.native
-  /* CompleteClass */
-  override var unprotectedAttrs: js.Array[typings.pkijs.attributeMod.default] = js.native
-  /* CompleteClass */
-  override var version: Double = js.native
-  /**
-    * Create a new CMS Encrypted Data content
-    * @param {*} parameters Parameters neccessary for encryption
-    */
-  /* CompleteClass */
-  override def decrypt(parameters: Password): js.Thenable[ArrayBuffer] = js.native
-  /**
-    * Create a new CMS Encrypted Data content
-    * @param {*} parameters Parameters neccessary for encryption
-    * @returns {Promise}
-    */
-  /* CompleteClass */
-  override def encrypt(parameters: ContentEncryptionAlgorithm): js.Thenable[ArrayBuffer] = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

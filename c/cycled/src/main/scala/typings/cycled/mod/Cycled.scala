@@ -29,11 +29,18 @@ trait Cycled[T] extends Array[T] {
   	*/
   def next(): T = js.native
   /**
+  	Returns the item that is located in the given amount of `steps` through the array. For example, calling `peek(2)` would get the item 2 items after the current one.
+  	You go backward by specifying a negative number.
+  	This method is similar to `.step()` but without changing the current item.
+  	*/
+  def peek(steps: Double): T = js.native
+  /**
   	Returns the previous item.
   	*/
   def previous(): T = js.native
   /**
-  	Returns the item by going the given amount of `steps` through the array. For example, calling `step(2)` is like calling `next()` twice. You go backward by specifying a negative number.
+  	Returns the item by going the given amount of `steps` through the array. For example, calling `step(2)` is like calling `next()` twice.
+  	You go backward by specifying a negative number.
   	*/
   def step(steps: Double): T = js.native
 }

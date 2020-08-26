@@ -29,16 +29,38 @@ trait SchemaInterconnectDiagnostics extends js.Object {
 
 object SchemaInterconnectDiagnostics {
   @scala.inline
-  def apply(
-    arpCaches: js.Array[SchemaInterconnectDiagnosticsARPEntry] = null,
-    links: js.Array[SchemaInterconnectDiagnosticsLinkStatus] = null,
-    macAddress: String = null
-  ): SchemaInterconnectDiagnostics = {
+  def apply(): SchemaInterconnectDiagnostics = {
     val __obj = js.Dynamic.literal()
-    if (arpCaches != null) __obj.updateDynamic("arpCaches")(arpCaches.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (macAddress != null) __obj.updateDynamic("macAddress")(macAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInterconnectDiagnostics]
   }
+  @scala.inline
+  implicit class SchemaInterconnectDiagnosticsOps[Self <: SchemaInterconnectDiagnostics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = this.set("arpCaches", js.Array(value :_*))
+    @scala.inline
+    def setArpCaches(value: js.Array[SchemaInterconnectDiagnosticsARPEntry]): Self = this.set("arpCaches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArpCaches: Self = this.set("arpCaches", js.undefined)
+    @scala.inline
+    def setLinksVarargs(value: SchemaInterconnectDiagnosticsLinkStatus*): Self = this.set("links", js.Array(value :_*))
+    @scala.inline
+    def setLinks(value: js.Array[SchemaInterconnectDiagnosticsLinkStatus]): Self = this.set("links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinks: Self = this.set("links", js.undefined)
+    @scala.inline
+    def setMacAddress(value: String): Self = this.set("macAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacAddress: Self = this.set("macAddress", js.undefined)
+  }
+  
 }
 

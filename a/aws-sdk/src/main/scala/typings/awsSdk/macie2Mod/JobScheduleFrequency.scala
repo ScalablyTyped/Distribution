@@ -7,31 +7,49 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JobScheduleFrequency extends js.Object {
   /**
-    * Run the job once a day, every day. If specified, this is an empty object.
+    * Specifies a daily recurrence pattern for running the job.
     */
   var dailySchedule: js.UndefOr[DailySchedule] = js.native
   /**
-    * Run the job once a month, on a specific day of the month. This value can be an integer from 1 through 30.
+    * Specifies a monthly recurrence pattern for running the job.
     */
   var monthlySchedule: js.UndefOr[MonthlySchedule] = js.native
   /**
-    * Run the job once a week, on a specific day of the week. Valid values are: MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, and SUNDAY.
+    * Specifies a weekly recurrence pattern for running the job.
     */
   var weeklySchedule: js.UndefOr[WeeklySchedule] = js.native
 }
 
 object JobScheduleFrequency {
   @scala.inline
-  def apply(
-    dailySchedule: DailySchedule = null,
-    monthlySchedule: MonthlySchedule = null,
-    weeklySchedule: WeeklySchedule = null
-  ): JobScheduleFrequency = {
+  def apply(): JobScheduleFrequency = {
     val __obj = js.Dynamic.literal()
-    if (dailySchedule != null) __obj.updateDynamic("dailySchedule")(dailySchedule.asInstanceOf[js.Any])
-    if (monthlySchedule != null) __obj.updateDynamic("monthlySchedule")(monthlySchedule.asInstanceOf[js.Any])
-    if (weeklySchedule != null) __obj.updateDynamic("weeklySchedule")(weeklySchedule.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobScheduleFrequency]
   }
+  @scala.inline
+  implicit class JobScheduleFrequencyOps[Self <: JobScheduleFrequency] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDailySchedule(value: DailySchedule): Self = this.set("dailySchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDailySchedule: Self = this.set("dailySchedule", js.undefined)
+    @scala.inline
+    def setMonthlySchedule(value: MonthlySchedule): Self = this.set("monthlySchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthlySchedule: Self = this.set("monthlySchedule", js.undefined)
+    @scala.inline
+    def setWeeklySchedule(value: WeeklySchedule): Self = this.set("weeklySchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeeklySchedule: Self = this.set("weeklySchedule", js.undefined)
+  }
+  
 }
 

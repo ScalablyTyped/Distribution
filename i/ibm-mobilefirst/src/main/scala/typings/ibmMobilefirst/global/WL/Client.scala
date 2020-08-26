@@ -1,8 +1,5 @@
 package typings.ibmMobilefirst.global.WL
 
-import typings.ibmMobilefirst.WL.Client.ChallengeHandlerAuthenticationOptions
-import typings.ibmMobilefirst.WL.Client.ChallengeHandlerSubmitLoginFormOptions
-import typings.ibmMobilefirst.WL.Client.ChallengehandlerInvocationData
 import typings.ibmMobilefirst.WL.Client.ConnectOptions
 import typings.ibmMobilefirst.WL.Client.EventTransmissionPolicy
 import typings.ibmMobilefirst.WL.Client.InitOptions
@@ -22,24 +19,7 @@ import scala.scalajs.js.annotation._
 object Client extends js.Object {
   @js.native
   class AbstractChallengeHandler ()
-    extends typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler {
-    /* CompleteClass */
-    override def handleChallenge(challenge: js.Any): Boolean = js.native
-    /* CompleteClass */
-    override def isCustomResponse(transport: js.Any): Boolean = js.native
-    /* CompleteClass */
-    override def submitAdapterAuthentication(invocationData: ChallengehandlerInvocationData, options: ChallengeHandlerAuthenticationOptions): Unit = js.native
-    /* CompleteClass */
-    override def submitFailure(error: String): Unit = js.native
-    /* CompleteClass */
-    override def submitLoginForm(
-      reqURL: String,
-      options: ChallengeHandlerSubmitLoginFormOptions,
-      submitLoginFormCallback: js.Function1[/* transport */ js.Any, Unit]
-    ): Unit = js.native
-    /* CompleteClass */
-    override def submitSuccess(): Unit = js.native
-  }
+    extends typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler
   
   def addGlobalHeader(headerName: String, headerValue: String): Unit = js.native
   def checkForDirectUpdate(options: Options): Unit = js.native

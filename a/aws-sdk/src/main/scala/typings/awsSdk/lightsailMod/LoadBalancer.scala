@@ -74,42 +74,94 @@ trait LoadBalancer extends js.Object {
 
 object LoadBalancer {
   @scala.inline
-  def apply(
-    arn: NonEmptyString = null,
-    configurationOptions: LoadBalancerConfigurationOptions = null,
-    createdAt: IsoDate = null,
-    dnsName: NonEmptyString = null,
-    healthCheckPath: NonEmptyString = null,
-    instanceHealthSummary: InstanceHealthSummaryList = null,
-    instancePort: js.UndefOr[integer] = js.undefined,
-    location: ResourceLocation = null,
-    name: ResourceName = null,
-    protocol: LoadBalancerProtocol = null,
-    publicPorts: PortList = null,
-    resourceType: ResourceType = null,
-    state: LoadBalancerState = null,
-    supportCode: String = null,
-    tags: TagList = null,
-    tlsCertificateSummaries: LoadBalancerTlsCertificateSummaryList = null
-  ): LoadBalancer = {
+  def apply(): LoadBalancer = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (configurationOptions != null) __obj.updateDynamic("configurationOptions")(configurationOptions.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
-    if (healthCheckPath != null) __obj.updateDynamic("healthCheckPath")(healthCheckPath.asInstanceOf[js.Any])
-    if (instanceHealthSummary != null) __obj.updateDynamic("instanceHealthSummary")(instanceHealthSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(instancePort)) __obj.updateDynamic("instancePort")(instancePort.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (publicPorts != null) __obj.updateDynamic("publicPorts")(publicPorts.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (supportCode != null) __obj.updateDynamic("supportCode")(supportCode.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (tlsCertificateSummaries != null) __obj.updateDynamic("tlsCertificateSummaries")(tlsCertificateSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancer]
   }
+  @scala.inline
+  implicit class LoadBalancerOps[Self <: LoadBalancer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setConfigurationOptions(value: LoadBalancerConfigurationOptions): Self = this.set("configurationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationOptions: Self = this.set("configurationOptions", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDnsName(value: NonEmptyString): Self = this.set("dnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("dnsName", js.undefined)
+    @scala.inline
+    def setHealthCheckPath(value: NonEmptyString): Self = this.set("healthCheckPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckPath: Self = this.set("healthCheckPath", js.undefined)
+    @scala.inline
+    def setInstanceHealthSummaryVarargs(value: InstanceHealthSummary*): Self = this.set("instanceHealthSummary", js.Array(value :_*))
+    @scala.inline
+    def setInstanceHealthSummary(value: InstanceHealthSummaryList): Self = this.set("instanceHealthSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceHealthSummary: Self = this.set("instanceHealthSummary", js.undefined)
+    @scala.inline
+    def setInstancePort(value: integer): Self = this.set("instancePort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancePort: Self = this.set("instancePort", js.undefined)
+    @scala.inline
+    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProtocol(value: LoadBalancerProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setPublicPortsVarargs(value: Port*): Self = this.set("publicPorts", js.Array(value :_*))
+    @scala.inline
+    def setPublicPorts(value: PortList): Self = this.set("publicPorts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicPorts: Self = this.set("publicPorts", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setState(value: LoadBalancerState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTlsCertificateSummariesVarargs(value: LoadBalancerTlsCertificateSummary*): Self = this.set("tlsCertificateSummaries", js.Array(value :_*))
+    @scala.inline
+    def setTlsCertificateSummaries(value: LoadBalancerTlsCertificateSummaryList): Self = this.set("tlsCertificateSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTlsCertificateSummaries: Self = this.set("tlsCertificateSummaries", js.undefined)
+  }
+  
 }
 

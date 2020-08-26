@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object recursiveReaddirSyncMod extends js.Object {
   def recursiveReadDirSync(dir: String): js.Array[String] = js.native
+  def recursiveReadDirSync(dir: String, arr: js.UndefOr[scala.Nothing], rootDir: String): js.Array[String] = js.native
   def recursiveReadDirSync(dir: String, arr: js.Array[String]): js.Array[String] = js.native
   def recursiveReadDirSync(dir: String, arr: js.Array[String], rootDir: String): js.Array[String] = js.native
 }

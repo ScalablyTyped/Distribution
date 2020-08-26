@@ -37,6 +37,12 @@ class TableService () extends BatchServiceClient {
     */
   def this(storageAccount: String, storageAccessKey: String) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String) = this()
+  def this(
+    storageAccount: String,
+    storageAccessKey: String,
+    host: js.UndefOr[scala.Nothing],
+    authenticationProvider: String
+  ) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String, authenticationProvider: String) = this()
   def createTable(table: String): Unit = js.native
   def createTable(table: String, callback: TableRequestCallback): Unit = js.native

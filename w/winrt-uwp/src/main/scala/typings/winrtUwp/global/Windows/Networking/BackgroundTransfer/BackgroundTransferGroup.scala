@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferGroup")
 @js.native
 abstract class BackgroundTransferGroup ()
-  extends typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup {
-  /** Gets the name of the group. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Gets or sets the property used to specify if transfers within this group run simultaneously or in serial. Possible values are defined by BackgroundTransferBehavior . */
-  /* CompleteClass */
-  override var transferBehavior: typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferBehavior = js.native
-}
+  extends typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup
 
 /* static members */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferGroup")

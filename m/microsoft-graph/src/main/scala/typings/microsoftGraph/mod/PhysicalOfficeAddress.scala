@@ -4,39 +4,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PhysicalOfficeAddress extends js.Object {
   // The city.
-  var city: js.UndefOr[String] = js.undefined
+  var city: js.UndefOr[String] = js.native
   // The country or region. It's a free-format string value, for example, 'United States'.
-  var countryOrRegion: js.UndefOr[String] = js.undefined
+  var countryOrRegion: js.UndefOr[String] = js.native
   // Office location such as building and office number for an organizational contact.
-  var officeLocation: js.UndefOr[String] = js.undefined
+  var officeLocation: js.UndefOr[String] = js.native
   // The postal code.
-  var postalCode: js.UndefOr[String] = js.undefined
+  var postalCode: js.UndefOr[String] = js.native
   // The state.
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String] = js.native
   // The street.
-  var street: js.UndefOr[String] = js.undefined
+  var street: js.UndefOr[String] = js.native
 }
 
 object PhysicalOfficeAddress {
   @scala.inline
-  def apply(
-    city: String = null,
-    countryOrRegion: String = null,
-    officeLocation: String = null,
-    postalCode: String = null,
-    state: String = null,
-    street: String = null
-  ): PhysicalOfficeAddress = {
+  def apply(): PhysicalOfficeAddress = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (countryOrRegion != null) __obj.updateDynamic("countryOrRegion")(countryOrRegion.asInstanceOf[js.Any])
-    if (officeLocation != null) __obj.updateDynamic("officeLocation")(officeLocation.asInstanceOf[js.Any])
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (street != null) __obj.updateDynamic("street")(street.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhysicalOfficeAddress]
   }
+  @scala.inline
+  implicit class PhysicalOfficeAddressOps[Self <: PhysicalOfficeAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("city", js.undefined)
+    @scala.inline
+    def setCountryOrRegion(value: String): Self = this.set("countryOrRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryOrRegion: Self = this.set("countryOrRegion", js.undefined)
+    @scala.inline
+    def setOfficeLocation(value: String): Self = this.set("officeLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfficeLocation: Self = this.set("officeLocation", js.undefined)
+    @scala.inline
+    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalCode: Self = this.set("postalCode", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStreet(value: String): Self = this.set("street", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreet: Self = this.set("street", js.undefined)
+  }
+  
 }
 

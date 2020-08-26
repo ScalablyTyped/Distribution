@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/starting-microflows relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/on-click-event relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MicroflowSettings")
 @js.native
@@ -30,11 +30,9 @@ class MicroflowSettings protected () extends Element {
   @JSName("model")
   var model_FMicroflowSettings: IModel = js.native
   def asynchronous: Boolean = js.native
-  def asynchronous(newValue: Boolean): js.Any = js.native
-  def confirmationInfo(): js.Any = js.native
-  def confirmationInfo(newValue: ConfirmationInfo): js.Any = js.native
-  @JSName("confirmationInfo")
-  def confirmationInfo_Union: ConfirmationInfo | Null = js.native
+  def asynchronous_=(newValue: Boolean): Unit = js.native
+  def confirmationInfo: ConfirmationInfo | Null = js.native
+  def confirmationInfo_=(newValue: ConfirmationInfo | Null): Unit = js.native
   def containerAsAssociationWidget: AssociationWidget = js.native
   def containerAsAttributeWidget: AttributeWidget = js.native
   def containerAsMicroflowClientAction: MicroflowClientAction = js.native
@@ -43,27 +41,23 @@ class MicroflowSettings protected () extends Element {
   def containerAsReferenceSetSelector: ReferenceSetSelector = js.native
   def containerAsSelectorMicroflowSource: SelectorMicroflowSource = js.native
   def formValidations: FormValidations = js.native
-  def formValidations(newValue: FormValidations): js.Any = js.native
-  def microflow(): js.Any = js.native
-  def microflow(newValue: IMicroflow): js.Any = js.native
+  def formValidations_=(newValue: FormValidations): Unit = js.native
+  def microflow: IMicroflow | Null = js.native
   def microflowQualifiedName: String | Null = js.native
-  @JSName("microflow")
-  def microflow_Union: IMicroflow | Null = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
   /**
     * In version 7.19.0: introduced
     */
   def parameterMappings: IList[MicroflowParameterMapping] = js.native
   def progressBar: ProgressBarType = js.native
-  def progressBar(newValue: ProgressBarType): js.Any = js.native
-  def progressMessage(): js.Any = js.native
-  def progressMessage(newValue: Text): js.Any = js.native
-  @JSName("progressMessage")
-  def progressMessage_Union: Text | Null = js.native
+  def progressBar_=(newValue: ProgressBarType): Unit = js.native
+  def progressMessage: Text | Null = js.native
+  def progressMessage_=(newValue: Text | Null): Unit = js.native
   /**
     * In version 7.19.0: deleted
     */
   def useAllPages: Boolean = js.native
-  def useAllPages(newValue: Boolean): js.Any = js.native
+  def useAllPages_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

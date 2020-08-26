@@ -7,40 +7,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AlertProps
   extends AllHTMLAttributes[Alert]
      with ClassAttributes[Alert] {
-  var bsClass: js.UndefOr[String] = js.undefined
-  var bsSize: js.UndefOr[Sizes] = js.undefined
-  var bsStyle: js.UndefOr[String] = js.undefined
-  var closeLabel: js.UndefOr[String] = js.undefined
-  /** @deprecated since v0.29.0 */ var dismissAfter: js.UndefOr[Double] = js.undefined
+  var bsClass: js.UndefOr[String] = js.native
+  var bsSize: js.UndefOr[Sizes] = js.native
+  var bsStyle: js.UndefOr[String] = js.native
+  var closeLabel: js.UndefOr[String] = js.native
+  /** @deprecated since v0.29.0 */ var dismissAfter: js.UndefOr[Double] = js.native
   // TODO: Add more specific type
-  var onDismiss: js.UndefOr[js.Function] = js.undefined
+  var onDismiss: js.UndefOr[js.Function] = js.native
 }
 
 object AlertProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[Alert] = null,
-    ClassAttributes: ClassAttributes[Alert] = null,
-    bsClass: String = null,
-    bsSize: Sizes = null,
-    bsStyle: String = null,
-    closeLabel: String = null,
-    dismissAfter: js.UndefOr[Double] = js.undefined,
-    onDismiss: js.Function = null
-  ): AlertProps = {
+  def apply(): AlertProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
-    if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissAfter)) __obj.updateDynamic("dismissAfter")(dismissAfter.get.asInstanceOf[js.Any])
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertProps]
   }
+  @scala.inline
+  implicit class AlertPropsOps[Self <: AlertProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBsClass(value: String): Self = this.set("bsClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsClass: Self = this.set("bsClass", js.undefined)
+    @scala.inline
+    def setBsSize(value: Sizes): Self = this.set("bsSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsSize: Self = this.set("bsSize", js.undefined)
+    @scala.inline
+    def setBsStyle(value: String): Self = this.set("bsStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsStyle: Self = this.set("bsStyle", js.undefined)
+    @scala.inline
+    def setCloseLabel(value: String): Self = this.set("closeLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseLabel: Self = this.set("closeLabel", js.undefined)
+    @scala.inline
+    def setDismissAfter(value: Double): Self = this.set("dismissAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDismissAfter: Self = this.set("dismissAfter", js.undefined)
+    @scala.inline
+    def setOnDismiss(value: js.Function): Self = this.set("onDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+  }
+  
 }
 

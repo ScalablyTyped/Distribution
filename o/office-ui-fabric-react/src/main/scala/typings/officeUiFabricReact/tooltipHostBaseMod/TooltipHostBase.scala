@@ -31,16 +31,6 @@ class TooltipHostBase protected ()
   var _tooltipHost: js.Any = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MTooltipHostBase(): Unit = js.native
-  /**
-    * Dismisses the tooltip.
-    */
-  /* CompleteClass */
-  override def dismiss(): Unit = js.native
-  /**
-    * Shows the tooltip.
-    */
-  /* CompleteClass */
-  override def show(): Unit = js.native
 }
 
 /* static members */

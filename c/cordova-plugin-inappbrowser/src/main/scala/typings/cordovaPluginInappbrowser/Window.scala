@@ -15,6 +15,7 @@ trait Window extends js.Object {
     *                 name/value pairs must be separated by a comma. Feature names are case insensitive.
     */
   def open(url: String): InAppBrowser = js.native
+  def open(url: String, target: js.UndefOr[scala.Nothing], options: String): InAppBrowser = js.native
   def open(url: String, target: String): InAppBrowser = js.native
   def open(url: String, target: String, options: String): InAppBrowser = js.native
 }

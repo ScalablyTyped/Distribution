@@ -14,9 +14,187 @@ trait UIObject extends js.Object {
   def SetSaveAsDialogLocation(bstrLocation: String): Unit = js.native
   def ShowMailItem(bstrTo: String, bstrCC: String, bstrBCC: String, bstrSubject: String, bstrBody: String): Unit = js.native
   def ShowModalDialog(bstrName: String): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.UndefOr[scala.Nothing],
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.Any,
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.Any,
+    varTop: js.UndefOr[scala.Nothing],
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.Any,
+    varTop: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.Any,
+    varTop: js.Any,
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: js.UndefOr[scala.Nothing], varHeight: js.Any): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.Any,
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.UndefOr[scala.Nothing],
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.Any,
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.Any,
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.Any,
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: js.UndefOr[scala.Nothing], varHeight: js.Any, varWidth: js.Any): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.Any,
+    varWidth: js.Any,
+    varTop: js.UndefOr[scala.Nothing],
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.Any,
+    varWidth: js.Any,
+    varTop: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.UndefOr[scala.Nothing],
+    varHeight: js.Any,
+    varWidth: js.Any,
+    varTop: js.Any,
+    varLeft: js.Any
+  ): js.Any = js.native
   def ShowModalDialog(bstrName: String, varArguments: js.Any): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.UndefOr[scala.Nothing],
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.Any,
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: js.UndefOr[scala.Nothing], varWidth: js.Any): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.Any,
+    varTop: js.UndefOr[scala.Nothing],
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.Any,
+    varTop: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.UndefOr[scala.Nothing],
+    varWidth: js.Any,
+    varTop: js.Any,
+    varLeft: js.Any
+  ): js.Any = js.native
   def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: js.Any): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.Any,
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.UndefOr[scala.Nothing],
+    varLeft: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.Any,
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.Any
+  ): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.Any,
+    varWidth: js.UndefOr[scala.Nothing],
+    varTop: js.Any,
+    varLeft: js.Any
+  ): js.Any = js.native
   def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: js.Any, varWidth: js.Any): js.Any = js.native
+  def ShowModalDialog(
+    bstrName: String,
+    varArguments: js.Any,
+    varHeight: js.Any,
+    varWidth: js.Any,
+    varTop: js.UndefOr[scala.Nothing],
+    varLeft: js.Any
+  ): js.Any = js.native
   def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: js.Any, varWidth: js.Any, varTop: js.Any): js.Any = js.native
   def ShowModalDialog(
     bstrName: String,

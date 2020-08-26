@@ -7,6 +7,7 @@ import typings.nodegit.checkoutMod.Checkout.NOTIFY
 import typings.nodegit.checkoutMod.Checkout.STRATEGY
 import typings.nodegit.cloneMod.Clone.LOCAL
 import typings.nodegit.configMod.Config.LEVEL
+import typings.nodegit.configMod.Config.MAP
 import typings.nodegit.diffBinaryMod.DiffBinary.DIFF_BINARY
 import typings.nodegit.diffMod.Diff.DELTA
 import typings.nodegit.diffMod.Diff.FIND
@@ -159,6 +160,7 @@ object nodegitNumbers {
        with FLAGS
        with FORMAT_EMAIL_FLAGS
        with LOCAL
+       with MAP
        with MODE
        with NORMALIZE
        with NOTIFY
@@ -212,6 +214,7 @@ object nodegitNumbers {
        with IGNORE
        with LEVEL
        with LOCAL
+       with MAP
        with MODE
        with typings.nodegit.revParseMod.Revparse.MODE
        with NORMALIZE
@@ -363,6 +366,7 @@ object nodegitNumbers {
        with IGNORE
        with LEVEL
        with LOCAL
+       with MAP
        with typings.nodegit.revParseMod.Revparse.MODE
        with NORMALIZE
        with NOTIFY
@@ -468,6 +472,7 @@ object nodegitNumbers {
        with IGNORE
        with LEVEL
        with LOCAL
+       with MAP
        with OPT
        with REBASE_OPERATION
        with STATES

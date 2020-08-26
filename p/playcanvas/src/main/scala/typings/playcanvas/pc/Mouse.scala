@@ -37,24 +37,25 @@ trait Mouse extends EventHandler {
   def enableContextMenu(): Unit = js.native
   /**
     * Request that the browser hides the mouse cursor and locks the mouse to the element.
-    Allowing raw access to mouse movement input without risking the mouse exiting the element.
-    Notes:
-    
-    * In some browsers this will only work when the browser is running in fullscreen mode. See {@link pc.Application#enableFullscreen}
-    * Enabling pointer lock can only be initiated by a user action e.g. in the event handler for a mouse or keyboard input.
+    * Allowing raw access to mouse movement input without risking the mouse exiting the element.
+    * Notes:
+    *
+    * * In some browsers this will only work when the browser is running in fullscreen mode. See {@link pc.Application#enableFullscreen}
+    * * Enabling pointer lock can only be initiated by a user action e.g. in the event handler for a mouse or keyboard input.
     * @param [success] - Function called if the request for mouse lock is successful.
     * @param [error] - Function called if the request for mouse lock is unsuccessful.
     */
   def enablePointerLock(): Unit = js.native
+  def enablePointerLock(success: js.UndefOr[scala.Nothing], error: LockMouse): Unit = js.native
   def enablePointerLock(success: LockMouse): Unit = js.native
   def enablePointerLock(success: LockMouse, error: LockMouse): Unit = js.native
   /**
     * Returns true if the mouse button is currently pressed.
     * @param button - The mouse button to test. Can be:
-    
-    * {@link pc.MOUSEBUTTON_LEFT}
-    * {@link pc.MOUSEBUTTON_MIDDLE}
-    * {@link pc.MOUSEBUTTON_RIGHT}
+    *
+    * * {@link pc.MOUSEBUTTON_LEFT}
+    * * {@link pc.MOUSEBUTTON_MIDDLE}
+    * * {@link pc.MOUSEBUTTON_RIGHT}
     * @returns True if the mouse button is current pressed.
     */
   def isPressed(button: Double): Boolean = js.native
@@ -65,20 +66,20 @@ trait Mouse extends EventHandler {
   /**
     * Returns true if the mouse button was pressed this frame (since the last call to update).
     * @param button - The mouse button to test. Can be:
-    
-    * {@link pc.MOUSEBUTTON_LEFT}
-    * {@link pc.MOUSEBUTTON_MIDDLE}
-    * {@link pc.MOUSEBUTTON_RIGHT}
+    *
+    * * {@link pc.MOUSEBUTTON_LEFT}
+    * * {@link pc.MOUSEBUTTON_MIDDLE}
+    * * {@link pc.MOUSEBUTTON_RIGHT}
     * @returns True if the mouse button was pressed since the last update.
     */
   def wasPressed(button: Double): Boolean = js.native
   /**
     * Returns true if the mouse button was released this frame (since the last call to update).
     * @param button - The mouse button to test. Can be:
-    
-    * {@link pc.MOUSEBUTTON_LEFT}
-    * {@link pc.MOUSEBUTTON_MIDDLE}
-    * {@link pc.MOUSEBUTTON_RIGHT}
+    *
+    * * {@link pc.MOUSEBUTTON_LEFT}
+    * * {@link pc.MOUSEBUTTON_MIDDLE}
+    * * {@link pc.MOUSEBUTTON_RIGHT}
     * @returns True if the mouse button was released since the last update.
     */
   def wasReleased(button: Double): Boolean = js.native

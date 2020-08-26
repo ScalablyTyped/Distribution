@@ -313,6 +313,7 @@ object tile extends js.Object {
   class layer protected () extends js.Object {
     def this(id: String) = this()
     def this(id: String, useBackdrop: Boolean) = this()
+    def this(id: String, useBackdrop: js.UndefOr[scala.Nothing], maxConcurrentRequests: Double) = this()
     def this(id: String, useBackdrop: Boolean, maxConcurrentRequests: Double) = this()
     /**
       * Composes an array of quadtiles with composition information and

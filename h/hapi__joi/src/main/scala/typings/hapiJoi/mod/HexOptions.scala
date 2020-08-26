@@ -4,20 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HexOptions extends js.Object {
   /**
     * hex decoded representation must be byte aligned.
     * @default false
     */
-  var byteAligned: js.UndefOr[Boolean] = js.undefined
+  var byteAligned: js.UndefOr[Boolean] = js.native
 }
 
 object HexOptions {
   @scala.inline
-  def apply(byteAligned: js.UndefOr[Boolean] = js.undefined): HexOptions = {
+  def apply(): HexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(byteAligned)) __obj.updateDynamic("byteAligned")(byteAligned.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HexOptions]
   }
+  @scala.inline
+  implicit class HexOptionsOps[Self <: HexOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setByteAligned(value: Boolean): Self = this.set("byteAligned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByteAligned: Self = this.set("byteAligned", js.undefined)
+  }
+  
 }
 

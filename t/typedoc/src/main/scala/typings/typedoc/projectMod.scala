@@ -22,7 +22,7 @@ object projectMod extends js.Object {
     var getReferenceGraph: js.Any = js.native
     var packageInfo: js.Any = js.native
     var readme: js.UndefOr[String] = js.native
-    var referenceGraph: js.UndefOr[js.Any] = js.native
+    var referenceGraph: js.Any = js.native
     var reflectionToSymbolIdMap: js.Any = js.native
     var reflections: NumberDictionary[Reflection] = js.native
     var symbolIdToReflectionIdMap: js.Any = js.native

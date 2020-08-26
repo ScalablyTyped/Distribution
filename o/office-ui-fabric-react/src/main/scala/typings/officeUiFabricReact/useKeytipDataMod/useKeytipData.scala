@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.useKeytipDataMod
 
+import typings.officeUiFabricReact.keytipDataTypesMod.KeytipDataOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

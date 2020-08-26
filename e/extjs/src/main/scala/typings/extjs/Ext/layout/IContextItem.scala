@@ -2,45 +2,45 @@ package typings.extjs.Ext.layout
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.extjs.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IContextItem extends IBase {
   /** [Method] Queue the addition of a class name or array of class names to this ContextItem s target when next flushed
     * @param newCls Object
     */
-  var addCls: js.UndefOr[js.Function1[/* newCls */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addCls: js.UndefOr[js.Function1[/* newCls */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Registers a layout in the block list for the given property
     * @param layout Ext.layout.Layout
     * @param propName String The property name that blocked the layout (e.g., 'width').
     */
   var block: js.UndefOr[
     js.Function2[/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] clears the margin cache so that marginInfo get re read from the dom on the next call to getMarginInfo  This is neede  */
-  var clearMarginCache: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var clearMarginCache: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Registers a layout in the DOM block list for the given property
     * @param layout Ext.layout.Layout
     * @param propName String The property name that blocked the layout (e.g., 'width').
     */
   var domBlock: js.UndefOr[
     js.Function2[/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Flushes any updates in the dirty collection to the DOM  */
-  var flush: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var flush: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Gets the border information for the element as an object with left top right and bottom properties holding border s
     * @returns Object
     */
-  var getBorderInfo: js.UndefOr[js.Function0[_]] = js.undefined
+  var getBorderInfo: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns a ClassList like object to buffer access to this item s element s classes  */
-  var getClassList: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var getClassList: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Gets a property of this object if it is correct in the DOM
     * @param propName String The property name (e.g., 'width').
     * @returns Object The property value or undefined if not yet set or is dirty.
     */
-  var getDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], _]] = js.undefined
+  var getDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], _]] = js.native
   /** [Method] Returns the context item for an owned element
     * @param nameOrEl String/Ext.dom.Element The element or the name of an owned element
     * @param owner Ext.layout.container.Container/Ext.Component The owner of the named element if the passed "nameOrEl" parameter is a String. Defaults to this ContextItem's "target" property. For more details on owned elements see childEls and renderSelectors
@@ -48,29 +48,29 @@ trait IContextItem extends IBase {
     */
   var getEl: js.UndefOr[
     js.Function2[/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Gets the frame information for the element as an object with left top right and bottom properties holding border
     * @returns Object
     */
-  var getFrameInfo: js.UndefOr[js.Function0[_]] = js.undefined
+  var getFrameInfo: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Gets the margin information for the element as an object with left top right and bottom properties holding margin s
     * @returns Object
     */
-  var getMarginInfo: js.UndefOr[js.Function0[_]] = js.undefined
+  var getMarginInfo: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Gets the padding information for the element as an object with left top right and bottom properties holding padding
     * @returns Object
     */
-  var getPaddingInfo: js.UndefOr[js.Function0[_]] = js.undefined
+  var getPaddingInfo: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Gets a property of this object
     * @param propName String The property name that blocked the layout (e.g., 'width').
     * @returns Object The property value or undefined if not yet set.
     */
-  var getProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], _]] = js.undefined
+  var getProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], _]] = js.native
   /** [Method] Returns a style for this item
     * @param styleName String The CSS style name.
     * @returns Object The value of the DOM style (parsed as necessary).
     */
-  var getStyle: js.UndefOr[js.Function1[/* styleName */ js.UndefOr[String], _]] = js.undefined
+  var getStyle: js.UndefOr[js.Function1[/* styleName */ js.UndefOr[String], _]] = js.native
   /** [Method] Returns styles for this item
     * @param styleNames String[] The CSS style names.
     * @param altNames String[] The alternate names for the returned styles. If given, these names must correspond one-for-one to the styleNames.
@@ -78,21 +78,21 @@ trait IContextItem extends IBase {
     */
   var getStyles: js.UndefOr[
     js.Function2[/* styleNames */ js.UndefOr[Array], /* altNames */ js.UndefOr[Array], _]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns true if the given property is correct in the DOM
     * @param propName String The property name (e.g., 'width').
     * @returns Boolean
     */
-  var hasDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.undefined
+  var hasDomProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.native
   /** [Method] Returns true if the given property has been set
     * @param propName String The property name (e.g., 'width').
     * @returns Boolean
     */
-  var hasProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.undefined
+  var hasProp: js.UndefOr[js.Function1[/* propName */ js.UndefOr[String], Boolean]] = js.native
   /** [Method] Invalidates the component associated with this item
     * @param options Object An object describing how to handle the invalidation.
     */
-  var invalidate: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var invalidate: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Recovers a property value from the last computation and restores its value and dirty state
     * @param propName String The name of the property to recover.
     * @param oldProps Object The old "props" object from which to recover values.
@@ -105,32 +105,32 @@ trait IContextItem extends IBase {
       /* oldDirty */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Queue the removal of a class name or array of class names from this ContextItem s target when next flushed
     * @param removeCls Object
     */
-  var removeCls: js.UndefOr[js.Function1[/* removeCls */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var removeCls: js.UndefOr[js.Function1[/* removeCls */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Removes a cached ContextItem that was created using getEl
     * @param nameOrEl String/Ext.dom.Element The element or the name of an owned element
     * @param owner Ext.layout.container.Container/Ext.Component The owner of the named element if the passed "nameOrEl" parameter is a String. Defaults to this ContextItem's "target" property.
     */
   var removeEl: js.UndefOr[
     js.Function2[/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Queue the setting of a DOM attribute on this ContextItem s target when next flushed
     * @param name Object
     * @param value Object
     */
   var setAttribute: js.UndefOr[
     js.Function2[/* name */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the contentHeight property
     * @param height Object
     * @param measured Object
     */
   var setContentHeight: js.UndefOr[
     js.Function2[/* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the contentWidth and contentHeight properties
     * @param width Object
     * @param height Object
@@ -143,14 +143,14 @@ trait IContextItem extends IBase {
       /* measured */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the contentWidth property
     * @param width Object
     * @param measured Object
     */
   var setContentWidth: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the height and constrains the height to min maxHeight range
     * @param height Number The height.
     * @param dirty Boolean Specifies if the value is currently in the DOM. A value of false indicates that the value is already in the DOM.
@@ -158,7 +158,7 @@ trait IContextItem extends IBase {
     */
   var setHeight: js.UndefOr[
     js.Function2[/* height */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean], Double]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets a property value
     * @param propName String The property name (e.g., 'width').
     * @param value Object The new value of the property.
@@ -172,7 +172,7 @@ trait IContextItem extends IBase {
       /* dirty */ js.UndefOr[Boolean], 
       Double
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the height and constrains the width to min maxWidth range
     * @param width Number The width.
     * @param dirty Boolean Specifies if the value is currently in the DOM. A value of false indicates that the value is already in the DOM.
@@ -180,111 +180,157 @@ trait IContextItem extends IBase {
     */
   var setWidth: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean], Double]
-  ] = js.undefined
+  ] = js.native
   /** [Property] (Object) */
-  var state: js.UndefOr[js.Any] = js.undefined
+  var state: js.UndefOr[js.Any] = js.native
   /** [Property] (Boolean) */
-  var wrapsComponent: js.UndefOr[Boolean] = js.undefined
+  var wrapsComponent: js.UndefOr[Boolean] = js.native
 }
 
 object IContextItem {
   @scala.inline
-  def apply(
-    addCls: /* newCls */ js.UndefOr[js.Any] => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    block: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String]) => Unit = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clearMarginCache: () => Unit = null,
-    config: js.Any = null,
-    domBlock: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String]) => Unit = null,
-    extend: String = null,
-    flush: () => Unit = null,
-    getBorderInfo: () => _ = null,
-    getClassList: () => Unit = null,
-    getDomProp: /* propName */ js.UndefOr[String] => _ = null,
-    getEl: (/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any]) => IContextItem = null,
-    getFrameInfo: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getMarginInfo: () => _ = null,
-    getPaddingInfo: () => _ = null,
-    getProp: /* propName */ js.UndefOr[String] => _ = null,
-    getStyle: /* styleName */ js.UndefOr[String] => _ = null,
-    getStyles: (/* styleNames */ js.UndefOr[Array], /* altNames */ js.UndefOr[Array]) => _ = null,
-    hasDomProp: /* propName */ js.UndefOr[String] => Boolean = null,
-    hasProp: /* propName */ js.UndefOr[String] => Boolean = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => IContextItem = null,
-    invalidate: /* options */ js.UndefOr[js.Any] => Unit = null,
-    mixins: js.Any = null,
-    recoverProp: (/* propName */ js.UndefOr[String], /* oldProps */ js.UndefOr[js.Any], /* oldDirty */ js.UndefOr[js.Any]) => Unit = null,
-    removeCls: /* removeCls */ js.UndefOr[js.Any] => Unit = null,
-    removeEl: (/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any]) => Unit = null,
-    requires: Array = null,
-    self: IClass = null,
-    setAttribute: (/* name */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => Unit = null,
-    setContentHeight: (/* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => Unit = null,
-    setContentSize: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => Unit = null,
-    setContentWidth: (/* width */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => Unit = null,
-    setHeight: (/* height */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean]) => Double = null,
-    setProp: (/* propName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* dirty */ js.UndefOr[Boolean]) => Double = null,
-    setWidth: (/* width */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean]) => Double = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    state: js.Any = null,
-    statics: js.Any = null,
-    uses: Array = null,
-    wrapsComponent: js.UndefOr[Boolean] = js.undefined
-  ): IContextItem = {
+  def apply(): IContextItem = {
     val __obj = js.Dynamic.literal()
-    if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction1(addCls))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (block != null) __obj.updateDynamic("block")(js.Any.fromFunction2(block))
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (clearMarginCache != null) __obj.updateDynamic("clearMarginCache")(js.Any.fromFunction0(clearMarginCache))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (domBlock != null) __obj.updateDynamic("domBlock")(js.Any.fromFunction2(domBlock))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (flush != null) __obj.updateDynamic("flush")(js.Any.fromFunction0(flush))
-    if (getBorderInfo != null) __obj.updateDynamic("getBorderInfo")(js.Any.fromFunction0(getBorderInfo))
-    if (getClassList != null) __obj.updateDynamic("getClassList")(js.Any.fromFunction0(getClassList))
-    if (getDomProp != null) __obj.updateDynamic("getDomProp")(js.Any.fromFunction1(getDomProp))
-    if (getEl != null) __obj.updateDynamic("getEl")(js.Any.fromFunction2(getEl))
-    if (getFrameInfo != null) __obj.updateDynamic("getFrameInfo")(js.Any.fromFunction0(getFrameInfo))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getMarginInfo != null) __obj.updateDynamic("getMarginInfo")(js.Any.fromFunction0(getMarginInfo))
-    if (getPaddingInfo != null) __obj.updateDynamic("getPaddingInfo")(js.Any.fromFunction0(getPaddingInfo))
-    if (getProp != null) __obj.updateDynamic("getProp")(js.Any.fromFunction1(getProp))
-    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction1(getStyle))
-    if (getStyles != null) __obj.updateDynamic("getStyles")(js.Any.fromFunction2(getStyles))
-    if (hasDomProp != null) __obj.updateDynamic("hasDomProp")(js.Any.fromFunction1(hasDomProp))
-    if (hasProp != null) __obj.updateDynamic("hasProp")(js.Any.fromFunction1(hasProp))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (invalidate != null) __obj.updateDynamic("invalidate")(js.Any.fromFunction1(invalidate))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (recoverProp != null) __obj.updateDynamic("recoverProp")(js.Any.fromFunction3(recoverProp))
-    if (removeCls != null) __obj.updateDynamic("removeCls")(js.Any.fromFunction1(removeCls))
-    if (removeEl != null) __obj.updateDynamic("removeEl")(js.Any.fromFunction2(removeEl))
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setAttribute != null) __obj.updateDynamic("setAttribute")(js.Any.fromFunction2(setAttribute))
-    if (setContentHeight != null) __obj.updateDynamic("setContentHeight")(js.Any.fromFunction2(setContentHeight))
-    if (setContentSize != null) __obj.updateDynamic("setContentSize")(js.Any.fromFunction3(setContentSize))
-    if (setContentWidth != null) __obj.updateDynamic("setContentWidth")(js.Any.fromFunction2(setContentWidth))
-    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction2(setHeight))
-    if (setProp != null) __obj.updateDynamic("setProp")(js.Any.fromFunction3(setProp))
-    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction2(setWidth))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapsComponent)) __obj.updateDynamic("wrapsComponent")(wrapsComponent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextItem]
   }
+  @scala.inline
+  implicit class IContextItemOps[Self <: IContextItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddCls(value: /* newCls */ js.UndefOr[js.Any] => Unit): Self = this.set("addCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAddCls: Self = this.set("addCls", js.undefined)
+    @scala.inline
+    def setBlock(value: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String]) => Unit): Self = this.set("block", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBlock: Self = this.set("block", js.undefined)
+    @scala.inline
+    def setClearMarginCache(value: () => Unit): Self = this.set("clearMarginCache", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteClearMarginCache: Self = this.set("clearMarginCache", js.undefined)
+    @scala.inline
+    def setDomBlock(value: (/* layout */ js.UndefOr[ILayout], /* propName */ js.UndefOr[String]) => Unit): Self = this.set("domBlock", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDomBlock: Self = this.set("domBlock", js.undefined)
+    @scala.inline
+    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteFlush: Self = this.set("flush", js.undefined)
+    @scala.inline
+    def setGetBorderInfo(value: () => _): Self = this.set("getBorderInfo", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBorderInfo: Self = this.set("getBorderInfo", js.undefined)
+    @scala.inline
+    def setGetClassList(value: () => Unit): Self = this.set("getClassList", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetClassList: Self = this.set("getClassList", js.undefined)
+    @scala.inline
+    def setGetDomProp(value: /* propName */ js.UndefOr[String] => _): Self = this.set("getDomProp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetDomProp: Self = this.set("getDomProp", js.undefined)
+    @scala.inline
+    def setGetEl(value: (/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any]) => IContextItem): Self = this.set("getEl", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetEl: Self = this.set("getEl", js.undefined)
+    @scala.inline
+    def setGetFrameInfo(value: () => _): Self = this.set("getFrameInfo", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetFrameInfo: Self = this.set("getFrameInfo", js.undefined)
+    @scala.inline
+    def setGetMarginInfo(value: () => _): Self = this.set("getMarginInfo", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMarginInfo: Self = this.set("getMarginInfo", js.undefined)
+    @scala.inline
+    def setGetPaddingInfo(value: () => _): Self = this.set("getPaddingInfo", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPaddingInfo: Self = this.set("getPaddingInfo", js.undefined)
+    @scala.inline
+    def setGetProp(value: /* propName */ js.UndefOr[String] => _): Self = this.set("getProp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetProp: Self = this.set("getProp", js.undefined)
+    @scala.inline
+    def setGetStyle(value: /* styleName */ js.UndefOr[String] => _): Self = this.set("getStyle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetStyle: Self = this.set("getStyle", js.undefined)
+    @scala.inline
+    def setGetStyles(value: (/* styleNames */ js.UndefOr[Array], /* altNames */ js.UndefOr[Array]) => _): Self = this.set("getStyles", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetStyles: Self = this.set("getStyles", js.undefined)
+    @scala.inline
+    def setHasDomProp(value: /* propName */ js.UndefOr[String] => Boolean): Self = this.set("hasDomProp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHasDomProp: Self = this.set("hasDomProp", js.undefined)
+    @scala.inline
+    def setHasProp(value: /* propName */ js.UndefOr[String] => Boolean): Self = this.set("hasProp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHasProp: Self = this.set("hasProp", js.undefined)
+    @scala.inline
+    def setInvalidate(value: /* options */ js.UndefOr[js.Any] => Unit): Self = this.set("invalidate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInvalidate: Self = this.set("invalidate", js.undefined)
+    @scala.inline
+    def setRecoverProp(
+      value: (/* propName */ js.UndefOr[String], /* oldProps */ js.UndefOr[js.Any], /* oldDirty */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("recoverProp", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRecoverProp: Self = this.set("recoverProp", js.undefined)
+    @scala.inline
+    def setRemoveCls(value: /* removeCls */ js.UndefOr[js.Any] => Unit): Self = this.set("removeCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemoveCls: Self = this.set("removeCls", js.undefined)
+    @scala.inline
+    def setRemoveEl(value: (/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any]) => Unit): Self = this.set("removeEl", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRemoveEl: Self = this.set("removeEl", js.undefined)
+    @scala.inline
+    def setSetAttribute(value: (/* name */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => Unit): Self = this.set("setAttribute", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetAttribute: Self = this.set("setAttribute", js.undefined)
+    @scala.inline
+    def setSetContentHeight(value: (/* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => Unit): Self = this.set("setContentHeight", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetContentHeight: Self = this.set("setContentHeight", js.undefined)
+    @scala.inline
+    def setSetContentSize(
+      value: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("setContentSize", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteSetContentSize: Self = this.set("setContentSize", js.undefined)
+    @scala.inline
+    def setSetContentWidth(value: (/* width */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any]) => Unit): Self = this.set("setContentWidth", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetContentWidth: Self = this.set("setContentWidth", js.undefined)
+    @scala.inline
+    def setSetHeight(value: (/* height */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean]) => Double): Self = this.set("setHeight", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetHeight: Self = this.set("setHeight", js.undefined)
+    @scala.inline
+    def setSetProp(
+      value: (/* propName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* dirty */ js.UndefOr[Boolean]) => Double
+    ): Self = this.set("setProp", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteSetProp: Self = this.set("setProp", js.undefined)
+    @scala.inline
+    def setSetWidth(value: (/* width */ js.UndefOr[Double], /* dirty */ js.UndefOr[Boolean]) => Double): Self = this.set("setWidth", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetWidth: Self = this.set("setWidth", js.undefined)
+    @scala.inline
+    def setState(value: js.Any): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setWrapsComponent(value: Boolean): Self = this.set("wrapsComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapsComponent: Self = this.set("wrapsComponent", js.undefined)
+  }
+  
 }
 

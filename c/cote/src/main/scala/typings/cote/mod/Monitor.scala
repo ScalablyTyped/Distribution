@@ -30,6 +30,17 @@ class Monitor protected () extends Component {
     /**
     * Controls the network-layer configuration and environments for components.
     */
+  discoveryOptions: js.UndefOr[scala.Nothing],
+    stream: Stream
+  ) = this()
+  def this(
+    /**
+    * Configuration which controls the data being advertised for auto-discovery.
+    */
+  advertisement: MonitorAdvertisement,
+    /**
+    * Controls the network-layer configuration and environments for components.
+    */
   discoveryOptions: DiscoveryOptions,
     stream: Stream
   ) = this()

@@ -153,6 +153,8 @@ import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlas
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashtags`
 import typings.octokitRest.octokitRestStrings.`GET SlashreposSlashColonownerSlashColonrepoSlashteams`
 import typings.octokitRest.octokitRestStrings.`GET Slashrepositories`
+import typings.octokitRest.octokitRestStrings.`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`
+import typings.octokitRest.octokitRestStrings.`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`
 import typings.octokitRest.octokitRestStrings.`GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`
 import typings.octokitRest.octokitRestStrings.`GET SlashsearchSlashcode`
 import typings.octokitRest.octokitRestStrings.`GET SlashsearchSlashcommits`
@@ -171,7 +173,6 @@ import typings.octokitRest.octokitRestStrings.`GET SlashteamsSlashColonteam_idSl
 import typings.octokitRest.octokitRestStrings.`GET SlashteamsSlashColonteam_idSlashrepos`
 import typings.octokitRest.octokitRestStrings.`GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`
 import typings.octokitRest.octokitRestStrings.`GET SlashteamsSlashColonteam_idSlashteams`
-import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashColonmigration_idSlashrepositories`
 import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashblocks`
 import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashemails`
 import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashfollowers`
@@ -184,6 +185,7 @@ import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashkeys`
 import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashmarketplace_purchasesSlashstubbed`
 import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashmarketplace_purchases`
 import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashmembershipsSlashorgs`
+import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`
 import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashmigrations`
 import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashorgs`
 import typings.octokitRest.octokitRestStrings.`GET SlashuserSlashpublic_emails`
@@ -277,6 +279,10 @@ import typings.octokitTypes.endpointsMod.ChecksListSuitesForRefEndpoint
 import typings.octokitTypes.endpointsMod.ChecksListSuitesForRefResponseData
 import typings.octokitTypes.endpointsMod.CodeScanningListAlertsForRepoEndpoint
 import typings.octokitTypes.endpointsMod.CodeScanningListAlertsForRepoResponseData
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
+import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData
 import typings.octokitTypes.endpointsMod.GistsListCommentsEndpoint
 import typings.octokitTypes.endpointsMod.GistsListCommentsResponseData
 import typings.octokitTypes.endpointsMod.GistsListCommitsEndpoint
@@ -3634,6 +3640,66 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
+    def paginate_GETscimv2enterprisesenterpriseGroups(route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETscimv2enterprisesenterpriseGroups(
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
+      parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedGroupsEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETscimv2enterprisesenterpriseGroups[MR /* <: js.Array[_] */](
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `12`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETscimv2enterprisesenterpriseGroups[MR /* <: js.Array[_] */](
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`,
+      parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `12`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETscimv2enterprisesenterpriseUsers(route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETscimv2enterprisesenterpriseUsers(
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
+      parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
+    ): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
+      ] = js.native
+    @JSName("paginate")
+    def paginate_GETscimv2enterprisesenterpriseUsers[MR /* <: js.Array[_] */](
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `12`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETscimv2enterprisesenterpriseUsers[MR /* <: js.Array[_] */](
+      route: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`,
+      parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `12`, 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
     def paginate_GETscimv2organizationsorgUsers(route: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`): js.Promise[
         /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/OctokitResponse.OctokitResponse<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ScimListProvisionedIdentitiesResponseData> & @octokit/plugin-paginate-rest.anon.12['data'] */ js.Any
       ] = js.native
@@ -4406,32 +4472,6 @@ object anon extends js.Object {
         ]
     ): js.Promise[MR] = js.native
     @JSName("paginate")
-    def paginate_GETusermigrationidrepositories(route: `GET SlashuserSlashColonmigration_idSlashrepositories`): js.Promise[MigrationsListReposForUserResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETusermigrationidrepositories(
-      route: `GET SlashuserSlashColonmigration_idSlashrepositories`,
-      parameters: MigrationsListReposForUserEndpoint
-    ): js.Promise[MigrationsListReposForUserResponseData] = js.native
-    @JSName("paginate")
-    def paginate_GETusermigrationidrepositories[MR /* <: js.Array[_] */](
-      route: `GET SlashuserSlashColonmigration_idSlashrepositories`,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[MigrationsListReposForUserResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
-    def paginate_GETusermigrationidrepositories[MR /* <: js.Array[_] */](
-      route: `GET SlashuserSlashColonmigration_idSlashrepositories`,
-      parameters: MigrationsListReposForUserEndpoint,
-      mapFn: js.Function2[
-          /* response */ OctokitResponse[MigrationsListReposForUserResponseData], 
-          /* done */ js.Function0[Unit], 
-          MR
-        ]
-    ): js.Promise[MR] = js.native
-    @JSName("paginate")
     def paginate_GETusermigrations(route: `GET SlashuserSlashmigrations`): js.Promise[MigrationsListForAuthenticatedUserResponseData] = js.native
     @JSName("paginate")
     def paginate_GETusermigrations(route: `GET SlashuserSlashmigrations`, parameters: MigrationsListForAuthenticatedUserEndpoint): js.Promise[MigrationsListForAuthenticatedUserResponseData] = js.native
@@ -4450,6 +4490,32 @@ object anon extends js.Object {
       parameters: MigrationsListForAuthenticatedUserEndpoint,
       mapFn: js.Function2[
           /* response */ OctokitResponse[MigrationsListForAuthenticatedUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETusermigrationsmigrationidrepositories(route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`): js.Promise[MigrationsListReposForUserResponseData] = js.native
+    @JSName("paginate")
+    def paginate_GETusermigrationsmigrationidrepositories(
+      route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      parameters: MigrationsListReposForUserEndpoint
+    ): js.Promise[MigrationsListReposForUserResponseData] = js.native
+    @JSName("paginate")
+    def paginate_GETusermigrationsmigrationidrepositories[MR /* <: js.Array[_] */](
+      route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListReposForUserResponseData], 
+          /* done */ js.Function0[Unit], 
+          MR
+        ]
+    ): js.Promise[MR] = js.native
+    @JSName("paginate")
+    def paginate_GETusermigrationsmigrationidrepositories[MR /* <: js.Array[_] */](
+      route: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`,
+      parameters: MigrationsListReposForUserEndpoint,
+      mapFn: js.Function2[
+          /* response */ OctokitResponse[MigrationsListReposForUserResponseData], 
           /* done */ js.Function0[Unit], 
           MR
         ]
@@ -4879,6 +4945,7 @@ object anon extends js.Object {
   trait TypeofCore extends Instantiable0[Octokit] {
     var VERSION: String = js.native
     var plugins: js.Array[OctokitPlugin] = js.native
+    def defaults[S /* <: Constructor[_] */](defaults: js.Function): typings.octokitCore.anon.Instantiable with S = js.native
     def defaults[S /* <: Constructor[_] */](defaults: OctokitOptions): typings.octokitCore.anon.Instantiable with S = js.native
     /**
       * Attach a plugin (or many) to your Octokit instance.
@@ -4886,10 +4953,9 @@ object anon extends js.Object {
       * @example
       * const API = Octokit.plugin(plugin1, plugin2, plugin3, ...)
       */
-    def plugin[S /* <: Constructor[_] with Plugins */, T1 /* <: OctokitPlugin | js.Array[OctokitPlugin] */, T2 /* <: js.Array[OctokitPlugin] */](
-      p1: T1,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param p2 because its type T2 is not an array type */ p2: T2
-    ): InstantiablePlugins with S with (Constructor[UnionToIntersection[ReturnTypeOf[T1] with ReturnTypeOf[T2]]]) = js.native
+    def plugin[S /* <: Constructor[_] with Plugins */, T /* <: js.Array[OctokitPlugin] */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param newPlugins because its type T is not an array type */ newPlugins: T
+    ): InstantiablePlugins with S with Constructor[UnionToIntersection[ReturnTypeOf[T]]] = js.native
   }
   
 }

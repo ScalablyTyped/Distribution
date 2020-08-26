@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object formattersMod extends js.Object {
   def currency(): js.Function1[/* d */ js.Any, String] = js.native
+  def currency(precision: js.UndefOr[scala.Nothing], symbol: js.UndefOr[scala.Nothing], prefix: Boolean): js.Function1[/* d */ js.Any, String] = js.native
+  def currency(precision: js.UndefOr[scala.Nothing], symbol: String): js.Function1[/* d */ js.Any, String] = js.native
+  def currency(precision: js.UndefOr[scala.Nothing], symbol: String, prefix: Boolean): js.Function1[/* d */ js.Any, String] = js.native
   def currency(precision: Double): js.Function1[/* d */ js.Any, String] = js.native
+  def currency(precision: Double, symbol: js.UndefOr[scala.Nothing], prefix: Boolean): js.Function1[/* d */ js.Any, String] = js.native
   def currency(precision: Double, symbol: String): js.Function1[/* d */ js.Any, String] = js.native
   def currency(precision: Double, symbol: String, prefix: Boolean): js.Function1[/* d */ js.Any, String] = js.native
   def fixed(): js.Function1[/* d */ js.Any, String] = js.native

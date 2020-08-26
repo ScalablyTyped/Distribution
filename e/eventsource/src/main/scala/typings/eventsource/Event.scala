@@ -48,6 +48,7 @@ trait Event extends js.Object {
   val `type`: String = js.native
   def composedPath(): js.Array[_] = js.native
   def initEvent(`type`: String): Unit = js.native
+  def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
   def preventDefault(): Unit = js.native

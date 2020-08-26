@@ -12,7 +12,7 @@ A react native interface to access Documents from dropbox google drive, iCloud
 | Keywords           | document, picker, uidocumentmenuviewcontroller, react-native, dropbox, google-drive, icloud |
 | # releases         | 9 |
 | # dependents       | 6 |
-| # downloads        | 382378 |
+| # downloads        | 408186 |
 | # stars            | 0 |
 
 ## Links

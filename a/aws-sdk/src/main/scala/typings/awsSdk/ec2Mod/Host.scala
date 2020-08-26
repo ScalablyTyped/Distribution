@@ -78,44 +78,94 @@ trait Host extends js.Object {
 
 object Host {
   @scala.inline
-  def apply(
-    AllocationTime: DateTime = null,
-    AllowsMultipleInstanceTypes: AllowsMultipleInstanceTypes = null,
-    AutoPlacement: AutoPlacement = null,
-    AvailabilityZone: String = null,
-    AvailabilityZoneId: String = null,
-    AvailableCapacity: AvailableCapacity = null,
-    ClientToken: String = null,
-    HostId: String = null,
-    HostProperties: HostProperties = null,
-    HostRecovery: HostRecovery = null,
-    HostReservationId: String = null,
-    Instances: HostInstanceList = null,
-    MemberOfServiceLinkedResourceGroup: js.UndefOr[Boolean] = js.undefined,
-    OwnerId: String = null,
-    ReleaseTime: DateTime = null,
-    State: AllocationState = null,
-    Tags: TagList = null
-  ): Host = {
+  def apply(): Host = {
     val __obj = js.Dynamic.literal()
-    if (AllocationTime != null) __obj.updateDynamic("AllocationTime")(AllocationTime.asInstanceOf[js.Any])
-    if (AllowsMultipleInstanceTypes != null) __obj.updateDynamic("AllowsMultipleInstanceTypes")(AllowsMultipleInstanceTypes.asInstanceOf[js.Any])
-    if (AutoPlacement != null) __obj.updateDynamic("AutoPlacement")(AutoPlacement.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (AvailabilityZoneId != null) __obj.updateDynamic("AvailabilityZoneId")(AvailabilityZoneId.asInstanceOf[js.Any])
-    if (AvailableCapacity != null) __obj.updateDynamic("AvailableCapacity")(AvailableCapacity.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (HostId != null) __obj.updateDynamic("HostId")(HostId.asInstanceOf[js.Any])
-    if (HostProperties != null) __obj.updateDynamic("HostProperties")(HostProperties.asInstanceOf[js.Any])
-    if (HostRecovery != null) __obj.updateDynamic("HostRecovery")(HostRecovery.asInstanceOf[js.Any])
-    if (HostReservationId != null) __obj.updateDynamic("HostReservationId")(HostReservationId.asInstanceOf[js.Any])
-    if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
-    if (!js.isUndefined(MemberOfServiceLinkedResourceGroup)) __obj.updateDynamic("MemberOfServiceLinkedResourceGroup")(MemberOfServiceLinkedResourceGroup.get.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (ReleaseTime != null) __obj.updateDynamic("ReleaseTime")(ReleaseTime.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Host]
   }
+  @scala.inline
+  implicit class HostOps[Self <: Host] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationTime(value: DateTime): Self = this.set("AllocationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationTime: Self = this.set("AllocationTime", js.undefined)
+    @scala.inline
+    def setAllowsMultipleInstanceTypes(value: AllowsMultipleInstanceTypes): Self = this.set("AllowsMultipleInstanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowsMultipleInstanceTypes: Self = this.set("AllowsMultipleInstanceTypes", js.undefined)
+    @scala.inline
+    def setAutoPlacement(value: AutoPlacement): Self = this.set("AutoPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlacement: Self = this.set("AutoPlacement", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setAvailabilityZoneId(value: String): Self = this.set("AvailabilityZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZoneId: Self = this.set("AvailabilityZoneId", js.undefined)
+    @scala.inline
+    def setAvailableCapacity(value: AvailableCapacity): Self = this.set("AvailableCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableCapacity: Self = this.set("AvailableCapacity", js.undefined)
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setHostId(value: String): Self = this.set("HostId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostId: Self = this.set("HostId", js.undefined)
+    @scala.inline
+    def setHostProperties(value: HostProperties): Self = this.set("HostProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostProperties: Self = this.set("HostProperties", js.undefined)
+    @scala.inline
+    def setHostRecovery(value: HostRecovery): Self = this.set("HostRecovery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostRecovery: Self = this.set("HostRecovery", js.undefined)
+    @scala.inline
+    def setHostReservationId(value: String): Self = this.set("HostReservationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostReservationId: Self = this.set("HostReservationId", js.undefined)
+    @scala.inline
+    def setInstancesVarargs(value: HostInstance*): Self = this.set("Instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: HostInstanceList): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("Instances", js.undefined)
+    @scala.inline
+    def setMemberOfServiceLinkedResourceGroup(value: Boolean): Self = this.set("MemberOfServiceLinkedResourceGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberOfServiceLinkedResourceGroup: Self = this.set("MemberOfServiceLinkedResourceGroup", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setReleaseTime(value: DateTime): Self = this.set("ReleaseTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseTime: Self = this.set("ReleaseTime", js.undefined)
+    @scala.inline
+    def setState(value: AllocationState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

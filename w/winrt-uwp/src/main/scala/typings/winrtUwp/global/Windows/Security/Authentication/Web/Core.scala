@@ -1,11 +1,7 @@
 package typings.winrtUwp.global.Windows.Security.Authentication.Web
 
-import typings.winrtUwp.Windows.Foundation.Collections.IMap
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestPromptType
-import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus
 import typings.winrtUwp.Windows.Security.Credentials.WebAccount
 import typings.winrtUwp.Windows.Security.Credentials.WebAccountProvider
 import typings.winrtUwp.Windows.System.User
@@ -32,15 +28,6 @@ object Core extends js.Object {
       * @param errorMessage The error message.
       */
     def this(errorCode: Double, errorMessage: String) = this()
-    /** Gets the error code. */
-    /* CompleteClass */
-    override var errorCode: Double = js.native
-    /** Gets the error message. */
-    /* CompleteClass */
-    override var errorMessage: String = js.native
-    /** Gets the error properties. */
-    /* CompleteClass */
-    override var properties: IMap[String, String] = js.native
   }
   
   /** Represents a request to an online identity provider for an authentication token. */
@@ -78,45 +65,12 @@ object Core extends js.Object {
       clientId: String,
       promptType: WebTokenRequestPromptType
     ) = this()
-    /* CompleteClass */
-    override var appProperties: js.Any = js.native
-     /* unmapped type */ /** Gets the Id of the client making the request. */
-    /* CompleteClass */
-    override var clientId: String = js.native
-    /** Gets the prompt type of the request. */
-    /* CompleteClass */
-    override var promptType: WebTokenRequestPromptType = js.native
-    /** Gets the properties of the request. */
-    /* CompleteClass */
-    override var properties: IMap[String, String] = js.native
-    /** Gets the scope of the request. */
-    /* CompleteClass */
-    override var scope: String = js.native
-    /** Gets the web account provider for the request. */
-    /* CompleteClass */
-    override var webAccountProvider: WebAccountProvider = js.native
   }
   
   /** Represents the results of a web token request to an identity provider. */
   @js.native
   abstract class WebTokenRequestResult ()
-    extends typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult {
-    /** Gets the response data from the web token provider. */
-    /* CompleteClass */
-    override var responseData: IVectorView[typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenResponse] = js.native
-    /** Gets the error returned by the web provider, if any. */
-    /* CompleteClass */
-    override var responseError: typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError = js.native
-    /** Gets the status of the request. */
-    /* CompleteClass */
-    override var responseStatus: WebTokenRequestStatus = js.native
-    /**
-      * Invalidates the current cached WebTokenRequestResult . Use this method if an access denied error is returned when trying to use a token.
-      * @return This method does not return an object or value.
-      */
-    /* CompleteClass */
-    override def invalidateCacheAsync(): IPromiseWithIAsyncAction = js.native
-  }
+    extends typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult
   
   /** Represents the response from a web account provider to a web token request. */
   @js.native
@@ -145,18 +99,6 @@ object Core extends js.Object {
       webAccount: WebAccount,
       error: typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError
     ) = this()
-    /** Gets the properties of the response */
-    /* CompleteClass */
-    override var properties: IMap[String, String] = js.native
-    /** Gets the error returned by the provider, if any. */
-    /* CompleteClass */
-    override var providerError: typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError = js.native
-    /** Gets the authentication token. */
-    /* CompleteClass */
-    override var token: String = js.native
-    /** Gets the web account for the request. */
-    /* CompleteClass */
-    override var webAccount: WebAccount = js.native
   }
   
   /* static members */

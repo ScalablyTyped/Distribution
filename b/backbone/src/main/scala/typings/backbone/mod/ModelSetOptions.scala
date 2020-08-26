@@ -4,16 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModelSetOptions
   extends Silenceable
      with Validable
 
 object ModelSetOptions {
   @scala.inline
-  def apply(silent: js.UndefOr[Boolean] = js.undefined, validate: js.UndefOr[Boolean] = js.undefined): ModelSetOptions = {
+  def apply(): ModelSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelSetOptions]
   }
 }

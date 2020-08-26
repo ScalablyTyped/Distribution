@@ -59,30 +59,66 @@ trait SchemaApplicationReport extends js.Object {
 
 object SchemaApplicationReport {
   @scala.inline
-  def apply(
-    applicationSource: String = null,
-    displayName: String = null,
-    events: js.Array[SchemaApplicationEvent] = null,
-    installerPackageName: String = null,
-    packageName: String = null,
-    packageSha256Hash: String = null,
-    signingKeyCertFingerprints: js.Array[String] = null,
-    state: String = null,
-    versionCode: js.UndefOr[Double] = js.undefined,
-    versionName: String = null
-  ): SchemaApplicationReport = {
+  def apply(): SchemaApplicationReport = {
     val __obj = js.Dynamic.literal()
-    if (applicationSource != null) __obj.updateDynamic("applicationSource")(applicationSource.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (installerPackageName != null) __obj.updateDynamic("installerPackageName")(installerPackageName.asInstanceOf[js.Any])
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
-    if (packageSha256Hash != null) __obj.updateDynamic("packageSha256Hash")(packageSha256Hash.asInstanceOf[js.Any])
-    if (signingKeyCertFingerprints != null) __obj.updateDynamic("signingKeyCertFingerprints")(signingKeyCertFingerprints.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
-    if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApplicationReport]
   }
+  @scala.inline
+  implicit class SchemaApplicationReportOps[Self <: SchemaApplicationReport] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationSource(value: String): Self = this.set("applicationSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationSource: Self = this.set("applicationSource", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEventsVarargs(value: SchemaApplicationEvent*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: js.Array[SchemaApplicationEvent]): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setInstallerPackageName(value: String): Self = this.set("installerPackageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallerPackageName: Self = this.set("installerPackageName", js.undefined)
+    @scala.inline
+    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageName: Self = this.set("packageName", js.undefined)
+    @scala.inline
+    def setPackageSha256Hash(value: String): Self = this.set("packageSha256Hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageSha256Hash: Self = this.set("packageSha256Hash", js.undefined)
+    @scala.inline
+    def setSigningKeyCertFingerprintsVarargs(value: String*): Self = this.set("signingKeyCertFingerprints", js.Array(value :_*))
+    @scala.inline
+    def setSigningKeyCertFingerprints(value: js.Array[String]): Self = this.set("signingKeyCertFingerprints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningKeyCertFingerprints: Self = this.set("signingKeyCertFingerprints", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setVersionCode(value: Double): Self = this.set("versionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
+    @scala.inline
+    def setVersionName(value: String): Self = this.set("versionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionName: Self = this.set("versionName", js.undefined)
+  }
+  
 }
 

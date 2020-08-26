@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VariableFormatValue extends js.Object {
-  var caseConversionType: js.UndefOr[String] = js.undefined
-  var convertFalseToValue: js.UndefOr[Parameter] = js.undefined
-  var convertNullToValue: js.UndefOr[Parameter] = js.undefined
-  var convertTrueToValue: js.UndefOr[Parameter] = js.undefined
-  var convertUndefinedToValue: js.UndefOr[Parameter] = js.undefined
+  var caseConversionType: js.UndefOr[String] = js.native
+  var convertFalseToValue: js.UndefOr[Parameter] = js.native
+  var convertNullToValue: js.UndefOr[Parameter] = js.native
+  var convertTrueToValue: js.UndefOr[Parameter] = js.native
+  var convertUndefinedToValue: js.UndefOr[Parameter] = js.native
 }
 
 object VariableFormatValue {
   @scala.inline
-  def apply(
-    caseConversionType: String = null,
-    convertFalseToValue: Parameter = null,
-    convertNullToValue: Parameter = null,
-    convertTrueToValue: Parameter = null,
-    convertUndefinedToValue: Parameter = null
-  ): VariableFormatValue = {
+  def apply(): VariableFormatValue = {
     val __obj = js.Dynamic.literal()
-    if (caseConversionType != null) __obj.updateDynamic("caseConversionType")(caseConversionType.asInstanceOf[js.Any])
-    if (convertFalseToValue != null) __obj.updateDynamic("convertFalseToValue")(convertFalseToValue.asInstanceOf[js.Any])
-    if (convertNullToValue != null) __obj.updateDynamic("convertNullToValue")(convertNullToValue.asInstanceOf[js.Any])
-    if (convertTrueToValue != null) __obj.updateDynamic("convertTrueToValue")(convertTrueToValue.asInstanceOf[js.Any])
-    if (convertUndefinedToValue != null) __obj.updateDynamic("convertUndefinedToValue")(convertUndefinedToValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableFormatValue]
   }
+  @scala.inline
+  implicit class VariableFormatValueOps[Self <: VariableFormatValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseConversionType(value: String): Self = this.set("caseConversionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseConversionType: Self = this.set("caseConversionType", js.undefined)
+    @scala.inline
+    def setConvertFalseToValue(value: Parameter): Self = this.set("convertFalseToValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertFalseToValue: Self = this.set("convertFalseToValue", js.undefined)
+    @scala.inline
+    def setConvertNullToValue(value: Parameter): Self = this.set("convertNullToValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertNullToValue: Self = this.set("convertNullToValue", js.undefined)
+    @scala.inline
+    def setConvertTrueToValue(value: Parameter): Self = this.set("convertTrueToValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertTrueToValue: Self = this.set("convertTrueToValue", js.undefined)
+    @scala.inline
+    def setConvertUndefinedToValue(value: Parameter): Self = this.set("convertUndefinedToValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertUndefinedToValue: Self = this.set("convertUndefinedToValue", js.undefined)
+  }
+  
 }
 

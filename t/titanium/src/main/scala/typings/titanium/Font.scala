@@ -7,46 +7,69 @@ import scala.scalajs.js.annotation._
 /**
   * An abstract datatype for specifying a text font.
   */
+@js.native
 trait Font extends js.Object {
   /**
     * Specifies the font family or specific font to use.
     */
-  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
+  var fontFamily: js.UndefOr[java.lang.String] = js.native
   /**
     * Font size, in platform-dependent units.
     */
-  var fontSize: js.UndefOr[Double | java.lang.String] = js.undefined
+  var fontSize: js.UndefOr[Double | java.lang.String] = js.native
   /**
     * Font style. Valid values are "italic" or "normal".
     */
-  var fontStyle: js.UndefOr[java.lang.String] = js.undefined
+  var fontStyle: js.UndefOr[java.lang.String] = js.native
   /**
     * Font weight. Valid values are "bold", "semibold", "normal", "thin",
     * "light" and "ultralight".
     */
-  var fontWeight: js.UndefOr[java.lang.String] = js.undefined
+  var fontWeight: js.UndefOr[java.lang.String] = js.native
   /**
     * The text style for the font.
     */
-  var textStyle: js.UndefOr[java.lang.String] = js.undefined
+  var textStyle: js.UndefOr[java.lang.String] = js.native
 }
 
 object Font {
   @scala.inline
-  def apply(
-    fontFamily: java.lang.String = null,
-    fontSize: Double | java.lang.String = null,
-    fontStyle: java.lang.String = null,
-    fontWeight: java.lang.String = null,
-    textStyle: java.lang.String = null
-  ): Font = {
+  def apply(): Font = {
     val __obj = js.Dynamic.literal()
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Font]
   }
+  @scala.inline
+  implicit class FontOps[Self <: Font] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFontFamily(value: java.lang.String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double | java.lang.String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontStyle(value: java.lang.String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setFontWeight(value: java.lang.String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setTextStyle(value: java.lang.String): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+  }
+  
 }
 

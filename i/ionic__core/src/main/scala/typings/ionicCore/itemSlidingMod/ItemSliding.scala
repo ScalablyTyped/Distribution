@@ -18,7 +18,7 @@ class ItemSliding () extends ComponentInterface {
     */
   var disabled: Boolean = js.native
   var el: HTMLIonItemSlidingElement = js.native
-  var gesture: js.UndefOr[js.Any] = js.native
+  var gesture: js.Any = js.native
   /**
     * Given an optional side, return the ion-item-options element.
     *
@@ -33,7 +33,7 @@ class ItemSliding () extends ComponentInterface {
     */
   var ionDrag: EventEmitter[_] = js.native
   var item: js.Any = js.native
-  var leftOptions: js.UndefOr[js.Any] = js.native
+  var leftOptions: js.Any = js.native
   var onEnd: js.Any = js.native
   var onMove: js.Any = js.native
   var onStart: js.Any = js.native
@@ -41,7 +41,7 @@ class ItemSliding () extends ComponentInterface {
   var optsDirty: js.Any = js.native
   var optsWidthLeftSide: js.Any = js.native
   var optsWidthRightSide: js.Any = js.native
-  var rightOptions: js.UndefOr[js.Any] = js.native
+  var rightOptions: js.Any = js.native
   var setOpenAmount: js.Any = js.native
   var sides: js.Any = js.native
   var state: SlidingState = js.native

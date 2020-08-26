@@ -18,26 +18,7 @@ object global extends js.Object {
   object Stream extends js.Object {
     @js.native
     class Optional[T] ()
-      extends typings.streamjs.Stream.Optional[T] {
-      /* CompleteClass */
-      override def filter(predicate: js.Function1[T, Boolean]): typings.streamjs.Stream.Optional[T] = js.native
-      /* CompleteClass */
-      override def flatMap[U](mapper: js.Function1[T, typings.streamjs.Stream.Optional[U]]): typings.streamjs.Stream.Optional[U] = js.native
-      /* CompleteClass */
-      override def get(): T = js.native
-      /* CompleteClass */
-      override def ifPresent(consumer: js.Function1[T, Unit]): Unit = js.native
-      /* CompleteClass */
-      override def isPresent(): Boolean = js.native
-      /* CompleteClass */
-      override def map[U](mapper: js.Function1[T, U]): typings.streamjs.Stream.Optional[U] = js.native
-      /* CompleteClass */
-      override def orElse(other: T): T = js.native
-      /* CompleteClass */
-      override def orElseGet(supplier: Supplier[T]): T = js.native
-      /* CompleteClass */
-      override def orElseThrow(error: js.Any): T = js.native
-    }
+      extends typings.streamjs.Stream.Optional[T]
     
     def from(str: String): typings.streamjs.Stream[String] = js.native
     def from[T](elems: js.Array[T]): typings.streamjs.Stream[T] = js.native

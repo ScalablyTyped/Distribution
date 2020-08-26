@@ -1,58 +1,90 @@
 package typings.reactNativeNavigation.optionsMod
 
 import typings.reactNative.mod.ImageRequireSource
-import typings.reactNativeNavigation.reactNativeNavigationStrings.bottom
 import typings.reactNativeNavigation.reactNativeNavigationStrings.left
+import typings.reactNativeNavigation.reactNativeNavigationStrings.mini
+import typings.reactNativeNavigation.reactNativeNavigationStrings.regular
 import typings.reactNativeNavigation.reactNativeNavigationStrings.right
-import typings.reactNativeNavigation.reactNativeNavigationStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionsFab extends js.Object {
-  var actions: js.UndefOr[js.Array[OptionsFab]] = js.undefined
-  var alignHorizontally: js.UndefOr[left | right] = js.undefined
-  var alignVertically: js.UndefOr[top | bottom] = js.undefined
-  var backgroundColor: js.UndefOr[Color] = js.undefined
-  var clickColor: js.UndefOr[Color] = js.undefined
-  var hideOnScroll: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[ImageRequireSource] = js.undefined
-  var iconColor: js.UndefOr[Color] = js.undefined
-  var id: String
-  var rippleColor: js.UndefOr[Color] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var alignHorizontally: js.UndefOr[left | right] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.native
+  var clickColor: js.UndefOr[Color] = js.native
+  var hideOnScroll: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[ImageRequireSource] = js.native
+  var iconColor: js.UndefOr[Color] = js.native
+  /**
+    * ID is required when first instantiating the Fab button,
+    * however when updating the existing Fab button, ID is not required.
+    */
+  var id: js.UndefOr[String] = js.native
+  var rippleColor: js.UndefOr[Color] = js.native
+  var size: js.UndefOr[mini | regular] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object OptionsFab {
   @scala.inline
-  def apply(
-    id: String,
-    actions: js.Array[OptionsFab] = null,
-    alignHorizontally: left | right = null,
-    alignVertically: top | bottom = null,
-    backgroundColor: Color = null,
-    clickColor: Color = null,
-    hideOnScroll: js.UndefOr[Boolean] = js.undefined,
-    icon: js.UndefOr[ImageRequireSource] = js.undefined,
-    iconColor: Color = null,
-    rippleColor: Color = null,
-    size: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): OptionsFab = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (alignHorizontally != null) __obj.updateDynamic("alignHorizontally")(alignHorizontally.asInstanceOf[js.Any])
-    if (alignVertically != null) __obj.updateDynamic("alignVertically")(alignVertically.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (clickColor != null) __obj.updateDynamic("clickColor")(clickColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.get.asInstanceOf[js.Any])
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
-    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
+  def apply(): OptionsFab = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsFab]
   }
+  @scala.inline
+  implicit class OptionsFabOps[Self <: OptionsFab] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignHorizontally(value: left | right): Self = this.set("alignHorizontally", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignHorizontally: Self = this.set("alignHorizontally", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setClickColor(value: Color): Self = this.set("clickColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickColor: Self = this.set("clickColor", js.undefined)
+    @scala.inline
+    def setHideOnScroll(value: Boolean): Self = this.set("hideOnScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideOnScroll: Self = this.set("hideOnScroll", js.undefined)
+    @scala.inline
+    def setIcon(value: ImageRequireSource): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconColor(value: Color): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setRippleColor(value: Color): Self = this.set("rippleColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRippleColor: Self = this.set("rippleColor", js.undefined)
+    @scala.inline
+    def setSize(value: mini | regular): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

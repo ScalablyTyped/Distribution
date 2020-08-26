@@ -38,23 +38,56 @@ trait CreateApplicationRequest extends js.Object {
 
 object CreateApplicationRequest {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName,
-    ApplicationCode: ApplicationCode = null,
-    ApplicationDescription: ApplicationDescription = null,
-    CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
-    Inputs: Inputs = null,
-    Outputs: Outputs = null,
-    Tags: Tags = null
-  ): CreateApplicationRequest = {
+  def apply(ApplicationName: ApplicationName): CreateApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
-    if (ApplicationCode != null) __obj.updateDynamic("ApplicationCode")(ApplicationCode.asInstanceOf[js.Any])
-    if (ApplicationDescription != null) __obj.updateDynamic("ApplicationDescription")(ApplicationDescription.asInstanceOf[js.Any])
-    if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions.asInstanceOf[js.Any])
-    if (Inputs != null) __obj.updateDynamic("Inputs")(Inputs.asInstanceOf[js.Any])
-    if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationRequest]
   }
+  @scala.inline
+  implicit class CreateApplicationRequestOps[Self <: CreateApplicationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationCode(value: ApplicationCode): Self = this.set("ApplicationCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationCode: Self = this.set("ApplicationCode", js.undefined)
+    @scala.inline
+    def setApplicationDescription(value: ApplicationDescription): Self = this.set("ApplicationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationDescription: Self = this.set("ApplicationDescription", js.undefined)
+    @scala.inline
+    def setCloudWatchLoggingOptionsVarargs(value: CloudWatchLoggingOption*): Self = this.set("CloudWatchLoggingOptions", js.Array(value :_*))
+    @scala.inline
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    @scala.inline
+    def setInputsVarargs(value: Input*): Self = this.set("Inputs", js.Array(value :_*))
+    @scala.inline
+    def setInputs(value: Inputs): Self = this.set("Inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("Inputs", js.undefined)
+    @scala.inline
+    def setOutputsVarargs(value: Output*): Self = this.set("Outputs", js.Array(value :_*))
+    @scala.inline
+    def setOutputs(value: Outputs): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

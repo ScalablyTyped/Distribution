@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Directive extends js.Object {
   /**
     * Defines the name that can be used in the template to assign this directive to a variable.
@@ -30,7 +31,7 @@ trait Directive extends js.Object {
     * ```
     *
     */
-  var exportAs: js.UndefOr[String] = js.undefined
+  var exportAs: js.UndefOr[String] = js.native
   /**
     * Maps class properties to host element bindings for properties,
     * attributes, and events, using a set of key-value pairs.
@@ -53,7 +54,7 @@ trait Directive extends js.Object {
     * event. A handler method can refer to the `$event` local variable.
     *
     */
-  var host: js.UndefOr[StringDictionary[String]] = js.undefined
+  var host: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * Enumerates the set of data-bound input properties for a directive
     *
@@ -86,14 +87,14 @@ trait Directive extends js.Object {
     * ```
     *
     */
-  var inputs: js.UndefOr[js.Array[String]] = js.undefined
+  var inputs: js.UndefOr[js.Array[String]] = js.native
   /**
-    * If true, this directive/component will be skipped by the AOT compiler and so will always be
-    * compiled using JIT.
-    *
-    * This exists to support future Ivy work and has no effect currently.
+    * When present, this directive/component is ignored by the AOT compiler.
+    * It remains in distributed code, and the JIT compiler attempts to compile it
+    * at run time, in the browser.
+    * To ensure the correct behavior, the app must import `@angular/compiler`.
     */
-  var jit: js.UndefOr[`true`] = js.undefined
+  var jit: js.UndefOr[`true`] = js.native
   /**
     * Enumerates the set of event-bound output properties.
     *
@@ -134,13 +135,13 @@ trait Directive extends js.Object {
     * ```
     *
     */
-  var outputs: js.UndefOr[js.Array[String]] = js.undefined
+  var outputs: js.UndefOr[js.Array[String]] = js.native
   /**
     * Configures the [injector](guide/glossary#injector) of this
     * directive or component with a [token](guide/glossary#di-token)
     * that maps to a [provider](guide/glossary#provider) of a dependency.
     */
-  var providers: js.UndefOr[js.Array[Provider]] = js.undefined
+  var providers: js.UndefOr[js.Array[Provider]] = js.native
   /**
     * Configures the queries that will be injected into the directive.
     *
@@ -177,7 +178,7 @@ trait Directive extends js.Object {
     *
     * @Annotation
     */
-  var queries: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var queries: js.UndefOr[StringDictionary[js.Any]] = js.native
   /**
     * The CSS selector that identifies this directive in a template
     * and triggers instantiation of the directive.
@@ -205,7 +206,7 @@ trait Directive extends js.Object {
     * ```
     *
     */
-  var selector: js.UndefOr[String] = js.undefined
+  var selector: js.UndefOr[String] = js.native
 }
 
 @JSImport("@angular/core", "Directive")

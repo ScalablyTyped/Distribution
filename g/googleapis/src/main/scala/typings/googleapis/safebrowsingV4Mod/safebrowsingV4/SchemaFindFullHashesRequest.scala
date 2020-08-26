@@ -31,18 +31,40 @@ trait SchemaFindFullHashesRequest extends js.Object {
 
 object SchemaFindFullHashesRequest {
   @scala.inline
-  def apply(
-    apiClient: SchemaClientInfo = null,
-    client: SchemaClientInfo = null,
-    clientStates: js.Array[String] = null,
-    threatInfo: SchemaThreatInfo = null
-  ): SchemaFindFullHashesRequest = {
+  def apply(): SchemaFindFullHashesRequest = {
     val __obj = js.Dynamic.literal()
-    if (apiClient != null) __obj.updateDynamic("apiClient")(apiClient.asInstanceOf[js.Any])
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (clientStates != null) __obj.updateDynamic("clientStates")(clientStates.asInstanceOf[js.Any])
-    if (threatInfo != null) __obj.updateDynamic("threatInfo")(threatInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFindFullHashesRequest]
   }
+  @scala.inline
+  implicit class SchemaFindFullHashesRequestOps[Self <: SchemaFindFullHashesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiClient(value: SchemaClientInfo): Self = this.set("apiClient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiClient: Self = this.set("apiClient", js.undefined)
+    @scala.inline
+    def setClient(value: SchemaClientInfo): Self = this.set("client", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient: Self = this.set("client", js.undefined)
+    @scala.inline
+    def setClientStatesVarargs(value: String*): Self = this.set("clientStates", js.Array(value :_*))
+    @scala.inline
+    def setClientStates(value: js.Array[String]): Self = this.set("clientStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientStates: Self = this.set("clientStates", js.undefined)
+    @scala.inline
+    def setThreatInfo(value: SchemaThreatInfo): Self = this.set("threatInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatInfo: Self = this.set("threatInfo", js.undefined)
+  }
+  
 }
 

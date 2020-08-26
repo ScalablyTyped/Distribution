@@ -26,15 +26,34 @@ trait GlobalSecondaryIndex extends js.Object {
 
 object GlobalSecondaryIndex {
   @scala.inline
-  def apply(
-    IndexName: IndexName,
-    KeySchema: KeySchema,
-    Projection: Projection,
-    ProvisionedThroughput: ProvisionedThroughput = null
-  ): GlobalSecondaryIndex = {
+  def apply(IndexName: IndexName, KeySchema: KeySchema, Projection: Projection): GlobalSecondaryIndex = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], Projection = Projection.asInstanceOf[js.Any])
-    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalSecondaryIndex]
   }
+  @scala.inline
+  implicit class GlobalSecondaryIndexOps[Self <: GlobalSecondaryIndex] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    @scala.inline
+    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProjection(value: Projection): Self = this.set("Projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvisionedThroughput(value: ProvisionedThroughput): Self = this.set("ProvisionedThroughput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedThroughput: Self = this.set("ProvisionedThroughput", js.undefined)
+  }
+  
 }
 

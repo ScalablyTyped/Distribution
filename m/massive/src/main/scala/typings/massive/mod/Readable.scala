@@ -16,6 +16,7 @@ class Readable protected () extends Entity {
   def countDoc(criteria: js.Object): js.Promise[Double] = js.native
   /** Find rows matching criteria. */
   def find(): js.Promise[_] = js.native
+  def find(criteria: js.UndefOr[scala.Nothing], options: RetrievalOptions with ResultProcessingOptions): js.Promise[_] = js.native
   def find(criteria: Double): js.Promise[_] = js.native
   def find(criteria: Double, options: RetrievalOptions with ResultProcessingOptions): js.Promise[_] = js.native
   def find(criteria: AnyObject[_]): js.Promise[_] = js.native
@@ -24,6 +25,7 @@ class Readable protected () extends Entity {
   def find(criteria: UUID, options: RetrievalOptions with ResultProcessingOptions): js.Promise[_] = js.native
   /** Find a document by searching in the body. */
   def findDoc(): js.Promise[_] = js.native
+  def findDoc(criteria: js.UndefOr[scala.Nothing], options: RetrievalOptions): js.Promise[_] = js.native
   def findDoc(criteria: Double): js.Promise[_] = js.native
   def findDoc(criteria: Double, options: RetrievalOptions): js.Promise[_] = js.native
   def findDoc(criteria: AnyObject[_]): js.Promise[_] = js.native
@@ -57,6 +59,11 @@ class Readable protected () extends Entity {
   def searchDoc(plan: PickSearchDefinitionfield, options: RetrievalOptions): js.Promise[js.Array[_]] = js.native
   /** Run a query with a raw SQL predicate, eg: db.mytable.where('id=$1', [123]).then(...); */
   def where(conditions: String): js.Promise[js.Array[_]] = js.native
+  def where(
+    conditions: String,
+    params: js.UndefOr[scala.Nothing],
+    options: RetrievalOptions with ResultProcessingOptions
+  ): js.Promise[js.Array[_]] = js.native
   def where(conditions: String, params: js.Array[_]): js.Promise[js.Array[_]] = js.native
   def where(conditions: String, params: js.Array[_], options: RetrievalOptions with ResultProcessingOptions): js.Promise[js.Array[_]] = js.native
 }

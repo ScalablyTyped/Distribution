@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.SheetCellRanges
   * @see com.sun.star.sheet.CellFormatRanges
   */
+@js.native
 trait UniqueCellFormatRanges
   extends XIndexAccess
      with XEnumerationAccess

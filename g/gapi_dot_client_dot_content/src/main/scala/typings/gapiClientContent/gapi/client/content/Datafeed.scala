@@ -4,69 +4,110 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Datafeed extends js.Object {
   /** The two-letter ISO 639-1 language in which the attributes are defined in the data feed. */
-  var attributeLanguage: js.UndefOr[String] = js.undefined
+  var attributeLanguage: js.UndefOr[String] = js.native
   /**
     * [DEPRECATED] Please use target.language instead. The two-letter ISO 639-1 language of the items in the feed. Must be a valid language for
     * targetCountry.
     */
-  var contentLanguage: js.UndefOr[String] = js.undefined
+  var contentLanguage: js.UndefOr[String] = js.native
   /** The type of data feed. For product inventory feeds, only feeds for local stores, not online stores, are supported. */
-  var contentType: js.UndefOr[String] = js.undefined
+  var contentType: js.UndefOr[String] = js.native
   /** Fetch schedule for the feed file. */
-  var fetchSchedule: js.UndefOr[DatafeedFetchSchedule] = js.undefined
+  var fetchSchedule: js.UndefOr[DatafeedFetchSchedule] = js.native
   /** The filename of the feed. All feeds must have a unique file name. */
-  var fileName: js.UndefOr[String] = js.undefined
+  var fileName: js.UndefOr[String] = js.native
   /** Format of the feed file. */
-  var format: js.UndefOr[DatafeedFormat] = js.undefined
+  var format: js.UndefOr[DatafeedFormat] = js.native
   /** The ID of the data feed. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** [DEPRECATED] Please use target.includedDestination instead. The list of intended destinations (corresponds to checked check boxes in Merchant Center). */
-  var intendedDestinations: js.UndefOr[js.Array[String]] = js.undefined
+  var intendedDestinations: js.UndefOr[js.Array[String]] = js.native
   /** Identifies what kind of resource this is. Value: the fixed string "content#datafeed". */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** A descriptive name of the data feed. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * [DEPRECATED] Please use target.country instead. The country where the items in the feed will be included in the search index, represented as a CLDR
     * territory code.
     */
-  var targetCountry: js.UndefOr[String] = js.undefined
+  var targetCountry: js.UndefOr[String] = js.native
   /** The targets this feed should apply to (country, language, destinations). */
-  var targets: js.UndefOr[js.Array[DatafeedTarget]] = js.undefined
+  var targets: js.UndefOr[js.Array[DatafeedTarget]] = js.native
 }
 
 object Datafeed {
   @scala.inline
-  def apply(
-    attributeLanguage: String = null,
-    contentLanguage: String = null,
-    contentType: String = null,
-    fetchSchedule: DatafeedFetchSchedule = null,
-    fileName: String = null,
-    format: DatafeedFormat = null,
-    id: String = null,
-    intendedDestinations: js.Array[String] = null,
-    kind: String = null,
-    name: String = null,
-    targetCountry: String = null,
-    targets: js.Array[DatafeedTarget] = null
-  ): Datafeed = {
+  def apply(): Datafeed = {
     val __obj = js.Dynamic.literal()
-    if (attributeLanguage != null) __obj.updateDynamic("attributeLanguage")(attributeLanguage.asInstanceOf[js.Any])
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (fetchSchedule != null) __obj.updateDynamic("fetchSchedule")(fetchSchedule.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (intendedDestinations != null) __obj.updateDynamic("intendedDestinations")(intendedDestinations.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (targetCountry != null) __obj.updateDynamic("targetCountry")(targetCountry.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Datafeed]
   }
+  @scala.inline
+  implicit class DatafeedOps[Self <: Datafeed] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeLanguage(value: String): Self = this.set("attributeLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeLanguage: Self = this.set("attributeLanguage", js.undefined)
+    @scala.inline
+    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setFetchSchedule(value: DatafeedFetchSchedule): Self = this.set("fetchSchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchSchedule: Self = this.set("fetchSchedule", js.undefined)
+    @scala.inline
+    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileName: Self = this.set("fileName", js.undefined)
+    @scala.inline
+    def setFormat(value: DatafeedFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIntendedDestinationsVarargs(value: String*): Self = this.set("intendedDestinations", js.Array(value :_*))
+    @scala.inline
+    def setIntendedDestinations(value: js.Array[String]): Self = this.set("intendedDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntendedDestinations: Self = this.set("intendedDestinations", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTargetCountry(value: String): Self = this.set("targetCountry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCountry: Self = this.set("targetCountry", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: DatafeedTarget*): Self = this.set("targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: js.Array[DatafeedTarget]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("targets", js.undefined)
+  }
+  
 }
 

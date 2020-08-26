@@ -24,6 +24,8 @@ trait Mailgun extends js.Object {
   var post_Original: MailgunRequest = js.native
   @JSName("put")
   var put_Original: MailgunRequest = js.native
+  def delete(resource: String): js.Promise[_] = js.native
+  def delete(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
   def delete(resource: String, data: js.Any): js.Promise[_] = js.native
   def delete(
     resource: String,
@@ -31,6 +33,9 @@ trait Mailgun extends js.Object {
     callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]
   ): Unit = js.native
   // Generic requests
+  def get(resource: String): js.Promise[_] = js.native
+  // Generic requests
+  def get(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
   def get(resource: String, data: js.Any): js.Promise[_] = js.native
   // Generic requests
   def get(
@@ -42,12 +47,16 @@ trait Mailgun extends js.Object {
   def messages(): Messages_ = js.native
   def parse(addressList: js.Array[String]): js.Promise[ParseResponse] = js.native
   def parse(addressList: js.Array[String], callback: ValidationCallback): js.Promise[ParseResponse] = js.native
+  def post(resource: String): js.Promise[_] = js.native
+  def post(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
   def post(resource: String, data: js.Any): js.Promise[_] = js.native
   def post(
     resource: String,
     data: js.Any,
     callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]
   ): Unit = js.native
+  def put(resource: String): js.Promise[_] = js.native
+  def put(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
   def put(resource: String, data: js.Any): js.Promise[_] = js.native
   def put(
     resource: String,

@@ -4,52 +4,91 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IShepherdTourStepOptions extends js.Object {
-  var advanceOn: js.UndefOr[js.Any] = js.undefined
-  var attachTo: js.UndefOr[js.Any] = js.undefined
-  var beforeShowPromise: js.UndefOr[js.Any] = js.undefined
-  var buttons: js.UndefOr[js.Array[IShepherdTourButton]] = js.undefined
-  var classes: js.UndefOr[String] = js.undefined
-  var scrollTo: js.UndefOr[Boolean] = js.undefined
-  var showCancelLink: js.UndefOr[Boolean] = js.undefined
-  var showOn: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var advanceOn: js.UndefOr[js.Any] = js.native
+  var attachTo: js.UndefOr[js.Any] = js.native
+  var beforeShowPromise: js.UndefOr[js.Any] = js.native
+  var buttons: js.UndefOr[js.Array[IShepherdTourButton]] = js.native
+  var classes: js.UndefOr[String] = js.native
+  var scrollTo: js.UndefOr[Boolean] = js.native
+  var showCancelLink: js.UndefOr[Boolean] = js.native
+  var showOn: js.UndefOr[js.Function0[Boolean]] = js.native
   // TODO: Tie this in with the tether.d.ts
-  var tetherOptions: js.UndefOr[js.Any] = js.undefined
-  var text: js.UndefOr[js.Any] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var when: js.UndefOr[js.Any] = js.undefined
+  var tetherOptions: js.UndefOr[js.Any] = js.native
+  var text: js.UndefOr[js.Any] = js.native
+  var title: js.UndefOr[String] = js.native
+  var when: js.UndefOr[js.Any] = js.native
 }
 
 object IShepherdTourStepOptions {
   @scala.inline
-  def apply(
-    advanceOn: js.Any = null,
-    attachTo: js.Any = null,
-    beforeShowPromise: js.Any = null,
-    buttons: js.Array[IShepherdTourButton] = null,
-    classes: String = null,
-    scrollTo: js.UndefOr[Boolean] = js.undefined,
-    showCancelLink: js.UndefOr[Boolean] = js.undefined,
-    showOn: () => Boolean = null,
-    tetherOptions: js.Any = null,
-    text: js.Any = null,
-    title: String = null,
-    when: js.Any = null
-  ): IShepherdTourStepOptions = {
+  def apply(): IShepherdTourStepOptions = {
     val __obj = js.Dynamic.literal()
-    if (advanceOn != null) __obj.updateDynamic("advanceOn")(advanceOn.asInstanceOf[js.Any])
-    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
-    if (beforeShowPromise != null) __obj.updateDynamic("beforeShowPromise")(beforeShowPromise.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollTo)) __obj.updateDynamic("scrollTo")(scrollTo.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCancelLink)) __obj.updateDynamic("showCancelLink")(showCancelLink.get.asInstanceOf[js.Any])
-    if (showOn != null) __obj.updateDynamic("showOn")(js.Any.fromFunction0(showOn))
-    if (tetherOptions != null) __obj.updateDynamic("tetherOptions")(tetherOptions.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShepherdTourStepOptions]
   }
+  @scala.inline
+  implicit class IShepherdTourStepOptionsOps[Self <: IShepherdTourStepOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvanceOn(value: js.Any): Self = this.set("advanceOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvanceOn: Self = this.set("advanceOn", js.undefined)
+    @scala.inline
+    def setAttachTo(value: js.Any): Self = this.set("attachTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachTo: Self = this.set("attachTo", js.undefined)
+    @scala.inline
+    def setBeforeShowPromise(value: js.Any): Self = this.set("beforeShowPromise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeShowPromise: Self = this.set("beforeShowPromise", js.undefined)
+    @scala.inline
+    def setButtonsVarargs(value: IShepherdTourButton*): Self = this.set("buttons", js.Array(value :_*))
+    @scala.inline
+    def setButtons(value: js.Array[IShepherdTourButton]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setClasses(value: String): Self = this.set("classes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClasses: Self = this.set("classes", js.undefined)
+    @scala.inline
+    def setScrollTo(value: Boolean): Self = this.set("scrollTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollTo: Self = this.set("scrollTo", js.undefined)
+    @scala.inline
+    def setShowCancelLink(value: Boolean): Self = this.set("showCancelLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCancelLink: Self = this.set("showCancelLink", js.undefined)
+    @scala.inline
+    def setShowOn(value: () => Boolean): Self = this.set("showOn", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteShowOn: Self = this.set("showOn", js.undefined)
+    @scala.inline
+    def setTetherOptions(value: js.Any): Self = this.set("tetherOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTetherOptions: Self = this.set("tetherOptions", js.undefined)
+    @scala.inline
+    def setText(value: js.Any): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWhen(value: js.Any): Self = this.set("when", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhen: Self = this.set("when", js.undefined)
+  }
+  
 }
 

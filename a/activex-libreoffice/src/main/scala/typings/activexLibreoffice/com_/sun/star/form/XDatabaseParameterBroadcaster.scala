@@ -14,19 +14,20 @@ import scala.scalajs.js.annotation._
   * upon a parametrized statement, it needs values to fill in the parameters with actual values when it is being loaded. One method to gather these values
   * is calling the {@link XDatabaseParameterListener} listeners, which can fill them in.
   */
+@js.native
 trait XDatabaseParameterBroadcaster extends XInterface {
   /**
     * adds the specified listener, to allow it to fill in necessary parameter values.
     * @param aListener the listener to add.
     * @see com.sun.star.form.XDatabaseParameterListener
     */
-  def addParameterListener(aListener: XDatabaseParameterListener): Unit
+  def addParameterListener(aListener: XDatabaseParameterListener): Unit = js.native
   /**
     * removes the specified listener.
     * @param aListener the listener to remove.
     * @see com.sun.star.form.XDatabaseParameterListener
     */
-  def removeParameterListener(aListener: XDatabaseParameterListener): Unit
+  def removeParameterListener(aListener: XDatabaseParameterListener): Unit = js.native
 }
 
 object XDatabaseParameterBroadcaster {
@@ -41,5 +42,22 @@ object XDatabaseParameterBroadcaster {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addParameterListener = js.Any.fromFunction1(addParameterListener), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeParameterListener = js.Any.fromFunction1(removeParameterListener))
     __obj.asInstanceOf[XDatabaseParameterBroadcaster]
   }
+  @scala.inline
+  implicit class XDatabaseParameterBroadcasterOps[Self <: XDatabaseParameterBroadcaster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddParameterListener(value: XDatabaseParameterListener => Unit): Self = this.set("addParameterListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveParameterListener(value: XDatabaseParameterListener => Unit): Self = this.set("removeParameterListener", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -42,22 +42,46 @@ trait SchemaAchievementUpdateResponse extends js.Object {
 
 object SchemaAchievementUpdateResponse {
   @scala.inline
-  def apply(
-    achievementId: String = null,
-    currentState: String = null,
-    currentSteps: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    newlyUnlocked: js.UndefOr[Boolean] = js.undefined,
-    updateOccurred: js.UndefOr[Boolean] = js.undefined
-  ): SchemaAchievementUpdateResponse = {
+  def apply(): SchemaAchievementUpdateResponse = {
     val __obj = js.Dynamic.literal()
-    if (achievementId != null) __obj.updateDynamic("achievementId")(achievementId.asInstanceOf[js.Any])
-    if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
-    if (!js.isUndefined(currentSteps)) __obj.updateDynamic("currentSteps")(currentSteps.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAchievementUpdateResponse]
   }
+  @scala.inline
+  implicit class SchemaAchievementUpdateResponseOps[Self <: SchemaAchievementUpdateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAchievementId(value: String): Self = this.set("achievementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAchievementId: Self = this.set("achievementId", js.undefined)
+    @scala.inline
+    def setCurrentState(value: String): Self = this.set("currentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentState: Self = this.set("currentState", js.undefined)
+    @scala.inline
+    def setCurrentSteps(value: Double): Self = this.set("currentSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentSteps: Self = this.set("currentSteps", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNewlyUnlocked(value: Boolean): Self = this.set("newlyUnlocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewlyUnlocked: Self = this.set("newlyUnlocked", js.undefined)
+    @scala.inline
+    def setUpdateOccurred(value: Boolean): Self = this.set("updateOccurred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateOccurred: Self = this.set("updateOccurred", js.undefined)
+  }
+  
 }
 

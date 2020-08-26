@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-md/app-bar" : "2.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-md/app-bar" : "2.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

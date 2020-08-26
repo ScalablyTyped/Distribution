@@ -14,10 +14,26 @@ trait CreatePresignedNotebookInstanceUrlOutput extends js.Object {
 
 object CreatePresignedNotebookInstanceUrlOutput {
   @scala.inline
-  def apply(AuthorizedUrl: NotebookInstanceUrl = null): CreatePresignedNotebookInstanceUrlOutput = {
+  def apply(): CreatePresignedNotebookInstanceUrlOutput = {
     val __obj = js.Dynamic.literal()
-    if (AuthorizedUrl != null) __obj.updateDynamic("AuthorizedUrl")(AuthorizedUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePresignedNotebookInstanceUrlOutput]
   }
+  @scala.inline
+  implicit class CreatePresignedNotebookInstanceUrlOutputOps[Self <: CreatePresignedNotebookInstanceUrlOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizedUrl(value: NotebookInstanceUrl): Self = this.set("AuthorizedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizedUrl: Self = this.set("AuthorizedUrl", js.undefined)
+  }
+  
 }
 

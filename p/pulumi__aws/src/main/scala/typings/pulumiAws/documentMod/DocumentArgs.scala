@@ -2,7 +2,6 @@ package typings.pulumiAws.documentMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource
-import typings.pulumiAws.inputMod.ssm.DocumentPermissions
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,11 +32,11 @@ trait DocumentArgs extends js.Object {
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: js.UndefOr[Input[DocumentPermissions]] = js.native
+  val permissions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
-    * A mapping of tags to assign to the object.
+    * A map of tags to assign to the object.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS Resource Types Reference (http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
     */
@@ -46,24 +45,52 @@ trait DocumentArgs extends js.Object {
 
 object DocumentArgs {
   @scala.inline
-  def apply(
-    content: Input[String],
-    documentType: Input[String],
-    attachmentsSources: Input[js.Array[Input[DocumentAttachmentsSource]]] = null,
-    documentFormat: Input[String] = null,
-    name: Input[String] = null,
-    permissions: Input[DocumentPermissions] = null,
-    tags: Input[StringDictionary[_]] = null,
-    targetType: Input[String] = null
-  ): DocumentArgs = {
+  def apply(content: Input[String], documentType: Input[String]): DocumentArgs = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], documentType = documentType.asInstanceOf[js.Any])
-    if (attachmentsSources != null) __obj.updateDynamic("attachmentsSources")(attachmentsSources.asInstanceOf[js.Any])
-    if (documentFormat != null) __obj.updateDynamic("documentFormat")(documentFormat.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentArgs]
   }
+  @scala.inline
+  implicit class DocumentArgsOps[Self <: DocumentArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: Input[String]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDocumentType(value: Input[String]): Self = this.set("documentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttachmentsSourcesVarargs(value: Input[DocumentAttachmentsSource]*): Self = this.set("attachmentsSources", js.Array(value :_*))
+    @scala.inline
+    def setAttachmentsSources(value: Input[js.Array[Input[DocumentAttachmentsSource]]]): Self = this.set("attachmentsSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentsSources: Self = this.set("attachmentsSources", js.undefined)
+    @scala.inline
+    def setDocumentFormat(value: Input[String]): Self = this.set("documentFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentFormat: Self = this.set("documentFormat", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPermissions(value: Input[StringDictionary[Input[String]]]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTargetType(value: Input[String]): Self = this.set("targetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetType: Self = this.set("targetType", js.undefined)
+  }
+  
 }
 

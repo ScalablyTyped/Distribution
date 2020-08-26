@@ -34,19 +34,42 @@ trait StartQueryRequest extends js.Object {
 
 object StartQueryRequest {
   @scala.inline
-  def apply(
-    endTime: Timestamp,
-    queryString: QueryString,
-    startTime: Timestamp,
-    limit: js.UndefOr[EventsLimit] = js.undefined,
-    logGroupName: LogGroupName = null,
-    logGroupNames: LogGroupNames = null
-  ): StartQueryRequest = {
+  def apply(endTime: Timestamp, queryString: QueryString, startTime: Timestamp): StartQueryRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
-    if (logGroupNames != null) __obj.updateDynamic("logGroupNames")(logGroupNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartQueryRequest]
   }
+  @scala.inline
+  implicit class StartQueryRequestOps[Self <: StartQueryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQueryString(value: QueryString): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimit(value: EventsLimit): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("logGroupName", js.undefined)
+    @scala.inline
+    def setLogGroupNamesVarargs(value: LogGroupName*): Self = this.set("logGroupNames", js.Array(value :_*))
+    @scala.inline
+    def setLogGroupNames(value: LogGroupNames): Self = this.set("logGroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupNames: Self = this.set("logGroupNames", js.undefined)
+  }
+  
 }
 

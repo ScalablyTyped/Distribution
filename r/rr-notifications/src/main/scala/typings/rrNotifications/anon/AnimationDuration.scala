@@ -7,41 +7,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnimationDuration extends js.Object {
   /** Duration of the show and hide animations in milliseconds */
-  var animationDuration: js.UndefOr[Double] = js.undefined
+  var animationDuration: js.UndefOr[Double] = js.native
   /** Animation timing function / cubic-bezier */
-  var animationEasing: js.UndefOr[String] = js.undefined
+  var animationEasing: js.UndefOr[String] = js.native
   /** Time in milliseconds after which the notification is automatically dismissed */
-  var dismissAfter: js.UndefOr[Double] = js.undefined
+  var dismissAfter: js.UndefOr[Double] = js.native
   /** Fixed position where all notifications are displayed */
-  var position: js.UndefOr[js.Tuple4[String, String, String, String]] = js.undefined
+  var position: js.UndefOr[js.Tuple4[String, String, String, String]] = js.native
   /**
     * Horizontal direction which notification appears from. If not provided, the notification will
     * appear from top or bottom, depending on position prop
     */
-  var slideFromSide: js.UndefOr[right | left] = js.undefined
+  var slideFromSide: js.UndefOr[right | left] = js.native
   /** Render prop which passes down removeNotification function and notification payload */
-  def renderNotification(args: Payload): Element
+  def renderNotification(args: Payload): Element = js.native
 }
 
 object AnimationDuration {
   @scala.inline
-  def apply(
-    renderNotification: Payload => Element,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationEasing: String = null,
-    dismissAfter: js.UndefOr[Double] = js.undefined,
-    position: js.Tuple4[String, String, String, String] = null,
-    slideFromSide: right | left = null
-  ): AnimationDuration = {
+  def apply(renderNotification: Payload => Element): AnimationDuration = {
     val __obj = js.Dynamic.literal(renderNotification = js.Any.fromFunction1(renderNotification))
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissAfter)) __obj.updateDynamic("dismissAfter")(dismissAfter.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (slideFromSide != null) __obj.updateDynamic("slideFromSide")(slideFromSide.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationDuration]
   }
+  @scala.inline
+  implicit class AnimationDurationOps[Self <: AnimationDuration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRenderNotification(value: Payload => Element): Self = this.set("renderNotification", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setDismissAfter(value: Double): Self = this.set("dismissAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDismissAfter: Self = this.set("dismissAfter", js.undefined)
+    @scala.inline
+    def setPosition(value: js.Tuple4[String, String, String, String]): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSlideFromSide(value: right | left): Self = this.set("slideFromSide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideFromSide: Self = this.set("slideFromSide", js.undefined)
+  }
+  
 }
 

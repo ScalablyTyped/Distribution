@@ -23,6 +23,7 @@ trait DatepickerEventObject extends JQueryMouseEventObject {
   var keyCode: Double = js.native
   def format(): String = js.native
   def format(format: String): String = js.native
+  def format(ix: js.UndefOr[scala.Nothing], format: String): String = js.native
   def format(ix: Double): String = js.native
   def format(ix: Double, format: String): String = js.native
 }

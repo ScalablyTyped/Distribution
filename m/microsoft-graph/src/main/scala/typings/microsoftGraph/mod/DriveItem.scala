@@ -4,174 +4,240 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DriveItem extends BaseItem {
   /**
     * If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some
     * contexts and folders in others. Read-only.
     */
   @JSName("package")
-  var _package: js.UndefOr[Package] = js.undefined
+  var _package: js.UndefOr[Package] = js.native
   // Analytics about the view activities that took place on this item.
-  var analytics: js.UndefOr[ItemAnalytics] = js.undefined
+  var analytics: js.UndefOr[ItemAnalytics] = js.native
   // Audio metadata, if the item is an audio file. Read-only.
-  var audio: js.UndefOr[Audio] = js.undefined
+  var audio: js.UndefOr[Audio] = js.native
   /**
     * An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is
     * not returned if the item is a folder. Read-only.
     */
-  var cTag: js.UndefOr[String] = js.undefined
+  var cTag: js.UndefOr[String] = js.native
   /**
     * Collection containing Item objects for the immediate children of Item. Only items representing folders have children.
     * Read-only. Nullable.
     */
-  var children: js.UndefOr[js.Array[DriveItem]] = js.undefined
+  var children: js.UndefOr[js.Array[DriveItem]] = js.native
   // The content stream, if the item represents a file.
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[js.Any] = js.native
   // Information about the deleted state of the item. Read-only.
-  var deleted: js.UndefOr[Deleted] = js.undefined
+  var deleted: js.UndefOr[Deleted] = js.native
   // File metadata, if the item is a file. Read-only.
-  var file: js.UndefOr[File] = js.undefined
+  var file: js.UndefOr[File] = js.native
   // File system information on client. Read-write.
-  var fileSystemInfo: js.UndefOr[FileSystemInfo] = js.undefined
+  var fileSystemInfo: js.UndefOr[FileSystemInfo] = js.native
   // Folder metadata, if the item is a folder. Read-only.
-  var folder: js.UndefOr[Folder] = js.undefined
+  var folder: js.UndefOr[Folder] = js.native
   // Image metadata, if the item is an image. Read-only.
-  var image: js.UndefOr[Image] = js.undefined
+  var image: js.UndefOr[Image] = js.native
   // For drives in SharePoint, the associated document library list item. Read-only. Nullable.
-  var listItem: js.UndefOr[ListItem] = js.undefined
+  var listItem: js.UndefOr[ListItem] = js.native
   // Location metadata, if the item has location data. Read-only.
-  var location: js.UndefOr[GeoCoordinates] = js.undefined
+  var location: js.UndefOr[GeoCoordinates] = js.native
+  /**
+    * If present, indicates that one or more operations that might affect the state of the driveItem are pending completion.
+    * Read-only.
+    */
+  var pendingOperations: js.UndefOr[PendingOperations] = js.native
   // The set of permissions for the item. Read-only. Nullable.
-  var permissions: js.UndefOr[js.Array[Permission]] = js.undefined
+  var permissions: js.UndefOr[js.Array[Permission]] = js.native
   // Photo metadata, if the item is a photo. Read-only.
-  var photo: js.UndefOr[Photo] = js.undefined
+  var photo: js.UndefOr[Photo] = js.native
   /**
     * Provides information about the published or checked-out state of an item, in locations that support such actions. This
     * property is not returned by default. Read-only.
     */
-  var publication: js.UndefOr[PublicationFacet] = js.undefined
+  var publication: js.UndefOr[PublicationFacet] = js.native
   // Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
-  var remoteItem: js.UndefOr[RemoteItem] = js.undefined
+  var remoteItem: js.UndefOr[RemoteItem] = js.native
   // If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
-  var root: js.UndefOr[Root] = js.undefined
+  var root: js.UndefOr[Root] = js.native
   // Search metadata, if the item is from a search result. Read-only.
-  var searchResult: js.UndefOr[SearchResult] = js.undefined
+  var searchResult: js.UndefOr[SearchResult] = js.native
   /**
     * Indicates that the item has been shared with others and provides information about the shared state of the item.
     * Read-only.
     */
-  var shared: js.UndefOr[Shared] = js.undefined
+  var shared: js.UndefOr[Shared] = js.native
   // Returns identifiers useful for SharePoint REST compatibility. Read-only.
-  var sharepointIds: js.UndefOr[SharepointIds] = js.undefined
+  var sharepointIds: js.UndefOr[SharepointIds] = js.native
   // Size of the item in bytes. Read-only.
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
   // If the current item is also available as a special folder, this facet is returned. Read-only.
-  var specialFolder: js.UndefOr[SpecialFolder] = js.undefined
+  var specialFolder: js.UndefOr[SpecialFolder] = js.native
   // The set of subscriptions on the item. Only supported on the root of a drive.
-  var subscriptions: js.UndefOr[js.Array[Subscription]] = js.undefined
+  var subscriptions: js.UndefOr[js.Array[Subscription]] = js.native
   /**
     * Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][].
     * Read-only. Nullable.
     */
-  var thumbnails: js.UndefOr[js.Array[ThumbnailSet]] = js.undefined
+  var thumbnails: js.UndefOr[js.Array[ThumbnailSet]] = js.native
   // The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
-  var versions: js.UndefOr[js.Array[DriveItemVersion]] = js.undefined
+  var versions: js.UndefOr[js.Array[DriveItemVersion]] = js.native
   // Video metadata, if the item is a video. Read-only.
-  var video: js.UndefOr[Video] = js.undefined
+  var video: js.UndefOr[Video] = js.native
   // WebDAV compatible URL for the item.
-  var webDavUrl: js.UndefOr[String] = js.undefined
+  var webDavUrl: js.UndefOr[String] = js.native
   // For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
-  var workbook: js.UndefOr[Workbook] = js.undefined
+  var workbook: js.UndefOr[Workbook] = js.native
 }
 
 object DriveItem {
   @scala.inline
-  def apply(
-    _package: Package = null,
-    analytics: ItemAnalytics = null,
-    audio: Audio = null,
-    cTag: String = null,
-    children: js.Array[DriveItem] = null,
-    content: js.Any = null,
-    createdBy: IdentitySet = null,
-    createdByUser: User = null,
-    createdDateTime: String = null,
-    deleted: Deleted = null,
-    description: String = null,
-    eTag: String = null,
-    file: File = null,
-    fileSystemInfo: FileSystemInfo = null,
-    folder: Folder = null,
-    id: String = null,
-    image: Image = null,
-    lastModifiedBy: IdentitySet = null,
-    lastModifiedByUser: User = null,
-    lastModifiedDateTime: String = null,
-    listItem: ListItem = null,
-    location: GeoCoordinates = null,
-    name: String = null,
-    parentReference: ItemReference = null,
-    permissions: js.Array[Permission] = null,
-    photo: Photo = null,
-    publication: PublicationFacet = null,
-    remoteItem: RemoteItem = null,
-    root: Root = null,
-    searchResult: SearchResult = null,
-    shared: Shared = null,
-    sharepointIds: SharepointIds = null,
-    size: js.UndefOr[Double] = js.undefined,
-    specialFolder: SpecialFolder = null,
-    subscriptions: js.Array[Subscription] = null,
-    thumbnails: js.Array[ThumbnailSet] = null,
-    versions: js.Array[DriveItemVersion] = null,
-    video: Video = null,
-    webDavUrl: String = null,
-    webUrl: String = null,
-    workbook: Workbook = null
-  ): DriveItem = {
+  def apply(): DriveItem = {
     val __obj = js.Dynamic.literal()
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (cTag != null) __obj.updateDynamic("cTag")(cTag.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
-    if (createdByUser != null) __obj.updateDynamic("createdByUser")(createdByUser.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (eTag != null) __obj.updateDynamic("eTag")(eTag.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (fileSystemInfo != null) __obj.updateDynamic("fileSystemInfo")(fileSystemInfo.asInstanceOf[js.Any])
-    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
-    if (lastModifiedByUser != null) __obj.updateDynamic("lastModifiedByUser")(lastModifiedByUser.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (listItem != null) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentReference != null) __obj.updateDynamic("parentReference")(parentReference.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
-    if (publication != null) __obj.updateDynamic("publication")(publication.asInstanceOf[js.Any])
-    if (remoteItem != null) __obj.updateDynamic("remoteItem")(remoteItem.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (searchResult != null) __obj.updateDynamic("searchResult")(searchResult.asInstanceOf[js.Any])
-    if (shared != null) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
-    if (sharepointIds != null) __obj.updateDynamic("sharepointIds")(sharepointIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (specialFolder != null) __obj.updateDynamic("specialFolder")(specialFolder.asInstanceOf[js.Any])
-    if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
-    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (webDavUrl != null) __obj.updateDynamic("webDavUrl")(webDavUrl.asInstanceOf[js.Any])
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
-    if (workbook != null) __obj.updateDynamic("workbook")(workbook.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveItem]
   }
+  @scala.inline
+  implicit class DriveItemOps[Self <: DriveItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_package(value: Package): Self = this.set("package", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_package: Self = this.set("package", js.undefined)
+    @scala.inline
+    def setAnalytics(value: ItemAnalytics): Self = this.set("analytics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalytics: Self = this.set("analytics", js.undefined)
+    @scala.inline
+    def setAudio(value: Audio): Self = this.set("audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudio: Self = this.set("audio", js.undefined)
+    @scala.inline
+    def setCTag(value: String): Self = this.set("cTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCTag: Self = this.set("cTag", js.undefined)
+    @scala.inline
+    def setChildrenVarargs(value: DriveItem*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[DriveItem]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setContent(value: js.Any): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDeleted(value: Deleted): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setFile(value: File): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setFileSystemInfo(value: FileSystemInfo): Self = this.set("fileSystemInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemInfo: Self = this.set("fileSystemInfo", js.undefined)
+    @scala.inline
+    def setFolder(value: Folder): Self = this.set("folder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolder: Self = this.set("folder", js.undefined)
+    @scala.inline
+    def setImage(value: Image): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setListItem(value: ListItem): Self = this.set("listItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListItem: Self = this.set("listItem", js.undefined)
+    @scala.inline
+    def setLocation(value: GeoCoordinates): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setPendingOperations(value: PendingOperations): Self = this.set("pendingOperations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingOperations: Self = this.set("pendingOperations", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: Permission*): Self = this.set("permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: js.Array[Permission]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setPhoto(value: Photo): Self = this.set("photo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoto: Self = this.set("photo", js.undefined)
+    @scala.inline
+    def setPublication(value: PublicationFacet): Self = this.set("publication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublication: Self = this.set("publication", js.undefined)
+    @scala.inline
+    def setRemoteItem(value: RemoteItem): Self = this.set("remoteItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteItem: Self = this.set("remoteItem", js.undefined)
+    @scala.inline
+    def setRoot(value: Root): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSearchResult(value: SearchResult): Self = this.set("searchResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchResult: Self = this.set("searchResult", js.undefined)
+    @scala.inline
+    def setShared(value: Shared): Self = this.set("shared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShared: Self = this.set("shared", js.undefined)
+    @scala.inline
+    def setSharepointIds(value: SharepointIds): Self = this.set("sharepointIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharepointIds: Self = this.set("sharepointIds", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSpecialFolder(value: SpecialFolder): Self = this.set("specialFolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecialFolder: Self = this.set("specialFolder", js.undefined)
+    @scala.inline
+    def setSubscriptionsVarargs(value: Subscription*): Self = this.set("subscriptions", js.Array(value :_*))
+    @scala.inline
+    def setSubscriptions(value: js.Array[Subscription]): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptions: Self = this.set("subscriptions", js.undefined)
+    @scala.inline
+    def setThumbnailsVarargs(value: ThumbnailSet*): Self = this.set("thumbnails", js.Array(value :_*))
+    @scala.inline
+    def setThumbnails(value: js.Array[ThumbnailSet]): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: DriveItemVersion*): Self = this.set("versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: js.Array[DriveItemVersion]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("versions", js.undefined)
+    @scala.inline
+    def setVideo(value: Video): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+    @scala.inline
+    def setWebDavUrl(value: String): Self = this.set("webDavUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebDavUrl: Self = this.set("webDavUrl", js.undefined)
+    @scala.inline
+    def setWorkbook(value: Workbook): Self = this.set("workbook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkbook: Self = this.set("workbook", js.undefined)
+  }
+  
 }
 

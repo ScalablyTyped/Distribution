@@ -26,16 +26,38 @@ trait BackupSelection extends js.Object {
 
 object BackupSelection {
   @scala.inline
-  def apply(
-    IamRoleArn: IAMRoleArn,
-    SelectionName: BackupSelectionName,
-    ListOfTags: ListOfTags = null,
-    Resources: ResourceArns = null
-  ): BackupSelection = {
+  def apply(IamRoleArn: IAMRoleArn, SelectionName: BackupSelectionName): BackupSelection = {
     val __obj = js.Dynamic.literal(IamRoleArn = IamRoleArn.asInstanceOf[js.Any], SelectionName = SelectionName.asInstanceOf[js.Any])
-    if (ListOfTags != null) __obj.updateDynamic("ListOfTags")(ListOfTags.asInstanceOf[js.Any])
-    if (Resources != null) __obj.updateDynamic("Resources")(Resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupSelection]
   }
+  @scala.inline
+  implicit class BackupSelectionOps[Self <: BackupSelection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIamRoleArn(value: IAMRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelectionName(value: BackupSelectionName): Self = this.set("SelectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setListOfTagsVarargs(value: Condition*): Self = this.set("ListOfTags", js.Array(value :_*))
+    @scala.inline
+    def setListOfTags(value: ListOfTags): Self = this.set("ListOfTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListOfTags: Self = this.set("ListOfTags", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: ARN*): Self = this.set("Resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: ResourceArns): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("Resources", js.undefined)
+  }
+  
 }
 

@@ -9,35 +9,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrowserConsoleLogOptions extends js.Object {
   /**
     * The format is a string where `%b`, `%t`, `%T`, and `%m` are replaced with the browser string,
     * log type in lower-case, log type in uppercase, and log message, respectively.
     * This format will only effect the output file
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
   /** the desired log-level, where level log always is logged */
-  var level: js.UndefOr[log_ | error_ | warn_ | info_ | debug_] = js.undefined
+  var level: js.UndefOr[log_ | error_ | warn_ | info_ | debug_] = js.native
   /** output-path of the output-file */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String] = js.native
   /** if the log should be written in the terminal, or not */
-  var terminal: js.UndefOr[Boolean] = js.undefined
+  var terminal: js.UndefOr[Boolean] = js.native
 }
 
 object BrowserConsoleLogOptions {
   @scala.inline
-  def apply(
-    format: String = null,
-    level: log_ | error_ | warn_ | info_ | debug_ = null,
-    path: String = null,
-    terminal: js.UndefOr[Boolean] = js.undefined
-  ): BrowserConsoleLogOptions = {
+  def apply(): BrowserConsoleLogOptions = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserConsoleLogOptions]
   }
+  @scala.inline
+  implicit class BrowserConsoleLogOptionsOps[Self <: BrowserConsoleLogOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setLevel(value: log_ | error_ | warn_ | info_ | debug_): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setTerminal(value: Boolean): Self = this.set("terminal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminal: Self = this.set("terminal", js.undefined)
+  }
+  
 }
 

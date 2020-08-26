@@ -10,9 +10,9 @@ Node Rest and Http Clients for use with TypeScript
 | ------------------ | :-------------: |
 | Full name          | typed-rest-client |
 | Keywords           | rest, http, client, typescript, node |
-| # releases         | 11 |
-| # dependents       | 50 |
-| # downloads        | 2585223 |
+| # releases         | 13 |
+| # dependents       | 49 |
+| # downloads        | 2739366 |
 | # stars            | 0 |
 
 ## Links

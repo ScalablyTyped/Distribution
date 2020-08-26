@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Plugin extends NodeCommon[TransformNodeInfo] {
-  var _annotation: js.UndefOr[js.Any] = js.native
+  var _annotation: js.Any = js.native
   var _baseConstructorCalled: js.Any = js.native
   var _checkOverrides: js.Any = js.native
   var _initializeReadCompat: js.Any = js.native
@@ -23,8 +23,8 @@ trait Plugin extends NodeCommon[TransformNodeInfo] {
   var _name: js.Any = js.native
   var _needsCache: js.Any = js.native
   var _persistentOutput: js.Any = js.native
-  var _readCompat: js.UndefOr[js.Any] = js.native
-  var _readCompatError: js.UndefOr[js.Any] = js.native
+  var _readCompat: js.Any = js.native
+  var _readCompatError: js.Any = js.native
   var _setup: js.Any = js.native
   var _trackInputChanges: js.Any = js.native
   var _volatile: js.Any = js.native
@@ -36,7 +36,7 @@ trait Plugin extends NodeCommon[TransformNodeInfo] {
     * is not needed, set needsCache to false when calling broccoli-plugin constructor.
     */
   var cachePath: js.UndefOr[String] = js.native
-  var rebuild: js.UndefOr[js.Any] = js.native
+  var rebuild: js.Any = js.native
   def __broccoliGetInfo__(): TransformNodeInfo = js.native
   /**
     * Override this method in your subclass. It will be called on each (re-)build.

@@ -10,9 +10,9 @@ Converts SVG font to TTF font
 | ------------------ | :-------------: |
 | Full name          | svg2ttf |
 | Keywords           | font, ttf, svg, convertor |
-| # releases         | 3 |
-| # dependents       | 151 |
-| # downloads        | 4616408 |
+| # releases         | 5 |
+| # dependents       | 160 |
+| # downloads        | 4743506 |
 | # stars            | 9 |
 
 ## Links

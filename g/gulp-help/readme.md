@@ -9,9 +9,9 @@ Adds a default help task to gulp and provides the ability to add custom help mes
 | ------------------ | :-------------: |
 | Full name          | gulp-help |
 | Keywords           | gulp, help, tasks, list, gulpfriendly |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 99 |
-| # downloads        | 3643330 |
+| # downloads        | 3582151 |
 | # stars            | 24 |
 
 ## Links

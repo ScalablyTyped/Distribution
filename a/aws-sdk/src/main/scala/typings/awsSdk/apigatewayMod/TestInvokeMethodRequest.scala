@@ -46,25 +46,52 @@ trait TestInvokeMethodRequest extends js.Object {
 
 object TestInvokeMethodRequest {
   @scala.inline
-  def apply(
-    httpMethod: String,
-    resourceId: String,
-    restApiId: String,
-    body: String = null,
-    clientCertificateId: String = null,
-    headers: MapOfStringToString = null,
-    multiValueHeaders: MapOfStringToList = null,
-    pathWithQueryString: String = null,
-    stageVariables: MapOfStringToString = null
-  ): TestInvokeMethodRequest = {
+  def apply(httpMethod: String, resourceId: String, restApiId: String): TestInvokeMethodRequest = {
     val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (clientCertificateId != null) __obj.updateDynamic("clientCertificateId")(clientCertificateId.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders.asInstanceOf[js.Any])
-    if (pathWithQueryString != null) __obj.updateDynamic("pathWithQueryString")(pathWithQueryString.asInstanceOf[js.Any])
-    if (stageVariables != null) __obj.updateDynamic("stageVariables")(stageVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestInvokeMethodRequest]
   }
+  @scala.inline
+  implicit class TestInvokeMethodRequestOps[Self <: TestInvokeMethodRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setClientCertificateId(value: String): Self = this.set("clientCertificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCertificateId: Self = this.set("clientCertificateId", js.undefined)
+    @scala.inline
+    def setHeaders(value: MapOfStringToString): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setMultiValueHeaders(value: MapOfStringToList): Self = this.set("multiValueHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiValueHeaders: Self = this.set("multiValueHeaders", js.undefined)
+    @scala.inline
+    def setPathWithQueryString(value: String): Self = this.set("pathWithQueryString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathWithQueryString: Self = this.set("pathWithQueryString", js.undefined)
+    @scala.inline
+    def setStageVariables(value: MapOfStringToString): Self = this.set("stageVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageVariables: Self = this.set("stageVariables", js.undefined)
+  }
+  
 }
 

@@ -2,6 +2,7 @@ package typings.phaser.global.Phaser
 
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Graphics
+import typings.phaser.Phaser.Geom.Rectangle
 import typings.phaser.Phaser.Types.Display.ColorObject
 import typings.phaser.Phaser.Types.Display.HSVColorObject
 import typings.phaser.Phaser.Types.Display.InputColorObject
@@ -43,28 +44,17 @@ object Display extends js.Object {
       */
     def this(key: String) = this()
     def this(key: String, fragmentSrc: String) = this()
+    def this(key: String, fragmentSrc: js.UndefOr[scala.Nothing], vertexSrc: String) = this()
     def this(key: String, fragmentSrc: String, vertexSrc: String) = this()
+    def this(
+      key: String,
+      fragmentSrc: js.UndefOr[scala.Nothing],
+      vertexSrc: js.UndefOr[scala.Nothing],
+      uniforms: js.Any
+    ) = this()
+    def this(key: String, fragmentSrc: js.UndefOr[scala.Nothing], vertexSrc: String, uniforms: js.Any) = this()
+    def this(key: String, fragmentSrc: String, vertexSrc: js.UndefOr[scala.Nothing], uniforms: js.Any) = this()
     def this(key: String, fragmentSrc: String, vertexSrc: String, uniforms: js.Any) = this()
-    /**
-      * The source code, as a string, of the fragment shader being used.
-      */
-    /* CompleteClass */
-    override var fragmentSrc: String = js.native
-    /**
-      * The key of this shader, unique within the shader cache of this Phaser game instance.
-      */
-    /* CompleteClass */
-    override var key: String = js.native
-    /**
-      * The default uniforms for this shader.
-      */
-    /* CompleteClass */
-    override var uniforms: js.Any = js.native
-    /**
-      * The source code, as a string, of the vertex shader being used.
-      */
-    /* CompleteClass */
-    override var vertexSrc: String = js.native
   }
   
   /**
@@ -81,8 +71,24 @@ object Display extends js.Object {
   class Color ()
     extends typings.phaser.Phaser.Display.Color {
     def this(red: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: integer) = this()
     def this(red: integer, green: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: integer) = this()
+    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: integer) = this()
     def this(red: integer, green: integer, blue: integer) = this()
+    def this(
+      red: js.UndefOr[scala.Nothing],
+      green: js.UndefOr[scala.Nothing],
+      blue: js.UndefOr[scala.Nothing],
+      alpha: integer
+    ) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: integer, alpha: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
+    def this(red: js.UndefOr[scala.Nothing], green: integer, blue: integer, alpha: integer) = this()
+    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
+    def this(red: integer, green: js.UndefOr[scala.Nothing], blue: integer, alpha: integer) = this()
+    def this(red: integer, green: integer, blue: js.UndefOr[scala.Nothing], alpha: integer) = this()
     def this(red: integer, green: integer, blue: integer, alpha: integer) = this()
   }
   
@@ -150,6 +156,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -160,6 +167,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -170,6 +178,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -180,6 +189,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
       def Center[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -190,6 +200,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -202,6 +213,13 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer): G = js.native
+      def QuickSet[G /* <: GameObject */](
+        child: G,
+        alignIn: GameObject,
+        position: integer,
+        offsetX: js.UndefOr[scala.Nothing],
+        offsetY: Double
+      ): G = js.native
       def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double): G = js.native
       def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -212,6 +230,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -222,6 +241,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -232,6 +252,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -242,6 +263,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject): G = js.native
+      def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double): G = js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignIn: GameObject, offsetX: Double, offsetY: Double): G = js.native
     }
@@ -256,6 +278,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def BottomCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -266,6 +289,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def BottomLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -276,6 +300,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def BottomRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -286,6 +311,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def LeftBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -296,6 +322,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def LeftCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -306,6 +333,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -318,6 +346,13 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer): G = js.native
+      def QuickSet[G /* <: GameObject */](
+        child: G,
+        alignTo: GameObject,
+        position: integer,
+        offsetX: js.UndefOr[scala.Nothing],
+        offsetY: Double
+      ): G = js.native
       def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double): G = js.native
       def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -328,6 +363,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def RightBottom[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -338,6 +374,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def RightCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -348,6 +385,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def RightTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -358,6 +396,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def TopCenter[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -368,6 +407,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def TopLeft[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
@@ -378,6 +418,7 @@ object Display extends js.Object {
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
       def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject): G = js.native
+      def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): G = js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def TopRight[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
     }
@@ -398,6 +439,14 @@ object Display extends js.Object {
       * @param gameObject The Game Object to get the bounds value from.
       */
     def GetBottom(gameObject: GameObject): Double = js.native
+    /**
+      * Returns the unrotated bounds of the Game Object as a rectangle.
+      * @param gameObject The Game Object to get the bounds value from.
+      * @param output An object to store the values in.
+      */
+    def GetBounds(gameObject: GameObject): Rectangle | js.Object = js.native
+    def GetBounds(gameObject: GameObject, output: js.Object): Rectangle | js.Object = js.native
+    def GetBounds(gameObject: GameObject, output: Rectangle): Rectangle | js.Object = js.native
     /**
       * Returns the center x coordinate from the bounds of the Game Object.
       * @param gameObject The Game Object to get the bounds value from.
@@ -524,8 +573,66 @@ object Display extends js.Object {
         * @param selfParent Use the generated Canvas element as the parent? Default false.
         */
       def create(parent: js.Any): HTMLCanvasElement = js.native
+      def create(
+        parent: js.Any,
+        width: js.UndefOr[scala.Nothing],
+        height: js.UndefOr[scala.Nothing],
+        canvasType: js.UndefOr[scala.Nothing],
+        selfParent: Boolean
+      ): HTMLCanvasElement = js.native
+      def create(
+        parent: js.Any,
+        width: js.UndefOr[scala.Nothing],
+        height: js.UndefOr[scala.Nothing],
+        canvasType: integer
+      ): HTMLCanvasElement = js.native
+      def create(
+        parent: js.Any,
+        width: js.UndefOr[scala.Nothing],
+        height: js.UndefOr[scala.Nothing],
+        canvasType: integer,
+        selfParent: Boolean
+      ): HTMLCanvasElement = js.native
+      def create(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
+      def create(
+        parent: js.Any,
+        width: js.UndefOr[scala.Nothing],
+        height: integer,
+        canvasType: js.UndefOr[scala.Nothing],
+        selfParent: Boolean
+      ): HTMLCanvasElement = js.native
+      def create(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer, canvasType: integer): HTMLCanvasElement = js.native
+      def create(
+        parent: js.Any,
+        width: js.UndefOr[scala.Nothing],
+        height: integer,
+        canvasType: integer,
+        selfParent: Boolean
+      ): HTMLCanvasElement = js.native
       def create(parent: js.Any, width: integer): HTMLCanvasElement = js.native
+      def create(
+        parent: js.Any,
+        width: integer,
+        height: js.UndefOr[scala.Nothing],
+        canvasType: js.UndefOr[scala.Nothing],
+        selfParent: Boolean
+      ): HTMLCanvasElement = js.native
+      def create(parent: js.Any, width: integer, height: js.UndefOr[scala.Nothing], canvasType: integer): HTMLCanvasElement = js.native
+      def create(
+        parent: js.Any,
+        width: integer,
+        height: js.UndefOr[scala.Nothing],
+        canvasType: integer,
+        selfParent: Boolean
+      ): HTMLCanvasElement = js.native
       def create(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
+      def create(
+        parent: js.Any,
+        width: integer,
+        height: integer,
+        canvasType: js.UndefOr[scala.Nothing],
+        selfParent: Boolean
+      ): HTMLCanvasElement = js.native
       def create(parent: js.Any, width: integer, height: integer, canvasType: integer): HTMLCanvasElement = js.native
       def create(parent: js.Any, width: integer, height: integer, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = js.native
       /**
@@ -535,6 +642,7 @@ object Display extends js.Object {
         * @param height The height of the Canvas. Default 1.
         */
       def create2D(parent: js.Any): HTMLCanvasElement = js.native
+      def create2D(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
       def create2D(parent: js.Any, width: integer): HTMLCanvasElement = js.native
       def create2D(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
       /**
@@ -544,6 +652,7 @@ object Display extends js.Object {
         * @param height The height of the Canvas. Default 1.
         */
       def createWebGL(parent: js.Any): HTMLCanvasElement = js.native
+      def createWebGL(parent: js.Any, width: js.UndefOr[scala.Nothing], height: integer): HTMLCanvasElement = js.native
       def createWebGL(parent: js.Any, width: integer): HTMLCanvasElement = js.native
       def createWebGL(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = js.native
       /**
@@ -656,6 +765,7 @@ object Display extends js.Object {
       * @param v The value, in the range 0 - 1. Default 1.
       */
     def HSVColorWheel(): js.Array[ColorObject] = js.native
+    def HSVColorWheel(s: js.UndefOr[scala.Nothing], v: Double): js.Array[ColorObject] = js.native
     def HSVColorWheel(s: Double): js.Array[ColorObject] = js.native
     def HSVColorWheel(s: Double, v: Double): js.Array[ColorObject] = js.native
     /**
@@ -731,6 +841,7 @@ object Display extends js.Object {
       * @param prefix The prefix of the string. Either `#` or `0x`. Default #.
       */
     def RGBToString(r: integer, g: integer, b: integer): String = js.native
+    def RGBToString(r: integer, g: integer, b: integer, a: js.UndefOr[scala.Nothing], prefix: String): String = js.native
     def RGBToString(r: integer, g: integer, b: integer, a: integer): String = js.native
     def RGBToString(r: integer, g: integer, b: integer, a: integer, prefix: String): String = js.native
     /**
@@ -740,6 +851,7 @@ object Display extends js.Object {
       * @param max The maximum value to set the random range from (between 0 and 255) Default 255.
       */
     def RandomRGB(): typings.phaser.Phaser.Display.Color = js.native
+    def RandomRGB(min: js.UndefOr[scala.Nothing], max: integer): typings.phaser.Phaser.Display.Color = js.native
     def RandomRGB(min: integer): typings.phaser.Phaser.Display.Color = js.native
     def RandomRGB(min: integer, max: integer): typings.phaser.Phaser.Display.Color = js.native
     /**
@@ -763,6 +875,12 @@ object Display extends js.Object {
       def ColorWithColor(
         color1: typings.phaser.Phaser.Display.Color,
         color2: typings.phaser.Phaser.Display.Color,
+        length: js.UndefOr[scala.Nothing],
+        index: Double
+      ): ColorObject = js.native
+      def ColorWithColor(
+        color1: typings.phaser.Phaser.Display.Color,
+        color2: typings.phaser.Phaser.Display.Color,
         length: Double
       ): ColorObject = js.native
       def ColorWithColor(
@@ -781,6 +899,14 @@ object Display extends js.Object {
         * @param index Index to start from. Default 0.
         */
       def ColorWithRGB(color1: typings.phaser.Phaser.Display.Color, r: Double, g: Double, b: Double): ColorObject = js.native
+      def ColorWithRGB(
+        color1: typings.phaser.Phaser.Display.Color,
+        r: Double,
+        g: Double,
+        b: Double,
+        length: js.UndefOr[scala.Nothing],
+        index: Double
+      ): ColorObject = js.native
       def ColorWithRGB(color1: typings.phaser.Phaser.Display.Color, r: Double, g: Double, b: Double, length: Double): ColorObject = js.native
       def ColorWithRGB(
         color1: typings.phaser.Phaser.Display.Color,
@@ -802,6 +928,16 @@ object Display extends js.Object {
         * @param index Index to start from. Default 0.
         */
       def RGBWithRGB(r1: Double, g1: Double, b1: Double, r2: Double, g2: Double, b2: Double): ColorObject = js.native
+      def RGBWithRGB(
+        r1: Double,
+        g1: Double,
+        b1: Double,
+        r2: Double,
+        g2: Double,
+        b2: Double,
+        length: js.UndefOr[scala.Nothing],
+        index: Double
+      ): ColorObject = js.native
       def RGBWithRGB(r1: Double, g1: Double, b1: Double, r2: Double, g2: Double, b2: Double, length: Double): ColorObject = js.native
       def RGBWithRGB(
         r1: Double,

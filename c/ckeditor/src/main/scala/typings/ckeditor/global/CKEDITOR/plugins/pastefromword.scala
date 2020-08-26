@@ -1,6 +1,5 @@
 package typings.ckeditor.global.CKEDITOR.plugins
 
-import typings.ckeditor.CKEDITOR.plugins.pastefromword.lists.numbering
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +9,7 @@ import scala.scalajs.js.annotation._
 object pastefromword extends js.Object {
   @js.native
   class lists ()
-    extends typings.ckeditor.CKEDITOR.plugins.pastefromword.lists {
-    /* CompleteClass */
-    override var numbering: numbering = js.native
-  }
+    extends typings.ckeditor.CKEDITOR.plugins.pastefromword.lists
   
   @js.native
   class styles ()
@@ -23,12 +19,7 @@ object pastefromword extends js.Object {
   object lists extends js.Object {
     @js.native
     class numbering ()
-      extends typings.ckeditor.CKEDITOR.plugins.pastefromword.lists.numbering {
-      /* CompleteClass */
-      override def getStyle(marker: String): String = js.native
-      /* CompleteClass */
-      override def toNumber(marker: String, markerType: String): Double = js.native
-    }
+      extends typings.ckeditor.CKEDITOR.plugins.pastefromword.lists.numbering
     
   }
   

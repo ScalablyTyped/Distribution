@@ -6,40 +6,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextTrackOptions extends TrackOptions {
-  var default: js.UndefOr[Boolean] = js.undefined
+  var default: js.UndefOr[Boolean] = js.native
   @JSName("kind")
-  var kind_TextTrackOptions: js.UndefOr[Kind] = js.undefined
-  var mode: js.UndefOr[Mode] = js.undefined
-  var src: js.UndefOr[String] = js.undefined
-  var srclang: js.UndefOr[String] = js.undefined
-  var tech: js.UndefOr[Tech] = js.undefined
+  var kind_TextTrackOptions: js.UndefOr[Kind] = js.native
+  var mode: js.UndefOr[Mode] = js.native
+  var src: js.UndefOr[String] = js.native
+  var srclang: js.UndefOr[String] = js.native
+  var tech: js.UndefOr[Tech] = js.native
 }
 
 object TextTrackOptions {
   @scala.inline
-  def apply(
-    default: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    kind: Kind = null,
-    label: String = null,
-    language: String = null,
-    mode: Mode = null,
-    src: String = null,
-    srclang: String = null,
-    tech: Tech = null
-  ): TextTrackOptions = {
+  def apply(): TextTrackOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (srclang != null) __obj.updateDynamic("srclang")(srclang.asInstanceOf[js.Any])
-    if (tech != null) __obj.updateDynamic("tech")(tech.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTrackOptions]
   }
+  @scala.inline
+  implicit class TextTrackOptionsOps[Self <: TextTrackOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setKind(value: Kind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMode(value: Mode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+    @scala.inline
+    def setSrclang(value: String): Self = this.set("srclang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrclang: Self = this.set("srclang", js.undefined)
+    @scala.inline
+    def setTech(value: Tech): Self = this.set("tech", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTech: Self = this.set("tech", js.undefined)
+  }
+  
 }
 

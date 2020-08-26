@@ -26,6 +26,7 @@ object fileContainerApiBaseMod extends js.Object {
     def deleteItem(containerId: Double, itemPath: String): js.Promise[Unit] = js.native
     def deleteItem(containerId: Double, itemPath: String, scope: String): js.Promise[Unit] = js.native
     def getContainers(): js.Promise[js.Array[FileContainer]] = js.native
+    def getContainers(scope: js.UndefOr[scala.Nothing], artifactUris: String): js.Promise[js.Array[FileContainer]] = js.native
     def getContainers(scope: String): js.Promise[js.Array[FileContainer]] = js.native
     def getContainers(scope: String, artifactUris: String): js.Promise[js.Array[FileContainer]] = js.native
     def getItems(

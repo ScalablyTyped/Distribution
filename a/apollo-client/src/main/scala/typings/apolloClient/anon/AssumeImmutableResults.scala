@@ -8,37 +8,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssumeImmutableResults[TStore] extends js.Object {
-  var assumeImmutableResults: js.UndefOr[Boolean] = js.undefined
-  var clientAwareness: js.UndefOr[Record[String, String]] = js.undefined
-  var link: ApolloLink
-  var localState: js.UndefOr[LocalState[TStore]] = js.undefined
-  var onBroadcast: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var queryDeduplication: js.UndefOr[Boolean] = js.undefined
-  var ssrMode: js.UndefOr[Boolean] = js.undefined
-  var store: DataStore[TStore]
+  var assumeImmutableResults: js.UndefOr[Boolean] = js.native
+  var clientAwareness: js.UndefOr[Record[String, String]] = js.native
+  var link: ApolloLink = js.native
+  var localState: js.UndefOr[LocalState[TStore]] = js.native
+  var onBroadcast: js.UndefOr[js.Function0[Unit]] = js.native
+  var queryDeduplication: js.UndefOr[Boolean] = js.native
+  var ssrMode: js.UndefOr[Boolean] = js.native
+  var store: DataStore[TStore] = js.native
 }
 
 object AssumeImmutableResults {
   @scala.inline
-  def apply[TStore](
-    link: ApolloLink,
-    store: DataStore[TStore],
-    assumeImmutableResults: js.UndefOr[Boolean] = js.undefined,
-    clientAwareness: Record[String, String] = null,
-    localState: LocalState[TStore] = null,
-    onBroadcast: () => Unit = null,
-    queryDeduplication: js.UndefOr[Boolean] = js.undefined,
-    ssrMode: js.UndefOr[Boolean] = js.undefined
-  ): AssumeImmutableResults[TStore] = {
+  def apply[TStore](link: ApolloLink, store: DataStore[TStore]): AssumeImmutableResults[TStore] = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-    if (!js.isUndefined(assumeImmutableResults)) __obj.updateDynamic("assumeImmutableResults")(assumeImmutableResults.get.asInstanceOf[js.Any])
-    if (clientAwareness != null) __obj.updateDynamic("clientAwareness")(clientAwareness.asInstanceOf[js.Any])
-    if (localState != null) __obj.updateDynamic("localState")(localState.asInstanceOf[js.Any])
-    if (onBroadcast != null) __obj.updateDynamic("onBroadcast")(js.Any.fromFunction0(onBroadcast))
-    if (!js.isUndefined(queryDeduplication)) __obj.updateDynamic("queryDeduplication")(queryDeduplication.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssrMode)) __obj.updateDynamic("ssrMode")(ssrMode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeImmutableResults[TStore]]
   }
+  @scala.inline
+  implicit class AssumeImmutableResultsOps[Self <: AssumeImmutableResults[_], TStore] (val x: Self with AssumeImmutableResults[TStore]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLink(value: ApolloLink): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStore(value: DataStore[TStore]): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssumeImmutableResults(value: Boolean): Self = this.set("assumeImmutableResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssumeImmutableResults: Self = this.set("assumeImmutableResults", js.undefined)
+    @scala.inline
+    def setClientAwareness(value: Record[String, String]): Self = this.set("clientAwareness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientAwareness: Self = this.set("clientAwareness", js.undefined)
+    @scala.inline
+    def setLocalState(value: LocalState[TStore]): Self = this.set("localState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalState: Self = this.set("localState", js.undefined)
+    @scala.inline
+    def setOnBroadcast(value: () => Unit): Self = this.set("onBroadcast", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnBroadcast: Self = this.set("onBroadcast", js.undefined)
+    @scala.inline
+    def setQueryDeduplication(value: Boolean): Self = this.set("queryDeduplication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryDeduplication: Self = this.set("queryDeduplication", js.undefined)
+    @scala.inline
+    def setSsrMode(value: Boolean): Self = this.set("ssrMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsrMode: Self = this.set("ssrMode", js.undefined)
+  }
+  
 }
 

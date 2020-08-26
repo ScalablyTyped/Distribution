@@ -14,6 +14,7 @@ trait String extends js.Object {
   def camelize(): java.lang.String = js.native
   def camelize(upper: Boolean): java.lang.String = js.native
   def capitalize(): java.lang.String = js.native
+  def capitalize(lower: js.UndefOr[scala.Nothing], all: Boolean): java.lang.String = js.native
   def capitalize(lower: Boolean): java.lang.String = js.native
   def capitalize(lower: Boolean, all: Boolean): java.lang.String = js.native
   def chars[T](): Array[T] = js.native
@@ -33,6 +34,10 @@ trait String extends js.Object {
   def first(n: Double): java.lang.String = js.native
   def forEach[T](): Array[T] = js.native
   def forEach[T](
+    eachFn: js.Function3[/* match */ java.lang.String, /* i */ Double, /* arr */ Array[java.lang.String], Unit]
+  ): Array[T] = js.native
+  def forEach[T](
+    search: js.UndefOr[scala.Nothing],
     eachFn: js.Function3[/* match */ java.lang.String, /* i */ Double, /* arr */ Array[java.lang.String], Unit]
   ): Array[T] = js.native
   def forEach[T](search: java.lang.String): Array[T] = js.native
@@ -104,6 +109,8 @@ trait String extends js.Object {
   def removeAll(f: java.lang.String): java.lang.String = js.native
   def removeAll(f: RegExp): java.lang.String = js.native
   def removeTags(): java.lang.String = js.native
+  def removeTags(tag: js.UndefOr[scala.Nothing], replace: java.lang.String): java.lang.String = js.native
+  def removeTags(tag: js.UndefOr[scala.Nothing], replace: replaceFn): java.lang.String = js.native
   def removeTags(tag: java.lang.String): java.lang.String = js.native
   def removeTags(tag: java.lang.String, replace: java.lang.String): java.lang.String = js.native
   def removeTags(tag: java.lang.String, replace: replaceFn): java.lang.String = js.native
@@ -114,6 +121,8 @@ trait String extends js.Object {
   def singularize(): java.lang.String = js.native
   def spacify(): java.lang.String = js.native
   def stripTags(): java.lang.String = js.native
+  def stripTags(tag: js.UndefOr[scala.Nothing], replace: java.lang.String): java.lang.String = js.native
+  def stripTags(tag: js.UndefOr[scala.Nothing], replace: replaceFn): java.lang.String = js.native
   def stripTags(tag: java.lang.String): java.lang.String = js.native
   def stripTags(tag: java.lang.String, replace: java.lang.String): java.lang.String = js.native
   def stripTags(tag: java.lang.String, replace: replaceFn): java.lang.String = js.native
@@ -125,9 +134,11 @@ trait String extends js.Object {
   def trimLeft(): java.lang.String = js.native
   def trimRight(): java.lang.String = js.native
   def truncate(length: Double): java.lang.String = js.native
+  def truncate(length: Double, from: js.UndefOr[scala.Nothing], ellipsis: java.lang.String): java.lang.String = js.native
   def truncate(length: Double, from: java.lang.String): java.lang.String = js.native
   def truncate(length: Double, from: java.lang.String, ellipsis: java.lang.String): java.lang.String = js.native
   def truncateOnWord(length: Double): java.lang.String = js.native
+  def truncateOnWord(length: Double, from: js.UndefOr[scala.Nothing], ellipsis: java.lang.String): java.lang.String = js.native
   def truncateOnWord(length: Double, from: java.lang.String): java.lang.String = js.native
   def truncateOnWord(length: Double, from: java.lang.String, ellipsis: java.lang.String): java.lang.String = js.native
   def underscore(): java.lang.String = js.native

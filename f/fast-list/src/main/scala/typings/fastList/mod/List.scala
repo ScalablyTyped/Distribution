@@ -44,8 +44,14 @@ trait List[T] extends js.Object {
     initialValue: U,
     thisArg: V
   ): U = js.native
+  def reduce[U, V](
+    callbackfn: js.ThisFunction4[/* this */ V, /* acc */ U, /* value */ T, /* index */ Double, /* list */ this.type, U],
+    initialValue: js.UndefOr[scala.Nothing],
+    thisArg: V
+  ): U = js.native
   def shift(): js.UndefOr[T] = js.native
   def slice(): js.Array[T] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[T] = js.native
   def slice(start: Double): js.Array[T] = js.native
   def slice(start: Double, end: Double): js.Array[T] = js.native
   def unshift(item: T): Unit = js.native

@@ -4,39 +4,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProxyRules extends js.Object {
   /** Optional. List of servers to connect to without a proxy server. */
-  var bypassList: js.UndefOr[js.Array[String]] = js.undefined
+  var bypassList: js.UndefOr[js.Array[String]] = js.native
   /** Optional. The proxy server to be used for everthing else or if any of the specific proxyFor... is not specified. */
-  var fallbackProxy: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.undefined
+  var fallbackProxy: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.native
   /** Optional. The proxy server to be used for FTP requests. */
-  var proxyForFtp: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.undefined
+  var proxyForFtp: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.native
   /** Optional. The proxy server to be used for HTTP requests. */
-  var proxyForHttp: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.undefined
+  var proxyForHttp: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.native
   /** Optional. The proxy server to be used for HTTPS requests. */
-  var proxyForHttps: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.undefined
+  var proxyForHttps: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.native
   /** Optional. The proxy server to be used for all per-URL requests (that is http, https, and ftp). */
-  var singleProxy: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.undefined
+  var singleProxy: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.native
 }
 
 object ProxyRules {
   @scala.inline
-  def apply(
-    bypassList: js.Array[String] = null,
-    fallbackProxy: typings.chrome.chrome.proxy.ProxyServer = null,
-    proxyForFtp: typings.chrome.chrome.proxy.ProxyServer = null,
-    proxyForHttp: typings.chrome.chrome.proxy.ProxyServer = null,
-    proxyForHttps: typings.chrome.chrome.proxy.ProxyServer = null,
-    singleProxy: typings.chrome.chrome.proxy.ProxyServer = null
-  ): ProxyRules = {
+  def apply(): ProxyRules = {
     val __obj = js.Dynamic.literal()
-    if (bypassList != null) __obj.updateDynamic("bypassList")(bypassList.asInstanceOf[js.Any])
-    if (fallbackProxy != null) __obj.updateDynamic("fallbackProxy")(fallbackProxy.asInstanceOf[js.Any])
-    if (proxyForFtp != null) __obj.updateDynamic("proxyForFtp")(proxyForFtp.asInstanceOf[js.Any])
-    if (proxyForHttp != null) __obj.updateDynamic("proxyForHttp")(proxyForHttp.asInstanceOf[js.Any])
-    if (proxyForHttps != null) __obj.updateDynamic("proxyForHttps")(proxyForHttps.asInstanceOf[js.Any])
-    if (singleProxy != null) __obj.updateDynamic("singleProxy")(singleProxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyRules]
   }
+  @scala.inline
+  implicit class ProxyRulesOps[Self <: ProxyRules] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBypassListVarargs(value: String*): Self = this.set("bypassList", js.Array(value :_*))
+    @scala.inline
+    def setBypassList(value: js.Array[String]): Self = this.set("bypassList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBypassList: Self = this.set("bypassList", js.undefined)
+    @scala.inline
+    def setFallbackProxy(value: typings.chrome.chrome.proxy.ProxyServer): Self = this.set("fallbackProxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackProxy: Self = this.set("fallbackProxy", js.undefined)
+    @scala.inline
+    def setProxyForFtp(value: typings.chrome.chrome.proxy.ProxyServer): Self = this.set("proxyForFtp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyForFtp: Self = this.set("proxyForFtp", js.undefined)
+    @scala.inline
+    def setProxyForHttp(value: typings.chrome.chrome.proxy.ProxyServer): Self = this.set("proxyForHttp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyForHttp: Self = this.set("proxyForHttp", js.undefined)
+    @scala.inline
+    def setProxyForHttps(value: typings.chrome.chrome.proxy.ProxyServer): Self = this.set("proxyForHttps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyForHttps: Self = this.set("proxyForHttps", js.undefined)
+    @scala.inline
+    def setSingleProxy(value: typings.chrome.chrome.proxy.ProxyServer): Self = this.set("singleProxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleProxy: Self = this.set("singleProxy", js.undefined)
+  }
+  
 }
 

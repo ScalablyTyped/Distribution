@@ -26,7 +26,7 @@ class PushToClientAction protected () extends MicroflowAction {
   @JSName("model")
   var model_FPushToClientAction: IModel = js.native
   def dataVariableName: String = js.native
-  def dataVariableName(newValue: String): js.Any = js.native
+  def dataVariableName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

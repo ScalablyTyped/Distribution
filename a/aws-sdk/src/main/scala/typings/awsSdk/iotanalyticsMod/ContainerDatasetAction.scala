@@ -26,15 +26,34 @@ trait ContainerDatasetAction extends js.Object {
 
 object ContainerDatasetAction {
   @scala.inline
-  def apply(
-    executionRoleArn: RoleArn,
-    image: Image,
-    resourceConfiguration: ResourceConfiguration,
-    variables: Variables = null
-  ): ContainerDatasetAction = {
+  def apply(executionRoleArn: RoleArn, image: Image, resourceConfiguration: ResourceConfiguration): ContainerDatasetAction = {
     val __obj = js.Dynamic.literal(executionRoleArn = executionRoleArn.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], resourceConfiguration = resourceConfiguration.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerDatasetAction]
   }
+  @scala.inline
+  implicit class ContainerDatasetActionOps[Self <: ContainerDatasetAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutionRoleArn(value: RoleArn): Self = this.set("executionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImage(value: Image): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceConfiguration(value: ResourceConfiguration): Self = this.set("resourceConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVariablesVarargs(value: Variable*): Self = this.set("variables", js.Array(value :_*))
+    @scala.inline
+    def setVariables(value: Variables): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("variables", js.undefined)
+  }
+  
 }
 

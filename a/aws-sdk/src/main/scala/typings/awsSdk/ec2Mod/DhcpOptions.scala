@@ -26,18 +26,42 @@ trait DhcpOptions extends js.Object {
 
 object DhcpOptions {
   @scala.inline
-  def apply(
-    DhcpConfigurations: DhcpConfigurationList = null,
-    DhcpOptionsId: String = null,
-    OwnerId: String = null,
-    Tags: TagList = null
-  ): DhcpOptions = {
+  def apply(): DhcpOptions = {
     val __obj = js.Dynamic.literal()
-    if (DhcpConfigurations != null) __obj.updateDynamic("DhcpConfigurations")(DhcpConfigurations.asInstanceOf[js.Any])
-    if (DhcpOptionsId != null) __obj.updateDynamic("DhcpOptionsId")(DhcpOptionsId.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DhcpOptions]
   }
+  @scala.inline
+  implicit class DhcpOptionsOps[Self <: DhcpOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDhcpConfigurationsVarargs(value: DhcpConfiguration*): Self = this.set("DhcpConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setDhcpConfigurations(value: DhcpConfigurationList): Self = this.set("DhcpConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDhcpConfigurations: Self = this.set("DhcpConfigurations", js.undefined)
+    @scala.inline
+    def setDhcpOptionsId(value: String): Self = this.set("DhcpOptionsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDhcpOptionsId: Self = this.set("DhcpOptionsId", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

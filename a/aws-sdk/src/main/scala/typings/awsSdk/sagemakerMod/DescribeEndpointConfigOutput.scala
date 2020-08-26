@@ -35,14 +35,41 @@ object DescribeEndpointConfigOutput {
     CreationTime: Timestamp,
     EndpointConfigArn: EndpointConfigArn,
     EndpointConfigName: EndpointConfigName,
-    ProductionVariants: ProductionVariantList,
-    DataCaptureConfig: DataCaptureConfig = null,
-    KmsKeyId: KmsKeyId = null
+    ProductionVariants: ProductionVariantList
   ): DescribeEndpointConfigOutput = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], EndpointConfigArn = EndpointConfigArn.asInstanceOf[js.Any], EndpointConfigName = EndpointConfigName.asInstanceOf[js.Any], ProductionVariants = ProductionVariants.asInstanceOf[js.Any])
-    if (DataCaptureConfig != null) __obj.updateDynamic("DataCaptureConfig")(DataCaptureConfig.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointConfigOutput]
   }
+  @scala.inline
+  implicit class DescribeEndpointConfigOutputOps[Self <: DescribeEndpointConfigOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointConfigArn(value: EndpointConfigArn): Self = this.set("EndpointConfigArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointConfigName(value: EndpointConfigName): Self = this.set("EndpointConfigName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProductionVariantsVarargs(value: ProductionVariant*): Self = this.set("ProductionVariants", js.Array(value :_*))
+    @scala.inline
+    def setProductionVariants(value: ProductionVariantList): Self = this.set("ProductionVariants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataCaptureConfig(value: DataCaptureConfig): Self = this.set("DataCaptureConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataCaptureConfig: Self = this.set("DataCaptureConfig", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+  }
+  
 }
 

@@ -15,10 +15,20 @@ import scala.scalajs.js.annotation._
 trait Stave extends js.Object {
   var options: Glyphspacingpx = js.native
   def addClef(clef: String): Stave = js.native
+  def addClef(
+    clef: String,
+    size: js.UndefOr[scala.Nothing],
+    annotation: js.UndefOr[scala.Nothing],
+    position: Position
+  ): Stave = js.native
+  def addClef(clef: String, size: js.UndefOr[scala.Nothing], annotation: String): Stave = js.native
+  def addClef(clef: String, size: js.UndefOr[scala.Nothing], annotation: String, position: Position): Stave = js.native
   def addClef(clef: String, size: String): Stave = js.native
+  def addClef(clef: String, size: String, annotation: js.UndefOr[scala.Nothing], position: Position): Stave = js.native
   def addClef(clef: String, size: String, annotation: String): Stave = js.native
   def addClef(clef: String, size: String, annotation: String, position: Position): Stave = js.native
   def addEndClef(clef: String): Stave = js.native
+  def addEndClef(clef: String, size: js.UndefOr[scala.Nothing], annotation: String): Stave = js.native
   def addEndClef(clef: String, size: String): Stave = js.native
   def addEndClef(clef: String, size: String, annotation: String): Stave = js.native
   def addEndGlyph(glypg: Glyph): Stave = js.native
@@ -44,6 +54,7 @@ trait Stave extends js.Object {
   def getHeight(): Double = js.native
   def getModifierXShift(index: Double): Double = js.native
   def getModifiers(): js.Array[StaveModifier] = js.native
+  def getModifiers(position: js.UndefOr[scala.Nothing], category: String): js.Array[StaveModifier] = js.native
   def getModifiers(position: Double): js.Array[StaveModifier] = js.native
   def getModifiers(position: Double, category: String): js.Array[StaveModifier] = js.native
   def getNoteEndX(): Double = js.native
@@ -69,6 +80,7 @@ trait Stave extends js.Object {
   def setContext(context: IRenderContext): Stave = js.native
   def setEndBarType(`type`: `type`): Stave = js.native
   def setEndClef(clef: String): Stave = js.native
+  def setEndClef(clef: String, size: js.UndefOr[scala.Nothing], annotation: String): Stave = js.native
   def setEndClef(clef: String, size: String): Stave = js.native
   def setEndClef(clef: String, size: String, annotation: String): Stave = js.native
   def setKeySignature(keySpec: String, cancelKeySpec: String): Stave = js.native

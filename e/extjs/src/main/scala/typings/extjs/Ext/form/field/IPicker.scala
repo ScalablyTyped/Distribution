@@ -6,64 +6,97 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPicker extends ITrigger {
   /** [Method] Aligns the picker to the input element */
-  var alignPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var alignPicker: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Collapses this field s picker dropdown  */
-  var collapse: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var collapse: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Creates and returns the component to be used as this field s picker  */
-  var createPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var createPicker: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Expands this field s picker dropdown  */
-  var expand: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var expand: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Returns a reference to the picker component for this field creating it if necessary by calling createPicker
     * @returns Ext.Component The picker component
     */
-  var getPicker: js.UndefOr[js.Function0[IComponent]] = js.undefined
+  var getPicker: js.UndefOr[js.Function0[IComponent]] = js.native
   /** [Property] (Boolean) */
-  var isExpanded: js.UndefOr[Boolean] = js.undefined
+  var isExpanded: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var matchFieldWidth: js.UndefOr[Boolean] = js.undefined
+  var matchFieldWidth: js.UndefOr[Boolean] = js.native
   /** [Method] Handles the trigger click by default toggles between expanding and collapsing the picker component  */
   @JSName("onTriggerClick")
-  var onTriggerClick_IPicker: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onTriggerClick_IPicker: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (String) */
-  var openCls: js.UndefOr[String] = js.undefined
+  var openCls: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var pickerAlign: js.UndefOr[String] = js.undefined
+  var pickerAlign: js.UndefOr[String] = js.native
   /** [Config Option] (Number[]) */
-  var pickerOffset: js.UndefOr[Array] = js.undefined
+  var pickerOffset: js.UndefOr[Array] = js.native
 }
 
 object IPicker {
   @scala.inline
-  def apply(
-    ITrigger: ITrigger = null,
-    alignPicker: () => Unit = null,
-    collapse: () => Unit = null,
-    createPicker: () => Unit = null,
-    expand: () => Unit = null,
-    getPicker: () => IComponent = null,
-    isExpanded: js.UndefOr[Boolean] = js.undefined,
-    matchFieldWidth: js.UndefOr[Boolean] = js.undefined,
-    onTriggerClick: () => Unit = null,
-    openCls: String = null,
-    pickerAlign: String = null,
-    pickerOffset: Array = null
-  ): IPicker = {
+  def apply(): IPicker = {
     val __obj = js.Dynamic.literal()
-    if (ITrigger != null) js.Dynamic.global.Object.assign(__obj, ITrigger)
-    if (alignPicker != null) __obj.updateDynamic("alignPicker")(js.Any.fromFunction0(alignPicker))
-    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction0(collapse))
-    if (createPicker != null) __obj.updateDynamic("createPicker")(js.Any.fromFunction0(createPicker))
-    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction0(expand))
-    if (getPicker != null) __obj.updateDynamic("getPicker")(js.Any.fromFunction0(getPicker))
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchFieldWidth)) __obj.updateDynamic("matchFieldWidth")(matchFieldWidth.get.asInstanceOf[js.Any])
-    if (onTriggerClick != null) __obj.updateDynamic("onTriggerClick")(js.Any.fromFunction0(onTriggerClick))
-    if (openCls != null) __obj.updateDynamic("openCls")(openCls.asInstanceOf[js.Any])
-    if (pickerAlign != null) __obj.updateDynamic("pickerAlign")(pickerAlign.asInstanceOf[js.Any])
-    if (pickerOffset != null) __obj.updateDynamic("pickerOffset")(pickerOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPicker]
   }
+  @scala.inline
+  implicit class IPickerOps[Self <: IPicker] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignPicker(value: () => Unit): Self = this.set("alignPicker", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteAlignPicker: Self = this.set("alignPicker", js.undefined)
+    @scala.inline
+    def setCollapse(value: () => Unit): Self = this.set("collapse", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    @scala.inline
+    def setCreatePicker(value: () => Unit): Self = this.set("createPicker", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCreatePicker: Self = this.set("createPicker", js.undefined)
+    @scala.inline
+    def setExpand(value: () => Unit): Self = this.set("expand", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteExpand: Self = this.set("expand", js.undefined)
+    @scala.inline
+    def setGetPicker(value: () => IComponent): Self = this.set("getPicker", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPicker: Self = this.set("getPicker", js.undefined)
+    @scala.inline
+    def setIsExpanded(value: Boolean): Self = this.set("isExpanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsExpanded: Self = this.set("isExpanded", js.undefined)
+    @scala.inline
+    def setMatchFieldWidth(value: Boolean): Self = this.set("matchFieldWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchFieldWidth: Self = this.set("matchFieldWidth", js.undefined)
+    @scala.inline
+    def setOnTriggerClick(value: () => Unit): Self = this.set("onTriggerClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnTriggerClick: Self = this.set("onTriggerClick", js.undefined)
+    @scala.inline
+    def setOpenCls(value: String): Self = this.set("openCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenCls: Self = this.set("openCls", js.undefined)
+    @scala.inline
+    def setPickerAlign(value: String): Self = this.set("pickerAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickerAlign: Self = this.set("pickerAlign", js.undefined)
+    @scala.inline
+    def setPickerOffset(value: Array): Self = this.set("pickerOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickerOffset: Self = this.set("pickerOffset", js.undefined)
+  }
+  
 }
 

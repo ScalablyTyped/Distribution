@@ -30,6 +30,7 @@ class ResourceAccountsContainersFolders protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaFolder] = js.native
   def create(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def create(params: ParamsResourceAccountsContainersFoldersCreate): GaxiosPromise[SchemaFolder] = js.native
   def create(
     params: ParamsResourceAccountsContainersFoldersCreate,
@@ -62,6 +63,7 @@ class ResourceAccountsContainersFolders protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersFoldersDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersFoldersDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -91,6 +93,7 @@ class ResourceAccountsContainersFolders protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaFolder] = js.native
   def get(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def get(params: ParamsResourceAccountsContainersFoldersGet): GaxiosPromise[SchemaFolder] = js.native
   def get(params: ParamsResourceAccountsContainersFoldersGet, callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
   def get(
@@ -119,6 +122,7 @@ class ResourceAccountsContainersFolders protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListFoldersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFoldersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFoldersResponse] = js.native
   def list(params: ParamsResourceAccountsContainersFoldersList): GaxiosPromise[SchemaListFoldersResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersFoldersList,
@@ -153,6 +157,7 @@ class ResourceAccountsContainersFolders protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaFolder] = js.native
   def update(callback: BodyResponseCallback[SchemaFolder]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolder] = js.native
   def update(params: ParamsResourceAccountsContainersFoldersUpdate): GaxiosPromise[SchemaFolder] = js.native
   def update(
     params: ParamsResourceAccountsContainersFoldersUpdate,

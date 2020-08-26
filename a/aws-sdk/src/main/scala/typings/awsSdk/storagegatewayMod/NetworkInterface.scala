@@ -22,12 +22,34 @@ trait NetworkInterface extends js.Object {
 
 object NetworkInterface {
   @scala.inline
-  def apply(Ipv4Address: String = null, Ipv6Address: String = null, MacAddress: String = null): NetworkInterface = {
+  def apply(): NetworkInterface = {
     val __obj = js.Dynamic.literal()
-    if (Ipv4Address != null) __obj.updateDynamic("Ipv4Address")(Ipv4Address.asInstanceOf[js.Any])
-    if (Ipv6Address != null) __obj.updateDynamic("Ipv6Address")(Ipv6Address.asInstanceOf[js.Any])
-    if (MacAddress != null) __obj.updateDynamic("MacAddress")(MacAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterface]
   }
+  @scala.inline
+  implicit class NetworkInterfaceOps[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpv4Address(value: String): Self = this.set("Ipv4Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv4Address: Self = this.set("Ipv4Address", js.undefined)
+    @scala.inline
+    def setIpv6Address(value: String): Self = this.set("Ipv6Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Address: Self = this.set("Ipv6Address", js.undefined)
+    @scala.inline
+    def setMacAddress(value: String): Self = this.set("MacAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacAddress: Self = this.set("MacAddress", js.undefined)
+  }
+  
 }
 

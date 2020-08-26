@@ -11,8 +11,8 @@ return the first event in a set of ee/event pairs
 | Full name          | ee-first |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 80 |
-| # downloads        | 413070277 |
+| # dependents       | 83 |
+| # downloads        | 436445857 |
 | # stars            | 4 |
 
 ## Links

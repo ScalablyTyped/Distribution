@@ -18,11 +18,30 @@ trait Bandwidth extends js.Object {
 
 object Bandwidth {
   @scala.inline
-  def apply(DownloadSpeed: js.UndefOr[Integer] = js.undefined, UploadSpeed: js.UndefOr[Integer] = js.undefined): Bandwidth = {
+  def apply(): Bandwidth = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DownloadSpeed)) __obj.updateDynamic("DownloadSpeed")(DownloadSpeed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(UploadSpeed)) __obj.updateDynamic("UploadSpeed")(UploadSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bandwidth]
   }
+  @scala.inline
+  implicit class BandwidthOps[Self <: Bandwidth] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDownloadSpeed(value: Integer): Self = this.set("DownloadSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadSpeed: Self = this.set("DownloadSpeed", js.undefined)
+    @scala.inline
+    def setUploadSpeed(value: Integer): Self = this.set("UploadSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadSpeed: Self = this.set("UploadSpeed", js.undefined)
+  }
+  
 }
 

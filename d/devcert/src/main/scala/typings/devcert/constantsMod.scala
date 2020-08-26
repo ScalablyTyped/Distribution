@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object constantsMod extends js.Object {
   val VALID_DOMAIN: RegExp = js.native
+  val VALID_IP: RegExp = js.native
   val caSelfSignConfig: String = js.native
   val caVersionFile: String = js.native
   val configDir: js.Any = js.native

@@ -130,6 +130,15 @@ object uifabricStylingStrings {
   sealed trait buttonTextPressed extends js.Object
   
   @js.native
+  sealed trait cardShadow extends js.Object
+  
+  @js.native
+  sealed trait cardShadowHovered extends js.Object
+  
+  @js.native
+  sealed trait cardStandoutBackground extends js.Object
+  
+  @js.native
   sealed trait default extends ISchemeNames
   
   @js.native
@@ -571,6 +580,12 @@ object uifabricStylingStrings {
   def buttonTextHovered: buttonTextHovered = "buttonTextHovered".asInstanceOf[buttonTextHovered]
   @scala.inline
   def buttonTextPressed: buttonTextPressed = "buttonTextPressed".asInstanceOf[buttonTextPressed]
+  @scala.inline
+  def cardShadow: cardShadow = "cardShadow".asInstanceOf[cardShadow]
+  @scala.inline
+  def cardShadowHovered: cardShadowHovered = "cardShadowHovered".asInstanceOf[cardShadowHovered]
+  @scala.inline
+  def cardStandoutBackground: cardStandoutBackground = "cardStandoutBackground".asInstanceOf[cardStandoutBackground]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline

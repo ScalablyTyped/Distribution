@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "ThemeContext")
+@JSImport("grommet/es6", "ThemeContext")
 @js.native
 object ThemeContext extends TopLevel[ThemeContextI]
 

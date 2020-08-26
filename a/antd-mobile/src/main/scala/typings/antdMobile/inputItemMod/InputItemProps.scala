@@ -88,798 +88,1407 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.antdMobile.inputItemMod.HTMLInputProps because var conflicts: disabled, maxLength, name, placeholder. Inlined formAction, `aria-flowto`, srcDoc, `aria-invalid`, `aria-keyshortcuts`, alt, coords, contextMenu, src, onKeyDown, max, marginWidth, `aria-orientation`, vocab, keyParams, required, `aria-colindex`, onPlaying, selected, onMouseOver, onMouseMove, typeof, onPointerCancel, kind, `aria-valuenow`, charSet, `aria-valuetext`, onDragStart, srcLang, onMouseEnter, sizes, dateTime, inputMode, onDragEnter, onPointerOver, `aria-rowspan`, onDragLeave, onMouseOut, onVolumeChange, multiple, `aria-relevant`, onSelect, onAnimationStart, onLoadedData, is, key, height, about, `aria-valuemax`, accessKey, `aria-pressed`, `aria-atomic`, onTouchStart, rowSpan, `aria-selected`, as, method, content, `aria-disabled`, nonce, start, itemScope, `aria-current`, style, onInput, security, `aria-labelledby`, `aria-multiline`, httpEquiv, default, optimum, target, scope, onCompositionStart, onScroll, sandbox, seamless, classID, onDragEnd, onLoadStart, noValidate, autoPlay, autoSave, min, cols, capture, dangerouslySetInnerHTML, prefix, encType, onContextMenu, wmode, `aria-colcount`, wrap, keyType, frameBorder, onError, resource, onTouchMove, onTouchEnd, media, preload, suppressHydrationWarning, useMap, itemType, onDrag, size, `aria-describedby`, onEnded, scoped, spellCheck, onAnimationIteration, tabIndex, `aria-label`, `aria-busy`, slot, onWaiting, onCompositionEnd, `aria-valuemin`, autoCapitalize, rel, manifest, onDoubleClick, colSpan, radioGroup, `aria-rowindex`, data, onEmptied, onStalled, onKeyPress, `aria-autocomplete`, formEncType, onMouseUp, id, pattern, `aria-activedescendant`, `aria-sort`, onPointerLeave, lang, `aria-errormessage`, onAuxClick, onWheel, form, `aria-posinset`, color, `aria-details`, `aria-colspan`, suppressContentEditableWarning, onPointerUp, translate, itemID, open, onProgress, accept, step, defer, `aria-expanded`, `aria-controls`, dir, `aria-owns`, shape, `aria-live`, `aria-grabbed`, onPointerMove, cite, onPause, onDrop, onReset, minLength, onPointerDown, `aria-readonly`, onDragOver, cellSpacing, label, readOnly, onTimeUpdate, challenge, poster, `aria-multiselectable`, onMouseDown, `aria-haspopup`, draggable, formMethod, `aria-hidden`, playsInline, marginHeight, htmlFor, allowTransparency, onDurationChange, contentEditable, onSubmit, headers, onSuspend, onTransitionEnd, onCanPlay, onDragExit, width, summary, `aria-level`, formTarget, onEncrypted, rows, onPlay, itemRef, onPointerOut, href, `aria-placeholder`, action, hidden, scrolling, onCopy, inlist, property, low, acceptCharset, defaultChecked, `aria-dropeffect`, className, reversed, autoFocus, unselectable, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, role, controls, children, loop, mediaGroup, download, onCanPlayThrough, crossOrigin, muted, onClick, async, onLoad, onLoadedMetadata, integrity, onSeeked, high, checked, `aria-roledescription`, srcSet, onPointerEnter, ref, datatype, `aria-modal`, onBeforeInput, onAnimationEnd, formNoValidate, allowFullScreen, onCut, `aria-checked`, onSeeking, onPaste, onMouseLeave, list, cellPadding, itemProp, onRateChange, title, autoComplete, onKeyUp, `aria-setsize`, hrefLang, autoCorrect, `aria-rowcount`, span, `aria-required`, results */ trait InputItemProps extends InputItemPropsType {
-  var about: js.UndefOr[String] = js.undefined
-  var accept: js.UndefOr[String] = js.undefined
-  var acceptCharset: js.UndefOr[String] = js.undefined
-  var accessKey: js.UndefOr[String] = js.undefined
-  var action: js.UndefOr[String] = js.undefined
-  var allowFullScreen: js.UndefOr[Boolean] = js.undefined
-  var allowTransparency: js.UndefOr[Boolean] = js.undefined
-  var alt: js.UndefOr[String] = js.undefined
-  var `aria-activedescendant`: js.UndefOr[String] = js.undefined
-  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
-  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
-  var `aria-colcount`: js.UndefOr[Double] = js.undefined
-  var `aria-colindex`: js.UndefOr[Double] = js.undefined
-  var `aria-colspan`: js.UndefOr[Double] = js.undefined
-  var `aria-controls`: js.UndefOr[String] = js.undefined
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
-  var `aria-describedby`: js.UndefOr[String] = js.undefined
-  var `aria-details`: js.UndefOr[String] = js.undefined
-  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
-  var `aria-errormessage`: js.UndefOr[String] = js.undefined
-  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
-  var `aria-flowto`: js.UndefOr[String] = js.undefined
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
-  var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
-  var `aria-label`: js.UndefOr[String] = js.undefined
-  var `aria-labelledby`: js.UndefOr[String] = js.undefined
-  var `aria-level`: js.UndefOr[Double] = js.undefined
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
-  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
-  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
-  var `aria-owns`: js.UndefOr[String] = js.undefined
-  var `aria-placeholder`: js.UndefOr[String] = js.undefined
-  var `aria-posinset`: js.UndefOr[Double] = js.undefined
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
-  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
-  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.undefined
-  var `aria-required`: js.UndefOr[Boolean] = js.undefined
-  var `aria-roledescription`: js.UndefOr[String] = js.undefined
-  var `aria-rowcount`: js.UndefOr[Double] = js.undefined
-  var `aria-rowindex`: js.UndefOr[Double] = js.undefined
-  var `aria-rowspan`: js.UndefOr[Double] = js.undefined
-  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
-  var `aria-setsize`: js.UndefOr[Double] = js.undefined
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
-  var `aria-valuemax`: js.UndefOr[Double] = js.undefined
-  var `aria-valuemin`: js.UndefOr[Double] = js.undefined
-  var `aria-valuenow`: js.UndefOr[Double] = js.undefined
-  var `aria-valuetext`: js.UndefOr[String] = js.undefined
-  var as: js.UndefOr[String] = js.undefined
-  var async: js.UndefOr[Boolean] = js.undefined
-  var autoAdjustHeight: js.UndefOr[Boolean] = js.undefined
-  var autoCapitalize: js.UndefOr[String] = js.undefined
-  var autoComplete: js.UndefOr[String] = js.undefined
-  var autoCorrect: js.UndefOr[String] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var autoPlay: js.UndefOr[Boolean] = js.undefined
-  var autoSave: js.UndefOr[String] = js.undefined
-  var capture: js.UndefOr[Boolean | String] = js.undefined
-  var cellPadding: js.UndefOr[Double | String] = js.undefined
-  var cellSpacing: js.UndefOr[Double | String] = js.undefined
-  var challenge: js.UndefOr[String] = js.undefined
-  var charSet: js.UndefOr[String] = js.undefined
-  var checked: js.UndefOr[Boolean] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var cite: js.UndefOr[String] = js.undefined
-  var classID: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var colSpan: js.UndefOr[Double] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var cols: js.UndefOr[Double] = js.undefined
-  var content: js.UndefOr[String] = js.undefined
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
-  var contextMenu: js.UndefOr[String] = js.undefined
-  var controls: js.UndefOr[Boolean] = js.undefined
-  var coords: js.UndefOr[String] = js.undefined
-  var crossOrigin: js.UndefOr[String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
-  var data: js.UndefOr[String] = js.undefined
-  var datatype: js.UndefOr[String] = js.undefined
-  var dateTime: js.UndefOr[String] = js.undefined
-  var default: js.UndefOr[Boolean] = js.undefined
-  var defaultChecked: js.UndefOr[Boolean] = js.undefined
-  var defer: js.UndefOr[Boolean] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
-  var download: js.UndefOr[js.Any] = js.undefined
-  var draggable: js.UndefOr[Booleanish] = js.undefined
-  var encType: js.UndefOr[String] = js.undefined
-  var form: js.UndefOr[String] = js.undefined
-  var formAction: js.UndefOr[String] = js.undefined
-  var formEncType: js.UndefOr[String] = js.undefined
-  var formMethod: js.UndefOr[String] = js.undefined
-  var formNoValidate: js.UndefOr[Boolean] = js.undefined
-  var formTarget: js.UndefOr[String] = js.undefined
-  var frameBorder: js.UndefOr[Double | String] = js.undefined
-  var headers: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var high: js.UndefOr[Double] = js.undefined
-  var href: js.UndefOr[String] = js.undefined
-  var hrefLang: js.UndefOr[String] = js.undefined
-  var htmlFor: js.UndefOr[String] = js.undefined
-  var httpEquiv: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var inlist: js.UndefOr[js.Any] = js.undefined
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
-  var integrity: js.UndefOr[String] = js.undefined
-  var is: js.UndefOr[String] = js.undefined
-  var itemID: js.UndefOr[String] = js.undefined
-  var itemProp: js.UndefOr[String] = js.undefined
-  var itemRef: js.UndefOr[String] = js.undefined
-  var itemScope: js.UndefOr[Boolean] = js.undefined
-  var itemType: js.UndefOr[String] = js.undefined
-  var key: js.UndefOr[Key] = js.undefined
-  var keyParams: js.UndefOr[String] = js.undefined
-  var keyType: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var lang: js.UndefOr[String] = js.undefined
-  var list: js.UndefOr[String] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var low: js.UndefOr[Double] = js.undefined
-  var manifest: js.UndefOr[String] = js.undefined
-  var marginHeight: js.UndefOr[Double] = js.undefined
-  var marginWidth: js.UndefOr[Double] = js.undefined
-  var max: js.UndefOr[Double | String] = js.undefined
-  var media: js.UndefOr[String] = js.undefined
-  var mediaGroup: js.UndefOr[String] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
-  var min: js.UndefOr[Double | String] = js.undefined
-  var minLength: js.UndefOr[Double] = js.undefined
-  var multiple: js.UndefOr[Boolean] = js.undefined
-  var muted: js.UndefOr[Boolean] = js.undefined
-  var noValidate: js.UndefOr[Boolean] = js.undefined
-  var nonce: js.UndefOr[String] = js.undefined
-  var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
-  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.undefined
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
-  var onCut: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onDrag: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragEnd: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragExit: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDragStart: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDrop: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.undefined
-  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onEmptied: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onEnded: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onError: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onErrorClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onExtraClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
-  var onLoad: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.undefined
-  var onPause: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onPlaying: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.undefined
-  var onProgress: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.undefined
-  var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onSeeking: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onSelect: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onSuspend: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
-  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
-  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLInputElement]] = js.undefined
-  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onWaiting: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
-  var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var optimum: js.UndefOr[Double] = js.undefined
-  var pattern: js.UndefOr[String] = js.undefined
-  var playsInline: js.UndefOr[Boolean] = js.undefined
-  var poster: js.UndefOr[String] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var prefixListCls: js.UndefOr[String] = js.undefined
-  var preload: js.UndefOr[String] = js.undefined
-  var property: js.UndefOr[String] = js.undefined
-  var radioGroup: js.UndefOr[String] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var ref: js.UndefOr[LegacyRef[HTMLInputElement]] = js.undefined
-  var rel: js.UndefOr[String] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var resource: js.UndefOr[String] = js.undefined
-  var results: js.UndefOr[Double] = js.undefined
-  var reversed: js.UndefOr[Boolean] = js.undefined
-  var role: js.UndefOr[String] = js.undefined
-  var rowSpan: js.UndefOr[Double] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
-  var sandbox: js.UndefOr[String] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
-  var scoped: js.UndefOr[Boolean] = js.undefined
-  var scrolling: js.UndefOr[String] = js.undefined
-  var seamless: js.UndefOr[Boolean] = js.undefined
-  var security: js.UndefOr[String] = js.undefined
-  var selected: js.UndefOr[Boolean] = js.undefined
-  var shape: js.UndefOr[String] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var sizes: js.UndefOr[String] = js.undefined
-  var slot: js.UndefOr[String] = js.undefined
-  var span: js.UndefOr[Double] = js.undefined
-  var spellCheck: js.UndefOr[Booleanish] = js.undefined
-  var src: js.UndefOr[String] = js.undefined
-  var srcDoc: js.UndefOr[String] = js.undefined
-  var srcLang: js.UndefOr[String] = js.undefined
-  var srcSet: js.UndefOr[String] = js.undefined
-  var start: js.UndefOr[Double] = js.undefined
-  var step: js.UndefOr[Double | String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var summary: js.UndefOr[String] = js.undefined
-  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
-  var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
-  var target: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var translate: js.UndefOr[yes | no] = js.undefined
-  var typeof: js.UndefOr[String] = js.undefined
-  var unselectable: js.UndefOr[on | off] = js.undefined
-  var useMap: js.UndefOr[String] = js.undefined
-  var vocab: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
-  var wmode: js.UndefOr[String] = js.undefined
-  var wrap: js.UndefOr[String] = js.undefined
+- typings.antdMobile.inputItemMod.HTMLInputProps because var conflicts: disabled, maxLength, name, placeholder. Inlined as, autoPlay, kind, checked, translate, inlist, formAction, `aria-activedescendant`, onMouseEnter, max, cellPadding, target, onLoadedData, unselectable, `aria-multiselectable`, htmlFor, title, cols, useMap, slot, muted, pattern, onClick, className, width, classID, frameBorder, onTouchStart, onDrop, `aria-grabbed`, children, onDragOver, scrolling, autoSave, onAnimationIteration, spellCheck, role, `aria-multiline`, about, dir, cellSpacing, onPlaying, `aria-current`, height, itemType, `aria-relevant`, `aria-placeholder`, autoCorrect, onPointerMove, `aria-label`, `aria-rowcount`, onPaste, key, `aria-busy`, resource, onSeeked, tabIndex, onError, onTimeUpdate, `aria-roledescription`, low, color, onEnded, onPointerCancel, autoCapitalize, inputMode, onCompositionUpdate, onMouseMove, size, onSelect, coords, onStalled, noValidate, onPointerOut, wmode, onAuxClick, poster, `aria-autocomplete`, onCopy, `aria-live`, playsInline, dateTime, `aria-keyshortcuts`, onDurationChange, `aria-orientation`, selected, manifest, onVolumeChange, lang, rows, `aria-owns`, data, `aria-atomic`, `aria-dropeffect`, high, min, scoped, property, style, is, onLoadedMetadata, `aria-labelledby`, formMethod, onTransitionEnd, onMouseOver, datatype, onDragStart, onSeeking, `aria-flowto`, marginHeight, sandbox, onAnimationEnd, scope, rowSpan, onCanPlay, action, `aria-readonly`, onMouseOut, onKeyDown, allowFullScreen, `aria-pressed`, onMouseLeave, contextMenu, accept, onProgress, `aria-level`, contentEditable, autoComplete, onPointerLeave, start, srcDoc, onMouseUp, multiple, onInput, allowTransparency, itemRef, autoFocus, capture, ref, media, wrap, results, mediaGroup, accessKey, `aria-haspopup`, `aria-posinset`, step, onInvalid, `aria-required`, vocab, preload, `aria-describedby`, onSuspend, formEncType, onLoad, onTouchCancel, formNoValidate, onAnimationStart, onTouchMove, onPointerEnter, cite, src, `aria-controls`, rel, colSpan, `aria-modal`, onDragEnter, formTarget, summary, onPointerOver, sizes, required, onWaiting, shape, integrity, onReset, `aria-selected`, onPlay, onKeyUp, onMouseDown, radioGroup, async, onSubmit, onBeforeInput, content, readOnly, defer, nonce, default, open, `aria-disabled`, `aria-sort`, onCompositionStart, itemProp, security, keyType, `aria-valuemin`, dangerouslySetInnerHTML, `aria-colcount`, headers, onCanPlayThrough, `aria-invalid`, srcLang, span, onDoubleClick, `aria-valuemax`, `aria-details`, onContextMenu, suppressHydrationWarning, `aria-setsize`, encType, onDragLeave, charSet, keyParams, seamless, onTouchEnd, onPause, `aria-checked`, optimum, defaultChecked, reversed, `aria-valuetext`, prefix, marginWidth, onEmptied, method, form, label, list, onPointerUp, download, onCompositionEnd, `aria-colspan`, hidden, `aria-errormessage`, onScroll, crossOrigin, acceptCharset, onPointerDown, `aria-colindex`, onCut, alt, httpEquiv, suppressContentEditableWarning, `aria-hidden`, onAbort, onDragExit, srcSet, `aria-valuenow`, id, onWheel, typeof, href, onDrag, `aria-expanded`, minLength, draggable, onEncrypted, onDragEnd, loop, `aria-rowindex`, itemScope, onRateChange, onKeyPress, onLoadStart, challenge, itemID, hrefLang, controls, `aria-rowspan` */ @js.native
+trait InputItemProps extends InputItemPropsType {
+  var about: js.UndefOr[String] = js.native
+  var accept: js.UndefOr[String] = js.native
+  var acceptCharset: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.native
+  var allowFullScreen: js.UndefOr[Boolean] = js.native
+  var allowTransparency: js.UndefOr[Boolean] = js.native
+  var alt: js.UndefOr[String] = js.native
+  var `aria-activedescendant`: js.UndefOr[String] = js.native
+  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-colcount`: js.UndefOr[Double] = js.native
+  var `aria-colindex`: js.UndefOr[Double] = js.native
+  var `aria-colspan`: js.UndefOr[Double] = js.native
+  var `aria-controls`: js.UndefOr[String] = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-details`: js.UndefOr[String] = js.native
+  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-flowto`: js.UndefOr[String] = js.native
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-level`: js.UndefOr[Double] = js.native
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  var `aria-owns`: js.UndefOr[String] = js.native
+  var `aria-placeholder`: js.UndefOr[String] = js.native
+  var `aria-posinset`: js.UndefOr[Double] = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.native
+  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-roledescription`: js.UndefOr[String] = js.native
+  var `aria-rowcount`: js.UndefOr[Double] = js.native
+  var `aria-rowindex`: js.UndefOr[Double] = js.native
+  var `aria-rowspan`: js.UndefOr[Double] = js.native
+  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-setsize`: js.UndefOr[Double] = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  var `aria-valuemax`: js.UndefOr[Double] = js.native
+  var `aria-valuemin`: js.UndefOr[Double] = js.native
+  var `aria-valuenow`: js.UndefOr[Double] = js.native
+  var `aria-valuetext`: js.UndefOr[String] = js.native
+  var as: js.UndefOr[String] = js.native
+  var async: js.UndefOr[Boolean] = js.native
+  var autoAdjustHeight: js.UndefOr[Boolean] = js.native
+  var autoCapitalize: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoSave: js.UndefOr[String] = js.native
+  var capture: js.UndefOr[Boolean | String] = js.native
+  var cellPadding: js.UndefOr[Double | String] = js.native
+  var cellSpacing: js.UndefOr[Double | String] = js.native
+  var challenge: js.UndefOr[String] = js.native
+  var charSet: js.UndefOr[String] = js.native
+  var checked: js.UndefOr[Boolean] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var cite: js.UndefOr[String] = js.native
+  var classID: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var colSpan: js.UndefOr[Double] = js.native
+  var color: js.UndefOr[String] = js.native
+  var cols: js.UndefOr[Double] = js.native
+  var content: js.UndefOr[String] = js.native
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  var contextMenu: js.UndefOr[String] = js.native
+  var controls: js.UndefOr[Boolean] = js.native
+  var coords: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+  var data: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.native
+  var dateTime: js.UndefOr[String] = js.native
+  var default: js.UndefOr[Boolean] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defer: js.UndefOr[Boolean] = js.native
+  var dir: js.UndefOr[String] = js.native
+  var download: js.UndefOr[js.Any] = js.native
+  var draggable: js.UndefOr[Booleanish] = js.native
+  var encType: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.native
+  var formAction: js.UndefOr[String] = js.native
+  var formEncType: js.UndefOr[String] = js.native
+  var formMethod: js.UndefOr[String] = js.native
+  var formNoValidate: js.UndefOr[Boolean] = js.native
+  var formTarget: js.UndefOr[String] = js.native
+  var frameBorder: js.UndefOr[Double | String] = js.native
+  var headers: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var high: js.UndefOr[Double] = js.native
+  var href: js.UndefOr[String] = js.native
+  var hrefLang: js.UndefOr[String] = js.native
+  var htmlFor: js.UndefOr[String] = js.native
+  var httpEquiv: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var inlist: js.UndefOr[js.Any] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var integrity: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.native
+  var itemID: js.UndefOr[String] = js.native
+  var itemProp: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemType: js.UndefOr[String] = js.native
+  var key: js.UndefOr[Key] = js.native
+  var keyParams: js.UndefOr[String] = js.native
+  var keyType: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.native
+  var list: js.UndefOr[String] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var low: js.UndefOr[Double] = js.native
+  var manifest: js.UndefOr[String] = js.native
+  var marginHeight: js.UndefOr[Double] = js.native
+  var marginWidth: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double | String] = js.native
+  var media: js.UndefOr[String] = js.native
+  var mediaGroup: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.native
+  var min: js.UndefOr[Double | String] = js.native
+  var minLength: js.UndefOr[Double] = js.native
+  var multiple: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.native
+  var noValidate: js.UndefOr[Boolean] = js.native
+  var nonce: js.UndefOr[String] = js.native
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onDrag: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDrop: js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onError: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onErrorClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onExtraClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+  var onPause: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onReset: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onScroll: js.UndefOr[UIEventHandler[HTMLInputElement]] = js.native
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLInputElement]] = js.native
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var optimum: js.UndefOr[Double] = js.native
+  var pattern: js.UndefOr[String] = js.native
+  var playsInline: js.UndefOr[Boolean] = js.native
+  var poster: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var prefixListCls: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var ref: js.UndefOr[LegacyRef[HTMLInputElement]] = js.native
+  var rel: js.UndefOr[String] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var resource: js.UndefOr[String] = js.native
+  var results: js.UndefOr[Double] = js.native
+  var reversed: js.UndefOr[Boolean] = js.native
+  var role: js.UndefOr[String] = js.native
+  var rowSpan: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.native
+  var sandbox: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.native
+  var scoped: js.UndefOr[Boolean] = js.native
+  var scrolling: js.UndefOr[String] = js.native
+  var seamless: js.UndefOr[Boolean] = js.native
+  var security: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[Boolean] = js.native
+  var shape: js.UndefOr[String] = js.native
+  var size: js.UndefOr[Double] = js.native
+  var sizes: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.native
+  var span: js.UndefOr[Double] = js.native
+  var spellCheck: js.UndefOr[Booleanish] = js.native
+  var src: js.UndefOr[String] = js.native
+  var srcDoc: js.UndefOr[String] = js.native
+  var srcLang: js.UndefOr[String] = js.native
+  var srcSet: js.UndefOr[String] = js.native
+  var start: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double | String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var summary: js.UndefOr[String] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
+  var target: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var translate: js.UndefOr[yes | no] = js.native
+  var typeof: js.UndefOr[String] = js.native
+  var unselectable: js.UndefOr[on | off] = js.native
+  var useMap: js.UndefOr[String] = js.native
+  var vocab: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double | String] = js.native
+  var wmode: js.UndefOr[String] = js.native
+  var wrap: js.UndefOr[String] = js.native
 }
 
 object InputItemProps {
   @scala.inline
-  def apply(
-    InputItemPropsType: InputItemPropsType = null,
-    about: String = null,
-    accept: String = null,
-    acceptCharset: String = null,
-    accessKey: String = null,
-    action: String = null,
-    allowFullScreen: js.UndefOr[Boolean] = js.undefined,
-    allowTransparency: js.UndefOr[Boolean] = js.undefined,
-    alt: String = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: js.UndefOr[Double] = js.undefined,
-    `aria-colindex`: js.UndefOr[Double] = js.undefined,
-    `aria-colspan`: js.UndefOr[Double] = js.undefined,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: js.UndefOr[Double] = js.undefined,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: js.UndefOr[Double] = js.undefined,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
-    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
-    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: js.UndefOr[Double] = js.undefined,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
-    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
-    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
-    `aria-valuetext`: String = null,
-    as: String = null,
-    async: js.UndefOr[Boolean] = js.undefined,
-    autoAdjustHeight: js.UndefOr[Boolean] = js.undefined,
-    autoCapitalize: String = null,
-    autoComplete: String = null,
-    autoCorrect: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    autoSave: String = null,
-    capture: Boolean | String = null,
-    cellPadding: Double | String = null,
-    cellSpacing: Double | String = null,
-    challenge: String = null,
-    charSet: String = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    cite: String = null,
-    classID: String = null,
-    className: String = null,
-    colSpan: js.UndefOr[Double] = js.undefined,
-    color: String = null,
-    cols: js.UndefOr[Double] = js.undefined,
-    content: String = null,
-    contentEditable: Booleanish | inherit = null,
-    contextMenu: String = null,
-    controls: js.UndefOr[Boolean] = js.undefined,
-    coords: String = null,
-    crossOrigin: String = null,
-    dangerouslySetInnerHTML: Html = null,
-    data: String = null,
-    datatype: String = null,
-    dateTime: String = null,
-    default: js.UndefOr[Boolean] = js.undefined,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defer: js.UndefOr[Boolean] = js.undefined,
-    dir: String = null,
-    download: js.Any = null,
-    draggable: js.UndefOr[Booleanish] = js.undefined,
-    encType: String = null,
-    form: String = null,
-    formAction: String = null,
-    formEncType: String = null,
-    formMethod: String = null,
-    formNoValidate: js.UndefOr[Boolean] = js.undefined,
-    formTarget: String = null,
-    frameBorder: Double | String = null,
-    headers: String = null,
-    height: Double | String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    high: js.UndefOr[Double] = js.undefined,
-    href: String = null,
-    hrefLang: String = null,
-    htmlFor: String = null,
-    httpEquiv: String = null,
-    id: String = null,
-    inlist: js.Any = null,
-    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
-    integrity: String = null,
-    is: String = null,
-    itemID: String = null,
-    itemProp: String = null,
-    itemRef: String = null,
-    itemScope: js.UndefOr[Boolean] = js.undefined,
-    itemType: String = null,
-    key: Key = null,
-    keyParams: String = null,
-    keyType: String = null,
-    kind: String = null,
-    label: String = null,
-    lang: String = null,
-    list: String = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    low: js.UndefOr[Double] = js.undefined,
-    manifest: String = null,
-    marginHeight: js.UndefOr[Double] = js.undefined,
-    marginWidth: js.UndefOr[Double] = js.undefined,
-    max: Double | String = null,
-    media: String = null,
-    mediaGroup: String = null,
-    method: String = null,
-    min: Double | String = null,
-    minLength: js.UndefOr[Double] = js.undefined,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    muted: js.UndefOr[Boolean] = js.undefined,
-    noValidate: js.UndefOr[Boolean] = js.undefined,
-    nonce: String = null,
-    onAbort: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onAnimationEnd: AnimationEvent[HTMLInputElement] => Unit = null,
-    onAnimationIteration: AnimationEvent[HTMLInputElement] => Unit = null,
-    onAnimationStart: AnimationEvent[HTMLInputElement] => Unit = null,
-    onAuxClick: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onBeforeInput: FormEvent[HTMLInputElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onClick: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onCompositionEnd: CompositionEvent[HTMLInputElement] => Unit = null,
-    onCompositionStart: CompositionEvent[HTMLInputElement] => Unit = null,
-    onCompositionUpdate: CompositionEvent[HTMLInputElement] => Unit = null,
-    onContextMenu: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onCopy: ClipboardEvent[HTMLInputElement] => Unit = null,
-    onCut: ClipboardEvent[HTMLInputElement] => Unit = null,
-    onDoubleClick: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onDrag: DragEvent[HTMLInputElement] => Unit = null,
-    onDragEnd: DragEvent[HTMLInputElement] => Unit = null,
-    onDragEnter: DragEvent[HTMLInputElement] => Unit = null,
-    onDragExit: DragEvent[HTMLInputElement] => Unit = null,
-    onDragLeave: DragEvent[HTMLInputElement] => Unit = null,
-    onDragOver: DragEvent[HTMLInputElement] => Unit = null,
-    onDragStart: DragEvent[HTMLInputElement] => Unit = null,
-    onDrop: DragEvent[HTMLInputElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onEnded: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onError: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onErrorClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onExtraClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onInput: FormEvent[HTMLInputElement] => Unit = null,
-    onInvalid: FormEvent[HTMLInputElement] => Unit = null,
-    onKeyDown: KeyboardEvent[HTMLInputElement] => Unit = null,
-    onKeyPress: KeyboardEvent[HTMLInputElement] => Unit = null,
-    onKeyUp: KeyboardEvent[HTMLInputElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onMouseDown: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onMouseMove: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onMouseOut: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onMouseOver: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onMouseUp: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onPaste: ClipboardEvent[HTMLInputElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onPlay: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onPointerCancel: PointerEvent[HTMLInputElement] => Unit = null,
-    onPointerDown: PointerEvent[HTMLInputElement] => Unit = null,
-    onPointerEnter: PointerEvent[HTMLInputElement] => Unit = null,
-    onPointerLeave: PointerEvent[HTMLInputElement] => Unit = null,
-    onPointerMove: PointerEvent[HTMLInputElement] => Unit = null,
-    onPointerOut: PointerEvent[HTMLInputElement] => Unit = null,
-    onPointerOver: PointerEvent[HTMLInputElement] => Unit = null,
-    onPointerUp: PointerEvent[HTMLInputElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onReset: FormEvent[HTMLInputElement] => Unit = null,
-    onScroll: UIEvent[HTMLInputElement, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onSelect: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onStalled: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onSubmit: FormEvent[HTMLInputElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onTouchCancel: TouchEvent[HTMLInputElement] => Unit = null,
-    onTouchEnd: TouchEvent[HTMLInputElement] => Unit = null,
-    onTouchMove: TouchEvent[HTMLInputElement] => Unit = null,
-    onTouchStart: TouchEvent[HTMLInputElement] => Unit = null,
-    onTransitionEnd: TransitionEvent[HTMLInputElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onWheel: WheelEvent[HTMLInputElement] => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    optimum: js.UndefOr[Double] = js.undefined,
-    pattern: String = null,
-    playsInline: js.UndefOr[Boolean] = js.undefined,
-    poster: String = null,
-    prefix: String = null,
-    prefixCls: String = null,
-    prefixListCls: String = null,
-    preload: String = null,
-    property: String = null,
-    radioGroup: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    ref: js.UndefOr[Null | LegacyRef[HTMLInputElement]] = js.undefined,
-    rel: String = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    resource: String = null,
-    results: js.UndefOr[Double] = js.undefined,
-    reversed: js.UndefOr[Boolean] = js.undefined,
-    role: String = null,
-    rowSpan: js.UndefOr[Double] = js.undefined,
-    rows: js.UndefOr[Double] = js.undefined,
-    sandbox: String = null,
-    scope: String = null,
-    scoped: js.UndefOr[Boolean] = js.undefined,
-    scrolling: String = null,
-    seamless: js.UndefOr[Boolean] = js.undefined,
-    security: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    shape: String = null,
-    size: js.UndefOr[Double] = js.undefined,
-    sizes: String = null,
-    slot: String = null,
-    span: js.UndefOr[Double] = js.undefined
-  ): InputItemProps = {
+  def apply(): InputItemProps = {
     val __obj = js.Dynamic.literal()
-    if (InputItemPropsType != null) js.Dynamic.global.Object.assign(__obj, InputItemPropsType)
-    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (acceptCharset != null) __obj.updateDynamic("acceptCharset")(acceptCharset.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.get.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAdjustHeight)) __obj.updateDynamic("autoAdjustHeight")(autoAdjustHeight.get.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
-    if (cellPadding != null) __obj.updateDynamic("cellPadding")(cellPadding.asInstanceOf[js.Any])
-    if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
-    if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
-    if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (cite != null) __obj.updateDynamic("cite")(cite.asInstanceOf[js.Any])
-    if (classID != null) __obj.updateDynamic("classID")(classID.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
-    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (encType != null) __obj.updateDynamic("encType")(encType.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (formAction != null) __obj.updateDynamic("formAction")(formAction.asInstanceOf[js.Any])
-    if (formEncType != null) __obj.updateDynamic("formEncType")(formEncType.asInstanceOf[js.Any])
-    if (formMethod != null) __obj.updateDynamic("formMethod")(formMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.get.asInstanceOf[js.Any])
-    if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget.asInstanceOf[js.Any])
-    if (frameBorder != null) __obj.updateDynamic("frameBorder")(frameBorder.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang.asInstanceOf[js.Any])
-    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
-    if (httpEquiv != null) __obj.updateDynamic("httpEquiv")(httpEquiv.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
-    if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginHeight)) __obj.updateDynamic("marginHeight")(marginHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginWidth)) __obj.updateDynamic("marginWidth")(marginWidth.get.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (mediaGroup != null) __obj.updateDynamic("mediaGroup")(mediaGroup.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.get.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1(onCanPlayThrough))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1(onDragExit))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(js.Any.fromFunction1(onErrorClick))
-    if (onExtraClick != null) __obj.updateDynamic("onExtraClick")(js.Any.fromFunction1(onExtraClick))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1(onLoadStart))
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1(onLoadedData))
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1(onLoadedMetadata))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1(onPlaying))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1(onPointerCancel))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1(onPointerDown))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1(onPointerEnter))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1(onPointerLeave))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1(onPointerMove))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1(onPointerOut))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1(onPointerOver))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1(onPointerUp))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimum)) __obj.updateDynamic("optimum")(optimum.get.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.get.asInstanceOf[js.Any])
-    if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (prefixListCls != null) __obj.updateDynamic("prefixListCls")(prefixListCls.asInstanceOf[js.Any])
-    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped.get.asInstanceOf[js.Any])
-    if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless.get.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(span)) __obj.updateDynamic("span")(span.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputItemProps]
   }
+  @scala.inline
+  implicit class InputItemPropsOps[Self <: InputItemProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbout(value: String): Self = this.set("about", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbout: Self = this.set("about", js.undefined)
+    @scala.inline
+    def setAccept(value: String): Self = this.set("accept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept: Self = this.set("accept", js.undefined)
+    @scala.inline
+    def setAcceptCharset(value: String): Self = this.set("acceptCharset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptCharset: Self = this.set("acceptCharset", js.undefined)
+    @scala.inline
+    def setAccessKey(value: String): Self = this.set("accessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKey: Self = this.set("accessKey", js.undefined)
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setAllowFullScreen(value: Boolean): Self = this.set("allowFullScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFullScreen: Self = this.set("allowFullScreen", js.undefined)
+    @scala.inline
+    def setAllowTransparency(value: Boolean): Self = this.set("allowTransparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowTransparency: Self = this.set("allowTransparency", js.undefined)
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def `setAria-activedescendant`(value: String): Self = this.set("aria-activedescendant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-activedescendant`: Self = this.set("aria-activedescendant", js.undefined)
+    @scala.inline
+    def `setAria-atomic`(value: Boolean): Self = this.set("aria-atomic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-atomic`: Self = this.set("aria-atomic", js.undefined)
+    @scala.inline
+    def `setAria-autocomplete`(value: none | `inline` | list | both): Self = this.set("aria-autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-autocomplete`: Self = this.set("aria-autocomplete", js.undefined)
+    @scala.inline
+    def `setAria-busy`(value: Boolean): Self = this.set("aria-busy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-busy`: Self = this.set("aria-busy", js.undefined)
+    @scala.inline
+    def `setAria-checked`(value: Boolean | mixed): Self = this.set("aria-checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-checked`: Self = this.set("aria-checked", js.undefined)
+    @scala.inline
+    def `setAria-colcount`(value: Double): Self = this.set("aria-colcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colcount`: Self = this.set("aria-colcount", js.undefined)
+    @scala.inline
+    def `setAria-colindex`(value: Double): Self = this.set("aria-colindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colindex`: Self = this.set("aria-colindex", js.undefined)
+    @scala.inline
+    def `setAria-colspan`(value: Double): Self = this.set("aria-colspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colspan`: Self = this.set("aria-colspan", js.undefined)
+    @scala.inline
+    def `setAria-controls`(value: String): Self = this.set("aria-controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-controls`: Self = this.set("aria-controls", js.undefined)
+    @scala.inline
+    def `setAria-current`(value: Boolean | page | step | location | date | time): Self = this.set("aria-current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-current`: Self = this.set("aria-current", js.undefined)
+    @scala.inline
+    def `setAria-describedby`(value: String): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-describedby`: Self = this.set("aria-describedby", js.undefined)
+    @scala.inline
+    def `setAria-details`(value: String): Self = this.set("aria-details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-details`: Self = this.set("aria-details", js.undefined)
+    @scala.inline
+    def `setAria-disabled`(value: Boolean): Self = this.set("aria-disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-disabled`: Self = this.set("aria-disabled", js.undefined)
+    @scala.inline
+    def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = this.set("aria-dropeffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-dropeffect`: Self = this.set("aria-dropeffect", js.undefined)
+    @scala.inline
+    def `setAria-errormessage`(value: String): Self = this.set("aria-errormessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-errormessage`: Self = this.set("aria-errormessage", js.undefined)
+    @scala.inline
+    def `setAria-expanded`(value: Boolean): Self = this.set("aria-expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-expanded`: Self = this.set("aria-expanded", js.undefined)
+    @scala.inline
+    def `setAria-flowto`(value: String): Self = this.set("aria-flowto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-flowto`: Self = this.set("aria-flowto", js.undefined)
+    @scala.inline
+    def `setAria-grabbed`(value: Boolean): Self = this.set("aria-grabbed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-grabbed`: Self = this.set("aria-grabbed", js.undefined)
+    @scala.inline
+    def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = this.set("aria-haspopup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-haspopup`: Self = this.set("aria-haspopup", js.undefined)
+    @scala.inline
+    def `setAria-hidden`(value: Boolean): Self = this.set("aria-hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-hidden`: Self = this.set("aria-hidden", js.undefined)
+    @scala.inline
+    def `setAria-invalid`(value: Boolean | grammar | spelling): Self = this.set("aria-invalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-invalid`: Self = this.set("aria-invalid", js.undefined)
+    @scala.inline
+    def `setAria-keyshortcuts`(value: String): Self = this.set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-keyshortcuts`: Self = this.set("aria-keyshortcuts", js.undefined)
+    @scala.inline
+    def `setAria-label`(value: String): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def `setAria-labelledby`(value: String): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    @scala.inline
+    def `setAria-level`(value: Double): Self = this.set("aria-level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-level`: Self = this.set("aria-level", js.undefined)
+    @scala.inline
+    def `setAria-live`(value: off | assertive | polite): Self = this.set("aria-live", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-live`: Self = this.set("aria-live", js.undefined)
+    @scala.inline
+    def `setAria-modal`(value: Boolean): Self = this.set("aria-modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-modal`: Self = this.set("aria-modal", js.undefined)
+    @scala.inline
+    def `setAria-multiline`(value: Boolean): Self = this.set("aria-multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiline`: Self = this.set("aria-multiline", js.undefined)
+    @scala.inline
+    def `setAria-multiselectable`(value: Boolean): Self = this.set("aria-multiselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiselectable`: Self = this.set("aria-multiselectable", js.undefined)
+    @scala.inline
+    def `setAria-orientation`(value: horizontal | vertical): Self = this.set("aria-orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-orientation`: Self = this.set("aria-orientation", js.undefined)
+    @scala.inline
+    def `setAria-owns`(value: String): Self = this.set("aria-owns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-owns`: Self = this.set("aria-owns", js.undefined)
+    @scala.inline
+    def `setAria-placeholder`(value: String): Self = this.set("aria-placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-placeholder`: Self = this.set("aria-placeholder", js.undefined)
+    @scala.inline
+    def `setAria-posinset`(value: Double): Self = this.set("aria-posinset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-posinset`: Self = this.set("aria-posinset", js.undefined)
+    @scala.inline
+    def `setAria-pressed`(value: Boolean | mixed): Self = this.set("aria-pressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-pressed`: Self = this.set("aria-pressed", js.undefined)
+    @scala.inline
+    def `setAria-readonly`(value: Boolean): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    @scala.inline
+    def `setAria-relevant`(value: additions | (`additions text`) | all | removals | text): Self = this.set("aria-relevant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-relevant`: Self = this.set("aria-relevant", js.undefined)
+    @scala.inline
+    def `setAria-required`(value: Boolean): Self = this.set("aria-required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-required`: Self = this.set("aria-required", js.undefined)
+    @scala.inline
+    def `setAria-roledescription`(value: String): Self = this.set("aria-roledescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-roledescription`: Self = this.set("aria-roledescription", js.undefined)
+    @scala.inline
+    def `setAria-rowcount`(value: Double): Self = this.set("aria-rowcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowcount`: Self = this.set("aria-rowcount", js.undefined)
+    @scala.inline
+    def `setAria-rowindex`(value: Double): Self = this.set("aria-rowindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowindex`: Self = this.set("aria-rowindex", js.undefined)
+    @scala.inline
+    def `setAria-rowspan`(value: Double): Self = this.set("aria-rowspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowspan`: Self = this.set("aria-rowspan", js.undefined)
+    @scala.inline
+    def `setAria-selected`(value: Boolean): Self = this.set("aria-selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-selected`: Self = this.set("aria-selected", js.undefined)
+    @scala.inline
+    def `setAria-setsize`(value: Double): Self = this.set("aria-setsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-setsize`: Self = this.set("aria-setsize", js.undefined)
+    @scala.inline
+    def `setAria-sort`(value: none | ascending | descending | other): Self = this.set("aria-sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-sort`: Self = this.set("aria-sort", js.undefined)
+    @scala.inline
+    def `setAria-valuemax`(value: Double): Self = this.set("aria-valuemax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemax`: Self = this.set("aria-valuemax", js.undefined)
+    @scala.inline
+    def `setAria-valuemin`(value: Double): Self = this.set("aria-valuemin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemin`: Self = this.set("aria-valuemin", js.undefined)
+    @scala.inline
+    def `setAria-valuenow`(value: Double): Self = this.set("aria-valuenow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuenow`: Self = this.set("aria-valuenow", js.undefined)
+    @scala.inline
+    def `setAria-valuetext`(value: String): Self = this.set("aria-valuetext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuetext`: Self = this.set("aria-valuetext", js.undefined)
+    @scala.inline
+    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsync: Self = this.set("async", js.undefined)
+    @scala.inline
+    def setAutoAdjustHeight(value: Boolean): Self = this.set("autoAdjustHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAdjustHeight: Self = this.set("autoAdjustHeight", js.undefined)
+    @scala.inline
+    def setAutoCapitalize(value: String): Self = this.set("autoCapitalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCapitalize: Self = this.set("autoCapitalize", js.undefined)
+    @scala.inline
+    def setAutoComplete(value: String): Self = this.set("autoComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoComplete: Self = this.set("autoComplete", js.undefined)
+    @scala.inline
+    def setAutoCorrect(value: String): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    @scala.inline
+    def setAutoSave(value: String): Self = this.set("autoSave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoSave: Self = this.set("autoSave", js.undefined)
+    @scala.inline
+    def setCapture(value: Boolean | String): Self = this.set("capture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapture: Self = this.set("capture", js.undefined)
+    @scala.inline
+    def setCellPadding(value: Double | String): Self = this.set("cellPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellPadding: Self = this.set("cellPadding", js.undefined)
+    @scala.inline
+    def setCellSpacing(value: Double | String): Self = this.set("cellSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellSpacing: Self = this.set("cellSpacing", js.undefined)
+    @scala.inline
+    def setChallenge(value: String): Self = this.set("challenge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallenge: Self = this.set("challenge", js.undefined)
+    @scala.inline
+    def setCharSet(value: String): Self = this.set("charSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharSet: Self = this.set("charSet", js.undefined)
+    @scala.inline
+    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecked: Self = this.set("checked", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setCite(value: String): Self = this.set("cite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCite: Self = this.set("cite", js.undefined)
+    @scala.inline
+    def setClassID(value: String): Self = this.set("classID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassID: Self = this.set("classID", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCols: Self = this.set("cols", js.undefined)
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContentEditable(value: Booleanish | inherit): Self = this.set("contentEditable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEditable: Self = this.set("contentEditable", js.undefined)
+    @scala.inline
+    def setContextMenu(value: String): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    @scala.inline
+    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setCoords(value: String): Self = this.set("coords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoords: Self = this.set("coords", js.undefined)
+    @scala.inline
+    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    @scala.inline
+    def setDangerouslySetInnerHTML(value: Html): Self = this.set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDangerouslySetInnerHTML: Self = this.set("dangerouslySetInnerHTML", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDatatype(value: String): Self = this.set("datatype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatatype: Self = this.set("datatype", js.undefined)
+    @scala.inline
+    def setDateTime(value: String): Self = this.set("dateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTime: Self = this.set("dateTime", js.undefined)
+    @scala.inline
+    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setDefaultChecked(value: Boolean): Self = this.set("defaultChecked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultChecked: Self = this.set("defaultChecked", js.undefined)
+    @scala.inline
+    def setDefer(value: Boolean): Self = this.set("defer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefer: Self = this.set("defer", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setDownload(value: js.Any): Self = this.set("download", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownload: Self = this.set("download", js.undefined)
+    @scala.inline
+    def setDraggable(value: Booleanish): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setEncType(value: String): Self = this.set("encType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncType: Self = this.set("encType", js.undefined)
+    @scala.inline
+    def setForm(value: String): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForm: Self = this.set("form", js.undefined)
+    @scala.inline
+    def setFormAction(value: String): Self = this.set("formAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormAction: Self = this.set("formAction", js.undefined)
+    @scala.inline
+    def setFormEncType(value: String): Self = this.set("formEncType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormEncType: Self = this.set("formEncType", js.undefined)
+    @scala.inline
+    def setFormMethod(value: String): Self = this.set("formMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormMethod: Self = this.set("formMethod", js.undefined)
+    @scala.inline
+    def setFormNoValidate(value: Boolean): Self = this.set("formNoValidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormNoValidate: Self = this.set("formNoValidate", js.undefined)
+    @scala.inline
+    def setFormTarget(value: String): Self = this.set("formTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormTarget: Self = this.set("formTarget", js.undefined)
+    @scala.inline
+    def setFrameBorder(value: Double | String): Self = this.set("frameBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameBorder: Self = this.set("frameBorder", js.undefined)
+    @scala.inline
+    def setHeaders(value: String): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHigh(value: Double): Self = this.set("high", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigh: Self = this.set("high", js.undefined)
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHref: Self = this.set("href", js.undefined)
+    @scala.inline
+    def setHrefLang(value: String): Self = this.set("hrefLang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHrefLang: Self = this.set("hrefLang", js.undefined)
+    @scala.inline
+    def setHtmlFor(value: String): Self = this.set("htmlFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlFor: Self = this.set("htmlFor", js.undefined)
+    @scala.inline
+    def setHttpEquiv(value: String): Self = this.set("httpEquiv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpEquiv: Self = this.set("httpEquiv", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInlist(value: js.Any): Self = this.set("inlist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlist: Self = this.set("inlist", js.undefined)
+    @scala.inline
+    def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = this.set("inputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMode: Self = this.set("inputMode", js.undefined)
+    @scala.inline
+    def setIntegrity(value: String): Self = this.set("integrity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrity: Self = this.set("integrity", js.undefined)
+    @scala.inline
+    def setIs(value: String): Self = this.set("is", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs: Self = this.set("is", js.undefined)
+    @scala.inline
+    def setItemID(value: String): Self = this.set("itemID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemID: Self = this.set("itemID", js.undefined)
+    @scala.inline
+    def setItemProp(value: String): Self = this.set("itemProp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemProp: Self = this.set("itemProp", js.undefined)
+    @scala.inline
+    def setItemRef(value: String): Self = this.set("itemRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemRef: Self = this.set("itemRef", js.undefined)
+    @scala.inline
+    def setItemScope(value: Boolean): Self = this.set("itemScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemScope: Self = this.set("itemScope", js.undefined)
+    @scala.inline
+    def setItemType(value: String): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemType: Self = this.set("itemType", js.undefined)
+    @scala.inline
+    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setKeyParams(value: String): Self = this.set("keyParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyParams: Self = this.set("keyParams", js.undefined)
+    @scala.inline
+    def setKeyType(value: String): Self = this.set("keyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyType: Self = this.set("keyType", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setList(value: String): Self = this.set("list", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteList: Self = this.set("list", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setLow(value: Double): Self = this.set("low", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLow: Self = this.set("low", js.undefined)
+    @scala.inline
+    def setManifest(value: String): Self = this.set("manifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifest: Self = this.set("manifest", js.undefined)
+    @scala.inline
+    def setMarginHeight(value: Double): Self = this.set("marginHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginHeight: Self = this.set("marginHeight", js.undefined)
+    @scala.inline
+    def setMarginWidth(value: Double): Self = this.set("marginWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginWidth: Self = this.set("marginWidth", js.undefined)
+    @scala.inline
+    def setMax(value: Double | String): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMedia(value: String): Self = this.set("media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedia: Self = this.set("media", js.undefined)
+    @scala.inline
+    def setMediaGroup(value: String): Self = this.set("mediaGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaGroup: Self = this.set("mediaGroup", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setMin(value: Double | String): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuted: Self = this.set("muted", js.undefined)
+    @scala.inline
+    def setNoValidate(value: Boolean): Self = this.set("noValidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoValidate: Self = this.set("noValidate", js.undefined)
+    @scala.inline
+    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("nonce", js.undefined)
+    @scala.inline
+    def setOnAbort(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onAbort", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAbort: Self = this.set("onAbort", js.undefined)
+    @scala.inline
+    def setOnAnimationEnd(value: AnimationEvent[HTMLInputElement] => Unit): Self = this.set("onAnimationEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
+    @scala.inline
+    def setOnAnimationIteration(value: AnimationEvent[HTMLInputElement] => Unit): Self = this.set("onAnimationIteration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationIteration: Self = this.set("onAnimationIteration", js.undefined)
+    @scala.inline
+    def setOnAnimationStart(value: AnimationEvent[HTMLInputElement] => Unit): Self = this.set("onAnimationStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationStart: Self = this.set("onAnimationStart", js.undefined)
+    @scala.inline
+    def setOnAuxClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onAuxClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAuxClick: Self = this.set("onAuxClick", js.undefined)
+    @scala.inline
+    def setOnBeforeInput(value: FormEvent[HTMLInputElement] => Unit): Self = this.set("onBeforeInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBeforeInput: Self = this.set("onBeforeInput", js.undefined)
+    @scala.inline
+    def setOnCanPlay(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onCanPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCanPlay: Self = this.set("onCanPlay", js.undefined)
+    @scala.inline
+    def setOnCanPlayThrough(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onCanPlayThrough", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCanPlayThrough: Self = this.set("onCanPlayThrough", js.undefined)
+    @scala.inline
+    def setOnClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnCompositionEnd(value: CompositionEvent[HTMLInputElement] => Unit): Self = this.set("onCompositionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionEnd: Self = this.set("onCompositionEnd", js.undefined)
+    @scala.inline
+    def setOnCompositionStart(value: CompositionEvent[HTMLInputElement] => Unit): Self = this.set("onCompositionStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionStart: Self = this.set("onCompositionStart", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdate(value: CompositionEvent[HTMLInputElement] => Unit): Self = this.set("onCompositionUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionUpdate: Self = this.set("onCompositionUpdate", js.undefined)
+    @scala.inline
+    def setOnContextMenu(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onContextMenu", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    @scala.inline
+    def setOnCopy(value: ClipboardEvent[HTMLInputElement] => Unit): Self = this.set("onCopy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    @scala.inline
+    def setOnCut(value: ClipboardEvent[HTMLInputElement] => Unit): Self = this.set("onCut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCut: Self = this.set("onCut", js.undefined)
+    @scala.inline
+    def setOnDoubleClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onDoubleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    @scala.inline
+    def setOnDrag(value: DragEvent[HTMLInputElement] => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    @scala.inline
+    def setOnDragEnd(value: DragEvent[HTMLInputElement] => Unit): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    @scala.inline
+    def setOnDragEnter(value: DragEvent[HTMLInputElement] => Unit): Self = this.set("onDragEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    @scala.inline
+    def setOnDragExit(value: DragEvent[HTMLInputElement] => Unit): Self = this.set("onDragExit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragExit: Self = this.set("onDragExit", js.undefined)
+    @scala.inline
+    def setOnDragLeave(value: DragEvent[HTMLInputElement] => Unit): Self = this.set("onDragLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragLeave: Self = this.set("onDragLeave", js.undefined)
+    @scala.inline
+    def setOnDragOver(value: DragEvent[HTMLInputElement] => Unit): Self = this.set("onDragOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    @scala.inline
+    def setOnDragStart(value: DragEvent[HTMLInputElement] => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    @scala.inline
+    def setOnDrop(value: DragEvent[HTMLInputElement] => Unit): Self = this.set("onDrop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrop: Self = this.set("onDrop", js.undefined)
+    @scala.inline
+    def setOnDurationChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onDurationChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDurationChange: Self = this.set("onDurationChange", js.undefined)
+    @scala.inline
+    def setOnEmptied(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onEmptied", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEmptied: Self = this.set("onEmptied", js.undefined)
+    @scala.inline
+    def setOnEncrypted(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onEncrypted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEncrypted: Self = this.set("onEncrypted", js.undefined)
+    @scala.inline
+    def setOnEnded(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onEnded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    @scala.inline
+    def setOnError(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnErrorClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onErrorClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnErrorClick: Self = this.set("onErrorClick", js.undefined)
+    @scala.inline
+    def setOnExtraClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onExtraClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnExtraClick: Self = this.set("onExtraClick", js.undefined)
+    @scala.inline
+    def setOnInput(value: FormEvent[HTMLInputElement] => Unit): Self = this.set("onInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnInvalid(value: FormEvent[HTMLInputElement] => Unit): Self = this.set("onInvalid", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInvalid: Self = this.set("onInvalid", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: KeyboardEvent[HTMLInputElement] => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: KeyboardEvent[HTMLInputElement] => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnKeyUp(value: KeyboardEvent[HTMLInputElement] => Unit): Self = this.set("onKeyUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyUp: Self = this.set("onKeyUp", js.undefined)
+    @scala.inline
+    def setOnLoad(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnLoadStart(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onLoadStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadStart: Self = this.set("onLoadStart", js.undefined)
+    @scala.inline
+    def setOnLoadedData(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onLoadedData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedData: Self = this.set("onLoadedData", js.undefined)
+    @scala.inline
+    def setOnLoadedMetadata(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onLoadedMetadata", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedMetadata: Self = this.set("onLoadedMetadata", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseOut(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onMouseOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    @scala.inline
+    def setOnMouseOver(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onMouseOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnPaste(value: ClipboardEvent[HTMLInputElement] => Unit): Self = this.set("onPaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setOnPause(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    @scala.inline
+    def setOnPlay(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    @scala.inline
+    def setOnPlaying(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onPlaying", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlaying: Self = this.set("onPlaying", js.undefined)
+    @scala.inline
+    def setOnPointerCancel(value: PointerEvent[HTMLInputElement] => Unit): Self = this.set("onPointerCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerCancel: Self = this.set("onPointerCancel", js.undefined)
+    @scala.inline
+    def setOnPointerDown(value: PointerEvent[HTMLInputElement] => Unit): Self = this.set("onPointerDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerDown: Self = this.set("onPointerDown", js.undefined)
+    @scala.inline
+    def setOnPointerEnter(value: PointerEvent[HTMLInputElement] => Unit): Self = this.set("onPointerEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerEnter: Self = this.set("onPointerEnter", js.undefined)
+    @scala.inline
+    def setOnPointerLeave(value: PointerEvent[HTMLInputElement] => Unit): Self = this.set("onPointerLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerLeave: Self = this.set("onPointerLeave", js.undefined)
+    @scala.inline
+    def setOnPointerMove(value: PointerEvent[HTMLInputElement] => Unit): Self = this.set("onPointerMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerMove: Self = this.set("onPointerMove", js.undefined)
+    @scala.inline
+    def setOnPointerOut(value: PointerEvent[HTMLInputElement] => Unit): Self = this.set("onPointerOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOut: Self = this.set("onPointerOut", js.undefined)
+    @scala.inline
+    def setOnPointerOver(value: PointerEvent[HTMLInputElement] => Unit): Self = this.set("onPointerOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOver: Self = this.set("onPointerOver", js.undefined)
+    @scala.inline
+    def setOnPointerUp(value: PointerEvent[HTMLInputElement] => Unit): Self = this.set("onPointerUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerUp: Self = this.set("onPointerUp", js.undefined)
+    @scala.inline
+    def setOnProgress(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onProgress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    @scala.inline
+    def setOnRateChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onRateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRateChange: Self = this.set("onRateChange", js.undefined)
+    @scala.inline
+    def setOnReset(value: FormEvent[HTMLInputElement] => Unit): Self = this.set("onReset", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    @scala.inline
+    def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnSeeked(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onSeeked", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeeked: Self = this.set("onSeeked", js.undefined)
+    @scala.inline
+    def setOnSeeking(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onSeeking", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeeking: Self = this.set("onSeeking", js.undefined)
+    @scala.inline
+    def setOnSelect(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnStalled(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onStalled", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStalled: Self = this.set("onStalled", js.undefined)
+    @scala.inline
+    def setOnSubmit(value: FormEvent[HTMLInputElement] => Unit): Self = this.set("onSubmit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    @scala.inline
+    def setOnSuspend(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onSuspend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSuspend: Self = this.set("onSuspend", js.undefined)
+    @scala.inline
+    def setOnTimeUpdate(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onTimeUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTimeUpdate: Self = this.set("onTimeUpdate", js.undefined)
+    @scala.inline
+    def setOnTouchCancel(value: TouchEvent[HTMLInputElement] => Unit): Self = this.set("onTouchCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: TouchEvent[HTMLInputElement] => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: TouchEvent[HTMLInputElement] => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: TouchEvent[HTMLInputElement] => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOnTransitionEnd(value: TransitionEvent[HTMLInputElement] => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    @scala.inline
+    def setOnVolumeChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onVolumeChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnVolumeChange: Self = this.set("onVolumeChange", js.undefined)
+    @scala.inline
+    def setOnWaiting(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = this.set("onWaiting", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWaiting: Self = this.set("onWaiting", js.undefined)
+    @scala.inline
+    def setOnWheel(value: WheelEvent[HTMLInputElement] => Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setOptimum(value: Double): Self = this.set("optimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptimum: Self = this.set("optimum", js.undefined)
+    @scala.inline
+    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setPlaysInline(value: Boolean): Self = this.set("playsInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaysInline: Self = this.set("playsInline", js.undefined)
+    @scala.inline
+    def setPoster(value: String): Self = this.set("poster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoster: Self = this.set("poster", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setPrefixListCls(value: String): Self = this.set("prefixListCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixListCls: Self = this.set("prefixListCls", js.undefined)
+    @scala.inline
+    def setPreload(value: String): Self = this.set("preload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreload: Self = this.set("preload", js.undefined)
+    @scala.inline
+    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setRadioGroup(value: String): Self = this.set("radioGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadioGroup: Self = this.set("radioGroup", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRef(value: LegacyRef[HTMLInputElement]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setRefNull: Self = this.set("ref", null)
+    @scala.inline
+    def setRel(value: String): Self = this.set("rel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRel: Self = this.set("rel", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setResults(value: Double): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReversed: Self = this.set("reversed", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setSandbox(value: String): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setScoped(value: Boolean): Self = this.set("scoped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoped: Self = this.set("scoped", js.undefined)
+    @scala.inline
+    def setScrolling(value: String): Self = this.set("scrolling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrolling: Self = this.set("scrolling", js.undefined)
+    @scala.inline
+    def setSeamless(value: Boolean): Self = this.set("seamless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeamless: Self = this.set("seamless", js.undefined)
+    @scala.inline
+    def setSecurity(value: String): Self = this.set("security", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurity: Self = this.set("security", js.undefined)
+    @scala.inline
+    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setShape(value: String): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSizes(value: String): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizes: Self = this.set("sizes", js.undefined)
+    @scala.inline
+    def setSlot(value: String): Self = this.set("slot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlot: Self = this.set("slot", js.undefined)
+    @scala.inline
+    def setSpan(value: Double): Self = this.set("span", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpan: Self = this.set("span", js.undefined)
+    @scala.inline
+    def setSpellCheck(value: Booleanish): Self = this.set("spellCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellCheck: Self = this.set("spellCheck", js.undefined)
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+    @scala.inline
+    def setSrcDoc(value: String): Self = this.set("srcDoc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcDoc: Self = this.set("srcDoc", js.undefined)
+    @scala.inline
+    def setSrcLang(value: String): Self = this.set("srcLang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcLang: Self = this.set("srcLang", js.undefined)
+    @scala.inline
+    def setSrcSet(value: String): Self = this.set("srcSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcSet: Self = this.set("srcSet", js.undefined)
+    @scala.inline
+    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStep(value: Double | String): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+    @scala.inline
+    def setSuppressContentEditableWarning(value: Boolean): Self = this.set("suppressContentEditableWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressContentEditableWarning: Self = this.set("suppressContentEditableWarning", js.undefined)
+    @scala.inline
+    def setSuppressHydrationWarning(value: Boolean): Self = this.set("suppressHydrationWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressHydrationWarning: Self = this.set("suppressHydrationWarning", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTranslate(value: yes | no): Self = this.set("translate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslate: Self = this.set("translate", js.undefined)
+    @scala.inline
+    def setTypeof(value: String): Self = this.set("typeof", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeof: Self = this.set("typeof", js.undefined)
+    @scala.inline
+    def setUnselectable(value: on | off): Self = this.set("unselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnselectable: Self = this.set("unselectable", js.undefined)
+    @scala.inline
+    def setUseMap(value: String): Self = this.set("useMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseMap: Self = this.set("useMap", js.undefined)
+    @scala.inline
+    def setVocab(value: String): Self = this.set("vocab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocab: Self = this.set("vocab", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWmode(value: String): Self = this.set("wmode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWmode: Self = this.set("wmode", js.undefined)
+    @scala.inline
+    def setWrap(value: String): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+  }
+  
 }
 

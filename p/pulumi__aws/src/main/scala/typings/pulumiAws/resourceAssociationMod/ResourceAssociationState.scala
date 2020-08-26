@@ -19,11 +19,30 @@ trait ResourceAssociationState extends js.Object {
 
 object ResourceAssociationState {
   @scala.inline
-  def apply(resourceArn: Input[String] = null, resourceShareArn: Input[String] = null): ResourceAssociationState = {
+  def apply(): ResourceAssociationState = {
     val __obj = js.Dynamic.literal()
-    if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
-    if (resourceShareArn != null) __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceAssociationState]
   }
+  @scala.inline
+  implicit class ResourceAssociationStateOps[Self <: ResourceAssociationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceArn(value: Input[String]): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("resourceArn", js.undefined)
+    @scala.inline
+    def setResourceShareArn(value: Input[String]): Self = this.set("resourceShareArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceShareArn: Self = this.set("resourceShareArn", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ Pseudo terminals for node.
 | Full name          | pty.js |
 | Keywords           | pty, tty, terminal |
 | # releases         | 0 |
-| # dependents       | 130 |
-| # downloads        | 127465 |
+| # dependents       | 129 |
+| # downloads        | 121077 |
 | # stars            | 8 |
 
 ## Links

@@ -22,10 +22,30 @@ trait ListenerRuleActionFixedResponse extends js.Object {
 
 object ListenerRuleActionFixedResponse {
   @scala.inline
-  def apply(contentType: String, statusCode: String, messageBody: String = null): ListenerRuleActionFixedResponse = {
+  def apply(contentType: String, statusCode: String): ListenerRuleActionFixedResponse = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-    if (messageBody != null) __obj.updateDynamic("messageBody")(messageBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleActionFixedResponse]
   }
+  @scala.inline
+  implicit class ListenerRuleActionFixedResponseOps[Self <: ListenerRuleActionFixedResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatusCode(value: String): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageBody(value: String): Self = this.set("messageBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageBody: Self = this.set("messageBody", js.undefined)
+  }
+  
 }
 

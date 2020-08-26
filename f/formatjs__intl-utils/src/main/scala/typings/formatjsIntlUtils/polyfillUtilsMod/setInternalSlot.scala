@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@formatjs/intl-utils/dist/polyfill-utils", "setInternalSlot")
+@JSImport("@formatjs/intl-utils/lib/src/polyfill-utils", "setInternalSlot")
 @js.native
 object setInternalSlot extends js.Object {
   def apply[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: /* keyof Internal */ String */](

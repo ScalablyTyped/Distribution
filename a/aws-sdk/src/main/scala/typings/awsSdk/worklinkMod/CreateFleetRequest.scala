@@ -26,17 +26,36 @@ trait CreateFleetRequest extends js.Object {
 
 object CreateFleetRequest {
   @scala.inline
-  def apply(
-    FleetName: FleetName,
-    DisplayName: DisplayName = null,
-    OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined,
-    Tags: TagMap = null
-  ): CreateFleetRequest = {
+  def apply(FleetName: FleetName): CreateFleetRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(OptimizeForEndUserLocation)) __obj.updateDynamic("OptimizeForEndUserLocation")(OptimizeForEndUserLocation.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFleetRequest]
   }
+  @scala.inline
+  implicit class CreateFleetRequestOps[Self <: CreateFleetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetName(value: FleetName): Self = this.set("FleetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayName(value: DisplayName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setOptimizeForEndUserLocation(value: Boolean): Self = this.set("OptimizeForEndUserLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptimizeForEndUserLocation: Self = this.set("OptimizeForEndUserLocation", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

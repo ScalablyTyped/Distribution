@@ -6,63 +6,108 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<react-native-elements.react-native-elements.Colors> */
+@js.native
 trait RecursivePartialColorsDisabled extends js.Object {
-  var disabled: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var divider: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var error: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var grey0: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var grey1: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var grey2: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var grey3: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var grey4: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var grey5: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var greyOutline: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var platform: js.UndefOr[RecursivePartialiosprimarAndroid] = js.undefined
-  var primary: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var searchBg: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var secondary: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var success: js.UndefOr[RecursivePartial[String]] = js.undefined
-  var warning: js.UndefOr[RecursivePartial[String]] = js.undefined
+  var disabled: js.UndefOr[RecursivePartial[String]] = js.native
+  var divider: js.UndefOr[RecursivePartial[String]] = js.native
+  var error: js.UndefOr[RecursivePartial[String]] = js.native
+  var grey0: js.UndefOr[RecursivePartial[String]] = js.native
+  var grey1: js.UndefOr[RecursivePartial[String]] = js.native
+  var grey2: js.UndefOr[RecursivePartial[String]] = js.native
+  var grey3: js.UndefOr[RecursivePartial[String]] = js.native
+  var grey4: js.UndefOr[RecursivePartial[String]] = js.native
+  var grey5: js.UndefOr[RecursivePartial[String]] = js.native
+  var greyOutline: js.UndefOr[RecursivePartial[String]] = js.native
+  var platform: js.UndefOr[RecursivePartialiosprimarAndroid] = js.native
+  var primary: js.UndefOr[RecursivePartial[String]] = js.native
+  var searchBg: js.UndefOr[RecursivePartial[String]] = js.native
+  var secondary: js.UndefOr[RecursivePartial[String]] = js.native
+  var success: js.UndefOr[RecursivePartial[String]] = js.native
+  var warning: js.UndefOr[RecursivePartial[String]] = js.native
 }
 
 object RecursivePartialColorsDisabled {
   @scala.inline
-  def apply(
-    disabled: RecursivePartial[String] = null,
-    divider: RecursivePartial[String] = null,
-    error: RecursivePartial[String] = null,
-    grey0: RecursivePartial[String] = null,
-    grey1: RecursivePartial[String] = null,
-    grey2: RecursivePartial[String] = null,
-    grey3: RecursivePartial[String] = null,
-    grey4: RecursivePartial[String] = null,
-    grey5: RecursivePartial[String] = null,
-    greyOutline: RecursivePartial[String] = null,
-    platform: RecursivePartialiosprimarAndroid = null,
-    primary: RecursivePartial[String] = null,
-    searchBg: RecursivePartial[String] = null,
-    secondary: RecursivePartial[String] = null,
-    success: RecursivePartial[String] = null,
-    warning: RecursivePartial[String] = null
-  ): RecursivePartialColorsDisabled = {
+  def apply(): RecursivePartialColorsDisabled = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (grey0 != null) __obj.updateDynamic("grey0")(grey0.asInstanceOf[js.Any])
-    if (grey1 != null) __obj.updateDynamic("grey1")(grey1.asInstanceOf[js.Any])
-    if (grey2 != null) __obj.updateDynamic("grey2")(grey2.asInstanceOf[js.Any])
-    if (grey3 != null) __obj.updateDynamic("grey3")(grey3.asInstanceOf[js.Any])
-    if (grey4 != null) __obj.updateDynamic("grey4")(grey4.asInstanceOf[js.Any])
-    if (grey5 != null) __obj.updateDynamic("grey5")(grey5.asInstanceOf[js.Any])
-    if (greyOutline != null) __obj.updateDynamic("greyOutline")(greyOutline.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (searchBg != null) __obj.updateDynamic("searchBg")(searchBg.asInstanceOf[js.Any])
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecursivePartialColorsDisabled]
   }
+  @scala.inline
+  implicit class RecursivePartialColorsDisabledOps[Self <: RecursivePartialColorsDisabled] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: RecursivePartial[String]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDivider(value: RecursivePartial[String]): Self = this.set("divider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDivider: Self = this.set("divider", js.undefined)
+    @scala.inline
+    def setError(value: RecursivePartial[String]): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setGrey0(value: RecursivePartial[String]): Self = this.set("grey0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrey0: Self = this.set("grey0", js.undefined)
+    @scala.inline
+    def setGrey1(value: RecursivePartial[String]): Self = this.set("grey1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrey1: Self = this.set("grey1", js.undefined)
+    @scala.inline
+    def setGrey2(value: RecursivePartial[String]): Self = this.set("grey2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrey2: Self = this.set("grey2", js.undefined)
+    @scala.inline
+    def setGrey3(value: RecursivePartial[String]): Self = this.set("grey3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrey3: Self = this.set("grey3", js.undefined)
+    @scala.inline
+    def setGrey4(value: RecursivePartial[String]): Self = this.set("grey4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrey4: Self = this.set("grey4", js.undefined)
+    @scala.inline
+    def setGrey5(value: RecursivePartial[String]): Self = this.set("grey5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrey5: Self = this.set("grey5", js.undefined)
+    @scala.inline
+    def setGreyOutline(value: RecursivePartial[String]): Self = this.set("greyOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreyOutline: Self = this.set("greyOutline", js.undefined)
+    @scala.inline
+    def setPlatform(value: RecursivePartialiosprimarAndroid): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setPrimary(value: RecursivePartial[String]): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setSearchBg(value: RecursivePartial[String]): Self = this.set("searchBg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchBg: Self = this.set("searchBg", js.undefined)
+    @scala.inline
+    def setSecondary(value: RecursivePartial[String]): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    @scala.inline
+    def setSuccess(value: RecursivePartial[String]): Self = this.set("success", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+    @scala.inline
+    def setWarning(value: RecursivePartial[String]): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

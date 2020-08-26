@@ -10,6 +10,7 @@ trait KnockoutSubscribable[T] extends KnockoutSubscribableFunctions[T] {
   def extend(requestedExtenders: StringDictionary[js.Any]): KnockoutSubscribable[T] = js.native
   def getSubscriptionsCount(): Double = js.native
   def subscribe(callback: js.Function1[/* newValue */ T, Unit]): KnockoutSubscription = js.native
+  def subscribe(callback: js.Function1[/* newValue */ T, Unit], target: js.UndefOr[scala.Nothing], event: String): KnockoutSubscription = js.native
   def subscribe(callback: js.Function1[/* newValue */ T, Unit], target: js.Any): KnockoutSubscription = js.native
   def subscribe(callback: js.Function1[/* newValue */ T, Unit], target: js.Any, event: String): KnockoutSubscription = js.native
   @JSName("subscribe")

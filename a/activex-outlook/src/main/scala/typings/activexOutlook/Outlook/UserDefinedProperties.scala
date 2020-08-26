@@ -14,6 +14,7 @@ trait UserDefinedProperties extends js.Object {
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Name: String, Type: OlUserPropertyType): UserDefinedProperty = js.native
+  def Add(Name: String, Type: OlUserPropertyType, DisplayFormat: js.UndefOr[scala.Nothing], Formula: js.Any): UserDefinedProperty = js.native
   def Add(Name: String, Type: OlUserPropertyType, DisplayFormat: js.Any): UserDefinedProperty = js.native
   def Add(Name: String, Type: OlUserPropertyType, DisplayFormat: js.Any, Formula: js.Any): UserDefinedProperty = js.native
   def Find(Name: String): UserDefinedProperty = js.native

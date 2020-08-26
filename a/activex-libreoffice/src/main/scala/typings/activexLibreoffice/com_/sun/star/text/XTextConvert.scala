@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** allows converting selections of text to frames or tables. */
+@js.native
 trait XTextConvert extends XInterface {
   /**
     * converts the paragraphs marked in TableRanges into a table.
@@ -24,7 +25,7 @@ trait XTextConvert extends XInterface {
     CellProperties: SeqEquiv[SeqEquiv[PropertyValues]],
     RowProperties: SeqEquiv[PropertyValues],
     TableProperties: PropertyValues
-  ): XTextTable
+  ): XTextTable = js.native
   /**
     * moves the paragraphs from Start to End into a text frame.
     * @param Start start position of frame content
@@ -32,7 +33,7 @@ trait XTextConvert extends XInterface {
     * @param FrameProperties contains the properties of the to-be-created text frame
     * @returns the newly created text frame
     */
-  def convertToTextFrame(Start: XTextRange, End: XTextRange, FrameProperties: PropertyValues): XTextContent
+  def convertToTextFrame(Start: XTextRange, End: XTextRange, FrameProperties: PropertyValues): XTextContent = js.native
 }
 
 object XTextConvert {
@@ -47,5 +48,24 @@ object XTextConvert {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertToTable = js.Any.fromFunction4(convertToTable), convertToTextFrame = js.Any.fromFunction3(convertToTextFrame), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XTextConvert]
   }
+  @scala.inline
+  implicit class XTextConvertOps[Self <: XTextConvert] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConvertToTable(
+      value: (SeqEquiv[SeqEquiv[sequence[XTextRange]]], SeqEquiv[SeqEquiv[PropertyValues]], SeqEquiv[PropertyValues], PropertyValues) => XTextTable
+    ): Self = this.set("convertToTable", js.Any.fromFunction4(value))
+    @scala.inline
+    def setConvertToTextFrame(value: (XTextRange, XTextRange, PropertyValues) => XTextContent): Self = this.set("convertToTextFrame", js.Any.fromFunction3(value))
+  }
+  
 }
 

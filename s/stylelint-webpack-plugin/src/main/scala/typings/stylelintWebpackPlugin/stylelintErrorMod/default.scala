@@ -13,10 +13,6 @@ class default protected () extends Error {
     * @param {Partial<string>} messages
     */
   def this(messages: Partial[String]) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 
 /* static members */

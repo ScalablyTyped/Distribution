@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetUsageStatisticsRequest extends js.Object {
   /**
-    * The criteria to use to filter the query results.
+    * An array of objects, one for each condition to use to filter the query results. If the array contains more than one object, Amazon Macie uses an AND operator to join the conditions specified by the objects.
     */
   var filterBy: js.UndefOr[listOfUsageStatisticsFilter] = js.native
   /**
@@ -26,18 +26,40 @@ trait GetUsageStatisticsRequest extends js.Object {
 
 object GetUsageStatisticsRequest {
   @scala.inline
-  def apply(
-    filterBy: listOfUsageStatisticsFilter = null,
-    maxResults: js.UndefOr[integer] = js.undefined,
-    nextToken: string = null,
-    sortBy: UsageStatisticsSortBy = null
-  ): GetUsageStatisticsRequest = {
+  def apply(): GetUsageStatisticsRequest = {
     val __obj = js.Dynamic.literal()
-    if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsageStatisticsRequest]
   }
+  @scala.inline
+  implicit class GetUsageStatisticsRequestOps[Self <: GetUsageStatisticsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterByVarargs(value: UsageStatisticsFilter*): Self = this.set("filterBy", js.Array(value :_*))
+    @scala.inline
+    def setFilterBy(value: listOfUsageStatisticsFilter): Self = this.set("filterBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterBy: Self = this.set("filterBy", js.undefined)
+    @scala.inline
+    def setMaxResults(value: integer): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setSortBy(value: UsageStatisticsSortBy): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+  }
+  
 }
 

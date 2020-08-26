@@ -11,20 +11,35 @@ trait FeaturizationMethod extends js.Object {
     */
   var FeaturizationMethodName: typings.awsSdk.forecastserviceMod.FeaturizationMethodName = js.native
   /**
-    * The method parameters (key-value pairs). Specify these parameters to override the default values. The following list shows the parameters and their valid values. Bold signifies the default value.    aggregation: sum, avg, first, min, max     frontfill: none     middlefill: zero, nan (not a number)    backfill: zero, nan   
+    * The method parameters (key-value pairs), which are a map of override parameters. Specify these parameters to override the default values. Related Time Series attributes do not accept aggregation parameters. The following list shows the parameters and their valid values for the "filling" featurization method for a Target Time Series dataset. Bold signifies the default value.    aggregation: sum, avg, first, min, max     frontfill: none     middlefill: zero, nan (not a number), value, median, mean, min, max     backfill: zero, nan, value, median, mean, min, max    The following list shows the parameters and their valid values for a Related Time Series featurization method (there are no defaults):    middlefill: zero, value, median, mean, min, max     backfill: zero, value, median, mean, min, max     futurefill: zero, value, median, mean, min, max   
     */
   var FeaturizationMethodParameters: js.UndefOr[typings.awsSdk.forecastserviceMod.FeaturizationMethodParameters] = js.native
 }
 
 object FeaturizationMethod {
   @scala.inline
-  def apply(
-    FeaturizationMethodName: FeaturizationMethodName,
-    FeaturizationMethodParameters: FeaturizationMethodParameters = null
-  ): FeaturizationMethod = {
+  def apply(FeaturizationMethodName: FeaturizationMethodName): FeaturizationMethod = {
     val __obj = js.Dynamic.literal(FeaturizationMethodName = FeaturizationMethodName.asInstanceOf[js.Any])
-    if (FeaturizationMethodParameters != null) __obj.updateDynamic("FeaturizationMethodParameters")(FeaturizationMethodParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeaturizationMethod]
   }
+  @scala.inline
+  implicit class FeaturizationMethodOps[Self <: FeaturizationMethod] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFeaturizationMethodName(value: FeaturizationMethodName): Self = this.set("FeaturizationMethodName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeaturizationMethodParameters(value: FeaturizationMethodParameters): Self = this.set("FeaturizationMethodParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeaturizationMethodParameters: Self = this.set("FeaturizationMethodParameters", js.undefined)
+  }
+  
 }
 

@@ -10,8 +10,8 @@ Create HyperText with JavaScript, on client or server.
 | Full name          | hyperscript |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 112 |
-| # downloads        | 488789 |
+| # dependents       | 113 |
+| # downloads        | 508670 |
 | # stars            | 16 |
 
 ## Links

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * A message class for `'resize'` messages.
   */
-@JSImport("@lumino/widgets/lib/widget", "Widget.ResizeMessage")
+@JSImport("@lumino/widgets/types/widget", "Widget.ResizeMessage")
 @js.native
 class ResizeMessage protected () extends Message {
   /**
@@ -40,7 +40,7 @@ class ResizeMessage protected () extends Message {
 /**
   * The namespace for the `ResizeMessage` class statics.
   */
-@JSImport("@lumino/widgets/lib/widget", "Widget.ResizeMessage")
+@JSImport("@lumino/widgets/types/widget", "Widget.ResizeMessage")
 @js.native
 object ResizeMessage extends js.Object {
   /**

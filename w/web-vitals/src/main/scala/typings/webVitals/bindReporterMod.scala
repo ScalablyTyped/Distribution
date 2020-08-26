@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object bindReporterMod extends js.Object {
   def bindReporter(callback: js.Function, metric: Metric): js.Function0[Unit] = js.native
+  def bindReporter(callback: js.Function, metric: Metric, po: js.UndefOr[scala.Nothing], observeAllUpdates: Boolean): js.Function0[Unit] = js.native
   def bindReporter(callback: js.Function, metric: Metric, po: PerformanceObserver): js.Function0[Unit] = js.native
   def bindReporter(callback: js.Function, metric: Metric, po: PerformanceObserver, observeAllUpdates: Boolean): js.Function0[Unit] = js.native
 }

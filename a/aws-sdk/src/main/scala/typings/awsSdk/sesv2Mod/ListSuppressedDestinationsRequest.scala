@@ -30,20 +30,44 @@ trait ListSuppressedDestinationsRequest extends js.Object {
 
 object ListSuppressedDestinationsRequest {
   @scala.inline
-  def apply(
-    EndDate: Timestamp = null,
-    NextToken: NextToken = null,
-    PageSize: js.UndefOr[MaxItems] = js.undefined,
-    Reasons: SuppressionListReasons = null,
-    StartDate: Timestamp = null
-  ): ListSuppressedDestinationsRequest = {
+  def apply(): ListSuppressedDestinationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
-    if (Reasons != null) __obj.updateDynamic("Reasons")(Reasons.asInstanceOf[js.Any])
-    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSuppressedDestinationsRequest]
   }
+  @scala.inline
+  implicit class ListSuppressedDestinationsRequestOps[Self <: ListSuppressedDestinationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndDate(value: Timestamp): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPageSize(value: MaxItems): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    @scala.inline
+    def setReasonsVarargs(value: SuppressionListReason*): Self = this.set("Reasons", js.Array(value :_*))
+    @scala.inline
+    def setReasons(value: SuppressionListReasons): Self = this.set("Reasons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasons: Self = this.set("Reasons", js.undefined)
+    @scala.inline
+    def setStartDate(value: Timestamp): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for matcher
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Simple wildcard matching
@@ -11,8 +11,8 @@ Simple wildcard matching
 | Full name          | matcher |
 | Keywords           | matcher, matching, match, regex, regexp, regular, expression, wildcard, pattern, string, filter, glob, globber, globbing, minimatch |
 | # releases         | 5 |
-| # dependents       | 75 |
-| # downloads        | 37495508 |
+| # dependents       | 76 |
+| # downloads        | 38659544 |
 | # stars            | 4 |
 
 ## Links

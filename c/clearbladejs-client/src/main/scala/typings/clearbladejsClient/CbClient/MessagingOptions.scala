@@ -4,30 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MessagingOptions extends CommonMessagingProperties {
-  var qos: js.UndefOr[MessagingQOS] = js.undefined
+  var qos: js.UndefOr[MessagingQOS] = js.native
 }
 
 object MessagingOptions {
   @scala.inline
-  def apply(
-    cleanSession: js.UndefOr[Boolean] = js.undefined,
-    hosts: String = null,
-    onFailure: js.Function = null,
-    onSuccess: js.Function = null,
-    ports: String = null,
-    qos: MessagingQOS = null,
-    useSSL: js.UndefOr[Boolean] = js.undefined
-  ): MessagingOptions = {
+  def apply(): MessagingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession.get.asInstanceOf[js.Any])
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingOptions]
   }
+  @scala.inline
+  implicit class MessagingOptionsOps[Self <: MessagingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQos(value: MessagingQOS): Self = this.set("qos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQos: Self = this.set("qos", js.undefined)
+  }
+  
 }
 

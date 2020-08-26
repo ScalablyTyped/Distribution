@@ -36,6 +36,7 @@ trait CSG_
   def intersect(csg: js.Array[CSG]): CSG = js.native
   def intersect(csg: CSG): CSG = js.native
   def intersectSub(csg: CSG): CSG = js.native
+  def intersectSub(csg: CSG, retesselate: js.UndefOr[scala.Nothing], canonicalize: Boolean): CSG = js.native
   def intersectSub(csg: CSG, retesselate: Boolean): CSG = js.native
   def intersectSub(csg: CSG, retesselate: Boolean, canonicalize: Boolean): CSG = js.native
   def invert(): CSG = js.native
@@ -60,6 +61,7 @@ trait CSG_
   def union(csg: CSG): CSG = js.native
   def unionForNonIntersecting(csg: CSG): CSG = js.native
   def unionSub(csg: CSG): CSG = js.native
+  def unionSub(csg: CSG, retesselate: js.UndefOr[scala.Nothing], canonicalize: Boolean): CSG = js.native
   def unionSub(csg: CSG, retesselate: Boolean): CSG = js.native
   def unionSub(csg: CSG, retesselate: Boolean, canonicalize: Boolean): CSG = js.native
 }

@@ -352,6 +352,7 @@ class Screen protected () extends NodeWithEvents {
     * Spawn a process in the foreground, return to blessed app after exit.
     */
   def spawn(file: String): ChildProcess = js.native
+  def spawn(file: String, args: js.UndefOr[scala.Nothing], options: NodeChildProcessExecOptions): ChildProcess = js.native
   def spawn(file: String, args: js.Array[String]): ChildProcess = js.native
   def spawn(file: String, args: js.Array[String], options: NodeChildProcessExecOptions): ChildProcess = js.native
 }

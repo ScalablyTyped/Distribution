@@ -11,8 +11,8 @@ Prepare a node environment to require files with different extensions.
 | Full name          | rechoir |
 | Keywords           | require, loader, extension, extensions, prepare |
 | # releases         | 2 |
-| # dependents       | 40 |
-| # downloads        | 187345151 |
+| # dependents       | 41 |
+| # downloads        | 191066953 |
 | # stars            | 1 |
 
 ## Links

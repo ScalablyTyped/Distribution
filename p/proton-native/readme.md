@@ -10,9 +10,9 @@ React Native for the desktop, cross compatible
 | ------------------ | :-------------: |
 | Full name          | proton-native |
 | Keywords           | - |
-| # releases         | 34 |
+| # releases         | 35 |
 | # dependents       | 0 |
-| # downloads        | 9387 |
+| # downloads        | 9435 |
 | # stars            | 0 |
 
 ## Links

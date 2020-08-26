@@ -12,7 +12,7 @@ A platform-agnostic drawer layout. Pure JavaScript implementation on iOS and nat
 | Keywords           | react, react-native, ios, android, drawer, layout, menu |
 | # releases         | 1 |
 | # dependents       | 40 |
-| # downloads        | 3171057 |
+| # downloads        | 3051407 |
 | # stars            | 2 |
 
 ## Links

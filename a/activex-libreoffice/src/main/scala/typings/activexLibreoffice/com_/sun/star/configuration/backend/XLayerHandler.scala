@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * receives a description of a configuration layer as a sequence of events.
   * @since OOo 1.1.2
   */
+@js.native
 trait XLayerHandler extends XInterface {
   /**
     * receives notification that a new item is started.
@@ -26,7 +27,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif there already was a change to a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addOrReplaceNode(aName: String, aAttributes: Double): Unit
+  def addOrReplaceNode(aName: String, aAttributes: Double): Unit = js.native
   /**
     * receives notification that a new item based on a particular template is started.
     *
@@ -41,7 +42,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif there already was a change to a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addOrReplaceNodeFromTemplate(aName: String, aTemplate: TemplateIdentifier, aAttributes: Double): Unit
+  def addOrReplaceNodeFromTemplate(aName: String, aTemplate: TemplateIdentifier, aAttributes: Double): Unit = js.native
   /**
     * receives notification that a property having a `VOID` value is added to the current node.
     *
@@ -53,7 +54,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't an extensible node in progress currentlyif a property with that nam
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addProperty(aName: String, aAttributes: Double, aType: `type`): Unit
+  def addProperty(aName: String, aAttributes: Double, aType: `type`): Unit = js.native
   /**
     * receives notification that a property having a non- `VOID` value is added to the current node.
     *
@@ -65,7 +66,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't an extensible node in progress currentlyif a property with that nam
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addPropertyWithValue(aName: String, aAttributes: Double, aValue: js.Any): Unit
+  def addPropertyWithValue(aName: String, aAttributes: Double, aValue: js.Any): Unit = js.native
   /**
     * receives notification that a node is dropped from a set.
     *
@@ -74,7 +75,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif there already was a change to a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def dropNode(aName: String): Unit
+  def dropNode(aName: String): Unit = js.native
   /**
     * receives notification that a layer description is complete.
     *
@@ -82,7 +83,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the layerif there is a unfinished subnode in progre
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endLayer(): Unit
+  def endLayer(): Unit = js.native
   /**
     * receives notification that a node description is complete.
     *
@@ -91,7 +92,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the nodeif no node is started at all**Not every imp
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endNode(): Unit
+  def endNode(): Unit = js.native
   /**
     * receives notification that a property description is complete.
     *
@@ -99,7 +100,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the propertyif no property is started at all**Not e
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endProperty(): Unit
+  def endProperty(): Unit = js.native
   /**
     * receives notification that a description of a node override is started.
     *
@@ -112,7 +113,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a layer in progressif there already was a change to that nodeif the
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def overrideNode(aName: String, aAttributes: Double, bClear: Boolean): Unit
+  def overrideNode(aName: String, aAttributes: Double, bClear: Boolean): Unit = js.native
   /**
     * receives notification that an existing property is modified.
     *
@@ -125,7 +126,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif there already wa
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def overrideProperty(aName: String, aAttributes: Double, aType: `type`, bClear: Boolean): Unit
+  def overrideProperty(aName: String, aAttributes: Double, aType: `type`, bClear: Boolean): Unit = js.native
   /**
     * receives notification that the value of the current property is overridden.
     * @param aValue specifies the new value of the property.  The value must match the type of the current property. If the property does not have the {@link
@@ -133,7 +134,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property in progress currentlyif there already was a change to th
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValue(aValue: js.Any): Unit
+  def setPropertyValue(aValue: js.Any): Unit = js.native
   /**
     * receives notification that the value of the current localized property is overridden for a specific locale .
     * @param aValue specifies the new value of the property.  The value must match the type of the current property. If the property does not have the {@link
@@ -142,7 +143,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property in progress currentlyif the current property isn't local
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValueForLocale(aValue: js.Any, aLocale: String): Unit
+  def setPropertyValueForLocale(aValue: js.Any, aLocale: String): Unit = js.native
   /**
     * receives notification that a layer description is started for a component.
     *
@@ -150,7 +151,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there is an unfinished layer in progress
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def startLayer(): Unit
+  def startLayer(): Unit = js.native
 }
 
 object XLayerHandler {
@@ -176,5 +177,44 @@ object XLayerHandler {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addOrReplaceNode = js.Any.fromFunction2(addOrReplaceNode), addOrReplaceNodeFromTemplate = js.Any.fromFunction3(addOrReplaceNodeFromTemplate), addProperty = js.Any.fromFunction3(addProperty), addPropertyWithValue = js.Any.fromFunction3(addPropertyWithValue), dropNode = js.Any.fromFunction1(dropNode), endLayer = js.Any.fromFunction0(endLayer), endNode = js.Any.fromFunction0(endNode), endProperty = js.Any.fromFunction0(endProperty), overrideNode = js.Any.fromFunction3(overrideNode), overrideProperty = js.Any.fromFunction4(overrideProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyValue = js.Any.fromFunction1(setPropertyValue), setPropertyValueForLocale = js.Any.fromFunction2(setPropertyValueForLocale), startLayer = js.Any.fromFunction0(startLayer))
     __obj.asInstanceOf[XLayerHandler]
   }
+  @scala.inline
+  implicit class XLayerHandlerOps[Self <: XLayerHandler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddOrReplaceNode(value: (String, Double) => Unit): Self = this.set("addOrReplaceNode", js.Any.fromFunction2(value))
+    @scala.inline
+    def setAddOrReplaceNodeFromTemplate(value: (String, TemplateIdentifier, Double) => Unit): Self = this.set("addOrReplaceNodeFromTemplate", js.Any.fromFunction3(value))
+    @scala.inline
+    def setAddProperty(value: (String, Double, `type`) => Unit): Self = this.set("addProperty", js.Any.fromFunction3(value))
+    @scala.inline
+    def setAddPropertyWithValue(value: (String, Double, js.Any) => Unit): Self = this.set("addPropertyWithValue", js.Any.fromFunction3(value))
+    @scala.inline
+    def setDropNode(value: String => Unit): Self = this.set("dropNode", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEndLayer(value: () => Unit): Self = this.set("endLayer", js.Any.fromFunction0(value))
+    @scala.inline
+    def setEndNode(value: () => Unit): Self = this.set("endNode", js.Any.fromFunction0(value))
+    @scala.inline
+    def setEndProperty(value: () => Unit): Self = this.set("endProperty", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOverrideNode(value: (String, Double, Boolean) => Unit): Self = this.set("overrideNode", js.Any.fromFunction3(value))
+    @scala.inline
+    def setOverrideProperty(value: (String, Double, `type`, Boolean) => Unit): Self = this.set("overrideProperty", js.Any.fromFunction4(value))
+    @scala.inline
+    def setSetPropertyValue(value: js.Any => Unit): Self = this.set("setPropertyValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = this.set("setPropertyValueForLocale", js.Any.fromFunction2(value))
+    @scala.inline
+    def setStartLayer(value: () => Unit): Self = this.set("startLayer", js.Any.fromFunction0(value))
+  }
+  
 }
 

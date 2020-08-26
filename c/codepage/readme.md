@@ -10,9 +10,9 @@ pure-JS library to handle codepages
 | ------------------ | :-------------: |
 | Full name          | codepage |
 | Keywords           | codepage, iconv, convert, strings |
-| # releases         | 8 |
-| # dependents       | 120 |
-| # downloads        | 17444528 |
+| # releases         | 7 |
+| # dependents       | 123 |
+| # downloads        | 17866322 |
 | # stars            | 2 |
 
 ## Links

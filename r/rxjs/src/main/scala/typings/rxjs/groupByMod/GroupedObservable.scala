@@ -14,6 +14,6 @@ class GroupedObservable[K, T] protected () extends Observable[T] {
   def this(key: K, groupSubject: Subject[T], refCountSubscription: RefCountSubscription) = this()
   var groupSubject: js.Any = js.native
   var key: K = js.native
-  var refCountSubscription: js.UndefOr[js.Any] = js.native
+  var refCountSubscription: js.Any = js.native
 }
 

@@ -19,7 +19,6 @@ trait ExtJS
      with IExtJSObservable
      with IExtJSStore
      with IExtJSCore {
-  def assertMaxNumberOfGlobalExtOverrides(maxNumber: Double): Unit = js.native
   def assertMaxNumberOfGlobalExtOverrides(maxNumber: Double, description: js.Any): Unit = js.native
   def assertNoGlobalExtOverrides(): Unit = js.native
   def assertNoGlobalExtOverrides(description: String): Unit = js.native
@@ -32,6 +31,14 @@ trait ExtJS
   def getTotalLayoutCounter(): Double = js.native
   /* InferMemberOverrides */
   override def waitForEvent(observable: js.Any, event: String, callback: js.Function): Unit = js.native
+  /* InferMemberOverrides */
+  override def waitForEvent(
+    observable: js.Any,
+    event: String,
+    callback: js.Function,
+    scope: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def waitForEvent(observable: js.Any, event: String, callback: js.Function, scope: js.Any): Unit = js.native
   /* InferMemberOverrides */

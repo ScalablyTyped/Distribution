@@ -15,13 +15,14 @@ import scala.scalajs.js.annotation._
   * @see XDispatch
   * @see XInterceptorInfo
   */
+@js.native
 trait XDispatchProviderInterception extends XInterface {
   /**
     * registers an {@link XDispatchProviderInterceptor} , which will become the first interceptor in the chain of registered interceptors.
     * @param Interceptor the interceptor which wishes to be registered
     * @see XDispatchProviderInterception.releaseDispatchProviderInterceptor()
     */
-  def registerDispatchProviderInterceptor(Interceptor: XDispatchProviderInterceptor): Unit
+  def registerDispatchProviderInterceptor(Interceptor: XDispatchProviderInterceptor): Unit = js.native
   /**
     * removes an {@link XDispatchProviderInterceptor} which was previously registered
     *
@@ -29,7 +30,7 @@ trait XDispatchProviderInterception extends XInterface {
     * @param Interceptor the interceptor which wishes to be unregistered
     * @see XDispatchProviderInterception.registerDispatchProviderInterceptor()
     */
-  def releaseDispatchProviderInterceptor(Interceptor: XDispatchProviderInterceptor): Unit
+  def releaseDispatchProviderInterceptor(Interceptor: XDispatchProviderInterceptor): Unit = js.native
 }
 
 object XDispatchProviderInterception {
@@ -44,5 +45,22 @@ object XDispatchProviderInterception {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), registerDispatchProviderInterceptor = js.Any.fromFunction1(registerDispatchProviderInterceptor), release = js.Any.fromFunction0(release), releaseDispatchProviderInterceptor = js.Any.fromFunction1(releaseDispatchProviderInterceptor))
     __obj.asInstanceOf[XDispatchProviderInterception]
   }
+  @scala.inline
+  implicit class XDispatchProviderInterceptionOps[Self <: XDispatchProviderInterception] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegisterDispatchProviderInterceptor(value: XDispatchProviderInterceptor => Unit): Self = this.set("registerDispatchProviderInterceptor", js.Any.fromFunction1(value))
+    @scala.inline
+    def setReleaseDispatchProviderInterceptor(value: XDispatchProviderInterceptor => Unit): Self = this.set("releaseDispatchProviderInterceptor", js.Any.fromFunction1(value))
+  }
+  
 }
 

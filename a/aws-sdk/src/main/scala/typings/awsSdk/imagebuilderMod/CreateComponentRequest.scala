@@ -54,28 +54,60 @@ trait CreateComponentRequest extends js.Object {
 
 object CreateComponentRequest {
   @scala.inline
-  def apply(
-    clientToken: ClientToken,
-    name: ResourceName,
-    platform: Platform,
-    semanticVersion: VersionNumber,
-    changeDescription: NonEmptyString = null,
-    data: InlineComponentData = null,
-    description: NonEmptyString = null,
-    kmsKeyId: NonEmptyString = null,
-    supportedOsVersions: OsVersionList = null,
-    tags: TagMap = null,
-    uri: Uri = null
-  ): CreateComponentRequest = {
+  def apply(clientToken: ClientToken, name: ResourceName, platform: Platform, semanticVersion: VersionNumber): CreateComponentRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], semanticVersion = semanticVersion.asInstanceOf[js.Any])
-    if (changeDescription != null) __obj.updateDynamic("changeDescription")(changeDescription.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (supportedOsVersions != null) __obj.updateDynamic("supportedOsVersions")(supportedOsVersions.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateComponentRequest]
   }
+  @scala.inline
+  implicit class CreateComponentRequestOps[Self <: CreateComponentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSemanticVersion(value: VersionNumber): Self = this.set("semanticVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChangeDescription(value: NonEmptyString): Self = this.set("changeDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeDescription: Self = this.set("changeDescription", js.undefined)
+    @scala.inline
+    def setData(value: InlineComponentData): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDescription(value: NonEmptyString): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: NonEmptyString): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setSupportedOsVersionsVarargs(value: OsVersion*): Self = this.set("supportedOsVersions", js.Array(value :_*))
+    @scala.inline
+    def setSupportedOsVersions(value: OsVersionList): Self = this.set("supportedOsVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedOsVersions: Self = this.set("supportedOsVersions", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUri(value: Uri): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

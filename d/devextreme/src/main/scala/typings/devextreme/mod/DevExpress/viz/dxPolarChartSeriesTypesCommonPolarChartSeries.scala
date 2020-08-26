@@ -2,7 +2,7 @@ package typings.devextreme.mod.DevExpress.viz
 
 import typings.devextreme.anon.BorderColor
 import typings.devextreme.anon.ColorDashStyle
-import typings.devextreme.anon.DisplayMode
+import typings.devextreme.anon.EdgeLength
 import typings.devextreme.devextremeStrings.allArgumentPoints
 import typings.devextreme.devextremeStrings.allSeriesPoints
 import typings.devextreme.devextremeStrings.dash
@@ -18,115 +18,178 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxPolarChartSeriesTypesCommonPolarChartSeries extends js.Object {
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.argumentField */
-  var argumentField: js.UndefOr[String] = js.undefined
+  var argumentField: js.UndefOr[String] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.barPadding */
-  var barPadding: js.UndefOr[Double] = js.undefined
+  var barPadding: js.UndefOr[Double] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.barWidth */
-  var barWidth: js.UndefOr[Double] = js.undefined
+  var barWidth: js.UndefOr[Double] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.border */
-  var border: js.UndefOr[ColorDashStyle] = js.undefined
+  var border: js.UndefOr[ColorDashStyle] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.closed */
-  var closed: js.UndefOr[Boolean] = js.undefined
+  var closed: js.UndefOr[Boolean] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.color */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.dashStyle */
-  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
+  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverMode */
   var hoverMode: js.UndefOr[
     allArgumentPoints | allSeriesPoints | excludePoints | includePoints | nearestPoint | none | onlyPoint
-  ] = js.undefined
+  ] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle */
-  var hoverStyle: js.UndefOr[BorderColor] = js.undefined
+  var hoverStyle: js.UndefOr[BorderColor] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.ignoreEmptyPoints */
-  var ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined
+  var ignoreEmptyPoints: js.UndefOr[Boolean] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.label */
-  var label: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesLabel] = js.undefined
+  var label: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesLabel] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.maxLabelCount */
-  var maxLabelCount: js.UndefOr[Double] = js.undefined
+  var maxLabelCount: js.UndefOr[Double] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.minBarSize */
-  var minBarSize: js.UndefOr[Double] = js.undefined
+  var minBarSize: js.UndefOr[Double] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.opacity */
-  var opacity: js.UndefOr[Double] = js.undefined
+  var opacity: js.UndefOr[Double] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.point */
-  var point: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesPoint] = js.undefined
+  var point: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesPoint] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionMode */
   var selectionMode: js.UndefOr[
     allArgumentPoints | allSeriesPoints | excludePoints | includePoints | none | onlyPoint
-  ] = js.undefined
+  ] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle */
-  var selectionStyle: js.UndefOr[BorderColor] = js.undefined
+  var selectionStyle: js.UndefOr[BorderColor] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.showInLegend */
-  var showInLegend: js.UndefOr[Boolean] = js.undefined
+  var showInLegend: js.UndefOr[Boolean] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.stack */
-  var stack: js.UndefOr[String] = js.undefined
+  var stack: js.UndefOr[String] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.tagField */
-  var tagField: js.UndefOr[String] = js.undefined
+  var tagField: js.UndefOr[String] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar */
-  var valueErrorBar: js.UndefOr[DisplayMode] = js.undefined
+  var valueErrorBar: js.UndefOr[EdgeLength] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.valueField */
-  var valueField: js.UndefOr[String] = js.undefined
+  var valueField: js.UndefOr[String] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.visible */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /** @name dxPolarChartSeriesTypes.CommonPolarChartSeries.width */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object dxPolarChartSeriesTypesCommonPolarChartSeries {
   @scala.inline
-  def apply(
-    argumentField: String = null,
-    barPadding: js.UndefOr[Double] = js.undefined,
-    barWidth: js.UndefOr[Double] = js.undefined,
-    border: ColorDashStyle = null,
-    closed: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    dashStyle: dash | dot | longDash | solid = null,
-    hoverMode: allArgumentPoints | allSeriesPoints | excludePoints | includePoints | nearestPoint | none | onlyPoint = null,
-    hoverStyle: BorderColor = null,
-    ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined,
-    label: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel = null,
-    maxLabelCount: js.UndefOr[Double] = js.undefined,
-    minBarSize: js.UndefOr[Double] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    point: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint = null,
-    selectionMode: allArgumentPoints | allSeriesPoints | excludePoints | includePoints | none | onlyPoint = null,
-    selectionStyle: BorderColor = null,
-    showInLegend: js.UndefOr[Boolean] = js.undefined,
-    stack: String = null,
-    tagField: String = null,
-    valueErrorBar: DisplayMode = null,
-    valueField: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): dxPolarChartSeriesTypesCommonPolarChartSeries = {
+  def apply(): dxPolarChartSeriesTypesCommonPolarChartSeries = {
     val __obj = js.Dynamic.literal()
-    if (argumentField != null) __obj.updateDynamic("argumentField")(argumentField.asInstanceOf[js.Any])
-    if (!js.isUndefined(barPadding)) __obj.updateDynamic("barPadding")(barPadding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(barWidth)) __obj.updateDynamic("barWidth")(barWidth.get.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (hoverMode != null) __obj.updateDynamic("hoverMode")(hoverMode.asInstanceOf[js.Any])
-    if (hoverStyle != null) __obj.updateDynamic("hoverStyle")(hoverStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmptyPoints)) __obj.updateDynamic("ignoreEmptyPoints")(ignoreEmptyPoints.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLabelCount)) __obj.updateDynamic("maxLabelCount")(maxLabelCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minBarSize)) __obj.updateDynamic("minBarSize")(minBarSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (tagField != null) __obj.updateDynamic("tagField")(tagField.asInstanceOf[js.Any])
-    if (valueErrorBar != null) __obj.updateDynamic("valueErrorBar")(valueErrorBar.asInstanceOf[js.Any])
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartSeriesTypesCommonPolarChartSeries]
   }
+  @scala.inline
+  implicit class dxPolarChartSeriesTypesCommonPolarChartSeriesOps[Self <: dxPolarChartSeriesTypesCommonPolarChartSeries] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgumentField(value: String): Self = this.set("argumentField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgumentField: Self = this.set("argumentField", js.undefined)
+    @scala.inline
+    def setBarPadding(value: Double): Self = this.set("barPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarPadding: Self = this.set("barPadding", js.undefined)
+    @scala.inline
+    def setBarWidth(value: Double): Self = this.set("barWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarWidth: Self = this.set("barWidth", js.undefined)
+    @scala.inline
+    def setBorder(value: ColorDashStyle): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setClosed(value: Boolean): Self = this.set("closed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosed: Self = this.set("closed", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDashStyle(value: dash | dot | longDash | solid): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    @scala.inline
+    def setHoverMode(
+      value: allArgumentPoints | allSeriesPoints | excludePoints | includePoints | nearestPoint | none | onlyPoint
+    ): Self = this.set("hoverMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverMode: Self = this.set("hoverMode", js.undefined)
+    @scala.inline
+    def setHoverStyle(value: BorderColor): Self = this.set("hoverStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverStyle: Self = this.set("hoverStyle", js.undefined)
+    @scala.inline
+    def setIgnoreEmptyPoints(value: Boolean): Self = this.set("ignoreEmptyPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreEmptyPoints: Self = this.set("ignoreEmptyPoints", js.undefined)
+    @scala.inline
+    def setLabel(value: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMaxLabelCount(value: Double): Self = this.set("maxLabelCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLabelCount: Self = this.set("maxLabelCount", js.undefined)
+    @scala.inline
+    def setMinBarSize(value: Double): Self = this.set("minBarSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinBarSize: Self = this.set("minBarSize", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPoint(value: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint): Self = this.set("point", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoint: Self = this.set("point", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: allArgumentPoints | allSeriesPoints | excludePoints | includePoints | none | onlyPoint): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setSelectionStyle(value: BorderColor): Self = this.set("selectionStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionStyle: Self = this.set("selectionStyle", js.undefined)
+    @scala.inline
+    def setShowInLegend(value: Boolean): Self = this.set("showInLegend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowInLegend: Self = this.set("showInLegend", js.undefined)
+    @scala.inline
+    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+    @scala.inline
+    def setTagField(value: String): Self = this.set("tagField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagField: Self = this.set("tagField", js.undefined)
+    @scala.inline
+    def setValueErrorBar(value: EdgeLength): Self = this.set("valueErrorBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueErrorBar: Self = this.set("valueErrorBar", js.undefined)
+    @scala.inline
+    def setValueField(value: String): Self = this.set("valueField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueField: Self = this.set("valueField", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

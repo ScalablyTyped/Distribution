@@ -39,16 +39,34 @@ trait SchemaSegmentFilter extends js.Object {
 
 object SchemaSegmentFilter {
   @scala.inline
-  def apply(
-    not: js.UndefOr[Boolean] = js.undefined,
-    sequenceSegment: SchemaSequenceSegment = null,
-    simpleSegment: SchemaSimpleSegment = null
-  ): SchemaSegmentFilter = {
+  def apply(): SchemaSegmentFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not.get.asInstanceOf[js.Any])
-    if (sequenceSegment != null) __obj.updateDynamic("sequenceSegment")(sequenceSegment.asInstanceOf[js.Any])
-    if (simpleSegment != null) __obj.updateDynamic("simpleSegment")(simpleSegment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSegmentFilter]
   }
+  @scala.inline
+  implicit class SchemaSegmentFilterOps[Self <: SchemaSegmentFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNot(value: Boolean): Self = this.set("not", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNot: Self = this.set("not", js.undefined)
+    @scala.inline
+    def setSequenceSegment(value: SchemaSequenceSegment): Self = this.set("sequenceSegment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceSegment: Self = this.set("sequenceSegment", js.undefined)
+    @scala.inline
+    def setSimpleSegment(value: SchemaSimpleSegment): Self = this.set("simpleSegment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimpleSegment: Self = this.set("simpleSegment", js.undefined)
+  }
+  
 }
 

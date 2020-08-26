@@ -36,20 +36,48 @@ trait SchemaPerson extends js.Object {
 
 object SchemaPerson {
   @scala.inline
-  def apply(
-    emailAddresses: js.Array[SchemaEmailAddress] = null,
-    name: String = null,
-    obfuscatedId: String = null,
-    personNames: js.Array[SchemaName] = null,
-    photos: js.Array[SchemaPhoto] = null
-  ): SchemaPerson = {
+  def apply(): SchemaPerson = {
     val __obj = js.Dynamic.literal()
-    if (emailAddresses != null) __obj.updateDynamic("emailAddresses")(emailAddresses.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (obfuscatedId != null) __obj.updateDynamic("obfuscatedId")(obfuscatedId.asInstanceOf[js.Any])
-    if (personNames != null) __obj.updateDynamic("personNames")(personNames.asInstanceOf[js.Any])
-    if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPerson]
   }
+  @scala.inline
+  implicit class SchemaPersonOps[Self <: SchemaPerson] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailAddressesVarargs(value: SchemaEmailAddress*): Self = this.set("emailAddresses", js.Array(value :_*))
+    @scala.inline
+    def setEmailAddresses(value: js.Array[SchemaEmailAddress]): Self = this.set("emailAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddresses: Self = this.set("emailAddresses", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setObfuscatedId(value: String): Self = this.set("obfuscatedId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObfuscatedId: Self = this.set("obfuscatedId", js.undefined)
+    @scala.inline
+    def setPersonNamesVarargs(value: SchemaName*): Self = this.set("personNames", js.Array(value :_*))
+    @scala.inline
+    def setPersonNames(value: js.Array[SchemaName]): Self = this.set("personNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersonNames: Self = this.set("personNames", js.undefined)
+    @scala.inline
+    def setPhotosVarargs(value: SchemaPhoto*): Self = this.set("photos", js.Array(value :_*))
+    @scala.inline
+    def setPhotos(value: js.Array[SchemaPhoto]): Self = this.set("photos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhotos: Self = this.set("photos", js.undefined)
+  }
+  
 }
 

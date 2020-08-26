@@ -5,7 +5,6 @@ import typings.protractor.anon.TypeofBy
 import typings.protractor.browserMod.ElementHelper
 import typings.protractor.browserMod.ProtractorBrowser
 import typings.protractor.locatorsMod.Locator
-import typings.seleniumWebdriver.mod.IWebElementId
 import typings.seleniumWebdriver.mod.WebElement
 import typings.seleniumWebdriver.mod.WebElementPromise
 import scala.scalajs.js
@@ -19,10 +18,29 @@ object elementMod extends js.Object {
   class ElementArrayFinder protected () extends WebdriverWebElement {
     def this(browser_ : ProtractorBrowser) = this()
     def this(browser_ : ProtractorBrowser, getWebElements: js.Function0[js.Promise[js.Array[WebElement]]]) = this()
+    def this(browser_ : ProtractorBrowser, getWebElements: js.UndefOr[scala.Nothing], locator_ : js.Any) = this()
     def this(
       browser_ : ProtractorBrowser,
       getWebElements: js.Function0[js.Promise[js.Array[WebElement]]],
       locator_ : js.Any
+    ) = this()
+    def this(
+      browser_ : ProtractorBrowser,
+      getWebElements: js.UndefOr[scala.Nothing],
+      locator_ : js.UndefOr[scala.Nothing],
+      actionResults_ : js.Promise[_]
+    ) = this()
+    def this(
+      browser_ : ProtractorBrowser,
+      getWebElements: js.UndefOr[scala.Nothing],
+      locator_ : js.Any,
+      actionResults_ : js.Promise[_]
+    ) = this()
+    def this(
+      browser_ : ProtractorBrowser,
+      getWebElements: js.Function0[js.Promise[js.Array[WebElement]]],
+      locator_ : js.UndefOr[scala.Nothing],
+      actionResults_ : js.Promise[_]
     ) = this()
     def this(
       browser_ : ProtractorBrowser,
@@ -500,6 +518,7 @@ object elementMod extends js.Object {
       *     an array of ElementFinders represented by the ElementArrayFinder.
       */
     def `then`[T](): js.Promise[T] = js.native
+    def `then`[T](fn: js.UndefOr[scala.Nothing], errorFn: js.Function1[/* error */ js.Any, _]): js.Promise[T] = js.native
     def `then`[T](
       fn: js.Function1[
           /* value */ js.Array[_ | ElementFinder], 
@@ -765,20 +784,7 @@ object elementMod extends js.Object {
   @js.native
   class WebdriverWebElement ()
     extends WebElement
-       with /* key */ StringDictionary[js.Any] {
-    /**
-      * Returns either this instance's serialized represention, if immediately
-      * available, or a promise for its serialized representation. This function is
-      * conceptually equivalent to objects that have a {@code toJSON()} property,
-      * except the serialize() result may be a promise or an object containing a
-      * promise (which are not directly JSON friendly).
-      *
-      * @return {!(T|IThenable.<!T>)} This instance's serialized wire format.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def serialize(): IWebElementId | js.Promise[IWebElementId] = js.native
-  }
+       with /* key */ StringDictionary[js.Any]
   
   @JSName("build$")
   var build: js.Function2[

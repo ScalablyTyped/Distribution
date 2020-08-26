@@ -18,11 +18,30 @@ trait GetRegexPatternSetResponse extends js.Object {
 
 object GetRegexPatternSetResponse {
   @scala.inline
-  def apply(LockToken: LockToken = null, RegexPatternSet: RegexPatternSet = null): GetRegexPatternSetResponse = {
+  def apply(): GetRegexPatternSetResponse = {
     val __obj = js.Dynamic.literal()
-    if (LockToken != null) __obj.updateDynamic("LockToken")(LockToken.asInstanceOf[js.Any])
-    if (RegexPatternSet != null) __obj.updateDynamic("RegexPatternSet")(RegexPatternSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRegexPatternSetResponse]
   }
+  @scala.inline
+  implicit class GetRegexPatternSetResponseOps[Self <: GetRegexPatternSetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLockToken(value: LockToken): Self = this.set("LockToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockToken: Self = this.set("LockToken", js.undefined)
+    @scala.inline
+    def setRegexPatternSet(value: RegexPatternSet): Self = this.set("RegexPatternSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexPatternSet: Self = this.set("RegexPatternSet", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Node SDK for AWS CodeCommit
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 524 |
+| # downloads        | 590 |
 | # stars            | 0 |
 
 ## Links

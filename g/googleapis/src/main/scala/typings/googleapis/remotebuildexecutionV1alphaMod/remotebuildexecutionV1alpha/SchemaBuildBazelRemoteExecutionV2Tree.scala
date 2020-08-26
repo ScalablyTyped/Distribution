@@ -25,14 +25,32 @@ trait SchemaBuildBazelRemoteExecutionV2Tree extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2Tree {
   @scala.inline
-  def apply(
-    children: js.Array[SchemaBuildBazelRemoteExecutionV2Directory] = null,
-    root: SchemaBuildBazelRemoteExecutionV2Directory = null
-  ): SchemaBuildBazelRemoteExecutionV2Tree = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2Tree = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2Tree]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2TreeOps[Self <: SchemaBuildBazelRemoteExecutionV2Tree] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: SchemaBuildBazelRemoteExecutionV2Directory*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[SchemaBuildBazelRemoteExecutionV2Directory]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setRoot(value: SchemaBuildBazelRemoteExecutionV2Directory): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

@@ -25,11 +25,30 @@ trait SchemaEventNotificationConfig extends js.Object {
 
 object SchemaEventNotificationConfig {
   @scala.inline
-  def apply(pubsubTopicName: String = null, subfolderMatches: String = null): SchemaEventNotificationConfig = {
+  def apply(): SchemaEventNotificationConfig = {
     val __obj = js.Dynamic.literal()
-    if (pubsubTopicName != null) __obj.updateDynamic("pubsubTopicName")(pubsubTopicName.asInstanceOf[js.Any])
-    if (subfolderMatches != null) __obj.updateDynamic("subfolderMatches")(subfolderMatches.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEventNotificationConfig]
   }
+  @scala.inline
+  implicit class SchemaEventNotificationConfigOps[Self <: SchemaEventNotificationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPubsubTopicName(value: String): Self = this.set("pubsubTopicName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubsubTopicName: Self = this.set("pubsubTopicName", js.undefined)
+    @scala.inline
+    def setSubfolderMatches(value: String): Self = this.set("subfolderMatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubfolderMatches: Self = this.set("subfolderMatches", js.undefined)
+  }
+  
 }
 

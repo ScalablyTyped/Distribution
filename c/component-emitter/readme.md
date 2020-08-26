@@ -11,8 +11,8 @@ Event emitter
 | Full name          | component-emitter |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 417 |
-| # downloads        | 522582997 |
+| # dependents       | 427 |
+| # downloads        | 560033166 |
 | # stars            | 7 |
 
 ## Links

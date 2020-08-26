@@ -14,10 +14,26 @@ trait DescribeEndpointRequest extends js.Object {
 
 object DescribeEndpointRequest {
   @scala.inline
-  def apply(endpointType: EndpointType = null): DescribeEndpointRequest = {
+  def apply(): DescribeEndpointRequest = {
     val __obj = js.Dynamic.literal()
-    if (endpointType != null) __obj.updateDynamic("endpointType")(endpointType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointRequest]
   }
+  @scala.inline
+  implicit class DescribeEndpointRequestOps[Self <: DescribeEndpointRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointType(value: EndpointType): Self = this.set("endpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("endpointType", js.undefined)
+  }
+  
 }
 

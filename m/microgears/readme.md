@@ -12,7 +12,7 @@ super lightweight micro framework for reactive services
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1613 |
+| # downloads        | 1506 |
 | # stars            | 0 |
 
 ## Links

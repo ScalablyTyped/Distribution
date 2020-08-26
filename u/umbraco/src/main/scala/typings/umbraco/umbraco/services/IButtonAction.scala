@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Button Action
   */
+@js.native
 trait IButtonAction extends js.Object
 

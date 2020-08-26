@@ -13,6 +13,7 @@ trait CommonFileExt extends js.Object {
   def directoryPath(): String = js.native
   def fileExt(mimeType: String): String = js.native
   def fileName(): String = js.native
+  def fileName(ext: js.UndefOr[scala.Nothing], `type`: String): String = js.native
   def fileName(ext: String): String = js.native
   def fileName(ext: String, `type`: String): String = js.native
   def filePath(): String = js.native

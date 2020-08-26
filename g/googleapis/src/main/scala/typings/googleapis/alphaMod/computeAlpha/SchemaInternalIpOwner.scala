@@ -22,16 +22,36 @@ trait SchemaInternalIpOwner extends js.Object {
 
 object SchemaInternalIpOwner {
   @scala.inline
-  def apply(
-    ipCidrRange: String = null,
-    owners: js.Array[String] = null,
-    systemOwned: js.UndefOr[Boolean] = js.undefined
-  ): SchemaInternalIpOwner = {
+  def apply(): SchemaInternalIpOwner = {
     val __obj = js.Dynamic.literal()
-    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
-    if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
-    if (!js.isUndefined(systemOwned)) __obj.updateDynamic("systemOwned")(systemOwned.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInternalIpOwner]
   }
+  @scala.inline
+  implicit class SchemaInternalIpOwnerOps[Self <: SchemaInternalIpOwner] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpCidrRange(value: String): Self = this.set("ipCidrRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpCidrRange: Self = this.set("ipCidrRange", js.undefined)
+    @scala.inline
+    def setOwnersVarargs(value: String*): Self = this.set("owners", js.Array(value :_*))
+    @scala.inline
+    def setOwners(value: js.Array[String]): Self = this.set("owners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwners: Self = this.set("owners", js.undefined)
+    @scala.inline
+    def setSystemOwned(value: Boolean): Self = this.set("systemOwned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemOwned: Self = this.set("systemOwned", js.undefined)
+  }
+  
 }
 

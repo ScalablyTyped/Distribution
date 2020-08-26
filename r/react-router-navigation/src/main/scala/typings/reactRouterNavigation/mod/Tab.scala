@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Tab extends TabProps {
-  var key: String
+  var key: String = js.native
 }
 
 @JSImport("react-router-navigation", "Tab")

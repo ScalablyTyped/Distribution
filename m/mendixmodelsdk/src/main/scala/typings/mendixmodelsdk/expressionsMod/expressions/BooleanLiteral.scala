@@ -57,7 +57,7 @@ class BooleanLiteral protected () extends LiteralExpression {
   @JSName("model")
   var model_FBooleanLiteral: IModel = js.native
   def value: Boolean = js.native
-  def value(newValue: Boolean): js.Any = js.native
+  def value_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

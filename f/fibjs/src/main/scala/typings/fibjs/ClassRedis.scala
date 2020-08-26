@@ -43,6 +43,7 @@ trait ClassRedis extends ClassObject {
     * 
     */
   def bitcount(key: ClassBuffer): Double = js.native
+  def bitcount(key: ClassBuffer, start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
   def bitcount(key: ClassBuffer, start: Double): Double = js.native
   def bitcount(key: ClassBuffer, start: Double, end: Double): Double = js.native
   /**

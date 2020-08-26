@@ -48,18 +48,51 @@ object HumanLoopConfig {
     TaskCount: FlowDefinitionTaskCount,
     TaskDescription: FlowDefinitionTaskDescription,
     TaskTitle: FlowDefinitionTaskTitle,
-    WorkteamArn: WorkteamArn,
-    PublicWorkforceTaskPrice: PublicWorkforceTaskPrice = null,
-    TaskAvailabilityLifetimeInSeconds: js.UndefOr[FlowDefinitionTaskAvailabilityLifetimeInSeconds] = js.undefined,
-    TaskKeywords: FlowDefinitionTaskKeywords = null,
-    TaskTimeLimitInSeconds: js.UndefOr[FlowDefinitionTaskTimeLimitInSeconds] = js.undefined
+    WorkteamArn: WorkteamArn
   ): HumanLoopConfig = {
     val __obj = js.Dynamic.literal(HumanTaskUiArn = HumanTaskUiArn.asInstanceOf[js.Any], TaskCount = TaskCount.asInstanceOf[js.Any], TaskDescription = TaskDescription.asInstanceOf[js.Any], TaskTitle = TaskTitle.asInstanceOf[js.Any], WorkteamArn = WorkteamArn.asInstanceOf[js.Any])
-    if (PublicWorkforceTaskPrice != null) __obj.updateDynamic("PublicWorkforceTaskPrice")(PublicWorkforceTaskPrice.asInstanceOf[js.Any])
-    if (!js.isUndefined(TaskAvailabilityLifetimeInSeconds)) __obj.updateDynamic("TaskAvailabilityLifetimeInSeconds")(TaskAvailabilityLifetimeInSeconds.get.asInstanceOf[js.Any])
-    if (TaskKeywords != null) __obj.updateDynamic("TaskKeywords")(TaskKeywords.asInstanceOf[js.Any])
-    if (!js.isUndefined(TaskTimeLimitInSeconds)) __obj.updateDynamic("TaskTimeLimitInSeconds")(TaskTimeLimitInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumanLoopConfig]
   }
+  @scala.inline
+  implicit class HumanLoopConfigOps[Self <: HumanLoopConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = this.set("HumanTaskUiArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskCount(value: FlowDefinitionTaskCount): Self = this.set("TaskCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskDescription(value: FlowDefinitionTaskDescription): Self = this.set("TaskDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskTitle(value: FlowDefinitionTaskTitle): Self = this.set("TaskTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkteamArn(value: WorkteamArn): Self = this.set("WorkteamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPublicWorkforceTaskPrice(value: PublicWorkforceTaskPrice): Self = this.set("PublicWorkforceTaskPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicWorkforceTaskPrice: Self = this.set("PublicWorkforceTaskPrice", js.undefined)
+    @scala.inline
+    def setTaskAvailabilityLifetimeInSeconds(value: FlowDefinitionTaskAvailabilityLifetimeInSeconds): Self = this.set("TaskAvailabilityLifetimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskAvailabilityLifetimeInSeconds: Self = this.set("TaskAvailabilityLifetimeInSeconds", js.undefined)
+    @scala.inline
+    def setTaskKeywordsVarargs(value: FlowDefinitionTaskKeyword*): Self = this.set("TaskKeywords", js.Array(value :_*))
+    @scala.inline
+    def setTaskKeywords(value: FlowDefinitionTaskKeywords): Self = this.set("TaskKeywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskKeywords: Self = this.set("TaskKeywords", js.undefined)
+    @scala.inline
+    def setTaskTimeLimitInSeconds(value: FlowDefinitionTaskTimeLimitInSeconds): Self = this.set("TaskTimeLimitInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskTimeLimitInSeconds: Self = this.set("TaskTimeLimitInSeconds", js.undefined)
+  }
+  
 }
 

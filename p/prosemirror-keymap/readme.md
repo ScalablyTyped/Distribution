@@ -11,8 +11,8 @@ Keymap plugin for ProseMirror
 | Full name          | prosemirror-keymap |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 64 |
-| # downloads        | 2268568 |
+| # dependents       | 70 |
+| # downloads        | 2441677 |
 | # stars            | 0 |
 
 ## Links

@@ -30,12 +30,12 @@ trait TargetedTransitionEvent[Target /* <: EventTarget */] extends js.Object {
   var propertyName: String = js.native
   var pseudoElement: String = js.native
   var returnValue: Boolean = js.native
-  var srcElement: js.UndefOr[EventTarget] = js.native
+  var srcElement: js.UndefOr[EventTarget | Null] = js.native
   @JSName("stopImmediatePropagation")
   var stopImmediatePropagation_Original: js.Function0[Unit] = js.native
   @JSName("stopPropagation")
   var stopPropagation_Original: js.Function0[Unit] = js.native
-  var target: js.UndefOr[EventTarget] = js.native
+  var target: js.UndefOr[EventTarget | Null] = js.native
   var timeStamp: Double = js.native
   var `type`: String = js.native
   def composedPath(): js.Array[EventTarget] = js.native

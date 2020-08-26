@@ -33,6 +33,7 @@ trait Server extends js.Object {
     * argument. That way, the file is counted towards the dependency budget of the root of its dependency graph.
     */
   def addFile(name: String): Unit = js.native
+  def addFile(name: String, text: js.UndefOr[scala.Nothing], parent: String): Unit = js.native
   def addFile(name: String, text: String): Unit = js.native
   def addFile(name: String, text: String, parent: String): Unit = js.native
   /** Unregister a file. */

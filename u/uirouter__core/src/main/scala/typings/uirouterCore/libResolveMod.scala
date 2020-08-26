@@ -40,7 +40,29 @@ object libResolveMod extends js.Object {
       */
     def this(token: js.Any, resolveFn: js.Function) = this()
     def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_]) = this()
+    def this(token: js.Any, resolveFn: js.Function, deps: js.UndefOr[scala.Nothing], policy: ResolvePolicy) = this()
     def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy) = this()
+    def this(
+      token: js.Any,
+      resolveFn: js.Function,
+      deps: js.UndefOr[scala.Nothing],
+      policy: js.UndefOr[scala.Nothing],
+      data: js.Any
+    ) = this()
+    def this(
+      token: js.Any,
+      resolveFn: js.Function,
+      deps: js.UndefOr[scala.Nothing],
+      policy: ResolvePolicy,
+      data: js.Any
+    ) = this()
+    def this(
+      token: js.Any,
+      resolveFn: js.Function,
+      deps: js.Array[_],
+      policy: js.UndefOr[scala.Nothing],
+      data: js.Any
+    ) = this()
     def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy, data: js.Any) = this()
   }
   

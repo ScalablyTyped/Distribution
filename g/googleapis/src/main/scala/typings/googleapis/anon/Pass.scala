@@ -12,11 +12,30 @@ trait Pass extends js.Object {
 
 object Pass {
   @scala.inline
-  def apply(pass: js.UndefOr[Boolean] = js.undefined, score: js.UndefOr[Double] = js.undefined): Pass = {
+  def apply(): Pass = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pass)) __obj.updateDynamic("pass")(pass.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pass]
   }
+  @scala.inline
+  implicit class PassOps[Self <: Pass] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPass(value: Boolean): Self = this.set("pass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePass: Self = this.set("pass", js.undefined)
+    @scala.inline
+    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+  }
+  
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Triangles are culled regardless of their orientation with respect to the view
-  direction. Note that point or line primitives are unaffected by this render state.
+  * direction. Note that point or line primitives are unaffected by this render state.
   */
 @JSGlobal("pc.CULLFACE_FRONTANDBACK")
 @js.native

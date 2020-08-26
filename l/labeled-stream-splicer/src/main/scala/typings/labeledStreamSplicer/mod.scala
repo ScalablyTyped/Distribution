@@ -88,8 +88,9 @@ object mod extends js.Object {
     @JSName("read")
     var read_Original: js.Function0[_] = js.native
     var readable: Boolean = js.native
-    var readableEncoding: js.UndefOr[BufferEncoding] = js.native
+    var readableEncoding: js.UndefOr[BufferEncoding | Null] = js.native
     var readableEnded: Boolean = js.native
+    var readableFlowing: js.UndefOr[Boolean | Null] = js.native
     var readableHighWaterMark: Double = js.native
     var readableLength: Double = js.native
     var readableObjectMode: Boolean = js.native
@@ -175,9 +176,11 @@ object mod extends js.Object {
   }
   
   def apply(): splicer = js.native
+  def apply(streams: js.UndefOr[scala.Nothing], opts: TransformOptions): splicer = js.native
   def apply(streams: LabeledStreamList): splicer = js.native
   def apply(streams: LabeledStreamList, opts: TransformOptions): splicer = js.native
   def obj(): splicer = js.native
+  def obj(streams: js.UndefOr[scala.Nothing], opts: TransformOptions): splicer = js.native
   def obj(streams: LabeledStreamList): splicer = js.native
   def obj(streams: LabeledStreamList, opts: TransformOptions): splicer = js.native
   type Index = Double | String

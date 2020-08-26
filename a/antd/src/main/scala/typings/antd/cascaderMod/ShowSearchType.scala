@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ShowSearchType extends js.Object {
   var filter: js.UndefOr[
     js.Function3[
@@ -14,9 +15,9 @@ trait ShowSearchType extends js.Object {
       /* names */ FilledFieldNamesType, 
       Boolean
     ]
-  ] = js.undefined
-  var limit: js.UndefOr[Double | `false`] = js.undefined
-  var matchInputWidth: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var limit: js.UndefOr[Double | `false`] = js.native
+  var matchInputWidth: js.UndefOr[Boolean] = js.native
   var render: js.UndefOr[
     js.Function4[
       /* inputValue */ String, 
@@ -25,7 +26,7 @@ trait ShowSearchType extends js.Object {
       /* names */ FilledFieldNamesType, 
       ReactNode
     ]
-  ] = js.undefined
+  ] = js.native
   var sort: js.UndefOr[
     js.Function4[
       /* a */ js.Array[CascaderOptionType], 
@@ -34,25 +35,53 @@ trait ShowSearchType extends js.Object {
       /* names */ FilledFieldNamesType, 
       Double
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object ShowSearchType {
   @scala.inline
-  def apply(
-    filter: (/* inputValue */ String, /* path */ js.Array[CascaderOptionType], /* names */ FilledFieldNamesType) => Boolean = null,
-    limit: Double | `false` = null,
-    matchInputWidth: js.UndefOr[Boolean] = js.undefined,
-    render: (/* inputValue */ String, /* path */ js.Array[CascaderOptionType], /* prefixCls */ js.UndefOr[String], /* names */ FilledFieldNamesType) => ReactNode = null,
-    sort: (/* a */ js.Array[CascaderOptionType], /* b */ js.Array[CascaderOptionType], /* inputValue */ String, /* names */ FilledFieldNamesType) => Double = null
-  ): ShowSearchType = {
+  def apply(): ShowSearchType = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction3(filter))
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchInputWidth)) __obj.updateDynamic("matchInputWidth")(matchInputWidth.get.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction4(render))
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction4(sort))
     __obj.asInstanceOf[ShowSearchType]
   }
+  @scala.inline
+  implicit class ShowSearchTypeOps[Self <: ShowSearchType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(
+      value: (/* inputValue */ String, /* path */ js.Array[CascaderOptionType], /* names */ FilledFieldNamesType) => Boolean
+    ): Self = this.set("filter", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setLimit(value: Double | `false`): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMatchInputWidth(value: Boolean): Self = this.set("matchInputWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchInputWidth: Self = this.set("matchInputWidth", js.undefined)
+    @scala.inline
+    def setRender(
+      value: (/* inputValue */ String, /* path */ js.Array[CascaderOptionType], /* prefixCls */ js.UndefOr[String], /* names */ FilledFieldNamesType) => ReactNode
+    ): Self = this.set("render", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+    @scala.inline
+    def setSort(
+      value: (/* a */ js.Array[CascaderOptionType], /* b */ js.Array[CascaderOptionType], /* inputValue */ String, /* names */ FilledFieldNamesType) => Double
+    ): Self = this.set("sort", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+  }
+  
 }
 

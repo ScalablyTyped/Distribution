@@ -2,23 +2,20 @@ package typings.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.facebookJsSdk.facebookJsSdkBooleans.`false`
-import typings.facebookJsSdk.facebookJsSdkStrings.async
-import typings.facebookJsSdk.facebookJsSdkStrings.iframe
-import typings.facebookJsSdk.facebookJsSdkStrings.page
-import typings.facebookJsSdk.facebookJsSdkStrings.popup
 import typings.facebookJsSdk.facebookJsSdkStrings.share_open_graph
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ShareOpenGraphDialogParams extends DialogParams {
-  var action_properties: StringDictionary[js.Any]
-  var action_type: String
-  var hashtag: js.UndefOr[String] = js.undefined
-  var href: String
-  var method: share_open_graph
-  var mobile_iframe: js.UndefOr[`false`] = js.undefined
-  var quote: js.UndefOr[String] = js.undefined
+  var action_properties: StringDictionary[js.Any] = js.native
+  var action_type: String = js.native
+  var hashtag: js.UndefOr[String] = js.native
+  var href: String = js.native
+  var method: share_open_graph = js.native
+  var mobile_iframe: js.UndefOr[`false`] = js.native
+  var quote: js.UndefOr[String] = js.native
 }
 
 object ShareOpenGraphDialogParams {
@@ -27,22 +24,43 @@ object ShareOpenGraphDialogParams {
     action_properties: StringDictionary[js.Any],
     action_type: String,
     href: String,
-    method: share_open_graph,
-    app_id: String = null,
-    display: page | iframe | async | popup = null,
-    hashtag: String = null,
-    mobile_iframe: `false` = null,
-    quote: String = null,
-    redirect_uri: String = null
+    method: share_open_graph
   ): ShareOpenGraphDialogParams = {
     val __obj = js.Dynamic.literal(action_properties = action_properties.asInstanceOf[js.Any], action_type = action_type.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
-    if (mobile_iframe != null) __obj.updateDynamic("mobile_iframe")(mobile_iframe.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareOpenGraphDialogParams]
   }
+  @scala.inline
+  implicit class ShareOpenGraphDialogParamsOps[Self <: ShareOpenGraphDialogParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction_properties(value: StringDictionary[js.Any]): Self = this.set("action_properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAction_type(value: String): Self = this.set("action_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMethod(value: share_open_graph): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHashtag(value: String): Self = this.set("hashtag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashtag: Self = this.set("hashtag", js.undefined)
+    @scala.inline
+    def setMobile_iframe(value: `false`): Self = this.set("mobile_iframe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobile_iframe: Self = this.set("mobile_iframe", js.undefined)
+    @scala.inline
+    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuote: Self = this.set("quote", js.undefined)
+  }
+  
 }
 

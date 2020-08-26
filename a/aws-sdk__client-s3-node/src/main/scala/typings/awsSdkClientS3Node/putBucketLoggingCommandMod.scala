@@ -27,17 +27,10 @@ object putBucketLoggingCommandMod extends js.Object {
           Readable
         ] {
     def this(input: PutBucketLoggingInput) = this()
-    /* CompleteClass */
-    override val input: PutBucketLoggingInput = js.native
     val middlewareStack: MiddlewareStack[PutBucketLoggingInput, PutBucketLoggingOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[PutBucketLoggingInput, PutBucketLoggingOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[PutBucketLoggingInput, PutBucketLoggingOutput] = js.native
   }

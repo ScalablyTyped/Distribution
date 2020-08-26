@@ -13,109 +13,160 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionsBottomTabs extends js.Object {
   /**
     * Enable animations when toggling visibility
     */
-  var animate: js.UndefOr[Boolean] = js.undefined
+  var animate: js.UndefOr[Boolean] = js.native
   /**
     * Set a background color for the bottom tabs
     */
-  var backgroundColor: js.UndefOr[Color] = js.undefined
+  var backgroundColor: js.UndefOr[Color] = js.native
   /**
     * Control the Bottom Tabs blur style
     * #### (iOS specific)
     * @requires translucent: true
     * @default 'default'
     */
-  var barStyle: js.UndefOr[default | black] = js.undefined
+  var barStyle: js.UndefOr[default | black] = js.native
   /**
     * Switch to another screen within the bottom tabs via screen name
     */
-  var currentTabId: js.UndefOr[String] = js.undefined
+  var currentTabId: js.UndefOr[String] = js.native
   /**
     * Switch to another screen within the bottom tabs via index (starting from 0)
     */
-  var currentTabIndex: js.UndefOr[Double] = js.undefined
+  var currentTabIndex: js.UndefOr[Double] = js.native
   /**
     * Draw screen component under the tab bar
     */
-  var drawBehind: js.UndefOr[Boolean] = js.undefined
+  var drawBehind: js.UndefOr[Boolean] = js.native
   /**
     * Set the elevation of the Bottom Tabs in dp
     * #### (Android specific)
     */
-  var elevation: js.UndefOr[AndroidDensityNumber] = js.undefined
+  var elevation: js.UndefOr[AndroidDensityNumber] = js.native
+  /**
+    * Hides the BottomTabs on scroll to increase the amount of content visible to the user.
+    * The options requires that the scrollable view will be the root view of the screen and that it specifies `nestedScrollEnabled: true`.
+    * #### (Android specific)
+    */
+  var hideOnScroll: js.UndefOr[Boolean] = js.native
   /**
     * Hide the top line of the Tab Bar
     * #### (iOS specific)
     */
-  var hideShadow: js.UndefOr[Boolean] = js.undefined
+  var hideShadow: js.UndefOr[Boolean] = js.native
   /**
     * Use large icons when possible, even when three tabs without titles are displayed
     * #### (android specific)
     * @default false
     */
-  var preferLargeIcons: js.UndefOr[Boolean] = js.undefined
+  var preferLargeIcons: js.UndefOr[Boolean] = js.native
   /**
     * Set when tabs are attached to hierarchy consequently when the
     * RootView's constructor is called.
     */
-  var tabsAttachMode: js.UndefOr[together | afterInitialTab | onSwitchToTab] = js.undefined
+  var tabsAttachMode: js.UndefOr[together | afterInitialTab | onSwitchToTab] = js.native
   /**
     * Set a testID to reference the bottom tabs
     */
-  var testID: js.UndefOr[String] = js.undefined
+  var testID: js.UndefOr[String] = js.native
   /**
     * Control the text display mode below the tab icon
     * #### (Android specific)
     */
-  var titleDisplayMode: js.UndefOr[alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce] = js.undefined
+  var titleDisplayMode: js.UndefOr[alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce] = js.native
   /**
     * Allows the Bottom Tabs to be translucent (blurred)
     * #### (iOS specific)
     */
-  var translucent: js.UndefOr[Boolean] = js.undefined
+  var translucent: js.UndefOr[Boolean] = js.native
   /**
     * Show or hide the bottom tabs
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object OptionsBottomTabs {
   @scala.inline
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: Color = null,
-    barStyle: default | black = null,
-    currentTabId: String = null,
-    currentTabIndex: js.UndefOr[Double] = js.undefined,
-    drawBehind: js.UndefOr[Boolean] = js.undefined,
-    elevation: js.UndefOr[AndroidDensityNumber] = js.undefined,
-    hideShadow: js.UndefOr[Boolean] = js.undefined,
-    preferLargeIcons: js.UndefOr[Boolean] = js.undefined,
-    tabsAttachMode: together | afterInitialTab | onSwitchToTab = null,
-    testID: String = null,
-    titleDisplayMode: alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce = null,
-    translucent: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): OptionsBottomTabs = {
+  def apply(): OptionsBottomTabs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
-    if (currentTabId != null) __obj.updateDynamic("currentTabId")(currentTabId.asInstanceOf[js.Any])
-    if (!js.isUndefined(currentTabIndex)) __obj.updateDynamic("currentTabIndex")(currentTabIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideShadow)) __obj.updateDynamic("hideShadow")(hideShadow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferLargeIcons)) __obj.updateDynamic("preferLargeIcons")(preferLargeIcons.get.asInstanceOf[js.Any])
-    if (tabsAttachMode != null) __obj.updateDynamic("tabsAttachMode")(tabsAttachMode.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (titleDisplayMode != null) __obj.updateDynamic("titleDisplayMode")(titleDisplayMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsBottomTabs]
   }
+  @scala.inline
+  implicit class OptionsBottomTabsOps[Self <: OptionsBottomTabs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBarStyle(value: default | black): Self = this.set("barStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarStyle: Self = this.set("barStyle", js.undefined)
+    @scala.inline
+    def setCurrentTabId(value: String): Self = this.set("currentTabId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentTabId: Self = this.set("currentTabId", js.undefined)
+    @scala.inline
+    def setCurrentTabIndex(value: Double): Self = this.set("currentTabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentTabIndex: Self = this.set("currentTabIndex", js.undefined)
+    @scala.inline
+    def setDrawBehind(value: Boolean): Self = this.set("drawBehind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawBehind: Self = this.set("drawBehind", js.undefined)
+    @scala.inline
+    def setElevation(value: AndroidDensityNumber): Self = this.set("elevation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElevation: Self = this.set("elevation", js.undefined)
+    @scala.inline
+    def setHideOnScroll(value: Boolean): Self = this.set("hideOnScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideOnScroll: Self = this.set("hideOnScroll", js.undefined)
+    @scala.inline
+    def setHideShadow(value: Boolean): Self = this.set("hideShadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideShadow: Self = this.set("hideShadow", js.undefined)
+    @scala.inline
+    def setPreferLargeIcons(value: Boolean): Self = this.set("preferLargeIcons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferLargeIcons: Self = this.set("preferLargeIcons", js.undefined)
+    @scala.inline
+    def setTabsAttachMode(value: together | afterInitialTab | onSwitchToTab): Self = this.set("tabsAttachMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabsAttachMode: Self = this.set("tabsAttachMode", js.undefined)
+    @scala.inline
+    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestID: Self = this.set("testID", js.undefined)
+    @scala.inline
+    def setTitleDisplayMode(value: alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce): Self = this.set("titleDisplayMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleDisplayMode: Self = this.set("titleDisplayMode", js.undefined)
+    @scala.inline
+    def setTranslucent(value: Boolean): Self = this.set("translucent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslucent: Self = this.set("translucent", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

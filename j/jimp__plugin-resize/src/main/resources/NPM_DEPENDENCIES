@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-resize" : "0.9.8"
+      "@jimp/plugin-resize" : "0.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-resize" : "0.9.8"
+      "@jimp/plugin-resize" : "0.14.0"
     }
   ],
   "compile-devDependencies" : [

@@ -35,7 +35,7 @@ trait SplunkDestinationConfiguration extends js.Object {
     */
   var RetryOptions: js.UndefOr[SplunkRetryOptions] = js.native
   /**
-    * Defines how documents should be delivered to Amazon S3. When set to FailedDocumentsOnly, Kinesis Data Firehose writes any data that could not be indexed to the configured Amazon S3 destination. When set to AllDocuments, Kinesis Data Firehose delivers all incoming records to Amazon S3, and also writes failed documents to Amazon S3. Default value is FailedDocumentsOnly. 
+    * Defines how documents should be delivered to Amazon S3. When set to FailedEventsOnly, Kinesis Data Firehose writes any data that could not be indexed to the configured Amazon S3 destination. When set to AllEvents, Kinesis Data Firehose delivers all incoming records to Amazon S3, and also writes failed documents to Amazon S3. The default value is FailedEventsOnly. You can update this backup mode from FailedEventsOnly to AllEvents. You can't update it from AllEvents to FailedEventsOnly.
     */
   var S3BackupMode: js.UndefOr[SplunkS3BackupMode] = js.native
   /**
@@ -50,20 +50,51 @@ object SplunkDestinationConfiguration {
     HECEndpoint: HECEndpoint,
     HECEndpointType: HECEndpointType,
     HECToken: HECToken,
-    S3Configuration: S3DestinationConfiguration,
-    CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
-    HECAcknowledgmentTimeoutInSeconds: js.UndefOr[HECAcknowledgmentTimeoutInSeconds] = js.undefined,
-    ProcessingConfiguration: ProcessingConfiguration = null,
-    RetryOptions: SplunkRetryOptions = null,
-    S3BackupMode: SplunkS3BackupMode = null
+    S3Configuration: S3DestinationConfiguration
   ): SplunkDestinationConfiguration = {
     val __obj = js.Dynamic.literal(HECEndpoint = HECEndpoint.asInstanceOf[js.Any], HECEndpointType = HECEndpointType.asInstanceOf[js.Any], HECToken = HECToken.asInstanceOf[js.Any], S3Configuration = S3Configuration.asInstanceOf[js.Any])
-    if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(HECAcknowledgmentTimeoutInSeconds)) __obj.updateDynamic("HECAcknowledgmentTimeoutInSeconds")(HECAcknowledgmentTimeoutInSeconds.get.asInstanceOf[js.Any])
-    if (ProcessingConfiguration != null) __obj.updateDynamic("ProcessingConfiguration")(ProcessingConfiguration.asInstanceOf[js.Any])
-    if (RetryOptions != null) __obj.updateDynamic("RetryOptions")(RetryOptions.asInstanceOf[js.Any])
-    if (S3BackupMode != null) __obj.updateDynamic("S3BackupMode")(S3BackupMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplunkDestinationConfiguration]
   }
+  @scala.inline
+  implicit class SplunkDestinationConfigurationOps[Self <: SplunkDestinationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHECEndpoint(value: HECEndpoint): Self = this.set("HECEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHECEndpointType(value: HECEndpointType): Self = this.set("HECEndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHECToken(value: HECToken): Self = this.set("HECToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3Configuration(value: S3DestinationConfiguration): Self = this.set("S3Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    @scala.inline
+    def setHECAcknowledgmentTimeoutInSeconds(value: HECAcknowledgmentTimeoutInSeconds): Self = this.set("HECAcknowledgmentTimeoutInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHECAcknowledgmentTimeoutInSeconds: Self = this.set("HECAcknowledgmentTimeoutInSeconds", js.undefined)
+    @scala.inline
+    def setProcessingConfiguration(value: ProcessingConfiguration): Self = this.set("ProcessingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingConfiguration: Self = this.set("ProcessingConfiguration", js.undefined)
+    @scala.inline
+    def setRetryOptions(value: SplunkRetryOptions): Self = this.set("RetryOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryOptions: Self = this.set("RetryOptions", js.undefined)
+    @scala.inline
+    def setS3BackupMode(value: SplunkS3BackupMode): Self = this.set("S3BackupMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupMode: Self = this.set("S3BackupMode", js.undefined)
+  }
+  
 }
 

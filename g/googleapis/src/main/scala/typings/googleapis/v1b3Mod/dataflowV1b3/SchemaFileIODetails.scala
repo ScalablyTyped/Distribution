@@ -17,10 +17,26 @@ trait SchemaFileIODetails extends js.Object {
 
 object SchemaFileIODetails {
   @scala.inline
-  def apply(filePattern: String = null): SchemaFileIODetails = {
+  def apply(): SchemaFileIODetails = {
     val __obj = js.Dynamic.literal()
-    if (filePattern != null) __obj.updateDynamic("filePattern")(filePattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFileIODetails]
   }
+  @scala.inline
+  implicit class SchemaFileIODetailsOps[Self <: SchemaFileIODetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilePattern(value: String): Self = this.set("filePattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilePattern: Self = this.set("filePattern", js.undefined)
+  }
+  
 }
 

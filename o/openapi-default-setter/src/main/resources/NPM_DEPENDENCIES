@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-default-setter" : "2.1.0"
+      "openapi-default-setter" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-default-setter" : "2.1.0"
+      "openapi-default-setter" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

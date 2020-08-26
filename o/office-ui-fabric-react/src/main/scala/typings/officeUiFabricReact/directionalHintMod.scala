@@ -21,22 +21,22 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/common/DirectionalHint", JSImport.Namespace)
 @js.native
 object directionalHintMod extends js.Object {
-  /* Inlined {  topLeftEdge  :0,   topCenter  :1,   topRightEdge  :2,   topAutoEdge  :3,   bottomLeftEdge  :4,   bottomCenter  :5,   bottomRightEdge  :6,   bottomAutoEdge  :7,   leftTopEdge  :8,   leftCenter  :9,   leftBottomEdge  :10,   rightTopEdge  :11,   rightCenter  :12,   rightBottomEdge  :13}[keyof {  topLeftEdge  :0,   topCenter  :1,   topRightEdge  :2,   topAutoEdge  :3,   bottomLeftEdge  :4,   bottomCenter  :5,   bottomRightEdge  :6,   bottomAutoEdge  :7,   leftTopEdge  :8,   leftCenter  :9,   leftBottomEdge  :10,   rightTopEdge  :11,   rightCenter  :12,   rightBottomEdge  :13}] */
+  /* Inlined {  topLeftEdge :0,   topCenter :1,   topRightEdge :2,   topAutoEdge :3,   bottomLeftEdge :4,   bottomCenter :5,   bottomRightEdge :6,   bottomAutoEdge :7,   leftTopEdge :8,   leftCenter :9,   leftBottomEdge :10,   rightTopEdge :11,   rightCenter :12,   rightBottomEdge :13}[keyof {  topLeftEdge :0,   topCenter :1,   topRightEdge :2,   topAutoEdge :3,   bottomLeftEdge :4,   bottomCenter :5,   bottomRightEdge :6,   bottomAutoEdge :7,   leftTopEdge :8,   leftCenter :9,   leftBottomEdge :10,   rightTopEdge :11,   rightCenter :12,   rightBottomEdge :13}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`11`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`13`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`4`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
     - typings.officeUiFabricReact.officeUiFabricReactNumbers.`3`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`5`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`10`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`6`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`13`
     - typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`4`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`5`
     - typings.officeUiFabricReact.officeUiFabricReactNumbers.`12`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`11`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`6`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`10`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
+    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
   */
   trait DirectionalHint extends js.Object
   

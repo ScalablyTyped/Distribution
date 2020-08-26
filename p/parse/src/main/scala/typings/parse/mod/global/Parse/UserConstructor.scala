@@ -19,6 +19,7 @@ trait UserConstructor
   def currentAsync[T /* <: User[Attributes] */](): js.Promise[T | Null] = js.native
   def enableUnsafeCurrentUser(): Unit = js.native
   def extend(): js.Any = js.native
+  def extend(protoProps: js.UndefOr[scala.Nothing], classProps: js.Any): js.Any = js.native
   def extend(protoProps: js.Any): js.Any = js.native
   def extend(protoProps: js.Any, classProps: js.Any): js.Any = js.native
   def hydrate[T /* <: User[Attributes] */](userJSON: js.Any): js.Promise[T] = js.native

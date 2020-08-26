@@ -26,10 +26,26 @@ object logging extends js.Object {
     def this(level: String, message: String, opt_timestamp: Double) = this()
     def this(level: Double, message: String, opt_timestamp: Double) = this()
     def this(level: typings.seleniumWebdriver.loggingMod.Level, message: String, opt_timestamp: Double) = this()
+    def this(level: String, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: String) = this()
+    def this(level: String, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: IType) = this()
     def this(level: String, message: String, opt_timestamp: Double, opt_type: String) = this()
     def this(level: String, message: String, opt_timestamp: Double, opt_type: IType) = this()
+    def this(level: Double, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: String) = this()
+    def this(level: Double, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: IType) = this()
     def this(level: Double, message: String, opt_timestamp: Double, opt_type: String) = this()
     def this(level: Double, message: String, opt_timestamp: Double, opt_type: IType) = this()
+    def this(
+      level: typings.seleniumWebdriver.loggingMod.Level,
+      message: String,
+      opt_timestamp: js.UndefOr[scala.Nothing],
+      opt_type: String
+    ) = this()
+    def this(
+      level: typings.seleniumWebdriver.loggingMod.Level,
+      message: String,
+      opt_timestamp: js.UndefOr[scala.Nothing],
+      opt_type: IType
+    ) = this()
     def this(
       level: typings.seleniumWebdriver.loggingMod.Level,
       message: String,

@@ -271,6 +271,13 @@ trait PhotoSwipe[T /* <: Options */] extends js.Object {
     destZoomLevel: Double,
     centerPoint: X,
     speed: Double,
+    easingFn: js.UndefOr[scala.Nothing],
+    updateFn: js.Function1[/* now */ Double, Unit]
+  ): Unit = js.native
+  def zoomTo(
+    destZoomLevel: Double,
+    centerPoint: X,
+    speed: Double,
     easingFn: js.Function1[/* k */ Double, Double]
   ): Unit = js.native
   def zoomTo(

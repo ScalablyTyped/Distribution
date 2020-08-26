@@ -34,58 +34,5 @@ import scala.scalajs.js.annotation._
 class CRL ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.CRL {
   def this(params: Rsaprvkey) = this()
-  /** hexadecimal string of ASN.1 TLV length(L) */
-  /* CompleteClass */
-  override var hL: String = js.native
-  /** hexadecimal string of ASN.1 TLV tag(T) */
-  /* CompleteClass */
-  override var hT: String = js.native
-  /** hexadecimal string of ASN.1 TLV */
-  /* CompleteClass */
-  override var hTLV: String = js.native
-  /** hexadecimal string of ASN.1 TLV value(V) */
-  /* CompleteClass */
-  override var hV: String = js.native
-  /** flag whether internal data was changed */
-  /* CompleteClass */
-  override var isModified: String = js.native
-  /**
-    * get hexadecimal string of ASN.1 TLV bytes
-    * @return hexadecimal string of ASN.1 TLV
-    */
-  /* CompleteClass */
-  override def getEncodedHex(): String = js.native
-  /* CompleteClass */
-  override def getFreshValueHex(): String = js.native
-  /**
-    * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-    * @return hexadecimal string of ASN.1 TLV length(L)
-    */
-  /* CompleteClass */
-  override def getLengthHexFromValue(): String = js.native
-  /**
-    * get PEM formatted CRL string after signed
-    * @return PEM formatted string of certificate
-    * @example
-    * var cert = new KJUR.asn1.x509.CRL({'tbsobj': tbs, 'rsaprvkey': prvKey});
-    * cert.sign();
-    * var sPEM =  cert.getPEMString();
-    */
-  /* CompleteClass */
-  override def getPEMString(): String = js.native
-  /**
-    * get hexadecimal string of ASN.1 TLV value(V) bytes
-    * @return hexadecimal string of ASN.1 TLV value(V) bytes
-    */
-  /* CompleteClass */
-  override def getValueHex(): String = js.native
-  /**
-    * sign TBSCertList and set signature value internally
-    * @example
-    * var cert = new KJUR.asn1.x509.CRL({'tbsobj': tbs, 'prvkeyobj': prvKey});
-    * cert.sign();
-    */
-  /* CompleteClass */
-  override def sign(): Unit = js.native
 }
 

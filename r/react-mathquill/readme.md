@@ -10,9 +10,9 @@ React component wrapper for Mathquill
 | ------------------ | :-------------: |
 | Full name          | react-mathquill |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 2 |
-| # downloads        | 13918 |
+| # downloads        | 19370 |
 | # stars            | 0 |
 
 ## Links

@@ -22,16 +22,36 @@ trait ResponseCard extends js.Object {
 
 object ResponseCard {
   @scala.inline
-  def apply(
-    contentType: ContentType = null,
-    genericAttachments: genericAttachmentList = null,
-    version: String = null
-  ): ResponseCard = {
+  def apply(): ResponseCard = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (genericAttachments != null) __obj.updateDynamic("genericAttachments")(genericAttachments.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseCard]
   }
+  @scala.inline
+  implicit class ResponseCardOps[Self <: ResponseCard] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setGenericAttachmentsVarargs(value: GenericAttachment*): Self = this.set("genericAttachments", js.Array(value :_*))
+    @scala.inline
+    def setGenericAttachments(value: genericAttachmentList): Self = this.set("genericAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenericAttachments: Self = this.set("genericAttachments", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

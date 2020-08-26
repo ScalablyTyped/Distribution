@@ -30,5 +30,24 @@ object ScheduleAction {
     val __obj = js.Dynamic.literal(ActionName = ActionName.asInstanceOf[js.Any], ScheduleActionSettings = ScheduleActionSettings.asInstanceOf[js.Any], ScheduleActionStartSettings = ScheduleActionStartSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleAction]
   }
+  @scala.inline
+  implicit class ScheduleActionOps[Self <: ScheduleAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionName(value: string): Self = this.set("ActionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScheduleActionSettings(value: ScheduleActionSettings): Self = this.set("ScheduleActionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScheduleActionStartSettings(value: ScheduleActionStartSettings): Self = this.set("ScheduleActionStartSettings", value.asInstanceOf[js.Any])
+  }
+  
 }
 

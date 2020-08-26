@@ -51,9 +51,9 @@ trait InstanceState extends js.Object {
   val publicIpAddress: js.UndefOr[Input[String]] = js.native
   val ramSize: js.UndefOr[Input[Double]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * launch script to configure server with additional user data
     */
@@ -63,42 +63,86 @@ trait InstanceState extends js.Object {
 
 object InstanceState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    availabilityZone: Input[String] = null,
-    blueprintId: Input[String] = null,
-    bundleId: Input[String] = null,
-    cpuCount: Input[Double] = null,
-    createdAt: Input[String] = null,
-    ipv6Address: Input[String] = null,
-    isStaticIp: Input[Boolean] = null,
-    keyPairName: Input[String] = null,
-    name: Input[String] = null,
-    privateIpAddress: Input[String] = null,
-    publicIpAddress: Input[String] = null,
-    ramSize: Input[Double] = null,
-    tags: Input[StringDictionary[_]] = null,
-    userData: Input[String] = null,
-    username: Input[String] = null
-  ): InstanceState = {
+  def apply(): InstanceState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (blueprintId != null) __obj.updateDynamic("blueprintId")(blueprintId.asInstanceOf[js.Any])
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (cpuCount != null) __obj.updateDynamic("cpuCount")(cpuCount.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (ipv6Address != null) __obj.updateDynamic("ipv6Address")(ipv6Address.asInstanceOf[js.Any])
-    if (isStaticIp != null) __obj.updateDynamic("isStaticIp")(isStaticIp.asInstanceOf[js.Any])
-    if (keyPairName != null) __obj.updateDynamic("keyPairName")(keyPairName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (privateIpAddress != null) __obj.updateDynamic("privateIpAddress")(privateIpAddress.asInstanceOf[js.Any])
-    if (publicIpAddress != null) __obj.updateDynamic("publicIpAddress")(publicIpAddress.asInstanceOf[js.Any])
-    if (ramSize != null) __obj.updateDynamic("ramSize")(ramSize.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceState]
   }
+  @scala.inline
+  implicit class InstanceStateOps[Self <: InstanceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setBlueprintId(value: Input[String]): Self = this.set("blueprintId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueprintId: Self = this.set("blueprintId", js.undefined)
+    @scala.inline
+    def setBundleId(value: Input[String]): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    @scala.inline
+    def setCpuCount(value: Input[Double]): Self = this.set("cpuCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuCount: Self = this.set("cpuCount", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Input[String]): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setIpv6Address(value: Input[String]): Self = this.set("ipv6Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Address: Self = this.set("ipv6Address", js.undefined)
+    @scala.inline
+    def setIsStaticIp(value: Input[Boolean]): Self = this.set("isStaticIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsStaticIp: Self = this.set("isStaticIp", js.undefined)
+    @scala.inline
+    def setKeyPairName(value: Input[String]): Self = this.set("keyPairName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPairName: Self = this.set("keyPairName", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPrivateIpAddress(value: Input[String]): Self = this.set("privateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("privateIpAddress", js.undefined)
+    @scala.inline
+    def setPublicIpAddress(value: Input[String]): Self = this.set("publicIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIpAddress: Self = this.set("publicIpAddress", js.undefined)
+    @scala.inline
+    def setRamSize(value: Input[Double]): Self = this.set("ramSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRamSize: Self = this.set("ramSize", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUserData(value: Input[String]): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("userData", js.undefined)
+    @scala.inline
+    def setUsername(value: Input[String]): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

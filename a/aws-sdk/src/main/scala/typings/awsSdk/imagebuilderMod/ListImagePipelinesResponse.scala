@@ -22,16 +22,36 @@ trait ListImagePipelinesResponse extends js.Object {
 
 object ListImagePipelinesResponse {
   @scala.inline
-  def apply(
-    imagePipelineList: ImagePipelineList = null,
-    nextToken: NonEmptyString = null,
-    requestId: NonEmptyString = null
-  ): ListImagePipelinesResponse = {
+  def apply(): ListImagePipelinesResponse = {
     val __obj = js.Dynamic.literal()
-    if (imagePipelineList != null) __obj.updateDynamic("imagePipelineList")(imagePipelineList.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListImagePipelinesResponse]
   }
+  @scala.inline
+  implicit class ListImagePipelinesResponseOps[Self <: ListImagePipelinesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImagePipelineListVarargs(value: ImagePipeline*): Self = this.set("imagePipelineList", js.Array(value :_*))
+    @scala.inline
+    def setImagePipelineList(value: ImagePipelineList): Self = this.set("imagePipelineList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePipelineList: Self = this.set("imagePipelineList", js.undefined)
+    @scala.inline
+    def setNextToken(value: NonEmptyString): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

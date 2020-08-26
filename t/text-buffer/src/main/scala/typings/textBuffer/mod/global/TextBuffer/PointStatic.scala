@@ -13,7 +13,7 @@ trait PointStatic
   extends /** Construct a Point object */
 Instantiable0[Point]
      with Instantiable1[/* row */ Double, Point]
-     with Instantiable2[/* row */ Double, /* column */ Double, Point] {
+     with Instantiable2[js.UndefOr[/* row */ Double], /* column */ Double, Point] {
   /**
     *  Create a Point from an array containing two numbers representing the
     *  row and column.

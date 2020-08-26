@@ -2,65 +2,75 @@ package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.ApplyValidationResults
 import typings.devextreme.anon.BrokenRule
-import typings.devextreme.anon.Element
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
 import typings.devextreme.mod.DevExpress.DOMComponentOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxValidatorOptions extends DOMComponentOptions[dxValidator] {
   /** @name dxValidator.Options.adapter */
-  var adapter: js.UndefOr[ApplyValidationResults] = js.undefined
+  var adapter: js.UndefOr[ApplyValidationResults] = js.native
   /** @name dxValidator.Options.name */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** @name dxValidator.Options.onValidated */
-  var onValidated: js.UndefOr[js.Function1[/* validatedInfo */ BrokenRule, _]] = js.undefined
+  var onValidated: js.UndefOr[js.Function1[/* validatedInfo */ BrokenRule, _]] = js.native
   /** @name dxValidator.Options.validationGroup */
-  var validationGroup: js.UndefOr[String] = js.undefined
+  var validationGroup: js.UndefOr[String] = js.native
   /** @name dxValidator.Options.validationRules */
   var validationRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object dxValidatorOptions {
   @scala.inline
-  def apply(
-    adapter: ApplyValidationResults = null,
-    bindingOptions: js.Any = null,
-    elementAttr: js.Any = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    name: String = null,
-    onDisposing: /* e */ Model[dxValidator] => _ = null,
-    onInitialized: /* e */ Element[dxValidator] => _ = null,
-    onOptionChanged: /* e */ Name[dxValidator] => _ = null,
-    onValidated: /* validatedInfo */ BrokenRule => _ = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    validationGroup: String = null,
-    validationRules: js.Array[
-      RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-    ] = null,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxValidatorOptions = {
+  def apply(): dxValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onValidated != null) __obj.updateDynamic("onValidated")(js.Any.fromFunction1(onValidated))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (validationGroup != null) __obj.updateDynamic("validationGroup")(validationGroup.asInstanceOf[js.Any])
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxValidatorOptions]
   }
+  @scala.inline
+  implicit class dxValidatorOptionsOps[Self <: dxValidatorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdapter(value: ApplyValidationResults): Self = this.set("adapter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdapter: Self = this.set("adapter", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnValidated(value: /* validatedInfo */ BrokenRule => _): Self = this.set("onValidated", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnValidated: Self = this.set("onValidated", js.undefined)
+    @scala.inline
+    def setValidationGroup(value: String): Self = this.set("validationGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationGroup: Self = this.set("validationGroup", js.undefined)
+    @scala.inline
+    def setValidationRulesVarargs(
+      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+    ): Self = this.set("validationRules", js.Array(value :_*))
+    @scala.inline
+    def setValidationRules(
+      value: js.Array[
+          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+        ]
+    ): Self = this.set("validationRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationRules: Self = this.set("validationRules", js.undefined)
+  }
+  
 }
 

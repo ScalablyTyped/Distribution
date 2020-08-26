@@ -8,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Injectable extends js.Object {
   /**
     * Determines which injectors will provide the injectable,
@@ -16,11 +17,11 @@ trait Injectable extends js.Object {
     * - 'root' : The application-level injector in most apps.
     * - 'platform' : A special singleton platform injector shared by all
     * applications on the page.
-    * - 'any' : Provides a unique instance in every module (including lazy modules) that injects the
-    * token.
+    * - 'any' : Provides a unique instance in each lazy loaded module while all eagerly loaded
+    * modules share one instance.
     *
     */
-  var providedIn: js.UndefOr[Type[_] | root | platform | any | Null] = js.undefined
+  var providedIn: js.UndefOr[Type[_] | root | platform | any | Null] = js.native
 }
 
 @JSImport("@angular/core", "Injectable")

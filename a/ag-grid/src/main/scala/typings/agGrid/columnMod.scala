@@ -60,8 +60,6 @@ object columnMod extends js.Object {
     def getColSpan(rowNode: RowNode): Double = js.native
     /* InferMemberOverrides */
     override def getColumnGroupShow(): String = js.native
-    /* CompleteClass */
-    override def getId(): String = js.native
     def getMaxWidth(): Double = js.native
     def getMenuTabs(defaultValues: js.Array[String]): js.Array[String] = js.native
     def getPinned(): String = js.native
@@ -104,8 +102,6 @@ object columnMod extends js.Object {
     def isSuppressPaste(rowNode: RowNode): Boolean = js.native
     def isTooltipFieldContainsDots(): Boolean = js.native
     def isValueActive(): Boolean = js.native
-    /* CompleteClass */
-    override def isVisible(): Boolean = js.native
     def setActualWidth(actualWidth: Double): Unit = js.native
     def setActualWidth(actualWidth: Double, source: ColumnEventType): Unit = js.native
     def setAggFunc(aggFunc: String): Unit = js.native

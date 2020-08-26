@@ -12,13 +12,12 @@ The lodash method `_.isArrayLike` exported as a module.
 | Keywords           | lodash-modularized, isarraylike |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 32208 |
+| # downloads        | 31418 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.isarraylike)
     
 

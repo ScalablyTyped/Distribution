@@ -117,6 +117,7 @@ object baseComponentMod extends js.Object {
       * @deprecated Use React's error boundaries instead.
       */
     def onError(): Unit = js.native
+    def onError(errorMessage: js.UndefOr[scala.Nothing], ex: js.Any): Unit = js.native
     def onError(errorMessage: String): Unit = js.native
     def onError(errorMessage: String, ex: js.Any): Unit = js.native
   }

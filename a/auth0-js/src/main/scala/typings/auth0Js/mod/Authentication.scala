@@ -37,13 +37,13 @@ class Authentication protected () extends js.Object {
     *
     */
   def getSSOData(): Unit = js.native
-  def getSSOData(callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def getSSOData(callback: Auth0Callback[js.UndefOr[SsoDataResult], Auth0Error]): Unit = js.native
   /**
     * Makes a call to the `/ssodata` endpoint
     *
     */
   def getSSOData(withActiveDirectories: Boolean): Unit = js.native
-  def getSSOData(withActiveDirectories: Boolean, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def getSSOData(withActiveDirectories: Boolean, callback: Auth0Callback[js.UndefOr[SsoDataResult], Auth0Error]): Unit = js.native
   /**
     * Fetches the user country based on the ip.
     *

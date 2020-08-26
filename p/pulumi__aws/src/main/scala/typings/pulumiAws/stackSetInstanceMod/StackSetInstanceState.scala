@@ -36,22 +36,46 @@ trait StackSetInstanceState extends js.Object {
 
 object StackSetInstanceState {
   @scala.inline
-  def apply(
-    accountId: Input[String] = null,
-    parameterOverrides: Input[StringDictionary[Input[String]]] = null,
-    region: Input[String] = null,
-    retainStack: Input[Boolean] = null,
-    stackId: Input[String] = null,
-    stackSetName: Input[String] = null
-  ): StackSetInstanceState = {
+  def apply(): StackSetInstanceState = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (parameterOverrides != null) __obj.updateDynamic("parameterOverrides")(parameterOverrides.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (retainStack != null) __obj.updateDynamic("retainStack")(retainStack.asInstanceOf[js.Any])
-    if (stackId != null) __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
-    if (stackSetName != null) __obj.updateDynamic("stackSetName")(stackSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSetInstanceState]
   }
+  @scala.inline
+  implicit class StackSetInstanceStateOps[Self <: StackSetInstanceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: Input[String]): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setParameterOverrides(value: Input[StringDictionary[Input[String]]]): Self = this.set("parameterOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterOverrides: Self = this.set("parameterOverrides", js.undefined)
+    @scala.inline
+    def setRegion(value: Input[String]): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setRetainStack(value: Input[Boolean]): Self = this.set("retainStack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetainStack: Self = this.set("retainStack", js.undefined)
+    @scala.inline
+    def setStackId(value: Input[String]): Self = this.set("stackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("stackId", js.undefined)
+    @scala.inline
+    def setStackSetName(value: Input[String]): Self = this.set("stackSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetName: Self = this.set("stackSetName", js.undefined)
+  }
+  
 }
 

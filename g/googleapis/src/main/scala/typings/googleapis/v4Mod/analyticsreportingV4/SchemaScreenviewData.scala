@@ -27,18 +27,38 @@ trait SchemaScreenviewData extends js.Object {
 
 object SchemaScreenviewData {
   @scala.inline
-  def apply(
-    appName: String = null,
-    mobileDeviceBranding: String = null,
-    mobileDeviceModel: String = null,
-    screenName: String = null
-  ): SchemaScreenviewData = {
+  def apply(): SchemaScreenviewData = {
     val __obj = js.Dynamic.literal()
-    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (mobileDeviceBranding != null) __obj.updateDynamic("mobileDeviceBranding")(mobileDeviceBranding.asInstanceOf[js.Any])
-    if (mobileDeviceModel != null) __obj.updateDynamic("mobileDeviceModel")(mobileDeviceModel.asInstanceOf[js.Any])
-    if (screenName != null) __obj.updateDynamic("screenName")(screenName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScreenviewData]
   }
+  @scala.inline
+  implicit class SchemaScreenviewDataOps[Self <: SchemaScreenviewData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppName: Self = this.set("appName", js.undefined)
+    @scala.inline
+    def setMobileDeviceBranding(value: String): Self = this.set("mobileDeviceBranding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobileDeviceBranding: Self = this.set("mobileDeviceBranding", js.undefined)
+    @scala.inline
+    def setMobileDeviceModel(value: String): Self = this.set("mobileDeviceModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobileDeviceModel: Self = this.set("mobileDeviceModel", js.undefined)
+    @scala.inline
+    def setScreenName(value: String): Self = this.set("screenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenName: Self = this.set("screenName", js.undefined)
+  }
+  
 }
 

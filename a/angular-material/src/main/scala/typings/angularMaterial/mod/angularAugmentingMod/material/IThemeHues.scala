@@ -4,22 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IThemeHues extends js.Object {
-  var default: js.UndefOr[String] = js.undefined
-  var `hue-1`: js.UndefOr[String] = js.undefined
-  var `hue-2`: js.UndefOr[String] = js.undefined
-  var `hue-3`: js.UndefOr[String] = js.undefined
+  var default: js.UndefOr[String] = js.native
+  var `hue-1`: js.UndefOr[String] = js.native
+  var `hue-2`: js.UndefOr[String] = js.native
+  var `hue-3`: js.UndefOr[String] = js.native
 }
 
 object IThemeHues {
   @scala.inline
-  def apply(default: String = null, `hue-1`: String = null, `hue-2`: String = null, `hue-3`: String = null): IThemeHues = {
+  def apply(): IThemeHues = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (`hue-1` != null) __obj.updateDynamic("hue-1")(`hue-1`.asInstanceOf[js.Any])
-    if (`hue-2` != null) __obj.updateDynamic("hue-2")(`hue-2`.asInstanceOf[js.Any])
-    if (`hue-3` != null) __obj.updateDynamic("hue-3")(`hue-3`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemeHues]
   }
+  @scala.inline
+  implicit class IThemeHuesOps[Self <: IThemeHues] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def `setHue-1`(value: String): Self = this.set("hue-1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHue-1`: Self = this.set("hue-1", js.undefined)
+    @scala.inline
+    def `setHue-2`(value: String): Self = this.set("hue-2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHue-2`: Self = this.set("hue-2", js.undefined)
+    @scala.inline
+    def `setHue-3`(value: String): Self = this.set("hue-3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHue-3`: Self = this.set("hue-3", js.undefined)
+  }
+  
 }
 

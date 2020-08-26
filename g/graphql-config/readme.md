@@ -10,15 +10,15 @@ The easiest way to configure your development environment with your GraphQL sche
 | ------------------ | :-------------: |
 | Full name          | graphql-config |
 | Keywords           | graphql, config, relay, apollo |
-| # releases         | 32 |
-| # dependents       | 63 |
-| # downloads        | 27985244 |
+| # releases         | 27 |
+| # dependents       | 64 |
+| # downloads        | 29772569 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/graphcool/graphql-config#readme)
-- [Bugs](https://github.com/graphcool/graphql-config/issues)
-- [Repository](https://github.com/graphcool/graphql-config)
+- [Homepage](https://graphql-config.com)
+- [Bugs](https://github.com/kamilkisiela/graphql-config/issues)
+- [Repository](https://github.com/kamilkisiela/graphql-config)
 - [Npm](https://www.npmjs.com/package/graphql-config)
     
 

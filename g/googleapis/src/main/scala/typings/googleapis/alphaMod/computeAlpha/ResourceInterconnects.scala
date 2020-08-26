@@ -29,6 +29,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInterconnectsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInterconnectsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -58,6 +59,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInterconnect] = js.native
   def get(callback: BodyResponseCallback[SchemaInterconnect]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnect] = js.native
   def get(params: ParamsResourceInterconnectsGet): GaxiosPromise[SchemaInterconnect] = js.native
   def get(params: ParamsResourceInterconnectsGet, callback: BodyResponseCallback[SchemaInterconnect]): Unit = js.native
   def get(
@@ -86,6 +88,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def getDiagnostics(): GaxiosPromise[SchemaInterconnectsGetDiagnosticsResponse] = js.native
   def getDiagnostics(callback: BodyResponseCallback[SchemaInterconnectsGetDiagnosticsResponse]): Unit = js.native
+  def getDiagnostics(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnectsGetDiagnosticsResponse] = js.native
   def getDiagnostics(params: ParamsResourceInterconnectsGetdiagnostics): GaxiosPromise[SchemaInterconnectsGetDiagnosticsResponse] = js.native
   def getDiagnostics(
     params: ParamsResourceInterconnectsGetdiagnostics,
@@ -118,6 +121,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceInterconnectsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceInterconnectsGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -148,6 +152,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInterconnectsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInterconnectsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -180,6 +185,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaInterconnectList] = js.native
   def list(callback: BodyResponseCallback[SchemaInterconnectList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnectList] = js.native
   def list(params: ParamsResourceInterconnectsList): GaxiosPromise[SchemaInterconnectList] = js.native
   def list(params: ParamsResourceInterconnectsList, callback: BodyResponseCallback[SchemaInterconnectList]): Unit = js.native
   def list(
@@ -212,6 +218,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceInterconnectsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceInterconnectsPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -242,6 +249,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceInterconnectsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceInterconnectsSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -272,6 +280,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceInterconnectsSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceInterconnectsSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
@@ -301,6 +310,7 @@ class ResourceInterconnects protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceInterconnectsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceInterconnectsTestiampermissions,

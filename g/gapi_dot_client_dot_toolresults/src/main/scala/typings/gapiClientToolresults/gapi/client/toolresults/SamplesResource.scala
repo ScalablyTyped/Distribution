@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SamplesResource extends js.Object {
   /**
     * Creates a batch of PerfSamples - a client can submit multiple batches of Perf Samples through repeated calls to this method in order to split up a
@@ -15,7 +16,7 @@ trait SamplesResource extends js.Object {
     *
     * May return any of the following canonical error codes: - NOT_FOUND - The containing PerfSampleSeries does not exist
     */
-  def batchCreate(request: HistoryId): Request[BatchCreatePerfSamplesResponse]
+  def batchCreate(request: HistoryId): Request[BatchCreatePerfSamplesResponse] = js.native
   /**
     * Lists the Performance Samples of a given Sample Series - The list results are sorted by timestamps ascending - The default page size is 500 samples;
     * and maximum size allowed 5000 - The response token indicates the last returned PerfSample timestamp - When the results size exceeds the page size,
@@ -24,7 +25,7 @@ trait SamplesResource extends js.Object {
     * May return any of the following canonical error codes: - OUT_OF_RANGE - The specified request page_token is out of valid range - NOT_FOUND - The
     * containing PerfSampleSeries does not exist
     */
-  def list(request: Key): Request[ListPerfSamplesResponse]
+  def list(request: Key): Request[ListPerfSamplesResponse] = js.native
 }
 
 object SamplesResource {
@@ -36,5 +37,22 @@ object SamplesResource {
     val __obj = js.Dynamic.literal(batchCreate = js.Any.fromFunction1(batchCreate), list = js.Any.fromFunction1(list))
     __obj.asInstanceOf[SamplesResource]
   }
+  @scala.inline
+  implicit class SamplesResourceOps[Self <: SamplesResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchCreate(value: HistoryId => Request[BatchCreatePerfSamplesResponse]): Self = this.set("batchCreate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setList(value: Key => Request[ListPerfSamplesResponse]): Self = this.set("list", js.Any.fromFunction1(value))
+  }
+  
 }
 

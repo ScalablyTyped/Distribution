@@ -8,63 +8,91 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PostCommentForComparedCommitOutput extends OutputTypesUnion {
   /**
     * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
     */
   @JSName("$metadata")
-  var $metadata: ResponseMetadata
+  var $metadata: ResponseMetadata = js.native
   /**
     * <p>In the directionality you established, the blob ID of the 'after' blob.</p>
     */
-  var afterBlobId: js.UndefOr[String] = js.undefined
+  var afterBlobId: js.UndefOr[String] = js.native
   /**
     * <p>In the directionality you established, the full commit ID of the 'after' commit.</p>
     */
-  var afterCommitId: js.UndefOr[String] = js.undefined
+  var afterCommitId: js.UndefOr[String] = js.native
   /**
     * <p>In the directionality you established, the blob ID of the 'before' blob.</p>
     */
-  var beforeBlobId: js.UndefOr[String] = js.undefined
+  var beforeBlobId: js.UndefOr[String] = js.native
   /**
     * <p>In the directionality you established, the full commit ID of the 'before' commit.</p>
     */
-  var beforeCommitId: js.UndefOr[String] = js.undefined
+  var beforeCommitId: js.UndefOr[String] = js.native
   /**
     * <p>The content of the comment you posted.</p>
     */
-  var comment: js.UndefOr[UnmarshalledComment] = js.undefined
+  var comment: js.UndefOr[UnmarshalledComment] = js.native
   /**
     * <p>The location of the comment in the comparison between the two commits.</p>
     */
-  var location: js.UndefOr[UnmarshalledLocation] = js.undefined
+  var location: js.UndefOr[UnmarshalledLocation] = js.native
   /**
     * <p>The name of the repository where you posted a comment on the comparison between commits.</p>
     */
-  var repositoryName: js.UndefOr[String] = js.undefined
+  var repositoryName: js.UndefOr[String] = js.native
 }
 
 object PostCommentForComparedCommitOutput {
   @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    afterBlobId: String = null,
-    afterCommitId: String = null,
-    beforeBlobId: String = null,
-    beforeCommitId: String = null,
-    comment: UnmarshalledComment = null,
-    location: UnmarshalledLocation = null,
-    repositoryName: String = null
-  ): PostCommentForComparedCommitOutput = {
+  def apply($metadata: ResponseMetadata): PostCommentForComparedCommitOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
-    if (afterBlobId != null) __obj.updateDynamic("afterBlobId")(afterBlobId.asInstanceOf[js.Any])
-    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId.asInstanceOf[js.Any])
-    if (beforeBlobId != null) __obj.updateDynamic("beforeBlobId")(beforeBlobId.asInstanceOf[js.Any])
-    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCommentForComparedCommitOutput]
   }
+  @scala.inline
+  implicit class PostCommentForComparedCommitOutputOps[Self <: PostCommentForComparedCommitOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$metadata(value: ResponseMetadata): Self = this.set("$metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAfterBlobId(value: String): Self = this.set("afterBlobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterBlobId: Self = this.set("afterBlobId", js.undefined)
+    @scala.inline
+    def setAfterCommitId(value: String): Self = this.set("afterCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterCommitId: Self = this.set("afterCommitId", js.undefined)
+    @scala.inline
+    def setBeforeBlobId(value: String): Self = this.set("beforeBlobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeBlobId: Self = this.set("beforeBlobId", js.undefined)
+    @scala.inline
+    def setBeforeCommitId(value: String): Self = this.set("beforeCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeCommitId: Self = this.set("beforeCommitId", js.undefined)
+    @scala.inline
+    def setComment(value: UnmarshalledComment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setLocation(value: UnmarshalledLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: String): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

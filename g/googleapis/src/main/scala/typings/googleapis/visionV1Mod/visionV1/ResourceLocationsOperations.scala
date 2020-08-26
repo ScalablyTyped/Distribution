@@ -29,6 +29,7 @@ class ResourceLocationsOperations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceLocationsOperationsGet): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceLocationsOperationsGet, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def get(

@@ -9,10 +9,10 @@ A modern and powerful server for Node.js
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | server |
-| Keywords           | - |
-| # releases         | 15 |
+| Keywords           | server, node.js, http, websocket, socket, async |
+| # releases         | 12 |
 | # dependents       | 24 |
-| # downloads        | 139161 |
+| # downloads        | 144826 |
 | # stars            | 14 |
 
 ## Links

@@ -11,8 +11,8 @@ Create a MD5 hash with hex encoding
 | Full name          | md5-hex |
 | Keywords           | hash, crypto, md5, hex, buffer, browser |
 | # releases         | 3 |
-| # dependents       | 74 |
-| # downloads        | 29575076 |
+| # dependents       | 75 |
+| # downloads        | 29747344 |
 | # stars            | 0 |
 
 ## Links

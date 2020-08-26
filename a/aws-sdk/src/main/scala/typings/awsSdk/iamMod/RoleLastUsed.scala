@@ -18,11 +18,30 @@ trait RoleLastUsed extends js.Object {
 
 object RoleLastUsed {
   @scala.inline
-  def apply(LastUsedDate: dateType = null, Region: stringType = null): RoleLastUsed = {
+  def apply(): RoleLastUsed = {
     val __obj = js.Dynamic.literal()
-    if (LastUsedDate != null) __obj.updateDynamic("LastUsedDate")(LastUsedDate.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleLastUsed]
   }
+  @scala.inline
+  implicit class RoleLastUsedOps[Self <: RoleLastUsed] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastUsedDate(value: dateType): Self = this.set("LastUsedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUsedDate: Self = this.set("LastUsedDate", js.undefined)
+    @scala.inline
+    def setRegion(value: stringType): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+  }
+  
 }
 

@@ -12,6 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object alertMod extends js.Object {
   def default(title: ReactNode, content: ReactNode): Double = js.native
+  def default(
+    title: ReactNode,
+    content: ReactNode,
+    actions: js.UndefOr[scala.Nothing],
+    onBackHandler: CallbackOnBackHandler
+  ): Double = js.native
   def default(title: ReactNode, content: ReactNode, actions: js.Array[Action[TextStyle]]): Double = js.native
   def default(
     title: ReactNode,

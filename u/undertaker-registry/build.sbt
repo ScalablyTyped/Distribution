@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "undertaker-registry"
-version := "1.0-dt-20200515Z-31949f"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-ee4bcb"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

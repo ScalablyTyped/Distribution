@@ -23,7 +23,7 @@ class MaxLengthRuleInfo protected () extends RuleInfo {
   @JSName("model")
   var model_FMaxLengthRuleInfo: IModel = js.native
   def maxLength: Double = js.native
-  def maxLength(newValue: Double): js.Any = js.native
+  def maxLength_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

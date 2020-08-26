@@ -26,17 +26,36 @@ trait PutFileEntry extends js.Object {
 
 object PutFileEntry {
   @scala.inline
-  def apply(
-    filePath: Path,
-    fileContent: FileContent = null,
-    fileMode: FileModeTypeEnum = null,
-    sourceFile: SourceFileSpecifier = null
-  ): PutFileEntry = {
+  def apply(filePath: Path): PutFileEntry = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
-    if (fileContent != null) __obj.updateDynamic("fileContent")(fileContent.asInstanceOf[js.Any])
-    if (fileMode != null) __obj.updateDynamic("fileMode")(fileMode.asInstanceOf[js.Any])
-    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFileEntry]
   }
+  @scala.inline
+  implicit class PutFileEntryOps[Self <: PutFileEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilePath(value: Path): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileContent(value: FileContent): Self = this.set("fileContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileContent: Self = this.set("fileContent", js.undefined)
+    @scala.inline
+    def setFileMode(value: FileModeTypeEnum): Self = this.set("fileMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileMode: Self = this.set("fileMode", js.undefined)
+    @scala.inline
+    def setSourceFile(value: SourceFileSpecifier): Self = this.set("sourceFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceFile: Self = this.set("sourceFile", js.undefined)
+  }
+  
 }
 

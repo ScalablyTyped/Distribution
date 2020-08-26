@@ -8,8 +8,39 @@ import scala.scalajs.js.annotation._
 @js.native
 class JSPMWebSocket () extends js.Object {
   def this(addr: String) = this()
+  def this(addr: js.UndefOr[scala.Nothing], port: Double) = this()
   def this(addr: String, port: Double) = this()
+  def this(addr: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], secure: Boolean) = this()
+  def this(addr: js.UndefOr[scala.Nothing], port: Double, secure: Boolean) = this()
+  def this(addr: String, port: js.UndefOr[scala.Nothing], secure: Boolean) = this()
   def this(addr: String, port: Double, secure: Boolean) = this()
+  def this(
+    addr: js.UndefOr[scala.Nothing],
+    port: js.UndefOr[scala.Nothing],
+    secure: js.UndefOr[scala.Nothing],
+    auto_reconnect: Boolean
+  ) = this()
+  def this(
+    addr: js.UndefOr[scala.Nothing],
+    port: js.UndefOr[scala.Nothing],
+    secure: Boolean,
+    auto_reconnect: Boolean
+  ) = this()
+  def this(
+    addr: js.UndefOr[scala.Nothing],
+    port: Double,
+    secure: js.UndefOr[scala.Nothing],
+    auto_reconnect: Boolean
+  ) = this()
+  def this(addr: js.UndefOr[scala.Nothing], port: Double, secure: Boolean, auto_reconnect: Boolean) = this()
+  def this(
+    addr: String,
+    port: js.UndefOr[scala.Nothing],
+    secure: js.UndefOr[scala.Nothing],
+    auto_reconnect: Boolean
+  ) = this()
+  def this(addr: String, port: js.UndefOr[scala.Nothing], secure: Boolean, auto_reconnect: Boolean) = this()
+  def this(addr: String, port: Double, secure: js.UndefOr[scala.Nothing], auto_reconnect: Boolean) = this()
   def this(addr: String, port: Double, secure: Boolean, auto_reconnect: Boolean) = this()
   var _addr: js.Any = js.native
   var _job_list: js.Any = js.native

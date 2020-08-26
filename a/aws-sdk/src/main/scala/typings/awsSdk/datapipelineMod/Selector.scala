@@ -15,11 +15,30 @@ trait Selector extends js.Object {
 
 object Selector {
   @scala.inline
-  def apply(fieldName: String = null, operator: Operator = null): Selector = {
+  def apply(): Selector = {
     val __obj = js.Dynamic.literal()
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selector]
   }
+  @scala.inline
+  implicit class SelectorOps[Self <: Selector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+    @scala.inline
+    def setOperator(value: Operator): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+  }
+  
 }
 

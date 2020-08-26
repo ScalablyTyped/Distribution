@@ -22,9 +22,9 @@ trait DefaultSecurityGroupArgs extends js.Object {
   val ingress: js.UndefOr[Input[js.Array[Input[DefaultSecurityGroupIngress]]]] = js.native
   val revokeRulesOnDelete: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The VPC ID. **Note that changing
     * the `vpcId` will _not_ restore any default security group rules that were
@@ -35,20 +35,46 @@ trait DefaultSecurityGroupArgs extends js.Object {
 
 object DefaultSecurityGroupArgs {
   @scala.inline
-  def apply(
-    egress: Input[js.Array[Input[DefaultSecurityGroupEgress]]] = null,
-    ingress: Input[js.Array[Input[DefaultSecurityGroupIngress]]] = null,
-    revokeRulesOnDelete: Input[Boolean] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcId: Input[String] = null
-  ): DefaultSecurityGroupArgs = {
+  def apply(): DefaultSecurityGroupArgs = {
     val __obj = js.Dynamic.literal()
-    if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
-    if (ingress != null) __obj.updateDynamic("ingress")(ingress.asInstanceOf[js.Any])
-    if (revokeRulesOnDelete != null) __obj.updateDynamic("revokeRulesOnDelete")(revokeRulesOnDelete.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultSecurityGroupArgs]
   }
+  @scala.inline
+  implicit class DefaultSecurityGroupArgsOps[Self <: DefaultSecurityGroupArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEgressVarargs(value: Input[DefaultSecurityGroupEgress]*): Self = this.set("egress", js.Array(value :_*))
+    @scala.inline
+    def setEgress(value: Input[js.Array[Input[DefaultSecurityGroupEgress]]]): Self = this.set("egress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEgress: Self = this.set("egress", js.undefined)
+    @scala.inline
+    def setIngressVarargs(value: Input[DefaultSecurityGroupIngress]*): Self = this.set("ingress", js.Array(value :_*))
+    @scala.inline
+    def setIngress(value: Input[js.Array[Input[DefaultSecurityGroupIngress]]]): Self = this.set("ingress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngress: Self = this.set("ingress", js.undefined)
+    @scala.inline
+    def setRevokeRulesOnDelete(value: Input[Boolean]): Self = this.set("revokeRulesOnDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevokeRulesOnDelete: Self = this.set("revokeRulesOnDelete", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

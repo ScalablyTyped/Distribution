@@ -11,8 +11,8 @@ The lodash method `_.set` exported as a module.
 | Full name          | lodash.set |
 | Keywords           | lodash-modularized, set |
 | # releases         | 0 |
-| # dependents       | 706 |
-| # downloads        | 54657373 |
+| # dependents       | 712 |
+| # downloads        | 57859466 |
 | # stars            | 0 |
 
 ## Links

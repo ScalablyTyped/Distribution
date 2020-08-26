@@ -11,8 +11,8 @@ Typings are for version 2.0
 | Full name          | superagent-proxy |
 | Keywords           | superagent, http, https, proxy, socks |
 | # releases         | 3 |
-| # dependents       | 97 |
-| # downloads        | 13550053 |
+| # dependents       | 99 |
+| # downloads        | 14160458 |
 | # stars            | 3 |
 
 ## Links

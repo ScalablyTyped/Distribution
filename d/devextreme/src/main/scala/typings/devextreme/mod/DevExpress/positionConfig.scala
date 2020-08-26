@@ -33,49 +33,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait positionConfig extends js.Object {
   /** @name positionConfig.at */
   var at: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
-  ] = js.undefined
+  ] = js.native
   /** @name positionConfig.boundary */
-  var boundary: js.UndefOr[String | Element | JQuery | Window] = js.undefined
+  var boundary: js.UndefOr[String | Element | JQuery | Window] = js.native
   /** @name positionConfig.boundaryOffset */
-  var boundaryOffset: js.UndefOr[String | Y] = js.undefined
+  var boundaryOffset: js.UndefOr[String | Y] = js.native
   /** @name positionConfig.collision */
   var collision: js.UndefOr[
     fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | XY
-  ] = js.undefined
+  ] = js.native
   /** @name positionConfig.my */
   var my: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
-  ] = js.undefined
+  ] = js.native
   /** @name positionConfig.of */
-  var of: js.UndefOr[String | Element | JQuery | Window] = js.undefined
+  var of: js.UndefOr[String | Element | JQuery | Window] = js.native
   /** @name positionConfig.offset */
-  var offset: js.UndefOr[String | Y] = js.undefined
+  var offset: js.UndefOr[String | Y] = js.native
 }
 
 object positionConfig {
   @scala.inline
-  def apply(
-    at: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X = null,
-    boundary: String | Element | JQuery | Window = null,
-    boundaryOffset: String | Y = null,
-    collision: fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | XY = null,
-    my: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X = null,
-    of: String | Element | JQuery | Window = null,
-    offset: String | Y = null
-  ): positionConfig = {
+  def apply(): positionConfig = {
     val __obj = js.Dynamic.literal()
-    if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (boundaryOffset != null) __obj.updateDynamic("boundaryOffset")(boundaryOffset.asInstanceOf[js.Any])
-    if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
-    if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
-    if (of != null) __obj.updateDynamic("of")(of.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[positionConfig]
   }
+  @scala.inline
+  implicit class positionConfigOps[Self <: positionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAt(
+      value: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
+    ): Self = this.set("at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAt: Self = this.set("at", js.undefined)
+    @scala.inline
+    def setBoundary(value: String | Element | JQuery | Window): Self = this.set("boundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundary: Self = this.set("boundary", js.undefined)
+    @scala.inline
+    def setBoundaryOffset(value: String | Y): Self = this.set("boundaryOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundaryOffset: Self = this.set("boundaryOffset", js.undefined)
+    @scala.inline
+    def setCollision(
+      value: fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | XY
+    ): Self = this.set("collision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollision: Self = this.set("collision", js.undefined)
+    @scala.inline
+    def setMy(
+      value: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
+    ): Self = this.set("my", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMy: Self = this.set("my", js.undefined)
+    @scala.inline
+    def setOf(value: String | Element | JQuery | Window): Self = this.set("of", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOf: Self = this.set("of", js.undefined)
+    @scala.inline
+    def setOffset(value: String | Y): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+  }
+  
 }
 

@@ -34,13 +34,13 @@ class TextArea protected () extends TextWidget {
     * In version 8.10.0: introduced
     */
   def autocomplete: Boolean = js.native
-  def autocomplete(newValue: Boolean): js.Any = js.native
+  def autocomplete_=(newValue: Boolean): Unit = js.native
   def counterMessage: Text = js.native
-  def counterMessage(newValue: Text): js.Any = js.native
+  def counterMessage_=(newValue: Text): Unit = js.native
   def numberOfLines: Double = js.native
-  def numberOfLines(newValue: Double): js.Any = js.native
+  def numberOfLines_=(newValue: Double): Unit = js.native
   def textTooLongMessage: Text = js.native
-  def textTooLongMessage(newValue: Text): js.Any = js.native
+  def textTooLongMessage_=(newValue: Text): Unit = js.native
 }
 
 /* static members */

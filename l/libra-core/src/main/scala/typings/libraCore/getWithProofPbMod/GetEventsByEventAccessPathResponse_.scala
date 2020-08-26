@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GetEventsByEventAccessPathResponse_ () extends Message {
   def addEventsWithProof(): EventWithProof = js.native
+  def addEventsWithProof(value: js.UndefOr[scala.Nothing], index: Double): EventWithProof = js.native
   def addEventsWithProof(value: EventWithProof): EventWithProof = js.native
   def addEventsWithProof(value: EventWithProof, index: Double): EventWithProof = js.native
   def clearEventsWithProofList(): Unit = js.native

@@ -12,7 +12,7 @@ Tap into a promise chain without affecting its value or state
 | Keywords           | promise, tap, debug, log, then, catch, error, chain, pipeline, thunk, function, async, await, promises, bluebird |
 | # releases         | 4 |
 | # dependents       | 14 |
-| # downloads        | 349246 |
+| # downloads        | 348134 |
 | # stars            | 1 |
 
 ## Links

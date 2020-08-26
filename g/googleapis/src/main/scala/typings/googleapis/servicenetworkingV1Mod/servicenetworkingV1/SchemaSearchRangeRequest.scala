@@ -28,11 +28,30 @@ trait SchemaSearchRangeRequest extends js.Object {
 
 object SchemaSearchRangeRequest {
   @scala.inline
-  def apply(ipPrefixLength: js.UndefOr[Double] = js.undefined, network: String = null): SchemaSearchRangeRequest = {
+  def apply(): SchemaSearchRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ipPrefixLength)) __obj.updateDynamic("ipPrefixLength")(ipPrefixLength.get.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchRangeRequest]
   }
+  @scala.inline
+  implicit class SchemaSearchRangeRequestOps[Self <: SchemaSearchRangeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpPrefixLength(value: Double): Self = this.set("ipPrefixLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpPrefixLength: Self = this.set("ipPrefixLength", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+  }
+  
 }
 

@@ -22,15 +22,34 @@ trait MessageDsn extends js.Object {
 
 object MessageDsn {
   @scala.inline
-  def apply(
-    ReportingMta: ReportingMta,
-    ArrivalDate: ArrivalDate = null,
-    ExtensionFields: ExtensionFieldList = null
-  ): MessageDsn = {
+  def apply(ReportingMta: ReportingMta): MessageDsn = {
     val __obj = js.Dynamic.literal(ReportingMta = ReportingMta.asInstanceOf[js.Any])
-    if (ArrivalDate != null) __obj.updateDynamic("ArrivalDate")(ArrivalDate.asInstanceOf[js.Any])
-    if (ExtensionFields != null) __obj.updateDynamic("ExtensionFields")(ExtensionFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageDsn]
   }
+  @scala.inline
+  implicit class MessageDsnOps[Self <: MessageDsn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReportingMta(value: ReportingMta): Self = this.set("ReportingMta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrivalDate(value: ArrivalDate): Self = this.set("ArrivalDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrivalDate: Self = this.set("ArrivalDate", js.undefined)
+    @scala.inline
+    def setExtensionFieldsVarargs(value: ExtensionField*): Self = this.set("ExtensionFields", js.Array(value :_*))
+    @scala.inline
+    def setExtensionFields(value: ExtensionFieldList): Self = this.set("ExtensionFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtensionFields: Self = this.set("ExtensionFields", js.undefined)
+  }
+  
 }
 

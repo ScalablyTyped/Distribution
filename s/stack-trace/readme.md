@@ -10,8 +10,8 @@ Get v8 stack traces as an array of CallSite objects.
 | Full name          | stack-trace |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 479 |
-| # downloads        | 183646974 |
+| # dependents       | 480 |
+| # downloads        | 188204616 |
 | # stars            | 21 |
 
 ## Links

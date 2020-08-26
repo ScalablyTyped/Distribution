@@ -5,115 +5,175 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDate
   extends typings.extjs.Ext.form.field.IPicker {
   /** [Config Option] (String) */
-  var altFormats: js.UndefOr[String] = js.undefined
+  var altFormats: js.UndefOr[String] = js.native
   /** [Method] private */
   @JSName("beforeBlur")
-  var beforeBlur_IDate: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var beforeBlur_IDate: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (String[]) */
-  var disabledDates: js.UndefOr[Array] = js.undefined
+  var disabledDates: js.UndefOr[Array] = js.native
   /** [Config Option] (String) */
-  var disabledDatesText: js.UndefOr[String] = js.undefined
+  var disabledDatesText: js.UndefOr[String] = js.native
   /** [Config Option] (Number[]) */
-  var disabledDays: js.UndefOr[Array] = js.undefined
+  var disabledDays: js.UndefOr[Array] = js.native
   /** [Config Option] (String) */
-  var disabledDaysText: js.UndefOr[String] = js.undefined
+  var disabledDaysText: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
+  /** [Method] Initializes the field s value based on the initial config  */
+  @JSName("initValue")
+  var initValue_IDate: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (String) */
-  var maxText: js.UndefOr[String] = js.undefined
+  var maxText: js.UndefOr[String] = js.native
   /** [Config Option] (Date/String) */
-  var maxValue: js.UndefOr[js.Any] = js.undefined
+  var maxValue: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var minText: js.UndefOr[String] = js.undefined
+  var minText: js.UndefOr[String] = js.native
   /** [Config Option] (Date/String) */
-  var minValue: js.UndefOr[js.Any] = js.undefined
+  var minValue: js.UndefOr[js.Any] = js.native
   /** [Method] Attempts to parse a given string value using a given date format. ... */
-  var safeParse: js.UndefOr[js.Any] = js.undefined
+  var safeParse: js.UndefOr[js.Any] = js.native
   /** [Method] Replaces any existing disabled dates with new values and refreshes the Date picker
     * @param disabledDates String[] An array of date strings (see the disabledDates config for details on supported values) used to disable a pattern of dates.
     */
-  var setDisabledDates: js.UndefOr[js.Function1[/* disabledDates */ js.UndefOr[Array], Unit]] = js.undefined
+  var setDisabledDates: js.UndefOr[js.Function1[/* disabledDates */ js.UndefOr[Array], Unit]] = js.native
   /** [Method] Replaces any existing disabled days by index 0 6 with new values and refreshes the Date picker
     * @param disabledDays Number[] An array of disabled day indexes. See the disabledDays config for details on supported values.
     */
-  var setDisabledDays: js.UndefOr[js.Function1[/* disabledDays */ js.UndefOr[Array], Unit]] = js.undefined
+  var setDisabledDays: js.UndefOr[js.Function1[/* disabledDays */ js.UndefOr[Array], Unit]] = js.native
   /** [Method] Replaces any existing maxValue with the new value and refreshes the Date picker
     * @param value Date The maximum date that can be selected
     */
-  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Replaces any existing minValue with the new value and refreshes the Date picker
     * @param value Date The minimum date that can be selected
     */
-  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of the date field
     * @param date String/Date The date or valid date string
     * @returns Ext.form.field.Date this
     */
   @JSName("setValue")
-  var setValue_IDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setValue_IDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[js.Any], this.type]] = js.native
   /** [Config Option] (Boolean) */
-  var showToday: js.UndefOr[Boolean] = js.undefined
+  var showToday: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number) */
-  var startDay: js.UndefOr[Double] = js.undefined
+  var startDay: js.UndefOr[Double] = js.native
   /** [Config Option] (String) */
-  var submitFormat: js.UndefOr[String] = js.undefined
+  var submitFormat: js.UndefOr[String] = js.native
   /** [Config Option] (Boolean) */
-  var useStrict: js.UndefOr[Boolean] = js.undefined
+  var useStrict: js.UndefOr[Boolean] = js.native
 }
 
 object IDate {
   @scala.inline
-  def apply(
-    IPicker: typings.extjs.Ext.form.field.IPicker = null,
-    altFormats: String = null,
-    beforeBlur: () => Unit = null,
-    disabledDates: Array = null,
-    disabledDatesText: String = null,
-    disabledDays: Array = null,
-    disabledDaysText: String = null,
-    format: String = null,
-    maxText: String = null,
-    maxValue: js.Any = null,
-    minText: String = null,
-    minValue: js.Any = null,
-    safeParse: js.Any = null,
-    setDisabledDates: /* disabledDates */ js.UndefOr[Array] => Unit = null,
-    setDisabledDays: /* disabledDays */ js.UndefOr[Array] => Unit = null,
-    setMaxValue: /* value */ js.UndefOr[js.Any] => Unit = null,
-    setMinValue: /* value */ js.UndefOr[js.Any] => Unit = null,
-    setValue: /* date */ js.UndefOr[js.Any] => IDate = null,
-    showToday: js.UndefOr[Boolean] = js.undefined,
-    startDay: js.UndefOr[Double] = js.undefined,
-    submitFormat: String = null,
-    useStrict: js.UndefOr[Boolean] = js.undefined
-  ): IDate = {
+  def apply(): IDate = {
     val __obj = js.Dynamic.literal()
-    if (IPicker != null) js.Dynamic.global.Object.assign(__obj, IPicker)
-    if (altFormats != null) __obj.updateDynamic("altFormats")(altFormats.asInstanceOf[js.Any])
-    if (beforeBlur != null) __obj.updateDynamic("beforeBlur")(js.Any.fromFunction0(beforeBlur))
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
-    if (disabledDatesText != null) __obj.updateDynamic("disabledDatesText")(disabledDatesText.asInstanceOf[js.Any])
-    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays.asInstanceOf[js.Any])
-    if (disabledDaysText != null) __obj.updateDynamic("disabledDaysText")(disabledDaysText.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (maxText != null) __obj.updateDynamic("maxText")(maxText.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minText != null) __obj.updateDynamic("minText")(minText.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (safeParse != null) __obj.updateDynamic("safeParse")(safeParse.asInstanceOf[js.Any])
-    if (setDisabledDates != null) __obj.updateDynamic("setDisabledDates")(js.Any.fromFunction1(setDisabledDates))
-    if (setDisabledDays != null) __obj.updateDynamic("setDisabledDays")(js.Any.fromFunction1(setDisabledDays))
-    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
-    if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startDay)) __obj.updateDynamic("startDay")(startDay.get.asInstanceOf[js.Any])
-    if (submitFormat != null) __obj.updateDynamic("submitFormat")(submitFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStrict)) __obj.updateDynamic("useStrict")(useStrict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDate]
   }
+  @scala.inline
+  implicit class IDateOps[Self <: IDate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltFormats(value: String): Self = this.set("altFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltFormats: Self = this.set("altFormats", js.undefined)
+    @scala.inline
+    def setBeforeBlur(value: () => Unit): Self = this.set("beforeBlur", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteBeforeBlur: Self = this.set("beforeBlur", js.undefined)
+    @scala.inline
+    def setDisabledDates(value: Array): Self = this.set("disabledDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDates: Self = this.set("disabledDates", js.undefined)
+    @scala.inline
+    def setDisabledDatesText(value: String): Self = this.set("disabledDatesText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDatesText: Self = this.set("disabledDatesText", js.undefined)
+    @scala.inline
+    def setDisabledDays(value: Array): Self = this.set("disabledDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDays: Self = this.set("disabledDays", js.undefined)
+    @scala.inline
+    def setDisabledDaysText(value: String): Self = this.set("disabledDaysText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDaysText: Self = this.set("disabledDaysText", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setInitValue(value: () => Unit): Self = this.set("initValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteInitValue: Self = this.set("initValue", js.undefined)
+    @scala.inline
+    def setMaxText(value: String): Self = this.set("maxText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxText: Self = this.set("maxText", js.undefined)
+    @scala.inline
+    def setMaxValue(value: js.Any): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinText(value: String): Self = this.set("minText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinText: Self = this.set("minText", js.undefined)
+    @scala.inline
+    def setMinValue(value: js.Any): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setSafeParse(value: js.Any): Self = this.set("safeParse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSafeParse: Self = this.set("safeParse", js.undefined)
+    @scala.inline
+    def setSetDisabledDates(value: /* disabledDates */ js.UndefOr[Array] => Unit): Self = this.set("setDisabledDates", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDisabledDates: Self = this.set("setDisabledDates", js.undefined)
+    @scala.inline
+    def setSetDisabledDays(value: /* disabledDays */ js.UndefOr[Array] => Unit): Self = this.set("setDisabledDays", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDisabledDays: Self = this.set("setDisabledDays", js.undefined)
+    @scala.inline
+    def setSetMaxValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("setMaxValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaxValue: Self = this.set("setMaxValue", js.undefined)
+    @scala.inline
+    def setSetMinValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("setMinValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinValue: Self = this.set("setMinValue", js.undefined)
+    @scala.inline
+    def setSetValue(value: /* date */ js.UndefOr[js.Any] => IDate): Self = this.set("setValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    @scala.inline
+    def setShowToday(value: Boolean): Self = this.set("showToday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowToday: Self = this.set("showToday", js.undefined)
+    @scala.inline
+    def setStartDay(value: Double): Self = this.set("startDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDay: Self = this.set("startDay", js.undefined)
+    @scala.inline
+    def setSubmitFormat(value: String): Self = this.set("submitFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitFormat: Self = this.set("submitFormat", js.undefined)
+    @scala.inline
+    def setUseStrict(value: Boolean): Self = this.set("useStrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseStrict: Self = this.set("useStrict", js.undefined)
+  }
+  
 }
 

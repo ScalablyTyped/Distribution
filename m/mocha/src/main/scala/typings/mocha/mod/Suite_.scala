@@ -1,7 +1,5 @@
 package typings.mocha.mod
 
-import typings.mocha.Mocha.IContext
-import typings.mocha.Mocha.ISuite
 import typings.mocha.Mocha.Suite
 import typings.mocha.Mocha.SuiteConstants
 import scala.scalajs.js
@@ -39,7 +37,6 @@ import scala.scalajs.js.annotation._
 class Suite_ protected () extends Suite {
   def this(title: String) = this()
   def this(title: String, parentContext: typings.mocha.Mocha.Context) = this()
-  def this(title: String, parentContext: IContext) = this()
 }
 
 /* static members */
@@ -47,8 +44,6 @@ class Suite_ protected () extends Suite {
 @js.native
 object Suite_ extends js.Object {
   val constants: SuiteConstants = js.native
-  /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
-  def create(parent: ISuite, title: String): Suite = js.native
   /**
     * Create a new `Suite` with the given `title` and parent `Suite`. When a suite
     * with the same title is already present, that suite is returned to provide

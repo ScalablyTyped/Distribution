@@ -22,8 +22,8 @@ object IEditorViewState {
     __obj.asInstanceOf[IEditorViewState]
   }
   @scala.inline
-  def IDiffEditorViewState(modified: ICodeEditorViewState = null, original: ICodeEditorViewState = null): IEditorViewState = {
-    val __obj = js.Dynamic.literal(modified = modified.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any])
+  def IDiffEditorViewState(): IEditorViewState = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEditorViewState]
   }
 }

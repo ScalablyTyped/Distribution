@@ -11,8 +11,8 @@ Checksum validator
 | Full name          | sumchecker |
 | Keywords           | checksum, hash |
 | # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 13435656 |
+| # dependents       | 11 |
+| # downloads        | 17388976 |
 | # stars            | 1 |
 
 ## Links

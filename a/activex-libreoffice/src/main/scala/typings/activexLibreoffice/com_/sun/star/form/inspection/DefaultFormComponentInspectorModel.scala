@@ -16,12 +16,13 @@ import scala.scalajs.js.annotation._
   * XMLFormsPropertyHandler}{@link XSDValidationPropertyHandler}
   * @see com.sun.star.inspection.XObjectInspectorModel.HandlerFactories
   */
+@js.native
 trait DefaultFormComponentInspectorModel extends XObjectInspectorModel {
   /**
     * creates a default {@link DefaultFormComponentInspectorModel} , providing factories for all handlers listed above.
     * @since OOo 2.2
     */
-  def createDefault(): Unit
+  def createDefault(): Unit = js.native
   /**
     * creates a default {@link DefaultFormComponentInspectorModel} , providing factories for all handlers listed above, and describing an ObjectInspector
     * which has a help section.
@@ -33,7 +34,7 @@ trait DefaultFormComponentInspectorModel extends XObjectInspectorModel {
     * @since OOo 2.2
     * @throws com::sun::star::lang::IllegalArgumentException if minHelpTextLines or maxHelpTextLines are negative, or if minHelpTextLines is greater than maxHe
     */
-  def createWithHelpSection(minHelpTextLines: Double, maxHelpTextLines: Double): Unit
+  def createWithHelpSection(minHelpTextLines: Double, maxHelpTextLines: Double): Unit = js.native
 }
 
 object DefaultFormComponentInspectorModel {
@@ -52,5 +53,22 @@ object DefaultFormComponentInspectorModel {
     val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories.asInstanceOf[js.Any], HasHelpSection = HasHelpSection.asInstanceOf[js.Any], IsReadOnly = IsReadOnly.asInstanceOf[js.Any], MaxHelpTextLines = MaxHelpTextLines.asInstanceOf[js.Any], MinHelpTextLines = MinHelpTextLines.asInstanceOf[js.Any], createDefault = js.Any.fromFunction0(createDefault), createWithHelpSection = js.Any.fromFunction2(createWithHelpSection), describeCategories = js.Any.fromFunction0(describeCategories), getPropertyOrderIndex = js.Any.fromFunction1(getPropertyOrderIndex))
     __obj.asInstanceOf[DefaultFormComponentInspectorModel]
   }
+  @scala.inline
+  implicit class DefaultFormComponentInspectorModelOps[Self <: DefaultFormComponentInspectorModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateDefault(value: () => Unit): Self = this.set("createDefault", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCreateWithHelpSection(value: (Double, Double) => Unit): Self = this.set("createWithHelpSection", js.Any.fromFunction2(value))
+  }
+  
 }
 

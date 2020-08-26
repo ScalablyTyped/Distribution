@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(getter: js.UndefOr[scala.Nothing], options: MethodOverrideOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(getter: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(getter: String, options: MethodOverrideOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(

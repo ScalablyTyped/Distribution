@@ -42,26 +42,54 @@ trait EC2InstanceDetails extends js.Object {
 
 object EC2InstanceDetails {
   @scala.inline
-  def apply(
-    AvailabilityZone: GenericString = null,
-    CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined,
-    Family: GenericString = null,
-    InstanceType: GenericString = null,
-    Platform: GenericString = null,
-    Region: GenericString = null,
-    SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined,
-    Tenancy: GenericString = null
-  ): EC2InstanceDetails = {
+  def apply(): EC2InstanceDetails = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.get.asInstanceOf[js.Any])
-    if (Family != null) __obj.updateDynamic("Family")(Family.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.get.asInstanceOf[js.Any])
-    if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
     __obj.asInstanceOf[EC2InstanceDetails]
   }
+  @scala.inline
+  implicit class EC2InstanceDetailsOps[Self <: EC2InstanceDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: GenericString): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setCurrentGeneration(value: GenericBoolean): Self = this.set("CurrentGeneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentGeneration: Self = this.set("CurrentGeneration", js.undefined)
+    @scala.inline
+    def setFamily(value: GenericString): Self = this.set("Family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily: Self = this.set("Family", js.undefined)
+    @scala.inline
+    def setInstanceType(value: GenericString): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setPlatform(value: GenericString): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("Platform", js.undefined)
+    @scala.inline
+    def setRegion(value: GenericString): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setSizeFlexEligible(value: GenericBoolean): Self = this.set("SizeFlexEligible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeFlexEligible: Self = this.set("SizeFlexEligible", js.undefined)
+    @scala.inline
+    def setTenancy(value: GenericString): Self = this.set("Tenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenancy: Self = this.set("Tenancy", js.undefined)
+  }
+  
 }
 

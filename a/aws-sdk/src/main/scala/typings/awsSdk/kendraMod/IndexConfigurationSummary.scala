@@ -34,19 +34,40 @@ trait IndexConfigurationSummary extends js.Object {
 
 object IndexConfigurationSummary {
   @scala.inline
-  def apply(
-    CreatedAt: Timestamp,
-    Status: IndexStatus,
-    UpdatedAt: Timestamp,
-    Edition: IndexEdition = null,
-    Id: IndexId = null,
-    Name: IndexName = null
-  ): IndexConfigurationSummary = {
+  def apply(CreatedAt: Timestamp, Status: IndexStatus, UpdatedAt: Timestamp): IndexConfigurationSummary = {
     val __obj = js.Dynamic.literal(CreatedAt = CreatedAt.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
-    if (Edition != null) __obj.updateDynamic("Edition")(Edition.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexConfigurationSummary]
   }
+  @scala.inline
+  implicit class IndexConfigurationSummaryOps[Self <: IndexConfigurationSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: IndexStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEdition(value: IndexEdition): Self = this.set("Edition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdition: Self = this.set("Edition", js.undefined)
+    @scala.inline
+    def setId(value: IndexId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: IndexName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

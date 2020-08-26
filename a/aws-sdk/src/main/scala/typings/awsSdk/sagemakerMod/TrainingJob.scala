@@ -138,80 +138,174 @@ trait TrainingJob extends js.Object {
 
 object TrainingJob {
   @scala.inline
-  def apply(
-    AlgorithmSpecification: AlgorithmSpecification = null,
-    AutoMLJobArn: AutoMLJobArn = null,
-    BillableTimeInSeconds: js.UndefOr[BillableTimeInSeconds] = js.undefined,
-    CheckpointConfig: CheckpointConfig = null,
-    CreationTime: Timestamp = null,
-    DebugHookConfig: DebugHookConfig = null,
-    DebugRuleConfigurations: DebugRuleConfigurations = null,
-    DebugRuleEvaluationStatuses: DebugRuleEvaluationStatuses = null,
-    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
-    EnableManagedSpotTraining: js.UndefOr[Boolean] = js.undefined,
-    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
-    ExperimentConfig: ExperimentConfig = null,
-    FailureReason: FailureReason = null,
-    FinalMetricDataList: FinalMetricDataList = null,
-    HyperParameters: HyperParameters = null,
-    InputDataConfig: InputDataConfig = null,
-    LabelingJobArn: LabelingJobArn = null,
-    LastModifiedTime: Timestamp = null,
-    ModelArtifacts: ModelArtifacts = null,
-    OutputDataConfig: OutputDataConfig = null,
-    ResourceConfig: ResourceConfig = null,
-    RoleArn: RoleArn = null,
-    SecondaryStatus: SecondaryStatus = null,
-    SecondaryStatusTransitions: SecondaryStatusTransitions = null,
-    StoppingCondition: StoppingCondition = null,
-    Tags: TagList = null,
-    TensorBoardOutputConfig: TensorBoardOutputConfig = null,
-    TrainingEndTime: Timestamp = null,
-    TrainingJobArn: TrainingJobArn = null,
-    TrainingJobName: TrainingJobName = null,
-    TrainingJobStatus: TrainingJobStatus = null,
-    TrainingStartTime: Timestamp = null,
-    TrainingTimeInSeconds: js.UndefOr[TrainingTimeInSeconds] = js.undefined,
-    TuningJobArn: HyperParameterTuningJobArn = null,
-    VpcConfig: VpcConfig = null
-  ): TrainingJob = {
+  def apply(): TrainingJob = {
     val __obj = js.Dynamic.literal()
-    if (AlgorithmSpecification != null) __obj.updateDynamic("AlgorithmSpecification")(AlgorithmSpecification.asInstanceOf[js.Any])
-    if (AutoMLJobArn != null) __obj.updateDynamic("AutoMLJobArn")(AutoMLJobArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(BillableTimeInSeconds)) __obj.updateDynamic("BillableTimeInSeconds")(BillableTimeInSeconds.get.asInstanceOf[js.Any])
-    if (CheckpointConfig != null) __obj.updateDynamic("CheckpointConfig")(CheckpointConfig.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DebugHookConfig != null) __obj.updateDynamic("DebugHookConfig")(DebugHookConfig.asInstanceOf[js.Any])
-    if (DebugRuleConfigurations != null) __obj.updateDynamic("DebugRuleConfigurations")(DebugRuleConfigurations.asInstanceOf[js.Any])
-    if (DebugRuleEvaluationStatuses != null) __obj.updateDynamic("DebugRuleEvaluationStatuses")(DebugRuleEvaluationStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableManagedSpotTraining)) __obj.updateDynamic("EnableManagedSpotTraining")(EnableManagedSpotTraining.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.get.asInstanceOf[js.Any])
-    if (ExperimentConfig != null) __obj.updateDynamic("ExperimentConfig")(ExperimentConfig.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (FinalMetricDataList != null) __obj.updateDynamic("FinalMetricDataList")(FinalMetricDataList.asInstanceOf[js.Any])
-    if (HyperParameters != null) __obj.updateDynamic("HyperParameters")(HyperParameters.asInstanceOf[js.Any])
-    if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])
-    if (LabelingJobArn != null) __obj.updateDynamic("LabelingJobArn")(LabelingJobArn.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (ModelArtifacts != null) __obj.updateDynamic("ModelArtifacts")(ModelArtifacts.asInstanceOf[js.Any])
-    if (OutputDataConfig != null) __obj.updateDynamic("OutputDataConfig")(OutputDataConfig.asInstanceOf[js.Any])
-    if (ResourceConfig != null) __obj.updateDynamic("ResourceConfig")(ResourceConfig.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (SecondaryStatus != null) __obj.updateDynamic("SecondaryStatus")(SecondaryStatus.asInstanceOf[js.Any])
-    if (SecondaryStatusTransitions != null) __obj.updateDynamic("SecondaryStatusTransitions")(SecondaryStatusTransitions.asInstanceOf[js.Any])
-    if (StoppingCondition != null) __obj.updateDynamic("StoppingCondition")(StoppingCondition.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TensorBoardOutputConfig != null) __obj.updateDynamic("TensorBoardOutputConfig")(TensorBoardOutputConfig.asInstanceOf[js.Any])
-    if (TrainingEndTime != null) __obj.updateDynamic("TrainingEndTime")(TrainingEndTime.asInstanceOf[js.Any])
-    if (TrainingJobArn != null) __obj.updateDynamic("TrainingJobArn")(TrainingJobArn.asInstanceOf[js.Any])
-    if (TrainingJobName != null) __obj.updateDynamic("TrainingJobName")(TrainingJobName.asInstanceOf[js.Any])
-    if (TrainingJobStatus != null) __obj.updateDynamic("TrainingJobStatus")(TrainingJobStatus.asInstanceOf[js.Any])
-    if (TrainingStartTime != null) __obj.updateDynamic("TrainingStartTime")(TrainingStartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(TrainingTimeInSeconds)) __obj.updateDynamic("TrainingTimeInSeconds")(TrainingTimeInSeconds.get.asInstanceOf[js.Any])
-    if (TuningJobArn != null) __obj.updateDynamic("TuningJobArn")(TuningJobArn.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingJob]
   }
+  @scala.inline
+  implicit class TrainingJobOps[Self <: TrainingJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithmSpecification(value: AlgorithmSpecification): Self = this.set("AlgorithmSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithmSpecification: Self = this.set("AlgorithmSpecification", js.undefined)
+    @scala.inline
+    def setAutoMLJobArn(value: AutoMLJobArn): Self = this.set("AutoMLJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMLJobArn: Self = this.set("AutoMLJobArn", js.undefined)
+    @scala.inline
+    def setBillableTimeInSeconds(value: BillableTimeInSeconds): Self = this.set("BillableTimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillableTimeInSeconds: Self = this.set("BillableTimeInSeconds", js.undefined)
+    @scala.inline
+    def setCheckpointConfig(value: CheckpointConfig): Self = this.set("CheckpointConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckpointConfig: Self = this.set("CheckpointConfig", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDebugHookConfig(value: DebugHookConfig): Self = this.set("DebugHookConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugHookConfig: Self = this.set("DebugHookConfig", js.undefined)
+    @scala.inline
+    def setDebugRuleConfigurationsVarargs(value: DebugRuleConfiguration*): Self = this.set("DebugRuleConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setDebugRuleConfigurations(value: DebugRuleConfigurations): Self = this.set("DebugRuleConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugRuleConfigurations: Self = this.set("DebugRuleConfigurations", js.undefined)
+    @scala.inline
+    def setDebugRuleEvaluationStatusesVarargs(value: DebugRuleEvaluationStatus*): Self = this.set("DebugRuleEvaluationStatuses", js.Array(value :_*))
+    @scala.inline
+    def setDebugRuleEvaluationStatuses(value: DebugRuleEvaluationStatuses): Self = this.set("DebugRuleEvaluationStatuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugRuleEvaluationStatuses: Self = this.set("DebugRuleEvaluationStatuses", js.undefined)
+    @scala.inline
+    def setEnableInterContainerTrafficEncryption(value: Boolean): Self = this.set("EnableInterContainerTrafficEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableInterContainerTrafficEncryption: Self = this.set("EnableInterContainerTrafficEncryption", js.undefined)
+    @scala.inline
+    def setEnableManagedSpotTraining(value: Boolean): Self = this.set("EnableManagedSpotTraining", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableManagedSpotTraining: Self = this.set("EnableManagedSpotTraining", js.undefined)
+    @scala.inline
+    def setEnableNetworkIsolation(value: Boolean): Self = this.set("EnableNetworkIsolation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableNetworkIsolation: Self = this.set("EnableNetworkIsolation", js.undefined)
+    @scala.inline
+    def setExperimentConfig(value: ExperimentConfig): Self = this.set("ExperimentConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentConfig: Self = this.set("ExperimentConfig", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setFinalMetricDataListVarargs(value: MetricData*): Self = this.set("FinalMetricDataList", js.Array(value :_*))
+    @scala.inline
+    def setFinalMetricDataList(value: FinalMetricDataList): Self = this.set("FinalMetricDataList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalMetricDataList: Self = this.set("FinalMetricDataList", js.undefined)
+    @scala.inline
+    def setHyperParameters(value: HyperParameters): Self = this.set("HyperParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyperParameters: Self = this.set("HyperParameters", js.undefined)
+    @scala.inline
+    def setInputDataConfigVarargs(value: Channel*): Self = this.set("InputDataConfig", js.Array(value :_*))
+    @scala.inline
+    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDataConfig: Self = this.set("InputDataConfig", js.undefined)
+    @scala.inline
+    def setLabelingJobArn(value: LabelingJobArn): Self = this.set("LabelingJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelingJobArn: Self = this.set("LabelingJobArn", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setModelArtifacts(value: ModelArtifacts): Self = this.set("ModelArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelArtifacts: Self = this.set("ModelArtifacts", js.undefined)
+    @scala.inline
+    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDataConfig: Self = this.set("OutputDataConfig", js.undefined)
+    @scala.inline
+    def setResourceConfig(value: ResourceConfig): Self = this.set("ResourceConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceConfig: Self = this.set("ResourceConfig", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setSecondaryStatus(value: SecondaryStatus): Self = this.set("SecondaryStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryStatus: Self = this.set("SecondaryStatus", js.undefined)
+    @scala.inline
+    def setSecondaryStatusTransitionsVarargs(value: SecondaryStatusTransition*): Self = this.set("SecondaryStatusTransitions", js.Array(value :_*))
+    @scala.inline
+    def setSecondaryStatusTransitions(value: SecondaryStatusTransitions): Self = this.set("SecondaryStatusTransitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryStatusTransitions: Self = this.set("SecondaryStatusTransitions", js.undefined)
+    @scala.inline
+    def setStoppingCondition(value: StoppingCondition): Self = this.set("StoppingCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppingCondition: Self = this.set("StoppingCondition", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTensorBoardOutputConfig(value: TensorBoardOutputConfig): Self = this.set("TensorBoardOutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTensorBoardOutputConfig: Self = this.set("TensorBoardOutputConfig", js.undefined)
+    @scala.inline
+    def setTrainingEndTime(value: Timestamp): Self = this.set("TrainingEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingEndTime: Self = this.set("TrainingEndTime", js.undefined)
+    @scala.inline
+    def setTrainingJobArn(value: TrainingJobArn): Self = this.set("TrainingJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingJobArn: Self = this.set("TrainingJobArn", js.undefined)
+    @scala.inline
+    def setTrainingJobName(value: TrainingJobName): Self = this.set("TrainingJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingJobName: Self = this.set("TrainingJobName", js.undefined)
+    @scala.inline
+    def setTrainingJobStatus(value: TrainingJobStatus): Self = this.set("TrainingJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingJobStatus: Self = this.set("TrainingJobStatus", js.undefined)
+    @scala.inline
+    def setTrainingStartTime(value: Timestamp): Self = this.set("TrainingStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingStartTime: Self = this.set("TrainingStartTime", js.undefined)
+    @scala.inline
+    def setTrainingTimeInSeconds(value: TrainingTimeInSeconds): Self = this.set("TrainingTimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingTimeInSeconds: Self = this.set("TrainingTimeInSeconds", js.undefined)
+    @scala.inline
+    def setTuningJobArn(value: HyperParameterTuningJobArn): Self = this.set("TuningJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTuningJobArn: Self = this.set("TuningJobArn", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

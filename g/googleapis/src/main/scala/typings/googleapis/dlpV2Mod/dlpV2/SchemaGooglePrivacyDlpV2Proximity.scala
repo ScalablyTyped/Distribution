@@ -21,11 +21,30 @@ trait SchemaGooglePrivacyDlpV2Proximity extends js.Object {
 
 object SchemaGooglePrivacyDlpV2Proximity {
   @scala.inline
-  def apply(windowAfter: js.UndefOr[Double] = js.undefined, windowBefore: js.UndefOr[Double] = js.undefined): SchemaGooglePrivacyDlpV2Proximity = {
+  def apply(): SchemaGooglePrivacyDlpV2Proximity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(windowAfter)) __obj.updateDynamic("windowAfter")(windowAfter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowBefore)) __obj.updateDynamic("windowBefore")(windowBefore.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Proximity]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2ProximityOps[Self <: SchemaGooglePrivacyDlpV2Proximity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWindowAfter(value: Double): Self = this.set("windowAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowAfter: Self = this.set("windowAfter", js.undefined)
+    @scala.inline
+    def setWindowBefore(value: Double): Self = this.set("windowBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowBefore: Self = this.set("windowBefore", js.undefined)
+  }
+  
 }
 

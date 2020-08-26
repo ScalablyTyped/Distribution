@@ -1,40 +1,45 @@
 package typings.antDesignReactNative.listMod
 
-import typings.antDesignReactNative.antDesignReactNativeBooleans.`false`
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.antDesignReactNative.listPropsTypeMod.ListPropsType
 import typings.antDesignReactNative.listStyleMod.ListStyle
-import typings.react.mod.ReactType
-import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListProps
   extends ListPropsType
      with WithThemeStyles[ListStyle] {
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
 }
 
 object ListProps {
   @scala.inline
-  def apply(
-    children: `false` | Element | js.Array[Element] = null,
-    renderFooter: js.Function0[ReactType[_]] | String | Element = null,
-    renderHeader: js.Function0[ReactType[_]] | String | Element = null,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    styles: Partial[ListStyle] = null
-  ): ListProps = {
+  def apply(): ListProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (renderFooter != null) __obj.updateDynamic("renderFooter")(renderFooter.asInstanceOf[js.Any])
-    if (renderHeader != null) __obj.updateDynamic("renderHeader")(renderHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProps]
   }
+  @scala.inline
+  implicit class ListPropsOps[Self <: ListProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+  }
+  
 }
 

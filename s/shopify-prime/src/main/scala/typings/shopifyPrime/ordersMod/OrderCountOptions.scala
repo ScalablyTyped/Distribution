@@ -8,32 +8,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrderCountOptions extends DateOptions {
-  var financial_status: js.UndefOr[FinancialStatus] = js.undefined
-  var fulfillment_status: js.UndefOr[FulfillmentStatus] = js.undefined
-  var status: js.UndefOr[OrderStatus] = js.undefined
+  var financial_status: js.UndefOr[FinancialStatus] = js.native
+  var fulfillment_status: js.UndefOr[FulfillmentStatus] = js.native
+  var status: js.UndefOr[OrderStatus] = js.native
 }
 
 object OrderCountOptions {
   @scala.inline
-  def apply(
-    created_at_max: String = null,
-    created_at_min: String = null,
-    financial_status: FinancialStatus = null,
-    fulfillment_status: FulfillmentStatus = null,
-    status: OrderStatus = null,
-    updated_at_max: String = null,
-    updated_at_min: String = null
-  ): OrderCountOptions = {
+  def apply(): OrderCountOptions = {
     val __obj = js.Dynamic.literal()
-    if (created_at_max != null) __obj.updateDynamic("created_at_max")(created_at_max.asInstanceOf[js.Any])
-    if (created_at_min != null) __obj.updateDynamic("created_at_min")(created_at_min.asInstanceOf[js.Any])
-    if (financial_status != null) __obj.updateDynamic("financial_status")(financial_status.asInstanceOf[js.Any])
-    if (fulfillment_status != null) __obj.updateDynamic("fulfillment_status")(fulfillment_status.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (updated_at_max != null) __obj.updateDynamic("updated_at_max")(updated_at_max.asInstanceOf[js.Any])
-    if (updated_at_min != null) __obj.updateDynamic("updated_at_min")(updated_at_min.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderCountOptions]
   }
+  @scala.inline
+  implicit class OrderCountOptionsOps[Self <: OrderCountOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFinancial_status(value: FinancialStatus): Self = this.set("financial_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinancial_status: Self = this.set("financial_status", js.undefined)
+    @scala.inline
+    def setFulfillment_status(value: FulfillmentStatus): Self = this.set("fulfillment_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFulfillment_status: Self = this.set("fulfillment_status", js.undefined)
+    @scala.inline
+    def setStatus(value: OrderStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -11,7 +11,5 @@ class dialogCommand protected ()
   extends typings.ckeditor.CKEDITOR.dialogCommand {
   def this(dialogName: String) = this()
   def this(dialogName: String, ext: TabId) = this()
-  /* CompleteClass */
-  override var value: js.Any = js.native
 }
 

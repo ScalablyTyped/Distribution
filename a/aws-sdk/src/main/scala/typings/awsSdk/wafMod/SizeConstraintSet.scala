@@ -22,10 +22,32 @@ trait SizeConstraintSet extends js.Object {
 
 object SizeConstraintSet {
   @scala.inline
-  def apply(SizeConstraintSetId: ResourceId, SizeConstraints: SizeConstraints, Name: ResourceName = null): SizeConstraintSet = {
+  def apply(SizeConstraintSetId: ResourceId, SizeConstraints: SizeConstraints): SizeConstraintSet = {
     val __obj = js.Dynamic.literal(SizeConstraintSetId = SizeConstraintSetId.asInstanceOf[js.Any], SizeConstraints = SizeConstraints.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeConstraintSet]
   }
+  @scala.inline
+  implicit class SizeConstraintSetOps[Self <: SizeConstraintSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSizeConstraintSetId(value: ResourceId): Self = this.set("SizeConstraintSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSizeConstraintsVarargs(value: SizeConstraint*): Self = this.set("SizeConstraints", js.Array(value :_*))
+    @scala.inline
+    def setSizeConstraints(value: SizeConstraints): Self = this.set("SizeConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

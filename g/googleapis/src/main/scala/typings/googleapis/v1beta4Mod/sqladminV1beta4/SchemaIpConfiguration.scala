@@ -34,18 +34,40 @@ trait SchemaIpConfiguration extends js.Object {
 
 object SchemaIpConfiguration {
   @scala.inline
-  def apply(
-    authorizedNetworks: js.Array[SchemaAclEntry] = null,
-    ipv4Enabled: js.UndefOr[Boolean] = js.undefined,
-    privateNetwork: String = null,
-    requireSsl: js.UndefOr[Boolean] = js.undefined
-  ): SchemaIpConfiguration = {
+  def apply(): SchemaIpConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (authorizedNetworks != null) __obj.updateDynamic("authorizedNetworks")(authorizedNetworks.asInstanceOf[js.Any])
-    if (!js.isUndefined(ipv4Enabled)) __obj.updateDynamic("ipv4Enabled")(ipv4Enabled.get.asInstanceOf[js.Any])
-    if (privateNetwork != null) __obj.updateDynamic("privateNetwork")(privateNetwork.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireSsl)) __obj.updateDynamic("requireSsl")(requireSsl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIpConfiguration]
   }
+  @scala.inline
+  implicit class SchemaIpConfigurationOps[Self <: SchemaIpConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizedNetworksVarargs(value: SchemaAclEntry*): Self = this.set("authorizedNetworks", js.Array(value :_*))
+    @scala.inline
+    def setAuthorizedNetworks(value: js.Array[SchemaAclEntry]): Self = this.set("authorizedNetworks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizedNetworks: Self = this.set("authorizedNetworks", js.undefined)
+    @scala.inline
+    def setIpv4Enabled(value: Boolean): Self = this.set("ipv4Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv4Enabled: Self = this.set("ipv4Enabled", js.undefined)
+    @scala.inline
+    def setPrivateNetwork(value: String): Self = this.set("privateNetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateNetwork: Self = this.set("privateNetwork", js.undefined)
+    @scala.inline
+    def setRequireSsl(value: Boolean): Self = this.set("requireSsl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireSsl: Self = this.set("requireSsl", js.undefined)
+  }
+  
 }
 

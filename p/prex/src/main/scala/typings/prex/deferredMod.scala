@@ -13,7 +13,7 @@ object deferredMod extends js.Object {
     * Initializes a new instance of the Deferred class.
     */
   class Deferred[T] () extends js.Object {
-    var _callback: js.UndefOr[js.Any] = js.native
+    var _callback: js.Any = js.native
     var _promise: js.Any = js.native
     var _reject: js.Any = js.native
     var _resolve: js.Any = js.native

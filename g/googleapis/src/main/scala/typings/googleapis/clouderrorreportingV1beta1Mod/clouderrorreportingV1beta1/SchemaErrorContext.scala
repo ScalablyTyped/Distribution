@@ -40,18 +40,40 @@ trait SchemaErrorContext extends js.Object {
 
 object SchemaErrorContext {
   @scala.inline
-  def apply(
-    httpRequest: SchemaHttpRequestContext = null,
-    reportLocation: SchemaSourceLocation = null,
-    sourceReferences: js.Array[SchemaSourceReference] = null,
-    user: String = null
-  ): SchemaErrorContext = {
+  def apply(): SchemaErrorContext = {
     val __obj = js.Dynamic.literal()
-    if (httpRequest != null) __obj.updateDynamic("httpRequest")(httpRequest.asInstanceOf[js.Any])
-    if (reportLocation != null) __obj.updateDynamic("reportLocation")(reportLocation.asInstanceOf[js.Any])
-    if (sourceReferences != null) __obj.updateDynamic("sourceReferences")(sourceReferences.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaErrorContext]
   }
+  @scala.inline
+  implicit class SchemaErrorContextOps[Self <: SchemaErrorContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpRequest(value: SchemaHttpRequestContext): Self = this.set("httpRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpRequest: Self = this.set("httpRequest", js.undefined)
+    @scala.inline
+    def setReportLocation(value: SchemaSourceLocation): Self = this.set("reportLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportLocation: Self = this.set("reportLocation", js.undefined)
+    @scala.inline
+    def setSourceReferencesVarargs(value: SchemaSourceReference*): Self = this.set("sourceReferences", js.Array(value :_*))
+    @scala.inline
+    def setSourceReferences(value: js.Array[SchemaSourceReference]): Self = this.set("sourceReferences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceReferences: Self = this.set("sourceReferences", js.undefined)
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

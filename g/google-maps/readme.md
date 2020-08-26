@@ -4,21 +4,21 @@
 Typings are for version 3.2.1
 
 ## Library description:
-Wrapper for asynchronously used Google Maps API
+Async loader for google maps api (browser, typescript)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | google-maps |
-| Keywords           | google, maps, asynchronous, browser, wrapper |
-| # releases         | 2 |
+| Keywords           | google, maps, asynchronous, async, loader, browser |
+| # releases         | 5 |
 | # dependents       | 67 |
-| # downloads        | 1615993 |
+| # downloads        | 1751846 |
 | # stars            | 29 |
 
 ## Links
-- [Homepage](https://github.com/Carrooi/Js-GoogleMapsLoader#readme)
-- [Bugs](https://github.com/Carrooi/Js-GoogleMapsLoader/issues)
-- [Repository](https://github.com/Carrooi/Js-GoogleMapsLoader)
+- [Homepage](https://github.com/davidkudera/google-maps-loader#readme)
+- [Bugs](https://github.com/davidkudera/google-maps-loader/issues)
+- [Repository](https://github.com/davidkudera/google-maps-loader)
 - [Npm](https://www.npmjs.com/package/google-maps)
     
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/coreutils/lib/uuid", JSImport.Namespace)
+@JSImport("@lumino/coreutils/types/uuid", JSImport.Namespace)
 @js.native
 object uuidMod extends js.Object {
   @js.native

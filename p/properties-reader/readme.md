@@ -12,7 +12,7 @@ Properties file reader for Node.js
 | Keywords           | properties, ini, parser |
 | # releases         | 4 |
 | # dependents       | 110 |
-| # downloads        | 2112217 |
+| # downloads        | 2168299 |
 | # stars            | 1 |
 
 ## Links

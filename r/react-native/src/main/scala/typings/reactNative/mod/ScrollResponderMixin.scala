@@ -208,6 +208,11 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *        down to make it meet the keyboard's top. Default is false.
     */
   def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(
+    nodeHandle: js.Any,
+    additionalOffset: js.UndefOr[scala.Nothing],
+    preventNegativeScrollOffset: Boolean
+  ): Unit = js.native
   def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Double): Unit = js.native
   def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Double, preventNegativeScrollOffset: Boolean): Unit = js.native
   /**
@@ -222,10 +227,15 @@ trait ScrollResponderMixin extends SubscribableMixin {
     * This is deprecated due to ambiguity (y before x), and SHOULD NOT BE USED.
     */
   def scrollResponderScrollTo(): Unit = js.native
+  def scrollResponderScrollTo(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def scrollResponderScrollTo(x: js.UndefOr[scala.Nothing], y: Double, animated: Boolean): Unit = js.native
   def scrollResponderScrollTo(x: Double): Unit = js.native
+  def scrollResponderScrollTo(x: Double, y: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollResponderScrollTo(x: Double, y: Double): Unit = js.native
   def scrollResponderScrollTo(x: Double, y: Double, animated: Boolean): Unit = js.native
   def scrollResponderScrollTo(x: typings.reactNative.anon.Animated): Unit = js.native
+  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Double): Unit = js.native
   def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Double, animated: Boolean): Unit = js.native
   def scrollResponderTextInputFocusError(e: ScrollResponderEvent): Unit = js.native

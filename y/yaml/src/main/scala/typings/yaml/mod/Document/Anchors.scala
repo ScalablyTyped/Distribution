@@ -31,12 +31,12 @@ trait Anchors extends js.Object {
     * numerical suffix.
     */
   def newName(prefix: String): String = js.native
-  def setAnchor(): Unit | String = js.native
-  def setAnchor(node: Null, name: String): Unit | String = js.native
   /**
     * Associate an anchor with `node`. If `name` is empty, a new name will be generated.
     * To remove an anchor, use `setAnchor(null, name)`.
     */
+  def setAnchor(): Unit | String = js.native
+  def setAnchor(node: Null, name: String): Unit | String = js.native
   def setAnchor(node: Node): Unit | String = js.native
   def setAnchor(node: Node, name: String): Unit | String = js.native
 }

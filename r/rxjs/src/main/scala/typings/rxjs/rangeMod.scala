@@ -11,7 +11,11 @@ import scala.scalajs.js.annotation._
 object rangeMod extends js.Object {
   def dispatch(state: js.Any): Unit = js.native
   def range(): Observable[Double] = js.native
+  def range(start: js.UndefOr[scala.Nothing], count: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
+  def range(start: js.UndefOr[scala.Nothing], count: Double): Observable[Double] = js.native
+  def range(start: js.UndefOr[scala.Nothing], count: Double, scheduler: SchedulerLike): Observable[Double] = js.native
   def range(start: Double): Observable[Double] = js.native
+  def range(start: Double, count: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
   def range(start: Double, count: Double): Observable[Double] = js.native
   def range(start: Double, count: Double, scheduler: SchedulerLike): Observable[Double] = js.native
 }

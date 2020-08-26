@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * NxValidationError...
   */
+@js.native
 trait INxValidationError extends js.Object {
   /**
     * Context related to the error, from the user app domain.
@@ -14,28 +15,49 @@ trait INxValidationError extends js.Object {
     * This parameter is optional.
     * String
     */
-  var qContext: js.UndefOr[String] = js.undefined
+  var qContext: js.UndefOr[String] = js.native
   /**
     * Error code.
     * This parameter is always displayed in case of error.
     * Integer
     */
-  var qErrorCode: Double
+  var qErrorCode: Double = js.native
   /**
     * Internal information from the server.
     * This parameter is optional.
     * String
     */
-  var qExtendedMessage: js.UndefOr[String] = js.undefined
+  var qExtendedMessage: js.UndefOr[String] = js.native
 }
 
 object INxValidationError {
   @scala.inline
-  def apply(qErrorCode: Double, qContext: String = null, qExtendedMessage: String = null): INxValidationError = {
+  def apply(qErrorCode: Double): INxValidationError = {
     val __obj = js.Dynamic.literal(qErrorCode = qErrorCode.asInstanceOf[js.Any])
-    if (qContext != null) __obj.updateDynamic("qContext")(qContext.asInstanceOf[js.Any])
-    if (qExtendedMessage != null) __obj.updateDynamic("qExtendedMessage")(qExtendedMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxValidationError]
   }
+  @scala.inline
+  implicit class INxValidationErrorOps[Self <: INxValidationError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQErrorCode(value: Double): Self = this.set("qErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQContext(value: String): Self = this.set("qContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQContext: Self = this.set("qContext", js.undefined)
+    @scala.inline
+    def setQExtendedMessage(value: String): Self = this.set("qExtendedMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQExtendedMessage: Self = this.set("qExtendedMessage", js.undefined)
+  }
+  
 }
 

@@ -30,6 +30,7 @@ class ResourceSites protected () extends js.Object {
     */
   def getConfig(): GaxiosPromise[SchemaSiteConfig] = js.native
   def getConfig(callback: BodyResponseCallback[SchemaSiteConfig]): Unit = js.native
+  def getConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteConfig] = js.native
   def getConfig(params: ParamsResourceSitesGetconfig): GaxiosPromise[SchemaSiteConfig] = js.native
   def getConfig(params: ParamsResourceSitesGetconfig, callback: BodyResponseCallback[SchemaSiteConfig]): Unit = js.native
   def getConfig(
@@ -59,6 +60,7 @@ class ResourceSites protected () extends js.Object {
     */
   def updateConfig(): GaxiosPromise[SchemaSiteConfig] = js.native
   def updateConfig(callback: BodyResponseCallback[SchemaSiteConfig]): Unit = js.native
+  def updateConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSiteConfig] = js.native
   def updateConfig(params: ParamsResourceSitesUpdateconfig): GaxiosPromise[SchemaSiteConfig] = js.native
   def updateConfig(params: ParamsResourceSitesUpdateconfig, callback: BodyResponseCallback[SchemaSiteConfig]): Unit = js.native
   def updateConfig(

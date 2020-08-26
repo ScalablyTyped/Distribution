@@ -19,6 +19,12 @@ object mod extends js.Object {
     def this(
       resources: js.Array[typings.odata.orequestMod.ORequest],
       config: OdataConfig,
+      query: js.UndefOr[scala.Nothing],
+      changeset: Boolean
+    ) = this()
+    def this(
+      resources: js.Array[typings.odata.orequestMod.ORequest],
+      config: OdataConfig,
       query: OdataQuery,
       changeset: Boolean
     ) = this()

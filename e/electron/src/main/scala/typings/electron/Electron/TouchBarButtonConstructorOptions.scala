@@ -7,51 +7,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TouchBarButtonConstructorOptions extends js.Object {
   /**
     * A short description of the button for use by screenreaders like VoiceOver.
     */
-  var accessibilityLabel: js.UndefOr[String] = js.undefined
+  var accessibilityLabel: js.UndefOr[String] = js.native
   /**
     * Button background color in hex format, i.e `#ABCDEF`.
     */
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
   /**
     * Function to call when the button is clicked.
     */
-  var click: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var click: js.UndefOr[js.Function0[Unit]] = js.native
+  /**
+    * Whether the button is in an enabled state.  Default is `true`.
+    */
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * Button icon.
     */
-  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
+  var icon: js.UndefOr[NativeImage_ | String] = js.native
   /**
     * Can be `left`, `right` or `overlay`. Defaults to `overlay`.
     */
-  var iconPosition: js.UndefOr[left | right | overlay] = js.undefined
+  var iconPosition: js.UndefOr[left | right | overlay] = js.native
   /**
     * Button text.
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
 }
 
 object TouchBarButtonConstructorOptions {
   @scala.inline
-  def apply(
-    accessibilityLabel: String = null,
-    backgroundColor: String = null,
-    click: () => Unit = null,
-    icon: NativeImage_ | String = null,
-    iconPosition: left | right | overlay = null,
-    label: String = null
-  ): TouchBarButtonConstructorOptions = {
+  def apply(): TouchBarButtonConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction0(click))
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconPosition != null) __obj.updateDynamic("iconPosition")(iconPosition.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarButtonConstructorOptions]
   }
+  @scala.inline
+  implicit class TouchBarButtonConstructorOptionsOps[Self <: TouchBarButtonConstructorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setClick(value: () => Unit): Self = this.set("click", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setIcon(value: NativeImage_ | String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconPosition(value: left | right | overlay): Self = this.set("iconPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconPosition: Self = this.set("iconPosition", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+  }
+  
 }
 

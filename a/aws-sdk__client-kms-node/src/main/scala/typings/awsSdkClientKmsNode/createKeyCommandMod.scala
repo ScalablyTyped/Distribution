@@ -26,16 +26,9 @@ object createKeyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: CreateKeyInput) = this()
-    /* CompleteClass */
-    override val input: CreateKeyInput = js.native
     val middlewareStack: MiddlewareStack[CreateKeyInput, CreateKeyOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[CreateKeyInput, CreateKeyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[CreateKeyInput, CreateKeyOutput] = js.native
   }

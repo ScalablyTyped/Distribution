@@ -11,6 +11,7 @@ trait Geom extends js.Object {
   def adjust(adj: String): this.type = js.native
   def adjust(adjs: js.Array[_]): this.type = js.native
   def animate(opt: js.Any): Geom = js.native
+  def clearSelected(): Unit = js.native
   def color(col: String): this.type = js.native
   def color(`type`: String, colors: js.Array[String]): this.type = js.native
   def color(`type`: String, fun: js.Function): this.type = js.native
@@ -25,6 +26,7 @@ trait Geom extends js.Object {
   def select(open: Boolean): this.type = js.native
   def select(open: Boolean, opt: typings.antvG2.anon.Animate): this.type = js.native
   def select(opt: typings.antvG2.anon.Animate): this.type = js.native
+  def setSelected(record: js.Any): this.type = js.native
   def shape(shape: String): this.type = js.native
   def shape(`type`: String, colors: js.Array[String]): this.type = js.native
   def shape(`type`: String, fun: js.Function): this.type = js.native

@@ -15,6 +15,7 @@ trait TSQueryApi extends js.Object {
   def apply[T /* <: Node */](ast: Node, selector: String): js.Array[T] = js.native
   def apply[T /* <: Node */](ast: Node, selector: String, options: TSQueryOptions): js.Array[T] = js.native
   def ast(source: String): SourceFile = js.native
+  def ast(source: String, fileName: js.UndefOr[scala.Nothing], scriptKind: ScriptKind): SourceFile = js.native
   def ast(source: String, fileName: String): SourceFile = js.native
   def ast(source: String, fileName: String, scriptKind: ScriptKind): SourceFile = js.native
   def map(ast: SourceFile, selector: String, nodeTransformer: TSQueryNodeTransformer): SourceFile = js.native

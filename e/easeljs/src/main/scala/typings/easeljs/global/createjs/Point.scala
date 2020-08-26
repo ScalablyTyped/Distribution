@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Point ()
   extends typings.easeljs.createjs.Point {
   def this(x: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
 }
 

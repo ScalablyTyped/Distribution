@@ -17,25 +17,5 @@ class ASPxClientTabControlTabCancelEventArgs protected ()
     * @param tab An ASPxClientTab object representing a tab related to the event.
     */
   def this(processOnServer: Boolean, tab: typings.devexpressWeb.ASPxClientTab) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
-  /**
-    * Gets or sets a value specifying whether a callback should be sent to the server to reload the content of the page being activated.
-    */
-  /* CompleteClass */
-  override var reloadContentOnCallback: Boolean = js.native
-  /**
-    * Gets the tab object related to the event.
-    */
-  /* CompleteClass */
-  override var tab: typings.devexpressWeb.ASPxClientTab = js.native
 }
 

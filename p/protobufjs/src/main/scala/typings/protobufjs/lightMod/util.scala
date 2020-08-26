@@ -42,15 +42,6 @@ object util extends js.Object {
   class Long protected ()
     extends typings.protobufjs.mod.Long {
     def this(params: js.Any*) = this()
-    /** High bits */
-    /* CompleteClass */
-    override var high: Double = js.native
-    /** Low bits */
-    /* CompleteClass */
-    override var low: Double = js.native
-    /** Whether unsigned or not */
-    /* CompleteClass */
-    override var unsigned: Boolean = js.native
   }
   
   /** Helper class for working with the low and high bits of a 64 bit value. */
@@ -84,8 +75,10 @@ object util extends js.Object {
   val emptyArray: js.Array[js.Any] = js.native
   /** An immutable empty object. */
   val emptyObject: js.Object = js.native
+  /** Global object reference. */
+  var global: js.Object = js.native
   /** Whether running within node or not. */
-  val isNode: Boolean = js.native
+  var isNode: Boolean = js.native
   /** Regular expression used to verify 2 bit (`bool`) map keys. */
   val key2Re: RegExp = js.native
   /** Regular expression used to verify 32 bit (`int32` etc.) map keys. */
@@ -281,6 +274,14 @@ object util extends js.Object {
     * @returns Safe accessor
     */
   def safeProp(prop: String): String = js.native
+  /**
+    * Sets the value of a property by property path. If a value already exists, it is turned to an array
+    * @param dst Destination object
+    * @param path dot '.' delimited path of the property to set
+    * @param value the value to set
+    * @returns Destination object
+    */
+  def setProperty(dst: StringDictionary[js.Any], path: String, value: js.Object): StringDictionary[js.Any] = js.native
   /**
     * Converts an object's values to an array.
     * @param object Object to convert

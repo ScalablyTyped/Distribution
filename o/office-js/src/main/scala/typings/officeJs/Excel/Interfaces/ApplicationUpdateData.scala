@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
+@js.native
 trait ApplicationUpdateData extends js.Object {
   /**
     *
@@ -16,7 +17,7 @@ trait ApplicationUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
-  var calculationMode: js.UndefOr[CalculationMode | Automatic | AutomaticExceptTables | Manual] = js.undefined
+  var calculationMode: js.UndefOr[CalculationMode | Automatic | AutomaticExceptTables | Manual] = js.native
   /**
     *
     * Returns the Iterative Calculation settings.
@@ -25,19 +26,35 @@ trait ApplicationUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var iterativeCalculation: js.UndefOr[IterativeCalculationUpdateData] = js.undefined
+  var iterativeCalculation: js.UndefOr[IterativeCalculationUpdateData] = js.native
 }
 
 object ApplicationUpdateData {
   @scala.inline
-  def apply(
-    calculationMode: CalculationMode | Automatic | AutomaticExceptTables | Manual = null,
-    iterativeCalculation: IterativeCalculationUpdateData = null
-  ): ApplicationUpdateData = {
+  def apply(): ApplicationUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (calculationMode != null) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
-    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationUpdateData]
   }
+  @scala.inline
+  implicit class ApplicationUpdateDataOps[Self <: ApplicationUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCalculationMode(value: CalculationMode | Automatic | AutomaticExceptTables | Manual): Self = this.set("calculationMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalculationMode: Self = this.set("calculationMode", js.undefined)
+    @scala.inline
+    def setIterativeCalculation(value: IterativeCalculationUpdateData): Self = this.set("iterativeCalculation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIterativeCalculation: Self = this.set("iterativeCalculation", js.undefined)
+  }
+  
 }
 

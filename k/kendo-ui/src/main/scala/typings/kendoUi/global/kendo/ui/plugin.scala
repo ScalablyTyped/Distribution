@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object plugin extends js.Object {
   def apply(widget: js.Any): Unit = js.native
+  def apply(widget: js.Any, register: js.UndefOr[scala.Nothing], prefix: String): Unit = js.native
   def apply(widget: js.Any, register: Typeofui): Unit = js.native
   def apply(widget: js.Any, register: TypeofuiActionSheet): Unit = js.native
   def apply(widget: js.Any, register: TypeofuiActionSheet, prefix: String): Unit = js.native
@@ -19,6 +20,7 @@ object plugin extends js.Object {
   def apply(widget: js.Any, register: TypeofuiArcGauge, prefix: String): Unit = js.native
   def apply(widget: js.Any, register: Typeofui, prefix: String): Unit = js.native
   def apply(widget: TypeofWidget): Unit = js.native
+  def apply(widget: TypeofWidget, register: js.UndefOr[scala.Nothing], prefix: String): Unit = js.native
   def apply(widget: TypeofWidget, register: Typeofui): Unit = js.native
   def apply(widget: TypeofWidget, register: TypeofuiActionSheet): Unit = js.native
   def apply(widget: TypeofWidget, register: TypeofuiActionSheet, prefix: String): Unit = js.native

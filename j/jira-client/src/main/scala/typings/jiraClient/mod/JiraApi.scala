@@ -48,39 +48,503 @@ trait JiraApi extends js.Object {
   def deleteWorklog(issueId: String, worklogId: String): js.Promise[JsonResponse] = js.native
   /* private */ def doRequest(requestOptions: CoreOptions): js.Promise[RequestResponse] = js.native
   def findIssue(issueNumber: String): js.Promise[JsonResponse] = js.native
+  def findIssue(
+    issueNumber: String,
+    expand: js.UndefOr[scala.Nothing],
+    fields: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    fieldsByKeys: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def findIssue(
+    issueNumber: String,
+    expand: js.UndefOr[scala.Nothing],
+    fields: js.UndefOr[scala.Nothing],
+    properties: String
+  ): js.Promise[JsonResponse] = js.native
+  def findIssue(
+    issueNumber: String,
+    expand: js.UndefOr[scala.Nothing],
+    fields: js.UndefOr[scala.Nothing],
+    properties: String,
+    fieldsByKeys: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def findIssue(issueNumber: String, expand: js.UndefOr[scala.Nothing], fields: String): js.Promise[JsonResponse] = js.native
+  def findIssue(
+    issueNumber: String,
+    expand: js.UndefOr[scala.Nothing],
+    fields: String,
+    properties: js.UndefOr[scala.Nothing],
+    fieldsByKeys: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def findIssue(issueNumber: String, expand: js.UndefOr[scala.Nothing], fields: String, properties: String): js.Promise[JsonResponse] = js.native
+  def findIssue(
+    issueNumber: String,
+    expand: js.UndefOr[scala.Nothing],
+    fields: String,
+    properties: String,
+    fieldsByKeys: Boolean
+  ): js.Promise[JsonResponse] = js.native
   def findIssue(issueNumber: String, expand: String): js.Promise[JsonResponse] = js.native
+  def findIssue(
+    issueNumber: String,
+    expand: String,
+    fields: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    fieldsByKeys: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def findIssue(issueNumber: String, expand: String, fields: js.UndefOr[scala.Nothing], properties: String): js.Promise[JsonResponse] = js.native
+  def findIssue(
+    issueNumber: String,
+    expand: String,
+    fields: js.UndefOr[scala.Nothing],
+    properties: String,
+    fieldsByKeys: Boolean
+  ): js.Promise[JsonResponse] = js.native
   def findIssue(issueNumber: String, expand: String, fields: String): js.Promise[JsonResponse] = js.native
+  def findIssue(
+    issueNumber: String,
+    expand: String,
+    fields: String,
+    properties: js.UndefOr[scala.Nothing],
+    fieldsByKeys: Boolean
+  ): js.Promise[JsonResponse] = js.native
   def findIssue(issueNumber: String, expand: String, fields: String, properties: String): js.Promise[JsonResponse] = js.native
   def findIssue(issueNumber: String, expand: String, fields: String, properties: String, fieldsByKeys: Boolean): js.Promise[JsonResponse] = js.native
   def findRapidView(projectName: String): js.Promise[js.Array[JsonResponse]] = js.native
   def getAllBoards(): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[scala.Nothing],
+    name: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[scala.Nothing],
+    name: String,
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(startAt: js.UndefOr[scala.Nothing], maxResults: js.UndefOr[scala.Nothing], `type`: String): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: String,
+    name: js.UndefOr[scala.Nothing],
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: String,
+    name: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: String,
+    name: String,
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    `type`: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    `type`: js.UndefOr[scala.Nothing],
+    name: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    `type`: js.UndefOr[scala.Nothing],
+    name: String,
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(startAt: js.UndefOr[scala.Nothing], maxResults: Double, `type`: String): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    `type`: String,
+    name: js.UndefOr[scala.Nothing],
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(startAt: js.UndefOr[scala.Nothing], maxResults: Double, `type`: String, name: String): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    `type`: String,
+    name: String,
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
   def getAllBoards(startAt: Double): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[scala.Nothing],
+    name: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[scala.Nothing],
+    name: String,
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(startAt: Double, maxResults: js.UndefOr[scala.Nothing], `type`: String): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: String,
+    name: js.UndefOr[scala.Nothing],
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(startAt: Double, maxResults: js.UndefOr[scala.Nothing], `type`: String, name: String): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    `type`: String,
+    name: String,
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
   def getAllBoards(startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: Double,
+    maxResults: Double,
+    `type`: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
+  def getAllBoards(startAt: Double, maxResults: Double, `type`: js.UndefOr[scala.Nothing], name: String): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: Double,
+    maxResults: Double,
+    `type`: js.UndefOr[scala.Nothing],
+    name: String,
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
   def getAllBoards(startAt: Double, maxResults: Double, `type`: String): js.Promise[JsonResponse] = js.native
+  def getAllBoards(
+    startAt: Double,
+    maxResults: Double,
+    `type`: String,
+    name: js.UndefOr[scala.Nothing],
+    projectKeyOrId: String
+  ): js.Promise[JsonResponse] = js.native
   def getAllBoards(startAt: Double, maxResults: Double, `type`: String, name: String): js.Promise[JsonResponse] = js.native
   def getAllBoards(startAt: Double, maxResults: Double, `type`: String, name: String, projectKeyOrId: String): js.Promise[JsonResponse] = js.native
   def getAllSprints(boardId: String): js.Promise[JsonResponse] = js.native
+  def getAllSprints(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
   def getAllSprints(boardId: String, startAt: Double): js.Promise[JsonResponse] = js.native
   def getAllSprints(boardId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
   @JSName("getAllSprints")
+  def getAllSprints_active(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    state: active
+  ): js.Promise[JsonResponse] = js.native
+  @JSName("getAllSprints")
+  def getAllSprints_active(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double, state: active): js.Promise[JsonResponse] = js.native
+  @JSName("getAllSprints")
+  def getAllSprints_active(boardId: String, startAt: Double, maxResults: js.UndefOr[scala.Nothing], state: active): js.Promise[JsonResponse] = js.native
+  @JSName("getAllSprints")
   def getAllSprints_active(boardId: String, startAt: Double, maxResults: Double, state: active): js.Promise[JsonResponse] = js.native
+  @JSName("getAllSprints")
+  def getAllSprints_closed(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    state: closed
+  ): js.Promise[JsonResponse] = js.native
+  @JSName("getAllSprints")
+  def getAllSprints_closed(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double, state: closed): js.Promise[JsonResponse] = js.native
+  @JSName("getAllSprints")
+  def getAllSprints_closed(boardId: String, startAt: Double, maxResults: js.UndefOr[scala.Nothing], state: closed): js.Promise[JsonResponse] = js.native
   @JSName("getAllSprints")
   def getAllSprints_closed(boardId: String, startAt: Double, maxResults: Double, state: closed): js.Promise[JsonResponse] = js.native
   @JSName("getAllSprints")
+  def getAllSprints_future(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    state: future
+  ): js.Promise[JsonResponse] = js.native
+  @JSName("getAllSprints")
+  def getAllSprints_future(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double, state: future): js.Promise[JsonResponse] = js.native
+  @JSName("getAllSprints")
+  def getAllSprints_future(boardId: String, startAt: Double, maxResults: js.UndefOr[scala.Nothing], state: future): js.Promise[JsonResponse] = js.native
+  @JSName("getAllSprints")
   def getAllSprints_future(boardId: String, startAt: Double, maxResults: Double, state: future): js.Promise[JsonResponse] = js.native
   def getAllVersions(boardId: String): js.Promise[JsonResponse] = js.native
+  def getAllVersions(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
   def getAllVersions(boardId: String, startAt: Double): js.Promise[JsonResponse] = js.native
   def getAllVersions(boardId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
   @JSName("getAllVersions")
+  def getAllVersions_false(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    released: `false`
+  ): js.Promise[JsonResponse] = js.native
+  @JSName("getAllVersions")
+  def getAllVersions_false(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double, released: `false`): js.Promise[JsonResponse] = js.native
+  @JSName("getAllVersions")
+  def getAllVersions_false(boardId: String, startAt: Double, maxResults: js.UndefOr[scala.Nothing], released: `false`): js.Promise[JsonResponse] = js.native
+  @JSName("getAllVersions")
   def getAllVersions_false(boardId: String, startAt: Double, maxResults: Double, released: `false`): js.Promise[JsonResponse] = js.native
+  @JSName("getAllVersions")
+  def getAllVersions_true(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    released: `true`
+  ): js.Promise[JsonResponse] = js.native
+  @JSName("getAllVersions")
+  def getAllVersions_true(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double, released: `true`): js.Promise[JsonResponse] = js.native
+  @JSName("getAllVersions")
+  def getAllVersions_true(boardId: String, startAt: Double, maxResults: js.UndefOr[scala.Nothing], released: `true`): js.Promise[JsonResponse] = js.native
   @JSName("getAllVersions")
   def getAllVersions_true(boardId: String, startAt: Double, maxResults: Double, released: `true`): js.Promise[JsonResponse] = js.native
   def getBacklogForRapidView(rapidViewId: String): js.Promise[JsonResponse] = js.native
   def getBoard(boardId: String): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForEpic(boardId: String, epicId: String): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(boardId: String, epicId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForEpic(boardId: String, epicId: String, startAt: Double): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForEpic(boardId: String, epicId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForEpic(boardId: String, epicId: String, startAt: Double, maxResults: Double, jql: String): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForEpic(
+    boardId: String,
+    epicId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForEpic(
     boardId: String,
     epicId: String,
@@ -99,9 +563,222 @@ trait JiraApi extends js.Object {
     fields: String
   ): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForSprint(boardId: String, sprintId: String): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(boardId: String, sprintId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForSprint(boardId: String, sprintId: String, startAt: Double): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForSprint(boardId: String, sprintId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForSprint(boardId: String, sprintId: String, startAt: Double, maxResults: Double, jql: String): js.Promise[JsonResponse] = js.native
+  def getBoardIssuesForSprint(
+    boardId: String,
+    sprintId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getBoardIssuesForSprint(
     boardId: String,
     sprintId: String,
@@ -126,10 +803,33 @@ trait JiraApi extends js.Object {
   def getDevStatusDetail(issueId: String, applicationType: String, dataType: String): js.Promise[JsonResponse] = js.native
   def getDevStatusSummary(issueId: String): js.Promise[JsonResponse] = js.native
   def getEpics(boardId: String): js.Promise[JsonResponse] = js.native
+  def getEpics(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
   def getEpics(boardId: String, startAt: Double): js.Promise[JsonResponse] = js.native
   def getEpics(boardId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
   @JSName("getEpics")
+  def getEpics_false(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    done: `false`
+  ): js.Promise[JsonResponse] = js.native
+  @JSName("getEpics")
+  def getEpics_false(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double, done: `false`): js.Promise[JsonResponse] = js.native
+  @JSName("getEpics")
+  def getEpics_false(boardId: String, startAt: Double, maxResults: js.UndefOr[scala.Nothing], done: `false`): js.Promise[JsonResponse] = js.native
+  @JSName("getEpics")
   def getEpics_false(boardId: String, startAt: Double, maxResults: Double, done: `false`): js.Promise[JsonResponse] = js.native
+  @JSName("getEpics")
+  def getEpics_true(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    done: `true`
+  ): js.Promise[JsonResponse] = js.native
+  @JSName("getEpics")
+  def getEpics_true(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double, done: `true`): js.Promise[JsonResponse] = js.native
+  @JSName("getEpics")
+  def getEpics_true(boardId: String, startAt: Double, maxResults: js.UndefOr[scala.Nothing], done: `true`): js.Promise[JsonResponse] = js.native
   @JSName("getEpics")
   def getEpics_true(boardId: String, startAt: Double, maxResults: Double, done: `true`): js.Promise[JsonResponse] = js.native
   def getFieldOption(fieldKey: String, optionId: String): js.Promise[JsonResponse] = js.native
@@ -137,9 +837,187 @@ trait JiraApi extends js.Object {
   def getIssueWatchers(issueId: String): js.Promise[js.Array[JsonResponse]] = js.native
   def getIssueWorklogs(issueId: String): js.Promise[JsonResponse] = js.native
   def getIssuesForBacklog(boardId: String): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double, jql: String): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getIssuesForBacklog(boardId: String, startAt: Double): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(boardId: String, startAt: Double, maxResults: js.UndefOr[scala.Nothing], jql: String): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getIssuesForBacklog(boardId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getIssuesForBacklog(boardId: String, startAt: Double, maxResults: Double, jql: String): js.Promise[JsonResponse] = js.native
+  def getIssuesForBacklog(
+    boardId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getIssuesForBacklog(boardId: String, startAt: Double, maxResults: Double, jql: String, validateQuery: Boolean): js.Promise[JsonResponse] = js.native
   def getIssuesForBacklog(
     boardId: String,
@@ -150,9 +1028,187 @@ trait JiraApi extends js.Object {
     fields: String
   ): js.Promise[JsonResponse] = js.native
   def getIssuesForBoard(boardId: String): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double, jql: String): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: js.UndefOr[scala.Nothing],
+    maxResults: Double,
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getIssuesForBoard(boardId: String, startAt: Double): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(boardId: String, startAt: Double, maxResults: js.UndefOr[scala.Nothing], jql: String): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    jql: String,
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getIssuesForBoard(boardId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean
+  ): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: js.UndefOr[scala.Nothing],
+    validateQuery: Boolean,
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getIssuesForBoard(boardId: String, startAt: Double, maxResults: Double, jql: String): js.Promise[JsonResponse] = js.native
+  def getIssuesForBoard(
+    boardId: String,
+    startAt: Double,
+    maxResults: Double,
+    jql: String,
+    validateQuery: js.UndefOr[scala.Nothing],
+    fields: String
+  ): js.Promise[JsonResponse] = js.native
   def getIssuesForBoard(boardId: String, startAt: Double, maxResults: Double, jql: String, validateQuery: Boolean): js.Promise[JsonResponse] = js.native
   def getIssuesForBoard(
     boardId: String,
@@ -165,6 +1221,7 @@ trait JiraApi extends js.Object {
   def getLastSprintForRapidView(rapidViewId: String): js.Promise[JsonResponse] = js.native
   def getProject(project: String): js.Promise[JsonResponse] = js.native
   def getProjects(boardId: String): js.Promise[JsonResponse] = js.native
+  def getProjects(boardId: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
   def getProjects(boardId: String, startAt: Double): js.Promise[JsonResponse] = js.native
   def getProjects(boardId: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
   def getProjectsFull(boardId: String): js.Promise[JsonResponse] = js.native
@@ -172,6 +1229,7 @@ trait JiraApi extends js.Object {
   def getSprintIssues(rapidViewId: String, sprintId: String): js.Promise[JsonResponse] = js.native
   def getUnresolvedIssueCount(version: String): js.Promise[Double] = js.native
   def getUsersInGroup(groupname: String): js.Promise[JsonResponse] = js.native
+  def getUsersInGroup(groupname: String, startAt: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[JsonResponse] = js.native
   def getUsersInGroup(groupname: String, startAt: Double): js.Promise[JsonResponse] = js.native
   def getUsersInGroup(groupname: String, startAt: Double, maxResults: Double): js.Promise[JsonResponse] = js.native
   def getVersions(project: String): js.Promise[JsonResponse] = js.native

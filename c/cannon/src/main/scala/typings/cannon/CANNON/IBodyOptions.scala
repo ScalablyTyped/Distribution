@@ -4,63 +4,108 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBodyOptions extends js.Object {
-  var allowSleep: js.UndefOr[Boolean] = js.undefined
-  var angularDamping: js.UndefOr[Double] = js.undefined
-  var angularVelocity: js.UndefOr[Vec3] = js.undefined
-  var collisionFilterGroup: js.UndefOr[Double] = js.undefined
-  var collisionFilterMask: js.UndefOr[Double] = js.undefined
-  var fixedRotation: js.UndefOr[Boolean] = js.undefined
-  var linearDamping: js.UndefOr[Double] = js.undefined
-  var mass: js.UndefOr[Double] = js.undefined
-  var material: js.UndefOr[Material] = js.undefined
-  var position: js.UndefOr[Vec3] = js.undefined
-  var quaternion: js.UndefOr[Quaternion] = js.undefined
-  var shape: js.UndefOr[Shape] = js.undefined
-  var sleepSpeedLimit: js.UndefOr[Double] = js.undefined
-  var sleepTimeLimit: js.UndefOr[Double] = js.undefined
-  var `type`: js.UndefOr[Double] = js.undefined
-  var velocity: js.UndefOr[Vec3] = js.undefined
+  var allowSleep: js.UndefOr[Boolean] = js.native
+  var angularDamping: js.UndefOr[Double] = js.native
+  var angularVelocity: js.UndefOr[Vec3] = js.native
+  var collisionFilterGroup: js.UndefOr[Double] = js.native
+  var collisionFilterMask: js.UndefOr[Double] = js.native
+  var fixedRotation: js.UndefOr[Boolean] = js.native
+  var linearDamping: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.native
+  var material: js.UndefOr[Material] = js.native
+  var position: js.UndefOr[Vec3] = js.native
+  var quaternion: js.UndefOr[Quaternion] = js.native
+  var shape: js.UndefOr[Shape] = js.native
+  var sleepSpeedLimit: js.UndefOr[Double] = js.native
+  var sleepTimeLimit: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[Double] = js.native
+  var velocity: js.UndefOr[Vec3] = js.native
 }
 
 object IBodyOptions {
   @scala.inline
-  def apply(
-    allowSleep: js.UndefOr[Boolean] = js.undefined,
-    angularDamping: js.UndefOr[Double] = js.undefined,
-    angularVelocity: Vec3 = null,
-    collisionFilterGroup: js.UndefOr[Double] = js.undefined,
-    collisionFilterMask: js.UndefOr[Double] = js.undefined,
-    fixedRotation: js.UndefOr[Boolean] = js.undefined,
-    linearDamping: js.UndefOr[Double] = js.undefined,
-    mass: js.UndefOr[Double] = js.undefined,
-    material: Material = null,
-    position: Vec3 = null,
-    quaternion: Quaternion = null,
-    shape: Shape = null,
-    sleepSpeedLimit: js.UndefOr[Double] = js.undefined,
-    sleepTimeLimit: js.UndefOr[Double] = js.undefined,
-    `type`: js.UndefOr[Double] = js.undefined,
-    velocity: Vec3 = null
-  ): IBodyOptions = {
+  def apply(): IBodyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angularDamping)) __obj.updateDynamic("angularDamping")(angularDamping.get.asInstanceOf[js.Any])
-    if (angularVelocity != null) __obj.updateDynamic("angularVelocity")(angularVelocity.asInstanceOf[js.Any])
-    if (!js.isUndefined(collisionFilterGroup)) __obj.updateDynamic("collisionFilterGroup")(collisionFilterGroup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collisionFilterMask)) __obj.updateDynamic("collisionFilterMask")(collisionFilterMask.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedRotation)) __obj.updateDynamic("fixedRotation")(fixedRotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(linearDamping)) __obj.updateDynamic("linearDamping")(linearDamping.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mass)) __obj.updateDynamic("mass")(mass.get.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (quaternion != null) __obj.updateDynamic("quaternion")(quaternion.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(sleepSpeedLimit)) __obj.updateDynamic("sleepSpeedLimit")(sleepSpeedLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sleepTimeLimit)) __obj.updateDynamic("sleepTimeLimit")(sleepTimeLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyOptions]
   }
+  @scala.inline
+  implicit class IBodyOptionsOps[Self <: IBodyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowSleep(value: Boolean): Self = this.set("allowSleep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSleep: Self = this.set("allowSleep", js.undefined)
+    @scala.inline
+    def setAngularDamping(value: Double): Self = this.set("angularDamping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngularDamping: Self = this.set("angularDamping", js.undefined)
+    @scala.inline
+    def setAngularVelocity(value: Vec3): Self = this.set("angularVelocity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngularVelocity: Self = this.set("angularVelocity", js.undefined)
+    @scala.inline
+    def setCollisionFilterGroup(value: Double): Self = this.set("collisionFilterGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollisionFilterGroup: Self = this.set("collisionFilterGroup", js.undefined)
+    @scala.inline
+    def setCollisionFilterMask(value: Double): Self = this.set("collisionFilterMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollisionFilterMask: Self = this.set("collisionFilterMask", js.undefined)
+    @scala.inline
+    def setFixedRotation(value: Boolean): Self = this.set("fixedRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedRotation: Self = this.set("fixedRotation", js.undefined)
+    @scala.inline
+    def setLinearDamping(value: Double): Self = this.set("linearDamping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinearDamping: Self = this.set("linearDamping", js.undefined)
+    @scala.inline
+    def setMass(value: Double): Self = this.set("mass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMass: Self = this.set("mass", js.undefined)
+    @scala.inline
+    def setMaterial(value: Material): Self = this.set("material", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaterial: Self = this.set("material", js.undefined)
+    @scala.inline
+    def setPosition(value: Vec3): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setQuaternion(value: Quaternion): Self = this.set("quaternion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuaternion: Self = this.set("quaternion", js.undefined)
+    @scala.inline
+    def setShape(value: Shape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setSleepSpeedLimit(value: Double): Self = this.set("sleepSpeedLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSleepSpeedLimit: Self = this.set("sleepSpeedLimit", js.undefined)
+    @scala.inline
+    def setSleepTimeLimit(value: Double): Self = this.set("sleepTimeLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSleepTimeLimit: Self = this.set("sleepTimeLimit", js.undefined)
+    @scala.inline
+    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVelocity(value: Vec3): Self = this.set("velocity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVelocity: Self = this.set("velocity", js.undefined)
+  }
+  
 }
 

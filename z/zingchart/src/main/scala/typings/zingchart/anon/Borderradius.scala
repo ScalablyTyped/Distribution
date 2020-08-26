@@ -4,71 +4,100 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Borderradius extends js.Object {
   /**
     * Sets the transparency level of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 be
     * ing completely opaque. Note that values require the leading 0 before the decimal point. 0.3 | 0.4 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.undefined
+  var alpha: js.UndefOr[Double] = js.native
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g., "purple", "blue"), hexadecimal notation (e.g., "#666
     * 699", #33ccff"), or RGB notation (e.g., "rgb(255,0,0)", "rgb(0,0,255)"). "none" | "transparent" | "purple" | "#33ccff" | "rgb(100,
     *  15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.undefined
+  var `background-color`: js.UndefOr[String] = js.native
   /**
     * Sets the styling for the bottom border. Provide border width, line style (solid, dotted, dashed, dashdot), and border color in a s
     * tring. "1px solid green" | "3px dotted purple" | ...
     */
-  var `border-bottom`: js.UndefOr[js.Any] = js.undefined
+  var `border-bottom`: js.UndefOr[js.Any] = js.native
   /**
     * Sets the styling for the left border. Provide border width, line style (solid, dotted, dashed, dashdot), and border color in a str
     * ing. "1px solid green" | "3px dotted purple" | ...
     */
-  var `border-left`: js.UndefOr[js.Any] = js.undefined
+  var `border-left`: js.UndefOr[js.Any] = js.native
   /**
     * Sets the border radius (rounded corners) of the object. The higher the value, the more rounded the corners appear. 4 | "6px" | "6p
     * x 10px 3px 5px" | "-10px" | ...
     */
-  var `border-radius`: js.UndefOr[js.Any] = js.undefined
+  var `border-radius`: js.UndefOr[js.Any] = js.native
   /**
     * Sets the styling for the right border. Provide border width, line style (solid, dotted, dashed, dashdot), and border color in a st
     * ring. "1px solid green" | "3px dotted purple" | ...
     */
-  var `border-right`: js.UndefOr[js.Any] = js.undefined
+  var `border-right`: js.UndefOr[js.Any] = js.native
   /**
     * Sets the styling for the top border. Provide border width, line style (solid, dotted, dashed, dashdot), and border color in a stri
     * ng. "1px solid green" | "3px dotted purple" | ...
     */
-  var `border-top`: js.UndefOr[js.Any] = js.undefined
+  var `border-top`: js.UndefOr[js.Any] = js.native
   /**
     * Sets the object's width. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var width: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[js.Any] = js.native
 }
 
 object Borderradius {
   @scala.inline
-  def apply(
-    alpha: js.UndefOr[Double] = js.undefined,
-    `background-color`: String = null,
-    `border-bottom`: js.Any = null,
-    `border-left`: js.Any = null,
-    `border-radius`: js.Any = null,
-    `border-right`: js.Any = null,
-    `border-top`: js.Any = null,
-    width: js.Any = null
-  ): Borderradius = {
+  def apply(): Borderradius = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
-    if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
-    if (`border-bottom` != null) __obj.updateDynamic("border-bottom")(`border-bottom`.asInstanceOf[js.Any])
-    if (`border-left` != null) __obj.updateDynamic("border-left")(`border-left`.asInstanceOf[js.Any])
-    if (`border-radius` != null) __obj.updateDynamic("border-radius")(`border-radius`.asInstanceOf[js.Any])
-    if (`border-right` != null) __obj.updateDynamic("border-right")(`border-right`.asInstanceOf[js.Any])
-    if (`border-top` != null) __obj.updateDynamic("border-top")(`border-top`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Borderradius]
   }
+  @scala.inline
+  implicit class BorderradiusOps[Self <: Borderradius] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    @scala.inline
+    def `setBackground-color`(value: String): Self = this.set("background-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBackground-color`: Self = this.set("background-color", js.undefined)
+    @scala.inline
+    def `setBorder-bottom`(value: js.Any): Self = this.set("border-bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBorder-bottom`: Self = this.set("border-bottom", js.undefined)
+    @scala.inline
+    def `setBorder-left`(value: js.Any): Self = this.set("border-left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBorder-left`: Self = this.set("border-left", js.undefined)
+    @scala.inline
+    def `setBorder-radius`(value: js.Any): Self = this.set("border-radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBorder-radius`: Self = this.set("border-radius", js.undefined)
+    @scala.inline
+    def `setBorder-right`(value: js.Any): Self = this.set("border-right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBorder-right`: Self = this.set("border-right", js.undefined)
+    @scala.inline
+    def `setBorder-top`(value: js.Any): Self = this.set("border-top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBorder-top`: Self = this.set("border-top", js.undefined)
+    @scala.inline
+    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,6 @@
 package typings.mfiles.global.MFiles
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.mfiles.IDataSet
 import typings.mfiles.IDataSets
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,14 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.DataSets")
 @js.native
-class DataSets () extends IDataSets {
-  /* CompleteClass */
-  override val Count: Double = js.native
-  /* CompleteClass */
-  override def Clone(): IDataSets = js.native
-  /* CompleteClass */
-  override def Item(Index: Double): IDataSet = js.native
-}
+class DataSets () extends IDataSets
 
 @JSGlobal("MFiles.DataSets")
 @js.native

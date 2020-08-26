@@ -27,46 +27,81 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColumnModifierProps extends js.Object {
-  var desktop: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var mobile: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var narrow: js.UndefOr[Boolean] = js.undefined
+  var desktop: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var mobile: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var narrow: js.UndefOr[Boolean] = js.native
   var offset: js.UndefOr[
     `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
-  ] = js.undefined
+  ] = js.native
   var size: js.UndefOr[
     `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
-  ] = js.undefined
-  var tablet: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var touch: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.undefined
+  ] = js.native
+  var tablet: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var touch: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.native
 }
 
 object ColumnModifierProps {
   @scala.inline
-  def apply(
-    desktop: ColumnBreakpointOptions = null,
-    fullhd: ColumnBreakpointOptions = null,
-    mobile: ColumnBreakpointOptions = null,
-    narrow: js.UndefOr[Boolean] = js.undefined,
-    offset: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full = null,
-    size: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full = null,
-    tablet: ColumnBreakpointOptions = null,
-    touch: ColumnBreakpointOptions = null,
-    widescreen: ColumnBreakpointOptions = null
-  ): ColumnModifierProps = {
+  def apply(): ColumnModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (fullhd != null) __obj.updateDynamic("fullhd")(fullhd.asInstanceOf[js.Any])
-    if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(narrow)) __obj.updateDynamic("narrow")(narrow.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
-    if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (widescreen != null) __obj.updateDynamic("widescreen")(widescreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnModifierProps]
   }
+  @scala.inline
+  implicit class ColumnModifierPropsOps[Self <: ColumnModifierProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesktop(value: ColumnBreakpointOptions): Self = this.set("desktop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktop: Self = this.set("desktop", js.undefined)
+    @scala.inline
+    def setFullhd(value: ColumnBreakpointOptions): Self = this.set("fullhd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullhd: Self = this.set("fullhd", js.undefined)
+    @scala.inline
+    def setMobile(value: ColumnBreakpointOptions): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobile: Self = this.set("mobile", js.undefined)
+    @scala.inline
+    def setNarrow(value: Boolean): Self = this.set("narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNarrow: Self = this.set("narrow", js.undefined)
+    @scala.inline
+    def setOffset(
+      value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
+    ): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setSize(
+      value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
+    ): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTablet(value: ColumnBreakpointOptions): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablet: Self = this.set("tablet", js.undefined)
+    @scala.inline
+    def setTouch(value: ColumnBreakpointOptions): Self = this.set("touch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouch: Self = this.set("touch", js.undefined)
+    @scala.inline
+    def setWidescreen(value: ColumnBreakpointOptions): Self = this.set("widescreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidescreen: Self = this.set("widescreen", js.undefined)
+  }
+  
 }
 

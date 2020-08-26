@@ -12,7 +12,7 @@ Pipe a stream into a string, collect value with callback or promise
 | Keywords           | stream, string, buffer, callback, promise |
 | # releases         | 2 |
 | # dependents       | 93 |
-| # downloads        | 2097306 |
+| # downloads        | 2249048 |
 | # stars            | 2 |
 
 ## Links

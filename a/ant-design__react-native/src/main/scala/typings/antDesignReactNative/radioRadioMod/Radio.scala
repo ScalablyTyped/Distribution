@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Radio
   extends Component[RadioNativeProps, js.Any, js.Any] {
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MRadio(nextProps: RadioNativeProps): Unit = js.native
+  @JSName("UNSAFE_componentWillReceiveProps")
+  def UNSAFE_componentWillReceiveProps_MRadio(nextProps: RadioNativeProps): Unit = js.native
   def handleClick(): Unit = js.native
 }
 

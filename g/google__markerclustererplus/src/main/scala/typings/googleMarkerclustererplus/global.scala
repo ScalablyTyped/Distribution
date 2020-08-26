@@ -1,7 +1,5 @@
 package typings.googleMarkerclustererplus
 
-import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.LatLngBounds
 import typings.googlemaps.google.maps.Map
 import typings.googlemaps.google.maps.Marker
 import typings.std.Element
@@ -22,100 +20,6 @@ object global extends js.Object {
       *       cluster is associated.
       */
     def this(mc: typings.googleMarkerclustererplus.MarkerClusterer) = this()
-    /**
-      * Adds a marker to the cluster.
-      *
-      * @param marker The marker to be added.
-      * @return True if the marker was added.
-      * @ignore
-      */
-    /* CompleteClass */
-    override def addMarker(marker: Marker): Boolean = js.native
-    /**
-      * Calculates the extended bounds of the cluster with the grid.
-      */
-    /* CompleteClass */
-    override def calculateBounds_(): Unit = js.native
-    /**
-      * Returns the bounds of the cluster.
-      *
-      * @return the cluster bounds.
-      * @ignore
-      */
-    /* CompleteClass */
-    override def getBounds(): LatLngBounds = js.native
-    /**
-      * Returns the center of the cluster. You can call this from
-      * a <code>click</code>, <code>mouseover</code>, or <code>mouseout</code> event handler
-      * for the <code>MarkerClusterer</code> object.
-      *
-      * @return The center of the cluster.
-      */
-    /* CompleteClass */
-    override def getCenter(): LatLng = js.native
-    /**
-      * Returns the map with which the cluster is associated.
-      *
-      * @return The map.
-      * @ignore
-      */
-    /* CompleteClass */
-    override def getMap(): Map[Element] = js.native
-    /**
-      * Returns the <code>MarkerClusterer</code> object with which the cluster is associated.
-      *
-      * @return The associated marker clusterer.
-      * @ignore
-      */
-    /* CompleteClass */
-    override def getMarkerClusterer(): typings.googleMarkerclustererplus.MarkerClusterer = js.native
-    /**
-      * Returns the array of markers managed by the cluster. You can call this from
-      * a <code>click</code>, <code>mouseover</code>, or <code>mouseout</code> event handler
-      * for the <code>MarkerClusterer</code> object.
-      *
-      * @return The array of markers in the cluster.
-      */
-    /* CompleteClass */
-    override def getMarkers(): js.Array[Marker] = js.native
-    /**
-      * Returns the number of markers managed by the cluster. You can call this from
-      * a <code>click</code>, <code>mouseover</code>, or <code>mouseout</code> event handler
-      * for the <code>MarkerClusterer</code> object.
-      *
-      * @return The number of markers in the cluster.
-      */
-    /* CompleteClass */
-    override def getSize(): Double = js.native
-    /**
-      * Determines if a marker has already been added to the cluster.
-      *
-      * @param marker The marker to check.
-      * @return True if the marker has already been added.
-      */
-    /* CompleteClass */
-    override def isMarkerAlreadyAdded_(marker: Marker): Boolean = js.native
-    /**
-      * Determines if a marker lies within the cluster's bounds.
-      *
-      * @param marker The marker to check.
-      * @return True if the marker lies in the bounds.
-      * @ignore
-      */
-    /* CompleteClass */
-    override def isMarkerInClusterBounds(marker: Marker): Boolean = js.native
-    /**
-      * Removes the cluster from the map.
-      *
-      * @ignore
-      */
-    /* CompleteClass */
-    override def remove(): Unit = js.native
-    /**
-      * Updates the cluster icon.
-      */
-    /* CompleteClass */
-    override def updateIcon_(): Unit = js.native
   }
   
   @js.native
@@ -142,6 +46,7 @@ object global extends js.Object {
       */
     def this(map: Map[Element]) = this()
     def this(map: Map[Element], markers: js.Array[Marker]) = this()
+    def this(map: Map[Element], markers: js.UndefOr[scala.Nothing], options: MarkerClustererOptions) = this()
     def this(map: Map[Element], markers: js.Array[Marker], options: MarkerClustererOptions) = this()
   }
   

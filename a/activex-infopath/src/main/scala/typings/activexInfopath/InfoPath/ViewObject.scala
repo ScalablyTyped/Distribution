@@ -18,10 +18,12 @@ trait ViewObject extends js.Object {
   def Export(bstrURL: String, bstrFormat: String): Unit = js.native
   def ForceUpdate(): Unit = js.native
   def GetContextNodes(): XMLNodesCollection = js.native
+  def GetContextNodes(varNode: js.UndefOr[scala.Nothing], varViewContext: js.Any): XMLNodesCollection = js.native
   def GetContextNodes(varNode: js.Any): XMLNodesCollection = js.native
   def GetContextNodes(varNode: js.Any, varViewContext: js.Any): XMLNodesCollection = js.native
   def GetSelectedNodes(): XMLNodesCollection = js.native
   def SelectNodes(pxnStartNode: IXMLDOMNode): Unit = js.native
+  def SelectNodes(pxnStartNode: IXMLDOMNode, varEndNode: js.UndefOr[scala.Nothing], varViewContext: js.Any): Unit = js.native
   def SelectNodes(pxnStartNode: IXMLDOMNode, varEndNode: js.Any): Unit = js.native
   def SelectNodes(pxnStartNode: IXMLDOMNode, varEndNode: js.Any, varViewContext: js.Any): Unit = js.native
   def SelectText(pxnField: IXMLDOMNode): Unit = js.native

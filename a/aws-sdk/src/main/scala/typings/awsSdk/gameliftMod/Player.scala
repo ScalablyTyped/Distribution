@@ -26,18 +26,38 @@ trait Player extends js.Object {
 
 object Player {
   @scala.inline
-  def apply(
-    LatencyInMs: LatencyMap = null,
-    PlayerAttributes: PlayerAttributeMap = null,
-    PlayerId: NonZeroAndMaxString = null,
-    Team: NonZeroAndMaxString = null
-  ): Player = {
+  def apply(): Player = {
     val __obj = js.Dynamic.literal()
-    if (LatencyInMs != null) __obj.updateDynamic("LatencyInMs")(LatencyInMs.asInstanceOf[js.Any])
-    if (PlayerAttributes != null) __obj.updateDynamic("PlayerAttributes")(PlayerAttributes.asInstanceOf[js.Any])
-    if (PlayerId != null) __obj.updateDynamic("PlayerId")(PlayerId.asInstanceOf[js.Any])
-    if (Team != null) __obj.updateDynamic("Team")(Team.asInstanceOf[js.Any])
     __obj.asInstanceOf[Player]
   }
+  @scala.inline
+  implicit class PlayerOps[Self <: Player] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLatencyInMs(value: LatencyMap): Self = this.set("LatencyInMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatencyInMs: Self = this.set("LatencyInMs", js.undefined)
+    @scala.inline
+    def setPlayerAttributes(value: PlayerAttributeMap): Self = this.set("PlayerAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayerAttributes: Self = this.set("PlayerAttributes", js.undefined)
+    @scala.inline
+    def setPlayerId(value: NonZeroAndMaxString): Self = this.set("PlayerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayerId: Self = this.set("PlayerId", js.undefined)
+    @scala.inline
+    def setTeam(value: NonZeroAndMaxString): Self = this.set("Team", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeam: Self = this.set("Team", js.undefined)
+  }
+  
 }
 

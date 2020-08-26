@@ -46,22 +46,54 @@ trait SchemaTable extends js.Object {
 
 object SchemaTable {
   @scala.inline
-  def apply(
-    columns: js.UndefOr[Double] = js.undefined,
-    horizontalBorderRows: js.Array[SchemaTableBorderRow] = null,
-    rows: js.UndefOr[Double] = js.undefined,
-    tableColumns: js.Array[SchemaTableColumnProperties] = null,
-    tableRows: js.Array[SchemaTableRow] = null,
-    verticalBorderRows: js.Array[SchemaTableBorderRow] = null
-  ): SchemaTable = {
+  def apply(): SchemaTable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
-    if (horizontalBorderRows != null) __obj.updateDynamic("horizontalBorderRows")(horizontalBorderRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (tableColumns != null) __obj.updateDynamic("tableColumns")(tableColumns.asInstanceOf[js.Any])
-    if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows.asInstanceOf[js.Any])
-    if (verticalBorderRows != null) __obj.updateDynamic("verticalBorderRows")(verticalBorderRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTable]
   }
+  @scala.inline
+  implicit class SchemaTableOps[Self <: SchemaTable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setHorizontalBorderRowsVarargs(value: SchemaTableBorderRow*): Self = this.set("horizontalBorderRows", js.Array(value :_*))
+    @scala.inline
+    def setHorizontalBorderRows(value: js.Array[SchemaTableBorderRow]): Self = this.set("horizontalBorderRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalBorderRows: Self = this.set("horizontalBorderRows", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setTableColumnsVarargs(value: SchemaTableColumnProperties*): Self = this.set("tableColumns", js.Array(value :_*))
+    @scala.inline
+    def setTableColumns(value: js.Array[SchemaTableColumnProperties]): Self = this.set("tableColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableColumns: Self = this.set("tableColumns", js.undefined)
+    @scala.inline
+    def setTableRowsVarargs(value: SchemaTableRow*): Self = this.set("tableRows", js.Array(value :_*))
+    @scala.inline
+    def setTableRows(value: js.Array[SchemaTableRow]): Self = this.set("tableRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableRows: Self = this.set("tableRows", js.undefined)
+    @scala.inline
+    def setVerticalBorderRowsVarargs(value: SchemaTableBorderRow*): Self = this.set("verticalBorderRows", js.Array(value :_*))
+    @scala.inline
+    def setVerticalBorderRows(value: js.Array[SchemaTableBorderRow]): Self = this.set("verticalBorderRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalBorderRows: Self = this.set("verticalBorderRows", js.undefined)
+  }
+  
 }
 

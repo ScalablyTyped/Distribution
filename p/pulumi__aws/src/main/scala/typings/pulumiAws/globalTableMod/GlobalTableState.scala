@@ -24,16 +24,36 @@ trait GlobalTableState extends js.Object {
 
 object GlobalTableState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    name: Input[String] = null,
-    replicas: Input[js.Array[Input[GlobalTableReplica]]] = null
-  ): GlobalTableState = {
+  def apply(): GlobalTableState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (replicas != null) __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalTableState]
   }
+  @scala.inline
+  implicit class GlobalTableStateOps[Self <: GlobalTableState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setReplicasVarargs(value: Input[GlobalTableReplica]*): Self = this.set("replicas", js.Array(value :_*))
+    @scala.inline
+    def setReplicas(value: Input[js.Array[Input[GlobalTableReplica]]]): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicas: Self = this.set("replicas", js.undefined)
+  }
+  
 }
 

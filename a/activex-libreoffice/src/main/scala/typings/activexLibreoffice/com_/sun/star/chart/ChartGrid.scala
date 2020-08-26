@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   * The distance between the grid lines depends on the distance of the help or main tick marks, which may be set in {@link ChartAxis} .
   * @see ChartAxis
   */
+@js.native
 trait ChartGrid
   extends XPropertySet
      with LineProperties

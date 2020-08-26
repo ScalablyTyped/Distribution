@@ -4,42 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapshotGet extends Generic {
-  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
-  var master_timeout: js.UndefOr[String] = js.undefined
-  var repository: String
-  var snapshot: String | js.Array[String]
-  var verbose: js.UndefOr[Boolean] = js.undefined
+  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var master_timeout: js.UndefOr[String] = js.native
+  var repository: String = js.native
+  var snapshot: String | js.Array[String] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
 }
 
 object SnapshotGet {
   @scala.inline
-  def apply(
-    repository: String,
-    snapshot: String | js.Array[String],
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    ignore_unavailable: js.UndefOr[Boolean] = js.undefined,
-    master_timeout: String = null,
-    method: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): SnapshotGet = {
+  def apply(repository: String, snapshot: String | js.Array[String]): SnapshotGet = {
     val __obj = js.Dynamic.literal(repository = repository.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore_unavailable)) __obj.updateDynamic("ignore_unavailable")(ignore_unavailable.get.asInstanceOf[js.Any])
-    if (master_timeout != null) __obj.updateDynamic("master_timeout")(master_timeout.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotGet]
   }
+  @scala.inline
+  implicit class SnapshotGetOps[Self <: SnapshotGet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepository(value: String): Self = this.set("repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotVarargs(value: String*): Self = this.set("snapshot", js.Array(value :_*))
+    @scala.inline
+    def setSnapshot(value: String | js.Array[String]): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIgnore_unavailable(value: Boolean): Self = this.set("ignore_unavailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore_unavailable: Self = this.set("ignore_unavailable", js.undefined)
+    @scala.inline
+    def setMaster_timeout(value: String): Self = this.set("master_timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaster_timeout: Self = this.set("master_timeout", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+  }
+  
 }
 

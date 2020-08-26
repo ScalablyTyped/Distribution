@@ -2,11 +2,11 @@ package typings.graphql.definitionMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.anon.GraphQLEnumTypeConfigexte
+import typings.graphql.anon.ReadonlyGraphQLEnumTypeCo
 import typings.graphql.astMod.EnumTypeDefinitionNode
 import typings.graphql.astMod.EnumTypeExtensionNode
 import typings.graphql.astMod.ValueNode
 import typings.graphql.maybeMod.Maybe
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,11 +20,11 @@ class GraphQLEnumType protected ()
      with _GraphQLNullableType
      with _GraphQLOutputType
      with _GraphQLType {
-  def this(config: GraphQLEnumTypeConfig) = this()
+  def this(config: ReadonlyGraphQLEnumTypeCo) = this()
   var astNode: Maybe[EnumTypeDefinitionNode] = js.native
   var description: Maybe[String] = js.native
   var extensionASTNodes: Maybe[js.Array[EnumTypeExtensionNode]] = js.native
-  var extensions: Maybe[Record[String, _]] = js.native
+  var extensions: Maybe[js.Object] = js.native
   var name: String = js.native
   def getValue(name: String): Maybe[GraphQLEnumValue] = js.native
   def getValues(): js.Array[GraphQLEnumValue] = js.native

@@ -30,7 +30,7 @@ object civicinfoMod extends js.Object {
     @js.native
     object v2
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Civicinfo]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Civicinfo]
             ]
     
   }

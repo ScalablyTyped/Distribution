@@ -29,6 +29,7 @@ class ResourceAccountsContainersFoldersEntities protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaFolderEntities] = js.native
   def list(callback: BodyResponseCallback[SchemaFolderEntities]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFolderEntities] = js.native
   def list(params: ParamsResourceAccountsContainersFoldersEntitiesList): GaxiosPromise[SchemaFolderEntities] = js.native
   def list(
     params: ParamsResourceAccountsContainersFoldersEntitiesList,

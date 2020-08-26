@@ -84,6 +84,12 @@ trait Marker_[ExtraData] extends Overlay[ExtraData] {
     * @param circleable 是否循环
     */
   def moveAlong(path: js.Array[LngLat], speed: Double): Unit = js.native
+  def moveAlong(
+    path: js.Array[LngLat],
+    speed: Double,
+    timingFunction: js.UndefOr[scala.Nothing],
+    circleable: Boolean
+  ): Unit = js.native
   def moveAlong(path: js.Array[LngLat], speed: Double, timingFunction: js.Function1[/* t */ Double, Double]): Unit = js.native
   def moveAlong(
     path: js.Array[LngLat],

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-camera"
-version := "4.1.0-db1e14"
-scalaVersion := "2.13.2"
+version := "4.1.0-bdfdda"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

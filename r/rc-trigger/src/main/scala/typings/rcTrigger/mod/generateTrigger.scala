@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-trigger/lib", "generateTrigger")
+@JSImport("rc-trigger", "generateTrigger")
 @js.native
 object generateTrigger extends js.Object {
   def apply(PortalComponent: js.Any): ComponentClass[TriggerProps, ComponentState] = js.native

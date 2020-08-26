@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "pg-connection-string"
-version := "2.2.3-50869f"
-scalaVersion := "2.13.2"
+version := "2.3.0-86e41b"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

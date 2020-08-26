@@ -54,32 +54,66 @@ trait ReplicationTaskStats extends js.Object {
 
 object ReplicationTaskStats {
   @scala.inline
-  def apply(
-    ElapsedTimeMillis: js.UndefOr[Long] = js.undefined,
-    FreshStartDate: TStamp = null,
-    FullLoadFinishDate: TStamp = null,
-    FullLoadProgressPercent: js.UndefOr[Integer] = js.undefined,
-    FullLoadStartDate: TStamp = null,
-    StartDate: TStamp = null,
-    StopDate: TStamp = null,
-    TablesErrored: js.UndefOr[Integer] = js.undefined,
-    TablesLoaded: js.UndefOr[Integer] = js.undefined,
-    TablesLoading: js.UndefOr[Integer] = js.undefined,
-    TablesQueued: js.UndefOr[Integer] = js.undefined
-  ): ReplicationTaskStats = {
+  def apply(): ReplicationTaskStats = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ElapsedTimeMillis)) __obj.updateDynamic("ElapsedTimeMillis")(ElapsedTimeMillis.get.asInstanceOf[js.Any])
-    if (FreshStartDate != null) __obj.updateDynamic("FreshStartDate")(FreshStartDate.asInstanceOf[js.Any])
-    if (FullLoadFinishDate != null) __obj.updateDynamic("FullLoadFinishDate")(FullLoadFinishDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(FullLoadProgressPercent)) __obj.updateDynamic("FullLoadProgressPercent")(FullLoadProgressPercent.get.asInstanceOf[js.Any])
-    if (FullLoadStartDate != null) __obj.updateDynamic("FullLoadStartDate")(FullLoadStartDate.asInstanceOf[js.Any])
-    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
-    if (StopDate != null) __obj.updateDynamic("StopDate")(StopDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(TablesErrored)) __obj.updateDynamic("TablesErrored")(TablesErrored.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TablesLoaded)) __obj.updateDynamic("TablesLoaded")(TablesLoaded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TablesLoading)) __obj.updateDynamic("TablesLoading")(TablesLoading.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TablesQueued)) __obj.updateDynamic("TablesQueued")(TablesQueued.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationTaskStats]
   }
+  @scala.inline
+  implicit class ReplicationTaskStatsOps[Self <: ReplicationTaskStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElapsedTimeMillis(value: Long): Self = this.set("ElapsedTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElapsedTimeMillis: Self = this.set("ElapsedTimeMillis", js.undefined)
+    @scala.inline
+    def setFreshStartDate(value: TStamp): Self = this.set("FreshStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFreshStartDate: Self = this.set("FreshStartDate", js.undefined)
+    @scala.inline
+    def setFullLoadFinishDate(value: TStamp): Self = this.set("FullLoadFinishDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadFinishDate: Self = this.set("FullLoadFinishDate", js.undefined)
+    @scala.inline
+    def setFullLoadProgressPercent(value: Integer): Self = this.set("FullLoadProgressPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadProgressPercent: Self = this.set("FullLoadProgressPercent", js.undefined)
+    @scala.inline
+    def setFullLoadStartDate(value: TStamp): Self = this.set("FullLoadStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadStartDate: Self = this.set("FullLoadStartDate", js.undefined)
+    @scala.inline
+    def setStartDate(value: TStamp): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+    @scala.inline
+    def setStopDate(value: TStamp): Self = this.set("StopDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopDate: Self = this.set("StopDate", js.undefined)
+    @scala.inline
+    def setTablesErrored(value: Integer): Self = this.set("TablesErrored", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablesErrored: Self = this.set("TablesErrored", js.undefined)
+    @scala.inline
+    def setTablesLoaded(value: Integer): Self = this.set("TablesLoaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablesLoaded: Self = this.set("TablesLoaded", js.undefined)
+    @scala.inline
+    def setTablesLoading(value: Integer): Self = this.set("TablesLoading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablesLoading: Self = this.set("TablesLoading", js.undefined)
+    @scala.inline
+    def setTablesQueued(value: Integer): Self = this.set("TablesQueued", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablesQueued: Self = this.set("TablesQueued", js.undefined)
+  }
+  
 }
 

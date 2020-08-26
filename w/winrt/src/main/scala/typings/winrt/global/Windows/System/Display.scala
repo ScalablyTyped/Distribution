@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation._
 object Display extends js.Object {
   @js.native
   class DisplayRequest ()
-    extends typings.winrt.Windows.System.Display.DisplayRequest {
-    /* CompleteClass */
-    override def requestActive(): Unit = js.native
-    /* CompleteClass */
-    override def requestRelease(): Unit = js.native
-  }
+    extends typings.winrt.Windows.System.Display.DisplayRequest
   
 }
 

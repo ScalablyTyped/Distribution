@@ -41,22 +41,46 @@ trait SchemaAvailability extends js.Object {
 
 object SchemaAvailability {
   @scala.inline
-  def apply(
-    advertiserId: String = null,
-    agencyId: String = null,
-    availabilityTimestamp: String = null,
-    segmentationId: String = null,
-    segmentationName: String = null,
-    segmentationType: String = null
-  ): SchemaAvailability = {
+  def apply(): SchemaAvailability = {
     val __obj = js.Dynamic.literal()
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId.asInstanceOf[js.Any])
-    if (availabilityTimestamp != null) __obj.updateDynamic("availabilityTimestamp")(availabilityTimestamp.asInstanceOf[js.Any])
-    if (segmentationId != null) __obj.updateDynamic("segmentationId")(segmentationId.asInstanceOf[js.Any])
-    if (segmentationName != null) __obj.updateDynamic("segmentationName")(segmentationName.asInstanceOf[js.Any])
-    if (segmentationType != null) __obj.updateDynamic("segmentationType")(segmentationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAvailability]
   }
+  @scala.inline
+  implicit class SchemaAvailabilityOps[Self <: SchemaAvailability] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAgencyId(value: String): Self = this.set("agencyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgencyId: Self = this.set("agencyId", js.undefined)
+    @scala.inline
+    def setAvailabilityTimestamp(value: String): Self = this.set("availabilityTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityTimestamp: Self = this.set("availabilityTimestamp", js.undefined)
+    @scala.inline
+    def setSegmentationId(value: String): Self = this.set("segmentationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationId: Self = this.set("segmentationId", js.undefined)
+    @scala.inline
+    def setSegmentationName(value: String): Self = this.set("segmentationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationName: Self = this.set("segmentationName", js.undefined)
+    @scala.inline
+    def setSegmentationType(value: String): Self = this.set("segmentationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationType: Self = this.set("segmentationType", js.undefined)
+  }
+  
 }
 

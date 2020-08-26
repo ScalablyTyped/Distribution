@@ -16,15 +16,5 @@ class ASPxClientFileManagerFileDownloadingEventArgs protected ()
     * @param file An ASPxClientFileManagerFile object that is the file currently being processed.
     */
   def this(file: typings.devexpressWeb.ASPxClientFileManagerFile) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event, should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets a file related to the event.
-    */
-  /* CompleteClass */
-  override var file: typings.devexpressWeb.ASPxClientFileManagerFile = js.native
 }
 

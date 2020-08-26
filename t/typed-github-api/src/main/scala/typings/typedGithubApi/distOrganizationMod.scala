@@ -1,7 +1,6 @@
 package typings.typedGithubApi
 
 import typings.moment.mod.Moment
-import typings.typedGithubApi.anon.Name
 import typings.typedGithubApi.distOwnerRefMod.OwnerRefClass
 import typings.typedGithubApi.githubRefMod.OptionsOrRef
 import typings.typedGithubApi.organizationMod.MyOrganization
@@ -20,24 +19,6 @@ object distOrganizationMod extends js.Object {
     extends OrganizationClass
        with MyOrganization {
     def this(data: PrivateOrganization, options: OptionsOrRef) = this()
-    /* CompleteClass */
-    override var billingEmail: String = js.native
-    /* CompleteClass */
-    override var collaborators: Double = js.native
-    /* CompleteClass */
-    override var defaultRepositorySettings: String = js.native
-    /* CompleteClass */
-    override var diskUsage: Double = js.native
-    /* CompleteClass */
-    override var membersCanCreateRepositories: Boolean = js.native
-    /* CompleteClass */
-    override var plan: Name = js.native
-    /* CompleteClass */
-    override var privateGists: Double = js.native
-    /* CompleteClass */
-    override var privateReposOwned: Double = js.native
-    /* CompleteClass */
-    override var privateReposTotal: Double = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

@@ -9,8 +9,24 @@ import scala.scalajs.js.annotation._
 class Rectangle ()
   extends typings.easeljs.createjs.Rectangle {
   def this(x: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double) = this()
   def this(x: Double, y: Double, width: Double) = this()
+  def this(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+  def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }
 

@@ -4,23 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   @JSName("$cache")
-  var $cache: js.UndefOr[Boolean] = js.undefined
+  var $cache: js.UndefOr[Boolean] = js.native
   @JSName("$file")
-  var $file: js.UndefOr[String] = js.undefined
+  var $file: js.UndefOr[String] = js.native
   @JSName("$name")
-  var $name: js.UndefOr[String] = js.undefined
+  var $name: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply($cache: js.UndefOr[Boolean] = js.undefined, $file: String = null, $name: String = null): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($cache)) __obj.updateDynamic("$cache")($cache.get.asInstanceOf[js.Any])
-    if ($file != null) __obj.updateDynamic("$file")($file.asInstanceOf[js.Any])
-    if ($name != null) __obj.updateDynamic("$name")($name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$cache(value: Boolean): Self = this.set("$cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$cache: Self = this.set("$cache", js.undefined)
+    @scala.inline
+    def set$file(value: String): Self = this.set("$file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$file: Self = this.set("$file", js.undefined)
+    @scala.inline
+    def set$name(value: String): Self = this.set("$name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$name: Self = this.set("$name", js.undefined)
+  }
+  
 }
 

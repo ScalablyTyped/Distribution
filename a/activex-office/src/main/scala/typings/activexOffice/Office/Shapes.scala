@@ -23,9 +23,106 @@ trait Shapes extends js.Object {
     * @param Height [Height=-1]
     */
   def AddChart(): Shape = js.native
+  def AddChart(
+    Type: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddChart(
+    Type: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double
+  ): Shape = js.native
+  def AddChart(
+    Type: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double,
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: js.UndefOr[scala.Nothing], Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
+  def AddChart(
+    Type: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: js.UndefOr[scala.Nothing], Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
+  def AddChart(
+    Type: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: Double,
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double): Shape = js.native
+  def AddChart(
+    Type: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
+  def AddChart(
+    Type: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double,
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double, Top: Double): Shape = js.native
+  def AddChart(
+    Type: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double, Top: Double, Width: Double): Shape = js.native
+  def AddChart(Type: js.UndefOr[scala.Nothing], Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddChart(Type: XlChartType): Shape = js.native
+  def AddChart(
+    Type: XlChartType,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: XlChartType, Left: js.UndefOr[scala.Nothing], Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
+  def AddChart(
+    Type: XlChartType,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double,
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: XlChartType, Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
+  def AddChart(
+    Type: XlChartType,
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: XlChartType, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double): Shape = js.native
+  def AddChart(
+    Type: XlChartType,
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double, Top: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   /**
@@ -68,6 +165,15 @@ trait Shapes extends js.Object {
     SaveWithDocument: MsoTriState,
     Left: Double,
     Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddPicture(
+    FileName: String,
+    LinkToFile: MsoTriState,
+    SaveWithDocument: MsoTriState,
+    Left: Double,
+    Top: Double,
     Width: Double
   ): Shape = js.native
   def AddPicture(
@@ -88,8 +194,66 @@ trait Shapes extends js.Object {
     * @param Height [Height=-1]
     */
   def AddSmartArt(Layout: SmartArtLayout): Shape = js.native
+  def AddSmartArt(
+    Layout: SmartArtLayout,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddSmartArt(
+    Layout: SmartArtLayout,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double
+  ): Shape = js.native
+  def AddSmartArt(
+    Layout: SmartArtLayout,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double,
+    Height: Double
+  ): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.UndefOr[scala.Nothing], Top: Double): Shape = js.native
+  def AddSmartArt(
+    Layout: SmartArtLayout,
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: js.UndefOr[scala.Nothing], Top: Double, Width: Double): Shape = js.native
+  def AddSmartArt(
+    Layout: SmartArtLayout,
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: Double,
+    Height: Double
+  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double): Shape = js.native
+  def AddSmartArt(
+    Layout: SmartArtLayout,
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Shape = js.native
+  def AddSmartArt(
+    Layout: SmartArtLayout,
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double,
+    Height: Double
+  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double): Shape = js.native
+  def AddSmartArt(
+    Layout: SmartArtLayout,
+    Left: Double,
+    Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native

@@ -70,34 +70,70 @@ trait SchemaPlayer extends js.Object {
 
 object SchemaPlayer {
   @scala.inline
-  def apply(
-    avatarImageUrl: String = null,
-    bannerUrlLandscape: String = null,
-    bannerUrlPortrait: String = null,
-    displayName: String = null,
-    experienceInfo: SchemaPlayerExperienceInfo = null,
-    kind: String = null,
-    lastPlayedWith: SchemaPlayed = null,
-    name: FamilyName = null,
-    originalPlayerId: String = null,
-    playerId: String = null,
-    profileSettings: SchemaProfileSettings = null,
-    title: String = null
-  ): SchemaPlayer = {
+  def apply(): SchemaPlayer = {
     val __obj = js.Dynamic.literal()
-    if (avatarImageUrl != null) __obj.updateDynamic("avatarImageUrl")(avatarImageUrl.asInstanceOf[js.Any])
-    if (bannerUrlLandscape != null) __obj.updateDynamic("bannerUrlLandscape")(bannerUrlLandscape.asInstanceOf[js.Any])
-    if (bannerUrlPortrait != null) __obj.updateDynamic("bannerUrlPortrait")(bannerUrlPortrait.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (experienceInfo != null) __obj.updateDynamic("experienceInfo")(experienceInfo.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastPlayedWith != null) __obj.updateDynamic("lastPlayedWith")(lastPlayedWith.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (originalPlayerId != null) __obj.updateDynamic("originalPlayerId")(originalPlayerId.asInstanceOf[js.Any])
-    if (playerId != null) __obj.updateDynamic("playerId")(playerId.asInstanceOf[js.Any])
-    if (profileSettings != null) __obj.updateDynamic("profileSettings")(profileSettings.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlayer]
   }
+  @scala.inline
+  implicit class SchemaPlayerOps[Self <: SchemaPlayer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvatarImageUrl(value: String): Self = this.set("avatarImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatarImageUrl: Self = this.set("avatarImageUrl", js.undefined)
+    @scala.inline
+    def setBannerUrlLandscape(value: String): Self = this.set("bannerUrlLandscape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerUrlLandscape: Self = this.set("bannerUrlLandscape", js.undefined)
+    @scala.inline
+    def setBannerUrlPortrait(value: String): Self = this.set("bannerUrlPortrait", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerUrlPortrait: Self = this.set("bannerUrlPortrait", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setExperienceInfo(value: SchemaPlayerExperienceInfo): Self = this.set("experienceInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperienceInfo: Self = this.set("experienceInfo", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastPlayedWith(value: SchemaPlayed): Self = this.set("lastPlayedWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPlayedWith: Self = this.set("lastPlayedWith", js.undefined)
+    @scala.inline
+    def setName(value: FamilyName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOriginalPlayerId(value: String): Self = this.set("originalPlayerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalPlayerId: Self = this.set("originalPlayerId", js.undefined)
+    @scala.inline
+    def setPlayerId(value: String): Self = this.set("playerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayerId: Self = this.set("playerId", js.undefined)
+    @scala.inline
+    def setProfileSettings(value: SchemaProfileSettings): Self = this.set("profileSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileSettings: Self = this.set("profileSettings", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

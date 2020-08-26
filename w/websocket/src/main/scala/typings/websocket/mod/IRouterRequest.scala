@@ -43,7 +43,15 @@ trait IRouterRequest extends EventEmitter {
     * @param [acceptedProtocol] case-insensitive value that was requested by the client
     */
   def accept(): connection = js.native
+  def accept(
+    acceptedProtocol: js.UndefOr[scala.Nothing],
+    allowedOrigin: js.UndefOr[scala.Nothing],
+    cookies: js.Array[ICookie]
+  ): connection = js.native
+  def accept(acceptedProtocol: js.UndefOr[scala.Nothing], allowedOrigin: String): connection = js.native
+  def accept(acceptedProtocol: js.UndefOr[scala.Nothing], allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
   def accept(acceptedProtocol: String): connection = js.native
+  def accept(acceptedProtocol: String, allowedOrigin: js.UndefOr[scala.Nothing], cookies: js.Array[ICookie]): connection = js.native
   def accept(acceptedProtocol: String, allowedOrigin: String): connection = js.native
   def accept(acceptedProtocol: String, allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
   @JSName("addListener")
@@ -62,6 +70,7 @@ trait IRouterRequest extends EventEmitter {
     * `X-WebSocket-Reject-Reason` header.
     */
   def reject(): Unit = js.native
+  def reject(httpStatus: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def reject(httpStatus: Double): Unit = js.native
   def reject(httpStatus: Double, reason: String): Unit = js.native
 }

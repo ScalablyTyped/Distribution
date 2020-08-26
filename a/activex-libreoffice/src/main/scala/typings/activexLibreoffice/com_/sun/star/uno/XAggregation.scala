@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   * with NULL before it releases its reference to its aggregated objects.
   * @deprecated DeprecatedAggregation will no longer be supported as a high-level concept of UNO. You may still have the option to implement an UNO object consis
   */
+@js.native
 trait XAggregation extends XInterface {
   /**
     * is similar to {@link XInterface.queryInterface()} , but it is to be processed directly without being forwarded to the delegator.
@@ -34,13 +35,13 @@ trait XAggregation extends XInterface {
     * interface when it calls the method {@link XInterface.queryInterface()} .
     * @see XAggregation.setDelegator
     */
-  def queryAggregation(aType: `type`): js.Any
+  def queryAggregation(aType: `type`): js.Any = js.native
   /**
     * sets the object to which all calls to the method {@link XInterface.queryInterface()} have to be forwarded.
     * @param pDelegator specifies the object which handles the calls to {@link XInterface.queryInterface()} . If **pDelegator** is NULL, the delegator is remo
     * @see XAggregation.queryAggregation
     */
-  def setDelegator(pDelegator: XInterface): Unit
+  def setDelegator(pDelegator: XInterface): Unit = js.native
 }
 
 object XAggregation {
@@ -55,5 +56,22 @@ object XAggregation {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryAggregation = js.Any.fromFunction1(queryAggregation), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDelegator = js.Any.fromFunction1(setDelegator))
     __obj.asInstanceOf[XAggregation]
   }
+  @scala.inline
+  implicit class XAggregationOps[Self <: XAggregation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryAggregation(value: `type` => js.Any): Self = this.set("queryAggregation", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetDelegator(value: XInterface => Unit): Self = this.set("setDelegator", js.Any.fromFunction1(value))
+  }
+  
 }
 

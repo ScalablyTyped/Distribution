@@ -44,6 +44,7 @@ class SFTPStream () extends Transform {
     * Creates and returns a new SFTPStream instance.
     */
   def this(remoteIdentRaw: String) = this()
+  def this(cfg: js.UndefOr[scala.Nothing], remoteIdentRaw: String) = this()
   def this(cfg: SFTPStreamConfig, remoteIdentRaw: String) = this()
   /**
     * (Server-only)

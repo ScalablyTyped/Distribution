@@ -30,20 +30,42 @@ trait IdentityUsage extends js.Object {
 
 object IdentityUsage {
   @scala.inline
-  def apply(
-    DataStorage: js.UndefOr[Long] = js.undefined,
-    DatasetCount: js.UndefOr[Integer] = js.undefined,
-    IdentityId: IdentityId = null,
-    IdentityPoolId: IdentityPoolId = null,
-    LastModifiedDate: Date = null
-  ): IdentityUsage = {
+  def apply(): IdentityUsage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DataStorage)) __obj.updateDynamic("DataStorage")(DataStorage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DatasetCount)) __obj.updateDynamic("DatasetCount")(DatasetCount.get.asInstanceOf[js.Any])
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
-    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityUsage]
   }
+  @scala.inline
+  implicit class IdentityUsageOps[Self <: IdentityUsage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataStorage(value: Long): Self = this.set("DataStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataStorage: Self = this.set("DataStorage", js.undefined)
+    @scala.inline
+    def setDatasetCount(value: Integer): Self = this.set("DatasetCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetCount: Self = this.set("DatasetCount", js.undefined)
+    @scala.inline
+    def setIdentityId(value: IdentityId): Self = this.set("IdentityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityId: Self = this.set("IdentityId", js.undefined)
+    @scala.inline
+    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityPoolId: Self = this.set("IdentityPoolId", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: Date): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+  }
+  
 }
 

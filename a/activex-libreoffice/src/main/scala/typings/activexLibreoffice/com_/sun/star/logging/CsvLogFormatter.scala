@@ -15,8 +15,9 @@ import scala.scalajs.js.annotation._
   * log has to be preformatted with the formatMultiColumn method.
   * @since OOo 3.0
   */
+@js.native
 trait CsvLogFormatter extends XCsvLogFormatter {
-  def create(): Unit
+  def create(): Unit = js.native
 }
 
 object CsvLogFormatter {
@@ -38,5 +39,20 @@ object CsvLogFormatter {
     val __obj = js.Dynamic.literal(Columnnames = Columnnames.asInstanceOf[js.Any], Head = Head.asInstanceOf[js.Any], LogEventNo = LogEventNo.asInstanceOf[js.Any], LogSource = LogSource.asInstanceOf[js.Any], LogThread = LogThread.asInstanceOf[js.Any], LogTimestamp = LogTimestamp.asInstanceOf[js.Any], Tail = Tail.asInstanceOf[js.Any], create = js.Any.fromFunction0(create), format = js.Any.fromFunction1(format), formatMultiColumn = js.Any.fromFunction1(formatMultiColumn), getHead = js.Any.fromFunction0(getHead), getTail = js.Any.fromFunction0(getTail))
     __obj.asInstanceOf[CsvLogFormatter]
   }
+  @scala.inline
+  implicit class CsvLogFormatterOps[Self <: CsvLogFormatter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreate(value: () => Unit): Self = this.set("create", js.Any.fromFunction0(value))
+  }
+  
 }
 

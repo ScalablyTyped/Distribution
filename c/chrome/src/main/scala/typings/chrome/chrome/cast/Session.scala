@@ -19,6 +19,8 @@ trait Session extends js.Object {
   var senderApps: js.Array[SenderApplication] = js.native
   var sessionId: String = js.native
   var status: SessionStatus = js.native
+  var statusText: String | Null = js.native
+  var transportId: String = js.native
   /**
     * @param {function(!chrome.cast.media.Media)} listener
     */

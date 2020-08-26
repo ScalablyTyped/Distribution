@@ -22,14 +22,32 @@ trait BatchCheckLayerAvailabilityRequest extends js.Object {
 
 object BatchCheckLayerAvailabilityRequest {
   @scala.inline
-  def apply(
-    layerDigests: BatchedOperationLayerDigestList,
-    repositoryName: RepositoryName,
-    registryId: RegistryId = null
-  ): BatchCheckLayerAvailabilityRequest = {
+  def apply(layerDigests: BatchedOperationLayerDigestList, repositoryName: RepositoryName): BatchCheckLayerAvailabilityRequest = {
     val __obj = js.Dynamic.literal(layerDigests = layerDigests.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchCheckLayerAvailabilityRequest]
   }
+  @scala.inline
+  implicit class BatchCheckLayerAvailabilityRequestOps[Self <: BatchCheckLayerAvailabilityRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayerDigestsVarargs(value: BatchedOperationLayerDigest*): Self = this.set("layerDigests", js.Array(value :_*))
+    @scala.inline
+    def setLayerDigests(value: BatchedOperationLayerDigestList): Self = this.set("layerDigests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+  }
+  
 }
 

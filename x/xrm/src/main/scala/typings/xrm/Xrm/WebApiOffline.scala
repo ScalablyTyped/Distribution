@@ -43,6 +43,7 @@ trait WebApiOffline extends js.Object {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/retrievemultiplerecords External Link: retrieveMultipleRecords (Client API reference)}
     */
   def retrieveMultipleRecords(entityLogicalName: String): PromiseLike[RetrieveMultipleResult] = js.native
+  def retrieveMultipleRecords(entityLogicalName: String, options: js.UndefOr[scala.Nothing], maxPageSize: Double): PromiseLike[RetrieveMultipleResult] = js.native
   def retrieveMultipleRecords(entityLogicalName: String, options: String): PromiseLike[RetrieveMultipleResult] = js.native
   def retrieveMultipleRecords(entityLogicalName: String, options: String, maxPageSize: Double): PromiseLike[RetrieveMultipleResult] = js.native
   /**

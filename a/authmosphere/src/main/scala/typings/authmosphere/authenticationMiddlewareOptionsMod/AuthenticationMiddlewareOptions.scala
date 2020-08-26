@@ -12,31 +12,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AuthenticationMiddlewareOptions extends js.Object {
-  var getTokenInfo: js.UndefOr[GetTokenInfo[js.Object]] = js.undefined
-  var logger: js.UndefOr[Logger] = js.undefined
+  var getTokenInfo: js.UndefOr[GetTokenInfo[js.Object]] = js.native
+  var logger: js.UndefOr[Logger] = js.native
   var onNotAuthenticatedHandler: js.UndefOr[
     typings.authmosphere.authenticationMiddlewareOptionsMod.onNotAuthenticatedHandler
-  ] = js.undefined
-  var publicEndpoints: js.UndefOr[js.Array[String]] = js.undefined
-  var tokenInfoEndpoint: String
+  ] = js.native
+  var publicEndpoints: js.UndefOr[js.Array[String]] = js.native
+  var tokenInfoEndpoint: String = js.native
 }
 
 object AuthenticationMiddlewareOptions {
   @scala.inline
-  def apply(
-    tokenInfoEndpoint: String,
-    getTokenInfo: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[js.Object]] = null,
-    logger: Logger = null,
-    onNotAuthenticatedHandler: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* logger */ Logger) => Unit = null,
-    publicEndpoints: js.Array[String] = null
-  ): AuthenticationMiddlewareOptions = {
+  def apply(tokenInfoEndpoint: String): AuthenticationMiddlewareOptions = {
     val __obj = js.Dynamic.literal(tokenInfoEndpoint = tokenInfoEndpoint.asInstanceOf[js.Any])
-    if (getTokenInfo != null) __obj.updateDynamic("getTokenInfo")(js.Any.fromFunction3(getTokenInfo))
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (onNotAuthenticatedHandler != null) __obj.updateDynamic("onNotAuthenticatedHandler")(js.Any.fromFunction4(onNotAuthenticatedHandler))
-    if (publicEndpoints != null) __obj.updateDynamic("publicEndpoints")(publicEndpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationMiddlewareOptions]
   }
+  @scala.inline
+  implicit class AuthenticationMiddlewareOptionsOps[Self <: AuthenticationMiddlewareOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTokenInfoEndpoint(value: String): Self = this.set("tokenInfoEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetTokenInfo(
+      value: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[js.Object]]
+    ): Self = this.set("getTokenInfo", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteGetTokenInfo: Self = this.set("getTokenInfo", js.undefined)
+    @scala.inline
+    def setLogger(value: Logger): Self = this.set("logger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogger: Self = this.set("logger", js.undefined)
+    @scala.inline
+    def setOnNotAuthenticatedHandler(
+      value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* logger */ Logger) => Unit
+    ): Self = this.set("onNotAuthenticatedHandler", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteOnNotAuthenticatedHandler: Self = this.set("onNotAuthenticatedHandler", js.undefined)
+    @scala.inline
+    def setPublicEndpointsVarargs(value: String*): Self = this.set("publicEndpoints", js.Array(value :_*))
+    @scala.inline
+    def setPublicEndpoints(value: js.Array[String]): Self = this.set("publicEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicEndpoints: Self = this.set("publicEndpoints", js.undefined)
+  }
+  
 }
 

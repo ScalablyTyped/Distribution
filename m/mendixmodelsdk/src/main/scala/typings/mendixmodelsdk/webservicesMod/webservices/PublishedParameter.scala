@@ -28,40 +28,38 @@ class PublishedParameter protected () extends Element {
   var model_FPublishedParameter: IModel = js.native
   def containerAsPublishedOperation: PublishedOperation = js.native
   def dataEntity: DataEntity = js.native
-  def dataEntity(newValue: DataEntity): js.Any = js.native
+  def dataEntity_=(newValue: DataEntity): Unit = js.native
   def entityExposedItemName: String = js.native
-  def entityExposedItemName(newValue: String): js.Any = js.native
   def entityExposedItemNameByContract: String = js.native
-  def entityExposedItemNameByContract(newValue: String): js.Any = js.native
+  def entityExposedItemNameByContract_=(newValue: String): Unit = js.native
+  def entityExposedItemName_=(newValue: String): Unit = js.native
   def entityExposedName: String = js.native
-  def entityExposedName(newValue: String): js.Any = js.native
+  def entityExposedName_=(newValue: String): Unit = js.native
   def isLockedByContract: Boolean = js.native
-  def isLockedByContract(newValue: Boolean): js.Any = js.native
+  def isLockedByContract_=(newValue: Boolean): Unit = js.native
   def isNillable: Boolean = js.native
-  def isNillable(newValue: Boolean): js.Any = js.native
+  def isNillable_=(newValue: Boolean): Unit = js.native
   def isOptional: Boolean = js.native
-  def isOptional(newValue: Boolean): js.Any = js.native
   def isOptionalByContract: Boolean = js.native
-  def isOptionalByContract(newValue: Boolean): js.Any = js.native
-  def parameter(): js.Any = js.native
-  def parameter(newValue: IMicroflowParameter): js.Any = js.native
+  def isOptionalByContract_=(newValue: Boolean): Unit = js.native
+  def isOptional_=(newValue: Boolean): Unit = js.native
+  def parameter: IMicroflowParameter | Null = js.native
   def parameterByContract: MsdMicroflowParameter = js.native
-  def parameterByContract(newValue: MsdMicroflowParameter): js.Any = js.native
+  def parameterByContract_=(newValue: MsdMicroflowParameter): Unit = js.native
   def parameterQualifiedName: String | Null = js.native
   /**
     * In version 7.9.0: introduced
     */
   def parameterType: DataType = js.native
-  def parameterType(newValue: DataType): js.Any = js.native
-  @JSName("parameter")
-  def parameter_Union: IMicroflowParameter | Null = js.native
+  def parameterType_=(newValue: DataType): Unit = js.native
+  def parameter_=(newValue: IMicroflowParameter | Null): Unit = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 7.9.0: deleted
     */
   def `type`: String = js.native
-  def `type`(newValue: String): js.Any = js.native
+  def type_=(newValue: String): Unit = js.native
 }
 
 /* static members */

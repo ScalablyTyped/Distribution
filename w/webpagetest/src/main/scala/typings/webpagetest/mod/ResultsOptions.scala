@@ -4,43 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResultsOptions extends js.Object {
   /** include the breakdown of requests and bytes by mime type */
-  var breakDown: js.UndefOr[Boolean] = js.undefined
+  var breakDown: js.UndefOr[Boolean] = js.native
   /** include the breakdown of requests and bytes by domain */
-  var domains: js.UndefOr[Boolean] = js.undefined
+  var domains: js.UndefOr[Boolean] = js.native
   /** set the metric used to calculate median for multiple runs tests (default: loadTime) */
-  var medianMetric: js.UndefOr[String] = js.undefined
+  var medianMetric: js.UndefOr[String] = js.native
   /** include the PageSpeed score in the response (may be slower) */
-  var pageSpeed: js.UndefOr[Boolean] = js.undefined
+  var pageSpeed: js.UndefOr[Boolean] = js.native
   /** set performance test suite reporter output: [dot]|spec|tap|xunit|list|progress|min|nyan|landing|json|doc|markdown|teamcity */
-  var reporter: js.UndefOr[String] = js.undefined
+  var reporter: js.UndefOr[String] = js.native
   /** include the request data in the response (slower and results in much larger responses) */
-  var requests: js.UndefOr[Boolean] = js.undefined
+  var requests: js.UndefOr[Boolean] = js.native
   /** set the specs for performance test suite */
-  var specs: js.UndefOr[String] = js.undefined
+  var specs: js.UndefOr[String] = js.native
 }
 
 object ResultsOptions {
   @scala.inline
-  def apply(
-    breakDown: js.UndefOr[Boolean] = js.undefined,
-    domains: js.UndefOr[Boolean] = js.undefined,
-    medianMetric: String = null,
-    pageSpeed: js.UndefOr[Boolean] = js.undefined,
-    reporter: String = null,
-    requests: js.UndefOr[Boolean] = js.undefined,
-    specs: String = null
-  ): ResultsOptions = {
+  def apply(): ResultsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breakDown)) __obj.updateDynamic("breakDown")(breakDown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(domains)) __obj.updateDynamic("domains")(domains.get.asInstanceOf[js.Any])
-    if (medianMetric != null) __obj.updateDynamic("medianMetric")(medianMetric.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSpeed)) __obj.updateDynamic("pageSpeed")(pageSpeed.get.asInstanceOf[js.Any])
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
-    if (!js.isUndefined(requests)) __obj.updateDynamic("requests")(requests.get.asInstanceOf[js.Any])
-    if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultsOptions]
   }
+  @scala.inline
+  implicit class ResultsOptionsOps[Self <: ResultsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBreakDown(value: Boolean): Self = this.set("breakDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreakDown: Self = this.set("breakDown", js.undefined)
+    @scala.inline
+    def setDomains(value: Boolean): Self = this.set("domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomains: Self = this.set("domains", js.undefined)
+    @scala.inline
+    def setMedianMetric(value: String): Self = this.set("medianMetric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedianMetric: Self = this.set("medianMetric", js.undefined)
+    @scala.inline
+    def setPageSpeed(value: Boolean): Self = this.set("pageSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSpeed: Self = this.set("pageSpeed", js.undefined)
+    @scala.inline
+    def setReporter(value: String): Self = this.set("reporter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReporter: Self = this.set("reporter", js.undefined)
+    @scala.inline
+    def setRequests(value: Boolean): Self = this.set("requests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequests: Self = this.set("requests", js.undefined)
+    @scala.inline
+    def setSpecs(value: String): Self = this.set("specs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecs: Self = this.set("specs", js.undefined)
+  }
+  
 }
 

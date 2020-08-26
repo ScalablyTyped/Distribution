@@ -27,16 +27,34 @@ trait SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult extends js.Obje
 
 object SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult {
   @scala.inline
-  def apply(
-    image: String = null,
-    product: SchemaGoogleCloudVisionV1p1beta1Product = null,
-    score: js.UndefOr[Double] = js.undefined
-  ): SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult = {
+  def apply(): SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResultOps[Self <: SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setProduct(value: SchemaGoogleCloudVisionV1p1beta1Product): Self = this.set("product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("product", js.undefined)
+    @scala.inline
+    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+  }
+  
 }
 

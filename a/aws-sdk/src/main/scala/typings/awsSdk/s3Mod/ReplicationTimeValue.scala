@@ -14,10 +14,26 @@ trait ReplicationTimeValue extends js.Object {
 
 object ReplicationTimeValue {
   @scala.inline
-  def apply(Minutes: js.UndefOr[Minutes] = js.undefined): ReplicationTimeValue = {
+  def apply(): ReplicationTimeValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Minutes)) __obj.updateDynamic("Minutes")(Minutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationTimeValue]
   }
+  @scala.inline
+  implicit class ReplicationTimeValueOps[Self <: ReplicationTimeValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMinutes(value: Minutes): Self = this.set("Minutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinutes: Self = this.set("Minutes", js.undefined)
+  }
+  
 }
 

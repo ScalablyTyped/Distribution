@@ -54,28 +54,62 @@ trait SchemaEvent extends js.Object {
 
 object SchemaEvent {
   @scala.inline
-  def apply(
-    additionalEventTypes: js.Array[String] = null,
-    eventTimeMillis: String = null,
-    fromUserDeletion: js.UndefOr[Boolean] = js.undefined,
-    move: SchemaMove = null,
-    permissionChanges: js.Array[SchemaPermissionChange] = null,
-    primaryEventType: String = null,
-    rename: SchemaRename = null,
-    target: SchemaTarget = null,
-    user: SchemaUser = null
-  ): SchemaEvent = {
+  def apply(): SchemaEvent = {
     val __obj = js.Dynamic.literal()
-    if (additionalEventTypes != null) __obj.updateDynamic("additionalEventTypes")(additionalEventTypes.asInstanceOf[js.Any])
-    if (eventTimeMillis != null) __obj.updateDynamic("eventTimeMillis")(eventTimeMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromUserDeletion)) __obj.updateDynamic("fromUserDeletion")(fromUserDeletion.get.asInstanceOf[js.Any])
-    if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
-    if (permissionChanges != null) __obj.updateDynamic("permissionChanges")(permissionChanges.asInstanceOf[js.Any])
-    if (primaryEventType != null) __obj.updateDynamic("primaryEventType")(primaryEventType.asInstanceOf[js.Any])
-    if (rename != null) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEvent]
   }
+  @scala.inline
+  implicit class SchemaEventOps[Self <: SchemaEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalEventTypesVarargs(value: String*): Self = this.set("additionalEventTypes", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalEventTypes(value: js.Array[String]): Self = this.set("additionalEventTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalEventTypes: Self = this.set("additionalEventTypes", js.undefined)
+    @scala.inline
+    def setEventTimeMillis(value: String): Self = this.set("eventTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTimeMillis: Self = this.set("eventTimeMillis", js.undefined)
+    @scala.inline
+    def setFromUserDeletion(value: Boolean): Self = this.set("fromUserDeletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromUserDeletion: Self = this.set("fromUserDeletion", js.undefined)
+    @scala.inline
+    def setMove(value: SchemaMove): Self = this.set("move", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMove: Self = this.set("move", js.undefined)
+    @scala.inline
+    def setPermissionChangesVarargs(value: SchemaPermissionChange*): Self = this.set("permissionChanges", js.Array(value :_*))
+    @scala.inline
+    def setPermissionChanges(value: js.Array[SchemaPermissionChange]): Self = this.set("permissionChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionChanges: Self = this.set("permissionChanges", js.undefined)
+    @scala.inline
+    def setPrimaryEventType(value: String): Self = this.set("primaryEventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryEventType: Self = this.set("primaryEventType", js.undefined)
+    @scala.inline
+    def setRename(value: SchemaRename): Self = this.set("rename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRename: Self = this.set("rename", js.undefined)
+    @scala.inline
+    def setTarget(value: SchemaTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

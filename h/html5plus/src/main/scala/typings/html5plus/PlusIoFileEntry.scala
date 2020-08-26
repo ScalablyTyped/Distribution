@@ -51,8 +51,66 @@ trait PlusIoFileEntry extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def copyTo(): Unit = js.native
+  def copyTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def copyTo(parent: js.UndefOr[scala.Nothing], newName: String): Unit = js.native
+  def copyTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: String,
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: String,
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: String,
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def copyTo(parent: PlusIoDirectoryEntry): Unit = js.native
+  def copyTo(
+    parent: PlusIoDirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: PlusIoDirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: PlusIoDirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def copyTo(parent: PlusIoDirectoryEntry, newName: String): Unit = js.native
+  def copyTo(
+    parent: PlusIoDirectoryEntry,
+    newName: String,
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def copyTo(
     parent: PlusIoDirectoryEntry,
     newName: String,
@@ -71,6 +129,7 @@ trait PlusIoFileEntry extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def createWriter(): Unit = js.native
+  def createWriter(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def createWriter(succesCB: js.Function1[/* result */ PlusIoFileWriter, Unit]): Unit = js.native
   def createWriter(
     succesCB: js.Function1[/* result */ PlusIoFileWriter, Unit],
@@ -83,6 +142,7 @@ trait PlusIoFileEntry extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def file(): Unit = js.native
+  def file(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def file(succesCB: js.Function1[/* result */ PlusIoFile, Unit]): Unit = js.native
   def file(
     succesCB: js.Function1[/* result */ PlusIoFile, Unit],
@@ -96,6 +156,7 @@ trait PlusIoFileEntry extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def getMetadata(): Unit = js.native
+  def getMetadata(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getMetadata(succesCB: js.Function1[/* result */ PlusIoMetadata, Unit]): Unit = js.native
   def getMetadata(
     succesCB: js.Function1[/* result */ PlusIoMetadata, Unit],
@@ -108,6 +169,7 @@ trait PlusIoFileEntry extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def getParent(): Unit = js.native
+  def getParent(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getParent(succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def getParent(
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
@@ -123,8 +185,66 @@ trait PlusIoFileEntry extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def moveTo(): Unit = js.native
+  def moveTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def moveTo(parent: js.UndefOr[scala.Nothing], newName: String): Unit = js.native
+  def moveTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: String,
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: String,
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: js.UndefOr[scala.Nothing],
+    newName: String,
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def moveTo(parent: PlusIoDirectoryEntry): Unit = js.native
+  def moveTo(
+    parent: PlusIoDirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: PlusIoDirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: PlusIoDirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def moveTo(parent: PlusIoDirectoryEntry, newName: String): Unit = js.native
+  def moveTo(
+    parent: PlusIoDirectoryEntry,
+    newName: String,
+    succesCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def moveTo(
     parent: PlusIoDirectoryEntry,
     newName: String,
@@ -143,6 +263,7 @@ trait PlusIoFileEntry extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def remove(): Unit = js.native
+  def remove(succesCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def remove(succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def remove(
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],

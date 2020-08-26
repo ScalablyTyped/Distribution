@@ -86,40 +86,86 @@ trait SchemaPublisherProfile extends js.Object {
 
 object SchemaPublisherProfile {
   @scala.inline
-  def apply(
-    audienceDescription: String = null,
-    buyerPitchStatement: String = null,
-    directDealsContact: String = null,
-    displayName: String = null,
-    domains: js.Array[String] = null,
-    googlePlusUrl: String = null,
-    logoUrl: String = null,
-    mediaKitUrl: String = null,
-    overview: String = null,
-    programmaticDealsContact: String = null,
-    publisherProfileId: String = null,
-    rateCardInfoUrl: String = null,
-    samplePageUrl: String = null,
-    seller: SchemaSeller = null,
-    topHeadlines: js.Array[String] = null
-  ): SchemaPublisherProfile = {
+  def apply(): SchemaPublisherProfile = {
     val __obj = js.Dynamic.literal()
-    if (audienceDescription != null) __obj.updateDynamic("audienceDescription")(audienceDescription.asInstanceOf[js.Any])
-    if (buyerPitchStatement != null) __obj.updateDynamic("buyerPitchStatement")(buyerPitchStatement.asInstanceOf[js.Any])
-    if (directDealsContact != null) __obj.updateDynamic("directDealsContact")(directDealsContact.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
-    if (googlePlusUrl != null) __obj.updateDynamic("googlePlusUrl")(googlePlusUrl.asInstanceOf[js.Any])
-    if (logoUrl != null) __obj.updateDynamic("logoUrl")(logoUrl.asInstanceOf[js.Any])
-    if (mediaKitUrl != null) __obj.updateDynamic("mediaKitUrl")(mediaKitUrl.asInstanceOf[js.Any])
-    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
-    if (programmaticDealsContact != null) __obj.updateDynamic("programmaticDealsContact")(programmaticDealsContact.asInstanceOf[js.Any])
-    if (publisherProfileId != null) __obj.updateDynamic("publisherProfileId")(publisherProfileId.asInstanceOf[js.Any])
-    if (rateCardInfoUrl != null) __obj.updateDynamic("rateCardInfoUrl")(rateCardInfoUrl.asInstanceOf[js.Any])
-    if (samplePageUrl != null) __obj.updateDynamic("samplePageUrl")(samplePageUrl.asInstanceOf[js.Any])
-    if (seller != null) __obj.updateDynamic("seller")(seller.asInstanceOf[js.Any])
-    if (topHeadlines != null) __obj.updateDynamic("topHeadlines")(topHeadlines.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPublisherProfile]
   }
+  @scala.inline
+  implicit class SchemaPublisherProfileOps[Self <: SchemaPublisherProfile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudienceDescription(value: String): Self = this.set("audienceDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudienceDescription: Self = this.set("audienceDescription", js.undefined)
+    @scala.inline
+    def setBuyerPitchStatement(value: String): Self = this.set("buyerPitchStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuyerPitchStatement: Self = this.set("buyerPitchStatement", js.undefined)
+    @scala.inline
+    def setDirectDealsContact(value: String): Self = this.set("directDealsContact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectDealsContact: Self = this.set("directDealsContact", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setDomainsVarargs(value: String*): Self = this.set("domains", js.Array(value :_*))
+    @scala.inline
+    def setDomains(value: js.Array[String]): Self = this.set("domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomains: Self = this.set("domains", js.undefined)
+    @scala.inline
+    def setGooglePlusUrl(value: String): Self = this.set("googlePlusUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGooglePlusUrl: Self = this.set("googlePlusUrl", js.undefined)
+    @scala.inline
+    def setLogoUrl(value: String): Self = this.set("logoUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogoUrl: Self = this.set("logoUrl", js.undefined)
+    @scala.inline
+    def setMediaKitUrl(value: String): Self = this.set("mediaKitUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaKitUrl: Self = this.set("mediaKitUrl", js.undefined)
+    @scala.inline
+    def setOverview(value: String): Self = this.set("overview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverview: Self = this.set("overview", js.undefined)
+    @scala.inline
+    def setProgrammaticDealsContact(value: String): Self = this.set("programmaticDealsContact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgrammaticDealsContact: Self = this.set("programmaticDealsContact", js.undefined)
+    @scala.inline
+    def setPublisherProfileId(value: String): Self = this.set("publisherProfileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisherProfileId: Self = this.set("publisherProfileId", js.undefined)
+    @scala.inline
+    def setRateCardInfoUrl(value: String): Self = this.set("rateCardInfoUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateCardInfoUrl: Self = this.set("rateCardInfoUrl", js.undefined)
+    @scala.inline
+    def setSamplePageUrl(value: String): Self = this.set("samplePageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamplePageUrl: Self = this.set("samplePageUrl", js.undefined)
+    @scala.inline
+    def setSeller(value: SchemaSeller): Self = this.set("seller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeller: Self = this.set("seller", js.undefined)
+    @scala.inline
+    def setTopHeadlinesVarargs(value: String*): Self = this.set("topHeadlines", js.Array(value :_*))
+    @scala.inline
+    def setTopHeadlines(value: js.Array[String]): Self = this.set("topHeadlines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopHeadlines: Self = this.set("topHeadlines", js.undefined)
+  }
+  
 }
 

@@ -16,12 +16,40 @@ trait List extends js.Object {
   @JSName("Word.List_typekey")
   var WordDotList_typekey: List = js.native
   def ApplyListTemplate(ListTemplate: ListTemplate): Unit = js.native
+  def ApplyListTemplate(
+    ListTemplate: ListTemplate,
+    ContinuePreviousList: js.UndefOr[scala.Nothing],
+    DefaultListBehavior: js.Any
+  ): Unit = js.native
   def ApplyListTemplate(ListTemplate: ListTemplate, ContinuePreviousList: js.Any): Unit = js.native
   def ApplyListTemplate(ListTemplate: ListTemplate, ContinuePreviousList: js.Any, DefaultListBehavior: js.Any): Unit = js.native
   def ApplyListTemplateOld(ListTemplate: ListTemplate): Unit = js.native
   def ApplyListTemplateOld(ListTemplate: ListTemplate, ContinuePreviousList: js.Any): Unit = js.native
   def ApplyListTemplateWithLevel(ListTemplate: ListTemplate): Unit = js.native
+  def ApplyListTemplateWithLevel(
+    ListTemplate: ListTemplate,
+    ContinuePreviousList: js.UndefOr[scala.Nothing],
+    DefaultListBehavior: js.UndefOr[scala.Nothing],
+    ApplyLevel: js.Any
+  ): Unit = js.native
+  def ApplyListTemplateWithLevel(
+    ListTemplate: ListTemplate,
+    ContinuePreviousList: js.UndefOr[scala.Nothing],
+    DefaultListBehavior: js.Any
+  ): Unit = js.native
+  def ApplyListTemplateWithLevel(
+    ListTemplate: ListTemplate,
+    ContinuePreviousList: js.UndefOr[scala.Nothing],
+    DefaultListBehavior: js.Any,
+    ApplyLevel: js.Any
+  ): Unit = js.native
   def ApplyListTemplateWithLevel(ListTemplate: ListTemplate, ContinuePreviousList: js.Any): Unit = js.native
+  def ApplyListTemplateWithLevel(
+    ListTemplate: ListTemplate,
+    ContinuePreviousList: js.Any,
+    DefaultListBehavior: js.UndefOr[scala.Nothing],
+    ApplyLevel: js.Any
+  ): Unit = js.native
   def ApplyListTemplateWithLevel(ListTemplate: ListTemplate, ContinuePreviousList: js.Any, DefaultListBehavior: js.Any): Unit = js.native
   def ApplyListTemplateWithLevel(
     ListTemplate: ListTemplate,
@@ -33,6 +61,7 @@ trait List extends js.Object {
   def ConvertNumbersToText(): Unit = js.native
   def ConvertNumbersToText(NumberType: js.Any): Unit = js.native
   def CountNumberedItems(): Double = js.native
+  def CountNumberedItems(NumberType: js.UndefOr[scala.Nothing], Level: js.Any): Double = js.native
   def CountNumberedItems(NumberType: js.Any): Double = js.native
   def CountNumberedItems(NumberType: js.Any, Level: js.Any): Double = js.native
   def RemoveNumbers(): Unit = js.native

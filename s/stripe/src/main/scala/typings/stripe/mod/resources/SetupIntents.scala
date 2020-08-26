@@ -1,6 +1,6 @@
 package typings.stripe.mod.resources
 
-import typings.stripe.anon.CancellationreasonSetupIntentCancelationReason
+import typings.stripe.anon.`1`
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SetupIntents () extends StripeResource {
   def cancel(intent: String): js.Promise[ISetupIntent] = js.native
-  def cancel(intent: String, data: CancellationreasonSetupIntentCancelationReason): js.Promise[ISetupIntent] = js.native
+  def cancel(intent: String, data: `1`): js.Promise[ISetupIntent] = js.native
   /**
     * A SetupIntent object can be canceled when it is in one of these statuses:
     * `requires_payment_method`, `requires_capture`, `requires_confirmation`, `requires_action`.
@@ -30,18 +30,9 @@ class SetupIntents () extends StripeResource {
     *
     * @returns Returns a SetupIntent object if the cancellation succeeded. Returns an error if the SetupIntent has already been canceled or is not in a cancelable state.
     */
-  def cancel(intent: String, data: CancellationreasonSetupIntentCancelationReason, options: HeaderOptions): js.Promise[ISetupIntent] = js.native
-  def cancel(
-    intent: String,
-    data: CancellationreasonSetupIntentCancelationReason,
-    options: HeaderOptions,
-    response: IResponseFn[ISetupIntent]
-  ): js.Promise[ISetupIntent] = js.native
-  def cancel(
-    intent: String,
-    data: CancellationreasonSetupIntentCancelationReason,
-    response: IResponseFn[ISetupIntent]
-  ): js.Promise[ISetupIntent] = js.native
+  def cancel(intent: String, data: `1`, options: HeaderOptions): js.Promise[ISetupIntent] = js.native
+  def cancel(intent: String, data: `1`, options: HeaderOptions, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
+  def cancel(intent: String, data: `1`, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
   def cancel(intent: String, options: HeaderOptions): js.Promise[ISetupIntent] = js.native
   def cancel(intent: String, options: HeaderOptions, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native
   def cancel(intent: String, response: IResponseFn[ISetupIntent]): js.Promise[ISetupIntent] = js.native

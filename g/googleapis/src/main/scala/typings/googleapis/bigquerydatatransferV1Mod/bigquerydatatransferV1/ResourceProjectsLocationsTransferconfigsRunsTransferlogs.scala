@@ -31,6 +31,7 @@ class ResourceProjectsLocationsTransferconfigsRunsTransferlogs protected () exte
     */
   def list(): GaxiosPromise[SchemaListTransferLogsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTransferLogsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTransferLogsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsTransferconfigsRunsTransferlogsList): GaxiosPromise[SchemaListTransferLogsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsTransferconfigsRunsTransferlogsList,

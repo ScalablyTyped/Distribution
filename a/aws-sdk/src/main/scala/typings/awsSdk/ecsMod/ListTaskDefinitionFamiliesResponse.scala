@@ -18,11 +18,32 @@ trait ListTaskDefinitionFamiliesResponse extends js.Object {
 
 object ListTaskDefinitionFamiliesResponse {
   @scala.inline
-  def apply(families: StringList = null, nextToken: String = null): ListTaskDefinitionFamiliesResponse = {
+  def apply(): ListTaskDefinitionFamiliesResponse = {
     val __obj = js.Dynamic.literal()
-    if (families != null) __obj.updateDynamic("families")(families.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTaskDefinitionFamiliesResponse]
   }
+  @scala.inline
+  implicit class ListTaskDefinitionFamiliesResponseOps[Self <: ListTaskDefinitionFamiliesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFamiliesVarargs(value: String*): Self = this.set("families", js.Array(value :_*))
+    @scala.inline
+    def setFamilies(value: StringList): Self = this.set("families", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamilies: Self = this.set("families", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

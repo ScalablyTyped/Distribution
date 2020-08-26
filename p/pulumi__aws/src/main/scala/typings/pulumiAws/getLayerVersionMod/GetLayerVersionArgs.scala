@@ -22,11 +22,32 @@ trait GetLayerVersionArgs extends js.Object {
 
 object GetLayerVersionArgs {
   @scala.inline
-  def apply(layerName: String, compatibleRuntime: String = null, version: js.UndefOr[Double] = js.undefined): GetLayerVersionArgs = {
+  def apply(layerName: String): GetLayerVersionArgs = {
     val __obj = js.Dynamic.literal(layerName = layerName.asInstanceOf[js.Any])
-    if (compatibleRuntime != null) __obj.updateDynamic("compatibleRuntime")(compatibleRuntime.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLayerVersionArgs]
   }
+  @scala.inline
+  implicit class GetLayerVersionArgsOps[Self <: GetLayerVersionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayerName(value: String): Self = this.set("layerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompatibleRuntime(value: String): Self = this.set("compatibleRuntime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibleRuntime: Self = this.set("compatibleRuntime", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

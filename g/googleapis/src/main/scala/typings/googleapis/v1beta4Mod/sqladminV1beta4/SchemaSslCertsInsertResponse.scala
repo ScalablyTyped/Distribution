@@ -33,18 +33,38 @@ trait SchemaSslCertsInsertResponse extends js.Object {
 
 object SchemaSslCertsInsertResponse {
   @scala.inline
-  def apply(
-    clientCert: SchemaSslCertDetail = null,
-    kind: String = null,
-    operation: SchemaOperation = null,
-    serverCaCert: SchemaSslCert = null
-  ): SchemaSslCertsInsertResponse = {
+  def apply(): SchemaSslCertsInsertResponse = {
     val __obj = js.Dynamic.literal()
-    if (clientCert != null) __obj.updateDynamic("clientCert")(clientCert.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (serverCaCert != null) __obj.updateDynamic("serverCaCert")(serverCaCert.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSslCertsInsertResponse]
   }
+  @scala.inline
+  implicit class SchemaSslCertsInsertResponseOps[Self <: SchemaSslCertsInsertResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientCert(value: SchemaSslCertDetail): Self = this.set("clientCert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCert: Self = this.set("clientCert", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setOperation(value: SchemaOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("operation", js.undefined)
+    @scala.inline
+    def setServerCaCert(value: SchemaSslCert): Self = this.set("serverCaCert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerCaCert: Self = this.set("serverCaCert", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ ECMAScript 6 (Harmony) compatibility shims for legacy JavaScript engines
 | Full name          | es6-shim |
 | Keywords           | ecmascript, harmony, es6, shim, promise, promises, setPrototypeOf, map, set, __proto__ |
 | # releases         | 3 |
-| # dependents       | 671 |
-| # downloads        | 44130256 |
+| # dependents       | 672 |
+| # downloads        | 46001100 |
 | # stars            | 18 |
 
 ## Links

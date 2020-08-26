@@ -18,14 +18,34 @@ trait UpdateActionResultsMessage extends js.Object {
 
 object UpdateActionResultsMessage {
   @scala.inline
-  def apply(
-    ProcessedUpdateActions: ProcessedUpdateActionList = null,
-    UnprocessedUpdateActions: UnprocessedUpdateActionList = null
-  ): UpdateActionResultsMessage = {
+  def apply(): UpdateActionResultsMessage = {
     val __obj = js.Dynamic.literal()
-    if (ProcessedUpdateActions != null) __obj.updateDynamic("ProcessedUpdateActions")(ProcessedUpdateActions.asInstanceOf[js.Any])
-    if (UnprocessedUpdateActions != null) __obj.updateDynamic("UnprocessedUpdateActions")(UnprocessedUpdateActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateActionResultsMessage]
   }
+  @scala.inline
+  implicit class UpdateActionResultsMessageOps[Self <: UpdateActionResultsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProcessedUpdateActionsVarargs(value: ProcessedUpdateAction*): Self = this.set("ProcessedUpdateActions", js.Array(value :_*))
+    @scala.inline
+    def setProcessedUpdateActions(value: ProcessedUpdateActionList): Self = this.set("ProcessedUpdateActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessedUpdateActions: Self = this.set("ProcessedUpdateActions", js.undefined)
+    @scala.inline
+    def setUnprocessedUpdateActionsVarargs(value: UnprocessedUpdateAction*): Self = this.set("UnprocessedUpdateActions", js.Array(value :_*))
+    @scala.inline
+    def setUnprocessedUpdateActions(value: UnprocessedUpdateActionList): Self = this.set("UnprocessedUpdateActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnprocessedUpdateActions: Self = this.set("UnprocessedUpdateActions", js.undefined)
+  }
+  
 }
 

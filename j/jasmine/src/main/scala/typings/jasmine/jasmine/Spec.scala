@@ -23,6 +23,7 @@ trait Spec
   def addToQueue(block: Block): Unit = js.native
   def after(doAfter: SpecFunction): Unit = js.native
   def execute(): js.Any = js.native
+  def execute(onComplete: js.UndefOr[scala.Nothing], enabled: Boolean): js.Any = js.native
   def execute(onComplete: js.Function0[Unit]): js.Any = js.native
   def execute(onComplete: js.Function0[Unit], enabled: Boolean): js.Any = js.native
   def expect(actual: js.Any): js.Any = js.native
@@ -48,6 +49,7 @@ trait Spec
   def spyOnProperty_set(`object`: js.Any, property: String, accessType: set): Spy = js.native
   def waits(timeout: Double): Spec = js.native
   def waitsFor(latchFunction: SpecFunction): Spec = js.native
+  def waitsFor(latchFunction: SpecFunction, timeoutMessage: js.UndefOr[scala.Nothing], timeout: Double): Spec = js.native
   def waitsFor(latchFunction: SpecFunction, timeoutMessage: String): Spec = js.native
   def waitsFor(latchFunction: SpecFunction, timeoutMessage: String, timeout: Double): Spec = js.native
 }

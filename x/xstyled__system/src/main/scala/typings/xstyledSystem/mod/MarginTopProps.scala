@@ -1,25 +1,57 @@
 package typings.xstyledSystem.mod
 
-import typings.csstype.mod.MarginTopProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MarginTopProps[TLength] extends js.Object {
-  val marginTop: js.UndefOr[ResponsiveValue[MarginTopProperty[TLength]]] = js.undefined
-  val mt: js.UndefOr[ResponsiveValue[MarginTopProperty[TLength]]] = js.undefined
+  val marginTop: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.MarginTopProperty<TLength> */ _
+    ]
+  ] = js.native
+  val mt: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.MarginTopProperty<TLength> */ _
+    ]
+  ] = js.native
 }
 
 object MarginTopProps {
   @scala.inline
-  def apply[TLength](
-    marginTop: ResponsiveValue[MarginTopProperty[TLength]] = null,
-    mt: ResponsiveValue[MarginTopProperty[TLength]] = null
-  ): MarginTopProps[TLength] = {
+  def apply[TLength](): MarginTopProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginTopProps[TLength]]
   }
+  @scala.inline
+  implicit class MarginTopPropsOps[Self <: MarginTopProps[_], TLength] (val x: Self with MarginTopProps[TLength]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarginTop(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.MarginTopProperty<TLength> */ _
+        ]
+    ): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    @scala.inline
+    def setMt(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.MarginTopProperty<TLength> */ _
+        ]
+    ): Self = this.set("mt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMt: Self = this.set("mt", js.undefined)
+  }
+  
 }
 

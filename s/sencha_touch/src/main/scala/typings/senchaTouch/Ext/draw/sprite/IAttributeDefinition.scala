@@ -1,146 +1,157 @@
 package typings.senchaTouch.Ext.draw.sprite
 
-import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
-import typings.senchaTouch.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IAttributeDefinition extends IBase {
   /** [Config Option] (Object) */
-  var aliases: js.UndefOr[js.Any] = js.undefined
+  var aliases: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Object) */
-  var animationProcessors: js.UndefOr[js.Any] = js.undefined
+  var animationProcessors: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Object) */
-  var defaults: js.UndefOr[js.Any] = js.undefined
+  var defaults: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Object) */
-  var dirty: js.UndefOr[js.Any] = js.undefined
+  var dirty: js.UndefOr[js.Any] = js.native
   /** [Method] Returns the value of aliases
     * @returns Object
     */
-  var getAliases: js.UndefOr[js.Function0[_]] = js.undefined
+  var getAliases: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of animationProcessors
     * @returns Object
     */
-  var getAnimationProcessors: js.UndefOr[js.Function0[_]] = js.undefined
+  var getAnimationProcessors: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of defaults
     * @returns Object
     */
-  var getDefaults: js.UndefOr[js.Function0[_]] = js.undefined
+  var getDefaults: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of processors
     * @returns Object
     */
-  var getProcessors: js.UndefOr[js.Function0[_]] = js.undefined
+  var getProcessors: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of updaters
     * @returns Object
     */
-  var getUpdaters: js.UndefOr[js.Function0[_]] = js.undefined
+  var getUpdaters: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Normalizes the changes given via their processors before they are applied as attributes
     * @param changes Object The changes given.
     * @returns Object The normalized values.
     */
-  var normalize: js.UndefOr[js.Function1[/* changes */ js.UndefOr[js.Any], _]] = js.undefined
+  var normalize: js.UndefOr[js.Function1[/* changes */ js.UndefOr[js.Any], _]] = js.native
   /** [Config Option] (Object) */
-  var processors: js.UndefOr[js.Any] = js.undefined
+  var processors: js.UndefOr[js.Any] = js.native
   /** [Method] Sets the value of aliases
     * @param aliases Object The new value.
     */
-  var setAliases: js.UndefOr[js.Function1[/* aliases */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setAliases: js.UndefOr[js.Function1[/* aliases */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of animationProcessors
     * @param animationProcessors Object The new value.
     */
-  var setAnimationProcessors: js.UndefOr[js.Function1[/* animationProcessors */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setAnimationProcessors: js.UndefOr[js.Function1[/* animationProcessors */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of defaults
     * @param defaults Object The new value.
     */
-  var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of processors
     * @param processors Object The new value.
     */
-  var setProcessors: js.UndefOr[js.Function1[/* processors */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setProcessors: js.UndefOr[js.Function1[/* processors */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of updaters
     * @param updaters Object The new value.
     */
-  var setUpdaters: js.UndefOr[js.Function1[/* updaters */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setUpdaters: js.UndefOr[js.Function1[/* updaters */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Config Option] (Object) */
-  var updaters: js.UndefOr[js.Any] = js.undefined
+  var updaters: js.UndefOr[js.Any] = js.native
 }
 
 object IAttributeDefinition {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    aliases: js.Any = null,
-    alternateClassName: js.Any = null,
-    animationProcessors: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    defaults: js.Any = null,
-    destroy: () => Unit = null,
-    dirty: js.Any = null,
-    extend: String = null,
-    getAliases: () => _ = null,
-    getAnimationProcessors: () => _ = null,
-    getDefaults: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getProcessors: () => _ = null,
-    getUpdaters: () => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    mixins: js.Any = null,
-    normalize: /* changes */ js.UndefOr[js.Any] => _ = null,
-    platformConfig: js.Any = null,
-    processors: js.Any = null,
-    self: IClass = null,
-    setAliases: /* aliases */ js.UndefOr[js.Any] => Unit = null,
-    setAnimationProcessors: /* animationProcessors */ js.UndefOr[js.Any] => Unit = null,
-    setDefaults: /* defaults */ js.UndefOr[js.Any] => Unit = null,
-    setProcessors: /* processors */ js.UndefOr[js.Any] => Unit = null,
-    setUpdaters: /* updaters */ js.UndefOr[js.Any] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    updaters: js.Any = null,
-    uses: Array = null
-  ): IAttributeDefinition = {
+  def apply(): IAttributeDefinition = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (animationProcessors != null) __obj.updateDynamic("animationProcessors")(animationProcessors.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (dirty != null) __obj.updateDynamic("dirty")(dirty.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getAliases != null) __obj.updateDynamic("getAliases")(js.Any.fromFunction0(getAliases))
-    if (getAnimationProcessors != null) __obj.updateDynamic("getAnimationProcessors")(js.Any.fromFunction0(getAnimationProcessors))
-    if (getDefaults != null) __obj.updateDynamic("getDefaults")(js.Any.fromFunction0(getDefaults))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getProcessors != null) __obj.updateDynamic("getProcessors")(js.Any.fromFunction0(getProcessors))
-    if (getUpdaters != null) __obj.updateDynamic("getUpdaters")(js.Any.fromFunction0(getUpdaters))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction1(normalize))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (processors != null) __obj.updateDynamic("processors")(processors.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setAliases != null) __obj.updateDynamic("setAliases")(js.Any.fromFunction1(setAliases))
-    if (setAnimationProcessors != null) __obj.updateDynamic("setAnimationProcessors")(js.Any.fromFunction1(setAnimationProcessors))
-    if (setDefaults != null) __obj.updateDynamic("setDefaults")(js.Any.fromFunction1(setDefaults))
-    if (setProcessors != null) __obj.updateDynamic("setProcessors")(js.Any.fromFunction1(setProcessors))
-    if (setUpdaters != null) __obj.updateDynamic("setUpdaters")(js.Any.fromFunction1(setUpdaters))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (updaters != null) __obj.updateDynamic("updaters")(updaters.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttributeDefinition]
   }
+  @scala.inline
+  implicit class IAttributeDefinitionOps[Self <: IAttributeDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliases(value: js.Any): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setAnimationProcessors(value: js.Any): Self = this.set("animationProcessors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationProcessors: Self = this.set("animationProcessors", js.undefined)
+    @scala.inline
+    def setDefaults(value: js.Any): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    @scala.inline
+    def setDirty(value: js.Any): Self = this.set("dirty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirty: Self = this.set("dirty", js.undefined)
+    @scala.inline
+    def setGetAliases(value: () => _): Self = this.set("getAliases", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAliases: Self = this.set("getAliases", js.undefined)
+    @scala.inline
+    def setGetAnimationProcessors(value: () => _): Self = this.set("getAnimationProcessors", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAnimationProcessors: Self = this.set("getAnimationProcessors", js.undefined)
+    @scala.inline
+    def setGetDefaults(value: () => _): Self = this.set("getDefaults", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDefaults: Self = this.set("getDefaults", js.undefined)
+    @scala.inline
+    def setGetProcessors(value: () => _): Self = this.set("getProcessors", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetProcessors: Self = this.set("getProcessors", js.undefined)
+    @scala.inline
+    def setGetUpdaters(value: () => _): Self = this.set("getUpdaters", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUpdaters: Self = this.set("getUpdaters", js.undefined)
+    @scala.inline
+    def setNormalize(value: /* changes */ js.UndefOr[js.Any] => _): Self = this.set("normalize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNormalize: Self = this.set("normalize", js.undefined)
+    @scala.inline
+    def setProcessors(value: js.Any): Self = this.set("processors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessors: Self = this.set("processors", js.undefined)
+    @scala.inline
+    def setSetAliases(value: /* aliases */ js.UndefOr[js.Any] => Unit): Self = this.set("setAliases", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAliases: Self = this.set("setAliases", js.undefined)
+    @scala.inline
+    def setSetAnimationProcessors(value: /* animationProcessors */ js.UndefOr[js.Any] => Unit): Self = this.set("setAnimationProcessors", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAnimationProcessors: Self = this.set("setAnimationProcessors", js.undefined)
+    @scala.inline
+    def setSetDefaults(value: /* defaults */ js.UndefOr[js.Any] => Unit): Self = this.set("setDefaults", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDefaults: Self = this.set("setDefaults", js.undefined)
+    @scala.inline
+    def setSetProcessors(value: /* processors */ js.UndefOr[js.Any] => Unit): Self = this.set("setProcessors", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetProcessors: Self = this.set("setProcessors", js.undefined)
+    @scala.inline
+    def setSetUpdaters(value: /* updaters */ js.UndefOr[js.Any] => Unit): Self = this.set("setUpdaters", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetUpdaters: Self = this.set("setUpdaters", js.undefined)
+    @scala.inline
+    def setUpdaters(value: js.Any): Self = this.set("updaters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdaters: Self = this.set("updaters", js.undefined)
+  }
+  
 }
 

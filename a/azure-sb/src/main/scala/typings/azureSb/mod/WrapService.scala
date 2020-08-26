@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class WrapService protected () extends ^ {
   def this(acsHost: String) = this()
   def this(acsHost: String, issuer: String) = this()
+  def this(acsHost: String, issuer: js.UndefOr[scala.Nothing], accessKey: String) = this()
   def this(acsHost: String, issuer: String, accessKey: String) = this()
 }
 

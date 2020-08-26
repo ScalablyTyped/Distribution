@@ -7,62 +7,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateAccountOptions extends js.Object {
   /**
     * one of 'caldav' or 'carddav'. Defaults to 'caldav'.
     */
-  var accountType: js.UndefOr[caldav | carddav] = js.undefined
+  var accountType: js.UndefOr[caldav | carddav] = js.native
   /**
     * list of caldav filters to send with request.
     */
-  var filters: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var filters: js.UndefOr[js.Array[js.Object]] = js.native
   /**
     *  whether or not to load dav collections.
     */
-  var loadCollections: js.UndefOr[Boolean] = js.undefined
+  var loadCollections: js.UndefOr[Boolean] = js.native
   /**
     * whether or not to load dav objects.
     */
-  var loadObjects: js.UndefOr[Boolean] = js.undefined
+  var loadObjects: js.UndefOr[Boolean] = js.native
   /**
     * request sandox.
     */
-  var sandbox: js.UndefOr[Sandbox | js.Object] = js.undefined
+  var sandbox: js.UndefOr[Sandbox | js.Object] = js.native
   /**
     *  some url for server (needn't be base url).
     */
-  var server: String
+  var server: String = js.native
   /**
     * VTIMEZONE calendar object.
     */
-  var timezone: js.UndefOr[String] = js.undefined
+  var timezone: js.UndefOr[String] = js.native
   /**
     * request sender.
     */
-  var xhr: js.UndefOr[Transport] = js.undefined
+  var xhr: js.UndefOr[Transport] = js.native
 }
 
 object CreateAccountOptions {
   @scala.inline
-  def apply(
-    server: String,
-    accountType: caldav | carddav = null,
-    filters: js.Array[js.Object] = null,
-    loadCollections: js.UndefOr[Boolean] = js.undefined,
-    loadObjects: js.UndefOr[Boolean] = js.undefined,
-    sandbox: Sandbox | js.Object = null,
-    timezone: String = null,
-    xhr: Transport = null
-  ): CreateAccountOptions = {
+  def apply(server: String): CreateAccountOptions = {
     val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
-    if (accountType != null) __obj.updateDynamic("accountType")(accountType.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadCollections)) __obj.updateDynamic("loadCollections")(loadCollections.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadObjects)) __obj.updateDynamic("loadObjects")(loadObjects.get.asInstanceOf[js.Any])
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccountOptions]
   }
+  @scala.inline
+  implicit class CreateAccountOptionsOps[Self <: CreateAccountOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccountType(value: caldav | carddav): Self = this.set("accountType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountType: Self = this.set("accountType", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: js.Object*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[js.Object]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setLoadCollections(value: Boolean): Self = this.set("loadCollections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadCollections: Self = this.set("loadCollections", js.undefined)
+    @scala.inline
+    def setLoadObjects(value: Boolean): Self = this.set("loadObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadObjects: Self = this.set("loadObjects", js.undefined)
+    @scala.inline
+    def setSandbox(value: Sandbox | js.Object): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    @scala.inline
+    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    @scala.inline
+    def setXhr(value: Transport): Self = this.set("xhr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXhr: Self = this.set("xhr", js.undefined)
+  }
+  
 }
 

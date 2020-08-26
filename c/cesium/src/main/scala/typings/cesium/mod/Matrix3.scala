@@ -46,10 +46,12 @@ object Matrix3 extends js.Object {
   def computeEigenDecomposition(matrix: Matrix3, result: js.Any): js.Any = js.native
   def determinant(matrix: Matrix3): Double = js.native
   def equals(): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: Matrix3): Boolean = js.native
   def equals(left: Matrix3): Boolean = js.native
   def equals(left: Matrix3, right: Matrix3): Boolean = js.native
   def equalsEpsilon(left: Matrix3, right: Matrix3, epsilon: Double): Boolean = js.native
   def fromArray(array: js.Array[Double]): Matrix3 = js.native
+  def fromArray(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Matrix3): Matrix3 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double): Matrix3 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double, result: Matrix3): Matrix3 = js.native
   def fromColumnMajorArray(values: js.Array[Double]): Matrix3 = js.native
@@ -91,6 +93,7 @@ object Matrix3 extends js.Object {
   def toArray(matrix: Matrix3, result: js.Array[Double]): js.Array[Double] = js.native
   def transpose(matrix: Matrix3, result: Matrix3): Matrix3 = js.native
   def unpack(array: js.Array[Double]): Matrix3 = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Matrix3): Matrix3 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): Matrix3 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: Matrix3): Matrix3 = js.native
 }

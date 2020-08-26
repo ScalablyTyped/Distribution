@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("GoToPreviousHeaderFooterCommand")
 @js.native
 class GoToPreviousHeaderFooterCommand ()
-  extends typings.devexpressWeb.GoToPreviousHeaderFooterCommand {
-  /**
-    * Executes the GoToPreviousHeaderFooterCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.GoToPreviousHeaderFooterCommand
 

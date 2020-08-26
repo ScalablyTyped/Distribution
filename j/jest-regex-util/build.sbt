@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jest-regex-util"
-version := "24.9.0-63248e"
-scalaVersion := "2.13.2"
+version := "24.9.0-9e829b"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

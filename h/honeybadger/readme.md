@@ -12,7 +12,7 @@ A node.js notifier for honeybadger.io
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 222306 |
+| # downloads        | 229038 |
 | # stars            | 1 |
 
 ## Links

@@ -11,8 +11,8 @@ Mock node stdout and stderr without pain.
 | Full name          | std-mocks |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 142034 |
+| # dependents       | 7 |
+| # downloads        | 140549 |
 | # stars            | 0 |
 
 ## Links

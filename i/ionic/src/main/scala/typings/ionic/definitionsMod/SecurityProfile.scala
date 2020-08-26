@@ -7,12 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecurityProfile extends js.Object {
-  var created: String
-  var credentials: Android
-  var name: String
-  var tag: String
-  var `type`: development | production
+  var created: String = js.native
+  var credentials: Android = js.native
+  var name: String = js.native
+  var tag: String = js.native
+  var `type`: development | production = js.native
 }
 
 object SecurityProfile {
@@ -22,5 +23,28 @@ object SecurityProfile {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityProfile]
   }
+  @scala.inline
+  implicit class SecurityProfileOps[Self <: SecurityProfile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCredentials(value: Android): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: development | production): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

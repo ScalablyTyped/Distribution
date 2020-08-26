@@ -29,16 +29,36 @@ trait SchemaAppendCellsRequest extends js.Object {
 
 object SchemaAppendCellsRequest {
   @scala.inline
-  def apply(
-    fields: String = null,
-    rows: js.Array[SchemaRowData] = null,
-    sheetId: js.UndefOr[Double] = js.undefined
-  ): SchemaAppendCellsRequest = {
+  def apply(): SchemaAppendCellsRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppendCellsRequest]
   }
+  @scala.inline
+  implicit class SchemaAppendCellsRequestOps[Self <: SchemaAppendCellsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setRowsVarargs(value: SchemaRowData*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: js.Array[SchemaRowData]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+  }
+  
 }
 

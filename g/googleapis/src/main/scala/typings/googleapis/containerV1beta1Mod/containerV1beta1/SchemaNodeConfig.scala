@@ -132,40 +132,90 @@ trait SchemaNodeConfig extends js.Object {
 
 object SchemaNodeConfig {
   @scala.inline
-  def apply(
-    accelerators: js.Array[SchemaAcceleratorConfig] = null,
-    diskSizeGb: js.UndefOr[Double] = js.undefined,
-    diskType: String = null,
-    imageType: String = null,
-    labels: StringDictionary[String] = null,
-    localSsdCount: js.UndefOr[Double] = js.undefined,
-    machineType: String = null,
-    metadata: StringDictionary[String] = null,
-    minCpuPlatform: String = null,
-    oauthScopes: js.Array[String] = null,
-    preemptible: js.UndefOr[Boolean] = js.undefined,
-    serviceAccount: String = null,
-    tags: js.Array[String] = null,
-    taints: js.Array[SchemaNodeTaint] = null,
-    workloadMetadataConfig: SchemaWorkloadMetadataConfig = null
-  ): SchemaNodeConfig = {
+  def apply(): SchemaNodeConfig = {
     val __obj = js.Dynamic.literal()
-    if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators.asInstanceOf[js.Any])
-    if (!js.isUndefined(diskSizeGb)) __obj.updateDynamic("diskSizeGb")(diskSizeGb.get.asInstanceOf[js.Any])
-    if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
-    if (imageType != null) __obj.updateDynamic("imageType")(imageType.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(localSsdCount)) __obj.updateDynamic("localSsdCount")(localSsdCount.get.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
-    if (oauthScopes != null) __obj.updateDynamic("oauthScopes")(oauthScopes.asInstanceOf[js.Any])
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.get.asInstanceOf[js.Any])
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (taints != null) __obj.updateDynamic("taints")(taints.asInstanceOf[js.Any])
-    if (workloadMetadataConfig != null) __obj.updateDynamic("workloadMetadataConfig")(workloadMetadataConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodeConfig]
   }
+  @scala.inline
+  implicit class SchemaNodeConfigOps[Self <: SchemaNodeConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = this.set("accelerators", js.Array(value :_*))
+    @scala.inline
+    def setAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = this.set("accelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerators: Self = this.set("accelerators", js.undefined)
+    @scala.inline
+    def setDiskSizeGb(value: Double): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    @scala.inline
+    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    @scala.inline
+    def setImageType(value: String): Self = this.set("imageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageType: Self = this.set("imageType", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLocalSsdCount(value: Double): Self = this.set("localSsdCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalSsdCount: Self = this.set("localSsdCount", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[String]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMinCpuPlatform(value: String): Self = this.set("minCpuPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCpuPlatform: Self = this.set("minCpuPlatform", js.undefined)
+    @scala.inline
+    def setOauthScopesVarargs(value: String*): Self = this.set("oauthScopes", js.Array(value :_*))
+    @scala.inline
+    def setOauthScopes(value: js.Array[String]): Self = this.set("oauthScopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthScopes: Self = this.set("oauthScopes", js.undefined)
+    @scala.inline
+    def setPreemptible(value: Boolean): Self = this.set("preemptible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreemptible: Self = this.set("preemptible", js.undefined)
+    @scala.inline
+    def setServiceAccount(value: String): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTaintsVarargs(value: SchemaNodeTaint*): Self = this.set("taints", js.Array(value :_*))
+    @scala.inline
+    def setTaints(value: js.Array[SchemaNodeTaint]): Self = this.set("taints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaints: Self = this.set("taints", js.undefined)
+    @scala.inline
+    def setWorkloadMetadataConfig(value: SchemaWorkloadMetadataConfig): Self = this.set("workloadMetadataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkloadMetadataConfig: Self = this.set("workloadMetadataConfig", js.undefined)
+  }
+  
 }
 

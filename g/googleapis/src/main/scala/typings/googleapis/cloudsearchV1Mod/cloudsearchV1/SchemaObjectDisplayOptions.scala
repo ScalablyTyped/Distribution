@@ -30,11 +30,32 @@ trait SchemaObjectDisplayOptions extends js.Object {
 
 object SchemaObjectDisplayOptions {
   @scala.inline
-  def apply(metalines: js.Array[SchemaMetaline] = null, objectDisplayLabel: String = null): SchemaObjectDisplayOptions = {
+  def apply(): SchemaObjectDisplayOptions = {
     val __obj = js.Dynamic.literal()
-    if (metalines != null) __obj.updateDynamic("metalines")(metalines.asInstanceOf[js.Any])
-    if (objectDisplayLabel != null) __obj.updateDynamic("objectDisplayLabel")(objectDisplayLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObjectDisplayOptions]
   }
+  @scala.inline
+  implicit class SchemaObjectDisplayOptionsOps[Self <: SchemaObjectDisplayOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetalinesVarargs(value: SchemaMetaline*): Self = this.set("metalines", js.Array(value :_*))
+    @scala.inline
+    def setMetalines(value: js.Array[SchemaMetaline]): Self = this.set("metalines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetalines: Self = this.set("metalines", js.undefined)
+    @scala.inline
+    def setObjectDisplayLabel(value: String): Self = this.set("objectDisplayLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectDisplayLabel: Self = this.set("objectDisplayLabel", js.undefined)
+  }
+  
 }
 

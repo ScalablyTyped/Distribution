@@ -11,7 +11,7 @@ trait TriggerAction extends js.Object {
   /**
     * Arguments to be passed to the job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes.
     */
-  var arguments: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  var arguments: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The name of the crawler to be executed. Conflicts with `jobName`.
     */
@@ -28,18 +28,38 @@ trait TriggerAction extends js.Object {
 
 object TriggerAction {
   @scala.inline
-  def apply(
-    arguments: Input[StringDictionary[_]] = null,
-    crawlerName: Input[String] = null,
-    jobName: Input[String] = null,
-    timeout: Input[Double] = null
-  ): TriggerAction = {
+  def apply(): TriggerAction = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (crawlerName != null) __obj.updateDynamic("crawlerName")(crawlerName.asInstanceOf[js.Any])
-    if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerAction]
   }
+  @scala.inline
+  implicit class TriggerActionOps[Self <: TriggerAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArguments(value: Input[StringDictionary[Input[String]]]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("arguments", js.undefined)
+    @scala.inline
+    def setCrawlerName(value: Input[String]): Self = this.set("crawlerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlerName: Self = this.set("crawlerName", js.undefined)
+    @scala.inline
+    def setJobName(value: Input[String]): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("jobName", js.undefined)
+    @scala.inline
+    def setTimeout(value: Input[Double]): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

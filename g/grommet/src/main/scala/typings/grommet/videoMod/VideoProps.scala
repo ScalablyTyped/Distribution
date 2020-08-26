@@ -13,42 +13,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VideoProps extends js.Object {
-  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
-  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var autoPlay: js.UndefOr[Boolean] = js.undefined
-  var controls: js.UndefOr[`false` | over | below] = js.undefined
-  var fit: js.UndefOr[cover | contain] = js.undefined
-  var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var mute: js.UndefOr[Boolean] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+  var alignSelf: js.UndefOr[AlignSelfType] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[`false` | over | below] = js.native
+  var fit: js.UndefOr[cover | contain] = js.native
+  var gridArea: js.UndefOr[GridAreaType] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var mute: js.UndefOr[Boolean] = js.native
 }
 
 object VideoProps {
   @scala.inline
-  def apply(
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    controls: `false` | over | below = null,
-    fit: cover | contain = null,
-    gridArea: GridAreaType = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    margin: MarginType = null,
-    mute: js.UndefOr[Boolean] = js.undefined
-  ): VideoProps = {
+  def apply(): VideoProps = {
     val __obj = js.Dynamic.literal()
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
-    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProps]
   }
+  @scala.inline
+  implicit class VideoPropsOps[Self <: VideoProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA11yTitle(value: A11yTitleType): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setAlignSelf(value: AlignSelfType): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    @scala.inline
+    def setControls(value: `false` | over | below): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setFit(value: cover | contain): Self = this.set("fit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFit: Self = this.set("fit", js.undefined)
+    @scala.inline
+    def setGridArea(value: GridAreaType): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMute(value: Boolean): Self = this.set("mute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMute: Self = this.set("mute", js.undefined)
+  }
+  
 }
 

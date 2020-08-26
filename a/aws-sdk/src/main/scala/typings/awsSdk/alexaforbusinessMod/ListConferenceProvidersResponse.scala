@@ -18,11 +18,32 @@ trait ListConferenceProvidersResponse extends js.Object {
 
 object ListConferenceProvidersResponse {
   @scala.inline
-  def apply(ConferenceProviders: ConferenceProvidersList = null, NextToken: NextToken = null): ListConferenceProvidersResponse = {
+  def apply(): ListConferenceProvidersResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConferenceProviders != null) __obj.updateDynamic("ConferenceProviders")(ConferenceProviders.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConferenceProvidersResponse]
   }
+  @scala.inline
+  implicit class ListConferenceProvidersResponseOps[Self <: ListConferenceProvidersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConferenceProvidersVarargs(value: ConferenceProvider*): Self = this.set("ConferenceProviders", js.Array(value :_*))
+    @scala.inline
+    def setConferenceProviders(value: ConferenceProvidersList): Self = this.set("ConferenceProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConferenceProviders: Self = this.set("ConferenceProviders", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

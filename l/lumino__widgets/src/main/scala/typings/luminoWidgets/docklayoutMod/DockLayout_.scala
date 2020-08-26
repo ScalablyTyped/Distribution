@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/docklayout", "DockLayout")
+@JSImport("@lumino/widgets/types/docklayout", "DockLayout")
 @js.native
 class DockLayout_ protected () extends Layout {
   /**

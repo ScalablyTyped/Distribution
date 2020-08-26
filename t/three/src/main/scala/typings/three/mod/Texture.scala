@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 class Texture protected ()
   extends typings.three.textureMod.Texture {
   def this(
-    image: js.UndefOr[HTMLCanvasElement | HTMLImageElement | HTMLVideoElement],
+    image: js.UndefOr[HTMLImageElement | HTMLCanvasElement | HTMLVideoElement],
     mapping: js.UndefOr[typings.three.constantsMod.Mapping],
     wrapS: js.UndefOr[typings.three.constantsMod.Wrapping],
     wrapT: js.UndefOr[typings.three.constantsMod.Wrapping],

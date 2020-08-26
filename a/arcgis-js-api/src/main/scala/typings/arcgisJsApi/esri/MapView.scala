@@ -22,6 +22,14 @@ trait MapView
      with MapViewBase
      with BreakpointsOwner {
   /**
+    * The background color of the MapView. If the view's [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#map) changes, the view's `background` is reset to the map's background, even if the user set it previously.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#background)
+    *
+    * @default null
+    */
+  var background: ColorBackground = js.native
+  /**
     * Represents the view's center point; when setting the center, you may pass a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) instance or an array of numbers representing a longitude/latitude pair (`[-100.4593, 36.9014]`). Setting the center immediately changes the current view. For animating the view, see [goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo).  If set in the constructor, this property will be ignored if the [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#viewpoint) or [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent) properties are also set in the constructor.  The returned [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) object is always in the spatial reference of the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#map) and may be modified internally. To persist the returned object, create a clone using [Point.clone()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#clone).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#center)
@@ -94,10 +102,15 @@ trait MapView
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest)
     *
     * @param screenPoint The screen coordinates (or native mouse event) of the click on the view.
+    * @param options Options to specify what is included in or excluded from the hitTest. Supported since 4.16.
+    * @param options.include A list of layers and graphics to include in the hitTest. All layers and graphics will be included if include is not specified.
+    * @param options.exclude A list of layers and graphics to exclude from the hitTest. No layers or graphics will be excluded if exclude is not specified.
     *
     */
   def hitTest(screenPoint: ScreenPoint): js.Promise[HitTestResult] = js.native
+  def hitTest(screenPoint: ScreenPoint, options: MapViewHitTestOptions): js.Promise[HitTestResult] = js.native
   def hitTest(screenPoint: MouseEvent): js.Promise[HitTestResult] = js.native
+  def hitTest(screenPoint: MouseEvent, options: MapViewHitTestOptions): js.Promise[HitTestResult] = js.native
   def on(`type`: String, modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
   def on(`type`: String, modifiersOrHandler: EventHandler, handler: EventHandler): IHandle = js.native
   def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
@@ -108,7 +121,7 @@ trait MapView
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
     *
     * @param options Screenshot options.
-    * @param options.format The format of the resulting encoded data url.  **Possible values**: jpg | png.
+    * @param options.format The format of the resulting encoded data url.
     * @param options.layers When used, only the visible layers in this list will be included in the output.
     * @param options.quality The quality (0 to 100) of the encoded image when encoding as `jpg`.
     * @param options.width The width of the screenshot (defaults to the area width). The height will be derived automatically if left unspecified, according to the aspect ratio of the of the screenshot area.

@@ -28,6 +28,7 @@ class ResourceProjectsCompanies protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCompany] = js.native
   def create(callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompany] = js.native
   def create(params: ParamsResourceProjectsCompaniesCreate): GaxiosPromise[SchemaCompany] = js.native
   def create(params: ParamsResourceProjectsCompaniesCreate, callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
   def create(
@@ -56,6 +57,7 @@ class ResourceProjectsCompanies protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsCompaniesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsCompaniesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -83,6 +85,7 @@ class ResourceProjectsCompanies protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCompany] = js.native
   def get(callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompany] = js.native
   def get(params: ParamsResourceProjectsCompaniesGet): GaxiosPromise[SchemaCompany] = js.native
   def get(params: ParamsResourceProjectsCompaniesGet, callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
   def get(
@@ -113,6 +116,7 @@ class ResourceProjectsCompanies protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListCompaniesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCompaniesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCompaniesResponse] = js.native
   def list(params: ParamsResourceProjectsCompaniesList): GaxiosPromise[SchemaListCompaniesResponse] = js.native
   def list(
     params: ParamsResourceProjectsCompaniesList,
@@ -146,6 +150,7 @@ class ResourceProjectsCompanies protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaCompany] = js.native
   def patch(callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompany] = js.native
   def patch(params: ParamsResourceProjectsCompaniesPatch): GaxiosPromise[SchemaCompany] = js.native
   def patch(params: ParamsResourceProjectsCompaniesPatch, callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
   def patch(

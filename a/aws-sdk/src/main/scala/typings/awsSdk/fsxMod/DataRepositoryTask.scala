@@ -52,26 +52,69 @@ object DataRepositoryTask {
     FileSystemId: FileSystemId,
     Lifecycle: DataRepositoryTaskLifecycle,
     TaskId: TaskId,
-    Type: DataRepositoryTaskType,
-    EndTime: EndTime = null,
-    FailureDetails: DataRepositoryTaskFailureDetails = null,
-    Paths: DataRepositoryTaskPaths = null,
-    Report: CompletionReport = null,
-    ResourceARN: ResourceARN = null,
-    StartTime: StartTime = null,
-    Status: DataRepositoryTaskStatus = null,
-    Tags: Tags = null
+    Type: DataRepositoryTaskType
   ): DataRepositoryTask = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], FileSystemId = FileSystemId.asInstanceOf[js.Any], Lifecycle = Lifecycle.asInstanceOf[js.Any], TaskId = TaskId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (FailureDetails != null) __obj.updateDynamic("FailureDetails")(FailureDetails.asInstanceOf[js.Any])
-    if (Paths != null) __obj.updateDynamic("Paths")(Paths.asInstanceOf[js.Any])
-    if (Report != null) __obj.updateDynamic("Report")(Report.asInstanceOf[js.Any])
-    if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRepositoryTask]
   }
+  @scala.inline
+  implicit class DataRepositoryTaskOps[Self <: DataRepositoryTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLifecycle(value: DataRepositoryTaskLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskId(value: TaskId): Self = this.set("TaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: DataRepositoryTaskType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: EndTime): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setFailureDetails(value: DataRepositoryTaskFailureDetails): Self = this.set("FailureDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDetails: Self = this.set("FailureDetails", js.undefined)
+    @scala.inline
+    def setPathsVarargs(value: DataRepositoryTaskPath*): Self = this.set("Paths", js.Array(value :_*))
+    @scala.inline
+    def setPaths(value: DataRepositoryTaskPaths): Self = this.set("Paths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaths: Self = this.set("Paths", js.undefined)
+    @scala.inline
+    def setReport(value: CompletionReport): Self = this.set("Report", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReport: Self = this.set("Report", js.undefined)
+    @scala.inline
+    def setResourceARN(value: ResourceARN): Self = this.set("ResourceARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceARN: Self = this.set("ResourceARN", js.undefined)
+    @scala.inline
+    def setStartTime(value: StartTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: DataRepositoryTaskStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -20,5 +20,6 @@ import scala.scalajs.js.annotation._
   * As such, this encoder/decoder should NOT be used for encoding or decoding
   * "standard" LEB128 formats (e.g. Google Protocol Buffers).
   */
+@js.native
 trait ZigZagEncoding extends js.Object
 

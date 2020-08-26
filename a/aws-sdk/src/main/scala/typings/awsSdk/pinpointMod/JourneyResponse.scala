@@ -70,37 +70,76 @@ trait JourneyResponse extends js.Object {
 
 object JourneyResponse {
   @scala.inline
-  def apply(
-    ApplicationId: string,
-    Id: string,
-    Name: string,
-    Activities: MapOfActivity = null,
-    CreationDate: string = null,
-    LastModifiedDate: string = null,
-    Limits: JourneyLimits = null,
-    LocalTime: js.UndefOr[boolean] = js.undefined,
-    QuietTime: QuietTime = null,
-    RefreshFrequency: string = null,
-    Schedule: JourneySchedule = null,
-    StartActivity: string = null,
-    StartCondition: StartCondition = null,
-    State: State = null,
-    tags: MapOfString = null
-  ): JourneyResponse = {
+  def apply(ApplicationId: string, Id: string, Name: string): JourneyResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (Activities != null) __obj.updateDynamic("Activities")(Activities.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
-    if (!js.isUndefined(LocalTime)) __obj.updateDynamic("LocalTime")(LocalTime.get.asInstanceOf[js.Any])
-    if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime.asInstanceOf[js.Any])
-    if (RefreshFrequency != null) __obj.updateDynamic("RefreshFrequency")(RefreshFrequency.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (StartActivity != null) __obj.updateDynamic("StartActivity")(StartActivity.asInstanceOf[js.Any])
-    if (StartCondition != null) __obj.updateDynamic("StartCondition")(StartCondition.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[JourneyResponse]
   }
+  @scala.inline
+  implicit class JourneyResponseOps[Self <: JourneyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivities(value: MapOfActivity): Self = this.set("Activities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivities: Self = this.set("Activities", js.undefined)
+    @scala.inline
+    def setCreationDate(value: string): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setLimits(value: JourneyLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("Limits", js.undefined)
+    @scala.inline
+    def setLocalTime(value: boolean): Self = this.set("LocalTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalTime: Self = this.set("LocalTime", js.undefined)
+    @scala.inline
+    def setQuietTime(value: QuietTime): Self = this.set("QuietTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuietTime: Self = this.set("QuietTime", js.undefined)
+    @scala.inline
+    def setRefreshFrequency(value: string): Self = this.set("RefreshFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshFrequency: Self = this.set("RefreshFrequency", js.undefined)
+    @scala.inline
+    def setSchedule(value: JourneySchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    @scala.inline
+    def setStartActivity(value: string): Self = this.set("StartActivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartActivity: Self = this.set("StartActivity", js.undefined)
+    @scala.inline
+    def setStartCondition(value: StartCondition): Self = this.set("StartCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartCondition: Self = this.set("StartCondition", js.undefined)
+    @scala.inline
+    def setState(value: State): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

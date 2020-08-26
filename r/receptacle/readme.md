@@ -12,7 +12,7 @@ In memory cache lru cache with ttl support.
 | Keywords           | cache, expires, lru, map, memory, receptacle, ttl |
 | # releases         | 3 |
 | # dependents       | 11 |
-| # downloads        | 391311 |
+| # downloads        | 385922 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Clamp a value between two other values
 | ------------------ | :-------------: |
 | Full name          | clamp |
 | Keywords           | clamp, math, greater, less, than, between |
-| # releases         | 1 |
-| # dependents       | 177 |
-| # downloads        | 8000720 |
+| # releases         | 0 |
+| # dependents       | 178 |
+| # downloads        | 8481116 |
 | # stars            | 2 |
 
 ## Links

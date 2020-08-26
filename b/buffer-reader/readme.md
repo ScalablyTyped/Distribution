@@ -12,7 +12,7 @@ a reader for nodejs buffer
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 29 |
-| # downloads        | 14760 |
+| # downloads        | 14419 |
 | # stars            | 2 |
 
 ## Links

@@ -10,9 +10,9 @@ Microsoft Application Insights JavaScript SDK
 | ------------------ | :-------------: |
 | Full name          | applicationinsights-js |
 | Keywords           | browser performance monitoring, script errors, application insights, microsoft, azure |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 28 |
-| # downloads        | 2481656 |
+| # downloads        | 2533745 |
 | # stars            | 3 |
 
 ## Links

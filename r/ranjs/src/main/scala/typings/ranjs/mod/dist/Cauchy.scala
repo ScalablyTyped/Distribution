@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Cauchy ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Cauchy] {
   def this(x0: Double) = this()
+  def this(x0: js.UndefOr[scala.Nothing], gamma: Double) = this()
   def this(x0: Double, gamma: Double) = this()
 }
 

@@ -10,17 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("FileOpenCommand")
 @js.native
 class FileOpenCommand ()
-  extends typings.devexpressWeb.FileOpenCommand {
-  /**
-    * Executes the FileOpenCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
-    * @param path A string value specifying path to the opening file.
-    */
-  /* CompleteClass */
-  override def execute(path: String): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.FileOpenCommand
 

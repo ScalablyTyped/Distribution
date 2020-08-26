@@ -38,24 +38,50 @@ trait HostKeyAttributes extends js.Object {
 
 object HostKeyAttributes {
   @scala.inline
-  def apply(
-    algorithm: String = null,
-    fingerprintSHA1: String = null,
-    fingerprintSHA256: String = null,
-    notValidAfter: IsoDate = null,
-    notValidBefore: IsoDate = null,
-    publicKey: String = null,
-    witnessedAt: IsoDate = null
-  ): HostKeyAttributes = {
+  def apply(): HostKeyAttributes = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (fingerprintSHA1 != null) __obj.updateDynamic("fingerprintSHA1")(fingerprintSHA1.asInstanceOf[js.Any])
-    if (fingerprintSHA256 != null) __obj.updateDynamic("fingerprintSHA256")(fingerprintSHA256.asInstanceOf[js.Any])
-    if (notValidAfter != null) __obj.updateDynamic("notValidAfter")(notValidAfter.asInstanceOf[js.Any])
-    if (notValidBefore != null) __obj.updateDynamic("notValidBefore")(notValidBefore.asInstanceOf[js.Any])
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
-    if (witnessedAt != null) __obj.updateDynamic("witnessedAt")(witnessedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostKeyAttributes]
   }
+  @scala.inline
+  implicit class HostKeyAttributesOps[Self <: HostKeyAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    @scala.inline
+    def setFingerprintSHA1(value: String): Self = this.set("fingerprintSHA1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprintSHA1: Self = this.set("fingerprintSHA1", js.undefined)
+    @scala.inline
+    def setFingerprintSHA256(value: String): Self = this.set("fingerprintSHA256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprintSHA256: Self = this.set("fingerprintSHA256", js.undefined)
+    @scala.inline
+    def setNotValidAfter(value: IsoDate): Self = this.set("notValidAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotValidAfter: Self = this.set("notValidAfter", js.undefined)
+    @scala.inline
+    def setNotValidBefore(value: IsoDate): Self = this.set("notValidBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotValidBefore: Self = this.set("notValidBefore", js.undefined)
+    @scala.inline
+    def setPublicKey(value: String): Self = this.set("publicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+    @scala.inline
+    def setWitnessedAt(value: IsoDate): Self = this.set("witnessedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWitnessedAt: Self = this.set("witnessedAt", js.undefined)
+  }
+  
 }
 

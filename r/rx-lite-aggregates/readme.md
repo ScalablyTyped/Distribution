@@ -12,7 +12,7 @@ Lightweight library with aggregate functions for composing asynchronous and even
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
 | # dependents       | 20 |
-| # downloads        | 134137241 |
+| # downloads        | 133324919 |
 | # stars            | 1 |
 
 ## Links

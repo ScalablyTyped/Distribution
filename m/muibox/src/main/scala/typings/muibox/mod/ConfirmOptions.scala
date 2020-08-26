@@ -1,28 +1,36 @@
 package typings.muibox.mod
 
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfirmOptions extends AlertOptions {
-  var cancel: js.UndefOr[DialogButtonOptions] = js.undefined
+  var cancel: js.UndefOr[DialogButtonOptions] = js.native
 }
 
 object ConfirmOptions {
   @scala.inline
-  def apply(
-    cancel: DialogButtonOptions = null,
-    message: String | ReactNode = null,
-    ok: DialogButtonOptions = null,
-    title: String = null
-  ): ConfirmOptions = {
+  def apply(): ConfirmOptions = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (ok != null) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmOptions]
   }
+  @scala.inline
+  implicit class ConfirmOptionsOps[Self <: ConfirmOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: DialogButtonOptions): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+  }
+  
 }
 

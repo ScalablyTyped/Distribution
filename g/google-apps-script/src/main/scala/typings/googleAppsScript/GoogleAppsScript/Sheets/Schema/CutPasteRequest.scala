@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CutPasteRequest extends js.Object {
-  var destination: js.UndefOr[GridCoordinate] = js.undefined
-  var pasteType: js.UndefOr[String] = js.undefined
-  var source: js.UndefOr[GridRange] = js.undefined
+  var destination: js.UndefOr[GridCoordinate] = js.native
+  var pasteType: js.UndefOr[String] = js.native
+  var source: js.UndefOr[GridRange] = js.native
 }
 
 object CutPasteRequest {
   @scala.inline
-  def apply(destination: GridCoordinate = null, pasteType: String = null, source: GridRange = null): CutPasteRequest = {
+  def apply(): CutPasteRequest = {
     val __obj = js.Dynamic.literal()
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (pasteType != null) __obj.updateDynamic("pasteType")(pasteType.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CutPasteRequest]
   }
+  @scala.inline
+  implicit class CutPasteRequestOps[Self <: CutPasteRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: GridCoordinate): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setPasteType(value: String): Self = this.set("pasteType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasteType: Self = this.set("pasteType", js.undefined)
+    @scala.inline
+    def setSource(value: GridRange): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+  }
+  
 }
 

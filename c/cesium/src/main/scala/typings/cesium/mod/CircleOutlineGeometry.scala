@@ -17,6 +17,7 @@ class CircleOutlineGeometry protected () extends Packable {
 object CircleOutlineGeometry extends js.Object {
   def createGeometry(circleGeometry: CircleOutlineGeometry): Geometry = js.native
   def unpack(array: js.Array[Double]): js.Array[Double] = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: CircleOutlineGeometry): js.Array[Double] = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: CircleOutlineGeometry): js.Array[Double] = js.native
 }

@@ -4,19 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceMethodSettings extends js.Object {
   /** Allows the user to set the custom name for the service method responsible for initializing PivotGauge.
     * @Default {InitializeGauge}
     */
-  var initialize: js.UndefOr[String] = js.undefined
+  var initialize: js.UndefOr[String] = js.native
 }
 
 object ServiceMethodSettings {
   @scala.inline
-  def apply(initialize: String = null): ServiceMethodSettings = {
+  def apply(): ServiceMethodSettings = {
     val __obj = js.Dynamic.literal()
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceMethodSettings]
   }
+  @scala.inline
+  implicit class ServiceMethodSettingsOps[Self <: ServiceMethodSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitialize(value: String): Self = this.set("initialize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialize: Self = this.set("initialize", js.undefined)
+  }
+  
 }
 

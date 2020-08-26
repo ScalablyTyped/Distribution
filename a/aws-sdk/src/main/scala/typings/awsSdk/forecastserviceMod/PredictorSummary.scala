@@ -38,24 +38,50 @@ trait PredictorSummary extends js.Object {
 
 object PredictorSummary {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    DatasetGroupArn: Arn = null,
-    LastModificationTime: Timestamp = null,
-    Message: ErrorMessage = null,
-    PredictorArn: Arn = null,
-    PredictorName: Name = null,
-    Status: Status = null
-  ): PredictorSummary = {
+  def apply(): PredictorSummary = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DatasetGroupArn != null) __obj.updateDynamic("DatasetGroupArn")(DatasetGroupArn.asInstanceOf[js.Any])
-    if (LastModificationTime != null) __obj.updateDynamic("LastModificationTime")(LastModificationTime.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (PredictorArn != null) __obj.updateDynamic("PredictorArn")(PredictorArn.asInstanceOf[js.Any])
-    if (PredictorName != null) __obj.updateDynamic("PredictorName")(PredictorName.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredictorSummary]
   }
+  @scala.inline
+  implicit class PredictorSummaryOps[Self <: PredictorSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDatasetGroupArn(value: Arn): Self = this.set("DatasetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetGroupArn: Self = this.set("DatasetGroupArn", js.undefined)
+    @scala.inline
+    def setLastModificationTime(value: Timestamp): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModificationTime: Self = this.set("LastModificationTime", js.undefined)
+    @scala.inline
+    def setMessage(value: ErrorMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setPredictorArn(value: Arn): Self = this.set("PredictorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictorArn: Self = this.set("PredictorArn", js.undefined)
+    @scala.inline
+    def setPredictorName(value: Name): Self = this.set("PredictorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictorName: Self = this.set("PredictorName", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

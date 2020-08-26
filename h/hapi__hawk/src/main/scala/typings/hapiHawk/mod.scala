@@ -146,6 +146,8 @@ object mod extends js.Object {
     def parseRequest(req: typings.node.httpsMod.RequestOptions): CustomRequest = js.native
     def parseRequest(req: typings.node.httpsMod.RequestOptions, options: ParseRequestOptions): CustomRequest = js.native
     def unauthorized(): Boom[_] with MissingAuth = js.native
+    def unauthorized(message: js.UndefOr[scala.Nothing], attributes: String): Boom[_] with MissingAuth = js.native
+    def unauthorized(message: js.UndefOr[scala.Nothing], attributes: Attributes): Boom[_] with MissingAuth = js.native
     def unauthorized(message: String): Boom[_] with MissingAuth = js.native
     def unauthorized(message: String, attributes: String): Boom[_] with MissingAuth = js.native
     def unauthorized(message: String, attributes: Attributes): Boom[_] with MissingAuth = js.native

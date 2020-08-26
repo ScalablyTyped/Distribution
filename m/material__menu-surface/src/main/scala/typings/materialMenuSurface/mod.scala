@@ -68,14 +68,14 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object MDCMenuSurfaceFoundation extends js.Object {
-    val Corner: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Corner */ js.Any = js.native
-    val cssClasses: ANCHOR = js.native
+    def Corner: js.Any = js.native
+    def cssClasses: ANCHOR = js.native
     /**
       * @see {@link MDCMenuSurfaceAdapter} for typing information on parameters and return types.
       */
-    val defaultAdapter: MDCMenuSurfaceAdapter = js.native
-    val numbers: ANCHORTOMENUSURFACEWIDTHRATIO = js.native
-    val strings: CLOSEDEVENT = js.native
+    def defaultAdapter: MDCMenuSurfaceAdapter = js.native
+    def numbers: ANCHORTOMENUSURFACEWIDTHRATIO = js.native
+    def strings: CLOSEDEVENT = js.native
   }
   
   /**
@@ -106,6 +106,7 @@ object mod extends js.Object {
     var ANIMATING_CLOSED: String = js.native
     var ANIMATING_OPEN: String = js.native
     var FIXED: String = js.native
+    var IS_OPEN_BELOW: String = js.native
     var OPEN: String = js.native
     var ROOT: String = js.native
   }
@@ -114,7 +115,7 @@ object mod extends js.Object {
   object numbers extends js.Object {
     /** Ratio of anchor width to menu-surface width for switching from corner positioning to center positioning. */
     var ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO: Double = js.native
-    /** Margin left to the edge of the viewport when menu-surface is at maximum possible height. */
+    /** Margin left to the edge of the viewport when menu-surface is at maximum possible height. Also used as a viewport margin. */
     var MARGIN_TO_EDGE: Double = js.native
     /** Total duration of menu-surface close animation. */
     var TRANSITION_CLOSE_DURATION: Double = js.native

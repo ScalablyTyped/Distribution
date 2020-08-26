@@ -26,18 +26,40 @@ trait Account extends js.Object {
 
 object Account {
   @scala.inline
-  def apply(
-    apiKeyVersion: String = null,
-    cloudwatchRoleArn: String = null,
-    features: ListOfString = null,
-    throttleSettings: ThrottleSettings = null
-  ): Account = {
+  def apply(): Account = {
     val __obj = js.Dynamic.literal()
-    if (apiKeyVersion != null) __obj.updateDynamic("apiKeyVersion")(apiKeyVersion.asInstanceOf[js.Any])
-    if (cloudwatchRoleArn != null) __obj.updateDynamic("cloudwatchRoleArn")(cloudwatchRoleArn.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (throttleSettings != null) __obj.updateDynamic("throttleSettings")(throttleSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
+  @scala.inline
+  implicit class AccountOps[Self <: Account] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiKeyVersion(value: String): Self = this.set("apiKeyVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiKeyVersion: Self = this.set("apiKeyVersion", js.undefined)
+    @scala.inline
+    def setCloudwatchRoleArn(value: String): Self = this.set("cloudwatchRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchRoleArn: Self = this.set("cloudwatchRoleArn", js.undefined)
+    @scala.inline
+    def setFeaturesVarargs(value: String*): Self = this.set("features", js.Array(value :_*))
+    @scala.inline
+    def setFeatures(value: ListOfString): Self = this.set("features", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatures: Self = this.set("features", js.undefined)
+    @scala.inline
+    def setThrottleSettings(value: ThrottleSettings): Self = this.set("throttleSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrottleSettings: Self = this.set("throttleSettings", js.undefined)
+  }
+  
 }
 

@@ -22,10 +22,30 @@ trait InitiateJobInput extends js.Object {
 
 object InitiateJobInput {
   @scala.inline
-  def apply(accountId: String, vaultName: String, jobParameters: JobParameters = null): InitiateJobInput = {
+  def apply(accountId: String, vaultName: String): InitiateJobInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-    if (jobParameters != null) __obj.updateDynamic("jobParameters")(jobParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateJobInput]
   }
+  @scala.inline
+  implicit class InitiateJobInputOps[Self <: InitiateJobInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVaultName(value: String): Self = this.set("vaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobParameters(value: JobParameters): Self = this.set("jobParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobParameters: Self = this.set("jobParameters", js.undefined)
+  }
+  
 }
 

@@ -34,7 +34,6 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     * Range's end, or right endpoint.
     */
   var end: js.UndefOr[T | Null] = js.native
-  def compareBegin(): `-1` | `0` = js.native
   /**
     * Compares this range's beginning with the given value.
     * Returns `-1` if this range begins before the given value, `0` if they're
@@ -49,8 +48,8 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     * new Range(5, 10).compareBegin(0) // => 1
     * new Range(5, 10).compareBegin(null) // => 1
     */
+  def compareBegin(): `-1` | `0` = js.native
   def compareBegin(begin: T): `-1` | `0` = js.native
-  def compareEnd(): `-1` | `0` = js.native
   /**
     * Compares this range's end with the given value.
     * Returns `-1` if this range ends before the given value, `0` if they're
@@ -65,8 +64,8 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     * new Range(0, 5).compareEnd(10) // => 1
     * new Range(0, 5).compareEnd(null) // => -1
     */
+  def compareEnd(): `-1` | `0` = js.native
   def compareEnd(end: T): `-1` | `0` = js.native
-  def contains(): Boolean = js.native
   /**
     * Check if a given value is contained within this range.
     * Returns `true` or `false`.
@@ -76,6 +75,7 @@ trait Range[T /* <: Endpoint */] extends js.Object {
     * new Range(0, 10).contains(10) // => true
     * new Range(0, 10, "[)").contains(10) // => false
     */
+  def contains(): Boolean = js.native
   def contains(value: T): Boolean = js.native
   /**
     * @alias toJSON

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 /**
   * An options object for initializing a `Drag` object.
   */
+@js.native
 trait IOptions extends js.Object {
   /**
     * An optional drag image which follows the mouse cursor.
@@ -28,11 +29,11 @@ trait IOptions extends js.Object {
     *
     * The default value is `null`.
     */
-  var dragImage: js.UndefOr[HTMLElement] = js.undefined
+  var dragImage: js.UndefOr[HTMLElement] = js.native
   /**
     * The populated mime data for the drag operation.
     */
-  var mimeData: MimeData
+  var mimeData: MimeData = js.native
   /**
     * The optional proposed drop action for the drag operation.
     *
@@ -42,7 +43,7 @@ trait IOptions extends js.Object {
     *
     * The default value is `'copy'`.
     */
-  var proposedAction: js.UndefOr[DropAction] = js.undefined
+  var proposedAction: js.UndefOr[DropAction] = js.native
   /**
     * An optional object which indicates the source of the drag.
     *
@@ -53,7 +54,7 @@ trait IOptions extends js.Object {
     *
     * The default value is `null`.
     */
-  var source: js.UndefOr[js.Any] = js.undefined
+  var source: js.UndefOr[js.Any] = js.native
   /**
     * The drop actions supported by the drag initiator.
     *
@@ -66,24 +67,45 @@ trait IOptions extends js.Object {
     *
     * The default value is `'all'`.
     */
-  var supportedActions: js.UndefOr[SupportedActions] = js.undefined
+  var supportedActions: js.UndefOr[SupportedActions] = js.native
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    mimeData: MimeData,
-    dragImage: HTMLElement = null,
-    proposedAction: DropAction = null,
-    source: js.Any = null,
-    supportedActions: SupportedActions = null
-  ): IOptions = {
+  def apply(mimeData: MimeData): IOptions = {
     val __obj = js.Dynamic.literal(mimeData = mimeData.asInstanceOf[js.Any])
-    if (dragImage != null) __obj.updateDynamic("dragImage")(dragImage.asInstanceOf[js.Any])
-    if (proposedAction != null) __obj.updateDynamic("proposedAction")(proposedAction.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (supportedActions != null) __obj.updateDynamic("supportedActions")(supportedActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMimeData(value: MimeData): Self = this.set("mimeData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDragImage(value: HTMLElement): Self = this.set("dragImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragImage: Self = this.set("dragImage", js.undefined)
+    @scala.inline
+    def setProposedAction(value: DropAction): Self = this.set("proposedAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposedAction: Self = this.set("proposedAction", js.undefined)
+    @scala.inline
+    def setSource(value: js.Any): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSupportedActions(value: SupportedActions): Self = this.set("supportedActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedActions: Self = this.set("supportedActions", js.undefined)
+  }
+  
 }
 

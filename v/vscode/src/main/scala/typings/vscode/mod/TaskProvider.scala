@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait TaskProvider[T] extends js.Object {
+trait TaskProvider[T /* <: Task */] extends js.Object {
   /**
     * Provides tasks.
     * @param token A cancellation token.

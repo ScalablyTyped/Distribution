@@ -25,7 +25,7 @@ trait AliasState extends js.Object {
     */
   val functionVersion: js.UndefOr[Input[String]] = js.native
   /**
-    * The ARN to be used for invoking Lambda Function from API Gateway - to be used in [`aws.apigateway.Integration`](https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html)'s `uri`
+    * The ARN to be used for invoking Lambda Function from API Gateway - to be used in `aws.apigateway.Integration`'s `uri`
     */
   val invokeArn: js.UndefOr[Input[String]] = js.native
   /**
@@ -40,24 +40,50 @@ trait AliasState extends js.Object {
 
 object AliasState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    description: Input[String] = null,
-    functionName: Input[String] = null,
-    functionVersion: Input[String] = null,
-    invokeArn: Input[String] = null,
-    name: Input[String] = null,
-    routingConfig: Input[AliasRoutingConfig] = null
-  ): AliasState = {
+  def apply(): AliasState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (functionVersion != null) __obj.updateDynamic("functionVersion")(functionVersion.asInstanceOf[js.Any])
-    if (invokeArn != null) __obj.updateDynamic("invokeArn")(invokeArn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (routingConfig != null) __obj.updateDynamic("routingConfig")(routingConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasState]
   }
+  @scala.inline
+  implicit class AliasStateOps[Self <: AliasState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFunctionName(value: Input[String]): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    @scala.inline
+    def setFunctionVersion(value: Input[String]): Self = this.set("functionVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionVersion: Self = this.set("functionVersion", js.undefined)
+    @scala.inline
+    def setInvokeArn(value: Input[String]): Self = this.set("invokeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvokeArn: Self = this.set("invokeArn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRoutingConfig(value: Input[AliasRoutingConfig]): Self = this.set("routingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutingConfig: Self = this.set("routingConfig", js.undefined)
+  }
+  
 }
 

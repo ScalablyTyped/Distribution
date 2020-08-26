@@ -16,10 +16,5 @@ import scala.scalajs.js.annotation._
 class GLProgram protected ()
   extends typings.pixiJs.PIXI.GLProgram {
   def this(program: WebGLProgram, uniformData: js.Any) = this()
-  /**
-    * Destroys this program
-    */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
 }
 

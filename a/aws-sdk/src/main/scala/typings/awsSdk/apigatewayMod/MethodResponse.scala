@@ -22,16 +22,34 @@ trait MethodResponse extends js.Object {
 
 object MethodResponse {
   @scala.inline
-  def apply(
-    responseModels: MapOfStringToString = null,
-    responseParameters: MapOfStringToBoolean = null,
-    statusCode: StatusCode = null
-  ): MethodResponse = {
+  def apply(): MethodResponse = {
     val __obj = js.Dynamic.literal()
-    if (responseModels != null) __obj.updateDynamic("responseModels")(responseModels.asInstanceOf[js.Any])
-    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodResponse]
   }
+  @scala.inline
+  implicit class MethodResponseOps[Self <: MethodResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResponseModels(value: MapOfStringToString): Self = this.set("responseModels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseModels: Self = this.set("responseModels", js.undefined)
+    @scala.inline
+    def setResponseParameters(value: MapOfStringToBoolean): Self = this.set("responseParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseParameters: Self = this.set("responseParameters", js.undefined)
+    @scala.inline
+    def setStatusCode(value: StatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+  }
+  
 }
 

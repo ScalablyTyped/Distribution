@@ -33,25 +33,60 @@ trait CreateFlowRequest extends js.Object {
 
 object CreateFlowRequest {
   @scala.inline
-  def apply(
-    Name: string,
-    AvailabilityZone: string = null,
-    Entitlements: listOfGrantEntitlementRequest = null,
-    Outputs: listOfAddOutputRequest = null,
-    Source: SetSourceRequest = null,
-    SourceFailoverConfig: FailoverConfig = null,
-    Sources: listOfSetSourceRequest = null,
-    VpcInterfaces: listOfVpcInterfaceRequest = null
-  ): CreateFlowRequest = {
+  def apply(Name: string): CreateFlowRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (Entitlements != null) __obj.updateDynamic("Entitlements")(Entitlements.asInstanceOf[js.Any])
-    if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs.asInstanceOf[js.Any])
-    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
-    if (SourceFailoverConfig != null) __obj.updateDynamic("SourceFailoverConfig")(SourceFailoverConfig.asInstanceOf[js.Any])
-    if (Sources != null) __obj.updateDynamic("Sources")(Sources.asInstanceOf[js.Any])
-    if (VpcInterfaces != null) __obj.updateDynamic("VpcInterfaces")(VpcInterfaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFlowRequest]
   }
+  @scala.inline
+  implicit class CreateFlowRequestOps[Self <: CreateFlowRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZone(value: string): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setEntitlementsVarargs(value: GrantEntitlementRequest*): Self = this.set("Entitlements", js.Array(value :_*))
+    @scala.inline
+    def setEntitlements(value: listOfGrantEntitlementRequest): Self = this.set("Entitlements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntitlements: Self = this.set("Entitlements", js.undefined)
+    @scala.inline
+    def setOutputsVarargs(value: AddOutputRequest*): Self = this.set("Outputs", js.Array(value :_*))
+    @scala.inline
+    def setOutputs(value: listOfAddOutputRequest): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    @scala.inline
+    def setSource(value: SetSourceRequest): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("Source", js.undefined)
+    @scala.inline
+    def setSourceFailoverConfig(value: FailoverConfig): Self = this.set("SourceFailoverConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceFailoverConfig: Self = this.set("SourceFailoverConfig", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: SetSourceRequest*): Self = this.set("Sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: listOfSetSourceRequest): Self = this.set("Sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("Sources", js.undefined)
+    @scala.inline
+    def setVpcInterfacesVarargs(value: VpcInterfaceRequest*): Self = this.set("VpcInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setVpcInterfaces(value: listOfVpcInterfaceRequest): Self = this.set("VpcInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcInterfaces: Self = this.set("VpcInterfaces", js.undefined)
+  }
+  
 }
 

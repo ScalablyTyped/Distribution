@@ -31,16 +31,11 @@ object userAgentServerMod extends js.Object {
       delegate: IncomingRequestDelegate
     ) = this()
     var _transaction: js.Any = js.native
-    val acceptable: Boolean = js.native
     var core: UserAgentCore = js.native
     var init: js.Any = js.native
     var logger: Logger = js.native
-    val loggerFactory: LoggerFactory = js.native
     @JSName("message")
     var message_UserAgentServer: IncomingRequestMessage = js.native
-    val progressable: Boolean = js.native
-    val redirectable: Boolean = js.native
-    val rejectable: Boolean = js.native
     /**
       * When a UAS wishes to construct a response to a request, it follows
       * the general procedures detailed in the following subsections.
@@ -56,11 +51,11 @@ object userAgentServerMod extends js.Object {
       */
     var reply: js.Any = js.native
     var toTag: String = js.native
-    /** The transaction associated with this request. */
-    val transaction: ServerTransaction = js.native
     var transactionConstructor: js.Any = js.native
-    val tryingable: Boolean = js.native
+    /* protected */ def acceptable: Boolean = js.native
     def dispose(): Unit = js.native
+    def loggerFactory: LoggerFactory = js.native
+    /* protected */ def progressable: Boolean = js.native
     /**
       * If the UAS did not find a matching transaction for the CANCEL
       * according to the procedure above, it SHOULD respond to the CANCEL
@@ -80,6 +75,11 @@ object userAgentServerMod extends js.Object {
       * @param request - Incoming CANCEL request.
       */
     def receiveCancel(message: IncomingRequestMessage): Unit = js.native
+    /* protected */ def redirectable: Boolean = js.native
+    /* protected */ def rejectable: Boolean = js.native
+    /** The transaction associated with this request. */
+    def transaction: ServerTransaction = js.native
+    /* protected */ def tryingable: Boolean = js.native
   }
   
   type ServerTransactionConstructor = Instantiable3[

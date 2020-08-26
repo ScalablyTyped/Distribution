@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RuleDetail extends js.Object {
   /**
+    * The rule ARN.
+    */
+  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  /**
     * The timestamp of when the rule was created.
     */
   var createdTime: js.UndefOr[time] = js.native
@@ -41,33 +45,69 @@ trait RuleDetail extends js.Object {
   /**
     * The rule version.
     */
-  var ruleVersion: js.UndefOr[nonEmptyString] = js.native
+  var ruleVersion: js.UndefOr[wholeNumberVersionString] = js.native
 }
 
 object RuleDetail {
   @scala.inline
-  def apply(
-    createdTime: time = null,
-    description: description = null,
-    detectorId: identifier = null,
-    expression: ruleExpression = null,
-    language: Language = null,
-    lastUpdatedTime: time = null,
-    outcomes: NonEmptyListOfStrings = null,
-    ruleId: identifier = null,
-    ruleVersion: nonEmptyString = null
-  ): RuleDetail = {
+  def apply(): RuleDetail = {
     val __obj = js.Dynamic.literal()
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (detectorId != null) __obj.updateDynamic("detectorId")(detectorId.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
-    if (outcomes != null) __obj.updateDynamic("outcomes")(outcomes.asInstanceOf[js.Any])
-    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
-    if (ruleVersion != null) __obj.updateDynamic("ruleVersion")(ruleVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleDetail]
   }
+  @scala.inline
+  implicit class RuleDetailOps[Self <: RuleDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: fraudDetectorArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: time): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    @scala.inline
+    def setDescription(value: description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDetectorId(value: identifier): Self = this.set("detectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorId: Self = this.set("detectorId", js.undefined)
+    @scala.inline
+    def setExpression(value: ruleExpression): Self = this.set("expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("expression", js.undefined)
+    @scala.inline
+    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: time): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setOutcomesVarargs(value: String*): Self = this.set("outcomes", js.Array(value :_*))
+    @scala.inline
+    def setOutcomes(value: NonEmptyListOfStrings): Self = this.set("outcomes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutcomes: Self = this.set("outcomes", js.undefined)
+    @scala.inline
+    def setRuleId(value: identifier): Self = this.set("ruleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleId: Self = this.set("ruleId", js.undefined)
+    @scala.inline
+    def setRuleVersion(value: wholeNumberVersionString): Self = this.set("ruleVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleVersion: Self = this.set("ruleVersion", js.undefined)
+  }
+  
 }
 

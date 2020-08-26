@@ -37,7 +37,7 @@ trait ContentChildDecorator
     * **Metadata Properties**:
     *
     * * **selector** - The directive type or the name used for querying.
-    * * **read** - True to read a different token from the queried element.
+    * * **read** - Used to read a different token from the queried element.
     * * **static** - True to resolve query results before change detection runs,
     * false to resolve after change detection. Defaults to false.
     *

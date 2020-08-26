@@ -28,12 +28,36 @@ trait SchemaFingerprint extends js.Object {
 
 object SchemaFingerprint {
   @scala.inline
-  def apply(v1Name: String = null, v2Blob: js.Array[String] = null, v2Name: String = null): SchemaFingerprint = {
+  def apply(): SchemaFingerprint = {
     val __obj = js.Dynamic.literal()
-    if (v1Name != null) __obj.updateDynamic("v1Name")(v1Name.asInstanceOf[js.Any])
-    if (v2Blob != null) __obj.updateDynamic("v2Blob")(v2Blob.asInstanceOf[js.Any])
-    if (v2Name != null) __obj.updateDynamic("v2Name")(v2Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFingerprint]
   }
+  @scala.inline
+  implicit class SchemaFingerprintOps[Self <: SchemaFingerprint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setV1Name(value: String): Self = this.set("v1Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteV1Name: Self = this.set("v1Name", js.undefined)
+    @scala.inline
+    def setV2BlobVarargs(value: String*): Self = this.set("v2Blob", js.Array(value :_*))
+    @scala.inline
+    def setV2Blob(value: js.Array[String]): Self = this.set("v2Blob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteV2Blob: Self = this.set("v2Blob", js.undefined)
+    @scala.inline
+    def setV2Name(value: String): Self = this.set("v2Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteV2Name: Self = this.set("v2Name", js.undefined)
+  }
+  
 }
 

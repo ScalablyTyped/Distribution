@@ -7,60 +7,74 @@ import scala.scalajs.js.annotation._
 /**
   * What dates/date ranges are expected
   */
+@js.native
 trait DataRequirementDateFilter extends Element {
   /**
     * Contains extended information for property 'path'.
     */
-  var _path: js.UndefOr[Element] = js.undefined
+  var _path: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueDateTime'.
     */
-  var _valueDateTime: js.UndefOr[Element] = js.undefined
+  var _valueDateTime: js.UndefOr[Element] = js.native
   /**
     * The date-valued attribute of the filter
     */
-  var path: String
+  var path: String = js.native
   /**
     * The value of the filter, as a Period, DateTime, or Duration value
     */
-  var valueDateTime: js.UndefOr[dateTime] = js.undefined
+  var valueDateTime: js.UndefOr[dateTime] = js.native
   /**
     * The value of the filter, as a Period, DateTime, or Duration value
     */
-  var valueDuration: js.UndefOr[Duration] = js.undefined
+  var valueDuration: js.UndefOr[Duration] = js.native
   /**
     * The value of the filter, as a Period, DateTime, or Duration value
     */
-  var valuePeriod: js.UndefOr[Period] = js.undefined
+  var valuePeriod: js.UndefOr[Period] = js.native
 }
 
 object DataRequirementDateFilter {
   @scala.inline
-  def apply(
-    path: String,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _path: Element = null,
-    _valueDateTime: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    valueDateTime: dateTime = null,
-    valueDuration: Duration = null,
-    valuePeriod: Period = null
-  ): DataRequirementDateFilter = {
+  def apply(path: String): DataRequirementDateFilter = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_path != null) __obj.updateDynamic("_path")(_path.asInstanceOf[js.Any])
-    if (_valueDateTime != null) __obj.updateDynamic("_valueDateTime")(_valueDateTime.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (valueDateTime != null) __obj.updateDynamic("valueDateTime")(valueDateTime.asInstanceOf[js.Any])
-    if (valueDuration != null) __obj.updateDynamic("valueDuration")(valueDuration.asInstanceOf[js.Any])
-    if (valuePeriod != null) __obj.updateDynamic("valuePeriod")(valuePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRequirementDateFilter]
   }
+  @scala.inline
+  implicit class DataRequirementDateFilterOps[Self <: DataRequirementDateFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_path(value: Element): Self = this.set("_path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_path: Self = this.set("_path", js.undefined)
+    @scala.inline
+    def set_valueDateTime(value: Element): Self = this.set("_valueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueDateTime: Self = this.set("_valueDateTime", js.undefined)
+    @scala.inline
+    def setValueDateTime(value: dateTime): Self = this.set("valueDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueDateTime: Self = this.set("valueDateTime", js.undefined)
+    @scala.inline
+    def setValueDuration(value: Duration): Self = this.set("valueDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueDuration: Self = this.set("valueDuration", js.undefined)
+    @scala.inline
+    def setValuePeriod(value: Period): Self = this.set("valuePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuePeriod: Self = this.set("valuePeriod", js.undefined)
+  }
+  
 }
 

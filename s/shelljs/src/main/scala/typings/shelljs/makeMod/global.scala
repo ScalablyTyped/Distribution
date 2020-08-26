@@ -1,7 +1,7 @@
 package typings.shelljs.makeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ProcessEnv
+import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.shelljs.mod.CatFunction
 import typings.shelljs.mod.ChmodFunction
 import typings.shelljs.mod.CopyFunction

@@ -7,63 +7,112 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Configuration extends js.Object {
-  var bandwidth: js.UndefOr[Audio] = js.undefined
-  var display_name: js.UndefOr[String] = js.undefined
-  var enable_click2call: js.UndefOr[Boolean] = js.undefined
-  var enable_early_ims: js.UndefOr[Boolean] = js.undefined
-  var enable_media_stream_cache: js.UndefOr[Boolean] = js.undefined
-  var enable_rtcweb_breaker: js.UndefOr[Boolean] = js.undefined
-  var events_listener: js.UndefOr[Listener] = js.undefined
-  var ice_servers: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var impi: js.UndefOr[String] = js.undefined
-  var impu: js.UndefOr[String] = js.undefined
-  var outbound_proxy_url: js.UndefOr[String] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
-  var realm: js.UndefOr[String] = js.undefined
-  var sip_headers: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var video_size: js.UndefOr[MaxHeight] = js.undefined
-  var websocket_proxy_url: js.UndefOr[String] = js.undefined
+  var bandwidth: js.UndefOr[Audio] = js.native
+  var display_name: js.UndefOr[String] = js.native
+  var enable_click2call: js.UndefOr[Boolean] = js.native
+  var enable_early_ims: js.UndefOr[Boolean] = js.native
+  var enable_media_stream_cache: js.UndefOr[Boolean] = js.native
+  var enable_rtcweb_breaker: js.UndefOr[Boolean] = js.native
+  var events_listener: js.UndefOr[Listener] = js.native
+  var ice_servers: js.UndefOr[js.Array[js.Object]] = js.native
+  var impi: js.UndefOr[String] = js.native
+  var impu: js.UndefOr[String] = js.native
+  var outbound_proxy_url: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.native
+  var realm: js.UndefOr[String] = js.native
+  var sip_headers: js.UndefOr[js.Array[js.Object]] = js.native
+  var video_size: js.UndefOr[MaxHeight] = js.native
+  var websocket_proxy_url: js.UndefOr[String] = js.native
 }
 
 object Configuration {
   @scala.inline
-  def apply(
-    bandwidth: Audio = null,
-    display_name: String = null,
-    enable_click2call: js.UndefOr[Boolean] = js.undefined,
-    enable_early_ims: js.UndefOr[Boolean] = js.undefined,
-    enable_media_stream_cache: js.UndefOr[Boolean] = js.undefined,
-    enable_rtcweb_breaker: js.UndefOr[Boolean] = js.undefined,
-    events_listener: Listener = null,
-    ice_servers: js.Array[js.Object] = null,
-    impi: String = null,
-    impu: String = null,
-    outbound_proxy_url: String = null,
-    password: String = null,
-    realm: String = null,
-    sip_headers: js.Array[js.Object] = null,
-    video_size: MaxHeight = null,
-    websocket_proxy_url: String = null
-  ): Configuration = {
+  def apply(): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
-    if (display_name != null) __obj.updateDynamic("display_name")(display_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_click2call)) __obj.updateDynamic("enable_click2call")(enable_click2call.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_early_ims)) __obj.updateDynamic("enable_early_ims")(enable_early_ims.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_media_stream_cache)) __obj.updateDynamic("enable_media_stream_cache")(enable_media_stream_cache.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_rtcweb_breaker)) __obj.updateDynamic("enable_rtcweb_breaker")(enable_rtcweb_breaker.get.asInstanceOf[js.Any])
-    if (events_listener != null) __obj.updateDynamic("events_listener")(events_listener.asInstanceOf[js.Any])
-    if (ice_servers != null) __obj.updateDynamic("ice_servers")(ice_servers.asInstanceOf[js.Any])
-    if (impi != null) __obj.updateDynamic("impi")(impi.asInstanceOf[js.Any])
-    if (impu != null) __obj.updateDynamic("impu")(impu.asInstanceOf[js.Any])
-    if (outbound_proxy_url != null) __obj.updateDynamic("outbound_proxy_url")(outbound_proxy_url.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
-    if (sip_headers != null) __obj.updateDynamic("sip_headers")(sip_headers.asInstanceOf[js.Any])
-    if (video_size != null) __obj.updateDynamic("video_size")(video_size.asInstanceOf[js.Any])
-    if (websocket_proxy_url != null) __obj.updateDynamic("websocket_proxy_url")(websocket_proxy_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
+  @scala.inline
+  implicit class ConfigurationOps[Self <: Configuration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBandwidth(value: Audio): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    @scala.inline
+    def setDisplay_name(value: String): Self = this.set("display_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay_name: Self = this.set("display_name", js.undefined)
+    @scala.inline
+    def setEnable_click2call(value: Boolean): Self = this.set("enable_click2call", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable_click2call: Self = this.set("enable_click2call", js.undefined)
+    @scala.inline
+    def setEnable_early_ims(value: Boolean): Self = this.set("enable_early_ims", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable_early_ims: Self = this.set("enable_early_ims", js.undefined)
+    @scala.inline
+    def setEnable_media_stream_cache(value: Boolean): Self = this.set("enable_media_stream_cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable_media_stream_cache: Self = this.set("enable_media_stream_cache", js.undefined)
+    @scala.inline
+    def setEnable_rtcweb_breaker(value: Boolean): Self = this.set("enable_rtcweb_breaker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable_rtcweb_breaker: Self = this.set("enable_rtcweb_breaker", js.undefined)
+    @scala.inline
+    def setEvents_listener(value: Listener): Self = this.set("events_listener", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents_listener: Self = this.set("events_listener", js.undefined)
+    @scala.inline
+    def setIce_serversVarargs(value: js.Object*): Self = this.set("ice_servers", js.Array(value :_*))
+    @scala.inline
+    def setIce_servers(value: js.Array[js.Object]): Self = this.set("ice_servers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIce_servers: Self = this.set("ice_servers", js.undefined)
+    @scala.inline
+    def setImpi(value: String): Self = this.set("impi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpi: Self = this.set("impi", js.undefined)
+    @scala.inline
+    def setImpu(value: String): Self = this.set("impu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpu: Self = this.set("impu", js.undefined)
+    @scala.inline
+    def setOutbound_proxy_url(value: String): Self = this.set("outbound_proxy_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutbound_proxy_url: Self = this.set("outbound_proxy_url", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setRealm(value: String): Self = this.set("realm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealm: Self = this.set("realm", js.undefined)
+    @scala.inline
+    def setSip_headersVarargs(value: js.Object*): Self = this.set("sip_headers", js.Array(value :_*))
+    @scala.inline
+    def setSip_headers(value: js.Array[js.Object]): Self = this.set("sip_headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSip_headers: Self = this.set("sip_headers", js.undefined)
+    @scala.inline
+    def setVideo_size(value: MaxHeight): Self = this.set("video_size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo_size: Self = this.set("video_size", js.undefined)
+    @scala.inline
+    def setWebsocket_proxy_url(value: String): Self = this.set("websocket_proxy_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsocket_proxy_url: Self = this.set("websocket_proxy_url", js.undefined)
+  }
+  
 }
 

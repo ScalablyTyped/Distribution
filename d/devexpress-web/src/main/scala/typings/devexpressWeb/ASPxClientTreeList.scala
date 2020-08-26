@@ -452,6 +452,7 @@ trait ASPxClientTreeList extends ASPxClientControl {
     */
   def ShowFilterControl(): Unit = js.native
   def SortBy(columnIndex: String): Unit = js.native
+  def SortBy(columnIndex: String, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
   def SortBy(columnIndex: String, sortOrder: String): Unit = js.native
   def SortBy(columnIndex: String, sortOrder: String, reset: Boolean): Unit = js.native
   /**
@@ -460,9 +461,11 @@ trait ASPxClientTreeList extends ASPxClientControl {
     * @param reset true to clear any previous sorting; otherwise, false.
     */
   def SortBy(columnIndex: Double): Unit = js.native
+  def SortBy(columnIndex: Double, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
   def SortBy(columnIndex: Double, sortOrder: String): Unit = js.native
   def SortBy(columnIndex: Double, sortOrder: String, reset: Boolean): Unit = js.native
   def SortBy(columnIndex: ASPxClientTreeListColumn): Unit = js.native
+  def SortBy(columnIndex: ASPxClientTreeListColumn, sortOrder: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
   def SortBy(columnIndex: ASPxClientTreeListColumn, sortOrder: String): Unit = js.native
   def SortBy(columnIndex: ASPxClientTreeListColumn, sortOrder: String, reset: Boolean): Unit = js.native
   /**

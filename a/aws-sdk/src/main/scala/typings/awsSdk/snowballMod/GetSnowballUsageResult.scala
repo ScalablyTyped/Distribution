@@ -18,14 +18,30 @@ trait GetSnowballUsageResult extends js.Object {
 
 object GetSnowballUsageResult {
   @scala.inline
-  def apply(
-    SnowballLimit: js.UndefOr[Integer] = js.undefined,
-    SnowballsInUse: js.UndefOr[Integer] = js.undefined
-  ): GetSnowballUsageResult = {
+  def apply(): GetSnowballUsageResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(SnowballLimit)) __obj.updateDynamic("SnowballLimit")(SnowballLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SnowballsInUse)) __obj.updateDynamic("SnowballsInUse")(SnowballsInUse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSnowballUsageResult]
   }
+  @scala.inline
+  implicit class GetSnowballUsageResultOps[Self <: GetSnowballUsageResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnowballLimit(value: Integer): Self = this.set("SnowballLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnowballLimit: Self = this.set("SnowballLimit", js.undefined)
+    @scala.inline
+    def setSnowballsInUse(value: Integer): Self = this.set("SnowballsInUse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnowballsInUse: Self = this.set("SnowballsInUse", js.undefined)
+  }
+  
 }
 

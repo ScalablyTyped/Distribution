@@ -224,7 +224,38 @@ object mod extends js.Object {
           * @summary Create a new event
           */
         def trackEvent(category: String, action: String, label: String): Unit = js.native
+        def trackEvent(
+          category: String,
+          action: String,
+          label: String,
+          value: js.UndefOr[scala.Nothing],
+          nonInteractionFlag: js.UndefOr[scala.Nothing],
+          dimensions: StringDictionary[js.Any]
+        ): Unit = js.native
+        def trackEvent(
+          category: String,
+          action: String,
+          label: String,
+          value: js.UndefOr[scala.Nothing],
+          nonInteractionFlag: Boolean
+        ): Unit = js.native
+        def trackEvent(
+          category: String,
+          action: String,
+          label: String,
+          value: js.UndefOr[scala.Nothing],
+          nonInteractionFlag: Boolean,
+          dimensions: StringDictionary[js.Any]
+        ): Unit = js.native
         def trackEvent(category: String, action: String, label: String, value: js.Any): Unit = js.native
+        def trackEvent(
+          category: String,
+          action: String,
+          label: String,
+          value: js.Any,
+          nonInteractionFlag: js.UndefOr[scala.Nothing],
+          dimensions: StringDictionary[js.Any]
+        ): Unit = js.native
         def trackEvent(category: String, action: String, label: String, value: js.Any, nonInteractionFlag: Boolean): Unit = js.native
         def trackEvent(
           category: String,
@@ -242,6 +273,7 @@ object mod extends js.Object {
           * @param  {Object}  dimensions Additional dimensions and metrics
           */
         def trackPage(pageURL: String): Unit = js.native
+        def trackPage(pageURL: String, title: js.UndefOr[scala.Nothing], dimensions: StringDictionary[js.Any]): Unit = js.native
         def trackPage(pageURL: String, title: String): Unit = js.native
         def trackPage(pageURL: String, title: String, dimensions: StringDictionary[js.Any]): Unit = js.native
       }

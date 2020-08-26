@@ -5,27 +5,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** TrainingDataSet. */
+@js.native
 trait TrainingDataSet extends js.Object {
   /** The collection id associated with this training data set. */
-  var collection_id: js.UndefOr[String] = js.undefined
+  var collection_id: js.UndefOr[String] = js.native
   /** The environment id associated with this training data set. */
-  var environment_id: js.UndefOr[String] = js.undefined
+  var environment_id: js.UndefOr[String] = js.native
   /** Array of training queries. */
-  var queries: js.UndefOr[js.Array[TrainingQuery]] = js.undefined
+  var queries: js.UndefOr[js.Array[TrainingQuery]] = js.native
 }
 
 object TrainingDataSet {
   @scala.inline
-  def apply(
-    collection_id: String = null,
-    environment_id: String = null,
-    queries: js.Array[TrainingQuery] = null
-  ): TrainingDataSet = {
+  def apply(): TrainingDataSet = {
     val __obj = js.Dynamic.literal()
-    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
-    if (environment_id != null) __obj.updateDynamic("environment_id")(environment_id.asInstanceOf[js.Any])
-    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingDataSet]
   }
+  @scala.inline
+  implicit class TrainingDataSetOps[Self <: TrainingDataSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollection_id(value: String): Self = this.set("collection_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollection_id: Self = this.set("collection_id", js.undefined)
+    @scala.inline
+    def setEnvironment_id(value: String): Self = this.set("environment_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment_id: Self = this.set("environment_id", js.undefined)
+    @scala.inline
+    def setQueriesVarargs(value: TrainingQuery*): Self = this.set("queries", js.Array(value :_*))
+    @scala.inline
+    def setQueries(value: js.Array[TrainingQuery]): Self = this.set("queries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueries: Self = this.set("queries", js.undefined)
+  }
+  
 }
 

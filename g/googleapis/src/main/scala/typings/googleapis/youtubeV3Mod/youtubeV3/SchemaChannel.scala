@@ -80,38 +80,78 @@ trait SchemaChannel extends js.Object {
 
 object SchemaChannel {
   @scala.inline
-  def apply(
-    auditDetails: SchemaChannelAuditDetails = null,
-    brandingSettings: SchemaChannelBrandingSettings = null,
-    contentDetails: SchemaChannelContentDetails = null,
-    contentOwnerDetails: SchemaChannelContentOwnerDetails = null,
-    conversionPings: SchemaChannelConversionPings = null,
-    etag: String = null,
-    id: String = null,
-    invideoPromotion: SchemaInvideoPromotion = null,
-    kind: String = null,
-    localizations: StringDictionary[SchemaChannelLocalization] = null,
-    snippet: SchemaChannelSnippet = null,
-    statistics: SchemaChannelStatistics = null,
-    status: SchemaChannelStatus = null,
-    topicDetails: SchemaChannelTopicDetails = null
-  ): SchemaChannel = {
+  def apply(): SchemaChannel = {
     val __obj = js.Dynamic.literal()
-    if (auditDetails != null) __obj.updateDynamic("auditDetails")(auditDetails.asInstanceOf[js.Any])
-    if (brandingSettings != null) __obj.updateDynamic("brandingSettings")(brandingSettings.asInstanceOf[js.Any])
-    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails.asInstanceOf[js.Any])
-    if (contentOwnerDetails != null) __obj.updateDynamic("contentOwnerDetails")(contentOwnerDetails.asInstanceOf[js.Any])
-    if (conversionPings != null) __obj.updateDynamic("conversionPings")(conversionPings.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (invideoPromotion != null) __obj.updateDynamic("invideoPromotion")(invideoPromotion.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (localizations != null) __obj.updateDynamic("localizations")(localizations.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (topicDetails != null) __obj.updateDynamic("topicDetails")(topicDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChannel]
   }
+  @scala.inline
+  implicit class SchemaChannelOps[Self <: SchemaChannel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditDetails(value: SchemaChannelAuditDetails): Self = this.set("auditDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditDetails: Self = this.set("auditDetails", js.undefined)
+    @scala.inline
+    def setBrandingSettings(value: SchemaChannelBrandingSettings): Self = this.set("brandingSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrandingSettings: Self = this.set("brandingSettings", js.undefined)
+    @scala.inline
+    def setContentDetails(value: SchemaChannelContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    @scala.inline
+    def setContentOwnerDetails(value: SchemaChannelContentOwnerDetails): Self = this.set("contentOwnerDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentOwnerDetails: Self = this.set("contentOwnerDetails", js.undefined)
+    @scala.inline
+    def setConversionPings(value: SchemaChannelConversionPings): Self = this.set("conversionPings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionPings: Self = this.set("conversionPings", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInvideoPromotion(value: SchemaInvideoPromotion): Self = this.set("invideoPromotion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvideoPromotion: Self = this.set("invideoPromotion", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLocalizations(value: StringDictionary[SchemaChannelLocalization]): Self = this.set("localizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalizations: Self = this.set("localizations", js.undefined)
+    @scala.inline
+    def setSnippet(value: SchemaChannelSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    @scala.inline
+    def setStatistics(value: SchemaChannelStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaChannelStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTopicDetails(value: SchemaChannelTopicDetails): Self = this.set("topicDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicDetails: Self = this.set("topicDetails", js.undefined)
+  }
+  
 }
 

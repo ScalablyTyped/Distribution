@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class VelocityOrientationProperty () extends Property {
   def this(position: Property) = this()
+  def this(position: js.UndefOr[scala.Nothing], ellipsoid: Ellipsoid) = this()
   def this(position: Property, ellipsoid: Ellipsoid) = this()
   var ellipsoid: Property = js.native
   var position: Property = js.native
+  def getValue(time: js.UndefOr[scala.Nothing], result: Quaternion): Quaternion = js.native
   def getValue(time: JulianDate, result: Quaternion): Quaternion = js.native
 }
 

@@ -7,12 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultExpandIconProps[RecordType] extends js.Object {
-  var expandable: Boolean
-  var expanded: Boolean
-  var prefixCls: String
-  var record: RecordType
-  def onExpand(record: RecordType, e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
+  var expandable: Boolean = js.native
+  var expanded: Boolean = js.native
+  var prefixCls: String = js.native
+  var record: RecordType = js.native
+  def onExpand(record: RecordType, e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
 }
 
 object DefaultExpandIconProps {
@@ -27,5 +28,28 @@ object DefaultExpandIconProps {
     val __obj = js.Dynamic.literal(expandable = expandable.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], onExpand = js.Any.fromFunction2(onExpand), prefixCls = prefixCls.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultExpandIconProps[RecordType]]
   }
+  @scala.inline
+  implicit class DefaultExpandIconPropsOps[Self <: DefaultExpandIconProps[_], RecordType] (val x: Self with DefaultExpandIconProps[RecordType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpandable(value: Boolean): Self = this.set("expandable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnExpand(value: (RecordType, MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = this.set("onExpand", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecord(value: RecordType): Self = this.set("record", value.asInstanceOf[js.Any])
+  }
+  
 }
 

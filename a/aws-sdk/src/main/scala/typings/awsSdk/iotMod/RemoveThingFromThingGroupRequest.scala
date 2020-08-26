@@ -26,18 +26,38 @@ trait RemoveThingFromThingGroupRequest extends js.Object {
 
 object RemoveThingFromThingGroupRequest {
   @scala.inline
-  def apply(
-    thingArn: ThingArn = null,
-    thingGroupArn: ThingGroupArn = null,
-    thingGroupName: ThingGroupName = null,
-    thingName: ThingName = null
-  ): RemoveThingFromThingGroupRequest = {
+  def apply(): RemoveThingFromThingGroupRequest = {
     val __obj = js.Dynamic.literal()
-    if (thingArn != null) __obj.updateDynamic("thingArn")(thingArn.asInstanceOf[js.Any])
-    if (thingGroupArn != null) __obj.updateDynamic("thingGroupArn")(thingGroupArn.asInstanceOf[js.Any])
-    if (thingGroupName != null) __obj.updateDynamic("thingGroupName")(thingGroupName.asInstanceOf[js.Any])
-    if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveThingFromThingGroupRequest]
   }
+  @scala.inline
+  implicit class RemoveThingFromThingGroupRequestOps[Self <: RemoveThingFromThingGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingArn(value: ThingArn): Self = this.set("thingArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingArn: Self = this.set("thingArn", js.undefined)
+    @scala.inline
+    def setThingGroupArn(value: ThingGroupArn): Self = this.set("thingGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupArn: Self = this.set("thingGroupArn", js.undefined)
+    @scala.inline
+    def setThingGroupName(value: ThingGroupName): Self = this.set("thingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupName: Self = this.set("thingGroupName", js.undefined)
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingName: Self = this.set("thingName", js.undefined)
+  }
+  
 }
 

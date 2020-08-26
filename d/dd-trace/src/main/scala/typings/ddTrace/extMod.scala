@@ -5,6 +5,7 @@ import typings.ddTrace.ddTraceNumbers.`0`
 import typings.ddTrace.ddTraceNumbers.`1`
 import typings.ddTrace.ddTraceNumbers.`2`
 import typings.ddTrace.ddTraceStrings._dd1DotsrDoteausr
+import typings.ddTrace.ddTraceStrings._ddDotmeasured
 import typings.ddTrace.ddTraceStrings.agent
 import typings.ddTrace.ddTraceStrings.browser
 import typings.ddTrace.ddTraceStrings.client
@@ -78,6 +79,7 @@ object extMod extends js.Object {
     var HTTP_URL: httpDoturl = js.native
     var MANUAL_DROP: manualDotdrop = js.native
     var MANUAL_KEEP: manualDotkeep = js.native
+    var MEASURED: _ddDotmeasured = js.native
     var RESOURCE_NAME: resourceDotname = js.native
     var SAMPLING_PRIORITY: samplingDotpriority = js.native
     var SERVICE_NAME: serviceDotname = js.native

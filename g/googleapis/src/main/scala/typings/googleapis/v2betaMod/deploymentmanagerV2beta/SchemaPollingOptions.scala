@@ -32,20 +32,44 @@ trait SchemaPollingOptions extends js.Object {
 
 object SchemaPollingOptions {
   @scala.inline
-  def apply(
-    diagnostics: js.Array[SchemaDiagnostic] = null,
-    failCondition: String = null,
-    finishCondition: String = null,
-    pollingLink: String = null,
-    targetLink: String = null
-  ): SchemaPollingOptions = {
+  def apply(): SchemaPollingOptions = {
     val __obj = js.Dynamic.literal()
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
-    if (failCondition != null) __obj.updateDynamic("failCondition")(failCondition.asInstanceOf[js.Any])
-    if (finishCondition != null) __obj.updateDynamic("finishCondition")(finishCondition.asInstanceOf[js.Any])
-    if (pollingLink != null) __obj.updateDynamic("pollingLink")(pollingLink.asInstanceOf[js.Any])
-    if (targetLink != null) __obj.updateDynamic("targetLink")(targetLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPollingOptions]
   }
+  @scala.inline
+  implicit class SchemaPollingOptionsOps[Self <: SchemaPollingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = this.set("diagnostics", js.Array(value :_*))
+    @scala.inline
+    def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
+    @scala.inline
+    def setFailCondition(value: String): Self = this.set("failCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailCondition: Self = this.set("failCondition", js.undefined)
+    @scala.inline
+    def setFinishCondition(value: String): Self = this.set("finishCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinishCondition: Self = this.set("finishCondition", js.undefined)
+    @scala.inline
+    def setPollingLink(value: String): Self = this.set("pollingLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollingLink: Self = this.set("pollingLink", js.undefined)
+    @scala.inline
+    def setTargetLink(value: String): Self = this.set("targetLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetLink: Self = this.set("targetLink", js.undefined)
+  }
+  
 }
 

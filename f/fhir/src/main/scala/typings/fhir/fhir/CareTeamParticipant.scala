@@ -7,51 +7,60 @@ import scala.scalajs.js.annotation._
 /**
   * Members of the team
   */
+@js.native
 trait CareTeamParticipant extends BackboneElement {
   /**
     * Who is involved
     */
-  var member: js.UndefOr[Reference] = js.undefined
+  var member: js.UndefOr[Reference] = js.native
   /**
     * Organization of the practitioner
     */
-  var onBehalfOf: js.UndefOr[Reference] = js.undefined
+  var onBehalfOf: js.UndefOr[Reference] = js.native
   /**
     * Time period of participant
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
   /**
     * Type of involvement
     */
-  var role: js.UndefOr[CodeableConcept] = js.undefined
+  var role: js.UndefOr[CodeableConcept] = js.native
 }
 
 object CareTeamParticipant {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    member: Reference = null,
-    modifierExtension: js.Array[Extension] = null,
-    onBehalfOf: Reference = null,
-    period: Period = null,
-    role: CodeableConcept = null
-  ): CareTeamParticipant = {
+  def apply(): CareTeamParticipant = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (member != null) __obj.updateDynamic("member")(member.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (onBehalfOf != null) __obj.updateDynamic("onBehalfOf")(onBehalfOf.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[CareTeamParticipant]
   }
+  @scala.inline
+  implicit class CareTeamParticipantOps[Self <: CareTeamParticipant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMember(value: Reference): Self = this.set("member", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMember: Self = this.set("member", js.undefined)
+    @scala.inline
+    def setOnBehalfOf(value: Reference): Self = this.set("onBehalfOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBehalfOf: Self = this.set("onBehalfOf", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setRole(value: CodeableConcept): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+  }
+  
 }
 

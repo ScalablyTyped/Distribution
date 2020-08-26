@@ -51,6 +51,8 @@ trait AngularFireObject extends AngularFireSimpleObject {
   @JSName("$loaded")
   def $loaded(): IPromise[AngularFireObject] = js.native
   @JSName("$loaded")
+  def $loaded(resolve: js.UndefOr[scala.Nothing], reject: js.Function1[/* err */ js.Any, _]): IPromise[AngularFireObject] = js.native
+  @JSName("$loaded")
   def $loaded(resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit]): IPromise[AngularFireObject] = js.native
   @JSName("$loaded")
   def $loaded(

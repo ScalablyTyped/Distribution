@@ -26,16 +26,9 @@ object createExportJobCommandMod extends js.Object {
           Blob
         ] {
     def this(input: CreateExportJobInput) = this()
-    /* CompleteClass */
-    override val input: CreateExportJobInput = js.native
     val middlewareStack: MiddlewareStack[CreateExportJobInput, CreateExportJobOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[CreateExportJobInput, CreateExportJobOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[CreateExportJobInput, CreateExportJobOutput] = js.native
   }

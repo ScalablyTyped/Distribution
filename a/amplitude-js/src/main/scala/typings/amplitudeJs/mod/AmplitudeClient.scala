@@ -17,7 +17,26 @@ class AmplitudeClient () extends js.Object {
   def identify(identify_obj: Identify_): Unit = js.native
   def identify(identify_obj: Identify_, opt_callback: Callback): Unit = js.native
   def init(apiKey: String): Unit = js.native
+  def init(
+    apiKey: String,
+    userId: js.UndefOr[scala.Nothing],
+    config: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* client */ this.type, Unit]
+  ): Unit = js.native
+  def init(apiKey: String, userId: js.UndefOr[scala.Nothing], config: Config): Unit = js.native
+  def init(
+    apiKey: String,
+    userId: js.UndefOr[scala.Nothing],
+    config: Config,
+    callback: js.Function1[/* client */ this.type, Unit]
+  ): Unit = js.native
   def init(apiKey: String, userId: String): Unit = js.native
+  def init(
+    apiKey: String,
+    userId: String,
+    config: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* client */ this.type, Unit]
+  ): Unit = js.native
   def init(apiKey: String, userId: String, config: Config): Unit = js.native
   def init(
     apiKey: String,
@@ -27,14 +46,33 @@ class AmplitudeClient () extends js.Object {
   ): Unit = js.native
   def isNewSession(): Boolean = js.native
   def logEvent(event: String): LogReturn = js.native
+  def logEvent(event: String, data: js.UndefOr[scala.Nothing], callback: Callback): LogReturn = js.native
   def logEvent(event: String, data: js.Any): LogReturn = js.native
   def logEvent(event: String, data: js.Any, callback: Callback): LogReturn = js.native
   def logEventWithGroups(event: String): LogReturn = js.native
+  def logEventWithGroups(
+    event: String,
+    data: js.UndefOr[scala.Nothing],
+    groups: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): LogReturn = js.native
+  def logEventWithGroups(event: String, data: js.UndefOr[scala.Nothing], groups: js.Any): LogReturn = js.native
+  def logEventWithGroups(event: String, data: js.UndefOr[scala.Nothing], groups: js.Any, callback: Callback): LogReturn = js.native
   def logEventWithGroups(event: String, data: js.Any): LogReturn = js.native
+  def logEventWithGroups(event: String, data: js.Any, groups: js.UndefOr[scala.Nothing], callback: Callback): LogReturn = js.native
   def logEventWithGroups(event: String, data: js.Any, groups: js.Any): LogReturn = js.native
   def logEventWithGroups(event: String, data: js.Any, groups: js.Any, callback: Callback): LogReturn = js.native
   def logEventWithTimestamp(event: String): LogReturn = js.native
+  def logEventWithTimestamp(
+    event: String,
+    data: js.UndefOr[scala.Nothing],
+    timestamp: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): LogReturn = js.native
+  def logEventWithTimestamp(event: String, data: js.UndefOr[scala.Nothing], timestamp: Double): LogReturn = js.native
+  def logEventWithTimestamp(event: String, data: js.UndefOr[scala.Nothing], timestamp: Double, callback: Callback): LogReturn = js.native
   def logEventWithTimestamp(event: String, data: js.Any): LogReturn = js.native
+  def logEventWithTimestamp(event: String, data: js.Any, timestamp: js.UndefOr[scala.Nothing], callback: Callback): LogReturn = js.native
   def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double): LogReturn = js.native
   def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double, callback: Callback): LogReturn = js.native
   def logRevenue(pric: Double, quantity: Double, product: String): LogReturn = js.native

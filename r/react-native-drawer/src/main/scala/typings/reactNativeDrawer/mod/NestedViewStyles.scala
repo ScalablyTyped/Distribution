@@ -5,20 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NestedViewStyles extends js.Object {
-  var drawerOverlay: js.UndefOr[ViewStyle] = js.undefined
-  var main: js.UndefOr[ViewStyle] = js.undefined
-  var mainOverlay: js.UndefOr[ViewStyle] = js.undefined
+  var drawerOverlay: js.UndefOr[ViewStyle] = js.native
+  var main: js.UndefOr[ViewStyle] = js.native
+  var mainOverlay: js.UndefOr[ViewStyle] = js.native
 }
 
 object NestedViewStyles {
   @scala.inline
-  def apply(drawerOverlay: ViewStyle = null, main: ViewStyle = null, mainOverlay: ViewStyle = null): NestedViewStyles = {
+  def apply(): NestedViewStyles = {
     val __obj = js.Dynamic.literal()
-    if (drawerOverlay != null) __obj.updateDynamic("drawerOverlay")(drawerOverlay.asInstanceOf[js.Any])
-    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
-    if (mainOverlay != null) __obj.updateDynamic("mainOverlay")(mainOverlay.asInstanceOf[js.Any])
     __obj.asInstanceOf[NestedViewStyles]
   }
+  @scala.inline
+  implicit class NestedViewStylesOps[Self <: NestedViewStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDrawerOverlay(value: ViewStyle): Self = this.set("drawerOverlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawerOverlay: Self = this.set("drawerOverlay", js.undefined)
+    @scala.inline
+    def setMain(value: ViewStyle): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMain: Self = this.set("main", js.undefined)
+    @scala.inline
+    def setMainOverlay(value: ViewStyle): Self = this.set("mainOverlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainOverlay: Self = this.set("mainOverlay", js.undefined)
+  }
+  
 }
 

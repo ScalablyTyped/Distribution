@@ -22,6 +22,9 @@ object babelParserStrings {
   sealed trait classProperties extends _ParserPlugin
   
   @js.native
+  sealed trait decimal extends _ParserPlugin
+  
+  @js.native
   sealed trait decorators extends _ParserPlugin
   
   @js.native
@@ -130,6 +133,8 @@ object babelParserStrings {
   def classPrivateProperties: classPrivateProperties = "classPrivateProperties".asInstanceOf[classPrivateProperties]
   @scala.inline
   def classProperties: classProperties = "classProperties".asInstanceOf[classProperties]
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
   def decorators: decorators = "decorators".asInstanceOf[decorators]
   @scala.inline

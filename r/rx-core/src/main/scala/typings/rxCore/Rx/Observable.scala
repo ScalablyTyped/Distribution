@@ -14,6 +14,7 @@ trait Observable[T] extends js.Object {
   def defaultIfEmpty(defaultValue: T): Observable[T] = js.native
   def distinct(skipParameter: Boolean, valueSerializer: js.Function1[/* value */ T, String]): Observable[T] = js.native
   def distinct[TKey](): Observable[T] = js.native
+  def distinct[TKey](keySelector: js.UndefOr[scala.Nothing], keySerializer: js.Function1[/* key */ TKey, String]): Observable[T] = js.native
   def distinct[TKey](keySelector: js.Function1[/* value */ T, TKey]): Observable[T] = js.native
   def distinct[TKey](
     keySelector: js.Function1[/* value */ T, TKey],
@@ -29,6 +30,11 @@ trait Observable[T] extends js.Object {
     elementSelector: js.Function1[/* value */ T, TElement],
     keySerializer: js.Function1[/* key */ TKey, String]
   ): Observable[GroupedObservable[TKey, TElement]] = js.native
+  def groupBy[TKey, TElement](
+    keySelector: js.Function1[/* value */ T, TKey],
+    skipElementSelector: js.UndefOr[scala.Nothing],
+    keySerializer: js.Function1[/* key */ TKey, String]
+  ): Observable[GroupedObservable[TKey, T]] = js.native
   def groupBy[TKey, TElement](keySelector: js.Function1[/* value */ T, TKey], skipElementSelector: Boolean): Observable[GroupedObservable[TKey, T]] = js.native
   def groupBy[TKey, TElement](
     keySelector: js.Function1[/* value */ T, TKey],

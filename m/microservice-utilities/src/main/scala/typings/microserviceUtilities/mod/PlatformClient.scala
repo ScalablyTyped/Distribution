@@ -15,12 +15,18 @@ class PlatformClient protected () extends js.Object {
   ) = this()
   def this(
     logFunction: js.Function1[/* msg */ js.Any, Unit],
+    tokenResolverFunction: js.UndefOr[scala.Nothing],
+    configuration: PlatformClientConfiguration
+  ) = this()
+  def this(
+    logFunction: js.Function1[/* msg */ js.Any, Unit],
     tokenResolverFunction: js.Function0[js.Promise[String]],
     configuration: PlatformClientConfiguration
   ) = this()
   def delete[T](url: String): js.Promise[PlatformClientResponse[T]] = js.native
   def delete[T](url: String, headers: StringDictionary[String]): js.Promise[PlatformClientResponse[T]] = js.native
   def get[T](url: String): js.Promise[PlatformClientResponse[T]] = js.native
+  def get[T](url: String, headers: js.UndefOr[scala.Nothing], `type`: String): js.Promise[PlatformClientResponse[T]] = js.native
   def get[T](url: String, headers: StringDictionary[String]): js.Promise[PlatformClientResponse[T]] = js.native
   def get[T](url: String, headers: StringDictionary[String], `type`: String): js.Promise[PlatformClientResponse[T]] = js.native
   def head[T](url: String): js.Promise[PlatformClientResponse[T]] = js.native

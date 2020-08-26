@@ -35,6 +35,7 @@ class ResourceEntities protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaSearchResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchResponse] = js.native
   def search(params: ParamsResourceEntitiesSearch): GaxiosPromise[SchemaSearchResponse] = js.native
   def search(params: ParamsResourceEntitiesSearch, callback: BodyResponseCallback[SchemaSearchResponse]): Unit = js.native
   def search(

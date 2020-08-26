@@ -20,6 +20,7 @@ trait SafariBrowserWindow extends SafariEventTarget {
     * @returns A new tab.
     */
   def openTab(): SafariBrowserTab = js.native
+  def openTab(visibility: js.UndefOr[scala.Nothing], index: Double): SafariBrowserTab = js.native
   def openTab(visibility: String): SafariBrowserTab = js.native
   def openTab(visibility: String, index: Double): SafariBrowserTab = js.native
 }

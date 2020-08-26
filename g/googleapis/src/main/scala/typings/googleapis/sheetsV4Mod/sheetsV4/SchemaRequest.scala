@@ -238,122 +238,246 @@ trait SchemaRequest extends js.Object {
 
 object SchemaRequest {
   @scala.inline
-  def apply(
-    addBanding: SchemaAddBandingRequest = null,
-    addChart: SchemaAddChartRequest = null,
-    addConditionalFormatRule: SchemaAddConditionalFormatRuleRequest = null,
-    addDimensionGroup: SchemaAddDimensionGroupRequest = null,
-    addFilterView: SchemaAddFilterViewRequest = null,
-    addNamedRange: SchemaAddNamedRangeRequest = null,
-    addProtectedRange: SchemaAddProtectedRangeRequest = null,
-    addSheet: SchemaAddSheetRequest = null,
-    appendCells: SchemaAppendCellsRequest = null,
-    appendDimension: SchemaAppendDimensionRequest = null,
-    autoFill: SchemaAutoFillRequest = null,
-    autoResizeDimensions: SchemaAutoResizeDimensionsRequest = null,
-    clearBasicFilter: SchemaClearBasicFilterRequest = null,
-    copyPaste: SchemaCopyPasteRequest = null,
-    createDeveloperMetadata: SchemaCreateDeveloperMetadataRequest = null,
-    cutPaste: SchemaCutPasteRequest = null,
-    deleteBanding: SchemaDeleteBandingRequest = null,
-    deleteConditionalFormatRule: SchemaDeleteConditionalFormatRuleRequest = null,
-    deleteDeveloperMetadata: SchemaDeleteDeveloperMetadataRequest = null,
-    deleteDimension: SchemaDeleteDimensionRequest = null,
-    deleteDimensionGroup: SchemaDeleteDimensionGroupRequest = null,
-    deleteEmbeddedObject: SchemaDeleteEmbeddedObjectRequest = null,
-    deleteFilterView: SchemaDeleteFilterViewRequest = null,
-    deleteNamedRange: SchemaDeleteNamedRangeRequest = null,
-    deleteProtectedRange: SchemaDeleteProtectedRangeRequest = null,
-    deleteRange: SchemaDeleteRangeRequest = null,
-    deleteSheet: SchemaDeleteSheetRequest = null,
-    duplicateFilterView: SchemaDuplicateFilterViewRequest = null,
-    duplicateSheet: SchemaDuplicateSheetRequest = null,
-    findReplace: SchemaFindReplaceRequest = null,
-    insertDimension: SchemaInsertDimensionRequest = null,
-    insertRange: SchemaInsertRangeRequest = null,
-    mergeCells: SchemaMergeCellsRequest = null,
-    moveDimension: SchemaMoveDimensionRequest = null,
-    pasteData: SchemaPasteDataRequest = null,
-    randomizeRange: SchemaRandomizeRangeRequest = null,
-    repeatCell: SchemaRepeatCellRequest = null,
-    setBasicFilter: SchemaSetBasicFilterRequest = null,
-    setDataValidation: SchemaSetDataValidationRequest = null,
-    sortRange: SchemaSortRangeRequest = null,
-    textToColumns: SchemaTextToColumnsRequest = null,
-    unmergeCells: SchemaUnmergeCellsRequest = null,
-    updateBanding: SchemaUpdateBandingRequest = null,
-    updateBorders: SchemaUpdateBordersRequest = null,
-    updateCells: SchemaUpdateCellsRequest = null,
-    updateChartSpec: SchemaUpdateChartSpecRequest = null,
-    updateConditionalFormatRule: SchemaUpdateConditionalFormatRuleRequest = null,
-    updateDeveloperMetadata: SchemaUpdateDeveloperMetadataRequest = null,
-    updateDimensionGroup: SchemaUpdateDimensionGroupRequest = null,
-    updateDimensionProperties: SchemaUpdateDimensionPropertiesRequest = null,
-    updateEmbeddedObjectPosition: SchemaUpdateEmbeddedObjectPositionRequest = null,
-    updateFilterView: SchemaUpdateFilterViewRequest = null,
-    updateNamedRange: SchemaUpdateNamedRangeRequest = null,
-    updateProtectedRange: SchemaUpdateProtectedRangeRequest = null,
-    updateSheetProperties: SchemaUpdateSheetPropertiesRequest = null,
-    updateSpreadsheetProperties: SchemaUpdateSpreadsheetPropertiesRequest = null
-  ): SchemaRequest = {
+  def apply(): SchemaRequest = {
     val __obj = js.Dynamic.literal()
-    if (addBanding != null) __obj.updateDynamic("addBanding")(addBanding.asInstanceOf[js.Any])
-    if (addChart != null) __obj.updateDynamic("addChart")(addChart.asInstanceOf[js.Any])
-    if (addConditionalFormatRule != null) __obj.updateDynamic("addConditionalFormatRule")(addConditionalFormatRule.asInstanceOf[js.Any])
-    if (addDimensionGroup != null) __obj.updateDynamic("addDimensionGroup")(addDimensionGroup.asInstanceOf[js.Any])
-    if (addFilterView != null) __obj.updateDynamic("addFilterView")(addFilterView.asInstanceOf[js.Any])
-    if (addNamedRange != null) __obj.updateDynamic("addNamedRange")(addNamedRange.asInstanceOf[js.Any])
-    if (addProtectedRange != null) __obj.updateDynamic("addProtectedRange")(addProtectedRange.asInstanceOf[js.Any])
-    if (addSheet != null) __obj.updateDynamic("addSheet")(addSheet.asInstanceOf[js.Any])
-    if (appendCells != null) __obj.updateDynamic("appendCells")(appendCells.asInstanceOf[js.Any])
-    if (appendDimension != null) __obj.updateDynamic("appendDimension")(appendDimension.asInstanceOf[js.Any])
-    if (autoFill != null) __obj.updateDynamic("autoFill")(autoFill.asInstanceOf[js.Any])
-    if (autoResizeDimensions != null) __obj.updateDynamic("autoResizeDimensions")(autoResizeDimensions.asInstanceOf[js.Any])
-    if (clearBasicFilter != null) __obj.updateDynamic("clearBasicFilter")(clearBasicFilter.asInstanceOf[js.Any])
-    if (copyPaste != null) __obj.updateDynamic("copyPaste")(copyPaste.asInstanceOf[js.Any])
-    if (createDeveloperMetadata != null) __obj.updateDynamic("createDeveloperMetadata")(createDeveloperMetadata.asInstanceOf[js.Any])
-    if (cutPaste != null) __obj.updateDynamic("cutPaste")(cutPaste.asInstanceOf[js.Any])
-    if (deleteBanding != null) __obj.updateDynamic("deleteBanding")(deleteBanding.asInstanceOf[js.Any])
-    if (deleteConditionalFormatRule != null) __obj.updateDynamic("deleteConditionalFormatRule")(deleteConditionalFormatRule.asInstanceOf[js.Any])
-    if (deleteDeveloperMetadata != null) __obj.updateDynamic("deleteDeveloperMetadata")(deleteDeveloperMetadata.asInstanceOf[js.Any])
-    if (deleteDimension != null) __obj.updateDynamic("deleteDimension")(deleteDimension.asInstanceOf[js.Any])
-    if (deleteDimensionGroup != null) __obj.updateDynamic("deleteDimensionGroup")(deleteDimensionGroup.asInstanceOf[js.Any])
-    if (deleteEmbeddedObject != null) __obj.updateDynamic("deleteEmbeddedObject")(deleteEmbeddedObject.asInstanceOf[js.Any])
-    if (deleteFilterView != null) __obj.updateDynamic("deleteFilterView")(deleteFilterView.asInstanceOf[js.Any])
-    if (deleteNamedRange != null) __obj.updateDynamic("deleteNamedRange")(deleteNamedRange.asInstanceOf[js.Any])
-    if (deleteProtectedRange != null) __obj.updateDynamic("deleteProtectedRange")(deleteProtectedRange.asInstanceOf[js.Any])
-    if (deleteRange != null) __obj.updateDynamic("deleteRange")(deleteRange.asInstanceOf[js.Any])
-    if (deleteSheet != null) __obj.updateDynamic("deleteSheet")(deleteSheet.asInstanceOf[js.Any])
-    if (duplicateFilterView != null) __obj.updateDynamic("duplicateFilterView")(duplicateFilterView.asInstanceOf[js.Any])
-    if (duplicateSheet != null) __obj.updateDynamic("duplicateSheet")(duplicateSheet.asInstanceOf[js.Any])
-    if (findReplace != null) __obj.updateDynamic("findReplace")(findReplace.asInstanceOf[js.Any])
-    if (insertDimension != null) __obj.updateDynamic("insertDimension")(insertDimension.asInstanceOf[js.Any])
-    if (insertRange != null) __obj.updateDynamic("insertRange")(insertRange.asInstanceOf[js.Any])
-    if (mergeCells != null) __obj.updateDynamic("mergeCells")(mergeCells.asInstanceOf[js.Any])
-    if (moveDimension != null) __obj.updateDynamic("moveDimension")(moveDimension.asInstanceOf[js.Any])
-    if (pasteData != null) __obj.updateDynamic("pasteData")(pasteData.asInstanceOf[js.Any])
-    if (randomizeRange != null) __obj.updateDynamic("randomizeRange")(randomizeRange.asInstanceOf[js.Any])
-    if (repeatCell != null) __obj.updateDynamic("repeatCell")(repeatCell.asInstanceOf[js.Any])
-    if (setBasicFilter != null) __obj.updateDynamic("setBasicFilter")(setBasicFilter.asInstanceOf[js.Any])
-    if (setDataValidation != null) __obj.updateDynamic("setDataValidation")(setDataValidation.asInstanceOf[js.Any])
-    if (sortRange != null) __obj.updateDynamic("sortRange")(sortRange.asInstanceOf[js.Any])
-    if (textToColumns != null) __obj.updateDynamic("textToColumns")(textToColumns.asInstanceOf[js.Any])
-    if (unmergeCells != null) __obj.updateDynamic("unmergeCells")(unmergeCells.asInstanceOf[js.Any])
-    if (updateBanding != null) __obj.updateDynamic("updateBanding")(updateBanding.asInstanceOf[js.Any])
-    if (updateBorders != null) __obj.updateDynamic("updateBorders")(updateBorders.asInstanceOf[js.Any])
-    if (updateCells != null) __obj.updateDynamic("updateCells")(updateCells.asInstanceOf[js.Any])
-    if (updateChartSpec != null) __obj.updateDynamic("updateChartSpec")(updateChartSpec.asInstanceOf[js.Any])
-    if (updateConditionalFormatRule != null) __obj.updateDynamic("updateConditionalFormatRule")(updateConditionalFormatRule.asInstanceOf[js.Any])
-    if (updateDeveloperMetadata != null) __obj.updateDynamic("updateDeveloperMetadata")(updateDeveloperMetadata.asInstanceOf[js.Any])
-    if (updateDimensionGroup != null) __obj.updateDynamic("updateDimensionGroup")(updateDimensionGroup.asInstanceOf[js.Any])
-    if (updateDimensionProperties != null) __obj.updateDynamic("updateDimensionProperties")(updateDimensionProperties.asInstanceOf[js.Any])
-    if (updateEmbeddedObjectPosition != null) __obj.updateDynamic("updateEmbeddedObjectPosition")(updateEmbeddedObjectPosition.asInstanceOf[js.Any])
-    if (updateFilterView != null) __obj.updateDynamic("updateFilterView")(updateFilterView.asInstanceOf[js.Any])
-    if (updateNamedRange != null) __obj.updateDynamic("updateNamedRange")(updateNamedRange.asInstanceOf[js.Any])
-    if (updateProtectedRange != null) __obj.updateDynamic("updateProtectedRange")(updateProtectedRange.asInstanceOf[js.Any])
-    if (updateSheetProperties != null) __obj.updateDynamic("updateSheetProperties")(updateSheetProperties.asInstanceOf[js.Any])
-    if (updateSpreadsheetProperties != null) __obj.updateDynamic("updateSpreadsheetProperties")(updateSpreadsheetProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRequest]
   }
+  @scala.inline
+  implicit class SchemaRequestOps[Self <: SchemaRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddBanding(value: SchemaAddBandingRequest): Self = this.set("addBanding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddBanding: Self = this.set("addBanding", js.undefined)
+    @scala.inline
+    def setAddChart(value: SchemaAddChartRequest): Self = this.set("addChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddChart: Self = this.set("addChart", js.undefined)
+    @scala.inline
+    def setAddConditionalFormatRule(value: SchemaAddConditionalFormatRuleRequest): Self = this.set("addConditionalFormatRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddConditionalFormatRule: Self = this.set("addConditionalFormatRule", js.undefined)
+    @scala.inline
+    def setAddDimensionGroup(value: SchemaAddDimensionGroupRequest): Self = this.set("addDimensionGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddDimensionGroup: Self = this.set("addDimensionGroup", js.undefined)
+    @scala.inline
+    def setAddFilterView(value: SchemaAddFilterViewRequest): Self = this.set("addFilterView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddFilterView: Self = this.set("addFilterView", js.undefined)
+    @scala.inline
+    def setAddNamedRange(value: SchemaAddNamedRangeRequest): Self = this.set("addNamedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddNamedRange: Self = this.set("addNamedRange", js.undefined)
+    @scala.inline
+    def setAddProtectedRange(value: SchemaAddProtectedRangeRequest): Self = this.set("addProtectedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddProtectedRange: Self = this.set("addProtectedRange", js.undefined)
+    @scala.inline
+    def setAddSheet(value: SchemaAddSheetRequest): Self = this.set("addSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddSheet: Self = this.set("addSheet", js.undefined)
+    @scala.inline
+    def setAppendCells(value: SchemaAppendCellsRequest): Self = this.set("appendCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendCells: Self = this.set("appendCells", js.undefined)
+    @scala.inline
+    def setAppendDimension(value: SchemaAppendDimensionRequest): Self = this.set("appendDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendDimension: Self = this.set("appendDimension", js.undefined)
+    @scala.inline
+    def setAutoFill(value: SchemaAutoFillRequest): Self = this.set("autoFill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFill: Self = this.set("autoFill", js.undefined)
+    @scala.inline
+    def setAutoResizeDimensions(value: SchemaAutoResizeDimensionsRequest): Self = this.set("autoResizeDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoResizeDimensions: Self = this.set("autoResizeDimensions", js.undefined)
+    @scala.inline
+    def setClearBasicFilter(value: SchemaClearBasicFilterRequest): Self = this.set("clearBasicFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearBasicFilter: Self = this.set("clearBasicFilter", js.undefined)
+    @scala.inline
+    def setCopyPaste(value: SchemaCopyPasteRequest): Self = this.set("copyPaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyPaste: Self = this.set("copyPaste", js.undefined)
+    @scala.inline
+    def setCreateDeveloperMetadata(value: SchemaCreateDeveloperMetadataRequest): Self = this.set("createDeveloperMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDeveloperMetadata: Self = this.set("createDeveloperMetadata", js.undefined)
+    @scala.inline
+    def setCutPaste(value: SchemaCutPasteRequest): Self = this.set("cutPaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCutPaste: Self = this.set("cutPaste", js.undefined)
+    @scala.inline
+    def setDeleteBanding(value: SchemaDeleteBandingRequest): Self = this.set("deleteBanding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteBanding: Self = this.set("deleteBanding", js.undefined)
+    @scala.inline
+    def setDeleteConditionalFormatRule(value: SchemaDeleteConditionalFormatRuleRequest): Self = this.set("deleteConditionalFormatRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteConditionalFormatRule: Self = this.set("deleteConditionalFormatRule", js.undefined)
+    @scala.inline
+    def setDeleteDeveloperMetadata(value: SchemaDeleteDeveloperMetadataRequest): Self = this.set("deleteDeveloperMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteDeveloperMetadata: Self = this.set("deleteDeveloperMetadata", js.undefined)
+    @scala.inline
+    def setDeleteDimension(value: SchemaDeleteDimensionRequest): Self = this.set("deleteDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteDimension: Self = this.set("deleteDimension", js.undefined)
+    @scala.inline
+    def setDeleteDimensionGroup(value: SchemaDeleteDimensionGroupRequest): Self = this.set("deleteDimensionGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteDimensionGroup: Self = this.set("deleteDimensionGroup", js.undefined)
+    @scala.inline
+    def setDeleteEmbeddedObject(value: SchemaDeleteEmbeddedObjectRequest): Self = this.set("deleteEmbeddedObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteEmbeddedObject: Self = this.set("deleteEmbeddedObject", js.undefined)
+    @scala.inline
+    def setDeleteFilterView(value: SchemaDeleteFilterViewRequest): Self = this.set("deleteFilterView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteFilterView: Self = this.set("deleteFilterView", js.undefined)
+    @scala.inline
+    def setDeleteNamedRange(value: SchemaDeleteNamedRangeRequest): Self = this.set("deleteNamedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteNamedRange: Self = this.set("deleteNamedRange", js.undefined)
+    @scala.inline
+    def setDeleteProtectedRange(value: SchemaDeleteProtectedRangeRequest): Self = this.set("deleteProtectedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteProtectedRange: Self = this.set("deleteProtectedRange", js.undefined)
+    @scala.inline
+    def setDeleteRange(value: SchemaDeleteRangeRequest): Self = this.set("deleteRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteRange: Self = this.set("deleteRange", js.undefined)
+    @scala.inline
+    def setDeleteSheet(value: SchemaDeleteSheetRequest): Self = this.set("deleteSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteSheet: Self = this.set("deleteSheet", js.undefined)
+    @scala.inline
+    def setDuplicateFilterView(value: SchemaDuplicateFilterViewRequest): Self = this.set("duplicateFilterView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuplicateFilterView: Self = this.set("duplicateFilterView", js.undefined)
+    @scala.inline
+    def setDuplicateSheet(value: SchemaDuplicateSheetRequest): Self = this.set("duplicateSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuplicateSheet: Self = this.set("duplicateSheet", js.undefined)
+    @scala.inline
+    def setFindReplace(value: SchemaFindReplaceRequest): Self = this.set("findReplace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindReplace: Self = this.set("findReplace", js.undefined)
+    @scala.inline
+    def setInsertDimension(value: SchemaInsertDimensionRequest): Self = this.set("insertDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertDimension: Self = this.set("insertDimension", js.undefined)
+    @scala.inline
+    def setInsertRange(value: SchemaInsertRangeRequest): Self = this.set("insertRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertRange: Self = this.set("insertRange", js.undefined)
+    @scala.inline
+    def setMergeCells(value: SchemaMergeCellsRequest): Self = this.set("mergeCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeCells: Self = this.set("mergeCells", js.undefined)
+    @scala.inline
+    def setMoveDimension(value: SchemaMoveDimensionRequest): Self = this.set("moveDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveDimension: Self = this.set("moveDimension", js.undefined)
+    @scala.inline
+    def setPasteData(value: SchemaPasteDataRequest): Self = this.set("pasteData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasteData: Self = this.set("pasteData", js.undefined)
+    @scala.inline
+    def setRandomizeRange(value: SchemaRandomizeRangeRequest): Self = this.set("randomizeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRandomizeRange: Self = this.set("randomizeRange", js.undefined)
+    @scala.inline
+    def setRepeatCell(value: SchemaRepeatCellRequest): Self = this.set("repeatCell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeatCell: Self = this.set("repeatCell", js.undefined)
+    @scala.inline
+    def setSetBasicFilter(value: SchemaSetBasicFilterRequest): Self = this.set("setBasicFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetBasicFilter: Self = this.set("setBasicFilter", js.undefined)
+    @scala.inline
+    def setSetDataValidation(value: SchemaSetDataValidationRequest): Self = this.set("setDataValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetDataValidation: Self = this.set("setDataValidation", js.undefined)
+    @scala.inline
+    def setSortRange(value: SchemaSortRangeRequest): Self = this.set("sortRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortRange: Self = this.set("sortRange", js.undefined)
+    @scala.inline
+    def setTextToColumns(value: SchemaTextToColumnsRequest): Self = this.set("textToColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextToColumns: Self = this.set("textToColumns", js.undefined)
+    @scala.inline
+    def setUnmergeCells(value: SchemaUnmergeCellsRequest): Self = this.set("unmergeCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnmergeCells: Self = this.set("unmergeCells", js.undefined)
+    @scala.inline
+    def setUpdateBanding(value: SchemaUpdateBandingRequest): Self = this.set("updateBanding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateBanding: Self = this.set("updateBanding", js.undefined)
+    @scala.inline
+    def setUpdateBorders(value: SchemaUpdateBordersRequest): Self = this.set("updateBorders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateBorders: Self = this.set("updateBorders", js.undefined)
+    @scala.inline
+    def setUpdateCells(value: SchemaUpdateCellsRequest): Self = this.set("updateCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateCells: Self = this.set("updateCells", js.undefined)
+    @scala.inline
+    def setUpdateChartSpec(value: SchemaUpdateChartSpecRequest): Self = this.set("updateChartSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateChartSpec: Self = this.set("updateChartSpec", js.undefined)
+    @scala.inline
+    def setUpdateConditionalFormatRule(value: SchemaUpdateConditionalFormatRuleRequest): Self = this.set("updateConditionalFormatRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateConditionalFormatRule: Self = this.set("updateConditionalFormatRule", js.undefined)
+    @scala.inline
+    def setUpdateDeveloperMetadata(value: SchemaUpdateDeveloperMetadataRequest): Self = this.set("updateDeveloperMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateDeveloperMetadata: Self = this.set("updateDeveloperMetadata", js.undefined)
+    @scala.inline
+    def setUpdateDimensionGroup(value: SchemaUpdateDimensionGroupRequest): Self = this.set("updateDimensionGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateDimensionGroup: Self = this.set("updateDimensionGroup", js.undefined)
+    @scala.inline
+    def setUpdateDimensionProperties(value: SchemaUpdateDimensionPropertiesRequest): Self = this.set("updateDimensionProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateDimensionProperties: Self = this.set("updateDimensionProperties", js.undefined)
+    @scala.inline
+    def setUpdateEmbeddedObjectPosition(value: SchemaUpdateEmbeddedObjectPositionRequest): Self = this.set("updateEmbeddedObjectPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateEmbeddedObjectPosition: Self = this.set("updateEmbeddedObjectPosition", js.undefined)
+    @scala.inline
+    def setUpdateFilterView(value: SchemaUpdateFilterViewRequest): Self = this.set("updateFilterView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateFilterView: Self = this.set("updateFilterView", js.undefined)
+    @scala.inline
+    def setUpdateNamedRange(value: SchemaUpdateNamedRangeRequest): Self = this.set("updateNamedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateNamedRange: Self = this.set("updateNamedRange", js.undefined)
+    @scala.inline
+    def setUpdateProtectedRange(value: SchemaUpdateProtectedRangeRequest): Self = this.set("updateProtectedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateProtectedRange: Self = this.set("updateProtectedRange", js.undefined)
+    @scala.inline
+    def setUpdateSheetProperties(value: SchemaUpdateSheetPropertiesRequest): Self = this.set("updateSheetProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateSheetProperties: Self = this.set("updateSheetProperties", js.undefined)
+    @scala.inline
+    def setUpdateSpreadsheetProperties(value: SchemaUpdateSpreadsheetPropertiesRequest): Self = this.set("updateSpreadsheetProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateSpreadsheetProperties: Self = this.set("updateSpreadsheetProperties", js.undefined)
+  }
+  
 }
 

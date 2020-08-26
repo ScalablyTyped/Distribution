@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Position extends js.Object {
-  var adjustMapMargin: js.UndefOr[Boolean] = js.undefined
-  var position: js.UndefOr[Bottom] = js.undefined
-  var scaleLine: js.UndefOr[Boolean] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var adjustMapMargin: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[Bottom] = js.native
+  var scaleLine: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object Position {
   @scala.inline
-  def apply(
-    adjustMapMargin: js.UndefOr[Boolean] = js.undefined,
-    position: Bottom = null,
-    scaleLine: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): Position = {
+  def apply(): Position = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adjustMapMargin)) __obj.updateDynamic("adjustMapMargin")(adjustMapMargin.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleLine)) __obj.updateDynamic("scaleLine")(scaleLine.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
+  @scala.inline
+  implicit class PositionOps[Self <: Position] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdjustMapMargin(value: Boolean): Self = this.set("adjustMapMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustMapMargin: Self = this.set("adjustMapMargin", js.undefined)
+    @scala.inline
+    def setPosition(value: Bottom): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setScaleLine(value: Boolean): Self = this.set("scaleLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleLine: Self = this.set("scaleLine", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

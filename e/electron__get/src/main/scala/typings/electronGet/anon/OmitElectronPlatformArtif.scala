@@ -9,53 +9,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @electron/get.@electron/get/dist/cjs/types.Omit<@electron/get.@electron/get/dist/cjs/types.ElectronPlatformArtifactDetails, 'platform' | 'arch'> & {  platform ? :string,   arch ? :string} */
+/* Inlined @electron/get.@electron/get/dist/esm/types.Omit<@electron/get.@electron/get/dist/esm/types.ElectronPlatformArtifactDetails, 'platform' | 'arch'> & {  platform :string | undefined,   arch :string | undefined} */
+@js.native
 trait OmitElectronPlatformArtif extends ElectronPlatformArtifactDetailsWithDefaults {
-  var arch: js.UndefOr[String] = js.undefined
-  var artifactName: String
-  var artifactSuffix: js.UndefOr[String] = js.undefined
-  var cacheRoot: js.UndefOr[String] = js.undefined
-  var downloadOptions: js.UndefOr[DownloadOptions] = js.undefined
-  var downloader: js.UndefOr[Downloader[_]] = js.undefined
-  var force: js.UndefOr[Boolean] = js.undefined
-  var isGeneric: js.UndefOr[`false`] = js.undefined
-  var mirrorOptions: js.UndefOr[MirrorOptions] = js.undefined
-  var platform: js.UndefOr[String] = js.undefined
-  var tempDirectory: js.UndefOr[String] = js.undefined
-  var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.undefined
-  var version: String
+  var arch: js.UndefOr[String] = js.native
+  var artifactName: String = js.native
+  var artifactSuffix: js.UndefOr[String] = js.native
+  var cacheRoot: js.UndefOr[String] = js.native
+  var downloadOptions: js.UndefOr[DownloadOptions] = js.native
+  var downloader: js.UndefOr[Downloader[_]] = js.native
+  var force: js.UndefOr[Boolean] = js.native
+  var isGeneric: js.UndefOr[`false`] = js.native
+  var mirrorOptions: js.UndefOr[MirrorOptions] = js.native
+  var platform: js.UndefOr[String] = js.native
+  var tempDirectory: js.UndefOr[String] = js.native
+  var unsafelyDisableChecksums: js.UndefOr[Boolean] = js.native
+  var version: String = js.native
 }
 
 object OmitElectronPlatformArtif {
   @scala.inline
-  def apply(
-    artifactName: String,
-    version: String,
-    arch: String = null,
-    artifactSuffix: String = null,
-    cacheRoot: String = null,
-    downloadOptions: DownloadOptions = null,
-    downloader: Downloader[_] = null,
-    force: js.UndefOr[Boolean] = js.undefined,
-    isGeneric: `false` = null,
-    mirrorOptions: MirrorOptions = null,
-    platform: String = null,
-    tempDirectory: String = null,
-    unsafelyDisableChecksums: js.UndefOr[Boolean] = js.undefined
-  ): OmitElectronPlatformArtif = {
+  def apply(artifactName: String, version: String): OmitElectronPlatformArtif = {
     val __obj = js.Dynamic.literal(artifactName = artifactName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
-    if (artifactSuffix != null) __obj.updateDynamic("artifactSuffix")(artifactSuffix.asInstanceOf[js.Any])
-    if (cacheRoot != null) __obj.updateDynamic("cacheRoot")(cacheRoot.asInstanceOf[js.Any])
-    if (downloadOptions != null) __obj.updateDynamic("downloadOptions")(downloadOptions.asInstanceOf[js.Any])
-    if (downloader != null) __obj.updateDynamic("downloader")(downloader.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (isGeneric != null) __obj.updateDynamic("isGeneric")(isGeneric.asInstanceOf[js.Any])
-    if (mirrorOptions != null) __obj.updateDynamic("mirrorOptions")(mirrorOptions.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (tempDirectory != null) __obj.updateDynamic("tempDirectory")(tempDirectory.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsafelyDisableChecksums)) __obj.updateDynamic("unsafelyDisableChecksums")(unsafelyDisableChecksums.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitElectronPlatformArtif]
   }
+  @scala.inline
+  implicit class OmitElectronPlatformArtifOps[Self <: OmitElectronPlatformArtif] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifactName(value: String): Self = this.set("artifactName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArch(value: String): Self = this.set("arch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArch: Self = this.set("arch", js.undefined)
+    @scala.inline
+    def setArtifactSuffix(value: String): Self = this.set("artifactSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactSuffix: Self = this.set("artifactSuffix", js.undefined)
+    @scala.inline
+    def setCacheRoot(value: String): Self = this.set("cacheRoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheRoot: Self = this.set("cacheRoot", js.undefined)
+    @scala.inline
+    def setDownloadOptions(value: DownloadOptions): Self = this.set("downloadOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadOptions: Self = this.set("downloadOptions", js.undefined)
+    @scala.inline
+    def setDownloader(value: Downloader[_]): Self = this.set("downloader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloader: Self = this.set("downloader", js.undefined)
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setIsGeneric(value: `false`): Self = this.set("isGeneric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsGeneric: Self = this.set("isGeneric", js.undefined)
+    @scala.inline
+    def setMirrorOptions(value: MirrorOptions): Self = this.set("mirrorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMirrorOptions: Self = this.set("mirrorOptions", js.undefined)
+    @scala.inline
+    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setTempDirectory(value: String): Self = this.set("tempDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTempDirectory: Self = this.set("tempDirectory", js.undefined)
+    @scala.inline
+    def setUnsafelyDisableChecksums(value: Boolean): Self = this.set("unsafelyDisableChecksums", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsafelyDisableChecksums: Self = this.set("unsafelyDisableChecksums", js.undefined)
+  }
+  
 }
 

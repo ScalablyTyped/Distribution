@@ -12,7 +12,7 @@ Cross platform native logging
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 28537 |
+| # downloads        | 26770 |
 | # stars            | 1 |
 
 ## Links

@@ -102,56 +102,120 @@ trait InstanceTypeInfo extends js.Object {
 
 object InstanceTypeInfo {
   @scala.inline
-  def apply(
-    AutoRecoverySupported: js.UndefOr[AutoRecoveryFlag] = js.undefined,
-    BareMetal: js.UndefOr[BareMetalFlag] = js.undefined,
-    BurstablePerformanceSupported: js.UndefOr[BurstablePerformanceFlag] = js.undefined,
-    CurrentGeneration: js.UndefOr[CurrentGenerationFlag] = js.undefined,
-    DedicatedHostsSupported: js.UndefOr[DedicatedHostFlag] = js.undefined,
-    EbsInfo: EbsInfo = null,
-    FpgaInfo: FpgaInfo = null,
-    FreeTierEligible: js.UndefOr[FreeTierEligibleFlag] = js.undefined,
-    GpuInfo: GpuInfo = null,
-    HibernationSupported: js.UndefOr[HibernationFlag] = js.undefined,
-    Hypervisor: InstanceTypeHypervisor = null,
-    InferenceAcceleratorInfo: InferenceAcceleratorInfo = null,
-    InstanceStorageInfo: InstanceStorageInfo = null,
-    InstanceStorageSupported: js.UndefOr[InstanceStorageFlag] = js.undefined,
-    InstanceType: InstanceType = null,
-    MemoryInfo: MemoryInfo = null,
-    NetworkInfo: NetworkInfo = null,
-    PlacementGroupInfo: PlacementGroupInfo = null,
-    ProcessorInfo: ProcessorInfo = null,
-    SupportedRootDeviceTypes: RootDeviceTypeList = null,
-    SupportedUsageClasses: UsageClassTypeList = null,
-    SupportedVirtualizationTypes: VirtualizationTypeList = null,
-    VCpuInfo: VCpuInfo = null
-  ): InstanceTypeInfo = {
+  def apply(): InstanceTypeInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoRecoverySupported)) __obj.updateDynamic("AutoRecoverySupported")(AutoRecoverySupported.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BareMetal)) __obj.updateDynamic("BareMetal")(BareMetal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BurstablePerformanceSupported)) __obj.updateDynamic("BurstablePerformanceSupported")(BurstablePerformanceSupported.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DedicatedHostsSupported)) __obj.updateDynamic("DedicatedHostsSupported")(DedicatedHostsSupported.get.asInstanceOf[js.Any])
-    if (EbsInfo != null) __obj.updateDynamic("EbsInfo")(EbsInfo.asInstanceOf[js.Any])
-    if (FpgaInfo != null) __obj.updateDynamic("FpgaInfo")(FpgaInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(FreeTierEligible)) __obj.updateDynamic("FreeTierEligible")(FreeTierEligible.get.asInstanceOf[js.Any])
-    if (GpuInfo != null) __obj.updateDynamic("GpuInfo")(GpuInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(HibernationSupported)) __obj.updateDynamic("HibernationSupported")(HibernationSupported.get.asInstanceOf[js.Any])
-    if (Hypervisor != null) __obj.updateDynamic("Hypervisor")(Hypervisor.asInstanceOf[js.Any])
-    if (InferenceAcceleratorInfo != null) __obj.updateDynamic("InferenceAcceleratorInfo")(InferenceAcceleratorInfo.asInstanceOf[js.Any])
-    if (InstanceStorageInfo != null) __obj.updateDynamic("InstanceStorageInfo")(InstanceStorageInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceStorageSupported)) __obj.updateDynamic("InstanceStorageSupported")(InstanceStorageSupported.get.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (MemoryInfo != null) __obj.updateDynamic("MemoryInfo")(MemoryInfo.asInstanceOf[js.Any])
-    if (NetworkInfo != null) __obj.updateDynamic("NetworkInfo")(NetworkInfo.asInstanceOf[js.Any])
-    if (PlacementGroupInfo != null) __obj.updateDynamic("PlacementGroupInfo")(PlacementGroupInfo.asInstanceOf[js.Any])
-    if (ProcessorInfo != null) __obj.updateDynamic("ProcessorInfo")(ProcessorInfo.asInstanceOf[js.Any])
-    if (SupportedRootDeviceTypes != null) __obj.updateDynamic("SupportedRootDeviceTypes")(SupportedRootDeviceTypes.asInstanceOf[js.Any])
-    if (SupportedUsageClasses != null) __obj.updateDynamic("SupportedUsageClasses")(SupportedUsageClasses.asInstanceOf[js.Any])
-    if (SupportedVirtualizationTypes != null) __obj.updateDynamic("SupportedVirtualizationTypes")(SupportedVirtualizationTypes.asInstanceOf[js.Any])
-    if (VCpuInfo != null) __obj.updateDynamic("VCpuInfo")(VCpuInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceTypeInfo]
   }
+  @scala.inline
+  implicit class InstanceTypeInfoOps[Self <: InstanceTypeInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRecoverySupported(value: AutoRecoveryFlag): Self = this.set("AutoRecoverySupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRecoverySupported: Self = this.set("AutoRecoverySupported", js.undefined)
+    @scala.inline
+    def setBareMetal(value: BareMetalFlag): Self = this.set("BareMetal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBareMetal: Self = this.set("BareMetal", js.undefined)
+    @scala.inline
+    def setBurstablePerformanceSupported(value: BurstablePerformanceFlag): Self = this.set("BurstablePerformanceSupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBurstablePerformanceSupported: Self = this.set("BurstablePerformanceSupported", js.undefined)
+    @scala.inline
+    def setCurrentGeneration(value: CurrentGenerationFlag): Self = this.set("CurrentGeneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentGeneration: Self = this.set("CurrentGeneration", js.undefined)
+    @scala.inline
+    def setDedicatedHostsSupported(value: DedicatedHostFlag): Self = this.set("DedicatedHostsSupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedHostsSupported: Self = this.set("DedicatedHostsSupported", js.undefined)
+    @scala.inline
+    def setEbsInfo(value: EbsInfo): Self = this.set("EbsInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsInfo: Self = this.set("EbsInfo", js.undefined)
+    @scala.inline
+    def setFpgaInfo(value: FpgaInfo): Self = this.set("FpgaInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFpgaInfo: Self = this.set("FpgaInfo", js.undefined)
+    @scala.inline
+    def setFreeTierEligible(value: FreeTierEligibleFlag): Self = this.set("FreeTierEligible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFreeTierEligible: Self = this.set("FreeTierEligible", js.undefined)
+    @scala.inline
+    def setGpuInfo(value: GpuInfo): Self = this.set("GpuInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGpuInfo: Self = this.set("GpuInfo", js.undefined)
+    @scala.inline
+    def setHibernationSupported(value: HibernationFlag): Self = this.set("HibernationSupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHibernationSupported: Self = this.set("HibernationSupported", js.undefined)
+    @scala.inline
+    def setHypervisor(value: InstanceTypeHypervisor): Self = this.set("Hypervisor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHypervisor: Self = this.set("Hypervisor", js.undefined)
+    @scala.inline
+    def setInferenceAcceleratorInfo(value: InferenceAcceleratorInfo): Self = this.set("InferenceAcceleratorInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInferenceAcceleratorInfo: Self = this.set("InferenceAcceleratorInfo", js.undefined)
+    @scala.inline
+    def setInstanceStorageInfo(value: InstanceStorageInfo): Self = this.set("InstanceStorageInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceStorageInfo: Self = this.set("InstanceStorageInfo", js.undefined)
+    @scala.inline
+    def setInstanceStorageSupported(value: InstanceStorageFlag): Self = this.set("InstanceStorageSupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceStorageSupported: Self = this.set("InstanceStorageSupported", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setMemoryInfo(value: MemoryInfo): Self = this.set("MemoryInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryInfo: Self = this.set("MemoryInfo", js.undefined)
+    @scala.inline
+    def setNetworkInfo(value: NetworkInfo): Self = this.set("NetworkInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInfo: Self = this.set("NetworkInfo", js.undefined)
+    @scala.inline
+    def setPlacementGroupInfo(value: PlacementGroupInfo): Self = this.set("PlacementGroupInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroupInfo: Self = this.set("PlacementGroupInfo", js.undefined)
+    @scala.inline
+    def setProcessorInfo(value: ProcessorInfo): Self = this.set("ProcessorInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessorInfo: Self = this.set("ProcessorInfo", js.undefined)
+    @scala.inline
+    def setSupportedRootDeviceTypesVarargs(value: RootDeviceType*): Self = this.set("SupportedRootDeviceTypes", js.Array(value :_*))
+    @scala.inline
+    def setSupportedRootDeviceTypes(value: RootDeviceTypeList): Self = this.set("SupportedRootDeviceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedRootDeviceTypes: Self = this.set("SupportedRootDeviceTypes", js.undefined)
+    @scala.inline
+    def setSupportedUsageClassesVarargs(value: UsageClassType*): Self = this.set("SupportedUsageClasses", js.Array(value :_*))
+    @scala.inline
+    def setSupportedUsageClasses(value: UsageClassTypeList): Self = this.set("SupportedUsageClasses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedUsageClasses: Self = this.set("SupportedUsageClasses", js.undefined)
+    @scala.inline
+    def setSupportedVirtualizationTypesVarargs(value: VirtualizationType*): Self = this.set("SupportedVirtualizationTypes", js.Array(value :_*))
+    @scala.inline
+    def setSupportedVirtualizationTypes(value: VirtualizationTypeList): Self = this.set("SupportedVirtualizationTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedVirtualizationTypes: Self = this.set("SupportedVirtualizationTypes", js.undefined)
+    @scala.inline
+    def setVCpuInfo(value: VCpuInfo): Self = this.set("VCpuInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVCpuInfo: Self = this.set("VCpuInfo", js.undefined)
+  }
+  
 }
 

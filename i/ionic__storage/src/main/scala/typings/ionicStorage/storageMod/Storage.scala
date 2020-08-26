@@ -22,15 +22,15 @@ class Storage protected () extends js.Object {
   /** @hidden */
   var _getDriverOrder: js.Any = js.native
   /**
-    * Get the name of the driver being used.
-    * @returns Name of the driver
-    */
-  val driver: String | Null = js.native
-  /**
     * Clear the entire key value store. WARNING: HOT!
     * @returns Returns a promise that resolves when the store is cleared
     */
   def clear(): js.Promise[Unit] = js.native
+  /**
+    * Get the name of the driver being used.
+    * @returns Name of the driver
+    */
+  def driver: String | Null = js.native
   /**
     * Iterate through each key,value pair.
     * @param iteratorCallback a callback of the form (value, key, iterationNumber)

@@ -5,25 +5,46 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** QueryRelationsFilter. */
+@js.native
 trait QueryRelationsFilter extends js.Object {
   /** A comma-separated list of document IDs to include in the query. */
-  var document_ids: js.UndefOr[js.Array[String]] = js.undefined
-  var entity_types: js.UndefOr[QueryFilterType] = js.undefined
-  var relation_types: js.UndefOr[QueryFilterType] = js.undefined
+  var document_ids: js.UndefOr[js.Array[String]] = js.native
+  var entity_types: js.UndefOr[QueryFilterType] = js.native
+  var relation_types: js.UndefOr[QueryFilterType] = js.native
 }
 
 object QueryRelationsFilter {
   @scala.inline
-  def apply(
-    document_ids: js.Array[String] = null,
-    entity_types: QueryFilterType = null,
-    relation_types: QueryFilterType = null
-  ): QueryRelationsFilter = {
+  def apply(): QueryRelationsFilter = {
     val __obj = js.Dynamic.literal()
-    if (document_ids != null) __obj.updateDynamic("document_ids")(document_ids.asInstanceOf[js.Any])
-    if (entity_types != null) __obj.updateDynamic("entity_types")(entity_types.asInstanceOf[js.Any])
-    if (relation_types != null) __obj.updateDynamic("relation_types")(relation_types.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRelationsFilter]
   }
+  @scala.inline
+  implicit class QueryRelationsFilterOps[Self <: QueryRelationsFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocument_idsVarargs(value: String*): Self = this.set("document_ids", js.Array(value :_*))
+    @scala.inline
+    def setDocument_ids(value: js.Array[String]): Self = this.set("document_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocument_ids: Self = this.set("document_ids", js.undefined)
+    @scala.inline
+    def setEntity_types(value: QueryFilterType): Self = this.set("entity_types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntity_types: Self = this.set("entity_types", js.undefined)
+    @scala.inline
+    def setRelation_types(value: QueryFilterType): Self = this.set("relation_types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelation_types: Self = this.set("relation_types", js.undefined)
+  }
+  
 }
 

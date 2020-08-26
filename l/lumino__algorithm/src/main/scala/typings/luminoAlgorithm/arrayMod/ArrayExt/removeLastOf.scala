@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.removeLastOf")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.removeLastOf")
 @js.native
 object removeLastOf extends js.Object {
   /**
@@ -44,6 +44,7 @@ object removeLastOf extends js.Object {
     * ```
     */
   def apply[T](array: js.Array[T], value: T): Double = js.native
+  def apply[T](array: js.Array[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
   def apply[T](array: js.Array[T], value: T, start: Double): Double = js.native
   def apply[T](array: js.Array[T], value: T, start: Double, stop: Double): Double = js.native
 }

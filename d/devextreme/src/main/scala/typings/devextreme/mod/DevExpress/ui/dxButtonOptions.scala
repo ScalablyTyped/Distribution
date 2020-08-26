@@ -1,9 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.ComponentElement
 import typings.devextreme.anon.Icon
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
 import typings.devextreme.anon.ValidationGroup
 import typings.devextreme.devextremeStrings.back
 import typings.devextreme.devextremeStrings.contained
@@ -20,83 +17,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxButtonOptions extends WidgetOptions[dxButton] {
   /** @name dxButton.Options.icon */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
   /** @name dxButton.Options.onClick */
-  var onClick: js.UndefOr[js.Function1[/* e */ ValidationGroup, _]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* e */ ValidationGroup, _]] = js.native
   /** @name dxButton.Options.stylingMode */
-  var stylingMode: js.UndefOr[text | outlined | contained] = js.undefined
+  var stylingMode: js.UndefOr[text | outlined | contained] = js.native
   /** @name dxButton.Options.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery])
-  ] = js.undefined
+  ] = js.native
   /** @name dxButton.Options.text */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /** @name dxButton.Options.type */
-  var `type`: js.UndefOr[back | danger | default_ | normal | success] = js.undefined
+  var `type`: js.UndefOr[back | danger | default_ | normal | success] = js.native
   /** @name dxButton.Options.useSubmitBehavior */
-  var useSubmitBehavior: js.UndefOr[Boolean] = js.undefined
+  var useSubmitBehavior: js.UndefOr[Boolean] = js.native
   /** @name dxButton.Options.validationGroup */
-  var validationGroup: js.UndefOr[String] = js.undefined
+  var validationGroup: js.UndefOr[String] = js.native
 }
 
 object dxButtonOptions {
   @scala.inline
-  def apply(
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    bindingOptions: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    onClick: /* e */ ValidationGroup => _ = null,
-    onContentReady: /* e */ ComponentElement[dxButton] => _ = null,
-    onDisposing: /* e */ Model[dxButton] => _ = null,
-    onInitialized: /* e */ typings.devextreme.anon.Element[dxButton] => _ = null,
-    onOptionChanged: /* e */ Name[dxButton] => _ = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    stylingMode: text | outlined | contained = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery]) = null,
-    text: String = null,
-    `type`: back | danger | default_ | normal | success = null,
-    useSubmitBehavior: js.UndefOr[Boolean] = js.undefined,
-    validationGroup: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxButtonOptions = {
+  def apply(): dxButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1(onContentReady))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (stylingMode != null) __obj.updateDynamic("stylingMode")(stylingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSubmitBehavior)) __obj.updateDynamic("useSubmitBehavior")(useSubmitBehavior.get.asInstanceOf[js.Any])
-    if (validationGroup != null) __obj.updateDynamic("validationGroup")(validationGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxButtonOptions]
   }
+  @scala.inline
+  implicit class dxButtonOptionsOps[Self <: dxButtonOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* e */ ValidationGroup => _): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setStylingMode(value: text | outlined | contained): Self = this.set("stylingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStylingMode: Self = this.set("stylingMode", js.undefined)
+    @scala.inline
+    def setTemplateFunction2(value: (/* buttonData */ Icon, /* contentElement */ dxElement) => String | Element | JQuery): Self = this.set("template", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTemplate(
+      value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ Icon, /* contentElement */ dxElement, String | Element | JQuery])
+    ): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setType(value: back | danger | default_ | normal | success): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUseSubmitBehavior(value: Boolean): Self = this.set("useSubmitBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseSubmitBehavior: Self = this.set("useSubmitBehavior", js.undefined)
+    @scala.inline
+    def setValidationGroup(value: String): Self = this.set("validationGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationGroup: Self = this.set("validationGroup", js.undefined)
+  }
+  
 }
 

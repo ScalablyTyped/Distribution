@@ -30,16 +30,34 @@ trait SchemaSourceMetadata extends js.Object {
 
 object SchemaSourceMetadata {
   @scala.inline
-  def apply(
-    estimatedSizeBytes: String = null,
-    infinite: js.UndefOr[Boolean] = js.undefined,
-    producesSortedKeys: js.UndefOr[Boolean] = js.undefined
-  ): SchemaSourceMetadata = {
+  def apply(): SchemaSourceMetadata = {
     val __obj = js.Dynamic.literal()
-    if (estimatedSizeBytes != null) __obj.updateDynamic("estimatedSizeBytes")(estimatedSizeBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(producesSortedKeys)) __obj.updateDynamic("producesSortedKeys")(producesSortedKeys.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceMetadata]
   }
+  @scala.inline
+  implicit class SchemaSourceMetadataOps[Self <: SchemaSourceMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEstimatedSizeBytes(value: String): Self = this.set("estimatedSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedSizeBytes: Self = this.set("estimatedSizeBytes", js.undefined)
+    @scala.inline
+    def setInfinite(value: Boolean): Self = this.set("infinite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfinite: Self = this.set("infinite", js.undefined)
+    @scala.inline
+    def setProducesSortedKeys(value: Boolean): Self = this.set("producesSortedKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducesSortedKeys: Self = this.set("producesSortedKeys", js.undefined)
+  }
+  
 }
 

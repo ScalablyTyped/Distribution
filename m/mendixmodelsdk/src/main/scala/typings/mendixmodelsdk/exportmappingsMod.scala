@@ -55,19 +55,19 @@ object exportmappingsMod extends js.Object {
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MExportMapping: FolderBase = js.native
       def isHeader: Boolean = js.native
-      def isHeader(newValue: Boolean): js.Any = js.native
+      def isHeader_=(newValue: Boolean): Unit = js.native
       /**
         * In version 6.7.0: introduced
         */
       def nullValueOption: NullValueOption = js.native
-      def nullValueOption(newValue: NullValueOption): js.Any = js.native
+      def nullValueOption_=(newValue: NullValueOption): Unit = js.native
       def parameterName: String = js.native
-      def parameterName(newValue: String): js.Any = js.native
+      def parameterName_=(newValue: String): Unit = js.native
       /**
         * In version 6.1.0: deleted
         */
       def parameterTypeName: String = js.native
-      def parameterTypeName(newValue: String): js.Any = js.native
+      def parameterTypeName_=(newValue: String): Unit = js.native
     }
     
     /**

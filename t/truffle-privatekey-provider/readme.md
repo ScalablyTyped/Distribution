@@ -12,7 +12,7 @@ Private Key Web3 provider
 | Keywords           | ethereum, private key, wallet, provider, truffle provider |
 | # releases         | 13 |
 | # dependents       | 16 |
-| # downloads        | 93733 |
+| # downloads        | 91931 |
 | # stars            | 0 |
 
 ## Links

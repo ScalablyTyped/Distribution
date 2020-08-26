@@ -190,54 +190,51 @@ trait Api_ extends js.Object {
     * Removes loading and error state from element
     */
   def apply(behavior: reset): JQuery = js.native
-  def apply(behavior: setting, name: action): String | `false` = js.native
+  def apply(behavior: setting, name: action, value: js.UndefOr[scala.Nothing]): String | `false` = js.native
   def apply(behavior: setting, name: action, value: String): JQuery = js.native
   def apply(behavior: setting, name: action, value: `false`): JQuery = js.native
-  def apply(behavior: setting, name: api): StringDictionary[String] = js.native
+  def apply(behavior: setting, name: api, value: js.UndefOr[scala.Nothing]): StringDictionary[String] = js.native
   def apply(behavior: setting, name: api, value: StringDictionary[String]): JQuery = js.native
-  def apply(behavior: setting, name: beforeSend): js.Function1[/* settings */ ApiSettings, _] = js.native
+  def apply(behavior: setting, name: beforeSend, value: js.UndefOr[scala.Nothing]): js.Function1[/* settings */ ApiSettings, _] = js.native
   def apply(behavior: setting, name: beforeSend, value: js.Function1[/* settings */ ApiSettings, _]): JQuery = js.native
-  def apply(behavior: setting, name: beforeXHR): js.Function1[/* xhrObject */ jqXHR[_], _] = js.native
+  def apply(behavior: setting, name: beforeXHR, value: js.UndefOr[scala.Nothing]): js.Function1[/* xhrObject */ jqXHR[_], _] = js.native
   def apply(behavior: setting, name: beforeXHR, value: js.Function1[/* xhrObject */ jqXHR[_], _]): JQuery = js.native
-  def apply(behavior: setting, name: cache): local | Boolean = js.native
+  def apply(behavior: setting, name: cache, value: js.UndefOr[scala.Nothing]): local | Boolean = js.native
   def apply(behavior: setting, name: cache, value: Boolean): JQuery = js.native
   def apply(behavior: setting, name: cache, value: local): JQuery = js.native
-  def apply(behavior: setting, name: className): ClassNameSettings = js.native
   def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def apply(behavior: setting, name: data): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any = js.native
-  def apply(behavior: setting, name: dataType): xml | json | jsonp | script | html | text = js.native
+  def apply(behavior: setting, name: dataType, value: js.UndefOr[scala.Nothing]): xml | json | jsonp | script | html | text = js.native
   def apply(behavior: setting, name: dataType, value: html): JQuery = js.native
   def apply(behavior: setting, name: dataType, value: json): JQuery = js.native
   def apply(behavior: setting, name: dataType, value: jsonp): JQuery = js.native
   def apply(behavior: setting, name: dataType, value: script): JQuery = js.native
   def apply(behavior: setting, name: dataType, value: text): JQuery = js.native
   def apply(behavior: setting, name: dataType, value: xml): JQuery = js.native
+  def apply(behavior: setting, name: data, value: js.UndefOr[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any = js.native
   def apply(
     behavior: setting,
     name: data,
     value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-api.SemanticUI.ApiSettings._Impl['data'] */ js.Any
   ): JQuery = js.native
-  def apply(behavior: setting, name: debug): Boolean = js.native
+  def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: defaultData): Boolean = js.native
+  def apply(behavior: setting, name: defaultData, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: defaultData, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: encodeParameters): Boolean = js.native
+  def apply(behavior: setting, name: encodeParameters, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: encodeParameters, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: error): ErrorSettings = js.native
-  def apply(behavior: setting, name: errorDuration): `true` | Double = js.native
+  def apply(behavior: setting, name: errorDuration, value: js.UndefOr[scala.Nothing]): `true` | Double = js.native
   def apply(behavior: setting, name: errorDuration, value: Double): JQuery = js.native
   def apply(behavior: setting, name: errorDuration, value: `true`): JQuery = js.native
-  def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def apply(behavior: setting, name: hideError): auto | Boolean = js.native
+  def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+  def apply(behavior: setting, name: hideError, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
   def apply(behavior: setting, name: hideError, value: Boolean): JQuery = js.native
   def apply(behavior: setting, name: hideError, value: auto): JQuery = js.native
-  def apply(behavior: setting, name: interruptRequests): Boolean = js.native
+  def apply(behavior: setting, name: interruptRequests, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: interruptRequests, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: loadingDuration): Double = js.native
+  def apply(behavior: setting, name: loadingDuration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def apply(behavior: setting, name: loadingDuration, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: metadata): MetadataSettings = js.native
-  def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  def apply(behavior: setting, name: method): post | get | put | delete | head | options | patch = js.native
+  def apply(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
+  def apply(behavior: setting, name: method, value: js.UndefOr[scala.Nothing]): post | get | put | delete | head | options | patch = js.native
   def apply(behavior: setting, name: method, value: delete): JQuery = js.native
   def apply(behavior: setting, name: method, value: get): JQuery = js.native
   def apply(behavior: setting, name: method, value: head): JQuery = js.native
@@ -245,8 +242,7 @@ trait Api_ extends js.Object {
   def apply(behavior: setting, name: method, value: patch): JQuery = js.native
   def apply(behavior: setting, name: method, value: post): JQuery = js.native
   def apply(behavior: setting, name: method, value: put): JQuery = js.native
-  def apply(behavior: setting, name: mockResponse): js.Any | `false` = js.native
-  def apply(behavior: setting, name: mockResponseAsync): (js.Function2[
+  def apply(behavior: setting, name: mockResponseAsync, value: js.UndefOr[scala.Nothing]): (js.Function2[
     /* settings */ ApiSettings, 
     /* callback */ js.Function1[/* response */ js.Any, Unit], 
     Unit
@@ -261,58 +257,57 @@ trait Api_ extends js.Object {
     ]
   ): JQuery = js.native
   def apply(behavior: setting, name: mockResponseAsync, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: mockResponse, value: js.UndefOr[scala.Nothing]): js.Any | `false` = js.native
   def apply(behavior: setting, name: mockResponse, value: js.Any): JQuery = js.native
   def apply(behavior: setting, name: mockResponse, value: `false`): JQuery = js.native
-  def apply(behavior: setting, name: name): String = js.native
-  def apply(behavior: setting, name: namespace): String = js.native
+  def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: name, value: String): JQuery = js.native
-  def apply(behavior: setting, name: on): String = js.native
-  def apply(behavior: setting, name: onAbort): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(behavior: setting, name: onAbort, value: js.UndefOr[scala.Nothing]): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
   def apply(
     behavior: setting,
     name: onAbort,
     value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onComplete): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(behavior: setting, name: onComplete, value: js.UndefOr[scala.Nothing]): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
   def apply(
     behavior: setting,
     name: onComplete,
     value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onError): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(behavior: setting, name: onError, value: js.UndefOr[scala.Nothing]): js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
   def apply(
     behavior: setting,
     name: onError,
     value: js.Function3[/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onFailure): js.Function2[/* response */ js.Any, /* element */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: onFailure, value: js.UndefOr[scala.Nothing]): js.Function2[/* response */ js.Any, /* element */ JQuery, Unit] = js.native
   def apply(
     behavior: setting,
     name: onFailure,
     value: js.Function2[/* response */ js.Any, /* element */ JQuery, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onRequest): js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(behavior: setting, name: onRequest, value: js.UndefOr[scala.Nothing]): js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit] = js.native
   def apply(
     behavior: setting,
     name: onRequest,
     value: js.Function2[/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_], Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onResponse): js.Function1[/* response */ js.Any, Unit] = js.native
+  def apply(behavior: setting, name: onResponse, value: js.UndefOr[scala.Nothing]): js.Function1[/* response */ js.Any, Unit] = js.native
   def apply(behavior: setting, name: onResponse, value: js.Function1[/* response */ js.Any, Unit]): JQuery = js.native
-  def apply(behavior: setting, name: onSuccess): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
+  def apply(behavior: setting, name: onSuccess, value: js.UndefOr[scala.Nothing]): js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit] = js.native
   def apply(
     behavior: setting,
     name: onSuccess,
     value: js.Function3[/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_], Unit]
   ): JQuery = js.native
+  def apply(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: on, value: String): JQuery = js.native
-  def apply(behavior: setting, name: performance): Boolean = js.native
+  def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: regExp): RegExpSettings = js.native
-  def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-  def apply(behavior: setting, name: response): js.Any | `false` = js.native
-  def apply(behavior: setting, name: responseAsync): (js.Function2[
+  def apply(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
+  def apply(behavior: setting, name: responseAsync, value: js.UndefOr[scala.Nothing]): (js.Function2[
     /* settings */ ApiSettings, 
     /* callback */ js.Function1[/* response */ js.Any, Unit], 
     Unit
@@ -327,30 +322,30 @@ trait Api_ extends js.Object {
     ]
   ): JQuery = js.native
   def apply(behavior: setting, name: responseAsync, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: response, value: js.UndefOr[scala.Nothing]): js.Any | `false` = js.native
   def apply(behavior: setting, name: response, value: js.Any): JQuery = js.native
   def apply(behavior: setting, name: response, value: `false`): JQuery = js.native
-  def apply(behavior: setting, name: selector): SelectorSettings = js.native
-  def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def apply(behavior: setting, name: serializeForm): Boolean = js.native
+  def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+  def apply(behavior: setting, name: serializeForm, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: serializeForm, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: silent): Boolean = js.native
+  def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: stateContext): String | JQuery = js.native
+  def apply(behavior: setting, name: stateContext, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
   def apply(behavior: setting, name: stateContext, value: String): JQuery = js.native
   def apply(behavior: setting, name: stateContext, value: JQuery): JQuery = js.native
-  def apply(behavior: setting, name: successTest): js.Function1[/* response */ js.Any, Boolean] = js.native
+  def apply(behavior: setting, name: successTest, value: js.UndefOr[scala.Nothing]): js.Function1[/* response */ js.Any, Boolean] = js.native
   def apply(behavior: setting, name: successTest, value: js.Function1[/* response */ js.Any, Boolean]): JQuery = js.native
-  def apply(behavior: setting, name: throttle): Double = js.native
-  def apply(behavior: setting, name: throttleFirstRequest): Boolean = js.native
+  def apply(behavior: setting, name: throttleFirstRequest, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: throttleFirstRequest, value: Boolean): JQuery = js.native
+  def apply(behavior: setting, name: throttle, value: js.UndefOr[scala.Nothing]): Double = js.native
   def apply(behavior: setting, name: throttle, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: url): String | `false` = js.native
-  def apply(behavior: setting, name: urlData): js.Any | `false` = js.native
+  def apply(behavior: setting, name: urlData, value: js.UndefOr[scala.Nothing]): js.Any | `false` = js.native
   def apply(behavior: setting, name: urlData, value: js.Any): JQuery = js.native
   def apply(behavior: setting, name: urlData, value: `false`): JQuery = js.native
+  def apply(behavior: setting, name: url, value: js.UndefOr[scala.Nothing]): String | `false` = js.native
   def apply(behavior: setting, name: url, value: String): JQuery = js.native
   def apply(behavior: setting, name: url, value: `false`): JQuery = js.native
-  def apply(behavior: setting, name: verbose): Boolean = js.native
+  def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: ApiSettings): JQuery = js.native
   def apply(settings: ApiSettings): JQuery = js.native

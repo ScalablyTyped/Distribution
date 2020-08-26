@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ModelVersionDetail extends js.Object {
   /**
+    * The model version ARN.
+    */
+  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  /**
     * The timestamp when the model was created.
     */
   var createdTime: js.UndefOr[time] = js.native
   /**
-    * The model description.
+    * The event details.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
-  /**
-    * The model label schema.
-    */
-  var labelSchema: js.UndefOr[LabelSchema] = js.native
+  var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.native
   /**
     * The timestamp when the model was last updated.
     */
@@ -25,67 +25,95 @@ trait ModelVersionDetail extends js.Object {
   /**
     * The model ID.
     */
-  var modelId: js.UndefOr[identifier] = js.native
+  var modelId: js.UndefOr[modelIdentifier] = js.native
   /**
     * The model type.
     */
   var modelType: js.UndefOr[ModelTypeEnum] = js.native
   /**
-    * The model variables.
+    * The model version number.
     */
-  var modelVariables: js.UndefOr[ModelVariablesList] = js.native
+  var modelVersionNumber: js.UndefOr[floatVersionString] = js.native
   /**
-    * The model version.
-    */
-  var modelVersionNumber: js.UndefOr[nonEmptyString] = js.native
-  /**
-    * The model status.
+    * The status of the model version.
     */
   var status: js.UndefOr[String] = js.native
   /**
-    * The model training data source.
+    * The training data schema.
     */
-  var trainingDataSource: js.UndefOr[TrainingDataSource] = js.native
+  var trainingDataSchema: js.UndefOr[TrainingDataSchema] = js.native
   /**
-    * The model training metrics.
+    * The model version training data source.
     */
-  var trainingMetrics: js.UndefOr[MetricsMap] = js.native
+  var trainingDataSource: js.UndefOr[TrainingDataSourceEnum] = js.native
   /**
-    * The model validation metrics.
+    * The training results.
     */
-  var validationMetrics: js.UndefOr[MetricsMap] = js.native
+  var trainingResult: js.UndefOr[TrainingResult] = js.native
 }
 
 object ModelVersionDetail {
   @scala.inline
-  def apply(
-    createdTime: time = null,
-    description: description = null,
-    labelSchema: LabelSchema = null,
-    lastUpdatedTime: time = null,
-    modelId: identifier = null,
-    modelType: ModelTypeEnum = null,
-    modelVariables: ModelVariablesList = null,
-    modelVersionNumber: nonEmptyString = null,
-    status: String = null,
-    trainingDataSource: TrainingDataSource = null,
-    trainingMetrics: MetricsMap = null,
-    validationMetrics: MetricsMap = null
-  ): ModelVersionDetail = {
+  def apply(): ModelVersionDetail = {
     val __obj = js.Dynamic.literal()
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (labelSchema != null) __obj.updateDynamic("labelSchema")(labelSchema.asInstanceOf[js.Any])
-    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
-    if (modelId != null) __obj.updateDynamic("modelId")(modelId.asInstanceOf[js.Any])
-    if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
-    if (modelVariables != null) __obj.updateDynamic("modelVariables")(modelVariables.asInstanceOf[js.Any])
-    if (modelVersionNumber != null) __obj.updateDynamic("modelVersionNumber")(modelVersionNumber.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (trainingDataSource != null) __obj.updateDynamic("trainingDataSource")(trainingDataSource.asInstanceOf[js.Any])
-    if (trainingMetrics != null) __obj.updateDynamic("trainingMetrics")(trainingMetrics.asInstanceOf[js.Any])
-    if (validationMetrics != null) __obj.updateDynamic("validationMetrics")(validationMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelVersionDetail]
   }
+  @scala.inline
+  implicit class ModelVersionDetailOps[Self <: ModelVersionDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: fraudDetectorArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: time): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    @scala.inline
+    def setExternalEventsDetail(value: ExternalEventsDetail): Self = this.set("externalEventsDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalEventsDetail: Self = this.set("externalEventsDetail", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: time): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setModelId(value: modelIdentifier): Self = this.set("modelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelId: Self = this.set("modelId", js.undefined)
+    @scala.inline
+    def setModelType(value: ModelTypeEnum): Self = this.set("modelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelType: Self = this.set("modelType", js.undefined)
+    @scala.inline
+    def setModelVersionNumber(value: floatVersionString): Self = this.set("modelVersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelVersionNumber: Self = this.set("modelVersionNumber", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTrainingDataSchema(value: TrainingDataSchema): Self = this.set("trainingDataSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingDataSchema: Self = this.set("trainingDataSchema", js.undefined)
+    @scala.inline
+    def setTrainingDataSource(value: TrainingDataSourceEnum): Self = this.set("trainingDataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingDataSource: Self = this.set("trainingDataSource", js.undefined)
+    @scala.inline
+    def setTrainingResult(value: TrainingResult): Self = this.set("trainingResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingResult: Self = this.set("trainingResult", js.undefined)
+  }
+  
 }
 

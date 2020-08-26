@@ -19,6 +19,7 @@ class ɵRender3NgModuleRef[T] protected () extends InternalNgModuleRef[T] {
   @JSName("instance")
   var instance_FɵRender3NgModuleRef: T = js.native
   def get(token: js.Any): js.Any = js.native
+  def get(token: js.Any, notFoundValue: js.UndefOr[scala.Nothing], injectFlags: InjectFlags): js.Any = js.native
   def get(token: js.Any, notFoundValue: js.Any): js.Any = js.native
   def get(token: js.Any, notFoundValue: js.Any, injectFlags: InjectFlags): js.Any = js.native
 }

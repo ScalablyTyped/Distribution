@@ -30,20 +30,42 @@ trait DataSourceSyncJobMetrics extends js.Object {
 
 object DataSourceSyncJobMetrics {
   @scala.inline
-  def apply(
-    DocumentsAdded: MetricValue = null,
-    DocumentsDeleted: MetricValue = null,
-    DocumentsFailed: MetricValue = null,
-    DocumentsModified: MetricValue = null,
-    DocumentsScanned: MetricValue = null
-  ): DataSourceSyncJobMetrics = {
+  def apply(): DataSourceSyncJobMetrics = {
     val __obj = js.Dynamic.literal()
-    if (DocumentsAdded != null) __obj.updateDynamic("DocumentsAdded")(DocumentsAdded.asInstanceOf[js.Any])
-    if (DocumentsDeleted != null) __obj.updateDynamic("DocumentsDeleted")(DocumentsDeleted.asInstanceOf[js.Any])
-    if (DocumentsFailed != null) __obj.updateDynamic("DocumentsFailed")(DocumentsFailed.asInstanceOf[js.Any])
-    if (DocumentsModified != null) __obj.updateDynamic("DocumentsModified")(DocumentsModified.asInstanceOf[js.Any])
-    if (DocumentsScanned != null) __obj.updateDynamic("DocumentsScanned")(DocumentsScanned.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSyncJobMetrics]
   }
+  @scala.inline
+  implicit class DataSourceSyncJobMetricsOps[Self <: DataSourceSyncJobMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentsAdded(value: MetricValue): Self = this.set("DocumentsAdded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentsAdded: Self = this.set("DocumentsAdded", js.undefined)
+    @scala.inline
+    def setDocumentsDeleted(value: MetricValue): Self = this.set("DocumentsDeleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentsDeleted: Self = this.set("DocumentsDeleted", js.undefined)
+    @scala.inline
+    def setDocumentsFailed(value: MetricValue): Self = this.set("DocumentsFailed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentsFailed: Self = this.set("DocumentsFailed", js.undefined)
+    @scala.inline
+    def setDocumentsModified(value: MetricValue): Self = this.set("DocumentsModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentsModified: Self = this.set("DocumentsModified", js.undefined)
+    @scala.inline
+    def setDocumentsScanned(value: MetricValue): Self = this.set("DocumentsScanned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentsScanned: Self = this.set("DocumentsScanned", js.undefined)
+  }
+  
 }
 

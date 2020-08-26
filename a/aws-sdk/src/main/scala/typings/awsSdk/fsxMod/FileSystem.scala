@@ -76,46 +76,102 @@ trait FileSystem extends js.Object {
 
 object FileSystem {
   @scala.inline
-  def apply(
-    AdministrativeActions: AdministrativeActions = null,
-    CreationTime: CreationTime = null,
-    DNSName: DNSName = null,
-    FailureDetails: FileSystemFailureDetails = null,
-    FileSystemId: FileSystemId = null,
-    FileSystemType: FileSystemType = null,
-    KmsKeyId: KmsKeyId = null,
-    Lifecycle: FileSystemLifecycle = null,
-    LustreConfiguration: LustreFileSystemConfiguration = null,
-    NetworkInterfaceIds: NetworkInterfaceIds = null,
-    OwnerId: AWSAccountId = null,
-    ResourceARN: ResourceARN = null,
-    StorageCapacity: js.UndefOr[StorageCapacity] = js.undefined,
-    StorageType: StorageType = null,
-    SubnetIds: SubnetIds = null,
-    Tags: Tags = null,
-    VpcId: VpcId = null,
-    WindowsConfiguration: WindowsFileSystemConfiguration = null
-  ): FileSystem = {
+  def apply(): FileSystem = {
     val __obj = js.Dynamic.literal()
-    if (AdministrativeActions != null) __obj.updateDynamic("AdministrativeActions")(AdministrativeActions.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DNSName != null) __obj.updateDynamic("DNSName")(DNSName.asInstanceOf[js.Any])
-    if (FailureDetails != null) __obj.updateDynamic("FailureDetails")(FailureDetails.asInstanceOf[js.Any])
-    if (FileSystemId != null) __obj.updateDynamic("FileSystemId")(FileSystemId.asInstanceOf[js.Any])
-    if (FileSystemType != null) __obj.updateDynamic("FileSystemType")(FileSystemType.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
-    if (LustreConfiguration != null) __obj.updateDynamic("LustreConfiguration")(LustreConfiguration.asInstanceOf[js.Any])
-    if (NetworkInterfaceIds != null) __obj.updateDynamic("NetworkInterfaceIds")(NetworkInterfaceIds.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageCapacity)) __obj.updateDynamic("StorageCapacity")(StorageCapacity.get.asInstanceOf[js.Any])
-    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
-    if (WindowsConfiguration != null) __obj.updateDynamic("WindowsConfiguration")(WindowsConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystem]
   }
+  @scala.inline
+  implicit class FileSystemOps[Self <: FileSystem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdministrativeActionsVarargs(value: AdministrativeAction*): Self = this.set("AdministrativeActions", js.Array(value :_*))
+    @scala.inline
+    def setAdministrativeActions(value: AdministrativeActions): Self = this.set("AdministrativeActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdministrativeActions: Self = this.set("AdministrativeActions", js.undefined)
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDNSName(value: DNSName): Self = this.set("DNSName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDNSName: Self = this.set("DNSName", js.undefined)
+    @scala.inline
+    def setFailureDetails(value: FileSystemFailureDetails): Self = this.set("FailureDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDetails: Self = this.set("FailureDetails", js.undefined)
+    @scala.inline
+    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemId: Self = this.set("FileSystemId", js.undefined)
+    @scala.inline
+    def setFileSystemType(value: FileSystemType): Self = this.set("FileSystemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemType: Self = this.set("FileSystemType", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setLifecycle(value: FileSystemLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+    @scala.inline
+    def setLustreConfiguration(value: LustreFileSystemConfiguration): Self = this.set("LustreConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLustreConfiguration: Self = this.set("LustreConfiguration", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceIdsVarargs(value: NetworkInterfaceId*): Self = this.set("NetworkInterfaceIds", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaceIds(value: NetworkInterfaceIds): Self = this.set("NetworkInterfaceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceIds: Self = this.set("NetworkInterfaceIds", js.undefined)
+    @scala.inline
+    def setOwnerId(value: AWSAccountId): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setResourceARN(value: ResourceARN): Self = this.set("ResourceARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceARN: Self = this.set("ResourceARN", js.undefined)
+    @scala.inline
+    def setStorageCapacity(value: StorageCapacity): Self = this.set("StorageCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageCapacity: Self = this.set("StorageCapacity", js.undefined)
+    @scala.inline
+    def setStorageType(value: StorageType): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: SubnetId*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: SubnetIds): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    @scala.inline
+    def setWindowsConfiguration(value: WindowsFileSystemConfiguration): Self = this.set("WindowsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowsConfiguration: Self = this.set("WindowsConfiguration", js.undefined)
+  }
+  
 }
 

@@ -25,11 +25,30 @@ trait SchemaGooglePrivacyDlpV2InfoTypeLimit extends js.Object {
 
 object SchemaGooglePrivacyDlpV2InfoTypeLimit {
   @scala.inline
-  def apply(infoType: SchemaGooglePrivacyDlpV2InfoType = null, maxFindings: js.UndefOr[Double] = js.undefined): SchemaGooglePrivacyDlpV2InfoTypeLimit = {
+  def apply(): SchemaGooglePrivacyDlpV2InfoTypeLimit = {
     val __obj = js.Dynamic.literal()
-    if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFindings)) __obj.updateDynamic("maxFindings")(maxFindings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InfoTypeLimit]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2InfoTypeLimitOps[Self <: SchemaGooglePrivacyDlpV2InfoTypeLimit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = this.set("infoType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoType: Self = this.set("infoType", js.undefined)
+    @scala.inline
+    def setMaxFindings(value: Double): Self = this.set("maxFindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFindings: Self = this.set("maxFindings", js.undefined)
+  }
+  
 }
 

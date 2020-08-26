@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type WebpackCDNInject = typings.webpack.mod.Plugin
+  type WebpackCDNInject = typings.std.Plugin
 }

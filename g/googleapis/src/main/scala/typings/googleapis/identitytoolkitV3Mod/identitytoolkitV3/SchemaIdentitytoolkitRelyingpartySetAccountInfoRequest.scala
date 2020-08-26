@@ -106,56 +106,120 @@ trait SchemaIdentitytoolkitRelyingpartySetAccountInfoRequest extends js.Object {
 
 object SchemaIdentitytoolkitRelyingpartySetAccountInfoRequest {
   @scala.inline
-  def apply(
-    captchaChallenge: String = null,
-    captchaResponse: String = null,
-    createdAt: String = null,
-    customAttributes: String = null,
-    delegatedProjectNumber: String = null,
-    deleteAttribute: js.Array[String] = null,
-    deleteProvider: js.Array[String] = null,
-    disableUser: js.UndefOr[Boolean] = js.undefined,
-    displayName: String = null,
-    email: String = null,
-    emailVerified: js.UndefOr[Boolean] = js.undefined,
-    idToken: String = null,
-    instanceId: String = null,
-    lastLoginAt: String = null,
-    localId: String = null,
-    oobCode: String = null,
-    password: String = null,
-    phoneNumber: String = null,
-    photoUrl: String = null,
-    provider: js.Array[String] = null,
-    returnSecureToken: js.UndefOr[Boolean] = js.undefined,
-    upgradeToFederatedLogin: js.UndefOr[Boolean] = js.undefined,
-    validSince: String = null
-  ): SchemaIdentitytoolkitRelyingpartySetAccountInfoRequest = {
+  def apply(): SchemaIdentitytoolkitRelyingpartySetAccountInfoRequest = {
     val __obj = js.Dynamic.literal()
-    if (captchaChallenge != null) __obj.updateDynamic("captchaChallenge")(captchaChallenge.asInstanceOf[js.Any])
-    if (captchaResponse != null) __obj.updateDynamic("captchaResponse")(captchaResponse.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes.asInstanceOf[js.Any])
-    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
-    if (deleteAttribute != null) __obj.updateDynamic("deleteAttribute")(deleteAttribute.asInstanceOf[js.Any])
-    if (deleteProvider != null) __obj.updateDynamic("deleteProvider")(deleteProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableUser)) __obj.updateDynamic("disableUser")(disableUser.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (lastLoginAt != null) __obj.updateDynamic("lastLoginAt")(lastLoginAt.asInstanceOf[js.Any])
-    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
-    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
-    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(upgradeToFederatedLogin)) __obj.updateDynamic("upgradeToFederatedLogin")(upgradeToFederatedLogin.get.asInstanceOf[js.Any])
-    if (validSince != null) __obj.updateDynamic("validSince")(validSince.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartySetAccountInfoRequest]
   }
+  @scala.inline
+  implicit class SchemaIdentitytoolkitRelyingpartySetAccountInfoRequestOps[Self <: SchemaIdentitytoolkitRelyingpartySetAccountInfoRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptchaChallenge(value: String): Self = this.set("captchaChallenge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptchaChallenge: Self = this.set("captchaChallenge", js.undefined)
+    @scala.inline
+    def setCaptchaResponse(value: String): Self = this.set("captchaResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptchaResponse: Self = this.set("captchaResponse", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: String): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setCustomAttributes(value: String): Self = this.set("customAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAttributes: Self = this.set("customAttributes", js.undefined)
+    @scala.inline
+    def setDelegatedProjectNumber(value: String): Self = this.set("delegatedProjectNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegatedProjectNumber: Self = this.set("delegatedProjectNumber", js.undefined)
+    @scala.inline
+    def setDeleteAttributeVarargs(value: String*): Self = this.set("deleteAttribute", js.Array(value :_*))
+    @scala.inline
+    def setDeleteAttribute(value: js.Array[String]): Self = this.set("deleteAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteAttribute: Self = this.set("deleteAttribute", js.undefined)
+    @scala.inline
+    def setDeleteProviderVarargs(value: String*): Self = this.set("deleteProvider", js.Array(value :_*))
+    @scala.inline
+    def setDeleteProvider(value: js.Array[String]): Self = this.set("deleteProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteProvider: Self = this.set("deleteProvider", js.undefined)
+    @scala.inline
+    def setDisableUser(value: Boolean): Self = this.set("disableUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableUser: Self = this.set("disableUser", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setEmailVerified(value: Boolean): Self = this.set("emailVerified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailVerified: Self = this.set("emailVerified", js.undefined)
+    @scala.inline
+    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setLastLoginAt(value: String): Self = this.set("lastLoginAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastLoginAt: Self = this.set("lastLoginAt", js.undefined)
+    @scala.inline
+    def setLocalId(value: String): Self = this.set("localId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalId: Self = this.set("localId", js.undefined)
+    @scala.inline
+    def setOobCode(value: String): Self = this.set("oobCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOobCode: Self = this.set("oobCode", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    @scala.inline
+    def setPhotoUrl(value: String): Self = this.set("photoUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhotoUrl: Self = this.set("photoUrl", js.undefined)
+    @scala.inline
+    def setProviderVarargs(value: String*): Self = this.set("provider", js.Array(value :_*))
+    @scala.inline
+    def setProvider(value: js.Array[String]): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setReturnSecureToken(value: Boolean): Self = this.set("returnSecureToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnSecureToken: Self = this.set("returnSecureToken", js.undefined)
+    @scala.inline
+    def setUpgradeToFederatedLogin(value: Boolean): Self = this.set("upgradeToFederatedLogin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpgradeToFederatedLogin: Self = this.set("upgradeToFederatedLogin", js.undefined)
+    @scala.inline
+    def setValidSince(value: String): Self = this.set("validSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidSince: Self = this.set("validSince", js.undefined)
+  }
+  
 }
 

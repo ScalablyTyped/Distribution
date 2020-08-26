@@ -5,120 +5,219 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Emoji extends js.Object {
-  var a: js.UndefOr[String] = js.undefined
-  var added_in: js.UndefOr[Double] = js.undefined
-  var b: js.UndefOr[String] = js.undefined
-  var c: js.UndefOr[String] = js.undefined
-  var d: js.UndefOr[Boolean] = js.undefined
-  var e: js.UndefOr[Boolean] = js.undefined
-  var emoticons: js.UndefOr[js.Array[String]] = js.undefined
-  var f: js.UndefOr[Boolean] = js.undefined
-  var g: js.UndefOr[Boolean] = js.undefined
-  var h: js.UndefOr[Boolean] = js.undefined
-  var has_img_apple: js.UndefOr[Boolean] = js.undefined
-  var has_img_emojione: js.UndefOr[Boolean] = js.undefined
-  var has_img_facebook: js.UndefOr[Boolean] = js.undefined
-  var has_img_google: js.UndefOr[Boolean] = js.undefined
-  var has_img_messenger: js.UndefOr[Boolean] = js.undefined
-  var has_img_twitter: js.UndefOr[Boolean] = js.undefined
-  var i: js.UndefOr[Boolean] = js.undefined
-  var j: js.UndefOr[js.Array[String]] = js.undefined
-  var k: js.UndefOr[js.Array[Double]] = js.undefined
-  var keywords: js.UndefOr[js.Array[String]] = js.undefined
-  var l: js.UndefOr[js.Array[String]] = js.undefined
-  var m: js.UndefOr[String] = js.undefined
-  var n: js.UndefOr[js.Array[String]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var non_qualified: js.UndefOr[String] = js.undefined
-  var o: js.UndefOr[Double] = js.undefined
-  var obsoleted_by: js.UndefOr[String] = js.undefined
-  var obsoletes: js.UndefOr[String] = js.undefined
-  var sheet: js.UndefOr[js.Array[Double]] = js.undefined
-  var sheet_x: js.UndefOr[Double] = js.undefined
-  var sheet_y: js.UndefOr[Double] = js.undefined
-  var short_names: js.UndefOr[js.Array[String]] = js.undefined
-  var skin_variations: js.UndefOr[StringDictionary[SkinVariation]] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var unified: js.UndefOr[String] = js.undefined
+  var a: js.UndefOr[String] = js.native
+  var added_in: js.UndefOr[Double] = js.native
+  var b: js.UndefOr[String] = js.native
+  var c: js.UndefOr[String] = js.native
+  var d: js.UndefOr[Boolean] = js.native
+  var e: js.UndefOr[Boolean] = js.native
+  var emoticons: js.UndefOr[js.Array[String]] = js.native
+  var f: js.UndefOr[Boolean] = js.native
+  var g: js.UndefOr[Boolean] = js.native
+  var h: js.UndefOr[Boolean] = js.native
+  var has_img_apple: js.UndefOr[Boolean] = js.native
+  var has_img_emojione: js.UndefOr[Boolean] = js.native
+  var has_img_facebook: js.UndefOr[Boolean] = js.native
+  var has_img_google: js.UndefOr[Boolean] = js.native
+  var has_img_messenger: js.UndefOr[Boolean] = js.native
+  var has_img_twitter: js.UndefOr[Boolean] = js.native
+  var i: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[js.Array[String]] = js.native
+  var k: js.UndefOr[js.Array[Double]] = js.native
+  var keywords: js.UndefOr[js.Array[String]] = js.native
+  var l: js.UndefOr[js.Array[String]] = js.native
+  var m: js.UndefOr[String] = js.native
+  var n: js.UndefOr[js.Array[String]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var non_qualified: js.UndefOr[String] = js.native
+  var o: js.UndefOr[Double] = js.native
+  var obsoleted_by: js.UndefOr[String] = js.native
+  var obsoletes: js.UndefOr[String] = js.native
+  var sheet: js.UndefOr[js.Array[Double]] = js.native
+  var sheet_x: js.UndefOr[Double] = js.native
+  var sheet_y: js.UndefOr[Double] = js.native
+  var short_names: js.UndefOr[js.Array[String]] = js.native
+  var skin_variations: js.UndefOr[StringDictionary[SkinVariation]] = js.native
+  var text: js.UndefOr[String] = js.native
+  var unified: js.UndefOr[String] = js.native
 }
 
 object Emoji {
   @scala.inline
-  def apply(
-    a: String = null,
-    added_in: js.UndefOr[Double] = js.undefined,
-    b: String = null,
-    c: String = null,
-    d: js.UndefOr[Boolean] = js.undefined,
-    e: js.UndefOr[Boolean] = js.undefined,
-    emoticons: js.Array[String] = null,
-    f: js.UndefOr[Boolean] = js.undefined,
-    g: js.UndefOr[Boolean] = js.undefined,
-    h: js.UndefOr[Boolean] = js.undefined,
-    has_img_apple: js.UndefOr[Boolean] = js.undefined,
-    has_img_emojione: js.UndefOr[Boolean] = js.undefined,
-    has_img_facebook: js.UndefOr[Boolean] = js.undefined,
-    has_img_google: js.UndefOr[Boolean] = js.undefined,
-    has_img_messenger: js.UndefOr[Boolean] = js.undefined,
-    has_img_twitter: js.UndefOr[Boolean] = js.undefined,
-    i: js.UndefOr[Boolean] = js.undefined,
-    j: js.Array[String] = null,
-    k: js.Array[Double] = null,
-    keywords: js.Array[String] = null,
-    l: js.Array[String] = null,
-    m: String = null,
-    n: js.Array[String] = null,
-    name: String = null,
-    non_qualified: String = null,
-    o: js.UndefOr[Double] = js.undefined,
-    obsoleted_by: String = null,
-    obsoletes: String = null,
-    sheet: js.Array[Double] = null,
-    sheet_x: js.UndefOr[Double] = js.undefined,
-    sheet_y: js.UndefOr[Double] = js.undefined,
-    short_names: js.Array[String] = null,
-    skin_variations: StringDictionary[SkinVariation] = null,
-    text: String = null,
-    unified: String = null
-  ): Emoji = {
+  def apply(): Emoji = {
     val __obj = js.Dynamic.literal()
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
-    if (!js.isUndefined(added_in)) __obj.updateDynamic("added_in")(added_in.get.asInstanceOf[js.Any])
-    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
-    if (!js.isUndefined(d)) __obj.updateDynamic("d")(d.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(e)) __obj.updateDynamic("e")(e.get.asInstanceOf[js.Any])
-    if (emoticons != null) __obj.updateDynamic("emoticons")(emoticons.asInstanceOf[js.Any])
-    if (!js.isUndefined(f)) __obj.updateDynamic("f")(f.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(g)) __obj.updateDynamic("g")(g.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(h)) __obj.updateDynamic("h")(h.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_img_apple)) __obj.updateDynamic("has_img_apple")(has_img_apple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_img_emojione)) __obj.updateDynamic("has_img_emojione")(has_img_emojione.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_img_facebook)) __obj.updateDynamic("has_img_facebook")(has_img_facebook.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_img_google)) __obj.updateDynamic("has_img_google")(has_img_google.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_img_messenger)) __obj.updateDynamic("has_img_messenger")(has_img_messenger.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_img_twitter)) __obj.updateDynamic("has_img_twitter")(has_img_twitter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(i)) __obj.updateDynamic("i")(i.get.asInstanceOf[js.Any])
-    if (j != null) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
-    if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (l != null) __obj.updateDynamic("l")(l.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (non_qualified != null) __obj.updateDynamic("non_qualified")(non_qualified.asInstanceOf[js.Any])
-    if (!js.isUndefined(o)) __obj.updateDynamic("o")(o.get.asInstanceOf[js.Any])
-    if (obsoleted_by != null) __obj.updateDynamic("obsoleted_by")(obsoleted_by.asInstanceOf[js.Any])
-    if (obsoletes != null) __obj.updateDynamic("obsoletes")(obsoletes.asInstanceOf[js.Any])
-    if (sheet != null) __obj.updateDynamic("sheet")(sheet.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheet_x)) __obj.updateDynamic("sheet_x")(sheet_x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheet_y)) __obj.updateDynamic("sheet_y")(sheet_y.get.asInstanceOf[js.Any])
-    if (short_names != null) __obj.updateDynamic("short_names")(short_names.asInstanceOf[js.Any])
-    if (skin_variations != null) __obj.updateDynamic("skin_variations")(skin_variations.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (unified != null) __obj.updateDynamic("unified")(unified.asInstanceOf[js.Any])
     __obj.asInstanceOf[Emoji]
   }
+  @scala.inline
+  implicit class EmojiOps[Self <: Emoji] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA(value: String): Self = this.set("a", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA: Self = this.set("a", js.undefined)
+    @scala.inline
+    def setAdded_in(value: Double): Self = this.set("added_in", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdded_in: Self = this.set("added_in", js.undefined)
+    @scala.inline
+    def setB(value: String): Self = this.set("b", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteB: Self = this.set("b", js.undefined)
+    @scala.inline
+    def setC(value: String): Self = this.set("c", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteC: Self = this.set("c", js.undefined)
+    @scala.inline
+    def setD(value: Boolean): Self = this.set("d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteD: Self = this.set("d", js.undefined)
+    @scala.inline
+    def setE(value: Boolean): Self = this.set("e", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteE: Self = this.set("e", js.undefined)
+    @scala.inline
+    def setEmoticonsVarargs(value: String*): Self = this.set("emoticons", js.Array(value :_*))
+    @scala.inline
+    def setEmoticons(value: js.Array[String]): Self = this.set("emoticons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmoticons: Self = this.set("emoticons", js.undefined)
+    @scala.inline
+    def setF(value: Boolean): Self = this.set("f", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF: Self = this.set("f", js.undefined)
+    @scala.inline
+    def setG(value: Boolean): Self = this.set("g", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteG: Self = this.set("g", js.undefined)
+    @scala.inline
+    def setH(value: Boolean): Self = this.set("h", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH: Self = this.set("h", js.undefined)
+    @scala.inline
+    def setHas_img_apple(value: Boolean): Self = this.set("has_img_apple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHas_img_apple: Self = this.set("has_img_apple", js.undefined)
+    @scala.inline
+    def setHas_img_emojione(value: Boolean): Self = this.set("has_img_emojione", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHas_img_emojione: Self = this.set("has_img_emojione", js.undefined)
+    @scala.inline
+    def setHas_img_facebook(value: Boolean): Self = this.set("has_img_facebook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHas_img_facebook: Self = this.set("has_img_facebook", js.undefined)
+    @scala.inline
+    def setHas_img_google(value: Boolean): Self = this.set("has_img_google", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHas_img_google: Self = this.set("has_img_google", js.undefined)
+    @scala.inline
+    def setHas_img_messenger(value: Boolean): Self = this.set("has_img_messenger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHas_img_messenger: Self = this.set("has_img_messenger", js.undefined)
+    @scala.inline
+    def setHas_img_twitter(value: Boolean): Self = this.set("has_img_twitter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHas_img_twitter: Self = this.set("has_img_twitter", js.undefined)
+    @scala.inline
+    def setI(value: Boolean): Self = this.set("i", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI: Self = this.set("i", js.undefined)
+    @scala.inline
+    def setJVarargs(value: String*): Self = this.set("j", js.Array(value :_*))
+    @scala.inline
+    def setJ(value: js.Array[String]): Self = this.set("j", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJ: Self = this.set("j", js.undefined)
+    @scala.inline
+    def setKVarargs(value: Double*): Self = this.set("k", js.Array(value :_*))
+    @scala.inline
+    def setK(value: js.Array[Double]): Self = this.set("k", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteK: Self = this.set("k", js.undefined)
+    @scala.inline
+    def setKeywordsVarargs(value: String*): Self = this.set("keywords", js.Array(value :_*))
+    @scala.inline
+    def setKeywords(value: js.Array[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    @scala.inline
+    def setLVarargs(value: String*): Self = this.set("l", js.Array(value :_*))
+    @scala.inline
+    def setL(value: js.Array[String]): Self = this.set("l", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteL: Self = this.set("l", js.undefined)
+    @scala.inline
+    def setM(value: String): Self = this.set("m", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteM: Self = this.set("m", js.undefined)
+    @scala.inline
+    def setNVarargs(value: String*): Self = this.set("n", js.Array(value :_*))
+    @scala.inline
+    def setN(value: js.Array[String]): Self = this.set("n", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteN: Self = this.set("n", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNon_qualified(value: String): Self = this.set("non_qualified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNon_qualified: Self = this.set("non_qualified", js.undefined)
+    @scala.inline
+    def setO(value: Double): Self = this.set("o", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteO: Self = this.set("o", js.undefined)
+    @scala.inline
+    def setObsoleted_by(value: String): Self = this.set("obsoleted_by", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObsoleted_by: Self = this.set("obsoleted_by", js.undefined)
+    @scala.inline
+    def setObsoletes(value: String): Self = this.set("obsoletes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObsoletes: Self = this.set("obsoletes", js.undefined)
+    @scala.inline
+    def setSheetVarargs(value: Double*): Self = this.set("sheet", js.Array(value :_*))
+    @scala.inline
+    def setSheet(value: js.Array[Double]): Self = this.set("sheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheet: Self = this.set("sheet", js.undefined)
+    @scala.inline
+    def setSheet_x(value: Double): Self = this.set("sheet_x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheet_x: Self = this.set("sheet_x", js.undefined)
+    @scala.inline
+    def setSheet_y(value: Double): Self = this.set("sheet_y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheet_y: Self = this.set("sheet_y", js.undefined)
+    @scala.inline
+    def setShort_namesVarargs(value: String*): Self = this.set("short_names", js.Array(value :_*))
+    @scala.inline
+    def setShort_names(value: js.Array[String]): Self = this.set("short_names", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShort_names: Self = this.set("short_names", js.undefined)
+    @scala.inline
+    def setSkin_variations(value: StringDictionary[SkinVariation]): Self = this.set("skin_variations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkin_variations: Self = this.set("skin_variations", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setUnified(value: String): Self = this.set("unified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnified: Self = this.set("unified", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ Typings are for version 4.1
 | ------------------ | :-------------: |
 | Full name          | zopflipng-bin |
 | Keywords           | imagemin, compress, image, img, minify, optimize, png, zopfli, zopflipng |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 15 |
-| # downloads        | 324992 |
+| # downloads        | 343491 |
 | # stars            | 1 |
 
 ## Links

@@ -20,14 +20,15 @@ class Listener protected () extends CustomResource {
     * @param args The arguments to use to populate this resource's properties.
     * @param opts A bag of options that control this resource's behavior.
     */
+  /** @deprecated aws.applicationloadbalancing.Listener has been deprecated in favor of aws.alb.Listener */
   def this(name: String, args: ListenerArgs) = this()
   def this(name: String, args: ListenerArgs, opts: CustomResourceOptions) = this()
   /**
-    * The ARN of the listener (matches `id`)
+    * The Amazon Resource Name (ARN) of the target group.
     */
   val arn: Output_[String] = js.native
   /**
-    * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the [`aws.lb.ListenerCertificate` resource](https://www.terraform.io/docs/providers/aws/r/lb_listener_certificate.html).
+    * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the `aws.lb.ListenerCertificate` resource.
     */
   val certificateArn: Output_[js.UndefOr[String]] = js.native
   /**
@@ -63,8 +64,10 @@ object Listener extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Listener = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Listener = js.native
   def get(name: String, id: Input[ID], state: ListenerState): Listener = js.native
   def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): Listener = js.native
   /**

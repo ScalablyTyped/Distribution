@@ -49,6 +49,7 @@ trait HashRing extends js.Object {
     * @param unique Don't return duplicate servers. Defaults to true.
     */
   def range(key: String): js.Array[String] = js.native
+  def range(key: String, size: js.UndefOr[scala.Nothing], unique: Boolean): js.Array[String] = js.native
   def range(key: String, size: Double): js.Array[String] = js.native
   def range(key: String, size: Double, unique: Boolean): js.Array[String] = js.native
   /**

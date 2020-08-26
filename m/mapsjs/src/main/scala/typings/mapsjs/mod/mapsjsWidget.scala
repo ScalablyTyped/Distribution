@@ -32,6 +32,13 @@ trait mapsjsWidget extends js.Object {
     element: HTMLElement,
     mapUnitsX: Double,
     mapUnitsY: Double,
+    addAction: js.UndefOr[scala.Nothing],
+    dragOptions: DownAction
+  ): Unit = js.native
+  def addFixedContentElement(
+    element: HTMLElement,
+    mapUnitsX: Double,
+    mapUnitsY: Double,
     addAction: js.Function1[/* ele */ HTMLElement, Unit]
   ): Unit = js.native
   def addFixedContentElement(
@@ -55,6 +62,12 @@ trait mapsjsWidget extends js.Object {
     * @returns {element} The SVG element which was added to the DOM.
     */
   def addPathGeometry(styledGeom: styledGeometry, key: String): SVGElement = js.native
+  def addPathGeometry(
+    styledGeom: styledGeometry,
+    key: String,
+    addAction: js.UndefOr[scala.Nothing],
+    removeAction: js.Function1[/* svg */ SVGElement, Unit]
+  ): SVGElement = js.native
   def addPathGeometry(styledGeom: styledGeometry, key: String, addAction: js.Function1[/* svg */ SVGElement, Unit]): SVGElement = js.native
   def addPathGeometry(
     styledGeom: styledGeometry,
@@ -111,6 +124,12 @@ trait mapsjsWidget extends js.Object {
     * completes with signature completeAction().
     */
   def flyTo(center: point, zl: Double): Unit = js.native
+  def flyTo(
+    center: point,
+    zl: Double,
+    durationMs: js.UndefOr[scala.Nothing],
+    completeAction: js.Function0[Unit]
+  ): Unit = js.native
   def flyTo(center: point, zl: Double, durationMs: Double): Unit = js.native
   def flyTo(center: point, zl: Double, durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
   /**
@@ -326,6 +345,7 @@ trait mapsjsWidget extends js.Object {
     * @param {function} [completeAction] Callback to perform on animaton complete.
     */
   def setMapCenterAnimate(center: point): Unit = js.native
+  def setMapCenterAnimate(center: point, durationMs: js.UndefOr[scala.Nothing], completeAction: js.Function0[Unit]): Unit = js.native
   def setMapCenterAnimate(center: point, durationMs: Double): Unit = js.native
   def setMapCenterAnimate(center: point, durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
   /**
@@ -335,6 +355,7 @@ trait mapsjsWidget extends js.Object {
     * @param {function} [completeAction] Callback to perform on animaton complete.
     */
   def setMapCenterToGeolocationAnimate(): Unit = js.native
+  def setMapCenterToGeolocationAnimate(durationMs: js.UndefOr[scala.Nothing], completeAction: js.Function0[Unit]): Unit = js.native
   def setMapCenterToGeolocationAnimate(durationMs: Double): Unit = js.native
   def setMapCenterToGeolocationAnimate(durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
   /**
@@ -379,6 +400,7 @@ trait mapsjsWidget extends js.Object {
     * completes with signature completeAction().
     */
   def setZoomLevelAnimate(zl: Double): Unit = js.native
+  def setZoomLevelAnimate(zl: Double, durationMs: js.UndefOr[scala.Nothing], completeAction: js.Function0[Unit]): Unit = js.native
   def setZoomLevelAnimate(zl: Double, durationMs: Double): Unit = js.native
   def setZoomLevelAnimate(zl: Double, durationMs: Double, completeAction: js.Function0[Unit]): Unit = js.native
   /**

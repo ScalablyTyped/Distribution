@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.linguistic2.ConversionPropertyType
   * @since OOo 2.0
   */
+@js.native
 trait XConversionPropertyType extends XInterface {
   /**
     * returns the property type for the specified entry.
@@ -23,7 +24,7 @@ trait XConversionPropertyType extends XInterface {
     * @param aRightText the right text of the dictionary entry.
     * @returns returns the property type for the entry with the specified left text.
     */
-  def getPropertyType(aLeftText: String, aRightText: String): Double
+  def getPropertyType(aLeftText: String, aRightText: String): Double = js.native
   /**
     * sets the property type for the specified entry.
     *
@@ -32,7 +33,7 @@ trait XConversionPropertyType extends XInterface {
     * @param aRightText the right text of the dictionary entry.
     * @param nPropertyType the property type to be set for the entry
     */
-  def setPropertyType(aLeftText: String, aRightText: String, nPropertyType: Double): Unit
+  def setPropertyType(aLeftText: String, aRightText: String, nPropertyType: Double): Unit = js.native
 }
 
 object XConversionPropertyType {
@@ -47,5 +48,22 @@ object XConversionPropertyType {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getPropertyType = js.Any.fromFunction2(getPropertyType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setPropertyType = js.Any.fromFunction3(setPropertyType))
     __obj.asInstanceOf[XConversionPropertyType]
   }
+  @scala.inline
+  implicit class XConversionPropertyTypeOps[Self <: XConversionPropertyType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetPropertyType(value: (String, String) => Double): Self = this.set("getPropertyType", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetPropertyType(value: (String, String, Double) => Unit): Self = this.set("setPropertyType", js.Any.fromFunction3(value))
+  }
+  
 }
 

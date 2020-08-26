@@ -12,7 +12,7 @@ Fast bloom filter in JavaScript.
 | Keywords           | bloom filter, probabilistic data structure |
 | # releases         | 3 |
 | # dependents       | 22 |
-| # downloads        | 146567 |
+| # downloads        | 149270 |
 | # stars            | 7 |
 
 ## Links

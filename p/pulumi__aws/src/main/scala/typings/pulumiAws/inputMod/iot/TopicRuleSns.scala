@@ -23,10 +23,30 @@ trait TopicRuleSns extends js.Object {
 
 object TopicRuleSns {
   @scala.inline
-  def apply(roleArn: Input[String], targetArn: Input[String], messageFormat: Input[String] = null): TopicRuleSns = {
+  def apply(roleArn: Input[String], targetArn: Input[String]): TopicRuleSns = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], targetArn = targetArn.asInstanceOf[js.Any])
-    if (messageFormat != null) __obj.updateDynamic("messageFormat")(messageFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleSns]
   }
+  @scala.inline
+  implicit class TopicRuleSnsOps[Self <: TopicRuleSns] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetArn(value: Input[String]): Self = this.set("targetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageFormat(value: Input[String]): Self = this.set("messageFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageFormat: Self = this.set("messageFormat", js.undefined)
+  }
+  
 }
 

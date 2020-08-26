@@ -11,6 +11,10 @@ trait CurrentInstance extends js.Object {
     */
   var CurrencyCode: js.UndefOr[GenericString] = js.native
   /**
+    * The name you've given an instance. This field will show as blank if you haven't given the instance a name.
+    */
+  var InstanceName: js.UndefOr[GenericString] = js.native
+  /**
     *  Current On Demand cost of operating this instance on a monthly basis.
     */
   var MonthlyCost: js.UndefOr[GenericString] = js.native
@@ -50,30 +54,68 @@ trait CurrentInstance extends js.Object {
 
 object CurrentInstance {
   @scala.inline
-  def apply(
-    CurrencyCode: GenericString = null,
-    MonthlyCost: GenericString = null,
-    OnDemandHoursInLookbackPeriod: GenericString = null,
-    ReservationCoveredHoursInLookbackPeriod: GenericString = null,
-    ResourceDetails: ResourceDetails = null,
-    ResourceId: GenericString = null,
-    ResourceUtilization: ResourceUtilization = null,
-    SavingsPlansCoveredHoursInLookbackPeriod: GenericString = null,
-    Tags: TagValuesList = null,
-    TotalRunningHoursInLookbackPeriod: GenericString = null
-  ): CurrentInstance = {
+  def apply(): CurrentInstance = {
     val __obj = js.Dynamic.literal()
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (MonthlyCost != null) __obj.updateDynamic("MonthlyCost")(MonthlyCost.asInstanceOf[js.Any])
-    if (OnDemandHoursInLookbackPeriod != null) __obj.updateDynamic("OnDemandHoursInLookbackPeriod")(OnDemandHoursInLookbackPeriod.asInstanceOf[js.Any])
-    if (ReservationCoveredHoursInLookbackPeriod != null) __obj.updateDynamic("ReservationCoveredHoursInLookbackPeriod")(ReservationCoveredHoursInLookbackPeriod.asInstanceOf[js.Any])
-    if (ResourceDetails != null) __obj.updateDynamic("ResourceDetails")(ResourceDetails.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (ResourceUtilization != null) __obj.updateDynamic("ResourceUtilization")(ResourceUtilization.asInstanceOf[js.Any])
-    if (SavingsPlansCoveredHoursInLookbackPeriod != null) __obj.updateDynamic("SavingsPlansCoveredHoursInLookbackPeriod")(SavingsPlansCoveredHoursInLookbackPeriod.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TotalRunningHoursInLookbackPeriod != null) __obj.updateDynamic("TotalRunningHoursInLookbackPeriod")(TotalRunningHoursInLookbackPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentInstance]
   }
+  @scala.inline
+  implicit class CurrentInstanceOps[Self <: CurrentInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrencyCode(value: GenericString): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setInstanceName(value: GenericString): Self = this.set("InstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceName: Self = this.set("InstanceName", js.undefined)
+    @scala.inline
+    def setMonthlyCost(value: GenericString): Self = this.set("MonthlyCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthlyCost: Self = this.set("MonthlyCost", js.undefined)
+    @scala.inline
+    def setOnDemandHoursInLookbackPeriod(value: GenericString): Self = this.set("OnDemandHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDemandHoursInLookbackPeriod: Self = this.set("OnDemandHoursInLookbackPeriod", js.undefined)
+    @scala.inline
+    def setReservationCoveredHoursInLookbackPeriod(value: GenericString): Self = this.set("ReservationCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservationCoveredHoursInLookbackPeriod: Self = this.set("ReservationCoveredHoursInLookbackPeriod", js.undefined)
+    @scala.inline
+    def setResourceDetails(value: ResourceDetails): Self = this.set("ResourceDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceDetails: Self = this.set("ResourceDetails", js.undefined)
+    @scala.inline
+    def setResourceId(value: GenericString): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setResourceUtilization(value: ResourceUtilization): Self = this.set("ResourceUtilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceUtilization: Self = this.set("ResourceUtilization", js.undefined)
+    @scala.inline
+    def setSavingsPlansCoveredHoursInLookbackPeriod(value: GenericString): Self = this.set("SavingsPlansCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavingsPlansCoveredHoursInLookbackPeriod: Self = this.set("SavingsPlansCoveredHoursInLookbackPeriod", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: TagValues*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagValuesList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTotalRunningHoursInLookbackPeriod(value: GenericString): Self = this.set("TotalRunningHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalRunningHoursInLookbackPeriod: Self = this.set("TotalRunningHoursInLookbackPeriod", js.undefined)
+  }
+  
 }
 

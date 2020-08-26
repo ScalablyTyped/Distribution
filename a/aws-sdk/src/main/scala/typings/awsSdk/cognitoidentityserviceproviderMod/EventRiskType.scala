@@ -22,16 +22,34 @@ trait EventRiskType extends js.Object {
 
 object EventRiskType {
   @scala.inline
-  def apply(
-    CompromisedCredentialsDetected: js.UndefOr[WrappedBooleanType] = js.undefined,
-    RiskDecision: RiskDecisionType = null,
-    RiskLevel: RiskLevelType = null
-  ): EventRiskType = {
+  def apply(): EventRiskType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CompromisedCredentialsDetected)) __obj.updateDynamic("CompromisedCredentialsDetected")(CompromisedCredentialsDetected.get.asInstanceOf[js.Any])
-    if (RiskDecision != null) __obj.updateDynamic("RiskDecision")(RiskDecision.asInstanceOf[js.Any])
-    if (RiskLevel != null) __obj.updateDynamic("RiskLevel")(RiskLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventRiskType]
   }
+  @scala.inline
+  implicit class EventRiskTypeOps[Self <: EventRiskType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompromisedCredentialsDetected(value: WrappedBooleanType): Self = this.set("CompromisedCredentialsDetected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompromisedCredentialsDetected: Self = this.set("CompromisedCredentialsDetected", js.undefined)
+    @scala.inline
+    def setRiskDecision(value: RiskDecisionType): Self = this.set("RiskDecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskDecision: Self = this.set("RiskDecision", js.undefined)
+    @scala.inline
+    def setRiskLevel(value: RiskLevelType): Self = this.set("RiskLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskLevel: Self = this.set("RiskLevel", js.undefined)
+  }
+  
 }
 

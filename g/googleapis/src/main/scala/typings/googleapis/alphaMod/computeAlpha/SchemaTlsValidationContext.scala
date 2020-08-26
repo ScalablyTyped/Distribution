@@ -28,12 +28,34 @@ trait SchemaTlsValidationContext extends js.Object {
 
 object SchemaTlsValidationContext {
   @scala.inline
-  def apply(certificatePath: String = null, sdsConfig: SchemaSdsConfig = null, validationSource: String = null): SchemaTlsValidationContext = {
+  def apply(): SchemaTlsValidationContext = {
     val __obj = js.Dynamic.literal()
-    if (certificatePath != null) __obj.updateDynamic("certificatePath")(certificatePath.asInstanceOf[js.Any])
-    if (sdsConfig != null) __obj.updateDynamic("sdsConfig")(sdsConfig.asInstanceOf[js.Any])
-    if (validationSource != null) __obj.updateDynamic("validationSource")(validationSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTlsValidationContext]
   }
+  @scala.inline
+  implicit class SchemaTlsValidationContextOps[Self <: SchemaTlsValidationContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificatePath(value: String): Self = this.set("certificatePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatePath: Self = this.set("certificatePath", js.undefined)
+    @scala.inline
+    def setSdsConfig(value: SchemaSdsConfig): Self = this.set("sdsConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSdsConfig: Self = this.set("sdsConfig", js.undefined)
+    @scala.inline
+    def setValidationSource(value: String): Self = this.set("validationSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationSource: Self = this.set("validationSource", js.undefined)
+  }
+  
 }
 

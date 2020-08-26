@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object bufferReadIntMod extends js.Object {
   def default(buffer: Buffer): Double = js.native
+  def default(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
   def default(buffer: Buffer, offset: Double): Double = js.native
   def default(buffer: Buffer, offset: Double, length: Double): Double = js.native
 }

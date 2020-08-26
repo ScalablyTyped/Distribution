@@ -26,18 +26,38 @@ trait AppLimits extends js.Object {
 
 object AppLimits {
   @scala.inline
-  def apply(
-    daily: js.UndefOr[Double] = js.undefined,
-    maximumDuration: js.UndefOr[Double] = js.undefined,
-    messagesPerSecond: js.UndefOr[Double] = js.undefined,
-    total: js.UndefOr[Double] = js.undefined
-  ): AppLimits = {
+  def apply(): AppLimits = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(daily)) __obj.updateDynamic("daily")(daily.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumDuration)) __obj.updateDynamic("maximumDuration")(maximumDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(messagesPerSecond)) __obj.updateDynamic("messagesPerSecond")(messagesPerSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppLimits]
   }
+  @scala.inline
+  implicit class AppLimitsOps[Self <: AppLimits] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDaily(value: Double): Self = this.set("daily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDaily: Self = this.set("daily", js.undefined)
+    @scala.inline
+    def setMaximumDuration(value: Double): Self = this.set("maximumDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumDuration: Self = this.set("maximumDuration", js.undefined)
+    @scala.inline
+    def setMessagesPerSecond(value: Double): Self = this.set("messagesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagesPerSecond: Self = this.set("messagesPerSecond", js.undefined)
+    @scala.inline
+    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("total", js.undefined)
+  }
+  
 }
 

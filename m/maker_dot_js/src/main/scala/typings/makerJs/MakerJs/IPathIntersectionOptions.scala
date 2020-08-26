@@ -7,31 +7,44 @@ import scala.scalajs.js.annotation._
 /**
   * Options to pass to path.intersection()
   */
+@js.native
 trait IPathIntersectionOptions extends IPathIntersectionBaseOptions {
   /**
     * Optional boolean to only return deep intersections, i.e. not on an end point or tangent.
     */
-  var path1Offset: js.UndefOr[IPoint] = js.undefined
+  var path1Offset: js.UndefOr[IPoint] = js.native
   /**
     * Optional output variable which will be set to true if the paths are overlapped.
     */
-  var path2Offset: js.UndefOr[IPoint] = js.undefined
+  var path2Offset: js.UndefOr[IPoint] = js.native
 }
 
 object IPathIntersectionOptions {
   @scala.inline
-  def apply(
-    excludeTangents: js.UndefOr[Boolean] = js.undefined,
-    out_AreOverlapped: js.UndefOr[Boolean] = js.undefined,
-    path1Offset: IPoint = null,
-    path2Offset: IPoint = null
-  ): IPathIntersectionOptions = {
+  def apply(): IPathIntersectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeTangents)) __obj.updateDynamic("excludeTangents")(excludeTangents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(out_AreOverlapped)) __obj.updateDynamic("out_AreOverlapped")(out_AreOverlapped.get.asInstanceOf[js.Any])
-    if (path1Offset != null) __obj.updateDynamic("path1Offset")(path1Offset.asInstanceOf[js.Any])
-    if (path2Offset != null) __obj.updateDynamic("path2Offset")(path2Offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathIntersectionOptions]
   }
+  @scala.inline
+  implicit class IPathIntersectionOptionsOps[Self <: IPathIntersectionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath1Offset(value: IPoint): Self = this.set("path1Offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath1Offset: Self = this.set("path1Offset", js.undefined)
+    @scala.inline
+    def setPath2Offset(value: IPoint): Self = this.set("path2Offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath2Offset: Self = this.set("path2Offset", js.undefined)
+  }
+  
 }
 

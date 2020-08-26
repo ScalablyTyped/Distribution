@@ -53,20 +53,46 @@ trait SchemaEndpoint extends js.Object {
 
 object SchemaEndpoint {
   @scala.inline
-  def apply(
-    aliases: js.Array[String] = null,
-    allowCors: js.UndefOr[Boolean] = js.undefined,
-    features: js.Array[String] = null,
-    name: String = null,
-    target: String = null
-  ): SchemaEndpoint = {
+  def apply(): SchemaEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCors)) __obj.updateDynamic("allowCors")(allowCors.get.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEndpoint]
   }
+  @scala.inline
+  implicit class SchemaEndpointOps[Self <: SchemaEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setAllowCors(value: Boolean): Self = this.set("allowCors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCors: Self = this.set("allowCors", js.undefined)
+    @scala.inline
+    def setFeaturesVarargs(value: String*): Self = this.set("features", js.Array(value :_*))
+    @scala.inline
+    def setFeatures(value: js.Array[String]): Self = this.set("features", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatures: Self = this.set("features", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

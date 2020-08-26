@@ -19,11 +19,30 @@ trait VpnConnectionRouteState extends js.Object {
 
 object VpnConnectionRouteState {
   @scala.inline
-  def apply(destinationCidrBlock: Input[String] = null, vpnConnectionId: Input[String] = null): VpnConnectionRouteState = {
+  def apply(): VpnConnectionRouteState = {
     val __obj = js.Dynamic.literal()
-    if (destinationCidrBlock != null) __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock.asInstanceOf[js.Any])
-    if (vpnConnectionId != null) __obj.updateDynamic("vpnConnectionId")(vpnConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpnConnectionRouteState]
   }
+  @scala.inline
+  implicit class VpnConnectionRouteStateOps[Self <: VpnConnectionRouteState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCidrBlock(value: Input[String]): Self = this.set("destinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCidrBlock: Self = this.set("destinationCidrBlock", js.undefined)
+    @scala.inline
+    def setVpnConnectionId(value: Input[String]): Self = this.set("vpnConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnConnectionId: Self = this.set("vpnConnectionId", js.undefined)
+  }
+  
 }
 

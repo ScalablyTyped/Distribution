@@ -4,10 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.animation.AccelerateDecelerateInterpolator")
 @js.native
-class AccelerateDecelerateInterpolator () extends Interpolator {
-  /* CompleteClass */
-  override def getInterpolation(input: Double): Double = js.native
+trait AccelerateDecelerateInterpolator extends Interpolator
+
+object AccelerateDecelerateInterpolator {
+  @scala.inline
+  def apply(getInterpolation: Double => Double): AccelerateDecelerateInterpolator = {
+    val __obj = js.Dynamic.literal(getInterpolation = js.Any.fromFunction1(getInterpolation))
+    __obj.asInstanceOf[AccelerateDecelerateInterpolator]
+  }
 }
 

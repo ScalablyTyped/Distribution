@@ -14,10 +14,28 @@ trait ModifyListenerOutput extends js.Object {
 
 object ModifyListenerOutput {
   @scala.inline
-  def apply(Listeners: Listeners = null): ModifyListenerOutput = {
+  def apply(): ModifyListenerOutput = {
     val __obj = js.Dynamic.literal()
-    if (Listeners != null) __obj.updateDynamic("Listeners")(Listeners.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyListenerOutput]
   }
+  @scala.inline
+  implicit class ModifyListenerOutputOps[Self <: ModifyListenerOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListenersVarargs(value: Listener*): Self = this.set("Listeners", js.Array(value :_*))
+    @scala.inline
+    def setListeners(value: Listeners): Self = this.set("Listeners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListeners: Self = this.set("Listeners", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Map color names to HEX color values.
 | Keywords           | color, colour, names, css, hex, rgb, convert |
 | # releases         | 1 |
 | # dependents       | 32 |
-| # downloads        | 50240042 |
+| # downloads        | 52787110 |
 | # stars            | 1 |
 
 ## Links

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(): History = js.native
+  def apply(file: js.UndefOr[scala.Nothing], max: Double): History = js.native
   def apply(file: String): History = js.native
   def apply(file: String, max: Double): History = js.native
 }

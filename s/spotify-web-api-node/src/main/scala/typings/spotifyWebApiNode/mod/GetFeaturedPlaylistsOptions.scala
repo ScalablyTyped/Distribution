@@ -4,28 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetFeaturedPlaylistsOptions
   extends PaginationOptions
      with LocaleOptions {
-  var timestamp: js.UndefOr[String] = js.undefined
+  var timestamp: js.UndefOr[String] = js.native
 }
 
 object GetFeaturedPlaylistsOptions {
   @scala.inline
-  def apply(
-    country: String = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    locale: String = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    timestamp: String = null
-  ): GetFeaturedPlaylistsOptions = {
+  def apply(): GetFeaturedPlaylistsOptions = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFeaturedPlaylistsOptions]
   }
+  @scala.inline
+  implicit class GetFeaturedPlaylistsOptionsOps[Self <: GetFeaturedPlaylistsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

@@ -78,32 +78,70 @@ trait SchemaDebuggee extends js.Object {
 
 object SchemaDebuggee {
   @scala.inline
-  def apply(
-    agentVersion: String = null,
-    description: String = null,
-    extSourceContexts: js.Array[SchemaExtendedSourceContext] = null,
-    id: String = null,
-    isDisabled: js.UndefOr[Boolean] = js.undefined,
-    isInactive: js.UndefOr[Boolean] = js.undefined,
-    labels: StringDictionary[String] = null,
-    project: String = null,
-    sourceContexts: js.Array[SchemaSourceContext] = null,
-    status: SchemaStatusMessage = null,
-    uniquifier: String = null
-  ): SchemaDebuggee = {
+  def apply(): SchemaDebuggee = {
     val __obj = js.Dynamic.literal()
-    if (agentVersion != null) __obj.updateDynamic("agentVersion")(agentVersion.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extSourceContexts != null) __obj.updateDynamic("extSourceContexts")(extSourceContexts.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInactive)) __obj.updateDynamic("isInactive")(isInactive.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (sourceContexts != null) __obj.updateDynamic("sourceContexts")(sourceContexts.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (uniquifier != null) __obj.updateDynamic("uniquifier")(uniquifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDebuggee]
   }
+  @scala.inline
+  implicit class SchemaDebuggeeOps[Self <: SchemaDebuggee] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentVersion(value: String): Self = this.set("agentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentVersion: Self = this.set("agentVersion", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExtSourceContextsVarargs(value: SchemaExtendedSourceContext*): Self = this.set("extSourceContexts", js.Array(value :_*))
+    @scala.inline
+    def setExtSourceContexts(value: js.Array[SchemaExtendedSourceContext]): Self = this.set("extSourceContexts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtSourceContexts: Self = this.set("extSourceContexts", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDisabled: Self = this.set("isDisabled", js.undefined)
+    @scala.inline
+    def setIsInactive(value: Boolean): Self = this.set("isInactive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsInactive: Self = this.set("isInactive", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProject: Self = this.set("project", js.undefined)
+    @scala.inline
+    def setSourceContextsVarargs(value: SchemaSourceContext*): Self = this.set("sourceContexts", js.Array(value :_*))
+    @scala.inline
+    def setSourceContexts(value: js.Array[SchemaSourceContext]): Self = this.set("sourceContexts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceContexts: Self = this.set("sourceContexts", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaStatusMessage): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUniquifier(value: String): Self = this.set("uniquifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniquifier: Self = this.set("uniquifier", js.undefined)
+  }
+  
 }
 

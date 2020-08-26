@@ -9,37 +9,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Accuracy extends js.Object {
-  var accuracy: js.UndefOr[Micros] = js.undefined
-  var genTime: js.UndefOr[StringParam | HexParam | DateParam | String] = js.undefined
-  var messageImprint: HashMsgHex
-  var nonce: js.UndefOr[IntegerParam | BigIntegerParam | HexParam | Double] = js.undefined
-  var ordering: js.UndefOr[Boolean] = js.undefined
-  var policy: String
-  var serialNumber: js.UndefOr[IntegerParam | BigIntegerParam | HexParam | Double] = js.undefined
-  var tsa: js.UndefOr[StringParam] = js.undefined
+  var accuracy: js.UndefOr[Micros] = js.native
+  var genTime: js.UndefOr[StringParam | HexParam | DateParam | String] = js.native
+  var messageImprint: HashMsgHex = js.native
+  var nonce: js.UndefOr[IntegerParam | BigIntegerParam | HexParam | Double] = js.native
+  var ordering: js.UndefOr[Boolean] = js.native
+  var policy: String = js.native
+  var serialNumber: js.UndefOr[IntegerParam | BigIntegerParam | HexParam | Double] = js.native
+  var tsa: js.UndefOr[StringParam] = js.native
 }
 
 object Accuracy {
   @scala.inline
-  def apply(
-    messageImprint: HashMsgHex,
-    policy: String,
-    accuracy: Micros = null,
-    genTime: StringParam | HexParam | DateParam | String = null,
-    nonce: IntegerParam | BigIntegerParam | HexParam | Double = null,
-    ordering: js.UndefOr[Boolean] = js.undefined,
-    serialNumber: IntegerParam | BigIntegerParam | HexParam | Double = null,
-    tsa: StringParam = null
-  ): Accuracy = {
+  def apply(messageImprint: HashMsgHex, policy: String): Accuracy = {
     val __obj = js.Dynamic.literal(messageImprint = messageImprint.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (genTime != null) __obj.updateDynamic("genTime")(genTime.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordering)) __obj.updateDynamic("ordering")(ordering.get.asInstanceOf[js.Any])
-    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
-    if (tsa != null) __obj.updateDynamic("tsa")(tsa.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accuracy]
   }
+  @scala.inline
+  implicit class AccuracyOps[Self <: Accuracy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessageImprint(value: HashMsgHex): Self = this.set("messageImprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicy(value: String): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccuracy(value: Micros): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    @scala.inline
+    def setGenTime(value: StringParam | HexParam | DateParam | String): Self = this.set("genTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenTime: Self = this.set("genTime", js.undefined)
+    @scala.inline
+    def setNonce(value: IntegerParam | BigIntegerParam | HexParam | Double): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("nonce", js.undefined)
+    @scala.inline
+    def setOrdering(value: Boolean): Self = this.set("ordering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrdering: Self = this.set("ordering", js.undefined)
+    @scala.inline
+    def setSerialNumber(value: IntegerParam | BigIntegerParam | HexParam | Double): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
+    @scala.inline
+    def setTsa(value: StringParam): Self = this.set("tsa", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTsa: Self = this.set("tsa", js.undefined)
+  }
+  
 }
 

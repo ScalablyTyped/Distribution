@@ -13,6 +13,18 @@ object nivoLineStrings {
   sealed trait axes extends LineLayerType
   
   @js.native
+  sealed trait basis extends js.Object
+  
+  @js.native
+  sealed trait cardinal extends js.Object
+  
+  @js.native
+  sealed trait catmullRom extends js.Object
+  
+  @js.native
+  sealed trait crosshair extends LineLayerType
+  
+  @js.native
   sealed trait grid extends LineLayerType
   
   @js.native
@@ -64,6 +76,14 @@ object nivoLineStrings {
   def areas: areas = "areas".asInstanceOf[areas]
   @scala.inline
   def axes: axes = "axes".asInstanceOf[axes]
+  @scala.inline
+  def basis: basis = "basis".asInstanceOf[basis]
+  @scala.inline
+  def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
+  @scala.inline
+  def catmullRom: catmullRom = "catmullRom".asInstanceOf[catmullRom]
+  @scala.inline
+  def crosshair: crosshair = "crosshair".asInstanceOf[crosshair]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline

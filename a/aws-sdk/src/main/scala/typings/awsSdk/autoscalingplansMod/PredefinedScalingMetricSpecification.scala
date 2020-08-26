@@ -18,10 +18,28 @@ trait PredefinedScalingMetricSpecification extends js.Object {
 
 object PredefinedScalingMetricSpecification {
   @scala.inline
-  def apply(PredefinedScalingMetricType: ScalingMetricType, ResourceLabel: ResourceLabel = null): PredefinedScalingMetricSpecification = {
+  def apply(PredefinedScalingMetricType: ScalingMetricType): PredefinedScalingMetricSpecification = {
     val __obj = js.Dynamic.literal(PredefinedScalingMetricType = PredefinedScalingMetricType.asInstanceOf[js.Any])
-    if (ResourceLabel != null) __obj.updateDynamic("ResourceLabel")(ResourceLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredefinedScalingMetricSpecification]
   }
+  @scala.inline
+  implicit class PredefinedScalingMetricSpecificationOps[Self <: PredefinedScalingMetricSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPredefinedScalingMetricType(value: ScalingMetricType): Self = this.set("PredefinedScalingMetricType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceLabel(value: ResourceLabel): Self = this.set("ResourceLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceLabel: Self = this.set("ResourceLabel", js.undefined)
+  }
+  
 }
 

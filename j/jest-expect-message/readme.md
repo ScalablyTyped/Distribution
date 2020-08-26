@@ -12,7 +12,7 @@ Add custom message to Jest expects
 | Keywords           | jest, expect, message, matchers, assertions, test |
 | # releases         | 5 |
 | # dependents       | 9 |
-| # downloads        | 664437 |
+| # downloads        | 706375 |
 | # stars            | 0 |
 
 ## Links

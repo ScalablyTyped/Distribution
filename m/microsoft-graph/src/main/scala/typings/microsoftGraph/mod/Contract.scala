@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Contract extends DirectoryObject {
   /**
     * Type of contract.Possible values are: SyndicationPartner - Partner that exclusively resells and manages O365 and Intune
@@ -12,42 +13,58 @@ trait Contract extends DirectoryObject {
     * - Partner that is similar to a syndication partner, except that the partner doesn’t have exclusive access to a tenant.
     * In the syndication case, the customer cannot buy additional direct subscriptions from Microsoft or from other partners.
     */
-  var contractType: js.UndefOr[String] = js.undefined
+  var contractType: js.UndefOr[String] = js.native
   /**
     * The unique identifier for the customer tenant referenced by this partnership. Corresponds to the id property of the
     * customer tenant's organization resource.
     */
-  var customerId: js.UndefOr[String] = js.undefined
+  var customerId: js.UndefOr[String] = js.native
   /**
     * A copy of the customer tenant's default domain name. The copy is made when the partnership with the customer is
     * established. It is not automatically updated if the customer tenant's default domain name changes.
     */
-  var defaultDomainName: js.UndefOr[String] = js.undefined
+  var defaultDomainName: js.UndefOr[String] = js.native
   /**
     * A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established.
     * It is not automatically updated if the customer tenant's display name changes.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String] = js.native
 }
 
 object Contract {
   @scala.inline
-  def apply(
-    contractType: String = null,
-    customerId: String = null,
-    defaultDomainName: String = null,
-    deletedDateTime: String = null,
-    displayName: String = null,
-    id: String = null
-  ): Contract = {
+  def apply(): Contract = {
     val __obj = js.Dynamic.literal()
-    if (contractType != null) __obj.updateDynamic("contractType")(contractType.asInstanceOf[js.Any])
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (defaultDomainName != null) __obj.updateDynamic("defaultDomainName")(defaultDomainName.asInstanceOf[js.Any])
-    if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contract]
   }
+  @scala.inline
+  implicit class ContractOps[Self <: Contract] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContractType(value: String): Self = this.set("contractType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContractType: Self = this.set("contractType", js.undefined)
+    @scala.inline
+    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    @scala.inline
+    def setDefaultDomainName(value: String): Self = this.set("defaultDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultDomainName: Self = this.set("defaultDomainName", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+  }
+  
 }
 

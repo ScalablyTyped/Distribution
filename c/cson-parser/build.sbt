@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cson-parser"
-version := "4.0.4-4d89d8"
-scalaVersion := "2.13.2"
+version := "4.0.5-c757fa"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

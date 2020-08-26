@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("OpenTableBordersAndShadingDialogCommand")
 @js.native
 class OpenTableBordersAndShadingDialogCommand ()
-  extends typings.devexpressWeb.OpenTableBordersAndShadingDialogCommand {
-  /**
-    * Executes the OpenTableBordersAndShadingDialogCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.OpenTableBordersAndShadingDialogCommand
 

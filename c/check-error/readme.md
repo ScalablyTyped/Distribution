@@ -12,7 +12,7 @@ Error comparison and information related utility for node and the browser
 | Keywords           | check-error, error, chai util |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 91322543 |
+| # downloads        | 94178966 |
 | # stars            | 1 |
 
 ## Links

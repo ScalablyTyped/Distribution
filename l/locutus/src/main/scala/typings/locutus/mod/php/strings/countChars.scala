@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object countChars extends js.Object {
   def apply(): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], mode: js.Any): js.Any = js.native
   def apply(str: js.Any): js.Any = js.native
   def apply(str: js.Any, mode: js.Any): js.Any = js.native
 }

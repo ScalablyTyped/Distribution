@@ -26,8 +26,6 @@ abstract class BaseFilterWrapperComp[M, F /* <: FloatingFilterChange */, PC /* <
   def init_MBaseFilterWrapperComp(params: P): Unit | Promise[Unit] = js.native
   /* private */ def onColumnHover(): js.Any = js.native
   /* private */ def onColumnWidthChanged(): js.Any = js.native
-  /* CompleteClass */
-  override def onParentModelChanged(parentModel: M): Unit = js.native
   /* private */ def setupWidth(): js.Any = js.native
 }
 

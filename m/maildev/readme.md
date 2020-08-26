@@ -12,7 +12,7 @@ SMTP Server and Web Interface for reading and testing emails during development
 | Keywords           | email, e-mail, mail, maildev, mailcatcher, testing, development, smtp |
 | # releases         | 3 |
 | # dependents       | 7 |
-| # downloads        | 404019 |
+| # downloads        | 435375 |
 | # stars            | 20 |
 
 ## Links

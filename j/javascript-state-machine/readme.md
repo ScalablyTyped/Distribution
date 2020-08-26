@@ -12,7 +12,7 @@ A finite state machine library
 | Keywords           | finite state machine, state machine, server, client |
 | # releases         | 2 |
 | # dependents       | 52 |
-| # downloads        | 1284075 |
+| # downloads        | 1446420 |
 | # stars            | 19 |
 
 ## Links

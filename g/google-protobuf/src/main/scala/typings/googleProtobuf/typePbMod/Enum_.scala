@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Enum_ () extends Message {
   def addEnumvalue(): EnumValue = js.native
+  def addEnumvalue(value: js.UndefOr[scala.Nothing], index: Double): EnumValue = js.native
   def addEnumvalue(value: EnumValue): EnumValue = js.native
   def addEnumvalue(value: EnumValue, index: Double): EnumValue = js.native
   def addOptions(): Option = js.native
+  def addOptions(value: js.UndefOr[scala.Nothing], index: Double): Option = js.native
   def addOptions(value: Option): Option = js.native
   def addOptions(value: Option, index: Double): Option = js.native
   def clearEnumvalueList(): Unit = js.native

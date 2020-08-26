@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITabOptions extends js.Object {
-  var activeClass: js.UndefOr[String] = js.undefined
-  var animation: js.UndefOr[String] = js.undefined
-  var navClass: js.UndefOr[String] = js.undefined
-  var template: js.UndefOr[String] = js.undefined
+  var activeClass: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.native
+  var navClass: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.native
 }
 
 object ITabOptions {
   @scala.inline
-  def apply(
-    activeClass: String = null,
-    animation: String = null,
-    navClass: String = null,
-    template: String = null
-  ): ITabOptions = {
+  def apply(): ITabOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (navClass != null) __obj.updateDynamic("navClass")(navClass.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITabOptions]
   }
+  @scala.inline
+  implicit class ITabOptionsOps[Self <: ITabOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveClass: Self = this.set("activeClass", js.undefined)
+    @scala.inline
+    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setNavClass(value: String): Self = this.set("navClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavClass: Self = this.set("navClass", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+  }
+  
 }
 

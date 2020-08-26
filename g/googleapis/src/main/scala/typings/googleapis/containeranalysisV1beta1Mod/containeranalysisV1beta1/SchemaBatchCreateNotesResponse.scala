@@ -17,10 +17,28 @@ trait SchemaBatchCreateNotesResponse extends js.Object {
 
 object SchemaBatchCreateNotesResponse {
   @scala.inline
-  def apply(notes: js.Array[SchemaNote] = null): SchemaBatchCreateNotesResponse = {
+  def apply(): SchemaBatchCreateNotesResponse = {
     val __obj = js.Dynamic.literal()
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchCreateNotesResponse]
   }
+  @scala.inline
+  implicit class SchemaBatchCreateNotesResponseOps[Self <: SchemaBatchCreateNotesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotesVarargs(value: SchemaNote*): Self = this.set("notes", js.Array(value :_*))
+    @scala.inline
+    def setNotes(value: js.Array[SchemaNote]): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+  }
+  
 }
 

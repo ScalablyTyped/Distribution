@@ -11,7 +11,7 @@ object open_w extends js.Object {
   def apply(
     path: String,
     mode: js.UndefOr[w],
-    drivers: js.UndefOr[js.Array[String] | String],
+    drivers: js.UndefOr[String | js.Array[String]],
     x_size: js.UndefOr[Double],
     y_size: js.UndefOr[Double],
     band_count: js.UndefOr[Double],

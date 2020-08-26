@@ -13,10 +13,6 @@ object errorMod extends js.Object {
   @js.native
   class GraphqlError[ResponseData] protected () extends Error {
     def this(request: GraphQlEndpointOptions, response: Data[ResponseData]) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var request: GraphQlEndpointOptions = js.native
   }
   

@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleMutantStyler extends js.Object {
-  var color: js.UndefOr[String] = js.undefined
-  var gamma: js.UndefOr[Double] = js.undefined
-  var hue: js.UndefOr[String] = js.undefined
-  var invert_lightness: js.UndefOr[Boolean] = js.undefined
-  var lightness: js.UndefOr[Double] = js.undefined
-  var saturation: js.UndefOr[Double] = js.undefined
-  var visibility: js.UndefOr[String] = js.undefined
-  var weight: js.UndefOr[Double] = js.undefined
+  var color: js.UndefOr[String] = js.native
+  var gamma: js.UndefOr[Double] = js.native
+  var hue: js.UndefOr[String] = js.native
+  var invert_lightness: js.UndefOr[Boolean] = js.native
+  var lightness: js.UndefOr[Double] = js.native
+  var saturation: js.UndefOr[Double] = js.native
+  var visibility: js.UndefOr[String] = js.native
+  var weight: js.UndefOr[Double] = js.native
 }
 
 object GoogleMutantStyler {
   @scala.inline
-  def apply(
-    color: String = null,
-    gamma: js.UndefOr[Double] = js.undefined,
-    hue: String = null,
-    invert_lightness: js.UndefOr[Boolean] = js.undefined,
-    lightness: js.UndefOr[Double] = js.undefined,
-    saturation: js.UndefOr[Double] = js.undefined,
-    visibility: String = null,
-    weight: js.UndefOr[Double] = js.undefined
-  ): GoogleMutantStyler = {
+  def apply(): GoogleMutantStyler = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(gamma)) __obj.updateDynamic("gamma")(gamma.get.asInstanceOf[js.Any])
-    if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
-    if (!js.isUndefined(invert_lightness)) __obj.updateDynamic("invert_lightness")(invert_lightness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lightness)) __obj.updateDynamic("lightness")(lightness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(saturation)) __obj.updateDynamic("saturation")(saturation.get.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleMutantStyler]
   }
+  @scala.inline
+  implicit class GoogleMutantStylerOps[Self <: GoogleMutantStyler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setGamma(value: Double): Self = this.set("gamma", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGamma: Self = this.set("gamma", js.undefined)
+    @scala.inline
+    def setHue(value: String): Self = this.set("hue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHue: Self = this.set("hue", js.undefined)
+    @scala.inline
+    def setInvert_lightness(value: Boolean): Self = this.set("invert_lightness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvert_lightness: Self = this.set("invert_lightness", js.undefined)
+    @scala.inline
+    def setLightness(value: Double): Self = this.set("lightness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLightness: Self = this.set("lightness", js.undefined)
+    @scala.inline
+    def setSaturation(value: Double): Self = this.set("saturation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaturation: Self = this.set("saturation", js.undefined)
+    @scala.inline
+    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    @scala.inline
+    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+  }
+  
 }
 

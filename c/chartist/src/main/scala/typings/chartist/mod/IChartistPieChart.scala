@@ -20,7 +20,7 @@ trait IChartistPieChart
      with Instantiable4[
       /* target */ js.Any, 
       /* data */ IChartistData, 
-      /* options */ IPieChartOptions, 
+      js.UndefOr[/* options */ IPieChartOptions], 
       /* responsiveOptions */ js.Array[IResponsiveOptionTuple[IPieChartOptions]], 
       IChartistPieChart
     ]

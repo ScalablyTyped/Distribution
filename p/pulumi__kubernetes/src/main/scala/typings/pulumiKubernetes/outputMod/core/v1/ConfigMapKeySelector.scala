@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 /**
   * Selects a key from a ConfigMap.
   */
+@js.native
 trait ConfigMapKeySelector extends js.Object {
   /**
     * The key to select.
     */
-  val key: String
+  var key: String = js.native
   /**
-    * Name of the referent. More info:
-    * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    * Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
     */
-  val name: String
+  var name: String = js.native
   /**
     * Specify whether the ConfigMap or its key must be defined
     */
-  val optional: Boolean
+  var optional: Boolean = js.native
 }
 
 object ConfigMapKeySelector {
@@ -29,5 +29,24 @@ object ConfigMapKeySelector {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigMapKeySelector]
   }
+  @scala.inline
+  implicit class ConfigMapKeySelectorOps[Self <: ConfigMapKeySelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+  }
+  
 }
 

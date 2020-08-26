@@ -57,16 +57,38 @@ trait SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet extends js.Object {
 
 object SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet {
   @scala.inline
-  def apply(
-    bucketName: String = null,
-    excludeRegex: js.Array[String] = null,
-    includeRegex: js.Array[String] = null
-  ): SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet = {
+  def apply(): SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet = {
     val __obj = js.Dynamic.literal()
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    if (excludeRegex != null) __obj.updateDynamic("excludeRegex")(excludeRegex.asInstanceOf[js.Any])
-    if (includeRegex != null) __obj.updateDynamic("includeRegex")(includeRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2CloudStorageRegexFileSetOps[Self <: SchemaGooglePrivacyDlpV2CloudStorageRegexFileSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    @scala.inline
+    def setExcludeRegexVarargs(value: String*): Self = this.set("excludeRegex", js.Array(value :_*))
+    @scala.inline
+    def setExcludeRegex(value: js.Array[String]): Self = this.set("excludeRegex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeRegex: Self = this.set("excludeRegex", js.undefined)
+    @scala.inline
+    def setIncludeRegexVarargs(value: String*): Self = this.set("includeRegex", js.Array(value :_*))
+    @scala.inline
+    def setIncludeRegex(value: js.Array[String]): Self = this.set("includeRegex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeRegex: Self = this.set("includeRegex", js.undefined)
+  }
+  
 }
 

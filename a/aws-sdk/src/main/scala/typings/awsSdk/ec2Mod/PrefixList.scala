@@ -22,12 +22,36 @@ trait PrefixList extends js.Object {
 
 object PrefixList {
   @scala.inline
-  def apply(Cidrs: ValueStringList = null, PrefixListId: String = null, PrefixListName: String = null): PrefixList = {
+  def apply(): PrefixList = {
     val __obj = js.Dynamic.literal()
-    if (Cidrs != null) __obj.updateDynamic("Cidrs")(Cidrs.asInstanceOf[js.Any])
-    if (PrefixListId != null) __obj.updateDynamic("PrefixListId")(PrefixListId.asInstanceOf[js.Any])
-    if (PrefixListName != null) __obj.updateDynamic("PrefixListName")(PrefixListName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrefixList]
   }
+  @scala.inline
+  implicit class PrefixListOps[Self <: PrefixList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrsVarargs(value: String*): Self = this.set("Cidrs", js.Array(value :_*))
+    @scala.inline
+    def setCidrs(value: ValueStringList): Self = this.set("Cidrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrs: Self = this.set("Cidrs", js.undefined)
+    @scala.inline
+    def setPrefixListId(value: String): Self = this.set("PrefixListId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixListId: Self = this.set("PrefixListId", js.undefined)
+    @scala.inline
+    def setPrefixListName(value: String): Self = this.set("PrefixListName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixListName: Self = this.set("PrefixListName", js.undefined)
+  }
+  
 }
 

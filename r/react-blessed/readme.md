@@ -12,7 +12,7 @@ A react renderer for blessed.
 | Keywords           | blessed, react, renderer, cli, interface |
 | # releases         | 7 |
 | # dependents       | 49 |
-| # downloads        | 12878 |
+| # downloads        | 11827 |
 | # stars            | 17 |
 
 ## Links

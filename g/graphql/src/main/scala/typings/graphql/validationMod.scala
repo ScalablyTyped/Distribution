@@ -19,7 +19,6 @@ object validationMod extends js.Object {
   @js.native
   class ValidationContext protected ()
     extends typings.graphql.validationContextMod.ValidationContext {
-    def this(schema: GraphQLSchema, ast: DocumentNode, typeInfo: TypeInfo) = this()
     def this(
       schema: GraphQLSchema,
       ast: DocumentNode,
@@ -36,10 +35,13 @@ object validationMod extends js.Object {
   def KnownDirectivesRule(context: SDLValidationContext): ASTVisitor = js.native
   def KnownDirectivesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def KnownFragmentNamesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
+  def KnownTypeNamesRule(context: SDLValidationContext): ASTVisitor = js.native
   def KnownTypeNamesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def LoneAnonymousOperationRule(context: ASTValidationContext): ASTVisitor = js.native
   def LoneSchemaDefinitionRule(context: SDLValidationContext): ASTVisitor = js.native
+  def NoDeprecatedCustomRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def NoFragmentCyclesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
+  def NoSchemaIntrospectionCustomRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def NoUndefinedVariablesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def NoUnusedFragmentsRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def NoUnusedVariablesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
@@ -64,7 +66,34 @@ object validationMod extends js.Object {
   def VariablesAreInputTypesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def VariablesInAllowedPositionRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def validate(schema: GraphQLSchema, documentAST: DocumentNode): js.Array[GraphQLError] = js.native
+  def validate(
+    schema: GraphQLSchema,
+    documentAST: DocumentNode,
+    rules: js.UndefOr[scala.Nothing],
+    typeInfo: js.UndefOr[scala.Nothing],
+    options: MaxErrors
+  ): js.Array[GraphQLError] = js.native
+  def validate(
+    schema: GraphQLSchema,
+    documentAST: DocumentNode,
+    rules: js.UndefOr[scala.Nothing],
+    typeInfo: TypeInfo
+  ): js.Array[GraphQLError] = js.native
+  def validate(
+    schema: GraphQLSchema,
+    documentAST: DocumentNode,
+    rules: js.UndefOr[scala.Nothing],
+    typeInfo: TypeInfo,
+    options: MaxErrors
+  ): js.Array[GraphQLError] = js.native
   def validate(schema: GraphQLSchema, documentAST: DocumentNode, rules: js.Array[ValidationRule]): js.Array[GraphQLError] = js.native
+  def validate(
+    schema: GraphQLSchema,
+    documentAST: DocumentNode,
+    rules: js.Array[ValidationRule],
+    typeInfo: js.UndefOr[scala.Nothing],
+    options: MaxErrors
+  ): js.Array[GraphQLError] = js.native
   def validate(
     schema: GraphQLSchema,
     documentAST: DocumentNode,

@@ -12,7 +12,7 @@ Frecency sorting for search results.
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 2592 |
+| # downloads        | 2721 |
 | # stars            | 0 |
 
 ## Links

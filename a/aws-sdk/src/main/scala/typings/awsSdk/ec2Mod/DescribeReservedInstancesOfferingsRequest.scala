@@ -70,40 +70,86 @@ trait DescribeReservedInstancesOfferingsRequest extends js.Object {
 
 object DescribeReservedInstancesOfferingsRequest {
   @scala.inline
-  def apply(
-    AvailabilityZone: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    IncludeMarketplace: js.UndefOr[Boolean] = js.undefined,
-    InstanceTenancy: Tenancy = null,
-    InstanceType: InstanceType = null,
-    MaxDuration: js.UndefOr[Long] = js.undefined,
-    MaxInstanceCount: js.UndefOr[Integer] = js.undefined,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
-    MinDuration: js.UndefOr[Long] = js.undefined,
-    NextToken: String = null,
-    OfferingClass: OfferingClassType = null,
-    OfferingType: OfferingTypeValues = null,
-    ProductDescription: RIProductDescription = null,
-    ReservedInstancesOfferingIds: ReservedInstancesOfferingIdStringList = null
-  ): DescribeReservedInstancesOfferingsRequest = {
+  def apply(): DescribeReservedInstancesOfferingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeMarketplace)) __obj.updateDynamic("IncludeMarketplace")(IncludeMarketplace.get.asInstanceOf[js.Any])
-    if (InstanceTenancy != null) __obj.updateDynamic("InstanceTenancy")(InstanceTenancy.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxDuration)) __obj.updateDynamic("MaxDuration")(MaxDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxInstanceCount)) __obj.updateDynamic("MaxInstanceCount")(MaxInstanceCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinDuration)) __obj.updateDynamic("MinDuration")(MinDuration.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (OfferingClass != null) __obj.updateDynamic("OfferingClass")(OfferingClass.asInstanceOf[js.Any])
-    if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
-    if (ProductDescription != null) __obj.updateDynamic("ProductDescription")(ProductDescription.asInstanceOf[js.Any])
-    if (ReservedInstancesOfferingIds != null) __obj.updateDynamic("ReservedInstancesOfferingIds")(ReservedInstancesOfferingIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReservedInstancesOfferingsRequest]
   }
+  @scala.inline
+  implicit class DescribeReservedInstancesOfferingsRequestOps[Self <: DescribeReservedInstancesOfferingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setIncludeMarketplace(value: Boolean): Self = this.set("IncludeMarketplace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeMarketplace: Self = this.set("IncludeMarketplace", js.undefined)
+    @scala.inline
+    def setInstanceTenancy(value: Tenancy): Self = this.set("InstanceTenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTenancy: Self = this.set("InstanceTenancy", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setMaxDuration(value: Long): Self = this.set("MaxDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDuration: Self = this.set("MaxDuration", js.undefined)
+    @scala.inline
+    def setMaxInstanceCount(value: Integer): Self = this.set("MaxInstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxInstanceCount: Self = this.set("MaxInstanceCount", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Integer): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setMinDuration(value: Long): Self = this.set("MinDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDuration: Self = this.set("MinDuration", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setOfferingClass(value: OfferingClassType): Self = this.set("OfferingClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingClass: Self = this.set("OfferingClass", js.undefined)
+    @scala.inline
+    def setOfferingType(value: OfferingTypeValues): Self = this.set("OfferingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingType: Self = this.set("OfferingType", js.undefined)
+    @scala.inline
+    def setProductDescription(value: RIProductDescription): Self = this.set("ProductDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductDescription: Self = this.set("ProductDescription", js.undefined)
+    @scala.inline
+    def setReservedInstancesOfferingIdsVarargs(value: ReservedInstancesOfferingId*): Self = this.set("ReservedInstancesOfferingIds", js.Array(value :_*))
+    @scala.inline
+    def setReservedInstancesOfferingIds(value: ReservedInstancesOfferingIdStringList): Self = this.set("ReservedInstancesOfferingIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedInstancesOfferingIds: Self = this.set("ReservedInstancesOfferingIds", js.undefined)
+  }
+  
 }
 

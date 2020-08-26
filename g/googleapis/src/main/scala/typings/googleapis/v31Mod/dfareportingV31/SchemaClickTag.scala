@@ -30,16 +30,34 @@ trait SchemaClickTag extends js.Object {
 
 object SchemaClickTag {
   @scala.inline
-  def apply(
-    clickThroughUrl: SchemaCreativeClickThroughUrl = null,
-    eventName: String = null,
-    name: String = null
-  ): SchemaClickTag = {
+  def apply(): SchemaClickTag = {
     val __obj = js.Dynamic.literal()
-    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl.asInstanceOf[js.Any])
-    if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClickTag]
   }
+  @scala.inline
+  implicit class SchemaClickTagOps[Self <: SchemaClickTag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClickThroughUrl(value: SchemaCreativeClickThroughUrl): Self = this.set("clickThroughUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickThroughUrl: Self = this.set("clickThroughUrl", js.undefined)
+    @scala.inline
+    def setEventName(value: String): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventName: Self = this.set("eventName", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

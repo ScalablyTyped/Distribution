@@ -42,6 +42,7 @@ trait Views extends js.Object {
   	 */
   /* $.views.converters() */
   def converters(name: String): Converter = js.native
+  def converters(name: String, item: js.UndefOr[scala.Nothing], parentTmpl: Template): Converter = js.native
   def converters(name: String, item: Converter): Converter = js.native
   def converters(name: String, item: Converter, parentTmpl: Template): Converter = js.native
    // named item
@@ -60,6 +61,7 @@ trait Views extends js.Object {
   	 */
   /* $.views.helpers() */
   def helpers(name: String): js.Any = js.native
+  def helpers(name: String, item: js.UndefOr[scala.Nothing], parentTmpl: Template): js.Any = js.native
   def helpers(name: String, item: js.Any): js.Any = js.native
   def helpers(name: String, item: js.Any, parentTmpl: Template): js.Any = js.native
   /* $.views.map() */
@@ -80,8 +82,8 @@ trait Views extends js.Object {
   	 */
   /* $.views.tags() */
   def tags(name: String): Tag = js.native
+  def tags(name: String, item: js.UndefOr[TagSetter], parentTmpl: Template): Tag = js.native
   def tags(name: String, item: TagSetter): Tag = js.native
-  def tags(name: String, item: TagSetter, parentTmpl: Template): Tag = js.native
   /**
   	 * Additional $.templates() signature for compiling unnamed template
   	 *
@@ -108,8 +110,8 @@ trait Views extends js.Object {
   /* $.views.templates() */
   def templates(namedItems: Hash[TemplateSetter]): Views = js.native
   def templates(namedItems: Hash[TemplateSetter], parentTmpl: Template): Views = js.native
+  def templates(name: String, item: js.UndefOr[TemplateSetter], parentTmpl: Template): Template = js.native
   def templates(name: String, item: TemplateSetter): Template = js.native
-  def templates(name: String, item: TemplateSetter, parentTmpl: Template): Template = js.native
   /* $.views.viewModels() */
   def viewModels(namedItems: Hash[ViewModelOptions]): Hash[ViewModel] = js.native
   def viewModels(namedItems: Hash[ViewModelOptions], viewModels: Hash[ViewModel]): Hash[ViewModel] = js.native

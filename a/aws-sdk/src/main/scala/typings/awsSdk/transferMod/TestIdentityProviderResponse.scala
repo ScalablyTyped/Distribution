@@ -26,11 +26,34 @@ trait TestIdentityProviderResponse extends js.Object {
 
 object TestIdentityProviderResponse {
   @scala.inline
-  def apply(StatusCode: StatusCode, Url: Url, Message: Message = null, Response: Response = null): TestIdentityProviderResponse = {
+  def apply(StatusCode: StatusCode, Url: Url): TestIdentityProviderResponse = {
     val __obj = js.Dynamic.literal(StatusCode = StatusCode.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (Response != null) __obj.updateDynamic("Response")(Response.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestIdentityProviderResponse]
   }
+  @scala.inline
+  implicit class TestIdentityProviderResponseOps[Self <: TestIdentityProviderResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatusCode(value: StatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: Url): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setResponse(value: Response): Self = this.set("Response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("Response", js.undefined)
+  }
+  
 }
 

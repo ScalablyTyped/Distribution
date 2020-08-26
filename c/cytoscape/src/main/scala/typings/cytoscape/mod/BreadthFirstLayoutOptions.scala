@@ -9,17 +9,18 @@ import scala.scalajs.js.annotation._
   * http://js.cytoscape.org/#layouts/breadthfirst
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.cytoscape.mod.LayoutOptions because Already inherited */ trait BreadthFirstLayoutOptions extends ShapedLayoutOptions {
+- typings.cytoscape.mod.LayoutOptions because Already inherited */ @js.native
+trait BreadthFirstLayoutOptions extends ShapedLayoutOptions {
   // put depths in concentric circles if true, put depths top down if false
-  var circle: Boolean
+  var circle: Boolean = js.native
   // whether the tree is directed downwards (or edges can point in any direction if false)
-  var directed: Boolean
+  var directed: Boolean = js.native
   // how many times to try to position the nodes in a maximal way (i.e. no backtracking)
-  var maximalAdjustments: Double
+  var maximalAdjustments: Double = js.native
   @JSName("name")
-  var name_BreadthFirstLayoutOptions: breadthfirst
+  var name_BreadthFirstLayoutOptions: breadthfirst = js.native
   // the roots of the trees
-  var roots: js.UndefOr[String] = js.undefined
+  var roots: js.UndefOr[String] = js.native
 }
 
 object BreadthFirstLayoutOptions {
@@ -30,32 +31,35 @@ object BreadthFirstLayoutOptions {
     fit: Boolean,
     maximalAdjustments: Double,
     name: breadthfirst,
-    nodeDimensionsIncludeLabels: Boolean,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationEasing: js.UndefOr[Boolean] = js.undefined,
-    avoidOverlap: js.UndefOr[Boolean] = js.undefined,
-    boundingBox: BoundingBox12 | BoundingBoxWH = null,
-    padding: js.UndefOr[Double] = js.undefined,
-    ready: /* e */ LayoutEventObject => Unit = null,
-    roots: String = null,
-    sort: (/* a */ SortableNode, /* b */ SortableNode) => Double = null,
-    spacingFactor: js.UndefOr[Double] = js.undefined,
-    stop: /* e */ LayoutEventObject => Unit = null
+    nodeDimensionsIncludeLabels: Boolean
   ): BreadthFirstLayoutOptions = {
     val __obj = js.Dynamic.literal(circle = circle.asInstanceOf[js.Any], directed = directed.asInstanceOf[js.Any], fit = fit.asInstanceOf[js.Any], maximalAdjustments = maximalAdjustments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.get.asInstanceOf[js.Any])
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (roots != null) __obj.updateDynamic("roots")(roots.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (!js.isUndefined(spacingFactor)) __obj.updateDynamic("spacingFactor")(spacingFactor.get.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
     __obj.asInstanceOf[BreadthFirstLayoutOptions]
   }
+  @scala.inline
+  implicit class BreadthFirstLayoutOptionsOps[Self <: BreadthFirstLayoutOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCircle(value: Boolean): Self = this.set("circle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirected(value: Boolean): Self = this.set("directed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaximalAdjustments(value: Double): Self = this.set("maximalAdjustments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: breadthfirst): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoots(value: String): Self = this.set("roots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoots: Self = this.set("roots", js.undefined)
+  }
+  
 }
 

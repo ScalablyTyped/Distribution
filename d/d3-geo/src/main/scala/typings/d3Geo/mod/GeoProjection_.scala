@@ -46,12 +46,11 @@ trait GeoProjection_ extends GeoStreamWrapper {
     */
   def center(point: js.Tuple2[Double, Double]): this.type = js.native
   /**
-    * Switches to antimeridian cutting rather than small-circle clipping.
-    * See also projection.preclip, d3.geoClipAntimeridian, d3.geoClipCircle.
+    * Returns the current clip angle which defaults to null.
     *
-    * @param angle Set to null to switch to antimeridian cutting.
+    * null switches to antimeridian cutting rather than small-circle clipping.
     */
-  def clipAngle(): this.type = js.native
+  def clipAngle(): Double | Null = js.native
   /**
     * Sets the projection’s clipping circle radius to the specified angle in degrees and returns the projection.
     * Small-circle clipping is independent of viewport clipping via projection.clipExtent.
@@ -62,23 +61,16 @@ trait GeoProjection_ extends GeoStreamWrapper {
     */
   def clipAngle(angle: Double): this.type = js.native
   /**
-    * Returns the current clip angle which defaults to null.
+    * Switches to antimeridian cutting rather than small-circle clipping.
+    * See also projection.preclip, d3.geoClipAntimeridian, d3.geoClipCircle.
     *
-    * null switches to antimeridian cutting rather than small-circle clipping.
+    * @param angle Set to null to switch to antimeridian cutting.
     */
-  @JSName("clipAngle")
-  def clipAngle_Union(): Double | Null = js.native
+  def clipAngle(angle: Null): this.type = js.native
   /**
-    * Sets the clip extent to null and returns the projection.
-    * With a clip extent of null, no viewport clipping is performed.
-    *
-    * Viewport clipping is independent of small-circle clipping via projection.clipAngle.
-    *
-    * See also projection.postclip, d3.geoClipRectangle.
-    *
-    * @param extent Set to null to disable viewport clipping.
+    * Returns the current viewport clip extent which defaults to null.
     */
-  def clipExtent(): this.type = js.native
+  def clipExtent(): (js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]) | Null = js.native
   /**
     * Sets the projection’s viewport clip extent to the specified bounds in pixels and returns the projection.
     * The extent bounds are specified as an array [[x₀, y₀], [x₁, y₁]], where x₀ is the left-side of the viewport, y₀ is the top, x₁ is the right and y₁ is the bottom.
@@ -91,10 +83,16 @@ trait GeoProjection_ extends GeoStreamWrapper {
     */
   def clipExtent(extent: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): this.type = js.native
   /**
-    * Returns the current viewport clip extent which defaults to null.
+    * Sets the clip extent to null and returns the projection.
+    * With a clip extent of null, no viewport clipping is performed.
+    *
+    * Viewport clipping is independent of small-circle clipping via projection.clipAngle.
+    *
+    * See also projection.postclip, d3.geoClipRectangle.
+    *
+    * @param extent Set to null to disable viewport clipping.
     */
-  @JSName("clipExtent")
-  def clipExtent_Union(): (js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]) | Null = js.native
+  def clipExtent(extent: Null): this.type = js.native
   /**
     * Sets the projection’s scale and translate to fit the specified geographic feature in the center of the given extent.
     * Returns the projection.

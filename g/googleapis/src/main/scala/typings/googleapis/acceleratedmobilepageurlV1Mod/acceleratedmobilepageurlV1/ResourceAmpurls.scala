@@ -28,6 +28,7 @@ class ResourceAmpurls protected () extends js.Object {
     */
   def batchGet(): GaxiosPromise[SchemaBatchGetAmpUrlsResponse] = js.native
   def batchGet(callback: BodyResponseCallback[SchemaBatchGetAmpUrlsResponse]): Unit = js.native
+  def batchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchGetAmpUrlsResponse] = js.native
   def batchGet(params: ParamsResourceAmpurlsBatchget): GaxiosPromise[SchemaBatchGetAmpUrlsResponse] = js.native
   def batchGet(
     params: ParamsResourceAmpurlsBatchget,

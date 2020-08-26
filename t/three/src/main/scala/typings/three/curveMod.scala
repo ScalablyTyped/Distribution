@@ -16,6 +16,8 @@ object curveMod extends js.Object {
     	 * Default is 200.
     	 */
     var arcLengthDivisions: Double = js.native
+    def copy(source: Curve[T]): this.type = js.native
+    def fromJSON(json: js.Object): this.type = js.native
     /**
     	 * Get total curve arc length
     	 */
@@ -27,13 +29,13 @@ object curveMod extends js.Object {
     def getLengths(divisions: Double): js.Array[Double] = js.native
     /**
     	 * Returns a vector for point t of the curve where t is between 0 and 1
-    	 * getPoint(t: number): T;
+    	 * getPoint(t: number, optionalTarget?: T): T;
     	 */
     def getPoint(t: Double): T = js.native
     def getPoint(t: Double, optionalTarget: T): T = js.native
     /**
     	 * Returns a vector for point at relative position in curve according to arc length
-    	 * getPointAt(u: number): T;
+    	 * getPointAt(u: number, optionalTarget?: T): T;
     	 */
     def getPointAt(u: Double): T = js.native
     def getPointAt(u: Double, optionalTarget: T): T = js.native
@@ -51,18 +53,21 @@ object curveMod extends js.Object {
     def getSpacedPoints(divisions: Double): js.Array[T] = js.native
     /**
     	 * Returns a unit vector tangent at t. If the subclassed curve do not implement its tangent derivation, 2 points a small delta apart will be used to find its gradient which seems to give a reasonable approximation
-    	 * getTangent(t: number): T;
+    	 * getTangent(t: number, optionalTarget?: T): T;
     	 */
     def getTangent(t: Double): T = js.native
+    def getTangent(t: Double, optionalTarget: T): T = js.native
     /**
     	 * Returns tangent at equidistance point u on the curve
-    	 * getTangentAt(u: number): T;
+    	 * getTangentAt(u: number, optionalTarget?: T): T;
     	 */
     def getTangentAt(u: Double): T = js.native
+    def getTangentAt(u: Double, optionalTarget: T): T = js.native
     /**
     	 * Given u ( 0 .. 1 ), get a t to find p. This gives you points which are equi distance
     	 */
     def getUtoTmapping(u: Double, distance: Double): Double = js.native
+    def toJSON(): js.Object = js.native
     /**
     	 * Update the cumlative segment distance cache
     	 */

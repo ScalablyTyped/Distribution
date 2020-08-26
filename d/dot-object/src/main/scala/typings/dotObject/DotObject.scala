@@ -30,6 +30,14 @@ object DotObject extends js.Object {
       target: String,
       obj1: js.Any,
       obj2: js.Any,
+      mods: js.UndefOr[scala.Nothing],
+      merge: Boolean
+    ): Unit = js.native
+    def copy(
+      source: String,
+      target: String,
+      obj1: js.Any,
+      obj2: js.Any,
       mods: js.Array[ModifierFunctionWrapper]
     ): Unit = js.native
     def copy(
@@ -95,6 +103,7 @@ object DotObject extends js.Object {
       * @param {Boolean} merge
       */
     def move(source: String, target: String, obj: js.Any): Unit = js.native
+    def move(source: String, target: String, obj: js.Any, mods: js.UndefOr[scala.Nothing], merge: Boolean): Unit = js.native
     def move(source: String, target: String, obj: js.Any, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
     def move(
       source: String,
@@ -189,6 +198,14 @@ object DotObject extends js.Object {
       * @param {Boolean} merge
       */
     def transfer(source: String, target: String, obj1: js.Any, obj2: js.Any): Unit = js.native
+    def transfer(
+      source: String,
+      target: String,
+      obj1: js.Any,
+      obj2: js.Any,
+      mods: js.UndefOr[scala.Nothing],
+      merge: Boolean
+    ): Unit = js.native
     def transfer(
       source: String,
       target: String,

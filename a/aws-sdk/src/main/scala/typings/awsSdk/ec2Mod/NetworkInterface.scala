@@ -94,52 +94,114 @@ trait NetworkInterface extends js.Object {
 
 object NetworkInterface {
   @scala.inline
-  def apply(
-    Association: NetworkInterfaceAssociation = null,
-    Attachment: NetworkInterfaceAttachment = null,
-    AvailabilityZone: String = null,
-    Description: String = null,
-    Groups: GroupIdentifierList = null,
-    InterfaceType: NetworkInterfaceType = null,
-    Ipv6Addresses: NetworkInterfaceIpv6AddressesList = null,
-    MacAddress: String = null,
-    NetworkInterfaceId: String = null,
-    OutpostArn: String = null,
-    OwnerId: String = null,
-    PrivateDnsName: String = null,
-    PrivateIpAddress: String = null,
-    PrivateIpAddresses: NetworkInterfacePrivateIpAddressList = null,
-    RequesterId: String = null,
-    RequesterManaged: js.UndefOr[Boolean] = js.undefined,
-    SourceDestCheck: js.UndefOr[Boolean] = js.undefined,
-    Status: NetworkInterfaceStatus = null,
-    SubnetId: String = null,
-    TagSet: TagList = null,
-    VpcId: String = null
-  ): NetworkInterface = {
+  def apply(): NetworkInterface = {
     val __obj = js.Dynamic.literal()
-    if (Association != null) __obj.updateDynamic("Association")(Association.asInstanceOf[js.Any])
-    if (Attachment != null) __obj.updateDynamic("Attachment")(Attachment.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
-    if (InterfaceType != null) __obj.updateDynamic("InterfaceType")(InterfaceType.asInstanceOf[js.Any])
-    if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses.asInstanceOf[js.Any])
-    if (MacAddress != null) __obj.updateDynamic("MacAddress")(MacAddress.asInstanceOf[js.Any])
-    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
-    if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
-    if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
-    if (PrivateIpAddresses != null) __obj.updateDynamic("PrivateIpAddresses")(PrivateIpAddresses.asInstanceOf[js.Any])
-    if (RequesterId != null) __obj.updateDynamic("RequesterId")(RequesterId.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterManaged)) __obj.updateDynamic("RequesterManaged")(RequesterManaged.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.get.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (TagSet != null) __obj.updateDynamic("TagSet")(TagSet.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterface]
   }
+  @scala.inline
+  implicit class NetworkInterfaceOps[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociation(value: NetworkInterfaceAssociation): Self = this.set("Association", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociation: Self = this.set("Association", js.undefined)
+    @scala.inline
+    def setAttachment(value: NetworkInterfaceAttachment): Self = this.set("Attachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachment: Self = this.set("Attachment", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: GroupIdentifier*): Self = this.set("Groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: GroupIdentifierList): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("Groups", js.undefined)
+    @scala.inline
+    def setInterfaceType(value: NetworkInterfaceType): Self = this.set("InterfaceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterfaceType: Self = this.set("InterfaceType", js.undefined)
+    @scala.inline
+    def setIpv6AddressesVarargs(value: NetworkInterfaceIpv6Address*): Self = this.set("Ipv6Addresses", js.Array(value :_*))
+    @scala.inline
+    def setIpv6Addresses(value: NetworkInterfaceIpv6AddressesList): Self = this.set("Ipv6Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Addresses: Self = this.set("Ipv6Addresses", js.undefined)
+    @scala.inline
+    def setMacAddress(value: String): Self = this.set("MacAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacAddress: Self = this.set("MacAddress", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: String): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("NetworkInterfaceId", js.undefined)
+    @scala.inline
+    def setOutpostArn(value: String): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setPrivateDnsName(value: String): Self = this.set("PrivateDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateDnsName: Self = this.set("PrivateDnsName", js.undefined)
+    @scala.inline
+    def setPrivateIpAddress(value: String): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+    @scala.inline
+    def setPrivateIpAddressesVarargs(value: NetworkInterfacePrivateIpAddress*): Self = this.set("PrivateIpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setPrivateIpAddresses(value: NetworkInterfacePrivateIpAddressList): Self = this.set("PrivateIpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddresses: Self = this.set("PrivateIpAddresses", js.undefined)
+    @scala.inline
+    def setRequesterId(value: String): Self = this.set("RequesterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterId: Self = this.set("RequesterId", js.undefined)
+    @scala.inline
+    def setRequesterManaged(value: Boolean): Self = this.set("RequesterManaged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterManaged: Self = this.set("RequesterManaged", js.undefined)
+    @scala.inline
+    def setSourceDestCheck(value: Boolean): Self = this.set("SourceDestCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDestCheck: Self = this.set("SourceDestCheck", js.undefined)
+    @scala.inline
+    def setStatus(value: NetworkInterfaceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setTagSetVarargs(value: Tag*): Self = this.set("TagSet", js.Array(value :_*))
+    @scala.inline
+    def setTagSet(value: TagList): Self = this.set("TagSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSet: Self = this.set("TagSet", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

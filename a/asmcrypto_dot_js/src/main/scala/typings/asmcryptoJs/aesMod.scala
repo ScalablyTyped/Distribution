@@ -12,7 +12,10 @@ import scala.scalajs.js.annotation._
 object aesMod extends js.Object {
   @js.native
   abstract class AES protected () extends js.Object {
-    protected def this(key: Uint8Array, iv: js.UndefOr[Uint8Array], padding: js.UndefOr[Boolean], mode: AESMode) = this()
+    protected def this(key: Uint8Array, iv: js.UndefOr[scala.Nothing], padding: js.UndefOr[scala.Nothing], mode: AESMode) = this()
+    protected def this(key: Uint8Array, iv: js.UndefOr[scala.Nothing], padding: Boolean, mode: AESMode) = this()
+    protected def this(key: Uint8Array, iv: Uint8Array, padding: js.UndefOr[scala.Nothing], mode: AESMode) = this()
+    protected def this(key: Uint8Array, iv: Uint8Array, padding: Boolean, mode: AESMode) = this()
     val asm: AESAsm = js.native
     val heap: Uint8Array = js.native
     var len: Double = js.native

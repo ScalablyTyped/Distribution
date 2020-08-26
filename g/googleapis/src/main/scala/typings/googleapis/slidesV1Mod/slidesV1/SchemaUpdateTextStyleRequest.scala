@@ -47,20 +47,42 @@ trait SchemaUpdateTextStyleRequest extends js.Object {
 
 object SchemaUpdateTextStyleRequest {
   @scala.inline
-  def apply(
-    cellLocation: SchemaTableCellLocation = null,
-    fields: String = null,
-    objectId: String = null,
-    style: SchemaTextStyle = null,
-    textRange: SchemaRange = null
-  ): SchemaUpdateTextStyleRequest = {
+  def apply(): SchemaUpdateTextStyleRequest = {
     val __obj = js.Dynamic.literal()
-    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textRange != null) __obj.updateDynamic("textRange")(textRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateTextStyleRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateTextStyleRequestOps[Self <: SchemaUpdateTextStyleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellLocation(value: SchemaTableCellLocation): Self = this.set("cellLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellLocation: Self = this.set("cellLocation", js.undefined)
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setStyle(value: SchemaTextStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTextRange(value: SchemaRange): Self = this.set("textRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextRange: Self = this.set("textRange", js.undefined)
+  }
+  
 }
 

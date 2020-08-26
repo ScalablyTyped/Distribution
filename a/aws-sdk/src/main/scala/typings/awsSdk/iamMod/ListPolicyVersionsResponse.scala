@@ -22,16 +22,36 @@ trait ListPolicyVersionsResponse extends js.Object {
 
 object ListPolicyVersionsResponse {
   @scala.inline
-  def apply(
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: responseMarkerType = null,
-    Versions: policyDocumentVersionListType = null
-  ): ListPolicyVersionsResponse = {
+  def apply(): ListPolicyVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (Versions != null) __obj.updateDynamic("Versions")(Versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPolicyVersionsResponse]
   }
+  @scala.inline
+  implicit class ListPolicyVersionsResponseOps[Self <: ListPolicyVersionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: PolicyVersion*): Self = this.set("Versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: policyDocumentVersionListType): Self = this.set("Versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("Versions", js.undefined)
+  }
+  
 }
 

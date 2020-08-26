@@ -13,16 +13,36 @@ trait MysqlExportOptions extends js.Object {
 
 object MysqlExportOptions {
   @scala.inline
-  def apply(
-    mysqlExportOptions: MasterData = null,
-    schemaOnly: js.UndefOr[Boolean] = js.undefined,
-    tables: js.Array[String] = null
-  ): MysqlExportOptions = {
+  def apply(): MysqlExportOptions = {
     val __obj = js.Dynamic.literal()
-    if (mysqlExportOptions != null) __obj.updateDynamic("mysqlExportOptions")(mysqlExportOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(schemaOnly)) __obj.updateDynamic("schemaOnly")(schemaOnly.get.asInstanceOf[js.Any])
-    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MysqlExportOptions]
   }
+  @scala.inline
+  implicit class MysqlExportOptionsOps[Self <: MysqlExportOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMysqlExportOptions(value: MasterData): Self = this.set("mysqlExportOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMysqlExportOptions: Self = this.set("mysqlExportOptions", js.undefined)
+    @scala.inline
+    def setSchemaOnly(value: Boolean): Self = this.set("schemaOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaOnly: Self = this.set("schemaOnly", js.undefined)
+    @scala.inline
+    def setTablesVarargs(value: String*): Self = this.set("tables", js.Array(value :_*))
+    @scala.inline
+    def setTables(value: js.Array[String]): Self = this.set("tables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTables: Self = this.set("tables", js.undefined)
+  }
+  
 }
 

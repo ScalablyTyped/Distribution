@@ -30,5 +30,6 @@ class ClientWritableStream[RequestType] protected () extends Writable {
   def write(message: RequestType): Boolean = js.native
   def write(message: RequestType, flags: js.Any with writeFlags): Boolean = js.native
   def write(message: RequestType, flags: js.Any with writeFlags, callback: js.Function): Boolean = js.native
+  def write(message: RequestType, flags: js.UndefOr[scala.Nothing], callback: js.Function): Boolean = js.native
 }
 

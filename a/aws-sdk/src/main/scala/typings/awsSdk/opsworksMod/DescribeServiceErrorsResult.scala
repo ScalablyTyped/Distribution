@@ -14,10 +14,28 @@ trait DescribeServiceErrorsResult extends js.Object {
 
 object DescribeServiceErrorsResult {
   @scala.inline
-  def apply(ServiceErrors: ServiceErrors = null): DescribeServiceErrorsResult = {
+  def apply(): DescribeServiceErrorsResult = {
     val __obj = js.Dynamic.literal()
-    if (ServiceErrors != null) __obj.updateDynamic("ServiceErrors")(ServiceErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeServiceErrorsResult]
   }
+  @scala.inline
+  implicit class DescribeServiceErrorsResultOps[Self <: DescribeServiceErrorsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceErrorsVarargs(value: ServiceError*): Self = this.set("ServiceErrors", js.Array(value :_*))
+    @scala.inline
+    def setServiceErrors(value: ServiceErrors): Self = this.set("ServiceErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceErrors: Self = this.set("ServiceErrors", js.undefined)
+  }
+  
 }
 

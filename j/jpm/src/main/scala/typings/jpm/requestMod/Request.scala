@@ -6,8 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Request extends BaseRequest {
-  var response: Response
+  var response: Response = js.native
 }
 
 @JSImport("sdk/request", "Request")

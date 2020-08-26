@@ -17,24 +17,52 @@ trait Active extends js.Object {
 
 object Active {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    every: js.UndefOr[Double] = js.undefined,
-    expirationDate: String = null,
-    repeats: String = null,
-    repeatsOnWeekDays: js.Array[String] = null,
-    runsOnDayOfMonth: String = null,
-    startDate: String = null
-  ): Active = {
+  def apply(): Active = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(every)) __obj.updateDynamic("every")(every.get.asInstanceOf[js.Any])
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (repeats != null) __obj.updateDynamic("repeats")(repeats.asInstanceOf[js.Any])
-    if (repeatsOnWeekDays != null) __obj.updateDynamic("repeatsOnWeekDays")(repeatsOnWeekDays.asInstanceOf[js.Any])
-    if (runsOnDayOfMonth != null) __obj.updateDynamic("runsOnDayOfMonth")(runsOnDayOfMonth.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Active]
   }
+  @scala.inline
+  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setEvery(value: Double): Self = this.set("every", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvery: Self = this.set("every", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: String): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    @scala.inline
+    def setRepeats(value: String): Self = this.set("repeats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeats: Self = this.set("repeats", js.undefined)
+    @scala.inline
+    def setRepeatsOnWeekDaysVarargs(value: String*): Self = this.set("repeatsOnWeekDays", js.Array(value :_*))
+    @scala.inline
+    def setRepeatsOnWeekDays(value: js.Array[String]): Self = this.set("repeatsOnWeekDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeatsOnWeekDays: Self = this.set("repeatsOnWeekDays", js.undefined)
+    @scala.inline
+    def setRunsOnDayOfMonth(value: String): Self = this.set("runsOnDayOfMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunsOnDayOfMonth: Self = this.set("runsOnDayOfMonth", js.undefined)
+    @scala.inline
+    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+  }
+  
 }
 

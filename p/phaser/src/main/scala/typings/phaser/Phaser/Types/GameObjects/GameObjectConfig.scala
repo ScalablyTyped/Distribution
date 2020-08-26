@@ -4,105 +4,148 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GameObjectConfig extends js.Object {
   /**
     * Add the GameObject to the scene.
     */
-  var add: js.UndefOr[Boolean] = js.undefined
+  var add: js.UndefOr[Boolean] = js.native
   /**
     * The alpha (opacity) of the Game Object.
     */
-  var alpha: js.UndefOr[Double] = js.undefined
+  var alpha: js.UndefOr[Double] = js.native
   /**
     * The rotation angle of the Game Object, in degrees.
     */
-  var angle: js.UndefOr[Double] = js.undefined
+  var angle: js.UndefOr[Double] = js.native
   /**
     * The blend mode of the GameObject.
     */
-  var blendMode: js.UndefOr[Double] = js.undefined
+  var blendMode: js.UndefOr[Double] = js.native
   /**
     * The depth of the GameObject.
     */
-  var depth: js.UndefOr[Double] = js.undefined
+  var depth: js.UndefOr[Double] = js.native
   /**
     * The horizontally flipped state of the Game Object.
     */
-  var flipX: js.UndefOr[Boolean] = js.undefined
+  var flipX: js.UndefOr[Boolean] = js.native
   /**
     * The vertically flipped state of the Game Object.
     */
-  var flipY: js.UndefOr[Boolean] = js.undefined
+  var flipY: js.UndefOr[Boolean] = js.native
   /**
     * The origin of the Game Object.
     */
-  var origin: js.UndefOr[Double | js.Object] = js.undefined
+  var origin: js.UndefOr[Double | js.Object] = js.native
   /**
     * The rotation angle of the Game Object, in radians.
     */
-  var rotation: js.UndefOr[Double] = js.undefined
+  var rotation: js.UndefOr[Double] = js.native
   /**
     * The scale of the GameObject.
     */
-  var scale: js.UndefOr[Double | js.Object] = js.undefined
+  var scale: js.UndefOr[Double | js.Object] = js.native
   /**
     * The scale mode of the GameObject.
     */
-  var scaleMode: js.UndefOr[Double] = js.undefined
+  var scaleMode: js.UndefOr[Double] = js.native
   /**
     * The scroll factor of the GameObject.
     */
-  var scrollFactor: js.UndefOr[Double | js.Object] = js.undefined
+  var scrollFactor: js.UndefOr[Double | js.Object] = js.native
   /**
     * The visible state of the Game Object.
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /**
     * The x position of the Game Object.
     */
-  var x: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double] = js.native
   /**
     * The y position of the Game Object.
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.native
 }
 
 object GameObjectConfig {
   @scala.inline
-  def apply(
-    add: js.UndefOr[Boolean] = js.undefined,
-    alpha: js.UndefOr[Double] = js.undefined,
-    angle: js.UndefOr[Double] = js.undefined,
-    blendMode: js.UndefOr[Double] = js.undefined,
-    depth: js.UndefOr[Double] = js.undefined,
-    flipX: js.UndefOr[Boolean] = js.undefined,
-    flipY: js.UndefOr[Boolean] = js.undefined,
-    origin: Double | js.Object = null,
-    rotation: js.UndefOr[Double] = js.undefined,
-    scale: Double | js.Object = null,
-    scaleMode: js.UndefOr[Double] = js.undefined,
-    scrollFactor: Double | js.Object = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): GameObjectConfig = {
+  def apply(): GameObjectConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blendMode)) __obj.updateDynamic("blendMode")(blendMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY.get.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleMode)) __obj.updateDynamic("scaleMode")(scaleMode.get.asInstanceOf[js.Any])
-    if (scrollFactor != null) __obj.updateDynamic("scrollFactor")(scrollFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameObjectConfig]
   }
+  @scala.inline
+  implicit class GameObjectConfigOps[Self <: GameObjectConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: Boolean): Self = this.set("add", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdd: Self = this.set("add", js.undefined)
+    @scala.inline
+    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    @scala.inline
+    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngle: Self = this.set("angle", js.undefined)
+    @scala.inline
+    def setBlendMode(value: Double): Self = this.set("blendMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlendMode: Self = this.set("blendMode", js.undefined)
+    @scala.inline
+    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepth: Self = this.set("depth", js.undefined)
+    @scala.inline
+    def setFlipX(value: Boolean): Self = this.set("flipX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlipX: Self = this.set("flipX", js.undefined)
+    @scala.inline
+    def setFlipY(value: Boolean): Self = this.set("flipY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlipY: Self = this.set("flipY", js.undefined)
+    @scala.inline
+    def setOrigin(value: Double | js.Object): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setScale(value: Double | js.Object): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setScaleMode(value: Double): Self = this.set("scaleMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleMode: Self = this.set("scaleMode", js.undefined)
+    @scala.inline
+    def setScrollFactor(value: Double | js.Object): Self = this.set("scrollFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollFactor: Self = this.set("scrollFactor", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

@@ -31,16 +31,34 @@ trait SchemaTransactionSelector extends js.Object {
 
 object SchemaTransactionSelector {
   @scala.inline
-  def apply(
-    begin: SchemaTransactionOptions = null,
-    id: String = null,
-    singleUse: SchemaTransactionOptions = null
-  ): SchemaTransactionSelector = {
+  def apply(): SchemaTransactionSelector = {
     val __obj = js.Dynamic.literal()
-    if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (singleUse != null) __obj.updateDynamic("singleUse")(singleUse.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransactionSelector]
   }
+  @scala.inline
+  implicit class SchemaTransactionSelectorOps[Self <: SchemaTransactionSelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBegin(value: SchemaTransactionOptions): Self = this.set("begin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBegin: Self = this.set("begin", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setSingleUse(value: SchemaTransactionOptions): Self = this.set("singleUse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleUse: Self = this.set("singleUse", js.undefined)
+  }
+  
 }
 

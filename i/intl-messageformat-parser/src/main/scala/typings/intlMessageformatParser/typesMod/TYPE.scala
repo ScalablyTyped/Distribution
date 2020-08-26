@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait TYPE extends js.Object
 
-@JSImport("intl-messageformat-parser/lib/types", "TYPE")
+@JSImport("intl-messageformat-parser/lib/src/types", "TYPE")
 @js.native
 object TYPE extends js.Object {
   /**
@@ -55,6 +55,12 @@ object TYPE extends js.Object {
   sealed trait select extends TYPE
   
   /**
+    * XML-like tag
+    */
+  @js.native
+  sealed trait tag extends TYPE
+  
+  /**
     * Variable w/ time format
     */
   @js.native
@@ -82,6 +88,9 @@ object TYPE extends js.Object {
   
   /* 5 */ @js.native
   object select extends TopLevel[select with Double]
+  
+  /* 8 */ @js.native
+  object tag extends TopLevel[tag with Double]
   
   /* 4 */ @js.native
   object time extends TopLevel[time with Double]

@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Sidebar", "Sidebar")
+@JSImport("grommet/es6/components/Sidebar", "Sidebar")
 @js.native
 object Sidebar extends TopLevel[
       FC[

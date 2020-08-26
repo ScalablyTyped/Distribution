@@ -21,14 +21,30 @@ trait SchemaClusteringMetrics extends js.Object {
 
 object SchemaClusteringMetrics {
   @scala.inline
-  def apply(
-    daviesBouldinIndex: js.UndefOr[Double] = js.undefined,
-    meanSquaredDistance: js.UndefOr[Double] = js.undefined
-  ): SchemaClusteringMetrics = {
+  def apply(): SchemaClusteringMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(daviesBouldinIndex)) __obj.updateDynamic("daviesBouldinIndex")(daviesBouldinIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(meanSquaredDistance)) __obj.updateDynamic("meanSquaredDistance")(meanSquaredDistance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusteringMetrics]
   }
+  @scala.inline
+  implicit class SchemaClusteringMetricsOps[Self <: SchemaClusteringMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDaviesBouldinIndex(value: Double): Self = this.set("daviesBouldinIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDaviesBouldinIndex: Self = this.set("daviesBouldinIndex", js.undefined)
+    @scala.inline
+    def setMeanSquaredDistance(value: Double): Self = this.set("meanSquaredDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeanSquaredDistance: Self = this.set("meanSquaredDistance", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends Combiner {
   def this(file: String) = this()
+  def this(file: js.UndefOr[scala.Nothing], sourceRoot: String) = this()
   def this(file: String, sourceRoot: String) = this()
 }
 

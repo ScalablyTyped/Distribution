@@ -1,6 +1,5 @@
 package typings.algoliasearchHelper.mod
 
-import typings.algoliasearch.mod.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +10,13 @@ object ^ extends js.Object {
   /**
     * The algoliasearchHelper module is the function that will let its
     * contains everything needed to use the Algoliasearch
-    * Helper. It is a also a function that instanciate the helper.
+    * Helper. It is a also a function that instantiate the helper.
     * To use the helper, you also need the Algolia JS client v3.
     * @param client an AlgoliaSearch client
     * @param index the name of the index to query
     * @param opts
     */
-  def apply(client: Client, index: String, opts: QueryParameters): AlgoliaSearchHelper = js.native
+  def apply(client: SearchClient, index: String): AlgoliaSearchHelper = js.native
+  def apply(client: SearchClient, index: String, opts: PlainSearchParameters): AlgoliaSearchHelper = js.native
 }
 

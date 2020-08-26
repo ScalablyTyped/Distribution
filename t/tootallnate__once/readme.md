@@ -1,7 +1,7 @@
 
 # Scala.js typings for tootallnate__once
 
-Typings are for version 1.0.0
+Typings are for version 1.1.2
 
 ## Library description:
 Creates a Promise that waits for a single event
@@ -10,12 +10,15 @@ Creates a Promise that waits for a single event
 | ------------------ | :-------------: |
 | Full name          | @tootallnate/once |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 51 |
+| # releases         | 6 |
+| # dependents       | 5 |
+| # downloads        | 23740975 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/TooTallNate/once#readme)
+- [Bugs](https://github.com/TooTallNate/once/issues)
+- [Repository](https://github.com/TooTallNate/once)
 - [Npm](https://www.npmjs.com/package/%40tootallnate%2Fonce)
     
 

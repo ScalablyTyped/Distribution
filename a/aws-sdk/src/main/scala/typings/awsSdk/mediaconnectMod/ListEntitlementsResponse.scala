@@ -18,11 +18,32 @@ trait ListEntitlementsResponse extends js.Object {
 
 object ListEntitlementsResponse {
   @scala.inline
-  def apply(Entitlements: listOfListedEntitlement = null, NextToken: string = null): ListEntitlementsResponse = {
+  def apply(): ListEntitlementsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Entitlements != null) __obj.updateDynamic("Entitlements")(Entitlements.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEntitlementsResponse]
   }
+  @scala.inline
+  implicit class ListEntitlementsResponseOps[Self <: ListEntitlementsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntitlementsVarargs(value: ListedEntitlement*): Self = this.set("Entitlements", js.Array(value :_*))
+    @scala.inline
+    def setEntitlements(value: listOfListedEntitlement): Self = this.set("Entitlements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntitlements: Self = this.set("Entitlements", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

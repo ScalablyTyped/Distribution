@@ -14,10 +14,26 @@ trait GetIntrospectionSchemaResponse extends js.Object {
 
 object GetIntrospectionSchemaResponse {
   @scala.inline
-  def apply(schema: _Blob = null): GetIntrospectionSchemaResponse = {
+  def apply(): GetIntrospectionSchemaResponse = {
     val __obj = js.Dynamic.literal()
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIntrospectionSchemaResponse]
   }
+  @scala.inline
+  implicit class GetIntrospectionSchemaResponseOps[Self <: GetIntrospectionSchemaResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSchema(value: _Blob): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+  }
+  
 }
 

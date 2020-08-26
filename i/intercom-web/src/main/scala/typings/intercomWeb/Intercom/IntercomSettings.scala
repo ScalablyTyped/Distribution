@@ -5,86 +5,145 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IntercomSettings extends js.Object {
-  var action_color: js.UndefOr[String] = js.undefined
-  var alignment: js.UndefOr[String] = js.undefined
+  var action_color: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.native
   // Messenger attributes
-  var app_id: js.UndefOr[String] = js.undefined
-  var background_color: js.UndefOr[String] = js.undefined
-  var company: js.UndefOr[Createdat] = js.undefined
-  var created_at: js.UndefOr[Double] = js.undefined
-  var custom_launcher_selector: js.UndefOr[String] = js.undefined
+  var app_id: js.UndefOr[String] = js.native
+  var background_color: js.UndefOr[String] = js.native
+  var company: js.UndefOr[Createdat] = js.native
+  var created_at: js.UndefOr[Double] = js.native
+  var custom_launcher_selector: js.UndefOr[String] = js.native
   // Data attributes
-  var email: js.UndefOr[String] = js.undefined
-  var hide_default_launcher: js.UndefOr[Boolean] = js.undefined
-  var horizontal_padding: js.UndefOr[Double] = js.undefined
-  var language_override: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var phone: js.UndefOr[String] = js.undefined
-  var session_duration: js.UndefOr[Double] = js.undefined
-  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.undefined
-  var user_hash: js.UndefOr[String] = js.undefined
-  var user_id: js.UndefOr[String] = js.undefined
-  var utm_campaign: js.UndefOr[String] = js.undefined
-  var utm_content: js.UndefOr[String] = js.undefined
-  var utm_medium: js.UndefOr[String] = js.undefined
-  var utm_source: js.UndefOr[String] = js.undefined
-  var utm_term: js.UndefOr[String] = js.undefined
-  var vertical_padding: js.UndefOr[Double] = js.undefined
+  var email: js.UndefOr[String] = js.native
+  var hide_default_launcher: js.UndefOr[Boolean] = js.native
+  var horizontal_padding: js.UndefOr[Double] = js.native
+  var language_override: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.native
+  var session_duration: js.UndefOr[Double] = js.native
+  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.native
+  var user_hash: js.UndefOr[String] = js.native
+  var user_id: js.UndefOr[String] = js.native
+  var utm_campaign: js.UndefOr[String] = js.native
+  var utm_content: js.UndefOr[String] = js.native
+  var utm_medium: js.UndefOr[String] = js.native
+  var utm_source: js.UndefOr[String] = js.native
+  var utm_term: js.UndefOr[String] = js.native
+  var vertical_padding: js.UndefOr[Double] = js.native
 }
 
 object IntercomSettings {
   @scala.inline
-  def apply(
-    action_color: String = null,
-    alignment: String = null,
-    app_id: String = null,
-    background_color: String = null,
-    company: Createdat = null,
-    created_at: js.UndefOr[Double] = js.undefined,
-    custom_launcher_selector: String = null,
-    email: String = null,
-    hide_default_launcher: js.UndefOr[Boolean] = js.undefined,
-    horizontal_padding: js.UndefOr[Double] = js.undefined,
-    language_override: String = null,
-    name: String = null,
-    phone: String = null,
-    session_duration: js.UndefOr[Double] = js.undefined,
-    unsubscribed_from_emails: js.UndefOr[Boolean] = js.undefined,
-    user_hash: String = null,
-    user_id: String = null,
-    utm_campaign: String = null,
-    utm_content: String = null,
-    utm_medium: String = null,
-    utm_source: String = null,
-    utm_term: String = null,
-    vertical_padding: js.UndefOr[Double] = js.undefined
-  ): IntercomSettings = {
+  def apply(): IntercomSettings = {
     val __obj = js.Dynamic.literal()
-    if (action_color != null) __obj.updateDynamic("action_color")(action_color.asInstanceOf[js.Any])
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (background_color != null) __obj.updateDynamic("background_color")(background_color.asInstanceOf[js.Any])
-    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
-    if (!js.isUndefined(created_at)) __obj.updateDynamic("created_at")(created_at.get.asInstanceOf[js.Any])
-    if (custom_launcher_selector != null) __obj.updateDynamic("custom_launcher_selector")(custom_launcher_selector.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide_default_launcher)) __obj.updateDynamic("hide_default_launcher")(hide_default_launcher.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal_padding)) __obj.updateDynamic("horizontal_padding")(horizontal_padding.get.asInstanceOf[js.Any])
-    if (language_override != null) __obj.updateDynamic("language_override")(language_override.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (!js.isUndefined(session_duration)) __obj.updateDynamic("session_duration")(session_duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsubscribed_from_emails)) __obj.updateDynamic("unsubscribed_from_emails")(unsubscribed_from_emails.get.asInstanceOf[js.Any])
-    if (user_hash != null) __obj.updateDynamic("user_hash")(user_hash.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
-    if (utm_campaign != null) __obj.updateDynamic("utm_campaign")(utm_campaign.asInstanceOf[js.Any])
-    if (utm_content != null) __obj.updateDynamic("utm_content")(utm_content.asInstanceOf[js.Any])
-    if (utm_medium != null) __obj.updateDynamic("utm_medium")(utm_medium.asInstanceOf[js.Any])
-    if (utm_source != null) __obj.updateDynamic("utm_source")(utm_source.asInstanceOf[js.Any])
-    if (utm_term != null) __obj.updateDynamic("utm_term")(utm_term.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical_padding)) __obj.updateDynamic("vertical_padding")(vertical_padding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntercomSettings]
   }
+  @scala.inline
+  implicit class IntercomSettingsOps[Self <: IntercomSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction_color(value: String): Self = this.set("action_color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction_color: Self = this.set("action_color", js.undefined)
+    @scala.inline
+    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    @scala.inline
+    def setApp_id(value: String): Self = this.set("app_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApp_id: Self = this.set("app_id", js.undefined)
+    @scala.inline
+    def setBackground_color(value: String): Self = this.set("background_color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground_color: Self = this.set("background_color", js.undefined)
+    @scala.inline
+    def setCompany(value: Createdat): Self = this.set("company", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompany: Self = this.set("company", js.undefined)
+    @scala.inline
+    def setCreated_at(value: Double): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated_at: Self = this.set("created_at", js.undefined)
+    @scala.inline
+    def setCustom_launcher_selector(value: String): Self = this.set("custom_launcher_selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom_launcher_selector: Self = this.set("custom_launcher_selector", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setHide_default_launcher(value: Boolean): Self = this.set("hide_default_launcher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHide_default_launcher: Self = this.set("hide_default_launcher", js.undefined)
+    @scala.inline
+    def setHorizontal_padding(value: Double): Self = this.set("horizontal_padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal_padding: Self = this.set("horizontal_padding", js.undefined)
+    @scala.inline
+    def setLanguage_override(value: String): Self = this.set("language_override", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage_override: Self = this.set("language_override", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhone: Self = this.set("phone", js.undefined)
+    @scala.inline
+    def setSession_duration(value: Double): Self = this.set("session_duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession_duration: Self = this.set("session_duration", js.undefined)
+    @scala.inline
+    def setUnsubscribed_from_emails(value: Boolean): Self = this.set("unsubscribed_from_emails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsubscribed_from_emails: Self = this.set("unsubscribed_from_emails", js.undefined)
+    @scala.inline
+    def setUser_hash(value: String): Self = this.set("user_hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser_hash: Self = this.set("user_hash", js.undefined)
+    @scala.inline
+    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser_id: Self = this.set("user_id", js.undefined)
+    @scala.inline
+    def setUtm_campaign(value: String): Self = this.set("utm_campaign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtm_campaign: Self = this.set("utm_campaign", js.undefined)
+    @scala.inline
+    def setUtm_content(value: String): Self = this.set("utm_content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtm_content: Self = this.set("utm_content", js.undefined)
+    @scala.inline
+    def setUtm_medium(value: String): Self = this.set("utm_medium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtm_medium: Self = this.set("utm_medium", js.undefined)
+    @scala.inline
+    def setUtm_source(value: String): Self = this.set("utm_source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtm_source: Self = this.set("utm_source", js.undefined)
+    @scala.inline
+    def setUtm_term(value: String): Self = this.set("utm_term", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtm_term: Self = this.set("utm_term", js.undefined)
+    @scala.inline
+    def setVertical_padding(value: Double): Self = this.set("vertical_padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical_padding: Self = this.set("vertical_padding", js.undefined)
+  }
+  
 }
 

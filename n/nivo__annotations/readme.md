@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__annotations
 
-Typings are for version 0.61.0
+Typings are for version 0.62.0
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 0.61.0
 | ------------------ | :-------------: |
 | Full name          | @nivo/annotations |
 | Keywords           | nivo, dataviz, react, charts, annotations |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 5 |
-| # downloads        | 325633 |
+| # downloads        | 383297 |
 | # stars            | 0 |
 
 ## Links

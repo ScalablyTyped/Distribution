@@ -23,7 +23,6 @@ object unstableCreateBlockingRoot extends js.Object {
     * @see https://reactjs.org/docs/concurrent-mode-adoption.html#migration-step-blocking-mode
     * @see https://reactjs.org/docs/concurrent-mode-reference.html#createblockingroot
     */
-  def apply(container: Element | Document | DocumentFragment | Comment): Root = js.native
-  def apply(container: Element | Document | DocumentFragment | Comment, options: RootOptions): Root = js.native
+  def apply(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = js.native
 }
 

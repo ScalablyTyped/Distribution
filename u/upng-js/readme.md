@@ -12,7 +12,7 @@ Small, fast and advanced PNG / APNG encoder and decoder
 | Keywords           | png, apng, image, conversion |
 | # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 196352 |
+| # downloads        | 201691 |
 | # stars            | 2 |
 
 ## Links

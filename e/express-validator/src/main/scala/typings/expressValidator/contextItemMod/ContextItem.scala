@@ -6,8 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContextItem extends js.Object {
-  def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit]
+  def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
 }
 
 object ContextItem {
@@ -16,5 +17,20 @@ object ContextItem {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction3(run))
     __obj.asInstanceOf[ContextItem]
   }
+  @scala.inline
+  implicit class ContextItemOps[Self <: ContextItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRun(value: (Context, js.Any, Meta) => js.Promise[Unit]): Self = this.set("run", js.Any.fromFunction3(value))
+  }
+  
 }
 

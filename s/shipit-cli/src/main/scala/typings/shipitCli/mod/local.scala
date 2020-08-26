@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object local extends js.Object {
   def apply(command: String): js.Thenable[ShipitLocal] = js.native
+  def apply(
+    command: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
+  ): js.Thenable[ShipitLocal] = js.native
   def apply(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
   def apply(
     command: String,

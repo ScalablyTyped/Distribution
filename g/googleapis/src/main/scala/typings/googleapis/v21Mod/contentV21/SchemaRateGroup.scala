@@ -42,22 +42,52 @@ trait SchemaRateGroup extends js.Object {
 
 object SchemaRateGroup {
   @scala.inline
-  def apply(
-    applicableShippingLabels: js.Array[String] = null,
-    carrierRates: js.Array[SchemaCarrierRate] = null,
-    mainTable: SchemaTable = null,
-    name: String = null,
-    singleValue: SchemaValue = null,
-    subtables: js.Array[SchemaTable] = null
-  ): SchemaRateGroup = {
+  def apply(): SchemaRateGroup = {
     val __obj = js.Dynamic.literal()
-    if (applicableShippingLabels != null) __obj.updateDynamic("applicableShippingLabels")(applicableShippingLabels.asInstanceOf[js.Any])
-    if (carrierRates != null) __obj.updateDynamic("carrierRates")(carrierRates.asInstanceOf[js.Any])
-    if (mainTable != null) __obj.updateDynamic("mainTable")(mainTable.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (singleValue != null) __obj.updateDynamic("singleValue")(singleValue.asInstanceOf[js.Any])
-    if (subtables != null) __obj.updateDynamic("subtables")(subtables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRateGroup]
   }
+  @scala.inline
+  implicit class SchemaRateGroupOps[Self <: SchemaRateGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicableShippingLabelsVarargs(value: String*): Self = this.set("applicableShippingLabels", js.Array(value :_*))
+    @scala.inline
+    def setApplicableShippingLabels(value: js.Array[String]): Self = this.set("applicableShippingLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicableShippingLabels: Self = this.set("applicableShippingLabels", js.undefined)
+    @scala.inline
+    def setCarrierRatesVarargs(value: SchemaCarrierRate*): Self = this.set("carrierRates", js.Array(value :_*))
+    @scala.inline
+    def setCarrierRates(value: js.Array[SchemaCarrierRate]): Self = this.set("carrierRates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCarrierRates: Self = this.set("carrierRates", js.undefined)
+    @scala.inline
+    def setMainTable(value: SchemaTable): Self = this.set("mainTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainTable: Self = this.set("mainTable", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSingleValue(value: SchemaValue): Self = this.set("singleValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleValue: Self = this.set("singleValue", js.undefined)
+    @scala.inline
+    def setSubtablesVarargs(value: SchemaTable*): Self = this.set("subtables", js.Array(value :_*))
+    @scala.inline
+    def setSubtables(value: js.Array[SchemaTable]): Self = this.set("subtables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtables: Self = this.set("subtables", js.undefined)
+  }
+  
 }
 

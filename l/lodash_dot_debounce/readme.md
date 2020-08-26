@@ -11,8 +11,8 @@ The lodash method `_.debounce` exported as a module.
 | Full name          | lodash.debounce |
 | Keywords           | lodash-modularized, debounce |
 | # releases         | 1 |
-| # dependents       | 1427 |
-| # downloads        | 189914211 |
+| # dependents       | 1460 |
+| # downloads        | 186062134 |
 | # stars            | 7 |
 
 ## Links

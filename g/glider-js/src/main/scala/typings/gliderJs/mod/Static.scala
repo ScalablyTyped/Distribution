@@ -1,6 +1,7 @@
 package typings.gliderJs.mod
 
 import org.scalablytyped.runtime.Instantiable2
+import typings.std.HTMLCollection
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,8 +10,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Static[T /* <: HTMLElement */] extends // tslint:disable-next-line no-misused-new
 Instantiable2[/* ref */ HTMLElement, /* options */ Options, Static[HTMLElement]] {
-  var options: Options = js.native
-  var ref: T = js.native
+  var animate_id: Double = js.native
+  var arrows: js.Object = js.native
+  var breakpoint: Double = js.native
+  var containerWidth: Double = js.native
+  var dots: HTMLElement = js.native
+  var ele: T = js.native
+  var isDrag: Boolean = js.native
+  var itemWidth: Double = js.native
+  var opt: Options = js.native
+  var page: Double = js.native
+  var preventClick: Boolean = js.native
+  var slide: Double = js.native
+  var slides: HTMLCollection = js.native
+  var track: HTMLElement = js.native
+  var trackWidth: Double = js.native
   /**
     * Add an item to the list
     * @param element HTMLElement

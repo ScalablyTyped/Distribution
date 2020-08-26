@@ -28,6 +28,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def getConfig(): GaxiosPromise[SchemaProjectConfig] = js.native
   def getConfig(callback: BodyResponseCallback[SchemaProjectConfig]): Unit = js.native
+  def getConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectConfig] = js.native
   def getConfig(params: ParamsResourceProjectsGetconfig): GaxiosPromise[SchemaProjectConfig] = js.native
   def getConfig(params: ParamsResourceProjectsGetconfig, callback: BodyResponseCallback[SchemaProjectConfig]): Unit = js.native
   def getConfig(
@@ -56,6 +57,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def updateConfig(): GaxiosPromise[SchemaProjectConfig] = js.native
   def updateConfig(callback: BodyResponseCallback[SchemaProjectConfig]): Unit = js.native
+  def updateConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectConfig] = js.native
   def updateConfig(params: ParamsResourceProjectsUpdateconfig): GaxiosPromise[SchemaProjectConfig] = js.native
   def updateConfig(params: ParamsResourceProjectsUpdateconfig, callback: BodyResponseCallback[SchemaProjectConfig]): Unit = js.native
   def updateConfig(

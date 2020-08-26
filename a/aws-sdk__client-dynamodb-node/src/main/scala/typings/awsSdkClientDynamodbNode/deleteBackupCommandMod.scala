@@ -26,16 +26,9 @@ object deleteBackupCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DeleteBackupInput) = this()
-    /* CompleteClass */
-    override val input: DeleteBackupInput = js.native
     val middlewareStack: MiddlewareStack[DeleteBackupInput, DeleteBackupOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[DeleteBackupInput, DeleteBackupOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DeleteBackupInput, DeleteBackupOutput] = js.native
   }

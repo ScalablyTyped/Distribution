@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/utils/timeUtil", JSImport.Namespace)
+@JSImport("rc-picker/es/utils/timeUtil", JSImport.Namespace)
 @js.native
 object timeUtilMod extends js.Object {
   def getLowerBoundTime(

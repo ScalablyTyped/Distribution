@@ -40,7 +40,7 @@ trait LayerList extends Widget_ {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems)
     */
-  val selectedItems: Collection[ListItem] = js.native
+  var selectedItems: Collection[ListItem] = js.native
   /**
     * Indicates whether list items may be selected by the user. Selected items may be reordered in the list by dragging gestures with the mouse or touch screen, or with arrow keys on the keyboard.  Selected items are available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems) property.
     *

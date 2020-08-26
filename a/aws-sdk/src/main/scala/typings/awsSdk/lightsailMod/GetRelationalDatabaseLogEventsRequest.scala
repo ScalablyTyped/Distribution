@@ -34,20 +34,42 @@ trait GetRelationalDatabaseLogEventsRequest extends js.Object {
 
 object GetRelationalDatabaseLogEventsRequest {
   @scala.inline
-  def apply(
-    logStreamName: String,
-    relationalDatabaseName: ResourceName,
-    endTime: IsoDate = null,
-    pageToken: String = null,
-    startFromHead: js.UndefOr[Boolean] = js.undefined,
-    startTime: IsoDate = null
-  ): GetRelationalDatabaseLogEventsRequest = {
+  def apply(logStreamName: String, relationalDatabaseName: ResourceName): GetRelationalDatabaseLogEventsRequest = {
     val __obj = js.Dynamic.literal(logStreamName = logStreamName.asInstanceOf[js.Any], relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(startFromHead)) __obj.updateDynamic("startFromHead")(startFromHead.get.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseLogEventsRequest]
   }
+  @scala.inline
+  implicit class GetRelationalDatabaseLogEventsRequestOps[Self <: GetRelationalDatabaseLogEventsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogStreamName(value: String): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: IsoDate): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setStartFromHead(value: Boolean): Self = this.set("startFromHead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartFromHead: Self = this.set("startFromHead", js.undefined)
+    @scala.inline
+    def setStartTime(value: IsoDate): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

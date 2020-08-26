@@ -1,37 +1,38 @@
 package typings.reactDateRange.mod
 
+import typings.moment.mod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalendarProps extends CommonCalendarProps {
   /** default: today */
-  var date: DateInputType
+  var date: DateInputType = js.native
 }
 
 object CalendarProps {
   @scala.inline
-  def apply(
-    date: DateInputType,
-    firstDayOfWeek: js.UndefOr[Double] = js.undefined,
-    format: String = null,
-    lang: LanguageType = null,
-    maxDate: DateInputType = null,
-    minDate: DateInputType = null,
-    onChange: /* range */ Range => Unit = null,
-    onInit: /* range */ Range => Unit = null,
-    theme: CalendarTheme = null
-  ): CalendarProps = {
+  def apply(date: DateInputType): CalendarProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstDayOfWeek)) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction1(onInit))
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarProps]
   }
+  @scala.inline
+  implicit class CalendarPropsOps[Self <: CalendarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDateFunction1(value: /* now */ Moment => AnyDate): Self = this.set("date", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDate(value: DateInputType): Self = this.set("date", value.asInstanceOf[js.Any])
+  }
+  
 }
 

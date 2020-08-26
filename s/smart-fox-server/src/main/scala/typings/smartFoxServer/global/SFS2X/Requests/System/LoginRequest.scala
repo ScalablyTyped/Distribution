@@ -17,7 +17,16 @@ class LoginRequest protected ()
     */
   def this(userName: String) = this()
   def this(userName: String, password: String) = this()
+  def this(userName: String, password: js.UndefOr[scala.Nothing], params: js.Object) = this()
   def this(userName: String, password: String, params: js.Object) = this()
+  def this(
+    userName: String,
+    password: js.UndefOr[scala.Nothing],
+    params: js.UndefOr[scala.Nothing],
+    zoneName: String
+  ) = this()
+  def this(userName: String, password: js.UndefOr[scala.Nothing], params: js.Object, zoneName: String) = this()
+  def this(userName: String, password: String, params: js.UndefOr[scala.Nothing], zoneName: String) = this()
   def this(userName: String, password: String, params: js.Object, zoneName: String) = this()
 }
 

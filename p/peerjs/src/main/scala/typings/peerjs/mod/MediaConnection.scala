@@ -17,6 +17,7 @@ trait MediaConnection extends js.Object {
   var peerConnection: RTCPeerConnection = js.native
   var `type`: String = js.native
   def answer(): Unit = js.native
+  def answer(stream: js.UndefOr[scala.Nothing], options: AnswerOption): Unit = js.native
   def answer(stream: MediaStream): Unit = js.native
   def answer(stream: MediaStream, options: AnswerOption): Unit = js.native
   def close(): Unit = js.native

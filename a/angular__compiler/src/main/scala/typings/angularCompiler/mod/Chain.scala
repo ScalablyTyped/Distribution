@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Chain")
 @js.native
 class Chain protected ()
-  extends typings.angularCompiler.publicApiMod.Chain {
+  extends typings.angularCompiler.compilerMod.Chain {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

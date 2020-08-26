@@ -21,14 +21,5 @@ class NDLicenseFetchDescriptor protected ()
     contentIDBytes: js.Array[Double],
     licenseFetchChallengeCustomData: INDCustomData
   ) = this()
-  /** Gets the content identifer. */
-  /* CompleteClass */
-  override var contentID: Double = js.native
-  /** Gets the type of the content identifier. */
-  /* CompleteClass */
-  override var contentIDType: typings.winrtUwp.Windows.Media.Protection.PlayReady.NDContentIDType = js.native
-  /** Gets or sets custom data for a license fetch challenge. */
-  /* CompleteClass */
-  override var licenseFetchChallengeCustomData: INDCustomData = js.native
 }
 

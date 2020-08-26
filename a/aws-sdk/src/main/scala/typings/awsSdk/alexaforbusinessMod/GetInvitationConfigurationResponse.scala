@@ -22,16 +22,36 @@ trait GetInvitationConfigurationResponse extends js.Object {
 
 object GetInvitationConfigurationResponse {
   @scala.inline
-  def apply(
-    ContactEmail: Email = null,
-    OrganizationName: OrganizationName = null,
-    PrivateSkillIds: ShortSkillIdList = null
-  ): GetInvitationConfigurationResponse = {
+  def apply(): GetInvitationConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (ContactEmail != null) __obj.updateDynamic("ContactEmail")(ContactEmail.asInstanceOf[js.Any])
-    if (OrganizationName != null) __obj.updateDynamic("OrganizationName")(OrganizationName.asInstanceOf[js.Any])
-    if (PrivateSkillIds != null) __obj.updateDynamic("PrivateSkillIds")(PrivateSkillIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInvitationConfigurationResponse]
   }
+  @scala.inline
+  implicit class GetInvitationConfigurationResponseOps[Self <: GetInvitationConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContactEmail(value: Email): Self = this.set("ContactEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactEmail: Self = this.set("ContactEmail", js.undefined)
+    @scala.inline
+    def setOrganizationName(value: OrganizationName): Self = this.set("OrganizationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationName: Self = this.set("OrganizationName", js.undefined)
+    @scala.inline
+    def setPrivateSkillIdsVarargs(value: SkillId*): Self = this.set("PrivateSkillIds", js.Array(value :_*))
+    @scala.inline
+    def setPrivateSkillIds(value: ShortSkillIdList): Self = this.set("PrivateSkillIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateSkillIds: Self = this.set("PrivateSkillIds", js.undefined)
+  }
+  
 }
 

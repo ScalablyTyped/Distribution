@@ -54,32 +54,66 @@ trait AudioCodecSettings extends js.Object {
 
 object AudioCodecSettings {
   @scala.inline
-  def apply(
-    AacSettings: AacSettings = null,
-    Ac3Settings: Ac3Settings = null,
-    AiffSettings: AiffSettings = null,
-    Codec: AudioCodec = null,
-    Eac3AtmosSettings: Eac3AtmosSettings = null,
-    Eac3Settings: Eac3Settings = null,
-    Mp2Settings: Mp2Settings = null,
-    Mp3Settings: Mp3Settings = null,
-    OpusSettings: OpusSettings = null,
-    VorbisSettings: VorbisSettings = null,
-    WavSettings: WavSettings = null
-  ): AudioCodecSettings = {
+  def apply(): AudioCodecSettings = {
     val __obj = js.Dynamic.literal()
-    if (AacSettings != null) __obj.updateDynamic("AacSettings")(AacSettings.asInstanceOf[js.Any])
-    if (Ac3Settings != null) __obj.updateDynamic("Ac3Settings")(Ac3Settings.asInstanceOf[js.Any])
-    if (AiffSettings != null) __obj.updateDynamic("AiffSettings")(AiffSettings.asInstanceOf[js.Any])
-    if (Codec != null) __obj.updateDynamic("Codec")(Codec.asInstanceOf[js.Any])
-    if (Eac3AtmosSettings != null) __obj.updateDynamic("Eac3AtmosSettings")(Eac3AtmosSettings.asInstanceOf[js.Any])
-    if (Eac3Settings != null) __obj.updateDynamic("Eac3Settings")(Eac3Settings.asInstanceOf[js.Any])
-    if (Mp2Settings != null) __obj.updateDynamic("Mp2Settings")(Mp2Settings.asInstanceOf[js.Any])
-    if (Mp3Settings != null) __obj.updateDynamic("Mp3Settings")(Mp3Settings.asInstanceOf[js.Any])
-    if (OpusSettings != null) __obj.updateDynamic("OpusSettings")(OpusSettings.asInstanceOf[js.Any])
-    if (VorbisSettings != null) __obj.updateDynamic("VorbisSettings")(VorbisSettings.asInstanceOf[js.Any])
-    if (WavSettings != null) __obj.updateDynamic("WavSettings")(WavSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioCodecSettings]
   }
+  @scala.inline
+  implicit class AudioCodecSettingsOps[Self <: AudioCodecSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAacSettings(value: AacSettings): Self = this.set("AacSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAacSettings: Self = this.set("AacSettings", js.undefined)
+    @scala.inline
+    def setAc3Settings(value: Ac3Settings): Self = this.set("Ac3Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAc3Settings: Self = this.set("Ac3Settings", js.undefined)
+    @scala.inline
+    def setAiffSettings(value: AiffSettings): Self = this.set("AiffSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAiffSettings: Self = this.set("AiffSettings", js.undefined)
+    @scala.inline
+    def setCodec(value: AudioCodec): Self = this.set("Codec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodec: Self = this.set("Codec", js.undefined)
+    @scala.inline
+    def setEac3AtmosSettings(value: Eac3AtmosSettings): Self = this.set("Eac3AtmosSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEac3AtmosSettings: Self = this.set("Eac3AtmosSettings", js.undefined)
+    @scala.inline
+    def setEac3Settings(value: Eac3Settings): Self = this.set("Eac3Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEac3Settings: Self = this.set("Eac3Settings", js.undefined)
+    @scala.inline
+    def setMp2Settings(value: Mp2Settings): Self = this.set("Mp2Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMp2Settings: Self = this.set("Mp2Settings", js.undefined)
+    @scala.inline
+    def setMp3Settings(value: Mp3Settings): Self = this.set("Mp3Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMp3Settings: Self = this.set("Mp3Settings", js.undefined)
+    @scala.inline
+    def setOpusSettings(value: OpusSettings): Self = this.set("OpusSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpusSettings: Self = this.set("OpusSettings", js.undefined)
+    @scala.inline
+    def setVorbisSettings(value: VorbisSettings): Self = this.set("VorbisSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVorbisSettings: Self = this.set("VorbisSettings", js.undefined)
+    @scala.inline
+    def setWavSettings(value: WavSettings): Self = this.set("WavSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWavSettings: Self = this.set("WavSettings", js.undefined)
+  }
+  
 }
 

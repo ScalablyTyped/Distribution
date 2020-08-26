@@ -37,22 +37,48 @@ trait SchemaSegmentDimensionFilter extends js.Object {
 
 object SchemaSegmentDimensionFilter {
   @scala.inline
-  def apply(
-    caseSensitive: js.UndefOr[Boolean] = js.undefined,
-    dimensionName: String = null,
-    expressions: js.Array[String] = null,
-    maxComparisonValue: String = null,
-    minComparisonValue: String = null,
-    operator: String = null
-  ): SchemaSegmentDimensionFilter = {
+  def apply(): SchemaSegmentDimensionFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
-    if (dimensionName != null) __obj.updateDynamic("dimensionName")(dimensionName.asInstanceOf[js.Any])
-    if (expressions != null) __obj.updateDynamic("expressions")(expressions.asInstanceOf[js.Any])
-    if (maxComparisonValue != null) __obj.updateDynamic("maxComparisonValue")(maxComparisonValue.asInstanceOf[js.Any])
-    if (minComparisonValue != null) __obj.updateDynamic("minComparisonValue")(minComparisonValue.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSegmentDimensionFilter]
   }
+  @scala.inline
+  implicit class SchemaSegmentDimensionFilterOps[Self <: SchemaSegmentDimensionFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    @scala.inline
+    def setDimensionName(value: String): Self = this.set("dimensionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionName: Self = this.set("dimensionName", js.undefined)
+    @scala.inline
+    def setExpressionsVarargs(value: String*): Self = this.set("expressions", js.Array(value :_*))
+    @scala.inline
+    def setExpressions(value: js.Array[String]): Self = this.set("expressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressions: Self = this.set("expressions", js.undefined)
+    @scala.inline
+    def setMaxComparisonValue(value: String): Self = this.set("maxComparisonValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxComparisonValue: Self = this.set("maxComparisonValue", js.undefined)
+    @scala.inline
+    def setMinComparisonValue(value: String): Self = this.set("minComparisonValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinComparisonValue: Self = this.set("minComparisonValue", js.undefined)
+    @scala.inline
+    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Accessible React Alert Dialog.
 | Keywords           | - |
 | # releases         | 29 |
 | # dependents       | 8 |
-| # downloads        | 64394 |
+| # downloads        | 67527 |
 | # stars            | 0 |
 
 ## Links

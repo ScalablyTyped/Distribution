@@ -18,11 +18,30 @@ trait CreateRegexMatchSetResponse extends js.Object {
 
 object CreateRegexMatchSetResponse {
   @scala.inline
-  def apply(ChangeToken: ChangeToken = null, RegexMatchSet: RegexMatchSet = null): CreateRegexMatchSetResponse = {
+  def apply(): CreateRegexMatchSetResponse = {
     val __obj = js.Dynamic.literal()
-    if (ChangeToken != null) __obj.updateDynamic("ChangeToken")(ChangeToken.asInstanceOf[js.Any])
-    if (RegexMatchSet != null) __obj.updateDynamic("RegexMatchSet")(RegexMatchSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRegexMatchSetResponse]
   }
+  @scala.inline
+  implicit class CreateRegexMatchSetResponseOps[Self <: CreateRegexMatchSetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeToken: Self = this.set("ChangeToken", js.undefined)
+    @scala.inline
+    def setRegexMatchSet(value: RegexMatchSet): Self = this.set("RegexMatchSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexMatchSet: Self = this.set("RegexMatchSet", js.undefined)
+  }
+  
 }
 

@@ -27,6 +27,7 @@ class ResourceImages protected () extends js.Object {
     */
   def annotate(): GaxiosPromise[SchemaGoogleCloudVisionV1p1beta1BatchAnnotateImagesResponse] = js.native
   def annotate(callback: BodyResponseCallback[SchemaGoogleCloudVisionV1p1beta1BatchAnnotateImagesResponse]): Unit = js.native
+  def annotate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudVisionV1p1beta1BatchAnnotateImagesResponse] = js.native
   def annotate(params: ParamsResourceImagesAnnotate): GaxiosPromise[SchemaGoogleCloudVisionV1p1beta1BatchAnnotateImagesResponse] = js.native
   def annotate(
     params: ParamsResourceImagesAnnotate,

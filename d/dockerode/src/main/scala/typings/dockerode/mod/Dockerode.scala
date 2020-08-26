@@ -151,6 +151,13 @@ trait Dockerode extends js.Object {
     image: String,
     cmd: js.Array[String],
     outputStream: js.Array[WritableStream],
+    createOptions: js.UndefOr[scala.Nothing],
+    startOptions: js.Object
+  ): js.Promise[_] = js.native
+  def run(
+    image: String,
+    cmd: js.Array[String],
+    outputStream: js.Array[WritableStream],
     createOptions: js.Object
   ): js.Promise[_] = js.native
   def run(
@@ -177,6 +184,13 @@ trait Dockerode extends js.Object {
   ): EventEmitter = js.native
   def run(image: String, cmd: js.Array[String], outputStream: WritableStream): js.Promise[_] = js.native
   def run(image: String, cmd: js.Array[String], outputStream: WritableStream, callback: Callback[_]): EventEmitter = js.native
+  def run(
+    image: String,
+    cmd: js.Array[String],
+    outputStream: WritableStream,
+    createOptions: js.UndefOr[scala.Nothing],
+    startOptions: js.Object
+  ): js.Promise[_] = js.native
   def run(image: String, cmd: js.Array[String], outputStream: WritableStream, createOptions: js.Object): js.Promise[_] = js.native
   def run(
     image: String,

@@ -34,22 +34,46 @@ trait GetOperationDetailResponse extends js.Object {
 
 object GetOperationDetailResponse {
   @scala.inline
-  def apply(
-    DomainName: DomainName = null,
-    Message: ErrorMessage = null,
-    OperationId: OperationId = null,
-    Status: OperationStatus = null,
-    SubmittedDate: Timestamp = null,
-    Type: OperationType = null
-  ): GetOperationDetailResponse = {
+  def apply(): GetOperationDetailResponse = {
     val __obj = js.Dynamic.literal()
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubmittedDate != null) __obj.updateDynamic("SubmittedDate")(SubmittedDate.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOperationDetailResponse]
   }
+  @scala.inline
+  implicit class GetOperationDetailResponseOps[Self <: GetOperationDetailResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    @scala.inline
+    def setMessage(value: ErrorMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setOperationId(value: OperationId): Self = this.set("OperationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("OperationId", js.undefined)
+    @scala.inline
+    def setStatus(value: OperationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubmittedDate(value: Timestamp): Self = this.set("SubmittedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmittedDate: Self = this.set("SubmittedDate", js.undefined)
+    @scala.inline
+    def setType(value: OperationType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

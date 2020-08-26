@@ -20,8 +20,6 @@ import typings.babelTypes.babelTypesStrings.Slash
 import typings.babelTypes.babelTypesStrings.Verticalline
 import typings.babelTypes.babelTypesStrings.^
 import typings.babelTypes.babelTypesStrings.`-_`
-import typings.babelTypes.babelTypesStrings.in
-import typings.babelTypes.babelTypesStrings.instanceof
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,15 +27,45 @@ import scala.scalajs.js.annotation._
 @JSImport("@babel/types", "binaryExpression")
 @js.native
 object binaryExpression extends js.Object {
-  def apply(
-    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
-    left: Expression,
-    right: Expression
-  ): BinaryExpression_ = js.native
-  def apply(
-    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | ^  | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
-    left: PrivateName_,
-    right: Expression
-  ): BinaryExpression_ = js.native
+  def apply(operator: Ampersand, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Ampersand, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: AsteriskAsterisk, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: AsteriskAsterisk, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Asterisk, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Asterisk, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: EqualssignEqualssignEqualssign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: EqualssignEqualssignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: EqualssignEqualssign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: EqualssignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: ExclamationmarkEqualssignEqualssign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: ExclamationmarkEqualssignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: ExclamationmarkEqualssign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: ExclamationmarkEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: GreaterthansignEqualssign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: GreaterthansignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: GreaterthansignGreaterthansignGreaterthansign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: GreaterthansignGreaterthansignGreaterthansign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: GreaterthansignGreaterthansign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: GreaterthansignGreaterthansign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Greaterthansign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Greaterthansign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: LessthansignEqualssign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: LessthansignEqualssign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: LessthansignLessthansign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: LessthansignLessthansign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Lessthansign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Lessthansign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Percentsign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Percentsign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Plussign, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Plussign, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Slash, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Slash, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Verticalline, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: Verticalline, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: ^, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: ^, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: `-_`, left: Expression, right: Expression): BinaryExpression_ = js.native
+  def apply(operator: `-_`, left: PrivateName_, right: Expression): BinaryExpression_ = js.native
 }
 

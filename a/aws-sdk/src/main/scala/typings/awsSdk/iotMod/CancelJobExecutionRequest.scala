@@ -30,18 +30,38 @@ trait CancelJobExecutionRequest extends js.Object {
 
 object CancelJobExecutionRequest {
   @scala.inline
-  def apply(
-    jobId: JobId,
-    thingName: ThingName,
-    expectedVersion: js.UndefOr[ExpectedVersion] = js.undefined,
-    force: js.UndefOr[ForceFlag] = js.undefined,
-    statusDetails: DetailsMap = null
-  ): CancelJobExecutionRequest = {
+  def apply(jobId: JobId, thingName: ThingName): CancelJobExecutionRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelJobExecutionRequest]
   }
+  @scala.inline
+  implicit class CancelJobExecutionRequestOps[Self <: CancelJobExecutionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpectedVersion(value: ExpectedVersion): Self = this.set("expectedVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedVersion: Self = this.set("expectedVersion", js.undefined)
+    @scala.inline
+    def setForce(value: ForceFlag): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setStatusDetails(value: DetailsMap): Self = this.set("statusDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetails: Self = this.set("statusDetails", js.undefined)
+  }
+  
 }
 

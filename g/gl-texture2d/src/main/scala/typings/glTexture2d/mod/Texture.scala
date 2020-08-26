@@ -23,12 +23,15 @@ trait Texture extends js.Object {
   def dispose(): Unit = js.native
   def generateMipmap(): Unit = js.native
   def setPixels(data: InputType): Unit = js.native
+  def setPixels(data: InputType, offset: js.UndefOr[scala.Nothing], mipLevel: GLenum): Unit = js.native
   def setPixels(data: InputType, offset: js.Tuple2[Double, Double]): Unit = js.native
   def setPixels(data: InputType, offset: js.Tuple2[Double, Double], mipLevel: GLenum): Unit = js.native
   def setPixels(data: RawObject): Unit = js.native
+  def setPixels(data: RawObject, offset: js.UndefOr[scala.Nothing], mipLevel: GLenum): Unit = js.native
   def setPixels(data: RawObject, offset: js.Tuple2[Double, Double]): Unit = js.native
   def setPixels(data: RawObject, offset: js.Tuple2[Double, Double], mipLevel: GLenum): Unit = js.native
   def setPixels(data: ndarray[Double]): Unit = js.native
+  def setPixels(data: ndarray[Double], offset: js.UndefOr[scala.Nothing], mipLevel: GLenum): Unit = js.native
   def setPixels(data: ndarray[Double], offset: js.Tuple2[Double, Double]): Unit = js.native
   def setPixels(data: ndarray[Double], offset: js.Tuple2[Double, Double], mipLevel: GLenum): Unit = js.native
 }

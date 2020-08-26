@@ -5,43 +5,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBlockHeader extends js.Object {
   /** BlockHeader batchIds */
-  var batchIds: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var batchIds: js.UndefOr[js.Array[String] | Null] = js.native
   /** BlockHeader blockNum */
   var blockNum: js.UndefOr[
     Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.undefined
+  ] = js.native
   /** BlockHeader consensus */
-  var consensus: js.UndefOr[Uint8Array | Null] = js.undefined
+  var consensus: js.UndefOr[Uint8Array | Null] = js.native
   /** BlockHeader previousBlockId */
-  var previousBlockId: js.UndefOr[String | Null] = js.undefined
+  var previousBlockId: js.UndefOr[String | Null] = js.native
   /** BlockHeader signerPublicKey */
-  var signerPublicKey: js.UndefOr[String | Null] = js.undefined
+  var signerPublicKey: js.UndefOr[String | Null] = js.native
   /** BlockHeader stateRootHash */
-  var stateRootHash: js.UndefOr[String | Null] = js.undefined
+  var stateRootHash: js.UndefOr[String | Null] = js.native
 }
 
 object IBlockHeader {
   @scala.inline
-  def apply(
-    batchIds: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    blockNum: js.UndefOr[
-      Null | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
-    ] = js.undefined,
-    consensus: js.UndefOr[Null | Uint8Array] = js.undefined,
-    previousBlockId: js.UndefOr[Null | String] = js.undefined,
-    signerPublicKey: js.UndefOr[Null | String] = js.undefined,
-    stateRootHash: js.UndefOr[Null | String] = js.undefined
-  ): IBlockHeader = {
+  def apply(): IBlockHeader = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchIds)) __obj.updateDynamic("batchIds")(batchIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(blockNum)) __obj.updateDynamic("blockNum")(blockNum.asInstanceOf[js.Any])
-    if (!js.isUndefined(consensus)) __obj.updateDynamic("consensus")(consensus.asInstanceOf[js.Any])
-    if (!js.isUndefined(previousBlockId)) __obj.updateDynamic("previousBlockId")(previousBlockId.asInstanceOf[js.Any])
-    if (!js.isUndefined(signerPublicKey)) __obj.updateDynamic("signerPublicKey")(signerPublicKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(stateRootHash)) __obj.updateDynamic("stateRootHash")(stateRootHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBlockHeader]
   }
+  @scala.inline
+  implicit class IBlockHeaderOps[Self <: IBlockHeader] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchIdsVarargs(value: String*): Self = this.set("batchIds", js.Array(value :_*))
+    @scala.inline
+    def setBatchIds(value: js.Array[String]): Self = this.set("batchIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchIds: Self = this.set("batchIds", js.undefined)
+    @scala.inline
+    def setBatchIdsNull: Self = this.set("batchIds", null)
+    @scala.inline
+    def setBlockNum(
+      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+    ): Self = this.set("blockNum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockNum: Self = this.set("blockNum", js.undefined)
+    @scala.inline
+    def setBlockNumNull: Self = this.set("blockNum", null)
+    @scala.inline
+    def setConsensus(value: Uint8Array): Self = this.set("consensus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsensus: Self = this.set("consensus", js.undefined)
+    @scala.inline
+    def setConsensusNull: Self = this.set("consensus", null)
+    @scala.inline
+    def setPreviousBlockId(value: String): Self = this.set("previousBlockId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousBlockId: Self = this.set("previousBlockId", js.undefined)
+    @scala.inline
+    def setPreviousBlockIdNull: Self = this.set("previousBlockId", null)
+    @scala.inline
+    def setSignerPublicKey(value: String): Self = this.set("signerPublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignerPublicKey: Self = this.set("signerPublicKey", js.undefined)
+    @scala.inline
+    def setSignerPublicKeyNull: Self = this.set("signerPublicKey", null)
+    @scala.inline
+    def setStateRootHash(value: String): Self = this.set("stateRootHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateRootHash: Self = this.set("stateRootHash", js.undefined)
+    @scala.inline
+    def setStateRootHashNull: Self = this.set("stateRootHash", null)
+  }
+  
 }
 

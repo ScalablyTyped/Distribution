@@ -47,6 +47,7 @@ object GraphQuery extends js.Object {
     * Parse syntax tree of a GraphQL query
     */
   def parseSyntaxTree(str: String): js.Any = js.native
+  def parseSyntaxTree(str: String, state: js.UndefOr[scala.Nothing], arr: js.Array[_]): js.Any = js.native
   def parseSyntaxTree(str: String, state: String): js.Any = js.native
   def parseSyntaxTree(str: String, state: String, arr: js.Array[_]): js.Any = js.native
   /**

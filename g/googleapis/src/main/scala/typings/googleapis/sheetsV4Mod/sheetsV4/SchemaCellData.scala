@@ -76,30 +76,64 @@ trait SchemaCellData extends js.Object {
 
 object SchemaCellData {
   @scala.inline
-  def apply(
-    dataValidation: SchemaDataValidationRule = null,
-    effectiveFormat: SchemaCellFormat = null,
-    effectiveValue: SchemaExtendedValue = null,
-    formattedValue: String = null,
-    hyperlink: String = null,
-    note: String = null,
-    pivotTable: SchemaPivotTable = null,
-    textFormatRuns: js.Array[SchemaTextFormatRun] = null,
-    userEnteredFormat: SchemaCellFormat = null,
-    userEnteredValue: SchemaExtendedValue = null
-  ): SchemaCellData = {
+  def apply(): SchemaCellData = {
     val __obj = js.Dynamic.literal()
-    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
-    if (effectiveFormat != null) __obj.updateDynamic("effectiveFormat")(effectiveFormat.asInstanceOf[js.Any])
-    if (effectiveValue != null) __obj.updateDynamic("effectiveValue")(effectiveValue.asInstanceOf[js.Any])
-    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue.asInstanceOf[js.Any])
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (pivotTable != null) __obj.updateDynamic("pivotTable")(pivotTable.asInstanceOf[js.Any])
-    if (textFormatRuns != null) __obj.updateDynamic("textFormatRuns")(textFormatRuns.asInstanceOf[js.Any])
-    if (userEnteredFormat != null) __obj.updateDynamic("userEnteredFormat")(userEnteredFormat.asInstanceOf[js.Any])
-    if (userEnteredValue != null) __obj.updateDynamic("userEnteredValue")(userEnteredValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCellData]
   }
+  @scala.inline
+  implicit class SchemaCellDataOps[Self <: SchemaCellData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataValidation(value: SchemaDataValidationRule): Self = this.set("dataValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataValidation: Self = this.set("dataValidation", js.undefined)
+    @scala.inline
+    def setEffectiveFormat(value: SchemaCellFormat): Self = this.set("effectiveFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectiveFormat: Self = this.set("effectiveFormat", js.undefined)
+    @scala.inline
+    def setEffectiveValue(value: SchemaExtendedValue): Self = this.set("effectiveValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectiveValue: Self = this.set("effectiveValue", js.undefined)
+    @scala.inline
+    def setFormattedValue(value: String): Self = this.set("formattedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattedValue: Self = this.set("formattedValue", js.undefined)
+    @scala.inline
+    def setHyperlink(value: String): Self = this.set("hyperlink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyperlink: Self = this.set("hyperlink", js.undefined)
+    @scala.inline
+    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("note", js.undefined)
+    @scala.inline
+    def setPivotTable(value: SchemaPivotTable): Self = this.set("pivotTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivotTable: Self = this.set("pivotTable", js.undefined)
+    @scala.inline
+    def setTextFormatRunsVarargs(value: SchemaTextFormatRun*): Self = this.set("textFormatRuns", js.Array(value :_*))
+    @scala.inline
+    def setTextFormatRuns(value: js.Array[SchemaTextFormatRun]): Self = this.set("textFormatRuns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextFormatRuns: Self = this.set("textFormatRuns", js.undefined)
+    @scala.inline
+    def setUserEnteredFormat(value: SchemaCellFormat): Self = this.set("userEnteredFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserEnteredFormat: Self = this.set("userEnteredFormat", js.undefined)
+    @scala.inline
+    def setUserEnteredValue(value: SchemaExtendedValue): Self = this.set("userEnteredValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserEnteredValue: Self = this.set("userEnteredValue", js.undefined)
+  }
+  
 }
 

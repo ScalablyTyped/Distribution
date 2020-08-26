@@ -14,6 +14,7 @@ object geomMod extends js.Object {
   class Circle protected () extends default {
     def this(center: Coordinate) = this()
     def this(center: Coordinate, opt_radius: Double) = this()
+    def this(center: Coordinate, opt_radius: js.UndefOr[scala.Nothing], opt_layout: GeometryLayout) = this()
     def this(center: Coordinate, opt_radius: Double, opt_layout: GeometryLayout) = this()
   }
   
@@ -51,6 +52,11 @@ object geomMod extends js.Object {
     ) = this()
     def this(
       coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],
+      opt_layout: js.UndefOr[scala.Nothing],
+      opt_ends: js.Array[Double]
+    ) = this()
+    def this(
+      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],
       opt_layout: GeometryLayout,
       opt_ends: js.Array[Double]
     ) = this()
@@ -73,6 +79,11 @@ object geomMod extends js.Object {
     ) = this()
     def this(
       coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
+      opt_layout: js.UndefOr[scala.Nothing],
+      opt_endss: js.Array[js.Array[Double]]
+    ) = this()
+    def this(
+      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
       opt_layout: GeometryLayout,
       opt_endss: js.Array[js.Array[Double]]
     ) = this()
@@ -90,6 +101,11 @@ object geomMod extends js.Object {
     extends typings.ol.polygonMod.default {
     def this(coordinates: js.Array[js.Array[Coordinate] | Double]) = this()
     def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: GeometryLayout) = this()
+    def this(
+      coordinates: js.Array[js.Array[Coordinate] | Double],
+      opt_layout: js.UndefOr[scala.Nothing],
+      opt_ends: js.Array[Double]
+    ) = this()
     def this(
       coordinates: js.Array[js.Array[Coordinate] | Double],
       opt_layout: GeometryLayout,

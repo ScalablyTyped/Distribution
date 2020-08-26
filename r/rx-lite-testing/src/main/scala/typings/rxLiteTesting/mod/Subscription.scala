@@ -10,7 +10,5 @@ class Subscription protected ()
   extends typings.rxLiteTesting.Rx.Subscription {
   def this(subscribeAt: Double) = this()
   def this(subscribeAt: Double, unsubscribeAt: Double) = this()
-  /* CompleteClass */
-  override def equals(other: typings.rxLiteTesting.Rx.Subscription): Boolean = js.native
 }
 

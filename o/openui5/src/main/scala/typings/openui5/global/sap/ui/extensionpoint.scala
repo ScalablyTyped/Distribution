@@ -12,7 +12,34 @@ import scala.scalajs.js.annotation._
 object extensionpoint extends js.Object {
   //  Creates 0.
   def apply(oContainer: js.Any, sExtName: String): Unit = js.native
+  def apply(
+    oContainer: js.Any,
+    sExtName: String,
+    fnCreateDefaultContent: js.UndefOr[scala.Nothing],
+    oTargetControl: js.UndefOr[scala.Nothing],
+    sAggregationName: String
+  ): Unit = js.native
+  def apply(
+    oContainer: js.Any,
+    sExtName: String,
+    fnCreateDefaultContent: js.UndefOr[scala.Nothing],
+    oTargetControl: js.Any
+  ): Unit = js.native
+  def apply(
+    oContainer: js.Any,
+    sExtName: String,
+    fnCreateDefaultContent: js.UndefOr[scala.Nothing],
+    oTargetControl: js.Any,
+    sAggregationName: String
+  ): Unit = js.native
   def apply(oContainer: js.Any, sExtName: String, fnCreateDefaultContent: js.Any): Unit = js.native
+  def apply(
+    oContainer: js.Any,
+    sExtName: String,
+    fnCreateDefaultContent: js.Any,
+    oTargetControl: js.UndefOr[scala.Nothing],
+    sAggregationName: String
+  ): Unit = js.native
   def apply(oContainer: js.Any, sExtName: String, fnCreateDefaultContent: js.Any, oTargetControl: js.Any): Unit = js.native
   def apply(
     oContainer: js.Any,
@@ -22,7 +49,34 @@ object extensionpoint extends js.Object {
     sAggregationName: String
   ): Unit = js.native
   def apply(oContainer: Fragment, sExtName: String): js.Array[Control] = js.native
+  def apply(
+    oContainer: Fragment,
+    sExtName: String,
+    fnCreateDefaultContent: js.UndefOr[scala.Nothing],
+    oTargetControl: js.UndefOr[scala.Nothing],
+    sAggregationName: String
+  ): js.Array[Control] = js.native
+  def apply(
+    oContainer: Fragment,
+    sExtName: String,
+    fnCreateDefaultContent: js.UndefOr[scala.Nothing],
+    oTargetControl: Control
+  ): js.Array[Control] = js.native
+  def apply(
+    oContainer: Fragment,
+    sExtName: String,
+    fnCreateDefaultContent: js.UndefOr[scala.Nothing],
+    oTargetControl: Control,
+    sAggregationName: String
+  ): js.Array[Control] = js.native
   def apply(oContainer: Fragment, sExtName: String, fnCreateDefaultContent: js.Any): js.Array[Control] = js.native
+  def apply(
+    oContainer: Fragment,
+    sExtName: String,
+    fnCreateDefaultContent: js.Any,
+    oTargetControl: js.UndefOr[scala.Nothing],
+    sAggregationName: String
+  ): js.Array[Control] = js.native
   def apply(oContainer: Fragment, sExtName: String, fnCreateDefaultContent: js.Any, oTargetControl: Control): js.Array[Control] = js.native
   def apply(
     oContainer: Fragment,
@@ -53,7 +107,34 @@ object extensionpoint extends js.Object {
     * @returns an array with 0..n controls created from an ExtensionPoint
     */
   def apply(oContainer: View, sExtName: String): js.Array[Control] = js.native
+  def apply(
+    oContainer: View,
+    sExtName: String,
+    fnCreateDefaultContent: js.UndefOr[scala.Nothing],
+    oTargetControl: js.UndefOr[scala.Nothing],
+    sAggregationName: String
+  ): js.Array[Control] = js.native
+  def apply(
+    oContainer: View,
+    sExtName: String,
+    fnCreateDefaultContent: js.UndefOr[scala.Nothing],
+    oTargetControl: Control
+  ): js.Array[Control] = js.native
+  def apply(
+    oContainer: View,
+    sExtName: String,
+    fnCreateDefaultContent: js.UndefOr[scala.Nothing],
+    oTargetControl: Control,
+    sAggregationName: String
+  ): js.Array[Control] = js.native
   def apply(oContainer: View, sExtName: String, fnCreateDefaultContent: js.Any): js.Array[Control] = js.native
+  def apply(
+    oContainer: View,
+    sExtName: String,
+    fnCreateDefaultContent: js.Any,
+    oTargetControl: js.UndefOr[scala.Nothing],
+    sAggregationName: String
+  ): js.Array[Control] = js.native
   def apply(oContainer: View, sExtName: String, fnCreateDefaultContent: js.Any, oTargetControl: Control): js.Array[Control] = js.native
   def apply(
     oContainer: View,

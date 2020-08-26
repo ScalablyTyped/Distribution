@@ -12,7 +12,7 @@ A set of React components implementing Google's Material Design specification wi
 | Keywords           | components, material design, react, react-component, toolkit |
 | # releases         | 3 |
 | # dependents       | 43 |
-| # downloads        | 768081 |
+| # downloads        | 785112 |
 | # stars            | 15 |
 
 ## Links

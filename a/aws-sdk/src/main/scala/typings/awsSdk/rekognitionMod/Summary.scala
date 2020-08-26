@@ -11,10 +11,26 @@ trait Summary extends js.Object {
 
 object Summary {
   @scala.inline
-  def apply(S3Object: S3Object = null): Summary = {
+  def apply(): Summary = {
     val __obj = js.Dynamic.literal()
-    if (S3Object != null) __obj.updateDynamic("S3Object")(S3Object.asInstanceOf[js.Any])
     __obj.asInstanceOf[Summary]
   }
+  @scala.inline
+  implicit class SummaryOps[Self <: Summary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3Object(value: S3Object): Self = this.set("S3Object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Object: Self = this.set("S3Object", js.undefined)
+  }
+  
 }
 

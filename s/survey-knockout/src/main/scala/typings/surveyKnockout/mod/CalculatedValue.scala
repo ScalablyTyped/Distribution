@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CalculatedValue () extends Base {
   def this(name: String) = this()
+  def this(name: js.UndefOr[scala.Nothing], expression: String) = this()
   def this(name: String, expression: String) = this()
   /**
     * The Expression that used to calculate the value. You may use standard operators like +, -, * and /, squares (). Here is the example of accessing the question value {questionname}.

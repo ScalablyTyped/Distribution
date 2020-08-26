@@ -14,10 +14,26 @@ trait GetInstanceSnapshotResult extends js.Object {
 
 object GetInstanceSnapshotResult {
   @scala.inline
-  def apply(instanceSnapshot: InstanceSnapshot = null): GetInstanceSnapshotResult = {
+  def apply(): GetInstanceSnapshotResult = {
     val __obj = js.Dynamic.literal()
-    if (instanceSnapshot != null) __obj.updateDynamic("instanceSnapshot")(instanceSnapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceSnapshotResult]
   }
+  @scala.inline
+  implicit class GetInstanceSnapshotResultOps[Self <: GetInstanceSnapshotResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceSnapshot(value: InstanceSnapshot): Self = this.set("instanceSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceSnapshot: Self = this.set("instanceSnapshot", js.undefined)
+  }
+  
 }
 

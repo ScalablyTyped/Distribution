@@ -39,24 +39,50 @@ trait MemberState extends js.Object {
 
 object MemberState {
   @scala.inline
-  def apply(
-    accountId: Input[String] = null,
-    detectorId: Input[String] = null,
-    disableEmailNotification: Input[Boolean] = null,
-    email: Input[String] = null,
-    invitationMessage: Input[String] = null,
-    invite: Input[Boolean] = null,
-    relationshipStatus: Input[String] = null
-  ): MemberState = {
+  def apply(): MemberState = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (detectorId != null) __obj.updateDynamic("detectorId")(detectorId.asInstanceOf[js.Any])
-    if (disableEmailNotification != null) __obj.updateDynamic("disableEmailNotification")(disableEmailNotification.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (invitationMessage != null) __obj.updateDynamic("invitationMessage")(invitationMessage.asInstanceOf[js.Any])
-    if (invite != null) __obj.updateDynamic("invite")(invite.asInstanceOf[js.Any])
-    if (relationshipStatus != null) __obj.updateDynamic("relationshipStatus")(relationshipStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberState]
   }
+  @scala.inline
+  implicit class MemberStateOps[Self <: MemberState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: Input[String]): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setDetectorId(value: Input[String]): Self = this.set("detectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorId: Self = this.set("detectorId", js.undefined)
+    @scala.inline
+    def setDisableEmailNotification(value: Input[Boolean]): Self = this.set("disableEmailNotification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableEmailNotification: Self = this.set("disableEmailNotification", js.undefined)
+    @scala.inline
+    def setEmail(value: Input[String]): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setInvitationMessage(value: Input[String]): Self = this.set("invitationMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitationMessage: Self = this.set("invitationMessage", js.undefined)
+    @scala.inline
+    def setInvite(value: Input[Boolean]): Self = this.set("invite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvite: Self = this.set("invite", js.undefined)
+    @scala.inline
+    def setRelationshipStatus(value: Input[String]): Self = this.set("relationshipStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationshipStatus: Self = this.set("relationshipStatus", js.undefined)
+  }
+  
 }
 

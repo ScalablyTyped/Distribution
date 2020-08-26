@@ -12,53 +12,92 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Bootbox options shared by all modal types */
+@js.native
 trait BootboxBaseOptions[T] extends js.Object {
-  var animate: js.UndefOr[Boolean] = js.undefined
-  var backdrop: js.UndefOr[Boolean] = js.undefined
-  var buttons: js.UndefOr[BootboxButtonMap] = js.undefined
-  var callback: js.UndefOr[js.Function1[/* result */ T, _]] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var closeButton: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var onEscape: js.UndefOr[js.Function0[_] | Boolean] = js.undefined
+  var animate: js.UndefOr[Boolean] = js.native
+  var backdrop: js.UndefOr[Boolean] = js.native
+  var buttons: js.UndefOr[BootboxButtonMap] = js.native
+  var callback: js.UndefOr[js.Function1[/* result */ T, _]] = js.native
+  var className: js.UndefOr[String] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var onEscape: js.UndefOr[js.Function0[_] | Boolean] = js.native
    // complex object where each key is of type BootboxButton
-  var scrollable: js.UndefOr[Boolean] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
+  var scrollable: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.native
   /** All other values result in medium */
-  var size: js.UndefOr[small | sm | large | lg | `extra-large` | xl] = js.undefined
-  var title: js.UndefOr[String | Element] = js.undefined
+  var size: js.UndefOr[small | sm | large | lg | `extra-large` | xl] = js.native
+  var title: js.UndefOr[String | Element] = js.native
 }
 
 object BootboxBaseOptions {
   @scala.inline
-  def apply[T](
-    animate: js.UndefOr[Boolean] = js.undefined,
-    backdrop: js.UndefOr[Boolean] = js.undefined,
-    buttons: BootboxButtonMap = null,
-    callback: /* result */ T => _ = null,
-    className: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    locale: String = null,
-    onEscape: js.Function0[_] | Boolean = null,
-    scrollable: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    size: small | sm | large | lg | `extra-large` | xl = null,
-    title: String | Element = null
-  ): BootboxBaseOptions[T] = {
+  def apply[T](): BootboxBaseOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.get.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxBaseOptions[T]]
   }
+  @scala.inline
+  implicit class BootboxBaseOptionsOps[Self <: BootboxBaseOptions[_], T] (val x: Self with BootboxBaseOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setBackdrop(value: Boolean): Self = this.set("backdrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdrop: Self = this.set("backdrop", js.undefined)
+    @scala.inline
+    def setButtons(value: BootboxButtonMap): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setCallback(value: /* result */ T => _): Self = this.set("callback", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCloseButton(value: Boolean): Self = this.set("closeButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseButton: Self = this.set("closeButton", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setOnEscapeFunction0(value: () => _): Self = this.set("onEscape", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnEscape(value: js.Function0[_] | Boolean): Self = this.set("onEscape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEscape: Self = this.set("onEscape", js.undefined)
+    @scala.inline
+    def setScrollable(value: Boolean): Self = this.set("scrollable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollable: Self = this.set("scrollable", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setSize(value: small | sm | large | lg | `extra-large` | xl): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTitle(value: String | Element): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

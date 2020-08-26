@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  CLICK  :'click',   CLICK_TARGET_ONLY  :'click-target',   HOVER  :'hover',   HOVER_TARGET_ONLY  :'hover-target'}[keyof {  CLICK  :'click',   CLICK_TARGET_ONLY  :'click-target',   HOVER  :'hover',   HOVER_TARGET_ONLY  :'hover-target'}] */
+/* Inlined {  CLICK :'click',   CLICK_TARGET_ONLY :'click-target',   HOVER :'hover',   HOVER_TARGET_ONLY :'hover-target'}[keyof {  CLICK :'click',   CLICK_TARGET_ONLY :'click-target',   HOVER :'hover',   HOVER_TARGET_ONLY :'hover-target'}] */
 /* Rewritten from type alias, can be one of: 
   - typings.blueprintjsCore.blueprintjsCoreStrings.click
   - typings.blueprintjsCore.blueprintjsCoreStrings.`click-target`

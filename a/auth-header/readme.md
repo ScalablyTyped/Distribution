@@ -11,8 +11,8 @@ For HTTP `Authorization` and `WWW-Authenticate` headers.
 | Full name          | auth-header |
 | Keywords           | http, express, basic, auth, authorization |
 | # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 500634 |
+| # dependents       | 18 |
+| # downloads        | 543766 |
 | # stars            | 3 |
 
 ## Links

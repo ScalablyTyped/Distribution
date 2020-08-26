@@ -53,30 +53,66 @@ trait SchemaGroup extends js.Object {
 
 object SchemaGroup {
   @scala.inline
-  def apply(
-    adminCreated: js.UndefOr[Boolean] = js.undefined,
-    aliases: js.Array[String] = null,
-    description: String = null,
-    directMembersCount: String = null,
-    email: String = null,
-    etag: String = null,
-    id: String = null,
-    kind: String = null,
-    name: String = null,
-    nonEditableAliases: js.Array[String] = null
-  ): SchemaGroup = {
+  def apply(): SchemaGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adminCreated)) __obj.updateDynamic("adminCreated")(adminCreated.get.asInstanceOf[js.Any])
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (directMembersCount != null) __obj.updateDynamic("directMembersCount")(directMembersCount.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nonEditableAliases != null) __obj.updateDynamic("nonEditableAliases")(nonEditableAliases.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGroup]
   }
+  @scala.inline
+  implicit class SchemaGroupOps[Self <: SchemaGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminCreated(value: Boolean): Self = this.set("adminCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminCreated: Self = this.set("adminCreated", js.undefined)
+    @scala.inline
+    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDirectMembersCount(value: String): Self = this.set("directMembersCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectMembersCount: Self = this.set("directMembersCount", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNonEditableAliasesVarargs(value: String*): Self = this.set("nonEditableAliases", js.Array(value :_*))
+    @scala.inline
+    def setNonEditableAliases(value: js.Array[String]): Self = this.set("nonEditableAliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonEditableAliases: Self = this.set("nonEditableAliases", js.undefined)
+  }
+  
 }
 

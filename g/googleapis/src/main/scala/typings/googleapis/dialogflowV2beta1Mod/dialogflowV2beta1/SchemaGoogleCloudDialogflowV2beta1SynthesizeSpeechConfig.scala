@@ -47,20 +47,44 @@ trait SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig extends js.Object
 
 object SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig {
   @scala.inline
-  def apply(
-    effectsProfileId: js.Array[String] = null,
-    pitch: js.UndefOr[Double] = js.undefined,
-    speakingRate: js.UndefOr[Double] = js.undefined,
-    voice: SchemaGoogleCloudDialogflowV2beta1VoiceSelectionParams = null,
-    volumeGainDb: js.UndefOr[Double] = js.undefined
-  ): SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig = {
     val __obj = js.Dynamic.literal()
-    if (effectsProfileId != null) __obj.updateDynamic("effectsProfileId")(effectsProfileId.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(speakingRate)) __obj.updateDynamic("speakingRate")(speakingRate.get.asInstanceOf[js.Any])
-    if (voice != null) __obj.updateDynamic("voice")(voice.asInstanceOf[js.Any])
-    if (!js.isUndefined(volumeGainDb)) __obj.updateDynamic("volumeGainDb")(volumeGainDb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfigOps[Self <: SchemaGoogleCloudDialogflowV2beta1SynthesizeSpeechConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEffectsProfileIdVarargs(value: String*): Self = this.set("effectsProfileId", js.Array(value :_*))
+    @scala.inline
+    def setEffectsProfileId(value: js.Array[String]): Self = this.set("effectsProfileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectsProfileId: Self = this.set("effectsProfileId", js.undefined)
+    @scala.inline
+    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePitch: Self = this.set("pitch", js.undefined)
+    @scala.inline
+    def setSpeakingRate(value: Double): Self = this.set("speakingRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeakingRate: Self = this.set("speakingRate", js.undefined)
+    @scala.inline
+    def setVoice(value: SchemaGoogleCloudDialogflowV2beta1VoiceSelectionParams): Self = this.set("voice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoice: Self = this.set("voice", js.undefined)
+    @scala.inline
+    def setVolumeGainDb(value: Double): Self = this.set("volumeGainDb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeGainDb: Self = this.set("volumeGainDb", js.undefined)
+  }
+  
 }
 

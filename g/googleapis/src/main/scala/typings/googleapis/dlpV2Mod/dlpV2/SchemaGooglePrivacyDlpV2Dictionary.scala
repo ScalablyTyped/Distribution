@@ -42,14 +42,30 @@ trait SchemaGooglePrivacyDlpV2Dictionary extends js.Object {
 
 object SchemaGooglePrivacyDlpV2Dictionary {
   @scala.inline
-  def apply(
-    cloudStoragePath: SchemaGooglePrivacyDlpV2CloudStoragePath = null,
-    wordList: SchemaGooglePrivacyDlpV2WordList = null
-  ): SchemaGooglePrivacyDlpV2Dictionary = {
+  def apply(): SchemaGooglePrivacyDlpV2Dictionary = {
     val __obj = js.Dynamic.literal()
-    if (cloudStoragePath != null) __obj.updateDynamic("cloudStoragePath")(cloudStoragePath.asInstanceOf[js.Any])
-    if (wordList != null) __obj.updateDynamic("wordList")(wordList.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Dictionary]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2DictionaryOps[Self <: SchemaGooglePrivacyDlpV2Dictionary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudStoragePath(value: SchemaGooglePrivacyDlpV2CloudStoragePath): Self = this.set("cloudStoragePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudStoragePath: Self = this.set("cloudStoragePath", js.undefined)
+    @scala.inline
+    def setWordList(value: SchemaGooglePrivacyDlpV2WordList): Self = this.set("wordList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWordList: Self = this.set("wordList", js.undefined)
+  }
+  
 }
 

@@ -12,6 +12,7 @@ object line3Mod extends js.Object {
   @js.native
   class Line3 () extends js.Object {
     def this(start: Vector3) = this()
+    def this(start: js.UndefOr[scala.Nothing], end: Vector3) = this()
     def this(start: Vector3, end: Vector3) = this()
     var end: Vector3 = js.native
     var start: Vector3 = js.native
@@ -27,6 +28,7 @@ object line3Mod extends js.Object {
     def equals(line: Line3): Boolean = js.native
     def getCenter(target: Vector3): Vector3 = js.native
     def set(): Line3 = js.native
+    def set(start: js.UndefOr[scala.Nothing], end: Vector3): Line3 = js.native
     def set(start: Vector3): Line3 = js.native
     def set(start: Vector3, end: Vector3): Line3 = js.native
   }

@@ -29,22 +29,12 @@ trait DatasetIndexed[Q /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends Data
   def merge(other: js.Array[BaseQuad]): this.type = js.native
   def merge(other: DatasetIndexed[BaseQuad, BaseQuad]): this.type = js.native
   def remove(quad: BaseQuad): this.type = js.native
-  def removeMatches(): this.type = js.native
-  def removeMatches(subject: Null, predicate: Null, `object`: Null, graph: Term): this.type = js.native
-  def removeMatches(subject: Null, predicate: Null, `object`: Term): this.type = js.native
-  def removeMatches(subject: Null, predicate: Null, `object`: Term, graph: Term): this.type = js.native
-  def removeMatches(subject: Null, predicate: Term): this.type = js.native
-  def removeMatches(subject: Null, predicate: Term, `object`: Null, graph: Term): this.type = js.native
-  def removeMatches(subject: Null, predicate: Term, `object`: Term): this.type = js.native
-  def removeMatches(subject: Null, predicate: Term, `object`: Term, graph: Term): this.type = js.native
-  def removeMatches(subject: Term): this.type = js.native
-  def removeMatches(subject: Term, predicate: Null, `object`: Null, graph: Term): this.type = js.native
-  def removeMatches(subject: Term, predicate: Null, `object`: Term): this.type = js.native
-  def removeMatches(subject: Term, predicate: Null, `object`: Term, graph: Term): this.type = js.native
-  def removeMatches(subject: Term, predicate: Term): this.type = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: Null, graph: Term): this.type = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: Term): this.type = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: Term, graph: Term): this.type = js.native
+  def removeMatches(
+    subject: js.UndefOr[Term | Null],
+    predicate: js.UndefOr[Term | Null],
+    `object`: js.UndefOr[Term | Null],
+    graph: js.UndefOr[Term | Null]
+  ): this.type = js.native
   def some(predicate: js.Function1[/* quad */ Q, Boolean]): Boolean = js.native
   def toArray(): js.Array[Q] = js.native
   def toStream(): Stream[Q] with Readable = js.native

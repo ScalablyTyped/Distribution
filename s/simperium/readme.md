@@ -10,9 +10,9 @@ A simperium client for node.js
 | ------------------ | :-------------: |
 | Full name          | simperium |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 5919 |
+| # downloads        | 5512 |
 | # stars            | 0 |
 
 ## Links

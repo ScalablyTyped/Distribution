@@ -50,12 +50,34 @@ trait SchemaPgpSignedAttestation extends js.Object {
 
 object SchemaPgpSignedAttestation {
   @scala.inline
-  def apply(contentType: String = null, pgpKeyId: String = null, signature: String = null): SchemaPgpSignedAttestation = {
+  def apply(): SchemaPgpSignedAttestation = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (pgpKeyId != null) __obj.updateDynamic("pgpKeyId")(pgpKeyId.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPgpSignedAttestation]
   }
+  @scala.inline
+  implicit class SchemaPgpSignedAttestationOps[Self <: SchemaPgpSignedAttestation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setPgpKeyId(value: String): Self = this.set("pgpKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePgpKeyId: Self = this.set("pgpKeyId", js.undefined)
+    @scala.inline
+    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+  }
+  
 }
 

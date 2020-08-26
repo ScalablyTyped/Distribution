@@ -25,14 +25,43 @@ object CreateSoftwareUpdateJobRequest {
     SoftwareToUpdate: SoftwareToUpdate,
     UpdateTargets: UpdateTargets,
     UpdateTargetsArchitecture: UpdateTargetsArchitecture,
-    UpdateTargetsOperatingSystem: UpdateTargetsOperatingSystem,
-    AmznClientToken: string = null,
-    UpdateAgentLogLevel: UpdateAgentLogLevel = null
+    UpdateTargetsOperatingSystem: UpdateTargetsOperatingSystem
   ): CreateSoftwareUpdateJobRequest = {
     val __obj = js.Dynamic.literal(S3UrlSignerRole = S3UrlSignerRole.asInstanceOf[js.Any], SoftwareToUpdate = SoftwareToUpdate.asInstanceOf[js.Any], UpdateTargets = UpdateTargets.asInstanceOf[js.Any], UpdateTargetsArchitecture = UpdateTargetsArchitecture.asInstanceOf[js.Any], UpdateTargetsOperatingSystem = UpdateTargetsOperatingSystem.asInstanceOf[js.Any])
-    if (AmznClientToken != null) __obj.updateDynamic("AmznClientToken")(AmznClientToken.asInstanceOf[js.Any])
-    if (UpdateAgentLogLevel != null) __obj.updateDynamic("UpdateAgentLogLevel")(UpdateAgentLogLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSoftwareUpdateJobRequest]
   }
+  @scala.inline
+  implicit class CreateSoftwareUpdateJobRequestOps[Self <: CreateSoftwareUpdateJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3UrlSignerRole(value: S3UrlSignerRole): Self = this.set("S3UrlSignerRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSoftwareToUpdate(value: SoftwareToUpdate): Self = this.set("SoftwareToUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdateTargetsVarargs(value: string*): Self = this.set("UpdateTargets", js.Array(value :_*))
+    @scala.inline
+    def setUpdateTargets(value: UpdateTargets): Self = this.set("UpdateTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdateTargetsArchitecture(value: UpdateTargetsArchitecture): Self = this.set("UpdateTargetsArchitecture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdateTargetsOperatingSystem(value: UpdateTargetsOperatingSystem): Self = this.set("UpdateTargetsOperatingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmznClientToken(value: string): Self = this.set("AmznClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmznClientToken: Self = this.set("AmznClientToken", js.undefined)
+    @scala.inline
+    def setUpdateAgentLogLevel(value: UpdateAgentLogLevel): Self = this.set("UpdateAgentLogLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateAgentLogLevel: Self = this.set("UpdateAgentLogLevel", js.undefined)
+  }
+  
 }
 

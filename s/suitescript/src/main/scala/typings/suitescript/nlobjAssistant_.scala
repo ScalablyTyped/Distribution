@@ -44,7 +44,17 @@ Instantiable0[js.Any] {
     * @return
     */
   def addField(name: String, `type`: String): js.Function0[Unit] = js.native
+  def addField(
+    name: String,
+    `type`: String,
+    label: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    group: String
+  ): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: js.UndefOr[scala.Nothing], source: js.Any): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: js.UndefOr[scala.Nothing], source: js.Any, group: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String): js.Function0[Unit] = js.native
+  def addField(name: String, `type`: String, label: String, source: js.UndefOr[scala.Nothing], group: String): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String, source: js.Any): js.Function0[Unit] = js.native
   def addField(name: String, `type`: String, label: String, source: js.Any, group: String): js.Function0[Unit] = js.native
   /**

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "lscache"
-version := "1.3-dt-20200515Z-cf07b4"
-scalaVersion := "2.13.2"
+version := "1.3-dt-20200515Z-a8e072"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -22,8 +22,8 @@ object NumericInput extends js.Object {
   var VALUE_ZERO: String = js.native
   var defaultProps: INumericInputProps = js.native
   var displayName: String = js.native
-  var getSanitizedValue: js.Any = js.native
   var getStepMaxPrecision: js.Any = js.native
+  var roundAndClampValue: js.Any = js.native
   def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = js.native
 }
 

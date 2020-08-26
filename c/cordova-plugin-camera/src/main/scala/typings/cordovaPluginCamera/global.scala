@@ -21,33 +21,107 @@ object global extends js.Object {
   class CameraPopoverOptions ()
     extends typings.cordovaPluginCamera.CameraPopoverOptions {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double) = this()
     def this(x: Double, y: Double, width: Double) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: Double
+    ) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+    def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(x: Double, y: Double, width: Double, height: Double) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      arrowDir: Double
+    ) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: Double,
+      arrowDir: Double
+    ) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      width: Double,
+      height: js.UndefOr[scala.Nothing],
+      arrowDir: Double
+    ) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      width: Double,
+      height: Double,
+      arrowDir: Double
+    ) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: Double,
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      arrowDir: Double
+    ) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: Double,
+      width: js.UndefOr[scala.Nothing],
+      height: Double,
+      arrowDir: Double
+    ) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: Double,
+      width: Double,
+      height: js.UndefOr[scala.Nothing],
+      arrowDir: Double
+    ) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double, arrowDir: Double) = this()
+    def this(
+      x: Double,
+      y: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      arrowDir: Double
+    ) = this()
+    def this(
+      x: Double,
+      y: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: Double,
+      arrowDir: Double
+    ) = this()
+    def this(
+      x: Double,
+      y: js.UndefOr[scala.Nothing],
+      width: Double,
+      height: js.UndefOr[scala.Nothing],
+      arrowDir: Double
+    ) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double, arrowDir: Double) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      arrowDir: Double
+    ) = this()
+    def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double, arrowDir: Double) = this()
+    def this(x: Double, y: Double, width: Double, height: js.UndefOr[scala.Nothing], arrowDir: Double) = this()
     def this(x: Double, y: Double, width: Double, height: Double, arrowDir: Double) = this()
-    /**
-      * Direction the arrow on the popover should point. Defined in Camera.PopoverArrowDirection
-      * Matches iOS UIPopoverArrowDirection constants.
-      *      ARROW_UP : 1,        
-      *      ARROW_DOWN : 2,
-      *      ARROW_LEFT : 4,
-      *      ARROW_RIGHT : 8,
-      *      ARROW_ANY : 15
-      */
-    /* CompleteClass */
-    override var arrowDir: Double = js.native
-    /* CompleteClass */
-    override var height: Double = js.native
-    /* CompleteClass */
-    override var popoverHeight: Double = js.native
-    /* CompleteClass */
-    override var popoverWidth: Double = js.native
-    /* CompleteClass */
-    override var width: Double = js.native
-    /* CompleteClass */
-    override var x: Double = js.native
-    /* CompleteClass */
-    override var y: Double = js.native
   }
   
   @js.native

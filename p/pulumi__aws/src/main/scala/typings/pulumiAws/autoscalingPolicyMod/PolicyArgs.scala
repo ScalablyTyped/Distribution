@@ -57,31 +57,66 @@ trait PolicyArgs extends js.Object {
 
 object PolicyArgs {
   @scala.inline
-  def apply(
-    autoscalingGroupName: Input[String],
-    adjustmentType: Input[String] = null,
-    cooldown: Input[Double] = null,
-    estimatedInstanceWarmup: Input[Double] = null,
-    metricAggregationType: Input[String] = null,
-    minAdjustmentMagnitude: Input[Double] = null,
-    name: Input[String] = null,
-    policyType: Input[String] = null,
-    scalingAdjustment: Input[Double] = null,
-    stepAdjustments: Input[js.Array[Input[PolicyStepAdjustment]]] = null,
-    targetTrackingConfiguration: Input[PolicyTargetTrackingConfiguration] = null
-  ): PolicyArgs = {
+  def apply(autoscalingGroupName: Input[String]): PolicyArgs = {
     val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any])
-    if (adjustmentType != null) __obj.updateDynamic("adjustmentType")(adjustmentType.asInstanceOf[js.Any])
-    if (cooldown != null) __obj.updateDynamic("cooldown")(cooldown.asInstanceOf[js.Any])
-    if (estimatedInstanceWarmup != null) __obj.updateDynamic("estimatedInstanceWarmup")(estimatedInstanceWarmup.asInstanceOf[js.Any])
-    if (metricAggregationType != null) __obj.updateDynamic("metricAggregationType")(metricAggregationType.asInstanceOf[js.Any])
-    if (minAdjustmentMagnitude != null) __obj.updateDynamic("minAdjustmentMagnitude")(minAdjustmentMagnitude.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (policyType != null) __obj.updateDynamic("policyType")(policyType.asInstanceOf[js.Any])
-    if (scalingAdjustment != null) __obj.updateDynamic("scalingAdjustment")(scalingAdjustment.asInstanceOf[js.Any])
-    if (stepAdjustments != null) __obj.updateDynamic("stepAdjustments")(stepAdjustments.asInstanceOf[js.Any])
-    if (targetTrackingConfiguration != null) __obj.updateDynamic("targetTrackingConfiguration")(targetTrackingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyArgs]
   }
+  @scala.inline
+  implicit class PolicyArgsOps[Self <: PolicyArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoscalingGroupName(value: Input[String]): Self = this.set("autoscalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdjustmentType(value: Input[String]): Self = this.set("adjustmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustmentType: Self = this.set("adjustmentType", js.undefined)
+    @scala.inline
+    def setCooldown(value: Input[Double]): Self = this.set("cooldown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCooldown: Self = this.set("cooldown", js.undefined)
+    @scala.inline
+    def setEstimatedInstanceWarmup(value: Input[Double]): Self = this.set("estimatedInstanceWarmup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedInstanceWarmup: Self = this.set("estimatedInstanceWarmup", js.undefined)
+    @scala.inline
+    def setMetricAggregationType(value: Input[String]): Self = this.set("metricAggregationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricAggregationType: Self = this.set("metricAggregationType", js.undefined)
+    @scala.inline
+    def setMinAdjustmentMagnitude(value: Input[Double]): Self = this.set("minAdjustmentMagnitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinAdjustmentMagnitude: Self = this.set("minAdjustmentMagnitude", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPolicyType(value: Input[String]): Self = this.set("policyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyType: Self = this.set("policyType", js.undefined)
+    @scala.inline
+    def setScalingAdjustment(value: Input[Double]): Self = this.set("scalingAdjustment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingAdjustment: Self = this.set("scalingAdjustment", js.undefined)
+    @scala.inline
+    def setStepAdjustmentsVarargs(value: Input[PolicyStepAdjustment]*): Self = this.set("stepAdjustments", js.Array(value :_*))
+    @scala.inline
+    def setStepAdjustments(value: Input[js.Array[Input[PolicyStepAdjustment]]]): Self = this.set("stepAdjustments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepAdjustments: Self = this.set("stepAdjustments", js.undefined)
+    @scala.inline
+    def setTargetTrackingConfiguration(value: Input[PolicyTargetTrackingConfiguration]): Self = this.set("targetTrackingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetTrackingConfiguration: Self = this.set("targetTrackingConfiguration", js.undefined)
+  }
+  
 }
 

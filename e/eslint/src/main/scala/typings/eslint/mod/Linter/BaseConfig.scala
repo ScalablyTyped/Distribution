@@ -5,54 +5,95 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseConfig extends HasRules {
   @JSName("$schema")
-  var $schema: js.UndefOr[String] = js.undefined
-  var env: js.UndefOr[StringDictionary[Boolean]] = js.undefined
-  var `extends`: js.UndefOr[String | js.Array[String]] = js.undefined
-  var globals: js.UndefOr[StringDictionary[Boolean]] = js.undefined
-  var noInlineConfig: js.UndefOr[Boolean] = js.undefined
-  var overrides: js.UndefOr[js.Array[ConfigOverride]] = js.undefined
-  var parser: js.UndefOr[String] = js.undefined
-  var parserOptions: js.UndefOr[ParserOptions] = js.undefined
-  var plugins: js.UndefOr[js.Array[String]] = js.undefined
-  var processor: js.UndefOr[String] = js.undefined
-  var reportUnusedDisableDirectives: js.UndefOr[Boolean] = js.undefined
-  var settings: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var $schema: js.UndefOr[String] = js.native
+  var env: js.UndefOr[StringDictionary[Boolean]] = js.native
+  var `extends`: js.UndefOr[String | js.Array[String]] = js.native
+  var globals: js.UndefOr[StringDictionary[Boolean]] = js.native
+  var noInlineConfig: js.UndefOr[Boolean] = js.native
+  var overrides: js.UndefOr[js.Array[ConfigOverride]] = js.native
+  var parser: js.UndefOr[String] = js.native
+  var parserOptions: js.UndefOr[ParserOptions] = js.native
+  var plugins: js.UndefOr[js.Array[String]] = js.native
+  var processor: js.UndefOr[String] = js.native
+  var reportUnusedDisableDirectives: js.UndefOr[Boolean] = js.native
+  var settings: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 
 object BaseConfig {
   @scala.inline
-  def apply(
-    $schema: String = null,
-    env: StringDictionary[Boolean] = null,
-    `extends`: String | js.Array[String] = null,
-    globals: StringDictionary[Boolean] = null,
-    noInlineConfig: js.UndefOr[Boolean] = js.undefined,
-    overrides: js.Array[ConfigOverride] = null,
-    parser: String = null,
-    parserOptions: ParserOptions = null,
-    plugins: js.Array[String] = null,
-    processor: String = null,
-    reportUnusedDisableDirectives: js.UndefOr[Boolean] = js.undefined,
-    rules: js.Object = null,
-    settings: StringDictionary[js.Any] = null
-  ): BaseConfig = {
+  def apply(): BaseConfig = {
     val __obj = js.Dynamic.literal()
-    if ($schema != null) __obj.updateDynamic("$schema")($schema.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (!js.isUndefined(noInlineConfig)) __obj.updateDynamic("noInlineConfig")(noInlineConfig.get.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (processor != null) __obj.updateDynamic("processor")(processor.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportUnusedDisableDirectives)) __obj.updateDynamic("reportUnusedDisableDirectives")(reportUnusedDisableDirectives.get.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseConfig]
   }
+  @scala.inline
+  implicit class BaseConfigOps[Self <: BaseConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$schema(value: String): Self = this.set("$schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$schema: Self = this.set("$schema", js.undefined)
+    @scala.inline
+    def setEnv(value: StringDictionary[Boolean]): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setExtendsVarargs(value: String*): Self = this.set("extends", js.Array(value :_*))
+    @scala.inline
+    def setExtends(value: String | js.Array[String]): Self = this.set("extends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtends: Self = this.set("extends", js.undefined)
+    @scala.inline
+    def setGlobals(value: StringDictionary[Boolean]): Self = this.set("globals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobals: Self = this.set("globals", js.undefined)
+    @scala.inline
+    def setNoInlineConfig(value: Boolean): Self = this.set("noInlineConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoInlineConfig: Self = this.set("noInlineConfig", js.undefined)
+    @scala.inline
+    def setOverridesVarargs(value: ConfigOverride*): Self = this.set("overrides", js.Array(value :_*))
+    @scala.inline
+    def setOverrides(value: js.Array[ConfigOverride]): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setParser(value: String): Self = this.set("parser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParser: Self = this.set("parser", js.undefined)
+    @scala.inline
+    def setParserOptions(value: ParserOptions): Self = this.set("parserOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParserOptions: Self = this.set("parserOptions", js.undefined)
+    @scala.inline
+    def setPluginsVarargs(value: String*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: js.Array[String]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setProcessor(value: String): Self = this.set("processor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessor: Self = this.set("processor", js.undefined)
+    @scala.inline
+    def setReportUnusedDisableDirectives(value: Boolean): Self = this.set("reportUnusedDisableDirectives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportUnusedDisableDirectives: Self = this.set("reportUnusedDisableDirectives", js.undefined)
+    @scala.inline
+    def setSettings(value: StringDictionary[js.Any]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+  }
+  
 }
 

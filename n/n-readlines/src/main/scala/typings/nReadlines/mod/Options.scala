@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var newLineCharacter: js.UndefOr[String] = js.undefined
-  var readChunk: js.UndefOr[Double] = js.undefined
+  var newLineCharacter: js.UndefOr[String] = js.native
+  var readChunk: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(newLineCharacter: String = null, readChunk: js.UndefOr[Double] = js.undefined): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (newLineCharacter != null) __obj.updateDynamic("newLineCharacter")(newLineCharacter.asInstanceOf[js.Any])
-    if (!js.isUndefined(readChunk)) __obj.updateDynamic("readChunk")(readChunk.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewLineCharacter(value: String): Self = this.set("newLineCharacter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewLineCharacter: Self = this.set("newLineCharacter", js.undefined)
+    @scala.inline
+    def setReadChunk(value: Double): Self = this.set("readChunk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadChunk: Self = this.set("readChunk", js.undefined)
+  }
+  
 }
 

@@ -6,36 +6,65 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.report.ReportData, 'Tag' | 'CallbackURL' | 'DownloadFormat' | 'Sort' | 'Preview' | 'Filters' | 'Columns'> */
+@js.native
 trait CreateReport extends js.Object {
-  var CallbackURL: js.UndefOr[String] = js.undefined
-  var Columns: js.UndefOr[js.Array[Column]] = js.undefined
-  var DownloadFormat: js.UndefOr[CSV] = js.undefined
-  var Filters: js.UndefOr[typings.mangopay2NodejsSdk.mod.report.Filters] = js.undefined
-  var Preview: js.UndefOr[Boolean] = js.undefined
-  var Sort: js.UndefOr[String] = js.undefined
-  var Tag: js.UndefOr[String] = js.undefined
+  var CallbackURL: js.UndefOr[String] = js.native
+  var Columns: js.UndefOr[js.Array[Column]] = js.native
+  var DownloadFormat: js.UndefOr[CSV] = js.native
+  var Filters: js.UndefOr[typings.mangopay2NodejsSdk.mod.report.Filters] = js.native
+  var Preview: js.UndefOr[Boolean] = js.native
+  var Sort: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.native
 }
 
 object CreateReport {
   @scala.inline
-  def apply(
-    CallbackURL: String = null,
-    Columns: js.Array[Column] = null,
-    DownloadFormat: CSV = null,
-    Filters: Filters = null,
-    Preview: js.UndefOr[Boolean] = js.undefined,
-    Sort: String = null,
-    Tag: String = null
-  ): CreateReport = {
+  def apply(): CreateReport = {
     val __obj = js.Dynamic.literal()
-    if (CallbackURL != null) __obj.updateDynamic("CallbackURL")(CallbackURL.asInstanceOf[js.Any])
-    if (Columns != null) __obj.updateDynamic("Columns")(Columns.asInstanceOf[js.Any])
-    if (DownloadFormat != null) __obj.updateDynamic("DownloadFormat")(DownloadFormat.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(Preview)) __obj.updateDynamic("Preview")(Preview.get.asInstanceOf[js.Any])
-    if (Sort != null) __obj.updateDynamic("Sort")(Sort.asInstanceOf[js.Any])
-    if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReport]
   }
+  @scala.inline
+  implicit class CreateReportOps[Self <: CreateReport] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallbackURL(value: String): Self = this.set("CallbackURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbackURL: Self = this.set("CallbackURL", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: Column*): Self = this.set("Columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[Column]): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("Columns", js.undefined)
+    @scala.inline
+    def setDownloadFormat(value: CSV): Self = this.set("DownloadFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadFormat: Self = this.set("DownloadFormat", js.undefined)
+    @scala.inline
+    def setFilters(value: Filters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setPreview(value: Boolean): Self = this.set("Preview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreview: Self = this.set("Preview", js.undefined)
+    @scala.inline
+    def setSort(value: String): Self = this.set("Sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("Sort", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("Tag", js.undefined)
+  }
+  
 }
 

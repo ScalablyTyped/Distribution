@@ -1,7 +1,5 @@
 package typings.winrt.global.Windows.Storage
 
-import typings.winrt.Windows.Foundation.AsyncStatus
-import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.IStorageFile
@@ -9,8 +7,6 @@ import typings.winrt.Windows.Storage.Streams.IBuffer
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
-import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
-import typings.winrt.Windows.Storage.Streams.InputStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,167 +18,51 @@ object Streams extends js.Object {
   class Buffer protected ()
     extends typings.winrt.Windows.Storage.Streams.Buffer {
     def this(capacity: Double) = this()
-    /* CompleteClass */
-    override var capacity: Double = js.native
-    /* CompleteClass */
-    override var length: Double = js.native
   }
   
   @js.native
   class DataReader protected ()
     extends typings.winrt.Windows.Storage.Streams.DataReader {
     def this(inputStream: IInputStream) = this()
-    /* CompleteClass */
-    override def close(): Unit = js.native
   }
   
   @js.native
   class DataReaderLoadOperation ()
-    extends typings.winrt.Windows.Storage.Streams.DataReaderLoadOperation {
-    /* CompleteClass */
-    override var errorCode: Double = js.native
-    /* CompleteClass */
-    override var id: Double = js.native
-    /* CompleteClass */
-    override var status: AsyncStatus = js.native
-    /* CompleteClass */
-    override def cancel(): Unit = js.native
-    /* CompleteClass */
-    override def close(): Unit = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.DataReaderLoadOperation
   
   @js.native
   class DataWriter ()
     extends typings.winrt.Windows.Storage.Streams.DataWriter {
     def this(outputStream: IOutputStream) = this()
-    /* CompleteClass */
-    override def close(): Unit = js.native
   }
   
   @js.native
   class DataWriterStoreOperation ()
-    extends typings.winrt.Windows.Storage.Streams.DataWriterStoreOperation {
-    /* CompleteClass */
-    override var errorCode: Double = js.native
-    /* CompleteClass */
-    override var id: Double = js.native
-    /* CompleteClass */
-    override var status: AsyncStatus = js.native
-    /* CompleteClass */
-    override def cancel(): Unit = js.native
-    /* CompleteClass */
-    override def close(): Unit = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.DataWriterStoreOperation
   
   @js.native
   class FileInputStream ()
-    extends typings.winrt.Windows.Storage.Streams.FileInputStream {
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /* CompleteClass */
-    override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.FileInputStream
   
   @js.native
   class FileOutputStream ()
-    extends typings.winrt.Windows.Storage.Streams.FileOutputStream {
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /* CompleteClass */
-    override def flushAsync(): IAsyncOperation[Boolean] = js.native
-    /* CompleteClass */
-    override def writeAsync(buffer: IBuffer): IAsyncOperationWithProgress[Double, Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.FileOutputStream
   
   @js.native
   class FileRandomAccessStream ()
-    extends typings.winrt.Windows.Storage.Streams.FileRandomAccessStream {
-    /* CompleteClass */
-    override var canRead: Boolean = js.native
-    /* CompleteClass */
-    override var canWrite: Boolean = js.native
-    /* CompleteClass */
-    override var position: Double = js.native
-    /* CompleteClass */
-    override var size: Double = js.native
-    /* CompleteClass */
-    override def cloneStream(): IRandomAccessStream = js.native
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /* CompleteClass */
-    override def flushAsync(): IAsyncOperation[Boolean] = js.native
-    /* CompleteClass */
-    override def getInputStreamAt(position: Double): IInputStream = js.native
-    /* CompleteClass */
-    override def getOutputStreamAt(position: Double): IOutputStream = js.native
-    /* CompleteClass */
-    override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double] = js.native
-    /* CompleteClass */
-    override def seek(position: Double): Unit = js.native
-    /* CompleteClass */
-    override def writeAsync(buffer: IBuffer): IAsyncOperationWithProgress[Double, Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.FileRandomAccessStream
   
   @js.native
   class InMemoryRandomAccessStream ()
-    extends typings.winrt.Windows.Storage.Streams.InMemoryRandomAccessStream {
-    /* CompleteClass */
-    override var canRead: Boolean = js.native
-    /* CompleteClass */
-    override var canWrite: Boolean = js.native
-    /* CompleteClass */
-    override var position: Double = js.native
-    /* CompleteClass */
-    override var size: Double = js.native
-    /* CompleteClass */
-    override def cloneStream(): IRandomAccessStream = js.native
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /* CompleteClass */
-    override def flushAsync(): IAsyncOperation[Boolean] = js.native
-    /* CompleteClass */
-    override def getInputStreamAt(position: Double): IInputStream = js.native
-    /* CompleteClass */
-    override def getOutputStreamAt(position: Double): IOutputStream = js.native
-    /* CompleteClass */
-    override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double] = js.native
-    /* CompleteClass */
-    override def seek(position: Double): Unit = js.native
-    /* CompleteClass */
-    override def writeAsync(buffer: IBuffer): IAsyncOperationWithProgress[Double, Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.InMemoryRandomAccessStream
   
   @js.native
   class InputStreamOverStream ()
-    extends typings.winrt.Windows.Storage.Streams.InputStreamOverStream {
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /* CompleteClass */
-    override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.InputStreamOverStream
   
   @js.native
   class OutputStreamOverStream ()
-    extends typings.winrt.Windows.Storage.Streams.OutputStreamOverStream {
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /* CompleteClass */
-    override def flushAsync(): IAsyncOperation[Boolean] = js.native
-    /* CompleteClass */
-    override def writeAsync(buffer: IBuffer): IAsyncOperationWithProgress[Double, Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.OutputStreamOverStream
   
   @js.native
   class RandomAccessStream ()
@@ -190,41 +70,11 @@ object Streams extends js.Object {
   
   @js.native
   class RandomAccessStreamOverStream ()
-    extends typings.winrt.Windows.Storage.Streams.RandomAccessStreamOverStream {
-    /* CompleteClass */
-    override var canRead: Boolean = js.native
-    /* CompleteClass */
-    override var canWrite: Boolean = js.native
-    /* CompleteClass */
-    override var position: Double = js.native
-    /* CompleteClass */
-    override var size: Double = js.native
-    /* CompleteClass */
-    override def cloneStream(): IRandomAccessStream = js.native
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /* CompleteClass */
-    override def flushAsync(): IAsyncOperation[Boolean] = js.native
-    /* CompleteClass */
-    override def getInputStreamAt(position: Double): IInputStream = js.native
-    /* CompleteClass */
-    override def getOutputStreamAt(position: Double): IOutputStream = js.native
-    /* CompleteClass */
-    override def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double] = js.native
-    /* CompleteClass */
-    override def seek(position: Double): Unit = js.native
-    /* CompleteClass */
-    override def writeAsync(buffer: IBuffer): IAsyncOperationWithProgress[Double, Double] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.RandomAccessStreamOverStream
   
   @js.native
   class RandomAccessStreamReference ()
-    extends typings.winrt.Windows.Storage.Streams.RandomAccessStreamReference {
-    /* CompleteClass */
-    override def openReadAsync(): IAsyncOperation[IRandomAccessStreamWithContentType] = js.native
-  }
+    extends typings.winrt.Windows.Storage.Streams.RandomAccessStreamReference
   
   @js.native
   object ByteOrder extends js.Object {

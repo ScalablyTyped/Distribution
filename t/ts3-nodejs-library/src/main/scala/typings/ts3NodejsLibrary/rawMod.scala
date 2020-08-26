@@ -1,6 +1,6 @@
 package typings.ts3NodejsLibrary
 
-import typings.ts3NodejsLibrary.teamSpeakMod.ConnectionParams
+import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.ConnectionParams
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.QueryProtocolInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`

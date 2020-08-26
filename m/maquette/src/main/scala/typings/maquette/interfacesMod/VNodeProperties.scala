@@ -17,13 +17,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VNodeProperties
   extends /**
   * Everything that is not explicitly listed (properties and attributes that are either uncommon or custom).
   */
 /* index */ StringDictionary[js.Any] {
-  val accessKey: js.UndefOr[String] = js.undefined
-  val action: js.UndefOr[String] = js.undefined
+  val accessKey: js.UndefOr[String] = js.native
+  val action: js.UndefOr[String] = js.native
   /**
     * Callback that is executed after this node is added to the DOM. Child nodes and properties have
     * already been applied.
@@ -42,14 +43,14 @@ trait VNodeProperties
       /* children */ js.UndefOr[js.Array[VNode]], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Callback that is called when a node has been removed from the tree.
     * The callback is called during idle state or after a timeout (fallback).
     * {@link https://maquettejs.org/docs/dom-node-removal.html|More info}
     * @param element - The element that has been removed from the DOM.
     */
-  var afterRemoved: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.undefined
+  var afterRemoved: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.native
   /**
     * Callback that is executed every time this node may have been updated. Child nodes and properties
     * have already been updated.
@@ -68,33 +69,33 @@ trait VNodeProperties
       /* children */ js.UndefOr[js.Array[VNode]], 
       Unit
     ]
-  ] = js.undefined
-  val alt: js.UndefOr[String] = js.undefined
-  val autocomplete: js.UndefOr[String] = js.undefined
+  ] = js.native
+  val alt: js.UndefOr[String] = js.native
+  val autocomplete: js.UndefOr[String] = js.native
   /**
     * When specified, the event handlers will be invoked with 'this' pointing to the value.
     * This is useful when using the prototype/class based implementation of MaquetteComponents.
     *
     * When no [[key]] is present, this object is also used to uniquely identify a DOM node.
     */
-  val bind: js.UndefOr[js.Object] = js.undefined
-  val checked: js.UndefOr[Boolean] = js.undefined
-  val `class`: js.UndefOr[String] = js.undefined
+  val bind: js.UndefOr[js.Object] = js.native
+  val checked: js.UndefOr[Boolean] = js.native
+  val `class`: js.UndefOr[String] = js.native
   /**
     * Do not use className, use class instead
     */
   val className: js.UndefOr[
     `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`
-  ] = js.undefined
+  ] = js.native
   /**
     * An object literal like `{important:true}` which allows css classes, like `important` to be added and removed
     * dynamically.
     */
-  val classes: js.UndefOr[StringDictionary[js.UndefOr[Boolean | Null]]] = js.undefined
-  val disabled: js.UndefOr[Boolean] = js.undefined
-  val draggable: js.UndefOr[Boolean] = js.undefined
-  val encoding: js.UndefOr[String] = js.undefined
-  val enctype: js.UndefOr[String] = js.undefined
+  val classes: js.UndefOr[StringDictionary[js.UndefOr[Boolean | Null]]] = js.native
+  val disabled: js.UndefOr[Boolean] = js.native
+  val draggable: js.UndefOr[Boolean] = js.native
+  val encoding: js.UndefOr[String] = js.native
+  val enctype: js.UndefOr[String] = js.native
   /**
     * The animation to perform when this node is added to an already existing parent.
     * {@link http://maquettejs.org/docs/animations.html|More about animations}.
@@ -102,8 +103,8 @@ trait VNodeProperties
     * @param properties - The properties object that was supplied to the [[h]] method
     */
   var enterAnimation: js.UndefOr[
-    js.Function2[/* element */ Element, /* properties */ js.UndefOr[VNodeProperties], Unit]
-  ] = js.undefined
+    js.Function2[/* element */ Element, /* properties */ js.UndefOr[this.type], Unit]
+  ] = js.native
   /**
     * The animation to perform when this node is removed while its parent remains.
     * @param element - Element that ought to be removed from to the DOM.
@@ -119,68 +120,68 @@ trait VNodeProperties
       /* properties */ js.UndefOr[this.type], 
       Unit
     ]
-  ] = js.undefined
-  val href: js.UndefOr[String] = js.undefined
-  val id: js.UndefOr[String] = js.undefined
+  ] = js.native
+  val href: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.native
   /**
     * Puts a non-interactive string of html inside the DOM node.
     *
     * Note: if you use innerHTML, maquette cannot protect you from XSS vulnerabilities and you must make sure that the innerHTML value is safe.
     */
-  val innerHTML: js.UndefOr[String] = js.undefined
+  val innerHTML: js.UndefOr[String] = js.native
   /**
     * Used to uniquely identify a DOM node among siblings.
     * A key is required when there are more children with the same selector and these children are added or removed dynamically.
     * NOTE: this does not have to be a string or number, a [[MaquetteComponent]] Object for instance is also common.
     */
-  val key: js.UndefOr[js.Object] = js.undefined
-  val method: js.UndefOr[String] = js.undefined
-  val name: js.UndefOr[String] = js.undefined
-  var onblur: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.undefined
-  var onchange: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
-  var onclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
-  var ondblclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
-  var ondrag: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
-  var ondragend: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
-  var ondragenter: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
-  var ondragleave: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
-  var ondragover: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
-  var ondragstart: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
-  var ondrop: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.undefined
-  var onfocus: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.undefined
-  var oninput: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
-  var onkeydown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.undefined
-  var onkeypress: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.undefined
-  var onkeyup: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.undefined
-  var onload: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
-  var onmousedown: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
-  var onmouseenter: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
-  var onmouseleave: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
-  var onmousemove: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
-  var onmouseout: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
-  var onmouseover: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
-  var onmouseup: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.undefined
-  var onmousewheel: js.UndefOr[js.Function1[/* ev */ WheelEvent | MouseWheelEvent, Boolean | Unit]] = js.undefined
-  var onscroll: js.UndefOr[js.Function1[/* ev */ UIEvent, Boolean | Unit]] = js.undefined
-  var onsubmit: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.undefined
-  var ontouchcancel: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
-  var ontouchend: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
-  var ontouchmove: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
-  var ontouchstart: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.undefined
-  val placeholder: js.UndefOr[String] = js.undefined
-  val readOnly: js.UndefOr[Boolean] = js.undefined
-  val rel: js.UndefOr[String] = js.undefined
-  val spellcheck: js.UndefOr[Boolean] = js.undefined
-  val src: js.UndefOr[String] = js.undefined
-  val srcset: js.UndefOr[String] = js.undefined
+  val key: js.UndefOr[js.Object] = js.native
+  val method: js.UndefOr[String] = js.native
+  val name: js.UndefOr[String] = js.native
+  var onblur: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.native
+  var onchange: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.native
+  var onclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+  var ondblclick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+  var ondrag: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+  var ondragend: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+  var ondragenter: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+  var ondragleave: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+  var ondragover: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+  var ondragstart: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+  var ondrop: js.UndefOr[js.Function1[/* ev */ DragEvent, Boolean | Unit]] = js.native
+  var onfocus: js.UndefOr[js.Function1[/* ev */ FocusEvent, Boolean | Unit]] = js.native
+  var oninput: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.native
+  var onkeydown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.native
+  var onkeypress: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.native
+  var onkeyup: js.UndefOr[js.Function1[/* ev */ KeyboardEvent, Boolean | Unit]] = js.native
+  var onload: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.native
+  var onmousedown: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+  var onmouseenter: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+  var onmouseleave: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+  var onmousemove: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+  var onmouseout: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+  var onmouseover: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+  var onmouseup: js.UndefOr[js.Function1[/* ev */ MouseEvent, Boolean | Unit]] = js.native
+  var onmousewheel: js.UndefOr[js.Function1[/* ev */ WheelEvent | MouseWheelEvent, Boolean | Unit]] = js.native
+  var onscroll: js.UndefOr[js.Function1[/* ev */ UIEvent, Boolean | Unit]] = js.native
+  var onsubmit: js.UndefOr[js.Function1[/* ev */ Event, Boolean | Unit]] = js.native
+  var ontouchcancel: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.native
+  var ontouchend: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.native
+  var ontouchmove: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.native
+  var ontouchstart: js.UndefOr[js.Function1[/* ev */ TouchEvent, Boolean | Unit]] = js.native
+  val placeholder: js.UndefOr[String] = js.native
+  val readOnly: js.UndefOr[Boolean] = js.native
+  val rel: js.UndefOr[String] = js.native
+  val spellcheck: js.UndefOr[Boolean] = js.native
+  val src: js.UndefOr[String] = js.native
+  val srcset: js.UndefOr[String] = js.native
   /**
     * An object literal like `{height:'100px'}` which allows styles to be changed dynamically. All values must be strings.
     */
-  val styles: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
-  val tabIndex: js.UndefOr[Double] = js.undefined
-  val target: js.UndefOr[String] = js.undefined
-  val title: js.UndefOr[String] = js.undefined
-  val `type`: js.UndefOr[String] = js.undefined
+  val styles: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+  val tabIndex: js.UndefOr[Double] = js.native
+  val target: js.UndefOr[String] = js.native
+  val title: js.UndefOr[String] = js.native
+  val `type`: js.UndefOr[String] = js.native
   /**
     * The animation to perform when the properties of this node change.
     * This also includes attributes, styles, css classes. This callback is also invoked when node contains only text and that text changes.
@@ -196,154 +197,310 @@ trait VNodeProperties
       /* previousProperties */ js.UndefOr[this.type], 
       Unit
     ]
-  ] = js.undefined
-  val value: js.UndefOr[String] = js.undefined
+  ] = js.native
+  val value: js.UndefOr[String] = js.native
 }
 
 object VNodeProperties {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    accessKey: String = null,
-    action: String = null,
-    afterCreate: (/* element */ Element, /* projectionOptions */ ProjectionOptions, /* vnodeSelector */ String, VNodeProperties, /* children */ js.UndefOr[js.Array[VNode]]) => Unit = null,
-    afterRemoved: /* element */ Element => Unit = null,
-    afterUpdate: (/* element */ Element, /* projectionOptions */ ProjectionOptions, /* vnodeSelector */ String, VNodeProperties, /* children */ js.UndefOr[js.Array[VNode]]) => Unit = null,
-    alt: String = null,
-    autocomplete: String = null,
-    bind: js.Object = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    `class`: String = null,
-    className: scala.Nothing | (`HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`) = null,
-    classes: StringDictionary[js.UndefOr[Boolean | Null]] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    encoding: String = null,
-    enctype: String = null,
-    enterAnimation: (/* element */ Element, /* properties */ js.UndefOr[VNodeProperties]) => Unit = null,
-    exitAnimation: (/* element */ Element, /* removeElement */ js.Function0[Unit], /* properties */ js.UndefOr[VNodeProperties]) => Unit = null,
-    href: String = null,
-    id: String = null,
-    innerHTML: String = null,
-    key: js.Object = null,
-    method: String = null,
-    name: String = null,
-    onblur: /* ev */ FocusEvent => Boolean | Unit = null,
-    onchange: /* ev */ Event => Boolean | Unit = null,
-    onclick: /* ev */ MouseEvent => Boolean | Unit = null,
-    ondblclick: /* ev */ MouseEvent => Boolean | Unit = null,
-    ondrag: /* ev */ DragEvent => Boolean | Unit = null,
-    ondragend: /* ev */ DragEvent => Boolean | Unit = null,
-    ondragenter: /* ev */ DragEvent => Boolean | Unit = null,
-    ondragleave: /* ev */ DragEvent => Boolean | Unit = null,
-    ondragover: /* ev */ DragEvent => Boolean | Unit = null,
-    ondragstart: /* ev */ DragEvent => Boolean | Unit = null,
-    ondrop: /* ev */ DragEvent => Boolean | Unit = null,
-    onfocus: /* ev */ FocusEvent => Boolean | Unit = null,
-    oninput: /* ev */ Event => Boolean | Unit = null,
-    onkeydown: /* ev */ KeyboardEvent => Boolean | Unit = null,
-    onkeypress: /* ev */ KeyboardEvent => Boolean | Unit = null,
-    onkeyup: /* ev */ KeyboardEvent => Boolean | Unit = null,
-    onload: /* ev */ Event => Boolean | Unit = null,
-    onmousedown: /* ev */ MouseEvent => Boolean | Unit = null,
-    onmouseenter: /* ev */ MouseEvent => Boolean | Unit = null,
-    onmouseleave: /* ev */ MouseEvent => Boolean | Unit = null,
-    onmousemove: /* ev */ MouseEvent => Boolean | Unit = null,
-    onmouseout: /* ev */ MouseEvent => Boolean | Unit = null,
-    onmouseover: /* ev */ MouseEvent => Boolean | Unit = null,
-    onmouseup: /* ev */ MouseEvent => Boolean | Unit = null,
-    onmousewheel: /* ev */ WheelEvent | MouseWheelEvent => Boolean | Unit = null,
-    onscroll: /* ev */ UIEvent => Boolean | Unit = null,
-    onsubmit: /* ev */ Event => Boolean | Unit = null,
-    ontouchcancel: /* ev */ TouchEvent => Boolean | Unit = null,
-    ontouchend: /* ev */ TouchEvent => Boolean | Unit = null,
-    ontouchmove: /* ev */ TouchEvent => Boolean | Unit = null,
-    ontouchstart: /* ev */ TouchEvent => Boolean | Unit = null,
-    placeholder: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    rel: String = null,
-    spellcheck: js.UndefOr[Boolean] = js.undefined,
-    src: String = null,
-    srcset: String = null,
-    styles: PartialCSSStyleDeclaratio = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    target: String = null,
-    title: String = null,
-    `type`: String = null,
-    updateAnimation: (/* element */ Element, /* properties */ js.UndefOr[VNodeProperties], /* previousProperties */ js.UndefOr[VNodeProperties]) => Unit = null,
-    value: String = null
-  ): VNodeProperties = {
+  def apply(): VNodeProperties = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (afterCreate != null) __obj.updateDynamic("afterCreate")(js.Any.fromFunction5(afterCreate))
-    if (afterRemoved != null) __obj.updateDynamic("afterRemoved")(js.Any.fromFunction1(afterRemoved))
-    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(js.Any.fromFunction5(afterUpdate))
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
-    if (exitAnimation != null) __obj.updateDynamic("exitAnimation")(js.Any.fromFunction3(exitAnimation))
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onblur != null) __obj.updateDynamic("onblur")(js.Any.fromFunction1(onblur))
-    if (onchange != null) __obj.updateDynamic("onchange")(js.Any.fromFunction1(onchange))
-    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
-    if (ondblclick != null) __obj.updateDynamic("ondblclick")(js.Any.fromFunction1(ondblclick))
-    if (ondrag != null) __obj.updateDynamic("ondrag")(js.Any.fromFunction1(ondrag))
-    if (ondragend != null) __obj.updateDynamic("ondragend")(js.Any.fromFunction1(ondragend))
-    if (ondragenter != null) __obj.updateDynamic("ondragenter")(js.Any.fromFunction1(ondragenter))
-    if (ondragleave != null) __obj.updateDynamic("ondragleave")(js.Any.fromFunction1(ondragleave))
-    if (ondragover != null) __obj.updateDynamic("ondragover")(js.Any.fromFunction1(ondragover))
-    if (ondragstart != null) __obj.updateDynamic("ondragstart")(js.Any.fromFunction1(ondragstart))
-    if (ondrop != null) __obj.updateDynamic("ondrop")(js.Any.fromFunction1(ondrop))
-    if (onfocus != null) __obj.updateDynamic("onfocus")(js.Any.fromFunction1(onfocus))
-    if (oninput != null) __obj.updateDynamic("oninput")(js.Any.fromFunction1(oninput))
-    if (onkeydown != null) __obj.updateDynamic("onkeydown")(js.Any.fromFunction1(onkeydown))
-    if (onkeypress != null) __obj.updateDynamic("onkeypress")(js.Any.fromFunction1(onkeypress))
-    if (onkeyup != null) __obj.updateDynamic("onkeyup")(js.Any.fromFunction1(onkeyup))
-    if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction1(onload))
-    if (onmousedown != null) __obj.updateDynamic("onmousedown")(js.Any.fromFunction1(onmousedown))
-    if (onmouseenter != null) __obj.updateDynamic("onmouseenter")(js.Any.fromFunction1(onmouseenter))
-    if (onmouseleave != null) __obj.updateDynamic("onmouseleave")(js.Any.fromFunction1(onmouseleave))
-    if (onmousemove != null) __obj.updateDynamic("onmousemove")(js.Any.fromFunction1(onmousemove))
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1(onmouseout))
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction1(onmouseover))
-    if (onmouseup != null) __obj.updateDynamic("onmouseup")(js.Any.fromFunction1(onmouseup))
-    if (onmousewheel != null) __obj.updateDynamic("onmousewheel")(js.Any.fromFunction1(onmousewheel))
-    if (onscroll != null) __obj.updateDynamic("onscroll")(js.Any.fromFunction1(onscroll))
-    if (onsubmit != null) __obj.updateDynamic("onsubmit")(js.Any.fromFunction1(onsubmit))
-    if (ontouchcancel != null) __obj.updateDynamic("ontouchcancel")(js.Any.fromFunction1(ontouchcancel))
-    if (ontouchend != null) __obj.updateDynamic("ontouchend")(js.Any.fromFunction1(ontouchend))
-    if (ontouchmove != null) __obj.updateDynamic("ontouchmove")(js.Any.fromFunction1(ontouchmove))
-    if (ontouchstart != null) __obj.updateDynamic("ontouchstart")(js.Any.fromFunction1(ontouchstart))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (srcset != null) __obj.updateDynamic("srcset")(srcset.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (updateAnimation != null) __obj.updateDynamic("updateAnimation")(js.Any.fromFunction3(updateAnimation))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNodeProperties]
   }
+  @scala.inline
+  implicit class VNodePropertiesOps[Self <: VNodeProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKey(value: String): Self = this.set("accessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKey: Self = this.set("accessKey", js.undefined)
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setAfterCreate(
+      value: (/* element */ Element, /* projectionOptions */ ProjectionOptions, /* vnodeSelector */ String, VNodeProperties, /* children */ js.UndefOr[js.Array[VNode]]) => Unit
+    ): Self = this.set("afterCreate", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteAfterCreate: Self = this.set("afterCreate", js.undefined)
+    @scala.inline
+    def setAfterRemoved(value: /* element */ Element => Unit): Self = this.set("afterRemoved", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterRemoved: Self = this.set("afterRemoved", js.undefined)
+    @scala.inline
+    def setAfterUpdate(
+      value: (/* element */ Element, /* projectionOptions */ ProjectionOptions, /* vnodeSelector */ String, VNodeProperties, /* children */ js.UndefOr[js.Array[VNode]]) => Unit
+    ): Self = this.set("afterUpdate", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteAfterUpdate: Self = this.set("afterUpdate", js.undefined)
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def setAutocomplete(value: String): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutocomplete: Self = this.set("autocomplete", js.undefined)
+    @scala.inline
+    def setBind(value: js.Object): Self = this.set("bind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBind: Self = this.set("bind", js.undefined)
+    @scala.inline
+    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecked: Self = this.set("checked", js.undefined)
+    @scala.inline
+    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setClassName(
+      value: scala.Nothing | (`HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`)
+    ): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClasses(value: StringDictionary[js.UndefOr[Boolean | Null]]): Self = this.set("classes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClasses: Self = this.set("classes", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setEnctype(value: String): Self = this.set("enctype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnctype: Self = this.set("enctype", js.undefined)
+    @scala.inline
+    def setEnterAnimation(value: (/* element */ Element, /* properties */ js.UndefOr[VNodeProperties]) => Unit): Self = this.set("enterAnimation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEnterAnimation: Self = this.set("enterAnimation", js.undefined)
+    @scala.inline
+    def setExitAnimation(
+      value: (/* element */ Element, /* removeElement */ js.Function0[Unit], /* properties */ js.UndefOr[VNodeProperties]) => Unit
+    ): Self = this.set("exitAnimation", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteExitAnimation: Self = this.set("exitAnimation", js.undefined)
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHref: Self = this.set("href", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInnerHTML(value: String): Self = this.set("innerHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerHTML: Self = this.set("innerHTML", js.undefined)
+    @scala.inline
+    def setKey(value: js.Object): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnblur(value: /* ev */ FocusEvent => Boolean | Unit): Self = this.set("onblur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnblur: Self = this.set("onblur", js.undefined)
+    @scala.inline
+    def setOnchange(value: /* ev */ Event => Boolean | Unit): Self = this.set("onchange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnchange: Self = this.set("onchange", js.undefined)
+    @scala.inline
+    def setOnclick(value: /* ev */ MouseEvent => Boolean | Unit): Self = this.set("onclick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnclick: Self = this.set("onclick", js.undefined)
+    @scala.inline
+    def setOndblclick(value: /* ev */ MouseEvent => Boolean | Unit): Self = this.set("ondblclick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOndblclick: Self = this.set("ondblclick", js.undefined)
+    @scala.inline
+    def setOndrag(value: /* ev */ DragEvent => Boolean | Unit): Self = this.set("ondrag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOndrag: Self = this.set("ondrag", js.undefined)
+    @scala.inline
+    def setOndragend(value: /* ev */ DragEvent => Boolean | Unit): Self = this.set("ondragend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOndragend: Self = this.set("ondragend", js.undefined)
+    @scala.inline
+    def setOndragenter(value: /* ev */ DragEvent => Boolean | Unit): Self = this.set("ondragenter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOndragenter: Self = this.set("ondragenter", js.undefined)
+    @scala.inline
+    def setOndragleave(value: /* ev */ DragEvent => Boolean | Unit): Self = this.set("ondragleave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOndragleave: Self = this.set("ondragleave", js.undefined)
+    @scala.inline
+    def setOndragover(value: /* ev */ DragEvent => Boolean | Unit): Self = this.set("ondragover", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOndragover: Self = this.set("ondragover", js.undefined)
+    @scala.inline
+    def setOndragstart(value: /* ev */ DragEvent => Boolean | Unit): Self = this.set("ondragstart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOndragstart: Self = this.set("ondragstart", js.undefined)
+    @scala.inline
+    def setOndrop(value: /* ev */ DragEvent => Boolean | Unit): Self = this.set("ondrop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOndrop: Self = this.set("ondrop", js.undefined)
+    @scala.inline
+    def setOnfocus(value: /* ev */ FocusEvent => Boolean | Unit): Self = this.set("onfocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnfocus: Self = this.set("onfocus", js.undefined)
+    @scala.inline
+    def setOninput(value: /* ev */ Event => Boolean | Unit): Self = this.set("oninput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOninput: Self = this.set("oninput", js.undefined)
+    @scala.inline
+    def setOnkeydown(value: /* ev */ KeyboardEvent => Boolean | Unit): Self = this.set("onkeydown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnkeydown: Self = this.set("onkeydown", js.undefined)
+    @scala.inline
+    def setOnkeypress(value: /* ev */ KeyboardEvent => Boolean | Unit): Self = this.set("onkeypress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnkeypress: Self = this.set("onkeypress", js.undefined)
+    @scala.inline
+    def setOnkeyup(value: /* ev */ KeyboardEvent => Boolean | Unit): Self = this.set("onkeyup", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnkeyup: Self = this.set("onkeyup", js.undefined)
+    @scala.inline
+    def setOnload(value: /* ev */ Event => Boolean | Unit): Self = this.set("onload", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnload: Self = this.set("onload", js.undefined)
+    @scala.inline
+    def setOnmousedown(value: /* ev */ MouseEvent => Boolean | Unit): Self = this.set("onmousedown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnmousedown: Self = this.set("onmousedown", js.undefined)
+    @scala.inline
+    def setOnmouseenter(value: /* ev */ MouseEvent => Boolean | Unit): Self = this.set("onmouseenter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnmouseenter: Self = this.set("onmouseenter", js.undefined)
+    @scala.inline
+    def setOnmouseleave(value: /* ev */ MouseEvent => Boolean | Unit): Self = this.set("onmouseleave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnmouseleave: Self = this.set("onmouseleave", js.undefined)
+    @scala.inline
+    def setOnmousemove(value: /* ev */ MouseEvent => Boolean | Unit): Self = this.set("onmousemove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnmousemove: Self = this.set("onmousemove", js.undefined)
+    @scala.inline
+    def setOnmouseout(value: /* ev */ MouseEvent => Boolean | Unit): Self = this.set("onmouseout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnmouseout: Self = this.set("onmouseout", js.undefined)
+    @scala.inline
+    def setOnmouseover(value: /* ev */ MouseEvent => Boolean | Unit): Self = this.set("onmouseover", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnmouseover: Self = this.set("onmouseover", js.undefined)
+    @scala.inline
+    def setOnmouseup(value: /* ev */ MouseEvent => Boolean | Unit): Self = this.set("onmouseup", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnmouseup: Self = this.set("onmouseup", js.undefined)
+    @scala.inline
+    def setOnmousewheel(value: /* ev */ WheelEvent | MouseWheelEvent => Boolean | Unit): Self = this.set("onmousewheel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnmousewheel: Self = this.set("onmousewheel", js.undefined)
+    @scala.inline
+    def setOnscroll(value: /* ev */ UIEvent => Boolean | Unit): Self = this.set("onscroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnscroll: Self = this.set("onscroll", js.undefined)
+    @scala.inline
+    def setOnsubmit(value: /* ev */ Event => Boolean | Unit): Self = this.set("onsubmit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnsubmit: Self = this.set("onsubmit", js.undefined)
+    @scala.inline
+    def setOntouchcancel(value: /* ev */ TouchEvent => Boolean | Unit): Self = this.set("ontouchcancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOntouchcancel: Self = this.set("ontouchcancel", js.undefined)
+    @scala.inline
+    def setOntouchend(value: /* ev */ TouchEvent => Boolean | Unit): Self = this.set("ontouchend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOntouchend: Self = this.set("ontouchend", js.undefined)
+    @scala.inline
+    def setOntouchmove(value: /* ev */ TouchEvent => Boolean | Unit): Self = this.set("ontouchmove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOntouchmove: Self = this.set("ontouchmove", js.undefined)
+    @scala.inline
+    def setOntouchstart(value: /* ev */ TouchEvent => Boolean | Unit): Self = this.set("ontouchstart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOntouchstart: Self = this.set("ontouchstart", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRel(value: String): Self = this.set("rel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRel: Self = this.set("rel", js.undefined)
+    @scala.inline
+    def setSpellcheck(value: Boolean): Self = this.set("spellcheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellcheck: Self = this.set("spellcheck", js.undefined)
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+    @scala.inline
+    def setSrcset(value: String): Self = this.set("srcset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcset: Self = this.set("srcset", js.undefined)
+    @scala.inline
+    def setStyles(value: PartialCSSStyleDeclaratio): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUpdateAnimation(
+      value: (/* element */ Element, /* properties */ js.UndefOr[VNodeProperties], /* previousProperties */ js.UndefOr[VNodeProperties]) => Unit
+    ): Self = this.set("updateAnimation", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteUpdateAnimation: Self = this.set("updateAnimation", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

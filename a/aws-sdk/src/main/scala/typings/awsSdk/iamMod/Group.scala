@@ -34,5 +34,28 @@ object Group {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreateDate = CreateDate.asInstanceOf[js.Any], GroupId = GroupId.asInstanceOf[js.Any], GroupName = GroupName.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
+  @scala.inline
+  implicit class GroupOps[Self <: Group] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupId(value: idType): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupName(value: groupNameType): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Transport extends js.Object {
-  def abort(): Unit
-  def send(headers: PlainObject[_], completeCallback: SuccessCallback): Unit
+  def abort(): Unit = js.native
+  def send(headers: PlainObject[_], completeCallback: SuccessCallback): Unit = js.native
 }
 
 @JSGlobal("JQuery.Transport")

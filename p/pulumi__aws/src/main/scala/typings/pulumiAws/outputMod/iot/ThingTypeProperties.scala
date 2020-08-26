@@ -18,10 +18,30 @@ trait ThingTypeProperties extends js.Object {
 
 object ThingTypeProperties {
   @scala.inline
-  def apply(searchableAttributes: js.Array[String], description: String = null): ThingTypeProperties = {
+  def apply(searchableAttributes: js.Array[String]): ThingTypeProperties = {
     val __obj = js.Dynamic.literal(searchableAttributes = searchableAttributes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingTypeProperties]
   }
+  @scala.inline
+  implicit class ThingTypePropertiesOps[Self <: ThingTypeProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSearchableAttributesVarargs(value: String*): Self = this.set("searchableAttributes", js.Array(value :_*))
+    @scala.inline
+    def setSearchableAttributes(value: js.Array[String]): Self = this.set("searchableAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+  }
+  
 }
 

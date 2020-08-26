@@ -1,13 +1,7 @@
 package typings.winrtUwp.global.Windows.Data
 
-import typings.winrtUwp.Windows.Data.Text.AlternateNormalizationFormat
-import typings.winrtUwp.Windows.Data.Text.SelectableWordSegmentsTokenizingHandler
-import typings.winrtUwp.Windows.Data.Text.TextSegment
 import typings.winrtUwp.Windows.Data.Text.UnicodeGeneralCategory
 import typings.winrtUwp.Windows.Data.Text.UnicodeNumericType
-import typings.winrtUwp.Windows.Data.Text.WordSegmentsTokenizingHandler
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.anon.HighSurrogate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,29 +14,12 @@ object Text extends js.Object {
   /** Identifies an alternate form of the word represented by a WordSegment object.. For example, this may contain a number in a normalized format. */
   @js.native
   abstract class AlternateWordForm ()
-    extends typings.winrtUwp.Windows.Data.Text.AlternateWordForm {
-    /** Gets the text of the alternate word form identified by this AlternateWordForm object. */
-    /* CompleteClass */
-    override var alternateText: String = js.native
-    /** Gets the normalization format for this current AlternateWordForm object. */
-    /* CompleteClass */
-    override var normalizationFormat: AlternateNormalizationFormat = js.native
-    /** Gets the TextSegment that identifies the source text's sub-string for which this AlternateWordForm object is an alternate. */
-    /* CompleteClass */
-    override var sourceTextSegment: TextSegment = js.native
-  }
+    extends typings.winrtUwp.Windows.Data.Text.AlternateWordForm
   
   /** Represents a segment from your provided text that includes a word and any trailing whitespace and/or punctuation after this word. */
   @js.native
   abstract class SelectableWordSegment ()
-    extends typings.winrtUwp.Windows.Data.Text.SelectableWordSegment {
-    /** Gets the TextSegment that identifies the source text's sub-string that is the selected word. */
-    /* CompleteClass */
-    override var sourceTextSegment: TextSegment = js.native
-    /** Gets the text of the selected word identified by this SelectableWordSegment object. */
-    /* CompleteClass */
-    override var text: String = js.native
-  }
+    extends typings.winrtUwp.Windows.Data.Text.SelectableWordSegment
   
   /** A segmenter class that is able to segment provided text into units appropriate for selecting text by words. */
   @js.native
@@ -53,32 +30,6 @@ object Text extends js.Object {
       * @param language A BCP-47 language tag.
       */
     def this(language: String) = this()
-    /** Gets the language of the rules used by this SelectableWordsSegmenter object. */
-    /* CompleteClass */
-    override var resolvedLanguage: String = js.native
-    /**
-      * Determines and returns the selectable word which contains or follows a specified index into the provided text.
-      * @param text Provided text in which a word is to be selected.
-      * @param startIndex A zero-based index into text. It must be less than the length of text.
-      * @return A SelectableWordSegment that represents the selected word.
-      */
-    /* CompleteClass */
-    override def getTokenAt(text: String, startIndex: Double): typings.winrtUwp.Windows.Data.Text.SelectableWordSegment = js.native
-    /**
-      * Determines and returns all of the selectable words in the provided text.
-      * @param text Provided text containing words to be selected.
-      * @return A collection of SelectableWordSegment objects that represent the selectable words.
-      */
-    /* CompleteClass */
-    override def getTokens(text: String): IVectorView[typings.winrtUwp.Windows.Data.Text.SelectableWordSegment] = js.native
-    /**
-      * Calls the provided handler with two iterators that iterate through the selectable words prior to and following a given index into the provided text.
-      * @param text Provided text containing words to be selected.
-      * @param startIndex A zero-based index into text. It must be less than the length of text.
-      * @param handler The function that receives the iterators.
-      */
-    /* CompleteClass */
-    override def tokenize(text: String, startIndex: Double, handler: SelectableWordSegmentsTokenizingHandler): Unit = js.native
   }
   
   /** Permits apps to perform text queries using Advanced Query Syntax (AQS) strings, with the option of providing a language tag to be employed in the query. */
@@ -96,21 +47,6 @@ object Text extends js.Object {
       * @param filterLanguage The BCP-47 language tag to be employed in the query.
       */
     def this(aqsFilter: String, filterLanguage: String) = this()
-    /**
-      * Returns segments of a source string that match the SemanticTextQuery object's query.
-      * @param content A source string to be queried.
-      * @return A collection of TextSegment structures that represent hits from the query.
-      */
-    /* CompleteClass */
-    override def find(content: String): IVectorView[TextSegment] = js.native
-    /**
-      * Returns segments of a source string that match the SemanticTextQuery object's query over properties.
-      * @param propertyContent A source string to be queried.
-      * @param propertyName The name of the property.
-      * @return A collection of TextSegment structures that represent hits from the query.
-      */
-    /* CompleteClass */
-    override def findInProperty(propertyContent: String, propertyName: String): IVectorView[TextSegment] = js.native
   }
   
   /** Converts input phonetic characters into a collection of corresponding ideographic characters (Chinese characters). */
@@ -144,19 +80,6 @@ object Text extends js.Object {
       * @param languageTag The BCP-47 language tag of the language in which the words are to be reverse-converted. Only Japanese ("ja") is supported.
       */
     def this(languageTag: String) = this()
-    /** Determines if the language tag specified is available for reverse conversions, but is not installed on the user's device. */
-    /* CompleteClass */
-    override var languageAvailableButNotInstalled: Boolean = js.native
-    /** Gets the language tag of the successfully created TextReverseConversionGenerator object. */
-    /* CompleteClass */
-    override var resolvedLanguage: String = js.native
-    /**
-      * Asynchronously reverse-converts a string which contains ideographic characters to a phonetic expression.
-      * @param input The string containing ideographic characters to be reverse-converted.
-      * @return An asynchronous operation to return the phonetic expression.
-      */
-    /* CompleteClass */
-    override def convertBackAsync(input: String): IPromiseWithIAsyncOperation[String] = js.native
   }
   
   /** Provides a way for apps to get information about Unicode characters. */
@@ -167,17 +90,7 @@ object Text extends js.Object {
   /** Represents a word from your provided text. */
   @js.native
   abstract class WordSegment ()
-    extends typings.winrtUwp.Windows.Data.Text.WordSegment {
-    /** Gets the alternate forms (if any) associated with the current word. */
-    /* CompleteClass */
-    override var alternateForms: IVectorView[typings.winrtUwp.Windows.Data.Text.AlternateWordForm] = js.native
-    /** Gets the TextSegment that identifies the source text's sub-string that is a word. */
-    /* CompleteClass */
-    override var sourceTextSegment: TextSegment = js.native
-    /** Gets the text of the word identified by this WordSegment object. */
-    /* CompleteClass */
-    override var text: String = js.native
-  }
+    extends typings.winrtUwp.Windows.Data.Text.WordSegment
   
   /** A segmenter class that is able to segment provided text into words. */
   @js.native
@@ -188,32 +101,6 @@ object Text extends js.Object {
       * @param language A BCP-47 language tag.
       */
     def this(language: String) = this()
-    /** Gets the language of the rules used by this WordsSegmenter object. */
-    /* CompleteClass */
-    override var resolvedLanguage: String = js.native
-    /**
-      * Determines and returns the word which contains or follows a specified index into the provided text.
-      * @param text Provided text from which the word is to be returned.
-      * @param startIndex A zero-based index into text. It must be less than the length of text.
-      * @return A WordSegment that represents the word.
-      */
-    /* CompleteClass */
-    override def getTokenAt(text: String, startIndex: Double): typings.winrtUwp.Windows.Data.Text.WordSegment = js.native
-    /**
-      * Determines and returns all of the words in the provided text.
-      * @param text Provided text containing words to be returned.
-      * @return A collection of WordSegment objects that represent the words.
-      */
-    /* CompleteClass */
-    override def getTokens(text: String): IVectorView[typings.winrtUwp.Windows.Data.Text.WordSegment] = js.native
-    /**
-      * Calls the provided handler with two iterators that iterate through the words prior to and following a given index into the provided text.
-      * @param text Provided text containing words to be returned.
-      * @param startIndex A zero-based index into text. It must be less than the length of text.
-      * @param handler The function that receives the iterators.
-      */
-    /* CompleteClass */
-    override def tokenize(text: String, startIndex: Double, handler: WordSegmentsTokenizingHandler): Unit = js.native
   }
   
   /** Identifies the normalization format of an AlternateWordForm object. */

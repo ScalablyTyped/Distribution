@@ -15,6 +15,11 @@ trait CheckBoxComponent extends Component {
   @JSName("onChanged")
   var onChanged_Original: Event[_] = js.native
   def onChanged(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onChanged(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
 }

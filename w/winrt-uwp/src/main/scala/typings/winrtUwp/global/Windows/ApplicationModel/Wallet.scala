@@ -1,15 +1,9 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology
-import typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition
 import typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemKind
-import typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition
-import typings.winrtUwp.Windows.Devices.Geolocation.BasicGeoposition
-import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
-import typings.winrtUwp.Windows.UI.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,18 +27,6 @@ object Wallet extends js.Object {
       * @param value The message ( Value ) that the barcode represents.
       */
     def this(symbology: WalletBarcodeSymbology, value: String) = this()
-    /** Gets the symbology used by the bar code. */
-    /* CompleteClass */
-    override var symbology: WalletBarcodeSymbology = js.native
-    /** Gets a string representation of the barcode (its message). */
-    /* CompleteClass */
-    override var value: String = js.native
-    /**
-      * Creates and returns a bitmap image stream for the barcode (or returns the custom image used during instantiation).
-      * @return An asynchronous operation. If you use Asynchronous programming, the result type on successful completion is an IRandomAccessStreamReference instance. This can be assigned as the source for an image (with some additional code).
-      */
-    /* CompleteClass */
-    override def getImageAsync(): IPromiseWithIAsyncOperation[IRandomAccessStreamReference] = js.native
   }
   
   /** Represents an item (data) that is stored in the wallet. */
@@ -57,93 +39,6 @@ object Wallet extends js.Object {
       * @param displayName The display name of the item.
       */
     def this(kind: WalletItemKind, displayName: String) = this()
-    /** Gets or sets the barcode that's representative of the wallet item. */
-    /* CompleteClass */
-    override var barcode: typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletBarcode = js.native
-    /** Gets or sets the background image of the body of the wallet item (uses a stream). */
-    /* CompleteClass */
-    override var bodyBackgroundImage: IRandomAccessStreamReference = js.native
-    /** Gets or sets the body color of the wallet item. */
-    /* CompleteClass */
-    override var bodyColor: Color = js.native
-    /** Gets or sets the body font color of the wallet item. */
-    /* CompleteClass */
-    override var bodyFontColor: Color = js.native
-    /** Gets or sets a string that appears next to the app name in About info. */
-    /* CompleteClass */
-    override var displayMessage: String = js.native
-    /** Gets or sets the name or title to be displayed to the user. */
-    /* CompleteClass */
-    override var displayName: String = js.native
-    /** Gets the collection of WalletItemCustomProperty objects associated with the wallet item. */
-    /* CompleteClass */
-    override var displayProperties: IMap[String, typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemCustomProperty] = js.native
-    /** Gets or sets the expiration date of the wallet item. */
-    /* CompleteClass */
-    override var expirationDate: Date = js.native
-    /** Gets or sets the header background image of the wallet item. */
-    /* CompleteClass */
-    override var headerBackgroundImage: IRandomAccessStreamReference = js.native
-    /** Gets or sets the header color of the wallet item. */
-    /* CompleteClass */
-    override var headerColor: Color = js.native
-    /** Gets or sets the header font color of the wallet item. */
-    /* CompleteClass */
-    override var headerFontColor: Color = js.native
-    /** Gets the unique identifier of the wallet item. */
-    /* CompleteClass */
-    override var id: String = js.native
-    /** Gets or sets whether this item is acknowledged by the app. */
-    /* CompleteClass */
-    override var isAcknowledged: Boolean = js.native
-    /** Gets or sets whether to launch your app when the user taps on the DisplayMessage . */
-    /* CompleteClass */
-    override var isDisplayMessageLaunchable: Boolean = js.native
-    /** Gets or sets whether your app should be launched when the user taps "see more transaction history". */
-    /* CompleteClass */
-    override var isMoreTransactionHistoryLaunchable: Boolean = js.native
-    /** Gets or sets the issuer name of the wallet item. */
-    /* CompleteClass */
-    override var issuerDisplayName: String = js.native
-    /** Gets the type of the wallet item. */
-    /* CompleteClass */
-    override var kind: WalletItemKind = js.native
-    /** Gets or sets the date and time the data for this item was last updated. */
-    /* CompleteClass */
-    override var lastUpdated: Date = js.native
-    /** Gets or sets the medium (159 x 159) logo image of the wallet item. */
-    /* CompleteClass */
-    override var logo159x159: IRandomAccessStreamReference = js.native
-    /** Gets or sets the large (336 x 336) logo image of the wallet item. */
-    /* CompleteClass */
-    override var logo336x336: IRandomAccessStreamReference = js.native
-    /** Gets or sets the small (99 x 99) logo image of the wallet item. */
-    /* CompleteClass */
-    override var logo99x99: IRandomAccessStreamReference = js.native
-    /** Gets or sets the logo image of the wallet item. */
-    /* CompleteClass */
-    override var logoImage: IRandomAccessStreamReference = js.native
-    /** Gets or sets the logo text of the wallet item. */
-    /* CompleteClass */
-    override var logoText: String = js.native
-    /** Gets or sets the promotional image of the wallet item. */
-    /* CompleteClass */
-    override var promotionalImage: IRandomAccessStreamReference = js.native
-    /** Gets or sets the date on which the item is valid. */
-    /* CompleteClass */
-    override var relevantDate: Date = js.native
-    /** Gets or sets the description of the relevant date of the wallet item. */
-    /* CompleteClass */
-    override var relevantDateDisplayMessage: String = js.native
-    /** Gets a collection of all relevant locations for the wallet item. */
-    /* CompleteClass */
-    override var relevantLocations: IMap[String, typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletRelevantLocation] = js.native
-    /** Gets the transaction history collection of the wallet item. */
-    /* CompleteClass */
-    override var transactionHistory: IMap[String, typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletTransaction] = js.native
-    /** Gets the collection of WalletVerb objects associated with the wallet item. */
-    /* CompleteClass */
-    override var verbs: IMap[String, typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletVerb] = js.native
   }
   
   /** Defines a custom property on a wallet item. Apps can show data in the details view or back of card view of the item. */
@@ -156,21 +51,6 @@ object Wallet extends js.Object {
       * @param value The value of the property. Sets the initial Value value.
       */
     def this(name: String, value: String) = this()
-    /** Gets or sets whether this WalletItemCustomProperty is entity-extracted and actionable upon display. */
-    /* CompleteClass */
-    override var autoDetectLinks: Boolean = js.native
-    /** Gets or sets the optional position of this property when shown in the wallet item's detail view. */
-    /* CompleteClass */
-    override var detailViewPosition: WalletDetailViewPosition = js.native
-    /** Gets or sets the custom property label. */
-    /* CompleteClass */
-    override var name: String = js.native
-    /** Gets or sets the optional position of this property when shown in the summary view for a wallet item. */
-    /* CompleteClass */
-    override var summaryViewPosition: WalletSummaryViewPosition = js.native
-    /** Gets or sets the custom property value. */
-    /* CompleteClass */
-    override var value: String = js.native
   }
   
   /** Defines a set of asynchronous actions and operations that manage the wallet items in the wallet database. These can be used to read the existing items, or to add and remove items. */
@@ -187,39 +67,13 @@ object Wallet extends js.Object {
   @js.native
   /** Initializes a new instance of the WalletRelevantLocation class. */
   class WalletRelevantLocation ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletRelevantLocation {
-    /** Gets or sets the message associated with a relevant location. */
-    /* CompleteClass */
-    override var displayMessage: String = js.native
-    /** Gets or sets the basic geographic position information of the location. */
-    /* CompleteClass */
-    override var position: BasicGeoposition = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletRelevantLocation
   
   /** Represents a single wallet transaction in the transaction history. */
   @js.native
   /** Initializes a new instance of the WalletTransaction class. */
   class WalletTransaction ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletTransaction {
-    /** Gets or sets the summary description (suitable for user UI) of the transaction. */
-    /* CompleteClass */
-    override var description: String = js.native
-    /** Gets or sets the transaction amount. */
-    /* CompleteClass */
-    override var displayAmount: String = js.native
-    /** Gets or sets a description (suitable for user UI) of the transaction location. */
-    /* CompleteClass */
-    override var displayLocation: String = js.native
-    /** Gets or sets whether to display the time of the transaction. */
-    /* CompleteClass */
-    override var ignoreTimeOfDay: Boolean = js.native
-    /** Gets or sets whether to launch your app when the user taps "see more transaction history". */
-    /* CompleteClass */
-    override var isLaunchable: Boolean = js.native
-    /** Gets or sets the date and time of the transaction. */
-    /* CompleteClass */
-    override var transactionDate: Date = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletTransaction
   
   /** Represents a wallet verb, which is potentially used for app activation. This is a string suitable for UI that is descriptive of the action. */
   @js.native
@@ -230,9 +84,6 @@ object Wallet extends js.Object {
       * @param name The name of the custom verb. Sets the value of the Name property.
       */
     def this(name: String) = this()
-    /** Gets or sets the custom verb name. */
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   /** Defines a set of asynchronous actions and operations that manage the wallet items in the system wallet database. These can be used to read the existing items, or to add and remove items. */

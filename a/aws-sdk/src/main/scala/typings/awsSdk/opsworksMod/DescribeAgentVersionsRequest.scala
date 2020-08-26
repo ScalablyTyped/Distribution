@@ -18,11 +18,30 @@ trait DescribeAgentVersionsRequest extends js.Object {
 
 object DescribeAgentVersionsRequest {
   @scala.inline
-  def apply(ConfigurationManager: StackConfigurationManager = null, StackId: String = null): DescribeAgentVersionsRequest = {
+  def apply(): DescribeAgentVersionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationManager != null) __obj.updateDynamic("ConfigurationManager")(ConfigurationManager.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAgentVersionsRequest]
   }
+  @scala.inline
+  implicit class DescribeAgentVersionsRequestOps[Self <: DescribeAgentVersionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationManager(value: StackConfigurationManager): Self = this.set("ConfigurationManager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationManager: Self = this.set("ConfigurationManager", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+  }
+  
 }
 

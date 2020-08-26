@@ -7,13 +7,22 @@ import scala.scalajs.js.annotation._
 
 object istanbulReportsStrings {
   @js.native
+  sealed trait branches extends js.Object
+  
+  @js.native
   sealed trait clover extends ReportType
   
   @js.native
   sealed trait cobertura extends ReportType
   
   @js.native
+  sealed trait functions extends js.Object
+  
+  @js.native
   sealed trait html extends ReportType
+  
+  @js.native
+  sealed trait `html-spa` extends ReportType
   
   @js.native
   sealed trait json extends ReportType
@@ -28,7 +37,13 @@ object istanbulReportsStrings {
   sealed trait lcovonly extends ReportType
   
   @js.native
+  sealed trait lines extends js.Object
+  
+  @js.native
   sealed trait none extends ReportType
+  
+  @js.native
+  sealed trait statements extends js.Object
   
   @js.native
   sealed trait teamcity extends ReportType
@@ -43,11 +58,17 @@ object istanbulReportsStrings {
   sealed trait `text-summary` extends ReportType
   
   @scala.inline
+  def branches: branches = "branches".asInstanceOf[branches]
+  @scala.inline
   def clover: clover = "clover".asInstanceOf[clover]
   @scala.inline
   def cobertura: cobertura = "cobertura".asInstanceOf[cobertura]
   @scala.inline
+  def functions: functions = "functions".asInstanceOf[functions]
+  @scala.inline
   def html: html = "html".asInstanceOf[html]
+  @scala.inline
+  def `html-spa`: `html-spa` = "html-spa".asInstanceOf[`html-spa`]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
@@ -57,7 +78,11 @@ object istanbulReportsStrings {
   @scala.inline
   def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
   @scala.inline
+  def lines: lines = "lines".asInstanceOf[lines]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def statements: statements = "statements".asInstanceOf[statements]
   @scala.inline
   def teamcity: teamcity = "teamcity".asInstanceOf[teamcity]
   @scala.inline

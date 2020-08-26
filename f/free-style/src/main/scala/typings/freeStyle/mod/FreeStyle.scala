@@ -11,10 +11,6 @@ class FreeStyle protected ()
      with Container[FreeStyle] {
   def this(id: String) = this()
   def this(id: String, changes: Changes) = this()
-  /* CompleteClass */
-  override var id: String = js.native
-  /* CompleteClass */
-  override def getStyles(): String = js.native
   def registerCss(styles: Styles): Unit = js.native
   def registerHashRule(prefix: String, styles: Styles): String = js.native
   def registerKeyframes(keyframes: Styles): String = js.native

@@ -33,12 +33,34 @@ trait SchemaStoreLayout extends js.Object {
 
 object SchemaStoreLayout {
   @scala.inline
-  def apply(homepageId: String = null, kind: String = null, storeLayoutType: String = null): SchemaStoreLayout = {
+  def apply(): SchemaStoreLayout = {
     val __obj = js.Dynamic.literal()
-    if (homepageId != null) __obj.updateDynamic("homepageId")(homepageId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (storeLayoutType != null) __obj.updateDynamic("storeLayoutType")(storeLayoutType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStoreLayout]
   }
+  @scala.inline
+  implicit class SchemaStoreLayoutOps[Self <: SchemaStoreLayout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHomepageId(value: String): Self = this.set("homepageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomepageId: Self = this.set("homepageId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setStoreLayoutType(value: String): Self = this.set("storeLayoutType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreLayoutType: Self = this.set("storeLayoutType", js.undefined)
+  }
+  
 }
 

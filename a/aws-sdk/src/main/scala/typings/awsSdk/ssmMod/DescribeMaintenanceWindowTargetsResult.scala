@@ -18,11 +18,32 @@ trait DescribeMaintenanceWindowTargetsResult extends js.Object {
 
 object DescribeMaintenanceWindowTargetsResult {
   @scala.inline
-  def apply(NextToken: NextToken = null, Targets: MaintenanceWindowTargetList = null): DescribeMaintenanceWindowTargetsResult = {
+  def apply(): DescribeMaintenanceWindowTargetsResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMaintenanceWindowTargetsResult]
   }
+  @scala.inline
+  implicit class DescribeMaintenanceWindowTargetsResultOps[Self <: DescribeMaintenanceWindowTargetsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: MaintenanceWindowTarget*): Self = this.set("Targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: MaintenanceWindowTargetList): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("Targets", js.undefined)
+  }
+  
 }
 

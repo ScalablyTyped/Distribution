@@ -34,15 +34,40 @@ trait Picomatch extends js.Object {
     * @api public
     */
   def apply(glob: String): Matcher = js.native
+  def apply(glob: String, options: js.UndefOr[scala.Nothing], returnState: Boolean): Matcher = js.native
   def apply(glob: String, options: PicomatchOptions): Matcher = js.native
   def apply(glob: String, options: PicomatchOptions, returnState: Boolean): Matcher = js.native
   def apply(glob: js.Array[String]): Matcher = js.native
+  def apply(glob: js.Array[String], options: js.UndefOr[scala.Nothing], returnState: Boolean): Matcher = js.native
   def apply(glob: js.Array[String], options: PicomatchOptions): Matcher = js.native
   def apply(glob: js.Array[String], options: PicomatchOptions, returnState: Boolean): Matcher = js.native
   def compileRe(state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]]): RegExp = js.native
   def compileRe(
     state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
+    options: js.UndefOr[scala.Nothing],
+    returnOutput: js.UndefOr[scala.Nothing],
+    returnState: Boolean
+  ): RegExp = js.native
+  def compileRe(
+    state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
+    options: js.UndefOr[scala.Nothing],
+    returnOutput: Boolean
+  ): RegExp = js.native
+  def compileRe(
+    state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
+    options: js.UndefOr[scala.Nothing],
+    returnOutput: Boolean,
+    returnState: Boolean
+  ): RegExp = js.native
+  def compileRe(
+    state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
     options: PicomatchOptions
+  ): RegExp = js.native
+  def compileRe(
+    state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
+    options: PicomatchOptions,
+    returnOutput: js.UndefOr[scala.Nothing],
+    returnState: Boolean
   ): RegExp = js.native
   def compileRe(
     state: ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]],
@@ -70,7 +95,45 @@ trait Picomatch extends js.Object {
     /* returnState */ js.UndefOr[Boolean], 
     RegExp
   ] = js.native
+  def makeRe(
+    input: String,
+    options: js.UndefOr[scala.Nothing],
+    returnOutput: js.UndefOr[scala.Nothing],
+    returnState: Boolean
+  ): js.Function4[
+    /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
+    /* options */ js.UndefOr[PicomatchOptions], 
+    /* returnOutput */ js.UndefOr[Boolean], 
+    /* returnState */ js.UndefOr[Boolean], 
+    RegExp
+  ] = js.native
+  def makeRe(input: String, options: js.UndefOr[scala.Nothing], returnOutput: Boolean): js.Function4[
+    /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
+    /* options */ js.UndefOr[PicomatchOptions], 
+    /* returnOutput */ js.UndefOr[Boolean], 
+    /* returnState */ js.UndefOr[Boolean], 
+    RegExp
+  ] = js.native
+  def makeRe(input: String, options: js.UndefOr[scala.Nothing], returnOutput: Boolean, returnState: Boolean): js.Function4[
+    /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
+    /* options */ js.UndefOr[PicomatchOptions], 
+    /* returnOutput */ js.UndefOr[Boolean], 
+    /* returnState */ js.UndefOr[Boolean], 
+    RegExp
+  ] = js.native
   def makeRe(input: String, options: PicomatchOptions): js.Function4[
+    /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
+    /* options */ js.UndefOr[PicomatchOptions], 
+    /* returnOutput */ js.UndefOr[Boolean], 
+    /* returnState */ js.UndefOr[Boolean], 
+    RegExp
+  ] = js.native
+  def makeRe(
+    input: String,
+    options: PicomatchOptions,
+    returnOutput: js.UndefOr[scala.Nothing],
+    returnState: Boolean
+  ): js.Function4[
     /* state */ ReturnType[js.Function2[/* input */ String, /* options */ MaxLength, State]], 
     /* options */ js.UndefOr[PicomatchOptions], 
     /* returnOutput */ js.UndefOr[Boolean], 
@@ -98,6 +161,7 @@ trait Picomatch extends js.Object {
   def parse(pattern: String, options: js.Object): js.Object = js.native
   def scan(input: String, options: js.Object): js.Object = js.native
   def test(input: String, regex: RegExp): IsMatch = js.native
+  def test(input: String, regex: RegExp, options: js.UndefOr[scala.Nothing], test: js.Object): IsMatch = js.native
   def test(input: String, regex: RegExp, options: PicomatchOptions): IsMatch = js.native
   def test(input: String, regex: RegExp, options: PicomatchOptions, test: js.Object): IsMatch = js.native
   def toRegex(source: String): RegExp = js.native

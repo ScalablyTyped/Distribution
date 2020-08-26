@@ -24,6 +24,7 @@ class Certificate protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: CertificateArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: CertificateArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN of the certificate
@@ -50,26 +51,33 @@ class Certificate protected () extends CustomResource {
     * A list of attributes to feed into other resources to complete certificate validation. Can have more than one element, e.g. if SANs are defined. Only set if `DNS`-validation was used.
     */
   val domainValidationOptions: Output_[js.Array[CertificateDomainValidationOption]] = js.native
+  /**
+    * Configuration block used to set certificate options. Detailed below.
+    * * Importing an existing certificate
+    */
   val options: Output_[js.UndefOr[CertificateOptions]] = js.native
   /**
     * The certificate's PEM-formatted private key
     */
   val privateKey: Output_[js.UndefOr[String]] = js.native
   /**
-    * A list of domains that should be SANs in the issued certificate
+    * Status of the certificate.
+    */
+  val status: Output_[String] = js.native
+  /**
+    * A list of domains that should be SANs in the issued certificate. To remove all elements of a previously configured list, set this value equal to an empty list (`[]`) to trigger recreation.
     */
   val subjectAlternativeNames: Output_[js.Array[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * A list of addresses that received a validation E-Mail. Only set if `EMAIL`-validation was used.
     */
   val validationEmails: Output_[js.Array[String]] = js.native
   /**
-    * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into state managed by this provider.
-    * * Importing an existing certificate
+    * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into the provider.
     */
   val validationMethod: Output_[String] = js.native
 }
@@ -85,8 +93,10 @@ object Certificate extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Certificate = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Certificate = js.native
   def get(name: String, id: Input[ID], state: CertificateState): Certificate = js.native
   def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = js.native
   /**

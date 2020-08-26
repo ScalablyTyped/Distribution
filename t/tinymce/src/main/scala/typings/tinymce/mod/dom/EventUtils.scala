@@ -11,6 +11,7 @@ trait EventUtils extends js.Object {
   def fire(target: js.Object, name: String): EventUtils = js.native
   def fire(target: js.Object, name: String, args: js.Object): EventUtils = js.native
   def unbind(target: js.Object): EventUtils = js.native
+  def unbind(target: js.Object, names: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): EventUtils = js.native
   def unbind(target: js.Object, names: String): EventUtils = js.native
   def unbind(target: js.Object, names: String, callback: js.Function0[Unit]): EventUtils = js.native
 }
